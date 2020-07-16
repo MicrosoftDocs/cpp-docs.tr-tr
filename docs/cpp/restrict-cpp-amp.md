@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - restrict clause (C++ AMP)
 ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
-ms.openlocfilehash: 5a0011d11e4a59c9ca3a5e18f44d4cf831b21582
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b3464b758c6b66cdbd5015ee4b7c9d11eb2209dd
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366652"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404944"
 ---
 # <a name="restrict-c-amp"></a>restrict (C++ AMP)
 
 Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++ Accelerated Massive Parallelism (C++ AMP) çalışma zamanı kullanan uygulamalarda işlevdeki kod ve işlevin davranışı için kısıtlamalar uygular.
 
 > [!NOTE]
-> **__declspec** depolama sınıfı özniteliklerinin bir parçası olan **kısıtlama** anahtar sözcüğü hakkında bilgi [için](../cpp/restrict.md)bkz.
+> **__Declspec** Storage sınıfı özniteliklerinin parçası olan **Restrict** anahtar sözcüğü hakkında bilgi için bkz. [Restrict](../cpp/restrict.md).
 
-**Kısıtlama** maddesi aşağıdaki formları alır:
+**Restrict** yan tümcesi aşağıdaki formları alır:
 
 |Yan Tümce|Açıklama|
 |------------|-----------------|
@@ -31,7 +31,7 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kısıtlama** anahtar kelimesi bağlamsal bir anahtar kelimedir. Kısıtlama tanımlayıcıları `cpu` ve `amp`, ayrılmış sözcükler değildir. Tanımlayıcıların listesi genişletilemez. **Kısıtlama** yan tümcesi olmayan bir işlev, `restrict(cpu)` yan tümcesi olan bir işlevle aynıdır.
+**Restrict** anahtar sözcüğü bağlamsal bir anahtar sözcüktür. Kısıtlama tanımlayıcıları `cpu` ve `amp`, ayrılmış sözcükler değildir. Tanımlayıcıların listesi genişletilemez. **Restrict** yan tümcesine sahip olmayan bir işlev, yan tümcesine sahip bir işlevle aynıdır `restrict(cpu)` .
 
 `restrict(amp)` yan tümcesine sahip bir işlev aşağıdaki kısıtlamalara sahiptir:
 
@@ -39,7 +39,7 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
 - İşlev satır içine alınabilir olmalıdır.
 
-- İşlev yalnızca **int,** **imzasız int,** **float**ve **çift** değişkenleri ve yalnızca bu türleri içeren sınıfları ve yapıları bildirebilir. **bool** de izin verilir, ancak bileşik bir tür de kullanırsanız 4-bayt hizalanmış olmalıdır.
+- İşlev yalnızca **int**, **işaretsiz int**, **float**ve **Double** değişkenlerini ve yalnızca bu türleri içeren sınıfları ve yapıları bildirebilir. **bool** öğesine de izin verilir, ancak bunu bir bileşik türde kullanıyorsanız 4 baytlık hizalı olmalıdır.
 
 - Lambda işlevleri, başvuruya göre yakalama gerçekleştiremez ve işaretçileri yakalayamaz.
 
@@ -49,7 +49,7 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
   - Yineleme.
 
-  - [Değişken](../cpp/volatile-cpp.md) anahtar kelime ile bildirilen değişkenler.
+  - [Volatile](../cpp/volatile-cpp.md) anahtar sözcüğüyle belirtilen değişkenler.
 
   - Sanal işlevler.
 
@@ -61,29 +61,29 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
   - İşaretçilerin işaretçileri.
 
-  - **goto** ifadeler.
+  - **goto** deyimleri.
 
   - Etiketli deyimler.
 
-  - **deneyin,** **yakalayın**veya ifadeleri **atın.**
+  - **TRY**, **catch**veya **throw** deyimleri.
 
   - Genel değişkenler.
 
-  - Statik değişkenler. Bunun yerine [tile_static Anahtar Kelime](../cpp/tile-static-keyword.md) kullanın.
+  - Statik değişkenler. Bunun yerine [Tile_static anahtar sözcüğünü](../cpp/tile-static-keyword.md) kullanın.
 
-  - **dynamic_cast** alçı.
+  - **dynamic_cast** yayınları.
 
-  - **Typeid** işleci.
+  - **TypeId** işleci.
 
   - asm bildirimleri.
 
   - Varargs.
 
-İşlev sınırlamalarının tartışılması için, [kısıtlama (amp) Kısıtlamaları'na](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/12/19/restrictamp-restrictions-part-0-of-n-introduction/)bakın.
+İşlev sınırlamalarıyla ilgili bir tartışma için bkz. [restrict (amp) kısıtlamaları](/archive/blogs/nativeconcurrency/restrictamp-restrictions-part-0-of-n-introduction).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yan tümcenin nasıl kullanılacağını `restrict(amp)`gösterir.
+Aşağıdaki örnek, yan tümcesinin nasıl kullanılacağını göstermektedir `restrict(amp)` .
 
 ```cpp
 void functionAmp() restrict(amp) {}

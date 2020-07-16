@@ -3,12 +3,12 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: 7c36112f5d0f7f0475782eb40e31179e67ac4485
-ms.sourcegitcommit: 3f91111c0350c0237fddb82766c290307f20e659
+ms.openlocfilehash: f4b22cd11bcdee3d7dc2fe232642c02a331354bc
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83630483"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404980"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -20,7 +20,7 @@ Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltm
 
 - C++ 17 özellikleri ve doğruluk düzeltmeleri için geliştirilmiş destek, ayrıca modüller ve eş yordamlar gibi C++ 20 özellikleri için deneysel destek. Ayrıntılı bilgi için bkz. [Visual Studio 2019 ' de C++ uyumluluk geliştirmeleri](cpp-conformance-improvements.md).
 
-- Bu `/std:c++latest` seçenek artık, \< üç yönlü karşılaştırma için c++ 20 operator => ("Spaceship") için ilk destek dahil olmak üzere tam olarak tamamlanmamış c++ 20 özelliklerini içerir.
+- Bu `/std:c++latest` seçenek artık, \<=> üç yönlü karşılaştırma için c++ 20 işleci ("Spaceship") için başlangıç desteği dahil olmak üzere tam olmayan c++ 20 özelliklerini içerir.
 
 - C++ derleyici anahtarı `/Gm` artık kullanım dışıdır. `/Gm`Derleme betiklerinizde açıkça tanımlanmış olan anahtarı devre dışı bırakmayı düşünün. Bununla birlikte, `/Gm` "uyarıları hata olarak değerlendir" () kullanılırken hata olarak değerlendirilmediği için, için kullanımdan kaldırma uyarısını güvenle yoksayabilirsiniz `/WX` .
 
@@ -38,7 +38,7 @@ Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltm
 
 - Gelişmiş okunabilirlik için C++ standart kitaplığı üst bilgilerine Clang-Format uygulandı.
 
-- Visual Studio artık C++ için Yalnızca kendi kodum desteklediğinden, standart kitaplığın artık için özel makineler sağlaması `std::function` ve aynı etkiyi elde etmek için ihtiyacı yoktur `std::visit` . Bu makinelerin büyük ölçüde Kullanıcı tarafından görülemeyen etkileri yoktur. Tek bir istisna, derleyicinin artık \< type_traits> veya varyant> hat 15732480 veya 16707566 ' deki sorunları belirten tanılama oluşturmayacağı anlamına gelebilir \< .
+- Visual Studio artık C++ için Yalnızca kendi kodum desteklediğinden, standart kitaplığın artık için özel makineler sağlaması `std::function` ve aynı etkiyi elde etmek için ihtiyacı yoktur `std::visit` . Bu makinelerin büyük ölçüde Kullanıcı tarafından görülemeyen etkileri yoktur. Tek bir istisna derleyicinin artık 15732480 veya 16707566 satırındaki sorunları belirten tanılamayı oluşturmayacağı durumdur \<type_traits> \<variant> .
 
 ## <a name="performancethroughput-improvements-in-the-compiler-and-standard-library"></a>Derleyici ve standart kitaplıkta performans/aktarım hızı iyileştirmeleri
 
@@ -62,7 +62,7 @@ Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltm
 
   - `memmove` `std::copy` Veya ve oluşturma gibi kullanılarak kodun geliştirilmiş iyileştirmesi `std::vector` `std::string` .
 
-- Standart kitaplığın, doğrudan dahil edilmemiş parçalar derlenmekten kaçınmak için standart kitaplık fiziksel tasarımını en iyi duruma getirilmiştir. Bu değişiklik, yalnızca \< yarı> vektör içeren boş bir dosyanın derleme süresini keser. Sonuç olarak, `#include` daha önce dolaylı olarak dahil edilen üst bilgiler için yönergeler eklemeniz gerekebilir. Örneğin, tarafından kullanılan kodun `std::out_of_range` artık eklemesi gerekebilir `#include <stdexcept>` . Stream ekleme işlecini kullanan kodun artık eklemesi gerekebilir `#include <ostream>` . Avantaj, yalnızca \< stdexcept> veya \< ostream> bileşenleri kullanan çeviri birimlerinin, bunları derlemek için üretilen iş maliyetini ödemesidir.
+- Standart kitaplığın, doğrudan dahil edilmemiş parçalar derlenmekten kaçınmak için standart kitaplık fiziksel tasarımını en iyi duruma getirilmiştir. Bu değişiklik, yalnızca yarısında yer alan boş bir dosyanın derleme süresini keser \<vector> . Sonuç olarak, `#include` daha önce dolaylı olarak dahil edilen üst bilgiler için yönergeler eklemeniz gerekebilir. Örneğin, tarafından kullanılan kodun `std::out_of_range` artık eklemesi gerekebilir `#include <stdexcept>` . Stream ekleme işlecini kullanan kodun artık eklemesi gerekebilir `#include <ostream>` . Avantaj, yalnızca veya bileşenleri kullanan çeviri birimlerinin \<stdexcept> \<ostream> , bunları derlemek için üretilen iş maliyetini ödemesidir.
 
 - `if constexpr`Standart kitaplıkta daha fazla yerde daha fazla yere uygulanmış ve kopyalama işlemlerinde daha fazla kod boyutu, ters ve aşağı döndürme gibi permütasyon ve paralel algoritmalar kitaplığında uygulandı.
 
@@ -144,11 +144,11 @@ Intellicode artık C++ iş yüküyle **Masaüstü geliştirmede** isteğe bağl�
 
 - CMake 3,14 desteği
 
-- Visual Studio artık Cmakeguı, özelleştirilmiş meta derleme sistemleri veya CMake. exe ' yi çağıran derleme betikleri gibi dış araçlar tarafından oluşturulan mevcut CMake önbelleklerini açabilir.
+- Visual Studio artık, Cmakeguı, özelleştirilmiş meta-Build sistemleri veya cmake.exe kendilerini çağıran derleme betikleri gibi dış araçlar tarafından oluşturulan mevcut CMake önbelleklerini açabilir.
 
 - Geliştirilmiş IntelliSense performansı.
 
-- Yeni bir ayar Düzenleyicisi, CMakeSettings. json dosyasını el ile düzenlemeyle ilgili bir alternatif sağlar ve Cmakeguı ile bir eşlik sağlar.
+- Yeni bir ayar Düzenleyicisi, dosyadaki CMakeSettings.jsel ile düzenleme için alternatif sağlar ve Cmakeguı ile bazı eşlik sağlar.
 
 - Visual Studio, Linux makinenizde uyumlu bir CMake sürümü olup olmadığını algılayarak Linux üzerinde CMake ile C++ geliştirmenizin önyüklemesine yardımcı oluyor. Uyumlu bir sürüm yoksa, sizin için yüklemeyi öneriyor.
 
@@ -162,7 +162,7 @@ Intellicode artık C++ iş yüküyle **Masaüstü geliştirmede** isteğe bağl�
 
 - CMake projeleri ve Visual Studio 'nun derleme ilerlemesi Kullanıcı arabirimine yönelik destek için ' begin' ve ' End ' iletilerini daha net hale getirin ve yapılandırın. Ayrıca, **araçlar > seçeneklerinde** CMake yapı ve yapılandırma çıkış penceresi iletilerinin ayrıntı düzeyini özelleştirmek için artık bir CMake ayrıntı ayarı vardır.
 
-- Bu `cmakeToolchain` ayar artık CMake komut satırını el ile değiştirmeden toolzincirleri belirtmek Için CMakeSettings. JSON içinde desteklenir.
+- Bu `cmakeToolchain` ayar artık CMake komut satırını el ile değiştirmeden araç zincirlerini belirtmek için üzerinde CMakeSettings.jsdesteklenir.
 
 - Yeni bir **Yapı Oluştur** Menü kısayolu **CTRL + SHIFT + B**.
 
@@ -182,7 +182,7 @@ Intellicode artık C++ iş yüküyle **Masaüstü geliştirmede** isteğe bağl�
 
 IncrediBuild, C++ iş yüküne **sahip masaüstü geliştirmeye** isteğe bağlı bir bileşen olarak dahildir. IncrediBuild derleme Izleyicisi, Visual Studio IDE 'de tamamen tümleşiktir. Daha fazla bilgi için bkz. [IncrediBuild 'In derleme İzleyicisi ve Visual Studio 2019 ile derlemenizi görselleştirme](https://devblogs.microsoft.com/cppblog/visualize-your-build-with-incredibuilds-build-monitor-and-visual-studio-2019/).
 
-## <a name="debugging"></a>Hata ayıklama
+## <a name="debugging"></a>Hata Ayıklama
 
 - Windows üzerinde çalışan C++ uygulamaları için PDB dosyaları artık ayrı bir 64 bit işlemde yüklenir. Bu değişiklik, hata ayıklayıcının bellek tükenmesinin neden olduğu bir kilitlenme aralığına yöneliktir. Örneğin, çok sayıda modül ve PDB dosyası içeren uygulamalarda hata ayıklarken.
 
@@ -203,7 +203,7 @@ IncrediBuild, C++ iş yüküne **sahip masaüstü geliştirmeye** isteğe bağl�
 
   Bu teknolojilerin örnek kodu Microsoft Docs'ta ve VCSamples GitHub deposunda arşivlendi.
 
-- Windows 8.1 yazılım geliştirme seti (SDK) artık Visual Studio yükleyicisi 'nde kullanılamaz. C++ projelerinizi en son Windows 10 SDK 'sına yükseltmenizi öneririz. 8.1'e katı bir bağımlılığınız varsa, bunu Windows SDK arşivinden indirebilirsiniz.
+- Windows 8.1 yazılım geliştirme seti (SDK) artık Visual Studio yükleyicisi 'nde kullanılamaz. C++ projelerinizi en son Windows 10 SDK 'sına yükseltmenizi öneririz. 8\.1'e katı bir bağımlılığınız varsa, bunu Windows SDK arşivinden indirebilirsiniz.
 
 - En son C++ araç takımında artık Windows XP hedeflemesi sağlanmıyor. VS 2017-Level MSVC derleyicisi & kitaplıkları ile hedefleme, hala desteklenmektedir ve "bağımsız bileşenler" aracılığıyla yüklenebilir.
 
@@ -221,7 +221,7 @@ Clang/C2 bileşeni kaldırıldı. `/permissive-`Ve `/std:c++17` , veya Windows I
 
 - Kod analizi artık otomatik olarak arka planda çalıştırılıyor. Siz yazdıkça düzenleyicinin içinde uyarılar yeşil dalgalı çizgilerle gösteriliyor. Daha fazla bilgi için bkz. [Visual Studio 2019 Preview 2 ' deki düzenleyici kod analizi](https://devblogs.microsoft.com/cppblog/in-editor-code-analysis-in-visual-studio-2019-preview-2/).
 
-- Mutex> üst bilgisinden, tanınmış standart kitaplık türleri için yeni deneysel ConcurrencyCheck kuralları \< . Daha fazla bilgi için bkz. [Visual Studio 2019 'de eşzamanlılık kodu analizi](https://devblogs.microsoft.com/cppblog/concurrency-code-analysis-in-visual-studio-2019/).
+- Üst bilgiden tanınmış standart kitaplık türleri için yeni deneysel ConcurrencyCheck kuralları \<mutex> . Daha fazla bilgi için bkz. [Visual Studio 2019 'de eşzamanlılık kodu analizi](https://devblogs.microsoft.com/cppblog/concurrency-code-analysis-in-visual-studio-2019/).
 
 - Etkinlik işaretçilerini ve başvuruları algılayan [ömür profili denetleyicisi](https://herbsutter.com/2018/09/20/lifetime-profile-v1-0-posted/)'nin güncelleştirilmiş kısmi bir uygulamasıdır. Daha fazla bilgi için bkz. [Visual Studio 2019 Preview 2 ' de ömür profili güncelleştirmesi](https://devblogs.microsoft.com/cppblog/lifetime-profile-update-in-visual-studio-2019-preview-2/).
 
@@ -358,8 +358,8 @@ Visual Studio 2017 RTM 'de daha standart kitaplık geliştirmeleri vardır. Tüm
 
 ### <a name="conformance-improvements"></a>Uyumluluk geliştirmeleri
 
-- String_view, \< , \> \< \> `apply()` ,, `make_from_tuple()` ve ekledik.
-- \<İsteğe bağlı \> , \< Varyant \> , `shared_ptr::weak_type` ve \< cstdalign eklendi eklendi \> .
+- Ekledik, \<any\> , \<string_view\> `apply()` , `make_from_tuple()` .
+- , \<optional\> , \<variant\> `shared_ptr::weak_type` Ve eklendi \<cstdalign\> .
 - ,, Ve, ve, ve içinde C++ 14 etkindir `constexpr` `min(initializer_list)` `max(initializer_list)` `minmax(initializer_list)` `min_element()` `max_element()` `minmax_element()` .
 
 Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp-language-conformance.md).
@@ -377,7 +377,7 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp
 - `static_assert(false, "message")`Olarak değiştirildi `#error message` . Bu değişiklik, `#error` derlemeyi hemen durdurduğu için derleyici tanılamayı geliştirir.
 - Standart kitaplık artık işlevleri olarak işaretler `__declspec(dllimport)` . Modern bağlayıcı teknolojisine artık gerek yoktur.
 - SFıNAE 'yi, dönüş türleri ve işlev bağımsız değişken türleri ile karşılaştırıldığında dağınıklığı azaltılan varsayılan şablon bağımsız değişkenlerine ayıklandı.
-- Rastgele hata ayıklama \< denetimleri \> artık, `_Rng_abort()` `fputs()` **stderr**'e çağrılan iç işlev yerine standart kitaplığın olağan makineleri kullanır. Bu işlevin uygulanması, ikili uyumluluk için tutulmuştur. Standart kitaplığın sonraki ikili uyumsuz sürümünde bu sürümü kaldıracağız.
+- ' Deki hata ayıklama denetimleri, \<random\> artık `_Rng_abort()` `fputs()` **stderr**'e çağrılan iç işlev yerine standart kitaplığın olağan makineler ' i kullanır. Bu işlevin uygulanması, ikili uyumluluk için tutulmuştur. Standart kitaplığın sonraki ikili uyumsuz sürümünde bu sürümü kaldıracağız.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
@@ -414,7 +414,7 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp
 ##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
 - Paralel algoritmalar için destek artık deneysel değildir
-- \<Dosya sistemi> yeni bir uygulama
+- Yeni bir uygulama\<filesystem>
 - Elemensel dize dönüştürmeleri (kısmi)
 - `std::launder()`
 - `std::byte`
@@ -454,7 +454,7 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp
 - `basic_string`İç büyüme yolu artık yolunda değildir `shrink_to_fit()` .
 - `basic_string`İşlev azaltma işlemleri artık, ayırılamayan hızlı yola ve yavaş yol işlevlerine bölünmüştür ve bu da yaygın olmayan bir servis talebi arayanlara satır içine alınmayacak.
 - `basic_string`Değiştirme işlemleri artık yeniden boyutlandırma yerine tercih edilen durumda yeniden ayrılmış arabellekler oluşturur. Örneğin, bir dizenin başındaki bir INSERT artık, içeriği tam olarak bir kez eklendikten sonra taşımıştır. Aşağı ya da yeni ayrılmış arabelleğe taşınır. Bu durumda, ilk olarak yeni ayrılan arabelleğe ve ardından aşağı doğru bir şekilde bir kez taşınmaz.
-- Dizedeki C standart kitaplığını çağıran işlemler \< \> artık, `errno` TLS ile yinelenen etkileşimi kaldırmak için adresi önbelleğe alma işlemi.
+- İçindeki C standart kitaplığını çağıran işlemler, \<string\> artık `errno` TLS ile yinelenen etkileşimi kaldırmak için adresi önbelleğe alma işlemini kaldırır.
 - Uygulamayı basitleşme `is_pointer` .
 - İşlev tabanlı Ifadenin SFıNAE 'ye ve tabanlı olarak değiştirilmesi bitti `struct` `void_t` .
 - Standart Kitaplık algoritmaları artık, geri artan yineleyiciler yapmaktan kaçınır.
@@ -515,7 +515,7 @@ Yeniden düzenleme ve kod gezintisi için IntelliSense altyapısını kullanan b
 
 |||
 |-|-|
-|Öne çıkan özelliği|Performans Iyileştirmesi|
+|Özellik|Performans Iyileştirmesi|
 |Rename|5.3 x|
 |Imzayı Değiştir |4.5 x|
 |Tüm Başvuruları Bul|4.7 x|
@@ -561,14 +561,14 @@ Visual Studio 2017, **klasörü aç** özelliğini tanıtır. Herhangi bir çöz
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
 - Alternatif derleyiciler ve MinGW ve Cygwin gibi yapı ortamları için geliştirilmiş destek. Daha fazla bilgi için bkz. [MinGW ve Cygwin 'yi Visual C++ ve açık klasör kullanma](https://devblogs.microsoft.com/cppblog/using-mingw-and-cygwin-with-visual-cpp-and-open-folder/).
-- CppProperties. JSON ve CMakeSettings. JSON içinde genel ve yapılandırmaya özgü ortam değişkenlerini tanımlamaya yönelik destek eklendi. Bu ortam değişkenleri, Launch. vs. JSON ve Tasks. vs. JSON içinde tanımlanan hata ayıklama yapılandırmalarına göre tüketilebilir. Daha fazla bilgi için bkz. [Visual C++ ve klasörü açmak Için ortamınızı özelleştirme](https://devblogs.microsoft.com/cppblog/customizing-your-environment-with-visual-c-and-open-folder/).
+- Üzerinde CppProperties.jsve CMakeSettings.jsüzerinde genel ve yapılandırmaya özgü ortam değişkenlerini tanımlamaya yönelik destek eklendi. Bu ortam değişkenleri, launch.vs.json ve tasks.vs.jsiçindeki görevlerde tanımlanan hata ayıklama yapılandırmalarına göre tüketilebilir. Daha fazla bilgi için bkz. [Visual C++ ve klasörü açmak Için ortamınızı özelleştirme](https://devblogs.microsoft.com/cppblog/customizing-your-environment-with-visual-c-and-open-folder/).
 - 64 bitlik platformları kolayca hedefleyebilme özelliği de dahil olmak üzere CMake Dokja üreticisi için geliştirilmiş destek.
 
 ## <a name="cmake-support-via-open-folder"></a>Açık klasör aracılığıyla CMake desteği
 
 Visual Studio 2017, MSBuild proje dosyalarına (. vcxproj) dönüştürülmeksizin CMake projelerini kullanma desteği sunar. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake projeleri](../build/cmake-projects-in-visual-studio.md). **Açık klasörle** birlikte CMake projelerini açmak, C++ düzenlemesi, oluşturulması ve hata ayıklaması için ortamı otomatik olarak yapılandırır.
 
-- C++ IntelliSense, kök klasörde CppProperties. JSON dosyası oluşturmaya gerek kalmadan işe yarar. Ayrıca, kullanıcıların CMake ve CppProperties. JSON dosyaları tarafından verilen yapılandırmalara kolayca geçiş yapmasına olanak tanımak için yeni bir açılan menü ekledik.
+- C++ IntelliSense, kök klasörde bir CppProperties.jsdosyası oluşturmaya gerek kalmadan işe yarar. Ayrıca, kullanıcıların dosyalardaki CMake ve CppProperties.jstarafından verilen yapılandırmalara kolayca geçiş yapmasına olanak tanımak için yeni bir açılan menü ekledik.
 
 - CMakeLists.txt dosyasıyla aynı klasörde yer alan CMakeSettings.json dosyasıyla ek yapılandırma gerçekleştirilmesi desteklenir.
 
@@ -598,7 +598,7 @@ Visual C++ derleme araçları (daha önce tek başına bir ürün olarak kullan�
 
 ## <a name="linux-development-with-c"></a>C++ ile Linux geliştirme
 
-Popüler [Linux Geliştirme için Visual C++](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e) eklentisi artık Visual Studio’nun bir parçasıdır. Bu yükleme, Linux ortamında çalışan C++ uygulamalarını geliştirmek ve hatalarını ayıklamak için ihtiyacınız olan her şeyi sağlar.
+Popüler [Linux Geliştirme için Visual C++](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.VisualCforLinuxDevelopment) eklentisi artık Visual Studio’nun bir parçasıdır. Bu yükleme, Linux ortamında çalışan C++ uygulamalarını geliştirmek ve hatalarını ayıklamak için ihtiyacınız olan her şeyi sağlar.
 
 ##### <a name="visual-studio-2017-version-152"></a>Visual Studio 2017 sürüm 15.2
 
@@ -697,7 +697,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
-  ![Arama](media/search.png)
+  ![Arayın](media/search.png)
 
 - **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklayın.
 
@@ -715,7 +715,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
 - **Bellek İstatistikleri:** Çerçevede oluşturduğunuz kaynaklar için sürücünün ne kadar bellek ayırdığını görüntüleyin. Bu pencere, **Visual Studio grafik Çözümleyicisi**' de **görüntüleme > bellek istatistikleri** aracılığıyla kullanılabilir. Bir elektronik tabloda görüntülenmek üzere bir CSV dosyasına veri kopyalamak için sağ tıklayın ve **Tümünü Kopyala**' yı seçin.
 
-  ![Bellek İstatistikleri](media/memory-stats.png)
+  ![Bellek istatistikleri](media/memory-stats.png)
 
 - **Çerçeve doğrulaması:** Yeni hatalar ve uyarılar listesi, Direct3D hata ayıklama katmanının algıladığı olası sorunlara göre olay listenizde gezinmek için kolay bir yol sağlar. Pencereyi açmak için Visual Studio Grafik Çözümleyicisi **> çerçeve doğrulamayı görüntüle** ' ye tıklayın. Ardından, çözümlemeyi başlatmak için **doğrulamayı Çalıştır** ' a tıklayın. Çerçevenin karmaşıklığına bağlı olarak tamamlanması birkaç dakika sürebilir.
 

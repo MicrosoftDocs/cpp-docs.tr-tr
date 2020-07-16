@@ -4,74 +4,72 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: 7a866c0e6b772a992f5ae81dbb17646765f172e6
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 6fa1dd3985fd5b565bcc4b4727f41960d1f4f5d0
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708332"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405136"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Tür Kitaplığı Sihirbazından Sınıf Ekleme
 
 ::: moniker range="vs-2019"
 
-Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+Bu sihirbaz, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Bir kullanılabilir tür kitaplığından bir MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz, seçilen tür kitaplığından eklediğiniz her arabirim için bir sınıf oluşturur.
+Kullanılabilir bir tür kitaplığından bir MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz, seçilen tür kitaplığından eklediğiniz her arabirim için bir sınıf oluşturur.
 
-- **Şuradan Sınıf Ekle**
+- **Sınıf Ekle**
 
-   Tür kitaplığının sınıf oluşturulduğu konumu belirtir.
+   Sınıfın oluşturulduğu tür kitaplığının konumunu belirtir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Kayıt defteri**|Tür kitaplığını sistemde kayıtlı. Kayıtlı bir tür kitaplığı içinde listelenen **kullanılabilir tür kitaplıklarını**.|
-   |**Dosya**|Tür kitaplığını mutlaka sistemde kayıtlı değil ancak bir dosyada yer alır. Dosya konumunda sağlamalısınız **konumu**.|
+   |**Kapsayıcı Kayıt Defteri**|Tür kitaplığı sisteme kaydedilir. Kayıtlı tür kitaplıkları **kullanılabilir tür kitaplıklarında**listelenmiştir.|
+   |**Dosya**|Tür kitaplığının sistemde kayıtlı olması gerekmez, ancak bir dosyada yer alır. Dosya konumunu **konuma**sağlamanız gerekir.|
 
 - **Kullanılabilir tür kitaplıkları**
 
-   Şu anda sistemde kayıtlı tür kitaplıkları listeler. Bu listeden arabirimlerinden içinde görüntülemek için bir tür kitaplığını seçin **arabirimleri** listesi.
-
-   Bkz: "içinde dağıtılmış COM: Kitaplıkları ve dil tümleştirme tür kitaplıklarını kaydetme hakkında daha fazla bilgi için MSDN Kitaplığı'nda tür".
+   Sistemde kayıtlı olan tür kitaplıklarını listeler. Arabirimlerini **arabirimler** listesinde göstermek için bu listeden bir tür kitaplığı seçin.
 
 - **Konum**
 
-   Tür kitaplığının konumu belirtir. Tıklarsanız **dosya** altında **sınıfı gelen ekleme**, tür kitaplığı içeren dosyanın konumunu sağlayabilir. Dosyasının konumuna göz atmak için üç nokta düğmesine tıklayın.
+   Tür kitaplığının konumunu belirtir. **Sınıfından sınıf Ekle**altında **Dosya** ' ya tıklarsanız, tür kitaplığını içeren dosyanın konumunu sağlayabilirsiniz. Dosyanın konumuna gitmek için üç nokta düğmesine tıklayın.
 
 - **Arabirimler**
 
-   Tür kitaplığı şu anda seçili arabirimlerde listeler **kullanılabilir tür kitaplıklarını** listesi.
+   **Kullanılabilir tür kitaplıkları** listesinde şu anda seçili olan tür kitaplığındaki arabirimleri listeler.
 
-   |Aktarım düğmesi|Açıklama|
+   |Aktar düğmesi|Açıklama|
    |---------------------|-----------------|
-   |**>**|Şu anda seçili arabirimi ekler **arabirimleri** listesi. Herhangi bir arabirim seçtiyseniz soluk.|
-   |**>>**|Şu anda seçili tür kitaplığındaki tüm arabirimleri ekler **kullanılabilir tür kitaplıklarını** listesi.|
-   |**\<**|Şu anda seçili sınıfını kaldırır **sınıfları oluşturulan** listesi. Hiçbir sınıf içinde seçilirse soluk **sınıfları oluşturulan** listesi.|
-   |**\<\<**|Tüm sınıfları kaldırır **sınıfları oluşturulan** listesi. Soluk bir IF **sınıfları oluşturulan** listesi boş.|
+   |**>**|**Arabirimler** listesinde seçili olan arabirimi ekler. Hiçbir arabirim seçilmezse soluk.|
+   |**>>**|**Kullanılabilir tür kitaplıkları** listesinde seçili olan tür kitaplığındaki tüm arabirimleri ekler.|
+   |**\<**|**Oluşturulan sınıflar** listesinde şu anda seçili olan sınıfı kaldırır. **Oluşturulan sınıflar** listesinde hiçbir sınıf seçili değilse soluk.|
+   |**\<\<**|**Oluşturulan sınıflar** listesindeki tüm sınıfları kaldırır. **Oluşturulan sınıflar** listesi boşsa soluk olur.|
 
 - **Oluşturulan sınıflar**
 
-   Sınıf adları kullanılarak eklenen arabirimlerinden oluşturulacak belirtir **>** veya **>>** düğmesi. Bir sınıf seçin ve ardından yukarı veya aşağı tuşlarını kullanarak, listede gezinmek için bu kutuyu her sınıf adını görüntüleme tıklayabilirsiniz **sınıfı** kutusu ve dosya adı **dosya** kutusu sihirbaz ne zaman oluşturur, tıklayın **son**. Bu kutuya bir kerede yalnızca bir sınıf seçebilirsiniz.
+   Or düğmesi kullanılarak eklenen arabirimlerde oluşturulacak sınıf adlarını belirtir **>** **>>** . Bir sınıf seçmek için bu kutuya tıklayabilir ve ardından listede gezinmek için yukarı veya aşağı tuşlarını kullanabilir, sonra da **son**' a tıkladığınızda sihirbazın ürettiği **Dosya** kutusundaki **sınıf** kutusu ve dosya adı ' nda her bir sınıf adını görüntüleyebilirsiniz. Bu kutuda tek seferde yalnızca bir sınıf seçebilirsiniz.
 
-   Bu listede seçerek ve tıklatarak bir sınıf kaldırabilirsiniz **<**. Tüm sınıflar kaldırmak için oluşturulan sınıflar kutusunda bir sınıf seçin gerekmez; tıklayarak **<<**, içindeki tüm sınıflar Kaldır **sınıfları oluşturulan** kutusu.
+   Bir sınıfı bu listede seçip öğesini tıklatarak kaldırabilirsiniz **<** . Tüm sınıfları kaldırmak için oluşturulan sınıflar kutusunda bir sınıf seçmeniz gerekmez; öğesine tıklayarak **<<** , **oluşturulan sınıflar** kutusundaki tüm sınıfları kaldırırsınız.
 
-- **Sınıfı**
+- **Sınıf**
 
-   Seçilen sınıfın adını belirtir **sınıfları oluşturulan** tıkladığınızda sihirbaz ekler kutusu **son**. Adlarında düzenleyebileceğiniz **sınıfı** kutusu.
+   **Son**' a tıkladığınızda sihirbazın eklediği **oluşturulan sınıflar** kutusunda seçilen sınıfın adını belirtir. **Sınıf** kutusunda adı düzenleyebilirsiniz.
 
 - **Dosya**
 
-   Yeni bir sınıf için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıfları oluşturulan**. Dosya adı, tercih ettiğiniz bir konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesine tıklayın. Var olan bir dosya seçerseniz, sihirbaz, seçili konuma dek tıklatın kaydedilmeyecektir **son** Sihirbazı'nda.
+   Yeni sınıf için üst bilgi dosyasının adını ayarlar. Varsayılan olarak, bu ad, **üretilen sınıflarda**sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.
 
-   Sihirbazın bir dosyanın üzerine yazmaz. ' A tıkladığınızda, var olan bir dosya adı seçerseniz **son**, Sihirbazı sınıf bildirimi dosya içeriğini eklenmeyeceğini göstermek isteyip istemediğinizi sorar. Tıklayın **Evet** ; dosya eklemek için tıklatın **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tür kitaplığından MFC sınıfı](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
-[Otomasyon İstemcileri: Tür Kitaplıkları Kullanma](../../mfc/automation-clients-using-type-libraries.md)
+[Bir tür kitaplığından MFC sınıfı](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
+[Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../../mfc/automation-clients-using-type-libraries.md)

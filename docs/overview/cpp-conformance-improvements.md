@@ -3,12 +3,12 @@ title: C++ uygunluk iyileştirmeleri
 ms.date: 05/18/2020
 description: Visual Studio 'da Microsoft C++, C++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
-ms.openlocfilehash: c7c93de8b0e4c266290b858c76e7b34fccc0cabd
-ms.sourcegitcommit: 3f91111c0350c0237fddb82766c290307f20e659
+ms.openlocfilehash: 7796728c869e39270ee9e8fe82fb5e0e9a3a8630
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83630498"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405110"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -177,7 +177,7 @@ const char8_t* s = u8"Hello"; // C++20
 
 [P0887R1 type_identity](https://wg21.link/p0887r1). Kullanım dışı bırakılan `std::identity` sınıf şablonu uzantısı kaldırılmıştır ve c++ 20 `std::type_identity` programlayıcılarına ve `std::identity` Function nesnesiyle değiştirilmiştir. Her ikisi de yalnızca [/std: c + + en son](../build/reference/std-specify-language-standard-version.md)altında kullanılabilir.
 
-Aşağıdaki örnek, `std::identity` Visual Studio 2017 ' de için kullanımdan kaldırma Uyarı C4996 ( \< type_traits> tanımlanmıştır) üretir:
+Aşağıdaki örnek, `std::identity` \<type_traits> Visual Studio 2017 ' de için kullanımdan kaldırma uyarısı C4996 (içinde tanımlanmıştır) üretir:
 
 ```cpp
 #include <type_traits>
@@ -188,7 +188,7 @@ int i = 42;
 long j = std::identity<long>{}(i);
 ```
 
-Aşağıdaki örnek, New `std::identity` ( \< işlevsel> 'de tanımlanır) ile birlikte yeni bir nasıl kullanılacağını gösterir `std::type_identity` :
+Aşağıdaki örnek, New `std::identity` (' de tanımlı) ' nin \<functional> Yeni ile birlikte nasıl kullanılacağını gösterir `std::type_identity` :
 
 ```cpp
 #include <type_traits>
@@ -237,7 +237,7 @@ void f() {
 - `starts_with()`ve `ends_with()` için `basic_string` `basic_string_view` .
 - İlişkili kapsayıcılar için `contains()`.
 - `list` ve `forward_list` için `remove()`, `remove_if()` ve `unique()` artık `size_type` değerini döndürüyor.
-- `shift_left()`ve `shift_right()` \<> algoritmasına eklenmiştir.
+- `shift_left()` ve `shift_right()`\<algorithm> üzerine eklendi.
 
 ## <a name="conformance-improvements-in-162"></a><a name="improvements_162"></a>16,2 sürümündeki uyumluluk geliştirmeleri
 
@@ -376,13 +376,13 @@ bool neq(const S& lhs, const S& rhs) {
 
 ### <a name="standard-library-improvements"></a>Standart Kitaplık geliştirmeleri
 
-- \<charconv `to_chars()` , Fixed/bilimsel duyarlıkla>. (Genel duyarlık Şu anda 16,4 için planlanmaktadır.)
-- [P0020R6](https://wg21.link/p0020r6): atomik \< float>, atomik \< çift>, atomik \< uzun çift>
+- \<charconv>`to_chars()`sabit/bilimsel duyarlıkla. (Genel duyarlık Şu anda 16,4 için planlanmaktadır.)
+- [P0020R6](https://wg21.link/p0020r6): atomik \<float> , atomik \<double> , atomik\<long double>
 - [P0463R1](https://wg21.link/p0463r1): endian
 - [P0482R6](https://wg21.link/p0482r6): char8_t Için kitaplık desteği
 - [P0600R1](https://wg21.link/p0600r1): [ \[ NODISCARD]] STL, Bölüm 1
 - [P0653R2](https://wg21.link/p0653r2): to_address ()
-- [P0754R2](https://wg21.link/p0754r2): \< Sürüm>
+- [P0754R2](https://wg21.link/p0754r2):\<version>
 - [P0771R1](https://wg21.link/p0771r1): noexcept std:: işlevin taşıma Oluşturucusu
 
 ## <a name="conformance-improvements-in-visual-studio-2019-version-163"></a><a name="improvements_163"></a>Visual Studio 2019 sürüm 16,3 ' de uyumluluk geliştirmeleri
@@ -456,7 +456,7 @@ extern "C" void f(int, int, int, BOOL){}
 
 ### <a name="standard-library-improvements"></a>Standart Kitaplık geliştirmeleri
 
-Standart olmayan, \< stdexcpt. h> ve \< TypeInfo. h> üstbilgileri kaldırılmıştır. Bunun yerine, bunları içeren kodun sırasıyla standart üstbilgiler \< özel durumu> ve \< TypeInfo> içermesi gerekir.
+Standart olmayan üstbilgiler \<stdexcpt.h> ve \<typeinfo.h> kaldırılmıştır. Bunun yerine, standart üst bilgileri ve sırasıyla dahil olmak üzere kodu içerir \<exception> \<typeinfo> .
 
 ## <a name="conformance-improvements-in-visual-studio-2019-version-164"></a><a name="improvements_164"></a>Visual Studio 2019 sürüm 16,4 ' de uyumluluk geliştirmeleri
 
@@ -967,7 +967,7 @@ Birçok olası düzeltme vardır:
 
 Visual Studio 2019 sürüm 16,6 ' den başlayarak, derleyici C olarak derlenen kod için önceden varolan C++ uyarılarını uygular. Şu uyarılar artık farklı düzeylerde etkinleştirilmiştir: C4060, C4061, C4062, C4063, C4064, C4065, C4808 ve C4809. Uyarılar C4065 ve C4060, C 'de varsayılan olarak devre dışıdır.
 
-Eksik **`case`** deyimler, tanımsız **`enum`** ve hatalı **`bool`** anahtarlar (yani çok fazla durum içeren) üzerinde uyarılar tetiklenir. Örnek:
+Eksik **`case`** deyimler, tanımsız **`enum`** ve hatalı **`bool`** anahtarlar (yani çok fazla durum içeren) üzerinde uyarılar tetiklenir. Örneğin:
 
 ```c
 #include <stdbool.h>
@@ -1276,9 +1276,9 @@ int main()
 
 Yineleyici hata ayıklama özelliği, düzgün bir şekilde sarmalanmadan daha uygun hale getiriliyor `std::move_iterator` . Örneğin, `std::copy(std::move_iterator<std::vector<int>::iterator>, std::move_iterator<std::vector<int>::iterator>, int*)` artık `memcpy` hızlı yolu kullanabilir.
 
-### <a name="fixes-for-xkeycheckh-keyword-enforcement"></a>\<Xkeycheck. h> anahtar sözcük zorlaması düzeltmeleri
+### <a name="fixes-for-xkeycheckh-keyword-enforcement"></a>\<xkeycheck.h>Anahtar sözcük zorlaması için düzeltmeler
 
-Standart Kitaplık makrosu, bir \< genel ileti yerine algılanan gerçek sorunlu anahtar sözcüğü göstermek için, bir anahtar sözcük zorlama xkeycheck. h> değiştirme. Ayrıca C++ 20 anahtar sözcüklerini destekler ve IntelliSense 'in rastgele anahtar sözcüklerin makroları olduğunu söylenmesini önler.
+Standart Kitaplık makrosu bir anahtar sözcük zorlamasını değiştirme, \<xkeycheck.h> genel bir ileti yerine algılanan gerçek sorunlu anahtar sözcüğü yayma için düzeltildi. Ayrıca C++ 20 anahtar sözcüklerini destekler ve IntelliSense 'in rastgele anahtar sözcüklerin makroları olduğunu söylenmesini önler.
 
 ### <a name="allocator-types-no-longer-deprecated"></a>Ayırıcı türleri artık kullanım dışı
 
@@ -1288,7 +1288,7 @@ Standart Kitaplık makrosu, bir \< genel ileti yerine algılanan gerçek sorunlu
 
 `static_cast` `std::string` Standart tarafından çağrılmadığı ve yanlışlıkla C4244 daraltma uyarılarını gizlenen bir şekilde kaldırıldı. `std::string::string(const wchar_t*, const wchar_t*)`Artık C4244 yayma denemeleri `narrowing a wchar_t into a char` .
 
-### <a name="various-filesystem-correctness-fixes"></a>Çeşitli \< filesystem> doğruluk düzeltmeleri
+### <a name="various-filesystem-correctness-fixes"></a>Çeşitli \<filesystem> doğruluk düzeltmeleri
 
 - `std::filesystem::last_write_time`Dizinin son yazma zamanı değiştirilmeye çalışılırken hata düzeltildi.
 - `std::filesystem::directory_entry`Oluşturucu artık varolmayan bir hedef yolu sağlandığı zaman bir özel durum oluşturmak yerine başarısız bir sonucu depolar.
@@ -1322,7 +1322,7 @@ Sıralanmamış kapsayıcı `reserve` işlevi artık, [lwg 2156](https://cpluspl
 
 - Daha önce, eşzamanlılık kitaplığına geçirilen bazı zaman değerleri, örneğin, `condition_variable::wait_for(seconds::max())` . Şimdi düzeltildi, rastgele 29 günlük bir döngüde (temel alınan Win32 API 'Leri tarafından kabul edilen uint32_t milisaniyelik) değiştirilen taşma
 
-- \<CTime> üstbilgisi, `timespec` `timespec_get` `std` genel ad alanında bunları bildirmenin yanı sıra ad alanını da doğru şekilde bildirir.
+- \<ctime>Üst bilgi, `timespec` `timespec_get` `std` genel ad alanında bildirmenin yanı sıra ad alanını da doğru şekilde bildirir.
 
 ### <a name="various-fixes-for-containers"></a>Kapsayıcılar için çeşitli düzeltmeler
 
@@ -1410,7 +1410,7 @@ Toplamalarda Genelleştirilmiş **constexpr** ve statik olmayan veri üyesi baş
 
 ### <a name="c11-expression-sfinae-support-in-more-libraries"></a>C++ 11: daha fazla kitaplıklarda Ifade SFıNAE desteği
 
-Derleyici, SFıNAE ifadesi için desteğini iyileştirmeye devam eder. Bu, **decltype** ve **constexpr** ifadelerinin şablon parametreleri olarak görünebileceği şablon bağımsız değişkeni kesintisi ve değiştirme için gereklidir. Daha fazla bilgi için bkz. [Visual Studio 2017 RC 'de Expression SFINAE geliştirmeleri](https://blogs.msdn.microsoft.com/vcblog/2016/06/07/expression-sfinae-improvements-in-vs-2015-update-3).
+Derleyici, SFıNAE ifadesi için desteğini iyileştirmeye devam eder. Bu, **decltype** ve **constexpr** ifadelerinin şablon parametreleri olarak görünebileceği şablon bağımsız değişkeni kesintisi ve değiştirme için gereklidir. Daha fazla bilgi için bkz. [Visual Studio 2017 RC 'de Expression SFINAE geliştirmeleri](https://devblogs.microsoft.com/cppblog/expression-sfinae-improvements-in-vs-2015-update-3/).
 
 ### <a name="c14-nsdmi-for-aggregates"></a>C++ 14: toplamalar için NSDMı
 
@@ -1542,7 +1542,7 @@ Standart Kitaplık, C++ 17 derleyici değişikliklerine yanıt olarak güncelle�
 
 ### <a name="c17-library-fundamentals-v1"></a>C++ 17 kitaplık temelleri v1
 
-[P0220R1](https://wg21.link/p0220r1) c++ 17 Için kitaplık temelleri teknik belirtimini standart olarak içerir. \<Deneysel/tanımlama>, \< deneysel/isteğe bağlı>, \< deneysel/işlevsel>, \< deneysel/any>, \< deneysel/string_view>, \< deneysel/bellek>, \< deneysel/memory_resource> ve \< deneysel/algoritma> güncelleştirmelerini ele alır.
+[P0220R1](https://wg21.link/p0220r1) c++ 17 Için kitaplık temelleri teknik belirtimini standart olarak içerir. ,,,,,,, Ve için güncelleştirmeleri içerir \<experimental/tuple> \<experimental/optional> \<experimental/functional> \<experimental/any> \<experimental/string_view> \<experimental/memory> \<experimental/memory_resource> \<experimental/algorithm> .
 
 ### <a name="c17-improving-class-template-argument-deduction-for-the-standard-library"></a>C++ 17: standart kitaplık için sınıf şablonu bağımsız değişken kesintiyi geliştirme
 
@@ -1692,13 +1692,13 @@ void sample(A<0> *p)
 
 [P0030R1](https://wg21.link/p0030r1) , `std::hypot` Her biri üç giriş parametresine sahip olan **float**, **Double**ve **Long Double**türleri için üç yeni aşırı yükleme ekler.
 
-### <a name="c17-filesystem"></a>C++ 17: \< filesystem>
+### <a name="c17-filesystem"></a>C++ 17:\<filesystem>
 
 [P0218R1](https://wg21.link/p0218r1) Birkaç ifade değişikliği ile dosya sistemini standart olarak benimseme.
 
 ### <a name="c17-mathematical-special-functions"></a>C++ 17: matematik özel işlevleri
 
-[P0226R1](https://wg21.link/p0220r1) Matematik özel Işlevleri için önceki teknik belirtimleri standart \< cmath> başlığına benimseme.
+[P0226R1](https://wg21.link/p0220r1) Matematik özel Işlevleri için önceki teknik belirtimleri standart üstbilgiye benimseme \<cmath> .
 
 ### <a name="c17-deduction-guides-for-the-standard-library"></a>C++ 17: standart kitaplık için kesinti Kılavuzu
 
@@ -1706,7 +1706,7 @@ void sample(A<0> *p)
 
 ### <a name="c17-repairing-elementary-string-conversions"></a>C++ 17: elemensel dize dönüşümlerini onarma
 
-[P0682R1](https://wg21.link/p0682r1) Yeni elemensel dize dönüştürme işlevlerini P0067R5 ' dan yeni bir üst bilgi \< charconv> taşıyın ve yerine kullanılacak hata işlemeyi değiştirme de dahil olmak üzere başka geliştirmeler yapın `std::errc` `std::error_code` .
+[P0682R1](https://wg21.link/p0682r1) Yeni elemensel dize dönüştürme işlevlerini P0067R5 ' dan yeni bir üstbilgiye taşıyın \<charconv> ve yerine kullanılacak hata işlemeyi değiştirme de dahil olmak üzere diğer iyileştirmeler yapın `std::errc` `std::error_code` .
 
 ### <a name="c17-constexpr-for-char_traits-partial"></a>C++ 17: **constexpr** `char_traits` (kısmi)
 
@@ -2996,7 +2996,7 @@ struct D : B<T>
 D<int> d;
 ```
 
-Hatayı onarmak için B () ifadesini B \< T> () olarak değiştirin.
+Hatayı onarmak için B () ifadesini B \<T> () olarak değiştirin.
 
 ### <a name="constexpr-aggregate-initialization"></a>**constexpr** toplu başlatma
 
@@ -3166,7 +3166,7 @@ int main()
 }
 ```
 
-Hatayı düzeltemedi, `offsetof` \< cstddef> aracılığıyla tanımlanan şekilde kullanın:
+Hatayı onarmak için şunu kullanarak `offsetof` tanımlandığı şekilde kullanın \<cstddef> :
 
 ```cpp
 #include <cstddef>

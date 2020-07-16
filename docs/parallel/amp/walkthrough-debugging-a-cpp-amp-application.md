@@ -7,16 +7,16 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 54fff4421fbf6accf8ed3e37bb80ed09ec83165c
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 6eb93d617ac9909a67719b144a44ed461701225e
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126337"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404723"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama
 
-Bu konu başlığı altında, grafik işleme birimi (GPU C++ ) avantajlarından yararlanmak için hızlandırılmışC++ büyük paralellik (amp) kullanan bir uygulamada hata ayıklama işlemi gösterilmektedir. Büyük bir tamsayı dizisini toplayan paralel azaltma programını kullanır. Bu izlenecek yol aşağıdaki görevleri gösterir:
+Bu konu başlığı altında, grafik işleme birimi 'nden (GPU) yararlanmak için C++ Accelerated Massive Parallelism (C++ AMP) kullanan bir uygulamada hata ayıklama işleminin nasıl yapılacağı gösterilmektedir. Büyük bir tamsayı dizisini toplayan paralel azaltma programını kullanır. Bu izlenecek yol aşağıdaki görevleri gösterir:
 
 - GPU hata ayıklayıcısı başlatılıyor.
 
@@ -30,11 +30,11 @@ Bu konu başlığı altında, grafik işleme birimi (GPU C++ ) avantajlarından 
 
 - Bir kutucuğun tüm iş parçacıkları kodda belirli bir konuma yürütülüyor.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu izlenecek yolu başlatmak için:
 
-- [ C++ Amp genel bakışını](../../parallel/amp/cpp-amp-overview.md)okuyun.
+- [C++ amp genel bakış](../../parallel/amp/cpp-amp-overview.md)konusunu okuyun.
 
 - Satır numaralarının metin düzenleyicisinde görüntülendiğinden emin olun. Daha fazla bilgi için bkz. [nasıl yapılır: düzenleyicide satır numaralarını görüntüleme](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).
 
@@ -50,11 +50,11 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
 
 ### <a name="to-create-the-sample-project-in-visual-studio-2019"></a>Visual Studio 2019 'de örnek proje oluşturmak için
 
-1. **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda **dosya** > **Yeni** > **Proje** ' yi seçin.
+1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** olarak **C++** ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna `AMPMapReduce` girin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, `AMPMapReduce` proje için bir ad belirtmek üzere **ad** kutusuna girin ve isterseniz proje konumunu belirtin.
 
    ![Projeyi adlandırın](../../build/media/mathclient-project-name-2019.png "Projeyi adlandırın")
 
@@ -68,11 +68,11 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
 
 1. Visual Studio’yu çalıştırın.
 
-1. Menü çubuğunda **dosya** > **Yeni** > **Proje**' yi seçin.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. Şablonlar bölmesinde **yüklü** altında **görsel C++** ' i seçin.
+1. Şablonlar bölmesinde **yüklü** altında **Visual C++**' yi seçin.
 
-1. **Win32 konsol uygulaması**' nı seçin, **ad** kutusuna `AMPMapReduce` yazın ve **Tamam** düğmesini seçin.
+1. **Win32 konsol uygulaması**' nı seçin, `AMPMapReduce` **ad** kutusuna yazın ve **Tamam** düğmesini seçin.
 
 1. **İleri** düğmesini seçin.
 
@@ -203,19 +203,19 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
     }
 ```
 
-1. Menü çubuğunda **dosya** > **Tümünü Kaydet**' i seçin.
+1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet**' i seçin.
 
 1. **Çözüm Gezgini**, **AMPMapReduce**kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
-1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**altında, **önceden derlenmiş üstbilgiler** **C/C++**  > ' yi seçin.
+1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**altında **C/C++**  >  **önceden derlenmiş üst bilgiler**' i seçin.
 
 1. **Önceden derlenmiş üst bilgi** özelliği Için, **önceden derlenmiş üst bilgiler kullanmayan**' ı seçin ve ardından **Tamam** düğmesini seçin.
 
-1. Menü çubuğunda **derleme** > **Build Solution**' ı seçin.
+1. Menü **çubuğunda Build**  >  **Build Solution**öğesini seçin.
 
 ## <a name="debugging-the-cpu-code"></a>CPU kodunda hata ayıklama
 
-Bu yordamda, bu uygulamadaki CPU kodunun doğru olduğundan emin olmak için yerel Windows hata ayıklayıcısı ' nı kullanacaksınız. Bu uygulamadaki CPU kodu segmenti, `reduction_sum_gpu_kernel` işlevindeki `for` döngüdür. GPU üzerinde çalıştırılan ağaç tabanlı paralel küçültmeye göre kontrol eder.
+Bu yordamda, bu uygulamadaki CPU kodunun doğru olduğundan emin olmak için yerel Windows hata ayıklayıcısı ' nı kullanacaksınız. Bu uygulamadaki CPU kodu segmenti, `for` işlev içindeki döngüdür `reduction_sum_gpu_kernel` . GPU üzerinde çalıştırılan ağaç tabanlı paralel küçültmeye göre kontrol eder.
 
 ### <a name="to-debug-the-cpu-code"></a>CPU kodunda hata ayıklamak için
 
@@ -230,15 +230,15 @@ Bu yordamda, bu uygulamadaki CPU kodunun doğru olduğundan emin olmak için yer
    ![CPU kesme noktaları](../../parallel/amp/media/campcpubreakpoints.png "CPU kesme noktaları") <br/>
    CPU kesme noktaları
 
-5. Menü çubuğunda **hata ayıkla** > hata **ayıklamayı Başlat**' ı seçin.
+5. Menü çubuğunda **hata**  >  **ayıklamayı Başlat hata**Ayıkla ' yı seçin.
 
-6. **Yereller** penceresinde, 70 satırındaki kesme noktasına ulaşılana kadar `stride_size` değerini gözlemleyin.
+6. **Yereller** penceresinde, `stride_size` 70 satırındaki kesme noktasına ulaşılana kadar değerini gözlemleyin.
 
-7. Menü çubuğunda Hata **ayıkla** > hata **ayıklamayı Durdur**' u seçin.
+7. Menü çubuğunda **hata**  >  **ayıklamayı Durdur hata**Ayıkla ' yı seçin.
 
 ## <a name="debugging-the-gpu-code"></a>GPU kodunda hata ayıklama
 
-Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gösterilmektedir. GPU kodu, her "blok" için tamsayıların toplamını paralel olarak hesaplar.
+Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gösterilmektedir `sum_kernel_tiled` . GPU kodu, her "blok" için tamsayıların toplamını paralel olarak hesaplar.
 
 ### <a name="to-debug-the-gpu-code"></a>GPU kodunda hata ayıklamak için
 
@@ -259,11 +259,11 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
    ![GPU kesme noktaları](../../parallel/amp/media/campgpubreakpoints.png "GPU kesme noktaları") <br/>
    GPU kesme noktası
 
-7. Menü çubuğunda **hata ayıkla** > hata **ayıklamayı Başlat**' ı seçin. 67 ve 70 satırlarındaki CPU kodundaki kesme noktaları, bu kod satırları CPU üzerinde yürütüldüğü için GPU hata ayıklaması sırasında yürütülmez.
+7. Menü çubuğunda **hata**  >  **ayıklamayı Başlat hata**Ayıkla ' yı seçin. 67 ve 70 satırlarındaki CPU kodundaki kesme noktaları, bu kod satırları CPU üzerinde yürütüldüğü için GPU hata ayıklaması sırasında yürütülmez.
 
 ### <a name="to-use-the-gpu-threads-window"></a>GPU Iş parçacıkları penceresini kullanmak için
 
-1. **GPU Iş parçacıkları** penceresini açmak için, menü çubuğunda **hata ayıkla** > **Windows** > **GPU iş parçacıkları**' nı seçin.
+1. **GPU iş parçacıkları** penceresini açmak için, menü çubuğunda **Debug**  >  **Windows**  >  **GPU iş parçacıkları**Hata Ayıkla ' yı seçin.
 
    GPU iş parçacıklarının durumunu, görüntülenen **GPU Iş parçacıkları** penceresinde inceleyebilirsiniz.
 
@@ -274,7 +274,7 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
 
    Bu hesaplama için ayrılan 313 kutucuk vardır. Her kutucuk 32 iş parçacığı içerir. Yerel GPU hata ayıklama bir yazılım öykünücüsünde gerçekleştiği için dört etkin GPU iş parçacığı vardır. Dört iş parçacığı yönergeleri eşzamanlı olarak yürütür ve sonraki yönergeyle birlikte hareket ettirin.
 
-   **GPU Iş parçacıkları** penceresinde, ETKIN dört GPU iş parçacığı vardır ve [tile_barrier:: wait](reference/tile-barrier-class.md#wait) ifadesinde tanımlanan ve 21. satırdaki (`t_idx.barrier.wait();`). Tüm 32 GPU iş parçacıkları `tile[0]`ilk kutucuğa aittir. Bir ok, geçerli iş parçacığını içeren satıra işaret eder. Farklı bir iş parçacığına geçiş yapmak için aşağıdaki yöntemlerden birini kullanın:
+   **GPU Iş parçacıkları** penceresinde, ETKIN dört GPU iş parçacığı vardır ve [tile_barrier:: wait](reference/tile-barrier-class.md#wait) ifadesinde, 21. satır hakkında ' da tanımlanan 28 GPU iş parçacığı vardır `t_idx.barrier.wait();` . Tüm 32 GPU iş parçacıkları ilk kutucuğa aittir `tile[0]` . Bir ok, geçerli iş parçacığını içeren satıra işaret eder. Farklı bir iş parçacığına geçiş yapmak için aşağıdaki yöntemlerden birini kullanın:
 
     - **GPU Iş parçacıkları** penceresinde geçiş yapılacak iş parçacığının satırında, kısayol menüsünü açın ve **iş parçacığına geç**' i seçin. Satır birden fazla iş parçacığını temsil ediyorsa, iş parçacığı koordinatlarına göre ilk iş parçacığına geçiş yapmanız gerekir.
 
@@ -284,7 +284,7 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
 
 ### <a name="to-use-the-parallel-stacks-window"></a>Paralel Yığınlar penceresini kullanmak için
 
-1. **Paralel Yığınlar** penceresini açmak için, menü çubuğunda **hata ayıkla** > **Windows** > **Paralel Yığınlar**' ı seçin.
+1. **Paralel Yığınlar** penceresini açmak için, menü çubuğunda **Debug**  >  **Windows**  >  **paralel yığınları**Hata Ayıkla ' yı seçin.
 
    Birden çok GPU iş parçacığının yığın çerçevelerini aynı anda incelemek için **Paralel Yığınlar** penceresini kullanabilirsiniz.
 
@@ -295,7 +295,7 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
    ![4 etkin iş parçacığından oluşan Paralel Yığınlar penceresi](../../parallel/amp/media/campd.png "4 etkin iş parçacığından oluşan Paralel Yığınlar penceresi") <br/>
    Paralel Yığınlar penceresi
 
-   32 iş parçacığı, `parallel_for_each` işlevi çağrısındaki lambda bildirimine ve sonra paralel azaltmanın gerçekleştiği `sum_kernel_tiled` işlevine `_kernel_stub` oldu. 32 iş parçacığından 28 tanesi [tile_barrier:: wait](reference/tile-barrier-class.md#wait) ifadesine ilerlemedi ve 22. satırdaki engellenmiş durumda kalır, ancak diğer 4 iş parçacıkları 30. satırdaki `sum_kernel_tiled` etkin kalır.
+   32 iş parçacığı, `_kernel_stub` `parallel_for_each` işlev çağrısındaki lambda ifadesine ve ardından `sum_kernel_tiled` işlevine, paralel azaltmanın gerçekleştiği yere gitti. 32 iş parçacığından 28 tanesi [tile_barrier:: wait](reference/tile-barrier-class.md#wait) ifadesine ilerlemedi ve 22. satırda engellenmiş durumda kalır, ancak diğer 4 iş parçacıkları ise `sum_kernel_tiled` 30. satırdaki etkin kalır.
 
    **Paralel Yığınlar** penceresinin zengin veri Ipucunda **GPU iş parçacıkları** PENCERESINDE kullanılabilir olan bir GPU iş parçacığının özelliklerini inceleyebilirsiniz. Bunu yapmak için fare işaretçisini **sum_kernel_tiled**yığın çerçevesinde bekletin. Aşağıdaki çizimde Datatıp gösterilmektedir.
 
@@ -306,17 +306,17 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
 
 ### <a name="to-use-the-parallel-watch-window"></a>Paralel izleme penceresi kullanmak için
 
-1. **Paralel izleme** penceresini açmak için, menü çubuğunda **hata ayıkla** > **Windows** > **paralel** izleme **1** > ' nı seçin.
+1. **Paralel izleme** penceresini açmak için, menü çubuğunda **Hata Ayıkla**  >  **Windows**  >  **paralel izleme**  >  **paralel izleme 1**' i seçin.
 
    Birden çok iş parçacığı içindeki bir ifadenin değerlerini incelemek için **paralel izleme** penceresini kullanabilirsiniz.
 
 2. **Paralel izleme 1** penceresini Visual Studio 'nun en altına yerleştirin. **Paralel izleme** penceresi tablosunda 32 satır vardır. Her biri, hem GPU Iş parçacıkları penceresinde hem de **Paralel Yığınlar** penceresinde görünen bir GPU iş parçacığına karşılık gelir. Şimdi, değerlerini tüm 32 GPU iş parçacıkları genelinde incelemek istediğiniz ifadeleri girebilirsiniz.
 
-3. **Gözcü Ekle** sütun başlığını seçin, `localIdx`girin ve **ENTER** tuşunu seçin.
+3. **Gözcü Ekle** sütun başlığını seçin, girin `localIdx` ve **ENTER** tuşunu seçin.
 
-4. **Gözcü Ekle** sütun başlığını tekrar seçin, `globalIdx`yazın ve ardından **ENTER** tuşunu seçin.
+4. **Gözcü Ekle** sütun başlığını tekrar seçin, yazın `globalIdx` ve **ENTER** tuşunu seçin.
 
-5. **Gözcü Ekle** sütun başlığını tekrar seçin, `localA[localIdx[0]]`yazın ve ardından **ENTER** tuşunu seçin.
+5. **Gözcü Ekle** sütun başlığını tekrar seçin, yazın `localA[localIdx[0]]` ve **ENTER** tuşunu seçin.
 
    Karşılık gelen sütun başlığını seçerek belirtilen ifadeye göre sıralama yapabilirsiniz.
 
@@ -327,9 +327,9 @@ Bu bölümde, `sum_kernel_tiled` işlevinde bulunan kod olan GPU kodunda hata ay
 
    **Excel düğmesini seçip** **Excel 'de aç**' ı seçerek **paralel izleme** penceresindeki içeriği Excel 'e aktarabilirsiniz. Geliştirme bilgisayarınızda Excel yüklüyse, içerik içeren bir Excel çalışma sayfası açılır.
 
-6. **Paralel izleme** penceresinin sağ üst köşesinde, Boole ifadeleri kullanarak içeriği filtrelemek için kullanabileceğiniz bir filtre denetimi vardır. Filtre denetimi metin kutusuna `localA[localIdx[0]] > 20000` girin ve **ENTER** tuşunu seçin.
+6. **Paralel izleme** penceresinin sağ üst köşesinde, Boole ifadeleri kullanarak içeriği filtrelemek için kullanabileceğiniz bir filtre denetimi vardır. `localA[localIdx[0]] > 20000`Filtre denetimi metin kutusuna girin ve **ENTER** tuşunu seçin.
 
-   Pencerede artık yalnızca `localA[localIdx[0]]` değeri 20000 ' den büyük olan iş parçacıkları bulunur. İçerik hâlâ daha önce gerçekleştirdiğiniz sıralama eylemi olan `localA[localIdx[0]]` sütununa göre sıralanır.
+   Pencerede artık yalnızca değerin 20000 ' den büyük olduğu iş parçacıkları bulunur `localA[localIdx[0]]` . İçerik hala `localA[localIdx[0]]` , daha önce gerçekleştirdiğiniz sıralama eylemi olan sütuna göre sıralanır.
 
 ## <a name="flagging-gpu-threads"></a>GPU Iş parçacıklarını bayrakla işaretlemeyi
 
@@ -339,7 +339,7 @@ Belirli GPU iş parçacıklarını **GPU Iş parçacıkları** penceresinde, **p
 
 1. Kutucuk dizinine ve iş parçacığı dizinine göre sıralamak için **paralel izleme 1** penceresindeki **[thread]** sütun başlığını seçin.
 
-2. Menü çubuğunda **hata ayıkla** > **devam et**' i seçin. Bu, etkin olan dört iş parçacığının sonraki engeline (32. gün: AMPMapReduce. cpp) devam etmesine neden olur.
+2. Menü çubuğunda **Hata Ayıkla**  >  **devam et**' i seçin. Bu, etkin olan dört iş parçacığının sonraki engelte ilerlemesini sağlar (32. gün: AMPMapReduce. cpp ' de tanımlanır).
 
 3. Artık etkin olan dört iş parçacığını içeren satırın sol tarafındaki bayrak sembolünü seçin.
 
@@ -348,7 +348,7 @@ Belirli GPU iş parçacıklarını **GPU Iş parçacıkları** penceresinde, **p
    ![Bayraklı iş parçacıkları ile GPU Iş parçacıkları penceresi](../../parallel/amp/media/campg.png "Bayraklı iş parçacıkları ile GPU Iş parçacıkları penceresi") <br/>
    GPU Iş parçacıkları penceresindeki etkin iş parçacıkları
 
-   Paralel Yığınlar penceresi ve paralel **yığınlar** penceresinin datatıp her ikisi de bayraklı iş parçacıklarını gösterir.
+   Paralel **Parallel Watch** Yığınlar penceresi ve paralel **yığınlar** penceresinin datatıp her ikisi de bayraklı iş parçacıklarını gösterir.
 
 4. İşaretlediğiniz dört iş parçacığına odaklanmak isterseniz, **GPU Iş parçacıkları**, **paralel Izleme**ve **Paralel Yığınlar** penceresinde, yalnızca bayraklı iş parçacıklarında göstermeyi tercih edebilirsiniz.
 
@@ -367,7 +367,7 @@ GPU iş parçacıklarını, **GPU Iş parçacıkları** penceresinden ya da **pa
 
 1. Tüm iş parçacıklarını görüntülemek için, **yalnızca bayraklı göster** düğmesini seçin.
 
-2. Menü çubuğunda **hata ayıkla** > **devam et**' i seçin.
+2. Menü çubuğunda **Hata Ayıkla**  >  **devam et**' i seçin.
 
 3. Etkin satır için kısayol menüsünü açın ve ardından **dondurma**' yı seçin.
 
@@ -378,7 +378,7 @@ GPU iş parçacıklarını, **GPU Iş parçacıkları** penceresinden ya da **pa
 
    Benzer şekilde, **paralel izleme** penceresi tüm dört iş parçacıklarının dondurulmuş olduğunu gösterir.
 
-4. Menü çubuğunda **Hata Ayıkla** ' yı seçin > sonrakı dört GPU iş parçacığının 22. satırdaki engelden sonra ilerlemesini ve 30. satırda kesme noktasına ulaşmasını sağlamak Için **devam et** ' i seçin. **GPU Iş parçacıkları** penceresi, daha önce dondurulmuş olan dört iş parçacığının dondurulmuş olduğunu ve etkin durumda kaldığını gösterir.
+4. **Debug**  >  Sonraki dört GPU iş parçacığının 22. satırdaki engelden sonra ilerlemesini ve 30. satırdaki kesme noktasına ulaşmasını**sağlamak için menü** çubuğunda Hata Ayıkla ' yı seçin. **GPU Iş parçacıkları** penceresi, daha önce dondurulmuş olan dört iş parçacığının dondurulmuş olduğunu ve etkin durumda kaldığını gösterir.
 
 5. Menü çubuğunda **Hata Ayıkla**, **devam et**' i seçin.
 
@@ -411,8 +411,8 @@ Belirli bir kutucukta yer alan tüm iş parçacıklarını, imlecin bulunduğu *
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ AMP'ye Genel Bakış](../../parallel/amp/cpp-amp-overview.md)<br/>
+[C++ AMP genel bakış](../../parallel/amp/cpp-amp-overview.md)<br/>
 [GPU Kodunda Hata Ayıklama](/visualstudio/debugger/debugging-gpu-code)<br/>
-[Nasıl Yapılır: GPU İş Parçacıkları Penceresini Kullanma](/visualstudio/debugger/how-to-use-the-gpu-threads-window)<br/>
-[Nasıl Yapılır: Paralel İzleme Penceresini Kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window)<br/>
-[Eşzamanlılık C++ görselleştiricisi Ile amp kodunu çözümleme](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
+[Nasıl yapılır: GPU Iş parçacıkları penceresini kullanma](/visualstudio/debugger/how-to-use-the-gpu-threads-window)<br/>
+[Nasıl yapılır: paralel Izleme penceresini kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window)<br/>
+[Eşzamanlılık görselleştiricisi ile C++ AMP kodu analiz etme](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)

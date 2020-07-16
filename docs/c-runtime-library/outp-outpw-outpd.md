@@ -41,12 +41,12 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-ms.openlocfilehash: 0d28511cdf7487226635c0317b7c0ba21ab1d1be
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: ceaaefbbe6f9debfb5ac8e1e8f5f3d1bbb36c8a8
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373482"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404066"
 ---
 # <a name="outp-outpw-_outp-_outpw-_outpd"></a>outp, outpw, _outp, _outpw _outpd
 
@@ -61,15 +61,15 @@ Bir bağlantı noktasında, bir bayt ( `outp` , `_outp` ), bir sözcüğe ( `out
 ```cpp
 int _outp(
    unsigned short port,
-   int databyte
+   int data_byte
 );
 unsigned short _outpw(
    unsigned short port,
-   unsigned short dataword
+   unsigned short data_word
 );
 unsigned long _outpd(
    unsigned short port,
-   unsigned long dataword
+   unsigned long data_word
 );
 ```
 
@@ -78,7 +78,7 @@ unsigned long _outpd(
 *bağ*\
 Bağlantı noktası numarası.
 
-*databgh, dataword*\
+*data_byte, data_word*\
 Çıkış değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -87,9 +87,11 @@ Bağlantı noktası numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_outp`, `_outpw` Ve işlevleri, `_outpd` belirtilen çıkış bağlantı noktasına sırasıyla bir bayt, bir sözcük ve bir çift sözcük yazar. *Bağlantı noktası* bağımsız değişkeni 0-65.535; aralığında işaretsiz bir tamsayı olabilir. *databayttan* 0-255 aralığında herhangi bir tamsayı olabilir; ve *dataword* , sırasıyla bir tamsayı, işaretsiz kısa tamsayı ve işaretsiz uzun tamsayı aralığında herhangi bir değer olabilir.
+`_outp`, `_outpw` Ve işlevleri, `_outpd` belirtilen çıkış bağlantı noktasına sırasıyla bir bayt, bir sözcük ve bir çift sözcük yazar. *Bağlantı noktası* bağımsız değişkeni, 0-65.535 aralığında işaretsiz bir tamsayı olabilir. *data_byte* 0-255 aralığında herhangi bir tamsayı olabilir. *data_word* tamsayı, işaretsiz kısa tamsayı ve sırasıyla işaretsiz uzun tamsayı aralığında herhangi bir değer olabilir.
 
-Bu işlevler doğrudan bir g/ç bağlantı noktasına yazdıklarından, Kullanıcı modu Windows kodunda kullanılamaz. Windows işletim sisteminde g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için bkz. [seri iletişimler](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
+Bu işlevler doğrudan bir g/ç bağlantı noktasına yazdıklarından, Kullanıcı modu Windows kodunda kullanılamaz.
+
+Windows işletim sisteminde g/ç bağlantı noktalarını kullanma hakkında daha fazla bilgi için bkz. [seri iletişimler](https://docs.microsoft.com/previous-versions/ff802693(v=msdn.10)).
 
 `outp`Ve `outpw` adları, ve işlevleri için eski, kullanım dışı adlardır `_outp` `_outpw` . Daha fazla bilgi için bkz. [POSIX işlev adları](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names).
 
@@ -110,4 +112,4 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compati
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)\
-[INP, ınpw, _inp, _inpw, _inpd](../c-runtime-library/inp-inpw-inpd.md)
+[`inp`, `inpw`, `_inp`, `_inpw`, `_inpd`](../c-runtime-library/inp-inpw-inpd.md)

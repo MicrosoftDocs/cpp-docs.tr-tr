@@ -6,95 +6,95 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 9d7653e61e6aada9205f599cf7a7ca6187dd139d
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 1578ca7f4134e51e0ba0d3c2b247dcafcb0fbd67
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66450548"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405019"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 
-Sihirbazın bu sayfasındaki davranmaya denetimin nasıl istediğinizi belirtmek için kullanın. Örneğin, temel standart Windows Denetim türleri denetiminde kendi davranış ve görünümünü en iyi duruma veya denetim, diğer denetimler için kapsayıcı olarak görev yapabilir gösterir.
+Denetimin nasıl davranmasını istediğinizi belirtmek için sihirbazın bu sayfasını kullanın. Örneğin, denetimi standart Windows Denetim türleri üzerinde temel alabilir, davranışını ve görünümünü iyileştirir veya denetimin diğer denetimler için bir kapsayıcı olarak davrandığını belirtebilirsiniz.
 
-Denetim verimliliğini en üst düzeye çıkarmak için bu sayfadaki seçenekler seçme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: En iyi duruma getirme](../../mfc/mfc-activex-controls-optimization.md).
+Bu sayfada denetimin verimliliğini en üst düzeye çıkarmak için seçenekleri seçme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
-- **Temel denetim oluşturma**
+- **Temelinde denetim oluştur**
 
-   Bu listede, Denetim devraldığı denetim türünü seçebilirsiniz. Bir alt kümesi için kullanılabilir olan denetim sınıfları listedir `CreateWindowEx` ve commctrl.h içinde belirtilen ek ortak denetimleri. Seçiminiz denetiminde stilini belirler `PreCreateWindow` işlevi *ProjName*Ctrl.cpp dosya. Daha fazla bilgi için [MFC ActiveX denetimleri: Bir Windows denetimini alt sınıf yapma](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
+   Bu listede, denetiminizin devralması gereken denetim türünü seçebilirsiniz. Liste, için kullanılabilir olan denetim sınıflarının `CreateWindowEx` ve commctrl. h içinde belirtilen ek ortak denetimlerin bir alt kümesidir. Seçiminiz, `PreCreateWindow` *ProjName*CTRL. cpp dosyasındaki işlevindeki denetimin stilini belirler. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri: altsınıflama a Windows Control](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
    |Denetim|Açıklama|
    |-------------|-----------------|
-   |**DÜĞME**|Bir Windows düğme denetimi|
-   |**COMBOBOX**|Windows birleşik giriş kutusu denetimi|
-   |**DÜZENLE**|Windows düzenleme kutusu denetimi|
-   |**LİSTE KUTUSU**|Windows liste kutusu denetimi|
-   |**KAYDIRMA ÇUBUĞU**|Windows kaydırma çubuğu denetimi|
-   |**STATİK**|Windows statik denetimi|
-   |**msctls_hotkey32**|Sık kullanılan tuş ortak denetimi|
-   |**msctls_progress32**|Bir ilerleme çubuğu ortak denetim|
-   |**msctls_statusbar32**|Bir durum çubuğu ortak denetim|
-   |**msctls_trackbar32**|Ortak denetim çubuğu bir izleme|
-   |**msctls_updown32**|Bir değer değiştirme düğmesi (veya yukarı-aşağı) ortak denetimi|
-   |**SysAnimate32**|Ortak animasyon denetimi|
-   |**SysHeader32**|Ortak bir üstbilgi denetim|
-   |**SysListView32**|Bir liste görünümü ortak denetimi|
-   |**SysTabControl32**|Ortak sekme denetimi|
+   |**Bu**|Bir Windows düğme denetimi|
+   |**Öğesı**|Windows Birleşik giriş kutusu denetimi|
+   |**Düzenle**|Windows düzenleme kutusu denetimi|
+   |**KUTUSUNA**|Bir Windows liste kutusu denetimi|
+   |**KAYDıRMA çubuğu**|Bir Windows kaydırma çubuğu denetimi|
+   |**SE**|Bir Windows statik denetimi|
+   |**msctls_hotkey32**|Sık kullanılan anahtar ortak denetimi|
+   |**msctls_progress32**|İlerleme çubuğu ortak denetimi|
+   |**msctls_statusbar32**|Bir durum çubuğu ortak denetimi|
+   |**msctls_trackbar32**|İzleme çubuğu ortak denetimi|
+   |**msctls_updown32**|Bir döndürme düğmesi (veya yukarı açılan) ortak denetim|
+   |**SysAnimate32**|Animasyon ortak denetimi|
+   |**SysHeader32**|Üst bilgi ortak denetimi|
+   |**SysListView32**|Liste görünümü ortak denetimi|
+   |**SysTabControl32**|Bir sekme ortak denetimi|
    |**SysTreeView32**|Ağaç görünümü ortak denetimi|
 
-- **Görünür olduğunda etkinleştirilir**
+- **Görünür olduğunda etkinleştirir**
 
-   Denetim için bir pencere oluşturulur, erişildiğinde belirtir. Varsayılan olarak, **etkinleştirir görünür olduğunda** seçeneği belirlenir. Kapsayıcı (örneğin, bir kullanıcı fareye tıklayana) gerektirdiği kadar denetim etkinleştirme erteleneceği istiyorsanız bu seçeneği temizleyin. Bu özelliği devre dışıyken denetim gerekli olana kadar pencere oluşturma gider tabi değildir. Daha fazla bilgi için [görünürken etkinleştir seçeneğini kapatma](../../mfc/turning-off-the-activate-when-visible-option.md).
+   Erişildiğinde denetim için bir pencere oluşturulduğunu belirtir. Varsayılan olarak, **görünür olduğunda etkinleştir** seçeneği belirlenir. Kapsayıcı gerektirene kadar denetim etkinleştirmesini erteetmek istiyorsanız (örneğin, bir kullanıcı fareyle tıkladığında), bu seçeneği temizleyin. Bu özellik devre dışı bırakıldığında, denetim, gerekli olana kadar pencere oluşturma masrafına tabi değildir. Daha fazla bilgi için bkz. [Visible 'Da etkinleştir seçeneğini](../../mfc/turning-off-the-activate-when-visible-option.md)kapatma.
 
 - **Çalışma zamanında görünmez**
 
-   Denetimin çalışma zamanında kullanıcı arabirimi olmadan sahip olduğunu belirtir. Bir zamanlayıcı görünmez olmasını isteyebileceğiniz denetimi türüdür.
+   Denetimin çalışma zamanında Kullanıcı arabirimine sahip olmadığını belirtir. Zamanlayıcı, görünmez olmasını isteyebileceğiniz bir denetim türüdür.
 
-- **Bir hakkında iletişim kutusu var**
+- **Hakkında bir kutu iletişim kutusu vardır**
 
-   Denetimin standart Windows sahip olduğunu belirtir **hakkında** iletişim kutusunda, sürüm numarasını ve telif hakkı bilgilerini görüntüler.
+   Denetimin, sürüm numarasını ve telif hakkı bilgilerini görüntüleyen standart Windows **hakkında** iletişim kutusu olduğunu belirtir.
 
    > [!NOTE]
-   > Kullanıcı denetimi için Yardım nasıl eriştiğini nasıl Yardım uygulanmıştır ve kapsayıcı yardımıyla Denetim Yardımı olup tümleştirdik bağlıdır. Hakkında Yardım, tümleştirme hakkında daha fazla bilgi için [MSDN Kitaplığı](https://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Ekleyerek Context-Sensitive yardımcı olmak için bir MFC ActiveX denetimi" arayın.
+   > Kullanıcının denetim için yardım 'a nasıl eriştiği, yardım 'ı nasıl uyguladığınıza ve denetim yardımını kapsayıcı yardımı ile tümleştirdiğinize bağlıdır.
 
-   Bu seçeneği belirlediğinizde, bunu ekler `AboutBox` denetimi proje denetim sınıftaki yöntemi (C*ProjName*Ctrl.cpp) ve proje gönderme Haritası'na AboutBox ekler. Varsayılan olarak, bu seçenek seçilidir.
+   Bu seçeneği belirlediğinizde, `AboutBox` denetim yöntemini proje denetim sınıfına ekler (C*ProjName*CTRL. cpp) ve proje dağıtım eşlemesine AboutBox ekler. Varsayılan olarak, bu seçenek seçilidir.
 
-- **En iyi duruma getirilmiş çizim kodu**
+- **İyileştirilmiş çizim kodu**
 
-   Kapsayıcı OnDraw yöntemini otomatik olarak tüm düzenlendi, aynı cihaz bağlamına çizilir kapsayıcı denetimlerini yükler olduğunu belirtir. Bu özellik hakkında daha fazla bilgi için bkz. [denetim çizimini iyileştirme](../../mfc/optimizing-control-drawing.md).
+   Kapsayıcının özgün GDI nesnelerini, aynı cihaz bağlamına çizilen tüm kapsayıcı denetimleri yapıldıktan sonra otomatik olarak geri yüklemelerini belirtir. Bu özellik hakkında daha fazla bilgi için bkz. [Denetim çizimini iyileştirme](../../mfc/optimizing-control-drawing.md).
 
 - **Penceresiz etkinleştirme**
 
-   Bu etkinleştirildiğinde denetim bir pencere üretmez belirtir. Penceresiz etkinleştirme için dikdörtgen olmayan veya saydam denetimler sağlar ve bir penceresi olan bir denetim sistemi daha az yüke gerektirir penceresiz denetime gerektirir. Penceresiz denetime bir kesilmemiş cihaz bağlamı veya titreşimsiz etkinleştirme için izin vermez. Penceresiz etkinleştirme 1996 önce oluşturulan kapsayıcıları desteklemez. Bu seçenek kullanma hakkında daha fazla bilgi için bkz. [penceresiz etkinleştirme sağlama](../../mfc/providing-windowless-activation.md).
+   Denetimin etkinleştirildiğinde bir pencere üretmemesini belirtir. Penceresiz etkinleştirme, dikdörtgensel olmayan veya saydam denetimlere izin verir ve penceresiz bir denetim, bir pencerenin gerektirdiği bir denetimden daha az sistem yükü gerektirir. Penceresiz bir denetim, kırpılmamış bir cihaz bağlamı veya titreşimsiz etkinleştirmeye izin vermez. 1996 ' den önce oluşturulan kapsayıcılar penceresiz etkinleştirmeyi desteklemez. Bu seçeneğin nasıl kullanılacağı hakkında daha fazla bilgi için, bkz. [penceresiz etkinleştirme sağlama](../../mfc/providing-windowless-activation.md).
 
-- **Kesilmemiş bir cihaz bağlamı**
+- **Kırpılmamış cihaz bağlamı**
 
-   Geçersiz kılmalar [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags) denetimi üst bilgisindeki (*projname*ctrl.h) çağrısı devre dışı bırakmak için `IntersectClipRect` tarafından yapılan `COleControl`. Bu seçeneği belirlediğinizde, bir küçük hızı avantaj sağlar. Seçerseniz **penceresiz etkinleştirme**, bu özellik kullanılabilir değil. Daha fazla bilgi için [kesilmemiş bir cihaz bağlamı kullanma](../../mfc/using-an-unclipped-device-context.md).
+   Tarafından yapılan çağrıyı devre dışı bırakmak için denetim üstbilgisindeki [Cotacontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags) (*ProjName*CTRL. h) değerini geçersiz kılar `IntersectClipRect` `COleControl` . Bu seçeneği belirlediğinizde, küçük bir hız avantajı sağlar. **Penceresiz etkinleştirme**' yi seçerseniz bu özellik kullanılamaz. Daha fazla bilgi için bkz. [kırpılmamış cihaz bağlamı kullanma](../../mfc/using-an-unclipped-device-context.md).
 
 - **Titreşimsiz etkinleştirme**
 
-   Çizim işlemleri ve denetim etkin ve etkin olmayan durumlar arasında gerçekleşen eşlik eden görsel titreşimini ortadan kaldırır. Seçerseniz **penceresiz etkinleştirme**, bu özellik kullanılabilir değil. Bu seçeneği ayarladığınızda `noFlickerActivate` bayrağı tarafından döndürülen bayrakları biridir [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). Daha fazla bilgi için [titreşimsiz etkinleştirme sağlama](../../mfc/providing-flicker-free-activation.md).
+   Çizim işlemlerini ve denetimin etkin ve etkin olmayan durumları arasında gerçekleşen görsel titreşimi ortadan kaldırır. **Penceresiz etkinleştirme**' yi seçerseniz bu özellik kullanılamaz. Bu seçeneği belirlediğinizde, `noFlickerActivate` bayrak [Coelcontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags)tarafından döndürülen bayraklardan biridir. Daha fazla bilgi için bkz. [titreşimsiz etkinleştirme sağlama](../../mfc/providing-flicker-free-activation.md).
 
 - **Nesne Ekle iletişim kutusunda kullanılabilir**
 
-   Denetim içinde kullanılabilir olacağını belirtir **Nesne Ekle** etkin kapsayıcılar için iletişim kutusu. Bu seçeneği belirlediğinizde `afxRegInsertable` bayrağı tarafından döndürülen bayrakları biridir `AfxOleRegisterControlClass`. Kullanarak **Nesne Ekle** iletişim kutusu, varolan nesneleri bileşik bir belgeye veya bir kullanıcı yeni oluşturulan ekleyebilirsiniz.
+   Denetimin, etkin kapsayıcılar için **nesne Ekle** iletişim kutusunda kullanılabilir olacağını belirtir. Bu seçeneği belirlediğinizde `afxRegInsertable` bayrak, tarafından döndürülen bayraklardan biridir `AfxOleRegisterControlClass` . Kullanıcı, **nesne Ekle** iletişim kutusunu kullanarak yeni oluşturulan veya varolan nesneleri bileşik bir belgeye ekleyebilir.
 
 - **Etkin olmadığında fare işaretçisi bildirimleri**
 
-   Denetimin etkin olup olmadığını fare işaretçisi bildirimler, bir denetim olanağı sağlar. Bu seçeneği belirlediğinizde `pointerInactive` bayrağı tarafından döndürülen bayrakları biridir [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). Bu seçenek kullanma hakkında daha fazla bilgi için bkz. [sağlama fare etkileşimi sırada etkin olmayan](../../mfc/providing-mouse-interaction-while-inactive.md).
+   Denetimin etkin olup olmadığını fare işaretçisi bildirimlerinin işlemesini sağlar. Bu seçeneği belirlediğinizde, `pointerInactive` bayrak [Coelcontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags)tarafından döndürülen bayraklardan biridir. Bu seçeneğin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [etkin olmadığında fare etkileşimi sağlama](../../mfc/providing-mouse-interaction-while-inactive.md).
 
-- **Basit bir çerçeve denetimi görür**
+- **Basit bir çerçeve denetimi görevi görür**
 
-   Denetim için bit OLEMISC_SIMPLEFRAME ayarlayarak bir denetimin diğer denetimler için kapsayıcı olduğunu belirtir. Daha fazla bilgi için üzerinde [MSDN Kitaplığı](https://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Basit çerçeve Site kapsama" arayın.
+   Denetimin OLEMISC_SIMPLEFRAME bitini ayarlayarak denetimin diğer denetimler için bir kapsayıcı olduğunu belirtir. Daha fazla bilgi için bkz. [basit çerçeve site içerme](/windows/win32/com/simple-frame-site-containment).
 
-- **Zaman uyumsuz olarak özelliklerini yükler**
+- **Özellikleri zaman uyumsuz olarak yükler**
 
-   Önceki herhangi bir zaman uyumsuz veri sıfırlanmasını sağlar ve yeni bir yük zaman uyumsuz özelliğinin denetimin başlatır.
+   Önceki zaman uyumsuz verilerin sıfırlanmasına izin vermez ve denetimin zaman uyumsuz özelliğinin yeni bir yükünü başlatır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
+[Uygulama ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [Denetim Adları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)

@@ -25,18 +25,18 @@ helpviewer_keywords:
 - Microsoft::WRL::FtmBase::ReleaseMarshalData method
 - Microsoft::WRL::FtmBase::UnmarshalInterface method
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-ms.openlocfilehash: d37cdddda8cf8894016ed80b9055fe106b1600f7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f28a850c365bc9a75d8e5b100e5e5cc0a1c5dc10
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371510"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404570"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 
-Serbest iş parçacığı mareşal nesnesi temsil eder.
+Serbest iş parçacıklı Sıralayıcı nesnesini temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class FtmBase :
@@ -48,33 +48,33 @@ class FtmBase :
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [RuntimeClass Class'a](runtimeclass-class.md)bakın.
+Daha fazla bilgi için bkz. [RuntimeClass Sınıfı](runtimeclass-class.md).
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-| Adı                         | Açıklama                                        |
+| Ad                         | Açıklama                                        |
 | ---------------------------- | -------------------------------------------------- |
-| [FtmBase::FtmBase](#ftmbase) | `FtmBase` sınıfının yeni bir örneğini başlatır. |
+| [FtmBase:: FtmBase](#ftmbase) | `FtmBase` sınıfının yeni bir örneğini başlatır. |
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-| Adı                                                               | Açıklama                                                                                                                                                          |
+| Ad                                                               | Açıklama                                                                                                                                                          |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [FtmBase::CreateGlobalInterfaceTable](#createglobalinterfacetable) | Genel arabirim tablosu (GIT) oluşturur.                                                                                                                              |
-| [FtmBase::DisconnectObject](#disconnectobject)                     | Bir nesneye yapılan tüm dış bağlantıları zorla söken. Nesnenin sunucusu kapatmadan önce nesnenin bu yöntemin uygulanmasını çağırır.                |
-| [FtmBase::GetMarshalSizeMax](#getmarshalsizemax)                   | Belirtilen nesne üzerinde belirtilen arabirim işaretçisi mareşal için gerekli bayt sayısı üst sınır alın.                                                |
-| [FtmBase::GetUnmarshalClass](#getunmarshalclass)                   | COM'un ilgili proxy kodunu içeren DLL'yi bulmak için kullandığı CLSID'yi alır. COM, proxy'nin başharflenmemiş bir örneğini oluşturmak için bu DLL'yi yükler. |
-| [FtmBase::MarshalInterface](#marshalinterface)                     | Bir akışa, bazı istemci işleminde proxy nesnesini başlatması için gereken verileri yazar.                                                                          |
-| [FtmBase::ReleaseMarshalData](#releasemarshaldata)                 | Marshaled veri paketini yok eder.                                                                                                                                    |
-| [FtmBase::UnmarshalInterface](#unmarshalinterface)                 | Yeni oluşturulan proxy'yi başolarak karşılar ve bu proxy'ye bir arabirim işaretçisi döndürür.                                                                                    |
+| [FtmBase:: CreateGlobalInterfaceTable](#createglobalinterfacetable) | Genel arabirim tablosu (GIT) oluşturur.                                                                                                                              |
+| [FtmBase::D isconnectObject](#disconnectobject)                     | Tüm dış bağlantıları bir nesneye zorla yayınlar. Nesnenin sunucusu, kapanmadan önce nesnenin bu yöntemin uygulamasını çağırır.                |
+| [FtmBase:: GetMarshalSizeMax](#getmarshalsizemax)                   | Belirtilen nesne üzerinde belirtilen arabirim işaretçisini sıralamak için gereken bayt sayısıyla üst sınırı alın.                                                |
+| [FtmBase:: GetUnmarshalClass](#getunmarshalclass)                   | Karşılık gelen ara sunucu için kodu içeren DLL 'yi bulmak için COM tarafından kullanılan CLSID 'yi alır. COM, başlatılmamış bir proxy örneğini oluşturmak için bu DLL 'yi yükler. |
+| [FtmBase:: MarshalInterface](#marshalinterface)                     | Bazı istemci işlemlerinde bir proxy nesnesini başlatmak için gereken verileri akışa yazar.                                                                          |
+| [FtmBase:: ReleaseMarshalData](#releasemarshaldata)                 | Sıralanmış bir veri paketini yok eder.                                                                                                                                    |
+| [FtmBase:: UnmarshalInterface](#unmarshalinterface)                 | Yeni oluşturulan bir proxy başlatır ve bu ara sunucuya bir arabirim işaretçisi döndürür.                                                                                    |
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-| Adı                                | Açıklama                                       |
+| Ad                                | Açıklama                                       |
 | ----------------------------------- | ------------------------------------------------- |
-| [FtmBase::marshaller_](#marshaller) | Serbest dişli mareşal bir referans tutar. |
+| [FtmBase:: marshaller_](#marshaller) | , Ücretsiz iş parçacıklı Sıralayıcı başvurusunu tutar. |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -82,11 +82,11 @@ Daha fazla bilgi için [RuntimeClass Class'a](runtimeclass-class.md)bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** ftm.h
+**Üstbilgi:** FTM. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="ftmbasecreateglobalinterfacetable"></a><a name="createglobalinterfacetable"></a>FtmBase::CreateGlobalInterfaceTable
+## <a name="ftmbasecreateglobalinterfacetable"></a><a name="createglobalinterfacetable"></a>FtmBase:: CreateGlobalInterfaceTable
 
 Genel arabirim tablosu (GIT) oluşturur.
 
@@ -98,20 +98,20 @@ static HRESULT CreateGlobalInterfaceTable(
 
 ### <a name="parameters"></a>Parametreler
 
-*git*<br/>
-Bu işlem tamamlandığında, genel arabirim tablosuna işaretçi.
+*Git@@*<br/>
+Bu işlem tamamlandığında, genel arabirim tablosuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi `IGlobalInterfaceTable` için, `COM Interfaces` MSDN `COM Reference` Kitaplığı'ndaki konunun alt başlığındaki konuya bakın.
+Daha fazla bilgi için bkz. [`IGlobalInterfaceTable`](https://docs.microsoft.com/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
 
-## <a name="ftmbasedisconnectobject"></a><a name="disconnectobject"></a>FtmBase::DisconnectObject
+## <a name="ftmbasedisconnectobject"></a><a name="disconnectobject"></a>FtmBase::D isconnectObject
 
-Bir nesneye yapılan tüm dış bağlantıları zorla söken. Nesnenin sunucusu kapatmadan önce nesnenin bu yöntemin uygulanmasını çağırır.
+Tüm dış bağlantıları bir nesneye zorla yayınlar. Nesnenin sunucusu, kapanmadan önce nesnenin bu yöntemin uygulamasını çağırır.
 
 ```cpp
 STDMETHODIMP DisconnectObject(
@@ -121,14 +121,14 @@ STDMETHODIMP DisconnectObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwAyrılmış*<br/>
-İleride kullanım için ayrılmış; sıfır olmalıdır.
+*Dwayrýlmýþ*<br/>
+Gelecekte kullanılmak üzere ayrılmıştır; sıfır olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="ftmbaseftmbase"></a><a name="ftmbase"></a>FtmBase::FtmBase
+## <a name="ftmbaseftmbase"></a><a name="ftmbase"></a>FtmBase:: FtmBase
 
 `FtmBase` sınıfının yeni bir örneğini başlatır.
 
@@ -136,9 +136,9 @@ S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
 FtmBase();
 ```
 
-## <a name="ftmbasegetmarshalsizemax"></a><a name="getmarshalsizemax"></a>FtmBase::GetMarshalSizeMax
+## <a name="ftmbasegetmarshalsizemax"></a><a name="getmarshalsizemax"></a>FtmBase:: GetMarshalSizeMax
 
-Belirtilen nesne üzerinde belirtilen arabirim işaretçisi mareşal için gerekli bayt sayısı üst sınır alın.
+Belirtilen nesne üzerinde belirtilen arabirim işaretçisini sıralamak için gereken bayt sayısıyla üst sınırı alın.
 
 ```cpp
 STDMETHODIMP GetMarshalSizeMax(
@@ -153,35 +153,35 @@ STDMETHODIMP GetMarshalSizeMax(
 
 ### <a name="parameters"></a>Parametreler
 
-*Riid*<br/>
-Marshaled için arabirimin tanımlayıcısına başvuru.
+*riıd*<br/>
+Sıralanabilen arabirimin tanımlayıcısına başvuru.
 
-*Pv*<br/>
-Arabirim işaretçisi marshaled olmak; NULL olabilir.
+*bakın*<br/>
+Sıraya eklenecek arabirim işaretçisi; NULL olabilir.
 
-*dwDestBağlam*<br/>
-Belirtilen arabirimin alınacağı hedef bağlam.
+*dwDestContext*<br/>
+Belirtilen arabirimin sıralanmakta olduğu hedef bağlam.
 
 Bir veya daha fazla MSHCTX numaralandırma değeri belirtin.
 
-Şu anda, görevden alma, geçerli işlemin başka bir dairesinde (MSHCTX_INPROC) veya geçerli işlemle aynı bilgisayarda başka bir işlemde (MSHCTX_LOCAL) oluşabilir.
+Şu anda, sıralama kaldırma işlemi geçerli işlemin başka bir grubu (MSHCTX_INPROC) veya geçerli işlemle aynı bilgisayardaki başka bir işlemde (MSHCTX_LOCAL) olabilir.
 
 *pvDestContext*<br/>
-İleride kullanım için ayrılmış; NULL olmalıdır.
+Gelecekte kullanılmak üzere ayrılmıştır; NULL olmalıdır.
 
 *mshlflags*<br/>
-Marshaled edilecek verilerin istemci işlemine (tipik durum) geri aktarılıp aktarılmayacağını veya birden çok istemci tarafından alınabileceği genel bir tabloya yazılmının olup olmadığını belirten bayrak. Bir veya daha fazla MSHLFLAGS numaralandırma değeri belirtin.
+Sıralanmakta olan verilerin istemci işlemine (tipik durum) geri aktarılmak veya bir genel tabloya yazılması, burada birden çok istemci tarafından alınabileceği belirten bayrak. Bir veya daha fazla MSHLFLAGS numaralandırma değeri belirtin.
 
-*pSize*<br/>
-Bu işlem tamamlandığında, mareşal akışına yazılması gereken veri miktarı üzerinde üst sınırı işaretle.
+*Psıze*<br/>
+Bu işlem tamamlandığında, hazırlama akışına yazılacak veri miktarına üst sınır işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, E_FAIL veya E_NOINTERFACE.
+Başarılı olursa S_OK; Aksi takdirde, E_FAIL veya E_NOINTERFACE.
 
-## <a name="ftmbasegetunmarshalclass"></a><a name="getunmarshalclass"></a>FtmBase::GetUnmarshalClass
+## <a name="ftmbasegetunmarshalclass"></a><a name="getunmarshalclass"></a>FtmBase:: GetUnmarshalClass
 
-COM'un ilgili proxy kodunu içeren DLL'yi bulmak için kullandığı CLSID'yi alır. COM, proxy'nin başharflenmemiş bir örneğini oluşturmak için bu DLL'yi yükler.
+Karşılık gelen ara sunucu için kodu içeren DLL 'yi bulmak için COM tarafından kullanılan CLSID 'yi alır. COM, başlatılmamış bir proxy örneğini oluşturmak için bu DLL 'yi yükler.
 
 ```cpp
 STDMETHODIMP GetUnmarshalClass(
@@ -196,34 +196,34 @@ STDMETHODIMP GetUnmarshalClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*Riid*<br/>
-Marshaled için arabirimin tanımlayıcısına başvuru.
+*riıd*<br/>
+Sıralanabilen arabirimin tanımlayıcısına başvuru.
 
-*Pv*<br/>
-İşaretçi arabirimi için marshaled olmak; arayan istenilen arabirime işaretçisi yoksa NULL olabilir.
+*bakın*<br/>
+Sıraya eklenecek arabirime yönelik işaretçi; çağıranın istenen arabirime yönelik bir işaretçisi yoksa NULL olabilir.
 
-*dwDestBağlam*<br/>
-Belirtilen arabirimin alınacağı hedef bağlam.
+*dwDestContext*<br/>
+Belirtilen arabirimin sıralanmakta olduğu hedef bağlam.
 
 Bir veya daha fazla MSHCTX numaralandırma değeri belirtin.
 
-Unmarshaling geçerli işlemin başka bir dairede (MSHCTX_INPROC) veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlem oluşabilir.
+Sıralama geri alma işlemi geçerli işlemin başka bir grubu (MSHCTX_INPROC) ya da geçerli işlemle aynı bilgisayardaki başka bir işlemde (MSHCTX_LOCAL) olabilir.
 
 *pvDestContext*<br/>
-İleride kullanım için ayrılmış; NULL olmalıdır.
+Gelecekte kullanılmak üzere ayrılmıştır; NULL olmalıdır.
 
 *mshlflags*<br/>
-Bu işlem tamamlandığında, istemci işleminde bir proxy oluşturmak için kullanılmak üzere CLSID işaretçisi.
+Bu işlem tamamlandığında, istemci işleminde bir ara sunucu oluşturmak için kullanılacak CLSID 'nin işaretçisi.
 
-*pCid*
+*PCID*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, S_FALSE.
+Başarılı olursa S_OK; Aksi takdirde, S_FALSE.
 
-## <a name="ftmbasemarshalinterface"></a><a name="marshalinterface"></a>FtmBase::MarshalInterface
+## <a name="ftmbasemarshalinterface"></a><a name="marshalinterface"></a>FtmBase:: MarshalInterface
 
-Bir akışa, bazı istemci işleminde proxy nesnesini başlatması için gereken verileri yazar.
+Bazı istemci işlemlerinde bir proxy nesnesini başlatmak için gereken verileri akışa yazar.
 
 ```cpp
 STDMETHODIMP MarshalInterface(
@@ -239,48 +239,48 @@ STDMETHODIMP MarshalInterface(
 ### <a name="parameters"></a>Parametreler
 
 *pStm*<br/>
-Mareşallik sırasında kullanılacak akışı işaretçi.
+Sıralama sırasında kullanılacak akışa yönelik işaretçi.
 
-*Riid*<br/>
-Marshaled için arabirimin tanımlayıcısına başvuru. Bu arabirim `IUnknown` arabirimden türetilmelidir.
+*riıd*<br/>
+Sıralanabilen arabirimin tanımlayıcısına başvuru. Bu arabirimin arabiriminden türetilmesi gerekir `IUnknown` .
 
-*Pv*<br/>
-İşaretçi, mareşalolarak işaretedilecek arabirim işaretçisine; arayan istenilen arabirime işaretçisi yoksa NULL olabilir.
+*bakın*<br/>
+Sıraya eklenecek arabirim işaretçisine yönelik işaretçi; çağıranın istenen arabirime yönelik bir işaretçisi yoksa NULL olabilir.
 
-*dwDestBağlam*<br/>
-Belirtilen arabirimin alınacağı hedef bağlam.
+*dwDestContext*<br/>
+Belirtilen arabirimin sıralanmakta olduğu hedef bağlam.
 
 Bir veya daha fazla MSHCTX numaralandırma değeri belirtin.
 
-Unmarshaling geçerli işlemin başka bir dairede oluşabilir (MSHCTX_INPROC) veya geçerli işlem (MSHCTX_LOCAL) ile aynı bilgisayarda başka bir işlem.
+Sıralama geri alma işlemi, geçerli işlemin (MSHCTX_INPROC) veya geçerli işlemle aynı bilgisayardaki başka bir işlemin (MSHCTX_LOCAL) başka bir yerinde gerçekleşebilir.
 
 *pvDestContext*<br/>
-İleride kullanım için ayrılmış; sıfır olmalıdır.
+Gelecekte kullanılmak üzere ayrılmıştır; sıfır olmalıdır.
 
 *mshlflags*<br/>
-Marshaled edilecek verilerin istemci işlemine (tipik durum) geri aktarılıp aktarılmayacağını veya birden çok istemci tarafından alınabileceği genel bir tabloya yazılmı belirtir.
+Sıralanmak üzere verilerin istemci işlemine (tipik durum) geri aktarılmak veya bir genel tabloya yazılması, burada birden çok istemci tarafından alınabileceği belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK Arabirim işaretçisi başarıyla marshaled edildi.
+Arabirim işaretçisinin başarıyla sıralanmıştı S_OK.
 
-E_NOINTERFACE Belirtilen arabirim desteklenmez.
+Belirtilen arabirim E_NOINTERFACE desteklenmiyor.
 
-STG_E_MEDIUMFULL Akış dolu.
+Akış dolu STG_E_MEDIUMFULL.
 
-E_FAIL İşlem başarısız oldu.
+İşlem başarısız E_FAIL.
 
-## <a name="ftmbasemarshaller_"></a><a name="marshaller"></a>FtmBase::marshaller_
+## <a name="ftmbasemarshaller_"></a><a name="marshaller"></a>FtmBase:: marshaller_
 
-Serbest dişli mareşal bir referans tutar.
+, Ücretsiz iş parçacıklı Sıralayıcı başvurusunu tutar.
 
 ```cpp
 Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;
 ```
 
-## <a name="ftmbasereleasemarshaldata"></a><a name="releasemarshaldata"></a>FtmBase::ReleaseMarshalData
+## <a name="ftmbasereleasemarshaldata"></a><a name="releasemarshaldata"></a>FtmBase:: ReleaseMarshalData
 
-Marshaled veri paketini yok eder.
+Sıralanmış bir veri paketini yok eder.
 
 ```cpp
 STDMETHODIMP ReleaseMarshalData(
@@ -291,15 +291,15 @@ STDMETHODIMP ReleaseMarshalData(
 ### <a name="parameters"></a>Parametreler
 
 *pStm*<br/>
-Yok edilecek veri paketini içeren bir akışı işaretçi.
+Yok edilecek veri paketini içeren bir akışa yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="ftmbaseunmarshalinterface"></a><a name="unmarshalinterface"></a>FtmBase::UnmarshalInterface
+## <a name="ftmbaseunmarshalinterface"></a><a name="unmarshalinterface"></a>FtmBase:: UnmarshalInterface
 
-Yeni oluşturulan proxy'yi başolarak karşılar ve bu proxy'ye bir arabirim işaretçisi döndürür.
+Yeni oluşturulan bir proxy başlatır ve bu ara sunucuya bir arabirim işaretçisi döndürür.
 
 ```cpp
 STDMETHODIMP UnmarshalInterface(
@@ -312,14 +312,14 @@ STDMETHODIMP UnmarshalInterface(
 ### <a name="parameters"></a>Parametreler
 
 *pStm*<br/>
-Arabirim işaretçisinin alınıp çıkarılabilmek için akışı işaretçi.
+Arabirim işaretçisinin sıralanamadı olduğu akışa yönelik işaretçi.
 
-*Riid*<br/>
-Atanacak arabirimin tanımlayıcısına başvuru.
+*riıd*<br/>
+Sıralanmayan arabirimin tanımlayıcısına başvuru.
 
-*Ppv*<br/>
-Bu işlem tamamlandığında, *riid'de*istenen arabirim işaretçisini alan bir işaretçi değişkeninin adresi. Bu işlem başarılı olursa, **ppv* unmarshaled olmak için arabirimin istenen arabirim işaretçisi içerir.
+*PPV*<br/>
+Bu işlem tamamlandığında, *riid*içinde istenen arabirim işaretçisini alan bir işaretçi değişkeninin adresi. Bu işlem başarılı olursa, **PPV* , arabirimin istenen arabirim işaretçisini sıralanamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, E_NOINTERFACE veya E_FAIL.
+Başarılı olursa S_OK; Aksi takdirde, E_NOINTERFACE veya E_FAIL.

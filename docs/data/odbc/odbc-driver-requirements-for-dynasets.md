@@ -9,22 +9,22 @@ helpviewer_keywords:
 - dynasets
 - ODBC drivers, dynasets
 ms.assetid: 585cc67b-4d92-404b-9903-d769cd17badc
-ms.openlocfilehash: c612e8ea91882a6e744a8f47afe0decbeba85358
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4c436764649a1aa418e12300809482b45224dd46
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367210"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403848"
 ---
 # <a name="odbc-driver-requirements-for-dynasets"></a>Dynaset'ler için ODBC Sürücü Gereksinimleri
 
-MFC ODBC veritabanı sınıflarında, dynasets dinamik özelliklere sahip kayıt kümeleri; belirli şekillerde veri kaynağı ile senkronize kalır. MFC dynasets (ancak yalnızca ileri kayıt kümeleri) Düzey 2 API uyumlu bir ODBC sürücüsü gerektirir. [Veri kaynağınızın](../../data/odbc/data-source-odbc.md) sürücüsü Düzey 1 API kümesine uyuyorsa, dynasets değil, hem güncelleştirilebilir hem de salt okunur anlık görüntüleri ve yalnızca ileri kayıt kümelerini kullanabilirsiniz. Ancak, Düzey 1 sürücüsü genişletilmiş getir ve tuş takımı yla çalışan imleçleri destekliyorsa dinamitleri destekleyebilir.
+MFC ODBC veritabanı sınıflarında dinamik özelliklere sahip kayıt kümeleri vardır; veri kaynağıyla belirli yollarla eşitlenmiş olarak kalırlar. MFC dinamik kümeleri (ancak ileriye doğru kayıt kümeleri değil), düzey 2 API uyumluluğu olan bir ODBC sürücüsü gerektirir. [Veri kaynağınıza](../../data/odbc/data-source-odbc.md) ait sürücü düzey 1 API kümesine uygunsa, yalnızca güncelleştirilebilir ve salt okunurdur ve salt-kayıt kümelerini ve yalnızca yukarı kayıt kümelerini kullanmaya devam edebilirsiniz. Ancak, düzey 1 bir sürücü genişletilmiş getirme ve anahtar kümesi temelli imleçler destekliyorsa dinamik kümeleri destekleyebilir.
 
-ODBC terminolojisinde, dinamitler ve anlık görüntülerimleç olarak adlandırılır. İmleç, bir kayıt kümesindeki konumunu izlemek için kullanılan bir mekanizmadır. Dinamitler için sürücü gereksinimleri hakkında daha fazla bilgi için [Dynaset'e](../../data/odbc/dynaset.md)bakın. İmleçler hakkında daha fazla bilgi için MSDN belgelerindeki [Açık Veritabanı Bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK'ya bakın.
+ODBC terminolojisinde, dinamik kümeler ve anlık görüntüler imleçler olarak adlandırılır. İmleç bir kayıt kümesindeki konumunu izlemek için kullanılan bir mekanizmadır. Dinamik kümeler için sürücü gereksinimleri hakkında daha fazla bilgi için bkz. [Dynaset](../../data/odbc/dynaset.md). İmleçler hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) belgeleri.
 
 > [!NOTE]
-> Güncelleştirilebilir kayıt kümeleri için, ODBC sürücünüzün konumlandırılmış güncelleştirme deyimlerini veya `::SQLSetPos` ODBC API işlevini desteklemesi gerekir. Her ikisi de desteklenirse, MFC verimlilik için kullanır. `::SQLSetPos` Alternatif olarak, anlık görüntüler için güncelleştirilebilir anlık görüntüler (statik imleçler ve konumlandırılmış güncelleştirme deyimleri) için gerekli desteği sağlayan imleç kitaplığını kullanabilirsiniz.
+> Güncelleştirilebilir kayıt kümeleri için, ODBC sürücünüzün konumlandırılmış Update deyimlerini veya `::SQLSetPos` ODBC API işlevini desteklemesi gerekir. Her ikisi de destekleniyorsa, MFC `::SQLSetPos` verimlilik için kullanır. Alternatif olarak, anlık görüntüler için, güncelleştirilebilir anlık görüntüler (statik imleçler ve konumlandırılmış güncelleştirme deyimleri) için gerekli desteği sağlayan imleç kitaplığını kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ODBC Temelleri](../../data/odbc/odbc-basics.md)
+[ODBC temelleri](../../data/odbc/odbc-basics.md)

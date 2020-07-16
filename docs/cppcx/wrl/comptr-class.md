@@ -51,12 +51,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::Swap method
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-ms.openlocfilehash: 612747fe0acfa29acc3f516f1257e80069d5395c
-ms.sourcegitcommit: d695bb727bd2b081af4d50127b0242a9a5bdce61
+ms.openlocfilehash: 265553d29bcc153bbbb065443391d3aa4b3b0bd2
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84332259"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404557"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -84,26 +84,26 @@ Geçerli `ComPtr` bir arkadaş olan sınıf. (Bu parametreyi kullanan şablon ko
 
 `ComPtr<>`temel alınan arabirim işaretçisini temsil eden bir tür bildirir. `ComPtr<>`Bir değişken bildirmek için kullanın ve ardından `->` bir arabirim üye işlevine erişmek için ok üye erişim işlecini () kullanın.
 
-Akıllı işaretçiler hakkında daha fazla bilgi için MSDN Kitaplığı 'ndaki [com kodlama uygulamaları](/windows/win32/LearnWin32/com-coding-practices) MAKALESININ "com akıllı işaretçiler" alt bölümüne bakın.
+Akıllı işaretçiler hakkında daha fazla bilgi için [com kodlama uygulamaları](/windows/win32/LearnWin32/com-coding-practices) MAKALESININ "com akıllı işaretçiler" alt bölümüne bakın.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Name            | Description
+Ad            | Açıklama
 --------------- | ---------------------------------------------------------------
 `InterfaceType` | *T* şablonu parametresi tarafından belirtilen tür için eş anlamlı.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Name                             | Description
+Ad                             | Açıklama
 -------------------------------- | --------------------------------------------------------------------------------------------------------------------
 [ComPtr:: ComPtr](#comptr)        | `ComPtr` sınıfının yeni bir örneğini başlatır. Aşırı yüklemeler varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları sağlar.
 [ComPtr:: ~ ComPtr](#tilde-comptr) | Bir örneğini kaldırır `ComPtr` .
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Name                                                      | Description
+Ad                                                      | Açıklama
 --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [ComPtr:: as](#as)                                         | `ComPtr`Belirtilen şablon parametresi tarafından tanımlanan arabirimi temsil eden bir nesne döndürür.
 [ComPtr:: AsIID](#asiid)                                   | `ComPtr`Belirtilen ARABIRIM kimliği tarafından tanımlanan arabirimi temsil eden bir nesne döndürür.
@@ -119,14 +119,14 @@ Name                                                      | Description
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Name                                        | Description
+Ad                                        | Açıklama
 ------------------------------------------- | --------------------------------------------------------------------------------
 [ComPtr:: InternalAddRef](#internaladdref)   | Bununla ilişkili arabirimin başvuru sayısını artırır `ComPtr` .
 [ComPtr:: InternalRelease](#internalrelease) | Bu ile ilişkili arabirim üzerinde bir COM yayın işlemi gerçekleştirir `ComPtr` .
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Name                                                                                           | Description
+Ad                                                                                           | Açıklama
 ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------
 [ComPtr:: operator&](#operator-ampersand)                                                       | Geçerli öğesinin adresini alır `ComPtr` .
 [ComPtr:: operator->](#operator-arrow)                                                          | Geçerli şablon parametresi tarafından belirtilen türe bir işaretçi alır.
@@ -137,7 +137,7 @@ Name                                                                            
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-Name                 | Description
+Ad                 | Açıklama
 -------------------- | ------------------------------------------------------------------------------------------
 [ComPtr::p tr_](#ptr) | İle ilişkili arabirime yönelik bir işaretçi içerir ve bu ile yönetilir `ComPtr` .
 

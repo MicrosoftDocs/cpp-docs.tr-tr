@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword (C++), safebuffers
 - safebuffers __declspec keyword
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
-ms.openlocfilehash: bc4736ce233ce026ecab9ef38ac8379466b5a0bc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ebdbba130106ea5f9b893a9fd1d8277fd2dabdd4
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365580"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404697"
 ---
 # <a name="safebuffers"></a>safebuffers
 
@@ -20,7 +20,7 @@ ms.locfileid: "81365580"
 
 Derleyiciye bir işlev için arabellek taşması güvenlik denetimlerini eklememesini bildirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __declspec( safebuffers )
@@ -28,26 +28,26 @@ __declspec( safebuffers )
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/GS** derleyicisi seçeneği, yığına güvenlik denetimleri ekleyerek derleyicinin arabellek taşmaları için test etmesini neden olur. Güvenlik denetimleri için uygun olan veri yapıları türleri [/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)olarak açıklanmıştır. Arabellek taşma algılama hakkında daha fazla bilgi [için, MSVC Güvenlik Özellikleri](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/)bakın.
+**/GS** derleyici seçeneği, derleyicinin güvenlik denetimlerini yığına ekleyerek arabellek taşmalarını test etmesine neden olur. Güvenlik denetimleri için uygun olan veri yapılarının türleri [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)bölümünde açıklanmaktadır. Arabellek taşması algılama hakkında daha fazla bilgi için bkz. [MSVC sürümündeki güvenlik özellikleri](https://devblogs.microsoft.com/cppblog/security-features-in-microsoft-visual-c/).
 
-Uzman düzeyde el ile kod incelemesi veya harici analiz, işlevde arabellek taşması görülmediğini belirleyebilir. Bu durumda, işlev bildirimine **__declspec (safebuffers)** anahtar sözcük lerini uygulayarak işlevin güvenlik denetimlerini bastırabilirsiniz.
+Uzman düzeyde el ile kod incelemesi veya harici analiz, işlevde arabellek taşması görülmediğini belirleyebilir. Bu durumda, işlev bildirimine **__declspec (safebuffers)** anahtar sözcüğünü uygulayarak bir işlev için güvenlik denetimlerini gizleyebilirsiniz.
 
 > [!CAUTION]
 > Arabellek güvenlik denetimleri, önemli bir güvenlik koruması sağlar ve performans üzerinde göz ardı edilebilir bir etki oluşturur. Bu nedenle, işlev performansının kritik bir önem arz ettiği ve işlevin güvenli olduğunun bilindiği nadir durumlar haricinde bunları engellememenizi öneririz.
 
 ## <a name="inline-functions"></a>Satır İçi İşlevler
 
-*Birincil işlev,* ikincil bir *işlevin*kopyasını eklemek için [bir inlining](inline-functions-cpp.md) anahtar kelime kullanabilirsiniz. Bir işleve **__declspec (safebuffers)** anahtar sözcüğü uygulanırsa, bu işlev için arabellek çok zoru algılaması bastırılır. Ancak, inlining aşağıdaki yollarla **__declspec (safebuffers)** anahtar sözcük etkiler.
+*Birincil bir işlev* , bir *İkincil işlevin*kopyasını eklemek için bir [ıntıl](inline-functions-cpp.md) anahtar sözcüğü kullanabilir. **__Declspec (safebuffers)** anahtar sözcüğü bir işleve uygulanırsa, bu işlev için arabellek taşması algılama bastırılır. Ancak, ıntıl aşağıdaki yollarla **__declspec (safebuffers)** anahtar sözcüğünü etkiler.
 
-**/GS** derleyicisi seçeneğinin her iki işlev için de belirtildiğini, ancak birincil işlevin **__declspec (safebuffers)** anahtar sözcüğlerini belirlediğini varsayalım. İkincil işlevdeki veri yapıları, bunu güvenlik denetimleri için uygun hale getirir ve işlev bu denetimleri engellemez. Bu durumda:
+**/GS** derleyici seçeneğinin her iki işlev için de belirtildiğini varsayalım, ancak birincil işlev **__declspec (safebuffers)** anahtar sözcüğünü belirtir. İkincil işlevdeki veri yapıları, bunu güvenlik denetimleri için uygun hale getirir ve işlev bu denetimleri engellemez. Bu durumda:
 
-- Derleyiciyi, derleyici optimizasyonlarından bağımsız olarak bu işlevi satır hizaya zorlamak için ikincil işlevdeki [__forceinline](inline-functions-cpp.md) anahtar sözcüğü belirtin.
+- Derleyicinin en iyi duruma getirmelerinden bağımsız olarak işlevin satır içi olarak çalışmasını zorlamak için ikincil işlevde [__forceinline](inline-functions-cpp.md) anahtar sözcüğünü belirtin.
 
-- İkincil işlev güvenlik denetimleri için uygun olduğundan, **__declspec (safebuffers)** anahtar sözcük belirtir rağmen güvenlik denetimleri de birincil işlevi uygulanır.
+- İkincil işlev güvenlik denetimleri için uygun olduğundan, güvenlik denetimleri, **__declspec (safebuffers)** anahtar sözcüğünü belirtse de birincil işleve de uygulanır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **__declspec (safebuffers)** anahtar kelimesinin nasıl kullanılacağını gösterir.
+Aşağıdaki kod **__declspec (safebuffers)** anahtar sözcüğünün nasıl kullanılacağını gösterir.
 
 ```cpp
 // compile with: /c /GS
@@ -72,11 +72,11 @@ int wmain() {
 }
 ```
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__declspec](../cpp/declspec.md)<br/>
-[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[satır içinde, \___inline, _forceinline](inline-functions-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[satır içi, __inline, \_ _forceinline](inline-functions-cpp.md)<br/>
 [strict_gs_check](../preprocessor/strict-gs-check.md)

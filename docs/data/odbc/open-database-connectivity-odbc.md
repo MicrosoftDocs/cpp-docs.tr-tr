@@ -6,18 +6,18 @@ helpviewer_keywords:
 - databases [C++], ODBC
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-ms.openlocfilehash: fc72b0bda2bfebd116481d6eaa06d054f904d084
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 12e4c0b74caa95af4dc4ed00dc77d46e47029b59
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213089"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403809"
 ---
 # <a name="open-database-connectivity-odbc"></a>Açık Veritabanı Bağlantısı (ODBC)
 
 Microsoft Foundation Sınıfları (MFC) kitaplığı, açık veritabanı bağlantısı (ODBC) ile programlama için sınıflar sağlar. Visual Studio 2015 ve SQL Server 2012 ' den itibaren, SQL veri kaynaklarına bağlanmak için tercih edilen yoldur.
 
-MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için MSDN 'de [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK 'sına bakın.
+MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için bkz. [açık veritabanı bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) belgeleri.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -53,7 +53,7 @@ MFC olmadan ODBC API kullanma hakkında daha fazla bilgi için MSDN 'de [açık 
 
 - [Veritabanı sınıfları MFC 'nin belge/görünüm mimarisi ile nasıl çalışır?](working-with-documents-and-views.md)
 
-- [ODBC Sürücü Listesi](odbc-driver-list.md)
+- [ODBC sürücü listesi](odbc-driver-list.md)
 
 ## <a name="odbc-database-tasks"></a>ODBC veritabanı görevleri
 
@@ -61,19 +61,19 @@ Bu görevler MFC [ODBC](odbc-basics.md) sınıflarını temel alır. MFC olmadan
 
 - [ODBC 'yi yükleyip kullanmaya başlayın](installing-and-getting-started-with-odbc.md)
 
-- [Bir ODBC Veritabanı Uygulaması Tasarlama ve Oluşturma](design-and-create-an-odbc-database-application.md)
+- [Bir ODBC veritabanı uygulaması tasarlama ve oluşturma](design-and-create-an-odbc-database-application.md)
 
-- [ODBC ile Veritabanı Formları (Kayıt Görünümleri) Kullanma](use-database-forms-record-views-with-odbc.md)
+- [ODBC ile veritabanı formları (kayıt görünümleri) kullanma](use-database-forms-record-views-with-odbc.md)
 
-- [Diğer Kullanıcılarla Çalışmak için ODBC Kullanma](use-odbc-to-work-with-other-users.md)
+- [Diğer kullanıcılarla çalışmak için ODBC kullanma](use-odbc-to-work-with-other-users.md)
 
-- [ODBC Veritabanı Bağlantılarıyla Çalışma](work-with-odbc-database-connections.md)
+- [ODBC veritabanı bağlantılarıyla çalışma](work-with-odbc-database-connections.md)
 
-- [ODBC ve Sürücülerle Çalışma](work-with-odbc-and-drivers.md)
+- [ODBC ve sürücülerle çalışma](work-with-odbc-and-drivers.md)
 
-- [ODBC İmleç Kitaplığını Kullanma](use-the-odbc-cursor-library.md)
+- [ODBC Imleç kitaplığını kullanma](use-the-odbc-cursor-library.md)
 
-- [MFC ODBC Kayıt Kümelerini Kullanma](use-mfc-odbc-recordsets.md)
+- [MFC ODBC kayıt kümelerini kullanma](use-mfc-odbc-recordsets.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

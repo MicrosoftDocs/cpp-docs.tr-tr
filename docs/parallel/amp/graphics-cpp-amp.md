@@ -2,78 +2,78 @@
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 6e21c5af094ce90c8e4365ed4263198422ad1905
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 393fadbba90b135e6394cf848668b4957a6d7ce2
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449874"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404840"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
-C++ AMP alanındaki birkaç API içeren [Concurrency::graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) Gpu'lar üzerindeki doku desteğine erişmek için kullanabileceğiniz bir ad alanı. Bazı yaygın senaryolar şunlardır:
+C++ AMP, bir [concurrency:: Graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) ad alanında GPU 'lara doku desteğine erişmek için kullanabileceğiniz çeşitli API 'ler içerir. Bazı yaygın senaryolar şunlardır:
 
-- Kullanabileceğiniz [doku](../../parallel/amp/reference/texture-class.md) sınıfını hesaplama için bir veri depolayıcı olarak *uzamsal yerelliğinden* düzenleri GPU donanımının doku önbelleğinin ve. Uzamsal yerelliğinden veri öğelerinin fiziksel olarak birbirlerine yakın olan bir özelliktir.
+- [Doku](../../parallel/amp/reference/texture-class.md) sınıfını hesaplama için bir veri kapsayıcısı olarak kullanabilir ve doku ÖNBELLEĞININ ve GPU donanımının düzenlerindeki *uzamsal konum* açısından yararlanabilirsiniz. Uzamsal konum fiziksel olarak birbirlerine yakın olan veri öğelerinin özelliğidir.
 
-- Çalışma zamanı işlem olmayan gölgelendiriciler ile birlikte verimli karşılıklı sağlar. Piksel, Tepe noktası, Mozaik döşeme ve Kabuk gölgelendiriciler sıklıkla kullanan veya C++ AMP hesaplamalarınızda kullanabileceğiniz dokular üretir.
+- Çalışma zamanı, işlem dışı gölgelendiriciler ile verimli birlikte çalışabilirlik sağlar. Piksel, köşe, mozaik ve kabuk gölgelendiriciler sıklıkla C++ amp hesaplamalarında kullanabileceğiniz dokuları kullanır veya üretir.
 
-- Grafik API'leri, C++ AMP altı paketlenmiş arabelleklere erişmenin alternatif yollarını word sağlar. Temsil eden biçimlerdeki dokular *texel'in* (doku öğeleri) 8-bit oluşan ya da 16 bitlik skalerlerden gibi paket veri depolarına erişmesine izin verin.
+- C++ AMP 'deki grafik API 'Leri, alt sözcük paketlenmiş arabelleklerine erişmenin alternatif yollarını sağlar. 8 bit veya 16 bit yapı karakterlerinden oluşan *biçimleri temsil eden* biçimlerin bulunduğu dokular, bu tür paketlenmiş veri depolamasına erişime izin verir.
 
 ## <a name="the-norm-and-unorm-types"></a>Norm ve unorm türleri
 
-`norm` Ve `unorm` türleridir aralığını sınırlayan skaler türler **float** değerleri; bu olarak bilinir *clamping*. Bu türler, diğer skaler türlerden açıkça oluşturulabilir. Dönüştürme değeri ilk türüne dönüştürülür **float** ve ardından norm [-1.0, 1.0] veya [0.0, 1.0] unorm tarafından izin verilen ilgili bölgeye kenetlenen. +/-Sonsuzdan +/-1 döndürür. Nan'dan tanımsızdır. Bir norm örtük olarak bir unorm oluşturulabilir ve veri kaybı olmadan yoktur. Kayan nokta değerine örtülü dönüştürme işleci bu türlerde tanımlıdır. İkili işleçler tanımlanmış bu türleri ve diğer yerleşik skaler türler arasında gibi **float** ve **int**: +, -, \*, /, ==,! =, >, \<, > =, < =. Bileşik atama işleçleri de destekler: +=,-=, \*=, / =. Tekli değilleme işleci (-) norm türleri için tanımlanır.
+`norm`Ve `unorm` türleri, **float** değerlerinin aralığını sınırlayan skaler türlerdir; bu, *clamping*olarak bilinir. Bu türler, diğer skaler türlerden açık bir şekilde oluşturulabilir. Atama sırasında, değer önce **float** 'e, sonra da norm [-1,0, 1,0] veya unorm [0,0, 1,0] tarafından izin verilen ilgili bölgeye çakışıyor. +/-Infinity atama +/-1 döndürür. NaN 'dan atama tanımsız. Bir norm, bir unorm 'den örtülü olarak oluşturulabilir ve veri kaybı olmaz. Kayan kapalı dönüştürme işleci bu türlerde tanımlanmıştır. İkili işleçler bu türler ve **float** ve **int**gibi diğer yerleşik skaler türler arasında tanımlanır: +,-, \* ,/, = =,! =, >, \<, > =, <=. Bileşik atama işleçleri de desteklenir: + =,-=, \* =,/=. Birli olumsuzlama işleci (-), norm türleri için tanımlanır.
 
 ## <a name="short-vector-library"></a>Kısa vektör kitaplığı
 
-Kısa vektör kitaplığı bazı işlevlerini sağlar [vektör türü](https://go.microsoft.com/fwlink/p/?linkid=248500) HLSL'de tanımlı olan ve genellikle texel'in tanımlamak için kullanılır. Bir kısa vektörü aynı türde bir ile dört değerleri içeren bir veri yapısıdır. Desteklenen türler **çift**, **float**, **int**, `norm`, `uint`, ve `unorm`. Tür adları aşağıdaki tabloda gösterilmektedir. Her türü için var. Ayrıca karşılık gelen **typedef** adı, alt çizgi yoktur. Altçizginin olduğu türler bulunan [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). Alt çizgileri olmayan türleri bulunan [CONCURRENCY::Graphics:: Direct3D Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) bunlar açıkça benzer şekilde adlandırılmış temel türlerden gibi şekilde isimlendirilmiş **__int8** ve **__int16**.
+Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](https://go.microsoft.com/fwlink/p/?linkid=248500) bazı işlevlerini sağlar ve genellikle dokcası tanımlamak için kullanılır. Kısa bir vektör, aynı türde bir ile dört arasında değer tutan bir veri yapısıdır. Desteklenen türler **Double**, **float**, **int**, `norm` , `uint` ve ' dir `unorm` . Tür adları aşağıdaki tabloda gösterilmiştir. Her tür için, adında alt çizgi olmayan karşılık gelen bir **typedef** de vardır. Alt çizgileri olan türler [concurrency:: Graphics ad uzayında](../../parallel/amp/reference/concurrency-graphics-namespace.md)bulunur. Alt çizgilere sahip olmayan türler, **__int8** ve **__int16**gibi benzer adlandırılmış temel türlerden açıkça ayrılmaları için [Concurrency:: Graphics::d irect3d ad alanında](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) yer alırlar.
 
-||Uzunluğu 2|Uzunluğu 3|Uzunluğu 4|
+||Uzunluk 2|Uzunluk 3|Uzunluk 4|
 |-|--------------|--------------|--------------|
-|çift|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
+|double|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
 |float|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|
-|int|int_2<br /><br /> int2|int_3<br /><br /> ınt3|int_4<br /><br /> int4|
+|int|int_2<br /><br /> int2|int_3<br /><br /> int3|int_4<br /><br /> int4|
 |norm|norm_2<br /><br /> norm2|norm_3<br /><br /> norm3|norm_4<br /><br /> norm4|
 |uint|uint_2<br /><br /> uint2|uint_3<br /><br /> uint3|uint_4<br /><br /> uint4|
 |unorm|unorm_2<br /><br /> unorm2|unorm_3<br /><br /> unorm3|unorm_4<br /><br /> unorm4|
 
 ### <a name="operators"></a>İşleçler
 
-Bir işleç iki kısa vektör arasında tanımlıysa, ardından bunu ayrıca bir kısa vektörü ile bir skaler değer arasında tanımlanır. Ayrıca, bunlardan biri doğru olmalıdır:
+İki kısa vektör arasında bir operatör tanımlanmışsa, kısa bir vektör ve skaler arasında da tanımlanır. Ayrıca, bunlardan biri doğru olmalıdır:
 
-- Skaler değerin türü kısa vektörün öğe türü ile aynı olması gerekir.
+- Skaler türünün türü, kısa vektörün öğe türüyle aynı olmalıdır.
 
-- Skaler değerin türü, bir vektörün öğe türü için yalnızca bir kullanıcı tanımlı dönüştürme kullanılarak örtük olarak dönüştürülebilir.
+- Skalar öğenin türü, yalnızca bir Kullanıcı tanımlı dönüştürme kullanılarak vektörin öğe türüne örtük olarak dönüştürülebilir.
 
-İşlem, kısa vektörün her bileşeni ve skaler arasında bileşene odaklı taşınır. Geçerli işleçler şunlardır:
+İşlem, kısa vektör ve skaler bileşenin her bileşeni arasında bileşen temelinde yürütülür. Geçerli işleçler şunlardır:
 
 |İşleç türü|Geçerli türler|
 |-------------------|-----------------|
-|İkili işleçler|Tüm türlerde geçerlidir: +, -, \*, /,<br /><br /> Tamsayı türlerinde geçerlidir: %, ^, &#124;&, <\<, >><br /><br /> İki vektörün aynı boyutta olması gerekir ve sonuç aynı boyutta bir vektördür.|
-|İlişkisel işleçleri|Tüm türlerde geçerlidir: == ve! =|
-|Bileşik atama işleci|Tüm türlerde geçerlidir: +=,-=, \*=, / =<br /><br /> Tamsayı türlerinde geçerlidir: % =, ^ =, &#124;= & =, <\<= >> =|
-|Artırma ve azaltma işleçleri|Tüm türlerde geçerlidir: ++,--<br /><br /> Gerek önek, gerekse sonek geçerli değil.|
+|İkili işleçler|Tüm türlerde geçerlidir: +,-, \* ,/,<br /><br /> Tamsayı türlerinde geçerlidir:%, ^, &#124;, &, <\<, >><br /><br /> İki vektörün aynı boyutta olması gerekir ve sonuç aynı boyutta bir vektördür.|
+|İlişkisel işleçler|Tüm türlerde geçerlidir: = = ve! =|
+|Bileşik atama işleci|Tüm türlerde geçerlidir: + =,-=, \* =,/=<br /><br /> Tamsayı türlerinde geçerlidir:% =, ^ =, &#124;=, &=, <\<=, >>=|
+|Artırma ve azaltma işleçleri|Tüm türlerde geçerlidir: + +,--<br /><br /> Önek ve sonek geçerlidir.|
 |Bit düzeyinde NOT işleci (~)|Tamsayı türlerinde geçerlidir.|
-|Birli - işleç|Geçerli dışında tüm türler `unorm` ve `uint`.|
+|Birli işleci|Ve dışındaki tüm türlerde geçerlidir `unorm` `uint` .|
 
-### <a name="swizzling-expressions"></a>Swizzling ifadeleri
+### <a name="swizzling-expressions"></a>Swizzling Ifadeleri
 
-Kısa vektör kitaplığı destekler `vector_type.identifier` kısa vektörün bileşenlerine erişmek için erişimci kalıbını. `identifier`, Olarak bilinen bir *swizzling ifadesi*, vektörün bileşenlerini belirtir. İfade, bir l-değeri ya da bir r olabilir. Tanımlayıcı tek karakterler olabilir: x, y, z ve w; ya da r, g, b ve a. "x" ve "r" sıfırıncı bileşen, "y" ve "g" ortalama ilk bileşen ve benzeri anlamına gelir. (Bildirim "x" ve "r" aynı tanımlayıcıda kullanılamaz.) Dolayısıyla "rgba" ve "xyzw" aynı sonucu döndürür. "X" gibi tek bileşenli erişimciler ve "y" skaler değer türleridir. Çok bileşenli erişimciler kısa vektör türleridir. Örneğin, oluşturmak, bir `int_4` adlı vektör `fourInts` ve değer 2, 4, 6 ve 8, ardından `fourInts.y` tamsayı 4 değerini ve `fourInts.rg` döndürür bir `int_2` 2 ve 4 değerlerine sahip nesne.
+Kısa vektör kitaplığı, `vector_type.identifier` bir kısa vector bileşenine erişmek için erişimci yapısını destekler. `identifier` *Swizzling ifadesi*olarak bilinen, vector bileşenlerini belirtir. İfade bir l değeri veya r değeri olabilir. Tanımlayıcıdaki tek karakterler şu olabilir: x, y, z ve w; ya da r, g, b ve a. "x" ve "r", sıfır-bir bileşen anlamına gelir, "y" ve "g" ilk bileşen anlamına gelir ve bu şekilde devam eder. ("X" ve "r" nin aynı tanımlayıcıda kullanılamayacağını unutmayın.) Bu nedenle, "rgba" ve "xyzw" aynı sonucu döndürür. "X" ve "y" gibi tek bileşen erişimcileri skaler değer türleridir. Çoklu bileşen erişimcileri kısa vektör türlerdir. Örneğin, `int_4` adlı bir vektör oluşturursanız `fourInts` ve 2, 4, 6 ve 8 değerlerini içeriyorsa, `fourInts.y` 4 tamsayı ve `fourInts.rg` `int_2` 2 ve 4 değerlerini içeren bir nesne döndürür.
 
 ## <a name="texture-classes"></a>Doku sınıfları
 
-Çoğu GPU'nun, donanım ve piksel ve doku hücreleri getirmek ve görüntü ve dokuları işlemek için optimize edilmiş önbellekleri vardır. [Doku\<T, N >](../../parallel/amp/reference/texture-class.md) doku hücresi nesneler için bir kapsayıcı sınıfı olan sınıfı bu Gpu'lar doku işlevini kullanıma sunar. Bir texel şunlar olabilir:
+Birçok GPU, pikselleri ve dokuları getirmek ve görüntüleri ve dokuları işlemek için optimize edilmiş donanım ve önbelleklerdir. Doku hücresi değerinin nesnelerine yönelik bir kapsayıcı sınıfı olan [doku \<T,N> ](../../parallel/amp/reference/texture-class.md) sınıfı, bu GPU 'ların doku işlevlerini gösterir. Bir doku hücresi değerinin şu olabilir:
 
-- Bir **int**, `uint`, **float**, **çift**, `norm`, veya `unorm` skaler.
+- Bir **int**, `uint` , **float**, **Double**, `norm` veya `unorm` skaler.
 
-- İki veya dört bileşeni olan kısa bir vektör. Tek özel durum `double_4`, hangi izin verilmiyor.
+- İki veya dört bileşeni olan kısa bir vektör. Tek özel durum `double_4` , buna izin verilmez.
 
-`texture` Nesnesi 1, 2 veya 3 derecesine sahip olabilir. `texture` Nesne, yalnızca başvuru ile yapılan bir çağrının tarafından tutulabilir `parallel_for_each`. Doku, GPU üzerinde Direct3D Doku nesneleri olarak saklanır. Dokular ve doku hücresi Direct3D'deki hakkında daha fazla bilgi için bkz: [Direct3D 11'de dokulara giriş](https://go.microsoft.com/fwlink/p/?linkid=248502).
+`texture`Nesne, 1, 2 veya 3 derecesine sahip olabilir. `texture`Nesne yalnızca öğesine yapılan çağrının lambda öğesinde başvuruya göre yakalanamaz `parallel_for_each` . Doku, GPU 'da Direct3D doku nesneleri olarak depolanır. Direct3D 'de dokular ve dokun hakkında daha fazla bilgi için bkz. [Direct3D 11 ' de dokuya giriş](https://go.microsoft.com/fwlink/p/?linkid=248502).
 
-Kullandığınız görüntü doku hücresi türü, grafik programlamada kullanılan pek çok doku biçiminden biri olabilir. Örneğin, RGBA biçimi, 32 bit 8 bit her R, G, B ve A skaler değer öğelerinin için kullanabilirsiniz. Grafik kartının doku donanımı, biçimi temel alarak tek tek öğelerine erişebilirsiniz. Örneğin, RGBA biçimi kullanıyorsanız, doku donanımı 8 bitlik her öğeyi bir 32 bitlik biçimde ayıklayabilir. C++ AMP'de, koddaki tek tek skaler öğelere bit kaydırma kullanmadan otomatik olarak erişebilir, böylece texel'inizin skaler öğe başına bit ayarlayabilirsiniz.
+Kullandığınız doku hücresi değerinin türü, grafik programlamada kullanılan birçok doku biçiminden biri olabilir. Örneğin, bir RGBA biçimi, R, G, B ve skaler öğeler için 8 bit ile 32 bit kullanabilir. Grafik kartının doku donanımı, biçime göre ayrı ayrı öğelere erişebilir. Örneğin, RGBA biçimini kullanıyorsanız, doku donanımı her 8 bitlik öğeyi 32 bitlik bir biçimde ayıklayabilir. C++ amp ' de, doku hücresi değerinin 'nin skalar öğe başına bitlerini ayarlayabilirsiniz. böylece, bit kaydırma kullanmadan koddaki tek tek skalar öğelerine otomatik olarak erişebilirsiniz.
 
-### <a name="instantiating-texture-objects"></a>Doku nesnelerini başlatma
+### <a name="instantiating-texture-objects"></a>Doku nesnelerini örnekleme
 
-Bir doku nesnesine atamadan bildirebilirsiniz. Aşağıdaki kod örneği, birkaç doku nesnesi bildirir.
+Bir doku nesnesini, başlatma olmadan bildirebilirsiniz. Aşağıdaki kod örneği, çeşitli doku nesnelerini bildirir.
 
 ```cpp
 #include <amp.h>
@@ -96,7 +96,7 @@ void declareTextures() {
 }
 ```
 
-Bildirmek ve başlatmak için bir oluşturucu kullanabilirsiniz bir `texture` nesne. Aşağıdaki kod örnek bir `texture` nesneden oluşan bir vektörü `float_4` nesneleri. Skaler öğe başına bit varsayılan değere ayarlanır. Bu Oluşturucu ile kullanamazsınız `norm`, `unorm`, ya da kısa vektörleri `norm` ve `unorm`, skaler öğe başına varsayılan bit olmadığı için.
+Bir nesne bildirmek ve başlatmak için bir Oluşturucu da kullanabilirsiniz `texture` . Aşağıdaki kod örneği bir `texture` nesne vektöründen bir nesne oluşturur `float_4` . Skaler öğe başına bit sayısı varsayılan değer olarak ayarlanır. `norm` `unorm` `norm` `unorm` Skalar öğe başına varsayılan bir bit olmadığından, bu oluşturucuyu ve ' nin kısa vektörleriyle kullanamazsınız.
 
 ```cpp
 #include <amp.h>
@@ -116,7 +116,7 @@ void initializeTexture() {
 }
 ```
 
-Ayrıca bildirmek ve başlatmak bir `texture` kaynak verilerin, kaynak verilerin bayt cinsinden boyutunu ve skaler öğe başına bit bir işaretçi alan bir oluşturucu aşırı yüklemesini kullanarak nesne.
+Ayrıca, `texture` kaynak verilere işaretçi alan bir Oluşturucu aşırı yüklemesi, bayt cinsinden kaynak verilerinin boyutu ve skaler öğe başına bit sayısı ile bir nesne bildirebilir ve başlatabilirsiniz.
 
 ```cpp
 void createTextureWithBPC() { // Create the source data.
@@ -129,19 +129,19 @@ void createTextureWithBPC() { // Create the source data.
 }
 ```
 
-Bu örneklerdeki dokular varsayılan hızlandırıcının varsayılan görünümünde oluşturulur. Belirtmek isterseniz oluşturucunun diğer aşırı yüklemeler kullanabileceğiniz bir `accelerator_view` nesne. Bir CPU hızlandırıcısında bir doku nesnesi oluşturamazsınız.
+Bu örneklerdeki dokular varsayılan hızlandırıcının varsayılan görünümünde oluşturulur. Bir nesne belirtmek istiyorsanız oluşturucunun diğer aşırı yüklerini kullanabilirsiniz `accelerator_view` . Bir CPU hızlandırıcısında doku nesnesi oluşturamazsınız.
 
-Her boyutunun boyutuna sınırları vardır `texture` aşağıdaki tabloda gösterildiği gibi nesne. Sınırları aşarsanız, bir çalışma zamanı hatası oluşturulur.
+`texture`Aşağıdaki tabloda gösterildiği gibi, her nesne boyutunun boyutu için sınırlar vardır. Sınırları aşarsanız bir çalışma zamanı hatası oluşturulur.
 
 |Doku|Boyut başına boyut sınırlaması|
 |-------------|---------------------|
-|Doku\<T, 1 >|16384|
-|Doku\<T, 2 >|16384|
-|Doku\<T, 3 >|2048|
+|uyla\<T,1>|16384|
+|uyla\<T,2>|16384|
+|uyla\<T,3>|2048|
 
 ### <a name="reading-from-texture-objects"></a>Doku nesnelerinden okuma
 
-Okuma yapabilirsiniz bir `texture` kullanarak nesne [texture::operator\[\]](reference/texture-class.md#operator_at), [texture:: operator() işleci](reference/texture-class.md#operator_call), veya [texture::get metodu](reference/texture-class.md#get). İki işleç bir başvuru değil bir değer döndürür. Bu nedenle, yazamazsınız bir `texture` kullanarak nesne `texture::operator\[\]`.
+`texture` [Doku:: \[ \] operator](reference/texture-class.md#operator_at), [doku:: operator () işleci](reference/texture-class.md#operator_call)veya [texture:: Get metodunu](reference/texture-class.md#get)kullanarak bir nesneden okuyabilirsiniz. İki işleç bir başvuru değil, bir değer döndürür. Bu nedenle, kullanarak bir nesnesine yazamaz `texture` `texture::operator\[\]` .
 
 ```cpp
 void readTexture() {
@@ -171,7 +171,7 @@ void readTexture() {
 }
 ```
 
-Aşağıdaki kod örneği, doku kanallarının kısa bir vektörde depolamak ve ardından ayrı ayrı skaler öğelere kısa vektörün özellikleri olarak erişim gösterilmektedir.
+Aşağıdaki kod örneği, doku kanallarının kısa bir vektörde nasıl depolanacağını ve ardından tek tek skalar öğelerine kısa vektörün özellikleri olarak nasıl erişileceğini gösterir.
 
 ```cpp
 void UseBitsPerScalarElement() { // Create the image data. // Each unsigned int (32-bit) represents four 8-bit scalar elements(r,g,b,a values).
@@ -197,28 +197,28 @@ void UseBitsPerScalarElement() { // Create the image data. // Each unsigned int 
 }
 ```
 
-Aşağıdaki tabloda, her sıralama vektörü türü için kanal başına geçerli bit sayısını listeler.
+Aşağıdaki tabloda her bir sıralama vektör türü için kanal başına geçerli bitler listelenmektedir.
 
-|Doku veri türü|Skaler öğe başına geçerli bit|
+|Doku veri türü|Skaler öğe başına geçerli bit sayısı|
 |-----------------------|-----------------------------------|
-|int, int_2, int_4<br /><br /> uint_2, uint_4 uint|8, 16, 32|
+|int, int_2, int_4<br /><br /> uint, uint_2, uint_4|8, 16, 32|
 |int_3, uint_3|32|
-|float, float_2, float_4|16, 32|
+|kayan, float_2, float_4|16, 32|
 |float_3|32|
-|çift double_2|64|
+|Double, double_2|64|
 |Norm, norm_2, norm_4<br /><br /> unorm, unorm_2, unorm, 4|8, 16|
 
 ### <a name="writing-to-texture-objects"></a>Doku nesnelerine yazma
 
-Kullanım [texture::set](reference/texture-class.md#set) yönteminin yazma `texture` nesneleri. Bir doku nesnesi salt okunur veya okunur/yazılır olabilir. Doku nesnesinin okunabilir ve yazılabilir olması aşağıdaki koşulların doğru olması gerekir:
+Nesnelere yazmak için [texture:: set](reference/texture-class.md#set) metodunu kullanın `texture` . Bir doku nesnesi salt okunur veya okuma/yazma olabilir. Bir doku nesnesinin okunabilir ve yazılabilir olması için aşağıdaki koşulların doğru olması gerekir:
 
-- T, yalnızca bir skaler bileşene sahiptir. (Kısa vektörler kullanılamaz.)
+- T 'in yalnızca bir skaler bileşeni vardır. (Kısa vektörlerine izin verilmez.)
 
-- T değil **çift**, `norm`, veya `unorm`.
+- T **Double**, `norm` , veya değil `unorm` .
 
-- `texture::bits_per_scalar_element` Özelliği 32'dir.
+- `texture::bits_per_scalar_element`Özelliği 32 ' dir.
 
-Üç true, değilse sonra `texture` salt okunur bir nesnedir. İlk iki koşul derleme sırasında denetlenir. Yazmaya çalışan kodunuz varsa, bir derleme hatası üretilir bir `readonly` doku nesnesi. Koşul için `texture::bits_per_scalar_element` çalışma zamanında algılanır ve çalışma zamanının oluşturduğu [unsupported_feature](../../parallel/amp/reference/unsupported-feature-class.md) salt okunur bir yazmaya çalışırsanız, özel durum `texture` nesne.
+Üçü de doğru değilse, `texture` nesne salt okunur olur. İlk iki koşul derleme sırasında denetlenir. Bir doku nesnesine yazmaya çalışan kodunuz varsa derleme hatası oluşturulur `readonly` . İçin koşulu `texture::bits_per_scalar_element` çalışma zamanında algılanır ve salt okunur bir nesneye yazmaya çalışırsanız, çalışma zamanı [unsupported_feature](../../parallel/amp/reference/unsupported-feature-class.md) özel durumu oluşturur `texture` .
 
 Aşağıdaki kod örneği bir doku nesnesine değerler yazar.
 
@@ -232,9 +232,9 @@ void writeTexture() {
 }
 ```
 
-### <a name="copying-texture-objects"></a>Doku nesnelerini kopyalama
+### <a name="copying-texture-objects"></a>Doku nesneleri kopyalanıyor
 
-Kullanarak doku nesneleri arasında kopyalama [kopyalama](reference/concurrency-namespace-functions-amp.md#copy) işlevi veya [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async) , aşağıdaki kod örneğinde gösterildiği gibi işlev.
+Aşağıdaki kod örneğinde gösterildiği gibi, [Copy](reference/concurrency-namespace-functions-amp.md#copy) işlevini veya [copy_async](reference/concurrency-namespace-functions-amp.md#copy_async) işlevini kullanarak doku nesneleri arasında kopyalama yapabilirsiniz.
 
 ```cpp
 void copyHostArrayToTexture() { // Copy from source array to texture object by using the copy function.
@@ -259,25 +259,25 @@ void copyHostArrayToTexture() { // Copy from source array to texture object by u
 }
 ```
 
-Ayrıca bir dokudan diğerine kullanarak kopyalayabilirsiniz [texture::copy_to](reference/texture-class.md#copy_to) yöntemi. Bu iki doku, farklı Hızlandırıcı görünümlerinde olabilir. Kopyaladığınızda bir `writeonly_texture_view` nesne, temel alınan veri kopyalanır `texture` nesne. Skaler öğe ve kapsam başına bit kaynak ve hedef aynı olmalıdır `texture` nesneleri. Bu gereksinimler karşılanmazsa, çalışma zamanı özel durum oluşturur.
+Ayrıca, [doku:: copy_to](reference/texture-class.md#copy_to) yöntemini kullanarak bir dokusundaki diğerine kopyalayabilirsiniz. İki doku farklı accelerator_views olabilir. Bir `writeonly_texture_view` nesnesine kopyaladığınızda, veriler temel alınan `texture` nesneye kopyalanır. Skaler öğe başına bitlerin ve kapsamın kaynak ve hedef nesnelerde aynı olması gerekir `texture` . Bu gereksinimler karşılanmazsa, çalışma zamanı bir özel durum oluşturur.
 
-## <a name="texture-view-classes"></a>Doku görüntüleme sınıfları
+## <a name="texture-view-classes"></a>Doku görünümü sınıfları
 
-C++AMP tanıtır [texture_view sınıfı](../../parallel/amp/reference/texture-view-class.md) Visual Studio 2013'te. Doku görünümleri desteklemek için aynı doku hücresi türlerini ve derecelerini olarak [texture sınıfı](../../parallel/amp/reference/texture-class.md), ancak dokulardan farklı doku örnekleme ve Mipmap gibi ek donanım özelliklerine erişim sağlar. Doku görünümleri alttaki doku verilerine salt okunur, salt yazılır ve okunur-yazılır erişimi destekler.
+C++ AMP, Visual Studio 2013 [Texture_view sınıfını](../../parallel/amp/reference/texture-view-class.md) tanıtır. Doku görünümleri [doku sınıfı](../../parallel/amp/reference/texture-class.md)olarak aynı doku hücresi değerinin türlerini ve dereceleri destekler, ancak dokulardan farklı olarak doku örneklemesi ve mı haritaları gibi ek donanım özelliklerine erişim sağlar. Doku görünümleri, temel alınan doku verilerine salt okunurdur, salt yazılır ve okuma/yazma erişimini destekler.
 
-- Salt okunur erişim sağlayan `texture_view<const T, N>` 1, 2 ya da 4 bileşenleri olan öğeler destekler, şablon uzmanlığı, doku örneklemesini ve dinamik erişim görünümün örneği oluşturulduğunda, belirlenen bir mipmap düzeylerinin bir dizi.
+- Salt okuma erişimi, `texture_view<const T, N>` 1, 2 veya 4 bileşeni, doku örneklemesi ve görünümün örneği oluşturulduğunda belirlenen bir dizi mipmap düzeyi olan öğeleri destekleyen şablon özelleştirmesi tarafından sağlanır.
 
-- Salt yazma erişimi özelleştirilmemiş Şablon sınıfı tarafından sağlanan `texture_view<T, N>`, 2 veya 4 bileşeni olan ve ne zaman görünümün örneği belirlenen bir mipmap düzeyine erişebildiklerinden öğeleri destekler. Örneklemeyi desteklemez.
+- Salt yazılır erişim, `texture_view<T, N>` 2 veya 4 bileşeni olan öğeleri destekleyen ve görünümün örneği oluşturulduğunda belirlenen bir mipmap düzeyine erişebilen, özel olmayan şablon sınıfı tarafından sağlanır. Örneklemeyi desteklemez.
 
-- Okuma-yazma erişimi özelleştirilmemiş Şablon sınıfı tarafından sağlanan `texture_view<T, N>`, dokular gibi destekleyen yalnızca bir bileşene sahip öğeleri; görünüm, örneklemede belirlenen bir mipmap düzeyine erişebilirsiniz. Örneklemeyi desteklemez.
+- Okuma-yazma erişimi, dokular gibi, yalnızca bir bileşeni olan öğeleri destekleyen, özelleştirilmiş olmayan şablon sınıfı tarafından sağlanır `texture_view<T, N>` ; Görünüm, örneklendiği zaman belirlenen bir mipmap düzeyine erişebilir. Örneklemeyi desteklemez.
 
-Doku görünümleri dizi görünümlerine benzer, ancak otomatik veri yönetimi ve hareket işlevselliğini sağlamaz [array_view sınıfı](../../parallel/amp/reference/array-view-class.md) sağlayan [array sınıfı](../../parallel/amp/reference/array-class.md). A `texture_view` yalnızca alttaki doku verisinin yer aldığı Hızlandırıcı görünümünde erişilebilir.
+Doku görünümleri dizi görünümlerine benzerdir, ancak [array_view sınıfının](../../parallel/amp/reference/array-view-class.md) [dizi sınıfı](../../parallel/amp/reference/array-class.md)üzerinde sağladığı otomatik veri yönetimi ve taşıma işlevlerini sağlamaz. `texture_view`Yalnızca, temel alınan doku verilerinin bulunduğu Hızlandırıcı görünümünde erişilebilir.
 
-### <a name="writeonlytextureview-deprecated"></a>writeonly_texture_view kullanım dışı
+### <a name="writeonly_texture_view-deprecated"></a>writeonly_texture_view kullanım dışı
 
-Visual Studio 2013 için C++ AMP gibi örnekleme ve Mipmap, hangi tarafından desteklenemeyen donanımsal doku özellikleri için daha iyi destek tanıtır [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md). Yeni çıkan `texture_view` işlevselliğin bir üst sınıf destekler `writeonly_texture_view`; sonuç olarak, `writeonly_texture_view` kullanım dışı bırakılmıştır.
+Visual Studio 2013 için, C++ AMP, [Writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md)tarafından desteklenmeyen örnekleme ve mı haritaları gibi donanım doku özellikleri için daha iyi destek sunuyor. Yeni tanıtılan `texture_view` sınıf, içinde işlevselliğin bir üst kümesini destekler `writeonly_texture_view` ; Sonuç olarak `writeonly_texture_view` kullanım dışıdır.
 
-Öneririz — en azından yeni kodda — kullandığınız `texture_view` önceden tarafından sağlanan erişim işlevselliği için `writeonly_texture_view`. İki bileşeni (int_2) olan bir doku nesnesine yazan aşağıdaki iki kod örnekleri karşılaştırın. Her iki durumda da, görünümü dikkat `wo_tv4`, lambda ifadesindeki değer tarafından yakalanması gerekir. İşte yeni kullanan örnek `texture_view` sınıfı:
+Daha `texture_view` önce tarafından sağlanmış işlevlere erişmek için kullandığınız en az yeni kod için önerilir `writeonly_texture_view` . İki bileşeni olan bir doku nesnesine yazan aşağıdaki iki kod örneğini karşılaştırın (int_2). Her iki durumda da görünüm, `wo_tv4` lambda ifadesindeki değere göre yakalanmalıdır. Yeni sınıfını kullanan örnek aşağıda verilmiştir `texture_view` :
 
 ```cpp
 void write2ComponentTexture() {
@@ -291,7 +291,7 @@ void write2ComponentTexture() {
 }
 ```
 
-Ve işte kullanım dışı `writeonly_texture_view` sınıfı:
+Kullanım dışı bırakılan sınıfı aşağıda verilmiştir `writeonly_texture_view` :
 
 ```cpp
 void write2ComponentTexture() {
@@ -305,13 +305,13 @@ void write2ComponentTexture() {
 }
 ```
 
-Gördüğünüz gibi birincil mipmap düzeyine tüm yaptığınız yazmak olduğunda iki kod örneği neredeyse aynıdır. Kullandıysanız `writeonly_texture_view` mevcut kodunuzu ve siz kodu, bunu değiştirmeniz gerekmez, geliştirmek planlamıyorsanız. Bu kodu öne çıkarmayı düşünüyorsanız, ancak kullanacak şekilde yeniden öneririz `texture_view` çünkü içindeki geliştirmeler yeni donanım doku özelliklerini desteklemektedir. Bu yeni özellikler hakkında daha fazla bilgi için okumaya devam edin.
+Gördüğünüz gibi, her şey birincil mipmap düzeyine yazarken iki kod örneği neredeyse aynı olur. `writeonly_texture_view`Varolan kodda kullandıysanız ve bu kodu geliştirmeyi planlanmıyorsanız, bunu değiştirmeniz gerekmez. Bununla birlikte, bu kodu ileri doğru yapmayı düşünüyorsanız, bu bilgileri kullanmak üzere yeniden yazmanız önerilir `texture_view` çünkü bu, içindeki geliştirmeler yeni donanım dokusu özelliklerini destekliyor. Bu yeni yetenekler hakkında daha fazla bilgi için okumaya devam edin.
 
-Kullanımdan kaldırılması hakkında daha fazla bilgi için `writeonly_texture_view`, bkz: [C++ amp'de doku görünümü tasarımına genel bakış](https://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/25/overview-of-the-texture-view-design-in-c-amp.aspx) paralel programlama yerel kod blog içinde.
+Kullanımdan kaldırılması hakkında daha fazla bilgi için `writeonly_texture_view` bkz. yerel kod blogu 'Nda paralel programlamada [C++ amp doku görünümü tasarımına genel bakış](/archive/blogs/nativeconcurrency/overview-of-the-texture-view-design-in-c-amp) .
 
-### <a name="instantiating-texture-view-objects"></a>Doku görünüm nesnelerini başlatma
+### <a name="instantiating-texture-view-objects"></a>Doku görünümü nesnelerini örnekleme
 
-Bildirme bir `texture_view` bildirmek için benzer bir `array_view` ile ilişkili bir **dizi**. Aşağıdaki kod örneği birkaç bildirir `texture` nesneleri ve `texture_view` bunlarla ilişkili nesneleri.
+Bildirim `texture_view` , bir `array_view` **dizi**ile ilişkilendirilmiş bir bildirmek için benzerdir. Aşağıdaki kod örneği, çeşitli `texture` nesneleri ve `texture_view` bunlarla ilişkili nesneleri bildirir.
 
 ```cpp
 #include <amp.h>
@@ -338,20 +338,20 @@ void declareTextureViews()
 }
 ```
 
-Okuma-yazma nasıl bir doku görüntülemek, öğe türü sabit-olmayan olan ve bir bileşen içeren dikkat edin, ancak öğe türü sabit-olmayan olan ancak birden fazla bileşen içeren bir doku görünümü salt yazılır. Const öğesi türlerinin doku görünümleri her zaman salt okunurdur, ancak öğe türü sabit-olmayan olan olursa öğedeki bileşen sayısı okuma-yazma (1 Bileşen) olup olmadığını belirler veya salt yazılır (birden çok bileşen).
+Öğe türü const olmayan ve bir bileşen okuma-yazma olan bir doku görünümünün, ancak öğe türü const olmayan ancak birden fazla componente olan bir doku görünümünün salt yazılır olduğunu fark edebilirsiniz. Const öğe türlerinin doku görünümleri her zaman salt okunurdur, ancak öğe türü const değilse, öğedeki bileşen sayısı, okuma/yazma (1 bileşen) veya salt yazılır (birden çok bileşen) olup olmadığını belirler.
 
-Öğe türü bir `texture_view`—, const-ness ve ayrıca bileşen sayısı — ayrıca görünümün doku örnekleme destekleyip desteklemediğini ve mipmap düzeylerine nasıl erişilebileceğini belirlemede bir rol oynar:
+Öğesinin `texture_view` sabit düzeyi ve ayrıca sahip olduğu bileşen sayısı gibi öğe türü, ayrıca görünümün doku örneklemesi destekleyip desteklemediğini ve mipmap düzeylerine nasıl erişilebileceğini belirlemede bir rol oynar:
 
-|Tür|Bileşenler|Oku|Write|Örnekleme|Mipmap erişimi|
+|Tür|Bileşenler|Okuma|Yazma|Örnekleme|Mipmap erişimi|
 |----------|----------------|----------|-----------|--------------|-------------------|
-|texture_view\<const T, N >|1, 2, 4|Evet|Hayır (1)|Evet|Evet, dizini oluşturulabilir. Aralık, oluşturma sırasında belirlenir.|
-|Texture_view\<T, N >|1.<br /><br /> 2, 4|Evet<br /><br /> Hayır (2)|Evet<br /><br /> Evet|Hayır (1)<br /><br /> Hayır (1)|Evet, bir düzey. Düzey, oluşturma sırasında belirlenir.<br /><br /> Evet, bir düzey. Düzey, oluşturma sırasında belirlenir.|
+|texture_view\<const T, N>|1, 2, 4|Yes|Hayır (1)|Yes|Evet, dizinlenebilir. Aralık, örnekleme sırasında belirlenir.|
+|Texture_view\<T, N>|1<br /><br /> 2, 4|Yes<br /><br /> Hayır (2)|Yes<br /><br /> Yes|Hayır (1)<br /><br /> Hayır (1)|Evet, tek düzey. Düzey, örnekleme sırasında belirlenir.<br /><br /> Evet, tek düzey. Düzey, örnekleme sırasında belirlenir.|
 
-Bu tabloda, salt okunur doku görünümlerinin görünüme yükleyememeyle lisanslarınıza yeni yetenekleri tam destek görebilirsiniz. Yazılabilir doku görünümleri, yalnızca bir adet mipmap düzeyine erişebilirsiniz, sınırlıdır. Okuma-yazma doku görünümleri yazılabilir olanlardan çok daha fazla özelleştirilmiştir, çünkü bunlar doku görünümünün öğe türü yalnızca bir bileşene sahip olması gerekliliğini ekler. Okuma yönelik bir işlem olduğu için örnekleme yazılabilir doku görünümleri için desteklenmediğini unutmayın.
+Bu tablodan, salt okuma dokusu görünümlerinin, görünüme yazamayacak şekilde, Exchange 'deki yeni özellikleri tam olarak desteklediğini görebilirsiniz. Yazılabilir doku görünümleri yalnızca bir mipmap düzeyine erişebilmeleri için sınırlıdır. Okuma-yazma doku görünümleri, yazılabilir olanlardan daha da özelleştirilmiştir, çünkü doku görünümünün öğe türünün yalnızca bir bileşeni olduğu gereksinimi ekler. Bir okuma yönelimli işlem olduğundan, bu örnekleme yazılabilir doku görünümleri için desteklenmediğine dikkat edin.
 
 ### <a name="reading-from-texture-view-objects"></a>Doku görünümü nesnelerinden okuma
 
-Doku görünümleri değere göre yakalanan ise Dokuların başvuru tarafından yakalanması örneklenmemiş doku verilerin bir doku görünümü üzerinden okunması, dokunun kendisinden yalnızca okuma gibi olmasıdır. Aşağıdaki iki kod örneklerinde gösterilmektedir; ilk kullanarak `texture` yalnızca:
+Örnek olmayan doku verilerinin bir doku görünümü aracılığıyla okunması tıpkı dokuların başvuruya göre yakalanması, ancak doku görünümlerinin değere göre yakalanmasının dışında. Aşağıdaki iki kod örneği gösterilmektedir; İlk olarak, `texture` yalnızca kullanarak:
 
 ```cpp
 void write2ComponentTexture() {
@@ -363,7 +363,7 @@ void write2ComponentTexture() {
 }
 ```
 
-Burada da aynı örneği artık kullanıyor hariç `texture_view` sınıfı:
+Aynı örnek, artık sınıfı kullandığından de aynıdır `texture_view` :
 
 ```cpp
 void write2ComponentTexture() {
@@ -377,17 +377,17 @@ void write2ComponentTexture() {
 }
 ```
 
-Doku görünümleri öğeleri, kayan nokta türlerine dayanan dayalı — Örneğin, float, float_2 veya float_4 — ayrıca çeşitli donanım desteği avantajlarından yararlanmak için doku örnekleme kullanarak okuma filtreleme modları ve adresleme modları. C++ AMP, hesaplama senaryolarında en yaygın iki filtreleme modunu destekler; nokta filtreleme (en yakın komşu) ve doğrusal filtreleme (Ağırlıklı ortama) — ve dört adresleme modunu — kaydırılmış, yansıtılan, kenetlenen ve sınır. Adresleme modları hakkında daha fazla bilgi için bkz. [address_mode numaralandırması](reference/concurrency-graphics-namespace-enums.md#address_mode).
+Öğeleri kayan nokta türlerini temel alan doku görünümleri — Örneğin, float, float_2 veya float_4 — çeşitli filtreleme modları ve adresleme modları için donanım desteğinden yararlanmak üzere doku örnekleme kullanılarak da okunabilir. C++ AMP, işlem senaryolarında en yaygın olarak kullanılan iki filtreleme modunu destekler: nokta filtreleme (en yakın komşu) ve doğrusal filtreleme (ağırlıklı ortalama) — ve dört adresleme modu — kaydırılmış, yansıtmalı, clamış ve Border. Adresleme modları hakkında daha fazla bilgi için bkz. [Address_mode numaralandırması](reference/concurrency-graphics-namespace-enums.md#address_mode).
 
-C++ AMP'nin doğrudan desteklediği modlara ek olarak, diğer filtreleme modlarına ve adresleme modlarına temel platform, doğrudan platformun API'leri kullanılarak oluşturulmuş bir doku örnekleyicisini benimsemek için Interop API'leri kullanarak erişebilirsiniz. Örneğin Direct3D anizotropik filtreleme gibi diğer filtreleme modlarını destekler ve bir dokunun her boyut için farklı bir adresleme modu uygulayabilir. Direct3D API'leri kullanılarak anizotropik filtreleme ile koordinatları dikey olarak sarılan, yatay olarak yansıtılan ve örneklenen bir doku örnekleyici oluşturabilir ve kullanarak bu örnekleyici C++ AMP kodunuzda yararlanarak `make_sampler` interop API'sini. Daha fazla bilgi için [C++ amp'de doku örnekleme](https://blogs.msdn.com/b/nativeconcurrency/archive/2013/07/18/texture-sampling-in-c-amp.aspx) paralel programlama yerel kod blog içinde.
+C++ AMP doğrudan desteklediği modlara ek olarak, doğrudan platform API 'Leri kullanılarak oluşturulan bir doku örnekleyiciyi benimsemek için birlikte çalışma API 'Lerini kullanarak temel platformun diğer filtreleme modlarına ve adresleme modlarına erişebilirsiniz. Örneğin Direct3D, anısotropıc filtresi gibi diğer filtreleme modlarını destekler ve her bir dokunun boyutuna farklı bir adresleme modu uygulayabilir. Koordinatları dikey olarak sarılanmış, yatay olarak yansıtılmış ve Direct3D API 'Leri kullanılarak anısotropıc filtrelemesinde örneklendiği bir doku örnekleyici oluşturabilirsiniz ve ardından birlikte çalışma API 'sini kullanarak C++ AMP kodunuzda örnekleyiciyi kullanın `make_sampler` . Daha fazla bilgi için yerel kod blogundan paralel programlamada [C++ amp Içindeki doku örneklemesi](/archive/blogs/nativeconcurrency/texture-sampling-in-c-amp) ' ne bakın.
 
-Doku görünümleri ayrıca Mipmap okumayı da destekler. Salt okunur doku görünümlerinin örneklemede belirlenen bir dizi Orta-düzeylerini dinamik olarak örneklenebilir ve çünkü 1, 2 ya da 4 bileşenleri olan öğeler desteklenir (bir const öğe türüne sahip olanlar) en fazla esnekliği sunar. Bir bileşene sahip öğeleri olan okuma-yazma doku görünümleri ayrıca Mipmap, ancak yalnızca örneklemede belirlenen bir düzeyi destekler. Daha fazla bilgi için [mipmap'lar ile doku](https://blogs.msdn.com/b/nativeconcurrency/archive/2013/08/22/texture-with-mipmaps.aspx) paralel programlama yerel kod blog içinde.
+Doku görünümleri Ayrıca, MIN haritaları okumayı destekler. Salt yazılır doku görünümleri (const öğe türüne sahip olanlar), dinamik olarak örneklenebilir ve 1, 2 veya 4 bileşeni olan öğeler desteklendiğinden, en çok esnekliği sunar. Tek bir bileşeni olan öğeleri olan okuma-yazma doku görünümleri, yalnızca örnek oluşturma sırasında belirlenen bir düzeyde olan çok boyutlu haritaları destekler. Daha fazla bilgi için bkz. yerel kod blogundan paralel programlamada, mı [haritaları Ile doku](/archive/blogs/nativeconcurrency/texture-with-mipmaps) .
 
-### <a name="writing-to-texture-view-objects"></a>Doku görünüm nesnelerine yazma
+### <a name="writing-to-texture-view-objects"></a>Doku görünümü nesnelerine yazma
 
-Kullanım [texture_view::get metodu](reference/texture-view-class.md#get) temel alınan yazılacak `texture` aracılığıyla `texture_view` nesne. Bir doku görünümü salt okunur, salt okunur veya salt yazılır olabilir. Bir doku görünümünün yazılabilir olması sabit olmayan bir öğe türüne sahip olmalıdır; bir doku görünümü okunabilir ve yazılabilir olması öğe türünün ayrıca yalnızca bir bileşene sahip olmalıdır. Aksi halde doku görünümü salt okunurdur. Bir doku görünümü üzerinden bir anda yalnızca tek mipmap düzeyine erişebilirsiniz bir doku yapabilir ve görünümün örneği oluşturulduğunda düzey belirtilir.
+Nesne aracılığıyla temeldeki öğesine yazmak için [texture_view:: Get metodunu](reference/texture-view-class.md#get) kullanın `texture` `texture_view` . Doku görünümü salt okunurdur, salt okunurdur veya salt yazılır olabilir. Bir doku görünümünün yazılabilir olması için, const olmayan bir öğe türüne sahip olmalıdır; bir doku görünümünün okunabilir ve yazılabilir olması için, öğe türünün de yalnızca bir bileşeni olmalıdır. Aksi halde doku görünümü salt okunurdur. Bir dokusunun tek seferde bir mipmap düzeyine bir doku görünümü ile erişebilirsiniz ve görünüm örneği oluşturulduğunda düzey belirtilir.
 
-Bu örnek, 4 mipmap düzeyi olan bir dokunun ikinci en ayrıntılı mipmap düzeyine yazma işlemi gösterilmektedir. En ayrıntılı mipmap düzeyi 0 düzeyidir.
+Bu örnek, 4 mipmap düzeyine sahip bir dokunun ikinci en ayrıntılı mipmap düzeyine nasıl yazılacağını gösterir. En ayrıntılı mipmap düzeyi düzey 0 ' dır.
 
 ```cpp
 // Create a texture that has 4 mipmap levels : 16x16, 8x8, 4x4, 2x2
@@ -404,27 +404,27 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 ## <a name="interoperability"></a>Birlikte Çalışabilirlik
 
-C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `texture<T,1>` ve [ıd3d11texture1d arabirimi](https://go.microsoft.com/fwlink/p/?linkId=248503), arasında `texture<T,2>` ve [ıd3d11texture2d arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255317), arasında `texture<T,3>`ve [ıd3d11texture3d arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255377). [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir `texture` nesne ve döndürür bir `IUnknown` arabirimi. [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirimi ve `accelerator_view` nesne ve döndürür bir `texture` nesne.
+C++ AMP çalışma zamanı `texture<T,1>` Ile [ID3D11Texture1D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=248503)arasında birlikte çalışabilirliği destekler, `texture<T,2>` ile [ID3D11Texture2D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255317)arasında ve ile `texture<T,3>` [ID3D11Texture3D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255377)arasında. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir nesnesi alır `texture` ve bir arabirim döndürür `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirim ve bir nesnesi alır `accelerator_view` ve bir nesne döndürür `texture` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [double_2 Sınıfı](../../parallel/amp/reference/double-2-class.md)<br/>
-[double_3 Sınıfı](../../parallel/amp/reference/double-3-class.md)<br/>
-[double_4 Sınıfı](../../parallel/amp/reference/double-4-class.md)<br/>
-[float_2 Sınıfı](../../parallel/amp/reference/float-2-class.md)<br/>
-[float_3 Sınıfı](../../parallel/amp/reference/float-3-class.md)<br/>
-[float_4 Sınıfı](../../parallel/amp/reference/float-4-class.md)<br/>
-[int_2 Sınıfı](../../parallel/amp/reference/int-2-class.md)<br/>
+[double_3 sınıfı](../../parallel/amp/reference/double-3-class.md)<br/>
+[double_4 sınıfı](../../parallel/amp/reference/double-4-class.md)<br/>
+[float_2 sınıfı](../../parallel/amp/reference/float-2-class.md)<br/>
+[float_3 sınıfı](../../parallel/amp/reference/float-3-class.md)<br/>
+[float_4 sınıfı](../../parallel/amp/reference/float-4-class.md)<br/>
+[int_2 sınıfı](../../parallel/amp/reference/int-2-class.md)<br/>
 [int_3 Sınıfı](../../parallel/amp/reference/int-3-class.md)<br/>
-[int_4 Sınıfı](../../parallel/amp/reference/int-4-class.md)<br/>
-[norm_2 Sınıfı](../../parallel/amp/reference/norm-2-class.md)<br/>
-[norm_3 Sınıfı](../../parallel/amp/reference/norm-3-class.md)<br/>
-[norm_4 Sınıfı](../../parallel/amp/reference/norm-4-class.md)<br/>
+[int_4 sınıfı](../../parallel/amp/reference/int-4-class.md)<br/>
+[norm_2 sınıfı](../../parallel/amp/reference/norm-2-class.md)<br/>
+[norm_3 sınıfı](../../parallel/amp/reference/norm-3-class.md)<br/>
+[norm_4 sınıfı](../../parallel/amp/reference/norm-4-class.md)<br/>
 [short_vector Yapısı](../../parallel/amp/reference/short-vector-structure.md)<br/>
 [short_vector_traits Yapısı](../../parallel/amp/reference/short-vector-traits-structure.md)<br/>
-[uint_2 Sınıfı](../../parallel/amp/reference/uint-2-class.md)<br/>
-[uint_3 Sınıfı](../../parallel/amp/reference/uint-3-class.md)<br/>
-[uint_4 Sınıfı](../../parallel/amp/reference/uint-4-class.md)<br/>
-[unorm_2 Sınıfı](../../parallel/amp/reference/unorm-2-class.md)<br/>
-[unorm_3 Sınıfı](../../parallel/amp/reference/unorm-3-class.md)<br/>
+[uint_2 sınıfı](../../parallel/amp/reference/uint-2-class.md)<br/>
+[uint_3 sınıfı](../../parallel/amp/reference/uint-3-class.md)<br/>
+[uint_4 sınıfı](../../parallel/amp/reference/uint-4-class.md)<br/>
+[unorm_2 sınıfı](../../parallel/amp/reference/unorm-2-class.md)<br/>
+[unorm_3 sınıfı](../../parallel/amp/reference/unorm-3-class.md)<br/>
 [unorm_4 Sınıfı](../../parallel/amp/reference/unorm-4-class.md)

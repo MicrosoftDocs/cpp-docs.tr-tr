@@ -1,19 +1,19 @@
 ---
-title: Önemli hata C1083
+title: Önemli Hata C1083
 ms.date: 09/01/2017
 f1_keywords:
 - C1083
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-ms.openlocfilehash: b982c3adf59789f6c48e7e0f54ed4e71539692ad
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 87f3440dc71246c3a925ed3d64f8ccf1b2c28cd1
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630780"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404287"
 ---
-# <a name="fatal-error-c1083"></a>Önemli hata C1083
+# <a name="fatal-error-c1083"></a>Önemli Hata C1083
 
 > Dosya *türü* açılamıyor: '*Dosya*': *ileti*
 
@@ -25,17 +25,17 @@ Dosyanın adı yanlış yazılmış olabilir. Örneğin,
 
 `#include <algorithm.h>`
 
-istediğiniz dosyayı bulamayabilirsiniz. Çoğu C++ standart kitaplık üst bilgi dosyası. h dosya adı uzantısına sahip değildir. Algoritma > üst bilgisi bu `#include` yönerge tarafından bulunamadı. \< Bu sorunu gidermek için, aşağıdaki örnekte olduğu gibi doğru dosya adının girildiğinden emin olun:
+istediğiniz dosyayı bulamayabilirsiniz. Çoğu C++ standart kitaplığı üstbilgi dosyası. h dosya adı uzantısına sahip değildir. \<algorithm>Üst bilgi bu `#include` yönergeyle bulunamamıştır. Bu sorunu gidermek için, aşağıdaki örnekte olduğu gibi doğru dosya adının girildiğinden emin olun:
 
 `#include <algorithm>`
 
-Belirli C Çalışma Zamanı Kitaplığı üstbilgileri , standart ekleme dizininin alt dizininde yer alır. Örneğin, sys/Types. h 'yi dahil etmek için, `#include` yönergesine sys alt dizin adını dahil etmeniz gerekir:
+Belirli C Çalışma Zamanı Kitaplığı üstbilgileri , standart ekleme dizininin alt dizininde yer alır. Örneğin, sys/Types. h 'yi dahil etmek için, yönergesine sys alt dizin adını dahil etmeniz gerekir `#include` :
 
 `#include <sys/types.h>`
 
 ## <a name="the-file-is-not-included-in-the-include-search-path"></a>Dosya, içerme arama yoluna dahil değildir
 
-Derleyici, `#include` veya `#import` yönergesi tarafından belirtilen arama kurallarını kullanarak dosyayı bulamaz. Örneğin, bir üst bilgi dosyası adı tırnak işaretleri içine alınır
+Derleyici, veya yönergesi tarafından belirtilen arama kurallarını kullanarak dosyayı bulamaz `#include` `#import` . Örneğin, bir üst bilgi dosyası adı tırnak işaretleri içine alınır
 
 `#include "myincludefile.h"`
 
@@ -45,7 +45,7 @@ Ad açılı parantezlerle çevrelenise,
 
 `#include <stdio.h>`
 
-Derleyici, yapı ortamı, **/ı** derleyici seçeneği, **/x** derleyici seçeneği ve **Include** ortam değişkeni tarafından tanımlanan bir arama yolunu izler. Dosya bulmak için kullanılan arama sırasına ilişkin belirli ayrıntılar dahil olmak üzere daha fazla bilgi için, bkz. [#include yönergesi (CC++/)](../../preprocessor/hash-include-directive-c-cpp.md) ve [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
+Derleyici, yapı ortamı, **/ı** derleyici seçeneği, **/x** derleyici seçeneği ve **Include** ortam değişkeni tarafından tanımlanan bir arama yolunu izler. Dosya bulmak için kullanılan arama sırasına ilişkin belirli ayrıntılar dahil olmak üzere daha fazla bilgi için, bkz. [#include yönergesi (C/C++)](../../preprocessor/hash-include-directive-c-cpp.md) ve [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
 
 İçerme dosyalarınız, kaynak dizininizle ilişkili başka bir dizinde yer alıyorsa ve dahil etme yönergelerinden göreli bir yol kullanıyorsanız, açılı ayraçlar yerine çift tırnak işareti kullanmanız gerekir. Örneğin, MyHeader. h başlık dosyanız, üst bilgiler adlı proje kaynaklarınızın alt dizinindeyse, bu örnek dosyayı bulamaz ve C1083 neden olur:
 
@@ -55,19 +55,19 @@ Ancak bu örnek şu şekilde geçerlidir:
 
 `#include "headers\myheader.h"`
 
-Göreli yollar Ayrıca, ekleme arama yolundaki dizinlerle birlikte kullanılabilir. **Include** ortam değişkenine veya Visual Studio 'Daki **içerme dizinleri** yolunuza bir dizin eklerseniz, yolun bir parçasını dahil etme yönergelerine de eklemeyin. Örneğin, üstbilgileriniz \yol\example\headers\myheader.h dizininde bulunuyorsa ve Visual Studio 'daki **Include Dizin** yolunuza \yol\example\headers\ eklerseniz, ancak yönerggeniz `#include` dosyayı şu şekilde ifade eder:
+Göreli yollar Ayrıca, ekleme arama yolundaki dizinlerle birlikte kullanılabilir. **Include** ortam değişkenine veya Visual Studio 'Daki **içerme dizinleri** yolunuza bir dizin eklerseniz, yolun bir parçasını dahil etme yönergelerine de eklemeyin. Örneğin, üstbilgileriniz \yol\example\headers\myheader.h dizininde bulunuyorsa ve Visual Studio 'daki **Include Dizin** yolunuza \yol\example\headers\ eklerseniz, ancak `#include` yönerggeniz dosyayı şu şekilde ifade eder:
 
 `#include <headers\myheader.h>`
 
-Dosya bulunamadı. Ekleme arama yolunda belirtilen dizine göre doğru yolu kullanın. Bu örnekte, arama yolunu ekleme yolunu \yol\Örnek\, olarak değiştirebilir veya `#include` yönergesinden üstbilgiler \ yol kesimini kaldırabilirsiniz.
+Dosya bulunamadı. Ekleme arama yolunda belirtilen dizine göre doğru yolu kullanın. Bu örnekte, arama yolunu ekleme yolunu \yol\Örnek olarak değiştirebilir \, veya yönergesinden üstbilgiler \ yol kesimini kaldırabilirsiniz `#include` .
 
-## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve Vcpkg
+## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve vcpkg
 
-Derlemeniz kapsamında bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, kitaplığı yüklemek ve oluşturmak için [Vcpkg](../../vcpkg.md), Visual C++ Package Manager 'ı kullanmayı düşünün. Vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar. Daha fazla bilgi için ilgili [görsel C++ blog](https://blogs.msdn.microsoft.com/vcblog/2016/09/19/vcpkg-a-tool-to-acquire-and-build-c-open-source-libraries-on-windows/) gönderisine bakın.
+Derlemeniz kapsamında bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, kitaplığı yüklemek ve derlemek için [vcpkg](../../vcpkg.md)'Yi bir C++ paket yöneticisi olarak kullanmayı düşünün. vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar.
 
 ## <a name="the-file-is-in-your-project-but-not-the-include-search-path"></a>Dosya projenizde, ancak içerme arama yolu değil
 
-Üst bilgi dosyaları bir projenin parçası olarak **Çözüm Gezgini** listelendiğinde bile, dosyalar yalnızca derleyici tarafından kaynak dosyadaki bir `#include` veya `#import` yönergeyle başvurulduğu zaman ve ekleme arama yolunda yer alır. Farklı türde yapılar farklı arama yolları kullanabilir. **/X** derleyici seçeneği, dizinleri içerme arama yolundan dışlamak için kullanılabilir. Bu, farklı yapıların aynı ada sahip farklı ekleme dosyalarını kullanmasına, fakat farklı dizinlerde tutulmasına olanak tanır. Bu, önişlemci komutlarını kullanarak koşullu derlemeye alternatiftir. **/X** derleyici seçeneği hakkında daha fazla bilgi için bkz. [/X (Standart içerme yollarını yoksay)](../../build/reference/x-ignore-standard-include-paths.md).
+Üst bilgi dosyaları bir projenin parçası olarak **Çözüm Gezgini** listelendiğinde bile, dosyalar yalnızca derleyici tarafından `#include` `#import` kaynak dosyadaki bir veya yönergeyle başvurulduğu zaman ve ekleme arama yolunda yer alır. Farklı türde yapılar farklı arama yolları kullanabilir. **/X** derleyici seçeneği, dizinleri içerme arama yolundan dışlamak için kullanılabilir. Bu, farklı yapıların aynı ada sahip farklı ekleme dosyalarını kullanmasına, fakat farklı dizinlerde tutulmasına olanak tanır. Bu, önişlemci komutlarını kullanarak koşullu derlemeye alternatiftir. **/X** derleyici seçeneği hakkında daha fazla bilgi için bkz. [/X (Standart içerme yollarını yoksay)](../../build/reference/x-ignore-standard-include-paths.md).
 
 Bu sorunu gidermek için, eklenen veya içeri aktarılan dosyayı aramak üzere derleyici tarafından kullanılan yolu düzeltin. Yeni bir proje varsayılan içerme arama yollarını kullanır. Projeniz için bir dizin eklemek üzere ekleme arama yolunu değiştirmeniz gerekebilir. Komut satırında derlerken, dosyanın yolunu belirtmek için yolu **Include** ortam değişkenine veya **/i** derleyici seçeneğine ekleyin.
 
@@ -75,7 +75,7 @@ Visual Studio 'da içerme dizin yolunu ayarlamak için projenin **Özellik sayfa
 
 ## <a name="the-command-line-include-or-lib-environment-is-not-set"></a>Komut satırı IÇERME veya LıB ortamı ayarlanmadı
 
-Derleyici komut satırı üzerinde çağrıldığında, ortam değişkenleri genellikle arama yollarını belirtmek için kullanılır. **Include** veya **LIB** ortam değişkeni tarafından tanımlanan arama yolu doğru ayarlanmamışsa, bir C1083 hatası oluşturulabilir. Komut satırı yapıları için temel ortamı ayarlamak üzere bir geliştirici komut istemi kısayolunun kullanılması önemle önerilir. Daha fazla bilgi için, bkz. [komutC++ satırında C/Build](../../build/building-on-the-command-line.md). Ortam değişkenlerinin nasıl kullanılacağı hakkında daha fazla bilgi için bkz [. nasıl yapılır: Bir derlemede](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)ortam değişkenlerini kullanın.
+Derleyici komut satırı üzerinde çağrıldığında, ortam değişkenleri genellikle arama yollarını belirtmek için kullanılır. **Include** veya **LIB** ortam değişkeni tarafından tanımlanan arama yolu doğru ayarlanmamışsa, bir C1083 hatası oluşturulabilir. Komut satırı yapıları için temel ortamı ayarlamak üzere bir geliştirici komut istemi kısayolunun kullanılması önemle önerilir. Daha fazla bilgi için, bkz. [komut satırında C/C++ oluşturma](../../build/building-on-the-command-line.md). Ortam değişkenlerinin nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [nasıl yapılır: bir derlemede ortam değişkenlerini kullanma](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
 
 ## <a name="the-file-may-be-locked-or-in-use"></a>Dosya kilitli veya kullanımda olabilir
 
@@ -83,7 +83,7 @@ Dosyayı düzenlemek veya dosyaya erişmek için başka bir program kullanıyors
 
 ## <a name="the-wrong-version-of-a-file-name-is-included"></a>Dosya adının yanlış versiyonu eklendi
 
-C1083 hatası, dosyanın yanlış versiyonunun eklendiğini de belirtebilir. Örneğin, bir derleme, bu derleme için tasarlanmamış bir üst bilgi dosyası için bir `#include` yönergesine sahip bir dosyanın yanlış sürümünü içerebilir. Örneğin, belirli dosyalar yalnızca x86 yapılarına uygulanabilir veya derlemelerde hata ayıklaması yapılabilir. Üstbilgi dosyası bulunamazsa derleyici C1083 hatasını oluşturur. Bu sorunu gidermek için doğru dosyayı kullanın ve yapıya üstbilgi dosyasını veya dizinini eklemeyin.
+C1083 hatası, dosyanın yanlış versiyonunun eklendiğini de belirtebilir. Örneğin, bir derleme, `#include` Bu derleme için tasarlanmamış bir üst bilgi dosyası için bir yönergesine sahip bir dosyanın yanlış sürümünü içerebilir. Örneğin, belirli dosyalar yalnızca x86 yapılarına uygulanabilir veya derlemelerde hata ayıklaması yapılabilir. Üstbilgi dosyası bulunamazsa derleyici C1083 hatasını oluşturur. Bu sorunu gidermek için doğru dosyayı kullanın ve yapıya üstbilgi dosyasını veya dizinini eklemeyin.
 
 ## <a name="the-precompiled-headers-are-not-yet-precompiled"></a>Önceden derlenmiş üstbilgiler henüz önceden derlenmiş değil
 
@@ -116,8 +116,8 @@ Aşağıdaki örnek, üstbilgi dosyası `"test.h"` kaynak dizinde yoksa veya iç
 #include "stdio.h"  // OK
 ```
 
-IDE 'de veya komut satırında C/C++ projeleri oluşturma hakkında bilgi edinmek ve ortam değişkenlerini ayarlama hakkında bilgi için bkz. [Projeler ve derleme sistemleri](../../build/projects-and-build-systems-cpp.md).
+IDE 'de veya komut satırında C/C++ projelerinin nasıl oluşturulacağı hakkında bilgi edinmek ve ortam değişkenlerini ayarlama hakkında bilgi için bkz. [Projeler ve derleme sistemleri](../../build/projects-and-build-systems-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [MSBuild Özellikleri](/visualstudio/msbuild/msbuild-properties)
+- [MSBuild özellikleri](/visualstudio/msbuild/msbuild-properties)

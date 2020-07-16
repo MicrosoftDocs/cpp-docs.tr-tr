@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 3265bffb393eeff1d8a04a41357e2b138aa0ebf7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c9825cdcb5cb0963a4e0d3acdeb36dfee54b70fc
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615568"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405032"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 
@@ -68,14 +68,12 @@ MFC, Internet programlamayı destekleyen sınıflar sağlar. ActiveX denetimleri
 
 - [DHTML Denetimleri İçin ATL Desteği](../atl/atl-support-for-dhtml-controls.md)
 
-## <a name="web-sites-for-more-information"></a><a name="_core_web_sites_for_more_information"></a>Daha fazla bilgi için Web siteleri
+## <a name="websites-for-more-information"></a><a name="_core_web_sites_for_more_information"></a>Daha fazla bilgi için Web siteleri
 
-Microsoft Internet teknolojisi hakkında daha fazla bilgi için bkz. [Microsoft Developer Network (MSDN)](https://go.microsoft.com/fwlink/p/?linkid=56322) Web sitesi. (Bağlantılar bildirimde bulunmaksızın değişebilir.)
-
-Geliştiriciler için bu Web sitesi, Microsoft geliştirme araçları ve teknolojilerini kullanma hakkında bilgi ve en son ve gelecek konferanslara yönelik popüler yazıları içerir. Bu sayfadan, .NET ve XML Geliştirici merkezleri dahil olmak üzere birçok ilgili geliştirici sitesine atlayabilirsiniz. Beta SDK 'larını ve örnekleri de indirebilirsiniz.
+Microsoft Internet teknolojisi hakkında daha fazla bilgi için bkz. [Microsoft docs](https://docs.microsoft.com/).
 
 [World Wide Web Konsorsiyumu (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) , HTML, http, CGI ve diğer World Wide Web teknolojileri için belirtimleri yayımlar.
 
-## <a name="more-internet-help"></a><a name="_core_more_internet_help"></a>Daha fazla Internet yardımı
+## <a name="more-internet-help"></a><a name="_core_more_internet_help"></a>Daha fazla internet yardımı
 
 Windows SDK OLE bölümü OLE programlama hakkında ek bilgiler içerir. Bu bilgiler, MFC sınıfları yerine doğrudan Win32 WinInet işlevlerini kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca Internet teknolojileriyle ilgili genel bilgiler içerir.

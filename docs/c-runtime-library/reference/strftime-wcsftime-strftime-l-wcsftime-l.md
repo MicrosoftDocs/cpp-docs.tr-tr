@@ -42,18 +42,18 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-ms.openlocfilehash: 9d262371369681cbbd5975a733950d6c4150fd88
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 57fdd61a966cbeab07c0aeafdad0f6e6fb97cca1
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920017"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404326"
 ---
 # <a name="strftime-wcsftime-_strftime_l-_wcsftime_l"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 
 Bir zaman dizesini biçimlendirin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 size_t strftime(
@@ -98,7 +98,7 @@ Biçim denetimi dizesi.
 *timeptr*<br/>
 **TM** veri yapısı.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -123,7 +123,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsftime**|**strftime**|**strftime**|**wcsftime**|
 
-*Biçim* bağımsız değişkeni bir veya daha fazla kodlardan oluşur; **printf**içinde olduğu gibi, biçimlendirme kodlarının öncesinde bir yüzde işareti (**%**) bulunur. İle **%** başlamayan karakterler, *strDest*öğesine değiştirilmeden kopyalanır. Geçerli yerel ayarın **LC_TIME** kategorisi, **strftime**çıkış biçimlendirmesini etkiler. ( **LC_TIME**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md).) **Strftime** ve **wcsftime** işlevleri şu anda ayarlanmış yerel ayarı kullanır. Bu işlevlerin **_strftime_l** ve **_wcsftime_l** sürümleri, yerel ayarı bir parametre olarak ele aldıkları ve şu anda ayarlanmış yerel ayar yerine bunu kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+*Biçim* bağımsız değişkeni bir veya daha fazla kodlardan oluşur; **printf**içinde olduğu gibi, biçimlendirme kodlarının öncesinde bir yüzde işareti () bulunur **%** . İle başlamayan karakterler **%** , *strDest*öğesine değiştirilmeden kopyalanır. Geçerli yerel ayarın **LC_TIME** kategorisi, **strftime**çıkış biçimlendirmesini etkiler. ( **LC_TIME**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md).) **Strftime** ve **wcsftime** işlevleri şu anda ayarlanmış yerel ayarı kullanır. Bu işlevlerin **_strftime_l** ve **_wcsftime_l** sürümleri, yerel ayarı bir parametre olarak ele aldıkları ve şu anda ayarlanmış yerel ayar yerine bunu kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 **Strftime** işlevleri şu biçimlendirme kodlarını destekler:
 
@@ -179,14 +179,17 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 **% V**, **% g**ve **% g**tarafından üretilen ISO 8601 haftası ve hafta tabanlı yıl, Pazartesi günü başlayan, hafta 1 yılı, yılın en az dört günü içeren ilk hafta olan 4 Ocak 'tan oluşan hafta. Yılın ilk Pazartesi değeri 2, 3 veya 4 ise, önceki günler önceki yılın son haftasının bir parçasıdır. Bu günler için, **% V** 53 ile değiştirilmiştir ve hem **% g** hem de **% g** , önceki yılın rakamıyla değiştirilmiştir.
 
+> [!NOTE]
+> `strftime`Öğesinden bir işaretçiye döndürülen işlevlerden birini kullanırken, `tm` `gmtime` ve belirticileri ile yazdırılan değerler `%Z` doğru olmayacaktır `%z` . Bunun nedeni, `tm` C standardı tarafından belirtilen yapının saat dilimi adı ve kaydırmasına ilişkin bilgileri içermez. Bunun yerine, saat dilimi bilgileri genel değişkenler [ `_timezone` ve ile `_dstbias` ](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)doldurulur.
+
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strftime**|\<Time. h>|
-|**wcsftime**|\<Time. h> veya \<wchar. h>|
-|**_strftime_l**|\<Time. h>|
-|**_wcsftime_l**|\<Time. h> veya \<wchar. h>|
+|**strftime**|\<time.h>|
+|**wcsftime**|\<time.h> veya \<wchar.h>|
+|**_strftime_l**|\<time.h>|
+|**_wcsftime_l**|\<time.h> veya \<wchar.h>|
 
 **_Strftime_l** ve **_wcsftime_l** işlevleri Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -196,10 +199,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ayarlar](../../c-runtime-library/locale.md) <br/>
-[Zaman Yönetimi](../../c-runtime-library/time-management.md) <br/>
+[Yerel Ayar](../../c-runtime-library/locale.md) <br/>
+[Zaman yönetimi](../../c-runtime-library/time-management.md) <br/>
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md) <br/>
 [localeconv](localeconv.md) <br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md) <br/>
-[strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md) <br/>
+[strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md) <br/>
 [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>

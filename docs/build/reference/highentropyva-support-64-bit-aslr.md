@@ -2,12 +2,12 @@
 title: /HIGHENTROPYVA (64 Bit ASLR Destekle)
 ms.date: 06/12/2018
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
-ms.openlocfilehash: 8f8601d89e8456461aac3d91f9fd2cfda216d7f5
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: 929d6aa71010c1f303bf7a1ce64109a01b8792e4
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373846"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86404131"
 ---
 # <a name="highentropyva-support-64-bit-aslr"></a>/HIGHENTROPYVA (64 Bit ASLR Destekle)
 
@@ -15,15 +15,15 @@ Yürütülebilir resmin yüksek entrolebilir 64 bit adres alanı düzeni rastgel
 
 ## <a name="syntax"></a>Syntax
 
-> **/highentropyva**[**: No**]
+> **`/HIGHENTROPYVA`**[**`:NO`**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Highentropyva** , ASLR 'in tüm 64-bit adres alanını kullanıp kullanamayacağını göstermek için *yürütülebilir bir görüntünün*, bir. dll dosyasının veya. exe dosyasının üst bilgisini değiştirir. Bu seçenek, bir yürütülebilir dosya ve bağımlı olduğu tüm modüller üzerinde ayarlandığında, 64 bitlik ASLR destekleyen bir işletim sistemi, bir 64 bit sanal adres alanında rastgele adresler kullanarak, yükleme zamanında yürütülebilir görüntünün segmentlerini yeniden temellendirebilirler. Bu büyük adres alanı, bir saldırganın belirli bir bellek bölgesinin konumunu tahmin etmesini zorlaştırır.
+**`/HIGHENTROPYVA`***executable image* *`.dll`* *`.exe`* ASLR 'in tüm 64-bit adres alanını kullanıp kullanamayacağını göstermek için yürütülebilir bir görüntü dosyasının üst bilgisini (örneğin, bir veya dosya) değiştirir.  Bir etkiye sahip olmak için, hem çalıştırılabilir hem de bağımlı olduğu tüm modüller üzerinde seçeneğini ayarlayın. Ardından 64-bit ASLR destekleyen bir işletim sistemi, 64 bit rastgele sanal adresler kullanarak yürütülebilir görüntünün segmentlerini yükleme zamanında yeniden temellendirebilirler. Bu büyük adres alanı, bir saldırganın belirli bir bellek bölgesinin konumunu tahmin etmesini zorlaştırır.
 
-Varsayılan olarak, **/highentropyva** , 64 bitlik yürütülebilir görüntüler için etkinleştirilmiştir. Bu seçenek, 64 bit görüntüler için varsayılan olarak da etkinleştirilen [/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)gerektirir. **/Highentropyva** , bağlayıcının seçeneği yoksaydığı 32 bitlik yürütülebilir görüntüler için geçerli değildir. Bu seçeneği açıkça devre dışı bırakmak için **/highentropyva: No**komutunu kullanın.
+Varsayılan olarak, **`/HIGHENTROPYVA`** 64 bitlik yürütülebilir görüntüler için etkinleştirilmiştir. Bu seçenek [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) , 64-bit görüntüler için varsayılan olarak da etkinleştirilen bir gerektirir. **`/HIGHENTROPYVA`**, bağlayıcının seçeneği yoksaydığı 32 bitlik yürütülebilir görüntüler için geçerli değildir. Bu seçeneği açıkça devre dışı bırakmak için kullanın **`/HIGHENTROPYVA:NO`** .
 
-**/Highentropyva** 'nın yükleme zamanında bir etkisi olması için [/DynamicBase](dynamicbase-use-address-space-layout-randomization.md) de etkinleştirilmelidir. **/DynamicBase** varsayılan olarak etkindir ve Windows Vista ve sonraki IŞLETIM sistemlerinde ASLR etkinleştirmesi için gereklidir. Windows 'un önceki sürümleri bu bayrağı yoksayar.
+**`/HIGHENTROPYVA`** Yükleme zamanında bir etkiye sahip olmak için, ' nin [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md) de etkinleştirilmesi gerekir. **`/DYNAMICBASE`** Varsayılan olarak etkindir ve Windows Vista ve sonraki işletim sistemlerinde ASLR etkinleştirmesi için gereklidir. Windows 'un önceki sürümleri bu bayrağı yoksayar.
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio 'da bu bağlayıcı seçeneğini ayarlamak için
 
@@ -37,6 +37,6 @@ Varsayılan olarak, **/highentropyva** , 64 bitlik yürütülebilir görüntüle
 
 - [MSVC bağlayıcı başvurusu](linking.md)
 - [MSVC bağlayıcı seçenekleri](linker-options.md)
-- [/DYNAMICBASE](dynamicbase-use-address-space-layout-randomization.md)
-- [/LARGEADDRESSAWARE](largeaddressaware-handle-large-addresses.md)
+- [`/DYNAMICBASE`](dynamicbase-use-address-space-layout-randomization.md)
+- [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md)
 - [Windows ISV yazılım güvenliği savunmaları](https://docs.microsoft.com/previous-versions/bb430720(v=msdn.10))

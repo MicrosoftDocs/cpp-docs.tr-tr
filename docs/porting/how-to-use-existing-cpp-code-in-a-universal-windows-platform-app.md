@@ -2,36 +2,36 @@
 title: 'Nasıl yapılır: Mevcut C++ Kodunu Evrensel Windows Platformu Uygulamasında Kullanma'
 ms.date: 04/08/2019
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: b1351a1c7858b00cffc454fa66831b3995aea804
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 511bf07950cfb50f67a2027b9051c3efd7cc3b45
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366423"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405058"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ Kodunu Evrensel Windows Platformu Uygulamasında Kullanma
 
-Masaüstü programınızı Evrensel Windows Platformu (UWP) ortamında çalıştırmanın belki de en kolay yolu Desktop Bridge teknolojilerini kullanmaktır. Bunlar arasında, mevcut uygulamanızı kod değişikliği gerektirmeden uwp uygulaması olarak paketleyecek olan Masaüstü Uygulama Dönüştürücüsü de yer alıyor. Daha fazla bilgi için [Desktop Bridge'e](/windows/uwp/porting/desktop-to-uwp-root)bakın.
+Masaüstü programınızı Evrensel Windows Platformu (UWP) ortamında çalışan bir şekilde almanın en kolay yolu masaüstü Köprüsü teknolojilerini kullanmaktır. Bunlar, mevcut uygulamanızı kod değişikliği gerekmeden UWP uygulaması olarak paketlenecek masaüstü uygulaması dönüştürücüsünü içerir. Daha fazla bilgi için bkz. [Masaüstü Köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
-Bu konunun geri kalanı, C++ kitaplıklarını (DL'ler ve statik kitaplıklar) Evrensel Windows Platformu'na nasıl bağlantı kurup kurabilirsiniz. Bunu, temel C++ mantığınızın birden çok UWP uygulamasıyla kullanılabilmesi için yapmak isteyebilirsiniz.
+Bu konunun geri kalanında, C++ kitaplıklarının (dll 'Ler ve statik kitaplıklar) Evrensel Windows Platformu bağlantı noktası oluşturma konusu açıklanmaktadır. Çekirdek C++ mantığınızın birden çok UWP uygulamalarıyla kullanılabilmesi için bunu yapmak isteyebilirsiniz.
 
-UWP Uygulamaları korumalı bir ortamda çalışır ve sonuç olarak platformun güvenliğini tehlikeye atabilecek birçok Win32, COM ve CRT API çağrısına izin verilmez. Derleyici bu tür çağrıları algılayabilir ve `/ZW` seçenek kullanılırsa bir hata oluşturabilir. Uygulamanızdaki Uygulama Sertifika Kiti'ni, yasak API'leri çağıran kodları algılamak için kullanabilirsiniz. Daha fazla bilgi için [Windows Uygulama Sertifika Kiti'ne](/windows/uwp/debug-test-perf/windows-app-certification-kit)bakın.
+UWP uygulamaları korumalı bir ortamda çalışır ve sonuç olarak, platformun güvenliğine zarar verebilecek çok sayıda Win32, COM ve CRT API çağrısı yapılmasına izin verilmez. Derleyici bu tür çağrıları algılayabilir ve seçenek kullanılırsa bir hata oluşturur `/ZW` . Yasak API 'Leri çağıran kodu algılamak için uygulamanızdaki uygulama sertifikasyon kitini kullanabilirsiniz. Daha fazla bilgi için bkz. [Windows uygulama Sertifikalama seti](/windows/uwp/debug-test-perf/windows-app-certification-kit).
 
-Kitaplık için kaynak kodu varsa, yasak API çağrılarını ortadan kaldırabilirsiniz. İzin verilen veya yasaklanmış API'lerin bir listesini içeren ayrıntılar için, [Evrensel Windows Platformu uygulamalarında desteklenmeyen](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)UWP uygulamaları ve CRT işlevleri için Win32 ve COM [API'larına](/uwp/win32-and-com/win32-and-com-for-uwp-apps) bakın. Bazı alternatifler [UWP uygulamalarında Windows API'lerine Alternatifler'de](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)bulunabilir.
+Kitaplık için kaynak kodu kullanılabiliyorsa yasak API çağrılarını ortadan kaldırabiliyor olabilirsiniz. İzin verilen veya yasak API 'lerin listesini içeren ayrıntılar için bkz. [UWP uygulamaları Için Win32 ve com API 'leri](/uwp/win32-and-com/win32-and-com-for-uwp-apps) ve [Evrensel Windows platformu uygulamalarda desteklenmeyen crt işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md). [UWP uygulamalarında Windows API 'Lerinin alternatifleri bölümünde](/uwp/win32-and-com/alternatives-to-windows-apis-uwp)bazı alternatifler bulabilirsiniz.
 
-Evrensel Windows Projesi'nden klasik bir masaüstü kitaplığına bir başvuru eklemeye çalışırsanız, kitaplığın uyumlu olmadığını belirten bir hata iletisi alırsınız. Statik bir kitaplık söz konusu olduğunda, tıpkı klasik bir Win32 uygulamasında olduğu gibi, kitaplığınızı (.lib dosyası) bağlayıcı girişinize ekleyerek kitaplığınıza bağlayabilirsiniz. Yalnızca ikili kullanılabilen kitaplıklar için tek seçenek budur. Statik bir kitaplık uygulamanızın yürütülebilir içeriğine bağlıdır, ancak bir UWP uygulamasında tükettiğiniz Win32 DLL'nin projeye dahil edilerek ve İçerik olarak işaretlenerek uygulamaya paketlenmesi gerekir. Bir UWP uygulamasında Win32 DLL yüklemek için, [loadpackagedlibrary](/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary) yerine `LoadLibrary` `LoadLibraryEx`veya .
+Bir Evrensel Windows projesinden klasik masaüstü kitaplığına bir başvuru eklemeye çalışırsanız, kitaplığın uyumlu olmadığını belirten bir hata iletisi alırsınız. Statik bir kitaplık söz konusu olduğunda, kitaplığı (. lib dosyası) yalnızca klasik bir Win32 uygulamasında olduğu gibi bağlayıcı girdisine ekleyerek kitaplığınıza bağlayabilirsiniz. Yalnızca bir ikilinin kullanılabildiği kitaplıklar için bu tek seçenektir. Statik bir kitaplık, uygulamanızın yürütülebilir dosyasına bağlanır, ancak UWP uygulamasında kullandığınız bir Win32 DLL, projeye eklenerek ve Içerik olarak işaretlenerek uygulamaya paketlenmesi gerekir. Bir UWP uygulamasında Win32 DLL yüklemek için, ya da yerine [Loadpackagedlibrary](/windows/win32/api/winbase/nf-winbase-loadpackagedlibrary) çağrısı yapmanız gerekir `LoadLibrary` `LoadLibraryEx` .
 
-DLL veya statik kitaplık için kaynak kodunuz varsa, `/ZW` UWP projesi olarak yeniden derleyebilirsiniz. Bunu yaparsanız, **Solution Explorer'ı**kullanarak bir başvuru ekleyebilir ve C++ UWP uygulamalarında kullanabilirsiniz. Bir DLL durumunda, dışa aktarma kitaplığı ile bağlantı.
+DLL veya statik kitaplık için kaynak kodunuz varsa, UWP projesi olarak ile yeniden derleyebilirsiniz `/ZW` . Bunu yaparsanız, **Çözüm Gezgini**kullanarak bir başvuru ekleyebilir ve bunu C++ UWP uygulamalarında kullanabilirsiniz. DLL söz konusu olduğunda, dışa aktarma kitaplığıyla bağlantı oluşturursunuz.
 
-İşlevselliği diğer dillerdeki arayanlara maruz bırakmak için kitaplığı Bir Windows Runtime Bileşenine dönüştürebilirsiniz. Windows Runtime Bileşenleri, .NET ve JavaScript tüketicilerinin ihtiyaç duyduğu şekilde içeriği açıklayan .winmd dosyaları biçiminde meta verileri içerdikleri için sıradan DL'lerden farklıdır. API öğelerini diğer dillere maruz bırakmak için, ref sınıfları gibi C++/CX yapıları ekleyebilir ve bunları herkese açık hale getirebilir veya [Windows Runtime C++ Şablon Kitaplığı'nı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanabilirsiniz.  Windows 10 ve sonraki durumlarda [C++/CX yerine C++/WinRT kitaplığını](https://github.com/microsoft/cppwinrt) kullanabilirsiniz.
+Diğer dillerdeki arayanlara işlevselliği göstermek için, kitaplığı bir Windows Çalışma Zamanı bileşenine dönüştürebilirsiniz. Windows Çalışma Zamanı bileşenler, verileri .NET ve JavaScript tüketicilerinin gerektirdiği bir şekilde açıklayan. winmd dosyaları biçiminde meta verileri dahil ettikleri sıradan dll 'lerden farklıdır. API öğelerini diğer dillere göstermek için, başvuru sınıfları gibi C++/CX yapıları ekleyebilir ve bunları herkese açık hale getirebilir ya da [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanabilirsiniz.  Windows 10 ve üzeri sürümlerde c++/cxyerine [c++/Wınrt kitaplığını](https://github.com/microsoft/cppwinrt) kullanabilirsiniz.
 
-Önceki tartışma, farklı şekilde ele alınması gereken COM bileşenleri için geçerli değildir. EXE veya DLL'de bir COM sunucunuz varsa, evrensel bir Windows Projesi'nde [kayıt gerektirmeyen](/windows/win32/sbscs/creating-registration-free-com-objects)bir COM bileşeni olarak paketlediğiniz, İçerik dosyası olarak projenize eklediğiniz ve [CoCreateInstanceFromApp](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstancefromapp)kullanarak anlık olarak oluşturduğunuz sürece kullanabilirsiniz. Daha fazla bilgi için Windows [Mağazası C++ Projesi'nde Free-COM DLL kullanma'ya](https://blogs.msdn.microsoft.com/win8devsupport/2013/05/19/using-free-com-dll-in-windows-store-c-project/)bakın.
+Önceki tartışma, farklı şekilde işlenmesi gereken COM bileşenleri için de geçerlidir. Bir EXE veya DLL 'de bir COM sunucunuz varsa, bunu bir Evrensel Windows projesinde, [kayıtsız BIR com bileşeni](/windows/win32/sbscs/creating-registration-free-com-objects)olarak paketleyip bunu projenize bir içerik dosyası olarak ekleyerek ve [CoCreateInstanceFromApp](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstancefromapp)kullanarak örnekleyebilirsiniz. Daha fazla bilgi için bkz. [Windows Mağazası C++ projesinde ÜCRETSIZ com dll kullanma](/archive/blogs/win8devsupport/using-free-com-dll-in-windows-store-c-project).
 
-UWP'ye bağlantı sağlamak istediğiniz varolan bir COM kitaplığınız varsa, [Windows Runtime C++ Şablon Kitaplığı 'nı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanarak onu Windows Runtime Bileşenine dönüştürebilirsiniz. WRL, ATL ve OLE'nin tüm özelliklerini desteklemez, bu nedenle böyle bir bağlantı noktasının uygun olup olmadığı COM kodunuzcom, ATL ve OLE'nin bileşeninizin hangi özelliklerini gerektirdiğine bağlıdır.
+UWP 'e bağlantı noktası eklemek istediğiniz mevcut bir COM kitaplığınız varsa, [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanarak bunu bir Windows çalışma zamanı bileşenine dönüştürebilirsiniz. WRL, ATL ve OLE 'nin tüm özelliklerini desteklemez. bu nedenle, bu tür bir bağlantı noktasının uygun olup olmadığı, COM kodunuzun ne kadar com, ATL ve OLE 'nin gerekli özelliklerine bağlı olduğuna bağlıdır.
 
-Bunlar, UWP projelerinde varolan C++ kodunu kullanabileceğiniz çeşitli yollardır. Bazı yollarla kod bileşeni uzantıları (C++/CX) etkin (yani, `/ZW` seçenek ile) ile yeniden derlenecek gerektirmez, bu nedenle standart C++'da kod tutmanız veya bazı kodlar için klasik bir Win32 derleme ortamını korumanız gerekiyorsa, bunu uygun mimari seçenekleriyle yapabilirsiniz. Örneğin, UWP UI içeren tüm kodunuz ve C#, Visual Basic ve JavaScript arayanlara maruz kalınması gereken türleri Windows App projelerinde ve Windows Runtime Bileşeni projelerinde olmalıdır. Yalnızca C++'da (C++/CX dahil) tüketilmesi gereken kod, `/WX` seçenekle veya standart bir C++ projesiyle derlenen bir projede olabilir. Yalnızca ikili kod statik bir kitaplık olarak bağlayarak veya uygulamayla içerik olarak paketlenerek ve yalnızca yasak API'leri kullanmıyorsa DLL'ye yüklenerek kullanılabilir.
+Bunlar, UWP projelerinde mevcut C++ kodunu kullanmanın çeşitli yollarıdır. Bazı yollarla kodun bileşen uzantıları (C++/CX) etkin (yani, `/ZW` seçeneğiyle) ve bazıları ise, standart C++ ' ta kodu tutmanız veya bazı kodlar için klasik bir Win32 derleme ortamını korumanız gerekiyorsa, bunu uygun mimari seçenekleriyle yapabilirsiniz. Örneğin, UWP Kullanıcı arabirimini ve C#, Visual Basic ve JavaScript çağıranlarını gösteren türler içeren tüm kodunuzun Windows uygulama projelerinde ve Windows Çalışma Zamanı bileşen projelerinde olması gerekir. Yalnızca C++ ' da kullanılması gereken kod (C++/CX dahil) kodu, `/WX` seçeneğiyle veya standart bir C++ projesiyle derlenen bir projede yer alabilir. Yalnızca ikili kod, bir statik kitaplık olarak bağlantı kurarak veya uygulamayla birlikte paketlenmiş ve yalnızca yasak API 'Leri kullanmıyorsa bir DLL 'ye yüklenmiş olarak kullanılabilir.
 
-Bu geliştirme senaryolarından hangisini seçerseniz seçin, kodu hem klasik masaüstü Win32 hem de UWP altında koşullu olarak derleyebilmeniz için kodunuzda kullanabileceğiniz bir dizi makro tanımının farkında olmalısınız.
+Seçtiğiniz geliştirme senaryolarından bağımsız olarak, kodunuzu hem klasik masaüstü hem de UWP kapsamında derlemek için kodunuzda kullanabileceğiniz bazı makro tanımlarından haberdar olmanız gerekir.
 
 ```cpp
 #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PC_APP)
@@ -40,25 +40,25 @@ Bu geliştirme senaryolarından hangisini seçerseniz seçin, kodu hem klasik ma
 #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)
 ```
 
-Bu ifadeler sırasıyla UWP uygulamaları, Windows Phone Mağazası uygulamaları, her ikisi veya ikisi için geçerlidir (yalnızca klasik Win32 masaüstü). Bu makrolar yalnızca Windows SDK 8.1 ve sonraki sürümlerinde kullanılabilir, bu nedenle kodunuzu Windows SDK'nın önceki sürümleriyle veya Windows dışındaki diğer platformlar için derlemek gerekiyorsa, bunların hiçbirinin tanımlanmadığını da göz önünde bulundurmanız gerekir.
+Bu deyimler sırasıyla UWP uygulamalarına, Windows Phone mağaza uygulamalarına, her ikisine de veya hiçbirine (yalnızca Klasik Win32 Masaüstü) uygulanır. Bu makrolar yalnızca Windows SDK 8,1 ve üzeri sürümlerde kullanılabilir. bu nedenle, kodunuzun önceki Windows SDK veya Windows 'un diğer platformları ile derlenmesi gerekiyorsa, bunların hiçbirinin tanımlanmaması durumunda da göz önünde bulundurmanız gerekir.
 
 Bu konu aşağıdaki yordamları içerir:
 
-- [UWP Uygulamasında Win32 DLL kullanma](#BK_Win32DLL)
+- [UWP uygulamasında Win32 DLL kullanma](#BK_Win32DLL)
 
-- [UWP Uygulamasında yerel C++ statik kitaplığı kullanma](#BK_StaticLib)
+- [UWP uygulamasında yerel C++ statik kitaplığı kullanma](#BK_StaticLib)
 
-- [C++ Kitaplığı Windows Runtime Bileşenine Taşıma](#BK_WinRTComponent)
+- [C++ Kitaplığı Windows Çalışma Zamanı bileşenine taşıma](#BK_WinRTComponent)
 
-## <a name="using-a-win32-dll-in-a-uwp-app"></a><a name="BK_Win32DLL"></a>UWP Uygulamasında Win32 DLL kullanma
+## <a name="using-a-win32-dll-in-a-uwp-app"></a><a name="BK_Win32DLL"></a>UWP uygulamasında Win32 DLL kullanma
 
-Daha iyi güvenlik ve güvenilirlik için, Universal Windows Apps sınırlı çalışma zamanı ortamında çalışır, böylece herhangi bir yerel DLL'yi klasik bir Windows masaüstü uygulamasında kullandığınız şekilde kullanamazsınız. Bir DLL için kaynak kodunuz varsa, kodu UWP'de çalışır şekilde işaretleyebilirsiniz. Projeyi UWP projesi olarak tanımlamak için birkaç proje ayarını ve proje dosyası meta verilerini değiştirerek başlarsınız. C++/CX sağlayan `/ZW` seçeneği kullanarak kitaplık kodunu derlemeniz gerekir. UWP uygulamalarında, bu ortamla ilişkili daha sıkı denetimler nedeniyle bazı API çağrılarına izin verilmez. [UWP uygulamaları için Win32 ve COM API'leri'ne](/uwp/win32-and-com/win32-and-com-for-uwp-apps)bakın.
+Daha iyi güvenlik ve güvenilirlik için, Evrensel Windows uygulamaları kısıtlı bir çalışma zamanı ortamında çalışır, bu nedenle yalnızca klasik bir Windows masaüstü uygulamasında yaptığınız şekilde herhangi bir yerel DLL kullanamazsınız. Bir DLL için kaynak kodunuz varsa, UWP üzerinde çalışacak şekilde kodu bağlantı noktası oluşturabilirsiniz. Projeyi UWP projesi olarak tanımlamak için birkaç proje ayarını ve proje dosyası meta verilerini değiştirerek başlayın. `/ZW`C++/cx' i sağlayan seçeneğini kullanarak kitaplık kodunu derlemeniz gerekir. Bu ortamla ilişkili daha sıkı denetimler nedeniyle UWP uygulamalarında belirli API çağrılarına izin verilmez. [UWP uygulamaları için bkz. Win32 ve com API 'leri](/uwp/win32-and-com/win32-and-com-for-uwp-apps).
 
-Aşağıdaki yordam, kullanarak `__declspec(dllexport)`işlevleri ortaya çıkaran bir yerel DLL'ye sahip olduğunuz durum için de geçerlidir.
+Aşağıdaki yordam, kullanarak işlevleri kullanıma sunan bir yerel DLL 'nin bulunduğu durumlar için geçerlidir `__declspec(dllexport)` .
 
-### <a name="to-port-a-native-dll-to-the-uwp-without-creating-a-new-project"></a>Yeni bir proje oluşturmadan yerel bir DLL'yi UWP'ye taşıma
+### <a name="to-port-a-native-dll-to-the-uwp-without-creating-a-new-project"></a>Yeni bir proje oluşturmadan UWP 'e yerel DLL 'ye bağlantı noktası oluşturma
 
-1. Kullanarak işlevleri dışa dışa aktarma `__declspec(dllexport)`yapan bir yerel DLL'niz varsa, DLL'yi UWP projesi olarak yeniden derleyerek bu işlevleri bir UWP uygulamasından arayabilirsiniz. Örneğin, aşağıdaki üstbilgi dosyası gibi kodile birkaç sınıf ve yöntemleri dışa aktaran bir DLL'miz olduğunu varsayalım:
+1. Kullanarak işlevleri dışarı aktaran bir yerel DLL varsa, bir UWP `__declspec(dllexport)` projesi olarak DLL 'yi yeniden derleyerek bu IŞLEVLERI UWP uygulamasından çağırabilirsiniz. Örneğin, aşağıdaki üstbilgi dosyası gibi bir kod ile birkaç sınıfı ve yöntemlerini veren bir DLL olduğunu varsayalım:
 
     ```cpp
     // giraffe.h
@@ -129,15 +129,15 @@ Aşağıdaki yordam, kullanarak `__declspec(dllexport)`işlevleri ortaya çıkar
     int giraffeFunction();
     ```
 
-   Projedeki diğer her şey (stdafx.h, dllmain.cpp) standart Win32 proje şablonunun bir parçasıdır. Takip etmek istiyorsanız, ancak bu adımlarla henüz kendi DLL kullanmak istemiyorsanız, bir Win32 projesi oluşturmayı deneyin, proje sihirbazında DLL seçin ve sonra bir üstbilgi dosyası zürafa.h ve kod dosyası giraffe.cpp ekleyin ve uygun dosyalara bu adımda kod içeriğini kopyalayın.
+   Projedeki diğer her şey (stbafx. h, DllMain. cpp), standart Win32 Proje şablonunun bir parçasıdır. Birlikte izlemek isterseniz, ancak bu adımlarla kendi DLL 'nizi kullanmak istemiyorsanız, bir Win32 projesi oluşturmayı deneyin, proje sihirbazında DLL ' yi seçin ve ardından Giraffe. h ve kod dosyası Giraffe. cpp adlı bir üstbilgi dosyası ekleyin ve içeriği bu adımdaki koddan uygun dosyalara kopyalayın.
 
-   Kod, ne zaman `GIRAFFE_API` `_DLL` tanımlandığına `__declspec(dllexport)` (diğer bir şekilde, proje DLL olarak inşa edildiğinde) çözümleyen makroyu tanımlar.
+   Kod, `GIRAFFE_API` tanımlandığında olarak çözümlenen makroyu tanımlar `__declspec(dllexport)` `_DLL` (yanı, proje DLL olarak yapılandırıldığında).
 
-2. DLL projesi için **Proje Özelliklerini** açın ve **Yapılandırmayı** **Tüm Yapılandırmalara**ayarlayın.
+2. DLL projesi için **Proje özelliklerini** açın ve **yapılandırmayı** **tüm yapılandırmalar**olarak ayarlayın.
 
-3. Project **Properties'te**, **C/C++** > **Genel** sekmesi altında, Windows Çalışma Süresi Uzantısını **Evet (/ZW)** olarak **ayarlayın.** Bu bileşen uzantıları (C++/CX) sağlar.
+3. **Proje özellikleri**' nde, **C/C++**  >  **genel** sekmesinde, kullanım **Windows çalışma zamanı uzantısını** **Evet (/ZW)** olarak ayarlayın. Bu, bileşen uzantılarını (C++/CX) sunar.
 
-4. **Çözüm Gezgini'nde**proje düğümünü seçin, kısayol menüsünü açın ve **Project'i Boşalt'ı**seçin. Ardından, boşaltılmış proje düğümündeki kısayol menüsünü açın ve proje dosyasını düzenlemesini seçin. Öğeyi `WindowsTargetPlatformVersion` bulun ve aşağıdaki öğelerle değiştirin.
+4. **Çözüm Gezgini**, proje düğümünü seçin, kısayol menüsünü açın ve **Projeyi Kaldır**' ı seçin. Ardından, yüklenmeyen proje düğümünde kısayol menüsünü açın ve proje dosyasını düzenlemeyi seçin. Öğesini bulun `WindowsTargetPlatformVersion` ve aşağıdaki öğelerle değiştirin.
 
     ```xml
     <AppContainerApplication>true</AppContainerApplication>
@@ -147,31 +147,31 @@ Aşağıdaki yordam, kullanarak `__declspec(dllexport)`işlevleri ortaya çıkar
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
     ```
 
-   .vcxproj dosyasını kapatın, kısayol menüsünü yeniden açın ve **Project'i Yeniden Yükle'yi**seçin.
+   . Vcxproj dosyasını kapatın, kısayol menüsünü yeniden açın ve **projeyi yeniden yükle**' yi seçin.
 
-   **Solution Explorer** artık projeyi Evrensel Windows projesi olarak tanımlar.
+   **Çözüm Gezgini** artık projeyi bir Evrensel Windows projesi olarak tanımlıyor.
 
-5. Önceden derlenmiş üstbilgi dosya adınızın doğru olduğundan emin olun. Önceden **Derlenmiş Üstbilgi** bölümünde, **Önceden Derlenmiş Üstbilgi Dosyasını** *pch.h'den* *stdafx.h'ye*değiştirin. Bunu yapmazsanız, aşağıdaki hatayı görürsünüz.
+5. Önceden derlenmiş üst bilgi dosyası adınızın doğru olduğundan emin olun. **Ön derlenmiş üstbilgiler** bölümünde, **ön derlenmiş üstbilgi dosyasını** *pch. h* iken *stbafx. h*olarak değiştirin. Bunu yapmazsanız, aşağıdaki hatayı görürsünüz.
 
-   > hata C2857: /Ycpch.h komut satırı seçeneği ile belirtilen '#include' deyimi kaynak dosyada bulunamadı
+   > hata C2857:/Ycpch.h komut satırı seçeneğiyle belirtilen ' #include ' ifadesiyle kaynak dosyada bulunamadı
 
-   Sorun, Evrensel Windows projelerinin önceden derlenmiş üstbilgi dosyası için farklı bir adlandırma kuralı kullanmasıdır.
+   Bu sorun, Evrensel Windows projelerinin ön derlenmiş üstbilgi dosyası için farklı bir adlandırma kuralı kullanmasına neden olur.
 
-6. Projeyi derleyin. Uyumsuz komut satırı seçenekleri hakkında bazı hatalar alabilirsiniz. Örneğin, şimdi azalan ancak sık kullanılan seçenek **Enable Minimal Rebuild (/Gm)** varsayılan olarak birçok eski C++ `/ZW`projesinde ayarlanır ve .
+6. Projeyi derleyin. Uyumsuz komut satırı seçenekleri hakkında bazı hatalar alabilirsiniz. Örneğin, artık kullanım dışı olan ancak sık kullanılan seçenek **en az sayıda yeniden derlemeyi etkinleştir (/GD)** seçeneği, daha eski C++ projelerinde varsayılan olarak ayarlanır ve ile uyumlu değildir `/ZW` .
 
-   Evrensel Windows Platformu için derlediğinizde bazı işlevler kullanılamaz. Herhangi bir sorun hakkında derleyici hataları göreceksiniz. Temiz bir yapıya sahip olana kadar bunları ele alın.
+   Evrensel Windows Platformu için derlerken bazı işlevler kullanılamaz. Herhangi bir sorun hakkında derleyici hataları görürsünüz. Temiz bir derleme yapana kadar bu bunları ele edin.
 
-7. Aynı çözümde bir UWP uygulamasında DLL kullanmak için, UWP proje düğümü için kısayol menüsünü açın ve**Başvuru** **Ekle'yi** > seçin.
+7. DLL 'yi aynı çözümde bir UWP uygulamasında kullanmak için, UWP proje düğümünün kısayol menüsünü açın ve başvuru **Ekle**' yi seçin  >  **Reference**.
 
-   **Projeler** > **Çözümü**altında, DLL projesinin yanındaki onay kutusunu seçin ve **Tamam** düğmesini seçin.
+   **Projeler**  >  **çözümü**altında dll projesinin yanındaki onay kutusunu işaretleyin ve **Tamam** düğmesini seçin.
 
-8. UWP uygulamanızın *pch.h* dosyasına kitaplığın üstbilgi dosyasını(lar) ekleyin.
+8. Kitaplığın üst bilgi dosyalarını UWP uygulamanızın *pch. h* dosyasına ekleyin.
 
     ```cpp
     #include "..\MyNativeDLL\giraffe.h"
     ```
 
-9. Işlevleri çağırmak ve DLL'den türler oluşturmak için UWP projesinde her zamanki gibi kod ekleyin.
+9. İşlevleri çağırmak ve DLL 'den türler oluşturmak için UWP projesinde her zamanki gibi kod ekleyin.
 
     ```cpp
     MainPage::MainPage()
@@ -183,52 +183,52 @@ Aşağıdaki yordam, kullanarak `__declspec(dllexport)`işlevleri ortaya çıkar
     }
     ```
 
-## <a name="using-a-native-c-static-library-in-a-uwp-app"></a><a name="BK_StaticLib"></a>UWP Uygulamasında yerel C++ statik kitaplığı kullanma
+## <a name="using-a-native-c-static-library-in-a-uwp-app"></a><a name="BK_StaticLib"></a>UWP uygulamasında yerel C++ statik kitaplığı kullanma
 
-UWP projesinde yerel c++ statik kitaplığını kullanabilirsiniz, ancak dikkat edilmesi gereken bazı kısıtlamalar ve sınırlamalar vardır. [C++/CX'teki statik kitaplıklar](../cppcx/static-libraries-c-cx.md)hakkında okuyarak başlayın. Statik kitaplığınızdaki yerel koda UWP uygulamanızdan erişebilirsiniz, ancak böyle bir statik kitaplıkta genel ref türleri oluşturmanız önerilmez. `/ZW` Bu seçenekle statik bir kitaplık derlerseniz, kütüphaneci (aslında kılık değiştirmiş bağlayıcı) şu uyarıda bulunur:
+UWP projesinde yerel C++ statik kitaplığını kullanabilirsiniz, ancak farkında olacak bazı kısıtlamalar ve sınırlamalar vardır. [C++/CX ' te statik kitaplıklar](../cppcx/static-libraries-c-cx.md)hakkında okumaya başlayın. UWP uygulamanızdan statik kitaplığınızdaki yerel koda erişebilirsiniz, ancak bu tür bir statik kitaplıkta ortak başvuru türleri oluşturulması önerilmez. Seçeneğiyle bir statik kitaplık derlerseniz `/ZW` , kütüphaneian (aslında gizleyen bağlayıcı) sizi uyarır:
 
-> LNK4264: /ZW ile derlenen nesne dosyasının statik bir kitaplığa arşivleme; Windows Runtime türleri yazarken Windows Runtime meta verileri içeren statik bir kitaplık ile bağlantı tavsiye edilmez unutmayın
+> LNK4264:/ZW ile derlenen nesne dosyasını statik bir kitaplığa arşivleme; Windows Çalışma Zamanı türler yazarken Windows Çalışma Zamanı meta verileri içeren bir statik kitaplıkla bağlantı önerildiğine unutmayın
 
-Ancak, bir UWP ile yeniden derlemeden statik bir `/ZW`kitaplık kullanabilirsiniz. Herhangi bir ref türünü beyan edemez veya C++/CX yapılarını kullanamazsınız, ancak amacınız yalnızca yerel kod kitaplığını kullanmaksa, bunu aşağıdaki adımları izleyerek yapabilirsiniz.
+Ancak, bir UWP içindeki statik bir kitaplığı, ile yeniden derlemeden kullanabilirsiniz `/ZW` . Herhangi bir başvuru türü bildiremezsiniz veya C++/CX yapıları kullanamazsınız, ancak amacınıza yalnızca yerel kod kitaplığı kullanmak istiyorsanız, bu adımları takip edebilirsiniz.
 
 ### <a name="to-use-a-native-c-static-library-in-a-uwp-project"></a>UWP projesinde yerel C++ statik kitaplığını kullanmak için
 
-1. UWP projesinin proje özelliklerinde, sol bölmedeki **Configuration Properties** > **Linker** > **Girişi'ni** seçin. Sağ bölmede, **Ek Bağımlılıklar** özelliğindeki kitaplık yolunu ekleyin. Örneğin, çıktısını *SolutionFolder*\Debug\MyNativeLibrary\MyNativeLibrary.lib'e yerleştiren projedeki bir kitaplık için, göreli yolu `Debug\MyNativeLibrary\MyNativeLibrary.lib`ekleyin.
+1. UWP projesinin proje özellikleri ' nde, sol bölmedeki **yapılandırma özellikleri**  >  **bağlayıcı**  >  **girişi** ' ni seçin. Sağ bölmede, **ek bağımlılıklar** özelliğindeki kitaplığa yolu ekleyin. Örneğin, projedeki çıktısını *SolutionFolder*\Debug\mynativelibrary\mynativelibrary.exe dizinine yerleştiren bir kitaplık için göreli yolu ekleyin `Debug\MyNativeLibrary\MyNativeLibrary.lib` .
 
-2. Üstbilgi *dosyanıza* (varsa) veya gerektiğinde herhangi bir .cpp dosyasına başvurmak için bir ek açıklama ekleyin ve kitaplığı kullanan kod eklemeye başlayın.
+2. Üstbilgi dosyasını *pch. h* dosyanıza (varsa) veya gerektiği gibi herhangi bir. cpp dosyasına başvuracak bir Include ifadesini ekleyin ve kitaplığı kullanan kodu eklemeye başlayın.
 
    ```cpp
    #include "..\MyNativeLibrary\giraffe.h"
    ```
 
-   **Çözüm Gezgini'ndeki** **Başvuru** düğümüne bir başvuru eklemeyin. Bu mekanizma yalnızca Windows Runtime Bileşenleri için çalışır.
+   **Çözüm Gezgini** **Başvurular** düğümüne başvuru eklemeyin. Bu mekanizma yalnızca Windows Çalışma Zamanı bileşenleri için geçerlidir.
 
-## <a name="porting-a-c-library-to-a-windows-runtime-component"></a><a name="BK_WinRTComponent"></a>C++ Kitaplığı Windows Runtime Bileşenine Taşıma
+## <a name="porting-a-c-library-to-a-windows-runtime-component"></a><a name="BK_WinRTComponent"></a>C++ Kitaplığı Windows Çalışma Zamanı bileşenine taşıma
 
-Bir UWP uygulamasından statik bir kitaplıkta yerel API'leri tüketmek istiyorsanız ve yerel kitaplığın kaynak koduna sahipseniz, kodu bir Windows Runtime Bileşenine taşınabilirsiniz. Artık statik bir kütüphane olmayacak, bir DLL olacak. Herhangi bir C++ UWP uygulamasında kullanabilirsiniz, ancak statik kitaplık durumundan farklı olarak, dilden bağımsız olarak herhangi bir UWP uygulama kodunda istemcilerin kullanabileceği ref türleri ve diğer C++/CX yapıları ekleyebilirsiniz. Bu nedenle, bu tür lere C#, Visual Basic veya JavaScript'ten erişebilirsiniz.  Temel yordam, bir Windows Runtime Bileşeni projesi oluşturmak, statik kitaplığınız için kodu kopyalamak ve kodu standart bir C++ `/ZW` derlemesinden derlemeye taşımaktan kaynaklanan hataları gidermektir.
+Yerel API 'Leri UWP uygulamasından bir statik kitaplıkta kullanmak istiyorsanız ve yerel kitaplık için kaynak koduna sahipseniz, kodun Windows Çalışma Zamanı bir bileşende bağlantı noktası oluşturabilirsiniz. Artık bir statik kitaplık olmayacak, bu bir DLL olacaktır. Bunu herhangi bir C++ UWP uygulamasında kullanabilirsiniz, ancak statik kitaplık durumunun aksine, herhangi bir UWP uygulama kodundaki istemciler için kullanılabilir olan başvuru türlerini ve diğer C++/CX yapılarını dilden bağımsız olarak ekleyebilirsiniz. Bu nedenle, bu türlere C#, Visual Basic veya JavaScript üzerinden erişebilirsiniz.  Temel yordam, bir Windows Çalışma Zamanı bileşen projesi oluşturmaktır, statik kitaplığınızın kodunu buna kopyalamak ve kodu standart C++ derlemesinden derlemeye taşımaktan kaynaklanan tüm hataları ele maktır `/ZW` .
 
-### <a name="to-port-a-c-library-to-a-windows-runtime-component"></a>C++ kitaplığını Windows Runtime Bileşenine taşıma
+### <a name="to-port-a-c-library-to-a-windows-runtime-component"></a>Bir C++ kitaplığının Windows Çalışma Zamanı bileşenine bağlantı noktası oluşturma
 
-1. Bir Windows Runtime Bileşeni projesi oluşturun.
+1. Windows Çalışma Zamanı bileşen projesi oluşturun.
 
 2. Projeyi kapatın.
 
-3. Windows **Dosya Gezgini'nde**projeyi bulun. Varsayılan olarak Visual Studio, Belgeler klasörünüzdeki Visual Studio 2017\Projects klasörünü kullanır. Bağlantı noktasına gelmek istediğiniz kodu içeren C++ kitaplık projesini bulun. C++ kitaplık projenizden kaynak dosyaları (üstbilgi dosyaları, kod dosyaları ve alt dizinler de dahil olmak üzere diğer kaynaklar) kopyalayın ve aynı klasör yapısını koruduğunuzdan emin olmak için proje klasörüne yapıştırın.
+3. **Windows Dosya Gezgini**'nde projeyi bulun. Varsayılan olarak, Visual Studio belgeler klasörünüzdeki Visual Studio 2017 \ Projects klasörünü kullanır. Bağlantı noktası yapmak istediğiniz kodu içeren C++ Kitaplığı projesini bulun. C++ Kitaplığı projenizden kaynak dosyalarını (üst bilgi dosyalarını, kod dosyalarını ve alt dizinler dahil diğer tüm kaynakları) kopyalayın ve proje klasörüne yapıştırarak aynı klasör yapısını koruduğunuzdan emin olun.
 
-4. Windows Runtime Bileşeni projesini yeniden açın ve **Solution Explorer'daki**proje düğümü için kısayol menüsünü açın ve**Varolan Öğe** **Ekle'yi** > seçin.
+4. Windows çalışma zamanı bileşen projesini yeniden açın ve **Çözüm Gezgini**içindeki proje düğümünün kısayol menüsünü açın ve **Add**  >  **var olan öğeyi**Ekle ' yi seçin.
 
-5. Özgün projenizden ekleyeceğiniz tüm dosyaları seçin ve **Tamam'ı**seçin. Alt klasörler için gerekirse yineleyin.
+5. Özgün projenizden eklenecek tüm dosyaları seçin ve **Tamam**' ı seçin. Alt klasörler için gerekliyse tekrarlayın.
 
-6. Şimdi bazı yinelenen kod olabilir. Birden fazla önceden derlenmiş üstbilginiz varsa *(stdafx.h* ve *pch.h)* tutmak için birini seçin. İçki ifadeleri gibi gerekli kodları tuttuğunuz koda kopyalayın. Daha sonra, diğerini silin ve proje özelliklerinde, **Önceden Derlenmiş Üstbilgi**altında, üstbilgi dosyasının adının doğru olduğundan emin olun.
+6. Artık yinelenen bir kodunuz olabilir. Birden fazla önceden derlenmiş üst bilgi ( *stbafx. h* ve *pch. h*) varsa, saklanacak bir tane seçin. Include deyimlerini gibi gerekli kodu, koruduğunuz birine kopyalayın. Ardından, diğerini silin ve proje özelliklerinde, **önceden derlenmiş üstbilgiler**altında, üstbilgi dosyasının adının doğru olduğundan emin olun.
 
-   Dosyayı önceden derlenmiş üstbilgi olarak kullanmak üzere değiştirdiyseniz, önceden derlenmiş üstbilgi seçeneklerinin her dosya için doğru olduğundan emin olun. Sırayla her .cpp dosyasını seçin, özellikleri penceresini açın ve **create (/Yc)** olarak ayarlanmalıdır istenen önceden derlenmiş üstbilgi dışında tüm **Kullanım (/Yu)** olarak ayarlandıklarından emin olun.
+   Önceden derlenmiş üst bilgi olarak kullanılacak dosyayı değiştirdiyseniz, ön derlenmiş üstbilgi seçeneklerinin her dosya için doğru olduğundan emin olun. Sırasıyla her bir. cpp dosyasını seçin, Özellikler penceresini açın ve istenen önceden derlenmiş üst bilgi dışında (/i) **oluşturulacak**şekilde ayarlananların tümünün **(/Yu)** olarak ayarlandığından emin olun.
 
-7. Projeyi oluşturun ve hataları giderin. Bu hatalar `/ZW` seçeneğin kullanılmasından kaynaklanabilir veya Windows SDK'nın yeni bir sürümünden kaynaklanabilir veya kitaplığınızın bağlı olduğu üstbilgi dosyaları veya eski projeniz ile yeni proje ayarları arasındaki farklar gibi bağımlılıkları yansıtabilir.
+7. Projeyi derleyin ve hataları çözün. Bu hatalar, `/ZW` seçeneği kullanılarak veya Windows SDK yeni bir sürümlerinden kaynaklanmış olabilir ya da kitaplığınızın bağlı olduğu üst bilgi dosyaları ya da eski projeniz ile yeni bir proje ayarlarındaki farklar gibi bağımlılıkları yansıtabilirler.
 
-8. UWP uygulamalarından aramak istediğiniz işlevselliğe giriş noktalarını ortaya çıkarmak için projenize genel ref türleri ekleyin veya normal türleri ref türlerine dönüştürün.
+8. Projenize ortak başvuru türleri ekleyin veya giriş noktalarını UWP uygulamalarından çağırmak istediğiniz işlevselliğe göstermek için normal türleri ref türlerine dönüştürün.
 
-9. Bir UWP uygulama projesinden bir başvuru ekleyerek bileşeni sınayın ve oluşturduğunuz genel API'leri aramak için bazı kodlar ekleyin.
+9. Bir UWP uygulama projesinden buna bir başvuru ekleyerek bileşeni test edin ve oluşturduğunuz ortak API 'Leri çağırmak için kod ekleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Evrensel Windows Platformuna Taşıma](../porting/porting-to-the-universal-windows-platform-cpp.md)
+[Evrensel Windows Platformu taşıma](../porting/porting-to-the-universal-windows-platform-cpp.md)

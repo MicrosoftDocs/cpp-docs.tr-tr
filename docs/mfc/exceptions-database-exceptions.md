@@ -11,12 +11,12 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: 98436e7519279197fe192d9ef8b7344b211b24bc
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 96f9e5f836205df71e03638858cb00b788d03c0b
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624662"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403731"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 
@@ -38,7 +38,7 @@ Veritabanı özel durumlarını yakalamak için en kolay yaklaşım, uygulamanı
 
 **Afx_sql_error_xxx**, çerçeve tarafından tanımlanan, form adlarını içeren dönüş kodlarına ek olarak, bazı [CDBExceptions](reference/cdbexception-class.md) [ODBC](../data/odbc/odbc-basics.md) dönüş kodlarını temel alır. Bu özel durumlar için dönüş kodları **sql_error_xxx**biçim adlarına sahiptir.
 
-Veritabanı sınıflarının döndürebildiği, hem çerçeve tanımlı hem de ODBC tanımlı dönüş kodları, sınıfının [m_nRetCode](reference/cdbexception-class.md#m_nretcode) veri üyesi altında belgelenmiştir `CDBException` . ODBC tarafından tanımlanan dönüş kodları hakkında ek bilgiler, MSDN Kitaplığı 'ndaki ODBC SDK *Programcının Başvurusu* ' nda bulunabilir.
+Veritabanı sınıflarının döndürebildiği, hem çerçeve tanımlı hem de ODBC tanımlı dönüş kodları, sınıfının [m_nRetCode](reference/cdbexception-class.md#m_nretcode) veri üyesi altında belgelenmiştir `CDBException` . ODBC tarafından tanımlanan dönüş kodlarıyla ilgili ek bilgiler [ODBC Programcı başvurusu](/sql/odbc/reference/odbc-programmer-s-reference)' nda bulunabilir.
 
 ### <a name="error-codes-used-for-dao-exceptions"></a>DAO özel durumları için kullanılan hata kodları
 

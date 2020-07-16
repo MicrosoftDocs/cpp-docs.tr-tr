@@ -12,36 +12,36 @@ helpviewer_keywords:
 - catalog functions (ODBC), calling
 - ODBC [C++], API functions
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
-ms.openlocfilehash: 208749438f40eef746a638dd12373397c426d454
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e1cb5df4a93fc642ccf4d500a5eb93690b0b3d75
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368662"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403834"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API İşlevlerini Doğrudan Çağırma
 
-Veritabanı sınıfları, veri [kaynağına](../../data/odbc/data-source-odbc.md) ODBC'den daha basit bir arabirim sağlar. Sonuç olarak, sınıflar tüm ODBC API kapsüllemek yok. Sınıfların yeteneklerinin dışına düşen herhangi bir işlevsellik için, Doğrudan ODBC API işlevlerini aramanız gerekir. Örneğin, ODBC katalog işlevlerini`::SQLColumns`(, `::SQLProcedures` `::SQLTables`, , ve diğerleri) doğrudan aramanız gerekir.
+Veritabanı sınıfları, ODBC 'den farklı bir [veri kaynağına](../../data/odbc/data-source-odbc.md) daha basit bir arabirim sağlar. Sonuç olarak, sınıflar tüm ODBC API 'leri kapsületmez. Sınıfların yeteneklerini aşacak olan tüm işlevler için doğrudan ODBC API işlevlerini çağırmanız gerekir. Örneğin, ODBC katalog işlevlerini (,, `::SQLColumns` `::SQLProcedures` `::SQLTables` , ve diğerleri) doğrudan çağırmanız gerekir.
 
 > [!NOTE]
-> ODBC veri kaynaklarına, bu konuda açıklandığı gibi MFC ODBC sınıfları veya MFC Veri Erişim Nesnesi (DAO) sınıfları aracılığıyla erişilebilir.
+> ODBC veri kaynaklarına, bu konuda açıklandığı gibi MFC ODBC sınıfları aracılığıyla veya MFC veri erişim nesnesi (DAO) sınıfları aracılığıyla erişilebilir.
 
-Bir ODBC API işlevini doğrudan aramak için, çağrıları çerçeve olmadan yapıyorsanız, aynı adımları atmanız gerekir. Bunlar şunlardır:
+Bir ODBC API işlevini doğrudan çağırmak için, çerçeve olmadan çağrılar yaparken gerçekleştirebileceğiniz adımların aynısını uygulamanız gerekir. Adımlar şunlardır:
 
-- Aramanın iade edilen tüm sonuçlar için depolama alanı ayırın.
+- Çağrının döndürdüğü tüm sonuçlar için depolama alanı ayırın.
 
-- İşlevin parametre imzasını bağlı olarak bir ODBC `HDBC` veya `HSTMT` tutamacı geçirin. ODBC tutamacını almak için [AFXGetHENV](../../mfc/reference/database-macros-and-globals.md#afxgethenv) makroyu kullanın.
+- `HDBC` `HSTMT` İşlevin parametre imzasına bağlı olarak bir ODBC veya tanıtıcı geçirin. ODBC tanıtıcısını almak için [AFXGetHENV](../../mfc/reference/database-macros-and-globals.md#afxgethenv) makrosunu kullanın.
 
-   Üye `CDatabase::m_hdbc` değişkenleri `CRecordset::m_hstmt` ve bunları kendiniz ayırmanız ve başlatmanız gerekmesin diye kullanılabilir.
+   Üye değişkenleri `CDatabase::m_hdbc` ve `CRecordset::m_hstmt` bunları kendiniz ayırmanız ve başlatmak zorunda değilsiniz.
 
-- Belki de ana çağrıya hazırlanmak veya takip etmek için ek ODBC işlevlerini arayın.
+- Büyük olasılıkla ana çağrıyı hazırlamak veya izlemek için ek ODBC işlevleri çağırabilir.
 
-- İşlem bittiğinde depolama alanını bulun.
+- Bitirdiğinizde depolamayı serbest bırakın.
 
-Bu adımlar hakkında daha fazla bilgi için MSDN belgelerindeki [Açık Veritabanı Bağlantısı (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK'ya bakın.
+Bu adımlar hakkında daha fazla bilgi için bkz. [ODBC Programcı başvurusu](/sql/odbc/reference/odbc-programmer-s-reference).
 
-Bu adımlara ek olarak, işlev iade değerlerini denetlemek için ek adımlar atmanız, programınızın bitiş için asynchronous arama beklemediğinden emin olmanız ve söz leri s makrolar ve AFX_SQL_SYNC AFX_SQL_ASYNC kullanarak bu son adımları basitleştirebilirsiniz. Daha fazla bilgi için *MFC Başvurusu'ndaki* [Makrolar ve Genel Bilgiler'e](../../mfc/reference/mfc-macros-and-globals.md) bakın.
+Bu adımlara ek olarak, işlev dönüş değerlerini denetlemek için ek adımlar gerçekleştirmeniz, programınızın zaman uyumsuz bir çağrının bitmesini beklemediğinden emin olmak ve bu şekilde devam etmeniz gerekir. AFX_SQL_ASYNC ve AFX_SQL_SYNC makrolarını kullanarak bu son adımları kolaylaştırabilirsiniz. Daha fazla bilgi için bkz. [MFC makroları ve genel](../../mfc/reference/mfc-macros-and-globals.md)öğeleri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ODBC Temelleri](../../data/odbc/odbc-basics.md)
+[ODBC temelleri](../../data/odbc/odbc-basics.md)

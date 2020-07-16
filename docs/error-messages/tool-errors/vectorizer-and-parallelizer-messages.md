@@ -8,16 +8,16 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 4f105558d7795210e1edb2470af4e50326f49de6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1cdbb40d06d2b3da7e6444e3a6743c6e6ae1c874
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182207"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86405006"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör haline getirici ve paralel hale getirici iletileri
 
-Otomatik paralelleştirme ve otomatik C++ vektörleştirme için Microsoft derleyici seçenekleri [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ' u kullanarak, etkinliğinizi ve etkinlikleriyle ilgili bilgilendirme iletilerini [Otomatik paralelleştirme ve otomatik vektörleştirmeyi](../../parallel/auto-parallelization-and-auto-vectorization.md) ayarlayabilirsiniz. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
+[Otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) ' ı, etkinlik hakkında bilgi iletileri ve bilgilendirici iletiler olarak ayarlamak için, [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) Microsoft C++ derleyici seçenekleri ' ni kullanabilirsiniz. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
 
 ## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a>Bilgilendirici iletiler
 
@@ -964,10 +964,10 @@ void code_1505(int *A, int *B)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ ](../compiler-errors-1/c-cpp-build-errors.md) [Otomatik paralelleştirme ve otomatik vektör haline getirme](../../parallel/auto-parallelization-and-auto-vectorization.md)
-C/derleyici ve derleme araçları hataları ve uyarıları \
-[Visual Studio 2012 'de otomatik Vektörleştirici: genel bakış](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/) \
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) 
+ [Otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) \
+[Visual Studio 'da otomatik Vektörleştirici 2012 – genel bakış](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview) \
 [#pragma döngüsü ()](../../preprocessor/loop.md) \
-[/Q seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md) \
+[/Q seçenekler (düşük düzey Işlemler)](../../build/reference/q-options-low-level-operations.md) \
 [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) \
-[/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)
+[/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md)

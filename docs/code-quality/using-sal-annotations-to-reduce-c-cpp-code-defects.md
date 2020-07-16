@@ -7,12 +7,12 @@ helpviewer_keywords:
 - SAL annotations
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-ms.openlocfilehash: bfd6a58c7dc8664dce91906279a62380768a5c65
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 1d47608137e2a9d9ed13740a5f4424cc0aff2902
+ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418713"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403900"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 
@@ -20,7 +20,7 @@ SAL, Microsoft kaynak kodu ek açıklama dilidir. Kaynak kodu ek açıklamaları
 
 Belgelerinin bu bölümündeki makaleler SAL 'un yönlerini tartışmaktadır, SAL söz dizimi için başvuru sağlar ve kullanım örnekleri sunar.
 
-- [SAL'yi Anlama](../code-quality/understanding-sal.md)
+- [SAL'ı Anlama](../code-quality/understanding-sal.md)
 
      Çekirdek SAL ek açıklamalarını gösteren bilgiler ve örnekler sağlar.
 
@@ -44,17 +44,13 @@ Belgelerinin bu bölümündeki makaleler SAL 'un yönlerini tartışmaktadır, S
 
      Diğer SAL ek açıklamaların koşulunu veya kapsamını (yerleşimini) belirten SAL ek açıklamalarını listeler.
 
-- [İç İşlevler](../code-quality/intrinsic-functions.md)
+- [İç Işlevler](../code-quality/intrinsic-functions.md)
 
      İç SAL ek açıklamalarını listeler.
 
 - [En İyi Yöntemler ve Örnekler](../code-quality/best-practices-and-examples-sal.md)
 
      SAL ek açıklamalarını nasıl kullanacağınızı gösteren örnekler sağlar. Ayrıca, genel sınırları da açıklar.
-
-## <a name="related-resources"></a>İlgili Kaynaklar
-
-[Kod Analizi ekip blogu](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
