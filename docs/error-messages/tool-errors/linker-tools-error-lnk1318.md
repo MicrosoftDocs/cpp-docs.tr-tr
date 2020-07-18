@@ -5,12 +5,12 @@ f1_keywords:
 - LNK1318
 helpviewer_keywords:
 - LNK1318
-ms.openlocfilehash: a61c11a9cbb25fea6fddc0bf1c5c4c2a7af1cf4f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cce2c03783039a62b5cb6f60ecf8d76b23589483
+ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183585"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86446719"
 ---
 # <a name="linker-tools-error-lnk1318"></a>Bağlayıcı Araçları Hatası LNK1318
 
@@ -24,7 +24,7 @@ Hatanın kaynağı seyrek olduğundan, bu sorunu çözmek için yalnızca genel 
 
 - Yapı dizinlerinizde temiz bir işlem gerçekleştirin ve ardından çözümünüzün tam bir derlemesini yapın.
 
-- Bilgisayarınızı yeniden başlatın veya başıya veya askıda bir mspdbsrv. exe işlemini denetleyip TaskManager 'da sonlandırın.
+- Bilgisayarınızı yeniden başlatın veya boş veya yanıt vermeyen mspdbsrv.exe süreçlerini denetleyip TaskManager 'da sonlandırın.
 
 - Proje dizinlerinizde virüsten koruma denetimlerini devre dışı bırakın.
 
@@ -32,4 +32,4 @@ Hatanın kaynağı seyrek olduğundan, bu sorunu çözmek için yalnızca genel 
 
 - 64 bitlik barındırılan araç takımını kullanarak oluşturmayı deneyin.
 
-- Gerektiğinde paralel bağlantı sorunlarını azaltmak için bağlamayı serileştirme. Bu hata, mspdbsrv. exe ' nin bir bağlantı örneği tarafından başlatılmasının ve başka bir bağlantı örneği kullanılarak yapılmasından önce kapatılmasından kaynaklanabilir. Bu düzeltmeyle ilgili dezavantajı, proje derlemelerinizin tamamlanması önemli ölçüde uzun sürebilir.
+- Gerektiğinde paralel bağlantı sorunlarını azaltmak için bağlamayı serileştirme. Bu hata, mspdbsrv.exe bir bağlantı örneği tarafından başlatılmışsa ve başka bir bağlantı örneği kullanılarak kapanmadan önce kapalıysa oluşur. Bu düzeltmeyle ilgili dezavantajı, proje derlemelerinizin tamamlanması önemli ölçüde uzun sürebilir.

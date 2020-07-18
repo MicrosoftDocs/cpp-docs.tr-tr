@@ -3,12 +3,12 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: f4b22cd11bcdee3d7dc2fe232642c02a331354bc
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 6813a119453bfd365763269169f1291fa165bdcd
+ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404980"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86446876"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -70,7 +70,7 @@ Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltm
 
 - Paralel algoritmalar kitaplığı için çalışma zamanı dinamik bağlama algılaması, artık işlev işaretçisi dizisini depolamak için bir sayfanın tamamını kullanmaz. Bu belleği salt okunurdur olarak işaretlemek artık güvenlik amaçları için uygun değildir.
 
-- `std::thread`' nin Oluşturucusu artık iş parçacığının başlamasını beklemez ve artık temel alınan C Kitaplığı `_beginthreadex` ve sağlanan çağrılabilir nesne arasında işlev çağrılarının birçok katmanını eklememe. Daha önce `std::thread` `_beginthreadex` ve sağlanan çağrılabilir nesne arasına altı işlev yerleştirin. Bu sayı yalnızca üçüne düşürüldü, ikisi de yalnızca üç `std::invoke` . Bu değişiklik Ayrıca, `std::thread` sistem saati oluşturulduğu anda tam olarak değiştirilirse bir oluşturucunun askıda kalması halinde, kesin bir zamanlama hatasını giderir `std::thread` .
+- `std::thread`' nin Oluşturucusu artık iş parçacığının başlamasını beklemez ve artık temel alınan C Kitaplığı `_beginthreadex` ve sağlanan çağrılabilir nesne arasında işlev çağrılarının birçok katmanını eklememe. Daha önce `std::thread` `_beginthreadex` ve sağlanan çağrılabilir nesne arasına altı işlev yerleştirin. Bu sayı yalnızca üçüne düşürüldü, ikisi de yalnızca üç `std::invoke` . Bu değişiklik Ayrıca, `std::thread` sistem saati oluşturulduğu anda tam olarak değiştirilirse bir oluşturucunun yanıt vermemesine neden olan, kesin bir zamanlama hatasını giderir `std::thread` .
 
 - `std::hash`Uygulamamız sırasında tanıtıldığımız bir performans gerileme düzeltildi `std::hash<std::filesystem::path>` .
 
@@ -590,7 +590,7 @@ Visual Studio 2017, MSBuild proje dosyalarına (. vcxproj) dönüştürülmeksiz
 
 Özgün C++ iş yükünü yüklemek için şimdi daha ayrıntılı bir yükleme deneyimi sağlıyoruz. Tam olarak ihtiyacınız olan araçları yükleyebilmenizi sağlayan, seçilebilir bileşenler ekledik. Yükleyici Kullanıcı arabiriminde listelenen bileşenlere ilişkin belirtilen yükleme boyutları yanlış ve toplam boyutu düşük olarak tahmin edilir.
 
-C++ masaüstü iş yükünde Win32 projelerini başarıyla oluşturabilmek için, hem araç takımını hem de Windows SDK’yi yüklemelisiniz. Çalıştığından emin olmak için önerilen (seçili) bileşenleri **VC + + 2017 v141 araç takımı (x86, x64)** ve **Windows 10 SDK (10.0.** Gerekli araçlar yüklü değilse, projeler başarıyla oluşturulmaz ve sihirbaz askıda kalır.
+C++ masaüstü iş yükünde Win32 projelerini başarıyla oluşturabilmek için, hem araç takımını hem de Windows SDK’yi yüklemelisiniz. Çalıştığından emin olmak için önerilen (seçili) bileşenleri **VC + + 2017 v141 araç takımı (x86, x64)** ve **Windows 10 SDK (10.0.** Gerekli araçlar yüklü değilse, projeler başarıyla oluşturulmaz ve sihirbaz yanıt vermeyi durdurur.
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
