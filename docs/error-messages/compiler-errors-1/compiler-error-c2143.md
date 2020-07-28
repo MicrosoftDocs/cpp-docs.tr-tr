@@ -1,29 +1,29 @@
 ---
-title: Derleyici Hatası C2143
+title: Derleyici hatası C2143
 ms.date: 11/04/2016
 f1_keywords:
 - C2143
 helpviewer_keywords:
 - C2143
 ms.assetid: 1d8d1456-e031-4965-9240-09a6e33ba81c
-ms.openlocfilehash: ed4bc7eea85e5263d59817082caed99bde3d75d5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 310083a650f842c6c0f0912efe1ceddb66c4fd6f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62353488"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214756"
 ---
-# <a name="compiler-error-c2143"></a>Derleyici Hatası C2143
+# <a name="compiler-error-c2143"></a>Derleyici hatası C2143
 
-sözdizimi hatası: 'token2' önce ' token1' eksik
+sözdizimi hatası: ' token1 ', ' token2 ' öncesinde yok
 
-Derleyici, belirli bir belirteç (diğer bir deyişle, boşluk dışında dil öğesi) beklenen ve bunun yerine farklı bir belirteç bulundu.
+Derleyici belirli bir belirteci (diğer bir deyişle, beyaz boşluk dışında bir dil öğesi) bekliyordu ve bunun yerine başka bir belirteç buldu.
 
-Denetleme [C++ dil başvurusu](../../cpp/cpp-language-reference.md) kod sözdizimsel olarak yanlış olduğu belirlemek için. Soruna neden olan satır karşılaştıktan sonra derleyici bu hatayı rapor edebilir çünkü hata önünde birkaç kod satırlarını denetleyin.
+Kodun sözdizimsel olarak yanlış olduğunu öğrenmek için [C++ dil başvurusunu](../../cpp/cpp-language-reference.md) denetleyin. Derleyici soruna neden olan satırı bulduktan sonra bu hatayı rapor edebilir, hatanın önündeki birkaç kod satırını kontrol edin.
 
-C2143 farklı durumlarda ortaya çıkabilir.
+C2143, farklı durumlarda gerçekleşebilir.
 
-Bir ad belirtebilme operatörün olduğunda oluşabilir (`::`, `->`, ve `.`) anahtar sözcüğüyle gelmelidir `template`, bu örnekte olduğu gibi:
+Bir adı ( `::` ,, ve) uygun olmayan bir operatör `->` `.` anahtar sözcüğü gelmelidir **`template`** , bu örnekte olduğu gibi olabilir:
 
 ```cpp
 class MyClass
@@ -35,7 +35,7 @@ class MyClass
 };
 ```
 
-Varsayılan olarak, C++ olduğunu varsayar `Ty::PutFuncType` olmayan bir şablon; bu nedenle, aşağıdaki `<` daha az yorumlanır-işareti.  Derleyici açıkça, bildirmeniz gerekir `PutFuncType` böylece doğru açılı ayraç ayrıştırmak bir şablondur. Bu hatayı düzeltmek için `template` anahtar sözcüğü, burada gösterildiği gibi bağımlı tür adı:
+Varsayılan olarak, C++ `Ty::PutFuncType` bir şablon olmadığını varsayar; bu nedenle, aşağıdakiler `<` küçüktür işareti olarak yorumlanır.  Derleyiciye, `PutFuncType` açılı ayracın doğru ayrıştırabilmesi için açıkça bir şablon olduğunu söylemelisiniz. Bu hatayı düzeltmek için, **`template`** aşağıda gösterildiği gibi bağımlı türün adında anahtar sözcüğünü kullanın:
 
 ```cpp
 class MyClass
@@ -47,7 +47,7 @@ class MyClass
 };
 ```
 
-C2143 gerçekleşebilir, **/CLR** kullanılır ve `using` yönergesi sözdizimi hatası var:
+**/Clr** kullanıldığında ve bir yönergede sözdizimi hatası olduğunda, C2143 oluşabilir **`using`** :
 
 ```cpp
 // C2143a.cpp
@@ -56,7 +56,7 @@ using namespace System.Reflection;   // C2143
 using namespace System::Reflection;
 ```
 
-Ayrıca kullanmadan CLR söz dizimini kullanarak bir kaynak kodu dosyasını derlemek çalışırken de oluşabilir **/CLR**:
+CLR sözdizimi kullanarak bir kaynak kodu dosyasını derlemeye çalıştığınızda da bu durum **/clr**:
 
 ```cpp
 // C2143b.cpp
@@ -70,7 +70,7 @@ int main() {
 }
 ```
 
-İzleyen ilk boşluk olmayan karakter bir `if` deyimi bir sol ayraç olması gerekir. The compiler cannot translate anything else:
+Bir ifadeyi izleyen ilk boşluk olmayan karakter **`if`** bir sol parantez olmalıdır. Derleyici başka bir şey çeviremez:
 
 ```cpp
 // C2143c.cpp
@@ -85,7 +85,7 @@ int main() {
 }
 ```
 
-C2143, hatanın algılandığı yere satırında bir kapanış ayracı, parantez veya noktalı virgül eksik oluşur veya satırlardan birini yukarıda yalnızca:
+Hatanın algılanmakta olduğu satırda veya yukarıdaki satırlardan birinde bir kapanış ayracı, parantez veya noktalı virgül eksik olduğunda C2143 oluşabilir:
 
 ```cpp
 // C2143d.cpp
@@ -96,7 +96,7 @@ class X {
 } x;
 ```
 
-Veya bir sınıf bildiriminde geçersiz bir etiketi olduğunda:
+Ya da bir sınıf bildiriminde geçersiz bir etiket olduğunda:
 
 ```cpp
 // C2143e.cpp
@@ -108,7 +108,7 @@ class + {};   // C2143 + is an invalid tag name
 class ValidName {};   // OK
 ```
 
-Veya bir etiket ne zaman bir deyime bağlı değil. Örneğin, tek başına bir etiket yerleştirmeniz gerekir, bileşik bir deyimin sonunda, için boş bir deyimi ekleyin:
+Bir etiket bir ifadeye iliştirilmişse. Bir etiketi kendisine yerleştirmeniz gerekiyorsa (örneğin, bileşik bir deyimin sonunda), onu null ifadesine ekleyin:
 
 ```cpp
 // C2143f.cpp
@@ -122,7 +122,7 @@ void func1() {
 }
 ```
 
-C++ Standart Kitaplığı'nda bir tür nitelenmemiş bir çağrı yapıldığında hata oluşabilir:
+C++ standart kitaplığındaki bir tür için nitelenmemiş bir çağrı yapıldığında hata ortaya çıkabilir:
 
 ```cpp
 // C2143g.cpp
@@ -132,7 +132,7 @@ static vector<char> bad;   // C2143
 static std::vector<char> good;   // OK
 ```
 
-Veya eksik bir `typename` anahtar sözcüğü:
+Ya da eksik bir **`typename`** anahtar sözcük var:
 
 ```cpp
 // C2143h.cpp
@@ -151,7 +151,7 @@ X<T>::Y X<T>::memFunc() {   // C2143
 }
 ```
 
-Veya bir açık örnek oluşturma tanımlamak çalışırsanız:
+Açık bir örnek oluşturma da tanımlamaya çalışırsanız:
 
 ```cpp
 // C2143i.cpp
@@ -164,7 +164,7 @@ template void PrintType(float i, float j){}   // C2143
 template void PrintType(float i, float j);   // OK
 ```
 
-C programında, işlevin başında değişkenleri bildirilmelidir ve işlev bildirimi olmayan yönergeleri yürütüldükten sonra bunlar bildirilemez.
+C programında değişkenlerin işlevin başlangıcında bildirilmesi gerekir ve işlevin bildirim dışı yönergeleri yürüttüğünde bu, bildirilemez.
 
 ```C
 // C2143j.c

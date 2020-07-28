@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4145
 ms.assetid: 0440777a-cca2-4159-aff5-e67a254ad64a
-ms.openlocfilehash: 5028ae20c2413c98fa55bd81081552d22381cdbc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 19d2d1a018c7ee981f83aa6fa0914f1241c55538
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163682"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220112"
 ---
 # <a name="compiler-warning-level-1-c4145"></a>Derleyici Uyarısı (düzey 1) C4145
 
 ' İfade1 ': switch ifadesi olarak ilişkisel ifade; ' İfade2 ' ile olası karışıklık
 
-`switch` deyimi, bir ilişkisel ifadeyi denetim ifadesi olarak kullanır, bu da **Case** deyimlerinin Boole değeriyle sonuçlanır. *İfade2*' i mi demek istediniz?
+Deyim, bir **`switch`** ilişkisel ifadeyi denetim ifadesi olarak kullanır, bu da deyimler için bir Boolean değer ile sonuçlanır **`case`** . *İfade2*' i mi demek istediniz?
 
 ## <a name="example"></a>Örnek
 

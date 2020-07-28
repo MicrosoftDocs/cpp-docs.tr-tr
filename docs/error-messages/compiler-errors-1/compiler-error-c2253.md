@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2253
 ms.assetid: bd6445ae-b2c1-4669-9657-a8f4acf80b16
-ms.openlocfilehash: 89acfd8a03dc0ee2dc25e14e0b3a63ab25151cc6
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3110c608879d43405d619f7e3beca03ecab8cbee
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758859"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214717"
 ---
 # <a name="compiler-error-c2253"></a>Derleyici hatası C2253
 
 ' function ': saf belirtici veya soyut geçersiz kılma belirticisi yalnızca sanal işlevde kullanılabilir
 
-Sanal olmayan bir işlev saf `virtual`olarak belirtilir.
+Sanal olmayan bir işlev saf olarak belirtilir **`virtual`** .
 
 Aşağıdaki örnek C2253 oluşturur:
 

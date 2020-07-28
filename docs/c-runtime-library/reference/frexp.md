@@ -32,18 +32,18 @@ helpviewer_keywords:
 - frexp function
 - floating-point functions, mantissa and exponent
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
-ms.openlocfilehash: d539a9ebb4042b18e6ec1ef8ed204a61cc7bb8cc
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 34d8877d4b8372a33fb5f0f6095a7027cae50555
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911614"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220710"
 ---
 # <a name="frexp-frexpf-frexpl"></a>frexp, frexpf, frexpl
 
 Kayan noktalı sayının Mantis ve üstürünü alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double frexp(
@@ -70,7 +70,7 @@ long double frexp(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 *expptr*<br/>
@@ -82,9 +82,9 @@ Depolanan tamsayı üs işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Frexp** işlevi kayan nokta değerini (*x*) bir Mantis (*e*) ve üs (*n*) olarak ayırır; Örneğin, sıfırdan büyük değer *0,5, 1,0* ' den küçük ve *x* = *e* * 2<sup>*n*</sup>. Tamsayı üssü *n* , *expptr*tarafından işaret edilen konumda depolanır.
+**Frexp** işlevi kayan nokta değerini (*x*) bir Mantis (*e*) ve üs (*n*) olarak ayırır; Örneğin, sıfırdan büyük değer *0,5, 1,0* ' den küçük ve *x*  =  *e* * 2<sup>*n*</sup>. Tamsayı üssü *n* , *expptr*tarafından işaret edilen konumda depolanır.
 
-C++ aşırı yüklemeye izin verdiğinden, **frexp**aşırı yüklerini çağırabilirsiniz. C programında, **frexp** her zaman **çift** ve bir **int** işaretçisi alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **frexp**aşırı yüklerini çağırabilirsiniz. C programında, **frexp** her zaman bir ve bir **`double`** işaretçi alır **`int`** ve bir döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -92,7 +92,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**frexp**, **frexpf**, **frexpl**|\<Math. h>|
+|**frexp**, **frexpf**, **frexpl**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -123,6 +123,6 @@ frexp( 16.400000, &n ) = 0.512500, n = 5
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ldexp](ldexp.md)<br/>
 [modf, modff, modfl](modf-modff-modfl.md)<br/>

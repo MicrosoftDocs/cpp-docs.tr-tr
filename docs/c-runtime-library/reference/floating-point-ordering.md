@@ -21,18 +21,18 @@ helpviewer_keywords:
 - islessequal function
 - islessgreater function
 - isunordered function
-ms.openlocfilehash: 748360cae1dd0ee43645dee369c60c835246ed03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 907b26f4e1824d7ef5c7c1a36b4e4d8ccb74c978
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62333709"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220723"
 ---
 # <a name="isgreater-isgreaterequal-isless-islessequal-islessgreater-isunordered"></a>isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered
 
-İki kayan nokta değerleri arasında sıralama ilişkisi belirler.
+İki kayan nokta değeri arasındaki sıralama ilişkisini belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int isgreater(
@@ -111,29 +111,29 @@ Karşılaştırılacak kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tüm karşılaştırmalar aynı oturum sonsuz eşit olarak karşılaştırılır. Az sınırlı veya pozitif sonsuz, negatif sonsuz değerdir. Pozitif sonsuz, herhangi bir değer sınırlı veya negatif sonsuz büyüktür. Sıfır bağımsız olarak oturum eşit olur. NaN'ler diğerinden daha küçük, ona eşit veya ondan büyük başka bir NaN dahil olmak üzere herhangi bir değer değildir.
+Tüm karşılaştırmalarda, aynı imza karşılaştırmalarının eşit olduğu sonsuz. Negatif sonsuzluk, sınırlı değerden veya pozitif sonsuzdan daha az. Pozitif sonsuzluk, sınırlı değerden veya negatif sonsuzdan daha büyük. Sıfır işareti ne olursa olsun eşittir. NaNs, başka bir NaN da dahil olmak üzere herhangi bir değerden küçük, eşit veya daha büyük değil.
 
-Her iki bağımsız değişken, bir NaN sıralama makroları olduğunda **isgreater**, **isgreaterequal**, **isless**, ve **islessequal** sıfır olmayan değerini döndürür değeri belirtilen sıralama ilişki arasında *x* ve *y* geçerlidir. Bu makrolar, NaN'ler biri veya her ikisi bağımsız değişkenler veya sıralama ilişki false ise, 0 değerini döndürür. İşlev forms aynı şekilde davranır, ancak iade **true** veya **false**.
+Bağımsız değişken bir NaN olduğunda, *x* ve *y* arasında belirtilen sıralama ilişkisi doğru tutuyorsa **sıralama makroları,** **isgreaterequal**, **ısless**ve **islessequal** sıfır olmayan bir değer döndürür. Bu makrolar, ya da her iki bağımsız değişkeni NaNs ise veya sıralama ilişkisi yanlışsa 0 döndürür. İşlev formları aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
 
-**İslessgreater** makrosu, her iki sıfır olmayan bir değer döndürür *x* ve *y* , NaN'ler değil ve *x* ya da küçük veya bu büyüktür*y*. NaN'ler biri veya her ikisi bağımsız değişkenler veya değerler eşitse 0 döndürür. İşlev formun aynı şekilde davranır, ancak döndürür **true** veya **false**.
+Her ikisi de *x* ve *y* , nans değilse ve *x* , *y*'den küçük ya da daha büyükse, **ılessdaha fazla** makro sıfır olmayan bir değer döndürür. Ya da her iki bağımsız değişken NaNs ise veya Değerler eşitse 0 döndürür. İşlev formu aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
 
-**İsunordered** makrosu ya da sıfır olmayan bir değer döndürür *x*, *y*, veya her ikisi de NaN'ler olan. Aksi durumda 0 döndürür. İşlev formun aynı şekilde davranır, ancak döndürür **true** veya **false**.
+**Isýralanmamýþ** Macro, *x*, *y*ya da her ikisi de nans olduğunda sıfır olmayan bir değer döndürür. Aksi takdirde, 0 döndürür. İşlev formu aynı şekilde davranır, ancak **`true`** veya döndürür **`false`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu karşılaştırma işlemleri, C ve C++ derlendiğinde şablon işlevleri satır içi olarak derlendiğinde makrolar olarak uygulanır.
+Bu karşılaştırma işlemleri, C olarak derlendiğinde makrolar olarak ve C++ olarak derlendiğinde satır içi şablon işlevleri olarak uygulanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
+|İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------------|-------------------------------|
-| **isgreater**, **isgreaterequal**, **isless**,<br/>**islessequal**, **islessgreater**, **isunordered** | \<Math.h > | \<Math.h > veya \<cmath > |
+| **isbüyüktü**, **isgreaterequal**, **isküçüktür**,<br/>**islessequal**, **islessdaha büyük**, **ısýralanmamýþ** | \<math.h> | \<math.h> veya \<cmath> |
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>
 [isinf](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

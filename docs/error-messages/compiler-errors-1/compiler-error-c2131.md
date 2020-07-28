@@ -1,26 +1,26 @@
 ---
-title: Derleyici Hatası C2131
+title: Derleyici hatası C2131
 ms.date: 02/28/2019
 f1_keywords:
 - C2131
 helpviewer_keywords:
 - C2131
-ms.openlocfilehash: 19bdf73efa82e624382446c94642ceddac00bf2e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9e5dc328375f720ad39ce57a3da500e0bedcb468
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62397594"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220424"
 ---
-# <a name="compiler-error-c2131"></a>Derleyici Hatası C2131
+# <a name="compiler-error-c2131"></a>Derleyici hatası C2131
 
-> ifade bir sabite Değerlendirilmedi
+> ifade bir sabit değer değerlendirmedi
 
-Bir ifade olarak bildirilen **const** veya **constexpr** derleme zamanında bir sabite değerlendirmek oldu. Derleyici kullanıldığı noktada ifadenin değerini belirlemek mümkün olması gerekir.
+**`const`** Derleme zamanında bir sabiti olarak belirtilen veya **`constexpr`** değerlendirilmeyen bir ifade. Derleyicinin, kullanıldığı noktada ifadenin değerini belirleyebilmelidir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, bir hata C2131 ve sorunun nasıl neden şekilde gösterir.
+Bu örnek, hata C2131 ve sorunun nasıl düzeltileceğini gösteren bir yol gösterir.
 
 ```cpp
 // c2131.cpp

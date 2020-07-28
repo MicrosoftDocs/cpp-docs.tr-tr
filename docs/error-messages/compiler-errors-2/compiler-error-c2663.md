@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2663
 ms.assetid: 1e93e368-fd52-42bf-9908-9b6df467c8c9
-ms.openlocfilehash: f07b63202d8f171dfb69f4bb294b392152b9290b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f9746ecb41e873fb1d929a939c78f1817dc0e2f9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756038"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220281"
 ---
 # <a name="compiler-error-c2663"></a>Derleyici hatası C2663
 
 ' function ': sayı aşırı yüklemelerinin ' this ' işaretçisi için geçerli dönüştürmesi yok
 
-Derleyici, üye işlevinin aşırı yüklenmiş sürümlerinden hiçbirine `this` dönüştüremedi.
+Derleyici, **`this`** üye işlevinin aşırı yüklenmiş sürümlerinden hiçbirine dönüştürülemedi.
 
-Bu hata, bir `const` nesnesi üzerinde`const` olmayan bir üye işlevi çağırarak oluşabilir.  Olası çözümler:
+Bu hata, **`const`** bir nesne üzerinde üye olmayan bir işlev çağırarak oluşabilir **`const`** .  Olası çözümler:
 
-1. Nesne bildiriminden `const` kaldırın.
+1. **`const`** Nesne bildiriminden öğesini kaldırın.
 
-1. Üye işlev aşırı yüklemelerinin birine `const` ekleyin.
+1. **`const`** Üye işlev aşırı yüklemelerinin birine ekleyin.
 
 Aşağıdaki örnek C2663 oluşturur:
 

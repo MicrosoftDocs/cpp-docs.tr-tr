@@ -25,18 +25,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ComPtrRef::operator void** operator
 - Microsoft::WRL::Details::ComPtrRef::ReleaseAndGetAddressOf method
 ms.assetid: d6bdfd20-e977-45b4-9ac1-1b8efbdb77de
-ms.openlocfilehash: df9ded817227547493c04035e0abc3d948e24495
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f92a3e14018cf8c02dec40b664b72a0956f6220e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372630"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220541"
 ---
 # <a name="comptrref-class"></a>ComPtrRef Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename T>
@@ -46,37 +46,37 @@ class ComPtrRef : public ComPtrRefBase<T>;
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-[ComPtr\<T>](comptr-class.md) türü veya ondan türetilen bir tür, sadece arayüz tarafından temsil edilen . `ComPtr`
+Bir [ComPtr \<T> ](comptr-class.md) türü veya ondan türetilmiş bir tür veya yalnızca tarafından temsil edilen arabirim değil `ComPtr` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türdeki `ComPtr<T>`bir nesneye başvurutemsil eder.
+Türündeki bir nesneye yapılan başvuruyu temsil eder `ComPtr<T>` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Adı                               | Açıklama
+Ad                               | Açıklama
 ---------------------------------- | -------------------------------------------------------------------------------------------------------------
-[ComPtrRef::ComPtrRef](#comptrref) | Belirtilen işaretçiden başka `ComPtrRef` `ComPtrRef` bir nesneye sınıfın yeni bir örneğini başolarak adlandırır.
+[ComPtrRef:: ComPtrRef](#comptrref) | `ComPtrRef`Belirtilen işaretçiden başka bir nesneye sınıfın yeni bir örneğini başlatır `ComPtrRef` .
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                                         | Açıklama
+Ad                                                         | Açıklama
 ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------
-[ComPtrRef::GetAddressOf](#getaddressof)                     | Geçerli `ComPtrRef` nesne tarafından temsil edilen arabirimin işaretçi adresini alır.
-[ComPtrRef::ReleaseAndGetAddressOf](#releaseandgetaddressof) | Geçerli `ComPtrRef` nesneyi siler ve `ComPtrRef` işaretçiden işaretçiye nesne tarafından temsil edilen arabirime döndürür.
+[ComPtrRef:: GetAddressOf](#getaddressof)                     | Geçerli nesne tarafından temsil edilen arabirime yönelik işaretçinin adresini alır `ComPtrRef` .
+[ComPtrRef:: ReleaseAndGetAddressOf](#releaseandgetaddressof) | Geçerli nesneyi siler `ComPtrRef` ve nesne tarafından temsil edilen arabirime bir işaretçi işaretçisi döndürür `ComPtrRef` .
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Adı                                                                     | Açıklama
+Ad                                                                     | Açıklama
 ------------------------------------------------------------------------ | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[ComPtrRef::operatör InterfaceType**](#operator-interfacetype-star-star) | Geçerli `ComPtrRef` nesneyi siler ve `ComPtrRef` işaretçiden işaretçiye nesne tarafından temsil edilen arabirime döndürür.
-[ComPtrRef::operatör T*](#operator-t-star)                               | Geçerli ComPtrRef nesnesinin [ptr_](comptrrefbase-class.md#ptr) veri üyesinin değerini verir.
-[ComPtrRef::operatör geçersiz**](#operator-void-star-star)                   | Geçerli `ComPtrRef` nesneyi siler, işaretçiyi `ComPtrRef` nesne tarafından temsil edilen arabirime işaretçiye `void`işaretçi olarak atar ve ardından döküm işaretçisini döndürür.
-[ComPtrRef::operatör*](#operator-star)                                   | Geçerli `ComPtrRef` nesne tarafından temsil edilen arabirimin işaretçisini alır.
-[ComPtrRef::operator==](#operator-equality)                              | İki nesnenin `ComPtrRef` eşit olup olmadığını gösterir.
-[ComPtrRef::operatör!=](#operator-inequality)                            | İki nesnenin `ComPtrRef` eşit olup olmadığını gösterir.
+[ComPtrRef:: operator InterfaceType * *](#operator-interfacetype-star-star) | Geçerli nesneyi siler `ComPtrRef` ve nesne tarafından temsil edilen arabirime bir işaretçi işaretçisi döndürür `ComPtrRef` .
+[ComPtrRef:: operator T *](#operator-t-star)                               | Geçerli ComPtrRef nesnesinin [ptr_](comptrrefbase-class.md#ptr) veri üyesinin değerini döndürür.
+[ComPtrRef:: operator void * *](#operator-void-star-star)                   | Geçerli nesneyi siler `ComPtrRef` , işaretçiyi nesne tarafından bir işaretçi işaretçisi olarak temsil edilen arabirime çevirir `ComPtrRef` **`void`** ve sonra atama işaretçisini döndürür.
+[ComPtrRef:: operator *](#operator-star)                                   | Geçerli nesne tarafından temsil edilen arabirime işaretçiyi alır `ComPtrRef` .
+[ComPtrRef:: operator = =](#operator-equality)                              | İki nesnenin eşit olup olmadığını gösterir `ComPtrRef` .
+[ComPtrRef:: operator! =](#operator-inequality)                            | İki nesnenin eşit olup olmadığını gösterir `ComPtrRef` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -86,13 +86,13 @@ Adı                                                                     | Açı
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** client.h
+**Üstbilgi:** Client. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="comptrrefcomptrref"></a><a name="comptrref"></a>ComPtrRef::ComPtrRef
+## <a name="comptrrefcomptrref"></a><a name="comptrref"></a>ComPtrRef:: ComPtrRef
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 ComPtrRef(
@@ -102,16 +102,16 @@ ComPtrRef(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ptr*<br/>
-Başka bir `ComPtrRef` nesnenin temel değeri.
+*ptr*<br/>
+Başka bir nesnenin temel alınan değeri `ComPtrRef` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen işaretçiden başka `ComPtrRef` `ComPtrRef` bir nesneye sınıfın yeni bir örneğini başolarak adlandırır.
+`ComPtrRef`Belirtilen işaretçiden başka bir nesneye sınıfın yeni bir örneğini başlatır `ComPtrRef` .
 
-## <a name="comptrrefgetaddressof"></a><a name="getaddressof"></a>ComPtrRef::GetAddressOf
+## <a name="comptrrefgetaddressof"></a><a name="getaddressof"></a>ComPtrRef:: GetAddressOf
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 InterfaceType* const * GetAddressOf() const;
@@ -119,15 +119,15 @@ InterfaceType* const * GetAddressOf() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli `ComPtrRef` nesne tarafından temsil edilen arabirimin işaretçisinin adresi.
+Geçerli nesne tarafından temsil edilen arabirim işaretçisinin adresi `ComPtrRef` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `ComPtrRef` nesne tarafından temsil edilen arabirimin işaretçi adresini alır.
+Geçerli nesne tarafından temsil edilen arabirime yönelik işaretçinin adresini alır `ComPtrRef` .
 
-## <a name="comptrrefoperator"></a><a name="operator-equality"></a>ComPtrRef::operator==
+## <a name="comptrrefoperator"></a><a name="operator-equality"></a>ComPtrRef:: operator = =
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 bool operator==(
@@ -158,27 +158,27 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*A*<br/>
+*a*<br/>
 Bir `ComPtrRef` nesneye başvuru.
 
-*B*<br/>
-Başka bir `ComPtrRef` nesneye başvuru veya anonim bir`void*`türe işaretçi ( ).
+*kenarı*<br/>
+Başka bir `ComPtrRef` nesneye veya anonim bir türün işaretçisine () yönelik bir başvuru **`void*`** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*A* nesnesi *b*nesnesine eşitse ilk işleç **doğru** verir; aksi takdirde, **yanlış**.
+İlk operatör, **`true`** nesne *b*nesnesine *a* eşitse, aksi takdirde, **`false`** .
 
-A *nesnesi* **nullptr'a**eşitse ikinci ve üçüncü işleçler **doğru** verim verir; aksi takdirde, **yanlış**.
+İkinci ve üçüncü operatörler **`true`** nesne *a* eşitse **`nullptr`** , aksi takdirde, **`false`** .
 
-Dördüncü ve beşinci işleçler, *a* nesnesi *b*nesnesine eşitse **doğru** verim verir; aksi takdirde, **yanlış**.
+Dördüncü ve beşinci operatörler, **`true`** nesne *b*nesnesine *a* eşitse, aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki nesnenin `ComPtrRef` eşit olup olmadığını gösterir.
+İki nesnenin eşit olup olmadığını gösterir `ComPtrRef` .
 
-## <a name="comptrrefoperator"></a><a name="operator-inequality"></a>ComPtrRef::operatör!=
+## <a name="comptrrefoperator"></a><a name="operator-inequality"></a>ComPtrRef:: operator! =
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 bool operator!=(
@@ -209,27 +209,27 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*A*<br/>
+*a*<br/>
 Bir `ComPtrRef` nesneye başvuru.
 
-*B*<br/>
-Başka bir `ComPtrRef` nesneye başvuru veya anonim bir`void*`nesneye işaretçi ( ).
+*kenarı*<br/>
+Başka bir `ComPtrRef` nesneye veya bir anonim nesne () işaretçisine yönelik bir başvuru **`void*`** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*A* nesnesi *b*nesnesine eşit değilse ilk işleç **doğru** verir; aksi takdirde, **yanlış**.
+İlk operatör, **`true`** nesne *b*nesnesine *a* eşit değilse, aksi takdirde, olur **`false`** .
 
-A *nesnesi* **nullptr'a**eşit değilse ikinci ve üçüncü işleçler **doğru** verim verir; aksi takdirde, **yanlış**.
+İkinci ve üçüncü operatörler, **`true`** nesne *a* eşit değilse **`nullptr`** , aksi takdirde, **`false`** .
 
-Dördüncü ve beşinci işleçler, *a* nesnesi *b*nesnesine eşit değilse **doğru** verim verir; aksi takdirde, **yanlış**.
+Dördüncü ve beşinci operatörler, **`true`** nesne *b*nesnesine *a* eşit değilse, aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki nesnenin `ComPtrRef` eşit olup olmadığını gösterir.
+İki nesnenin eşit olup olmadığını gösterir `ComPtrRef` .
 
-## <a name="comptrrefoperator-interfacetype"></a><a name="operator-interfacetype-star-star"></a>ComPtrRef::operatör InterfaceType**
+## <a name="comptrrefoperator-interfacetype"></a><a name="operator-interfacetype-star-star"></a>ComPtrRef:: operator InterfaceType\*\*
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 operator InterfaceType**();
@@ -237,11 +237,11 @@ operator InterfaceType**();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `ComPtrRef` nesneyi siler ve `ComPtrRef` işaretçiden işaretçiye nesne tarafından temsil edilen arabirime döndürür.
+Geçerli nesneyi siler `ComPtrRef` ve nesne tarafından temsil edilen arabirime bir işaretçi işaretçisi döndürür `ComPtrRef` .
 
-## <a name="comptrrefoperator"></a><a name="operator-star"></a>ComPtrRef::operatör*
+## <a name="comptrrefoperator"></a><a name="operator-star"></a>ComPtrRef:: operator *
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 InterfaceType* operator *();
@@ -249,15 +249,15 @@ InterfaceType* operator *();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli `ComPtrRef` nesne tarafından temsil edilen arabirimeye işaretçi.
+Geçerli nesnenin temsil ettiği arabirime yönelik işaretçi `ComPtrRef` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `ComPtrRef` nesne tarafından temsil edilen arabirimin işaretçisini alır.
+Geçerli nesne tarafından temsil edilen arabirime işaretçiyi alır `ComPtrRef` .
 
-## <a name="comptrrefoperator-t"></a><a name="operator-t-star"></a>ComPtrRef::operatör T*
+## <a name="comptrrefoperator-t"></a><a name="operator-t-star"></a>ComPtrRef:: operator T *
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 operator T*();
@@ -265,11 +265,11 @@ operator T*();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `ComPtrRef` nesnenin [ptr_](comptrrefbase-class.md#ptr) veri üyesinin değerini verir.
+Geçerli nesnenin [ptr_](comptrrefbase-class.md#ptr) veri üyesinin değerini döndürür `ComPtrRef` .
 
-## <a name="comptrrefoperator-void"></a><a name="operator-void-star-star"></a>ComPtrRef::operatör geçersiz\*\*
+## <a name="comptrrefoperator-void"></a><a name="operator-void-star-star"></a>ComPtrRef:: operator void\*\*
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 operator void**() const;
@@ -277,11 +277,11 @@ operator void**() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `ComPtrRef` nesneyi siler, işaretçiyi `ComPtrRef` nesne tarafından temsil edilen arabirime işaretçiye `void`işaretçi olarak atar ve ardından döküm işaretçisini döndürür.
+Geçerli nesneyi siler `ComPtrRef` , işaretçiyi nesne tarafından bir işaretçi işaretçisi olarak temsil edilen arabirime çevirir `ComPtrRef` **`void`** ve sonra atama işaretçisini döndürür.
 
-## <a name="comptrrefreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a>ComPtrRef::ReleaseAndGetAddressOf
+## <a name="comptrrefreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a>ComPtrRef:: ReleaseAndGetAddressOf
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 InterfaceType** ReleaseAndGetAddressOf();
@@ -289,8 +289,8 @@ InterfaceType** ReleaseAndGetAddressOf();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Silinen `ComPtrRef` nesne tarafından temsil edilen arabirimi işaretçi.
+Silinen nesne tarafından temsil edilen arabirime yönelik işaretçi `ComPtrRef` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `ComPtrRef` nesneyi siler ve `ComPtrRef` işaretçiden işaretçiye nesne tarafından temsil edilen arabirime döndürür.
+Geçerli nesneyi siler `ComPtrRef` ve nesne tarafından temsil edilen arabirime bir işaretçi işaretçisi döndürür `ComPtrRef` .

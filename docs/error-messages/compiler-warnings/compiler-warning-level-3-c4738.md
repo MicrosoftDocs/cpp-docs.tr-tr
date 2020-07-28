@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4738
 ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
-ms.openlocfilehash: c1989518c3965f8faa54a05b2925d0e37455625e
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 639fb14fc409a9954315184bab7ae1127460ea0d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991697"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214418"
 ---
 # <a name="compiler-warning-level-3-c4738"></a>Derleyici Uyarısı (düzey 3) C4738
 
@@ -19,7 +19,7 @@ ms.locfileid: "74991697"
 
 C4738 bir atama, atama, geçilen bağımsız değişken ya da başka bir işlemin sonucunun yuvarlanmasını veya işlemin yazmaçların (sıvı kesilmesi) gerekli olduğunu ve gerekli olduğunu uyarır. Bu, performans kaybına neden olabilir.
 
-Bu uyarıyı çözmek ve yuvarlamadan kaçınmak için, `float`yerine [/FP: Fast](../../build/reference/fp-specify-floating-point-behavior.md) ile derleyin veya `double` kullanın.
+Bu uyarıyı çözmek ve yuvarlamadan kaçınmak için, [/FP: Fast](../../build/reference/fp-specify-floating-point-behavior.md) veya with **`double`** yerine kullanın **`float`** .
 
 Bu uyarıyı gidermek ve kayıt dışında bırakmak önlemek için hesaplama sırasını değiştirin ve satır içi kullanımı değiştirin
 

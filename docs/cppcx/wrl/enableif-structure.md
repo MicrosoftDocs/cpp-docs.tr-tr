@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - EnableIf structure
 ms.assetid: 7825b283-e6b2-4f39-a4b9-c03bcd431b8e
-ms.openlocfilehash: 44c6293b56e9e03c23d0d8cebf2a112e6fcf3664
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f43166920f3582ab681b67d2c89563dcf78ff0f1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214038"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220502"
 ---
 # <a name="enableif-structure"></a>EnableIf Yapısı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <bool b, typename T = void>
@@ -30,7 +30,7 @@ struct EnableIf<true, T>;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Bir tür.
 
 *kenarı*<br/>
@@ -38,7 +38,7 @@ Boole ifadesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk şablon parametresi **true**olarak değerlendirilirse ikinci şablon parametresi tarafından belirtilen türün veri üyesini tanımlar.
+İlk şablon parametresi olarak değerlendirilirse ikinci şablon parametresi tarafından belirtilen türün veri üyesini tanımlar **`true`** .
 
 ## <a name="members"></a>Üyeler
 
@@ -46,7 +46,7 @@ Boole ifadesi.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`type`|*B* şablon parametresi **true**olarak değerlendirilirse, kısmi özelleşme `type` veri üyesini `T`türünde olacak şekilde tanımlar.|
+|`type`|*B* şablon parametresi olarak değerlendirilirse **`true`** , kısmi `type` özelleşme veri üyesini türünden olacak şekilde tanımlar `T` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -60,4 +60,4 @@ Boole ifadesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

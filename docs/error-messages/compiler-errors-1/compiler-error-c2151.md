@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C2151
 ms.assetid: 7f8dd83a-1f41-46d8-8778-0d1f79ed36c9
-ms.openlocfilehash: 34d197854530692c3e651474d3fc1ee220011d7d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 20eb87002e3621965b5fc5429eab8fe41b040848
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207213"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214730"
 ---
 # <a name="compiler-error-c2151"></a>Derleyici Hatası C2151
 
 birden fazla dil özniteliği
 
-Bir işlevde bir çağırma kuralı belirten birden fazla anahtar sözcük (`__cdecl`, `__stdcall`veya `__fastcall`) vardır.
+Bir işlevde bir çağırma kuralı belirten birden fazla anahtar sözcük ( **`__cdecl`** , **`__stdcall`** , veya **`__fastcall`** ) vardır.

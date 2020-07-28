@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4437
 ms.assetid: dc07e350-20eb-474c-a7ad-f841ae7ec339
-ms.openlocfilehash: 84c6e8d09495d871b8c490a92558aaba14b0574c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 949cd208d8c4f86afb1ef0a36db8483de4aac232
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185340"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214392"
 ---
 # <a name="compiler-warning-level-4-c4437"></a>Derleyici Uyarısı (düzey 4) C4437
 
@@ -19,21 +19,21 @@ ms.locfileid: "80185340"
 
 Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 
-Derleyici, aşağıdaki özelliklere sahip bir `dynamic_cast` işlemiyle karşılaştı.
+Derleyici, **`dynamic_cast`** aşağıdaki özelliklere sahip bir işlemle karşılaştı.
 
 - Atama, bir temel sınıf işaretçisinden türetilmiş sınıf işaretçisine kadar olur.
 
 - Türetilmiş sınıf, temel sınıfı neredeyse devralır.
 
-- Türetilmiş sınıfın sanal taban için `vtordisp` alanı yok.
+- Türetilmiş sınıfın `vtordisp` sanal taban için bir alanı yok.
 
 - Cast, türetilmiş sınıfın oluşturucusunda veya yıkıcısında veya türetilmiş sınıftan daha fazla devralan bir sınıf (Aksi takdirde, derleyici uyarısı C4436 verilecek) içinde bulunamadı.
 
-Uyarı, kısmen oluşturulmuş bir nesne üzerinde çalışıyorsa `dynamic_cast` doğru şekilde gerçekleştirilemeyebilir.  Bu durum, kapsayan işlev, uyarıda adı geçen türetilmiş sınıfı devralan bir sınıfın oluşturucusundan veya yıkıcısında çağrıldığında oluşur.  Uyarı içinde adı geçen türetilmiş sınıf hiç bir daha alınmadıysa veya nesne oluşturma veya yok etme sırasında kapsayan işlev çağrılmadıysa, uyarı yoksayılabilir.
+Uyarı, **`dynamic_cast`** kısmen oluşturulmuş bir nesne üzerinde çalışıyorsa doğru şekilde gerçekleştirilemeyebilir.  Bu durum, kapsayan işlev, uyarıda adı geçen türetilmiş sınıfı devralan bir sınıfın oluşturucusundan veya yıkıcısında çağrıldığında oluşur.  Uyarı içinde adı geçen türetilmiş sınıf hiç bir daha alınmadıysa veya nesne oluşturma veya yok etme sırasında kapsayan işlev çağrılmadıysa, uyarı yoksayılabilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4437 oluşturur ve eksik `vtordisp` alanından oluşan kod oluşturma sorununu gösterir.
+Aşağıdaki örnek C4437 oluşturur ve eksik alandan oluşan kod oluşturma sorununu gösterir `vtordisp` .
 
 ```cpp
 // C4437.cpp
@@ -83,6 +83,6 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[dynamic_cast İşleci](../../cpp/dynamic-cast-operator.md)<br/>
+[dynamic_cast Işleci](../../cpp/dynamic-cast-operator.md)<br/>
 [vtordisp](../../preprocessor/vtordisp.md)<br/>
 [Derleyici Uyarısı (düzey 1) C4436](../../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md)

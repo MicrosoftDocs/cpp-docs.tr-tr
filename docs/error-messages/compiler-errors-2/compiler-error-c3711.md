@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3711
 ms.assetid: 26d581cc-2153-4ee0-b814-a371184be3e1
-ms.openlocfilehash: 7f2414a51321bf249e3ac049a7048f41b71cb856
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bf8d1ea745ed96d782fdc95d825e278e894066ef
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753412"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220190"
 ---
 # <a name="compiler-error-c3711"></a>Derleyici hatası C3711
 
 ' Method ': yönetilmeyen bir olay kaynağı yöntemi void veya integral türü döndürmelidir
 
-Olay kaynağında void veya integral türü döndürmeyen bir yöntem tanımladınız. Bu hatayı onarmak için, olay ve olay işleyicisinin `void` dönüş türüne veya `int` veya `long`gibi bir integral türüne sahip olmasını sağlayın.
+Olay kaynağında void veya integral türü döndürmeyen bir yöntem tanımladınız. Bu hatayı düzelkılmak için olay ve olay işleyicisinin dönüş türü **`void`** veya ya da gibi bir integral türü vardır **`int`** **`long`** .
 
 Aşağıdaki örnek C3711 oluşturur:
 

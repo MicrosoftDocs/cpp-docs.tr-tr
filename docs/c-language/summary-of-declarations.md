@@ -2,178 +2,178 @@
 title: Bildirimlerin Özeti
 ms.date: 11/04/2016
 ms.assetid: 53a5e9e5-1a33-40b5-9dea-7f669b479329
-ms.openlocfilehash: e553f4bdfffcd4bba6a39b2d37af6ba25a3d65d9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 894ed5e39ac8019048b6730d5e3b34de22f3a0c7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170442"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220853"
 ---
 # <a name="summary-of-declarations"></a>Bildirimlerin Özeti
 
-*bildirim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar* *özniteliği-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
+*`declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`**`attribute-seq`* <sub>opt</sub> *`init-declarator-list`* <sub>kabul</sub>**`;`**
 
-*bildirim-tanımlayıcılar*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*depolama sınıfı Belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub>
+*`declaration-specifiers`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`storage-class-specifier`**`declaration-specifiers`* <sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-specifier`**`declaration-specifiers`* <sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-qualifier`**`declaration-specifiers`* <sub>opt</sub>
 
-*öznitelik-Seq* &nbsp; &nbsp; &nbsp; &nbsp; :/ Microsoft 'a özgü\*\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*öznitelik* *özniteliği-seq*<sub>opt</sub>
+*`attribute-seq`*: &nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`attribute`**`attribute-seq`* <sub>opt</sub>
 
-*öznitelik* &nbsp; &nbsp; &nbsp; &nbsp; / :\* Microsoft 'a özgü bir\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;[__asm](../assembler/inline/asm.md) [__clrcall](../cpp/clrcall.md) [__stdcall](../cpp/stdcall.md) [__based](../cpp/based-grammar.md) [__fastcall](../cpp/fastcall.md) [__thiscall](../cpp/thiscall.md) [__cdecl](../cpp/cdecl.md) [__inline](../cpp/inline-functions-cpp.md) [__vectorcall](../cpp/vectorcall.md)
+*`attribute`*: &nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü bir\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;[`__asm`](../assembler/inline/asm.md) [`__clrcall`](../cpp/clrcall.md) [`__stdcall`](../cpp/stdcall.md) [`__based`](../cpp/based-grammar.md) [`__fastcall`](../cpp/fastcall.md) [`__thiscall`](../cpp/thiscall.md) [`__cdecl`](../cpp/cdecl.md) [`__inline`](../cpp/inline-functions-cpp.md) [`__vectorcall`](../cpp/vectorcall.md)
 
-*init-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list*  **,**  *init-declarator*
+*`init-declarator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator-list`*  **`,`**  *`init-declarator`*
 
-*init-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*skaler başlatma için bildirimci***=***başlatıcısı*  / \*    \*/
+*`init-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*  **`=`**  *`initializer`* /\*Skaler başlatma için\*/
 
-*depolama sınıfı Belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kaydolunamadı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**se**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Dış**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**genişletiyor**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/
+*`storage-class-specifier`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`auto`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`register`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`static`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`extern`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`typedef`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__declspec (`***`extended-decl-modifier-seq`* **`)`** /\* Microsoft 'a özgü\*/
 
-*tür belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Kağıt**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Char**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kısadır**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**'tir**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int8** / __int8\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int16** / __int16\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int32** / __int32\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int64** / __int64\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kalacağını**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Çift**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**imza**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**işaretlenmemiş**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union-Belirleyicisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit Listesi belirticisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*TypeDef-adı*
+*`type-specifier`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`void`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`char`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`short`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int8`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int16`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int32`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int64`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`long`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`float`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`double`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`signed`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`struct-or-union-specifier`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`enum-specifier`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`typedef-name`*
 
-*tür niteleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sabit**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**katılımcıdan**
+*`type-qualifier`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`const`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`volatile`**
 
-*bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
+*`declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`pointer`*<sub>opt</sub>*`direct-declarator`*
 
-*doğrudan bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *bildirimci* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator* **[** *sabit ifade*<sub>katılımı</sub> **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci* **(** *parametre türü-liste* **)**  / \* yeni stil bildirimci\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci* **(** *tanımlayıcı listesi*<sub>opt</sub> **)**  / \* eski stil bildirimci\*/
+*`direct-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`identifier`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`declarator`* **`)`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`***`[`** *`constant-expression`* <sub>opt</sub>**`]`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`***`(`** *`parameter-type-list`* **`)`** /\* Yeni stil bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`***`(`** *`identifier-list`* <sub>opt</sub> **`)`**  / \* kullanımdan kalktı kabul et stili bildirimci\*/
 
-*işaretçi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong>*tür niteleyicisi-List*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong>*tür niteleyicisi-liste*<sub>opt</sub> *işaretçisi*
+*`pointer`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>`*`</strong>*`type-qualifier-list`* <sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>`*`</strong>*`type-qualifier-list`* <sub>opt</sub>*`pointer`*
 
-*parametre-tür-listesi*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :&nbsp; &nbsp; &nbsp; &nbsp; parametre listesi&nbsp; &nbsp; / \*\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-liste* **,...**
+*`parameter-type-list`*: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; / \* Parametre listesi\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`, ...`**
 
-*parametre-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* **,** *parametre bildirimi*
+*`parameter-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-declaration`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`,`** *`parameter-declaration`*
 
-*tür niteleyicisi-Listele*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi-liste* *tür niteleyicisi*
+*`type-qualifier-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-qualifier`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-qualifier-list`* *`type-qualifier`*
 
-*sabit listesi belirticisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**enum** *tanımlayıcı*<sub>opt</sub> **{** *Numaralandırıcı-listesi* **}**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sabit listesi** *tanımlayıcısı*
+*`enum-specifier`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`enum`***`identifier`* <sub>opt</sub> **`{`** opt *`enumerator-list`***`}`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`enum`** *`identifier`*
 
-*Numaralandırıcı-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sının*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Numaralandırıcı-liste* **,** *Numaralandırıcı*
+*`enumerator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`enumerator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`enumerator-list`* **`,`** *`enumerator`*
 
-*Numaralandırıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi-sabit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;sabit *listesi-sabit* **=** *sabit ifadesi*
+*`enumerator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`enumeration-constant`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`enumeration-constant`* **`=`** *`constant-expression`*
 
-sabit *listesi-sabit*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
+*`enumeration-constant`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`identifier`*
 
-*struct veya-Union-belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*<sub>opt</sub> **{** *struct-declaration-List* **}**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*
+*`struct-or-union-specifier`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`struct-or-union`**`identifier`* <sub>opt</sub> **`{`** opt *`struct-declaration-list`***`}`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`struct-or-union`* *`identifier`*
 
-*struct veya-Union*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sýný**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**birleşim**
+*`struct-or-union`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`struct`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`union`**
 
-*struct-declaration-List*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-declaration-List* *struct-bildirimi*
+*`struct-declaration-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`struct-declaration`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`struct-declaration-list`* *`struct-declaration`*
 
-*struct-bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*belirtici niteleyicisi-List* *struct-declarator-list* **;**
+*`struct-declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`specifier-qualifier-list`* *`struct-declarator-list`* **`;`**
 
-*belirtici niteleyicisi-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *belirleyicisi-niteleyici-List*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *belirleyicisi-niteleyici-List*<sub>opt</sub>
+*`specifier-qualifier-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-specifier`**`specifier-qualifier-list`* <sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-qualifier`**`specifier-qualifier-list`* <sub>opt</sub>
 
-*struct-declarator-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-declarator* *yapısı-bildirimci-List* **,** *struct-declarator*
+*`struct-declarator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`struct-declarator`* *`struct-declarator-list`* **`,`** *`struct-declarator`*
 
-*struct-declarator*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimci*<sub>opt</sub> **:** *sabit ifadesi*
+*`struct-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`type-specifier`**`declarator`* <sub>opt</sub> opt **`:`***`constant-expression`*
 
-*parametre bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirim-belirticileri* *declarator*  / \* bildirimci adlandırılmış bildirimci\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar* *abstract-bildirimci*<sub>opt</sub>  / \* anonim bildirimci\*/
+*`parameter-declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`**`declarator`* /\* Adlandırılmış bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`**`abstract-declarator`* <sub>opt</sub>  / opt \* Anonim bildirimci\*/
 
-*tanımlayıcı-liste*:/\* eski stil bildirimci için\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı listesi* **,** *tanımlayıcı*
+*`identifier-list`*:/ \* Eski stil bildirimci için\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`identifier`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`identifier-list`* **`,`** *`identifier`*
 
-*abstract-declarator*:/\* anonim bildirimcilerde kullanılır\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*çağrısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan Özet bildirimci*
+*`abstract-declarator`*:/ \* Anonim bildirimcilerde kullanılır\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`pointer`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`pointer`*<sub>opt</sub>*`direct-abstract-declarator`*
 
-*doğrudan Özet-bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**(** *soyut-declarator* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-abstract-declarator*<sub>opt</sub> **[** *sabit ifade*<sub>katılımı</sub> **]**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-abstract-declarator*<sub>opt</sub> **(** *parametre-türü-List*<sub>opt</sub> **)**
+*`direct-abstract-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`(`** *`abstract-declarator`* **`)`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-abstract-declarator`*<sub>opt</sub> **`[`** *`constant-expression`* <sub>opt</sub>**`]`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-abstract-declarator`*<sub>opt</sub> **`(`** *`parameter-type-list`* <sub>opt</sub>**`)`**
 
-*Başlatıcı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;toplu başlatma için **{** *Başlatıcı-listesi* **}**  / \*\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *Başlatıcı-listesi* **,}**
+*`initializer`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`assignment-expression`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`{`***`initializer-list`* **`}`** /\* Toplu başlatma için\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`{`** *`initializer-list`* **`, }`**
 
-*Başlatıcı-Liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*izer*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Başlatıcı-Liste* **,** *Başlatıcı*
+*`initializer-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`initializer`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`initializer-list`* **`,`** *`initializer`*
 
-*tür adı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*belirtici niteleyicisi-List* *abstract-declarator*<sub>opt</sub>
+*`type-name`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`specifier-qualifier-list`**`abstract-declarator`* <sub>opt</sub>
 
-*typedef-adı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
+*`typedef-name`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`identifier`*
 
-*Extended-decl-değiştirici-seq*:&nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Extended-decl-değiştirici*<sub>opt</sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Extended-decl-değiştirici-seq* *Extended-decl-değiştiricisi*
+*`extended-decl-modifier-seq`*: &nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`extended-decl-modifier`*<sub>et</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`extended-decl-modifier-seq`* *`extended-decl-modifier`*
 
-*Extended-decl-değiştirici*:&nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**zincirinin**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Naked**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dllexport**
+*`extended-decl-modifier`*: &nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`thread`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`naked`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`dllimport`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`dllexport`**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çağırma Kuralları](../cpp/calling-conventions.md)<br/>
-[Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)<br/>
-[Kullanılmayan Çağırma Kuralları](../cpp/obsolete-calling-conventions.md)
+[Çağırma kuralları](../cpp/calling-conventions.md)<br/>
+[Tümcecik yapısı dil bilgisi](../c-language/phrase-structure-grammar.md)<br/>
+[Kullanımdan kalkmış çağırma kuralları](../cpp/obsolete-calling-conventions.md)

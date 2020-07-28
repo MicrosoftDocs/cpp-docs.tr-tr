@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C2129
 ms.assetid: 21a8223e-1d22-4baa-9ca1-922b7f751dd0
-ms.openlocfilehash: a3e2268bfc5597668e8689d093a0c2bb7f18e037
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9cf414200dcfad8ae617e16e111bd26b19a315a6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207291"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220437"
 ---
 # <a name="compiler-error-c2129"></a>Derleyici hatası C2129
 
 ' function ' statik işlevi tanımlandı ancak tanımlanmadı
 
-Hiç tanımlanmamış bir `static` işleve ileri başvuru yapılır.
+Hiç tanımlanmamış bir işleve ileri başvuru yapılır **`static`** .
 
-`static` işlev, dosya kapsamı içinde tanımlanmalıdır. İşlev başka bir dosyada tanımlanmışsa, `extern`bildirilmelidir.
+Bir **`static`** işlevin dosya kapsamı içinde tanımlanması gerekir. İşlev başka bir dosyada tanımlanmışsa, bildirilmelidir **`extern`** .

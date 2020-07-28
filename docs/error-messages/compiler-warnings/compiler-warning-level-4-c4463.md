@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4463
 ms.assetid: a07ae70c-db4e-472b-8b58-9137d9997323
-ms.openlocfilehash: e125a532f87533958ec43ed5580665ad4108856b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: acc7957493942a9c0e19ce098b74ed0b5d75a12d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400805"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214366"
 ---
 # <a name="compiler-warning-level-4-c4463"></a>Derleyici Uyarısı (düzey 4) C4463
 
-> taşma; atama *değer* değerlerinden yalnızca içerebileceği bit alanına *low_value* için *high_value*
+> taşma yalnızca *low_value* *high_value* için değerler alabilen bit alanına *değer* atama
 
-Atanan *değer* bit alanı barındırabilir değerler aralığının dışında. İmzalı bit alanı türleri kullanmak için oturum, bit üst sırası böylece *n* imzalı bit alanları için -2 bit alanı aralığı boyutudur<sup>n-1</sup> 2<sup>n-1</sup>işaretsiz sırada -1 bit alanları sahip bir aralığı 0-2<sup>n</sup>-1.
+Atanan *değer* , bit alanının tutaabileceği değer aralığının dışındadır. İmzalı bit alanı türleri, oturum açma için yüksek sıra bitini kullanır. bu nedenle, *n* bit alanı boyutalıysa, işaretli bit alanları için Aralık-2<sup>n-1</sup> ile 2<sup>n-</sup>1-1 arasında bir aralığa sahip ve imzasız bit alanları 0 ile 2<sup>n</sup>-1 arasında bir aralığa sahip olur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte C4463 oluşturur ve bir bit alanı için tür 3 bir değer atamak çalışır çünkü `int` 2 boyutuna sahip 1 -2'den bir aralığa sahip.
+Bu örnek **`int`** ,-2 ile 1 arasında bir aralığa sahip olan ve 2 boyutunda bir bit alanına 3 değeri atamaya çalıştığı Için C4463 oluşturur.
 
-Bu sorunu gidermek için izin verilen aralıktaki bir şey atanan değeri değiştirebilirsiniz. Bit alanı, işaretsiz değerleri 0-3 aralığında tutmak için amaçlanıyorsa, bildirim türüne değiştirebilirsiniz `unsigned`. Alan değerleri için aralığı -4 3'te tutmak için tasarlanmıştır, 3'e bit alanı boyutunu değiştirebilirsiniz.
+Bu sorunu giderecek şekilde, atanan değeri izin verilen aralıktaki bir şekilde değiştirebilirsiniz. Bit alanı 0 ' dan 3 ' e kadar olan aralıkta işaretsiz değerler tutmaya amaçlanıyorsa, bildirim türünü olarak değiştirebilirsiniz **`unsigned`** . Alan,-4 ile 3 aralığında değer tutmaya amaçlanıyorsa, bit alanı boyutunu 3 olarak değiştirebilirsiniz.
 
 ```cpp
 // C4463_overflow.cpp

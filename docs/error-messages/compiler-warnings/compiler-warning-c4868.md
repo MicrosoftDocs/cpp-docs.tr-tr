@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C4868
 ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
-ms.openlocfilehash: 00c3e01f46bc98baff1b266bb8ee445b0f868522
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fe113a948cdf2a6e4b4fcf6b0055fe92d583f004
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165021"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220138"
 ---
 # <a name="compiler-warning-level-4-c4868"></a>Derleyici Uyarısı (düzey 4) C4868
 
 > '_File_(*Line_Number*) ' derleyicisi, örgü Başlatıcı listesinde soldan sağa değerlendirme sırasını zorlamaz
 
-Bir örgü Başlatıcı listesinin öğeleri soldan sağa sırada değerlendirilir. Derleyicinin bu sırayı garanti edemediği iki durum vardır: ilki, bazı öğeler değere göre geçirilir; İkincisi `/clr` ile derlerken, bazı öğeler nesnelerin alanları veya dizi öğeleridir. Derleyici soldan sağa değerlendirmeyi garanti edemediği zaman, uyarı C4868 yayar.
+Bir örgü Başlatıcı listesinin öğeleri soldan sağa sırada değerlendirilir. Derleyicinin bu sırayı garanti edemediği iki durum vardır: ilki, bazı öğeler değere göre geçirilir; İkincisi derleme `/clr` ve öğelerinden bazıları nesne alanları veya dizi öğeleridir. Derleyici soldan sağa değerlendirmeyi garanti edemediği zaman, uyarı C4868 yayar.
 
 Bu uyarı, Visual Studio 2015 güncelleştirme 2 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir. Visual Studio 2015 güncelleştirme 2 ' den önce derlenen kod artık C4868 oluşturabilir.
 
-Bu uyarı varsayılan olarak kapalıdır. Bu uyarıyı etkinleştirmek için `/Wall` kullanın.
+Bu uyarı varsayılan olarak kapalıdır. `/Wall`Bu uyarıyı etkinleştirmek için kullanın.
 
 Bu uyarıyı çözmek için ilk olarak, öğe değerlendirmesi sıra bağımlı yan etkileri oluşturabilecek gibi, başlatıcı listesi öğelerinin sol-sağ değerlendirmesinin gerekip gerekmediğini göz önünde bulundurun. Birçok durumda, öğelerin değerlendirildiği sıranın bir observable etkisi yoktur.
 
-Değerlendirme sırası soldan sağa doğru olmalıdır, bunun yerine öğeleri `const` başvuruya göre geçirmek mümkün olup olmadığını göz önünde bulundurun. Bu gibi bir değişiklik, aşağıdaki kod örneğindeki uyarıyı ortadan kaldırır.
+Değerlendirme sırası soldan sağa doğru olmalıdır, bunun yerine öğeleri başvuruya göre geçirmek mümkün olup olmadığını göz önünde bulundurun **`const`** . Bu gibi bir değişiklik, aşağıdaki kod örneğindeki uyarıyı ortadan kaldırır.
 
 ## <a name="example"></a>Örnek
 

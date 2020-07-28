@@ -5,12 +5,12 @@ helpviewer_keywords:
 - lifetime, and visibility
 - visibility, identifiers
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
-ms.openlocfilehash: f364c3c0b558c00e3d411ab5b697ed01ec395cbd
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 760973bba1798068b5a19ebeb7a285d241d4ef72
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299084"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220814"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 
@@ -20,13 +20,13 @@ Aşağıdaki tabloda çoğu tanımlayıcı için ömür ve görünürlük özell
 
 |Öznitelikler:<br /><br /> Düzey|Öğe|Depolama sınıfı<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görünürlük|
 |---------------------------|----------|----------------------------------|--------------------------|----------------|
-|Dosya kapsamı|Değişken tanımı|**static**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
-||Değişken bildirimi|**extern**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
-||İşlev prototipi veya tanımı|**static**|Genel|Tek kaynak dosyası|
-||İşlev prototipi|**extern**|Genel|Kaynak dosyanın kalanı|
-|Blok kapsamı|Değişken bildirimi|**extern**|Genel|Blok|
-||Değişken tanımı|**static**|Genel|Blok|
-||Değişken tanımı|**Otomatik** veya **kaydolun**|Yerel|Blok|
+|Dosya kapsamı|Değişken tanımı|**`static`**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
+||Değişken bildirimi|**`extern`**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
+||İşlev prototipi veya tanımı|**`static`**|Genel|Tek kaynak dosyası|
+||İşlev prototipi|**`extern`**|Genel|Kaynak dosyanın kalanı|
+|Blok kapsamı|Değişken bildirimi|**`extern`**|Genel|Blok|
+||Değişken tanımı|**`static`**|Genel|Blok|
+||Değişken tanımı|**`auto`** veya**`register`**|Yerel|Blok|
 
 ## <a name="example"></a>Örnek
 

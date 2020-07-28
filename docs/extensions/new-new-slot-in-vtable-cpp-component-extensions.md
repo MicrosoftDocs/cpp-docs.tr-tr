@@ -1,36 +1,36 @@
 ---
-title: Yeni (vtable'da yeni yuva) (C++/CLI ve C++/CX)
+title: new (vtable'da yeni yuva) (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 1a9a5704-f02f-46ae-ad65-f0f2b6dbabc3
-ms.openlocfilehash: 684c6149457f7b0306f3d444a3652ecda1636839
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 29e43fe4c462fa6ac6523f8627abf923f02247a8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400889"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214249"
 ---
-# <a name="new-new-slot-in-vtable--ccli-and-ccx"></a>Yeni (vtable'da yeni yuva) (C++/CLI ve C++/CX)
+# <a name="new-new-slot-in-vtable--ccli-and-ccx"></a>new (vtable'da yeni yuva) (C++/CLI ve C++/CX)
 
-**Yeni** anahtar sözcüğü, sanal üyenin vtable'da yeni yuva aldığını gösterir.
+**`new`** Anahtar sözcüğü, sanal bir üyenin vtable 'da yeni bir yuva aldığını gösterir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-(Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)
+(Bu dil özelliği için tüm çalışma zamanları için uygulanan bir açıklama yoktur.)
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Windows çalışma zamanı'nda desteklenmiyor.
+Windows Çalışma Zamanı desteklenmez.
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçinde bir `/clr` derleme **yeni** sanal üyenin vtable'da yeni yuva alırsınız; işlev temel sınıf yöntemini geçersiz kılmaz gösterir.
+Bir `/clr` derlemede, **`new`** sanal bir üyenin vtable 'da yeni bir yuva aldığını ve işlevin bir temel sınıf yöntemini geçersiz kılmadığını gösterir.
 
-**Yeni** işlevi için IL eklenecek newslot değiştiricisine neden olur.  Newslot hakkında daha fazla bilgi için bkz:
+**`new`**, NewSlot değiştiricisinin işlev için Il 'ye eklenmesine neden olur.  NewSlot hakkında daha fazla bilgi için bkz.
 
 - <xref:System.Reflection.MethodInfo.GetBaseDefinition?displayProperty=nameWithType>
 
@@ -38,11 +38,11 @@ Windows çalışma zamanı'nda desteklenmiyor.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek etkisini gösterir **yeni**.
+Aşağıdaki örnek öğesinin etkisini gösterir **`new`** .
 
 ```cpp
 // newslot.cpp
@@ -105,5 +105,5 @@ E::f() called
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
-[Geçersiz Kılma Tanımlayıcıları](override-specifiers-cpp-component-extensions.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[Geçersiz kılma belirticileri](override-specifiers-cpp-component-extensions.md)

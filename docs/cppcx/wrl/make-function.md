@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - Make function
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
-ms.openlocfilehash: ffd0967b741475b260eef80ec24d56874a6bcb1f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0f2e81e3cd757214805817af2a355a93c1cfd096
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213817"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220476"
 ---
 # <a name="make-function"></a>Make İşlevi
 
 Belirtilen Windows Çalışma Zamanı sınıfını başlatır. Aynı modülde tanımlanmış bir bileşeni örneklemek için bu işlevi kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -164,8 +164,8 @@ ComPtr<T> Make();
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-`WRL::RuntimeClass`devralan Kullanıcı tarafından belirtilen bir sınıf.
+*T*<br/>
+Öğesinden devralan Kullanıcı tarafından belirtilen bir sınıf `WRL::RuntimeClass` .
 
 *TArg1*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1 türü.
@@ -223,7 +223,7 @@ Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 9.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `ComPtr<T>` nesne; Aksi takdirde, `nullptr`.
+`ComPtr<T>`Başarılı olursa bir nesne; Aksi durumda, **`nullptr`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -237,4 +237,4 @@ Bkz. nasıl yapılır: Bu işlev ile [Microsoft:: WRL::D euçlar:: Makeanınvoı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

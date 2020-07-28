@@ -21,12 +21,12 @@ helpviewer_keywords:
 - extractors, _com_ptr_t class
 - extractors [C++]
 ms.assetid: 194b9e0e-123c-49ff-a187-0a7fcd68145a
-ms.openlocfilehash: e7b06bb11ab34a1a1a7f6fab98d177821f60b20c
-ms.sourcegitcommit: e17cc8a478b51739d67304d7d82422967b35f716
+ms.openlocfilehash: fb5441d87dc35ec6fbb495bc38d9041c1f2d2f33
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86127849"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220580"
 ---
 # <a name="_com_ptr_t-extractors"></a>`_com_ptr_t`Ayıklayıcıları
 
@@ -57,7 +57,7 @@ operator bool( ) const throw( );
 
 - **`operator&`** Herhangi bir kapsüllenmiş arabirim işaretçisini serbest bırakır, NULL ile değiştirir ve kapsüllenmiş işaretçinin adresini döndürür. Bu işleç, bir arabirim işaretçisi döndürdüğü bir *Out* parametresi olan bir işleve adrese göre akıllı işaretçiyi geçirmenize olanak sağlar.
 
-- **`operator bool`** Bir koşullu ifadede akıllı işaretçi nesnesinin kullanılmasına izin verir. İşaretçi NULL değilse bu işleç TRUE değerini döndürür.
+- **`operator bool`** Bir koşullu ifadede akıllı işaretçi nesnesinin kullanılmasına izin verir. Bu işleç **`true`** , IŞARETÇI null değilse döndürür.
 
   > [!NOTE]
   > **`operator bool`** Olarak bildirildiği **`explicit`** `_com_ptr_t` için, **`bool`** herhangi bir skalar türe dönüştürülebilir olan öğesine örtük olarak dönüştürülebilir. Bu, kodunuzda beklenmedik sonuçlara sahip olabilir. Bu dönüştürmenin istenmeden kullanımını engellemek için [derleyici uyarısını etkinleştirin (düzey 4) C4800](../error-messages/compiler-warnings/compiler-warning-level-3-c4800.md) .

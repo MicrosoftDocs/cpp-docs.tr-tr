@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2884
 ms.assetid: 8b4d43e3-3fb5-4360-86c8-de59d8736d4f
-ms.openlocfilehash: d0e283c7cd6116655a56f8df67ab4eecf9923b68
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d6014aa44dd1c2a5f1b0418a7171b239a754ec33
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760947"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220203"
 ---
 # <a name="compiler-error-c2884"></a>Derleyici hatası C2884
 
 ' name ': WITH bildirimi kullanılarak tanıtılan ' function ' yerel işleviyle çakışıyor
 
-Bir işlevi birden çok kez tanımlamaya çalıştınız. İlk tanım, yerel bir tanımdır. İkincisi `using` bildirimi olan bir ad alanıdır.
+Bir işlevi birden çok kez tanımlamaya çalıştınız. İlk tanım, yerel bir tanımdır. İkincisi, bildirimi olan bir ad alanıdır **`using`** .
 
 Aşağıdaki örnek C2884 oluşturur:
 

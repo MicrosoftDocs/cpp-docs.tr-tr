@@ -13,18 +13,18 @@ helpviewer_keywords:
 - CRestrictions class
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-ms.openlocfilehash: 4a4c86987ceff0f04986d32011ba941e0d2319fe
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9fb911b469497a007550c042ade97b5a463e78fe
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211308"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220450"
 ---
 # <a name="crestrictions-class"></a>CRestrictions Sınıfı
 
 Şema satır kümeleri için kısıtlamalar belirtmenize olanak sağlayan bir genel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, short nRestrictions, const GUID* pguid>
@@ -34,7 +34,7 @@ class CRestrictions :
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Erişimci için kullanılan sınıf.
 
 *Nkısıtlamalar*<br/>
@@ -53,13 +53,13 @@ Erişimci için kullanılan sınıf.
 
 |||
 |-|-|
-|[Açın](#open)|Kullanıcı tarafından sağlanan kısıtlamalara göre bir sonuç kümesi döndürür.|
+|[Aç](#open)|Kullanıcı tarafından sağlanan kısıtlamalara göre bir sonuç kümesi döndürür.|
 
 ## <a name="crestrictionsopen"></a><a name="open"></a>CRestrictions:: Open
 
 Kullanıcı tarafından sağlanan kısıtlamalara göre bir sonuç kümesi döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Open(const CSession& session,
@@ -82,7 +82,7 @@ HRESULT Open(const CSession& session,
 'ndaki Şema satır kümesi üzerindeki kısıtlamaları belirtir.
 
 *bBind*<br/>
-'ndaki Sütun eşlemesinin otomatik olarak bağlanıp bağlanmayacağını belirtir. Varsayılan değer **true**'dur, bu da sütun eşlemesinin otomatik olarak bağlanmasına neden olur. *BBind* öğesinin **false** olarak ayarlanması, el ile bağlayabilmeniz için sütun eşlemesinin otomatik bağlamasını engeller. (El ile bağlama, OLAP kullanıcılarına özellikle ilgi çekici bir şekilde yapılır.)
+'ndaki Sütun eşlemesinin otomatik olarak bağlanıp bağlanmayacağını belirtir. Varsayılan değer **`true`** , sütun eşlemesinin otomatik olarak bağlanmasına neden olur. *BBind* 'in ayarlanması, **`false`** el ile bağlayabilmeniz için sütun eşlemesinin otomatik bağlamasını engeller. (El ile bağlama, OLAP kullanıcılarına özellikle ilgi çekici bir şekilde yapılır.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -97,5 +97,5 @@ Her şema satır kümesinde tanımlı kısıtlamalar hakkında bilgi için bkz. 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[Şema Satır Kümesi Sınıfları ve Typedef Sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[Şema satır kümesi sınıfları ve typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)

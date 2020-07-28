@@ -36,18 +36,18 @@ helpviewer_keywords:
 - trigonometric functions
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: c6e6b1da823f050d20d47ecbad96d4e0b58fa452
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b6188c585d2f3b7f2bce1a50569e6bae60ee4942
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916884"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220775"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
 Arkkosinüsünü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double acos( double x );
@@ -62,7 +62,7 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 -1 ile 1 arasında olan ve Arkkosinüs (ters kosinüs) hesaplanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -71,7 +71,7 @@ long double acos( long double x );   // C++ only
 
 Varsayılan olarak, *x* 1 ' den küçük veya 1 ' den büyükse **Acos** sonsuz döndürür.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± ∞|Geçersiz|_DOMAIN|
 |± QNAN, IND|yok|_DOMAIN|
@@ -79,7 +79,7 @@ Varsayılan olarak, *x* 1 ' den küçük veya 1 ' den büyükse **Acos** sonsuz 
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **Acos** 'un **float** ve **Long** **Double** türlerini alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında, **Acos** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türündeki **Acos** 'ın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **Acos** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -87,11 +87,11 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**Acos**, **acosf**, **acosl**|\<Math. h>|\<errno. h>|
+|**Acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
 
 ## <a name="example"></a>Örnek
 
-Bu program,-1 ile 1 arasında bir değer ister. Bu aralığın dışındaki giriş değerleri hata `_DOMAIN` iletileri oluşturur. Geçerli bir değer girilirse program, bu değerin arksinüsünü ve arkkosinüsünü yazdırır.
+Bu program,-1 ile 1 arasında bir değer ister. Bu aralığın dışındaki giriş değerleri `_DOMAIN` hata iletileri oluşturur. Geçerli bir değer girilirse program, bu değerin arksinüsünü ve arkkosinüsünü yazdırır.
 
 ```C
 // crt_asincos.c
@@ -141,7 +141,7 @@ Arccosine of 0.000000 = 1.570796
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [asin, asinf, asinl](asin-asinf-asinl.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
 [cos, cosf, cosl](cos-cosf-cosl.md)<br/>

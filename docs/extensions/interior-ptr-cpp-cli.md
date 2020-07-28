@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-ms.openlocfilehash: 264ac0a56996b0dcbeeb64246623eca1a3fc73ff
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: affec6dcd88290b24a92cd9035a131baee38bcf1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172158"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214275"
 ---
 # <a name="interior_ptr-ccli"></a>interior_ptr (C++/CLI)
 
@@ -30,13 +30,13 @@ ms.locfileid: "80172158"
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 Aşağıdaki sözdizimi örneği iç işaretçiyi gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 cli::interior_ptr<cv_qualifier type> var = &initializer;
@@ -45,12 +45,12 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 ### <a name="parameters"></a>Parametreler
 
 *cv_qualifier*<br/>
-**const** veya **volatile** niteleyicileri.
+**`const`** veya **`volatile`** niteleyicileri.
 
-*type*<br/>
+*türüyle*<br/>
 *Başlatıcı*türü.
 
-*var*<br/>
+*l*<br/>
 **İnterior_ptr** değişkeninin adı.
 
 *izer*<br/>
@@ -66,7 +66,7 @@ Yerel bir işaretçi, yönetilen yığında konum değişiklikleri olarak bir ne
 
 İç işaretçiler yalnızca yığında olduğundan, iç işaretçinin adresini almak yönetilmeyen bir işaretçi verir.
 
-**interior_ptr** , **bool**'a örtük dönüştürmeye sahiptir ve bu, Koşullu deyimlerde kullanılmasına olanak tanır.
+**interior_ptr** **`bool`** , ' nin Koşullu deyimlerde kullanılmasına izin veren örtük bir dönüşümü vardır.
 
 Atık toplanmış yığında taşınamayan bir nesneye işaret eden iç işaretçiyi bildirme hakkında daha fazla bilgi için bkz. [pin_ptr](pin-ptr-cpp-cli.md).
 
@@ -84,7 +84,7 @@ Atık toplanmış yığında taşınamayan bir nesneye işaret eden iç işaret�
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
@@ -124,4 +124,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

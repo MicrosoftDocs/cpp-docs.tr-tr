@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4459
 ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
-ms.openlocfilehash: 441d01eca7c8266b6d7948508eeb561341e64c57
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: d6d0a802f9f628145fbc5910aca805a5b01b94d2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447762"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214379"
 ---
 # <a name="compiler-warning-level-4-c4459"></a>Derleyici Uyarısı (düzey 4) C4459
 
-> bildirimi '*tanımlayıcı*' genel bildirimi gizliyor
+> '*Identifier*' bildirimi genel bildirimi gizliyor
 
-Bildirimi *tanımlayıcı* yerel kapsamda aynı adlı bildirimi gizler *tanımlayıcı* genel kapsamda. Bu uyarı, başvuruları size sağlar *tanımlayıcı* bu kapsamda amacınızla olmayabilir veya genel sürümünü değil, yerel olarak bildirilen sürümüne çözün. Genel olarak, iyi bir mühendislik uygulama olarak genel değişkenler kullanımını en aza öneririz. Genel ad alanı kirliliği en aza indirmek için genel değişkenler adlandırılmış bir ad alanı kullanılmasını öneririz.
+Yerel kapsamdaki *tanımlayıcının* bildirimi, genel kapsamdaki özdeş olarak adlandırılmış *tanımlayıcının* bildirimini gizler. Bu uyarı, bu kapsamdaki *tanımlayıcıya* yapılan başvuruların, genel sürümü değil, yerel olarak belirtilen sürüme çözümlendiğine, sizin amacınızı etkileyebilecek veya bu olmayabilir. Genellikle, genel değişkenlerin iyi bir mühendislik uygulaması olarak kullanımını en aza indirmenizi öneririz. Genel ad alanının kirlenmesini en aza indirmek için, genel değişkenler için adlandırılmış bir ad alanı kullanmanızı öneririz.
 
-Bu uyarıyı Microsoft Visual Studio 2015'te yeni C++ 18.00 derleyici sürümü. Bu sürüm derleyicinin veya kodunuzu geçirme sırasında daha sonra uyarıları bastırmak için kullanmak [/Wv:18](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği.
+Bu uyarı, Microsoft C++ derleyicisi sürüm 18,00 ' de Visual Studio 2015 ' de yenidir. Kodunuzu geçirirken derleyicinin veya daha sonraki sürümden gelen uyarıları gizlemek için [/WV: 18](../../build/reference/compiler-option-warning-level.md) derleyici seçeneğini kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4459 oluşturur:
+Aşağıdaki örnek C4459 oluşturur:
 
 ```cpp
 // C4459_hide.cpp
@@ -36,7 +36,7 @@ int main() {
 }
 ```
 
-Bu sorunu çözmenin bir yolu olan bir ad alanı, globals oluşturulur, ancak özelliğini bir `using` tüm başvuruların belirsiz kullanmak için bu ad alanı, kapsama alınmak üzere yönergesi tam adları:
+Bu sorunu gidermenin bir yolu, Globals 'niz için bir ad alanı oluşturmaktır, ancak **`using`** Bu ad alanını kapsama getirmek için bir yönerge kullanmaz, bu nedenle tüm başvuruların belirsiz nitelikli adları kullanması gerekir:
 
 ```cpp
 // C4459_namespace.cpp

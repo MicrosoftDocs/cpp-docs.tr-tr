@@ -51,12 +51,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::Swap method
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-ms.openlocfilehash: 265553d29bcc153bbbb065443391d3aa4b3b0bd2
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 4f9462ca15f5db5c3f8c0de88ce5a76b142065b4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404557"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220554"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
@@ -77,7 +77,7 @@ friend class ComPtr;
 *T*<br/>
 Temsil eden arabirim `ComPtr` .
 
-*Larınız*<br/>
+*U*<br/>
 Geçerli `ComPtr` bir arkadaş olan sınıf. (Bu parametreyi kullanan şablon korunur.)
 
 ## <a name="remarks"></a>Açıklamalar
@@ -177,7 +177,7 @@ HRESULT As(
 
 ### <a name="parameters"></a>Parametreler
 
-*Larınız*<br/>
+*U*<br/>
 *P*parametresine göre temsil edilecek arabirim.
 
 *Lama*<br/>
@@ -286,7 +286,7 @@ WRL_NOTHROW ComPtr(
 
 ### <a name="parameters"></a>Parametreler
 
-*Larınız*<br/>
+*U*<br/>
 *Diğer* parametrenin türü.
 
 *farklı*<br/>
@@ -326,7 +326,7 @@ HRESULT CopyTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Larınız*<br/>
+*U*<br/>
 Bir tür adı.
 
 *ptr*<br/>
@@ -440,7 +440,7 @@ Geçerli şablon türü adı tarafından belirtilen türe yönelik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı işlevi, STDMETHOD makrosunu kullanarak oluşan gereksiz yükü kaldırır. Bu işlev `IUnknown` yerine türlerini yapar `private` `virtual` .
+Bu yardımcı işlevi, STDMETHOD makrosunu kullanarak oluşan gereksiz yükü kaldırır. Bu işlev `IUnknown` yerine türlerini yapar **`private`** **`virtual`** .
 
 ## <a name="comptroperator"></a><a name="operator-assign"></a>ComPtr:: operator =
 
@@ -475,7 +475,7 @@ WRL_NOTHROW ComPtr& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Larınız*<br/>
+*U*<br/>
 Bir sınıf.
 
 *farklı*<br/>
@@ -532,9 +532,9 @@ Başka bir nesneye başvuru `ComPtr` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk operatör, `true` nesne *b*nesnesine *a* eşitse, aksi takdirde, `false` .
+İlk operatör, **`true`** nesne *b*nesnesine *a* eşitse, aksi takdirde, **`false`** .
 
-İkinci ve üçüncü operatörler `true` nesne *a* eşitse `nullptr` , aksi takdirde, `false` .
+İkinci ve üçüncü operatörler **`true`** nesne *a* eşitse **`nullptr`** , aksi takdirde, **`false`** .
 
 ## <a name="comptroperator"></a><a name="operator-inequality"></a>ComPtr:: operator! =
 
@@ -567,9 +567,9 @@ Başka bir nesneye başvuru `ComPtr` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk operatör, `true` nesne *b*nesnesine *a* eşit değilse, aksi takdirde, `false` .
+İlk operatör, **`true`** nesne *b*nesnesine *a* eşit değilse, aksi takdirde, olur **`false`** .
 
-İkinci ve üçüncü operatörler `true` nesne *a* eşit değilse `nullptr` , aksi takdirde, `false` .
+İkinci ve üçüncü operatörler, **`true`** nesne *a* eşit değilse **`nullptr`** , aksi takdirde, **`false`** .
 
 ## <a name="comptroperator-microsoftwrldetailsbooltype"></a><a name="operator-microsoft-wrl-details-booltype"></a>ComPtr:: operator Microsoft:: WRL::D euçlar:: BoolType
 
@@ -581,7 +581,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir arabirim bu ile ilişkilendirilmişse `ComPtr` [BoolStruct:: member](boolstruct-structure.md#member) veri üyesinin adresi; Aksi takdirde, `nullptr` .
+Bir arabirim bu ile ilişkilendirilmişse `ComPtr` [BoolStruct:: member](boolstruct-structure.md#member) veri üyesinin adresi; Aksi takdirde, **`nullptr`** .
 
 ## <a name="comptrptr_"></a><a name="ptr"></a>ComPtr::p tr_
 

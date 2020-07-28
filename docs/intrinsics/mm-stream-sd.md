@@ -7,20 +7,20 @@ helpviewer_keywords:
 - _mm_stream_sd intrinsic
 - movntsd instruction
 ms.assetid: 2b4bea5e-e64e-45fa-9afc-88a2e4b82cfc
-ms.openlocfilehash: 7f0c6457cc0806a0f1764300cffa1c9878b8a600
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: ec639004884d022fe6a827c2ec31d3201ea04657
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217366"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214223"
 ---
 # <a name="_mm_stream_sd"></a>_mm_stream_sd
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Önbellekleri kirletmeksizin 64 bitlik verileri bir bellek konumuna yazar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void _mm_stream_sd(
@@ -35,9 +35,9 @@ void _mm_stream_sd(
 dışı Kaynak verilerin yazılacağı konuma yönelik bir işaretçi.
 
 *Kaynaktaki*\
-'ndaki Alt 64 bitine yazılacak `double` değeri içeren 128 bitlik bir değer.
+'ndaki **`double`** Alt 64 bitine yazılacak değeri içeren 128 bitlik bir değer.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Yok.
 
@@ -47,13 +47,13 @@ Yok.
 |---------------|------------------|
 |`_mm_stream_sd`|SSE4a|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-İç öğe, `movntsd` yönergeyi oluşturur. Bu yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x80000001` iç öğesini çağırın `CPUInfo[2] (ECX)`ve bit 6 ' yı denetleyin. Bu bit, donanım bu yönergeyi destekliyorsa 1, aksi takdirde 0 ' dır.
+İç öğe, `movntsd` yönergeyi oluşturur. Bu yönergeyle ilgili donanım desteğini öğrenmek için, `__cpuid` ile iç öğesini çağırın `InfoType=0x80000001` ve bit 6 ' yı denetleyin `CPUInfo[2] (ECX)` . Bu bit, donanım bu yönergeyi destekliyorsa 1, aksi takdirde 0 ' dır.
 
-Yönergeyi desteklemeyen bir donanım kullanan `_mm_stream_sd` kodu çalıştırırsanız, sonuçlar tahmin edilemez olur. `movntsd`
+Yönergeyi desteklemeyen bir donanım kullanan kodu çalıştırırsanız `_mm_stream_sd` `movntsd` , sonuçlar tahmin edilemez olur.
 
 ## <a name="example"></a>Örnek
 
@@ -89,5 +89,5 @@ Bölüm Telif hakkı 2007 Advanced Micro Devices, Inc. Tüm hakları saklıdır.
 
 [_mm_stream_ss](../intrinsics/mm-stream-ss.md)\
 [_mm_store_sd](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_store_sd)\
-[_mm_sçit](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
+[_mm_sfence](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#text=_mm_sfence)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

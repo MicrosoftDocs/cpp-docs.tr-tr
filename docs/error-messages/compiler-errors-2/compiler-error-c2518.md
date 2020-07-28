@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2518
 ms.assetid: a7895b47-da90-4851-ac97-18e81479595a
-ms.openlocfilehash: 894167fce43147b98af6603cba3102e5714b850e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 315edc3124b4cdd425ce9d7581167366d3831512
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746493"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214652"
 ---
 # <a name="compiler-error-c2518"></a>Derleyici hatası C2518
 
 ' anahtar sözcüğü ' anahtar sözcüğü taban sınıf listesinde geçersizdir; LIP
 
-`class` ve `struct` anahtar sözcükleri bir temel sınıf listesinde görünmemelidir.
+Anahtar sözcükler **`class`** ve **`struct`** temel sınıf listesinde görünmemelidir.
 
 Aşağıdaki örnek C2518 oluşturur:
 

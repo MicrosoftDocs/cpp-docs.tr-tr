@@ -1,5 +1,5 @@
 ---
-title: soyut (C++/CLI ve C++/CX)
+title: abstract (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,58 +8,58 @@ f1_keywords:
 helpviewer_keywords:
 - abstract keyword [C++]
 ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
-ms.openlocfilehash: d5060f1a0950b9b2ac2638b99ff157983944a3bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1e729589f78c56111717a87a27f9c7370dca7b90
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346849"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214301"
 ---
-# <a name="abstract--ccli-and-ccx"></a>soyut (C++/CLI ve C++/CX)
+# <a name="abstract--ccli-and-ccx"></a>abstract (C++/CLI ve C++/CX)
 
-**Soyut** anahtar sözcüğü ya da bildirir:
+**Abstract** anahtar sözcüğü şu şekilde bildirir:
 
-- Bir tür temel tür olarak kullanılabilir, ancak tür örneği oluşturulamıyor.
+- Bir tür temel tür olarak kullanılabilir, ancak türün kendisi başlatılamaz.
 
-- Tür üye işlevi, yalnızca türetilmiş bir tür içinde tanımlanabilir.
+- Bir tür üye işlevi yalnızca türetilmiş bir tür içinde tanımlanabilir.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
 ### <a name="syntax"></a>Sözdizimi
 
-*sınıf-bildirimi* *sınıf tanımlayıcısı* **soyut {}**
+*sınıf bildirimi* *sınıfı tanımlayıcı* **Özet {} **
 
-**Sanal** *dönüş türü* *üye işlev tanımlayıcı* **soyut ();**
+**`virtual`***Return-Type* *üye-Function-Identifier* **() abstract;**
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk örnek söz dizimi bir sınıf, soyut olarak bildirir. *Sınıf-bildirimi* bileşeni, bir ya da bir yerel C++ bildirimi olabilir (**sınıfı** veya **yapı**), ya da bir C++ uzantı bildiriminde (**başvurusınıfı** veya **ref struct**) varsa `/ZW` veya `/clr` derleyici seçeneği belirtildi.
+İlk örnek sözdizimi Özet olacak bir sınıf bildirir. Or derleyici seçeneği belirtilmişse, *sınıf bildirimi* bileşeni yerel bir c++ bildirimi (** `class` * * * * veya **`struct`** ) ya da bir c++ uzantı bildirimi (** ref class * * veya **ref struct**) olabilir `/ZW` `/clr` .
 
-İkinci örnek söz dizimi, bir sanal üye işlevi soyut bildirir. Bir işlev soyut aynıdır saf sanal işlevi bildirmek bildirme. Bildirme bir üye işlev soyut da kapsayan sınıfa soyut bildirilmesine neden olur.
+İkinci örnek sözdizimi, bir sanal üye işlevini soyut olacak şekilde bildirir. Bir işlev soyut bildirmek, onu saf bir sanal işlevi bildirerek de aynıdır. Bir üye işlevi soyut olarak bildirmek kapsayan sınıfın soyut olarak bildirilmesine neden olur.
 
-**Soyut** anahtar sözcüğü, yerel ve platforma özgü kodu desteklenir; diğer bir deyişle, onu içeren veya içermeyen derlenebilir `/ZW` veya `/clr` derleyici seçeneği.
+**Abstract** anahtar sözcüğü, yerel ve platforma özgü kodda desteklenir; diğer bir deyişle, `/ZW` veya derleyici seçeneği olmadan veya ile derlenebilir `/clr` .
 
-Bir türü ile soyut ise derleme zamanında algılayabilir `__is_abstract(type)` türü niteliğine. Daha fazla bilgi için [tür özellikleri için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Tür nitelik türünde soyut ise, derleme zamanında tespit edebilirsiniz `__is_abstract(type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
-**Soyut** anahtar sözcüğü, bir bağlama duyarlı geçersiz kılma tanımlayıcısı. Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz. [Context-Sensitive Keywords](context-sensitive-keywords-cpp-component-extensions.md). Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz. [nasıl yapılır: Yerel derlemelerde geçersiz kılma tanımlayıcılarını bildirme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
+**Abstract** anahtar sözcüğü, bağlama duyarlı bir geçersiz kılma belirticisidir. Bağlama duyarlı anahtar sözcükler hakkında daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md). Geçersiz kılma belirticileri hakkında daha fazla bilgi için bkz. [nasıl yapılır: yerel derlemelerde geçersiz kılma belirticileri bildirme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Daha fazla bilgi için [başvuru sınıfları ve yapıları](../cppcx/ref-classes-and-structs-c-cx.md).
+Daha fazla bilgi için bkz. [başvuru sınıfları ve yapıları](../cppcx/ref-classes-and-structs-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği bir hata oluşturur çünkü sınıfı `X` işaretlenmiş **soyut**.
+Aşağıdaki kod örneği, sınıf `X` **soyut**olarak işaretlendiğinden bir hata oluşturur.
 
 ```cpp
 // abstract_keyword.cpp
@@ -74,7 +74,7 @@ int main() {
 }
 ```
 
-Aşağıdaki kod örneği, bir hata oluşturur, çünkü işaretlenmiş bir yerel sınıf örneğini oluşturduğunda **soyut**. Bu hata ile veya olmadan oluşur `/clr` derleyici seçeneği.
+Aşağıdaki kod örneği, **soyut**olarak işaretlenmiş bir yerel sınıf örneklediği için bir hata oluşturur. Derleyici seçeneği olmadan veya bu hata oluşur `/clr` .
 
 ```cpp
 // abstract_keyword_2.cpp
@@ -88,7 +88,7 @@ int main() {
                     // cannot be instantiated. See declaration of 'X'}
 ```
 
-Aşağıdaki kod örneği bir hata oluşturur çünkü işlevi `f` bir tanım içerir, ancak işaretlenen **soyut**. Örnekteki son deyim, soyut bir sanal işlev bildirme saf sanal işlevi bildirmek için eşdeğer olduğunu gösterir.
+Aşağıdaki kod örneği bir hata oluşturur çünkü işlev `f` bir tanım içeriyor ancak **soyut**olarak işaretlenmiş. Örnekteki final ifadesinde, bir soyut sanal işlevi bildiren bir saf sanal işlevi bildirme ile eşdeğer olduğu gösterilmektedir.
 
 ```cpp
 // abstract_keyword_3.cpp
@@ -102,4 +102,4 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

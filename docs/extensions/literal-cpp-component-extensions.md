@@ -1,5 +1,5 @@
 ---
-title: değişmez değerC++(/CLI C++ve/CX)
+title: literal (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-ms.openlocfilehash: 8c40adaed32bae23ec43cd553c3f755ac2b54cfb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2470d5680f7538af2db7bda3611abad11b827970
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172145"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214262"
 ---
-# <a name="literal-ccli-and-ccx"></a>değişmez değerC++(/CLI C++ve/CX)
+# <a name="literal-ccli-and-ccx"></a>literal (C++/CLI ve C++/CX)
 
 **/Clr** derlemesinde **sabit değer** olarak işaretlenen bir değişken (veri üyesi), **statik bir const** değişkeninin yerel eşdeğeridir.
 
@@ -33,7 +33,7 @@ ms.locfileid: "80172145"
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -51,7 +51,7 @@ Daha fazla bilgi için bkz. [static](../cpp/storage-classes-cpp.md) ve [const](.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, **sabit** bir değişkenin **statik**olduğunu gösterir.
+Bu örnekte, bir **sabit** değişkeninin gösterdiği gösterilmektedir **`static`** .
 
 ```cpp
 // mcppv2_literal.cpp
@@ -78,7 +78,7 @@ public ref struct A {
 };
 ```
 
-`sc` ve `lit`meta verilerindeki farka dikkat edin: `modopt` yönergesi `sc`uygulanır, yani diğer derleyiciler tarafından yoksayılabilir.
+Ve için meta verilerde farklılık olduğunu fark `sc` edin `lit` : `modopt` yönerge öğesine uygulanır `sc` , yani diğer derleyiciler tarafından yoksayılabilir.
 
 ```
 .field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x0000000A)
@@ -90,7 +90,7 @@ public ref struct A {
 
 ## <a name="example"></a>Örnek
 
-İçinde C#yazılan aşağıdaki örnek, önceki örnekte oluşturulan meta verilere başvurur ve **değişmez değer** ve **statik const** değişkenlerinin etkisini gösterir:
+C# dilinde yazılan aşağıdaki örnek, önceki örnekte oluşturulan meta verilere başvurur ve **değişmez değer** ve **statik const** değişkenlerinin etkisini gösterir:
 
 ```csharp
 // mcppv2_literal3.cs
@@ -123,8 +123,8 @@ class B {
 
 ## <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

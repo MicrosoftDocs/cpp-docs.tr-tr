@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2683
 ms.assetid: db605e4f-601b-4d05-92a1-c43ca24de08d
-ms.openlocfilehash: 8526dc1fe3cacc872aa91ca058677d15318fd703
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cd629b093bdc3992a8ea69f498b1e1cdab1b8826
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760276"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214639"
 ---
 # <a name="compiler-error-c2683"></a>Derleyici hatası C2683
 
@@ -19,7 +19,7 @@ ms.locfileid: "74760276"
 
 Çok biçimli olmayan bir sınıftan (sanal işlevleri olmayan bir sınıf) dönüştürmek için [dynamic_cast](../../cpp/dynamic-cast-operator.md) kullanamazsınız.
 
-[Static_cast](../../cpp/static-cast-operator.md) , çok biçimli olmayan türlerin dönüştürmeleri gerçekleştirmek için kullanabilirsiniz. Ancak, `static_cast` bir çalışma zamanı denetimi gerçekleştirmez.
+[Static_cast](../../cpp/static-cast-operator.md) , çok biçimli olmayan türlerin dönüştürmeleri gerçekleştirmek için kullanabilirsiniz. Ancak, **`static_cast`** bir çalışma zamanı denetimi gerçekleştirmez.
 
 Aşağıdaki örnek C2683 oluşturur:
 

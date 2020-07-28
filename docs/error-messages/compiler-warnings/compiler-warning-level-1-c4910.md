@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C4910
 ms.assetid: 67963560-fbca-4ca7-93db-06beaf7055f0
-ms.openlocfilehash: dc5feb3613e45134a08e493b397eb738fffee8a9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b17df9d7a9997e5d8ef37a4721de8693968cbbdf
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80174784"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214457"
 ---
 # <a name="compiler-warning-level-1-c4910"></a>Derleyici Uyarısı (düzey 1) C4910
 
-'\<tanımlayıcı > ': ' __declspec (dllexport) ' ve ' extern ' açık bir örnek oluşturmada uyumsuz
+' \<identifier> ': ' __declspec (dllexport) ' ve ' extern ' açık bir örnek oluşturmada uyumsuz
 
-*\<tanımlayıcı >* adlı açık şablon örneği, hem `__declspec(dllexport)` hem de `extern` anahtar kelimeleri tarafından değiştirilir. Ancak, bu anahtar sözcükler birbirini dışlıyor. `__declspec(dllexport)` anahtar sözcüğü, şablon sınıfının örneğini oluşturma anlamına gelir, ancak `extern` anahtar sözcüğü şablon sınıfının otomatik olarak örneğini oluşturma anlamına gelir.
+Adlı açık şablon örneği oluşturma, *\<identifier>* hem hem de `__declspec(dllexport)` **`extern`** anahtar kelimeleri tarafından değiştirilir. Ancak, bu anahtar sözcükler birbirini dışlıyor. `__declspec(dllexport)`Anahtar sözcüğü, şablon sınıfının örneğini oluşturma anlamına gelir, ancak **`extern`** anahtar sözcüğü şablon sınıfının otomatik olarak örneğini oluşturma anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Açık Örnekleme](../../cpp/explicit-instantiation.md)<br/>
+[Açık örnek oluşturma](../../cpp/explicit-instantiation.md)<br/>
 [dllexport, dllimport](../../cpp/dllexport-dllimport.md)<br/>
-[Genel Kurallar ve Sınırlamalar](../../cpp/general-rules-and-limitations.md)
+[Genel kurallar ve sınırlamalar](../../cpp/general-rules-and-limitations.md)

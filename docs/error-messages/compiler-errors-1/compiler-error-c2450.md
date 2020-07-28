@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2450
 ms.assetid: 929f1c06-8774-468b-be2a-f428757875a2
-ms.openlocfilehash: 2d015bd165986467a82f33a2ae0dda08c6f6d248
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 55c7f7ba8708e1475404a474f85df7dbe37fcec0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744153"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220359"
 ---
 # <a name="compiler-error-c2450"></a>Derleyici hatası C2450
 
 ' Type ' türündeki switch ifadesi geçersizdir
 
-`switch` ifadesi geçersiz bir tür olarak değerlendirilir. Bir tamsayı türüne veya bir tamsayı türüne belirsiz dönüştürmeye sahip bir sınıf türüne göre değerlendirilmelidir. Kullanıcı tanımlı bir tür olarak değerlendirilirse, bir dönüştürme işleci sağlamanız gerekir.
+**`switch`** İfade geçersiz bir tür olarak değerlendirilir. Bir tamsayı türüne veya bir tamsayı türüne belirsiz dönüştürmeye sahip bir sınıf türüne göre değerlendirilmelidir. Kullanıcı tanımlı bir tür olarak değerlendirilirse, bir dönüştürme işleci sağlamanız gerekir.
 
 Aşağıdaki örnek C2450 oluşturur:
 

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C2662
 ms.assetid: e172c2a4-f29e-4034-8232-e7dc6f83689f
-ms.openlocfilehash: b2fa2643898fed510aa7cf0f483b538ebb33b033
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5e2dd6b01db5f7d3026f14c5032ab4623eb6fb58
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760458"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220294"
 ---
 # <a name="compiler-error-c2662"></a>Derleyici hatası C2662
 
 ' function ': ' this ' işaretçisi ' type1 ' iken ' type2 ' olarak dönüştürülemez
 
-Derleyici `type1` `this` işaretçisini `type2`dönüştüremedi.
+Derleyici, **`this`** işaretçisini `type1` öğesine dönüştüremedi `type2` .
 
-Bu hata, bir `const` nesnesi üzerinde`const` olmayan bir üye işlevi çağırarak oluşabilir.  Olası çözümler:
+Bu hata, **`const`** bir nesne üzerinde üye olmayan bir işlev çağırarak oluşabilir **`const`** .  Olası çözümler:
 
-- Nesne bildiriminden `const` kaldırın.
+- **`const`** Nesne bildiriminden öğesini kaldırın.
 
-- Üye işlevine `const` ekleyin.
+- **`const`** Üye işlevine ekleyin.
 
 Aşağıdaki örnek C2662 oluşturur:
 
@@ -41,7 +41,7 @@ int main() {
 }
 ```
 
-**/Clr**ile derlerken, `const` veya `volatile` nitelikli yönetilen tür üzerinde bir işlev çağrılamaz. Yönetilen bir sınıfın const üye işlevini bildiremezsiniz, bu nedenle const yönetilen nesneler üzerinde Yöntemler çağrılamaz.
+**/Clr**ile derlerken, veya tam olarak yönetilen bir tür üzerinde bir işlev çağrılamaz **`const`** **`volatile`** . Yönetilen bir sınıfın const üye işlevini bildiremezsiniz, bu nedenle const yönetilen nesneler üzerinde Yöntemler çağrılamaz.
 
 ```cpp
 // C2662_b.cpp

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2992
 ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
-ms.openlocfilehash: 48d4902d34a806eeb26ef376e3b7a7b6ce843dbc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a51e87980eba90eb4e543a3d07a44c1b170334e9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751501"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214561"
 ---
 # <a name="compiler-error-c2992"></a>Derleyici hatası C2992
 
 ' class ': geçersiz veya eksik tür parametresi listesi
 
-Sınıfı, eksik veya geçersiz parametrelere sahip bir `template` veya **genel** anahtar kelimedir.
+Sınıfı, **`template`** eksik veya geçersiz parametrelere sahip bir veya **genel** anahtar kelimedir.
 
 ## <a name="example"></a>Örnek
 

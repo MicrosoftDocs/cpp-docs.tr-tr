@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2682
 ms.assetid: 30c6a7c4-f5f7-4fe8-81a8-c48938521ab4
-ms.openlocfilehash: c1ce0132ed0db418359effe60f59e1eb2d3cc221
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 2697ce5a790fffe762d97ca3380853514de6d437
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760289"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220268"
 ---
 # <a name="compiler-error-c2682"></a>Derleyici hatası C2682
 
 ' type1 ' değerinden ' type2 ' türüne dönüştürmek için casting_operator kullanılamaz
 
-Atama işleci uyumsuz türler arasında dönüştürmeye çalıştı. Örneğin, bir işaretçiyi bir başvuruya dönüştürmek için [dynamic_cast](../../cpp/dynamic-cast-operator.md) işlecini kullanamazsınız. `dynamic_cast` işleci, niteleyicileri dönüştürmek için kullanılamaz. Türlerindeki tüm niteleyiciler eşleşmelidir.
+Atama işleci uyumsuz türler arasında dönüştürmeye çalıştı. Örneğin, bir işaretçiyi bir başvuruya dönüştürmek için [dynamic_cast](../../cpp/dynamic-cast-operator.md) işlecini kullanamazsınız. **`dynamic_cast`** İşleç, niteleyicileri dönüştürmek için kullanılamaz. Türlerindeki tüm niteleyiciler eşleşmelidir.
 
-`const`, `volatile`veya `__unaligned`gibi öznitelikleri kaldırmak için `const_cast` işlecini kullanabilirsiniz.
+**`const_cast`**, Veya gibi öznitelikleri kaldırmak için işlecini kullanabilirsiniz **`const`** **`volatile`** **`__unaligned`** .
 
 Aşağıdaki örnek C2682 oluşturur:
 

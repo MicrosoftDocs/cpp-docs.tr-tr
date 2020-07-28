@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4936
 ms.assetid: 6676de35-bf1b-4d0b-a70f-b5734130336c
-ms.openlocfilehash: c6d54cf8b6704eec2a9e6af890c5c80c67106995
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9b1c3d1de662451432fe4fa0f058c503dc1f7b39
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165008"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220125"
 ---
 # <a name="compiler-warning-c4936"></a>Derleyici Uyarısı C4936
 
@@ -21,7 +21,7 @@ ms.locfileid: "80165008"
 
 **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-`__declspec` değiştiricisi kullanıldı, ancak bu `__declspec` değiştirici yalnızca [/clr](../../build/reference/clr-common-language-runtime-compilation.md) seçeneklerinden biri ile derlendiğinde geçerlidir.
+**`__declspec`** Değiştirici kullanıldı, ancak bu **`__declspec`** değiştirici yalnızca [/clr](../../build/reference/clr-common-language-runtime-compilation.md) seçeneklerinden biri ile derlendiğinde geçerlidir.
 
 Daha fazla bilgi için bkz. [AppDomain](../../cpp/appdomain.md) ve [Process](../../cpp/process.md).
 

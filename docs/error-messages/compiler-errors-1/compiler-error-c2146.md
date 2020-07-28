@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2146
 ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
-ms.openlocfilehash: 8dc7b521243c4eafdc22fab851812b6c12b004cf
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c1a790902af92d72eb73be7fc2321762ab01fd8c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755921"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214769"
 ---
 # <a name="compiler-error-c2146"></a>Derleyici hatası C2146
 
 sözdizimi hatası: ' identifier ' tanımlayıcıdan önce ' token ' eksik
 
-Derleyici `token` bekliyordu ve bunun yerine `identifier` buldu.  Olası nedenler:
+`token`Bunun yerine derleyicinin beklenen ve bulduğu `identifier` .  Olası nedenler:
 
 1. Yazım veya büyük harf hatası.
 
@@ -46,7 +46,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Bu hata, Visual Studio .NET 2003: eksik `typename` anahtar sözcüğü için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir.
+Bu hata, Visual Studio .NET 2003: eksik anahtar sözcüğü için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir **`typename`** .
 
 Aşağıdaki örnek Visual Studio .NET 2002 ' de derlenir ancak Visual Studio .NET 2003 ' de başarısız olur:
 
@@ -73,7 +73,7 @@ typename X<T>::Y func() { }
 
 Ayrıca, bu hatayı Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak görürsünüz: açık uzmanlık, artık birincil şablondan şablon parametreleri bulamamıştı.
 
-Birincil şablondan `T` kullanımına açık özelleştirmede izin verilmez. Kodun Visual Studio .NET 2003 ve Visual Studio .NET içinde geçerli olması için, özelleşmenin içindeki şablon parametresinin tüm örneklerini açıkça özelleştirilmiş tür ile değiştirin.
+`T`Açık özelleştirmede birincil şablondan kullanılmasına izin verilmiyor. Kodun Visual Studio .NET 2003 ve Visual Studio .NET içinde geçerli olması için, özelleşmenin içindeki şablon parametresinin tüm örneklerini açıkça özelleştirilmiş tür ile değiştirin.
 
 Aşağıdaki örnek Visual Studio .NET içinde derlenir ancak Visual Studio .NET 2003 'de başarısız olur:
 

@@ -1,127 +1,127 @@
 ---
-title: switchİfade (C)
+title: :::no-loc(switch):::İfade (C)
 ms.date: 04/25/2020
 f1_keywords:
-- switch
+- ':::no-loc(switch):::'
 helpviewer_keywords:
-- switch keyword [C]
+- ':::no-loc(switch)::: keyword [C]'
 ms.assetid: fbede014-23bd-4ab1-8094-c8d9d9cb963a
 no-loc:
-- switch
-- case
-- default
-- break
-ms.openlocfilehash: eb18b6244318b595e67cc45f99dfcde314866f55
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+- ':::no-loc(switch):::'
+- ':::no-loc(case):::'
+- ':::no-loc(default):::'
+- ':::no-loc(break):::'
+ms.openlocfilehash: bdd6885f67728a3c81e395f05c33191156896ad9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825684"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220788"
 ---
-# <a name="switch-statement-c"></a>`switch`İfade (C)
+# <a name="no-locswitch-statement-c"></a>`:::no-loc(switch):::`İfade (C)
 
-Ve __`switch`__ __`case`__ deyimleri, karmaşık koşullu ve dallanma işlemlerini denetlemeye yardımcı olur. İfade __`switch`__ , denetimi kendi gövdesi içindeki bir ifadeye aktarır.
+**`:::no-loc(switch):::`** Ve **`:::no-loc(case):::`** deyimleri, karmaşık koşullu ve dallanma işlemlerini denetlemeye yardımcı olur. **`:::no-loc(switch):::`** İfade, denetimi kendi gövdesi içindeki bir ifadeye aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
 > *`selection-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; __`switch (`__&nbsp;*`expression`* &nbsp;__`)`__&nbsp;*`statement`*
+> &nbsp;&nbsp;&nbsp;&nbsp; **`:::no-loc(switch)::: (`**&nbsp;*`expression`* &nbsp;**`)`**&nbsp;*`statement`*
 
 > *`labeled-statement`*:\
-> &nbsp;&nbsp;&nbsp;&nbsp; __`case`__&nbsp;*`constant-expression`*&nbsp;__`:`__&nbsp;*`statement`*\
-> &nbsp;&nbsp;&nbsp;&nbsp; __`default`__&nbsp;__`:`__&nbsp;*`statement`*
+> &nbsp;&nbsp;&nbsp;&nbsp; **`:::no-loc(case):::`**&nbsp;*`constant-expression`*&nbsp;**`:`**&nbsp;*`statement`*\
+> &nbsp;&nbsp;&nbsp;&nbsp; **`:::no-loc(default):::`**&nbsp;**`:`**&nbsp;*`statement`*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir __`switch`__ ifade, denetimin değerine bağlı olarak deyimin *`labeled-statement`* gövdesinde bir öğesine aktarılmasına neden olur *`expression`*.
+Bir **`:::no-loc(switch):::`** ifade, denetimin *`labeled-statement`* değerine bağlı olarak deyimin gövdesinde bir öğesine aktarılmasına neden olur *`expression`* .
 
-*`expression`* Ve değerlerinin bir integral türü *`constant-expression`* olmalıdır. Derleme *`constant-expression`* zamanında benzersiz bir sabit integral değeri olmalıdır.
+*`expression`* Ve değerlerinin *`constant-expression`* bir integral türü olmalıdır. *`constant-expression`* Derleme zamanında benzersiz bir sabit integral değeri olmalıdır.
 
-Denetim **`case`** *`constant-expression`* değeri değeri ile eşleşen ifadeye geçer *`expression`*. __`switch`__ İfade herhangi bir sayıda __`case`__ örnek içerebilir. Ancak, aynı *`constant-expression`* __`switch`__ deyimdeki iki değer aynı değere sahip olamaz. __`switch`__ Ekstre gövdesinin yürütülmesi, eşleştirmeden *`labeled-statement`* veya sonra ilk deyimden başlar. Yürütme, gövdenin sonuna kadar veya bir __`break`__ ifade denetimi gövdeden dışarı aktarana kadar devam eder.
+Denetim **`:::no-loc(case):::`** *`constant-expression`* değeri değeri ile eşleşen ifadeye geçer *`expression`* . **`:::no-loc(switch):::`** İfade herhangi bir sayıda **`:::no-loc(case):::`** örnek içerebilir. Ancak, *`constant-expression`* aynı **`:::no-loc(switch):::`** deyimdeki iki değer aynı değere sahip olamaz. **`:::no-loc(switch):::`** Ekstre gövdesinin yürütülmesi, eşleştirmeden veya sonra ilk deyimden başlar *`labeled-statement`* . Yürütme, gövdenin sonuna kadar veya bir **`:::no-loc(break):::`** ifade denetimi gövdeden dışarı aktarana kadar devam eder.
 
-__`switch`__ Deyimin kullanımı genellikle şuna benzer bir şekilde görünür:
+**`:::no-loc(switch):::`** Deyimin kullanımı genellikle şuna benzer bir şekilde görünür:
 
 ```C
-switch ( expression )
+:::no-loc(switch)::: ( expression )
 {
     // declarations
     // . . .
-    case constant_expression:
+    :::no-loc(case)::: constant_expression:
         // statements executed if the expression equals the
         // value of this constant_expression
-        break;
-    default:
+        :::no-loc(break):::;
+    :::no-loc(default)::::
         // statements executed if expression does not equal
-        // any case constant_expression
+        // any :::no-loc(case)::: constant_expression
 }
 ```
 
-Deyimdeki __`switch`__ belirli bir __`break`__ etiketli deyimin işlenmesini sonlandırmak için, ifadesini kullanabilirsiniz. __`switch`__ Deyimin sonuna dallandırır. Olmadan __`break`__, program bir sonraki etiketli ifadeye devam eder ve deyim bir __`break`__ veya sonuna ulaşılana kadar deyimlerini yürütmektedir. Bu devamlılık bazı durumlarda istenebilir.
+**`:::no-loc(break):::`** Deyimdeki belirli bir etiketli deyimin işlenmesini sonlandırmak için, ifadesini kullanabilirsiniz **`:::no-loc(switch):::`** . Deyimin sonuna dallandırır **`:::no-loc(switch):::`** . Olmadan **`:::no-loc(break):::`** , program bir sonraki etiketli ifadeye devam eder ve **`:::no-loc(break):::`** deyim bir veya sonuna ulaşılana kadar deyimlerini yürütmektedir. Bu devamlılık bazı durumlarda istenebilir.
 
-Değeri __`default`__ değerine eşit değilse, ifade __`case`__ *`constant-expression`* yürütülür *`expression`*. Hiçbir __`default`__ deyim yoksa ve hiçbir __`case`__ eşleşme bulunmazsa, __`switch`__ gövdedeki deyimlerden hiçbiri yürütülmez. En fazla bir __`default`__ ifade olabilir. __`default`__ Deyimin sonunda olması gerekmez. __`switch`__ Deyimin gövdesinde herhangi bir yerde görünebilir. __`case`__ Or __`default`__ etiketi yalnızca bir __`switch`__ deyimin içinde yer alabilir.
+Değeri değerine **`:::no-loc(default):::`** eşit değilse, ifade yürütülür **`:::no-loc(case):::`** *`constant-expression`* *`expression`* . Hiçbir **`:::no-loc(default):::`** deyim yoksa ve hiçbir **`:::no-loc(case):::`** eşleşme bulunmazsa, gövdedeki deyimlerden hiçbiri **`:::no-loc(switch):::`** yürütülmez. En fazla bir **`:::no-loc(default):::`** ifade olabilir. **`:::no-loc(default):::`** Deyimin sonunda olması gerekmez. Deyimin gövdesinde herhangi bir yerde görünebilir **`:::no-loc(switch):::`** . **`:::no-loc(case):::`** Or **`:::no-loc(default):::`** etiketi yalnızca bir deyimin içinde yer alabilir **`:::no-loc(switch):::`** .
 
-Türü __`switch`__ *`expression`* __`case`__ ve *`constant-expression`* tamsayı olmalıdır. Her __`case`__ *`constant-expression`* birinin değeri, ifade gövdesi içinde benzersiz olmalıdır.
+Türü **`:::no-loc(switch):::`** *`expression`* ve tamsayı olmalıdır **`:::no-loc(case):::`** *`constant-expression`* . Her birinin değeri, **`:::no-loc(case):::`** *`constant-expression`* ifade gövdesi içinde benzersiz olmalıdır.
 
-Deyimin gövdesinin __`default`__ ve etiketleri, __`case`__ yalnızca yürütmenin deyimin gövdesinde başlayacağını belirleyen başlangıç testinde önemlidir. __`switch`__ __`switch`__ deyimler iç içe olabilir. Herhangi bir statik değişken, herhangi bir __`switch`__ deyime yürütülmeden önce başlatılır.
+**`:::no-loc(case):::`** **`:::no-loc(default):::`** Deyimin gövdesinin ve etiketleri, **`:::no-loc(switch):::`** yalnızca yürütmenin deyimin gövdesinde başlayacağını belirleyen başlangıç testinde önemlidir. **`:::no-loc(switch):::`** deyimler iç içe olabilir. Herhangi bir statik değişken, herhangi bir deyime yürütülmeden önce başlatılır **`:::no-loc(switch):::`** .
 
 > [!NOTE]
-> Bildirimler, __`switch`__ gövde oluşturan bileşik deyimin başlangıcında görünebilir, ancak bildirimlere dahil olan başlatmalar gerçekleştirilmez. __`switch`__ İfade, denetimi, başlatma içeren satırları atlayarak gövde içindeki bir yürütülebilir ifadeye doğrudan aktarır.
+> Bildirimler, gövde oluşturan bileşik deyimin başlangıcında görünebilir **`:::no-loc(switch):::`** , ancak bildirimlere dahil olan başlatmalar gerçekleştirilmez. **`:::no-loc(switch):::`** İfade, denetimi, başlatma içeren satırları atlayarak gövde içindeki bir yürütülebilir ifadeye doğrudan aktarır.
 
-Aşağıdaki örneklerde, deyimleri __`switch`__ gösterilmektedir:
+Aşağıdaki örneklerde, **`:::no-loc(switch):::`** deyimleri gösterilmektedir:
 
 ```C
-switch( c )
+:::no-loc(switch):::( c )
 {
-    case 'A':
+    :::no-loc(case)::: 'A':
         capital_a++;
-    case 'a':
+    :::no-loc(case)::: 'a':
         letter_a++;
-    default :
+    :::no-loc(default)::: :
         total++;
 }
 ```
 
-__`switch`__ Aşağıdakilerden __`case`__ önce hiçbir __`break`__ deyim göründüğünden, bu örnekteki gövdenin tüm üç `c` deyimi öğesine `'A'`eşitse yürütülür. Yürütme denetimi ilk ifadeye (`capital_a++;`) aktarılır ve gövdenin geri kalanı boyunca devam eder. `c` `'a'`Eşitse `letter_a` ve `total` arttırılır. Yalnızca `total` eşit `c` `'A'` olmadığında artırılır `'a'`.
+**`:::no-loc(switch):::`** `c` `'A'` **`:::no-loc(break):::`** Aşağıdakilerden önce hiçbir deyim göründüğünden, bu örnekteki gövdenin tüm üç deyimi öğesine eşitse yürütülür **`:::no-loc(case):::`** . Yürütme denetimi ilk ifadeye ( `capital_a++;` ) aktarılır ve gövdenin geri kalanı boyunca devam eder. `c`Eşitse `'a'` `letter_a` ve `total` arttırılır. Yalnızca `total` eşit olmadığında artırılır `c` `'A'` `'a'` .
 
 ```C
-switch( i )
+:::no-loc(switch):::( i )
 {
-    case -1:
+    :::no-loc(case)::: -1:
         n++;
-        break;
-    case 0 :
+        :::no-loc(break):::;
+    :::no-loc(case)::: 0 :
         z++;
-        break;
-    case 1 :
+        :::no-loc(break):::;
+    :::no-loc(case)::: 1 :
         p++;
-        break;
+        :::no-loc(break):::;
 }
 ```
 
-Bu örnekte, bir ifade __`break`__ __`switch`__ gövdenin her bir ifadesine uyar. __`break`__ İfade, bir deyimden sonra deyimin gövdesinden çıkış zorlar. `i` -1 ' e eşitse, yalnızca `n` artırılır. __`break`__ Aşağıdaki deyim `n++;` , yürütme denetiminin geri kalan deyimleri atlayarak deyim gövdesinin dışına geçmesini sağlar. `i` Benzer şekilde, 0 ' a eşitse, yalnızca `z` artırılır; `i` 1 ' e eşitse, yalnızca `p` artırılır. Denetim bileşik __`break`__ deyimin sonundaki gövdeden geçerken son ifade kesinlikle gerekli değildir. Tutarlılık için eklenmiştir.
+Bu örnekte, bir **`:::no-loc(break):::`** ifade gövdenin her bir ifadesine uyar **`:::no-loc(switch):::`** . **`:::no-loc(break):::`** İfade, bir deyimden sonra deyimin gövdesinden çıkış zorlar. `i`-1 ' e eşitse, yalnızca `n` artırılır. **`:::no-loc(break):::`** Aşağıdaki deyim, `n++;` yürütme denetiminin geri kalan deyimleri atlayarak deyim gövdesinin dışına geçmesini sağlar. Benzer şekilde, `i` 0 ' a eşitse, yalnızca `z` artırılır; `i` 1 ' e eşitse yalnızca `p` artırılır. **`:::no-loc(break):::`** Denetim bileşik deyimin sonundaki gövdeden geçerken son ifade kesinlikle gerekli değildir. Tutarlılık için eklenmiştir.
 
-Aşağıdaki örnekte gösterildiği gibi tek bir __`case`__ ifade birden çok etiket taşıyabilir:
+Aşağıdaki örnekte gösterildiği gibi tek bir ifade birden çok **`:::no-loc(case):::`** etiket taşıyabilir:
 
 ```C
-switch( c )
+:::no-loc(switch):::( c )
 {
-    case 'a' :
-    case 'b' :
-    case 'c' :
-    case 'd' :
-    case 'e' :
-    case 'f' :  convert_hex(c);
+    :::no-loc(case)::: 'a' :
+    :::no-loc(case)::: 'b' :
+    :::no-loc(case)::: 'c' :
+    :::no-loc(case)::: 'd' :
+    :::no-loc(case)::: 'e' :
+    :::no-loc(case)::: 'f' :  convert_hex(c);
 }
 ```
 
-Bu örnekte, *sabit ifade* ve `'a'` `'f'`arasında herhangi bir harfe eşitse, `convert_hex` işlev çağrılır.
+Bu örnekte, *sabit ifade* ve arasında herhangi bir harfe eşitse `'a'` `'f'` , `convert_hex` işlev çağrılır.
 
 ### <a name="microsoft-specific"></a>Microsoft'a özgü
 
-Microsoft C, bir __`case`__ __`switch`__ deyimdeki değer sayısını sınırlamaz. Numara yalnızca kullanılabilir bellekle sınırlıdır. ANSI C, bir __`case`__ __`switch`__ bildirimde en az 257 etikete izin verilmesini gerektirir.
+Microsoft C, **`:::no-loc(case):::`** bir deyimdeki değer sayısını sınırlamaz **`:::no-loc(switch):::`** . Numara yalnızca kullanılabilir bellekle sınırlıdır. ANSI C **`:::no-loc(case):::`** , bir bildirimde en az 257 etikete izin verilmesini gerektirir **`:::no-loc(switch):::`** .
 
-Microsoft default C Için, Microsoft uzantılarının etkin olması. Bu uzantıları devre dışı bırakmak için [/za](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneğini kullanın.
+:::no-loc(default):::Microsoft C için, Microsoft uzantılarının etkin olması. Bu uzantıları devre dışı bırakmak için [/za](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneğini kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[switchİfade (C++)](../cpp/switch-statement-cpp.md)
+[:::no-loc(switch):::İfade (C++)](../cpp/:::no-loc(switch):::-statement-cpp.md)

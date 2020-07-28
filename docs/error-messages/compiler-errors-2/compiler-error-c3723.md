@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3723
 ms.assetid: ef0fb1ff-3f9a-4093-a6b6-894d1ab0c4b9
-ms.openlocfilehash: c45eee5ead680f63b85dcdd94e4ca099dabfeefc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 2948b9af50179082e61a222484053bcf3858f454
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752996"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220177"
 ---
 # <a name="compiler-error-c3723"></a>Derleyici hatası C3723
 
-' function ': olay çözümlenemedi
+> ' function ': olay çözümlenemedi
 
-`function` hangi olayın çağrılacağını çözümleyemedi.
+`function`Hangi olayın çağrılacağını çözümlenemedi.
 
 Aşağıdaki örnek C3723 oluşturur:
 
@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-`__hook` ve `__unhook`/CLR programlama ile uyumlu değildir.  Bunun yerine + = ve-= işleçlerini kullanın.
+**`__hook`** ve **`__unhook`** programlamayla uyumlu değildir **`/clr`** .  Bunun yerine + = ve-= işleçlerini kullanın.
 
 Aşağıdaki örnek C3723 oluşturur:
 
