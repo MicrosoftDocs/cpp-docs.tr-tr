@@ -25,47 +25,47 @@ helpviewer_keywords:
 - .lib files
 - EXP files
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-ms.openlocfilehash: 37c3169b66e1120dbfdb3a69379430e9bc8a1586
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cb5224b3edaf84dbcb7c0429044a647fb5ac19a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294798"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229759"
 ---
 # <a name="building-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 
-İçeri aktarma kitaplığı oluşturmak ve dosyasını dışarı aktarmak için aşağıdaki sözdizimini kullanın:
+İçeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturmak için aşağıdaki sözdizimini kullanın:
 
-> **LIB/def**[**:**<em>deffile</em>] [*seçenekleri*] [*objfiles*] [*kitaplıkları*]
+> **LIB/DEF**[**:**<em>deffile</em>] [*Seçenekler*] [*objfiles*] [*Kitaplıklar*]
 
-/ Def belirtildiğinde LIB çıktı dosyaları LIB komutta geçirilen dışarı aktarma belirtimleri oluşturur. Önerilen Kullanım sırasına göre listelenmiş dışa belirtmek için üç yöntem vardır:
+/DEF belirtildiğinde, LIB LıB komutuna geçirilen dışa aktarma belirtimlerinden çıkış dosyalarını oluşturur. ' Nin önerilen kullanım sırasıyla listelenen dışarı aktarmaları belirtmek için üç yöntem vardır:
 
-1. A **__declspec(dllexport)** birini tanımında *objfiles* veya *kitaplıkları*
+1. **`__declspec(dllexport)`** *Objfiles* veya *kitaplıklarından* birindeki bir tanım
 
-1. / Export belirtimi:*adı* LIB komut satırında
+1. LIB komut satırındaki/EXPORT:*Name* belirtimi
 
-1. Bir tanım bir **dışarı AKTARMALARI** deyiminde bir *deffile*
+1. Bir *deffile* Içindeki **dışarı aktarmalar** deyimindeki bir tanım
 
-Bunlar bir dışarı aktarma programı'nı bağlarken dışarı aktarmaları belirtmek için kullandığınız aynı yöntemleridir. Bir program, birden fazla yöntemi kullanabilirsiniz. LIB komutunun bölümleri belirtebilirsiniz (gibi birden çok *objfiles* veya/Export belirtimleri) LIB komutu bir komut dosyasında bıraktığınız gibi için bir bağlantı komutu.
+Bunlar dışa aktarma programı bağlarken dışarı aktarmaları belirtmek için kullandığınız metodlardır. Bir program birden fazla yöntem kullanabilir. LIB komutunda bir komut dosyasında (örneğin, birden çok *objfiles* veya/Export belirtimleri), TıPKı bir bağlantı komutunda yapabildiğiniz gıbı, lib komutunun parçalarını belirtebilirsiniz.
 
-Aşağıdaki seçenekler, içeri aktarma kitaplığı oluşturmaya dairdir ve dosyasını dışa aktarın:
+İçeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturmak için aşağıdaki seçenekler geçerlidir:
 
-> **/ OUT:** *içeri aktarma*
+> **/Out:** *import*
 
-İçin varsayılan çıkış dosyası adını geçersiz kılar *alma* kitaplığı oluşturuluyor. / Out belirtilmediğinde, varsayılan adı temel nesne dosyası birinci ya da LIB komut ve uzantı kitaplıkta adıdır. LIB. Dışarı aktarma dosyası içeri aktarma kitaplığını ve uzantı olarak aynı temel adı verilir. üs.
+Oluşturulan *içeri aktarma* kitaplığı için varsayılan çıkış dosyası adını geçersiz kılar. /OUT belirtilmediğinde, varsayılan ad LıB komutunda ve. lib uzantısının ilk nesne dosyasının veya kitaplığının temel adıdır. Dışarı aktarma dosyasına içeri aktarma kitaplığıyla ve. exp uzantısıyla aynı temel ad verilir.
 
-> **/ EXPORT:** *GirişAdı* \[ **=** *InternalName*]\[,**\@** <em>sıralı</em>\[, **NONAME**]]\[, **veri**]
+> **/Export:** *EntryName* \[ **=** *InternalName*] \[ , **\@** <em>Ordinal</em> \[ , **noname**]] \[ , **veri**]
 
-Bir işlev programınızı işlevi çağırmak diğer programları olanak verir. Ayrıca verileri aktarabilirsiniz (kullanarak **veri** anahtar sözcüğü). Dışarı aktarmalar, genellikle bir DLL içinde tanımlanır.
+Diğer programların işlevi çağırmasını sağlamak için programınızdaki bir işlevi dışarı aktarır. Ayrıca, verileri dışarı aktarabilirsiniz ( **Data** anahtar sözcüğünü kullanarak). Dışarı aktarmalar genellikle DLL 'de tanımlanmıştır.
 
-*GirişAdı* çağırma program tarafından kullanılacak olan işlev veya veri öğesinin adını aynıdır. İsteğe bağlı olarak belirtebilirsiniz *InternalName* tanımlama program; varsayılan olarak bilinen işlevi olarak *InternalName* aynı *GirişAdı*. *Sıralı* belirtmezseniz, dizin ' % s'aralık 1 ile 65.535; dışa aktarma tablosunda içine belirtir *sıralı*, LIB bir atar. **NONAME** anahtar sözcüğü işlevin olmadan yalnızca bir sıralı, dışarı bir *GirişAdı*. **Veri** anahtar sözcüğü, yalnızca veri nesneleri dışarı aktarmak için kullanılır.
+*EntryName* , çağıran program tarafından kullanılacak şekilde işlevin veya veri öğesinin adıdır. İsteğe bağlı olarak, *InternalName* 'i tanımlama programında bilinen işlev olarak belirtebilirsiniz; Varsayılan olarak, *InternalName* , *EntryName*ile aynıdır. *Ordinal* , 1 ile 65.535 arasında dışa aktarma tablosuna bir dizin belirtir; *sıra*belirtmezseniz, LIB bir tane atar. **Noname** anahtar sözcüğü, *EntryName*olmadan işlevi yalnızca sıra olarak dışa aktarır. **Data** anahtar sözcüğü yalnızca veri nesneleri dışarı aktarmak için kullanılır.
 
-> **/ INCLUDE:** *simgesi*
+> **/Include:** *simge*
 
-Belirtilen ekler *sembol* sembol tablosuna. Bu seçenek, aksi takdirde dahil olmazdı bir kitaplık nesnesi kullanılmasını zorlamak için yararlıdır.
+Belirtilen *sembolü* sembol tablosuna ekler. Bu seçenek, başka türlü dahil olmayan bir kitaplık nesnesinin kullanımını zorlamak için yararlıdır.
 
-Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığı derlerken geçti olarak, aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.
+İçeri aktarma kitaplığınızı bir ön adımda oluşturursanız,. dll 'nizi oluşturmadan önce, içeri aktarma kitaplığını oluştururken geçirdiğiniz gibi,. dll dosyasını oluştururken aynı nesne dosyaları kümesini geçirmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](working-with-import-libraries-and-export-files.md)
+[Içeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma](working-with-import-libraries-and-export-files.md)

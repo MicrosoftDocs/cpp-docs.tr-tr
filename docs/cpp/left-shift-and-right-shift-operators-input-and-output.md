@@ -13,18 +13,18 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-ms.openlocfilehash: 7cde299d305219f2bd0e53a9f19c2ca35a8c7b69
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 4cdb353c950313396b331dc7ba01b3ea392ed0f8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404776"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87186964"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma Işleçleri ( &gt; &gt; ve &lt; &lt; )
 
 Bit düzeyinde kaydırma işleçleri sağ SHIFT işleçtir (), bu, Shift-ifadesinin bitlerini **&gt;&gt;** sağa *shift-expression* ve sola kaydırma işleci ( **&lt;&lt;** ) ile sola kayar. *shift-expression* <sup>1</sup>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > *SHIFT ifadesi* `<<` *Toplamsal ifadesi*\
 > *SHIFT ifadesi* `>>` *Toplamsal ifadesi*
@@ -176,7 +176,7 @@ int main() {
 
 Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. Integral yükseltmeler, [Standart dönüşümlerde](standard-conversions.md)açıklanan kurallara göre gerçekleştirilir. Sonucun türü, yükseltilen *kaydırma ifadesinin*türüyle aynı olur.
 
-Aşağıdaki örnekte, **char** türünde bir değişken bir **int**'e yükseltilir.
+Aşağıdaki örnekte, türünde bir değişken **`char`** bir sürümüne yükseltilir **`int`** .
 
 ```cpp
 #include <iostream>

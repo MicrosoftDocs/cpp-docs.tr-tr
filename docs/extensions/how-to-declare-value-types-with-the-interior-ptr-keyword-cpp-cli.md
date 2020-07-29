@@ -6,25 +6,25 @@ helpviewer_keywords:
 - _ptr keyword
 - value types, declaring
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-ms.openlocfilehash: 22c0fe4424e4df81ebb0355dfac2168af725b971
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 46f8c39affe5a3c0ad8648162f0fde5371eb30ca
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172288"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87195583"
 ---
 # <a name="how-to-declare-value-types-with-the-interior_ptr-keyword-ccli"></a>Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)
 
 Bir **interior_ptr** , bir değer türü ile kullanılabilir.
 
 > [!IMPORTANT]
-> Bu dil özelliği `/clr` derleyici seçeneği tarafından desteklenir, ancak `/ZW` derleyici seçeneği tarafından desteklenmez.
+> Bu dil özelliği derleyici seçeneği tarafından desteklenir `/clr` , ancak `/ZW` derleyici seçeneği tarafından desteklenmez.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki C++/CLI örneği, bir **interior_ptr** değer türüyle nasıl kullanacağınızı gösterir.
+Aşağıdaki C++/CLı örneği, bir **interior_ptr** değer türüyle nasıl kullanacağınızı gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -69,9 +69,9 @@ int main() {
 
 ### <a name="description"></a>Açıklama
 
-Değer türünde, **Bu** işaretçi bir interior_ptr değerlendirir.
+Değer türünde, **`this`** işaretçi bir interior_ptr değerlendirir.
 
-Değer türü `V`statik olmayan bir üye işlevi gövdesinde, **Bu** , değeri işlevin çağrıldığı nesnenin adresi olan `interior_ptr<V>` türünde bir ifadedir.
+Bir değer türünün statik olmayan bir üye işlevinin gövdesinde `V` **`this`** değeri, `interior_ptr<V>` işlevin çağrıldığı nesnenin adresi olan türü bir ifadedir.
 
 ### <a name="code"></a>Kod
 
@@ -93,7 +93,7 @@ value struct V {
 
 Aşağıdaki örnek, statik üyelerle adres işlecinin nasıl kullanılacağını göstermektedir.
 
-Statik görsel C++ türü üyesinin adresi yerel bir işaretçi verir.  Değer türü üyesi çalışma zamanı yığınına ayrıldığından ve çöp toplayıcı tarafından taşınabildiğinden, statik değer türü üyesinin adresi yönetilen bir işaretçidir.
+Statik bir Visual C++ türü üyesinin adresi yerel bir işaretçi verir.  Değer türü üyesi çalışma zamanı yığınına ayrıldığından ve çöp toplayıcı tarafından taşınabildiğinden, statik değer türü üyesinin adresi yönetilen bir işaretçidir.
 
 ### <a name="code"></a>Kod
 

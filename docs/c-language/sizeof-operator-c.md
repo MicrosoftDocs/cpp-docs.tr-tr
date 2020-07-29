@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 70826d03-3451-41e4-bebb-a820ae66d53f
-ms.openlocfilehash: 0bc0de5481cade10f89634d9e4ec78f4ec7b09f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1d06fc8b541cbce3771a485c8f71953be8f7d552
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158131"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229525"
 ---
 # <a name="sizeof-operator-c"></a>sizeof İşleci (C)
 
-`sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, programlarınızda makineye bağımlı veri boyutları belirtmekten kaçınmanızı sağlar.
+**`sizeof`** İşleci, işlenen türünde bir nesneyi depolamak için gereken depolama alanı miktarını bayt olarak verir. Bu işleç, programlarınızda makineye bağımlı veri boyutları belirtmekten kaçınmanızı sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,17 +28,17 @@ sizeof ( type-name )
 
 İşlenen, *birli ifade*veya tür atama ifadesi (yani parantez içine alınmış bir tür Belirleyicisi) olan bir tanıtıcıdır. *Birli ifade* , bir bit alanı nesnesini, tamamlanmamış bir türü veya bir işlev göstergesini temsil edemez. Sonuç, işaretsiz bir tamsayı sabitidir. Standart üst bilgi STDDEF. H bu türü **size_t**olarak tanımlar.
 
-`sizeof` işlecini bir dizi tanımlayıcısına uyguladığınızda, sonuç dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu değil, tüm dizinin boyutudur.
+**`sizeof`** İşleci bir dizi tanımlayıcısına uyguladığınızda, sonuç dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu yerine tüm dizinin boyutudur.
 
-`sizeof` işlecini bir yapıya, birleşim türü adına veya bir yapı ya da birleşim türünün tanımlayıcısına uyguladığınızda; sonuç, iç ve sondaki doldurma dahil olmak üzere, yapı veya birleşimdeki bayt sayısıdır. Bu boyut, yapı veya bellek sınırları üzerindeki birleşim üyelerini hizalamak için kullanılan iç ve sondaki doldurmayı içerebilir. Bu şekilde, sonuç tek tek üyelerin depolama gereksinimlerini toplayarak hesaplanan boyuta karşılık gelmeyebilir.
+**`sizeof`** İşleci bir yapıya veya birleşim türü adına veya yapı ya da birleşim türü tanımlayıcısına uyguladığınızda, sonuç, iç ve sondaki doldurma dahil olmak üzere yapıda veya birleşimde bayt sayısıdır. Bu boyut, yapı veya bellek sınırları üzerindeki birleşim üyelerini hizalamak için kullanılan iç ve sondaki doldurmayı içerebilir. Bu şekilde, sonuç tek tek üyelerin depolama gereksinimlerini toplayarak hesaplanan boyuta karşılık gelmeyebilir.
 
-Boyutsuz bir dizi bir yapının son öğesi ise, `sizeof` işleci dizi olmadan yapının boyutunu döndürür.
+Boyutlandırılmış olmayan bir dizi bir yapının son öğesi ise, **`sizeof`** işleci dizi olmadan yapının boyutunu döndürür.
 
 ```
 buffer = calloc(100, sizeof (int) );
 ```
 
-Bu örnekte, bir `sizeof` öğesinin makineler arasında değişen boyutunu, `int` adlı bir çalışma zamanı işlevine yönelik bağımsız değişken olarak geçirmek için `calloc` işleci kullanılmaktadır. İşlev tarafından döndürülen değer `buffer` içinde depolanır.
+Bu örnek, **`sizeof`** **`int`** adlı bir çalışma zamanı işlevine bağımsız değişken olarak makineler arasında farklılık gösteren bir olan boyutunu geçirmek için işlecini kullanır `calloc` . İşlev tarafından döndürülen değer `buffer` içinde depolanır.
 
 ```
 static char *strings[] = {
@@ -49,7 +49,7 @@ static char *strings[] = {
 const int string_no = ( sizeof strings ) / ( sizeof strings[0] );
 ```
 
-Bu örnekte `strings`, bir `char` işaretçileri dizisidir. İşaretçilerin sayısı dizideki öğelerin sayısıdır, ancak belirtilmemiştir. Dizideki öğelerin sayısını hesaplamak üzere `sizeof` işlecini kullanarak işaretçilerin sayısını belirlemek kolaydır. **Const** tamsayı değeri `string_no` bu sayı olarak başlatılır. Bu bir **const** değeri `string_no` olduğundan değiştirilemez.
+Bu örnekte, `strings` işaretçilerin bir dizisidir **`char`** . İşaretçilerin sayısı dizideki öğelerin sayısıdır, ancak belirtilmemiştir. **`sizeof`** Dizideki öğe sayısını hesaplamak için işlecini kullanarak işaretçilerin sayısını kolayca saptayabilirsiniz. **`const`** Tamsayı değeri `string_no` Bu sayı olarak başlatılır. **`const`** Değer olduğundan, `string_no` değiştirilemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

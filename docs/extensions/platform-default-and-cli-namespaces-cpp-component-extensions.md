@@ -1,5 +1,5 @@
 ---
-title: Platform, Default ve CLI ad alanları (C++/CLI ve C++/CX)
+title: Platform, varsayılan ve cli Ad Alanları (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -9,28 +9,28 @@ helpviewer_keywords:
 - lang namespace
 - cli namespace
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
-ms.openlocfilehash: aedb8b7954eaa4bb1cf1060725103cd725c3f180
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: df699b12404d9de1a9acaae6e9dc8c00fd2f15df
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181830"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87195362"
 ---
-# <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, Default ve CLI ad alanları (C++/CLI ve C++/CX)
+# <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Platform, varsayılan ve cli Ad Alanları (C++/CLI ve C++/CX)
 
 Bir ad alanı dil öğelerinin adlarını kaynak kod içindeki başka bir yerde benzer adlarla çakışmamaları için örtük olarak nitelendirir. Örneğin, bir ad çakışması derleyicinin [bağlama duyarlı anahtar sözcükleri](context-sensitive-keywords-cpp-component-extensions.md)tanımasını engelleyebilir. Ad alanları derleyici tarafından kullanılır, ancak oluşturulmuş derlemede korunmaz.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-Projeyi oluştururken, Visual Studio projeniz için varsayılan bir ad alanı sağlar. Ad alanını el ile yeniden adlandırabilirsiniz, ancak/CX C++içinde. winmd dosyasının adı kök ad alanının adıyla aynı olmalıdır.
+Projeyi oluştururken, Visual Studio projeniz için varsayılan bir ad alanı sağlar. Ad alanını el ile yeniden adlandırabilirsiniz, ancak C++/CX ' te. winmd dosyasının adı kök ad alanının adıyla aynı olmalıdır.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Daha fazla bilgi için bkz. [ad alanları ve türC++görünürlüğü (/CX)](../cppcx/namespaces-and-type-visibility-c-cx.md).
+Daha fazla bilgi için bkz. [ad alanları ve tür görünürlüğü (C++/CX)](../cppcx/namespaces-and-type-visibility-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -42,7 +42,7 @@ using namespace cli;
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++/CLI, **CLI** ad alanını destekler. `/clr`ile derlerken, söz dizimi bölümünde **using** deyimleri kapsanır.
+C++/CLı, **CLI** ad alanını destekler. İle derlerken `/clr` , **`using`** söz dizimi bölümündeki ifade kapsanır.
 
 Aşağıdaki dil özellikleri **CLI** ad alanında bulunur:
 
@@ -56,7 +56,7 @@ Aşağıdaki dil özellikleri **CLI** ad alanında bulunur:
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
@@ -80,4 +80,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

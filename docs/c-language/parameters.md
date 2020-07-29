@@ -12,12 +12,12 @@ helpviewer_keywords:
 - ellipsis (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-ms.openlocfilehash: 78ad91ea86d81a3b6d888335ba7b78399a1d2aea
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: 57648747bbb50ffe46b199a03563757c331f088a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032076"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229577"
 ---
 # <a name="parameters"></a>Parametreler
 
@@ -25,39 +25,37 @@ Bağımsız değişkenler bir işleve işlev çağrısı tarafından geçirilen 
 
 ## <a name="syntax"></a>Sözdizimi
 
-*işlev tanımı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirim-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *bileşik-deyimin*
+*`function-definition`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`*<sub>opt</sub> *`attribute-seq`* <sub>opt</sub> *`declarator`* *`declaration-list`* <sub>opt</sub>*`compound-statement`*
 
-/\**öznitelik-Seq* , Microsoft 'a özgüdür\*/
+/\**`attribute-seq`* Microsoft 'a özgü\*/
 
-*bildirimci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
+*`declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`pointer`*<sub>opt</sub>*`direct-declarator`*
 
-*Direct-bildirimci*:/\* bir işlev bildirimci\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***parametre türü-liste***)**  / \* yeni stil bildirimci      \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***tanımlayıcı listesi*<sub>opt</sub> **)**  / \* eski stil bildirimci    \*/
+*`direct-declarator`*:/ \* Bir işlev bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`parameter-type-list`*  **`)`** /\*Yeni stil bildirimci\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`direct-declarator`*  **`(`**  *`identifier-list`*<sub>opt</sub> **`)`**  / opt \* Eski stil bildirimci\*/
 
-*parametre-tür-listesi*:/\* parametre listesi\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-liste* **,...**
+*`parameter-type-list`*:/ \* Parametre listesi\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`, ...`**
 
-*parametre-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parametre-listesi* **,**  *parametre bildirimi*
+*`parameter-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-declaration`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`,`**  *`parameter-declaration`*
 
-*parametre bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları* *bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar* *abstract-bildirimci*<sub>opt</sub>
+*`parameter-declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`**`abstract-declarator`* <sub>opt</sub>
 
-*Parametre türü-listesi* , virgülle ayrılmış bir parametre bildirimleri dizisidir. Bir parametre listesindeki her parametrenin biçimi şöyle görünür:
+, *`parameter-type-list`* Virgülle ayrılmış bir parametre bildirimleri dizisidir. Bir parametre listesindeki her parametrenin biçimi şöyle görünür:
 
-```C
-[register]  type-specifier [declarator]
-```
+> **`register`**<sub>opt</sub> *`type-specifier`* *`declarator`* <sub>opt</sub>
 
-**Auto** özniteliğiyle belirtilen işlev parametreleri hata oluştur. Parametre tanımlayıcıları, işleve geçirilen değerlere başvurmak için işlev gövdesinde kullanılır. Bir prototipde parametreleri isimlendirebilmeniz, ancak adlar bildirimin sonundaki kapsam dışına çıkar. Bu nedenle parametre adları, işlev tanımında aynı şekilde veya farklı şekilde atanabilir. Bu tanımlayıcılar, işlev gövdesinin en dıştaki bloğunda yeniden tanımlanamaz, ancak parametre listesi kapsayan bir blok olmasına rağmen iç, iç içe bloklar içinde yeniden tanımlanabilir.
+Öznitelik oluşturma hatası ile belirtilen işlev parametreleri **`auto`** . Parametre tanımlayıcıları, işleve geçirilen değerlere başvurmak için işlev gövdesinde kullanılır. Bir prototipde parametreleri isimlendirebilmeniz, ancak adlar bildirimin sonundaki kapsam dışına çıkar. Bu, parametre adlarının işlev tanımına aynı şekilde veya farklı şekilde atanabileceği anlamına gelir. Bu tanımlayıcılar, işlev gövdesinin en dıştaki bloğunda yeniden tanımlanamaz, ancak parametre listesi kapsayan bir blok olmasına rağmen iç, iç içe bloklar içinde yeniden tanımlanabilir.
 
-*Parametre türü listedeki* her tanımlayıcı, bu örnekte gösterildiği gibi, önce uygun tür belirticisinden önce gelmelidir:
+İçindeki her tanımlayıcı *`parameter-type-list`* , bu örnekte gösterildiği gibi önce uygun tür belirticisinden gelmelidir:
 
 ```C
 void new( double x, double y, double z )
@@ -66,14 +64,14 @@ void new( double x, double y, double z )
 }
 ```
 
-Parametre listesinde en az bir parametre oluşursa, liste bir virgül ile ve ardından üç nokta (**,...**) ile bitebilirler. "Üç nokta gösterimi" olarak adlandırılan bu yapım, işlev için değişken sayıda bağımsız değişken belirtir. (Daha fazla bilgi için bkz. [değişken sayıda bağımsız değişkene sahip çağrılar](../c-language/calls-with-a-variable-number-of-arguments.md) .) Ancak, bir işlev çağrısının en az sayıda bağımsız değişkeni olması gerekir ve bu, son virgülden önce parametre vardır.
+Parametre listesinde en az bir parametre oluşursa, liste bir virgül ile ve ardından üç nokta () ile bitebilirler **`, ...`** . "Üç nokta gösterimi" olarak adlandırılan bu yapım, işlev için değişken sayıda bağımsız değişken belirtir. (Daha fazla bilgi için bkz. [değişken sayıda bağımsız değişken Içeren çağrılar](../c-language/calls-with-a-variable-number-of-arguments.md).) Ancak, bir işlev çağrısının en az sayıda bağımsız değişkeni olması gerekir ve bu, son virgülden önce parametre vardır.
 
-İşleve hiçbir bağımsız değişken geçirilmezse, parametrelerin listesi, anahtar sözcüğüyle `void`değiştirilmiştir. Bu kullanımı `void` , bir tür belirleyici olarak kullanımıyla farklıdır.
+İşleve hiçbir bağımsız değişken geçirilmezse, parametrelerin listesi, anahtar sözcüğüyle değiştirilmiştir **`void`** . Bu kullanımı, **`void`** bir tür belirleyici olarak kullanımıyla farklıdır.
 
-Üç nokta gösteriminin kullanımı dahil olmak üzere parametrelerin sırası ve türü, tüm işlev bildirimlerinde ve işlev tanımında aynı olmalıdır. Her zamanki aritmetik dönüşümlerden sonraki bağımsız değişkenlerin türleri, karşılık gelen parametrelerin türleriyle atama ile uyumlu olmalıdır. (Aritmetik dönüştürmeler hakkında bilgi için bkz. [normal aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) .) Üç nokta ile sonraki bağımsız değişkenler işaretli değil. Bir parametre herhangi bir temel, yapı, birleşim, işaretçi veya dizi türüne sahip olabilir.
+Üç nokta gösteriminin kullanımı dahil olmak üzere parametrelerin sırası ve türü, tüm işlev bildirimlerinde ve işlev tanımında aynı olmalıdır. Her zamanki aritmetik dönüşümlerden sonraki bağımsız değişkenlerin türleri, karşılık gelen parametrelerin türleriyle atama ile uyumlu olmalıdır. (Aritmetik dönüştürmeler hakkında bilgi için bkz. [normal aritmetik dönüştürmeler](../c-language/usual-arithmetic-conversions.md) .) Üç noktayı izleyen bağımsız değişkenler işaretlenmemektedir. Bir parametre herhangi bir temel, yapı, birleşim, işaretçi veya dizi türüne sahip olabilir.
 
-Derleyici, her bir parametrede ve gerekirse her bağımsız değişkende her zaman bağımsız olarak her bir aritmetik dönüştürme gerçekleştirir. Dönüştürmeden sonra, hiçbir parametre bir `int`değerden daha kısadır ve parametre türü açıkça prototipi içinde **float** olarak belirtilmedikçe hiçbir parametre **float** türüne sahip değildir. Bu, örneğin, bir parametresinin bir `char` olarak bildirilmesinin aynı etkiye sahip olduğu anlamına gelir. `int`
+Derleyici, her bir parametrede ve gerekirse her bağımsız değişkende her zaman bağımsız olarak her bir aritmetik dönüştürme gerçekleştirir. Dönüştürmeden sonra, hiçbir parametre bir değerden daha kısadır **`int`** ve **`float`** parametre türü açıkça prototipi olarak belirtilmedikçe hiçbir parametre türü yoktur **`float`** . Örneğin, bir parametreyi bir olarak bildirme gibi, bir parametresi olarak bildirme anlamına gelir **`char`** **`int`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşlev Tanımları](../c-language/c-function-definitions.md)
+[C Işlev tanımları](../c-language/c-function-definitions.md)

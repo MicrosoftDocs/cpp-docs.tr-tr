@@ -4,12 +4,12 @@ description: Visual Studio Microsoft C/C++ proje özellik sayfaları özellikler
 ms.date: 07/08/2020
 ms.topic: article
 ms.assetid: 16375038-4917-4bd0-9a2a-26343c1708b7
-ms.openlocfilehash: 3366f6677bf976b6211dd27a8abb114765fb2abc
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: d1ade2959351d6e60b1d80554bbfa34074dda725
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180896"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229746"
 ---
 # <a name="cc-property-pages"></a>C/C++ Özellik sayfaları
 
@@ -118,10 +118,10 @@ Yapı için [satır içi işlev](../../cpp/inline-functions-cpp.md) genişletmes
 
 #### <a name="choices"></a>Seçenekler
 
-- **Varsayılan**
+- **Varsayılanını**
 - **Devre dışı** -varsayılan olarak açık olan satır içi genişletmeyi devre dışı bırakır.
-- **Yalnızca __inline** -yalnızca, veya olarak işaretlenen işlevleri genişletir **`inline`** `__forceinline` `__inline` . Ya da bir C++ üye işlevinde bir sınıf bildiriminde tanımlanır.
-- **Herhangi bir uygun** - **`inline`** ya da `__inline` ve derleyicinin seçtiği diğer herhangi bir işlev olarak işaretlenen işlevleri genişletir. (Genişletme derleyicinin kararına (genellikle *Otomatik*olarak ifade edilir) oluşur.)
+- **Yalnızca __inline** -yalnızca, veya olarak işaretlenen işlevleri genişletir **`inline`** **`__forceinline`** **`__inline`** . Ya da bir C++ üye işlevinde bir sınıf bildiriminde tanımlanır.
+- **Herhangi bir uygun** - **`inline`** ya da **`__inline`** ve derleyicinin seçtiği diğer herhangi bir işlev olarak işaretlenen işlevleri genişletir. (Genişletme derleyicinin kararına (genellikle *Otomatik*olarak ifade edilir) oluşur.)
 
 ### <a name="enable-intrinsic-functions"></a>Iç Işlevleri etkinleştir
 
@@ -317,7 +317,7 @@ Uygunluk modunu etkinleştirilir veya gizler. Ayarlar [`/permissive-`](permissiv
 
 ### <a name="treat-wchar_t-as-built-in-type"></a>Wchar_t yerleşik tür olarak değerlendir
 
-Belirtildiğinde, türü **`wchar_t`** ile eşleyen yerel bir tür olur `__wchar_t` **`short`** `__int16` . [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md)Varsayılan olarak açık olur.
+Belirtildiğinde, türü **`wchar_t`** ile eşleyen yerel bir tür olur **`__wchar_t`** **`short`** **`__int16`** . [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md)Varsayılan olarak açık olur.
 
 ### <a name="force-conformance-in-for-loop-scope"></a>Döngü kapsamında uygunluğu zorla
 
@@ -345,7 +345,7 @@ Derleyicinin izin aldığı C++ dil standardını belirler. Mümkün olduğunda 
 
 #### <a name="choices"></a>Seçenekler
 
-- **Varsayılan**
+- **Varsayılanını**
 - **ISO C++ 14 standart**
 - **ISO C++ 17 Standart**
 - **Önizleme-en son C++ çalışma taslağındaki Özellikler**
@@ -434,10 +434,10 @@ Uygulamanız için varsayılan çağırma kuralını seçin (işlev tarafından 
 
 #### <a name="choices"></a>Seçenekler
 
-- **__cdecl** - `__cdecl` C++ üye işlevleri ve veya olarak işaretlenmiş işlevler dışındaki tüm işlevler için çağırma kuralını `__stdcall` belirtir `__fastcall` .
-- **__fastcall** - `__fastcall` C++ üye işlevleri ve veya olarak işaretlenmiş işlevler dışındaki tüm işlevler için çağırma kuralını `__cdecl` belirtir `__stdcall` . Tüm `__fastcall` işlevlerin Prototiplerde olması gerekir.
-- **__stdcall** - `__stdcall` C++ üye işlevleri ve veya olarak işaretlenmiş işlevler dışındaki tüm işlevler için çağırma kuralını `__cdecl` belirtir `__fastcall` . Tüm `__stdcall` işlevlerin Prototiplerde olması gerekir.
-- **__vectorcall** - `__vectorcall` C++ üye işlevleri ve, veya olarak işaretli işlevler hariç tüm işlevler için çağırma kuralını belirtir `__cdecl` `__fastcall` `__stdcall` . Tüm `__vectorcall` işlevlerin Prototiplerde olması gerekir.
+- **`__cdecl`**- **`__cdecl`** C++ üye işlevleri ve veya olarak işaretli işlevler hariç tüm işlevler için çağrı kuralını **`__stdcall`** belirtir **`__fastcall`** .
+- **`__fastcall`**- **`__fastcall`** C++ üye işlevleri ve veya olarak işaretli işlevler hariç tüm işlevler için çağrı kuralını **`__cdecl`** belirtir **`__stdcall`** . Tüm **`__fastcall`** işlevlerin Prototiplerde olması gerekir.
+- **`__stdcall`**- **`__stdcall`** C++ üye işlevleri ve veya olarak işaretli işlevler hariç tüm işlevler için çağrı kuralını **`__cdecl`** belirtir **`__fastcall`** . Tüm **`__stdcall`** işlevlerin Prototiplerde olması gerekir.
+- **`__vectorcall`**- **`__vectorcall`** C++ üye işlevleri ve, veya olarak işaretli işlevler hariç tüm işlevler için çağırma kuralını belirtir **`__cdecl`** **`__fastcall`** **`__stdcall`** . Tüm **`__vectorcall`** işlevlerin Prototiplerde olması gerekir.
 
 ### <a name="compile-as"></a>Farklı derle
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - function definitions, function body
 - function body
 ms.assetid: f7e74822-fac8-4dc8-8f3a-2b1611da4640
-ms.openlocfilehash: 2d2e04572de91b161237d999bb95cfda26256c54
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 2ae73ab4ca91e06e3b6cd41166a8d05ae0857e4a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857105"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229707"
 ---
 # <a name="function-body"></a>İşlev Gövdesi
 
@@ -25,13 +25,13 @@ ms.locfileid: "74857105"
 
 /\**öznitelik-Seq* , Microsoft 'a özgüdür\*/
 
-*bileşik-ifade*:/\* işlev gövdesi\*/<br/>
+*bileşik-ifade*:/ \* işlev gövdesi\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
-*Yerel değişkenler*olarak bilinen bir işlev gövdesinde belirtilen değişkenlerin, aksi belirtilmedikçe **Otomatik** depolama sınıfı vardır. İşlev çağrıldığında Yerel değişkenler için depolama oluşturulur ve yerel başlatma işlemleri gerçekleştirilir. Yürütme denetimi *bileşik deyimdeki* ilk ifadeye geçer ve bir **dönüş** ifadesiyle veya işlev gövdesinin sonuna ulaşana kadar devam eder. Sonra Denetim, işlevin çağrıldığı noktaya döner.
+*Yerel değişkenler*olarak bilinen bir işlev gövdesinde belirtilen değişkenlerin, **`auto`** Aksi belirtilmediği sürece depolama sınıfı vardır. İşlev çağrıldığında Yerel değişkenler için depolama oluşturulur ve yerel başlatma işlemleri gerçekleştirilir. Yürütme denetimi *bileşik deyimdeki* ilk ifadeye geçer ve bir **`return`** ifade yürütülene veya işlev gövdesinin sonuna ulaşana kadar devam eder. Sonra Denetim, işlevin çağrıldığı noktaya döner.
 
-İşlevin bir değer döndürmesi durumunda bir ifade içeren **Return** deyiminin yürütülmesi gerekir. Return **deyimi yoksa** veya **Return** deyimi bir ifade içermiyorsa, bir işlevin dönüş değeri tanımsızdır.
+**`return`** İşlevin bir değer döndürmesi durumunda bir ifade içeren bir deyim yürütülmelidir. Hiçbir **`return`** deyim yoksa veya deyim bir ifade içermiyorsa, bir işlevin dönüş değeri tanımsızdır **`return`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşlev Tanımları](../c-language/c-function-definitions.md)
+[C Işlev tanımları](../c-language/c-function-definitions.md)

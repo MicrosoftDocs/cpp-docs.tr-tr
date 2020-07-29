@@ -8,12 +8,12 @@ helpviewer_keywords:
 - union keyword [C]
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-ms.openlocfilehash: f6816a6f63de262b927a3c5aeed8774ba29c2eaa
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: b4b0dd82263781966760b6e21ef24ded56b06a01
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "62326085"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229629"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 
@@ -51,7 +51,7 @@ Ancak boyutu belirtir ve yanlış sayıda başlatıcıya sahipseniz, derleyici b
 
 **Microsoft'a Özgü**
 
-Bir dizi için en büyük boyut, **size_t**tarafından tanımlanır. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** 0x00000000 `unsigned int` Ile 0x7CFFFFFF arasındadır.
+Bir dizi için en büyük boyut, **size_t**tarafından tanımlanır. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** **`unsigned int`** 0x00000000 Ile 0x7CFFFFFF arasındadır.
 
 **SON Microsoft 'a özgü**
 
@@ -69,7 +69,7 @@ int P[4][3] =
 };
 ```
 
-Bu ifade, `P` dört-by-üç dizisi olarak bildirir ve ilk satırının öğelerini 1, ikinci satırının öğelerini ise dördüncü satır boyunca başlatır. Üçüncü ve dördüncü satırlara yönelik Başlatıcı listesinin, son sabit ifadeden sonra virgüller içerdiğini unutmayın. Son başlatıcı listesi (`{4, 4, 4,},`) Ayrıca bir virgül ile izlenir. Bu ek virgüller izin verilir ancak gerekli değildir; yalnızca bir kümeden sabit ifadeleri ayıran ve bir başlatıcı listesini diğerinden ayıran virgüller gereklidir.
+Bu ifade, `P` dört-by-üç dizisi olarak bildirir ve ilk satırının öğelerini 1, ikinci satırının öğelerini ise dördüncü satır boyunca başlatır. Üçüncü ve dördüncü satırlara yönelik Başlatıcı listesinin, son sabit ifadeden sonra virgüller içerdiğini unutmayın. Son başlatıcı listesi ( `{4, 4, 4,},` ) Ayrıca bir virgül ile izlenir. Bu ek virgüller izin verilir ancak gerekli değildir; yalnızca bir kümeden sabit ifadeleri ayıran ve bir başlatıcı listesini diğerinden ayıran virgüller gereklidir.
 
 Bir toplama üyesinin gömülü Başlatıcı listesi yoksa, her bir alt ggregate üyesine, değerler sırayla atanır. Bu nedenle, önceki örnekteki başlatma aşağıdakilere eşdeğerdir:
 
@@ -97,17 +97,17 @@ triplet nlist[2][3] =
 };
 ```
 
-Bu örnekte, `nlist` 2-3 yapıların dizi olarak bildirildiği, her yapının üç üyesi vardır. Başlatmanın 1. satırı `nlist`, aşağıdaki gibi ilk satırına değerler atar:
+Bu örnekte, `nlist` 2-3 yapıların dizi olarak bildirildiği, her yapının üç üyesi vardır. Başlatmanın 1. satırı, aşağıdaki gibi ilk satırına değerler atar `nlist` :
 
-1. Satır 1 ' deki ilk sol ayraç, derleyicinin ilk toplama üyesini `nlist` (yani, `nlist[0]`) başlatmasını bildirir.
+1. Satır 1 ' deki ilk sol ayraç, derleyicinin ilk toplama üyesini (yani,) başlatmasını bildirir `nlist` `nlist[0]` .
 
-1. İkinci sol ayraç, öğesinin `nlist[0]` ilk toplama üyesini (yani, ' deki `nlist[0][0]`yapıyı) başlatmanın başladığını gösterir.
+1. İkinci sol ayraç, öğesinin ilk toplama üyesini `nlist[0]` (yani, ' deki yapıyı) başlatmanın başladığını gösterir `nlist[0][0]` .
 
-1. İlk sağ ayraç yapının `nlist[0][0]`başlatılmasını sonlandırır; sonraki sol ayraç başlatması başlatılır `nlist[0][1]`.
+1. İlk sağ küme ayracı yapının başlatılmasını sonlandırır `nlist[0][0]` ; sonraki sol ayraç, öğesinin başlatılmasına başlar `nlist[0][1]` .
 
-1. İşlem satırın sonuna kadar devam eder; burada sağ sağ ayraç, ' ın `nlist[0]`başlatılma işlemini sonlandırır.
+1. İşlem satırın sonuna kadar devam eder; burada sağ sağ ayraç, ' ın başlatılma işlemini sonlandırır `nlist[0]` .
 
-Satır 2 değeri, benzer bir şekilde ikinci satırına `nlist` değer atar. 1 ve 2. satırlardaki başlatıcıları kapsayan küme ayracı dış kümelerinin gerekli olduğunu unutmayın. Dış küme ayraçlarını atladığında aşağıdaki oluşturma bir hataya neden olur:
+Satır 2 değeri, benzer bir şekilde ikinci satırına değer atar `nlist` . 1 ve 2. satırlardaki başlatıcıları kapsayan küme ayracı dış kümelerinin gerekli olduğunu unutmayın. Dış küme ayraçlarını atladığında aşağıdaki oluşturma bir hataya neden olur:
 
 ```C
 triplet nlist[2][3] =  /* THIS CAUSES AN ERROR */
@@ -117,9 +117,9 @@ triplet nlist[2][3] =  /* THIS CAUSES AN ERROR */
 };
 ```
 
-Bu yapıta, 1. satırdaki ilk sol ayraç, üç yapının dizisi olan `nlist[0]`' nin başlatılmasına başlar. 1, 2 ve 3 değerleri, ilk yapının üç üyesine atanır. Sonraki sağ küme ayracı ile karşılaşıldığında (3. değerden sonra), başlatma `nlist[0]` tamamlanmıştır ve üç yapıda dizideki kalan iki yapı otomatik olarak 0 olarak başlatılır. Benzer şekilde `{ 4,5,6 }` , ikinci satırındaki ilk yapıyı başlatır `nlist`. Öğesinin `nlist[1]` kalan iki yapısı 0 olarak ayarlanır. Derleyici bir sonraki Başlatıcı listesi ( `{ 7,8,9 }` ) ile karşılaştığında başlatmaya `nlist[2]`çalışır. Bu `nlist` yana yalnızca iki satır içerdiğinden, bu deneme hataya neden olur.
+Bu yapıta, 1. satırdaki ilk sol ayraç, `nlist[0]` üç yapının dizisi olan ' nin başlatılmasına başlar. 1, 2 ve 3 değerleri, ilk yapının üç üyesine atanır. Sonraki sağ küme ayracı ile karşılaşıldığında (3. değerden sonra), başlatma `nlist[0]` tamamlanmıştır ve üç yapıda dizideki kalan iki yapı otomatik olarak 0 olarak başlatılır. Benzer şekilde, `{ 4,5,6 }` ikinci satırındaki ilk yapıyı başlatır `nlist` . Öğesinin kalan iki yapısı `nlist[1]` 0 olarak ayarlanır. Derleyici bir sonraki Başlatıcı listesi () ile karşılaştığında `{ 7,8,9 }` başlatmaya çalışır `nlist[2]` . `nlist`Bu yana yalnızca iki satır içerdiğinden, bu deneme hataya neden olur.
 
-Bu sonraki örnekte, öğesinin `int` `x` üç üyesi sırasıyla 1, 2 ve 3 olarak başlatılır.
+Bu sonraki örnekte, **`int`** öğesinin üç üyesi `x` sırasıyla 1, 2 ve 3 olarak başlatılır.
 
 ```C
 struct list
@@ -134,7 +134,7 @@ struct list
       };
 ```
 
-Yukarıdaki `list` yapıda, öğesinin `m` ilk satırındaki üç öğe 4,0 olarak başlatılır; kalan satırının `m` öğeleri varsayılan olarak 0,0 olarak başlatılır.
+`list`Yukarıdaki yapıda, öğesinin ilk satırındaki üç öğe `m` 4,0 olarak başlatılır; kalan satırının öğeleri `m` Varsayılan olarak 0,0 olarak başlatılır.
 
 ```C
 union
@@ -148,8 +148,8 @@ union
       };
 ```
 
-Bu örnekteki UNION `y`değişkeni başlatılır. Birleşimin ilk öğesi bir dizidir, bu nedenle başlatıcı bir toplama başlatıcısı olur. Başlatıcı listesi `{'1'}` , dizinin ilk satırına değerler atar. Listede yalnızca bir değer göründüğünden, ilk sütundaki öğe karakter `1`olarak başlatılır ve satırdaki kalan iki öğe varsayılan olarak 0 değerine başlatılır. Benzer şekilde, ikinci satırının `x` ilk öğesi karakteriyle `4`başlatılır ve satırdaki kalan iki öğe 0 değerine başlatılır.
+`y`Bu örnekteki UNION değişkeni başlatılır. Birleşimin ilk öğesi bir dizidir, bu nedenle başlatıcı bir toplama başlatıcısı olur. Başlatıcı listesi, `{'1'}` dizinin ilk satırına değerler atar. Listede yalnızca bir değer göründüğünden, ilk sütundaki öğe karakter olarak başlatılır `1` ve satırdaki kalan iki öğe varsayılan olarak 0 değerine başlatılır. Benzer şekilde, ikinci satırının ilk öğesi `x` karakteriyle başlatılır `4` ve satırdaki kalan iki öğe 0 değerine başlatılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlatılmasında](../c-language/initialization.md)
+[Başlatma](../c-language/initialization.md)

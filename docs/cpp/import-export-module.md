@@ -9,35 +9,35 @@ helpviewer_keywords:
 - modules [C++]
 - modules [C++], import
 - modules [C++], export
-description: Belirtilen modülde tanımlanan tür ve işlevlere erişmek ve bunları yayınlamak için alma ve dışa aktarma bildirimlerini kullanın.
-ms.openlocfilehash: a765e9a406660d3c945ef3d70754178b0648458c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+description: Belirtilen modülde tanımlanan türlere ve işlevlere erişmek ve bunları yayımlamak için içeri ve dışarı aktarma bildirimleri kullanın.
+ms.openlocfilehash: 5be1618d7e64f6887cf78bd863d428d6710eaf7e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374108"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87187198"
 ---
 # <a name="module-import-export"></a>modül, içeri aktarma, dışarı aktarma
 
-**Modül**, **ithalat**, ve **ihracat** bildirimleri C++20 mevcuttur ve [/ std:c++ son](../build/reference/std-specify-language-standard-version.md)ile birlikte [/experimental:module](../build/reference/experimental-module.md) derleyici anahtarı gerektirir. Daha fazla bilgi için [C++ modüllerine genel bakış](modules-cpp.md)bölümüne bakın.
+**Modül**, **içeri aktar**ve **`export`** Bildirimler c++ 20 ' de kullanılabilir ve [/std: C + + latest](../build/reference/std-specify-language-standard-version.md)ile birlikte [/deneysel: Module](../build/reference/experimental-module.md) derleyici anahtarını gerektirir. Daha fazla bilgi için bkz. [C++ ' da modüllere genel bakış](modules-cpp.md).
 
 ## <a name="module"></a>modül
 
-Dosya içeriğinin adlandırılmış modüle ait olduğunu belirtmek için modül uygulama dosyasının başına bir **modül** bildirimi yerleştirin.
+Dosya içeriğinin adlandırılmış modüle ait olduğunu belirtmek için modül uygulama dosyasının başına bir **Modül** bildirimi yerleştirin.
 
 ```cpp
 module ModuleA;
 ```
 
-## <a name="export"></a>dışarı aktar
+## <a name="export"></a>dışarı aktarma
 
-Modülün uzantısı **.ixx**olması gereken birincil arabirim dosyası için bir **dışa aktarma modülü** bildirimi kullanın:
+Modülün birincil arabirim dosyası için bir **dışarı aktarma modülü** bildirimi kullanın, bu, uzantısı **. IXX**olmalıdır:
 
 ```cpp
 export module ModuleA;
 ```
 
-Arabirim dosyasında, ortak arabirimin bir parçası olması amaçlanan adlarda **dışa** aktarma değiştiriciyi kullanın:
+Bir arabirim dosyasında, **`export`** genel arabirimin parçası olmak üzere tasarlanan adlarla ilgili değiştirici kullanın:
 
 ```cpp
 // ModuleA.ixx
@@ -52,7 +52,7 @@ namespace Bar
 }
 ```
 
-Dışa aktarılmaz adlar modülü içeri aktaran kodiçin görünmez:
+Dışa aktarılmamış adlar, modülünü içeri aktaran koda görünmez:
 
 ```cpp
 //MyProgram.cpp
@@ -66,11 +66,11 @@ int main() {
 }
 ```
 
-**Dışa aktarma** anahtar sözcüğü bir modül uygulama dosyasında görünmeyebilir. **Dışa aktarma** bir ad alanı adına uygulandığında, ad alanındaki tüm adlar dışa aktarılır.
+**`export`** Anahtar sözcüğü bir modül uygulama dosyasında görünmeyebilir. **`export`** Bir ad alanı adına uygulandığında, ad alanındaki tüm adlar verilir.
 
 ## <a name="import"></a>içeri aktar
 
-Bir modülün adlarını programınızda görünür hale getirmek için **bir alma** bildirimi kullanın. İthalat beyannamesi, modül bildiriminden sonra ve #include yönergelerinden sonra, ancak dosyadaki bildirimlerden önce görünmelidir.
+Bir modülün adlarını programınızda görünür hale getirmek için **içeri aktarma** bildirimi kullanın. İçeri aktarma bildirimi, modül bildiriminden sonra ve herhangi bir #include yönergelerinden sonra, ancak dosyadaki herhangi bir bildirime başlamadan önce gelmelidir.
 
 ```cpp
 module ModuleA;
@@ -88,7 +88,7 @@ class Baz
 
 ## <a name="remarks"></a>Açıklamalar
 
-Hem **içe aktarma** hem de **modül,** yalnızca mantıksal bir satırın başında göründüklerinde anahtar kelime olarak değerlendirilir:
+Hem **içeri aktarma** hem de **Modül** bir mantıksal satırın başlangıcında görüntiklerinde anahtar sözcük olarak değerlendirilir:
 
 ```cpp
 
@@ -112,7 +112,7 @@ int i; module ;
 
 **Microsoft'a Özgü**
 
-Microsoft C++'da, belirteçleri **içe aktarma** ve **modül** her zaman tanımlayıcılar ve makroya bağımsız değişken olarak kullanıldığında asla anahtar kelimeler değildir.
+Microsoft C++ ' da, bir makroya bağımsız değişken olarak kullanıldıkları zaman, her zaman tanımlayıcılardır **ve hiçbir** zaman kelimelerdir **.**
 
 ### <a name="example"></a>Örnek
 
@@ -123,7 +123,7 @@ import // Always an identifier, never a keyword
 )
 ```
 
-**Microsoft'a Özel Son**
+**Son Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

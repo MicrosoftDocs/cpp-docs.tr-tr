@@ -6,12 +6,12 @@ helpviewer_keywords:
 - function calls, argument type conversions
 - functions [C], argument conversions
 ms.assetid: 04ea0f81-509a-4913-8b12-0937a81babcf
-ms.openlocfilehash: d9f205bbbbac353b57743f8e1211b20fa3d32f05
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e4e84c9d4e1f25a56c0bcabcec99e5e75fcaa321
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233231"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229681"
 ---
 # <a name="function-call-conversions"></a>İşlev Çağrısı Dönüşümleri
 
@@ -19,8 +19,8 @@ Bir işlev çağrısındaki bağımsız değişkenlerde gerçekleştirilen dön�
 
 Bir işlev prototipi varsa ve belirtilen bağımsız değişken türlerini içeriyorsa, derleyici tür denetimini gerçekleştirir (bkz. [işlevler](../c-language/functions-c.md)).
 
-İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Bu, bir **float** değerinin **Double**değerine dönüştürüldüğü anlamına gelir; a `char` veya **Short** değeri öğesine dönüştürülür `int`; ve `unsigned char` ya da **işaretsiz bir Short** öğesine dönüştürülür `unsigned int`.
+İşlev prototipi yoksa, işlev çağrısındaki bağımsız değişkenlerde yalnızca olağan aritmetik dönüştürmeler gerçekleştirilir. Bu dönüştürmeler, çağrıdaki her bağımsız değişkende bağımsız olarak gerçekleştirilir. Bu **`float`** , bir değerin öğesine dönüştürüldüğü anlamına gelir **`double`** ; bir veya değeri öğesine dönüştürülür **`char`** **`short`** **`int`** ve bir veya ' a **`unsigned char`** **`unsigned short`** dönüştürülür **`unsigned int`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tür Dönüştürmeleri](../c-language/type-conversions-c.md)
+[Tür dönüştürmeleri](../c-language/type-conversions-c.md)
