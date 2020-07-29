@@ -2,101 +2,101 @@
 title: Arabirimler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-ms.openlocfilehash: 716bf86eddf621244415033dae1b9c93ad1baba5
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: df010468d5e90fe61ac2cf57c754ac5ed01b1c0f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032362"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230993"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C++/CX)
 
-Bir ref sınıfı en fazla bir somut taban sınıftan devralabilir, ancak herhangi bir sayıda arabirim sınıfı uygulayabilir. Bir arabirim sınıfı (veya arabirim struct) kendisi birden çok arabirim sınıfları devralabilir (veya gerektirir), üye işlevlerini aşırı yükleyebilir ve tür parametreleri olabilir.
+Başvuru sınıfı en fazla bir somut taban sınıftan devralınabilir olsa da, herhangi bir sayıda arabirim sınıfı uygulayabilir. Bir arabirim sınıfı (veya arabirim yapısı), birden çok arabirim sınıfı alabilir (veya gerektirebilir), üye işlevlerini aşırı yükleyebilir ve tür parametrelerine sahip olabilir.
 
 ## <a name="characteristics"></a>Özellikler
 
-Arabirim şu özelliklere sahiptir:
+Bir arabirim şu özelliklere sahiptir:
 
-- Bir arabirim sınıfı (veya yapı) bir ad alanı içinde bildirilmelidir ve ortak veya özel erişilebilirlik olabilir. Meta verilere yalnızca ortak arabirimler yayılır.
+- Bir arabirim sınıfı (veya yapısı) bir ad alanı içinde bildirilmelidir ve Public veya Private erişilebilirliği olabilir. Meta verilere yalnızca ortak arabirimler dağıtılır.
 
-- Arabirimin üyeleri özellikleri, yöntemleri ve olayları içerebilir.
+- Bir arabirimin üyeleri özellikler, Yöntemler ve olaylar içerebilir.
 
-- Tüm arayüz üyeleri örtülü olarak herkese açık ve sanaldır.
+- Tüm arabirim üyeleri örtük olarak genel ve sanal.
 
 - Alanlara ve statik üyelere izin verilmez.
 
-- Özellik, yöntem parametreleri veya iade değerleri olarak kullanılan türler yalnızca Windows Runtime türleri olabilir; bu temel türleri ve enum sınıf türlerini içerir.
+- Özellikler, yöntem parametreleri veya dönüş değerleri olarak kullanılan türler yalnızca Windows Çalışma Zamanı türleri olabilir; Bu, temel türleri ve enum sınıfı türlerini içerir.
 
-## <a name="declaration-and-usage"></a>Beyan ve kullanım
+## <a name="declaration-and-usage"></a>Bildirim ve kullanım
 
-Aşağıdaki örnek, arabirimin nasıl bildirilen gösteriş olduğunu gösterir. Arabirimin sınıf veya yapı türü olarak bildirilene dikkat edin.
+Aşağıdaki örnek, bir arabirimin nasıl bildirilemeyeceğini gösterir. Bir arabirimin sınıf veya yapı türü olarak bildirilebilecek olduğuna dikkat edin.
 
 [!code-cpp[cx_interfaces#01](../cppcx/codesnippet/CPP/interfacestest/class1.h#01)]
 
-Bir arabirim uygulamak için, bir ref sınıfı veya ref struct bildirir ve sanal yöntemler ve özellikleri uygular. Arabirim ve uygulayıcı ref sınıfı, bu örnekte gösterildiği gibi aynı yöntem parametre adlarını kullanmalıdır:
+Bir arabirim uygulamak için bir başvuru sınıfı veya başvuru yapısı, sanal yöntemleri ve özellikleri bildirir ve uygular. Arabirim ve uygulama başvurusu sınıfı, bu örnekte gösterildiği gibi aynı yöntem parametresi adlarını kullanmalıdır:
 
 [!code-cpp[cx_interfaces#02](../cppcx/codesnippet/CPP/interfacestest/class1.h#02)]
 
 ## <a name="interface-inheritance-hierarchies"></a>Arabirim devralma hiyerarşileri
 
-Bir arabirim bir veya daha fazla arabirimden devralınabilir. Ancak bir ref sınıfı nın veya yapının aksine, bir arabirim devralınan arabirim üyelerini bildirmez. B arabirimi A arabiriminden, ref sınıfı C ise B'den devralıyorsa, C hem A hem de B'yi uygulamalıdır. Bu sonraki örnekte gösterilir.
+Bir arabirim, bir veya daha fazla arabirimden devralınabilir. Ancak başvuru sınıfının ya da yapısının aksine, bir arabirim devralınan arabirim üyelerini bildirmez. B arabirimi A arabiriminden devralırsa ve C başvuru sınıfı B 'den devralırsa C, hem A hem de B 'yi uygulamalıdır. Bu, sonraki örnekte gösterilmiştir.
 
 [!code-cpp[cx_interfaces#03](../cppcx/codesnippet/CPP/interfacestest/class1.h#03)]
 
-## <a name="implementing-interface-properties-and-events"></a>Arabirim özelliklerini ve olaylarını uygulama
+## <a name="implementing-interface-properties-and-events"></a>Arabirim özelliklerini ve olayları uygulama
 
-Önceki örnekte gösterildiği gibi, arabirim özelliklerini uygulamak için önemsiz sanal özellikleri kullanabilirsiniz. Uygulama sınıfında özel getters ve ayarlayıcılar da sağlayabilirsiniz.  Hem verici hem de ayarlayıcı bir arabirim özelliğinde herkese açık olmalıdır.
+Önceki örnekte gösterildiği gibi, arabirim özelliklerini uygulamak için önemsiz sanal özellikleri kullanabilirsiniz. Ayrıca, uygulama sınıfında özel alıcılar ve ayarlayıcılar sağlayabilirsiniz.  Hem alıcı hem de ayarlayıcı, bir arabirim özelliğinde ortak olmalıdır.
 
 [!code-cpp[cx_interfaces#04](../cppcx/codesnippet/CPP/interfacestest/class1.h#04)]
 
-Arabirim yalnızca alırım veya yalnızca ayar özelliğini bildirirse, uygulama sınıfı açıkça bir getter veya ayarlayıcı sağlamalıdır.
+Bir arabirim yalnızca bir Al veya Ayarla özelliği bildirirse, uygulama sınıfı açıkça bir alıcı veya ayarlayıcı sağlamalıdır.
 
 [!code-cpp[cx_interfaces#05](../cppcx/codesnippet/CPP/interfacestest/class1.h#05)]
 
 Uygulama sınıfındaki olaylar için özel ekleme ve kaldırma yöntemleri de uygulayabilirsiniz.
 
-## <a name="explicit-interface-implementation"></a>Açık arayüz uygulaması
+## <a name="explicit-interface-implementation"></a>Açık arabirim uygulama
 
-Bir ref sınıfı birden çok arabirim uygularve bu arabirimler, adları ve imzaları derleyiciyle aynı yöntemleri varsa, sınıf yönteminin uyguladığı arabirim yöntemini açıkça belirtmek için aşağıdaki sözdizimini kullanabilirsiniz.
+Bir başvuru sınıfı birden çok arabirim uygularsa ve bu arabirimlerde, adları ve imzaları derleyiciye özdeş olan yöntemler varsa, bir sınıf yönteminin uyguladığı arabirim yöntemini açıkça belirtmek için aşağıdaki sözdizimini kullanabilirsiniz.
 
 [!code-cpp[cx_interfaces#06](../cppcx/codesnippet/CPP/interfacestest/class1.h#06)]
 
 ## <a name="generic-interfaces"></a>Genel arabirimler
 
-C++/CX'te `generic` anahtar kelime, Windows Runtime parametreli türünü temsil etmek için kullanılır. Parametreli bir tür meta verilere yayılır ve tür parametrelerini destekleyen herhangi bir dilde yazılmış kod tarafından tüketilebilir. Windows Runtime bazı genel arabirimleri tanımlar (örneğin, [Windows:Foundation::Collections::IVector\<T>](/uwp/api/windows.foundation.collections.ivector-1)— ancak C++/CX'te ortak kullanıcı tanımlı genel arabirimlerin oluşturulmasını desteklemez. Ancak, özel genel arabirimler oluşturabilirsiniz.
+C++/CX ' te, **`generic`** anahtar sözcüğü Windows çalışma zamanı parametreli bir türü temsil etmek için kullanılır. Parametreli bir tür meta verilerde yayınlanır ve tür parametrelerini destekleyen herhangi bir dilde yazılmış kod tarafından tüketilebilir. Windows Çalışma Zamanı bazı genel arabirimleri tanımlar — Örneğin, [Windows:: Foundation:: Collections:: IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1)—, ancak C++/cx'de ortak Kullanıcı tanımlı genel arabirimlerin oluşturulmasını desteklemez. Bununla birlikte, özel genel arabirimler de oluşturabilirsiniz.
 
-Genel bir arabirim yazarken Windows Runtime türleri şu şekilde kullanılabilir:
+Genel bir arabirim yazmak için Windows Çalışma Zamanı türlerinin nasıl kullanılabileceği aşağıda verilmiştir:
 
-- Bir bileşende `interface class` tanımlanan genel bir kullanıcının Windows meta veri dosyasına aktarılmasına izin verilmez; bu nedenle, ortak erişilebilirlik olamaz ve diğer .winmd dosyalarındaki istemci kodu bunu uygulayamaz. Aynı bileşendeki kamu ref sınıfları tarafından uygulanabilir. Genel bir ref sınıfı, özel bir üye olarak genel bir arabirim türüne sahip olabilir.
+- Bir bileşende genel kullanıcı tanımlı **`interface class`** , Windows meta veri dosyasına yayılmayacak, bu nedenle genel erişilebilirliği olamaz ve diğer. winmd dosyalarındaki istemci kodu bunu uygulayamaz. Aynı bileşendeki ortak olmayan başvuru sınıfları tarafından uygulanabilir. Ortak bir başvuru sınıfı özel üye olarak genel bir arabirim türüne sahip olabilir.
 
-   Aşağıdaki kod snippet nasıl bir `interface class` genel beyan ve daha sonra özel bir ref sınıfında uygulamak ve bir kamu ref sınıfında özel bir üye olarak ref sınıfı kullanmak gösterir.
+   Aşağıdaki kod parçacığı, genel olarak nasıl bildirilemeyeceğini **`interface class`** ve sonra özel bir başvuru sınıfında nasıl uygulanacağını gösterir ve başvuru sınıfını ortak bir başvuru sınıfında özel üye olarak kullanır.
 
    [!code-cpp[cx_interfaces#07](../cppcx/codesnippet/CPP/interfacestest/class1.h#07)]
 
-- Genel bir arabirim, erişilebilirliği, üyeleri yöneten, ilişkiler, temel sınıflar ve benzeri *kuralları* yöneten standart arabirim kurallarına uymalıdır.
+- Genel bir arabirim, erişilebilirliği, üyeleri *, ilişkileri,* temel sınıfları ve benzerlerini yöneten standart arabirim kurallarını izlemelidir.
 
-- Genel bir arabirim, öncesindeki bir veya daha `typename` `class`fazla genel tür parametresini alabilir veya . Tür dışı parametreler desteklenmez.
+- Genel arabirim, veya öncesinde olan bir veya daha fazla genel tür parametresi alabilir **`typename`** **`class`** . Tür olmayan parametreler desteklenmez.
 
-- Bir tür parametresi herhangi bir Windows Runtime türü olabilir. Diğer bir süre, tür parametresi bir başvuru türü, değer türü, arabirim sınıfı, bir temsilci, temel bir tür veya ortak enum sınıfı olabilir.
+- Tür parametresi herhangi bir Windows Çalışma Zamanı türü olabilir. Diğer bir deyişle, tür parametresi bir başvuru türü, bir değer türü, bir arabirim sınıfı, bir temsilci, temel tür veya genel enum sınıfı olabilir.
 
-- *Kapalı genel arabirim,* genel bir arabirimden devralan ve tüm tür parametreleri için somut tür bağımsız değişkenleri belirten bir arabirimdir. Genel olmayan bir özel arabirim kullanılabilir her yerde kullanılabilir.
+- *Kapalı bir genel arabirim* , genel arabirimden devralan ve tüm tür parametreleri için somut tür bağımsız değişkenlerini belirten bir arabirimdir. Genel olmayan özel bir arabirimin kullanılabilmesi için herhangi bir yerde kullanılabilir.
 
-- *Açık genel arabirim,* henüz somut bir tür sağlanamadan bir veya daha fazla tür parametresine sahip bir arabirimdir. Başka bir genel arabirimin tür bağımsız değişkeni olarak da dahil olmak üzere, bir türün kullanılabileceğinin her yerde kullanılabilir.
+- *Açık genel arabirim* , hiçbir somut tür sağlanmadığından bir veya daha fazla tür parametresine sahip bir arabirimdir. Başka bir genel arabirimin tür bağımsız değişkeni olarak da dahil olmak üzere, bir türün kullanılabileceği her yerde kullanılabilir.
 
-- Tek tek yöntemleri değil, yalnızca tüm arabirimi parametreleştirebilirsiniz.
+- Tek tek Yöntemler değil, yalnızca bir arabirimin tamamını parametreleştirebilirsiniz.
 
 - Tür parametreleri kısıtlanamaz.
 
-- Kapalı genel arabirimde örtülü olarak oluşturulan uUID vardır. Kullanıcı UUID'yi belirtemez.
+- Kapalı bir genel arabirimde örtük olarak oluşturulmuş bir UUID vardır. Kullanıcı UUID 'yi belirtemez.
 
-- Arabirimde, yöntem parametresi, iade değeri veya özellik te geçerli arabirime yapılan herhangi bir başvurunun geçerli anlık anlama atıfta bulunduğu varsayılır. Örneğin, *IMyIntf* *iMyIntf\<T>* anlamına gelir.
+- Arabiriminde, geçerli arabirime yönelik herhangi bir başvuru — bir yöntem parametresi, dönüş değeri veya özellik —, geçerli örnek oluşturma için başvurulacak varsayılır. Örneğin, *imytf* , * \<T> imıntf*anlamına gelir.
 
-- Yöntem parametresi türü bir tür parametresi olduğunda, bu parametre veya değişkenin bildirimi, herhangi bir işaretçi, yerel başvuru veya işleme bildirimatörü olmadan tür parametresinin adını kullanır. Başka bir deyişle, asla "T^" yazmıyorsun.
+- Bir yöntem parametresinin türü bir tür parametresi olduğunda, bu parametrenin veya değişkenin bildirimi herhangi bir işaretçi, yerel başvuru veya tanıtıcı bildirimci olmadan tür parametresinin adını kullanır. Diğer bir deyişle, hiçbir şekilde "T ^" yazmayın.
 
-- Şablonlanmış ref sınıfları özel olmalıdır. Genel arabirimleri uygulayabilirler ve şablon parametresi *T'yi* genel bağımsız değişken *T'ye*geçirebilirler. Şablonlanmış bir ref sınıfının her anlık kendisi bir ref sınıfıdır.
+- Şablonlu ref sınıfları Private olmalıdır. Bunlar genel arabirimler uygulayabilir ve şablon parametresi *t* parametresini *genel bağımsız değişkenine*geçirebilir. Şablonlu bir başvuru sınıfının her örneklenmesi bir başvuru sınıfıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
-[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Tür sistemi](../cppcx/type-system-c-cx.md)<br/>
+[C++/CX dil başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Ad alanı başvurusu](../cppcx/namespaces-reference-c-cx.md)

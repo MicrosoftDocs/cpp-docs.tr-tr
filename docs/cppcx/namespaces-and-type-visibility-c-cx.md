@@ -2,57 +2,57 @@
 title: Ad alanları ve tür görünürlüğü (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: 54bac3492991d0bd849f7476cc87a1336108bd52
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cbfbd8c27065121eb176d9a62662eab7e1f4271b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62392134"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230980"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C++/CX)
 
-Standart bir C++ yapı ilgili işlevleri türlerini gruplama ve kitaplıklarında ad çakışmalarını önleme için bir ad alanıdır. Windows çalışma zamanı tür sistemi, kendi kodunuzu de dahil olmak üzere, tüm ortak Windows çalışma zamanı türleri ad alanı kapsamında bir ad alanı içinde bildirilmelidir gerektirir. Genel kapsamda bildirilen veya başka bir sınıf içinde iç içe geçmiş genel türler, bir derleme zamanı hatasına neden olur.
+Ad alanı, ilgili işlevselliğe sahip ve kitaplıklarda ad çakışmalarını önlemek için standart bir C++ yapısıdır. Windows Çalışma Zamanı tür sistemi, kendi kodunuzla birlikte tüm ortak Windows Çalışma Zamanı türlerinin ad uzayı kapsamındaki bir ad alanında bildirilmesini gerektirir. Genel kapsamda veya başka bir sınıfın içinde iç içe yerleştirilmiş genel türler derleme zamanı hatasına neden olur.
 
-.Winmd dosyası, kök ad alanı olan aynı ada sahip olmalıdır. Örneğin, yalnızca A.winmd veya A.B.winmd veya A.B.C.winmd adlı bir meta veri dosyasında tanımlanan A.B.C.MyClass adlı bir sınıf oluşturulabilir. Yürütülebilir dosya adını .winmd dosyası adı ile eşleşmesi için gerekli değildir.
+Bir. winmd dosyası, kök ad alanıyla aynı ada sahip olmalıdır. Örneğin, A. B. C. MyClass adlı bir sınıf, yalnızca bir. winmd veya A. B. winmd veya A. B. C. winmd adında bir meta veri dosyasında tanımlanmışsa oluşturulabilir. Yürütülebilir dosyanın adı. winmd dosya adıyla eşleşmek için gerekli değildir.
 
 ## <a name="type-visibility"></a>Tür görünürlüğü
 
-Windows çalışma zamanı türleri bir ad alanında — Standart C++ türlerinin aksine — özel veya genel erişilebilirliğine sahip olmalıdır. Varsayılan olarak, Erişilebilirlik özeldir. Genel bir türü için meta verileri görünür ve bu nedenle kullanılabilir uygulamalar ve bileşenlerin C++ dışındaki dillerde yazılmış olabilir. Genel olarak, görünür türler .NET dilleri veya JavaScript desteklenmeyen C++ diline özgü kavramları gösteremez çünkü görünebilir türler için kuralları görünmeyen türler için kuralları daha kısıtlayıcı.
+Bir ad alanında, Windows Çalışma Zamanı türler — standart C++ türlerinden farklı olarak, Private veya public erişilebilirliğe sahiptir. Varsayılan olarak, erişilebilirlik özeldir. Yalnızca genel bir tür meta veriler görünür ve bu nedenle, C++ dışındaki dillerde yazılmış olabilecek uygulamalardan ve bileşenlerden tüketilebilir. Genel olarak, görünür türler .NET dillerinde veya JavaScript 'te desteklenmeyen C++ özel kavramlarını sunamadığından, görünür türler için kurallar, görünür olmayan türler için kurallara göre daha kısıtlayıcıdır.
 
 > [!NOTE]
-> Meta veriler, yalnızca .NET dilleri ile JavaScript çalışma zamanında kullanılır. Ne zaman bir C++ uygulama veya bileşen konuştuğu başka bir C++ uygulama veya bileşen — bu, tüm C++ programında yazılan Windows bileşenleri içerir — hiçbir meta veri çalışma zamanı tüketiminin gereklidir.
+> Meta veriler yalnızca .NET dilleri ve JavaScript tarafından çalışma zamanında tüketilebilir. C++ uygulaması veya bileşeni, başka bir C++ uygulaması veya bileşeniyle görüşülürken — C++ dilinde yazılmış olan Windows bileşenlerini içerir, ardından meta verilerin çalışma zamanı tüketimine gerek yoktur.
 
-## <a name="member-accessibility-and-visibility"></a>Üye erişilebilirliği ve görünürlük
+## <a name="member-accessibility-and-visibility"></a>Üye erişilebilirliği ve görünürlüğü
 
-Genel erişilebilirlik olsa bile bir özel başvuru sınıfı arabirim veya temsilci, hiç üye meta verileri için gönderilir. Public ref sınıfları, kaynak kodunuzda kendi erişilebilirlik bağımsız olarak meta veri üyelerinde görünürlüğünü denetleyebilirsiniz. Standart C++ olduğu gibi en düşük öncelik ilkesini uygulayın; kesinlikle olmalıdır sürece üyelerinizin meta verilerinde görünür hale getirmez.
+Özel bir başvuru sınıfında, arabiriminde veya temsilcisinde, genel erişilebilirliğe sahip olsalar dahi hiçbir üye meta veriye dağıtılır. Ortak başvuru sınıflarında, meta verilerde bulunan üyelerin görünürlüğünü, kaynak kodunuzda erişilebilirliklerini bağımsız olarak kontrol edebilirsiniz. Standart C++ ' da olduğu gibi, en az ayrıcalık ilkesini uygulayın; Kesinlikle olması gerekmedikçe, üyelerinizden meta verilerde görünür yapmayın.
 
-Hem meta veriler görünürlük ve kaynak kod erişilebilirlik denetlemek için aşağıdaki erişim değiştiriciler kullanın.
+Hem meta veri görünürlüğünü hem de kaynak kodu erişilebilirliğini denetlemek için aşağıdaki erişim değiştiricilerini kullanın.
 
 ||||
 |-|-|-|
-|Değiştirici|Açıklama|Meta verileri yayılan?|
-|private|Varsayılan erişilebilirlik. Standart C++ olduğu gibi aynı anlamına gelir.|Hayır|
-|protected|Standart C++, uygulama veya bileşen hem meta veriler de olduğu gibi aynı anlamına gelir.|Evet|
-|public|Standart C++ olduğu gibi aynı anlamına gelir.|Evet|
-|`public protected` - veya - `protected public`|Meta veri, uygulama veya bileşen içinde ortak erişilebilirlik korumalı.|Evet|
-|`protected private` veya `private protected`|Meta verilerde görünmez; uygulama veya bileşen erişilebilirlik korumalı.||
-|`internal` veya `private public`|Üye uygulama veya bileşen içinde geneldir ancak meta verilerinde görünür değil.|Hayır|
+|Değiştirici|Anlamı|Meta verilere mi yayılsın?|
+|private|Varsayılan erişilebilirlik. Standart C++ ile aynı anlamı.|Hayır|
+|protected|Standart C++ ile aynı anlamı, hem uygulama hem de bileşen içinde ve meta verilerde.|Yes|
+|public|Standart C++ ile aynı anlamı.|Yes|
+|`public protected`veya`protected public`|Meta verilerde korunan erişilebilirlik, uygulama veya bileşen içinde ortak.|Yes|
+|`protected private` veya `private protected`|Meta verilerde görünmez; uygulama veya bileşen içinde korunan erişilebilirlik.||
+|`internal` veya `private public`|Üye Uygulama veya bileşen içinde ortaktır, ancak meta verilerde görünür değildir.|Hayır|
 
-## <a name="windows-runtime-namespaces"></a>Windows çalışma zamanı ad alanları
+## <a name="windows-runtime-namespaces"></a>Windows Çalışma Zamanı ad alanları
 
-Windows API Windows içinde bildirilen türleri oluşur::\* ad alanları. Bu ad alanlarında, Windows için ayrılmıştır ve türleri kendisine eklenemez. İçinde **Nesne Tarayıcısı**, bu ad alanları Windows.winmd'i dosyasında görüntüleyebilirsiniz. Bu ad alanları hakkında daha fazla bilgi için bkz [Windows API](/uwp/api/).
+Windows API, Windows:: Namespaces içinde belirtilen türlerden oluşur \* . Bu ad alanları Windows için ayrılmıştır ve türleri bunlara eklenemez. **Nesne tarayıcısı**, bu ad alanlarını Windows. winmd dosyasında görüntüleyebilirsiniz. Bu ad alanları hakkındaki belgeler için bkz. [WINDOWS API](/uwp/api/).
 
 ## <a name="ccx-namespaces"></a>C++/CX ad alanları
 
-C++/CX projeksiyonu Windows çalışma zamanı tür sistemi bir parçası olarak bu ad alanlarında belirli türlerini tanımlayın.
+C++/CX, Windows Çalışma Zamanı türü sisteminin projeksiyonunun bir parçası olarak bu ad alanlarında belirli türleri tanımlar.
 
 |||
 |-|-|
-|**Namespace**|**Açıklama**|
-|default|Yerleşik sayısal ve char16 türleri içerir. Bu tür, her ad alanı kapsamında bulunan ve bir `using` deyimi gereklidir hiçbir zaman.|
-|Platform|Gibi Windows çalışma zamanı türlerine karşılık gelen öncelikli olarak genel türler içeren `Array<T>`, `String`, `Guid`, ve `Boolean`. Ayrıca gibi özel yardımcı türleri içerir `Platform::Agile<T>` ve `Platform::Box<T>`.|
-|Platform::Collections|Windows çalışma zamanı koleksiyon arabirimleri uygulayan somut koleksiyon sınıfları içeren `IVector`, `IMap`ve benzeri. Bu tür collection.h, platform.winmd değil, bir üstbilgi dosyasında tanımlanır.|
-|Platform::details|Ortak tüketim için tasarlanmamıştır ve derleyici tarafından kullanılan türler içerir.|
+|**Ad Alanı**|**Açıklama**|
+|default|Yerleşik sayısal ve Char16 türlerini içerir. Bu türler her ad alanındaki kapsamdadır ve bir **`using`** ifade hiçbir şekilde gerekli değildir.|
+|Platform|,, Ve gibi Windows çalışma zamanı türlerine karşılık gelen öncelikle genel türler `Array<T>` içerir `String` `Guid` `Boolean` . Ayrıca, ve gibi özelleştirilmiş yardımcı türler `Platform::Agile<T>` içerir `Platform::Box<T>` .|
+|Platform:: Collections|Windows Çalışma Zamanı koleksiyonu arabirimlerini uygulayan somut koleksiyon sınıflarını içerir `IVector` `IMap` . Bu türler, platform. winmd içinde değil, Collection. h üstbilgi dosyasında tanımlanmıştır.|
+|Platform::D euçlar|Derleyici tarafından kullanılan ve genel tüketim için amaçlanmış türler içerir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

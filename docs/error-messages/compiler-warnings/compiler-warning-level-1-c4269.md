@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4269
 ms.assetid: 96c97bbc-068a-4b65-8cd8-4ed5dca04c15
-ms.openlocfilehash: e2e1781bf4c1b9ac0ee29d0b5900daa6cfe94b45
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1b63d1af49a53b7b15cdbae912d79a1b4f0cf787
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199777"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230720"
 ---
 # <a name="compiler-warning-level-1-c4269"></a>Derleyici Uyarısı (düzey 1) C4269
 
 ' tanımlayıcı ': derleyicinin ürettiği varsayılan oluşturucuyla başlatılan ' const ' otomatik verileri güvenilmez sonuçlar oluşturuyor
 
-Basit olmayan bir sınıfın **const** otomatik örneği, derleyici tarafından oluşturulan bir varsayılan Oluşturucu ile başlatılır.
+**`const`** Basit olmayan bir sınıfın otomatik bir örneği, derleyici tarafından oluşturulan bir varsayılan Oluşturucu ile başlatılır.
 
 ## <a name="example"></a>Örnek
 
@@ -34,4 +34,4 @@ void g() {
 };
 ```
 
-Sınıfın bu örneği yığında oluşturulduğundan, `m_data` ilk değeri herhangi bir şey olabilir. Ayrıca, bir **const** örneği olduğundan `m_data` değeri hiçbir şekilde değiştirilemez.
+Sınıfın bu örneği yığında oluşturulduğundan, ilk değeri `m_data` herhangi bir şey olabilir. Ayrıca, bir **`const`** örnek olduğundan, değeri `m_data` hiçbir şekilde değiştirilemez.

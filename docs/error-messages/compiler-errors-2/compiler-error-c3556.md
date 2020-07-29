@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3556
 ms.assetid: 9b002dcc-494e-414f-9587-20c2a0a39333
-ms.openlocfilehash: bc5eae58ac453182fd25853edd45e2c45093f5e5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 50f97c4360080f1271d9decc3b3460c06f3fec0b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200583"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230824"
 ---
 # <a name="compiler-error-c3556"></a>Derleyici hatası C3556
 
 > '*Expression*': ' decltype ' için geçersiz bağımsız değişken
 
-Derleyici, `decltype(`*expression*`)` tür belirleyicisi olan bağımsız değişken olan ifadenin türünü çıkarılamıyor.
+Derleyici, `decltype(` *ifade* `)` türü belirticisine bağımsız değişken olan ifadenin türünü çıkarılamıyor.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde, `myFunction` aşırı yüklendiği için derleyici `myFunction` bağımsız değişkeninin türünü çıkarılamıyor. Bu sorunu onarmak için, `decltype` ifadesinde belirtmek üzere belirli bir aşırı yüklenmiş işleve işaretçinin bir örneğini oluşturmak için `static_cast` kullanabilirsiniz.
+Aşağıdaki kod örneğinde derleyici, bağımsız değişkenin türünü çıkarılamıyor, `myFunction` çünkü `myFunction` aşırı yüklendi. Bu sorunu onarmak için, **`static_cast`** ifadede belirtmek üzere belirli bir aşırı yüklenmiş işleve işaretçinin bir örneğini oluşturmak için kullanabilirsiniz **`decltype`** .
 
 ```cpp
 // C3556.cpp

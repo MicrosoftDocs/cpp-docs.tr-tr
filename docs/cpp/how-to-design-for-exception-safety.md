@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: 48a2f5a94eb2695c0a08a0ae397d02080e7e1261
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 732a46166c99396c5d55a7d2acd834b58f3d2b2e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246509"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87187809"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: özel durum güvenliği için tasarım
 
@@ -23,7 +23,7 @@ Bir işlevin özel durumu nasıl işleydiğine bakılmaksızın, "özel durum g�
 
 ### <a name="keep-resource-classes-simple"></a>Kaynak sınıflarını basit tut
 
-Sınıflarda el ile kaynak yönetimini kapsüllemek istediğinizde, tek bir kaynağı Yönet dışında hiçbir şey olmayan bir sınıf kullanın. Sınıfı basit tutarak, kaynak sızıntılarını tanıtma riskini azaltabilirsiniz. Aşağıdaki örnekte gösterildiği gibi, mümkün olduğunda [akıllı işaretçiler](smart-pointers-modern-cpp.md) kullanın. Bu örnek kasıtlı olarak yapay ve `shared_ptr` kullanıldığında farkları vurgulamak için uyarlaması.
+Sınıflarda el ile kaynak yönetimini kapsüllemek istediğinizde, tek bir kaynağı Yönet dışında hiçbir şey olmayan bir sınıf kullanın. Sınıfı basit tutarak, kaynak sızıntılarını tanıtma riskini azaltabilirsiniz. Aşağıdaki örnekte gösterildiği gibi, mümkün olduğunda [akıllı işaretçiler](smart-pointers-modern-cpp.md) kullanın. Bu örnek kasıtlı olarak yapay ve uyarlaması kullanıldığında farklılıkları vurgulayacağız `shared_ptr` .
 
 ```cpp
 // old-style new/delete version
@@ -85,7 +85,7 @@ public:
 
 ### <a name="use-the-raii-idiom-to-manage-resources"></a>Kaynakları yönetmek için ÇII IBU deyim kullanma
 
-Özel durum güvenli olması için bir işlev, `malloc` veya **Yeni** kullanarak ayırmış olduğu nesnelerin yok edileceği ve dosya tutamaçları gibi tüm kaynakların, bir özel durum oluştuğunda bile kapalı veya serbest bırakılmış olduğundan emin olmalıdır. *Kaynak alımı* , bu tür kaynakların otomatik değişkenlerin kullanım ömrü için başlatılması (rampaıı) deyimidir. Bir işlev, normal olarak veya bir özel durum nedeniyle kapsam dışına geçtiğinde, tümüyle oluşturulmuş tüm otomatik değişkenlerin yıkıcıları çağrılır. Akıllı işaretçi gibi bir KORıı sarmalayıcı nesnesi, yıkıcısında uygun DELETE veya Close işlevini çağırır. Özel durum güvenli kodunda, her bir kaynağın sahipliğini hemen bir tür rampaya da bir nesne türüne geçirmek oldukça önemlidir. `vector`, `string`, `make_shared`, `fstream`ve benzer sınıfların sizin için kaynağı alma işlemesini unutmayın.  Ancak, kaynak alımı nesne yerine Kullanıcı tarafından gerçekleştirildiğinden, `unique_ptr` ve geleneksel `shared_ptr` kurulumlarını özeldir; Bu nedenle, *kaynak yayını yok sayılır* ancak kii olarak sorgulanabilir değildir.
+Özel durum güvenli olması için bir işlev, veya kullanılarak ayrılan nesnelerin `malloc` **`new`** yok edileceği ve dosya tutamaçları gibi tüm kaynakların kapalı veya bir özel durum oluşsa bile serbest bırakılmış olduğundan emin olmalıdır. *Kaynak alımı* , bu tür kaynakların otomatik değişkenlerin kullanım ömrü için başlatılması (rampaıı) deyimidir. Bir işlev, normal olarak veya bir özel durum nedeniyle kapsam dışına geçtiğinde, tümüyle oluşturulmuş tüm otomatik değişkenlerin yıkıcıları çağrılır. Akıllı işaretçi gibi bir KORıı sarmalayıcı nesnesi, yıkıcısında uygun DELETE veya Close işlevini çağırır. Özel durum güvenli kodunda, her bir kaynağın sahipliğini hemen bir tür rampaya da bir nesne türüne geçirmek oldukça önemlidir. ,,, `vector` `string` `make_shared` `fstream` Ve benzer sınıfların kaynağı sizin için edindiğini unutmayın.  Ancak, `unique_ptr` `shared_ptr` kaynak alımı nesne yerine Kullanıcı tarafından gerçekleştirildiğinden, ve geleneksel kurulumlarını özeldir; bu nedenle, *kaynak yayını yok SAYıLıR* ancak kii olarak şüpheli olur.
 
 ## <a name="the-three-exception-guarantees"></a>Üç özel durum garanti
 
@@ -93,7 +93,7 @@ Genellikle özel durum güvenliği, bir işlevin sağlayabileceğinizin üç öz
 
 ### <a name="no-fail-guarantee"></a>Başarısızlık garantisi
 
-No-Fail (veya "no-throw") garantisi, bir işlevin sağlayabileceğinizin en güçlü garantisi. İşlevin bir özel durum oluşturmadığını veya bir tane yaymasına izin vermeyeceğini belirtir. Ancak, (a) Bu işlev çağrılarının tüm işlevlerinin aynı zamanda başarısız olduğunu veya (b), oluşturulan tüm durumların bu işleve ulaşmadan önce yakalanabileceğini veya (c), nasıl yakalanabileceğini bildiğiniz ve Bu işleve ulaşan tüm özel durumları doğru şekilde işleyin.
+No-Fail (veya "no-throw") garantisi, bir işlevin sağlayabileceğinizin en güçlü garantisi. İşlevin bir özel durum oluşturmadığını veya bir tane yaymasına izin vermeyeceğini belirtir. Ancak, (a) Bu işlev çağrılarının tüm işlevlerinin aynı zamanda başarısız olduğunu veya (b), oluşturulan tüm durumların bu işleve ulaşmadan yakalanıp yakalanmadığını veya (c) bu işleve ulaşacak tüm özel durumları nasıl yakalayabileceğinizi ve doğru bir şekilde nasıl işleneceğini bildiğiniz durumlar dışında güvenilir bir şekilde garanti sağlayamazsınız.
 
 Kesin garanti ve temel garanti, yok edicilerin başarısız olduğu varsayımına dayanır. Standart kitaplıktaki tüm kapsayıcılar ve türler, yok edicilerin throw oluşturmadığından emin. Aynı zamanda bir de aynı gereksinim vardır: standart kitaplık, kendisine verilen Kullanıcı tanımlı türlerin (örneğin, şablon bağımsız değişkenleri gibi) oluşturmasız yıkıcıları olmalıdır.
 
@@ -115,11 +115,11 @@ Yerleşik türler tamamen başarısız olur ve standart kitaplık türleri en az
 
 - Bir temel sınıf oluşturucusunda oluşan özel durumun türetilmiş bir sınıf oluşturucusunda sallowed olduğunu anlayın. Türetilmiş bir oluşturucuda temel sınıf özel durumunu çevirmek ve yeniden oluşturmak istiyorsanız, bir işlev try bloğu kullanın.
 
-- Özellikle bir sınıfta "başarısız olmasına izin verilen başlatma" kavramı varsa, bir akıllı işaretçiye Sarmalanan bir veri üyesinde tüm sınıf durumlarını depolayıp depolayacağınızı düşünün. , C++ Başlatılmamış veri üyelerine izin verir, ancak başlatılmamış veya kısmen başlatılmış sınıf örneklerini desteklemez. Bir oluşturucunun başarılı ya da başarısız olması gerekir; Oluşturucu tamamlanana kadar çalıştırılmadıysa hiçbir nesne oluşturulmaz.
+- Özellikle bir sınıfta "başarısız olmasına izin verilen başlatma" kavramı varsa, bir akıllı işaretçiye Sarmalanan bir veri üyesinde tüm sınıf durumlarını depolayıp depolayacağınızı düşünün. C++ başlatılmamış veri üyelerine izin verse de, başlatılmamış veya kısmen başlatılmış sınıf örneklerini desteklemez. Bir oluşturucunun başarılı ya da başarısız olması gerekir; Oluşturucu tamamlanana kadar çalıştırılmadıysa hiçbir nesne oluşturulmaz.
 
-- Herhangi bir özel durumun yıkıcıya çıkmasına izin vermeyin. Temel bir axiod C++ , yok edicilerin çağrı yığınını yaymak için bir özel duruma asla izin vermemelidir. Yıkıcı bir özel durum atma işlemi gerçekleştirirse, bunu bir try catch bloğunda yapması gerekir ve özel duruma izin verin. Standart Kitaplık, tanımladığı tüm yıkıcılarda bu garantisi sağlar.
+- Herhangi bir özel durumun yıkıcıya çıkmasına izin vermeyin. Temel bir axiod C++, yok edicilerin çağrı yığınını yaymaya bir özel duruma asla izin vermemelidir. Yıkıcı bir özel durum atma işlemi gerçekleştirirse, bunu bir try catch bloğunda yapması gerekir ve özel duruma izin verin. Standart Kitaplık, tanımladığı tüm yıkıcılarda bu garantisi sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](errors-and-exception-handling-modern-cpp.md)<br/>
-[Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](how-to-interface-between-exceptional-and-non-exceptional-code.md)
+[Özel durumlar ve hata işleme için modern C++ en iyi uygulamaları](errors-and-exception-handling-modern-cpp.md)<br/>
+[Nasıl yapılır: olağanüstü ve olağanüstü olmayan kod arasında arabirim](how-to-interface-between-exceptional-and-non-exceptional-code.md)

@@ -4,22 +4,22 @@ ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-ms.openlocfilehash: 32e8d64fdb6449f1d40aec4161bfda54987ca66a
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: d7caea7cfd13b3a41a1cd20f88a9914267cf9677
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245595"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87187861"
 ---
 # <a name="how-to-create-and-use-weak_ptr-instances"></a>Nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma
 
-Bazen bir nesnenin, başvuru sayısının artmasına neden olmadan bir [shared_ptr](../standard-library/shared-ptr-class.md) temel alınan nesnesine erişmek için bir yol depolaması gerekir. Genellikle, bu durum `shared_ptr` örnekleri arasında döngüsel başvurular olduğunda meydana gelir.
+Bazen bir nesnenin, başvuru sayısının artmasına neden olmadan bir [shared_ptr](../standard-library/shared-ptr-class.md) temel alınan nesnesine erişmek için bir yol depolaması gerekir. Genellikle, örnekler arasında döngüsel başvurular olduğunda bu durum oluşur `shared_ptr` .
 
-En iyi tasarım, her seferinde, işaretçilerin paylaşılan sahipliğinin kaçınmaktır. Ancak, `shared_ptr` örneklerinin sahipliğinin paylaşıldığından, aralarında döngüsel başvuruların olmaması gerekir. Döngüsel başvurular kaçınılmaz veya bazı nedenlerle tercih edilse de, bir veya daha fazla Sahibe başka bir `shared_ptr`için zayıf bir başvuru sağlamak üzere [weak_ptr](../standard-library/weak-ptr-class.md) kullanın. `weak_ptr`kullanarak, mevcut bir ilgili örnekler kümesine katılan bir `shared_ptr` oluşturabilirsiniz, ancak yalnızca temeldeki bellek kaynağı hala geçerliyse. `weak_ptr` kendisi başvuru saymasına katılmaz ve bu nedenle başvuru sayısının sıfıra gitmesini engellemez. Ancak, `shared_ptr` başlatıldığı yeni bir kopyasını edinmeyi denemek için bir `weak_ptr` kullanabilirsiniz. Bellek zaten silinmişse `weak_ptr`bool işleci `false`döndürür. Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve `shared_ptr` değişkeni kapsamda olduğu sürece belleğin geçerli olacağını garanti eder.
+En iyi tasarım, her seferinde, işaretçilerin paylaşılan sahipliğinin kaçınmaktır. Ancak, örneklerin sahipliğini paylaşıma almanız gerekiyorsa aralarındaki `shared_ptr` Döngüsel başvurulardan kaçının. Döngüsel başvurular kaçınılmaz veya bazı nedenlerle tercih edilse de, bir veya daha fazla Sahibe daha zayıf bir başvuru sağlamak için [weak_ptr](../standard-library/weak-ptr-class.md) kullanın `shared_ptr` . Bir kullanarak `weak_ptr` , var olan bir `shared_ptr` ilgili örnekler kümesine katılılan, ancak yalnızca temeldeki bellek kaynağı hala geçerliyse bir oluşturabilirsiniz. `weak_ptr`Kendisi başvuru saymasına katılmaz ve bu nedenle başvuru sayısının sıfıra gitmesini engellemez. Ancak, `weak_ptr` uygulamasının başlatıldığı yeni bir kopyasını elde etmek için kullanabilirsiniz `shared_ptr` . Bellek zaten silinmişse `weak_ptr` bool işleci döndürülür **`false`** . Bellek hala geçerliyse, yeni paylaşılan işaretçi başvuru sayısını artırır ve değişken kapsamda olduğu sürece belleğin geçerli olacağını garanti eder `shared_ptr` .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, dairesel bağımlılıklara sahip nesnelerin düzgün silinmesini sağlamak için `weak_ptr` kullanıldığı bir durumu gösterir. Örneği incelerken, yalnızca alternatif çözümler değerlendirildikten sonra oluşturulduğunu varsayın. `Controller` nesneler bir makine işleminin bazı yönlerini temsil eder ve bağımsız olarak çalışır. Her denetleyicinin, diğer denetleyicilerin durumunu dilediğiniz zaman sorgulayabilmesi ve her biri bu amaçla özel bir `vector<weak_ptr<Controller>>` içermesi gerekir. Her vektör döngüsel bir başvuru içerir ve bu nedenle `weak_ptr` örnekleri `shared_ptr`yerine kullanılır.
+Aşağıdaki kod örneğinde, `weak_ptr` dairesel bağımlılıklara sahip nesnelerin düzgün silinmesini sağlamak için kullanılan bir durum gösterilmektedir. Örneği incelerken, yalnızca alternatif çözümler değerlendirildikten sonra oluşturulduğunu varsayın. `Controller`Nesneler bir makine işleminin bazı yönlerini temsil eder ve bağımsız olarak çalışır. Her denetleyici, diğer denetleyicilerin durumunu dilediğiniz zaman sorgulayabilmelidir ve her biri `vector<weak_ptr<Controller>>` Bu amaç için özel bir içerir. Her vektör döngüsel bir başvuru içerir ve bu nedenle, `weak_ptr` örnekleri yerine kullanılır `shared_ptr` .
 
 [!code-cpp[stl_smart_pointers#222](../cpp/codesnippet/CPP/how-to-create-and-use-weak-ptr-instances_1.cpp)]
 
@@ -82,7 +82,7 @@ Destroying Controller4
 Press any key
 ```
 
-Bir deneme olarak, vektör `others` bir `vector<shared_ptr<Controller>>`olacak şekilde değiştirin ve sonra çıktıda `TestRun` döndürüldüğünde hiçbir yok edicisi çağrıldığına dikkat edin.
+Bir deneme olarak, vektörü `others` bir olacak şekilde değiştirin `vector<shared_ptr<Controller>>` ve ardından çıktıda, döndüğünde hiçbir yok edicisi çağrıldığına dikkat edin `TestRun` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

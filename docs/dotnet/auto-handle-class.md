@@ -15,18 +15,18 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::auto_handle class
 ms.assetid: a65604d1-ecbb-44fd-ae2f-696ddeeed9d6
-ms.openlocfilehash: 701669d1dbc6f3363f76c113dc98e38db04681a7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 975710fb47bdcf3195330402acd869aba17234e6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372544"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230941"
 ---
 # <a name="auto_handle-class"></a>auto_handle Sınıfı
 
-Sanal bir tanıtıcıyı yönetilen bir türe yerleştirmek için kullanılabilecek otomatik kaynak yönetimi.
+Bir sanal tanıtıcıyı yönetilen bir türe eklemek için kullanılabilen otomatik kaynak yönetimi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename _element_type>
@@ -36,45 +36,45 @@ ref class auto_handle;
 ### <a name="parameters"></a>Parametreler
 
 *_element_type*<br/>
-Yönetilen tür katıştırılmış olmak.
+Katıştırılacak yönetilen tür.
 
-## <a name="members"></a><a name="members"></a>Üyeler
+## <a name="members"></a><a name="members"></a>Üyeleri
 
-### <a name="public-constructors"></a>Kamu yapıcılar  
+### <a name="public-constructors"></a>Ortak oluşturucular  
 
-|Adı|Açıklama|  
+|Ad|Açıklama|  
 |---------|-----------|  
-|[auto_handle::auto_handle](#auto-handle)|Yapıcı. `auto_handle`|  
-|[auto_handle::~auto_handle](#tilde-auto-handle)|`auto_handle` Yıkıcı.|  
+|[auto_handle::auto_handle](#auto-handle)|`auto_handle`Oluşturucu.|  
+|[auto_handle:: ~ auto_handle](#tilde-auto-handle)|`auto_handle`Yok edicisi.|  
 
-### <a name="public-methods"></a>Genel yöntemler  
+### <a name="public-methods"></a>Ortak Yöntemler  
 
-|Adı|Açıklama|  
+|Ad|Açıklama|  
 |---------|-----------|  
-|[auto_handle::get](#get)|İçe tek yer olan nesneyi alır.|  
-|[auto_handle::release](#release)|Nesneyi yönetimden `auto_handle` salar.|
-|[auto_handle::reset](#reset)|Geçerli sahip olunan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesneye sahip olun.|
-|[auto_handle::swap](#swap)|Nesneleri başka bir `auto_handle`nesneyle değiştirir.|  
+|[auto_handle::get](#get)|İçerilen nesneyi alır.|  
+|[auto_handle::release](#release)|Nesneyi yönetimden serbest bırakır `auto_handle` .|
+|[auto_handle::reset](#reset)|Geçerli sahip olan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesne sahipliğini alın.|
+|[auto_handle::swap](#swap)|Nesneleri başka bir metinle değiştirir `auto_handle` .|  
 
-### <a name="public-operators"></a>Kamu operatörleri
+### <a name="public-operators"></a>Ortak işleçler
 
-|Adı|Açıklama|  
+|Ad|Açıklama|  
 |---------|-----------|
-|[auto_handle::operatör-&gt;](#operator-arrow)|Üye erişim operatörü.|
+|[auto_handle:: operator-&gt;](#operator-arrow)|Üye erişim işleci.|
 |[auto_handle::operator=](#operator-assign)|Atama işleci.|
-|[auto_handle::operator auto_handle](#operator-auto-handle)|Ve uyumlu türleri `auto_handle` arasında tip döküm operatörü.|  
-|[auto_handle::operator bool](#operator-bool)|Koşullu `auto_handle` bir ifadede kullanmak için işleç.|
-|[auto_handle::operatör!](#operator-logical-not)|Koşullu `auto_handle` bir ifadede kullanmak için işleç.|  
+|[auto_handle::operator auto_handle](#operator-auto-handle)|Ve uyumlu türler arasında tür atama işleci `auto_handle` .|  
+|[auto_handle::operator bool](#operator-bool)|`auto_handle`Bir koşullu ifadede kullanmak için işleci.|
+|[auto_handle:: operator!](#operator-logical-not)|`auto_handle`Bir koşullu ifadede kullanmak için işleci.|  
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık dosyası** \<msclr\auto_handle.h>
+**Üst bilgi dosyası**\<msclr\auto_handle.h>
 
-**Namespace** msclr
+**Ad alanı** msclr
 
-## <a name="auto_handleauto_handle"></a><a name="auto-handle"></a>auto_handle:auto_handle
+## <a name="auto_handleauto_handle"></a><a name="auto-handle"></a>auto_handle:: auto_handle
 
-Yapıcı. `auto_handle`
+`auto_handle`Oluşturucu.
 
 ```cpp
 auto_handle();
@@ -93,10 +93,10 @@ auto_handle(
 ### <a name="parameters"></a>Parametreler
 
 *_ptr*<br/>
-Sahip olmak için nesne.
+Kendisine ait nesne.
 
 *_right*<br/>
-Varolan `auto_handle`bir .
+Mevcut bir `auto_handle` .
 
 ### <a name="example"></a>Örnek
 
@@ -163,9 +163,9 @@ in RefClassA destructor: second
 done
 ```
 
-## <a name="auto_handleauto_handle"></a><a name="tilde-auto-handle"></a>auto_handle::~auto_handle
+## <a name="auto_handleauto_handle"></a><a name="tilde-auto-handle"></a>auto_handle:: ~ auto_handle
 
-`auto_handle` Yıkıcı.
+`auto_handle`Yok edicisi.
 
 ```cpp
 ~auto_handle();
@@ -173,7 +173,7 @@ done
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı aynı zamanda sahip olunan nesneyi de yok eder.
+Yıkıcı, sahip olunan nesnenin yapılarını da kaldırır.
 
 ### <a name="example"></a>Örnek
 
@@ -210,9 +210,9 @@ ClassA destructor
 done
 ```
 
-## <a name="auto_handleget"></a><a name="get"></a>auto_handle::get
+## <a name="auto_handleget"></a><a name="get"></a>auto_handle:: Get
 
-İçe tek yer olan nesneyi alır.
+İçerilen nesneyi alır.
 
 ```cpp
 _element_type ^ get();
@@ -220,7 +220,7 @@ _element_type ^ get();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-İçe tek şey.
+Kapsanan nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -270,9 +270,9 @@ Hello from first A!
 in ClassA destructor:first
 ```
 
-## <a name="auto_handlerelease"></a><a name="release"></a>auto_handle::sürüm
+## <a name="auto_handlerelease"></a><a name="release"></a>auto_handle:: Release
 
-Nesneyi yönetimden `auto_handle` salar.
+Nesneyi yönetimden serbest bırakır `auto_handle` .
 
 ```cpp
 _element_type ^ release();
@@ -280,7 +280,7 @@ _element_type ^ release();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Serbest bırakılan nesne.
+Yayınlanan nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -333,9 +333,9 @@ Hello from first A!
 done
 ```
 
-## <a name="auto_handlereset"></a><a name="reset"></a>auto_handle::sıfırlama
+## <a name="auto_handlereset"></a><a name="reset"></a>auto_handle:: Reset
 
-Geçerli sahip olunan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesneye sahip olun.
+Geçerli sahip olan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesne sahipliğini alın.
 
 ```cpp
 void reset(
@@ -347,7 +347,7 @@ void reset();
 ### <a name="parameters"></a>Parametreler
 
 *_new_ptr*<br/>
-(İsteğe bağlı) Yeni nesne.
+Seçim Yeni nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -399,9 +399,9 @@ ClassA destructor: second
 done
 ```
 
-## <a name="auto_handleswap"></a><a name="swap"></a>auto_handle::takas
+## <a name="auto_handleswap"></a><a name="swap"></a>auto_handle:: swap
 
-Nesneleri başka bir `auto_handle`nesneyle değiştirir.
+Nesneleri başka bir metinle değiştirir `auto_handle` .
 
 ```cpp
 void swap(
@@ -412,7 +412,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-Nesneleri `auto_handle` takas etmek için.
+`auto_handle`Nesneleri takas edilecek.
 
 ### <a name="example"></a>Örnek
 
@@ -441,9 +441,9 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="auto_handleoperator-gt"></a><a name="operator-arrow"></a>auto_handle::operatör-&gt;
+## <a name="auto_handleoperator-gt"></a><a name="operator-arrow"></a>auto_handle:: operator-&gt;
 
-Üye erişim operatörü.
+Üye erişim işleci.
 
 ```cpp
 _element_type ^ operator->();
@@ -451,7 +451,7 @@ _element_type ^ operator->();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-SarGılı `auto_handle`nesne.
+Tarafından Sarmalanan nesne `auto_handle` .
 
 ### <a name="example"></a>Örnek
 
@@ -490,7 +490,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="auto_handleoperator"></a><a name="operator-assign"></a>auto_handle::operator=
+## <a name="auto_handleoperator"></a><a name="operator-assign"></a>auto_handle:: operator =
 
 Atama işleci.
 
@@ -507,11 +507,11 @@ auto_handle<_element_type> % operator=(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-Geçerli `auto_handle` `auto_handle`atanacak.
+`auto_handle`Geçerli öğesine atanacak `auto_handle` .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Geçerli `auto_handle`, şimdi `_right`sahip .
+Geçerli `auto_handle` , artık sahip `_right` .
 
 ### <a name="example"></a>Örnek
 
@@ -574,9 +574,9 @@ done
 in ClassA destructor: second
 ```
 
-## <a name="auto_handleoperator-auto_handle"></a><a name="operator-auto-handle"></a>auto_handle::operatör auto_handle
+## <a name="auto_handleoperator-auto_handle"></a><a name="operator-auto-handle"></a>auto_handle:: operator auto_handle
 
-Ve uyumlu türleri `auto_handle` arasında tip döküm operatörü.
+Ve uyumlu türler arasında tür atama işleci `auto_handle` .
 
 ```cpp
 template<typename _other_type>
@@ -585,7 +585,7 @@ operator auto_handle<_other_type>();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Geçerli `auto_handle` döküm `auto_handle<_other_type>`.
+Geçerli `auto_handle` atama `auto_handle<_other_type>` .
 
 ### <a name="example"></a>Örnek
 
@@ -629,9 +629,9 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="auto_handleoperator-bool"></a><a name="operator-bool"></a>auto_handle::operatör bool
+## <a name="auto_handleoperator-bool"></a><a name="operator-bool"></a>auto_handle:: operator bool
 
-Koşullu `auto_handle` bir ifadede kullanmak için işleç.
+`auto_handle`Bir koşullu ifadede kullanmak için işleci.
 
 ```cpp
 operator bool();
@@ -639,11 +639,11 @@ operator bool();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-`true`sarılmış nesne geçerliyse; `false` aksi takdirde.
+**`true`** Sarmalanan nesne geçerliyse; **`false`** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç aslında `_detail_class::_safe_bool` integral türüne dönüştürülemez çünkü daha `bool` güvenli olan dönüştürür.
+Bu işleç gerçekten `_detail_class::_safe_bool` , **`bool`** bir integral türüne dönüştürülemediğinden daha güvenli olan öğesine dönüştürür.
 
 ### <a name="example"></a>Örnek
 
@@ -674,9 +674,9 @@ s2 is valid
 s2 is now invalid
 ```
 
-## <a name="auto_handleoperator"></a><a name="operator-logical-not"></a>auto_handle::operatör!
+## <a name="auto_handleoperator"></a><a name="operator-logical-not"></a>auto_handle:: operator!
 
-Koşullu `auto_handle` bir ifadede kullanmak için işleç.
+`auto_handle`Bir koşullu ifadede kullanmak için işleci.
 
 ```cpp
 bool operator!();
@@ -684,7 +684,7 @@ bool operator!();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-`true`sarılmış nesne geçersizse; `false` aksi takdirde.
+**`true`** Sarmalanan nesne geçersiz ise; **`false`** Aksi takdirde.
 
 ### <a name="example"></a>Örnek
 

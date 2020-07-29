@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - call_in_appdomain function
 ms.assetid: 9a1a5026-b76b-4cae-a3d4-29badeb9db9c
-ms.openlocfilehash: da0f2bc1a503226e41198871e6dc48ace7a86854
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 567b6d8fe9412e58f21de9a1031ec54c4bc01cdc
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988540"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230902"
 ---
 # <a name="call_in_appdomain-function"></a>call_in_appdomain İşlevi
 
 Belirtilen uygulama etki alanında bir işlevi yürütür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <typename ArgType1, ...typename ArgTypeN>
@@ -45,21 +45,21 @@ RetType call_in_appdomain(
 İşlevin çağrılacak AppDomain.
 
 *voidFunc*<br/>
-N parametre alan bir `void` işlevi işaretçisi (0 < = N < = 15).
+**`void`** N parametresi alan bir işlev işaretçisi (0 <= N <= 15).
 
 *nonvoidFunc*<br/>
-N parametresi alan`void` olmayan bir işlev işaretçisi (0 < = N < = 15).
+**`void`** N parametresi alan işlev olmayan bir işaretçi (0 <= N <= 15).
 
 *arg1... argN*<br/>
-Diğer AppDomain 'de `voidFunc` veya `nonvoidFunc` geçirilecek sıfır-15 parametre.
+`voidFunc`Diğer AppDomain 'e veya diğer AppDomain 'e geçirilecek sıfır-15 parametre `nonvoidFunc` .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen uygulama etki alanında `voidFunc` veya `nonvoidFunc` yürütmenin sonucu.
+`voidFunc` `nonvoidFunc` Belirtilen uygulama etki alanında veya yürütmenin sonucu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`call_in_appdomain` geçirilen işlevin bağımsız değişkenleri CLR türü olmamalıdır.
+Geçirilen işlevin bağımsız değişkenlerinin `call_in_appdomain` clr türleri olmaması gerekir.
 
 ## <a name="example"></a>Örnek
 
@@ -107,7 +107,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```
 default appdomain: msl_call_in_appdomain.exe
@@ -118,6 +118,6 @@ appDomain1 id = 2
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası** \<msclr\appdomain.h >
+**Üst bilgi dosyası**\<msclr\appdomain.h>
 
 **Ad alanı** msclr

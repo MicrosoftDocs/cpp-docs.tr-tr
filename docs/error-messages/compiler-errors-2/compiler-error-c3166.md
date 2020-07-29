@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C3166
+title: Derleyici hatası C3166
 ms.date: 11/04/2016
 f1_keywords:
 - C3166
 helpviewer_keywords:
 - C3166
 ms.assetid: ec3e330d-c15d-4158-8268-09101486c566
-ms.openlocfilehash: 17efd401314e93ff710be2c1e6f187a938e388b9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1915d58f73ce8d16135951b359c3f0fd48aea3ac
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62174309"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230876"
 ---
-# <a name="compiler-error-c3166"></a>Derleyici Hatası C3166
+# <a name="compiler-error-c3166"></a>Derleyici hatası C3166
 
-'işaretçisi': 'type' üyesi olarak bir iç __gc işaretçi işaretçisi bildirilemez
+> ' Pointer ': bir iç __gc işaretçisine ' Type ' üyesi olarak bir işaretçi bildirilemez
 
-Derleyici, bir geçersiz işaretçi bildirimi bulunamadı (bir `__nogc` işaretçi bir `__gc` işaretçisi.).
+Derleyici geçersiz bir işaretçi bildirimi ( **`__nogc`** işaretçiye yönelik bir işaretçi) buldu **`__gc`** .
 
-C3166 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.
+C3166 yalnızca kullanılmayan derleyici seçeneği kullanılarak erişilebilir **`/clr:oldSyntax`** .

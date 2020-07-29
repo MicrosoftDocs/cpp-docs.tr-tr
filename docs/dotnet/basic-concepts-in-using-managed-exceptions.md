@@ -10,34 +10,34 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-ms.openlocfilehash: 6bc1e9c6d40599ae9a821179dcf56dbb7e21bf10
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4eeec5db00ceca5429f4a3a270e1b249a8955249
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372524"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230928"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar
 
-Bu konu, yönetilen uygulamalarda özel durum işleme tartışır. Yani **/clr** derleyici seçeneği ile derlenen bir uygulamadır.
+Bu konu, yönetilen uygulamalarda özel durum işlemeyi tartışır. Diğer bir deyişle, **/clr** derleyici seçeneği ile derlenen bir uygulamadır.
 
 ## <a name="in-this-topic"></a>Bu konuda
 
-- [/clr Altında Özel Durumlar Atma](#vcconbasicconceptsinusingmanagedexceptionsanchor1)
+- [/Clr altında özel durumlar üretiliyor](#vcconbasicconceptsinusingmanagedexceptionsanchor1)
 
-- [CLR Uzantıları için Blokları Deneyin/Yakala](#vcconbasicconceptsinusingmanagedexceptionsanchor2)
+- [CLR uzantıları için try/catch blokları](#vcconbasicconceptsinusingmanagedexceptionsanchor2)
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/clr** seçeneğiyle derlerseniz, CLR özel durumlarını işleyebilir <xref:System.Exception> ve standart sınıf CLR özel durumlarını işlemek için birçok yararlı yöntem sağlar ve kullanıcı tanımlı özel durum sınıfları için taban sınıf olarak önerilir.
+**/Clr** seçeneğiyle DERLERSENIZ CLR özel durumlarını işleyebilir <xref:System.Exception> ve standart sınıf, CLR özel durumlarını işlemek için birçok yararlı yöntem sağlar ve Kullanıcı tanımlı özel durum sınıfları için temel sınıf olarak önerilir.
 
-Arabirimden türetilen özel durum türlerinin yakalanması **/clr**altında desteklenmez. Ayrıca, ortak dil çalışma süresi yığın taşma özel durumları yakalamak için izin vermez; yığın taşması özel durumu işlemi sonlandırır.
+Bir arabirimden türetilmiş özel durum türleri, **/clr**altında desteklenmez. Ayrıca, ortak dil çalışma zamanı, yığın taşması özel durumlarını yakalamada size izin vermez; yığın taşması özel durumu işlemi sonlandırır.
 
-Yönetilen ve yönetilmeyen uygulamalarda özel durum işleme deki farklılıklar hakkında daha fazla bilgi [için, C++ için Yönetilen Uzantılar Altında Özel Durum İşleme DavranışıNdaki Farklılıklar'a](../dotnet/differences-in-exception-handling-behavior-under-clr.md)bakın.
+Yönetilen ve yönetilmeyen uygulamalardaki özel durum işlemede farklılıklar hakkında daha fazla bilgi için, [C++ için yönetilen uzantılar altında özel durum Işleme davranışındaki farklılıklar](../dotnet/differences-in-exception-handling-behavior-under-clr.md)bölümüne bakın.
 
-## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a>/clr Altında Özel Durumlar Atma
+## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a>/Clr altında özel durumlar üretiliyor
 
-C++ atma ifadesi clr türüne bir tutamaç atmak için uzatılır. Aşağıdaki örnek özel bir özel durum türü oluşturur ve sonra bu tür bir örnek atar:
+C++ throw ifadesi bir CLR türü için tanıtıcı oluşturmak üzere genişletilir. Aşağıdaki örnek özel bir özel durum türü oluşturur ve bu türün bir örneğini oluşturur:
 
 ```cpp
 // clr_exception_handling.cpp
@@ -53,7 +53,7 @@ void GlobalFunction() {
 }
 ```
 
-Bir değer türü atılmadan önce kutulanmalıdır:
+Bir değer türü oluşturulmadan önce paketlenmelidir:
 
 ```cpp
 // clr_exception_handling_2.cpp
@@ -68,9 +68,9 @@ void GlobalFunction() {
 }
 ```
 
-## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a>CLR Uzantıları için Blokları Deneyin/Yakala
+## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a>CLR uzantıları için try/catch blokları
 
-Aynı **try**/**catch** bloğu yapısı hem CLR hem de yerel özel durumları yakalamak için kullanılabilir:
+Aynı **`try`** / **`catch`** blok yapısı hem clr hem de yerel özel durumları yakalamak için kullanılabilir:
 
 ```cpp
 // clr_exception_handling_3.cpp
@@ -126,25 +126,25 @@ In 'catch(MyStruct^ catchException)'
 11
 ```
 
-### <a name="order-of-unwinding-for-c-objects"></a>C++ Nesneleri için Gevşeme Sırası
+### <a name="order-of-unwinding-for-c-objects"></a>C++ nesneleri için geri sarma sırası
 
-Boşaltma, atma işlevi ile işleme işlevi arasındaki çalışma zamanı yığınında olabilecek yıkıcılara sahip c++ nesneleri için oluşur. CLR türleri yığına ayrıldıkolduğundan, gevşeme onlar için geçerli değildir.
+Oluşturma işlevi ile işleme işlevi arasında çalışma zamanı yığınında olabilecek yok ediciler içeren tüm C++ nesneleri için geriye doğru izleme oluşur. CLR türleri yığında ayrıldığından, bu dosyalara geri sarma uygulanmaz.
 
-Atılan bir özel durum için olayların sırası aşağıdaki gibidir:
+Oluşturulan özel durum için olayların sırası aşağıdaki gibidir:
 
-1. Çalışma zamanı, özel durumu yakalamak için uygun catch yan tümcesini bulmak için yığını yürür veya SEH,SEH için bir dış filtre olan SEH durumunda. Catch yan tümceleri önce sözlü sırada aranır, sonra dinamik olarak arama yığınıaşağı.
+1. Çalışma zamanı, özel durumu yakalamak için, bir SEH, bir SEH için bir except filtresi olarak uygun catch yan tümcesini veya SEH durumunu bulmak için yığın gösterir. Catch yan tümceleri, ilk olarak sözcük temelli sırada aranır ve ardından çağrı yığınını dinamik olarak kapatır.
 
-1. Doğru işleyici bulunduktan sonra, yığın o noktaya kadar çözülir. Yığındaki her işlev çağrısı için, yerel nesneleri destructed ve __finally blokları, en iç içe dışa doğru yürütülür.
+1. Doğru işleyici bulduktan sonra, yığın bu noktaya kadar kaçınar. Yığındaki her bir işlev çağrısı için, kendi yerel nesneleri kaldırılır ve __finally blokları, iç içe geçmiş dışarıya göre yürütülür.
 
-1. Yığın çözüldükten sonra, yakalama yan tümcesi yürütülür.
+1. Yığın geri alındıktan sonra, catch yan tümcesi yürütülür.
 
-### <a name="catching-unmanaged-types"></a>Yönetilmeyen Türleri Yakalama
+### <a name="catching-unmanaged-types"></a>Yönetilmeyen türleri yakalama
 
-Yönetilmeyen bir nesne türü atıldığında, türü <xref:System.Runtime.InteropServices.SEHException>bir özel durum ile sarılır. Uygun **yakalama** yan tümcesi aranırken iki olasılık vardır.
+Yönetilmeyen bir nesne türü oluşturulduğunda, türünde bir özel durumla sarmalanır <xref:System.Runtime.InteropServices.SEHException> . Uygun **`catch`** yan tümceyi ararken iki olasılık vardır.
 
-- Yerel bir C++ türüyle karşılaşılırsa, özel durum unwrapped ve karşılaşılan türile karşılaştırıldığında. Bu karşılaştırma, yerel bir C++ türü normal şekilde yakalanmasını sağlar.
+- Yerel bir C++ türü ile karşılaşılırsa, özel durum sarmalanmış ve karşılaşılan türle karşılaştırılır. Bu karşılaştırma, yerel C++ türünün normal şekilde yakalanmasına izin verir.
 
-- Ancak, **önce SEHException** türünden veya temel sınıflarından herhangi birinin **yakalama** yan tümcesi incelenirse, yan tümce özel durumu keser. Bu nedenle, clr türlerinin herhangi bir catch yan tümcesi önce ana C++ türlerini yakalamak tüm catch yan tümceleri yerleştirmeniz gerekir.
+- Ancak, ilk olarak, **`catch`** **şehir özel** durum türünde bir yan tümce veya temel sınıflarından herhangi biri incelençalışıyorsa, yan tümce özel durumu ele alınacaktır. Bu nedenle, CLR türlerindeki catch yan tümcelerinden önce yerel C++ türlerini yakalayasağlayan tüm catch yan tümcelerini yerleştirmeniz gerekir.
 
 Aşağıdakilere dikkat edin:
 
@@ -158,11 +158,11 @@ ve
 catch(...)
 ```
 
-her ikisi de SEH özel durumlar da dahil olmak üzere herhangi bir atılan türü yakalar.
+, her ikisi de SEH özel durumları dahil olmak üzere oluşturulan türü yakalar.
 
-Yönetilmeyen bir tür catch (Object^) tarafından yakalanırsa, atılan nesneyi yok etmez.
+Yönetilmeyen bir tür catch (Object ^) tarafından yakalanmışsa, oluşturulan nesneyi yok etmez.
 
-Yönetilmeyen özel durumları atarken veya yakalarken, **/EHs** veya **/EHa**yerine [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanmanızı öneririz.
+Yönetilmeyen özel durumları oluştururken veya sunarken, **/EHS** veya **/EHa**yerine [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanmanızı öneririz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

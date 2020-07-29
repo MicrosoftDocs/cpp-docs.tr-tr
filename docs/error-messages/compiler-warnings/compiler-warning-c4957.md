@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4957
 ms.assetid: a18c52d4-23e2-44f1-b4b5-f7fa5a7f3987
-ms.openlocfilehash: 340c26c97d0b5b686eee487cd3fd8b6b05bdf373
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ada10b5989b714ec4c75a24de1bbb101e1f51ee6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164917"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230772"
 ---
 # <a name="compiler-warning-c4957"></a>Derleyici Uyarısı C4957
 
@@ -21,9 +21,9 @@ ms.locfileid: "80164917"
 
 Bir atama doğrulanamayan bir görüntüye neden olur.
 
-Bazı yayınlar güvenlidir (örneğin, Kullanıcı tanımlı dönüştürmeleri ve bir `const_cast`tetiklediği bir `static_cast`). Doğrulanabilir kod oluşturmak için bir [safe_cast](../../extensions/safe-cast-cpp-component-extensions.md) garanti edilir.
+Bazı atamalar güvenlidir (örneğin, **`static_cast`** Kullanıcı tanımlı dönüştürmeleri ve a 'yı tetikleyen bir **`const_cast`** ). Doğrulanabilir kod oluşturmak için bir [safe_cast](../../extensions/safe-cast-cpp-component-extensions.md) garanti edilir.
 
-Daha fazla bilgi için bkz. [saf ve Doğrulanabilen kodC++(/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Daha fazla bilgi için bkz. [saf ve Doğrulanabilen kod (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
 **/Clr: Safe** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 

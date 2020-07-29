@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-ms.openlocfilehash: 940eae39222548ec74bda8ccb38e669748ffa74f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ea7341b9c587a764c7366fa7b7c89e4fc67bc7d8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738407"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230863"
 ---
 # <a name="compiler-error-c3490"></a>Derleyici hatası C3490
 
 ' var ' değiştirilemez çünkü bir const nesnesi üzerinden erişildi
 
-`const` yönteminde belirtilen bir lambda ifadesi, kesilebilir üye verilerini değiştiremez.
+Bir yöntemde belirtilen lambda ifadesi, **`const`** kesilebilir üye verilerini değiştiremez.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Yöntem bildirimindeki `const` değiştiricisini kaldırın.
+- **`const`** Yöntem bildirimindeki değiştiriciyi kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `const` yönteminde `_i` üye değişkenini değiştirdiği için C3490 oluşturur:
+Aşağıdaki örnek, bir yöntemde üye değişkenini değiştirdiği için C3490 oluşturur `_i` **`const`** :
 
 ```cpp
 // C3490a.cpp
@@ -44,7 +44,7 @@ class C
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yöntem bildiriminden `const` değiştiricisini kaldırarak C3490 çözer:
+Aşağıdaki örnek, **`const`** yöntem bildiriminden değiştiriciyi kaldırarak C3490 'i çözer:
 
 ```cpp
 // C3490b.cpp
@@ -63,4 +63,4 @@ class C
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)

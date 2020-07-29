@@ -16,18 +16,18 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::auto_gcroot
 ms.assetid: b5790912-265d-463e-a486-47302e91042a
-ms.openlocfilehash: 87e6703f759888b36ed89daed10df937701c6dbd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3f6190b0d16648490552c0f415251a3df2b33188
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372546"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230954"
 ---
 # <a name="auto_gcroot-class"></a>auto_gcroot Sınıfı
 
-Sanal bir tanıtıcıyı yerel bir türe yerleştirmek için kullanılabilecek otomatik kaynak yönetimi [(auto_ptr Sınıfı](../standard-library/auto-ptr-class.md)gibi).
+Bir sanal tanıtıcıyı yerel bir türe eklemek için kullanılabilen otomatik kaynak yönetimi ( [Auto_ptr Class](../standard-library/auto-ptr-class.md)gibi).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename _element_type>
@@ -37,47 +37,47 @@ class auto_gcroot;
 ### <a name="parameters"></a>Parametreler
 
 *_element_type*<br/>
-Yönetilen tür katıştırılmış olmak.
+Katıştırılacak yönetilen tür.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constructors"></a>Kamu yapıcılar
+### <a name="public-constructors"></a>Ortak oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
-|[auto_gcroot::auto_gcroot](#auto-gcroot)|Yapıcı. `auto_gcroot`|
-|[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|`auto_gcroot` Yıkıcı.
+|[auto_gcroot:: auto_gcroot](#auto-gcroot)|`auto_gcroot`Oluşturucu.|
+|[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|`auto_gcroot`Yok edicisi.
 |
 
-### <a name="public-methods"></a>Genel yöntemler
+### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
-|[auto_gcroot::attach](#attach)|Bir `auto_gcroot` nesneye takın.|
-|[auto_gcroot::get](#get)|İçe tek yer olan nesneyi alır.|
-|[auto_gcroot::release](#release)|Nesneyi yönetimden `auto_gcroot` salar.|
-|[auto_gcroot::reset](#reset)|Geçerli sahip olunan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesneye sahip olun.|
-|[auto_gcroot::swap](#swap)|Nesneleri başka bir `auto_gcroot`nesneyle değiştirir.|
+|[auto_gcroot::attach](#attach)|`auto_gcroot`Bir nesneye iliştirme.|
+|[auto_gcroot::get](#get)|İçerilen nesneyi alır.|
+|[auto_gcroot::release](#release)|Nesneyi yönetimden serbest bırakır `auto_gcroot` .|
+|[auto_gcroot::reset](#reset)|Geçerli sahip olan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesne sahipliğini alın.|
+|[auto_gcroot::swap](#swap)|Nesneleri başka bir metinle değiştirir `auto_gcroot` .|
 
-### <a name="public-operators"></a>Kamu operatörleri
+### <a name="public-operators"></a>Ortak işleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |---------|-----------|
-|[auto_gcroot::operatör-&gt;](#operator-arrow)|Üye erişim operatörü.|  
-|[auto_gcroot::operator=](#operator-assign)|Atama işleci.|
-|[auto_gcroot::operatör&nbsp;auto_gcroot](#operator-auto-gcroot)|Ve uyumlu türleri `auto_gcroot` arasında tip döküm operatörü.|
-|[auto_gcroot::operatör&nbsp;bool](#operator-bool)|Koşullu `auto_gcroot` bir ifadede kullanmak için işleç.|  
-|[auto_gcroot::operator!](#operator-logical-not)|Koşullu `auto_gcroot` bir ifadede kullanmak için işleç.|
+|[auto_gcroot:: operator-&gt;](#operator-arrow)|Üye erişim işleci.|  
+|[auto_gcroot:: operator =](#operator-assign)|Atama işleci.|
+|[auto_gcroot:: operator &nbsp; auto_gcroot](#operator-auto-gcroot)|Ve uyumlu türler arasında tür atama işleci `auto_gcroot` .|
+|[auto_gcroot:: operator &nbsp; bool](#operator-bool)|`auto_gcroot`Bir koşullu ifadede kullanmak için işleci.|  
+|[auto_gcroot::operator!](#operator-logical-not)|`auto_gcroot`Bir koşullu ifadede kullanmak için işleci.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık dosyası** \<msclr\auto_gcroot.h>
+**Üst bilgi dosyası**\<msclr\auto_gcroot.h>
 
-**Namespace** msclr
+**Ad alanı** msclr
 
-## <a name="auto_gcrootauto_gcroot"></a><a name="auto-gcroot"></a>auto_gcroot::auto_gcroot
+## <a name="auto_gcrootauto_gcroot"></a><a name="auto-gcroot"></a>auto_gcroot:: auto_gcroot
 
-Yapıcı. `auto_gcroot`
+`auto_gcroot`Oluşturucu.
 
 ```cpp
 auto_gcroot(
@@ -95,14 +95,14 @@ auto_gcroot(
 ### <a name="parameters"></a>Parametreler
 
 *_ptr*<br/>
-Sahip olmak için nesne.
+Kendisine ait nesne.
 
 *_right*<br/>
-Varolan `auto_gcroot`bir .
+Mevcut bir `auto_gcroot` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varolan `auto_gcroot` `auto_gcroot`bir dan bir yapı, varolan `auto_gcroot` nesnenin sahipliğini yeniye `auto_gcroot`aktarmadan önce nesnesini salgılar.
+`auto_gcroot`Varolan bir ' dan oluştururken `auto_gcroot` , var olan bir `auto_gcroot` nesne, nesnenin sahipliğini yeni bir öğesine aktarmadan önce nesnesini serbest bırakır `auto_gcroot` .
 
 ### <a name="example"></a>Örnek
 
@@ -191,9 +191,9 @@ in RefClassA destructor: second
 done
 ```
 
-## <a name="auto_gcrootauto_gcroot"></a><a name="tilde-auto-gcroot"></a>auto_gcroot::~auto_gcroot
+## <a name="auto_gcrootauto_gcroot"></a><a name="tilde-auto-gcroot"></a>auto_gcroot:: ~ auto_gcroot
 
-`auto_gcroot` Yıkıcı.
+`auto_gcroot`Yok edicisi.
 
 ```cpp
 ~auto_gcroot();
@@ -201,7 +201,7 @@ done
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı aynı zamanda sahip olunan nesneyi de yok eder.
+Yıkıcı, sahip olunan nesnenin yapılarını da kaldırır.
 
 ### <a name="example"></a>Örnek
 
@@ -238,9 +238,9 @@ ClassA destructor
 done
 ```
 
-## <a name="auto_gcrootattach"></a><a name="attach"></a>auto_gcroot::ekle
+## <a name="auto_gcrootattach"></a><a name="attach"></a>auto_gcroot:: Attach
 
-Bir `auto_gcroot` nesneye takın.
+`auto_gcroot`Bir nesneye iliştirme.
 
 ```cpp
 auto_gcroot<_element_type> & attach(
@@ -258,7 +258,7 @@ auto_gcroot<_element_type> & attach(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-Ekecek nesne veya `auto_gcroot` ekecek nesneyi içeren bir nesne.
+İliştirilecek nesne veya eklenecek `auto_gcroot` nesneyi içeren bir nesne.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -266,7 +266,7 @@ Geçerli `auto_gcroot`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `_right` `auto_gcroot`ise, nesne geçerlibağlı `auto_gcroot`bağlı önce nesnesinin sahipliğini salar.
+`_right`Bir ise `auto_gcroot` , nesne güncel iliştirilmadan önce nesnesinin sahipliğini yayınlar `auto_gcroot` .
 
 ### <a name="example"></a>Örnek
 
@@ -333,9 +333,9 @@ Hello from fourth A!
 in ClassA destructor:fourth
 ```
 
-## <a name="auto_gcrootget"></a><a name="get"></a>auto_gcroot::get
+## <a name="auto_gcrootget"></a><a name="get"></a>auto_gcroot:: Get
 
-İçe tek yer olan nesneyi alır.
+İçerilen nesneyi alır.
 
 ```cpp
 _element_type get() const;
@@ -343,7 +343,7 @@ _element_type get() const;
 
 ### <a name="return-value"></a>Döndürülen değer
 
-İçe tek şey.
+Kapsanan nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -393,9 +393,9 @@ Hello from first A!
 in ClassA destructor:first
 ```
 
-## <a name="auto_gcrootrelease"></a><a name="release"></a>auto_gcroot::sürüm
+## <a name="auto_gcrootrelease"></a><a name="release"></a>auto_gcroot:: Release
 
-Nesneyi yönetimden `auto_gcroot` salar.
+Nesneyi yönetimden serbest bırakır `auto_gcroot` .
 
 ```cpp
 _element_type release();
@@ -403,7 +403,7 @@ _element_type release();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Serbest bırakılan nesne.
+Yayınlanan nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -456,9 +456,9 @@ Hello from first A!
 done
 ```
 
-## <a name="auto_gcrootreset"></a><a name="reset"></a>auto_gcroot::sıfırlama
+## <a name="auto_gcrootreset"></a><a name="reset"></a>auto_gcroot:: Reset
 
-Geçerli sahip olunan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesneye sahip olun.
+Geçerli sahip olan nesneyi yok edin ve isteğe bağlı olarak yeni bir nesne sahipliğini alın.
 
 ```cpp
 void reset(
@@ -469,7 +469,7 @@ void reset(
 ### <a name="parameters"></a>Parametreler
 
 *_new_ptr*<br/>
-(İsteğe bağlı) Yeni nesne.
+Seçim Yeni nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -521,9 +521,9 @@ ClassA destructor: second
 done
 ```
 
-## <a name="auto_gcrootswap"></a><a name="swap"></a>auto_gcroot::takas
+## <a name="auto_gcrootswap"></a><a name="swap"></a>auto_gcroot:: swap
 
-Nesneleri başka bir `auto_gcroot`nesneyle değiştirir.
+Nesneleri başka bir metinle değiştirir `auto_gcroot` .
 
 ```cpp
 void swap(
@@ -534,7 +534,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-Nesneleri `auto_gcroot` takas etmek için.
+`auto_gcroot`Nesneleri takas edilecek.
 
 ### <a name="example"></a>Örnek
 
@@ -563,9 +563,9 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="auto_gcrootoperator-gt"></a><a name="operator-arrow"></a>auto_gcroot::operatör-&gt;
+## <a name="auto_gcrootoperator-gt"></a><a name="operator-arrow"></a>auto_gcroot:: operator-&gt;
 
-Üye erişim operatörü.
+Üye erişim işleci.
 
 ```cpp
 _element_type operator->() const;
@@ -573,7 +573,7 @@ _element_type operator->() const;
 
 ### <a name="return-value"></a>Döndürülen değer
 
-SarGılı `auto_gcroot`nesne.
+Tarafından Sarmalanan nesne `auto_gcroot` .
 
 ### <a name="example"></a>Örnek
 
@@ -612,7 +612,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="auto_gcrootoperator"></a><a name="operator-assign"></a>auto_gcroot::operator=
+## <a name="auto_gcrootoperator"></a><a name="operator-assign"></a>auto_gcroot:: operator =
 
 Atama işleci.
 
@@ -632,11 +632,11 @@ auto_gcroot<_element_type> & operator=(
 ### <a name="parameters"></a>Parametreler
 
 *_right*<br/>
-Nesneye `auto_gcroot` veya akıma `auto_gcroot`atanacak.
+Ya da geçerli bir nesneye `auto_gcroot` Atanacak `auto_gcroot` .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Geçerli `auto_gcroot`, şimdi `_right`sahip .
+Geçerli `auto_gcroot` , artık sahip `_right` .
 
 ### <a name="example"></a>Örnek
 
@@ -704,9 +704,9 @@ done
 in ClassA destructor: third
 ```
 
-## <a name="auto_gcrootoperator-auto_gcroot"></a><a name="operator-auto-gcroot"></a>auto_gcroot::operatör auto_gcroot
+## <a name="auto_gcrootoperator-auto_gcroot"></a><a name="operator-auto-gcroot"></a>auto_gcroot:: operator auto_gcroot
 
-Ve uyumlu türleri `auto_gcroot` arasında tip döküm operatörü.
+Ve uyumlu türler arasında tür atama işleci `auto_gcroot` .
 
 ```cpp
 template<typename _other_type>
@@ -715,7 +715,7 @@ operator auto_gcroot<_other_type>();
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Geçerli `auto_gcroot` döküm `auto_gcroot<_other_type>`.
+Geçerli `auto_gcroot` atama `auto_gcroot<_other_type>` .
 
 ### <a name="example"></a>Örnek
 
@@ -759,9 +759,9 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="auto_gcrootoperator-bool"></a><a name="operator-bool"></a>auto_gcroot::operatör bool
+## <a name="auto_gcrootoperator-bool"></a><a name="operator-bool"></a>auto_gcroot:: operator bool
 
-Koşullu `auto_gcroot` bir ifadede kullanmak için işleç.
+`auto_gcroot`Bir koşullu ifadede kullanmak için işleci.
 
 ```cpp
 operator bool() const;
@@ -769,11 +769,11 @@ operator bool() const;
 
 ### <a name="return-value"></a>Döndürülen değer
 
-`true`sarılmış nesne geçerliyse; `false` aksi takdirde.
+**`true`** Sarmalanan nesne geçerliyse; **`false`** Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç aslında `_detail_class::_safe_bool`, integral `bool` türüne dönüştürülemez çünkü daha güvenlidir dönüştürür.
+Bu işleç `_detail_class::_safe_bool` , **`bool`** bir integral türüne dönüştürülemediğinden daha güvenli olan ' a dönüştürülür.
 
 ### <a name="example"></a>Örnek
 
@@ -804,9 +804,9 @@ now s is valid
 now s is invalid
 ```
 
-## <a name="auto_gcrootoperator"></a><a name="operator-logical-not"></a>auto_gcroot::operatör!
+## <a name="auto_gcrootoperator"></a><a name="operator-logical-not"></a>auto_gcroot:: operator!
 
-Koşullu `auto_gcroot` bir ifadede kullanmak için işleç.
+`auto_gcroot`Bir koşullu ifadede kullanmak için işleci.
 
 ```cpp
 bool operator!() const;
@@ -814,7 +814,7 @@ bool operator!() const;
 
 ### <a name="return-value"></a>Döndürülen değer
 
-`true`sarılmış nesne geçersizse; `false` aksi takdirde.
+**`true`** Sarmalanan nesne geçersiz ise; **`false`** Aksi takdirde.
 
 ### <a name="example"></a>Örnek
 
