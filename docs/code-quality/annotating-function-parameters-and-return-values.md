@@ -124,12 +124,12 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-ms.openlocfilehash: d2aa57abc6c0bcc50bcae743a50f86e5de65ab64
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 4d0325fbab2f27da2556e2c252e35711d9b42789
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404043"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231266"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev parametrelerine ve dönüş değerlerine açıklama ekleme
 
@@ -167,7 +167,7 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 
      İşlev tarafından okunan dizi için bir işaretçi. Dizi `s` , hepsi geçerli olması gereken boyut öğeleridir.
 
-     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, `char` dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır `wchar_t` .
+     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, **`char`** dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır **`wchar_t`** .
 
 - `_In_reads_z_(s)`
 
@@ -190,7 +190,7 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 
      Bu örnekte, çağıran öğesi için bir arabellek sağlar `size` `p1` . `MyStringCopy`Bu öğelerin bazılarını geçerli hale getirir. Daha da önemlisi, `_Null_terminated_` üzerindeki ek açıklama, `PWSTR` `p1` durum sonrası için null olarak sonlandırılmış anlamına gelir. Bu şekilde, geçerli öğe sayısı hala iyi tanımlanmış, ancak belirli bir öğe sayısı gerekli değildir.
 
-     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, `char` dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır `wchar_t` .
+     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, **`char`** dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır **`wchar_t`** .
 
 - `_Out_writes_z_(s)`
 
@@ -202,7 +202,7 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 
      Bir dizi için, hem okunan hem de işlevine yazılan bir işaretçi. Bu `s` öğelerin boyutu, ön durum ve durum sonrası için geçerlidir.
 
-     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, `char` dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır `wchar_t` .
+     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, **`char`** dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır **`wchar_t`** .
 
 - `_Inout_updates_z_(s)`
 
@@ -218,7 +218,7 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 
      Öğe dizisine yönelik bir işaretçi `s` . Öğelerin ön durumunda geçerli olması gerekmez. Durum sonrası, `c` -TH öğesine kadar olan öğelerin geçerli olması gerekir. `_bytes_`Boyut, öğe sayısı yerine bayt olarak bilindiğinde değişken kullanılabilir.
 
-     Örneğin:
+     Örnek:
 
      ```cpp
      void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s);
@@ -231,7 +231,7 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 
      İşlev tarafından hem okunan hem yazılan dizi için bir işaretçi. `s`Bunların tümü ön durumunda geçerli olması gereken boyut öğeleridir ve `c` öğelerin durum sonrası geçerli olması gerekir.
 
-     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, `char` dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır `wchar_t` .
+     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, **`char`** dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır **`wchar_t`** .
 
 - `_Inout_updates_all_(s)`
 
@@ -243,13 +243,13 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 
      Diğer bir deyişle, ön durumunda olan arabellekte bulunan her öğe, `s` ön durum ve sonrası durumunda geçerlidir.
 
-     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, `char` dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır `wchar_t` .
+     `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, **`char`** dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır **`wchar_t`** .
 
 - `_In_reads_to_ptr_(p)`
 
      Bir dizi için `p - _Curr_` (yani, `p` eksi `_Curr_` ) geçerli bir ifade işaretçisi. Önceki öğelerin `p` ön durumunda geçerli olması gerekir.
 
-    Örneğin:
+    Örnek:
 
     ```cpp
     int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
@@ -525,7 +525,7 @@ Bir işlevin dönüş değeri `_Out_` parametreye benzer, ancak farklı bir de b
 
 - `_Struct_size_bytes_(size)`
 
-     Bir struct veya Class bildirimi için geçerlidir. Bu türdeki geçerli bir nesnenin, tarafından verilen bayt sayısıyla, belirtilen tür ile daha büyük olabileceğini gösterir `size` . Örneğin:
+     Bir struct veya Class bildirimi için geçerlidir. Bu türdeki geçerli bir nesnenin, tarafından verilen bayt sayısıyla, belirtilen tür ile daha büyük olabileceğini gösterir `size` . Örnek:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 

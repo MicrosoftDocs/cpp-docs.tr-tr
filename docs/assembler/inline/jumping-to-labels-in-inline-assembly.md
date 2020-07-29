@@ -9,20 +9,20 @@ helpviewer_keywords:
 - labels, in __asm blocks
 - jumping to labels in inline assembly
 ms.assetid: 36c18b97-8981-4631-9dfd-af6c14a04297
-ms.openlocfilehash: 199156a08af13f4a70793609b37c70b0c95bf9ba
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0c411289745466bd6478cc82ab30e6a05be9cc25
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169337"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87192008"
 ---
 # <a name="jumping-to-labels-in-inline-assembly"></a>İç Derlemede Etiketlere Atlama
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Sıradan bir C veya C++ etiket gibi, `__asm` bloğundaki bir etiket tanımlandığı işlevin tamamında kapsama sahiptir (yalnızca bloğunda değil). Derleme yönergelerinin ve `goto` deyimlerinin her ikisi de `__asm` bloğunun içindeki veya dışındaki etiketlere atlayabilirler.
+Sıradan bir C veya C++ etiketi gibi, blok içindeki bir etiketin **`__asm`** tanımlandığı işlevin tamamında kapsamı vardır (yalnızca bloğunda değil). Derleme yönergeleri ve **`goto`** deyimleri, blok içindeki veya dışındaki etiketlere atlayabilir **`__asm`** .
 
-`__asm` bloklardaki tanımlı Etiketler büyük/küçük harfe duyarlı değildir; `goto` deyimleri ve derleme yönergeleri, büyük/küçük harfe bakılmaksızın bu etiketlere başvurabilir. C ve C++ etiketler yalnızca `goto` deyimleri tarafından kullanıldığında büyük/küçük harfe duyarlıdır. Derleme yönergeleri, büyük/küçük harfe bakılmaksızın C++ bir C veya etiketine atlayabilir.
+Bloklardaki tanımlı Etiketler büyük/küçük **`__asm`** harfe duyarlı değildir; her iki **`goto`** deyim ve derleme yönergeleri de bu etiketlere, büyük/küçük harfe bakılmaksızın başvurabilir. C ve C++ etiketleri yalnızca deyimler tarafından kullanıldığında büyük/küçük harfe duyarlıdır **`goto`** . Derleme yönergeleri, büyük/küçük harfe bakılmaksızın bir C veya C++ etiketine atlayabilir.
 
 Aşağıdaki kod tüm permütasyon gösterir:
 
@@ -54,7 +54,7 @@ int main()
 }
 ```
 
-C Kitaplığı işlev adlarını `__asm` bloklara etiket olarak kullanmayın. Örneğin, aşağıdaki gibi `exit` etiket olarak kullanmayı düşünebilirsiniz:
+C Kitaplığı işlev adlarını bloklar halinde etiket olarak kullanmayın **`__asm`** . Örneğin, `exit` aşağıdaki gibi bir etiket olarak kullanmayı düşünebilirsiniz:
 
 ```cpp
 ; BAD TECHNIQUE: using library function name as label
@@ -68,7 +68,7 @@ exit:
 
 **Exit** bir C Kitaplığı işlevinin adı olduğundan, bu kod istenen konum yerine **Çıkış** işlevine atmasına neden olabilir.
 
-MASı programlarında olduğu gibi, dolar simgesi (`$`) geçerli konum sayacı olarak görev yapar. Bu, şu anda oluşturulan yönerge için bir etikettir. `__asm` bloklarından, ana kullanımı uzun koşullu atlamaları yapmak için kullanılır:
+MASı programlarında olduğu gibi, dolar simgesi ( `$` ) geçerli konum sayacı işlevi görür. Bu, şu anda oluşturulan yönerge için bir etikettir. **`__asm`** Bloklar bölümünde, ana kullanımı uzun koşullu atlamaları yapmak için kullanılır:
 
 ```cpp
    jne $+5 ; next instruction is 5 bytes long
@@ -83,4 +83,4 @@ farlabel:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>
+[Satır içi assembler](../../assembler/inline/inline-assembler.md)<br/>

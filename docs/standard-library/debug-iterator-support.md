@@ -11,22 +11,22 @@ helpviewer_keywords:
 - incompatible iterators
 - debug iterator support
 ms.assetid: f3f5bd15-4be8-4d64-a4d0-8bc0761c68b6
-ms.openlocfilehash: f43367fd58d8ab2a62fb2312efcd9fc9ec0cfc42
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: a5773add9a26d647df6678ffa4f2681b73cff44f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416198"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231591"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 
-Görsel C++ çalışma zamanı kitaplığı yanlış yineleyici kullanımını algılar ve çalışma zamanında bir iletişim kutusu görüntüler. Hata ayıklama Yineleyici desteğini etkinleştirmek için, programınızı derlemek için C++ standart kitaplığın ve C çalışma zamanı kitaplığının hata ayıklama sürümlerini kullanmanız gerekir. Daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md). Denetlenen yineleyiciler kullanma hakkında daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Visual C++ çalışma zamanı kitaplığı yanlış yineleyici kullanımını algılar ve çalışma zamanında bir iletişim kutusu görüntüler. Hata ayıklama Yineleyici desteğini etkinleştirmek için, programınızı derlemek için C++ standart kitaplığı ve C çalışma zamanı kitaplığı 'nın hata ayıklama sürümlerini kullanmanız gerekir. Daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md). Denetlenen yineleyiciler kullanma hakkında daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
-Standart C++ , üye işlevlerinin kapsayıcı için yineleyicilerin geçersiz hale gelmesine neden olabileceğini açıklar. İki örnek şunlardır:
+C++ standardı, üye işlevlerinin kapsayıcı için yineleyicilerin geçersiz hale gelmesine neden olabileceğini açıklar. İki örnek şunlardır:
 
 - Bir kapsayıcıdan öğe silme, öğe için yineleyiciler geçersiz hale gelmesine neden olur.
 
-- İtme veya ekleme kullanarak bir [Vector](../standard-library/vector.md) boyutunu artırmak `vector` yineleyiciler geçersiz hale gelir.
+- İtme veya ekleme kullanarak bir [vektör](../standard-library/vector.md) boyutunu artırmak, ' ın ' a yinelenmesine neden olur `vector` .
 
 ## <a name="invalid-iterators"></a>Geçersiz Yineleyiciler
 
@@ -126,11 +126,11 @@ int main()
 }
 ```
 
-Bu örnekte, bir functor yerine `[] (int& elem) { elem *= 2; }` lambda ifadesini kullandığına dikkat edin. Bu seçeneğin onaylama hatası üzerinde hiçbir ilgisi yoktur, ancak benzer bir komik ctor aynı hataya neden olur — Lambdalar, Compact Function nesne görevlerini gerçekleştirmek için çok faydalı bir yoldur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
+Bu örneğin, bir functor yerine lambda ifadesini kullandığına dikkat edin `[] (int& elem) { elem *= 2; }` . Bu seçeneğin onaylama hatası üzerinde hiçbir ilgisi yoktur, ancak benzer bir komik ctor aynı hataya neden olur — Lambdalar, Compact Function nesne görevlerini gerçekleştirmek için çok faydalı bir yoldur. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
 
 ## <a name="iterators-going-out-of-scope"></a>Kapsam dışına çıkan yineleyiciler
 
-Ayrıca, **for** döngüsü kapsamı sona erdiğinde, **for** döngüsünde belirtilen bir yineleyici değişkeninin kapsam dışına alınmasına neden olan hata ayıklama Yineleyici denetimleri.
+Hata ayıklama Yineleyici denetimleri **`for`** , döngü kapsamı sona erdiğinde bir döngüde belirtilen bir yineleyici değişkeninin kapsam dışına alınmasına neden olur **`for`** .
 
 ```cpp
 // iterator_debugging_4.cpp
@@ -175,4 +175,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)
