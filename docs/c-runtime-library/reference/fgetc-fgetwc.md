@@ -36,18 +36,18 @@ helpviewer_keywords:
 - reading characters from streams
 - fgetwc function
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
-ms.openlocfilehash: a9c064582e22e267b0c597ecd89df8a43ef0bbc4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5f8d4b1fcdc2d4d4de712ee79742025db74b6452
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912875"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189291"
 ---
 # <a name="fgetc-fgetwc"></a>fgetc, fgetwc
 
 Akıştan bir karakter okur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int fgetc(
@@ -65,7 +65,7 @@ wint_t fgetwc(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fgetc** , bir **int** olarak okunan karakteri döndürür veya bir hata ya da dosya sonunu göstermek için **EOF** döndürür. **fgetwc** , [wint_t](../../c-runtime-library/standard-types.md)olarak, bir hata veya dosya sonunu göstermek için Read veya character **değerini döndürür.** Her iki işlev için de bir hata ve dosya sonu koşulu arasında ayrım yapmak için **feof** veya **ferror** kullanın. Bir okuma hatası oluşursa, akışın hata göstergesi ayarlanır. *Stream* **null**ise, **fgetc** ve **fgetwc** [parametresi, parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EOF**döndürecek şekilde ayarlanır.
+**fgetc** , bir **`int`** hata ya da dosya sonunu göstermek için bir olarak okunan karakteri döndürür veya **EOF** döndürür. **fgetwc** , [wint_t](../../c-runtime-library/standard-types.md)olarak, bir hata veya dosya sonunu göstermek için Read veya character **değerini döndürür.** Her iki işlev için de bir hata ve dosya sonu koşulu arasında ayrım yapmak için **feof** veya **ferror** kullanın. Bir okuma hatası oluşursa, akışın hata göstergesi ayarlanır. *Stream* **null**ise, **fgetc** ve **fgetwc** [parametresi, parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EOF**döndürecek şekilde ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -91,8 +91,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fgetc**|\<stdio. h>|
-|**fgetwc**|\<stdio. h> veya \<wchar. h>|
+|**fgetc**|\<stdio.h>|
+|**fgetwc**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -133,7 +133,7 @@ int main( void )
 }
 ```
 
-## <a name="input-crt_fgetctxt"></a>Giriş: crt_fgetc. txt
+## <a name="input-crt_fgetctxt"></a>Giriş: crt_fgetc.txt
 
 ```Input
 Line one.
@@ -149,6 +149,6 @@ Line two.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

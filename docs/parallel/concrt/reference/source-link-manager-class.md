@@ -17,18 +17,18 @@ f1_keywords:
 helpviewer_keywords:
 - source_link_manager class
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
-ms.openlocfilehash: 35c7cc72520cdb0675abf9c15574a49e33741d0b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 98f99bb5aec85a640eaf83a07fae3a1b667f7d91
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142691"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228433"
 ---
 # <a name="source_link_manager-class"></a>source_link_manager Sınıfı
 
-`source_link_manager` nesnesi, `ISource` bloklara yönelik ileti bloğu ağ bağlantılarını yönetir.
+`source_link_manager`Nesne, ileti bloğu ağ bağlantılarını `ISource` bloklara yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class _LinkRegistry>
@@ -46,35 +46,35 @@ Ağ bağlantısı kayıt defteri.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`const_pointer`|Bir `source_link_manager` nesnesindeki `const` öğeye işaretçi sağlayan bir tür.|
-|`const_reference`|Const işlemlerini okumak ve gerçekleştirmek için bir `source_link_manager` nesnesinde depolanan `const` bir öğeye başvuru sağlayan bir tür.|
-|`iterator`|`source_link_manager` nesnesindeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir yineleyici sağlayan bir tür.|
-|`type`|`source_link_manager` nesnesi tarafından yönetilmekte olan bağlantı kayıt defterinin türü.|
+|`const_pointer`|Bir nesne içindeki bir öğeye işaretçi sağlayan bir tür **`const`** `source_link_manager` .|
+|`const_reference`|**`const`** `source_link_manager` Const işlemlerini okumak ve gerçekleştirmek için bir nesnesinde depolanan öğeye başvuru sağlayan bir tür.|
+|`iterator`|Nesnedeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir yineleyici sağlayan bir tür `source_link_manager` .|
+|`type`|Nesne tarafından yönetilmekte olan bağlantı kayıt defterinin türü `source_link_manager` .|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[source_link_manager](#ctor)|`source_link_manager` nesnesi oluşturur.|
-|[~ source_link_manager yok edici](#dtor)|`source_link_manager` nesnesini yok eder.|
+|[source_link_manager](#ctor)|Bir `source_link_manager` nesnesi oluşturur.|
+|[~ source_link_manager yok edici](#dtor)|Nesneyi yok eder `source_link_manager` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[add](#add)|`source_link_manager` nesnesine bir kaynak bağlantısı ekler.|
-|[başladı](#begin)|`source_link_manager` nesnesindeki ilk öğeye bir yineleyici döndürür.|
-|[vardır](#contains)|Belirtilen bir blok için bu `source_link_manager` nesnesi içindeki `network_link_registry` arar.|
-|[count](#count)|`source_link_manager` nesnesindeki bağlantılı blokların sayısını sayar.|
-|[başvurunun](#reference)|`source_link_manager` nesnesinde bir başvuru alır.|
-|[register_target_block](#register_target_block)|Bu `source_link_manager` nesnesini tutan hedef bloğu kaydeder.|
-|[Yayın](#release)|`source_link_manager` nesnesindeki başvuruyu yayınlar.|
-|[remove](#remove)|`source_link_manager` nesnesinden bir bağlantıyı kaldırır.|
-|[set_bound](#set_bound)|Bu `source_link_manager` nesnesine eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar.|
+|[add](#add)|Nesnesine bir kaynak bağlantısı ekler `source_link_manager` .|
+|[başladı](#begin)|Nesne içindeki ilk öğeye bir yineleyici döndürür `source_link_manager` .|
+|[vardır](#contains)|`network_link_registry` `source_link_manager` Belirtilen bir blok için bu nesne içinde arar.|
+|[biriktirme](#count)|Nesnedeki bağlantılı blokların sayısını sayar `source_link_manager` .|
+|[başvurunun](#reference)|Nesnesinde bir başvuru alır `source_link_manager` .|
+|[register_target_block](#register_target_block)|Bu nesneyi tutan hedef bloğu kaydeder `source_link_manager` .|
+|[Yayın](#release)|Nesnesindeki başvuruyu yayınlar `source_link_manager` .|
+|[temizlenmesine](#remove)|Nesneden bir bağlantıyı kaldırır `source_link_manager` .|
+|[set_bound](#set_bound)|Bu nesneye eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar `source_link_manager` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şu anda, kaynak bloklarında başvuru sayılır. Bu, bağlantılara eşzamanlı erişime izin veren `network_link_registry` nesnesi üzerinde bir sarmalayıcıdır ve geri çağırmalar aracılığıyla bağlantılara başvuru yapabilme olanağı sağlar. İleti blokları (`target_block`s veya `propagator_block`s), kaynak bağlantıları için bu sınıfı kullanmalıdır.
+Şu anda, kaynak bloklarında başvuru sayılır. Bu, `network_link_registry` bağlantılara eşzamanlı erişim sağlayan bir sarmalayıcıdır ve geri çağırmalar aracılığıyla bağlantılara başvuruda bulunmak için bir nesne sağlar. İleti blokları `target_block` `propagator_block` , kaynak bağlantıları için bu sınıfı kullanmalıdır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -86,9 +86,9 @@ Ağ bağlantısı kayıt defteri.
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="add"></a>ekleyemiyorum
+## <a name="add"></a><a name="add"></a>ekleyemiyorum
 
-`source_link_manager` nesnesine bir kaynak bağlantısı ekler.
+Nesnesine bir kaynak bağlantısı ekler `source_link_manager` .
 
 ```cpp
 void add(_EType _Link);
@@ -99,9 +99,9 @@ void add(_EType _Link);
 *_Link*<br/>
 Eklenecek bloğa yönelik bir işaretçi.
 
-## <a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a>başladı
 
-`source_link_manager` nesnesindeki ilk öğeye bir yineleyici döndürür.
+Nesne içindeki ilk öğeye bir yineleyici döndürür `source_link_manager` .
 
 ```cpp
 iterator begin();
@@ -109,15 +109,15 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`source_link_manager` nesnesindeki ilk öğeyi adresleyen bir yineleyici.
+Nesnedeki ilk öğeyi adresleyen bir yineleyici `source_link_manager` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyicinin bitiş durumu bir `NULL` bağlantısıyla belirtilir.
+Yineleyicinin bitiş durumu bir bağlantı ile belirtilir `NULL` .
 
-## <a name="contains"></a>vardır
+## <a name="contains"></a><a name="contains"></a>vardır
 
-Belirtilen bir blok için bu `source_link_manager` nesnesi içindeki `network_link_registry` arar.
+`network_link_registry` `source_link_manager` Belirtilen bir blok için bu nesne içinde arar.
 
 ```cpp
 bool contains(_EType _Link);
@@ -126,15 +126,15 @@ bool contains(_EType _Link);
 ### <a name="parameters"></a>Parametreler
 
 *_Link*<br/>
-`source_link_manager` nesnesinde aranacak bir blok işaretçisi.
+Nesnede aranacak bir blok işaretçisi `source_link_manager` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen blok bulunursa **true** , aksi durumda **false** .
+**`true`** Belirtilen blok bulunursa, **`false`** tersi durumda.
 
-## <a name="count"></a>biriktirme
+## <a name="count"></a><a name="count"></a>biriktirme
 
-`source_link_manager` nesnesindeki bağlantılı blokların sayısını sayar.
+Nesnedeki bağlantılı blokların sayısını sayar `source_link_manager` .
 
 ```cpp
 size_t count();
@@ -142,19 +142,19 @@ size_t count();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`source_link_manager` nesnesindeki bağlantılı blokların sayısı.
+Nesnedeki bağlantılı blokların sayısı `source_link_manager` .
 
-## <a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a>başvurunun
 
-`source_link_manager` nesnesinde bir başvuru alır.
+Nesnesinde bir başvuru alır `source_link_manager` .
 
 ```cpp
 void reference();
 ```
 
-## <a name="register_target_block"></a>register_target_block
+## <a name="register_target_block"></a><a name="register_target_block"></a>register_target_block
 
-Bu `source_link_manager` nesnesini tutan hedef bloğu kaydeder.
+Bu nesneyi tutan hedef bloğu kaydeder `source_link_manager` .
 
 ```cpp
 void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarget);
@@ -163,19 +163,19 @@ void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarg
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu `source_link_manager` nesnesini tutan hedef blok.
+Bu nesneyi tutan hedef blok `source_link_manager` .
 
-## <a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a>Yayın
 
-`source_link_manager` nesnesindeki başvuruyu yayınlar.
+Nesnesindeki başvuruyu yayınlar `source_link_manager` .
 
 ```cpp
 void release();
 ```
 
-## <a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a>temizlenmesine
 
-`source_link_manager` nesnesinden bir bağlantıyı kaldırır.
+Nesneden bir bağlantıyı kaldırır `source_link_manager` .
 
 ```cpp
 bool remove(_EType _Link);
@@ -188,11 +188,11 @@ Bulunursa, kaldırılacak bloğa yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-bağlantı bulunursa ve kaldırılırsa **doğru** , aksi takdirde **yanlış** olur.
+**`true`** bağlantı bulunursa ve kaldırılırsa, **`false`** tersi durumda.
 
-## <a name="set_bound"></a>set_bound
+## <a name="set_bound"></a><a name="set_bound"></a>set_bound
 
-Bu `source_link_manager` nesnesine eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar.
+Bu nesneye eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar `source_link_manager` .
 
 ```cpp
 void set_bound(size_t _MaxLinks);
@@ -203,17 +203,17 @@ void set_bound(size_t _MaxLinks);
 *_MaxLinks*<br/>
 En fazla bağlantı sayısı.
 
-## <a name="ctor"></a>source_link_manager
+## <a name="source_link_manager"></a><a name="ctor"></a>source_link_manager
 
-`source_link_manager` nesnesi oluşturur.
+Bir `source_link_manager` nesnesi oluşturur.
 
 ```cpp
 source_link_manager();
 ```
 
-## <a name="dtor"></a>~ source_link_manager
+## <a name="source_link_manager"></a><a name="dtor"></a>~ source_link_manager
 
-`source_link_manager` nesnesini yok eder.
+Nesneyi yok eder `source_link_manager` .
 
 ```cpp
 ~source_link_manager();
@@ -221,6 +221,6 @@ source_link_manager();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[single_link_registry Sınıfı](single-link-registry-class.md)<br/>
-[multi_link_registry Sınıfı](multi-link-registry-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[single_link_registry sınıfı](single-link-registry-class.md)<br/>
+[multi_link_registry sınıfı](multi-link-registry-class.md)

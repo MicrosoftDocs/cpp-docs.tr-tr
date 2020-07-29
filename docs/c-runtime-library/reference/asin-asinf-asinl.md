@@ -34,18 +34,18 @@ helpviewer_keywords:
 - trigonometric functions
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-ms.openlocfilehash: cfee30270b8ed0daa5d600fec65659fbf07162fd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 98f7babfbfcbfcdbf36b79b70aac33f002e3bc90
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909269"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189447"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
 Arksinüsü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double asin( double x );
@@ -60,7 +60,7 @@ long double asin( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Arksinüsü hesaplanacak olan değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -69,7 +69,7 @@ Arksinüsü hesaplanacak olan değer.
 
 Varsayılan olarak, *x* -1 ' den küçük veya 1 ' den büyükse, **asin** sonsuz döndürür.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± ∞|**Geçersiz**|**_DOMAIN**|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
@@ -77,7 +77,7 @@ Varsayılan olarak, *x* -1 ' den küçük veya 1 ' den büyükse, **asin** sonsu
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri ile **asin** aşırı yüklerini çağırabilirsiniz. C programında, **asin** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini içeren **asin** aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **asin** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -85,7 +85,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**asin**, **asinf**, **asinl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**asin**, **asinf**, **asinl**|\<math.h>|\<cmath> veya \<math.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -93,7 +93,7 @@ Daha fazla bilgi için bkz. [acos, acosf, acosl](acos-acosf-acosl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acos, acosf, acosl](acos-acosf-acosl.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
 [cos, cosf, cosl](cos-cosf-cosl.md)<br/>

@@ -1,20 +1,20 @@
 ---
-title: '&lt;eşleme&gt; işlevleri'
+title: '&lt;eşleme &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - map/std::swap (map)
 - map/std::swap (multimap)
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
-ms.openlocfilehash: e7876b37bfc006eaecf2f1e36273c5ae8689dad4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 8cc4a82e08963902f9ba5c21ace759c47bdd0014
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419975"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228225"
 ---
-# <a name="ltmapgt-functions"></a>&lt;eşleme&gt; işlevleri
+# <a name="ltmapgt-functions"></a>&lt;eşleme &gt; işlevleri
 
-## <a name="swap_multimap"></a>swap (eşleme)
+## <a name="swap-map"></a><a name="swap_multimap"></a>swap (eşleme)
 
 İki eşlemin öğelerini birbiriyle değiştirir.
 
@@ -27,21 +27,21 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
+*Right*\
 Değiştirilecek öğeleri sağlayan harita veya öğeleri *sol*eşlemle değiştirilecek olan harita.
 
-*sol*\
+*tarafta*\
 Öğeleri haritanın *sağına*göre değiş tokuş edilecek harita.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, `left`üye işlevini yürütmek için kapsayıcı sınıfı eşlemesinde özelleştirilmiş bir algoritmadır. [takas](../standard-library/map-class.md#swap)(`right`). Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Şablon işlevinin genel sürümü, **şablon** \< **sınıf t**> **void takas**( **t &** , **t &** ), atama tarafından çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
+Şablon işlevi, üye işlevini yürütmek için kapsayıcı sınıfı eşlemesinde özelleştirilmiş bir algoritmadır `left` .[ Swap](../standard-library/map-class.md#swap)( `right` ). Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. **`template`** \< **class T**> Algoritma sınıfında, **void Swap**( **t&**, **t&**) şablon işlevinin genel sürümü atama ile çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-`swap`şablon sürümünü kullanan bir örnek için bkz. Member Function [map:: Swap](../standard-library/map-class.md#swap) için kod örneği.
+Şablon sürümünü kullanan bir örnek için bkz. Member Function [map:: Swap](../standard-library/map-class.md#swap) için kod örneği `swap` .
 
-## <a name="swap"></a>takas (multimap)
+## <a name="swap-multimap"></a><a name="swap"></a>takas (multimap)
 
 İki multimaps öğesinin öğelerini değiş tokuş eder.
 
@@ -54,16 +54,16 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
+*Right*\
 Takas edilecek öğeleri sağlayan multimap veya öğeleri multimap 'in *sol*tarafında değiş tokuş edilecek multimap.
 
-*sol*\
+*tarafta*\
 Öğeleri multimap ile birlikte değiş tokuş edilecek multimap *.*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, `left`üye işlevini yürütmek üzere multimap kapsayıcı sınıfı üzerinde yürütülecek kapsayıcı sınıfı eşlemesinde özelleştirilmiş bir algoritmadır. [takas](../standard-library/multimap-class.md#swap) (`right`). Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Şablon işlevinin genel sürümü, **şablon** \< **sınıf t**> **void takas**( **t &** , **t &** ), atama tarafından çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
+Şablon işlevi, üye işlevini yürütmek üzere multimap kapsayıcı sınıfında yürütülecek kapsayıcı sınıfı eşlemesinde özelleştirilmiş bir algoritmadır `left` .[ Swap](../standard-library/multimap-class.md#swap) ( `right` ). Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. **`template`** \< **class T**> Algoritma sınıfında, **void Swap**( **t&**, **t&**) şablon işlevinin genel sürümü atama ile çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-`swap`şablon sürümünü kullanan bir örnek için, [multimap:: Swap](../standard-library/multimap-class.md#swap) üye işlevi için kod örneğine bakın.
+Şablon sürümünü kullanan bir örnek için, [multimap:: Swap](../standard-library/multimap-class.md#swap) üye işlevine yönelik kod örneğine bakın `swap` .

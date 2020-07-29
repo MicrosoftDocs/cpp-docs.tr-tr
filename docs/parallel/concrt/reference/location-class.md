@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - location class
 ms.assetid: c3289f51-5bf1-4dff-a18d-d0dab8e5d9c7
-ms.openlocfilehash: 7f45ff6d3092bd7c27e81adddca72c9411f752d1
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 848be3131e23ff53f2dec16364b132ee7c218195
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139819"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87182700"
 ---
 # <a name="location-class"></a>location Sınıfı
 
@@ -33,23 +33,23 @@ class location;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[konum](#ctor)|Fazla Yüklendi. `location` nesnesi oluşturur.|
-|[~ Location yıkıcısı](#dtor)|`location` nesnesini yok eder.|
+|[konumuna](#ctor)|Fazla Yüklendi. Bir `location` nesnesi oluşturur.|
+|[~ Location yıkıcısı](#dtor)|Bir nesneyi yok eder `location` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[geçerli](#current)|Çağıran iş parçacığının yürütüldüğü en belirli yeri temsil eden bir `location` nesnesi döndürür.|
-|[from_numa_node](#from_numa_node)|Belirli bir NUMA düğümünü temsil eden `location` nesnesini döndürür.|
+|[geçerli](#current)|`location`Çağıran iş parçacığının yürütüldüğü en belirli yeri temsil eden bir nesne döndürür.|
+|[from_numa_node](#from_numa_node)|`location`Belirli BIR NUMA düğümünü temsil eden bir nesne döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator!=](#operator_neq)|İki `location` nesnesinin farklı bir konumu temsil ettiğini belirler.|
-|[işleç =](#operator_eq)|Farklı bir `location` nesnesinin içeriğini buna atar.|
-|[işleç = =](#operator_eq_eq)|İki `location` nesnesinin aynı konumu temsil ettiğini belirtir.|
+|[işleç! =](#operator_neq)|İki `location` nesnenin farklı bir konumu temsil ettiğini belirler.|
+|[işleç =](#operator_eq)|Başka bir nesnenin içeriğini buna atar `location` .|
+|[işleç = =](#operator_eq_eq)|İki `location` nesnenin aynı konumu temsil ettiğini belirtir.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -61,17 +61,17 @@ class location;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="dtor"></a>~ konum
+## <a name="location"></a><a name="dtor"></a>~ konum
 
-`location` nesnesini yok eder.
+Bir nesneyi yok eder `location` .
 
 ```cpp
 ~location();
 ```
 
-## <a name="current"></a>geçerli
+## <a name="current"></a><a name="current"></a>geçerli
 
-Çağıran iş parçacığının yürütüldüğü en belirli yeri temsil eden bir `location` nesnesi döndürür.
+`location`Çağıran iş parçacığının yürütüldüğü en belirli yeri temsil eden bir nesne döndürür.
 
 ```cpp
 static location __cdecl current();
@@ -81,9 +81,9 @@ static location __cdecl current();
 
 Çağıran iş parçacığının yürütüldüğü en belirli yeri temsil eden bir konum.
 
-## <a name="from_numa_node"></a>from_numa_node
+## <a name="from_numa_node"></a><a name="from_numa_node"></a>from_numa_node
 
-Belirli bir NUMA düğümünü temsil eden `location` nesnesini döndürür.
+`location`Belirli BIR NUMA düğümünü temsil eden bir nesne döndürür.
 
 ```cpp
 static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
@@ -96,11 +96,11 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`_NumaNodeNumber` parametresi tarafından belirtilen NUMA düğümünü temsil eden bir konum.
+Parametresi tarafından belirtilen NUMA düğümünü temsil eden bir konum `_NumaNodeNumber` .
 
-## <a name="ctor"></a>konumuna
+## <a name="location"></a><a name="ctor"></a>konumuna
 
-`location` nesnesi oluşturur.
+Bir `location` nesnesi oluşturur.
 
 ```cpp
 location();
@@ -132,9 +132,9 @@ Seçim Bağlama işaretçisi.
 
 Varsayılan olarak oluşturulmuş bir konum sistemi bir bütün olarak temsil eder.
 
-## <a name="operator_neq"></a>işleç! =
+## <a name="operator"></a><a name="operator_neq"></a>işleç! =
 
-İki `location` nesnesinin farklı bir konumu temsil ettiğini belirler.
+İki `location` nesnenin farklı bir konumu temsil ettiğini belirler.
 
 ```cpp
 bool operator!= (const location& _Rhs) const;
@@ -143,15 +143,15 @@ bool operator!= (const location& _Rhs) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-İşlenen `location`.
+İşleneni `location` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-iki konum farklıysa **true** , aksi takdirde **false** .
+**`true`** iki konum farklıysa, **`false`** tersi durumda.
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a>işleç =
 
-Farklı bir `location` nesnesinin içeriğini buna atar.
+Başka bir nesnenin içeriğini buna atar `location` .
 
 ```cpp
 location& operator= (const location& _Rhs);
@@ -160,13 +160,13 @@ location& operator= (const location& _Rhs);
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Kaynak `location` nesnesi.
+Kaynak `location` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="operator_eq_eq"></a>işleç = =
 
-İki `location` nesnesinin aynı konumu temsil ettiğini belirtir.
+İki `location` nesnenin aynı konumu temsil ettiğini belirtir.
 
 ```cpp
 bool operator== (const location& _Rhs) const;
@@ -175,12 +175,12 @@ bool operator== (const location& _Rhs) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-İşlenen `location`.
+İşleneni `location` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-iki konum özdeş ise **true** , aksi takdirde **false** .
+**`true`** iki konum özdeş ise ve **`false`** Aksi durumda.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

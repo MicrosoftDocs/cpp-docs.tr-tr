@@ -2,16 +2,16 @@
 title: 2. Yönergeler
 ms.date: 01/18/2019
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
-ms.openlocfilehash: 125d2d83b277e62d007e3a208e426ea717d52790
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: c3aadcf34e013c66dec81ca4b09dce4144294ac3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417091"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228407"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 
-Yönergeler, C ve C++ standartları içinde tanımlanan `#pragma` yönergeleri temel alır.  OpenMP C ve C++ API 'yi destekleyen derleyiciler, tüm OpenMP derleyicisi yönergelerinin yorumunu etkinleştiren ve yorumlamayı sağlayan bir komut satırı seçeneği içerir.
+Yönergeler `#pragma` , C ve C++ standartları içinde tanımlanan yönergeleri temel alır.  OpenMP C ve C++ API 'sini destekleyen derleyiciler, tüm OpenMP derleyicisi yönergelerinin yorumunu etkinleştiren ve yorumlamayı sağlayan bir komut satırı seçeneği içerir.
 
 ## <a name="21-directive-format"></a>2,1 yönerge biçimi
 
@@ -21,7 +21,7 @@ Bir OpenMP yönergesinin sözdizimi, [Ek C](c-openmp-c-and-cpp-grammar.md)'de di
 #pragma omp directive-name  [clause[ [,] clause]...] new-line
 ```
 
-Her yönerge, aynı ada sahip diğer (OpenMP veya satıcı uzantıları ile OpenMP) pragma yönergeleriyle çakışma olasılığını azaltmak için `#pragma omp`ile başlar. Yönergesinin geri kalanı, derleyici yönergelerinin C ve C++ standartlarının kurallarını izler. Özellikle, `#`önce ve sonra beyaz boşluk kullanılabilir ve bazen bir yönergedeki sözcükleri ayırmak için beyaz boşluk kullanılması gerekir. `#pragma omp` izleyen ön işleme belirteçleri, makro değiştirme 'ye tabidir.
+Her yönerge `#pragma omp` , aynı ada sahip diğer (OpenMP veya satıcı uzantıları olarak OpenMP) pragma yönergeleriyle çakışma olasılığını azaltmak için ile başlar. Yönergesinin geri kalanı, derleyici yönergeleri için C ve C++ standartları kurallarını izler. Özellikle, beyaz boşluk, ve sonrasında kullanılabilir `#` ve bazen bir yönergedeki sözcükleri ayırmak için boşluk kullanılması gerekir. Sonrasında ön işleme belirteçleri `#pragma omp` makro değiştirme 'ye tabidir.
 
 Yönergeler büyük/küçük harfe duyarlıdır. Yan tümcelerin yönergeler bölümünde görünme sırası önemli değildir. Yönergelerden yan tümceler gerektiğinde tekrarlanabilir ve her bir yan tümcenin açıklamasında listelenen kısıtlamalara tabidir. Bir yan tümcesinde *değişken listesi* görünürse, yalnızca değişkenleri belirtmelidir. Her yönerge için yalnızca bir *Yönerge adı* belirtilebilir.  Örneğin, aşağıdaki yönergeye izin verilmez:
 
@@ -34,7 +34,7 @@ Bir OpenMP yönergesi, yapılandırılmış bir blok olması gereken en fazla bi
 
 ## <a name="22-conditional-compilation"></a>2,2 Koşullu derleme
 
-`_OPENMP` makro adı,, onaylanan belirtiminin yılı ve ayı olacak şekilde, OpenMP uyumlu uygulamalar tarafından ondalık sabit *yyyymm*olarak tanımlanır. Bu makro `#define` veya `#undef` ön işleme yönergesinin konusu olmamalıdır.
+`_OPENMP`Makro adı, OpenMP uyumlu uygulamalar tarafından, onaylanan belirtiminin yılı ve ayı olacak şekilde, Decimal sabit *yyyymm*olarak tanımlanır. Bu makro bir `#define` veya `#undef` ön işleme yönergesinin konusu olmamalıdır.
 
 ```cpp
 #ifdef _OPENMP
@@ -54,39 +54,39 @@ Aşağıdaki yönerge, paralel olarak birçok iş parçacığı tarafından yür
 
 *Yan tümcesi* aşağıdakilerden biridir:
 
-- `if(` *skaler ifade* `)`
-- `private(` *değişken listesi* `)`
-- `firstprivate(` *değişken listesi* `)`
+- `if(`*skaler ifade*`)`
+- `private(`*değişken listesi*`)`
+- `firstprivate(`*değişken listesi*`)`
 - `default(shared | none)`
-- `shared(` *değişken listesi* `)`
-- `copyin(` *değişken listesi* `)`
-- `reduction(` *işleci* *değişken listesi* `:``)`
-- `num_threads(` *tamsayı ifadesi* `)`
+- `shared(`*değişken listesi*`)`
+- `copyin(`*değişken listesi*`)`
+- `reduction(`*işleci* `:` *değişken listesi*  `)`
+- `num_threads(`*tamsayı ifadesi*`)`
 
 Bir iş parçacığı bir paralel yapıyı aldığında, aşağıdaki durumlardan biri geçerliyse iş parçacığı grubu oluşturulur:
 
-- `if` yan tümce yok.
-- `if` ifadesi sıfır dışında bir değer olarak değerlendirilir.
+- Hiçbir `if` yan tümce yok.
+- `if`İfade sıfır dışında bir değer olarak değerlendirilir.
 
-Bu iş parçacığı, iş parçacığı sayısı 0 ve takımda ana iş parçacığı dahil tüm iş parçacıkları olan ekibin ana iş parçacığı haline gelir. `if` ifadesinin değeri sıfırsa bölge serileştirilir.
+Bu iş parçacığı, iş parçacığı sayısı 0 ve takımda ana iş parçacığı dahil tüm iş parçacıkları olan ekibin ana iş parçacığı haline gelir. `if`İfadenin değeri sıfırsa bölge serileştirilir.
 
 İstenen iş parçacığı sayısını öğrenmek için aşağıdaki kurallar sırayla kabul edilir. Koşulu karşılandığında ilk kural uygulanır:
 
-1. `num_threads` yan tümcesi varsa, tamsayı ifadesinin değeri istenen iş parçacığı sayısıdır.
+1. `num_threads`Yan tümce varsa, tamsayı ifadesinin değeri istenen iş parçacığı sayısıdır.
 
-1. `omp_set_num_threads` Kitaplığı işlevi çağrılırsa, en son yürütülen çağrıda bağımsız değişkenin değeri, istenen iş parçacığı sayısıdır.
+1. `omp_set_num_threads`Kitaplık işlevi çağrılırsa, en son yürütülen çağrının bağımsız değişkeninin değeri, istenen iş parçacığı sayısıdır.
 
 1. Ortam değişkeni `OMP_NUM_THREADS` tanımlanmışsa, bu ortam değişkeninin değeri istenen iş parçacığı sayısıdır.
 
 1. Yukarıdaki yöntemlerin hiçbiri kullanılmazsa, istenen iş parçacığı sayısı uygulama tanımlı olur.
 
-`num_threads` yan tümcesi mevcutsa, `omp_set_num_threads` Kitaplığı işlevi veya `OMP_NUM_THREADS` ortam değişkeni tarafından istenen iş parçacığı sayısının yalnızca uygulandığı paralel bölge için yerini alır. Daha sonra paralel bölgeler bundan etkilenmez.
+`num_threads`Yan tümcesi mevcutsa, kitaplık işlevi veya ortam değişkeni tarafından istenen iş parçacığı sayısının yerini `omp_set_num_threads` `OMP_NUM_THREADS` yalnızca uygulandığı paralel bölge için yerine geçer. Daha sonra paralel bölgeler bundan etkilenmez.
 
 Paralel bölgeyi çalıştıran iş parçacıklarının sayısı Ayrıca, iş parçacığı sayısının dinamik ayarlamasının etkin olup olmamasına bağlıdır. Dinamik ayarlama devre dışıysa, istenen iş parçacığı sayısı paralel bölgeyi yürütür. Dinamik ayarlama etkinse, istenen iş parçacığı sayısı, paralel bölgeyi yürütebilecek iş parçacığı sayısı üst sınırıdır.
 
-İş parçacığı sayısı için dinamik ayarlama devre dışı bırakıldığı ve paralel bölge için istenen iş parçacığı sayısı, çalışma zamanı sisteminin sağlayabileceği sayıdan daha fazla olduğu için bir paralel bölge ile karşılaşılırsa, programın davranışı uygulama tanımlı. Uygulama, örneğin programın yürütülmesini kesintiye uğratan veya paralel bölgeyi seri hale getirebilecek olabilir.
+İş parçacığı sayısı için dinamik ayarlama devre dışı bırakıldığı ve paralel bölge için istenen iş parçacığı sayısı, çalışma zamanı sisteminin sağlayabileceği sayıdan daha fazla olduğu için bir paralel bölge ile karşılaşılırsa, programın davranışı uygulama tanımlı olur. Uygulama, örneğin programın yürütülmesini kesintiye uğratan veya paralel bölgeyi seri hale getirebilecek olabilir.
 
-`omp_set_dynamic` Kitaplığı işlevi ve `OMP_DYNAMIC` ortam değişkeni, iş parçacığı sayısını dinamik olarak ayarlamayı etkinleştirmek ve devre dışı bırakmak için kullanılabilir.
+`omp_set_dynamic`Kitaplık işlevi ve `OMP_DYNAMIC` ortam değişkeni, iş parçacığı sayısının dinamik ayarlamasını etkinleştirmek ve devre dışı bırakmak için kullanılabilir.
 
 Belirli bir zamanda iş parçacıklarını barındıran fiziksel işlemcilerin sayısı uygulama tanımlı ' dır. Oluşturulduktan sonra ekipteki iş parçacığı sayısı, bu paralel bölgenin süresi boyunca sabit kalır. Kullanıcı tarafından açık olarak veya bir paralel bölgeden diğerine otomatik olarak değiştirilebilir.
 
@@ -94,23 +94,23 @@ Paralel bölgenin dinamik kapsamı içinde yer alan deyimler her bir iş parçac
 
 Paralel bölgenin sonunda örtük bir engel vardır. Yalnızca ekibin ana iş parçacığı, bir paralel bölgenin sonunda yürütmeye devam eder.
 
-Bir takımda bir paralel bölgeyi yürüten bir iş parçacığı başka bir paralel yapı ile karşılaştığında, yeni bir takım oluşturur ve bu yeni ekibin ana kopyası olur. İç içe paralel bölgeler varsayılan olarak serileştirilir. Sonuç olarak, varsayılan olarak, iç içe bir paralel bölge, bir iş parçacığından oluşan bir takım tarafından yürütülür. Varsayılan davranış, çalışma zamanı kitaplığı işlevi `omp_set_nested` ya da ortam değişkeni `OMP_NESTED`kullanılarak değiştirilebilir. Ancak, iç içe bir paralel bölgeyi çalıştıran bir ekipteki iş parçacığı sayısı uygulama tanımlı ' dır.
+Bir takımda bir paralel bölgeyi yürüten bir iş parçacığı başka bir paralel yapı ile karşılaştığında, yeni bir takım oluşturur ve bu yeni ekibin ana kopyası olur. İç içe paralel bölgeler varsayılan olarak serileştirilir. Sonuç olarak, varsayılan olarak, iç içe bir paralel bölge, bir iş parçacığından oluşan bir takım tarafından yürütülür. Varsayılan davranış, çalışma zamanı kitaplığı işlevi ya da ortam değişkeni kullanılarak değiştirilebilir `omp_set_nested` `OMP_NESTED` . Ancak, iç içe bir paralel bölgeyi çalıştıran bir ekipteki iş parçacığı sayısı uygulama tanımlı ' dır.
 
-`parallel` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`parallel`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- En çok, yönergede bir `if` yan tümcesi görünebilir.
+- En çok, `if` yönergede bir yan tümce bulunabilir.
 
-- İf ifadesi veya `num_threads` ifadesinin içinde herhangi bir yan etkilerden oluşan bir durum belirlenmediğini belirtir.
+- İf ifadesi veya ifadesinin içinde herhangi bir yan etkeniz gerçekleşmeksizin, bu belirtilmemiş olur `num_threads` .
 
-- Paralel bir bölgenin içinde yürütülen bir `throw`, yürütmenin aynı yapısal bloğun dinamik kapsamı içinde sürdürülmesine neden olmalıdır ve özel durumu oluşturan aynı iş parçacığı tarafından yakalanmalıdır.
+- `throw`Paralel bir bölgenin içinde yürütülen bir yürütme, yürütmenin aynı yapısal bloğun dinamik kapsamı içinde sürdürülmesine neden olmalıdır ve özel durumu oluşturan aynı iş parçacığı tarafından yakalanmalıdır.
 
-- Yönergede yalnızca tek bir `num_threads` yan tümcesi görünebilir. `num_threads` ifadesi paralel bölgenin bağlamı dışında değerlendirilir ve pozitif bir tamsayı değeri olarak değerlendirilmelidir.
+- Yönergede yalnızca tek bir `num_threads` yan tümce görünebilir. `num_threads`İfade, paralel bölgenin bağlamı dışında değerlendirilir ve pozitif bir tamsayı değeri olarak değerlendirilmelidir.
 
-- `if` ve `num_threads` yan tümcelerinin değerlendirilme sırası belirtilmemiş.
+- `if`Ve yan tümcelerinin değerlendirilme sırası `num_threads` belirtilmemiş.
 
 ### <a name="cross-references"></a>Çapraz başvurular
 
-- `private`, `firstprivate`, `default`, `shared`, `copyin`ve `reduction` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
+- `private`, `firstprivate` ,,, `default` `shared` `copyin` , ve `reduction` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
 - [Omp_num_threads](4-environment-variables.md#42-omp_num_threads) ortam değişkeni
 - [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) Kitaplığı işlevi
 - [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic) ortam değişkeni
@@ -122,7 +122,7 @@ Bir takımda bir paralel bölgeyi yürüten bir iş parçacığı başka bir par
 
 Bir iş paylaşımı yapısı, ilişkili deyimin yürütmesini, bu takımın karşılaştığı ekip üyeleri arasında dağıtır. İş paylaşım yönergeleri yeni iş parçacıkları başlatamaz ve bir iş paylaşımı yapısına giriş üzerinde örtük bir engel yoktur.
 
-Çalışma paylaşımı yapıları ve `barrier` yönergelerinin sırası, bir takımda bulunan her iş parçacığı için aynı olmalıdır.
+Çalışma paylaşımı yapıları ve yönergelerden oluşan sıra, `barrier` bir takımda bulunan her iş parçacığında aynı olmalıdır.
 
 OpenMP aşağıdaki iş paylaşımı yapılarını tanımlar ve bu yapılar aşağıdaki bölümlerde açıklanmıştır:
 
@@ -132,7 +132,7 @@ OpenMP aşağıdaki iş paylaşımı yapılarını tanımlar ve bu yapılar aşa
 
 ### <a name="241-for-construct"></a>2.4.1 for yapısı
 
-`for` yönergesi, ilişkili döngünün yinelemelerinin paralel olarak yürütüleceğini belirten yinelemeli bir iş paylaşımı yapısı tanımlar. `for` döngüsünün yinelemelerini, bağlandığı paralel yapıyı yürüten ekipte zaten mevcut olan iş parçacıkları arasında dağıtılır. `for` yapısının sözdizimi aşağıdaki gibidir:
+`for`Yönergesi, ilişkili döngünün yinelemelerinin paralel olarak yürütüleceğini belirten yinelemeli bir iş paylaşımı yapısı tanımlar. Döngünün yinelemelerini, `for` bağlandığı paralel yapıyı yürüten ekipte zaten mevcut olan iş parçacıkları arasında dağıtılır. `for`Yapının sözdizimi şöyledir:
 
 ```cpp
 #pragma omp for [clause[[,] clause] ... ] new-line for-loop
@@ -140,39 +140,39 @@ OpenMP aşağıdaki iş paylaşımı yapılarını tanımlar ve bu yapılar aşa
 
 Yan tümcesi aşağıdakilerden biridir:
 
-- `private(` *değişken listesi* `)`
-- `firstprivate(` *değişken listesi* `)`
-- `lastprivate(` *değişken listesi* `)`
-- `reduction(` *işleci* *değişken listesi* `:` `)`
+- `private(`*değişken listesi*`)`
+- `firstprivate(`*değişken listesi*`)`
+- `lastprivate(`*değişken listesi*`)`
+- `reduction(`*işleci* `:` *değişken listesi*`)`
 - `ordered`
-- `schedule(` *türü* [`,` *chunk_size*] `)`
+- `schedule(`*tür* [ `,` *chunk_size*]`)`
 - `nowait`
 
-`for` yönergesi karşılık gelen `for` döngüsünün yapısına kısıtlamalar koyar. Özellikle, karşılık gelen `for` döngüsünün kurallı şekli olmalıdır:
+`for`Yönergesi karşılık gelen döngünün yapısına kısıtlamalar koyar `for` . Özellikle, karşılık gelen `for` döngünün kurallı şekli olmalıdır:
 
-`for (` *init-expr* `;` *var mantıksal-op b* `;` *incr-Expr* `)`
+`for (`*init-expr* `;` *var mantıksal-op b* `;` *incr-Expr*`)`
 
 *init-expr*<br/>
 Aşağıdakilerden biri:
 
-- *var* = *lb*
-- *tamsayı türü var* = *lb*
+- *var*  =  *lb*
+- *tamsayı türü var*  =  *lb*
 
 *incr-Expr*<br/>
 Aşağıdakilerden biri:
 
-- `++` *var*
-- *var* `++`
-- `--` *var*
-- *var* `--`
-- *var* `+=` *incr*
-- *var* `-=` *incr*
-- *var* `=` *var* `+` *incr*
-- *var* `=` *incr* `+` *var*
-- *var* `=` *var* `-` *incr*
+- `++`*var*
+- *var*`++`
+- `--`*var*
+- *var*`--`
+- *var* `+=` *INR*
+- *var* `-=` *INR*
+- *var* `=` *var* `+` *INR*
+- *var* `=` *INR* `+` *var*
+- *var* `=` *var* `-` *INR*
 
-*var*<br/>
-İşaretli bir tamsayı değişkeni. Bu değişken başka bir şekilde paylaşılırsa, `for`süresince özel olarak özel olarak yapılır. `for` ifadesinin gövdesi içinde bu değişkeni değiştirmeyin. Değişken belirtilmediği takdirde `lastprivate`, döngüden sonraki değeri belirsiz olur.
+*l*<br/>
+İşaretli bir tamsayı değişkeni. Bu değişken başka bir şekilde paylaşılırsa, süresi için örtük olarak özel olarak yapılır `for` . Bu değişkeni deyimin gövdesinde değiştirmeyin `for` . Değişken belirtilmediği takdirde `lastprivate` , döngüden sonraki değeri belirsiz olur.
 
 *mantıksal işlem*<br/>
 Aşağıdakilerden biri:
@@ -185,40 +185,40 @@ Aşağıdakilerden biri:
 *lb*, *b*ve *incr*<br>
 Sabit tamsayı ifadelerini döngüye sokun. Bu ifadelerin değerlendirmesi sırasında eşitleme yoktur, bu nedenle değerlendirilen yan etkiler belirsiz sonuçlar üretir.
 
-Kurallı form, döngü yineleme sayısının döngüye girişte hesaplanmasını sağlar. Bu hesaplama, integral promosyonları sonrasında *var*türündeki değerlerle yapılır. Özellikle, *b* `-` *lb* `+` *incr* değeri bu tür içinde gösterilemez, sonuç belirsiz olur. Ayrıca, *mantıksal op* `<` veya `<=`ise, *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.   *Mantıksal op* `>` veya `>=`ise, *incr-Expr* , döngünün her yinelemesinde *var* olmasının daha küçük olmasına neden olmalıdır.
+Kurallı form, döngü yineleme sayısının döngüye girişte hesaplanmasını sağlar. Bu hesaplama, integral promosyonları sonrasında *var*türündeki değerlerle yapılır. Özellikle, *b* `-` *lb* `+` *incr* değeri bu tür içinde temsil ediediliyorsa, sonuç belirsiz olur. Daha ayrıntılı olarak, *mantıksal op* `<` veya ise `<=` *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.   *Mantıksal op* `>` veya ise `>=` , *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.
 
-`schedule` yan tümcesi, `for` döngüsünün yinelemelerinin takım iş parçacıkları arasında nasıl bölüneceğini belirtir. Bir programın doğruluğu, belirli bir yinelemeyi yürüten iş parçacığına bağlı olmamalıdır. *Chunk_size*değeri, belirtilmişse pozitif bir değer içeren bir döngü sabit tamsayı ifadesi olmalıdır. Bu ifadenin değerlendirmesi sırasında eşitleme yoktur, bu nedenle değerlendirilen yan etkiler belirsiz sonuçlar üretir. Zamanlama *türü* aşağıdaki değerlerden biri olabilir:
+`schedule`Yan tümcesi, `for` döngünün yinelemelerinin takım iş parçacıkları arasında nasıl bölüneceğini belirtir. Bir programın doğruluğu, belirli bir yinelemeyi yürüten iş parçacığına bağlı olmamalıdır. *Chunk_size*değeri, belirtilmişse pozitif bir değer içeren bir döngü sabit tamsayı ifadesi olmalıdır. Bu ifadenin değerlendirmesi sırasında eşitleme yoktur, bu nedenle değerlendirilen yan etkiler belirsiz sonuçlar üretir. Zamanlama *türü* aşağıdaki değerlerden biri olabilir:
 
 Tablo 2-1: `schedule` yan tümce *türü* değerleri
 
 |||
 |-|-|
-|static|`schedule(static,` *chunk_size* `)` belirtildiğinde, yinelemeler *chunk_size*tarafından belirtilen boyuttaki parçalara bölünür. Parçalar, iş parçacığı numarası sırasına göre bir kez, takım iş parçacığına bir hepsini bir kez daha kez atanır. *Chunk_size* belirtilmediğinde, yineleme alanı her iş parçacığına bir öbek atandığında, boyutu yaklaşık olarak eşit olan parçalara bölünür.|
-|dinamik|`schedule(dynamic,` *chunk_size* `)` belirtildiğinde, yinelemeler, her biri *chunk_size* yineleme içeren bir dizi öbekte ayrılır. Her bir öbek, bir atamayı bekleyen bir iş parçacığına atanır. İş parçacığı, yineleme öbekini yürütür ve sonra bir öbek atanıncaya kadar bir sonraki atamaya bekler. Atanacak son öbekte daha az sayıda yineleme olabilir. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
-|temelli|`schedule(guided,` *chunk_size* `)` belirtildiğinde, yinelemeler, azalan boyutlara sahip öbeklerdeki iş parçacıklarına atanır. Bir iş parçacığı atanmış yineleme öbeğini bitirdiğinde, hiçbiri ayrılana kadar dinamik olarak başka bir öbek atanır. 1 *chunk_size* için, her öbekin boyutu, iş parçacığı sayısına bölünen atanmamış yineleme sayısının yaklaşık olarak sayısıdır. Bu boyutlar neredeyse üstel olarak 1 ' i azaltır. *K* değeri 1 ' den büyük olan bir *chunk_size* için, en son öbekin *k* yinelemeden daha az yineleme olması dışında, Boyutlar neredeyse katlanarak *k*olarak azalır. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
-|çalışma zamanı|`schedule(runtime)` belirtildiğinde, zamanlamaya yönelik karar, çalışma zamanına kadar ertelenir. `OMP_SCHEDULE`ortam değişkeni ayarlanarak öbeklerin zamanlama *türü* ve boyutu çalışma zamanında seçilebilir. Bu ortam değişkeni ayarlanmamışsa, sonuçta elde edilen zamanlama uygulama tanımlı olur. `schedule(runtime)` belirtildiğinde *chunk_size* belirtilmemelidir.|
+|static|`schedule(static,` *Chunk_size* `)` belirtildiğinde, yinelemeler *chunk_size*belirtilen boyut öbeklerine bölünür. Parçalar, iş parçacığı numarası sırasına göre bir kez, takım iş parçacığına bir hepsini bir kez daha kez atanır. *Chunk_size* belirtilmediğinde, yineleme alanı her iş parçacığına bir öbek atandığında, boyutu yaklaşık olarak eşit olan parçalara bölünür.|
+|dinamik|`schedule(dynamic,` *Chunk_size* `)` belirtildiğinde, yinelemeler, her biri *chunk_size* yineleme içeren bir dizi yığından ayrılır. Her bir öbek, bir atamayı bekleyen bir iş parçacığına atanır. İş parçacığı, yineleme öbekini yürütür ve sonra bir öbek atanıncaya kadar bir sonraki atamaya bekler. Atanacak son öbekte daha az sayıda yineleme olabilir. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
+|temelli|`schedule(guided,` *Chunk_size* `)` belirtildiğinde, yinelemeler, azalan boyutlarla öbeklerdeki iş parçacıklarına atanır. Bir iş parçacığı atanmış yineleme öbeğini bitirdiğinde, hiçbiri ayrılana kadar dinamik olarak başka bir öbek atanır. 1 *chunk_size* için, her öbekin boyutu, iş parçacığı sayısına bölünen atanmamış yineleme sayısının yaklaşık olarak sayısıdır. Bu boyutlar neredeyse üstel olarak 1 ' i azaltır. *K* değeri 1 ' den büyük olan bir *chunk_size* için, en son öbekin *k* yinelemeden daha az yineleme olması dışında, Boyutlar neredeyse katlanarak *k*olarak azalır. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
+|çalışma zamanı|`schedule(runtime)`Belirtildiğinde, zamanlama ile ilgili karar, çalışma zamanına kadar ertelenir. Öbeklerin zamanlama *türü* ve boyutu, ortam değişkeni ayarlanarak çalışma zamanında seçilebilir `OMP_SCHEDULE` . Bu ortam değişkeni ayarlanmamışsa, sonuçta elde edilen zamanlama uygulama tanımlı olur. Belirtildiğinde `schedule(runtime)` *chunk_size* belirtilmemelidir.|
 
-Açıkça tanımlanmış bir `schedule` yan tümcesinin yokluğu altında, varsayılan `schedule` uygulama tanımlı olur.
+Açıkça tanımlanmış bir yan tümce yokluğunda `schedule` , varsayılan değer `schedule` uygulama tanımlı ' dır.
 
 OpenMP uyumlu bir program doğru yürütme için belirli bir zamanlamaya dayanmamalıdır. Bir programın, farklı derleyicilerde aynı zamanlama *türünün* uygulamalarında çeşitliliğe sahip olması mümkün olduğundan, yukarıda verilen açıklamaya uygun bir zamanlama *türüne* güvenmemelidir. Açıklamalar, belirli bir durum için uygun zamanlamayı seçmek üzere kullanılabilir.
 
-`ordered` yönergeleri `for` yapısına bağladığı zaman `ordered` yan tümcesi bulunmalıdır.
+`ordered` `ordered` Yönergeler yapıyı bağladığı zaman yan tümcesi bulunmalıdır `for` .
 
-Bir `nowait` yan tümcesi belirtilmediği takdirde `for` yapısının sonunda örtük bir engel vardır.
+`for`Bir yan tümce belirtilmediği takdirde bir yapının sonunda örtülü bir engel vardır `nowait` .
 
-`for` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`for`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- `for` döngüsü yapısal bir blok olmalıdır ve ayrıca, yürütülmesi bir `break` ifadesiyle sonlandırılmamalıdır.
+- `for`Döngü yapısal bir blok olmalıdır ve ayrıca, yürütülmesi bir ifadesiyle sonlandırılmamalıdır **`break`** .
 
-- Bir `for` yönergesiyle ilişkili `for` döngüsünün döngü denetim ifadelerinin değerleri, ekipteki tüm iş parçacıkları için aynı olmalıdır.
+- `for`Bir yönergeyle ilişkili döngünün döngü denetim ifadelerinin değerleri, `for` ekipteki tüm iş parçacıkları için aynı olmalıdır.
 
-- `for` döngüsü yineleme değişkeni, işaretli bir tamsayı türüne sahip olmalıdır.
+- `for`Loop yineleme değişkeni, işaretli bir tamsayı türüne sahip olmalıdır.
 
-- `for` yönergesinde yalnızca tek bir `schedule` yan tümcesi görünebilir.
+- Bir yönergede yalnızca tek bir `schedule` yan tümce görünebilir `for` .
 
-- `for` yönergesinde yalnızca tek bir `ordered` yan tümcesi görünebilir.
+- Bir yönergede yalnızca tek bir `ordered` yan tümce görünebilir `for` .
 
-- `for` yönergesinde yalnızca tek bir `nowait` yan tümcesi görünebilir.
+- Bir yönergede yalnızca tek bir `nowait` yan tümce görünebilir `for` .
 
 - *Chunk_size*, *lb*, *b*veya *incr* ifadeleri içinde herhangi bir yan etkilerin ne zaman oluşması veya ne sıklıkla oluşması belirtilmemiş olur.
 
@@ -226,14 +226,14 @@ Bir `nowait` yan tümcesi belirtilmediği takdirde `for` yapısının sonunda ö
 
 #### <a name="cross-references"></a>Çapraz başvurular
 
-- `private`, `firstprivate`, `lastprivate`ve `reduction` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
+- `private`, `firstprivate` , `lastprivate` , ve `reduction` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
 - [Omp_schedule](4-environment-variables.md#41-omp_schedule) ortam değişkeni
 - [sıralı](#266-ordered-construct) yapı
 - [Schedule](d-using-the-schedule-clause.md) yan tümcesi
 
 ### <a name="242-sections-construct"></a>2.4.2 sections bölüm yapısı
 
-`sections` yönergesi, bir ekipteki iş parçacıkları arasında bölünecek bir yapı kümesi belirten yinelenmeyen bir iş paylaşımı yapısını tanımlar. Her bölüm ekipteki bir iş parçacığı tarafından bir kez yürütülür. `sections` yönergesinin sözdizimi şöyledir:
+`sections`Yönergesi, bir ekipteki iş parçacıkları arasında bölünecek bir yapı kümesi belirten yinelenmeyen bir iş paylaşımı yapısını tanımlar. Her bölüm ekipteki bir iş parçacığı tarafından bir kez yürütülür. Yönergesinin sözdizimi aşağıdaki gibidir `sections` :
 
 ```cpp
 #pragma omp sections [clause[[,] clause] ...] new-line
@@ -247,27 +247,27 @@ Bir `nowait` yan tümcesi belirtilmediği takdirde `for` yapısının sonunda ö
 
 Yan tümcesi aşağıdakilerden biridir:
 
-- `private(` *değişken listesi* `)`
-- `firstprivate(` *değişken listesi* `)`
-- `lastprivate(` *değişken listesi* `)`
-- `reduction(` *işleci* *değişken listesi* `:``)`
+- `private(`*değişken listesi*`)`
+- `firstprivate(`*değişken listesi*`)`
+- `lastprivate(`*değişken listesi*`)`
+- `reduction(`*işleci* `:` *değişken listesi*  `)`
 - `nowait`
 
-Her bölümün önünde bir `section` yönergesi bulunur, ancak `section` yönergesi ilk bölüm için isteğe bağlıdır. `section` yönergeleri `sections` yönergesinin sözcük temelli kapsamı içinde görünmelidir. Bir `nowait` belirtilmedikçe `sections` yapının sonunda örtülü bir engel vardır.
+Her bölümde öncesinde bir yönerge bulunur `section` , ancak `section` yönerge ilk bölüm için isteğe bağlıdır. `section`Yönergelerin, yönergesinin sözcük kapsamı içinde yer almalıdır `sections` . `sections`Bir yapının sonunda, bir, belirtilmediyse, örtülü bir engel vardır `nowait` .
 
-`sections` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`sections`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- `section` yönergesi, `sections` yönergesinin sözcük temelli kapsamı dışında görünmemelidir.
+- Yönerge `section` , yönergenin sözcük kapsamı dışında görünmemelidir `sections` .
 
-- `sections` yönergesinde yalnızca tek bir `nowait` yan tümcesi görünebilir.
+- Bir yönergede yalnızca tek bir `nowait` yan tümce görünebilir `sections` .
 
 #### <a name="cross-references"></a>Çapraz başvurular
 
-- `private`, `firstprivate`, `lastprivate`ve `reduction` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
+- `private`, `firstprivate` , `lastprivate` , ve `reduction` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
 
 ### <a name="243-single-construct"></a>2.4.3 tek yapı
 
-`single` yönergesi, ilişkili yapılandırılmış bloğun takımda yalnızca bir iş parçacığı tarafından yürütüldüğünü belirten bir yapıyı tanımlar (ana iş parçacığı olması gerekmez). `single` yönergesinin sözdizimi şöyledir:
+`single`Yönergesi, ilişkili yapılandırılmış bloğun takımda yalnızca bir iş parçacığı tarafından yürütüldüğünü belirten bir yapı tanımlar (ana iş parçacığı olması gerekmez). Yönergesinin sözdizimi aşağıdaki gibidir `single` :
 
 ```cpp
 #pragma omp single [clause[[,] clause] ...] new-linestructured-block
@@ -275,25 +275,25 @@ Her bölümün önünde bir `section` yönergesi bulunur, ancak `section` yöner
 
 Yan tümcesi aşağıdakilerden biridir:
 
-- `private(` *değişken listesi* `)`
-- `firstprivate(` *değişken listesi* `)`
-- `copyprivate(` *değişken listesi* `)`
+- `private(`*değişken listesi*`)`
+- `firstprivate(`*değişken listesi*`)`
+- `copyprivate(`*değişken listesi*`)`
 - `nowait`
 
-Bir `nowait` yan tümcesi belirtilmedikçe `single` oluşturulduktan sonra örtülü bir engel vardır.
+`single`Bir yan tümce belirtilmediği takdirde, yapıdan sonra örtük bir engel vardır `nowait` .
 
-`single` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`single`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- `single` yönergesinde yalnızca tek bir `nowait` yan tümcesi görünebilir.
-- `copyprivate` yan tümcesi `nowait` yan tümcesiyle kullanılmamalıdır.
+- Bir yönergede yalnızca tek bir `nowait` yan tümce görünebilir `single` .
+- `copyprivate`Yan tümce `nowait` yan tümcesiyle kullanılmamalıdır.
 
 #### <a name="cross-references"></a>Çapraz başvurular
 
-- `private`, `firstprivate`ve `copyprivate` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
+- `private`, `firstprivate` , ve `copyprivate` yan tümceleri ([Bölüm 2.7.2](#272-data-sharing-attribute-clauses))
 
 ## <a name="25-combined-parallel-work-sharing-constructs"></a>2,5 Birleşik paralel iş paylaşım yapıları
 
-Birleşik paralel iş paylaşımı yapıları, yalnızca bir iş paylaşımı yapısına sahip bir paralel bölge belirtmeye yönelik kısayollardır. Bu yönergelerin semantiği, açıkça bir `parallel` yönergesini ve ardından tek bir iş paylaşımı yapısını belirtmekle aynıdır.
+Birleşik paralel iş paylaşımı yapıları, yalnızca bir iş paylaşımı yapısına sahip bir paralel bölge belirtmeye yönelik kısayollardır. Bu yönergelerin semantiği, bir `parallel` yönergeyi ve ardından tek bir iş paylaşımı yapısı tarafından açıkça belirtilerek aynıdır.
 
 Aşağıdaki bölümlerde Birleşik paralel iş paylaşımı yapıları açıklanır:
 
@@ -302,13 +302,13 @@ Aşağıdaki bölümlerde Birleşik paralel iş paylaşımı yapıları açıkla
 
 ### <a name="251-parallel-for-construct"></a>Yapı için 2.5.1 paralel
 
-`parallel for` yönergesi, yalnızca tek bir `for` yönergesini içeren bir `parallel` bölgesinin kısayoludur. `parallel for` yönergesinin sözdizimi şöyledir:
+`parallel for`Yönergesi `parallel` yalnızca tek bir yönerge içeren bir bölgenin kısayoludur `for` . Yönergesinin sözdizimi aşağıdaki gibidir `parallel for` :
 
 ```cpp
 #pragma omp parallel for [clause[[,] clause] ...] new-linefor-loop
 ```
 
-Bu yönerge, `parallel` yönergesinin tüm yan tümcelerini ve `for` yönergesini, aynı anlamlara ve kısıtlamalara sahip `nowait` yan tümcesi haricinde sağlar. Semantiği, doğrudan bir `for` yönergesi tarafından izlenen bir `parallel` yönergesini açıkça belirtmekle aynıdır.
+Bu yönerge, `parallel` `for` `nowait` aynı anlamlara ve sınırlamalara sahip yan tümce hariç, yönergedeki tüm yan tümceleri ve yönergeyi sağlar. Semantiği, açıkça bir yönerge tarafından izlenen bir yönergeyi açıkça belirtmekle aynıdır `parallel` `for` .
 
 #### <a name="cross-references"></a>Çapraz başvurular
 
@@ -318,7 +318,7 @@ Bu yönerge, `parallel` yönergesinin tüm yan tümcelerini ve `for` yönergesin
 
 ### <a name="252-parallel-sections-construct"></a>2.5.2 Parallel sections paralel bölüm yapısı
 
-`parallel sections` yönergesi, yalnızca tek bir `sections` yönergesine sahip bir `parallel` bölgesi belirtmek için kısayol formu sağlar. Semantiği, doğrudan bir `sections` yönergesi tarafından izlenen bir `parallel` yönergesini açıkça belirtmekle aynıdır. `parallel sections` yönergesinin sözdizimi şöyledir:
+`parallel sections`Yönergesi `parallel` yalnızca tek bir yönergesi olan bölge belirtmek için bir kısayol formu sağlar `sections` . Semantiği, açıkça bir yönerge tarafından izlenen bir yönergeyi açıkça belirtmekle aynıdır `parallel` `sections` . Yönergesinin sözdizimi aşağıdaki gibidir `parallel sections` :
 
 ```cpp
 #pragma omp parallel sections  [clause[[,] clause] ...] new-line
@@ -330,7 +330,7 @@ Bu yönerge, `parallel` yönergesinin tüm yan tümcelerini ve `for` yönergesin
 }
 ```
 
-*Yan tümcesi* , `nowait` yan tümcesi hariç `parallel` ve `sections` yönergeleri tarafından kabul edilen yan tümcelerden biri olabilir.
+*Yan* tümcesi, `parallel` `sections` yan tümcesi dışında ve yönergeleri tarafından kabul edilen yan tümcelerden biri olabilir `nowait` .
 
 #### <a name="cross-references"></a>Çapraz başvurular
 
@@ -350,7 +350,7 @@ Aşağıdaki bölümlerde şunlar açıklanır:
 
 ### <a name="261-master-construct"></a>2.6.1 ana yapısı
 
-`master` yönergesi, ekibin ana iş parçacığı tarafından yürütülen yapısal bir blok belirten bir yapıyı tanımlar. `master` yönergesinin sözdizimi şöyledir:
+`master`Yönergesi, ekibin ana iş parçacığı tarafından yürütülen yapısal bir blok belirten bir yapı tanımlar. Yönergesinin sözdizimi aşağıdaki gibidir `master` :
 
 ```cpp
 #pragma omp master new-linestructured-block
@@ -360,7 +360,7 @@ Ekipteki diğer iş parçacıkları ilişkili yapısal bloğu yürütmez. Ana ya
 
 ### <a name="262-critical-construct"></a>2.6.2 Critical kritik yapı
 
-`critical` yönergesi, ilişkili yapılandırılmış bloğunun yürütülmesini aynı anda tek bir iş parçacığına kısıtlayan bir yapıyı tanımlar. `critical` yönergesinin sözdizimi şöyledir:
+`critical`Yönergesi, ilişkili yapısal bloğunun yürütülmesini aynı anda tek bir iş parçacığına kısıtlayan bir yapı tanımlar. Yönergesinin sözdizimi aşağıdaki gibidir `critical` :
 
 ```cpp
 #pragma omp critical [(name)]  new-linestructured-block
@@ -368,17 +368,17 @@ Ekipteki diğer iş parçacıkları ilişkili yapısal bloğu yürütmez. Ana ya
 
 Kritik bölgeyi tanımlamak için, isteğe bağlı bir *ad* kullanılabilir. Kritik bir bölgeyi tanımlamak için kullanılan tanımlayıcılar dış bağlantıya sahiptir ve Etiketler, Etiketler, Üyeler ve normal tanımlayıcılar tarafından kullanılan ad alanlarından ayrı bir ad alanı içinde bulunur.
 
-İş parçacığı, başka bir iş parçacığı aynı ada sahip bir kritik bölge (programda herhangi bir yerde) yürütülene kadar kritik bir bölgenin başlangıcında bekler. Adlandırılmamış `critical` tüm yönergeler aynı belirtilmemiş ada eşlenir.
+İş parçacığı, başka bir iş parçacığı aynı ada sahip bir kritik bölge (programda herhangi bir yerde) yürütülene kadar kritik bir bölgenin başlangıcında bekler. Adlandırılmamış tüm `critical` yönergeler aynı belirtilmemiş ada eşlenir.
 
 ### <a name="263-barrier-directive"></a>2.6.3 engel yönergesi
 
-`barrier` yönergesi, bir ekipteki tüm iş parçacıklarını eşitler. Bu sorunla karşılaşıldığında, ekipteki her iş parçacığı tüm diğerleri bu noktaya ulaşana kadar bekler. `barrier` yönergesinin sözdizimi şöyledir:
+`barrier`Yönergesi, bir ekipteki tüm iş parçacıklarını eşitler. Bu sorunla karşılaşıldığında, ekipteki her iş parçacığı tüm diğerleri bu noktaya ulaşana kadar bekler. Yönergesinin sözdizimi aşağıdaki gibidir `barrier` :
 
 ```cpp
 #pragma omp barrier new-line
 ```
 
-Ekipteki tüm iş parçacıkları engelyle karşılaşdıktan sonra, ekipteki her iş parçacığı, bariyer yönergesinin paralel olan deyimlerini yürütmeye başlar. `barrier` yönergesinin sözdiziminin bir parçası olarak bir C dili bildirisi olmadığından, bir program içindeki yerleşimi üzerinde bazı kısıtlamalar vardır. Biçimsel dilbilgisi hakkında daha fazla bilgi için bkz. [Ek C](c-openmp-c-and-cpp-grammar.md). Aşağıdaki örnekte bu kısıtlamalar gösterilmektedir.
+Ekipteki tüm iş parçacıkları engelyle karşılaşdıktan sonra, ekipteki her iş parçacığı, bariyer yönergesinin paralel olan deyimlerini yürütmeye başlar. `barrier`Yönergesinin sözdiziminin bir parçası olarak bir C dili bildirisi olmadığından, bir program içindeki yerleşimi üzerinde bazı kısıtlamalar vardır. Biçimsel dilbilgisi hakkında daha fazla bilgi için bkz. [Ek C](c-openmp-c-and-cpp-grammar.md). Aşağıdaki örnekte bu kısıtlamalar gösterilmektedir.
 
 ```cpp
 /* ERROR - The barrier directive cannot be the immediate
@@ -398,7 +398,7 @@ if (x!=0) {
 
 ### <a name="264-atomic-construct"></a>2.6.4 atomik yapı
 
-`atomic` yönergesi, belirli bir bellek konumunun, birden çok, eşzamanlı yazma iş parçacığı olasılığa karşı ortaya çıkarmak yerine, otomatik olarak güncelleştirilmesini sağlar. `atomic` yönergesinin sözdizimi şöyledir:
+`atomic`Yönergesi, belirli bir bellek konumunun, birden çok, eşzamanlı yazma iş parçacığı olasılığa karşı ortaya çıkarmak yerine, sıradan olarak güncelleştirilmesini sağlar. Yönergesinin sözdizimi aşağıdaki gibidir `atomic` :
 
 ```cpp
 #pragma omp atomic new-lineexpression-stmt
@@ -407,9 +407,9 @@ if (x!=0) {
 İfade deyimi aşağıdaki formlardan birine sahip olmalıdır:
 
 - *x binop* `=` *Expr*
-- *x* `++`
+- *x*`++`
 - `++` *x*
-- *x* `--`
+- *x*`--`
 - `--` *x*
 
 Önceki ifadelerde:
@@ -418,13 +418,13 @@ if (x!=0) {
 
 - *Expr* skaler türü olan bir ifadedir ve *x*tarafından belirlenen nesneye başvurmuyor.
 
-- *binop* , aşırı yüklenmiş bir operatör değildir ve `+`, `*`, `-`, `/`, `&`, `^`, `|`, `<<`veya `>>`biridir.
+- *binop* , aşırı yüklenmiş bir operatör değildir ve,,,,,,, `+` `*` `-` `/` `&` `^` `|` `<<` , veya `>>` ' den biridir.
 
-Uygulama tanımlı olsa da, bir uygulamanın tüm `atomic` yönergelerini aynı benzersiz *ada*sahip `critical` yönergeleriyle değiştirmesinin yanı da `atomic` yönergesi daha iyi iyileştirmeye izin verir. Genellikle atomik güncelleştirmeyi en az ek yük ile gerçekleştirebileceğiniz donanım yönergeleri sağlanır.
+Uygulama tanımlı olsa da, bir uygulamanın tüm `atomic` yönergeleri `critical` aynı benzersiz *ada*sahip yönergelerden değiştirse de, `atomic` yönerge iyileştirilmesine izin verir. Genellikle atomik güncelleştirmeyi en az ek yük ile gerçekleştirebileceğiniz donanım yönergeleri sağlanır.
 
-Yalnızca *x* tarafından atanan nesnenin yükü ve deposu atomik; *ifadenin* değerlendirmesi atomik değildir. Yarış koşullarından kaçınmak için, bu konumdaki tüm güncelleştirmelerin, yarış koşullarından muaf olmadığı bilinenler hariç `atomic` yönergesiyle korunması gerekir.
+Yalnızca *x* tarafından atanan nesnenin yükü ve deposu atomik; *ifadenin* değerlendirmesi atomik değildir. Yarış koşullarından kaçınmak için, bu konumdaki tüm güncelleştirmeler, `atomic` yarış koşullarından muaf oldukları bilinenler haricinde yönergesiyle korunmalıdır.
 
-`atomic` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`atomic`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
 - Program genelinde x depolama konumu için tüm Atomik başvuruların, uyumlu bir türü olması gerekir.
 
@@ -449,9 +449,9 @@ u.x -= 1.0f;
 
 ### <a name="265-flush-directive"></a>2.6.5 Flush yönergesi
 
-Açık veya zımni `flush` yönergesi, bir ekipteki tüm iş parçacıklarının bellekte bulunan belirli nesnelerin (aşağıda belirtilen) tutarlı bir görünümüne sahip olduğundan emin olmak için uygulamanın gerekli olduğu bir "çapraz iş parçacığı" sıra noktasını belirtir. Bu, bu nesnelere başvuran ifadelerin önceki değerlendirmelerinin tamamlandığını ve sonraki değerlendirmeler henüz başlamamasıdır. Örneğin, derleyicilerin nesnelerin değerlerini yazmaçlara, bellekten geri yüklemesi gerekir ve donanımın, yazma arabelleklerini belleğe temizlemesi ve nesnelerin değerlerini bellekten yeniden yüklemesi gerekebilir.
+`flush`Açık veya örtük olarak belirtilen yönerge, bir ekipteki tüm iş parçacıklarının bellekte belirli nesnelerin (aşağıda belirtilen) tutarlı bir görünümüne sahip olduğundan emin olmak için uygulamanın gerekli olduğu bir "çapraz iş parçacığı" sıra noktasını belirtir. Bu, bu nesnelere başvuran ifadelerin önceki değerlendirmelerinin tamamlandığını ve sonraki değerlendirmeler henüz başlamamasıdır. Örneğin, derleyicilerin nesnelerin değerlerini yazmaçlara, bellekten geri yüklemesi gerekir ve donanımın, yazma arabelleklerini belleğe temizlemesi ve nesnelerin değerlerini bellekten yeniden yüklemesi gerekebilir.
 
-`flush` yönergesinin sözdizimi şöyledir:
+Yönergesinin sözdizimi aşağıdaki gibidir `flush` :
 
 ```cpp
 #pragma omp flush [(variable-list)]  new-line
@@ -459,28 +459,28 @@ Açık veya zımni `flush` yönergesi, bir ekipteki tüm iş parçacıklarının
 
 Eşitleme gerektiren nesneler değişkenlere göre atananlardan sonra, bu değişkenler isteğe bağlı *değişken listesinde*belirlenebilir. *Değişken listesinde*bir işaretçi varsa, işaretçinin başvurduğu nesne değil işaretçi kendisi temizlenir.
 
-*Değişken listesi* olmayan bir `flush` yönergesi, erişilemeyen nesneler hariç tüm paylaşılan nesneleri otomatik depolama süresiyle eşitler. (Bunun nedeni, *değişken listesi*olan bir `flush` daha fazla yüke sahip olabilir.) *Değişken listesi* olmayan bir `flush` yönergesi aşağıdaki yönergeler için kapsanır:
+`flush` *Değişken listesi* olmayan bir yönerge, erişilemeyen nesneler hariç tüm paylaşılan nesneleri otomatik depolama süresiyle eşitler. (Bu, bir `flush` *değişken listesi*ile öğesinden daha fazla yüke neden olabilir.) `flush` *Değişken listesi* olmayan bir yönerge aşağıdaki yönergeler için kapsanır:
 
 - `barrier`
-- `critical` giriş ve çıkış sırasında çıkış
-- `ordered` giriş ve çıkış sırasında çıkış
-- `parallel` giriş ve çıkış sırasında çıkış
-- `for` 'den çıkışta
-- `sections` 'den çıkışta
-- `single` 'den çıkışta
-- `parallel for` giriş ve çıkış sırasında çıkış
-- `parallel sections` giriş ve çıkış sırasında çıkış
+- Giriş ve çıkış`critical`
+- Giriş ve çıkış`ordered`
+- Giriş ve çıkış`parallel`
+- Çıkışta`for`
+- Çıkışta`sections`
+- Çıkışta`single`
+- Giriş ve çıkış`parallel for`
+- Giriş ve çıkış`parallel sections`
 
-Bir `nowait` yan tümcesi varsa yönerge örtülü değildir. `flush` yönergesinin aşağıdakilerden herhangi biri için açık olmadığını not edilmelidir:
+Bir yan tümce varsa yönerge örtük değildir `nowait` . `flush`Yönergenin aşağıdakilerden herhangi biri için açık olmadığından not edilmelidir:
 
-- `for` girişi sırasında
-- `master` giriş veya çıkış sırasında çıkış
-- `sections` girişi sırasında
-- `single` girişi sırasında
+- Girişi sırasında`for`
+- Giriş veya çıkış`master`
+- Girişi sırasında`sections`
+- Girişi sırasında`single`
 
-Geçici nitelenmiş tür içeren bir nesnenin değerine erişen bir başvuru, bu nesneyi önceki sıra noktasında belirten bir `flush` yönergesi gibi davranır. Bir nesnenin değerini geçici nitelenmiş tür ile değiştiren bir başvuru, sonraki sıra noktasında bu nesneyi belirten `flush` yönerge gibi davranır.
+Geçici nitelenmiş tür içeren bir nesnenin değerine erişen bir başvuru, `flush` Bu nesneyi önceki sıra noktasında belirten bir yönerge gibi davranır. Bir nesnenin değerini geçici nitelenmiş tür ile değiştiren bir başvuru, `flush` sonraki sıra noktasında bu nesneyi belirten bir yönerge gibi davranır.
 
-`flush` yönergesinin sözdiziminin bir parçası olarak bir C dili bildirisi olmadığından, bir program içindeki yerleşimi üzerinde bazı kısıtlamalar vardır. Biçimsel dilbilgisi hakkında daha fazla bilgi için bkz. [Ek C](c-openmp-c-and-cpp-grammar.md). Aşağıdaki örnekte bu kısıtlamalar gösterilmektedir.
+`flush`Yönergesinin sözdiziminin bir parçası olarak bir C dili bildirisi olmadığından, bir program içindeki yerleşimi üzerinde bazı kısıtlamalar vardır. Biçimsel dilbilgisi hakkında daha fazla bilgi için bkz. [Ek C](c-openmp-c-and-cpp-grammar.md). Aşağıdaki örnekte bu kısıtlamalar gösterilmektedir.
 
 ```cpp
 /* ERROR - The flush directive cannot be the immediate
@@ -498,23 +498,23 @@ if (x!=0) {
 }
 ```
 
-`flush` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`flush`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- `flush` yönergesinde belirtilen değişken bir başvuru türüne sahip olmamalıdır.
+- Yönergede belirtilen değişken `flush` bir başvuru türüne sahip olmamalıdır.
 
 ### <a name="266-ordered-construct"></a>2.6.6 sıralı yapı
 
-`ordered` yönergesini izleyen yapısal bir blok, yinelemeleri sıralı bir döngüde yürütülecek sırada yürütülür. `ordered` yönergesinin sözdizimi şöyledir:
+Bir yönergeyi izleyen yapısal blok, `ordered` yinelemeleri sıralı bir döngüde yürütülecek sırada yürütülür. Yönergesinin sözdizimi aşağıdaki gibidir `ordered` :
 
 ```cpp
 #pragma omp ordered new-linestructured-block
 ```
 
-`ordered` yönergesi `for` veya `parallel for` yapısının dinamik kapsamı içinde olmalıdır. `ordered` yapı bağlamadığı `for` veya `parallel for` yönergesi, [Bölüm 2.4.1](#241-for-construct)bölümünde açıklandığı gibi belirtilmiş bir `ordered` yan tümcesine sahip olmalıdır. Bir `for` veya `parallel for` yapısının `ordered` yan tümcesiyle yürütülmesi halinde `ordered` yapıları, döngünün sıralı yürütmesinde yürütülemeyecek sırayla yürütülür.
+Bir `ordered` yönerge bir veya yapısının dinamik kapsamı içinde olmalıdır `for` `parallel for` . `for` `parallel for` Yapı bağlamadığı or yönergesinin, `ordered` `ordered` [Bölüm 2.4.1](#241-for-construct)' de açıklandığı gibi belirtilen bir yan tümcesine sahip olması gerekir. `for`Yan tümcesiyle bir veya yapının yürütülmesi halinde `parallel for` `ordered` `ordered` yapılar, döngünün sıralı yürütmesinde yürütülemeyecek sırayla yürütülür.
 
-`ordered` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`ordered`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- `for` yapı içeren bir döngünün yinelemesi aynı sıralı yönergeyi birden çok kez yürütmemelidir ve birden fazla `ordered` yönergesini yürütmemelidir.
+- Yapı içeren bir döngünün yinelemesi `for` aynı sıralı yönergeyi birden çok kez yürütmemelidir ve birden fazla yönerge yürütmemelidir `ordered` .
 
 ## <a name="27-data-environment"></a>2,7 veri ortamı
 
@@ -526,37 +526,37 @@ Bu bölümde, paralel bölgelerin yürütülmesi sırasında veri ortamının de
 
 ### <a name="271-threadprivate-directive"></a>2.7.1 threadprivate yönergesi
 
-`threadprivate` yönergesi, *değişken listesinde* belirtilen adlandırılmış dosya kapsamı, ad alanı kapsamı veya statik blok kapsamı değişkenlerini bir iş parçacığına özel olarak yapar. *değişken listesi* , türü eksik olmayan bir değişkenlerin virgülle ayrılmış listesidir. `threadprivate` yönergesinin sözdizimi şöyledir:
+`threadprivate`Yönergesi, *değişken listesinde* belirtilen adlandırılmış dosya kapsamı, ad alanı kapsamı veya statik blok kapsamı değişkenlerini bir iş parçacığına getirir. *değişken listesi* , türü eksik olmayan bir değişkenlerin virgülle ayrılmış listesidir. Yönergesinin sözdizimi aşağıdaki gibidir `threadprivate` :
 
 ```cpp
 #pragma omp threadprivate(variable-list) new-line
 ```
 
-Bir `threadprivate` değişkeninin her kopyası bir kez başlatılır, bu kopyaya ilk başvurmadan önce programdaki belirtilmemiş bir noktada ve her zamanki şekilde (örn. ana kopya programın seri yürütmesinde başlatılacağından). Bir nesneye bir `threadprivate` değişkeninin açık başlatıcısında başvuruluyorsa ve nesnenin değeri değişkenin bir kopyasına ilk başvurudan önce değiştirilirse, davranış belirtilmemiş olur.
+Bir değişkenin her kopyası bir `threadprivate` kez başlatılır, bu kopyaya ilk başvurudan önce programdaki belirtilmemiş bir noktada ve her zamanki şekilde başlatılır (yani, ana kopya programın seri yürütmesinde başlatılacağından). Bir nesneye bir değişkenin açık başlatıcısında başvuruluyorsa `threadprivate` ve nesnenin değeri değişkenin bir kopyasına ilk başvurudan önce değiştirilirse, davranış belirtilmemiş olur.
 
-Herhangi bir özel değişkende olduğu gibi, iş parçacığı başka bir iş parçacığının `threadprivate` nesnenin kopyasına başvurmamalıdır. Programın seri bölgeleri ve ana bölgeleri sırasında, başvurular ana iş parçacığının nesnenin kopyasına olur.
+Herhangi bir özel değişkende olduğu gibi, bir iş parçacığı başka bir iş parçacığının nesnenin kopyasına başvurmamalıdır `threadprivate` . Programın seri bölgeleri ve ana bölgeleri sırasında, başvurular ana iş parçacığının nesnenin kopyasına olur.
 
-İlk paralel bölge yürütüldükten sonra, `threadprivate` nesnelerdeki verilerin yalnızca dinamik iş parçacığı mekanizması devre dışı bırakılmışsa ve iş parçacığı sayısı tüm paralel bölgelerde değişmeden kalırsa kalıcı hale getirilmesi garanti edilir.
+İlk paralel bölge yürütüldükten sonra, `threadprivate` nesnelerdeki verilerin yalnızca dinamik iş parçacığı mekanizması devre dışı bırakılmışsa ve iş parçacıklarının sayısı tüm paralel bölgelerde değişmeden kalırsa kalıcı hale getirilmesi garanti edilir.
 
-`threadprivate` yönergesine yönelik kısıtlamalar aşağıdaki gibidir:
+`threadprivate`Yönergeyle kısıtlamalar aşağıdaki gibidir:
 
-- Dosya kapsamı veya ad alanı kapsamı değişkenlerine yönelik bir `threadprivate` yönergesi herhangi bir tanım veya bildirimin dışında görünmelidir ve listesindeki değişkenlerin herhangi birine yönelik tüm başvuruları sözcüksel olarak önce kullanmalıdır.
+- `threadprivate`Dosya kapsamı veya ad alanı kapsamı değişkenlerine yönelik bir yönerge, herhangi bir tanım veya bildirimin dışında görünmelidir ve listesindeki değişkenlerin herhangi birine ait tüm başvuruları sözcüksel olarak önünde olmalıdır.
 
-- Dosya veya ad alanı kapsamındaki `threadprivate` yönergesinin *değişken listesindeki* her değişken, yönergeden önce gelen dosya veya ad alanı kapsamındaki bir değişken bildirimine başvurmalıdır.
+- Dosya veya ad alanı kapsamındaki bir yönergenin *değişken listesindeki* her değişken `threadprivate` , yönergeden önce gelen dosya veya ad alanı kapsamındaki bir değişken bildirimine başvurmalıdır.
 
-- Statik blok kapsamı değişkenlerine yönelik bir `threadprivate` yönergesi, iç içe kapsamda değil, değişkenin kapsamında görünmelidir. Yönerge, listesindeki değişkenlerin herhangi birine yapılan tüm başvuruları sözcüksel olarak önüne almalıdır.
+- `threadprivate`Statik blok kapsamı değişkenlerine yönelik bir yönerge, iç içe kapsamda değil, değişkenin kapsamında görünmelidir. Yönerge, listesindeki değişkenlerin herhangi birine yapılan tüm başvuruları sözcüksel olarak önüne almalıdır.
 
-- Blok kapsamındaki bir `threadprivate` yönergesinin *değişken listesindeki* her değişken, aynı kapsamdaki, yönergeden önce gelen bir değişken bildirimine başvurmalıdır. Değişken bildirimi statik depolama sınıfı belirticisini kullanmalıdır.
+- Blok kapsamındaki bir yönergenin *değişken listesindeki* her değişken, `threadprivate` yönergeden önce gelen bir değişken bildirimine başvurmalıdır. Değişken bildirimi statik depolama sınıfı belirticisini kullanmalıdır.
 
-- Bir değişken bir çeviri birimindeki `threadprivate` yönergesinde belirtilmişse, bildirildiği her çeviri birimindeki bir `threadprivate` yönergesinde belirtilmelidir.
+- Bir değişken bir `threadprivate` çeviri birimindeki yönergede belirtilmişse, `threadprivate` bildirildiği her çeviri birimindeki bir yönergede belirtilmelidir.
 
-- `threadprivate` değişken `copyin`, `copyprivate`, `schedule`, `num_threads`veya `if` yan tümcesi dışında herhangi bir yan tümce içinde görünmemelidir.
+- Bir `threadprivate` değişken,,, `copyin` `copyprivate` `schedule` `num_threads` veya `if` yan tümcesi dışında herhangi bir yan tümce içinde görünmemelidir.
 
-- `threadprivate` değişkenin adresi bir adres sabiti değil.
+- Bir `threadprivate` değişkenin adresi bir adres sabiti değildir.
 
-- `threadprivate` değişken, tamamlanmamış bir tür veya başvuru türüne sahip olmamalıdır.
+- `threadprivate`Değişken, tamamlanmamış bir tür veya başvuru türüne sahip olmamalıdır.
 
-- POD olmayan sınıf türüne sahip bir `threadprivate` değişkeni, açık bir başlatıcı ile bildirilirse, erişilebilir ve belirsiz bir kopya oluşturucusuna sahip olmalıdır.
+- `threadprivate`Pod olmayan sınıf türüne sahip bir değişken, açık bir başlatıcı ile bildirilirse, erişilebilir ve belirsiz bir kopya oluşturucusuna sahip olmalıdır.
 
 Aşağıdaki örnek, bir başlatıcıda görünen bir değişkenin, belirtilmeyen davranışa neden olabileceği ve ayrıca yardımcı bir nesne ve kopya Oluşturucu kullanarak bu sorundan kaçınmak için nasıl değişiklik yapılacağını gösterir.
 
@@ -589,15 +589,15 @@ void f(int n) {
 
 Bir kullanıcının Bölge süresince değişkenlerin paylaşım özniteliklerini denetlemesine izin veren yan tümceleri kabul eden çeşitli yönergeler. Öznitelik yan tümcelerini paylaşma özelliği, yalnızca yan tümcesinin göründüğü yönergedeki sözcük kapsamı için geçerlidir. Tüm yönergeler üzerinde aşağıdaki yan tümceciklerine izin verilmez. Belirli bir yönergede geçerli olan yan tümceler listesi, yönergesiyle açıklanmıştır.
 
-Bir paralel veya iş paylaşım yapısıyla karşılaşıldığında ve değişken bir paylaşım özniteliği yan tümcesinde veya `threadprivate` yönergesinde belirtilmemişse, değişken paylaşılır. Paralel bir bölgenin dinamik kapsamı içinde belirtilen statik değişkenler paylaşılır. Yığın ile ayrılmış bellek (örneğin, C 'de `malloc()` veya C++ içinde C++`new` işleci) paylaşılır. (Ancak, bu belleğin işaretçisi özel veya paylaşılan olabilir.) Paralel bir bölgenin dinamik kapsamı içinde belirtilen otomatik depolama süresine sahip değişkenler özeldir.
+Bir paralel veya iş paylaşım yapısıyla karşılaşıldığında ve değişken bir paylaşım özniteliği yan tümcesinde veya yönergesinde belirtilmemişse, değişken `threadprivate` paylaşılır. Paralel bir bölgenin dinamik kapsamı içinde belirtilen statik değişkenler paylaşılır. Yığın ile ayrılmış bellek (örneğin, `malloc()` C veya c++ ' da veya **`new`** c++ ' ta işleç) paylaşılır. (Ancak, bu belleğin işaretçisi özel veya paylaşılan olabilir.) Paralel bir bölgenin dinamik kapsamı içinde belirtilen otomatik depolama süresine sahip değişkenler özeldir.
 
 Yan tümcelerinin çoğu, görünür olan değişkenlerin virgülle ayrılmış bir listesi olan *değişken listesi* bağımsız değişkenini kabul eder. Bir veri paylaşımı öznitelik yan tümcesinde başvurulan bir değişkenin bir şablondan türetilmiş bir türü varsa ve programda bu değişkene başka bir başvuru yoksa, davranış tanımsızdır.
 
-Yönerge yan tümceleri içinde görünen tüm değişkenler görünür olmalıdır. Yan tümceler gerektiği şekilde tekrarlanabilir, ancak bir değişken birden fazla yan tümce içinde belirtilemez, ancak bir değişken hem `firstprivate` hem de `lastprivate` yan tümcesinde belirlenebilir.
+Yönerge yan tümceleri içinde görünen tüm değişkenler görünür olmalıdır. Yan tümceler gerektiği şekilde tekrarlanabilir, ancak bir değişken birden fazla yan tümce içinde belirtilemez, ancak bir değişken hem a hem de `firstprivate` `lastprivate` yan tümcesinde belirlenebilir.
 
 Aşağıdaki bölümlerde veri paylaşımı özniteliği yan tümceleri açıklanır:
 
-- [private](#2721-private)
+- [özelleştirme](#2721-private)
 - [firstprivate](#2722-firstprivate)
 - [lastprivate](#2723-lastprivate)
 - [Paylaşılan](#2724-shared)
@@ -608,67 +608,67 @@ Aşağıdaki bölümlerde veri paylaşımı özniteliği yan tümceleri açıkla
 
 #### <a name="2721-private"></a>2.7.2.1 private
 
-`private` yan tümcesi, değişken listesindeki değişkenleri bir ekipteki her iş parçacığına özel olacak şekilde bildirir. `private` yan tümcesinin sözdizimi şöyledir:
+`private`Yan tümcesi, değişken listesindeki değişkenleri bir takımda bulunan her iş parçacığına özel olacak şekilde bildirir. `private`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 private(variable-list)
 ```
 
-`private` yan tümcesinde belirtilen bir değişkenin davranışı aşağıdaki gibidir. Yapı için otomatik depolama süresine sahip yeni bir nesne ayrılır. Yeni nesnenin boyutu ve hizalaması, değişkenin türüne göre belirlenir. Bu ayırma, ekipteki her iş parçacığı için bir kez gerçekleşir ve gerekirse bir sınıf nesnesi için varsayılan oluşturucu çağrılır; Aksi takdirde, ilk değer belirsiz olur.  Değişkenin başvurduğu özgün nesne, yapı girişi sırasında belirsiz bir değere sahiptir, yapının dinamik kapsamı içinde değiştirilmemelidir ve yapıdan çıkıldığında belirsiz bir değere sahip olur.
+Yan tümcesinde belirtilen bir değişkenin davranışı aşağıdaki gibidir `private` . Yapı için otomatik depolama süresine sahip yeni bir nesne ayrılır. Yeni nesnenin boyutu ve hizalaması, değişkenin türüne göre belirlenir. Bu ayırma, ekipteki her iş parçacığı için bir kez gerçekleşir ve gerekirse bir sınıf nesnesi için varsayılan oluşturucu çağrılır; Aksi takdirde, ilk değer belirsiz olur.  Değişkenin başvurduğu özgün nesne, yapı girişi sırasında belirsiz bir değere sahiptir, yapının dinamik kapsamı içinde değiştirilmemelidir ve yapıdan çıkıldığında belirsiz bir değere sahip olur.
 
 Yönerge yapısının sözlü kapsamı içinde, değişkeni iş parçacığı tarafından ayrılan yeni özel nesneye başvurur.
 
-`private` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
+Yan tümcesine yönelik kısıtlamalar `private` aşağıdaki gibidir:
 
-- `private` yan tümcesinde belirtilen bir sınıf türüne sahip bir değişken, erişilebilir, belirsiz bir varsayılan oluşturucuya sahip olmalıdır.
+- Bir yan tümcesinde belirtilen sınıf türüne sahip bir değişken `private` , erişilebilir, belirsiz bir varsayılan oluşturucuya sahip olmalıdır.
 
-- Bir `private` yan tümcesinde belirtilen değişken, `mutable` üyesi olan bir sınıf türüne sahip olmadığı için `const`nitelikli bir türe sahip olmamalıdır.
+- Bir yan tümcesinde belirtilen değişken, bir `private` **`const`** üyesi olan bir sınıf türüne sahip olmadığı takdirde nitelenmiş türde olmamalıdır `mutable` .
 
-- `private` yan tümcesinde belirtilen değişken, tamamlanmamış bir tür veya başvuru türüne sahip olmamalıdır.
+- Bir yan tümcesinde belirtilen değişken, `private` tamamlanmamış bir tür veya başvuru türüne sahip olmamalıdır.
 
-- Bir `parallel` yönergesinin `reduction` yan tümcesinde görünen değişkenler, paralel yapıyı bağlayan bir iş paylaşımı yönergesinde bir `private` yan tümcesinde belirtilemez.
+- `reduction`Bir yönergenin yan tümcesinde görünen değişkenler, `parallel` `private` paralel yapıyı bağlayan iş paylaşımı yönergesinde bir yan tümce içinde belirtilemez.
 
 #### <a name="2722-firstprivate"></a>2.7.2.2 firstprivate
 
-`firstprivate` yan tümcesi, `private` yan tümcesi tarafından sağlanan işlevselliğin bir üst kümesini sağlar. `firstprivate` yan tümcesinin sözdizimi şöyledir:
+`firstprivate`Yan tümcesi, yan tümcesinin sağladığı işlevselliğin bir üst kümesini sağlar `private` . `firstprivate`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 firstprivate(variable-list)
 ```
 
-*Değişken listesinde* belirtilen değişkenlerde, [Bölüm 2.7.2.1](#2721-private)' de açıklandığı gibi `private` yan tümce semantiği vardır. Başlatma veya oluşturma, iş parçacığının yapının yürütülmesinden önce iş parçacığı başına bir kez yapılmış gibi olur. Paralel bir yapı üzerindeki bir `firstprivate` yan tümcesi için, yeni özel nesnenin başlangıçtaki değeri, onunla karşılaştığı iş parçacığının paralel yapısıyla hemen önce var olan özgün nesnenin değeridir. İş paylaşımı yapısında bir `firstprivate` yan tümcesi için, iş paylaşımı yapısını yürüten her iş parçacığının yeni özel nesnesinin ilk değeri, aynı iş parçacığının iş paylaşım yapısıyla karşılaştığı zaman noktadan önce var olan özgün nesnenin değeridir. Bunlara ek olarak, C++ nesneler için, her iş parçacığının yeni özel nesnesi özgün nesneden oluşturulan kopyadır.
+*Değişken listesinde* belirtilen değişkenlerde `private` , [Bölüm 2.7.2.1](#2721-private)' de açıklandığı gibi yan tümce semantiği vardır. Başlatma veya oluşturma, iş parçacığının yapının yürütülmesinden önce iş parçacığı başına bir kez yapılmış gibi olur. Paralel bir `firstprivate` yapı üzerindeki bir yan tümce için, yeni özel nesnenin başlangıçtaki değeri, onunla karşılaştığı iş parçacığının paralel yapısıyla hemen önce var olan özgün nesnenin değeridir. İş paylaşımı yapısında bir `firstprivate` yan tümce için, iş paylaşımı yapısını yürüten her iş parçacığının yeni özel nesnesinin ilk değeri, aynı iş parçacığının iş paylaşım yapısıyla karşılaştığı zaman noktadan önce var olan özgün nesnenin değeridir. Ayrıca, C++ nesneleri için, her iş parçacığının yeni özel nesnesi özgün nesneden oluşturulan kopyadır.
 
-`firstprivate` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
+Yan tümcesine yönelik kısıtlamalar `firstprivate` aşağıdaki gibidir:
 
-- `firstprivate` yan tümcesinde belirtilen değişken, tamamlanmamış bir tür veya başvuru türüne sahip olmamalıdır.
+- Bir yan tümcesinde belirtilen değişken, `firstprivate` tamamlanmamış bir tür veya başvuru türüne sahip olmamalıdır.
 
-- `firstprivate` olarak belirtilen bir sınıf türüne sahip bir değişken, erişilebilir, belirsiz bir kopya oluşturucusuna sahip olmalıdır.
+- Olarak belirtilen bir sınıf türüne sahip bir değişken `firstprivate` , erişilebilir, belirsiz bir kopya oluşturucusuna sahip olmalıdır.
 
-- Bir paralel bölge içinde özel olan veya bir `parallel` yönergesinin `reduction` yan tümcesinde görünen değişkenler, paralel yapıyı bağlayan bir iş paylaşımı yönergesinde bir `firstprivate` yan tümcesinde belirtilemez.
+- Bir paralel bölge içinde özel olan veya `reduction` bir yönergenin yan tümcesinde görünen değişkenler, `parallel` `firstprivate` paralel yapıyı bağlayan iş paylaşımı yönergesinin yan tümcesinde belirtilemez.
 
 #### <a name="2723-lastprivate"></a>2.7.2.3 lastprivate
 
-`lastprivate` yan tümcesi, `private` yan tümcesi tarafından sağlanan işlevselliğin bir üst kümesini sağlar. `lastprivate` yan tümcesinin sözdizimi şöyledir:
+`lastprivate`Yan tümcesi, yan tümcesinin sağladığı işlevselliğin bir üst kümesini sağlar `private` . `lastprivate`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 lastprivate(variable-list)
 ```
 
-*Değişken listesinde* belirtilen değişkenlerde `private` yan tümce semantiği vardır. Bir iş paylaşımı yapısını tanımlayan yönergede bir `lastprivate` yan tümcesi göründüğünde, ilişkili döngünün sıralı son yinelemesinden her bir `lastprivate` değişkeninin değeri veya sözcüksel son bölüm yönergesi değişkenin özgün nesnesine atanır. `for` veya `parallel for`son yinelemesi veya `sections` ya da `parallel sections` yönergesinin sözcüksel son bölümü tarafından bir değer atanmamış değişkenler, yapıdan sonra belirsiz değerler içermelidir. Atanmamış alt nesnelerin, yapı sonrasında belirsiz bir değeri de vardır.
+*Değişken listesinde* belirtilen değişkenlerin `private` yan tümce anlamları. Yönergede bir `lastprivate` iş paylaşımı yapısını tanımlayan bir yan tümce göründüğünde, `lastprivate` ilişkili döngünün sıralı son yinelemesinden her bir değişkenin değeri veya sözcüksel son bölüm yönergesi değişkenin özgün nesnesine atanır. Veya yönergesinin son yinelemesi tarafından bir değer atanmamış değişkenler veya yönergesinin, `for` `parallel for` veya yönergesinin en son tekrarında `sections` `parallel sections` belirsiz değerler vardır. Atanmamış alt nesnelerin, yapı sonrasında belirsiz bir değeri de vardır.
 
-`lastprivate` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
+Yan tümcesine yönelik kısıtlamalar `lastprivate` aşağıdaki gibidir:
 
-- `private` için tüm kısıtlamalar geçerlidir.
+- İçin tüm kısıtlamalar `private` geçerlidir.
 
-- `lastprivate` olarak belirtilen bir sınıf türüne sahip bir değişken, erişilebilir, belirsiz bir kopya atama işlecine sahip olmalıdır.
+- Olarak belirtilen bir sınıf türüne sahip bir değişken `lastprivate` , erişilebilir, belirsiz bir kopya atama işlecine sahip olmalıdır.
 
-- Bir paralel bölge içinde özel olan veya bir `parallel` yönergesinin `reduction` yan tümcesinde görünen değişkenler, paralel yapıyı bağlayan bir iş paylaşımı yönergesinde bir `lastprivate` yan tümcesinde belirtilemez.
+- Bir paralel bölge içinde özel olan veya `reduction` bir yönergenin yan tümcesinde görünen değişkenler, `parallel` `lastprivate` paralel yapıyı bağlayan iş paylaşımı yönergesinin yan tümcesinde belirtilemez.
 
 #### <a name="2724-shared"></a>2.7.2.4 shared
 
-Bu yan tümce, bir takımda bulunan tüm iş parçacıkları arasındaki *değişken listesinde* görünen değişkenleri paylaşır. Bir ekibin içindeki tüm iş parçacıkları `shared` değişkenleri için aynı depolama alanına erişir.
+Bu yan tümce, bir takımda bulunan tüm iş parçacıkları arasındaki *değişken listesinde* görünen değişkenleri paylaşır. Bir ekibin içindeki tüm iş parçacıkları, değişkenler için aynı depolama alanına erişir `shared` .
 
-`shared` yan tümcesinin sözdizimi şöyledir:
+`shared`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 shared(variable-list)
@@ -676,31 +676,31 @@ shared(variable-list)
 
 #### <a name="2725-default"></a>2.7.2.5 default
 
-`default` yan tümcesi, kullanıcının değişkenlerin veri paylaşım özniteliklerini etkilemesini sağlar. `default` yan tümcesinin sözdizimi şöyledir:
+`default`Yan tümcesi, kullanıcının değişkenlerin veri paylaşım özniteliklerini etkilemesini sağlar. `default`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 default(shared | none)
 ```
 
-`default(shared)` belirtmek, `threadprivate` veya `const`nitelenmiş olmadığı durumlar dışında, bir `shared` yan tümcesinde görünür olan her değişkenin açıkça listelenmesi ile eşdeğerdir. Açık bir `default` yan tümcesinin yokluğu altında, varsayılan davranış `default(shared)` belirtilmiş gibi aynıdır.
+Belirtmek `default(shared)` `shared` , `threadprivate` veya nitelenmediği durumlar dışında, bir yan tümcesindeki her bir görünür değişkeni açıkça listelemek için eşdeğerdir **`const`** . Açık bir yan tümce yokluğunda `default` , varsayılan davranış belirtilmişse ile aynıdır `default(shared)` .
 
-`default(none)` belirtmek için aşağıdaki en az bir tane, paralel yapının sözcük biçiminde bir değişkene her başvuru için true olmalıdır:
+Belirtmek `default(none)` için, paralel yapının sözcük biçiminde bir değişkene her başvuru için aşağıdakilerden en az birinin doğru olması gerekir:
 
 - Değişken, başvuruyu içeren bir yapının veri paylaşımı özniteliği yan tümcesinde açıkça listelenir.
 
 - Değişken, paralel yapı içinde bildirilmiştir.
 
-- Değişken `threadprivate`.
+- Değişkeni `threadprivate` .
 
-- Değişkenin `const`nitelenmiş bir türü vardır.
+- Değişkenin **`const`** nitelenmiş bir türü vardır.
 
-- Değişken, bir `for` veya `parallel for` yönergesini hemen izleyen `for` döngüsünün döngü denetim değişkenidir ve değişken başvurusu döngünün içinde görünür.
+- Değişkeni, `for` bir veya yönergesini hemen izleyen bir döngü için döngü denetim değişkenidir `for` `parallel for` ve değişken başvurusu döngünün içinde görünür.
 
-Bir ın `firstprivate`, `lastprivate`veya `reduction` yan tümcesinde bir değişken belirtmek kapsayan bağlamdaki değişkene örtülü başvuruya neden olur. Bu tür örtük başvurular, yukarıda listelenen gereksinimlere de tabidir.
+Bir `firstprivate` `lastprivate` iliştirilmiş yönergesinin,, veya yan tümcesindeki bir değişkeni belirtmek `reduction` kapsayan bağlamdaki değişkene örtülü başvuruya neden olur. Bu tür örtük başvurular, yukarıda listelenen gereksinimlere de tabidir.
 
-`parallel` yönergesinde yalnızca tek bir `default` yan tümcesi belirtilebilir.
+Yönergede yalnızca tek bir `default` yan tümce belirtilebilir `parallel` .
 
-Bir değişkenin varsayılan veri paylaşımı özniteliği, aşağıdaki örnekte gösterildiği gibi `private`, `firstprivate`, `lastprivate`, `reduction`ve `shared` yan tümceleri kullanılarak geçersiz kılınabilir:
+Bir değişkenin varsayılan veri paylaşımı özniteliği `private` , `firstprivate` `lastprivate` `reduction` `shared` Aşağıdaki örnekte gösterildiği gibi,,, ve yan tümceleri kullanılarak geçersiz kılınabilir:
 
 ```cpp
 #pragma  omp  parallel  for  default(shared)  firstprivate(i)\
@@ -709,23 +709,23 @@ Bir değişkenin varsayılan veri paylaşımı özniteliği, aşağıdaki örnek
 
 #### <a name="2726-reduction"></a>2.7.2.6 reduction
 
-Bu yan tümce, işleç *op*ile *değişken listesinde*görünen skaler değişkenlerde bir azalma gerçekleştirir. `reduction` yan tümcesinin sözdizimi şöyledir:
+Bu yan tümce, işleç *op*ile *değişken listesinde*görünen skaler değişkenlerde bir azalma gerçekleştirir. `reduction`Yan tümcesinin sözdizimi şöyledir:
 
-`reduction(` *op* `:` *değişken listesi* `)`
+`reduction(`*op* `:` *değişken listesi*`)`
 
 Aşağıdaki formlardan birine sahip bir ifade için genellikle bir azaltma belirtilir:
 
 - *x* `=` *x* *op* *Expr*
 - *x* *binop* `=` *Expr*
 - *x* `=` *Expr* *op* *x* (çıkarma hariç)
-- *x* `++`
+- *x*`++`
 - `++` *x*
-- *x* `--`
+- *x*`--`
 - `--` *x*
 
 burada:
 
-*sayı*<br/>
+*x*<br/>
 Listede belirtilen azaltma değişkenlerinden biri.
 
 *değişken listesi*<br/>
@@ -735,12 +735,12 @@ Skalar azaltma değişkenlerinin virgülle ayrılmış listesi.
 *X*başvurusu olmayan skaler türü olan bir ifade.
 
 *üs*<br/>
-Aşırı yüklenmiş bir operatör değil, `+`, `*`, `-`, `&`, `^`, `|`, `&&`veya `||`.
+Aşırı yüklenmiş bir işleç değil,,,,, `+` `*` `-` `&` `^` `|` , `&&` , veya `||` .
 
 *binop*<br/>
-Aşırı yüklenmiş bir operatör değil, `+`, `*`, `-`, `&`, `^`veya `|`.
+Aşırı yüklenmiş bir operatör değil,,,,, `+` `*` `-` `&` `^` veya `|` .
 
-Aşağıda `reduction` yan tümcesinin bir örneği verilmiştir:
+Aşağıda yan tümcesinin bir örneği verilmiştir `reduction` :
 
 ```cpp
 #pragma omp parallel for reduction(+: a, y) reduction(||: am)
@@ -753,36 +753,36 @@ for (i=0; i<n; i++) {
 
 Örnekte gösterildiği gibi, bir işleç bir işlev çağrısının içinde gizli olabilir. Kullanıcı, `reduction` yan tümcesinde belirtilen işlecin azaltma işlemiyle eşleştiğinden dikkatli olmalıdır.
 
-`||` işlecinin sağ işleneninde bu örnekteki yan etkileri olmasa da, bunlara izin verilir, ancak dikkatli olarak kullanılmalıdır. Bu bağlamda, döngünün sıralı yürütmesi sırasında gerçekleşmeyecek olan bir yan etkisi paralel yürütme sırasında gerçekleşebilir. Bu fark, yineleme yürütme sırası belirsiz olduğu için oluşabilir.
+İşlecin sağ işleneninde `||` Bu örnekteki yan etkileri olmasa da, bunlara izin verilir, ancak dikkatli olarak kullanılmalıdır. Bu bağlamda, döngünün sıralı yürütmesi sırasında gerçekleşmeyecek olan bir yan etkisi paralel yürütme sırasında gerçekleşebilir. Bu fark, yineleme yürütme sırası belirsiz olduğu için oluşabilir.
 
-İşleci, azaltma için derleyici tarafından kullanılan özel değişkenlerin başlangıç değerini belirlemede ve sonlandırma işlecini belirlemede kullanılır. İşleci açıkça belirtmek, azaltma bildiriminin yapının sözcük dışı olmasını sağlar. Yönergede herhangi bir sayıda `reduction` yan tümce belirtilebilir, ancak bu yönerge için en fazla bir `reduction` yan tümcesinde bir değişken görünebilir.
+İşleci, azaltma için derleyici tarafından kullanılan özel değişkenlerin başlangıç değerini belirlemede ve sonlandırma işlecini belirlemede kullanılır. İşleci açıkça belirtmek, azaltma bildiriminin yapının sözcük dışı olmasını sağlar. Yönergede herhangi bir sayıda `reduction` tümce belirlenebilir, ancak bu yönerge için en fazla bir yan tümce içinde bir değişken görünebilir `reduction` .
 
-`private` yan tümcesi kullanılmış gibi her bir iş parçacığı için *değişken-liste* içindeki her değişkenin özel bir kopyası oluşturulur. Özel kopya işlecine göre başlatılır (aşağıdaki tabloya bakın).
+*Değişken listesindeki* her değişkenin özel bir kopyası, yan tümcesi kullanılmış gibi her bir iş parçacığı için bir tane oluşturulur `private` . Özel kopya işlecine göre başlatılır (aşağıdaki tabloya bakın).
 
-`reduction` yan tümcesinin belirtildiği bölgenin sonunda, özgün nesne, özgün değerini, belirtilen işleci kullanarak özel kopyaların her birinin son değeriyle birleştirmenin sonucunu yansıtacak şekilde güncelleştirilir. Azaltma işleçleri tüm ilişkilendirilebilir (çıkarma hariç) ve derleyici son değerin hesaplamasını serbestçe yeniden ilişkilendirebilirsiniz. (Çıkarma azaltmanın kısmi sonuçları, son değeri oluşturmak için eklenir.)
+`reduction`Yan tümcesinin belirtildiği bölgenin sonunda, özgün nesne, özgün değerini, belirtilen işleci kullanarak özel kopyaların her birinin son değeriyle birleştirmenin sonucunu yansıtacak şekilde güncelleştirilir. Azaltma işleçleri tüm ilişkilendirilebilir (çıkarma hariç) ve derleyici son değerin hesaplamasını serbestçe yeniden ilişkilendirebilirsiniz. (Çıkarma azaltmanın kısmi sonuçları, son değeri oluşturmak için eklenir.)
 
-İlk iş parçacığı kapsayan yan tümcesine ulaştığında özgün nesnenin değeri belirsiz hale gelir ve azaltma hesaplaması tamamlanana kadar bu şekilde kalır.  Normalde hesaplama, yapının sonunda tamamlanacaktır; Ancak, `reduction` yan tümcesi `nowait` uygulanmış bir yapı üzerinde kullanılıyorsa, tüm iş parçacıklarının `reduction` yan tümcesini tamamladığına emin olmak için bir engel eşitlemesi gerçekleştirilene kadar özgün nesnenin değeri belirsiz olarak kalır.
+İlk iş parçacığı kapsayan yan tümcesine ulaştığında özgün nesnenin değeri belirsiz hale gelir ve azaltma hesaplaması tamamlanana kadar bu şekilde kalır.  Normalde hesaplama, yapının sonunda tamamlanacaktır; Ancak `reduction` yan tümce de uygulanmış bir yapı üzerinde kullanılıyorsa `nowait` , tüm iş parçacıklarının yan tümcesini tamamladığına emin olmak için bir engel eşitlemesi gerçekleştirilene kadar özgün nesnenin değeri belirsiz olarak kalır `reduction` .
 
 Aşağıdaki tabloda, geçerli olan işleçler ve bunların kurallı başlatma değerleri listelenmektedir. Gerçek başlatma değeri, azaltma değişkeninin veri türüyle tutarlı olacak.
 
 |İşleç|Başlatma|
 |--------------|--------------------|
 |`+`|0|
-|`*`|1\.|
+|`*`|1|
 |`-`|0|
-|`&`|~0|
+|`&`|~ 0|
 |`|`|0|
 |`^`|0|
-|`&&`|1\.|
+|`&&`|1|
 |`||`|0|
 
-`reduction` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
+Yan tümcesine yönelik kısıtlamalar `reduction` aşağıdaki gibidir:
 
-- `reduction` yan tümcesindeki değişkenlerin türü, azaltma işleci için, işaretçi türleri ve başvuru türleri hiçbir şekilde izin verilmeyen durumlar dışında geçerli olmalıdır.
+- `reduction`Yan tümcesindeki değişkenlerin türü azaltma işleci için, işaretçi türleri ve başvuru türleri hiçbir şekilde izin verilmeyen durumlar dışında geçerli olmalıdır.
 
-- `reduction` yan tümcesinde belirtilen bir değişken `const`nitelenmemelidir.
+- Yan tümcesinde belirtilen bir değişken `reduction` **`const`** nitelenmemiş olmalıdır.
 
-- Bir paralel bölge içinde özel olan veya bir `parallel` yönergesinin `reduction` yan tümcesinde görünen değişkenler, paralel yapıyı bağlayan bir iş paylaşımı yönergesinde bir `reduction` yan tümcesinde belirtilemez.
+- Bir paralel bölge içinde özel olan veya `reduction` bir yönergenin yan tümcesinde görünen değişkenler, `parallel` `reduction` paralel yapıyı bağlayan iş paylaşımı yönergesinin yan tümcesinde belirtilemez.
 
    ```cpp
    #pragma omp parallel private(y)
@@ -800,7 +800,7 @@ Aşağıdaki tabloda, geçerli olan işleçler ve bunların kurallı başlatma d
 
 #### <a name="2727-copyin"></a>2.7.2.7 copyin
 
-`copyin` yan tümcesi, paralel bölgeyi yürüten ekipteki her iş parçacığının `threadprivate` değişkenlerine aynı değeri atamak için bir mekanizma sağlar. `copyin` yan tümcesinde belirtilen her değişken için, ekibin ana iş parçacığındaki değişkenin değeri, atama ölçütü olarak paralel bölgenin başlangıcında iş parçacığı özel kopyalara kopyalanır. `copyin` yan tümcesinin sözdizimi şöyledir:
+`copyin`Yan tümcesi, `threadprivate` paralel bölgeyi yürüten ekipteki her iş parçacığının değişkenlerine aynı değeri atamak için bir mekanizma sağlar. Bir yan tümcesinde belirtilen her değişken için `copyin` , ekibin ana iş parçacığındaki değişkenin değeri, atama ölçütü olarak paralel bölgenin başlangıcında iş parçacığı özel kopyalara kopyalanır. `copyin`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 
@@ -809,17 +809,17 @@ variable-list
 )
 ```
 
-`copyin` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
+Yan tümcesine yönelik kısıtlamalar `copyin` aşağıdaki gibidir:
 
-- `copyin` yan tümcesinde belirtilen bir değişken, erişilebilir, belirsiz bir kopya atama işlecine sahip olmalıdır.
+- Yan tümcesinde belirtilen bir değişken `copyin` , erişilebilir, belirsiz bir kopya atama işlecine sahip olmalıdır.
 
-- `copyin` yan tümcesinde belirtilen bir değişken `threadprivate` değişken olmalıdır.
+- Yan tümcesinde belirtilen bir değişken `copyin` bir `threadprivate` değişken olmalıdır.
 
 #### <a name="2728-copyprivate"></a>2.7.2.8 copyprivate
 
-`copyprivate` yan tümcesi, bir ekibin bir üyesinden diğer üyelere bir değer yayınlamak için özel bir değişken kullanmak için bir mekanizma sağlar. Bu tür paylaşılan bir değişkenin sağlanması zor olur (örneğin, her düzeyde farklı bir değişken gerektiren bir özyineleme). `copyprivate` yan tümcesi yalnızca `single` yönergesinde yer alabilir.
+`copyprivate`Yan tümcesi, bir ekibin bir üyesinden diğer üyelere bir değer yayınlamak için özel bir değişken kullanmak için bir mekanizma sağlar. Bu tür paylaşılan bir değişkenin sağlanması zor olur (örneğin, her düzeyde farklı bir değişken gerektiren bir özyineleme). `copyprivate`Yan tümce yalnızca `single` yönergede görünebilir.
 
-`copyprivate` yan tümcesinin sözdizimi şöyledir:
+`copyprivate`Yan tümcesinin sözdizimi şöyledir:
 
 ```cpp
 
@@ -828,46 +828,46 @@ variable-list
 )
 ```
 
-Değişken listesindeki değişkenlerde `copyprivate` yan tümcesinin etkisi, `single` yapısıyla ilişkili yapılandırılmış bloğunun yürütülmesinden sonra ve ekipteki iş parçacıklarından önce, yapının sonundaki engelden ayrılmadan önce oluşur. Ardından, tüm diğer iş parçacıklarında, *değişken listesindeki*her bir değişken için, bu değişken yapının yapısal bloğunu yürüten iş parçacığında karşılık gelen değişkenin değeri ile tanımlanır (atama ölçütü olarak).
+`copyprivate`Bağımsız tümcesinin değişken listesi içindeki değişkenlerde etkisi, yapısıyla ilişkili yapılandırılmış bloğun yürütülmesi `single` ve ekipteki iş parçacıklarından önce, yapının sonunda engeli kapatmadan önce oluşur. Ardından, tüm diğer iş parçacıklarında, *değişken listesindeki*her bir değişken için, bu değişken yapının yapısal bloğunu yürüten iş parçacığında karşılık gelen değişkenin değeri ile tanımlanır (atama ölçütü olarak).
 
-`copyprivate` yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
+`copyprivate`Yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
 
-- `copyprivate` yan tümcesinde belirtilen bir değişken, aynı `single` yönergesi için `private` veya `firstprivate` yan tümcesinde görünmemelidir.
+- Yan tümcesinde belirtilen bir değişken `copyprivate` `private` `firstprivate` , aynı yönerge için OR yan tümcesinde görünmemelidir `single` .
 
-- Paralel bölgenin dinamik kapsamında bir `copyprivate` yan tümcesiyle `single` yönergesine karşılaşılırsa, `copyprivate` yan tümcesinde belirtilen tüm değişkenlerin kapsayan bağlamda özel olması gerekir.
+- `single`Bir `copyprivate` paralel bölgenin dinamik kapsamı içinde yan tümcesine sahip bir yönergeyle karşılaşılırsa, yan tümcesinde belirtilen tüm değişkenler `copyprivate` kapsayan bağlamda özel olmalıdır.
 
-- `copyprivate` yan tümcesinde belirtilen bir değişken, erişilebilir bir kopya atama işlecine sahip olmalıdır.
+- Yan tümcesinde belirtilen bir değişken, `copyprivate` erişilebilir bir kopya atama işlecine sahip olmalıdır.
 
 ## <a name="28-directive-binding"></a>2,8 yönerge bağlama
 
 Yönergelerin dinamik bağlamasının aşağıdaki kurallara uyması gerekir:
 
-- `for`, `sections`, `single`, `master`ve `barrier` yönergeleri, Bu yönergede mevcut olabilecek tüm `parallel`yan tümcelerinden bağımsız olarak, bir tane varsa dinamik olarak kapsayan `if` bağlar. Şu anda yürütülen bir paralel bölge yoksa, yönergeler yalnızca ana iş parçacığından oluşan bir takım tarafından yürütülür.
+- `for`,, `sections` , `single` `master` Ve yönergeleri, `barrier` `parallel` `if` Bu yönergede mevcut olabilecek herhangi bir yan tümcenin değerinden bağımsız olarak, varsa dinamik olarak kapsayan öğesine bağlanır. Şu anda yürütülen bir paralel bölge yoksa, yönergeler yalnızca ana iş parçacığından oluşan bir takım tarafından yürütülür.
 
-- `ordered` yönergesi dinamik olarak kapsayan `for`bağlar.
+- `ordered`Yönergesi, dinamik olarak kapsayan öğesine bağlanır `for` .
 
-- `atomic` yönergesi, yalnızca geçerli takımın değil, tüm iş parçacıklarındaki `atomic` yönergeleriyle ilgili olarak özel erişim uygular.
+- `atomic`Yönergesi `atomic` yalnızca geçerli takımın değil, tüm iş parçacıklarında yer alarak özel erişim uygular.
 
-- `critical` yönergesi, yalnızca geçerli takımın değil, tüm iş parçacıklarındaki `critical` yönergeleriyle ilgili olarak özel erişim uygular.
+- `critical`Yönergesi `critical` yalnızca geçerli takımın değil, tüm iş parçacıklarında yer alarak özel erişim uygular.
 
-- Bir yönerge hiçbir yerde, en yakın dinamik olarak kapsayan `parallel`dışındaki herhangi bir yönergeyi bağlanamaz.
+- Bir yönerge hiçbir şekilde, en yakın dinamik olarak kapsayan herhangi bir yönergeyi hiçbir şekilde bağlanamaz `parallel` .
 
 ## <a name="29-directive-nesting"></a>2,9 Yönerge iç içe
 
 Yönergelerin dinamik iç içe geçirilmesi aşağıdaki kurallara uymalıdır:
 
-- Başka bir `parallel` içinde dinamik olarak `parallel` yönerge, iç içe paralellik etkin olmadığı müddetçe, yalnızca geçerli iş parçacığından oluşan yeni bir takım oluşturur.
+- Farklı bir şekilde `parallel` başka bir yönerge, `parallel` iç içe paralellik etkin olmadığı müddetçe, yalnızca geçerli iş parçacığından oluşan yeni bir takım oluşturur.
 
-- aynı `parallel` bağlanan `for`, `sections`ve `single` yönergelerinin birbirini iç içe olmasına izin verilmez.
+- `for`, `sections` ve `single` aynı şekilde bağlanan yönergelerin birbirini `parallel` iç içe olmasına izin verilmez.
 
-- aynı ada sahip `critical` yönergelerinin birbirini iç içe olmasına izin verilmez. Bu kısıtlamanın kilitlenmeyi engellemek için yeterli olmadığını unutmayın.
+- `critical`aynı ada sahip yönergelerin birbirini iç içe olmasına izin verilmez. Bu kısıtlamanın kilitlenmeyi engellemek için yeterli olmadığını unutmayın.
 
-- `for`, `sections`ve `single` yönergelere, yönergeler bölgelerle aynı `ordered`bağlansa `critical`, `master` ve `parallel` bölgelerin dinamik kapsamı içinde izin verilmez.
+- `for`, ve yönergeleri,, ve alanları `sections` `single` `critical` `ordered` `master` bölgelere aynı şekilde bağlansa,, ve bölgelerine dinamik kapsam içinde izin verilmez `parallel` .
 
-- yönergeler bölgelerle aynı `single`bağlansa, `for`, `ordered`, `sections`, `master`, `critical` ve `parallel` bölgelerin dinamik kapsamında `barrier` yönergelere izin verilmez.
+- `barrier``for` `ordered` `sections` `single` `master` `critical` yönergeler bölgelerle aynı şekilde bağlansa `parallel` ,,,, ve bölgelerinin dinamik kapsamında yönergelere izin verilmez.
 
-- `master` yönergeleri iş paylaşımı yönergeleriyle aynı `parallel` bağlansa, `for`, `sections`ve `single` yönergelerinin dinamik kapsamında `master` yönergelere izin verilmez.
+- `master``for` `sections` `single` yönergeler, `master` `parallel` iş paylaşımı yönergeleriyle aynı şekilde bağlansa, ve yönergelerinin dinamik kapsamı içinde izin verilmez.
 
-- yönergeler bölgelerle aynı `parallel` bağlansa, `critical` bölgelerin dinamik kapsamında `ordered` yönergelere izin verilmez.
+- `ordered``critical`yönergeler bölgelerle aynı şekilde bağlansa bölgelerin dinamik kapsamı içinde yönergelere izin verilmez `parallel` .
 
 - Paralel bir bölgenin içinde dinamik olarak yürütülene izin verilen herhangi bir yönerge, paralel bir bölgenin dışında yürütüldüğünde de izin verilir. Kullanıcı tarafından belirtilen paralel bölgenin dışında dinamik olarak yürütüldüğünde, yönerge yalnızca ana iş parçacığından oluşan bir takım tarafından yürütülür.

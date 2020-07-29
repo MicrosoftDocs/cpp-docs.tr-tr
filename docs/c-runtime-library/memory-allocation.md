@@ -8,49 +8,49 @@ helpviewer_keywords:
 - memory, managing
 - memory, allocation
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
-ms.openlocfilehash: bcc9865b149c2289f99f6ee13f31179ae58a15e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2adfd0de21a5dc7a1f3aa65041a6b8a9a9cf1d69
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342516"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189512"
 ---
 # <a name="memory-allocation"></a>Bellek Ayırma
 
-Ücretsiz olarak ayırmak için bu yordamları kullanın ve belleği yeniden tahsis.
+Belleği ayırmak, serbest bırakmak ve yeniden ayırmak için bu yordamları kullanın.
 
-## <a name="memory-allocation-routines"></a>Bellek ayırma rutinleri
+## <a name="memory-allocation-routines"></a>Bellek ayırma yordamları
 
-|Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Yordam|Kullanın|
 |-------------|---------|
-|[_alloca](../c-runtime-library/reference/alloca.md), [_malloca](../c-runtime-library/reference/malloca.md)|Yığından bellek ayırma|
-|[calloc](../c-runtime-library/reference/calloc.md)|Her bayt 0 ayrılmış bir blok, başlatma, dizi için depolama alanı Ayır|
-|[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Hata ayıklama sürümü, **calloc**; çalışma zamanı kitaplıklarının hata ayıklama sürümlerini yalnızca kullanılabilir|
-|[delete işleci](../c-runtime-library/operator-delete-crt.md)|Ayrılan boş blok|
-|[delete işleci&#91;&#93;](../c-runtime-library/delete-operator-crt.md)|Ayrılan boş blok|
-|[_expand](../c-runtime-library/reference/expand.md)|Bellek bloğunu taşımadan genişlemesine veya|
-|[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Hata ayıklama sürümü, **_expand**; çalışma zamanı kitaplıklarının hata ayıklama sürümlerini yalnızca kullanılabilir|
-|[free](../c-runtime-library/reference/free.md)|Ayrılan boş blok|
-|[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Hata ayıklama sürümü, **ücretsiz**; çalışma zamanı kitaplıklarının hata ayıklama sürümlerini yalnızca kullanılabilir|
-|[_freea](../c-runtime-library/reference/freea.md)|Yığından ayrılan boş blok|
-|[_get_heap_handle](../c-runtime-library/reference/get-heap-handle.md)|CRT yığın Win32 ele alın.|
-|[_heapadd](../c-runtime-library/heapadd.md)|Yığına bellek ekleyin|
-|[_heapchk](../c-runtime-library/reference/heapchk.md)|Tutarlılık denetimi yığın|
-|[_heapmin](../c-runtime-library/reference/heapmin.md)|Yığında kullanılmayan belleği serbest|
-|[_heapset](../c-runtime-library/heapset.md)|Boş yığın girişleri belirtilen değerle doldurun.|
-|[_heapwalk](../c-runtime-library/reference/heapwalk.md)|Yığında her giriş hakkında bilgi döndürür|
-|[malloc](../c-runtime-library/reference/malloc.md)|Yığından bellek bloğu ayrılamadı|
-|[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Hata ayıklama sürümü, **malloc**; çalışma zamanı kitaplıklarının hata ayıklama sürümlerini yalnızca kullanılabilir|
-|[_msize](../c-runtime-library/reference/msize.md)|Ayrılmış bir blok boyutunu döndürür|
-|[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Hata ayıklama sürümü, **_msize**; çalışma zamanı kitaplıklarının hata ayıklama sürümlerini yalnızca kullanılabilir|
-|[new](../c-runtime-library/operator-new-crt.md)|Yığından bellek bloğu ayrılamadı|
-|[Yeni&#91;&#93;](../c-runtime-library/new-operator-crt.md)|Yığından bellek bloğu ayrılamadı|
-|[_query_new_handler](../c-runtime-library/reference/query-new-handler.md)|Tarafından belirlenen geçerli yeni işleyici rutinini adresini döndürmek **_set_new_handler**|
-|[_query_new_mode](../c-runtime-library/reference/query-new-mode.md)|Yeni işleyici modunu belirlediği gösteren dönüş tamsayı **_set_new_mode** için **malloc**|
-|[realloc](../c-runtime-library/reference/realloc.md)|Yeni boyut bloğuna yeniden ayırın|
-|[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|Hata ayıklama sürümü, **realloc**; çalışma zamanı kitaplıklarının hata ayıklama sürümlerini yalnızca kullanılabilir|
-|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Hata işleme mekanizması etkinleştirme zaman **yeni** işleci başarısız (bellek ayırmak) ve C++ standart kitaplık derlemeyi etkinleştir|
-|[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|İçin yeni işleyici modunu ayarlama **malloc**|
+|[_alloca](../c-runtime-library/reference/alloca.md), [_malloca](../c-runtime-library/reference/malloca.md)|Yığından bellek ayır|
+|[calloc](../c-runtime-library/reference/calloc.md)|Ayrılan bloktaki her baytı 0 ' a başlatarak dizi için depolama alanını ayırın|
+|[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|**Calloc**öğesinin hata ayıklama sürümü yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[delete işleci](../c-runtime-library/operator-delete-crt.md)|Serbest ayrılmış blok|
+|[Delete&#91;&#93;işleci](../c-runtime-library/delete-operator-crt.md)|Serbest ayrılmış blok|
+|[_expand](../c-runtime-library/reference/expand.md)|Bellek bloğunu taşımadan genişletme veya küçültme|
+|[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|**_Expand**hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[Süz](../c-runtime-library/reference/free.md)|Serbest ayrılmış blok|
+|[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Hata ayıklama sürümü **ücretsiz**; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[_freea](../c-runtime-library/reference/freea.md)|Yığından boş ayrılmış blok|
+|[_get_heap_handle](../c-runtime-library/reference/get-heap-handle.md)|CRT yığınının Win32 TANıTıCıSıNı alın.|
+|[_heapadd](../c-runtime-library/heapadd.md)|Yığına bellek ekleme|
+|[_heapchk](../c-runtime-library/reference/heapchk.md)|Yığını tutarlılık denetimi|
+|[_heapmin](../c-runtime-library/reference/heapmin.md)|Kullanılmayan belleği yığında serbest bırak|
+|[_heapset](../c-runtime-library/heapset.md)|Boş yığın girdilerini belirtilen değere doldur|
+|[_heapwalk](../c-runtime-library/reference/heapwalk.md)|Yığındaki her giriş hakkında bilgi döndür|
+|[malloc](../c-runtime-library/reference/malloc.md)|Yığından bellek bloğunu ayır|
+|[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|**Malloc**hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[_msize](../c-runtime-library/reference/msize.md)|Ayrılmış bloğun dönüş boyutu|
+|[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|**_Msize**hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[Yeni](../c-runtime-library/operator-new-crt.md)|Yığından bellek bloğunu ayır|
+|[Yeni&#91;&#93;](../c-runtime-library/new-operator-crt.md)|Yığından bellek bloğunu ayır|
+|[_query_new_handler](../c-runtime-library/reference/query-new-handler.md)|**_Set_new_handler** tarafından ayarlanan geçerli yeni işleyici yordamının dönüş adresi|
+|[_query_new_mode](../c-runtime-library/reference/query-new-mode.md)|**Malloc** için **_set_new_mode** tarafından ayarlanan yeni işleyici modunu belirten tamsayı döndür|
+|[realloc](../c-runtime-library/reference/realloc.md)|Bloğu yeni boyuta göre yeniden tahsis edin|
+|[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|**Realloc**'ın hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|**`new`** Operatör başarısız olduğunda (bellek ayırmak için) ve C++ standart kitaplıklarının derlemesini etkinleştirmek için hata işleme mekanizmasını etkinleştirin|
+|[_set_new_mode](../c-runtime-library/reference/set-new-mode.md)|**Malloc** için yeni işleyici modu ayarla|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

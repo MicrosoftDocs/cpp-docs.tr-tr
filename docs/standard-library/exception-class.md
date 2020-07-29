@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - exception class
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
-ms.openlocfilehash: 5bef8190889ae00298760ea395fb524f557c2be2
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: fd3fb3c48e9501b7aaf90bca14ea98530b245ec0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446822"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228277"
 ---
 # <a name="exception-class"></a>exception Class
 
-Sınıfı, belirli ifadeler ve C++ standart kitaplık tarafından oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
+Sınıfı, belirli ifadeler ve C++ standart kitaplığı tarafından oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,13 +34,13 @@ class exception {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Özellikle, bu temel sınıf, [\<stdexcept >](../standard-library/stdexcept.md)tanımlanan standart özel durum sınıflarının köküdür. `what` tarafından döndürülen C dizesi değeri varsayılan Oluşturucu tarafından belirtilmemiş, ancak uygulama tanımlı bir C dizesi olarak belirli türetilmiş sınıfların oluşturucuları tarafından tanımlanabilir. Üye işlevlerinin hiçbiri özel durum oluşturmaz.
+Özellikle, bu temel sınıf, içinde tanımlanan standart özel durum sınıflarının köküdür [\<stdexcept>](../standard-library/stdexcept.md) . Tarafından döndürülen C dize değeri `what` Varsayılan Oluşturucu tarafından belirtilmemiş, ancak uygulama tanımlı bir c dizesi olarak belirli türetilmiş sınıflar için oluşturucular tarafından tanımlanabilir. Üye işlevlerinin hiçbiri özel durum oluşturmaz.
 
-**İnt** parametresi, hiçbir belleğin ayrılmamalıdır belirtmenize izin verir. **İnt** değeri yok sayılır.
+**`int`** Parametresi, hiçbir belleğin ayrılmamalıdır belirtmenize izin verir. Değeri **`int`** yok sayılır.
 
 > [!NOTE]
-> `exception(const char* const &message)` ve `exception(const char* const &message, int)` oluşturucular, C++ standart kitaplık için Microsoft uzantılarıdır.
+> Oluşturucular `exception(const char* const &message)` ve `exception(const char* const &message, int)` C++ standart kitaplığı için Microsoft uzantılarıdır.
 
 ## <a name="example"></a>Örnek
 
-`exception` sınıfından devraldığı standart özel durum sınıflarının kullanımıyla ilgili örnekler için, bkz. [\<stdexcept >](../standard-library/stdexcept.md)tanımlanmış sınıflar.
+Sınıfından devraldığı standart özel durum sınıflarının kullanımı örnekleri için `exception` , içinde tanımlanan sınıflardan herhangi birine bakın [\<stdexcept>](../standard-library/stdexcept.md) .

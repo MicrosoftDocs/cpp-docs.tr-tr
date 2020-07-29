@@ -2,12 +2,12 @@
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 393fadbba90b135e6394cf848668b4957a6d7ce2
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: e0ea4de44f5215f47fe8c1a5e018bd91a82708ac
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404840"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87182817"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
@@ -21,11 +21,11 @@ C++ AMP, bir [concurrency:: Graphics](../../parallel/amp/reference/concurrency-g
 
 ## <a name="the-norm-and-unorm-types"></a>Norm ve unorm türleri
 
-`norm`Ve `unorm` türleri, **float** değerlerinin aralığını sınırlayan skaler türlerdir; bu, *clamping*olarak bilinir. Bu türler, diğer skaler türlerden açık bir şekilde oluşturulabilir. Atama sırasında, değer önce **float** 'e, sonra da norm [-1,0, 1,0] veya unorm [0,0, 1,0] tarafından izin verilen ilgili bölgeye çakışıyor. +/-Infinity atama +/-1 döndürür. NaN 'dan atama tanımsız. Bir norm, bir unorm 'den örtülü olarak oluşturulabilir ve veri kaybı olmaz. Kayan kapalı dönüştürme işleci bu türlerde tanımlanmıştır. İkili işleçler bu türler ve **float** ve **int**gibi diğer yerleşik skaler türler arasında tanımlanır: +,-, \* ,/, = =,! =, >, \<, > =, <=. Bileşik atama işleçleri de desteklenir: + =,-=, \* =,/=. Birli olumsuzlama işleci (-), norm türleri için tanımlanır.
+`norm`Ve `unorm` türleri, değer aralığını sınırlayan skaler türlerdir **`float`** ; Bu, *clamping*olarak bilinir. Bu türler, diğer skaler türlerden açık bir şekilde oluşturulabilir. Atama sırasında, değer ilk olarak öğesine ayarlanır **`float`** ve sonra norm [-1,0, 1,0] veya unorm [0,0, 1,0] tarafından izin verilen ilgili bölgeye çakışıyor. +/-Infinity atama +/-1 döndürür. NaN 'dan atama tanımsız. Bir norm, bir unorm 'den örtülü olarak oluşturulabilir ve veri kaybı olmaz. Kayan kapalı dönüştürme işleci bu türlerde tanımlanmıştır. İkili işleçler bu türler ve ve gibi diğer yerleşik skaler türler arasında tanımlanır **`float`** **`int`** : +,-, \* ,/, = =,! =, >, \<, > =, <=. Bileşik atama işleçleri de desteklenir: + =,-=, \* =,/=. Birli olumsuzlama işleci (-), norm türleri için tanımlanır.
 
 ## <a name="short-vector-library"></a>Kısa vektör kitaplığı
 
-Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](https://go.microsoft.com/fwlink/p/?linkid=248500) bazı işlevlerini sağlar ve genellikle dokcası tanımlamak için kullanılır. Kısa bir vektör, aynı türde bir ile dört arasında değer tutan bir veri yapısıdır. Desteklenen türler **Double**, **float**, **int**, `norm` , `uint` ve ' dir `unorm` . Tür adları aşağıdaki tabloda gösterilmiştir. Her tür için, adında alt çizgi olmayan karşılık gelen bir **typedef** de vardır. Alt çizgileri olan türler [concurrency:: Graphics ad uzayında](../../parallel/amp/reference/concurrency-graphics-namespace.md)bulunur. Alt çizgilere sahip olmayan türler, **__int8** ve **__int16**gibi benzer adlandırılmış temel türlerden açıkça ayrılmaları için [Concurrency:: Graphics::d irect3d ad alanında](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) yer alırlar.
+Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](https://go.microsoft.com/fwlink/p/?linkid=248500) bazı işlevlerini sağlar ve genellikle dokcası tanımlamak için kullanılır. Kısa bir vektör, aynı türde bir ile dört arasında değer tutan bir veri yapısıdır. Desteklenen türler,,,, ve ' dir **`double`** **`float`** **`int`** `norm` `uint` `unorm` . Tür adları aşağıdaki tabloda gösterilmiştir. Her tür için, adında alt çizgi olmayan karşılık gelen bir de vardır **`typedef`** . Alt çizgileri olan türler [concurrency:: Graphics ad uzayında](../../parallel/amp/reference/concurrency-graphics-namespace.md)bulunur. Alt çizgilere sahip olmayan türler, ve gibi benzer adlandırılmış temel türlerden açıkça ayrılmaları için [concurrency:: Graphics::d Irect3d ad alanında](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) yer alırlar **`__int8`** **`__int16`** .
 
 ||Uzunluk 2|Uzunluk 3|Uzunluk 4|
 |-|--------------|--------------|--------------|
@@ -63,7 +63,7 @@ Kısa vektör kitaplığı, `vector_type.identifier` bir kısa vector bileşenin
 
 Birçok GPU, pikselleri ve dokuları getirmek ve görüntüleri ve dokuları işlemek için optimize edilmiş donanım ve önbelleklerdir. Doku hücresi değerinin nesnelerine yönelik bir kapsayıcı sınıfı olan [doku \<T,N> ](../../parallel/amp/reference/texture-class.md) sınıfı, bu GPU 'ların doku işlevlerini gösterir. Bir doku hücresi değerinin şu olabilir:
 
-- Bir **int**, `uint` , **float**, **Double**, `norm` veya `unorm` skaler.
+- ,,,, **`int`** `uint` **`float`** **`double`** `norm` Veya `unorm` skaler.
 
 - İki veya dört bileşeni olan kısa bir vektör. Tek özel durum `double_4` , buna izin verilmez.
 
@@ -214,7 +214,7 @@ Nesnelere yazmak için [texture:: set](reference/texture-class.md#set) metodunu 
 
 - T 'in yalnızca bir skaler bileşeni vardır. (Kısa vektörlerine izin verilmez.)
 
-- T **Double**, `norm` , veya değil `unorm` .
+- T **`double`** , `norm` , veya değildir `unorm` .
 
 - `texture::bits_per_scalar_element`Özelliği 32 ' dir.
 
@@ -402,7 +402,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 });
 ```
 
-## <a name="interoperability"></a>Birlikte Çalışabilirlik
+## <a name="interoperability"></a>Birlikte çalışabilirlik
 
 C++ AMP çalışma zamanı `texture<T,1>` Ile [ID3D11Texture1D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=248503)arasında birlikte çalışabilirliği destekler, `texture<T,2>` ile [ID3D11Texture2D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255317)arasında ve ile `texture<T,3>` [ID3D11Texture3D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255377)arasında. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir nesnesi alır `texture` ve bir arabirim döndürür `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirim ve bir nesnesi alır `accelerator_view` ve bir nesne döndürür `texture` .
 

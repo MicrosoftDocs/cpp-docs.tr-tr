@@ -1,5 +1,5 @@
 ---
-title: karmaşık&lt;uzun çift&gt;
+title: karmaşık &lt; uzun çift&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - std::complex<long double>
@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - complex<long double> function
 ms.assetid: 37591991-b385-46e9-b727-d534dbc10432
-ms.openlocfilehash: 5de4fc2305ef2ac6e523dcb02782455245b99429
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 73027ba76d608424b1a6da346e861b10c66989fe
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302347"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228394"
 ---
-# <a name="complexltlong-doublegt"></a>karmaşık&lt;uzun çift&gt;
+# <a name="complexltlong-doublegt"></a>karmaşık &lt; uzun çift&gt;
 
-Bu açıkça özelleştirilmiş sınıf şablonu, her ikisi de **Long Double**türünde, her ikisi de karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden bir nesne çifti depolayan bir nesneyi tanımlar.
+Bu açıkça özelleştirilmiş sınıf şablonu, her ikisi de, **`long double`** karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden, her ikisi de türündeki sıralı bir nesne çiftini depolayan bir nesneyi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <>
@@ -39,25 +39,25 @@ complex(
 ### <a name="parameters"></a>Parametreler
 
 *_RealVal*\
-Oluşturulan karmaşık sayının gerçek parçası için **Long Double** türü değeri.
+**`long double`** Oluşturulan karmaşık sayının gerçek parçası için tür değeri.
 
 *_ImagVal*\
-Oluşturulan karmaşık sayının sanal parçası için **Long Double** türü değeri.
+**`long double`** Oluşturulmakta olan karmaşık sayının sanal parçasının tür değeri.
 
 *Karmaşıksayı*\
-Gerçek ve sanal parçaları oluşturulan karmaşık sayıda **Long Double** türü başlatmak için kullanılan **Double** veya **float** türünde karmaşık sayı.
+**`double`** **`float`** Oluşturulan karmaşık bir tür türü başlatmak için gerçek ve sanal parçaları kullanılan tür veya türün karmaşık sayısı **`long double`** .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Uzun çift**türünde karmaşık bir sayı.
+Karmaşık türden bir sayıdır **`long double`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonunun açık özelleşmesi, **Long Double** türündeki karmaşık bir sınıfa `complex`, yalnızca tanımladığı oluşturuculardaki sınıf şablonundan farklıdır. **Long Double** 'dan **float** 'e dönüştürmenin örtük olmasına izin verilir, ancak **Double** 'tan **Long Double** 'a dönüştürmenin **Açık**olması gerekir. Atama söz dizimini kullanarak tür dönüşümle başlatma, **Açık** kuralların kullanımı.
+Sınıf şablonunun açıkça `complex` bir tür karmaşık özelleştirmesi, **`long double`** sınıf şablonundan yalnızca tanımladığı oluşturucularda farklılık gösterir. Öğesinden öğesine dönüştürmenin **`long double`** **`float`** örtük olmasına izin verilir, ancak öğesinden **`double`** öğesine dönüştürmenin **`long double`** olması gerekir **`explicit`** . **`explicit`** Atama söz dizimini kullanarak tür dönüşümle başlatma kurallarını kullanma.
 
-Sınıf şablonu `complex` ve üyeleri hakkında daha fazla bilgi için bkz. [Complex Class](../standard-library/complex-class.md).
+Sınıf şablonu ve üyeleri hakkında daha fazla bilgi için `complex` bkz. [Complex Class](../standard-library/complex-class.md).
 
-**Microsoft 'a özgü**: **uzun çift** ve **çift** türleri aynı gösterimine sahiptir, ancak farklı türlerdir. Daha fazla bilgi için bkz. [Yerleşik türler](../cpp/fundamental-types-cpp.md).
+**Microsoft 'a özgü**: **`long double`** ve **`double`** türleri aynı gösterimine sahiptir, ancak farklı türlerdir. Daha fazla bilgi için bkz. [Yerleşik türler](../cpp/fundamental-types-cpp.md).
 
 ## <a name="example"></a>Örnek
 
@@ -117,11 +117,11 @@ arg( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<karmaşık >
+**Üst bilgi**:\<complex>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [karmaşık sınıf](../standard-library/complex-class.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

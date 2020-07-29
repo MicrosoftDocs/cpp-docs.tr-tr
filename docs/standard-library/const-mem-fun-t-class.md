@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun_t class
 ms.assetid: f169d381-019b-4a0e-a9a3-54da6d948270
-ms.openlocfilehash: 5263612a26b2bcb606ad712a2a8e0a521ce9437a
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 6b34fb6b20b2aaf2f18fbe8d937e50bdbaa3bdff
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688201"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228355"
 ---
 # <a name="const_mem_fun_t-class"></a>const_mem_fun_t Sınıfı
 
 Bir başvuru bağımsız değişkeniyle başlatıldığında birli işlev nesnesi olarak çağrılması için bağımsız değişken alan bir const üye işlevine izin veren bir bağdaştırıcı sınıfı. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Result, class Type>
@@ -30,10 +30,10 @@ class const_mem_fun_t : public unary_function <Type *, Result>
 
 ### <a name="parameters"></a>Parametreler
 
-*Pm* \
-İşlev nesnesine dönüştürülecek `Type` sınıfının üye işlevine yönelik bir işaretçi.
+*9*\
+İşlev nesnesine dönüştürülecek sınıfın üye işlevine yönelik bir işaretçi `Type` .
 
-*Pleft* \
+*Pleft*\
 *PM* üye işlevinin çağrıldığı nesne.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -42,8 +42,8 @@ Uyarlanabilir bir birli işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, bir özel üye nesnesinde `Type` sınıfının üye işlevine bir işaretçi olması gereken *PM*kopyasını depolar. @No__t_0 üye işlevini, döndüren (`Pleft` -> \* `Pm`) () **const**olarak tanımlar.
+Sınıf şablonu, bir *Pm* `Type` özel üye nesnesinde, sınıfının üye işlevine bir Işaretçi olması gereken PM kopyasını depolar. Üye işlevini `operator()` döndüren ( `Pleft` -> \* `Pm` ) () olarak tanımlar **`const`** .
 
 ## <a name="example"></a>Örnek
 
-@No__t_0 Oluşturucusu genellikle doğrudan kullanılmaz; `mem_fun` yardımcı işlevi, üye işlevlerini uyarlamak için kullanılır. Üye işlev bağdaştırıcılarını nasıl kullanacağınızı gösteren bir örnek için bkz. [mem_fun](../standard-library/functional-functions.md#mem_fun) .
+Oluşturucusu `const_mem_fun_t` genellikle doğrudan kullanılmaz; yardımcı işlevi `mem_fun` üye işlevlerini uyarlamak için kullanılır. Üye işlev bağdaştırıcılarını nasıl kullanacağınızı gösteren bir örnek için bkz. [mem_fun](../standard-library/functional-functions.md#mem_fun) .

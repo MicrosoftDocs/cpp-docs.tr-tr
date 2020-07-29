@@ -33,12 +33,12 @@ f1_keywords:
 - ppltasks/concurrency::when_all
 - ppltasks/concurrency::when_any
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-ms.openlocfilehash: 2eb5b908d66b221e9efae20ba04e2963805798ab
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: 86324d126fa1c3b659e6500579c4a1d220874094
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446612"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87182752"
 ---
 # <a name="concurrency-namespace-functions"></a>eşzamanlılık ad alanı işlevleri
 
@@ -110,7 +110,7 @@ Gönderilecek verilere bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ileti döndürülen yöntemin önüne kabul edildiyse **true** , aksi takdirde **false** .
+**`true`** ileti, yöntem döndürülmeden önce kabul edildiyse, **`false`** tersi durumda.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -199,7 +199,7 @@ Bu yöntem için birden çok sonraki çağrı Kaynak Yöneticisi aynı örneğin
 
 ## <a name="create_task"></a><a name="create_task"></a>create_task
 
-Bir PPL [görev](task-class.md) nesnesi oluşturur. `create_task`, bir görev oluşturucusunu kullandığınız her yerde kullanılabilir. Görev oluştururken anahtar sözcüğünün kullanılmasına izin verdiğinden, genellikle kolaylık sağlaması için sağlanır `auto` .
+Bir PPL [görev](task-class.md) nesnesi oluşturur. `create_task`, bir görev oluşturucusunu kullandığınız her yerde kullanılabilir. Görev oluştururken anahtar sözcüğünün kullanılmasına izin verdiğinden, genellikle kolaylık sağlaması için sağlanır **`auto`** .
 
 ```cpp
 template<typename T>
@@ -408,7 +408,7 @@ inline void interruption_point();
 
 ## <a name="is_current_task_group_canceling"></a><a name="is_current_task_group_canceling"></a>is_current_task_group_canceling
 
-Geçerli bağlamda şu anda yürütülmekte olan görev grubunun etkin bir iptal etme (veya kısa bir süre) üzerinde olup olmadığına ilişkin bir gösterge döndürür. Geçerli bağlamda şu anda bir görev grubu yürütülerek `false` döndürülmeyeceğini unutmayın.
+Geçerli bağlamda şu anda yürütülmekte olan görev grubunun etkin bir iptal etme (veya kısa bir süre) üzerinde olup olmadığına ilişkin bir gösterge döndürür. Geçerli bağlamda şu anda bir görev grubu yürütülerek **`false`** döndürülmeyeceğini unutmayın.
 
 ```cpp
 bool __cdecl is_current_task_group_canceling();
@@ -416,7 +416,7 @@ bool __cdecl is_current_task_group_canceling();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda yürütülmekte olan görev grubu iptal edildiğinde **true** , aksi takdirde **false** .
+**`true`** Şu anda yürütülmekte olan görev grubu iptal edildiğinde, **`false`** tersi durumda.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -679,7 +679,7 @@ Sıralanacak aralıktaki son öğeden sonraki konumu ele alarak rastgele erişim
 C++ standart kitaplığı uyumlu bellek ayırıcı örneği.
 
 *_Func*<br/>
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir.
 
 *_Chunk_size*<br/>
 Paralel yürütme için ikiye bölünecek bir öbekin en büyük boyutu.
@@ -767,7 +767,7 @@ Dizinde, yinelemeye dahil edilecek son dizinden bir dizin.
 Her yinelemede yürütülecek işlev. Bu bir lambda ifadesi, bir işlev işaretçisi veya imza ile işlev çağrısı işlecinin bir sürümünü destekleyen herhangi bir nesne olabilir `void operator()(_Index_type)` .
 
 *_Part*<br/>
-Bölümleyici nesnesine bir başvuru. Bağımsız değişken `const` [auto_partitioner](auto-partitioner-class.md) `&` , `const` [static_partitioner](static-partitioner-class.md) `&` , `const` [simple_partitioner](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) bir `&` [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılırsa, bu başvuru const olmayan bir l-değer başvurusu olmalıdır ve bu sayede algoritma, daha sonra yeniden kullanmak üzere Gelecekteki döngülerde durum depolayabilirler.
+Bölümleyici nesnesine bir başvuru. Bağımsız değişken **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , **`const`** [simple_partitioner](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) bir `&` [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılırsa, bu başvuru const olmayan bir l-değer başvurusu olmalıdır ve bu sayede algoritma, daha sonra yeniden kullanmak üzere Gelecekteki döngülerde durum depolayabilirler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -811,7 +811,7 @@ Paralel yinelemeye dahil edilecek son öğeden önceki konumu ele alan bir yinel
 Aralıktaki her öğeye uygulanan Kullanıcı tanımlı bir işlev nesnesi.
 
 *_Part*<br/>
-Bölümleyici nesnesine bir başvuru. Bağımsız değişken `const` [auto_partitioner](auto-partitioner-class.md) `&` , `const` [static_partitioner](static-partitioner-class.md) `&` , `const` [simple_partitioner](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) bir `&` [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılırsa, bu başvuru const olmayan bir l-değer başvurusu olmalıdır ve bu sayede algoritma, daha sonra yeniden kullanmak üzere Gelecekteki döngülerde durum depolayabilirler.
+Bölümleyici nesnesine bir başvuru. Bağımsız değişken **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , **`const`** [simple_partitioner](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) bir `&` [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılırsa, bu başvuru const olmayan bir l-değer başvurusu olmalıdır ve bu sayede algoritma, daha sonra yeniden kullanmak üzere Gelecekteki döngülerde durum depolayabilirler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1209,7 +1209,7 @@ Sıralanacak aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir
 Sıralanacak aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
 *_Func*<br/>
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir.
 
 *_Chunk_size*<br/>
 Paralel yürütme için ikiye bölünecek en küçük bir öbek boyutu.
@@ -1325,7 +1325,7 @@ Hedef aralıktaki ilk öğenin konumunu ele alarak çıkış Yineleyici.
 Kaynak aralıktaki her öğeye uygulanan Kullanıcı tanımlı birli işlev nesnesi.
 
 *_Part*<br/>
-Bölümleyici nesnesine bir başvuru. Bağımsız değişken `const` [auto_partitioner](auto-partitioner-class.md) `&` , `const` [static_partitioner](static-partitioner-class.md) `&` , `const` [simple_partitioner](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) bir `&` [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılırsa, bu başvuru const olmayan bir l-değer başvurusu olmalıdır ve bu sayede algoritma, daha sonra yeniden kullanmak üzere Gelecekteki döngülerde durum depolayabilirler.
+Bölümleyici nesnesine bir başvuru. Bağımsız değişken **`const`** [auto_partitioner](auto-partitioner-class.md) `&` , **`const`** [static_partitioner](static-partitioner-class.md) `&` , **`const`** [simple_partitioner](simple-partitioner-class.md) `&` veya [affinity_partitioner](affinity-partitioner-class.md) bir `&` [affinity_partitioner](affinity-partitioner-class.md) nesnesi kullanılırsa, bu başvuru const olmayan bir l-değer başvurusu olmalıdır ve bu sayede algoritma, daha sonra yeniden kullanmak üzere Gelecekteki döngülerde durum depolayabilirler.
 
 *first2*<br/>
 Üzerinde çalıştırılacak ikinci kaynak aralıktaki ilk öğenin konumunu ele alan bir giriş Yineleyici.
@@ -1452,7 +1452,7 @@ Gönderilecek verilere bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ileti kabul edildiyse **true** , aksi takdirde **false** .
+**`true`** ileti kabul edildiyse, **`false`** tersi durumda.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1605,7 +1605,7 @@ Verilen nesnenin adı.
 
 ## <a name="try_receive"></a><a name="try_receive"></a>try_receive
 
-Bir bağlamın tam olarak bir kaynaktan verileri arayacağı ve kabul edilen değerleri filtrelemesine izin veren genel bir TRY-Receive uygulamasıdır. Veriler hazırsanız, yöntem **false**döndürür.
+Bir bağlamın tam olarak bir kaynaktan verileri arayacağı ve kabul edilen değerleri filtrelemesine izin veren genel bir TRY-Receive uygulamasıdır. Veriler hazırsanız, yöntemi döndürür **`false`** .
 
 ```cpp
 template <class T>
@@ -1643,7 +1643,7 @@ Sonucun yerleştirileceği konuma bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`bool`Bir yükün yerleştirilmiş olup olmadığını gösteren bir değer `_value` .
+**`bool`** Bir yükün yerleştirilmiş olup olmadığını gösteren bir değer `_value` .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1696,7 +1696,7 @@ Ortaya çıkan görevde birleştirilecek öğe aralığının ötesinde ilk öğ
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tüm giriş görevleri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri tür ise `T` , bu işlevin çıktısı bir olur `task<std::vector<T>>` . Giriş görevleri tür ise, `void` çıkış görevi de olur `task<void>` .
+Tüm giriş görevleri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri tür ise `T` , bu işlevin çıktısı bir olur `task<std::vector<T>>` . Giriş görevleri tür ise, **`void`** çıkış görevi de olur `task<void>` .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1749,7 +1749,7 @@ Döndürülen görevin iptalini denetleyen iptal belirteci. İptal belirteci sa�
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş görevlerinden herhangi biri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri tür ise `T` , bu işlevin çıktısı bir olur `task<std::pair<T, size_t>>>` . burada, çiftin ilk öğesi tamamlanma görevinin sonucu olur ve ikinci öğe, tamamlanmış görevin dizinidir. Giriş görevleri, `void` Çıkış bir ise `task<size_t>` , sonuç tamamlanma görevinin dizinidir.
+Giriş görevlerinden herhangi biri başarıyla tamamlandığında başarıyla tamamlanan bir görev. Giriş görevleri tür ise `T` , bu işlevin çıktısı bir olur `task<std::pair<T, size_t>>>` . burada, çiftin ilk öğesi tamamlanma görevinin sonucu olur ve ikinci öğe, tamamlanmış görevin dizinidir. Giriş görevleri, **`void`** Çıkış bir ise `task<size_t>` , sonuç tamamlanma görevinin dizinidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
