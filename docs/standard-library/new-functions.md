@@ -1,21 +1,21 @@
 ---
-title: Yeni&gt; işlevleri &lt;
+title: '&lt;Yeni &gt; işlevler'
 ms.date: 11/04/2016
 f1_keywords:
 - new/std::get_new_handler
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-ms.openlocfilehash: c912e5be07ea0ebdd3148d30c80c39a5f8cfa1a5
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6b51a5bcbb9c90370cef1391d4020862d2e2cefd
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419842"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212182"
 ---
-# <a name="ltnewgt-functions"></a>Yeni&gt; işlevleri &lt;
+# <a name="ltnewgt-functions"></a>&lt;Yeni &gt; işlevler
 
-## <a name="get_new_handler"></a>get_new_handler
+## <a name="get_new_handler"></a><a name="get_new_handler"></a>get_new_handler
 
 ```cpp
 new_handler get_new_handler() noexcept;
@@ -23,9 +23,9 @@ new_handler get_new_handler() noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `new_handler`döndürür.
+Geçerli öğesini döndürür `new_handler` .
 
-## <a name="launder"></a>eksik
+## <a name="launder"></a><a name="launder"></a>eksik
 
 ```cpp
 template <class T>
@@ -34,12 +34,12 @@ template <class T>
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*\
+*kaydetmeye*\
 Türü *T*'ye benzer bir nesneyi tutan bellekteki bir baytın adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-X 'e işaret eden *T\** türünde bir değer.
+X 'e işaret eden *T \* * türünde bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -59,9 +59,9 @@ const int b = p->n; // undefined behavior
 const int c = std::launder(p)->n; // OK
 ```
 
-## <a name="nothrow"></a>nothrow
+## <a name="nothrow"></a><a name="nothrow"></a>nothrow
 
-**New** ve **Delete**'in **nothrow** sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar.
+Ve sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar **`nothrow`** **`new`** **`delete`** .
 
 ```cpp
 extern const std::nothrow_t nothrow;
@@ -73,9 +73,9 @@ Nesne, [std:: nothrow_t](../standard-library/nothrow-t-structure.md)parametre t�
 
 ### <a name="example"></a>Örnek
 
-`std::nothrow_t` işlev parametresi olarak nasıl kullanıldığına ilişkin örnekler için [New işlecine](../standard-library/new-operators.md#op_new) ve [New&#91; ](../standard-library/new-operators.md#op_new_arr) işlecine bakın.
+İşlev parametresi olarak nasıl kullanıldığına dair örnekler için bkz. [New işleci](../standard-library/new-operators.md#op_new) ve [New New&#91;&#93;](../standard-library/new-operators.md#op_new_arr) `std::nothrow_t` .
 
-## <a name="set_new_handler"></a>set_new_handler
+## <a name="set_new_handler"></a><a name="set_new_handler"></a>set_new_handler
 
 **Yeni işleç** , bellek ayırma denemesinde başarısız olduğunda çağrılacak bir Kullanıcı işlevi yüklüyor.
 
@@ -86,11 +86,11 @@ new_handler set_new_handler(new_handler Pnew) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Pnew*\
-Yüklenecek `new_handler`.
+`new_handler`Yüklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ilk çağrıda 0 ve sonraki çağrılarda önceki `new_handler`.
+ilk çağrıda 0 ve sonraki çağrıdan önceki `new_handler` çağrılar.
 
 ### <a name="remarks"></a>Açıklamalar
 

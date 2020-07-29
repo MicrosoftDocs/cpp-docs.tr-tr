@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: 1b084cab0e985f9ab8c593e22d972913130e4380
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: c29178c9640aa9f9eb70e03f624bcd54ab96b42c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813615"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231578"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması oluşturma (C++)
 
@@ -23,7 +23,7 @@ Windows API (Win32 API, Windows Masaüstü API 'SI ve Windows Classic API olarak
 > [!IMPORTANT]
 > Kısaltma açısından, bazı kod deyimleri metinde atlanır. Bu belgenin sonundaki [kod oluştur](#build-the-code) bölümünde kodun tamamı gösterilmektedir.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir.
 
@@ -141,9 +141,9 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    Bu işlevin parametreleri ve dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > Ya da veya gibi tüm ek sözcükler nelerdir `CALLBACK` `HINSTANCE` `_In_` ? Geleneksel Windows API 'si, tür ayrıntılarının ve platforma özgü kodun, çağırma kuralları, **__declspec** bildirimleri ve derleyici pragmaları gibi ayrıntıların bazılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makrolarını kullanır. Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve **Ctrl** + **K** **Ctrl** + tanımı içeren küçük bir açılır pencere için CTRL K, CTRL**i** tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > Ya da veya gibi tüm ek sözcükler nelerdir `CALLBACK` `HINSTANCE` `_In_` ? Geleneksel Windows API 'si, türleri ve API pragmalarını çağırma gibi türlerin ve platforma özgü kodun bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makrolarını kullanır **`__declspec`** . Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve **Ctrl** + **K** **Ctrl** + tanımı içeren küçük bir açılır pencere için CTRL K, CTRL**i** tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
-1. Windows masaüstü programları için &lt; Windows. h> gerekir. &lt;Tchar. h>, `TCHAR` UNICODE sembolü projenizde tanımlandıysa, aksi takdirde **char**olarak çözümlenirse, sonunda **wchar_t** için sonuç olarak çözümlenen makroyu tanımlar.  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca **wchar_t** doğrudan kullanabilirsiniz.
+1. Windows masaüstü programları için &lt; Windows. h> gerekir. &lt;Tchar. h>, `TCHAR` Bu makroyu tanımlar. Bu, sonunda **`wchar_t`** UNICODE sembolünün tanımlanmış olması, aksi durumda olarak çözümlenirse **`char`** .  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca doğrudan kullanabilirsiniz **`wchar_t`** .
 
    ```cpp
    #include <windows.h>

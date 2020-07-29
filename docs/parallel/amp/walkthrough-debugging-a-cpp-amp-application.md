@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 6eb93d617ac9909a67719b144a44ed461701225e
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 031fb3837dbefe500eb33f9509f3270204d19b89
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404723"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215887"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama
 
@@ -215,7 +215,7 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
 
 ## <a name="debugging-the-cpu-code"></a>CPU kodunda hata ayıklama
 
-Bu yordamda, bu uygulamadaki CPU kodunun doğru olduğundan emin olmak için yerel Windows hata ayıklayıcısı ' nı kullanacaksınız. Bu uygulamadaki CPU kodu segmenti, `for` işlev içindeki döngüdür `reduction_sum_gpu_kernel` . GPU üzerinde çalıştırılan ağaç tabanlı paralel küçültmeye göre kontrol eder.
+Bu yordamda, bu uygulamadaki CPU kodunun doğru olduğundan emin olmak için yerel Windows hata ayıklayıcısı ' nı kullanacaksınız. Bu uygulamadaki CPU kodu segmenti, **`for`** işlev içindeki döngüdür `reduction_sum_gpu_kernel` . GPU üzerinde çalıştırılan ağaç tabanlı paralel küçültmeye göre kontrol eder.
 
 ### <a name="to-debug-the-cpu-code"></a>CPU kodunda hata ayıklamak için
 

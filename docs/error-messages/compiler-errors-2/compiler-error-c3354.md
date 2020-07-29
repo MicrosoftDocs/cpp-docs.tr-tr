@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3354
 ms.assetid: 185de401-231e-4999-a149-172ee4c69d84
-ms.openlocfilehash: e5945b2112d1d03e4f18944d15028229cce4b668
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fdc5de7493decf1f44617ab22a00fb5e8852116f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738602"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231981"
 ---
 # <a name="compiler-error-c3354"></a>Derleyici hatası C3354
 
 ' function ': bir temsilci oluşturmak için kullanılan işlevin dönüş türü ' Type ' olamaz
 
-Aşağıdaki türler `delegate`için dönüş türleri olarak geçersizdir:
+Aşağıdaki türler, için dönüş türleri olarak geçersizdir **`delegate`** :
 
 - İşlev işaretçisi
 

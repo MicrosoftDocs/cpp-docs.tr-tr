@@ -1,5 +1,5 @@
 ---
-title: '/ ZC: externconstexpr (extern constexpr değişkenlerini etkinleştir)'
+title: /Zc:externConstexpr (extern constexpr değişkenlerini etkinleştir)
 ms.date: 02/28/2018
 f1_keywords:
 - /Zc:externConstexpr
@@ -7,36 +7,36 @@ helpviewer_keywords:
 - -Zc:externConstexpr compiler option (C++)
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-ms.openlocfilehash: 3c18a5310646ea39c0599f709e9fddc3990b7a2b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7546ab6d81137a2abb053cd18f0d5d74913c3b00
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315761"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211911"
 ---
-# <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>/ ZC: externconstexpr (extern constexpr değişkenlerini etkinleştir)
+# <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>`/Zc:externConstexpr`(Extern constexpr değişkenlerini etkinleştir)
 
-**/ZC: externconstexpr** derleyici seçeneği C++ standardına uygun ve dış bağlantısı için izin vermek için derleyiciye `constexpr` değişkenleri. Varsayılan olarak, Visual Studio her zaman sunan bir `constexpr` değişken iç bağlantı, belirttiğiniz olsa bile `extern` anahtar sözcüğü.
+**`/Zc:externConstexpr`** Derleyici seçeneği derleyicinin C++ standardına uymasını ve değişkenler için dış bağlantıya izin vermesini söyler **`constexpr`** . Varsayılan olarak, **`constexpr`** anahtar sözcüğünü belirtseniz bile Visual Studio her zaman bir iç bağlantı sağlar **`extern`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:externConstexpr**[**-**]
+> **`/Zc:externConstexpr`**[**`-`**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ZC: externconstexpr** derleyici seçeneği, harici bağlantı kullanılarak bildirilen değişkenler uygulamak derleyicinin neden `extern constexpr`. Varsayılan olarak ve Visual Studio'nun önceki sürümlerinde veya **/Zc:externConstexpr-** belirtilirse, Visual Studio iç bağlantı için geçerli `constexpr` değişkenleri bile `extern` anahtar sözcüğü kullanılır. **/ZC: externconstexpr** Visual Studio 2017 güncelleştirme 15.6 sürümünde başlangıç seçeneği kullanılabilir. ve varsayılan olarak kapalıdır. [/ Permissive-](permissive-standards-conformance.md) seçeneği sağlamaz **/ZC: externconstexpr**.
+**`/Zc:externConstexpr`** Derleyici seçeneği, derleyicinin kullanılarak belirtilen değişkenlere dış bağlantı uygulamasını sağlar `extern constexpr` . Visual Studio 'nun önceki sürümlerinde ve varsayılan olarak veya **`/Zc:externConstexpr-`** belirtilmişse, **`constexpr`** **`extern`** anahtar sözcüğü kullanılsa bile, Visual Studio değişkenlere iç bağlantı uygular. Bu **`/Zc:externConstexpr`** seçenek, Visual Studio 2017 güncelleştirme 15,6 ' den başlayarak kullanılabilir. ve varsayılan olarak kapalıdır. [`/permissive-`](permissive-standards-conformance.md)Seçenek etkin değil **`/Zc:externConstexpr`** .
 
-Bir üstbilgi dosyası bildirilen bir değişken içeriyorsa `extern constexpr`, işaretlenmesi gerekir [__declspec(selectany)](../../cpp/selectany.md) bağlı ikili dosyada tek bir örnek yinelenen bildirimlerini birleştirmek için. Aksi takdirde bağlayıcı hatalarını, örneğin, tek tanım kuralı ihlallerini için LNK2005 görebilirsiniz.
+Bir üst bilgi dosyası, tanımlanmış bir değişken içeriyorsa `extern constexpr` , [`__declspec(selectany)`](../../cpp/selectany.md) yinelenen bildirimleri bağlantılı ikilide tek bir örnekle birleştirmek için işaretlenmelidir. Aksi takdirde, tek tanım kuralı ihlalleri için LNK2005 gibi bağlayıcı hataları görebilirsiniz.
 
-### <a name="to-set-this-compiler-option-in-visual-studio"></a>Bu derleyici seçeneğini Visual Studio'da ayarlamak için
+### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio 'da Bu derleyici seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Ekleme **/ZC: externconstexpr** veya **/Zc:externConstexpr-** için **ek seçenekler:** bölmesi.
+1. **`/Zc:externConstexpr`** **`/Zc:externConstexpr-`** **Ek seçenekler:** bölmesine ekleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](zc-conformance.md)<br/>
-[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+[`/Zc`Uyumsuzlu](zc-conformance.md)<br/>
+[`auto`Sözcükle](../../cpp/auto-keyword.md)

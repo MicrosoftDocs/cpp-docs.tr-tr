@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-ms.openlocfilehash: 6155a89c9cbba67ce27253aa64ff70ca7871e748
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2a35a7b4d9581a11d889f3e66d0179c553c4fc25
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457682"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212169"
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 
@@ -19,7 +19,7 @@ Program denetimi altında depolama alanını ayırmayı ve boşaltmayı denetley
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yeni >
+**Üst bilgi:**\<new>
 
 **Ad alanı:** std
 
@@ -33,7 +33,7 @@ Bu üst bilgide belirtilen işlevlerden bazıları değiştirilebilir. Uygulama,
 
 |||
 |-|-|
-|[nothrow](../standard-library/new-functions.md#nothrow)|**New** ve **Delete**'in **nothrow** sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar.|
+|[nothrow](../standard-library/new-functions.md#nothrow)|Ve sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar **`nothrow`** **`new`** **`delete`** .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -56,7 +56,7 @@ Bu üst bilgide belirtilen işlevlerden bazıları değiştirilebilir. Uygulama,
 |||
 |-|-|
 |[delete işleci](../standard-library/new-operators.md#op_delete)|Nesnelerin ayrı olarak depolanmasını serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.|
-|[delete işleci&#91;&#93;](../standard-library/new-operators.md#op_delete_arr)|Bir nesne dizisi için depolamayı serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.|
+|[Delete&#91;&#93;işleci](../standard-library/new-operators.md#op_delete_arr)|Bir nesne dizisi için depolamayı serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.|
 |[New işleci](../standard-library/new-operators.md#op_new)|Ayrı nesneler için depolama alanı ayırmak üzere yeni bir ifade tarafından çağrılan işlev.|
 |[New işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|Bir nesne dizisi için depolama alanı ayırmak üzere yeni bir ifade tarafından çağrılan işlev.|
 
@@ -70,11 +70,11 @@ Bu üst bilgide belirtilen işlevlerden bazıları değiştirilebilir. Uygulama,
 
 |||
 |-|-|
-|[bad_alloc Sınıfı](../standard-library/bad-alloc-class.md)|Sınıfı, bir ayırma isteğinin başarılı olmadığını göstermek için oluşturulan bir özel durum tanımlar.|
+|[bad_alloc sınıfı](../standard-library/bad-alloc-class.md)|Sınıfı, bir ayırma isteğinin başarılı olmadığını göstermek için oluşturulan bir özel durum tanımlar.|
 |[bad_array_new_length sınıfı](../standard-library/bad-array-new-length.md)||
 |[nothrow_t sınıfı](../standard-library/nothrow-t-structure.md)|Sınıfı, işlevin bir özel durum oluşturmak yerine bir ayırma hatası bildirmek üzere null bir işaretçi döndürmesi gerektiğini göstermek için New işlecine bir Function parametresi olarak kullanılır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

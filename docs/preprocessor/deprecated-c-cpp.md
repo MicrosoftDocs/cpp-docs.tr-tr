@@ -7,19 +7,19 @@ helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-ms.openlocfilehash: 6caf5283aea848186c8bd6f9dd2009bb8d8ee8b5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 52d9deb4ad68dacc99fab9d12bc9eb21bc0d360e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167634"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231617"
 ---
 # <a name="deprecated-pragma"></a>kullanım dışı pragma
 
-**Kullanım dışı bırakılan** pragma, bir işlevin, türün ya da başka herhangi bir tanımlayıcının daha sonra gelecek bir sürümde desteklenmeyeceğini veya artık kullanılmadığından emin olmanızı sağlar.
+**`deprecated`** Pragma, bir işlevin, türün ya da başka herhangi bir tanımlayıcının daha sonra gelecek bir sürümde desteklenmeyeceğini veya artık kullanılmadığından emin olmanızı sağlar.
 
 > [!NOTE]
-> C++ 14 `[[deprecated]]` özniteliği ve Microsoft `__declspec(deprecated)` değiştiricisi veya **kullanım dışı** pragma yerine bu özniteliğin ne zaman kullanılacağı hakkında daha fazla bilgi için bkz. [içindeki C++öznitelikler ](../cpp/attributes.md).
+> C++ 14 `[[deprecated]]` özniteliği ve Microsoft değiştirici ya da pragma yerine bu özniteliğin ne zaman kullanılacağı hakkında bilgi için `__declspec(deprecated)` **`deprecated`** bkz. [C++ içindeki öznitelikler](../cpp/attributes.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,13 +27,13 @@ ms.locfileid: "80167634"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici **kullanım dışı** bir pragma tarafından belirtilen bir tanımlayıcıyla karşılaştığında, derleyici uyarısı [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md)' ı yayınlar.
+Derleyici bir pragma tarafından belirtilen tanımlayıcıyla karşılaştığında **`deprecated`** , derleyici uyarısı [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md)' ı yayınlar.
 
 Makro adlarını kullanımdan kaldırmayı seçebilirsiniz. Makro adını tırnak içine koyun veya makro genişletmesi oluşur.
 
-**Kullanım dışı bırakılan** pragma tüm eşleşen tanımlayıcılarda çalıştığından ve hesaba imza almaz, aşırı yüklenmiş işlevlerin belirli sürümlerini kullanımdan kaldırmaya yönelik en iyi seçenek değildir. Kapsama getirilen herhangi bir eşleşen işlev adı, uyarıyı tetikler.
+**`deprecated`** Pragma tüm eşleşen tanımlayıcılarda çalıştığından ve hesaba imza almaz, aşırı yüklenmiş işlevlerin belirli sürümlerini kullanımdan kaldırabilmeniz için en iyi seçenek değildir. Kapsama getirilen herhangi bir eşleşen işlev adı, uyarıyı tetikler.
 
-Mümkün olduğunda, **kullanım dışı** pragma yerine c++ 14 `[[deprecated]]` özniteliğini kullanmanızı öneririz. Microsoft 'a özgü [__declspec (kullanım dışı)](../cpp/deprecated-cpp.md) bildirim değiştiricisi, **kullanım dışı** pragma değerinden birçok durumda daha iyi bir seçenektir. `[[deprecated]]` özniteliği ve `__declspec(deprecated)` değiştiricisi, aşırı yüklenmiş işlevlerin belirli biçimleri için kullanım dışı durumu belirtmenize olanak tanır. Tanılama uyarısı yalnızca öznitelik veya değiştiricinin uygulandığı belirli aşırı yüklenmiş işleve yapılan başvurular üzerinde görüntülenir.
+`[[deprecated]]`Mümkün olduğunda, pragma yerine c++ 14 özniteliğini kullanmanızı öneririz **`deprecated`** . Microsoft 'a özgü [__declspec (kullanım dışı)](../cpp/deprecated-cpp.md) bildirim değiştiricisi, pragma 'un birçok durumunda da daha iyi bir seçenektir **`deprecated`** . `[[deprecated]]`Öznitelik ve `__declspec(deprecated)` değiştirici, aşırı yüklenmiş işlevlerin belirli biçimleri için kullanım dışı durumu belirtmenize izin verir. Tanılama uyarısı yalnızca öznitelik veya değiştiricinin uygulandığı belirli aşırı yüklenmiş işleve yapılan başvurular üzerinde görüntülenir.
 
 ## <a name="example"></a>Örnek
 

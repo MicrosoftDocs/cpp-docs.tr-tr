@@ -2,12 +2,12 @@
 title: Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-ms.openlocfilehash: e3fed4dc2a431b751d4ad50484e32b738e786d10
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 7807f0c1c572b2e7c3224cf0366233e2a28dbe07
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404183"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215900"
 ---
 # <a name="using-accelerator-and-accelerator_view-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 
@@ -94,7 +94,7 @@ void pick_with_most_memory()
 
 ## <a name="shared-memory"></a>Paylaşılan bellek
 
-Paylaşılan bellek, hem CPU hem de hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımı, CPU ve Hızlandırıcı arasında veri kopyalama yükünü ortadan kaldırır veya önemli ölçüde azaltır. Bellek paylaşılsa da, hem CPU hem de hızlandırıcı tarafından aynı anda erişilemez ve bunun yapılması tanımsız davranışlara neden olur. Hızlandırıcı özelliği [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) , hızlandırıcı paylaşılan belleği destekliyorsa **true** değerini döndürür ve [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) özelliği, üzerinde ayrılan bellek için varsayılan [access_type](reference/concurrency-namespace-enums-amp.md#access_type) alır `accelerator` (örneğin, ile ilişkili **dizi** `accelerator` veya `array_view` üzerinde erişilen nesneler) `accelerator` .
+Paylaşılan bellek, hem CPU hem de hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımı, CPU ve Hızlandırıcı arasında veri kopyalama yükünü ortadan kaldırır veya önemli ölçüde azaltır. Bellek paylaşılsa da, hem CPU hem de hızlandırıcı tarafından aynı anda erişilemez ve bunun yapılması tanımsız davranışlara neden olur. Hızlandırıcı özelliği [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) , **`true`** hızlandırıcı paylaşılan belleği destekliyorsa ve [default_cpu_access_type](reference/accelerator-class.md#default_cpu_access_type) özelliği, üzerinde ayrılan bellek için varsayılan [access_type](reference/concurrency-namespace-enums-amp.md#access_type) `accelerator` (örneğin, ile ilişkili **dizi** `accelerator` veya `array_view` üzerinde erişilen nesneler) alırsa döndürür `accelerator` .
 
 C++ AMP Runtime her biri için en iyi varsayılan değerleri otomatik olarak seçer `access_type` `accelerator` , ancak paylaşılan belleğin performans özellikleri (bant genişliği ve gecikme), CPU 'dan okurken, CPU 'dan yazarken veya her ikisinde de ayrılmış (paylaşılmayan) Hızlandırıcı belleklerinden daha kötüden olabilir. Paylaşılan bellek, CPU 'dan okuma ve yazma için ayrılmış bellek ve diğer bir deyişle, çalışma zamanı varsayılan olarak olur `access_type_read_write` ; Aksi takdirde, çalışma zamanı daha koruyucu bir varsayılan seçer `access_type` ve hesaplama için bellek erişimi desenleri farklı bir şekilde avantaj veriyorsa uygulamanın bunu geçersiz kılmasına izin verir `access_type` .
 
@@ -131,7 +131,7 @@ int main()
 
 ## <a name="changing-the-default-accelerator"></a>Varsayılan hızlandırıcıyı değiştirme
 
-Yöntemini çağırarak Varsayılan hızlandırıcıyı değiştirebilirsiniz `accelerator::set_default` . Varsayılan hızlandırıcıyı uygulama yürütmesi başına yalnızca bir kez değiştirebilir ve GPU üzerinde herhangi bir kod yürütülmeden önce bunu değiştirmeniz gerekir. Hızlandırıcıyı değiştirmek için sonraki işlev çağrıları **false**döndürür. Bir çağrısında farklı bir Hızlandırıcı kullanmak istiyorsanız `parallel_for_each` , bu makaledeki "çoklu Hızlandırıcılar kullanma" bölümünü okuyun. Aşağıdaki kod örneği, Varsayılan hızlandırıcıyı benzetilmemiş, bir görüntülemeye bağlı olmayan bir şekilde ayarlar ve çift duyarlığı destekler.
+Yöntemini çağırarak Varsayılan hızlandırıcıyı değiştirebilirsiniz `accelerator::set_default` . Varsayılan hızlandırıcıyı uygulama yürütmesi başına yalnızca bir kez değiştirebilir ve GPU üzerinde herhangi bir kod yürütülmeden önce bunu değiştirmeniz gerekir. Hızlandırıcı dönüşü değiştirmek için sonraki işlev çağrıları **`false`** . Bir çağrısında farklı bir Hızlandırıcı kullanmak istiyorsanız `parallel_for_each` , bu makaledeki "çoklu Hızlandırıcılar kullanma" bölümünü okuyun. Aşağıdaki kod örneği, Varsayılan hızlandırıcıyı benzetilmemiş, bir görüntülemeye bağlı olmayan bir şekilde ayarlar ve çift duyarlığı destekler.
 
 ```cpp
 bool pick_accelerator()
@@ -174,7 +174,7 @@ Uygulamanızda birden çok Hızlandırıcı kullanmanın iki yolu vardır:
 
 - [Accelerator:: Cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): Bu hızlandırıcıyı, hazırlama dizilerini ayarlamak için kullanabilirsiniz. C++ AMP kodu yürütemiyor. Daha fazla bilgi için yerel kod blogundan paralel programlama [C++ amp postadaki hazırlama dizileri](/archive/blogs/nativeconcurrency/staging-arrays-in-c-amp) ' ne bakın.
 
-## <a name="interoperability"></a>Birlikte Çalışabilirlik
+## <a name="interoperability"></a>Birlikte çalışabilirlik
 
 C++ AMP çalışma zamanı, `accelerator_view` sınıf Ile Direct3D [ID3D11Device arabirimi](/windows/win32/api/d3d11/nn-d3d11-id3d11device)arasında birlikte çalışabilirliği destekler. [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) yöntemi bir arabirim alır `IUnknown` ve bir nesne döndürür `accelerator_view` . [Get_device](reference/concurrency-direct3d-namespace-functions-amp.md#get_device) yöntemi bir nesnesi alır `accelerator_view` ve bir arabirim döndürür `IUnknown` .
 

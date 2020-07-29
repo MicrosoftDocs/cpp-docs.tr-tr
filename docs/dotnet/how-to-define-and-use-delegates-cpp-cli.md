@@ -1,25 +1,25 @@
 ---
-title: 'Nasıl yapılır: Temsilcileri tanımlama ve kullanma (C++/CLI)'
+title: 'Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - delegates
 ms.assetid: 1cdf3420-89c1-47c0-b796-aa984020e0f8
-ms.openlocfilehash: bcbf5bf978da5b6c13dd131e7a19975381bd97a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 495ceea6afb222d13953b3a25b7a1c836b299de6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387376"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216407"
 ---
-# <a name="how-to-define-and-use-delegates-ccli"></a>Nasıl yapılır: Temsilcileri tanımlama ve kullanma (C++/CLI)
+# <a name="how-to-define-and-use-delegates-ccli"></a>Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)
 
-Bu makalede, tanımlama ve varyans kullanma işlemi gösterilmektedir C++/CLI.
+Bu makalede, C++/CLIENDE temsilcilerin nasıl tanımlanacağı ve kullanılacağı gösterilir.
 
-.NET Framework temsilcilerin sayısına sağlasa da, bazen yeni temsilciler tanımlamak olabilir.
+.NET Framework bir dizi temsilci sağlasa da, bazen yeni temsilciler tanımlamanız gerekebilir.
 
-Aşağıdaki kod örneğinde adlı bir temsilci tanımlar `MyCallback`. Olay işleme kodunu — bu yeni temsilci başlatıldığında çağrılan işlev — bir dönüş türü olmalıdır `void` ve bir <xref:System.String> başvuru.
+Aşağıdaki kod örneği adlı bir temsilciyi tanımlar `MyCallback` . Olay işleme kodu — bu yeni temsilci tetiklendiğinde çağrılan işlev; bir dönüş türüne sahip olmalı **`void`** ve bir <xref:System.String> başvuru almalıdır.
 
-Main işlevi tarafından tanımlanan statik bir yöntemi kullanan `SomeClass` örneklemek için `MyCallback` temsilci. Temsilci dize "tek" temsilci nesnesine göndererek gösterildiği gibi daha sonra bu işlevi çağırmak için alternatif bir yöntem olur. Sonra ek örneklerini `MyCallback` birbirine bağlı olan ve sonra temsilci nesne için bir çağrı tarafından yürütülür.
+Main işlevi, temsilci oluşturmak için tarafından tanımlanan statik bir yöntem kullanır `SomeClass` `MyCallback` . Temsilci, temsilci nesnesine "single" dizesini göndererek gösterildiği gibi, bu işlevi çağırmak için alternatif bir yöntem haline gelir. Daha sonra, ek örnekleri `MyCallback` birlikte bağlanır ve sonra temsilci nesnesine bir çağrı tarafından yürütülür.
 
 ```cpp
 // use_delegate.cpp
@@ -81,7 +81,7 @@ OtherClass::Method - chained, num = 99
 OtherClass::Method - chained, num = 100
 ```
 
-Sonraki kod örneği, bir değer sınıfının üyesi bir temsilci ilişkilendirilecek gösterilmektedir.
+Sonraki kod örneği, bir temsilcinin bir değer sınıfının üyesi ile nasıl ilişkilendirileceğini gösterir.
 
 ```cpp
 // mcppv2_del_mem_value_class.cpp
@@ -111,9 +111,9 @@ test
 test
 ```
 
-## <a name="how-to-compose-delegates"></a>Nasıl temsilci oluşturma
+## <a name="how-to-compose-delegates"></a>Temsilcileri oluşturma
 
-Kullanabileceğiniz "`-`" işleci bir bileşen temsilci oluşan bir temsilciyi kaldırmak için.
+`-`Bir bileşen temsilcisini oluşturulmuş bir temsilciden kaldırmak için "" işlecini kullanabilirsiniz.
 
 ```cpp
 // mcppv2_compose_delegates.cpp
@@ -151,7 +151,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 Invoking delegate a:
@@ -165,11 +165,11 @@ Invoking delegate d:
   Goodbye, D!
 ```
 
-## <a name="pass-a-delegate-to-a-native-function-that-expects-a-function-pointer"></a>Bir temsilci geçirmek ^ işlev işaretçisi bekleyen yerel bir işlev
+## <a name="pass-a-delegate-to-a-native-function-that-expects-a-function-pointer"></a>Bir temsilciyi, bir işlev işaretçisi bekleyen yerel bir işleve geçirme
 
-Yönetilen bileşen burada yerel işlevi yönetilen bir bileşenin temsilci üye işlevinin ardından çağırabilir işaretçi parametrelerini işlevi ile yerel bir işlevi çağırabilir.
+Yönetilen bir bileşenden, yerel işlevin yönetilen bileşen temsilcisinin üye işlevini çağırabileceği işlev işaretçisi parametreleriyle yerel bir işlevi çağırabilirsiniz.
 
-Bu örnek, yerel işlevi dışarı aktarır .dll dosyasını oluşturur:
+Bu örnek, yerel işlevi dışarı aktaran. dll dosyasını oluşturur:
 
 ```cpp
 // delegate_to_native_function.cpp
@@ -183,7 +183,7 @@ extern "C" {
 }
 ```
 
-Sonraki örnek, .dll tüketir ve temsilci tanıtıcı bir işlev işaretçisi bekleyen yerel işleve geçirir.
+Sonraki örnek. dll kullanır ve bir işlev işaretçisi bekleyen yerel işleve bir temsilci tanıtıcısı geçirir.
 
 ```cpp
 // delegate_to_native_function_2.cpp
@@ -209,15 +209,15 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 Call to Managed Function
 ```
 
-## <a name="to-associate-delegates-with-unmanaged-functions"></a>Temsilcileri yönetilmeyen işlevlerle ilişkilendirme
+## <a name="to-associate-delegates-with-unmanaged-functions"></a>Temsilcileri yönetilmeyen işlevlerle ilişkilendirmek için
 
-Bir temsilci yerel bir işlev ile ilişkilendirmek için yerel işlev bir yönetilen türüne sarın ve aracılığıyla çağrılacak işlev bildirimini `PInvoke`.
+Bir temsilciyi yerel bir işlevle ilişkilendirmek için, yerel işlevi yönetilen bir tür içinde sarmanız ve aracılığıyla çağrılacak işlevi bildirmeniz gerekir `PInvoke` .
 
 ```cpp
 // mcppv2_del_to_umnangd_func.cpp
@@ -253,27 +253,27 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 hello
 ```
 
-## <a name="to-use-unbound-delegates"></a>İlişkisiz temsilciler kullanmak için
+## <a name="to-use-unbound-delegates"></a>İlişkisiz temsilcileri kullanmak için
 
-Bir işlev temsilcisi çağrıldığında aramak istediğiniz türün örneğini geçmesine bağlanmamış bir temsilci kullanabilirsiniz.
+Bağımsız bir temsilciyi, işlevi bir temsilci çağrıldığında çağırmak istediğiniz bir türün bir örneğini geçirmek için kullanabilirsiniz.
 
-İlişkisiz temsilciler koleksiyonundaki nesneleri yinelemek istiyorsanız, özellikle kullanışlı — kullanarak [her, içinde](../dotnet/for-each-in.md) anahtar sözcükleri — ve her örneğinde bir üye işlevini çağırın.
+İlişkisiz temsilciler özellikle bir koleksiyondaki nesneler arasında yinelemek istiyorsanız — [her biri için,](../dotnet/for-each-in.md) anahtar kelimelerinde, ve her örnekte bir üye işlevi çağırarak yararlıdır.
 
-Burada nasıl bildirmek, oluşturmak ve çağrı bağlı ilişkisiz temsilciler:
+Bağlı ve ilişkisiz temsilcileri bildirmek, örneklemek ve çağırmak için şu adımları uygulayın:
 
-|Eylem|Temsilciler bağlı|İlişkisiz Temsilciler|
+|Eylem|Bağlantılı temsilciler|İlişkisiz Temsilciler|
 |------------|---------------------|-----------------------|
-|Bildirme|Temsilci imzasında temsilci çağırmak istediğiniz işlevin imzası eşleşmesi gerekir.|İlk parametre, temsilci imzasında türüdür `this` çağırmak istediğiniz nesne için.<br /><br /> Sonra ilk parametre, temsilci imzasında temsilci çağırmak istediğiniz işlevin imzası eşleşmesi gerekir.|
-|örneği|İlişkili bir temsilci, bir örnek işlev veya bir genel veya statik üye işlevi belirtebilirsiniz.<br /><br /> Bir örnek işlevi belirtmek için ilk parametre bir üye işlevini çağırmak istediğiniz türün örneğini ve ikinci parametre çağırmak istediğiniz işlevin adresini.<br /><br /> Yalnızca genel veya statik üye işlevini çağırmak istiyorsanız, genel bir işlev adı veya statik bir üye işlevin adını geçirin.|Bağlanmamış bir temsilci örneğini oluştururken, çağırmak istediğiniz işlevin adresini geçirmeniz yeterlidir.|
-|Çağrı|İlişkili bir temsilci çağırdığınızda, temsilci imzasında tarafından gerekli olan parametreleri geçirmeniz yeterlidir.|Bir sınır aynı temsilci, ancak ilk parametre bir örneği aramak istediğiniz işlevi içeren nesneyi olması gerektiğini unutmayın.|
+|Bildirileceğini|Temsilci imzasının, temsilci aracılığıyla çağırmak istediğiniz işlevin imzasıyla eşleşmesi gerekir.|Temsilci imzasının ilk parametresi, **`this`** çağırmak istediğiniz nesnenin türüdür.<br /><br /> İlk parametreden sonra, temsilci imzasının, temsilci aracılığıyla çağırmak istediğiniz işlevin imzasıyla eşleşmesi gerekir.|
+|Leyebilirsiniz|Bir bağlantılı temsilciyi örneklediğinizde, bir örnek işlevi veya bir genel veya statik üye işlevi belirtebilirsiniz.<br /><br /> Bir örnek işlevi belirtmek için ilk parametre, üye işlevi çağırmak istediğiniz türün bir örneğidir ve ikinci parametre çağırmak istediğiniz işlevin adresidir.<br /><br /> Genel veya statik bir üye işlevi çağırmak isterseniz, bir genel işlevin veya statik üye işlevinin adını geçirin.|İlişkisiz bir temsilciyi örneklediğinizde, çağırmak istediğiniz işlevin adresini iletmeniz yeterlidir.|
+|Call|Bir bağlantılı temsilciyi çağırdığınızda, temsilci imzası için gereken parametreleri geçirmeniz yeterlidir.|Bağlanan bir temsilciyle aynıdır, ancak ilk parametrenin çağırmak istediğiniz işlevi içeren nesnenin bir örneği olması gerektiğini unutmayın.|
 
-Bu örnek bildirme, oluşturma ve ilişkisiz temsilciler çağırmak nasıl gösterir:
+Bu örnekte, ilişkisiz temsilcilerin nasıl bildirildiği, örneklendirileceğini ve çağrılacağını gösterilmektedir:
 
 ```cpp
 // unbound_delegates.cpp
@@ -336,7 +336,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 2
@@ -351,7 +351,7 @@ int main() {
 7
 ```
 
-Sonraki örnek ilişkisiz temsilciler kullanmayı gösterir ve [her, içinde](../dotnet/for-each-in.md) koleksiyonundaki nesneleri yinelemek ve her örneğinde bir üye işlevini çağırmak için anahtar sözcükler.
+Sonraki örnek, bir koleksiyondaki nesneler arasında yineleme yapmak ve her bir örnekteki üye işlevini çağırmak için, anahtar kelimelerinde ilişkisiz temsilcilerin ve [for each](../dotnet/for-each-in.md) 'ın nasıl kullanılacağını gösterir.
 
 ```cpp
 // unbound_delegates_2.cpp
@@ -383,7 +383,7 @@ int main() {
 }
 ```
 
-Bu örnek, bir özelliğin erişimci işlevleri bağlanmamış bir temsilci oluşturur:
+Bu örnek, bir özelliğin erişimci işlevlerine ilişkisiz bir temsilci oluşturur:
 
 ```cpp
 // unbound_delegates_3.cpp
@@ -412,13 +412,13 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 11
 ```
 
-Aşağıdaki örnek, burada bir örneğine bağlanır ve bir örnek ilişkisiz bir çok noktaya yayın temsilci çağırma işlemi gösterilmektedir.
+Aşağıdaki örnek, bir örneğin bağlı olduğu ve bir örneğin ilişkisiz olduğu çok noktaya yayın temsilcisinin nasıl çağıralınacağını göstermektedir.
 
 ```cpp
 // unbound_delegates_4.cpp
@@ -451,14 +451,14 @@ int main() {
 };
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 in f(R ^ r)
 in f()
 ```
 
-Sonraki örnek oluşturma ve bir ilişkisiz Genel temsilci çağrısı gösterir.
+Sonraki örnek, ilişkisiz genel bir temsilcinin nasıl oluşturulacağını ve çağrılacağını gösterir.
 
 ```cpp
 // unbound_delegates_5.cpp
@@ -495,7 +495,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 12

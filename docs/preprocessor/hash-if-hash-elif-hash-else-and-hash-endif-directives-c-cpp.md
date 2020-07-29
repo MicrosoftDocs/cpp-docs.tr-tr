@@ -21,12 +21,12 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-ms.openlocfilehash: 2b7ed4733dcafda793b9a945c3f40739b52e040a
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: acbc54a80573bbbf29ad5cf67e7e5fd9351eeaa3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220346"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231604"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif yönergeleri (C/C++)
 
@@ -35,31 +35,31 @@ ms.locfileid: "70220346"
 ## <a name="grammar"></a>Dilbilgisi
 
 *koşullu* : \
-&nbsp;&nbsp;&nbsp;&nbsp;*IF-Part Elif-Parts* <sub>opt</sub> *Else-bölüm* <sub>opt</sub> *endif-çizgi*
+&nbsp;&nbsp;&nbsp;&nbsp;*IF-Part Elif-Parts*<sub>opt</sub> *Else-parçalı*<sub>opt</sub> *endif-Line*
 
 *IF-Part* : \
 &nbsp;&nbsp;&nbsp;&nbsp;*If-Line metni*
 
 *IF-Line* : \
-&nbsp;&nbsp;&nbsp;&nbsp; **#if** *sabit ifadesi*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *tanımlayıcı*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *tanımlayıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;**#if** *sabit ifadesi*\
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef** *tanımlayıcı*\
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef** *tanımlayıcı*
 
 *Elif-parçalar* : \
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-Line metni*\
 &nbsp;&nbsp;&nbsp;&nbsp;*elif-parçaların Elif-Line metni*
 
 *Elif-satır* : \
-&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *sabit ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;**#elif**  *sabit ifadesi*
 
 *Else-bölüm* : \
 &nbsp;&nbsp;&nbsp;&nbsp;*Else-Line metni*
 
 *Else-Line* : \
-&nbsp;&nbsp;&nbsp;&nbsp; **#else**
+&nbsp;&nbsp;&nbsp;&nbsp;**#else**
 
 *endif-satır* : \
-&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
+&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -67,7 +67,7 @@ Kaynak dosyadaki her bir **#if** yönergesi, bir kapanış **#endif** yönergesi
 
 **#İf**, **#elif**, **#else**ve **#endif** yönergeleri, diğer **#if** yönergelerinin *metin* bölümlerine iç içe olabilir. Her iç içe **#else**, **#elif**veya **#endif** yönergesi, en yakın önceki **#if** yönergesine aittir.
 
-**#İf** ve **#ifdef**gibi tüm koşullu derleme yönergelerinin, dosyanın sonundan önce bir kapanış **#endif** yönergesiyle eşleşmesi gerekir. Aksi takdirde, bir hata iletisi oluşturulur. Koşullu derleme yönergeleri içerme dosyalarında yer aldığı zaman, aynı koşullara uymalıdır: İçerme dosyasının sonunda eşleşmeyen koşullu derleme yönergeleri olmamalıdır.
+**#İf** ve **#ifdef**gibi tüm koşullu derleme yönergelerinin, dosyanın sonundan önce bir kapanış **#endif** yönergesiyle eşleşmesi gerekir. Aksi takdirde, bir hata iletisi oluşturulur. Koşullu derleme yönergeleri içerme dosyalarında yer aldığı zaman, aynı koşulları karşılamaları gerekir: ekleme dosyasının sonunda eşleşmeyen koşullu derleme yönergeleri olmaması gerekir.
 
 Makro değiştirme bir **#elif** komutu izleyen satırın parçası içinde yapılır, bu nedenle bir makro çağrısı *sabit ifadesinde*kullanılabilir.
 
@@ -75,7 +75,7 @@ Makro değiştirme bir **#elif** komutu izleyen satırın parçası içinde yap�
 
 Önişlemci seçili *metni* işler ve derleyiciye geçirir. *Metin* Önişlemci yönergeleri içeriyorsa, Önişlemci bu yönergeleri yürütür. Yalnızca Önişlemci tarafından seçilen metin blokları derlenir.
 
-Önişlemci, her **#if** veya **#elif** yönergesinden sonra sabit ifadeyi değerlendirerek, doğru (sıfır olmayan) bir sabit ifade bulana kadar tek bir *metin* öğesi seçer. İlişkili **#elif**, **#else**veya **#endif**kadar tüm metinleri (ile **#** başlayan diğer Önişlemci yönergeleri dahil) seçer.
+Önişlemci, her **#if** veya **#elif** yönergesinden sonra sabit ifadeyi değerlendirerek, doğru (sıfır olmayan) bir sabit ifade bulana kadar tek bir *metin* öğesi seçer. **#** İlişkili **#elif**, **#else**veya **#endif**kadar tüm metinleri (ile başlayan diğer Önişlemci yönergeleri dahil) seçer.
 
 *Sabit ifadenin* tüm oluşumları false ise veya **#elif** yönergesi görünmüyorsa, Önişlemci, **#else** yan tümcesinden sonra metin bloğunu seçer. **#Else** yan tümcesi yoksa ve **#if** bloğundaki *sabit ifadenin* tüm örnekleri false olduğunda, hiçbir metin bloğu seçili değildir.
 
@@ -83,11 +83,11 @@ Makro değiştirme bir **#elif** komutu izleyen satırın parçası içinde yap�
 
 - İfadeler integral türünde olmalıdır ve yalnızca tamsayı sabitlerini, karakter sabitlerini ve **tanımlanmış** işleci içerebilir.
 
-- İfade veya tür atama `sizeof` işleci kullanamaz.
+- İfade **`sizeof`** veya tür atama işleci kullanamaz.
 
 - Hedef ortam, tüm tamsayılar aralıklarını temsil edemiyor olabilir.
 
-- Çeviri tür **int** 'i **Long**ile aynı şekilde ve işaretsiz **int** ile **işaretsiz Long**ile aynı şekilde temsil eder.
+- Çeviri türü, türü **`int`** ile aynı şekilde **`long`** ve ile aynı şekilde temsil eder **`unsigned int`** **`unsigned long`** .
 
 - Çevirmen, karakter sabitlerini hedef ortam kümesinden farklı bir kod değerleri kümesine çevirebilir. Hedef ortamın özelliklerini öğrenmek için, limitlerin değerlerini denetlemek üzere bu ortam için oluşturulmuş bir uygulama kullanın *. H* makroları.
 
@@ -99,7 +99,7 @@ Makro değiştirme bir **#elif** komutu izleyen satırın parçası içinde yap�
 
 **Tanımlanan** Önişlemci işleci, aşağıdaki sözdiziminde gösterildiği gibi özel sabit ifadelerde kullanılabilir:
 
-> **tanımlı (** *tanımlayıcı* **)** \
+> **tanımlı (** *tanımlayıcı* **)**\
 > **tanımlı** *tanımlayıcı*
 
 *Tanımlayıcı* Şu anda tanımlanmışsa, bu sabit ifade true (sıfır dışında) olarak değerlendirilir. Aksi takdirde, koşul false (0) olur. Boş metin olarak tanımlanan bir tanımlayıcı tanımlanmış olarak değerlendirilir. **Tanımlı** işleç bir **#if** ve **#elif** yönergesinde kullanılabilir, ancak başka bir yönerge.
@@ -116,9 +116,9 @@ Aşağıdaki örnekte **#if** ve **#endif** yönergeleri üç işlevden birinin 
 #endif
 ```
 
-İçin `credit` işlev çağrısı, tanımlayıcı `CREDIT` tanımlanmışsa derlenir. Tanımlayıcı `DEBIT` tanımlanmışsa, öğesine `debit` işlev çağrısı derlenir. Tanımlayıcı tanımlanmadıysa, çağrısı `printerror` derlenir. Ve `CREDIT` ,`credit` her ikisi de C 'de ve C++ durumları farklı olduğundan farklı tanımlayıcılardır.
+İçin işlev çağrısı, `credit` tanımlayıcı `CREDIT` tanımlanmışsa derlenir. Tanımlayıcı `DEBIT` tanımlanmışsa, öğesine işlev çağrısı `debit` derlenir. Tanımlayıcı tanımlanmadıysa, çağrısı `printerror` derlenir. Her ikisi de `CREDIT` `credit` C ve C++ ' da farklı tanıtıcılardır, çünkü durumları farklıdır.
 
-Aşağıdaki örnekteki koşullu derleme deyimleri, adlı `DLEVEL`önceden tanımlanmış bir sembolik sabiti kabul eder.
+Aşağıdaki örnekteki koşullu derleme deyimleri, adlı önceden tanımlanmış bir sembolik sabiti kabul eder `DLEVEL` .
 
 ```C
 #if DLEVEL > 5
@@ -147,9 +147,9 @@ Aşağıdaki örnekteki koşullu derleme deyimleri, adlı `DLEVEL`önceden tanı
 #endif
 ```
 
-İlk **#if** bloğu, iç içe **#if**, **#else**ve **#endif** yönergelerinin oluşan iki kümesini gösterir. İlk yönergeler kümesi yalnızca `DLEVEL > 5` true ise işlenir. Aksi takdirde, **#else** sonraki deyimler işlenir.
+İlk **#if** bloğu, iç içe **#if**, **#else**ve **#endif** yönergelerinin oluşan iki kümesini gösterir. İlk yönergeler kümesi yalnızca true ise işlenir `DLEVEL > 5` . Aksi takdirde, **#else** sonraki deyimler işlenir.
 
-İkinci örnekteki **#elif** ve **#else** yönergeleri, değerini `DLEVEL`temel alarak dört seçenekten birini yapmak için kullanılır. Bu, tanımına bağlı olarak 0, 100 veya 200 olarak ayarlanır. `DLEVEL` `STACK` `DLEVEL` 5 ' ten büyükse, ifade
+İkinci örnekteki **#elif** ve **#else** yönergeleri, değerini temel alarak dört seçenekten birini yapmak için kullanılır `DLEVEL` . Bu, `STACK` tanımına bağlı olarak 0, 100 veya 200 olarak ayarlanır `DLEVEL` . `DLEVEL`5 ' ten büyükse, ifade
 
 ```C
 #elif DLEVEL > 5
@@ -158,7 +158,7 @@ display(debugptr);
 
 derlenir ve `STACK` tanımlı değildir.
 
-Koşullu derleme için yaygın olarak kullanılan bir kullanım, aynı üst bilgi dosyasının birden çok eklemeleri önlemektir. ' C++De, sınıfların genellikle başlık dosyalarında tanımlanması halinde, bunun gibi yapılar birden çok tanımı engellemek için kullanılabilir:
+Koşullu derleme için yaygın olarak kullanılan bir kullanım, aynı üst bilgi dosyasının birden çok eklemeleri önlemektir. C++ ' da, sınıfların genellikle başlık dosyalarında tanımlandığı, bu gibi yapılar birden çok tanımı engellemek için kullanılabilir:
 
 ```cpp
 /*  EXAMPLE.H - Example header file  */
@@ -177,7 +177,7 @@ Yukarıdaki kod, sembolik sabitinin `EXAMPLE_H` tanımlanıp tanımlanmadığın
 
 ### <a name="__has_include"></a>__has_include
 
-**Visual Studio 2017 sürüm 15,3 ve üzeri**:  Bir kitaplık üstbilgisinin ekleme için kullanılabilir olup olmadığını belirler:
+**Visual Studio 2017 sürüm 15,3 ve üzeri**: bir kitaplık üstbilgisinin ekleme için kullanılabilir olup olmadığını belirler:
 
 ```cpp
 #ifdef __has_include
@@ -196,4 +196,4 @@ Yukarıdaki kod, sembolik sabitinin `EXAMPLE_H` tanımlanıp tanımlanmadığın
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
+[Ön işlemci yönergeleri](../preprocessor/preprocessor-directives.md)

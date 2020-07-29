@@ -7,12 +7,12 @@ helpviewer_keywords:
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-ms.openlocfilehash: 83bb7e54567319a7af4bd3d8a6bf02256fef68fb
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 95de3a582c3d45db858e2b4bce0268e1dab63931
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623349"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215978"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 
@@ -65,7 +65,7 @@ Yeni görünüm sınıfının oluşturulması, Sınıf Görünümü tarafından 
 
 Sınıfı projeye ekledikten sonra bazı görünüm sınıfı üyelerinin erişilebilirliğini değiştirmeniz gerekir.
 
-*NewView 'ı değiştirin. *Erişim belirticisini, Oluşturucu ve yıkıcısı için **korunan** olarak **ortak** olarak değiştirerek H. Bu, sınıfın dinamik olarak oluşturulmasını ve yok edilmesinin yanı sıra, görünür olmadan önce görünüm görünümünü değiştirmesini sağlar.
+*NewView 'ı değiştirin. *Erişim belirticisini **`protected`** **`public`** Oluşturucu ve yıkıcı için olarak değiştirerek H. Bu, sınıfın dinamik olarak oluşturulmasını ve yok edilmesinin yanı sıra, görünür olmadan önce görünüm görünümünü değiştirmesini sağlar.
 
 Değişikliklerinizi kaydedin ve bir sonraki adımla devam edin.
 

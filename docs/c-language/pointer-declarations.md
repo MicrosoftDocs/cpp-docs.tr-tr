@@ -7,12 +7,12 @@ helpviewer_keywords:
 - const keyword [C]
 - pointers, declarations
 ms.assetid: 8b3b7fc7-f44d-480d-b6f9-cebe4e5462a6
-ms.openlocfilehash: 0ee6e9e78f3793cd1912ece7f8627a4be68e929c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 31d7e30859537fed1b18f6d30302d83248e17e74
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232158"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211768"
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 
@@ -40,9 +40,9 @@ ms.locfileid: "62232158"
 
 *Tür belirleyicisi* , nesne türünü verir; bu, herhangi bir temel, yapı veya birleşim türü olabilir. İşaretçi değişkenleri Ayrıca işlevler, diziler ve diğer işaretçileri işaret edebilir. (Daha karmaşık işaretçi türlerini bildirme ve yorumlama hakkında daha fazla bilgi için, [daha karmaşık Bildirimcilerin yorumlanması](../c-language/interpreting-more-complex-declarators.md)bölümüne bakın.)
 
-*Tür belirleyicisi* **void**yaparak, işaretçinin başvurduğu türün belirtimini erteleyebilirsiniz. Böyle bir öğe " **void**işaretçisi" olarak adlandırılır ve olarak `void *`yazılır. *Void* işaretçisi olarak belirtilen bir değişken, herhangi bir türdeki bir nesneyi işaret etmek için kullanılabilir. Ancak, işaretçi üzerinde veya işaret ettiği nesne üzerinde birçok işlemi gerçekleştirmek için, işaret ettiği türün her işlem için açıkça belirtilmesi gerekir. ( **Char** <strong>\*</strong> türü ve **void** <strong>\*</strong> türü değişkenler, tür atama olmadan atama uyumludur.) Bu tür dönüştürme bir tür cast ile gerçekleştirilebilir (daha fazla bilgi için bkz. [tür dönüştürme dönüştürmeleri](../c-language/type-cast-conversions.md) .).
+*Tür belirleyicisi* yaparak **`void`** , işaretçinin başvurduğu türün belirtimini erteleyebilirsiniz. Böyle bir öğe "işaretçi" olarak adlandırılır **`void`** ve olarak yazılır `void *` . *Void* işaretçisi olarak belirtilen bir değişken, herhangi bir türdeki bir nesneyi işaret etmek için kullanılabilir. Ancak, işaretçi üzerinde veya işaret ettiği nesne üzerinde birçok işlemi gerçekleştirmek için, işaret ettiği türün her işlem için açıkça belirtilmesi gerekir. (Türündeki **`char`** <strong>\*</strong> değişkenler ve türü **`void`** <strong>\*</strong> , tür atama olmadan atama uyumludur.) Bu tür dönüştürme bir tür cast ile gerçekleştirilebilir (daha fazla bilgi için bkz. [tür dönüştürme dönüştürmeleri](../c-language/type-cast-conversions.md) .).
 
-*Tür niteleyicisi* **const** veya **volatile**ya da her ikisi olabilir. Bunlar sırasıyla, işaretçinin programın kendisi (**const**) tarafından değiştirilemeyeceğini veya işaretçinin, programın denetimi (**geçici**) dışında bazı işlemler tarafından meşru bir şekilde değiştirilmesini belirtir. ( **Const** ve **volatile**hakkında daha fazla bilgi Için bkz. [Tür niteleyicileri](../c-language/type-qualifiers.md) .)
+*Tür niteleyicisi* veya ya da **`const`** **`volatile`** her ikisi birden olabilir. Bunlar sırasıyla, işaretçinin programın kendisi tarafından değiştirilemeyeceğini ( **`const`** ) veya işaretçinin meşru bir şekilde program denetiminin () dışında bir işlem tarafından değiştirilmesini belirler **`volatile`** . (Ve hakkında daha fazla bilgi için bkz. [Tür niteleyicileri](../c-language/type-qualifiers.md) **`const`** **`volatile`** .)
 
 *Bildirimci* , değişkeni adlandırır ve bir tür değiştiricisi içerebilir. Örneğin, *bildirimci* bir diziyi temsil ediyorsa, işaretçinin türü dizi işaretçisi olacak şekilde değiştirilir.
 
@@ -56,26 +56,26 @@ Aşağıdaki örneklerde işaretçi bildirimleri gösterilmektedir.
 char *message; /* Declares a pointer variable named message */
 ```
 
-*İleti* işaretçisi, **char** türünde bir değişkene işaret eder.
+*İleti* işaretçisi türünde bir değişkene işaret eder **`char`** .
 
 ```
 int *pointers[10];  /* Declares an array of pointers */
 ```
 
-*İşaretçiler* dizisinde 10 öğe vardır; her öğe, **int** türünde bir değişkene yönelik bir işaretçidir.
+*İşaretçiler* dizisinde 10 öğe vardır; her öğe, türünde bir değişkene yönelik bir işaretçidir **`int`** .
 
 ```
 int (*pointer)[10]; /* Declares a pointer to an array of 10 elements */
 ```
 
-*İşaretçi* değişkeni 10 öğe içeren bir diziye işaret eder. Bu dizideki her öğe için **int** türü vardır.
+*İşaretçi* değişkeni 10 öğe içeren bir diziye işaret eder. Bu dizideki her öğenin türü vardır **`int`** .
 
 ```
 int const *x;      /* Declares a pointer variable, x,
                       to a constant value */
 ```
 
-*X* işaretçisi, farklı bir **int** değerine işaret etmek üzere değiştirilebilir, ancak bu değer, işaret ettiği değer değiştirilemez.
+*X* işaretçisi farklı bir değere işaret etmek üzere değiştirilebilir **`int`** , ancak bunun işaret ettiği değer değiştirilemez.
 
 ```
 const int some_object = 5 ;
@@ -85,7 +85,7 @@ int volatile *const z = &some_object;
 int *const volatile w = &some_object;
 ```
 
-Bu bildirimlerden *y* değişkeni, bir **int** değere sabit bir işaretçi olarak bildirilmiştir. İşaret ettiği değer değiştirilebilir, ancak işaretçinin kendisi her zaman aynı konuma işaret etmelidir: *fixed_object*adresi. Benzer şekilde, *z* sabit bir işaretçidir, ancak değeri program tarafından değiştirilemeyen bir **int** 'e işaret etmek üzere de tanımlanır. Ek tanımlayıcı **geçici** bir deyişle, *z* tarafından işaret edilen **const int** değeri program tarafından değiştirilemiyorsa, meşru bir şekilde programla aynı şekilde çalışan bir işlem tarafından değiştirilebilir. *W* bildirimi programın işaret ettiği değeri değiştiremez ve programın işaretçiyi değiştiremez.
+Bu bildirimlerden *y* değişkeni, bir değere sabit bir işaretçi olarak bildirilmiştir **`int`** . İşaret ettiği değer değiştirilebilir, ancak işaretçinin kendisi her zaman aynı konuma işaret etmelidir: *fixed_object*adresi. Benzer şekilde, *z* sabit bir işaretçidir, ancak aynı zamanda **`int`** değeri program tarafından değiştirilemeyen bir değere işaret etmek için de bildirilmiştir. Ek tanımlayıcı, **`volatile`** *z* tarafından işaret edilen **const int** değerinin program tarafından değiştirilemeyeceğini, meşru bir şekilde programla aynı şekilde çalışan bir işlem tarafından değiştirilmesini gösterir. *W* bildirimi programın işaret ettiği değeri değiştiremez ve programın işaretçiyi değiştiremez.
 
 ```
 struct list *next, *previous; /* Uses the tag for list */
@@ -102,7 +102,7 @@ struct list
 } line;
 ```
 
-Değişken *çizgisi* , *list*adlı yapı türüne sahiptir. *Liste* yapısı türü üç üyeye sahiptir: ilk üye bir **char** değeri işaretçisidir, ikincisi bir **int** değeridir ve üçüncüsü ise başka bir *liste* yapısına yönelik bir işaretçidir.
+Değişken *çizgisi* , *list*adlı yapı türüne sahiptir. *Liste* yapısı türü üç üyeye sahiptir: ilk üye bir değere işaretçidir, ikincisi ise bir **`char`** **`int`** değerdir ve üçüncüsü ise başka bir *liste* yapısına yönelik bir işaretçidir.
 
 ```
 struct id
@@ -116,4 +116,4 @@ Değişken *kaydının* yapı türü *kimliği*vardır. *Pname* 'in *Name*adlı 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+[Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)

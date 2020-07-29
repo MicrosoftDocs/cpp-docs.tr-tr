@@ -7,18 +7,18 @@ helpviewer_keywords:
 - is_pod class
 - is_pod
 ms.assetid: d73ebdee-746b-4082-9fa4-2db71432eb0e
-ms.openlocfilehash: 1249e9a3689d4b91334e545ba294c28984898035
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 1398da92890072d8aa8a6f07c61920fe3bee1776
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455760"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212247"
 ---
-# <a name="ispod-class"></a>is_pod Sınıfı
+# <a name="is_pod-class"></a>is_pod Sınıfı
 
 Tür POD ise sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -27,12 +27,12 @@ struct is_pod;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`is_pod<T>::value`*T* türü düz eski VERILER (pod) ise, **geçerlidir** . Aksi takdirde, **false**olur.
+`is_pod<T>::value`**`true`** *T* türü düz eskı veriler (pod) ise. Aksi takdirde, **`false`** .
 
 Aritmetik türler, numaralandırma türleri, işaretçi türleri ve üye türleri işaretçisi POD.
 
@@ -96,7 +96,7 @@ is_pod<throws> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

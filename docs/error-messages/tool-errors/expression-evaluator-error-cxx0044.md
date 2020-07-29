@@ -7,17 +7,17 @@ helpviewer_keywords:
 - CXX0044
 - CAN0044
 ms.assetid: d59868b5-c1ec-46ac-91d6-5d575a4d6b49
-ms.openlocfilehash: e14e2b7892e51bd66f4efb3801ebe6b90123676e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d08e11c6ef091eccbb1448105682d4f9d9a73cdf
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185067"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216043"
 ---
 # <a name="expression-evaluator-error-cxx0044"></a>İfade Değerlendirici Hatası CXX0044
 
 _based (void) işaretçisinin kullanılması: > işleci gerektirir
 
-`void` dayalı bir işaretçi doğrudan kullanılamaz. **: >** İşlecini kullanarak bir tamamen işaretçi oluşturmanız gerekir.
+Temelinde bir işaretçi **`void`** doğrudan kullanılamaz. **: >** işlecini kullanarak bir tamamen işaretçi oluşturmanız gerekir.
 
 Bu hata CAN0044 ile aynıdır.

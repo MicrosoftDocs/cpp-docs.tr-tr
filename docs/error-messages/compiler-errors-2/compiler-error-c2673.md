@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2673
 ms.assetid: 780230c0-619b-4a78-b01d-ff5886306741
-ms.openlocfilehash: 5ade00d0b912a44c0916e5ce5aa7f23b2cc91cf8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1a27b41c11905a509889d46da655900b69070445
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757169"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216121"
 ---
 # <a name="compiler-error-c2673"></a>Derleyici hatası C2673
 
 ' function ': genel işlevlerde ' this ' işaretçileri yoktur
 
-Genel bir işlev `this`erişmeyi denedi.
+Genel bir işlev erişmeye çalıştı **`this`** .
 
 Aşağıdaki örnek C2673 oluşturur:
 

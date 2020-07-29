@@ -22,12 +22,12 @@ helpviewer_keywords:
 - handler functions [MFC], declaring
 - message ranges [MFC], mapping
 ms.assetid: a271478b-5e1c-46f5-9f29-e5be44b27d08
-ms.openlocfilehash: 0ff9178679792929bbd6eb92bb6148cfa008dcad
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 44194a6e5bafea2b17c9a1d58c41bf9dc541729d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621689"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231916"
 ---
 # <a name="handlers-for-message-map-ranges"></a>İleti Eşleme Aralıkları için İşleyiciler
 
@@ -143,8 +143,8 @@ Başka bir ilgi çekici durum, denetim kimliği aralığı için tek bir işleyi
 
 `OnButtonClicked`Tek bir **BN_CLICKED** ileti için işleyici parametre alır. Bir dizi düğme için aynı işleyici bir **UINT**alır. Ek parametre, **BN_CLICKED** iletisini oluşturmaktan sorumlu belirli bir denetimi tanımlamaya olanak sağlar.
 
-Örnekte gösterilen kod tipik bir durumdur: ileti aralığı içinde bir öğesine geçirilen değeri dönüştürme `int` ve bu durumun bu olduğunu ele alıyoruz. Ardından, hangi düğmeye tıklandığına bağlı olarak bazı farklı eylemlere sahip olabilirsiniz.
+Örnekte gösterilen kod tipik bir durumdur: ileti aralığı içinde bir öğesine geçirilen değeri dönüştürme **`int`** ve bu durumun bu olduğunu ele alıyoruz. Ardından, hangi düğmeye tıklandığına bağlı olarak bazı farklı eylemlere sahip olabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleyici İşlevlerini Bildirme](declaring-message-handler-functions.md)
+[Ileti Işleyici Işlevlerini bildirme](declaring-message-handler-functions.md)

@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IExecutionResource structure
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
-ms.openlocfilehash: 4305948aa4e5da36023c1d4fe8b0b84aa4d59e23
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: af6b10d1552770c776762ed195f5efceab30a3d5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377305"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215796"
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 
@@ -32,16 +32,16 @@ struct IExecutionResource;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IExecutionResource::CurrentSubscriptionLevel](#currentsubscriptionlevel)|Bu yürütme kaynağının temsil eder temel donanım iş parçacığı ile ilişkili şu anda etkinleştirilen sanal işlemci kökleri ve abone dış iş parçacığı sayısını döndürür.|
-|[IExecutionResource::GetExecutionResourceId](#getexecutionresourceid)|Bu yürütme kaynağının temsil ettiği donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.|
-|[IExecutionResource::GetNodeId](#getnodeid)|Bu yürütme kaynağının ait olduğu işlemci düğümü için benzersiz bir tanımlayıcı döndürür.|
-|[IExecutionResource::Kaldır](#remove)|Bu yürütme kaynağını Kaynak Yöneticisi'ne verir.|
+|[IExecutionResource:: CurrentSubscriptionLevel](#currentsubscriptionlevel)|Etkinleştirilen sanal işlemci köklerinin ve bu yürütme kaynağının gösterdiği temel alınan donanım iş parçacığı ile ilişkili olan abone olunan dış iş parçacıklarının sayısını döndürür.|
+|[IExecutionResource:: GetExecutionResourceId](#getexecutionresourceid)|Bu yürütme kaynağının temsil ettiği donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.|
+|[IExecutionResource:: GetNodeId](#getnodeid)|Bu yürütme kaynağının ait olduğu işlemci düğümü için benzersiz bir tanımlayıcı döndürür.|
+|[IExecutionResource:: Remove](#remove)|Bu yürütme kaynağını Kaynak Yöneticisi döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yürütme kaynakları tek başına veya sanal işlemci kökleri ile ilişkili olabilir. Uygulamanızdaki bir iş parçacığı bir iş parçacığı aboneliği oluşturduğunda tek başına bir yürütme kaynağı oluşturulur. [ISchedulerProxy::SubscribeThread](ischedulerproxy-structure.md#subscribecurrentthread) ve [ISchedulerProxy::RequestInitialVirtualProcessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) iş parçacığı abonelikleri `IExecutionResource` oluşturmak ve aboneliği temsil eden bir arayüz döndürür. İş parçacığı aboneliği oluşturmak, Kaynak Yöneticisi'ne kaynak yöneticisinin zamanlayıcıya atadığı sanal işlemci kökleriyle birlikte, belirli bir iş parçacığının zamanlayıcıya sıralanmış çalışmaya katılacağını bildirmenin bir yoludur. Kaynak Yöneticisi, donanım iş parçacığının aboneliğini yapabildiği yere aboneliği önlemek için bilgileri kullanır.
+Yürütme kaynakları tek başına veya sanal işlemci köklerinin ilişkili olabilir. Uygulamanızdaki bir iş parçacığı iş parçacığı aboneliği oluşturduğunda tek başına yürütme kaynağı oluşturulur. Yöntemler [ISchedulerProxy:: SubscribeThread](ischedulerproxy-structure.md#subscribecurrentthread) ve [ISchedulerProxy:: Requestınitialvirtualişlemcilerle](ischedulerproxy-structure.md#requestinitialvirtualprocessors) iş parçacığı abonelikleri oluşturma ve `IExecutionResource` aboneliği temsil eden bir arabirim döndürme. İş parçacığı aboneliği oluşturma, belirli bir iş parçacığının bir Scheduler 'a sıraya alınan iş 'e katılmasını Kaynak Yöneticisi, Scheduler 'a atayan Kaynak Yöneticisi sanal işlemci kökleriyle birlikte bilgilendirmek için bir yoldur. Kaynak Yöneticisi, bu bilgileri kullanarak, donanım iş parçacıklarının mümkün olduğu yerde aşırı abone olmasını önler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,13 +49,13 @@ Yürütme kaynakları tek başına veya sanal işlemci kökleri ile ilişkili ol
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="iexecutionresourcecurrentsubscriptionlevel-method"></a><a name="currentsubscriptionlevel"></a>IExecutionResource::CurrentSubscriptionLevel Yöntemi
+## <a name="iexecutionresourcecurrentsubscriptionlevel-method"></a><a name="currentsubscriptionlevel"></a>IExecutionResource:: CurrentSubscriptionLevel yöntemi
 
-Bu yürütme kaynağının temsil eder temel donanım iş parçacığı ile ilişkili şu anda etkinleştirilen sanal işlemci kökleri ve abone dış iş parçacığı sayısını döndürür.
+Etkinleştirilen sanal işlemci köklerinin ve bu yürütme kaynağının gösterdiği temel alınan donanım iş parçacığı ile ilişkili olan abone olunan dış iş parçacıklarının sayısını döndürür.
 
 ```cpp
 virtual unsigned int CurrentSubscriptionLevel() const = 0;
@@ -67,15 +67,15 @@ Geçerli abonelik düzeyi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Abonelik düzeyi, donanım iş parçacığıyla kaç çalışan iş parçacığının ilişkili olduğunu söyler. Bu yalnızca Kaynak Yöneticisi'nin abone olan iş parçacıkları biçiminde farkında olduğu iş parçacıklarını ve iş parçacığı eklerini etkin olarak yürüten sanal işlemci köklerini içerir.
+Abonelik düzeyi, kaç çalışan iş parçacığının donanım iş parçacığıyla ilişkili olduğunu söyler. Bu yalnızca Kaynak Yöneticisi, abone olunan iş parçacıkları biçiminde ve iş parçacığı proxy 'lerini etkin bir şekilde yürüten sanal işlemci köklerine sahip iş parçacıklarını içerir.
 
-[ISchedulerProxy::SubscribeCurrentThread](ischedulerproxy-structure.md#subscribecurrentthread)veya [iSchedulerProxy yöntemini çağırma::RequestInitialVirtualProcessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) parametresi `doSubscribeCurrentThread` ile değer **doğru** ayarlanmış bir donanım iş parçacığının abonelik düzeyini bir artar. Ayrıca aboneliği `IExecutionResource` temsil eden bir arabirim de döndürerler. IExecutionResource'a karşılık gelen bir [çağrı::Kaldırma](#remove) donanım iş parçacığının abonelik düzeyini birer bir erler.
+[ISchedulerProxy:: SubscribeCurrentThread](ischedulerproxy-structure.md#subscribecurrentthread)yöntemini çağırma ya da [IBir](ischedulerproxy-structure.md#requestinitialvirtualprocessors) `doSubscribeCurrentThread` değer olarak ayarlanan parametre ile **`true`** bir donanım iş parçacığının abonelik düzeyini artırır. Ayrıca `IExecutionResource` , aboneliği temsil eden bir arabirim de döndürür. [IExecutionResource:: Remove](#remove) öğesine karşılık gelen bir çağrı, donanım iş parçacığının abonelik düzeyini bir azaltır.
 
-IVirtualProcessorRoot yöntemini kullanarak sanal işlemci kökünü etkinleştirme [eylemi::Etkinleştirme,](ivirtualprocessorroot-structure.md#activate) bir donanım iş parçacığının abonelik düzeyini birer birer yükseltir. [IVirtualProcessorRoot::Deactivate](ivirtualprocessorroot-structure.md#deactivate)veya [IExecutionResource::Etkinleştirilen](#remove) sanal işlemci kökünde çağrıldığında abonelik düzeyini bir erle silme yöntemini kaldırın.
+[IVirtualProcessorRoot:: Activate](ivirtualprocessorroot-structure.md#activate) yöntemi kullanılarak sanal işlemci kökünü etkinleştirme eylemi, bir donanım iş parçacığının abonelik düzeyini bir tane artırır. [IVirtualProcessorRoot::D eactivate](ivirtualprocessorroot-structure.md#deactivate)veya [IExecutionResource:: Remove](#remove) yöntemleri, etkinleştirilen bir sanal işlemci kökünde çağrıldığında abonelik düzeyini tek bir azaltır.
 
-Kaynak Yöneticisi, kaynakları zamanlayıcılar arasında ne zaman taşıyarak belirleyecek yollardan biri olarak abonelik düzeyi bilgilerini kullanır.
+Kaynak Yöneticisi, kaynakların zamanlayıcılar arasında ne zaman taşınacağını belirleme yöntemlerinden biri olarak abonelik düzeyi bilgilerini kullanır.
 
-## <a name="iexecutionresourcegetexecutionresourceid-method"></a><a name="getexecutionresourceid"></a>iExecutionResource::GetExecutionResourceid Yöntemi
+## <a name="iexecutionresourcegetexecutionresourceid-method"></a><a name="getexecutionresourceid"></a>IExecutionResource:: GetExecutionResourceId yöntemi
 
 Bu yürütme kaynağının temsil ettiği donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.
 
@@ -85,13 +85,13 @@ virtual unsigned int GetExecutionResourceId() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yürütme kaynağının altında yatan donanım iş parçacığı için benzersiz bir tanımlayıcı.
+Bu yürütme kaynağını temel alan donanım iş parçacığı için benzersiz bir tanımlayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her donanım iş parçacığı, Eşzamanlılık Çalışma Zamanı tarafından benzersiz bir tanımlayıcı atanır. Birden çok yürütme kaynakları ilişkili donanım iş parçacığı ise, hepsi aynı yürütme kaynak tanımlayıcısı olacaktır.
+Her donanım iş parçacığına Eşzamanlılık Çalışma Zamanı tarafından benzersiz bir tanımlayıcı atanır. Birden çok yürütme kaynağı ilişkili donanım iş parçacığı ise, hepsi aynı yürütme kaynak tanımlayıcısına sahip olur.
 
-## <a name="iexecutionresourcegetnodeid-method"></a><a name="getnodeid"></a>IExecutionResource::GetNodeId Yöntemi
+## <a name="iexecutionresourcegetnodeid-method"></a><a name="getnodeid"></a>IExecutionResource:: GetNodeId yöntemi
 
 Bu yürütme kaynağının ait olduğu işlemci düğümü için benzersiz bir tanımlayıcı döndürür.
 
@@ -105,13 +105,13 @@ virtual unsigned int GetNodeId() const = 0;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşzamanlılık Çalışma Süresi, işlemci düğümleri gruplarında sistemdeki donanım iş parçacıklarını temsil eder. Düğümler genellikle sistemin donanım topolojisinden türetilir. Örneğin, belirli bir soketveya belirli bir NUMA düğümündeki tüm işlemciler aynı işlemci düğümüne ait olabilir. Kaynak Yöneticisi, sistemdeki toplam işlemci düğümü sayısını temsil eden `0` `nodeCount - 1` `nodeCount` ve dahil olmak üzere bu düğümlere benzersiz tanımlayıcılar atar.
+Eşzamanlılık Çalışma Zamanı, işlemci düğümleri gruplarındaki sistemdeki donanım iş parçacıklarını temsil eder. Düğümler genellikle sistemin donanım topolojisinden türetilir. Örneğin, belirli bir yuvada veya belirli bir NUMA düğümündeki tüm işlemciler aynı işlemci düğümüne ait olabilir. Kaynak Yöneticisi, bu düğümlere `0` kadar ve dahil olmak üzere benzersiz tanımlayıcılar atar ve bu `nodeCount - 1` , `nodeCount` sistemdeki toplam işlemci düğümü sayısını temsil eder.
 
 Düğüm sayısı [GetProcessorNodeCount](concurrency-namespace-functions.md)işlevinden elde edilebilir.
 
-## <a name="iexecutionresourceremove-method"></a><a name="remove"></a>IExecutionResource::Kaldırma Yöntemi
+## <a name="iexecutionresourceremove-method"></a><a name="remove"></a>IExecutionResource:: Remove yöntemi
 
-Bu yürütme kaynağını Kaynak Yöneticisi'ne verir.
+Bu yürütme kaynağını Kaynak Yöneticisi döndürür.
 
 ```cpp
 virtual void Remove(_Inout_ IScheduler* pScheduler) = 0;
@@ -120,21 +120,21 @@ virtual void Remove(_Inout_ IScheduler* pScheduler) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *pScheduler*<br/>
-Bu yürütme kaynağını kaldırmak için istekte bulunmayı yapan zamanlayıcıya bir arabirim.
+Zamanlayıcı için bu yürütme kaynağını kaldırma isteğini yapan bir arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi, sanal işlemci kökleriyle ilişkili yürütme kaynaklarının yanı sıra bağımsız yürütme kaynaklarını da Kaynak Yöneticisi'ne döndürmek için kullanın.
+Tek başına yürütme kaynaklarını ve Kaynak Yöneticisi sanal işlemci köklerle ilişkili yürütme kaynaklarını döndürmek için bu yöntemi kullanın.
 
-Bu, [ISchedulerProxy::SubscribeCurrentThread](ischedulerproxy-structure.md#subscribecurrentthread) veya [ISchedulerProxy::RequestInitialVirtualProcessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors)yöntemlerinden aldığınız bağımsız bir yürütme kaynağıysa, yöntemi `Remove` arayarak kaynağın temsil etmek için oluşturulduğu iş parçacığı aboneliğini sona erdirecektir. Bir zamanlayıcı proxy'sini kapatmadan önce tüm iş parçacığı `Remove` aboneliklerini sonlamalısınız ve aboneliği oluşturan iş parçacığından aramanız gerekir.
+Bu tek başına bir yürütme kaynağıdır ve [ISchedulerProxy:: SubscribeCurrentThread](ischedulerproxy-structure.md#subscribecurrentthread) ya da [ıchedulerproxy:: Requestınitialvirtualişlemcilerle](ischedulerproxy-structure.md#requestinitialvirtualprocessors), yöntemi çağırmak `Remove` kaynağın oluşturulduğu iş parçacığı aboneliğini sona ercektir. Bir Zamanlayıcı proxy 'sini kapatmadan önce tüm iş parçacığı aboneliklerini sonlandırmalısınız ve `Remove` aboneliği oluşturan iş parçacığından çağrı yapmanız gerekir.
 
-Arabirim `IVirtualProcessorRoot` `IExecutionResource` arabirimden devraldığı için, sanal işlemci kökleri `Remove` de yöntemi çağırarak Kaynak Yöneticisi'ne döndürülebilir. IScheduler'a yapılan bir çağrıya yanıt olarak sanal işlemci kökünü döndürmeniz [gerekebilir::RemoveVirtualProcessors](ischeduler-structure.md#removevirtualprocessors) yöntemi veya ISchedulerProxy'den aldığınız aşırı aboneleştirilmiş bir sanal işlemci köküyle [yaptığınızda::CreateOversubscriber](ischedulerproxy-structure.md#createoversubscriber) yöntemi. Sanal işlemci kökleri için, iş parçacığının `Remove` yöntemi çağırabileceği herhangi bir kısıtlama yoktur.
+`Remove`Arabirim arabirimden devraldığı için, bir yöntemi çağırarak sanal işlemci kökleri de kaynak yöneticisi döndürülebilir `IVirtualProcessorRoot` `IExecutionResource` . [IComparer:: Removevirtualprocessor](ischeduler-structure.md#removevirtualprocessors) yöntemine yapılan çağrıya yanıt olarak veya [IComparer Ulerproxy:: CreateOversubscriber](ischedulerproxy-structure.md#createoversubscriber) yönteminden edindiğiniz çok aboneli bir sanal işlemci kökü ile işiniz bittiğinde bir sanal işlemci kökünü geri almanız gerekebilir. Sanal işlemci kökleri için, hangi iş parçacığının yöntemi çağırabileceği konusunda bir kısıtlama yoktur `Remove` .
 
-`invalid_argument`parametre `pScheduler` ' ye `NULL`ayarlanırsa atılır.
+`invalid_argument`parametresi `pScheduler` olarak ayarlandıysa oluşturulur `NULL` .
 
-`invalid_operation`parametre, `pScheduler` bu yürütme kaynağının oluşturulduğu zamanlayıcıdan farklıysa veya geçerli iş parçacığı iş parçacığı aboneliğini oluşturan iş parçacığından farklıysa, bağımsız bir yürütme kaynağıyla atılırsa.
+`invalid_operation`parametresi `pScheduler` Bu yürütme kaynağının oluşturulduğu Scheduler 'dan farklıysa veya geçerli iş parçacığı iş parçacığı aboneliğini oluşturan iş parçacığından farklıysa, tek başına yürütme kaynağı ile oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[concurrency Ad Alanı](concurrency-namespace.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
 [IVirtualProcessorRoot Yapısı](ivirtualprocessorroot-structure.md)

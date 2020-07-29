@@ -8,16 +8,16 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-ms.openlocfilehash: e8ea949653c7e62f39ab9d1b181c419cf51fe3cb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 240cb4da03d6c8c1958b7a86e78171aca2dc30e9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209839"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216459"
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 
-Bu konudaki örnek, `CCustomRowset` sınıfına `IRowsetLocate` arabirimini ekler. Neredeyse tüm durumlarda, var olan bir COM nesnesine bir arabirim ekleyerek başlayın. Daha sonra tüketici şablonlarından daha fazla çağrı ekleyerek test edebilirsiniz. Örnek, nasıl yapılacağını göstermektedir:
+Bu konudaki örnek, `IRowsetLocate` arabirimini `CCustomRowset` sınıfına ekler. Neredeyse tüm durumlarda, var olan bir COM nesnesine bir arabirim ekleyerek başlayın. Daha sonra tüketici şablonlarından daha fazla çağrı ekleyerek test edebilirsiniz. Örnek, nasıl yapılacağını göstermektedir:
 
 - Sağlayıcıya arabirim ekleme.
 
@@ -25,9 +25,9 @@ Bu konudaki örnek, `CCustomRowset` sınıfına `IRowsetLocate` arabirimini ekle
 
 - Yer işareti desteği ekleyin.
 
-`IRowsetLocate` arabirimi `IRowset` arabiriminden devralır. `IRowsetLocate` arabirimini eklemek için, [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)'den `CCustomRowset` ' i alın.
+`IRowsetLocate`Arabirim `IRowset` arabiriminden devralır. Arabirimi eklemek için `IRowsetLocate` , `CCustomRowset` [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)'den devralma.
 
-`IRowsetLocate` arabirimini eklemek, birçok arayüzden biraz farklıdır. VTABLEs 'ın ölçeğini oluşturmak için, OLE DB sağlayıcı şablonlarının türetilmiş arabirimi işlemek için bir şablon parametresi vardır. Aşağıdaki kod, yeni devralma listesini gösterir:
+Arabirimi eklemek, `IRowsetLocate` çoğu arabirimden farklı bir bittir. VTABLEs 'ın ölçeğini oluşturmak için, OLE DB sağlayıcı şablonlarının türetilmiş arabirimi işlemek için bir şablon parametresi vardır. Aşağıdaki kod, yeni devralma listesini gösterir:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -40,9 +40,9 @@ class CCustomRowset : public CRowsetImpl< CCustomRowset,
           IRowsetLocateImpl<CCustomRowset, IRowsetLocate>>
 ```
 
-Dördüncü, beşinci ve altıncı parametrelerin hepsi eklenmiştir. Bu örnek, dördüncü ve beşinci parametrelerin varsayılan değerlerini kullanır, ancak `IRowsetLocateImpl` altıncı parametre olarak belirtin. `IRowsetLocateImpl` iki şablon parametresi alan bir OLE DB Şablon sınıftır: Bu, `IRowsetLocate` arabirimini `CCustomRowset` sınıfına bağlayan. Birçok arabirimi eklemek için bu adımı atlayabilir ve bir sonrakine geçebilirsiniz. Yalnızca `IRowsetLocate` ve `IRowsetScroll` arabirimlerinden bu şekilde işlenmesi gerekir.
+Dördüncü, beşinci ve altıncı parametrelerin hepsi eklenmiştir. Bu örnek, dördüncü ve beşinci parametreler için varsayılan değerleri kullanır, ancak `IRowsetLocateImpl` altıncı parametre olarak belirtin. `IRowsetLocateImpl`, iki şablon parametresi alan bir OLE DB Şablon sınıfıdır: Bu, `IRowsetLocate` arabirimini `CCustomRowset` sınıfına yedekler. Birçok arabirimi eklemek için bu adımı atlayabilir ve bir sonrakine geçebilirsiniz. Yalnızca `IRowsetLocate` ve `IRowsetScroll` arabirimlerinin bu şekilde işlenmesi gerekir.
 
-Daha sonra, `CCustomRowset` `IRowsetLocate` arabirimi için `QueryInterface` çağıracağınızı bildirmeniz gerekir. `COM_INTERFACE_ENTRY(IRowsetLocate)` satırını haritaya ekleyin. `CCustomRowset` için arabirim eşlemesi aşağıdaki kodda gösterildiği gibi görünmelidir:
+Daha sonra `CCustomRowset` arayüzü için çağrısına söylemeniz gerekir `QueryInterface` `IRowsetLocate` . Satırı haritaya ekleyin `COM_INTERFACE_ENTRY(IRowsetLocate)` . İçin arabirim eşlemesi `CCustomRowset` aşağıdaki kodda gösterildiği gibi görünmelidir:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -56,11 +56,11 @@ BEGIN_COM_MAP(CCustomRowset)
 END_COM_MAP()
 ```
 
-Ayrıca, eşlemenizi `CRowsetImpl` sınıfına da açmanız gerekir. `CRowsetImpl` haritasında kanca eklemek için COM_INTERFACE_ENTRY_CHAIN makroya ekleyin. Ayrıca, devralma bilgilerinden oluşan `RowsetBaseClass` adlı bir typedef oluşturun. Bu typedef rastgele ve yoksayılabilir.
+Ayrıca, eşlemenizi sınıfına da eklemeniz gerekir `CRowsetImpl` . Haritada kanca eklemek için COM_INTERFACE_ENTRY_CHAIN makroya ekleyin `CRowsetImpl` . Ayrıca, devralma bilgilerinden oluşan adlı bir typedef oluşturun `RowsetBaseClass` . Bu typedef rastgele ve yoksayılabilir.
 
-Son olarak, `IColumnsInfo::GetColumnsInfo` çağrısını işleyin. Bunu yapmak için normalde PROVIDER_COLUMN_ENTRY makroları kullanırsınız. Ancak, bir tüketici yer işaretlerini kullanmak isteyebilir. Tüketicinin bir yer işareti isteyip istemediği, sağlayıcının döndürdüğü sütunları değiştirebilmelisiniz.
+Son olarak, `IColumnsInfo::GetColumnsInfo` çağrıyı işleyin. Bunu yapmak için normalde PROVIDER_COLUMN_ENTRY makroları kullanırsınız. Ancak, bir tüketici yer işaretlerini kullanmak isteyebilir. Tüketicinin bir yer işareti isteyip istemediği, sağlayıcının döndürdüğü sütunları değiştirebilmelisiniz.
 
-`IColumnsInfo::GetColumnsInfo` çağrısını işlemek için `CTextData` sınıfındaki PROVIDER_COLUMN haritasını silin. PROVIDER_COLUMN_MAP makrosu bir işlevi `GetColumnInfo`tanımlar. Kendi `GetColumnInfo` işlevinizi tanımlayın. İşlev bildirimi şöyle görünmelidir:
+Çağrıyı işlemek için `IColumnsInfo::GetColumnsInfo` , sınıfındaki PROVIDER_COLUMN haritasını silin `CTextData` . PROVIDER_COLUMN_MAP makrosu bir işlevi tanımlar `GetColumnInfo` . Kendi `GetColumnInfo` işlevinizi tanımlayın. İşlev bildirimi şöyle görünmelidir:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -78,7 +78,7 @@ class CTextData
 };
 ```
 
-Ardından, `GetColumnInfo` işlevini *özel*RS. cpp dosyasında aşağıdaki gibi uygulayın:
+Ardından, `GetColumnInfo` Işlevi *özel*RS. cpp dosyasında aşağıdaki gibi uygulayın:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -148,9 +148,9 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 }
 ```
 
-`GetColumnInfo`, `DBPROP_IRowsetLocate` adlı bir özelliğin ayarlanmış olup olmadığını kontrol eder. OLE DB, satır kümesi nesnesindeki isteğe bağlı arabirimlerin her biri için özelliklere sahiptir. Tüketici, bu isteğe bağlı arabirimlerden birini kullanmak isterse, bir özelliği true olarak ayarlar. Sağlayıcı daha sonra bu özelliği denetleyebilir ve temel alınarak özel eylem gerçekleştirebilir.
+`GetColumnInfo`İlk olarak, çağrılan bir özelliğin ayarlanmış olup olmadığını kontrol eder `DBPROP_IRowsetLocate` . OLE DB, satır kümesi nesnesindeki isteğe bağlı arabirimlerin her biri için özelliklere sahiptir. Tüketici, bu isteğe bağlı arabirimlerden birini kullanmak isterse, bir özelliği true olarak ayarlar. Sağlayıcı daha sonra bu özelliği denetleyebilir ve temel alınarak özel eylem gerçekleştirebilir.
 
-Uygulamanızda, komut nesnesine yönelik işaretçiyi kullanarak özelliği alırsınız. `pThis` işaretçisi satır kümesi veya komut sınıfını temsil eder. Burada şablonları kullandığınız için, bunu **void** işaretçi olarak veya kodun derlenmeyeceği şekilde geçirmeniz gerekir.
+Uygulamanızda, komut nesnesine yönelik işaretçiyi kullanarak özelliği alırsınız. `pThis`İşaretçi satır kümesi veya komut sınıfını temsil eder. Burada şablonları kullandığınız için, bunu bir işaretçi olarak geçirmeniz **`void`** veya kodun derlenmeyeceği olması gerekir.
 
 Sütun bilgilerini tutacak bir statik dizi belirtin. Tüketici, yer işareti sütununu istemiyor, dizideki bir giriş boşa harcanmış olur. Bu diziyi dinamik olarak ayırabilirsiniz, ancak doğru şekilde yok etmeniz gerekir. Bu örnek ADD_COLUMN_ENTRY makroları tanımlar ve kullanır ve bilgileri diziye eklemek için ADD_COLUMN_ENTRY_EX. Makroları *özel*RS 'ye ekleyebilirsiniz. H dosyası aşağıdaki kodda gösterildiği gibi:
 
@@ -183,7 +183,7 @@ Sütun bilgilerini tutacak bir statik dizi belirtin. Tüketici, yer işareti sü
    _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;
 ```
 
-Tüketicideki kodu test etmek için `OnRun` işleyicisinde birkaç değişiklik yapmanız gerekir. İşlevine yapılan ilk değişiklik, özellik kümesine bir özellik eklemek için kod eklemektir. Kod `DBPROP_IRowsetLocate` özelliğini true olarak ayarlar, böylece sağlayıcıya yer işareti sütununu istediğinizi söyleyerek. `OnRun` işleyici kodu aşağıdaki gibi görünmelidir:
+Tüketicideki kodu test etmek için, işleyicide birkaç değişiklik yapmanız gerekir `OnRun` . İşlevine yapılan ilk değişiklik, özellik kümesine bir özellik eklemek için kod eklemektir. Kod, `DBPROP_IRowsetLocate` özelliği true olarak ayarlar, böylece sağlayıcıya Bookmark sütununu istediğinizi söyleyerek. `OnRun`İşleyici kodu aşağıdaki gibi görünmelidir:
 
 ```cpp
 //////////////////////////////////////////////////////////////////////
@@ -235,7 +235,7 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }
 ```
 
-**While** döngüsü `IRowsetLocate` arabirimindeki `Compare` yöntemini çağırmak için kod içerir. Tam olarak aynı yer imlerini karşılaştırdığınız için, sahip olduğunuz kod her zaman geçmelidir. Ayrıca, bir yer işaretini geçici bir değişkende depolayın, böylece **while** döngüsü bittikten sonra, tüketici şablonlarındaki `MoveToBookmark` işlevini çağırmak için onu kullanabilirsiniz. `MoveToBookmark` işlevi `IRowsetLocate``GetRowsAt` yöntemini çağırır.
+**`while`** Döngü, arabirimindeki yöntemi çağırmak için kod içerir `Compare` `IRowsetLocate` . Tam olarak aynı yer imlerini karşılaştırdığınız için, sahip olduğunuz kod her zaman geçmelidir. Ayrıca, bir yer işaretini geçici bir değişkende depolayın, böylece **`while`** döngü tamamlandıktan sonra `MoveToBookmark` işlevi tüketici şablonlarında çağırın. `MoveToBookmark`İşlevi `GetRowsAt` içindeki yöntemini çağırır `IRowsetLocate` .
 
 Ayrıca, tüketicideki Kullanıcı kaydını da güncelleştirmeniz gerekir. Bir yer işaretini ve COLUMN_MAP bir girişi işlemek için sınıfa bir giriş ekleyin:
 
@@ -262,8 +262,8 @@ END_ACCESSOR_MAP()
 };
 ```
 
-Kodu güncelleştirdiğiniz zaman, sağlayıcıyı `IRowsetLocate` arabirimiyle oluşturup yürütebilmelisiniz.
+Kodu güncelleştirdikten sonra, sağlayıcıyı arabirimiyle oluşturup yürütebilmelisiniz `IRowsetLocate` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)
+[Gelişmiş sağlayıcı teknikleri](../../data/oledb/advanced-provider-techniques.md)

@@ -74,18 +74,18 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: ae6fcbbcbb1a526dbba857fc9bfa2da5eb897c73
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 108bbbbb7fcb491ecc9ed278c5f7d5002ad02ef3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404313"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231864"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 
 Windows düğme denetimlerinin işlevlerini sağlar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```
 class CButton : public CWnd
@@ -170,7 +170,7 @@ Olası ileti eşleme girdileri aşağıdaki gibidir:
 
 `CButton`İletişim kutusu kaynağından bir nesne oluşturursanız, `CButton` Kullanıcı iletişim kutusunu kapattığında nesne otomatik olarak yok edilir.
 
-Bir `CButton` pencere içinde bir nesne oluşturursanız, bunu yok etmeniz gerekebilir. `CButton`Nesneyi **Yeni** işlevi kullanarak yığında oluşturursanız, Kullanıcı Windows düğme denetimini kapattığında nesneyi yok etmek için **Delete** öğesini çağırmanız gerekir. `CButton`Nesneyi yığında oluşturursanız veya üst iletişim nesnesine katıştırılmışsa, otomatik olarak yok edilir.
+Bir `CButton` pencere içinde bir nesne oluşturursanız, bunu yok etmeniz gerekebilir. `CButton`Nesnesini, işlevini kullanarak yığında oluşturursanız **`new`** , **`delete`** Kullanıcı Windows düğme denetimini kapattığında nesneyi yok etmek için nesnesini çağırmanız gerekir. `CButton`Nesneyi yığında oluşturursanız veya üst iletişim nesnesine katıştırılmışsa, otomatik olarak yok edilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -1116,9 +1116,9 @@ Bu üye işlevi, Windows SDK [düğmeler](/windows/win32/controls/buttons) böl�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
 [CComboBox sınıfı](../../mfc/reference/ccombobox-class.md)<br/>
 [Cedıt sınıfı](../../mfc/reference/cedit-class.md)<br/>
 [CListBox sınıfı](../../mfc/reference/clistbox-class.md)<br/>

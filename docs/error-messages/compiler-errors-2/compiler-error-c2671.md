@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2671
 ms.assetid: fc0ee40f-c8f3-408f-b89d-745d149c4169
-ms.openlocfilehash: 57f4f2538fd02174f931faa2603a1388906d9944
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 795c3413699a2af0ae587980a658baa2bbcdd887
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760406"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216134"
 ---
 # <a name="compiler-error-c2671"></a>Derleyici hatası C2671
 
 ' function ': statik üye işlevlerinde ' this ' işaretçileri yok
 
-`static` üye işlevi `this`erişmeye çalıştı.
+Bir **`static`** üye işlev erişmeye çalıştı **`this`** .
 
 Aşağıdaki örnek C2671 oluşturur:
 

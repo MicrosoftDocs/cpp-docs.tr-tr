@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3014
 ms.assetid: af1c5b0c-dbf9-4274-b06a-c6c2cdcf2a52
-ms.openlocfilehash: 08b8fc2eef4aa3a94ec615ad236cd3f9bebc4883
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e62b5028f13b6a3e35a1cf75f38935cae5a43f81
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749889"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232098"
 ---
 # <a name="compiler-error-c3014"></a>Derleyici hatası C3014
 
 OpenMP ' Directive ' yönergesinden sonra bir for döngüsü bekleniyor
 
-Bir `#pragma omp for` yönergesini hemen izlemek için `for` döngüsünün dışında herhangi bir şey için bir hatadır.
+**`for`** Bir yönergeyi hemen izlemek için bir döngüden başka hiçbir şeye yönelik bir hatadır `#pragma omp for` .
 
 Aşağıdaki örnek C3014 oluşturur:
 

@@ -11,28 +11,28 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-ms.openlocfilehash: 954088955a3f1530bb298aadbc35c7dd74150b7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df880ed64fa472ff55eb5ee0d17caacf56228ab6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315670"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211898"
 ---
-# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>/Zc:strictStrings (Değişmez değer dize türü dönüşümünü devre dışı bırakma)
+# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings`(Dize sabit değer türü dönüştürmeyi devre dışı bırak)
 
-Bu seçenek belirtildiğinde, derleyici katı gerektirir `const`-dize değişmez değerleri kullanılarak başlatılan işaretçiler için nitelik uyumu.
+Belirtildiğinde, derleyici, **`const`** dize sabit değerleri kullanılarak başlatılan işaretçiler için katı nitelik uyumluluğu gerektirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:strictStrings**[**-**]
+> **`/Zc:strictStrings`**[**`-`**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **/ZC: strictstrings** belirtilirse, derleyici standart C++ zorlar `const` niteliklerini dize değişmez değerleri, türü olarak ' dizi `const char`' veya ' dizi `const wchar_t`' bildirimi bağlı olarak. Dize değişmezleri sabittir ve bir tanesinin içeriği değiştirme girişimi çalışma zamanında bir erişim ihlali hatasına neden olur. Bir dize işaretçisi olarak bildirilmelidir `const` dize değişmez değeri kullanarak başlatmak veya açık bir kullanmak için `const_cast` olmayan bir başlatmak için`const` işaretçi. Varsayılan olarak veya **/Zc:strictStrings-** belirtilirse, derleyici standart C++ zorlamaz `const` niteliklerini dize değişmez değerleri kullanılarak başlatılan dize işaretçileri için.
+**`/Zc:strictStrings`** Belirtilmişse, derleyici, **`const`** bildirime bağlı olarak dize sabit değerleri için ' Array of `const char` ' veya ' Array ' türünde standart C++ niteliklerini uygular `const wchar_t` . Dize sabit değerleri sabittir ve çalışma zamanında bir erişim ihlali hatası ile bir sonucun içeriğini değiştirme girişimi. Dize **`const`** değişmezi kullanarak başlatmak için bir dize işaretçisi bildirmeniz veya **`const_cast`** işaretçi olmayan bir işaretçi başlatmak için açık bir değer kullanmanız gerekir **`const`** . Varsayılan olarak veya **`/Zc:strictStrings-`** belirtilirse, derleyici **`const`** dize sabit değerleri kullanılarak başlatılan dize işaretçileri Için standart C++ niteliklerini zorlamaz.
 
-**/ZC: strictstrings** seçeneği varsayılan olarak kapalıdır. [/ Permissive-](permissive-standards-conformance.md) derleyici seçeneği, bu seçenek örtük olarak ayarlar, ancak kullanarak kılınabilir **/Zc:strictStrings-**.
+**`/Zc:strictStrings`** Seçenek varsayılan olarak kapalıdır. [`/permissive-`](permissive-standards-conformance.md)Derleyici seçeneği bu seçeneği örtülü olarak ayarlar, ancak kullanılarak geçersiz kılınabilir **`/Zc:strictStrings-`** .
 
-Kullanım **/ZC: strictstrings** yanlış kod derlemesini önlemek için seçeneği. Bu örnek nasıl basit bir bildirim hatasının çalışma zamanında çökmesine neden geliyor gösterir:
+**`/Zc:strictStrings`** Yanlış kodun derlemesini engellemek için seçeneğini kullanın. Bu örnek, bir basit bildirim hatasının çalışma zamanında kilitlenmeyle nasıl yol gösterdiğini gösterir:
 
 ```cpp
 // strictStrings_off.cpp
@@ -43,7 +43,7 @@ int main() {
 }
 ```
 
-Zaman **/ZC: strictstrings** olduğu aynı kodu bildiriminde hata raporları etkin `str`.
+**`/Zc:strictStrings`** Etkinleştirildiğinde, aynı kod bildiriminde bir hata bildirir `str` .
 
 ```cpp
 // strictStrings_on.cpp
@@ -55,21 +55,21 @@ int main() {
 }
 ```
 
-Kullanırsanız `auto` bir dize işaretçisi bildirirseniz, derleyici doğru oluşturur ve `const` işaretçisi türü bildirimini sizin için. İçeriğini değiştirme girişimi bir `const` işaretçi hata olarak derleyici tarafından raporlanır.
+**`auto`** Bir dize işaretçisi bildirmek için kullanırsanız, derleyici **`const`** sizin için doğru işaretçi türü bildirimini oluşturur. Bir işaretçinin içeriğini değiştirme girişimi **`const`** derleyici tarafından hata olarak bildirilir.
 
 > [!NOTE]
-> Visual Studio 2013 C++ Standart Kitaplığı desteklemediği **/ZC: strictstrings** debug derleyici seçeneğini oluşturur. Birkaç görürseniz [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) hataları derleme çıkışı, bu neden olabilir.
+> Visual Studio 2013 içindeki C++ standart kitaplığı, **`/Zc:strictStrings`** hata ayıklama Derlemeleriyle derleyici seçeneğini desteklemez. Yapı çıkışındaki çeşitli [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) hataları görürseniz, bu durum olabilir.
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: strictstrings** seçip **Tamam**.
+1. **Ek seçenekler** özelliğini içerecek şekilde değiştirin **`/Zc:strictStrings`** ve ardından **Tamam**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Zc (Uyumluluk)](zc-conformance.md)<br/>
+[`/Zc`Uyumsuzlu](zc-conformance.md)<br/>

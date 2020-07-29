@@ -99,28 +99,28 @@ helpviewer_keywords:
 - operator> (map) member [STL/CLR]
 - operator>= (map) member [STL/CLR]
 ms.assetid: 8b0a7764-b5e4-4175-a802-82b72eb8662a
-ms.openlocfilehash: 19b450e256a428769ca6588227e9249e4e21f51d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cd06942d3795dda9e6c6aaa8794957018fa96ace
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208554"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216381"
 ---
 # <a name="map-stlclr"></a>eşle (STL/CLR)
 
-Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Öğe dizisini, her biri bir öğe depolayan (neredeyse) dengeli sıralı düğüm ağacı olarak yönetmek için kapsayıcı `map` kullanırsınız. Bir öğesi, sırası sıralamak için bir anahtardan ve Ride için bir eşlenen değer içerir.
+Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Öğe `map` dizisini, her biri bir öğe depolayan (neredeyse) dengeli sıralı düğüm ağacı olarak yönetmek için kapsayıcısını kullanırsınız. Bir öğesi, sırası sıralamak için bir anahtardan ve Ride için bir eşlenen değer içerir.
 
-Aşağıdaki açıklamada `GValue` şöyle olur:
+Aşağıdaki açıklamada, `GValue` ile aynıdır:
 
 `Microsoft::VisualC::StlClr::GenericPair<GKey, GMapped>`
 
 burada:
 
-`GKey`, ikinci değer bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda `Key^`
+`GKey`, ikinci bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda`Key^`
 
-`GMapped`, ikincisi bir başvuru türü olmadığı sürece *eşlenir* ile aynıdır, bu durumda `Mapped^`
+`GMapped`, ikincisi bir başvuru türü olmadığı sürece *eşlenme* ile aynıdır, bu durumda`Mapped^`
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -140,21 +140,21 @@ template<typename Key,
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*<br/>
+*Key*<br/>
 Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
-*Eşlendiği*<br/>
+*Mapped*<br/>
 Denetlenen dizideki bir öğenin ek bileşen türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<clienext/Map >
+**Üst bilgi:**\<cliext/map>
 
 **Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[map::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[map::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
@@ -201,12 +201,12 @@ Denetlenen dizideki bir öğenin ek bileşen türü.
 |--------------|-----------------|
 |[map::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
 |[map::operator(STL/CLR)](#op)|Bir anahtarı ilişkili eşlenmiş değerine eşler.|
-|[operator!= (map) (STL/CLR)](#op_neq)|`map` nesnenin başka bir `map` nesnesine eşit olup olmadığını belirler.|
-|[operator< (map) (STL/CLR)](#op_lt)|`map` nesnenin başka bir `map` nesnesinden küçük olup olmadığını belirler.|
-|[operator<= (map) (STL/CLR)](#op_lteq)|`map` nesnenin başka bir `map` nesnesinden küçük veya ona eşit olup olmadığını belirler.|
-|[operator== (map) (STL/CLR)](#op_eq)|`map` nesnenin başka bir `map` nesnesine eşit olup olmadığını belirler.|
-|[operator> (map) (STL/CLR)](#op_gt)|`map` nesnenin başka bir `map` nesnesinden büyük olup olmadığını belirler.|
-|[operator>= (map) (STL/CLR)](#op_gteq)|`map` nesnenin başka bir `map` nesnesinden büyük veya ona eşit olup olmadığını belirler.|
+|[işleç! = (eşleme) (STL/CLR)](#op_neq)|Bir `map` nesnenin başka bir nesneye eşit olup olmadığını belirler `map` .|
+|[işleç< (eşleme) (STL/CLR)](#op_lt)|Bir `map` nesnenin başka bir nesneden daha az olup olmadığını belirler `map` .|
+|[operator<= (map) (STL/CLR)](#op_lteq)|Bir `map` nesnenin başka bir nesneden küçük veya ona eşit olup olmadığını belirler `map` .|
+|[operator = = (Map) (STL/CLR)](#op_eq)|Bir `map` nesnenin başka bir nesneye eşit olup olmadığını belirler `map` .|
+|[işleç> (eşleme) (STL/CLR)](#op_gt)|Bir `map` nesnenin başka bir nesneden daha büyük olup olmadığını belirler `map` .|
+|[işleç>= (eşleme) (STL/CLR)](#op_gteq)|Bir `map` nesnenin başka bir nesneden büyük veya ona eşit olup olmadığını belirler `map` .|
 
 ## <a name="interfaces"></a>Arabirimler
 
@@ -218,33 +218,33 @@ Denetlenen dizideki bir öğenin ek bileşen türü.
 |<xref:System.Collections.Generic.IEnumerable%601>|Yazılı öğeler aracılığıyla sıralama.|
 |<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş öğelerin grubunu koruyun.|
 |<xref:System.Collections.Generic.IDictionary%602>|{Key, value} çiftlerinin grubunu koruyun.|
-|< Anahtar, değer >|Genel kapsayıcıyı koruyun.|
+|<anahtar, değer>|Genel kapsayıcıyı koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Nesnesi, tek tek düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı bir (neredeyse) dengeli ağaca öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesnesi, [map:: key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Eşlemeyi oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırma `operator<(key_type, key_type)`. Bu saklı nesneye, [map:: key_comp (STL/CLR)](../dotnet/map-key-comp-stl-clr.md)`()`üye işlevini çağırarak erişirsiniz.
+Nesnesi, [map:: key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Eşlemeyi oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<(key_type, key_type)` . Bu saklı nesneye, [map:: key_comp (STL/CLR)](../dotnet/map-key-comp-stl-clr.md)üye işlevini çağırarak erişirsiniz `()` .
 
-Bu tür bir temsilci nesnesi, [map:: key_type (STL/CLR)](../dotnet/map-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y`:
+Bu tür bir temsilci nesnesi, [map:: key_type (STL/CLR)](../dotnet/map-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y` :
 
-`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
+`key_comp()(X, Y)`her çağrıda aynı Boole sonucunu döndürür.
 
-`key_comp()(X, Y)` true ise, `key_comp()(Y, X)` false olmalıdır.
+`key_comp()(X, Y)`True ise, false olmalıdır `key_comp()(Y, X)` .
 
-`key_comp()(X, Y)` true ise, `X` `Y`önce sipariş olarak kabul edilir.
+`key_comp()(X, Y)`True ise, daha `X` önce sipariş olarak kabul edilir `Y` .
 
-`!key_comp()(X, Y) && !key_comp()(Y, X)` true ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
+`!key_comp()(X, Y) && !key_comp()(Y, X)`True ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
 
-Denetlenen dizide `Y` önce gelen herhangi bir öğe `X` için, `key_comp()(Y, X)` false olur. (Varsayılan temsilci nesnesi için, anahtarlar hiçbir şekilde değerde azalmayın.) Şablon sınıfı [eşlemesinin](../dotnet/map-stl-clr.md)aksine, `map` şablon sınıfının bir nesnesi tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
+`X`Denetlenen dizide önündeki tüm öğeler için `Y` `key_comp()(Y, X)` false olur. (Varsayılan temsilci nesnesi için, anahtarlar hiçbir şekilde değerde azalmayın.) Şablon sınıfı [eşlemesinin](../dotnet/map-stl-clr.md)aksine, şablon sınıfının bir nesnesi `map` tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
 
 Her öğe ayrı bir anahtar ve eşlenmiş bir değer içerir. Sıra, dizi içindeki öğe sayısının logaritmasına orantılı bir şekilde bir dizi işlem içeren rastgele bir öğenin aranması, eklenmesine ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Bir harita çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)`()`tarafından döndürülen Yineleyici öğesine karşılık gelir. Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir harita yineleyicisini arttırıp, daha sonra `end()`şuna eşit olacak. Ancak `end()`tarafından döndürülen yineleyici başvurusu oluşturamazsınız.
+Bir harita çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir harita yineleyicisini arttırıp daha sonra eşit olarak karşılaştırılacağını sağlayabilirsiniz `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Bir harita öğesine, doğrudan sayısal konumu verildiğinde (rastgele erişim Yineleyici gerektiren) başvurmayacağınızı unutmayın.
 
-Bir harita Yineleyici ilişkili eşleme düğümüne bir tanıtıcı depolar, bu da ilişkili kapsayıcısına bir tutamacı depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Eşleme yineleyicisi, ilişkili eşleme düğümü bazı eşlemelerle ilişkilendirildiği sürece geçerli kalır. Ayrıca, geçerli bir yineleyici bir şekilde başvurulmasını sağlar--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. `end()`eşit olmadığı sürece.
+Bir harita Yineleyici ilişkili eşleme düğümüne bir tanıtıcı depolar, bu da ilişkili kapsayıcısına bir tutamacı depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Eşleme yineleyicisi, ilişkili eşleme düğümü bazı eşlemelerle ilişkilendirildiği sürece geçerli kalır. Üstelik, geçerli bir yineleyici bir şekilde gönderilir--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. buna eşit olmadığı sürece `end()` .
 
 Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının *öğelerini yok ettiğini* unutmayın.
 
@@ -262,7 +262,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir çift yönlü yineleyiciyi döndürür. Denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetimli sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir çift yönlü yineleyiciyi döndürür. Denetlenen dizinin başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -313,7 +313,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi etkin bir şekilde [map:: Erase](../dotnet/map-erase-stl-clr.md) (stl/clr)`(` [map:: BEGIN (STL/CLR](../dotnet/map-begin-stl-clr.md) )`(),` [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)`())`çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi, [map:: Erase (STL/CLR)](../dotnet/map-erase-stl-clr.md) `(` [map:: BEGIN (STL/CLR)](../dotnet/map-begin-stl-clr.md) `(),` [map:: End (STL/CLR](../dotnet/map-end-stl-clr.md)) öğesini etkin bir şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -371,7 +371,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen dizi için bir sabit çift yönlü Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T2`.
+Türü, `T2` Denetlenen dizi için bir sabit çift yönlü yineleyiciyi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -458,7 +458,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters Yineleyici olarak kullanılabilecek belirtilmemiş türde `T4` bir nesne tanımlar.
+Türü, `T4` denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -492,7 +492,7 @@ int main()
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 size_type count(key_type key);
@@ -608,7 +608,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Map:: size (STL/CLR)](../dotnet/map-size-stl-clr.md)`() == 0`eşdeğerdir. Bu, eşlemenin boş olup olmadığını test etmek için kullanılır.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Map:: size (STL/CLR)](../dotnet/map-size-stl-clr.md)eşdeğerdir `() == 0` . Bu, eşlemenin boş olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -699,7 +699,7 @@ int main()
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 cliext::pair<iterator, iterator> equal_range(key_type key);
@@ -712,7 +712,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` map:: [lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md)`(key),` [map:: upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)`(key))`. Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [:: lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md) `(key),` [map:: upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -760,7 +760,7 @@ equal_range(L'x') empty = True
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -784,9 +784,9 @@ Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetimli sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)`()`. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
-İkinci üye işlevi, [`first`, `last`) aralığındaki denetimli sıranın öğelerini kaldırır ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa `end()`. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
+İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
 Üçüncü üye işlevi, anahtarı *anahtara*denk sıralama değerine sahip denetimli dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Bu anahtarı, belirtilen bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
 
@@ -853,7 +853,7 @@ erase(L'e') = 1
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator find(key_type key);
@@ -866,7 +866,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi halde [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)`()`döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi halde [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1097,7 +1097,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar.
+Tür, `GValue` Bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan türünde bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1143,7 +1143,7 @@ int main()
 
 Öğeleri ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 cliext::pair<iterator, bool> insert(value_type val);
@@ -1174,11 +1174,11 @@ Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 Üye işlevlerinin her biri, kalan işlenenler tarafından belirtilen bir sıra ekler.
 
-İlk üye işlevi, value değeri olan bir öğe eklemek için endeavors ve `X`bir *çift değer döndürür*. `X.second` true ise, `X.first` yeni ekli öğeyi belirtir; Aksi takdirde `X.first`, zaten var olan ve yeni bir öğe eklenmemiş eşdeğer sıralamaya sahip bir öğe belirler. Tek bir öğe eklemek için bunu kullanırsınız.
+İlk üye işlevi, value değeri olan bir öğe eklemek için endeavors ve bir *çift değer döndürür* `X` . `X.second`True ise, `X.first` yeni eklenen öğeyi belirtir; Aksi takdirde, `X.first` zaten var olan ve yeni bir öğe eklenmemiş eşdeğer sıralamaya sahip bir öğe atar. Tek bir öğe eklemek için bunu kullanırsınız.
 
 İkinci üye işlevi, bir ipucu olarak *WHERE* (performansı artırmak için) ve yeni eklenen öğeyi atayan bir yineleyici döndüren bir *değer değeri olan*bir öğe ekler. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için bunu kullanırsınız.
 
-Üçüncü üye işlevi [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
+Üçüncü üye işlevi [,) dizisini ekler `first` `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
 
 Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
@@ -1271,7 +1271,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için çift yönlü bir yineleyici olarak kullanılabilecek belirtilmemiş türde `T1` bir nesne tanımlar.
+Türü, `T1` denetimli sıra için çift yönlü bir yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1469,7 +1469,7 @@ a b c
 
 Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator lower_bound(key_type key);
@@ -1482,7 +1482,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *anahtara*denk sıralamaya sahip olan denetimli dizideki ilk öğeyi `X` belirler. Böyle bir öğe yoksa, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)`()`döndürür; Aksi takdirde, `X`atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, `X` denetimli dizideki, *anahtara*denk sıralamaya sahip ilk öğeyi belirler. Böyle bir öğe yoksa, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1528,7 +1528,7 @@ lower_bound(L'x')==end() = True
 
 Değer nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 static value_type make_value(key_type key, mapped_type mapped);
@@ -1544,7 +1544,7 @@ Aranacak eşlenen değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, anahtarı *anahtar* olan ve eşlenmiş değeri *eşlenmiş*bir `value_type` nesnesi döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
+Üye işlevi, `value_type` anahtarı *anahtar* olan ve eşlenmiş değeri *eşlenmiş*bir nesne döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1577,7 +1577,7 @@ int main()
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 map();
@@ -1614,7 +1614,7 @@ Oluşturucu:
 
 `map();`
 
-denetlenen sırayı, varsayılan sıralama koşulu `key_compare()`, hiçbir öğesi olmadan başlatır. Varsayılan sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+Varsayılan sıralama koşulu ile denetimli sırayı öğesi olmadan başlatır `key_compare()` . Varsayılan sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
@@ -1626,25 +1626,25 @@ Oluşturucu:
 
 `map(map<Key, Mapped>% right);`
 
-[`right.begin()`, `right.end()`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, *Map nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+[,) sırası ile denetlenen sırayı `right.begin()` `right.end()` varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, *Map nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `map(map<Key, Mapped>^ right);`
 
-[`right->begin()`, `right->end()`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, *Map nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+[,) sırası ile denetlenen sırayı `right->begin()` `right->end()` varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, *Map nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `template<typename InIter> map(InIter first, InIter last);`
 
-[`first`, `last`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+[,) sırası ile denetlenen sırayı `first` `last` varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
 `template<typename InIter> map(InIter first, InIter last, key_compare^ pred);`
 
-[`first`, `last`) sırası ile denetimli sırayı, sıralama koşulu *Pred*ile başlatır. Belirtilen sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+[,) sırası ile denetlenen sırayı `first` `last` , sıralama koşulu *Pred*ile başlatır. Belirtilen sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
@@ -1795,7 +1795,7 @@ int main()
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 map<Key, Mapped>% operator=(map<Key, Mapped>% right);
@@ -1808,7 +1808,7 @@ Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -1850,7 +1850,7 @@ int main()
 
 Bir anahtarı ilişkili eşlenmiş değerine eşler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 mapped_type operator[](key_type key);
@@ -1863,7 +1863,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, *anahtara*denk sıralama içeren bir öğe bulmak için endeavors. Bir bulursa, ilişkili eşlenmiş değeri döndürür; Aksi takdirde, `value_type(key, mapped_type())` ekler ve ilişkili (varsayılan) eşlenmiş değeri döndürür. Onunla ilişkili anahtarı verilen eşlenmiş bir değere bakmak ya da hiçbiri bulunmazsa anahtar için bir girdinin mevcut olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevleri, *anahtara*denk sıralama içeren bir öğe bulmak için endeavors. Bir bulursa, ilişkili eşlenmiş değeri döndürür; Aksi takdirde, `value_type(key, mapped_type())` ilişkili (varsayılan) eşlenmiş değeri ekler ve döndürür. Onunla ilişkili anahtarı verilen eşlenmiş bir değere bakmak ya da hiçbiri bulunmazsa anahtar için bir girdinin mevcut olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1925,7 +1925,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, `beginning` ters sıranın öğesini belirler. Doğru sırada görülen denetimli sıranın başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2021,7 +2021,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, `end` ters sıranın öğesini belirler. Bu uygulamayı, `current` geriye doğru sırada görülen denetlenen sıranın sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2074,7 +2074,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen sıra için ters Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T3`.
+Tür, `T3` denetlenen sıra için ters Yineleyici olarak işlev görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2116,7 +2116,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı hakkında bilgi için bkz. [map:: Empty (STL/CLR)](../dotnet/map-empty-stl-clr.md)`()`.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [map:: Empty (STL/CLR)](../dotnet/map-empty-stl-clr.md) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2208,7 +2208,7 @@ end()-begin() = 3
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void swap(map<Key, Mapped>% right);
@@ -2221,7 +2221,7 @@ void swap(map<Key, Mapped>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2326,7 +2326,7 @@ int main()
 
 Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator upper_bound(key_type key);
@@ -2339,7 +2339,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *anahtara*denk sıralama içeren kontrollü dizide `X` son öğeyi belirler. Böyle bir öğe yoksa veya denetlenen dizideki son öğe `X`, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)`()`döndürür. Aksi takdirde, `X`ötesinde ilk öğeyi atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki en son öğeyi, `X` *anahtara*denk sıralama olarak belirler. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2488,7 +2488,7 @@ typedef generic_value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür `generic_value`için bir eş anlamlı.
+Tür için bir eş anlamlı `generic_value` .
 
 ### <a name="example"></a>Örnek
 
@@ -2524,7 +2524,7 @@ int main()
 
 Liste eşit değildir karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2543,7 +2543,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left == right)`döndürür. İki harita öğe öğesine göre karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(left == right)` . İki harita öğe öğesine göre karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2591,11 +2591,11 @@ int main()
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-map-stlclr"></a><a name="op_lt"></a>işleç&lt; (eşleme) (STL/CLR)
+## <a name="operatorlt-map-stlclr"></a><a name="op_lt"></a>işleç &lt; (eşleme) (STL/CLR)
 
 Liste karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2614,7 +2614,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi true değerini döndürür, en düşük konum için de bu `!(right[i] < left[i])` `left[i] < right[i]`true `i`. Aksi takdirde, bu, iki harita öğe öğesine göre karşılaştırıldığı zaman, *sol taraftaki sola* *doğru sıralı* olup olmadığını test etmek için onu `left->size() < right->size()` döndürür.
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi takdirde, `left->size() < right->size()` iki harita öğe öğesine göre karşılaştırıldığı zaman, *sol taraftaki sola* *doğru* sıralı olup olmadığını test etmek için bunu kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2662,11 +2662,11 @@ int main()
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-map-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (eşleme) (STL/CLR)
+## <a name="operatorlt-map-stlclr"></a><a name="op_lteq"></a>operator &lt; = (Map) (STL/CLR)
 
 Küçüktür veya eşit karşılaştırma listesi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2685,7 +2685,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(right < left)`döndürür. Bu, iki harita öğe öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında* sıralanmadığını test etmek için kullanılır.
+İşleç işlevi döndürülür `!(right < left)` . Bu, iki harita öğe öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında* sıralanmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2737,7 +2737,7 @@ int main()
 
 Liste eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2756,7 +2756,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her konum için `i``left[i] ==` `right[i]`için true değerini döndürür. İki harita öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her bir konum için aynı uzunluğa sahip olursa true değerini döndürür `i` `left[i] ==` `right[i]` . İki harita öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2804,11 +2804,11 @@ int main()
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-map-stlclr"></a><a name="op_gt"></a>işleç&gt; (eşleme) (STL/CLR)
+## <a name="operatorgt-map-stlclr"></a><a name="op_gt"></a>işleç &gt; (eşleme) (STL/CLR)
 
 Karşılaştırmadan daha büyük bir liste.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2827,7 +2827,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `right` `<` `left`döndürüyor. İki harita öğe öğesine göre karşılaştırıldığı zaman, *sol* *taraftaki bir* değer olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `right` `<` `left` . İki harita öğe öğesine göre karşılaştırıldığı zaman, *sol* *taraftaki bir* değer olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2875,11 +2875,11 @@ int main()
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-map-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (eşleme) (STL/CLR)
+## <a name="operatorgt-map-stlclr"></a><a name="op_gteq"></a>operator &gt; = (Map) (STL/CLR)
 
 Büyük veya eşit karşılaştırmayı listele.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2898,7 +2898,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left` `<` `right)`döndürüyor. İki harita öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(left` `<` `right)` . İki harita öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

@@ -14,18 +14,18 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-ms.openlocfilehash: 6bf4b9666d746199cea92fa2bd52b691c67e4a5b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1fa21f2a5a5c1d004fc23d70b686d7e45bbcac81
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126362"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215913"
 ---
 # <a name="texture_view-class"></a>texture_view Sınıfı
 
-Bir dokuya okuma erişimi ve yazma erişimi sağlar. `texture_view` yalnızca değer türü `int`, `unsigned int`veya varsayılan 32-bit bpse olan `float` olan dokuları okumak için kullanılabilir. Diğer doku biçimlerini okumak için `texture_view<const value_type, _Rank>`kullanın.
+Bir dokuya okuma erişimi ve yazma erişimi sağlar. `texture_view`yalnızca değer türü olan **`int`** , **`unsigned int`** veya **`float`** varsayılan 32-bit bpse olan dokuları okumak için kullanılabilir. Diğer doku biçimlerini okumak için kullanın `texture_view<const value_type, _Rank>` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename value_type,int _Rank>
@@ -46,7 +46,7 @@ class texture_view<const value_type, _Rank>
 Doku topladaki öğelerin türü.
 
 *_Rank*<br/>
-`texture_view`derecesi.
+Öğesinin derecesi `texture_view` .
 
 ## <a name="members"></a>Üyeler
 
@@ -55,15 +55,15 @@ Doku topladaki öğelerin türü.
 |Ad|Açıklama|
 |----------|-----------------|
 |`value_type`|Doku toplamalarda öğelerin türü.|
-|`coordinates_type`|`texture_view`bir doku hücresi değerinin belirtmek için kullanılan koordinat türü — yani, `float`değer türü olan ilişkili dokuyla aynı dereceye sahip bir `short_vector`.|
-|`gather_return_type`|Toplama işlemleri için kullanılan dönüş türü — diğer bir deyişle, örnek dört doku hücresi değerinin değerinden toplanan dört homojen renk bileşeni tutan 4 `short_vector` bir sıra.|
+|`coordinates_type`|' De bir doku hücresi değerinin belirtmek için kullanılan koordinat türü; yani, `texture_view` bir `short_vector` değer türü olan ilişkili dokuyla aynı dereceye sahip **`float`** .|
+|`gather_return_type`|Toplama işlemleri için kullanılan dönüş türü — diğer bir deyişle, `short_vector` örnek dört doku hücresi değerinin değerinden toplanan dört homojen Color bileşenini tutan bir sıra 4.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[texture_view Oluşturucusu](#ctor)|Fazla Yüklendi. Bir `texture_view` örneği oluşturur.|
-|[~ texture_view yok edici](#ctor)|`texture_view` örneğini yok eder.|
+|[texture_view Oluşturucusu](#ctor)|Fazla Yüklendi. Bir `texture_view` örnek oluşturur.|
+|[~ texture_view yok edici](#ctor)|Örneği yok eder `texture_view` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -73,9 +73,9 @@ Doku topladaki öğelerin türü.
 |[gather_blue](#gather_blue)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texvert 'in mavi (z) bileşenlerini döndürür.|
 |[gather_green](#gather_green)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texx 'in yeşil (y) bileşenlerini döndürür.|
 |[gather_red](#gather_red)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texx 'in kırmızı (x) bileşenlerini döndürür.|
-|[get](#get)|Fazla Yüklendi. Dizine göre öğe değerini alır.|
+|[Al](#get)|Fazla Yüklendi. Dizine göre öğe değerini alır.|
 |[örnekli](#sample)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda ve ayrıntı düzeyinde dokuyu örnekler.|
-|[set](#set)|Bir öğenin değerini dizine göre ayarlar.|
+|[kurmak](#set)|Bir öğenin değerini dizine göre ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -89,7 +89,7 @@ Doku topladaki öğelerin türü.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[value_type](#value_type)|`texture_view`öğelerinin değer türü.|
+|[value_type](#value_type)|Öğelerinin değer türü `texture_view` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -103,17 +103,17 @@ Doku topladaki öğelerin türü.
 
 **Ad alanı:** concurrency:: Graphics
 
-## <a name="dtor"></a>~ texture_view
+## <a name="texture_view"></a><a name="dtor"></a>~ texture_view
 
-`texture_view` örneğini yok eder.
+Örneği yok eder `texture_view` .
 
 ```cpp
 ~texture_view() restrict(amp, cpu);
 ```
 
-## <a name="ctor"></a>texture_view
+## <a name="texture_view"></a><a name="ctor"></a>texture_view
 
-Bir `texture_view` örneği oluşturur.
+Bir `texture_view` örnek oluşturur.
 
 ```cpp
 texture_view(// [1] constructor
@@ -146,25 +146,25 @@ texture_view(// [7] copy constructor
 ### <a name="parameters"></a>Parametreler
 
 *_Src*<br/>
-[1, 2] Yazılabilir `texture_view` oluşturulduğu `texture` Oluşturucu.
+[1, 2] `texture`Yazılabilir `texture_view` oluşturulduğu Oluşturucu.
 
-[3, 4] Yazılabilir olmayan `texture_view` oluşturulan `texture` Oluşturucu.
+[3, 4] `texture`Üzerine yazılabilir olmayan Oluşturucu `texture_view` .
 
 *_Other*<br/>
-[5] kaynak yazılabilir `texture_view`Oluşturucu kopyalayın.
+[5] kopya Oluşturucu kaynağı yazılabilir `texture_view` .
 
-[6, 7] Kopya Oluşturucu kaynak yazılabilir olmayan `texture_view`.
+[6, 7] Kopya Oluşturucu kaynak yazılabilir değil `texture_view` .
 
 *_Mipmap_level*<br/>
-Kaynak üzerinde bu yazılabilir `texture_view` bağlandığı `texture` belirli bir mipmap düzeyi. Varsayılan değer, en üst düzey (en ayrıntılı) MIP düzeyini temsil eden 0 ' dır.
+Bu yazılabilir kaynak üzerinde ilgili mipmap düzeyi `texture` `texture_view` . Varsayılan değer, en üst düzey (en ayrıntılı) MIP düzeyini temsil eden 0 ' dır.
 
 *_Most_detailed_mip*<br/>
-Görünüm için en üst düzey (en ayrıntılı) MIP düzeyi, belirtilen `texture_view` nesnesine göre.
+Görünüm için en üst düzey (en ayrıntılı) MIP düzeyi, belirtilen `texture_view` nesneye göre.
 
 *_Mip_levels*<br/>
-`texture_view`üzerinden erişilebilen mipmap düzeylerinin sayısı.
+Üzerinden erişilebilen mipmap düzeylerinin sayısı `texture_view` .
 
-## <a name="gather_red"></a>gather_red
+## <a name="gather_red"></a><a name="gather_red"></a>gather_red
 
 Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texx 'in kırmızı (x) bileşenlerini döndürür.
 
@@ -183,10 +183,10 @@ const gather_return_type gather_red(
 ### <a name="parameters"></a>Parametreler
 
 *_Address_mode*<br/>
-`texture_view`örneklemek için kullanılacak adres modu. Adres modu tüm boyutlar için aynıdır.
+Örneği için kullanılacak adres modu `texture_view` . Adres modu tüm boyutlar için aynıdır.
 
 *_Sampler*<br/>
-`texture_view`örneklemek için kullanılacak örnekleyici yapılandırması.
+Örneği için kullanılacak örnekleyici yapılandırması `texture_view` .
 
 *_Coord*<br/>
 Örneği alma koordinatları. Kesirli koordinat değerleri, örnek dokkarasına göre enterpolasyonu için kullanılır.
@@ -195,7 +195,7 @@ const gather_return_type gather_red(
 
 4 örneklenmiş doku hücresi değerinin değerlerinin kırmızı (x) bileşenini içeren bir sıra 4 kısa vektör.
 
-## <a name="gather_green"></a>gather_green
+## <a name="gather_green"></a><a name="gather_green"></a>gather_green
 
 Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texx 'in yeşil (y) bileşenlerini döndürür.
 
@@ -214,10 +214,10 @@ const gather_return_type gather_green(
 ### <a name="parameters"></a>Parametreler
 
 *_Address_mode*<br/>
-`texture_view`örneklemek için kullanılacak adres modu. Adres modu tüm boyutlar için aynıdır.
+Örneği için kullanılacak adres modu `texture_view` . Adres modu tüm boyutlar için aynıdır.
 
 *_Sampler*<br/>
-`texture_view`örneklemek için kullanılacak örnekleyici yapılandırması.
+Örneği için kullanılacak örnekleyici yapılandırması `texture_view` .
 
 *_Coord*<br/>
 Örneği alma koordinatları. Kesirli koordinat değerleri, örnek dokkarasına göre enterpolasyonu için kullanılır.
@@ -226,7 +226,7 @@ const gather_return_type gather_green(
 
 4 örneklenmiş doku hücresi değerinin değerlerinin yeşil (y) bileşenini içeren 4. derece kısa vektör.
 
-## <a name="gather_blue"></a>gather_blue
+## <a name="gather_blue"></a><a name="gather_blue"></a>gather_blue
 
 Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texvert 'in mavi (z) bileşenlerini döndürür.
 
@@ -245,10 +245,10 @@ const gather_return_type gather_blue(
 ### <a name="parameters"></a>Parametreler
 
 *_Address_mode*<br/>
-`texture_view`örneklemek için kullanılacak adres modu. Adres modu tüm boyutlar için aynıdır.
+Örneği için kullanılacak adres modu `texture_view` . Adres modu tüm boyutlar için aynıdır.
 
 *_Sampler*<br/>
-`texture_view`örneklemek için kullanılacak örnekleyici yapılandırması.
+Örneği için kullanılacak örnekleyici yapılandırması `texture_view` .
 
 *_Coord*<br/>
 Örneği alma koordinatları. Kesirli koordinat değerleri, örnek dokkarasına göre enterpolasyonu için kullanılır.
@@ -257,7 +257,7 @@ const gather_return_type gather_blue(
 
 4 örneklenmiş doku hücresi değerinin değerlerinin kırmızı (x) bileşenini içeren bir sıra 4 kısa vektör.
 
-## <a name="gather_alpha"></a>gather_alpha
+## <a name="gather_alpha"></a><a name="gather_alpha"></a>gather_alpha
 
 Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda dokuyu örnekler ve örneklenen dört texx 'in Alfa (w) bileşenlerini döndürür.
 
@@ -276,10 +276,10 @@ const gather_return_type gather_alpha(
 ### <a name="parameters"></a>Parametreler
 
 *_Address_mode*<br/>
-`texture_view`örneklemek için kullanılacak adres modu. Adres modu tüm boyutlar için aynıdır.
+Örneği için kullanılacak adres modu `texture_view` . Adres modu tüm boyutlar için aynıdır.
 
 *_Sampler*<br/>
-`texture_view`örneklemek için kullanılacak örnekleyici yapılandırması.
+Örneği için kullanılacak örnekleyici yapılandırması `texture_view` .
 
 *_Coord*<br/>
 Örneği alma koordinatları. Kesirli koordinat değerleri, örnek dokkarasına göre enterpolasyonu için kullanılır.
@@ -288,7 +288,7 @@ const gather_return_type gather_alpha(
 
 4 örneklenmiş doku hücresi değerinin değerlerinin Alfa (w) bileşenini içeren bir sıra 4 kısa vektör.
 
-## <a name="get"></a>Al
+## <a name="get"></a><a name="get"></a>Al
 
 Belirtilen dizindeki öğenin değerini alır.
 
@@ -313,9 +313,9 @@ Değeri alması gereken mipmap düzeyi. Varsayılan 0 değeri en ayrıntılı mi
 
 Öğenin değeri.
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a>işleç =
 
-Bu `texture_view` örneğine belirtilen `texture_view` aynı dokunun görünümünü atar.
+Bu örneğe belirtilen şekilde aynı dokunun görünümünü atar `texture_view` `texture_view` .
 
 ```cpp
 texture_view<value_type, _Rank>& operator= (// [1] copy constructor
@@ -331,15 +331,15 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-[1, 2] Copy Oluşturucu yazılabilir bir `texture_view` nesnesi.
+[1, 2] Copy yapıcısı yazılabilir bir `texture_view` nesne.
 
-[3] kopya Oluşturucu yazılabilir olmayan bir `texture_view` nesne.
+[3] Copy Oluşturucu yazılabilir olmayan bir `texture_view` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `texture_view` örneğine bir başvuru.
+Bu örneğe bir başvuru `texture_view` .
 
-## <a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a>operator []
 
 Dizine göre öğe değerini döndürür.
 
@@ -363,9 +363,9 @@ Tek boyutlu dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`_Index`tarafından dizinlenen öğe değeri.
+Tarafından dizin oluşturulan öğe değeri `_Index` .
 
-## <a name="operator_call"></a>operator ()
+## <a name="operator"></a><a name="operator_call"></a>operator ()
 
 Dizine göre öğe değerini döndürür.
 
@@ -416,9 +416,9 @@ Dizinin en az önemli bileşeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`_Index`tarafından dizinlenen öğe değeri.
+Tarafından dizin oluşturulan öğe değeri `_Index` .
 
-## <a name="sample"></a>örnekli
+## <a name="sample"></a><a name="sample"></a>örnekli
 
 Belirtilen örnekleme yapılandırmasını kullanarak belirtilen koordinatlarda ve ayrıntı düzeyinde dokuyu örnekler.
 
@@ -458,7 +458,7 @@ Değer, örneğine örnek olarak mipmap düzeyini belirtir. Kesirli değerler, i
 
 Enterpolasyonlu örnek değeri.
 
-## <a name="set"></a>kurmak
+## <a name="set"></a><a name="set"></a>kurmak
 
 Belirtilen dizindeki öğenin değerini belirtilen değere ayarlar.
 
@@ -473,10 +473,10 @@ void set(
 *_Index*<br/>
 Ayarlanacak öğenin dizini, muhtemelen çok boyutlu.
 
-*value*<br/>
+*deeri*<br/>
 Öğesi ayarlanacak değer.
 
-## <a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a>value_type
 
 Texture_view öğelerinin değer türü.
 

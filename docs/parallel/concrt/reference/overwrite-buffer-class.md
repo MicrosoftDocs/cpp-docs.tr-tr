@@ -20,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - overwrite_buffer class
 ms.assetid: 5cc428fe-3697-419c-9fb2-78f6181c9293
-ms.openlocfilehash: 5b222170112f43ae9700054f42e1368545612d00
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 7579ee4b9c650b0fe707eccb0f8c2b67a3efac14
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77138794"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231695"
 ---
 # <a name="overwrite_buffer-class"></a>overwrite_buffer Sınıfı
 
-`overwrite_buffer` mesajlaşma bloğu, aynı anda tek bir iletiyi depolayan çok hedefli, çok kaynaklı ve sıralı `propagator_block`. Yeni iletiler üzerine yazılır.
+`overwrite_buffer`İleti bloğu, `propagator_block` aynı anda tek bir ileti depolayan çok hedefli, çok kaynaklı ve sıralı bir kaynaktır. Yeni iletiler üzerine yazılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class T>
@@ -40,7 +40,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Arabellek tarafından saklanan ve yayılan iletilerin yük türü.
 
 ## <a name="members"></a>Üyeler
@@ -49,34 +49,34 @@ Arabellek tarafından saklanan ve yayılan iletilerin yük türü.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[overwrite_buffer](#ctor)|Fazla Yüklendi. `overwrite_buffer` mesajlaşma bloğu oluşturur.|
-|[~ overwrite_buffer yok edici](#dtor)|`overwrite_buffer` mesajlaşma bloğunu yok eder.|
+|[overwrite_buffer](#ctor)|Fazla Yüklendi. `overwrite_buffer`İleti bloğu oluşturur.|
+|[~ overwrite_buffer yok edici](#dtor)|`overwrite_buffer`Mesajlaşma bloğunu yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[has_value](#has_value)|Bu `overwrite_buffer` mesajlaşma bloğunun henüz bir değere sahip olup olmadığını denetler.|
-|[value](#value)|`overwrite_buffer` mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne yönelik bir başvuru alır.|
+|[deeri](#value)|Mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne bir başvuru alır `overwrite_buffer` .|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[accept_message](#accept_message)|Bu `overwrite_buffer` mesajlaşma bloğu tarafından sunulan ve iletiyi çağırana bir kopyasını döndüren bir iletiyi kabul eder.|
-|[consume_message](#consume_message)|Daha önce `overwrite_buffer` mesajlaşma bloğunun sunduğu ve hedef tarafından ayrılmış bir ileti tüketir ve bu ileti, çağırana bir kopyasını döndürür.|
-|[link_target_notification](#link_target_notification)|Yeni bir hedefin bu `overwrite_buffer` mesajlaşma bloğuna bağlandığını bildiren bir geri çağırma.|
-|[propagate_message](#propagate_message)|Zaman uyumsuz bir iletiyi `ISource` bloğundan bu `overwrite_buffer` mesajlaşma bloğuna aktarır. Kaynak bloğu tarafından çağrıldığında `propagate` yöntemi tarafından çağrılır.|
-|[propagate_to_any_targets](#propagate_to_any_targets)|`message _PMessage` bu `overwrite_buffer` mesajlaşma bloğuna koyar ve tüm bağlantılı hedeflere sunar.|
+|[accept_message](#accept_message)|Bu mesajlaşma bloğu tarafından sunulan bir iletiyi kabul eder `overwrite_buffer` ve iletinin bir kopyasını çağırana döndürür.|
+|[consume_message](#consume_message)|İleti bloğu tarafından daha önce sunulan ve hedef tarafından ayrılmış bir ileti tüketir ve bu ileti, `overwrite_buffer` çağırana bir kopyasını döndürür.|
+|[link_target_notification](#link_target_notification)|Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağırma `overwrite_buffer` .|
+|[propagate_message](#propagate_message)|Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `overwrite_buffer` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.|
+|[propagate_to_any_targets](#propagate_to_any_targets)|`message _PMessage`Bu `overwrite_buffer` mesajlaşma bloğuna koyar ve tüm bağlantılı hedeflere sunar.|
 |[release_message](#release_message)|Önceki bir ileti ayırmasını yayınlar. (Geçersiz kılmalar [source_block:: release_message](source-block-class.md#release_message).)|
-|[reserve_message](#reserve_message)|Daha önce bu `overwrite_buffer` mesajlaşma bloğunun sunduğu bir iletiyi ayırır. (Geçersiz kılmalar [source_block:: reserve_message](source-block-class.md#reserve_message).)|
+|[reserve_message](#reserve_message)|Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `overwrite_buffer` . (Geçersiz kılmalar [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|Bir ayırma yayımlandıktan sonra yayılmaya devam eder. (Geçersiz kılmalar [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
-|[send_message](#send_message)|Zaman uyumlu olarak bir `ISource` bloğundan bu `overwrite_buffer` mesajlaşma bloğuna bir ileti geçirir. Kaynak bloğu tarafından çağrıldığında `send` yöntemi tarafından çağrılır.|
-|[supports_anonymous_source](#supports_anonymous_source)|Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için `supports_anonymous_source` yöntemini geçersiz kılar. ( [IComparer:: supports_anonymous_source](itarget-class.md#supports_anonymous_source)geçersiz kılar.)|
+|[send_message](#send_message)|Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `overwrite_buffer` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.|
+|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source`Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için yöntemini geçersiz kılar. ( [IComparer:: supports_anonymous_source](itarget-class.md#supports_anonymous_source)geçersiz kılar.)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`overwrite_buffer` bir mesajlaşma bloğu, depolanan iletinin kopyalarını hedeflerine her birine yayar.
+Bir `overwrite_buffer` ileti bloğu, saklı iletisinin kopyalarını her hedefine yayar.
 
 Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -98,9 +98,9 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
-Bu `overwrite_buffer` mesajlaşma bloğu tarafından sunulan ve iletiyi çağırana bir kopyasını döndüren bir iletiyi kabul eder.
+Bu mesajlaşma bloğu tarafından sunulan bir iletiyi kabul eder `overwrite_buffer` ve iletinin bir kopyasını çağırana döndürür.
 
 ```cpp
 virtual message<T>* accept_message(runtime_object_identity _MsgId);
@@ -109,19 +109,19 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Sunulan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Sunulan `message` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
+`message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`overwrite_buffer` mesajlaşma bloğu, şu anda tutulan iletinin sahipliğini aktarmak yerine, iletinin kopyalarını hedeflerine döndürür.
+İleti `overwrite_buffer` bloğu, şu anda tutulan iletinin sahipliğini aktarmak yerine, iletinin kopyalarını hedeflerine döndürür.
 
-## <a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a>consume_message
 
-Daha önce `overwrite_buffer` mesajlaşma bloğunun sunduğu ve hedef tarafından ayrılmış bir ileti tüketir ve bu ileti, çağırana bir kopyasını döndürür.
+İleti bloğu tarafından daha önce sunulan ve hedef tarafından ayrılmış bir ileti tüketir ve bu ileti, `overwrite_buffer` çağırana bir kopyasını döndürür.
 
 ```cpp
 virtual message<T>* consume_message(runtime_object_identity _MsgId);
@@ -130,17 +130,17 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Tüketilmekte olan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity` `message` Tüketilmekte olan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
+`message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`accept`benzerdir, ancak her zaman bir `reserve`çağrısıyla yapılır.
+`accept`,, Ancak, ' a benzer ancak her zaman öğesine yapılan bir çağrıdır `reserve` .
 
-## <a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a>has_value
 
 Bu `overwrite_buffer` mesajlaşma bloğunun henüz bir değere sahip olup olmadığını denetler.
 
@@ -150,11 +150,11 @@ bool has_value() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-blok bir değer aldıysa **true** , aksi takdirde **false** .
+**`true`** blok bir değer aldıysa, **`false`** tersi durumda.
 
-## <a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
 
-Yeni bir hedefin bu `overwrite_buffer` mesajlaşma bloğuna bağlandığını bildiren bir geri çağırma.
+Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağırma `overwrite_buffer` .
 
 ```cpp
 virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
@@ -165,17 +165,17 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 *_PTarget*<br/>
 Yeni bağlantılı hedefe yönelik bir işaretçi.
 
-## <a name="dtor"></a>~ overwrite_buffer
+## <a name="overwrite_buffer"></a><a name="dtor"></a>~ overwrite_buffer
 
-`overwrite_buffer` mesajlaşma bloğunu yok eder.
+`overwrite_buffer`Mesajlaşma bloğunu yok eder.
 
 ```cpp
 ~overwrite_buffer();
 ```
 
-## <a name="ctor"></a>overwrite_buffer
+## <a name="overwrite_buffer"></a><a name="ctor"></a>overwrite_buffer
 
-`overwrite_buffer` mesajlaşma bloğu oluşturur.
+`overwrite_buffer`İleti bloğu oluşturur.
 
 ```cpp
 overwrite_buffer();
@@ -204,20 +204,20 @@ overwrite_buffer(
 Sunulan iletilerin kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.
 
 *_PScheduler*<br/>
-`overwrite_buffer` mesajlaşma bloğunun yayma görevinin içinde `Scheduler` nesnesi zamanlandı.
+`Scheduler` `overwrite_buffer` Mesajlaşma bloğunun yayma görevinin zamanlandığı nesne.
 
 *_PScheduleGroup*<br/>
-`overwrite_buffer` mesajlaşma bloğunun yayma görevinin içinde `ScheduleGroup` nesnesi zamanlandı. Kullanılan `Scheduler` nesnesi, zamanlama grubu tarafından kapsanıyor.
+`ScheduleGroup` `overwrite_buffer` Mesajlaşma bloğunun yayma görevinin zamanlandığı nesne. `Scheduler`Kullanılan nesne, zamanlama grubu tarafından kapsanıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`_PScheduler` veya `_PScheduleGroup` parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır.
+Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır `_PScheduler` `_PScheduleGroup` .
 
-Tür `filter_method`, bu `overwrite_buffer` mesajlaşma bloğu tarafından sunulan ve önerilen bir iletiyi kabul edip etmediğini belirlemede çağrılan, imza `bool (T const &)` olan bir functor.
+Tür, `filter_method` `bool (T const &)` Bu `overwrite_buffer` mesajlaşma bloğu tarafından önerilen bir iletiyi kabul edip etmediğini tespit etmek için çağrılan imzaya sahip bir functor.
 
-## <a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
 
-Zaman uyumsuz bir iletiyi `ISource` bloğundan bu `overwrite_buffer` mesajlaşma bloğuna aktarır. Kaynak bloğu tarafından çağrıldığında `propagate` yöntemi tarafından çağrılır.
+Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `overwrite_buffer` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
 ```cpp
 virtual message_status propagate_message(
@@ -228,7 +228,7 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-`message` nesnesine yönelik bir işaretçi.
+Nesneye yönelik bir işaretçi `message` .
 
 *_PSource*<br/>
 İletiyi sunan kaynak bloğuna yönelik bir işaretçi.
@@ -237,9 +237,9 @@ virtual message_status propagate_message(
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
 
-`message _PMessage` bu `overwrite_buffer` mesajlaşma bloğuna koyar ve tüm bağlantılı hedeflere sunar.
+`message _PMessage`Bu `overwrite_buffer` mesajlaşma bloğuna koyar ve tüm bağlantılı hedeflere sunar.
 
 ```cpp
 virtual void propagate_to_any_targets(_Inout_ message<T>* _PMessage);
@@ -248,15 +248,15 @@ virtual void propagate_to_any_targets(_Inout_ message<T>* _PMessage);
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-Bu `overwrite_buffer` sahipliğini aldığı `message` nesnesine yönelik bir işaretçi.
+`message`Öğesinin sahipliğini aldığı nesneye yönelik bir işaretçi `overwrite_buffer` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, yeni kabul edilen ileti `_PMessage``overwrite_buffer` geçerli iletinin üzerine yazar.
+Bu yöntem, `overwrite_buffer` yeni kabul edilen iletiyle içindeki geçerli iletinin üzerine yazar `_PMessage` .
 
-## <a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a>send_message
 
-Zaman uyumlu olarak bir `ISource` bloğundan bu `overwrite_buffer` mesajlaşma bloğuna bir ileti geçirir. Kaynak bloğu tarafından çağrıldığında `send` yöntemi tarafından çağrılır.
+Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `overwrite_buffer` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
 ```cpp
 virtual message_status send_message(
@@ -267,7 +267,7 @@ virtual message_status send_message(
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-`message` nesnesine yönelik bir işaretçi.
+Nesneye yönelik bir işaretçi `message` .
 
 *_PSource*<br/>
 İletiyi sunan kaynak bloğuna yönelik bir işaretçi.
@@ -276,9 +276,9 @@ virtual message_status send_message(
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
 
-Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için `supports_anonymous_source` yöntemini geçersiz kılar.
+`supports_anonymous_source`Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için yöntemini geçersiz kılar.
 
 ```cpp
 virtual bool supports_anonymous_source();
@@ -286,9 +286,9 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**çünkü blok** sunulan iletileri ertelemez.
+**`true`** bloğu sunulan iletileri ertelemez.
 
-## <a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a>release_message
 
 Önceki bir ileti ayırmasını yayınlar.
 
@@ -299,11 +299,11 @@ virtual void release_message(runtime_object_identity _MsgId);
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Yayımlanmakta olan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity` `message` Serbest bırakılmakta olan nesne.
 
-## <a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
 
-Daha önce bu `overwrite_buffer` mesajlaşma bloğunun sunduğu bir iletiyi ayırır.
+Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `overwrite_buffer` .
 
 ```cpp
 virtual bool reserve_message(runtime_object_identity _MsgId);
@@ -312,17 +312,17 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Ayrılan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity` `message` Ayrılan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ileti başarıyla ayrıldıysa **true** , aksi takdirde **false** .
+**`true`** ileti başarıyla ayrıldıysa, **`false`** tersi durumda.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`reserve` çağrıldıktan sonra, **doğru**döndürürse, iletinin sahipliğini almak ya da serbest bırakmak için `consume` veya `release` çağrılmalıdır.
+Çağrıldıktan sonra `reserve` , döndürürse, **`true`** `consume` `release` iletinin sahipliğini almak ya da serbest bırakmak için ya da çağrılması gerekir.
 
-## <a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
 
 Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
@@ -330,9 +330,9 @@ Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 virtual void resume_propagation();
 ```
 
-## <a name="value"></a>deeri
+## <a name="value"></a><a name="value"></a>deeri
 
-`overwrite_buffer` mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne yönelik bir başvuru alır.
+Mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne bir başvuru alır `overwrite_buffer` .
 
 ```cpp
 T value();
@@ -344,10 +344,10 @@ T value();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`overwrite_buffer` depolanan değer bu yöntemin döndürdüğü hemen sonra değişebilir. Bu yöntem, şu anda `overwrite_buffer`bir ileti depolanmıyorsa bir ileti gelene kadar bekler.
+İçinde depolanan değer `overwrite_buffer` Bu yöntem geri döndüğünde hemen sonra değişebilir. Bu yöntem, üzerinde hiçbir ileti depolanmıyorsa bir ileti gelene kadar bekler `overwrite_buffer` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[unbounded_buffer Sınıfı](unbounded-buffer-class.md)<br/>
-[single_assignment Sınıfı](single-assignment-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[unbounded_buffer sınıfı](unbounded-buffer-class.md)<br/>
+[single_assignment sınıfı](single-assignment-class.md)

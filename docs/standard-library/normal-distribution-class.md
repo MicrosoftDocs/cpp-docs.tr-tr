@@ -26,18 +26,18 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: 2f64f221e0abdf0cd13b44d5f567aa99f9e4af5c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 138011ec4ccf6c010f002d61cdb8ae8b0bac1796
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376217"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212156"
 ---
 # <a name="normal_distribution-class"></a>normal_distribution Sınıfı
 
-Normal bir dağılım oluşturur.
+Normal bir dağıtım oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class RealType = double>
@@ -72,30 +72,30 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *RealType*\
-Kayan nokta sonuç türü, varsayılan **olarak iki katına çıkar.** Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, normal dağılıma göre dağıtılan kullanıcı tarafından belirtilen integral türüdeğerlerini üreten bir dağılım veya hiçbiri sağlanmamışsa **çift** yazın bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa normal dağıtıma göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[normal_distribution](#normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|
 |`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#param_type)|
 
-Özellik işlevleri `mean()` `stddev()` ve depolanan dağıtım parametreleri için değerleri sırasıyla *ortalama* ve *stddev* döndürür.
+Özelliği, `mean()` ve `stddev()` sırasıyla depolanan dağıtım parametrelerinin değerlerini döndürür. *mean* *stddev*
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-Normal dağılım hakkında ayrıntılı bilgi için Wolfram MathWorld makalesi [Normal Dağılım'a](https://go.microsoft.com/fwlink/p/?linkid=400924)bakın.
+Normal dağıtım hakkında ayrıntılı bilgi için, bkz. Wolfram MathWorld article [normal dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400924).
 
 ## <a name="example"></a>Örnek
 
@@ -183,13 +183,13 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="normal_distributionnormal_distribution"></a><a name="normal_distribution"></a>normal_distribution::normal_distribution
+## <a name="normal_distributionnormal_distribution"></a><a name="normal_distribution"></a>normal_distribution:: normal_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit normal_distribution(result_type mean = 0.0, result_type stddev = 1.0);
@@ -198,26 +198,26 @@ explicit normal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Demek*\
-Dağıtım `mean` parametresi.
+*ortası*\
+`mean`Dağıtım parametresi.
 
-*Stdsapma*\
-Dağıtım `stddev` parametresi.
+*StdDev*\
+`stddev`Dağıtım parametresi.
 
-*parm*\
-Dağılımı oluşturmak için kullanılan parametre yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < stddev`
+**Önkoşul:**`0.0 < stddev`
 
-İlk `mean` oluşturucu, depolanan değeri *ortalamayı* tutan ve depolanan `stddev` değeri *stddev*değerini tutan bir nesne inşa eder.
+İlk Oluşturucu, saklı `mean` değeri değeri *Ortalama* olan ve saklı `stddev` değeri *StdDev*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="normal_distributionparam_type"></a><a name="param_type"></a>normal_distribution::param_type
+## <a name="normal_distributionparam_type"></a><a name="param_type"></a>normal_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -233,21 +233,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*Demek*\
-Dağıtım `mean` parametresi.
+*ortası*\
+`mean`Dağıtım parametresi.
 
-*Stdsapma*\
-Dağıtım `stddev` parametresi.
+*StdDev*\
+`stddev`Dağıtım parametresi.
 
-*Doğru*\
-Karşılaştırmak `param_type` için kullanılan yapı.
+*Right*\
+`param_type`Karşılaştırmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < stddev`
+**Önkoşul:**`0.0 < stddev`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

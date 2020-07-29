@@ -1,5 +1,5 @@
 ---
-title: CArchiveException Sınıfı
+title: CArchiveException sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CArchiveException
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - CArchiveException [MFC], m_cause
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-ms.openlocfilehash: ad2a9d8c5b4466a04b5a88fcce7679911bf1b81a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 68f64cfd7dc96da04fcc0945a6b996eab4101487
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377007"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231890"
 ---
-# <a name="carchiveexception-class"></a>CArchiveException Sınıfı
+# <a name="carchiveexception-class"></a>CArchiveException sınıfı
 
 Serileştirme özel durum koşulunu temsil eder
 
@@ -33,38 +33,38 @@ class CArchiveException : public CException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CArchiveException::CArchiveException](#carchiveexception)|Bir `CArchiveException` nesne inşa eder.|
+|[CArchiveException::CArchiveException](#carchiveexception)|Bir `CArchiveException` nesnesi oluşturur.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CArchiveException::m_cause](#m_cause)|Özel durum nedenini gösterir.|
-|[CArchiveException::m_strFileName](#m_strfilename)|Bu özel durum durumu için dosyanın adını belirtir.|
+|[CArchiveException:: m_cause](#m_cause)|Özel durumun nedenini gösterir.|
+|[CArchiveException:: m_strFileName](#m_strfilename)|Bu özel durum koşulunun dosya adını belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf, `CArchiveException` özel durum nedenini gösteren bir ortak veri üyesi içerir.
+`CArchiveException`Sınıfı, özel durumun nedenini gösteren bir ortak veri üyesini içerir.
 
-`CArchiveException`nesneler oluşturulur ve [CArchive](../../mfc/reference/carchive-class.md) üye işlevleri içine atılır. Catch **ifadesi** kapsamında bu nesnelere erişebilirsiniz. Neden kodu işletim sisteminden bağımsızdır. Özel durum işleme hakkında daha fazla bilgi için [bkz.](../../mfc/exception-handling-in-mfc.md)
+`CArchiveException`nesneler, [CArchive](../../mfc/reference/carchive-class.md) üye işlevleri içinde oluşturulur ve oluşturulur. Bu nesnelere bir **catch** ifadesinin kapsamı içinde erişebilirsiniz. Nedeni kodu işletim sisteminden bağımsızdır. Özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cexception](../../mfc/reference/cexception-class.md)
+[CException](../../mfc/reference/cexception-class.md)
 
 `CArchiveException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afx.h
+**Üstbilgi:** AFX. h
 
 ## <a name="carchiveexceptioncarchiveexception"></a><a name="carchiveexception"></a>CArchiveException::CArchiveException
 
-Neden değerini `CArchiveException` *nesnede* depolayarak bir nesne inşa eder.
+Nesne oluşturur ve `CArchiveException` nesnenin *neden* değerini nesnede depolar.
 
 ```
 CArchiveException(
@@ -74,21 +74,21 @@ CArchiveException(
 
 ### <a name="parameters"></a>Parametreler
 
-*Neden*<br/>
-Özel durum nedenini gösteren numaralandırılmış bir tür değişkeni. Sonlandırıcıların listesi için [m_cause](#m_cause) veri üyesine bakın.
+*sağlamak*<br/>
+Özel durumun nedenini gösteren numaralandırılmış tür değişkeni. Numaralandırıcıların bir listesi için [m_cause](#m_cause) veri üyesine bakın.
 
 *lpszArchiveName*<br/>
-Özel durum neden `CArchive` nesnenin adını içeren bir dize işaret eder.
+Özel duruma neden olan nesnenin adını içeren bir dizeye işaret eder `CArchive` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yığın üzerinde `CArchiveException` bir nesne oluşturabilir ve kendiniz atmak veya küresel işlevi [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception) sizin için ele sağlar.
+`CArchiveException`Yığın üzerinde bir nesne oluşturabilir ve kendiniz oluşturabilir ya da genel Işlevin [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception) işlemesini sağlayabilirsiniz.
 
-Bu oluşturucuya doğrudan kullanmayın; bunun yerine, genel `AfxThrowArchiveException`işlevi arayın.
+Bu oluşturucuyu doğrudan kullanmayın; Bunun yerine, genel işlevini çağırın `AfxThrowArchiveException` .
 
-## <a name="carchiveexceptionm_cause"></a><a name="m_cause"></a>CArchiveException::m_cause
+## <a name="carchiveexceptionm_cause"></a><a name="m_cause"></a>CArchiveException:: m_cause
 
-Özel durum nedenini belirtir.
+Özel durumun nedenini belirtir.
 
 ```
 int m_cause;
@@ -96,33 +96,33 @@ int m_cause;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu veri üyesi, **int**türünden genel bir değişkendir. Değerleri numaralandırılmış bir `CArchiveException` tür tarafından tanımlanır. Sayısallaştırıcılar ve anlamları aşağıdaki gibidir:
+Bu veri üyesi, türünde ortak bir değişkendir **`int`** . Değerleri, numaralandırılmış bir tür tarafından tanımlanır `CArchiveException` . Numaralandırıcılar ve anlamları aşağıdaki gibidir:
 
 - `CArchiveException::none`Hata oluşmadı.
 
-- `CArchiveException::genericException`Belirtilmemiş hata.
+- `CArchiveException::genericException`Belirtilmeyen hata.
 
-- `CArchiveException::readOnly`Yükleme için açılan bir arşive yazmaya çalıştım.
+- `CArchiveException::readOnly`Yükleme için açılmış bir arşive yazmaya çalışıldı.
 
-- `CArchiveException::endOfFile`Bir nesneyi okurken dosyanın sonuna ulaşıldı.
+- `CArchiveException::endOfFile`Bir nesne okunurken dosyanın sonuna erişildi.
 
-- `CArchiveException::writeOnly`Saklamak için açılan bir arşivden okumaya çalıştım.
+- `CArchiveException::writeOnly`Depolanması için açılan bir arşivden okunmaya çalışıldı.
 
 - `CArchiveException::badIndex`Geçersiz dosya biçimi.
 
-- `CArchiveException::badClass`Bir nesneyi yanlış türde bir nesneye okumaya çalıştım.
+- `CArchiveException::badClass`Yanlış türdeki bir nesneye bir nesne okunmaya çalışıldı.
 
-- `CArchiveException::badSchema`Sınıfın farklı bir sürümü olan bir nesneyi okumaya çalıştım.
-
-    > [!NOTE]
-    >  Bu `CArchiveException` neden sayısallaştırıcılar `CFileException` neden sayısalatörler farklıdır.
+- `CArchiveException::badSchema`Sınıfının farklı bir sürümüne sahip bir nesne okunmaya çalışıldı.
 
     > [!NOTE]
-    > `CArchiveException::generic`amortismana lı. Bunun yerine `genericException` kullanın. **Genel bir** uygulamada kullanılır ve /clr ile oluşturulmuşsa, deşifre edilmesi kolay olmayan sözdizimi hataları olacaktır.
+    >  Bu `CArchiveException` neden Numaralandırıcılar `CFileException` neden numaralandırıcılardan farklıdır.
 
-## <a name="carchiveexceptionm_strfilename"></a><a name="m_strfilename"></a>CArchiveException::m_strFileName
+    > [!NOTE]
+    > `CArchiveException::generic`kullanım dışıdır. Bunun yerine `genericException` kullanın. **Genel** bir uygulamada kullanılırsa ve/clr ile derlense, şifre çöz kolay olmayan sözdizimi hataları olur.
 
-Bu özel durum durumu için dosyanın adını belirtir.
+## <a name="carchiveexceptionm_strfilename"></a><a name="m_strfilename"></a>CArchiveException:: m_strFileName
+
+Bu özel durum koşulunun dosya adını belirtir.
 
 ```
 CString m_strFileName;
@@ -130,8 +130,8 @@ CString m_strFileName;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CArchive Sınıfı](../../mfc/reference/carchive-class.md)<br/>
+[CException sınıfı](../../mfc/reference/cexception-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CArchive sınıfı](../../mfc/reference/carchive-class.md)<br/>
 [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception)<br/>
-[Özel Durum İşleme](../../mfc/reference/exception-processing.md)
+[Özel durum Işleme](../../mfc/reference/exception-processing.md)

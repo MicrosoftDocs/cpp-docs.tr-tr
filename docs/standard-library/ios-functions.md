@@ -1,5 +1,5 @@
 ---
-title: '&lt;ios&gt; fonksiyonları'
+title: '&lt;iOS &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - xiosbase/std::defaultfloat
@@ -56,18 +56,18 @@ helpviewer_keywords:
 - std::skipws [C++]
 - std::unitbuf [C++]
 - std::uppercase [C++]
-ms.openlocfilehash: 67ac9259110abbd03fc054ea4e60ed1715030dcc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a750f17ba8eba40dd01a2fb4a89e47a0927e4b61
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375409"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212299"
 ---
-# <a name="ltiosgt-functions"></a>&lt;ios&gt; fonksiyonları
+# <a name="ltiosgt-functions"></a>&lt;iOS &gt; işlevleri
 
 ## <a name="boolalpha"></a><a name="boolalpha"></a>boolalpha
 
-Tür [bool](../cpp/bool-cpp.md) değişkenlerinin akışta **doğru** veya **yanlış** olarak göründüğünü belirtir.
+[Bool](../cpp/bool-cpp.md) türündeki değişkenlerin **`true`** akışta veya akışta göründüğünü belirtir **`false`** .
 
 ```cpp
 ios_base& boolalpha(ios_base& str);
@@ -75,20 +75,20 @@ ios_base& boolalpha(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, tip **bool** değişkenleri 1 veya 0 olarak görüntülenir.
+Varsayılan olarak, türündeki değişkenler **`bool`** 1 veya 0 olarak görüntülenir.
 
-`boolalpha`etkin bir `str.`şekilde `ios_base::boolalpha` [setf](../standard-library/ios-base-class.md#setf)çağırır ( ), ve sonra str *döndürür*.
+`boolalpha``str.` [setf](../standard-library/ios-base-class.md#setf)() etkin bir şekilde çağırır `ios_base::boolalpha` ve *Str*döndürür.
 
-[noboolalpha](../standard-library/ios-functions.md#noboolalpha) etkisini tersine `boolalpha`çevirir.
+[noboolalpha](../standard-library/ios-functions.md#noboolalpha) , öğesinin etkisini tersine çevirir `boolalpha` .
 
 ### <a name="example"></a>Örnek
 
@@ -117,9 +117,9 @@ true
 true
 ```
 
-## <a name="dec"></a><a name="dec"></a>Aralık
+## <a name="dec"></a><a name="dec"></a>Dec
 
-Temel 10 gösteriminde görünen bir üstsayı değişkeni belirtir.
+Tamsayı değişkenlerinin taban 10 gösteriminde göründüğünü belirtir.
 
 ```cpp
 ios_base& dec(ios_base& str);
@@ -127,18 +127,18 @@ ios_base& dec(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, varsayılan olarak, sayılama değişkenleri temel 10'da görüntülenir.
+Varsayılan olarak, tamsayı değişkenleri temel 10 ' da görüntülenir.
 
-`dec`etkin bir `str.`şekilde `ios_base::dec` [setf](../standard-library/ios-base-class.md#setf)çağırır ( , `ios_base::basefield`), ve sonra str *döndürür*.
+`dec``str.` [setf](../standard-library/ios-base-class.md#setf)'yi (,) etkin bir şekilde çağırır `ios_base::dec` `ios_base::basefield` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -170,9 +170,9 @@ int main( )
 100
 ```
 
-## <a name="ltiosgt-defaultfloat"></a><a name="ios_defaultfloat"></a>&lt;ios&gt; varsayılan float
+## <a name="ltiosgt-defaultfloat"></a><a name="ios_defaultfloat"></a>&lt;iOS &gt; defaultfloat
 
-Float değerleri için `ios_base` varsayılan görüntü biçimini kullanacak bir nesnenin bayraklarını yapılandırır.
+`ios_base`Kayan değerler için varsayılan görüntü biçimini kullanmak üzere bir nesnenin bayraklarını yapılandırır.
 
 ```cpp
 ios_base& defaultfloat(ios_base& iosbase);
@@ -185,11 +185,11 @@ Bir `ios_base` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipülatör etkili `iosbase.` [ios_base çağırır::unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::floatfield)`, sonra *iosbase*döndürür .
+İşleici etkin bir şekilde `iosbase.` [ios_base:: unsetf](../standard-library/ios-base-class.md#unsetf)çağırır `(ios_base::floatfield)` ve sonra *ıosbase*döndürür.
 
-## <a name="fixed"></a><a name="fixed"></a>Sabit
+## <a name="fixed"></a><a name="fixed"></a>Düzenle
 
-Kayan nokta sayısının sabit ondalık gösterimde görüntüleneceğini belirtir.
+Sabit ondalık gösterimde bir kayan noktalı sayının görüntülendiğini belirtir.
 
 ```cpp
 ios_base& fixed(ios_base& str);
@@ -197,18 +197,18 @@ ios_base& fixed(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fixed`kayan nokta numaraları için varsayılan ekran gösterimidir. [bilimsel](../standard-library/ios-functions.md#scientific) gösterim kullanılarak görüntülenecek kayan nokta numaralarının bilimsel nedenleri.
+`fixed`, kayan nokta numaraları için varsayılan görüntüleme gösterimidir. [bilimsel](../standard-library/ios-functions.md#scientific) , kayan nokta numaralarının bilimsel gösterim kullanılarak görüntülenmesine neden olur.
 
-Manipülatör etkili *str*çağırır. [setf](../standard-library/ios-base-class.md#setf) `ios_base::fixed`( `ios_base::floatfield` , ), ve sonra *str döndürür*.
+İşleici, *Str*'yi etkin bir şekilde çağırır. [setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed` , `ios_base::floatfield` ) ve ardından *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -235,9 +235,9 @@ int main( )
 1.1
 ```
 
-## <a name="hex"></a><a name="hex"></a>Hex
+## <a name="hex"></a><a name="hex"></a>eşlenecek
 
-İnsteger değişkenlerinin baz 16 gösteriminde görünmeyeceğini belirtir.
+Tamsayı değişkenlerinin temel 16 gösterimde görüneceğini belirtir.
 
 ```cpp
 ios_base& hex(ios_base& str);
@@ -245,24 +245,24 @@ ios_base& hex(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, varsayılan olarak, sayılama değişkenleri temel 10 gösteriminde görüntülenir. [dec](../standard-library/ios-functions.md#dec) ve [oct](../standard-library/ios-functions.md#oct) da sonlu değişkenlerin görünme şeklini değiştirir.
+Varsayılan olarak, tamsayı değişkenleri taban 10 gösteriminde görüntülenir. [Dec](../standard-library/ios-functions.md#dec) ve [Oct](../standard-library/ios-functions.md#oct) de tamsayı değişkenlerinin görünme şeklini değiştirir.
 
-Manipülatör etkin bir `str`şekilde **çağırır.** [setf](../standard-library/ios-base-class.md#setf) `ios_base::hex`( `ios_base::basefield`, ), ve sonra *str döndürür*.
+İşleici etkin bir şekilde çağırır `str` **.** [setf](../standard-library/ios-base-class.md#setf)( `ios_base::hex` , `ios_base::basefield` ) ve ardından *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Nasıl [dec](../standard-library/ios-functions.md#dec) kullanılacağına `hex`bir örnek için dec bakın.
+Öğesinin nasıl [kullanılacağına ilişkin bir örnek için bkz](../standard-library/ios-functions.md#dec) `hex` ..
 
-## <a name="hexfloat"></a><a name="hexfloat"></a>hexfloat
+## <a name="hexfloat"></a><a name="hexfloat"></a>onaltıdan kayan
 
 ```cpp
 ios_base& hexfloat (ios_base& str);
@@ -276,9 +276,9 @@ enum class io_errc {
 };
 ```
 
-## <a name="internal"></a><a name="internal"></a>Iç
+## <a name="internal"></a><a name="internal"></a>iç
 
-Bir sayının işaretinin haklı bırakılmasına ve sayının doğru olmasının doğru yasılmasına neden olur.
+Bir sayının işaretinin hizalı olarak sola ve sağa yaslanmasına neden olur.
 
 ```cpp
 ios_base& internal(ios_base& str);
@@ -286,18 +286,18 @@ ios_base& internal(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[showpos](../standard-library/ios-functions.md#showpos) pozitif sayılar için göstermek için işareti neden olur.
+[showpos](../standard-library/ios-functions.md#showpos) , işaretin pozitif sayılar için görüntülenmesine neden olur.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(`çağırır[ios_base::iç](../standard-library/ios-base-class.md#fmtflags) `,` [ios_base::adjustfield](../standard-library/ios-base-class.md#fmtflags)`)`, ve sonra *str*döndürür .
+İşleici, `str.` [setf](../standard-library/ios-base-class.md#setf) `(` [ios_base:: Internal](../standard-library/ios-base-class.md#fmtflags) `,` [ios_base:: adjustfield](../standard-library/ios-base-class.md#fmtflags)öğesini etkin bir şekilde çağırır `)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -334,9 +334,9 @@ template <> struct is_error_code_enum<io_errc> : public true_type { };
 const error_category& iostream_category() noexcept;
 ```
 
-## <a name="left"></a><a name="left"></a>Sol
+## <a name="left"></a><a name="left"></a>tarafta
 
-Çıkış genişliği kadar geniş olmayan metnin sol kenar boşluğuyla birlikte akış floşta görünmesine neden olur.
+Çıktı genişliği, sol kenar boşluğu ile boşaltımın üzerinde görünmesini sağlayan metnin geniş olmasına neden olur.
 
 ```cpp
 ios_base& left(ios_base& str);
@@ -344,16 +344,16 @@ ios_base& left(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::left, ios_base::adjustfield)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::left, ios_base::adjustfield)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -391,7 +391,7 @@ error_condition make_error_condition(io_errc e) noexcept;
 
 ## <a name="noboolalpha"></a><a name="noboolalpha"></a>noboolalpha
 
-Tür [bool](../cpp/bool-cpp.md) değişkenlerinin akışta 1 veya 0 olarak göründüğünü belirtir.
+[Bool](../cpp/bool-cpp.md) türündeki değişkenlerin akışta 1 veya 0 olarak göründüğünü belirtir.
 
 ```cpp
 ios_base& noboolalpha(ios_base& str);
@@ -399,28 +399,28 @@ ios_base& noboolalpha(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `noboolalpha` yürürlüktedir.
+Varsayılan olarak etkindir `noboolalpha` .
 
-`noboolalpha`etkin bir `str.`şekilde [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::boolalpha)`çağırır ve sonra *str döndürür.*
+`noboolalpha``str.`, [unsetf](../standard-library/ios-base-class.md#unsetf)'yi etkin bir şekilde çağırır `(ios_base::boolalpha)` ve *Str*döndürür.
 
-[boolalpha](../standard-library/ios-functions.md#boolalpha) etkisini tersine `noboolalpha`çevirir.
+[boolalpha](../standard-library/ios-functions.md#boolalpha) , öğesinin etkisini tersine çevirir `noboolalpha` .
 
 ### <a name="example"></a>Örnek
 
-Kullanma `noboolalpha`örneği için [boolalpha'ya](../standard-library/ios-functions.md#boolalpha) bakın.
+Kullanım örneği için bkz. [boolalpha](../standard-library/ios-functions.md#boolalpha) `noboolalpha` .
 
 ## <a name="noshowbase"></a><a name="noshowbase"></a>noshowbase
 
-Bir sayının görüntülendiği notasyon tabanını gösteren kapatır.
+Bir sayının gösterildiği notational temelini belirtir.
 
 ```cpp
 ios_base& noshowbase(ios_base& str);
@@ -428,26 +428,26 @@ ios_base& noshowbase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`noshowbase`varsayılan olarak açıktır. Sayıların gösterim altonmasını belirtmek için [showbase'i](../standard-library/ios-functions.md#showbase) kullanın.
+`noshowbase`Varsayılan olarak açık olur. Sayıların notational temelini göstermek için [showbase](../standard-library/ios-functions.md#showbase) kullanın.
 
-Manipülatör etkin `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showbase)`çağırır , ve sonra *str*döndürür .
+İşleici etkin bir şekilde `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)çağırır `(ios_base::showbase)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Nasıl kullanılacağına `noshowbase`bir örnek için [showbase'e](../standard-library/ios-functions.md#showbase) bakın.
+Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [showbase](../standard-library/ios-functions.md#showbase) `noshowbase` .
 
 ## <a name="noshowpoint"></a><a name="noshowpoint"></a>noshowpoint
 
-Kesirli kısmı sıfır olan kayan nokta numaralarının yalnızca tam sayı kısmını görüntüler.
+Kısmi bölümü sıfır olan kayan noktalı sayıların yalnızca tam sayı kısmını görüntüler.
 
 ```cpp
 ios_base& noshowpoint(ios_base& str);
@@ -455,18 +455,18 @@ ios_base& noshowpoint(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`noshowpoint`varsayılan olarak açıktır; ondalık noktadan sonra sıfırları görüntülemek için [showpoint](../standard-library/ios-functions.md#showpoint) ve [kesinlik](../standard-library/ios-base-class.md#precision) kullanın.
+`noshowpoint`Varsayılan olarak açık; ondalık ayırıcıdan sonra sıfırları göstermek için [showpoint](../standard-library/ios-functions.md#showpoint) ve [Precision](../standard-library/ios-base-class.md#precision) kullanın.
 
-Manipülatör etkin `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showpoint)`çağırır , ve sonra *str*döndürür .
+İşleici etkin bir şekilde `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)çağırır `(ios_base::showpoint)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -494,7 +494,7 @@ int main( )
 
 ## <a name="noshowpos"></a><a name="noshowpos"></a>noshowpos
 
-Pozitif sayıların açıkça imzalanmamasını neden olur.
+Pozitif sayıların açıkça imzalanmamasını sağlar.
 
 ```cpp
 ios_base& noshowpos(ios_base& str);
@@ -502,26 +502,26 @@ ios_base& noshowpos(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`noshowpos`varsayılan olarak açıktır.
+`noshowpos`Varsayılan olarak açık olur.
 
-Manipülatör etkin `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::showps)`çağırır , sonra *str*döndürür.
+İşleici, `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)'yi etkin bir şekilde çağırır `(ios_base::showps)` , ardından *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Kullanma örneği için [showpos'a](../standard-library/ios-functions.md#showpos) `noshowpos`bakın.
+Bir örneği için bkz. [showpos](../standard-library/ios-functions.md#showpos) `noshowpos` .
 
 ## <a name="noskipws"></a><a name="noskipws"></a>noskipws
 
-Giriş akışı tarafından okunacak boşluklara neden olur.
+Giriş akışı tarafından boşlukların okunmasına neden olur.
 
 ```cpp
 ios_base& noskipws(ios_base& str);
@@ -529,18 +529,18 @@ ios_base& noskipws(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, [skipws](../standard-library/ios-functions.md#skipws) etkindir. Giriş akışında bir boşluk okunduğunda, arabelleğe son sinyali verirken.
+Varsayılan olarak, [skipw](../standard-library/ios-functions.md#skipws) etkin olur. Giriş akışında bir boşluk okunıyorsa, arabelleğin sonuna işaret eder.
 
-Manipülatör etkin `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::skipws)`çağırır , ve sonra *str*döndürür .
+İşleici etkin bir şekilde `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)çağırır `(ios_base::skipws)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -563,7 +563,7 @@ int main() {
 
 ## <a name="nounitbuf"></a><a name="nounitbuf"></a>nounitbuf
 
-Arabellek dolduğunda çıktının arabelleğe alınmasına ve işlenmesine neden olur.
+Arabellek dolduğunda çıktının arabelleğe alınıp işlenmesine neden olur.
 
 ```cpp
 ios_base& nounitbuf(ios_base& str);
@@ -571,22 +571,22 @@ ios_base& nounitbuf(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[unitbuf](../standard-library/ios-functions.md#unitbuf) boş olmadığında arabellek işlenmesine neden olur.
+[unitarabelleğe](../standard-library/ios-functions.md#unitbuf) , boş olmadığında arabelleğin işlenmesine neden olur.
 
-Manipülatör etkin `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::unitbuf)`çağırır , ve sonra *str*döndürür .
+İşleici etkin bir şekilde `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)çağırır `(ios_base::unitbuf)` ve *Str*döndürür.
 
 ## <a name="nouppercase"></a><a name="nouppercase"></a>nouppercase
 
-Hexadecimal basamakların ve bilimsel gösterimdeki üs küçük harfte göründüğünü belirtir.
+Bilimsel gösterimdeki onaltılık basamakların ve üs harflerin küçük harf olarak göründüğünü belirtir.
 
 ```cpp
 ios_base& nouppercase(ios_base& str);
@@ -594,24 +594,24 @@ ios_base& nouppercase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Manipülatör etkin `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)`(ios_base::uppercase)`çağırır , ve sonra *str*döndürür .
+İşleici etkin bir şekilde `str.` [unsetf](../standard-library/ios-base-class.md#unsetf)çağırır `(ios_base::uppercase)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Kullanma `nouppercase`örneği için [büyük harfe](../standard-library/ios-functions.md#uppercase) bakın.
+Kullanım örneği için [büyük harfe](../standard-library/ios-functions.md#uppercase) bakın `nouppercase` .
 
-## <a name="oct"></a><a name="oct"></a>Ekim
+## <a name="oct"></a><a name="oct"></a>Oct
 
-Temel 8 gösteriminde görünen bir sayı yayla değişkeni belirtir.
+Tamsayı değişkenlerinin taban 8 gösteriminde göründüğünü belirtir.
 
 ```cpp
 ios_base& oct(ios_base& str);
@@ -619,26 +619,26 @@ ios_base& oct(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, varsayılan olarak, sayılama değişkenleri temel 10 gösteriminde görüntülenir. [dec](../standard-library/ios-functions.md#dec) ve [hex](../standard-library/ios-functions.md#hex) de tamsayı değişkenlerinin görünme şeklini değiştirir.
+Varsayılan olarak, tamsayı değişkenleri taban 10 gösteriminde görüntülenir. [Dec](../standard-library/ios-functions.md#dec) ve [HEX](../standard-library/ios-functions.md#hex) de tamsayı değişkenlerinin görünme şeklini değiştirir.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::oct, ios_base::basefield)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::oct, ios_base::basefield)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Nasıl [dec](../standard-library/ios-functions.md#dec) kullanılacağına `oct`bir örnek için dec bakın.
+Öğesinin nasıl [kullanılacağına ilişkin bir örnek için bkz](../standard-library/ios-functions.md#dec) `oct` ..
 
-## <a name="right"></a><a name="right"></a>Doğru
+## <a name="right"></a><a name="right"></a>Right
 
-Çıkış genişliği kadar geniş olmayan metnin doğru kenar boşluğuyla akış floşta görünmesine neden olur.
+Çıktı genişliği doğru olmayan metnin akış temizlemesi durumunda sağ kenar boşluğu ile görünmesini sağlar.
 
 ```cpp
 ios_base& right(ios_base& str);
@@ -646,18 +646,18 @@ ios_base& right(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[sol](../standard-library/ios-functions.md#left) da metnin gerekçesini değiştirir.
+[sol](../standard-library/ios-functions.md#left) Ayrıca metnin gerekçe üzerinde değişiklik yapar.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::right, ios_base::adjustfield)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::right, ios_base::adjustfield)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -693,9 +693,9 @@ int main( )
                    5
 ```
 
-## <a name="scientific"></a><a name="scientific"></a>Bilimsel
+## <a name="scientific"></a><a name="scientific"></a>bilimsel
 
-Kayan nokta numaralarının bilimsel gösterim kullanılarak görüntülenmesine neden olur.
+, Kayan nokta numaralarının bilimsel gösterim kullanılarak görüntülenmesine neden olur.
 
 ```cpp
 ios_base& scientific(ios_base& str);
@@ -703,18 +703,18 @@ ios_base& scientific(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, kayan nokta numaraları için [sabit](../standard-library/ios-functions.md#fixed) gösterim etkindir.
+Varsayılan olarak, [sabit](../standard-library/ios-functions.md#fixed) Gösterim kayan noktalı sayılar için etkindir.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::scientific, ios_base::floatfield)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::scientific, ios_base::floatfield)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -740,7 +740,7 @@ int main( )
 
 ## <a name="showbase"></a><a name="showbase"></a>showbase
 
-Bir sayının görüntülendiği gösterim tabanını gösterir.
+Bir sayının gösterileceği notational tabanını gösterir.
 
 ```cpp
 ios_base& showbase(ios_base& str);
@@ -748,18 +748,18 @@ ios_base& showbase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sayının notasyonal tabanı [dec](../standard-library/ios-functions.md#dec), [ekim](../standard-library/ios-functions.md#oct), veya [hex](../standard-library/ios-functions.md#hex)ile değiştirilebilir.
+Bir sayının notational temeli [Ara](../standard-library/ios-functions.md#dec), [Oct](../standard-library/ios-functions.md#oct)veya [onaltılık](../standard-library/ios-functions.md#hex)ile değiştirilebilir.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::showbase)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::showbase)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -794,7 +794,7 @@ int main( )
 
 ## <a name="showpoint"></a><a name="showpoint"></a>showpoint
 
-Kayan nokta sayısının tam sayı kısmını görüntüler ve kesirli parça sıfır olsa bile ondalık noktanın sağındaki basamakları görüntüler.
+Kesirli bölüm sıfır olduğunda bile ondalık noktanın sağ tarafındaki bir kayan nokta sayısı ve rakamların tam sayı kısmını görüntüler.
 
 ```cpp
 ios_base& showpoint(ios_base& str);
@@ -802,22 +802,22 @@ ios_base& showpoint(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, [noshowpoint](../standard-library/ios-functions.md#noshowpoint) etkindir.
+Varsayılan olarak, [noshowpoint](../standard-library/ios-functions.md#noshowpoint) etkin olur.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::showpoint)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::showpoint)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Kullanma `showpoint`örneği için [noshowpoint'e](../standard-library/ios-functions.md#noshowpoint) bakın.
+Kullanım örneği için bkz. [noshowpoint](../standard-library/ios-functions.md#noshowpoint) `showpoint` .
 
 ## <a name="showpos"></a><a name="showpos"></a>showpos
 
@@ -829,18 +829,18 @@ ios_base& showpos(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
 [noshowpos](../standard-library/ios-functions.md#noshowpos) varsayılandır.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::showpos)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::showpos)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -866,7 +866,7 @@ int main( )
 
 ## <a name="skipws"></a><a name="skipws"></a>skipws
 
-Giriş akışı tarafından okunmaması için boşluklara neden olun.
+Giriş akışı tarafından okunmamasına neden olan boşluk.
 
 ```cpp
 ios_base& skipws(ios_base& str);
@@ -874,18 +874,18 @@ ios_base& skipws(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `skipws` yürürlüktedir. [noskipws](../standard-library/ios-functions.md#noskipws) giriş akışından okunacak boşluklara neden olur.
+Varsayılan olarak etkindir `skipws` . [noskipws](../standard-library/ios-functions.md#noskipws) , giriş akışından boşlukların okunmasına neden olur.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(ios_base::skipws)`çağırır ve sonra *str döndürür.*
+İşleici `str.` [setf](../standard-library/ios-base-class.md#setf)'yi etkin bir şekilde çağırır `(ios_base::skipws)` ve *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -926,24 +926,24 @@ ios_base& unitbuf(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arabelleği `endl` de temize çıkar.
+`endl`Ayrıca arabelleği de temizler.
 
-[nounitbuf](../standard-library/ios-functions.md#nounitbuf) varsayılan olarak yürürlüktedir.
+[nounitarabelleğe](../standard-library/ios-functions.md#nounitbuf) varsayılan olarak etkindir.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(`[ios_base çağırır::unitbuf](../standard-library/ios-base-class.md#fmtflags)`)`, ve sonra *str*döndürür .
+İşleici, `str.` [setf](../standard-library/ios-base-class.md#setf) `(` [ios_base:: unitarabelleğe](../standard-library/ios-base-class.md#fmtflags)etkin bir şekilde çağırır `)` ve *Str*döndürür.
 
-## <a name="uppercase"></a><a name="uppercase"></a>Büyük
+## <a name="uppercase"></a><a name="uppercase"></a>İngiliz
 
-Heksadedemimal basamakların ve bilimsel gösterimdeki üs büyük harfle göründüğünü belirtir.
+Bilimsel gösterimdeki onaltılık basamakların ve üs 'ın büyük harfle göründüğünü belirtir.
 
 ```cpp
 ios_base& uppercase(ios_base& str);
@@ -951,18 +951,18 @@ ios_base& uppercase(ios_base& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-[ios_base](../standard-library/ios-base-class.md)türünden bir nesneye veya 'den `ios_base`devralan bir türe başvuru
+*üstbilgisine*\
+[İos_base](../standard-library/ios-base-class.md)türünde bir nesneye veya öğesinden devralan bir türe başvuru `ios_base` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Str* türetildiği nesneye bir başvuru.
+*Str* 'nin türetildiği nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, [nouppercase](../standard-library/ios-functions.md#nouppercase) etkindir.
+Varsayılan olarak, [nobüyük](../standard-library/ios-functions.md#nouppercase) değer etkindir.
 
-Manipülatör etkili `str.` [setf](../standard-library/ios-base-class.md#setf)`(`[çağırır ios_base::büyük harf](../standard-library/ios-base-class.md#fmtflags)`)`, ve sonra *str*döndürür .
+İşleici, `str.` [setf](../standard-library/ios-base-class.md#setf) `(` [ios_base:: büyük harfe](../standard-library/ios-base-class.md#fmtflags)etkin bir şekilde çağrı yapar `)` ve ardından *Str*döndürür.
 
 ### <a name="example"></a>Örnek
 

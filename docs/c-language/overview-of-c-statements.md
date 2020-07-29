@@ -8,12 +8,12 @@ helpviewer_keywords:
 - statements, about statements
 - Visual C, statements
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-ms.openlocfilehash: bfa6840553055202f26f55e1dc5971bfd047b2de
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 6b6cf9ee7aab3f14b3cb4b48c10e59125391c14c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857079"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211781"
 ---
 # <a name="overview-of-c-statements"></a>C Deyimlerine Genel Bakış
 
@@ -41,7 +41,7 @@ Deyim gövdesi çoğu zaman bir "bileşik deyim" olur. Bileşik deyim, anahtar s
 
 İfade deyimi, [ifadelerde ve atamalarında](../c-language/expressions-and-assignments.md)tanıtılan aritmetik veya mantıksal işleçleri Içerebilen bir C ifadesi içerir. null deyimi, boş bir deyimdir.
 
-Bir C deyimi, ad ve üst üste iki noktadan oluşan bir tanımlama etiketi ile başlayabilir. Yalnızca `goto` deyimi deyim etiketlerini tanıdığı için deyim etiketleri `goto` ile ele alınır. Daha fazla bilgi için [goto ve etiketli deyimlere](../c-language/goto-and-labeled-statements-c.md) bakın.
+Bir C deyimi, ad ve üst üste iki noktadan oluşan bir tanımlama etiketi ile başlayabilir. Yalnızca deyimin ifade **`goto`** etiketlerini tanıdığı için, bildirim etiketleri ile açıklanmıştır **`goto`** . Daha fazla bilgi için [goto ve etiketli deyimlere](../c-language/goto-and-labeled-statements-c.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

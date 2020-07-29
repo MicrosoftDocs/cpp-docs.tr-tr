@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - nested_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-ms.openlocfilehash: ed58eb6cc074b54ae6801d2b11089af9a79f8c8f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 6ae95880f0bc18928ed9bd4f6b6da14722f6ec60
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441623"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212195"
 ---
 # <a name="nested_exception-class"></a>nested_exception sınıfı
 
@@ -43,13 +43,13 @@ class nested_exception {
 |[rethrow_nested](#rethrow_nested)|Saklı özel durumu oluşturur.|
 |[nested_ptr](#nested_ptr)|Depolanan özel durumu döndürür.|
 
-### <a name="op_as"></a>işleç =
+### <a name="operator"></a><a name="op_as"></a>işleç =
 
 ```cpp
 nested_exception& operator=(const nested_exception&) = default;
 ```
 
-### <a name="nested_ptr"></a>nested_ptr
+### <a name="nested_ptr"></a><a name="nested_ptr"></a>nested_ptr
 
 ```cpp
 exception_ptr nested_ptr() const;
@@ -57,9 +57,9 @@ exception_ptr nested_ptr() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bu `nested_exception` nesnesi tarafından yakalanan saklı özel durum.
+Bu nesne tarafından yakalanan saklı özel durum `nested_exception` .
 
-### <a name="rethrow_nested"></a>rethrow_nested
+### <a name="rethrow_nested"></a><a name="rethrow_nested"></a>rethrow_nested
 
 ```cpp
 [[noreturn]] void rethrow_nested() const;
@@ -67,15 +67,15 @@ Bu `nested_exception` nesnesi tarafından yakalanan saklı özel durum.
 
 #### <a name="remarks"></a>Açıklamalar
 
-`nested_ptr()` null bir işaretçi döndürürse, işlev `std::terminate()`çağırır. Aksi takdirde, `*this`tarafından yakalanan saklı özel durumu oluşturur.
+`nested_ptr()`Null bir işaretçi döndürürse, işlev çağırır `std::terminate()` . Aksi takdirde, tarafından yakalanan saklı özel durumu oluşturur **`*this`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<özel durum >
+**Üst bilgi:**\<exception>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [özel durum sınıfı](../standard-library/exception-class.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

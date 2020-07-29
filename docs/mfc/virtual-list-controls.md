@@ -7,61 +7,61 @@ helpviewer_keywords:
 - list controls [MFC], List view
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-ms.openlocfilehash: 1ade5f404e134cf6de20756dcc5af169fefdec76
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 12200697af90a3c83fea3df676bd4d2488598d45
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375503"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215926"
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 
-Sanal liste denetimi, LVS_OWNERDATA stiline sahip bir liste görünümü denetimidir. Bu stil, denetimin bir öğe sayısını **DWORD'e** kadar desteklemesini sağlar (varsayılan madde sayısı yalnızca **bir int'e**kadar uzanır). Ancak, bu stil tarafından sağlanan en büyük avantajı, yalnızca herhangi bir anda bellekte veri öğeleri nin bir alt kümesine sahip olmaktır. Bu, sanal liste görünümü denetiminin, verilere erişmek için belirli yöntemlerin zaten yürürlükte olduğu büyük bilgi veritabanlarıyla kullanılmak üzere kendini ödünç almasına olanak tanır.
+Sanal liste denetimi, LVS_OWNERDATA stili olan bir liste görünümü denetimidir. Bu stil, denetimin **DWORD** 'e kadar bir öğe sayısını desteklemesini sağlar (varsayılan öğe sayısı yalnızca bir olarak genişletilir **`int`** ). Ancak, bu stil tarafından sunulan en büyük avantaj, her seferinde bellekte yalnızca bir veri öğeleri alt kümesine sahip olabilir. Bu, sanal liste görünümü denetiminin kendisini büyük veritabanlarla kullanılmak üzere ödünç almasına olanak tanır. Bu, belirli verilere erişim yöntemlerinin zaten yerinde olduğu yerdir.
 
 > [!NOTE]
-> Sanal liste işlevselliği sağlamanın `CListCtrl`yanı sıra, MFC de [CListView](../mfc/reference/clistview-class.md) sınıfında aynı işlevselliği sağlar.
+> MFC ' de sanal liste işlevselliği sağlamaya ek olarak `CListCtrl` [Clienstview](../mfc/reference/clistview-class.md) sınıfında aynı işlevselliği de sağlar.
 
-Sanal liste denetimleri geliştirirken dikkat edilmesi gereken bazı uyumluluk sorunları vardır. Daha fazla bilgi için Windows SDK'daki Liste Görünümü Denetimleri konusunun Uyumluluk Sorunları bölümüne bakın.
+Sanal liste denetimleri geliştirilirken bilmeniz gereken bazı uyumluluk sorunları vardır. Daha fazla bilgi için Windows SDK liste-görünüm denetimleri konusunun uyumluluk sorunları bölümüne bakın.
 
-## <a name="handling-the-lvn_getdispinfo-notification"></a>LVN_GETDISPINFO Bildiriminin İşletilmesi
+## <a name="handling-the-lvn_getdispinfo-notification"></a>LVN_GETDISPINFO bildirimini işleme
 
-Sanal liste denetimleri çok az öğe bilgisi tutar. Madde seçimi ve odak bilgileri dışında, tüm madde bilgileri denetimin sahibi tarafından yönetilir. Bilgi, LVN_GETDISPINFO bir bildirim mesajı ile çerçeve tarafından istenir. İstenen bilgileri sağlamak için, sanal liste denetiminin (veya denetimin kendisi) sahibinin bu bildirimi işlemesi gerekir. Bu, [Sınıf Sihirbazı](reference/mfc-class-wizard.md) kullanılarak kolayca yapılabilir [(bkz.](../mfc/reference/mapping-messages-to-functions.md) Ortaya çıkan kod aşağıdaki örneğe benzer `CMyDialog` (sanal liste denetim nesnesinin sahibi ve iletişim kutusunun bildirimi işleme sayılacağı yer):
+Sanal liste denetimleri çok az öğe bilgilerini korur. Öğe seçimi ve odak bilgileri hariç, tüm öğe bilgileri denetimin sahibi tarafından yönetilir. Bilgi, LVN_GETDISPINFO bir bildirim iletisi aracılığıyla çerçeve tarafından istenir. İstenen bilgileri sağlamak için, sanal liste denetiminin (veya denetimin kendisi) sahibi bu bildirimi işlemelidir. Bu, [sınıf Sihirbazı](reference/mfc-class-wizard.md) kullanılarak kolayca yapılabilir (bkz. [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)). Sonuç kodu aşağıdaki örnekteki gibi görünmelidir ( `CMyDialog` sanal liste denetim nesnesine ve iletişim kutusunun bildirimi işleme aldığı yer):
 
 [!code-cpp[NVC_MFCControlLadenDialog#23](../mfc/codesnippet/cpp/virtual-list-controls_1.cpp)]
 
-bildirim iletisi LVN_GETDISPINFO için işleyicide, ne tür bilgilerin istendiğini görmek için denetlemeniz gerekir. Olası değerler şunlardır:
+LVN_GETDISPINFO bildirim iletisine yönelik İşleyicide, ne tür bilgilerin istenmekte olduğunu görmeniz gerekir. Olası değerler şunlardır:
 
-- `LVIF_TEXT`*pszText* üyesi doldurulmalıdır.
+- `LVIF_TEXT`*PszText* üyesinin doldurulması gerekir.
 
-- `LVIF_IMAGE`*iImage* üyesi nin doldurulması gerekir.
+- `LVIF_IMAGE`*IImage* üyesinin doldurulması gerekir.
 
-- `LVIF_INDENT`*IIndent* üyesi doldurulmalıdır.
+- `LVIF_INDENT`*Igirintile* üyesinin doldurulması gerekir.
 
-- `LVIF_PARAM`*lParam* üyesi doldurulmalı. (Alt öğeler için mevcut değildir.)
+- `LVIF_PARAM`*LParam* üyesi doldurulmalıdır. (Alt öğeler için yok.)
 
-- `LVIF_STATE`*Devlet* üyesinin doldurulması gerekiyor.
+- `LVIF_STATE`*Durum* üyesinin doldurulması gerekir.
 
-Daha sonra, istenen her türlü bilgiyi çerçeveye geri sağlamalısınız.
+Ardından, çerçeveye hangi bilgilerin geri istendiğini sağlamanız gerekir.
 
-Aşağıdaki örnek (liste denetim nesnesi için bildirim işleyicisinin gövdesinden alınan) metin arabellekleri ve bir öğenin görüntüsü için bilgi sağlayarak olası bir yöntemi gösterir:
+Aşağıdaki örnek (liste denetim nesnesi için bildirim işleyicisinin gövdesinden alınmıştır), bir öğenin metin arabellekleri ve görüntüsü için bilgi sağlayarak olası bir yöntemi gösterir:
 
 [!code-cpp[NVC_MFCControlLadenDialog#24](../mfc/codesnippet/cpp/virtual-list-controls_2.cpp)]
 
-## <a name="caching-and-virtual-list-controls"></a>Önbelleğe Alma ve Sanal Liste Denetimleri
+## <a name="caching-and-virtual-list-controls"></a>Önbelleğe alma ve sanal liste denetimleri
 
-Bu tür bir liste denetimi büyük veri kümeleri için tasarlandığından, alma performansını artırmak için istenen madde verilerini önbelleğe almanız önerilir. Çerçeve, LVN_ODCACHEHINT bir bildirim iletisi göndererek önbelleği en iyi duruma getirmek için bir önbellek ipucu mekanizması sağlar.
+Bu tür bir liste denetimi büyük veri kümelerine yönelik olduğundan, alma performansını geliştirmek için istenen öğe verilerini önbelleğe almanız önerilir. Framework, bir LVN_ODCACHEHINT bildirim iletisi göndererek önbelleğin iyileştirmesine yardımcı olmak için bir önbellek ipucu mekanizması sağlar.
 
-Aşağıdaki örnek, işleyici işlevine geçirilen aralıkla önbelleği güncelleştirir.
+Aşağıdaki örnek, önbelleği Handler işlevine geçirilen aralıkla güncelleştirir.
 
 [!code-cpp[NVC_MFCControlLadenDialog#25](../mfc/codesnippet/cpp/virtual-list-controls_3.cpp)]
 
-Önbellek hazırlama ve koruma hakkında daha fazla bilgi için Windows SDK'daki Liste Görünümü Denetimleri konusunun Önbellek Yönetimi bölümüne bakın.
+Bir önbelleğin hazırlanması ve sürdürülmesi hakkında daha fazla bilgi için, Windows SDK liste-görünüm denetimleri konusunun önbellek yönetimi bölümüne bakın.
 
-## <a name="finding-specific-items"></a>Belirli Öğeleri Bulma
+## <a name="finding-specific-items"></a>Belirli öğeleri bulma
 
-LVN_ODFINDITEM bildirim iletisi, belirli bir liste denetim öğesinin bulunması gerektiğinde sanal liste denetimi tarafından gönderilir. Bildirim iletisi, liste görünümü denetimi hızlı anahtar erişimi aldığında veya LVM_FINDITEM bir ileti aldığında gönderilir. Arama bilgileri, **NMLVFINDITEM** yapısının bir üyesi olan **LVFINDINFO** yapısı şeklinde gönderilir. Liste denetim nesnenizin `OnChildNotify` işlevini geçersiz kılarak ve işleyicinin gövdesi içinde bu iletiyi işleyin, LVN_ODFINDITEM iletisini denetleyin. Bulunursa, uygun eylemi gerçekleştirin.
+LVN_ODFINDITEM bildirim iletisi, belirli bir liste denetim öğesi bulunması gerektiğinde sanal liste denetimi tarafından gönderilir. Liste görünümü denetimi hızlı anahtar erişimi aldığında veya LVM_FINDITEM bir ileti aldığında bildirim iletisi gönderilir. Arama bilgileri, **Nmlvfindıtem** yapısının üyesi olan bir **Lvfinınfo** yapısı biçiminde gönderilir. `OnChildNotify`Liste denetim nesnenizin işlevini geçersiz kılarak ve işleyicinin gövdesinde bu iletiyi işleyin, LVN_ODFINDITEM iletisini kontrol edin. Bulunursa, uygun eylemi gerçekleştirin.
 
-Liste görünümü denetimi tarafından verilen bilgilerle eşleşen bir öğeyi aramaya hazır olmalısınız. Başarılı olursa öğenin dizinini döndürmeniz veya eşleşen bir öğe bulunamazsa -1 döndürmeniz gerekir.
+Liste görünümü denetimi tarafından verilen bilgilerle eşleşen bir öğeyi aramaya hazır olmanız gerekir. Başarılı olursa öğenin dizinini döndürmeli veya eşleşen öğe bulunmazsa-1 ' i döndürmelisiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

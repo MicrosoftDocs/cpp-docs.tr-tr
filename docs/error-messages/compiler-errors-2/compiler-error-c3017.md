@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3017
 ms.assetid: 12ab2c2a-d0d2-4900-9cbf-39be0af590dd
-ms.openlocfilehash: af3f24a1a814fa79fa63b7e5bee204083006c9a2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 34347abffd91246ada080d19fee88ee09c8fce99
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749746"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232072"
 ---
 # <a name="compiler-error-c3017"></a>Derleyici hatası C3017
 
 OpenMP ' for ' deyimindeki sonlandırma testi yanlış biçimde
 
-Bir OpenMP deyimindeki `for` döngüsünün tam olarak ve açıkça belirtilmesi gerekir.
+**`for`** Bir OpenMP deyimindeki bir döngü tam olarak ve açıkça belirtilmelidir.
 
 Aşağıdaki örnek C3017 oluşturur:
 

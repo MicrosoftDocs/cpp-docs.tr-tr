@@ -1,23 +1,23 @@
 ---
-title: 'Nasıl yapılır: C++/CLI üzerinde numaralandırmaları tanımlama ve kullanma'
+title: 'Nasıl yapılır: C++/CLI üzerinde sabit listelerini tanımlama ve kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - enum class, specifying underlying types
 ms.assetid: df8f2b91-b9d2-4fab-9be4-b1d58b8bc570
-ms.openlocfilehash: cf3bb23069b2692c0ca4ce270a5b8060195becf7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f09bb6e9fac30b72c3c4e0682c3d90f2ea9f8760
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370169"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216420"
 ---
-# <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: C++/CLI üzerinde numaralandırmaları tanımlama ve kullanma
+# <a name="how-to-define-and-consume-enums-in-ccli"></a>Nasıl yapılır: C++/CLI üzerinde sabit listelerini tanımlama ve kullanma
 
-Bu konu C++/CLI'deki enumları tartışır.
+Bu konuda, C++/CLI'TEKI numaralandırmalar açıklanmaktadır.
 
-## <a name="specifying-the-underlying-type-of-an-enum"></a>Bir enumun temel türünü belirtme
+## <a name="specifying-the-underlying-type-of-an-enum"></a>Bir sabit listesinin temel alınan türünü belirtme
 
-Varsayılan olarak, bir numaralandırma nın altında `int`yatan tür .  Ancak, imzalanacak veya imzalanmamış formlar , `int` `short`, `long` `__int32`, `__int64`veya .  Ayrıca kullanabilirsiniz. `char`
+Varsayılan olarak, bir numaralandırmanın temel alınan türü **`int`** .  Ancak,,,, veya imzasız biçimleri için türü belirtebilirsiniz **`int`** **`short`** **`long`** **`__int32`** **`__int64`** .  ' İ de kullanabilirsiniz **`char`** .
 
 ```cpp
 // mcppv2_enum_3.cpp
@@ -47,9 +47,9 @@ sun
 2
 ```
 
-## <a name="how-to-convert-between-managed-and-standard-enumerations"></a>Yönetilen ve standart sayısallaştırmalar arasında dönüştürme
+## <a name="how-to-convert-between-managed-and-standard-enumerations"></a>Yönetilen ve standart numaralandırmalar arasında dönüştürme
 
-Bir enum ve integral türü arasında standart bir dönüşüm yoktur; bir döküm gereklidir.
+Enum ve integral türü arasında standart dönüştürme yoktur; bir atama gereklidir.
 
 ```cpp
 // mcppv2_enum_4.cpp
@@ -75,24 +75,24 @@ int main() {
 a and day2 are the same
 ```
 
-## <a name="operators-and-enums"></a>Operatörler ve enumlar
+## <a name="operators-and-enums"></a>İşleçler ve numaralandırmalar
 
-Aşağıdaki işleçler C++/CLI'deki enumlarda geçerlidir:
+Aşağıdaki işleçler C++/CLı ' daki Numaralandırmalar için geçerlidir:
 
 |İşleç|
 |--------------|
-|== != \<  >  \<= >=|
+|== != \< >\<= >=|
 |+ -|
 |&#124; ^ & ~|
 |++ --|
 |sizeof|
 
-^ & ~ ++ &#124; işleçler, bool hariç, yalnızca integral altta yatan türlere sahip sayısallamalar için tanımlanır.  Her iki operands numaralandırma türünde olmalıdır.
+İşleci &#124; ^ & ~ + +--yalnızca integral tabanlı türler içeren Numaralandırmalar için tanımlanır, bool dahil değildir.  Her iki işlenen de sabit listesi türünde olmalıdır.
 
-Derleyici, enum işleminin sonucunu statik veya dinamik olarak denetlemez; bir işlem, enum'un geçerli tümumcularının aralığında olmayan bir değere neden olabilir.
+Derleyici, bir numaralandırma işleminin sonucunun statik veya dinamik bir denetimini yapmaz; bir işlem, numaralandırmanın geçerli numaralandırıcıların aralığında bulunmayan bir değere neden olabilir.
 
 > [!NOTE]
-> C++11, C++/CLI'deki yönetilen enum sınıflarından önemli ölçüde farklı olan enum sınıf türlerini yönetilmeyen kodda tanıtır. Özellikle, C++11 enum sınıfı türü, C++/CLI'deki yönetilen enum sınıfı türüyle aynı işleçleri desteklemez ve C++/CLI kaynak kodu, yönetilen enum sınıf bildirimlerinde yönetilmeyen (C++11) enum sınıfı bildirimlerinden ayırt etmek için erişilebilirlik belirteçleri sağlamalıdır. C++/CLI, C++/CX ve C++11'deki enum sınıfları hakkında daha fazla bilgi için [enum sınıfına](../extensions/enum-class-cpp-component-extensions.md)bakın.
+> C++ 11, C++/cliende yönetilen enum sınıflarından önemli ölçüde farklı olan yönetilmeyen koddaki enum sınıf türlerini tanıtır. Özellikle, C++ 11 sabit listesi sınıf türü, C++/CLı ' da yönetilen sabit listesi sınıfı türü ile aynı işleçleri desteklemez ve C++/CLı kaynak kodu, yönetilmeyen (C++ 11) sabit listesi sınıfı bildirimlerinden ayırt edilebilmesi için yönetilen enum sınıfı bildirimlerinde bir erişilebilirlik belirticisi sağlamalıdır. C++/CLı, C++/CX ve C++ 11 ' deki numaralandırma sınıfları hakkında daha fazla bilgi için bkz. [enum class](../extensions/enum-class-cpp-component-extensions.md).
 
 ```cpp
 // mcppv2_enum_5.cpp

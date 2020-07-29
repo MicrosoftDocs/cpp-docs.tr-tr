@@ -12,48 +12,48 @@ helpviewer_keywords:
 - dialog box controls, variable types
 - variables, dialog box control member variables
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
-ms.openlocfilehash: 0f10b4867b443f0db69743d7ff23bb059290b0a5
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: a8f693345fcb265cf8e97af342c6e0cd539c9001
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344334"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216004"
 ---
 # <a name="add-a-member-variable"></a>Üye değişkeni ekleme
 
-Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı ilgili bilgileri alın ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak üzere tasarlanmıştır. Bir üye değişkeninin ekleyebilir [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/how-to-create-a-resource-script-file.md#create-resources), veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).
+Sınıf Görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md)için ya da genel olabilir. Veri üyesi değişkeni Sihirbazı ilgili bilgileri almak ve uygun konumlarda kaynak dosyalarınıza öğe eklemek için kullanmak üzere tasarlanmıştır. [Kaynak görünümü](../windows/how-to-create-a-resource-script-file.md#create-resources)veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) [iletişim kutusu düzenleyicisinden](../windows/dialog-editor.md) bir üye değişkeni ekleyebilirsiniz.
 
 > [!NOTE]
-> Tasarladığınız ve iletişim kutusu uygulama, onu daha verimli bir iletişim kutusunda kullanılacak Düzenleyicisi iletişim kutusu denetimleri eklemek için bulabilirsiniz ve ardından Denetim üyesi değişkenleri uygulamak için.
+> Bir iletişim kutusu tasarlarken ve uygularken, iletişim kutusu denetimlerini eklemek ve ardından denetimlerin üye değişkenlerini uygulamak için Iletişim kutusu düzenleyicisini kullanmayı daha verimli bulabilirsiniz.
 
-**Üye değişkeni Ekleme Sihirbazı'nı kullanarak kaynak görünümünde bir iletişim denetimi için bir üye değişkeni eklemek için:**
+**Kaynak Görünümü üye değişkeni Ekleme Sihirbazı 'Nı kullanarak bir iletişim kutusu denetimine bir üye değişkeni eklemek için:**
 
-1. Kaynak Görünümü'nde, proje ve proje iletişim kutuları listesini görüntülemek için iletişim düğümlerini genişletin.
+1. Kaynak Görünümü, projenin iletişim kutularının listesini göstermek için proje düğümünü ve Iletişim kutusu düğümünü genişletin.
 
-1. İletişim kutusu Düzenleyicisi'nde açmak için üye değişkeni eklemek istediğiniz iletişim kutusu çift tıklayın.
+1. Iletişim kutusu düzenleyicisinde açmak için üye değişkenini eklemek istediğiniz iletişim kutusuna çift tıklayın.
 
-1. İletişim kutusu Düzenleyicisi'nde görüntülenen iletişim kutusunda, bir üye değişkeni eklemek istediğiniz denetime sağ tıklayın.
+1. Iletişim kutusunda, Iletişim kutusunda, üye değişkenini eklemek istediğiniz denetime sağ tıklayın.
 
-1. Kısayol menüsünde **değişkeni Ekle** görüntülenecek [ekleme üye değişkeni Sihirbazı](#add-member-variable-wizard).
+1. Kısayol menüsünde, **değişken Ekle** ' yi seçerek [üye değişkeni Ekleme Sihirbazı](#add-member-variable-wizard)' nı görüntüleyin.
 
    > [!NOTE]
-   > Varsayılan değer zaten sağlanan **denetim kimliği**.
+   > **DENETIM kimliğinde**varsayılan bir değer zaten sağlanmış.
 
-1. Uygun Sihirbazı kutularındaki bilgileri sağlayın. Daha fazla bilgi için [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
+1. İlgili sihirbaz kutularındaki bilgileri sağlayın. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
 
-1. Seçin **son** tanım ve uygulamayı kod projeye ekleyin ve sihirbazı kapatın.
+1. Projeye tanım ve uygulama kodu eklemek ve Sihirbazı kapatmak için **son** ' u seçin.
 
-**Sınıf Görünümü üye değişkeni Ekleme Sihirbazı'nı kullanarak bir üye değişkeni eklemek için:**
+**Üye değişkeni Ekleme Sihirbazı 'Nı kullanarak Sınıf Görünümü üye değişken eklemek için:**
 
-1. İçinde [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), projede sınıflarını görüntülemek için proje düğümünü genişletin.
+1. [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), projedeki sınıfları göstermek için proje düğümünü genişletin.
 
-1. Bir değişkeni eklemek istediğiniz sınıf sağ tıklayın.
+1. Değişken eklemek istediğiniz sınıfa sağ tıklayın.
 
-1. Kısayol menüsünde **Ekle**ve ardından **değişken Ekle** ekleme üye değişkeni Sihirbazı görüntülenecek.
+1. Kısayol menüsünde, **Ekle**' yi seçin ve sonra da **değişken Ekle** ' yi seçerek üye değişkeni Ekleme Sihirbazı 'nı görüntüleyin.
 
-1. Uygun Sihirbazı kutularındaki bilgileri sağlayın. Daha fazla bilgi için [ekleme üye değişkeni Sihirbazı](#add-member-variable-wizard).
+1. İlgili sihirbaz kutularındaki bilgileri sağlayın. Daha fazla bilgi için bkz. [üye değişkeni Ekleme Sihirbazı](#add-member-variable-wizard).
 
-1. Seçin **son** tanım ve uygulamayı kod projeye ekleyin ve sihirbazı kapatın.
+1. Projeye tanım ve uygulama kodu eklemek ve Sihirbazı kapatmak için **son** ' u seçin.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -62,108 +62,108 @@ Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. 
 
 ## <a name="add-member-variable-wizard"></a>Üye değişkeni Ekleme Sihirbazı
 
-Bu sihirbaz bir üye değişken bildiriminde üstbilgi dosyasına ekler. Seçeneklere bağlı olarak, bunu .cpp dosyası için kod ekleyebilirsiniz. Sihirbazı kullanarak üye değişkenini ekledikten sonra kodu geliştirme ortamında düzenleyebilirsiniz.
+Bu sihirbaz başlık dosyasına bir üye değişkeni bildirimi ekler. Seçeneklere bağlı olarak,. cpp dosyasına kod ekleyebilir. Sihirbazı kullanarak üye değişkenini ekledikten sonra, kodu geliştirme ortamında düzenleyebilirsiniz.
 
 - **Erişim**
 
-  Erişim bir üye değişkeni ayarlar. Erişim değiştiricileri bir üye değişkeni diğer sınıflara sahip erişimi belirtin sözcüklerdir. Erişim belirtme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Üye değişkeni erişim düzeyini ayarlamak `public` varsayılan olarak.
+  Üye değişkenine erişimi ayarlar. Erişim değiştiricileri, diğer sınıfların üye değişkenine sahip olduğu erişimi belirten anahtar sözcüklerdir. Erişim belirtme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Üye değişkeni erişim düzeyi varsayılan olarak olarak ayarlanır **`public`** .
 
-  - [public](../cpp/public-cpp.md)
+  - [genel](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
-  - [private](../cpp/private-cpp.md)
+  - [özelleştirme](../cpp/private-cpp.md)
 
 - **Değişken türü**
 
-  Eklediğiniz üye değişkeni için dönüş türünü ayarlar.
+  Eklemekte olduğunuz üye değişkeni için dönüş türünü ayarlar.
 
-  - Bir iletişim kutusu denetimi olmayan bir üye değişkeni ekliyorsanız, kullanılabilir türler listesinden seçin.
+  - İletişim kutusu denetimi olmayan bir üye değişkeni ekliyorsanız, kullanılabilir türler listesinden seçin.
 
-    Türleri hakkında daha fazla bilgi için bkz: [temel türler](../cpp/fundamental-types-cpp.md).
+    Türler hakkında daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
 
     |||
     |-|-|
-    |`char`|`short`|
-    |`double`|`unsigned char`|
-    |`float`|`unsigned int`|
-    |`int`|`unsigned long`|
-    |`long`||
+    |**`char`**|**`short`**|
+    |**`double`**|**`unsigned char`**|
+    |**`float`**|**`unsigned int`**|
+    |**`int`**|**`unsigned long`**|
+    |**`long`**||
 
-  - Bir iletişim kutusu denetimi için bir üye değişkeni ekliyorsanız, bu kutu bir denetim veya değer için döndürülen nesnenin türü ile doldurulur. Seçerseniz **denetimi**, ardından **değişken türü** seçtiğiniz denetim temel sınıfını belirtir **denetim kimliği** kutusu. İletişim kutusu denetiminin değeri tutabilir ve seçerseniz **değer**, ardından **değişken türü** denetimi tutabileceği değeri uygun türünü belirtir. Daha fazla bilgi için [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
+  - İletişim kutusu denetimi için bir üye değişkeni ekliyorsanız, bu kutu bir denetim veya değer için döndürülen nesne türü ile doldurulur. **Denetim**' i seçerseniz, **DEĞIŞKEN türü** **denetim kimliği** kutusunda seçtiğiniz denetimin temel sınıfını belirtir. İletişim kutusu denetimi bir değer tutabilir ve **değer**' i seçerseniz, **değişken türü** , denetimin tutatabilecek değer için uygun türü belirtir. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
 
-    Bu değer seçime bağlıdır **denetim kimliği** ve değiştirilemez.
+    Bu değer, **DENETIM kimliğindeki** seçime bağlıdır ve değiştirilemez.
 
 - **Değişken adı**
 
-  Eklediğiniz üye değişkeni adını ayarlar. Üye değişkenleri genellikle tanımlayıcı dizesi ile başlayan `m_`, sağlanır, varsayılan olarak.
+  Eklemekte olduğunuz üye değişkeninin adını ayarlar. Üye değişkenleri genellikle `m_` Varsayılan olarak sizin için belirtilen tanımlama dizesiyle başlar.
 
 - **Denetim değişkeni**
 
-  Üye değişkeni içeren bir iletişim kutusu denetimine yönetir gösterir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md) destekler. Daha fazla bilgi için [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange). Bu seçenek yalnızca türetilen sınıfların eklenen üye değişkenleri için kullanılabilir [CDialog](../mfc/reference/cdialog-class.md). Etkinleştirmek için bu kutuyu seçin **denetim kimliği** ve **denetim türü** seçenekleri.
+  Üye değişkeninin, [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md) desteğiyle bir iletişim kutusu içindeki bir denetimi yönettiğini gösterir. Daha fazla bilgi için bkz. [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange). Bu seçenek yalnızca [CDialog](../mfc/reference/cdialog-class.md)'dan türetilmiş sınıflara eklenen üye değişkenleri için kullanılabilir. **DENETIM kimliği** ve **Denetim türü** seçeneklerini etkinleştirmek için bu kutuyu seçin.
 
-- **Denetim Kimliği**
+- **Denetim KIMLIĞI**
 
-  Eklediğiniz denetim değişkeni için bir kimlik ayarlar. Listeden üye değişkeni eklediğiniz denetim türü kimliği seçin. Yalnızca etkin olduğunda listesidir **denetim değişkeni** kutusu seçilidir ve onun sınırlı kimlikleri denetimleri için iletişim kutusuna zaten eklendi. Örneğin, standart için **Tamam** düğme denetimi kimliğidir **IDOK**.
+  Eklemekte olduğunuz denetim değişkeninin KIMLIĞINI ayarlar. Üye değişkenini eklemekte olduğunuz denetim türünün KIMLIĞINI listeden seçin. Liste yalnızca **denetim değişkeni** kutusu seçildiğinde etkindir ve iletişim kutusuna zaten eklenmiş olan denetimler için kimlikler ile sınırlıdır. Örneğin, standart **Tamam** düğmesi Için, denetim kimliği **IDOK**olur.
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**Denetimi**|Bu seçenek, Denetim türü için varsayılan olarak ayarlanır. (Bir liste kutusu, birleşik giriş kutusu veya düzenleme kutusu yönetmek isteyebileceğiniz gibi) denetim durumu ya da değil denetimin içeriğini yönetir.|
-  |**Değer**|Bu seçenek, bir değer tutma veya bir düzenleme kutusuna veya bir onay kutusu gibi bir durum Göster denetim tipleri için kullanılabilir. Ayrıca, kendisi için aralık, içeriği veya durum yönettiğiniz denetim türleri için de kullanılabilir. Daha fazla bilgi için [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).|
+  |**Denetim**|Bu seçenek, denetim türü için varsayılan olarak ayarlanır. Denetimin durumunu veya içeriğini (liste kutusu, Birleşik giriş kutusu veya düzenleme kutusu için yönetmek isteyebileceğiniz gibi) değil, denetimin kendisini yönetir.|
+  |**Değer**|Bu seçenek, bir değeri tutabilecek ya da bir düzenleme kutusu ya da onay kutusu gibi bir durumu gösteren denetim türleri için kullanılabilir. Ayrıca, Aralık, içerik veya durum yönetebileceğiniz Denetim türleri için de kullanılabilir. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).|
 
 - **Kategori**
 
-  Değişkeni bir denetim türü veya denetimin değerini temel alan olup olmadığını belirtir.
+  Değişkenin bir denetim türüne mi yoksa denetimin değerine mi bağlı olduğunu belirtir.
 
 - **Denetim türü**
 
-  Eklenen denetimin türünü ayarlar. Bu kutuyu değiştirmek kullanılamaz. Örneğin, bir düğme denetim türü olan **düğmesi**, ve bir birleşik giriş kutusu denetim türünü **COMBOBOX**. Daha fazla bilgi için [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
+  Eklenmekte olan denetimin türünü ayarlar. Bu kutu değiştirilemez. Örneğin, bir düğmenin denetim türü **düğmesi**vardır ve bir açılan kutuda denetim türü **ComboBox**bulunur. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
 
 - **En fazla karakter**
 
-  Yalnızca **değişken türü** ayarlanır [CString](../atl-mfc-shared/reference/cstringt-class.md). En çok denetimi tutabileceği karakter sayısını gösterir.
+  Yalnızca **değişken türü** [CString](../atl-mfc-shared/reference/cstringt-class.md)olarak ayarlandığında kullanılabilir. Denetimin tutabileceğini en çok karakter sayısını gösterir.
 
 - **En düşük değer**
 
-  Değişken türü olduğunda kullanılabilir `BOOL`, `int`, `UINT`, `long`, `DWORD`, `float`, `double`, `BYTE`, `short`, [COLECurrency](../mfc/reference/colecurrency-class.md)veya [CTime](../atl-mfc-shared/reference/ctime-class.md). Bir ölçek veya tarih aralığını kabul edilebilir en düşük değeri gösterir.
+  Yalnızca değişken türü,,,,,,,, `BOOL` **`int`** `UINT` **`long`** `DWORD` **`float`** **`double`** `BYTE` **`short`** , [cotapara birimi](../mfc/reference/colecurrency-class.md) veya [CTime](../atl-mfc-shared/reference/ctime-class.md)olduğunda kullanılabilir. Ölçek veya tarih aralığı için kabul edilebilir en düşük değeri gösterir.
 
 - **En yüksek değer**
 
-  Değişken türü olduğunda kullanılabilir `BOOL`, `int`, `UINT`, `long`, `DWORD`, `float`, `double`, `BYTE`, `short`, `COLECurrency`, veya `CTime`. Bir ölçek veya tarih aralığını kabul edilebilir en yüksek değeri gösterir.
+  Yalnızca değişken türü,,,,,,,, `BOOL` **`int`** `UINT` **`long`** `DWORD` **`float`** **`double`** `BYTE` **`short`** , `COLECurrency` , veya `CTime` olduğunda kullanılabilir. Ölçek veya tarih aralığı için kabul edilebilir en yüksek değeri gösterir.
 
-- **.h dosyası**
+- **. h dosyası**
 
-  ActiveX denetimleri için üye değişkenleri olan bir sarmalayıcı sınıfı gerektirir. Sınıf bildirimi eklemek için üst bilgi dosyası adını ayarlar.
+  ActiveX denetimleri için üye değişkenleri sarmalayıcı sınıfı gerektirir. Sınıf bildirimini eklemek için üst bilgi dosyasının adını ayarlar.
 
-- **.cpp dosyası**
+- **. cpp dosyası**
 
-  ActiveX denetimleri için üye değişkenleri olan bir sarmalayıcı sınıfı gerektirir. Sınıf tanımı eklemek için uygulama dosyasının adını ayarlar.
+  ActiveX denetimleri için üye değişkenleri sarmalayıcı sınıfı gerektirir. Sınıf tanımını eklemek için uygulama dosyasının adını ayarlar.
 
 - **Yorum**
 
-  Üye değişkeni için üst bilgi dosyası bir açıklama sağlar.
+  Üye değişkeni için üstbilgi dosyasında bir açıklama sağlar.
 
 ## <a name="dialog-box-controls-and-variable-types"></a>İletişim kutusu denetimleri ve değişken türleri
 
-Kullanabileceğiniz [üye değişkeni Ekleme Sihirbazı](#add-member-variable-wizard) MFC kullanılarak oluşturulan bir iletişim kutusu denetimine bir üye değişkeni eklemek için. Türü denetim üye değişkeni Ekle iletişim kutusunda görünen seçenekleri belirler.
+MFC kullanılarak oluşturulan bir iletişim kutusu denetimine üye değişkeni eklemek için [üye değişkeni Ekleme Sihirbazı](#add-member-variable-wizard) ' nı kullanabilirsiniz. Üye değişkenini eklediğiniz denetimin türü, iletişim kutusunda görünen seçenekleri belirler.
 
-MFC'de desteklenen tüm iletişim kutusu denetim türleri aşağıdaki tabloda açıklanmıştır ve [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). Kullanılabilir türleri ve değerleri de görüntüler.
+Aşağıdaki tabloda, MFC ve [iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)desteklenen tüm iletişim kutusu denetim türleri açıklanmaktadır. Ayrıca, kullanılabilir türlerini ve değerlerini de görüntüler.
 
-|Denetim|Denetim türü|Denetim değişkeni türü|Değişken türü değeri|En düşük/en yüksek değerleri (yalnızca değer türü)|
+|Denetim|Denetim türü|Denetim değişkeni türü|Değer değişken türü|Min/Max değerleri (yalnızca değer türü)|
 |-------------|------------------|---------------------------|-------------------------|-----------------------------------------|
-|Animasyon denetimi|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|None; yalnızca denetim|Yok|
-|Düğme|DÜĞME|[CButton](../mfc/reference/cbutton-class.md)|None; yalnızca denetim|Yok|
-|Onay kutusu|ONAY|[CButton](../mfc/reference/cbutton-class.md)|`BOOL`|En düşük değer/en yüksek değeri|
-|Birleşik giriş kutusu|COMBOBOX|[CComboBox](../mfc/reference/ccombobox-class.md)|[CString](../atl-mfc-shared/reference/cstringt-class.md)|En fazla karakter|
-|Tarih Saat Seçici denetimi|SysDateTimePick32|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|[CTime](../atl-mfc-shared/reference/ctime-class.md)|En düşük değer/en yüksek değeri|
-|Düzenleme kutusu|DÜZENLE|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, long, UINT, DWORD, double, BYTE, kısa, BOOL, float `COleDateTime`, veya `COleCurrency`|En düşük değer/en yüksek değeri; Bazı destek en fazla karakter|
-|Kısayol tuşu denetimi|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|None; yalnızca denetim|Yok|
-|Liste kutusu|LİSTE KUTUSU|[CListBox](../mfc/reference/clistbox-class.md)|`CString`|En fazla karakter|
-|Liste denetimi|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|None; yalnızca denetim|Yok|
-|Ay takvim denetimi|SysMonthCal32|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|`CTime`|En düşük değer/en yüksek değeri|
-|İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|None; yalnızca denetim|Yok|
+|Animasyon denetimi|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Seçim yalnızca denetim|Yok|
+|Düğme|Bu|[CButton](../mfc/reference/cbutton-class.md)|Seçim yalnızca denetim|Yok|
+|Onay kutusu|DENETLEMEZ|[CButton](../mfc/reference/cbutton-class.md)|`BOOL`|En düşük değer/en büyük değer|
+|Açılır kutu|Öğesı|[CComboBox](../mfc/reference/ccombobox-class.md)|[CString](../atl-mfc-shared/reference/cstringt-class.md)|En fazla karakter|
+|Tarih saat seçici denetimi|SysDateTimePick32|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|[CTime](../atl-mfc-shared/reference/ctime-class.md)|En düşük değer/en büyük değer|
+|Düzenleme kutusu|DÜZENLE|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, Long, DWORD, float, Double, BYTE, Short, BOOL, `COleDateTime` veya`COleCurrency`|En küçük değer/en büyük değer; bazı destek en fazla karakter|
+|Kısayol denetimi|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Liste kutusu|KUTUSUNA|[CListBox](../mfc/reference/clistbox-class.md)|`CString`|En fazla karakter|
+|Liste denetimi|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Aylık Takvim denetimi|SysMonthCal32|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|`CTime`|En düşük değer/en büyük değer|
+|İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Seçim yalnızca denetim|Yok|
 |Zengin düzenleme 2 denetimi|RichEdit20A|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|`CString`|En fazla karakter|
 |Zengin düzenleme denetimi|RICHEDIT|`CRichEditCtrl`|`CString`|En fazla karakter|
-|(Dikey veya yatay kaydırma çubuğu|SCROLLBAR|[CScrollBar](../mfc/reference/cscrollbar-class.md)|`int`|En düşük değer/en yüksek değeri|
-|Kaydırıcı denetimi|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|`int`|En düşük değer/en yüksek değeri|
-|Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|None; yalnızca denetim|Yok|
-|Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|None; yalnızca denetim|Yok|
-|Ağaç denetimi|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|None; yalnızca denetim|Yok|
+|Kaydırma çubuğu (dikey veya yatay|KAYDıRMA çubuğu|[CScrollBar](../mfc/reference/cscrollbar-class.md)|**`int`**|En düşük değer/en büyük değer|
+|Kaydırıcı denetimi|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|**`int`**|En düşük değer/en büyük değer|
+|Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Ağaç denetimi|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|Seçim yalnızca denetim|Yok|

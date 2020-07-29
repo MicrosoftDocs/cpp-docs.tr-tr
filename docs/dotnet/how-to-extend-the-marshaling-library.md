@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-ms.openlocfilehash: ab3b17638e07a54189803c83163db67c5ebf82a5
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 2a3dccd33b7ad2caee64e31e0f79180dda4649be
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988492"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216394"
 ---
 # <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Sıralama Kitaplığını Genişletme
 
 Bu konuda, veri türleri arasında daha fazla dönüştürme sağlamak için sıralama kitaplığının nasıl genişletileceği açıklanmaktadır. Kullanıcılar, kitaplık tarafından şu anda desteklenmeyen veri dönüştürmelerinden oluşan sıralama kitaplığını genişletebilirler.
 
-Sıralama kitaplığını, bir [Marshal_context sınıfı](../dotnet/marshal-context-class.md)ile veya olmadan iki şekilde genişletebilirsiniz. Yeni dönüştürmenin bir bağlam gerektirip gerektirmediğini öğrenmek için konu başlığı altında [ C++ sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md) konusunu gözden geçirin.
+Sıralama kitaplığını, bir [Marshal_context sınıfı](../dotnet/marshal-context-class.md)ile veya olmadan iki şekilde genişletebilirsiniz. Yeni dönüştürmenin bir bağlam gerektirip gerektirmediğini anlamak için [C++ ' ta sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md) konusunu gözden geçirin.
 
 Her iki durumda da, ilk olarak yeni sıralama dönüştürmeleri için bir dosya oluşturursunuz. Standart sıralama kitaplığı dosyalarının bütünlüğünü korumak için bunu yapabilirsiniz. Bir proje için başka bir bilgisayara veya başka bir programcıya bağlantı noktası eklemek istiyorsanız, yeni sıralama dosyasını, projenin geri kalanıyla birlikte kopyalamanız gerekir. Bu şekilde, projeyi alan Kullanıcı yeni dönüştürmeleri alacak şekilde garanti edilir ve herhangi bir kitaplık dosyasını değiştirmek zorunda olmayacaktır.
 
@@ -30,13 +30,13 @@ Her iki durumda da, ilk olarak yeni sıralama dönüştürmeleri için bir dosya
 
    - Windows veri türleri için marshal_windows. h.
 
-   - Standart Kitaplık veri türleri C++ için marshal_cppstd. h.
+   - C++ standart kitaplığı veri türleri için marshal_cppstd. h.
 
    - ATL veri türleri için marshal_atl. h.
 
-1. Dönüştürme işlevini yazmak için bu adımların sonundaki kodu kullanın. Bu kodda, öğesine dönüştürülecek tür, ÖĞESINDEN dönüştürülecek türdür ve `from` dönüştürülecek parametredir.
+1. Dönüştürme işlevini yazmak için bu adımların sonundaki kodu kullanın. Bu kodda, ' ye dönüştürülecek tür, ÖĞESINDEN dönüştürülecek türdür ve `from` dönüştürülecek parametredir.
 
-1. `from` parametresini bir nesnesine dönüştürmek ve dönüştürülen nesneyi döndürmek için, dönüştürme mantığı hakkında yorumu kodla değiştirin.
+1. Parametreyi bir nesnesine dönüştürmek için, dönüştürme mantığı ile ilgili açıklamayı kodla değiştirin `from` ve dönüştürülen nesneyi döndürün.
 
 ```
 namespace msclr {
@@ -59,19 +59,19 @@ namespace msclr {
 
    - Windows veri türleri için marshal_windows. h.
 
-   - Standart Kitaplık veri türleri C++ için marshal_cppstd. h.
+   - C++ standart kitaplığı veri türleri için marshal_cppstd. h.
 
    - ATL veri türleri için marshal_atl. h.
 
-1. Dönüştürme işlevini yazmak için bu adımların sonundaki kodu kullanın. Bu kodda, ' ye dönüştürülecek tür, ÖĞESINDEN dönüştürülecek türdür, `toObject`, sonucun kaydedileceği bir işaretçidir ve `fromObject` dönüştürülecek parametredir.
+1. Dönüştürme işlevini yazmak için bu adımların sonundaki kodu kullanın. Bu kodda, ' ye dönüştürülecek tür, ' den dönüştürülecek türdür, `toObject` sonucun depolanacak bir işaretçidir ve `fromObject` dönüştürülecek parametredir.
 
-1. `toPtr` uygun boş değere başlatmak için kodla başlatma hakkındaki açıklamayı değiştirin. Örneğin, bir işaretçisiyse, `NULL`olarak ayarlayın.
+1. Öğesini uygun boş değere başlatmak için kodla başlatma hakkındaki açıklamayı değiştirin `toPtr` . Örneğin, bir işaretçisiyse, olarak ayarlayın `NULL` .
 
-1. `from` parametresini bir *nesnesine türüne dönüştürmek için,* kodla birlikte dönüştürme mantığı ile ilgili açıklamayı değiştirin. Dönüştürülen bu nesne `toPtr`depolanır.
+1. Parametreyi türüne dönüştürmek için dönüştürme mantığı ile ilgili yorumu değiştirin `from` . *TO* Dönüştürülen bu nesne içinde depolanacak `toPtr` .
 
-1. Dönüştürülmüş nesneniz `toObject` ayarlamak için `toObject` kodla ilgili yorumu değiştirin.
+1. `toObject`Dönüştürülmüş nesneniz olarak ayarlanacak kodla ilgili açıklamayı değiştirin `toObject` .
 
-1. `toPtr`tarafından ayrılan tüm belleği boşaltmak için yerel kaynakları kodla Temizleme hakkındaki açıklamayı değiştirin. `toPtr` `new`kullanarak bellek ayırdıysanız, belleği boşaltmak için `delete` kullanın.
+1. Tarafından ayrılan tüm belleği boşaltmak için yerel kaynakları kodla Temizleme hakkındaki açıklamayı değiştirin `toPtr` . `toPtr`Kullanılarak ayrılan bellek **`new`** , **`delete`** belleği serbest bırakmak için kullanın.
 
 ```
 namespace msclr {
@@ -156,7 +156,7 @@ int main() {
 }
 ```
 
-Önceki örnekte `marshal_as` işlevi, dönüştürülmüş verilere bir tanıtıcı döndürür. Bu, verilerin ek bir kopyasının oluşturulmasını engellemek için yapılır. Değişkenin doğrudan döndürülmesi, bununla ilişkili gereksiz bir performans maliyetine sahip olur.
+Önceki örnekte, `marshal_as` işlevi dönüştürülen verilere bir tanıtıcı döndürür. Bu, verilerin ek bir kopyasının oluşturulmasını engellemek için yapılır. Değişkenin doğrudan döndürülmesi, bununla ilişkili gereksiz bir performans maliyetine sahip olur.
 
 ```Output
 Managed name: Jeff Smith
@@ -268,4 +268,4 @@ Native zip code: 98111
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)
+[C++ ' da sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - data binding [C++], operator precedence
 - operators [C++], precedence
 ms.assetid: 201f7864-0c51-4c55-9d6f-39c5d013bcb0
-ms.openlocfilehash: 327a5a5344f17f1d84e0cebc1371d56426c95deb
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: c1a5feb4552dd43b26263ebd3080e18adef6cb32
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861070"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211742"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve değerlendirme sırası
 
@@ -24,11 +24,11 @@ Aşağıdaki tabloda, C işleçlerinin öncelik ve ilişkilendirilebilirliği (i
 
 | Sembol <sup>1</sup> | İşlem türü | İlişkilendirilebilirlik |
 |-------------|-----------------------|-------------------|
-| `[` `]` `(` `)` `.` `->`<br/>`++``--` (sonek) | İfadeler | Soldan sağa |
-| **sizeof** `&` `*` `+` `-` `~` `!`<br/>`++``--` (ön ek) | Li | Sağdan sola |
-| *tür atamaları* | Li | Sağdan sola |
-| `*` `/` `%` | Çarpma | Soldan sağa |
-| `+` `-` | Msal | Soldan sağa |
+| `[` `]` `(` `)` `.` `->`<br/>`++``--`(sonek) | Expression | Soldan sağa |
+| **`sizeof`** `&` `*` `+` `-` `~` `!`<br/>`++``--`(ön ek) | Birli | Sağdan sola |
+| *tür atamaları* | Birli | Sağdan sola |
+| `*` `/` `%` | Çarpımsal | Soldan sağa |
+| `+` `-` | Toplamsal | Soldan sağa |
 | `<<` `>>` | Bit düzeyinde kaydırma | Soldan sağa |
 | `<` `>` `<=` `>=` | İlişkisel | Soldan sağa |
 | `==` `!=` | Eşitlik | Soldan sağa |
@@ -45,9 +45,9 @@ Aşağıdaki tabloda, C işleçlerinin öncelik ve ilişkilendirilebilirliği (i
 
 <sup>2</sup> tüm basit ve bileşik atama işleçleri eşit önceliğe sahiptir.
 
-Bir ifade eşit önceliğe sahip birkaç işleç içerebilir. Böyle birkaç işleç bir ifadede aynı düzeyde göründüğünde, değerlendirme işlecin ilişkilendirilebilirliğine göre sağdan sola veya soldan sağa devam eder. Değerlendirmenin yönü, aynı düzeyde birden fazla çarpma`*`(), toplama (`+`) veya ikili bit düzeyinde (`&`, `|`, veya `^`) işleç içeren ifadelerin sonuçlarını etkilemez. İşlemlerin sırası dil tarafından tanımlanmaz. Derleyici, tutarlı bir sonuç sağladığı sürece bu tür ifadeleri herhangi bir sırada değerlendirebilir.
+Bir ifade eşit önceliğe sahip birkaç işleç içerebilir. Böyle birkaç işleç bir ifadede aynı düzeyde göründüğünde, değerlendirme işlecin ilişkilendirilebilirliğine göre sağdan sola veya soldan sağa devam eder. Değerlendirmenin yönü, aynı düzeyde birden fazla çarpma ( `*` ), toplama ( `+` ) veya ikili bit düzeyinde ( `&` , `|` , veya `^` ) işleç içeren ifadelerin sonuçlarını etkilemez. İşlemlerin sırası dil tarafından tanımlanmaz. Derleyici, tutarlı bir sonuç sağladığı sürece bu tür ifadeleri herhangi bir sırada değerlendirebilir.
 
-Yalnızca`,`sıralı değerlendirme (), MANTıKSAL-ve (`&&`), mantıksal OR (`||`), koşullu ifade (`? :`) ve işlev çağrısı işleçleri dizi noktaları oluşturur ve bu nedenle kendi işlenenleri için belirli bir değerlendirme sırası garantisi. İşlev çağrısı işleci, işlev tanımlayıcısının arkasından gelen bir parantezler kümesidir. Sıralı değerlendirme operatörü (`,`), İşlenenlerini soldan sağa değerlendirmek için garanti edilir. (Bir işlev çağrısındaki virgül işleci, sıralı değerlendirme işleciyle aynı değil ve böyle bir garanti sağlamıyor.) Daha fazla bilgi için bkz. [dizi noktaları](c-sequence-points.md).
+Yalnızca sıralı değerlendirme ( `,` ), mantıksal-ve ( `&&` ), mantıksal OR () `||` , koşullu ifade ( `? :` ) ve işlev çağrısı işleçleri dizi noktaları oluşturur ve bu nedenle kendi işlenenleri için belirli bir değerlendirme sırası garantisi. İşlev çağrısı işleci, işlev tanımlayıcısının arkasından gelen bir parantezler kümesidir. Sıralı değerlendirme operatörü (), `,` İşlenenlerini soldan sağa değerlendirmek için garanti edilir. (Bir işlev çağrısındaki virgül işleci, sıralı değerlendirme işleciyle aynı değil ve böyle bir garanti sağlamıyor.) Daha fazla bilgi için bkz. [dizi noktaları](c-sequence-points.md).
 
 Mantıksal işleçler de işlenenlerinin soldan sağa değerlendirilmesini garanti eder. Bununla birlikte, ifadenin sonucunu belirlemek için gereken en az sayıda işleneni değerlendirirler. Buna "kısa devre" değerlendirmesi adı verilir. Bu nedenle, ifadenin bazı işlenenleri değerlendirilmeyebilir. Örneğin, ifadede
 
@@ -59,7 +59,7 @@ ikinci işlenen `y++`, yalnızca `x` true (sıfırdan farklı) olduğunda değer
 
 Aşağıdaki listede, derleyicinin bazı örnek ifadeleri otomatik olarak nasıl bağladığı gösterilmektedir:
 
-| İfadeler | Otomatik Bağlama |
+| Expression | Otomatik Bağlama |
 |----------------|-----------------------|
 | `a & b || c` | `(a & b) || c` |
 | `a = b || c` | `a = (b || c)` |
@@ -69,7 +69,7 @@ Aşağıdaki listede, derleyicinin bazı örnek ifadeleri otomatik olarak nasıl
 
 İkinci ifadede, mantıksal OR işleci (`||`) basit atama işlecine (`=`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `b || c` atamada sağ işlenen olarak gruplandırılır. `a`'ya atanan değerin 0 veya 1 olduğuna dikkat edin.
 
-Üçüncü ifade, beklenmedik bir sonuç oluşturabilecek doğru bir şekilde biçimlendirilmiş bir ifadeyi gösterir. Mantıksal AND işleci (`&&`), mantıksal OR işlecine (`||`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `q && r` bir işlenen olarak gruplandırılır. Mantıksal işleçler işlenenlerin soldan sağa değerlendirilmesini garanti altına aldığı için, daha `q && r` önce `s--`değerlendirilir. Ancak, sıfır `q && r` dışında bir değer `s--` olarak değerlendirilirse, değerlendirilmez ve `s` azaltılır. `s` Azaltılanmayacaksa, `s--` programınızda bir sorun oluşmasına neden olur, ifadenin ilk işleneni olarak görünmelidir veya `s` ayrı bir işlemde küçültülüyor olmalıdır.
+Üçüncü ifade, beklenmedik bir sonuç oluşturabilecek doğru bir şekilde biçimlendirilmiş bir ifadeyi gösterir. Mantıksal AND işleci (`&&`), mantıksal OR işlecine (`||`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `q && r` bir işlenen olarak gruplandırılır. Mantıksal işleçler işlenenlerin soldan sağa değerlendirilmesini garanti altına aldığı için, daha `q && r` önce değerlendirilir `s--` . Ancak, `q && r` sıfır dışında bir değer olarak değerlendirilirse, `s--` değerlendirilmez ve `s` azaltılır. `s`Azaltılanmayacaksa, programınızda bir sorun oluşmasına neden olur, `s--` ifadenin ilk işleneni olarak görünmelidir veya `s` ayrı bir işlemde küçültülüyor olmalıdır.
 
 Aşağıdaki ifade geçersizdir ve derleme zamanında bir tanılama iletisi oluşturur:
 

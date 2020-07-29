@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2084
 ms.assetid: 990b107f-3721-4851-ae8b-4b69a8c149ed
-ms.openlocfilehash: 881ae051b2779fe674b31b64a7cbe7be7cf63705
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f217e0b94e27c0f85879e80b3ae887cb4f76f486
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757897"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216368"
 ---
 # <a name="compiler-error-c2084"></a>Derleyici hatası C2084
 
@@ -23,7 +23,7 @@ Visual Studio 2002 öncesi,
 
 - Derleyici, aynı gerçek türe çözümlenen birden çok şablon uzmanlığını kabul eder, ancak ek tanımlar hiçbir şekilde kullanılamaz. Derleyici artık bu birden çok tanımı algılar.
 
-- `__int32` ve `int` ayrı türler olarak değerlendirildi. Derleyici artık `__int32` `int`için bir eş anlamlı olarak değerlendirir. Bu, bir işlev hem `__int32` hem de `int` üzerinde aşırı yüklenmişse ve bir hata veriyorsa derleyicinin birden çok tanımı algıladığı anlamına gelir.
+- **`__int32`** ve **`int`** ayrı türler olarak kabul edildi. Derleyici artık **`__int32`** için bir eş anlamlı olarak davranır **`int`** . Bu, her ikisinde de bir işlev aşırı yüklenmişse **`__int32`** **`int`** ve bir hata veriyorsa derleyicinin birden çok tanımı algıladığı anlamına gelir.
 
 ## <a name="example"></a>Örnek
 

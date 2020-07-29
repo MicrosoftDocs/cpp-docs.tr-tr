@@ -1,22 +1,22 @@
 ---
-title: Derleyici Hatası C2696
+title: Derleyici hatası C2696
 ms.date: 11/04/2016
 f1_keywords:
 - C2696
 helpviewer_keywords:
 - C2696
 ms.assetid: 6c6eb7df-1230-4346-9a73-abf14c20785d
-ms.openlocfilehash: 340a5d0596160b6c9c7bcfc78aed812f8c5f3fa3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f6af217dbcd871ac4edd1852042144802388545b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62367609"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216095"
 ---
-# <a name="compiler-error-c2696"></a>Derleyici Hatası C2696
+# <a name="compiler-error-c2696"></a>Derleyici hatası C2696
 
-Bir yönetilen türün 'type' geçici bir nesne oluşturulamıyor
+Yönetilen ' Type ' türünde geçici bir nesne oluşturulamıyor
 
-Başvurular `const` yönetilmeyen bir programda oluşturucusunu çağırın ve yığın üzerinde geçici bir nesne oluşturmak derleyicinin neden olur. Ancak, yönetilen bir sınıf yığında hiçbir zaman oluşturulabilir.
+**`const`** Yönetilmeyen bir programda yapılan başvurular derleyicinin oluşturucuyu çağırave yığında geçici bir nesne oluşturmasına neden olur. Ancak, yönetilen bir sınıf yığında hiçbir şekilde oluşturulamaz.
 
-C2696 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.
+C2696 yalnızca eski derleyici seçeneği **/clr: oldSyntax**kullanılarak erişilebilir.

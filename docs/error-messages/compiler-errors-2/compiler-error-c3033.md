@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3033
 ms.assetid: 8628b6bb-a650-4ed2-af13-57acd2f7ddbb
-ms.openlocfilehash: 5d17f10e665a2c0ac86a10d90903e890b3c53386
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: df3e3f8472d1c274049e686de93488d556ff6f1f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746402"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232020"
 ---
 # <a name="compiler-error-c3033"></a>Derleyici hatası C3033
 
 ' var ': ' Clause ' yan tümcesindeki değişken const nitelenmiş türde olamaz
 
-Belirli bir yan tümceciklere geçirilen değerler `const` değişken olamaz.
+Belirli bir yan tümceciklere geçirilen değerler **`const`** değişken olamaz.
 
 Aşağıdaki örnek C3033 oluşturur:
 

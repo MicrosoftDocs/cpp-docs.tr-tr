@@ -2,12 +2,12 @@
 title: Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: e42762d4b47931f21536146cd0146b2749c52cf9
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: fcfa8e8ea334cf7c2486513ae162b04014e7f24b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404827"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231643"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 
@@ -88,7 +88,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### <a name="zcwchar_t-wchar_t-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
-(Microsoft Visual C++ 6,0 ve önceki sürümlerde **wchar_t** yerleşik bir tür olarak uygulanmadı, ancak wchar. h 'de işaretsiz Short için typedef olarak bildirildi.) C++ standardı, **wchar_t** yerleşik bir tür olmasını gerektirir. TypeDef sürümünün kullanılması taşınabilirlik sorunlarına neden olabilir. Visual Studio 'nun önceki sürümlerinden yükseltme yaparsanız ve kod, bir **wchar_t** örtük olarak **işaretsiz bir Short**'a dönüştürmeye çalıştığı için derleyici hatası C2664 ile karşılaşırsanız, bu kodu ayarlama yerine hatayı giderecek şekilde değiştirmenizi öneririz `/Zc:wchar_t-` . Daha fazla bilgi için bkz. [/Zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+(Microsoft Visual C++ 6,0 ve önceki sürümlerde **`wchar_t`** yerleşik bir tür olarak uygulanmadı, ancak wchar. h 'de işaretsiz Short için typedef olarak bildirildi.) C++ standardı, **`wchar_t`** yerleşik bir tür olmasını gerektirir. TypeDef sürümünün kullanılması taşınabilirlik sorunlarına neden olabilir. Visual Studio 'nun önceki sürümlerinden yükseltme yaparsanız ve kod örtülü olarak ' a dönüştürmeye çalıştığı için derleyici hatası C2664 **`wchar_t`** **`unsigned short`** ' ı yaşarsanız, bu kodu değiştirmek yerine hatayı giderecek şekilde değiştirmenizi öneririz `/Zc:wchar_t-` . Daha fazla bilgi için bkz. [/Zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>Bağlayıcı seçenekleri/NODEFAULTLIB,/ENTRY ve/NOENTRY ile yükseltiliyor
 

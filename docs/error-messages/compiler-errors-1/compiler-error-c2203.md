@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2203
 ms.assetid: 5497df43-86f6-43d5-b6cb-723c4c589b10
-ms.openlocfilehash: db36afa1376a0b64b3e110acd1722d3e0f2af449
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4a078cd4c64bbb8d301aa3e4817272d23e3acbb4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758963"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216316"
 ---
 # <a name="compiler-error-c2203"></a>Derleyici hatası C2203
 
 delete işleci bir dizi için sınırları belirtemez
 
-**/Za** (ANSI) seçeneğiyle `delete` işleci, diziyi veya dizinin belirli üyelerini değil, tüm diziyi silebilir.
+**/Za** (ANSI) seçeneğiyle, **`delete`** işleci bir dizinin tamamını veya dizi parçalarını veya belirli üyelerini silebilir.
 
 Aşağıdaki örnek C2203 oluşturur:
 

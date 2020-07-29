@@ -6,16 +6,16 @@ helpviewer_keywords:
 - decrement operators, syntax
 - decrement operators
 ms.assetid: 9a441bb9-d94a-4b6a-9db2-0d0d76bc480d
-ms.openlocfilehash: 041c44829b8a267ca053dc85da0333e86db6b7b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dbbace9780ab96891ceb85f885335e42c577fda1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325500"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211729"
 ---
 # <a name="prefix-increment-and-decrement-operators"></a>Önek Arttırma ve Azaltma İşleçleri
 
-Birli İşleçler (`++` ve **--**), artırma veya azaltma işleçleri işlenenden önce görüntülendiğinde "önek" artışı veya azaltma işleçleri olarak adlandırılır. Sonek artışı ve azaltma, ön ek artışı ve azalma kıyasla daha yüksek önceliğe sahiptir. İşlenen integral, kayan veya işaretçi türüne sahip olmalı ve değiştirilebilir bir l-Value ifadesi ( **const** özniteliği olmayan bir ifade) olmalıdır. Sonuç bir l değeridir.
+Birli İşleçler ( `++` ve **--** ), artırma veya azaltma işleçleri işlenenden önce görüntülendiğinde "önek" artışı veya azaltma işleçleri olarak adlandırılır. Sonek artışı ve azaltma, ön ek artışı ve azalma kıyasla daha yüksek önceliğe sahiptir. İşlenen integral, kayan veya işaretçi türüne sahip olmalı ve değiştirilebilir bir l-Value ifadesi (özniteliği olmayan bir ifade **`const`** ) olmalıdır. Sonuç bir l değeridir.
 
 İşleç işlenenden önce göründüğünde, işlenen artırılır veya azaltılır ve yeni değeri ifadenin sonucudur.
 
@@ -30,8 +30,8 @@ if( line[--i] != '\n' )
     return;
 ```
 
-Bu örnekte, bir alt simge `i` olarak kullanılmadan önce değişken azaltılır `line`.
+Bu örnekte, `i` bir alt simge olarak kullanılmadan önce değişken azaltılır `line` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Birli İşleçler](../c-language/c-unary-operators.md)
+[C birli Işleçler](../c-language/c-unary-operators.md)

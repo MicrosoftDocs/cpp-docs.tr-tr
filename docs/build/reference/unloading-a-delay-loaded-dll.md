@@ -5,18 +5,18 @@ helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
-ms.openlocfilehash: 284a9cb9268c8c794379c6a5468b0f2b9092b7d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1895bf12cb195ef7b4555d400badf112d377547b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317464"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211924"
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Kaldırma
 
-Varsayılan olarak sağlanan gecikme yük yardımcı gecikme yükü tanımlayıcıları pUnloadIAT alanında bir işaretçi ve orijinal içeri aktarma adres tablosunda (IAT) bir kopyasını olup olmadığını denetler. Bu durumda, bir işaretçi alma gecikme tanımlayıcı listesinde kaydeder. Bu, söz konusu DLL'i açıkça kaldırma desteklemek için ad tarafından DLL bulmak yardımcı işlevini sağlar.
+Varsayılan olarak sağlanan Gecikmeli Yükleme Yardımcısı, gecikme yükü tanımlayıcılarının bir işaretçiye sahip olup olmadığını ve pUnloadIAT alanında orijinal içeri aktarma adres tablosunun (ıAT) bir kopyasını olup olmadığını denetler. Bu durumda, bir listedeki işaretçiyi içeri aktarma gecikmesi tanımlayıcısına kaydeder. Bu, yardımcı işlevin dll 'yi açıkça kaldırmayı desteklemek için DLL adını adıyla bulmasını sağlar.
 
-Gecikmeli yüklenen DLL'i açıkça kaldırma işlevlerini ve ilişkili yapıları şunlardır:
+Bir Gecikmeli yüklenen DLL 'yi açıkça kaldırma ile ilgili yapılar ve işlevler aşağıda verilmiştir:
 
 ```cpp
 //
@@ -43,17 +43,17 @@ ExternC
 PUnloadInfo __puiHead;
 ```
 
-UnloadInfo yapısını kullanan bir C++ sınıfı kullanılarak uygulanan **LocalAlloc** ve **LocalFree** uygulamalarını, işleci olarak **yeni** ve işleci  **silme** sırasıyla. Bu seçenekler, listenin başındaki __puiHead kullanarak bir standart bağlantılı listesinde saklanır.
+UnloadInfo yapısı, konum operatörü ve işleci olarak **LocalAlloc** ve **LocalFree** uygulamalarını kullanan bir C++ sınıfı kullanılarak uygulanır **`new`** **`delete`** . Bu seçenekler, listenin başı olarak __puiHead kullanılarak standart bağlantılı bir listede tutulur.
 
-Adı bulmak arama __FUnloadDelayLoadedDLL deneyecek (tam bir eşleşme gereklidir) yüklü DLL'leri listesinde sağlayın. PUnloadIAT içinde IAT kopyası bulundu, kopyalanıp kopyalanmadığını dönüştürücü işaretçileri geri yüklemek için çalışan IAT üst, kitaplığı ile serbest **FreeLibrary**, eşleşen **UnloadInfo** kayıt bağlantısız Liste silindi ve TRUE olarak döndürülür.
+__FUnloadDelayLoadedDLL çağırmak, yüklenen dll 'Ler listesinde sağladığınız adı bulmayı dener (tam eşleşme gerekir). Bulunursa, ıAT 'ın pUnloadIAT içindeki kopyası, dönüştürücü işaretçilerini geri yüklemek için çalışan ıAT 'ın üzerine kopyalanır, kitaplık **FreeLibrary**ile serbest bırakılır, eşleşen **UnloadInfo** kaydının LISTEDE bağlantısı kaldırılır ve doğru döndürülür.
 
-Bağımsız değişken işlev __FUnloadDelayLoadedDLL2 büyük/küçük harfe duyarlıdır. Örneğin, şunu belirtmeniz gerekir:
+İşlevin __FUnloadDelayLoadedDLL2 bağımsız değişkeni büyük/küçük harfe duyarlıdır. Örneğin şunu belirtmeniz gerekir:
 
 ```cpp
 __FUnloadDelayLoadedDLL2("user32.DLL");
 ```
 
-ve değil:
+değil:
 
 ```cpp
 __FUnloadDelayLoadedDLL2("User32.DLL");.
@@ -61,4 +61,4 @@ __FUnloadDelayLoadedDLL2("User32.DLL");.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı İşlevini Anlama](understanding-the-helper-function.md)
+[Yardımcı Işlevini anlama](understanding-the-helper-function.md)

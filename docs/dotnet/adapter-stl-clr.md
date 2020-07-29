@@ -48,16 +48,16 @@ helpviewer_keywords:
 - operator= member [STL/CLR]
 - range_adapter member [STL/CLR]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
-ms.openlocfilehash: bdaf5e0e8e4d9620e7a55dfff84f271f0059faf3
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7730b5a8dbb8c92d85b4c8c5732657d28bf5b229
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444025"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216446"
 ---
 # <a name="adapter-stlclr"></a>bağdaştırıcı (STL/CLR)
 
-STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfı (`collection_adapter` ve `range_adapter`) ve şablon işlevi `make_collection`belirtir.
+STL/CLR üst bilgisi `<cliext/adapter>` iki şablon sınıfı ( `collection_adapter` ve `range_adapter` ) ve şablon işlevini belirtir `make_collection` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -67,7 +67,7 @@ STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfı (`collection_adapter`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<clienext/Adapter >
+**Üst bilgi:**\<cliext/adapter>
 
 **Ad alanı:** cliext
 
@@ -84,11 +84,11 @@ STL/CLR üstbilgi `<cliext/adapter>` iki şablon sınıfı (`collection_adapter`
 
 ## <a name="members"></a>Üyeler
 
-## <a name="collection_adapter"></a>collection_adapter (STL/CLR)
+## <a name="collection_adapter-stlclr"></a><a name="collection_adapter"></a>collection_adapter (STL/CLR)
 
-Bir .NET koleksiyonunu STL/CLR kapsayıcısı olarak kullanılmak üzere sarmalanmış olarak kaydırır. `collection_adapter`, basit bir STL/CLR kapsayıcı nesnesini tanımlayan bir şablon sınıfıdır. Bir temel sınıf kitaplığı (BCL) arabirimini sarmalanmış ve denetimli sırayı işlemek için kullandığınız bir yineleyici çifti döndürüyor.
+Bir .NET koleksiyonunu STL/CLR kapsayıcısı olarak kullanılmak üzere sarmalanmış olarak kaydırır. `collection_adapter`, Basit BIR STL/CLR kapsayıcı nesnesini tanımlayan bir şablon sınıfıdır. Bir temel sınıf kitaplığı (BCL) arabirimini sarmalanmış ve denetimli sırayı işlemek için kullandığınız bir yineleyici çifti döndürüyor.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Coll>
@@ -128,20 +128,20 @@ Sarmalanmış koleksiyonun türü.
 
 ### <a name="specializations"></a>Uzmanlıklar
 
-|Uzmanlaşma|Açıklama|
+|Özelleştirmesine|Açıklama|
 |--------------------|-----------------|
 |IEnumerable|Öğeler aracılığıyla sıralar.|
 |ICollection|Bir öğe grubunu tutar.|
 |IList|Sıralı bir öğe grubunu tutar.|
 |IDictionary|{Key, value} çiftinin bir kümesini saklayın.|
-|IEnumerable\<değeri >|Yazılı öğeler aracılığıyla sıralar.|
-|ICollection\<değeri >|Bir tür öğe grubunu tutar.|
-|IList\<değer >|Yazılı öğelerin sıralı bir grubunu tutar.|
-|IDictionary\<değer >|Belirlenmiş bir {Key, value} çifti kümesi tutar.|
+|IEnumerable\<Value>|Yazılı öğeler aracılığıyla sıralar.|
+|ICollection\<Value>|Bir tür öğe grubunu tutar.|
+|IList\<Value>|Yazılı öğelerin sıralı bir grubunu tutar.|
+|IDictionary\<Value>|Belirlenmiş bir {Key, value} çifti kümesi tutar.|
 
 ### <a name="members"></a>Üyeler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[collection_adapter::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
 |[collection_adapter::iterator (STL/CLR)](#iterator)|Denetlenen dizi için bir yineleyici türü.|
@@ -166,9 +166,9 @@ Sarmalanmış koleksiyonun türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon sınıfını, bir BCL kapsayıcısını STL/CLR kapsayıcısı olarak işlemek için kullanırsınız. `collection_adapter` bir BCL arabirimine bir tanıtıcı depolar ve bu da bir dizi öğeyi denetler. `collection_adapter` nesne `X`, bir dizi giriş yineleyiciler `X.begin()` ve öğeleri sırayla ziyaret etmek için kullandığınız `X.end()`. Bazı Uzmanlıklar, denetlenen sıranın uzunluğunu belirlemede `X.size()` yazmanızı de sağlar.
+Bu şablon sınıfını, bir BCL kapsayıcısını STL/CLR kapsayıcısı olarak işlemek için kullanırsınız. , Bir `collection_adapter` BCL arabirimine bir tanıtıcı depolar, bu da bir dizi öğeyi denetler. Bir `collection_adapter` nesne `X` , giriş yineleyiciler çifti döndürür `X.begin()` ve `X.end()` öğeleri sırayla ziyaret etmek için kullanılır. Bazı uzmanlık, `X.size()` denetlenen sıranın uzunluğunu belirleyebilmek için yazmanızı de sağlar.
 
-## <a name="base"></a>collection_adapter:: Base (STL/CLR)
+## <a name="collection_adapterbase-stlclr"></a><a name="base"></a>collection_adapter:: Base (STL/CLR)
 
 Sarmalanan BCL arabirimini belirler.
 
@@ -212,7 +212,7 @@ x x x x x x
 base() same = True
 ```
 
-## <a name="begin"></a>collection_adapter:: Begin (STL/CLR)
+## <a name="collection_adapterbegin-stlclr"></a><a name="begin"></a>collection_adapter:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -263,11 +263,11 @@ a b c
 *++begin() = b
 ```
 
-## <a name="collection_adapter_collection_adapter"></a>collection_adapter:: collection_adapter (STL/CLR)
+## <a name="collection_adaptercollection_adapter-stlclr"></a><a name="collection_adapter_collection_adapter"></a>collection_adapter:: collection_adapter (STL/CLR)
 
 Bir bağdaştırıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 collection_adapter();
@@ -290,25 +290,25 @@ Oluşturucu:
 
 `collection_adapter();`
 
-saklı tanıtıcıyı `nullptr`başlatır.
+saklı tanıtıcıyı ile başlatır **`nullptr`** .
 
 Oluşturucu:
 
 `collection_adapter(collection_adapter<Coll>% right);`
 
-saklı tanıtıcıyı `right.`[collection_adapter:: Base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`başlatır.
+saklı tanıtıcıyı `right.` [collection_adapter: Base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)ile başlatır `()` .
 
 Oluşturucu:
 
 `collection_adapter(collection_adapter<Coll>^ right);`
 
-saklı tanıtıcıyı `right->`[collection_adapter:: Base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)`()`başlatır.
+saklı tanıtıcıyı `right->` [collection_adapter: Base (STL/CLR)](../dotnet/collection-adapter-base-stl-clr.md)ile başlatır `()` .
 
 Oluşturucu:
 
 `collection_adapter(Coll^ collection);`
 
-saklı tanıtıcıyı `collection`başlatır.
+saklı tanıtıcıyı ile başlatır `collection` .
 
 ### <a name="example"></a>Örnek
 
@@ -357,7 +357,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="difference_type"></a>collection_adapter::d ifference_type (STL/CLR)
+## <a name="collection_adapterdifference_type-stlclr"></a><a name="difference_type"></a>collection_adapter::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -409,7 +409,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="end"></a>collection_adapter:: End (STL/CLR)
+## <a name="collection_adapterend-stlclr"></a><a name="end"></a>collection_adapter:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -454,7 +454,7 @@ int main()
 a b c
 ```
 
-## <a name="iterator"></a>collection_adapter:: yineleyici (STL/CLR)
+## <a name="collection_adapteriterator-stlclr"></a><a name="iterator"></a>collection_adapter:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -466,7 +466,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen dizi için bir giriş yineleyicisi olarak kullanılabilecek belirtilmemiş türde `T1` bir nesne tanımlar.
+Tür, `T1` Denetlenen dizi için bir giriş Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -499,7 +499,7 @@ int main()
 a b c
 ```
 
-## <a name="key_type"></a>collection_adapter:: key_type (STL/CLR)
+## <a name="collection_adapterkey_type-stlclr"></a><a name="key_type"></a>collection_adapter:: key_type (STL/CLR)
 
 Sözlük anahtarının türü.
 
@@ -511,7 +511,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `IDictionary` veya `IDictionary<Value>`için bir özelleştirmede `Key`şablon parametresi için bir eş anlamlı. Aksi takdirde, tanımlı değildir.
+Tür, veya için bir özelleştirmede şablon parametresi için bir eş anlamlı olur `Key` `IDictionary` `IDictionary<Value>` ; Aksi takdirde tanımlı değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -549,7 +549,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapped_type"></a>collection_adapter:: mapped_type (STL/CLR)
+## <a name="collection_adaptermapped_type-stlclr"></a><a name="mapped_type"></a>collection_adapter:: mapped_type (STL/CLR)
 
 Sözlük değerinin türü.
 
@@ -561,7 +561,7 @@ typedef Value mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `IDictionary` veya `IDictionary<Value>`için bir özelleştirmede `Value`şablon parametresi için bir eş anlamlı. Aksi takdirde, tanımlı değildir.
+Tür, veya için bir özelleştirmede şablon parametresi için bir eş anlamlı olur `Value` `IDictionary` `IDictionary<Value>` ; Aksi takdirde tanımlı değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -599,11 +599,11 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="op_eq"></a>collection_adapter:: operator = (STL/CLR)
+## <a name="collection_adapteroperator-stlclr"></a><a name="op_eq"></a>collection_adapter:: operator = (STL/CLR)
 
 Saklı BCL tanıtıcısının yerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 collection_adapter<Coll>% operator=(collection_adapter<Coll>% right);
@@ -616,7 +616,7 @@ Kopyalanacak bağdaştırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Saklı BCL tanıtıcısını, depolanan BCL tanıtıcısının bir kopyasıyla değiştirmek için bu alanı *kullanabilirsiniz.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Saklı BCL tanıtıcısını, depolanan BCL tanıtıcısının bir kopyasıyla değiştirmek için bu alanı *kullanabilirsiniz.*
 
 ### <a name="example"></a>Örnek
 
@@ -656,7 +656,7 @@ a b c
 a b c
 ```
 
-## <a name="reference"></a>collection_adapter:: Reference (STL/CLR)
+## <a name="collection_adapterreference-stlclr"></a><a name="reference"></a>collection_adapter:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -704,7 +704,7 @@ int main()
 a b c
 ```
 
-## <a name="size"></a>collection_adapter:: size (STL/CLR)
+## <a name="collection_adaptersize-stlclr"></a><a name="size"></a>collection_adapter:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -716,7 +716,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. `IEnumerable` veya `IEnumerable<Value>`için bir özelleştirmede tanımlı değildir.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Veya için bir özelleştirmede tanımlı değildir `IEnumerable` `IEnumerable<Value>` .
 
 ### <a name="example"></a>Örnek
 
@@ -747,7 +747,7 @@ x x x x x x
 size() = 6
 ```
 
-## <a name="size_type"></a>collection_adapter:: size_type (STL/CLR)
+## <a name="collection_adaptersize_type-stlclr"></a><a name="size_type"></a>collection_adapter:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -792,11 +792,11 @@ x x x x x x
 size() = 6
 ```
 
-## <a name="swap"></a>collection_adapter:: swap (STL/CLR)
+## <a name="collection_adapterswap-stlclr"></a><a name="swap"></a>collection_adapter:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void swap(collection_adapter<Coll>% right);
@@ -809,7 +809,7 @@ void swap(collection_adapter<Coll>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `*this` ve *sağ*ARASıNDAKI saklı BCL tutamaçlarını değiştirir.
+Üye işlevi, ve sağ arasındaki saklı BCL tutamaçlarını **`*this`** değiştirir *right*.
 
 ### <a name="example"></a>Örnek
 
@@ -861,7 +861,7 @@ x x x x x
 a b c
 ```
 
-## <a name="value_type"></a>collection_adapter:: value_type (STL/CLR)
+## <a name="collection_adaptervalue_type-stlclr"></a><a name="value_type"></a>collection_adapter:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -873,7 +873,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, özelleştirme içinde varsa, şablon parametre *değeri*için bir eş anlamlıdır; Aksi takdirde `System::Object^`için bir eş anlamlı olur.
+Tür, özelleştirme içinde varsa, şablon parametre *değeri*için bir eş anlamlıdır; Aksi takdirde, için bir eş anlamlı olur `System::Object^` .
 
 ### <a name="example"></a>Örnek
 
@@ -910,11 +910,11 @@ int main()
 a b c
 ```
 
-## <a name="make_collection"></a>make_collection (STL/CLR)
+## <a name="make_collection-stlclr"></a><a name="make_collection"></a>make_collection (STL/CLR)
 
-Yineleyici çiftinden bir `range_adapter` oluşturun.
+Bir `range_adapter` Yineleyici çiftiyle oluşturun.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Iter>
@@ -934,7 +934,7 @@ Sarılacağı ikinci Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `gcnew range_adapter<Iter>(first, last)`döndürür. Yineleyicilerin çiftinden bir `range_adapter<Iter>` nesnesi oluşturmak için kullanırsınız.
+Şablon işlevi döndürür `gcnew range_adapter<Iter>(first, last)` . `range_adapter<Iter>`Yineleyicilerin çiftinden bir nesne oluşturmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -988,11 +988,11 @@ SyncRoot not nullptr = True
 | a b c |
 ```
 
-## <a name="range_adapter"></a>range_adapter (STL/CLR)
+## <a name="range_adapter-stlclr"></a><a name="range_adapter"></a>range_adapter (STL/CLR)
 
 Birkaç temel sınıf kitaplığı (BCL) arabirimini uygulamak için kullanılan yineleyiciler çiftini sarmalayan bir şablon sınıfı. Bir STL/CLR aralığını bir BCL koleksiyonu gibi işlemek için range_adapter kullanırsınız.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Iter>
@@ -1033,11 +1033,11 @@ Sarmalanan yineleyiciler ile ilişkili tür.
 
 Range_adapter bir çift yineleyiciler depolar, bu da bir öğe dizisini sınırlandıran bir çiftdir. Nesnesi, öğeleri sırayla yinelemenize olanak sağlayan dört BCL arabirimini uygular. Bu şablon sınıfını, BCL kapsayıcılarına benzer STL/CLR aralıklarını işlemek için kullanırsınız.
 
-## <a name="range_adapter_op_eq"></a>range_adapter:: operator = (STL/CLR)
+## <a name="range_adapteroperator-stlclr"></a><a name="range_adapter_op_eq"></a>range_adapter:: operator = (STL/CLR)
 
 Saklı Yineleyici çiftinin yerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 range_adapter<Iter>% operator=(range_adapter<Iter>% right);
@@ -1050,7 +1050,7 @@ Kopyalanacak bağdaştırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Saklı Yineleyici çiftinin kendisini, saklı Yineleyici çiftinin bir kopyasıyla değiştirmek için onu *kullanın.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Saklı Yineleyici çiftinin kendisini, saklı Yineleyici çiftinin bir kopyasıyla değiştirmek için onu *kullanın.*
 
 ### <a name="example"></a>Örnek
 
@@ -1090,11 +1090,11 @@ a b c
 a b c
 ```
 
-## <a name="range_adapter_range_adapter"></a>range_adapter:: range_adapter (STL/CLR)
+## <a name="range_adapterrange_adapter-stlclr"></a><a name="range_adapter_range_adapter"></a>range_adapter:: range_adapter (STL/CLR)
 
 Bir bağdaştırıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 range_adapter();
@@ -1132,7 +1132,7 @@ Oluşturucu:
 
 `range_adapter(range_adapter<Iter>^ right);`
 
-`*right`depolanan çifti kopyalayarak depolanan yineleyici çiftini başlatır.
+depolanan yineleyici çiftini, içinde depolanan çifti kopyalayarak başlatır `*right` .
 
 Oluşturucu:
 

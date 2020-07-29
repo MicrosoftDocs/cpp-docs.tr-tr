@@ -9,12 +9,12 @@ helpviewer_keywords:
 - main function
 - programs [C++], terminating
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
-ms.openlocfilehash: 28b0d826dc02376f952d3522f2f037eacd298b8e
-ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
+ms.openlocfilehash: f2419820fb6018613fe3fae39194584076121898
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76123948"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211794"
 ---
 # <a name="main-function-and-program-execution"></a>main İşlevi ve Program Yürütme
 
@@ -28,11 +28,11 @@ main( int argc, char *argv[ ], char *envp[ ] )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görevi gerçekleştirir. **Main** işlevi ilgili görevlerini gerçekleştirmek için bu işlevleri çağırabilir. **Main** başka bir işlevi çağırdığında yürütme denetimini işleve geçirir, böylece yürütme işlevdeki ilk deyimden başlar. Bir işlev, bir `return` ifade yürütüldüğünde veya işlevin sonuna ulaşıldığında denetimi **Main** öğesine döndürür.
+Kaynak programının içerisindeki işlevler, bir veya daha fazla belirli görevi gerçekleştirir. **Main** işlevi ilgili görevlerini gerçekleştirmek için bu işlevleri çağırabilir. **Main** başka bir işlevi çağırdığında yürütme denetimini işleve geçirir, böylece yürütme işlevdeki ilk deyimden başlar. Bir işlev, bir **main** **`return`** ifade yürütüldüğünde veya işlevin sonuna ulaşıldığında denetimi Main öğesine döndürür.
 
 Parametrelere sahip olmak için **Main**dahil herhangi bir işlevi bildirebilirsiniz. "Parametre" veya "biçimsel parametre" terimi, işleve geçirilen bir değeri alan tanımlayıcı anlamına gelir. Bağımsız değişkenleri parametrelere geçirme hakkında bilgi için bkz. [Parametreler](../c-language/parameters.md) . Bir işlev diğerini çağırdığında, çağrılan işlev çağıran işlevden parametrelerine yönelik değerleri alır. Bu değerlere "bağımsız değişkenler" adı verilir. Aşağıdaki biçimi kullanarak komut satırından bağımsız değişkenleri alabilmesi için, biçimsel parametreleri **Main** 'e bildirebilirsiniz:
 
-**Ana** işleve bilgi geçirmek istediğinizde, parametreler genellikle ve `argc` `argv`olarak adlandırılır, ancak C derleyicisi bu adları gerektirmez. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü bir parametre **Main**'e geçirilirse, bu parametre adlandırılır `envp`. Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
+**Ana** işleve bilgi geçirmek istediğinizde, parametreler genellikle `argc` ve `argv` olarak adlandırılır, ancak C derleyicisi bu adları gerektirmez. `argc` ve `argv` türleri, C dili tarafından tanımlanır. Geleneksel olarak, üçüncü bir parametre **Main**'e geçirilirse, bu parametre adlandırılır `envp` . Bu bölümdeki diğer örnekler, komut satırı bağımsız değişkenlerine erişmek için bu üç parametrenin nasıl kullanılacağını göstermektedir. Aşağıdaki bölümlerde bu parametreler açıklanmaktadır.
 
 **Ana**öğesinin geniş karakterli sürümünün açıklaması için bkz. [wmain kullanma](../c-language/using-wmain.md) .
 

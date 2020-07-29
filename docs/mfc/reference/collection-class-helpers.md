@@ -8,32 +8,32 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-ms.openlocfilehash: 05fe49a4d8e6de92c584d40f3871f3efb906c7c8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 02bc5c5a7c1766c97d9a834c8b6b4dfb2a26ae82
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374809"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231799"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
-Toplama sınıfları, `CMap` `CList` `CArray` ve karşılaştırma, kopyalama ve öğeleri serileştirme gibi amaçlar için şablonlanmış genel yardımcı işlevleri kullanın. 'ye `CMap` `CList`ve `CArray`, haritanızda, listenizde veya dizinizde depolanan veri türüne göre uyarlanmış sürümlerle bu işlevleri gerektiği gibi geçersiz kılmanız gerekir. Yardımcı işlevlerin geçersiz kılınması `SerializeElements`hakkında bilgi için, [bkz.](../../mfc/how-to-make-a-type-safe-collection.md) Bunu `ConstructElements` unutmayın `DestructElements` ve amortismana uğradı.
+Koleksiyon sınıfları, `CMap` `CList` ve `CArray` öğeleri karşılaştırma, kopyalama ve serileştirme gibi amaçlar için şablonlu genel yardımcı işlevleri kullanır. , Ve ' a dayanan sınıfların bir parçası olarak `CMap` , `CList` `CArray` Bu işlevleri haritada, listenizde veya dizide depolanan verilerin türüne uyarlanmış sürümlerle gerektiği şekilde geçersiz kılmanız gerekir. Gibi yardımcı işlevleri geçersiz kılma hakkında daha fazla bilgi için `SerializeElements` bkz. [Koleksiyonlar: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Bu `ConstructElements` ve `DestructElements` kullanım dışı bırakılmış olduğunu unutmayın.
 
-Microsoft Hazırlık Sınıfı Kitaplığı, koleksiyon sınıflarınızı özelleştirmenize yardımcı olmak için afxtempl.h'de aşağıdaki genel işlevleri sağlar:
+Microsoft Foundation Class Kitaplığı, topluluk sınıflarınızı özelleştirmenize yardımcı olması için afxtempl. h ' de aşağıdaki genel işlevleri sağlar:
 
 ### <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
 |||
 |-|-|
-|[Öğeleri Karşılaştır](#compareelements)|Öğelerin aynı olup olmadığını gösterir.|
+|[CompareElements](#compareelements)|Öğelerin aynı olup olmadığını gösterir.|
 |[CopyElements](#copyelements)|Öğeleri bir diziden diğerine kopyalar.|
-|[Döküm Elemanları](#dumpelements)|Akış odaklı tanı çıktısı sağlar.|
-|[HashKey](#hashkey)|Karma anahtarı hesaplar.|
-|[SerializeElements](#serializeelements)|Bir arşive veya arşivden öğeleri depolar veya alır.|
+|[DumpElements](#dumpelements)|Akışa dayalı tanılama çıkışı sağlar.|
+|[HashKey](#hashkey)|Bir karma anahtarı hesaplar.|
+|[SerializeElements](#serializeelements)|Bir arşive veya bir arşivden öğeleri depolar veya alır.|
 
-## <a name="compareelements"></a><a name="compareelements"></a>Öğeleri Karşılaştır
+## <a name="compareelements"></a><a name="compareelements"></a>CompareElements
 
-Doğrudan [CList::Find](clist-class.md#not_found.md#clist__find ve dolaylı olarak [cmap__lookup](cmap-class.md#lookup) ve [cmap__operator &#91;&#93;](cmap-class.md#operator_at)tarafından çağrılır.
+Doğrudan [CList:: Find] (CList-Class. MD # not_found. MD # clist__find ve dolaylı olarak [cmap__lookup](cmap-class.md#lookup) ve [cmap__operator &#91;&#93;](cmap-class.md#operator_at)tarafından çağırılır.
 
 ```
 template<class TYPE, class ARG_TYPE>
@@ -49,33 +49,33 @@ CompareElements(
 Karşılaştırılacak ilk öğenin türü.
 
 *pElement1*<br/>
-Karşılaştırılacak ilk öğeyi işaretle.
+Karşılaştırılacak ilk öğe işaretçisi.
 
 *ARG_TYPE*<br/>
-Karşılaştırılacak ikinci öğenin türü.
+Karşılaştırılacak ikinci öğe türü.
 
 *pElement2*<br/>
-Karşılaştırılacak ikinci öğeyi işaretçi.
+Karşılaştırılacak ikinci öğe işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*pElement1* tarafından işaret edilen nesne *pElement2*tarafından işaret edilen nesneye eşitse sıfır yok; aksi takdirde 0.
+*PElement1* tarafından işaret edilen nesne, *pElement2*tarafından işaret edilen nesneye eşitse sıfır dışı olur; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMap` Aramalar şablon `CMap` parametreleri *KEY* ve *ARG_KEY*kullanın.
+`CMap`Çağrılar, `CMap` şablon parametreleri *anahtarını* ve *ARG_KEY*kullanır.
 
-Varsayılan uygulama * \*pElement1* ve * \*pElement2*karşılaştırma sonucu döndürür. Bu işlevi, öğeleri uygulamanız için uygun şekilde karşılaştıracak şekilde geçersiz kılın.
+Varsayılan uygulama, * \* pElement1* ve * \* pElement2*' nin karşılaştırmasının sonucunu döndürür. Öğeleri uygulamanız için uygun bir şekilde karşılaştıran şekilde bu işlevi geçersiz kılın.
 
-C++ `==`dili basit türleri **(char**, **int**, **float**, vb.) için karşılaştırma işleci ( ) tanımlar, ancak sınıflar ve yapılar için bir karşılaştırma işleci tanımlamaz. Bunu kullanan koleksiyon `CompareElements` sınıflarından birini kullanmak veya anlık olarak kullanmak istiyorsanız, karşılaştırma işlecitanımlamanız `CompareElements` veya uygun değerleri döndüren bir sürümle aşırı yüklemeniz gerekir.
+C++ dili `==` basit türler (,, vb.) için karşılaştırma işlecini () tanımlar, **`char`** **`int`** **`float`** ancak sınıflar ve yapılar için bir karşılaştırma işleci tanımlamaz. `CompareElements`Bunu kullanan koleksiyon sınıflarından birini oluşturmak için veya kullanmak istiyorsanız, karşılaştırma işlecini veya aşırı yüklemeyi `CompareElements` uygun değerleri döndüren bir sürümle tanımlamanız gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-   **Başlık:** afxtempl.h
+   **Üstbilgi:** afxtempl. h
 
 ## <a name="copyelements"></a><a name="copyelements"></a>CopyElements
 
-Bu işlev doğrudan [CArray tarafından çağrılır::Append](carray-class.md#append) ve [CArray::Copy](carray-class.md#copy).
+Bu işlev doğrudan [CArray:: Append](carray-class.md#append) ve [CArray:: Copy](carray-class.md#copy)tarafından çağrılır.
 
 ```
 template<class TYPE>
@@ -91,27 +91,27 @@ void AFXAPI CopyElements(
 Kopyalanacak öğelerin türünü belirten şablon parametresi.
 
 *pDest*<br/>
-Öğelerin kopyalanacağı hedefe işaretçi.
+Öğelerin kopyalanacağı hedef işaretçisi.
 
 *pSrc*<br/>
-Kopyalanacak öğelerin kaynağına işaretçi.
+Kopyalanacak öğelerin kaynağı işaretçisi.
 
-*nSayısı*<br/>
+*nCount*<br/>
 Kopyalanacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, kopyalama işlemini **=** gerçekleştirmek için basit atama işleci ( ) kullanır. Kopyalanan türde aşırı yüklü bir işleci=yoksa, varsayılan uygulama bityönünde bir kopya gerçekleştirir.
+Varsayılan uygulama, **=** kopyalama işlemini gerçekleştirmek için basit atama işlecini () kullanır. Kopyalanmakta olan türün aşırı yüklenmiş bir işleci yoksa, varsayılan uygulama bit düzeyinde bir kopya gerçekleştirir.
 
-Bu ve diğer yardımcı işlevlerin uygulanması hakkında bilgi için, makale [Koleksiyonları: Nasıl Tür Güvenli Toplama olun.](../how-to-make-a-type-safe-collection.md)
+Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz. [Koleksiyonlar: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxtempl.h
+  **Başlık** afxtempl. h
 
-## <a name="dumpelements"></a><a name="dumpelements"></a>Döküm Elemanları
+## <a name="dumpelements"></a><a name="dumpelements"></a>DumpElements
 
-Geçersiz kılındığında koleksiyonunuzun öğeleri için metin biçiminde akış odaklı tanı çıktısı sağlar.
+Geçersiz kılınırsa, koleksiyonunuzdaki öğeler için akışa yönelik tanılama çıkışı metin biçiminde sağlar.
 
 ```
 template<class TYPE>
@@ -123,31 +123,31 @@ void  AFXAPI DumpElements(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dc*<br/>
-Öğeleri dökümü için bağlamı dökümü.
+*'ye*<br/>
+Döküm öğeleri için döküm bağlamı.
 
 *TÜR*<br/>
 Öğelerin türünü belirten şablon parametresi.
 
 *pElements*<br/>
-Atılacak öğeleriçin işaretçi.
+Dökülebilir öğelere yönelik işaretçi.
 
-*nSayısı*<br/>
-Boşaltılacak öğe sayısı.
+*nCount*<br/>
+Döküme yapılacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dökümün derinliği 0'dan `CArray::Dump`büyükse, ve `CList::Dump` `CMap::Dump` işlevler bunu çağırır.
+`CArray::Dump`, `CList::Dump` , Ve `CMap::Dump` işlevleri, döküm derinliği 0 ' dan büyükse bunu çağırır.
 
-Varsayılan uygulama hiçbir şey yapmaz. Koleksiyonunuzdaki öğeler `CObject`türetilmişse, geçersiz kılmanız genellikle koleksiyonun öğeleri arasında `Dump` yinelenir ve her öğeyi sırayla çağıracaktır.
+Varsayılan uygulama hiçbir şey yapmaz. Koleksiyonunuzun öğeleri öğesinden türetildiyse `CObject` , geçersiz kılma, genellikle koleksiyonun öğeleri boyunca yinelenir ve `Dump` her öğe için sırasıyla çağrı yapılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxtempl.h
+  **Başlık** afxtempl. h
 
 ## <a name="hashkey"></a><a name="hashkey"></a>HashKey
 
-Verilen anahtar için karma değeri hesaplar.
+Verilen anahtar için bir karma değeri hesaplar.
 
 ```
 template<class ARG_KEY>
@@ -160,7 +160,7 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
 Harita anahtarlarına erişmek için kullanılan veri türünü belirten şablon parametresi.
 
 *anahtar*<br/>
-Karma değeri hesaplanacak anahtar.
+Karma değeri hesaplanacak olan anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -168,9 +168,9 @@ Anahtarın karma değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev doğrudan [CMap tarafından çağrılır::RemoveKey](cmap-class.md#removekey) ve dolaylı [olarak CMap::Lookup](cmap-class.md#lookup) ve [CMap::Operator &#91;&#93;](cmap-class.md#operator_at).
+Bu işlev doğrudan [CMap](cmap-class.md#removekey) :: RemoveKey ve dolaylı olarak [CMap:: Lookup](cmap-class.md#lookup) ve [cmap:: operator &#91;&#93;](cmap-class.md#operator_at)tarafından çağrılır.
 
-Varsayılan uygulama, *anahtar* sağa dört konuma kaydırarak karma bir değer oluşturur. Bu işlevi, uygulamanız için uygun karma değerleri döndürecek şekilde geçersiz kılın.
+Varsayılan uygulama, *anahtarı* sağ dört konum ile değiştirerek bir karma değer oluşturur. Uygulamanız için uygun olan karma değerleri döndürmesi için bu işlevi geçersiz kılın.
 
 ### <a name="example"></a>Örnek
 
@@ -185,11 +185,11 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxtempl.h
+  **Başlık** afxtempl. h
 
 ## <a name="serializeelements"></a><a name="serializeelements"></a>SerializeElements
 
-[CArray](carray-class.md), [CList](clist-class.md)ve [CMap](cmap-class.md) öğeleri serihale etmek için bu işlevi arayın.
+[CArray](carray-class.md), [CList](clist-class.md)ve [CMap](cmap-class.md) öğeleri seri hale getirmek için bu işlevi çağırır.
 
 ```
 template<class TYPE>
@@ -202,31 +202,31 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 Öğelerin türünü belirten şablon parametresi.
 
 *Ar*<br/>
-Arşivlemek için veya gelen bir arşiv nesnesi.
+Arşivlemek için bir arşiv nesnesi.
 
 *pElements*<br/>
-Arşivlenmiş öğeleriçin işaretçi.
+Arşivlenen öğelere yönelik işaretçi.
 
-*nSayısı*<br/>
-Arşivlendirilen öğe sayısı
+*nCount*<br/>
+Arşivlenen öğe sayısı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama biraz akıllıca okuma veya yazma yapar.
+Varsayılan uygulama bit düzeyinde okuma veya yazma yapmaz.
 
-Bu ve diğer yardımcı işlevlerin uygulanması hakkında bilgi için, makale [Koleksiyonları: Nasıl Tür Güvenli Toplama olun.](../how-to-make-a-type-safe-collection.md)
+Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz. [Koleksiyonlar: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="example"></a>Örnek
 
-Koleksiyonlar makaledeki örneğe [bakın: Tür Güvenli Toplama Nasıl Yapılır.](../how-to-make-a-type-safe-collection.md)
+Makale [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md)içindeki örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Başlık** afxtempl.h
+  **Başlık** afxtempl. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve Küreseller](mfc-macros-and-globals.md)<br/>
-[CMap Sınıfı](cmap-class.md)<br/>
-[CList Sınıfı](clist-class.md)<br/>
-[CArray Sınıfı](carray-class.md)
+[Makrolar ve genel öğeler](mfc-macros-and-globals.md)<br/>
+[CMap sınıfı](cmap-class.md)<br/>
+[CList sınıfı](clist-class.md)<br/>
+[CArray sınıfı](carray-class.md)
