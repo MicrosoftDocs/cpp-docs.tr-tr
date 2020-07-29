@@ -23,12 +23,12 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: 26e4e80ed3110351130731e6030427d25fc4a0ea
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: a6b1ce33fe201338a0cc9356f2ef86e598629fd6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168741"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228043"
 ---
 # <a name="atl-typedefs"></a>ATL Tür tanımları
 
@@ -44,10 +44,10 @@ Etkin Şablon kitaplığı aşağıdaki tür tanımlarını içerir.
 |[CComDispatchDriver](#ccomdispatchdriver)|Bu sınıf, COM arabirimi işaretçilerini yönetir.|
 |[CComGlobalsThreadModel](#ccomglobalsthreadmodel)|Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.|
 |[CComObjectThreadModel](#ccomobjectthreadmodel)|Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.|
-|[CContainedWindow](#ccontainedwindow)|Bu sınıf, öğesinin `CContainedWindowT`bir özelleştirmesi.|
-|[CPath](#cpath)|Kullanarak `CString` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.|
-|[CPathA](#cpatha)|Kullanarak `CStringA` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.|
-|[CPathW](#cpathw)|Kullanarak `CStringW` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.|
+|[CContainedWindow](#ccontainedwindow)|Bu sınıf, öğesinin bir özelleştirmesi `CContainedWindowT` .|
+|[CPath](#cpath)|Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CString` .|
+|[CPathA](#cpatha)|Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CStringA` .|
+|[CPathW](#cpathw)|Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CStringW` .|
 |[CSimpleValArray](#csimplevalarray)|Basit türleri depolamak için bir diziyi temsil eder.|
 |[Defaultthreadnitelikler](#defaultthreadtraits)|Varsayılan iş parçacığı nitelikleri sınıfı.|
 |[LPKıVRıK](#lpcurl)|Sabit [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.|
@@ -161,23 +161,23 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı olarak, **typedef** adı `CComGlobalsThreadModel` [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur. Bu sınıflar, kritik `typedef` bölüm sınıfına başvurmak için ek adlar sağlar.
+Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı olarak **`typedef`** ad, `CComGlobalsThreadModel` [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur. Bu sınıflar, **`typedef`** kritik bölüm sınıfına başvurmak için ek adlar sağlar.
 
 > [!NOTE]
 > `CComGlobalsThreadModel`[CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)sınıfına başvurmuyor.
 
 Kullanma `CComGlobalsThreadModel` , belirli bir iş parçacığı modeli sınıfı belirtmekten kurtarır. Kullanılan iş parçacığı modelinden bağımsız olarak, uygun yöntemler çağrılacaktır.
 
-Ayrıca `CComGlobalsThreadModel`, ATL, [CComObjectThreadModel](#ccomobjectthreadmodel) **typedef** adını sağlar. Tarafından başvurulan sınıf, aşağıdaki `typedef` tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
+Buna ek olarak `CComGlobalsThreadModel` , ATL **`typedef`** [CComObjectThreadModel](#ccomobjectthreadmodel)adını da sağlar. Tarafından başvurulan sınıf, **`typedef`** Aşağıdaki tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
 
 | typedef|Tek iş parçacığı|Apartman iş parçacığı|Serbest iş parçacığı|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; D =`CComMultiThreadModel`
+S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
 
-Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınız `CComGlobalsThreadModel` için genel olarak kullanılabilen bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
+`CComObjectThreadModel`Tek bir nesne sınıfı içinde kullanın. `CComGlobalsThreadModel`Programınız için genel olarak kullanılabilen bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -201,23 +201,23 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı `typedef` olarak ad `CComObjectThreadModel` , [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur. Bu sınıflar, kritik `typedef` bölüm sınıfına başvurmak için ek adlar sağlar.
+Uygulamanız tarafından kullanılan iş parçacığı modeline bağlı olarak **`typedef`** ad, `CComObjectThreadModel` [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur. Bu sınıflar, **`typedef`** kritik bölüm sınıfına başvurmak için ek adlar sağlar.
 
 > [!NOTE]
 > `CComObjectThreadModel`[CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md)sınıfına başvurmuyor.
 
 Kullanma `CComObjectThreadModel` , belirli bir iş parçacığı modeli sınıfı belirtmekten kurtarır. Kullanılan iş parçacığı modelinden bağımsız olarak, uygun yöntemler çağrılacaktır.
 
-Ayrıca `CComObjectThreadModel`, ATL, [CComGlobalsThreadModel](#ccomglobalsthreadmodel) **typedef** adını sağlar. Her **typedef** tarafından başvurulan sınıf, aşağıdaki tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
+Buna ek olarak `CComObjectThreadModel` , ATL **`typedef`** [CComGlobalsThreadModel](#ccomglobalsthreadmodel)adını da sağlar. Tarafından başvurulan sınıf, **`typedef`** Aşağıdaki tabloda gösterildiği gibi, kullanılan iş parçacığı modeline bağlıdır:
 
 | typedef|Tek iş parçacığı|Apartman iş parçacığı|Serbest iş parçacığı|
 |-------------|----------------------|-------------------------|--------------------|
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; D =`CComMultiThreadModel`
+S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
 
-Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınızın `CComGlobalsThreadModel` genel olarak kullanabildiği bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
+`CComObjectThreadModel`Tek bir nesne sınıfı içinde kullanın. `CComGlobalsThreadModel`Programınızın genel olarak kullanabildiği bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -225,7 +225,7 @@ Tek `CComObjectThreadModel` bir nesne sınıfı içinde kullanın. Programınız
 
 ## <a name="ccontainedwindow"></a><a name="ccontainedwindow"></a>CContainedWindow
 
-Bu sınıf, öğesinin `CContainedWindowT`bir özelleştirmesi.
+Bu sınıf, öğesinin bir özelleştirmesi `CContainedWindowT` .
 
 ```cpp
 typedef CContainedWindowT<CWindow> CContainedWindow;
@@ -237,11 +237,11 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CContainedWindow`, [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)'in bir özelleştirmesi. Temel sınıf veya nitelikleri değiştirmek istiyorsanız, doğrudan kullanın `CContainedWindowT` .
+`CContainedWindow`, [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)'in bir özelleştirmesi. Temel sınıf veya nitelikleri değiştirmek istiyorsanız, `CContainedWindowT` doğrudan kullanın.
 
 ## <a name="cpath"></a><a name="cpath"></a>CPath
 
-Kullanarak `CString` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.
+Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CString` .
 
 ```cpp
 typedef CPathT<CString> CPath;
@@ -253,7 +253,7 @@ typedef CPathT<CString> CPath;
 
 ## <a name="cpatha"></a><a name="cpatha"></a>CPathA
 
-Kullanarak `CStringA` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.
+Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CStringA` .
 
 ```cpp
 typedef CPathT<CStringA> CPathA;
@@ -265,7 +265,7 @@ typedef CPathT<CStringA> CPathA;
 
 ## <a name="cpathw"></a><a name="cpathw"></a>CPathW
 
-Kullanarak `CStringW` [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi.
+Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CStringW` .
 
 ```cpp
 typedef ATL::CPathT<CStringW> CPathW;
@@ -341,6 +341,6 @@ typedef CUrl* LPURL;
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
 [İşlevler](../../atl/reference/atl-functions.md)<br/>
-[Global Değişkenler](../../atl/reference/atl-global-variables.md)<br/>
+[Genel değişkenler](../../atl/reference/atl-global-variables.md)<br/>
 [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)<br/>
 [Makrolar](../../atl/reference/atl-macros.md)

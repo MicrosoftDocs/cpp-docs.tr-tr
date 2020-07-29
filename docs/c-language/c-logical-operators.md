@@ -11,22 +11,22 @@ helpviewer_keywords:
 - '&& operator'
 - logical OR operator
 ms.assetid: c0a4e766-ad56-4300-bf76-b28dc0e19b43
-ms.openlocfilehash: 5df0c0f16bdf298c47a6a0699ec10c7392ab84ca
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8f59ad927dd8ee62dbfc80fd238677bf1b646f9c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326592"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228004"
 ---
 # <a name="c-logical-operators"></a>C mantıksal işleçleri
 
-Mantıksal işleçler mantıksal-ve (**&&**) ve mantıksal OR (**||**) işlemleri gerçekleştirir.
+Mantıksal işleçler mantıksal-ve ( **&&** ) ve MANTıKSAL OR ( **||** ) işlemleri gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *MANTıKSAL and-ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*kapsamlı OR ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*mantıksal and ifadesi*  **&&**  *içinde or ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*MANTıKSAL and ifadesi* **&&** *KAPSAMLı or ifadesi*    
 
 *MANTıKSAL or ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*mantıksal AND ifadesi*<br/>
@@ -34,7 +34,7 @@ Mantıksal işleçler mantıksal-ve (**&&**) ve mantıksal OR (**||**) işlemler
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mantıksal işleçler, olağan aritmetik dönüştürmeleri gerçekleştirmez. Bunun yerine, her işleneni denklik değerini 0 olarak değerlendirirler. Mantıksal işlemin sonucu 0 veya 1 ' dir. Sonucun türü **int**'tir.
+Mantıksal işleçler, olağan aritmetik dönüştürmeleri gerçekleştirmez. Bunun yerine, her işleneni denklik değerini 0 olarak değerlendirirler. Mantıksal işlemin sonucu 0 veya 1 ' dir. Sonucun türü **`int`** .
 
 C mantıksal işleçleri aşağıda açıklanmıştır:
 
@@ -56,13 +56,13 @@ if ( x < y && y < z )
     printf( "x is less than z\n" );
 ```
 
-Bu örnekte, **printf** işlevi bir iletiyi `x` yazdırmak için `y` çağrılır ve küçüktür ise küçüktür ve `y` küçüktür olur. `z` `x` Değerinden `y`büyükse, ikinci işlenen (`y < z`) değerlendirilmez ve hiçbir şey yazdırılmaz. Bu, ikinci işlenenin başka bir nedenden dolayı güvenmekte olan yan etkileri olduğu durumlarda sorun oluşmasına neden olabileceğini unutmayın.
+Bu örnekte, **printf** işlevi bir iletiyi yazdırmak için çağrılır ve küçüktür ise küçüktür `x` ve küçüktür olur `y` `y` `z` . `x`Değerinden büyükse `y` , ikinci işlenen ( `y < z` ) değerlendirilmez ve hiçbir şey yazdırılmaz. Bu, ikinci işlenenin başka bir nedenden dolayı güvenmekte olan yan etkileri olduğu durumlarda sorun oluşmasına neden olabileceğini unutmayın.
 
 ```C
 printf( "%d" , (x == w || x == y || x == z) );
 ```
 
-Bu örnekte `x` ,, ya `w` `y` `z`da öğesine eşitse, **printf** işlevinin ikinci bağımsız değişkeni true olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde, false olarak değerlendirilir ve 0 değeri yazdırılır. Koşullardan biri doğru olarak değerlendirildiğinde değerlendirme sona erer.
+Bu örnekte,, `x` ya da öğesine eşitse, `w` `y` `z` **printf** işlevinin ikinci bağımsız değişkeni true olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde, false olarak değerlendirilir ve 0 değeri yazdırılır. Koşullardan biri doğru olarak değerlendirildiğinde değerlendirme sona erer.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

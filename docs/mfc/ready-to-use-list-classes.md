@@ -8,26 +8,26 @@ helpviewer_keywords:
 - list classes [MFC]
 - collection classes [MFC], lists
 ms.assetid: aed8e9bd-edb7-4620-84a2-77c20322abd7
-ms.openlocfilehash: 7796e1abb2d7d22f17ac704091e62cc65c428405
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 56c9b2a2152fb3723ec5c400c59bb5885e734e24
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338525"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228563"
 ---
 # <a name="ready-to-use-list-classes"></a>Kullanıma Hazır Liste Sınıfları
 
-Kullanıma hazır liste sınıfları sınıflardır.
+Aşağıdaki sınıflar kullanıma hazırlama listesi sınıflarıdır.
 
 [CObList](../mfc/reference/coblist-class.md)<br/>
-Sınıf nesnelerine işaretçiler depolar `CObject` veya türetilmiş sınıfların nesnelerini `CObject` bağlı bir liste.
+`CObject`Bağlı bir listede, sınıfının nesnelerine veya türetilmiş sınıf nesnelerine yönelik işaretçileri depolar `CObject` .
 
 [CPtrList](../mfc/reference/cptrlist-class.md)<br/>
-Depolar işaretçileri **void** (genel işaretçiler) bağlı bir liste.
+**`void`** Bağlı bir listede işaretçileri (genel işaretçiler) depolar.
 
 [CStringList](../mfc/reference/cstringlist-class.md)<br/>
-Depoları `CString` bağlı bir liste nesneleri.
+`CString`Nesneleri bağlantılı bir listede depolar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

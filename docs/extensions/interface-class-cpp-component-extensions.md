@@ -1,5 +1,5 @@
 ---
-title: arabirim sınıfı (C++/CLI ve C++/CX)
+title: interface class (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-ms.openlocfilehash: cb4566a0094db6d9e0cc97d81718a18a6df5cf18
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e7847f71502354189e874d505414b4a45b74ab45
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172171"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228706"
 ---
-# <a name="interface-class--ccli-and-ccx"></a>arabirim sınıfı (C++/CLI ve C++/CX)
+# <a name="interface-class--ccli-and-ccx"></a>interface class (C++/CLI ve C++/CX)
 
 Bir arabirim bildirir.  Yerel arabirimler hakkında daha fazla bilgi için bkz. [__interface](../cpp/interface.md).
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 interface_access
@@ -32,13 +32,13 @@ name :  inherit_accessbase_interface{};interface_accessinterface structname :  i
 ### <a name="parameters"></a>Parametreler
 
 *interface_access*<br/>
-Derlemenin dışında bir arabirimin erişilebilirliği.  Olası değerler **genel** ve **özeldir**.  **özel** varsayılan değer. İç içe arabirimler *interface_access* tanımlayıcısına sahip olamaz.
+Derlemenin dışında bir arabirimin erişilebilirliği.  Olası değerler şunlardır **`public`** **`private`** .  **`private`** varsayılandır. İç içe arabirimler *interface_access* tanımlayıcısına sahip olamaz.
 
 *ada*<br/>
 Arabirimin adı.
 
 *inherit_access*<br/>
-*Base_interface*erişilebilirliği.  Temel arabirim için izin verilen tek erişilebilirlik **geneldir** (varsayılan).
+*Base_interface*erişilebilirliği.  Temel arabirim için izin verilen tek erişilebilirlik, **`public`** (varsayılan) olur.
 
 *base_interface*<br/>
 Seçim Arabirim *adı*için temel arabirim.
@@ -51,7 +51,7 @@ Arabirim, işlevler, olaylar ve özellikler için bildirimler içerebilir.  Tüm
 
 Arabirim, bir sınıfın nasıl uygulanabileceğini tanımlar. Arabirim bir sınıf değildir ve sınıflar yalnızca arabirimler uygulayabilir. Bir sınıf, bir arabirimde bildirildiği bir işlevi tanımladığında işlev uygulanır, geçersiz kılınmaz. Bu nedenle, ad arama arabirim üyelerini içermez.
 
-Bir arabirimden türetilen bir sınıf veya yapının, arabirimin tüm üyelerini uygulaması gerekir. Arabirim *adı* uygularken, `base_interface` listesindeki arabirimleri de uygulamalısınız.
+Bir arabirimden türetilen bir sınıf veya yapının, arabirimin tüm üyelerini uygulaması gerekir. Arabirim *adı* uygularken, ayrıca listedeki arabirimleri de uygulamalısınız `base_interface` .
 
 Daha fazla bilgi için bkz.
 
@@ -61,9 +61,9 @@ Daha fazla bilgi için bkz.
 
 Diğer CLR türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
 
-Bir tür arabirim `__is_interface_class(type)`, derleme zamanında tespit edebilirsiniz. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir tür arabirim ise, derleme zamanında tespit edebilirsiniz `__is_interface_class(type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
-Geliştirme ortamında, (örneğin`interface class`) anahtar sözcüğünü vurgulayarak ve F1 tuşuna basarak bu anahtar sözcükler hakkında F1 yardımı edinebilirsiniz.
+Geliştirme ortamında, anahtar sözcüğü vurgulayarak ( **`interface class`** Örneğin,) ve F1 tuşuna basarak bu anahtar sözcükler hakkında F1 yardımı edinebilirsiniz.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -73,7 +73,7 @@ Geliştirme ortamında, (örneğin`interface class`) anahtar sözcüğünü vurg
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -83,7 +83,7 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
@@ -220,4 +220,4 @@ ref struct R : I, J {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

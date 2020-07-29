@@ -11,22 +11,22 @@ helpviewer_keywords:
 - slash (/) operator
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-ms.openlocfilehash: f9f5f62e2326826e3087a8668cd9107da4b85388
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 32ff74be0fd1afb1d8a21d74abb194eaa5e273df
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335004"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227991"
 ---
 # <a name="c-multiplicative-operators"></a>C Çarpma İşleçleri
 
-Çarpma işleçleri çarpma (<strong>\*</strong>), Bölüm (**/**) ve kalan (**%**) işlemleri gerçekleştirir.
+Çarpma işleçleri çarpma ( <strong>\*</strong> ), Bölüm ( **/** ) ve kalan ( **%** ) işlemleri gerçekleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*çoğulereptive-ifade*: &nbsp; &nbsp; &nbsp; &nbsp; *cast-* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *cast-expression* **/** **%** *cast-expression* &nbsp; &nbsp; &nbsp; &nbsp; *multiplicative-expression* <strong>\*</strong> *multiplicative-expression* *cast-expression* *multiplicative-expression* ifade çoğulereptive-Expression cast-ifade çoğulereptive-Expression cast-Expression çoğulereptive-Expression cast-ifade &nbsp;
+*çoğulereptive-ifade*: &nbsp; &nbsp; &nbsp; &nbsp; *cast-* ifade &nbsp; &nbsp; &nbsp; &nbsp; *çoğulereptive-Expression* <strong>\*</strong> *cast-ifade* &nbsp; &nbsp; &nbsp; &nbsp; *çoğulereptive-Expression* **/** *cast-* Expression &nbsp; &nbsp; &nbsp; &nbsp; *çoğulereptive-Expression* **%** *cast-ifade*
 
-Geri kalan işlecin işlenenleri (**%**) tamsayı olmalıdır. Çarpma (<strong>\*</strong>) ve bölüm (**/**) işleçleri tamsayı veya kayan tür işlenenleri alabilir; işlenen türleri farklı olabilir.
+Geri kalan işlecin işlenenleri ( **%** ) tamsayı olmalıdır. Çarpma ( <strong>\*</strong> ) ve bölüm ( **/** ) işleçleri tamsayı veya kayan tür işlenenleri alabilir; işlenen türleri farklı olabilir.
 
 Çarpma işleçleri, işlenenler üzerinde Olağan aritmetik dönüştürmeleri gerçekleştirir. Sonucun türü, dönüştürmeden sonra işlenen türüdür.
 
@@ -62,7 +62,7 @@ Bu ifade çarpma işlecini kullanır:
 y = x * i;
 ```
 
-Bu durumda, `x` 20,0 değerini vermek için `i` ile çarpılır. Sonucun **Double** türü vardır.
+Bu durumda, `x` `i` 20,0 değerini vermek için ile çarpılır. Sonucun türü vardır **`double`** .
 
 ```
 n = i / j;
@@ -78,7 +78,7 @@ Bu ifade, `n` 10 ' un 3 ' i bölündüğünde, 1 tamsayı kalanı atar.
 
 **Microsoft'a Özgü**
 
-Kalanın işareti, bölünme işaretiyle aynıdır. Örneğin:
+Kalanın işareti, bölünme işaretiyle aynıdır. Örnek:
 
 ```
 50 % -6 = 2
@@ -91,4 +91,4 @@ Her durumda `50` ve `2` aynı işarete sahip olmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çarpan İşleçleri ve Modulus İşleci](../cpp/multiplicative-operators-and-the-modulus-operator.md)
+[Çarpma Işleçleri ve mod Işleci](../cpp/multiplicative-operators-and-the-modulus-operator.md)

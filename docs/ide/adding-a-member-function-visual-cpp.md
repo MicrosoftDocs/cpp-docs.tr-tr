@@ -1,5 +1,5 @@
 ---
-title: Üye işlevi Ekle
+title: Üye işlevi ekleme
 ms.date: 11/09/2018
 f1_keywords:
 - vc.codewiz.classes.member.function
@@ -9,26 +9,26 @@ helpviewer_keywords:
 - classes [C++], adding members
 - add member function wizard [C++]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-ms.openlocfilehash: 1cd7abbbc43ae56861b3b83451b41933b8b0b4f0
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: c5423cfb8e2ea1b39001ec512c9c7f460d6a1a19
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345994"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228693"
 ---
-# <a name="add-a-member-function"></a>Üye işlevi Ekle
+# <a name="add-a-member-function"></a>Üye işlevi ekleme
 
-İçinde **sınıf görünümü**, herhangi bir sınıfın bir üye işlev ekleyebilirsiniz. Bunu yaptığınızda bir bildirimi üstbilgi dosyasına eklenir ve daha sonra değiştirebilirsiniz sınıf uygulaması dosya için bir saplama üye işlev gövdesinin eklenir.
+**Sınıf görünümü**, herhangi bir sınıfa bir üye işlevi ekleyebilirsiniz. Bunu yaptığınızda, üstbilgi dosyasına bir bildirim eklenir ve daha sonra değiştirebileceğiniz bir saplama üye işlev gövdesi sınıfın uygulama dosyasına eklenir.
 
-**Üye işlevi bir sınıfa eklemek için:**
+**Bir sınıfa üye işlevi eklemek için:**
 
-1. İçinde **sınıf görünümü**, projede sınıflarını görüntülemek için proje düğümünü genişletin. (Açmak için **sınıf görünümü**, menü çubuğunda, **görünümü**, **sınıf görünümü**.)
+1. **Sınıf görünümü**, projedeki sınıfları göstermek için proje düğümünü genişletin. ( **Sınıf görünümü**açmak için, menü çubuğunda **Görünüm**, **sınıf görünümü**' i seçin.)
 
-1. Üye işlev eklemek ve ardından istediğiniz sınıfı için kısayol menüsünü açın **Ekle**, **işlev Ekle**.
+1. Üye işlevi eklemek istediğiniz sınıf için kısayol menüsünü açın ve **Ekle**, **işlev Ekle**' yi seçin.
 
-1. Üye işlevi uygun ayrıntılarını sağlayın. Daha fazla bilgi için [Ekle üye işlev Sihirbazı'nı](#add-member-function-wizard).
+1. Üye işlevi hakkında uygun ayrıntıları sağlayın. Daha fazla bilgi için bkz. [üye Işlev ekleme Sihirbazı](#add-member-function-wizard).
 
-1. Seçin **son** üye işlev kodunu oluşturmak için düğme.
+1. Üye işlev kodunu oluşturmak için **son** düğmesini seçin.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -36,68 +36,68 @@ ms.locfileid: "64345994"
 
 ## <a name="add-member-function-wizard"></a>Üye işlevi Ekleme Sihirbazı
 
-Bu sihirbaz bir üye işlev bildirimi için üst bilgi dosyası ekler. Ayrıca seçilen sınıf için uygulama dosyası için bir saplama üye işlev uygulaması ekler.
+Bu sihirbaz başlık dosyasına bir üye işlevi bildirimi ekler. Ayrıca, seçilen sınıf için uygulama dosyasına bir saplama üye işlev uygulamasını ekler.
 
-Sihirbazı kullanarak üye işlevi ekledikten sonra kodu geliştirme ortamında düzenleyebilirsiniz.
+Sihirbazı kullanarak üye işlevini ekledikten sonra, geliştirme ortamındaki kodu düzenleyebilirsiniz.
 
 - **Dönüş türü**
 
-  Eklediğiniz üye işlevin dönüş türünü ayarlar. Kullanılabilir türler listesinden seçebilir veya kendi dönüş türü sağlayabilir. Türleri hakkında daha fazla bilgi için bkz: [temel türler](../cpp/fundamental-types-cpp.md).
+  Eklemekte olduğunuz üye işlev için dönüş türünü ayarlar. Kendi dönüş türünü sağlayabilir veya kullanılabilir türler listesinden seçim yapabilirsiniz. Türler hakkında daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
 
   | | | |
   |---|---|---|
-  | `char` | `int` | `unsigned int` |
-  | `double` | `long` | `unsigned long` |
-  | `float` | `short` | `void` |
-  | `HRESULT` | `unsigned char` | |
+  | **`char`** | **`int`** | **`unsigned int`** |
+  | **`double`** | **`long`** | **`unsigned long`** |
+  | **`float`** | **`short`** | **`void`** |
+  | `HRESULT` | **`unsigned char`** | |
 
 - **İşlev adı**
 
-  Eklediğiniz üye işlevin adını ayarlar.
+  Eklemekte olduğunuz üye işlevin adını ayarlar.
 
 - **Parametre türü**
 
-  Üye işlevi parametrelere sahipse üye işlevi için ekleme parametresinin türünü ayarlar. Kendi parametre türü sağlayabilir veya kullanılabilir türler listesinden seçebilirsiniz.
+  Üye işlevin parametreleri varsa, üye işlevi için eklemekte olduğunuz parametrenin türünü ayarlar. Kendi parametre türlerinizi sağlayabilir veya kullanılabilir türler listesinden seçim yapabilirsiniz.
 
   | | | |
   |---|---|---|
-  | `char` | `int` | `unsigned char` |
-  | `double` | `long` | `unsigned int` |
-  | `float` | `short` | `unsigned long` |
+  | **`char`** | **`int`** | **`unsigned char`** |
+  | **`double`** | **`long`** | **`unsigned int`** |
+  | **`float`** | **`short`** | **`unsigned long`** |
 
 - **Parametre adı**
 
-  Üye işlevi parametrelere sahipse, üye işlevi için eklediğiniz bir parametre adını ayarlar.
+  Üye işlevin parametreleri varsa, üye işlevi için eklemekte olduğunuz parametrenin adını ayarlar.
 
 - **Parametre listesi**
 
-  Eklediğiniz üye işlevi için parametre listesini görüntüler. Bir parametre listesine eklenecek bir türü sağlayın ve içinde ad **parametre türü** ve **parametre adı** kutuları ve select **Ekle**. Parametre listesinden kaldırmak için parametreyi seçin ve seçin **Kaldır**.
+  Üye işlevine eklemiş olduğunuz parametrelerin listesini görüntüler. Listeye bir parametre eklemek için, **parametre türü** ve **parametre adı** kutularına bir tür ve ad girin ve **Ekle**' yi seçin. Listeden bir parametreyi kaldırmak için parametreyi seçin ve **Kaldır**' ı seçin.
 
 - **Erişim**
 
-  Üye işlevine erişim ayarlar. Erişim değiştiricileri, diğer sınıfların üye işleve sahip erişimi belirtin sözcüklerdir. Erişim belirtme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Üye işlevi erişim düzeyini ayarlamak `public` varsayılan olarak.
+  Üye işlevine erişimi ayarlar. Erişim değiştiricileri, diğer sınıfların üye işlevine sahip olduğu erişimi belirten anahtar sözcüklerdir. Erişim belirtme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Üye işlevi erişim düzeyi varsayılan olarak olarak ayarlanır **`public`** .
 
-  - [public](../cpp/public-cpp.md)
+  - [genel](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
-  - [private](../cpp/private-cpp.md)
+  - [özelleştirme](../cpp/private-cpp.md)
 
-  Yeni üye işlevini statik veya sanal olmasına ve satır içi olup denetleyin veya saf. Saf, üye işlevi ayarlarsanız **sanal** onay kutusu seçildiğinde ve **satır içi** onay kutusu kullanım dışı olur. Varsayılan, statik olmayan, sanal olmayan üye işlevi olmasıdır.
+  Yeni üye işlevinin statik mi, sanal mi olduğunu ve satır içi veya saf olduğunu kontrol edin. Üye işlevini saf olacak şekilde ayarlarsanız, **sanal** onay kutusu seçilidir ve **satır içi** onay kutusu kullanılamaz hale gelir. Varsayılan değer statik olmayan, sanal olmayan bir üye işlevdir.
 
   | Seçenek | Açıklama |
   |--------|-------------|
-  | [Static](../cpp/storage-classes-cpp.md) |  İşlev genel gibi davranır ve sınıf örnekleme olmasa bile bir sınıf dışında çağrılabilir belirtir. Üye işlevini statik olmayan üyeler için erişim yok. Belirtilen bir üye işlev `Static` sanal olamaz. |
-  | [Sanal](../cpp/virtual-cpp.md) | Doğru üye işlevi üye işlev çağrısını yapmak için kullanılan ifade bağımsız olarak bir nesne için çağrıldığından emin emin olur. Belirtilen bir üye işlev `Virtual` statik olamaz. |
-  | **saf** | Hiçbir uygulama sanal üye işlev için bildirilen verilmesi gerektiğini gösterir. **Saf** yalnızca sanal üye işlevlerde belirtilebilir. En az bir saf sanal üye işlevi içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilmiş sınıflar saf sanal üye işlevi uygulamak zorundadır veya onlar da soyut sınıflardır. |
-  | [Satır içi](../cpp/inline-functions-cpp.md) | Üye işlevi çağrılan her yere üye işlev gövdesinin bir kopyasını eklemek için derleyicinin sağlar. Belirtilen bir üye işlev **satır içi** saf olamaz. |
+  | [Static](../cpp/storage-classes-cpp.md) |  İşlevin genel gibi davrandığını ve sınıf örneklemesi olmadan bile sınıfın dışında çağrılabilecek olduğunu belirtir. Üye işlevin statik olmayan üyelere erişimi yok. Olarak belirtilen bir üye işlevi `Static` sanal olamaz. |
+  | [Sanal](../cpp/virtual-cpp.md) | Üye işlev çağrısını yapmak için kullanılan ifadeden bağımsız olarak, bir nesne için doğru üye işlevinin çağrıldığından emin olur. Olarak belirtilen bir üye işlevi `Virtual` statik olamaz. |
+  | **Tam** | Belirtilen sanal üye işlev için hiçbir uygulamanın sağlanmadığını gösterir. **Saf** , yalnızca sanal üye işlevlerinde belirtilebilir. En az bir saf sanal üye işlevi içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilmiş sınıflar, saf sanal üye işlevini uygulamalıdır ya da soyut sınıflardır. |
+  | [Çizgi](../cpp/inline-functions-cpp.md) | Derleyiciye üye işlevinin çağrıldığı her yere üye işlev gövdesinin bir kopyasını eklemesini söyler. **Satır içi** olarak belirtilen bir üye işlevi saf olamaz. |
 
-- **.cpp dosyası**
+- **. cpp dosyası**
 
-  Saplama üye işlev uygulaması yazıldığı dosya konumunu ayarlar. Varsayılan olarak, üye işlevi ekleneceği sınıfı .cpp dosyası öğesine yazılır. Dosya adını değiştirmek için üç nokta düğmesini seçin. Üye işlev uygulaması, seçilen dosya içeriğini eklenir.
+  Saplama üye işlevi uygulamasının yazıldığı dosya konumunu ayarlar. Varsayılan olarak, üye işlevin eklendiği sınıf için. cpp dosyasına yazılır. Dosya adını değiştirmek için üç nokta düğmesini seçin. Üye işlevi uygulama, seçili dosyanın içeriğine eklenir.
 
 - **Yorum**
 
-  Üstbilgi dosyasında üye işlevi için bir açıklama sağlar.
+  Üye işlevi için üstbilgi dosyasında bir açıklama sağlar.
 
 - **İşlev imzası**
 
-  Üye işlevi koddan verbatim seçtiğinizde görüntüler **son**. Bu kutuda metni düzenleyemez. Üye işlevi değiştirmek için uygun kutulara Sihirbazı'nı değiştirin.
+  **Son**' u seçtiğinizde koddan tam üye işlevini görüntüler. Bu kutudaki metni düzenleyemezsiniz. Üye işlevini değiştirmek için, sihirbazdaki ilgili kutuları değiştirin.

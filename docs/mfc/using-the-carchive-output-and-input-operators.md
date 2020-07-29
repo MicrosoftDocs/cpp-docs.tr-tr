@@ -1,62 +1,62 @@
 ---
-title: CArchive &lt; &lt; ve &gt; &gt; Operatörler kullanma
+title: CArchive &lt; &lt; ve &gt; &gt; işleçlerini kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - objects [MFC], loading from previously stored values
 - CArchive class [MFC], storing and loading objects
 - CArchive class [MFC], operators
 ms.assetid: 56aef326-02dc-4992-8282-f0a4b78a064e
-ms.openlocfilehash: 91ea565867cc0cb3b27ad9d5597037b637cb6544
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5029227078ac0af9ebdd0c74522a7b0ae8ea4d42
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368970"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228524"
 ---
-# <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive &lt; &lt; ve &gt; &gt; Operatörler kullanma
+# <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive &lt; &lt; ve &gt; &gt; işleçlerini kullanma
 
-`CArchive`basit \< veri türlerinin yanı sıra `CObject`dosyaya ve dosyadan <ve >> operatörlerini ve basit veri türlerini yazmave okumayı sağlar.
+`CArchive`, \< and > bir dosyanın yanı sıra basit veri türlerini yazmak ve okumak için <> işleçleri sağlar `CObject` .
 
-#### <a name="to-store-an-object-in-a-file-via-an-archive"></a>Bir nesneyi arşiv aracılığıyla dosyada depolamak için
+#### <a name="to-store-an-object-in-a-file-via-an-archive"></a>Bir nesneyi bir arşiv aracılığıyla bir dosyada depolamak için
 
-1. Aşağıdaki örnek, bir nesnenin arşiv aracılığıyla dosyada nasıl depolanır olduğunu gösterir:
+1. Aşağıdaki örnek, bir nesnenin bir arşiv aracılığıyla bir dosyada nasıl depolanacağını göstermektedir:
 
    [!code-cpp[NVC_MFCSerialization#7](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_1.cpp)]
 
-#### <a name="to-load-an-object-from-a-value-previously-stored-in-a-file"></a>Bir nesneyi daha önce dosyada depolanmış bir değerden yüklemek için
+#### <a name="to-load-an-object-from-a-value-previously-stored-in-a-file"></a>Daha önce bir dosyada depolanan bir değerden bir nesne yüklemek için
 
-1. Aşağıdaki örnek, bir nesnenin daha önce bir dosyada depolanan bir değerden nasıl yüklenirolduğunu gösterir:
+1. Aşağıdaki örnek, daha önce bir dosyada depolanan bir değerden bir nesnenin nasıl yükleneceğini göstermektedir:
 
    [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]
 
-Genellikle, DECLARE_SERIALIZE makrosuyla beyan etmiş olması gereken `Serialize` -türetilmiş sınıfların `CObject`işlevlerinde bir arşiv aracılığıyla bir dosyaya veri depolar ve yüklersiniz. Bir `CArchive` nesneye yapılan başvuru `Serialize` işlevinize aktarılır. İşlevin `IsLoading` dosyadan `CArchive` veri yüklemek için çağrıldığını veya verileri dosyaya depolayıp depolamadığını belirlemek için nesnenin işlevini çağırırsınız. `Serialize`
+Genellikle, ' ın ' de `Serialize` `CObject` DECLARE_SERIALIZE makrosuna göre bildirdiğiniz, türetilmiş sınıfların işlevlerinde bulunan bir arşiv aracılığıyla bir dosyadan veri depolayıp yükler. Bir `CArchive` nesneye başvuru, `Serialize` işlevinizi geçti. `IsLoading` `CArchive` `Serialize` İşlevin, dosyadaki verileri yüklemek ya da verileri depolamak için döndürülüp çağrılmadığını anlamak için nesnesinin işlevini çağırın.
 
-Serileştirilebilir `Serialize` `CObject`türetilmiş sınıfın işlevi genellikle aşağıdaki formu oluşturur:
+`Serialize`Seri hale getirilebilir türetilmiş bir `CObject` sınıfın işlevi, genellikle aşağıdaki biçimdedir:
 
 [!code-cpp[NVC_MFCSerialization#9](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_3.cpp)]
 
-Yukarıdaki kod şablonu, AppWizard'ın belgenin `Serialize` işlevi için oluşturduğu şablonla tam `CDocument`olarak aynıdır (türetilmiş bir sınıf). Bu kod şablonu, aşağıdaki örnekte olduğu gibi, depolama kodu ve yükleme kodu her zaman paralel olması gerektiğinden, gözden geçirilmesi daha kolay kod yazmanıza yardımcı olur:
+Yukarıdaki kod şablonu, `Serialize` belgenin (öğesinden türetilmiş bir sınıf) işlevi için bir AppWizard tarafından oluşturulan ile tamamen aynıdır `CDocument` . Bu kod şablonu, aşağıdaki örnekte olduğu gibi, depolama kodu ve yükleme kodu her zaman paralel olması gerektiğinden, incelenmesi daha kolay olan kodu yazmanıza yardımcı olur:
 
 [!code-cpp[NVC_MFCSerialization#10](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_4.cpp)]
 
-Kitaplık, ** < ** ilk **>>** operand `CArchive` olarak tanımlar ve işleçler ve ikinci operand olarak aşağıdaki veri türleri ve sınıf türleri:
+Kitaplık, **<\<** and **>>** `CArchive` ilk işlenen olarak için İşleçleri ve ikinci işlenen olarak aşağıdaki veri türlerini ve sınıf türlerini tanımlar:
 
 ||||
 |-|-|-|
-|`CObject*`|**BÜYÜKLÜK** ve`CSize`|**float**|
-|**Kelime**|`CString`|**NOKTA** ve`CPoint`|
+|`CObject*`|**Boyut** ve`CSize`|**`float`**|
+|**SÖZCÜK**|`CString`|**Nokta** ve`CPoint`|
 |`DWORD`|**BYTE**|`RECT` ve `CRect`|
-|**Çift**|**Uzun**|`CTime` ve `CTimeSpan`|
-|`Int`|**Colecurrency**|`COleVariant`|
+|**Çift**|**KALACAĞıNı**|`CTime` ve `CTimeSpan`|
+|`Int`|**Colet para birimi**|`COleVariant`|
 |`COleDateTime`|`COleDateTimeSpan`||
 
 > [!NOTE]
-> Bir arşiv `CObject`üzerinden depolama ve yükleme ekstra dikkate gerektirir. Daha fazla bilgi için, [bir Arşiv üzerinden CObjects Depolama ve Yükleme](../mfc/storing-and-loading-cobjects-via-an-archive.md)bakın.
+> `CObject`Bir arşiv aracılığıyla depolamak ve yüklemek ek bir değerlendirme gerektirir. Daha fazla bilgi için bkz. [bir arşiv aracılığıyla CObjects depolama ve yükleme](../mfc/storing-and-loading-cobjects-via-an-archive.md).
 
-**CArchive <\< ** **>>** ve işleçleri her `CArchive` zaman ilk operand nesne, bir referans döndürür. Bu, aşağıda gösterildiği gibi operatörleri zincirlemenize olanak sağlar:
+**CArchive <\<** and **> > ** işleçleri, her zaman `CArchive` nesnenin ilk işleneni olan bir başvuru döndürür. Bu, aşağıda gösterildiği gibi işleçleri zincirlemenize olanak sağlar:
 
 [!code-cpp[NVC_MFCSerialization#11](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_5.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
+[Serileştirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)

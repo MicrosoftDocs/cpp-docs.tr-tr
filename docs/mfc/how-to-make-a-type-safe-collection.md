@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: 6ee4603f03ef8a95c218b0fe040e9606aab99ebb
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7e6b0a4181607feaf6e92f5d92d95cb055761aa4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620019"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228628"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma
 
@@ -63,7 +63,7 @@ Koleksiyonunuz öğesinden türetilmiş nesneleri depolularsa `CObject` ve bu `I
 
 ## <a name="using-nontemplate-collection-classes"></a><a name="_core_using_nontemplate_collection_classes"></a>Şablon olmayan koleksiyon sınıfları kullanma
 
-MFC Ayrıca MFC sürüm 1,0 ile tanıtılan koleksiyon sınıflarını da destekler. Bu sınıflar şablonları temel alır. Desteklenen türlerin,, ve türlerinin verilerini içermesi için kullanılabilirler `CObject*` `UINT` `DWORD` `CString` . Bu önceden tanımlı koleksiyonları (gibi `CObList` ), öğesinden türetilmiş nesnelerin koleksiyonlarını tutmak için kullanabilirsiniz `CObject` . MFC Ayrıca `UINT` , ve void işaretçiler (*) gibi temel türleri tutmak için önceden tanımlanmış diğer koleksiyonlar da sağlar `void` . Ancak genel olarak, daha belirli bir sınıfın ve türetme 'nin nesnelerini tutmak için kendi tür açısından güvenli koleksiyonlarınızı tanımlamak genellikle yararlıdır. Bu şekilde, şablonları temel alan koleksiyon sınıfları şablon tabanlı sınıfları kullanmaktan daha fazla çalışmadır.
+MFC Ayrıca MFC sürüm 1,0 ile tanıtılan koleksiyon sınıflarını da destekler. Bu sınıflar şablonları temel alır. Desteklenen türlerin,, ve türlerinin verilerini içermesi için kullanılabilirler `CObject*` `UINT` `DWORD` `CString` . Bu önceden tanımlı koleksiyonları (gibi `CObList` ), öğesinden türetilmiş nesnelerin koleksiyonlarını tutmak için kullanabilirsiniz `CObject` . MFC Ayrıca `UINT` , ve void işaretçiler () gibi temel türleri tutmak için önceden tanımlanmış diğer koleksiyonlar da sağlar **`void*`** . Ancak genel olarak, daha belirli bir sınıfın ve türetme 'nin nesnelerini tutmak için kendi tür açısından güvenli koleksiyonlarınızı tanımlamak genellikle yararlıdır. Bu şekilde, şablonları temel alan koleksiyon sınıfları şablon tabanlı sınıfları kullanmaktan daha fazla çalışmadır.
 
 Şablon olmayan koleksiyonlara sahip tür kullanımı uyumlu koleksiyonlar oluşturmanın iki yolu vardır:
 

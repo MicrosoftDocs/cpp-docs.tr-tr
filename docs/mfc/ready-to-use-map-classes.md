@@ -8,38 +8,38 @@ helpviewer_keywords:
 - classes [MFC], map
 - map classes [MFC]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
-ms.openlocfilehash: 6136557bd436fb9964498384f277d48e8525a027
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ed191525e11ca2a4d3f5b1c39e9b50b65066d7c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62254000"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228550"
 ---
 # <a name="ready-to-use-map-classes"></a>Kullanıma Hazır Eşleme Sınıfları
 
-Kullanıma hazır eşleme sınıfları sınıflardır.
+Aşağıdaki sınıflar, kullanıma yönelik eşleme sınıflarıdır.
 
 [CMapPtrToPtr](../mfc/reference/cmapptrtoptr-class.md)<br/>
-Kullanan **void** diğer bulmak için anahtarları gibi işaretçiler **void** işaretçileri.
+**`void`** Diğer işaretçileri bulmak için anahtarlar olarak işaretçileri kullanır **`void`** .
 
 [CMapPtrToWord](../mfc/reference/cmapptrtoword-class.md)<br/>
-Kullanan **void** işaretçileri tür veri bulmak için anahtar olarak **WORD**.
+**`void`** **Sözcük**türünde verileri bulmak için anahtar olarak işaretçileri kullanır.
 
 [CMapStringToOb](../mfc/reference/cmapstringtoob-class.md)<br/>
-Kullanan `CString` nesneleri bulmak için anahtar olarak `CObject` işaretçileri.
+`CString`İşaretçileri bulmak için nesneleri anahtar olarak kullanır `CObject` .
 
 [CMapStringToPtr](../mfc/reference/cmapstringtoptr-class.md)<br/>
-Kullanan `CString` nesneleri bulmak için anahtar olarak **void** işaretçileri.
+`CString`İşaretçileri bulmak için nesneleri anahtar olarak kullanır **`void`** .
 
 [CMapStringToString](../mfc/reference/cmapstringtostring-class.md)<br/>
-Kullanan `CString` nesneleri diğer bulmak için anahtar olarak `CString` nesneleri.
+`CString`Nesneleri diğer nesneleri bulmak için anahtar olarak kullanır `CString` .
 
 [CMapWordToOb](../mfc/reference/cmapwordtoob-class.md)<br/>
-Veri türü kullanan **WORD** bulmak için `CObject` işaretçileri.
+İşaretçileri bulmak için **Word** türünde verileri kullanır `CObject` .
 
 [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
-Veri türü kullanan **WORD** bulunacak **void** işaretçileri.
+İşaretçileri bulmak için **Word** türünde verileri kullanır **`void`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../mfc/class-library-overview.md)

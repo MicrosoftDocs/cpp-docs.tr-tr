@@ -11,18 +11,18 @@ helpviewer_keywords:
 - heap allocation [MFC]
 - detecting memory leaks [MFC]
 ms.assetid: a5d949c6-1b79-476e-9c66-513a558203d9
-ms.openlocfilehash: 1f0b07a0a3439faba71078af1e2d7d1559a42b41
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ecf60fbdd11f540d12c1bfab047bbb80a3cb83e8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626293"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228602"
 ---
 # <a name="memory-management-heap-allocation"></a>Bellek Yönetimi: Öbek Ayırma
 
-Yığın, programın bellek ayırma ihtiyaçları için ayrılmıştır. Program kodundan ve yığından ayrı bir alandır. Tipik C programları, yığın belleğini ayırmak ve **serbest** bırakmak için **malloc** ve ücretsiz işlevlerini kullanır. MFC 'nin hata ayıklama sürümü, C++ yerleşik işleçleri 'nin değiştirilmiş sürümlerini sağlar ve yığın bellekte nesneleri **ayırmak ve serbest** bırakmak için **silin** .
+Yığın, programın bellek ayırma ihtiyaçları için ayrılmıştır. Program kodundan ve yığından ayrı bir alandır. Tipik C programları, yığın belleğini ayırmak ve **serbest** bırakmak için **malloc** ve ücretsiz işlevlerini kullanır. MFC 'nin hata ayıklama sürümü, C++ yerleşik işleçleri 'nin değiştirilmiş sürümlerini sağlar **`new`** ve **`delete`** yığın bellekte nesneleri ayırır ve serbest bırakabilir.
 
-**Malloc** ve **ücretsiz**yerine **New** ve **Delete** kullandığınızda, sınıf kitaplığının bellek yönetimi hata ayıklama geliştirmelerinden faydalanabilir ve bu da bellek sızıntılarını algılamayla yararlı olabilir. Programınızı MFC 'nin yayın sürümüyle yapılandırdığınızda, **Yeni** ve **silme** işleçlerinin standart sürümleri belleği ayırmak ve serbest bırakmak için etkili bır yol sağlar (MFC 'nin yayın sürümü Bu işleçlerin değiştirilen sürümlerini sağlamaz).
+**`new`** Hem **`delete`** **malloc** hem de **ücretsiz**olarak kullandığınızda, sınıf kitaplığının bellek yönetimi hata ayıklama geliştirmelerinden yararlanabilirsiniz. Bu, bellek sızıntılarını algılamayla yararlı olabilir. Programınızı MFC 'nin yayın sürümüyle derlediğinizde, **`new`** ve işleçlerinin standart sürümleri **`delete`** belleği ayırmak ve serbest bırakmak için etkili bir yol sağlar (MFC 'nin yayın sürümü Bu işleçlerin değiştirilen sürümlerini sağlamaz).
 
 Yığında ayrılan nesnelerin toplam boyutunun yalnızca sisteminizin kullanılabilir sanal belleği ile sınırlı olduğunu unutmayın.
 

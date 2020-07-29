@@ -5,16 +5,16 @@ f1_keywords:
 - /guard
 - VC.Project.VCCLCompilerTool.ControlFlowGuard
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
-ms.openlocfilehash: e6a8a1545b97976cbe82d1c81b0e70c3dac3a266
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8661f94e0ee35f8d5e2c8caba1fc01bbf4072876
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270813"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87190695"
 ---
 # <a name="guard-enable-control-flow-guard"></a>/guard (Denetim Akışı Korumasını Etkinleştirme)
 
-Denetim akışı koruyucusu güvenlik denetimleri derleyici oluşturulmasını sağlar.
+Denetim akışı koruyucusu güvenlik denetimlerinin derleyicisini oluşturmayı etkinleştirin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -24,31 +24,31 @@ Denetim akışı koruyucusu güvenlik denetimleri derleyici oluşturulmasını s
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Guard: cf** seçenek neden olur, denetim akışı dolaylı çağrı hedefler için derleme zamanında çözümlemek derleyici ve çalışma zamanında hedefleri doğrulamak için kod eklenemedi. Varsayılan olarak, **/Guard: cf** kapalıdır ve açıkça etkinleştirilmesi gerekir. Açıkça bu seçeneği devre dışı bırakma, **/guard:cf-**.
+**/Guard: CF** seçeneği derleyicinin derleme zamanında dolaylı çağrı hedefleri için denetim akışını çözümlemesine ve sonra çalışma zamanında hedefleri doğrulamak üzere kod eklemesini sağlar. Varsayılan olarak, **/Guard: CF** kapalıdır ve açıkça etkin olmalıdır. Bu seçeneği açıkça devre dışı bırakmak için **/Guard: CF-** kullanın.
 
-**Visual Studio 2017 ve üzeri**: Cf için bu seçeneği ekler **geçiş** atlama tablo oluşturma deyimleri.
+**Visual Studio 2017 ve üzeri**: Bu seçenek **`switch`** , sıçrama tabloları oluşturan deyimler için koruyucuları ekler.
 
-Zaman **/Guard: cf** denetim akışı koruyucu (CFG) seçeneği belirtildiğinde, derleyici ve bağlayıcı kodunuzu tehlikeye girişimlerinin algılanmasına için ek çalışma zamanı güvenlik denetimleri Ekle. Derleme ve bağlama sırasında kod tüm dolaylı aramalar, doğru çalıştığı zaman, kod ulaşabileceği her konumu bulmak için analiz edilir. Bu bilgiler, ikili dosyalarınızı başlıklarına ek yapılardaki depolanır. Derleyici, ayrıca her dolaylı çağrı hedefi doğrulanmış konumlardan birine sağlar, kodunuzda önce bir denetimi ekler. Çalışma zamanında CFG kullanan bir işletim sistemi denetimi başarısız olursa, programın işletim sistemini kapatır.
+**/Guard: CF** denetim akışı koruyucusu (cfg) seçeneği belirtildiğinde, derleyici ve bağlayıcı, kodunuzun güvenliğinin aşılmasına yönelik denemeleri algılamak için ek çalışma zamanı güvenlik denetimleri ekler. Derleme ve bağlama sırasında, kodunuzdaki tüm dolaylı çağrılar, doğru çalıştırıldığında kodun ulaşabileceği her konumu bulacak şekilde çözümlenir. Bu bilgiler, ikili dosyalarınızdaki üst bilgilerdeki ek yapılar halinde depolanır. Derleyici Ayrıca kodunuzdaki her dolaylı çağrıdan önce bir denetim çıkarır ve hedefin doğrulanmış konumlardan biri olmasını sağlar. Denetim, CFG kullanan bir işletim sisteminde çalışma zamanında başarısız olursa, işletim sistemi programı kapatır.
 
-Ortak bir yazılım saldırı, aşırı ya da beklenmeyen girişler işlemedeki hata avantajlarından yararlanır. Uygulama için özenle hazırlanmış Giriş işaretçisi yürütülebilir kod içeren bir konum üzerine yazabilir. Bu kod saldırgan tarafından denetlenen denetim akışı yeniden yönlendirmek için kullanılabilir. CFG çalışma zamanı denetimleri, yürütülebilir dosya içinde veri bozulması hataları düzeltin değil. Bunlar bunun yerine daha zor bir saldırganın rastgele kod yürütmek için bunları kullanmayı kolaylaştırır. CFG aramalar işlev giriş noktaları kodunuzda dışındaki konumlara engelleyen bir risk azaltma aracıdır. Nasıl yapılır benzer Veri Yürütme Engellemesi (DEP) [/GS](gs-buffer-security-check.md) yığın denetimlerini ve [dynamıcbase](dynamicbase-use-address-space-layout-randomization.md) ve [/highentropyva](highentropyva-support-64-bit-aslr.md) adres alanı düzenini (aslr) düşük şansı kodunuzu yararlanma vektör haline gelir.
+Yazılım üzerinde yaygın bir saldırı, Extreme veya beklenmedik girdileri işlerken hataların avantajlarından yararlanır. Uygulamaya dikkatle hazırlanmış giriş, yürütülebilir kod işaretçisi içeren bir konumun üzerine yazabilir. Bu, denetim akışını saldırgan tarafından denetlenen koda yönlendirmek için kullanılabilir. CFG çalışma zamanı denetimleri çalıştırılabilirinizdeki veri bozulması hatalarını düzeltmez. Bunun yerine, bir saldırganın rastgele kod yürütmek için bunları kullanmasını daha zor hale getirir. CFG, kodunuzun işlev giriş noktaları dışındaki konumlara çağrıları engelleyen bir azaltma aracıdır. Veri Yürütme Engellemesi (DEP), [/GS](gs-buffer-security-check.md) Stack denetimleri ve [/DynamicBase](dynamicbase-use-address-space-layout-randomization.md) ve [/highentropyva](highentropyva-support-64-bit-aslr.md) adres alanı düzeni rastgele seçme (ASLR) kodunuzun bir yararlanma vektörü haline gelmesi ihtimaline benzer.
 
-**/Guard: cf** derleyici için seçeneği geçirilen ve CFG kullanan kodu oluşturmak için bağlayıcı yararlanma riskini azaltma tekniği. İkili dosyanız tek bir kullanılarak oluşturulmuşsa `cl` komutu, derleyici seçeneğini bağlayıcıya geçirir. Derleme ve ayrı ayrı bağlantı seçeneği derleyici ve bağlayıcı komutları ayarlamanız gerekir. Dynamıcbase bağlayıcı seçeneği de gereklidir. İkili dosyanıza, CFG veri olduğunu doğrulamak için `dumpbin /headers /loadconfig` komutu. CFG özellikli ikili dosyalarınız `Guard` EXE veya DLL özelliklerine ve koruma bayrakları listeye dahil `CF Instrumented` ve `FID table present`.
+CFG Exploit azaltma tekniğinin kullanıldığı kodu derlemek için, **/Guard: CF** seçeneğinin her ikisine de derleyiciye ve bağlayıcıya geçirilmesi gerekir. İkili 'niz tek bir komut kullanılarak derlenirse `cl` , derleyici seçeneği bağlayıcıya geçirir. Ayrı olarak derleyip bağlarsanız, bu seçenek hem derleyici hem de bağlayıcı komutlarında ayarlanmalıdır. /DYNAMICBASE bağlayıcı seçeneği de gereklidir. İkilinin CFG verilerini içerdiğini doğrulamak için `dumpbin /headers /loadconfig` komutunu kullanın. CFG özellikli ikililer `Guard` , exe veya dll özellikleri listesinde bulunur ve koruma bayrakları `CF Instrumented` ve içerir `FID table present` .
 
-**/Guard: cf** seçeneği ile uyumlu [/zi](z7-zi-zi-debug-information-format.md) (Düzenle ve devam et hata ayıklama bilgileri) veya [/CLR](clr-common-language-runtime-compilation.md) (ortak dil çalışma zamanı derlemesi).
+**/Guard: CF** seçeneği [/Zi](z7-zi-zi-debug-information-format.md) (hata ayıklama bilgilerini düzenle ve devam et) veya [/clr](clr-common-language-runtime-compilation.md) (ortak dil çalışma zamanı derlemesi) ile uyumsuzdur.
 
-Kullanarak derlenmiş kod **/Guard: cf** kitaplıklarına bağlı ve nesne seçeneğini kullanarak derlenmemiş dosyaları. Kullanarak ayrıca bağlı olduğunda yalnızca bu kod, **/Guard: cf** seçeneği ve CFG kullanan bir işletim sisteminde çalıştırmak, CFG koruma bulunur. Seçeneği olmadan derlenmiş kod, bir saldırı durdurmaz olduğundan, derleme kod seçeneğini kullanmanızı öneririz. CFG denetimleri için maliyet küçük bir çalışma zamanı, ancak derleyici analiz güvenli olarak kanıtlanmış dolaylı atlar denetimler koyma iyileştirmek çalışır.
+**/Guard: CF** kullanılarak derlenen kod, seçeneği kullanılarak derlenmediği kitaplıklara ve nesne dosyalarıyla bağlantılı olabilir. Bu kod, ayrıca **/Guard: CF** seçeneği KULLANıLARAK ve cfg ile uyumlu bir işletim sisteminde ÇALıŞTıRıLDıĞıNDA, cfg koruması vardır. Seçeneği olmadan derlenen kod bir saldırıyı durdurmayacak olduğundan, derleme yaptığınız tüm koddaki seçeneğini kullanmanızı öneririz. CFG denetimleri için küçük bir çalışma zamanı maliyeti vardır ancak derleyici analizi, güvenli olması için kendini kanıtlamış olan dolaylı atlamalar üzerinde denetimleri iyileştirmenize çalışır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri**, **C/C++**, **kod oluşturma**.
+1. **Yapılandırma özellikleri**, **C/C++**, **kod oluşturma**' yı seçin.
 
-1. Seçin **denetim akışı koruyucusu** özelliği.
+1. **Denetim akışı koruyucusu** özelliğini seçin.
 
-1. Dropdown denetimi seçin **Evet** denetim akışı koruyucusu, etkinleştirme veya **Hayır** devre dışı.
+1. Açılan denetimde Denetim akışı korumasını etkinleştirmek için **Evet** ' i veya devre dışı bırakmak için **Hayır** ' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -12,32 +12,32 @@ helpviewer_keywords:
 - reading files
 - writing to files [MFC]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
-ms.openlocfilehash: 6c4b2b21bbfa19fb73997f8475cfa9a4047dc0ca
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f68fd5c48bce214329437cc13fc39da0c3ca7d2b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371795"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228589"
 ---
 # <a name="reading-and-writing-files"></a>Dosyaları Okuma ve Yazma
 
-C çalışma zamanı kitaplığı dosya işleme işlevlerini kullandıysanız, MFC okuma ve yazma işlemleri tanıdık görünür. Bu makalede, doğrudan bir `CFile` nesneye okuma ve yazma açıklanır. [CArchive](../mfc/reference/carchive-class.md) sınıfıyla arabelleğe alan dosya G/Ç'yi de yapabilirsiniz.
+C çalışma zamanı kitaplığı dosya işleme işlevlerini kullandıysanız, MFC okuma ve yazma işlemleri tanıdık gelecektir. Bu makalede doğrudan bir nesneye doğrudan okuma ve doğrudan yazma açıklanmaktadır `CFile` . Ayrıca, [CArchive](../mfc/reference/carchive-class.md) sınıfı ile arabelleğe alınmış dosya g/ç 'yi de yapabilirsiniz.
 
 #### <a name="to-read-from-and-write-to-the-file"></a>Dosyadan okumak ve dosyaya yazmak için
 
-1. Dosyadaki `Read` `Write` verileri okumak ve yazmak için ve üye işlevleri kullanın.
+1. `Read` `Write` Dosyadaki verileri okumak ve yazmak için ve üye işlevlerini kullanın.
 
      -veya-
 
-1. `Seek` Üye işlev, dosya içinde belirli bir ofset taşımak için de kullanılabilir.
+1. `Seek`Üye işlevi, dosyanın içindeki belirli bir uzaklığa geçmek için de kullanılabilir.
 
-`Read`bir arabelleğe işaretçi alır ve okunacak bayt sayısını alır ve okunan baytların gerçek sayısını döndürür. Dosya sonu (EOF) ulaşıldığı için gerekli bayt sayısı okunamazsa, okunan bayt sayısı döndürülür. Herhangi bir okuma hatası oluşursa, bir özel durum atılır. `Write`' ye `Read`benzer, ancak yazılan bayt sayısı döndürülmez. Belirtilen tüm baytların yazılmadığını da içeren bir yazma hatası oluşursa, bir özel durum atılır. Geçerli `CFile` bir nesneniz varsa, aşağıdaki örnekte gösterildiği gibi ondan okuyabilir veya yazabilirsiniz:
+`Read`arabelleğin bir işaretçisini ve okunan bayt sayısını ve okunan gerçek bayt sayısını döndürür. Dosya sonu (EOF) değerine ulaşıldığından, gereken sayıda bayt okunamadı, okunan bayt sayısı değeri döndürülür. Herhangi bir okuma hatası oluşursa, bir özel durum oluşturulur. `Write`Şuna benzerdir `Read` , ancak yazılan bayt sayısı döndürülmez. Belirtilen baytları yazmadan bir yazma hatası oluşursa, bir özel durum oluşturulur. Geçerli bir `CFile` nesneniz varsa, bunu okuyabilir veya aşağıdaki örnekte gösterildiği gibi yazabilirsiniz:
 
 [!code-cpp[NVC_MFCFiles#2](../atl-mfc-shared/reference/codesnippet/cpp/reading-and-writing-files_1.cpp)]
 
 > [!NOTE]
-> Normalde bir **deneme**/**catch** özel durum işleme bloğu içinde giriş/çıkış işlemleri yürütmek gerekir. Daha fazla bilgi için [bkz.](../mfc/exception-handling-in-mfc.md)
+> Genellikle bir **`try`** / **`catch`** özel durum işleme bloğunda giriş/çıkış işlemleri gerçekleştirmeniz gerekir. Daha fazla bilgi için bkz. [özel durum işleme (MFC)](../mfc/exception-handling-in-mfc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosyalar](../mfc/files-in-mfc.md)
+[Dosyalarý](../mfc/files-in-mfc.md)

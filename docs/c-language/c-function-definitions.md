@@ -12,18 +12,18 @@ helpviewer_keywords:
 - function body
 - declaring functions, variables
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-ms.openlocfilehash: 5cf56375df417ac68b3e03d00f2bd7770ee571e8
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: a26f95f8fef2b52dac36dd5d33f826c73fd84eee
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857144"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228017"
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
 
 İşlev tanımı, işlevin adını, almayı beklediği parametrelerin türlerini ve sayısını ve dönüş türünü belirtir. Bir işlev tanımı Ayrıca yerel değişkenlerinin bildirimlerine sahip bir işlev gövdesini ve işlevin ne yaptığını belirleyecek deyimleri de içerir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 *çeviri birimi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirim* <br/>
@@ -81,13 +81,13 @@ Eski stil işlev tanımındaki parametre listesi bu söz dizimini kullanır:
 *bileşik ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
 
-Bir işlev bildirimini değiştirebilen tek depolama sınıfı belirticileri **extern** ve **statiktir**. **Extern** Belirleyicisi, işleve diğer dosyalardan başvurulduğunu belirtir; diğer bir deyişle, işlev adı bağlayıcıya aktarılmalıdır. **Statik** belirtici, işleve diğer dosyalardan başvurulmadığını belirtir; diğer bir deyişle, ad bağlayıcı tarafından aktarılmaz. Bir işlev tanımında hiçbir depolama sınıfı görünürse, **extern** varsayılır. Herhangi bir durumda, işlev her zaman tanım noktasından dosyanın sonuna kadar görünür olur.
+Bir işlev bildirimini değiştirebilen tek depolama sınıfı belirticileri **`extern`** ve ' dir **`static`** . **`extern`** Belirtici, işleve diğer dosyalardan başvurulduğunu belirtir; diğer bir deyişle, işlev adı bağlayıcıya aktarılabilir. **`static`** Belirtici, işleve diğer dosyalardan başvurulmadığını belirtir; diğer bir deyişle, ad bağlayıcı tarafından aktarılmaz. Bir işlev tanımında hiçbir depolama sınıfı görünürse **`extern`** varsayılır. Herhangi bir durumda, işlev her zaman tanım noktasından dosyanın sonuna kadar görünür olur.
 
 İsteğe bağlı *Bildirim belirticileri* ve zorunlu *Bildirimciler* birlikte işlevin dönüş türünü ve adını belirtir. *Bildirimci* , işlev adından sonra işlevi ve ayraçları isimeden tanımlayıcının bir birleşimidir. İsteğe bağlı *öznitelik-Seq* & gt, [işlev özniteliklerinde](../c-language/function-attributes.md)tanımlanmış, Microsoft 'a özgü bir özelliktir.
 
 *Doğrudan bildirimci* ( *bildirimci* sözdiziminde), tanımlanmakta olan işlevin adını ve parametrelerinin tanımlayıcılarını belirtir. *Doğrudan bildirimci* bir *parametre türü listesi*içeriyorsa, liste tüm parametrelerin türlerini belirtir. Bu tür bir bildirimci, daha sonra işlevine çağrılar için bir işlev prototipi işlevi görür.
 
-İşlev tanımlarındaki *bildirim listesindeki* bir *bildirimde* , **yazmaç**dışında bir *depolama sınıfı belirticisi* bulunamaz. *Bildirim tanımlayıcıları* sözdiziminde *tür belirleyicisi* , yalnızca bir **int** türü değeri için **yazmaç** depolama sınıfı belirtilmişse atlanabilir.
+İşlev tanımlarındaki *bildirim listesindeki* bir *bildirimde* , dışında bir *depolama sınıfı belirticisi* bulunamaz **`register`** . *Bildirim tanımlayıcıları* sözdiziminde *tür belirleyicisi* , yalnızca **`register`** depolama sınıfı türündeki bir değer için belirtilmişse atlanabilir **`int`** .
 
 *Bileşik deyim* , yerel değişken bildirimlerini, dışarıdan tanımlanmış öğelere başvuruları ve deyimleri içeren işlev gövdesidir.
 

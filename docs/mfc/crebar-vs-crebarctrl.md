@@ -1,19 +1,19 @@
 ---
-title: CReBar ile CReBarCtrl
+title: CReBar ile CReBarCtrl Karşılaştırması
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CReBar class [MFC], vs. CReBarCtrl
 - rebar controls [MFC], CReBarCtrl class [MFC]
 - GetReBarCtrl class [MFC]
 ms.assetid: 7f9c1d7e-5d5f-4956-843c-69ed3df688d0
-ms.openlocfilehash: 05decc095e43426044c4487b9aca05268642f915
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d58efa3c0dfb888f0802a84b11ec597dd1267de6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620454"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228641"
 ---
-# <a name="crebar-vs-crebarctrl"></a>CReBar ile CReBarCtrl
+# <a name="crebar-vs-crebarctrl"></a>CReBar ile CReBarCtrl Karşılaştırması
 
 MFC, yeniden çubuklar oluşturmak için iki sınıf sağlar: [CReBar](reference/crebar-class.md) ve [CReBarCtrl](reference/crebarctrl-class.md) (Windows ortak denetim API 'sini sarmalayan). `CReBar`, Rebar ortak denetiminin tüm işlevlerini sağlar ve sizin için gerekli ortak denetim ayarlarının ve yapıların çoğunu işler.
 
@@ -24,7 +24,7 @@ Visual C++, Rebar ortak denetiminden faydalanmak için iki yol sağlar.
 - Kullanarak yeniden çubuğu oluşturun `CReBar` ve ardından üye işlevlerine erişmek Için [CReBar:: GetReBarCtrl](reference/crebar-class.md#getrebarctrl) ' i çağırın `CReBarCtrl` .
 
     > [!NOTE]
-    >  `CReBar::GetReBarCtrl`, Rebar nesnesinin **Bu** işaretçisini oluşturan bir satır içi üye işlevidir. Bu, çalışma zamanında işlev çağrısının ek yükü olmayacağı anlamına gelir.
+    >  `CReBar::GetReBarCtrl`, Rebar nesnesinin işaretçisini oluşturan bir satır içi üye işlevidir **`this`** . Bu, çalışma zamanında işlev çağrısının ek yükü olmayacağı anlamına gelir.
 
 - [CReBarCtrl](reference/crebarctrl-class.md)oluşturucuyu kullanarak yeniden çubuğu oluşturun.
 
