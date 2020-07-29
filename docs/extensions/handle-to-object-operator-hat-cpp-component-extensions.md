@@ -5,28 +5,28 @@ ms.topic: reference
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-ms.openlocfilehash: 3d08b2294da1599282feeb1739331c31d64a9e59
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f09fd5f112e3538fa2d7fb04c755031d413de9b8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81358325"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225156"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>İşlenecek Nesne İşleci (^) (C++/CLI ve C++/CX)
 
-*Tutamaç bildirimcisi* `^`( , "şapka" olarak telaffuz edilir), sistem nesnenin artık erişilemeyecegini belirlerken bildirilen nesnenin otomatik olarak silinmesi anlamına gelen tür [belirteçini](../cpp/overview-of-declarators.md) değiştirir.
+*Tanıtıcı bildirimci* ( `^` , "hat"), tür [belirticisini](../cpp/overview-of-declarators.md) , sistem nesnenin artık erişilebilir olmadığını belirlediğinde, belirtilen nesnenin otomatik olarak silinmesi gerektiği anlamına gelir.
 
-## <a name="accessing-the-declared-object"></a>Bildirilen Nesneye Erişim
+## <a name="accessing-the-declared-object"></a>Belirtilen nesneye erişme
 
-Tutamaç bildirimcisi ile bildirilen bir değişken nesneye işaretçi gibi bakar. Ancak, değişken tüm nesneye işaret eder, nesnenin bir üyesini işaret edemez ve işaretçi aritmetik desteklemez. Nesneye erişmek için`*`yön verme işleci () ve nesnenin bir üyesine erişmek için ok üye erişim işleci ()`->`kullanın.
+Tanıtıcı bildirimci ile tanımlanmış bir değişken, nesnesine bir işaretçi gibi davranır. Ancak, değişkeni nesnenin tamamına işaret eder, nesnenin bir üyesini işaret edemez ve işaretçi aritmetiğini desteklemez. Nesneye erişmek için yöneltme işlecini ( `*` ) ve `->` nesnenin üyesine erişmek için ok üye erişim işlecini () kullanın.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Derleyici, nesnenin artık kullanılıp kullanılılıp kullanılmamadığını ve silinip silinemeyediğini belirlemek için COM *referans sayım* mekanizmasını kullanır. Windows Runtime arabiriminden türetilen bir nesne aslında bir COM nesnesi olduğundan bu mümkündür. Nesne oluşturulduğunda veya kopyalandığında başvuru sayısı artar ve nesne null olarak ayarlandığında veya kapsam dışına çıktığında verilir. Başvuru sayısı sıfıra giderse, nesne otomatik olarak ve hemen silinir.
+Derleyici, nesnenin artık kullanılmadığını ve silinemediğini anlamak için COM *başvuru sayma* mekanizmasını kullanır. Bu, Windows Çalışma Zamanı arabiriminden türetilen bir nesne gerçekten bir COM nesnesi olduğundan mümkündür. Başvuru sayısı, nesne oluşturulduğunda veya kopyalandığında artırılır ve nesne null ya da kapsam dışına geçtiğinde azaltılır. Başvuru sayısı sıfır olursa, nesne otomatik olarak ve hemen silinir.
 
-Tanıtıcının avantajı, COM'da sıkıcı ve hataya açık bir işlem olan bir nesnenin başvuru sayısını açıkça yönetmeniz olmasıdır. Diğer bir deyişle, başvuru sayısını artım ve karara eklemek için nesnenin AddRef() ve Release() yöntemlerini aramanız gerekir. Ancak, tutamaç bildirimcisi olan bir nesneyi bildirirseniz, derleyici başvuru sayısını otomatik olarak ayarlayan kod oluşturur.
+Tanıtıcı bildirimcisinin avantajı, COM içinde, sıkıcı ve hataya açık bir işlem olan bir nesnenin başvuru sayısını açıkça yönetmeniz gerekir. Diğer bir deyişle, başvuru sayısını artırmak ve azaltmak için nesnenin AddRef () ve Release () yöntemlerini çağırmanız gerekir. Ancak, tanıtıcı bildirimci ile bir nesne bildirirseniz derleyici, başvuru sayısını otomatik olarak ayarlayan kodu oluşturur.
 
-Bir nesneyi anlık olarak nasıl anons edineceğime ilişkin bilgi için [ref new'e](ref-new-gcnew-cpp-component-extensions.md)bakın.
+Bir nesnenin örneğini oluşturma hakkında daha fazla bilgi için bkz. [Yeni başvuru](ref-new-gcnew-cpp-component-extensions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -34,15 +34,15 @@ Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Sistem, nesnenin artık kullanılıp kullanılılıp kullanılamadığını ve silinip silinemeyediğini belirlemek için CLR *çöp toplayıcı* mekanizmasını kullanır. Ortak dil çalışma süresi, nesneleri ayırdığı bir yığın tutar ve programınızda yönetilen başvuruları (değişkenler) kullanır ve yığındaki nesnelerin konumunu gösterir. Bir nesne artık kullanılmadığında, yığında kapaldığı bellek serbest bırakılır. Çöp toplayıcı, serbest bırakılan belleği daha iyi kullanmak için yığını düzenli aralıklarla sıkıştırıyor. Yığın sıkıştırma, yönetilen başvurular tarafından başvurulan konumları geçersiz kılınan yığınları üzerinde nesneleri taşıyabilir. Ancak, çöp toplayıcı tüm yönetilen başvuruların konumunun farkındadır ve yığındaki nesnelerin geçerli konumunu belirtmek için bunları otomatik olarak güncelleştirir.
+Sistem, nesnenin artık kullanılmadığını ve silinemediğini anlamak için CLR *çöp toplayıcı* mekanizmasını kullanır. Ortak dil çalışma zamanı, nesneleri ayırdığı bir yığını korur ve programınızda bulunan nesnelerin konumunu belirtmek için programınızdaki yönetilen başvuruları (değişkenler) kullanır. Bir nesne artık kullanılmıyorsa, yığında kapladığı bellek serbest bırakılır. Düzenli olarak, çöp toplayıcı serbest bırakılan belleği daha iyi kullanmak için yığını sıkıştırır. Yığın sıkıştırılırken, yönetilen başvuruların başvurduğu konumları geçersiz kılan yığında nesneler öbek üzerinde taşınabilir. Ancak, çöp toplayıcı tüm yönetilen başvuruların konumunu algılar ve bunları yığındaki nesnelerin geçerli konumunu belirtecek şekilde otomatik olarak güncelleştirir.
 
-Yerel C++ işaretçileri (`*``&`) ve başvurular ( ) yönetilen başvurular olmadığından, çöp toplayıcı işaret ettikleri adresleri otomatik olarak güncelleştiremez. Bu sorunu çözmek için, çöp toplayıcısının farkında olduğu ve otomatik olarak güncelleştirebileceği bir değişken belirtmek için tutamaç bildirimini kullanın.
+Yerel C++ işaretçileri ( `*` ) ve başvuruları ( `&` ) yönetilen başvurular olmadığından, çöp toplayıcı işaret ettikleri adresleri otomatik olarak güncelleştiremez. Bu sorunu çözmek için, çöp toplayıcısının farkında olduğu ve otomatik olarak güncelleştirebildiği bir değişken belirtmek için tanıtıcı bildirimci ' i kullanın.
 
-Daha fazla bilgi için [bkz: Yerel Türlerde Tanıtıcıları Nasıl Bildirin.](../dotnet/how-to-declare-handles-in-native-types.md)
+Daha fazla bilgi için bkz. [nasıl yapılır: yerel türlerde Işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md).
 
 ### <a name="examples"></a>Örnekler
 
-Bu örnek, yönetilen yığında bir başvuru türünün örneğinin nasıl oluşturulacağını gösterir.  Bu örnek ayrıca, yönetilen, çöp toplanmış yığında aynı nesneye iki başvuru yla sonuçlanan bir tutamacı başka bir işlemle başolarak açabileceğinizi de gösterir. Bir tanıtıcıya [nullptr](nullptr-cpp-component-extensions.md) atamanın çöp toplama nesnesini işaretlemediğini unutmayın.
+Bu örnek, yönetilen yığında bir başvuru türü örneğinin nasıl oluşturulacağını gösterir.  Bu örnek ayrıca, bir tanıtıcıyı başka bir tanıtıcı başlatabilir ve bu, yönetilen, atık toplanmış yığında aynı nesneye iki başvuru oluşmasına neden olur. Bir tanıtıcıya [nullptr](nullptr-cpp-component-extensions.md) atamanın, çöp toplama için nesneyi işaretlemediğine dikkat edin.
 
 ```cpp
 // mcppv2_handle.cpp
@@ -74,7 +74,7 @@ int main() {
 2
 ```
 
-Aşağıdaki örnek, nesne türünün kutulanmış bir değer türü olduğu yönetilen yığındaki bir nesneye tanıtıcının nasıl bildireceğini gösterir. Örnek, kutulu nesneden değer türünü nasıl alacağını da gösterir.
+Aşağıdaki örnek, bir nesnenin türünün paketlenmiş bir değer türü olduğu yönetilen yığında bir nesne için nasıl bir tanıtıcı bildirimi yapıldığını gösterir. Örnek ayrıca kutulanmış nesneden değer türünün nasıl alınacağını gösterir.
 
 ```cpp
 // mcppv2_handle_2.cpp
@@ -104,7 +104,7 @@ Not a boxed int
 100
 ```
 
-Bu örnek, rasgele bir nesneyi işaret `void*` etmek için işaretçi kullanmanın ortak `Object^`C++ deyiminin, herhangi bir başvuru sınıfına tutamacı tutabilen bir sözcük ile değiştirilmeye başvurulduğunu gösterir. Ayrıca, diziler ve temsilciler gibi tüm türlerin nesne tanıtıcısına dönüştürülebileceğini de gösterir.
+Bu örnek **`void*`** , rastgele bir nesneyi işaret etmek için bir işaretçi kullanmanın ortak C++ deyim sayısının `Object^` , herhangi bir başvuru sınıfına yönelik bir tanıtıcı tutan, tarafından değiştirildiğini gösterir. Ayrıca, diziler ve temsilciler gibi tüm türlerin bir nesne tanıtıcısına dönüştürülebileceğini gösterir.
 
 ```cpp
 // mcppv2_handle_3.cpp
@@ -149,7 +149,7 @@ Type is System.Int32
 Type is MyDel
 ```
 
-Bu örnek, bir tanıtıcının referanstan arındırılmış olabileceğini ve bir üyeye dereferenced tutamacı aracılığıyla erişilebileni gösterir.
+Bu örnek, bir tanıtıcının başvurulduğunu ve bir üyeye başvurusu kaldırılmış bir tanıtıcı aracılığıyla erişilebilir olduğunu gösterir.
 
 ```cpp
 // mcppv2_handle_4.cpp
@@ -195,7 +195,7 @@ Array value: 7
 Cannot access array element 11, size is 10
 ```
 
-Bu örnek, yerel bir`&`başvurunun yönetilen bir türün **int** üyesine bağlanamayabileceğini, çünkü **int'in** toplanan çöp yığınında depolanabileceğini ve yerel başvuruların yönetilen yığındaki nesne hareketini izlemediğini gösterir. Düzeltme, yerel bir değişken kullanmak veya `&` `%`onu izleme başvurusu yapmak olarak değiştirmektir.
+Bu örnek, yerel bir başvurunun ( `&` ) **`int`** yönetilen bir türün üyesine bağlanamaz, çünkü **`int`** atık toplanan yığında depolanabilir ve yerel başvurular yönetilen yığında nesne hareketini izlemez. Bu, yerel bir değişken kullanmak veya `&` olarak değiştirmek `%` , bir izleme başvurusu yapmak için kullanılır.
 
 ```cpp
 // mcppv2_handle_5.cpp
@@ -223,5 +223,5 @@ Derleyici seçeneği:`/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
-[İzleme Başvurusu İşleci](tracking-reference-operator-cpp-component-extensions.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[İzleme başvurusu Işleci](tracking-reference-operator-cpp-component-extensions.md)

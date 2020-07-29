@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-ms.openlocfilehash: 9c5c2824778a679627bd3008276849890f43ac7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 31962e3e7e4af63ec07ad569f7f72782b194032c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190696"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225182"
 ---
 # <a name="resource-compiler-error-rw2002"></a>Kaynak Derleyicisi Hatası RW2002
 
@@ -21,7 +21,7 @@ Ayrıştırma hatası
 
 1. **Hızlandırıcı türü gerekli (ASCII veya VIRTKEY)**
 
-   **Hızlandırıcılar** deyimindeki `type` alanı ASCII ya da VIRTKEY değerini içermelidir.
+   **Hızlandırıcılar** deyimindeki *tür* alanı ASCII ya da virtkey değerini içermelidir.
 
 1. **Hızlandırıcı tablosunda başlatma bekleniyor**
 
@@ -49,7 +49,7 @@ Ayrıştırma hatası
 
 1. **Denetim karakteri Aralık dışında [^ A-^ Z]**
 
-   **Hızlandırıcılar** deyimindeki bir denetim karakteri geçersiz. Giriş işaretini ( **^** ) Izleyen karakter bir ile Z (dahil) arasında olmalıdır.
+   **Hızlandırıcılar** deyimindeki bir denetim karakteri geçersiz. Şapka işaretini () izleyen karakter **^** ve Z (dahil) arasında olmalıdır.
 
 1. **Boş menülere izin verilmiyor**
 
@@ -65,11 +65,11 @@ Ayrıştırma hatası
 
 1. **Hızlandırıcı tablosunda virgül bekleniyor**
 
-   Kaynak derleyicisi, **Hızlandırıcılar** deyimindeki `event` ve *ıdvalue* alanları arasında bir virgül gerektirir.
+   Kaynak derleyicisi, **Hızlandırıcılar** deyimindeki *Event* ve *ıdvalue* alanları arasında virgül gerektirir.
 
 1. **Beklenen denetim sınıfı adı**
 
-   **İletişim** deyimindeki bir **Denetim** ifadesinin `class` alanı şu TÜRLERDEN biri OLMALıDıR: düğme, ComboBox, düzenleme, LISTBOX, kaydırma çubuğu, statik veya Kullanıcı tanımlı. Sınıfın doğru yazıldığından emin olun.
+   **İletişim** deyimindeki bir **Denetim** ifadesinin *sınıf* alanı şu TÜRLERDEN biri OLMALıDıR: düğme, ComboBox, düzenleme, LISTBOX, kaydırma çubuğu, statik veya Kullanıcı tanımlı. Sınıfın doğru yazıldığından emin olun.
 
 1. **Beklenen yazı tipi yüzü adı**
 
@@ -85,11 +85,11 @@ Ayrıştırma hatası
 
 1. **Beklenen sayısal komut değeri**
 
-   Kaynak derleyicisi, **Hızlandırıcılar** bildiriminde bir sayısal *ıdvalue* alanı bekliyordu. Değeri belirtmek için `#define` sabiti kullandığınızdan ve sabitin doğru yazıldığından emin olun.
+   Kaynak derleyicisi, **Hızlandırıcılar** bildiriminde bir sayısal *ıdvalue* alanı bekliyordu. `#define`Değeri belirtmek için bir sabit kullandıysanız ve sabitin doğru yazıldığından emin olun.
 
 1. **Dize tablosunda sayısal sabit bekleniyor**
 
-   Bir `#define` ifadesinde tanımlanan sayısal bir sabit, bir **StringTable** deyimindeki **BEGIN** anahtar sözcüğünü hemen izlemelidir.
+   Bir ifadede tanımlanan sayısal bir sabit, bir `#define` **StringTable** deyimindeki **BEGIN** anahtar sözcüğünü hemen izlemelidir.
 
 1. **Beklenen sayısal nokta boyutu**
 
@@ -105,19 +105,19 @@ Ayrıştırma hatası
 
 1. **Beklenen dize veya sabit Hızlandırıcı komutu**
 
-   Kaynak derleyicisi hızlandırıcı için ne tür bir anahtar ayarlanmakta olduğunu saptayamadı. **Hızlandırıcılar** deyimindeki `event` alanı geçersiz olabilir.
+   Kaynak derleyicisi hızlandırıcı için ne tür bir anahtar ayarlanmakta olduğunu saptayamadı. **Hızlandırıcılar** deyimindeki *olay* alanı geçersiz olabilir.
 
 1. **KIMLIK için sayı bekleniyor**
 
-   **İletişim** deyimindeki bir denetim ifadesinin `id` alanı için bir sayı bekleniyor. Denetim KIMLIĞI için bir sayı veya `#define` deyiminiz olduğundan emin olun.
+   **İletişim** deyimindeki bir denetim ifadesinin *ID* alanı için bir sayı bekleniyor. Denetim KIMLIĞI için bir sayı veya deyiminiz olduğundan emin olun `#define` .
 
 1. **İletişim sınıfında tırnak içinde dize bekleniyor**
 
-   **Iletişim KUTUSUNDAKI** sınıf seçeneğinin `class` alanı, çift tırnak işareti içine alınmış bir tamsayı veya dize olmalıdır.
+   **Iletişim KUTUSUNDAKI** sınıf seçeneğinin *sınıf* alanı, çift tırnak işareti içine alınmış bir tamsayı veya dize olmalıdır.
 
 1. **İletişim kutusunda tırnak işaretli dize bekleniyor**
 
-   **Iletişim KUTUSUNDAKI** CAPTION seçeneğinin `captiontext` alanı, çift tırnak işareti içine alınmış bir ASCII karakter dizesi olmalıdır.
+   **DIALOG** deyimindeki CAPTION seçeneğinin *CaptionText* alanı, çift tırnak IŞARETI içine alınmış bir ASCII karakter dizesi olmalıdır.
 
 1. **Dosya bulunamadı: dosya adı**
 
@@ -129,11 +129,11 @@ Ayrıştırma hatası
 
 1. **Geçersiz Hızlandırıcı**
 
-   **Hızlandırıcılar** deyimindeki bir `event` alanı tanınmıyor veya en fazla iki karakter uzunluğunda.
+   **Hızlandırıcılar** deyimindeki bir *olay* alanı tanınmıyor veya en fazla iki karakter uzunluğunda.
 
 1. **Geçersiz Hızlandırıcı türü (ASCII veya VIRTKEY)**
 
-   **Hızlandırıcılar** deyimindeki `type` alanı ASCII ya da VIRTKEY değerini içermelidir.
+   **Hızlandırıcılar** deyimindeki *tür* alanı ASCII ya da virtkey değerini içermelidir.
 
 1. **Geçersiz denetim karakteri**
 
@@ -149,7 +149,7 @@ Ayrıştırma hatası
 
 1. **Denetimde beklenen metin dizesi veya sıra sayısı**
 
-   **İletişim** deyimindeki bir **Denetim** ifadesinin *metin* alanı, denetim türüne bir metin dizesi veya bir sıralı başvuru olmalıdır. Sıra kullanılıyorsa, denetim için bir `#define` bildirimine sahip olduğunuzdan emin olun.
+   **İletişim** deyimindeki bir **Denetim** ifadesinin *metin* alanı, denetim türüne bir metin dizesi veya bir sıralı başvuru olmalıdır. Sıra kullanılıyorsa, denetim için bir deyiminiz olduğundan emin olun `#define` .
 
 1. **Eşleşmeyen parantezler**
 

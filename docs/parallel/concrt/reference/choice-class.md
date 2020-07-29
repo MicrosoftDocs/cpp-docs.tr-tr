@@ -20,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-ms.openlocfilehash: 3e718d0d34580d3bf2f13937159e431134631218
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: a5b9bc26b6d9ec66dc74e7adaad31eea1eece118
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142212"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224987"
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 
-`choice` mesajlaşma bloğu, bir kaynak kümesiyle denetim akışı etkileşimini temsil eden çok kaynaklı, tek hedef bir bloğudur. Seçim bloğu, birden fazla kaynağın bir ileti oluşturmasını ve iletiyi üreten kaynağın dizinini yaymasını bekler.
+`choice`İleti bloğu, bir kaynak kümesiyle denetim akışı etkileşimini temsil eden çok kaynaklı, tek hedef bir bloğudur. Seçim bloğu, birden fazla kaynağın bir ileti oluşturmasını ve iletiyi üreten kaynağın dizinini yaymasını bekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<
@@ -42,8 +42,8 @@ class choice: public ISource<size_t>;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Giriş kaynaklarının yüklerini temsil eden `tuple`tabanlı bir tür.
+*T*<br/>
+`tuple`Giriş kaynaklarının yüklerini temsil eden tabanlı bir tür.
 
 ## <a name="members"></a>Üyeler
 
@@ -51,31 +51,31 @@ Giriş kaynaklarının yüklerini temsil eden `tuple`tabanlı bir tür.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`type`|`T`için bir tür diğer adı.|
+|`type`|İçin bir tür diğer adı `T` .|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[seçe](#ctor)|Fazla Yüklendi. `choice` mesajlaşma bloğu oluşturur.|
-|[~ Choice yok edici](#dtor)|`choice` mesajlaşma bloğunu yok eder.|
+|[seçe](#ctor)|Fazla Yüklendi. `choice`İleti bloğu oluşturur.|
+|[~ Choice yok edici](#dtor)|`choice`Mesajlaşma bloğunu yok eder.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ettiğinizde](#accept)|Bu `choice` bloğu tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.|
-|[acquire_ref](#acquire_ref)|Silmeyi engellemek için bu `choice` mesajlaşma bloğunda bir başvuru sayısı alır.|
-|[kullanan](#consume)|Daha önce bu `choice` mesajlaşma bloğunun sunduğu ve hedef tarafından başarıyla ayrılmış olan bir ileti tüketir ve bu, sahipliği çağırana aktarılarak.|
+|[ettiğinizde](#accept)|Bu blok tarafından sunulan `choice` ve sahipliği çağırana aktaran bir iletiyi kabul eder.|
+|[acquire_ref](#acquire_ref)|`choice`Silmeyi engellemek için bu mesajlaşma bloğunda bir başvuru sayısı alır.|
+|[kullanan](#consume)|Bu mesajlaşma bloğunun daha önce sunduğu `choice` ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.|
 |[has_value](#has_value)|Bu `choice` mesajlaşma bloğunun henüz bir değer ile başlatılmış olup olmadığını denetler.|
-|[indeks](#index)|`choice` mesajlaşma bloğunun seçtiği öğeyi temsil eden `tuple` bir dizin döndürür.|
-|[link_target](#link_target)|Hedef bloğu bu `choice` mesajlaşma bloğuna bağlar.|
+|[indeks](#index)|`tuple`İleti bloğu tarafından seçilen öğeyi temsil eden öğesine bir dizin döndürür `choice` .|
+|[link_target](#link_target)|Bu mesajlaşma bloğuna bir hedef bloğu bağlar `choice` .|
 |[Yayın](#release)|Önceki başarılı bir ileti ayırmasını serbest bırakır.|
-|[release_ref](#release_ref)|Bu `choice` mesajlaşma bloğunda bir başvuru sayısı yayınlar.|
-|[ayırmaya](#reserve)|Daha önce bu `choice` mesajlaşma bloğunun sunduğu bir iletiyi ayırır.|
-|[unlink_target](#unlink_target)|Hedef bloğunun bu `choice` mesajlaşma bloğundan bağlantısını kaldırır.|
-|[unlink_targets](#unlink_targets)|Bu `choice` mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır. ( [ISource:: unlink_targets](isource-class.md#unlink_targets)geçersiz kılar)|
-|[value](#value)|`choice` mesajlaşma bloğu tarafından dizini seçilmiş olan iletiyi alır.|
+|[release_ref](#release_ref)|Bu mesajlaşma bloğunda bir başvuru sayısı yayınlar `choice` .|
+|[Rezerve et](#reserve)|Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `choice` .|
+|[unlink_target](#unlink_target)|Bu mesajlaşma bloğundan bir hedef bloğunun bağlantısını kaldırır `choice` .|
+|[unlink_targets](#unlink_targets)|Bu mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır `choice` . ( [ISource:: unlink_targets](isource-class.md#unlink_targets)geçersiz kılar)|
+|[deeri](#value)|Dizini mesajlaşma bloğu tarafından seçilmiş olan iletiyi alır `choice` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -95,9 +95,9 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept"></a>ettiğinizde
+## <a name="accept"></a><a name="accept"></a>ettiğinizde
 
-Bu `choice` bloğu tarafından sunulan ve sahipliği çağırana aktaran bir iletiyi kabul eder.
+Bu blok tarafından sunulan `choice` ve sahipliği çağırana aktaran bir iletiyi kabul eder.
 
 ```cpp
 virtual message<size_t>* accept(
@@ -108,18 +108,18 @@ virtual message<size_t>* accept(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Sunulan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Sunulan `message` nesne.
 
 *_PTarget*<br/>
-`accept` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `accept` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Çağıranın artık sahipliği olan iletinin bir işaretçisi.
 
-## <a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
 
-Silmeyi engellemek için bu `choice` mesajlaşma bloğunda bir başvuru sayısı alır.
+`choice`Silmeyi engellemek için bu mesajlaşma bloğunda bir başvuru sayısı alır.
 
 ```cpp
 virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
@@ -132,11 +132,11 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `link_target` yöntemi sırasında bu kaynağa bağlanmakta olan bir `ITarget` nesnesi tarafından çağırılır.
+Bu yöntem `ITarget` , yöntemi sırasında bu kaynağa bağlanan bir nesne tarafından çağırılır `link_target` .
 
-## <a name="ctor"></a>seçe
+## <a name="choice"></a><a name="ctor"></a>seçe
 
-`choice` mesajlaşma bloğu oluşturur.
+`choice`İleti bloğu oluşturur.
 
 ```cpp
 explicit choice(
@@ -157,34 +157,34 @@ choice(
 ### <a name="parameters"></a>Parametreler
 
 *_Tuple*<br/>
-Seçim için kaynakların `tuple`.
+`tuple`Seçim için bir kaynak.
 
 *_PScheduler*<br/>
-`choice` mesajlaşma bloğunun yayma görevinin içinde `Scheduler` nesnesi zamanlandı.
+`Scheduler` `choice` Mesajlaşma bloğunun yayma görevinin zamanlandığı nesne.
 
 *_PScheduleGroup*<br/>
-`choice` mesajlaşma bloğunun yayma görevinin içinde `ScheduleGroup` nesnesi zamanlandı. Kullanılan `Scheduler` nesnesi, zamanlama grubu tarafından kapsanıyor.
+`ScheduleGroup` `choice` Mesajlaşma bloğunun yayma görevinin zamanlandığı nesne. `Scheduler`Kullanılan nesne, zamanlama grubu tarafından kapsanıyor.
 
 *_Choice*<br/>
-Kopyalamanın `choice` bir mesajlaşma bloğu. Özgün nesnenin yalnız bırakılmış olduğunu ve bunu bir taşıma Oluşturucusu yapmayı unutmayın.
+`choice`Kopyalamanın bir ileti bloğu. Özgün nesnenin yalnız bırakılmış olduğunu ve bunu bir taşıma Oluşturucusu yapmayı unutmayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`_PScheduler` veya `_PScheduleGroup` parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır.
+Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır `_PScheduler` `_PScheduleGroup` .
 
 Taşıma işlemi bir kilit altında gerçekleştirilmez, bu, taşıma sırasında uçuş kapsamında hiçbir hafif görev olmadığından emin olmak için kullanıcıya ait olduğu anlamına gelir. Aksi takdirde, çok sayıda özel durum ortaya çıkabilir, bu durum istisnalara veya tutarsız duruma gelebilir.
 
-## <a name="dtor"></a>~ Choice
+## <a name="choice"></a><a name="dtor"></a>~ Choice
 
-`choice` mesajlaşma bloğunu yok eder.
+`choice`Mesajlaşma bloğunu yok eder.
 
 ```cpp
 ~choice();
 ```
 
-## <a name="consume"></a>kullanan
+## <a name="consume"></a><a name="consume"></a>kullanan
 
-Daha önce bu `choice` mesajlaşma bloğunun sunduğu ve hedef tarafından başarıyla ayrılmış olan bir ileti tüketir ve bu, sahipliği çağırana aktarılarak.
+Bu mesajlaşma bloğunun daha önce sunduğu `choice` ve hedefi tarafından başarıyla ayrılmış olan bir iletiyi tüketir ve sahipliği çağırana aktarmıştır.
 
 ```cpp
 virtual message<size_t>* consume(
@@ -195,20 +195,20 @@ virtual message<size_t>* consume(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Ayrılmış `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Ayrılan `message` nesne.
 
 *_PTarget*<br/>
-`consume` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `consume` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
+`message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`consume` yöntemi `accept`benzerdir, ancak her zaman **true**döndüren `reserve` çağrısı gelmelidir.
+`consume`Yöntemi öğesine benzerdir `accept` , ancak her zaman döndürülen bir çağrı gelmelidir `reserve` **`true`** .
 
-## <a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a>has_value
 
 Bu `choice` mesajlaşma bloğunun henüz bir değer ile başlatılmış olup olmadığını denetler.
 
@@ -218,11 +218,11 @@ bool has_value() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-blok bir değer aldıysa **true** , aksi takdirde **false** .
+**`true`** blok bir değer aldıysa, **`false`** tersi durumda.
 
-## <a name="index"></a>indeks
+## <a name="index"></a><a name="index"></a>indeks
 
-`choice` mesajlaşma bloğunun seçtiği öğeyi temsil eden `tuple` bir dizin döndürür.
+`tuple`İleti bloğu tarafından seçilen öğeyi temsil eden öğesine bir dizin döndürür `choice` .
 
 ```cpp
 size_t index();
@@ -234,11 +234,11 @@ size_t index();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleti yükü `get` yöntemi kullanılarak ayıklanabilir.
+İleti yükü yöntemi kullanılarak ayıklanabilir `get` .
 
-## <a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a>link_target
 
-Hedef bloğu bu `choice` mesajlaşma bloğuna bağlar.
+Bu mesajlaşma bloğuna bir hedef bloğu bağlar `choice` .
 
 ```cpp
 virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
@@ -247,9 +247,9 @@ virtual void link_target(_Inout_ ITarget<size_t>* _PTarget);
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu `choice` mesajlaşma bloğuna bağlantı için `ITarget` bloğuna yönelik bir işaretçi.
+`ITarget`Bu mesajlaşma bloğuna bağlanacak bloğa yönelik bir işaretçi `choice` .
 
-## <a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a>Yayın
 
 Önceki başarılı bir ileti ayırmasını serbest bırakır.
 
@@ -262,14 +262,14 @@ virtual void release(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Yayımlanmakta olan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity` `message` Serbest bırakılmakta olan nesne.
 
 *_PTarget*<br/>
-`release` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `release` .
 
-## <a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a>release_ref
 
-Bu `choice` mesajlaşma bloğunda bir başvuru sayısı yayınlar.
+Bu mesajlaşma bloğunda bir başvuru sayısı yayınlar `choice` .
 
 ```cpp
 virtual void release_ref(_Inout_ ITarget<size_t>* _PTarget);
@@ -282,11 +282,11 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bu kaynaktan bağlantısı kesilmekte olan bir `ITarget` nesnesi tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
+Bu yöntem, `ITarget` Bu kaynaktan bağlantısı kesilmekte olan bir nesne tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
 
-## <a name="reserve"></a>ayırmaya
+## <a name="reserve"></a><a name="reserve"></a>ayırmaya
 
-Daha önce bu `choice` mesajlaşma bloğunun sunduğu bir iletiyi ayırır.
+Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `choice` .
 
 ```cpp
 virtual bool reserve(
@@ -297,22 +297,22 @@ virtual bool reserve(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Ayrılan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity` `message` Ayrılan nesne.
 
 *_PTarget*<br/>
-`reserve` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `reserve` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ileti başarıyla ayrıldıysa **true** , aksi takdirde **false** . Ayırmalar, aşağıdakiler dahil olmak üzere birçok nedenden dolayı başarısız olabilir: ileti zaten ayrılmış veya başka bir hedef tarafından kabul edildi, kaynak rezervasyonları reddedebilir ve bu şekilde devam eder.
+**`true`** ileti başarıyla ayrıldıysa, **`false`** tersi durumda. Ayırmalar, aşağıdakiler dahil olmak üzere birçok nedenden dolayı başarısız olabilir: ileti zaten ayrılmış veya başka bir hedef tarafından kabul edildi, kaynak rezervasyonları reddedebilir ve bu şekilde devam eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`reserve`çağırdıktan sonra, başarılı olduysa, iletinin sahipliğini almak ya da sağlamak için `consume` veya `release` çağırmanız gerekir.
+Öğesini çağırdıktan sonra, başarılı olursa, `reserve` `consume` `release` sırasıyla iletinin sahipliğini almak veya vermek için ya da ' i çağırmanız gerekir.
 
-## <a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
 
-Hedef bloğunun bu `choice` mesajlaşma bloğundan bağlantısını kaldırır.
+Bu mesajlaşma bloğundan bir hedef bloğunun bağlantısını kaldırır `choice` .
 
 ```cpp
 virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
@@ -321,11 +321,11 @@ virtual void unlink_target(_Inout_ ITarget<size_t>* _PTarget);
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Bu `choice` mesajlaşma bloğundan bağlantısını kaldırmak için `ITarget` bloğuna yönelik bir işaretçi.
+`ITarget`Bu mesajlaşma bloğunun bağlantısını kaldırmak için bir blok işaretçisi `choice` .
 
-## <a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
 
-Bu `choice` mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır.
+Bu mesajlaşma bloğundan tüm hedeflerin bağlantısını kaldırır `choice` .
 
 ```cpp
 virtual void unlink_targets();
@@ -333,11 +333,11 @@ virtual void unlink_targets();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İç `single_assignment` bloğunun yıkıcısı doğru şekilde kaldırılacak olduğundan, bu yöntemin yıkıcıdan çağrılması gerekmez.
+İç bloğun yıkıcısı doğru şekilde kaldırılacak olduğundan, bu yöntemin yıkıcıdan çağrılması gerekmez `single_assignment` .
 
-## <a name="value"></a>deeri
+## <a name="value"></a><a name="value"></a>deeri
 
-`choice` mesajlaşma bloğu tarafından dizini seçilmiş olan iletiyi alır.
+Dizini mesajlaşma bloğu tarafından seçilmiş olan iletiyi alır `choice` .
 
 ```cpp
 template <
@@ -353,14 +353,14 @@ _Payload_type const& value();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletinin yükü.
+İleti yükü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`choice` mesajlaşma bloğu farklı yük türlerine sahip girişler götürebildiğinden, yük alma noktasındaki yükün türünü belirtmeniz gerekir. `index` yönteminin sonucuna göre türü belirleyebilirsiniz.
+`choice`İleti bloğu farklı yük türlerine sahip girişler götürebildiğinden, yük alma noktasındaki yükün türünü belirtmeniz gerekir. Yöntemin sonucuna göre türü belirleyebilirsiniz `index` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[join Sınıfı](join-class.md)<br/>
-[single_assignment Sınıfı](single-assignment-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[JOIN sınıfı](join-class.md)<br/>
+[single_assignment sınıfı](single-assignment-class.md)

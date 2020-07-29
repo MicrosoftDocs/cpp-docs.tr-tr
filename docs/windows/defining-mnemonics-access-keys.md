@@ -20,12 +20,12 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: e782788832063e210356864e074c15e9ba3555f4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 91b6365334b977957ff6bd6c25278d4088961a2c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160326"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222075"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: denetim erişimini ve değerlerini tanımlama (C++)
 
@@ -40,17 +40,17 @@ Sekme sırası, **sekme** tuşunun giriş odağını bir denetimden bir iletişi
 > [!NOTE]
 > İletişim kutusu çakışan denetimler içeriyorsa, sekme sırasını değiştirmek denetimlerin görüntülenme şeklini değiştirebilir. Sekme sırasının ilerleyen kısımlarında yer alan denetimler her zaman, sekme düzeninde önce gelen örtüşen denetimlerin en üstünde görüntülenir.
 
-- Tüm denetimlerin geçerli sekme sırasını görüntülemek için menü **biçimi** > **sekme düzeni**' ne gidin veya **CTRL** + **D**' ye basın.
+- Tüm denetimlerin geçerli sekme sırasını görüntülemek için menü **biçimi**  >  **sekme sırası**' na gidin veya **CTRL**  +  **D**tuşuna basın.
 
    Her denetimin sol üst köşesindeki bir sayı geçerli sekme düzeninde yerini gösterir.
 
-- Tüm denetimlerin sekme sırasını değiştirmek için, menü **biçimi** > **sekme sırası** ' na gidin ve sekme tuşunu izlemek istediğiniz sırada her bir denetimi **seçerek sekme sırasını** ayarlayın.
+- Tüm denetimlerin sekme sırasını değiştirmek için, menü **biçimi**  >  **sekme sırası** ' na gidin ve **sekme** tuşunu izlemek istediğiniz sırada her bir denetimi seçerek sekme sırasını ayarlayın.
 
-- İki veya daha fazla denetimin sekme sırasını değiştirmek için menü **biçimi** > **sekme düzeni**' ne gidin. **CTRL** tuşunu basılı tutun ve sırasıyla değişikliğin başlayacağı denetimi seçin ve ardından **CTRL** tuşunu bırakın ve **sekme** tuşunun bu noktadan izlemesini istediğiniz sırada denetimleri seçin.
+- İki veya daha fazla denetimin sekme sırasını değiştirmek için menü **biçimi**  >  **sekme sırası**' na gidin. **CTRL** tuşunu basılı tutun ve sırasıyla değişikliğin başlayacağı denetimi seçin ve ardından **CTRL** tuşunu bırakın ve **sekme** tuşunun bu noktadan izlemesini istediğiniz sırada denetimleri seçin.
 
-   Örneğin, `9``7` denetimlerin sırasını değiştirmek istiyorsanız, **CTRL**tuşunu basılı tutarak önce denetim `6` ' yı seçin.
+   Örneğin, denetimlerin sırasını değiştirmek istiyorsanız, `7` `9` **CTRL**tuşunu basılı tutun, ardından önce denetim ' i seçin `6` .
 
-- Belirli bir denetimi `1`sayı olarak ayarlamak için veya sekme düzeninde ilk olarak denetime çift tıklayın.
+- Belirli bir denetimi sayı olarak ayarlamak `1` veya sekme düzeninde ilk olarak denetlemek için denetime çift tıklayın.
 
 > [!TIP]
 > **Sekme** sırası moduna girdikten sonra **sekme sırası** modundan çıkmak için **ESC** veya **ENTER** tuşuna basın ve sekme sırasını değiştirme özelliğini devre dışı bırakın.
@@ -63,9 +63,9 @@ Normal olarak, klavye kullanıcıları giriş odağını **sekme** ve **ok** tu�
 
 1. İletişim kutusunda denetimi seçin.
 
-1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), **başlık** özelliğinde, denetim için yeni bir ad yazın ve bu denetimin erişim anahtarı olarak istediğiniz harfin önüne bir ve işareti (`&`) yazın. Örneğin, `&Radio1`.
+1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), **başlık** özelliğinde, denetim için yeni bir ad yazın ve `&` Bu denetimin erişim anahtarı olarak istediğiniz harfin önüne bir ve işareti () koyun. Örneğin, `&Radio1`.
 
-1. **Enter**'a basın.
+1.  **Enter** tuşuna basın.
 
    Görüntülenen başlıkta, Access tuşunu göstermek için bir alt çizgi görünür, örneğin, **R**adio1.
 
@@ -73,12 +73,12 @@ Normal olarak, klavye kullanıcıları giriş odağını **sekme** ve **ok** tu�
 
 1. [Araç kutusunda](/visualstudio/ide/reference/toolbox) **statik metin** denetimi kullanarak denetim için bir başlık oluşturun.
 
-1. Statik metin başlığı ' nda, erişim anahtarı olarak istediğiniz harfin önüne bir ve işareti (`&`) yazın.
+1. Statik metin başlığı içinde, `&` erişim anahtarı olarak istediğiniz harfin önüne bir ampersan () yazın.
 
 1. Statik metin denetiminin, sekme düzeninde denetim etiketlerinin hemen önünde bulunduğundan emin olun.
 
 > [!NOTE]
-> İletişim kutusu içindeki tüm erişim tuşları benzersiz olmalıdır. Yinelenen erişim anahtarlarını denetlemek için, **Denetim anımsatıcıları** > menü **biçimi** ' ne gidin.
+> İletişim kutusu içindeki tüm erişim tuşları benzersiz olmalıdır. Yinelenen erişim anahtarlarını denetlemek için menü **biçimi**  >  **Denetim anımsatıcıları**' na gidin.
 
 ## <a name="combo-box-values"></a>Birleşik giriş kutusu değerleri
 
@@ -133,7 +133,7 @@ Bir iletişim kutusuna radyo düğmeleri eklediğinizde, gruptaki ilk düğmenin
    **Group** özelliğini **true** olarak değiştirmek, kaynak betiğin iletişim nesnesindeki düğme girdisine ws_group stilini ekler ve kullanıcının düğme grubunda bir seferde birden fazla radyo düğmesi seçmesini önler (Kullanıcı bir radyo düğmesini seçerse, gruptaki diğerleri temizlenir).
 
    > [!NOTE]
-   > Yalnızca gruptaki ilk radyo düğmesinin **Group** özelliği **true**olarak ayarlanmalıdır. Düğme grubunun parçası olmayan ek denetimleriniz varsa, *grubun dışındaki* Ilk denetimin **Grup** özelliğini de **true** olarak ayarlayın. Sekme sırasını görüntülemek için **Ctrl**+**D** kullanarak, ilk denetimi grup dışında hızlıca belirleyebilirsiniz.
+   > Yalnızca gruptaki ilk radyo düğmesinin **Group** özelliği **true**olarak ayarlanmalıdır. Düğme grubunun parçası olmayan ek denetimleriniz varsa, *grubun dışındaki* Ilk denetimin **Grup** özelliğini de **true** olarak ayarlayın. **Ctrl** + Sekme sırasını görüntülemek için CTRL**D** 'yi kullanarak ilk denetimi grup dışında hızlıca belirleyebilirsiniz.
 
 ### <a name="to-add-a-member-variable-for-the-radio-button-group"></a>Radyo düğmesi grubuna üye değişkeni eklemek için
 
@@ -143,7 +143,7 @@ Bir iletişim kutusuna radyo düğmeleri eklediğinizde, gruptaki ilk düğmenin
 
    - **Değişken adı** kutusuna yeni üye değişkeni için bir ad yazın.
 
-   - **Değişken türü** liste kutusunda **int** veya Type *int*' i seçin.
+   - **Değişken türü** liste kutusunda int ' i seçin **`int`** veya yazın *int*.
 
    Şimdi, hangi radyo düğmesinin seçili görünmesi gerektiğini belirtmek için kodunuzu değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
 

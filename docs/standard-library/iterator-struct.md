@@ -7,16 +7,16 @@ helpviewer_keywords:
 - iterator class
 - iterator struct
 ms.assetid: c74c8000-8b18-4829-9b71-6103c4229b74
-ms.openlocfilehash: 64c9be76cb92d818e40714dd141ded3a8cc17c8a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b45cdb5c3d4608296cca34ad6a0be6e25b588d28
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455613"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222309"
 ---
 # <a name="iterator-struct"></a>iterator Yapısı
 
-Kullanıcı tanımlı Yineleyici sınıfının s ile `iterator_trait`düzgün çalışmasını sağlamak için kullanılan boş bir temel yapı.
+Kullanıcı tanımlı Yineleyici sınıfının s ile düzgün çalışmasını sağlamak için kullanılan boş bir temel yapı `iterator_trait` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,19 +35,19 @@ struct iterator {
 
 Şablon yapısı, tüm yineleyiciler için bir temel tür görevi görür. Üye türlerini tanımlar
 
-- `iterator_category`(şablon parametresi `Category`için bir eş anlamlı).
+- `iterator_category`(şablon parametresi için bir eş anlamlı `Category` ).
 
-- `value_type`(şablon parametresi `Type`için bir eş anlamlı).
+- `value_type`(şablon parametresi için bir eş anlamlı `Type` ).
 
-- `difference_type`(şablon parametresi `Distance`için bir eş anlamlı).
+- `difference_type`(şablon parametresi için bir eş anlamlı `Distance` ).
 
-- `distance_type`(şablon parametresi `Distance`için bir eş anlamlı)
+- `distance_type`(şablon parametresi için bir eş anlamlı `Distance` )
 
-- `pointer`(şablon parametresi `Pointer`için bir eş anlamlı).
+- `pointer`(şablon parametresi için bir eş anlamlı `Pointer` ).
 
-- `reference`(şablon parametresi `Reference`için bir eş anlamlı).
+- `reference`(şablon parametresi için bir eş anlamlı `Reference` ).
 
-`pointer`  **Const** ve Reference nesne bir const`Type`nesnesinin bir nesnesini belirtse bile sabit bir tür olmamalıdır. `Type` `value_type`
+`value_type` `pointer` Bir nesnesinin **`const`** `Type` ve başvurusunun bir nesnesinin bir nesnesini belirtse bile sabit bir tür olmamalıdır **`const`** `Type` .
 
 ## <a name="example"></a>Örnek
 
@@ -55,12 +55,12 @@ Yineleyici temel sınıfında türlerin nasıl bildirilemeyeceğini ve kullanıl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<Yineleyici >
+**Üst bilgi:**\<iterator>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Yineleyici >](../standard-library/iterator.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[\<iterator>](../standard-library/iterator.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

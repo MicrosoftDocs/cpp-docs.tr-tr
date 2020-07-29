@@ -10,12 +10,12 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-ms.openlocfilehash: 2921fe4e4f10c96a096d30d8f842eecdfd644ca6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5aac324b6af50db019c2a4b55b26a612cc081894
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615901"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225078"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 
@@ -38,7 +38,7 @@ Bu makalede, içindeki nesnelerin nasıl silineceği gösterilmektedir:
 
 1. `GetHeadPosition`, Ve kullanarak `GetNext` Listeyi yinelemek için kullanın.
 
-1. Yineleme içinde karşılaşılan her nesneyi silmek için **Delete** işlecini kullanın.
+1. **`delete`** Yineleme içinde karşılaşılan her nesneyi silmek için işlecini kullanın.
 
 1. `RemoveAll`Bu öğelerle ilişkili nesneler silindikten sonra tüm öğeleri listeden kaldırmak için işlevi çağırın.
 
@@ -54,7 +54,7 @@ Bir öğenin nesnesini silme ve öğenin kendisini kaldırma arasındaki farka d
 
 1. `GetSize`Dizi boyunca yinelemek için ve tamsayı dizin değerlerini kullanın.
 
-1. Yineleme içinde karşılaşılan her öğeyi silmek için **Delete** işlecini kullanın.
+1. **`delete`** Yineleme içinde karşılaşılan her öğeyi silmek için işlecini kullanın.
 
 1. `RemoveAll`Silinmeden sonra dizideki tüm öğeleri kaldırmak için işlevi çağırın.
 
@@ -68,7 +68,7 @@ Yukarıdaki liste örneğinde olduğu gibi, `RemoveAll` bir dizideki tüm öğel
 
 1. `GetStartPosition` `GetNextAssoc` Dizi boyunca yinelemek için ve kullanın.
 
-1. Yineleme içinde karşılaşılan her bir harita öğesi için anahtarı ve/veya değeri silmek üzere **Delete** işlecini kullanın.
+1. **`delete`** Yineleme içinde karşılaşılan her harita öğesi için anahtarı ve/veya değeri silmek için işlecini kullanın.
 
 1. `RemoveAll`Silindikten sonra haritadan tüm öğeleri kaldırmak için işlevi çağırın.
 
@@ -80,4 +80,4 @@ Yukarıdaki liste örneğinde olduğu gibi, `RemoveAll` bir dizideki tüm öğel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bir Koleksiyonun Tüm Üyelerine Erişme](accessing-all-members-of-a-collection.md)
+[Bir koleksiyonun tüm üyelerine erişme](accessing-all-members-of-a-collection.md)

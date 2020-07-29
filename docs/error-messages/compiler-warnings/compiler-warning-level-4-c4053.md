@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4053
 ms.assetid: e3b8c46e-e36d-412c-99b9-3db860b6e307
-ms.openlocfilehash: cf25c059d80927f3a3183d4dd782b3d405e72603
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 31cafae4b508a4840bfab52ff0b4b61820ddca9e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185405"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225312"
 ---
 # <a name="compiler-warning-level-4-c4053"></a>Derleyici Uyarısı (düzey 4) C4053
 
 '?: ' için bir void işleneni
 
-`?:` işlecine `void`türünde bir ifade verilir. `void` işleneni değeri tanımsız.
+`?:`İşlecine türünde bir ifade verilir **`void`** . **`void`** İşlenenin değeri tanımsız.

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-ms.openlocfilehash: 1ecf1c08164d1a760fce62457a6019e767ed2605
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cb66a0c0aea16f7e6831b6a1aff1a125df355210
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626294"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225052"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 
@@ -33,7 +33,7 @@ ms.locfileid: "84626294"
 
 [!code-cpp[NVC_MFC_Utilities#10](codesnippet/cpp/memory-management-frame-allocation_1.cpp)]
 
-Yerel işlev değişkenlerinde, bu kapsam geçişi işlev çıktığında gerçekleşir, ancak iç içe parantezler kullanılırsa bir çerçeve değişkeninin kapsamı bir işlevden daha küçük olabilir. Çerçeve değişkenlerinin bu otomatik olarak silinmesi çok önemlidir. Basit temel türler (örneğin, **int** veya **byte**), diziler veya veri yapıları söz konusu olduğunda otomatik silme, değişken tarafından kullanılan belleği geri kazanır. Değişken kapsam dışına çıkış yaptığından, yine de erişilemez. Ancak, C++ nesneleri söz konusu olduğunda otomatik silme işlemi biraz daha karmaşıktır.
+Yerel işlev değişkenlerinde, bu kapsam geçişi işlev çıktığında gerçekleşir, ancak iç içe parantezler kullanılırsa bir çerçeve değişkeninin kapsamı bir işlevden daha küçük olabilir. Çerçeve değişkenlerinin bu otomatik olarak silinmesi çok önemlidir. Basit temel türler (örneğin **`int`** , **bayt**), diziler veya veri yapıları söz konusu olduğunda otomatik silme, değişken tarafından kullanılan belleği geri kazanır. Değişken kapsam dışına çıkış yaptığından, yine de erişilemez. Ancak, C++ nesneleri söz konusu olduğunda otomatik silme işlemi biraz daha karmaşıktır.
 
 Bir nesne bir çerçeve değişkeni olarak tanımlandığında, Oluşturucusu otomatik olarak tanımın karşılaştığı noktada çağrılır. Nesne kapsam dışına geçtiğinde, nesne için bellek geri alınmadan önce yıkıcısı otomatik olarak çağrılır. Bu otomatik oluşturma ve yok etme çok kullanışlı olabilir, ancak özellikle yok edicinin otomatik çağrılardan haberdar olmanız gerekir.
 

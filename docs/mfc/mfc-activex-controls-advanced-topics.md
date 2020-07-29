@@ -12,16 +12,16 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], parameterized property
 - ThrowError method [MFC]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-ms.openlocfilehash: 87cc0000f74935990cb5956e0fb3afd44e01532b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5ae29ed40d9cc5b78945fb9846a36d6b5a0b27d7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624189"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225039"
 ---
 # <a name="mfc-activex-controls-advanced-topics"></a>MFC ActiveX Denetimleri: Gelişmiş Konular
 
-Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bu güncelleştirmeler şunlardır:
+Bu makalede, ActiveX denetimleri geliştirmeyle ilgili gelişmiş konular ele alınmaktadır. Bunlara
 
 - [ActiveX denetimlerinde veritabanı sınıflarını kullanma](#_core_using_database_classes_in_activex_controls)
 
@@ -69,7 +69,7 @@ Aşağıdaki yordam, iki boyutlu tamsayılar dizisi olarak erişilebilen Array a
 
 1. **Özellik adı** kutusuna yazın `Array` .
 
-1. **Özellik türü** kutusunda, **kısa**' ı seçin.
+1. **Özellik türü** kutusunda, öğesini seçin **`short`** .
 
 1. **Uygulama** türü Için, **get/set yöntemleri**' ne tıklayın.
 
@@ -97,7 +97,7 @@ Ayrıca Özellik Ekleme Sihirbazı, denetim sınıfı uygulamasında bulunan den
 
 Son olarak, `GetArray` ve `SetArray` işlevlerinin uygulamaları öğesinin sonuna eklenir. CPP dosyası. Çoğu durumda, özelliğin değerini döndürmek için Get işlevini değiştirirsiniz. Set işlevi genellikle, özellik değişikliklerinden önce veya sonra yürütülmesi gereken kodu içerir.
 
-Bu özelliğin yararlı olması için, parametreli özelliğin değerlerini depolamak üzere **Short**türünde denetim sınıfında iki boyutlu bir dizi üye değişkeni bildirebilirsiniz. Daha sonra, parametreler tarafından gösterildiği gibi, uygun satırda ve sütunda depolanan değeri döndürmek için Get işlevini değiştirebilirsiniz ve satır ve sütun parametreleri tarafından başvurulan değeri güncelleştirmek için set işlevini değiştirebilirsiniz.
+Bu özelliğin yararlı olması için, **`short`** parametreli özellik değerlerini depolamak için türündeki Control sınıfında iki boyutlu bir dizi üye değişkeni bildirebilirsiniz. Daha sonra, parametreler tarafından gösterildiği gibi, uygun satırda ve sütunda depolanan değeri döndürmek için Get işlevini değiştirebilirsiniz ve satır ve sütun parametreleri tarafından başvurulan değeri güncelleştirmek için set işlevini değiştirebilirsiniz.
 
 ## <a name="handling-errors-in-your-activex-control"></a><a name="_core_handling_errors_in_your_activex_control"></a>ActiveX Denetiinizdeki hataları işleme
 

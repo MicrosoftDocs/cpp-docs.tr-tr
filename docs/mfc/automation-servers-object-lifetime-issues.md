@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Automation servers, object lifetime
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-ms.openlocfilehash: 6e8c4189e8c895cf41323528c70d9277645d8f9d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8031902318a091b0ed5f340b454a14b9df195069
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619066"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225091"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>Otomasyon Sunucuları: Nesne Ömrü Sorunları
 
@@ -20,7 +20,7 @@ Bir Otomasyon istemcisi bir OLE öğesi oluşturduğunda veya etkinleştirdiğin
 
 Framework, [CCmdTarget](reference/ccmdtarget-class.md)'dan türetilmiş herhangi bir sunucu nesnesine başvuru sayısı için bir iç sayı tutar. Bu sayı, bir Otomasyon istemcisi ya da başka bir varlık nesneye bir başvuru eklediğinde veya yayınlarsa güncelleştirilir.
 
-Başvuru sayısı 0 olduğunda, çerçeve [CCmdTarget:: OnFinalRelease](reference/ccmdtarget-class.md#onfinalrelease)sanal işlevini çağırır. Bu işlevin varsayılan uygulanması, bu nesneyi silmek için **Delete** işlecini çağırır.
+Başvuru sayısı 0 olduğunda, çerçeve [CCmdTarget:: OnFinalRelease](reference/ccmdtarget-class.md#onfinalrelease)sanal işlevini çağırır. Bu işlevin varsayılan uygulanması, **`delete`** Bu nesneyi silmek için işlecini çağırır.
 
 Microsoft Foundation Class Kitaplığı, dış istemciler uygulamanın nesnelerine başvurular olduğunda uygulama davranışını denetlemek için ek tesisler sağlar. Her bir nesneye başvuru sayısının korunmasının yanı sıra sunucular, etkin nesnelerin küresel sayısını korur. [AfxOleLockApp](reference/application-control.md#afxolelockapp) ve [AfxOleUnlockApp](reference/application-control.md#afxoleunlockapp) genel işlevleri uygulamanın etkin nesne sayısını güncelleştirir. Bu sayı sıfır değilse, Kullanıcı sistem menüsünden Kapat ' ı seçtiğinde veya Dosya menüsünden çıkarken uygulama sonlanmaz. Bunun yerine, bekleyen tüm istemci istekleri tamamlanana kadar uygulamanın ana penceresi gizlidir (ancak yok edilmez). Genellikle `AfxOleLockApp` ve, `AfxOleUnlockApp` otomasyonu destekleyen sınıfların sırasıyla oluşturucular ve Yıkıcılar içinde çağırılır.
 

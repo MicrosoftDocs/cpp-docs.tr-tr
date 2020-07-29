@@ -6,28 +6,28 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2005
 ms.assetid: d9587adc-68be-425c-8a30-15dbc86717a4
-ms.openlocfilehash: 6090478c3761c477250b6706a350e261b51f2a05
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 278f05b8338ac4238d6862fd7b9bd7744f6c8ee5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81353234"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225221"
 ---
 # <a name="linker-tools-error-lnk2005"></a>Bağlayıcı Araçları Hatası LNK2005
 
-> nesnede zaten tanımlanan *sembol*
+> *sembol* nesnede zaten tanımlandı
 
-Sembol *sembolü* birden çok kez tanımlanmıştır.
+Sembol *sembolü* birden çok kez tanımlandı.
 
-Bu hatayı ölümcül hata [LNK1169](../../error-messages/tool-errors/linker-tools-error-lnk1169.md)takip ediyor.
+Bu hatanın ardından önemli hata [LNK1169](../../error-messages/tool-errors/linker-tools-error-lnk1169.md).
 
 ### <a name="possible-causes-and-solutions"></a>Olası nedenler ve çözümler
 
-Genel olarak, bu hata, belirli bir nesne dosyasında kullanılan şablon, işlev, tür veya nesne için yalnızca bir tanım ve dışarıdan görünen nesneler veya işlevler için yürütülebilir tüm genelinde yalnızca bir tanım sağlayan *tek tanım kuralını*kırdığınız anlamına gelir.
+Genellikle, bu hata, belirli bir nesne dosyasındaki kullanılan herhangi bir şablon, işlev, tür veya nesne için yalnızca bir tanıma izin veren *bir tanım kuralını*bozmış ve dışarıdan görünür nesneler veya işlevler için tek bir tanım sunan tek bir tanım kuralına sahip olduğunuz anlamına gelir.
 
-Bu hatanın bazı yaygın nedenleri aşağıda veda edinilir.
+Bu hatanın bazı yaygın nedenleri aşağıda verilmiştir.
 
-- Üstbilgi dosyası bir değişken tanımladığında bu hata oluşabilir. Örneğin, bu üstbilgi dosyanı projenizde birden fazla kaynak dosyaya eklerseniz, bir hata sonucu:
+- Bu hata, bir üstbilgi dosyası bir değişkeni tanımlıyorsa oluşabilir. Örneğin, bu üstbilgi dosyasını projenizde birden fazla kaynak dosyasına eklerseniz bir hata oluşur:
 
     ```h
     // LNK2005_global.h
@@ -36,13 +36,13 @@ Bu hatanın bazı yaygın nedenleri aşağıda veda edinilir.
 
    Olası çözümler şunlardır:
 
-  - Üstbilgi `extern` dosyasındaki değişkeni `extern int global_int;`bildirin: , sonra tanımlayın ve isteğe bağlı `int global_int = 17;`olarak tek ve tek bir kaynak dosyada başlatılması: . Bu değişken artık herhangi bir kaynak dosyada kullanabileceğiniz `extern`bir genel dir, örneğin, üstbilgi dosyasını ekleyerek beyan ederek. Bu çözümü küresel olması gereken değişkenler için öneriyoruz, ancak iyi yazılım mühendisliği uygulamaları küresel değişkenleri en aza indirir.
+  - **`extern`** Başlık dosyasında değişkeni bildirin: `extern int global_int;` , daha sonra tanımlayın ve isteğe bağlı olarak tek bir kaynak dosyasında başlatın: `int global_int = 17;` . Bu değişken, **`extern`** Örneğin, başlık dosyasını ekleyerek herhangi bir kaynak dosyasında kullanabileceğiniz küresel bir geneldir. Bu çözümü genel olması gereken değişkenler için öneririz, ancak iyi yazılım mühendisliği uygulaması genel değişkenleri en aza indirir.
 
-  - Değişken [statik](../../cpp/storage-classes-cpp.md#static)bildirin : `static int static_int = 17;`. Bu, tanımın kapsamını geçerli nesne dosyasıyla sınırlandırAn ve birden çok nesne dosyasının değişkenin kendi kopyasına sahip olmasını sağlar. Genel değişkenlerle karışıklık potansiyeli nedeniyle üstbilgi dosyalarında statik değişkenler tanımlamanızı önermiyoruz. Statik değişken tanımlarını bunları kullanan kaynak dosyalara taşımayı tercih edin.
+  - [Statik](../../cpp/storage-classes-cpp.md#static)değişkeni bildirin: `static int static_int = 17;` . Bu, tanımın kapsamını geçerli nesne dosyası ile kısıtlar ve birden fazla nesne dosyasının değişkenin kendi kopyasına sahip olmasına izin verir. Genel değişkenlerle karışıklığa neden olduğu için üst bilgi dosyalarında statik değişkenler tanımlamanızı önermiyoruz. Statik değişken tanımlarını onları kullanan kaynak dosyalara taşımayı tercih edin.
 
-  - Değişken [selectany](../../cpp/selectany.md)bildirin : `__declspec(selectany) int global_int = 17;`. Bu, bağlayıcıya tüm dış başvurular tarafından kullanılmak üzere bir tanım seçmesi ve geri kalanını atmasını söyler. Bu çözüm bazen alma kitaplıklarını birleştirirken kullanışlıdır. Aksi takdirde, bağlayıcı hatalarını önlemek için bir yol olarak önermiyoruz.
+  - [Selectany](../../cpp/selectany.md)değişkenini bildirin: `__declspec(selectany) int global_int = 17;` . Bu, bağlayıcının tüm dış başvurular tarafından kullanılmak üzere bir tanım seçmesini ve geri kalanını atmasını söyler. Bu çözüm bazen içeri aktarma kitaplıklarını birleştirirken yararlı olur. Aksi takdirde, bağlayıcı hatalarından kaçınmanın bir yolu olarak önerilmez.
 
-- Üstbilgi dosyası olmayan `inline`bir işlev tanımladığında bu hata oluşabilir. Bu üstbilgi dosyasını birden fazla kaynak dosyaya eklerseniz, yürütülebilir işlevin birden çok tanımını alırsınız.
+- Bu hata, üstbilgi dosyası olmayan bir işlevi tanımlıyorsa oluşabilir **`inline`** . Bu üstbilgi dosyasını birden fazla kaynak dosyasına eklerseniz, çalıştırılabilir dosyada işlevin birden fazla tanımını alırsınız.
 
     ```h
     // LNK2005_func.h
@@ -51,14 +51,14 @@ Bu hatanın bazı yaygın nedenleri aşağıda veda edinilir.
 
    Olası çözümler şunlardır:
 
-  - İşlev `inline` için anahtar kelime ekleyin:
+  - **`inline`** İşlevine anahtar sözcüğü ekleyin:
 
     ```h
     // LNK2005_func_inline.h
     inline int sample_function(int k) { return 42 * (k % 167); }
     ```
 
-  - İşlev gövdesini üstbilgi dosyasından kaldırın ve yalnızca bildirimi bırakın, ardından işlevi tek ve tek bir kaynak dosyada uygulayın:
+  - Başlık dosyasından işlev gövdesini kaldırın ve yalnızca bildirimi bırakın, sonra işlevi tek bir kaynak dosyasında uygulayın:
 
     ```h
     // LNK2005_func_decl.h
@@ -70,7 +70,7 @@ Bu hatanın bazı yaygın nedenleri aşağıda veda edinilir.
     int sample_function(int k) { return 42 * (k % 167); }
     ```
 
-- Üstbilgi dosyasında sınıf bildirimi dışında üye işlevleri tanımlarsanız bu hata da oluşabilir:
+- Bu hata, bir başlık dosyasında sınıf bildiriminin dışında üye işlevleri tanımlarsanız de oluşabilir:
 
     ```h
     // LNK2005_member_outside.h
@@ -81,7 +81,7 @@ Bu hatanın bazı yaygın nedenleri aşağıda veda edinilir.
     int Sample::sample_function(int k) { return 42 * (k % 167); }  // LNK2005
     ```
 
-   Bu sorunu gidermek için, üye işlev tanımlarını sınıf içinde taşıyın. Sınıf bildirimi içinde tanımlanan üye işlevler örtülü olarak sıralanır.
+   Bu sorunu giderecek şekilde, sınıf içindeki üye işlev tanımlarını taşıyın. Bir sınıf bildiriminde tanımlanan üye işlevleri örtülü olarak satır içine alınır.
 
     ```h
     // LNK2005_member_inline.h
@@ -91,23 +91,23 @@ Bu hatanın bazı yaygın nedenleri aşağıda veda edinilir.
     };
     ```
 
-- Bu hata, standart kitaplığın veya CRT'nin birden fazla sürümünü bağlarsanız oluşabilir. Örneğin, hem perakende satış hem de hata ayıklama CRT kitaplıklarını veya kitaplığın statik ve dinamik sürümlerini veya standart kitaplığın iki farklı sürümlerini çalıştırılabilir'inize bağlamayı denerseniz, bu hata birçok kez bildirilebilir. Bu sorunu gidermek için, bağlantı komutundan her kitaplığın bir kopyası dışında tümünün kaldırılmasını sağlayın. Perakende ve hata ayıklama kitaplıklarını veya kitaplığın farklı sürümlerini aynı yürütülebilir şekilde karıştırmanızı önermiyoruz.
+- Bu hata, standart kitaplığın veya CRT 'ın birden fazla sürümünü bağlarsanız meydana gelebilir. Örneğin, hem perakende hem de hata ayıklama CRT kitaplıklarını ya da bir kitaplığın statik ve dinamik sürümlerini ya da standart kitaplığın iki farklı sürümünü yürütülebilir dosyaya bağlamayı denerseniz, bu hata birçok kez bildirilebilir. Bu sorunu onarmak için, her kitaplığın bir kopyasını bağlantı komutundan kaldırın. Aynı yürütülebilir dosyada, perakende ve hata ayıklama kitaplıklarını ya da bir kitaplığın farklı sürümlerini karıştırmanızı önermiyoruz.
 
-   Bağlayıcıya varsayılanlar dışındaki kitaplıkları kullanmasını söylemek için komut satırında kullanılacak kitaplıkları belirtin ve varsayılan kitaplıkları devre dışı kullanabilirsiniz [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) seçeneğini kullanın. IDE'de, kullanılacak kitaplıkları belirtmek için projenize başvurular ekleyin ve ardından projeniz için **Özellik Sayfaları** iletişim kutusunu açın ve **Bağlayıcı**, **Giriş** özelliği sayfasında, Varsayılan Kitaplıkları devre dışı bırakabilmek için Tüm **Varsayılan Kitaplıkları Yokla**veya **Belirli Varsayılan Kitaplıkları YokSay** özelliğini ayarlayın.
+   Bağlayıcının varsayılanlar dışındaki kitaplıkları kullanmasını söylemek için, komut satırında kullanılacak kitaplıkları belirtin ve varsayılan kitaplıkları devre dışı bırakmak için [/nodefaultlib](../../build/reference/nodefaultlib-ignore-libraries.md) seçeneğini kullanın. IDE 'de, kullanılacak kitaplıkları belirtmek için projenize başvurular ekleyin ve ardından projeniz için **Özellik sayfaları** iletişim kutusunu açın ve **bağlayıcı**, **giriş** özelliği sayfasında, varsayılan kitaplıkları devre dışı bırakmak Için **tüm varsayılan kitaplıkları Yoksay**veya **belirli varsayılan kitaplıkları Yoksay** özelliklerini belirleyin.
 
-- [/clr](../../build/reference/clr-common-language-runtime-compilation.md) seçeneğini kullandığınızda statik ve dinamik kitaplıkları karıştırırsanız bu hata oluşabilir. Örneğin, bu hata, yürütülebilir olan statik CRT bağlantıları kullanmak için bir DLL oluşturursanız oluşabilir. Bu sorunu gidermek için, yalnızca statik kitaplıklar veya yalnızca çalıştırılabilir tüm ve yürütülebilir kullanmak için oluşturduğunuz kitaplıklar için yalnızca dinamik kitaplıklar kullanın.
+- [/Clr](../../build/reference/clr-common-language-runtime-compilation.md) seçeneğini kullandığınızda, statik ve dinamik kitaplıkların kullanımını karıştırırsanız bu hata oluşabilir. Örneğin, çalıştırılabilir dosyada statik CRT ile bağlantı için bir DLL oluşturursanız bu hata oluşabilir. Bu sorunu onarmak için yalnızca statik kitaplıkları veya yalnızca dinamik kitaplıkları veya yürütülebilir dosyada kullanmak için oluşturduğunuz tüm kitaplıkları kullanın.
 
-- Bu hata, sembol paketlenmiş bir işlevse [(/Gy](../../build/reference/gy-enable-function-level-linking.md)ile derlenerek oluşturulmuştur) ve birden fazla dosyaya dahil edilmişse, derlemeler arasında değiştirildiyse oluşabilir. Bu sorunu gidermek için, paket işlevi içeren tüm dosyaları yeniden derleyin.
+- Bu hata, sembol paketlenmiş bir işlev ise ( [/GY](../../build/reference/gy-enable-function-level-linking.md)ile derlenerek oluşturulur) ve birden fazla dosyaya dahil edilmiştir ancak derlemeler arasında değiştirilmişse meydana gelir. Bu sorunu onarmak için paketlenmiş işlevi içeren tüm dosyaları yeniden derleyin.
 
-- Bu hata, sembol farklı kitaplıklarda iki üye nesnede farklı tanımlanmışsa ve her iki üye nesne de kullanılırsa bu hata oluşabilir. Kitaplıklar statik olarak bağlandığında bu sorunu gidermenin bir yolu, üye nesneyi yalnızca bir kitaplıktan kullanmak ve bu kitaplığı önce bağlayıcı komut satırına eklemektir. Her iki sembolü de kullanmak için, onları ayırt etmek için bir yol oluşturmanız gerekir. Örneğin, kitaplıkları kaynaktan oluşturabiliyorsanız, her kitaplığı benzersiz bir ad alanına sarabilirsiniz. Alternatif olarak, başvuruları özgün kitaplıklardan birine kaydırmak, yeni kitaplığı özgün kitaplıklara bağlamak ve ardından yürütülebilir olan kitabı özgün kitaplığınız yerine yeni kitaplığınıza bağlamak için benzersiz adlar kullanan yeni bir sarıcı kitaplığı oluşturabilirsiniz.
+- Bu hata, sembolün farklı kitaplıklardaki iki üye nesnesi içinde farklı tanımlanmış olması ve her iki üye nesnesinin de kullanılması durumunda meydana gelebilir. Kitaplıklar statik olarak bağlandığında bu sorunu gidermenin bir yolu, üye nesnesini yalnızca bir kitaplıktan kullanmak ve önce bu kitaplığı bağlayıcı komut satırına eklemek içindir. Her iki sembolü de kullanmak için, bunları ayırt etmek için bir yol oluşturmanız gerekir. Örneğin, bir kaynaktan kitaplıkları derleyebilir, her kitaplığı benzersiz bir ad alanında kaydırabilirsiniz. Alternatif olarak, özgün kitaplıkların birine başvuruları sarmalamak için benzersiz adlar kullanan yeni bir sarmalayıcı kitaplığı oluşturabilir, yeni kitaplığı özgün kitaplığa bağlayabilir ve ardından özgün kitaplık yerine yürütülebilir dosyayı yeni kitaplığınıza bağlayabilirsiniz.
 
-- Bir `extern const` değişken iki kez tanımlanırsa ve her tanımda farklı bir değere sahipse, bu hata oluşabilir. Bu sorunu gidermek için, sabiti yalnızca bir `enum class` kez tanımlayın veya sabitleri ayırt etmek için ad boşluklarını veya tanımları kullanın.
+- Bu hata `extern const` , bir değişken iki kez tanımlanmışsa ve her tanımda farklı bir değere sahip olduğunda meydana gelebilir. Bu sorunu onarmak için, sabiti yalnızca bir kez tanımlayın veya **`enum class`** sabitleri ayırt etmek için ad alanları veya tanımlar kullanın.
 
-- Bu hata, guids (örneğin, oledb.lib ve adsiid.lib) tanımlayan diğer .lib dosyaları ile birlikte uuid.lib kullanırsanız oluşabilir. Örneğin:
+- Bu hata, GUID 'Leri tanımlayan diğer. lib dosyalarıyla birlikte UUID. lib kullandığınızda ortaya çıkabilir (örneğin, OLEDB. lib ve adsiid. lib). Örnek:
 
     ```Output
     oledb.lib(oledb_i.obj) : error LNK2005: _IID_ITransactionObject
     already defined in uuid.lib(go7.obj)
     ```
 
-   Bu sorunu gidermek için bağlayıcı komut satırı seçeneklerine [/FORCE:MULTIPLE](../../build/reference/force-force-file-output.md) ekleyin ve uuid.lib'in başvurulan ilk kitaplık olduğundan emin olun.
+   Bu sorunu onarmak için, bağlayıcı komut satırı seçeneklerine [/Force: MULTIPLE](../../build/reference/force-force-file-output.md) ekleyin ve UUID. lib ' in başvurulan ilk kitaplık olduğundan emin olun.

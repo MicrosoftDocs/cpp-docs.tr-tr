@@ -1,44 +1,44 @@
 ---
-title: Öznitelik parametre türleri (C++/CLI ve C++/CX)
+title: Öznitelik Parametre Türleri (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-ms.openlocfilehash: b8cb222af2d5b25a90f35d8d32688567bb3fb1d8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c7b219ddad939aab7d6093787dc2fe4131ccced5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172652"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225169"
 ---
-# <a name="attribute-parameter-types--ccli-and-ccx"></a>Öznitelik parametre türleri (C++/CLI ve C++/CX)
+# <a name="attribute-parameter-types--ccli-and-ccx"></a>Öznitelik Parametre Türleri (C++/CLI ve C++/CX)
 
 Özniteliklere geçirilen değerler derleme zamanında derleyici tarafından bilinmelidir.  Öznitelik parametreleri aşağıdaki türlerde olabilir:
 
-- **bool**
+- **`bool`**
 
-- **char**, **işaretsiz karakter**
+- **`char`**, **`unsigned char`**
 
-- **kısa**, **işaretsiz kısa**
+- **`short`**, **`unsigned short`**
 
-- **int**, **işaretsiz int**
+- **`int`**, **`unsigned int`**
 
-- **Long**, **imzasız Long**
+- **`long`**, **`unsigned long`**
 
-- **__int64**, **İmzasız __int64**
+- **`__int64`**, **imzasız __int64**
 
-- **float**, **Double**
+- **`float`**, **`double`**
 
-- **wchar_t**
+- **`wchar_t`**
 
-- `char*` veya `wchar_t*` veya `System::String*`
+- **`char*`** or `wchar_t*` veya`System::String*`
 
 - `System::Type ^`
 
 - `System::Object ^`
 
-- **enum**
+- **`enum`**
 
 ## <a name="example"></a>Örnek
 
@@ -124,4 +124,4 @@ ref struct AStruct{};
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı Tanımlı Öznitelikler](user-defined-attributes-cpp-component-extensions.md)
+[Kullanıcı tanımlı öznitelikler](user-defined-attributes-cpp-component-extensions.md)

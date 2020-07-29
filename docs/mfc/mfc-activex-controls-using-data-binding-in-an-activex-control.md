@@ -14,12 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: 3f16ea3ad77c676695a9d5ca6e2deb10637de455
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b32dbd8e1777f11998085a90e8851b25e4298e1a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621178"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225000"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
@@ -93,7 +93,7 @@ Veri bağlantılı get/set yöntemine ek olarak, [bağlanabilir bir stok özelli
 
 1. **Özellik adı kutusuna özelliğin** adını yazın. `MyProp`Bu örnek için kullanın.
 
-1. **Özellik türü** açılan liste kutusundan bir veri türü seçin. Bu örnek için **Short** kullanın.
+1. **Özellik türü** açılan liste kutusundan bir veri türü seçin. **`short`** Bu örnek için kullanın.
 
 1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
 

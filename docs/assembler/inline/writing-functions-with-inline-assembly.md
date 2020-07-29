@@ -7,18 +7,18 @@ helpviewer_keywords:
 - assembler [C++], writing functions
 - __asm keyword [C++], in functions
 ms.assetid: b5df8a04-fdc7-4622-8c9e-e4b618927497
-ms.openlocfilehash: 5416a29477651c496d83e6ee215a2cb88ba26e3b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3ce42147693f0c4c180076c627ef88c182745186
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169064"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87191007"
 ---
 # <a name="writing-functions-with-inline-assembly"></a>Satır İçi Derlemeyle İşlevler Yazma
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Satır içi derleme kodu içeren bir işlev yazarsanız, bağımsız değişkenleri işleve geçirmek ve bundan bir değer döndürmek kolaydır. Aşağıdaki örneklerde, ilk olarak ayrı bir birleştirici için yazılan bir işlev karşılaştırılmaktadır ve sonra satır içi assembler için yeniden yazılır. `power2`adlı işlev iki parametre alır, ilk parametreyi 2 ile ikinci parametrenin gücünden çarpar. Ayrı bir birleştirici için yazılan işlev şöyle görünebilir:
+Satır içi derleme kodu içeren bir işlev yazarsanız, bağımsız değişkenleri işleve geçirmek ve bundan bir değer döndürmek kolaydır. Aşağıdaki örneklerde, ilk olarak ayrı bir birleştirici için yazılan bir işlev karşılaştırılmaktadır ve sonra satır içi assembler için yeniden yazılır. Çağrılan işlev `power2` iki parametre alır, ilk parametreyi 2 ile ikinci parametrenin gücünden çarpar. Ayrı bir birleştirici için yazılan işlev şöyle görünebilir:
 
 ```asm
 ; POWER.ASM
@@ -42,11 +42,11 @@ _TEXT   ENDS
         END
 ```
 
-Ayrı bir birleştirici için yazıldığı için, işlev ayrı bir kaynak dosya ve derleme ve bağlantı adımları gerektirir. C ve C++ işlev bağımsız değişkenleri genellikle yığına geçirilir, bu nedenle `power2` işlevinin bu sürümü, bağımsız değişkenlerine yığındaki konumlarına göre erişir. (Masd ve diğer bazı birleştiriciler için kullanılabilen **model** yönergesinin Ayrıca, yığın bağımsız değişkenlerine ve yerel yığın değişkenlerine ada göre erişmenizi de sağlar.)
+Ayrı bir birleştirici için yazıldığı için, işlev ayrı bir kaynak dosya ve derleme ve bağlantı adımları gerektirir. C ve C++ işlev bağımsız değişkenleri genellikle yığına geçirilir, bu nedenle işlevin bu sürümü, `power2` bağımsız değişkenlerine yığındaki konumlarına göre erişir. (Masd ve diğer bazı birleştiriciler için kullanılabilen **model** yönergesinin Ayrıca, yığın bağımsız değişkenlerine ve yerel yığın değişkenlerine ada göre erişmenizi de sağlar.)
 
 ## <a name="example"></a>Örnek
 
-Bu program `power2` işlevini satır içi derleme kodu ile Yazar:
+Bu program, `power2` işlevi satır içi derleme kodu ile Yazar:
 
 ```cpp
 // Power2_inline_asm.c
@@ -74,12 +74,12 @@ int power2( int num, int power )
 }
 ```
 
-`power2` işlevin satır içi sürümü, bağımsız değişkenlerine ad ile başvurur ve programın geri kalanı ile aynı kaynak dosyasında görünür. Bu sürüm, daha az derleme yönergesi de gerektirir.
+İşlevin satır içi sürümü, `power2` bağımsız değişkenlerine adına göre başvurur ve programın geri kalanı ile aynı kaynak dosyasında görünür. Bu sürüm, daha az derleme yönergesi de gerektirir.
 
-`power2` 'nin satır içi sürümü bir C `return` bildirisini yürütülemediğinden, uyarı düzeyi 2 veya daha yüksek bir sürümde derlerseniz zararsız bir uyarıya neden olur. İşlev bir değer döndürür, ancak derleyici bir `return` deyimin yokluğunda bunu söyleyebilir. Bu uyarının oluşturulmasını devre dışı bırakmak için [#pragma uyarısı](../../preprocessor/warning.md) kullanabilirsiniz.
+Satır içi sürümü `power2` bir C ifadesini yürütmediğinden **`return`** , uyarı düzeyi 2 veya daha yüksek bir sürümde derlerseniz zararsız bir uyarıya neden olur. İşlev bir değer döndürür, ancak derleyici bir deyimin yokluğunda bunu söyleyebilir **`return`** . Bu uyarının oluşturulmasını devre dışı bırakmak için [#pragma uyarısı](../../preprocessor/warning.md) kullanabilirsiniz.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>
+[__Asm bloklarında C veya C++ kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

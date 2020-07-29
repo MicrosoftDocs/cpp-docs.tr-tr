@@ -14,18 +14,18 @@ helpviewer_keywords:
 - catch blocks [MFC], delimiting
 - exception handling [MFC], converting exceptions
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
-ms.openlocfilehash: 8a936a0af9927aa0dc453a93c98676a77f4ad6dc
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e8e7f47b66f4263ed55d73c0aac1fda73d72393c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621760"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87183818"
 ---
 # <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
 
 Bu, gelişmiş bir konudur.
 
-Bu **makalede, C++** özel durum işleme anahtar sözcüklerini kullanmak için **TRY** **, catch,** **throw**, vb **. gibi Microsoft**Foundation sınıf makrolarıyla yazılmış mevcut kodların nasıl dönüştürüleceği **açıklanır.** Konu başlıkları şunlardır:
+Bu makalede, C++ özel durum işleme anahtar sözcüklerini **CATCH** **THROW**, ve ' i kullanmak için **TRY**Microsoft Foundation sınıf makrolarıyla yazılmış mevcut kodların nasıl dönüştürüleceği açıklanır **`try`** **`catch`** **`throw`** . Konu başlıkları şunlardır:
 
 - [Dönüştürme avantajları](#_core_advantages_of_converting)
 
@@ -39,7 +39,7 @@ Dönüştürmenin başlıca avantajları şunlardır:
 
 - C++ özel durum işleme anahtar sözcüklerini kullanan kod, biraz daha küçük bir şekilde derlenir. EXE veya. Dosyasını.
 
-- C++ özel durum işleme anahtar sözcükleri daha çok yönlüdür: Bunlar, kopyalanabilen herhangi bir veri türünün (**int**, **float**, **char**, vb.) özel durumlarını işleyebilir, ancak makrolar yalnızca bu sınıftan türetilmiş sınıf ve sınıfların özel durumlarını işler `CException` .
+- C++ özel durum işleme anahtar sözcükleri daha çok yönlüdür: (,, vb.) kopyalanabilen herhangi bir veri türünün özel durumlarını işleyebilir **`int`** **`float`** **`char`** , ancak makrolar yalnızca `CException` Bu sınıftan türetilmiş sınıf ve sınıfların özel durumlarını işler.
 
 Makrolar ve anahtar sözcükler arasındaki önemli fark, "otomatik olarak" makroları kullanan kodun, özel durum kapsam dışına geçtiğinde yakalanan bir özel durumu silmesidir. Anahtar sözcükleri kullanan kod değildir, bu nedenle yakalanan bir özel durumu açıkça silmeniz gerekir. Daha fazla bilgi için bkz. özel durumlar [: özel durumları yakalama ve silme](exceptions-catching-and-deleting-exceptions.md).
 
@@ -53,7 +53,7 @@ Başka bir farklılık söz dizidir. Makrolar ve anahtar sözcükler için sözd
 
    Sınıf adı ve nesne işaretçisi adı arasındaki virgülden dikkat edin.
 
-   **Catch** anahtar sözcüğü için özel durum bildirimi şu sözdizimini kullanır:
+   Anahtar sözcüğü için özel durum bildirimi **`catch`** şu sözdizimini kullanır:
 
    **catch (** *exception_type* *exception_name* **)**
 
@@ -63,11 +63,11 @@ Başka bir farklılık söz dizidir. Makrolar ve anahtar sözcükler için sözd
 
    Makrolar ile, **catch** makrosu (bağımsız değişkenleriyle) ilk catch bloğunu başlatır; **AND_CATCH** makro sonraki catch bloklarından başlar ve **END_CATCH** makro, catch bloklarının dizisini sonlandırır.
 
-   Anahtar kelimeleriyle, **catch** anahtar sözcüğü (özel durum bildirimiyle birlikte) her catch bloğuna başlar. **END_CATCH** makroya bir karşılık yoktur; catch bloğu kapanış küme ayracı ile biter.
+   Anahtar kelimeleriyle, **`catch`** anahtar sözcüğü (özel durum bildirimiyle birlikte) her catch bloğuna başlar. **END_CATCH** makroya bir karşılık yoktur; catch bloğu kapanış küme ayracı ile biter.
 
 3. Throw ifadesi:
 
-   Makrolar geçerli özel durumu yeniden oluşturmak için **THROW_LAST** kullanır. Bağımsız değişken içermeyen **throw** anahtar sözcüğü aynı etkiye sahiptir.
+   Makrolar geçerli özel durumu yeniden oluşturmak için **THROW_LAST** kullanır. **`throw`** Bağımsız değişkeni olmayan anahtar sözcük aynı etkiye sahiptir.
 
 ## <a name="doing-the-conversion"></a><a name="_core_doing_the_conversion"></a>Dönüştürme yapılıyor
 
@@ -77,17 +77,17 @@ Başka bir farklılık söz dizidir. Makrolar ve anahtar sözcükler için sözd
 
 2. Aşağıdaki makroların tüm yinelemelerini değiştirin veya silin:
 
-   **Deneyin** ( **TRY**ile değiştirin)
+   **Dene** (bunu ile Değiştir **`try`** )
 
-   **Catch** ( **catch**ile değiştirin)
+   **Yakala** (bunu ile Değiştir **`catch`** )
 
-   **AND_CATCH** ( **catch**ile değiştirin)
+   **AND_CATCH** (bunu ile Değiştir **`catch`** )
 
    **END_CATCH** (Sil)
 
-   **Throw** ( **throw**ile değiştir)
+   **Throw** (ile Değiştir **`throw`** )
 
-   **THROW_LAST** ( **throw**ile değiştir)
+   **THROW_LAST** (bunu ile Değiştir **`throw`** )
 
 3. Makro bağımsız değişkenlerini geçerli özel durum bildirimleri oluşturacak şekilde değiştirin.
 
@@ -95,7 +95,7 @@ Başka bir farklılık söz dizidir. Makrolar ve anahtar sözcükler için sözd
 
    [!code-cpp[NVC_MFCExceptions#6](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_1.cpp)]
 
-   -
+   şöyle değiştirin:
 
    [!code-cpp[NVC_MFCExceptions#7](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_2.cpp)]
 

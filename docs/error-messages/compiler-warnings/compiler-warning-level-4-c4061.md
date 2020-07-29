@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4061
 ms.assetid: a99cf88e-7941-4519-8b1b-f6889d914b2f
-ms.openlocfilehash: 073e3e9cb1cb5bb6b0f66157c986072227960212
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18c5a51e24af36c5a330e10a66ce3dcc38295fb1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401429"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225286"
 ---
 # <a name="compiler-warning-level-4-c4061"></a>Derleyici Uyarısı (düzey 4) C4061
 
-> Numaralandırıcı '*tanımlayıcı*'numaralandırıcısının switch' ın*numaralandırma*' case etiketi tarafından açıkça işlenmiyor
+> '*Enumeration*' numaralandırmasının anahtarındaki '*Identifier*' numaralandırıcısı bir Case etiketi tarafından açıkça işlenmiyor
 
-Belirtilen Numaralandırıcı *tanımlayıcı* ilişkili işleyici yok sahip bir `switch` olan deyimi bir `default` çalışması. Bir gözetim eksik bir durum olabilir veya bir sorun olmayabilir. Olup Numaralandırıcı varsayılan ayarda veya işlenir üzerinde bağlı olabilir. İlgili bir uyarı kullanılmayan numaralandırıcılar üzerinde `switch` yok deyimleri `default` durumda bkz [C4062](compiler-warning-level-4-c4062.md).
+Belirtilen Numaralandırıcı *tanımlayıcısının* , **`switch`** **`default`** büyük/küçük harf içeren bir bildirimde ilişkili işleyicisi yok. Eksik durum, bir gözetim olabilir veya bir sorun olmayabilir. Bu, Numaralandırıcının varsayılan durum tarafından işlenip işlenmediğini bağlı olabilir. Durum içermeyen ifadelerde kullanılmayan numaralandırıcılara ilişkin ilgili bir uyarı için **`switch`** **`default`** bkz. [C4062](compiler-warning-level-4-c4062.md).
 
-Varsayılan olarak bu uyarıyı kapalıdır. Varsayılan olarak kapalı olan uyarıları etkinleştirme hakkında daha fazla bilgi için bkz. [derleyici uyarıları, olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Bu uyarı varsayılan olarak kapalıdır. Varsayılan olarak kapalı olan uyarıların nasıl etkinleştirileceği hakkında daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4061 oluşturur; Servis talebi eksik Numaralandırıcının düzeltmek için ekleyin:
+Aşağıdaki örnek C4061 oluşturur; düzeltilmesi için eksik Numaralandırıcı için bir durum ekleyin:
 
 ```cpp
 // C4061.cpp

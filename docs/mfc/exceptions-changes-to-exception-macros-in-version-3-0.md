@@ -7,12 +7,12 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: 25095257096efd869e237383c5cd202ae4e602c2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 72b343641b0b43d408c5820ca2a2af1de94ce327
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620165"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225065"
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
 
@@ -34,7 +34,7 @@ Aşağıdaki örnekte, MFC sürüm 3,0 ve önceki sürümleri arasındaki bu far
 
 [!code-cpp[NVC_MFCExceptions#1](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_1.cpp)]
 
-Bu kod sürüm 3,0 ' de farklı davranır çünkü denetim her zaman eşleşen bir özel durum bildirimiyle ilk **catch** bloğuna geçer. Throw ifadesinin sonucu
+Bu kod sürüm 3,0 ' de farklı davranır çünkü denetim her zaman **`catch`** eşleşen bir özel durum bildirimiyle ilk bloğa geçirilir. Throw ifadesinin sonucu
 
 [!code-cpp[NVC_MFCExceptions#19](codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]
 

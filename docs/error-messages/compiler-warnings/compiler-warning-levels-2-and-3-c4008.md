@@ -6,21 +6,21 @@ f1_keywords:
 helpviewer_keywords:
 - C4008
 ms.assetid: fb45e535-cb68-4743-80e9-a6e34cfffeca
-ms.openlocfilehash: 9b6fb56045d53cd18689f3903bb3d7a08c3d4e4d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ab51b16331cc6a102c828234d2c2b8be84f2d276
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198010"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225247"
 ---
 # <a name="compiler-warning-levels-2-and-3-c4008"></a>Derleyici Uyarısı (düzey 2 ve 3) C4008
 
 ' Identifier ': ' Attribute ' özniteliği yoksayıldı
 
-Derleyici, bir işlev (düzey 3 uyarısı) veya veri (düzey 2 uyarısı) için `__fastcall`, **statik**veya **satır içi** özniteliği yoksaydı.
+Derleyici **`__fastcall`** , **`static`** **`inline`** bir işlev (düzey 3 uyarısı) veya veri (düzey 2 uyarısı) için, veya özniteliğini yok sayıldı.
 
 ### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. verilerle `__fastcall` özniteliği.
+1. **`__fastcall`** verileri olan öznitelik.
 
-1. **Main** işlevi ile **statik** veya **satır içi** özniteliği.
+1. **`static`** ya da **`inline`** **Main** işlevi olan özniteliği.

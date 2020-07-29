@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_assignable
 ms.assetid: 1284a8f7-4093-426d-9c9a-dabb46f90d6d
-ms.openlocfilehash: 11aed7fbe2540984d8ed69f88b2a95649e8fee70
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 14a3ee638bd6df3b52e7327ca6e3c77f4a0e8b71
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457488"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224870"
 ---
-# <a name="istriviallyassignable-class"></a>is_trivially_assignable sınıfı
+# <a name="is_trivially_assignable-class"></a>is_trivially_assignable sınıfı
 
-Türünde bir değerin, `From` `To` türe göre bir değere atanıp atanamayacağını test eder
+Türünde bir değerin, türe göre bir değere `From` atanıp atanamayacağını test eder `To`
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class To, class From>
@@ -34,11 +34,11 @@ Değer sağlayan nesnenin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İfade `declval<To>() = declval<From>()` iyi biçimlendirilmiş olmalıdır ve önemsiz olmayan işlemler gerektirmeyen derleyici tarafından bilinmelidir. Her ikisi de `From` , bilinmeyen türler, **void**veya diziler türünde olmalıdır.`To`
+İfade `declval<To>() = declval<From>()` iyi biçimlendirilmiş olmalıdır ve önemsiz olmayan işlemler gerektirmeyen derleyici tarafından bilinmelidir. Her ikisi de `From` `To` , **`void`** ya da bilinmeyen bir şekilde sınırlı türler veya diziler olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

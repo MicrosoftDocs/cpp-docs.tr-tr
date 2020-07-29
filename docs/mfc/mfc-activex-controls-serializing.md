@@ -15,12 +15,12 @@ helpviewer_keywords:
 - versioning ActiveX controls
 - wVerMajor global constant
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
-ms.openlocfilehash: c06299f2fc7409476e4f5e5744ea11c962e3b173
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f5e3b4bdf203f90b3550a2521ba51ba451cf3a46
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621196"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225026"
 ---
 # <a name="mfc-activex-controls-serializing"></a>MFC ActiveX Denetimleri: Seri Hale Getirme
 
@@ -58,13 +58,13 @@ Aşağıdaki tabloda, denetimin özelliklerini seri hale getirmek için kullanab
 |**PX_Bool ()**|Bir tür Boolean özelliğini seri hale getirir.|
 |**PX_Color ()**|Bir tür rengi özelliğini seri hale getirir.|
 |**PX_Currency ()**|Bir tür **Cy** (para birimi) özelliğini seri hale getirir.|
-|**PX_Double ()**|Bir tür **Double** özelliğini seri hale getirir.|
+|**PX_Double ()**|Bir tür özelliğini seri hale getirir **`double`** .|
 |**PX_Font ()**|Yazı tipi türü özelliğini seri hale getirir.|
-|**PX_Float ()**|Bir tür **float** özelliğini seri hale getirir.|
+|**PX_Float ()**|Bir tür özelliğini seri hale getirir **`float`** .|
 |**PX_IUnknown ()**|Türünde bir özelliği seri hale getirir `LPUNKNOWN` .|
-|**PX_Long ()**|Tür **Long** özelliğini seri hale getirir.|
+|**PX_Long ()**|Bir tür özelliğini seri hale getirir **`long`** .|
 |**PX_Picture ()**|Bir tür resim özelliğini seri hale getirir.|
-|**PX_Short ()**|Bir tür **Short** özelliğini seri hale getirir.|
+|**PX_Short ()**|Bir tür özelliğini seri hale getirir **`short`** .|
 |**PXstring ()**|Bir tür özelliğini seri hale getirir `CString` .|
 |**PX_ULong ()**|Bir tür **ulong** özelliği seri hale getirir.|
 |**PX_UShort ()**|Bir tür **ushort** özelliğini seri hale getirir.|
