@@ -1,23 +1,23 @@
 ---
-title: '&lt;vektör&gt; işlevleri'
+title: '&lt;vektör &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - vector/std::swap
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
-ms.openlocfilehash: cdf67b3cb34546f5d0dfcd9a4f3bd96500c18af9
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: bf28e44b4f603b1e4d6a87f0c28b42d6cc159980
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68241033"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224558"
 ---
-# <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
+# <a name="ltvectorgt-functions"></a>&lt;vektör &gt; işlevleri
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a><a name="swap"></a>Kur
 
-İki vektör öğelerini birbiriyle değiştirir.
+İki vektörün öğelerini değiş tokuş eder.
 
 ```cpp
 template <class Type, class Allocator>
@@ -26,16 +26,16 @@ void swap(vector<Type, Allocator>& left, vector<Type, Allocator>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Değiştirilecek öğeleri sağlayan vektör veya öğeleri vektör öğelerle ilişkili vektör *sol*.
+*Right*\
+Değiştirilecek öğeleri sağlayan vektör veya öğeleri, vektörünün *sol*tarafında değiş tokuş edilecek vektör.
 
-*Sol*\
-Öğeleri vektör öğelerle ilişkili vektör *doğru*.
+*tarafta*\
+Öğeleri vektör *sağdakilerle*değiş tokuş edilecek vektör.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel üye işlevini yürütmek için kapsayıcı sınıfı vektör bir algoritma şablon işlevi olan `left`. [Vector::Swap](../standard-library/vector-class.md) *(doğru*). İşlev şablonlarının kısmi derleyici tarafından sıralanması, örnekleri şunlardır. Şablon işlevleri şablonu işlev çağrısı ile eşleşen benzersiz değil bir şekilde aşırı yüklendiğinde, derleyici en özel şablon işlevi sürümü seçin. Şablon işlevinin genel sürüm **şablon** \< **sınıfı T**> **void takas**( **T &** , **T &** ), algoritma sınıfı tarafından atama çalışır ve yavaş bir işlemdir. Her bir kapsayıcıdaki özelleştirilmiş bir sürüm olarak kapsayıcı sınıfı iç gösterimine ile çalışabilir daha hızlıdır.
+Şablon işlevi, üye işlevini yürütmek için kapsayıcı sınıfı vektörü üzerinde özelleştirilmiş bir algoritmadır `left` . [vector:: Swap](../standard-library/vector-class.md) *(sağ*). Bunlar, derleyici tarafından işlev şablonlarının Kısmi sıralama örnekleridir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. **`template`** \< **class T**> Algoritma sınıfında, **void Swap**( **t&**, **t&**) şablon işlevinin genel sürümü atama ile çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ### <a name="example"></a>Örnek
 
-Üye işlevi kod örneğine bakın [vector::swap](../standard-library/vector-class.md) şablon sürümünü kullanan bir örnek için `swap`.
+Şablon sürümünü kullanan bir örnek için [vector:: Swap](../standard-library/vector-class.md) üye işlevine yönelik kod örneğine bakın `swap` .

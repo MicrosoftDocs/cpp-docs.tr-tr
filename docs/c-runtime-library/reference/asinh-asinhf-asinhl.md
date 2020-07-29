@@ -34,18 +34,18 @@ helpviewer_keywords:
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-ms.openlocfilehash: a200aa6e511ab83866fbf1df2beabb827c611c46
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0443648d33929082042881c14562b34356cb6063
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919617"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232657"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
 Ters hiperbolik sinüsü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double asinh( double x );
@@ -60,20 +60,20 @@ long double asinh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **ASİNH** işlevleri, *x*'in ters hyberbolik sinüsü (Ark hiperbolik sinüs) döndürür. Bu işlev, kayan nokta etki alanı üzerinde geçerlidir. *X* sessiz bir NaN, sonsuz veya sonsuz ise, aynı değer döndürülür.
 
-|Giriş|SEH özel durumu|**_matherr** Duruma|
+|Girdi|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, ıNF|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ kullanırken, **float** veya **Long** **Double** değerleri alıp döndüren **ASİNH** aşırı yüklerini çağırabilirsiniz. C programında, **ASİNH** her zaman **Double**alır ve döndürür.
+C++ kullanırken, veya değerlerini alan ve döndüren **ASİNH** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **ASİNH** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -81,7 +81,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**ASİNH**, **asınhf**, **asinhl**|\<Math. h>|\<cmath> veya \<Math. h<|
+|**ASİNH**, **asınhf**, **asinhl**|\<math.h>|\<cmath>veya \< Math. h<|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -115,7 +115,7 @@ asinh( 0.868671 ) = 0.785398
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
 [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
 [cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>

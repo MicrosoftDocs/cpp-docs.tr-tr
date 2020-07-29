@@ -9,16 +9,16 @@ f1_keywords:
 - chrono/std::chrono::system_clock::is_monotonic Constant
 - chrono/std::chrono::system_clock::is_steady Constant
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
-ms.openlocfilehash: ca516551bb1b41d96b99aaf7b842666c9341ee7d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4e530887e7c8cf26e8969a839702286913da9b67
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376523"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224584"
 ---
 # <a name="system_clock-structure"></a>system_clock Yapısı
 
-Sistemin gerçek zamanlı saatini temel alan bir *saat türünü* temsil eder.
+Sistemin gerçek zamanlı saatini temel alan bir *Saat türünü* temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,47 +28,47 @@ struct system_clock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Geçerli saati UTC olarak elde etmek için *saat türü* kullanılır. Tür, [süre](../standard-library/duration-class.md) ve sınıf [şablonu time_point](../standard-library/time-point-class.md)bir anlık temsil eder ve `now()` zamanı döndüren statik bir üye işlev tanımlar.
+*Saat türü* , GEÇERLI saati UTC olarak almak için kullanılır. Tür bir [süre](../standard-library/duration-class.md) ve sınıf şablonu [time_point](../standard-library/time-point-class.md)örneklemeyi içerir ve süreyi döndüren statik bir üye işlevini tanımlar `now()` .
 
-İlk çağrıyla döndürülen değer, bir sonraki çağrı `now()` yla döndürülen değerden her zaman daha az veya `now()`eşitse, saat *monotondur.*
+Bir saat, *monotonic* bir ilk çağrı tarafından döndürülen değer `now()` her zaman bir sonraki çağrısıyla döndürülen değerden küçük veya ona eşit ise monoton 'dir `now()` .
 
-Bir saat *monotonise* *sabitse* ve saat keneler arasındaki zaman sabitse sabittir.
+Bir saat *monoton* ise ve saat işaretleri arasındaki süre *sabittir ise sabit olur.*
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`system_clock::duration`|Bir eşanlamlı `duration<rep, period>`.|
-|`system_clock::period`|'nin içerdiği anlık `duration`olarak kene dönemini temsil etmek için kullanılan türiçin eşanlamlı.|
-|`system_clock::rep`|'nin içerdiği anlık `duration`saat işaretçisi sayısını temsil etmek için kullanılan tür için eşanlamlı.|
-|`system_clock::time_point`|Saat türünün kendisi `time_point<Clock, duration>`veya `Clock` aynı çağa dayanan ve aynı iç içe `duration` türüne sahip başka bir saat türü için eşanlamlı olan , eşanlamlısı olan bir eşanlamlıdır.|
+|`system_clock::duration`|İçin bir eş anlamlı `duration<rep, period>` .|
+|`system_clock::period`|Öğesinin içerilen örneklemesinde değer dönemini temsil etmek için kullanılan türün eş anlamlısı `duration` .|
+|`system_clock::rep`|İçinde bulunan örneklemede saat sayısını temsil etmek için kullanılan türün bir eş anlamlı değeri `duration` .|
+|`system_clock::time_point`|İçin bir eş anlamlı `time_point<Clock, duration>` , `Clock` veya aynı dönemi temel alan ve aynı iç içe türe sahip olan başka bir saat türü için bir eş anlamlı `duration` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[from_time_t](#from_time_t)|Statik. En `time_point` yakından belirli bir süreye yakın bir verir.|
-|[Nwo](#now)|Statik. Geçerli saati döndürür.|
-|[to_time_t](#to_time_t)|Statik. Belirtilen `time_t` nesneye en yakın olan `time_point`nesneyi döndürür.|
+|[from_time_t](#from_time_t)|Statik. Belirtilen bir `time_point` zamana en yakın bir değer döndürür.|
+|[sunuldu](#now)|Statik. Geçerli saati döndürür.|
+|[to_time_t](#to_time_t)|Statik. `time_t`Belirtilen bir nesne döndürür `time_point` .|
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[system_clock::is_monotonic Sabit](#is_monotonic_constant)|Saat türünün monoton olup olmadığını belirtir.|
-|[system_clock::is_steady Sabit](#is_steady_constant)|Saat türünün sabit olup olmadığını belirtir.|
+|[system_clock:: is_monotonic sabiti](#is_monotonic_constant)|Saat türünün monotonic olup olmadığını belirtir.|
+|[system_clock:: is_steady sabiti](#is_steady_constant)|Saat türünün kararlı olup olmadığını belirtir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<chrono>
+**Üst bilgi:**\<chrono>
 
-**Ad alanı:** std::chrono
+**Ad alanı:** std:: hatası
 
-## <a name="system_clockfrom_time_t"></a><a name="from_time_t"></a>system_clock:from_time_t
+## <a name="system_clockfrom_time_t"></a><a name="from_time_t"></a>system_clock:: from_time_t
 
-*Tm*tarafından temsil edilen süreye en yakın olan [time_point](../standard-library/time-point-class.md) döndüren statik yöntem.
+*TM*tarafından temsil edilen zamana en yakın bir [time_point](../standard-library/time-point-class.md) döndüren statik yöntem.
 
 ```cpp
 static time_point from_time_t(time_t Tm) noexcept;
@@ -76,12 +76,12 @@ static time_point from_time_t(time_t Tm) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Tm*\
-[time_t](../c-runtime-library/standard-types.md) bir nesne.
+*TM*\
+[Time_t](../c-runtime-library/standard-types.md) nesnesi.
 
-## <a name="system_clockis_monotonic-constant"></a><a name="is_monotonic_constant"></a>system_clock::is_monotonic Sabit
+## <a name="system_clockis_monotonic-constant"></a><a name="is_monotonic_constant"></a>system_clock:: is_monotonic sabiti
 
-Saat türünün monoton olup olmadığını belirten statik değer.
+Saat türünün monotonic olup olmadığını belirten statik değer.
 
 ```cpp
 static const bool is_monotonic = false;
@@ -89,15 +89,15 @@ static const bool is_monotonic = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu uygulamada, `system_clock::is_monotonic` her zaman **yanlış**döndürür.
+Bu uygulamada `system_clock::is_monotonic` her zaman değerini döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk çağrıyla döndürülen değer, bir sonraki çağrı `now()` yla döndürülen değerden her zaman daha az veya `now()`eşitse, saat *monotondur.*
+Bir saat, *monotonic* bir ilk çağrı tarafından döndürülen değer `now()` her zaman bir sonraki çağrısıyla döndürülen değerden küçük veya ona eşit ise monoton 'dir `now()` .
 
-## <a name="system_clockis_steady-constant"></a><a name="is_steady_constant"></a>system_clock::is_steady Sabit
+## <a name="system_clockis_steady-constant"></a><a name="is_steady_constant"></a>system_clock:: is_steady sabiti
 
-Saat türünün *sabit*olup olmadığını belirten statik değer.
+Saat türünün *kararlı*olup olmadığını belirten statik değer.
 
 ```cpp
 static const bool is_steady = false;
@@ -105,13 +105,13 @@ static const bool is_steady = false;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu uygulamada, `system_clock::is_steady` her zaman **yanlış**döndürür.
+Bu uygulamada `system_clock::is_steady` her zaman değerini döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir saat [monotonise](#is_monotonic_constant) *sabitse* ve saat keneler arasındaki zaman sabitse sabittir.
+Bir saat [monoton](#is_monotonic_constant) ise ve saat işaretleri arasındaki süre *sabittir ise sabit olur.*
 
-## <a name="system_clocknow"></a><a name="now"></a>system_clock::şimdi
+## <a name="system_clocknow"></a><a name="now"></a>system_clock:: Now
 
 Geçerli saati döndüren statik yöntem.
 
@@ -121,11 +121,11 @@ static time_point now() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli zamanı temsil eden [time_point](../standard-library/time-point-class.md) nesnesi.
+Geçerli saati temsil eden bir [time_point](../standard-library/time-point-class.md) nesnesi.
 
-## <a name="system_clockto_time_t"></a><a name="to_time_t"></a>system_clock:to_time_t
+## <a name="system_clockto_time_t"></a><a name="to_time_t"></a>system_clock:: to_time_t
 
-*Zaman*tarafından temsil edilen süreyi en yakından gösteren [bir time_t](../c-runtime-library/standard-types.md) döndüren statik yöntem.
+*Zamana*göre temsil edilen zamana en yakın bir [time_t](../c-runtime-library/standard-types.md) döndüren statik yöntem.
 
 ```cpp
 static time_t to_time_t(const time_point& Time) noexcept;
@@ -133,11 +133,11 @@ static time_t to_time_t(const time_point& Time) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Zaman*\
-[time_point](../standard-library/time-point-class.md) bir nesne.
+*Işınızda*\
+[Time_point](../standard-library/time-point-class.md) nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
 [\<chrono>](../standard-library/chrono.md)\
 [steady_clock yapısı](../standard-library/steady-clock-struct.md)

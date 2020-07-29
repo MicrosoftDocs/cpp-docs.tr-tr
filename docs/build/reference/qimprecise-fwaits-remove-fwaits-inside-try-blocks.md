@@ -7,16 +7,16 @@ helpviewer_keywords:
 - -Qimprecise_fwaits compiler option (C++)
 - /Qimprecise_fwaits compiler option (C++)
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
-ms.openlocfilehash: 40683382686ea64a80563f3f29b7d3523f4144a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 424feda66f6925cb305256249101ea4013e3090f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319596"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232683"
 ---
-# <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
+# <a name="qimprecise_fwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
 
-Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/FP: except](fp-specify-floating-point-behavior.md) derleyici seçeneği.
+`fwait` **`try`** [/FP: except](fp-specify-floating-point-behavior.md) derleyici seçeneğini kullandığınızda iç blokları olan komutları kaldırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,17 +26,17 @@ Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/FP:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. Belirtirseniz **/FP: dışında** derleyici seçeneğini ekler bir `fwait` komutunu her kod satırı etrafında bir `try` blok. Bu şekilde, derleyici belirli bir özel durum oluşturan kod satırına tanımlayabilirsiniz. **/ Qimprecise_fwaits** kaldırır iç `fwait` yönergeler, yalnızca geçici bir çözüm bekler bırakarak `try` blok. Bunun yapılması performansı artırır, ancak derleyicinin yalnızca hangi söyleyin mümkün olacaktır `try` blok bir özel durum, hangi satır neden olur.
+**/FP: except** de belirtilmemişse, bu seçeneğin hiçbir etkisi yoktur. **/FP: except** seçeneğini belirtirseniz, derleyici `fwait` bir bloktaki her kod satırının çevresine bir komut ekler **`try`** . Bu şekilde, derleyici özel durum üreten belirli kod satırını tanımlayabilir. **/Qimprecise_fwaits** iç `fwait` yönergeleri kaldırır ve yalnızca bloğun etrafında bekler **`try`** . Bu, performansı artırır, ancak derleyici yalnızca hangi **`try`** bloğun özel duruma neden olduğunu söyleyebilir, hangi satırı değil.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -44,6 +44,6 @@ Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. B
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -1,17 +1,17 @@
 ---
-title: Denetim (C++ com özniteliği)
+title: Denetim (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.control
 helpviewer_keywords:
 - Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-ms.openlocfilehash: 9cdcca6fac2a92bf28f0f655489e61dcb08213e4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 59f1a6d1ad940f79693f9c5e37c1fe6527da3805
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214948"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224467"
 ---
 # <a name="control"></a>denetimi
 
@@ -25,7 +25,7 @@ Kullanıcı tanımlı türün bir denetim olduğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Denetim** özniteliği [coclass](coclass.md) özniteliğini belirtir. **Denetim** C++ özniteliği [Control](/windows/win32/Midl/control) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Denetim** özniteliği [coclass](coclass.md) özniteliğini belirtir. **Control** C++ özniteliği [Control](/windows/win32/Midl/control) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -50,7 +50,7 @@ class CTest : public ICustom {};
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -60,5 +60,5 @@ class CTest : public ICustom {};
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)

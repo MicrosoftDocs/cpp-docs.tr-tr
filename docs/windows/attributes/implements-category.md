@@ -1,23 +1,23 @@
 ---
-title: implements_category (C++ com özniteliği)
+title: implements_category (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.implements_category
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: dd55c7474a0a8a273ddfab212b3ebcaa6e3b4a65
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 067a3a183820b09112217647e20d12b592540613
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166868"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224428"
 ---
 # <a name="implements_category"></a>implements_category
 
 Hedef sınıf tarafından uygulanan bileşen kategorilerini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ implements_category(implements_category="uuid") ]
@@ -36,7 +36,7 @@ Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-pro
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, aşağıdaki nesnenin `Control` kategorisini uyguladığını belirtir.
+Aşağıdaki kod, aşağıdaki nesnenin kategoriyi uyguladığını belirtir `Control` .
 
 ```cpp
 // cpp_attr_ref_implements_category.cpp
@@ -57,15 +57,15 @@ class CMyClass {};
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Yes|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass`, `progid`veya `vi_progid`|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass` , `progid` veya`vi_progid`|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM Öznitelikleri](com-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
+[COM öznitelikleri](com-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
 [IMPLEMENTED_CATEGORY](../../atl/reference/category-macros.md#implemented_category)

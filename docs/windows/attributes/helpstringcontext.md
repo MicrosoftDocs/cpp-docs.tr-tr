@@ -1,23 +1,23 @@
 ---
-title: helpstringcontext (C++ com özniteliği)
+title: helpstringcontext (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.helpstringcontext
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-ms.openlocfilehash: 339d65070efe8bf2dafae2cf76e92c75a1bebc18
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e6d4a6b4ab2381fc9ebe0f237978c92fe0f656c5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168155"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224454"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
 Bir. hlp veya. chm dosyasındaki Yardım konusunun KIMLIĞINI belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ helpstringcontext(contextID) ]
@@ -54,7 +54,7 @@ __interface IMyI
 
 |||
 |-|-|
-|**Uygulama hedefi**|**Class**, **Interface**, Interface yöntemi|
+|**Şunlara uygulanır**|**`class`**, **interface**, Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -64,7 +64,7 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Arabirim Öznitelikleri](interface-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
-[module](module-cpp.md)
+[Arabirim öznitelikleri](interface-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[Yöntem öznitelikleri](method-attributes.md)<br/>
+[birimi](module-cpp.md)

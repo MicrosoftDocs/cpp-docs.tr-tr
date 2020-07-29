@@ -9,47 +9,47 @@ helpviewer_keywords:
 - EXPORT linker option
 - -EXPORT linker option
 ms.assetid: 0920fb44-a472-4091-a8e6-73051f494ca0
-ms.openlocfilehash: 7c4f4621bbccd4285bcf4eca07d2544d53d14f6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a55b2a4ce72de644fe426894ab389f62bd29b204
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271365"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232696"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT (İşlevi Dışarı Aktarır)
 
-Bir işlev adı veya sıra veya veri, programınızı dışarı aktarır.
+Bir işlevi, programından ada veya sıraya göre veya verilere göre dışarı aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ Dışarı aktarma:**<em>GirişAdı</em>[**,\@**<em>sıralı</em>[**, NONAME**]] [**, veri**]
+> **/Export:**<em>EntryName</em>[**, \@ **<em>Ordinal</em>[**, noname**]] [**, veri**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Dışarı aktarma** seçeneği programınızı diğer programları işlevi çağırabilir veya verileri dışarı aktarmak için bir işlev veya veri öğesi belirtir. Dışarı aktarmalar, genellikle bir DLL içinde tanımlanır.
+**/Export** seçeneği, programından dışarı aktarılacak bir işlev veya veri öğesi belirtir, böylece diğer programlar işlevi çağırabilir veya verileri kullanabilir. Dışarı aktarmalar genellikle DLL 'de tanımlanmıştır.
 
-*GirişAdı* çağırma program tarafından kullanılacak olan işlev veya veri öğesinin adını aynıdır. *Sıralı* belirtmezseniz, dizin ' % s'aralık 1 ile 65.535; dışarı aktarma tablosuna belirtir *sıralı*, bağlantı bir atar. **NONAME** anahtar sözcüğü işlevin olmadan yalnızca bir sıralı, dışarı bir *GirişAdı*.
+*EntryName* , çağıran program tarafından kullanılacak şekilde işlevin veya veri öğesinin adıdır. *Ordinal* , 1 ile 65.535 arasında dışarı aktarmalar tablosuna bir dizin belirtir; *sıra*belirtmezseniz, bağlantı bir tane atar. **Noname** anahtar sözcüğü, *EntryName*olmadan işlevi yalnızca sıra olarak dışa aktarır.
 
-**Veri** anahtar sözcüğü, dışarı aktarılan öğesi bir veri öğesi olduğunu belirtir. Veri öğesi istemci programı kullanılarak bildirilmelidir **extern __declspec(dllimport)**.
+**Data** anahtar sözcüğü, dışarıya aktarılmış öğenin bir veri öğesi olduğunu belirtir. İstemci programındaki veri öğesi **extern __declspec (dllimport)** kullanılarak bildirilmelidir.
 
-Önerilen Kullanım sırasına göre listelenmiş bir tanımını dışarı aktarma için dört yöntemleri vardır:
+Bir tanımı dışarı aktarmak için önerilen kullanım sırasıyla listelenen dört yöntem vardır:
 
-1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodunda
+1. kaynak kodunda [__declspec (dllexport)](../../cpp/dllexport-dllimport.md)
 
-1. Bir [dışarı AKTARMALARI](exports.md) .def dosyası deyimi
+1. . Def dosyasındaki [dışarı aktarmalar](exports.md) deyimleri
 
-1. Bir LINK komutunu/Export belirtiminde
+1. BAĞLANTı komutunda bir/EXPORT belirtimi
 
-1. A [yorum](../../preprocessor/comment-c-cpp.md) yönergesi, kaynak kodda, formun `#pragma comment(linker, "/export: definition ")`.
+1. Formun kaynak kodunda bir [Açıklama](../../preprocessor/comment-c-cpp.md) yönergesi `#pragma comment(linker, "/export: definition ")` .
 
-Bu yöntemlerin tümü, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, yapı .exp dosyasının kullanılmadığı sürece ayrıca bir içeri aktarma kitaplığı oluşturur.
+Tüm bu yöntemler aynı programda kullanılabilir. BAĞLANTı, dışarı aktarmalar içeren bir program oluşturduğunda, derlemede bir. exp dosyası kullanılmadığı takdirde bir içeri aktarma kitaplığı da oluşturur.
 
-BAĞLANTI kullanan tanımlayıcıların forms düzenlenmiş. .Obj dosyası oluşturduğunda, derleyici tanımlayıcı düzenler. Varsa *GirişAdı* bağlayıcıda ve onun için belirttiğiniz (kaynak kodunda göründüğü gibi) oluşturmak, bağlantı denemeleri adıyla eşleşecek şekilde. Benzersiz bir eşleşme bulamazsa, bağlantı bir hata iletisi verir. Kullanım [DUMPBIN](dumpbin-reference.md) almak için aracı [ile düzenlenmiş adın](decorated-names.md) bağlayıcıya belirtmek gerektiğinde bir tanımlayıcının formu.
+BAĞLANTı, düzenlenmiş tanımlayıcıların biçimlerini kullanır. Derleyici,. obj dosyasını oluşturduğunda bir tanımlayıcıyı tasarlaştırır. *EntryName* , yerleşik olmayan biçimde (kaynak kodda göründüğü gibi) bağlayıcıya BELIRTILMIŞSE, bağlantı, adı ile eşleşecek şekilde çalışır. Benzersiz bir eşleşme bulamazsa bağlantı, bir hata iletisi verir. Bir tanımlayıcının kendisini bağlayıcıya belirtmeniz gerektiğinde [düzenlenmiş ad](decorated-names.md) biçimini almak Için [dumpbin](dumpbin-reference.md) aracını kullanın.
 
 > [!NOTE]
-> C tanımlayıcıları, bildirilen düzenlenmiş biçiminde belirtmeyin `__cdecl` veya `__stdcall`.
+> Veya olarak belirtilen C tanımlayıcılarının düzenlenmiş biçimini belirtmeyin **`__cdecl`** **`__stdcall`** .
 
-Bir ve işlev adı dışarı aktarma ve derleme yapılandırmasına bağlı olarak farklı verir (örneğin, 32 bit veya 64 bit derlemelerde) olması gerekiyorsa, her yapılandırma için farklı DEF dosyaları kullanabilirsiniz. (Koşullu önişlemci yönergeleri DEF dosyaları içinde kullanılamaz.) Alternatif olarak, kullandığınız bir `#pragma comment` işlev bildiriminden önce yönerge burada gösterilen şekilde `PlainFuncName` ve adıdır ve `_PlainFuncName@4` işlev düzenlenmiş adı:
+Numaralandıraktarılmamış bir işlev adını dışa aktarmanız ve derleme yapılandırmasına (örneğin, 32-bit veya 64 bit derlemeler) göre farklı dışarı aktarmalar sahip olmanız gerekiyorsa, her yapılandırma için farklı DEF dosyaları kullanabilirsiniz. (DEF dosyasında Önişlemci koşullu yönergelere izin verilmez.) Alternatif olarak, `#pragma comment` burada gösterildiği gibi bir işlev bildiriminden önce bir yönerge kullanabilirsiniz, burada `PlainFuncName` açıklanmamış ad ve `_PlainFuncName@4` işlevin düzenlenmiş adıdır:
 
 ```cpp
 #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
@@ -58,11 +58,11 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **komut satırı** özellik sayfasını seçin.
 
-1. Seçeneğini girin **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna seçeneği girin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -71,4 +71,4 @@ BOOL CALLBACK PlainFuncName( Things * lpParams)
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)
