@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4673
 ms.assetid: 95626ec6-f05b-43c7-8b9a-a60a6f98dd30
-ms.openlocfilehash: cd53aeb7f767b06c017c64caa55c916aa1e2b9c9
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: e361077a5584ba97c7efe22b99ec46567fc9ba4e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990571"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228745"
 ---
 # <a name="compiler-warning-level-4-c4673"></a>Derleyici Uyarısı (düzey 4) C4673
 
 ' tanımlayıcı ' üretiliyor aşağıdaki türler, catch sitesinde değerlendirilmeyecek
 
-Bir throw nesnesi **catch** bloğunda işlenemiyor. İşlenmeyen her tür, bu uyarıyı içeren satırın hemen ardından hata çıktısında listelenir. İşlenmemiş her tür kendi uyarısına sahiptir. Daha fazla bilgi için her belirli tür için uyarıyı okuyun.
+Bir throw nesnesi **`catch`** bloğunda işlenemiyor. İşlenmeyen her tür, bu uyarıyı içeren satırın hemen ardından hata çıktısında listelenir. İşlenmemiş her tür kendi uyarısına sahiptir. Daha fazla bilgi için her belirli tür için uyarıyı okuyun.
 
 Aşağıdaki örnek C4673 oluşturur:
 

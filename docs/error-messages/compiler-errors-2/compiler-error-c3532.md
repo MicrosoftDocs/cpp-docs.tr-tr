@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3532
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-ms.openlocfilehash: 2ef5eb3c2bedd9defbd0b80e6d8c5c8912fcf16d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e2329111e916df9eac99d156bcf58a58e148cb08
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761939"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228823"
 ---
 # <a name="compiler-error-c3532"></a>Derleyici hatası C3532
 
 ' Type ': Hatalı ' Auto ' kullanımı
 
-Belirtilen tür `auto` anahtar sözcüğüyle bildirilemez. Örneğin, bir dizi veya yöntem dönüş türü bildirmek için `auto` anahtar sözcüğünü kullanamazsınız.
+Belirtilen tür **`auto`** anahtar sözcüğüyle bildirilemez. Örneğin, **`auto`** bir dizi veya yöntem dönüş türü bildirmek için anahtar sözcüğünü kullanamazsınız.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
@@ -27,7 +27,7 @@ Belirtilen tür `auto` anahtar sözcüğüyle bildirilemez. Örneğin, bir dizi 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `auto` anahtar sözcüğü bir yöntem dönüş türü bildiremediği için C3532 verir.
+Aşağıdaki örnek, C3532 verir çünkü **`auto`** anahtar sözcüğü bir yöntem dönüş türü bildiremez.
 
 ```cpp
 // C3532a.cpp
@@ -37,7 +37,7 @@ auto f(){}   // C3532
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `auto` anahtar sözcüğü bir dizi bildiremediği için C3532 verir.
+Aşağıdaki örnek, C3532 verir çünkü **`auto`** anahtar sözcüğü bir dizi bildiremez.
 
 ```cpp
 // C3532b.cpp

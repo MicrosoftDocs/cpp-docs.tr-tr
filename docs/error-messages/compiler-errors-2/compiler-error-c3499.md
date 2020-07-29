@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3499
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-ms.openlocfilehash: e50aaeac4a9f02cf3e67c25a08afdc2df0f1c62f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 21d7424e727dab54ff507a8ec9a38db44df1806f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738017"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228849"
 ---
 # <a name="compiler-error-c3499"></a>Derleyici hatası C3499
 
 void dönüş türüne sahip olarak belirtilen bir lambda bir değer döndüremez
 
-Dönüş türü olarak `void` belirten bir lambda ifadesi bir değer döndürdüğünde derleyici bu hatayı oluşturur; bir lambda ifadesi birden çok deyim içerdiğinde ve bir değer döndürdüğünde, ancak dönüş türünü belirtmezse.
+Derleyici, dönüş türü olarak belirten bir lambda ifadesi **`void`** bir değer döndürdüğünde veya bir lambda ifadesi birden fazla deyim içerdiğinde ve bir değer döndürdüğünde ve dönüş türünü belirtmezse bu hatayı üretir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
@@ -62,4 +62,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)

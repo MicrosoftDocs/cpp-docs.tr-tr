@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: 6b487c0f94a00ec64e0c2178265c5a8c27544a51
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 60ffd5d8decd5c9065ca55cfed34383278359f3e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761562"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228797"
 ---
 # <a name="compiler-error-c3535"></a>Derleyici hatası C3535
 
 ' type1 ' için ' type2 ' öğesinden tür çıkarılamıyor
 
-`auto` anahtar sözcüğüyle belirtilen değişkenin türü, başlatma ifadesinin türünden çıkarsanamaz. Örneğin, başlatma ifadesi bir tür olmayan `void`değerlendirilirse bu hata oluşur.
+Anahtar sözcüğü tarafından tanımlanan değişkenin türü, **`auto`** başlatma ifadesinin türünden çıkarsanamaz. Örneğin, başlatma ifadesi bir tür olmayan olarak değerlendirilirse bu hata oluşur **`void`** .
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Başlatma ifadesinin türünün `void`olmadığından emin olun.
+1. Başlatma ifadesinin türünün olmadığından emin olun **`void`** .
 
 1. Bildirimin temel bir tür işaretçisi olmadığından emin olun. Daha fazla bilgi için bkz. [temel türler](../../cpp/fundamental-types-cpp.md).
 
@@ -29,7 +29,7 @@ ms.locfileid: "74761562"
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, başlatma ifadesi `void`olarak değerlendirildiği için C3535 verir.
+Aşağıdaki örnek, C3535 verir, çünkü başlatma ifadesi olarak değerlendirilir **`void`** .
 
 ```cpp
 // C3535a.cpp
@@ -44,7 +44,7 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3535 verir, çünkü deyim çıkarılan bir tür işaretçisi olarak değişken `x` bildiriyor, ancak Başlatıcı ifadesinin türü Double. Sonuç olarak, derleyici değişkenin türünü çıkarılamıyor.
+Aşağıdaki örnek, C3535 verir, çünkü deyim bir `x` çıkarılmış türe işaretçi olarak değişken bildirir, ancak Başlatıcı ifadesinin türü Double olur. Sonuç olarak, derleyici değişkenin türünü çıkarılamıyor.
 
 ```cpp
 // C3535b.cpp
@@ -58,7 +58,7 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, değişken `p` çıkarılan bir türe işaretçi bildirdiğinden, ancak başlatma ifadesi bir işaretçi türü olmadığı için C3535 verir.
+Aşağıdaki örnek, C3535 verir, çünkü değişken `p` çıkarılan bir türe işaretçi bildiriyor, ancak başlatma ifadesi bir işaretçi türü değil.
 
 ```cpp
 // C3535c.cpp
@@ -71,4 +71,4 @@ auto *p = x;  // C3535
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)<br/>
-[Temel Türler](../../cpp/fundamental-types-cpp.md)
+[Temel türler](../../cpp/fundamental-types-cpp.md)

@@ -6,18 +6,18 @@ helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-ms.openlocfilehash: 4c579d0c0ab39a2ddcadfd116bdfed8ba9da2863
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 527f2837f0c29299727a22df8d4f3d807be0e25b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182038"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228719"
 ---
 # <a name="generic-delegates-ccli"></a>Genel Temsilciler (C++/CLI)
 
-Temsilcilerle genel tür parametreleri kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [DelegateC++(/CLI C++ve/CX)](delegate-cpp-component-extensions.md).
+Temsilcilerle genel tür parametreleri kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [Temsilci (c++/CLI ve c++/cx)](delegate-cpp-component-extensions.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [attributes]
@@ -36,10 +36,10 @@ Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları h
 Tür parametrelerine yönelik tanımlayıcıların virgülle ayrılmış listesi.
 
 *tür-parametre-kısıtlamalar-yan tümceler*<br/>
-[Genel tür parametrelerindeki (C++/CLI) kısıtlamalarda](constraints-on-generic-type-parameters-cpp-cli.md) belirtilen formu alır
+[Genel tür parametrelerindeki kısıtlamalarda belirtilen formu alır (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
 
 *Erişilebilirlik-değiştiriciler*<br/>
-Seçim Erişilebilirlik değiştiricileri (örn. **genel**, **özel**).
+Seçim Erişilebilirlik değiştiricileri (ör. **`public`** **`private`** ).
 
 *Sonuç türü*<br/>
 Temsilcinin dönüş türü.
@@ -107,7 +107,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `GenDelegate<ItemType>`bir genel temsilci bildirir ve ardından onu `ItemType`tür parametresini kullanan `MyMethod` yöntemiyle ilişkilendirerek onu başlatır. Temsilcinin iki örneği (tamsayı ve çift) oluşturulup çağrılır.
+Aşağıdaki örnek, genel bir temsilci bildirir `GenDelegate<ItemType>` ve ardından onu tür parametresini kullanan yönteme ilişkilendirerek onu başlatır `MyMethod` `ItemType` . Temsilcinin iki örneği (tamsayı ve çift) oluşturulup çağrılır.
 
 ```cpp
 // generics_generic_delegate.cpp
