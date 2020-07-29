@@ -35,18 +35,18 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: d368f9ca99753e0749fe3c77a512c0d0c8975161
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9e280e489d5da5d66a48b72b38fe22a6943b7318
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912293"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215120"
 ---
 # <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
 
 Hiperbolik tanjantı hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double tanh( double x );
@@ -61,20 +61,20 @@ long double tanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
 **Tanh** işlevleri *x*'in hiperbolik tanjantını döndürür. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Girdi|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
 |± QNAN, IND|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz. C programında, **tanh** her zaman **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **tanh** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -82,7 +82,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C)|
 |-------------|---------------------|-|
-|**tanh**, **tanhf**, **tanhl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**tanh**, **tanhf**, **tanhl**|\<math.h>|\<cmath> veya \<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -116,7 +116,7 @@ tanh( 1.000000 ) = 0.761594
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
 [asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
 [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>

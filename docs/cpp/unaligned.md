@@ -8,37 +8,37 @@ f1_keywords:
 helpviewer_keywords:
 - __unaligned keyword [C++]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
-ms.openlocfilehash: 5f93aaa79fd7c3664ecf80d5007d5954002bce4a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2ab94a44d08165ca6e8f394278e24d7c8d201398
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160651"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223505"
 ---
 # <a name="__unaligned"></a>__unaligned
 
-**Microsoft 'a özgü**. **__Unaligned** değiştiricisiyle bir işaretçi bildirdiğinizde, derleyici işaretçinin hizalı olmayan verileri adresleyen olduğunu varsayar. Sonuç olarak, işaretçi üzerinde hizalanmamış okuma ve yazma işlemlerini işlemek için platforma uygun kod oluşturulur.
+**Microsoft 'a özgü**. Değiştiriciyle bir işaretçi bildirdiğinizde **`__unaligned`** , derleyici işaretçinin hizalı olmayan verileri adresleyen olduğunu varsayar. Sonuç olarak, işaretçi üzerinde hizalanmamış okuma ve yazma işlemlerini işlemek için platforma uygun kod oluşturulur.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu değiştirici, işaretçinin başvurduğu verilerin hizalamasını açıklar; işaretçinin kendisi hizalandığı varsayılır.
 
-**__Unaligned** anahtar sözcüğü için zorunludur, platforma ve ortama göre değişir. Verileri uygun bir şekilde işaretlemeniz, performans yaptırımlarından donanım hatalarına kadar sorunlara yol açabilir. **__Unaligned** değiştiricisi x86 platformu için geçerli değil.
+Anahtar sözcüğü için zorunludur, **`__unaligned`** platforma ve ortama göre değişir. Verileri uygun bir şekilde işaretlemeniz, performans yaptırımlarından donanım hatalarına kadar sorunlara yol açabilir. **`__unaligned`** Değiştirici x86 platformu için geçerli değil.
 
-Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_unaligned** **__unaligned** için bir eş anlamlı.
+Önceki sürümlerle uyumluluk için, **`_unaligned`** **`__unaligned`** derleyici seçeneği [ `/Za` \( dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) ' ın belirtildiği durumlar için bir eş anlamlı olur.
 
 Hizalama hakkında daha fazla bilgi için bkz.
 
-- [align](../cpp/align-cpp.md)
+- [`align`](../cpp/align-cpp.md)
 
-- [__alignof İşleci](../cpp/alignof-operator.md)
+- [`alignof`İşlecinde](../cpp/alignof-operator.md)
 
-- [pack](../preprocessor/pack.md)
+- [`pack`](../preprocessor/pack.md)
 
-- [/Zp (Yapı Üyesi Hizalama)](../build/reference/zp-struct-member-alignment.md)
+- [`/Zp`(Struct üye hizalaması)](../build/reference/zp-struct-member-alignment.md)
 
 - [Yapı Hizalama Örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - goto keyword [C++]
 ms.assetid: 724c5deb-2de1-42d8-8ef1-23589d9bf5ed
-ms.openlocfilehash: aac308905a01a52a4ce5ee0fa3be03f2f33ac1cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e56ebfadea0d643ac68e2ace722a39587bd01312
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153703"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223713"
 ---
 # <a name="goto-statement-c"></a>goto Deyimi (C++)
 
-**Goto** deyimi koşulsuz olarak aktarır denetimi tarafından belirtilen tanımlayıcı etiketli deyim.
+**`goto`** İfade, denetimi belirtilen tanımlayıcı tarafından etiketlenmiş ifadeye koşulsuz olarak aktarır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,11 +25,11 @@ goto identifier;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Etiketli deyim tarafından belirlenen `identifier` geçerli işlev olmalıdır. Tüm `identifier` adları bir iç ad alanının üyeleri ve diğer tanımlayıcıları ile bu nedenle müdahale etmez.
+Tarafından atanan etiketli deyimin `identifier` geçerli işlevde olması gerekir. Tüm `identifier` adlar dahili bir ad alanının üyeleridir ve bu nedenle diğer tanımlayıcılarla karışmaz.
 
-Bir bildirim etiketi yalnızca anlamlı bir **goto** deyimi; Aksi takdirde, deyim etiketleri göz ardı edilir. Etiketleri bildirilemez.
+Bir ifade etiketi yalnızca bir ifadeye anlam ifade edilir **`goto`** ; Aksi takdirde, ekstre etiketleri yok sayılır. Etiketler yeniden bildirilemez.
 
-A **goto** deyimi, denetimi kapsamında o konumda olan herhangi bir değişken başlatma üzerinden atlayan bir konuma aktarmanız izin verilmiyor. Aşağıdaki örnek C2362 başlatır:
+Bir **`goto`** deyimin, bu konumdaki kapsamda olan herhangi bir değişkenin başlatılmasına atlayan bir konuma denetim aktarmasına izin verilmez. Aşağıdaki örnek C2362 oluşturur:
 
 ```cpp
 int goto_fn(bool b)
@@ -48,13 +48,13 @@ exit:
 }
 ```
 
-İyi bir stili programlama **sonu**, **devam**, ve **dönüş** yerine deyimleri **goto** deyimi her olası. Ancak, çünkü **sonu** deyimi yalnızca bir döngü düzeyden çıkar, kullanmanız gerekebilir bir **goto** deyimi iç içe döngü çıkmak için.
+**`break`** **`continue`** **`return`** Mümkün olduğunda deyim yerine,, ve deyimlerini kullanmak iyi bir programlama stilidir **`goto`** . Ancak, **`break`** ifade yalnızca bir döngü düzeyinden çıkış yaptığından, daha **`goto`** derin iç içe döngülü çıkmak için bir ifade kullanmanız gerekebilir.
 
-Etiketler hakkında daha fazla bilgi ve **goto** deyimi bkz [etiketli deyimler](../cpp/labeled-statements.md).
+Etiketler ve deyim hakkında daha fazla bilgi için **`goto`** bkz. [etiketli deyimler](../cpp/labeled-statements.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, bir **goto** deyime aktarır denetim noktasına etiketli `stop` olduğunda `i` 3'e eşittir.
+Bu örnekte, bir **`goto`** ifade denetimi, 1 ' e eşit olduğunda etiketli noktaya aktarır `stop` `i` .
 
 ```cpp
 // goto_statement.cpp
@@ -100,4 +100,4 @@ Jumped to stop. i = 3
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Atlama Deyimleri](../cpp/jump-statements-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

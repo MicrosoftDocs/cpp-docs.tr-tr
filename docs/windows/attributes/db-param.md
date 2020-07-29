@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: a3cfcf3c7ce3313eaff9a3b35854e1e077fc906f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1a32dcceae1e4e4fbc730101381eda84b5350ffd
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62148100"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215315"
 ---
-# <a name="dbparam"></a>db_param
+# <a name="db_param"></a>db_param
 
-Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.
+Belirtilen üye değişkenini bir giriş veya çıkış parametresiyle ilişkilendirir ve değişkeni ayırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ db_param(ordinal, paramtype="DBPARAMIO_INPUT", dbtype, precision, scale, status, length) ]
@@ -25,48 +25,48 @@ Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi 
 
 ### <a name="parameters"></a>Parametreler
 
-*Sıra*<br/>
-Satır kümesi veri bağlanacak bir alana karşılık gelen sütun numarası (DBCOLUMNINFO sıra).
+*numarasını*<br/>
+Verilerin bağlanacağı satır kümesindeki bir alana karşılık gelen sütun numarası (DBCOLUMNıNFO sıra).
 
-*paramtype*<br/>
-(İsteğe bağlı) İçin parametre türü. Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre g/ç türlerini destekler. Bir veya daha fazla DBPARAMIOENUM değerlerinin bir birleşimini türüdür:
+*parametre türü*<br/>
+Seçim Parametresi için ayarlanacak tür. Sağlayıcılar yalnızca temel alınan veri kaynağı tarafından desteklenen parametre g/ç türlerini destekler. Tür bir veya daha fazla DBPARAMıOENUM değeri birleşimidir:
 
-- DBPARAMIO_INPUT giriş parametresi.
+- Giriş parametresi DBPARAMIO_INPUT.
 
-- DBPARAMIO_OUTPUT çıkış parametresi.
+- Bir çıkış parametresi DBPARAMIO_OUTPUT.
 
-- Erişimci DBPARAMIO_NOTPARAM hiç parametre yok. Ayar `eParamIO` satır içinde bu değer için erişimciler hatırlatır kullanıcı parametreleri göz ardı edilir.
+- DBPARAMIO_NOTPARAM erişimcisinin parametresi yok. `eParamIO`Satır erişimcilerinde bu değere ayarlandığında, kullanıcıya parametrelerin yoksayıldığını hatırlatır.
 
 *DbType*<br/>
-(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) sütun girişi.
+Seçim Sütun girişi için OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) .
 
-*Duyarlık*<br/>
-(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
+*duyarlılık*<br/>
+Seçim Sütun girişi için kullanılacak duyarlık. Ayrıntılar için bkz `bPrecision` . [dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) öğesinin açıklaması
 
-*Ölçek*<br/>
-(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845(v=vs.85))
+*ölçek*<br/>
+Seçim Sütun girişi için kullanılacak ölçek. Ayrıntılar için bkz `bScale` . [dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) öğesinin açıklaması
 
-*Durumu*<br/>
-(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617(v=vs.85)) içinde *OLE DB Programcının Başvurusu*.
+*durumlarına*<br/>
+Seçim Bu sütunun durumunu tutmak için kullanılan bir üye değişkeni. Durum, sütun değerinin bir veri değeri mi yoksa NULL gibi başka bir değer mi olduğunu gösterir. Olası değerler için *OLE DB Programcı başvurusunda* [durum](/previous-versions/windows/desktop/ms722617(v=vs.85)) ' a bakın.
 
-*Uzunluğu*<br/>
-(İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
+*uzunluklu*<br/>
+Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_param** parametreleri tanımlar komutları kullanın; Bu nedenle ile kullanarak `db_command`. Örneğin, kullanabileceğiniz **db_param** SQL sorguları veya saklı yordamları parametleri bağlamak için. Bir saklı yordam parametreleri soru işareti (?) belirtilir ve parametreleri göründükleri sırayla veri üyeleri bağlamanız gerekir.
+**db_param** komutlarda kullandığınız parametreleri tanımlar; Bu nedenle, ile kullanırsınız `db_command` . Örneğin, SQL sorgularında veya saklı yordamlarda parametreleri bağlamak için **db_param** kullanabilirsiniz. Saklı yordamdaki parametreler soru işareti (?) ile gösterilir ve veri üyelerini parametrelerin göründüğü sırada bağlamanız gerekir.
 
-**db_param** OLE DB içinde yer alabilirler üye verileri sınırlandırır `ICommandWithParameters`-bağlama dayalı. (Giriş veya çıkış) parametre türü, OLE DB türü, kesinlik, Ölçek, durum ve uzunluğu belirtilen parametresi için ayarlar. Bu öznitelik, OLE DB Tüketici makroları BEGIN_PARAM_MAP ekler... END_PARAM_MAP. Her üye ile işaretle **db_param** haritadaki bir COLUMN_ENTRY biçiminde, bir giriş özniteliği dolduracaktır.
+**db_param** , OLE DB tabanlı bağlamaya katılabilen üye verilerini ayırır `ICommandWithParameters` . Belirtilen parametre için parametre türünü (giriş veya çıkış), OLE DB türü, duyarlık, ölçek, durum ve uzunluğu ayarlar. Bu öznitelik OLE DB tüketici makrolarını ekler BEGIN_PARAM_MAP... END_PARAM_MAP. **Db_param** özniteliğiyle işaretlediğiniz her üye, haritadaki bir girişi bir COLUMN_ENTRY biçiminde kaplar.
 
-**db_param** ya da birlikte kullanılan [db_table](db-table.md) veya [db_command](db-command.md) öznitelikleri.
+**db_param** , [db_table](db-table.md) veya [db_command](db-command.md) öznitelikleriyle birlikte kullanılır.
 
-Tüketici özniteliği sağlayıcısı bu öznitelik bir sınıfa uygulandığında, derleyici sınıf için yeniden adlandıracağını \_ *YourClassName*erişimci burada *YourClassName* verdiğiniz addır sınıf ve derleyici adlı bir sınıf oluşturur ayrıca *YourClassName*, öğesinden türetildiğini \_ *YourClassName*erişimcisi.  Sınıf Görünümü'nde, hem sınıflarını görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, Northwind veritabanındaki SalesbyYear depolanan yordamı temel bir komut sınıfı oluşturur. Saklı yordamı ile ilk parametre ilişkilendirir `m_RETURN_VALUE` değişken ve bir output parametresi olarak tanımlar. Son iki (giriş) parametreleriyle ilişkilendirir `m_Beginning_Date` ve `m_Ending_Date`.
+Aşağıdaki örnek, Northwind veritabanındaki SalesbyYear saklı yordamını temel alan bir komut sınıfı oluşturur. Saklı yordamdaki ilk parametreyi `m_RETURN_VALUE` değişkenle ilişkilendirir ve bunu bir çıktı parametresi olarak tanımlar. Son iki (giriş) parametresini ve ile ilişkilendirir `m_Beginning_Date` `m_Ending_Date` .
 
-Aşağıdaki örnek ilişkilendirir `nOutput` değişkeni çıkış parametresi.
+Aşağıdaki örnek, `nOutput` değişkeni bir çıkış parametresiyle ilişkilendirir.
 
 ```cpp
 // db_param.cpp
@@ -108,13 +108,13 @@ struct CSalesbyYear {
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapı**, üye, yöntem, yerel|
+|**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|None|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Öznitelikleri](ole-db-consumer-attributes.md)
+[OLE DB tüketici öznitelikleri](ole-db-consumer-attributes.md)

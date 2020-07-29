@@ -6,18 +6,18 @@ helpviewer_keywords:
 - functions [MFC], throwing exceptions
 - exceptions [MFC], throwing
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
-ms.openlocfilehash: ebdfea18e6e8445dd734bf43fb6a4ecf422975e9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cdcdd63e84d4b375c44c2b89bf2d4f3285b0323c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622741"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223193"
 ---
 # <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
 
 MFC özel durum işleme paradigmasını yalnızca MFC veya diğer kitaplıklardaki işlevlere göre oluşturulan özel durumları yakalamak için kullanabilirsiniz. Kitaplık kodu tarafından oluşturulan özel durumları yakalama konusuna ek olarak, özel durumlar oluşturabilecek işlevler yazıyorsanız kendi kodunuzda özel durumlar da oluşturabilirsiniz.
 
-Bir özel durum oluştuğunda, geçerli işlevin yürütülmesi durdurulur ve doğrudan en içteki özel durum çerçevesinin **catch** bloğuna atlar. Özel durum mekanizması, bir işlevden normal çıkış yolunu atlar. Bu nedenle, normal bir çıkışta silinecek olan bellek bloklarını silmeniz gerekir.
+Bir özel durum oluştuğunda, geçerli işlevin yürütülmesi durdurulur ve doğrudan en **`catch`** içteki özel durum çerçevesinin bloğuna atlar. Özel durum mekanizması, bir işlevden normal çıkış yolunu atlar. Bu nedenle, normal bir çıkışta silinecek olan bellek bloklarını silmeniz gerekir.
 
 #### <a name="to-throw-an-exception"></a>Özel durum oluşturmak için
 

@@ -1,5 +1,5 @@
 ---
-title: COleDispatchDriver Sınıfı
+title: Cotadispatchdriver sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDispatchDriver
@@ -26,14 +26,14 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: 2b52ed3137a9a515278e018d69751aedaddb0cf1
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 265fca7288ca2aa760fb1faffa94f9d74896a975
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753886"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214106"
 ---
-# <a name="coledispatchdriver-class"></a>COleDispatchDriver Sınıfı
+# <a name="coledispatchdriver-class"></a>Cotadispatchdriver sınıfı
 
 OLE otomasyonunun istemci tarafını uygular.
 
@@ -47,49 +47,49 @@ class COleDispatchDriver
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDispatchDriver::COleDispatchDriver](#coledispatchdriver)|Bir `COleDispatchDriver` nesne inşa eder.|
+|[Cotadispatchdriver:: Cotadispatchdriver](#coledispatchdriver)|Bir `COleDispatchDriver` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDispatchDriver::AttachDispatch](#attachdispatch)|`COleDispatchDriver` Nesneye bağlantı `IDispatch` bağlar.|
-|[COleDispatchDriver::CreateDispatch](#createdispatch)|Bir `IDispatch` bağlantı oluşturur ve `COleDispatchDriver` nesneye bağlar.|
-|[COleDispatchDriver::DetachDispatch](#detachdispatch)|Bir `IDispatch` bağlantıyı serbest bırakmadan ayırır.|
-|[COleDispatchDriver::GetProperty](#getproperty)|Bir otomasyon özelliği alır.|
-|[COleDispatchDriver::InvokeHelper](#invokehelper)|Otomasyon yöntemlerini arama da yardımcı.|
-|[COleDispatchDriver::ReleaseDispatch](#releasedispatch)|Bir `IDispatch` bağlantı bırakır.|
-|[COleDispatchDriver::SetProperty](#setproperty)|Bir otomasyon özelliği ayarlar.|
+|[Cotadispatchdriver:: AttachDispatch](#attachdispatch)|Nesnesine bir `IDispatch` bağlantı ekler `COleDispatchDriver` .|
+|[Cotadispatchdriver:: CreateDispatch](#createdispatch)|Bir `IDispatch` bağlantı oluşturur ve `COleDispatchDriver` nesneye iliştirir.|
+|[Cotadispatchdriver::D etachDispatch](#detachdispatch)|`IDispatch`Bağlantıyı serbest bırakmadan bir bağlantıyı ayırır.|
+|[Cotadispatchdriver:: GetProperty](#getproperty)|Bir Automation özelliği alır.|
+|[Cotadispatchdriver:: InvokeHelper](#invokehelper)|Otomasyon yöntemlerini çağırma Yardımcısı.|
+|[Cotadispatchdriver:: ReleaseDispatch](#releasedispatch)|Bir `IDispatch` bağlantı yayınlar.|
+|[Cotadispatchdriver:: SetProperty](#setproperty)|Bir Automation özelliği ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDispatchDriver::operator =](#operator_eq)|Kaynak değerini `COleDispatchDriver` nesneye kopyalar.|
-|[COleDispatchDriver::operatör LPDISPATCH](#operator_lpdispatch)|Temel `IDispatch` işaretçiye erişir.|
+|[COleDispatchDriver:: operator =](#operator_eq)|Kaynak değerini `COleDispatchDriver` nesnesine kopyalar.|
+|[COleDispatchDriver:: operator LPDISPATCH](#operator_lpdispatch)|Temel işaretçiye erişir `IDispatch` .|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDispatchDriver::m_bAutoRelease](#m_bautorelease)|`IDispatch` Sırasında `ReleaseDispatch` veya nesne imha serbest bırakmak için olup olmadığını belirtir.|
-|[COleDispatchSürücü::m_lpDispatch](#m_lpdispatch)|Buna `IDispatch` `COleDispatchDriver`bağlı arabirimin işaretçisini gösterir.|
+|[Colet Dispatchdriver:: m_bAutoRelease](#m_bautorelease)|`IDispatch`Veya nesne yok etme sırasında serbest bırakılıp başlatılmayacağını belirtir `ReleaseDispatch` .|
+|[Colet Dispatchdriver:: m_lpDispatch](#m_lpdispatch)|`IDispatch`Buna eklenen arabirime yönelik işaretçiyi gösterir `COleDispatchDriver` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleDispatchDriver`taban sınıfa sahip değildir.
+`COleDispatchDriver`taban sınıfına sahip değildir.
 
-OLE gönderiaraları, nesnenin yöntemlerine ve özelliklerine erişim sağlar. Tür `IDispatch`bir `COleDispatchDriver` gönderme bağlantısı ekleme, ayırma, oluşturma ve serbest bırakma nın üye işlevleri. Diğer üye işlevler aramayı `IDispatch::Invoke`kolaylaştırmak için değişken bağımsız değişken listeleri kullanır.
+OLE dağıtma arabirimleri, bir nesnenin yöntemlerine ve özelliklerine erişim sağlar. `COleDispatchDriver`Bir dağıtım bağlantısı eklemek, ayırmak, oluşturmak ve serbest bırakmak için üye işlevleri `IDispatch` . Diğer üye işlevleri, çağırma işlemini basitleştirmek için değişken bağımsız değişken listeleri kullanır `IDispatch::Invoke` .
 
-Bu sınıf doğrudan kullanılabilir, ancak genellikle yalnızca Sınıf Ekle sihirbazı tarafından oluşturulan sınıflar tarafından kullanılır. Bir tür kitaplığı alarak yeni C++ sınıfları oluşturduğunuzda, yeni `COleDispatchDriver`sınıflar.
+Bu sınıf doğrudan kullanılabilir, ancak genellikle sınıf ekleme Sihirbazı tarafından oluşturulan sınıflar tarafından kullanılır. Bir tür kitaplığını içeri aktararak yeni C++ sınıfları oluşturduğunuzda, yeni sınıflar öğesinden türetilir `COleDispatchDriver` .
 
-Kullanma `COleDispatchDriver`hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
+Kullanma hakkında daha fazla bilgi için `COleDispatchDriver` aşağıdaki makalelere bakın:
 
-- [Otomasyon Müşterileri](../../mfc/automation-clients.md)
+- [Otomasyon Istemcileri](../../mfc/automation-clients.md)
 
-- [Otomasyon Sunucuları](../../mfc/automation-servers.md)
+- [Otomasyon sunucuları](../../mfc/automation-servers.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -97,11 +97,11 @@ Kullanma `COleDispatchDriver`hakkında daha fazla bilgi için aşağıdaki makal
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="coledispatchdriverattachdispatch"></a><a name="attachdispatch"></a>COleDispatchDriver::AttachDispatch
+## <a name="coledispatchdriverattachdispatch"></a><a name="attachdispatch"></a>Cotadispatchdriver:: AttachDispatch
 
-Nesneye `AttachDispatch` işaretçi `IDispatch` eklemek için üye işlevi arayın. `COleDispatchDriver` Daha fazla bilgi için Bkz. [IDispatch Arabirimi Uygulama.](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)
+`AttachDispatch`Nesneye bir işaretçi iliştirmek için üye işlevini çağırın `IDispatch` `COleDispatchDriver` . Daha fazla bilgi için bkz. [IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
 ```cpp
 void AttachDispatch(
@@ -112,22 +112,22 @@ void AttachDispatch(
 ### <a name="parameters"></a>Parametreler
 
 *lpDispatch*<br/>
-Nesneye eklenecek `IDispatch` bir OLE nesnesine `COleDispatchDriver` işaretçi.
+Nesneye eklenecek OLE nesnesine yönelik işaretçi `IDispatch` `COleDispatchDriver` .
 
 *bAutoRelease*<br/>
-Bu nesne kapsam dışına çıktığında gönderiyi serbest bırakıp bırakmayacağını belirtir.
+Bu nesne kapsam dışına geçtiğinde, gönderimi serbest bırakılacağını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, `IDispatch` nesneye zaten bağlı `COleDispatchDriver` olan herhangi bir işaretçiyi serbest bırakır.
+Bu işlev `IDispatch` , nesnesine zaten eklenmiş olan herhangi bir işaretçiyi yayınlar `COleDispatchDriver` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCOleContainer#3](../../mfc/codesnippet/cpp/coledispatchdriver-class_1.cpp)]
 
-## <a name="coledispatchdrivercoledispatchdriver"></a><a name="coledispatchdriver"></a>COleDispatchDriver::COleDispatchDriver
+## <a name="coledispatchdrivercoledispatchdriver"></a><a name="coledispatchdriver"></a>Cotadispatchdriver:: Cotadispatchdriver
 
-Bir `COleDispatchDriver` nesne inşa eder.
+Bir `COleDispatchDriver` nesnesi oluşturur.
 
 ```
 COleDispatchDriver();
@@ -138,29 +138,29 @@ COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 ### <a name="parameters"></a>Parametreler
 
 *lpDispatch*<br/>
-Nesneye eklenecek `IDispatch` bir OLE nesnesine `COleDispatchDriver` işaretçi.
+Nesneye eklenecek OLE nesnesine yönelik işaretçi `IDispatch` `COleDispatchDriver` .
 
 *bAutoRelease*<br/>
-Bu nesne kapsam dışına çıktığında gönderiyi serbest bırakıp bırakmayacağını belirtir.
+Bu nesne kapsam dışına geçtiğinde, gönderimi serbest bırakılacağını belirtir.
 
-*sevkSrc*<br/>
-Varolan `COleDispatchDriver` bir nesneye başvuru.
+*dispatchSrc*<br/>
+Varolan bir nesneye başvuru `COleDispatchDriver` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Form `COleDispatchDriver`( `LPDISPATCH lpDispatch`, **BOOL**`bAutoRelease` = **TRUE**) [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimini bağlar.
+Form `COleDispatchDriver` ( `LPDISPATCH lpDispatch` , **bool** `bAutoRelease`  =  **true**) [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimini bağlar.
 
-`COleDispatchDriver`Form ( **const**`COleDispatchDriver`& `dispatchSrc`) varolan `COleDispatchDriver` bir nesneyi kopyalar ve başvuru sayısını oluşturur.
+Form `COleDispatchDriver` ( **`const`** `COleDispatchDriver` &  `dispatchSrc` ) varolan bir nesneyi kopyalar `COleDispatchDriver` ve başvuru sayısını artırır.
 
-Form `COleDispatchDriver`( ) bir `COleDispatchDriver` nesne oluşturur, `IDispatch` ancak arabirimi bağlamaz. Kullanmadan `COleDispatchDriver`önce ( ) bağımsız `IDispatch` değişkenler olmadan, [coleDispatchDriver kullanarak](#createdispatch) bir bağlamanız gerekir::CreateDispatch veya [COleDispatchDriver::AttachDispatch](#attachdispatch). Daha fazla bilgi için Bkz. [IDispatch Arabirimi Uygulama.](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)
+Form `COleDispatchDriver` () bir nesne oluşturur `COleDispatchDriver` , ancak `IDispatch` arabirimi bağlanamaz. `COleDispatchDriver`Bağımsız değişkenler olmadan () kullanmadan önce, `IDispatch` [Cotadispatchdriver:: CreateDispatch](#createdispatch) veya [Cotadispatchdriver:: AttachDispatch](#attachdispatch)kullanarak bir öğesine bağlamanız gerekir. Daha fazla bilgi için bkz. [IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:CreateDispatch](#createdispatch).
+  [Cotadispatchdriver:: CreateDispatch](#createdispatch)örneğine bakın.
 
-## <a name="coledispatchdrivercreatedispatch"></a><a name="createdispatch"></a>COleDispatchDriver::CreateDispatch
+## <a name="coledispatchdrivercreatedispatch"></a><a name="createdispatch"></a>Cotadispatchdriver:: CreateDispatch
 
-[Bir IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirim nesnesi oluşturur `COleDispatchDriver` ve nesneye bağlar.
+Bir [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimi nesnesi oluşturur ve `COleDispatchDriver` nesneye ekler.
 
 ```
 BOOL CreateDispatch(
@@ -174,24 +174,24 @@ BOOL CreateDispatch(
 
 ### <a name="parameters"></a>Parametreler
 
-*Clsıd*<br/>
-Oluşturulacak bağlantı `IDispatch` nesnesinin sınıf kimliği.
+*in*<br/>
+`IDispatch`Oluşturulacak bağlantı nesnesinin sınıf kimliği.
 
-*pHata*<br/>
-Oluşturmadan kaynaklanan durum kodunu tutacak bir OLE özel durum nesnesine işaretçi.
+*pError*<br/>
+Oluşturma işleminden kaynaklanan durum kodunu tutan OLE özel durum nesnesine yönelik işaretçi.
 
 *lpszProgID*<br/>
-Gönderme nesnesinin oluşturulacak otomasyon nesnesinin "Excel.Document.5" gibi programlı tanımlayıcısını işaretle.
+Dağıtım nesnesinin oluşturulacağı Otomasyon nesnesinin "Excel.Document. 5" gibi programsal tanımlayıcı işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız başarı; aksi takdirde 0.
+Sıfırdan farklı, başarılı olma; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCOleContainer#4](../../mfc/codesnippet/cpp/coledispatchdriver-class_2.cpp)]
 
-## <a name="coledispatchdriverdetachdispatch"></a><a name="detachdispatch"></a>COleDispatchDriver::DetachDispatch
+## <a name="coledispatchdriverdetachdispatch"></a><a name="detachdispatch"></a>Cotadispatchdriver::D etachDispatch
 
 Geçerli `IDispatch` bağlantıyı bu nesneden ayırır.
 
@@ -201,21 +201,21 @@ LPDISPATCH DetachDispatch();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce eklenmiş OLE `IDispatch` nesnesine işaretçi.
+Daha önce eklenmiş OLE nesnesine yönelik bir işaretçi `IDispatch` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Serbest `IDispatch` bırakılmadı.
+`IDispatch`Serbest bırakıldı.
 
-LPDISPATCH türü hakkında daha fazla bilgi için Windows SDK'da [IDispatch Arabirimi Uygulama'ya](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) bakın.
+LPDISPATCH türü hakkında daha fazla bilgi için, bkz. Windows SDK [IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]
 
-## <a name="coledispatchdrivergetproperty"></a><a name="getproperty"></a>COleDispatchDriver::GetProperty
+## <a name="coledispatchdrivergetproperty"></a><a name="getproperty"></a>Cotadispatchdriver:: GetProperty
 
-*dwDispID*tarafından belirtilen nesne özelliğini alır.
+*Dwdıspıd*tarafından belirtilen nesne özelliğini alır.
 
 ```cpp
 void GetProperty(
@@ -226,22 +226,22 @@ void GetProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
+*Dwdıspıd*<br/>
 Alınacak özelliği tanımlar.
 
 *vtProp*<br/>
-Alınacak özelliği belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](#invokehelper).
+Alınacak özelliği belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](#invokehelper)için açıklamalar bölümüne bakın.
 
 *pvProp*<br/>
-Özellik değerini alacak değişkenin adresi. *VtProp*tarafından belirtilen türe uygun olmalıdır.
+Özellik değerini alacak değişkenin adresi. Bu, *vtProp*tarafından belirtilen türle eşleşmelidir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/cpp/coledispatchdriver-class_4.cpp)]
 
-## <a name="coledispatchdriverinvokehelper"></a><a name="invokehelper"></a>COleDispatchDriver::InvokeHelper
+## <a name="coledispatchdriverinvokehelper"></a><a name="invokehelper"></a>Cotadispatchdriver:: InvokeHelper
 
-WFlags tarafından belirtilen *bağlamda, dwDispID*tarafından belirtilen *wFlags*nesne yöntemi veya özelliği çağırır.
+*WFlags*tarafından belirtilen bağlamda *dwdıspıd*tarafından belirtilen nesne yöntemini veya özelliği çağırır.
 
 ```cpp
 void AFX_CDECL InvokeHelper(
@@ -254,59 +254,59 @@ void AFX_CDECL InvokeHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
+*Dwdıspıd*<br/>
 Çağrılacak yöntemi veya özelliği tanımlar.
 
 *wFlags*<br/>
-Çağrının bağlamını açıklayan `IDispatch::Invoke`bayraklar. . Olası değerlerin listesi [için, IDispatch'teki](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) *wFlags* parametresi::Windows SDK'da çağırın.
+Çağrısının bağlamını açıklayan bayraklar `IDispatch::Invoke` . . Olası değerler listesi için, Windows SDK [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) Içindeki *wFlags* parametresine bakın.
 
-*vtRet*<br/>
-İade değerinin türünü belirtir. Olası değerler için Açıklamalar bölümüne bakın.
+*Sanal tret*<br/>
+Dönüş değerinin türünü belirtir. Olası değerler için, açıklamalar bölümüne bakın.
 
 *pvRet*<br/>
-Özellik değerini veya iade değerini alacak değişkenin adresi. *VtRet*tarafından belirtilen türe uygun olmalıdır.
+Özellik değeri veya dönüş değeri alacak değişkenin adresi. *VtRet*tarafından belirtilen türle eşleşmesi gerekir.
 
-*pbParamInfo*<br/>
-*PbParamInfo'yu*izleyen parametrelerin türlerini belirten null-sonlandırılan bayt dizesini işaretçi.
+*Pbparaınfo*<br/>
+*Pbparaınfo*'dan sonraki parametrelerin türlerini belirten, null ile sonlandırılmış bir bayt dizesi işaretçisi.
 
 *...*<br/>
-*PbParamInfo'da*belirtilen türparametrelerin değişken listesi.
+*Pbparaınfo*içinde belirtilen türlerin değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pbParamInfo* parametresi yönteme veya özelliğe geçirilen parametrelerin türlerini belirtir. Bağımsız değişken bağımsız değişken listesi sözdizimi bildiriminde **...** tarafından temsil edilir.
+*Pbparaınfo* parametresi, yönteme veya özelliğe geçirilen parametrelerin türlerini belirtir. Bağımsız değişkenlerin değişken listesi, sözdizimi bildiriminde **...** ile temsil edilir.
 
-*vtRet* bağımsız değişkeni için olası değerler VARENUM numaralandırmasından alınır. Olası değerler aşağıdaki gibidir:
+*VtRet* bağımsız değişkeninin olası DEĞERLERI, VARENUM numaralandırmasından alınır. Olası değerler aşağıdaki gibidir:
 
 |Sembol|Dönüş Türü|
 |------------|-----------------|
-|Vt_empty|**void**|
-|VT_I2|**short**|
-|VT_I4|**long**|
-|VT_R4|**float**|
-|VT_R8|**double**|
-|Vt_cy|**CY**|
-|Vt_date|**Tarih**|
-|Vt_bstr|Bstr|
-|Vt_dıspatch|LPDISPATCH|
+|VT_EMPTY|**`void`**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
+|VT_CY|**CY**|
+|VT_DATE|**GÜNCEL**|
+|VT_BSTR|BSTR|
+|VT_DISPATCH|LPDISPATCH|
 |VT_ERROR|SCODE|
-|VT_BOOL|**Bool**|
-|VT_VARIANT|**VARIANT**|
-|Vt_unknown|LPUNKNOWN|
+|VT_BOOL|**BOOL**|
+|VT_VARIANT|**VARYANTı**|
+|VT_UNKNOWN|LPUNKNOWN|
 
-*pbParamInfo* bağımsız **değişkeni, VTS_** sabitlerinin boşluktan ayrılmış bir listesidir. Boşluklara (virgülle değil) ayrılan bu değerlerden biri veya birkaçı, işlevin parametre listesini belirtir. Olası değerler [EVENT_CUSTOM](event-maps.md#event_custom) makrosuyla listelenir.
+*Pbparaınfo* bağımsız değişkeni, **VTS_** sabitlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayırarak bu değerlerden bir veya daha fazlası, işlevin parametre listesini belirtir. Olası değerler [event_custom](event-maps.md#event_custom) makrosu ile listelenir.
 
-Bu işlev parametreleri VARIANTARG değerlerine dönüştürür, ardından [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) yöntemini çağırır. Çağrı `Invoke` başarısız olursa, bu işlev bir özel durum atar. Döndürülen `IDispatch::Invoke` SCODE (durum kodu) DISP_E_EXCEPTION ise, bu işlev bir [COleException](../../mfc/reference/coleexception-class.md) nesnesi atar; aksi takdirde bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md)atar.
+Bu işlev, parametreleri VARIANTARG değerlerine dönüştürür, sonra [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) metodunu çağırır. Çağrısı `Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. Tarafından döndürülen SCODE (durum kodu) `IDispatch::Invoke` DISP_E_EXCEPTION, bu işlev bir [copaexception](../../mfc/reference/coleexception-class.md) nesnesi oluşturur; Aksi takdirde [copadispatchexception](../../mfc/reference/coledispatchexception-class.md)oluşturur.
 
-Daha fazla bilgi için, bkz [VARIANTARG](/windows/win32/api/oaidl/ns-oaidl-variant), [IDispatch Arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke), ve Windows SDK [COM Hata Kodları Yapısı.](/windows/win32/com/structure-of-com-error-codes)
+Daha fazla bilgi için, bkz. [VARIANTARG](/windows/win32/api/oaidl/ns-oaidl-variant), [IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [ıDISPATCH:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke)ve [com hata kodlarının yapısını](/windows/win32/com/structure-of-com-error-codes) Windows SDK.
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:CreateDispatch](#createdispatch).
+  [Cotadispatchdriver:: CreateDispatch](#createdispatch)örneğine bakın.
 
-## <a name="coledispatchdriverm_bautorelease"></a><a name="m_bautorelease"></a>COleDispatchDriver::m_bAutoRelease
+## <a name="coledispatchdriverm_bautorelease"></a><a name="m_bautorelease"></a>Colet Dispatchdriver:: m_bAutoRelease
 
-TRUE ise, [m_lpDispatch](#m_lpdispatch) tarafından erişilen COM nesnesi, [ReleaseDispatch](#releasedispatch) `COleDispatchDriver` çağrıldığında veya bu nesne yok edildiğinde otomatik olarak serbest bırakılır.
+TRUE ise, [ReleaseDispatch](#releasedispatch) çağrıldığında veya bu nesne yok edildiğinde [M_LPDISPATCH](#m_lpdispatch) tarafından erişilen com nesnesi otomatik olarak serbest bırakılır `COleDispatchDriver` .
 
 ```
 BOOL m_bAutoRelease;
@@ -314,17 +314,17 @@ BOOL m_bAutoRelease;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `m_bAutoRelease` oluşturucu da TRUE olarak ayarlanır.
+Varsayılan olarak, `m_bAutoRelease` oluşturucuda true olarak ayarlanır.
 
-COM nesnelerinin serbest bırakılması hakkında daha fazla bilgi için bkz: [Başvuru Sayımı](/windows/win32/com/implementing-reference-counting) ve [IUnknown uygulama::Windows](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) SDK'da yayınlayın.
+COM nesnelerini serbest bırakma hakkında daha fazla bilgi için, Windows SDK [başvuru sayma](/windows/win32/com/implementing-reference-counting) ve [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) ' i uygulama bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCOleContainer#9](../../mfc/codesnippet/cpp/coledispatchdriver-class_5.cpp)]
 
-## <a name="coledispatchdriverm_lpdispatch"></a><a name="m_lpdispatch"></a>COleDispatchSürücü::m_lpDispatch
+## <a name="coledispatchdriverm_lpdispatch"></a><a name="m_lpdispatch"></a>Colet Dispatchdriver:: m_lpDispatch
 
-Buna bağlı `IDispatch` arabirimin `COleDispatchDriver`işaretçisi.
+`IDispatch`Buna eklenen arabirime yönelik işaretçi `COleDispatchDriver` .
 
 ```
 LPDISPATCH m_lpDispatch;
@@ -332,17 +332,17 @@ LPDISPATCH m_lpDispatch;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri `m_lpDispatch` üyesi, LPDISPATCH türünde ortak bir değişkendir.
+`m_lpDispatch`Veri üyesi, LPDISPATCH türünde ortak bir değişkendir.
 
-Daha fazla bilgi için Windows SDK'daki [IDispatch'e](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) bakın.
+Daha fazla bilgi için Windows SDK [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:AttachDispatch](#attachdispatch).
+  [Cotadispatchdriver:: AttachDispatch](#attachdispatch)örneğine bakın.
 
-## <a name="coledispatchdriveroperator-"></a><a name="operator_eq"></a>COleDispatchDriver::operator =
+## <a name="coledispatchdriveroperator-"></a><a name="operator_eq"></a>COleDispatchDriver:: operator =
 
-Kaynak değerini `COleDispatchDriver` nesneye kopyalar.
+Kaynak değerini `COleDispatchDriver` nesnesine kopyalar.
 
 ```
 const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
@@ -350,12 +350,12 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*sevkSrc*<br/>
-Varolan `COleDispatchDriver` bir nesneye işaretçi.
+*dispatchSrc*<br/>
+Varolan bir nesneye yönelik bir işaretçi `COleDispatchDriver` .
 
-## <a name="coledispatchdriveroperator-lpdispatch"></a><a name="operator_lpdispatch"></a>COleDispatchDriver::operatör LPDISPATCH
+## <a name="coledispatchdriveroperator-lpdispatch"></a><a name="operator_lpdispatch"></a>COleDispatchDriver:: operator LPDISPATCH
 
-Nesnenin alttaki `IDispatch` işaretçisi `COleDispatchDriver` erişer.
+`IDispatch`Nesnenin temel işaretçisine erişir `COleDispatchDriver` .
 
 ```
 operator LPDISPATCH();
@@ -365,9 +365,9 @@ operator LPDISPATCH();
 
 [!code-cpp[NVC_MFCOleContainer#8](../../mfc/codesnippet/cpp/coledispatchdriver-class_6.cpp)]
 
-## <a name="coledispatchdriverreleasedispatch"></a><a name="releasedispatch"></a>COleDispatchDriver::ReleaseDispatch
+## <a name="coledispatchdriverreleasedispatch"></a><a name="releasedispatch"></a>Cotadispatchdriver:: ReleaseDispatch
 
-`IDispatch` Bağlantıyı serbest bırakır. Daha fazla bilgi için [Bkz. IDispatch Arabirimi Uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)
+Bağlantıyı serbest bırakır `IDispatch` . Daha fazla bilgi için bkz [. IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)
 
 ```cpp
 void ReleaseDispatch();
@@ -375,15 +375,15 @@ void ReleaseDispatch();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bağlantı için otomatik sürüm ayarlanmışsa, bu işlev arabirimi serbest bırakmadan önce çağırır. `IDispatch::Release`
+Bu bağlantı için otomatik sürüm ayarlandıysa, bu işlev `IDispatch::Release` arabirimi serbest bırakmadan önce çağırır.
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:AttachDispatch](#attachdispatch).
+  [Cotadispatchdriver:: AttachDispatch](#attachdispatch)örneğine bakın.
 
-## <a name="coledispatchdriversetproperty"></a><a name="setproperty"></a>COleDispatchDriver::SetProperty
+## <a name="coledispatchdriversetproperty"></a><a name="setproperty"></a>Cotadispatchdriver:: SetProperty
 
-*DwDispID*tarafından belirtilen OLE nesne özelliğini ayarlar.
+*Dwdıspıd*tarafından belirtilen OLE nesnesi özelliğini ayarlar.
 
 ```cpp
 void AFX_CDECL SetProperty(
@@ -393,14 +393,14 @@ void AFX_CDECL SetProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
+*Dwdıspıd*<br/>
 Ayarlanacak özelliği tanımlar.
 
 *vtProp*<br/>
-Ayarlanacak özelliğin türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](#invokehelper).
+Ayarlanacak özelliğin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](#invokehelper)için açıklamalar bölümüne bakın.
 
 *...*<br/>
-*vtProp*tarafından belirtilen türün tek bir parametresi.
+*VtProp*tarafından belirtilen türde tek bir parametre.
 
 ### <a name="example"></a>Örnek
 
@@ -408,7 +408,7 @@ Ayarlanacak özelliğin türünü belirtir. Olası değerler için COleDispatchD
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek ACDUAL](../../overview/visual-cpp-samples.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)
+[MFC örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek ACDUAL](../../overview/visual-cpp-samples.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)

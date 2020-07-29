@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_assignable
 ms.assetid: 53444287-c8be-4ad2-9487-a85c066a4f84
-ms.openlocfilehash: 33b0ce6112119c935ff70e5d619b284acc6ee8c2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2137f6bfb63e93da2c1367a21f608c113e80d196
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456675"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215731"
 ---
-# <a name="isassignable-class"></a>is_assignable sınıfı
+# <a name="is_assignable-class"></a>is_assignable sınıfı
 
-Bir türe bir tür değeri `From` atanıp atanamayacağını `To` sınar.
+Bir türe bir tür değeri `From` atanıp atanamayacağını sınar `To` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class To, class From>
@@ -34,11 +34,11 @@ Değer sağlayan nesnenin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değerlendirilmeyecek ifade `declval<To>() = declval<From>()` düzgün biçimlendirilmiş olmalıdır. Her ikisi de `From` , bilinmeyen türler, **void**veya diziler türünde olmalıdır.`To`
+Değerlendirilmeyecek ifade `declval<To>() = declval<From>()` düzgün biçimlendirilmiş olmalıdır. Her ikisi de `From` `To` , **`void`** ya da bilinmeyen bir şekilde sınırlı türler veya diziler olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

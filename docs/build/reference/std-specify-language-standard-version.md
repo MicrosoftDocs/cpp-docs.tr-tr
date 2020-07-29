@@ -6,14 +6,14 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: ddb0fc9ad4880ed317a28d7aec5eba1669eabbc5
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: eef44858064b89d4a836c80a48552599bceec242
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507072"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223830"
 ---
-# <a name="std-specify-language-standard-version"></a>/STD (dil standart sürümünü belirt)
+# <a name="std-specify-language-standard-version"></a>`/std`(Dil standart sürümünü belirt)
 
 Desteklenen c++ dil özelliklerini, C++ dil standardının belirtilen sürümünden etkinleştirin.
 
@@ -29,9 +29,9 @@ Bu **`/std`** seçenek, Visual Studio 2017 ve üzeri sürümlerde kullanılabili
 
 Varsayılan **`/std:c++14`** seçenek, MSVC derleyicisi tarafından uygulanan c++ 14 özelliklerinin kümesini sunar. Bu seçenek, dil standardının daha yeni sürümlerinde değiştirilen veya yeni özellikler için derleyici ve standart kitaplık desteğini devre dışı bırakır. MSVC derleyicisinin önceki sürümlerinde zaten uygulanmış olan bazı C++ 17 özelliklerini devre dışı bırakır. Visual Studio 2015 güncelleştirme 2 ' de veya daha önce kullanılabilir olan özelliklere bağımlılıkları zaten almış olan kullanıcılar için önemli değişikliklerden kaçınmak için, bu özellikler seçenek belirtildiğinde etkin kalır **`/std:c++14`** :
 
-- [Braced-init-Lists ile Auto için kurallar](https://wg21.link/n3922)
+- [`auto`Braced-init-Lists ile ilgili kurallar](https://wg21.link/n3922)
 
-- [Şablon şablonunda TypeName-parametreler](https://wg21.link/n4051)
+- [`typename`şablon şablonu ' nda-Parametreler](https://wg21.link/n4051)
 
 - [Trigraf kaldırma](https://wg21.link/n4086)
 

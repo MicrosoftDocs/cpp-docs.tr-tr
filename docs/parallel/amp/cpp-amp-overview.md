@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 5c9819c1d9167bea9a9bedeef2ac44798d5a121f
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 249170e1e29d3ca8c488d15be8fa4ccd2b9070c1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404853"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222764"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -60,7 +60,7 @@ Kodun önemli bölümleri aşağıdaki gibidir:
 
 - Veri: veriler üç dizilerden oluşur. Hepsi aynı dereceye (bir) ve uzunluğa (beş) sahiptir.
 
-- Yineleme: ilk `for` döngü, dizideki öğeler arasında yineleme yapmak için bir mekanizma sağlar. Toplamları hesaplamak için yürütmek istediğiniz kod ilk `for` blokta bulunur.
+- Yineleme: ilk **`for`** döngü, dizideki öğeler arasında yineleme yapmak için bir mekanizma sağlar. Toplamları hesaplamak için yürütmek istediğiniz kod ilk **`for`** blokta bulunur.
 
 - Dizin: `idx` değişken, dizilerin ayrı öğelerine erişir.
 
@@ -238,7 +238,7 @@ Aşağıdaki tabloda ve sınıfları arasındaki benzerlikler ve farklar özetle
 
 Paylaşılan bellek, hem CPU hem de hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımı, CPU ve Hızlandırıcı arasında veri kopyalama yükünü ortadan kaldırır veya önemli ölçüde azaltır. Bellek paylaşılsa da, hem CPU hem de hızlandırıcı tarafından aynı anda erişilemez ve bunun yapılması tanımsız davranışlara neden olur.
 
-`array`ilişkili Hızlandırıcı destekliyorsa, paylaşılan belleğin kullanımı üzerinde ayrıntılı denetim belirtmek için nesneler kullanılabilir. Hızlandırıcının paylaşılan belleği destekleyip desteklemediğini, paylaşılan bellek desteklendiğinde **true** döndüren hızlandırıcının [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) özelliği tarafından belirlenir. Paylaşılan bellek destekleniyorsa, hızlandırıcının bellek ayırmaları için varsayılan [Access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) özelliği tarafından belirlenir `default_cpu_access_type` . Varsayılan olarak, `array` ve `array_view` nesneleri ilişkili birincil ile aynı `access_type` şekilde sürer `accelerator` .
+`array`ilişkili Hızlandırıcı destekliyorsa, paylaşılan belleğin kullanımı üzerinde ayrıntılı denetim belirtmek için nesneler kullanılabilir. Hızlandırıcının paylaşılan belleği destekleyip desteklemediğini, [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** paylaşılan bellek desteklendiğinde döndüren hızlandırıcının supports_cpu_shared_memory özelliği tarafından belirlenir. Paylaşılan bellek destekleniyorsa, hızlandırıcının bellek ayırmaları için varsayılan [Access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) özelliği tarafından belirlenir `default_cpu_access_type` . Varsayılan olarak, `array` ve `array_view` nesneleri ilişkili birincil ile aynı `access_type` şekilde sürer `accelerator` .
 
 Açık bir şekilde [Array:: Cpu_access_type Data member](reference/array-class.md#cpu_access_type) özelliğini ayarlayarak `array` , paylaşılan belleğin nasıl kullanıldığı hakkında ayrıntılı denetim uygulayabilirsiniz. böylece, uygulamanın performans özelliklerine göre uygulamayı en iyi hale getirerek, hesaplama kerklerinin bellek erişimi düzenlerine göre uygulamayı iyileştirebilmenizi sağlayabilirsiniz. `array_view`, `cpu_access_type` İle ilişkili olduğu ile aynı şekilde yansıtır `array` ; veya array_view bir veri kaynağı olmadan oluşturulursa, `access_type` Bu, öncelikle depolama alanı ayırmasına neden olan ortamı yansıtır. Diğer bir deyişle, ana bilgisayar (CPU) tarafından ilk kez erişildiğinde, bir CPU veri kaynağı üzerinde oluşturulmuş gibi davranır ve `access_type` `accelerator_view` yakalama ile ilişkili ' ı paylaşır; ancak, bir tarafından ilk kez erişilirse `accelerator_view` , bu, üzerinde oluşturulmuş bir üzerinde oluşturulmuş gibi davranır ve ' ı `array` `accelerator_view` paylaşır `array` `access_type` .
 
@@ -431,7 +431,7 @@ for (int i = 0; i <4; i++) {
 
 ## <a name="math-libraries"></a>Matematik kitaplıkları
 
-C++ AMP iki matematik kitaplığı içerir. [Eşzamanlılık::p Recise_math ad alanındaki](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı kitaplık, çift duyarlıklı işlevler için destek sağlar. Ayrıca tek duyarlıklı işlevler için destek sağlar, ancak donanımda çift duyarlıklı destek hala gereklidir. [C99 belirtimine uyar (ISO/ıec 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlık desteği sağlamalıdır. [Hızlandırıcı:: Supports_double_precision veri üyesinin](reference/accelerator-class.md#supports_double_precision)değerini denetleyerek olup olmadığını belirleyebilirsiniz. [Concurrency:: Fast_math ad alanındaki](../../parallel/amp/reference/concurrency-fast-math-namespace.md)hızlı matematik kitaplığı, başka matematik işlevleri kümesini içerir. Yalnızca işlenenleri destekleyen bu işlevler, `float` daha çabuk yürütülür ancak çift duyarlıklı matematik kitaplığındaki kesin değildir. İşlevler, \<amp_math.h> üstbilgi dosyasında bulunur ve tümü ile birlikte gösterilir `restrict(amp)` . \<cmath>Üstbilgi dosyasındaki işlevler hem hem de `fast_math` `precise_math` ad alanlarına aktarılır. **Restrict** anahtar sözcüğü, \<cmath> sürümü ve C++ amp sürümünü ayırt etmek için kullanılır. Aşağıdaki kod, işlem etki alanındaki her bir değerin hızlı yöntemi kullanılarak 10 tabanında logaritmasını hesaplar.
+C++ AMP iki matematik kitaplığı içerir. [Eşzamanlılık::p Recise_math ad alanındaki](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı kitaplık, çift duyarlıklı işlevler için destek sağlar. Ayrıca tek duyarlıklı işlevler için destek sağlar, ancak donanımda çift duyarlıklı destek hala gereklidir. [C99 belirtimine uyar (ISO/ıec 9899)](https://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlık desteği sağlamalıdır. [Hızlandırıcı:: Supports_double_precision veri üyesinin](reference/accelerator-class.md#supports_double_precision)değerini denetleyerek olup olmadığını belirleyebilirsiniz. [Concurrency:: Fast_math ad alanındaki](../../parallel/amp/reference/concurrency-fast-math-namespace.md)hızlı matematik kitaplığı, başka matematik işlevleri kümesini içerir. Yalnızca işlenenleri destekleyen bu işlevler, **`float`** daha çabuk yürütülür ancak çift duyarlıklı matematik kitaplığındaki kesin değildir. İşlevler, \<amp_math.h> üstbilgi dosyasında bulunur ve tümü ile birlikte gösterilir `restrict(amp)` . \<cmath>Üstbilgi dosyasındaki işlevler hem hem de `fast_math` `precise_math` ad alanlarına aktarılır. **`restrict`** Anahtar sözcüğü, \<cmath> sürümü ve C++ amp sürümünü ayırt etmek için kullanılır. Aşağıdaki kod, işlem etki alanındaki her bir değerin hızlı yöntemi kullanılarak 10 tabanında logaritmasını hesaplar.
 
 ```cpp
 #include <amp.h>
@@ -465,7 +465,7 @@ C++ AMP, hızlandırılmış grafik programlama için tasarlanan bir grafik kita
 
 - [Writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): herhangi bir dokuya salt yazılır erişim sağlar.
 
-- Kısa vektör kitaplığı: **int**, `uint` , **float**, **Double**, [norm](../../parallel/amp/reference/norm-class.md)veya [unorm](../../parallel/amp/reference/unorm-class.md)temel alınarak 2, 3 ve 4 uzunluğunda bir kısa vektör türleri kümesi tanımlar.
+- Kısa vektör kitaplığı:,,,, **`int`** `uint` **`float`** **`double`** [norm](../../parallel/amp/reference/norm-class.md)veya [unorm](../../parallel/amp/reference/unorm-class.md)'yi temel alan, 2, 3 ve 4 uzunluğunda bir kısa vektör türleri kümesi tanımlar.
 
 ## <a name="universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları
 

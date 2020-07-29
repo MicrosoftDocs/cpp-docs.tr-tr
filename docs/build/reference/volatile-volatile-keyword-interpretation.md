@@ -13,47 +13,47 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-ms.openlocfilehash: 02871622242930d7419fda16f4d106fccb2056f0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c2c1cd477b424f56e66bd9246e7bde76ad06120
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316645"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223791"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile (volatile Anahtar Sözcük Yorumu)
 
-Belirtir nasıl [geçici](../../cpp/volatile-cpp.md) yorumlanacağını sözcüktür.
+[Geçici](../../cpp/volatile-cpp.md) anahtar sözcüğünün nasıl yorumlanacağını belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ volatile:**{**ISO**|**ms**}
+> **/volatile:**{**ISO** | **MS**}
 
 ## <a name="arguments"></a>Arguments
 
-**/volatile:iso**<br/>
-Katı seçer `volatile` ISO standardı C++ dili tarafından tanımlanan şekilde semantiği. Acquire/release semantikleri geçici erişimlerde garanti edilmez. Derleyici ARM hedeflerse bu öğesinin varsayılan yorumlamasıdır `volatile`.
+**/volatile: ISO**<br/>
+**`volatile`** ISO standardı C++ dili tarafından tanımlanan katı semantiğini seçer. Alma/bırakma semantiği geçici erişimlerde garanti edilmez. Derleyici ARM hedefliyorsa, bu varsayılan yorumdur **`volatile`** .
 
-**/volatile:MS**<br/>
-Microsoft genişletilmiş seçer `volatile` bellek ISO standardındaki C++ dilinin ötesini garanti eder sıralaması eklemesi semantiğini. Acquire/release semantikleri geçici erişimlerde garanti edilir. Ancak, bu seçenek ayrıca derleyicinin önemli ölçüde ARM ve diğer zayıf bellek sıralama mimarilerinin eklemeleri donanım belleği engelleri oluşturmaya zorlar. Derleyici ARM dışında herhangi bir platformu hedeflerse bu öğesinin varsayılan yorumlamasıdır `volatile`.
+**/volatile: MS**<br/>
+Microsoft genişletilmiş **`volatile`** semantiğini seçer, bu da bellek sıralaması ekleme, ISO standardı C++ dilinin ötesine garanti sağlar. Alma/bırakma semantiği geçici erişimlerde garanti edilir. Ancak, bu seçenek, derleyicinin ARM ve diğer zayıf bellek sıralama mimarilerinde önemli ek yük ekleyebilecek donanım belleği engelleri oluşturma işlemini de zorlar. Derleyici ARM haricinde herhangi bir platformu hedefliyorsa, bu varsayılan yorumdur **`volatile`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanmanızı öneririz **/volatile:iso** yanı sıra açık eşitleme temel öğeleri ve iş parçacıkları arasında paylaşılan bellek ile uğraşırken derleyici iç bilgileri. Daha fazla bilgi için [geçici](../../cpp/volatile-cpp.md).
+İş parçacıkları arasında paylaşılan bellekle ilgilenirken açık eşitleme temelleri ve derleyici iç bilgileri ile birlikte **/volatile: iso** kullanmanızı önemle tavsiye ederiz. Daha fazla bilgi için bkz. [geçici](../../cpp/volatile-cpp.md).
 
-Bir projenin ortasında bu seçeneği mevcut koda veya değiştirirseniz uyarısını etkinleştirmek yardımcı olabilecek [C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md) semantiklerden etkilenen kod konumlarını tanımlamak için.
+Bir projenin ortasında var olan kodun bağlantı noktası varsa veya bu seçeneği değiştirirseniz, semantik farkından etkilenen kod konumlarını belirlemek için Uyarı [C4746](../../error-messages/compiler-warnings/compiler-warning-c4746.md) etkinleştirilmesi yararlı olabilir.
 
-Var olan hiçbir `#pragma` eşdeğer bu seçimi denetlemek için.
+`#pragma`Bu seçeneği denetlemek için eşdeğer bir değer yoktur.
 
-### <a name="to-set-the-volatile-compiler-option-in-visual-studio"></a>Derleyici seçeneğini Visual Studio içinde / volatile belirlemek için
+### <a name="to-set-the-volatile-compiler-option-in-visual-studio"></a>Visual Studio 'da/volatile derleyici seçeneğini ayarlamak için
 
-1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. İçinde **ek seçenekler** kutusunda **/volatile:iso** veya **/volatile:ms** seçip **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
+1. **Ek seçenekler** kutusunda, **/volatile: ISO** veya **/volatile: MS** ekleyin ve ardından değişikliklerinizi kaydetmek için **Tamam** ' ı veya **Uygula** ' yı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

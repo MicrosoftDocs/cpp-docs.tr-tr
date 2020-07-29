@@ -23,16 +23,16 @@ helpviewer_keywords:
 - std::thread [C++], joinable
 - std::thread [C++], native_handle
 - std::thread [C++], swap
-ms.openlocfilehash: 13996a8ec4ab56fc56a78606d1a2ce8d76994c0d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 19f7ae1fc95f531f509273f0eb9998c73fe7d47b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375850"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215588"
 ---
 # <a name="thread-class"></a>thread Sınıfı
 
-Uygulama içindeki yürütme iş parçacığıgözlemlemek ve yönetmek için kullanılan bir nesne tanımlar.
+Bir uygulama içinde yürütmenin iş parçacığını gözlemlemek ve yönetmek için kullanılan bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,51 +42,51 @@ class thread;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir uygulama içinde yürütme iş parçacığı gözlemlemek ve yönetmek için bir **iş parçacığı** nesnesi kullanabilirsiniz. Varsayılan oluşturucu kullanılarak oluşturulan bir iş parçacığı nesnesi herhangi bir yürütme iş parçacığı ile ilişkili değildir. Çağrılabilir bir nesne kullanılarak oluşturulmuş bir iş parçacığı nesnesi, yeni bir yürütme iş parçacığı oluşturur ve bu iş parçacığındaki çağrılabilir nesneyi çağırır. İş parçacığı nesneleri taşınabilir, ancak kopyalanamaz. Bu nedenle, yürütme iş parçacığı yalnızca bir iş parçacığı nesnesi ile ilişkili olabilir.
+Bir `thread` uygulama içinde yürütmenin iş parçacığını gözlemlemek ve yönetmek için bir nesnesi kullanabilirsiniz. Varsayılan Oluşturucu kullanılarak oluşturulan bir iş parçacığı nesnesi, herhangi bir yürütme iş parçacığı ile ilişkili değildir. Çağrılabilir bir nesne kullanılarak oluşturulan bir iş parçacığı nesnesi, yürütmenin yeni bir iş parçacığını oluşturur ve bu iş parçacığında çağrılabilir nesneyi çağırır. İş parçacığı nesneleri taşınabilir, ancak kopyalanamayabilir. Bu nedenle, bir yürütme iş parçacığı yalnızca bir iş parçacığı nesnesiyle ilişkilendirilebilir.
 
-Yürütme her iş parçacığı türü `thread::id`benzersiz bir tanımlayıcı vardır. İşlev, `this_thread::get_id` çağrı iş parçacığının tanımlayıcısını döndürür. Üye işlev, `thread::get_id` iş parçacığı nesnesi tarafından yönetilen iş parçacığının tanımlayıcısını döndürür. Varsayılan olarak oluşturulmuş iş parçacığı `thread::get_id` nesnesi için yöntem, tüm varsayılan olarak oluşturulmuş iş parçacığı nesneleri için aynı değere `this_thread::get_id` sahip ve çağrı sırasında birleşebilecek herhangi bir yürütme iş parçacığı için döndürülen değerden farklı bir nesneyi döndürür.
+Yürütmenin her iş parçacığı türünde benzersiz bir tanımlayıcıya sahiptir `thread::id` . İşlev, `this_thread::get_id` çağıran iş parçacığının tanımlayıcısını döndürür. Üye işlevi, `thread::get_id` bir iş parçacığı nesnesi tarafından yönetilen iş parçacığının tanımlayıcısını döndürür. Varsayılan olarak oluşturulmuş bir iş parçacığı nesnesi için, `thread::get_id` yöntemi, varsayılan olarak oluşturulmuş tüm iş parçacığı nesneleri için aynı değere sahip bir nesne döndürür ve `this_thread::get_id` çağrı sırasında birleştirilebilecek herhangi bir yürütme iş parçacığı için tarafından döndürülen değerden farklıdır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-classes"></a>Genel Sınıflar
+### <a name="public-classes"></a>Ortak sınıflar
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[konu::id Sınıf](#id_class)|İlişkili iş parçacığı benzersiz olarak tanımlar.|
+|[Thread:: ID sınıfı](#id_class)|İlişkili iş parçacığını benzersiz şekilde tanımlar.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[thread](#thread)|Bir **iş parçacığı nesnesi** oluşturuyor.|
+|[thread](#thread)|Bir `thread` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Ayırmak](#detach)|İlişkili iş parçacığı **nesnesinden** ayrılır.|
+|[ayırmak](#detach)|İlişkili iş parçacığını `thread` nesneden ayırır.|
 |[get_id](#get_id)|İlişkili iş parçacığının benzersiz tanımlayıcısını döndürür.|
-|[hardware_concurrency](#hardware_concurrency)|Statik. Donanım iş parçacığı bağlamlarının sayısının tahminini verir.|
-|[Katılın](#join)|İlişkili iş parçacığı tamamlanana kadar engeller.|
-|[katılabilir](#joinable)|İlişkili iş parçacığının birleştirilebilir olup olmadığını belirtir.|
-|[native_handle](#native_handle)|İş parçacığı tanıtıcısını temsil eden uygulamaya özgü türü döndürür.|
-|[Takas](#swap)|Nesne durumunu belirli bir **iş parçacığı** nesnesiyle değiştirir.|
+|[hardware_concurrency](#hardware_concurrency)|Statik. Donanım iş parçacığı bağlamlarının sayısının tahminini döndürür.|
+|[ayrılma](#join)|İlişkili iş parçacığı tamamlanana kadar engeller.|
+|[joinable](#joinable)|İlişkili iş parçacığının joinable olup olmadığını belirtir.|
+|[native_handle](#native_handle)|İş parçacığı tanıtıcısını temsil eden uygulamaya özel türü döndürür.|
+|[Kur](#swap)|Nesne durumunu belirtilen bir `thread` nesneyle değiştirir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[iş parçacığı::operator=](#op_eq)|Bir iş parçacığı geçerli **iş parçacığı** nesnesi ile ilişkilendirer.|
+|[Thread:: operator =](#op_eq)|Bir iş parçacığını geçerli nesneyle ilişkilendirir `thread` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<iş parçacığı>
+**Üst bilgi:**\<thread>
 
 **Ad alanı:** std
 
-## <a name="threaddetach"></a><a name="detach"></a>konu::detach
+## <a name="threaddetach"></a><a name="detach"></a>iş parçacığı::d etach
 
-İlişkili iş parçacığı ayırır. İşletim sistemi, iş parçacığı kaynaklarını sonlandırma üzerine serbest bırakmakla yükümlü olur.
+İlişkili iş parçacığını ayırır. İşletim sistemi sonlandırmada iş parçacığı kaynaklarını serbest bırakmaktan sorumlu olur.
 
 ```cpp
 void detach();
@@ -94,13 +94,13 @@ void detach();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrıdan `detach`sonra , [get_id](#get_id) iade [id](#id_class)sonraki aramalar .
+Bir çağrısından sonra `detach` , [get_id](#get_id) için sonraki çağrılar döndürür. [id](#id_class)
 
-Arama nesnesi ile ilişkili iş parçacığı birleştirilebilir değilse, işlev [system_error](../standard-library/system-error-class.md) `invalid_argument`hata kodu olan bir system_error atar.
+Çağıran nesneyle ilişkili iş parçacığı birlikte birleştirmiyorsa, işlev hata kodu olan bir [system_error](../standard-library/system-error-class.md) oluşturur `invalid_argument` .
 
-Çağrı nesnesi ile ilişkili iş parçacığı geçersizse, işlev `system_error` bir hata kodu `no_such_process`olan .
+Çağıran nesneyle ilişkili iş parçacığı geçersizse, işlev hata kodu olan bir oluşturur `system_error` `no_such_process` .
 
-## <a name="threadget_id"></a><a name="get_id"></a>konu::get_id
+## <a name="threadget_id"></a><a name="get_id"></a>iş parçacığı:: get_id
 
 İlişkili iş parçacığı için benzersiz bir tanımlayıcı döndürür.
 
@@ -110,9 +110,9 @@ id get_id() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlişkili iş parçacığıbenzersiz olarak tanımlayan veya `thread::id()` nesneyle ilişkili iş parçacığı yoksa iş [parçacığı::id](#id_class) nesnesi.
+Bir [thread::](#id_class) ilişkili iş parçacığını benzersiz bir şekilde tanımlayan veya `thread::id()` nesneyle ilişkili iş parçacığı olmayan ID nesnesi.
 
-## <a name="threadhardware_concurrency"></a><a name="hardware_concurrency"></a>konu::hardware_concurrency
+## <a name="threadhardware_concurrency"></a><a name="hardware_concurrency"></a>iş parçacığı:: hardware_concurrency
 
 Donanım iş parçacığı bağlamlarının sayısının tahminini döndüren statik yöntem.
 
@@ -122,9 +122,9 @@ static unsigned int hardware_concurrency() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Donanım iş parçacığı bağlamlarının sayısının tahmini. Değer hesaplanamıyorsa veya iyi tanımlanmıyorsa, bu yöntem 0 döndürür.
+Donanım iş parçacığı bağlamlarının sayısını tahmin edin. Değer hesaplanamıyor veya iyi tanımlanmamışsa, bu yöntem 0 döndürür.
 
-## <a name="threadid-class"></a><a name="id_class"></a>konu::id Sınıf
+## <a name="threadid-class"></a><a name="id_class"></a>Thread:: ID sınıfı
 
 İşlemdeki her yürütme iş parçacığı için benzersiz bir tanımlayıcı sağlar.
 
@@ -136,13 +136,13 @@ class thread::id {
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan oluşturucu, varolan herhangi bir iş `thread::id` parçacığı için nesneye eşit karşılaştırma yapmayan bir nesne oluşturur.
+Varsayılan Oluşturucu, `thread::id` var olan herhangi bir iş parçacığının nesnesine eşit olarak karşılaştırmayan bir nesne oluşturur.
 
-Varsayılan olarak `thread::id` oluşturulmuş tüm nesneler eşit olarak karşılaştırılır.
+Varsayılan olarak oluşturulmuş tüm `thread::id` Nesneler eşit olarak karşılaştırılır.
 
-## <a name="threadjoin"></a><a name="join"></a>iş parçacığı::join
+## <a name="threadjoin"></a><a name="join"></a>Thread:: JOIN
 
-Çağrı nesnesi ile ilişkili yürütme iş parçacığı tamamlanana kadar engeller.
+Çağıran nesneyle ilişkili yürütmenin iş parçacığı tamamlanana kadar engeller.
 
 ```cpp
 void join();
@@ -150,11 +150,11 @@ void join();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama başarılı olursa, çağrı nesnesi için [get_id](#get_id) sonraki çağrılar varsayılan bir iş parçacığı `thread::id` döndürün::id varolan iş parçacığı ile eşit karşılaştırmak değildir; [thread::id](#id_class) arama başarılı olmazsa, döndürülen `get_id` değer değişmez.
+Çağrı başarılı olursa, çağıran nesne için [get_id](#get_id) sonraki çağrıları, var olan herhangi bir iş parçacığının ile eşit olarak karşılaştırmayan bir varsayılan [iş parçacığı:: ID](#id_class) döndürür `thread::id` ; çağrı başarısız olursa, tarafından döndürülen değer `get_id` değiştirilmez.
 
-## <a name="threadjoinable"></a><a name="joinable"></a>iş parçacığı::joinable
+## <a name="threadjoinable"></a><a name="joinable"></a>Thread:: joinable
 
-İlişkili iş parçacığının *birleştirilebilir*olup olmadığını belirtir.
+İlişkili iş parçacığının *joinable*olup olmadığını belirtir.
 
 ```cpp
 bool joinable() const noexcept;
@@ -162,15 +162,15 @@ bool joinable() const noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ilişkili iş parçacığı *birleştirilebilir*ise **doğru** ; aksi takdirde, **yanlış**.
+**`true`** ilişkili iş parçacığı *birleştirilebilir*; Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir iş parçacığı nesnesi *birleştirilebilir,* eğer `get_id() != id()`.
+Bir iş parçacığı nesnesi, if ise *birleştirilebilir* `get_id() != id()` .
 
-## <a name="threadnative_handle"></a><a name="native_handle"></a>konu::native_handle
+## <a name="threadnative_handle"></a><a name="native_handle"></a>iş parçacığı:: native_handle
 
-İş parçacığı tanıtıcısını temsil eden uygulamaya özgü türü döndürür. İş parçacığı tutamacı uygulamaya özgü yollarla kullanılabilir.
+İş parçacığı tanıtıcısını temsil eden uygulamaya özel türü döndürür. İş parçacığı tanıtıcısı, uygulamaya özgü yollarla kullanılabilir.
 
 ```cpp
 native_handle_type native_handle();
@@ -178,11 +178,11 @@ native_handle_type native_handle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`native_handle_type`olarak kullanılan win32 `HANDLE` olarak `void *`tanımlanır.
+`native_handle_type`, olarak atama yapan bir Win32 olarak tanımlanır `HANDLE` `void *` .
 
-## <a name="threadoperator"></a><a name="op_eq"></a>iş parçacığı::operator=
+## <a name="threadoperator"></a><a name="op_eq"></a>Thread:: operator =
 
-Belirtilen bir nesnenin iş parçacığı geçerli nesne ile ilişkilendirer.
+Belirtilen nesnenin iş parçacığını geçerli nesneyle ilişkilendirir.
 
 ```cpp
 thread& operator=(thread&& Other) noexcept;
@@ -190,8 +190,8 @@ thread& operator=(thread&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*\
-Bir **iş parçacığı nesnesi.**
+*Farklı*\
+Bir `thread` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -199,13 +199,13 @@ Bir **iş parçacığı nesnesi.**
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama nesnesi birleştirilebilirse yöntem ayırma yı çağırır.
+Çağıran nesne birleştirilebilir ise, yöntemi ayır çağırır.
 
-İlişkilendirme yapıldıktan `Other` sonra, varsayılan olarak oluşturulmuş bir duruma ayarlanır.
+İlişkilendirme yapıldıktan sonra, varsayılan olarak `Other` oluşturulmuş bir duruma ayarlanır.
 
-## <a name="threadswap"></a><a name="swap"></a>konu::takas
+## <a name="threadswap"></a><a name="swap"></a>Thread:: swap
 
-Nesne durumunu belirtilen bir iş **parçacığı** nesnesinindurumuyla değiştirir.
+Nesne durumunu belirtilen bir nesne ile değiştirir `thread` .
 
 ```cpp
 void swap(thread& Other) noexcept;
@@ -213,12 +213,12 @@ void swap(thread& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*\
-Bir **iş parçacığı nesnesi.**
+*Farklı*\
+Bir `thread` nesnesi.
 
-## <a name="threadthread-constructor"></a><a name="thread"></a>konu::thread Constructor
+## <a name="threadthread-constructor"></a><a name="thread"></a>Thread:: Thread Oluşturucusu
 
-Bir **iş parçacığı nesnesi** oluşturuyor.
+Bir `thread` nesnesi oluşturur.
 
 ```cpp
 thread() noexcept;
@@ -230,24 +230,24 @@ thread(thread&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*F*\
+*Vadeli*\
 İş parçacığı tarafından yürütülecek uygulama tanımlı bir işlev.
 
 *A*\
-*F'ye*geçirilecek bağımsız değişkenlerin listesi.
+*F*'ye geçirilecek bağımsız değişkenlerin listesi.
 
-*Diğer*\
-Varolan bir **iş parçacığı nesnesi.**
+*Farklı*\
+Varolan bir `thread` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu yürütme iş parçacığı ile ilişkili olmayan bir nesne inşa eder. Yapılandırılan nesne için `get_id` yapılan bir çağrı yla `thread::id()`döndürülen değer.
+İlk Oluşturucu, yürütme iş parçacığı ile ilişkilendirilmemiş bir nesne oluşturur. Oluşturulan nesne için çağrısı tarafından döndürülen değer `get_id` `thread::id()` .
 
-İkinci oluşturucu, yeni bir yürütme iş parçacığıyla ilişkili bir nesne inşa `INVOKE` eder ve [ \<işlevsel>](../standard-library/functional.md)tanımlanan sözde işlevi yürütür. Yeni bir iş parçacığı başlatmak için yeterli kaynak yoksa, işlev hata kodu `resource_unavailable_try_again`olan bir [system_error](../standard-library/system-error-class.md) nesnesi atar. *F* çağrısı yakalanmamış bir özel durumla sona ererse, [sonlandırma](../standard-library/exception-functions.md#terminate) denir.
+İkinci Oluşturucu, yürütmenin yeni bir iş parçacığıyla ilişkili bir nesne oluşturur ve içinde tanımlanan sözde işlevi yürütür `INVOKE` [\<functional>](../standard-library/functional.md) . Yeni bir iş parçacığı başlatmak için yeterli kaynak yoksa, işlev hata kodu olan bir [system_error](../standard-library/system-error-class.md) nesnesi oluşturur `resource_unavailable_try_again` . *F* çağrısı yakalanamayan bir özel durumla sonlandığında, [Terminate](../standard-library/exception-functions.md#terminate) çağırılır.
 
-Üçüncü oluşturucu, iş parçacığı ile `Other`ilişkili bir nesne inşa eder. `Other`sonra varsayılan olarak oluşturulmuş bir duruma ayarlanır.
+Üçüncü Oluşturucu, ile ilişkili iş parçacığıyla ilişkili bir nesne oluşturur `Other` . `Other`sonra varsayılan olarak oluşturulmuş bir duruma ayarlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[\<iş parçacığı>](../standard-library/thread.md)
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<thread>](../standard-library/thread.md)

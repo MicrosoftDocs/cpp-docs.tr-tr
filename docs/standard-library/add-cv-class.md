@@ -7,16 +7,16 @@ helpviewer_keywords:
 - add_cv class
 - add_cv
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-ms.openlocfilehash: 412dc8426112e65d00b572a65f064667d2709a0d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0afeea71daf8358b2aeeefe8d368c135a54a6ad6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620775"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222634"
 ---
 # <a name="add_cv-class"></a>add_cv Sınıfı
 
-Türünden **const geçici** tür yapar.
+Türden **`const volatile`** türü oluşturur.
 
 ## <a name="syntax"></a>Söz dizimi
 
@@ -35,7 +35,7 @@ Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değiştirilen türün örneği, `add_cv<T>` `type` *t* zaten CV niteleyicilerine sahip olmadığı, *T* bir başvuru veya bir işlev olduğu müddetçe, hem [add_volatile](add-volatile-class.md) hem de [add_const](add-const-class.md)tarafından değiştirilen bir üye **typedef** öğesine sahiptir.
+Değiştirilen türün örneği, t `add_cv<T>` `type` **`typedef`** zaten CV niteleyicilerine sahip olmadığı *T* , bir başvuru ya da bir işlev olduğu müddetçe *T* , hem [add_volatile](add-volatile-class.md) hem de [add_const](add-const-class.md)tarafından değiştirilmiş bir üyeye sahiptir.
 
 `add_cv_t<T>`Yardımcı türü, typedef üyesine erişmek için bir kısayoldur `add_cv<T>` `type` .
 

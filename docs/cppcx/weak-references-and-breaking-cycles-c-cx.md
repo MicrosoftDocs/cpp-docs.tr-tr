@@ -1,19 +1,19 @@
 ---
-title: Zayıf başvurular ve döngüleri kesme (C++/CX)
+title: Zayıf Başvurular ve Döngüleri Kesme (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e
-ms.openlocfilehash: 19252b8684eade131394e98dc705f2f1d451f0cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04ba70c148121de520b470bd727b26e756858011
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384900"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214938"
 ---
-# <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve döngüleri kesme (C++/CX)
+# <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf Başvurular ve Döngüleri Kesme (C++/CX)
 
-Başvuru türleri için başvuru sayımı alan hiçbir tür sistemindeki kurabilir *döngüleri*— diğer bir deyişle, bir nesne, ikinci bir nesneye başvurur, ikinci nesne bazı son nesnenin geri başvurduğu kadar üçüncü vb. nesnesini ifade eder. ilk nesne. Bir nesnenin başvuru sayısının sıfır olduğunda bir döngüsünde doğru nesneler silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [çözmek](../cppcx/platform-weakreference-class.md#resolve) nesnesi artık yok veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne, Canlı ancak türündedeğil`T`.
+Başvuru sayımını temel alan herhangi bir tür sisteminde, türlere yapılan başvurular *döngü*oluşturabilir. diğer bir deyişle, bir nesne ikinci bir nesneye başvuruyorsa, ikinci nesne üçüncü bir nesneye başvurur ve bu nedenle bir son nesne ilk nesneye geri başvurana kadar devam eder. Bir döngüde, bir nesnenin başvuru sayısı sıfır olduğunda nesneler doğru şekilde silinemez. C++/CX, bu sorunu çözmenize yardımcı olmak için [Platform:: WeakReference Sınıf](../cppcx/platform-weakreference-class.md) sınıfını sağlar. Nesnesi `WeakReference` artık yoksa null değeri döndüren [Resolve](../cppcx/platform-weakreference-class.md#resolve) yöntemini destekler veya nesne etkin ancak türü değilse bir [Platform:: InvalidCastException](../cppcx/platform-invalidcastexception-class.md) oluşturur `T` .
 
-Bir senaryoda `WeakReference` kullanılmalıdır olduğunda `this` işaretçi bir olay işleyicisi tanımlamak için kullanılan bir lambda ifadesinde yakalanan. Olay işleyicilerini tanımlar, ancak bir lambda, olay işleyicisi için kullanmak istediğiniz adlandırılmış yöntemleri kullanmanızı öneririz — ya da diğer bazı durumlarda döngü sayımı bir başvuru ayırmak varsa — kullanın `WeakReference`. Örnek buradadır:
+' In kullanılması gereken bir senaryo, `WeakReference` **`this`** işaretçinin bir olay işleyicisini tanımlamak için kullanılan bir lambda ifadesinde yakalanmasının bir senaryodur. Olay işleyicileri tanımlarken adlandırılmış yöntemler kullanmanızı öneririz, ancak olay işleyiciniz için bir lambda kullanmak isterseniz veya bir başvuru sayımı döngüsünü başka bir durumda kesmeniz gerekiyorsa kullanın `WeakReference` . İşte bir örnek:
 
 ```
 
@@ -51,4 +51,4 @@ Class1::Class1()
 }
 ```
 
-Ne zaman bir olay işleyicisi oluşturur `DisconnectedException`, olay işleyicisi abone listeden kaldırmak neden olur.
+Bir olay işleyicisi oluşturduğunda `DisconnectedException` , etkinliğin abonelik listesinden işleyiciyi kaldırmasına neden olur.

@@ -1,23 +1,23 @@
 ---
-title: db_source (C++ com özniteliği)
+title: db_source (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_source
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: 6346a8d6f60313dc17bbcbad062aa888857f0b67
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d328cd7bcfed257b423a440041b6806149736ed0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167283"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215302"
 ---
 # <a name="db_source"></a>db_source
 
 Bir veri kaynağına bir bağlantı oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ db_source(db_source, name, hresult) ]
@@ -29,7 +29,7 @@ Bir veri kaynağına bir bağlantı oluşturur.
 Veri kaynağına bağlanmak için kullanılan bağlantı dizesi. Bağlantı dizesinin biçimi için, Microsoft Data Access Components (MDAC) SDK 'sindeki [bağlantı dizeleri ve veri bağlantıları](/previous-versions/windows/desktop/ms718376(v=vs.85)) bölümüne bakın.
 
 *ada*<br/>
-Seçim Bir sınıfta **db_source** kullandığınızda *ad* , kendisine uygulanan **db_source** özniteliği olan bir veri kaynağı nesnesinin örneğidir (bkz. örnek 1). Yöntem uygulamasında **db_source** satır içi kullandığınızda *ad* , veri kaynağına erişmek için kullanılabilecek bir değişkendir (yönteme yereldir) (bkz. örnek 2). Veri kaynağını bir komutla ilişkilendirmek için bu *adı* `db_command` *source_name* parametresine geçirirsiniz.
+Seçim Bir sınıfta **db_source** kullandığınızda *ad* , kendisine uygulanan **db_source** özniteliği olan bir veri kaynağı nesnesinin örneğidir (bkz. örnek 1). Yöntem uygulamasında **db_source** satır içi kullandığınızda *ad* , veri kaynağına erişmek için kullanılabilecek bir değişkendir (yönteme yereldir) (bkz. örnek 2). Bu *adı* , *source_name* `db_command` veri kaynağını bir komutla ilişkilendirmek için source_name parametresine geçirirsiniz.
 
 *HRESULT*<br/>
 Seçim Bu veritabanı komutunun HRESULT 'sini alacak değişkeni tanımlar. Değişken yoksa, özniteliği tarafından otomatik olarak eklenir.
@@ -38,19 +38,19 @@ Seçim Bu veritabanı komutunun HRESULT 'sini alacak değişkeni tanımlar. Değ
 
 **db_source** , birlikte OLE DB bir tüketici veri kaynağıyla bir bağlantıyı temsil eden bir [CDataSource](../../data/oledb/cdatasource-class.md) ve [CSession](../../data/oledb/csession-class.md) nesnesi oluşturur.
 
-Bir sınıfta **db_source** kullandığınızda, `CSession` nesnesi sınıfının bir üyesi olur.
+Bir sınıfta **db_source** kullandığınızda, `CSession` nesne sınıfının bir üyesi olur.
 
-Bir yöntemde **db_source** kullandığınızda, eklenen kod yöntem kapsamı içinde yürütülür ve `CSession` nesnesi yerel bir değişken olarak oluşturulur.
+Bir yöntemde **db_source** kullandığınızda, eklenen kod yöntem kapsamı içinde yürütülür ve `CSession` nesne yerel bir değişken olarak oluşturulur.
 
-**db_source** , bir sınıfa veya bir yöntem içinde veri kaynağı özellikleri ekler. `db_command` ( *db_source* *ad* parametresini *source_name* parametresi olarak alır) ile birlikte kullanılır.
+**db_source** , bir sınıfa veya bir yöntem içinde veri kaynağı özellikleri ekler. `db_command`( *Db_source* *ad* parametresini *source_name* parametresi olarak alır) ile birlikte kullanılır.
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, Northwind veritabanını kullanarak `ds` veri kaynağıyla bağlantı oluşturmak için bir sınıftaki **db_source** çağırır. `ds`, `CMyCommand` sınıfında dahili olarak kullanılabilecek veri kaynağı için bir tanıtıcıdır.
+Bu örnek **db_source** `ds` , Northwind veritabanını kullanarak veri kaynağıyla bağlantı oluşturmak için bir sınıftaki db_source çağırır. `ds`, sınıfında dahili olarak kullanılabilecek veri kaynağı için bir tanıtıcıdır `CMyCommand` .
 
 ```cpp
 // db_source_1.cpp
@@ -72,7 +72,7 @@ class CMyCommand {};
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**, üye, yöntem, yerel|
+|**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -81,4 +81,4 @@ class CMyCommand {};
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Öznitelikleri](ole-db-consumer-attributes.md)
+[OLE DB tüketici öznitelikleri](ole-db-consumer-attributes.md)

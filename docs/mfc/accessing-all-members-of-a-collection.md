@@ -15,12 +15,12 @@ helpviewer_keywords:
 - ', '
 - ', '
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
-ms.openlocfilehash: 0d8b5491ee5321171ef358308f3c1548e43953d3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cc058e6e4bf0058adb13f83e7ea071ebb4570ec4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616489"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214184"
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
 
@@ -42,11 +42,11 @@ Aşağıdaki yordamlarda, MFC ile birlikte sunulan üç ana koleksiyon türünü
 
    Bu örnek, nesnelere işaretçiler içeren türü belirlenmiş bir işaretçi dizisi kullanır `CPerson` . Dizi `CObArray` , şablon olmayan önceden tanımlanmış sınıflardan biri sınıfından türetilir. `GetAt`nesnesine bir işaretçi döndürür `CPerson` . Türü belirtilmiş işaretçi koleksiyon sınıfları için — diziler veya listeler — ilk parametre temel sınıfı belirtir; ikinci parametre, depolanacak türü belirtir.
 
-   `CTypedPtrArray`Sınıf Ayrıca bir dizinin öğelerine erişmek için normal dizi alt simge sözdizimini kullanabilmeniz için **[]** işlecini aşırı yükler. Yukarıdaki **for** döngüsünün gövdesinde bir alternatif
+   `CTypedPtrArray`Sınıf Ayrıca bir dizinin öğelerine erişmek için normal dizi alt simge sözdizimini kullanabilmeniz için **[]** işlecini aşırı yükler. Yukarıdaki döngünün gövdesinde yer aldığı ifadeye alternatif olarak **`for`**
 
    [!code-cpp[NVC_MFCCollections#13](codesnippet/cpp/accessing-all-members-of-a-collection_2.cpp)]
 
-   Bu işleç hem **const** hem de**const** olmayan sürümlerde bulunur. **Const** dizileri için çağrılan **const** sürümü yalnızca atama ifadesinin sağ tarafında görünebilir.
+   Bu işleç hem hem de **`const`** sürümler içinde bulunur **`const`** . **`const`** Diziler için çağrılan sürüm, **`const`** yalnızca atama ifadesinin sağ tarafında görünebilir.
 
 ### <a name="to-iterate-a-list"></a><a name="_core_to_iterate_a_list"></a>Bir listeyi yinelemek için
 

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_default_constructible
 ms.assetid: dd8f1c44-dae5-4258-891f-c5e048d94092
-ms.openlocfilehash: 451f43435132876fcfbbabe37c613d3c9efef30e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6e31220fa6b15d958e94e82322467cd73e1c3a6f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452782"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215705"
 ---
-# <a name="isdefaultconstructible-class"></a>is_default_constructible sınıfı
+# <a name="is_default_constructible-class"></a>is_default_constructible sınıfı
 
 Bir türün varsayılan Oluşturucusu olup olmadığını sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -26,12 +26,12 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür *T* türü, varsayılan oluşturucuya sahip bir sınıf türü ise true, aksi takdirde false barındırır. Bu koşul `is_constructible<T>`ile eşdeğerdir. Tür *T* , tamamen bir tür, **void**veya bilinmeyen bir bağlantılı dizi olmalıdır.
+Tür *T* türü, varsayılan oluşturucuya sahip bir sınıf türü ise true, aksi takdirde false barındırır. Bu koşul ile eşdeğerdir `is_constructible<T>` . Tür *T* , bir **`void`** tamsayı veya bilinmeyen bir dize olmalıdır.
 
 ## <a name="example"></a>Örnek
 
@@ -69,7 +69,7 @@ is_default_constructible<Simple2> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

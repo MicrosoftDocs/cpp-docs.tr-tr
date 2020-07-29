@@ -8,12 +8,12 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-ms.openlocfilehash: 6acac3f6bc82db6e6981f83715c7ee88cfd06fbd
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 9d84cdbecb7cc6d39cb30077780c558db85888c0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422292"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222725"
 ---
 # <a name="how-to-use-parallel_invoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma
 
@@ -24,7 +24,7 @@ Bitonic sıralaması, giriş sıralarının tüm birleşimlerini sıralayan bir 
 > [!NOTE]
 > Bu örnek, çizim için bir paralel sıralama yordamı kullanır. Ayrıca, PPL 'nin sağladığı yerleşik sıralama algoritmalarından de yararlanabilirsiniz: [eşzamanlılık::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [eşzamanlılık::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)ve [eşzamanlılık::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-## <a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a>Başlıklı
 
 Bu belgede aşağıdaki görevler açıklanmaktadır:
 
@@ -32,41 +32,41 @@ Bu belgede aşağıdaki görevler açıklanmaktadır:
 
 - [Paralel olarak Sırtonic sıralama gerçekleştirmek için parallel_invoke kullanma](#parallel)
 
-## <a name="serial"></a>Bitonic sıralama hizmeti gerçekleştiriliyor
+## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a>Bitonic sıralama hizmeti gerçekleştiriliyor
 
-Aşağıdaki örnek, bitonic sıralama algoritmasının seri sürümünü gösterir. `bitonic_sort` işlevi diziyi iki bölüme böler, bu bölümleri karşıt yönlere göre sıralar ve sonra sonuçları birleştirir. Bu işlev, her bölümü sıralamak için iki kez yinelemeli olarak çağırır.
+Aşağıdaki örnek, bitonic sıralama algoritmasının seri sürümünü gösterir. `bitonic_sort`İşlevi, diziyi iki bölüme böler, bu bölümleri karşıt yönlere göre sıralar ve sonra sonuçları birleştirir. Bu işlev, her bölümü sıralamak için iki kez yinelemeli olarak çağırır.
 
 [!code-cpp[concrt-parallel-bitonic-sort#1](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_1.cpp)]
 
 [[Üst](#top)]
 
-## <a name="parallel"></a>Paralel olarak Sırtonic sıralama gerçekleştirmek için parallel_invoke kullanma
+## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a>Paralel olarak Sırtonic sıralama gerçekleştirmek için parallel_invoke kullanma
 
-Bu bölümde, bıtonic sıralama algoritmasını paralel olarak gerçekleştirmek için `parallel_invoke` algoritmasının nasıl kullanılacağı açıklanmaktadır.
+Bu bölümde, `parallel_invoke` bıtonic sıralama algoritmasını paralel olarak gerçekleştirmek için algoritmanın nasıl kullanılacağı açıklanmaktadır.
 
 ### <a name="to-perform-the-bitonic-sort-algorithm-in-parallel"></a>Paralel olarak bitonic sıralama algoritmasını gerçekleştirmek için
 
-1. PPL. h üstbilgi dosyası için bir `#include` yönergesi ekleyin.
+1. `#include`PPL. h üstbilgi dosyası için bir yönerge ekleyin.
 
 [!code-cpp[concrt-parallel-bitonic-sort#10](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_2.cpp)]
 
-1. `concurrency` ad alanı için bir `using` yönergesi ekleyin.
+1. **`using`** Ad alanı için bir yönerge ekleyin `concurrency` .
 
 [!code-cpp[concrt-parallel-bitonic-sort#11](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_3.cpp)]
 
-1. `parallel_bitonic_mege`adlı yeni bir işlev oluşturun, bu, yapmak için yeterli miktarda iş olması durumunda dizileri paralel olarak birleştirmek için `parallel_invoke` algoritmasını kullanır. Aksi takdirde, dizileri seri olarak birleştirmek için `bitonic_merge` çağırın.
+1. `parallel_bitonic_mege` `parallel_invoke` İş için yeterli miktarda çalışma miktarı varsa, dizileri paralel olarak birleştirmek için algoritması kullanan yeni bir işlev oluşturun. Aksi takdirde, `bitonic_merge` dizileri seri olarak birleştirmek için çağırın.
 
 [!code-cpp[concrt-parallel-bitonic-sort#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_4.cpp)]
 
-1. Önceki adımda olduğu gibi, ancak `bitonic_sort` işlevi için bir işlem gerçekleştirin.
+1. Önceki adımda, ancak işlevi için benzeyen bir işlem gerçekleştirin `bitonic_sort` .
 
 [!code-cpp[concrt-parallel-bitonic-sort#3](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_5.cpp)]
 
-1. Diziyi artan sırada sıralayan `parallel_bitonic_sort` işlevinin aşırı yüklenmiş bir sürümünü oluşturun.
+1. `parallel_bitonic_sort`İşlevin diziyi artan sırada sıralayan aşırı yüklenmiş bir sürümünü oluşturun.
 
 [!code-cpp[concrt-parallel-bitonic-sort#4](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_6.cpp)]
 
-`parallel_invoke` algoritması, çağırma bağlamındaki görev dizisinin son kısmını gerçekleştirerek yükü azaltır. Örneğin, `parallel_bitonic_sort` işlevinde, ilk görev ayrı bir bağlam üzerinde çalışır ve ikinci görev çağıran bağlam üzerinde çalışır.
+`parallel_invoke`Algoritma, çağırma bağlamındaki görev dizisinin son kısmını gerçekleştirerek yükü azaltır. Örneğin, `parallel_bitonic_sort` işlevinde, ilk görev ayrı bir bağlam üzerinde çalışır ve ikinci görev çağıran bağlam üzerinde çalışır.
 
 [!code-cpp[concrt-parallel-bitonic-sort#5](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_7.cpp)]
 
@@ -85,15 +85,15 @@ parallel time: 1248
 
 ### <a name="compiling-the-code"></a>Kod Derleniyor
 
-Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya `parallel-bitonic-sort.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
+Kodu derlemek için, kopyalayın ve sonra bir Visual Studio projesine yapıştırın veya adlandırılmış bir dosyaya yapıştırın `parallel-bitonic-sort.cpp` ve sonra bir Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-> **CL. exe/EHsc Parallel-bitonic-Sort. cpp**
+> **cl.exe/EHsc Parallel-bitonic-Sort. cpp**
 
 ## <a name="robust-programming"></a>Güçlü Programlama
 
-Bu örnek, her görev grubunun ömrü bir işlevin ötesinde genişlemediğinden [eşzamanlılık:: task_group](reference/task-group-class.md) sınıfı yerine `parallel_invoke` algoritmasını kullanır. `task group` nesnelerinden daha az yürütme yüküne sahip olduğundan `parallel_invoke` kullanmanızı öneririz ve bu nedenle daha iyi bir performans sağlayan kod yazmanızı sağlar.
+Bu örnek `parallel_invoke` [eşzamanlılık:: task_group](reference/task-group-class.md) sınıfı yerine algoritmayı kullanır, çünkü her görev grubunun ömrü bir işlevin ötesine genişlemez. `parallel_invoke`Daha az yürütme yüküne sahip olduğundan `task group` ve daha sonra, daha iyi performans sağlayan kod yazmanıza olanak sağladığından kullanmanızı öneririz.
 
-Bazı algoritmaların paralel sürümleri, yalnızca yapmak için yeterli iş olduğunda daha iyi gerçekleştirilir. Örneğin, `parallel_bitonic_merge` işlevi, dizide 500 veya daha az öğe varsa `bitonic_merge`seri sürümünü çağırır. Ayrıca, çalışma miktarına göre Genel sıralama stratejinizi planlayabilirsiniz. Örneğin, aşağıdaki örnekte gösterildiği gibi, dizi 500 öğeden az öğe içeriyorsa hızlı sıralama algoritmasının seri sürümünü kullanmak daha verimli olabilir:
+Bazı algoritmaların paralel sürümleri, yalnızca yapmak için yeterli iş olduğunda daha iyi gerçekleştirilir. Örneğin, `parallel_bitonic_merge` `bitonic_merge` dizide 500 veya daha az öğe varsa, bu işlev seri sürümünü çağırır. Ayrıca, çalışma miktarına göre Genel sıralama stratejinizi planlayabilirsiniz. Örneğin, aşağıdaki örnekte gösterildiği gibi, dizi 500 öğeden az öğe içeriyorsa hızlı sıralama algoritmasının seri sürümünü kullanmak daha verimli olabilir:
 
 [!code-cpp[concrt-parallel-bitonic-sort#9](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_9.cpp)]
 

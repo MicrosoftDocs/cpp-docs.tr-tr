@@ -1,5 +1,5 @@
 ---
-title: valarray &lt;bool &gt; sınıfı
+title: valarray &lt; bool &gt; sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - valarray<bool>
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - valarray<bool> class
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
-ms.openlocfilehash: c0fc15920018104147b6fd7ea39ab04bbc8862ad
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 9145a6c75850fec78ca821b236133cc6c38beda9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688749"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215432"
 ---
-# <a name="valarrayltboolgt-class"></a>valarray &lt;bool &gt; sınıfı
+# <a name="valarrayltboolgt-class"></a>valarray &lt; bool &gt; sınıfı
 
-Valarray sınıf şablonunun özelleşmiş bir sürümü **bool**türündeki öğelere **\<Type >** .
+Tür öğelerine **valarray \<Type> ** sınıf şablonunun özelleşmiş bir sürümü **`bool`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,11 +73,11 @@ valarray<bool>: ( 0 0 1 0 1 0 1 0 1 0 ).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<valarray >
+**Üst bilgi:**\<valarray>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[valarray sınıfı](../standard-library/valarray-class.md) \
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[valarray sınıfı](../standard-library/valarray-class.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

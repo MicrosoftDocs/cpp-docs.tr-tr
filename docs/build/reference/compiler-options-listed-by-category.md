@@ -5,12 +5,12 @@ ms.date: 07/08/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 571513c33a40bc13ba4d0bb0d682bfb8cc8d6071
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: e362119ed3c642e2fa07bddd570c2365252d3325
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180870"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223882"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -41,7 +41,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/EH`](eh-exception-handling-model.md) | Özel durum işleme modelini belirtir. |
 | [`/fp`](fp-specify-floating-point-behavior.md) | Kayan nokta davranışını belirtir. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Windows uygulamaları için iyileştirir. |
-| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | `__cdecl`Çağırma kuralını kullanır. (yalnızca x86) |
+| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | **`__cdecl`** Çağırma kuralını kullanır. (yalnızca x86) |
 | [`/Ge`](ge-enable-stack-probes.md) | Kullanım dışı. Yığın araştırmalarını etkinleştirir. |
 | [`/GF`](gf-eliminate-duplicate-strings.md) | Dize havuzunu izin vermez. |
 | [`/Gh`](gh-enable-penter-hook-function.md) | Kanca işlevini çağırır `_penter` . |
@@ -49,23 +49,23 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/GL`](gl-whole-program-optimization.md) | Tüm program iyileştirmesini mümkün hale getirme. |
 | [`/Gm`](gm-enable-minimal-rebuild.md) | Kullanım dışı. En az yeniden derlemeyi mümkün. |
 | [`/GR`](gr-enable-run-time-type-information.md) | Çalışma zamanı tür bilgilerini (RTTı) etkinleştir. |
-| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | `__fastcall`Çağırma kuralını kullanır. (yalnızca x86) |
+| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | **`__fastcall`** Çağırma kuralını kullanır. (yalnızca x86) |
 | [`/GS`](gs-buffer-security-check.md) | Arabellek güvenliğini denetler. |
 | [`/Gs`](gs-control-stack-checking-calls.md) | Yığın araştırmalarını denetler. |
 | [`/GT`](gt-support-fiber-safe-thread-local-storage.md) | Statik iş parçacığı yerel depolama alanı kullanılarak ayrılan veriler için fiber güvenliği destekler. |
 | [`/guard:cf`](guard-enable-control-flow-guard.md) | Denetim akışı koruyucusu güvenlik denetimleri ekler. |
 | [`/guard:ehcont`](guard-enable-eh-continuation-metadata.md) | EH devamlılık meta verilerini etkinleştirilir. |
-| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | `__vectorcall`Çağırma kuralını kullanır. (yalnızca x86 ve x64) |
+| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | **`__vectorcall`** Çağırma kuralını kullanır. (yalnızca x86 ve x64) |
 | [`/Gw`](gw-optimize-global-data.md) | Tam program genel veri iyileştirmesini mümkün hale getirme. |
 | [`/GX`](gx-enable-exception-handling.md) | Kullanım dışı. Zaman uyumlu özel durum işlemeyi mümkün. [`/EH`](eh-exception-handling-model.md)Bunun yerine kullanın. |
 | [`/Gy`](gy-enable-function-level-linking.md) | İşlev düzeyinde bağlamayı mümkün. |
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Kullanım dışı. Hızlı denetimleri mümkün. (Aynı [`/RTC1`](rtc-run-time-error-checks.md) ) |
-| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | `__stdcall`Çağırma kuralını kullanır. (yalnızca x86) |
+| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | **`__stdcall`** Çağırma kuralını kullanır. (yalnızca x86) |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | , Yazmaçlarda geçirilen parametreleri işlev girişi üzerine yığındaki konumlarına yazılacak şekilde zorlar. Bu derleyici seçeneği yalnızca x64 derleyicileri için geçerlidir (yerel ve çapraz derleme). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Düzeltme Eki eklenebilen bir görüntü oluşturur. |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Hızlı bir şekilde daha fazla işlem oluşturur. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Kullanım dışı. `_ftol`Bir kayan nokta türünden integral türüne dönüştürme gerektiğinde yardımcı işlevin çağrısını bastırır. (yalnızca x86) |
-| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | `fwait`Bloklar içindeki komutları kaldırır `try` . |
+| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | `fwait`Bloklar içindeki komutları kaldırır **`try`** . |
 | [`/QIntel-jcc-erratum`](qintel-jcc-erratum.md) | Intel JCC ermıtum mikro kod güncelleştirmesinin performans etkisini azaltır. |
 | [`/Qpar`](qpar-auto-parallelizer.md) | Döngülerin otomatik paralelleştirilmesini mümkün hale getirme. |
 | [`/Qpar-report`](qpar-report-auto-parallelizer-reporting-level.md) | Otomatik paralelleştirme için raporlama düzeylerini mümkün hale getirme. |
@@ -114,7 +114,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 
 | Seçenek | Amaç |
 |--|--|
-| [`/constexpr`](constexpr-control-constexpr-evaluation.md) | Derleme zamanında **constexpr** değerlendirmesini denetleyin. |
+| [`/constexpr`](constexpr-control-constexpr-evaluation.md) | **`constexpr`** Derleme zamanında değerlendirmeyi denetleyin. |
 | [`/openmp`](openmp-enable-openmp-2-0-support.md) | [`#pragma omp`](../../preprocessor/omp.md)Kaynak kodunda etkinleştirilir. |
 | [`/vd`](vd-disable-construction-displacements.md) | Gizli sınıf üyelerini bastırır veya izin vermez `vtordisp` . |
 | [`/vmb`](vmb-vmg-representation-method.md) | Üye işaretçileri için en iyi temeli kullanır. |
@@ -164,7 +164,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | *MSPDBSRV.EXE*aracılığıyla SERILEŞTIRILMESI için pdb dosyasına yazmaları zorlar. |
 | [`/H`](h-restrict-length-of-external-names.md) | Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar. |
 | [`/HELP`](help-compiler-command-line-help.md) | Derleyici seçeneklerini listeler. |
-| [`/J`](j-default-char-type-is-unsigned.md) | Varsayılan türü değiştirir `char` . |
+| [`/J`](j-default-char-type-is-unsigned.md) | Varsayılan türü değiştirir **`char`** . |
 | [`/JMC`](jmc.md) | Yerel C++ Yalnızca kendi kodum hata ayıklamayı destekler. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | Derleyici ve bağlayıcı, Windows çekirdeğinde yürütülebilecek bir ikili oluşturacak. |
 | [`/MP`](mp-build-with-multiple-processes.md) | Aynı anda birden fazla kaynak dosyası oluşturur. |

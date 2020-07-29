@@ -6,12 +6,12 @@ helpviewer_keywords:
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 90767141337512b053bb06a40823c4a22a8a4823
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8813bab0cb55aa57792d0031433d96eefb095da4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169753"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223921"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>Çağırma Kuralları, Parametreler ve Dönüş Türü
 
@@ -27,9 +27,9 @@ FARPROC WINAPI __delayLoadHelper2(
 ### <a name="parameters"></a>Parametreler
 
 *pidd*<br/>
-İçeri aktarma ile ilgili çeşitli verilerin uzaklıklarını, bağlama bilgileri için zaman damgasını ve tanımlayıcı içeriği hakkında daha fazla bilgi sağlayan bir öznitelik kümesini içeren bir `ImgDelayDescr` `const` işaretçisi. Şu anda, Tanımlayıcıdaki adreslerin göreli sanal adresler olduğunu belirten `dlattrRva`yalnızca bir öznitelik vardır. Daha fazla bilgi için, *delayimp. h*içindeki bildirimlere bakın.
+**`const`** `ImgDelayDescr` İçeri aktarma ile ilgili çeşitli verileri, bağlama bilgileri için zaman damgasını ve tanımlayıcı içeriği hakkında daha fazla bilgi sağlayan bir öznitelik kümesini içeren bir işaretçisi. Şu anda, `dlattrRva` Tanımlayıcıdaki adreslerin göreli sanal adresler olduğunu gösteren yalnızca bir öznitelik vardır. Daha fazla bilgi için, *delayimp. h*içindeki bildirimlere bakın.
 
-`PCImgDelayDescr` yapısının tanımı için bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md).
+Yapının tanımı için `PCImgDelayDescr` bkz. [Yapı ve sabit tanımlar](structure-and-constant-definitions.md).
 
 *ppfnIATEntry*<br/>
 Alınan işlevin adresiyle güncelleştirilmiş gecikmeli yük içeri aktarma adres tablosunda (ıAT) yuva işaretçisi. Yardımcı yordamının bu konuma döndürdüğü değeri aynı şekilde depolaması gerekir.
@@ -40,17 +40,17 @@ Alınan işlevin adresiyle güncelleştirilmiş gecikmeli yük içeri aktarma ad
 
 İşlev başarısız olursa, bir özel durum oluşturur ve 0 döndürür. Üç tür özel durum oluşturulabilir:
 
-- `pidd` öznitelikleri doğru belirtilmediyse, geçersiz parametre.
+- ' Deki öznitelikler doğru belirtilmediyse, geçersiz parametre `pidd` .
 
-- Belirtilen DLL 'de `LoadLibrary` başarısız oldu.
+- `LoadLibrary`Belirtilen DLL 'de başarısız oldu.
 
-- `GetProcAddress`hatası.
+- Hata `GetProcAddress` .
 
 Bu özel durumları işlemek sizin sorumluluğunuzdadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yardımcı işlevi için çağırma kuralı `__stdcall`. Dönüş değerinin türü ilgili değildir, bu nedenle FARPROC kullanılır. Bu işlevin C bağlantısı vardır.
+Yardımcı işlevi için çağırma kuralı **`__stdcall`** . Dönüş değerinin türü ilgili değildir, bu nedenle FARPROC kullanılır. Bu işlevin C bağlantısı vardır.
 
 Yardım yordamınızın bildirim kancası olarak kullanılmasını istemediğiniz sürece, gecikme yükü Yardımcısı 'nın dönüş değeri, geçirilen işlev işaretçisi konumunda depolanmalıdır. Bu durumda, döndürülecek uygun işlev işaretçisini bulmaktan kodunuz sorumludur. Bağlayıcının oluşturduğu dönüştürücü kodu, bu dönüş değerini içeri aktarmanın gerçek hedefi olarak alır ve doğrudan ona atlar.
 
@@ -137,4 +137,4 @@ const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı İşlevini Anlama](understanding-the-helper-function.md)
+[Yardımcı Işlevini anlama](understanding-the-helper-function.md)

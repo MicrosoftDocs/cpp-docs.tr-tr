@@ -42,12 +42,12 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-ms.openlocfilehash: 57fdd61a966cbeab07c0aeafdad0f6e6fb97cca1
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: c59e8297013e02592e623859621bb1ff11474733
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404326"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215146"
 ---
 # <a name="strftime-wcsftime-_strftime_l-_wcsftime_l"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 
@@ -90,7 +90,7 @@ size_t _wcsftime_l(
 Çıkış dizesi.
 
 *MaxSize*<br/>
-*StrDest* arabelleğinin karakter cinsinden ölçülen boyutu (**char** veya **wchar_t**).
+*StrDest* arabelleğinin karakter cinsinden ( **`char`** veya) ölçülen boyutu **`wchar_t`** .
 
 *formatını*<br/>
 Biçim denetimi dizesi.
@@ -200,7 +200,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yerel Ayar](../../c-runtime-library/locale.md) <br/>
-[Zaman yönetimi](../../c-runtime-library/time-management.md) <br/>
+[Zaman Yönetimi](../../c-runtime-library/time-management.md) <br/>
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md) <br/>
 [localeconv](localeconv.md) <br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md) <br/>

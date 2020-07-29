@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMapPtrToWord [MFC], RemoveKey
 - CMapPtrToWord [MFC], SetAt
 ms.assetid: 4631c6b6-d49f-49d9-adc0-1e0491e32d7b
-ms.openlocfilehash: 698e306896fd62888a84b6d6ce55fb4c9678187b
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 254659a9f00ff7c0c27174cfbea4c131993150f3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442647"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223037"
 ---
 # <a name="cmapptrtoword-class"></a>CMapPtrToWord sınıfı
 
@@ -53,7 +53,7 @@ class CMapPtrToWord : public CObject
 
 ## <a name="members"></a>Üyeler
 
-`CMapPtrToWord` üye işlevleri [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CMapStringToOb` başvuru belgelerini kullanabilirsiniz. İşlev parametresi veya dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, SÖZCÜĞÜNÜ değiştirin. Bir işlev parametresi veya dönüş değeri olarak **char** için `CString` ya da **const** işaretçisi gördüğünüz her yerde, **void**için bir işaretçi yerine koyun.
+Öğesinin üye işlevleri `CMapPtrToWord` [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, `CMapStringToOb` üye işlevi özellikleri için başvuru belgelerini kullanabilirsiniz. Bir `CObject` işlev parametresi veya dönüş değeri olarak bir işaretçi Gördüğünüz her yerde, sözcüğünü değiştirin. `CString` **`const`** İşlev parametresi veya dönüş değeri olarak bir işaretçisi veya bir işaretçi Gördüğünüz her yerde **`char`** , bir işaretçisi yerine **`void`** .
 
 `BOOL CMapPtrToWord::Lookup( const void* <key>, WORD& <rValue> ) const;`
 
@@ -63,13 +63,13 @@ class CMapPtrToWord : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CMapPtrToWord:: CMapPtrToWord](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CMapPtrToWord:: GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritadaki öğelerin sayısını döndürür.|
 |[CMapPtrToWord:: GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Karma tablodaki geçerli öğe sayısını belirler.|
@@ -87,19 +87,19 @@ class CMapPtrToWord : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMapPtrToWord:: operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map içine bir öğe ekler — `SetAt`için işleç değiştirme.|
+|[CMapPtrToWord:: işleci \[\]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map içine bir öğe ekler — için işleç değiştirme `SetAt` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapWordToPtr`, çalışma zamanı tür erişimini desteklemek ve bir `CDumpContext` nesnesine dökümünü yapmak için IMPLEMENT_DYNAMIC makrosunu içerir. Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+`CMapWordToPtr`çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
 Sözcüğe işaretçi eşlemeleri serileştirilemiyor.
 
-`CMapPtrToWord` nesne silindiğinde veya öğeleri kaldırıldığında, işaretçiler ve sözcükler kaldırılır. Anahtar işaretçilerin başvurduğu varlıklar kaldırılmaz.
+Bir `CMapPtrToWord` nesne silindiğinde veya öğeleri kaldırıldığında, işaretçiler ve sözcükler kaldırılır. Anahtar işaretçilerin başvurduğu varlıklar kaldırılmaz.
 
-`CMapPtrToWord`hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
+Hakkında daha fazla bilgi için `CMapPtrToWord` bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -113,5 +113,5 @@ Sözcüğe işaretçi eşlemeleri serileştirilemiyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

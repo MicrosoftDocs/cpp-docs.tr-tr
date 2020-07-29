@@ -1,5 +1,5 @@
 ---
-title: '&lt;Yineleyici&gt; işleçleri'
+title: '&lt;Yineleyici &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - xutility/std::operator!=
@@ -17,16 +17,16 @@ helpviewer_keywords:
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: 7455610af5f03be024753e26f67e561b14c85612
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 36851eab86a32fab9294129cf1918e0add528eb3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420108"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215666"
 ---
-# <a name="ltiteratorgt-operators"></a>&lt;Yineleyici&gt; işleçleri
+# <a name="ltiteratorgt-operators"></a>&lt;Yineleyici &gt; işleçleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.
 
@@ -43,15 +43,15 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `iterator` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `iterator` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleyici nesneleri eşitse **true** ; Yineleyici nesneleri eşitse **false** .
+**`true`** Yineleyici nesneleri eşitse; **`false`** Yineleyici nesneleri eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -119,7 +119,7 @@ in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.
 
@@ -147,21 +147,21 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Yineleyici türünde bir nesne.
 
-*sağ*\
+*Right*\
 Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleyici nesneleri eşitse **true** ; Yineleyici nesneleri eşitse **false** .
+**`true`** Yineleyici nesneleri eşitse; **`false`** Yineleyici nesneleri eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bir yineleyici nesne, bir kapsayıcıdaki aynı öğeleri ele aldıklarında, başka bir yineleyiciden eşittir. İki yineleyiciler bir kapsayıcıdaki farklı öğelere işaret ettikten sonra eşit değildir.
 
-İlk iki şablon işleci yalnızca *sol* ve *sağ* aynı yineleyiciyi depoladıysa true değerini döndürür. Üçüncü şablon işleci yalnızca *sol* ve *sağ* aynı akış işaretçisini depoladığınızda true değerini döndürür. Dördüncü şablon işleci `left.equal (right)`döndürür.
+İlk iki şablon işleci yalnızca *sol* ve *sağ* aynı yineleyiciyi depoladıysa true değerini döndürür. Üçüncü şablon işleci yalnızca *sol* ve *sağ* aynı akış işaretçisini depoladığınızda true değerini döndürür. Dördüncü şablon işleci döndürülür `left.equal (right)` .
 
 ### <a name="example"></a>Örnek
 
@@ -225,7 +225,7 @@ in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.
 
@@ -236,15 +236,15 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `iterator` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `iterator` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciden küçükse **true** ; sağdaki yineleyici değerinden büyükse veya buna eşitse **false** .
+**`true`** ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciden küçükse; **`false`** sağ taraftaki yineleyici değerinden büyükse veya bu değere eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -316,7 +316,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
@@ -327,15 +327,15 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Yineleyici türünde bir nesne.
 
-*sağ*\
+*Right*\
 Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciye eşit veya daha küçükse **true** ; sağdaki yineleyici değerinden büyükse **yanlış** .
+**`true`** ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciye eşit veya daha küçükse; **`false`** sağ taraftaki yineleyici değerinden büyükse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -411,7 +411,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.
 
@@ -422,15 +422,15 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Yineleyici türünde bir nesne.
 
-*sağ*\
+*Right*\
 Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciden büyükse **true** ; sağdaki yineleyici değerinden küçükse veya buna eşitse **false** .
+**`true`** ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciden büyükse; **`false`** sağ taraftaki yineleyici değerinden küçükse veya bu değere eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -500,7 +500,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.
 
@@ -511,15 +511,15 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Yineleyici türünde bir nesne.
 
-*sağ*\
+*Right*\
 Yineleyici türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciye eşit veya daha büyükse **true** ; sağdaki yineleyici değerinden küçükse **false** .
+**`true`** ifadenin sol tarafındaki Yineleyici, ifadenin sağ tarafındaki yineleyiciye eşit veya daha büyükse; **`false`** sağdaki yineleyici değerinden küçükse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -595,9 +595,9 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
-## <a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a>işleç +
 
-Bir yineleyici için bir konum ekler ve yeni konum konumunda eklenen öğeyi adresleyen bir `move_iterator` veya `reverse_iterator` döndürür.
+Bir yineleyici için bir konum ekler ve yeni bir `move_iterator` `reverse_iterator` konum konumunda eklenen öğeyi bir veya daha fazla adresi döndürür.
 
 ```cpp
 template <class RandomIterator, class Diff>
@@ -618,12 +618,12 @@ operator+(
 *_Off*\
 Const move_iterator veya const reverse_iterator konum sayısı denkleştirilir.
 
-*sağ*\
+*Right*\
 Kaydırılacağı Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*_Off* *Sum + * döndürür.
+*Sağ*  +  *_Off*toplamını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -674,7 +674,7 @@ The iterator rVPOS1 now points to the fifth element
 in the reversed sequence: 2.
 ```
 
-## <a name="operator-"></a>işlecinde
+## <a name="operator-"></a><a name="operator-"></a>işlecinde
 
 Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.
 
@@ -692,23 +692,23 @@ Tdiff operator-(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Yineleyici.
 
-*sağ*\
+*Right*\
 Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki yineleyiciler arasındaki fark `.`
+İki yineleyiciler arasındaki fark`.`
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk şablon işleci `left.base() - right.base()`döndürür.
+İlk şablon işleci döndürülür `left.base() - right.base()` .
 
-İkinci şablon işleci `right.current - left.current`döndürür.
+İkinci şablon işleci döndürülür `right.current - left.current` .
 
-`Tdiff`, döndürülen ifadenin türüne göre belirlenir. Aksi takdirde, `RandomIterator1::difference_type`.
+`Tdiff`, döndürülen ifadenin türüne göre belirlenir. Aksi takdirde, `RandomIterator1::difference_type` .
 
 ### <a name="example"></a>Örnek
 

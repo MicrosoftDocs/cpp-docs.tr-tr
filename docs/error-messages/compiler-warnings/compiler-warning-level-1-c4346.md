@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4346
 ms.assetid: 68ee562d-cca9-4a2a-9a1b-14ad1a1e7396
-ms.openlocfilehash: 3ab519f612d5272b0562728917cc777f1de86b79
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f1f731eed2dae2721b13bb2e526992849e217f7f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187251"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223206"
 ---
 # <a name="compiler-warning-level-1-c4346"></a>Derleyici Uyarısı (düzey 1) C4346
 
 ' name ': bağımlı ad bir tür değil
 
-Bağımsız bir ad bir tür olarak değerlendirilme ise [TypeName](../../cpp/typename.md) anahtar sözcüğü gereklidir. Tüm görsellerde C++aynı şekilde çalışacak kod için, bildirime `typename` ekleyin.
+Bağımsız bir ad bir tür olarak değerlendirilme ise [TypeName](../../cpp/typename.md) anahtar sözcüğü gereklidir. Tüm Visual C++ sürümlerinde aynı şekilde çalışacak kod için, **`typename`** bildirime ekleyin.
 
 Aşağıdaki örnek C4346 oluşturur:
 
@@ -32,7 +32,7 @@ struct C {
 };
 ```
 
-Aşağıdaki örneklerde **TypeName** anahtar sözcüğünün gerekli olduğu diğer örnekler gösterilmektedir:
+Aşağıdaki örnekler, anahtar sözcüğünün gerekli olduğu diğer örnekleri gösterir **`typename`** :
 
 ```cpp
 // C4346b.cpp

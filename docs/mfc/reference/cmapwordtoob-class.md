@@ -34,16 +34,16 @@ helpviewer_keywords:
 - CMapWordToOb [MFC], RemoveKey
 - CMapWordToOb [MFC], SetAt
 ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
-ms.openlocfilehash: 80d53f195ba98f853c86a4d9c38fa9fcda52da3b
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f360760bb5c04400ed77ef49c5968f8e9e7a6e59
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442575"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222998"
 ---
 # <a name="cmapwordtoob-class"></a>CMapWordToOb sınıfı
 
-16 bit sözcüklerle anahtarlanan `CObject` işaretçilerin haritalarını destekler.
+`CObject`16 bit sözcüklerle anahtarlanan işaretçilerin haritalarını destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,7 +53,7 @@ class CMapWordToOb : public CObject
 
 ## <a name="members"></a>Üyeler
 
-`CMapWordToOb` üye işlevleri [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CMapStringToOb` başvuru belgelerini kullanabilirsiniz. Bir işlev parametresi veya dönüş değeri olarak **char** için `CString` ya da **const** işaretçisi gördüğünüz her yerde, sözcüğünü değiştirin.
+Öğesinin üye işlevleri `CMapWordToOb` [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, `CMapStringToOb` üye işlevi özellikleri için başvuru belgelerini kullanabilirsiniz. Bir `CString` **`const`** işlev parametresi veya dönüş değeri olarak bir işaretçisi veya bir işaretçi Gördüğünüz her yerde **`char`** , sözcüğünü değiştirin.
 
 `BOOL CMapWordToOb::Lookup( WORD <key>, CObject*& <rValue> ) const;`
 
@@ -63,13 +63,13 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CMapWordToOb:: CMapWordToOb](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CMapWordToOb:: GetCount](../../mfc/reference/cmapstringtoob-class.md#getcount)|Bu haritadaki öğelerin sayısını döndürür.|
 |[CMapWordToOb:: GetHashTableSize](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Karma tablodaki geçerli öğe sayısını belirler.|
@@ -87,19 +87,19 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMapWordToOb:: operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map içine bir öğe ekler — `SetAt`için işleç değiştirme.|
+|[CMapWordToOb:: işleci \[\]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map içine bir öğe ekler — için işleç değiştirme `SetAt` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapWordToOb`, öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu içerir. Bir eşleme bir arşive depolanıyorsa, aşırı yüklenmiş ekleme ( **<<** ) işleci veya `Serialize` member işleviyle birlikte her öğe sırayla serileştirilir.
+`CMapWordToOb`öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu ekler. Her bir öğe, aşırı yüklenmiş ekleme ( **<<** ) işleci veya member işlevi ile bir arşive depolanıyorsa, her öğe sırayla serileştirilir `Serialize` .
 
-Tek sözcük `CObject` öğelerinin bir dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+Tek sözcük öğelerinin bir dökümünden birine ihtiyacınız varsa `CObject` , döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-`CMapWordToOb` nesne silindiğinde veya öğeleri kaldırıldığında, `CObject` işaretçileri kaldırılır. `CObject` işaretçileri tarafından başvurulan nesneler yok edilmez.
+Bir `CMapWordToOb` nesne silindiğinde veya öğeleri kaldırıldığında `CObject` işaretçiler kaldırılır. `CObject`İşaretçilerin başvurduğu nesneler yok edilmez.
 
-`CMapWordToOb`hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
+Hakkında daha fazla bilgi için `CMapWordToOb` bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -113,5 +113,5 @@ Tek sözcük `CObject` öğelerinin bir dökümünü almanız gerekiyorsa, dök�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

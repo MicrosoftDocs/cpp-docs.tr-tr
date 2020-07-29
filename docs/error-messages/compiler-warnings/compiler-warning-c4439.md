@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4439
 ms.assetid: 9449958f-f407-4824-829b-9e092f2af97d
-ms.openlocfilehash: c125fa84119c62e3090611c9a841f46eee759711
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: baf74733c94fdb03f130d2300d0918845cc4de4c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165216"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223336"
 ---
 # <a name="compiler-warning-c4439"></a>Derleyici Uyarısı C4439
 
 ' function ': İmzada yönetilen bir tür olan işlev tanımı __clrcall çağrı kuralına sahip olmalıdır
 
-Derleyici bir çağırma kuralını örtük olarak [__clrcall](../../cpp/clrcall.md)ile değiştirdi. Bu uyarıyı çözmek için `__cdecl` veya çağırma kuralını `__stdcall` kaldırın.
+Derleyici bir çağırma kuralını örtük olarak ile değiştirdi [`__clrcall`](../../cpp/clrcall.md) . Bu uyarıyı çözmek için **`__cdecl`** veya **`__stdcall`** çağırma kuralını kaldırın.
 
-C4439 her zaman bir hata olarak verilir. Bu uyarıyı `#pragma warning` veya **/WD**; ile devre dışı bırakabilirsiniz. daha fazla bilgi için bkz. [Warning](../../preprocessor/warning.md) [;/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/duvar,/WD,/we,/Wo,/WV,/WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md) .
+C4439 her zaman bir hata olarak verilir. Bu uyarıyı veya ile devre dışı bırakabilirsiniz `#pragma warning` **`/wd`** ; daha fazla bilgi için bkz. [Warning](../../preprocessor/warning.md) veya [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/duvar,/WD,/we,/Wo,/WV,/WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md) .
 
 ## <a name="example"></a>Örnek
 

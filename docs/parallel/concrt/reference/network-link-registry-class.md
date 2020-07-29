@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - network_link_registry class
 ms.assetid: 3e7b4097-09f1-4252-964e-b15b8f7f7fc6
-ms.openlocfilehash: 430190c11ec06a4f26eb9d8c4237552848420ad7
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 18fabd0e741c144201f299271cdd01eb9ac55fac
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77138883"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222686"
 ---
 # <a name="network_link_registry-class"></a>network_link_registry Sınıfı
 
-`network_link_registry` soyut temel sınıfı, kaynak ve hedef bloklar arasındaki bağlantıları yönetir.
+`network_link_registry`Soyut temel sınıf, kaynak ve hedef bloklar arasındaki bağlantıları yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class _Block>
@@ -33,7 +33,7 @@ class network_link_registry;
 ### <a name="parameters"></a>Parametreler
 
 *_Block*<br/>
-`network_link_registry`tutulan blok veri türü.
+İçinde depolanmakta olan blok veri türü `network_link_registry` .
 
 ## <a name="members"></a>Üyeler
 
@@ -41,24 +41,24 @@ class network_link_registry;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`const_pointer`|Bir `network_link_registry` nesnesindeki `const` öğeye işaretçi sağlayan bir tür.|
-|`const_reference`|Const işlemlerini okumak ve gerçekleştirmek için bir `network_link_registry` nesnesinde depolanan `const` bir öğeye başvuru sağlayan bir tür.|
-|`iterator`|Bir `network_link_registry` nesnesindeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir yineleyici sağlayan bir tür.|
-|`type`|`network_link_registry` nesnesinde depolanan blok türünü temsil eden bir tür.|
+|`const_pointer`|Bir nesne içindeki bir öğeye işaretçi sağlayan bir tür **`const`** `network_link_registry` .|
+|`const_reference`|**`const`** `network_link_registry` Const işlemlerini okumak ve gerçekleştirmek için bir nesnesinde depolanan öğeye başvuru sağlayan bir tür.|
+|`iterator`|Bir nesne içindeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir yineleyici sağlayan bir tür `network_link_registry` .|
+|`type`|Nesnesinde depolanan blok türünü temsil eden bir tür `network_link_registry` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[add](#add)|Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesnesine bir bağlantı ekler.|
-|[başladı](#begin)|Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesnesindeki ilk öğeye bir yineleyici döndürür.|
-|[vardır](#contains)|Türetilmiş bir sınıfta geçersiz kılınırsa, belirtilen blok için `network_link_registry` nesnesini arar.|
-|[count](#count)|Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesnesindeki öğe sayısını döndürür.|
-|[remove](#remove)|Türetilmiş bir sınıfta geçersiz kılındığında, belirtilen bloğu `network_link_registry` nesnesinden kaldırır.|
+|[add](#add)|Türetilmiş bir sınıfta geçersiz kılınırsa, nesnesine bir bağlantı ekler `network_link_registry` .|
+|[başladı](#begin)|Türetilmiş bir sınıfta geçersiz kılınırsa, nesne içindeki ilk öğeye bir yineleyici döndürür `network_link_registry` .|
+|[vardır](#contains)|Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesneyi belirtilen bir blok için arar.|
+|[biriktirme](#count)|Türetilmiş bir sınıfta geçersiz kılınırsa, nesne içindeki öğe sayısını döndürür `network_link_registry` .|
+|[temizlenmesine](#remove)|Türetilmiş bir sınıfta geçersiz kılındığında, belirtilen bloğu `network_link_registry` nesnesinden kaldırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`network link registry` eşzamanlı erişim için güvenli değildir.
+, `network link registry` Eşzamanlı erişim için güvenli değildir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -70,9 +70,9 @@ class network_link_registry;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="add"></a>ekleyemiyorum
+## <a name="add"></a><a name="add"></a>ekleyemiyorum
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesnesine bir bağlantı ekler.
+Türetilmiş bir sınıfta geçersiz kılınırsa, nesnesine bir bağlantı ekler `network_link_registry` .
 
 ```cpp
 virtual void add(_EType _Link) = 0;
@@ -83,9 +83,9 @@ virtual void add(_EType _Link) = 0;
 *_Link*<br/>
 Eklenecek bloğa yönelik bir işaretçi.
 
-## <a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a>başladı
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesnesindeki ilk öğeye bir yineleyici döndürür.
+Türetilmiş bir sınıfta geçersiz kılınırsa, nesne içindeki ilk öğeye bir yineleyici döndürür `network_link_registry` .
 
 ```cpp
 virtual iterator begin() = 0;
@@ -93,15 +93,15 @@ virtual iterator begin() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`network_link_registry` nesnesindeki ilk öğeyi adresleyen bir yineleyici.
+Nesnedeki ilk öğeyi adresleyen bir yineleyici `network_link_registry` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyicinin bitiş durumu bir `NULL` bağlantısıyla belirtilir.
+Yineleyicinin bitiş durumu bir bağlantı ile belirtilir `NULL` .
 
-## <a name="contains"></a>vardır
+## <a name="contains"></a><a name="contains"></a>vardır
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, belirtilen blok için `network_link_registry` nesnesini arar.
+Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesneyi belirtilen bir blok için arar.
 
 ```cpp
 virtual bool contains(_EType _Link) = 0;
@@ -110,15 +110,15 @@ virtual bool contains(_EType _Link) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *_Link*<br/>
-`network_link_registry` nesnesinde aranmakta olan bloğa yönelik bir işaretçi.
+Nesnede aranmakta olan bloğa yönelik bir işaretçi `network_link_registry` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-blok bulunursa **true** , aksi takdirde **false** .
+**`true`** blok bulunursa, **`false`** tersi durumda.
 
-## <a name="count"></a>biriktirme
+## <a name="count"></a><a name="count"></a>biriktirme
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, `network_link_registry` nesnesindeki öğe sayısını döndürür.
+Türetilmiş bir sınıfta geçersiz kılınırsa, nesne içindeki öğe sayısını döndürür `network_link_registry` .
 
 ```cpp
 virtual size_t count() = 0;
@@ -126,9 +126,9 @@ virtual size_t count() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`network_link_registry` nesnesindeki öğelerin sayısı.
+Nesnedeki öğelerin sayısı `network_link_registry` .
 
-## <a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a>temizlenmesine
 
 Türetilmiş bir sınıfta geçersiz kılındığında, belirtilen bloğu `network_link_registry` nesnesinden kaldırır.
 
@@ -143,10 +143,10 @@ Bulunursa, kaldırılacak bloğa yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-bağlantı bulunursa ve kaldırılırsa **doğru** , aksi takdirde **yanlış** olur.
+**`true`** bağlantı bulunursa ve kaldırılırsa, **`false`** tersi durumda.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[single_link_registry Sınıfı](single-link-registry-class.md)<br/>
-[multi_link_registry Sınıfı](multi-link-registry-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[single_link_registry sınıfı](single-link-registry-class.md)<br/>
+[multi_link_registry sınıfı](multi-link-registry-class.md)

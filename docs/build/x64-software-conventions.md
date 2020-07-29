@@ -5,12 +5,12 @@ helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-ms.openlocfilehash: 11d29b6c31ccecfe5b9c51c2f9311213bd4a6732
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 4755cfcf98c9eadbd944e06a56f86ca89a33b0a3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417196"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223778"
 ---
 # <a name="x64-software-conventions"></a>x64 yazılım kuralları
 
@@ -18,13 +18,13 @@ Bu bölümde, x86 mimarisinin 64 bitlik uzantısı olan x64 için C++ çağırma
 
 ## <a name="overview-of-x64-calling-conventions"></a>X64 çağırma kurallarına genel bakış
 
-X86 ve x64 arasındaki iki önemli fark, genel kullanıma yönelik olarak 64-bit adresleme özelliğidir ve düz bir 16 64 bit kayıt kümesidir. Genişletilmiş yazmaç kümesi verildiğinde, x64 [__fastcall](../cpp/fastcall.md) çağırma KURALıNı ve RISC tabanlı özel durum işleme modelini kullanır. `__fastcall` Kural, ilk dört bağımsız değişken için Yazmaçları ve ek bağımsız değişkenler geçirmek için yığın çerçevesini kullanır. Kullanım kaydetme, yığın parametreleri, dönüş değerleri ve yığın geri sarma dahil olmak üzere x64 çağırma kuralına ilişkin ayrıntılar için bkz. [x64 çağırma kuralı](x64-calling-convention.md).
+X86 ve x64 arasındaki iki önemli fark, genel kullanıma yönelik olarak 64-bit adresleme özelliğidir ve düz bir 16 64 bit kayıt kümesidir. Genişletilmiş yazmaç kümesi verildiğinde, x64 [__fastcall](../cpp/fastcall.md) çağırma KURALıNı ve RISC tabanlı özel durum işleme modelini kullanır. **`__fastcall`** Kural, ilk dört bağımsız değişken için Yazmaçları ve ek bağımsız değişkenler geçirmek için yığın çerçevesini kullanır. Kullanım kaydetme, yığın parametreleri, dönüş değerleri ve yığın geri sarma dahil olmak üzere x64 çağırma kuralına ilişkin ayrıntılar için bkz. [x64 çağırma kuralı](x64-calling-convention.md).
 
 ## <a name="enable-optimization-for-x64"></a>X64 için iyileştirmeyi etkinleştir
 
 Aşağıdaki derleyici seçeneği, uygulamanızı x64 için iyileştirmenize yardımcı olur:
 
-- [/favor (Mimari Özellikleri için İyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)
+- [/İyileştir (mimari özellikleri için Iyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)
 
 ## <a name="types-and-storage"></a>Türler ve depolama
 
@@ -47,19 +47,19 @@ Herhangi bir hizalama ile verilere erişmek mümkün olsa da, performans kaybın
 |||||
 |-|-|-|-|
 |Skaler tür|C veri türü|Depolama boyutu (bayt)|Önerilen hizalama|
-|**INT8**|**char**|1|Bayt|
-|**UINT8**|**unsigned char**|1|Bayt|
-|**INT16**|**short**|2|Word|
-|**INT16**|**imzasız short**|2|Word|
-|**INT32**|**int**, **Long**|4|Doubleword|
+|**INT8**|**`char`**|1|Bayt|
+|**UINT8**|**`unsigned char`**|1|Bayt|
+|**INT16**|**`short`**|2|Word|
+|**INT16**|**`unsigned short`**|2|Word|
+|**INT32**|**`int`**, **`long`**|4|Doubleword|
 |**INT32**|**işaretsiz int, imzasız Long**|4|Doubleword|
-|**INT64**|**__int64**|8|Dört kelime|
+|**INT64**|**`__int64`**|8|Dört kelime|
 |**INT64**|**imzasız __int64**|8|Dört kelime|
-|**FP32 (tek duyarlık)**|**float**|4|Doubleword|
-|**FP64 (çift duyarlık)**|**double**|8|Dört kelime|
+|**FP32 (tek duyarlık)**|**`float`**|4|Doubleword|
+|**FP64 (çift duyarlık)**|**`double`**|8|Dört kelime|
 |**ÇAĞRıSı**|__\*__|8|Dört kelime|
-|**__m64**|**struct __m64**|8|Dört kelime|
-|**__m128**|**struct __m128**|16|Octaword|
+|**`__m64`**|**struct __m64**|8|Dört kelime|
+|**`__m128`**|**struct __m128**|16|Octaword|
 
 ### <a name="aggregates-and-unions"></a>Toplamalar ve birleşimler
 
@@ -82,19 +82,19 @@ Aşağıdaki tabloda, birleşimlerin ve yapıların skaler üyeleri için öneri
 ||||
 |-|-|-|
 |Skaler tür|C veri türü|Gerekli hizalama|
-|**INT8**|**char**|Bayt|
-|**UINT8**|**unsigned char**|Bayt|
-|**INT16**|**short**|Word|
-|**INT16**|**imzasız short**|Word|
-|**INT32**|**int**, **Long**|Doubleword|
+|**INT8**|**`char`**|Bayt|
+|**UINT8**|**`unsigned char`**|Bayt|
+|**INT16**|**`short`**|Word|
+|**INT16**|**`unsigned short`**|Word|
+|**INT32**|**`int`**, **`long`**|Doubleword|
 |**INT32**|**işaretsiz int, imzasız Long**|Doubleword|
-|**INT64**|**__int64**|Dört kelime|
+|**INT64**|**`__int64`**|Dört kelime|
 |**INT64**|**imzasız __int64**|Dört kelime|
-|**FP32 (tek duyarlık)**|**float**|Doubleword|
-|**FP64 (çift duyarlık)**|**double**|Dört kelime|
+|**FP32 (tek duyarlık)**|**`float`**|Doubleword|
+|**FP64 (çift duyarlık)**|**`double`**|Dört kelime|
 |**ÇAĞRıSı**|<strong>\*</strong>|Dört kelime|
-|**__m64**|**struct __m64**|Dört kelime|
-|**__m128**|**struct __m128**|Octaword|
+|**`__m64`**|**struct __m64**|Dört kelime|
+|**`__m128`**|**struct __m128**|Octaword|
 
 Aşağıdaki toplam hizalama kuralları geçerlidir:
 
@@ -181,7 +181,7 @@ Hizalanmamış verilerle çalışmanın iki etkileri vardır.
 
 - Hizalanmamış konumlar, birbirine kilitli işlemlerde kullanılamaz.
 
-Daha sıkı hizalama gerekiyorsa, değişken bildirimlerinde kullanın `__declspec(align(N))` . Bu, derleyicinin bir yığını belirtimlerinizi karşılayacak şekilde dinamik olarak hizalanmasına neden olur. Ancak, yığın çalışma zamanında dinamik olarak ayarlanarak uygulamanızın daha yavaş yürütülmesine neden olabilir.
+Daha sıkı hizalama gerekiyorsa, `__declspec(align(N))` değişken bildirimlerinde kullanın. Bu, derleyicinin bir yığını belirtimlerinizi karşılayacak şekilde dinamik olarak hizalanmasına neden olur. Ancak, yığın çalışma zamanında dinamik olarak ayarlanarak uygulamanızın daha yavaş yürütülmesine neden olabilir.
 
 ## <a name="register-usage"></a>Kullanımı Kaydet
 
@@ -193,7 +193,7 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları genelinde nasıl kullanı
 
 ||||
 |-|-|-|
-|Kaydettir|Durum|Kullanım|
+|Kaydettir|Durum|Kullanın|
 |RAX|Katılımcıdan|Dönüş değeri kaydı|
 |RCX|Katılımcıdan|İlk tamsayı bağımsız değişkeni|
 |RDX|Katılımcıdan|İkinci tamsayı bağımsız değişkeni|
@@ -206,12 +206,12 @@ Aşağıdaki tabloda, her kaydın işlev çağrıları genelinde nasıl kullanı
 |RBX|X|Çağrılan tarafından korunması gerekir|
 |RBP|X|, Bir çerçeve işaretçisi olarak kullanılabilir; çağrılan tarafından korunması gerekir|
 |RSP|X|Yığın işaretçisi|
-|XMM0, YMM0 ILA|Katılımcıdan|İlk FP bağımsız değişkeni; İlk vektör türü bağımsız değişken `__vectorcall` kullanıldığında|
-|XMM1, YMM1|Katılımcıdan|İkinci FP bağımsız değişkeni; kullanıldığında ikinci vektör türü bağımsız değişken `__vectorcall`|
-|XMM2, YMM2|Katılımcıdan|Üçüncü FP bağımsız değişkeni; kullanıldığında üçüncü vektör türü bağımsız değişkeni `__vectorcall`|
-|XMM3, YMM3|Katılımcıdan|Dördüncü FP bağımsız değişkeni; kullanıldığında dördüncü vektör türü bağımsız değişkeni `__vectorcall`|
-|XMM4, YMM4|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; kullanıldığında beşinci vektör türü bağımsız değişkeni `__vectorcall`|
-|XMM5, YMM5 ARASıNDA|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; kullanıldığı zaman `__vectorcall` altıncı vektör türü bağımsız değişkeni|
+|XMM0, YMM0 ILA|Katılımcıdan|İlk FP bağımsız değişkeni; İlk vektör türü bağımsız değişken **`__vectorcall`** kullanıldığında|
+|XMM1, YMM1|Katılımcıdan|İkinci FP bağımsız değişkeni; kullanıldığında ikinci vektör türü bağımsız değişken **`__vectorcall`**|
+|XMM2, YMM2|Katılımcıdan|Üçüncü FP bağımsız değişkeni; kullanıldığında üçüncü vektör türü bağımsız değişkeni **`__vectorcall`**|
+|XMM3, YMM3|Katılımcıdan|Dördüncü FP bağımsız değişkeni; kullanıldığında dördüncü vektör türü bağımsız değişkeni **`__vectorcall`**|
+|XMM4, YMM4|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; kullanıldığında beşinci vektör türü bağımsız değişkeni **`__vectorcall`**|
+|XMM5, YMM5 ARASıNDA|Katılımcıdan|Çağıranın gerektirdiği şekilde korunması gerekir; kullanıldığı zaman altıncı vektör türü bağımsız değişkeni **`__vectorcall`**|
 |XMM6:XMM15, YMM6:YMM15|Kalıcı olmayan (XMM), geçici (en büyük yarı yarım yarısı)|Aranan tarafından korunması gerekir. -MM kayıtları, çağıran tarafından gerektiği şekilde korunmalıdır.|
 
 İşlev çıkışta ve C çalışma zamanı kitaplığı çağrılarına ve Windows Sistem çağrılarına işlev girdisinde, CPU bayrakları kaydındaki yön bayrağının temizlenmesi beklenir.
@@ -240,4 +240,4 @@ X64 yürütülebilir görüntü biçimi PE32 + ' dır. Yürütülebilir görünt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çağırma Kuralları](../cpp/calling-conventions.md)
+[Çağırma kuralları](../cpp/calling-conventions.md)

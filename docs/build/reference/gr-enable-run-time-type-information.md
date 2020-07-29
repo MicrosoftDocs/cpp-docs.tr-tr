@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Gr compiler option [C++]
 - enable run-time type information compiler option [C++]
 ms.assetid: d1f9f850-dcec-49fd-96ef-e72d01148906
-ms.openlocfilehash: ee1398b2f9ee78c62fb84aa591e77708cd0d9d83
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 974a2b38c793b21abc9f17f5b7ca5c9f5e3305f5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439592"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215237"
 ---
 # <a name="gr-enable-run-time-type-information"></a>/GR (Çalışma Zamanı Türü Bilgileri Etkinleştir)
 
@@ -32,15 +32,15 @@ ms.locfileid: "79439592"
 
 **/Gr** açık olduğunda, derleyici `_CPPRTTI` önişlemci makrosunu tanımlar. Varsayılan olarak, **/gr** açık olur. **/Gr-** çalışma zamanı tür bilgilerini devre dışı bırakır.
 
-Derleyici kodunuzda bir nesne türünü statik olarak çözümleyemezse **/gr** kullanın. Kodunuzun [dynamic_cast işleci](../../cpp/dynamic-cast-operator.md) veya [TypeId](../../cpp/typeid-operator.md)kullanması durumunda genellikle **/gr** seçeneğine ihtiyacınız vardır. Ancak, **/gr** görüntünüzün. rdata bölümlerinin boyutunu artırır. Kodunuz **dynamic_cast** veya **TypeId**kullanmıyorsa, **/gr-** daha küçük bir resim üretebilir.
+Derleyici kodunuzda bir nesne türünü statik olarak çözümleyemezse **/gr** kullanın. Kodunuzun [dynamic_cast işleci](../../cpp/dynamic-cast-operator.md) veya [TypeId](../../cpp/typeid-operator.md)kullanması durumunda genellikle **/gr** seçeneğine ihtiyacınız vardır. Ancak, **/gr** görüntünüzün. rdata bölümlerinin boyutunu artırır. Kodunuz **`dynamic_cast`** veya kullanmıyorsa **`typeid`** , **/gr-** daha küçük bir resim üretebilir.
 
-Çalışma zamanı tür denetimi hakkında daha fazla bilgi için bkz.  *C++ dil başvurusunda* [çalışma zamanı türü bilgileri](../../cpp/run-time-type-information.md) .
+Çalışma zamanı tür denetimi hakkında daha fazla bilgi için bkz. *C++ dil başvurusunda* [çalışma zamanı türü bilgileri](../../cpp/run-time-type-information.md) .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **C/C++**  klasörüne tıklayın.
+1. **C/C++** klasörünü tıklatın.
 
 1. **Dil** Özellik sayfasına tıklayın.
 
@@ -52,5 +52,5 @@ Derleyici kodunuzda bir nesne türünü statik olarak çözümleyemezse **/gr** 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

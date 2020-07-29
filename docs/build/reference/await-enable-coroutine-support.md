@@ -9,24 +9,24 @@ helpviewer_keywords:
 - -await enable coroutine support [C++]
 - await enable coroutine support [C++]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
-ms.openlocfilehash: 53a6cf4b3d14ee97a324fa01f83c0d0fee61180b
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: 526216ba2ae259b53bcf77691ebd09a6152b83f0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373703"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223934"
 ---
 # <a name="await-enable-coroutine-support"></a>/await (Eş yordam desteğini etkinleştir)
 
 Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** derleyici seçeneğini kullanın.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > /await
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Await** derleyici seçeneği, C++ eş değerleri için derleyici desteğini ve **co_await**, **co_yield**ve **co_return**anahtar sözcüklerini sunar. Bu seçenek varsayılan olarak kapalıdır. Visual Studio 'da eş yordamlar için destek hakkında bilgi için bkz. [Visual Studio Ekip Blogu](https://devblogs.microsoft.com/cppblog/category/coroutine/). Eş standart teklif hakkında daha fazla bilgi için bkz. [N4628 çalışma taslağı, eş yordamın C++ uzantıları Için Teknik belirtim](https://wg21.link/n4628).
+**/Await** derleyici seçeneği, C++ eş değerleri ve, ve anahtar kelimeleri için derleyici desteği **`co_await`** sunar **`co_yield`** **`co_return`** . Bu seçenek varsayılan olarak kapalıdır. Visual Studio 'da eş yordamlar için destek hakkında bilgi için bkz. [Visual Studio Ekip Blogu](https://devblogs.microsoft.com/cppblog/category/coroutine/). Eş standart teklif hakkında daha fazla bilgi için bkz. [N4628 çalışma taslağı, eş yordamın C++ uzantıları Için Teknik belirtim](https://wg21.link/n4628).
 
 **/Await** seçeneği Visual Studio 2015 ' den başlayarak kullanılabilir.
 

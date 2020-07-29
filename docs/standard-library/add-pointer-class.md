@@ -7,12 +7,12 @@ helpviewer_keywords:
 - add_pointer class
 - add_pointer
 ms.assetid: d8095cb0-6578-4143-b78f-87f82485298c
-ms.openlocfilehash: 8adeffd0352d04fe844b286ea7456c66e907a0a7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 74e8cf037f8adfb6fdd9338c3cd95e2363f8de75
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619258"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222621"
 ---
 # <a name="add_pointer-class"></a>add_pointer Sınıfı
 
@@ -35,7 +35,7 @@ Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-TypeDef öğesi **typedef** `type` , ile aynı türü adlandırır `remove_reference<T>::type*` . Diğer ad, `add_pointer_t` **typedef** üyesine erişmek için bir kısayoldur `type` .
+Üye **`typedef`** `type` adı aynı türde `remove_reference<T>::type*` . Diğer ad, `add_pointer_t` üyeye erişmek için bir kısayoldur **`typedef`** `type` .
 
 Bir başvurudan işaretçi yapmak için geçersiz olduğundan, `add_pointer` türü bir işaretçi yapmadan önce belirtilen türden bir başvuruyu kaldırır. Sonuç olarak, türün `add_pointer` bir başvuru olup olmadığı konusunda endişe duymadan bir türü kullanabilirsiniz.
 

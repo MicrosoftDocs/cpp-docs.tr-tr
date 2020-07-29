@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: f51b0210fff4db5be359fa94237f4d7c77b4fef2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 185517720af7e61f6a04068e8868d258a51f262f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214896"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215328"
 ---
 # <a name="custom-c"></a>özel (C++)
 
 Tür kitaplığındaki bir nesne için meta verileri tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ custom(
@@ -31,12 +31,12 @@ Tür kitaplığındaki bir nesne için meta verileri tanımlar.
 *uuid*<br/>
 Benzersiz bir KIMLIK.
 
-*value*<br/>
+*deeri*<br/>
 Bir varyanta koyabileceğiniz bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Özel** C++ öznitelik, bilgilerin tür kitaplığına yerleştirilmesine neden olur. Tür kitaplığından özel değeri okuyan bir araca ihtiyacınız olacak.
+**Özel** C++ özniteliği, bilgilerin tür kitaplığına yerleştirilmesine neden olur. Tür kitaplığından özel değeri okuyan bir araca ihtiyacınız olacak.
 
 **Özel** öznitelik [özel](/windows/win32/Midl/custom) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
@@ -46,7 +46,7 @@ Bir varyanta koyabileceğiniz bir değer.
 
 |||
 |-|-|
-|**Uygulama hedefi**|COM dışı **arabirim**, **sınıf**, **enum**s, `idl_module` yöntemleri, arabirim üyeleri, arabirim parametreleri, **typedef**, **birleşim**s, **Yapı**s|
+|**Şunlara uygulanır**|COM olmayan **arabirim**, **`class`** , **`enum`** s, `idl_module` Yöntemler, arabirim üyeleri, arabirim parametreleri, **`typedef`** **`union`** **`struct`** s, s, s|
 |**Tekrarlanabilir**|Yes|
 |**Gerekli öznitelikler**|**coclass** (sınıfında kullanıldığında)|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -56,9 +56,9 @@ Bir varyanta koyabileceğiniz bir değer.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Arabirim Öznitelikleri](interface-attributes.md)
+[Tek başına öznitelikler](stand-alone-attributes.md)<br/>
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[Parametre öznitelikleri](parameter-attributes.md)<br/>
+[Yöntem öznitelikleri](method-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[Arabirim öznitelikleri](interface-attributes.md)

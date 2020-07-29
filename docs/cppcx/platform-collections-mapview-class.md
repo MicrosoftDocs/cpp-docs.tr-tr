@@ -1,5 +1,5 @@
 ---
-title: Platform::Koleksiyonlar::MapView Sınıfı
+title: 'Platform:: Collections:: MapView Sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: 98c146cec2febefee9c16528bee8f6be83f2a026
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: 6c50825cb3003c2b1b63a25419ca67742c92b52f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032440"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215003"
 ---
-# <a name="platformcollectionsmapview-class"></a>Platform::Koleksiyonlar::MapView Sınıfı
+# <a name="platformcollectionsmapview-class"></a>Platform:: Collections:: MapView Sınıfı
 
-Anahtar değeri çiftleri topluluğu olan *bir haritaya*salt okunur görünümü temsil eder.
+Anahtar-değer çiftleri koleksiyonu olan bir *haritada*salt okunurdur görünümü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <
@@ -35,36 +35,36 @@ ref class MapView sealed;
 
 #### <a name="parameters"></a>Parametreler
 
-*Kahraman*<br/>
-Anahtar değeri çiftindeki anahtarın türü.
+*K*<br/>
+Anahtar-değer çiftindeki anahtar türü.
 
 *V*<br/>
-Anahtar değeri çiftindeki değerin türü.
+Anahtar-değer çiftindeki değerin türü.
 
-*C*<br/>
-MapView'daki göreli sıralarını belirlemek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak, [std::daha\<az K>](../standard-library/less-struct.md).
+*,*<br/>
+İki öğe değerini eşleme anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak [std:: less \<K> ](../standard-library/less-struct.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
-MapView, Windows'un somut bir C++ [uygulamasıdır::Hazırlık::Koleksiyonlar::IMapView \<K,V>](/uwp/api/windows.foundation.collections.imapview-2) arabirimi, uygulama ikili arabirimi (ABI) üzerinden geçirilir. Daha fazla bilgi için [Bkz. Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
+MapView, uygulama ikili arabirimi (ABı) arasında geçirilen [Windows:: Foundation:: Collections:: \<K,V> ımapview](/uwp/api/windows.foundation.collections.imapview-2) arabiriminin somut bir C++ uygulamasıdır. Daha fazla bilgi için bkz. [Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[MapView::MapView](#ctor)|MapView sınıfının yeni bir örneğini başolarak karşılar.|
+|[MapView:: MapView](#ctor)|MapView sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[MapView::İlk](#first)|Harita görünümündeki ilk öğeye başharflendirilen bir yineleyici döndürür.|
-|[MapView::HasKey](#haskey)|Geçerli MapView'in belirtilen anahtarı bulunup içermediğini belirler.|
-|[MapView::Arama](#lookup)|Geçerli MapView nesnesinde belirtilen anahtardaki öğeyi alır.|
-|[MapView::Boyut](#size)|Geçerli MapView nesnesindeki öğe sayısını verir.|
-|[MapView::Bölme](#split)|Özgün bir MapView nesnesine iki MapView nesnesi bölünür.|
+|[MapView:: First](#first)|Harita görünümündeki ilk öğeye başlatılan bir yineleyici döndürür.|
+|[MapView:: HasKey](#haskey)|Geçerli MapView 'ın belirtilen anahtarı içerip içermediğini belirler.|
+|[MapView:: Lookup](#lookup)|Geçerli MapView nesnesinde belirtilen anahtardaki öğeyi alır.|
+|[MapView:: size](#size)|Geçerli MapView nesnesindeki öğe sayısını döndürür.|
+|[MapView:: Split](#split)|Orijinal bir MapView nesnesini iki MapView nesnesine böler.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -72,13 +72,13 @@ MapView, Windows'un somut bir C++ [uygulamasıdır::Hazırlık::Koleksiyonlar::I
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** collection.h
+**Üstbilgi:** Collection. h
 
-**Ad alanı:** Platform::Koleksiyonlar
+**Ad alanı:** Platform:: Collections
 
-## <a name="mapviewfirst-method"></a><a name="first"></a>MapView::İlk Yöntem
+## <a name="mapviewfirst-method"></a><a name="first"></a>MapView:: First yöntemi
 
-Harita görünümünde ilk öğeyi belirten bir yineleyici döndürür.
+Harita görünümündeki ilk öğeyi belirten bir yineleyici döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -93,13 +93,13 @@ Harita görünümündeki ilk öğeyi belirten bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-First() tarafından döndürülen yineleyiciyi tutmanın kullanışlı bir yolu, otomatik **tür** kesintisi anahtar sözcüğüyle birlikte bildirilen bir değişkene iade değerini atamaktır. Örneğin, `auto x = myMapView->First();`.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **`auto`** tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myMapView->First();`.
 
-## <a name="mapviewhaskey-method"></a><a name="haskey"></a>MapView::HasKey Yöntemi
+## <a name="mapviewhaskey-method"></a><a name="haskey"></a>MapView:: HasKey yöntemi
 
-Geçerli MapView'in belirtilen anahtarı bulunup içermediğini belirler.
+Geçerli MapView 'ın belirtilen anahtarı içerip içermediğini belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -109,17 +109,17 @@ bool HasKey(K key);
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-MapView öğesini bulmak için kullanılan anahtar. *Anahtar* türü *k*türüdür.
+MapView öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-anahtar bulunursa **doğru;** aksi takdirde, **yanlış**.
+**`true`** anahtar bulunursa; Aksi takdirde, **`false`** .
 
-## <a name="mapviewlookup-method"></a><a name="lookup"></a>MapView::Arama Yöntemi
+## <a name="mapviewlookup-method"></a><a name="lookup"></a>MapView:: Lookup yöntemi
 
-Belirtilen K türünün anahtarıyla ilişkili V türünün değerini alır.
+K türünde belirtilen anahtarla ilişkilendirilen V türü değerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 V Lookup(K key);
@@ -128,17 +128,17 @@ V Lookup(K key);
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-MapView'daki bir öğeyi bulmak için kullanılan anahtar. Türü `key` k *türüdür.*
+MapView içindeki bir öğeyi bulmak için kullanılan anahtar. Türü `key` TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`key`' ile eşleştirilmiş olan değer. İade değerinin türü *V*türüdür.
+İle eşleştirilmiş değer `key` . Dönüş değerinin türü, TypeName *V*.
 
-## <a name="mapviewmapview-constructor"></a><a name="ctor"></a>MapView::MapView Oluşturucu
+## <a name="mapviewmapview-constructor"></a><a name="ctor"></a>MapView:: MapView Oluşturucusu
 
-MapView sınıfının yeni bir örneğini başolarak karşılar.
+MapView sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 explicit MapView(const C& comp = C());
@@ -159,27 +159,27 @@ MapView(
 
 ### <a name="parameters"></a>Parametreler
 
-*ınit*<br/>
-Geçerli MapView'in yazı adı.
+*Dengeleyici*<br/>
+Geçerli MapView typeName.
 
-*Comp*<br/>
-MapView'daki göreli sıralarını belirlemek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi.
+*inin*<br/>
+Eşleme anahtarları olarak iki öğe değerini karşılaştıran bir işlev nesnesi, MapView içinde göreli sıralarını tespit edebilir.
 
-*M*<br/>
-Geçerli MapView'ı başlatmak `map Class` için kullanılan bir başvuru veya [Lvalues ve Rvalues.](../cpp/lvalues-and-rvalues-visual-cpp.md)
+*m*<br/>
+Geçerli MapView 'u başlatmak için kullanılan bir başvuru veya [lvalues ve rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) `map Class` .
 
-*Ilk*<br/>
-Geçerli MapView'i başlatmada kullanılan bir dizi öğedeki ilk öğenin giriş yineleyicisi.
+*adı*<br/>
+Geçerli MapView 'ı başlatmak için kullanılan öğe aralığındaki ilk öğenin giriş yineleyicisi.
 
-*Son*<br/>
-Geçerli MapView'i başlatmada kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
+*soyadına*<br/>
+Geçerli MapView 'ı başlatmak için kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
 
-*ıl*<br/>
-Bir [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) olan elemanları MapView eklenecektir.
+*Demiryolu*<br/>
+Bir [std:: initializer_list \<K,V> ><std:](../standard-library/initializer-list-class.md) öğeleri MapView içine eklenecek olan:p AIR.
 
-## <a name="mapviewsize-method"></a><a name="size"></a>MapView::Boyut Yöntemi
+## <a name="mapviewsize-method"></a><a name="size"></a>MapView:: size yöntemi
 
-Geçerli MapView nesnesindeki öğe sayısını verir.
+Geçerli MapView nesnesindeki öğe sayısını döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -189,13 +189,13 @@ virtual property unsigned int Size;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli MapView'daki öğelerin sayısı.
+Geçerli MapView içindeki öğe sayısı.
 
-## <a name="mapviewsplit-method"></a><a name="split"></a>MapView::Bölme Yöntemi
+## <a name="mapviewsplit-method"></a><a name="split"></a>MapView:: Split yöntemi
 
-Geçerli MapView nesnesini iki MapView nesnesine böler. Bu yöntem çalışmıyor.
+Geçerli MapView nesnesini iki MapView nesnesine böler. Bu yöntem işlemsel değil.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void Split(
@@ -207,16 +207,16 @@ void Split(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilkBölüm*<br/>
-Orijinal MapView nesnesinin ilk bölümü.
+*Ilkbölüm*<br/>
+Özgün MapView nesnesinin ilk bölümü.
 
 *secondPartition*<br/>
-Orijinal MapView nesnesinin ikinci bölümü.
+Özgün MapView nesnesinin ikinci bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem işlevsel değildir; Hiçbir şey yapmaz.
+Bu yöntem işlemsel değil; hiçbir şey yapmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform İsim Alanı](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

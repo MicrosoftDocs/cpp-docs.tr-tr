@@ -9,16 +9,16 @@ helpviewer_keywords:
 - -constexpr control constexpr evaluation [C++]
 - constexpr control constexpr evaluation [C++]
 ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
-ms.openlocfilehash: 4d3f33a64dcebfc40778f81354cb5067a5239ace
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: 7b3ae1cd732fe1ec234e2734ea4c6fa86db9d5af
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825597"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223869"
 ---
 # <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (Constexpr değerlendirmesini denetle)
 
-Derleme zamanında **constexpr** değerlendirmesinin parametrelerini denetlemek için **/constexpr** derleyici seçeneklerini kullanın.
+Derleme zamanında değerlendirme parametrelerini denetlemek için **/constexpr** derleyici seçeneklerini kullanın **`constexpr`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,17 +26,17 @@ Derleme zamanında **constexpr** değerlendirmesinin parametrelerini denetlemek 
 > **/constexpr: backtrace**<em>N</em>\
 > **/constexpr: adım**<em>N</em>
 
-## <a name="arguments"></a>Bağımsız Değişkenler
+## <a name="arguments"></a>Arguments
 
-**derinlik**<em>n</em> özyinelemeli **constexpr** işlevi çağırma derinliğini *N* düzeylere sınırlayın. Varsayılan değer 512 ' dir.
+**derinlik**<em>n</em> özyinelemeli **`constexpr`** işlev çağırma derinliğini *N* düzeylerine göre sınırlandırın. Varsayılan değer 512 ' dir.
 
-**backtrace**<em>n</em> tanılamalarda en fazla *N* **constexpr** değerlendirmesi görüntüleyin. Varsayılan değer 10 ' dur.
+**backtrace**<em>n</em> tanılamalarda en fazla *N* **`constexpr`** değerlendirme gösterir. Varsayılan değer 10 ' dur.
 
-**adım**<em>n adımdan</em> sonra **constexpr** değerlendirmesini *N* sonlandırın. Varsayılan değer 100.000 ' dir.
+**adım**<em>n</em> **`constexpr`** adımdan sonra değerlendirmeyi *N* sonlandırın. Varsayılan değer 100.000 ' dir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Constexpr** derleyici seçenekleri, **constexpr** ifadelerinin derleme zamanı değerlendirmesini denetler. Derleyicinin **constexpr** değerlendirmesinde çok fazla zaman harcamasını engellemek için değerlendirme adımları, özyineleme düzeyleri ve geri izleme derinliği denetlenir. **Constexpr** dil öğesi hakkında daha fazla bilgi için bkz. [constexpr (C++)](../../cpp/constexpr-cpp.md).
+**/Constexpr** derleyici seçenekleri, ifadelerin derleme zamanı değerlendirmesini denetler **`constexpr`** . Derleyicinin değerlendirmede çok fazla zaman harcamasını engellemek için değerlendirme adımları, özyineleme düzeyleri ve geri izleme derinliği denetlenir **`constexpr`** . Dil öğesi hakkında daha fazla bilgi için **`constexpr`** bkz. [constexpr (C++)](../../cpp/constexpr-cpp.md).
 
 **/Constexpr** seçenekleri Visual Studio 2015 ' den başlayarak kullanılabilir.
 
@@ -54,5 +54,5 @@ Derleme zamanında **constexpr** değerlendirmesinin parametrelerini denetlemek 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

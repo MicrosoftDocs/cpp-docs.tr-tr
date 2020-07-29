@@ -24,28 +24,28 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: 7eb3db1e359349eaf5125a6c8a46a3ac7d847f2f
-ms.sourcegitcommit: 46d24d6e70c03e05484923d9efc6ed5150e96a64
+ms.openlocfilehash: 238e5533c062678c59b61ebeba71eee3231fb5fb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68915478"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215224"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob (Satır İçi İşlev Genişletmesi)
 
-İşlevlerin satır içi genişletmesini denetler. Varsayılan olarak, iyileştirildiğinde, genişletme derleyicinin tüm işlevlerde (genellikle *Otomatik*olarak ifade edilir) meydana gelir.
+İşlevlerin satır içi genişletmesini denetler. Varsayılan olarak, *iyileştirildiğinde*, genişletme derleyicinin tüm işlevlerde (genellikle otomatik olarak ifade edilir) meydana gelir.
 
 ## <a name="syntax"></a>Sözdizimi
 
 ::: moniker range=">=vs-2019"
 
-> **/Ob** {**0**|12|**3**}|
+> **/Ob**{**0** | **1** | **2** | **3**}
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-> **/Ob** {**0**|12|}
+> **/Ob**{**0** | **1** | **2**}
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ ms.locfileid: "68915478"
 [/Od](od-disable-debug.md)altındaki varsayılan değer. Satır içi genişleimleri devre dışı bırakır.
 
 **1**\
-Yalnızca [satır içi](../../cpp/inline-functions-cpp.md), [__inline](../../cpp/inline-functions-cpp.md)veya [__forceinline](../../cpp/inline-functions-cpp.md)olarak işaretlenen işlevlerin genişlemesine veya sınıf bildiriminde tanımlanan C++ bir üye işleve izin verir.
+Yalnızca [satır içi](../../cpp/inline-functions-cpp.md), [__inline](../../cpp/inline-functions-cpp.md)ya da [__forceinline](../../cpp/inline-functions-cpp.md)veya bir sınıf bildiriminde tanımlanan C++ üye işlevinde yalnızca bir şekilde işaretlenmiş işlevlerin genişlemesine izin verir.
 
 **iki**\
 [/O1](o1-o2-minimize-size-maximize-speed.md) ve [/O2](o1-o2-minimize-size-maximize-speed.md)altındaki varsayılan değer. Derleyicinin hiçbir satır için açıkça işaretlenmemiş herhangi bir işlevi genişletmesine izin verir.
@@ -69,18 +69,18 @@ Bu seçenek **/Ob2**' den daha agresif bir giriş belirtir, ancak aynı kısıtl
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. Herhangi bir işlevin satır içi olarak genişletilmeyeceği garantisi yoktur. Satır içi genişleimleri devre dışı bırakabilirsiniz ancak, `__forceinline` anahtar sözcüğü kullanılırken bile derleyiciyi belirli bir işlevi satır içi olarak zorlayamaz.
+Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. Herhangi bir işlevin satır içi olarak genişletilmeyeceği garantisi yoktur. Satır içi genişleimleri devre dışı bırakabilirsiniz ancak, anahtar sözcüğü kullanılırken bile derleyiciyi belirli bir işlevi satır içi olarak zorlayamaz **`__forceinline`** .
 
-İşlevlerin satır içi genişletme için aday olarak dikkate alınması dışında, [__declspec (noinline)](../../cpp/noinline.md)veya [#pragma auto_inline (off)](../../preprocessor/auto-inline.md) ve [#pragma auto_inline (on)](../../preprocessor/auto-inline.md) yönergeleriyle işaretlenmiş bir bölgeyi kullanabilirsiniz. Derleyiciye iç ipuçları sağlamanın başka bir yolu hakkında daha fazla bilgi için, [#pragma iç](../../preprocessor/intrinsic.md) yönergesine bakın.
+İşlevlerin satır içi genişletme için aday olarak dikkate alınması dışında, [__declspec (noinline)](../../cpp/noinline.md)veya [#pragma auto_inline (kapalı)](../../preprocessor/auto-inline.md) ve [#pragma auto_inline (açık)](../../preprocessor/auto-inline.md) yönergeleriyle işaretlenmiş bir bölge kullanabilirsiniz. Derleyiciye iç ipuçları sağlamanın başka bir yolu hakkında daha fazla bilgi için, [#pragma iç](../../preprocessor/intrinsic.md) yönergesine bakın.
 
 > [!NOTE]
 > Profil oluşturma testi çalıştırmalarından toplanan bilgiler, **/ob**, **/OS**veya **/ot**belirttiğiniz için, aksi takdirde geçerli olacak iyileştirmeleri geçersiz kılar. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **C/C++** optimizasyon > özellik sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **iyileştirme** özellik sayfasını seçin.
 
 1. **Satır Içi Işlev genişletme** özelliğini değiştirin.
 
@@ -88,9 +88,9 @@ Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öner
 
 **/Ob3** seçeneği, **satır içi işlev genişletme** özelliğinde kullanılamaz. **/Ob3**ayarlamak için:
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **CC++ /** komut> **satırı** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri** > **C/C++** > **komut satırı** Özellik sayfası ' nı seçin.
 
 1. **Ek seçeneklere** **/OB3** girin.
 
@@ -104,4 +104,4 @@ Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öner
 
 [/O seçenekler (kodu Iyileştirme)](o-options-optimize-code.md)\
 [MSVC derleyici seçenekleri](compiler-options.md)\
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - STL/CLR, containers
 - containers, STL/CLR
 ms.assetid: 34ca8031-2041-46b9-aed9-29082d1972ea
-ms.openlocfilehash: bfdbbeb735f98f77046790e21c19dd2d21b9d5c6
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 04ba56bf4f134ac5e9b906f7f84563c00ffe1b96
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988111"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214873"
 ---
 # <a name="stlclr-containers"></a>STL/CLR Kapsayıcıları
 
-STL/CLR kitaplığı, C++ standart kitaplıkta bulunanlara benzer kapsayıcılardan oluşur, ancak .NET Framework yönetilen ortamında çalışır. Gerçek C++ standart kitaplıkla güncel tutulmaz ve eski destek için korunur.
+STL/CLR kitaplığı, C++ standart kitaplığı 'nda bulunanlarla benzer kapsayıcılardan oluşur, ancak .NET Framework yönetilen ortamında çalışır. Gerçek C++ standart kitaplığı ile güncel tutulmamaktadır ve eski destek için korunur.
 
-Bu belge, STL/CLR 'de kapsayıcı öğelerine yönelik gereksinimler, kapsayıcılara ekleyebileceğiniz öğe türleri ve kapsayıcılardaki öğelerle birlikte sahiplik sorunları gibi kapsayıcılara genel bir bakış sağlar. Uygun olduğunda, yerel C++ standart KITAPLıK ve STL/CLR arasındaki farklılıklar bahsedilir.
+Bu belge, STL/CLR 'de kapsayıcı öğelerine yönelik gereksinimler, kapsayıcılara ekleyebileceğiniz öğe türleri ve kapsayıcılardaki öğelerle birlikte sahiplik sorunları gibi kapsayıcılara genel bir bakış sağlar. Uygun olduğunda, yerel C++ standart kitaplığı ve STL/CLR arasındaki farklılıklar bahsedilir.
 
-## <a name="requirements-for-container-elements"></a>Kapsayıcı Öğeleri için Gereksinimler
+## <a name="requirements-for-container-elements"></a>Kapsayıcı öğeleri için gereksinimler
 
 STL/CLR kapsayıcılarına yerleştirilen tüm öğelerin belirli kurallara uyması gerekir. Daha fazla bilgi için bkz. [STL/CLR kapsayıcı öğeleri Için gereksinimler](../dotnet/requirements-for-stl-clr-container-elements.md).
 
@@ -37,7 +37,7 @@ STL/CLR kapsayıcılarından herhangi birine paketlenmiş değer türleri ekleye
 
 ### <a name="handles-to-reference-types"></a>Başvuru türlerine yönelik işleyiciler
 
-Bir STL/CLR kapsayıcısına başvuru türüne bir tanıtıcı ekleyebilirsiniz. CLR 'yi hedefleyen C++ bir tanıtıcı, yerel C++içindeki bir işaretçiye benzer. Daha fazla bilgi için, bkz. [nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
+Bir STL/CLR kapsayıcısına başvuru türüne bir tanıtıcı ekleyebilirsiniz. C++ ' da CLR 'yi hedefleyen bir tanıtıcı yerel C++ ' daki bir işaretçiye benzer. Daha fazla bilgi için, bkz. [nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
 
 #### <a name="example"></a>Örnek
 
@@ -136,7 +136,7 @@ Bir STL/CLR kapsayıcısına bir başvuru türü (başvuru türüne yönelik bir
 
 #### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `cliext::set`bir çalışan nesnesinin nasıl ekleneceğini gösterir.
+Aşağıdaki örnek, bir çalışan nesnesinin ' a nasıl ekleneceğini gösterir `cliext::set` .
 
 ```cpp
 // cliext_container_valid_reference.cpp
@@ -229,11 +229,11 @@ int main()
 
 Bir STL/CLR kapsayıcısına Kutulanmamış değer türü de ekleyebilirsiniz. Kutulanmamış değer türü, başvuru türünde *kutulanmamış* bir değer türüdür.
 
-Bir değer türü öğesi, `int`gibi standart değer türlerinden biri olabilir veya `value class`gibi Kullanıcı tanımlı bir değer türü olabilir. Daha fazla bilgi için bkz. [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
+Bir değer türü öğesi, gibi standart değer türlerinden biri olabilir **`int`** veya gibi Kullanıcı tanımlı bir değer türü olabilir **`value class`** . Daha fazla bilgi için bkz. [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 #### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, çalışan sınıfını bir değer türü yaparak ilk örneği değiştirir. Bu değer türü daha sonra ilk örnekte olduğu gibi bir `cliext::set` eklenir.
+Aşağıdaki örnek, çalışan sınıfını bir değer türü yaparak ilk örneği değiştirir. Bu değer türü daha sonra `cliext::set` ilk örnekte olduğu gibi öğesine eklenir.
 
 ```cpp
 // cliext_container_valid_valuetype.cpp
@@ -312,4 +312,4 @@ Bir tutamaç nesneleri kapsayıcısının Temizleme veya silme yöntemini çağ�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

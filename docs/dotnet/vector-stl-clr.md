@@ -91,20 +91,20 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-ms.openlocfilehash: c6a001797e90bd7381358abb16612926442e8d9f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a01025732699e755a624d7f67071f575ac52ec96
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371829"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214847"
 ---
 # <a name="vector-stlclr"></a>vektör (STL/CLR)
 
-Şablon sınıfı, rasgele erişimi olan öğelerin değişen uzunluktaki dizisini kontrol eden bir nesneyi açıklar. Kapsayıcıyı, `vector` bitişik bir depolama bloğu olarak bir öğe dizisini yönetmek için kullanırsınız. Blok, isteğe bağlı olarak büyüyen bir dizi olarak uygulanır.
+Şablon sınıfı, rasgele erişimi olan öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar. `vector`Bir dizi öğeyi bitişik bir depolama bloğu olarak yönetmek için kapsayıcıyı kullanırsınız. Blok, isteğe bağlı olarak büyüyen bir dizi olarak uygulanır.
 
-Aşağıdaki açıklamada, `GValue` ikincisi bir ref türü olmadığı sürece *Değer* ile aynıdır, `Value^`bu durumda .
+Aşağıdaki açıklamada, `GValue` Ikinci *değeri* bir başvuru türü olmadığı sürece, bu örnekte olduğu gibi olur `Value^` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -127,50 +127,50 @@ Denetlenen sıradaki öğenin türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<cliext/vektör>
+**Üst bilgi:**\<cliext/vector>
 
 **Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[vector::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[vector::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
-|[vector::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenmeyen dizi için sabit bir ters yineleyici türü.|
+|[vector::const_reverse_iterator (STL/CLR)](#const_reverse_iterator)|Denetlenen sıra için bir sabit ters yineleyicinin türü.|
 |[vector::difference_type (STL/CLR)](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
-|[vector::generic_container (STL/CLR)](#generic_container)|Kapsayıcı için genel arabirimin türü.|
+|[vector::generic_container (STL/CLR)](#generic_container)|Kapsayıcının genel arabiriminin türü.|
 |[vector::generic_iterator (STL/CLR)](#generic_iterator)|Kapsayıcının genel arabirimi için bir yineleyici türü.|
-|[vector::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcının genel arabirimi için ters yineleyici türü.|
-|[vector::generic_value (STL/CLR)](#generic_value)|Kapsayıcı için genel arabirim için bir öğetürü.|
+|[vector::generic_reverse_iterator (STL/CLR)](#generic_reverse_iterator)|Kapsayıcının genel arabirimi için ters yineleyicinin türü.|
+|[vector::generic_value (STL/CLR)](#generic_value)|Kapsayıcının genel arabirimi için bir öğenin türü.|
 |[vector::iterator (STL/CLR)](#iterator)|Denetlenen dizi için bir yineleyici türü.|
 |[vector::reference (STL/CLR)](#reference)|Bir öğe için bir başvuru türü.|
-|[vector::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen dizi için ters yineleyici türü.|
+|[vector::reverse_iterator (STL/CLR)](#reverse_iterator)|Denetlenen sıra için ters yineleyicinin türü.|
 |[vector::size_type (STL/CLR)](#size_type)|İki öğe arasındaki işaretli mesafenin türü.|
 |[vector::value_type (STL/CLR)](#value_type)|Öğenin türü.|
 
 |Üye İşlevi|Açıklama|
 |---------------------|-----------------|
 |[vector::assign (STL/CLR)](#assign)|Tüm öğeleri değiştirir.|
-|[vector::at (STL/CLR)](#at)|Belirli bir konumda bir öğeye erişir.|
+|[vector::at (STL/CLR)](#at)|Belirtilen konumdaki bir öğeye erişir.|
 |[vector::back (STL/CLR)](#back)|Son öğeye erişir.|
 |[vector::begin (STL/CLR)](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[vector::capacity (STL/CLR)](#capacity)|Kapsayıcı için ayrılan depolama alanının boyutunu raporlar.|
+|[vector::capacity (STL/CLR)](#capacity)|Kapsayıcı için ayrılan depolamanın boyutunu raporlar.|
 |[vector::clear (STL/CLR)](#clear)|Tüm öğeleri kaldırır.|
 |[vector::empty (STL/CLR)](#empty)|Bir öğe olup olmadığını sınar.|
 |[vector::end (STL/CLR)](#end)|Denetlenen dizinin bitişini belirtir.|
 |[vector::erase (STL/CLR)](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
 |[vector::front (STL/CLR)](#front)|İlk öğeye erişir.|
-|[vector::insert (STL/CLR)](#insert)|Belirli bir konumda öğeleri ekler.|
+|[vector::insert (STL/CLR)](#insert)|Belirtilen konumdaki öğeleri ekler.|
 |[vector::pop_back (STL/CLR)](#pop_back)|Son öğeyi kaldırır.|
 |[vector::push_back (STL/CLR)](#push_back)|Yeni bir son öğe ekler.|
-|[vector::rbegin (STL/CLR)](#rbegin)|Ters denetimli dizinin başlangıcını belirler.|
-|[vector::rend (STL/CLR)](#rend)|Ters denetimli dizinin sonunu belirler.|
-|[vector::reserve (STL/CLR)](#reserve)|Konteyner için minimum büyüme kapasitesi sağlar.|
-|[vector::resize (STL/CLR)](#resize)|Öğelerin sayısını değiştirir.|
+|[vector::rbegin (STL/CLR)](#rbegin)|Ters denetlenen sıranın başlangıcını belirtir.|
+|[vector::rend (STL/CLR)](#rend)|Ters denetlenen sıranın sonunu belirtir.|
+|[vector::reserve (STL/CLR)](#reserve)|Kapsayıcı için en düşük büyüme kapasitesini sağlar.|
+|[vector::resize (STL/CLR)](#resize)|Öğe sayısını değiştirir.|
 |[vector::size (STL/CLR)](#size)|Öğe sayısını sayar.|
 |[vector::swap (STL/CLR)](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
-|[vector::to_array (STL/CLR)](#to_array)|Denetedilen sırayı yeni bir diziye kopyalar.|
+|[vector::to_array (STL/CLR)](#to_array)|Denetimli sırayı yeni bir diziye kopyalar.|
 |[vector::vector (STL/CLR)](#vector)|Bir kapsayıcı nesnesi oluşturur.|
 
 |Özellik|Açıklama|
@@ -180,46 +180,46 @@ Denetlenen sıradaki öğenin türü.
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|[vector::operator= (STL/CLR)](#op_as)|Denetedilen sırayı değiştirir.|
-|[vector::operator(STL/CLR)](#op)|Belirli bir konumda bir öğeye erişir.|
-|[işleç!= (vektör) (STL/CLR)](#op_neq)|Bir nesnenin `vector` başka `vector` bir nesneye eşit olup olmadığını belirler.|
-|[operatör< (vektör) (STL/CLR)](#op_lt)|Bir nesnenin `vector` başka `vector` bir nesneden küçük olup olmadığını belirler.|
-|[işleç<= (vektör) (STL/CLR)](#op_lteq)|Bir nesnenin `vector` başka `vector` bir nesneden küçük veya eşit olup olmadığını belirler.|
-|[işleç== (vektör) (STL/CLR)](#op_eq)|Bir nesnenin `vector` başka `vector` bir nesneye eşit olup olmadığını belirler.|
-|[operator> (vector) (STL/CLR)](#op_gt)|Bir nesnenin `vector` başka `vector` bir nesneden büyük olup olmadığını belirler.|
-|[işleç>= (vektör) (STL/CLR)](#op_gteq)|Bir nesnenin `vector` başka `vector` bir nesneden büyük mü yoksa eşit mi olduğunu belirler.|
+|[vector::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
+|[vector::operator(STL/CLR)](#op)|Belirtilen konumdaki bir öğeye erişir.|
+|[operator! = (vektör) (STL/CLR)](#op_neq)|Bir `vector` nesnenin başka bir nesneye eşit olup olmadığını belirler `vector` .|
+|[işleç< (vektör) (STL/CLR)](#op_lt)|Bir `vector` nesnenin başka bir nesneden daha az olup olmadığını belirler `vector` .|
+|[işleç<= (vektör) (STL/CLR)](#op_lteq)|Bir `vector` nesnenin başka bir nesneden küçük veya ona eşit olup olmadığını belirler `vector` .|
+|[operator = = (vector) (STL/CLR)](#op_eq)|Bir `vector` nesnenin başka bir nesneye eşit olup olmadığını belirler `vector` .|
+|[operator> (vector) (STL/CLR)](#op_gt)|Bir `vector` nesnenin başka bir nesneden daha büyük olup olmadığını belirler `vector` .|
+|[işleç>= (vektör) (STL/CLR)](#op_gteq)|Bir `vector` nesnenin başka bir nesneden büyük veya ona eşit olup olmadığını belirler `vector` .|
 
 ## <a name="interfaces"></a>Arabirimler
 
 |Arabirim|Açıklama|
 |---------------|-----------------|
-|<xref:System.ICloneable>|Bir nesneyi çoğaltma.|
-|<xref:System.Collections.IEnumerable>|Elementler arasında sırala.|
-|<xref:System.Collections.ICollection>|Elementler grubunu koruyun.|
-|<xref:System.Collections.Generic.IEnumerable%601>|Yazılan öğeler arasında sıralanır.|
-|<xref:System.Collections.Generic.ICollection%601>|Yazılan öğelergrubunu koruyun.|
-|<xref:System.Collections.Generic.IList%601>|Sıralı daktilan öğeler grubunu koruyun.|
-|IVector<Değeri\>|Genel kapsayıcıyı koruyun.|
+|<xref:System.ICloneable>|Bir nesneyi çoğaltın.|
+|<xref:System.Collections.IEnumerable>|Öğeler aracılığıyla sıralama.|
+|<xref:System.Collections.ICollection>|Öğe grubunu saklayın.|
+|<xref:System.Collections.Generic.IEnumerable%601>|Yazılı öğeler aracılığıyla sıralama.|
+|<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş öğelerin grubunu koruyun.|
+|<xref:System.Collections.Generic.IList%601>|Yazılı öğelerin sıralı grubunu saklayın.|
+|IVector<değeri\>|Genel kapsayıcıyı koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne, talep üzerine büyüyen depolanmış değer *öğeleri* dizisi aracılığıyla denetlediği dizi için depolama yı ayırır ve boşaltır. Büyüme, yeni bir öğeyi ekleyen maliyetin amortismana tabi sabit zaman olduğu şekilde gerçekleşir. Başka bir deyişle, denetlenen dizinin uzunluğu büyüdükçe, sonunda öğeleri ekleme maliyeti ortalama olarak artmaz. Böylece, bir vektör şablon sınıf [yığını (STL/CLR)](../dotnet/stack-stl-clr.md)için temel kapsayıcı için iyi bir adaydır.
+Nesnesi, istek üzerine büyüyerek, depolanan bir *değer* öğeleri dizisi aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Büyüme, yeni bir öğe ekleme maliyetinin, sabit zamanlı bir zaman olduğu şekilde meydana gelir. Diğer bir deyişle, son olarak öğe ekleme maliyeti, denetimli sıranın uzunluğu arttıkça ortalama artmaz. Bu nedenle, bir vektör, şablon sınıfı [yığını (STL/CLR)](../dotnet/stack-stl-clr.md)için temel alınan kapsayıcı için iyi bir adaydır.
 
-Rasgele `vector` erişim yineleyicilerini destekler, bu da ilk (ön) öğe için sıfırdan son (arka) öğeye doğru sayan sayısal konumunu doğrudan veren bir öğeye `size() - 1` başvurabileceğiniz anlamına gelir. Ayrıca, bir vektörşablon sınıfı [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)için altta yatan kapsayıcı için iyi bir aday olduğu anlamına gelir.
+, `vector` Rasgele erişim yineleyicileri destekler, bu, bir öğeye doğrudan sayısal konumu verildiğinde, ilk (ön) öğesi için sıfırdan sayarak `size() - 1` en son (geri) öğesine başvurabileceğiniz anlamına gelir. Ayrıca bir vektör, şablon sınıfı [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)için temel alınan kapsayıcı için iyi bir aday olduğu anlamına gelir.
 
-Vektör yineleyici, bir sapı, belirlediği öğenin yanlılığıyla birlikte ilişkili vektör nesnesine depolar. Yineleyicileri yalnızca ilişkili kapsayıcı nesneleri ile kullanabilirsiniz. Bir vektör elemanının yanlılığı konumuyla aynıdır.
+Bir vektör Yineleyici, kendi ilişkili vektör nesnesine bir tutamacı, onun oluşturduğu öğenin sapması ile birlikte depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Vector öğesinin sapması konumuyla aynıdır.
 
-Öğeleri ekleme veya silerek belirli bir konumda depolanan öğe değerini değiştirebilir, böylece bir yineleyici tarafından belirlenen değer de değişebilir. (Kapsayıcı, eklemeden önce bir delik oluşturmak veya bir silmeden sonra bir deliği doldurmak için öğeleri yukarı veya aşağı kopyalamak zorunda kalabilir.) Yine de, bir vektör yineleyici, önyargı aralığında `[0, size()]`olduğu sürece geçerli kalır. Dahası, geçerli bir yineleyici dereferencable kalır - erişmek veya belirlediği öğe değerini değiştirmek için `size()`kullanabilirsiniz - sürece onun önyargı eşit değildir .
+Öğeleri ekleme veya silme, belirli bir konumda depolanan öğe değerini değiştirebilir, bu nedenle bir yineleyici tarafından belirlenen değer de değişebilir. (Bir INSERT 'tan önce bir delik oluşturmak veya bir silme işleminden sonra bir delik açmak için kapsayıcının öğeleri yukarı veya aşağı kopyalaması gerekebilir.) Bununla birlikte, bir vektör Yineleyici, sapması aralıkta olduğu sürece geçerli kalır `[0, size()]` . Ayrıca, geçerli bir yineleyici, bir bütün olarak devam eder. bu değeri, yaptığı öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. bu nedenle, sapması değerine eşit değildir `size()` .
 
-Bir öğeyi silme veya kaldırma, depolanan değeri için yıkıcı çağırır. Kapsayıcıyı yok etmek tüm öğeleri siler. Böylece, eleman türü ref sınıfı olan bir kapsayıcı, hiçbir öğenin kapsayıcıdan daha uzun yaşamamasını sağlar. Ancak, bir tutamaçların kapsayıcısının öğelerini yok etmediğini unutmayın.
+Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının öğelerini yok ettiğini unutmayın.
 
 ## <a name="members"></a>Üyeler
 
-## <a name="vectorassign-stlclr"></a><a name="assign"></a>vektör::atama (STL/CLR)
+## <a name="vectorassign-stlclr"></a><a name="assign"></a>vector:: Assign (STL/CLR)
 
 Tüm öğeleri değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void assign(size_type count, value_type val);
@@ -230,28 +230,28 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Eklenecek öğe sayısı.
 
-*Ilk*<br/>
-Eklemek için aralığın başlangıcı.
+*adı*<br/>
+Eklenecek aralığın başlangıcı.
 
-*Son*<br/>
-Eklenecek aralık sonu.
+*soyadına*<br/>
+Eklenecek aralığın sonu.
 
-*Doğru*<br/>
-Ekleme için numaralandırma.
+*Right*<br/>
+Eklenecek sabit listesi.
 
-*Val*<br/>
+*Acil*<br/>
 Eklenecek öğenin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev, denetlenen sırayı değer *val'in* *sayı* elemanlarının tekrarı ile değiştirir. Kapsayıcıyı aynı değere sahip öğelerle doldurmak için kullanırsınız.
+İlk üye işlevi denetlenen diziyi değer *değer değeri olan* *Count* öğelerinin yinelemesi ile değiştirir. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
 
-Tamsayı `InIt` türü ise, ikinci üye işlev `assign((size_type)first, (value_type)last)`. Aksi takdirde, kontrollü sırayı diziile`first` `last`değiştirir [ , ). Bunu, denetitilen sırayı başka bir diziyi kopyalamak için kullanırsınız.
+`InIt`Bir tamsayı türünde ise ikinci üye işlevi ile aynı şekilde davranır `assign((size_type)first, (value_type)last)` . Aksi takdirde, denetlenen diziyi [ `first` ,) sırasıyla değiştirir `last` . Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
 
-Üçüncü üye işlev, kontrol edilen sıranın yerine, enumeratör *ünsağında*atanan diziyi alır. Bunu, denetite edilen sırayı bir sayıcı tarafından açıklanan bir dizinin kopyası yapmak için kullanırsınız.
+Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ*tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -296,11 +296,11 @@ a b
 a b c
 ```
 
-## <a name="vectorat-stlclr"></a><a name="at"></a>vektör::at (STL/CLR)
+## <a name="vectorat-stlclr"></a><a name="at"></a>vector:: at (STL/CLR)
 
-Belirli bir konumda bir öğeye erişir.
+Belirtilen konumdaki bir öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 reference at(size_type pos);
@@ -308,12 +308,12 @@ reference at(size_type pos);
 
 #### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Öğenin erişim konumu.
+*'un*<br/>
+Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye *işlev,* konum pos'undaki kontrollü dizinin öğesine bir başvuru döndürür. Konumunu bildiğiniz bir öğeyi okumak veya yazmak için kullanırsınız.
+Üye işlevi, *POS*konumundaki denetimli sıranın öğesine bir başvuru döndürür. Konumunu bildiğiniz bir öğeyi okumak veya yazmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -348,7 +348,7 @@ a b c
 a x c
 ```
 
-## <a name="vectorback-stlclr"></a><a name="back"></a>vektör::geri (STL/CLR)
+## <a name="vectorback-stlclr"></a><a name="back"></a>vector:: Back (STL/CLR)
 
 Son öğeye erişir.
 
@@ -360,7 +360,7 @@ reference back();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, boş olmayan kontrollü dizinin son öğesine bir başvuru döndürür. Var olduğunu bildiğinizde, son öğeye erişmek için kullanırsınız.
+Üye işlevi, denetimli sıranın son öğesine bir başvuru döndürür ve bu değer boş olmamalıdır. Bunu, olduğunu bildiğiniz zaman son öğeye erişmek için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -399,7 +399,7 @@ back() = c
 a b x
 ```
 
-## <a name="vectorback_item-stlclr"></a><a name="back_item"></a>vektör::back_item (STL/CLR)
+## <a name="vectorback_item-stlclr"></a><a name="back_item"></a>vector:: back_item (STL/CLR)
 
 Son öğeye erişir.
 
@@ -411,7 +411,7 @@ property value_type back_item;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik, boş olmayan olması gereken denetimli dizinin son öğesine erişer. Var olduğunu bildiğinizde, son öğeyi okumak veya yazmak için kullanırsınız.
+Özelliği, denetimli sıranın son öğesine erişir, bu da boş olmamalıdır. Bunu, olduğunu bildiğiniz zaman son öğeyi okumak veya yazmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -450,7 +450,7 @@ back_item = c
 a b x
 ```
 
-## <a name="vectorbegin-stlclr"></a><a name="begin"></a>vektör::begin (STL/CLR)
+## <a name="vectorbegin-stlclr"></a><a name="begin"></a>vector:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -462,7 +462,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetlenen dizinin ilk öğesini veya boş bir dizinin sonunun hemen ötesini belirleyen rasgele erişim yinelemesini döndürür. Bunu, denetlenen dizinin başlangıcını `current` belirleyen bir yineleyici elde etmek için kullanırsınız, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetlenen sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir rastgele erişim yineleyici döndürür. Denetlenen dizinin başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -505,9 +505,9 @@ a b c
 x y c
 ```
 
-## <a name="vectorcapacity-stlclr"></a><a name="capacity"></a>vektör::kapasite (STL/CLR)
+## <a name="vectorcapacity-stlclr"></a><a name="capacity"></a>vector:: Capacity (STL/CLR)
 
-Kapsayıcı için ayrılan depolama alanının boyutunu raporlar.
+Kapsayıcı için ayrılan depolamanın boyutunu raporlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -517,7 +517,7 @@ size_type capacity();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, en az [vektör::boyut (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()`kadar büyük bir değer olan, şu anda denetlenen sırayı tutmak için ayrılan depolamayı döndürür. Denetimli sıra için depolama alanı yeniden tahsis etmek gerekir önce kapsayıcı büyüyebilir ne kadar belirlemek için kullanabilirsiniz.
+Üye işlevi, en az [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)olarak en az bir değer olan denetimli sırayı tutmak için ayrılmış depolama alanını döndürür `()` . Kapsayıcının, denetlenen sıra için depolamayı yeniden ayrılacak kadar ne kadar büyüleyeceğini öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -555,7 +555,7 @@ capacity() = 4, ok = True
 capacity() = 9, ok = True
 ```
 
-## <a name="vectorclear-stlclr"></a><a name="clear"></a>vektör::net (STL/CLR)
+## <a name="vectorclear-stlclr"></a><a name="clear"></a>vector:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -567,7 +567,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev etkili bir şekilde [vektör çağırır::sil (STL/CLR)](../dotnet/vector-erase-stl-clr.md) `(` [vektör::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md) `(),` [vektör::end (STL/CLR)](../dotnet/vector-end-stl-clr.md)`())`. Denetlenen dizinin boş olduğundan emin olmak için kullanırsınız.
+Üye işlevi, [vector:: Erase (STL/CLR)](../dotnet/vector-erase-stl-clr.md) `(` [vector:: BEGIN (STL/CLR)](../dotnet/vector-begin-stl-clr.md) `(),` [vector:: End (STL/CLR)](../dotnet/vector-end-stl-clr.md)öğesini etkin bir şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -612,7 +612,7 @@ a b
 size() = 0
 ```
 
-## <a name="vectorconst_iterator-stlclr"></a><a name="const_iterator"></a>vektör::const_iterator (STL/CLR)
+## <a name="vectorconst_iterator-stlclr"></a><a name="const_iterator"></a>vector:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -624,7 +624,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizi `T2` için sabit bir rasgele erişim yineleyici olarak hizmet verebilir belirtilmemiş türünde bir nesne açıklar.
+Türü, `T2` denetimli sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -653,7 +653,7 @@ int main()
 a b c
 ```
 
-## <a name="vectorconst_reference-stlclr"></a><a name="const_reference"></a>vektör::const_reference (STL/CLR)
+## <a name="vectorconst_reference-stlclr"></a><a name="const_reference"></a>vector:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -665,7 +665,7 @@ typedef value_type% const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bir öğeye sabit bir başvuru açıklar.
+Türü bir öğeye sabit bir başvuru tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -697,9 +697,9 @@ int main()
 a b c
 ```
 
-## <a name="vectorconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>vektör::const_reverse_iterator (STL/CLR)
+## <a name="vectorconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>vector:: const_reverse_iterator (STL/CLR)
 
-Denetlenmeyen dizi için sabit bir ters yineleyici türü...
+Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -709,7 +709,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizi `T4` için sabit bir ters yineleyici olarak hizmet verebilen belirtilmemiş türde bir nesneyi açıklar.
+Türü, `T4` denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -739,9 +739,9 @@ int main()
 c b a
 ```
 
-## <a name="vectordifference_type-stlclr"></a><a name="difference_type"></a>vektör::difference_type (STL/CLR)
+## <a name="vectordifference_type-stlclr"></a><a name="difference_type"></a>vektör::d ifference_type (STL/CLR)
 
-İki öğe arasındaki imzalı uzaklık türleri.
+İki öğe arasındaki işaretli bir mesafe türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -751,7 +751,7 @@ typedef int difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, imzalı öğe sayısını açıklar.
+Türü, imzalı bir öğe sayısını tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -793,7 +793,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="vectorempty-stlclr"></a><a name="empty"></a>vektör::boş (STL/CLR)
+## <a name="vectorempty-stlclr"></a><a name="empty"></a>vector:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -805,7 +805,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev boş bir kontrollü dizi için doğru döndürür. [Vektör::boyut (STL/CLR)](../dotnet/vector-size-stl-clr.md)`() == 0`eşdeğerdir. Vektörün boş olup olmadığını test etmek için kullanırsınız.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md)eşdeğerdir `() == 0` . Vector öğesinin boş olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -844,7 +844,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="vectorend-stlclr"></a><a name="end"></a>vektör::end (STL/CLR)
+## <a name="vectorend-stlclr"></a><a name="end"></a>vector:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -856,7 +856,7 @@ iterator end();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetlenen dizinin sonundan hemen ötesine işaret eden rasgele erişim yineleyicisi döndürür. Bunu, denetlenme sırasının `current` sonunu belirleyen bir yineleyici elde etmek için kullanırsınız, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetimli dizinin sonunun hemen ötesinde işaret eden bir rastgele erişim yineleyici döndürür. Denetlenen dizinin sonunu atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -900,11 +900,11 @@ a b c
 a x y
 ```
 
-## <a name="vectorerase-stlclr"></a><a name="erase"></a>vektör::silme (STL/CLR)
+## <a name="vectorerase-stlclr"></a><a name="erase"></a>vector:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -913,24 +913,24 @@ iterator erase(iterator first, iterator last);
 
 #### <a name="parameters"></a>Parametreler
 
-*Ilk*<br/>
-Silmek için aralığın başlangıcı.
+*adı*<br/>
+Silinecek aralığın başlangıcı.
 
-*Son*<br/>
-Silmek için aralığın sonu.
+*soyadına*<br/>
+Silinecek aralığın sonu.
 
-*Nerede*<br/>
-Silecek öğe.
+*olmadığı*<br/>
+Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev, kontrol edilen dizinin öğesini *nereye*işaret etti? Tek bir öğeyi kaldırmak için kullanırsınız.
+İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu*gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
-İkinci üye işlev, kontrollü dizinin öğelerini aralıktaki`first` `last`öğeleri kaldırır [ , ). Sıfır veya daha fazla bitişik öğeyi kaldırmak için kullanabilirsiniz.
+İkinci üye işlevi, [,) aralığındaki denetlenen sıranın öğelerini kaldırır `first` `last` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
-Her iki üye işlev de kaldırılan ilk öğenin ötesinde kalan ilk öğeyi belirleyen bir yineleyici döndürür veya böyle bir öğe yoksa [vektör::end (STL/CLR).](../dotnet/vector-end-stl-clr.md) `()`
+Her iki üye işlevi de kaldırılan öğelerin dışında kalan ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [vector:: End (STL/CLR)](../dotnet/vector-end-stl-clr.md) `()` .
 
-Öğeleri silerken, öğe kopyalarının sayısı silme sonu ile dizinin yakın sonu arasındaki öğe sayısında doğrusaldır. (Dizinin her iki ucundaki bir veya daha fazla öğeyi silerken, öğe kopyaları oluşmaz.)
+Öğeleri silerken, öğe kopyalarının sayısı doğrusal bir şekilde sıra sayısının bitişine ve sonuna kadar olan sayı arasındaki öğe sayısını gösterir. (Sıranın her iki ucunda bir veya daha fazla öğe silinirken, hiçbir öğe kopyası gerçekleşmez.)
 
 ### <a name="example"></a>Örnek
 
@@ -979,7 +979,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="vectorfront-stlclr"></a><a name="front"></a>vektör::ön (STL/CLR)
+## <a name="vectorfront-stlclr"></a><a name="front"></a>vector:: Front (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -991,7 +991,7 @@ reference front();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, boş olmayan kontrollü dizinin ilk öğesine bir başvuru döndürür. Var olduğunu bildiğinizde, ilk öğeyi okumak veya yazmak için kullanırsınız.
+Üye işlevi, denetimli sıranın ilk öğesine bir başvuru döndürür ve bu değer boş olmamalıdır. Olduğunu bildiğiniz zaman ilk öğeyi okumak veya yazmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1030,7 +1030,7 @@ front() = a
 x b c
 ```
 
-## <a name="vectorfront_item-stlclr"></a><a name="front_item"></a>vektör::front_item (STL/CLR)
+## <a name="vectorfront_item-stlclr"></a><a name="front_item"></a>vector:: front_item (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -1042,7 +1042,7 @@ property value_type front_item;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik, boş olmayan olması gereken denetlenme sırasının ilk öğesine erişer. Var olduğunu bildiğinizde, ilk öğeyi okumak veya yazmak için kullanırsınız.
+Özelliği, denetimli sıranın ilk öğesine erişir, bu da boş olmamalıdır. Olduğunu bildiğiniz zaman ilk öğeyi okumak veya yazmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1081,9 +1081,9 @@ front_item = a
 x b c
 ```
 
-## <a name="vectorgeneric_container-stlclr"></a><a name="generic_container"></a>vektör::generic_container (STL/CLR)
+## <a name="vectorgeneric_container-stlclr"></a><a name="generic_container"></a>vector:: generic_container (STL/CLR)
 
-Kapsayıcı için genel arabirimin türü.
+Kapsayıcının genel arabiriminin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1095,7 +1095,7 @@ typedef Microsoft::VisualC::StlClr::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfının genel arabirimini açıklar.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirimi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1147,9 +1147,9 @@ a b c d
 a b c d e
 ```
 
-## <a name="vectorgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>vektör::generic_iterator (STL/CLR)
+## <a name="vectorgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>vector:: generic_iterator (STL/CLR)
 
-Kapsayıcının genel arabirimiyle kullanılmak üzere bir yineleyici türü.
+Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1161,7 +1161,7 @@ typedef Microsoft::VisualC::StlClr::Generic::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı nın genel arabirimiyle kullanılabilecek genel bir yineleyiciyi açıklar.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirim ile kullanılabilen genel bir yineleyiciyi açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -1205,9 +1205,9 @@ a b c
 a a c
 ```
 
-## <a name="vectorgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>vektör::generic_reverse_iterator (STL/CLR)
+## <a name="vectorgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>vector:: generic_reverse_iterator (STL/CLR)
 
-Kapsayıcının genel arabirimiyle kullanılmak üzere ters yineleyici türü.
+Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1218,7 +1218,7 @@ typedef Microsoft::VisualC::StlClr::Generic::
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfının genel arabirimiyle kullanılabilecek genel bir ters yineleyiciyi açıklar.
+Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılabilecek bir genel ters yineleyici tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1262,9 +1262,9 @@ a b c
 a c c
 ```
 
-## <a name="vectorgeneric_value-stlclr"></a><a name="generic_value"></a>vektör::generic_value (STL/CLR)
+## <a name="vectorgeneric_value-stlclr"></a><a name="generic_value"></a>vector:: generic_value (STL/CLR)
 
-Kapsayıcının genel arabirimiyle kullanılmak üzere bir öğenin türü.
+Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1274,7 +1274,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon `GValue` kapsayıcı sınıfının genel arabirimiyle kullanılmak üzere depolanan öğe değerini açıklayan bir tür nesnesini açıklar.
+Tür, `GValue` Bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan türünde bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1318,11 +1318,11 @@ a b c
 a a c
 ```
 
-## <a name="vectorinsert-stlclr"></a><a name="insert"></a>vektör::insert (STL/CLR)
+## <a name="vectorinsert-stlclr"></a><a name="insert"></a>vector:: insert (STL/CLR)
 
-Belirli bir konumda öğeleri ekler.
+Belirtilen konumdaki öğeleri ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator insert(iterator where, value_type val);
@@ -1335,37 +1335,37 @@ void insert(iterator where,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Eklenecek öğe sayısı.
 
-*Ilk*<br/>
-Eklemek için aralığın başlangıcı.
+*adı*<br/>
+Eklenecek aralığın başlangıcı.
 
-*Son*<br/>
-Eklenecek aralık sonu.
+*soyadına*<br/>
+Eklenecek aralığın sonu.
 
-*Doğru*<br/>
-Ekleme için numaralandırma.
+*Right*<br/>
+Eklenecek sabit listesi.
 
-*Val*<br/>
+*Acil*<br/>
 Eklenecek öğenin değeri.
 
-*Nerede*<br/>
-Daha önce eklemek için konteyner nerede.
+*olmadığı*<br/>
+Kapsayıcının ekleneceği yer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevlerin her biri, eleman tarafından işaret önce ekler *nerede* kontrollü sırada, kalan operands tarafından belirtilen bir dizi.
+Üye işlevlerinin her biri, öğe denetimli sırada, kalan işlenenler tarafından belirtilen bir *sıra olarak işaret eden öğesinden* önce eklenir.
 
-İlk üye işlev değer *val'li* bir öğe ekler ve yeni eklenen öğeyi belirleyen bir yineleyici döndürür. Bir yineleyici tarafından belirlenen bir yerden önce tek bir öğe eklemek için kullanabilirsiniz.
+İlk üye *işlevi value değeri* olan bir öğe ekler ve yeni eklenen öğeyi atayan bir yineleyici döndürür. Yineleyiciyi, bir yineleyici tarafından belirlenmiş bir konumdan önce tek bir öğe eklemek için kullanırsınız.
 
-İkinci üye işlev, değer *val'in* *in sayım* elemanlarının tekrarını ekler. Tümü aynı değerin kopyaları olan sıfır veya daha fazla bitişik öğe eklemek için kullanırsınız.
+İkinci üye işlevi, değer *Val*'in *Count* öğelerinin tekrarından birini ekler. Aynı değerin tüm kopyaları olan sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
-Tamsayı `InIt` türü ise, üçüncü üye işlev `insert(where, (size_type)first, (value_type)last)`. Aksi takdirde, sırayı ekler`first` `last`[ , ). Başka bir diziden kopyalanan sıfır veya daha fazla bitişik öğe eklemek için kullanırsınız.
+`InIt`Bir tamsayı türü ise, üçüncü üye işlevi ile aynı şekilde davranır `insert(where, (size_type)first, (value_type)last)` . Aksi takdirde, [ `first` ,) dizisini ekler `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
-Dördüncü üye *işlev, sağ*tarafından belirlenen sırayı ekler. Bir sayıcı tarafından açıklanan bir sıra eklemek için kullanabilirsiniz.
+Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
-Tek bir öğe eklerken, öğe kopyalarının sayısı ekleme noktası ile dizinin yakın sonu arasındaki eleman sayısında doğrusaldır. (Dizinin her iki ucuna bir veya daha fazla öğe eklenirken, öğe kopyaları oluşmaz.) Bir `InIt` giriş yineleyiciise, üçüncü üye işlev dizideki her öğe için etkili bir şekilde tek bir ekleme gerçekleştirir. Aksi takdirde, `N` öğeleri eklerken, öğe kopyalarının sayısı `N` doğrusal artı ekleme noktası ile dizinin yakın sonu arasındaki öğelerin sayısıdır.
+Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt`Bir giriş yineleyicidir, üçüncü üye işlevi dizideki her öğe için etkin bir şekilde tek bir ekleme gerçekleştirir. Aksi halde, öğe eklerken `N` , öğe kopyalarının sayısı doğrusal `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısına eklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1427,7 +1427,7 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="vectoriterator-stlclr"></a><a name="iterator"></a>vektör::iterator (STL/CLR)
+## <a name="vectoriterator-stlclr"></a><a name="iterator"></a>vector:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1439,7 +1439,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizi `T1` için rasgele erişim yineleyici olarak hizmet verebilir belirtilmemiş türünde bir nesne açıklar.
+Türü, `T1` denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1476,11 +1476,11 @@ a b c
 x b c
 ```
 
-## <a name="vectoroperator-stlclr"></a><a name="op_as"></a>vektör::operator= (STL/CLR)
+## <a name="vectoroperator-stlclr"></a><a name="op_as"></a>vector:: operator = (STL/CLR)
 
-Denetedilen sırayı değiştirir.
+Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 vector<Value>% operator=(vector<Value>% right);
@@ -1488,12 +1488,12 @@ vector<Value>% operator=(vector<Value>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Doğru*<br/>
-Kopyalanması gereken konteyner.
+*Right*<br/>
+Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleç *nesneye doğru* kopyalar, sonra döndürür. `*this` Bunu, denetlenir sırayı *sağdaki*kontrollü dizinin bir kopyasıyla değiştirmek için kullanırsınız.
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -1529,11 +1529,11 @@ a b c
 a b c
 ```
 
-## <a name="vectoroperatorstlclr"></a><a name="op"></a>vektör::operatör(STL/CLR)
+## <a name="vectoroperatorstlclr"></a><a name="op"></a>vector:: operator (STL/CLR)
 
-Belirli bir konumda bir öğeye erişir.
+Belirtilen konumdaki bir öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 reference operator[](size_type pos);
@@ -1541,12 +1541,12 @@ reference operator[](size_type pos);
 
 #### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Öğenin erişim konumu.
+*'un*<br/>
+Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye operatör *pozisyon konumundaki*elemana bir hakem döndürür. Konumunu bildiğin bir elemana erişmek için kullanırsın.
+Member işleci, *POS*konumundaki öğesine bir referene döndürür. Bu, konumunu bildiğiniz bir öğeye erişmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1581,7 +1581,7 @@ a b c
 a x c
 ```
 
-## <a name="vectorpop_back-stlclr"></a><a name="pop_back"></a>vektör::pop_back (STL/CLR)
+## <a name="vectorpop_back-stlclr"></a><a name="pop_back"></a>vektör::p op_back (STL/CLR)
 
 Son öğeyi kaldırır.
 
@@ -1593,7 +1593,7 @@ void pop_back();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, boş olmayan kontrollü dizinin son öğesini kaldırır. Vektörü arkadaki bir elemanla kısaltmak için kullanırsınız.
+Üye işlevi, denetimli sıranın son öğesini kaldırır ve bu boş olmamalıdır. Vektörü, arka arkaya bir öğe ile kısaltmak için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1628,7 +1628,7 @@ a b c
 a b
 ```
 
-## <a name="vectorpush_back-stlclr"></a><a name="push_back"></a>vektör::push_back (STL/CLR)
+## <a name="vectorpush_back-stlclr"></a><a name="push_back"></a>vektör::p ush_back (STL/CLR)
 
 Yeni bir son öğe ekler.
 
@@ -1640,7 +1640,7 @@ void push_back(value_type val);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetlenen dizinin `val` sonunda değeri olan bir öğe ekler. Vektöre başka bir öğe yi eklemek için kullanırsınız.
+Üye işlevi denetlenen sıranın sonunda değeri olan bir öğe ekler `val` . Vector öğesine başka bir öğe eklemek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1668,9 +1668,9 @@ int main()
 a b c
 ```
 
-## <a name="vectorrbegin-stlclr"></a><a name="rbegin"></a>vektör::rbegin (STL/CLR)
+## <a name="vectorrbegin-stlclr"></a><a name="rbegin"></a>vector:: rbegin (STL/CLR)
 
-Ters denetimli dizinin başlangıcını belirler.
+Ters denetlenen sıranın başlangıcını belirtir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1680,7 +1680,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetlenen dizinin son öğesini veya boş bir dizinin başlangıcının hemen ötesini belirleyen bir ters yineleyici döndürür. Bu nedenle, ters `beginning` sırayı belirler. Ters sırada görülen denetlenen dizinin `current` başlangıcını belirleyen bir yineleyici elde etmek için kullanabilirsiniz, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, `beginning` ters sıranın öğesini belirler. Doğru sırada görülen denetimli sıranın başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1723,7 +1723,7 @@ a b c
 a y x
 ```
 
-## <a name="vectorreference-stlclr"></a><a name="reference"></a>vektör::referans (STL/CLR)
+## <a name="vectorreference-stlclr"></a><a name="reference"></a>vector:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -1735,7 +1735,7 @@ typedef value_type% reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bir öğeye başvuru açıklar.
+Türü bir öğesi başvurusunu tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1778,9 +1778,9 @@ a b c
 A B C
 ```
 
-## <a name="vectorrend-stlclr"></a><a name="rend"></a>vektör::rend (STL/CLR)
+## <a name="vectorrend-stlclr"></a><a name="rend"></a>vector:: rend (STL/CLR)
 
-Ters denetimli dizinin sonunu belirler.
+Ters denetlenen sıranın sonunu belirtir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1790,7 +1790,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetitilen dizinin başlangıcının hemen ötesine işaret eden bir ters yineleyici döndürür. Bu nedenle, ters `end` sırayı belirler. Ters sırada görülen denetlenen dizinin `current` sonunu belirleyen bir yineleyici elde etmek için kullanabilirsiniz, ancak denetlenen dizinin uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, `end` ters sıranın öğesini belirler. Bu uygulamayı, `current` geriye doğru sırada görülen denetlenen sıranın sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1834,11 +1834,11 @@ a b c
 y x c
 ```
 
-## <a name="vectorreserve-stlclr"></a><a name="reserve"></a>vektör::rezerv (STL/CLR)
+## <a name="vectorreserve-stlclr"></a><a name="reserve"></a>vector:: Reserve (STL/CLR)
 
-Konteyner için minimum büyüme kapasitesi sağlar.
+Kapsayıcı için en düşük büyüme kapasitesini sağlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void reserve(size_type count);
@@ -1846,12 +1846,12 @@ void reserve(size_type count);
 
 #### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
-Kapsayıcının yeni minimum kapasitesi.
+*biriktirme*<br/>
+Kapsayıcının yeni en düşük kapasitesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev `capacity()` bundan sonra en az *sayma*döndürür sağlar. Kapsayıcının, belirtilen boyuta gelene kadar denetitilmiş sıra için depolama alanı tahsis etmesi gerekmediğinden emin olmak için kullanırsınız.
+Üye işlevi, `capacity()` henceileri 'nin en az *sayı*döndürdüğünden emin olmanızı sağlar. Kapsayıcının, belirtilen boyuta kadar büyüene kadar, denetlenen sıra için depolamayı yeniden ayırmaya gerek gerektirmediğinden emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1889,11 +1889,11 @@ capacity() = 4, ok = True
 capacity() = 9, ok = True
 ```
 
-## <a name="vectorresize-stlclr"></a><a name="resize"></a>vektör::yeniden boyutlandırma (STL/CLR)
+## <a name="vectorresize-stlclr"></a><a name="resize"></a>vector:: Resize (STL/CLR)
 
-Öğelerin sayısını değiştirir.
+Öğe sayısını değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void resize(size_type new_size);
@@ -1903,14 +1903,14 @@ void resize(size_type new_size, value_type val);
 #### <a name="parameters"></a>Parametreler
 
 *new_size*<br/>
-Kontrollü dizinin yeni boyutu.
+Denetlenen sıranın yeni boyutu.
 
-*Val*<br/>
-Dolgu elemanının değeri.
+*Acil*<br/>
+Padding öğesinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri n için [vektör::size (STL/CLR)](../dotnet/vector-size-stl-clr.md) `()` bundan sonra *new_size*döndürür sağlamak. Kontrollü sırayı daha uzun yapması gerekiyorsa, ilk üye `value_type()`işlev değeri olan öğeleri ekler, ikinci üye işlev ise değer *val'i*olan öğeleri ekler. Denetedilen sırayı kısaltmak için, her iki üye işlev de son öğe [vektörü:boyut (STL/CLR)](../dotnet/vector-size-stl-clr.md) `() -` `new_size` kez etkin bir şekilde silinir. Denetlenebilen dizinin, geçerli kontrol edilen sırayı kırparak veya dolgu yaparak *boyut new_size*olduğundan emin olmak için kullanabilirsiniz.
+Üye işlevleri hem [vector:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md) `()` henceileri 'nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `value_type()` ; İkinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [vektörü:: size (STL/CLR)](../dotnet/vector-size-stl-clr.md) zamanlarını etkin bir şekilde siler `() -` `new_size` . Kontrol edilen sıranın boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -1949,9 +1949,9 @@ size() = 0
 x x x x x
 ```
 
-## <a name="vectorreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>vektör::reverse_iterator (STL/CLR)
+## <a name="vectorreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>vector:: reverse_iterator (STL/CLR)
 
-Denetlenen dizi için ters yineleyici türü.
+Denetlenen sıra için ters yineleyicinin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1961,7 +1961,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizi `T3` için ters yineleyici olarak hizmet verebilen belirtilmemiş türde bir nesneyi açıklar.
+Tür, `T3` denetlenen sıra için ters Yineleyici olarak işlev görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1998,7 +1998,7 @@ c b a
 x b a
 ```
 
-## <a name="vectorsize-stlclr"></a><a name="size"></a>vektör::boyut (STL/CLR)
+## <a name="vectorsize-stlclr"></a><a name="size"></a>vector:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -2010,7 +2010,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetitilen dizinin uzunluğunu döndürür. Şu anda denetlenmeyen sırada bulunan öğe sayısını belirlemek için kullanırsınız. Tek umursadığınız dizinin sıfır olmayan boyutu olup olmadığıysa, [bkz.](../dotnet/vector-empty-stl-clr.md)`()`
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [vector:: Empty (STL/CLR)](../dotnet/vector-empty-stl-clr.md) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2051,7 +2051,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="vectorsize_type-stlclr"></a><a name="size_type"></a>vektör::size_type (STL/CLR)
+## <a name="vectorsize_type-stlclr"></a><a name="size_type"></a>vector:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -2063,7 +2063,7 @@ typedef int size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür negatif olmayan öğe sayısını açıklar.
+Tür, negatif olmayan bir öğe sayısını tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2096,11 +2096,11 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="vectorswap-stlclr"></a><a name="swap"></a>vektör::takas (STL/CLR)
+## <a name="vectorswap-stlclr"></a><a name="swap"></a>vector:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void swap(vector<Value>% right);
@@ -2108,12 +2108,12 @@ void swap(vector<Value>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Doğru*<br/>
-İçeriği takas etmek için konteyner.
+*Right*<br/>
+İçeriği takas eden kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, kontrollü dizileri `*this` sağ ve *arasındaki*sıraları değiştirir. Bunu sürekli zaman içinde yapar ve hiçbir istisna atar. İki kapsayıcının içeriğini değiştirmek için hızlı bir yol olarak kullanabilirsiniz.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2160,9 +2160,9 @@ x x x x x
 a b c
 ```
 
-## <a name="vectorto_array-stlclr"></a><a name="to_array"></a>vektör::to_array (STL/CLR)
+## <a name="vectorto_array-stlclr"></a><a name="to_array"></a>vector:: to_array (STL/CLR)
 
-Denetedilen sırayı yeni bir diziye kopyalar.
+Denetimli sırayı yeni bir diziye kopyalar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -2172,7 +2172,7 @@ cli::array<Value>^ to_array();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetitilmiş sırayı içeren bir dizi döndürür. Bunu, denetitilmiş dizinin dizi biçiminde bir kopyasını elde etmek için kullanırsınız.
+Üye işlevi denetlenen sırayı içeren bir dizi döndürür. Dizi biçiminde denetlenen sıranın bir kopyasını almak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2209,7 +2209,7 @@ a b c d
 a b c
 ```
 
-## <a name="vectorvalue_type-stlclr"></a><a name="value_type"></a>vektör::value_type (STL/CLR)
+## <a name="vectorvalue_type-stlclr"></a><a name="value_type"></a>vector:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -2221,7 +2221,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *Değeri*ile eş anlamlıdır.
+Tür, şablon parametre *değeri*için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -2254,11 +2254,11 @@ int main()
 a b c
 ```
 
-## <a name="vectorvector-stlclr"></a><a name="vector"></a>vektör::vektör (STL/CLR)
+## <a name="vectorvector-stlclr"></a><a name="vector"></a>vector:: vector (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 vector();
@@ -2273,66 +2273,66 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Eklenecek öğe sayısı.
 
-*Ilk*<br/>
-Eklemek için aralığın başlangıcı.
+*adı*<br/>
+Eklenecek aralığın başlangıcı.
 
-*Son*<br/>
-Eklenecek aralık sonu.
+*soyadına*<br/>
+Eklenecek aralığın sonu.
 
-*Doğru*<br/>
-Eklemek için nesne veya aralık.
+*Right*<br/>
+Eklenecek nesne veya Aralık.
 
-*Val*<br/>
+*Acil*<br/>
 Eklenecek öğenin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapıcı:
+Oluşturucu:
 
 `vector();`
 
-hiçbir öğe ile kontrol edilen sırayı başlatir. Boş bir ilk kontrollü sıra belirtmek için kullanabilirsiniz.
+denetimli sırayı öğesi olmadan başlatır. Boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
-Yapıcı:
+Oluşturucu:
 
 `vector(vector<Value>% right);`
 
-[`right.begin()`, `right.end()`) ile kontrollü sırayı başlatir. Vektör nesnesi *sağ*tarafından kontrol edilen dizinin bir kopyası olan bir ilk kontrollü dizi belirtmek için kullanabilirsiniz.
+denetlenen sırayı [ `right.begin()` ,) sırasıyla başlatır `right.end()` . Bunu, *vektör nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız.
 
-Yapıcı:
+Oluşturucu:
 
 `vector(vector<Value>^ right);`
 
-[`right->begin()`, `right->end()`) ile kontrollü sırayı başlatir. Tutamacı *doğru*olan vektör nesnesi tarafından denetlenen dizinin bir kopyası olan ilk denetimli sırayı belirtmek için kullanırsınız.
+denetlenen sırayı [ `right->begin()` ,) sırasıyla başlatır `right->end()` . Bu işlemi, tutamacı *doğru*olan vektör nesnesi tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız.
 
-Yapıcı:
+Oluşturucu:
 
 `explicit vector(size_type count);`
 
-her biri değeri `value_type()`olan *sayım* elemanları ile kontrol edilen sırayı başlatir. Kapsayıcıyı varsayılan değere sahip öğelerle doldurmak için kullanırsınız.
+Her bir değer içeren *sayı* öğeleri olan denetimli sırayı başlatır `value_type()` . Kapsayıcıyı, varsayılan değere sahip olan öğelerle birlikte doldurmanız için kullanırsınız.
 
-Yapıcı:
+Oluşturucu:
 
 `vector(size_type count, value_type val);`
 
-her biri değer *val'i*ile *sayım* elemanları ile kontrollü sırayı başlatir. Kapsayıcıyı aynı değere sahip öğelerle doldurmak için kullanırsınız.
+her biri değer *Val*ile denetlenen diziyi *say* öğesi ile başlatır. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
 
-Yapıcı:
+Oluşturucu:
 
 `template<typename InIt>`
 
 `vector(InIt first, InIt last);`
 
-[`first`, `last`) ile kontrollü sırayı başlatir. Bunu, denetitilen sırayı başka bir dizinin kopyası yapmak için kullanırsınız.
+denetlenen sırayı [ `first` ,) sırasıyla başlatır `last` . Bunu, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanırsınız.
 
-Yapıcı:
+Oluşturucu:
 
 `vector(System::Collections::Generic::IEnumerable<Value>^ right);`
 
-enumerator *sağ*tarafından belirlenen sıra ile kontrollü sırayı başlatir. Bunu, denetite edilen sırayı bir yerumerator tarafından açıklanan başka bir dizinin kopyası yapmak için kullanırsınız.
+denetlenen sırayı Numaralandırıcı *hakkı*tarafından belirlenen sırayla başlatır. Denetlenen diziyi, Numaralandırıcı tarafından tanımlanan başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2399,11 +2399,11 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="operator-vector-stlclr"></a><a name="op_neq"></a>işleç!= (vektör) (STL/CLR)
+## <a name="operator-vector-stlclr"></a><a name="op_neq"></a>operator! = (vektör) (STL/CLR)
 
-Vektör eşit karşılaştırma değil.
+Vektör eşit değildir karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2413,15 +2413,15 @@ template<typename Value>
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol konteyner.
+*tarafta*<br/>
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru konteyner.
+*Right*<br/>
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `!(left == right)`döndürür. İki vektör öğeyle karşılaştırıldığında *sol* adada *right* aynı sıralı olup olmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(left == right)` . Bu uygulamayı, iki Vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2468,11 +2468,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-vector-stlclr"></a><a name="op_lt"></a>işleç&lt; (vektör) (STL/CLR)
+## <a name="operatorlt-vector-stlclr"></a><a name="op_lt"></a>işleç &lt; (vektör) (STL/CLR)
 
-Vektör karşılaştırma daha az.
+Vektör kıyasla küçüktür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2482,15 +2482,15 @@ template<typename Value>
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol konteyner.
+*tarafta*<br/>
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru konteyner.
+*Right*<br/>
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi, en düşük pozisyon `i` için `!(right[i] < left[i])` de doğru ysa `left[i] < right[i]`doğru döndürür. Aksi takdirde, `left->size() < right->size()` iki vektör öğe ile karşılaştırıldığında *sağ* önce *sol* sıralanır olup olmadığını test etmek için kullanabilirsiniz döndürür.
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi takdirde, `left->size() < right->size()` İki vektörün öğe öğesine göre karşılaştırıldığı zaman, sol *taraftaki bir* süre önce kaldığını test etmek için bunu kullanır. *left*
 
 ### <a name="example"></a>Örnek
 
@@ -2537,11 +2537,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-vector-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (vektör) (STL/CLR)
+## <a name="operatorlt-vector-stlclr"></a><a name="op_lteq"></a>operator &lt; = (vektör) (STL/CLR)
 
-Vektör daha az veya eşit karşılaştırma.
+Vektör küçüktür veya eşittir karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2551,15 +2551,15 @@ template<typename Value>
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol konteyner.
+*tarafta*<br/>
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru konteyner.
+*Right*<br/>
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `!(right < left)`döndürür. İki vektör öğeyle elemanla *karşılaştırıldığında, sağdan* sonra *sola* sıralanıp sıralanmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(right < left)` . Bu, iki Vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* sıralı olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2606,11 +2606,11 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-vector-stlclr"></a><a name="op_eq"></a>işleç== (vektör) (STL/CLR)
+## <a name="operator-vector-stlclr"></a><a name="op_eq"></a>operator = = (vector) (STL/CLR)
 
-Vektör eşit karşılaştırma.
+Vektör eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2620,15 +2620,15 @@ template<typename Value>
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol konteyner.
+*tarafta*<br/>
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru konteyner.
+*Right*<br/>
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler `i`aynı `left[i] ==` `right[i]`uzunluğa sahipse ve her pozisyon için doğru döndürür. İki vektör öğeyle karşılaştırıldığında *sola* *right* aynı sıraolup olmadığını test etmek için kullanabilirsiniz.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her bir konum için aynı uzunluğa sahip olursa true değerini döndürür `i` `left[i] ==` `right[i]` . İki vektörün öğe öğesine göre karşılaştırıldığı sırada *sol* öğenin *doğru* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2675,11 +2675,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-vector-stlclr"></a><a name="op_gt"></a>işleç&gt; (vektör) (STL/CLR)
+## <a name="operatorgt-vector-stlclr"></a><a name="op_gt"></a>işleç &gt; (vektör) (STL/CLR)
 
-Vektör karşılaştırmadan daha büyüktür.
+Vektör, karşılaştırmadan daha büyük.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2689,15 +2689,15 @@ template<typename Value>
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol konteyner.
+*tarafta*<br/>
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru konteyner.
+*Right*<br/>
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `right` `<` `left`döndürür. İki vektör öğeyle elemanla karşılaştırıldığında *solun* *sağdan* sonra sıralanıp sıralanmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `right` `<` `left` . Bu, iki Vektörün öğe öğesine göre karşılaştırıldığı zaman *sağdan doğru* sıralı *olup olmadığını test* etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -2744,11 +2744,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-vector-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (vektör) (STL/CLR)
+## <a name="operatorgt-vector-stlclr"></a><a name="op_gteq"></a>operator &gt; = (vektör) (STL/CLR)
 
-Vektör daha büyük veya eşit karşılaştırma.
+Vektör büyük veya eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2758,15 +2758,15 @@ template<typename Value>
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol konteyner.
+*tarafta*<br/>
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru konteyner.
+*Right*<br/>
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `!(left < right)`döndürür. İki vektör öğeyle *karşılaştırıldığında, sağdan* önce *sola* sıralanıp sıralanmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(left < right)` . İki vektör öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan önce sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

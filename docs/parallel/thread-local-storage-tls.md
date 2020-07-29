@@ -9,12 +9,12 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: 888a33161cd33b20d5f40a07f9b54235f06b8bd8
-ms.sourcegitcommit: 57e26bdd7839fce3c4154a61e987d165f0ba6f5b
+ms.openlocfilehash: f677d7382a9747df63023bd83b104a6bb3b74c1f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84301972"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222660"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığı Yerel Depolaması (TLS)
 
@@ -22,9 +22,9 @@ ms.locfileid: "84301972"
 
 ## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a>TLS için derleyici uygulama
 
-**C++ 11:**  `thread_local`Depolama sınıfı Belirleyicisi, nesneler ve sınıf üyeleri için iş parçacığı yerel depolama belirtmek için önerilen yoldur. Daha fazla bilgi için bkz. [Depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).
+**C++ 11:**  **`thread_local`** Depolama sınıfı Belirleyicisi, nesneler ve sınıf üyeleri için iş parçacığı yerel depolama belirtmek için önerilen yoldur. Daha fazla bilgi için bkz. [Depolama sınıfları (C++)](../cpp/storage-classes-cpp.md).
 
-Ayrıca, genişletilmiş depolama sınıfı değiştiricisi olarak Microsoft 'a özgü bir öznitelik, [iş parçacığı](../cpp/thread.md)de sağlar. Bir **iş parçacığı** değişkeni bildirmek için **__declspec** anahtar sözcüğünü kullanın. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bunu bir değer ile başlatır:
+Ayrıca, genişletilmiş depolama sınıfı değiştiricisi olarak Microsoft 'a özgü bir öznitelik, [iş parçacığı](../cpp/thread.md)de sağlar. **`__declspec`** Bir değişken bildirmek için anahtar sözcüğünü kullanın **`thread`** . Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bunu bir değer ile başlatır:
 
 ```C
 __declspec( thread ) int tls_i = 1;
@@ -34,13 +34,13 @@ __declspec( thread ) int tls_i = 1;
 
 Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri bildirirken aşağıdaki yönergeler gözlenmelidir. Bu yönergeler hem [iş parçacığı](../cpp/thread.md) hem de [thread_local](../cpp/storage-classes-cpp.md)için geçerlidir:
 
-- **Thread** özniteliği yalnızca sınıf ve veri bildirimlerine ve tanımlarına uygulanabilir. İşlev bildirimlerinde veya tanımlarında kullanılamaz. Örneğin, aşağıdaki kod bir derleyici hatası oluşturur:
+- **`thread`** Özniteliği yalnızca sınıf ve veri bildirimlerine ve tanımlarına uygulanabilir. İşlev bildirimlerinde veya tanımlarında kullanılamaz. Örneğin, aşağıdaki kod bir derleyici hatası oluşturur:
 
     ```C
     __declspec( thread )void func();     // This will generate an error.
     ```
 
-- **İş parçacığı** değiştiricisi yalnızca **statik** uzantılı veri öğelerinde belirtilebilir. Bu, genel veri nesneleri ( **statik** ve **extern**), yerel statik nesneler ve C++ sınıflarının statik veri üyelerini içerir. Otomatik veri nesneleri **iş parçacığı** özniteliğiyle bildirilemez. Aşağıdaki kod derleyici hataları üretir:
+- **`thread`** Değiştirici yalnızca, uzantısı olan veri öğelerinde belirtilebilir **`static`** . Bu, genel veri nesneleri ( **`static`** ve **`extern`** ), yerel statik nesneler ve C++ sınıflarının statik veri üyelerini içerir. Otomatik veri nesneleri **`thread`** özniteliğiyle bildirilemez. Aşağıdaki kod derleyici hataları üretir:
 
     ```C
     void func1()
@@ -54,7 +54,7 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     }
     ```
 
-- İş parçacığı yerel nesnesinin bildirimleri ve tanımı, **thread** özniteliğini belirtmelidir. Örneğin, aşağıdaki kod bir hata oluşturur:
+- İş parçacığı yerel nesnesinin bildirimleri ve tanımı tüm **`thread`** özniteliği belirtmelidir. Örneğin, aşağıdaki kod bir hata oluşturur:
 
     ```C
     #define Thread  __declspec( thread )
@@ -62,13 +62,13 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     int __declspec( thread )tls_i;        // declaration and definition differ.
     ```
 
-- **İş parçacığı** özniteliği tür değiştiricisi olarak kullanılamaz. Örneğin, aşağıdaki kod bir derleyici hatası oluşturur:
+- **`thread`** Öznitelik, tür değiştiricisi olarak kullanılamaz. Örneğin, aşağıdaki kod bir derleyici hatası oluşturur:
 
     ```C
     char __declspec( thread ) *ch;        // Error
     ```
 
-- **İş parçacığı** özniteliğini kullanan C++ nesnelerinin bildirimine izin verilmediğinden, aşağıdaki iki örnek anlamsal olarak eşdeğerdir:
+- Özniteliği kullanan C++ nesnelerinin bildirimine **`thread`** izin verildiğinde, aşağıdaki iki örnek anlamsal olarak eşdeğerdir:
 
     ```cpp
     __declspec( thread ) class B
@@ -92,7 +92,7 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
 
    Bu kısıtlama C++ ' da uygulanmaz. C++ tüm nesnelerin dinamik başlatılmasına izin verdiğinden, bir nesneyi bir iş parçacığı yerel değişkeninin adresini kullanan bir ifade kullanarak başlatabilirsiniz. İş parçacığı yerel nesnelerinin oluşturulması gibi yapılır. Örneğin, daha önce gösterilen kod, C++ kaynak dosyası olarak derlendiğinde bir hata oluşturmaz. İş parçacığı yerel değişkeninin adresi yalnızca adresin alındığı iş parçacığı olduğu sürece geçerlidir.
 
-- Standart C, yalnızca statik olmayan uzantı nesneleri için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ genellikle bir başvuruyu içeren bir ifadeyle nesnelerin bu tür dinamik başlatılmasına izin verse de, iş parçacığı yerel nesneleriyle bu tür bir başlatmaya izin verilmez. Örneğin:
+- Standart C, yalnızca statik olmayan uzantı nesneleri için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ genellikle bir başvuruyu içeren bir ifadeyle nesnelerin bu tür dinamik başlatılmasına izin verse de, iş parçacığı yerel nesneleriyle bu tür bir başlatmaya izin verilmez. Örnek:
 
     ```C
     __declspec( thread )int tls_i = tls_i;                // Error in C and C++
@@ -100,7 +100,7 @@ Statik olarak bağlantılı iş parçacığı yerel nesneleri ve değişkenleri 
     __declspec( thread )int tls_i = sizeof( tls_i )       // Legal in C and C++
     ```
 
-   `sizeof`Başlatılmakta olan nesneyi içeren bir ifade kendine bir başvuruyu temsil etmez ve hem C hem de C++ ' da etkindir.
+   **`sizeof`** Başlatılmakta olan nesneyi içeren bir ifade kendine bir başvuruyu temsil etmez ve hem C hem de C++ ' da etkindir.
 
    İş parçacığı yerel depolama tesisinde gelecekte yapılacak geliştirmeler nedeniyle, C++ iş parçacığı verilerinin böyle dinamik başlatılmasına izin vermez.
 

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-ms.openlocfilehash: 1a8fc4742b8bf686edf75f3b98cc283b9bf9881b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c14d8247be2abdf828b88e728bd930691ec6571f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620726"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214158"
 ---
 # <a name="connection-points"></a>Bağlantı Noktaları
 
@@ -37,7 +37,7 @@ MFC bu modeli [CConnectionPoint](reference/cconnectionpoint-class.md) ve [CCmdTa
 
 Sınıfınıza uygulanan her bağlantı noktası için, bağlantı noktasını uygulayan bir bağlantı parçası bildirmeniz gerekir. Bir veya daha fazla bağlantı noktası uygularsanız, sınıfınıza tek bir bağlantı eşlemesi de bildirmeniz gerekir. Bağlantı eşlemesi, ActiveX denetimi tarafından desteklenen bağlantı noktalarının bir tablosudur.
 
-Aşağıdaki örneklerde basit bir bağlantı haritası ve bir bağlantı noktası gösterilmektedir. İlk örnek bağlantı eşlemesini ve noktasını bildirir; İkinci örnek, eşlemeyi ve noktasını uygular. ' In `CMyClass` türetilmiş bir sınıf olması gerektiğini unutmayın `CCmdTarget` . İlk örnekte, kod sınıf bildirimine, **korunan** bölüm altında eklenir:
+Aşağıdaki örneklerde basit bir bağlantı haritası ve bir bağlantı noktası gösterilmektedir. İlk örnek bağlantı eşlemesini ve noktasını bildirir; İkinci örnek, eşlemeyi ve noktasını uygular. ' In `CMyClass` türetilmiş bir sınıf olması gerektiğini unutmayın `CCmdTarget` . İlk örnekte, kod sınıf bildiriminde, bölüm altında eklenir **`protected`** :
 
 [!code-cpp[NVC_MFCConnectionPoints#1](codesnippet/cpp/connection-points_1.h)]
 

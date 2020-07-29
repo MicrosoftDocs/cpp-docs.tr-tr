@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-ms.openlocfilehash: 190acd619224bdf22a5c8d35f541fa48b6664fe1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d967341cdb0197f1157ab9d253072f3d0d7aa46f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625750"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223154"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 
@@ -23,7 +23,7 @@ Standart Windows iletileri (**WM_**) için varsayılan işleyiciler sınıfında
 
 `afx_msg void OnPaint();`
 
-**Afx_msg** anahtar sözcüğü, diğer üye işlevlerinden işleyicileri ayırt ederek C++ **sanal** anahtar sözcüğünün etkisini önerir `CWnd` . Ancak, bu işlevlerin gerçekten sanal olmadığına not edin; Bunlar bunun yerine ileti haritaları aracılığıyla uygulanır. İleti haritaları, C++ dilinin uzantılarına değil yalnızca standart Önişlemci makrolarına bağımlıdır. **Afx_msg** anahtar sözcüğü, ön işlemden sonra boşluk olarak çözümlenmektedir.
+**Afx_msg** anahtar sözcüğü, **`virtual`** diğer üye işlevlerinden Işleyicileri ayırt ederek C++ anahtar sözcüğünün etkisini önerir `CWnd` . Ancak, bu işlevlerin gerçekten sanal olmadığına not edin; Bunlar bunun yerine ileti haritaları aracılığıyla uygulanır. İleti haritaları, C++ dilinin uzantılarına değil yalnızca standart Önişlemci makrolarına bağımlıdır. **Afx_msg** anahtar sözcüğü, ön işlemden sonra boşluk olarak çözümlenmektedir.
 
 Temel sınıfta tanımlanan bir işleyiciyi geçersiz kılmak için, türetilmiş sınıfınıza aynı prototipi içeren bir işlev tanımlamanız ve işleyici için bir ileti eşleme girişi yapmanız yeterlidir. İşleyiciniz, sınıfınızın temel sınıflarından birinde aynı ada sahip herhangi bir işleyiciyi geçersiz kılar.
 
@@ -36,8 +36,8 @@ Bazı durumlarda işleyiciniz temel sınıfta geçersiz kılınan işleyiciyi ç
 
 [!code-cpp[NVC_MFCMessageHandling#3](codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
 
-Kurala göre, bu işleyicilerin adları "açık" önekiyle başlar. Bu işleyicilerden bazıları bağımsız değişken almaz, diğerleri birkaç işlem sürer. Bazıları **void**dışında bir dönüş türüne de sahiptir. Tüm **WM_** iletiler için varsayılan Işleyiciler *MFC başvurusunda* `CWnd` adı "on" ile başlayan sınıfın üye işlevleri olarak belgelenmiştir. İçindeki üye işlev bildirimlerine `CWnd` **afx_msg**ön eki eklenir.
+Kurala göre, bu işleyicilerin adları "açık" önekiyle başlar. Bu işleyicilerden bazıları bağımsız değişken almaz, diğerleri birkaç işlem sürer. Bazıları dışında bir dönüş türüne de sahiptir **`void`** . Tüm **WM_** iletiler için varsayılan Işleyiciler *MFC başvurusunda* `CWnd` adı "on" ile başlayan sınıfın üye işlevleri olarak belgelenmiştir. İçindeki üye işlev bildirimlerine `CWnd` **afx_msg**ön eki eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleyici İşlevlerini Bildirme](declaring-message-handler-functions.md)
+[Ileti Işleyici Işlevlerini bildirme](declaring-message-handler-functions.md)

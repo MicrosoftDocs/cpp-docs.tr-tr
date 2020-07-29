@@ -6,12 +6,12 @@ helpviewer_keywords:
 - streams, custom stream manipulators
 - output streams, custom stream manipulators
 ms.assetid: fa4655a7-d68f-4fea-a26e-73c3ad5c90a5
-ms.openlocfilehash: ddafa6adfb99c889ee525beb6d7bc88ed771d71e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c688ab752415309c0c3d29c6ab93c27babc65f80
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68460047"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222504"
 ---
 # <a name="custom-manipulators-with-arguments"></a>Bağımsız Değişkenlerle Birlikte Özel Manipülatörler
 
@@ -19,10 +19,10 @@ Bu bölümde bir veya daha fazla bağımsız değişkenle çıkış akışı iş
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Bir bağımsız değişkenle çıkış akışı Işleicileri](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) (**int** veya **Long**)
+[Bir bağımsız değişkenle çıkış akışı Işleicileri](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) ( **`int`** veya **`long`** )
 
-[Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri](../standard-library/other-one-argument-output-stream-manipulators.md)
+[Diğer bir bağımsız değişken çıkış akışı Işleicileri](../standard-library/other-one-argument-output-stream-manipulators.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iostream Programlaması](../standard-library/iostream-programming.md)
+[iostream programlama](../standard-library/iostream-programming.md)

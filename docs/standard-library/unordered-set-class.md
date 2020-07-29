@@ -134,18 +134,18 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 0f619ee086264dfbd18298ca2c50189894f77db8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9a19567b5878853d1fdfa86948ff1eeb37794089
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373080"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215510"
 ---
 # <a name="unordered_set-class"></a>unordered_set Sınıfı
 
-Sınıf şablonu, farklı uzunluktaki tür `const Key`öğeleridizisini kontrol eden bir nesneyi açıklar. Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe hem bir sıralama anahtarı hem de bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
+Sınıf şablonu, türünde öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar `const Key` . Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe hem bir sıralama anahtarı hem de bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -161,13 +161,13 @@ class unordered_set;
 *Anahtar*\
 Anahtar türü.
 
-*Karma*\
+*Yla*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*\
+*Tahsis*\
 Ayırıcı sınıf.
 
 ## <a name="members"></a>Üyeler
@@ -176,19 +176,19 @@ Ayırıcı sınıf.
 
 |||
 |-|-|
-|[Allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
+|[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[const_local_iterator](#const_local_iterator)|Denetlenen dizi için bir sabit demet yineleyici türü.|
-|[Const_pointer](#const_pointer)|Bir öğe için sabit bir işaretçi türü.|
+|[const_pointer](#const_pointer)|Bir öğe için sabit bir işaretçi türü.|
 |[const_reference](#const_reference)|Bir öğe için sabit bir başvuru türü.|
 |[difference_type](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|
-|[herşey](#hasher)|Karma işlevin türü.|
-|[Yineleyici](#iterator)|Denetlenen dizi için bir yineleyici türü.|
+|[karma değeri Oluşturucusu](#hasher)|Karma işlevin türü.|
+|[iden](#iterator)|Denetlenen dizi için bir yineleyici türü.|
 |[key_equal](#key_equal)|Karşılaştırma işlevinin türü.|
-|[Key_type](#key_type)|Bir sıralama anahtarının türü.|
+|[key_type](#key_type)|Bir sıralama anahtarının türü.|
 |[local_iterator](#local_iterator)|Denetlenen dizi için bir demet yineleyici türü.|
 |[pointer](#pointer)|Bir öğe için bir işaretçi türü.|
-|[Başvuru](#reference)|Bir öğe için bir başvuru türü.|
+|[başvurunun](#reference)|Bir öğe için bir başvuru türü.|
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
@@ -196,51 +196,51 @@ Ayırıcı sınıf.
 
 |||
 |-|-|
-|[Başlamak](#begin)|Denetlenen dizinin başlangıcını belirtir.|
-|[Kova](#bucket)|Bir anahtar değeri için demet numarasını alır.|
+|[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
+|[demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|
 |[bucket_count](#bucket_count)|Demet sayısını alır.|
 |[bucket_size](#bucket_size)|Demet boyutunu alır.|
 |[cbegin](#cbegin)|Denetlenen dizinin başlangıcını belirtir.|
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
-|[Temizleyin](#clear)|Tüm öğeleri kaldırır.|
-|[Sayısı](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
-|[emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
+|[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
+|[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
+|[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
 |[empty](#empty)|Bir öğe olup olmadığını sınar.|
-|[Son -unda](#end)|Denetlenen dizinin bitişini belirtir.|
+|[erer](#end)|Denetlenen dizinin bitişini belirtir.|
 |[equal_range](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|
-|[Silmek](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
+|[silme](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
 |[find](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
-|[Get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
+|[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
-|[Ekle](#insert)|Öğeleri ekler.|
+|[ekleyin](#insert)|Öğeleri ekler.|
 |[key_eq](#key_eq)|Depolanan karşılaştırma işlevi nesnesini alır.|
 |[load_factor](#load_factor)|Demet başına ortalama öğeyi sayar.|
 |[max_bucket_count](#max_bucket_count)|En yüksek demet sayısını alır.|
 |[max_load_factor](#max_load_factor)|Demet başına en yüksek öğe sayısını alır veya ayarlar.|
 |[max_size](#max_size)|Denetlenen dizinin en büyük boyutunu alır.|
-|[Rehash](#rehash)|Karma tabloyu yeniden oluşturur.|
-|[Boyutu](#size)|Öğe sayısını sayar.|
-|[Takas](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
-|[Unordered_set](#unordered_set)|Bir kapsayıcı nesnesi oluşturur.|
+|[rehash](#rehash)|Karma tabloyu yeniden oluşturur.|
+|[boyutla](#size)|Öğe sayısını sayar.|
+|[Kur](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|
+|[unordered_set](#unordered_set)|Bir kapsayıcı nesnesi oluşturur.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[unordered_set::operator=](#op_eq)|Bir karma tabloya kopyalar.|
+|[unordered_set:: operator =](#op_eq)|Bir karma tabloya kopyalar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne, denetlediği sırayı iki depolanan nesneyi, unordered_set türünden bir karşılaştırma işlevi nesnesini çağırarak [sıralar:key_equal](#key_equal) ve [unordered_set::unordered_set.](#hasher) Üye işlevunordered_set çağırarak ilk depolanan nesneye erişin::key_eq; [unordered_set::key_eq](#key_eq)`()` ve üye işlevi unordered_set çağırarak ikinci depolanan nesneye erişin::hash_function [unordered_set::hash_function](#hash)`()`. Özellikle, tüm `X` değerler `Y` ve `Key`tür `key_eq()(X, Y)` için, çağrı yalnızca iki bağımsız değişken değerleri eşdeğer sıralama varsa doğru döndürür; çağrı `hash_function()(keyval)` türüdeğerlerinin `size_t`dağılımını verir. [Sınıf şablonu unordered_multiset](../standard-library/unordered-multiset-class.md)Sınıf'ın `unordered_set` aksine, `key_eq()(X, Y)` bir tür nesnesi, denetlenir dizinin herhangi iki öğesi için her zaman yanlış olmasını sağlar. (Anahtarlar benzersizdir.)
+Nesne, iki saklı nesneyi çağırarak denetlediği sırayı, [unordered_set:: key_equal](#key_equal) türünde bir karşılaştırma işlev nesnesi ve [unordered_set:: hasher](#hasher)türünde bir karma işlev nesnesi olarak sıralar. [Unordered_set:: key_eq](#key_eq); üye işlevini çağırarak `()` ve ikinci saklı nesneye eriştiğinizde, [unordered_set:: hash_function](#hash)üye işlevini çağırarak, ilk depolanan nesneye erişirsiniz `()` . Özellikle, tüm değerleri `X` ve `Y` türü için `Key` , çağrı `key_eq()(X, Y)` yalnızca iki bağımsız değişken değeri eşdeğer sıralama içeriyorsa true değerini döndürür; çağrı, `hash_function()(keyval)` türündeki değerlerin bir dağılımını verir `size_t` . Sınıf şablonu [unordered_multiset sınıfından](../standard-library/unordered-multiset-class.md)farklı olarak, türündeki bir nesne `unordered_set` `key_eq()(X, Y)` denetimli sıranın herhangi iki öğesi için her zaman false olur. (Anahtarlar benzersizdir.)
 
-Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yüksek yük faktörünü depolar. Bir öğe eklemek unordered_set neden [oluyorsa::load_factor](#load_factor) `()` maksimum yük faktörlerini aşması için, kapsayıcı kova sayısını artırır ve gerektiğinde karma tabloyu yeniden çalışır.
+Nesne ayrıca, demet başına istenen ortalama öğe sayısını belirten en yüksek yük faktörünü depolar. Bir öğe eklemek [unordered_set:: load_factor](#load_factor) `()` en fazla yük faktörünü aşmasına neden olursa kapsayıcı, demetlerin sayısını artırır ve gerekirse karma tabloyu yeniden oluşturur.
 
 Denetlenen dizideki öğelerin gerçek sırası karma işleve, karşılaştırma işlevine, ekleme sırasına, en yüksek yük faktörüne ve geçerli demet sayısına bağlıdır. Denetlenen dizideki öğelerin sırasını genelde tahmin edemezsiniz. Ancak, eşdeğer sıralamaya sahip öğelerin herhangi bir alt kümesinin her zaman denetlenen dizide bitişik olduğundan emin olabilirsiniz.
 
-Nesne, [unordered_set::allocator_type](#allocator_type)türünde depolanmış bir ayırıcı nesne aracılığıyla denetlenen sıra için depolama yı ayırır ve boşaltır. Böyle bir ayırıcı nesne türünde `allocator`bir nesne olarak aynı dış arabirime sahip olmalıdır. Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
+Nesnesi, [unordered_set:: allocator_type](#allocator_type)türünde depolanan bir ayırıcı nesne aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Böyle bir ayırıcı nesne, türünde bir nesne ile aynı dış arabirime sahip olmalıdır `allocator` . Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
 
-## <a name="unordered_setallocator_type"></a><a name="allocator_type"></a>unordered_set:allocator_type
+## <a name="unordered_setallocator_type"></a><a name="allocator_type"></a>unordered_set:: allocator_type
 
 Depolamayı yönetmek için bir ayırıcı türü.
 
@@ -250,7 +250,7 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Alloc`ile eş anlamlıdır.
+Tür, şablon parametresi için bir eş anlamlı `Alloc` .
 
 ### <a name="example"></a>Örnek
 
@@ -278,9 +278,9 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="begin"></a><a name="begin"></a>Başlamak
+## <a name="begin"></a><a name="begin"></a>başladı
 
-Denetedilen dizinin veya kovanın başlangıcını belirtir.
+Denetlenen sıranın veya bir demetini başlangıcını belirtir.
 
 ```cpp
 iterator begin();
@@ -295,11 +295,11 @@ const_local_iterator begin(size_type nbucket) const;
 ### <a name="parameters"></a>Parametreler
 
 *nbucket*\
-Kova numarası.
+Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işlev, dizinin ilk öğesini (veya boş bir dizinin sonundan hemen sonra) işaret eden bir ileri yineleme döndürür. Son iki üye işlev, kova *nbucket'ın* ilk elemanını (veya boş bir kovanın sonundan hemen sonra) işaret eden bir ileri yineleyici döndürür.
+İlk iki üye işlevi, dizinin ilk öğesine (veya boş bir sıranın sonuna kadar) işaret eden bir ileri yineleyici döndürür. Son iki üye işlevi, demet *nbucket* 'un ilk öğesini işaret eden bir ileri yineleyici döndürür (veya boş bir demet sonunun ötesinde).
 
 ### <a name="example"></a>Örnek
 
@@ -357,7 +357,7 @@ int main()
 [a]
 ```
 
-## <a name="bucket"></a><a name="bucket"></a>Kova
+## <a name="bucket"></a><a name="bucket"></a>demet
 
 Bir anahtar değeri için demet numarasını alır.
 
@@ -368,11 +368,11 @@ size_type bucket(const Key& keyval) const;
 ### <a name="parameters"></a>Parametreler
 
 *keyval*\
-Haritalamanın anahtar değeri.
+Eşlenecek anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev şu anda anahtar değeri *anahtarval'ına*karşılık gelen kova numarasını döndürür.
+Üye işlevi, anahtar değeri *keyval*'e Şu anda karşılık gelen demet numarasını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -422,7 +422,7 @@ size_type bucket_count() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev geçerli kova sayısını döndürür.
+Üye işlevi, geçerli demet sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -499,7 +499,7 @@ max_load_factor() == 0.1
 
 ## <a name="bucket_size"></a><a name="bucket_size"></a>bucket_size
 
-Kova boyutunu alır
+Bir demet boyutunu alır
 
 ```cpp
 size_type bucket_size(size_type nbucket) const;
@@ -508,11 +508,11 @@ size_type bucket_size(size_type nbucket) const;
 ### <a name="parameters"></a>Parametreler
 
 *nbucket*\
-Kova numarası.
+Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevler kova numarası *nbucket*boyutunu döndürür.
+Üye işlevleri, *nbucket*demet sayısı boyutunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -554,7 +554,7 @@ bucket_size(7) == 1
 
 ## <a name="cbegin"></a><a name="cbegin"></a>cbegin
 
-Aralıktaki ilk öğeyi ele alan bir **const** yineleyici döndürür.
+**`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const;
@@ -562,13 +562,13 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aralığın ilk öğesini veya boş aralığın sonundaki konumu işaret eden bir **const** ileri erişim yineleyicisi `cbegin() == cend()`(boş bir aralık için).
+**`const`** Aralığın ilk öğesine veya boş bir aralığın sonundaki konuma (boş bir Aralık için) işaret eden ileri erişimli bir yineleyici `cbegin() == cend()` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İade değeri ile `cbegin`aralıktaki öğeler değiştirilemez.
+Dönüş değeri ile `cbegin` , aralıktaki öğeler değiştirilemez.
 
-Bu üye `begin()` işlevini, iade değerinin `const_iterator`. Genellikle, aşağıdaki örnekte gösterildiği gibi [otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, herhangi `Container` bir tür değiştirilebilir (non-const) kapsayıcı ve `begin()` destekler `cbegin()`düşünün. **const**
+`begin()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `begin()` `cbegin()` .
 
 ```cpp
 auto i1 = Container.begin();
@@ -580,7 +580,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a><a name="cend"></a>cend
 
-Bir aralıktaki son öğenin hemen ötesinde konuma hitap eden bir **const** yineleyici döndürür.
+**`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const;
@@ -588,13 +588,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aralığın sonuna işaret eden **bir const** ileri erişim yineleyicisi.
+**`const`** Yalnızca aralığın sonunu işaret eden ileri erişimli bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`bir yineleyicinin aralığının sonundan geçip geçmediğini test etmek için kullanılır.
+`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
-Bu üye `end()` işlevini, iade değerinin `const_iterator`. Genellikle, aşağıdaki örnekte gösterildiği gibi [otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, herhangi `Container` bir tür değiştirilebilir (non-const) kapsayıcı ve `end()` destekler `cend()`düşünün. **const**
+`end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
 ```cpp
 auto i1 = Container.end();
@@ -604,9 +604,9 @@ auto i2 = Container.cend();
 // i2 isContainer<T>::const_iterator
 ```
 
-Döndürülen `cend` değer dereferenced olmamalıdır.
+Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
-## <a name="clear"></a><a name="clear"></a>Temizleyin
+## <a name="clear"></a><a name="clear"></a>lediğiniz
 
 Tüm öğeleri kaldırır.
 
@@ -616,7 +616,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev [unordered_set çağırır::sil](#erase) `(` [unordered_set::unordered_set](#begin) `(),` [başlat::son](#end)`())`.
+Üye işlevi [unordered_set:: Erase](#erase) `(` [unordered_set:: BEGIN](#begin) `(),` [unordered_set:: End](#end)' i çağırır `())` .
 
 ### <a name="example"></a>Örnek
 
@@ -670,7 +670,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a><a name="const_iterator"></a>Const_iterator
+## <a name="const_iterator"></a><a name="const_iterator"></a>const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -680,7 +680,7 @@ typedef T1 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizi için sabit bir ileri gösterici olarak hizmet verebilen bir nesneyi açıklar. Burada uygulama tanımlı türü `T1`için eşanlamlı olarak tanımlanır.
+Türü, denetimli sıra için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır `T1` .
 
 ### <a name="example"></a>Örnek
 
@@ -722,7 +722,7 @@ typedef T5 const_local_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bir kova için sabit bir ileri yönlü yineleyici olarak hizmet verebilen bir nesneyi açıklar. Burada uygulama tanımlı türü `T5`için eşanlamlı olarak tanımlanır.
+Türü, bir demet için sabit bir ileri Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır `T5` .
 
 ### <a name="example"></a>Örnek
 
@@ -759,7 +759,7 @@ int main()
 [a]
 ```
 
-## <a name="const_pointer"></a><a name="const_pointer"></a>Const_pointer
+## <a name="const_pointer"></a><a name="const_pointer"></a>const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -769,7 +769,7 @@ typedef Alloc::const_pointer const_pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizinin bir öğesiiçin sabit bir işaretçi olarak hizmet verebilen bir nesneyi açıklar.
+Türü, denetlenen dizinin bir öğesi için sabit bir işaretçi olarak kullanılabilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -804,7 +804,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_reference"></a><a name="const_reference"></a>Const_reference
+## <a name="const_reference"></a><a name="const_reference"></a>const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -814,7 +814,7 @@ typedef Alloc::const_reference const_reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizinin bir öğesine sabit bir başvuru olarak hizmet verebilecek bir nesneyi açıklar.
+Türü, denetlenen dizinin bir öğesine sabit başvuru olarak işlev yapabilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -849,7 +849,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="count"></a><a name="count"></a>Sayısı
+## <a name="count"></a><a name="count"></a>biriktirme
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -864,7 +864,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, aralıktaki öğe sayısını unordered_set ile sınırlandırılarak döndürür::equal_range. [unordered_set::equal_range](#equal_range)`(keyval)`
+Üye işlevi [unordered_set:: equal_range](#equal_range)ile ayrılmış aralıktaki öğe sayısını döndürür `(keyval)` .
 
 ### <a name="example"></a>Örnek
 
@@ -913,7 +913,7 @@ typedef T3 difference_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzalı bir sonraki gün türü, denetlenebilir sırada herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi açıklar. Burada uygulama tanımlı türü `T3`için eşanlamlı olarak tanımlanır.
+İmzalanan tamsayı türü, denetlenen dizideki herhangi iki öğenin adresleri arasındaki farkı temsil eden bir nesneyi tanımlar. Burada uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır `T3` .
 
 ### <a name="example"></a>Örnek
 
@@ -959,7 +959,7 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-## <a name="emplace"></a><a name="emplace"></a>emplace
+## <a name="emplace"></a><a name="emplace"></a>Emplace
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz).
 
@@ -972,26 +972,26 @@ Args&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-*Args*\
-Değer eşit olarak sıralanmış bir öğe içermediği sürece, unordered_set eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+*args*\
+Değeri equivalently olarak sıralanmış bir öğe içermiyorsa, unordered_set içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ekleme yapılmışsa **bool** bileşeni doğru döndürür `unordered_set` ve anahtar siparişte eşdeğer değere sahip bir öğe içeriyorsa ve yineleyici bileşeni yeni bir öğenin eklendiği veya öğenin bulunduğu adresi döndürür. `pair`
+Bir `pair` **`bool`** ekleme yapılırsa ve `unordered_set` anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa ve yineleyici bileşeni yeni bir öğenin eklendiği veya öğenin zaten bulunduğu adresi döndüren bir öğe içeriyorsa, bu bileşen bir ekleme işlemi yapıldıktan sonra true değerini döndürür.
 
-Bu üye işlev tarafından döndürülen `pr` bir çiftin yineleyici `pr.first`bileşenine erişmek için, `*(pr.first)`bunu kullanmak ve dereference için, kullanın . Bu üye işlev tarafından döndürülen bir çiftin `pr` **bool** bileşenine erişmek `pr.second`için.
+Bu üye işlevi tarafından döndürülen bir çiftin Yineleyici bileşenine erişmek için, `pr` kullanın ve öğesini kullanın `pr.first` `*(pr.first)` . **`bool`** `pr` Bu üye işlevi tarafından döndürülen bir çiftin bileşenine erişmek için kullanın `pr.second` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev tarafından hiçbir yineleyici veya başvuru geçersiz kılındı.
+Bu işlev tarafından hiçbir yineleyiciler veya başvuru geçersiz kılınmamıştır.
 
-Ekleme sırasında, bir özel durum atılırsa ancak kapsayıcının karma işlevinde oluşmazsa, kapsayıcı değiştirilmez. Özel durum karma işlevine atılırsa, sonuç tanımsız olur.
+Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmezse kapsayıcı değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır.
 
-Kod örneği için [bkz: set.:emplace](../standard-library/set-class.md#emplace).
+Kod örneği için bkz. [set:: emplace](../standard-library/set-class.md#emplace).
 
 ## <a name="emplace_hint"></a><a name="emplace_hint"></a>emplace_hint
 
-Yerine oluşturulmuş bir öğe ekler (kopya veya taşıma işlemleri yapılmaz), bir yerleşim ipucu ile.
+Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
 ```cpp
 template <class... Args>
@@ -1002,27 +1002,27 @@ Args&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-*Args*\
-unordered_set bu öğeyi zaten içermediği veya daha genel olarak, anahtarı eşit olarak sıralanmış bir öğe içermediği sürece, unordered_set eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+*args*\
+Unordered_set zaten bu öğeyi içermediği veya daha önce anahtarı equivalently sıralı bir öğe içermediğinden, unordered_set içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
 
-*Nerede*\
-Doğru ekleme noktasını aramaya başlamak için yerle ilgili bir ipucu.
+*olmadığı*\
+Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni eklenen öğeiçin bir yineleyici.
+Yeni eklenmekte olan öğe için bir yineleyici.
 
-Öğe zaten var olduğu için ekleme başarısız olduysa, varolan öğeye bir yineleyici döndürür.
+Öğe zaten mevcut olduğundan ekleme başarısız olursa, varolan öğeye bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev tarafından hiçbir yineleyici veya başvuru geçersiz kılındı.
+Bu işlev tarafından hiçbir yineleyiciler veya başvuru geçersiz kılınmamıştır.
 
-Ekleme sırasında, bir özel durum atılırsa ancak kapsayıcının karma işlevinde oluşmazsa, kapsayıcı değiştirilmez. Özel durum karma işlevine atılırsa, sonuç tanımsız olur.
+Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmezse kapsayıcı değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır.
 
-Kod örneği için [bkz: set:emplace_hint.](../standard-library/set-class.md#emplace_hint)
+Kod örneği için bkz. [set:: emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-## <a name="empty"></a><a name="empty"></a>Boş
+## <a name="empty"></a><a name="empty"></a>olmamalıdır
 
 Bir öğe olup olmadığını sınar.
 
@@ -1032,7 +1032,7 @@ bool empty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev boş bir kontrollü dizi için doğru döndürür.
+Üye işlevi boş bir denetlenen dizi için true döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1086,7 +1086,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a><a name="end"></a>Son -unda
+## <a name="end"></a><a name="end"></a>erer
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -1103,11 +1103,11 @@ const_local_iterator end(size_type nbucket) const;
 ### <a name="parameters"></a>Parametreler
 
 *nbucket*\
-Kova numarası.
+Demet numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işlev, dizinin sonundan hemen ötesine işaret eden bir ileri yineleme döndürer. Son iki üye işlev, kova *nbucket'ın*sonuna doğru işaret eden bir ileri yineleme döndürmektedir.
+İlk iki üye işlevi, dizinin sonunun hemen ötesinde işaret eden bir ileri yineleyici döndürür. Son iki üye işlevi, demet *nbucket*'un sonuna işaret eden bir ileri yineleyici döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1173,7 +1173,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, *anahtarval*ile `X` eşdeğer`[X.first, X.second)` sıraya sahip kontrollü dizinin sadece bu öğelerini sınırlandıran bir çift yineleyici döndürür. Bu tür öğeler yoksa, her `end()`iki yineleyici.
+Üye işlevi, `X` `[X.first, X.second)` yalnızca *keyval*ile eşdeğer sıralamaya sahip olan denetimli dizinin öğelerini sınırlandıran bir çift yineleyiciyi döndürür. Böyle bir öğe yoksa, her iki yineleyiciler de vardır `end()` .
 
 ### <a name="example"></a>Örnek
 
@@ -1222,9 +1222,9 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-## <a name="erase"></a><a name="erase"></a>Silmek
+## <a name="erase"></a><a name="erase"></a>silme
 
-Unordered_set bir öğeyi veya bir öğe aralığını belirtilen konumlardan kaldırır veya belirtilen anahtarla eşleşen öğeleri kaldırır.
+Belirtilen konumlardan bir unordered_set öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
 ```cpp
 iterator erase(const_iterator Where);
@@ -1236,29 +1236,29 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nerede*\
+*Olmadığı*\
 Kaldırılacak öğenin konumu.
 
-*Ilk*\
+*Adı*\
 Kaldırılacak ilk öğenin konumu.
 
-*Son*\
-Kaldırılacak son öğenin hemen ötesine yerleştirin.
+*Soyadına*\
+Kaldırılacak son öğenin hemen ötesinde konumlandır.
 
 *Anahtar*\
 Kaldırılacak öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlev için, kaldırılan öğelerin ötesinde kalan ilk öğeyi belirleyen çift yönlü bir yineleyici veya böyle bir öğe yoksa unordered_set sonu olan bir öğe.
+İlk iki üye işlevi için, kaldırılan öğelerin dışında kalan ilk öğeyi veya böyle bir öğe yoksa unordered_set sonu olan bir öğeyi atayan çift yönlü bir yineleyici.
 
-Üçüncü üye işlev için, unordered_set kaldırılan öğelerin sayısını döndürür.
+Üçüncü üye işlevi için, unordered_set kaldırılan öğelerin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kod örneği için [bkz: set::sil](../standard-library/set-class.md#erase).
+Kod örneği için bkz. [set:: Erase](../standard-library/set-class.md#erase).
 
-## <a name="find"></a><a name="find"></a>Bul
+## <a name="find"></a><a name="find"></a>bilgi
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -1273,7 +1273,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev unordered_set döndürür::equal_range [unordered_set::equal_range](#equal_range)`(keyval).first`.
+Üye işlevi [unordered_set:: equal_range](#equal_range)döndürür `(keyval).first` .
 
 ### <a name="example"></a>Örnek
 
@@ -1317,7 +1317,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>Get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
 
 Depolanan ayırıcı nesnesini alır.
 
@@ -1327,7 +1327,7 @@ Alloc get_allocator() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev depolanan allocator nesnesini döndürür.
+Üye işlevi, depolanan ayırıcı nesnesini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1365,7 +1365,7 @@ Hash hash_function() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev depolanan karma işlev nesnesini döndürür.
+Üye işlevi, depolanan karma işlevi nesnesini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1393,7 +1393,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="hasher"></a><a name="hasher"></a>herşey
+## <a name="hasher"></a><a name="hasher"></a>karma değeri Oluşturucusu
 
 Karma işlevin türü.
 
@@ -1403,7 +1403,7 @@ typedef Hash hasher;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Hash`ile eş anlamlıdır.
+Tür, şablon parametresi için bir eş anlamlı `Hash` .
 
 ### <a name="example"></a>Örnek
 
@@ -1431,9 +1431,9 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a><a name="insert"></a>Ekle
+## <a name="insert"></a><a name="insert"></a>ekleyin
 
-Bir öğeyi veya bir öğe aralığını unordered_set ekler.
+Bir unordered_set öğe veya öğe aralığı ekler.
 
 ```cpp
 // (1) single element
@@ -1460,54 +1460,54 @@ void insert(initializer_list<value_type> IList);
 
 ### <a name="parameters"></a>Parametreler
 
-*Val*\
-Anahtar eşdeğer sıralanmış bir öğe yi içermediği sürece unordered_set eklenecek bir öğenin değeri.
+*Acil*\
+Anahtarı equivalently olarak sıralanmış bir öğe içermiyorsa, unordered_set eklenecek öğenin değeri.
 
-*Nerede*\
+*Olmadığı*\
 Doğru ekleme noktasını aramaya başlamak için yer.
 
-*Valty*\
-unordered_set [value_type](../standard-library/map-class.md#value_type)bir öğe oluşturmak için kullanabileceğiniz bağımsız değişken türünü belirten şablon parametresi ve bir bağımsız değişken olarak *Val'i* mükemmel iletme.
+*ValTy*\
+Unordered_set, [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız değişken olarak *kusursuz iletme değeri* .
 
-*Ilk*\
+*Adı*\
 Kopyalanacak ilk öğenin konumu.
 
-*Son*\
-Kopyalanacak son öğenin hemen ötesindeki konum.
+*Soyadına*\
+Kopyalanacak son öğenin hemen ötesinde konum.
 
-*GirişIterator*\
-Value_type [nesneleri](../standard-library/map-class.md#value_type) oluşturmak için kullanılabilecek bir tür öğeleri işaret eden bir [giriş yineleyici](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlev bağımsız değişkeni.
+*InputIterator*\
+[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.
 
-*ılist*\
-Öğeleri kopyalamak için [initializer_list.](../standard-library/initializer-list.md)
+*IList*\
+Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tek öğeli üye işlevler, (1) ve (2), bir ekleme yapıldıysa **bool** bileşeni doğru olan bir [çifti](../standard-library/pair-structure.md) döndürür ve unordered_set anahtar siparişte eşdeğer değere sahip bir öğe içeriyorsa yanlış. İade değeri çiftinin yineleyici bileşeni, **bool** bileşeni doğruysa yeni eklenen öğeyi veya **bool** bileşeni yanlışsa varolan öğeyi işaret eder.
+Tek öğeli üye işlevleri, (1) ve (2), [pair](../standard-library/pair-structure.md) **`bool`** bir ekleme yapılırsa bileşeni doğru olan bir çift döndürür ve unordered_set zaten anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa false. Return-Value çiftinin yineleyici bileşeni, bileşen true ise yeni ınsertedelement öğesine **`bool`** veya bileşen false ise var olan öğeye işaret eder **`bool`** .
 
-İpucu ile tek elemanlı üye işlevler( 3) ve (4), yeni öğenin unordered_set veya eşdeğer anahtara sahip bir öğe varsa varolan öğeye eklenen konumu gösteren bir yineleyici döndürür.
+Tek öğeli-ipucu üye işlevleri, (3) ve (4), yeni öğenin unordered_set eklendiği konuma ya da eşdeğer anahtara sahip bir öğe zaten varsa var olan öğeye işaret eden bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev tarafından geçersiz kılınan hiçbir yineleyici, işaretçi veya başvuru, geçersiz kılındı.
+Bu işlev tarafından hiçbir yineleyiciler, işaretçiler veya başvuru geçersiz kılınamaz.
 
-Tek bir öğenin eklenmesi sırasında, bir özel durum atılırsa ancak kapsayıcının karma işlevinde oluşmazsa, kapsayıcının durumu değiştirilmez. Özel durum karma işlevine atılırsa, sonuç tanımsız olur. Birden çok öğe nin eklenmesi sırasında, bir özel durum atılırsa, kapsayıcı belirtilmemiş ancak geçerli bir durumda bırakılır.
+Yalnızca bir öğenin eklenmesi sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma işlevinde gerçekleşmemişse kapsayıcının durumu değiştirilmez. Karma işlevde özel durum oluşturulursa, sonuç tanımsızdır. Birden çok öğenin eklenmesi sırasında, bir özel durum oluşturulursa, kapsayıcı belirtilmemiş ancak geçerli bir durumda bırakılır.
 
-Tek öğeli üye işlevler `pair` `pr` tarafından döndürülen bir öğenin yineleyici `pr.first`bileşenine erişmek için; döndürülen çift içindeki yineleyiciyi dereference`*pr.first`için, kullanmak , bir öğe vererek. **Bool** bileşenine erişmek `pr.second`için. Örneğin, bu makalede daha sonra örnek koduna bakın.
+`pair` `pr` Tek öğeli üye işlevleri tarafından döndürülen bir ' ın Yineleyici bileşenine erişmek için, `pr.first` öğesini kullanın; döndürülen çiftin içindeki yineleyiciyi başvuru olarak kullanın `*pr.first` . Bileşene erişmek için **`bool`** kullanın `pr.second` . Örnek için, bu makalenin ilerleyen kısımlarında örnek koda bakın.
 
-Bir kapsayıcının [value_type](../standard-library/map-class.md#value_type) kapsayıcıya ait bir typedef ve küme `unordered_set<V>::value_type` için `const V`türü.
+Kapsayıcının [value_type](../standard-library/map-class.md#value_type) , kapsayıcıya ait olan bir typedef ve set için `unordered_set<V>::value_type` tür `const V` .
 
-Aralık üye işlevi (5), aralıktaki bir yineleme tarafından ele verilen her öğeye karşılık gelen bir unordered_set `[First, Last)`öğe değerlerinin sırasını ekler; bu nedenle, *Son* takılı almaz. Kapsayıcı üye `end()` işlevi, kapsayıcıdaki son öğeden hemen sonra konumu ifade `s.insert(v.begin(), v.end());` eder—örneğin, deyim `v` `s`tüm öğeleri ni eklemeye çalışır. Yalnızca aralıkta benzersiz değerlere sahip öğeler eklenir; yinelenenler yoksayılır. Hangi öğelerin `insert`reddedildiğini gözlemlemek için, tek öğeli sürümlerini kullanın.
+Aralık üye işlevi (5), öğe değerlerinin dizisini aralıktaki bir yineleyici tarafından bahsedilen her öğeye karşılık gelen bir unordered_set ekler `[First, Last)` ; Bu nedenle, *Last* eklenmez. Kapsayıcı üye işlevi, `end()` kapsayıcıdaki son öğeden hemen sonra gelen konuma başvurur — Örneğin, ifade öğesine `s.insert(v.begin(), v.end());` tüm öğelerini eklemeye çalışır `v` `s` . Yalnızca aralıktaki benzersiz değerlere sahip öğeler eklenir; yinelemeler yoksayıldı. Hangi öğelerin reddedildiğini gözlemlemek için, öğesinin tek öğeli sürümlerini kullanın `insert` .
 
-Initializer list üye işlevi (6) unordered_set öğeleri kopyalamak için bir [initializer_list](../standard-library/initializer-list.md) kullanır.
+Başlatıcı listesi üye işlevi (6), öğeleri unordered_set kopyalamak için bir [initializer_list](../standard-library/initializer-list.md) kullanır.
 
-Yerinde inşa edilmiş bir öğenin eklenmesi için-yani, hiçbir kopyalama veya taşıma işlemleri gerçekleştirilir-bkz: [set::emplace](../standard-library/set-class.md#emplace) ve [set::emplace_hint](../standard-library/set-class.md#emplace_hint).
+Yerinde oluşturulmuş bir öğenin eklenmesi için — diğer bir deyişle, kopyalama veya taşıma işlemleri yapılmaz — bkz. [set:: emplace](../standard-library/set-class.md#emplace) ve [set:: emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-Kod örneği için [bkz: set:insert](../standard-library/set-class.md#insert).
+Kod örneği için bkz. [set:: insert](../standard-library/set-class.md#insert).
 
-## <a name="iterator"></a><a name="iterator"></a>Yineleyici
+## <a name="iterator"></a><a name="iterator"></a>iden
 
-Unordered_set öğeleri okuyabilen sabit bir [ileri yineleme](../standard-library/forward-iterator-tag-struct.md) sağlayan bir tür.
+Bir unordered_set öğeleri okuyabilen sabit bir [İleri Yineleyici](../standard-library/forward-iterator-tag-struct.md) sağlayan bir tür.
 
 ```cpp
 typedef implementation-defined iterator;
@@ -1515,7 +1515,7 @@ typedef implementation-defined iterator;
 
 ### <a name="example"></a>Örnek
 
-Bir**yineleyicinin**nasıl bildirilip kullanılacağına ilgili bir örnek için [başlangıç](../standard-library/set-class.md#begin) örneğine bakın.
+**Yineleyici**bildirme ve kullanma [begin](../standard-library/set-class.md#begin) örneğine örnek olarak bkz..
 
 ## <a name="key_eq"></a><a name="key_eq"></a>key_eq
 
@@ -1527,7 +1527,7 @@ Pred key_eq() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev depolanan karşılaştırma işlevi nesnesini döndürür.
+Üye işlevi, saklı karşılaştırma işlevi nesnesini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1567,7 +1567,7 @@ typedef Pred key_equal;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Pred`ile eş anlamlıdır.
+Tür, şablon parametresi için bir eş anlamlı `Pred` .
 
 ### <a name="example"></a>Örnek
 
@@ -1597,7 +1597,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a><a name="key_type"></a>Key_type
+## <a name="key_type"></a><a name="key_type"></a>key_type
 
 Bir sıralama anahtarının türü.
 
@@ -1607,7 +1607,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Key`ile eş anlamlıdır.
+Tür, şablon parametresi için bir eş anlamlı `Key` .
 
 ### <a name="example"></a>Örnek
 
@@ -1659,7 +1659,7 @@ float load_factor() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev`(float)`[unordered_set döndürür::boyut](#size)`() / (float)`[unordered_set::bucket_count,](#bucket_count)`()`kova başına ortalama eleman sayısı.
+Üye işlevi `(float)` [unordered_set:: size](#size) `() / (float)` [unordered_set:: bucket_count](#bucket_count) `()` , demet başına düşen ortalama öğe sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1736,7 +1736,7 @@ max_load_factor() == 0.1
 
 ## <a name="local_iterator"></a><a name="local_iterator"></a>local_iterator
 
-Kova yineleyici türü.
+Demet yineleyicisinin türü.
 
 ```cpp
 typedef T4 local_iterator;
@@ -1744,7 +1744,7 @@ typedef T4 local_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, kova için ileri yönlendirme reertörü olarak hizmet verebilen bir nesneyi açıklar. Burada uygulama tanımlı türü `T4`için eşanlamlı olarak tanımlanır.
+Türü, bir demet için ileriye doğru Yineleyici işlevi görebilecek bir nesneyi tanımlar. Burada uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır `T4` .
 
 ### <a name="example"></a>Örnek
 
@@ -1791,7 +1791,7 @@ size_type max_bucket_count() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, şu anda izin verilen en fazla kova sayısını döndürür.
+Üye işlevi, şu anda izin verilen en fazla demet sayısını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1878,12 +1878,12 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*Faktörü*\
-Yeni maksimum yük faktörü.
+*çarpan*\
+Yeni en yüksek yük faktörü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev depolanan maksimum yük faktörlerini döndürür. İkinci üye işlev, depolanan maksimum yük faktörlü *faktörün*yerine alır.
+İlk üye işlevi, depolanan en fazla yük faktörünü döndürür. İkinci üye işlevi, saklı maksimum yük faktörünü *faktörle*değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -1968,7 +1968,7 @@ size_type max_size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, nesnenin denetleyebileceği en uzun dizinin uzunluğunu döndürür.
+Üye işlevi, nesnenin denetleyecan en uzun sırasının uzunluğunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1993,7 +1993,7 @@ int main()
 max_size() == 4294967295
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç=
+## <a name="operator"></a><a name="op_eq"></a>işleç =
 
 Bir karma tabloya kopyalar.
 
@@ -2005,12 +2005,12 @@ unordered_set& operator=(unordered_set&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Doğru*\
-[unordered_set](../standard-library/unordered-set-class.md) `unordered_set`kopyalanıyor.
+*Right*\
+İçine kopyalandığı [unordered_set](../standard-library/unordered-set-class.md) `unordered_set` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir'deki varolan öğeleri `unordered_set`silersonra, `operator=` *sağın* içeriğini kopyalar veya `unordered_set`taşır.
+İçindeki varolan öğeleri sildikten sonra `unordered_set` , ' `operator=` nin içeriğini kopyalar ya da içine *taşısa* `unordered_set` .
 
 ### <a name="example"></a>Örnek
 
@@ -2049,7 +2049,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a><a name="pointer"></a>Işaretçi
+## <a name="pointer"></a><a name="pointer"></a>çağrısı
 
 Bir öğe için bir işaretçi türü.
 
@@ -2059,7 +2059,7 @@ typedef Alloc::pointer pointer;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizinin bir öğesine işaretçi olarak hizmet veren bir nesneyi açıklar.
+Türü, denetlenen sıranın bir öğesi için bir işaretçi olarak işlev görebilecek bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2095,7 +2095,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="reference"></a><a name="reference"></a>Başvuru
+## <a name="reference"></a><a name="reference"></a>başvurunun
 
 Bir öğe için bir başvuru türü.
 
@@ -2105,7 +2105,7 @@ typedef Alloc::reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen dizinin bir öğesine başvuru olarak hizmet verebilecek bir nesneyi açıklar.
+Türü, denetlenen sıranın bir öğesine başvuru olarak işlev görebilecek bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2141,7 +2141,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="rehash"></a><a name="rehash"></a>Rehash
+## <a name="rehash"></a><a name="rehash"></a>rehash
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2151,12 +2151,12 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*nbuckets*\
-İstenen kova sayısı.
+*ndemet 'ler*\
+İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, kova sayısını en az *nbucket* olarak değiştirir ve gerektiğinde karma tabloyu yeniden çalışır.
+Üye işlevi, demetlerin sayısını en az *ndemetler* olacak şekilde değiştirir ve karma tabloyu gerektiği gibi yeniden oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -2218,7 +2218,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-## <a name="size"></a><a name="size"></a>Boyutu
+## <a name="size"></a><a name="size"></a>boyutla
 
 Öğe sayısını sayar.
 
@@ -2228,7 +2228,7 @@ size_type size() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, denetitilen dizinin uzunluğunu döndürür.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -2283,7 +2283,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a><a name="size_type"></a>Size_type
+## <a name="size_type"></a><a name="size_type"></a>size_type
 
 İki öğe arasındaki işaretsiz bir mesafenin türü.
 
@@ -2293,7 +2293,7 @@ typedef T2 size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İmzasız tümsavar türü, denetlenebilir herhangi bir dizinin uzunluğunu temsil eden bir nesneyi açıklar. Burada uygulama tanımlı türü `T2`için eşanlamlı olarak tanımlanır.
+İşaretsiz tamsayı türü, denetlenen bir dizinin uzunluğunu temsil eden bir nesneyi tanımlar. Burada uygulama tanımlı tür için bir eş anlamlı olarak açıklanmaktadır `T2` .
 
 ### <a name="example"></a>Örnek
 
@@ -2319,7 +2319,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a><a name="swap"></a>Takas
+## <a name="swap"></a><a name="swap"></a>Kur
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2329,12 +2329,12 @@ void swap(unordered_set& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Doğru*\
-Takas için konteyner.
+*Right*\
+İle takas edilecek kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, kontrollü dizileri `*this` sağ ve *arasındaki*sıraları değiştirir. [unordered_set::get_allocator,](#get_allocator)`() == right.get_allocator()`bunu sabit bir zamanda yapıyorsa, yalnızca depolanan özellik `Tr`nesnesinin kopyalanması sonucunda bir özel durum oluşturur ve iki denetimli dizideki öğeleri belirleyen hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılmaktadır. Aksi takdirde, bir dizi öğe ataması gerçekleştirir ve yapılandırıcı çağrıları iki denetimli dizideki eleman sayısıyla orantılı olarak gerçekleştirir.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. [Unordered_set:: get_allocator](#get_allocator) `() == right.get_allocator()` , bu, sabit bir zamanda, yalnızca türünde depolanan nitelikler nesnesini kopyalamanın bir sonucu olarak bir özel durum oluşturur `Tr` ve iki denetimli sırada öğeleri belirten başvuruları, işaretçileri veya yineleyicileri geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2388,7 +2388,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="unordered_set"></a><a name="unordered_set"></a>Unordered_set
+## <a name="unordered_set"></a><a name="unordered_set"></a>unordered_set
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -2437,42 +2437,42 @@ unordered_set(
 
 ### <a name="parameters"></a>Parametreler
 
-*GirişIterator*\
+*InputIterator*\
 Yineleyici türü.
 
-*Al*\
+*Eşkenar*\
 Depolanacak ayırıcı nesne.
 
-*Comp*\
+*İnin*\
 Depolanacak karşılaştırma işlevi nesnesi.
 
-*Karma*\
+*Yla*\
 Depolanacak karma işlev nesnesi.
 
 *bucket_count*\
 En düşük demet sayısı.
 
-*Doğru*\
+*Right*\
 Kopyalanacak kapsayıcı.
 
-*ılist*\
-Kopyalanması gereken öğeleri içeren initializer_list.
+*IList*\
+Kopyalanacak öğeleri içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk *oluşturucu, Sağ*tarafından kontrol edilen dizinin bir kopyasını belirtir. İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü oluşturucu, *sağ* dan sekizinci yapıcılara doğru hareket ederek dizinin bir kopyasını belirtir kopyalamak için öğeleri belirtmek için bir initializer_list kullanır. Dokuzuncu oluşturucu öğe değerlerinin`[first, last)`sırasını ekler.
+İlk Oluşturucu, *sağdan*denetlenen sıranın bir kopyasını belirtir. İkinci oluşturucu boş bir denetlenmiş dizi belirtir. Üçüncü Oluşturucu, dördüncü ve sekizinci oluşturucuların *sağ tarafındaki* sıranın bir kopyasını belirtir kopyalanacak öğeleri belirtmek için bir initializer_list kullanır. Dokuzuncu Oluşturucu öğe değerlerinin dizisini ekler `[first, last)` .
 
-Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya oluşturucu için değerler *Sağ'dan*elde edilir. Aksi durumda:.
+Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya Oluşturucu için değerler *sağdan*alınır. Aksi durumda:.
 
-En az kova *sayısı, varsa bucket_count*bağımsız değişkendir; aksi takdirde burada uygulama tanımlı değer olarak `N0`açıklanan varsayılan bir değerdir.
+Varsa, en düşük demet sayısı *bucket_count*bağımsız değişkendir; Aksi takdirde, burada uygulama tanımlı değer olarak açıklanan varsayılan bir değerdir `N0` .
 
-Karma işlev nesnesi argüman *Hash*, varsa; aksi takdirde `Hash()`.
+Karma işlev nesnesi varsa bağımsız değişken *karmasıdır*; Aksi takdirde, `Hash()` .
 
-Karşılaştırma işlevi nesnesi *Comp*bağımsız değişkenidir, varsa; aksi takdirde `Comp()`.
+Karşılaştırma işlevi nesnesi, varsa, *comp*bağımsız değişkenidir; Aksi takdirde, `Comp()` .
 
-Ayırıcı nesne, varsa *Al*bağımsız değişkenidir; aksi takdirde, `Alloc()`öyle.
+Ayırıcı nesne varsa *Al*bağımsız değişkenidir; Aksi takdirde, `Alloc()` .
 
-## <a name="value_type"></a><a name="value_type"></a>Value_type
+## <a name="value_type"></a><a name="value_type"></a>value_type
 
 Öğenin türü.
 
@@ -2482,7 +2482,7 @@ typedef Key value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetitilen dizinin bir öğesini açıklar.
+Tür denetimli sıranın bir öğesini açıklar.
 
 ### <a name="example"></a>Örnek
 

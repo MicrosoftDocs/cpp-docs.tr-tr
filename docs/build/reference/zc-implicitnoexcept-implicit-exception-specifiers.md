@@ -8,32 +8,32 @@ helpviewer_keywords:
 - Zc:implicitNoexcept
 - -Zc:implicitNoexcept
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
-ms.openlocfilehash: ec2b8c8fb4c7730a78c4403606d6fa61c0ddc374
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb1a632ffe684ac0777d0089a2edfd514bf66d0b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315566"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223804"
 ---
 # <a name="zcimplicitnoexcept-implicit-exception-specifiers"></a>/ZC:implicitNoexcept (Örtük Özel Durum Tanımlayıcıları)
 
-Zaman **/ZC: implicitnoexcept** seçeneği belirtildiğinde, derleyici örtük ekler [noexcept](../../cpp/noexcept-cpp.md) derleyici tarafından tanımlanan özel üye işlevleri ve kullanıcı tanımlı yok ediciler için özel durum tanımlayıcısı ve deallocators. Varsayılan olarak, **/ZC: implicitnoexcept** ISO C ++ 11 standart uyacak şekilde etkinleştirilir. Bu seçeneğini devre dışı bırakır örtük kapatma `noexcept` kullanıcı tanımlı yok ediciler ve dealloacators ve derleyici tarafından tanımlanan özel üye işlevleri.
+**/Zc: implicitNoexcept** seçeneği belirtildiğinde, derleyici derleyici tanımlı özel üye işlevlerine ve Kullanıcı tanımlı Yıkıcılar ve anlaşanların yer aldığı bir örtük [noexcept](../../cpp/noexcept-cpp.md) özel durum tanımlayıcısı ekler. Varsayılan olarak, **/Zc: IMPLICITNOEXCEPT** ISO c++ 11 standardına uyacak şekilde etkindir. Bu seçeneği kapatmak, **`noexcept`** Kullanıcı tanımlı Yıkıcılar ve satıcılarla ilgili özel üye işlevleri üzerinde örtülü olarak devre dışı bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:implicitNoexcept**[**-**]
+> **/Zc: implicitNoexcept**[ **-** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ ZC: implicitnoexcept** derleyiciye ISO C ++ 11 standart 15.4 bölümünü izleyin. Örtük olarak ekler bir `noexcept` her örtük olarak bildirilen veya açıkça varsayılan haline getirilen özel üye işlev özel durum tanımlayıcısı: varsayılan oluşturucu Oluşturucu, taşıma Oluşturucu, yıkıcı, kopya atama işleci kopyalama veya taşıma atama işleç — ve her kullanıcı tanımlı yıkıcı ve birleştiricinin işlevi. Kullanıcı tanımlı bir birleştiricinin örtük sahip `noexcept(true)` özel durum tanımlayıcısı. Kullanıcı tanımlı yok ediciler için örtük özel durum tanımlayıcısıdır `noexcept(true)` içindeki üye sınıfı veya temel sınıf olmayan bir yıkıcı olmadıkça `noexcept(true)`. Etkili bir şekilde doğrudan bu işlev tarafından çağrılan bir işlev ise, derleyicinin ürettiği özel üye işlevleri için `noexcept(false)`, örtük özel durum tanımlayıcısı `noexcept(false)`. Aksi takdirde, örtük özel durum tanımlayıcısı olan `noexcept(true)`.
+**/Zc: implicitNoexcept** , derleyiciye ISO c++ 11 standardının 15,4 bölümünü izlemesini söyler. Örtülü olarak **`noexcept`** belirtilen her bir özel üye işlevine (Varsayılan Oluşturucu, kopya Oluşturucu, taşıma Oluşturucu, yıkıcı, kopya atama işleci veya taşıma atama işleci) ve her kullanıcı tanımlı yıkıcı veya ayırıcı işlevi için bir özel durum tanımlayıcısı ekler. Kullanıcı tanımlı bir ayırıcı örtük bir `noexcept(true)` özel durum tanımlayıcısına sahiptir. Kullanıcı tanımlı Yıkıcılar için örtük özel durum Belirleyicisi, `noexcept(true)` Kapsanan bir üye sınıfı veya taban sınıfının olmayan bir yıkıcıya sahip olmaması durumunda olur `noexcept(true)` . Derleyicinin ürettiği özel üye işlevleri için, bu işlev tarafından doğrudan çağrılan herhangi bir işlev etkin bir şekilde `noexcept(false)` , örtük özel durum belirleyicisi olur `noexcept(false)` . Aksi takdirde, örtük özel durum belirleyicisi olur `noexcept(true)` .
 
-Derleyici bir örtük özel durum tanımlayıcısı kullanılarak açık bildirilen işlevler için oluşturmaz `noexcept` veya `throw` tanımlayıcıları veya `__declspec(nothrow)` özniteliği.
+Derleyici açık **`noexcept`** veya **`throw`** belirticiler veya bir öznitelik kullanılarak belirtilen işlevler için örtük bir özel durum tanımlayıcısı oluşturmaz `__declspec(nothrow)` .
 
-Varsayılan olarak, **/ZC: implicitnoexcept** etkinleştirilir. [/ Permissive-](permissive-standards-conformance.md) seçeneği etkilemez **/ZC: implicitnoexcept**.
+Varsayılan olarak, **/Zc: implicitNoexcept** etkindir. [/Permissive-](permissive-standards-conformance.md) seçeneği **/Zc: implicitNoexcept**öğesini etkilemez.
 
-Seçeneğini belirterek devre dışı bırakılırsa **/Zc:implicitNoexcept-**, hiçbir örtük özel durum tanımlayıcıları, derleyici tarafından oluşturulur. Bu yok ediciler ve özel durum tanımlayıcıları yoktu deallocators sahip olduğu Visual Studio 2013 ile aynı, davranıştır `throw` deyimleri. Varsayılan olarak, ne zaman **/ZC: implicitnoexcept** , belirtilmişse bir `throw` deyimi, çalışma zamanında bir işlev örtük ile karşılaşıldığında `noexcept(true)` belirticisi hemen çağrısından neden `std::terminate`, ve özel durum işleyicileri için geriye doğru izleme normal davranış garanti edilmez. Bu durum belirlemenize yardımcı olması için derleyici oluşturur [Derleyici Uyarısı (düzey 1) C4297](../../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md). Varsa `throw` olduğunu bilerek, açık bir sağlamak için işlev bildirimi değiştirmeniz önerilir `noexcept(false)` kullanmak yerine belirticisi **/Zc:implicitNoexcept-**.
+Seçenek **/Zc: implicitNoexcept-** belirtilerek devre dışı bırakılmışsa, derleyici tarafından örtük özel durum belirticileri oluşturulmaz. Bu davranış, özel durum belirticileri olmayan yok ediciler ve anlaşıcıları deyimleri olabilecek Visual Studio 2013 aynıdır **`throw`** . Varsayılan olarak, ve **/Zc: implicitNoexcept** belirtildiğinde, bir **`throw`** ifadede örtük tanımlayıcı içeren bir işlevde çalışma zamanında karşılaşılırsa, `noexcept(true)` Bu `std::terminate` durum, özel durum işleyicilerinin anında çağrılmasını ve normal geri sarma davranışının garanti edilmesine neden olur. Bu durumun tanımlanmasına yardımcı olmak için derleyici [Derleyici Uyarısı (düzey 1) C4297](../../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)oluşturur. **`throw`** Bilerek yapılıyorsa, işlev bildiriinizi `noexcept(false)` **/Zc: implicitNoexcept-** yerine açık bir belirticiye sahip olacak şekilde değiştirmenizi öneririz.
 
-Bu örnek, hiçbir açık özel durum tanımlayıcısına sahip kullanıcı tanımlı bir yıkıcı olduğunda nasıl davranacağını gösterir **/ZC: implicitnoexcept** seçeneği ayarlanır veya devre dışı. Davranış gösterecek şekilde ayarlandığında, kullanarak derleme `cl /EHsc /W4 implicitNoexcept.cpp`. Kullanarak devre dışı bırakıldığında davranışını göstermek için derleme `cl /EHsc /W4 /Zc:implicitNoexcept- implicitNoexcept.cpp`.
+Bu örnek, **/Zc: implicitNoexcept** seçeneği ayarlandığında veya devre dışı bırakıldığında açık özel durum belirleyicisi olmayan kullanıcı tanımlı bir yıkıcının nasıl davranacağını gösterir. Ayarlandığında, kullanarak derleyen davranışı göstermek için `cl /EHsc /W4 implicitNoexcept.cpp` . Devre dışı bırakıldığında davranışı göstermek için kullanarak derleyin `cl /EHsc /W4 /Zc:implicitNoexcept- implicitNoexcept.cpp` .
 
 ```cpp
 // implicitNoexcept.cpp
@@ -109,7 +109,7 @@ int main()
 }
 ```
 
-Varsayılan ayar kullanılarak derlendiğinde **/ZC: implicitnoexcept**, örnek aşağıdaki çıkışı üretir:
+**/Zc: implicitNoexcept**varsayılan ayarı kullanılarak derlendiğinde, örnek bu çıktıyı oluşturur:
 
 ```Output
 ~B Exception caught
@@ -117,7 +117,7 @@ Unexpected throw caused std::terminate
 Exit returning EXIT_FAILURE
 ```
 
-Ayar kullanılarak derlendiğinde **/Zc:implicitNoexcept-**, örnek aşağıdaki çıkışı üretir:
+**/Zc: implicitNoexcept-** ayarı kullanılarak derlendiğinde, örnek bu çıktıyı oluşturur:
 
 ```Output
 ~B Exception caught
@@ -125,19 +125,19 @@ Ayar kullanılarak derlendiğinde **/Zc:implicitNoexcept-**, örnek aşağıdaki
 Exit returning EXIT_SUCCESS
 ```
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: implicitnoexcept** veya **/Zc:implicitNoexcept-** seçip **Tamam**.
+1. **Ek seçenekler** özelliğini **/Zc: implicitNoexcept** veya **/Zc: implicitNoexcept** içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>
 [noexcept](../../cpp/noexcept-cpp.md)<br/>
-[Özel Durum Belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
-[sonlandırma](../../standard-library/exception-functions.md#terminate)<br/>
+[Özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)<br/>
+[sonlandırmayı](../../standard-library/exception-functions.md#terminate)<br/>

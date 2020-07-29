@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3495
 ms.assetid: 1fd40cb8-8373-403d-b8a8-f08424a50807
-ms.openlocfilehash: 6fe4286142c90f341925d7e76ca8de6d3b7daa9f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: a67d4d859e3a9dd2241f14a476492df0fd3e6b8d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075005"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223427"
 ---
 # <a name="compiler-error-c3495"></a>Derleyici hatası C3495
 
 ' var ': bir lambda yakalamanın otomatik depolama süresi olmalıdır
 
-`static` veya `extern`olarak işaretlenen bir değişken gibi otomatik depolama süresine sahip olmayan bir değişken yakalayamazsınız.
+Ya da olarak işaretlenen bir değişken gibi otomatik depolama süresine sahip olmayan bir değişken yakalayamazsınız **`static`** **`extern`** .
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Lambda ifadesinin yakalama listesine bir `static` veya `extern` değişkeni iletmeyin.
+- **`static`** **`extern`** Lambda ifadesinin yakalama listesine bir veya değişkeni iletmeyin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir lambda ifadesinin yakalama listesinde `static` değişkeni `n` göründüğünden, C3495 oluşturur:
+Aşağıdaki örnek, C3495 üretir çünkü **`static`** değişken `n` bir lambda ifadesinin yakalama listesinde görünür:
 
 ```cpp
 // C3495.cpp
@@ -39,4 +39,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)

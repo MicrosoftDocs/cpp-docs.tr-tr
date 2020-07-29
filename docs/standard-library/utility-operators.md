@@ -1,5 +1,5 @@
 ---
-title: '&lt;yardımcı program&gt; işleçler'
+title: '&lt;yardımcı program &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - utility/std::operator!=
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - std::operator&lt; (utility)
 - std::operator&lt;= (utility)
 - std::operator== (utility)
-ms.openlocfilehash: ec6c996487dc2e6c5ce628fe5e080b4f601479d9
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 7146c31e33b514b20703b280a7194f639c387c26
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422404"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215470"
 ---
-# <a name="ltutilitygt-operators"></a>&lt;yardımcı program&gt; işleçler
+# <a name="ltutilitygt-operators"></a>&lt;yardımcı program &gt; işleçleri
 
 > [!NOTE]
-> `Type&` kullanan işleçler `namespace rel_ops`altına dahildir.
+> Using işleçleri `Type&` altına dahildir `namespace rel_ops` .
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneye eşit olup olmadığını sınar.
 
@@ -42,15 +42,15 @@ template <class T, class U>
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `pair` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `pair` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-çiftler eşit değilse **doğru** ; çiftler eşitse **false** .
+**`true`** çiftler eşitse; **`false`** çiftler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -103,7 +103,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneye eşit olup olmadığını sınar.
 
@@ -114,19 +114,19 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `pair` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `pair` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-çiftler eşitse **true** ; `pair`s **değeri eşitse false** .
+**`true`** çiftler eşitse; Çünkü **`false`** `pair` s eşit değildir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çift, ilgili öğelerinin her biri eşitse başka bir çiftiyle eşittir. İşlev `left`döndürür. **ilk** == `right`. **ilk** && `left`. **ikinci** == `right`. **ikinci**. Birinci veya ikinci öğesi diğer çiftin karşılık gelen öğesine eşit değilse iki çift çifti eşit değildir.
+Bir çift, ilgili öğelerinin her biri eşitse başka bir çiftiyle eşittir. İşlev döndürür `left` . **ilk**olarak  ==  `right` . **ilk**olarak  &&  `left` . **ikinci**  ==  `right` . **ikinci**. Birinci veya ikinci öğesi diğer çiftin karşılık gelen öğesine eşit değilse iki çift çifti eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -166,7 +166,7 @@ int main( )
 }
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
 İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden daha az olup olmadığını sınar.
 
@@ -177,19 +177,19 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
-İşlecin sol tarafındaki `pair` türünde bir nesne.
+*tarafta*\
+`pair`İşlecin sol tarafındaki türünde bir nesne.
 
-*sağ*\
-İşlecinin sağ tarafında `pair` türünde bir nesne.
+*Right*\
+`pair`İşlecin sağ tarafındaki türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki `pair` işlecin sağ tarafındaki `pair` tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`**`pair`işlecin sol tarafındaki işlecinin, işlecin sağ tarafındaki öğesinden tamamen daha azı varsa, `pair` Aksi halde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`left` `pair` nesnesinin, *sol* , *sağdan*eşit olmayan `right` `pair` nesnesinden kesinlikle daha az olduğu söylenir.
+`left` `pair` `right` `pair` *Sol* , *sağ*eşitse nesne nesneden kesinlikle küçüktür olarak kabul edilir.
 
 Çiftler karşılaştırmasına göre, iki çifte bulunan değerlerin ' ilk öğesi en yüksek önceliğe sahiptir. Farklıysa, çiftin sonucu, çiftin karşılaştırmasının sonucu olarak alınır. İlk öğelerin değerleri farklı değilse, ikinci öğelerin değerleri karşılaştırılır ve Karşılaştırmanın sonucu, çiftin karşılaştırmasının sonucu olarak alınır.
 
@@ -240,7 +240,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
 İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden küçük veya ona eşit olup olmadığını sınar.
 
@@ -254,15 +254,15 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
-İşlecin sol tarafındaki `pair` türünde bir nesne.
+*tarafta*\
+`pair`İşlecin sol tarafındaki türünde bir nesne.
 
-*sağ*\
-İşlecinin sağ tarafında `pair` türünde bir nesne.
+*Right*\
+`pair`İşlecin sağ tarafındaki türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki `pair` işlecin sağ tarafındaki `pair` küçük veya bu değere eşitse **true** ; Aksi halde **yanlış**.
+**`true`**`pair`işlecin sol tarafındaki işleci `pair` işlecin sağ tarafından küçük veya ona eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -325,7 +325,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
 İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden büyük olup olmadığını sınar.
 
@@ -339,19 +339,19 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
-İşlecin sol tarafındaki `pair` türünde bir nesne.
+*tarafta*\
+`pair`İşlecin sol tarafındaki türünde bir nesne.
 
-*sağ*\
-İşlecinin sağ tarafında `pair` türünde bir nesne.
+*Right*\
+`pair`İşlecin sağ tarafındaki türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki `pair`, işlecin sağ tarafındaki `pair` tamamen daha büyükse **true** ; Aksi halde **yanlış**.
+**`true`**`pair`işlecin sol tarafındaki işlecinin, işlecin sağ tarafındaki öğesinden kesinlikle büyük olması, `pair` Aksi halde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Sol* tarafta `left` `pair` nesne `right` `pair` nesnesinden kesinlikle daha büyük olarak kabul *edilir.*
+`left` `pair` `right` `pair` *Sol* , *sağ*eşitse nesne nesneden kesinlikle daha büyük olarak kabul edilir.
 
 Çiftler karşılaştırmasına göre, iki çifte bulunan değerlerin ' ilk öğesi en yüksek önceliğe sahiptir. Farklıysa, çiftin sonucu, çiftin karşılaştırmasının sonucu olarak alınır. İlk öğelerin değerleri farklı değilse, ikinci öğelerin değerleri karşılaştırılır ve Karşılaştırmanın sonucu, çiftin karşılaştırmasının sonucu olarak alınır.
 
@@ -412,7 +412,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
 İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden büyük veya ona eşit olup olmadığını sınar.
 
@@ -426,15 +426,15 @@ template <class T, class U>
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
-İşlecin sol tarafındaki `pair` türünde bir nesne.
+*tarafta*\
+`pair`İşlecin sol tarafındaki türünde bir nesne.
 
-*sağ*\
-İşlecinin sağ tarafında `pair` türünde bir nesne.
+*Right*\
+`pair`İşlecin sağ tarafındaki türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki `pair` işlecin sağ tarafındaki `pair` daha büyükse veya buna eşitse **true** ; Aksi halde **yanlış**.
+**`true`**`pair`işlecin sol tarafındaki işlecinin sağ tarafından büyük veya ona eşitse `pair` ; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 

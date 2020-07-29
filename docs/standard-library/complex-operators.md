@@ -1,5 +1,5 @@
 ---
-title: '&lt;karmaşık&gt; işleçleri'
+title: '&lt;karmaşık &gt; işleçler'
 ms.date: 11/04/2016
 f1_keywords:
 - xcomplex/std::operator!=
@@ -15,16 +15,16 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: e9ea296ab1b3440782871e3d4c7555ff2075e445
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 325e194e9cc5b597ae010477ecbe313be11b179a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79416797"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222595"
 ---
-# <a name="ltcomplexgt-operators"></a>&lt;karmaşık&gt; işleçleri
+# <a name="ltcomplexgt-operators"></a>&lt;karmaşık &gt; işleçler
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İki karmaşık sayı arasında eşitsizlik için, biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.
 
@@ -47,15 +47,15 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
-*sağ*\
+*Right*\
 Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-sayılar eşit değilse **doğru** ; sayılar eşitse **false** .
+**`true`** sayılar eşit değilse; **`false`** sayılar eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -163,7 +163,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a>işleç\*
+## <a name="operator"></a><a name="op_star"></a>işlecinde\*
 
 , Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çarpar.
 
@@ -186,11 +186,11 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
-İki karmaşık sayının ilki veya \* işlem ile çarpılacak karmaşık bir sayı için parametre türünde bir sayı.
+*tarafta*\
+İki karmaşık sayının ilki veya işlemin çarpılacağı karmaşık bir sayının parametre türünde bir sayı \* .
 
-*sağ*\
-İki karmaşık sayının ikinci sayısı veya \* işlemi ile çarpılacak karmaşık bir sayının parametre türünde bir sayı.
+*Right*\
+İki karmaşık sayının ikinci sayısı veya işlemin çarpılacağı karmaşık bir sayının parametre türünde bir sayı \* .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -260,7 +260,7 @@ int main( )
 }
 ```
 
-## <a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a>işleç +
 
 , Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayı ekler.
 
@@ -286,10 +286,10 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 İki karmaşık sayının ilki veya + işlemi tarafından eklenecek karmaşık bir sayının parametre türünde bir sayı.
 
-*sağ*\
+*Right*\
 İki karmaşık sayının ikinci sayısı veya + işlemi tarafından eklenecek karmaşık bir sayının parametre türünde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -400,7 +400,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a>işlecinde
+## <a name="operator-"></a><a name="operator-"></a>işlecinde
 
 , Bir veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çıkartır.
 
@@ -426,10 +426,10 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 İki karmaşık sayının ilki veya-işlem tarafından çıkarılacak karmaşık bir sayının parametre türünde bir sayı.
 
-*sağ*\
+*Right*\
 İki karmaşık sayının ikinci sayısı veya-işlem tarafından çıkarılacak karmaşık bir sayının parametre türünde bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -542,7 +542,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="op_div"></a>işlecinde
+## <a name="operator"></a><a name="op_div"></a>işlecinde
 
 İki karmaşık sayıyı, birini veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.
 
@@ -565,10 +565,10 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 /İşlemi ile paydaya bölünecek pay olan karmaşık bir sayının parametre türünde karmaşık bir sayı veya sayı.
 
-*sağ*\
+*Right*\
 Payı/işlem ile bölmek için kullanılan payda olan karmaşık bir sayının parametre türünde karmaşık bir sayı veya sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -662,7 +662,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="op_lt_lt"></a>işleç&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
 
 Çıkış akışına belirtilen karmaşık bir sayı ekler.
 
@@ -678,12 +678,12 @@ basic_ostream<Elem, Traits>& operator<<(
 *OSTR*\
 Karmaşık sayının girildiği çıkış akışı.
 
-*sağ*\
+*Right*\
 Çıkış akışına girilecek karmaşık sayı
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen karmaşık sayının değerini bir Kartezyen biçiminde ( *gerçek bölüm, sanal bölüm* ) yazar.
+Belirtilen karmaşık sayının değerini bir Kartezyen biçiminde ( *gerçek bölüm, sanal bölüm* ) yazar. *Ostr*
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -724,7 +724,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İki karmaşık sayı arasındaki eşitlik için bir veya her ikisinin de gerçek ve sanal parçalar için türün alt kümesine ait olabileceğini sınar.
 
@@ -747,15 +747,15 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
-*sağ*\
+*Right*\
 Eşitsizlik için test edilecek parametre türünün karmaşık bir numarası veya nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-sayılar eşitse **true** ; sayılar eşitse **false** .
+**`true`** sayılar eşitse; **`false`** sayılar eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -863,7 +863,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_gt_gt"></a>işleç&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>işlecinde&gt;&gt;
 
 Giriş akışından karmaşık bir değer ayıklar.
 
@@ -876,10 +876,10 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*ISTR*\
+*İstr*\
 Karmaşık sayının ayıklandığı giriş akışı.
 
-*sağ*\
+*Right*\
 Giriş akışından ayıklanan karmaşık sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri

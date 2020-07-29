@@ -4,30 +4,30 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - insertion operators
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
-ms.openlocfilehash: 2cf399501c0eab32e8bee80dfcb98d870c0193cb
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0d6a2afb320f91e51e2a89156a6e6732c6be90e0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458017"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215471"
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>Ekleme İşleçlerini Kullanma ve Biçimi Denetleme
 
-Bu konu, biçimin nasıl kontrol ve kendi sınıflarınız için ekleme işleçleri nasıl oluşturulacağını gösterir. Tüm standart **<<** C++ veri türleri için önceden programlanan ekleme () işleci, bir çıkış akışı nesnesine bayt gönderir. Ekleme işleçleri, varsayılan tamsayı bağımsız değişkenlerinin biçimini değiştiren öğeler olan önceden tanımlanmış "düzenlemeler" ile çalışır.
+Bu konu, biçimin nasıl kontrol ve kendi sınıflarınız için ekleme işleçleri nasıl oluşturulacağını gösterir. **<<** Tüm standart C++ veri türleri için önceden programlanan ekleme () işleci, bir çıkış akışı nesnesine bayt gönderir. Ekleme işleçleri, varsayılan tamsayı bağımsız değişkenlerinin biçimini değiştiren öğeler olan önceden tanımlanmış "düzenlemeler" ile çalışır.
 
 Aşağıdaki seçeneklerle biçimi denetleyebilirsiniz:
 
 - [Çıkış genişliği](#vclrfoutputwidthanchor3)
 
-- [Hizalar](#vclrfalignmentanchor4)
+- [Hizalama](#vclrfalignmentanchor4)
 
-- [Duyarlılık](#vclrfprecisionanchor5)
+- [Duyarlık](#vclrfprecisionanchor5)
 
 - [Taban](#vclrfradixanchor6)
 
-## <a name="vclrfoutputwidthanchor3"></a>Çıkış genişliği
+## <a name="output-width"></a><a name="vclrfoutputwidthanchor3"></a>Çıkış genişliği
 
-Çıktıyı hizalamak için, her bir öğe için çıkış genişliğini, akışı akışa yerleştirerek `setw` veya `width` üye işlevini çağırarak belirlersiniz. Bu örnek, bir sütundaki değerleri en az 10 karakter genişliğinde sağa hizalar:
+Çıktıyı hizalamak için, her bir öğe için çıkış genişliğini, `setw` akışı akışa yerleştirerek veya `width` üye işlevini çağırarak belirlersiniz. Bu örnek, bir sütundaki değerleri en az 10 karakter genişliğinde sağa hizalar:
 
 ```cpp
 // output_width.cpp
@@ -55,7 +55,7 @@ int main( )
 
 Baştaki boşluklar 10 karakterden daha kısa bir değere eklenir.
 
-Bir alanı doldurma için, belirtilen genişliğe `fill` sahip alanlar için doldurma karakterinin değerini ayarlayan member işlevini kullanın. Varsayılan değer boş bir değer. Sayıların sütununu yıldız işaretiyle birlikte bırakmak için, önceki **for** döngüsünü aşağıdaki gibi değiştirin:
+Bir alanı doldurma için, `fill` belirtilen genişliğe sahip alanlar için doldurma karakterinin değerini ayarlayan member işlevini kullanın. Varsayılan değer boş bir değer. Sayıların sütununu yıldız işaretiyle birlikte bırakmak için önceki **`for`** döngüyü aşağıdaki gibi değiştirin:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -66,7 +66,7 @@ for (int i = 0; i <4; i++)
 }
 ```
 
-İşleici, yeni satır karakterinin (`'\n'`) yerini alır. `endl` Çıktı şöyle görünür:
+İşleici, `endl` yeni satır karakterinin () yerini alır `'\n'` . Çıktı şöyle görünür:
 
 ```Output
 ******1.23
@@ -94,7 +94,7 @@ int main( )
 }
 ```
 
-Üye işlevi iostream > içinde \<bildirilmiştir. `width` Ya da bağımsız `setw` değişkenlerle başka bir işleyici kullanırsanız, iomanıp > dahil \<etmeniz gerekir. Çıktıda dizeler, genişlik 6 ve tamsayı 10 ' un bulunduğu bir alanda yazdırılır:
+`width`Üye işlevi içinde bildirilmiştir \<iostream> . `setw`Veya bağımsız değişkenlerle başka bir işleyici kullanırsanız, öğesini dahil etmeniz gerekir \<iomanip> . Çıktıda dizeler, genişlik 6 ve tamsayı 10 ' un bulunduğu bir alanda yazdırılır:
 
 ```Output
    Zoot      1.23
@@ -103,11 +103,11 @@ int main( )
    Stan   4358.24
 ```
 
-Değerleri `setw` ne `width` de keser. Biçimlendirilen çıktı genişliği aşarsa, akışın duyarlık ayarına bağlı olarak tüm değer yazdırılır. Her ikisi de `setw` yalnızca aşağıdaki alanı etkiler.`width` Alan genişliği, bir alan yazdırıldıktan sonra varsayılan davranışına (gerekli genişlik) geri döner. Ancak, diğer akış biçimi seçenekleri değiştirilene kadar yürürlükte kalır.
+`setw`Değerleri ne de `width` keser. Biçimlendirilen çıktı genişliği aşarsa, akışın duyarlık ayarına bağlı olarak tüm değer yazdırılır. Her ikisi de `setw` `width` yalnızca aşağıdaki alanı etkiler. Alan genişliği, bir alan yazdırıldıktan sonra varsayılan davranışına (gerekli genişlik) geri döner. Ancak, diğer akış biçimi seçenekleri değiştirilene kadar yürürlükte kalır.
 
-## <a name="vclrfalignmentanchor4"></a>Hizalar
+## <a name="alignment"></a><a name="vclrfalignmentanchor4"></a>Hizalar
 
-Çıkış akışları varsayılan olarak sağa hizalanmış metne sahiptir. Önceki örnekteki adları Sola hizalamak ve sayıları sağa hizalamak için, **for** döngüsünü aşağıdaki gibi değiştirin:
+Çıkış akışları varsayılan olarak sağa hizalanmış metne sahiptir. Önceki örnekteki adları Sola hizalamak ve sayıları sağa hizalamak için, **`for`** döngüyü aşağıdaki gibi değiştirin:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -126,13 +126,13 @@ Al         653.7
 Stan     4358.24
 ```
 
-Sol hizalama bayrağı, `left` Numaralandırıcı ile [setiosflags](../standard-library/iomanip-functions.md#setiosflags) işleici kullanılarak ayarlanır. Bu Numaralandırıcı [iOS](../standard-library/basic-ios-class.md) sınıfında tanımlanmıştır, bu nedenle başvurusu **iOS::** prefix içermelidir. [Resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) işleici, Sola Hizala bayrağını kapatır. Ve `width` `setiosflags` öğelerinden farklı olarak, ve`resetiosflags` etkileri kalıcı olur. `setw`
+Sol hizalama bayrağı, Numaralandırıcı ile [setiosflags](../standard-library/iomanip-functions.md#setiosflags) işleici kullanılarak ayarlanır `left` . Bu Numaralandırıcı [iOS](../standard-library/basic-ios-class.md) sınıfında tanımlanmıştır, bu nedenle başvurusu **iOS::** prefix içermelidir. [Resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) işleici, Sola Hizala bayrağını kapatır. Ve öğelerinden farklı olarak, `width` `setw` `setiosflags` ve etkileri `resetiosflags` kalıcı olur.
 
-## <a name="vclrfprecisionanchor5"></a>Duyarlılık
+## <a name="precision"></a><a name="vclrfprecisionanchor5"></a>Duyarlılık
 
-Kayan nokta duyarlılığı için varsayılan değer altıdır. Örneğin 3466,9768 sayısı 3466,98 olarak yazdırılır. Bu değerin yazdırma şeklini değiştirmek için [setprecision](../standard-library/iomanip-functions.md#setprecision) işleici ' ı kullanın. İşleici için iki bayrak vardır: [fixed](../standard-library/ios-functions.md#fixed) ve [bilimsel](../standard-library/ios-functions.md#scientific). [Sabit](../standard-library/ios-functions.md#fixed) ayarlandıysa, sayı 3466,976800 olarak yazdırılır. `scientific` Ayarlanırsa, 3.4669773 + 003 olarak yazdırır.
+Kayan nokta duyarlılığı için varsayılan değer altıdır. Örneğin 3466,9768 sayısı 3466,98 olarak yazdırılır. Bu değerin yazdırma şeklini değiştirmek için [setprecision](../standard-library/iomanip-functions.md#setprecision) işleici ' ı kullanın. İşleici için iki bayrak vardır: [fixed](../standard-library/ios-functions.md#fixed) ve [bilimsel](../standard-library/ios-functions.md#scientific). [Sabit](../standard-library/ios-functions.md#fixed) ayarlandıysa, sayı 3466,976800 olarak yazdırılır. `scientific`Ayarlanırsa, 3.4669773 + 003 olarak yazdırır.
 
-[Hizalama](#vclrfalignmentanchor4) halinde gösterilen kayan nokta numaralarını tek bir anlamlı sayıyla göstermek için, **for** döngüsünü aşağıdaki gibi değiştirin:
+[Hizalama](#vclrfalignmentanchor4) halinde gösterilen kayan nokta numaralarını tek bir anlamlı sayıyla göstermek için **`for`** döngüyü aşağıdaki gibi değiştirin:
 
 ```cpp
 for (int i = 0; i <4; i++)
@@ -155,7 +155,7 @@ Al        7e+02
 Stan      4e+03
 ```
 
-Bilimsel gösterimi ortadan kaldırmak için, **for** döngüsünden önce bu ifadeyi ekleyin:
+Bilimsel gösterimi ortadan kaldırmak için, bu ifadeyi **`for`** döngüden önce ekleyin:
 
 ```cpp
 cout << setiosflags(ios::fixed);
@@ -170,7 +170,7 @@ Al         653.7
 Stan      4358.2
 ```
 
-`ios::fixed` Bayrağını olarak`ios::scientific`değiştirirseniz program şunu yazdırır:
+`ios::fixed`Bayrağını olarak değiştirirseniz `ios::scientific` Program şunu yazdırır:
 
 ```cpp
 Zoot    1.2e+00
@@ -179,15 +179,15 @@ Al      6.5e+02
 Stan    4.4e+03
 ```
 
-Yine, program ondalık noktadan sonra bir basamak yazdırır. Ya da `ios::fixed` `ios::scientific` ayarlanmışsa duyarlık değeri, ondalık ayırıcıdan sonraki basamak sayısını belirler. Bayrak ayarlanmazsa duyarlık değeri, toplam önemli basamak sayısını belirler. `resetiosflags` İşleici bu bayrakları temizler.
+Yine, program ondalık noktadan sonra bir basamak yazdırır. Ya da `ios::fixed` `ios::scientific` ayarlanmışsa duyarlık değeri, ondalık ayırıcıdan sonraki basamak sayısını belirler. Bayrak ayarlanmazsa duyarlık değeri, toplam önemli basamak sayısını belirler. `resetiosflags`İşleici bu bayrakları temizler.
 
-## <a name="vclrfradixanchor6"></a>Taban
+## <a name="radix"></a><a name="vclrfradixanchor6"></a>Taban
 
-`dec`, Ve `oct` işleçörler,girişve`hex` çıkış için varsayılan taban 'i ayarlar. Örneğin, bir işleyiciyi çıkış akışına eklerseniz `hex` , nesne tamsayıların iç veri gösterimini onaltılık çıkış biçimine doğru bir şekilde çevirir. [Büyük harfli](../standard-library/ios-functions.md#uppercase) bayrak açık ise (varsayılan), sayılar a ile f arasındaki rakamlarla birlikte görüntülenir. Aksi takdirde, büyük harfle görüntülenir. Varsayılan taban `dec` (Decimal).
+`dec`, `oct` Ve işleçörler, `hex` giriş ve çıkış için varsayılan taban 'i ayarlar. Örneğin, bir işleyiciyi `hex` çıkış akışına eklerseniz, nesne tamsayıların iç veri gösterimini onaltılık çıkış biçimine doğru bir şekilde çevirir. [Büyük harfli](../standard-library/ios-functions.md#uppercase) bayrak açık ise (varsayılan), sayılar a ile f arasındaki rakamlarla birlikte görüntülenir. Aksi takdirde, büyük harfle görüntülenir. Varsayılan taban `dec` (Decimal).
 
 ## <a name="quoted-strings-c14"></a>Alıntılanmış dizeler (C++ 14)
 
-Bir akışa bir dize eklediğinizde, stringstream:: Str () üye işlevini çağırarak aynı dizeyi kolayca geri alabilirsiniz. Ancak, akışı sonraki bir noktada yeni bir dizeye eklemek için ayıklama işlecini kullanmak istiyorsanız, varsayılan olarak > > işleci ilk boşluk karakteriyle karşılaştığında durabileceğinden, beklenmeyen bir sonuç alabilirsiniz.
+Bir akışa bir dize eklediğinizde, stringstream:: Str () üye işlevini çağırarak aynı dizeyi kolayca geri alabilirsiniz. Ancak, akışı sonraki bir noktada yeni bir dizeye eklemek için ayıklama işlecini kullanmak istiyorsanız, varsayılan olarak >> işleci ilk boşluk karakteriyle karşılaştığında durabileceğinden beklenmeyen bir sonuç alabilirsiniz.
 
 ```cpp
 std::stringstream ss;
@@ -201,9 +201,9 @@ std::cout << inserted;     //  This is a sentence.
 std::cout << extracted;    //  This
 ```
 
-Bu davranış el ile aşılır, ancak dizeyi yuvarlak bir şekilde daha kullanışlı hale getirmek için, c++ 14, ıomanıp > `std::quoted` içindeki \<akış işletörü ekler. Ekleme sırasında, `quoted()` dizeyi bir sınırlayıcı ile çevreler (' "' çift tırnak işareti) ve ayıklama işlemi son sınırlayıcıyla karşılaşana kadar tüm karakterleri ayıklamak için akışı yönetir. Herhangi bir katıştırılmış tırnak işareti kaçış karakteriyle (varsayılan olarak '\\\\') atlanmalıdır.
+Bu davranış el ile aşılır, ancak dize gidiş dönüşü daha uygun hale getirmek için C++ 14, `std::quoted` içindeki akış işletörü ekler \<iomanip> . Ekleme sırasında, `quoted()` dizeyi bir sınırlayıcı ile çevreler (' "' çift tırnak işareti) ve ayıklama işlemi son sınırlayıcıyla karşılaşana kadar tüm karakterleri ayıklamak için akışı yönetir. Herhangi bir katıştırılmış tırnak işareti kaçış karakteriyle ( \\ \\ Varsayılan olarak ' ') atlanmalıdır.
 
-Sınırlayıcılar yalnızca Stream nesnesinde mevcuttur; Bunlar ayıklanan dizede mevcut değildir, ancak [basic_stringstream:: Str](../standard-library/basic-stringstream-class.md#str)tarafından döndürülen dizede bulunur.
+Sınırlayıcılar yalnızca Stream nesnesinde mevcuttur; Bunlar ayıklanan dizede mevcut değildir ancak [basic_stringstream:: Str](../standard-library/basic-stringstream-class.md#str)tarafından döndürülen dizede bulunur.
 
 Ekleme ve ayıklama işlemlerinin boşluk davranışı, bir dizenin kodda nasıl temsil edildiğine bağlıdır, bu nedenle, giriş dizesinin bir ham dize sabit değeri veya normal bir dize olmasına bakılmaksızın tırnak içine alınmış operatör yararlı olur. Bir giriş dizesinin biçimi ne olursa olsun, gömülü tırnak, satır sonları, sekmeler vb. olabilir ve bunların hepsi, tırnak işaretleri () işleküleyici tarafından korunur.
 
@@ -211,4 +211,4 @@ Daha fazla bilgi ve tam kod örnekleri için bkz. [alıntı](../standard-library
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkış Akışları](../standard-library/output-streams.md)
+[Çıkış akışları](../standard-library/output-streams.md)

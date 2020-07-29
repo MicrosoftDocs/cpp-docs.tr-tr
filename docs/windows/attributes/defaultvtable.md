@@ -1,23 +1,23 @@
 ---
-title: defaultvtable (C++ com özniteliği)
+title: defaultvtable (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.defaultvtable
 helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-ms.openlocfilehash: a15b3552e6b67fb0347a14c48414741edf31ac93
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2da0d8070f961f1ae0fc075585eb28881f712fb4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168272"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215263"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
 Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirimi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ defaultvtable(interface) ]
@@ -25,7 +25,7 @@ Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirimi tanımla
 
 ### <a name="parameters"></a>Parametreler
 
-*interface*<br/>
+*arayüz*<br/>
 COM nesnesi için varsayılan vtable 'a sahip olmasını istediğiniz belirtilen arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -68,7 +68,7 @@ class CMyC3 : public IMyI3 {};
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -78,4 +78,4 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)
+[Sınıf öznitelikleri](class-attributes.md)

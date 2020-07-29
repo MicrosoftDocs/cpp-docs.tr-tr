@@ -24,18 +24,18 @@ f1_keywords:
 - vscanf_s
 - vwscanf_s
 ms.assetid: 23a1c383-5b01-4887-93ce-534a1e38ed93
-ms.openlocfilehash: 4d08679d08fb5b212306cbaeec200d16803a85ef
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9fb58e38362d709ef6d203c5602aa32727efa763
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945406"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215107"
 ---
 # <a name="vscanf_s-vwscanf_s"></a>vscanf_s, vwscanf_s
 
 Standart giriş akışından biçimlendirilen verileri okur. [Vscanf, mescanf](vscanf-vwscanf.md) 'nin bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int vscanf_s(
@@ -50,7 +50,7 @@ int vwscanf_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *Arglist*<br/>
@@ -58,7 +58,7 @@ Değişken bağımsız değişken listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Dönüş değeri bir hata için **EOF** veya ilk kez bir karakteri okumak için ilk denemede dosya sonu karakteri veya dize sonu karakteriyle karşılaşılırsa. *Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **vscanf_s** ve **vwscanf_s** **EOF** döndürür ve **errno** öğesini **EINVAL**olarak ayarlayın.
+Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Dönüş değeri bir hata için **EOF** veya ilk kez bir karakteri okumak için ilk denemede dosya sonu karakteri veya dize sonu karakteriyle karşılaşılırsa. *Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **vscanf_s** ve **vwscanf_s** **EOF** döndürür ve **errno** ' ı **EINVAL**olarak ayarlayın.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -66,20 +66,20 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_er
 
 **Vscanf_s** işlevi standart giriş akışı **stdin** ' den verileri okur ve verileri *Arglist* bağımsız değişken listesi tarafından verilen konumlara yazar. Listedeki her bağımsız değişken, *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**vwscanf_s** , **vscanf_s**öğesinin geniş karakterli bir sürümüdür; vwscanf_s *Biçim* bağımsız değişkeni geniş karakterli bir dizedir. **vwscanf_s** ve **VSCANF_S** , akış ANSI modunda açılırsa aynı şekilde davranır. **vscanf_s** , UNICODE akışından girişi desteklemez.
+**vwscanf_s** , **vscanf_s**geniş karakterli bir sürümüdür; vwscanf_s *Biçim* bağımsız değişkeni **vwscanf_s** , geniş karakterli bir dizedir. **vwscanf_s** ve **VSCANF_S** , akış ANSI modunda açılırsa aynı şekilde davranır. **VSCANF_S** UNICODE akışından girişi desteklemez.
 
-**Vscanf** ve **cscanf**, **vscanf_s** ve **vwscanf_s** 'in aksine, **c**, **c**, **s**, **s**veya [] içindeki dize denetim kümeleri türündeki tüm giriş parametreleri için arabellek boyutunun belirtilmesini gerektirir. Karakterdeki arabellek boyutu, arabellek veya değişken işaretçisinin hemen ardından ek bir parametre olarak geçirilir. **Wchar_t** dizesinin karakter cinsinden arabellek boyutu bayt cinsinden boyutla aynı değildir.
+**Vscanf** ve **cscanf**'den farklı **olarak vscanf_s** ve **vwscanf_s** , **[]** içinde bulunan **c**, **c**, **s**, **s**veya dize denetim kümeleri türündeki tüm giriş parametreleri için arabellek boyutunun belirtilmesini gerektirir. Karakterdeki arabellek boyutu, arabellek veya değişken işaretçisinin hemen ardından ek bir parametre olarak geçirilir. Bir dize için karakter cinsinden arabellek boyutu **`wchar_t`** bayt cinsinden boyutla aynı değildir.
 
 Arabellek boyutu, Sonlandırıcı null değerini içerir. Okunan belirtecin arabelleğe sığmasını sağlamak için Width belirtim alanını kullanabilirsiniz. Bir genişlik belirtimi alanı kullanılmıyorsa ve okunan belirteç arabelleğe sığmayacak kadar büyük ise, bu arabelleğe hiçbir şey yazılmaz.
 
 > [!NOTE]
-> *Boyut* parametresi, **size_t**değil, **işaretsiz**türündedir.
+> *Boyut* parametresi **`unsigned`** **size_t**değil türündedir.
 
 Daha fazla bilgi için bkz. [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vtscanf_s**|**vscanf_s**|**vscanf_s**|**vwscanf_s**|
 
@@ -89,8 +89,8 @@ Daha fazla bilgi için bkz. [Biçim belirtimi alanları: scanf ve wscanf işlevl
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**vscanf_s**|\<stdio. h >|
-|**wscanf_s**|\<stdio. h > veya \<wchar. h >|
+|**vscanf_s**|\<stdio.h>|
+|**wscanf_s**|\<stdio.h> veya \<wchar.h>|
 
 Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -159,9 +159,9 @@ The contents are: 36 92.300003 y n Wide characters
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>

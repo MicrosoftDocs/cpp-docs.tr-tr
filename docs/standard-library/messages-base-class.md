@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - messages_base class
 ms.assetid: 9aad38c6-4c13-445d-b096-364bd0836efb
-ms.openlocfilehash: 79b6cb5f0b0c219e959f53fdc667f4c8af273cef
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b0fe7d66842fb77c6fd03f62b012babcbc9f7f3a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451846"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215653"
 ---
-# <a name="messagesbase-class"></a>messages_base Sınıfı
+# <a name="messages_base-class"></a>messages_base Sınıfı
 
-Temel sınıf, ileti kataloğu için bir **int** türü tanımlar.
+Temel sınıf, **`int`** ileti kataloğu için bir tür tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,14 +28,14 @@ struct messages_base : locale::facet {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür kataloğu, iletilerden gelen olası dönüş değerlerini açıklayan Type **int** için bir eş anladır:: [do_open](../standard-library/messages-class.md#do_open).
+Tür kataloğu, **`int`** iletilerden gelen olası dönüş değerlerini açıklayan tür için bir eş anladır:: [do_open](../standard-library/messages-class.md#do_open).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yerel ayar >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

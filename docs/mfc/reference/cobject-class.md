@@ -1,5 +1,5 @@
 ---
-title: CObject Sınıfı
+title: CObject sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CObject
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-ms.openlocfilehash: 66d76e0062d13b2bd5a16d9b07f99db9e989805a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ce745e0717e36a3c9acb5323d04545c59750add7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753983"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222907"
 ---
-# <a name="cobject-class"></a>CObject Sınıfı
+# <a name="cobject-class"></a>CObject sınıfı
 
-Microsoft Hazırlık Sınıfı Kitaplığı için temel taban sınıf.
+Microsoft Foundation Class Kitaplığı için asıl temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,49 +41,49 @@ class AFX_NOVTABLE CObject
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CObject::CObject](#cobject)|Varsayılan oluşturucu.|
+|[CObject:: CObject](#cobject)|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CObject::AssertValid](#assertvalid)|Bu nesnenin bütünlüğünü doğrular.|
-|[CObject::Dump](#dump)|Bu nesnenin tanılama dökümesini üretir.|
-|[CObject::GetRuntimeClass](#getruntimeclass)|Bu `CRuntimeClass` nesnenin sınıfına karşılık gelen yapıyı döndürür.|
-|[Cobject::Iskindof](#iskindof)|Bu nesnenin belirli bir sınıfla ilişkisini sınar.|
-|[CObject::IsSerializable](#isserializable)|Bu nesnenin seri hale getirilip serileştirilemeyeceğini görmek için testler.|
-|[CObject::Serialize](#serialize)|Bir nesneyi arşivden yükler veya depolar.|
+|[CObject:: AssertValid](#assertvalid)|Bu nesnenin bütünlüğünü doğrular.|
+|[CObject::D UMP](#dump)|Bu nesnenin tanılama dökümünü üretir.|
+|[CObject:: GetRuntimeClass](#getruntimeclass)|`CRuntimeClass`Bu nesnenin sınıfına karşılık gelen yapıyı döndürür.|
+|[CObject:: IsKindOf](#iskindof)|Bu nesnenin ilişkisini belirli bir sınıfla sınar.|
+|[CObject:: Iseri hale getirilebilir](#isserializable)|Bu nesnenin seri hale getirilebilir olup olmadığını görmek için sınar.|
+|[CObject:: serileştirme](#serialize)|Bir arşivden/' a bir nesne yükler veya kaydeder.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CObject::operator silme](#operator_delete)|Özel **silme** işleci.|
-|[CObject::operatör yeni](#operator_new)|Özel **yeni** operatör.|
+|[CObject:: operator delete](#operator_delete)|Özel **`delete`** işleç.|
+|[CObject:: operator New](#operator_new)|Özel **`new`** işleç.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca kitaplık sınıfları için `CFile` `CObList`değil, yazdığınız sınıflar için de kök görevi görür. `CObject`dahil olmak üzere temel hizmetler sağlar
+Kök görevi yalnızca ve gibi kitaplık sınıfları için değil `CFile` `CObList` , yazdığınız sınıflar için de kullanılır. `CObject`Aşağıdakiler dahil olmak üzere temel hizmetler sağlar
 
 - Serileştirme desteği
 
 - Çalışma zamanı sınıf bilgileri
 
-- Nesne tanıçıktı
+- Nesne tanılama çıktısı
 
-- Toplama sınıflarıyla uyumluluk
+- Koleksiyon sınıflarıyla uyumluluk
 
-Birden `CObject` çok devralmayı desteklemediğini unutmayın. Türemiş sınıflarınızın `CObject` yalnızca bir taban `CObject` sınıfı olabilir ve bu hiyerarşide en çok sola olmalıdır. Ancak, sağ el çoklu kalıtım dallarında yapıların ve türetilmiş olmayan `CObject`sınıfların olması caizdir.
+`CObject`Birden çok devralmayı desteklemediğine unutmayın. Türetilmiş sınıflarınızda yalnızca bir `CObject` temel sınıf bulunabilir ve bu, `CObject` hiyerarşide en sol olmalıdır. Ancak, `CObject` sağ taraftaki birden fazla devralma dallarında yapıların ve türetilmiş olmayan sınıfların olması için izin verilir.
 
-Sınıf uygulamanızda ve `CObject` bildirimlerinizde isteğe bağlı makrolardan bazılarını kullanırsanız türetmenin önemli faydalarını fark elabilirsiniz.
+`CObject`Sınıf uygulamanızda ve bildirimlerinde bazı isteğe bağlı makroları kullanırsanız Türetmenin önemli avantajlarından faydalanırsınız.
 
-Birinci düzey makrolar, [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic) ve [IMPLEMENT_DYNAMIC,](run-time-object-model-services.md#implement_dynamic)sınıf adına ve hiyerarşideki konumuna çalışma zamanı erişimine izin verir. Bu da anlamlı tanısal damping sağlar.
+İlk düzey makrolar, [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic) ve [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic), sınıf adına ve hiyerarşideki konumuna çalışma zamanı erişimine izin verir. Bu, sırasıyla anlamlı tanılama dökümü sağlar.
 
-İkinci düzey makrolar, [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL,](run-time-object-model-services.md#implement_serial)birinci düzey makroların tüm işlevselliğini içerir ve bir nesnenin "arşive" ve "arşivden" "serihale" edilmesini sağlar.
+İkinci düzey makrolar, [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) ve [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial), ilk düzey makroların tüm işlevlerini içerir ve bir nesnenin "arşive" ve bir "Arşiv" olarak "serileştirilmesi" sağlar.
 
-Genel olarak Microsoft Foundation sınıflarını ve C++ sınıflarını türetme ve kullanma `CObject`hakkında bilgi için bkz. [Using CObject](../../mfc/using-cobject.md) [Serialization](../../mfc/serialization-in-mfc.md)
+Microsoft Foundation sınıfları ve C++ sınıflarını genel ve kullanarak türetme hakkında daha fazla bilgi için `CObject` , bkz. [CObject](../../mfc/using-cobject.md) ve [serileştirme](../../mfc/serialization-in-mfc.md)kullanma.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -91,9 +91,9 @@ Genel olarak Microsoft Foundation sınıflarını ve C++ sınıflarını türetm
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afx.h
+**Üstbilgi:** AFX. h
 
-## <a name="cobjectassertvalid"></a><a name="assertvalid"></a>CObject::AssertValid
+## <a name="cobjectassertvalid"></a><a name="assertvalid"></a>CObject:: AssertValid
 
 Bu nesnenin bütünlüğünü doğrular.
 
@@ -103,25 +103,25 @@ virtual void AssertValid() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AssertValid`iç durumunu denetleyerek bu nesne üzerinde bir geçerlilik denetimi gerçekleştirir. Kitaplığın Hata Ayıklama sürümünde, `AssertValid` iddianın başarısız olduğu satır numarasını ve dosya adını listeleyen bir iletiyle programı ileri sürebilir ve sonlandırabilir.
+`AssertValid`iç durumunu denetleyerek bu nesne üzerinde bir geçerlilik denetimi gerçekleştirir. Kitaplığın hata ayıklama sürümünde, `AssertValid` onay olabilir ve bu nedenle programı, onaylaması başarısız olan satır numarasını ve dosya adını listeleyen iletiyle sonlandırır.
 
-Kendi sınıfınızı yazarken, kendiniz ve `AssertValid` sınıfınızın diğer kullanıcıları için tanılama hizmetleri sağlamak için işlevi geçersiz kılmanız gerekir. Geçersiz kılınan `AssertValid` genellikle `AssertValid` türemiş sınıfa özgü veri üyelerini denetlemeden önce taban sınıfının işlevini çağırır.
+Kendi sınıfınızı yazdığınızda, kendi `AssertValid` kendinize ve sınıfınızın diğer kullanıcılarına yönelik tanılama hizmetleri sağlamak için işlevini geçersiz kılmanız gerekir. Geçersiz kılınan, `AssertValid` `AssertValid` türetilmiş sınıfa özgü veri üyelerini denetlemeden önce temel sınıfının işlevini çağırır.
 
-Const bir işlev `AssertValid` olduğundan, sınama sırasında nesne durumunu değiştirmenize izin verilmez. **const** Kendi türemiş sınıf `AssertValid` işlevleri özel durumlar atmamalıdır, daha ziyade geçersiz nesne verileri algılayıp algılamadığını ileri sürmelidir.
+`AssertValid`Bir işlev olduğundan **`const`** , test sırasında nesne durumunu değiştirmenize izin verilmez. Kendi türetilmiş sınıf `AssertValid` işlevleriniz özel durum eklememelidir, ancak bunun yerine geçersiz nesne verilerini algılamamaları gerekip gerekmediğini belirtir.
 
-"Geçerlilik" tanımı nesnenin sınıfına bağlıdır. Kural olarak, işlev "sığ denetim" gerçekleştirmelidir. Diğer bir deyişle, bir nesne diğer nesnelere işaretçiler içeriyorsa, işaretçilerin null olup olmadığını denetlemek gerekir, ancak işaretçiler tarafından başvurulmuyorum nesneler üzerinde geçerlilik testi gerçekleştirmemelidir.
+"Geçerlilik" tanımı nesnenin sınıfına bağlıdır. Kural olarak, işlev bir "yüzeysel denetim" gerçekleştirmelidir. Diğer bir deyişle, bir nesne diğer nesnelere işaretçiler içeriyorsa, işaretçilerin null olup olmadığını kontrol etmelidir, ancak işaretçilerin başvurduğu nesneler üzerinde geçerlilik testi gerçekleştirmemelidir.
 
 ### <a name="example"></a>Örnek
 
-Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList::CObList'e](../../mfc/reference/coblist-class.md#coblist) bakın.
+Tüm örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#7](../../mfc/codesnippet/cpp/cobject-class_1.cpp)]
 
-Başka bir örnek için, [Bkz. AfxDoForAllObjects](diagnostic-services.md#afxdoforallobjects).
+Diğer bir örnek için bkz. [Afxdoforallobeler](diagnostic-services.md#afxdoforallobjects).
 
-## <a name="cobjectcobject"></a><a name="cobject"></a>CObject::CObject
+## <a name="cobjectcobject"></a><a name="cobject"></a>CObject:: CObject
 
-Bu işlevler `CObject` standart yapıcılardır.
+Bu işlevler standart `CObject` oluşturuculardır.
 
 ```
 CObject();
@@ -130,26 +130,26 @@ CObject(const CObject& objectSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*nesneSrc*<br/>
-Başka bir referans`CObject`
+*objectSrc*<br/>
+Başka bir başvuru`CObject`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan sürüm, türemiş sınıfınızın oluşturucusu tarafından otomatik olarak çağrılır.
+Varsayılan sürüm, türetilmiş sınıfınızın Oluşturucusu tarafından otomatik olarak çağırılır.
 
-Sınıfınız serileştirilebilirse (IMPLEMENT_SERIAL makroyu içeriyorsa), sınıf bildiriminizde varsayılan bir oluşturucu (bağımsız değişkeni olmayan bir oluşturucu) olmalıdır. Varsayılan bir oluşturucuya ihtiyacınız yoksa, özel veya korumalı "boş" bir oluşturucu bildirin. Daha fazla bilgi için [Bkz. CObject'i kullanma.](../../mfc/using-cobject.md)
+Sınıfınız seri hale getirilebilir ise (IMPLEMENT_SERIAL makrosunu ekler), sınıf bildirimindeki varsayılan bir oluşturucuya (bağımsız değişken içermeyen bir Oluşturucu) sahip olmanız gerekir. Varsayılan bir oluşturucuya ihtiyacınız yoksa, özel veya korumalı "boş" bir Oluşturucu bildirin. Daha fazla bilgi için, bkz. [CObject kullanma](../../mfc/using-cobject.md).
 
-Standart C++ varsayılan sınıf kopya oluşturucu üye kopyayapar. Özel `CObject` kopya oluşturucunun varlığı, sınıfınızın kopya oluşturucusu gerekliyse ancak kullanılamıyorsa derleyici hata iletisini garanti eder. Bu nedenle, sınıfınız bu özelliği gerektiriyorsa bir kopya oluşturucu sağlamanız gerekir.
+Standart C++ varsayılan sınıf kopya Oluşturucusu bir üye üye kopyası yapar. Özel kopya oluşturucusunun varlığı, `CObject` sınıfınızın kopya Oluşturucusu gerekliyse ancak kullanılamıyorsa bir derleyici hata iletisi sağlar. Bu nedenle, sınıfınız bu özelliği gerektiriyorsa bir kopya Oluşturucu sağlamanız gerekir.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) örneklerde `CAge` kullanılan sınıfın bir listesi için. `CObject`
+Örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/cpp/cobject-class_2.cpp)]
 
-## <a name="cobjectdump"></a><a name="dump"></a>CObject::Dump
+## <a name="cobjectdump"></a><a name="dump"></a>CObject::D UMP
 
-Nesnenizin içeriğini [cdumpcontext](../../mfc/reference/cdumpcontext-class.md) nesnesine atar.
+Nesnenizin içeriğini bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesine döker.
 
 ```
 virtual void Dump(CDumpContext& dc) const;
@@ -157,33 +157,33 @@ virtual void Dump(CDumpContext& dc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Dc*<br/>
-Damping için tanılama `afxDump`dökümü bağlamı, genellikle .
+*'ye*<br/>
+Döküm için tanılama döküm bağlamı, genellikle `afxDump` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kendi sınıfınızı yazarken, kendiniz ve `Dump` sınıfınızın diğer kullanıcıları için tanılama hizmetleri sağlamak için işlevi geçersiz kılmanız gerekir. Geçersiz kılınan `Dump` genellikle `Dump` türemiş sınıfa özgü veri üyelerini yazdırmadan önce taban sınıfının işlevini çağırır. `CObject::Dump`sınıfınız `IMPLEMENT_DYNAMIC` makroyu veya IMPLEMENT_SERIAL kullanıyorsa sınıf adını yazdırır.
+Kendi sınıfınızı yazdığınızda, kendi `Dump` kendinize ve sınıfınızın diğer kullanıcılarına yönelik tanılama hizmetleri sağlamak için işlevini geçersiz kılmanız gerekir. Geçersiz kılınan, `Dump` `Dump` türetilmiş sınıfa özel veri üyelerini yazdırmadan önce genellikle kendi temel sınıfının işlevini çağırır. `CObject::Dump`sınıfınız veya IMPLEMENT_SERIAL makrosunu kullanıyorsa, sınıf adını yazdırır `IMPLEMENT_DYNAMIC` .
 
 > [!NOTE]
-> Işleviniz `Dump` çıktısının sonunda yeni bir satır karakteri yazdırmamalıdır.
+> `Dump`İşleviniz çıktısının sonuna bir yeni satır karakteri yazdırmamalıdır.
 
-`Dump`aramalar yalnızca Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümünde anlamlıdır. Çağrıları, işlev bildirimlerini ve işlev uygulamalarını **koşullu** /  `#endif` derleme için #ifdef _DEBUG deyimlerle parantez içinde toplamanız gerekir.
+`Dump`çağrılar yalnızca Microsoft Foundation Class Kitaplığı hata ayıklama sürümünde anlamlı hale getirir. Koşullu derleme için **#ifdef _debug** /  deyimleriyle çağrılar, işlev bildirimleri ve işlev uygulamalarının parantez içine almanız gerekir `#endif` .
 
-`Dump` **Const** bir işlev olduğundan, dökümü sırasında nesne durumunu değiştirmenize izin verilmez.
+`Dump`Bir işlev olduğundan **`const`** , döküm sırasında nesne durumunu değiştirmenize izin verilmez.
 
-Bir `CObject` işaretçi takıldığında [CDumpContext ekleme (<<) işleci](../../mfc/reference/cdumpcontext-class.md#operator_lt_lt) çağırır. `Dump`
+[CDumpContext ekleme (<<) işleci](../../mfc/reference/cdumpcontext-class.md#operator_lt_lt) `Dump` bir `CObject` işaretçi eklendiğinde çağırır.
 
-`Dump`nesnelerin sadece "asiklik" damping izin verir. Örneğin, nesnelerin listesini dökümü yapabilirsiniz, ancak nesnelerden biri listenin kendisi ise, sonunda yığını taşarsınız.
+`Dump`nesnelerin yalnızca "Çevrimsiz" dökümünü sağlar. Bir nesne listesinin dökümünü yapabilirsiniz, örneğin, nesnelerden biri listenin kendisidir, sonunda yığının taşına sahip olursunuz.
 
 ### <a name="example"></a>Örnek
 
-Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList::CObList'e](../../mfc/reference/coblist-class.md#coblist) bakın.
+Tüm örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/cpp/cobject-class_3.cpp)]
 
-## <a name="cobjectgetruntimeclass"></a><a name="getruntimeclass"></a>CObject::GetRuntimeClass
+## <a name="cobjectgetruntimeclass"></a><a name="getruntimeclass"></a>CObject:: GetRuntimeClass
 
-Bu `CRuntimeClass` nesnenin sınıfına karşılık gelen yapıyı döndürür.
+`CRuntimeClass`Bu nesnenin sınıfına karşılık gelen yapıyı döndürür.
 
 ```
 virtual CRuntimeClass* GetRuntimeClass() const;
@@ -191,35 +191,35 @@ virtual CRuntimeClass* GetRuntimeClass() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısıiçin bir işaretçi bu nesnenin sınıfına karşılık gelen; asla **NULL**.
+Bu nesnenin sınıfına karşılık gelen [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik bir işaretçi; hiçbir koşulda **null**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her `CRuntimeClass` `CObject`türemiş sınıf için bir yapı vardır. Yapı üyeleri aşağıdaki gibidir:
+`CRuntimeClass`Her türetilmiş sınıf için bir yapı vardır `CObject` . Yapı üyeleri aşağıdaki gibidir:
 
-- **LPCSTR m_lpszClassName** ASCII sınıf adını içeren null-sonlandırılan dize.
+- **LPCSTR m_lpszClassName** ASCII sınıf adını içeren, null ile sonlandırılmış bir dize.
 
-- **int m_nObjectSize** Nesnenin boyutu, baytlar halinde. Nesne, ayrılan belleğe işaret eden veri üyelerine sahipse, bu belleğin boyutu dahil edilmez.
+- **int m_nObjectSize** Nesnenin bayt cinsinden boyutu. Nesnede, ayrılan belleği işaret eden veri üyeleri varsa, bu belleğin boyutu dahil edilmez.
 
-- **UINT m_wSchema** Şema numarası ( - 1 seri olmayan sınıflar için). Şema numarasının açıklaması için [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makroya bakın.
+- **UINT m_wSchema** Şema numarası (seri hale getirilebilir olmayan sınıflar için-1). Şema numarası açıklaması için [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makroya bakın.
 
-- **CObject\* (\* PASCAL m_pfnCreateObject )( )** Varsayılan oluşturucuya sınıfınızın bir nesnesini oluşturan bir işlev işaretçisi (yalnızca sınıf dinamik oluşturmayı destekliyorsa geçerlidir; aksi takdirde **NULL**döndürür).
+- **CObject \* (Pascal \* m_pfnCreateObject) ()** sınıfınızın bir nesnesini oluşturan varsayılan oluşturucuya yönelik bir işlev işaretçisi (yalnızca sınıf dinamik oluşturmayı destekliyorsa geçerlidir; aksi takdirde, **null**döndürür).
 
-- **CRuntimeClass\* (\* PASCAL m_pfn_GetBaseClass )( )** Uygulamanız MFC'nin AFXDLL sürümüne dinamik olarak `CRuntimeClass` bağlıysa, taban sınıfın yapısını döndüren bir işlevin işaretçisi.
+- Uygulamanız MFC 'nin AFXDLL sürümüne dinamik olarak bağlanmışsa, temel sınıfın yapısını döndüren işlevin işaretçisi olan **CRuntimeClass \* (Pascal \* m_pfn_GetBaseClass) ()** `CRuntimeClass` .
 
-- **CRuntimeClass\* m_pBaseClass** Uygulamanız statik olarak MFC'ye bağlıysa, taban sınıfın yapısına `CRuntimeClass` işaretçi.
+- Uygulamanız MFC 'ye statik olarak bağlanmışsa, temel sınıfın yapısına yönelik bir işaretçi olan **CRuntimeClass \* m_pBaseClass** `CRuntimeClass` .
 
-Bu işlev, sınıf uygulamasında [IMPLEMENT_DYNAMIC,](run-time-object-model-services.md#implement_dynamic) [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)veya [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrokullanımını gerektirir. Aksi takdirde yanlış sonuçlar alırsınız.
+Bu işlev, sınıf uygulamasında [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic), [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)veya [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrosunun kullanılmasını gerektirir. Aksi takdirde, yanlış sonuçlar alırsınız.
 
 ### <a name="example"></a>Örnek
 
-Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList::CObList'e](../../mfc/reference/coblist-class.md#coblist) bakın.
+Tüm örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/cpp/cobject-class_4.cpp)]
 
-## <a name="cobjectiskindof"></a><a name="iskindof"></a>Cobject::Iskindof
+## <a name="cobjectiskindof"></a><a name="iskindof"></a>CObject:: IsKindOf
 
-Bu nesnenin belirli bir sınıfla ilişkisini sınar.
+Bu nesnenin ilişkisini belirli bir sınıfla sınar.
 
 ```
 BOOL IsKindOf(const CRuntimeClass* pClass) const;
@@ -228,27 +228,27 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 ### <a name="parameters"></a>Parametreler
 
 *pClass*<br/>
-Türetilmiş sınıfınla ilişkili bir [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına `CObject`işaretçi.
+Türetilmiş sınıfınız ile ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik bir işaretçi `CObject` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne sınıfa karşılık gelirse sıfırsız; aksi takdirde 0.
+Nesne sınıfa karşılık geliyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, (1) belirtilen sınıfın bir nesnesi mi yoksa (2) belirtilen sınıftan türetilen bir sınıfın nesnesi olup olmadığını görmek için *pClass'ı* sınar. Bu işlev yalnızca [DECLARE_DYNAMIC,](run-time-object-model-services.md#declare_dynamic) [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate)veya [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makroile bildirilen sınıflar için çalışır.
+Bu işlev, (1) belirtilen sınıfın bir nesnesi olup olmadığını görmek için *pClass* 'ı sınar veya (2) belirtilen sınıftan türetilmiş bir sınıfın nesnesidir. Bu işlev yalnızca [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate)veya [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makroıyla belirtilen sınıflarda çalışır.
 
-C++ çok biçimlilik özelliğini yendiği için bu işlevi kapsamlı olarak kullanmayın. Bunun yerine sanal işlevleri kullanın.
+C++ çok biçimlilik özelliğini erteler olduğu için bu işlevi yaygın olarak kullanmayın. Bunun yerine sanal işlevleri kullanın.
 
 ### <a name="example"></a>Örnek
 
-Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList::CObList'e](../../mfc/reference/coblist-class.md#coblist) bakın.
+Tüm örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/cpp/cobject-class_5.cpp)]
 
-## <a name="cobjectisserializable"></a><a name="isserializable"></a>CObject::IsSerializable
+## <a name="cobjectisserializable"></a><a name="isserializable"></a>CObject:: Iseri hale getirilebilir
 
-Bu nesnenin serileştirme için uygun olup olmadığını sınama.
+Bu nesnenin serileştirme için uygun olup olmadığını test eder.
 
 ```
 BOOL IsSerializable() const;
@@ -256,24 +256,24 @@ BOOL IsSerializable() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu nesne seri hale getirilebiliyorsa sıfırsız; aksi takdirde 0.
+Bu nesne seri hale getirilebiliyorsanız sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sınıfın serileştirilebilir olabilmesi için, bildiriminin [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makroyu içermesi ve uygulamanın [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makroyu içermesi gerekir.
+Bir sınıfın seri hale getirilebilir olması için, bildiriminin [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makrosunu içermesi ve uygulamanın [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrosunu içermesi gerekir.
 
 > [!NOTE]
 > Bu işlevi geçersiz kılmayın.
 
 ### <a name="example"></a>Örnek
 
-Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList::CObList'e](../../mfc/reference/coblist-class.md#coblist) bakın.
+Tüm örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]
 
-## <a name="cobjectoperator-delete"></a><a name="operator_delete"></a>CObject::operator silme
+## <a name="cobjectoperator-delete"></a><a name="operator_delete"></a>CObject:: operator delete
 
-Kitaplığın Sürüm sürümü için, işleç **silme** işleci tarafından ayrılan belleği **yeni**.
+Kitaplığın yayın sürümü için işleç, **`delete`** işleç tarafından ayrılan belleği serbest bırakır **`new`** .
 
 ```cpp
 void PASCAL operator delete(void* p);
@@ -290,27 +290,27 @@ void PASCAL operator delete(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata Ayıklama sürümünde, operatör **silme** bellek sızıntılarını algılamak için tasarlanmış bir ayırma izleme düzenine katılır.
+Hata ayıklama sürümünde operatör, **`delete`** bellek sızıntılarını algılamak için tasarlanan bir ayırma izleme şemasına katılır.
 
-Kod satırını kullanırsanız
+Kod satırını kullanıyorsanız
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]
 
-herhangi bir uygulamadan önce bir . CPP dosyası, daha sonra **silmenin** üçüncü sürümü kullanılacak ve daha sonra raporlama için ayrılan blokta dosya adı ve satır numarası depolanır. Ekstra parametreleri sağlama konusunda endişelenmenize gerek yok; bir makro sizin için bu ilgilenir.
+bir. Daha sonra, **`delete`** daha sonra raporlama için dosya adını ve satır numarasını ayrılmış blokta depolayarak üçüncü sürümü kullanılacaktır. Ek parametreler sağlama konusunda endişelenmeniz gerekmez; bir makro sizin için bunu sizin yerinize gerçekleştirir.
 
-Hata Ayıklama modunda DEBUG_NEW kullanmasanız bile, yine de sızıntı algılaması elde edeyim, ancak yukarıda açıklanan kaynak dosya satırı numarası raporlaması olmadan.
+Hata ayıklama modunda DEBUG_NEW kullanmasanız bile, yukarıda açıklanan kaynak-dosya satır numarası raporlaması olmadan sızıntı algılamayı yine de edinirsiniz.
 
-**Yeni** işleçleri geçersiz kılar ve **silerseniz,** bu tanılama özelliğini kaybedersiniz.
+İşleçlerini ve işlecini geçersiz kılarsınız **`new`** **`delete`** , bu Tanılama özelliğini yasakladıysanız.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) örneklerde `CAge` kullanılan sınıfın bir listesi için. `CObject`
+Örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/cpp/cobject-class_8.cpp)]
 
-## <a name="cobjectoperator-new"></a><a name="operator_new"></a>CObject::operatör yeni
+## <a name="cobjectoperator-new"></a><a name="operator_new"></a>CObject:: operator New
 
-Kitaplığın Sürüm sürümü için, **new** `malloc`işleç yeni benzer bir şekilde en iyi bellek ayırma gerçekleştirir.
+Bu kitaplığın yayın sürümü için, işleci **`new`** Şuna benzer bir şekilde en iyi bellek ayırmayı gerçekleştirir `malloc` .
 
 ```cpp
 void* PASCAL operator new(size_t nSize);
@@ -324,28 +324,28 @@ void* PASCAL operator new(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata Ayıklama sürümünde, operatör **yeni** bellek sızıntılarını algılamak için tasarlanmış bir ayırma izleme düzenine katılır.
+Hata ayıklama sürümünde operatör, **`new`** bellek sızıntılarını algılamak için tasarlanan bir ayırma izleme şemasına katılır.
 
-Kod satırını kullanırsanız
+Kod satırını kullanıyorsanız
 
 [!code-cpp[NVC_MFCCObjectSample#14](../../mfc/codesnippet/cpp/cobject-class_7.cpp)]
 
-herhangi bir uygulamadan önce bir . CPP dosyası, daha sonra **yeni** ikinci sürümü, daha sonra raporlama için ayrılan blokta dosya adı ve satır numarası depolama kullanılır. Ekstra parametreleri sağlama konusunda endişelenmenize gerek yok; bir makro sizin için bu ilgilenir.
+bir. Daha sonra, **`new`** daha sonra raporlama için dosya adını ve satır numarasını ayrılmış blokta depolayarak ikinci sürümü kullanılır. Ek parametreler sağlama konusunda endişelenmeniz gerekmez; bir makro sizin için bunu sizin yerinize gerçekleştirir.
 
-Hata Ayıklama modunda DEBUG_NEW kullanmasanız bile, yine de sızıntı algılaması elde edeyim, ancak yukarıda açıklanan kaynak dosya satırı numarası raporlaması olmadan.
+Hata ayıklama modunda DEBUG_NEW kullanmasanız bile, yukarıda açıklanan kaynak-dosya satır numarası raporlaması olmadan sızıntı algılamayı yine de edinirsiniz.
 
 > [!NOTE]
-> Bu işleci geçersiz kılarsanız, **silmeyi**de geçersiz kılmanız gerekir. Standart kitaplık `_new_handler` işlevini kullanmayın.
+> Bu işleci geçersiz kılarsınız ayrıca geçersiz kılmanız gerekir **`delete`** . Standart Kitaplık `_new_handler` işlevini kullanmayın.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) örneklerde `CAge` kullanılan sınıfın bir listesi için. `CObject`
+Örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]
 
-## <a name="cobjectserialize"></a><a name="serialize"></a>CObject::Serialize
+## <a name="cobjectserialize"></a><a name="serialize"></a>CObject:: serileştirme
 
-Bu nesneyi arşivden veya arşivden okur veya yazar.
+Bu nesneyi veya bir arşivden okur veya yazar.
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -354,26 +354,26 @@ virtual void Serialize(CArchive& ar);
 ### <a name="parameters"></a>Parametreler
 
 *Ar*<br/>
-Seri `CArchive` hale getirmek için veya gelen bir nesne.
+`CArchive`Seri hale getirilecek bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seri hale `Serialize` getirmek istediğiniz her sınıf için geçersiz kılmanız gerekir. Geçersiz kılınan `Serialize` önce taban `Serialize` sınıfının işlevini çağırmalıdır.
+`Serialize`Serileştirme işlemini planladığınız her sınıf için geçersiz kılmanız gerekir. Geçersiz kılınan, `Serialize` önce `Serialize` temel sınıfının işlevini çağırmalıdır.
 
-Sınıf bildiriminizdeki [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makroyu da kullanmanız ve uygulamada [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makroyu kullanmanız gerekir.
+Sınıf bildirimindeki [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) makrosunu da kullanmanız ve uygulamadaki [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrosunu kullanmanız gerekir.
 
-[CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading) veya [CArchive kullanın::Arşivin](../../mfc/reference/carchive-class.md#isstoring) yüklenip yüklenmediğini veya depolanıp depolamadığını belirlemek için Storing.
+Arşivin yüklenip depolanmadığını öğrenmek için [CArchive:: ısyüklenmekte](../../mfc/reference/carchive-class.md#isloading) veya [CArchive:: ısdepokullanın](../../mfc/reference/carchive-class.md#isstoring) .
 
-`Serialize`CArchive tarafından [denir::ReadObject](../../mfc/reference/carchive-class.md#readobject) ve [CArchive::WriteObject](../../mfc/reference/carchive-class.md#writeobject). Bu işlevler ekleme `CArchive` işleci ( ** < **) ve ekstraksiyon işleci ( **>>** ile ilişkilidir).
+`Serialize`[CArchive:: ReadObject](../../mfc/reference/carchive-class.md#readobject) ve [CArchive:: WriteObject](../../mfc/reference/carchive-class.md#writeobject)tarafından çağırılır. Bu işlevler `CArchive` ekleme işleci () ile ilişkilendirilir **<\<**) and extraction operator ( **>>** .
 
-Serileştirme örnekleri için [Serileştirme: Nesneyi Serileştirme](../../mfc/serialization-serializing-an-object.md)makalesine bakın.
+Serileştirme örnekleri için bkz. [serileştirme: bir nesneyi seri hale getirme](../../mfc/serialization-serializing-an-object.md).
 
 ### <a name="example"></a>Örnek
 
-Tüm `CAge` `CObject` örneklerde kullanılan sınıfın listesi için [CObList::CObList'e](../../mfc/reference/coblist-class.md#coblist) bakın.
+Tüm örneklerde kullanılan sınıfın listesi için bkz. [CObList:: CObList](../../mfc/reference/coblist-class.md#coblist) `CAge` `CObject` .
 
 [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

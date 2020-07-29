@@ -1,5 +1,5 @@
 ---
-title: CMDIChildWnd Sınıfı
+title: Cmdicchild Dwnd sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMDIChildWnd
@@ -22,16 +22,16 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: a547a21b96d035f507e749aeb19f891175498d5d
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0acd42db19151001d9e292561ef20e469f9e14ea
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754569"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222972"
 ---
-# <a name="cmdichildwnd-class"></a>CMDIChildWnd Sınıfı
+# <a name="cmdichildwnd-class"></a>Cmdicchild Dwnd sınıfı
 
-Pencereyi yönetmek için üyelerle birlikte bir Windows birden çok belge arabirimi (MDI) alt penceresiişlevselliğini sağlar.
+Windows çoklu belge arabirimi (MDI) alt penceresi işlevlerini, pencereyi yönetmek için üyelerle birlikte sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,63 +43,63 @@ class CMDIChildWnd : public CFrameWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMDIChildWnd::CMDIChildWnd](#cmdichildwnd)|Bir `CMDIChildWnd` nesne inşa eder.|
+|[Cmdictepdwnd:: Cmdicchild Dwnd](#cmdichildwnd)|Bir `CMDIChildWnd` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMDIChildWnd::Oluştur](#create)|Nesneyle ilişkili Windows MDI alt `CMDIChildWnd` penceresini oluşturur.|
-|[CMDIChildWnd::GetMDIFrame](#getmdiframe)|MDI istemci penceresinin üst MDI çerçevesini döndürür.|
-|[CMDIChildWnd::MDIActivate](#mdiactivate)|Bu MDI alt pencereyi etkinleştirir.|
-|[CMDIChildWnd::MDIDestroy](#mdidestroy)|Bu MDI alt pencereyi yok eder.|
-|[CMDIChildWnd::MDIMaximize](#mdimaximize)|Bu MDI alt pencereyi en üst düzeye çıkarır.|
-|[CMDIChildWnd::MDIRestore](#mdirestore)|Bu MDI alt pencereyi en üst düzeye veya en aza indirilmiş boyuttan geri yükler.|
-|[CMDIChildWnd::SetHandles](#sethandles)|Menü ve hızlandırıcı kaynakları için tutamaçları ayarlar.|
+|[Cmdictepdwnd:: Create](#create)|Nesnesiyle ilişkili Windows MDI alt penceresini oluşturur `CMDIChildWnd` .|
+|[Cmdictepdwnd:: Getmdıframe](#getmdiframe)|MDI istemci penceresinin üst MDI çerçevesini döndürür.|
+|[Cmdictepdwnd:: Mdıactivate](#mdiactivate)|Bu MDI alt penceresini etkinleştirir.|
+|[Cmdicchild Dwnd:: Mdıdestroy](#mdidestroy)|Bu MDI alt penceresini yok eder.|
+|[Cmdictepdwnd:: Mdıdıkapla](#mdimaximize)|Bu MDI alt penceresini en üst düzeye çıkarır.|
+|[Cmdicchild Dwnd:: MDIRestore](#mdirestore)|Bu MDI alt penceresini ekranı kaplamış veya en küçük boyuttan geri yükler.|
+|[Cmdictepdwnd:: SetHandles](#sethandles)|Menü ve Hızlandırıcı kaynakları için tutamaçları ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-MDI alt penceresi, MDI alt penceresinin masaüstünde değil, MDI çerçeve penceresinin içinde görünmesi dışında, tipik bir çerçeve penceresine çok benzer. MDI alt penceresinin kendi menü çubuğu yoktur, ancak bunun yerine MDI çerçeve penceresinin menüsünü paylaşır. Çerçeve, şu anda etkin olan MDI alt penceresini temsil edecek şekilde MDI çerçeve menüsünü otomatik olarak değiştirir.
+MDI alt penceresi, bir MDI alt penceresinin, masaüstü yerine bir MDI çerçevesi penceresi içinde görünmesi dışında, bir MDI alt penceresi, tipik bir çerçeve penceresine benzer şekilde görünür. MDI alt penceresi kendi menü çubuğuna sahip değildir, bunun yerine MDI çerçeve penceresinin menüsünü paylaşır. Framework, geçerli etkin MDI alt penceresini göstermek için MDI kare menüsünü otomatik olarak değiştirir.
 
-Uygulamanız için yararlı bir MDI alt penceresi oluşturmak `CMDIChildWnd`için, 'den bir sınıf türetin. Uygulamanıza özgü verileri depolamak için türemiş sınıfa üye değişkenler ekleyin. İletiler pencereye yönlendirildiğinde ne olacağını belirtmek için ileti işleyicisi üye işlevlerini ve türetilmiş sınıfta bir ileti eşlemi uygulayın.
+Uygulamanız için yararlı bir MDI alt penceresi oluşturmak için, öğesinden bir sınıf türetebilirsiniz `CMDIChildWnd` . Uygulamanıza özgü verileri depolamak için türetilmiş sınıfa üye değişkenleri ekleyin. İletileri pencereye yönlendirdiğinde ne olacağını belirtmek için ileti işleyicisi üye işlevlerini ve türetilmiş sınıfta bir ileti eşlemesi uygulayın.
 
-Bir MDI alt penceresi oluşturmanın üç yolu vardır:
+MDI alt penceresi oluşturmak için üç yol vardır:
 
-- Doğrudan kullanarak `Create`inşa edin.
+- Kullanarak doğrudan oluşturun `Create` .
 
-- Doğrudan kullanarak `LoadFrame`inşa edin.
+- Kullanarak doğrudan oluşturun `LoadFrame` .
 
-- Dolaylı olarak bir belge şablonu aracılığıyla oluşturmak.
+- Bir belge şablonu aracılığıyla dolaylı olarak oluşturun.
 
-Çağırmadan `Create` önce `LoadFrame`veya , C++ **yeni** işleci kullanarak yığın üzerinde çerçeve-pencere nesnesi oluşturmanız gerekir. Aramadan `Create` önce, çerçeveiçin simge yi ve sınıf stillerini ayarlamak için [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global işlevine sahip bir pencere sınıfı da kaydedebilirsiniz.
+Veya çağrısından önce `Create` `LoadFrame` , C++ işlecini kullanarak yığında kare pencere nesnesi oluşturmanız gerekir **`new`** . ' İ çağırmadan önce, `Create` çerçeveye ait simge ve sınıf stillerini ayarlamak Için [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işleviyle bir pencere sınıfı da kaydedebilirsiniz.
 
-Çerçevenin `Create` oluşturma parametrelerini hemen bağımsız değişken olarak geçirmek için üye işlevi kullanın.
+`Create`Çerçevenin oluşturma parametrelerini hemen bağımsız değişken olarak geçirmek için üye işlevini kullanın.
 
-`LoadFrame`daha `Create`az bağımsız değişken gerektirir ve bunun yerine çerçevenin resim yazısı, simge, hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardan varsayılan değerlerinin çoğunu alır. Bu kaynaklartarafından `LoadFrame`erişilebilmek için tüm kaynakların aynı kaynak kimliğine sahip olması gerekir (örneğin, IDR_MAINFRAME).
+`LoadFrame`öğesinden daha az bağımsız değişken gerektirir `Create` ve bunun yerine çerçevenin başlık, simge, Hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardaki varsayılan değerlerinin çoğunu alır. Tarafından erişilebilmesi için `LoadFrame` , tüm bu kaynakların aynı kaynak kimliğine sahip olması gerekir (örneğin, IDR_MAINFRAME).
 
-Bir `CMDIChildWnd` nesne görünümler ve belgeler içeriyorsa, doğrudan programcı tarafından değil, dolaylı olarak çerçeve tarafından oluşturulur. Nesne `CDocTemplate` çerçevenin oluşturulmasını, içeren görünümlerin oluşturulmasını ve görünümlerin uygun belgeye bağlantısını yönetir. `CDocTemplate` Oluşturucunun `CRuntimeClass` parametreleri ilgili üç sınıfın (belge, çerçeve ve görünüm) Bir `CRuntimeClass` nesne, kullanıcı tarafından belirtildiğinde dinamik olarak yeni çerçeveler oluşturmak için çerçeve tarafından kullanılır (örneğin, Yeni Dosya komutu veya MDI Penceresi Yeni komutu kullanılarak).
+Bir `CMDIChildWnd` nesne görünümler ve belgeler içerdiğinde, doğrudan programcı tarafından değil Framework tarafından dolaylı olarak oluşturulur. `CDocTemplate`Nesnesi çerçevenin oluşturulmasını, kapsayan görünümlerin oluşturulmasını ve görünümlerin ilgili belge ile bağlantısını düzenler. Oluşturucunun parametreleri, `CDocTemplate` `CRuntimeClass` içerilen üç sınıfın (belge, çerçeve ve Görünüm) sayısını belirtir. Bir `CRuntimeClass` nesne, Kullanıcı tarafından belirtildiğinde (örneğin, dosya yeni komut veya MDI penceresi yeni komutu kullanılarak) dinamik olarak yeni çerçeveler oluşturmak için çerçevesi tarafından kullanılır.
 
-Yukarıdaki RUNTIME_CLASS mekanizmasının `CMDIChildWnd` doğru çalışabilmesi için, türetilen bir çerçeve penceresi sınıfının DECLARE_DYNCREATE ile birlikte bildirilmesi gerekir.
+`CMDIChildWnd`Yukarıdaki RUNTIME_CLASS mekanizmanın doğru çalışması için öğesinden türetilmiş bir çerçeve pencere sınıfı DECLARE_DYNCREATE bildirilmelidir.
 
-Sınıf, `CMDIChildWnd` varsayılan uygulamasının `CFrameWnd`çoğunu . Bu özelliklerin ayrıntılı bir listesi için lütfen [CFrameWnd](../../mfc/reference/cframewnd-class.md) sınıfı açıklamasına bakın. Sınıfın `CMDIChildWnd` aşağıdaki ek özellikleri vardır:
+`CMDIChildWnd`Sınıfı, varsayılan uygulamasının çoğunu öğesinden devralır `CFrameWnd` . Bu özelliklerin ayrıntılı bir listesi için lütfen [CFrameWnd](../../mfc/reference/cframewnd-class.md) sınıfı açıklamasına bakın. `CMDIChildWnd`Sınıfı aşağıdaki ek özelliklere sahiptir:
 
-- `CMultiDocTemplate` Sınıfla birlikte, aynı `CMDIChildWnd` belge şablonundan birden çok nesne aynı menüyü paylaşarak Windows sistem kaynaklarını kaydeder.
+- `CMultiDocTemplate`Sınıfıyla birlikte, `CMDIChildWnd` aynı belge şablonundaki birden çok nesne aynı menüyü paylaşır ve Windows sistem kaynaklarını kaydederek aynı menüyü paylaşır.
 
-- Şu anda etkin olan MDI alt pencere menüsü tamamen MDI çerçeve penceresinin menüsünün yerini alır ve şu anda etkin olan MDI alt penceresinin alt yazısı MDI çerçeve penceresinin alt yazısına eklenir. MDI çerçeve penceresi ile birlikte uygulanan MDI alt pencere işlevlerinin diğer `CMDIFrameWnd` örnekleri için sınıf açıklamasına bakın.
+- Şu anda etkin olan MDI alt pencere menüsü tamamen MDI çerçevesi penceresinin menüsünü değiştirir ve şu anda etkin olan MDI alt penceresinin resim yazısı MDI çerçevesinin pencere yazısına eklenir. MDI çerçevesi penceresiyle birlikte uygulanan MDI alt pencere işlevlerine yönelik daha fazla örnek için bkz `CMDIFrameWnd` . sınıf açıklaması.
 
-Çerçeve penceresini yok etmek için C++ **silme** işleci kullanmayın. Bunun yerine `CWnd::DestroyWindow` kullanın. Pencere `CFrameWnd` yok `PostNcDestroy` edildiğinde C++ nesnesi siler. Kullanıcı çerçeve penceresini kapattığında, `OnClose` varsayılan işleyici `DestroyWindow`.
+**`delete`** Bir çerçeve penceresini yok etmek Için C++ işlecini kullanmayın. Bunun yerine `CWnd::DestroyWindow` kullanın. Uygulamasının `CFrameWnd` uygulanması, `PostNcDestroy` pencere yok edildiğinde C++ nesnesini silecektir. Kullanıcı çerçeve penceresini kapattığında, varsayılan `OnClose` işleyici çağırır `DestroyWindow` .
 
-Daha fazla `CMDIChildWnd`bilgi için [Bkz. Çerçeve Windows.](../../mfc/frame-windows.md)
+Hakkında daha fazla bilgi için `CMDIChildWnd` bkz. [çerçeve pencereleri](../../mfc/frame-windows.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 [CFrameWnd](../../mfc/reference/cframewnd-class.md)
 
@@ -107,11 +107,11 @@ Daha fazla `CMDIChildWnd`bilgi için [Bkz. Çerçeve Windows.](../../mfc/frame-w
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cmdichildwndcmdichildwnd"></a><a name="cmdichildwnd"></a>CMDIChildWnd::CMDIChildWnd
+## <a name="cmdichildwndcmdichildwnd"></a><a name="cmdichildwnd"></a>Cmdictepdwnd:: Cmdicchild Dwnd
 
-Bir `CMDIChildWnd` nesne oluşturmak için arayın.
+Bir nesne oluşturmak için çağırın `CMDIChildWnd` .
 
 ```
 CMDIChildWnd();
@@ -119,15 +119,15 @@ CMDIChildWnd();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünür `Create` pencereyi oluşturmak için arayın.
+`Create`Görünür pencereyi oluşturmak için çağırın.
 
 ### <a name="example"></a>Örnek
 
-  [CMDIChildWnd](#create)için örneğe bakın:Oluştur .
+  [Cmdictepdwnd:: Create](#create)örneğine bakın.
 
-## <a name="cmdichildwndcreate"></a><a name="create"></a>CMDIChildWnd::Oluştur
+## <a name="cmdichildwndcreate"></a><a name="create"></a>Cmdictepdwnd:: Create
 
-Windows MDI alt penceresi oluşturmak ve `CMDIChildWnd` nesneye eklemek için bu üye işlevi arayın.
+Bir Windows MDI alt penceresi oluşturmak ve nesneye iliştirmek için bu üye işlevi çağırın `CMDIChildWnd` .
 
 ```
 virtual BOOL Create(
@@ -142,32 +142,32 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpszClassName*<br/>
-Windows sınıfını [(WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) yapısı) isimleyen null-sonlandırılan karakter dizesini işaret eder. Sınıf [adı, AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global işlevine kayıtlı herhangi bir ad olabilir. Bir standart `CMDIChildWnd`için NULL olmalıdır.
+Windows sınıfına ( [WNDCLASS](/windows/win32/api/winuser/ns-winuser-wndclassw) yapısı) ad veren null ile sonlandırılmış bir karakter dizesini işaret eder. Sınıf adı, [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlevine kayıtlı herhangi bir ad olabilir. Standart için NULL olmalıdır `CMDIChildWnd` .
 
 *lpszWindowName*<br/>
-Pencere adını temsil eden null-sonlandırılan karakter dizesini gösterir. Başlık çubuğu için metin olarak kullanılır.
+Pencere adını temsil eden, null ile sonlandırılmış bir karakter dizesini işaret eder. Başlık çubuğu için metin olarak kullanılır.
 
-*Dwstyle*<br/>
+*dwStyle*<br/>
 Pencere [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) özniteliklerini belirtir. WS_CHILD stili gereklidir.
 
 *Rect*<br/>
-Pencerenin boyutunu ve konumunu içerir. Değer, Windows'un `rectDefault` yeni `CMDIChildWnd`nin boyutunu ve konumunu belirtmesine olanak tanır.
+Pencerenin boyutunu ve konumunu içerir. `rectDefault`Değer, Windows 'un boyut ve yeni konumunu belirlemesine izin verir `CMDIChildWnd` .
 
 *pParentWnd*<br/>
 Pencerenin üst öğesini belirtir. NULL ise, ana uygulama penceresi kullanılır.
 
-*Pcontext*<br/>
+*pContext*<br/>
 [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısını belirtir. Bu parametre NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda etkin olan MDI alt çerçeve penceresi, üst çerçeve penceresinin alt yazısını belirleyebilir. Bu özellik, alt çerçeve penceresinin FWS_ADDTOTITLE stil bitini kapatarak devre dışı bırakılır.
+Şu anda etkin olan MDI alt çerçeve penceresi, üst çerçeve penceresinin başlığını belirleyebilir. Bu özellik, alt çerçeve penceresinin FWS_ADDTOTITLE stil bitini kapatarak devre dışı bırakılır.
 
-Çerçeve, bir alt pencere oluşturmak için bir kullanıcı komutuna yanıt olarak bu üye işlevi çağırır ve çerçeve alt pencereyi uygulamaya düzgün bağlamak için *pContext* parametresini kullanır. `Create`Aradiğinizde, *pContext* NULL olabilir.
+Framework, bir alt pencere oluşturmak için bir Kullanıcı komutuna yanıt olarak bu üye işlevini çağırır ve Framework, alt pencereyi uygulamaya düzgün şekilde bağlamak için *pContext* parametresini kullanır. `Create`' İ çağırdığınızda, *PCONTEXT* null olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -183,9 +183,9 @@ Sıfırsız eğer başarılı; aksi takdirde 0.
 
 [!code-cpp[NVC_MFCWindowing#9](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_3.cpp)]
 
-## <a name="cmdichildwndgetmdiframe"></a><a name="getmdiframe"></a>CMDIChildWnd::GetMDIFrame
+## <a name="cmdichildwndgetmdiframe"></a><a name="getmdiframe"></a>Cmdictepdwnd:: Getmdıframe
 
-MDI üst çerçevesini döndürmek için bu işlevi arayın.
+MDI üst çerçevesini döndürmek için bu işlevi çağırın.
 
 ```
 CMDIFrameWnd* GetMDIFrame();
@@ -193,19 +193,19 @@ CMDIFrameWnd* GetMDIFrame();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-MDI üst çerçeve penceresiiçin bir işaretçi.
+MDI üst çerçeve penceresine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen çerçeve iki ebeveyn `CMDIChildWnd` kaldırıldı ve `CMDIChildWnd` nesneyi yöneten MDICLIENT türü penceresinin üst. Nesnenin hemen MDICLIENT `CMDIChildWnd` üst öğesini geçici `CWnd` işaretçi olarak döndürmek için [GetParent](../../mfc/reference/cwnd-class.md#getparent) üye işlevini arayın.
+Döndürülen çerçeve, ' dan çıkarılan iki üst öğesidir `CMDIChildWnd` ve nesneyi yöneten MDICLIENT türünde pencerenin üst öğesidir `CMDIChildWnd` . [GetParent](../../mfc/reference/cwnd-class.md#getparent) `CMDIChildWnd` Nesnenin ımmdıclıent Parent öğesini geçici bir işaretçi olarak döndürmek için GetParent üye işlevini çağırın `CWnd` .
 
 ### <a name="example"></a>Örnek
 
-  CMDIFrameWnd için örneğe [bakın::MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu).
+  [Cmdiframewnd:: MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu)örneğine bakın.
 
-## <a name="cmdichildwndmdiactivate"></a><a name="mdiactivate"></a>CMDIChildWnd::MDIActivate
+## <a name="cmdichildwndmdiactivate"></a><a name="mdiactivate"></a>Cmdictepdwnd:: Mdıactivate
 
-MDI çerçeve penceresinden bağımsız olarak bir MDI alt penceresi etkinleştirmek için bu üye işlevi arayın.
+MDI çerçevesi penceresinden bağımsız olarak bir MDI alt penceresini etkinleştirmek için bu üye işlevini çağırın.
 
 ```cpp
 void MDIActivate();
@@ -217,11 +217,11 @@ void MDIActivate();
 
 ### <a name="example"></a>Örnek
 
-  CMDIFrameWnd için örneğe [bakın:GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#getwindowmenupopup).
+  [Cmdiframewnd:: GetWindowMenuPopup](../../mfc/reference/cmdiframewnd-class.md#getwindowmenupopup)örneğine bakın.
 
-## <a name="cmdichildwndmdidestroy"></a><a name="mdidestroy"></a>CMDIChildWnd::MDIDestroy
+## <a name="cmdichildwndmdidestroy"></a><a name="mdidestroy"></a>Cmdicchild Dwnd:: Mdıdestroy
 
-Bir MDI alt penceresini yok etmek için bu üye işlevi arayın.
+Bir MDI alt penceresini yok etmek için bu üye işlevini çağırın.
 
 ```cpp
 void MDIDestroy();
@@ -229,15 +229,15 @@ void MDIDestroy();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, alt pencerenin başlığını çerçeve penceresinden kaldırır ve alt pencereyi devre dışı bırakır.
+Üye işlevi, alt pencerenin başlığını çerçeve penceresinden kaldırır ve alt pencereyi devre dışı bırakır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#10](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_4.cpp)]
 
-## <a name="cmdichildwndmdimaximize"></a><a name="mdimaximize"></a>CMDIChildWnd::MDIMaximize
+## <a name="cmdichildwndmdimaximize"></a><a name="mdimaximize"></a>Cmdictepdwnd:: Mdıdıkapla
 
-Bir MDI alt penceresini en üst düzeye çıkarmak için bu üye işlevini arayın.
+MDI alt penceresini en üst düzeye çıkarmak için bu üye işlevi çağırın.
 
 ```cpp
 void MDIMaximize();
@@ -245,15 +245,15 @@ void MDIMaximize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alt pencere en üst düzeye çıktığında, Windows istemci alanı çerçeve penceresinin istemci alanını doldurmak için yeniden boyutlandırılır. Windows, kullanıcının alt pencereyi geri yükleyebilmeleri veya kapatabilmesi için alt pencerenin Denetim menüsünü çerçevenin menü çubuğuna yerleştirir ve alt pencerenin başlığını çerçeve penceresi başlığına ekler.
+Bir alt pencere ekranı kapladığında Windows, istemci alanının çerçeve penceresinin istemci alanını doldurmasını sağlamak için bunu yeniden boyutlandırır. Windows, alt pencereyi geri yüklemek veya kapatmak ve alt pencerenin başlığını çerçeve pencere başlığına eklemek için çerçevenin menü çubuğuna alt pencerenin Denetim menüsünü yerleştirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#11](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_5.cpp)]
 
-## <a name="cmdichildwndmdirestore"></a><a name="mdirestore"></a>CMDIChildWnd::MDIRestore
+## <a name="cmdichildwndmdirestore"></a><a name="mdirestore"></a>Cmdicchild Dwnd:: MDIRestore
 
-MDI alt penceresini maksimize edilmiş veya en aza indirilmiş boyuttan geri yüklemek için bu üye işlevi arayın.
+Bir MDI alt penceresini ekranı kaplamış veya küçültülmüş boyuttan geri yüklemek için bu üye işlevi çağırın.
 
 ```cpp
 void MDIRestore();
@@ -263,9 +263,9 @@ void MDIRestore();
 
 [!code-cpp[NVC_MFCWindowing#12](../../mfc/reference/codesnippet/cpp/cmdichildwnd-class_6.cpp)]
 
-## <a name="cmdichildwndsethandles"></a><a name="sethandles"></a>CMDIChildWnd::SetHandles
+## <a name="cmdichildwndsethandles"></a><a name="sethandles"></a>Cmdictepdwnd:: SetHandles
 
-Menü ve hızlandırıcı kaynakları için tutamaçları ayarlar.
+Menü ve Hızlandırıcı kaynakları için tutamaçları ayarlar.
 
 ```cpp
 void SetHandles(
@@ -275,22 +275,22 @@ void SetHandles(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hmenu*<br/>
-Menü kaynağının tutamacı.
+*hMenu*<br/>
+Bir menü kaynağının tanıtıcısı.
 
 *hAccel*<br/>
-Hızlandırıcı kaynağının tutamacı.
+Hızlandırıcı kaynağının tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-MDI alt pencere nesnesi tarafından kullanılan menü ve hızlandırıcı kaynaklarını ayarlamak için bu işlevi arayın.
+MDI alt pencere nesnesi tarafından kullanılan menü ve Hızlandırıcı kaynaklarını ayarlamak için bu işlevi çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek MDI](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek MDIDOCVW](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
-[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CMDIFrameWnd Sınıfı](../../mfc/reference/cmdiframewnd-class.md)
+[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek MDıDOCVW](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CMDIFrameWnd sınıfı](../../mfc/reference/cmdiframewnd-class.md)

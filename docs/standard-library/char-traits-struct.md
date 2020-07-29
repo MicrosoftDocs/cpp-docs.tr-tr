@@ -27,18 +27,18 @@ helpviewer_keywords:
 - char_traits struct
 - char_traits class
 ms.assetid: 568e59f0-4521-4207-9223-9dcf6a16d620
-ms.openlocfilehash: 3d707ff963170b6b4f14ad1f04e9420b8062b520
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 834572e96d9d8c19ae5d75a57dfa6c0053ae0ec5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366699"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222608"
 ---
 # <a name="char_traits-struct"></a>char_traits Yapısı
 
-char_traits yapı, bir karakterle ilişkili öznitelikleri açıklar.
+Char_traits yapısı bir karakterle ilişkili öznitelikleri açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class CharType>
@@ -47,52 +47,52 @@ struct char_traits;
 
 ### <a name="parameters"></a>Parametreler
 
-*Chartype*\
+*CharType*\
 Öğe veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapı türü `CharType`için çeşitli karakter özelliklerini açıklar. Sınıf şablonu [basic_string](../standard-library/basic-string-class.md) yanı sıra [basic_ios](../standard-library/basic-ios-class.md)de dahil olmak üzere çeşitli iostream sınıfı `CharType`şablonları, türü öğeleri işlemek için bu bilgileri kullanın. Böyle bir eleman türü açık inşaat veya yıkım gerektirmemelidir. Varsayılan bir oluşturucu, bir kopya oluşturucu ve beklenen semantik ile bir atama işleci sağlaması gerekir. Bityönünde bir kopya, atamayla aynı etkiye sahip olmalıdır. Yapı char_traits üye işlevlerinin hiçbiri özel durum atamaz.
+Şablon yapısı, türü için çeşitli karakter nitelikleri tanımlar `CharType` . Sınıf şablonu [basic_string](../standard-library/basic-string-class.md) ve [basic_ios](../standard-library/basic-ios-class.md)dahil olmak üzere birkaç ıostream sınıfı şablonu, türündeki öğeleri işlemek için bu bilgileri kullanın `CharType` . Böyle bir öğe türü açık oluşturma veya yok etme gerektirmemelidir. Beklenen semantiklere sahip bir varsayılan Oluşturucu, kopya Oluşturucusu ve atama işleci sağlamalıdır. Bit düzeyinde bir kopya, atamayla aynı etkiye sahip olmalıdır. Yapı char_traits üye işlevlerinin hiçbiri özel durumlar oluşturabilir.
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[Char_type](#char_type)|Bir karakter türü.|
-|[Int_type](#int_type)|Bir tür `char_type` karakterini veya dosya sonu (EOF) karakterini temsil eden bir tamsayı türü.|
-|[off_type](#off_type)|Akıştaki konumlar arasında uzaklıkları temsil edebilen bir tamsayı türü.|
-|[pos_type](#pos_type)|Akıştaki pozisyonları temsil edebilen bir tamsayı türü.|
-|[state_type](#state_type)|Akıştaki çok bayt karakterleri için dönüşüm durumunu temsil eden tür.|
+|[char_type](#char_type)|Bir karakter türü.|
+|[int_type](#int_type)|Bir karakter türü `char_type` veya dosya sonu (EOF) karakteri temsil eden bir tamsayı türü.|
+|[off_type](#off_type)|Akıştaki konumlar arasındaki uzaklıkları temsil eden bir tamsayı türü.|
+|[pos_type](#pos_type)|Akıştaki pozisyonları temsil eden bir tamsayı türü.|
+|[state_type](#state_type)|Akıştaki çok baytlı karakterler için dönüştürme durumunu temsil eden bir tür.|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[Atamak](#assign)|Bir karakter değerini diğerine atar.|
-|[Karşılaştırmak](#compare)|İki dizedeki belirli sayıda karakterle karşılaştırır.|
-|[Kopya](#copy)|Belirli sayıda karakteri bir dizeden diğerine kopyalar. Kullanım dışı. Bunun yerine [char_traits::_Copy_s](#copy_s) kullanın.|
-|[_Copy_s](#copy_s)|Belirli sayıda karakteri bir dizeden diğerine kopyalar.|
-|[eof](#eof)|Dosya sonu (EOF) karakterini döndürür.|
-|[Eq](#eq)|İki `char_type` karakterin eşit olup olmadığını test eder.|
-|[eq_int_type](#eq_int_type)|S olarak `int_type`temsil edilen iki karakterin eşit olup olmadığını test eder.|
-|[find](#find)|Bir karakter aralığında belirli bir karakterin ilk oluşumunu arar.|
-|[Uzun -luğu](#length)|Dize uzunluğunu döndürür.|
-|[Teğmen](#lt)|Bir karakterin diğerinden küçük olup olmadığını sınar.|
-|[Hareket](#move)|Belirli sayıda karakteri bir dizideki başka bir deyişle, olası çakışma, sırayla kopyalar. Kullanım dışı. bunun yerine [char_traits::_Move_s](#move_s) kullanın.|
-|[_Move_s](#move_s)|Belirli sayıda karakteri bir dizideki başka bir deyişle, olası çakışma, sırayla kopyalar.|
+|[assign (atamak)](#assign) |Diğerine bir karakter değeri atar.|
+|[Karşılaştır](#compare)|İki dizelerdeki belirtilen sayıda karaktere kadar karşılaştırır.|
+|[kopya](#copy)|Belirtilen sayıda karakteri bir dizeden diğerine kopyalar. Kullanım dışı. Bunun yerine [char_traits:: _Copy_s](#copy_s) kullanın.|
+|[_Copy_s](#copy_s)|Belirtilen sayıda karakteri bir dizeden diğerine kopyalar.|
+|[EOF](#eof)|Dosya sonu (EOF) karakterini döndürür.|
+|[eq](#eq)|İki karakterin eşit olup olmadığını sınar `char_type` .|
+|[eq_int_type](#eq_int_type)|Olarak temsil edilen iki karakterin eşit olup olmadığını sınar `int_type` .|
+|[find](#find)|Belirli bir karakterin karakter aralığında ilk oluşumunu arar.|
+|[uzunluklu](#length)|Bir dizenin uzunluğunu döndürür.|
+|[lt](#lt)|Bir karakterin diğerinden daha küçük olup olmadığını test eder.|
+|[geçiş](#move)|Bir dizideki belirtilen sayıda karakteri başka, olası örtüşme, sırayla kopyalar. Kullanım dışı. Bunun yerine [char_traits:: _Move_s](#move_s) kullanın.|
+|[_Move_s](#move_s)|Bir dizideki belirtilen sayıda karakteri başka, olası örtüşme, sırayla kopyalar.|
 |[not_eof](#not_eof)|Bir karakterin dosya sonu (EOF) karakteri olup olmadığını sınar.|
-|[to_char_type](#to_char_type)|Bir `int_type` karakteri ilgili `char_type` karaktere dönüştürür ve sonucu döndürür.|
-|[to_int_type](#to_int_type)|Bir `char_type` karakteri ilgili `int_type` karaktere dönüştürür ve sonucu döndürür.|
+|[to_char_type](#to_char_type)|`int_type`Karakteri karşılık gelen `char_type` karaktere dönüştürür ve sonucu döndürür.|
+|[to_int_type](#to_int_type)|`char_type`Karakteri karşılık gelen `int_type` karaktere dönüştürür ve sonucu döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<dize>
+**Üst bilgi:**\<string>
 
 **Ad alanı:** std
 
-## <a name="char_traitsassign"></a><a name="assign"></a>char_traits::atama
+## <a name="char_traitsassign"></a><a name="assign"></a>char_traits:: Assign
 
-Bir karakter değerini diğerine veya bir dizedeki bir dizi öğeye atar.
+Bir dizedeki bir veya bir dizi öğe aralığına bir karakter değeri atar.
 
 ```cpp
 static void assign(char_type& _CharTo,
@@ -105,20 +105,20 @@ static char_type *assign(char_type* strTo,
 
 ### <a name="parameters"></a>Parametreler
 
-**_** *CharFrom* Değeri atanacak karakter.
+**_** *Charfrom* değeri atanacak olan karakter.
 
 *_CharTo*\
-Karakter değeri atanacak öğe.
+Karakter değerine atanacak olan öğe.
 
 *strTo*\
-İlk öğeleri karakter değerleri atanacak dize veya karakter dizisi.
+İlk öğelerine karakter değerleri atanacak olan dize veya karakter dizisi.
 
 *_Num*\
-Değerler atanacak öğelerin sayısı.
+Değerlere atanacak olan öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İkinci üye işlev, ilk *_Num* öğeleri *_CharFrom*değerleri atanmış dize için bir işaretçi döndürür.
+İkinci üye işlevi, ilk *_Num* öğelerine *_CharFrom*değerler atanmış olan dizeye bir işaretçi döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -161,7 +161,7 @@ The target string s1 is: abcd-1234-abcd
 The result1 = assign ( s1 , 4 , 'f' ) is: ffff-1234-abcd
 ```
 
-## <a name="char_traitschar_type"></a><a name="char_type"></a>char_traits:char_type
+## <a name="char_traitschar_type"></a><a name="char_type"></a>char_traits:: char_type
 
 Bir karakter türü.
 
@@ -171,15 +171,15 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `CharType`ile eş anlamlıdır.
+Tür, şablon parametresi için bir eş anlamlı `CharType` .
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir [copy](#copy) ve kullanılacağına `char_type`bir örnek için kopya örneği bakın.
+Bildirme ve kullanma hakkında bir örnek için bkz. [kopya](#copy) örneği `char_type` .
 
-## <a name="char_traitscompare"></a><a name="compare"></a>char_traits::karşılaştır
+## <a name="char_traitscompare"></a><a name="compare"></a>char_traits:: Compare
 
-İki dizedeki belirli sayıda karakterle karşılaştırır.
+İki dizelerdeki belirtilen sayıda karaktere kadar karşılaştırır.
 
 ```cpp
 static int compare(const char_type* str1,
@@ -190,23 +190,23 @@ static int compare(const char_type* str1,
 ### <a name="parameters"></a>Parametreler
 
 *str1*\
-İki dizenin ilki birbiriyle karşılaştırılır.
+Birbirleriyle Karşılaştırılacak iki dizenin ilki.
 
 *str2*\
-İki dizenin ikincisi birbiriyle karşılaştırılır.
+İki dizenin birbirleriyle karşılaştırılacağı ikinci dize.
 
 *_Num*\
-Karşılanacak dizelerdeki öğe sayısı.
+Karşılaştırılacak dizelerin içindeki öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk dize ikinci dizeden küçükse negatif değer, iki dize eşitse 0 veya ilk dize ikinci dizeden büyükse pozitif değer.
+Birinci dize ikinci dizeden küçükse negatif bir değer, iki dize eşitse 0 veya birinci dize ikinci dizeden büyükse pozitif bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizeleri arasındaki karşılaştırma eleman tarafından eleman, eşitlik için ilk test yapılır ve daha sonra, dizi testleri elemanları bir çift eşit değilse, daha az için test edilir.
+Dizeler arasındaki karşılaştırma öğe öğesine göre yapılır, eşitlik için ilk test ediliyor ve sonra dizi testlerinde öğe çifti eşit değilse, daha az test edilir.
 
-İki dize bir aralık üzerinde eşit karşılaştırır, ancak biri diğerinden daha uzunsa, ikinin kısası daha uzunolandan daha azdır.
+İki dize bir Aralık üzerinde eşit olarak karşılaştırırsanız, biri diğerinin daha uzunsa, ikisinin de daha kısa olması daha küçüktür.
 
 ### <a name="example"></a>Örnek
 
@@ -241,11 +241,11 @@ int main() {
 }
 ```
 
-## <a name="char_traitscopy"></a><a name="copy"></a>char_traits::kopyala
+## <a name="char_traitscopy"></a><a name="copy"></a>char_traits:: Copy
 
-Belirli sayıda karakteri bir dizeden diğerine kopyalar.
+Belirtilen sayıda karakteri bir dizeden diğerine kopyalar.
 
-Geçirilen değerlerin doğru olup olmadığını denetlemek için arayana güvendiğiiçin, bu yöntem güvenli olmayabilir. bunun [yerine char_traits::_Copy_s](#copy_s) kullanmayı düşünün.
+Bu yöntem, geçilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağlı olduğundan güvenli olmayabilir. Bunun yerine [char_traits:: _Copy_s](#copy_s) kullanmayı göz önünde bulundurun.
 
 ```cpp
 static char_type *copy(char_type* _To,
@@ -256,17 +256,17 @@ static char_type *copy(char_type* _To,
 ### <a name="parameters"></a>Parametreler
 
 *_To*\
-Kopyalanan karakter dizisini almayı hedefleyen dize veya karakter dizisinin başındaki öğe.
+' Nin kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisinin başındaki öğesi.
 
 *_From*\
-Kopyalanacak kaynak dize veya karakter dizisinin başındaki öğe.
+Kopyalanacak kaynak dizenin veya karakter dizisinin başındaki öğesi.
 
 *_Num*\
 Kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisine kopyalanan ilk öğe.
+Kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisine kopyalanmış ilk öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -303,9 +303,9 @@ The destination string is: ABCD-1234
 The result1 = copy ( s1 , s2 , 4 ) is: ABCD-1234-abcd
 ```
 
-## <a name="char_traits_copy_s"></a><a name="copy_s"></a>char_traits:_Copy_s
+## <a name="char_traits_copy_s"></a><a name="copy_s"></a>char_traits:: _Copy_s
 
-Belirli sayıda karakteri bir dizeden diğerine kopyalar.
+Belirtilen sayıda karakteri bir dizeden diğerine kopyalar.
 
 ```cpp
 static char_type *_Copy_s(
@@ -317,21 +317,21 @@ static char_type *_Copy_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dest*\
-Kopyalanan karakter dizisini almayı hedefleyen dize veya karakter dizisi.
+*HD*\
+Kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisi.
 
 *dest_size*\
-*Dest*boyutu . Char `char_type` **char**ise, o zaman bu boyutta bayt olduğunu. Wchar_t `char_type` **wchar_t**ise, bu boyut kelimelerle ifade edilir.
+*Hedef*boyutu. `char_type`İse **`char`** , bu boyut bayt olarak olur. `char_type`İse **`wchar_t`** , bu boyut sözcüklerdir.
 
 *_From*\
 Kopyalanacak kaynak dize veya karakter dizisi.
 
-*Sayısı*\
+*biriktirme*\
 Kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kopyalanan karakter dizisini almayı hedefleyen dize veya karakter dizisi.
+Kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -368,7 +368,7 @@ The destination string is: ABCD-1234
 The result1 = _Copy_s(s1, char_traits<char>::length(s1), s2, 4) is: ABCD-1234-abcd
 ```
 
-## <a name="char_traitseof"></a><a name="eof"></a>char_traits::eof
+## <a name="char_traitseof"></a><a name="eof"></a>char_traits:: EOF
 
 Dosya sonu (EOF) karakterini döndürür.
 
@@ -382,9 +382,9 @@ EOF karakteri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya sonunu temsil eden bir değer (EOF veya WEOF gibi).
+Dosya sonunu temsil eden bir değer (örneğin, EOF veya WEOF).
 
-C++ standardı, bu değerin geçerli `char_type` bir değere karşılık olmaması gerektiğini belirtir. Microsoft C++ derleyicisi bu kısıtlamayı tür **char**için zorlar, ancak tür **wchar_t**için değil. Aşağıdaki örnek bunu gösterir.
+C++ standardı bu değerin geçerli bir değere karşılık gelmesi gerektiğini belirtir `char_type` . Microsoft C++ derleyicisi tür için bu kısıtlamayı zorlar **`char`** , ancak türü için uygular **`wchar_t`** . Aşağıdaki örnek bunu gösterir.
 
 ### <a name="example"></a>Örnek
 
@@ -419,9 +419,9 @@ The eof marker for char_traits<char> is: -1
 The eof marker for char_traits<wchar_t> is: 65535
 ```
 
-## <a name="char_traitseq"></a><a name="eq"></a>char_traits::eq
+## <a name="char_traitseq"></a><a name="eq"></a>char_traits:: EQ
 
-İki `char_type` karakterin eşit olup olmadığını test eder.
+İki karakterin eşit olup olmadığını sınar `char_type` .
 
 ```cpp
 static bool eq(const char_type& _Ch1, const char_type& _Ch2);
@@ -430,14 +430,14 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
 ### <a name="parameters"></a>Parametreler
 
 *_Ch1*\
-Eşitlik için test edilecek iki karakterden ilki.
+Eşitlik için sınanacak ilk iki karakter.
 
 *_Ch2*\
-Eşitlik için test edilecek iki karakterden ikincisi.
+Eşitlik için test edilecek iki karakterden oluşan ikincisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ilk karakter ikinci karaktere eşitse **doğrudur;** aksi takdirde **yanlış**.
+**`true`** ilk karakter ikinci karaktere eşitse; Aksi takdirde **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -479,9 +479,9 @@ The character ch1 is not equal to the character ch2.
 The character ch1 is equal to the character ch3.
 ```
 
-## <a name="char_traitseq_int_type"></a><a name="eq_int_type"></a>char_traits:eq_int_type
+## <a name="char_traitseq_int_type"></a><a name="eq_int_type"></a>char_traits:: eq_int_type
 
-S olarak `int_type`temsil edilen iki karakterin eşit olup olmadığını test eder.
+Olarak temsil edilen iki karakterin eşit olup olmadığını sınar `int_type` .
 
 ```cpp
 static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
@@ -490,14 +490,14 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
 ### <a name="parameters"></a>Parametreler
 
 *_Ch1*\
-S olarak `int_type`eşitlik için test edilecek iki karakterden ilki.
+Eşitlik için test edilecek iki karakterden ilki `int_type` .
 
 *_Ch2*\
-S olarak `int_type`eşitlik için test edilecek iki karakterden ikincisi.
+Eşitlik için test edilecek iki karakterin saniyesi `int_type` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ilk karakter ikinci karaktere eşitse **doğrudur;** aksi takdirde **yanlış**.
+**`true`** ilk karakter ikinci karaktere eşitse; Aksi takdirde **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -564,9 +564,9 @@ The int_type representation of character ch1
 is equal to the int_type representation of ch3.
 ```
 
-## <a name="char_traitsfind"></a><a name="find"></a>char_traits::bul
+## <a name="char_traitsfind"></a><a name="find"></a>char_traits:: Find
 
-Bir karakter aralığında belirli bir karakterin ilk oluşumunu arar.
+Belirli bir karakterin karakter aralığında ilk oluşumunu arar.
 
 ```cpp
 static const char_type* find(const char_type* str,
@@ -576,18 +576,18 @@ static const char_type* find(const char_type* str,
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dizedeki ilk karakter aranır.
+*üstbilgisine*\
+Aranacak dizedeki ilk karakter.
 
 *_Num*\
-Aranacak aralıktaki ilk konum sayısı.
+Aranacak aralıktaki birinciden itibaren sayım yapan konum sayısı.
 
 *_Ch*\
-Aralıkta aranacak karakter.
+Aralıkta Aranacak olan karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir eşleşme bulunursa, aralıkta belirtilen karakterin ilk oluşumuna işaretçi; aksi takdirde, null işaretçi.
+Bir eşleşme bulunursa aralıktaki belirtilen karakterin ilk oluşumuna yönelik bir işaretçi. Aksi takdirde, bir null işaretçi.
 
 ### <a name="example"></a>Örnek
 
@@ -631,9 +631,9 @@ of the character 'd' is: d-1234-abcd
 The result2 of the search is NULL.
 ```
 
-## <a name="char_traitsint_type"></a><a name="int_type"></a>char_traits:int_type
+## <a name="char_traitsint_type"></a><a name="int_type"></a>char_traits:: int_type
 
-Bir tür `char_type` karakterini veya dosya sonu (EOF) karakterini temsil eden bir tamsayı türü.
+Bir karakter türü `char_type` veya dosya sonu (EOF) karakteri temsil eden bir tamsayı türü.
 
 ```cpp
 typedef long int_type;
@@ -641,15 +641,15 @@ typedef long int_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Orijinal değeri `CharType` `int_type` `CharType` değiştirmeden sonra geri için türünün bir değeri yazmak mümkün olmalıdır.
+`CharType`Özgün değeri değiştirmeksizin, bu tür bir değeri `int_type` daha sonra yeniden öğesine dönüştürme yazmak mümkün olmalıdır `CharType` .
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir [eq_int_type](#eq_int_type) ve kullanılacağına `int_type`ilgili bir örnek için eq_int_type örneğine bakın.
+Bildirme ve kullanma hakkında bir örnek için bkz. [eq_int_type](#eq_int_type) örneği `int_type` .
 
-## <a name="char_traitslength"></a><a name="length"></a>char_traits::uzunluk
+## <a name="char_traitslength"></a><a name="length"></a>char_traits:: length
 
-Dize uzunluğunu döndürür.
+Bir dizenin uzunluğunu döndürür.
 
 ```cpp
 static size_t length(const char_type* str);
@@ -657,12 +657,12 @@ static size_t length(const char_type* str);
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Uzunluğu ölçülecek olan C-dizesi.
+*üstbilgisine*\
+Uzunluğu ölçülecek olan C dizesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Null terminator dahil değil, ölçülen dizideki öğelerin sayısı.
+Dizideki, null Sonlandırıcı dahil değil ölçülen öğe sayısı.
 
 ### <a name="example"></a>Örnek
 
@@ -690,9 +690,9 @@ The C-string str1 is: Hello
 The length of C-string str1 is: 5.
 ```
 
-## <a name="char_traitslt"></a><a name="lt"></a>char_traits::lt
+## <a name="char_traitslt"></a><a name="lt"></a>char_traits:: lt
 
-Bir karakterin diğerinden küçük olup olmadığını sınar.
+Bir karakterin diğerinden daha küçük olup olmadığını test eder.
 
 ```cpp
 static bool lt(const char_type& _Ch1, const char_type& _Ch2);
@@ -701,14 +701,14 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
 ### <a name="parameters"></a>Parametreler
 
 *_Ch1*\
-Daha az test edilecek iki karakter ilk.
+Daha az test edilecek iki karakterden ilki.
 
 *_Ch2*\
-Daha az test edilecek iki karakterden ikincisi.
+Daha az test edilecek iki karakterin ikinci sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ilk karakter ikinci karakterden daha azise **doğrudur;** aksi takdirde **yanlış**.
+**`true`** ilk karakter ikinci karakterden küçükse; Aksi takdirde **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -749,11 +749,11 @@ The character ch1 is less than the character ch2.
 The character ch3 is not less than the character ch2.
 ```
 
-## <a name="char_traitsmove"></a><a name="move"></a>char_traits::hareket et
+## <a name="char_traitsmove"></a><a name="move"></a>char_traits:: Move
 
-Belirli sayıda karakteri bir dizideki başka bir, muhtemelen çakışan sıraya kopyalar.
+Bir dizideki belirtilen sayıda karakteri diğerine, muhtemelen çakışan bir diziye kopyalar.
 
-Geçirilen değerlerin doğru olup olmadığını denetlemek için arayana güvendiğiiçin, bu yöntem güvenli olmayabilir. Bunun yerine [char_traits::_Move_s](#move_s) kullanmayı düşünün.
+Bu yöntem, geçilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağlı olduğundan güvenli olmayabilir. Bunun yerine [char_traits:: _Move_s](#move_s) kullanmayı göz önünde bulundurun.
 
 ```cpp
 static char_type *move(char_type* _To,
@@ -764,21 +764,21 @@ static char_type *move(char_type* _To,
 ### <a name="parameters"></a>Parametreler
 
 *_To*\
-Kopyalanan karakter dizisini almayı hedefleyen dize veya karakter dizisinin başındaki öğe.
+' Nin kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisinin başındaki öğesi.
 
 *_From*\
-Kopyalanacak kaynak dize veya karakter dizisinin başındaki öğe.
+Kopyalanacak kaynak dizenin veya karakter dizisinin başındaki öğesi.
 
 *_Num*\
 Kaynak dizeden kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisine kopyalanan ilk öğe *_To.*
+İlk öğe, kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisine kopyalanmış *_To* .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak ve hedef çakışabilir.
+Kaynak ve hedef çakışmayabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -826,9 +826,9 @@ The source/destination string sToFrom2 is: abcd-1234-ABCD
 The result2 = move ( sToFrom2 , findc , 8 ) is: cd-1234-4-ABCD
 ```
 
-## <a name="char_traits_move_s"></a><a name="move_s"></a>char_traits::_Move_s
+## <a name="char_traits_move_s"></a><a name="move_s"></a>char_traits:: _Move_s
 
-Belirli sayıda karakteri bir dizideki başka bir, muhtemelen çakışan sıraya kopyalar.
+Bir dizideki belirtilen sayıda karakteri diğerine, muhtemelen çakışan bir diziye kopyalar.
 
 ```cpp
 static char_type *_Move_s(
@@ -840,25 +840,25 @@ static char_type *_Move_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dest*\
-Kopyalanan karakter dizisini almayı hedefleyen dize veya karakter dizisinin başındaki öğe.
+*HD*\
+' Nin kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisinin başındaki öğesi.
 
 *dest_size*\
-*Dest*boyutu . Char `char_type` **char**ise, o zaman bu bayt olduğunu. Eğer `char_type` **wchar_t**ise, o zaman bu kelimelerle.
+*Hedef*boyutu. `char_type`İse **`char`** , bu, bayt cinsinden olur. `char_type`İse **`wchar_t`** , bu, sözcüklerdir.
 
 *_From*\
-Kopyalanacak kaynak dize veya karakter dizisinin başındaki öğe.
+Kopyalanacak kaynak dizenin veya karakter dizisinin başındaki öğesi.
 
-*Sayısı*\
+*biriktirme*\
 Kaynak dizeden kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisine *kopyalanan* ilk öğe.
+İlk öğe *hedef* , kopyalanmış karakter dizisini almak için hedeflenen dize veya karakter dizisine kopyalanmış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak ve hedef çakışabilir.
+Kaynak ve hedef çakışmayabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -906,9 +906,9 @@ The source/destination string sToFrom2 is: abcd-1234-ABCD
 The result2 = _Move_s(sToFrom2, char_traits<char>::length(sToFrom2), findc, 8) is: cd-1234-4-ABCD
 ```
 
-## <a name="char_traitsnot_eof"></a><a name="not_eof"></a>char_traits:not_eof
+## <a name="char_traitsnot_eof"></a><a name="not_eof"></a>char_traits:: not_eof
 
-Bir karakterin dosya sonu (EOF) karakteri mi yoksa EOF mi olduğunu sınar.
+Bir karakterin dosya sonu (EOF) karakteri olup olmadığını veya EOF olduğunu sınar.
 
 ```cpp
 static int_type not_eof(const int_type& _Ch);
@@ -917,13 +917,13 @@ static int_type not_eof(const int_type& _Ch);
 ### <a name="parameters"></a>Parametreler
 
 *_Ch*\
-Karakter, EOF `int_type` karakteri olup olmadığı konusunda test edilecek bir karakter olarak temsil edilir.
+`int_type`EOF karakteri olup olmadığı için sınanacak olarak temsil edilen karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karakterin `int_type` temsili, eof `int_type` karakterine eşit değilse, test edilir.
+`int_type` `int_type` KARAKTERIN, EOF karakteriyle aynı değere eşit olmaması halinde, sınanan karakterin temsili.
 
-Karakter `int_type` değeri EOF `int_type` değerine eşitse, **yanlış**.
+Karakter `int_type` DEĞERI EOF `int_type` değerine eşitse, daha sonra **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -978,9 +978,9 @@ The eofTest1 returns: 120, which is the character: x.
 The eofTest2 indicates int2 is an EOF character.
 ```
 
-## <a name="char_traitsoff_type"></a><a name="off_type"></a>char_traits::off_type
+## <a name="char_traitsoff_type"></a><a name="off_type"></a>char_traits:: off_type
 
-Akıştaki konumlar arasında uzaklıkları temsil edebilen bir tamsayı türü.
+Akıştaki konumlar arasındaki uzaklıkları temsil eden bir tamsayı türü.
 
 ```cpp
 typedef streamoff off_type;
@@ -988,11 +988,11 @@ typedef streamoff off_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, çeşitli akış konumlandırma işlemlerinde yer alan bir bayt ofset depolayabilir bir nesne açıklayan imzalı bir tamsayıdır. Genellikle [streamoff](../standard-library/ios-typedefs.md#streamoff)için eşanlamlı, ama aslında bu tür aynı özelliklere sahiptir.
+Tür, çeşitli akış konumlandırma işlemlerinde yer alan bayt sapmasını depolayabilen bir nesneyi tanımlayan işaretli bir tamsayıdır. Genellikle [streamoff](../standard-library/ios-typedefs.md#streamoff)için bir eş anladır, ancak temelde bu türle aynı özelliklere sahiptir.
 
-## <a name="char_traitspos_type"></a><a name="pos_type"></a>char_traits::pos_tipi
+## <a name="char_traitspos_type"></a><a name="pos_type"></a>char_traits::p os_type
 
-Akıştaki pozisyonları temsil edebilen bir tamsayı türü.
+Akıştaki pozisyonları temsil eden bir tamsayı türü.
 
 ```cpp
 typedef streampos pos_type;
@@ -1000,11 +1000,11 @@ typedef streampos pos_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bir akış içinde rasgele bir dosya konumu göstergesini geri yüklemek için gereken tüm bilgileri depolayabilen bir nesneyi açıklar. Genellikle [streampos](../standard-library/ios-typedefs.md#streampos)için eşanlamlı, ancak her durumda aslında bu tür olarak aynı özelliklere sahiptir.
+Türü, bir akış içinde rastgele bir dosya konumu göstergesini geri yüklemek için gereken tüm bilgileri depolayabilen bir nesneyi tanımlar. Genellikle [streampos](../standard-library/ios-typedefs.md#streampos)için bir eş anladır, ancak herhangi bir durumda temelde bu türle aynı özelliklere sahiptir.
 
-## <a name="char_traitsstate_type"></a><a name="state_type"></a>char_traits:state_type
+## <a name="char_traitsstate_type"></a><a name="state_type"></a>char_traits:: state_type
 
-Akıştaki çok bayt karakterlerin dönüşüm durumunu temsil eden tür.
+Akıştaki çok baytlı karakterler için dönüştürme durumunu temsil eden bir tür.
 
 ```cpp
 typedef implementation-defined state_type;
@@ -1012,11 +1012,11 @@ typedef implementation-defined state_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, dönüşüm durumunu temsil eden bir nesneyi açıklar. Genellikle bir eşanlamlı `mbstate_t`, ama her durumda aslında bu tür olarak aynı özelliklere sahiptir.
+Türü, bir dönüştürme durumunu temsil eden bir nesneyi tanımlar. Genellikle için bir eş anlamlı olur `mbstate_t` , ancak herhangi bir durumda bu tür ile temelde aynı özelliklere sahiptir.
 
-## <a name="char_traitsto_char_type"></a><a name="to_char_type"></a>char_traits:to_char_type
+## <a name="char_traitsto_char_type"></a><a name="to_char_type"></a>char_traits:: to_char_type
 
-Bir `int_type` karakteri ilgili `char_type` karaktere dönüştürür ve sonucu döndürür.
+`int_type`Karakteri karşılık gelen `char_type` karaktere dönüştürür ve sonucu döndürür.
 
 ```cpp
 static char_type to_char_type(const int_type& _Ch);
@@ -1025,25 +1025,25 @@ static char_type to_char_type(const int_type& _Ch);
 ### <a name="parameters"></a>Parametreler
 
 *_Ch*\
-Temsil `int_type` edilecek karakter . `char_type`
+`int_type`Olarak temsil edilecek karakter `char_type` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`char_type` Karaktere karşılık gelen `int_type` karakter.
+`char_type`Karaktere karşılık gelen karakter `int_type` .
 
-Bu şekilde temsil edilemeyen *_Ch* değeri belirtilmemiş bir sonuç verir.
+Belirtilemeyen bir sonuç veren *_Ch* değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüştürme işlemleri [to_int_type](#to_int_type) to_int_type `to_char_type` ve birbirine ters, böylece:
+Dönüştürme işlemleri [to_int_type](#to_int_type) ve birbirlerine `to_char_type` ters yapılır, böylece:
 
-`to_int_type`( `to_char_type` ( *x* ) ) = = *x*
+`to_int_type`( `to_char_type` ( *x* )) = = *x*
 
-herhangi `int_type` bir *x* ve
+herhangi bir `int_type` *x* ve
 
-`to_char_type`( `to_int_type` ( *x* ) ) = = *x*
+`to_char_type`( `to_int_type` ( *x* )) = = *x*
 
-herhangi `char_type` bir *x*için .
+herhangi bir `char_type` *x*için.
 
 ### <a name="example"></a>Örnek
 
@@ -1120,9 +1120,9 @@ The recovered char_type of ch1 is equal to the original ch1.
 The recovered char_type of ch2 is equal to the original ch2.
 ```
 
-## <a name="char_traitsto_int_type"></a><a name="to_int_type"></a>char_traits:to_int_type
+## <a name="char_traitsto_int_type"></a><a name="to_int_type"></a>char_traits:: to_int_type
 
-Bir `char_type` karakteri ilgili `int_type` karaktere dönüştürür ve sonucu döndürür.
+`char_type`Karakteri karşılık gelen `int_type` karaktere dönüştürür ve sonucu döndürür.
 
 ```cpp
 static int_type to_int_type(const char_type& _Ch);
@@ -1131,23 +1131,23 @@ static int_type to_int_type(const char_type& _Ch);
 ### <a name="parameters"></a>Parametreler
 
 *_Ch*\
-Temsil `char_type` edilecek karakter `int_type`.
+`char_type`Olarak temsil edilecek karakter `int_type` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`int_type` Karaktere karşılık gelen `char_type` karakter.
+`int_type`Karaktere karşılık gelen karakter `char_type` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüştürme işlemleri `to_int_type` ve [to_char_type](#to_char_type) birbirine terstir, böylece:
+Dönüştürme işlemleri `to_int_type` ve [to_char_type](#to_char_type) birbirlerine ters kaydedilir, böylece:
 
-`to_int_type`( `to_char_type` ( *x* ) ) = = *x*
+`to_int_type`( `to_char_type` ( *x* )) = = *x*
 
-herhangi `int_type` bir *x*için , ve
+herhangi bir `int_type` *x*için ve
 
-`to_char_type`( `to_int_type` ( *x* ) ) = = *x*
+`to_char_type`( `to_int_type` ( *x* )) = = *x*
 
-herhangi `char_type` bir *x*için .
+herhangi bir `char_type` *x*için.
 
 ### <a name="example"></a>Örnek
 
@@ -1225,4 +1225,4 @@ The recovered char_type of ch2 is equal to the original ch2.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

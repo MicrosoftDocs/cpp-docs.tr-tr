@@ -1,6 +1,7 @@
 ---
-title: 'Mantıksal Değilleme İşleci: !'
-ms.date: 08/27/2018
+title: 'Mantıksal değilleme işleci: !'
+description: C++ standart dil mantıksal değilleme işleci sözdizimi ve kullanımı.
+ms.date: 07/23/2020
 f1_keywords:
 - '!'
 helpviewer_keywords:
@@ -8,30 +9,28 @@ helpviewer_keywords:
 - NOT operator
 - logical negation
 ms.assetid: 650add9f-a7bc-426c-b01d-5fc6a81c8b62
-ms.openlocfilehash: 06142ef15fcdbafdbae4b892772a04b117c087f6
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: fdd2e7a71b791375f898372d058a5eeb2afc59f1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446546"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223687"
 ---
-# <a name="logical-negation-operator-"></a>Mantıksal Değilleme İşleci: !
+# <a name="logical-negation-operator-"></a>Mantıksal değilleme işleci: !
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-! cast-expression
-```
+> **`!`***Cast ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mantıksal Değilleme İşleci ( **!** ), işleneninin anlamını tersine çevirir. İşlenen, aritmetik veya işaretçi türünde (veya aritmetik ya da işaretçi türü olarak değerlendirilen bir ifade) olmalıdır. İşlenen örtük olarak **bool**türüne dönüştürülür. Dönüştürülen işlenen FALSE ise sonuç doğrudur; dönüştürülmüş işlenen TRUE ise sonuç FALSE 'TUR. Sonuç **bool**türündedir.
+Mantıksal olumsuzlama işleci ( **`!`** ), işleneninin anlamını tersine çevirir. İşlenen, aritmetik veya işaretçi türünde (veya aritmetik ya da işaretçi türü olarak değerlendirilen bir ifade) olmalıdır. İşlenen örtük olarak türüne dönüştürülür **`bool`** . Sonuç, dönüştürülmüş işlenen ise sonuç, **`true`** **`false`** **`false`** dönüştürülmüş işlenenin ise olur **`true`** . Sonuç türü **`bool`** .
 
-*E*ifadesi için, `!e` birli ifade, aşırı yüklenmiş işleçlerin dahil olduğu durumlar dışında `(e == 0)`ifade ile eşdeğerdir.
+Bir ifade için `e` , bir birli ifade `!e` `(e == 0)` , aşırı yüklenmiş işleçlerin dahil olduğu durumlar dışında ifadeye eşdeğerdir.
 
-## <a name="operator-keyword-for-"></a>! için İşleç Anahtar Sözcüğü
+## <a name="operator-keyword-for-"></a>İçin işleç anahtar sözcüğü
 
-**Not** işleci, **!** için alternatif bir yazıdır. Programlarınızda **Not** operatörüne erişmenin iki yolu vardır: \<iso646. h > üst bilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
+C++, **`not`** için alternatif bir yazım biçimi belirler **`!`** . C 'de alternatif yazım, üst bilgide bir makro olarak sağlanır \<iso646.h> . C++ ' da, alternatif yazım bir anahtar sözcüktür; \<iso646.h>C++ eşdeğeri veya kullanımı \<ciso646> kullanım dışıdır. Microsoft C++ ' da, [`/permissive-`](../build/reference/permissive-standards-conformance.md) [`/Za`](../build/reference/za-ze-disable-language-extensions.md) alternatif yazımı etkinleştirmek için veya derleyici seçeneği gereklidir.
 
 ## <a name="example"></a>Örnek
 
@@ -50,6 +49,6 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Birli Aritmetik İşleçler](../c-language/unary-arithmetic-operators.md)<br/>
+[Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)<br/>
+[C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md)<br/>

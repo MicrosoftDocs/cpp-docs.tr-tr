@@ -1,5 +1,5 @@
 ---
-title: CListCtrl Sınıfı
+title: CListCtrl sınıfı
 ms.date: 06/13/2019
 f1_keywords:
 - CListCtrl
@@ -264,16 +264,16 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 4b505912c69ffbb86ad3dae98f99531c477db693
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e728ba18d393831765594082ca38bbc935a708e2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749144"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223063"
 ---
-# <a name="clistctrl-class"></a>CListCtrl Sınıfı
+# <a name="clistctrl-class"></a>CListCtrl sınıfı
 
-Her biri bir simge (resim listesinden) ve bir etiketten oluşan bir öğe koleksiyonunu görüntüleyen bir "liste görünümü denetimi"nin işlevselliğini kapsüller.
+Her biri bir simge (bir görüntü listesinden) ve bir etiketten oluşan öğelerin bir koleksiyonunu görüntüleyen bir "liste görünümü denetimi" işlevselliğini Kapsüller.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -285,238 +285,238 @@ class CListCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CListCtrl::CListCtrl](#clistctrl)|Bir `CListCtrl` nesne inşa eder.|
+|[CListCtrl:: Clienstctrl](#clistctrl)|Bir `CListCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CListCtrl::ApproximateViewRect](#approximateviewrect)|Liste görünümü denetiminin öğelerini görüntülemek için gereken genişlik ve yüksekliği belirler.|
-|[CListCtrl::Düzenle](#arrange)|Bir ızgaraüzerindeki öğeleri hizalar.|
-|[CListCtrl::CanceleditLabel](#canceleditlabel)|Madde metin düzenleme işlemini iptal eder.|
-|[CListCtrl::Oluştur](#create)|Bir liste denetimi oluşturur ve bir `CListCtrl` nesneye bağlar.|
-|[CListCtrl::CreateDragImage](#createdragimage)|Belirtilen bir öğe için sürükle resim listesi oluşturur.|
-|[CListCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleri ile bir liste denetimi oluşturur `CListCtrl` ve bir nesneye bağlar.|
-|[CListCtrl::DeleteAllItems](#deleteallitems)|Denetimden tüm öğeleri siler.|
-|[CListCtrl::DeleteSütun](#deletecolumn)|Liste görünümü denetiminden bir sütunu siler.|
-|[CListCtrl::DeleteItem](#deleteitem)|Bir öğeyi denetimden siler.|
-|[CListCtrl::DrawItem](#drawitem)|Sahibi-beraberlik denetiminin görsel bir yönü değiştiğinde çağrılır.|
-|[CListCtrl::Etiketi edit](#editlabel)|Bir öğenin metninin yerinde düzenlenmesine başlar.|
-|[CListCtrl::EnableGroupView](#enablegroupview)|Liste görünümündeki öğelerin denetimin grup olarak görüntülenip görüntülenmemesini sağlar veya devre dışı kılabilir.|
-|[CListCtrl::Görünür olmasını sağlamak](#ensurevisible)|Bir öğenin görünür olmasını sağlar.|
-|[CListCtrl::Öğeyi Bul](#finditem)|Belirtilen özelliklere sahip bir liste görünümü öğesi arar.|
-|[CListCtrl::GetBkColor](#getbkcolor)|Liste görünümü denetiminin arka plan rengini alır.|
-|[CListCtrl::GetBkImage](#getbkimage)|Liste görünümü denetiminin geçerli arka plan görüntüsünü alır.|
-|[CListCtrl::GetCallbackMask](#getcallbackmask)|Liste görünümü denetimi için geri arama maskesini alır.|
-|[CListCtrl::GetCheck](#getcheck)|Bir öğeyle ilişkili durum görüntüsünün geçerli görüntü durumunu alır.|
-|[CListCtrl::GetSütun](#getcolumn)|Denetim sütununun özniteliklerini alır.|
-|[CListCtrl::GetColumnOrderArray](#getcolumnorderarray)|Liste görünümü denetiminin sütun sırasını (soldan sağa) alır.|
-|[CListCtrl::GetColumnWidth](#getcolumnwidth)|Rapor görünümünde veya liste görünümünde bir sütunun genişliğini alır.|
-|[CListCtrl::GetCountPerPage](#getcountperpage)|Liste görünümü denetimine dikey olarak sığabilecek madde sayısını hesaplar.|
-|[CListCtrl::GetEditControl](#geteditcontrol)|Öğenin metnini işlemek için kullanılan edit denetiminin tutamacını alır.|
-|[CListCtrl::GetEmptyText](#getemptytext)|Geçerli liste görünümü denetimi boşsa görüntülenecek dizeyi alır.|
-|[CListCtrl::GetExtendedStyle](#getextendedstyle)|Liste görünümü denetiminin geçerli genişletilmiş stillerini alır.|
-|[CListCtrl::GetFirstSelectedItemPosition](#getfirstselecteditemposition)|Liste görünümü denetiminde ilk seçili liste görünümü öğesinin konumunu alır.|
-|[CListCtrl::GetFocusedGroup](#getfocusedgroup)|Geçerli liste görünümü denetiminde klavye odağı olan grubu alır.|
-|[CListCtrl::GetGroupCount](#getgroupcount)|Geçerli liste görünümü denetimindeki grup sayısını alır.|
-|[CListCtrl::GetGroupInfo](#getgroupinfo)|Liste görünümü denetiminin belirli bir grubuna ait bilgileri alır.|
-|[CListCtrl::GetGroupInfoByIndex](#getgroupinfobyindex)|Geçerli liste görünümü denetiminde belirtilen bir grup la ilgili bilgileri alır.|
-|[CListCtrl::GetGroupMetrics](#getgroupmetrics)|Bir grubun ölçümlerini alır.|
-|[CListCtrl::GetGroupRect](#getgrouprect)|Geçerli liste görünümü denetiminde belirtilen bir grup için sınırlayıcı dikdörtgeni alır.|
-|[CListCtrl::GetGroupState](#getgroupstate)|Geçerli liste görünümü denetiminde belirtilen bir grubun durumunu alır.|
-|[CListCtrl::GetHeaderCtrl](#getheaderctrl)|Bir liste görünümü denetimiüst denetimini alır.|
-|[CListCtrl::GetHotCursor](#gethotcursor)|Liste görünümü denetimi için sıcak izleme etkinleştirildiğinde kullanılan imleci alır.|
-|[CListCtrl::GetHotItem](#gethotitem)|İmlecin altında şu anda liste görünümü öğesini alır.|
-|[CListCtrl::GetHoverTime](#gethovertime)|Liste görünümü denetiminin geçerli gezinme süresini alır.|
-|[CListCtrl::GetImageList](#getimagelist)|Liste görünümü öğelerini çizmek için kullanılan resim listesinin tutamacını alır.|
-|[CListCtrl::GetInsertMark](#getinsertmark)|Ekleme işaretinin geçerli konumunu alır.|
-|[CListCtrl::GetInsertMarkColor](#getinsertmarkcolor)|Ekleme işaretinin geçerli rengini alır.|
-|[CListCtrl::GetInsertMarkRect](#getinsertmarkrect)|Ekleme noktasını sınırlayan dikdörtgeni alır.|
-|[CListCtrl::GetItem](#getitem)|Liste görünümü öğesinin özniteliklerini alır.|
-|[CListCtrl::GetItemCount](#getitemcount)|Liste görünümü denetimindeki öğe sayısını alır.|
-|[CListCtrl::GetItemData](#getitemdata)|Bir maddeyle ilişkili uygulamaya özgü değeri alır.|
-|[CListCtrl::GetItemIndexRect](#getitemindexrect)|Geçerli liste görünümü denetiminde bir alt öğenin tamamı veya bir kısmı için sınırlayıcı dikdörtgeni alır.|
-|[CListCtrl::GetItemPosition](#getitemposition)|Liste görünümü öğesinin konumunu alır.|
-|[CListCtrl::GetItemRect](#getitemrect)|Bir öğeiçin sınırlayıcı dikdörtgeni alır.|
-|[CListCtrl::GetItemSpacing](#getitemspacing)|Geçerli liste görünümü denetimindeki öğeler arasındaki aralığı hesaplar.|
-|[CListCtrl::GetItemState](#getitemstate)|Liste görünümü öğesinin durumunu alır.|
-|[CListCtrl::GetItemText](#getitemtext)|Liste görünümü öğesinin veya alt öğenin metnini alır.|
-|[CListCtrl::GetNextItem](#getnextitem)|Belirtilen özelliklere ve belirli bir öğeyle belirtilen ilişkiye sahip bir liste görünümü öğesi arar.|
-|[CListCtrl::GetNextItemIndex](#getnextitemindex)|Belirtilen bir özellik kümesine sahip geçerli liste görünümü denetiminde maddenin dizinini alır.|
-|[CListCtrl::GetNextSelectedItem](#getnextselecteditem)|Liste görünümü öğesi konumunun dizinini ve bir sonraki seçili liste görünüm öğesinin konumunu yinelenmeyi alır.|
-|[CListCtrl::GetNumberOfWorkAreas](#getnumberofworkareas)|Liste görünümü denetimi için geçerli çalışma alanı sayısını alır.|
-|[CListCtrl::GetOrigin](#getorigin)|Liste görünümü denetimi için geçerli görünüm kaynağını alır.|
-|[CListCtrl::GetOutlineColor](#getoutlinecolor)|Liste görünümü denetiminin kenarlığı rengini alır.|
-|[CListCtrl::GetSelectedSütun](#getselectedcolumn)|Liste denetiminde şu anda seçili sütunun dizinini alır.|
-|[CListCtrl::GetSelectedCount](#getselectedcount)|Liste görünümü denetiminde seçili öğelerin sayısını alır.|
-|[CListCtrl::GetSelectionMark](#getselectionmark)|Liste görünümü denetiminin seçim işaretini alır.|
-|[CListCtrl::GetStringGenişliği](#getstringwidth)|Belirli bir dizenin tümünün görüntülenmesi için gereken minimum sütun genişliğini belirler.|
-|[CListCtrl::GetSubItemRect](#getsubitemrect)|Liste görünümü denetiminde bir öğenin sınırlayıcı dikdörtgenini alır.|
-|[CListCtrl::GetTextBkColor](#gettextbkcolor)|Liste görünümü denetiminin metin arka plan rengini alır.|
-|[CListCtrl::GetTextColor](#gettextcolor)|Liste görünümü denetiminin metin rengini alır.|
-|[CListCtrl::GetTileInfo](#gettileinfo)|Liste görünümü denetiminde bir döşeme yle ilgili bilgileri alır.|
-|[CListCtrl::GetTileViewInfo](#gettileviewinfo)|Döşeme görünümünde liste görünümü denetimi hakkındaki bilgileri alır.|
-|[CListCtrl::GetToolİpuçları](#gettooltips)|Liste görünümü denetiminin araç uçlarını görüntülemek için kullandığı araç ucu denetimini alır.|
-|[CListCtrl::GetTopIndex](#gettopindex)|En üstteki görünür öğenin dizinini alır.|
-|[CListCtrl::GetView](#getview)|Liste görünümü denetiminin görünümünü alır.|
-|[CListCtrl::GetViewRect](#getviewrect)|Liste görünümü denetimindeki tüm öğelerin sınırlayıcı dikdörtgenini alır.|
-|[CListCtrl::Çalışma Alanları](#getworkareas)|Liste görünümü denetiminin geçerli çalışma alanlarını alır.|
-|[CListCtrl::HasGroup](#hasgroup)|Liste görünümü denetiminin belirtilen gruba sahip olup olmadığını belirler.|
-|[CListCtrl::HitTest](#hittest)|Hangi liste görünümü öğesinin belirtilen konumda olduğunu belirler.|
-|[CListCtrl::Sütun Ekle](#insertcolumn)|Liste görünümü denetimine yeni bir sütun ekler.|
-|[CListCtrl::InsertGroup](#insertgroup)|Liste görünümü denetimine bir grup ekler.|
-|[CListCtrl::InsertGroupSorted](#insertgroupsorted)|Belirtilen grubu sıralı gruplar listesine ekler.|
-|[CListCtrl::InsertItem](#insertitem)|Liste görünümü denetimine yeni bir öğe ekler.|
-|[CListCtrl::EkleMarkHitTest](#insertmarkhittest)|Belirli bir noktaya en yakın ekleme noktasını alır.|
-|[CListCtrl::IsGroupViewEnabled](#isgroupviewenabled)|Liste görünümü denetimi için grup görünümünün etkin olup olmadığını belirler.|
-|[CListCtrl::IsItemVisible](#isitemvisible)|Geçerli liste görünümü denetiminde belirtilen bir öğenin görünür olup olmadığını gösterir.|
-|[CListCtrl::MapIDToIndex](#mapidtoindex)|Geçerli liste görünümü denetimindeki bir öğenin benzersiz kimliğini bir dizinle eşler.|
-|[CListCtrl::MapIndexToid](#mapindextoid)|Geçerli liste görünümü denetimindeki bir öğenin dizinini benzersiz bir kimlikle eşler.|
-|[CListCtrl::MoveGroup](#movegroup)|Belirtilen grubu taşır.|
-|[CListCtrl::MoveItemToGroup](#moveitemtogroup)|Belirtilen grubu liste görünümü denetiminin belirtilen sıfır tabanlı dizinine taşır.|
-|[CListCtrl::Öğeleri Yeniden Çizme](#redrawitems)|Bir dizi öğeyi yeniden boyamak için liste görünümü denetimini zorlar.|
-|[CListCtrl::RemoveAllGroups](#removeallgroups)|Liste görünümü denetiminden tüm grupları kaldırır.|
-|[CListCtrl::RemoveGroup](#removegroup)|Belirtilen grubu liste görünümü denetiminden kaldırır.|
-|[CListCtrl::Kaydırma](#scroll)|Liste görünümü denetiminin içeriğini kaydırır.|
-|[CListCtrl::SetBkColor](#setbkcolor)|Liste görünümü denetiminin arka plan rengini ayarlar.|
-|[CListCtrl::SetBkImage](#setbkimage)|Liste görünümü denetiminin geçerli arka plan görüntüsünü ayarlar.|
-|[CListCtrl::SetCallbackMask](#setcallbackmask)|Liste görünümü denetimi için geri arama maskesini ayarlar.|
-|[CListCtrl::SetCheck](#setcheck)|Bir öğeyle ilişkili durum görüntüsünün geçerli görüntü durumunu ayarlar.|
-|[CListCtrl::SetSütun](#setcolumn)|Liste görünümü sütununun özniteliklerini ayarlar.|
-|[CListCtrl::SetColumnOrderArray](#setcolumnorderarray)|Liste görünümü denetiminin sütun sırasını (soldan sağa) ayarlar.|
-|[CListCtrl::SetSütun Genişliği](#setcolumnwidth)|Rapor görünümünde veya liste görünümünde bir sütunun genişliğini değiştirir.|
-|[CListCtrl::SetExtendedStyle](#setextendedstyle)|Liste görünümü denetiminin geçerli genişletilmiş stillerini ayarlar.|
-|[CListCtrl::SetGroupInfo](#setgroupinfo)|Liste görünümü denetiminin belirtilen grubu için bilgileri ayarlar.|
-|[CListCtrl::SetGroupMetrics](#setgroupmetrics)|Liste görünümü denetiminin grup ölçümlerini ayarlar.|
-|[CListCtrl::SetHotCursor](#sethotcursor)|Liste görünümü denetimi için sıcak izleme etkinleştirildiğinde kullanılan imleci ayarlar.|
-|[CListCtrl::SetHotItem](#sethotitem)|Liste görünümü denetiminin geçerli sıcak öğesini ayarlar.|
-|[CListCtrl::SetHoverTime](#sethovertime)|Liste görünümü denetiminin geçerli gezinme süresini ayarlar.|
-|[CListCtrl::SetIconSpacing](#seticonspacing)|Liste görünümü denetimindeki simgeler arasındaki aralığı ayarlar.|
-|[CListCtrl::SetImageList](#setimagelist)|Bir resim listesini liste görünümü denetimine atar.|
-|[CListCtrl::SetInfoTip](#setinfotip)|Araç ipucu metnini ayarlar.|
-|[CListCtrl::SetInsertMark](#setinsertmark)|Ekleme noktasını tanımlanan konuma ayarlar.|
-|[CListCtrl::SetInsertMarkColor](#setinsertmarkcolor)|Ekleme noktasının rengini ayarlar.|
-|[CListCtrl::SetItem](#setitem)|Liste görünümü öğesinin özniteliklerinin bazılarını veya tümlerini ayarlar.|
-|[CListCtrl::SetItemCount](#setitemcount)|Çok sayıda öğe eklemek için liste görünümü denetimini hazırlar.|
-|[CListCtrl::SetItemCountEx](#setitemcountex)|Sanal liste görünümü denetimi için madde sayısını ayarlar.|
-|[CListCtrl::SetItemData](#setitemdata)|Öğenin uygulamaya özgü değerini ayarlar.|
-|[CListCtrl::SetItemIndexState](#setitemindexstate)|Geçerli liste görünümü denetiminde bir öğenin durumunu ayarlar.|
-|[CListCtrl::SetItemPosition](#setitemposition)|Bir öğeyi liste görünümü denetiminde belirtilen bir konuma taşır.|
-|[CListCtrl::SetItemState](#setitemstate)|Liste görünümü denetiminde öğenin durumunu değiştirir.|
-|[CListCtrl::SetItemText](#setitemtext)|Liste görünümü öğesinin veya alt öğenin metnini değiştirir.|
-|[CListCtrl::SetOutlineColor](#setoutlinecolor)|Liste görünümü denetiminin kenarlığı rengini ayarlar.|
-|[CListCtrl::SetSelectedSütun](#setselectedcolumn)|Liste görünümü denetiminin seçili sütununa ayarlar.|
-|[CListCtrl::SetSelectionMark](#setselectionmark)|Liste görünümü denetiminin seçim işaretini ayarlar.|
-|[CListCtrl::SetTextBkColor](#settextbkcolor)|Liste görünümü denetiminde metnin arka plan rengini ayarlar.|
-|[CListCtrl::SetTextColor](#settextcolor)|Liste görünümü denetiminin metin rengini ayarlar.|
-|[CListCtrl::SetTileInfo](#settileinfo)|Liste görünümü denetiminin bir döşemesi için bilgileri ayarlar.|
-|[CListCtrl::SetTileViewInfo](#settileviewinfo)|Liste görünümü denetiminin döşeme görünümünde kullandığı bilgileri ayarlar.|
-|[CListCtrl::SetToolİpuçları](#settooltips)|Liste görünümü denetiminin araç uçlarını görüntülemek için kullanacağı araç ucu denetimini ayarlar.|
-|[CListCtrl::SetView](#setview)|Liste görünümü denetiminin görünümünü ayarlar.|
-|[CListCtrl::SetÇalışma Alanları](#setworkareas)|Simgelerin liste görünümü denetiminde görüntülenebileceği alanı ayarlar.|
-|[CListCtrl::Sıralama Grupları](#sortgroups)|Liste görünümü denetiminin gruplarını kullanıcı tanımlı bir işleve sıralar.|
-|[CListCtrl::Öğeleri Sıralama](#sortitems)|Uygulama tanımlı karşılaştırma işlevini kullanarak liste görünümü öğelerini sıralar.|
-|[CListCtrl::SortItemsEx](#sortitemsex)|Uygulama tanımlı karşılaştırma işlevini kullanarak liste görünümü öğelerini sıralar.|
-|[CListCtrl::SubItemHitTest](#subitemhittest)|Varsa hangi liste görünümü öğesinin belirli bir konumda olduğunu belirler.|
-|[CListCtrl::Güncelleme](#update)|Denetimi belirli bir öğeyi yeniden boyamaya zorlar.|
+|[CListCtrl:: yaklaşık Teviewrect](#approximateviewrect)|Liste görünümü denetiminin öğelerini görüntülemek için gereken genişlik ve yüksekliği belirler.|
+|[CListCtrl:: Düzenle](#arrange)|Kılavuzdaki öğeleri hizalar.|
+|[CListCtrl:: Olayditlabel](#canceleditlabel)|Öğe metni düzenlemesi işlemini iptal eder.|
+|[CListCtrl:: Create](#create)|Bir liste denetimi oluşturur ve bunu bir nesneye ekler `CListCtrl` .|
+|[CListCtrl:: CreateDragImage](#createdragimage)|Belirtilen öğe için bir sürükle resmi listesi oluşturur.|
+|[CListCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir liste denetimi oluşturur ve bunu bir `CListCtrl` nesneye ekler.|
+|[CListCtrl::D Eleteallıtems](#deleteallitems)|Denetimdeki tüm öğeleri siler.|
+|[CListCtrl::D eleteColumn](#deletecolumn)|Liste görünümü denetiminden bir sütun siler.|
+|[CListCtrl::D Eleteıtem](#deleteitem)|Denetimden bir öğeyi siler.|
+|[CListCtrl::D rawItem](#drawitem)|Sahip çizimi denetiminin görsel bir yönü değiştiğinde çağırılır.|
+|[CListCtrl:: EditLabel](#editlabel)|Bir öğenin metninin yerinde düzenlenmesine başlar.|
+|[CListCtrl:: EnableGroupView](#enablegroupview)|Liste görünümü denetimindeki öğelerin grup olarak görüntülenip görüntülenmeyeceğini etkinleştirilir veya devre dışı bırakır.|
+|[CListCtrl:: EnsureVisible](#ensurevisible)|Bir öğenin görünür olmasını sağlar.|
+|[CListCtrl:: FindItem](#finditem)|Belirtilen özelliklere sahip bir liste görünümü öğesi arar.|
+|[CListCtrl:: GetBkColor](#getbkcolor)|Liste görünümü denetiminin arka plan rengini alır.|
+|[CListCtrl:: GetBkImage](#getbkimage)|Liste görünümü denetiminin geçerli arka plan görüntüsünü alır.|
+|[CListCtrl:: GetCallbackMask](#getcallbackmask)|Liste görünümü denetimi için geri çağırma maskesini alır.|
+|[CListCtrl:: GetCheck](#getcheck)|Bir öğeyle ilişkili durum resminin geçerli görüntüleme durumunu alır.|
+|[CListCtrl:: GetColumn](#getcolumn)|Bir denetimin sütununun özniteliklerini alır.|
+|[CListCtrl:: GetColumnOrderArray](#getcolumnorderarray)|Liste görünümü denetiminin sütun sırasını (soldan sağa) alır.|
+|[CListCtrl:: GetColumnWidth](#getcolumnwidth)|Rapor görünümü veya liste görünümündeki bir sütunun genişliğini alır.|
+|[CListCtrl:: GetCountPerPage](#getcountperpage)|Liste görünümü denetiminde dikey olarak kullanılabilecek öğelerin sayısını hesaplar.|
+|[CListCtrl:: GetEditControl](#geteditcontrol)|Bir öğenin metnini düzenlemek için kullanılan düzenleme denetiminin tanıtıcısını alır.|
+|[CListCtrl:: GetEmptyText](#getemptytext)|Geçerli liste görünümü denetimi boş ise görüntülenecek dizeyi alır.|
+|[CListCtrl:: Gebir Dedstyle](#getextendedstyle)|Liste görünümü denetiminin geçerli genişletilmiş stillerini alır.|
+|[CListCtrl:: GetFirstSelectedItemPosition](#getfirstselecteditemposition)|Liste görünümü denetimindeki ilk seçili liste görünümü öğesinin konumunu alır.|
+|[CListCtrl:: GetFocusedGroup](#getfocusedgroup)|Geçerli liste görünümü denetiminde klavye odağına sahip olan grubu alır.|
+|[CListCtrl:: GetGroupCount](#getgroupcount)|Geçerli liste görünümü denetimindeki grup sayısını alır.|
+|[CListCtrl:: Getgroupınfo](#getgroupinfo)|Liste görünümü denetiminin belirtilen grubuyla ilgili bilgileri alır.|
+|[CListCtrl:: Getgroupinfobyındex](#getgroupinfobyindex)|Geçerli liste görünümü denetimindeki belirli bir grup hakkındaki bilgileri alır.|
+|[CListCtrl:: Getgroupölçümlerini](#getgroupmetrics)|Bir grubun ölçümlerini alır.|
+|[CListCtrl:: GetGroupRect](#getgrouprect)|Geçerli liste görünümü denetimindeki belirtilen grubun sınırlayıcı dikdörtgenini alır.|
+|[CListCtrl:: GetGroupState](#getgroupstate)|Geçerli liste görünümü denetimindeki belirtilen grubun durumunu alır.|
+|[CListCtrl:: GetHeaderCtrl](#getheaderctrl)|Liste görünümü denetiminin üstbilgi denetimini alır.|
+|[CListCtrl:: GetHotCursor](#gethotcursor)|Liste görünümü denetimi için etkin izleme etkinleştirildiğinde kullanılan imleci alır.|
+|[CListCtrl:: GetHotItem](#gethotitem)|İmlecin altında bulunan liste görünümü öğesini alır.|
+|[CListCtrl:: GetHoverTime](#gethovertime)|Liste görünümü denetiminin geçerli üzerine gelme saatini alır.|
+|[CListCtrl:: GetImageList](#getimagelist)|Liste görünümü öğelerini çizmek için kullanılan bir görüntü listesinin tanıtıcısını alır.|
+|[CListCtrl:: Getınsertmark](#getinsertmark)|Ekleme işaretinin geçerli konumunu alır.|
+|[CListCtrl:: GetInsertMarkColor](#getinsertmarkcolor)|Ekleme işaretinin geçerli rengini alır.|
+|[CListCtrl:: Getınsertmarkrect](#getinsertmarkrect)|Ekleme noktasını sınıralan dikdörtgeni alır.|
+|[CListCtrl:: GetItem](#getitem)|Liste görünümü öğesinin özniteliklerini alır.|
+|[CListCtrl:: GetItemCount](#getitemcount)|Liste görünümü denetimindeki öğelerin sayısını alır.|
+|[CListCtrl:: GetItemData](#getitemdata)|Bir öğeyle ilişkili uygulamaya özgü değeri alır.|
+|[CListCtrl:: GetItemIndexRect](#getitemindexrect)|Geçerli liste görünümü denetimindeki alt parametrenin tümü veya bir parçası için sınırlayıcı dikdörtgeni alır.|
+|[CListCtrl:: GetItemPosition](#getitemposition)|Liste görünümü öğesinin konumunu alır.|
+|[CListCtrl:: GetItemRect](#getitemrect)|Bir öğenin sınırlayıcı dikdörtgenini alır.|
+|[CListCtrl:: Getıtemspacing](#getitemspacing)|Geçerli liste görünümü denetimindeki öğeler arasındaki boşluğu hesaplar.|
+|[CListCtrl:: GetItemState](#getitemstate)|Liste görünümü öğesinin durumunu alır.|
+|[CListCtrl:: GetItemText](#getitemtext)|Liste görünümü öğesi veya alt öğesi metnini alır.|
+|[CListCtrl:: GetNextItem](#getnextitem)|Belirtilen özelliklerle ve belirli bir öğeyle belirtilen ilişkiyle birlikte liste görünümü öğesini arar.|
+|[CListCtrl:: GetNextItemIndex](#getnextitemindex)|Geçerli liste görünümü denetimindeki, belirli bir özellik kümesine sahip olan öğenin dizinini alır.|
+|[CListCtrl:: Getnextselectedidıtem](#getnextselecteditem)|Bir liste görünümü öğe konumunun dizinini ve yineleme için bir sonraki seçili liste görünümü öğesinin konumunu alır.|
+|[CListCtrl:: GetNumberOfWorkAreas](#getnumberofworkareas)|Liste görünümü denetimi için geçerli çalışma alanı sayısını alır.|
+|[CListCtrl:: GetOrigin](#getorigin)|Liste görünümü denetimi için geçerli görünüm kaynağını alır.|
+|[CListCtrl:: GetOutlineColor](#getoutlinecolor)|Liste görünümü denetiminin kenarlığının rengini alır.|
+|[CListCtrl:: GetSelectedColumn](#getselectedcolumn)|Liste denetimindeki seçili olan sütunun dizinini alır.|
+|[CListCtrl:: GetSelectedCount](#getselectedcount)|Liste görünümü denetimindeki seçili öğelerin sayısını alır.|
+|[CListCtrl:: GetSelectionMark](#getselectionmark)|Liste görünümü denetiminin seçim işaretini alır.|
+|[CListCtrl:: GetStringWidth](#getstringwidth)|Belirli bir dizeyi göstermek için gereken en düşük sütun genişliğini belirler.|
+|[CListCtrl:: Getsubıtemrect](#getsubitemrect)|Liste görünümü denetimindeki bir öğenin sınırlayıcı dikdörtgenini alır.|
+|[CListCtrl:: GetTextBkColor](#gettextbkcolor)|Liste görünümü denetiminin metin arka plan rengini alır.|
+|[CListCtrl:: GetTextColor](#gettextcolor)|Liste görünümü denetiminin metin rengini alır.|
+|[CListCtrl:: Gettileınfo](#gettileinfo)|Liste görünümü denetimindeki bir kutucuk hakkındaki bilgileri alır.|
+|[CListCtrl:: Gettileviewwınınfo](#gettileviewinfo)|Kutucuk görünümündeki liste görünümü denetimiyle ilgili bilgileri alır.|
+|[CListCtrl:: GetToolTip 'ler](#gettooltips)|Liste görünümü denetiminin araç ipuçlarını görüntülemek için kullandığı araç ipucu denetimini alır.|
+|[CListCtrl:: GetTopIndex](#gettopindex)|En üstteki görünür öğenin dizinini alır.|
+|[CListCtrl:: GetView](#getview)|Liste görünümü denetiminin görünümünü alır.|
+|[CListCtrl:: GetViewRect](#getviewrect)|Liste görünümü denetimindeki tüm öğelerin sınırlayıcı dikdörtgenini alır.|
+|[CListCtrl:: GetWorkAreas](#getworkareas)|Liste görünümü denetiminin geçerli çalışma alanını alır.|
+|[CListCtrl:: HasGroup](#hasgroup)|Liste görünümü denetiminin belirtilen gruba sahip olup olmadığını belirler.|
+|[CListCtrl:: HitTest](#hittest)|Belirtilen konumda hangi liste görünümü öğesinin olduğunu belirler.|
+|[CListCtrl:: InsertColumn](#insertcolumn)|Liste görünümü denetimine yeni bir sütun ekler.|
+|[CListCtrl:: ınsertgroup](#insertgroup)|Liste görünümü denetimine bir grup ekler.|
+|[CListCtrl:: ınsertgroupsıralanmış](#insertgroupsorted)|Belirtilen grubu sıralı gruplar listesine ekler.|
+|[CListCtrl:: InsertItem](#insertitem)|Liste görünümü denetimine yeni bir öğe ekler.|
+|[CListCtrl:: ınsertmarkhittest](#insertmarkhittest)|Ekleme noktasını belirtilen noktaya en yakın alır.|
+|[CListCtrl:: ısgroupviewenabled](#isgroupviewenabled)|Liste görünümü denetimi için Grup görünümünün etkinleştirilip etkinleştirilmediğini belirler.|
+|[CListCtrl:: ısıtemvisible](#isitemvisible)|Geçerli liste görünümü denetimindeki belirtilen öğenin görünür olup olmadığını gösterir.|
+|[CListCtrl:: MapIDToIndex](#mapidtoindex)|Geçerli liste görünümü denetimindeki bir öğenin benzersiz KIMLIĞINI dizine eşler.|
+|[CListCtrl:: MapIndexToID](#mapindextoid)|Geçerli liste görünümü denetimindeki bir öğenin dizinini benzersiz bir KIMLIĞE eşler.|
+|[CListCtrl:: MoveGroup](#movegroup)|Belirtilen grubu kaydırır.|
+|[CListCtrl:: Moveıtemtogroup](#moveitemtogroup)|Belirtilen grubu liste görünümü denetiminin belirtilen sıfır tabanlı dizinine kaydırır.|
+|[CListCtrl:: Redrawtems](#redrawitems)|Bir liste görünümü denetimini bir öğe aralığını yeniden boyamak üzere zorlar.|
+|[CListCtrl:: RemoveAllGroups](#removeallgroups)|Liste görünümü denetiminden tüm grupları kaldırır.|
+|[CListCtrl:: RemoveGroup](#removegroup)|Liste görünümü denetiminden belirtilen grubu kaldırır.|
+|[CListCtrl:: Scroll](#scroll)|Liste görünümü denetiminin içeriğini kaydırır.|
+|[CListCtrl:: SetBkColor](#setbkcolor)|Liste görünümü denetiminin arka plan rengini ayarlar.|
+|[CListCtrl:: Setbkımage](#setbkimage)|Liste görünümü denetiminin geçerli arka plan resmini ayarlar.|
+|[CListCtrl:: SetCallbackMask](#setcallbackmask)|Liste görünümü denetimi için geri çağırma maskesini ayarlar.|
+|[CListCtrl:: SetCheck](#setcheck)|Bir öğeyle ilişkili durum resminin geçerli görüntüleme durumunu ayarlar.|
+|[CListCtrl:: SetColumn](#setcolumn)|Liste görünümü sütununun özniteliklerini ayarlar.|
+|[CListCtrl:: SetColumnOrderArray](#setcolumnorderarray)|Liste görünümü denetiminin sütun sırasını (soldan sağa) ayarlar.|
+|[CListCtrl:: SetColumnWidth](#setcolumnwidth)|Rapor görünümü veya liste görünümündeki bir sütunun genişliğini değiştirir.|
+|[CListCtrl:: Seestdedstyle](#setextendedstyle)|Liste görünümü denetiminin geçerli genişletilmiş stillerini ayarlar.|
+|[CListCtrl:: Setgroupınfo](#setgroupinfo)|Liste görünümü denetimi için belirtilen grubun bilgilerini ayarlar.|
+|[CListCtrl:: Setgroupmetrikleri](#setgroupmetrics)|Liste görünümü denetiminin grup ölçümlerini ayarlar.|
+|[CListCtrl:: SetHotCursor](#sethotcursor)|Liste görünümü denetimi için etkin izleme etkinleştirildiğinde kullanılan imleci ayarlar.|
+|[CListCtrl:: Sethotıtem](#sethotitem)|Liste görünümü denetiminin geçerli etkin öğesini ayarlar.|
+|[CListCtrl:: SetHoverTime](#sethovertime)|Liste görünümü denetiminin geçerli üzerine gelme saatini ayarlar.|
+|[CListCtrl:: SetIconSpacing](#seticonspacing)|Liste görünümü denetimindeki simgeler arasındaki boşluğu ayarlar.|
+|[CListCtrl:: SetImageList](#setimagelist)|Liste görünümü denetimine bir görüntü listesi atar.|
+|[CListCtrl:: Setınfotip](#setinfotip)|Araç ipucu metnini ayarlar.|
+|[CListCtrl:: Setınsertmark](#setinsertmark)|Ekleme noktasını tanımlanan konuma ayarlar.|
+|[CListCtrl:: Setınsertmarkcolor](#setinsertmarkcolor)|Ekleme noktasının rengini ayarlar.|
+|[CListCtrl:: SetItem](#setitem)|Liste görünümü öğesinin özniteliklerinin bazılarını veya tümünü ayarlar.|
+|[CListCtrl:: Setıtemcount](#setitemcount)|Çok sayıda öğe eklemek için bir liste görünümü denetimi hazırlar.|
+|[CListCtrl:: SetItemCountEx](#setitemcountex)|Bir sanal liste görünümü denetiminin öğe sayısını ayarlar.|
+|[CListCtrl:: SetItemData](#setitemdata)|Öğenin uygulamaya özgü değerini ayarlar.|
+|[CListCtrl:: SetItemIndexState](#setitemindexstate)|Geçerli liste görünümü denetimindeki bir öğenin durumunu ayarlar.|
+|[CListCtrl:: SetItemPosition](#setitemposition)|Bir öğeyi liste görünümü denetimindeki belirtilen konuma taşımaktır.|
+|[CListCtrl:: SetItemState](#setitemstate)|Liste görünümü denetimindeki bir öğenin durumunu değiştirir.|
+|[CListCtrl:: Setıtemtext](#setitemtext)|Liste görünümü öğesi veya alt öğesi metnini değiştirir.|
+|[CListCtrl:: SetOutlineColor](#setoutlinecolor)|Liste görünümü denetiminin kenarlığının rengini ayarlar.|
+|[CListCtrl:: SetSelectedColumn](#setselectedcolumn)|Liste görünümü denetiminin seçili sütununu ayarlar.|
+|[CListCtrl:: SetSelectionMark](#setselectionmark)|Liste görünümü denetiminin seçim işaretini ayarlar.|
+|[CListCtrl:: SetTextBkColor](#settextbkcolor)|Liste görünümü denetimindeki metnin arka plan rengini ayarlar.|
+|[CListCtrl:: SetTextColor](#settextcolor)|Liste görünümü denetiminin metin rengini ayarlar.|
+|[CListCtrl:: Settileınfo](#settileinfo)|Liste görünümü denetiminin bir kutucuğunun bilgilerini ayarlar.|
+|[CListCtrl:: Settileviewwınınfo](#settileviewinfo)|Liste görünümü denetiminin kutucuk görünümünde kullandığı bilgileri ayarlar.|
+|[CListCtrl:: SetToolTip 'ler](#settooltips)|Liste görünümü denetiminin araç ipuçlarını görüntülemek için kullanacağı araç ipucu denetimini ayarlar.|
+|[CListCtrl:: SetView](#setview)|Liste görünümü denetiminin görünümünü ayarlar.|
+|[CListCtrl:: SetWorkAreas](#setworkareas)|Bir liste görünümü denetiminde simgelerin görüntülenebildiği alanı ayarlar.|
+|[CListCtrl:: SortGroups](#sortgroups)|Bir liste görünümü denetiminin gruplarını Kullanıcı tanımlı bir işlevle sıralar.|
+|[CListCtrl:: SortItems](#sortitems)|Liste görünümü öğelerini uygulama tanımlı bir karşılaştırma işlevi kullanarak sıralar.|
+|[CListCtrl:: Sortıtemsex](#sortitemsex)|Liste görünümü öğelerini uygulama tanımlı bir karşılaştırma işlevi kullanarak sıralar.|
+|[CListCtrl:: Subıtemhittest](#subitemhittest)|Hangi liste görünümü öğesinin (varsa) belirli bir konumda olduğunu belirler.|
+|[CListCtrl:: Update](#update)|Denetimi belirtilen öğeyi yeniden çizmeyi zorlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Simge ve etikete ek olarak, her öğe simge nin ve etiketin sağındaki sütunlarda görüntülenen bilgilere sahip olabilir. Bu denetim (ve `CListCtrl` bu nedenle sınıf) yalnızca Windows 95/98 ve Windows NT sürüm 3.51 ve sonraki sürümler altında çalışan programlar için kullanılabilir.
+Bir simgenin ve etiketin yanı sıra, her bir öğe, simgenin ve etiketin sağında sütunlarda görüntülenecek bilgiler içerebilir. Bu denetim (ve bu nedenle `CListCtrl` sınıfı) yalnızca windows 95/98 ve WINDOWS NT sürüm 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Aşağıda `CListCtrl` sınıfın kısa bir özeti veözeti yer almaktadır. Ayrıntılı ve kavramsal bir tartışma için [bkz.](../../mfc/using-clistctrl.md) [Controls](../../mfc/controls-mfc.md)
+Aşağıda sınıfının kısa bir özeti verilmiştir `CListCtrl` . Ayrıntılı, kavramsal bir tartışma için bkz. [CListCtrl](../../mfc/using-clistctrl.md) ve [denetimleri](../../mfc/controls-mfc.md)kullanma.
 
 ## <a name="views"></a>Görünümler
 
-Liste görünümü denetimleri içeriklerini "görünümler" adı verilen dört farklı şekilde görüntüleyebilir.
+Liste görünümü denetimleri, içeriklerini "görünümler" olarak adlandırılan dört farklı şekilde gösterebilir.
 
 - Simge görünümü
 
-   Her öğe, altında bir etiket olan tam boyutlu bir simge (32 x 32 piksel) olarak görünür. Kullanıcı öğeleri liste görünümü penceresindeki herhangi bir konuma sürükleyebilir.
+   Her öğe, altında bir etiketi olan tam boyutlu bir simge (32 x 32 piksel) olarak görünür. Kullanıcı, öğeleri liste görünümü penceresinde herhangi bir konuma sürükleyebilir.
 
 - Küçük simge görünümü
 
-   Her öğe, etiketi sağında olan küçük bir simge (16 x 16 piksel) olarak görünür. Kullanıcı öğeleri liste görünümü penceresindeki herhangi bir konuma sürükleyebilir.
+   Her öğe, sağ tarafındaki etikete sahip küçük bir simge (16 x 16 piksel) olarak görünür. Kullanıcı, öğeleri liste görünümü penceresinde herhangi bir konuma sürükleyebilir.
 
 - Liste görünümü
 
-   Her öğe, sağında etiket olan küçük bir simge olarak görünür. Öğeler sütunlar halinde düzenlenir ve liste görünümü penceresindeki hiçbir konuma sürüklenemez.
+   Her öğe, sağ bir etiketi olan küçük bir simge olarak görünür. Öğeler sütunlar halinde düzenlenir ve liste görünümü penceresinde herhangi bir konuma sürüklenemez.
 
 - Rapor görünümü
 
-   Her öğe, sağdaki sütunlarda düzenlenmiş ek bilgilerle kendi satırında görünür. En soldaki sütun küçük simge ve etiketi, sonraki sütunlar ise uygulama tarafından belirtildiği gibi alt öğeler içerir. Katıştırılmış üstbilgi denetimi [(cheaderCtrl](../../mfc/reference/cheaderctrl-class.md)sınıfı) bu sütunları uygular. Üstbilgi denetimi ve rapor görünümündeki sütunlar hakkında daha fazla bilgi için [bkz.](../../mfc/adding-columns-to-the-control-report-view.md)
+   Her öğe kendi satırında görünür ve sağ tarafta sütunlar halinde düzenlenmiş ek bilgiler sağlar. En soldaki sütun küçük simgeyi ve etiketini, sonraki sütunları ise uygulama tarafından belirtilen alt öğeleri içerir. Katıştırılmış üst bilgi denetimi (class [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) Bu sütunları uygular. Bir rapor görünümündeki üst bilgi denetimi ve sütunları hakkında daha fazla bilgi için, bkz. [CListCtrl: denetime sütun ekleme (rapor görünümü)](../../mfc/adding-columns-to-the-control-report-view.md).
 
-Denetimin geçerli liste görünümünün stili geçerli görünümü belirler. Bu stiller ve bunların kullanımı hakkında daha fazla bilgi için [CListCtrl kullanma: Liste Denetim Stillerini Değiştirme'ye](../../mfc/changing-list-control-styles.md)bakın.
+Denetimin geçerli liste görünümünün stili geçerli görünümü belirler. Bu stiller ve kullanımları hakkında daha fazla bilgi için, bkz. [CListCtrl: liste denetim stillerini değiştirme](../../mfc/changing-list-control-styles.md).
 
-## <a name="extended-styles"></a>Genişletilmiş Stiller
+## <a name="extended-styles"></a>Genişletilmiş stiller
 
-Standart liste stillerine ek `CListCtrl` olarak, sınıf genişletilmiş stilleri büyük bir dizi destekler, zenginleştirilmiş işlevsellik sağlar. Bu işlevselliğin bazı örnekleri şunlardır:
+Standart liste stillerinin yanı sıra, sınıf `CListCtrl` büyük bir genişletilmiş stiller kümesini destekler ve zenginleştirilmiş işlevsellik sağlar. Bu işlevselliğe bazı örnekler şunlardır:
 
-- Hover seçimi
+- Seçimi Vurgula
 
-   Etkinleştirildiğinde, imleç maddenin üzerinde belirli bir süre kaldığında maddenin otomatik olarak seçilmesine izin verir.
+   Etkinleştirildiğinde, imleç belirli bir süre boyunca öğe üzerinde kaldığında bir öğenin otomatik seçimine izin verir.
 
 - Sanal liste görünümleri
 
-   Etkinleştirildiğinde, denetimin DWORD öğelerine kadar desteklenmesine izin verir. Bu, madde verilerini yönetme ek yükü uygulama üzerine yerleştirerek mümkündür. Madde seçimi ve odak bilgileri dışında, tüm madde bilgilerinin uygulama tarafından yönetilmesi gerekir. Daha fazla bilgi için [CListCtrl kullanma: Sanal Liste Denetimleri'ne](../../mfc/virtual-list-controls.md)bakın.
+   Etkinleştirildiğinde, denetimin en fazla DWORD öğesini desteklemesini sağlar. Bu, öğe verilerini uygulamada yönetme ek yükünü yerleştirerek mümkündür. Öğe seçimi ve odak bilgileri hariç, tüm öğe bilgilerinin uygulama tarafından yönetilmesi gerekir. Daha fazla bilgi için bkz. [CListCtrl: sanal liste denetimleri kullanma](../../mfc/virtual-list-controls.md).
 
-- Bir ve iki tıklatma etkinleştirme
+- Tek ve iki tıklama etkinleştirmesi
 
-   Etkinleştirildiğinde, sıcak izleme (öğe metninin otomatik vurgulama) ve vurgulanan öğenin bir veya iki tıklamayla etkinleştirilmesine izin verir.
+   Etkinleştirildiğinde, sık izleme (öğe metninin otomatik olarak vurgulanması) ve vurgulanan öğenin tek veya Çift tıklamayla etkinleştirilmesini sağlar.
 
-- Sütun siparişini sürükle ve bırak
+- Sürükle ve bırak sütun sıralaması
 
-   Etkinleştirildiğinde, liste görünümü denetiminde sütunların sürükle ve bırak yeniden sıralanmasına izin verir. Yalnızca rapor görünümünde kullanılabilir.
+   Etkinleştirildiğinde, liste görünümü denetimindeki sütunların sürükle ve bırak yeniden sıralanmasını sağlar. Yalnızca rapor görünümünde kullanılabilir.
 
-Bu yeni genişletilmiş stilleri kullanma hakkında daha fazla bilgi için [Bkz. CListCtrl kullanma: Liste Denetim Stillerini Değiştirme.](../../mfc/changing-list-control-styles.md)
+Bu yeni Genişletilmiş stilleri kullanma hakkında daha fazla bilgi için, bkz. [CListCtrl kullanma: liste denetim stillerini değiştirme](../../mfc/changing-list-control-styles.md).
 
-## <a name="items-and-subitems"></a>Öğeler ve Alt Öğeler
+## <a name="items-and-subitems"></a>Öğeler ve alt öğeleri
 
-Liste görünümü denetimindeki her öğe bir simge (resim listesinden), bir etiketten, geçerli bir durumdan ve uygulama tanımlı bir değerden ("öğe verileri" olarak anılacaktır) oluşur. Bir veya daha fazla alt öğe de her öğe ile ilişkili olabilir. "Alt öğe", rapor görünümünde, öğenin simgesinin ve etiketinin sağındaki sütunda görüntülenebilen bir dizedir. Liste görünümü denetimindeki tüm öğeler aynı sayıda alt öğeye sahip olmalıdır.
+Liste görünümü denetimindeki her öğe bir simge (görüntü listesinden), bir etiket, geçerli durum ve uygulama tanımlı bir değer ("öğe verileri" olarak adlandırılır) oluşur. Bir ya da daha fazla alt öğe, her öğeyle ilişkilendirilebilir. Bir "alt öğe", rapor görünümünde bir öğenin simgesinin ve etiketinin sağında bir sütunda görüntülenebilecek bir dizedir. Liste görünümü denetimindeki tüm öğelerin aynı sayıda alt öğeleri olması gerekir.
 
-Sınıf, `CListCtrl` bu öğeleri eklemek, silerken, bulmak ve değiştirmek için çeşitli işlevler sağlar. Daha fazla bilgi için [CListCtrl::GetItem,](#getitem) [CListCtrl::InsertItem](#insertitem)ve [CListCtrl::FindItem](#finditem), [Denetime Öğe Ekleme](../adding-items-to-the-control.md)ve [Kaydırma, Düzenleme, Sıralama ve Liste Denetimlerinde Bulma](../scrolling-arranging-sorting-and-finding-in-list-controls.md).
+Sınıfı `CListCtrl` , bu öğeleri ekleme, silme, bulma ve değiştirme için çeşitli işlevler sağlar. Daha fazla bilgi için, bkz. [CListCtrl:: GetItem](#getitem), [CListCtrl:: InsertItem](#insertitem)ve [CListCtrl:: FindItem](#finditem), [denetime öğe ekleme](../adding-items-to-the-control.md)ve [liste denetimlerinde kaydırma, düzenleme, sıralama ve bulma](../scrolling-arranging-sorting-and-finding-in-list-controls.md).
 
-Varsayılan olarak, liste görünümü denetimi bir öğenin simgesini ve metin özniteliklerini depolamaktan sorumludur. Ancak, bu öğe türlerine `CListCtrl` ek olarak, sınıf "geri arama öğeleri"ni destekler. "Geri arama öğesi", uygulamanın denetim yerine metni, simgeyi veya her ikisini de depoladığı bir liste görünümü öğesidir. Uygulama tarafından hangi öğe özniteliklerinin (metin ve/veya simge) sağlandığını belirtmek için geri arama maskesi kullanılır. Bir uygulama geri arama öğeleri kullanıyorsa, metin ve/veya simge özniteliklerini isteğe bağlı olarak sağlayabilmelidir. Geri arama öğeleri, uygulamanız bu bilgilerin bazılarını zaten koruduğunda yararlıdır. Daha fazla bilgi için [Bkz. CListCtrl kullanma: Geri Arama Öğeleri ve Geri Arama Maskesi.](../callback-items-and-the-callback-mask.md)
+Varsayılan olarak, liste görünümü denetimi bir öğenin simge ve metin özniteliklerinin depolanmasından sorumludur. Ancak, bu öğe türlerine ek olarak, sınıfı `CListCtrl` "geri çağırma öğeleri" ni destekler. "Geri çağırma öğesi", uygulamanın (denetim yerine) metin, simge veya her ikisini de sakladığı bir liste görünümü öğesidir. Uygulama tarafından hangi öğe özniteliklerinin (metin ve/veya simge) sağlandığını belirtmek için bir geri çağırma maskesi kullanılır. Bir uygulama geri çağırma öğeleri kullanıyorsa, istek üzerine metin ve/veya simge özniteliklerini sağlayabilmesi gerekir. Uygulamanız bu bilgilerden bazılarını zaten koruduğu zaman geri çağırma öğeleri yararlıdır. Daha fazla bilgi için bkz. [CListCtrl: geri çağırma öğeleri ve geri çağrı maskesi kullanma](../callback-items-and-the-callback-mask.md).
 
-## <a name="image-lists"></a>Resim Listeleri
+## <a name="image-lists"></a>Görüntü listeleri
 
-Liste görünümü öğeleri için simgeler, üstbilgi öğesi resimleri ve uygulama tanımlı durumlar, liste görünümü denetimi oluşturduğunuz ve atadığınız çeşitli resim listelerinde [(CImageList](cimagelist-class.md)sınıfı tarafından uygulanan) bulunur. Her liste görünümü denetimien en fazla dört farklı resim listesi türü olabilir:
+Liste görünümü öğeleri için simgeler, üstbilgi öğesi görüntüleri ve uygulama tanımlı durumlar, oluşturduğunuz ve liste görünümü denetimine atadığınız çeşitli görüntü listelerinde ( [CImageList](cimagelist-class.md)tarafından uygulanan) bulunur. Her liste görünümü denetimi en fazla dört farklı görüntü listesi türüne sahip olabilir:
 
 - Büyük simge
 
-   Simge görünümünde tam boyutlu simgeler için kullanılır.
+   Tam boyutlu simgeler için simge görünümünde kullanılır.
 
 - Küçük simge
 
-   Simge görünümünde kullanılan simgelerin daha küçük sürümleri için küçük simge, liste ve rapor görünümlerinde kullanılır.
+   Küçük simge, liste ve rapor görünümlerinde, simge görünümünde kullanılan simgelerin daha küçük sürümleri için kullanılır.
 
 - Uygulama tanımlı durum
 
-   Uygulama tanımlı durumu belirtmek için öğe simgesinin yanında görüntülenen durum görüntüleri içerir.
+   Uygulama tanımlı bir durumu göstermek için bir öğenin simgesinin yanında görüntülenen durum görüntülerini içerir.
 
 - Üstbilgi öğesi
 
-   Rapor görünümünde, her üstbilgi denetim öğesinde görünen küçük görüntüler için kullanılır.
+   Her üstbilgi denetim öğesinde görünen küçük görüntüler için rapor görünümünde kullanılır.
 
-Varsayılan olarak, bir liste görünümü denetimi yok edildiğinde kendisine atanan resim listelerini yok eder; ancak, geliştirici, uygulama tarafından belirlendiği gibi artık kullanılmadığında her görüntü listesini yok ederek bu davranışı özelleştirebilir. Daha fazla bilgi için [Bkz. CListCtrl'i Kullanma: Öğeleri ve Resim Listelerini Listele.](../list-items-and-image-lists.md)
+Varsayılan olarak, bir liste görünümü denetimi, yok edildiğinde kendisine atanan görüntü listelerini yok eder; Ancak geliştirici, uygulama tarafından belirlendiği şekilde, artık kullanılmayan her görüntü listesini yok ederek bu davranışı özelleştirebilir. Daha fazla bilgi için bkz. [CListCtrl: liste öğeleri ve görüntü listeleri kullanma](../list-items-and-image-lists.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](cobject-class.md)
+[CObject](cobject-class.md)
 
-[Ccmdtarget](ccmdtarget-class.md)
+[CCmdTarget](ccmdtarget-class.md)
 
-[Cwnd](cwnd-class.md)
+[CWnd](cwnd-class.md)
 
 `CListCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-## <a name="clistctrlapproximateviewrect"></a><a name="approximateviewrect"></a>CListCtrl::ApproximateViewRect
+## <a name="clistctrlapproximateviewrect"></a><a name="approximateviewrect"></a>CListCtrl:: yaklaşık Teviewrect
 
 Liste görünümü denetiminin öğelerini görüntülemek için gereken genişlik ve yüksekliği belirler.
 
@@ -528,23 +528,23 @@ CSize ApproximateViewRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sz*<br/>
-Denetimin önerilen boyutları, piksel olarak. Boyutlar belirtilmemişse, çerçeve denetimin geçerli genişliğini veya yükseklik değerlerini kullanır.
+*SZ*<br/>
+Denetimin önerilen boyutları (piksel cinsinden). Boyutlar belirtilmemişse, çerçeve denetimin geçerli genişlik veya yükseklik değerlerini kullanır.
 
-*iSay*<br/>
-Denetimde görüntülenecek öğe sayısı. Bu parametre -1 ise, çerçeve şu anda denetimde bulunan toplam madde sayısını kullanır.
+*ıyeniden bağlama*<br/>
+Denetimde görüntülenecek öğe sayısı. Bu parametre-1 ise, çerçeve denetimde bulunan toplam öğe sayısını kullanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri `CSize` piksellerde görüntülemek için gereken yaklaşık genişlik ve yüksekliği içeren bir nesne.
+`CSize`Öğeleri piksel cinsinden göstermek için gereken yaklaşık genişliği ve yüksekliği içeren bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_approximateviewrect)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_ApproximateViewRect davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_ApproximateViewRect](/windows/win32/api/commctrl/nf-commctrl-listview_approximateviewrect).
 
-## <a name="clistctrlarrange"></a><a name="arrange"></a>CListCtrl::Düzenle
+## <a name="clistctrlarrange"></a><a name="arrange"></a>CListCtrl:: Düzenle
 
-Öğeleri simge görünümünde ızgaraüzerinde hizalamak için yeniden konumlandırın.
+Bir simge görünümündeki öğeleri bir kılavuza göre hizalanacak şekilde konumlandırır.
 
 ```
 BOOL Arrange(UINT nCode);
@@ -552,24 +552,24 @@ BOOL Arrange(UINT nCode);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ncode*<br/>
+*nCode*<br/>
 Öğelerin hizalama stilini belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- LVA_ALIGNLEFT Öğeleri pencerenin sol kenarı boyunca hizalar.
+- LVA_ALIGNLEFT öğeleri pencerenin sol kenarı üzerinde hizalar.
 
-- LVA_ALIGNTOP Öğeleri pencerenin üst kenarı boyunca hizalar.
+- LVA_ALIGNTOP öğeleri pencerenin üst kenarına hizalar.
 
-- LVA_DEFAULT Öğeleri liste görünümünün geçerli hizalama stillerine (varsayılan değer) göre hizalar.
+- LVA_DEFAULT öğeleri liste görünümünün geçerli hizalama stillerine (varsayılan değer) göre hizalar.
 
-- LVA_SNAPTOGRID Tüm simgeleri en yakın ızgara konumuna tutturunuz.
+- LVA_SNAPTOGRID tüm simgeleri en yakın kılavuz konumuna yaslar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nCode* parametresi hizalama stilini belirtir.
+*NCode* parametresi, hizalama stilini belirtir.
 
 ### <a name="example"></a>Örnek
 
@@ -580,9 +580,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
     m_myListCtrl.Arrange(LVA_ALIGNTOP);
 ```
 
-## <a name="clistctrlcanceleditlabel"></a><a name="canceleditlabel"></a>CListCtrl::CanceleditLabel
+## <a name="clistctrlcanceleditlabel"></a><a name="canceleditlabel"></a>CListCtrl:: Olayditlabel
 
-Madde metin düzenleme işlemini iptal eder.
+Öğe metni düzenlemesi işlemini iptal eder.
 
 ```cpp
 void CancelEditLabel();
@@ -590,19 +590,19 @@ void CancelEditLabel();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_CANCELEDITLABEL](/windows/win32/Controls/lvm-canceleditlabel) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_CANCELEDITLABEL](/windows/win32/Controls/lvm-canceleditlabel) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlclistctrl"></a><a name="clistctrl"></a>CListCtrl::CListCtrl
+## <a name="clistctrlclistctrl"></a><a name="clistctrl"></a>CListCtrl:: Clienstctrl
 
-Bir `CListCtrl` nesne inşa eder.
+Bir `CListCtrl` nesnesi oluşturur.
 
 ```
 CListCtrl();
 ```
 
-## <a name="clistctrlcreate"></a><a name="create"></a>CListCtrl::Oluştur
+## <a name="clistctrlcreate"></a><a name="create"></a>CListCtrl:: Create
 
-Bir liste denetimi oluşturur ve bir `CListCtrl` nesneye bağlar.
+Bir liste denetimi oluşturur ve bunu bir nesneye ekler `CListCtrl` .
 
 ```
 virtual BOOL Create(
@@ -614,27 +614,27 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
-Liste denetiminin stilini belirtir. Liste denetim stillerinin herhangi bir birleşimini denetime uygulayın. Bu stillerin tam listesi için Windows SDK'daki [liste görünümü pencere stillerine](/windows/win32/Controls/list-view-window-styles) bakın. [SetExtendedStyle'ı](#setextendedstyle)kullanarak denetime özgü genişletilmiş stilleri ayarlayın.
+*dwStyle*<br/>
+Liste denetiminin stilini belirtir. Denetime liste denetim stillerinin herhangi bir birleşimini uygulayın. Bu stillerin tüm listesi için Windows SDK [liste görünümü pencere stilleri](/windows/win32/Controls/list-view-window-styles) ' ne bakın. [Setil dedstyle](#setextendedstyle)kullanarak bir denetime özgü genişletilmiş stilleri ayarlayın.
 
 *Rect*<br/>
-Liste denetiminin boyutunu ve konumunu belirtir. Bir `CRect` nesne veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
+Liste denetiminin boyutunu ve konumunu belirtir. Bir `CRect` nesne ya da [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
-Liste denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
+Liste denetiminin ana penceresini (genellikle a) belirtir `CDialog` . NULL olmaması gerekir.
 
-*Nıd*<br/>
-Liste denetiminin kimliğini belirtir.
+*NID*<br/>
+Liste denetiminin KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İki adımda bir `CListCtrl` yapı inşa e. Önce oluşturucuyu çağırın `Create`ve ardından liste görünümü denetimini oluşturan `CListCtrl` ve nesneye iliştiren , çağırın.
+`CListCtrl`İki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve sonra `Create` liste görünümü denetimini oluşturan ve bunu nesnesine bağlayan çağırın `CListCtrl` .
 
-Genişletilmiş Windows stillerini liste denetim nesnesine uygulamak için `Create`CreateEx yerine ['yi](#createex) arayın.
+Genişletilmiş Windows stillerini liste denetim nesnesine uygulamak için yerine [CreateEx](#createex) çağırın `Create` .
 
 ### <a name="example"></a>Örnek
 
@@ -644,9 +644,9 @@ Genişletilmiş Windows stillerini liste denetim nesnesine uygulamak için `Crea
         CRect(10,10,400,200), pParentWnd, IDD_MYLISTCTRL);
 ```
 
-## <a name="clistctrlcreateex"></a><a name="createex"></a>CListCtrl::CreateEx
+## <a name="clistctrlcreateex"></a><a name="createex"></a>CListCtrl:: CreateEx
 
-Denetim (alt pencere) oluşturur ve `CListCtrl` nesneyle ilişkilendirir.
+Bir denetim (alt pencere) oluşturur ve `CListCtrl` nesneyle ilişkilendirir.
 
 ```
 virtual BOOL CreateEx(
@@ -660,33 +660,33 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerilistesi için Windows SDK'daki [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) için *dwExStyle* parametreye bakın.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
-*Dwstyle*<br/>
-Liste denetiminin stilini belirtir. Liste denetim stillerinin herhangi bir birleşimini denetime uygulayın. Bu stillerin tam listesi için Windows SDK'daki [Liste görünümü pencere stillerine](/windows/win32/Controls/list-view-window-styles) bakın.
+*dwStyle*<br/>
+Liste denetiminin stilini belirtir. Denetime liste denetim stillerinin herhangi bir birleşimini uygulayın. Bu stillerin tüm listesi için, bkz. [liste görünümü pencere stilleri](/windows/win32/Controls/list-view-window-styles) Windows SDK.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin üst öğesi olan pencereye işaretçi.
+Denetimin üst öğesi olan pencerenin işaretçisi.
 
-*Nıd*<br/>
-Denetimin alt pencere kimliği.
+*NID*<br/>
+Denetimin alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows `CreateEx` genişletilmiş stil önsöz **WS_EX_** tarafından belirtilen genişletilmiş Windows stilleri uygulamak için [Oluştur](#create) yerine kullanın.
+`CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-`CreateEx`*dwExStyle*tarafından belirtilen genişletilmiş Windows stilleri ile denetim oluşturur. Denetime özgü genişletilmiş stilleri ayarlamak için [SetExtendedStyle'ı](#setextendedstyle)arayın. Örneğin, WS_EX_CONTEXTHELP `CreateEx` gibi stilleri ayarlamak için `SetExtendedStyle` kullanın, ancak LVS_EX_FULLROWSELECT gibi stilleri ayarlamak için kullanın. Daha fazla bilgi için, Windows SDK'daki [Genişletilmiş Liste Görünümü Stilleri](/windows/win32/Controls/extended-list-view-styles) makalesinde açıklanan stillere bakın.
+`CreateEx`*dwExStyle*tarafından belirtilen Genişletilmiş Windows stilleriyle denetimi oluşturur. Bir denetime özgü genişletilmiş stilleri ayarlamak için [Setil dedstyle](#setextendedstyle)' ı çağırın. Örneğin, `CreateEx` Bu tür stilleri ws_ex_contexthelp olarak ayarlamak için kullanın, ancak `SetExtendedStyle` Bu tür stilleri LVS_EX_FULLROWSELECT olarak ayarlamak için kullanın. Daha fazla bilgi için Windows SDK [Genişletilmiş liste görünümü stillerinde](/windows/win32/Controls/extended-list-view-styles) makalesinde açıklanan stillere bakın.
 
-## <a name="clistctrlcreatedragimage"></a><a name="createdragimage"></a>CListCtrl::CreateDragImage
+## <a name="clistctrlcreatedragimage"></a><a name="createdragimage"></a>CListCtrl:: CreateDragImage
 
-*nItem*tarafından belirtilen öğe için sürükle resim listesi oluşturur.
+*Nitem*tarafından belirtilen öğe için bir sürükle resmi listesi oluşturur.
 
 ```
 CImageList* CreateDragImage(
@@ -697,18 +697,18 @@ CImageList* CreateDragImage(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Sürükle resim listesi oluşturulacak öğenin dizin.
+Sürükleme resmi listesi oluşturulacak öğenin dizini.
 
-*lpPoint*<br/>
-Görüntünün sol üst köşesindeki ilk konumu görüş koordinatlarında alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
+*Lppoınt*<br/>
+Görünüm koordinatları bölümünde görüntünün sol üst köşesinin ilk konumunu alan bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sürükle görüntü listesine işaretçi; aksi takdirde NULL.
+Başarılı olursa sürükle resmi listesine yönelik bir işaretçi. Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CImageList` kalıcıdır ve bittiğinde silmeniz gerekir. Örneğin:
+`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örnek:
 
 ```cpp
         CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
@@ -718,7 +718,7 @@ Nesne `CImageList` kalıcıdır ve bittiğinde silmeniz gerekir. Örneğin:
         delete pImageList;
 ```
 
-## <a name="clistctrldeleteallitems"></a><a name="deleteallitems"></a>CListCtrl::DeleteAllItems
+## <a name="clistctrldeleteallitems"></a><a name="deleteallitems"></a>CListCtrl::D Eleteallıtems
 
 Liste görünümü denetimindeki tüm öğeleri siler.
 
@@ -728,7 +728,7 @@ BOOL DeleteAllItems();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -738,9 +738,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
     ASSERT(m_myListCtrl.GetItemCount() == 0);
 ```
 
-## <a name="clistctrldeletecolumn"></a><a name="deletecolumn"></a>CListCtrl::DeleteSütun
+## <a name="clistctrldeletecolumn"></a><a name="deletecolumn"></a>CListCtrl::D eleteColumn
 
-Liste görünümü denetiminden bir sütunu siler.
+Liste görünümü denetiminden bir sütun siler.
 
 ```
 BOOL DeleteColumn(int nCol);
@@ -753,7 +753,7 @@ Silinecek sütunun dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -767,9 +767,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
         }
 ```
 
-## <a name="clistctrldeleteitem"></a><a name="deleteitem"></a>CListCtrl::DeleteItem
+## <a name="clistctrldeleteitem"></a><a name="deleteitem"></a>CListCtrl::D Eleteıtem
 
-Bir öğeyi liste görünümü denetiminden siler.
+Liste görünümü denetiminden bir öğeyi siler.
 
 ```
 BOOL DeleteItem(int nItem);
@@ -782,7 +782,7 @@ Silinecek öğenin dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -796,9 +796,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
         }
 ```
 
-## <a name="clistctrldrawitem"></a><a name="drawitem"></a>CListCtrl::DrawItem
+## <a name="clistctrldrawitem"></a><a name="drawitem"></a>CListCtrl::D rawItem
 
-Bir sahibi-beraberlik listesi görünümü denetiminin görsel bir yönü değiştiğinde çerçeve tarafından çağrılır.
+Sahip çizimi liste görünümü denetiminin görsel bir yönü değiştiğinde Framework tarafından çağırılır.
 
 ```
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -807,17 +807,17 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Gerekli çizim türü `DRAWITEMSTRUCT` hakkında bilgi içeren bir yapıiçin uzun bir işaretçi.
+`DRAWITEMSTRUCT`Gerekli çizim türü hakkında bilgi içeren bir yapıya yönelik uzun bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`itemAction` [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısının üyesi, gerçekleştirilecek çizim eylemini tanımlar.
+`itemAction` [Drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısının üyesi, gerçekleştirilecek çizim eylemini tanımlar.
 
-Varsayılan olarak, bu üye işlev hiçbir şey yapmaz. Bir sahip çizim `CListCtrl` nesnesi için çizim uygulamak için bu üye işlevi geçersiz kılın.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bir sahip çizim nesnesi için çizimi uygulamak üzere bu üye işlevini geçersiz kılın `CListCtrl` .
 
-Uygulama, bu üye işlev sona erdirilmeden önce *lpDrawItemStruct'ta* sağlanan ekran bağlamı için seçilen tüm grafik aygıtı arabirimi (GDI) nesnelerini geri yüklemelidir.
+Uygulamanın, bu üye işlevi sonlandırılmadan önce *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
 
-## <a name="clistctrleditlabel"></a><a name="editlabel"></a>CListCtrl::Etiketi edit
+## <a name="clistctrleditlabel"></a><a name="editlabel"></a>CListCtrl:: EditLabel
 
 Bir öğenin metninin yerinde düzenlenmesine başlar.
 
@@ -832,13 +832,13 @@ Düzenlenecek liste görünümü öğesinin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, öğe `CEdit` metnini deletmek için kullanılan nesneye bir işaretçi; aksi takdirde NULL.
+Başarılı olursa, `CEdit` öğe metnini düzenlemek için kullanılan nesneye yönelik bir işaretçi; aksi takdırde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-LVS_EDITLABELS pencere stiline sahip liste görünümü denetimi, kullanıcının madde etiketlerini yerinde olarak yeniden atmasını sağlar. Kullanıcı, odak noktası olan bir öğenin etiketini tıklatarak düzenlemeye başlar.
+LVS_EDITLABELS pencere stili olan bir liste görünümü denetimi, bir kullanıcının yerinde öğe etiketlerini düzenlemesini sağlar. Kullanıcı, odağa sahip olan bir öğenin etiketine tıklayarak düzenlemeyle çalışmaya başlar.
 
-Belirtilen liste görünümü öğesinin metninin yerinde düzenlemesini başlatmak için bu işlevi kullanın.
+Belirtilen liste görünümü öğesinin metninin yerinde düzenlenmesine başlamak için bu işlevi kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -852,9 +852,9 @@ Belirtilen liste görünümü öğesinin metninin yerinde düzenlemesini başlat
         ASSERT(pmyEdit != NULL);
 ```
 
-## <a name="clistctrlenablegroupview"></a><a name="enablegroupview"></a>CListCtrl::EnableGroupView
+## <a name="clistctrlenablegroupview"></a><a name="enablegroupview"></a>CListCtrl:: EnableGroupView
 
-Liste görünümündeki öğelerin denetimin grup olarak görüntülenip görüntülenmemesini sağlar veya devre dışı kılabilir.
+Liste görünümü denetimindeki öğelerin grup olarak görüntülenip görüntülenmeyeceğini etkinleştirilir veya devre dışı bırakır.
 
 ```
 LRESULT EnableGroupView(BOOL fEnable);
@@ -862,26 +862,26 @@ LRESULT EnableGroupView(BOOL fEnable);
 
 ### <a name="parameters"></a>Parametreler
 
-*fEtkinleştir*<br/>
-Görüntülenen öğeleri gruplandırmak için liste görünümü denetiminin etkinleştirilip etkinleştirilemeyeceğini gösterir. Gruplandırmayı etkinleştirmek için TRUE; Devre dışı kalmak için YANLIŞ.
+*fEnable*<br/>
+Bir ListView denetiminin, görüntülenecek öğeleri gruplamak için etkinleştirilip etkinleştirilmeyeceğini belirtir. Gruplamayı etkinleştirmek için TRUE; Devre dışı bırakmak için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Aşağıdaki değerlerden birini döndürür:
 
-- **0** Liste görünümü öğelerini grup olarak görüntüleme yeteneği zaten etkin veya devre dışı bırakılmıştır.
+- **0** liste görünümü öğelerini grup olarak görüntüleme özelliği zaten etkinleştirilmiş veya devre dışı bırakılmış.
 
-- **1** Denetimin durumu başarıyla değiştirildi.
+- **1** denetimin durumu başarıyla değiştirildi.
 
-- **-1.02.20** İşlem başarısız oldu.
+- **-1** İşlem başarısız oldu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_ENABLEGROUPVIEW](/windows/win32/Controls/lvm-enablegroupview) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_ENABLEGROUPVIEW](/windows/win32/Controls/lvm-enablegroupview) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlensurevisible"></a><a name="ensurevisible"></a>CListCtrl::Görünür olmasını sağlamak
+## <a name="clistctrlensurevisible"></a><a name="ensurevisible"></a>CListCtrl:: EnsureVisible
 
-Liste görünümü öğesinin en azından kısmen görünür olmasını sağlar.
+Liste görünümü öğesinin en az kısmen görünür olmasını sağlar.
 
 ```
 BOOL EnsureVisible(
@@ -892,18 +892,18 @@ BOOL EnsureVisible(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Görünür olması gereken liste görünümü öğesinin dizin.
+Görünür olması için liste görünümü öğesinin dizini.
 
 *bPartialOK*<br/>
-Kısmi görünürlüğün kabul edilebilir olup olmadığını belirtir.
+Kısmi görünürlüğünün kabul edilip edilmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerekirse liste görünümü denetimi kaydırılır. *bPartialOK* parametresi sıfır değilse, öğe kısmen görünürse kaydırma gerçekleşmez.
+Liste görünümü denetimi gerekirse kaydırıldı. *BPartialOK* parametresi sıfır değilse, öğe kısmen görünür olduğunda kaydırma gerçekleşmez.
 
 ### <a name="example"></a>Örnek
 
@@ -914,7 +914,7 @@ Gerekirse liste görünümü denetimi kaydırılır. *bPartialOK* parametresi s�
             m_myListCtrl.EnsureVisible(nCount-1, FALSE);
 ```
 
-## <a name="clistctrlfinditem"></a><a name="finditem"></a>CListCtrl::Öğeyi Bul
+## <a name="clistctrlfinditem"></a><a name="finditem"></a>CListCtrl:: FindItem
 
 Belirtilen özelliklere sahip bir liste görünümü öğesi arar.
 
@@ -926,19 +926,19 @@ int FindItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*pFindInfo*<br/>
-Aranacak öğe hakkında bilgi içeren bir [LVFINDINFO](/windows/win32/api/commctrl/ns-commctrl-lvfindinfow) yapısına işaretçi.
+*Pfınınfo*<br/>
+Aranacak öğe hakkında bilgi içeren [Lvfinınfo](/windows/win32/api/commctrl/ns-commctrl-lvfindinfow) yapısına yönelik bir işaretçi.
 
-*nBaşlat*<br/>
-Aramaya başlamak için öğenin dizini veya en baştan başlamak için -1. *nStart* -1'e eşit değilse, *nStart'taki* öğe aramanın dışında tutulur.
+*nBaşlangıç*<br/>
+Aramanın başlatılacağı öğenin dizini veya baştan başlamak için-1. NStart *,* -1 ' e eşit değilse, *nStart* konumundaki öğe aramanın dışında tutulur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya -1 aksi takdirde öğenin dizin.
+Başarılı olursa öğenin dizini veya-1 yoksa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pFindInfo* parametresi, `LVFINDINFO` liste görünümü öğesini aramak için kullanılan bilgileri içeren bir yapıyı işaret emz.
+*Pfinınfo* parametresi `LVFINDINFO` , bir liste görünümü öğesi aramak için kullanılan bilgileri içeren bir yapıya işaret eder.
 
 ### <a name="example"></a>Örnek
 
@@ -956,7 +956,7 @@ Başarılı veya -1 aksi takdirde öğenin dizin.
         }
 ```
 
-## <a name="clistctrlgetbkcolor"></a><a name="getbkcolor"></a>CListCtrl::GetBkColor
+## <a name="clistctrlgetbkcolor"></a><a name="getbkcolor"></a>CListCtrl:: GetBkColor
 
 Liste görünümü denetiminin arka plan rengini alır.
 
@@ -966,13 +966,13 @@ COLORREF GetBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-RGB rengini belirtmek için kullanılan 32 bitlik bir değer.
+Bir RGB rengi belirtmek için kullanılan 32 bitlik bir değer.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl::SetBkColor](#setbkcolor)için örneğe bakın.
+[CListCtrl:: SetBkColor](#setbkcolor)örneğine bakın.
 
-## <a name="clistctrlgetbkimage"></a><a name="getbkimage"></a>CListCtrl::GetBkImage
+## <a name="clistctrlgetbkimage"></a><a name="getbkimage"></a>CListCtrl:: GetBkImage
 
 Liste görünümü denetiminin geçerli arka plan görüntüsünü alır.
 
@@ -982,16 +982,16 @@ BOOL GetBkImage(LVBKIMAGE* plvbkImage) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*plvbkImage*<br/>
-Liste görünümünün `LVBKIMAGE` geçerli arka plan görüntüsünü içeren bir yapıya işaretçi.
+*Plvbkımage*<br/>
+`LVBKIMAGE`Liste görünümünün geçerli arka plan görüntüsünü içeren bir yapıya yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfırsız veya aksi takdirde sıfır döndürür.
+Başarılı olursa sıfır dışında bir değer döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_GetBkImage](/windows/win32/api/commctrl/nf-commctrl-listview_getbkimage)davranışını uygular.
+Bu yöntem, Windows SDK açıklanan [ListView_GetBkImage](/windows/win32/api/commctrl/nf-commctrl-listview_getbkimage)Win32 makrosunun davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
@@ -1008,9 +1008,9 @@ Bu yöntem, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_GetBkIm
         }
 ```
 
-## <a name="clistctrlgetcallbackmask"></a><a name="getcallbackmask"></a>CListCtrl::GetCallbackMask
+## <a name="clistctrlgetcallbackmask"></a><a name="getcallbackmask"></a>CListCtrl:: GetCallbackMask
 
-Liste görünümü denetimi için geri arama maskesini alır.
+Liste görünümü denetimi için geri çağırma maskesini alır.
 
 ```
 UINT GetCallbackMask() const;
@@ -1022,15 +1022,15 @@ Liste görünümü denetiminin geri arama maskesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-"Geri arama öğesi", uygulamanın denetim yerine metni, simgeyi veya her ikisini de depoladığı bir liste görünümü öğesidir. Bir liste görünümü denetimi bu öznitelikleri sizin için depolayabilir, ancak uygulamanız zaten bu bilgilerin bazılarını saklıyorsa geri arama öğelerini kullanmak isteyebilirsiniz. Geri arama maskesi, hangi öğe durumu bitlerinin uygulama tarafından korunup korundugunu belirtir ve belirli bir öğe için değil, tüm denetim için geçerlidir. Geri arama maskesi varsayılan olarak sıfırdır, bu da denetimin tüm öğe durumlarını izlediği anlamına gelir. Bir uygulama geri arama öğeleri kullanıyorsa veya sıfır olmayan bir geri arama maskesi belirtiyorsa, istek üzerine liste görünümü öğesi öznitelikleri ni sağlayabilmelidir.
+"Geri çağırma öğesi", uygulamanın (denetim yerine) metin, simge veya her ikisini de sakladığı bir liste görünümü öğesidir. Liste görünümü denetimi sizin için bu öznitelikleri depolayabilse de, uygulamanız bu bilgilerden bazılarını zaten koruduğundan geri çağırma öğelerini kullanmak isteyebilirsiniz. Geri arama maskesi, uygulama tarafından hangi öğe durumu bitlerinin tutulmasını belirtir ve belirli bir öğe yerine tüm denetim için geçerlidir. Geri çağırma maskesi varsayılan olarak sıfırdır, yani denetim tüm öğe durumlarını izler. Bir uygulama geri çağırma öğeleri kullanıyorsa veya sıfır olmayan bir geri çağırma maskesini belirtiyorsa, isteğe bağlı olarak liste görünümü öğe özniteliklerini sağlayabilmelidir.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:SetCallbackMask](#setcallbackmask).
+[CListCtrl:: SetCallbackMask](#setcallbackmask)örneğine bakın.
 
-## <a name="clistctrlgetcheck"></a><a name="getcheck"></a>CListCtrl::GetCheck
+## <a name="clistctrlgetcheck"></a><a name="getcheck"></a>CListCtrl:: GetCheck
 
-Bir öğeyle ilişkili durum görüntüsünün geçerli görüntü durumunu alır.
+Bir öğeyle ilişkili olan durum resminin geçerli görüntüleme durumunu alır.
 
 ```
 BOOL GetCheck(int nItem) const;
@@ -1039,21 +1039,21 @@ BOOL GetCheck(int nItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Liste denetim öğesinin sıfır tabanlı dizin.
+Bir liste denetim öğesinin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe seçilirse sıfırdan değil, aksi takdirde 0.
+Öğe seçiliyse sıfır dışı, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_GetCheckState](/windows/win32/api/commctrl/nf-commctrl-listview_getcheckstate)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetCheckState](/windows/win32/api/commctrl/nf-commctrl-listview_getcheckstate).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:SetCheck](#setcheck).
+[CListCtrl:: SetCheck](#setcheck)örneğine bakın.
 
-## <a name="clistctrlgetcolumn"></a><a name="getcolumn"></a>CListCtrl::GetSütun
+## <a name="clistctrlgetcolumn"></a><a name="getcolumn"></a>CListCtrl:: GetColumn
 
 Liste görünümü denetiminin sütununun özniteliklerini alır.
 
@@ -1066,18 +1066,18 @@ BOOL GetColumn(
 ### <a name="parameters"></a>Parametreler
 
 *nCol*<br/>
-Öznitelikleri alınacak sütundizini.
+Öznitelikleri alınacak olan sütunun dizini.
 
-*pSütun*<br/>
-Sütun hakkında bilgi almak ve almak için bilgileri belirten bir [LVCOLUMN](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) yapısının adresi. Üye, `mask` hangi sütun özniteliklerinin alınca alınamasını belirtir. `mask` Üye LVCF_TEXT değerini belirtirse, `pszText` üye nin öğe metnini alan arabelleğe adresini `cchTextMax` içermesi ve üyenin arabellin boyutunu belirtmesi gerekir.
+*pColumn*<br/>
+Alınacak ve sütun hakkında bilgi alan bilgileri belirten bir [lvcolumn](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) yapısının adresi. `mask`Üye hangi sütun özniteliklerinin alınacağı belirler. `mask`Üye LVCF_TEXT değerini belirtiyorsa `pszText` üye, öğe metnini alan arabelleğin adresini içermeli ve `cchTextMax` üyenin arabelleğin boyutunu belirtmesi gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapı, `LVCOLUMN` rapor görünümündeki bir sütun hakkında bilgi içerir.
+`LVCOLUMN`Yapı, rapor görünümündeki bir sütunla ilgili bilgiler içerir.
 
 ### <a name="example"></a>Örnek
 
@@ -1094,7 +1094,7 @@ Yapı, `LVCOLUMN` rapor görünümündeki bir sütun hakkında bilgi içerir.
         }
 ```
 
-## <a name="clistctrlgetcolumnorderarray"></a><a name="getcolumnorderarray"></a>CListCtrl::GetColumnOrderArray
+## <a name="clistctrlgetcolumnorderarray"></a><a name="getcolumnorderarray"></a>CListCtrl:: GetColumnOrderArray
 
 Liste görünümü denetiminin sütun sırasını (soldan sağa) alır.
 
@@ -1107,18 +1107,18 @@ BOOL GetColumnOrderArray(
 ### <a name="parameters"></a>Parametreler
 
 *piArray*<br/>
-Liste görünümü denetimindeki sütunların dizin değerlerini içeren arabellek işaretçisi. Arabellek, liste görünümü denetimindeki toplam sütun sayısını içerecek kadar büyük olmalıdır.
+Liste görünümü denetimindeki sütunların dizin değerlerini içeren bir arabelleğin işaretçisi. Arabellek, liste görünümü denetimindeki toplam sütun sayısını içerecek kadar büyük olmalıdır.
 
-*iSay*<br/>
-Liste görünümü denetimindeki sütun sayısı. Bu parametre -1 ise, sütun sayısı çerçeve tarafından otomatik olarak alınır.
+*ıyeniden bağlama*<br/>
+Liste görünümü denetimindeki sütun sayısı. Bu parametre-1 ise, sütun sayısı otomatik olarak Framework tarafından alınır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getcolumnorderarray)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetColumnOrderArray davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetColumnOrderArray](/windows/win32/api/commctrl/nf-commctrl-listview_getcolumnorderarray).
 
 ### <a name="example"></a>Örnek
 
@@ -1148,9 +1148,9 @@ Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getcolumnorde
         }
 ```
 
-## <a name="clistctrlgetcolumnwidth"></a><a name="getcolumnwidth"></a>CListCtrl::GetColumnWidth
+## <a name="clistctrlgetcolumnwidth"></a><a name="getcolumnwidth"></a>CListCtrl:: GetColumnWidth
 
-Rapor görünümünde veya liste görünümünde bir sütunun genişliğini alır.
+Rapor görünümü veya liste görünümündeki bir sütunun genişliğini alır.
 
 ```
 int GetColumnWidth(int nCol) const;
@@ -1159,11 +1159,11 @@ int GetColumnWidth(int nCol) const;
 ### <a name="parameters"></a>Parametreler
 
 *nCol*<br/>
-Genişliği alınacak sütunun dizinini belirtir.
+Genişliği alınacak olan sütunun dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*NCol*tarafından belirtilen sütunun piksel cinsinden genişliği.
+*Ncol*tarafından belirtilen sütunun piksel cinsinden genişliği.
 
 ### <a name="example"></a>Örnek
 
@@ -1173,9 +1173,9 @@ Genişliği alınacak sütunun dizinini belirtir.
         m_myListCtrl.SetColumnWidth(1, 20 + nWidth);
 ```
 
-## <a name="clistctrlgetcountperpage"></a><a name="getcountperpage"></a>CListCtrl::GetCountPerPage
+## <a name="clistctrlgetcountperpage"></a><a name="getcountperpage"></a>CListCtrl:: GetCountPerPage
 
-Liste görünümünde veya rapor görünümünde yken liste görünümü denetiminin görünür alanına dikey olarak sığabilecek öğe sayısını hesaplar.
+Liste görünümü veya rapor görünümü ' nde liste görünümü denetiminin görünür alanında dikey olarak kullanılabilecek öğelerin sayısını hesaplar.
 
 ```
 int GetCountPerPage() const;
@@ -1183,15 +1183,15 @@ int GetCountPerPage() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümünde veya rapor görünümünde yken liste görünümü denetiminin görünür alanına dikey olarak sığabilecek öğelerin sayısı.
+Liste görünümü veya rapor görünümü 'nde liste görünümü denetiminin görünür alanına dikey olarak sığan öğe sayısı.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetTopIndex](#gettopindex).
+[CListCtrl:: GetTopIndex](#gettopindex)örneğine bakın.
 
-## <a name="clistctrlgeteditcontrol"></a><a name="geteditcontrol"></a>CListCtrl::GetEditControl
+## <a name="clistctrlgeteditcontrol"></a><a name="geteditcontrol"></a>CListCtrl:: GetEditControl
 
-Liste görünümü öğesinin metnini deletmek için kullanılan edit denetiminin tutamacını alır.
+Liste görünümü öğesinin metnini düzenlemek için kullanılan düzenleme denetiminin tanıtıcısını alır.
 
 ```
 CEdit* GetEditControl() const;
@@ -1199,7 +1199,7 @@ CEdit* GetEditControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, öğe metnini deletmek için kullanılan [CEdit](cedit-class.md) nesnesine bir işaretçi; aksi takdirde NULL.
+Başarılı olursa, öğe metnini düzenlemek için kullanılan [Cedıt](cedit-class.md) nesnesine yönelik bir işaretçi; Aksi takdirde NULL.
 
 ### <a name="example"></a>Örnek
 
@@ -1216,9 +1216,9 @@ Başarılı olursa, öğe metnini deletmek için kullanılan [CEdit](cedit-class
         }
 ```
 
-## <a name="clistctrlgetemptytext"></a><a name="getemptytext"></a>CListCtrl::GetEmptyText
+## <a name="clistctrlgetemptytext"></a><a name="getemptytext"></a>CListCtrl:: GetEmptyText
 
-Geçerli liste görünümü denetimi boşsa görüntülenecek dizeyi alır.
+Geçerli liste görünümü denetimi boş ise görüntülenecek dizeyi alır.
 
 ```
 CString GetEmptyText() const;
@@ -1226,13 +1226,13 @@ CString GetEmptyText() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim boşsa görüntülenecek metni içeren bir [CString.](../../atl-mfc-shared/reference/cstringt-class.md)
+Denetim boş ise görüntülenecek metni içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETEMPTYTEXT](/windows/win32/Controls/lvm-getemptytext) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_GETEMPTYTEXT](/windows/win32/Controls/lvm-getemptytext) iletisini gönderir.
 
-## <a name="clistctrlgetextendedstyle"></a><a name="getextendedstyle"></a>CListCtrl::GetExtendedStyle
+## <a name="clistctrlgetextendedstyle"></a><a name="getextendedstyle"></a>CListCtrl:: Gebir Dedstyle
 
 Liste görünümü denetiminin geçerli genişletilmiş stillerini alır.
 
@@ -1242,19 +1242,19 @@ DWORD GetExtendedStyle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetimi tarafından kullanılmakta olan genişletilmiş stillerin birleşimi. Bu genişletilmiş stillerin açıklayıcı bir listesi için, Windows SDK'daki [Genişletilmiş Liste Görünümü Stilleri](/windows/win32/Controls/extended-list-view-styles) makalesine bakın.
+Şu anda liste görünümü denetimi tarafından kullanılan genişletilmiş stillerin birleşimi. Bu genişletilmiş stillerin açıklayıcı bir listesi için Windows SDK [Genişletilmiş liste görünümü stilleri](/windows/win32/Controls/extended-list-view-styles) makalesine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getextendedlistviewstyle)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetExtendedListViewStyle davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetExtendedListViewStyle](/windows/win32/api/commctrl/nf-commctrl-listview_getextendedlistviewstyle).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl::SetExtendedStyle](#setextendedstyle)için örneğe bakın.
+[CListCtrl:: Seestdedstyle](#setextendedstyle)için örneğe bakın.
 
-## <a name="clistctrlgetfirstselecteditemposition"></a><a name="getfirstselecteditemposition"></a>CListCtrl::GetFirstSelectedItemPosition
+## <a name="clistctrlgetfirstselecteditemposition"></a><a name="getfirstselecteditemposition"></a>CListCtrl:: GetFirstSelectedItemPosition
 
-Liste görünümü denetiminde seçilen ilk öğenin konumunu alır.
+Liste görünümü denetimindeki ilk seçili öğenin konumunu alır.
 
 ```
 POSITION GetFirstSelectedItemPosition() const;
@@ -1262,11 +1262,11 @@ POSITION GetFirstSelectedItemPosition() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yineleme veya nesne işaretçisi alımı için kullanılabilecek bir POSITION değeri; Öğe seçili değilse NULL.
+Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri; Seçili öğe yoksa NULL.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bu işlevin kullanımını gösterir.
+Aşağıdaki kod örneği, bu işlevin kullanımını gösterir.
 
 ```cpp
         POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
@@ -1285,9 +1285,9 @@ Aşağıdaki kod örneği bu işlevin kullanımını gösterir.
         }
 ```
 
-## <a name="clistctrlgetfocusedgroup"></a><a name="getfocusedgroup"></a>CListCtrl::GetFocusedGroup
+## <a name="clistctrlgetfocusedgroup"></a><a name="getfocusedgroup"></a>CListCtrl:: GetFocusedGroup
 
-Geçerli liste görünümü denetiminde klavye odağı olan grubu alır.
+Geçerli liste görünümü denetiminde klavye odağına sahip olan grubu alır.
 
 ```
 int GetFocusedGroup() const;
@@ -1295,13 +1295,13 @@ int GetFocusedGroup() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Böyle bir grup varsa, durumu LVGS_FOCUSED grubun dizin; aksi takdirde, -1.
+Böyle bir grup varsa, durumu LVGS_FOCUSED olan grubun dizini; Aksi takdirde,-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETFOCUSEDGROUP](/windows/win32/Controls/lvm-getfocusedgroup) iletisini gönderir. Daha fazla bilgi için `state` [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyesinin LVGS_FOCUSED değerine bakın.
+Bu yöntem, Windows SDK açıklanan [LVM_GETFOCUSEDGROUP](/windows/win32/Controls/lvm-getfocusedgroup) iletisini gönderir. Daha fazla bilgi için bkz `state` . [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısı üyesinin LVGS_FOCUSED değeri.
 
-## <a name="clistctrlgetgroupcount"></a><a name="getgroupcount"></a>CListCtrl::GetGroupCount
+## <a name="clistctrlgetgroupcount"></a><a name="getgroupcount"></a>CListCtrl:: GetGroupCount
 
 Geçerli liste görünümü denetimindeki grup sayısını alır.
 
@@ -1311,15 +1311,15 @@ int GetGroupCount()const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetimindeki grup sayısı.
+Liste görünümü denetimindeki grupların sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK 'da açıklanan [LVM_GETGROUPCOUNT](/windows/win32/Controls/lvm-getgroupcount) iletisini gönderir -->.
+Bu yöntem, Windows SDK--> açıklanan [LVM_GETGROUPCOUNT](/windows/win32/Controls/lvm-getgroupcount) iletisini gönderir.
 
-## <a name="clistctrlgetgroupinfo"></a><a name="getgroupinfo"></a>CListCtrl::GetGroupInfo
+## <a name="clistctrlgetgroupinfo"></a><a name="getgroupinfo"></a>CListCtrl:: Getgroupınfo
 
-Liste görünümü denetiminin belirli bir grubuna ait bilgileri alır.
+Liste görünümü denetiminin belirtilen grubuyla ilgili bilgileri alır.
 
 ```
 int GetGroupInfo(
@@ -1329,23 +1329,23 @@ int GetGroupInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*iGroupId*<br/>
-Bilgileri alınacak grubun tanımlayıcısı.
+*ıgroupıd*<br/>
+Bilgileri alınacak olan grubun tanımlayıcısı.
 
-*pgrp*<br/>
-Belirtilen grup hakkında bilgi içeren [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) için bir işaretçi.
+*PGRP*<br/>
+Belirtilen grup hakkında bilgi içeren [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa grubun kimliğini veya -1'i verir.
+Başarılı olursa grubun KIMLIĞINI döndürür veya yoksa-1 ' i döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETGROUPINFO](/windows/win32/Controls/lvm-getgroupinfo) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETGROUPINFO](/windows/win32/Controls/lvm-getgroupinfo) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetgroupinfobyindex"></a><a name="getgroupinfobyindex"></a>CListCtrl::GetGroupInfoByIndex
+## <a name="clistctrlgetgroupinfobyindex"></a><a name="getgroupinfobyindex"></a>CListCtrl:: Getgroupinfobyındex
 
-Geçerli liste görünümü denetiminde belirtilen bir grup la ilgili bilgileri alır.
+Geçerli liste görünümü denetimindeki belirli bir grup hakkındaki bilgileri alır.
 
 ```
 BOOL GetGroupInfoByIndex(
@@ -1357,20 +1357,20 @@ BOOL GetGroupInfoByIndex(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*ıındex*|[içinde] Bir grubun sıfır tabanlı dizin.|
-|*pGroup*|[çıkış] *iIndex* parametresi tarafından belirtilen grup hakkında bilgi alan bir [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısına işaretçi.<br /><br /> Arayan, [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyelerini başlatmaktan sorumludur. Alınacak `cbSize` bilgileri belirtmek için üyeyi yapının boyutuna ve üyenin `mask` bayraklarına ayarlayın.|
+|*IIndex*|'ndaki Bir grubun sıfır tabanlı dizini.|
+|*pGroup*|dışı *IIndex* parametresi tarafından belirtilen grup hakkında bilgi alan bir [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısına yönelik işaretçi.<br /><br /> Çağıran, [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyelerini başlatmaktan sorumludur. `cbSize`Üyeyi yapının boyutuna ve `mask` alınacak bilgileri belirtmek için üyenin bayraklarını ayarlayın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETGROUPINFOBYINDEX](/windows/win32/controls/lvm-getgroupinfobyindex) iletisini gönderir -->.
+Bu yöntem, Windows SDK--> açıklanan [LVM_GETGROUPINFOBYINDEX](/windows/win32/controls/lvm-getgroupinfobyindex) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_listCtrl`geçerli liste görünümü denetimine erişmek için kullanılan bir değişken tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_listCtrl` geçerli liste görünümü denetimine erişmek için kullanılan bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 ```cpp
 public:
@@ -1380,7 +1380,7 @@ public:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `GetGroupInfoByIndex` yöntemi gösterir. Bu kod örneğinin önceki bir bölümünde, rapor görünümünde "ClientID" ve "Grade" başlıklı iki sütun görüntüleyen bir liste görünümü denetimi oluşturduk. Aşağıdaki kod örneği, dizin0 olan grup hakkında bilgi alır, böyle bir grup varsa.
+Aşağıdaki kod örneği `GetGroupInfoByIndex` yöntemini gösterir. Bu kod örneği daha önceki bir bölümünde, bir rapor görünümünde "ClientID" ve "sınıf" başlıklı iki sütunu görüntüleyen bir liste görünümü oluşturduk. Aşağıdaki kod örneği, böyle bir grup varsa, dizini 0 olan grup hakkındaki bilgileri alır.
 
 ```cpp
     // GetGroupInfoByIndex
@@ -1409,7 +1409,7 @@ Aşağıdaki kod örneği `GetGroupInfoByIndex` yöntemi gösterir. Bu kod örne
     }
 ```
 
-## <a name="clistctrlgetgroupmetrics"></a><a name="getgroupmetrics"></a>CListCtrl::GetGroupMetrics
+## <a name="clistctrlgetgroupmetrics"></a><a name="getgroupmetrics"></a>CListCtrl:: Getgroupölçümlerini
 
 Bir grubun ölçümlerini alır.
 
@@ -1419,16 +1419,16 @@ void GetGroupMetrics(PLVGROUPMETRICS pGroupMetrics) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*pGroupMetrics*<br/>
-Grup ölçümleri bilgilerini içeren bir [LVGROUPMETRICS](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics) için bir işaretçi.
+*Pgroupmetrikleri*<br/>
+Grup ölçüm bilgilerini içeren [Lvgroupölçümler](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics) için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETGROUPMETRICS](/windows/win32/Controls/lvm-getgroupmetrics) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETGROUPMETRICS](/windows/win32/Controls/lvm-getgroupmetrics) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetgrouprect"></a><a name="getgrouprect"></a>CListCtrl::GetGroupRect
+## <a name="clistctrlgetgrouprect"></a><a name="getgrouprect"></a>CListCtrl:: GetGroupRect
 
-Geçerli liste görünümü denetiminde belirtilen bir grup için sınırlayıcı dikdörtgeni alır.
+Geçerli liste görünümü denetimindeki belirtilen grubun sınırlayıcı dikdörtgenini alır.
 
 ```
 BOOL GetGroupRect(
@@ -1441,23 +1441,23 @@ BOOL GetGroupRect(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*iGroupId*|[içinde] Bir grubu belirtir.|
-|*Lprect*|[içinde, dışarı] [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi. Bu yöntem başarılı olursa, yapı *iGroupId*tarafından belirtilen grubun dikdörtgen koordinatlarını alır.|
-|*iCoords*|[içinde] Almak için dikdörtgen koordinatlarını belirtir. Bu değerlerden birini kullanın:<br /><br /> - LVGGR_GROUP - (Varsayılan) Tüm genişletilmiş grubun koordinatları.<br />- LVGGR_HEADER - Yalnızca üstbilginin (daraltılmış grup) koordinatları.<br />- LVGGR_SUBSETLINK - Yalnızca alt küme bağlantısının (işaretleme alt kümesi) koordinatları.|
+|*ıgroupıd*|'ndaki Bir grubu belirtir.|
+|*lpRect*|[in, out] [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Bu yöntem başarılı olursa, yapı *ıgroupıd*tarafından belirtilen grubun dikdörtgen koordinatlarını alır.|
+|*ıcords*|'ndaki Alınacak dikdörtgen koordinatlarını belirtir. Şu değerlerden birini kullanın:<br /><br /> -LVGGR_GROUP-(varsayılan) genişletilmiş grubun tamamının koordinatları.<br />-LVGGR_HEADER-yalnızca üst bilginin koordinatları (daraltılmış grup).<br />-LVGGR_SUBSETLINK-yalnızca alt küme bağlantısının koordinatları (biçimlendirme alt kümesi).|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arayan, *pRect* parametresi tarafından işaret edilen [RECT](/windows/win32/api/windef/ns-windef-rect) yapısını ayırmakla yükümlüdür.
+Çağıran, *önceden* yapılan parametre tarafından Işaret edilen [Rect](/windows/win32/api/windef/ns-windef-rect) yapısını ayırmaktan sorumludur.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETGROUPRECT](/windows/win32/Controls/lvm-getgrouprect) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_GETGROUPRECT](/windows/win32/Controls/lvm-getgrouprect) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_listCtrl`geçerli liste görünümü denetimine erişmek için kullanılan bir değişken tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_listCtrl` geçerli liste görünümü denetimine erişmek için kullanılan bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 ```cpp
 public:
@@ -1467,7 +1467,7 @@ public:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `GetGroupRect` yöntemi gösterir. Bu kod örneğinin önceki bir bölümünde, rapor görünümünde "ClientID" ve "Grade" başlıklı iki sütun görüntüleyen bir liste görünümü denetimi oluşturduk. Aşağıdaki kod örneği, dizin0 olan grubun etrafına, böyle bir grup varsa 3B dikdörtgen çizer.
+Aşağıdaki kod örneği `GetGroupRect` yöntemini gösterir. Bu kod örneği daha önceki bir bölümünde, bir rapor görünümünde "ClientID" ve "sınıf" başlıklı iki sütunu görüntüleyen bir liste görünümü oluşturduk. Aşağıdaki kod örneği, bu tür bir grup varsa, dizini 0 olan grubun çevresine 3B bir dikdörtgen çizer.
 
 ```cpp
     // GetGroupRect
@@ -1484,9 +1484,9 @@ Aşağıdaki kod örneği `GetGroupRect` yöntemi gösterir. Bu kod örneğinin 
     }
 ```
 
-## <a name="clistctrlgetgroupstate"></a><a name="getgroupstate"></a>CListCtrl::GetGroupState
+## <a name="clistctrlgetgroupstate"></a><a name="getgroupstate"></a>CListCtrl:: GetGroupState
 
-Geçerli liste görünümü denetiminde belirtilen bir grubun durumunu alır.
+Geçerli liste görünümü denetimindeki belirtilen grubun durumunu alır.
 
 ```
 UINT GetGroupState(
@@ -1498,22 +1498,22 @@ UINT GetGroupState(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*iGroupId*|[içinde] Bir grubun sıfır tabanlı dizin.|
-|*Dwmask*|[içinde] Belirtilen grup için alınacak durum değerini belirten maske. Daha fazla bilgi `mask` için [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyesine bakın.|
+|*ıgroupıd*|'ndaki Bir grubun sıfır tabanlı dizini.|
+|*dwMask*|'ndaki Belirtilen grup için alınacak durum değerini belirten maske. Daha fazla bilgi için, `mask` [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyesine bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen grup için istenen durum veya grup bulunamıyorsa 0.
+Belirtilen grup için istenen durum veya grup bulunamazsa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İade değeri, *dwMask* parametresi üzerindeki bitwise AND işleminin ve `state` geçerli liste görünümü denetimini temsil eden bir [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyesinin değerinin sonucudur.
+Dönüş değeri, *dwMask* parametresindeki BIT düzeyinde ve işlemin sonucudur ve `state` geçerli liste görünümü denetimini temsil eden bir [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısının üyesi değeridir.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETGROUPSTATE](/windows/win32/Controls/lvm-getgroupstate) iletisini gönderir. Daha fazla bilgi için [ListView_GetGroupState](/windows/win32/api/commctrl/nf-commctrl-listview_getgroupstate) makroya bakın.
+Bu yöntem, Windows SDK açıklanan [LVM_GETGROUPSTATE](/windows/win32/Controls/lvm-getgroupstate) iletisini gönderir. Daha fazla bilgi için [ListView_GetGroupState](/windows/win32/api/commctrl/nf-commctrl-listview_getgroupstate) makroya bakın.
 
-## <a name="clistctrlgetheaderctrl"></a><a name="getheaderctrl"></a>CListCtrl::GetHeaderCtrl
+## <a name="clistctrlgetheaderctrl"></a><a name="getheaderctrl"></a>CListCtrl:: GetHeaderCtrl
 
-Bir liste görünümü denetimiüst denetimini alır.
+Liste görünümü denetiminin üstbilgi denetimini alır.
 
 ```
 CHeaderCtrl* GetHeaderCtrl();
@@ -1521,19 +1521,19 @@ CHeaderCtrl* GetHeaderCtrl();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetimi tarafından kullanılan üstbilgi denetimiiçin bir işaretçi.
+Liste görünümü denetimi tarafından kullanılan üst bilgi denetimine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getheader)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetHeader davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetHeader](/windows/win32/api/commctrl/nf-commctrl-listview_getheader).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetColumnOrderArray](#getcolumnorderarray).
+[CListCtrl:: GetColumnOrderArray](#getcolumnorderarray)için örneğe bakın.
 
-## <a name="clistctrlgethotcursor"></a><a name="gethotcursor"></a>CListCtrl::GetHotCursor
+## <a name="clistctrlgethotcursor"></a><a name="gethotcursor"></a>CListCtrl:: GetHotCursor
 
-Liste görünümü denetimi için sıcak izleme etkinleştirildiğinde kullanılan imleci alır.
+Liste görünümü denetimi için etkin izleme etkinleştirildiğinde kullanılan imleci alır.
 
 ```
 HCURSOR GetHotCursor();
@@ -1541,11 +1541,11 @@ HCURSOR GetHotCursor();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetimi tarafından kullanılan geçerli sıcak imleç kaynağının tanıtıcısı.
+Liste görünümü denetimi tarafından kullanılan geçerli etkin imleç kaynağı için tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_gethotcursor)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetHotCursor davranışını uygular. Yalnızca gezinme seçimi etkinleştirildiğinde görünen sıcak imleç, imleç herhangi bir liste görünümü öğesinin üzerinden geçtiğinde görüntülenir. Gezinme seçimi, genişletilmiş stilLVS_EX_TRACKSELECT ayarlayarak etkinleştirilir.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetHotCursor](/windows/win32/api/commctrl/nf-commctrl-listview_gethotcursor). Etkin imleç, yalnızca üzerine gelme seçimi etkinleştirildiğinde görünür, imleç herhangi bir liste görünümü öğesini geçtiğinde görüntülenir. Üzerine gelme seçimi, LVS_EX_TRACKSELECT genişletilmiş stili ayarlanarak etkinleştirilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1556,9 +1556,9 @@ Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_gethotcursor)
         ASSERT(m_myListCtrl.GetHotCursor() == hCursor);
 ```
 
-## <a name="clistctrlgethotitem"></a><a name="gethotitem"></a>CListCtrl::GetHotItem
+## <a name="clistctrlgethotitem"></a><a name="gethotitem"></a>CListCtrl:: GetHotItem
 
-İmlecin altında şu anda liste görünümü öğesini alır.
+İmlecin altında bulunan liste görünümü öğesini alır.
 
 ```
 int GetHotItem();
@@ -1566,13 +1566,13 @@ int GetHotItem();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetiminin geçerli sıcak öğesinin dizini.
+Liste görünümü denetiminin geçerli etkin öğe öğesinin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_GetHotItem](/windows/win32/api/commctrl/nf-commctrl-listview_gethotitem)davranışını uygular. Sıcak izleme (ve gezinme seçimi) etkinleştirildiğinde, sıcak öğe şu anda seçili öğe olarak tanımlanır.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetHotItem](/windows/win32/api/commctrl/nf-commctrl-listview_gethotitem). Etkin öğe, etkin izleme (ve üzerine gelme seçimi) etkinken seçili olan öğe olarak tanımlanır.
 
-Sıcak izleme etkinleştirilmişse, bir kullanıcı liste görünümü öğesi üzerinde durakladığında, öğe etiketi fare düğmesi kullanılmadan otomatik olarak vurgulanır.
+Etkin izleme etkinse, bir Kullanıcı bir liste görünümü öğesi üzerinde durakladığında, öğe etiketi fare düğmesi kullanılmadan otomatik olarak vurgulanır.
 
 ### <a name="example"></a>Örnek
 
@@ -1583,9 +1583,9 @@ Sıcak izleme etkinleştirilmişse, bir kullanıcı liste görünümü öğesi �
         m_myListCtrl.SetHotItem(0);
 ```
 
-## <a name="clistctrlgethovertime"></a><a name="gethovertime"></a>CListCtrl::GetHoverTime
+## <a name="clistctrlgethovertime"></a><a name="gethovertime"></a>CListCtrl:: GetHoverTime
 
-Liste görünümü denetiminin geçerli gezinme süresini alır.
+Liste görünümü denetiminin geçerli üzerine gelme saatini alır.
 
 ```
 DWORD GetHoverTime() const;
@@ -1593,11 +1593,11 @@ DWORD GetHoverTime() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fare imlecinin seçilmeden önce bir öğenin üzerinde gezinmesi gereken gecikmeyi milisaniye cinsinden döndürür. İade değeri -1 ise, gezinme süresi varsayılan gezinme süresidir.
+Fare imlecinin seçili olmadan önce bir öğenin üzerine gelme gereken gecikme süresi (milisaniye cinsinden) döndürür. Dönüş değeri-1 ise, üzerine gelme saati varsayılan vurgulama saati olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_gethovertime)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetHoverTime davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetHoverTime](/windows/win32/api/commctrl/nf-commctrl-listview_gethovertime).
 
 ### <a name="example"></a>Örnek
 
@@ -1608,9 +1608,9 @@ Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_gethovertime)
             m_myListCtrl.SetHoverTime(1000);
 ```
 
-## <a name="clistctrlgetimagelist"></a><a name="getimagelist"></a>CListCtrl::GetImageList
+## <a name="clistctrlgetimagelist"></a><a name="getimagelist"></a>CListCtrl:: GetImageList
 
-Liste görünümü öğelerini çizmek için kullanılan resim listesinin tutamacını alır.
+Liste görünümü öğelerini çizmek için kullanılan bir görüntü listesinin tanıtıcısını alır.
 
 ```
 CImageList* GetImageList(int nImageList) const;
@@ -1618,18 +1618,18 @@ CImageList* GetImageList(int nImageList) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nImageList*<br/>
-Hangi resim listesinin alınaaçık olduğunu belirten değer. Bu değerlerden biri olabilir:
+*Nımagelist*<br/>
+Alınacak görüntü listesini belirten değer. Şu değerlerden biri olabilir:
 
-- LVSIL_NORMAL Büyük simgeleri olan Resim listesi.
+- Büyük simgelerle LVSIL_NORMAL görüntü listesi.
 
-- küçük simgeleri içeren resim listesi LVSIL_SMALL.
+- Küçük simgelerle LVSIL_SMALL görüntü listesi.
 
-- LVSIL_STATE resim listesi, durum görüntüleriyle birlikte.
+- Durum görüntülerinin bulunduğu görüntü listesi LVSIL_STATE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünüm öğeleriçizmek için kullanılan resim listesiiçin bir işaretçi.
+Liste görünümü öğelerini çizmek için kullanılan görüntü listesine yönelik bir işaretçi.
 
 ### <a name="example"></a>Örnek
 
@@ -1639,7 +1639,7 @@ Liste görünüm öğeleriçizmek için kullanılan resim listesiiçin bir işar
         ASSERT(m_myListCtrl.GetImageList(LVSIL_NORMAL) == &m_lcImageList);
 ```
 
-## <a name="clistctrlgetinsertmark"></a><a name="getinsertmark"></a>CListCtrl::GetInsertMark
+## <a name="clistctrlgetinsertmark"></a><a name="getinsertmark"></a>CListCtrl:: Getınsertmark
 
 Ekleme işaretinin geçerli konumunu alır.
 
@@ -1649,18 +1649,18 @@ BOOL GetInsertMark(LPLVINSERTMARK plvim) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*plvim*<br/>
-Ekle işaretinin bilgilerini içeren bir [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına işaretçi.
+*plvım*<br/>
+INSERT işaretinin bilgilerini içeren [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı ysa TRUE'yı veya başka türlü FALSE'u döndürür. Yapının üyesindeki boyut `cbSize` yapının gerçek boyutuna eşit değilse FALSE döndürülür. `LVINSERTMARK`
+Başarılı olursa TRUE, aksi takdirde FALSE döndürür. `cbSize`Yapının üyesi içindeki boyut `LVINSERTMARK` yapının gerçek boyutuna EŞIT değilse false döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETINSERTMARK](/windows/win32/Controls/lvm-getinsertmark) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETINSERTMARK](/windows/win32/Controls/lvm-getinsertmark) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetinsertmarkcolor"></a><a name="getinsertmarkcolor"></a>CListCtrl::GetInsertMarkColor
+## <a name="clistctrlgetinsertmarkcolor"></a><a name="getinsertmarkcolor"></a>CListCtrl:: GetInsertMarkColor
 
 Ekleme işaretinin geçerli rengini alır.
 
@@ -1670,15 +1670,15 @@ COLORREF GetInsertMarkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ekleme noktasının rengini içeren bir [COLORREF](/windows/win32/gdi/colorref) yapısı döndürür.
+Ekleme noktasının rengini içeren bir [colorref](/windows/win32/gdi/colorref) yapısı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETINSERTMARKCOLOR](/windows/win32/Controls/lvm-getinsertmarkcolor) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETINSERTMARKCOLOR](/windows/win32/Controls/lvm-getinsertmarkcolor) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetinsertmarkrect"></a><a name="getinsertmarkrect"></a>CListCtrl::GetInsertMarkRect
+## <a name="clistctrlgetinsertmarkrect"></a><a name="getinsertmarkrect"></a>CListCtrl:: Getınsertmarkrect
 
-Ekleme noktasını sınırlayan dikdörtgeni alır.
+Ekleme noktasını sınıralan dikdörtgeni alır.
 
 ```
 int GetInsertMarkRect(LPRECT pRect) const;
@@ -1687,23 +1687,23 @@ int GetInsertMarkRect(LPRECT pRect) const;
 ### <a name="parameters"></a>Parametreler
 
 *pRect*<br/>
-Ekleme noktasını `RECT` sınırlayan bir dikdörtgenin koordinatlarını içeren bir yapıyı işaretçi.
+`RECT`Ekleme noktasını kapsayan bir dikdörtgenin koordinatlarını içeren bir yapıya yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Aşağıdaki değerlerden birini döndürür:
 
-- **0** Ekleme noktası bulunamadı.
+- **0** ekleme noktası bulunamadı.
 
-- **1** Ekleme noktası bulundu.
+- **1** ekleme noktası bulundu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETINSERTMARKRECT](/windows/win32/Controls/lvm-getinsertmarkrect) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETINSERTMARKRECT](/windows/win32/Controls/lvm-getinsertmarkrect) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetitem"></a><a name="getitem"></a>CListCtrl::GetItem
+## <a name="clistctrlgetitem"></a><a name="getitem"></a>CListCtrl:: GetItem
 
-Liste görünümü öğesinin özniteliklerinin bir kısmını veya tümünün alınmasını alır.
+Liste görünümü öğesinin özniteliklerinin bazılarını veya tümünü alır.
 
 ```
 BOOL GetItem(LVITEM* pItem) const;
@@ -1712,19 +1712,19 @@ BOOL GetItem(LVITEM* pItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Öğenin özniteliklerini alan bir [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısıiçin işaretçi.
+Öğenin özniteliklerini alan bir [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapı, `LVITEM` liste görünümü öğesinin özniteliklerini belirtir veya alır.
+`LVITEM`Yapı, bir liste görünümü öğesinin özniteliklerini belirtir veya alır.
 
-## <a name="clistctrlgetitemcount"></a><a name="getitemcount"></a>CListCtrl::GetItemCount
+## <a name="clistctrlgetitemcount"></a><a name="getitemcount"></a>CListCtrl:: GetItemCount
 
-Liste görünümü denetimindeki öğe sayısını alır.
+Liste görünümü denetimindeki öğelerin sayısını alır.
 
 ```
 int GetItemCount() const;
@@ -1732,15 +1732,15 @@ int GetItemCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetimindeki öğe sayısı.
+Liste görünümü denetimindeki öğelerin sayısı.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl::DeleteItem](#deleteitem)için örneğe bakın.
+[CListCtrl::D Eleteıtem](#deleteitem)örneğine bakın.
 
-## <a name="clistctrlgetitemdata"></a><a name="getitemdata"></a>CListCtrl::GetItemData
+## <a name="clistctrlgetitemdata"></a><a name="getitemdata"></a>CListCtrl:: GetItemData
 
-`nItem`'nin belirttiği maddeyle ilişkili 32 bit uygulamaya özgü değeri alır.
+Tarafından belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü değeri alır `nItem` .
 
 ```
 DWORD_PTR GetItemData(int nItem) const;
@@ -1749,15 +1749,15 @@ DWORD_PTR GetItemData(int nItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Verileri alınacak liste öğesinin dizini.
+Verileri alınacak olan liste öğesinin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen maddeyle ilişkili 32 bit uygulamaya özgü bir değer.
+Belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer, `lParam` Windows SDK'da açıklandığı gibi [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının üyesidir
+Bu değer, `lParam` Windows SDK bölümünde açıklandığı gibi [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının üyesidir.
 
 ### <a name="example"></a>Örnek
 
@@ -1772,9 +1772,9 @@ Bu değer, `lParam` Windows SDK'da açıklandığı gibi [LVITEM](/windows/win32
     }
 ```
 
-## <a name="clistctrlgetitemindexrect"></a><a name="getitemindexrect"></a>CListCtrl::GetItemIndexRect
+## <a name="clistctrlgetitemindexrect"></a><a name="getitemindexrect"></a>CListCtrl:: GetItemIndexRect
 
-Geçerli liste görünümü denetiminde bir alt öğenin tamamı veya bir kısmı için sınırlayıcı dikdörtgeni alır.
+Geçerli liste görünümü denetimindeki alt parametrenin tümü veya bir parçası için sınırlayıcı dikdörtgeni alır.
 
 ```
 BOOL GetItemIndexRect(
@@ -1788,22 +1788,22 @@ BOOL GetItemIndexRect(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pItemIndex*|[içinde] Alt öğenin ana öğesi için [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısını işaretçi.<br /><br /> Arayan, [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısının üyelerini ayırmak ve ayarlamaktan sorumludur. Bu parametre NULL olamaz.|
-|*ıcolumn*|[içinde] Denetimdeki bir sütunun sıfır tabanlı dizini.|
-|*rectType*|[içinde] Sınırlayıcı dikdörtgenin alındığı liste görünümü alt öğesinin bir bölümü. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS - Simge ve etiket de dahil olmak üzere tüm alt öğenin sınırlayıcı dikdörtgenini verir.<br /><br /> LVIR_ICON - Simgenin veya alt öğenin küçük simgesinin sınırlayıcı dikdörtgenini verir.<br /><br /> LVIR_LABEL - Alt öğe metninin sınırlayıcı dikdörtgenini verir.|
-|*pRect*|[çıkış] Alt öğenin sınırlayıcı dikdörtgeni hakkında bilgi alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına işaretçi.<br /><br /> Arayan, [RECT](/windows/win32/api/windef/ns-windef-rect) yapısını ayırmakla yükümlüdür. Bu parametre NULL olamaz.|
+|*pItemIndex*|'ndaki Alt öğenin üst öğesi için [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısına yönelik işaretçi.<br /><br /> Çağıran, [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısının üyelerini ayırırken ve ayarlamaktan sorumludur. Bu parametre NULL olamaz.|
+|*ıolumn*|'ndaki Denetimdeki bir sütunun sıfır tabanlı dizini.|
+|*rectType*|'ndaki Sınırlayıcı dikdörtgenin alındığı liste görünümü alt öğesinin kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS-simge ve etiket dahil olmak üzere tüm alt öğe sınırlayıcı dikdörtgenini döndürür.<br /><br /> LVIR_ICON-alt öğesi simgenin veya küçük simgesinin sınırlayıcı dikdörtgenini döndürür.<br /><br /> LVIR_LABEL-alt öğe metninin sınırlayıcı dikdörtgenini döndürür.|
+|*pRect*|dışı Alt öğesi 'nin sınırlayıcı dikdörtgeni hakkında bilgi alan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi.<br /><br /> Çağıran, [Rect](/windows/win32/api/windef/ns-windef-rect) yapısını ayırmaktan sorumludur. Bu parametre NULL olamaz.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETITEMINDEXRECT](/windows/win32/Controls/lvm-getitemindexrect) iletisini gönderir. Daha fazla bilgi için [makro ListView_GetItemIndexRect](/windows/win32/api/commctrl/nf-commctrl-listview_getitemindexrect)bakın.
+Bu yöntem, Windows SDK açıklanan [LVM_GETITEMINDEXRECT](/windows/win32/Controls/lvm-getitemindexrect) iletisini gönderir. Daha fazla bilgi için bkz. [ListView_GetItemIndexRect makrosu](/windows/win32/api/commctrl/nf-commctrl-listview_getitemindexrect).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_listCtrl`geçerli liste görünümü denetimine erişmek için kullanılan bir değişken tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_listCtrl` geçerli liste görünümü denetimine erişmek için kullanılan bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 ```cpp
 public:
@@ -1813,7 +1813,7 @@ public:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `GetGroupRect` yöntemi gösterir. Bu kod örneğini girmeden önce, rapor görünümünde "ClientID" ve "Grade" başlıklı iki sütun gösteren bir liste görünümü denetimi oluşturduk. Aşağıdaki kod örneği, her iki sütunda ikinci alt öğenin etrafında bir 3B dikdörtgen çizer.
+Aşağıdaki kod örneği `GetGroupRect` yöntemini gösterir. Bu kod örneğini girmeden önce, bir rapor görünümünde "ClientID" ve "sınıf" başlıklı iki sütunu görüntüleyen bir liste görünümü oluşturduk. Aşağıdaki kod örneği, her iki sütunda ikinci alt öğe etrafında 3B bir dikdörtgen çizer.
 
 ```cpp
     // GetItemIndexRect
@@ -1829,7 +1829,7 @@ Aşağıdaki kod örneği `GetGroupRect` yöntemi gösterir. Bu kod örneğini g
     m_listCtrl.GetDC()->Draw3dRect( &rect, RGB(255, 0, 0), RGB(255, 0, 0) );
 ```
 
-## <a name="clistctrlgetitemposition"></a><a name="getitemposition"></a>CListCtrl::GetItemPosition
+## <a name="clistctrlgetitemposition"></a><a name="getitemposition"></a>CListCtrl:: GetItemPosition
 
 Liste görünümü öğesinin konumunu alır.
 
@@ -1842,14 +1842,14 @@ BOOL GetItemPosition(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Konumu alınacak öğenin dizin.
+Konumu alınacak olan öğenin dizini.
 
-*lpPoint*<br/>
-Görünüm koordinatlarında öğenin sol üst köşesindeki konumu alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
+*Lppoınt*<br/>
+Görünümün koordinatları içinde öğenin sol üst köşesinin konumunu alan bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -1867,9 +1867,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
         }
 ```
 
-## <a name="clistctrlgetitemrect"></a><a name="getitemrect"></a>CListCtrl::GetItemRect
+## <a name="clistctrlgetitemrect"></a><a name="getitemrect"></a>CListCtrl:: GetItemRect
 
-Geçerli görünümdeki bir öğenin tamamı veya bir kısmı için sınırlayıcı dikdörtgeni alır.
+Geçerli görünümdeki bir öğenin tümü veya bir parçası için sınırlayıcı dikdörtgeni alır.
 
 ```
 BOOL GetItemRect(
@@ -1881,23 +1881,23 @@ BOOL GetItemRect(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Konumu alınacak öğenin dizin.
+Konumu alınacak olan öğenin dizini.
 
-*Lprect*<br/>
-Sınırlayıcı dikdörtgeni alan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
+*lpRect*<br/>
+Sınırlayıcı dikdörtgeni alan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
 
-*Ncode*<br/>
-Sınırlayan dikdörtgeni almak için liste görünümü öğesinin bir bölümü. Bu değerlerden biri olabilir:
+*nCode*<br/>
+Sınırlayıcı dikdörtgenin alınacağı liste görünümü öğesinin bölümü. Şu değerlerden biri olabilir:
 
-- LVIR_BOUNDS Simge ve etiket de dahil olmak üzere tüm öğenin sınırlayıcı dikdörtgenini verir.
+- LVIR_BOUNDS, simge ve etiket dahil olmak üzere tüm öğenin sınırlayıcı dikdörtgenini döndürür.
 
-- LVIR_ICON Simgenin veya küçük simgenin sınırlayıcı dikdörtgenini verir.
+- LVIR_ICON, simgenin veya küçük simgenin sınırlayıcı dikdörtgenini döndürür.
 
-- LVIR_LABEL Öğe metninin sınırlayıcı dikdörtgenini verir.
+- LVIR_LABEL öğe metninin sınırlayıcı dikdörtgenini döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -1941,9 +1941,9 @@ void CListCtrlDlg::OnClick(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-## <a name="clistctrlgetitemspacing"></a><a name="getitemspacing"></a>CListCtrl::GetItemSpacing
+## <a name="clistctrlgetitemspacing"></a><a name="getitemspacing"></a>CListCtrl:: Getıtemspacing
 
-Geçerli liste görünümü denetimindeki öğeler arasındaki aralığı hesaplar.
+Geçerli liste görünümü denetimindeki öğeler arasındaki boşluğu hesaplar.
 
 ```
 BOOL GetItemSpacing(
@@ -1956,19 +1956,19 @@ BOOL GetItemSpacing(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*fSmall*|[içinde] Öğe aralığını almak için görüntüleyin. Küçük simge görünümü için TRUE veya simge görünümü için FALSE'yi belirtin.|
-|*pnHorzSpacing*|[çıkış] Öğeler arasındaki yatay aralığı içerir.|
-|*pnVertSpacing*|[çıkış] Öğeler arasındaki dikey aralığı içerir.|
+|*fSmall*|'ndaki Öğe aralığının alınacağı görünüm. Küçük simge görünümü için TRUE, simge görünümü için FALSE belirtin.|
+|*pnHorzSpacing*|dışı Öğeler arasındaki yatay boşluğu içerir.|
+|*pnVertSpacing*|dışı Öğeler arasındaki dikey boşluğu içerir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETITEMSPACING](/windows/win32/Controls/lvm-getitemspacing) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_GETITEMSPACING](/windows/win32/Controls/lvm-getitemspacing) iletisini gönderir.
 
-## <a name="clistctrlgetitemstate"></a><a name="getitemstate"></a>CListCtrl::GetItemState
+## <a name="clistctrlgetitemstate"></a><a name="getitemstate"></a>CListCtrl:: GetItemState
 
 Liste görünümü öğesinin durumunu alır.
 
@@ -1981,26 +1981,26 @@ UINT GetItemState(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Durumu alınacak öğenin dizin.
+Durumu alınacak olan öğenin dizini.
 
 *nMask*<br/>
-Maske, öğenin durum bayraklarından hangisinin döndürülecek olduğunu belirtir.
+Öğenin durum bayraklarının hangisinin döndürülecek olduğunu belirten maske.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen liste görünümü öğesi için durum bayrakları.
+Belirtilen liste görünümü öğesinin durum bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğenin durumu, Windows `state` SDK'da açıklandığı gibi [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının üyesi tarafından belirtilir. Bir öğenin `stateMask` durumunu belirttiğiniz veya değiştirdiğinizde, üye değiştirmek istediğiniz durum bitlerini belirtir.
+Bir öğenin durumu `state` , Windows SDK bölümünde açıklandığı gibi [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının üyesi tarafından belirtilir. Bir öğenin durumunu belirttiğinizde veya değiştirirken, `stateMask` üye hangi durum bitlerini değiştirmek istediğinizi belirtir.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetTopIndex](#gettopindex).
+[CListCtrl:: GetTopIndex](#gettopindex)örneğine bakın.
 
-## <a name="clistctrlgetitemtext"></a><a name="getitemtext"></a>CListCtrl::GetItemText
+## <a name="clistctrlgetitemtext"></a><a name="getitemtext"></a>CListCtrl:: GetItemText
 
-Liste görünümü öğesinin veya alt öğenin metnini alır.
+Liste görünümü öğesi veya alt öğesi metnini alır.
 
 ```
 int GetItemText(
@@ -2017,30 +2017,30 @@ CString GetItemText(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Metni alınacak öğenin dizini.
+Metni alınacak olan öğenin dizini.
 
-*nSubItem*<br/>
-Metni alınacak alt öğeyi belirtir.
+*NALT öğe*<br/>
+Metni alınacak alt öğesi belirtir.
 
-*lpszMetin*<br/>
-Öğe metnini almak için bir dize işaretçisi.
+*lpszText*<br/>
+Öğe metnini alacak bir dize işaretçisi.
 
 *nLen*<br/>
-*LpszText*tarafından işaret edilen arabelleğe uzunluk.
+*LpszText*tarafından işaret edilen arabelleğin uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**Int** döndüren sürüm, alınan dizenin uzunluğunu döndürür.
+Döndürülen sürüm, **`int`** alınan dizenin uzunluğunu döndürür.
 
-Bir öğe metnini döndüren `CString` sürüm.
+Döndüren sürüm, `CString` öğe metnini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nSubItem* sıfır ise, bu işlev madde etiketini alır; *nSubItem* sıfır değilse, alt öğenin metnini alır. Alt öğe bağımsız değişkeni hakkında daha fazla bilgi için Windows SDK'daki [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının tartışmasına bakın.
+*NSubItem* sıfırsa, bu işlev öğe etiketini alır; *NALT öğesi* sıfır değilse, alt öğe metnini alır. SubItem bağımsız değişkeni hakkında daha fazla bilgi için, Windows SDK [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısına yönelik tartışmaya bakın.
 
-## <a name="clistctrlgetnextitem"></a><a name="getnextitem"></a>CListCtrl::GetNextItem
+## <a name="clistctrlgetnextitem"></a><a name="getnextitem"></a>CListCtrl:: GetNextItem
 
-Belirtilen özelliklere sahip ve belirli bir öğeyle belirtilen ilişkiyi taşıyan bir liste görünümü öğesi arar.
+Belirtilen özelliklere sahip ve belirli bir öğeyle belirtilen ilişkiyi oluşturan liste görünümü öğesini arar.
 
 ```
 int GetNextItem(
@@ -2051,38 +2051,38 @@ int GetNextItem(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Arama yapmaya başlamak için öğenin dizinveya -1 belirtilen bayraklarla eşleşen ilk öğeyi bulmak için. Belirtilen öğenin kendisi aramanın dışında tutulur.
+Aramanın başlatılacağı öğenin dizini veya belirtilen bayraklarla eşleşen ilk öğeyi bulmak için-1. Belirtilen öğenin kendisi aramadan dışlanıyor.
 
-*Nflags*<br/>
-İstenen öğenin belirtilen öğeyle geometrik ilişkisi ve istenen öğenin durumu. Geometrik ilişki şu değerlerden biri olabilir:
+*nFlags*<br/>
+İstenen öğenin belirtilen öğeye ve istenen öğenin durumuna ilişkin geometrik ilişki. Geometrik ilişki şu değerlerden biri olabilir:
 
-- LVNI_ABOVE Belirtilen öğenin üzerinde bir öğeyi arar.
+- LVNI_ABOVE belirtilen öğenin üzerindeki bir öğeyi arar.
 
-- LVNI_ALL Sonraki bir öğeyi dizin (varsayılan değer) olarak arar.
+- LVNI_ALL sonraki öğeyi dizine göre arar (varsayılan değer).
 
-- LVNI_BELOW Belirtilen öğenin altında bir öğeyi arar.
+- LVNI_BELOW belirtilen öğenin altındaki bir öğeyi arar.
 
-- LVNI_TOLEFT Belirtilen öğenin solundaki bir öğeyi arar.
+- LVNI_TOLEFT belirtilen öğenin solunda bir öğe arar.
 
-- LVNI_TORIGHT Belirtilen öğenin sağındaki bir öğeyi arar.
+- LVNI_TORIGHT belirtilen öğenin sağına doğru bir öğe arar.
 
-Durum sıfır olabilir veya bu değerlerden biri veya birkaçı olabilir:
+Durum sıfır olabilir veya bu değerlerden biri veya daha fazlası olabilir:
 
-- LVNI_DROPHILITED Öğenin LVIS_DROPHILITED durum bayrağı kümesi vardır.
+- LVNI_DROPHILITED öğenin LVIS_DROPHILITED durum bayrağı ayarlanmış.
 
-- LVNI_FOCUSED Öğenin LVIS_FOCUSED durum bayrağı kümesi vardır.
+- LVNI_FOCUSED öğenin LVIS_FOCUSED durum bayrağı ayarlanmış.
 
-- LVNI_SELECTED Öğenin LVIS_SELECTED durum bayrağı kümesi vardır.
+- LVNI_SELECTED öğenin LVIS_SELECTED durum bayrağı ayarlanmış.
 
-Bir öğede belirtilen durum bayraklarının tümü ayarlanmamışsa, arama sonraki öğeyle devam eder.
+Bir öğe belirtilen durum bayrakları kümesine sahip değilse, arama bir sonraki öğe ile devam eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bir sonraki öğenin dizini veya -1 aksi takdirde.
+Başarılı olursa sonraki öğenin dizini veya-1 yoksa.
 
-## <a name="clistctrlgetnextitemindex"></a><a name="getnextitemindex"></a>CListCtrl::GetNextItemIndex
+## <a name="clistctrlgetnextitemindex"></a><a name="getnextitemindex"></a>CListCtrl:: GetNextItemIndex
 
-Belirtilen bir özellik kümesine sahip geçerli liste görünümü denetiminde maddenin dizinini alır.
+Geçerli liste görünümü denetimindeki, belirli bir özellik kümesine sahip olan öğenin dizinini alır.
 
 ```
 BOOL GetNextItemIndex(
@@ -2094,22 +2094,22 @@ BOOL GetNextItemIndex(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pItemIndex*|[içinde, dışarı] Aramanın başladığı öğeyi açıklayan [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısını işaretçi veya *nFlags* parametresinde bayraklarla eşleşen ilk öğeyi bulmak için -1.<br /><br /> Bu yöntem başarılı olursa, `LVITEMINDEX` yapı arama tarafından bulunan öğeyi açıklar.|
-|*Nflags*|[içinde] Aramanın nasıl yapılacağını belirten bayrakların bityiş li birleşimi (VEYA).<br /><br /> Arama, hedef öğenin dizinine, durumuna veya görünümüne veya hedef öğenin *pItemIndex* parametresi tarafından belirtilen öğeye göre fiziksel konumuna bağlı olabilir. Daha fazla bilgi [için, LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) iletisindeki *bayraklar* parametresini görün.|
+|*pItemIndex*|[in, out] Aramanın başladığı öğeyi açıklayan [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısına yönelik Işaretçi veya *nFlags* parametresindeki bayraklarla eşleşen ilk öğeyi bulmak için-1.<br /><br /> Bu yöntem başarılı olursa, `LVITEMINDEX` Yapı arama tarafından bulunan öğeyi açıklar.|
+|*nFlags*|'ndaki Aramanın nasıl gerçekleştirileceğini belirten bir bit düzeyinde birleşim (veya) bayrakları.<br /><br /> Arama, hedef öğenin dizinine, durumuna veya görünümüne ya da *Pitemindex* parametresi tarafından belirtilen öğeye göre hedef öğenin fiziksel konumuna bağlı olabilir. Daha fazla bilgi için [LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) iletisindeki *Flags* parametresine bakın.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arayan, *pItemIndex* parametresi tarafından `LVITEMINDEX` işaret edilen yapının üyelerini ayırmak ve ayarlamaktan sorumludur.
+Çağıran, `LVITEMINDEX` *Pitemindex* parametresi tarafından işaret edilen yapının üyelerini ayırarak ve ayarlamaktan sorumludur.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_GETNEXTITEMINDEX](/windows/win32/controls/lvm-getnextitemindex) iletisini gönderir.
 
-## <a name="clistctrlgetnextselecteditem"></a><a name="getnextselecteditem"></a>CListCtrl::GetNextSelectedItem
+## <a name="clistctrlgetnextselecteditem"></a><a name="getnextselecteditem"></a>CListCtrl:: Getnextselectedidıtem
 
-*Pos*tarafından tanımlanan liste öğesinin dizinini alır, ardından *POS* değerini konum değerine ayarlar.
+*POS*tarafından tanımlanan liste öğesinin dizinini alır, ardından *POS* 'u konum değerine ayarlar.
 
 ```
 int GetNextSelectedItem(POSITION& pos) const;
@@ -2117,22 +2117,22 @@ int GetNextSelectedItem(POSITION& pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Bir önceki arama yla döndürülen bir `GetNextSelectedItem` `GetFirstSelectedItemPosition`POSITION değerine başvuru veya . Değer bu çağrı ile bir sonraki konuma güncelleştirilir.
+*'un*<br/>
+Bir veya için önceki çağrının döndürdüğü bir konum değerine başvuru `GetNextSelectedItem` `GetFirstSelectedItemPosition` . Değer, bu çağrının bir sonraki konumuna güncelleştirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Pos*tarafından tanımlanan liste öğesinin dizin.
+*POS*tarafından tanımlanan liste öğesinin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrı `GetNextSelectedItem` ile ilk konumu kurarsanız, bir ileri yineleme `GetFirstSelectedItemPosition`döngüsünde kullanabilirsiniz.
+`GetNextSelectedItem`Bir çağrısıyla ilk konumu oluşturursanız bir ileri yineleme döngüsünde kullanabilirsiniz `GetFirstSelectedItemPosition` .
 
-POSITION değerinizin geçerli olduğundan emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
+KONUM değerinin geçerli olduğundan emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bu işlevin kullanımını gösterir.
+Aşağıdaki kod örneği, bu işlevin kullanımını gösterir.
 
 ```cpp
         POSITION pos = m_myListCtrl.GetFirstSelectedItemPosition();
@@ -2151,7 +2151,7 @@ Aşağıdaki kod örneği bu işlevin kullanımını gösterir.
         }
 ```
 
-## <a name="clistctrlgetnumberofworkareas"></a><a name="getnumberofworkareas"></a>CListCtrl::GetNumberOfWorkAreas
+## <a name="clistctrlgetnumberofworkareas"></a><a name="getnumberofworkareas"></a>CListCtrl:: GetNumberOfWorkAreas
 
 Liste görünümü denetimi için geçerli çalışma alanı sayısını alır.
 
@@ -2161,11 +2161,11 @@ UINT GetNumberOfWorkAreas() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda kullanılmaz.
+Şu anda kullanılmıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getnumberofworkareas)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetNumberOfWorkAreas davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetNumberOfWorkAreas](/windows/win32/api/commctrl/nf-commctrl-listview_getnumberofworkareas).
 
 ### <a name="example"></a>Örnek
 
@@ -2194,9 +2194,9 @@ Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getnumberofwo
         }
 ```
 
-## <a name="clistctrlgetoutlinecolor"></a><a name="getoutlinecolor"></a>CListCtrl::GetOutlineColor
+## <a name="clistctrlgetoutlinecolor"></a><a name="getoutlinecolor"></a>CListCtrl:: GetOutlineColor
 
-Liste görünümü denetiminin kenarlığı rengini alır.
+Liste görünümü denetiminin kenarlığının rengini alır.
 
 ```
 COLORREF GetOutlineColor() const;
@@ -2204,13 +2204,13 @@ COLORREF GetOutlineColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahat rengini içeren bir [COLORREF](/windows/win32/gdi/colorref) yapısı döndürür.
+Ana hat rengini içeren bir [colorref](/windows/win32/gdi/colorref) yapısı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETOUTLINECOLOR](/windows/win32/Controls/lvm-getoutlinecolor) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETOUTLINECOLOR](/windows/win32/Controls/lvm-getoutlinecolor) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetorigin"></a><a name="getorigin"></a>CListCtrl::GetOrigin
+## <a name="clistctrlgetorigin"></a><a name="getorigin"></a>CListCtrl:: GetOrigin
 
 Liste görünümü denetimi için geçerli görünüm kaynağını alır.
 
@@ -2220,16 +2220,16 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpPoint*<br/>
-Görünüm kaynağını alan bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
+*Lppoınt*<br/>
+Görünüm kaynağını alan bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır. Ancak, denetim rapor görünümündeyse, iade değeri her zaman sıfırdır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır. Ancak, denetim rapor görünümdaysa, dönüş değeri her zaman sıfırdır.
 
-## <a name="clistctrlgetselectedcolumn"></a><a name="getselectedcolumn"></a>CListCtrl::GetSelectedSütun
+## <a name="clistctrlgetselectedcolumn"></a><a name="getselectedcolumn"></a>CListCtrl:: GetSelectedColumn
 
-Liste denetiminde şu anda seçili sütunun dizinini alır.
+Liste denetimindeki seçili olan sütunun dizinini alır.
 
 ```
 UINT GetSelectedColumn() const;
@@ -2241,11 +2241,11 @@ Seçili sütunun dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETSELECTEDCOLUMN](/windows/win32/Controls/lvm-getselectedcolumn) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETSELECTEDCOLUMN](/windows/win32/Controls/lvm-getselectedcolumn) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetselectedcount"></a><a name="getselectedcount"></a>CListCtrl::GetSelectedCount
+## <a name="clistctrlgetselectedcount"></a><a name="getselectedcount"></a>CListCtrl:: GetSelectedCount
 
-Liste görünümü denetiminde seçili öğelerin sayısını alır.
+Liste görünümü denetimindeki seçili öğelerin sayısını alır.
 
 ```
 UINT GetSelectedCount() const;
@@ -2253,7 +2253,7 @@ UINT GetSelectedCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetiminde seçilen öğelerin sayısı.
+Liste görünümü denetimindeki seçili öğe sayısı.
 
 ### <a name="example"></a>Örnek
 
@@ -2273,7 +2273,7 @@ Liste görünümü denetiminde seçilen öğelerin sayısı.
         }
 ```
 
-## <a name="clistctrlgetselectionmark"></a><a name="getselectionmark"></a>CListCtrl::GetSelectionMark
+## <a name="clistctrlgetselectionmark"></a><a name="getselectionmark"></a>CListCtrl:: GetSelectionMark
 
 Liste görünümü denetiminin seçim işaretini alır.
 
@@ -2283,11 +2283,11 @@ int GetSelectionMark();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçim işareti yoksa sıfır tabanlı seçim işareti veya -1.
+Sıfır tabanlı seçim işareti veya seçim işareti yoksa-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getselectionmark)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_GetSelectionMark davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetSelectionMark](/windows/win32/api/commctrl/nf-commctrl-listview_getselectionmark).
 
 ### <a name="example"></a>Örnek
 
@@ -2298,9 +2298,9 @@ Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_getselectionm
         m_myListCtrl.SetSelectionMark(0);
 ```
 
-## <a name="clistctrlgetstringwidth"></a><a name="getstringwidth"></a>CListCtrl::GetStringGenişliği
+## <a name="clistctrlgetstringwidth"></a><a name="getstringwidth"></a>CListCtrl:: GetStringWidth
 
-Belirli bir dizenin tümünün görüntülenmesi için gereken minimum sütun genişliğini belirler.
+Belirli bir dizeyi göstermek için gereken en düşük sütun genişliğini belirler.
 
 ```
 int GetStringWidth(LPCTSTR lpsz) const;
@@ -2309,15 +2309,15 @@ int GetStringWidth(LPCTSTR lpsz) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpsz*<br/>
-Genişliği belirlenecek olan null-terminatedli bir dize adresi.
+Genişliği belirlenecek olan, null ile sonlandırılmış bir dizenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genişlik, piksel, *lpsz*tarafından işaret dize.
+*Lpsz*tarafından işaret edilen dizenin piksel cinsinden genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen genişlik, denetimin geçerli yazı tipi ve sütun kenar boşluklarını dikkate alır, ancak küçük bir simgenin genişliğini dikkate almaz.
+Döndürülen genişlik, denetimin geçerli yazı tipini ve sütun kenar boşluklarını, ancak küçük bir simgenin genişliğini dikkate alır.
 
 ### <a name="example"></a>Örnek
 
@@ -2335,9 +2335,9 @@ Döndürülen genişlik, denetimin geçerli yazı tipi ve sütun kenar boşlukla
         }
 ```
 
-## <a name="clistctrlgetsubitemrect"></a><a name="getsubitemrect"></a>CListCtrl::GetSubItemRect
+## <a name="clistctrlgetsubitemrect"></a><a name="getsubitemrect"></a>CListCtrl:: Getsubıtemrect
 
-Liste görünümü denetiminde bir öğenin sınırlayıcı dikdörtgenini alır.
+Liste görünümü denetimindeki bir öğenin sınırlayıcı dikdörtgenini alır.
 
 ```
 BOOL GetSubItemRect(
@@ -2349,33 +2349,33 @@ BOOL GetSubItemRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*iÖğe*<br/>
-Alt öğenin ana öğesinin dizini.
+*IItem*<br/>
+SubItem 'ın üst öğesinin dizini.
 
-*iSubItem*<br/>
-Alt öğenin tek tabanlı dizin.
+*ıubitem*<br/>
+Alt parametrenin tek tabanlı dizini.
 
-*nAlan*<br/>
-Alınacak sınırlayıcı dikdörtgenin (liste görünümü alt öğesinin) bölümünü belirler. Sınırlayan dikdörtgenin bölümü (simge, etiket veya her ikisi) bit yönünde veya aşağıdaki değerlerden birine veya daha fazlasına uygulanarak belirtilir:
+*Nalan*<br/>
+Alınan sınırlayıcı dikdörtgenin (liste görünümü alt öğesi) bölümünü belirler. Sınırlayıcı dikdörtgenin bölümü (simge, etiket veya her ikisi), aşağıdaki değerlerden bir veya daha fazlasına bit düzeyinde OR işleci uygulanarak belirtilir:
 
-- LVIR_BOUNDS Simge ve etiket de dahil olmak üzere tüm öğenin sınırlayıcı dikdörtgenini verir.
+- LVIR_BOUNDS, simge ve etiket dahil olmak üzere tüm öğenin sınırlayıcı dikdörtgenini döndürür.
 
-- LVIR_ICON Simgenin veya küçük simgenin sınırlayıcı dikdörtgenini verir.
+- LVIR_ICON, simgenin veya küçük simgenin sınırlayıcı dikdörtgenini döndürür.
 
-- LVIR_LABEL Simge ve etiket de dahil olmak üzere tüm öğenin sınırlayıcı dikdörtgenini verir. Bu LVIR_BOUNDS ile aynı.
+- LVIR_LABEL, simge ve etiket dahil olmak üzere tüm öğenin sınırlayıcı dikdörtgenini döndürür. Bu, LVIR_BOUNDS benzerdir.
 
 *ref*<br/>
-Alt öğenin sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine başvuru.
+Alt tablonun sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_GetSubItemRect](/windows/win32/api/commctrl/nf-commctrl-listview_getsubitemrect)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetSubItemRect](/windows/win32/api/commctrl/nf-commctrl-listview_getsubitemrect).
 
-## <a name="clistctrlgettextbkcolor"></a><a name="gettextbkcolor"></a>CListCtrl::GetTextBkColor
+## <a name="clistctrlgettextbkcolor"></a><a name="gettextbkcolor"></a>CListCtrl:: GetTextBkColor
 
 Liste görünümü denetiminin metin arka plan rengini alır.
 
@@ -2385,13 +2385,13 @@ COLORREF GetTextBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-RGB rengini belirtmek için kullanılan 32 bitlik bir değer.
+Bir RGB rengi belirtmek için kullanılan 32 bitlik bir değer.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl::SetTextBkColor](#settextbkcolor)için örneğe bakın.
+[CListCtrl:: SetTextBkColor](#settextbkcolor)örneğine bakın.
 
-## <a name="clistctrlgettextcolor"></a><a name="gettextcolor"></a>CListCtrl::GetTextColor
+## <a name="clistctrlgettextcolor"></a><a name="gettextcolor"></a>CListCtrl:: GetTextColor
 
 Liste görünümü denetiminin metin rengini alır.
 
@@ -2401,15 +2401,15 @@ COLORREF GetTextColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-RGB rengini belirtmek için kullanılan 32 bitlik bir değer.
+Bir RGB rengi belirtmek için kullanılan 32 bitlik bir değer.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl::SetTextColor](#settextcolor)için örneğe bakın.
+[CListCtrl:: SetTextColor](#settextcolor)örneğine bakın.
 
-## <a name="clistctrlgettileinfo"></a><a name="gettileinfo"></a>CListCtrl::GetTileInfo
+## <a name="clistctrlgettileinfo"></a><a name="gettileinfo"></a>CListCtrl:: Gettileınfo
 
-Liste görünümü denetiminde bir döşeme yle ilgili bilgileri alır.
+Liste görünümü denetimindeki bir kutucuk hakkındaki bilgileri alır.
 
 ```
 BOOL GetTileInfo(PLVTILEINFO plvti) const;
@@ -2418,19 +2418,19 @@ BOOL GetTileInfo(PLVTILEINFO plvti) const;
 ### <a name="parameters"></a>Parametreler
 
 *plvti*<br/>
-Döşeme bilgilerini alan bir [LVTILEINFO](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo) yapısına işaretçi.
+Kutucuk bilgilerini alan [Lvtileınfo](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri kullanılmaz.
+Dönüş değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETTILEINFO](/windows/win32/Controls/lvm-gettileinfo) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETTILEINFO](/windows/win32/Controls/lvm-gettileinfo) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgettileviewinfo"></a><a name="gettileviewinfo"></a>CListCtrl::GetTileViewInfo
+## <a name="clistctrlgettileviewinfo"></a><a name="gettileviewinfo"></a>CListCtrl:: Gettileviewwınınfo
 
-Döşeme görünümünde liste görünümü denetimi hakkındaki bilgileri alır.
+Kutucuk görünümündeki liste görünümü denetimiyle ilgili bilgileri alır.
 
 ```
 BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
@@ -2439,19 +2439,19 @@ BOOL GetTileViewInfo(PLVTILEVIEWINFO ptvi) const;
 ### <a name="parameters"></a>Parametreler
 
 *ptvi*<br/>
-Alınan bilgileri alan bir [LVTILEVIEWINFO](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo) yapısına işaretçi.
+Alınan bilgileri alan [Lvtileviewınfo](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri kullanılmaz.
+Dönüş değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETTILEVIEWINFO](/windows/win32/Controls/lvm-gettileviewinfo) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETTILEVIEWINFO](/windows/win32/Controls/lvm-gettileviewinfo) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgettooltips"></a><a name="gettooltips"></a>CListCtrl::GetToolİpuçları
+## <a name="clistctrlgettooltips"></a><a name="gettooltips"></a>CListCtrl:: GetToolTip 'ler
 
-Liste görünümü denetiminin araç uçlarını görüntülemek için kullandığı araç ucu denetimini alır.
+Liste görünümü denetiminin araç ipuçlarını görüntülemek için kullandığı araç ipucu denetimini alır.
 
 ```
 CToolTipCtrl* GetToolTips() const;
@@ -2459,11 +2459,11 @@ CToolTipCtrl* GetToolTips() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste denetimi tarafından kullanılacak bir [CToolTipCtrl](ctooltipctrl-class.md) nesnesine işaretçi. Üye [oluşturma](#create) işlevi stil LVS_NOTOOLTIPS kullanıyorsa, hiçbir araç ipucu kullanılmaz ve NULL döndürülür.
+Liste denetimi tarafından kullanılacak [CToolTipCtrl](ctooltipctrl-class.md) nesnesine yönelik bir işaretçi. [Create](#create) member işlevi LVS_NOTOOLTIPS stilini kullanıyorsa, hiçbir araç ipucu KULLANıLMAZ ve null döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [LVM_GETTOOLTIPS](/windows/win32/Controls/lvm-gettooltips)davranışını uygular. MFC uygulaması, `GetToolTips` bir `CToolTipCtrl` takım ucu denetimine tutamaç yerine liste denetimi tarafından kullanılan bir nesneyi döndürür.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [LVM_GETTOOLTIPS](/windows/win32/Controls/lvm-gettooltips)davranışını uygular. MFC uygulamasının, bir `GetToolTips` `CToolTipCtrl` araç ipucu denetimine yönelik bir tanıtıcı yerine liste denetimi tarafından kullanılan bir nesnesi döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -2476,9 +2476,9 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [LVM_GETTO
         }
 ```
 
-## <a name="clistctrlgettopindex"></a><a name="gettopindex"></a>CListCtrl::GetTopIndex
+## <a name="clistctrlgettopindex"></a><a name="gettopindex"></a>CListCtrl:: GetTopIndex
 
-Liste görünümünde veya rapor görünümünde en üstteki görünür öğenin dizinini alır.
+Liste görünümü veya rapor görünümü ' nde, en üstteki görünür öğenin dizinini alır.
 
 ```
 int GetTopIndex() const;
@@ -2505,7 +2505,7 @@ En üstteki görünür öğenin dizini.
         }
 ```
 
-## <a name="clistctrlgetview"></a><a name="getview"></a>CListCtrl::GetView
+## <a name="clistctrlgetview"></a><a name="getview"></a>CListCtrl:: GetView
 
 Liste görünümü denetiminin görünümünü alır.
 
@@ -2519,9 +2519,9 @@ Liste görünümü denetiminin geçerli görünümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_GETVIEW](/windows/win32/Controls/lvm-getview) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_GETVIEW](/windows/win32/Controls/lvm-getview) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlgetviewrect"></a><a name="getviewrect"></a>CListCtrl::GetViewRect
+## <a name="clistctrlgetviewrect"></a><a name="getviewrect"></a>CListCtrl:: GetViewRect
 
 Liste görünümü denetimindeki tüm öğelerin sınırlayıcı dikdörtgenini alır.
 
@@ -2531,20 +2531,20 @@ BOOL GetViewRect(LPRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Lprect*<br/>
-[RECT](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
+*lpRect*<br/>
+[Rect](/windows/win32/api/windef/ns-windef-rect) yapısının adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste görünümü simge görünümünde veya küçük simge görünümünde olmalıdır.
+Liste görünümü simge görünümü veya küçük simge görünümünde olmalıdır.
 
-## <a name="clistctrlgetworkareas"></a><a name="getworkareas"></a>CListCtrl::Çalışma Alanları
+## <a name="clistctrlgetworkareas"></a><a name="getworkareas"></a>CListCtrl:: GetWorkAreas
 
-Liste görünümü denetiminin geçerli çalışma alanlarını alır.
+Liste görünümü denetiminin geçerli çalışma alanını alır.
 
 ```cpp
 void GetWorkAreas(
@@ -2554,21 +2554,21 @@ void GetWorkAreas(
 
 ### <a name="parameters"></a>Parametreler
 
-*nÇalışma Alanları*<br/>
-`RECT` *pRect* dizisinde bulunan yapıların sayısı.
+*nWorkAreas*<br/>
+`RECT` *PRect* dizisinde içerilen yapıların sayısı.
 
 *pRect*<br/>
-Liste görünümü denetiminin `RECT` çalışma alanlarını alan bir dizi yapıya (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnelerine) işaretçi. Bu yapılardaki değerler istemci koordinatlarındadır.
+`RECT`Liste görünümü denetiminin çalışma alanını alan bir yapı dizisine [CRect](../../atl-mfc-shared/reference/crect-class.md) (veya ekip nesneleri) yönelik bir işaretçi. Bu yapılardaki değerler istemci koordinatlarıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_GetWorkAreas](/windows/win32/api/commctrl/nf-commctrl-listview_getworkareas)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_GetWorkAreas](/windows/win32/api/commctrl/nf-commctrl-listview_getworkareas).
 
 ### <a name="example"></a>Örnek
 
-CListCtrl için örneğe [bakın:GetNumberOfWorkAreas](#getnumberofworkareas).
+[CListCtrl:: GetNumberOfWorkAreas](#getnumberofworkareas)için örneğe bakın.
 
-## <a name="clistctrlhasgroup"></a><a name="hasgroup"></a>CListCtrl::HasGroup
+## <a name="clistctrlhasgroup"></a><a name="hasgroup"></a>CListCtrl:: HasGroup
 
 Liste görünümü denetiminin belirtilen gruba sahip olup olmadığını belirler.
 
@@ -2578,20 +2578,20 @@ BOOL HasGroup(int iGroupId) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*iGroupId*<br/>
+*ıgroupıd*<br/>
 İstenen grubun tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_HASGROUP](/windows/win32/Controls/lvm-hasgroup) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_HASGROUP](/windows/win32/Controls/lvm-hasgroup) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlhittest"></a><a name="hittest"></a>CListCtrl::HitTest
+## <a name="clistctrlhittest"></a><a name="hittest"></a>CListCtrl:: HitTest
 
-Varsa hangi liste görünümü öğesinin belirli bir konumda olduğunu belirler.
+Hangi liste görünümü öğesinin (varsa) belirtilen konumda olduğunu belirler.
 
 ```
 int HitTest(LVHITTESTINFO* pHitTestInfo) const;
@@ -2604,23 +2604,23 @@ int HitTest(
 ### <a name="parameters"></a>Parametreler
 
 *pHitTestInfo*<br/>
-Teste `LVHITTESTINFO` basmak için pozisyon içeren ve isabet testinin sonuçları hakkında bilgi alan bir yapının adresi.
+İsabet testinin `LVHITTESTINFO` sonuçları hakkında bilgi alan ve isabet testinin sonuçlarıyla ilgili bilgileri içeren bir yapının adresi.
 
-*Pt*<br/>
+*yönergelerinin*<br/>
 Test edilecek nokta.
 
 *pFlags*<br/>
-Test sonuçları hakkında bilgi alan bir tamsayı işaretçisi. Windows SDK'daki `flags` [LVHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) yapısının üyesinin açıklamasına bakın.
+Testin sonuçları hakkında bilgi alan bir tamsayıya yönelik işaretçi. `flags`Windows SDK [Lvhittestınfo](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) yapısının üyesinin açıklamasına bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-varsa *pHitTestInfo*tarafından belirtilen konumda öğenin dizin, ya da -1 aksi takdirde.
+Herhangi bir veya-1 değilse, *pHitTestInfo*tarafından belirtilen konumdaki öğenin dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste görünümü denetiminin içeriğini kaydırıp kaydırmayacağını belirlemek için `flag` yapı üyesinin LVHT_ABOVE, LVHT_BELOW, LVHT_TOLEFT ve LVHT_TORIGHT değerlerini kullanabilirsiniz. Bu bayraklardan ikisi, örneğin, konum istemci alanının üstünde ve solundaysa birleştirilebilir.
+`flag`Bir liste görünümü denetiminin içeriğinin kaydırılıp kaydırılmayacağını anlamak için yapının üyesinin LVHT_ABOVE, LVHT_BELOW, LVHT_TOLEFT ve LVHT_TORIGHT değerlerini kullanabilirsiniz. Bu bayraklardan ikisi, örneğin konumu, istemci alanının yukarısında ve solunda olduğunda birleştirilebilir.
 
-Belirli bir konumun liste görünümü öğesi `flag` üzerinde olup olmadığını belirlemek için yapının üyesinin LVHT_ONITEM değerini sınayabilirsiniz. Bu değer, yapı `flag` üyesinin LVHT_ONITEMICON, LVHT_ONITEMLABEL ve LVHT_ONITEMSTATEICON değerlerinde bitwise-OR işlemidir.
+`flag`Belirli bir konumun liste görünümü öğesi üzerinde olup olmadığını anlamak için yapının üyesinin LVHT_ONITEM değerini test edebilirsiniz. Bu değer, yapının üyesinin LVHT_ONITEMICON, LVHT_ONITEMLABEL ve LVHT_ONITEMSTATEICON değerlerinin bit düzeyinde veya bir işlemidir `flag` .
 
 ### <a name="example"></a>Örnek
 
@@ -2644,7 +2644,7 @@ void CListCtrlDlg::OnRClick(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-## <a name="clistctrlinsertcolumn"></a><a name="insertcolumn"></a>CListCtrl::Sütun Ekle
+## <a name="clistctrlinsertcolumn"></a><a name="insertcolumn"></a>CListCtrl:: InsertColumn
 
 Liste görünümü denetimine yeni bir sütun ekler.
 
@@ -2666,32 +2666,32 @@ int InsertColumn(
 *nCol*<br/>
 Yeni sütunun dizini.
 
-*pSütun*<br/>
-Yeni sütunun özniteliklerini içeren bir `LVCOLUMN` yapının adresi.
+*pColumn*<br/>
+`LVCOLUMN`Yeni sütunun özniteliklerini içeren bir yapının adresi.
 
-*lpszSütun Başlığı*<br/>
-Sütun başlığını içeren bir dize adresi.
+*lpszColumnHeading*<br/>
+Sütunun başlığını içeren bir dizenin adresi.
 
 *nFormat*<br/>
-Sütunun hizalanmasını belirten birsonraki. Bu değerlerden biri olabilir: LVCFMT_LEFT, LVCFMT_RIGHT veya LVCFMT_CENTER.
+Sütunun hizalamasını belirten tamsayı. Şu değerlerden biri olabilir: LVCFMT_LEFT, LVCFMT_RIGHT veya LVCFMT_CENTER.
 
-*Nwidth*<br/>
-Sütungenişliği, piksel olarak. Bu parametre -1 ise, sütun genişliği ayarlanmaz.
+*nWidth*<br/>
+Sütunun piksel cinsinden genişliği. Bu parametre-1 ise, sütun genişliği ayarlı değildir.
 
-*nSubItem*<br/>
-Sütunla ilişkili alt öğenin dizin. Bu parametre -1 ise, sütunla hiçbir alt öğe ilişkilendirilmez.
+*NALT öğe*<br/>
+Sütunla ilişkili alt öğe dizini. Bu parametre-1 ise, sütunla ilişkili alt öğe yok.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya -1 aksi takdirde yeni sütunun dizin.
+Başarılı olursa yeni sütunun dizini veya-1 yoksa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste görünümü denetimindeki en sol sütun sol hizalanmış olmalıdır.
+Liste görünümü denetimindeki en soldaki sütun sola hizalı olmalıdır.
 
-[LVCOLUMN](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) yapısı, rapor görünümündeki bir sütunun özniteliklerini içerir. Ayrıca bir sütun hakkında bilgi almak için kullanılır. Bu yapı Windows SDK'da açıklanmıştır.
+[Lvcolumn](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) yapısı rapor görünümündeki bir sütunun özniteliklerini içerir. Bir sütun hakkında bilgi almak için de kullanılır. Bu yapı Windows SDK açıklanmaktadır.
 
-## <a name="clistctrlinsertgroup"></a><a name="insertgroup"></a>CListCtrl::InsertGroup
+## <a name="clistctrlinsertgroup"></a><a name="insertgroup"></a>CListCtrl:: ınsertgroup
 
 Liste görünümü denetimine bir grup ekler.
 
@@ -2703,21 +2703,21 @@ LRESULT InsertGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Grubun eklendiği maddenin dizini.
+*indeks*<br/>
+Grubun ekleneceği öğenin dizini.
 
-*pgrp*<br/>
-Eklenecek grubu içeren bir [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısına işaretçi.
+*PGRP*<br/>
+Eklenecek grubu içeren [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Grubun ekine ekedildiği öğenin dizinini veya işlem başarısız olursa -1'i döndürür.
+Grubun eklendiği öğenin dizinini veya işlem başarısız olursa-1 ' i döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_INSERTGROUP](/windows/win32/Controls/lvm-insertgroup) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_INSERTGROUP](/windows/win32/Controls/lvm-insertgroup) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlinsertgroupsorted"></a><a name="insertgroupsorted"></a>CListCtrl::InsertGroupSorted
+## <a name="clistctrlinsertgroupsorted"></a><a name="insertgroupsorted"></a>CListCtrl:: ınsertgroupsıralanmış
 
 Belirtilen grubu sıralı gruplar listesine ekler.
 
@@ -2727,20 +2727,20 @@ LRESULT InsertGroupSorted(PLVINSERTGROUPSORTED pStructInsert);
 
 ### <a name="parameters"></a>Parametreler
 
-*pStructInsert*<br/>
-Eklemek için grup içeren bir [LVINSERTGROUPSORTED](/windows/win32/api/commctrl/ns-commctrl-lvinsertgroupsorted) yapısı için bir işaretçi.
+*Pstructınsert*<br/>
+Eklenecek grubu içeren [Lvınsertgroupsıralanmış](/windows/win32/api/commctrl/ns-commctrl-lvinsertgroupsorted) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri kullanılmaz.
+Dönüş değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_INSERTGROUPSORTED](/windows/win32/Controls/lvm-insertgroupsorted) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_INSERTGROUPSORTED](/windows/win32/Controls/lvm-insertgroupsorted) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlinsertitem"></a><a name="insertitem"></a>CListCtrl::InsertItem
+## <a name="clistctrlinsertitem"></a><a name="insertitem"></a>CListCtrl:: InsertItem
 
-Bir öğeyi liste görünümü denetimine ekler.
+Liste görünümü denetimine bir öğe ekler.
 
 ```
 int InsertItem(const LVITEM* pItem);
@@ -2767,36 +2767,36 @@ int InsertItem(
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Windows SDK'da açıklandığı gibi, öğenin özniteliklerini belirten bir [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısına işaretçi.
+Öğenin özniteliklerini belirten, Windows SDK açıklanan bir [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısına yönelik işaretçi.
 
 *nÖğe*<br/>
 Eklenecek öğenin dizini.
 
 *lpszItem*<br/>
-Öğenin etiketini içeren bir dize adresi veya öğe bir geri arama öğesi ise LPSTR_TEXTCALLBACK. Geri arama öğeleri hakkında bilgi için [Bkz. CListCtrl::GetCallbackMask](#getcallbackmask).
+Öğenin etiketini içeren bir dizenin adresi veya öğe bir geri çağırma öğesi ise LPSTR_TEXTCALLBACK. Geri çağırma öğeleri hakkında daha fazla bilgi için [CListCtrl:: GetCallbackMask](#getcallbackmask)bölümüne bakın.
 
-*nImage*<br/>
-Öğenin resminin dizini veya öğe nin geri arama öğesi olup olmadığını I_IMAGECALLBACK. Geri arama öğeleri hakkında bilgi için [Bkz. CListCtrl::GetCallbackMask](#getcallbackmask).
+*Ngörüntü*<br/>
+Öğenin resminin dizini veya öğe bir geri çağırma öğesi ise I_IMAGECALLBACK. Geri çağırma öğeleri hakkında daha fazla bilgi için [CListCtrl:: GetCallbackMask](#getcallbackmask)bölümüne bakın.
 
 *nMask*<br/>
-*nMask* parametresi, parametreler olarak hangi madde özniteliklerinin geçtiğini belirtir. Windows SDK'da [LVITEM Yapısı'nda](/windows/win32/api/commctrl/ns-commctrl-lvitemw) açıklanan maske değerlerinden biri veya birkaçı olabilir. Geçerli değerler bitwise OR işleci ile birleştirilebilir.
+*NMask* parametresi, parametre olarak geçirilen öğe özniteliklerinin geçerli olduğunu belirtir. Windows SDK bir veya daha fazla maske değeri olabilir ve bu [Yapı](/windows/win32/api/commctrl/ns-commctrl-lvitemw) ,. Geçerli değerler bit düzeyinde OR işleci ile birleştirilebilir.
 
-*Nstate*<br/>
-Öğenin durumunu, durum görüntüsünü ve bindirme görüntüsünü gösterir. Daha fazla bilgi için, geçerli bayrakların listesi için Windows SDK konuları [LVITEM Yapısı](/windows/win32/api/commctrl/ns-commctrl-lvitemw) ve [Liste Görünümü Öğe Durumları'na](/windows/win32/Controls/list-view-item-states) bakın.
+*nDurum*<br/>
+Öğenin durumunu, durum görüntüsünü ve kaplama görüntüsünü gösterir. Daha fazla bilgi için, geçerli bayrakların listesi için bkz. Windows SDK konuları [Lvidıtem yapısı](/windows/win32/api/commctrl/ns-commctrl-lvitemw) ve [liste-görünüm öğesi durumları](/windows/win32/Controls/list-view-item-states) .
 
 *nStateMask*<br/>
-Devlet üyesinin hangi bitlerinin alınacağını veya değiştirileceğini gösterir. Daha fazla bilgi için Windows SDK'daki [LVITEM Yapısı'na](/windows/win32/api/commctrl/ns-commctrl-lvitemw) bakın.
+Durum üyesinin hangi bitlerinin alınacağını veya değiştirildiğini belirtir. Daha fazla bilgi için Windows SDK [Lvidıtem yapısına](/windows/win32/api/commctrl/ns-commctrl-lvitemw) bakın.
 
-*Lparam*<br/>
-Maddeyle ilişkili 32 bit uygulamaya özgü bir değer. Bu parametre belirtilirse, *nMask* özniteliğini LVIF_PARAM ayarlamanız gerekir.
+*lParam*<br/>
+Öğeyle ilişkili 32 bitlik uygulamaya özgü bir değer. Bu parametre belirtilmişse, *nMask* özniteliği LVIF_PARAM ayarlamanız gerekir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya -1 aksi takdirde yeni öğenin dizin.
+Başarılı olursa yeni öğenin dizini veya-1 yoksa.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağırmak, LVM_INSERTITEM iletinin denetim pencerenize gönderilmesine neden olabilir. Denetim için ilişkili ileti işleyicisi, öğe metnini belirli koşullar altında (örneğin, LVS_OWNERDRAW gibi pencere stillerini kullanma) ayarlamakta başarısız olabilir. Bu koşullar hakkında daha fazla bilgi için Windows SDK'daki [LVM_INSERTITEM](/windows/win32/Controls/lvm-insertitem) bakın.
+Bu yöntemin çağrılması LVM_INSERTITEM iletisinin denetim penceresine gönderilmesini sağlayabilir. Denetimin ilişkili ileti işleyicisi bazı koşullarda (örneğin, LVS_OWNERDRAW gibi pencere stillerini kullanarak) öğe metnini ayarlayamayabilir. Bu koşullar hakkında daha fazla bilgi için Windows SDK [LVM_INSERTITEM](/windows/win32/Controls/lvm-insertitem) bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -2822,9 +2822,9 @@ Bu yöntemi çağırmak, LVM_INSERTITEM iletinin denetim pencerenize gönderilme
         }
 ```
 
-## <a name="clistctrlinsertmarkhittest"></a><a name="insertmarkhittest"></a>CListCtrl::EkleMarkHitTest
+## <a name="clistctrlinsertmarkhittest"></a><a name="insertmarkhittest"></a>CListCtrl:: ınsertmarkhittest
 
-Belirli bir noktaya en yakın ekleme noktasını alır.
+Ekleme noktasını belirtilen noktaya en yakın alır.
 
 ```
 int InsertMarkHitTest(
@@ -2835,22 +2835,22 @@ int InsertMarkHitTest(
 ### <a name="parameters"></a>Parametreler
 
 *pPoint*<br/>
-Liste denetiminin istemci alanına göre isabet testi koordinatlarını içeren bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısına işaretçi.
+Liste denetiminin istemci alanına göre isabet testi koordinatlarını içeren bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısına yönelik işaretçi.
 
-*plvim*<br/>
-Nokta parametresi tarafından tanımlanan koordinatlara en yakın ekleme noktasını belirten bir [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına işaretçi.
+*plvım*<br/>
+Nokta parametresi tarafından tanımlanan koordinatlara en yakın ekleme noktasını belirten [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen noktaya en yakın ekleme noktası.
+Ekleme noktası belirtilen noktaya en yakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_INSERTMARKHITTEST](/windows/win32/Controls/lvm-insertmarkhittest) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_INSERTMARKHITTEST](/windows/win32/Controls/lvm-insertmarkhittest) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlisgroupviewenabled"></a><a name="isgroupviewenabled"></a>CListCtrl::IsGroupViewEnabled
+## <a name="clistctrlisgroupviewenabled"></a><a name="isgroupviewenabled"></a>CListCtrl:: ısgroupviewenabled
 
-Liste görünümü denetimi için grup görünümünün etkin olup olmadığını belirler.
+Liste görünümü denetimi için Grup görünümünün etkinleştirilip etkinleştirilmediğini belirler.
 
 ```
 BOOL IsGroupViewEnabled() const;
@@ -2858,15 +2858,15 @@ BOOL IsGroupViewEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Grup görünümü etkinse TRUE veya başka türlü FALSE döndürür.
+Grup görünümü etkinse TRUE, aksi takdirde FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_ISGROUPVIEWENABLED](/windows/win32/Controls/lvm-isgroupviewenabled) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_ISGROUPVIEWENABLED](/windows/win32/Controls/lvm-isgroupviewenabled) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlisitemvisible"></a><a name="isitemvisible"></a>CListCtrl::IsItemVisible
+## <a name="clistctrlisitemvisible"></a><a name="isitemvisible"></a>CListCtrl:: ısıtemvisible
 
-Geçerli liste görünümü denetiminde belirtilen bir öğenin görünür olup olmadığını gösterir.
+Geçerli liste görünümü denetimindeki belirtilen öğenin görünür olup olmadığını gösterir.
 
 ```
 BOOL IsItemVisible(int index) const;
@@ -2876,19 +2876,19 @@ BOOL IsItemVisible(int index) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Dizin*|[içinde] Geçerli liste görünümü denetiminde bir öğenin sıfır tabanlı dizin.|
+|*indeks*|'ndaki Geçerli liste görünümü denetimindeki bir öğenin sıfır tabanlı dizini.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğe görünürse TRUE; aksi takdirde, YANLIŞ.
+Belirtilen öğe görünür durumdaysa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_ISITEMVISIBLE](/windows/win32/Controls/lvm-isitemvisible) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_ISITEMVISIBLE](/windows/win32/Controls/lvm-isitemvisible) iletisini gönderir.
 
-## <a name="clistctrlmapidtoindex"></a><a name="mapidtoindex"></a>CListCtrl::MapIDToIndex
+## <a name="clistctrlmapidtoindex"></a><a name="mapidtoindex"></a>CListCtrl:: MapIDToIndex
 
-Geçerli liste görünümü denetimindeki bir öğenin benzersiz kimliğini bir dizinle eşler.
+Geçerli liste görünümü denetimindeki bir öğenin benzersiz KIMLIĞINI dizine eşler.
 
 ```
 UINT MapIDToIndex(UINT id) const;
@@ -2898,23 +2898,23 @@ UINT MapIDToIndex(UINT id) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Kimliği*|[içinde] Bir öğenin benzersiz kimliği.|
+|*id*|'ndaki Bir öğenin benzersiz KIMLIĞI.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen kimliğin geçerli dizini.
+Belirtilen KIMLIK için geçerli dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste görünümü denetimi, öğeleri dizin olarak içe izler. Dizinler denetimin ömrü boyunca değişebilir, çünkü bu sorunlar ortaya çıkabilir. Liste görünümü denetimi, öğe oluşturulduğunda bir öğeyi kimlikle etiketleyebilir ve liste görünümü denetiminin ömrü boyunca benzersizliği garanti etmek için bu kimliği kullanabilirsiniz.
+Liste görünümü denetimi, öğeleri dizine göre dahili olarak izler. Bu, denetim ömrü boyunca dizinler değiştirebildiğinden sorunlar sunabilir. Liste görünümü denetimi, öğe oluşturulduğunda bir öğeyi KIMLIK ile etiketleyebilir ve liste görünümü denetiminin ömrü boyunca benzersizlik sağlamak için bu KIMLIĞI kullanabilirsiniz.
 
-Dizin, çok iş parçacığı yla ilgili bir ortamda yalnızca arka plan iş parçacıklarında değil, liste görünümü denetimini barındıran iş parçacığında garanti edilir.
+Çok iş parçacıklı bir ortamda Dizin, arka plan iş parçacıklarında değil, yalnızca liste görünümü denetimini barındıran iş parçacığında garanti edilir.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_MAPIDTOINDEX](/windows/win32/controls/lvm-mapidtoindex) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_MAPIDTOINDEX](/windows/win32/controls/lvm-mapidtoindex) iletisini gönderir.
 
-## <a name="clistctrlmapindextoid"></a><a name="mapindextoid"></a>CListCtrl::MapIndexToid
+## <a name="clistctrlmapindextoid"></a><a name="mapindextoid"></a>CListCtrl:: MapIndexToID
 
-Geçerli liste görünümü denetimindeki bir öğenin dizinini benzersiz bir kimlikle eşler.
+Geçerli liste görünümü denetimindeki bir öğenin dizinini benzersiz bir KIMLIĞE eşler.
 
 ```
 UINT MapIndexToID(UINT index) const;
@@ -2924,23 +2924,23 @@ UINT MapIndexToID(UINT index) const;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Dizin*|[içinde] Bir öğenin sıfır tabanlı dizin.|
+|*indeks*|'ndaki Bir öğenin sıfır tabanlı dizini.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğe için benzersiz bir kimlik.
+Belirtilen öğe için benzersiz bir KIMLIK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste görünümü denetimi, öğeleri dizin olarak içe izler. Dizinler denetimin ömrü boyunca değişebilir, çünkü bu sorunlar ortaya çıkabilir. Liste görünümü denetimi, öğe oluşturulduğunda bir öğeyi kimliğiyle etiketleyebilir. Bu kimliği, liste görünümü denetiminin kullanım ömrü boyunca belirli bir öğeye erişmek için kullanabilirsiniz.
+Liste görünümü denetimi, öğeleri dizine göre dahili olarak izler. Bu, denetim ömrü boyunca dizinler değiştirebildiğinden sorunlar sunabilir. Liste görünümü denetimi, öğe oluşturulduğunda bir öğeyi KIMLIK ile etiketleyebilir. Bu KIMLIĞI, liste görünümü denetiminin ömrü boyunca belirli bir öğeye erişmek için kullanabilirsiniz.
 
-Dizin, çok iş parçacığı yla ilgili bir ortamda yalnızca arka plan iş parçacıklarında değil, liste görünümü denetimini barındıran iş parçacığında garanti edilir.
+Çok iş parçacıklı bir ortamda Dizin, arka plan iş parçacıklarında değil, yalnızca liste görünümü denetimini barındıran iş parçacığında garanti edilir.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_MAPINDEXTOID](/windows/win32/Controls/lvm-mapindextoid) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_MAPINDEXTOID](/windows/win32/Controls/lvm-mapindextoid) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_listCtrl`geçerli liste görünümü denetimine erişmek için kullanılan bir değişken tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_listCtrl` geçerli liste görünümü denetimine erişmek için kullanılan bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 ```cpp
 public:
@@ -2950,7 +2950,7 @@ public:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `MapIndexToID` yöntemi gösterir. Bu kod örneğinin önceki bir bölümünde, rapor görünümünde "ClientID" ve "Grade" başlıklı iki sütun görüntüleyen bir liste görünümü denetimi oluşturduk. Aşağıdaki örnek, her liste görünümü öğesinin dizini bir kimlik numarasıyla eşler ve sonra her kimlik numarası için dizini alır. Son olarak, örnek özgün dizinlerin alınıp alınmadığını bildirir.
+Aşağıdaki kod örneği `MapIndexToID` yöntemini gösterir. Bu kod örneği daha önceki bir bölümünde, bir rapor görünümünde "ClientID" ve "sınıf" başlıklı iki sütunu görüntüleyen bir liste görünümü oluşturduk. Aşağıdaki örnek, her liste görünümü öğesinin dizinini bir kimlik numarasıyla eşleştirir ve sonra her bir kimlik numarası için dizini alır. Son olarak, örnek özgün dizinlerin alınıp alınmayacağını bildirir.
 
 ```cpp
     // MapIndexToID
@@ -2978,9 +2978,9 @@ Aşağıdaki kod örneği `MapIndexToID` yöntemi gösterir. Bu kod örneğinin 
         MB_ICONINFORMATION);
 ```
 
-## <a name="clistctrlmovegroup"></a><a name="movegroup"></a>CListCtrl::MoveGroup
+## <a name="clistctrlmovegroup"></a><a name="movegroup"></a>CListCtrl:: MoveGroup
 
-Belirtilen grubu liste görünümü denetiminin belirtilen sıfır tabanlı dizinine taşır.
+Belirtilen grubu liste görünümü denetiminin belirtilen sıfır tabanlı dizinine kaydırır.
 
 ```
 LRESULT MoveGroup(
@@ -2990,7 +2990,7 @@ LRESULT MoveGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*iGroupId*<br/>
+*ıgroupıd*<br/>
 Taşınacak grubun tanımlayıcısı.
 
 *toIndex*<br/>
@@ -2998,15 +2998,15 @@ Grubun taşınacağı sıfır tabanlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri kullanılmaz.
+Dönüş değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_MOVEGROUP](/windows/win32/Controls/lvm-movegroup) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_MOVEGROUP](/windows/win32/Controls/lvm-movegroup) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlmoveitemtogroup"></a><a name="moveitemtogroup"></a>CListCtrl::MoveItemToGroup
+## <a name="clistctrlmoveitemtogroup"></a><a name="moveitemtogroup"></a>CListCtrl:: Moveıtemtogroup
 
-Belirtilen maddeyi belirtilen gruba taşır.
+Belirtilen öğeyi belirtilen gruba kaydırır.
 
 ```cpp
 void MoveItemToGroup(
@@ -3016,22 +3016,22 @@ void MoveItemToGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*idItemFrom*<br/>
-[içinde] Taşınacak öğenin dizini.
+*Deyim*<br/>
+'ndaki Taşınacak öğenin dizini.
 
-*idGroupTo*<br/>
-[içinde] Maddenin taşınacağı grubun tanımlayıcısı.
+*ıdgroupto*<br/>
+'ndaki Öğenin taşınacağı grubun tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Bu yöntem şu anda uygulanmaz.
+> Bu yöntem şu anda uygulanmadı.
 
-Bu yöntem, Windows SDK'da açıklandığı gibi [LVM_MOVEITEMTOGROUP](/windows/win32/Controls/lvm-moveitemtogroup) iletisinin işlevselliğini taklit eder.
+Bu yöntem, Windows SDK açıklandığı gibi [LVM_MOVEITEMTOGROUP](/windows/win32/Controls/lvm-moveitemtogroup) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlredrawitems"></a><a name="redrawitems"></a>CListCtrl::Öğeleri Yeniden Çizme
+## <a name="clistctrlredrawitems"></a><a name="redrawitems"></a>CListCtrl:: Redrawtems
 
-Bir dizi öğeyi yeniden boyamak için liste görünümü denetimini zorlar.
+Bir liste görünümü denetimini bir öğe aralığını yeniden boyamak üzere zorlar.
 
 ```
 BOOL RedrawItems(
@@ -3042,20 +3042,20 @@ BOOL RedrawItems(
 ### <a name="parameters"></a>Parametreler
 
 *nİlk*<br/>
-Yeniden boyanacak ilk öğenin dizin.
+Yeniden boyangirecek ilk öğenin dizini.
 
 *nSon*<br/>
-Yeniden boyanacak son öğenin dizini.
+Yeniden boyangirecek son öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste görünümü penceresi WM_PAINT iletisi alana kadar belirtilen öğeler gerçekte yeniden boyanmaz. Hemen yeniden boyamak için, bu işlevi kullandıktan sonra Windows [UpdateWindow](/windows/win32/api/winuser/nf-winuser-updatewindow) işlevini arayın.
+Liste görünümü penceresi bir WM_PAINT ileti alıncaya kadar belirtilen öğeler gerçekte yeniden boyanır. Hemen yeniden boyamak için, bu işlevi kullandıktan sonra Windows [UpdateWindow](/windows/win32/api/winuser/nf-winuser-updatewindow) işlevini çağırın.
 
-## <a name="clistctrlremoveallgroups"></a><a name="removeallgroups"></a>CListCtrl::RemoveAllGroups
+## <a name="clistctrlremoveallgroups"></a><a name="removeallgroups"></a>CListCtrl:: RemoveAllGroups
 
 Liste görünümü denetiminden tüm grupları kaldırır.
 
@@ -3065,11 +3065,11 @@ void RemoveAllGroups();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_REMOVEALLGROUPS](/windows/win32/Controls/lvm-removeallgroups) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_REMOVEALLGROUPS](/windows/win32/Controls/lvm-removeallgroups) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlremovegroup"></a><a name="removegroup"></a>CListCtrl::RemoveGroup
+## <a name="clistctrlremovegroup"></a><a name="removegroup"></a>CListCtrl:: RemoveGroup
 
-Belirtilen grubu liste görünümü denetiminden kaldırır.
+Liste görünümü denetiminden belirtilen grubu kaldırır.
 
 ```
 LRESULT RemoveGroup(int iGroupId);
@@ -3077,18 +3077,18 @@ LRESULT RemoveGroup(int iGroupId);
 
 ### <a name="parameters"></a>Parametreler
 
-*iGroupId*<br/>
+*ıgroupıd*<br/>
 Kaldırılacak grubun tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa grubun dizinini veya -1'i verir.
+Başarılı olursa grubun dizinini, aksi takdirde-1 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_REMOVEGROUP](/windows/win32/Controls/lvm-removegroup) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_REMOVEGROUP](/windows/win32/Controls/lvm-removegroup) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlscroll"></a><a name="scroll"></a>CListCtrl::Kaydırma
+## <a name="clistctrlscroll"></a><a name="scroll"></a>CListCtrl:: Scroll
 
 Liste görünümü denetiminin içeriğini kaydırır.
 
@@ -3098,14 +3098,14 @@ BOOL Scroll(CSize size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-Piksellerde yatay ve dikey kaydırma miktarını belirten bir `CSize` nesne. `y` *Boyut* üyesi, liste görünümü denetiminin satırının yüksekliğe, piksellere bölünür ve denetim elde edilen satır sayısına göre kaydırılır.
+*boyutla*<br/>
+`CSize`Piksel cinsinden yatay ve dikey kaydırma miktarını belirten nesne. `y` *Boyut* üyesi, liste görünümü denetiminin çizgisinin piksel cinsinden yüksekliğine bölünür ve denetim sonuçtaki satır sayısına göre kaydırıldı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
-## <a name="clistctrlsetbkcolor"></a><a name="setbkcolor"></a>CListCtrl::SetBkColor
+## <a name="clistctrlsetbkcolor"></a><a name="setbkcolor"></a>CListCtrl:: SetBkColor
 
 Liste görünümü denetiminin arka plan rengini ayarlar.
 
@@ -3115,12 +3115,12 @@ BOOL SetBkColor(COLORREF cr);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cr*<br/>
-Ayarlan arka plan rengi veya arka plan rengi için CLR_NONE değeri. Arka plan renklerine sahip liste görünümü denetimleri, arka plan renkleri olmayanlara göre kendilerini önemli ölçüde daha hızlı bir şekilde yeniden çizer. Daha fazla bilgi için Windows SDK'daki [COLORREF'a](/windows/win32/gdi/colorref) bakın.
+*Return*<br/>
+Ayarlanacak arka plan rengi veya arka plan rengi olmayan CLR_NONE değeri. Arka plan renkleri içeren liste görünümü denetimleri, arka plan renkleri olmadan bunları büyük ölçüde daha hızlı yeniden çizer. Bilgi için Windows SDK [colorref](/windows/win32/gdi/colorref) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -3131,9 +3131,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
         ASSERT(m_myListCtrl.GetBkColor() == crBkColor);
 ```
 
-## <a name="clistctrlsetbkimage"></a><a name="setbkimage"></a>CListCtrl::SetBkImage
+## <a name="clistctrlsetbkimage"></a><a name="setbkimage"></a>CListCtrl:: Setbkımage
 
-Liste görünümü denetiminin arka plan görüntüsünü ayarlar.
+Liste görünümü denetiminin arka plan resmini ayarlar.
 
 ```
 BOOL SetBkImage(LVBKIMAGE* plvbkImage);
@@ -3153,40 +3153,40 @@ BOOL SetBkImage(
 
 ### <a name="parameters"></a>Parametreler
 
-*plvbkImage*<br/>
-Yeni arka `LVBKIMAGE` plan görüntü bilgilerini içeren bir yapının adresi.
+*Plvbkımage*<br/>
+`LVBKIMAGE`Yeni arka plan resmi bilgilerini içeren bir yapının adresi.
 
-*Hbıtmap*<br/>
-Bir bitmap için tut.
+*HBITMAP*<br/>
+Bit eşlemle işleme.
 
 *pszUrl*<br/>
-Arka plan görüntüsünün URL'sini içeren NULL sonlandırılmış dize.
+Arka plan resminin URL 'sini içeren, NULL ile sonlandırılmış bir dize.
 
 *fTile*<br/>
-Resim liste görünümü denetiminin arka planına döşenecekse sıfır olmayan; aksi takdirde 0.
+Görüntü liste görünümü denetiminin arka planında döşense sıfır dışında; Aksi takdirde 0.
 
 *xOffsetPercent*<br/>
-Hedef görünümü denetiminin kaynağından görüntünün sol kenarının piksel olarak ofset.
+Görüntünün sol ucunun, liste görünümü denetiminin kaynağından itibaren piksel cinsinden değeri.
 
 *yOffsetPercent*<br/>
-Hedef görünümü denetiminin kaynağından görüntünün üst kenarının piksel olarak ofset.
+Görüntünün üst kenarının, liste görünümü denetiminin kaynağından itibaren piksel cinsinden kenar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfırsız veya aksi takdirde sıfır döndürür.
+Başarılı olursa sıfır dışında bir değer döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> `CListCtrl::SetBkImage` OLE COM işlevini kullandığından, OLE kitaplıkları kullanmadan `SetBkImage`önce başharfe bilmelidir. Uygulama başharfe ildiğinde COM kitaplıklarını başlatmave uygulama sona erdiğinde kitaplıkların başlatılması en iyisidir. Bu işlem ActiveX teknolojisi, OLE Automation, OLE Linking/Embedding veya ODBC/DAO işlemlerinden yararlanan MFC uygulamalarında otomatik olarak yapılır.
+> `CListCtrl::SetBkImage`OLE com işlevselliğini kullandığından, OLE kitaplıklarının kullanılmadan önce başlatılması gerekir `SetBkImage` . Uygulama başlatıldığında COM kitaplıklarını başlatmak ve uygulama sonlandırıldığında kitaplıkları Uninitialize için en iyi seçenektir. Bu, ActiveX teknolojisi, OLE Otomasyonu, OLE bağlama/katıştırma veya ODBC/DAO işlemlerini kullanan MFC uygulamalarında otomatik olarak yapılır.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetBkImage](#getbkimage).
+[CListCtrl:: GetBkImage](#getbkimage)örneğine bakın.
 
-## <a name="clistctrlsetcallbackmask"></a><a name="setcallbackmask"></a>CListCtrl::SetCallbackMask
+## <a name="clistctrlsetcallbackmask"></a><a name="setcallbackmask"></a>CListCtrl:: SetCallbackMask
 
-Liste görünümü denetimi için geri arama maskesini ayarlar.
+Liste görünümü denetimi için geri çağırma maskesini ayarlar.
 
 ```
 BOOL SetCallbackMask(UINT nMask);
@@ -3199,7 +3199,7 @@ Geri arama maskesinin yeni değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -3211,9 +3211,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
         (LVIS_SELECTED|LVIS_FOCUSED));
 ```
 
-## <a name="clistctrlsetcheck"></a><a name="setcheck"></a>CListCtrl::SetCheck
+## <a name="clistctrlsetcheck"></a><a name="setcheck"></a>CListCtrl:: SetCheck
 
-Liste denetim öğesinin durum görüntüsünün görünür olup olmadığını belirler.
+Bir liste denetim öğesinin durum görüntüsünün görünür olup olmadığını belirler.
 
 ```
 BOOL SetCheck(
@@ -3224,14 +3224,14 @@ BOOL SetCheck(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Liste denetim öğesinin sıfır tabanlı dizin.
+Bir liste denetim öğesinin sıfır tabanlı dizini.
 
 *fCheck*<br/>
-Öğenin durum görüntüsünün görünür olup olmaması gerektiğini belirtir. Varsayılan olarak, *fCheck* TRUE ve durum görüntüsü görünür. *fCheck* FALSE ise görünmez.
+Öğenin durum görüntüsünün görünür olup olmayacağını belirtir. Varsayılan olarak, *fCheck* doğru ve durum görüntüsü görünür olur. *FCheck* yanlış ise, görünür değildir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Madde işaretlenirse sıfırdan değil, aksi takdirde 0.
+Öğe işaretliyse sıfır dışı, aksi durumda 0.
 
 ### <a name="example"></a>Örnek
 
@@ -3250,7 +3250,7 @@ Madde işaretlenirse sıfırdan değil, aksi takdirde 0.
         }
 ```
 
-## <a name="clistctrlsetcolumn"></a><a name="setcolumn"></a>CListCtrl::SetSütun
+## <a name="clistctrlsetcolumn"></a><a name="setcolumn"></a>CListCtrl:: SetColumn
 
 Liste görünümü sütununun özniteliklerini ayarlar.
 
@@ -3263,20 +3263,20 @@ BOOL SetColumn(
 ### <a name="parameters"></a>Parametreler
 
 *nCol*<br/>
-Öznitelikleri ayarlanacak sütunun dizin.
+Öznitelikleri ayarlanacak olan sütunun dizini.
 
-*pSütun*<br/>
-Windows SDK'da açıklandığı gibi, yeni sütun özniteliklerini içeren bir [LVCOLUMN](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) yapısının adresi. Yapının `mask` üyesi, hangi sütun özniteliklerini ayarlayabilmek için belirtir. `mask` Üye LVCF_TEXT değerini belirtirse, yapının `pszText` üyesi geçersiz bir dize adresidir ve yapının `cchTextMax` üyesi yoksayılır.
+*pColumn*<br/>
+Windows SDK bölümünde açıklandığı gibi, yeni sütun özniteliklerini içeren bir [lvcolumn](/windows/win32/api/commctrl/ns-commctrl-lvcolumnw) yapısının adresi. Yapının üyesi, `mask` ayarlanacak sütun özniteliklerini belirtir. `mask`Üye LVCF_TEXT değerini belirtiyorsa, yapının `pszText` üyesi null ile sonlandırılmış bir dizenin adresidir ve yapının `cchTextMax` üyesi yok sayılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetColumn](#getcolumn).
+[CListCtrl:: GetColumn](#getcolumn)örneğine bakın.
 
-## <a name="clistctrlsetcolumnorderarray"></a><a name="setcolumnorderarray"></a>CListCtrl::SetColumnOrderArray
+## <a name="clistctrlsetcolumnorderarray"></a><a name="setcolumnorderarray"></a>CListCtrl:: SetColumnOrderArray
 
 Liste görünümü denetiminin sütun sırasını (soldan sağa) ayarlar.
 
@@ -3289,26 +3289,26 @@ BOOL SetColumnOrderArray(
 ### <a name="parameters"></a>Parametreler
 
 *piArray*<br/>
-Liste görünümü denetimindeki sütunların dizin değerlerini içeren arabelleğe işaretçi (soldan sağa). Arabellek, liste görünümü denetimindeki toplam sütun sayısını içerecek kadar büyük olmalıdır.
+Liste görünümü denetimindeki sütunların dizin değerlerini içeren bir arabelleğin işaretçisi (soldan sağa). Arabellek, liste görünümü denetimindeki toplam sütun sayısını içerecek kadar büyük olmalıdır.
 
-*iSay*<br/>
+*ıyeniden bağlama*<br/>
 Liste görünümü denetimindeki sütun sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_SetColumnOrderArray](/windows/win32/api/commctrl/nf-commctrl-listview_setcolumnorderarray)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetColumnOrderArray](/windows/win32/api/commctrl/nf-commctrl-listview_setcolumnorderarray).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetColumnOrderArray](#getcolumnorderarray).
+[CListCtrl:: GetColumnOrderArray](#getcolumnorderarray)için örneğe bakın.
 
-## <a name="clistctrlsetcolumnwidth"></a><a name="setcolumnwidth"></a>CListCtrl::SetSütun Genişliği
+## <a name="clistctrlsetcolumnwidth"></a><a name="setcolumnwidth"></a>CListCtrl:: SetColumnWidth
 
-Rapor görünümünde veya liste görünümünde bir sütunun genişliğini değiştirir.
+Rapor görünümü veya liste görünümündeki bir sütunun genişliğini değiştirir.
 
 ```
 BOOL SetColumnWidth(
@@ -3319,16 +3319,16 @@ BOOL SetColumnWidth(
 ### <a name="parameters"></a>Parametreler
 
 *nCol*<br/>
-Genişliğin ayarlanabilmek için sütun dizini. Liste görünümünde bu parametre 0 olmalıdır.
+Genişliği ayarlanacak sütunun dizini. Liste görünümünde, bu parametre 0 olmalıdır.
 
-*Cx*<br/>
-Sütunun yeni genişliği. Windows SDK'da [LVM_SETCOLUMNWIDTH](/windows/win32/Controls/lvm-setcolumnwidth) açıklandığı gibi, LVSCW_AUTOSIZE veya LVSCW_AUTOSIZE_USEHEADER olabilir.
+*yazmaç*<br/>
+Sütunun yeni genişliği. Windows SDK [LVM_SETCOLUMNWIDTH](/windows/win32/Controls/lvm-setcolumnwidth) bölümünde açıklandığı gibi LVSCW_AUTOSIZE ya da LVSCW_AUTOSIZE_USEHEADER olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
-## <a name="clistctrlsetextendedstyle"></a><a name="setextendedstyle"></a>CListCtrl::SetExtendedStyle
+## <a name="clistctrlsetextendedstyle"></a><a name="setextendedstyle"></a>CListCtrl:: Seestdedstyle
 
 Liste görünümü denetiminin geçerli genişletilmiş stillerini ayarlar.
 
@@ -3339,7 +3339,7 @@ DWORD SetExtendedStyle(DWORD dwNewStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwNewStyle*<br/>
-Liste görünümü denetimi tarafından kullanılacak genişletilmiş stillerin bir leşimi. Bu stillerin açıklayıcı bir listesi için, Windows SDK'daki [Genişletilmiş Liste Görünümü Stilleri](/windows/win32/Controls/extended-list-view-styles) konusuna bakın.
+Liste görünümü denetimi tarafından kullanılacak genişletilmiş stillerin birleşimi. Bu stillerin açıklayıcı bir listesi için Windows SDK [Gelişmiş liste görünümü stilleri](/windows/win32/Controls/extended-list-view-styles) konusuna bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3347,7 +3347,7 @@ Liste görünümü denetimi tarafından kullanılan önceki genişletilmiş stil
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_SetExtendedListViewStyle](/windows/win32/api/commctrl/nf-commctrl-listview_setextendedlistviewstyle)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetExtendedListViewStyle](/windows/win32/api/commctrl/nf-commctrl-listview_setextendedlistviewstyle).
 
 ### <a name="example"></a>Örnek
 
@@ -3357,7 +3357,7 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_Set
         (m_myListCtrl.GetExtendedStyle()|LVS_EX_HEADERDRAGDROP);
 ```
 
-## <a name="clistctrlsetgroupinfo"></a><a name="setgroupinfo"></a>CListCtrl::SetGroupInfo
+## <a name="clistctrlsetgroupinfo"></a><a name="setgroupinfo"></a>CListCtrl:: Setgroupınfo
 
 Geçerli liste görünümü denetiminin belirtilen grubunu açıklayan bilgileri ayarlar.
 
@@ -3369,21 +3369,21 @@ int SetGroupInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*iGroupId*<br/>
+*ıgroupıd*<br/>
 Bilgileri ayarlanan grubun tanımlayıcısı.
 
-*pgrp*<br/>
-Ayarlağacak bilgileri içeren bir [LVGROUP](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısına işaretçi. Arayan, bu yapıyı tahsis etmek ve üyelerini ayarlamaktan sorumludur.
+*PGRP*<br/>
+Ayarlanacak bilgileri içeren bir [lvgroup](/windows/win32/api/commctrl/ns-commctrl-lvgroup) yapısına yönelik işaretçi. Çağıran, bu yapıyı ayırmaktan ve üyelerini ayarlamaktan sorumludur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa grubun kimliği; aksi takdirde, -1.
+Yöntem başarılı olursa grubun KIMLIĞI; Aksi takdirde,-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_SETGROUPINFO](/windows/win32/Controls/lvm-setgroupinfo) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_SETGROUPINFO](/windows/win32/Controls/lvm-setgroupinfo) iletisini gönderir.
 
-## <a name="clistctrlsetgroupmetrics"></a><a name="setgroupmetrics"></a>CListCtrl::SetGroupMetrics
+## <a name="clistctrlsetgroupmetrics"></a><a name="setgroupmetrics"></a>CListCtrl:: Setgroupmetrikleri
 
 Liste görünümü denetiminin grup ölçümlerini ayarlar.
 
@@ -3393,16 +3393,16 @@ void SetGroupMetrics(PLVGROUPMETRICS pGroupMetrics);
 
 ### <a name="parameters"></a>Parametreler
 
-*pGroupMetrics*<br/>
-Ayarlanacak grup ölçümleri bilgilerini içeren bir [LVGROUPMETRICS](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics) yapısına işaretçi.
+*Pgroupmetrikleri*<br/>
+Ayarlanacak grup ölçüm bilgilerini içeren [Lvgroupmetrik](/windows/win32/api/commctrl/ns-commctrl-lvgroupmetrics) yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETGROUPMETRICS](/windows/win32/Controls/lvm-setgroupmetrics) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETGROUPMETRICS](/windows/win32/Controls/lvm-setgroupmetrics) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsethotcursor"></a><a name="sethotcursor"></a>CListCtrl::SetHotCursor
+## <a name="clistctrlsethotcursor"></a><a name="sethotcursor"></a>CListCtrl:: SetHotCursor
 
-Liste görünümü denetimi için sıcak izleme etkinleştirildiğinde kullanılan imleci ayarlar.
+Liste görünümü denetimi için etkin izleme etkinleştirildiğinde kullanılan imleci ayarlar.
 
 ```
 HCURSOR SetHotCursor(HCURSOR hc);
@@ -3410,26 +3410,26 @@ HCURSOR SetHotCursor(HCURSOR hc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hc*<br/>
-Sıcak imleci temsil etmek için kullanılan imleç kaynağına bir tutamaç.
+*HC*<br/>
+İmleç kaynağına yönelik bir tanıtıcı, etkin imleci temsil etmek için kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste görünümü denetimi tarafından kullanılan önceki sıcak imleç kaynağının tutamacı.
+Liste görünümü denetimi tarafından kullanılan önceki etkin imleç kaynağının tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_sethotcursor)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_SetHotCursor davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetHotCursor](/windows/win32/api/commctrl/nf-commctrl-listview_sethotcursor).
 
-Yalnızca gezinme seçimi etkinleştirildiğinde görünen sıcak imleç, imleç herhangi bir liste görünümü öğesinin üzerinden geçerken görünür. Gezinme seçimi, genişletilmiş stilLVS_EX_TRACKSELECT ayarlayarak etkinleştirilir.
+Etkin imleç, yalnızca üzerine gelme seçimi etkin olduğunda görünür, imleç herhangi bir liste görünümü öğesine geçtiğinde görüntülenir. Üzerine gelme seçimi, LVS_EX_TRACKSELECT genişletilmiş stili ayarlanarak etkinleştirilir.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetHotCursor](#gethotcursor).
+[CListCtrl:: GetHotCursor](#gethotcursor)örneğine bakın.
 
-## <a name="clistctrlsethotitem"></a><a name="sethotitem"></a>CListCtrl::SetHotItem
+## <a name="clistctrlsethotitem"></a><a name="sethotitem"></a>CListCtrl:: Sethotıtem
 
-Liste görünümü denetiminin geçerli sıcak öğesini ayarlar.
+Liste görünümü denetiminin geçerli etkin öğesini ayarlar.
 
 ```
 int SetHotItem(int iIndex);
@@ -3437,24 +3437,24 @@ int SetHotItem(int iIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-Sıcak madde olarak ayarlanacak maddenin sıfır tabanlı dizin.
+*IIndex*<br/>
+Etkin öğe olarak ayarlanacak öğenin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce sıcak öğenin sıfır tabanlı dizin.
+Daha önce etkin olan öğenin sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_sethotitem)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_SetHotItem davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetHotItem](/windows/win32/api/commctrl/nf-commctrl-listview_sethotitem).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetHotItem](#gethotitem).
+[CListCtrl:: GetHotItem](#gethotitem)için örneğe bakın.
 
-## <a name="clistctrlsethovertime"></a><a name="sethovertime"></a>CListCtrl::SetHoverTime
+## <a name="clistctrlsethovertime"></a><a name="sethovertime"></a>CListCtrl:: SetHoverTime
 
-Liste görünümü denetiminin geçerli gezinme süresini ayarlar.
+Liste görünümü denetiminin geçerli üzerine gelme saatini ayarlar.
 
 ```
 DWORD SetHoverTime(DWORD dwHoverTime = (DWORD)-1);
@@ -3462,24 +3462,24 @@ DWORD SetHoverTime(DWORD dwHoverTime = (DWORD)-1);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwHoverTime*<br/>
-Fare imlecinin seçilmeden önce bir öğenin üzerinde gezinmesi gereken milisaniye cinsinden yeni gecikme. Varsayılan değer aktarılırsa, süre varsayılan gezinme süresine ayarlanır.
+*Dwhmesai*<br/>
+Fare imlecinin seçmeden önce bir öğenin üzerine gelme gereken yeni gecikme (milisaniye cinsinden). Varsayılan değer geçirilirse, saat varsayılan vurgulama zamanına ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki gezinme süresi, milisaniye cinsinden.
+Önceki vurgulama süresi (milisaniye cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_sethovertime)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_SetHoverTime davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetHoverTime](/windows/win32/api/commctrl/nf-commctrl-listview_sethovertime).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetHoverTime](#gethovertime).
+[CListCtrl:: GetHoverTime](#gethovertime)örneğine bakın.
 
-## <a name="clistctrlseticonspacing"></a><a name="seticonspacing"></a>CListCtrl::SetIconSpacing
+## <a name="clistctrlseticonspacing"></a><a name="seticonspacing"></a>CListCtrl:: SetIconSpacing
 
-Liste görünümü denetimindeki simgeler arasındaki aralığı ayarlar.
+Liste görünümü denetimindeki simgeler arasındaki boşluğu ayarlar.
 
 ```
 CSize SetIconSpacing(
@@ -3491,14 +3491,14 @@ CSize SetIconSpacing(CSize size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cx*<br/>
-X eksenindeki simgeler arasındaki mesafe (piksel olarak).
+*yazmaç*<br/>
+X eksenindeki simgeler arasındaki uzaklık (piksel cinsinden).
 
-*Cy*<br/>
-Y eksenindeki simgeler arasındaki uzaklık (piksel olarak).
+*lı*<br/>
+Y eksenindeki simgeler arasındaki uzaklık (piksel cinsinden).
 
-*Boyutu*<br/>
-X `CSize` ve y eksenleri üzerindeki simgeler arasındaki mesafeyi (piksel olarak) belirten bir nesne.
+*boyutla*<br/>
+`CSize`X ve y eksenlerindeki simgeler arasındaki mesafeyi (piksel cinsinden) belirleyen nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3506,7 +3506,7 @@ Simge aralığı için önceki değerleri içeren bir [CSize](../../atl-mfc-shar
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_seticonspacing)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_SetIconSpacing davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetIconSpacing](/windows/win32/api/commctrl/nf-commctrl-listview_seticonspacing).
 
 ### <a name="example"></a>Örnek
 
@@ -3515,9 +3515,9 @@ Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_seticonspacin
     m_myListCtrl.SetIconSpacing(CSize(100, 100));
 ```
 
-## <a name="clistctrlsetimagelist"></a><a name="setimagelist"></a>CListCtrl::SetImageList
+## <a name="clistctrlsetimagelist"></a><a name="setimagelist"></a>CListCtrl:: SetImageList
 
-Bir resim listesini liste görünümü denetimine atar.
+Liste görünümü denetimine bir görüntü listesi atar.
 
 ```
 CImageList* SetImageList(
@@ -3528,26 +3528,26 @@ CImageList* SetImageList(
 ### <a name="parameters"></a>Parametreler
 
 *pImageList*<br/>
-Atamak için resim listesine işaretçi.
+Atanacak görüntü listesine yönelik işaretçi.
 
 *nImageListType*<br/>
-Resim listesi türü. Bu değerlerden biri olabilir:
+Görüntü listesi türü. Şu değerlerden biri olabilir:
 
-- LVSIL_NORMAL Büyük simgeleri olan Resim listesi.
+- Büyük simgelerle LVSIL_NORMAL görüntü listesi.
 
-- küçük simgeleri içeren resim listesi LVSIL_SMALL.
+- Küçük simgelerle LVSIL_SMALL görüntü listesi.
 
-- LVSIL_STATE resim listesi, durum görüntüleriyle birlikte.
+- Durum görüntülerinin bulunduğu görüntü listesi LVSIL_STATE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki resim listesine işaretçi.
+Önceki resim listesine yönelik bir işaretçi.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetImageList](#getimagelist).
+[CListCtrl:: GetImageList](#getimagelist)için örneğe bakın.
 
-## <a name="clistctrlsetinfotip"></a><a name="setinfotip"></a>CListCtrl::SetInfoTip
+## <a name="clistctrlsetinfotip"></a><a name="setinfotip"></a>CListCtrl:: Setınfotip
 
 Araç ipucu metnini ayarlar.
 
@@ -3557,18 +3557,18 @@ BOOL SetInfoTip(PLVSETINFOTIP plvInfoTip);
 
 ### <a name="parameters"></a>Parametreler
 
-*plvInfoTip*<br/>
-Ayarlanacak bilgileri içeren bir [LVFSETINFOTIP](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) yapısına işaretçi.
+*Plvınfotip*<br/>
+Ayarlanacak bilgileri içeren [LVFSETINFOTIP](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETINFOTIP](/windows/win32/Controls/lvm-setinfotip) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETINFOTIP](/windows/win32/Controls/lvm-setinfotip) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsetinsertmark"></a><a name="setinsertmark"></a>CListCtrl::SetInsertMark
+## <a name="clistctrlsetinsertmark"></a><a name="setinsertmark"></a>CListCtrl:: Setınsertmark
 
 Ekleme noktasını tanımlanan konuma ayarlar.
 
@@ -3578,18 +3578,18 @@ BOOL SetInsertMark(LPLVINSERTMARK plvim);
 
 ### <a name="parameters"></a>Parametreler
 
-*plvim*<br/>
-Ekleme noktasının nerede ayarlanacağını belirten bir [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına işaretçi.
+*plvım*<br/>
+Bir [LVINSERTMARK](/windows/win32/api/commctrl/ns-commctrl-lvinsertmark) yapısına, ekleme noktasının nereye ayarlanacağını belirten bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı ysa TRUE'yı veya başka türlü FALSE'u döndürür. Yapının üyesindeki boyut `cbSize` yapının gerçek boyutuna eşit değilse veya geçerli görünümde bir ekleme noktası uygulanmazsa FALSE döndürülür. `LVINSERTMARK`
+Başarılı olursa TRUE, aksi takdirde FALSE döndürür. Yapının üyesinin içindeki boyut, `cbSize` `LVINSERTMARK` yapının gerçek boyutuna eşit değilse veya bir ekleme noktası geçerli görünümde GEÇERLI olmadığında false döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETINSERTMARK](/windows/win32/Controls/lvm-setinsertmark) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETINSERTMARK](/windows/win32/Controls/lvm-setinsertmark) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsetinsertmarkcolor"></a><a name="setinsertmarkcolor"></a>CListCtrl::SetInsertMarkColor
+## <a name="clistctrlsetinsertmarkcolor"></a><a name="setinsertmarkcolor"></a>CListCtrl:: Setınsertmarkcolor
 
 Ekleme noktasının rengini ayarlar.
 
@@ -3599,20 +3599,20 @@ COLORREF SetInsertMarkColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
-Ekleme noktasını ayarlamak için rengi belirten bir [COLORREF](/windows/win32/gdi/colorref) yapısı.
+*Renk*<br/>
+Ekleme noktasını ayarlanacak rengi belirten [colorref](/windows/win32/gdi/colorref) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki `COLORREF` rengi içeren bir yapı döndürür.
+`COLORREF`Önceki rengi içeren bir yapı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETINSERTMARKCOLOR](/windows/win32/Controls/lvm-setinsertmarkcolor) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETINSERTMARKCOLOR](/windows/win32/Controls/lvm-setinsertmarkcolor) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsetitem"></a><a name="setitem"></a>CListCtrl::SetItem
+## <a name="clistctrlsetitem"></a><a name="setitem"></a>CListCtrl:: SetItem
 
-Liste görünümü öğesinin özniteliklerinin bazılarını veya tümlerini ayarlar.
+Liste görünümü öğesinin özniteliklerinin bazılarını veya tümünü ayarlar.
 
 ```
 BOOL SetItem(const LVITEM* pItem);
@@ -3642,56 +3642,56 @@ BOOL SetItem(
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Windows SDK'da açıklandığı gibi, yeni madde özniteliklerini içeren bir [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının adresi. Yapının `iItem` ve `iSubItem` üyeleri öğeyi veya alt öğeyi tanımlar `mask` ve yapının üyesi hangi öznitelikleri ayarladığını belirtir. `mask` Üye hakkında daha fazla bilgi için **Açıklamalar'a**bakın.
+Windows SDK bölümünde açıklandığı gibi, yeni öğe özniteliklerini içeren bir [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının adresi. Yapı `iItem` ve `iSubItem` Üyeler öğe veya alt öğesi tanımlar ve yapının `mask` üyesi ayarlanacak öznitelikleri belirtir. Üye hakkında daha fazla bilgi için `mask` bkz. **açıklamalar**.
 
 *nÖğe*<br/>
-Öznitelikleri ayarlanacak olan öğenin dizin.
+Öznitelikleri ayarlanacak olan öğenin dizini.
 
-*nSubItem*<br/>
-Öznitelikleri ayarlanacak alt öğenin dizin.
+*NALT öğe*<br/>
+Öznitelikleri ayarlanacak alt öğe dizini.
 
 *nMask*<br/>
-Hangi özniteliklerin ayarlaneceğini belirtir (Açıklamalar'a bakın).
+Hangi özniteliklerin ayarlanacağını belirtir (bkz. açıklamalar).
 
 *lpszItem*<br/>
-Öğenin etiketini belirten geçersiz sonlandırılmış bir dize adresi.
+Öğenin etiketini belirten, null ile sonlandırılmış bir dizenin adresi.
 
-*nImage*<br/>
-Öğenin görüntünün resim listesindeki dizini.
+*Ngörüntü*<br/>
+Görüntü listesi içindeki öğenin resminin dizini.
 
-*Nstate*<br/>
-Durumların değiştirilmesi için değerleri belirtir (Açıklamalar'a bakın).
+*nDurum*<br/>
+Değiştirilecek durumların değerlerini belirtir (bkz. açıklamalar).
 
 *nStateMask*<br/>
-Hangi durumların değiştirileceğini belirtir (Açıklamalar'a bakın).
+Hangi durumların değiştirildiğini belirtir (bkz. açıklamalar).
 
-*Lparam*<br/>
-Maddeyle ilişkilendirilecek 32 bit uygulamaya özgü bir değer.
+*lParam*<br/>
+Öğe ile ilişkilendirilecek 32 bitlik uygulamaya özgü bir değer.
 
-*nIndent*<br/>
-Girintinin piksel olarak genişliği. *nIndent* sistem tanımlı minimum genişlikten daha azsa, yeni genişlik sistem tarafından tanımlanan minimum genişliğe ayarlanır
+*Ngirintile*<br/>
+Girintideki piksel cinsinden genişlik. *Ngirintile* sistem tarafından tanımlanan en düşük genişlikle azsa, yeni genişlik sistem tarafından tanımlanan en düşük genişliğe ayarlanır
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`iItem` Yapının `iSubItem` `LVITEM` üyeleri ve *nItem* ve *nSubItem* parametreleri, öznitelikleri ayarlanacak olan öğeyi ve alt öğeyi tanımlar.
+`iItem`Yapının ve `iSubItem` `LVITEM` *nItem* ve *nsubparameters* parametrelerinin üyeleri ve öznitelikleri ayarlanacak öğe ve alt öğe belirler.
 
-Yapının `mask` `LVITEM` üyesi ve *nMask* parametresi hangi madde özniteliklerinin ayarlaneceğini belirtir:
+`mask` `LVITEM` Yapının üyesi ve *nMask* parametresi ayarlanacak öğe özniteliklerini belirtir:
 
-- LVIF_TEXT `pszText` Üye veya *lpszItem* parametresi null-terminatedli bir dize adresidir; `cchTextMax` üye yoksayılır.
+- LVIF_TEXT `pszText` member veya *lpszItem* parametresi null ile sonlandırılmış bir dizenin adresidir; `cchTextMax` üye yok sayılır.
 
-- LVIF_STATE `stateMask` Üye veya *nStateMask* parametresi hangi maddenin değiştireceğini belirtir ve `state` üye veya *nState* parametresi bu durumların değerlerini içerir.
+- LVIF_STATE `stateMask` member veya *nStateMask* parametresi, hangi öğe durumlarının değiştirileceği ve `state` üye veya *nState* parametresinin bu durumlar için değerleri içerdiğini belirtir.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:HitTest](#hittest).
+[CListCtrl:: HitTest](#hittest)örneğine bakın.
 
-## <a name="clistctrlsetitemcount"></a><a name="setitemcount"></a>CListCtrl::SetItemCount
+## <a name="clistctrlsetitemcount"></a><a name="setitemcount"></a>CListCtrl:: Setıtemcount
 
-Çok sayıda öğe eklemek için liste görünümü denetimini hazırlar.
+Çok sayıda öğe eklemek için bir liste görünümü denetimi hazırlar.
 
 ```cpp
 void SetItemCount(int nItems);
@@ -3699,16 +3699,16 @@ void SetItemCount(int nItems);
 
 ### <a name="parameters"></a>Parametreler
 
-*nÖğeler*<br/>
-Denetimin eninde sonunda içereceği öğelerin sayısı.
+*nItems*<br/>
+Denetimin sonunda içereceği öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sanal liste görünümü denetimi için öğe sayısını ayarlamak için [Bkz. CListCtrl::SetItemCountEx](#setitemcountex).
+Bir sanal liste görünümü denetiminin öğe sayısını ayarlamak için, bkz. [CListCtrl:: SetItemCountEx](#setitemcountex).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_SetItemCount](/windows/win32/api/commctrl/nf-commctrl-listview_setitemcount)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetItemCount](/windows/win32/api/commctrl/nf-commctrl-listview_setitemcount).
 
 ### <a name="example"></a>Örnek
 
@@ -3725,9 +3725,9 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_Set
         }
 ```
 
-## <a name="clistctrlsetitemcountex"></a><a name="setitemcountex"></a>CListCtrl::SetItemCountEx
+## <a name="clistctrlsetitemcountex"></a><a name="setitemcountex"></a>CListCtrl:: SetItemCountEx
 
-Sanal liste görünümü denetimi için madde sayısını ayarlar.
+Bir sanal liste görünümü denetiminin öğe sayısını ayarlar.
 
 ```
 BOOL SetItemCountEx(
@@ -3737,23 +3737,23 @@ BOOL SetItemCountEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*iSay*<br/>
-Denetimin eninde sonunda içereceği öğelerin sayısı.
+*ıyeniden bağlama*<br/>
+Denetimin sonunda içereceği öğe sayısı.
 
-*Dwflags*<br/>
-Madde sayısını sıyrıkladıktan sonra liste görünümü denetiminin davranışını belirtir. Bu değer aşağıdakilerin bir birleşimi olabilir:
+*dwFlags*<br/>
+Öğe sayısı sıfırlandıktan sonra liste görünümü denetiminin davranışını belirtir. Bu değer, aşağıdakilerin bir birleşimi olabilir:
 
-- LVSICF_NOINVALIDATEALL Etkilenen öğeler şu anda görüntülenmedikçe liste görünümü denetimi yeniden boyanmayacak. Varsayılan değer budur.
+- LVSICF_NOINVALIDATEALL, etkilenen öğeler şu anda görünüm içinde olmadığı Için liste görünümü denetimi yeniden boyanır. Varsayılan değer budur.
 
-- LVSICF_NOSCROLL Madde sayısı değiştiğinde liste görünümü denetimi kaydırma konumunu değiştirmez.
+- LVSICF_NOSCROLL liste görünümü denetimi, öğe sayısı değiştiğinde kaydırma konumunu değiştirmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/api/commctrl/nf-commctrl-listview_setitemcountex)makrosu ListView_SetItemCountEx davranışını uygular ve yalnızca sanal liste görünümleri için çağrılmalıdır.
+Bu üye işlevi, Windows SDK 'da açıklandığı gibi [ListView_SetItemCountEx](/windows/win32/api/commctrl/nf-commctrl-listview_setitemcountex)Win32 makrosunun davranışını uygular ve yalnızca sanal liste görünümleri için çağrılmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -3774,9 +3774,9 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/api/
         }
 ```
 
-## <a name="clistctrlsetitemdata"></a><a name="setitemdata"></a>CListCtrl::SetItemData
+## <a name="clistctrlsetitemdata"></a><a name="setitemdata"></a>CListCtrl:: SetItemData
 
-*nItem*tarafından belirtilen öğeyle ilişkili 32 bit uygulamaya özgü değeri ayarlar.
+*Nitem*tarafından belirtilen öğeyle ilişkili 32 bitlik uygulamaya özgü değeri ayarlar.
 
 ```
 BOOL SetItemData(int nItem, DWORD_PTR dwData);
@@ -3785,18 +3785,18 @@ BOOL SetItemData(int nItem, DWORD_PTR dwData);
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Verileri ayarlanacak liste öğesinin dizini.
+Verileri ayarlanacak olan liste öğesinin dizini.
 
-*Dwdata*<br/>
-Maddeyle ilişkilendirilecek 32 bitlik bir değer.
+*dwData*<br/>
+Öğe ile ilişkilendirilecek 32 bitlik bir değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer, `lParam` Windows SDK'da açıklandığı gibi [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının üyesidir.
+Bu değer, `lParam` Windows SDK bölümünde açıklandığı gibi [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının üyesidir.
 
 ### <a name="example"></a>Örnek
 
@@ -3808,9 +3808,9 @@ Bu değer, `lParam` Windows SDK'da açıklandığı gibi [LVITEM](/windows/win32
     }
 ```
 
-## <a name="clistctrlsetitemindexstate"></a><a name="setitemindexstate"></a>CListCtrl::SetItemIndexState
+## <a name="clistctrlsetitemindexstate"></a><a name="setitemindexstate"></a>CListCtrl:: SetItemIndexState
 
-Geçerli liste görünümü denetiminde bir öğenin durumunu ayarlar.
+Geçerli liste görünümü denetimindeki bir öğenin durumunu ayarlar.
 
 ```
 BOOL SetItemIndexState(
@@ -3823,25 +3823,25 @@ BOOL SetItemIndexState(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pItemIndex*|[içinde] Bir öğeyi açıklayan bir [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısıiçin işaretçi. Arayan, bu yapıyı tahsis etmek ve üyelerini ayarlamaktan sorumludur.|
-|*dwState*|[içinde] [Liste görünümü öğesi durumlarının](/windows/win32/Controls/list-view-item-states)bitwise bir leşimi olan öğeyi ayarlamak için durum. Sıfırlamak için sıfır veya ayarlanan bir durumu belirtin.|
-|*Dwmask*|[içinde] *dwState* parametresi tarafından belirtilen durum geçerli bitbir maske. [Liste görünümü öğesi durumlarının](/windows/win32/Controls/list-view-item-states)bitwise birleşimini (VEYA) belirtin.|
+|*pItemIndex*|'ndaki Bir öğeyi açıklayan [LVITEMINDEX](/windows/win32/api/commctrl/ns-commctrl-lvitemindex) yapısına yönelik işaretçi. Çağıran, bu yapıyı ayırmaktan ve üyelerini ayarlamaktan sorumludur.|
+|*dwState*|'ndaki [Liste görünümü öğe durumlarının](/windows/win32/Controls/list-view-item-states)bit düzeyinde birleşimi olan öğeyi ayarlanacak durum. Sıfırlamak için sıfır veya bir durum ayarlamak için bir durum belirtin.|
+|*dwMask*|'ndaki *DwState* parametresi tarafından belirtilen durum için geçerli bitlerin maskesi. [Liste görünümü öğe durumlarının](/windows/win32/Controls/list-view-item-states)bit düzeyinde BIRLEŞIMINI (veya) belirtin.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*dwState* parametresi hakkında daha fazla bilgi için [Liste Görünümü Öğesi Durumları'na](/windows/win32/Controls/list-view-item-states)bakın.
+*DwState* parametresi hakkında daha fazla bilgi için bkz. [liste görünümü öğe durumları](/windows/win32/Controls/list-view-item-states).
 
-*dwMask* parametresi hakkında daha fazla bilgi için [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının *stateMask* üyesine bakın.
+*DwMask* parametresi hakkında daha fazla bilgi Için, [lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının *stateMask* üyesine bakın.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_SETITEMINDEXSTATE](/windows/win32/Controls/lvm-setitemindexstate) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_SETITEMINDEXSTATE](/windows/win32/Controls/lvm-setitemindexstate) iletisini gönderir.
 
-## <a name="clistctrlsetitemposition"></a><a name="setitemposition"></a>CListCtrl::SetItemPosition
+## <a name="clistctrlsetitemposition"></a><a name="setitemposition"></a>CListCtrl:: SetItemPosition
 
-Bir öğeyi liste görünümü denetiminde belirtilen bir konuma taşır.
+Bir öğeyi liste görünümü denetimindeki belirtilen konuma taşımaktır.
 
 ```
 BOOL SetItemPosition(
@@ -3852,28 +3852,28 @@ BOOL SetItemPosition(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Konumu ayarlanacak maddenin dizin.
+Konumu ayarlanacak olan öğenin dizini.
 
-*Pt*<br/>
-Öğenin sol üst köşesindeki görünüm koordinatlarında yeni konumu belirten bir [POINT](/windows/win32/api/windef/ns-windef-point) yapısı.
+*yönergelerinin*<br/>
+Öğenin sol üst köşesinin, görünüm koordinatları bölümünde yeni konumu belirten bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Denetim simge veya küçük simge görünümünde olmalıdır.
 
-Liste görünümü denetimi LVS_AUTOARRANGE stiline sahipse, liste görünümü öğenin konumu ayarlandıktan sonra düzenlenir.
+Liste görünümü denetiminin LVS_AUTOARRANGE stili varsa, liste görünümü öğenin konumu ayarlandıktan sonra düzenlenir.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl::GetItemPosition](#getitemposition)için örneğe bakın.
+[CListCtrl:: GetItemPosition](#getitemposition)için örneğe bakın.
 
-## <a name="clistctrlsetitemstate"></a><a name="setitemstate"></a>CListCtrl::SetItemState
+## <a name="clistctrlsetitemstate"></a><a name="setitemstate"></a>CListCtrl:: SetItemState
 
-Liste görünümü denetiminde öğenin durumunu değiştirir.
+Liste görünümü denetimindeki bir öğenin durumunu değiştirir.
 
 ```
 BOOL SetItemState(
@@ -3889,32 +3889,32 @@ BOOL SetItemState(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Durumu ayarlanacak maddenin dizini.
+Durumu ayarlanacak olan öğenin dizini.
 
 *pItem*<br/>
-Windows SDK'da açıklandığı gibi bir [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının adresi. Yapının `stateMask` üyesi hangi durum bitlerinin değiştireceğini belirtir ve yapının `state` üyesi bu bitler için yeni değerleri içerir. Diğer üyeler yoksayılır.
+Windows SDK açıklanan şekilde bir [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının adresi. Yapının `stateMask` üyesi, değiştirilecek durum bitlerini ve yapının `state` üyesi bu bitlerin yeni değerlerini içerir. Diğer Üyeler yok sayılır.
 
-*Nstate*<br/>
-Durum bitleri için yeni değerler. Olası değerlerin listesi için [Bkz. CListCtrl::GetNextItem](#getnextitem) ve [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) devlet üyesi.
+*nDurum*<br/>
+Durum bitleri için yeni değerler. Olası değerler listesi için, bkz. [CListCtrl:: GetNextItem](#getnextitem) ve [lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) State üyesi.
 
 *nMask*<br/>
-Hangi durum bitlerinin değiştirileceğini belirten maske. Bu [değer, LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının devletMask üyesine karşılık gelir.
+Değiştirilecek durum bitlerini belirten maske. Bu değer, [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının stateMask üyesine karşılık gelir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Maddenin "durumu" öğenin kullanılabilirliğini belirten, kullanıcı eylemlerini gösteren veya maddenin durumunu başka bir şekilde yansıtan bir değerdir. Liste görünümü denetimi, kullanıcının bir öğeyi seçmesi gibi bazı durum bitlerini değiştirir. Uygulama, öğeyi devre dışı bırakmak veya gizlemek veya bir bindirme görüntüsü veya durum görüntüsü belirtmek için diğer durum bitlerini değiştirebilir.
+Bir öğenin "durumu", öğenin kullanılabilirliğini belirten, kullanıcı eylemlerini belirten veya öğenin durumunu yansıtan bir değerdir. Liste görünümü denetimi, kullanıcının bir öğe seçtiği zaman gibi bazı durum bitlerini değiştirir. Bir uygulama, öğeyi devre dışı bırakmak veya gizlemek ya da bir kaplama görüntüsü ya da durum görüntüsü belirtmek için diğer durum bitlerini değiştirebilir.
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetTopIndex](#gettopindex).
+[CListCtrl:: GetTopIndex](#gettopindex)örneğine bakın.
 
-## <a name="clistctrlsetitemtext"></a><a name="setitemtext"></a>CListCtrl::SetItemText
+## <a name="clistctrlsetitemtext"></a><a name="setitemtext"></a>CListCtrl:: Setıtemtext
 
-Liste görünümü öğesinin veya alt öğenin metnini değiştirir.
+Liste görünümü öğesi veya alt öğesi metnini değiştirir.
 
 ```
 BOOL SetItemText(
@@ -3926,29 +3926,29 @@ BOOL SetItemText(
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Metni ayarlanacak öğenin dizin.
+Metni ayarlanacak öğenin dizini.
 
-*nSubItem*<br/>
-Madde etiketini ayarlamak için alt öğenin dizinveya sıfır.
+*NALT öğe*<br/>
+Öğe etiketini ayarlamak için alt öğe dizini veya sıfır.
 
-*lpszMetin*<br/>
+*lpszText*<br/>
 Yeni öğe metnini içeren bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, LVS_OWNERDATA pencere stilini içeren denetimlerle kullanılmak üzere tasarlanmamıştır (aslında, hata ayıklama oluştururda bir sitülneden olur). Bu liste denetim stili hakkında daha fazla bilgi için Bkz. [Liste Görünümü Denetimleri Genel Bakış.](/windows/win32/Controls/list-view-controls-overview)
+Bu yöntem LVS_OWNERDATA pencere stilini içeren denetimlerle kullanılmak üzere tasarlanmamıştır (Aslında hata ayıklama yapılarında bir onaylama işlemi olur). Bu liste denetim stili hakkında daha fazla bilgi için bkz. [liste-görünüm denetimlerine genel bakış](/windows/win32/Controls/list-view-controls-overview).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:InsertItem](#insertitem).
+[CListCtrl:: InsertItem](#insertitem)için örneğe bakın.
 
-## <a name="clistctrlsetoutlinecolor"></a><a name="setoutlinecolor"></a>CListCtrl::SetOutlineColor
+## <a name="clistctrlsetoutlinecolor"></a><a name="setoutlinecolor"></a>CListCtrl:: SetOutlineColor
 
-[LVS_EX_BORDERSELECT](/windows/win32/Controls/list-view-window-styles) genişletilmiş pencere stili ayarlanmışsa, liste görünümü denetiminin kenarlığı rengini ayarlar.
+[LVS_EX_BORDERSELECT](/windows/win32/Controls/list-view-window-styles) genişletilmiş pencere stili ayarlanmışsa liste görünümü denetiminin kenarlığının rengini ayarlar.
 
 ```
 COLORREF SetOutlineColor(COLORREF color);
@@ -3956,20 +3956,20 @@ COLORREF SetOutlineColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
-Anahat rengini içeren yeni [COLORREF](/windows/win32/gdi/colorref) yapısı.
+*Renk*<br/>
+Ana hat rengini içeren yeni [colorref](/windows/win32/gdi/colorref) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahat `COLORREF` rengini içeren önceki yapı
+`COLORREF`Ana hat rengini içeren önceki yapı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETOUTLINECOLOR](/windows/win32/Controls/lvm-setoutlinecolor) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETOUTLINECOLOR](/windows/win32/Controls/lvm-setoutlinecolor) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsetselectedcolumn"></a><a name="setselectedcolumn"></a>CListCtrl::SetSelectedSütun
+## <a name="clistctrlsetselectedcolumn"></a><a name="setselectedcolumn"></a>CListCtrl:: SetSelectedColumn
 
-Liste görünümü denetiminin seçili sütununa ayarlar.
+Liste görünümü denetiminin seçili sütununu ayarlar.
 
 ```
 LRESULT SetSelectedColumn(int iCol);
@@ -3982,13 +3982,13 @@ Seçilecek sütunun dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri kullanılmaz.
+Dönüş değeri kullanılmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETSELECTEDCOLUMN](/windows/win32/Controls/lvm-setselectedcolumn) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETSELECTEDCOLUMN](/windows/win32/Controls/lvm-setselectedcolumn) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsetselectionmark"></a><a name="setselectionmark"></a>CListCtrl::SetSelectionMark
+## <a name="clistctrlsetselectionmark"></a><a name="setselectionmark"></a>CListCtrl:: SetSelectionMark
 
 Liste görünümü denetiminin seçim işaretini ayarlar.
 
@@ -3998,24 +3998,24 @@ int SetSelectionMark(int iIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıındex*<br/>
-Birden çok seçimdeki ilk öğenin sıfır tabanlı dizin.
+*IIndex*<br/>
+Birden çok seçimdeki ilk öğenin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçim işareti yoksa önceki seçim işareti veya -1.
+Önceki seçim işareti veya seçim işareti yoksa-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_SetSelectionMark](/windows/win32/api/commctrl/nf-commctrl-listview_setselectionmark)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetSelectionMark](/windows/win32/api/commctrl/nf-commctrl-listview_setselectionmark).
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetSelectionMark](#getselectionmark).
+[CListCtrl:: GetSelectionMark](#getselectionmark)örneğine bakın.
 
-## <a name="clistctrlsettextbkcolor"></a><a name="settextbkcolor"></a>CListCtrl::SetTextBkColor
+## <a name="clistctrlsettextbkcolor"></a><a name="settextbkcolor"></a>CListCtrl:: SetTextBkColor
 
-Liste görünümü denetiminde metnin arka plan rengini ayarlar.
+Liste görünümü denetimindeki metnin arka plan rengini ayarlar.
 
 ```
 BOOL SetTextBkColor(COLORREF cr);
@@ -4023,12 +4023,12 @@ BOOL SetTextBkColor(COLORREF cr);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cr*<br/>
-Yeni metin arka plan rengini belirten bir COLORREF. Daha fazla bilgi için Windows SDK'daki [COLORREF'a](/windows/win32/gdi/colorref) bakın.
+*Return*<br/>
+Yeni metin arka plan rengini belirten COLORREF. Bilgi için Windows SDK [colorref](/windows/win32/gdi/colorref) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -4039,7 +4039,7 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
         ASSERT(m_myListCtrl.GetTextBkColor() == crBkColor);
 ```
 
-## <a name="clistctrlsettextcolor"></a><a name="settextcolor"></a>CListCtrl::SetTextColor
+## <a name="clistctrlsettextcolor"></a><a name="settextcolor"></a>CListCtrl:: SetTextColor
 
 Liste görünümü denetiminin metin rengini ayarlar.
 
@@ -4049,12 +4049,12 @@ BOOL SetTextColor(COLORREF cr);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cr*<br/>
-Yeni metin rengini belirten bir COLORREF. Daha fazla bilgi için Windows SDK'daki [COLORREF'a](/windows/win32/gdi/colorref) bakın.
+*Return*<br/>
+Yeni metin rengini belirten COLORREF. Bilgi için Windows SDK [colorref](/windows/win32/gdi/colorref) bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="example"></a>Örnek
 
@@ -4066,9 +4066,9 @@ Sıfırsız eğer başarılı; aksi takdirde sıfır.
     ASSERT(m_myListCtrl.GetTextColor() == crTextColor);
 ```
 
-## <a name="clistctrlsettileinfo"></a><a name="settileinfo"></a>CListCtrl::SetTileInfo
+## <a name="clistctrlsettileinfo"></a><a name="settileinfo"></a>CListCtrl:: Settileınfo
 
-Liste görünümü denetiminin bir döşemesi için bilgileri ayarlar.
+Liste görünümü denetiminin bir kutucuğunun bilgilerini ayarlar.
 
 ```
 BOOL SetTileInfo(PLVTILEINFO pTileInfo);
@@ -4076,20 +4076,20 @@ BOOL SetTileInfo(PLVTILEINFO pTileInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*pTileInfo*<br/>
-Ayarlanacak bilgileri içeren bir [LVTILEINFO](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo) yapısına işaretçi.
+*Ptileınfo*<br/>
+Ayarlanacak bilgileri içeren [Lvtileınfo](/windows/win32/api/commctrl/ns-commctrl-lvtileinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETTILEINFO](/windows/win32/Controls/lvm-settileinfo) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETTILEINFO](/windows/win32/Controls/lvm-settileinfo) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsettileviewinfo"></a><a name="settileviewinfo"></a>CListCtrl::SetTileViewInfo
+## <a name="clistctrlsettileviewinfo"></a><a name="settileviewinfo"></a>CListCtrl:: Settileviewwınınfo
 
-Liste görünümü denetiminin döşeme görünümünde kullandığı bilgileri ayarlar.
+Liste görünümü denetiminin kutucuk görünümünde kullandığı bilgileri ayarlar.
 
 ```
 BOOL SetTileViewInfo(PLVTILEVIEWINFO ptvi);
@@ -4098,19 +4098,19 @@ BOOL SetTileViewInfo(PLVTILEVIEWINFO ptvi);
 ### <a name="parameters"></a>Parametreler
 
 *ptvi*<br/>
-Ayarlanan bilgileri içeren bir [LVTILEVIEWINFO](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo) yapısına işaretçi.
+Ayarlanacak bilgileri içeren [Lvtileviewınfo](/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETTILEVIEWINFO](/windows/win32/Controls/lvm-settileviewinfo) iletinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETTILEVIEWINFO](/windows/win32/Controls/lvm-settileviewinfo) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsettooltips"></a><a name="settooltips"></a>CListCtrl::SetToolİpuçları
+## <a name="clistctrlsettooltips"></a><a name="settooltips"></a>CListCtrl:: SetToolTip 'ler
 
-Liste görünümü denetiminin araç uçlarını görüntülemek için kullanacağı araç ucu denetimini ayarlar.
+Liste görünümü denetiminin araç ipuçlarını görüntülemek için kullanacağı araç ipucu denetimini ayarlar.
 
 ```
 CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
@@ -4119,19 +4119,19 @@ CToolTipCtrl* SetToolTips(CToolTipCtrl* pWndTip);
 ### <a name="parameters"></a>Parametreler
 
 *pWndTip*<br/>
-Liste denetiminin `CToolTipCtrl` kullanacağı bir nesneye işaretçi.
+`CToolTipCtrl`Liste denetiminin kullanacağı nesneye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce denetim tarafından kullanılan araç ucunu içeren bir [CToolTipCtrl](ctooltipctrl-class.md) nesnesine işaretçi veya daha önce hiçbir araç ipucu kullanılmamışsa NULL.
+Daha önce denetim tarafından kullanılan araç ipucunu içeren bir [CToolTipCtrl](ctooltipctrl-class.md) nesnesi işaretçisi veya daha önce araç ipucu KULLANıLMıYORDU null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [LVM_SETTOOLTIPS](/windows/win32/Controls/lvm-settooltips)davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [LVM_SETTOOLTIPS](/windows/win32/Controls/lvm-settooltips)davranışını uygular.
 
-Araç ipuçlarını kullanmamak için, nesneyi `CListCtrl` oluştururken LVS_NOTOOLTIPS stilini belirtin.
+Araç ipuçlarını kullanmadan, nesneyi oluştururken LVS_NOTOOLTIPS stilini belirtin `CListCtrl` .
 
-## <a name="clistctrlsetview"></a><a name="setview"></a>CListCtrl::SetView
+## <a name="clistctrlsetview"></a><a name="setview"></a>CListCtrl:: SetView
 
 Liste görünümü denetiminin görünümünü ayarlar.
 
@@ -4141,20 +4141,20 @@ DWORD SetView(int iView);
 
 ### <a name="parameters"></a>Parametreler
 
-*Iview*<br/>
+*Seçilmedi*<br/>
 Seçilecek görünüm.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa 1 veya -1 aksi takdirde 1 döndürür. Örneğin, görünüm geçersizse -1 döndürülür.
+Başarılıysa 1, yoksa-1 döndürür. Örneğin, bir görünüm geçersizse-1 döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SETVIEW](/windows/win32/Controls/lvm-setview) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SETVIEW](/windows/win32/Controls/lvm-setview) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsetworkareas"></a><a name="setworkareas"></a>CListCtrl::SetÇalışma Alanları
+## <a name="clistctrlsetworkareas"></a><a name="setworkareas"></a>CListCtrl:: SetWorkAreas
 
-Simgelerin liste görünümü denetiminde görüntülenebileceği alanı ayarlar.
+Bir liste görünümü denetiminde simgelerin görüntülenebildiği alanı ayarlar.
 
 ```cpp
 void SetWorkAreas(
@@ -4164,15 +4164,15 @@ void SetWorkAreas(
 
 ### <a name="parameters"></a>Parametreler
 
-*nÇalışma Alanları*<br/>
+*nWorkAreas*<br/>
 `RECT` *LpRect*tarafından işaret edilen dizideki yapıların (veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnelerinin) sayısı.
 
-*Lprect*<br/>
-Liste görünümü denetiminin `RECT` yeni `CRect` çalışma alanlarını belirten bir dizi yapının (veya nesnenin) adresi. Bu alanlar istemci koordinatlarında belirtilmelidir. Bu parametre NULL ise, çalışma alanı denetimin istemci alanına ayarlanır.
+*lpRect*<br/>
+`RECT` `CRect` Liste görünümü denetiminin yeni iş bölgelerini belirten bir yapı dizisinin (veya nesnelerinin) adresi. Bu alanların istemci koordinatlarıyla belirtilmesi gerekir. Bu parametre NULL ise, çalışma alanı denetimin istemci alanına ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_SetWorkAreas](/windows/win32/api/commctrl/nf-commctrl-listview_setworkareas)davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SetWorkAreas](/windows/win32/api/commctrl/nf-commctrl-listview_setworkareas).
 
 ### <a name="example"></a>Örnek
 
@@ -4181,9 +4181,9 @@ Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 makrosu [ListView_Set
     m_myListCtrl.SetWorkAreas(0, NULL);
 ```
 
-## <a name="clistctrlsortgroups"></a><a name="sortgroups"></a>CListCtrl::Sıralama Grupları
+## <a name="clistctrlsortgroups"></a><a name="sortgroups"></a>CListCtrl:: SortGroups
 
-Liste görünümü denetiminde grupları ID'ye göre sıralamak için uygulama tanımlı bir karşılaştırma işlevi kullanır.
+Bir liste görünümü denetimindeki grupları KIMLIĞE göre sıralamak için uygulama tanımlı bir karşılaştırma işlevi kullanır.
 
 ```
 BOOL SortGroups(
@@ -4194,22 +4194,22 @@ BOOL SortGroups(
 ### <a name="parameters"></a>Parametreler
 
 *_pfnGroupCompare*<br/>
-Grup karşılaştırma işlevi için bir işaretçi.
+Grup Karşılaştırma işlevine yönelik bir işaretçi.
 
 *_plv*<br/>
-Geçersiz bir işaretçi.
+Void işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [LVM_SORTGROUPS](/windows/win32/Controls/lvm-sortgroups) iletisinin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [LVM_SORTGROUPS](/windows/win32/Controls/lvm-sortgroups) iletisinin işlevselliğine öykünür.
 
-## <a name="clistctrlsortitems"></a><a name="sortitems"></a>CListCtrl::Öğeleri Sıralama
+## <a name="clistctrlsortitems"></a><a name="sortitems"></a>CListCtrl:: SortItems
 
-Uygulama tanımlı karşılaştırma işlevini kullanarak liste görünümü öğelerini sıralar.
+Liste görünümü öğelerini uygulama tanımlı bir karşılaştırma işlevi kullanarak sıralar.
 
 ```
 BOOL SortItems(
@@ -4219,23 +4219,23 @@ BOOL SortItems(
 
 ### <a name="parameters"></a>Parametreler
 
-*pfnKarşılaştır*<br/>
-[içinde] Uygulama tanımlı karşılaştırma işlevinin adresi.
+*pfnCompare*<br/>
+'ndaki Uygulama tanımlı karşılaştırma işlevinin adresi.
 
-Sıralama işlemi, iki liste öğesinin göreli sırasının belirlenmesi gerektiğinde karşılaştırma işlevini çağırır. Karşılaştırma işlevi, bir sınıfın statik üyesi veya herhangi bir sınıfın üyesi olmayan tek başına bir işlev olmalıdır.
+Sıralama işlemi, iki liste öğesinin göreli sırası belirlenmesi gereken her seferinde karşılaştırma işlevini çağırır. Karşılaştırma işlevi bir sınıfın statik üyesi veya herhangi bir sınıfın üyesi olmayan tek başına bir işlev olmalıdır.
 
-*Dwdata*<br/>
-[içinde] Karşılaştırma işlevine geçirilen uygulama tanımlı değer.
+*dwData*<br/>
+'ndaki Karşılaştırma işlevine geçirilen uygulama tanımlı değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
+Yöntem başarılı olursa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, yeni sırayı yansıtacak şekilde her öğenin dizinini değiştirir.
+Bu yöntem, her öğenin dizinini yeni sırayı yansıtacak şekilde değiştirir.
 
-Karşılaştırma işlevi, *pfnCompare,* aşağıdaki forma sahiptir:
+*PfnCompare*karşılaştırma işlevinin aşağıdaki biçimi vardır:
 
 ```
 int CALLBACK CompareFunc(LPARAM lParam1,
@@ -4243,15 +4243,15 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParamSort);
 ```
 
-Karşılaştırma işlevi, ilk öğe ikinci öğeden önce yse negatif bir değer, ilk öğe ikinci öğeyi izlemesi gerekiyorsa pozitif değer veya iki öğe eşitse sıfır döndürmelidir.
+İlk öğe ikinciden önce gelmelidir, ilk öğe ikinciden önce gelmesi gerekiyorsa pozitif bir değer veya iki öğe eşitse sıfır değeri, karşılaştırma işlevi için negatif bir değer döndürmelidir.
 
-*lParam1* parametresi karşılaştırıldığında ilk madde ile ilişkili 32 bit lik değerdir ve *lParam2* parametresi ikinci maddeyle ilişkili değerdir. Bunlar, öğelerin [LVITEM](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının *lParam* üyesinde listeye eklendiğinde belirtilen değerlerdir. *lParamSort* parametresi *dwData* değeri ile aynıdır.
+*LParam1* parametresi, karşılaştırılan ilk öğeyle ilişkili 32 bitlik değerdir ve *lParam2* parametresi ikinci öğeyle ilişkili değerdir. Bunlar, listeye eklendiklerinde öğelerin ' [Lvidıtem](/windows/win32/api/commctrl/ns-commctrl-lvitemw) yapısının *lParam* üyesinde belirtilen değerlerdir. *LParamSort* parametresi *dwData* değeri ile aynıdır.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıda, öğelerin *lParam* değerlerine göre sıralanmalarıyla sonuçlanan basit bir karşılaştırma işlevi vermiştir.
+Aşağıda, öğelerin *lParam* değerlerine göre sıralanmasına neden olan basit bir karşılaştırma işlevi verilmiştir.
 
 ```cpp
 // Sort items by associated lParam
@@ -4271,9 +4271,9 @@ void CListCtrlDlg::Sort()
 }
 ```
 
-## <a name="clistctrlsortitemsex"></a><a name="sortitemsex"></a>CListCtrl::SortItemsEx
+## <a name="clistctrlsortitemsex"></a><a name="sortitemsex"></a>CListCtrl:: Sortıtemsex
 
-Uygulama tanımlı karşılaştırma işlevi kullanarak geçerli liste görünümü denetiminin öğelerini sıralar.
+Uygulama tanımlı bir karşılaştırma işlevi kullanarak geçerli liste görünümü denetiminin öğelerini sıralar.
 
 ```
 BOOL SortItemsEx(
@@ -4285,18 +4285,18 @@ BOOL SortItemsEx(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*pfnKarşılaştır*|[içinde] Uygulama tanımlı karşılaştırma işlevinin adresi.<br /><br /> Sıralama işlemi, iki liste öğesinin göreli sırasının belirlenmesi gerektiğinde karşılaştırma işlevini çağırır. Karşılaştırma işlevi, bir sınıfın statik üyesi veya herhangi bir sınıfın üyesi olmayan tek başına bir işlev olmalıdır.|
-|*Dwdata*|[içinde] Uygulama tanımlı değer karşılaştırma işlevine geçti.|
+|*pfnCompare*|'ndaki Uygulama tanımlı karşılaştırma işlevinin adresi.<br /><br /> Sıralama işlemi, iki liste öğesinin göreli sırası belirlenmesi gereken her seferinde karşılaştırma işlevini çağırır. Karşılaştırma işlevi bir sınıfın statik üyesi veya herhangi bir sınıfın üyesi olmayan tek başına bir işlev olmalıdır.|
+|*dwData*|'ndaki Karşılaştırma işlevine uygulama tanımlı değer geçirildi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, yeni sırayı yansıtacak şekilde her öğenin dizinini değiştirir.
+Bu yöntem, her öğenin dizinini yeni sırayı yansıtacak şekilde değiştirir.
 
-Karşılaştırma işlevi, *pfnCompare,* aşağıdaki forma sahiptir:
+*PfnCompare*karşılaştırma işlevinin aşağıdaki biçimi vardır:
 
 ```
 int CALLBACK CompareFunc(LPARAM lParam1,
@@ -4304,18 +4304,18 @@ int CALLBACK CompareFunc(LPARAM lParam1,
     LPARAM lParamSort);
 ```
 
-Bu ileti, karşılaştırma işlevine aktarılan bilgi türü dışında [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems)gibidir. [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems), *lParam1* ve *lParam2* karşılaştırılmak için öğelerin değerleridir. [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex), *lParam1* karşılaştırılacak ilk öğenin geçerli dizinidir ve *lParam2* ikinci öğenin geçerli dizinidir. Bir öğe hakkında daha fazla bilgi almak için [LVM_GETITEMTEXT](/windows/win32/Controls/lvm-getitemtext) iletisi gönderebilirsiniz.
+Bu ileti, Karşılaştırma işlevine geçirilen bilgi türü dışında [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems)gibidir. [LVM_SORTITEMS](/windows/win32/Controls/lvm-sortitems), *lParam1* ve *lParam2* ' de Karşılaştırılacak öğelerin değerleridir. [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex)içinde *lParam1* , Karşılaştırılacak ilk öğenin geçerli dizinidir ve *lParam2* ikinci öğenin geçerli dizinidir. Bir öğe hakkında daha fazla bilgi almak için [LVM_GETITEMTEXT](/windows/win32/Controls/lvm-getitemtext) iletisi gönderebilirsiniz.
 
-Karşılaştırma işlevi, ilk öğe ikinci öğeden önce yse negatif bir değer, ilk öğe ikinci öğeyi izlemesi gerekiyorsa pozitif değer veya iki öğe eşitse sıfır döndürmelidir.
+İlk öğe ikinciden önce gelmelidir, ilk öğe ikinciden önce gelmesi gerekiyorsa pozitif bir değer veya iki öğe eşitse sıfır değeri, karşılaştırma işlevi için negatif bir değer döndürmelidir.
 
 > [!NOTE]
-> Sıralama işlemi sırasında, liste görünümü içeriği kararsız. Geri arama işlevi liste görünümü denetimine [LVM_GETITEM](/windows/win32/Controls/lvm-getitem)dışında herhangi bir ileti gönderirse, sonuçlar öngörülemez.
+> Sıralama işlemi sırasında liste görünümü içeriği kararsız hale geldi. Geri çağırma işlevi, [LVM_GETITEM](/windows/win32/Controls/lvm-getitem)dışındaki liste görünümü denetimine ileti gönderirse sonuçlar tahmin edilemez.
 
-Bu yöntem, Windows SDK'da açıklanan [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [LVM_SORTITEMSEX](/windows/win32/Controls/lvm-sortitemsex) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_listCtrl`geçerli liste görünümü denetimine erişmek için kullanılan bir değişken tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_listCtrl` geçerli liste görünümü denetimine erişmek için kullanılan bir değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 ```cpp
 public:
@@ -4325,7 +4325,7 @@ public:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği `SortItemEx` yöntemi gösterir. Bu kod örneğinin önceki bir bölümünde, rapor görünümünde "ClientID" ve "Grade" başlıklı iki sütun görüntüleyen bir liste görünümü denetimi oluşturduk. Aşağıdaki kod örneği, "Not" sütunundaki değerleri kullanarak tabloyu sıralar.
+Aşağıdaki kod örneği `SortItemEx` yöntemini gösterir. Bu kod örneği daha önceki bir bölümünde, bir rapor görünümünde "ClientID" ve "sınıf" başlıklı iki sütunu görüntüleyen bir liste görünümü oluşturduk. Aşağıdaki kod örneği, tabloyu "sınıf" sütunundaki değerleri kullanarak sıralar.
 
 ```cpp
 // The ListCompareFunc() method is a global function used by SortItemEx().
@@ -4357,9 +4357,9 @@ void CCListCtrl_s2Dlg::OnBnClickedButton1()
 }
 ```
 
-## <a name="clistctrlsubitemhittest"></a><a name="subitemhittest"></a>CListCtrl::SubItemHitTest
+## <a name="clistctrlsubitemhittest"></a><a name="subitemhittest"></a>CListCtrl:: Subıtemhittest
 
-Varsa hangi liste görünümü öğesinin belirli bir konumda olduğunu belirler.
+Hangi liste görünümü öğesinin (varsa) belirli bir konumda olduğunu belirler.
 
 ```
 int SubItemHitTest(LPLVHITTESTINFO pInfo);
@@ -4367,16 +4367,16 @@ int SubItemHitTest(LPLVHITTESTINFO pInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pınfo*<br/>
-[LVHITTESTINFO](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) yapısıiçin bir işaretçi.
+*pInfo*<br/>
+[Lvhittestınfo](/windows/win32/api/commctrl/ns-commctrl-lvhittestinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Maddenin veya alt öğenin tek tabanlı dizini, test ediliyor (varsa) veya -1 aksi takdirde.
+Öğenin veya alt öğesinin, test edilmekte olan (varsa) ya da-1 ' den başka bir tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye [işlev,](/windows/win32/api/commctrl/nf-commctrl-listview_subitemhittest)Windows SDK'da açıklandığı gibi Win32 makrosu ListView_SubItemHitTest davranışını uygular.
+Bu üye işlevi, Windows SDK ' de açıklandığı gibi Win32 makrosunun davranışını uygular [ListView_SubItemHitTest](/windows/win32/api/commctrl/nf-commctrl-listview_subitemhittest).
 
 ### <a name="example"></a>Örnek
 
@@ -4398,9 +4398,9 @@ void CListCtrlDlg::OnDblClk(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-## <a name="clistctrlupdate"></a><a name="update"></a>CListCtrl::Güncelleme
+## <a name="clistctrlupdate"></a><a name="update"></a>CListCtrl:: Update
 
-*NItem*tarafından belirtilen öğeyi yeniden boyamak için liste görünümü denetimini zorlar.
+Liste görünümü denetimini *nitem*tarafından belirtilen öğeyi yeniden çizilecek şekilde zorlar.
 
 ```
 BOOL Update(int nItem);
@@ -4409,11 +4409,11 @@ BOOL Update(int nItem);
 ### <a name="parameters"></a>Parametreler
 
 *nÖğe*<br/>
-Güncellenecek öğenin dizini.
+Güncelleştirileceği öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4421,11 +4421,11 @@ Bu işlev, LVS_AUTOARRANGE stili varsa liste görünümü denetimini de düzenle
 
 ### <a name="example"></a>Örnek
 
-[CListCtrl örneğine bakın:GetSelectedCount](#getselectedcount).
+[CListCtrl:: GetSelectedCount](#getselectedcount)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek ROWLIST](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../hierarchy-chart.md)<br/>
-[CImageList Sınıfı](cimagelist-class.md)
+[MFC örnek ROWLIST](../../overview/visual-cpp-samples.md)<br/>
+[CWnd sınıfı](cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../hierarchy-chart.md)<br/>
+[CImageList sınıfı](cimagelist-class.md)

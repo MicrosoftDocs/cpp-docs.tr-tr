@@ -1,23 +1,23 @@
 ---
-title: db_table (C++ com özniteliği)
+title: db_table (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_table
 helpviewer_keywords:
 - db_table attribute
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-ms.openlocfilehash: 2b3be55a4ea118ef3441d3ea93f63e19ebdb3d79
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9e05a980764b8b97f6c774165fdddd5428a0c989
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167257"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215289"
 ---
 # <a name="db_table"></a>db_table
 
 Bir OLE DB tablosu açar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ db_table(db_table, name, source_name, hresult) ]
@@ -32,20 +32,20 @@ Bir veritabanı tablosunun adını belirten bir dize (örneğin, "Ürünler").
 Seçim Tabloyla çalışmak için kullandığınız tanıtıcının adı. Birden fazla sonuç satırı döndürmek istiyorsanız bu parametreyi belirtmeniz gerekir. **db_table** , satır kümesinde çapraz geçiş yapmak veya birden çok eylem sorgusu yürütmek için kullanılabilecek belirtilen *ada* sahip bir değişken oluşturur.
 
 *source_name*<br/>
-Seçim Komutun yürütüldüğü öğesine uygulanmış `db_source` özniteliği olan bir sınıfın `CSession` değişkeni veya örneği. Bkz. [db_source](db-source.md).
+Seçim `CSession` `db_source` Komutun çalıştırıldığı özniteliğe uygulanan özniteliği olan bir sınıfın değişkeni veya örneği. Bkz. [db_source](db-source.md).
 
 *HRESULT*<br/>
 Seçim Bu veritabanı komutunun HRESULT 'sini alacak değişkeni tanımlar. Değişken yoksa, özniteliği tarafından otomatik olarak eklenir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_table** , bir OLE DB tüketicisi tarafından tablo açmak için kullanılan bir [CTable](../../data/oledb/ctable-class.md) nesnesi oluşturur. Bu özniteliği yalnızca sınıf düzeyinde kullanabilirsiniz; satır içi kullanamazsınız. Tablo sütunlarını değişkenlere bağlamak için `db_column` kullanın; parametreleri sınırlandırmak için `db_param` kullanın (parametre türünü ve bu şekilde ayarlayın).
+**db_table** , bir OLE DB tüketicisi tarafından tablo açmak için kullanılan bir [CTable](../../data/oledb/ctable-class.md) nesnesi oluşturur. Bu özniteliği yalnızca sınıf düzeyinde kullanabilirsiniz; satır içi kullanamazsınız. `db_column`Tablo sütunlarını değişkenlere bağlamak için kullanın; `db_param` parametreleri sınırlandırmak için kullanın (parametre türünü ve bu şekilde ayarlayın).
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `CProducts`tarafından kullanılacak Ürünler tablosunu açar.
+Aşağıdaki örnek tarafından kullanılacak Ürünler tablosunu açar `CProducts` .
 
 ```cpp
 // db_table.cpp
@@ -68,7 +68,7 @@ Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](htt
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -77,4 +77,4 @@ Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](htt
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Öznitelikleri](ole-db-consumer-attributes.md)
+[OLE DB tüketici öznitelikleri](ole-db-consumer-attributes.md)

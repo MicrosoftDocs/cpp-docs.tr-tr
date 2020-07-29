@@ -14,12 +14,12 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-ms.openlocfilehash: c1cab53ccb391bd7d6ca7660e2750f53aa7c72e4
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: 7dde5e97bd8690dc491916de8fb279e80a2c9ed4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180857"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215211"
 ---
 # <a name="og-global-optimizations"></a>`/Og`(Global Iyileştirmeler)
 
@@ -49,7 +49,7 @@ Aşağıdaki iyileştirmeler aşağıda verilmiştir **`/Og`** :
 
 - Otomatik kayıt ayırma
 
-   Bu iyileştirme, derleyicinin kayıtlarda sık kullanılan değişkenleri ve alt ifadeleri depolamasına olanak sağlar; `register`anahtar sözcüğü yoksayıldı.
+   Bu iyileştirme, derleyicinin kayıtlarda sık kullanılan değişkenleri ve alt ifadeleri depolamasına olanak sağlar; **`register`** anahtar sözcüğü yoksayıldı.
 
 - Döngü iyileştirmesi
 

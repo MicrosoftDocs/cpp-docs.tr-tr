@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 9890a6a9dea1671f14b66897a80f4b49861dff2b
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 04fd3ec6ce3363d118174025823279a80dd00f0b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257110"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215549"
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 
 Sabit uzunluklu bir öğe dizisini sarmalanmış.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 class tuple {
@@ -46,7 +46,7 @@ Nth demet öğesinin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, `T1`, `T2`,... `TN`, sırasıyla `0 <= N <= Nmax`. `tuple<T1, T2, ..., TN>` demet örneğinin kapsamı, şablon bağımsız değişkenlerinin `N` sayıdır. `Ti` şablon bağımsız değişkeninin dizini ve bu türün karşılık gelen depolanmış değeri `i - 1`. Bu nedenle, bu belgede 1 ile N arasında bir sayı olarak değer olarak, karşılık gelen dizin değerleri 0 ' dan N-1 ' e kadar değişir.
+Sınıf şablonu, her sırasıyla,, `T1` ..., ve türündeki N nesnelerini depolayan bir nesneyi tanımlar `T2` `TN` `0 <= N <= Nmax` . Bir demet örneğinin kapsamı, `tuple<T1, T2, ..., TN>` `N` şablon bağımsız değişkenlerinin sayısıdır. Şablon bağımsız değişkeninin `Ti` ve bu türün karşılık gelen depolanmış değerinin dizini `i - 1` . Bu nedenle, bu belgede 1 ile N arasında bir sayı olarak değer olarak, karşılık gelen dizin değerleri 0 ' dan N-1 ' e kadar değişir.
 
 ## <a name="example"></a>Örnek
 
@@ -116,7 +116,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## <a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a>işleç =
 
 Bir `tuple` nesnesi atar.
 
@@ -137,17 +137,17 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-\ *Al*
+*ALMA*\
 N. kopya demet öğesinin türü.
 
-*sağ*\
+*Right*\
 Kopyalamanın bulunduğu kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk iki üye işleci, *sağdaki* öğeleri `*this`karşılık gelen öğelerine atar. Üçüncü üye işleci, `*this` 0 ' ın dizinindeki öğeye `right.first` atar ve Dizin 1 ' deki öğeye `right.second`. Üç üye işleci `*this`döndürür.
+İlk iki üye işleci, *sağ* öğelerini öğesine karşılık gelen öğelerine atar **`*this`** . Üçüncü üye işleci, `right.first` 0 dizininden **`*this`** ve `right.second` Dizin 1 ' deki öğeye atar. Üç üye işleci döndürülür **`*this`** .
 
-Kalan üye işleçleri analoglarından, ancak [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Kalan üye işleçleri analoglarından, ancak [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ### <a name="example"></a>Örnek
 
@@ -198,7 +198,7 @@ int main()
 x 4
 ```
 
-## <a name="tuple_swap"></a>Kur
+## <a name="swap"></a><a name="tuple_swap"></a>Kur
 
 İki tanımlama alanının öğelerini değiş tokuş eder.
 
@@ -209,19 +209,19 @@ template <class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri demet ile değiş tokuş edilecek şekilde değiştirilecek olan bir kayıt *düzeni.*
 
-*sağ*\
+*Right*\
 Öğeleri *sol*kayıt düzeni ile değiş tokuş edilecek bir kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `left.swap(right)`yürütür.
+İşlev yürütülür `left.swap(right)` .
 
-## <a name="tuple"></a>Le
+## <a name="tuple"></a><a name="tuple"></a>Le
 
-`tuple` nesnesi oluşturur.
+Bir `tuple` nesnesi oluşturur.
 
 ```cpp
 constexpr tuple();
@@ -246,23 +246,23 @@ template <class U1, class U2>
 
 ### <a name="parameters"></a>Parametreler
 
-\ *Al*
+*ALMA*\
 N. kopya demet öğesinin türü.
 
-*sağ*\
+*Right*\
 Kopyalamanın bulunduğu kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk Oluşturucu, öğeleri varsayılan olarak oluşturulan bir nesne oluşturur.
 
-İkinci Oluşturucu, öğeleri dizin `i - 1``P1`, `P2`,... `PN` her `Pi` bağımsız değişkenlerden oluşturulan bir nesne oluşturur.
+İkinci Oluşturucu, öğeleri, `P1` `P2` `PN` her biri `Pi` dizindeki öğesini başlatarak,,... bağımsız değişkenlerinden oluşturulmuş bir nesne oluşturur `i - 1` .
 
 Üçüncü ve dördüncü oluşturucular, öğeleri ilişkili *sağ*öğeden oluşturulmuş olan bir nesne oluşturur.
 
-Beşinci Oluşturucu, dizin 0 ' daki öğesi `right.first` oluşturulduğu ve Dizin 1 ' deki öğesi `right.second`oluşturulan kopya olan bir nesne oluşturur.
+Beşinci Oluşturucu, dizin 0 ' daki öğesi öğesinden oluşturulan `right.first` ve Dizin 1 ' deki öğesinden kopyası oluşturulan bir nesne oluşturur `right.second` .
 
-Kalan oluşturucular analoglarından daha önceki bir deyişle, [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Kalan oluşturucular analoglarından daha önceki bir deyişle, [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ### <a name="example"></a>Örnek
 

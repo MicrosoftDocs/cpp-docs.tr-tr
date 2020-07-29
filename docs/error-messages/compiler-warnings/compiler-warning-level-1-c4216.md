@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4216
 ms.assetid: 211079dc-59d0-42a7-801c-2ddab21d7232
-ms.openlocfilehash: 2521366a9f33e8c5b1b7d41951a7cb08adfc2561
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b7fc44fd15f761c19ed28402a41b3bd3619b21a0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199829"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223271"
 ---
 # <a name="compiler-warning-level-1-c4216"></a>Derleyici Uyarısı (düzey 1) C4216
 
 Standart olmayan uzantı kullanıldı: float Long
 
-Varsayılan Microsoft uzantıları (/Ze), **float Long** değerini **Double**olarak değerlendirir. ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) değil. Uyumluluğu sürdürmek için **Double** kullanın. Aşağıdaki örnek C4216 oluşturur:
+Varsayılan Microsoft uzantıları (/Ze), **float süresini** olarak değerlendirir **`double`** . ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) değil. **`double`** Uyumluluğu korumak için kullanın. Aşağıdaki örnek C4216 oluşturur:
 
 ```cpp
 // C4216.cpp

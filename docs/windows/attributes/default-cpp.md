@@ -1,5 +1,5 @@
 ---
-title: Varsayılan (C++ com özniteliği)
+title: Varsayılan (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.default
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-ms.openlocfilehash: b789f82f4b5a09b86d72dfde5d783665cf2e918a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: dc0244897f73a5185451159aa0f4ec66dd9dae56
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167192"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215276"
 ---
 # <a name="default-c"></a>default (C++)
 
 Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan programlama arabirimini temsil ettiğini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ default(interface1, interface2) ]
@@ -28,7 +28,7 @@ Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan progra
 ### <a name="parameters"></a>Parametreler
 
 *arabirimi1*<br/>
-**Varsayılan** öznitelik ile tanımlanmış sınıfa dayalı bir nesne oluşturan ortamlar için kullanılabilir hale getirilen varsayılan arabirim.
+Özniteliği ile tanımlanmış sınıfa göre bir nesne oluşturan ortamlar için kullanılabilir hale getirilen varsayılan arabirim **`default`** .
 
 Varsayılan arabirim belirtilmemişse, kaynak olmayan bir arabirimin ilk oluşumu varsayılan olarak kullanılır.
 
@@ -39,11 +39,11 @@ Varsayılan kaynak arabirim belirtilmemişse, ilk kaynak arabirim varsayılan ol
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Varsayılan** C++ öznitelik [varsayılan](/windows/win32/Midl/default) MIDL özniteliğiyle aynı işlevselliğe sahiptir. **Varsayılan** öznitelik [Case](case-cpp.md) özniteliğiyle de kullanılır.
+**`default`** C++ özniteliği, [varsayılan](/windows/win32/Midl/default) MIDL özniteliğiyle aynı işlevselliğe sahiptir. **`default`** Özniteliği [Case](case-cpp.md) özniteliğiyle de kullanılır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, varsayılan programlama arabirimi olarak `ICustomDispatch` belirtmek için bir coclass 'ın tanımında **varsayılan** olarak nasıl kullanıldığını gösterir:
+Aşağıdaki kod, **`default`** `ICustomDispatch` Varsayılan programlama arabirimi olarak belirtmek için bir coclass 'ın tanımında nasıl kullanıldığını gösterir:
 
 ```cpp
 // cpp_attr_ref_default.cpp
@@ -91,7 +91,7 @@ int main() {
 }
 ```
 
-[Kaynak](source-cpp.md) özniteliğinin Ayrıca **varsayılan**olarak nasıl kullanılacağına ilişkin bir örneği de vardır.
+[Kaynak](source-cpp.md) özniteliği, öğesinin nasıl kullanılacağına ilişkin bir örnek de içerir **`default`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -99,9 +99,9 @@ int main() {
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**, veri üyesi|
+|**Şunlara uygulanır**|**`class`**, **`struct`** , veri üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|**coclass** ( **sınıfa** veya **yapıya**uygulandığında)|
+|**Gerekli öznitelikler**|**coclass** (veya öğesine uygulandığında **`class`** **`struct`** )|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -109,5 +109,5 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
 [coclass](coclass.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - identifiers, case sensitivity
 - symbols, case sensitivity
 ms.assetid: d02edbbc-85a0-4118-997b-84ee6b972eb6
-ms.openlocfilehash: 1f3abf304e6fda52e2571d0bccb8d4db5a414dfe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d68eb690a19f57555d9d757a2f058692ea1a40c3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325669"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223752"
 ---
 # <a name="c-identifiers"></a>C Tanımlayıcıları
 
-"Tanımlayıcılar" veya "semboller", programınızdaki değişkenler, türler, işlevler ve Etiketler için sağladığınız adlardır. Tanımlayıcı adları, herhangi bir anahtar kelimelerden farklı yazımla ve büyük/küçük harflere Tanımlayıcılar olarak anahtar sözcükler (C veya Microsoft) kullanamazsınız; özel kullanım için ayrılmıştır. Bir tanımlayıcıyı, bir değişken, tür veya işlev bildiriminde belirterek oluşturabilirsiniz. Bu örnekte, `result` bir tamsayı değişkeni `main` için bir tanımlayıcıdır ve işlevleri için tanımlayıcı `printf` isimleridir.
+"Tanımlayıcılar" veya "semboller", programınızdaki değişkenler, türler, işlevler ve Etiketler için sağladığınız adlardır. Tanımlayıcı adları, herhangi bir anahtar kelimelerden farklı yazımla ve büyük/küçük harflere Tanımlayıcılar olarak anahtar sözcükler (C veya Microsoft) kullanamazsınız; özel kullanım için ayrılmıştır. Bir tanımlayıcıyı, bir değişken, tür veya işlev bildiriminde belirterek oluşturabilirsiniz. Bu örnekte, `result` bir tamsayı değişkeni için bir tanımlayıcıdır ve `main` `printf` işlevleri için tanımlayıcı isimleridir.
 
 ```
 #include <stdio.h>
@@ -34,7 +34,7 @@ int main()
 
 Bildirdikten sonra, sonraki program deyimleriyle ilgili tanımlayıcıyı kullanarak ilişkili değere başvurabilirsiniz.
 
-Deyim etiketi olarak adlandırılan özel bir tür tanımlayıcı, `goto` ifadelerde kullanılabilir. (Bildirimler Bildirimler bölümünde açıklanmış [ve türler](../c-language/declarations-and-types.md) deyim etiketleri [goto ve etiketli deyimlerde](../c-language/goto-and-labeled-statements-c.md)açıklanmıştır.)
+Deyim etiketi olarak adlandırılan özel bir tür tanımlayıcı, **`goto`** ifadelerde kullanılabilir. (Bildirimler Bildirimler bölümünde açıklanmış [ve türler](../c-language/declarations-and-types.md) deyim etiketleri [goto ve etiketli deyimlerde](../c-language/goto-and-labeled-statements-c.md)açıklanmıştır.)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,7 +50,7 @@ Deyim etiketi olarak adlandırılan özel bir tür tanımlayıcı, `goto` ifadel
 *basamak*: aşağıdakilerden biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
 
-Bir tanımlayıcı adının ilk karakteri bir `nondigit` olmalıdır (yani, ilk karakter bir alt çizgi veya büyük harf veya küçük harf olmalıdır). ANSI, dış tanımlayıcı adının ve 31 ' in iç (bir işlev içinde) tanımlayıcılarında altı önemli karaktere izin verir. Dış tanımlayıcılar (genel kapsamda belirtilen veya depolama sınıfıyla `extern`tanımlanmış olanlar), bu tanımlayıcıların Linler gibi başka yazılımlar tarafından işlenmesi gerektiğinden ek adlandırma kısıtlamalarına tabi olabilir.
+Bir tanımlayıcı adının ilk karakteri bir olmalıdır `nondigit` (yani, ilk karakter bir alt çizgi veya büyük harf veya küçük harf olmalıdır). ANSI, dış tanımlayıcı adının ve 31 ' in iç (bir işlev içinde) tanımlayıcılarında altı önemli karaktere izin verir. Dış tanımlayıcılar (genel kapsamda belirtilen veya depolama sınıfıyla tanımlanmış olanlar **`extern`** ), bu tanımlayıcıların Linler gibi başka yazılımlar tarafından işlenmesi gerektiğinden ek adlandırma kısıtlamalarına tabi olabilir.
 
 **Microsoft'a Özgü**
 

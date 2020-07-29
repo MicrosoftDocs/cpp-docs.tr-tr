@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: ac89bf37b8aaaa9d77393b714a233f8a4c998139
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 81dd7483c49a699ac53ea53d33481fa6539d484c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367866"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223661"
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 
-Boş depodan bir nesne veya *tür adı* nesneleri dizisi için bellek ayırır ve nesneye uygun şekilde yazılmış, sıfır olmayan bir işaretçi döndürür.
+Boş depodan bir nesne veya türündeki nesne dizisi için bellek ayırır ve nesneye uygun şekilde, sıfır *olmayan* bir işaretçi döndürür.
 
 > [!NOTE]
-> Microsoft C++ Bileşen Uzantıları, vtable yuvası girişleri eklemek için **yeni** anahtar kelime desteği sağlar. Daha fazla bilgi için [yeni (vtable'da yeni yuva)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
+> Microsoft C++ Bileşen Uzantıları, **`new`** vtable yuva girdileri eklemek için anahtar sözcük desteği sağlar. Daha fazla bilgi için bkz. [Yeni (vtable 'da yeni yuva)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,52 +27,52 @@ Boş depodan bir nesne veya *tür adı* nesneleri dizisi için bellek ayırır v
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başarısız olursa, **yeni** döndürür sıfır veya bir özel durum atar; daha fazla bilgi için [Yeni ve Sil Operatörleri'ne](../cpp/new-and-delete-operators.md) bakın. Özel bir özel durum işleme yordamı yazarak ve işlev adınız ile [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı kitaplığı işlevini bağımsız değişken olarak çağırarak bu varsayılan davranışı değiştirebilirsiniz.
+Başarısız olursa, **`new`** sıfır döndürür veya bir özel durum oluşturur; daha fazla bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md) . Özel bir özel durum işleme yordamı yazarak ve bağımsız değişkeni olarak işlev adınızla [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı kitaplığı işlevini çağırarak, bu varsayılan davranışı değiştirebilirsiniz.
 
-Yönetilen yığında bir nesnenin nasıl oluşturulacağını zedebetmek için [bkz.](../extensions/ref-new-gcnew-cpp-component-extensions.md)
+Yönetilen yığında bir nesne oluşturma hakkında daha fazla bilgi için bkz. [gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md).
 
-C++ sınıfı nesnesi için bellek ayırmak için **yeni** kullanıldığında, nesnenin oluşturucusu bellek ayrıldıktan sonra çağrılır.
+**`new`** Bir C++ sınıf nesnesi için bellek ayırmak için kullanıldığında, bellek ayrıldıktan sonra nesnenin Oluşturucusu çağrılır.
 
-**Yeni** işleçle ayrılan belleği bulmak için [silme](../cpp/delete-operator-cpp.md) işlecisini kullanın.
+İşleçle ayrılan belleği serbest bırakmak için [Delete](../cpp/delete-operator-cpp.md) işlecini kullanın **`new`** .
 
-Aşağıdaki örnek, iki boyutlu bir karakter `dim` dizisini 10'a kadar ayırır ve serbest klar. Çok boyutlu bir dizi ayırırken, ilki dışındaki tüm boyutlar pozitif değerleri değerlendiren sabit ifadeler olmalıdır; en soldaki dizi boyutu, pozitif bir değere değer veren herhangi bir ifade olabilir. **Yeni** işleç kullanarak bir dizi ayırırken, ilk boyut sıfır olabilir - **yeni** işleç benzersiz bir işaretçi döndürür.
+Aşağıdaki örnek, boyutu 10 olan iki boyutlu bir karakter dizisini ayırır ve serbest bırakır `dim` . Çok boyutlu bir dizi ayrılırken, ilki hariç tüm boyutlar pozitif değerler değerlendiren sabit deyimler olmalıdır; en soldaki dizi boyutu pozitif bir değer değerlendirilen herhangi bir ifade olabilir. İşleci kullanarak bir dizi ayrılırken **`new`** , ilk boyut sıfır olabilir — **`new`** işleç, benzersiz bir işaretçi döndürür.
 
 ```cpp
 char (*pchar)[10] = new char[dim][10];
 delete [] pchar;
 ```
 
-*Tür adı* **const,** **uçucu,** sınıf bildirimleri veya numaralandırma bildirimleri içeremez. Bu nedenle, aşağıdaki ifade yasadışıdır:
+*Tür adı* **`const`** ,, **`volatile`** sınıf bildirimleri veya numaralandırma bildirimleri içeremez. Bu nedenle, aşağıdaki ifade geçersizdir:
 
 ```cpp
 volatile char *vch = new volatile char[20];
 ```
 
-**Yeni** işleç, nesne olmadıkları için başvuru türlerini ayırmaz.
+İşleç, nesne olmadıkları için **`new`** başvuru türlerini ayırmıyor.
 
-**Yeni** işleç bir işlev ayırmak için kullanılamaz, ancak işlevlere işaretçileri ayırmak için kullanılabilir. Aşağıdaki örnek, yedi işaretçiden oluşan bir diziyi, karşıtları döndüren işlevlere ayırır ve serbest bırakır.
+**`new`** İşleci bir işlevi ayırmak için kullanılamaz, ancak işlevlere işaretçiler ayırmak için kullanılabilir. Aşağıdaki örnek, tamsayılar döndüren işlevlere yedi işaretçilerin bir dizisini ayırır ve serbest bırakır.
 
 ```cpp
 int (**p) () = new (int (*[7]) ());
 delete *p;
 ```
 
-İşleciyi herhangi bir ekstra bağımsız değişken olmadan **kullanır** ve [/GX](../build/reference/gx-enable-exception-handling.md), [/EHa](../build/reference/eh-exception-handling-model.md), veya [/EHs](../build/reference/eh-exception-handling-model.md) seçeneği ile derlerseniz, derleyici, oluşturucu bir özel durum atarsa operatör **silme** çağrısı yapmak için kod oluşturur.
+İşleci **`new`** ek bağımsız değişkenler olmadan kullanırsanız ve [/GX](../build/reference/gx-enable-exception-handling.md), [/EHa](../build/reference/eh-exception-handling-model.md)veya [/EHS](../build/reference/eh-exception-handling-model.md) seçeneğiyle derlerseniz, **`delete`** Oluşturucu bir özel durum oluşturursa, derleyici işleci çağırmak için kod üretir.
 
-Aşağıdaki liste **yeni**dilbilgisi öğeleriaçıklar:
+Aşağıdaki listede, öğesinin dilbilgisi öğeleri açıklanmaktadır **`new`** :
 
-*Yerleşim*<br/>
-**Yeni**aşırı yüklerseniz ek bağımsız değişkenler geçirmenin bir yolunu sağlar.
+*yerleştirilmesine*<br/>
+Aşırı yüklüyorsanız ek bağımsız değişkenler geçirmenin bir yolunu sağlar **`new`** .
 
 *tür adı*<br/>
-Ayrılacak türü belirtir; yerleşik veya kullanıcı tanımlı bir tür olabilir. Tür belirtimi karmaşıksa, bağlama sırasını zorlamak için parantez ile çevrili olabilir.
+Ayrılacak türü belirtir; yerleşik veya Kullanıcı tanımlı bir tür olabilir. Tür belirtimi karmaşıktır, bağlama sırasını zorlamak için ayraçları parantez içine alabilir.
 
-*Başlatıcı*<br/>
-Başlışınmışnesne için bir değer sağlık sağlar Diziler için baş harfler belirtilemez. **Yeni** işleç, yalnızca sınıfın varsayılan bir oluşturucusu varsa, nesne dizileri oluşturur.
+*izer*<br/>
+Başlatılmış nesne için bir değer sağlar. Başlatıcılar diziler için belirtilemez. **`new`** İşleci yalnızca sınıfın varsayılan bir Oluşturucusu varsa nesne dizileri oluşturur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği bir karakter dizisini ve `CName` sınıf nesnesini ayırır ve bunları serbest bırakarak serbest bırakeder.
+Aşağıdaki kod örneği, bir karakter dizisi ve sınıfından bir nesne ayırır `CName` ve sonra onları serbest bırakır.
 
 ```cpp
 // expre_new_Operator.cpp
@@ -117,7 +117,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-**Yeni** işlecinin yerleşim yeni biçimini, ayırma nın boyutuna ek olarak bağımsız değişkenleri olan formu kullanırsanız, derleyici, oluşturucu bir özel durum atarsa **silme** işlecinin bir yerleşim biçimini desteklemez. Örneğin:
+İşlecin yeni formunu **`new`** , ayırma boyutuna ek olarak bağımsız değişkenlerle birlikte kullanırsanız, **`delete`** Oluşturucu bir özel durum oluşturursa, derleyici işlecin yerleştirme biçimini desteklemez. Örnek:
 
 ```cpp
 // expre_new_Operator2.cpp
@@ -151,9 +151,9 @@ int main() {
 }
 ```
 
-## <a name="initializing-object-allocated-with-new"></a>Yeni ile ayrılan nesneyi başlatma
+## <a name="initializing-object-allocated-with-new"></a>Yeni ile ayrılan nesne başlatılıyor
 
-**Yeni** işleç için dilbilgisine isteğe bağlı bir *baş harf* alanı dahildir. Bu, kullanıcı tanımlı oluşturucularla yeni nesnelerin başlatılmasını sağlar. Başlatmanın nasıl yapıldığı hakkında daha fazla bilgi [için, bkz.](../cpp/initializers.md) Aşağıdaki örnekte, **yeni** işleçle bir başlatma ifadesinin nasıl kullanılacağı gösteriş verilmiştir:
+İsteğe bağlı bir *Başlatıcı* alanı, işlecine yönelik dilbilgisinde bulunur **`new`** . Bu, kullanıcı tanımlı oluşturucularla yeni nesnelerin başlatılmasını sağlar. Başlatmanın nasıl yapılacağı hakkında daha fazla bilgi için bkz. [başlatıcılar](../cpp/initializers.md). Aşağıdaki örnek, bir başlatma ifadesinin işleçle nasıl kullanılacağını göstermektedir **`new`** :
 
 ```cpp
 // expre_Initializing_Objects_Allocated_with_new.cpp
@@ -177,23 +177,23 @@ int main()
 }
 ```
 
-Bu örnekte, `CheckingAcct` nesne **yeni** işleç kullanılarak ayrılır, ancak varsayılan başlatma belirtilmemiştir. Bu nedenle, `Acct()` sınıfı için varsayılan oluşturucu çağrılır. Ardından `SavingsAcct` nesnesi aynı şekilde ayrılır, ancak açıkça 34.98'e başlatılır. 34.98 türü **çift**olduğundan, bu tür bir bağımsız değişken alan kurucu başlatma işlemek için çağrılır. Son olarak, `HowMuch` nonclass türü 43.0 için başlatılır.
+Bu örnekte, nesnesi `CheckingAcct` işleci kullanılarak ayrılır **`new`** , ancak varsayılan başlatma belirtilmez. Bu nedenle, `Acct()` sınıfı için varsayılan oluşturucu çağrılır. Ardından `SavingsAcct` nesnesi aynı şekilde ayrılır, ancak açıkça 34.98'e başlatılır. 34,98 türünde olduğu **`double`** için, bu tür bir bağımsız değişken alan Oluşturucu başlatmayı işlemek için çağırılır. Son olarak, `HowMuch` nonclass türü 43.0 için başlatılır.
 
-Bir nesne bir sınıf türündense ve bu sınıfın oluşturucuları varsa (önceki örnekte olduğu gibi), nesne yalnızca bu koşullardan biri karşılanırsa **yeni** işleç tarafından başharflere alınabilir:
+Bir nesne bir sınıf türünde ise ve bu sınıfın oluşturucuları varsa (önceki örnekte olduğu gibi), nesne **`new`** yalnızca bu koşullardan biri karşılandığında işleç tarafından başlatılabilir:
 
 - Başlatıcıda sağlanan bağımsız değişkenler oluşturucununkilerle uyumludur.
 
 - Sınıfın varsayılan bir oluşturucusu (bağımsız değişken olmadan çağrılabilecek bir oluşturucu) vardır.
 
-**Yeni** işleci kullanarak diziler ayrılırken açık öğe başına başlatma yapılamaz; yalnızca varsayılan oluşturucu, varsa, çağrılır. Daha fazla bilgi için [Varsayılan Bağımsız Değişkenler'e](../cpp/default-arguments.md) bakın.
+İşleci kullanılarak diziler ayrılırken açık öğe başına başlatma yapılamaz **`new`** ; yalnızca varsayılan Oluşturucu varsa, çağırılır. Daha fazla bilgi için bkz. [Varsayılan bağımsız değişkenler](../cpp/default-arguments.md) .
 
-Bellek ayırma başarısız olursa **(işleç yeni** 0 değerini döndürür), hiçbir başlatma gerçekleştirilir. Bu, var olmayan verileri başlatma girişimlerini önler.
+Bellek ayırma başarısız olursa (**New işleci** 0 değerini döndürür), başlatma gerçekleştirilmez. Bu, var olmayan verileri başlatma girişimlerini önler.
 
-İşlev çağrılarında olduğu gibi, başlatılan ifadelerin değerlendirilme sırası tanımlı değildir. Ayrıca, bellek ayırma işlemi yapılmadan önce bu ifadelerin tamamen değerlendirileceğine güvenmemelisiniz. Bellek ayırma başarısız olursa ve **yeni** işleç sıfır döndürürse, başharfteki bazı ifadeler tam olarak değerlendirilmeyebilir.
+İşlev çağrılarında olduğu gibi, başlatılan ifadelerin değerlendirilme sırası tanımlı değildir. Ayrıca, bellek ayırma işlemi yapılmadan önce bu ifadelerin tamamen değerlendirileceğine güvenmemelisiniz. Bellek ayırma başarısız olursa ve **`new`** işleç sıfır döndürürse, başlatıcıdaki bazı ifadeler tamamen değerlendirilmeyebilir.
 
-## <a name="lifetime-of-objects-allocated-with-new"></a>Yeni ile ayrılan nesnelerin ömrü
+## <a name="lifetime-of-objects-allocated-with-new"></a>Yeni ile ayrılmış nesnelerin ömrü
 
-**Yeni** işleçle ayrılan nesneler, tanımlandıkları kapsam çıkarıldığında yok edilmez. **Yeni** işleç ayırdığı nesnelere bir işaretçi döndürür, çünkü program bu nesnelere erişmek için uygun kapsama sahip bir işaretçi tanımlamalıdır. Örneğin:
+İşleciyle ayrılan nesneler, **`new`** tanımlandıkları kapsamın çıkış sırasında yok edilmez. İşleci, **`new`** ayırdığı nesnelere bir işaretçi döndürdüğünden, program bu nesnelere erişmek için uygun kapsama sahip bir işaretçi tanımlamalıdır. Örnek:
 
 ```cpp
 // expre_Lifetime_of_Objects_Allocated_with_new.cpp
@@ -220,40 +220,40 @@ int main()
 
 `AnotherArray` işaretçisi örnekteki kapsamdan çıktığında, nesne artık silinemez.
 
-## <a name="how-new-works"></a>Yeni nasıl çalışır?
+## <a name="how-new-works"></a>Yeni nasıl kullanılır?
 
-*Ayırma-ifade* - **yeni** işleç içeren ifade - üç şey yapar:
+*Ayırma ifadesi* — işleci içeren ifade **`new`** — üç şey yapar:
 
-- Tahsis edilecek nesne veya nesneler için depolamayı bulur ve ayırır. Bu aşama tamamlandığında, doğru depolama miktarı ayrılır, ancak henüz bir nesne değildir.
+- Ayrılacak nesne veya nesneler için depolamayı bulur ve ayırır. Bu aşama tamamlandığında, doğru depolama miktarı ayrılır, ancak henüz bir nesne değildir.
 
-- Nesne(ler) başharflerini. Başlatma tamamlandıktan sonra, ayrılan depolamaalanının nesne olması için yeterli bilgi bulunur.
+- Nesneleri başlatır. Başlatma tamamlandıktan sonra, ayrılan depolamanın bir nesne olması için yeterli bilgi mevcuttur.
 
-- *Yeni tür adı* veya *tür*adı türetilen bir işaretçi türü nesne(ler) için bir işaretçi döndürür. Program, yeni ayrılan nesneye erişmek için bu işaretçiyi kullanır.
+- *Yeni-tür-adı* veya *tür-adından*türetilmiş bir işaretçi türünün nesne (ler) i için bir işaretçi döndürür. Program, bu işaretçiyi yeni ayrılan nesneye erişmek için kullanır.
 
-**Yeni** işleç işlev **işleci yeni**çağırır. Herhangi bir türdeki diziler için ve **sınıf,** **yapı**veya **birleşim** türlerine ait olmayan nesneler için, genel bir **işlev: ::işleç yeni**, depolama ayırmak için çağrılır. Sınıf türü nesneler, sınıf başına olarak kendi **işleç yeni** statik üye işlevini tanımlayabilir.
+**`new`** İşleci **New işlev işlecini**çağırır. Herhangi bir türdeki diziler için ve, veya türünde olmayan nesneler için, **`class`** **`struct`** **`union`** depolama alanı ayırmak için **:: New**genel işlevi çağırılır. Sınıf türü nesneler, sınıf başına **Yeni** statik üye işlevini her sınıf temelinde tanımlayabilir.
 
-Derleyici, tür **türündeki**bir nesneyi ayırmak için **yeni** işleçle `type`karşılaştığında, kullanıcı tanımlı bir **işleç yeni** tanımlanmamışsa **::operator new(sizeof)** `type` **) )** **::operator new( sizeof(** `type` **()** için bir çağrı yayınlar. Bu nedenle, **yeni** işleç nesne için doğru bellek miktarını ayırabilirsiniz.
-
-> [!NOTE]
-> Yeni **işleç** için bağımsız `size_t`değişken türündedir. Bu tür \<direct.h>, \<malloc.h \<>, memory.h \<>, \<search.h>, \<stddef.h \<>, stdio.h \<>, stdlib.h>, string.h> ve \<time.h> olarak tanımlanır.
-
-Dilbilgisindeki bir seçenek *yerleşim* belirtimini sağlar [(yeni Operatör](../cpp/new-operator-cpp.md)için Dilbilgisi'ne bakın). *Yerleşim* parametresi yalnızca **yeni işleç**uygulamaları için kullanılabilir; bu **operatör yeni**geçirilmesi için ekstra bilgi sağlar. T sınıfının üye işleci yeniyse, başka *bir* `T *TObject = new ( 0x0040 ) T;` `T *TObject = T::operator new( sizeof( T ), 0x0040 );` şekilde `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.
-
-*Yerleşim* alanının özgün amacı, donanıma bağımlı nesnelerin kullanıcı tarafından belirtilen adreslere ayrılmasına izin vermekti.
+Derleyici, türü türünde **`new`** bir nesne ayırmak için işleçle karşılaştığında, **type**:: New işleci `type` **(sizeof (** `type` **))** veya bir Kullanıcı tanımlı **işleç** tanımlanmazsa, **:: New işleci (sizeof (** `type` **))** öğesine bir çağrı yayınlar. Bu nedenle, **`new`** işleci nesne için doğru miktarda bellek ayırabilir.
 
 > [!NOTE]
-> Önceki *örnek, yerleşim* alanında yalnızca bir bağımsız değişken gösterse de, bu şekilde **işleç** yeni sine kaç ek bağımsız değişken geçirilebileceği konusunda herhangi bir kısıtlama yoktur.
+> **New işlecine** yönelik bağımsız değişken türündedir `size_t` . Bu tür,,,,,,, ve içinde tanımlanır \<direct.h> \<malloc.h> \<memory.h> \<search.h> \<stddef.h> \<stdio.h> \<stdlib.h> \<string.h> \<time.h> .
 
-Bir sınıf türü için **işleç yeni** tanımlanmış olsa bile, genel işleç bu örnek formu kullanılarak kullanılabilir:
+Dilbilgisinde bir seçenek, *yerleştirme* belirtimine izin verir (bkz. [Yeni operatör](../cpp/new-operator-cpp.md)için dilbilgisi). *Yerleştirme* parametresi yalnızca **New işlecinin**Kullanıcı tanımlı uygulamaları için kullanılabilir; ek bilgilerin **Yeni işleçle**geçirilmesini sağlar. Gibi *yerleştirme* alanı olan bir ifade, `T *TObject = new ( 0x0040 ) T;` `T *TObject = T::operator new( sizeof( T ), 0x0040 );` sınıf T 'de üye işleci New, aksi durumda öğesine çevrilir `T *TObject = ::operator new( sizeof( T ), 0x0040 );` .
+
+*Yerleştirme* alanının özgün amacı, donanıma bağımlı nesnelerin Kullanıcı tarafından belirtilen adreslerde ayrılmasına izin veriydi.
+
+> [!NOTE]
+> Yukarıdaki örnekte *yerleştirme* alanında yalnızca bir bağımsız değişken gösterilse de, bu şekilde **New işlecine** kaç tane fazladan bağımsız değişken geçirilebileceğini gösteren bir kısıtlama yoktur.
+
+Bir sınıf türü için **New işleci** tanımlandığında bile, genel işleç bu örnek formu kullanılarak kullanılabilir:
 
 ```cpp
 T *TObject =::new TObject;
 ```
 
-Kapsam çözümleme işleci (`::`) global **yeni** işlecinin kullanımını zorlar.
+Kapsam çözümleme işleci (), `::` genel işleç kullanımını zorlar **`new`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[yeni ve silme işleçleri](../cpp/new-and-delete-operators.md)
+[new ve delete işleçleri](../cpp/new-and-delete-operators.md)

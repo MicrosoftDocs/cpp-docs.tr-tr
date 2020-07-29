@@ -14,12 +14,12 @@ helpviewer_keywords:
 - document/view architecture [MFC], about document/view architecture
 - views [MFC], accessing document data from
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-ms.openlocfilehash: f0e71c42004b5409eeb6f5e2ddabd33296cf5f49
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8c7bb4add1ebce62147f0bd5403f693cbec87e91
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623443"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214197"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Bir Özeti
 
@@ -27,7 +27,7 @@ Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri
 
 ## <a name="gaining-access-to-document-data-from-the-view"></a>Görünümden belge verilerine erişim elde etme
 
-Görünüm, belgenin verilerine, belgeye yönelik bir işaretçi döndüren [GetDocument](reference/cview-class.md#getdocument) işleviyle veya View sınıfını belge sınıfının C++ ' ı yaparak sağlar `friend` . Daha sonra Görünüm, verileri çizmeye veya başka bir şekilde çalışmaya hazırsa verileri almak için veri erişimini kullanır.
+Görünüm, belgenin verilerine, belgeye yönelik bir işaretçi döndüren [GetDocument](reference/cview-class.md#getdocument) işleviyle veya View sınıfını belge sınıfının C++ ' ı yaparak sağlar **`friend`** . Daha sonra Görünüm, verileri çizmeye veya başka bir şekilde çalışmaya hazırsa verileri almak için veri erişimini kullanır.
 
 Örneğin, görünümün [OnDraw](reference/cview-class.md#ondraw) üye işlevinde, görünümü `GetDocument` bir belge işaretçisi almak için kullanır. Sonra bu işaretçiyi belgedeki bir veri üyesine erişmek için kullanır `CString` . Görünüm, dizeyi `TextOut` işleve geçirir. Bu örneğe ilişkin kodu görmek için bkz. [bir görünümde çizim](drawing-in-a-view.md).
 

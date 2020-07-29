@@ -37,18 +37,18 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: d35ed6ca8dd4c3ea7a149e0fb2085aa8a97b11b4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ada853087cb0c6c127873e2929a73e4d3c92035c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912372"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215133"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
 Tanjantı hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double tan( double x );
@@ -63,21 +63,21 @@ long double tan( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
 **Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|**Matherr** Duruma|
+|Girdi|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
 |± QNAN, IND|yok|_DOMAIN|
 |± INF|**Geçersiz**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerlerini alan ve döndüren **tan** aşırı yüklerini çağırabilirsiniz. C programında, **tan** her zaman **Double**öğesini alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tan** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **tan** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -85,7 +85,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
-|**tan**, **tanf**, **tanl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> veya \<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -115,7 +115,7 @@ tan( 0.785398 ) = 1.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acos, acosf, acosl](acos-acosf-acosl.md)<br/>
 [asin, asinf, asinl](asin-asinf-asinl.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>

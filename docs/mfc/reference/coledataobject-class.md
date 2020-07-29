@@ -1,5 +1,5 @@
 ---
-title: COleDataObject Sınıfı
+title: Cotadataobject sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDataObject
@@ -28,16 +28,16 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-ms.openlocfilehash: 8b9565382de8ae731c166f60a0d1994c1b948a7b
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e9cb8c452cc3eea32b6eed9bf23fb454344c105d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753913"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214093"
 ---
-# <a name="coledataobject-class"></a>COleDataObject Sınıfı
+# <a name="coledataobject-class"></a>Cotadataobject sınıfı
 
-Panodan, sürükle ve bırak'dan veya katıştırılmış bir OLE öğesinden çeşitli biçimlerde veri almak için veri aktarımlarında kullanılır.
+Panodan, sürükle ve bırak ile veya katıştırılmış bir OLE öğesinden çeşitli biçimlerdeki verileri almak için veri aktarımları kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,36 +49,36 @@ class COleDataObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDataObject::COleDataObject](#coledataobject)|Bir `COleDataObject` nesne inşa eder.|
+|[Colet:: Colondataobject](#coledataobject)|Bir `COleDataObject` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDataObject::Ekle](#attach)|Belirtilen OLE veri nesnesini `COleDataObject`.|
-|[COleDataObject::AttachClipboard](#attachclipboard)|Pano'daki veri nesnesini bağlar.|
-|[COleDataObject::BeginEnumFormats](#beginenumformats)|Bir veya daha fazla `GetNextFormat` sonraki aramalar için hazırlar.|
-|[COleDataObject::Detach](#detach)|İlişkili `IDataObject` nesneyi ayırır.|
-|[COleDataObject::Veri Alma](#getdata)|Ekli OLE veri nesnesinden verileri belirli bir biçimde kopyalar.|
-|[COleDataObject::GetFileData](#getfiledata)|Ekli OLE veri nesnesinden verileri belirtilen `CFile` biçimde bir işaretçiye kopyalar.|
-|[COleDataObject::GetGlobalData](#getglobaldata)|Ekli OLE veri nesnesinden verileri belirtilen `HGLOBAL` biçimde kopyalar.|
-|[COleDataObject::GetNextFormat](#getnextformat)|Kullanılabilir sonraki veri biçimini döndürür.|
-|[COleDataObject::IsDataAvailable](#isdataavailable)|Verilerin belirli bir biçimde kullanılabilir olup olmadığını denetler.|
-|[COleDataObject::Sürüm](#release)|İlişkili `IDataObject` nesneyi ayırır ve salgılar.|
+|[Coyedataobject:: Attach](#attach)|Belirtilen OLE veri nesnesini öğesine ekler `COleDataObject` .|
+|[Colet:: AttachClipboard](#attachclipboard)|Panodaki veri nesnesini iliştirir.|
+|[Colet:: BeginEnumFormats](#beginenumformats)|Bir veya daha fazla sonraki çağrı için hazırlar `GetNextFormat` .|
+|[Colandataobject::D etach](#detach)|İlişkili nesneyi ayırır `IDataObject` .|
+|[Coyedataobject:: GetData](#getdata)|Ekli OLE veri nesnesinden verileri belirtilen biçimde kopyalar.|
+|[Coyedataobject:: GetFileData](#getfiledata)|Ekli OLE veri nesnesinden verileri `CFile` belirtilen biçimde bir işaretçiye kopyalar.|
+|[Colet:: GetGlobalData](#getglobaldata)|Ekli OLE veri nesnesinden verileri `HGLOBAL` belirtilen biçimde kopyalar.|
+|[Colet:: GetNextFormat](#getnextformat)|Kullanılabilir bir sonraki veri biçimini döndürür.|
+|[Colet:: IsDataAvailable](#isdataavailable)|Verilerin belirtilen biçimde kullanılabilir olup olmadığını denetler.|
+|[Coyedataobject:: Release](#release)|İlişkili nesneyi ayırır ve serbest bırakır `IDataObject` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleDataObject`taban sınıfa sahip değildir.
+`COleDataObject`taban sınıfına sahip değildir.
 
-Bu tür veri aktarımları bir kaynak ve bir hedef içerir. Veri kaynağı [COleDataSource](../../mfc/reference/coledatasource-class.md) sınıfının bir nesnesi olarak uygulanır. Bir hedef uygulamanın içinde veri bırakıldığında veya Pano'dan bir yapıştırma işlemi gerçekleştirmesi istendiğinde, sınıfın bir nesnesi `COleDataObject` oluşturulmalıdır.
+Bu tür veri aktarımları bir kaynak ve hedef içerir. Veri kaynağı [Cotadatasource](../../mfc/reference/coledatasource-class.md) sınıfının bir nesnesi olarak uygulanır. Bir hedef uygulamaya veri eklendiğinde veya Panodan bir yapıştırma işlemi gerçekleştirmesi istendiğinde, sınıfın bir nesnesinin `COleDataObject` oluşturulması gerekir.
 
-Bu sınıf, verilerin belirli bir biçimde var olup olmadığını belirlemenize olanak tanır. Ayrıca kullanılabilir veri biçimlerini sayısala alabilir veya belirli bir biçimde kullanılabilir olup olmadığını denetleyebilir ve ardından verileri tercih edilen biçimde alabilirsiniz. Nesne alma, [CFile,](../../mfc/reference/cfile-class.md)HGLOBAL veya bir `STGMEDIUM` yapı nın kullanımı da dahil olmak üzere birkaç farklı şekilde gerçekleştirilebilir.
+Bu sınıf, verilerin belirtilen biçimde bulunup bulunmadığını belirlemenizi sağlar. Ayrıca kullanılabilir veri biçimlerini numaralandırabilirsiniz veya belirli bir biçimin kullanılabilir olup olmadığını kontrol edip verileri tercih edilen biçimde alın. Nesne alımı, [CFile](../../mfc/reference/cfile-class.md), BIR HGLOBAL veya bir yapının kullanımı dahil olmak üzere birkaç farklı şekilde gerçekleştirilebilir `STGMEDIUM` .
 
-Daha fazla bilgi için Windows SDK'daki [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına bakın.
+Daha fazla bilgi için Windows SDK [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına bakın.
 
-Uygulamanızda veri nesnelerini kullanma hakkında daha fazla bilgi için [Veri Nesneleri ve Veri Kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md)makalesine bakın.
+Uygulamanızdaki veri nesnelerini kullanma hakkında daha fazla bilgi için bkz. [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -86,11 +86,11 @@ Uygulamanızda veri nesnelerini kullanma hakkında daha fazla bilgi için [Veri 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxole.h
+**Üstbilgi:** afxole. h
 
-## <a name="coledataobjectattach"></a><a name="attach"></a>COleDataObject::Ekle
+## <a name="coledataobjectattach"></a><a name="attach"></a>Coyedataobject:: Attach
 
-Nesneyi bir OLE veri nesnesiyle `COleDataObject` ilişkilendirmek için bu işlevi çağırın.
+Nesneyi OLE veri nesnesiyle ilişkilendirmek için bu işlevi çağırın `COleDataObject` .
 
 ```cpp
 void Attach(
@@ -101,18 +101,18 @@ void Attach(
 ### <a name="parameters"></a>Parametreler
 
 *lpDataObject*<br/>
-Bir OLE veri nesnesine işaret edin.
+Bir OLE veri nesnesine işaret eder.
 
 *bAutoRelease*<br/>
-Nesne yok edildiğinde OLE veri nesnesi serbest bırakılırsa `COleDataObject` DOĞRU; aksi takdirde YANLIŞ.
+Nesne yok edildiğinde OLE veri nesnesi yayınlanacaksa TRUE `COleDataObject` ; aksi takdırde false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [IDataObject'e](/windows/win32/api/objidl/nn-objidl-idataobject) bakın.
+Daha fazla bilgi için Windows SDK [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) bölümüne bakın.
 
-## <a name="coledataobjectattachclipboard"></a><a name="attachclipboard"></a>COleDataObject::AttachClipboard
+## <a name="coledataobjectattachclipboard"></a><a name="attachclipboard"></a>Colet:: AttachClipboard
 
-Pano'da bulunan veri nesnesini `COleDataObject` nesneye eklemek için bu işlevi çağırın.
+O anda Panodaki veri nesnesini nesnesine eklemek için bu işlevi çağırın `COleDataObject` .
 
 ```
 BOOL AttachClipboard();
@@ -120,16 +120,16 @@ BOOL AttachClipboard();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Bu işlevi çağırmak, bu veri nesnesi serbest bırakılına kadar Pano'yu kilitler. Veri nesnesi için yıkıcı serbest `COleDataObject`bırakılır. Daha fazla bilgi için Win32 belgesinde [OpenClipboard](/windows/win32/api/winuser/nf-winuser-openclipboard) ve [CloseClipboard'a](/windows/win32/api/winuser/nf-winuser-closeclipboard) bakın.
+> Bu işlevi çağırmak, bu veri nesnesi serbest bırakılana kadar panoyu kilitler. Veri nesnesi, için yıkıcısında serbest bırakılır `COleDataObject` . Daha fazla bilgi için bkz. Wınpboard ve [CloseClipboard](/windows/win32/api/winuser/nf-winuser-closeclipboard) 'ta Win32 [belgeleyin](/windows/win32/api/winuser/nf-winuser-openclipboard) .
 
-## <a name="coledataobjectbeginenumformats"></a><a name="beginenumformats"></a>COleDataObject::BeginEnumFormats
+## <a name="coledataobjectbeginenumformats"></a><a name="beginenumformats"></a>Colet:: BeginEnumFormats
 
-Öğeden veri biçimleri listesi `GetNextFormat` almak için sonraki çağrılara hazırlanmak için bu işlevi arayın.
+Öğesinden `GetNextFormat` veri biçimlerinin bir listesini almak için sonraki çağrılara hazırlanmak için bu işlevi çağırın.
 
 ```cpp
 void BeginEnumFormats();
@@ -137,15 +137,15 @@ void BeginEnumFormats();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrıdan `BeginEnumFormats`sonra , bu veri nesnesi tarafından desteklenen ilk biçimin konumu depolanır. Ardışık `GetNextFormat` çağrılar, veri nesnesindeki kullanılabilir biçimlerin listesini listeler.
+Bir çağrısından sonra `BeginEnumFormats` , bu veri nesnesi tarafından desteklenen ilk biçimin konumu depolanır. İçin art arda yapılan çağrılar, `GetNextFormat` veri nesnesindeki kullanılabilir biçimlerin listesini numaralandıracaktır.
 
-Belirli bir biçimde veri kullanılabilirliğini kontrol etmek için [COleDataObject kullanın::IsDataAvailable](#isdataavailable).
+Verilerin belirli bir biçimde kullanılabilirliğini denetlemek için, [Copadataobject:: IsDataAvailable](#isdataavailable)kullanın.
 
-Daha fazla bilgi için Windows SDK'daki [IDataObject::EnumFormatEtc'e](/windows/win32/api/objidl/nf-objidl-idataobject-enumformatetc) bakın.
+Daha fazla bilgi için Windows SDK bkz. [IDataObject:: EnumFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-enumformatetc) .
 
-## <a name="coledataobjectcoledataobject"></a><a name="coledataobject"></a>COleDataObject::COleDataObject
+## <a name="coledataobjectcoledataobject"></a><a name="coledataobject"></a>Colet:: Colondataobject
 
-Bir `COleDataObject` nesne inşa eder.
+Bir `COleDataObject` nesnesi oluşturur.
 
 ```
 COleDataObject();
@@ -153,14 +153,14 @@ COleDataObject();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[COleDataObject::Ekle](#attach) veya [COleDataObject::AttachClipboard](#attachclipboard) diğer `COleDataObject` işlevleri aramadan önce yapılmalıdır.
+Diğer işlevler çağrılmadan önce [Cotadataobject:: Attach](#attach) veya [Copadataobject:: AttachClipboard](#attachclipboard) çağrısı yapılmalıdır `COleDataObject` .
 
 > [!NOTE]
-> Sürükle ve bırak işleyicilerinin parametrelerinden biri, `COleDataObject`sürükle ve bırak'ı desteklemek için bu oluşturucuyu çağırmaya gerek yoktur.
+> Sürükle ve bırak işleyicilerine yönelik parametrelerden biri bir işaretçisiyse `COleDataObject` , sürükle ve bırak desteği için bu oluşturucuyu çağırmanız gerekmez.
 
-## <a name="coledataobjectdetach"></a><a name="detach"></a>COleDataObject::Detach
+## <a name="coledataobjectdetach"></a><a name="detach"></a>Colandataobject::D etach
 
-Nesneyi `COleDataObject` veri nesnesini serbest bırakmadan ilişkili OLE veri nesnesinden ayırmak için bu işlevi çağırın.
+`COleDataObject`Nesneyi, veri nesnesini serbest bırakmadan ILIŞKILI OLE veri nesnesinden ayırmak için bu işlevi çağırın.
 
 ```
 LPDATAOBJECT Detach();
@@ -168,13 +168,13 @@ LPDATAOBJECT Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış OLE veri nesnesi için bir işaretçi.
+Ayrılmış OLE veri nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="coledataobjectgetdata"></a><a name="getdata"></a>COleDataObject::Veri Alma
+## <a name="coledataobjectgetdata"></a><a name="getdata"></a>Coyedataobject:: GetData
 
-Belirtilen biçimde öğeden veri almak için bu işlevi arayın.
+Öğeden belirtilen biçimdeki verileri almak için bu işlevi çağırın.
 
 ```
 BOOL GetData(
@@ -186,27 +186,27 @@ BOOL GetData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin döndürülecek biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin döndürüleceği biçim. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
-*lpStgMedium*<br/>
-Veri alacak bir [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
+*Lpstgorta*<br/>
+Veri alacak bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
 
 *lpFormatEtc*<br/>
-Verilerin döndürülmek üzere olduğu biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, varsayılan değerler `FORMATETC` yapıdaki diğer alanlar için kullanılır.
+Verilerin döndürüleceği biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [IDataObject::GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1)ve [FORMATETC'a](/windows/win32/api/objidl/ns-objidl-formatetc) bakın.
+Daha fazla bilgi için Windows SDK bkz. [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1)ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) .
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledataobjectgetfiledata"></a><a name="getfiledata"></a>COleDataObject::GetFileData
+## <a name="coledataobjectgetfiledata"></a><a name="getfiledata"></a>Coyedataobject:: GetFileData
 
-Türemiş veya `CFile` türetilmiş bir `CFile`nesne oluşturmak ve belirtilen `CFile` biçimdeki verileri işaretçiye almak için bu işlevi çağırın.
+`CFile`Ya da `CFile` türetilmiş bir nesne oluşturmak ve belirtilen biçimdeki verileri bir işaretçiye almak için bu işlevi çağırın `CFile` .
 
 ```
 CFile* GetFileData(
@@ -217,29 +217,29 @@ CFile* GetFileData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin döndürülecek biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin döndürüleceği biçim. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *lpFormatEtc*<br/>
-Verilerin döndürülmek üzere olduğu biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, varsayılan değerler `FORMATETC` yapıdaki diğer alanlar için kullanılır.
+Verilerin döndürüleceği biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CFile` verileri `CFile`içeren yeni veya türetilmiş nesneye işaretçi; aksi takdirde NULL.
+`CFile` `CFile` Başarılı olursa verileri içeren yeni veya türetilmiş nesnenin işaretçisi; aksı takdirde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Verilerin depolanan ortama bağlı olarak, iade değerine işaret edilen gerçek `CFile` `CSharedFile`tür `COleStreamFile`, , , veya .
+Verilerin depolandığı ortama bağlı olarak, dönüş değeri tarafından işaret edilen gerçek tür `CFile` , `CSharedFile` veya olabilir `COleStreamFile` .
 
 > [!NOTE]
-> Bu `CFile` işlevin iade değeri tarafından erişilen nesne arayana aittir. Nesneyi silmek ve dosyayı kapatmak arayanın sorumluluğundadır. **delete** `CFile`
+> `CFile`Bu işlevin dönüş değeri tarafından erişilen nesne, çağırana aittir. Bu, çağıran **`delete`** `CFile` nesnenin sorumluluğundadır. böylece dosya kapatılıyor.
 
-Daha fazla bilgi için Windows SDK'daki [FORMATETC'a](/windows/win32/api/objidl/ns-objidl-formatetc) bakın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) bölümüne bakın.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledataobjectgetglobaldata"></a><a name="getglobaldata"></a>COleDataObject::GetGlobalData
+## <a name="coledataobjectgetglobaldata"></a><a name="getglobaldata"></a>Colet:: GetGlobalData
 
-Genel bellek bloğu ayırmak ve belirtilen biçimde verileri HGLOBAL'e almak için bu işlevi arayın.
+Genel bir bellek bloğu ayırmak ve belirtilen biçimdeki verileri bir HGLOBAL dosyasına almak için bu işlevi çağırın.
 
 ```
 HGLOBAL GetGlobalData(
@@ -250,24 +250,24 @@ HGLOBAL GetGlobalData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin döndürülecek biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin döndürüleceği biçim. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *lpFormatEtc*<br/>
-Verilerin döndürülmek üzere olduğu biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, varsayılan değerler `FORMATETC` yapıdaki diğer alanlar için kullanılır.
+Verilerin döndürüleceği biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa verileri içeren genel bellek bloğunun tutamacı; aksi takdirde NULL.
+Başarılı olursa verileri içeren genel bellek bloğunun tanıtıcısı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [FORMATETC'a](/windows/win32/api/objidl/ns-objidl-formatetc) bakın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) bölümüne bakın.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledataobjectgetnextformat"></a><a name="getnextformat"></a>COleDataObject::GetNextFormat
+## <a name="coledataobjectgetnextformat"></a><a name="getnextformat"></a>Colet:: GetNextFormat
 
-Öğeden veri almak için kullanılabilen tüm biçimleri elde etmek için bu işlevi tekrar tekrar arayın.
+Öğeden verileri almak için kullanılabilen tüm biçimleri elde etmek için bu işlevi tekrar tekrar çağırın.
 
 ```
 BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
@@ -276,23 +276,23 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
 ### <a name="parameters"></a>Parametreler
 
 *lpFormatEtc*<br/>
-İşlev çağrısı geri döndüğünde biçim bilgilerini alan [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
+İşlev çağrısı döndüğünde biçim bilgilerini alan [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başka bir biçim varsa sıfır alamayın; aksi takdirde 0.
+Başka bir biçim varsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-COleDataObject'e yapılan bir çağrıdan [sonra::BeginEnumFormats](#beginenumformats), bu veri nesnesi tarafından desteklenen ilk biçimin konumu depolanır. Ardışık `GetNextFormat` çağrılar, veri nesnesindeki kullanılabilir biçimlerin listesini listeler. Kullanılabilir biçimleri listelemek için bu işlevleri kullanın.
+[Cotadataobject:: BeginEnumFormats](#beginenumformats)çağrısından sonra, bu veri nesnesi tarafından desteklenen ilk biçimin konumu depolanır. İçin art arda yapılan çağrılar, `GetNextFormat` veri nesnesindeki kullanılabilir biçimlerin listesini numaralandıracaktır. Kullanılabilir biçimleri listelemek için bu işlevleri kullanın.
 
-Belirli bir biçimin kullanılabilirliğini kontrol etmek için [COleDataObject'i arayın::IsDataAvailable](#isdataavailable).
+Belirli bir biçimin kullanılabilirliğini denetlemek için [Codidataobject:: IsDataAvailable](#isdataavailable)öğesini çağırın.
 
-Daha fazla bilgi için [Bkz. IEnumXXXX::Windows](/previous-versions/ms695273\(v=vs.85\)) SDK'da sonraki.
+Daha fazla bilgi için Windows SDK ' de [IEnumXXXX:: Next](/previous-versions/ms695273\(v=vs.85\)) bölümüne bakın.
 
-## <a name="coledataobjectisdataavailable"></a><a name="isdataavailable"></a>COleDataObject::IsDataAvailable
+## <a name="coledataobjectisdataavailable"></a><a name="isdataavailable"></a>Colet:: IsDataAvailable
 
-OLE öğesinden veri almak için belirli bir biçimin kullanılabilir olup olmadığını belirlemek için bu işlevi arayın.
+OLE öğesinden verileri almak için belirli bir biçimin kullanılabilir olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL IsDataAvailable(
@@ -303,30 +303,30 @@ BOOL IsDataAvailable(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-*LpFormatEtc*tarafından işaret edilen yapıda kullanılacak Pano veri formatı. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+*LpFormatEtc*tarafından işaret edilen yapıda kullanılacak Pano veri biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *lpFormatEtc*<br/>
-İstenilen biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. Yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, varsayılan değerler `FORMATETC` yapıdaki diğer alanlar için kullanılır.
+İstenen biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. Bu parametre için, yalnızca *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Veri belirtilen biçimde varsa sıfırolmayan; aksi takdirde 0.
+Veriler belirtilen biçimde kullanılabilirse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `GetData`işlev, , `GetFileData`veya `GetGlobalData`.
+Bu işlev, veya çağrılmadan önce `GetData` yararlıdır `GetFileData` `GetGlobalData` .
 
-Daha fazla bilgi için Windows SDK'daki [IDataObject::QueryGetData](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) ve [FORMATETC'a](/windows/win32/api/objidl/ns-objidl-formatetc) bakın.
+Daha fazla bilgi için Windows SDK bkz. [IDataObject:: QueryGetData](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) .
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:QueryAcceptData](../../mfc/reference/cricheditview-class.md#queryacceptdata).
+  [CRichEditView:: QueryAcceptData](../../mfc/reference/cricheditview-class.md#queryacceptdata)için örneğe bakın.
 
-## <a name="coledataobjectrelease"></a><a name="release"></a>COleDataObject::Sürüm
+## <a name="coledataobjectrelease"></a><a name="release"></a>Coyedataobject:: Release
 
-Daha önce `COleDataObject` nesneyle ilişkili olan [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) nesnesinin sahipliğini serbest bırakmak için bu işlevi çağırın.
+Daha önce nesnesiyle ilişkilendirilmiş olan [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) nesnesinin sahipliğini serbest bırakmak için bu işlevi çağırın `COleDataObject` .
 
 ```cpp
 void Release();
@@ -334,13 +334,13 @@ void Release();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama `IDataObject` `COleDataObject` `Attach` veya açıkça veya `AttachClipboard` çerçeve ile ilişkili ydi. *bAutoRelease* parametresi `Attach` FALSE ise, `IDataObject` nesne serbest bırakılmaz. Bu durumda, arayan IUnknown `IDataObject` arayarak serbest bırakmak için [sorumludur::Sürüm](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
+, `IDataObject` `COleDataObject` Çağırarak `Attach` veya `AttachClipboard` açıkça veya çerçevesi tarafından ile ilişkilendirilmiştir. ' Nin *bAutoRelease* parametresi `Attach` false ise, `IDataObject` nesne yayınlanmaz. Bu durumda, çağıranın `IDataObject` [IUnknown:: Release öğesini çağırarak yayınmasından](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)sorumludur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleDataSource Sınıfı](../../mfc/reference/coledatasource-class.md)<br/>
-[COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
-[COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)
+[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Cotadatasource sınıfı](../../mfc/reference/coledatasource-class.md)<br/>
+[Colet Clienentidıtem sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
+[Cotaserverıtem sınıfı](../../mfc/reference/coleserveritem-class.md)

@@ -21,14 +21,14 @@ helpviewer_keywords:
 - unsigned types [C++], storage
 - data types [C], storage
 ms.assetid: bd1f33c1-c6b9-4558-8a72-afb21aef3318
-ms.openlocfilehash: 64c642df4dd85e4aa09f90a143b8aa67c28b7dc2
-ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
+ms.openlocfilehash: 973866a912b694510d587df765ac8dd54176638e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998767"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211677"
 ---
-# <a name="storage-of-basic-types"></a>Temel türleri depolama
+# <a name="storage-of-basic-types"></a>Temel türlerin depolanması
 
 Aşağıdaki tabloda, her temel türle ilişkili depolama özetlenmektedir.
 
@@ -36,16 +36,16 @@ Aşağıdaki tabloda, her temel türle ilişkili depolama özetlenmektedir.
 
 |Tür|Depolama|
 |----------|-------------|
-|**char**, **işaretsiz karakter**, **işaretli karakter**|1 bayt|
-|**kısa**, **işaretsiz kısa**|2 bayt|
-|**int**, **işaretsiz int**|4 bayt|
-|**Long**, **imzasız Long**|4 bayt|
-|**uzun**uzun, **imzasız uzun uzun**|8 bayt|
-|**float**|4 bayt|
-|**double**|8 bayt|
-|**uzun çift**|8 bayt|
+|**`char`**, **`unsigned char`**, **`signed char`**|1 bayt|
+|**`short`**, **`unsigned short`**|2 bayt|
+|**`int`**, **`unsigned int`**|4 bayt|
+|**`long`**, **`unsigned long`**|4 bayt|
+|**`long long`**, **`unsigned long long`**|8 bayt|
+|**`float`**|4 bayt|
+|**`double`**|8 bayt|
+|**`long double`**|8 bayt|
 
-C veri türleri genel kategorilere ayrılır. *İntegral türleri* **int**, **char**, **Short**, **Long**ve **Long Long**' i içerir. Bu türler **imzalı** veya **imzasız**ile nitelenmez ve imzasız **int**için toplu olarak **imzalanmamış** olabilir. Sabit listesi türleri (**enum**) çoğu amaçla integral türleri olarak da değerlendirilir. *Kayan türler* **float**, **Double**ve **Long Double**içerir. *Aritmetik türler* tüm kayan ve tam sayı türlerini içerir.
+C veri türleri genel kategorilere ayrılır. *İntegral türleri* ,, **`int`** , **`char`** ve **`short`** içerir **`long`** **`long long`** . Bu türler veya ile nitelenebilir **`signed`** **`unsigned`** ve **`unsigned`** kendisi için toplu olarak kullanılabilir **`unsigned int`** . Sabit listesi türleri ( **`enum`** ), çoğu amaçla integral türleri olarak da değerlendirilir. *Kayan türler* ,, **`float`** ve içerir **`double`** **`long double`** . *Aritmetik türler* tüm kayan ve tam sayı türlerini içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

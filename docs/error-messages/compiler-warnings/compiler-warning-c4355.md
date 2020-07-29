@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4355
 ms.assetid: b819ecab-8a07-42d7-8fa4-1180d51626c0
-ms.openlocfilehash: ddc0d1968ae373ff1e81c98a513e6f84fdb885e1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2725db0e37f8e60f37ec1b534306f516fe10be33
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165333"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223349"
 ---
 # <a name="compiler-warning-c4355"></a>Derleyici Uyarısı C4355
 
 'this' : taban üye başlatıcı listesinde kullanıldı
 
-**Bu** işaretçi yalnızca statik olmayan üye işlevleri içinde geçerlidir. Temel sınıf için Başlatıcı listesinde kullanılamaz.
+**`this`** İşaretçi yalnızca statik olmayan üye işlevleri içinde geçerlidir. Temel sınıf için Başlatıcı listesinde kullanılamaz.
 
-Temel sınıf oluşturucular ve sınıf üye oluşturucuları **Bu** oluşturucudan önce çağırılır. Aslında, oluşturulmamış bir nesneye başka bir oluşturucuya işaretçi geçirdiniz. Bu diğer oluşturucular herhangi bir üyeye veya çağrı üye işlevlerine erişse, sonuç tanımsız olur. Oluşturma işlemi tamamlanana kadar **Bu** işaretçiyi kullanmamalısınız.
+Temel sınıf oluşturucular ve sınıf üye oluşturucuları, oluşturucunun önüne çağırılır **`this`** . Aslında, oluşturulmamış bir nesneye başka bir oluşturucuya işaretçi geçirdiniz. Bu diğer oluşturucular herhangi bir üyeye veya çağrı üye işlevlerine erişse, sonuç tanımsız olur. **`this`** Tüm oluşturma tamamlanana kadar işaretçiyi kullanmamalısınız.
 
 Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 

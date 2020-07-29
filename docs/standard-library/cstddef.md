@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - cstddef header
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
-ms.openlocfilehash: 87d268977ee46112fedce517e66a9e68071863db
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f1582a4af1c26e1ef85cf0dce8406a4046a8fe8b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457568"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222530"
 ---
 # <a name="ltcstddefgt"></a>&lt;cstddef&gt;
 
-, STDDEF. h > \<C standart kitaplığı başlığını içerir ve ilgili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
+C standart kitaplığı üst bilgisini içerir \<stddef.h> ve ad alanına ilişkili adlar ekler `std` . Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 > [!NOTE]
-> \<cstddef > tür **baytı** içerir ve **wchar_t**türü içermez.
+> \<cstddef>tür **baytı** içerir ve türü içermez **`wchar_t`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,7 +52,7 @@ Herhangi bir nesnenin bayt cinsinden boyutunu içermesi için yeterince büyük 
 Hizalama gereksinimini en az her skalar türde olan ve hizalama gereksinimini her bağlamda desteklenen bir POD türü.
 
 *nullptr_t*\
-Bir **nullptr** ifadesinin türü için bir eş anlamlı. Bir **nullptr** adresi alınmasa da, lvalue olan başka bir *nullptr_t* nesnesinin adresi alınabilir.
+Bir ifadenin türü için bir eş anlamlı **`nullptr`** . Bir **`nullptr`** Adres alınmasa da, lvalue olan başka bir *nullptr_t* nesnesinin adresi alınabilir.
 
 ## <a name="byte-class"></a>Byte sınıfı
 
@@ -80,5 +80,5 @@ template <class IntType>
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,23 +1,23 @@
 ---
-title: Şablon uzmanlığı (C++)
+title: Şablon Uzmanlığı (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - partial specialization of class templates
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
-ms.openlocfilehash: 96f755b20e1de21eae47c4de0a181aa5d0738bf2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 17f1f15a5356d760119123214e939a7dd2d1fbaf
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330511"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223583"
 ---
-# <a name="template-specialization-c"></a>Şablon uzmanlığı (C++)
+# <a name="template-specialization-c"></a>Şablon Uzmanlığı (C++)
 
-Sınıf şablonlarının kısmi özelleştirilebilir ve sonuçta elde edilen hala bir şablon sınıfıdır. Kısmi özelleştirmede kısmen durumlarda, belirli türler için gibi özelleştirilmiş şablon kodunun sağlar:
+Sınıf şablonları kısmen uzmanlaşmış olabilir ve elde edilen sınıf hala bir şablondur. Kısmi özelleşme, şablon kodunun bazı durumlarda belirli türler için kısmen özelleştirilme olanağı sağlar; örneğin:
 
-- Bir şablonda birden çok ve özelleştirilmesi yalnızca bazıları gerekir. Sonuç, kalan türler parametreli bir şablonudur.
+- Şablonda birden çok tür vardır ve bunların yalnızca bazılarının özelleştirilmeleri gerekir. Sonuç, kalan türlerde parametreli bir şablondur.
 
-- Bir şablon için yalnızca bir tür olsa da, bir özelleştirmesi işaretçi, başvuru, işaretçi üye ya da işlev işaretçi türleri için gereklidir. Uzmanlık hala işaret veya başvuru türü üzerinde bir şablonudur.
+- Şablon yalnızca bir türe sahiptir, ancak işaretçi, başvuru, üye işaretçisi veya işlev işaretçisi türleri için bir özelleştirme gerekir. Özelleşmenin kendisi, işaret edilen veya başvurulan tür üzerinde hala bir şablondur.
 
 ## <a name="example"></a>Örnek
 
@@ -68,7 +68,7 @@ PTS<int S::*>::IsPointer == 0 PTS<int S::*>::IsPointerToDataMember == 1
 
 ## <a name="example"></a>Örnek
 
-Alan her türlü şablonu koleksiyon sınıfı varsa `T`, herhangi bir işaretçi türü alan kısmi özelleştirmede oluşturabilirsiniz `T*`. Aşağıdaki kodda bir koleksiyon sınıf şablonu gösterilmektedir `Bag` ve kısmi özelleştirmede, koleksiyon başvurusunu işaretçi türleri diziye kopyalamadan önce işaretçi türleri için. Ardından koleksiyonu olarak işaret ettiği değerleri depolar. Özgün şablonla, yalnızca işaretçiler kendilerini veri silinmesi veya değiştirilmesi karşı savunmasız bırakır koleksiyondaki depolanmış olması. Bu koleksiyonun özel işaretçi sürümünde bir null işaretçi olup olmadığını denetlemek için kod `add` yöntemi eklenir.
+Herhangi bir türü alan bir şablon koleksiyonu sınıfınız varsa `T` , herhangi bir işaretçi türü alan kısmi bir özelleştirme oluşturabilirsiniz `T*` . Aşağıdaki kod, bir koleksiyon sınıfı şablonunu `Bag` ve koleksiyonun, diziyi bir diziye kopyalamadan önce işaretçi türlerini referans aldığı işaretçi türleri için kısmi bir özelleşme gösterir. Daha sonra koleksiyon, işaret edilen değerleri depolar. Özgün şablon ile, yalnızca işaretçilerin kendisi, verilerin silinme veya değişiklik yapılmasına karşı savunmasız bırakılması halinde depolanır. Koleksiyonun bu özel işaretçi sürümünde, yöntemde null bir işaretçi denetlenecek kod `add` eklenir.
 
 ```cpp
 // partial_specialization_of_class_templates2.cpp
@@ -180,7 +180,7 @@ Null pointer!
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir şablon tanımlar. her iki tür çiftlerini alır ve ardından bu şablon sınıfının kısmi özelleştirmede tanımlayan sınıf özelleştirilmiş türlerinden biri olması **int**. Uzmanlık tamsayı alarak bir basit Kabarcık sıralama uygulayan bir ek sıralama yöntemi tanımlar.
+Aşağıdaki örnek, herhangi iki türden çiftleri alan bir şablon sınıfını tanımlar ve sonra türlerden birinin olması için bu şablon sınıfının özelleşmiş bir özelleştirmesi tanımlar **`int`** . Özelleşme, tamsayı temelinde basit bir kabarcık sıralaması uygulayan ek bir sıralama yöntemi tanımlar.
 
 ```cpp
 // partial_specialization_of_class_templates3.cpp

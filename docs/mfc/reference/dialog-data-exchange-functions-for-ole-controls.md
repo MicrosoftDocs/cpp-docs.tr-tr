@@ -18,37 +18,37 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-ms.openlocfilehash: 61a5983eec13902ed4b0e397e3befca4860977d4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b5a7263ae5cac81508ab2450a530132879ed45b2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365763"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222829"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 
-Bu konu, iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin veri üyesi bir OLE denetiminin özelliği arasında veri alışverişi için kullanılan DDX_OC işlevleri listeler.
+Bu konu başlığı altında, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir veri üyesi içindeki OLE denetiminin bir özelliği arasında veri alışverişi yapmak için kullanılan DDX_OC işlevleri listelenmektedir.
 
-### <a name="ddx_oc-functions"></a>DDX_OC Fonksiyonları
+### <a name="ddx_oc-functions"></a>DDX_OC Işlevleri
 
 |||
 |-|-|
-|[DDX_OCBool](#ddx_ocbool)|**BOOL** verilerinin Bir OLE denetiminin özelliği ile **BOOL** veri üyesi arasında aktarılmasını yönetir.|
-|[DDX_OCBoolRO](#ddx_ocboolro)|**BOOL** verilerinin bir OLE denetiminin salt okunur özelliği ile **BOOL** veri üyesi arasında aktarılmasını yönetir.|
-|[DDX_OCColor](#ddx_occolor)|**OLE** denetiminin özelliği ile **OLE_COLOR** veri üyesi arasında OLE_COLOR veri aktarımını yönetir.|
-|[DDX_OCColorRO](#ddx_occolorro)|OLE denetiminin salt okunur özelliği ile **OLE_COLOR** veri üyesi arasında **OLE_COLOR** veri aktarımını yönetir.|
-|[DDX_OCFloat](#ddx_ocfloat)|Bir OLE denetiminin özelliği ile **float** (veya **double)** veri üyesi arasında **float** (veya **çift)** veri aktarımı yönetir.|
-|[DDX_OCFloatRO](#ddx_ocfloatro)|Bir OLE denetiminin salt okunur özelliği ile **float** (veya **çift)** veri üyesi arasında **float** (veya **çift)** veri aktarımı yönetir.|
-|[DDX_OCInt](#ddx_ocint)|**Int** (veya **uzun)** verilerinin Bir OLE denetiminin özelliği ile bir **int** (veya **uzun)** veri üyesi arasında aktarılmasını yönetir.|
-|[DDX_OCIntRO](#ddx_ocintro)|**Int** (veya **uzun)** verilerinin Bir OLE denetiminin salt okunur özelliği ile **int** (veya **uzun)** veri üyesi arasında aktarılmasını yönetir.|
-|[DDX_OCShort](#ddx_ocshort)|**Kısa** veri aktarımını bir OLE denetiminin özelliği ile **kısa** bir veri üyesi arasında yönetir.|
-|[DDX_OCShortRO](#ddx_ocshortro)|**Kısa** veri aktarımını, bir OLE denetiminin salt okunur özelliği ile **kısa** bir veri üyesi arasında yönetir.|
-|[DDX_OCText](#ddx_octext)|**CString** verilerinin bir OLE denetiminin özelliği ile **CString** veri üyesi arasında aktarılmasını yönetir.|
-|[DDX_OCTextRO](#ddx_octextro)|**CString** verilerinin bir OLE denetiminin salt okunur özelliği ile **CString** veri üyesi arasında aktarılmasını yönetir.|
+|[DDX_OCBool](#ddx_ocbool)|Bir OLE denetiminin ve **bool** veri üyesinin bir özelliği arasında **bool** verilerinin aktarılmasını yönetir.|
+|[DDX_OCBoolRO](#ddx_ocboolro)|Bir OLE denetiminin salt okunurdur özelliği ve **bool** veri üyesi arasında **bool** verilerinin aktarılmasını yönetir.|
+|[DDX_OCColor](#ddx_occolor)|OLE denetiminin bir özelliği ve bir **OLE_COLOR** veri üyesi arasında **OLE_COLOR** verilerinin aktarımını yönetir.|
+|[DDX_OCColorRO](#ddx_occolorro)|Bir OLE denetiminin salt okunurdur özelliği ve bir **OLE_COLOR** veri üyesi arasında **OLE_COLOR** verilerinin aktarımını yönetir.|
+|[DDX_OCFloat](#ddx_ocfloat)|Bir **`float`** **`double`** OLE denetimi ve **`float`** (veya **`double`** ) veri üyesi özelliği arasındaki (veya) verilerin aktarımını yönetir.|
+|[DDX_OCFloatRO](#ddx_ocfloatro)|Bir **`float`** **`double`** OLE denetiminin ve **`float`** (veya) veri üyesinin salt okunurdur özelliği arasındaki (veya) verilerin aktarımını yönetir **`double`** .|
+|[DDX_OCInt](#ddx_ocint)|Bir **`int`** **`long`** OLE denetimi ve **`int`** (veya **`long`** ) veri üyesi özelliği arasındaki (veya) verilerin aktarımını yönetir.|
+|[DDX_OCIntRO](#ddx_ocintro)|**`int`** **`long`** Bir OLE denetiminin salt okunurdur özelliği ve **`int`** (veya) veri üyesi arasındaki (veya) verilerin aktarılmasını yönetir **`long`** .|
+|[DDX_OCShort](#ddx_ocshort)|**`short`** OLE denetiminin ve veri üyesinin bir özelliği arasında veri aktarımını yönetir **`short`** .|
+|[DDX_OCShortRO](#ddx_ocshortro)|**`short`** BIR OLE denetiminin ve bir veri üyesinin salt okunurdur özelliği arasında veri aktarımını yönetir **`short`** .|
+|[DDX_OCText](#ddx_octext)|OLE denetiminin ve **CString** veri üyesinin bir özelliği arasında **CString** verilerinin aktarımını yönetir.|
+|[DDX_OCTextRO](#ddx_octextro)|Bir OLE denetiminin salt okunurdur özelliği ve **CString** veri üyesi arasında **CString** verilerinin aktarımını yönetir.|
 
 ## <a name="ddx_ocbool"></a><a name="ddx_ocbool"></a>DDX_OCBool
 
-İşlev, `DDX_OCBool` bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **BOOL** veri üyesi bir OLE denetiminin özelliği arasında **BOOL** verilerinin aktarılmasını yönetir.
+`DDX_OCBool`İşlevi, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **bool** veri ÜYESI içindeki bir OLE denetimi özelliği arasında **bool** verilerinin aktarılmasını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCBool(
@@ -60,29 +60,29 @@ void AFXAPI DDX_OCBool(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi:** afxdisp.h
+  **Üstbilgi:** AfxDisp. h
 
 ## <a name="ddx_ocboolro"></a><a name="ddx_ocboolro"></a>DDX_OCBoolRO
 
-İşlev, `DDX_OCBoolRO` bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **BOOL** veri üyesi bir OLE denetiminin salt okunur özelliği arasında **BOOL** verilerinin aktarılmasını yönetir.
+`DDX_OCBoolRO`İşlevi, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **bool** veri ÜYESI içindeki bir OLE denetiminin salt okunurdur özelliği arasında **bool** verilerinin aktarılmasını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCBoolRO(
@@ -94,29 +94,29 @@ void AFXAPI DDX_OCBoolRO(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_occolor"></a><a name="ddx_occolor"></a>DDX_OCColor
 
-İşlev, `DDX_OCColor` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin OLE_COLOR bir veri üyesindeki bir OLE denetiminin özelliği arasında OLE_COLOR veri aktarımı yönetir.
+`DDX_OCColor`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir OLE_COLOR veri üyesi içindeki BIR OLE denetimi özelliği arasında OLE_COLOR verilerinin aktarılmasını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCColor(
@@ -128,29 +128,29 @@ void AFXAPI DDX_OCColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_occolorro"></a><a name="ddx_occolorro"></a>DDX_OCColorRO
 
-İşlev, `DDX_OCColorRO` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin OLE_COLOR veri üyesindeki bir OLE denetiminin salt okunur özelliği arasında OLE_COLOR veri aktarımını yönetir.
+`DDX_OCColorRO`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir OLE_COLOR veri üyesi içindeki BIR OLE denetiminin salt okunurdur özelliği arasında OLE_COLOR verilerinin aktarımını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCColorRO(
@@ -162,29 +162,29 @@ void AFXAPI DDX_OCColorRO(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_ocfloat"></a><a name="ddx_ocfloat"></a>DDX_OCFloat
 
-İşlev, `DDX_OCFloat` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **float** (veya **çift)** veri üyesindeki bir OLE denetiminin özelliği arasında **float** (veya **çift)** veri aktarımı yönetir.
+`DDX_OCFloat`İşlevi, **`float`** **`double`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`float`** **`double`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetimi özelliği arasında veri aktarımını (veya) yönetir.
 
 ```cpp
 void AFXAPI DDX_OCFloat(
@@ -202,29 +202,29 @@ void AFXAPI DDX_OCFloat(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_ocfloatro"></a><a name="ddx_ocfloatro"></a>DDX_OCFloatRO
 
-İşlev, `DDX_OCFloatRO` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **float** (veya **çift)** veri üyesinde bir OLE denetiminin salt okunur özelliği arasında **float** (veya **çift)** veri aktarımı yönetir.
+`DDX_OCFloatRO`İşlevi, **`float`** **`double`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`float`** **`double`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetiminin salt okunurdur özelliği arasında veri aktarımını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCFloatRO(
@@ -242,29 +242,29 @@ void AFXAPI DDX_OCFloatRO(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_ocint"></a><a name="ddx_ocint"></a>DDX_OCInt
 
-İşlev, `DDX_OCInt` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **int** (veya **uzun)** veri üyesindeki bir OLE denetiminin özelliği arasında **int** (veya **uzun)** verilerin aktarılmasını yönetir.
+`DDX_OCInt`İşlevi, **`int`** **`long`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`int`** **`long`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetimi özelliği arasında veri aktarımını (veya) yönetir.
 
 ```cpp
 void AFXAPI DDX_OCInt(
@@ -282,29 +282,29 @@ void AFXAPI DDX_OCInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_ocintro"></a><a name="ddx_ocintro"></a>DDX_OCIntRO
 
-İşlev, `DDX_OCIntRO` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **int** (veya **uzun)** veri üyesibir ole denetiminin salt okunur özelliği arasında **int** (veya **uzun)** verilerin aktarılmasını yönetir.
+`DDX_OCIntRO`İşlevi, **`int`** **`long`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`int`** **`long`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetiminin salt okunurdur özelliği arasında veri aktarımını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCIntRO(
@@ -322,29 +322,29 @@ void AFXAPI DDX_OCIntRO(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_ocshort"></a><a name="ddx_ocshort"></a>DDX_OCShort
 
-İşlev, `DDX_OCShort` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin kısa bir veri üyesindeki bir OLE denetiminin özelliği arasında kısa veri aktarımını yönetir.
+`DDX_OCShort`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin kısa veri üyesi içindeki BIR OLE denetimi özelliği arasında kısa verilerin aktarılmasını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCShort(
@@ -356,29 +356,29 @@ void AFXAPI DDX_OCShort(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_ocshortro"></a><a name="ddx_ocshortro"></a>DDX_OCShortRO
 
-İşlev, `DDX_OCShortRO` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin kısa bir veri üyesindeki bir OLE denetiminin salt okunur özelliği arasında kısa veri aktarımını yönetir.
+`DDX_OCShortRO`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin kısa bir veri üyesi olan BIR OLE denetiminin salt okunurdur özelliği arasında kısa verilerin aktarılmasını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCShortRO(
@@ -390,29 +390,29 @@ void AFXAPI DDX_OCShortRO(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_octext"></a><a name="ddx_octext"></a>DDX_OCText
 
-**DDX_OCText** işlevi, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **CString** veri üyesi bir OLE denetiminin özelliği arasında **CString** veri aktarımını yönetir.
+**DDX_OCText** işlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir **CString** VERI üyesi içindeki bir OLE denetimi özelliği arasında **CString** verilerinin aktarılmasını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCText(
@@ -424,29 +424,29 @@ void AFXAPI DDX_OCText(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-**CDataExchange** nesnesine işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+**CDataExchange** nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="ddx_octextro"></a><a name="ddx_octextro"></a>DDX_OCTextRO
 
-İşlev, `DDX_OCTextRO` iletişim kutusu, form görünümü veya denetim görünümü nesnesi ile iletişim kutusu, form görünümü `CString` veya denetim görünümü nesnesinin veri üyesindeki bir OLE denetiminin salt okunur özelliği arasındaki veri aktarımını `CString` yönetir.
+`DDX_OCTextRO`İşlevi `CString` bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve `CString` iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir veri ÜYESI olan bir OLE denetiminin salt okunurdur özelliği arasında veri aktarımını yönetir.
 
 ```cpp
 void AFXAPI DDX_OCTextRO(
@@ -458,26 +458,26 @@ void AFXAPI DDX_OCTextRO(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*nIDC*<br/>
-İletişim kutusundaki OLE denetiminin kimliği, form görünümü veya denetim görünümü nesnesi.
+*Nıdc*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki OLE denetiminin KIMLIĞI.
 
-*Dıspıd*<br/>
-Denetimin bir özelliğinin sevk kimliği.
+*dı*<br/>
+Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümü veya denetim görünümü nesnesinin bir üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDX hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

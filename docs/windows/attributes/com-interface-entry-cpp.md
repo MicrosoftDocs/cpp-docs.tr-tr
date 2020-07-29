@@ -1,23 +1,23 @@
 ---
-title: com_interface_entry (C++ com özniteliği)
+title: com_interface_entry (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.com_interface_entry
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: d7b378baedd3f8c2720c7ab17698e8b416304061
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 06df146ea47428ee782da7a93c2da7097e110324
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168310"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215354"
 ---
 # <a name="com_interface_entry-c"></a>com_interface_entry (C++)
 
 Hedef sınıfın COM eşlemesine bir arabirim girişi ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ com_interface_entry(
@@ -47,7 +47,7 @@ Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-pro
 
 **Com_interface_entry** özniteliğin ek kullanımları desteklenen tüm COM_INTERFACE_ENTRY türlerini kullanabilir.
 
-Bu kısıtlama gereklidir çünkü ATL, arabirim eşlemesindeki ilk girdiyi kimlik `IUnknown`olarak kullanıyor. Bu nedenle, giriş geçerli bir arabirim olmalıdır. Örneğin, arabirim eşlemesindeki ilk giriş gerçek bir COM arabirimi belirtmediğinden aşağıdaki kod örneği geçersizdir.
+Bu kısıtlama gereklidir çünkü ATL, arabirim eşlemesindeki ilk girdiyi kimlik olarak kullanır `IUnknown` ; Bu nedenle, giriş geçerli bir arabirim olmalıdır. Örneğin, arabirim eşlemesindeki ilk giriş gerçek bir COM arabirimi belirtmediğinden aşağıdaki kod örneği geçersizdir.
 
 ```cpp
 [ coclass, com_interface_entry =
@@ -60,7 +60,7 @@ Bu kısıtlama gereklidir çünkü ATL, arabirim eşlemesindeki ilk girdiyi kiml
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, `CMyBaseClass`mevcut COM arabirimi eşlemesine iki giriş ekler. Birincisi standart bir arabirimdir ve ikincisi `IDebugTest` arabirimini gizler.
+Aşağıdaki kod, mevcut COM arabirimi eşlemesine iki giriş ekler `CMyBaseClass` . Birincisi standart bir arabirimdir ve ikincisi `IDebugTest` arabirimi gizler.
 
 ```cpp
 // cpp_attr_ref_com_interface_entry.cpp
@@ -90,7 +90,7 @@ class CMyClass: public IMyClass, public IDebugTest
 };
 ```
 
-`CMyBaseClass` için elde edilen COM nesne eşlemesi aşağıdaki gibidir:
+İçin elde edilen COM nesne eşlemesi `CMyBaseClass` aşağıdaki gibidir:
 
 ```cpp
 BEGIN_COM_MAP(CMyClass)
@@ -109,15 +109,15 @@ END_COM_MAP()
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Yes|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM Öznitelikleri](com-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)
+[COM öznitelikleri](com-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)

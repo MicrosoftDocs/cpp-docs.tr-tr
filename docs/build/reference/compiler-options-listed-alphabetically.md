@@ -4,12 +4,12 @@ description: Microsoft C/C++ derleyicisi komut satırı seçeneklerinin alfabeti
 ms.date: 07/08/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 41a2f6617e879a00101205f3505e70831f9efd50
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: 46c6f7009c840c83db2f945de2e504f08172fca2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180935"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223895"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik listelenmiş derleyici seçenekleri
 
@@ -59,7 +59,7 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/FU`](fu-name-forced-hash-using-file.md) | Bir dosya adının, yönergesine geçirilmiş gibi kullanılmasını zorlar [`#using`](../../preprocessor/hash-using-directive-cpp.md) . |
 | [`/Fx`](fx-merge-injected-code.md) | Eklenen kodu kaynak dosyayla birleştirir. |
 | [`/GA`](ga-optimize-for-windows-application.md) | Windows uygulaması için kodu iyileştirir. |
-| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | `__cdecl`Çağırma kuralını kullanır (yalnızca x86). |
+| [`/Gd`](gd-gr-gv-gz-calling-convention.md) | **`__cdecl`** Çağırma kuralını kullanır (yalnızca x86). |
 | [`/Ge`](ge-enable-stack-probes.md) | Kullanım dışı. Yığın araştırmalarını etkinleştirir. |
 | [`/GF`](gf-eliminate-duplicate-strings.md) | Dize havuzunu izin vermez. |
 | [`/GH`](gh-enable-pexit-hook-function.md) | Kanca işlevini çağırır `_pexit` . |
@@ -67,24 +67,24 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/GL`](gl-whole-program-optimization.md) | Tüm program iyileştirmesini mümkün hale getirme. |
 | [`/Gm`](gm-enable-minimal-rebuild.md) | Kullanım dışı. En az yeniden derlemeyi mümkün. |
 | [`/GR`](gr-enable-run-time-type-information.md) | Çalışma zamanı tür bilgilerini (RTTı) etkinleştir. |
-| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | `__fastcall`Çağırma kuralını kullanır (yalnızca x86). |
+| [`/Gr`](gd-gr-gv-gz-calling-convention.md) | **`__fastcall`** Çağırma kuralını kullanır (yalnızca x86). |
 | [`/GS`](gs-buffer-security-check.md) | Güvenlik denetimini arabelleğe alır. |
 | [`/Gs`](gs-control-stack-checking-calls.md) | Yığın araştırmalarını denetler. |
 | [`/GT`](gt-support-fiber-safe-thread-local-storage.md) | Statik iş parçacığı yerel depolama kullanılarak ayrılan veri için fiber güvenliğini destekler. |
 | [`/guard:cf`](guard-enable-control-flow-guard.md) | Denetim akışı koruyucusu güvenlik denetimleri ekler. |
 | [`/guard:ehcont`](guard-enable-eh-continuation-metadata.md) | EH devamlılık meta verilerini etkinleştirilir. |
-| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | `__vectorcall`Çağırma kuralını kullanır. (yalnızca x86 ve x64) |
+| [`/Gv`](gd-gr-gv-gz-calling-convention.md) | **`__vectorcall`** Çağırma kuralını kullanır. (yalnızca x86 ve x64) |
 | [`/Gw`](gw-optimize-global-data.md) | Tam program genel veri iyileştirmesini mümkün hale getirme. |
 | [`/GX`](gx-enable-exception-handling.md) | Kullanım dışı. Zaman uyumlu özel durum işlemeyi mümkün. [`/EH`](eh-exception-handling-model.md)Bunun yerine kullanın. |
 | [`/Gy`](gy-enable-function-level-linking.md) | İşlev düzeyinde bağlamayı mümkün. |
 | [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) | Kullanım dışı. Aynı [`/RTC1`](rtc-run-time-error-checks.md) . |
-| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | `__stdcall`Çağırma kuralını kullanır (yalnızca x86). |
+| [`/Gz`](gd-gr-gv-gz-calling-convention.md) | **`__stdcall`** Çağırma kuralını kullanır (yalnızca x86). |
 | [`/H`](h-restrict-length-of-external-names.md) | Kullanım dışı. Dış (ortak) adların uzunluğunu kısıtlar. |
 | [`/HELP`](help-compiler-command-line-help.md) | Derleyici seçeneklerini listeler. |
 | [`/homeparams`](homeparams-copy-register-parameters-to-stack.md) | , Yazmaçlarda geçirilen parametreleri işlev girişi üzerine yığındaki konumlarına yazılacak şekilde zorlar. Bu derleyici seçeneği yalnızca x64 derleyicileri için geçerlidir (yerel ve çapraz derleme). |
 | [`/hotpatch`](hotpatch-create-hotpatchable-image.md) | Hot-patchable bir görüntü oluşturur. |
 | [`/I`](i-additional-include-directories.md) | İçerme dosyaları için bir dizin arar. |
-| [`/J`](j-default-char-type-is-unsigned.md) | Varsayılan türü değiştirir `char` . |
+| [`/J`](j-default-char-type-is-unsigned.md) | Varsayılan türü değiştirir **`char`** . |
 | [`/JMC`](jmc.md) | Yerel C++ Yalnızca kendi kodum hata ayıklamayı destekler. |
 | [`/kernel`](kernel-create-kernel-mode-binary.md) | Derleyici ve bağlayıcı, Windows çekirdeğinde yürütülebilecek bir ikili oluşturacak. |
 | [`/LD`](md-mt-ld-use-run-time-library.md) | Dinamik bağlantı kitaplığı oluşturur. |
@@ -112,7 +112,7 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/permissive-`](permissive-standards-conformance.md) | Standart uyumluluk modunu ayarlayın. |
 | [`/Qfast_transcendentals`](qfast-transcendentals-force-fast-transcendentals.md) | Hızlı bir şekilde daha fazla işlem oluşturur. |
 | [`/QIfist`](qifist-suppress-ftol.md) | Kullanım dışı. `_ftol`Bir kayan nokta türünden integral türüne dönüştürmenin gerekli olduğu durumlarda (yalnızca x86) bastırır. |
-| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | `fwait`Bloklar içindeki komutları kaldırır `try` . |
+| [`/Qimprecise_fwaits`](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md) | `fwait`Bloklar içindeki komutları kaldırır **`try`** . |
 | [`/QIntel-jcc-erratum`](qintel-jcc-erratum.md) | Intel JCC ermıtum mikro kod güncelleştirmesinin performans etkisini azaltır. |
 | [/Qpar (otomatik paralel hale getirici)](qpar-auto-parallelizer.md) | [#Pragma loop ()](../../preprocessor/loop.md) yönergesiyle işaretlenen döngülerin otomatik paralelleştirilmesini mümkün hale getirme. |
 | [`/Qsafe_fp_loads`](qsafe-fp-loads.md) | Kayan nokta değerleri için tamsayı taşıma yönergelerini kullanır ve belirli kayan nokta yükleme iyileştirmelerini devre dışı bırakır. |

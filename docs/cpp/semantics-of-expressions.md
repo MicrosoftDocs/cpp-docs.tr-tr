@@ -7,16 +7,16 @@ helpviewer_keywords:
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-ms.openlocfilehash: 5213fc7972f3a2590ceac5038a7b5e07495df594
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 43bcd98e0dbf14dada2643c0b731d3f6bae863e6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178855"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223609"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 
-İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ( [Sözcük temelli kurallar](../cpp/lexical-conventions.md)Içindeki C++ [Işleç önceliği ve ilişkilendirilebilirliği](../cpp/cpp-built-in-operators-precedence-and-associativity.md) , işleçlerin ifadeler üzerinde getirme ilişkilerini gösterir.)
+İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ( [Sözcük temelli kurallar](../cpp/lexical-conventions.md)Içindeki[Işleç önceliği ve Ilişkilendirilebilirliği](../cpp/cpp-built-in-operators-precedence-and-associativity.md) , C++ işleçlerinin ifadelerde uygulayan ilişkileri gösterir.)
 
 ## <a name="order-of-evaluation"></a>Değerlendirme sırası
 
@@ -52,7 +52,7 @@ Yukarıdaki şekilde gösterilen ifadenin değerlendirilme sırası, işleçleri
 
 1. Toplama (+), sıradaki en yüksek önceliğe sahiptir, dolayısıyla `a` ve `b` ürününe `c` eklenir.
 
-1. Sol SHIFT (< <) ifadede en düşük önceliğe sahiptir, ancak iki oluşum vardır. Sola kaydırma işleci soldan sağa doğru gruplama yaptığından, ilk önce sol alt ifade, ardından sağdaki değerlendirilir.
+1. Sol SHIFT (<<) ifadede en düşük önceliğe sahiptir, ancak iki oluşum vardır. Sola kaydırma işleci soldan sağa doğru gruplama yaptığından, ilk önce sol alt ifade, ardından sağdaki değerlendirilir.
 
 Alt ifadeleri gruplamak için parantez kullanıldığında, aşağıdaki şekilde gösterildiği gibi önceliği ve ayrıca ifadenin değerlendirilme sırasını değiştirir.
 
@@ -63,22 +63,22 @@ Yukarıdaki şekildeki gibi ifadeler yalnızca yan etkileri için (bu örnekte b
 
 ## <a name="notation-in-expressions"></a>İfadelerdeki gösterim
 
-Dil C++ , işlenenleri belirtirken belirli uyumluluk belirler. Aşağıdaki tabloda *, türünde işlenenler*gerektiren işleçlerde kabul edilebilir işlenen türleri gösterilmektedir.
+C++ dili, işlenenleri belirtirken belirli uyumluluk belirtir. Aşağıdaki tabloda *, türünde işlenenler*gerektiren işleçlerde kabul edilebilir işlenen türleri gösterilmektedir.
 
 ### <a name="operand-types-acceptable-to-operators"></a>İşleç için kabul edilebilir işlenen türleri
 
 |Tür bekleniyor|İzin verilen türler|
 |-------------------|-------------------|
-|*type*|`const` *türü*<br /> `volatile` *türü*<br /> *tür*&<br /> `const` *türü*&<br /> `volatile` *türü*&<br /> `volatile const` *türü*<br /> `volatile const` *türü*&|
-|*tür* \*|*tür* \*<br /> `const` *türü* \*<br /> `volatile` *türü* \*<br /> `volatile const` *türü* \*|
-|`const` *türü*|*type*<br /> `const` *türü*<br />`const` *türü*&|
-|`volatile` *türü*|*type*<br /> `volatile` *türü*<br /> `volatile` *türü*&|
+|*türüyle*|**`const`***tür*<br /> **`volatile`***tür*<br /> *türüyle*&<br /> **`const`***tür*&<br /> **`volatile`***tür*&<br /> `volatile const`*tür*<br /> `volatile const`*tür*&|
+|*tür*\*|*tür*\*<br /> **`const`***tür*\*<br /> **`volatile`***tür*\*<br /> `volatile const`*tür*\*|
+|**`const`***tür*|*türüyle*<br /> **`const`***tür*<br />**`const`***tür*&|
+|**`volatile`***tür*|*türüyle*<br /> **`volatile`***tür*<br /> **`volatile`***tür*&|
 
 Yukarıdaki kurallar her zaman birleşimde kullanılabilir olduğundan, bir işaretçi beklendiğinde geçici bir nesneye bir const işaretçisi sağlanabilir.
 
 ## <a name="ambiguous-expressions"></a>Belirsiz ifadeler
 
-Belirli ifadeler anlamlarına göre belirsizdir. Bir nesnenin değeri aynı ifadede birden çok kez değiştirildiğinde, bu ifadeler en sık meydana gelir. Bu ifadeler, dilin bir tane tanımlamayan belirli bir değerlendirme sırasına bağımlıdır. Aşağıdaki örnek göz önünde bulundurun:
+Belirli ifadeler anlamlarına göre belirsizdir. Bir nesnenin değeri aynı ifadede birden çok kez değiştirildiğinde, bu ifadeler en sık meydana gelir. Bu ifadeler, dilin bir tane tanımlamayan belirli bir değerlendirme sırasına bağımlıdır. Aşağıdaki örneği inceleyin:
 
 ```
 int i = 7;
@@ -86,15 +86,15 @@ int i = 7;
 func( i, ++i );
 ```
 
-Dil C++ , bir işlev çağrısının bağımsız değişkenlerinin değerlendirilme sırasını garanti etmez. Bu nedenle, önceki örnekte, parametrelerin soldan sağa mı yoksa sağdan sola mi değerlendirilediğine bağlı olarak, `func` için 7 ve 8 veya 8 ve 8 değerlerini alabilir.
+C++ dili, bir işlev çağrısının bağımsız değişkenlerinin değerlendirilme sırasını garanti etmez. Bu nedenle, önceki örnekte, `func` parametrelerin soldan sağa mı yoksa sağdan sola mı değerlendirildiğine bağlı olarak, parametreleri için 7 ve 8 veya 8 ve 8 değerlerini alabilir.
 
-## <a name="c-sequence-points-microsoft-specific"></a>C++sıra noktaları (Microsoft 'a özgü)
+## <a name="c-sequence-points-microsoft-specific"></a>C++ sıra noktaları (Microsoft 'a özgü)
 
 Bir ifade, bir nesnenin değerini ardışık "dizi noktaları" arasında yalnızca bir kez değiştirebilir.
 
 C++ dili tanımı şu anda dizi noktaları belirtmemektedir. Microsoft C++, C işleçleri içeren ve aşırı yüklenmiş işleçler içermeyen tüm ifadeler için ANSI C ile aynı dizi noktalarını kullanır. İşleçler aşırı yüklendiğinde, semantikler işleç sıralamasından işlev çağrısı sıralamasına dönüşür. Microsoft C++ aşağıdaki dizi noktalarını kullanır:
 
-- Mantıksal AND işlecinin sol işleneni (& &). Mantıksal AND işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal AND işlecinin sağ işleneninin değerlendirileceği kesin değildir.
+- Mantıksal AND işlecinin sol işleneni (&&). Mantıksal AND işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal AND işlecinin sağ işleneninin değerlendirileceği kesin değildir.
 
 - Mantıksal OR işlecinin sol işleneni (&#124;&#124;). Mantıksal OR işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal OR işlecinin sağ işleneninin değerlendirileceği kesin değildir.
 

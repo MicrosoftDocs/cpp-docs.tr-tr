@@ -36,18 +36,18 @@ helpviewer_keywords:
 - std::ctype [C++], toupper
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
-ms.openlocfilehash: dae6f62a0eda9263986a77b82754596d17be94e5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a0e3aad99c335f1a907189ee84e55a38e41b62e1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373161"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222517"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 
 Büyük küçük harflerden ve yerel karakter kümesiyle yerel ayar tarafından kullanılan küme arasında dönüştürme yapan, karakterleri sınıflandırmak için kullanılan model sağlayan bir sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class CharType>
@@ -56,65 +56,65 @@ class ctype : public ctype_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*Chartype*\
+*CharType*\
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için ilk girişim benzersiz `id`bir pozitif değer depolar. Sınıflandırma ölçütü temel sınıf ctype_base içindeki bir iç içe bit maskesi türünde sağlanır.
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim, içinde benzersiz bir pozitif değer depolar `id` . Sınıflandırma ölçütü temel sınıf ctype_base içindeki bir iç içe bit maskesi türünde sağlanır.
 
-C++ Standart Kitaplığı, bu sınıf şablonunun iki açık uzmanlık özelliğini tanımlar:
+C++ standart kitaplığı, bu sınıf şablonunun iki açık uzmanlığını tanımlar:
 
-- `ctype<char>`, farklılıkları ayrı ayrı açıklanan açık bir uzmanlık. Daha fazla bilgi için [ctype&lt;char&gt; Class'a](../standard-library/ctype-char-class.md)bakın.
+- `ctype<char>`, farkları ayrı olarak açıklanan açık bir özelleşme. Daha fazla bilgi için bkz. [CType &lt; char &gt; sınıfı](../standard-library/ctype-char-class.md).
 
-- `ctype<wchar_t>`, öğeleri geniş karakterler olarak ele alan.
+- `ctype<wchar_t>`öğeleri geniş karakter olarak ele alır.
 
-Sınıf şablonunun `ctype<CharType>`diğer uzmanlıkları:
+Sınıf şablonunun diğer özelleştirilmiş oluşturmaları `ctype<CharType>` :
 
-- *CharType* *türünde* bir ch değerini ifade **char** `(char)ch`yle char türüne dönüştürün.
+- *CharType* türündeki *bir değeri* , ifadesi ile türünde bir değere dönüştürür **`char`** `(char)ch` .
 
-- Bir değer *bayt* türü **char** ifadesini *chartype* türünde `CharType(byte)`bir değere dönüştürün.
+- Türü bir değer *baytı* **`char`** , ifadesiyle *CharType* türünde bir değere dönüştürür `CharType(byte)` .
 
-Diğer tüm **işlemler, açık** uzmanlık `ctype<char>`için olduğu gibi char değerleri üzerinde gerçekleştirilir.
+Diğer tüm işlemler, **`char`** Açık özelleştirme için aynı şekilde değerler üzerinde gerçekleştirilir `ctype<char>` .
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Ctype](#ctype)|Karakterler için yerel yisimler olarak hizmet veren sınıf `ctype` nesneleri için oluşturucu.|
+|[CType](#ctype)|`ctype`Karakterlerin yerel ayar modelleri olarak sunan sınıfının nesneleri için Oluşturucu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[Char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlayan tür.|
+|[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlayan tür.|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
 |[do_is](#do_is)|Tek bir karakterin belirli bir özniteliği olup olmadığını sınamak veya bir aralıktaki her bir karakter özniteliğini sınıflandırmak ve bunları bir dizide saklamak için çağrılan bir sanal işlev.|
-|[do_narrow](#do_narrow)|Bir yerel ayar tarafından kullanılan `CharType` tür karakterini yerel karakter kümesindeki **char** türüne karşılık gelen karaktere dönüştürmek için çağrılan sanal işlev.|
+|[do_narrow](#do_narrow)|Yerel `CharType` karakter kümesindeki türü karşılık gelen bir yerel ayar tarafından kullanılan türdeki bir karakteri dönüştürmek için çağrılan bir sanal işlev **`char`** .|
 |[do_scan_is](#do_scan_is)|Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulmak için çağrılan sanal bir işlev.|
 |[do_scan_not](#do_scan_not)|Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulmak için çağrılan sanal bir işlev.|
 |[do_tolower](#do_tolower)|Bir karakteri ya da karakter aralığını kendi küçük harflerine dönüştürmek için çağrılan bir sanal işlev.|
 |[do_toupper](#do_toupper)|Bir karakteri ya da karakter aralığını kendi büyük harflerine dönüştürmek için çağrılan bir sanal işlev.|
-|[do_widen](#do_widen)|Yerel karakter kümesindeki **char** türündeki bir karakteri, yerel bir yerel `CharType` ayar tarafından kullanılan türün ilgili karakterine dönüştürmek için çağrılan sanal bir işlev.|
-|[is](#is)|Tek bir karakterin belirli bir özniteliği olup olmadığını sınar veya bir aralıktaki her bir karakter özniteliğini sınıflandırır ve bunları bir dizide saklar.|
-|[Dar](#narrow)|Bir yerel ayar `CharType` tarafından kullanılan tür karakterini, yerel karakter kümesindeki char türüne karşılık gelen karaktere dönüştürür.|
+|[do_widen](#do_widen)|Yerel karakter kümesindeki türü bir karakteri yerel **`char`** ayar tarafından kullanılan türden karşılık gelen karaktere dönüştüren bir sanal işlev `CharType` .|
+|[eklenir](#is)|Tek bir karakterin belirli bir özniteliği olup olmadığını sınar veya bir aralıktaki her bir karakter özniteliğini sınıflandırır ve bunları bir dizide saklar.|
+|[narrow](#narrow)|`CharType`Bir yerel ayar tarafından kullanılan bir karakteri yerel karakter kümesindeki char türünde karşılık gelen karaktere dönüştürür.|
 |[scan_is](#scan_is)|Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulur.|
 |[scan_not](#scan_not)|Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulur.|
-|[Tolower](#tolower)|Bir karakteri ya da karakter aralığını küçük harflere dönüştürür.|
-|[Toupper](#toupper)|Bir karakteri ya da karakter aralığını büyük harflere dönüştürür.|
-|[Genişlet -mek](#widen)|Yerel karakter kümesindeki **char** türündeki bir karakteri, yerel `CharType` bir yerel ayar tarafından kullanılan türün ilgili karakterine dönüştürür.|
+|[ToLower](#tolower)|Bir karakteri ya da karakter aralığını küçük harflere dönüştürür.|
+|[ToUpper](#toupper)|Bir karakteri ya da karakter aralığını büyük harflere dönüştürür.|
+|[Genişlet](#widen)|**`char`** Yerel karakter kümesindeki türü bir karakteri `CharType` yerel ayar tarafından kullanılan türdeki karşılık gelen karaktere dönüştürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<yerel>
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
-## <a name="ctypechar_type"></a><a name="char_type"></a>ctype::char_type
+## <a name="ctypechar_type"></a><a name="char_type"></a>CType:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlayan tür.
 
@@ -124,15 +124,15 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *CharType*ile eş anlamlıdır.
+Tür, *CharType*şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
-İade değeri olarak kullanan `char_type` bir örnek için üye [işlevinin genişletilmesine](#widen) bakın.
+Dönüş değeri olarak kullanılan bir [örnek için bkz](#widen) . üye işlevi `char_type` .
 
-## <a name="ctypectype"></a><a name="ctype"></a>ctype::ctype
+## <a name="ctypectype"></a><a name="ctype"></a>CType:: CType
 
-Karakterler için yerel fatlar olarak hizmet veren sınıf ctype nesneleri için oluşturucu.
+Karakterlerin yerel ayar modelleri olarak sunan CType sınıfının nesneleri için Oluşturucu.
 
 ```cpp
 explicit ctype(size_t _Refs = 0);
@@ -140,24 +140,24 @@ explicit ctype(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_refs*\
-Nesneiçin bellek yönetimi türünü belirtmek için kullanılan eden arameger değeri.
+*_Refs*\
+Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Refs* parametresi için olası değerler ve önemi şunlardır:
+*_Refs* parametresi için olası değerler ve bunların önemi şunlardır:
 
-- 0: Nesnenin ömrü, onu içeren yerel nesneler tarafından yönetilir.
+- 0: nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
 
-- 1: Nesnenin ömrü el ile yönetilmelidir.
+- 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değildir.
+- \>1: Bu değerler tanımlı değil.
 
-Yıkıcı korunduğundan, doğrudan örnek yoktur.
+Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
-Kurucu, temel nesnesini `locale::facet` yerel olarak başlaşır:: **locale::**[fason](../standard-library/locale-class.md#facet_class)( ). `_Refs`
+Oluşturucu kendi `locale::facet` temel nesnesini **locale::**[model](../standard-library/locale-class.md#facet_class)() ile başlatır `_Refs` .
 
-## <a name="ctypedo_is"></a><a name="do_is"></a>ctype::do_is
+## <a name="ctypedo_is"></a><a name="do_is"></a>CType::d o_is
 
 Tek bir karakterin belirli bir özniteliği olup olmadığını sınamak veya bir aralıktaki her bir karakter özniteliğini sınıflandırmak ve bunları bir dizide saklamak için çağrılan bir sanal işlev.
 
@@ -175,37 +175,37 @@ virtual const CharType *do_is(
 ### <a name="parameters"></a>Parametreler
 
 *maskVal*\
-Karakterin test edilen maske değeri.
+Karakterin test edileceği maske değeri.
 
-*Caner*\
-Öznitelikleri test edilecek karakter.
+*denetleyebilirsiniz*\
+Öznitelikleri sınanacak olan karakter.
 
-*Ilk*\
-Öznitelikleri sınıflandırılacak olan aralıktaki ilk karaktere işaretçi.
+*adı*\
+İçindeki öznitelikleri sınıflandırılacak olan aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Öznitelikleri sınıflandırılacak olan aralıktaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Öznitelikleri sınıflandırılacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
-*Dest*\
-Her karakterin özniteliklerini karakterize eden maske değerlerinin depolandığı dizinin başlangıcına işaretçi.
+*HD*\
+Maske değerlerinin her bir karakterin özniteliklerini karakterize olarak niteleyen dizinin başlangıcına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlev, test edilen karakter maske değeri tarafından açıklanan özniteliğe sahipse **doğru** olan bir Boolean değeri döndürür; özniteliği yoksa **false.**
+İlk üye işlevi, **`true`** test edilen karakterin maske değeri tarafından tanımlanan özniteliği varsa, özniteliğe sahip olup olmadığını belirten bir Boole değeri döndürür **`false`** .
 
-İkinci üye işlev, aralıktaki her karakterin özniteliklerini karakterize eden maske değerlerini içeren bir dizi döndürür.
+İkinci üye işlevi, aralıktaki her bir karakterin özniteliklerini karakterize eden maske değerlerini içeren bir dizi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karakterlerin özniteliklerini sınıflandıran maske değerleri, ctype'ın türetildiği [sınıf ctype_base](../standard-library/ctype-base-class.md)tarafından sağlanır. İlk üye işlev bitmasks olarak adlandırılan ve mantıksal bitwise işleçleri (&#124; , & , ^ , ~) tarafından maske değerlerinin kombinasyonu oluşan ilk parametresi için ifadeleri kabul edebilir.
+Karakterlerin özniteliklerini sınıflandırın maske değerleri, CType 'ın türettiği [ctype_base](../standard-library/ctype-base-class.md)sınıf tarafından sağlanır. İlk üye işlevi, bit maskeleri olarak adlandırılan ilk parametresi için ifadeleri kabul edebilir ve mantıksal bit düzeyinde işleçlere (&#124;, &, ^, ~) göre maske değerlerinin birleşiminden oluşturulur.
 
 ### <a name="example"></a>Örnek
 
-[Bkz.](#is)örneğin , hangi `do_is`çağırır .
+Çağrısı [için bkz](#is) `do_is` ..
 
-## <a name="ctypedo_narrow"></a><a name="do_narrow"></a>ctype::do_dar
+## <a name="ctypedo_narrow"></a><a name="do_narrow"></a>CType::d o_narrow
 
-Bir yerel ayar tarafından kullanılan `CharType` tür karakterini yerel karakter kümesindeki **char** türüne karşılık gelen karaktere dönüştürmek için çağrılan sanal işlev.
+Yerel `CharType` karakter kümesindeki türü karşılık gelen bir yerel ayar tarafından kullanılan türdeki bir karakteri dönüştürmek için çağrılan bir sanal işlev **`char`** .
 
 ```cpp
 virtual char do_narrow(
@@ -221,36 +221,36 @@ virtual const CharType* do_narrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Dönüştürülmek üzere `Chartype` yerel olarak kullanılan tür karakteri.
+*denetleyebilirsiniz*\
+`Chartype`Dönüştürülecek yerel ayar tarafından kullanılan türün karakteri.
 
-*Varsayılan*\
-Üye işlev tarafından, **char**türünde karşıt `CharType` karakterleri olmayan tür deki karakterlere atanacak varsayılan değer.
+*varsayılanını*\
+Üye işlevi tarafından, türünde `CharType` karşılık gelen karakterlere sahip olmayan karakterlerin karakterlerine atanacak varsayılan değer **`char`** .
 
-*Ilk*\
-Dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*Dest*\
-Dönüştürülmüş karakter aralığını depolayan hedef aralığındaki ilk karakter **eki char'a** bir const işaretçisi.
+*HD*\
+**`char`** Hedef aralıktaki, dönüştürülmüş karakter aralığını depolayan ilk karaktere yönelik const işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk korumalı üye işlevi, karşıt tanımlanmamışsa, tür `CharType` veya *varsayılan* parametre karakterine karşılık gelen tür char'ın yerel karakterini döndürür.
+İlk korumalı üye işlevi char türünde parametre karakterine karşılık gelen yerel karakteri `CharType` veya hiçbir karşılık tanımlanmamışsa, *varsayılan* değerini döndürür.
 
-İkinci korumalı üye işlevi, bir işaretçiyi türdeki `CharType`karakterlerden dönüştürülen yerel karakterlerin hedef aralığına döndürür.
+İkinci korumalı üye işlevi, türündeki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçi döndürür `CharType` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablon `dest` `I`işlevi [ `do_narrow` `first` ] `I`aralığında `default`[ `I` [ ], `last`  -  `first`) değeri depolar .
+İkinci korumalı üye şablonu işlevi [] içinde `dest` [ `I` ] `do_narrow` ( `first` [ `I` ],) değerini `default` `I` [0,) aralığında depolar `last`  -  `first` .
 
 ### <a name="example"></a>Örnek
 
-Dar [için](#narrow)örneğe bakın `do_narrow`, hangi çağırır .
+' İ çağıran [daraltma](#narrow)örneğine bakın `do_narrow` .
 
-## <a name="ctypedo_scan_is"></a><a name="do_scan_is"></a>ctype::do_scan_is
+## <a name="ctypedo_scan_is"></a><a name="do_scan_is"></a>CType::d o_scan_is
 
 Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulmak için çağrılan sanal bir işlev.
 
@@ -264,27 +264,27 @@ virtual const CharType *do_scan_is(
 ### <a name="parameters"></a>Parametreler
 
 *maskVal*\
-Bir karakterle eşleşecek maske değeri.
+Bir karakterle eşleştirilecek maske değeri.
 
-*Ilk*\
-Aralıktaki ilk karakterin taranacak bir işaretçisi.
+*adı*\
+Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Taranacak aralıktaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir maskeyle eşleşen bir aralıktaki ilk karaktere işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
+Belirli bir maskeyle eşleşen bir aralıktaki ilk karaktere yönelik bir işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, [do_is](#do_is)( `maskVal` \* `ptr`, `first` `last`) doğru olduğu aralıktaki en küçük işaretçiyi `ptr` [ , ) döndürür.
+Korumalı üye işlevi, `ptr` `first` `last` [do_is](#do_is)( `maskVal` , \* `ptr` ) değeri için [,) aralığında en küçük işaretçiyi döndürür.
 
 ### <a name="example"></a>Örnek
 
-[scan_is](#scan_is)için örnek bakın `do_scan_is`, hangi çağırır .
+Çağıran [scan_is](#scan_is)için örneğe bakın `do_scan_is` .
 
-## <a name="ctypedo_scan_not"></a><a name="do_scan_not"></a>ctype::do_scan_not
+## <a name="ctypedo_scan_not"></a><a name="do_scan_not"></a>CType::d o_scan_not
 
 Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulmak için çağrılan sanal bir işlev.
 
@@ -298,29 +298,29 @@ virtual const CharType *do_scan_not(
 ### <a name="parameters"></a>Parametreler
 
 *maskVal*\
-Maske değeri bir karakterle eşleşmez.
+Maske değeri bir karakterle eşleştirilemez.
 
-*Ilk*\
-Aralıktaki ilk karakterin taranacak bir işaretçisi.
+*adı*\
+Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Taranacak aralıktaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir maskeyle eşleşmeyen bir aralıktaki ilk karaktere işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
+Belirli bir maskeyle eşleşmeyen bir aralıktaki ilk karaktere yönelik bir işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, [do_is](#do_is)( `maskVal` \* `ptr`, `first` `last`) yanlış olduğu aralıktaki en küçük işaretçiyi `ptr` [ , ) döndürür.
+Protected member işlevi, `ptr` `first` `last` [do_is](#do_is)( `maskVal` , \* `ptr` ) false olan [,) aralığında en küçük işaretçiyi döndürür.
 
 ### <a name="example"></a>Örnek
 
-[scan_not](#scan_not)için örnek bakın `do_scan_not`, hangi çağırır .
+Çağıran [scan_not](#scan_not)için örneğe bakın `do_scan_not` .
 
-## <a name="ctypedo_tolower"></a><a name="do_tolower"></a>ctype::do_tolower
+## <a name="ctypedo_tolower"></a><a name="do_tolower"></a>CType::d o_tolower
 
-Bir karakteri veya karakter aralığını küçük harfe dönüştürmek için çağrılan sanal bir işlev.
+Bir karakteri ya da karakter aralığını küçük harfe dönüştürmek için çağrılan bir sanal işlev.
 
 ```cpp
 virtual CharType do_tolower(CharType ch) const;
@@ -332,28 +332,28 @@ virtual const CharType *do_tolower(
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Küçük harfe dönüştürülecek karakter.
+*denetleyebilirsiniz*\
+Küçük harfe Dönüştürülecek karakter.
 
-*Ilk*\
-Servis talepleri dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Servis talepleri dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk korumalı üye işlevi *parametre ch*küçük formu döndürür. Küçük bir form yoksa, *ch*döndürür. İkinci korumalı üye işlevi *son*döndürür.
+İlk korumalı üye işlevi, *ch*parametresinin küçük harfli biçimini döndürür. Küçük harfli bir form yoksa *ch*döndürür. İkinci korumalı üye işlevi *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablon işlevi `first` `I`her öğenin yerine [ `last`  -  `first`], `do_tolower` `I` `first` [0, ) ile ( [ []) `I`aralığında.
+İkinci korumalı üye şablonu işlevi, `first` `I` [0,) aralığındaki [] öğelerinin her bir [] öğesini `I` `last`  -  `first` `do_tolower` ( `first` [ `I` ]) ile değiştirir.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [tolower](#tolower)için örnek `do_tolower`, hangi çağırır .
+Öğesini çağıran, [ToLower](#tolower)örneğine bakın `do_tolower` .
 
-## <a name="ctypedo_toupper"></a><a name="do_toupper"></a>ctype::do_toupper
+## <a name="ctypedo_toupper"></a><a name="do_toupper"></a>CType::d o_toupper
 
 Bir karakteri ya da karakter aralığını kendi büyük harflerine dönüştürmek için çağrılan bir sanal işlev.
 
@@ -367,30 +367,30 @@ virtual const CharType *do_toupper(
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Büyük harfe dönüştürülecek karakter.
+*denetleyebilirsiniz*\
+Büyük harfe Dönüştürülecek karakter.
 
-*Ilk*\
-Servis talepleri dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Servis talepleri dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karakter işaretçisi.
+*soyadına*\
+Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karakter işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk korunan üye işlevi *parametre ch*büyük harf formunu döndürür. Büyük harf formu yoksa, *ch*döndürür. İkinci korumalı üye işlevi *son*döndürür.
+İlk korumalı üye işlevi, *ch*parametresinin büyük harfli biçimini döndürür. Büyük harfli form yoksa *ch*döndürür. İkinci korumalı üye işlevi *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablon işlevi `first` `I`her öğenin yerine [ `last`  -  `first`], `do_toupper` `I` `first` [0, ) ile ( [ []) `I`aralığında.
+İkinci korumalı üye şablonu işlevi, `first` `I` [0,) aralığındaki [] öğelerinin her bir [] öğesini `I` `last`  -  `first` `do_toupper` ( `first` [ `I` ]) ile değiştirir.
 
 ### <a name="example"></a>Örnek
 
-[Toupper](#toupper)için örnek bakınız `do_toupper`, hangi çağırır .
+' İ çağıran [ToUpper](#toupper)örneğine bakın `do_toupper` .
 
-## <a name="ctypedo_widen"></a><a name="do_widen"></a>ctype::do_widen
+## <a name="ctypedo_widen"></a><a name="do_widen"></a>CType::d o_widen
 
-Yerel karakter kümesindeki **char** türündeki bir karakteri, yerel bir yerel `CharType` ayar tarafından kullanılan türün ilgili karakterine dönüştürmek için çağrılan sanal bir işlev.
+Yerel karakter kümesindeki türü bir karakteri yerel **`char`** ayar tarafından kullanılan türden karşılık gelen karaktere dönüştüren bir sanal işlev `CharType` .
 
 ```cpp
 virtual CharType do_widen(char byte) const;
@@ -403,35 +403,35 @@ virtual const char *do_widen(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayt*\
-Dönüştürülecek şekilde ayarlanacak yerel karakterdeki **tür char** karakteri.
+*bayt*\
+**`char`** Dönüştürülecek yerel karakter kümesindeki tür karakteri.
 
-*Ilk*\
-Dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*Dest*\
-Dönüştürülmüş karakter aralığını depolayan hedef aralığındaki ilk tür `CharType` karakterine işaretçi.
+*HD*\
+`CharType`Hedef aralıktaki, dönüştürülmüş karakter aralığını depolayan ilk karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk korumalı üye işlevi, `CharType` yerel tür **char**parametre karakterine karşılık gelen tür karakterini döndürür.
+İlk korumalı üye işlevi, `CharType` yerel türdeki parametre karakterine karşılık gelen türün karakterini döndürür **`char`** .
 
-İkinci korumalı üye işlevi, `CharType` **char**türü yerel karakterlerden dönüştürülen bir yerel bilgisayar tarafından kullanılan tür deki karakterlerin hedef aralığına bir işaretçiyi döndürür.
+İkinci korumalı üye işlevi, `CharType` türünün yerel karakterlerinden dönüştürülmüş bir yerel ayar tarafından kullanılan türdeki karakterlerin hedef aralığına bir işaretçi döndürür **`char`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci korumalı üye şablon `dest` `I`işlevi [ `do_widen` `first`] `I`değerini `I` ( [ ], `last`  -  `first`aralıkta [0, ) depolar.
+İkinci korumalı üye şablonu işlevi [] içinde `dest` [ `I` ] `do_widen` ( `first` [ `I` ]) değerini `I` [0,) aralığında depolar `last`  -  `first` .
 
 ### <a name="example"></a>Örnek
 
-[Genişletme](#widen)için örneğe bakın `do_widen`, hangi çağırır .
+Öğesini çağıran, [Genişlet](#widen)için örneğe bakın `do_widen` .
 
-## <a name="ctypeis"></a><a name="is"></a>ctype::is
+## <a name="ctypeis"></a><a name="is"></a>CType::
 
-Tek bir karakterin belirli bir özniteliği olup olmadığını sınar veya bir aralıktaki her karakterin özniteliklerini sınıflandırıp bir dizide depolar.
+Tek bir karakterin belirli bir özniteliğe sahip olup olmadığını veya aralıktaki her karakterin özniteliklerini sınıflandırıp sınıflandırmadığını sınar ve bunları bir dizi içinde depolar.
 
 ```cpp
 bool is(mask maskVal, CharType ch) const;
@@ -445,29 +445,29 @@ const CharType *is(
 ### <a name="parameters"></a>Parametreler
 
 *maskVal*\
-Karakterin test edilen maske değeri.
+Karakterin test edileceği maske değeri.
 
-*Caner*\
-Öznitelikleri test edilecek karakter.
+*denetleyebilirsiniz*\
+Öznitelikleri sınanacak olan karakter.
 
-*Ilk*\
-Öznitelikleri sınıflandırılacak olan aralıktaki ilk karaktere işaretçi.
+*adı*\
+İçindeki öznitelikleri sınıflandırılacak olan aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Öznitelikleri sınıflandırılacak olan aralıktaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Öznitelikleri sınıflandırılacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
-*Dest*\
-Her karakterin özniteliklerini karakterize eden maske değerlerinin depolandığı dizinin başlangıcına işaretçi.
+*HD*\
+Maske değerlerinin her bir karakterin özniteliklerini karakterize olarak niteleyen dizinin başlangıcına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Test edilen karakter maske değeri tarafından açıklanan özniteliğe sahipse ilk üye işlev **doğru** döndürür; özniteliği yoksa **false.**
+İlk üye işlevi, **`true`** test edilen karakter maske değeri tarafından tanımlanan özniteliğe sahipse döndürür; **`false`** özniteliği yoksa.
 
-İkinci üye işlev, öznitelikleri sınıflandırılacak olan aralıktaki son karaktere bir işaretçiyi döndürür.
+İkinci üye işlevi, öznitelikleri sınıflandırılacak olan aralıktaki son karaktere bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karakterlerin özniteliklerini sınıflandıran maske değerleri, ctype'ın türetildiği [sınıf ctype_base Sınıfı](../standard-library/ctype-base-class.md)tarafından sağlanır. İlk üye işlev bitmasks olarak adlandırılan ve mantıksal bitwise işleçleri (&#124; , & , ^ , ~) tarafından maske değerlerinin kombinasyonu oluşan ilk parametresi için ifadeleri kabul edebilir.
+Karakterlerin özniteliklerini sınıflandırın maske değerleri, CType 'ın türetildiği sınıf [Ctype_base sınıfı](../standard-library/ctype-base-class.md)tarafından sağlanır. İlk üye işlevi, bit maskeleri olarak adlandırılan ilk parametresi için ifadeleri kabul edebilir ve mantıksal bit düzeyinde işleçlere (&#124;, &, ^, ~) göre maske değerlerinin birleşiminden oluşturulur.
 
 ### <a name="example"></a>Örnek
 
@@ -508,9 +508,9 @@ int main() {
 }
 ```
 
-## <a name="ctypenarrow"></a><a name="narrow"></a>ctype::dar
+## <a name="ctypenarrow"></a><a name="narrow"></a>CType:: dar
 
-Bir yerel ayar `CharType` tarafından kullanılan tür karakterlerini yerel karakter kümesindeki **char** türündeki ilgili karakterlere dönüştürür.
+`CharType`Bir yerel ayar tarafından kullanılan türdeki karakterleri yerel karakter kümesindeki türü karşılık gelen karakterlere dönüştürür **`char`** .
 
 ```cpp
 char narrow(CharType ch, char default = '\0') const;
@@ -524,30 +524,30 @@ const CharType* narrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Dönüştürülmek üzere `Chartype` yerel olarak kullanılan tür karakteri.
+*denetleyebilirsiniz*\
+`Chartype`Dönüştürülecek yerel ayar tarafından kullanılan türün karakteri.
 
-*Varsayılan*\
-Üye işlev tarafından, **char**türünde karşıt `CharType` karakterleri olmayan tür deki karakterlere atanacak varsayılan değer.
+*varsayılanını*\
+Üye işlevi tarafından, türünde `CharType` karşılık gelen karakterlere sahip olmayan karakterlerin karakterlerine atanacak varsayılan değer **`char`** .
 
-*Ilk*\
-Dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*Dest*\
-Dönüştürülmüş karakter aralığını depolayan hedef aralığındaki ilk karakter **eki char'a** bir const işaretçisi.
+*HD*\
+**`char`** Hedef aralıktaki, dönüştürülmüş karakter aralığını depolayan ilk karaktere yönelik const işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlev, karşıt lık tanımlı değilse, tür `CharType default` parametre karakterine karşılık gelen tür **char'ın** yerel karakterini döndürür.
+İlk üye işlevi, karşılık **`char`** geldiği tanımlı değilse, türünün parametre karakterine karşılık gelen yerel karakterini döndürür `CharType default` .
 
-İkinci üye işlev, tür `CharType`deki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçiyi döndürür.
+İkinci üye işlevi, türündeki karakterlerden dönüştürülen yerel karakterlerin hedef aralığına bir işaretçi döndürür `CharType` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev [do_narrow](#do_narrow)do_narrow`ch`döndürür ( , `default`). İkinci üye işlev [do_narrow](#do_narrow) do_narrow`first` `last`döndürür ( , , `default`, . `dest` Yalnızca temel kaynak karakterlerin altında `CharType` `narrow`benzersiz bir ters görüntü olması garanti edilir. Bu temel kaynak karakterler için aşağıdaki değişmez `narrow` tutar: ( [genişletmek](#widen) ( **c** ), 0 ) == **c**.
+İlk üye işlevi [do_narrow](#do_narrow)döndürür ( `ch` , `default` ). İkinci üye işlevi [do_narrow](#do_narrow) döndürür (,,, `first` `last` `default` `dest` ). Yalnızca temel kaynak karakterlerin altında benzersiz bir ters görüntü olması garanti edilir `CharType` `narrow` . Bu temel kaynak karakterler için şu sabit tutar: `narrow` ( [Genişlet](#widen) ( **c** ), 0) = = **c**.
 
 ### <a name="example"></a>Örnek
 
@@ -575,7 +575,7 @@ int main( )
 Xhello everyone
 ```
 
-## <a name="ctypescan_is"></a><a name="scan_is"></a>ctype::scan_is
+## <a name="ctypescan_is"></a><a name="scan_is"></a>CType:: scan_is
 
 Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulur.
 
@@ -589,21 +589,21 @@ const CharType *scan_is(
 ### <a name="parameters"></a>Parametreler
 
 *maskVal*\
-Bir karakterle eşleşecek maske değeri.
+Bir karakterle eşleştirilecek maske değeri.
 
-*Ilk*\
-Aralıktaki ilk karakterin taranacak bir işaretçisi.
+*adı*\
+Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Taranacak aralıktaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir maskeyle eşleşen bir aralıktaki ilk karaktere işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
+Belirli bir maskeyle eşleşen bir aralıktaki ilk karaktere yönelik bir işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev [do_scan_is](#do_scan_is)`maskVal`döndürür ( , , . `first` `last`
+Üye işlevi [do_scan_is](#do_scan_is)döndürür ( `maskVal` , `first` , `last` ).
 
 ### <a name="example"></a>Örnek
 
@@ -631,7 +631,7 @@ int main( )
 The first punctuation is "," at position: 5
 ```
 
-## <a name="ctypescan_not"></a><a name="scan_not"></a>ctype::scan_not
+## <a name="ctypescan_not"></a><a name="scan_not"></a>CType:: scan_not
 
 Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulur.
 
@@ -645,21 +645,21 @@ const CharType *scan_not(
 ### <a name="parameters"></a>Parametreler
 
 *maskVal*\
-Maske değeri bir karakterle eşleşmez.
+Maske değeri bir karakterle eşleştirilemez.
 
-*Ilk*\
-Aralıktaki ilk karakterin taranacak bir işaretçisi.
+*adı*\
+Taranacak aralıktaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Taranacak aralıktaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Taranacak aralıktaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir maskeyle eşleşmeyen bir aralıktaki ilk karaktere işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
+Belirli bir maskeyle eşleşmeyen bir aralıktaki ilk karaktere yönelik bir işaretçi. Böyle bir değer yoksa, işlev *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev [do_scan_not](#do_scan_not)`maskVal`döndürür ( , , . `first` `last`
+Üye işlevi [do_scan_not](#do_scan_not)döndürür ( `maskVal` , `first` , `last` ).
 
 ### <a name="example"></a>Örnek
 
@@ -687,7 +687,7 @@ int main( )
 First nonalpha character is "," at position: 5
 ```
 
-## <a name="ctypetolower"></a><a name="tolower"></a>ctype::tolower
+## <a name="ctypetolower"></a><a name="tolower"></a>CType:: ToLower
 
 Bir karakteri ya da karakter aralığını küçük harflere dönüştürür.
 
@@ -699,24 +699,24 @@ const CharType *tolower(CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Küçük harfe dönüştürülecek karakter.
+*denetleyebilirsiniz*\
+Küçük harfe Dönüştürülecek karakter.
 
-*Ilk*\
-Servis talepleri dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Servis talepleri dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye *işlev, ch*parametresinin küçük biçimini döndürür. Küçük bir form yoksa, *ch*döndürür.
+İlk üye işlevi, *ch*parametresinin küçük harfli biçimini döndürür. Küçük harfli bir form yoksa *ch*döndürür.
 
-İkinci üye işlev *son*döndürür.
+İkinci üye işlevi *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev [do_tolower](#do_tolower)do_tolower`ch`döndürür ( ). İkinci üye işlev [do_tolower](#do_tolower)do_tolower`first`döndürür ( , `last`).
+İlk üye işlevi [do_tolower](#do_tolower)() döndürür `ch` . İkinci üye işlevi [do_tolower](#do_tolower)( `first` ,) döndürür `last` .
 
 ### <a name="example"></a>Örnek
 
@@ -743,7 +743,7 @@ int main( )
 The lowercase string is: hello, my name is john
 ```
 
-## <a name="ctypetoupper"></a><a name="toupper"></a>ctype::toupper
+## <a name="ctypetoupper"></a><a name="toupper"></a>CType:: ToUpper
 
 Bir karakteri ya da karakter aralığını büyük harflere dönüştürür.
 
@@ -754,24 +754,24 @@ const CharType *toupper(CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
-Büyük harfe dönüştürülecek karakter.
+*denetleyebilirsiniz*\
+Büyük harfe Dönüştürülecek karakter.
 
-*Ilk*\
-Servis talepleri dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Örnekleri dönüştürülecek olan karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Servis talepleri dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Örnekleri dönüştürülecek olan karakter aralığındaki son karakteri izleyen karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye *işlev, ch*parametresinin büyük harf formunu döndürür. Büyük harf formu yoksa, *ch*döndürür.
+İlk üye işlevi, *ch*parametresinin büyük harfli biçimini döndürür. Büyük harfli form yoksa *ch*döndürür.
 
-İkinci üye işlev *son*döndürür.
+İkinci üye işlevi *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev [do_toupper](#do_toupper)do_toupper`ch`döndürür ( ). İkinci üye işlev [do_toupper](#do_toupper)do_toupper `first`döndürür ( , `last`).
+İlk üye işlevi [do_toupper](#do_toupper)() döndürür `ch` . İkinci üye işlevi [do_toupper](#do_toupper)( `first` ,) döndürür `last` .
 
 ### <a name="example"></a>Örnek
 
@@ -798,9 +798,9 @@ int main( )
 The uppercase string is: HELLO, MY NAME IS JOHN
 ```
 
-## <a name="ctypewiden"></a><a name="widen"></a>ctype::widen
+## <a name="ctypewiden"></a><a name="widen"></a>CType:: Genişlet
 
-Yerel karakter kümesindeki **char** türündeki bir karakteri, yerel `CharType` bir yerel ayar tarafından kullanılan türün ilgili karakterine dönüştürür.
+**`char`** Yerel karakter kümesindeki türü bir karakteri `CharType` yerel ayar tarafından kullanılan türdeki karşılık gelen karaktere dönüştürür.
 
 ```cpp
 CharType widen(char byte) const;
@@ -809,27 +809,27 @@ const char *widen(const char* first, const char* last, CharType* dest) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayt*\
-Dönüştürülecek şekilde ayarlanacak yerel karakterdeki tür char karakteri.
+*bayt*\
+Dönüştürülecek yerel karakter kümesindeki char türü karakteri.
 
-*Ilk*\
-Dönüştürülecek karakter aralığındaki ilk karaktere işaretçi.
+*adı*\
+Dönüştürülecek karakter aralığındaki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Dönüştürülecek karakter aralığındaki son karakteri hemen izleyen karaktere işaretçi.
+*soyadına*\
+Dönüştürülecek karakter aralığındaki son karakterin hemen ardından gelen karaktere yönelik bir işaretçi.
 
-*Dest*\
-Dönüştürülmüş karakter aralığını depolayan hedef aralığındaki ilk tür `CharType` karakterine işaretçi.
+*HD*\
+`CharType`Hedef aralıktaki, dönüştürülmüş karakter aralığını depolayan ilk karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işlev, yerel `CharType` tür **char**parametre karakterine karşılık gelen tür karakterini döndürür.
+İlk üye işlevi, `CharType` yerel türdeki parametre karakterine karşılık gelen türün karakterini döndürür **`char`** .
 
-İkinci üye işlev, **char**türü yerel karakterlerden `CharType` dönüştürülen bir yerel bilgisayar tarafından kullanılan tür karakter hedef aralığına bir işaretçi döndürür.
+İkinci üye işlevi, `CharType` türünün yerel karakterlerinden dönüştürülmüş bir yerel ayar tarafından kullanılan türdeki karakterlerin hedef aralığına bir işaretçi döndürür **`char`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev [do_widen](#do_widen)do_widen`byte`döndürür ( ). İkinci üye işlev [do_widen](#do_widen)do_widen`first`döndürür ( , , . `last` `dest`
+İlk üye işlevi [do_widen](#do_widen)() döndürür `byte` . İkinci üye işlevi [do_widen](#do_widen)döndürür ( `first` , `last` , `dest` ).
 
 ### <a name="example"></a>Örnek
 
@@ -863,5 +863,5 @@ Hello everyone!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<yerel>](../standard-library/locale.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[\<locale>](../standard-library/locale.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -39,16 +39,16 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: 6d025230abcff42e367a231e616a13f0f8c684f0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b21f9ec2ace54281f30f8f32134c7fb3466a1faa
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320284"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214860"
 ---
 # <a name="utility-stlclr"></a>yardımcı program (STL/CLR)
 
-Şablon sınıfını `pair` ve birkaç `<cliext/utility>` destekleyici şablon işlevlerini tanımlamak için STL/CLR üstbilgisini ekleyin.
+`<cliext/utility>`Şablon sınıfını `pair` ve çeşitli destekleyici şablon işlevlerini tanımlamak için STL/CLR üst bilgisini ekleyin.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,7 +58,7 @@ ms.locfileid: "81320284"
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<cliext/utility>
+**Üst bilgi:**\<cliext/utility>
 
 **Ad alanı:** cliext
 
@@ -66,28 +66,28 @@ ms.locfileid: "81320284"
 
 |Sınıf|Açıklama|
 |-----------|-----------------|
-|[pair (STL/CLR)](#pair)|Bir çift öğeyi sarın.|
+|[pair (STL/CLR)](#pair)|Öğe çiftini sarın.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
 |[operator== (pair) (STL/CLR)](#op_eq)|Eşit karşılaştırmayı eşleştirin.|
-|[işleç!= (çift) (STL/CLR)](#op_neq)|Eşit karşılaştırma değil çifti.|
-|[operatör< (çift) (STL/CLR)](#op_lt)|Karşılaştırmadan daha az çifti.|
-|[işleç\<= (çift) (STL/CLR)](#op_lteq)|Daha az veya eşit karşılaştırma eşleştirin.|
-|[operatör> (çift) (STL/CLR)](#op_gt)|Eşleştirmeden daha büyük bir çift.|
-|[işleç>= (çift) (STL/CLR)](#op_gteq)|Daha büyük veya eşit karşılaştırma çifti.|
+|[işleç! = (çift) (STL/CLR)](#op_neq)|Çift eşitlik karşılaştırması.|
+|[işleç< (çift) (STL/CLR)](#op_lt)|Çiftin karşılaştırmasının küçüktür.|
+|[operator \< = (çift) (STL/CLR)](#op_lteq)|Eşit veya daha küçük bir karşılaştırmaya eşleştirin.|
+|[işleç> (çift) (STL/CLR)](#op_gt)|Eşleştirme, karşılaştırmadan daha büyük.|
+|[işleç>= (çift) (STL/CLR)](#op_gteq)|Eşit veya daha büyük bir karşılaştırmayı eşleştirin.|
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|[make_pair (STL/CLR)](#make_pair)|Bir çift değerden bir çift yapın.|
+|[make_pair (STL/CLR)](#make_pair)|Değer çiftinden bir çift oluşturun.|
 
 ## <a name="members"></a>Üyeler
 
-## <a name="pair-stlclr"></a><a name="pair"></a>çifti (STL/CLR)
+## <a name="pair-stlclr"></a><a name="pair"></a>Çift (STL/CLR)
 
-Şablon sınıfı, bir çift değer saran bir nesneyi açıklar.
+Şablon sınıfı, bir çift değeri sarmalayan nesneyi tanımlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -97,40 +97,40 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Değer1*<br/>
-İlk sarılmış değer türü.
+*Value1*<br/>
+Sarmalanan ilk değerin türü.
 
-*Değer2*<br/>
-İkinci sarılmış değerin türü.
+*Value2*<br/>
+İkinci Sarmalanan değerin türü.
 
 ## <a name="members"></a>Üyeler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
-|[pair::first_type (STL/CLR)](#first_type)|İlk sarılmış değerin türü.|
-|[pair::second_type (STL/CLR)](#second_type)|İkinci sarılmış değerin türü.|
+|[pair::first_type (STL/CLR)](#first_type)|Sarmalanan ilk değerin türü.|
+|[pair::second_type (STL/CLR)](#second_type)|Sarmalanan ikinci değerin türü.|
 
-|Üye Nesnesi|Açıklama|
+|Üye nesnesi|Açıklama|
 |-------------------|-----------------|
 |[pair::first (STL/CLR)](#first)|İlk depolanan değer.|
-|[pair::second (STL/CLR)](#second)|İkinci depolanan değer.|
+|[pair::second (STL/CLR)](#second)|İkinci saklı değer.|
 
 |Üye İşlevi|Açıklama|
 |---------------------|-----------------|
-|[pair::pair (STL/CLR)](#pair_pair)|Bir çift nesne oluşturuyor.|
-|[pair::swap (STL/CLR)](#swap)|İki çiftin içeriğini değiştirir.|
+|[pair::pair (STL/CLR)](#pair_pair)|Bir çift nesnesi oluşturur.|
+|[pair::swap (STL/CLR)](#swap)|İki çifinin içeriğini değiştirir.|
 
 |İşleç|Açıklama|
 |--------------|-----------------|
-|[pair::operator= (STL/CLR)](#op_as)|Depolanan değer çiftinin yerine.|
+|[pair::operator= (STL/CLR)](#op_as)|Depolanan değer çiftini değiştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne bir çift değer depolar. İki değeri tek bir nesnede birleştirmek için bu şablon sınıfLarını kullanırsınız. Ayrıca, nesne `cliext::pair` (burada açıklanan) yalnızca yönetilen türleri depolar; bir çift yönetilmeyen türü `std::pair`kullanmak depolamak için , içinde `<utility>`beyan.
+Nesne bir çift değer depolar. Bu şablon sınıfını, iki değeri tek bir nesne içinde birleştirmek için kullanırsınız. Ayrıca, nesnesi `cliext::pair` (burada açıklanmıştır) yalnızca yönetilen türler depolar; ' de belirtilen bir çift yönetilmeyen tür kullanımını depolamak için `std::pair` `<utility>` .
 
-## <a name="pairfirst-stlclr"></a><a name="first"></a>çift::ilk (STL/CLR)
+## <a name="pairfirst-stlclr"></a><a name="first"></a>Pair:: First (STL/CLR)
 
-İlk sarılmış değer.
+İlk Sarmalanan değer.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -140,7 +140,7 @@ Value1 first;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne ilk sarılmış değeri depolar.
+Nesne, ilk Sarmalanan değeri depolar.
 
 ### <a name="example"></a>Örnek
 
@@ -165,9 +165,9 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairfirst_type-stlclr"></a><a name="first_type"></a>çift::first_type (STL/CLR)
+## <a name="pairfirst_type-stlclr"></a><a name="first_type"></a>Pair:: first_type (STL/CLR)
 
-İlk sarılmış değerin türü.
+Sarmalanan ilk değerin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -177,7 +177,7 @@ typedef Value1 first_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *Değer1*ile eş anlamlıdır.
+Tür, *değer1*şablon parametresinin eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -202,11 +202,11 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairoperator-stlclr"></a><a name="op_as"></a>çifti::operator= (STL/CLR)
+## <a name="pairoperator-stlclr"></a><a name="op_as"></a>Pair:: operator = (STL/CLR)
 
-Depolanan değer çiftinin yerine.
+Depolanan değer çiftini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);
@@ -214,12 +214,12 @@ pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Doğru*<br/>
-Kopyalamak için eşleştirin.
+*Right*<br/>
+Kopyalanacak eşleştirme.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleç *nesneye doğru* kopyalar, sonra döndürür. `*this` Depolanan değer çiftini, depolanan değer çiftinin bir kopyasıyla *değiştirmek*için kullanırsınız.
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Depolanan değer çiftinin, depolanan değer çiftinin bir kopyasıyla birlikte değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -246,11 +246,11 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairpair-stlclr"></a><a name="pair_pair"></a>çift::pair (STL/CLR)
+## <a name="pairpair-stlclr"></a><a name="pair_pair"></a>Çift::p hava (STL/CLR)
 
-Bir çift nesne oluşturuyor.
+Bir çift nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 pair();
@@ -261,38 +261,38 @@ pair(Value1 val1, Value2 val2);
 
 #### <a name="parameters"></a>Parametreler
 
-*Doğru*<br/>
-Saklamak için çifti.
+*Right*<br/>
+Depolanacak eşleştirme.
 
 *val1*<br/>
-Saksıya ilk değer.
+Depolanacak ilk değer.
 
-*val2*<br/>
-Saksıda ikinci değer.
+*val2 & lt*<br/>
+Depolanacak ikinci değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapıcı:
+Oluşturucu:
 
 `pair();`
 
-varsayılan yapılandırılan değerlerle depolanan çifti başharfe alır.
+depolanan çifti varsayılan oluşturulmuş değerlerle başlatır.
 
-Yapıcı:
+Oluşturucu:
 
 `pair(pair<Value1, Value2>% right);`
 
-depolanan çifti `right.`aşağıdakilerle başharfe::ilk [(STL/CLR)](../dotnet/pair-first-stl-clr.md) ve `right.` [çifti::ikinci (STL/CLR)](../dotnet/pair-second-stl-clr.md).
+saklı çifti,: `right.` [FIRST (STL/CLR)](../dotnet/pair-first-stl-clr.md) ve `right.` [çiftin:: Second (STL/CLR)](../dotnet/pair-second-stl-clr.md)ile başlatır.
 
 `pair(pair<Value1, Value2>^ right);`
 
-depolanan çifti `right->`aşağıdakilerle başharfe::ilk [(STL/CLR)](../dotnet/pair-first-stl-clr.md) ve `right>` [çifti::ikinci (STL/CLR)](../dotnet/pair-second-stl-clr.md).
+saklı çifti,: `right->` [FIRST (STL/CLR)](../dotnet/pair-first-stl-clr.md) ve `right>` [çiftin:: Second (STL/CLR)](../dotnet/pair-second-stl-clr.md)ile başlatır.
 
-Yapıcı:
+Oluşturucu:
 
 `pair(Value1 val1, Value2 val2);`
 
-*val1* ve *val2*ile depolanan çifti başharfize eder.
+depolanan çifti *val1* ve *val2 & lt*ile başlatır.
 
 ### <a name="example"></a>Örnek
 
@@ -331,9 +331,9 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairsecond-stlclr"></a><a name="second"></a>çift::ikinci (STL/CLR)
+## <a name="pairsecond-stlclr"></a><a name="second"></a>Çift:: Second (STL/CLR)
 
-İkinci sarılmış değer.
+Sarmalanan ikinci değer.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -343,7 +343,7 @@ Value2 second;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne ikinci sarılmış değeri depolar.
+Nesnesi, Sarmalanan ikinci değeri depolar.
 
 ### <a name="example"></a>Örnek
 
@@ -368,9 +368,9 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairsecond_type-stlclr"></a><a name="second_type"></a>çift::second_type (STL/CLR)
+## <a name="pairsecond_type-stlclr"></a><a name="second_type"></a>Pair:: second_type (STL/CLR)
 
-İkinci sarılmış değerin türü.
+Sarmalanan ikinci değerin türü.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -380,7 +380,7 @@ typedef Value2 second_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *Value2*ile eş anlamlıdır.
+Tür, typtemplate *parametresinin*eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -405,11 +405,11 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairswap-stlclr"></a><a name="swap"></a>çifti::takas (STL/CLR)
+## <a name="pairswap-stlclr"></a><a name="swap"></a>Pair:: swap (STL/CLR)
 
-İki çiftin içeriğini değiştirir.
+İki çifinin içeriğini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void swap(pair<Value1, Value2>% right);
@@ -417,12 +417,12 @@ void swap(pair<Value1, Value2>% right);
 
 #### <a name="parameters"></a>Parametreler
 
-*Doğru*<br/>
-İçeriği takas etmek için eşleştirin.
+*Right*<br/>
+İçeriği değiştirme eşleştirmesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, depolanan değer çiftini `*this` *ve sağ*arasındaki değerleri değiştirir.
+Üye işlevi, ve sağ arasındaki depolanan değer çiftini değiştirir **`*this`** . *right*
 
 ### <a name="example"></a>Örnek
 
@@ -476,9 +476,9 @@ a b c
 
 ## <a name="make_pair-stlclr"></a><a name="make_pair"></a>make_pair (STL/CLR)
 
-Bir `pair` çift değerden a yapın.
+`pair`Değer çiftinden bir değer yapın.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -488,21 +488,21 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Değer1*<br/>
-İlk sarılmış değerin türü.
+*Value1*<br/>
+Sarmalanan ilk değerin türü.
 
-*Değer2*<br/>
-İkinci sarılmış değerin türü.
+*Value2*<br/>
+Sarmalanan ikinci değerin türü.
 
-*Ilk*<br/>
-Sarmak için ilk değer.
+*adı*<br/>
+Sarılacağı ilk değer.
 
-*Ikinci*<br/>
-Sargıiçin ikinci değer.
+*İkincisi*<br/>
+Sarılacağı ikinci değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `pair<Value1, Value2>(first, second)`döndürür. Bir `pair<Value1, Value2>` nesneyi bir çift değerden oluşturmak için kullanırsınız.
+Şablon işlevi döndürür `pair<Value1, Value2>(first, second)` . Değer çiftinden bir nesne oluşturmak için bunu kullanırsınız `pair<Value1, Value2>` .
 
 ### <a name="example"></a>Örnek
 
@@ -527,11 +527,11 @@ int main()
 [y, 4]
 ```
 
-## <a name="operator-pair-stlclr"></a><a name="op_neq"></a>işleç!= (çift) (STL/CLR)
+## <a name="operator-pair-stlclr"></a><a name="op_neq"></a>işleç! = (çift) (STL/CLR)
 
-Eşit karşılaştırma değil çifti.
+Çift eşitlik karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -542,15 +542,15 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol çift.
+*tarafta*<br/>
+Karşılaştırılacak sol çift.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru çift.
+*Right*<br/>
+Karşılaştırılacak sağa çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `!(left == right)`döndürür. İki çift öğeile karşılaştırıldığında *sağ* olarak aynı sıralı *olup* olmadığını test etmek için kullanabilirsiniz.
+İşleç işlevi döndürülür `!(left == right)` . İki çifte öğe öğe ile karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -581,11 +581,11 @@ int main()
 [x 3] != [x 4] is True
 ```
 
-## <a name="operatorlt-pair-stlclr"></a><a name="op_lt"></a>işleç&lt; (çift) (STL/CLR)
+## <a name="operatorlt-pair-stlclr"></a><a name="op_lt"></a>işleç &lt; (çift) (STL/CLR)
 
-Karşılaştırmadan daha az çifti.
+Çiftin karşılaştırmasının küçüktür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -596,15 +596,15 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol çift.
+*tarafta*<br/>
+Karşılaştırılacak sol çift.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru çift.
+*Right*<br/>
+Karşılaştırılacak sağa çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `left.first <` `right.first || !(right.first <` `left.first &&` `left.second <` `right.second`döndürür. İki çift öğeile karşılaştırıldığında sağ *önce* sıralanır *olup* olmadığını test etmek için kullanabilirsiniz.
+İşleç işlevi döndürülür `left.first <` `right.first || !(right.first <` `left.first &&` `left.second <` `right.second` . İki çiftler öğe öğesine göre karşılaştırıldığı zaman, *sol taraftaki sola* *doğru sıralı* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -635,11 +635,11 @@ int main()
 [x 3] < [x 4] is True
 ```
 
-## <a name="operatorlt-pair-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (çift) (STL/CLR)
+## <a name="operatorlt-pair-stlclr"></a><a name="op_lteq"></a>operator &lt; = (çift) (STL/CLR)
 
-Daha az veya eşit karşılaştırma eşleştirin.
+Eşit veya daha küçük bir karşılaştırmaya eşleştirin.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -650,15 +650,15 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol çift.
+*tarafta*<br/>
+Karşılaştırılacak sol çift.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru çift.
+*Right*<br/>
+Karşılaştırılacak sağa çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `!(right < left)`döndürür. İki çift öğeile karşılaştırıldığında *sağdan* sonra sol sıralanıp *sıralanmadığını* test etmek için kullanabilirsiniz.
+İşleç işlevi döndürülür `!(right < left)` . İki çiftler öğe öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında* sıralı olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -689,11 +689,11 @@ int main()
 [x 4] <= [x 3] is False
 ```
 
-## <a name="operator-pair-stlclr"></a><a name="op_eq"></a>işleç== (çift) (STL/CLR)
+## <a name="operator-pair-stlclr"></a><a name="op_eq"></a>işleç = = (çift) (STL/CLR)
 
 Eşit karşılaştırmayı eşleştirin.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -704,15 +704,15 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol çift.
+*tarafta*<br/>
+Karşılaştırılacak sol çift.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru çift.
+*Right*<br/>
+Karşılaştırılacak sağa çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `left.first ==` `right.first &&` `left.second ==` `right.second`döndürür. İki çift öğeile karşılaştırıldığında *sağ* olarak aynı sıralı *olup* olmadığını test etmek için kullanabilirsiniz.
+İşleç işlevi döndürülür `left.first ==` `right.first &&` `left.second ==` `right.second` . Bu, iki çifte öğe öğe ile karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -743,11 +743,11 @@ int main()
 [x 3] == [x 4] is False
 ```
 
-## <a name="operatorgt-pair-stlclr"></a><a name="op_gt"></a>işleç&gt; (çift) (STL/CLR)
+## <a name="operatorgt-pair-stlclr"></a><a name="op_gt"></a>işleç &gt; (çift) (STL/CLR)
 
-Eşleştirmeden daha büyük bir çift.
+Eşleştirme, karşılaştırmadan daha büyük.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -758,15 +758,15 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol çift.
+*tarafta*<br/>
+Karşılaştırılacak sol çift.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru çift.
+*Right*<br/>
+Karşılaştırılacak sağa çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `right` `<` `left`döndürür. İki çift öğeile *left* karşılaştırıldığında *sağdan* sonra sol sıralanıp sıralanmadığını test etmek için kullanabilirsiniz.
+İşleç işlevi döndürülür `right` `<` `left` . Bu, iki çifte öğesi öğesi öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında sıralı olup olmadığını test* etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -797,11 +797,11 @@ int main()
 [x 4] > [x 3] is True
 ```
 
-## <a name="operatorgt-pair-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (çift) (STL/CLR)
+## <a name="operatorgt-pair-stlclr"></a><a name="op_gteq"></a>operator &gt; = (çift) (STL/CLR)
 
-Daha büyük veya eşit karşılaştırma çifti.
+Eşit veya daha büyük bir karşılaştırmayı eşleştirin.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value1,
@@ -812,15 +812,15 @@ template<typename Value1,
 
 #### <a name="parameters"></a>Parametreler
 
-*Sol*<br/>
-Karşılaştırmak için sol çift.
+*tarafta*<br/>
+Karşılaştırılacak sol çift.
 
-*Doğru*<br/>
-Karşılaştırmak için doğru çift.
+*Right*<br/>
+Karşılaştırılacak sağa çift.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör işlevi `!(left < right)`döndürür. İki çift öğeile karşılaştırıldığında *sağ* önce sol sıralı *olup* olmadığını test etmek için kullanabilirsiniz.
+İşleç işlevi döndürülür `!(left < right)` . İki çiftler öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

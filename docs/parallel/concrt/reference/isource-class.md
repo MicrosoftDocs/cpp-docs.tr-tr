@@ -16,18 +16,18 @@ f1_keywords:
 helpviewer_keywords:
 - ISource class
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-ms.openlocfilehash: a9ef9990db6376536f2f2a15c053b3b1d4ed12cf
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: df592e965b436ed5a1d60702f9e57088887d5a94
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139313"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222712"
 ---
 # <a name="isource-class"></a>ISource Sınıfı
 
-`ISource` sınıfı tüm kaynak blokları için arabirimidir. Kaynak blokları iletileri `ITarget` bloklara yayar.
+`ISource`Sınıfı, tüm kaynak blokları için arabirimidir. Kaynak blokları iletileri `ITarget` bloklara yayar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class T>
@@ -36,7 +36,7 @@ class ISource;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Kaynak bloğu tarafından üretilen iletiler içindeki yükün veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -45,27 +45,27 @@ Kaynak bloğu tarafından üretilen iletiler içindeki yükün veri türü.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`source_type`|`T`için bir tür diğer adı.|
+|`source_type`|İçin bir tür diğer adı `T` .|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[~ ISource yok edici](#dtor)|`ISource` nesnesini yok eder.|
+|[~ ISource yok edici](#dtor)|Nesneyi yok eder `ISource` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ettiğinizde](#accept)|Türetilmiş bir sınıfta geçersiz kılındığında, bu `ISource` bloğu tarafından sunulan bir iletiyi kabul eder ve sahipliği çağırana aktarmaz.|
-|[acquire_ref](#acquire_ref)|Türetilmiş bir sınıfta geçersiz kılınırsa, silme işlemini engellemek için bu `ISource` bloğunda bir başvuru sayısı elde edin.|
-|[kullanan](#consume)|Türetilmiş bir sınıfta geçersiz kılındığında, daha önce bu `ISource` bloğu tarafından sunulan ve hedefi tarafından başarıyla ayrılmış bir ileti kullanır ve sahipliği çağırana aktarmaz.|
-|[link_target](#link_target)|Türetilmiş bir sınıfta geçersiz kılınırsa, hedef bloğu bu `ISource` bloğuna bağlar.|
+|[ettiğinizde](#accept)|Türetilmiş bir sınıfta geçersiz kılındığında, bu blok tarafından sunulan bir iletiyi kabul eder `ISource` ve sahipliği çağırana aktarmaz.|
+|[acquire_ref](#acquire_ref)|Türetilmiş bir sınıfta geçersiz kılınırsa, silme işlemini engellemek için bu blok üzerinde bir başvuru sayısı elde edin `ISource` .|
+|[kullanan](#consume)|Türetilmiş bir sınıfta geçersiz kılındığında, bu blok tarafından daha önce sunulan `ISource` ve hedef tarafından başarıyla ayrılmış bir ileti kullanır ve sahipliği çağırana aktarılarak.|
+|[link_target](#link_target)|Türetilmiş bir sınıfta geçersiz kılınırsa, hedef bloğu bu `ISource` bloğa bağlar.|
 |[Yayın](#release)|Türetilmiş bir sınıfta geçersiz kılınırsa, önceki başarılı ileti ayırmasını yayınlar.|
-|[release_ref](#release_ref)|Türetilmiş bir sınıfta geçersiz kılınırsa, bu `ISource` bloğunda bir başvuru sayısı yayınlar.|
-|[ayırmaya](#reserve)|Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce bu `ISource` bloğu tarafından sunulan bir iletiyi ayırır.|
-|[unlink_target](#unlink_target)|Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce bağlanmış olması halinde bu `ISource` bloğundan bir hedef bloğunun bağlantısını kaldırır.|
-|[unlink_targets](#unlink_targets)|Türetilmiş bir sınıfta geçersiz kılınırsa, tüm hedef blokların bu `ISource` bloğundan bağlantısını kaldırır.|
+|[release_ref](#release_ref)|Türetilmiş bir sınıfta geçersiz kılınırsa, bu blok üzerinde bir başvuru sayısı yayınlar `ISource` .|
+|[Rezerve et](#reserve)|Türetilmiş bir sınıfta geçersiz kılınırsa, bu blok tarafından daha önce sunulan bir iletiyi ayırır `ISource` .|
+|[unlink_target](#unlink_target)|Türetilmiş bir sınıfta geçersiz `ISource` kılınırsa, daha önceden bağlanacak şekilde bulunursa, bu bloktaki hedef bloğunun bağlantısını kaldırır.|
+|[unlink_targets](#unlink_targets)|Türetilmiş bir sınıfta geçersiz kılınırsa, bu bloktaki tüm hedef blokların bağlantısını kaldırır `ISource` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -81,9 +81,9 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept"></a>ettiğinizde
+## <a name="accept"></a><a name="accept"></a>ettiğinizde
 
-Türetilmiş bir sınıfta geçersiz kılındığında, bu `ISource` bloğu tarafından sunulan bir iletiyi kabul eder ve sahipliği çağırana aktarmaz.
+Türetilmiş bir sınıfta geçersiz kılındığında, bu blok tarafından sunulan bir iletiyi kabul eder `ISource` ve sahipliği çağırana aktarmaz.
 
 ```cpp
 virtual message<T>* accept(
@@ -94,10 +94,10 @@ virtual message<T>* accept(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Sunulan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Sunulan `message` nesne.
 
 *_PTarget*<br/>
-`accept` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `accept` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -105,11 +105,11 @@ Sunulan `message` nesnesinin `runtime_object_identity`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `ISource` bloğu tarafından bir ileti sunulduğunda `accept` yöntemi bir hedef tarafından çağırılır. Döndürülen ileti işaretçisi, bu kaynak iletinin bir kopyasını oluşturmak için karar verirse, `ITarget` bloğunun `propagate` metoduna geçirilen yöntemden farklı olabilir.
+`accept`Bu blok tarafından bir ileti sunulduğunda yöntemi bir hedef tarafından çağırılır `ISource` . Döndürülen ileti işaretçisi, `propagate` `ITarget` Bu kaynak iletinin bir kopyasını oluşturmak için karar verirse, bloğun yöntemine geçirilen yöntemden farklı olabilir.
 
-## <a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, silme işlemini engellemek için bu `ISource` bloğunda bir başvuru sayısı elde edin.
+Türetilmiş bir sınıfta geçersiz kılınırsa, silme işlemini engellemek için bu blok üzerinde bir başvuru sayısı elde edin `ISource` .
 
 ```cpp
 virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
@@ -122,11 +122,11 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `link_target` yöntemi sırasında bu kaynağa bağlanmakta olan bir `ITarget` nesnesi tarafından çağırılır.
+Bu yöntem `ITarget` , yöntemi sırasında bu kaynağa bağlanan bir nesne tarafından çağırılır `link_target` .
 
-## <a name="consume"></a>kullanan
+## <a name="consume"></a><a name="consume"></a>kullanan
 
-Türetilmiş bir sınıfta geçersiz kılındığında, daha önce bu `ISource` bloğu tarafından sunulan ve hedefi tarafından başarıyla ayrılmış bir ileti kullanır ve sahipliği çağırana aktarmaz.
+Türetilmiş bir sınıfta geçersiz kılındığında, bu blok tarafından daha önce sunulan `ISource` ve hedef tarafından başarıyla ayrılmış bir ileti kullanır ve sahipliği çağırana aktarılarak.
 
 ```cpp
 virtual message<T>* consume(
@@ -137,30 +137,30 @@ virtual message<T>* consume(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Ayrılmış `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Ayrılan `message` nesne.
 
 *_PTarget*<br/>
-`consume` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `consume` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çağıranın artık sahipliği olan `message` nesnesine yönelik bir işaretçi.
+`message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`consume` yöntemi `accept`benzerdir, ancak her zaman **true**döndüren `reserve` çağrısı gelmelidir.
+`consume`Yöntemi öğesine benzerdir `accept` , ancak her zaman döndürülen bir çağrı gelmelidir `reserve` **`true`** .
 
-## <a name="dtor"></a>~ ISource
+## <a name="isource"></a><a name="dtor"></a>~ ISource
 
-`ISource` nesnesini yok eder.
+Nesneyi yok eder `ISource` .
 
 ```cpp
 virtual ~ISource();
 ```
 
-## <a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a>link_target
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, hedef bloğu bu `ISource` bloğuna bağlar.
+Türetilmiş bir sınıfta geçersiz kılınırsa, hedef bloğu bu `ISource` bloğa bağlar.
 
 ```cpp
 virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
@@ -169,9 +169,9 @@ virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Hedef bloğunun bu `ISource` bloğuna bağlanmakta olan bir işaretçisi.
+Hedef bloğunun bu bloğa bağlanmakta olan bir işaretçisi `ISource` .
 
-## <a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a>Yayın
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, önceki başarılı ileti ayırmasını yayınlar.
 
@@ -184,14 +184,14 @@ virtual void release(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Ayrılmış `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Ayrılan `message` nesne.
 
 *_PTarget*<br/>
-`release` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `release` .
 
-## <a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a>release_ref
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, bu `ISource` bloğunda bir başvuru sayısı yayınlar.
+Türetilmiş bir sınıfta geçersiz kılınırsa, bu blok üzerinde bir başvuru sayısı yayınlar `ISource` .
 
 ```cpp
 virtual void release_ref(_Inout_ ITarget<T>* _PTarget) = 0;
@@ -204,11 +204,11 @@ Bu yöntemi çağıran hedef bloğa yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bu kaynaktan bağlantısı kesilmekte olan bir `ITarget` nesnesi tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
+Bu yöntem, `ITarget` Bu kaynaktan bağlantısı kesilmekte olan bir nesne tarafından çağırılır. Kaynak bloğunun hedef blok için ayrılan kaynakları serbest bırakmaya izin verilir.
 
-## <a name="reserve"></a>ayırmaya
+## <a name="reserve"></a><a name="reserve"></a>ayırmaya
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce bu `ISource` bloğu tarafından sunulan bir iletiyi ayırır.
+Türetilmiş bir sınıfta geçersiz kılınırsa, bu blok tarafından daha önce sunulan bir iletiyi ayırır `ISource` .
 
 ```cpp
 virtual bool reserve(
@@ -219,22 +219,22 @@ virtual bool reserve(
 ### <a name="parameters"></a>Parametreler
 
 *_MsgId*<br/>
-Sunulan `message` nesnesinin `runtime_object_identity`.
+`runtime_object_identity`Sunulan `message` nesne.
 
 *_PTarget*<br/>
-`reserve` yöntemini çağıran hedef bloğuna yönelik bir işaretçi.
+Yöntemi çağıran hedef bloğa yönelik bir işaretçi `reserve` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ileti başarıyla ayrıldıysa **true** , aksi takdirde **false** . Ayırmalar, aşağıdakiler dahil olmak üzere birçok nedenden dolayı başarısız olabilir: ileti zaten ayrılmış veya başka bir hedef tarafından kabul edildi, kaynak rezervasyonları reddedebilir ve bu şekilde devam eder.
+**`true`** ileti başarıyla ayrıldıysa, **`false`** tersi durumda. Ayırmalar, aşağıdakiler dahil olmak üzere birçok nedenden dolayı başarısız olabilir: ileti zaten ayrılmış veya başka bir hedef tarafından kabul edildi, kaynak rezervasyonları reddedebilir ve bu şekilde devam eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`reserve`çağırdıktan sonra, başarılı olduysa, iletinin sahipliğini almak ya da sağlamak için `consume` veya `release` çağırmanız gerekir.
+Öğesini çağırdıktan sonra, başarılı olursa, `reserve` `consume` `release` sırasıyla iletinin sahipliğini almak veya vermek için ya da ' i çağırmanız gerekir.
 
-## <a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, daha önce bağlanmış olması halinde bu `ISource` bloğundan bir hedef bloğunun bağlantısını kaldırır.
+Türetilmiş bir sınıfta geçersiz `ISource` kılınırsa, daha önceden bağlanacak şekilde bulunursa, bu bloktaki hedef bloğunun bağlantısını kaldırır.
 
 ```cpp
 virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
@@ -243,11 +243,11 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
 ### <a name="parameters"></a>Parametreler
 
 *_PTarget*<br/>
-Hedef bloğunun bu `ISource` bloğundan bağlantısı kesilmekte olan bir işaretçisi.
+Hedef bloğunun Bu bloktan bağlantısının kesilmekte olan bir işaretçisi `ISource` .
 
-## <a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
 
-Türetilmiş bir sınıfta geçersiz kılınırsa, tüm hedef blokların bu `ISource` bloğundan bağlantısını kaldırır.
+Türetilmiş bir sınıfta geçersiz kılınırsa, bu bloktaki tüm hedef blokların bağlantısını kaldırır `ISource` .
 
 ```cpp
 virtual void unlink_targets() = 0;
@@ -255,5 +255,5 @@ virtual void unlink_targets() = 0;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[ITarget Sınıfı](itarget-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[IComparer sınıfı](itarget-class.md)
