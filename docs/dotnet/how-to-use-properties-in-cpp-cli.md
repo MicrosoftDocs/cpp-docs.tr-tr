@@ -1,24 +1,24 @@
 ---
-title: 'Nasıl yapılır: İçindeki özellikleri kullanın C++/CLI'
+title: 'Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma'
 ms.date: 07/21/2017
 helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-ms.openlocfilehash: 47cfd4c633942874b7b349da5635b34ea42090ee
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 2b5543e9a9ff70e827778adf2aee89cbc96f0c1d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447319"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225676"
 ---
-# <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: İçindeki özellikleri kullanın C++/CLI
+# <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma
 
-Bu makale özelliklerini kullanmayı C++/CLI.
+Bu makalede C++/CLIENDE özelliklerinin nasıl kullanılacağı gösterilmektedir.
 
-## <a name="basic-properties"></a>Temel özellikleri
+## <a name="basic-properties"></a>Temel özellikler
 
-Temel özellikleri — yalnızca atamak ve bir özel veri üyesi alın — açıkça get tanımlayın ve derleyici otomatik olarak bunları yalnızca özelliğin veri türünü verildiğinde sağlar çünkü erişimci işlevleri ayarlamak zorunda değilsiniz. Bu kod, temel bir özelliği gösterir:
+Yalnızca bir özel veri üyesini atayan ve alan temel özellikler için — yalnızca özelliğin veri türü verildiğinde derleyici otomatik olarak sağladığından get ve set erişimcisini açıkça tanımlamanız gerekmez. Bu kod, temel bir özelliği gösterir:
 
 ```cpp
 // SimpleProperties.cpp
@@ -43,7 +43,7 @@ c->Size = 111
 
 ## <a name="static-properties"></a>Statik özellikler
 
-Bu kod örneği, bildirme ve kullanma statik bir özellik gösterilmektedir.  Statik bir özellik, yalnızca kendi sınıfının statik üyeleri erişebilir.
+Bu kod örneği, statik bir özelliğin nasıl bildirilemeyeceğini ve kullanılacağını gösterir.  Statik bir özellik, sınıfının yalnızca statik üyelerine erişebilir.
 
 ```cpp
 // mcppv2_property_3.cpp
@@ -82,15 +82,15 @@ int main() {
 47
 ```
 
-## <a name="indexed-properties"></a>Dizini oluşturulan özellikler
+## <a name="indexed-properties"></a>Dizinli Özellikler
 
-Dizinlenmiş bir özelliği, genellikle bir alt simge işleci kullanılarak erişilen veri yapısı kullanıma sunar.
+Dizinli bir özellik, genellikle bir alt simge işleci kullanılarak erişilen bir veri yapısını gösterir.
 
-Kullanırsanız, varsayılan bir özelliğin dizini, sınıf adına bakarak veri yapısı erişebilir, ancak kullanıcı tanımlı bir dizinlenmiş özellik kullanırsanız, veri yapısı erişmek için özellik adını belirtmek için gerekir.
+Varsayılan bir dizinli özelliği kullanırsanız, yalnızca sınıf adına başvurarak veri yapısına erişebilirsiniz, ancak kullanıcı tanımlı dizinli bir özellik kullanıyorsanız, veri yapısına erişmek için özellik adını belirtmeniz gerekir.
 
-Yazılmış olduğu bir dizin oluşturucusunu kullanma hakkında bilgi için C#, bkz: [nasıl yapılır: Tüketen bir C# dizin oluşturucu (C++/CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
+C# dilinde yazılmış bir dizin oluşturucunun nasıl kullanıldığı hakkında bilgi için bkz. [nasıl yapılır: C# Dizin Oluşturucusu kullanma (C++/CLI)](../dotnet/how-to-consume-a-csharp-indexer-cpp-cli.md).
 
-Bu kod örneği, varsayılan ve kullanıcı tarafından tanımlanan dizinli özellikleri nasıl kullanacağınızı gösterir:
+Bu kod örneği, varsayılan ve Kullanıcı tanımlı dizinli özelliklerin nasıl kullanılacağını gösterir:
 
 ```cpp
 // mcppv2_property_2.cpp
@@ -153,7 +153,7 @@ int main() {
 [ 0 2 4 6 8 ]
 ```
 
-Sonraki örnek, varsayılan dizin oluşturucuyu kullanarak çağırma gösterilmektedir `this` işaretçi.
+Sonraki örnek, işaretçi kullanılarak varsayılan dizin oluşturucunun nasıl çağrılacağını gösterir **`this`** .
 
 ```cpp
 // call_default_indexer_through_this_pointer.cpp
@@ -177,7 +177,7 @@ private:
 };
 ```
 
-Bu örnek nasıl kullanılacağını gösterir <xref:System.Reflection.DefaultMemberAttribute> varsayılan dizin oluşturucu belirtmek için:
+Bu örnek <xref:System.Reflection.DefaultMemberAttribute> , varsayılan dizin oluşturucuyu belirtmek için nasıl kullanılacağını gösterir:
 
 ```cpp
 // specify_default_indexer.cpp
@@ -193,7 +193,7 @@ public ref struct Squares {
 };
 ```
 
-Sonraki örnek önceki örnekte oluşturulan meta verileri kullanır.
+Sonraki örnek, önceki örnekte oluşturulan meta verileri kullanır.
 
 ```cpp
 // consume_default_indexer.cpp
@@ -211,7 +211,7 @@ int main() {
 
 ## <a name="virtual-properties"></a>Sanal Özellikler
 
-Bu kod örneği, sanal özellikleri bildirme ve kullanma işlemi gösterilmektedir:
+Bu kod örneği, sanal özelliklerin nasıl bildirilemeyeceğini ve kullanılacağını gösterir:
 
 ```cpp
 // mcppv2_property_4.cpp
@@ -259,9 +259,9 @@ int main() {
 
 ## <a name="abstract-and-sealed-properties"></a>Soyut ve korumalı Özellikler
 
-Ancak [soyut](../extensions/abstract-cpp-component-extensions.md) ve [korumalı](../extensions/sealed-cpp-component-extensions.md) anahtar sözcükleri ECMA geçerli olarak belirtilen C++Microsoft /CLI belirtimi C++ derleyici, belirtemezsiniz bunları Önemsiz özellikleri üzerinde ya da Önemsiz bir özelliğin özellik bildirimi.
+[Soyut](../extensions/abstract-cpp-component-extensions.md) ve [KORUMALı](../extensions/sealed-cpp-component-extensions.md) anahtar sözcükler ecma C++/CLI belirtiminde geçerli olarak belirtilse de, Microsoft C++ derleyicisi için bunları önemsiz özelliklerde veya önemsiz olmayan bir özelliğin özellik bildiriminde belirtemezsiniz.
 
-Korumalı veya soyut bir özelliği bildirme için Önemsiz olmayan bir özellik tanımlayın ve ardından belirtin `abstract` veya `sealed` anahtar sözcüğü, alma ve ayarlama erişimci işlevleri.
+Korumalı veya soyut bir özelliği bildirmek için, önemsiz olmayan bir özellik tanımlamanız ve sonra **`abstract`** **`sealed`** Get ve set erişimcisi işlevlerinde or anahtar sözcüğünü belirtmeniz gerekir.
 
 ```cpp
 // properties_abstract_sealed.cpp
@@ -326,7 +326,7 @@ int main() {
 
 ## <a name="multidimensional-properties"></a>Çok boyutlu Özellikler
 
-Çok boyutlu özellikleri, standart bir dizi parametre almayan özellik erişici yöntemlerini tanımlamak için kullanabilirsiniz.
+Standart olmayan parametre sayısına sahip özellik erişimci yöntemlerini tanımlamak için çok boyutlu özellikleri kullanabilirsiniz.
 
 ```cpp
 // mcppv2_property_5.cpp
@@ -368,9 +368,9 @@ int main() {
 1.1
 ```
 
-## <a name="overloading-property-accessors"></a>Özellik erişimcisi aşırı yükleme
+## <a name="overloading-property-accessors"></a>Özellik erişimcileri aşırı yükleme
 
-Aşağıdaki örnek, aşırı yükleme dizini oluşturulan özellikleri gösterilmektedir.
+Aşağıdaki örnek, dizini oluşturulmuş özelliklerin nasıl aşırı yükleneceğini gösterir.
 
 ```cpp
 // mcppv2_property_6.cpp
@@ -409,4 +409,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[property](../extensions/property-cpp-component-extensions.md)
+[özelliði](../extensions/property-cpp-component-extensions.md)

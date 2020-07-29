@@ -108,20 +108,20 @@ helpviewer_keywords:
 - operator>(list) member [STL/CLR]
 - operator>=(list) member [STL/CLR]
 ms.assetid: a70c45c8-a257-4f6b-8434-b27ff6685bac
-ms.openlocfilehash: 7a07f0cc66492c5e0c10c82a7a6971313e13d77b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1c05aff71b16c3edf1348466df325caacb027554
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208565"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225637"
 ---
 # <a name="list-stlclr"></a>liste (STL/CLR)
 
-Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Öğe dizisini, her biri bir öğe depolayan çift yönlü bağlantılı düğümlerin bir listesi olarak yönetmek için kapsayıcı `list` kullanırsınız.
+Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. `list`Her biri bir öğe depolayan çift yönlü bağlantılı düğümlerin bir listesi olarak öğe dizisini yönetmek için kapsayıcısını kullanırsınız.
 
-Aşağıdaki açıklamada, ikinci *değeri* bir başvuru türü olmadığı sürece `GValue`, bu durumda `Value^`.
+Aşağıdaki açıklamada, `GValue` Ikinci *değeri* bir başvuru türü olmadığı sürece, bu örnekte olduğu gibi olur `Value^` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -143,13 +143,13 @@ Denetlenen sıradaki öğenin türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<cliext/List >
+**Üst bilgi:**\<cliext/list>
 
 **Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[list::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[list::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
@@ -203,12 +203,12 @@ Denetlenen sıradaki öğenin türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |[list::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
-|[operator!= (list) (STL/CLR)](#op_neq)|`list` nesnenin başka bir `list` nesnesine eşit olup olmadığını belirler.|
-|[operator< (list) (STL/CLR)](#op_lt)|`list` nesnenin başka bir `list` nesnesinden küçük olup olmadığını belirler.|
-|[operator<= (list) (STL/CLR)](#op_lteq)|`list` nesnenin başka bir `list` nesnesinden küçük veya ona eşit olup olmadığını belirler.|
-|[operator== (list) (STL/CLR)](#op_eq)|`list` nesnenin başka bir `list` nesnesine eşit olup olmadığını belirler.|
-|[operator> (list) (STL/CLR)](#op_gt)|`list` nesnenin başka bir `list` nesnesinden büyük olup olmadığını belirler.|
-|[operator>= (list) (STL/CLR)](#op_gteq)|`list` nesnenin başka bir `list` nesnesinden büyük veya ona eşit olup olmadığını belirler.|
+|[işleç! = (liste) (STL/CLR)](#op_neq)|Bir `list` nesnenin başka bir nesneye eşit olup olmadığını belirler `list` .|
+|[işleç< (liste) (STL/CLR)](#op_lt)|Bir `list` nesnenin başka bir nesneden daha az olup olmadığını belirler `list` .|
+|[işleç<= (liste) (STL/CLR)](#op_lteq)|Bir `list` nesnenin başka bir nesneden küçük veya ona eşit olup olmadığını belirler `list` .|
+|[işleç = = (liste) (STL/CLR)](#op_eq)|Bir `list` nesnenin başka bir nesneye eşit olup olmadığını belirler `list` .|
+|[işleç> (liste) (STL/CLR)](#op_gt)|Bir `list` nesnenin başka bir nesneden daha büyük olup olmadığını belirler `list` .|
+|[operator>= (list) (STL/CLR)](#op_gteq)|Bir `list` nesnenin başka bir nesneden büyük veya ona eşit olup olmadığını belirler `list` .|
 
 ## <a name="interfaces"></a>Arabirimler
 
@@ -219,17 +219,17 @@ Denetlenen sıradaki öğenin türü.
 |<xref:System.Collections.ICollection>|Öğe grubunu saklayın.|
 |<xref:System.Collections.Generic.IEnumerable%601>|Yazılı öğeler aracılığıyla sıralama.|
 |<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş öğelerin grubunu koruyun.|
-|IList\<değer >|Genel kapsayıcıyı koruyun.|
+|IList\<Value>|Genel kapsayıcıyı koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Nesnesi, çift yönlü bağlantı listesinde tek düğüm olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Bir düğümün içeriğini diğerine kopyalayarak, düğümler arasındaki bağlantıları değiştirerek öğeleri yeniden düzenler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir. Bu nedenle, liste şablon sınıfı [kuyruğu (STL/CLR)](../dotnet/queue-stl-clr.md) veya şablon sınıfı [yığını (STL/CLR)](../dotnet/stack-stl-clr.md)için temel alınan kapsayıcı için iyi bir adaydır.
 
-`list` nesne çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [list:: End (STL/CLR)](../dotnet/list-end-stl-clr.md)`()`tarafından döndürülen Yineleyici öğesine karşılık gelir. Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir liste yineleyicisini arttırıp, daha sonra `end()`eşit olarak karşılaştırılacağını sağlayabilirsiniz. Ancak `end()`tarafından döndürülen yineleyici başvurusu oluşturamazsınız.
+Bir `list` nesne çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [list:: End (STL/CLR)](../dotnet/list-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir liste yineleyicisini arttırıp daha sonra eşit olarak karşılaştırılacağını sağlayabilirsiniz `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Bir liste öğesine doğrudan sayısal konumu verildiğinde (rastgele erişim Yineleyici gerektiren) başvurmayacağınızı unutmayın. Bu nedenle, liste şablon sınıfı [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)için temel alınan kapsayıcı *olarak kullanılamaz.*
 
-Liste Yineleyici, ilişkili kapsayıcısına bir tutamacı depolayan bir tutamacı ilişkili liste düğümüne depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. İlişkili liste düğümü bazı listeyle ilişkili olduğu sürece liste Yineleyici geçerli kalır. Ayrıca, geçerli bir yineleyici bir şekilde başvurulmasını sağlar--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. `end()`eşit olmadığı sürece.
+Liste Yineleyici, ilişkili kapsayıcısına bir tutamacı depolayan bir tutamacı ilişkili liste düğümüne depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. İlişkili liste düğümü bazı listeyle ilişkili olduğu sürece liste Yineleyici geçerli kalır. Üstelik, geçerli bir yineleyici bir şekilde gönderilir--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. buna eşit olmadığı sürece `end()` .
 
 Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının *öğelerini yok ettiğini* unutmayın.
 
@@ -239,7 +239,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 Tüm öğeleri değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void assign(size_type count, value_type val);
@@ -250,7 +250,7 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*count*<br/>
+*biriktirme*<br/>
 Eklenecek öğe sayısı.
 
 *adı*<br/>
@@ -269,7 +269,7 @@ Eklenecek öğenin değeri.
 
 İlk üye işlevi denetlenen diziyi değer *değer değeri olan* *Count* öğelerinin yinelemesi ile değiştirir. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
 
-`InIt` bir tamsayı türüdür, ikinci üye işlevi `assign((size_type)first, (value_type)last)`ile aynı şekilde davranır. Aksi takdirde, denetlenen diziyi [`first`, `last`) sırasıyla değiştirir. Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
+`InIt`Bir tamsayı türünde ise ikinci üye işlevi ile aynı şekilde davranır `assign((size_type)first, (value_type)last)` . Aksi takdirde, denetlenen diziyi [ `first` ,) sırasıyla değiştirir `last` . Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
 
 Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ*tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
 
@@ -431,7 +431,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetlenen sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir rastgele erişim yineleyici döndürür. Denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetlenen sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir rastgele erişim yineleyici döndürür. Denetlenen dizinin başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -486,7 +486,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [list:: Erase](../dotnet/list-erase-stl-clr.md) (stl/clr)`(` List:: [BEGIN (](../dotnet/list-begin-stl-clr.md) stl/clr)`(),` [LIST:: End (STL/CLR)](../dotnet/list-end-stl-clr.md)`())`listesini etkin bir şekilde çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi, [list:: Erase (STL/CLR)](../dotnet/list-erase-stl-clr.md) List: `(` [: BEGIN (STL/CLR)](../dotnet/list-begin-stl-clr.md) `(),` [list:: End (STL/CLR](../dotnet/list-end-stl-clr.md)) listesini etkin bir şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -543,7 +543,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek `T2` belirtilmeyen türdeki bir nesneyi tanımlar.
+Türü, `T2` denetimli sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -628,7 +628,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters Yineleyici olarak kullanılabilecek belirtilmemiş türde `T4` bir nesne tanımlar.
+Türü, `T4` denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -724,7 +724,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [List:: size (STL/CLR)](../dotnet/list-size-stl-clr.md)`() == 0`ile eşdeğerdir. Listenin boş olup olmadığını test etmek için bunu kullanırsınız.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [LIST:: size (STL/CLR)](../dotnet/list-size-stl-clr.md) `() == 0` . Listenin boş olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -823,7 +823,7 @@ a x y
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -845,9 +845,9 @@ Silinecek öğe.
 
 İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu*gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
-İkinci üye işlevi [`first`, `last`) aralığındaki denetlenen sıranın öğelerini kaldırır. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
+İkinci üye işlevi, [,) aralığındaki denetlenen sıranın öğelerini kaldırır `first` `last` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
-Her iki üye işlevi de kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa [list:: End (STL/CLR)](../dotnet/list-end-stl-clr.md)`()`.
+Her iki üye işlevi de kaldırılan öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa [list:: End (STL/CLR)](../dotnet/list-end-stl-clr.md) `()` .
 
 Öğeleri silerken, öğe kopyalarının sayısı doğrusal bir şekilde sıra sayısının bitişine ve sonuna kadar olan sayı arasındaki öğe sayısını gösterir. (Sıranın her iki ucunda bir veya daha fazla öğe silinirken, hiçbir öğe kopyası gerçekleşmez.)
 
@@ -1193,7 +1193,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar.
+Tür, `GValue` Bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan türünde bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1241,7 +1241,7 @@ a a c
 
 Belirtilen konumdaki öğeleri ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator insert(iterator where, value_type val);
@@ -1254,7 +1254,7 @@ void insert(iterator where,
 
 #### <a name="parameters"></a>Parametreler
 
-*count*<br/>
+*biriktirme*<br/>
 Eklenecek öğe sayısı.
 
 *adı*<br/>
@@ -1280,11 +1280,11 @@ Kapsayıcının ekleneceği yer.
 
 İkinci üye işlevi, değer *Val*'in *Count* öğelerinin tekrarından birini ekler. Aynı değerin tüm kopyaları olan sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
-`InIt` bir tamsayı türüdür, üçüncü üye işlevi `insert(where, (size_type)first, (value_type)last)`ile aynı şekilde davranır. Aksi takdirde, [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
+`InIt`Bir tamsayı türü ise, üçüncü üye işlevi ile aynı şekilde davranır `insert(where, (size_type)first, (value_type)last)` . Aksi takdirde, [ `first` ,) dizisini ekler `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
 Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
-Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt` bir giriş yineleyicisi ise, üçüncü üye işlevi dizideki her öğe için etkin olarak tek bir ekleme gerçekleştirir. Aksi takdirde, `N` öğeleri eklerken, öğe kopyalarının sayısı `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısı ile doğrusal olur.
+Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt`Bir giriş yineleyicidir, üçüncü üye işlevi dizideki her öğe için etkin bir şekilde tek bir ekleme gerçekleştirir. Aksi halde, öğe eklerken `N` , öğe kopyalarının sayısı doğrusal `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısına eklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1367,7 +1367,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek `T1` belirtilmeyen türdeki bir nesneyi tanımlar.
+Türü, `T1` denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1408,7 +1408,7 @@ x b c
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 list();
@@ -1423,7 +1423,7 @@ list(System::Collections::Generic::IEnumerable<Value>^ right);
 
 #### <a name="parameters"></a>Parametreler
 
-*count*<br/>
+*biriktirme*<br/>
 Eklenecek öğe sayısı.
 
 *adı*<br/>
@@ -1450,19 +1450,19 @@ Oluşturucu:
 
 `list(list<Value>% right);`
 
-denetlenen sırayı [`right.begin()`, `right.end()`) sırasıyla başlatır. Liste nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+denetlenen sırayı [ `right.begin()` ,) sırasıyla başlatır `right.end()` . Liste nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `list(list<Value>^ right);`
 
-denetlenen sırayı [`right->begin()`, `right->end()`) sırasıyla başlatır. Tutamacı *doğru*olan List nesnesi tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+denetlenen sırayı [ `right->begin()` ,) sırasıyla başlatır `right->end()` . Tutamacı *doğru*olan List nesnesi tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `explicit list(size_type count);`
 
-*sayı* öğeleri olan denetlenen sırayı, her biri `value_type()`değer ile başlatır. Kapsayıcıyı, varsayılan değere sahip olan öğelerle birlikte doldurmanız için kullanırsınız.
+Her bir değer içeren *sayı* öğeleri olan denetimli sırayı başlatır `value_type()` . Kapsayıcıyı, varsayılan değere sahip olan öğelerle birlikte doldurmanız için kullanırsınız.
 
 Oluşturucu:
 
@@ -1476,7 +1476,7 @@ Oluşturucu:
 
 `list(InIt first, InIt last);`
 
-denetlenen sırayı [`first`, `last`) sırasıyla başlatır. Bunu, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanırsınız.
+denetlenen sırayı [ `first` ,) sırasıyla başlatır `last` . Bunu, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanırsınız.
 
 Oluşturucu:
 
@@ -1553,7 +1553,7 @@ x x x x x x
 
 Sıralı iki kontrollü diziyi birleştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void merge(list<Value>% right);
@@ -1571,11 +1571,11 @@ Birleştirilecek kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, tüm öğeleri denetimli sırayla *kaldırır ve denetimli* diziye ekler. Her iki dizi de `operator<` tarafından daha önce sıralanmalıdır--öğeler, herhangi bir sırada ilerleyerek değeri azaltmamalıdır. Elde edilen sıra, `operator<`tarafından da sıralanır. Değerde arttığı iki diziyi, değerde de artan bir diziye birleştirmek için bu üye işlevini kullanın.
+İlk üye işlevi, tüm öğeleri denetimli sırayla *kaldırır ve denetimli* diziye ekler. Her iki dizi de daha önce sıralanmış olmalıdır `operator<` --öğeler, her iki sırada da ilerleyerek değeri azaltmamalıdır. Elde edilen sıra, tarafından da sıralanır `operator<` . Değerde arttığı iki diziyi, değerde de artan bir diziye birleştirmek için bu üye işlevini kullanın.
 
-İkinci üye işlevi ilki ile aynı şekilde davranır, diziler `pred`göre sıralanır  -- `pred(X, Y)` dizideki öğe `Y` takip eden herhangi bir öğe `X` için false olmalıdır. Belirlediğiniz bir koşul işlevi veya temsilci tarafından sıralanan iki diziyi birleştirmek için kullanın.
+İkinci üye işlevi, sıralamadaki `pred`  --  `pred(X, Y)` öğeyi takip eden herhangi bir öğe için, diziler `X` sıralama ölçütü dışında, ilk ile aynı şekilde davranır `Y` . Belirlediğiniz bir koşul işlevi veya temsilci tarafından sıralanan iki diziyi birleştirmek için kullanın.
 
-Her iki işlev de kararlı bir birleştirme gerçekleştirir--orijinal denetimli dizilerden birinde hiçbir öğe çifti elde edilen kontrollü sırada tersine çevrilir. Ayrıca, sonuçta elde edilen denetlenen dizide `X` ve `Y` bir çiftinin eşit sıralaması varsa--`!(X < Y) && !(X < Y)`--orijinal denetimli dizideki bir öğe, *sağ*tarafından denetlenen dizideki bir öğeden önce görünür.
+Her iki işlev de kararlı bir birleştirme gerçekleştirir--orijinal denetimli dizilerden birinde hiçbir öğe çifti elde edilen kontrollü sırada tersine çevrilir. Ayrıca, bir öğe çifti `X` ve `Y` elde edilen denetimli dizide eşdeğer sıralama varsa-- `!(X < Y) && !(X < Y)` --orijinal denetimli dizideki bir öğe, *sağa*denetlenen dizideki bir öğeden önce görünür.
 
 ### <a name="example"></a>Örnek
 
@@ -1650,7 +1650,7 @@ c1.size() = 0
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 list<Value>% operator=(list<Value>% right);
@@ -1663,7 +1663,7 @@ Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -1805,7 +1805,7 @@ void push_back(value_type val);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın sonunda `val` değeri olan bir öğe ekler. Listeye başka bir öğe eklemek için bunu kullanırsınız.
+Üye işlevi denetlenen sıranın sonunda değeri olan bir öğe ekler `val` . Listeye başka bir öğe eklemek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1845,7 +1845,7 @@ void push_front(value_type val);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın başlangıcında `val` değeri olan bir öğe ekler. Başka bir öğeyi listeye eklemek için bunu kullanırsınız.
+Üye işlevi denetlenen sıranın başlangıcında değeri olan bir öğe ekler `val` . Başka bir öğeyi listeye eklemek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1885,7 +1885,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, `beginning` ters sıranın öğesini belirler. Doğru sırada görülen denetimli sıranın başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1987,7 +1987,7 @@ A B C
 
 Belirtilen değere sahip bir öğeyi kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void remove(value_type val);
@@ -2000,7 +2000,7 @@ Kaldırılacak öğenin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `((System::Object^)val)->Equals((System::Object^)x)` true (varsa) olduğu denetimli dizideki bir öğeyi kaldırır. Belirtilen değere sahip rastgele bir öğeyi silmek için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki bir öğeyi `((System::Object^)val)->Equals((System::Object^)x)` (varsa) kaldırır. Belirtilen değere sahip rastgele bir öğeyi silmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2046,7 +2046,7 @@ a c
 
 Belirtilen testi geçiren öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Pred1>
@@ -2060,7 +2060,7 @@ Kaldırılacak öğeler için test.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `pred(X)` doğru olan `X` her öğe için denetimli sıra (siler) kaldırır. Bir işlev veya temsilci olarak belirttiğiniz bir koşulu karşılayan tüm öğeleri kaldırmak için bunu kullanırsınız.
+Üye işlevi, doğru olan her öğe için denetimli sıra (siler) öğesini kaldırır `X` `pred(X)` . Bir işlev veya temsilci olarak belirttiğiniz bir koşulu karşılayan tüm öğeleri kaldırmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2118,7 +2118,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, `end` ters sıranın öğesini belirler. Bu uygulamayı, `current` geriye doğru sırada görülen denetlenen sıranın sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2166,7 +2166,7 @@ y x c
 
 Öğe sayısını değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void resize(size_type new_size);
@@ -2183,7 +2183,7 @@ Padding öğesinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri hem [list:: size (STL/CLR)](../dotnet/list-size-stl-clr.md)`()` henceileri 'nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi `value_type()`değeri olan öğeleri ekler, ikinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe listesini etkin bir şekilde siler [:: Boyut (STL/CLR)](../dotnet/list-size-stl-clr.md)`() -` `new_size` süreleri. Kontrol edilen sıranın boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
+Üye işlevleri hem [list:: size (STL/CLR)](../dotnet/list-size-stl-clr.md) `()` henceileri ' nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `value_type()` ; İkinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [listesi:: size (STL/CLR)](../dotnet/list-size-stl-clr.md) zamanlarını etkin bir şekilde siler `() -` `new_size` . Kontrol edilen sıranın boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2281,7 +2281,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen sıra için ters Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T3`.
+Tür, `T3` denetlenen sıra için ters Yineleyici olarak işlev görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2330,7 +2330,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı hakkında bilgi için bkz. [list:: Empty (STL/CLR)](../dotnet/list-empty-stl-clr.md)`()`.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey, sıranın sıfır dışında bir boyuta sahip olup olmadığı konusunda bilgi için bkz. [list:: Empty (STL/CLR)](../dotnet/list-empty-stl-clr.md) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2423,7 +2423,7 @@ end()-begin() = 3
 
 Denetlenen sırayı sıralar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void sort();
@@ -2438,9 +2438,9 @@ template<typename Pred2>
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, denetlenen dizideki öğeleri, `operator<` göre sıralanabilmeleri için yeniden düzenler ve dizi boyunca ilerleyerek öğelerin değeri azalmaz. Diziyi artan sırada sıralamak için bu üye işlevini kullanın.
+İlk üye işlevi denetlenen dizideki öğeleri yeniden düzenler, böylece `operator<` sıralama sırasında ilerleyerek öğelerin değeri azalmaz. Diziyi artan sırada sıralamak için bu üye işlevini kullanın.
 
-İkinci üye işlevi ilki ile aynı şekilde davranır, sıranın `pred` -- `pred(X, Y)`, sonuçta elde edilen dizideki öğe `Y` izleyen herhangi bir öğe için false `X`. Bu işlemi, bir koşul işlevi veya temsilci ile belirttiğiniz sırada sıralamayı sıralamak için kullanırsınız.
+İkinci üye işlevi ilki ile aynı şekilde davranır, ancak sıranın sıralama ölçütü `pred`  --  `pred(X, Y)` `X` sonuç dizisindeki öğesi takip eden herhangi bir öğe için false şeklindedir `Y` . Bu işlemi, bir koşul işlevi veya temsilci ile belirttiğiniz sırada sıralamayı sıralamak için kullanırsınız.
 
 Her iki işlev de kararlı bir sıralama gerçekleştirir--orijinal denetimli dizide hiçbir öğe çifti, sonuçta elde edilen kontrollü sırada ters çevrilir.
 
@@ -2488,7 +2488,7 @@ a b c
 
 Düğümler arasındaki bağlantıları restitch.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void splice(iterator where, list<Value>% right);
@@ -2514,11 +2514,11 @@ Daha önce nereye splice olarak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, denetimli dizideki öğeden önce tarafından denetlenen sırayı, *WHERE*tarafından *işaret ederek ekler* . Ayrıca tüm öğeleri *sağdan*kaldırır. (`%right` `this`eşit olmamalıdır.) Tek bir listenin tümünü başka bir listeye eklemek için kullanabilirsiniz.
+İlk üye işlevi, denetimli dizideki öğeden önce tarafından denetlenen sırayı, *WHERE*tarafından *işaret ederek ekler* . Ayrıca tüm öğeleri *sağdan*kaldırır. ( `%right` eşit olmamalı **`this`** .) Tek bir listenin tümünü başka bir listeye eklemek için kullanabilirsiniz.
 
-İkinci üye işlevi, tarafından işaret edilen öğeyi *ilk* olarak denetim sırasına göre *kaldırır ve denetimli* dizideki öğeden önce *WHERE*tarafından işaret ederek ekler. (`where` `==` `first` `||` `where` `== ++first`, hiçbir değişiklik gerçekleşmez.) Bir listenin tek bir öğesini diğerine eklemek için bunu kullanırsınız.
+İkinci üye işlevi, tarafından işaret edilen öğeyi *ilk* olarak denetim sırasına göre *kaldırır ve denetimli* dizideki öğeden önce *WHERE*tarafından işaret ederek ekler. `where`( `==` `first` `||` `where` `== ++first`, hiçbir değişiklik gerçekleşmez.) Bir listenin tek bir öğesini diğerine eklemek için bunu kullanırsınız.
 
-Üçüncü üye işlevi, denetlenen dizideki *öğeden önce tarafından denetlenen sıraya göre [* `first`, `last` *) tarafından belirlenen*alt aralığı ekler. Ayrıca, özgün alt aralığı *sağ*tarafından denetlenen sırayla kaldırır. (`right` `==` `this`, [`first`, `last`) aralığı *WHERE*tarafından işaret edilen öğeyi içermemelidir.) Sıfır veya daha fazla öğenin bir alt dizisini başka bir listeden diğerine eklemek için bunu kullanırsınız.
+Üçüncü üye işlevi, `first` `last` denetlenen dizideki öğeden önce *tarafından* denetlenen sıra [,) tarafından belirlenen alt aralığı, *WHERE*tarafından işaret edilen öğesinden ekler. Ayrıca, özgün alt aralığı *sağ*tarafından denetlenen sırayla kaldırır. ( `right == this` [,) Aralığı, `first` `last` *WHERE*tarafından işaret edilen öğe içermemelidir.) Sıfır veya daha fazla öğenin bir alt dizisini başka bir listeden diğerine eklemek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2581,7 +2581,7 @@ c2.size() = 0
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void swap(list<Value>% right);
@@ -2594,7 +2594,7 @@ void swap(list<Value>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `*this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2694,7 +2694,7 @@ a b c
 
 Belirtilen testi geçiren bitişik öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void unique();
@@ -2709,9 +2709,9 @@ template<typename Pred2>
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, bir önceki öğesiyle eşit olarak karşılaştırdığı her öğe denetimli sırayla (siler) kaldırılır. öğe `X` öğeden önce `Y` ve `X == Y`, üye işlevi `Y`kaldırır. Eşit olarak karşılaştırıldığı bitişik öğelerin her alt dizisinin bir kopyasını kaldırmak için bunu kullanırsınız. Denetlenen sıra sıralı ise (örneğin, [list:: Sort (STL/CLR)](../dotnet/list-sort-stl-clr.md)`()`, üye işlevi yalnızca benzersiz değerlere sahip öğeleri bırakır. (Bu nedenle ad).
+İlk üye işlevi, bir önceki öğesiyle eşit olarak karşılaştırdığı her öğe denetimli sırayla (siler) kaldırılır--Eğer öğesi `X` öğeden önce `Y` ve `X == Y` üye işlevi kaldırılır `Y` . Eşit olarak karşılaştırıldığı bitişik öğelerin her alt dizisinin bir kopyasını kaldırmak için bunu kullanırsınız. Denetlenen sıra sıralı ise (örneğin, [list:: Sort (STL/CLR)](../dotnet/list-sort-stl-clr.md) `()` , üye işlevinin yalnızca benzersiz değerlere sahip öğelerin ayrıldığına unutmayın. (Bu nedenle ad).
 
-İkinci üye işlevi ilki ile aynı şekilde davranır, bunun dışında her öğe `Y`, `pred(X, Y)`bir öğe `X` takip eder. Belirlediğiniz bir koşul işlevini veya temsilciyi karşılayan bitişik öğelerin her alt dizisinin bir kopyasını kaldırmak için bunu kullanırsınız. Denetlenen sıra sıralı ise, `sort(pred)`çağırarak üye işlevi yalnızca diğer öğelerle eşdeğer sıralama bulunmayan öğelerin ayrıldığına unutmayın.
+İkinci üye işlevi ilki ile aynı şekilde davranır, ancak `Y` bir öğeden sonraki her öğeyi kaldırır `X` `pred(X, Y)` . Belirlediğiniz bir koşul işlevini veya temsilciyi karşılayan bitişik öğelerin her alt dizisinin bir kopyasını kaldırmak için bunu kullanırsınız. Denetlenen dizi sıralı ise, `sort(pred)` üye işlevi yalnızca diğer öğelerle eşdeğer sıralama bulunmayan öğelerin ayrıldığına unutmayın.
 
 ### <a name="example"></a>Örnek
 
@@ -2805,7 +2805,7 @@ a b c
 
 Liste eşit değildir karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2823,7 +2823,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left == right)`döndürür. İki liste öğe öğesine göre karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(left == right)` . İki liste öğe öğesine göre karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2870,11 +2870,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-list-stlclr"></a><a name="op_lt"></a>işleç&lt; (liste) (STL/CLR)
+## <a name="operatorlt-list-stlclr"></a><a name="op_lt"></a>işleç &lt; (liste) (STL/CLR)
 
 Liste karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2892,7 +2892,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi true değerini döndürür, en düşük konum için de bu `!(right[i] < left[i])` `left[i] < right[i]`true `i`. Aksi takdirde, bu, iki liste öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan ayrılmadığını* test etmek için onu `left->size() < right->size()` döndürür.
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi takdirde, `left->size() < right->size()` iki liste öğe öğesine göre karşılaştırıldığı zaman, *sol taraftaki* bir süre önce sola *doğru* sıralı olup olmadığını test etmek için bunu kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2939,11 +2939,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-list-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (liste) (STL/CLR)
+## <a name="operatorlt-list-stlclr"></a><a name="op_lteq"></a>operator &lt; = (liste) (STL/CLR)
 
 Küçüktür veya eşit karşılaştırma listesi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -2961,7 +2961,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(right < left)`döndürür. İki liste öğe öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında* sıralı olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(right < left)` . İki liste öğe öğesine göre karşılaştırıldığı zaman *farenin sağ* *tarafında* sıralı olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -3012,7 +3012,7 @@ a b d
 
 Liste eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -3030,7 +3030,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her konum için `i``left[i] ==` `right[i]`için true değerini döndürür. Bu, iki liste öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için kullanılır.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her bir konum için aynı uzunluğa sahip olursa true değerini döndürür `i` `left[i] ==` `right[i]` . Bu, iki liste öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -3077,11 +3077,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-list-stlclr"></a><a name="op_gt"></a>işleç&gt; (liste) (STL/CLR)
+## <a name="operatorgt-list-stlclr"></a><a name="op_gt"></a>işleç &gt; (liste) (STL/CLR)
 
 Karşılaştırmadan daha büyük bir liste.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -3099,7 +3099,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `right` `<` `left`döndürüyor. Bu, iki liste öğe öğesine göre karşılaştırıldığı zaman, *sol* *taraftaki doğru olup* olmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `right` `<` `left` . Bu, iki liste öğe öğesine göre karşılaştırıldığı zaman, *sol* *taraftaki doğru olup* olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -3146,11 +3146,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-list-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (liste) (STL/CLR)
+## <a name="operatorgt-list-stlclr"></a><a name="op_gteq"></a>operator &gt; = (liste) (STL/CLR)
 
 Büyük veya eşit karşılaştırmayı listele.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value>
@@ -3168,7 +3168,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left` `<` `right)`döndürüyor. İki liste öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(left` `<` `right)` . İki liste öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

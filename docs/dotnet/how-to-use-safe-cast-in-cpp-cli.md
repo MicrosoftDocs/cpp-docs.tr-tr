@@ -1,23 +1,23 @@
 ---
-title: 'Nasıl yapılır: İçinde üzerinde safe_cast kullanma C++/CLI'
+title: 'Nasıl yapılır: C++/CLI üzerinde safe_cast kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - safe_cast keyword [C++], upcasting
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-ms.openlocfilehash: 66faadba9530bc7f3c12513277582e405e1b1b34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 56ac19871bcdc5162b959f6d60103387551ac2a8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62389092"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225663"
 ---
-# <a name="how-to-use-safecast-in-ccli"></a>Nasıl yapılır: İçinde üzerinde safe_cast kullanma C++/CLI
+# <a name="how-to-use-safe_cast-in-ccli"></a>Nasıl yapılır: C++/CLI üzerinde safe_cast kullanma
 
-Bu makalede, üzerinde safe_cast kullanma işlemi gösterilmektedir C++/CLI uygulamalar. Safe_cast içinde hakkında bilgi için C++/CX, bkz: [safe_cast](../extensions/safe-cast-cpp-component-extensions.md).
+Bu makalede, C++/CLı uygulamalarında safe_cast nasıl kullanılacağı gösterilmektedir. C++/CX içindeki safe_cast hakkında bilgi için bkz. [safe_cast](../extensions/safe-cast-cpp-component-extensions.md).
 
-## <a name="upcasting"></a>Yukarı çevrim
+## <a name="upcasting"></a>Yukarı atama
 
-Yukarı çevrim türetilmiş bir tür değerinden bool değerine atama için temel sınıflarının biri olur. Bu tür dönüştürme güvenlidir ve açık tür dönüştürme gösterimi gerektirmez. Aşağıdaki örnek, bir yukarı çevrim ile yapma işlemi açıklanır `safe_cast` ve olmadan.
+Bir upcast, türetilmiş bir türden temel sınıflarından birine bir tür dönüştürme işlemi olur. Bu atama güvenlidir ve açık bir atama gösterimi gerektirmez. Aşağıdaki örnek, ve olmadan bir upcast 'ın nasıl gerçekleştirileceğini gösterir `safe_cast` .
 
 ```cpp
 // safe_upcast.cpp
@@ -66,9 +66,9 @@ in C::Test
 in B::Test2
 ```
 
-## <a name="downcasting"></a>Alta dönüştürme işlemi
+## <a name="downcasting"></a>Alta çevrim
 
-Alta bir temel sınıftan türetilmiş bir sınıf bir temel sınıftan bir atamanın olur.  Bir alta dönüştürme işlemi yalnızca çalışma zamanında ele nesne aslında bir türetilmiş sınıf nesnesinde ele alıyor mu, güvenli değildir.  Farklı `static_cast`, `safe_cast` dinamik denetimi gerçekleştirir ve oluşturur <xref:System.InvalidCastException> dönüştürme başarısız olursa.
+Bir alta dönüştürme, temel sınıftan türetilmiş bir sınıfa bir taban sınıftan bir tür dönüştürme işlemi olur.  Yalnızca çalışma zamanında adreslenen nesne bir türetilmiş sınıf nesnesini ele alıyorsa, alta dönüştürme güvenlidir.  Aksine **`static_cast`** , `safe_cast` dinamik bir denetim gerçekleştirir ve <xref:System.InvalidCastException> dönüştürme başarısız olursa oluşturur.
 
 ```cpp
 // safe_downcast.cpp
@@ -119,9 +119,9 @@ in C::Test()
 in B::Test2()
 ```
 
-## <a name="safecast-with-user-defined-conversions"></a>safe_cast ile kullanıcı tanımlı dönüşümler
+## <a name="safe_cast-with-user-defined-conversions"></a>Kullanıcı tanımlı dönüşümlerle safe_cast
 
-Sonraki örnek nasıl kullanılacağını göstermektedir `safe_cast` kullanıcı tanımlı dönüşümler çağırmak için.
+Sonraki örnek, `safe_cast` Kullanıcı tanımlı dönüştürmeleri çağırmak için nasıl kullanabileceğinizi gösterir.
 
 ```cpp
 // safe_cast_udc.cpp
@@ -174,13 +174,13 @@ in operator R^(V& v
 in operator V^(R^ r)
 ```
 
-## <a name="safecast-and-boxing-operations"></a>safe_cast ve kutulamayı işlemleri
+## <a name="safe_cast-and-boxing-operations"></a>safe_cast ve paketleme işlemleri
 
 ### <a name="boxing"></a>Kutulama
 
-Kutulama, derleyici tarafından eklenen, kullanıcı tanımlı dönüştürme olarak tanımlanır.  Bu nedenle, kullanabileceğiniz `safe_cast` box'ta CLR yığındaki bir değer.
+Paketleme, derleyici eklenmiş, Kullanıcı tanımlı bir dönüştürme olarak tanımlanır.  Bu nedenle, `safe_cast` CLR yığınında bir değer kutusunu kullanabilirsiniz.
 
-Aşağıdaki örnek, basit ve kullanıcı tanımlı değer türleri ile kutulama gösterir.  A `safe_cast` yerel yığında olan ve böylece atık olarak toplanmış yığındaki bir değişkene atanabilir bir değer türü değişkeni kutular.
+Aşağıdaki örnek, basit ve Kullanıcı tanımlı değer türleriyle kutulamayı gösterir.  Bir `safe_cast` kutu, atık toplanan yığında bir değişkene atanabilmesi için yerel yığında bulunan bir değer türü değişkenidir.
 
 ```cpp
 // safe_cast_boxing.cpp
@@ -206,7 +206,7 @@ int main() {
 }
 ```
 
-Sonraki örnek kutulama, bir kullanıcı tanımlı dönüştürme üzerinden öncelikli olduğunu gösterir bir `safe_cast` işlemi.
+Sonraki örnek, kutulamayı bir işlemdeki Kullanıcı tanımlı dönüştürmeye göre öncelikte gösterir `safe_cast` .
 
 ```cpp
 // safe_cast_boxing_2.cpp
@@ -239,11 +239,11 @@ int main() {
 }
 ```
 
-### <a name="unboxing"></a>Kutudan çıkarma
+### <a name="unboxing"></a>Çıkarma
 
-Kutudan çıkarma derleyici tarafından eklenen, kullanıcı tanımlı dönüştürme olarak tanımlanır.  Bu nedenle, kullanabileceğiniz `safe_cast` CLR yığındaki bir değerin için.
+Kutudan çıkarma, derleyici eklenmiş, Kullanıcı tanımlı bir dönüştürme olarak tanımlanır.  Bu nedenle, `safe_cast` CLR yığınında bir değeri kaldırmak için öğesini kullanabilirsiniz.
 
-Kutudan çıkarma, bir kullanıcı tanımlı dönüştürme olduğu halde kutulama aksine, kutudan çıkarma gerekir açık olması — diğer bir deyişle, tarafından gerçekleştirilmesi gereken bir `static_cast`, C stili tür dönüştürme; veya `safe_cast`; kutudan çıkarma gerçekleştirilemez örtük olarak.
+Kutudan çıkarma Kullanıcı tanımlı bir dönüştürmedir, ancak kutulamayı açık olmalıdır — yani, bir **`static_cast`** , C stili tür dönüştürme tarafından gerçekleştirilmesi gerekir, ya da `safe_cast` kutudan çıkarma örtük olarak gerçekleştirilemez.
 
 ```cpp
 // safe_cast_unboxing.cpp
@@ -254,7 +254,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek ile değer türleri ve basit türler kutudan çıkarma gösterilmektedir.
+Aşağıdaki örnek, değer türleri ve ilkel türler ile kutudan çıkarma gösterir.
 
 ```cpp
 // safe_cast_unboxing_2.cpp
@@ -300,9 +300,9 @@ int main() {
 }
 ```
 
-## <a name="safecast-and-generic-types"></a>safe_cast ve genel türler
+## <a name="safe_cast-and-generic-types"></a>safe_cast ve genel türler
 
-Sonraki örnek nasıl kullanılacağını göstermektedir `safe_cast` ile bir genel tür alta dönüştürme gerçekleştirmek için.
+Sonraki örnek, `safe_cast` genel bir tür ile alta dönüştürme gerçekleştirmek için nasıl kullanabileceğinizi gösterir.
 
 ```cpp
 // safe_cast_generic_types.cpp
