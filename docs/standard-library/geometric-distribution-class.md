@@ -23,18 +23,18 @@ helpviewer_keywords:
 - std::geometric_distribution [C++], param_type
 - std::geometric_distribution [C++], param_type
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
-ms.openlocfilehash: 44b624995ed274212a2699cb457c91dfa4530f03
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6a9e2c55da7278c50d43a63a4cce79d2a21f573c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370645"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233190"
 ---
 # <a name="geometric_distribution-class"></a>geometric_distribution Sınıfı
 
-Geometrik bir dağılım oluşturur.
+Geometrik bir dağıtım üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class IntType = int>
@@ -67,33 +67,33 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *IntType*\
-**İnt**varsayılan olarak, tümsedo sonuç türü. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Tamsayı sonuç türü, varsayılan olarak olur **`int`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
-*ÜRNG*\
-Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, geometrik dağılıma sahip kullanıcı tarafından belirtilen integral türüdeğerlerini üreten bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, geometrik dağılımın Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[geometric_distribution](#geometric_distribution)|`geometric_distribution::p`|`geometric_distribution::param`|
 |`geometric_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `p()` depolanan dağıtım parametresi `p`için değeri döndürür.
+Property işlevi, `p()` depolanan dağıtım parametresi için değeri döndürür `p` .
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-Ki-kare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesi [Geometrik Dağılım'a](https://go.microsoft.com/fwlink/p/?linkid=400529)bakın.
+Kikare dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [geometrik dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400529).
 
 ## <a name="example"></a>Örnek
 
@@ -205,13 +205,13 @@ Distribution for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="geometric_distributiongeometric_distribution"></a><a name="geometric_distribution"></a>geometric_distribution:geometric_distribution
+## <a name="geometric_distributiongeometric_distribution"></a><a name="geometric_distribution"></a>geometric_distribution:: geometric_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit geometric_distribution(double p = 0.5);
@@ -220,23 +220,23 @@ explicit geometric_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*P*\
-Dağıtım `p` parametresi.
+*Lama*\
+`p`Dağıtım parametresi.
 
-*parm*\
-Dağılımı oluşturmak için kullanılan parametre yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < p && p < 1.0`
+**Önkoşul:**`0.0 < p && p < 1.0`
 
-İlk oluşturucu, depolanan `p` değeri *p*değerini tutan bir nesne inşa eder.
+İlk Oluşturucu, saklı `p` değeri *p*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="geometric_distributionparam_type"></a><a name="param_type"></a>geometric_distribution::param_type
+## <a name="geometric_distributionparam_type"></a><a name="param_type"></a>geometric_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -251,18 +251,18 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*P*\
-Dağıtım `p` parametresi.
+*Lama*\
+`p`Dağıtım parametresi.
 
-*Doğru*\
-Bunu `param_type` karşılaştırmak için örnek.
+*Right*\
+`param_type`Bunu ile Karşılaştırılacak örnek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < p && p < 1.0`
+**Önkoşul:**`0.0 < p && p < 1.0`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

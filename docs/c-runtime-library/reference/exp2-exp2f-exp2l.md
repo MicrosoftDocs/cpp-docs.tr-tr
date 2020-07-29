@@ -37,18 +37,18 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-ms.openlocfilehash: 3a80efab34b45348ca00f09b2fd6e2ea5077fd86
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d2eb3f6d27e943110c5e82968d4fee949644601f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909645"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234165"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
 2 ' nin belirtilen değere göre oluşturulan hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double exp2(
@@ -74,7 +74,7 @@ long double exp2l(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Üs değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -84,7 +84,7 @@ Başarılı olursa, *x*'nin taban 2 üssün, yani 2<sup>x</sup>döndürür. Aksi
 |Sorun|Döndürülmesini|
 |-----------|------------|
 |*x* = ± 0|1|
-|*x* =-sonsuzluk|+ 0|
+|*x* =-sonsuzluk|+0|
 |*x* = + sonsuzluk|+ SONSUZLUK|
 |*x* = Nan|NaN|
 |Taşma aralığı hatası|+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
@@ -94,7 +94,7 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long Double** türlerini alıp döndüren **exp2** aşırı yüklerini çağırabilirsiniz. C programında, **exp2** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **exp2** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **exp2** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -102,7 +102,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**Exp**, **expf**, **expl**|\<Math. h>|\<cmath>|
+|**Exp**, **expf**, **expl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

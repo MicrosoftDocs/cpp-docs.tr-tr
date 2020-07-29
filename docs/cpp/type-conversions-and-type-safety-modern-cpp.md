@@ -3,36 +3,36 @@ title: Tür dönüştürmeleri ve tür güvenliği
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: dbca9057622ab1a92b74e2958b8dfbe8d810fede
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 28adbc261b5b4376f947e00695fe66650739438d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246119"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87223544"
 ---
 # <a name="type-conversions-and-type-safety"></a>Tür dönüştürmeleri ve tür güvenliği
 
-Bu belge, ortak tür dönüştürme sorunlarını tanımlar ve C++ kodunuzda bunları nasıl önleyebileceğinizi açıklar.
+Bu belge, ortak tür dönüştürme sorunlarını tanımlar ve bunları C++ kodunuzda nasıl önleyebileceğinizi açıklar.
 
-Bir C++ program yazdığınızda tür açısından güvenli olduğundan emin olmak önemlidir. Yani, her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri kabul edilebilir bir tür veri depolamasıdır ve farklı türlerin değerlerini içeren işlemler "anlamlı olsun" ve veri kaybına neden olmaz, bit desenlerinin yanlış yorumlanması veya bellek bozulması. Değerleri bir türden diğerine kesinlikle açıkça veya örtük olarak dönüştürdüğü bir program, tanım ile tür açısından güvenlidir. Ancak, tür dönüştürmeleri, hatta güvenli olmayan dönüştürmeler bazen gereklidir. Örneğin, kayan nokta işleminin sonucunu **int**türünde bir değişkende depolamanız veya işaretsiz bir **int** içindeki değeri, imzalı bir **int**alan bir işleve geçirmeniz gerekebilir. Her iki örnek de, veri kaybına neden olabileceği veya bir değerin yeniden yorumlanabileceğinden güvenli olmayan dönüştürmeleri gösterir.
+Bir C++ programı yazdığınızda, türün güvenli olduğundan emin olmak önemlidir. Yani, her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri kabul edilebilir bir tür veri depolamasıdır ve farklı türlerin değerlerini içeren işlemler "anlamlı olsun" ve veri kaybına neden olmaz, bit desenlerinin yanlış yorumlanması veya bellek bozulması anlamına gelir. Değerleri bir türden diğerine kesinlikle açıkça veya örtük olarak dönüştürdüğü bir program, tanım ile tür açısından güvenlidir. Ancak, tür dönüştürmeleri, hatta güvenli olmayan dönüştürmeler bazen gereklidir. Örneğin, bir kayan nokta işleminin sonucunu türünde bir değişkende depolamanız **`int`** ya da değerini bir ' **`unsigned int`** a alan bir işleve geçirmeniz gerekebilir **`signed int`** . Her iki örnek de, veri kaybına neden olabileceği veya bir değerin yeniden yorumlanabileceğinden güvenli olmayan dönüştürmeleri gösterir.
 
 Derleyici güvenli olmayan bir dönüştürme algıladığında bir hata ya da uyarı verir. Bir hata derlemeyi durduruyor; bir uyarı derlemenin devam etmesine izin verir, ancak koddaki olası bir hatayı gösterir. Ancak, programınız uyarı olmadan derlense bile, yanlış sonuçlar üreten örtük tür Dönüştürmelere yol gösteren bir kod de içerebilir. Tür hataları, koddaki açık dönüşümler veya yayınlar tarafından da kullanılabilir.
 
 ## <a name="implicit-type-conversions"></a>Örtük tür dönüştürmeleri
 
-Bir ifade farklı yerleşik türlerin işlenenleri içerdiğinde ve açık bir tür yoksa, derleyici, türlerin eşleşmesi için işlenenlerden birini dönüştürmek üzere yerleşik *Standart dönüştürmeleri* kullanır. Derleyici, dönüştürmeleri başarılı olana kadar iyi tanımlanmış bir sırayla dener. Seçilen dönüştürme bir yükseltmedir, derleyici bir uyarı vermez. Dönüştürme bir daraltma ise, derleyici olası veri kaybı hakkında bir uyarı verir. Gerçek veri kaybı oluşması, ilgili gerçek değerlere bağlıdır, ancak bu uyarıyı hata olarak değerlendirmenizi öneririz. Kullanıcı tanımlı bir tür varsa, derleyici, sınıf tanımında belirttiğiniz dönüştürmeleri kullanmaya çalışır. Kabul edilebilir bir dönüştürme bulamazsa, derleyici bir hata verir ve programı derlemez. Standart dönüştürmeleri yöneten kurallar hakkında daha fazla bilgi için bkz. [Standart dönüştürmeler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı dönüştürmeler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md).
+Bir ifade farklı yerleşik türlerin işlenenleri içerdiğinde ve açık bir tür yoksa, derleyici, türlerin eşleşmesi için işlenenlerden birini dönüştürmek üzere yerleşik *Standart dönüştürmeleri* kullanır. Derleyici, dönüştürmeleri başarılı olana kadar iyi tanımlanmış bir sırayla dener. Seçilen dönüştürme bir yükseltmedir, derleyici bir uyarı vermez. Dönüştürme bir daraltma ise, derleyici olası veri kaybı hakkında bir uyarı verir. Gerçek veri kaybı oluşması, ilgili gerçek değerlere bağlıdır, ancak bu uyarıyı hata olarak değerlendirmenizi öneririz. Kullanıcı tanımlı bir tür varsa, derleyici, sınıf tanımında belirttiğiniz dönüştürmeleri kullanmaya çalışır. Kabul edilebilir bir dönüştürme bulamazsa, derleyici bir hata verir ve programı derlemez. Standart dönüştürmeleri yöneten kurallar hakkında daha fazla bilgi için bkz. [Standart dönüştürmeler](../cpp/standard-conversions.md). Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı dönüşümler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md).
 
 ### <a name="widening-conversions-promotion"></a>Genişletme dönüştürmeleri (yükseltme)
 
 Genişleyen bir dönüştürmede, daha küçük bir değişkende bir değer, veri kaybı olmadan daha büyük bir değişkene atanır. Genişletme dönüştürmeleri her zaman güvende olduğundan, derleyici onları sessizce gerçekleştirir ve uyarı vermez. Aşağıdaki dönüşümler genişletme dönüştürmelerinde.
 
-|Başlangıç|Bitiş|
+|Kaynak|Amaç|
 |----------|--------|
-|**Uzun uzun** veya **__int64** hariç tüm imzalı veya işaretsiz integral türleri|**double**|
-|**bool** veya **char**|Diğer yerleşik tür|
-|**Short** veya **wchar_t**|**int**, **Long**, **Long Long**|
-|**int**, **Long**|**uzun uzun**|
-|**float**|**double**|
+|**`signed`** **`unsigned`** Veya dışında herhangi bir tamsayı türü **`long long`****`__int64`**|**`double`**|
+|**`bool`** veya**`char`**|Diğer yerleşik tür|
+|**`short`** veya**`wchar_t`**|**`int`**, **`long`**, **`long long`**|
+|**`int`**, **`long`**|**`long long`**|
+|**`float`**|**`double`**|
 
 ### <a name="narrowing-conversions-coercion"></a>Daraltma dönüştürmeleri (zorlama)
 
@@ -57,7 +57,7 @@ int k = 7.7; // warning C4244:'initializing':conversion from 'double' to
 
 ### <a name="signed---unsigned-conversions"></a>İmzalı-işaretsiz dönüşümler
 
-İşaretli bir integral türü ve işaretsiz karşılığı her zaman aynı boyutlardır, ancak bit deseninin değer dönüşümü için nasıl yorumlandığını gösterir. Aşağıdaki kod örneği, aynı bit deseninin imzalı bir değer ve işaretsiz bir değer olarak yorumlanması durumunda ne olacağını gösterir. Hem `num` hem de `num2` depolanan bit, önceki çizimde gösterilenden hiçbir değişiklik değildir.
+İşaretli bir integral türü ve işaretsiz karşılığı her zaman aynı boyutlardır, ancak bit deseninin değer dönüşümü için nasıl yorumlandığını gösterir. Aşağıdaki kod örneği, aynı bit deseninin imzalı bir değer ve işaretsiz bir değer olarak yorumlanması durumunda ne olacağını gösterir. Bit deseninin her ikisi de depolanan `num` ve `num2` önceki çizimde gösterilenden hiçbir değişiklik olmadığı.
 
 ```cpp
 using namespace std;
@@ -73,7 +73,7 @@ cout << "unsigned val = " << num << " signed val = " << num2 << endl;
 // Prints: unsigned val = 65535 signed val = -1
 ```
 
-Değerlerin her iki yönde yeniden yorumlandığına dikkat edin. Programınız, değerin işaretinin beklediğiniz şekilde tersine göründüğü tek sonuçlar üretirse, imzalanmış ve işaretsiz integral türleri arasında örtük dönüştürmeler arayın. Aşağıdaki örnekte, ifadesinin sonucu (0-1) `num`içinde depolandığında **int** 'ten **işaretsiz int** 'e dönüştürülür. Bu, bit deseninin yeniden yorumlanmasına neden olur.
+Değerlerin her iki yönde yeniden yorumlandığına dikkat edin. Programınız, değerin işaretinin beklediğiniz şekilde tersine göründüğü tek sonuçlar üretirse, imzalanmış ve işaretsiz integral türleri arasında örtük dönüştürmeler arayın. Aşağıdaki örnekte, ifadesinin sonucu (0-1) örtük olarak **`int`** **`unsigned int`** ' de depolandığı zaman öğesine dönüştürülür `num` . Bu, bit deseninin yeniden yorumlanmasına neden olur.
 
 ```cpp
 unsigned int u3 = 0 - 1;
@@ -84,7 +84,7 @@ Derleyici, imzalanmış ve işaretsiz integral türleri arasında örtük dönü
 
 ### <a name="pointer-conversions"></a>İşaretçi Dönüştürmeler
 
-Birçok ifadede, bir C stili dizi örtük olarak dizideki ilk öğe için bir işaretçiye dönüştürülür ve sabit dönüştürmeler sessizce gerçekleşebilir. Bu kullanışlı olsa da büyük olasılıkla hataya açıktır. Örneğin, aşağıdaki hatalı tasarlanmış kod örneği sensik değildir ve ' p ' sonucunu derleyip üretir. İlk olarak, "Help" dize sabit değeri dizinin ilk öğesine işaret eden bir `char*` dönüştürülür; Bu işaretçi daha sonra son ' p ' öğesini işaret eden üç öğe tarafından artırılır.
+Birçok ifadede, bir C stili dizi örtük olarak dizideki ilk öğe için bir işaretçiye dönüştürülür ve sabit dönüştürmeler sessizce gerçekleşebilir. Bu kullanışlı olsa da büyük olasılıkla hataya açıktır. Örneğin, aşağıdaki hatalı tasarlanmış kod örneği sensik değildir ve ' p ' sonucunu derleyip üretir. İlk olarak, "Help" dize sabit değişmez değeri **`char*`** dizinin ilk öğesine işaret eden öğesine dönüştürülür; Bu işaretçi daha sonra son ' p ' öğesini işaret eden üç öğe tarafından artırılır.
 
 ```cpp
 char* s = "Help" + 3;
@@ -92,7 +92,7 @@ char* s = "Help" + 3;
 
 ## <a name="explicit-conversions-casts"></a>Açık dönüşümler (yayınlar)
 
-Bir atama işlemi kullanarak, derleyiciye bir türdeki değeri başka bir türe dönüştürmeyi söyleyebilirsiniz. İki tür tamamen ilişkisiz ise derleyici bazı durumlarda bir hata oluşturacak, ancak başka durumlarda, işlem tür açısından güvenli olmasa bile bir hata oluşturmaz. Bir türden diğerine herhangi bir dönüştürme işlemi, olası bir program hatası kaynağı olduğundan, yayınları gelişigüzel şekilde kullanın. Ancak, bazı durumlarda yapılacak yayınlar bazen gerekli değildir ve tüm atamalar eşit derecede tehlikelidir. Bir tür kullanımı, kodunuzun bir daraltma dönüştürmesi gerçekleştirmesinin yanı sıra dönüştürmenin programınızın hatalı sonuçlar üretmesine neden olmadığını anlarsınız. Aslında bu, derleyiciye ne yaptığınızı bildiğinizi ve bununla ilgili uyarılar bothering. Başka bir kullanım, işaretçiden türetilmiş bir sınıftan işaretçiden tabana sınıfına dönüştürme yapmak için kullanılır. Başka bir kullanım, bir değişkenin **const**olma durumunu**sabit** olmayan bir bağımsız değişken gerektiren bir işleve geçirecek şekilde dönüştürmek için kullanılır. Bu tür atama işlemlerinin çoğu risk içerir.
+Bir atama işlemi kullanarak, derleyiciye bir türdeki değeri başka bir türe dönüştürmeyi söyleyebilirsiniz. İki tür tamamen ilişkisiz ise derleyici bazı durumlarda bir hata oluşturacak, ancak başka durumlarda, işlem tür açısından güvenli olmasa bile bir hata oluşturmaz. Bir türden diğerine herhangi bir dönüştürme işlemi, olası bir program hatası kaynağı olduğundan, yayınları gelişigüzel şekilde kullanın. Ancak, bazı durumlarda yapılacak yayınlar bazen gerekli değildir ve tüm atamalar eşit derecede tehlikelidir. Bir tür kullanımı, kodunuzun bir daraltma dönüştürmesi gerçekleştirmesinin yanı sıra dönüştürmenin programınızın hatalı sonuçlar üretmesine neden olmadığını anlarsınız. Aslında bu, derleyiciye ne yaptığınızı bildiğinizi ve bununla ilgili uyarılar bothering. Başka bir kullanım, işaretçiden türetilmiş bir sınıftan işaretçiden tabana sınıfına dönüştürme yapmak için kullanılır. Başka bir kullanım, değişken **`const`** olmayan bağımsız değişken gerektiren bir işleve geçirmek için bir değişkenin daha fazla yere dönüştürülmesidir **`const`** . Bu tür atama işlemlerinin çoğu risk içerir.
 
 C stili programlamada, aynı C stili tür dönüştürme işleci tüm tür atamalar için kullanılır.
 
@@ -101,9 +101,9 @@ C stili programlamada, aynı C stili tür dönüştürme işleci tüm tür atama
 int(x); // old-style cast, functional syntax
 ```
 
-C stili atama işleci, Call işleci () ile aynıdır ve bu nedenle kodda ınconspicuou ve çok daha kolay bir şekilde görünür. Her ikisi de hatalı olduğundan, her ikisi de bir bakışta tanınmaları veya arama yapmak zordur ve **statik**, **const**ve **reinterpret_cast**herhangi bir birleşimini çağırmaya yetecek kadar birbirinden farklı olurlar. Eski stil dönüştürmenin gerçekten ne kadar zor ve hataya açık olduğunu öğrenme. Tüm bu nedenlerden dolayı, bir atama gerektiğinde aşağıdaki C++ atama işleçlerinden birini kullanmanızı öneririz. Bu, bazı durumlarda önemli ölçüde daha fazla güvenli olan ve programlama amacını çok daha açık bir şekilde gösteriyor.
+C stili atama işleci, Call işleci () ile aynıdır ve bu nedenle kodda ınconspicuou ve çok daha kolay bir şekilde görünür. Her ikisi de hatalı olduğundan, bir bakışta tanınması veya arama yapmak zor olduklarından, ve ' nin herhangi bir birleşimini çağırmak için yeterince farklı olduklarından, her ikisi de bozuktur **`static`** **`const`** **`reinterpret_cast`** . Eski stil dönüştürmenin gerçekten ne kadar zor ve hataya açık olduğunu öğrenme. Tüm bu nedenlerden dolayı, bir atama gerektiğinde aşağıdaki C++ cast işleçlerinden birini kullanmanızı öneririz. Bu, bazı durumlarda önemli ölçüde daha fazla güvenli ve programlama amacını daha da ayrıntılı bir şekilde daha hızlı bir şekilde kolaylaştırır:
 
-- **static_cast**, yalnızca derleme zamanında denetlenen yayınlar için. **static_cast** , derleyici tamamen uyumsuz türler arasında dönüştürmeye çalıştığınız algıladığında bir hata döndürür. Ayrıca, taban işaretçisi ile türetilmiş işaretçi arasında dönüştürme yapmak için de kullanabilirsiniz, ancak derleyici çalışma zamanında bu dönüştürmelerin güvenli olup olmadığını her zaman söyleyebilir.
+- **`static_cast`**, yalnızca derleme zamanında denetlenen yayınlar için. **`static_cast`** Derleyici tamamen uyumsuz türler arasında dönüştürmeye çalıştığınız algılarsa bir hata döndürür. Ayrıca, taban işaretçisi ile türetilmiş işaretçi arasında dönüştürme yapmak için de kullanabilirsiniz, ancak derleyici çalışma zamanında bu dönüştürmelerin güvenli olup olmadığını her zaman söyleyebilir.
 
     ```cpp
     double d = 1.58947;
@@ -117,9 +117,9 @@ C stili atama işleci, Call işleci () ile aynıdır ve bu nedenle kodda ıncons
     Derived* d2 = static_cast<Derived*>(b);
     ```
 
-   Daha fazla bilgi için bkz. [static_cast](../cpp/static-cast-operator.md).
+   Daha fazla bilgi için bkz. [`static_cast`](../cpp/static-cast-operator.md).
 
-- **dynamic_cast**, güvenli, çalışma zamanında yapılacak işaretçiden türetilme işaretçisinin işaretçiden türetilme yapılacak kayıtları için. **Dynamic_cast** , aşağı bir **static_cast** daha güvenlidir, ancak çalışma zamanı denetimi bazı ek yük doğurur.
+- **`dynamic_cast`**, güvenli, çalışma zamanında yapılacak işaretçiden türetilme işaretçisinin işaretçiden türetilme işlemleri için. **`dynamic_cast`**, Küçük bir **`static_cast`** süre için daha güvenlidir, ancak çalışma zamanı denetimi bazı ek yük doğurur.
 
     ```cpp
     Base* b = new Base();
@@ -142,9 +142,9 @@ C stili atama işleci, Call işleci () ile aynıdır ve bu nedenle kodda ıncons
     //Output: d3 is null;
     ```
 
-   Daha fazla bilgi için bkz. [dynamic_cast](../cpp/dynamic-cast-operator.md).
+   Daha fazla bilgi için bkz. [`dynamic_cast`](../cpp/dynamic-cast-operator.md).
 
-- **const_cast**, bir değişkenin **const**durumunu kaldırmak veya**const** olmayan bir değişkeni **const**olacak şekilde dönüştürmek için. Bu işleci kullanarak **sabit**olma durumunu serbest bırakmak, bir C stili tür dönüştürme kullanmakla aynı şekilde, örneğin **const dönüştürmesinin** yanlışlıkla dönüştürmeyi yanlışlıkla gerçekleştirmeye daha az olabilir. Bazen bir değişkenin **const**olma özelliğini (örneğin **, const olmayan bir parametre alan** bir işleve bir **const** değişkeni geçirmek için) dönüştürmelisiniz. Aşağıdaki örnek bunun nasıl yapılacağını göstermektedir.
+- **`const_cast`**, **`const`** bir değişkenin bir kısmını dışarıda bırakmak veya değişken olmayan bir değişkeni dönüştürmek için **`const`** **`const`** . **`const`** Bu işleci kullanarak dışarıda olma özelliği, bir C stili tür dönüştürme kullanmakla aynı şekilde, yani **`const_cast`** cast işlemini yanlışlıkla gerçekleştirmeye daha az olabilir. Bazen **`const`** bir değişkenin (örneğin, bir **`const`** değişkeni parametre olmayan bir işleve) dönüştürmek için bir değişkenin ne kadar uzakta olması gerekir **`const`** . Aşağıdaki örnek bunun nasıl yapılacağını göstermektedir.
 
     ```cpp
     void Func(double& d) { ... }
@@ -157,12 +157,12 @@ C stili atama işleci, Call işleci () ile aynıdır ve bu nedenle kodda ıncons
 
    Daha fazla bilgi için bkz. [const_cast](../cpp/const-cast-operator.md).
 
-- **int**için **işaretçi** gibi ilişkisiz türler arasındaki yayınlar için **reinterpret_cast**.
+- **`reinterpret_cast`**, işaretçi türü ve gibi ilişkisiz türler arasındaki yayınlar için **`int`** .
 
     > [!NOTE]
     >  Bu atama işleci, diğerleri gibi sıklıkla kullanılmaz ve diğer derleyicilere taşınabilir olması garanti edilmez.
 
-   Aşağıdaki örnek **reinterpret_cast** **static_cast**nasıl farklılık gösterir.
+   Aşağıdaki örnek, **`reinterpret_cast`** öğesinden farklı olduğunu gösterir **`static_cast`** .
 
     ```cpp
     const char* str = "hello";
@@ -174,11 +174,11 @@ C stili atama işleci, Call işleci () ile aynıdır ve bu nedenle kodda ıncons
                                        // However, it is not 64-bit safe.
     ```
 
-   Daha fazla bilgi için bkz. [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md).
+   Daha fazla bilgi için bkz. [ `reinterpret_cast` işleci](../cpp/reinterpret-cast-operator.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++tür sistemi](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[Uygulamasına geri hoş geldinizC++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
-[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)
+[C++ tür sistemi](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[C++ ' a geri hoş geldiniz](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C++ standart kitaplığı](../standard-library/cpp-standard-library-reference.md)

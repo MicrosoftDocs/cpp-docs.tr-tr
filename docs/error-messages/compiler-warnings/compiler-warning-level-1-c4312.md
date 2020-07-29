@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4312
 ms.assetid: 541906ed-4f62-4bcb-947f-cf9ae7411bcb
-ms.openlocfilehash: d76b08a31cacdc4e2e367a236ce98ec5204ac3e7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 379803260492449da4985e62d36750f121b4e7fa
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163069"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233268"
 ---
 # <a name="compiler-warning-level-1-c4312"></a>Derleyici Uyarısı (düzey 1) C4312
 
 'operation' : 'type1' öğesinden daha büyük boyutlu 'type2' öğesine dönüştürme
 
-Bu uyarı, 64 bit işaretçi türüne 32 bitlik bir değer atama girişimini algılar, örneğin, 32-bit `int` veya `long` 64-bit işaretçisine atar.
+Bu uyarı, 32 bitlik bir değeri 64 bit işaretçi türüne atama girişimini algılar, örneğin, 32-bit **`int`** veya **`long`** 64-bit işaretçisi atama.
 
 Bu, oturum açma uzantısı gerçekleştiğinde 32 bite sığan işaretçi değerleri bile güvenli olmayan bir dönüştürme olabilir. Bir 64 bit işaretçi türüne negatif 32 bitlik bir tamsayı atanırsa, imza uzantısı, işaretçi değerinin tamsayının değerinden farklı bir bellek adresine başvurmasına neden olur.
 

@@ -35,18 +35,18 @@ helpviewer_keywords:
 - _expand function
 - expand function
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
-ms.openlocfilehash: 8878bb046a122b545f969dd067c37eeb97126387
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5abd90f6106cbca54a9c869841ff70383edb5edc
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920252"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234152"
 ---
 # <a name="_expand"></a>_expand
 
 Bellek bloğunun boyutunu değiştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *_expand(
@@ -71,7 +71,7 @@ Bayt cinsinden yeni boyut.
 
 Bloğu taşımadan verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, işlev **null**değerini döndürür. **_expand** , istenen boyuttan daha küçük bir biçimde genişletilmiş bir blok döndürmez. Bir hata oluşursa, **errno** hatanın yapısını gösterir. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Öğenin yeni boyutunu denetlemek için **_msize**kullanın. **Void**dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
+Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Öğenin yeni boyutunu denetlemek için **_msize**kullanın. Dışında bir türe işaretçi almak için **`void`** , dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -90,7 +90,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_expand**|\<malloc. h>|
+|**_expand**|\<malloc.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -130,7 +130,7 @@ Expanded block to 1024 bytes at 002C12BC
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [Süz](free.md)<br/>
 [malloc](malloc.md)<br/>

@@ -9,16 +9,16 @@ helpviewer_keywords:
 - twoPhase
 - disable two-phase name lookup
 - /Zc:twoPhase
-ms.openlocfilehash: 3464759793a2dd243024a9f3f52263f76514033a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 712503d08221d29a61323946008f2f36a467cb31
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438643"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234334"
 ---
 # <a name="zctwophase--disable-two-phase-name-lookup"></a>/Zc:twoPhase- (iki aşamalı ad aramayı devre dışı bırak)
 
-**/Zc: Twophabi-** seçeneği, **/Permissive-** altında, derleyiciye sınıf şablonları ve işlev şablonlarının ayrıştırılmasında ve Örneklendirilecek orijinal C++ , uyumsuz Microsoft derleyicisi davranışını kullanmasını söyler.
+**/Zc: Twophabi-** seçeneği, **/Permissive-** altında, derleyicinin sınıf şablonları ve işlev şablonları ayrıştırmak ve örneklerken, özgün, uyumsuz Microsoft C++ derleyicisi davranışını kullanmasını söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,7 +42,7 @@ Varsayılan olarak veya Visual Studio 2017 sürüm 15,3 ' de ve sonraki sürüml
    template <typename T> class Derived : public Base<T> { ... }
    ```
 
-   Şablon bildirimi, `template <typename T>`, sınıf Head `class Derived`ve temel sınıf listesi `public Base<T>` ayrıştırılır, ancak şablon gövdesi bir belirteç akışı olarak yakalanır.
+   Şablon bildirimi, `template <typename T>` , sınıf başlığı `class Derived` ve temel sınıf listesi `public Base<T>` ayrıştırılır, ancak şablon gövdesi bir belirteç akışı olarak yakalanır.
 
 - Bir işlev şablonu ayrıştırılırken, derleyici yalnızca işlev imzasını ayrıştırır. İşlev gövdesi hiçbir şekilde ayrıştırılmaz. Bunun yerine, belirteç akışı olarak yakalanır.
 
@@ -92,7 +92,7 @@ zctwophase.cpp
 Microsoft one-phase
 ```
 
-**/Permissive-** altında uygunluk modunda derlendiğinde, bu program "`Standard two-phase`" yazdırır, çünkü derleyici şablona ulaştığında `func` ikinci aşırı yüklemesi görünür değildir. **/Zc: Twophabi-** eklerseniz, program "`Microsoft one-phase`" yazdırır. Çıktı, **/Permissive-** belirtmemenizi ile aynıdır.
+**/Permissive-** altında uygunluk modunda derlendiğinde, bu program " `Standard two-phase` " yazdırır, çünkü derleyici şablona ulaştığında ikinci aşırı yüklemesi `func` görünür değildir. **/Zc: Twophabi-** eklerseniz, program " `Microsoft one-phase` " yazdırır. Çıktı, **/Permissive-** belirtmemenizi ile aynıdır.
 
 *Bağımlı adlar* , bir şablon parametresine bağlı olan adlardır. Bu adların **/Zc: Twophao-** altında da farklılık gösteren arama davranışı vardır. Uygunluk modunda, bağımlı adlar şablonun tanımının noktasında bağlı değildir. Bunun yerine, derleyici şablonu örnekleyen zaman onları arar. Bağımlı işlev adına sahip işlev çağrıları için, ad, şablon tanımındaki çağrı sitesinde görünen işlevlere bağlıdır. Bağımsız değişkene bağlı arama 'dan ek aşırı yüklemeler, hem şablon tanımının hem de şablon örneklemesinin üzerine eklenir.
 
@@ -136,7 +136,7 @@ func(int)
 NS::func(NS::S)
 ```
 
-**/Permissive-** ile derlendiğinde, ancak **/Zc: twophale-** , bu kod şunu yazdırır:
+**/Permissive-** ile derlendiğinde, ancak **/Zc: twophale-**, bu kod şunu yazdırır:
 
 ```Output
 func(long)
@@ -150,21 +150,21 @@ func(int)
 NS::func(NS::S)
 ```
 
-Uyumluluk modu **/Permissive-** altında, çağrı `tfunc(1729)` `void func(long)` aşırı yüklemeye çözümlenir. **/Zc: Twophao-** altında olduğu gibi `void func(int)` aşırı yüküne çözümlenmez. Bunun nedeni, nitelenmemiş `func(int)` şablonun tanımladıktan sonra bildirildiği ve bağımsız değişkene bağlı arama yoluyla bulunamamıştır. `void func(S)`, bağımsız değişkene bağlı aramaya katılır, bu nedenle, şablon işlevinden sonra bildirildiği halde çağrı `tfunc(s)`için aşırı yükleme kümesine eklenir.
+Uyumluluk modu **/Permissive-** altında, çağrı `tfunc(1729)` aşırı yüklemeye çözülür `void func(long)` . `void func(int)` **/Zc: Twophao-** altında olduğu gibi aşırı yüklemeye çözümlenmez. Bunun nedeni, tanımlanmamış bir `func(int)` şablon tanımından sonra bildirildiği ve bağımsız değişkene bağlı arama yoluyla bulunamamıştır. Ancak, `void func(S)` bağımsız değişkene bağlı aramaya katılır, bu nedenle, `tfunc(s)` şablon işlevinden sonra bildirildiği halde, çağrının aşırı yükleme kümesine eklenir.
 
 ### <a name="update-your-code-for-two-phase-conformance"></a>Kodunuzu iki aşamalı uygunluk için güncelleştirin
 
-Derleyicinin daha eski sürümleri, anahtar sözcükler `template` gerektirmez ve standart için C++ gereken her yerde `typename`. Bu anahtar sözcükler, derleyicilerin ilk aşamasında, derleyicilerin bağımlı bir adı nasıl ayrıştıracağını ortadan kaldırmak için bazı konumlarda gereklidir. Örnek:
+Derleyicinin daha eski sürümleri için anahtar sözcükler **`template`** ve **`typename`** C++ standardının her ikisi de gereklidir. Bu anahtar sözcükler, derleyicilerin ilk aşamasında, derleyicilerin bağımlı bir adı nasıl ayrıştıracağını ortadan kaldırmak için bazı konumlarda gereklidir. Örnek:
 
 `T::Foo<a || b>(c);`
 
-Uygun bir derleyici, `T`kapsamındaki bir değişken olarak `Foo` ayrıştırır, yani bu kod, sol işlenen olarak `T::foo < a` olan bir mantıksal or ifadesi ve sağ işlenen olarak `b > (c)`. `Foo` bir işlev şablonu olarak kullanmak istiyorsanız, bir şablon olduğunu `template` anahtar sözcüğünü ekleyerek belirtmeniz gerekir:
+Uygun bir derleyici, `Foo` kapsamında bir değişken olarak ayrıştırır `T` , yani bu kod, `T::foo < a` Sol işlenen olarak ve `b > (c)` sağ işlenen olarak bir mantıksal or ifadesi olur. `Foo`Bir işlev şablonu olarak kullanmak istiyorsanız, anahtar sözcüğünü ekleyerek bunun bir şablon olduğunu belirtmeniz gerekir **`template`** :
 
 `T::template Foo<a || b>(c);`
 
-Visual Studio 2017 sürüm 15,3 ve üzeri sürümlerde, **/Permissive-** ve **/Zc: twophao-** belirtildiğinde, derleyici `template` anahtar sözcüğü olmadan bu koda izin verir. Yalnızca şablonları sınırlı bir biçimde ayrıştırdığından, kodu bir işlev şablonu `a || b`bağımsız değişkeniyle bir çağrı olarak yorumlar. Yukarıdaki kod, ilk aşamada ayrıştırılmaz. İkinci aşamada, `T::Foo` bir değişken yerine bir şablon olduğunu söylemek için yeterli bağlam vardır. bu nedenle, derleyici anahtar sözcüğünün kullanımını zorlamaz.
+Visual Studio 2017 sürüm 15,3 ve üzeri sürümlerde, **/Permissive-** ve **/Zc: twophao-** belirtildiğinde, derleyici anahtar sözcüğü olmadan bu koda izin verir **`template`** . `a || b`Yalnızca şablonları sınırlı bir biçimde ayrıştırdığından, kodu bir bağımsız değişkeni olan bir işlev şablonuna çağrı olarak yorumlar. Yukarıdaki kod, ilk aşamada ayrıştırılmaz. İkinci aşamada, bir değişken yerine bir şablon olduğunu söylemek için yeterli bağlam vardır; bu `T::Foo` nedenle derleyici anahtar sözcüğünün kullanımını zorlamaz.
 
-Bu davranış, işlev şablonu gövdelerinde, başlatıcılarda, varsayılan bağımsız değişkenlerde ve noexcept bağımsız değişkenlerinde adlardan önce `typename` anahtar sözcüğü ortadan kaldırarak da görülebilir. Örnek:
+Bu davranış, **`typename`** işlev şablonu gövdelerinde, başlatıcılarda, varsayılan bağımsız değişkenlerde ve noexcept bağımsız değişkenlerinde adlardan önce anahtar sözcüğü ortadan kaldırarak da görülebilir. Örnek:
 
 ```cpp
 template<typename T>
@@ -174,7 +174,7 @@ typename T::TYPE func(typename T::TYPE*)
 }
 ```
 
-İşlev gövdesinde `typename` anahtar sözcüğünü kullanmıyorsanız, bu kod **/Permissive-/Zc: Twophaken-** altında derlenir, ancak tek başına **/Permissive-** altında değildir. `TYPE` bağımlı olduğunu göstermek için `typename` anahtar sözcüğü gereklidir. Gövde **/Zc: Twophabi-** altında ayrıştırılmadığından, derleyici anahtar sözcüğü gerektirmez. **/Permissive-** uygunluk modunda, `typename` anahtar sözcüğü olmayan kod hata oluşturur. Kodunuzu Visual Studio 2017 sürüm 15,3 ve üzerinde uygunluk 'e geçirmek için, eksik olan `typename` anahtar sözcüğünü ekleyin.
+İşlev gövdesinde anahtar sözcüğünü kullanmıyorsanız **`typename`** , bu kod **/Permissive-/Zc: Twophaken-** altında derlenir, ancak tek başına **/Permissive-** altında değildir. **`typename`** Anahtar sözcüğü, bağımlı olduğunu belirtmek için gereklidir `TYPE` . Gövde **/Zc: Twophabi-** altında ayrıştırılmadığından, derleyici anahtar sözcüğü gerektirmez. **/Permissive-** uygunluk modunda, anahtar sözcük olmadan kod **`typename`** hata üretir. Kodunuzu Visual Studio 2017 sürüm 15,3 ve daha ötesi sürümde uyumluluk 'e geçirmek için, **`typename`** eksik olan anahtar sözcüğünü ekleyin.
 
 Benzer şekilde, şu kod örneğini göz önünde bulundurun:
 
@@ -186,15 +186,15 @@ typename T::template X<T>::TYPE func(typename T::TYPE)
 }
 ```
 
-**/Permissive-/Zc: twoPhase** ' nin altında ve eski derleyicilerde, derleyici yalnızca 2. satırda `template` anahtar sözcüğünü gerektirir. Uyumluluk modunda, derleyici artık `T::X<T>` bir şablon olduğunu göstermek için 4. satırda `template` anahtar sözcüğünü de gerektirir. Bu anahtar sözcüğü eksik kodu arayın ve kodunuzu standart ile uyumlu hale getirmek için sağlayın.
+**/Permissive-/Zc: twoPhase** ' nin altında ve eski derleyicilerde, derleyici yalnızca **`template`** 2. satırda anahtar sözcüğü gerektirir. Uyumluluk modunda, derleyici artık **`template`** bir şablon olduğunu göstermek için 4. satırda anahtar sözcüğü de gerektirir `T::X<T>` . Bu anahtar sözcüğü eksik kodu arayın ve kodunuzu standart ile uyumlu hale getirmek için sağlayın.
 
-Uyumluluk sorunları hakkında daha fazla bilgi için bkz [ C++ . Visual Studio 'da uyumluluk geliştirmeleri](../../overview/cpp-conformance-improvements.md) ve [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
+Uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Visual Studio 'da C++ uyumluluk geliştirmeleri](../../overview/cpp-conformance-improvements.md) ve [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **CC++ /**  > **komut satırı** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
 1. **Ek seçenekler** özelliğini **/Zc: twophat** öğesini içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 

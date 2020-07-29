@@ -9,23 +9,23 @@ helpviewer_keywords:
 - inline assembly, calling functions
 - __asm keyword [C++], calling functions
 ms.assetid: 1f0d1eb3-54cf-45d5-838d-958188616b38
-ms.openlocfilehash: f16e466ebb5f31231411eaaf9a1a85bfcc46a34d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 781b60c8973593039c0fdfa2f457170e95048597
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169584"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87192541"
 ---
 # <a name="calling-c-functions-in-inline-assembly"></a>Satır İçi Derlemede C++ İşlevlerini Çağırma
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`__asm` bloğu yalnızca aşırı yüklü olmayan genel C++ işlevleri çağırabilir. Aşırı yüklenmiş bir genel C++ işlev veya C++ üye işlevi çağırırsanız, derleyici bir hata verir.
+Bir **`__asm`** blok, yalnızca aşırı yüklü olmayan genel C++ işlevlerini çağırabilir. Aşırı yüklenmiş bir genel C++ işlevini veya bir C++ üye işlevini çağırırsanız, derleyici bir hata verir.
 
-Ayrıca, **extern "C"** bağlantısıyla belirtilen işlevleri de çağırabilirsiniz. Bu, tüm standart üstbilgi dosyaları kitaplık C++ işlevlerini **extern "C"** bağlantısına sahip olacak şekilde bildirtiğinden, bir program içindeki `__asm` bloğunun C kitaplığı işlevlerini çağırmasını sağlar.
+Ayrıca, **extern "C"** bağlantısıyla belirtilen işlevleri de çağırabilirsiniz. Bu, **`__asm`** tüm standart üstbilgi dosyaları kitaplık işlevlerini **extern "C"** bağlantısına sahip olacak şekilde bildirtiğinden, C++ programı Içindeki bir bloğun C kitaplığı işlevlerini çağırmasını sağlar.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>
+[Satır içi assembler](../../assembler/inline/inline-assembler.md)<br/>
