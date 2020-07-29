@@ -10,18 +10,18 @@ helpviewer_keywords:
 - std::integral_constant [C++]
 - std::bool_constant [C++]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
-ms.openlocfilehash: 9577ce51d4b0773f7b309fe3dc6dcb5820693dcb
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 30e00fdc166b4a6f2db64a3552a3bb87335c7e32
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689531"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233151"
 ---
 # <a name="integral_constant-class-bool_constant-class"></a>integral_constant sınıfı, bool_constant sınıfı
 
 Bir tür ve değerden tamsayı sabiti oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class T, T v>
@@ -36,17 +36,17 @@ struct integral_constant {
 
 ### <a name="parameters"></a>Parametreler
 
-*T* \
+*Şı*\
 Sabitin türü.
 
-*v* \
+*Yönetim*\
 Sabitin değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-@No__t_0 sınıf şablonu, bir integral türü *t* ve bu türün *v* değeri ile özelleştirilse, belirtilen değere sahip bu integral türünde bir sabiti tutan nesneyi temsil eder. @No__t_0 adlı üye, oluşturulan şablon özelleştirmesi türü için bir diğer addır ve `value` üyesi, özelleştirmeyi oluşturmak için kullanılan *v* değerini tutar.
+`integral_constant`Sınıf şablonu, bir integral türü *T* ve bu türün *v* değeri ile özelleştirilse, belirtilen değere sahip bu integral türünde bir sabiti tutan bir nesneyi temsil eder. Adlı üye, `type` oluşturulan şablon özelleştirmesi türü için bir diğer addır ve `value` üye, uzmanlığı oluşturmak için kullanılan *v* değerini tutar.
 
-@No__t_0 sınıf şablonu, *t* bağımsız değişkeni olarak **bool** kullanan `integral_constant` bir açık kısmi özelleşmesi.
+`bool_constant`Sınıf şablonu, `integral_constant` **`bool`** *T* bağımsız değişkeni olarak kullanan bir açık kısmi özelleşmenin.
 
 ## <a name="example"></a>Örnek
 
@@ -74,12 +74,12 @@ integral_constant<bool, false> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md) \
-[false_type](../standard-library/type-traits-typedefs.md#false_type) \
+[<type_traits>](../standard-library/type-traits.md)\
+[false_type](../standard-library/type-traits-typedefs.md#false_type)\
 [true_type](../standard-library/type-traits-typedefs.md#true_type)

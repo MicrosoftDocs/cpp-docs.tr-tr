@@ -6,12 +6,12 @@ helpviewer_keywords:
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-ms.openlocfilehash: b952ca0aab5c4417f22fd958514894c53a39f800
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7c2dbb6e2932265984c8cb4e1e34504921e5d666
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170611"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221789"
 ---
 # <a name="c-bit-fields"></a>C++ Bit Alanları
 
@@ -46,9 +46,9 @@ struct Date {
 ![Tarih nesnesinin bellek düzeni](../cpp/media/vc38uq1.png "Tarih nesnesinin bellek düzeni") <br/>
 Tarih Nesnesinin Bellek Düzeni
 
-`nYear` 8 bit uzunluğunda olduğunu ve belirtilen tür, **işaretsiz** **Short**sözcük sınırını taşıyacağını unutmayın. Bu nedenle, yeni bir **işaretsiz** **Short**başlangıcında başlamış olur. Tüm bit alanlarının temel türün bir nesnesine sığmasına gerek yoktur; yeni depolama birimleri bildirimde istenen bit sayısına göre ayrılır.
+`nYear`8 bit uzunluğunda olduğunu ve belirtilen tür sözcük sınırının taşyacağını unutmayın **`unsigned short`** . Bu nedenle, yeni bir başlangıcında başlamış olur **`unsigned short`** . Tüm bit alanlarının temel türün bir nesnesine sığmasına gerek yoktur; yeni depolama birimleri bildirimde istenen bit sayısına göre ayrılır.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Yukarıdaki şekilde gösterildiği gibi, bildirilen verilerin bit alanları olarak sıralanması düşük bitten yüksek bite doğrudur.
 
@@ -70,12 +70,12 @@ struct Date {
 
 ardından, bellek düzeni aşağıdaki şekilde gösterilmiştir:
 
-![Sıfır&#45;uzunlukta bit alanı olan tarih nesnesi düzeni](../cpp/media/vc38uq2.png "Sıfır&#45;uzunlukta bit alanı olan tarih nesnesi düzeni") <br/>
+![Sıfır&#45;uzunluklu bit alanı olan Date nesnesinin düzeni](../cpp/media/vc38uq2.png "Sıfır&#45;uzunluklu bit alanı olan Date nesnesinin düzeni") <br/>
 Sıfır Uzunluklu Bit Alanı Olan Tarih Nesnesinin Düzeni
 
 Bir bit alanının temel alınan türü, [Yerleşik türler](../cpp/fundamental-types-cpp.md)bölümünde açıklandığı gibi bir integral türü olmalıdır.
 
-`const T&` türündeki bir başvurunun başlatıcısı `T`türünde bir bit alanına başvuran bir lvalue ise, başvuru doğrudan bit alanına bağlanmaz. Bunun yerine, başvuru, bit alanının değerini tutmak için geçici olarak başlatılmış bir öğesine bağlanır.
+Türünde bir başvuru için Başlatıcı, türünde bir `const T&` bit alanına başvuran bir lvalue ise `T` , başvuru doğrudan bit alanına bağlanmaz. Bunun yerine, başvuru, bit alanının değerini tutmak için geçici olarak başlatılmış bir öğesine bağlanır.
 
 ## <a name="restrictions-on-bit-fields"></a>Bit alanları için kısıtlamalar
 
@@ -83,8 +83,8 @@ Bit alanlarındaki hatalı işlemler aşağıdaki listede görülmektedir:
 
 - Bir bit alanı adresini alma.
 
-- Bir bit alanıyla**const** olmayan bir başvuru başlatılıyor.
+- **`const`** Bir bit alanı ile başvuru olmayan bir şekilde başlatılıyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)
+[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)

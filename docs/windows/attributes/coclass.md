@@ -1,17 +1,17 @@
 ---
-title: coclass (C++ com özniteliği)
+title: coclass (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.coclass
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-ms.openlocfilehash: 76540e90fef2e840b91bb07f570a7b8c0987eb10
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0a47f4f503541f9dee67dd8c6cf10297de724a19
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168337"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232800"
 ---
 # <a name="coclass"></a>coclass
 
@@ -25,11 +25,11 @@ COM arabirimini uygulayabilen bir COM nesnesi oluşturur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Coclass** C++ özniteliği oluşturulan. IDL dosyasına bir coclass yapısı koyar.
+**Coclass** C++ özniteliği, oluşturulan. IDL dosyasına bir coclass yapısı koyar.
 
 Bir coclass tanımlarken, [UUID](uuid-cpp-attributes.md), [Sürüm](version-cpp.md), [iş parçacığı](threading-cpp.md), [vi_progid](vi-progid.md)ve [ProgID](progid.md) özniteliklerini de belirtebilirsiniz. Bunlardan biri belirtilmediyse, oluşturulur.
 
-İki üst bilgi dosyası, **coclass** özniteliğiyle sınıflar içeriyorsa ve bir GUID belirtmezseniz, derleyici her iki sınıf için de aynı GUID 'i kullanır ve bu, MIDL hatasına neden olur.  Bu nedenle, **coclass**kullandığınızda `uuid` özniteliğini kullanmanız gerekir.
+İki üst bilgi dosyası, **coclass** özniteliğiyle sınıflar içeriyorsa ve bir GUID belirtmezseniz, derleyici her iki sınıf için de aynı GUID 'i kullanır ve bu, MIDL hatasına neden olur.  Bu nedenle, `uuid` **coclass**kullandığınızda özniteliğini kullanmanız gerekir.
 
 **ATL projeleri**
 
@@ -39,29 +39,29 @@ Bu öznitelik, ATL projesindeki bir sınıf veya yapı tanımından önce olduğ
 
 - Nesne için bir COM sınıfı fabrikasını desteklemek üzere kodu veya verileri çıkartır.
 
-- `IUnknown` uygulamak ve nesneyi bir COM-creatable nesnesi yapmak için kod veya veri çıkartır.
+- Uygulamak `IUnknown` ve nesneyi BIR com-creatable nesnesi haline getirmek için kod veya veri çıkartır.
 
 Özellikle, aşağıdaki temel sınıflar hedef nesnesine eklenir:
 
 - [CComCoClass sınıfı](../../atl/reference/ccomcoclass-class.md) , nesne için varsayılan sınıf fabrikası ve toplama modelini sağlar.
 
-- [CComObjectRootEx sınıfının](../../atl/reference/ccomobjectrootex-class.md) , [Threading](threading-cpp.md) özniteliği tarafından belirtilen iş parçacığı modeli sınıfına dayalı bir şablonu vardır. `threading` özniteliği belirtilmemişse, varsayılan iş parçacığı modeli Apartment olur.
+- [CComObjectRootEx sınıfının](../../atl/reference/ccomobjectrootex-class.md) , [Threading](threading-cpp.md) özniteliği tarafından belirtilen iş parçacığı modeli sınıfına dayalı bir şablonu vardır. `threading`Öznitelik belirtilmemişse, varsayılan iş parçacığı modeli Apartment olur.
 
 - [IProvideClassInfo2Impl](../../atl/reference/iprovideclassinfo2impl-class.md) , hedef nesne için [noncreatable](noncreatable.md) özniteliği belirtilmemişse eklenir.
 
 Son olarak, katıştırılmış IDL kullanılarak tanımlanmayan herhangi bir ikili arabirim, karşılık gelen [IDispatchImpl](../../atl/reference/idispatchimpl-class.md) sınıfıyla değiştirilmiştir. Dual Interface katıştırılmış IDL içinde tanımlıysa, temel listedeki belirli arabirim değiştirilmez.
 
-**Coclass** özniteliği Ayrıca aşağıdaki işlevleri eklenen kod aracılığıyla veya `GetObjectCLSID`durumunda temel sınıfta statik bir yöntem olarak kullanılabilir hale getirir `CComCoClass`:
+**Coclass** özniteliği Ayrıca aşağıdaki işlevleri, eklenen kod ile veya durumunda `GetObjectCLSID` temel sınıfta statik bir yöntem olarak kullanılabilir hale getirir `CComCoClass` :
 
-- `UpdateRegistry`, hedef sınıfın sınıf fabrikalarını kaydeder.
+- `UpdateRegistry`Hedef sınıfın sınıf fabrikalarını kaydeder.
 
-- kayıtla ilgili olan `GetObjectCLSID`, hedef sınıfın CLSID 'sini elde etmek için de kullanılabilir.
+- `GetObjectCLSID`kaydıyla ilgili olan, hedef sınıfın CLSID 'sini elde etmek için de kullanılabilir.
 
-- Varsayılan olarak `GetObjectFriendlyName`, "\<*hedef sınıf adı*> `Object`" biçiminde bir dize döndürür. Bu işlev zaten mevcutsa, eklenmez. Otomatik olarak üretilenden daha kolay bir ad döndürmek için bu işlevi Target sınıfına ekleyin.
+- `GetObjectFriendlyName`Varsayılan olarak "" biçiminde bir dize döndürür \<*target class name*> `Object` . Bu işlev zaten mevcutsa, eklenmez. Otomatik olarak üretilenden daha kolay bir ad döndürmek için bu işlevi Target sınıfına ekleyin.
 
-- kayıtla ilgili olan `GetProgID`[ProgID](progid.md) özniteliğiyle belirtilen dizeyi döndürür.
+- `GetProgID`kaydıyla ilgili olan, [ProgID](progid.md) özniteliğiyle belirtilen dizeyi döndürür.
 
-- `GetVersionIndependentProgID`, `GetProgID`aynı işlevselliğe sahiptir, ancak [vi_progid](vi-progid.md)ile belirtilen dizeyi döndürür.
+- `GetVersionIndependentProgID`, ile aynı işlevselliğe sahiptir `GetProgID` , ancak [vi_progid](vi-progid.md)belirtilen dizeyi döndürür.
 
 COM eşlemesiyle ilgili olan aşağıdaki değişiklikler hedef sınıfa yapılır:
 
@@ -69,7 +69,7 @@ COM eşlemesiyle ilgili olan aşağıdaki değişiklikler hedef sınıfa yapıl�
 
 - COM haritasına bir [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) makrosu eklenir.
 
-Sınıfı için. IDL dosyasında oluşturulan coclass 'ın adı sınıfla aynı ada sahip olacaktır.  Örneğin, ve bir coclass `CMyClass`sınıf KIMLIĞINE erişmek için, MıDL tarafından oluşturulan üstbilgi dosyası aracılığıyla bir istemcide, `CLSID_CMyClass`kullanın.
+Sınıfı için. IDL dosyasında oluşturulan coclass 'ın adı sınıfla aynı ada sahip olacaktır.  Örneğin, ve bir coclass 'ın sınıf KIMLIĞINE erişmek için, `CMyClass` MIDL tarafından oluşturulan üstbilgi dosyası aracılığıyla bir istemcide, kullanın `CLSID_CMyClass` .
 
 ## <a name="example"></a>Örnek
 
@@ -131,7 +131,7 @@ public:
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -141,7 +141,7 @@ public:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[COM Öznitelikleri](com-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[COM öznitelikleri](com-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [appobject](appobject.md)

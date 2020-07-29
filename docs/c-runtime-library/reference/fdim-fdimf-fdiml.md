@@ -33,18 +33,18 @@ helpviewer_keywords:
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-ms.openlocfilehash: 74935f724b678b08e39604d9916c7c5de5925aee
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1a7bbeaf77c94f620a82f77fb1aad3c71c34f2ef
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941293"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221919"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
 Birinci ve ikinci değerler arasındaki pozitif farkı belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double fdim(
@@ -85,32 +85,32 @@ long double fdiml(
 
 *X* ve *y*arasındaki pozitif farkı döndürür:
 
-|Dönüş değeri|Senaryo|
+|Döndürülen değer|Senaryo|
 |------------------|--------------|
 |x-y|x > y ise|
-|0|if x <= y|
+|0|x <= y ise|
 
 Aksi takdirde, aşağıdaki hatalardan birini döndürebilir:
 
-|Sorun|döndürülmesini|
+|Sorun|Döndürülmesini|
 |-----------|------------|
-|Taşma aralığı hatası|\+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
+|Taşma aralığı hatası|+ HUGE_VAL, + HUGE_VALF veya + HUGE_VALL|
 |Yetersiz yer aralığı hatası|doğru değer (yuvarladıktan sonra)|
 |*x* veya *y* Nan 'dir|NaN|
 
-Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
+Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **fdim** aşırı yüklerini çağırabilirsiniz. C programında **fdim** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **fdim** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **fdim** her zaman alır ve döndürür **`double`** .
 
-NaN işleme hariç, bu işlev ile `fmax(x - y, 0)`eşdeğerdir.
+NaN işleme hariç, bu işlev ile eşdeğerdir `fmax(x - y, 0)` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**fdim**, **fdimf**, **fdiml**|\<Math. h >|\<cmath >|
+|**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

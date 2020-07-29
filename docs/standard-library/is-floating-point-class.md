@@ -7,18 +7,18 @@ helpviewer_keywords:
 - is_floating_point class
 - is_floating_point
 ms.assetid: 070679c1-115b-4ee4-8ab7-f52e5d9e157f
-ms.openlocfilehash: c46b74cc9c1d3c6f3a93925d6df46f46d0151e2d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8da613bca165f68ef2e15e2be6291485a89222de
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452587"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222400"
 ---
-# <a name="isfloatingpoint-class"></a>is_floating_point Sınıfı
+# <a name="is_floating_point-class"></a>is_floating_point Sınıfı
 
 Tür kayan nokta ise sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -32,9 +32,9 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri, bir kayan nokta türü veya `cv-qualified` kayan nokta türünde bir form ise true, aksi takdirde false değerini alır.
+Tür değeri, bir kayan nokta türü veya kayan nokta türünde bir form *ise true* , `cv-qualified` Aksi takdirde false değerini alır.
 
-Kayan nokta türü **float**, **Double**veya **Long Double**'dan biridir.
+Kayan nokta türü,, veya ' den biridir **`float`** **`double`** **`long double`** .
 
 ## <a name="example"></a>Örnek
 
@@ -70,11 +70,11 @@ is_floating_point<float> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_integral Sınıfı](../standard-library/is-integral-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_integral sınıfı](../standard-library/is-integral-class.md)

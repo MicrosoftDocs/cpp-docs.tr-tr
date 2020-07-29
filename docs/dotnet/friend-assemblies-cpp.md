@@ -4,28 +4,28 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - friend assemblies, Visual C++
 ms.assetid: 8d55fee0-b7c2-4fbe-a23b-dfe424dc71cd
-ms.openlocfilehash: 05b9d8bcf5d7364e1dcd31940bc0db64a5e605f1
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: a42caaf07f6ec0c71f63d6a0df8a79fff6f737e6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447310"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221451"
 ---
 # <a name="friend-assemblies-c"></a>Arkadaş Derlemeler (C++)
 
-Geçerli çalışma zamanları için *arkadaş bütünleştirilmiş kodları* ad alanı kapsamında ya da bir veya daha fazla istemci derlemelerine veya netmodule'leri erişilebilir bir derleme bileşeninin genel kapsamda türlere dil özelliği sağlar.
+İlgili çalışma zamanları için, *Friend derlemeleri* dil özelliği, bir derleme bileşenindeki ad alanı kapsamında veya genel kapsamda bulunan türleri bir veya daha fazla istemci derlemesine veya. netmodules erişilebilir hale getirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
 **Açıklamalar**
 
-(Bu dil özelliği tüm çalışma zamanları desteklenmiyor.)
+(Bu dil özelliği tüm çalışma zamanları içinde desteklenmez.)
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
 **Açıklamalar**
 
-(Bu dil özelliği, Windows çalışma zamanı'nda desteklenmiyor.)
+(Bu dil özelliği Windows Çalışma Zamanı desteklenmez.)
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -35,29 +35,29 @@ Derleyici seçeneği: **/ZW**
 
 **Açıklamalar**
 
-#### <a name="to-make-types-at-namespace-scope-or-global-scope-in-an-assembly-component-accessible-to-a-client-assembly-or-netmodule"></a>Ad alanı kapsamında veya genel kapsamlı türlerini bir derleme bileşeni bir istemci bütünleştirilmiş kodu veya .netmodule erişilebilir hale getirmek için
+#### <a name="to-make-types-at-namespace-scope-or-global-scope-in-an-assembly-component-accessible-to-a-client-assembly-or-netmodule"></a>Bir istemci derlemesine veya. netmodule 'ye erişilebilen bir derleme bileşenindeki ad alanı kapsamında veya genel kapsamda tür oluşturmak için
 
-1. Bileşeninde bir derleme özniteliğini belirtin <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>ve istemci bütünleştirilmiş kodu veya ad alanı kapsamında veya bileşen genel kapsamda türlerini erişecek .netmodule adını geçirin.  Ek öznitelikleri belirterek, birden çok istemci derlemelerine veya netmodule'leri belirtebilirsiniz.
+1. Bileşeninde, bir derleme özniteliği belirtin <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> ve bileşen ad alanı kapsamında veya genel kapsamda türlere erişecek istemci derlemesinin veya. netmodule adını geçirin.  Ek öznitelikler belirterek, birden çok istemci derlemesi veya. netmodules belirtebilirsiniz.
 
-1. İstemci derleme veya bileşen derlemesi kullanarak başvurduğunuzda .netmodule `#using`, geçmesi `as_friend` özniteliği.  Belirtirseniz `as_friend` belirttiğinde bir derleme için öznitelik `InternalsVisibleToAttribute`, ad alanı kapsamında veya genel kapsamında bileşenindeki bir tür erişmeye çalışırsanız bir çalışma zamanı özel durum oluşturulur.
+1. İstemci derlemesinde veya. netmodule 'de, kullanarak bileşen derlemesine başvurduğunuzda `#using` , **`as_friend`** özniteliğini geçirin.  **`as_friend`** Belirtmeyen bir derlemenin özniteliğini belirtirseniz `InternalsVisibleToAttribute` , bileşendeki ad alanı kapsamında veya genel kapsamda bir türe erişmeyi denerseniz bir çalışma zamanı özel durumu oluşturulur.
 
-Bütünleştirilmiş kod içeren bir yapı hatasına neden olur <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> özniteliği, ancak kullanan istemci derleme tanımlayıcı bir ada sahip değil `as_friend` öznitelik yapar.
+Özniteliği içeren derlemenin <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> tanımlayıcı bir adı yoksa ve özniteliği kullanan istemci derlemesi ise, derleme hatası ortaya kalır **`as_friend`** .
 
-Ad alanı kapsamında ve genel kapsam türleri için bir istemci bütünleştirilmiş kodu veya .netmodule bilinen olsa da, üye erişilebilirliği hala etkin olan.  Örneğin, bir özel üye erişemez.
+Ad alanı kapsamı ve genel kapsamdaki türler istemci derlemesi veya. netmodule tarafından tanınabilse de, üye erişilebilirliği hala etkin olur.  Örneğin, özel bir üyeye erişemezsiniz.
 
-Derlemedeki tüm türleri erişimi açıkça verilmesi gerekir.  Örneğin, derleme C erişimi tüm türleri için bir derlemede derleme B derleme C başvuruyor ve B derleme A'ya derlemede tüm türleri erişimi yok
+Bir derlemedeki tüm türlere erişime açıkça izin verilmelidir.  Örneğin, derleme c derleme B 'ye başvuruyorsa ve derleme B, derleme A 'daki tüm türlere erişim içeriyorsa, derleme C, derleme içindeki tüm türlere erişemez.
 
-Oturum açma hakkında bilgi — diğer bir deyişle, güçlü bir ad vermek nasıl — Microsoft kullanılarak oluşturulmuş bir derleme C++ derleyici, bakın [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+Nasıl oturum yapılacağı hakkında bilgi için, yani Microsoft C++ derleyicisi kullanılarak oluşturulan bir derleme olan güçlü bir ad verme hakkında bilgi için bkz. [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
-Arkadaş derlemeleri özelliğini kullanarak alternatif olarak, kullandığınız <xref:System.Security.Permissions.StrongNameIdentityPermission> tek tek türleri için erişimi kısıtlamak için.
+Arkadaş derlemeleri özelliğinin kullanımına alternatif olarak, <xref:System.Security.Permissions.StrongNameIdentityPermission> tek tek türlere erişimi kısıtlamak için kullanabilirsiniz.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:   **/CLR**
+Derleyici seçeneği: **/clr**
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, bileşen türlerine erişimi olan bir istemci bütünleştirilmiş kodu belirten bir bileşeni tanımlar.
+Aşağıdaki kod örneği, bileşen içindeki türlere erişimi olan bir istemci derlemesini belirten bir bileşeni tanımlar.
 
 ```cpp
 // friend_assemblies.cpp
@@ -75,7 +75,7 @@ public:
 };
 ```
 
-Sonraki kod örneğinde, bir özel tür bileşende erişir.
+Sonraki kod örneği, bileşendeki özel bir türe erişir.
 
 ```cpp
 // friend_assemblies_2.cpp
@@ -92,9 +92,9 @@ int main() {
 Class1::Test_Public
 ```
 
-Sonraki kod örneğinde bir bileşeni tanımlar ancak bileşen türlerine erişimi olacak bir istemci bütünleştirilmiş kodu belirtmez.
+Sonraki kod örneği bir bileşeni tanımlar, ancak bileşendeki türlere erişimi olacak bir istemci derlemesini belirtmez.
 
-Bileşeni kullanarak bağlandığını fark **/ opt: noref**. Bu özel türleri ne zaman gerekli değildir bileşenin meta verilerde gönderilir sağlar `InternalsVisibleTo` özniteliği. Daha fazla bilgi için [OPT (iyileştirmeler)](../build/reference/opt-optimizations.md).
+Bileşenin **/OPT: NOREF**kullanılarak bağlı olduğuna dikkat edin. Bu, özel türlerin bileşen meta verilerinde yayılmasını sağlar, bu öznitelik mevcut olduğunda gerekli değildir `InternalsVisibleTo` . Daha fazla bilgi için bkz. [/opt (iyileştirmeler)](../build/reference/opt-optimizations.md).
 
 ```cpp
 // friend_assemblies_3.cpp
@@ -109,7 +109,7 @@ public:
 };
 ```
 
-Aşağıdaki kod örneği, özel bir tür özel türlerinden erişimlerini değil bir bileşende erişmeye çalışan istemci tanımlar. Özel durum yakalamak istiyorsanız çalışma zamanı davranışı nedeniyle bir yardımcı işlev özel bir tür erişme girişiminde bulunuldu gerekir.
+Aşağıdaki kod örneği, özel türlerine erişim izni verilmeyen bir bileşende özel bir türe erişmeye çalışan bir istemciyi tanımlar. Çalışma zamanının davranışı nedeniyle özel durumu yakalamak istiyorsanız, bir yardımcı işlevinde özel bir türe erişmeyi denemeniz gerekir.
 
 ```cpp
 // friend_assemblies_4.cpp
@@ -136,7 +136,7 @@ int main() {
 caught an exception
 ```
 
-Sonraki kod örneğinde, bileşen türlerine erişimi olacak bir istemci bütünleştirilmiş kodu belirten bir tanımlayıcı ad bileşen oluşturma işlemini gösterir.
+Sonraki kod örneğinde, bileşendeki türlere erişimi olacak bir istemci derlemesini belirten bir tanımlayıcı ad bileşeninin nasıl oluşturulacağı gösterilmektedir.
 
 ```cpp
 // friend_assemblies_5.cpp
@@ -155,19 +155,19 @@ public:
 };
 ```
 
-Bileşen kendi ortak anahtar belirtmeniz gerektiğini unutmayın. Aşağıdaki komutları sırayla bir anahtar çifti oluşturma ve ortak anahtarı almak için bir komut isteminde çalıştırmanızı öneririz:
+Bileşenin ortak anahtarını belirtmesi gerektiğini unutmayın. Anahtar çifti oluşturmak ve ortak anahtarı almak için komut isteminde aşağıdaki komutları sırayla çalıştırmanızı öneririz:
 
-**-d friend_assemblies.snk sn**
+**sn-d friend_assemblies. snk**
 
-**-k friend_assemblies.snk sn**
+**sn-k friend_assemblies. snk**
 
-**sn -i friend_assemblies.snk friend_assemblies.snk**
+**sn-i friend_assemblies. snk friend_assemblies. snk**
 
-**sn -pc friend_assemblies.snk key.publickey**
+**sn-PC friend_assemblies. snk Key. PublicKey**
 
-**sn - tp key.publickey**
+**sn-TP Key. PublicKey**
 
-Sonraki kod örneğinde, bir özel tür tanımlayıcı ad bileşende erişir.
+Sonraki kod örneği, Strong-Name bileşenindeki özel bir türe erişir.
 
 ```cpp
 // friend_assemblies_6.cpp

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2361
 ms.assetid: efbdaeb9-891c-4f7d-97da-89088a8413f3
-ms.openlocfilehash: 747b85b57bee9e53f13a978254798a1dc268ef85
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b95c6459c0ff093d22f3e754f2c7fd6564d2b296
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759899"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221204"
 ---
 # <a name="compiler-error-c2361"></a>Derleyici hatası C2361
 
 ' Identifier ' öğesinin başlatılması ' default ' etiketiyle atlandı
 
-`identifier` başlatılması `switch` bildiriminde atlanabilir. Bildirim bir blok içine alınmadığı takdirde bir başlatıcıya sahip bir bildirimi atlayabilirsiniz. (Bir blok içinde bildirilmemiş değilse, değişken `switch` deyimin sonuna kadar kapsam içindedir.)
+Öğesinin başlatılması `identifier` bir **`switch`** bildirimde atlanabilir. Bildirim bir blok içine alınmadığı takdirde bir başlatıcıya sahip bir bildirimi atlayabilirsiniz. (Bir blok içinde bildirilmemiş değilse, değişken deyimin sonuna kadar kapsam içindedir **`switch`** .)
 
 Aşağıdaki örnek C2361 oluşturur:
 

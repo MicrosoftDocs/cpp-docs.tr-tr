@@ -1,17 +1,17 @@
 ---
-title: ref (C++ com özniteliği)
+title: ref (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ref
 helpviewer_keywords:
 - ref attribute
 ms.assetid: 67e82d3e-07d9-4ef8-bf2b-0a4491d12557
-ms.openlocfilehash: bfb5cc8c785c7f62f29488a9379c2c7ed229cad8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6cf78930b19891832369e9b96c0a761d2752e4a8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214597"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232748"
 ---
 # <a name="ref-c"></a>ref (C++)
 
@@ -49,7 +49,7 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**Uygulama hedefi**|**typedef**, Interface parametresi, Interface yöntemi|
+|**Şunlara uygulanır**|**`typedef`**, Interface parametresi, Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -59,5 +59,5 @@ __interface IFireTabCtrl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[Parametre öznitelikleri](parameter-attributes.md)

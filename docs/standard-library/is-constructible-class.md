@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_constructible
 ms.assetid: 7cdec5ff-73cf-4f78-a9db-ced2e9c0fd7f
-ms.openlocfilehash: dc0596ac7a3fc2bcbcbe49f5fa4b20a971e5e445
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a968efa5a867a3fd0e60594784cdb11122a974b2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452857"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222413"
 ---
-# <a name="isconstructible-class"></a>is_constructible sınıfı
+# <a name="is_constructible-class"></a>is_constructible sınıfı
 
 Belirtilen bağımsız değişken türleri kullanıldığında bir türün oluşturulabilir olup olmadığını test eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, class... Args>
@@ -26,7 +26,7 @@ struct is_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 *Args*\
@@ -34,11 +34,11 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür koşulunun bir örneği, *T* türü, bağımsız *değişkenlerdeki bağımsız*değişken türleri kullanılarak oluşturulabilir ise true, aksi durumda false değerini taşır. Değişken  tanımı `T t(std::declval<Args>()...);` düzgün biçimlendirilmişse tür T oluşturulabilir. *T* ve *args* içindeki tüm türlerin her ikisi de, bilinmeyen türler, **void**veya dizileri olmalıdır.
+Tür koşulunun bir örneği, *T* türü, bağımsız *değişkenlerdeki bağımsız*değişken türleri kullanılarak oluşturulabilir ise true, aksi durumda false değerini taşır. Değişken tanımı düzgün biçimlendirilmişse tür *T* oluşturulabilir `T t(std::declval<Args>()...);` . Hem *T* hem de *args* içindeki tüm türler, tamamlanmış bir veya daha fazla türde **`void`** bir dizi olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

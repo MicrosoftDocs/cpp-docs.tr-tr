@@ -2,26 +2,26 @@
 title: C++'da özel durumlar ve yığını geriye doğru izleme
 ms.date: 11/19/2019
 ms.assetid: a1a57eae-5fc5-4c49-824f-3ce2eb8129ed
-ms.openlocfilehash: 11657206e86dbc81eb62c1e11b49fd87777f11d8
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: e0dadc90f85caeea359fca4ed0b45868ea77177e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74246563"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221568"
 ---
 # <a name="exceptions-and-stack-unwinding-in-c"></a>C++'da Özel Durumlar ve Yığını Geriye Doğru İzleme
 
 C++ özel durum mekanizmasında denetim, throw deyiminden throw türünü işleyebilen ilk catch deyimine geçer. Catch ifadesine ulaşıldığında, throw ve catch deyimleri arasındaki kapsamdaki otomatik değişkenlerin hepsi *yığın geri sarma*olarak bilinen bir işlemde yok edilir. Yığın geriye doğru izleme işleminde, yürütme aşağıdaki gibi olur:
 
-1. Denetim **TRY** ifadesine normal sıralı yürütmeye ulaştığında. **TRY** bloğundaki korunan bölüm yürütülür.
+1. Denetim **`try`** ifadeye normal sıralı yürütmeye ulaşır. Bloktaki korunan bölüm **`try`** yürütülür.
 
-1. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşturulursa, **TRY** bloğunu izleyen **catch** yan tümceleri yürütülmez. Yürütme, ilişkili **TRY** bloğunu izleyen son **catch** yan tümcesinin sonunda deyimi devam ettirir.
+1. Korunan bölümün yürütülmesi sırasında hiçbir özel durum oluşturulursa, **`catch`** bloğu izleyen yan tümceler **`try`** yürütülmez. Yürütme, **`catch`** ilişkili bloğunu izleyen son yan tümcesinden sonraki ifadede devam eder **`try`** .
 
-1. Korunan bölümün yürütülmesi sırasında veya korunan bölümün doğrudan ya da dolaylı olarak çağırdığı herhangi bir yordam için bir özel durum oluşturulursa, **throw** işleneni tarafından oluşturulan nesneden bir özel durum nesnesi oluşturulur. (Bu, bir kopya oluşturucunun dahil olabileceğini gösterir.) Bu noktada, derleyici daha yüksek bir yürütme bağlamında oluşturulan türdeki bir özel durumu işleyebilen veya herhangi bir özel durum türünü işleyebilen bir **catch** işleyicisi için bir **catch** yan tümcesi arar. **Catch** işleyicileri, **TRY** bloğundan sonra görünüşlerinin sırasıyla incelenir. Uygun bir işleyici bulunmazsa, sonraki dinamik olarak kapsayan **TRY** bloğu incelenir. Bu işlem, en dıştaki kapsayan **TRY** bloğunun incelenene kadar devam eder.
+1. Korunan bölümün yürütülmesi sırasında veya korunan bölümün doğrudan ya da dolaylı olarak çağırdığı herhangi bir yordam için bir özel durum oluşturulursa, işlenen tarafından oluşturulan nesneden bir özel durum nesnesi oluşturulur **`throw`** . (Bu, bir kopya oluşturucunun dahil olabileceğini gösterir.) Bu noktada, derleyici **`catch`** daha yüksek bir yürütme bağlamında oluşturulan türdeki bir özel durumu işleyebilen veya **`catch`** herhangi bir özel durum türünü işleyebilen bir işleyici için bir yan tümce arar. **`catch`** İşleyiciler, bloğundan sonra görünüşlerinin sırayla incelenir **`try`** . Uygun bir işleyici bulunmazsa, dinamik olarak kapsayan sonraki **`try`** blok incelenir. Bu işlem, en dıştaki kapsayan **`try`** blok incelenene kadar devam eder.
 
 1. Eşleşen bir işleyici hala bulunamazsa ya da geriye doğru işlem sırasında işleyici denetimi almadan önce bir özel durum oluşursa, önceden tanımlanmış çalışma zamanı işlevi `terminate` çağrılır. Özel durum, geriye doğru izleme başlamadan önce ve bir özel durum oluştuktan sonra oluşursa, `terminate` çağrılır.
 
-1. Eşleşen bir **catch** işleyicisi bulunursa ve değere göre yakalarsa, biçimsel parametresi özel durum nesnesi kopyalanarak başlatılır. Başvuruya göre yakalarsa, parametre özel durum nesnesine başvurmak için başlatılır. Biçimsel parametre başlatıldıktan sonra, yığını geriye doğru izleme işlemi başlar. Bu, tam olarak oluşturulan tüm otomatik nesnelerin yok edilmesi, ancak **catch** işleyicisiyle ilişkili **TRY** bloğunun başlangıcı ile özel durumun throw sitesiyle ilgilidir. Yok etme işlemi oluşturma işleminin ters sırasıyla yapılır. **Catch** işleyicisi yürütülür ve program son işleyiciden sonra yürütmeyi sürdürür — diğer bir deyişle, bir **catch** işleyicisi olmayan ilk ifadede veya yapısıdır. Denetim yalnızca oluşturulan bir özel durum aracılığıyla, hiçbir şekilde bir **goto** ifadesiyle veya **Switch** deyimindeki **Case** etiketiyle bir **catch** işleyicisi girebilir.
+1. Eşleşen bir **`catch`** işleyici bulunursa ve değere göre yakalarsa, biçimsel parametresi özel durum nesnesi kopyalanarak başlatılır. Başvuruya göre yakalarsa, parametre özel durum nesnesine başvurmak için başlatılır. Biçimsel parametre başlatıldıktan sonra, yığını geriye doğru izleme işlemi başlar. Bu, tam olarak oluşturulmuş, ancak **`try`** işleyici ile ilişkili bloğunun başlangıcı **`catch`** ve özel durumun throw sitesi arasında tamamen oluşturulan, ancak henüz kararsız olmayan tüm otomatik nesnelerin yok edilmesini içerir. Yok etme işlemi oluşturma işleminin ters sırasıyla yapılır. **`catch`** İşleyici yürütülür ve program son işleyiciden sonra yürütmeyi sürdürür — diğer bir deyişle, işleyici olmayan ilk ifadede veya yapısıdır **`catch`** . Denetim, yalnızca bir **`catch`** **`goto`** bildirimde veya bir **`case`** deyimdeki etikette hiçbir şekilde oluşturulan özel durum aracılığıyla bir işleyici girebilir **`switch`** .
 
 ## <a name="stack-unwinding-example"></a>Yığın geriye doğru izleme örneği
 

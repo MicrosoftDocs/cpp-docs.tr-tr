@@ -1,5 +1,5 @@
 ---
-title: '&lt;Yineleyici&gt; işlevleri'
+title: '&lt;Yineleyici &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - xutility/std::advance
@@ -32,16 +32,16 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: 69f1007f0c7f587e81313f5de97947410bf243df
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 615ebeedc87563eeac46c462304072ff1979040c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420115"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222322"
 ---
-# <a name="ltiteratorgt-functions"></a>&lt;Yineleyici&gt; işlevleri
+# <a name="ltiteratorgt-functions"></a>&lt;Yineleyici &gt; işlevleri
 
-## <a name="advance"></a>ilerler
+## <a name="advance"></a><a name="advance"></a>ilerler
 
 Belirtilen bir konum sayısıyla yineleyiciyi artırır.
 
@@ -52,19 +52,19 @@ template <class InputIterator, class Distance>
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*\
+*Dengeleyici*\
 Artırılacak ve bir girişi yineleyicisinin gereksinimleri karşılaması gereken yineleyici.
 
-*Kapalı*\
+*Dışına*\
 Yineleyicinin fark türüne dönüştürülebilir ve yineleyici konumunun yükseltileceği artış sayısını belirten integral türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Aralık gelişimi tekil olmamalıdır, burada yineleyicilerin başvurusu kaldırılmalı veya sonu aşmalıdır.
 
-`InputIterator` çift yönlü Yineleyici türü için gereksinimleri karşılıyorsa *kapalı* olabilir. `InputIterator` bir giriş veya iletme Yineleyici türü ise *kapalı* olması negatif olmalıdır.
+`InputIterator`Çift yönlü Yineleyici türü için gereksinimleri karşılıyorsa *kapalı* olabilir. `InputIterator`Bir giriş veya iletme Yineleyici türü Ise *kapalı* olması negatif olmalıdır.
 
-`InputIterator`, Rastgele erişimli bir yineleyici için gereksinimleri karşılıyorsa, Advance işlevinin sabit karmaşıklığı vardır; Aksi takdirde, doğrusal karmaşıklığa sahiptir ve büyük olasılıkla pahalıdır.
+Advance işlevi, `InputIterator` Rastgele erişimli bir yineleyici için gereksinimleri karşılıyorsa sabit karmaşıklığa sahiptir; Aksi takdirde, doğrusal karmaşıklığa sahiptir ve potansiyel olarak pahalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -113,7 +113,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-## <a name="back_inserter"></a>back_inserter
+## <a name="back_inserter"></a><a name="back_inserter"></a>back_inserter
 
 Belirtilen kapsayıcının arkasında öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -129,11 +129,11 @@ Geri eklenen nesnenin yürütüleceği kapsayıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı nesnesiyle ilişkili bir `back_insert_iterator` *_Cont*.
+`back_insert_iterator`Kapsayıcı nesnesiyle ilişkili bir *_Cont*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ Standart kitaplık içinde bağımsız değişken, üye işlevi `push_back`: [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md)veya [Vector sınıfı](../standard-library/vector-class.md)olan üç sıra kapsayıcılarından birine başvurmalıdır.
+C++ Standart Kitaplığı içinde bağımsız değişken, üye işlevi olan üç sıra kapsayıcılarından birine başvurmalıdır `push_back` : [deque Class](../standard-library/deque-class.md), [list Class](../standard-library/list-class.md)veya [vector Class](../standard-library/vector-class.md).
 
 ### <a name="example"></a>Örnek
 
@@ -184,7 +184,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-## <a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a>başladı
 
 Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.
 
@@ -203,21 +203,21 @@ Ty *begin(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*\
+*bildirisini*\
 Bir kapsayıcı.
 
-*dizi*\
-`Ty`türünde bir nesne dizisi.
+*dizide*\
+Türünde bir nesne dizisi `Ty` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki şablon işlevi `cont.begin()`döndürür. Birinci işlev sabit değil; ikinci sabittir.
+İlk iki şablon işlevi döndürülür `cont.begin()` . Birinci işlev sabit değil; ikinci sabittir.
 
 Üçüncü şablon işlevi *diziyi*döndürür.
 
 ### <a name="example"></a>Örnek
 
-Daha genel davranış gerektiğinde bu şablon işlevini kapsayıcı üyesi `begin()` yerine kullanmanızı öneririz.
+Daha genel davranış gerektiğinde bu şablon işlevini kapsayıcı üye yerine kullanmanızı öneririz `begin()` .
 
 ```cpp
 // cl.exe /EHsc /nologo /W4 /MTd
@@ -267,7 +267,7 @@ int main() {
 160 106 80 70 53 40 35 23 20 16 10 8 5 4 2 1
 ```
 
-İşlev `reverse_sort`, normal dizilere ek olarak, `begin()`üye olmayan sürümünü çağırdığı için, her türlü kapsayıcıları destekler. `reverse_sort` kapsayıcı üyesini kullanmak üzere kodlandıysanız `begin()`:
+İşlevi, `reverse_sort` ' nin üye olmayan sürümünü çağırdığı için normal dizilere ek olarak herhangi bir türdeki kapsayıcıları destekler `begin()` . `reverse_sort`Kapsayıcı üyesini kullanmak üzere kodlandıysanız `begin()` :
 
 ```cpp
 template <typename C>
@@ -286,7 +286,7 @@ Ona bir dizi göndermek, bu derleyicinin hata vermesine neden olur:
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-## <a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a>cbegin
 
 Belirtilen kapsayıcıdaki ilk öğeyi izleyen öğeye sabit bir yineleyici alır.
 
@@ -298,18 +298,18 @@ auto cbegin(const Container& cont)
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*\
+*bildirisini*\
 Bir kapsayıcı ya da initializer_list.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sabit bir `cont.begin()`.
+Bir sabit `cont.begin()` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlev tüm C++ standart kitaplık kapsayıcılarıyla ve [initializer_list](../standard-library/initializer-list-class.md)çalışır.
 
-Dönüş değerinin `const_iterator`olduğundan emin olmak için `begin()` Template işlevinin yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `Container` değiştirilebilir ( **const**olmayan) bir kapsayıcı veya `begin()` ve `cbegin()`destekleyen herhangi bir türde `initializer_list` olacak şekilde düşünün.
+`begin()`Dönüş değerinin olduğunu garantilemek için şablon işlevinin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `Container` değiştirilebilir ( **`const`** ve olmayan) bir kapsayıcı veya `initializer_list` ve ' ı destekleyen herhangi bir tür gibi düşünün `begin()` `cbegin()` .
 
 ```cpp
 auto i1 = Container.begin();
@@ -319,7 +319,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a>cend
 
 Belirtilen kapsayıcıdaki son öğeyi izleyen öğe için sabit bir yineleyici alır.
 
@@ -331,18 +331,18 @@ auto cend(const Container& cont)
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*\
+*bildirisini*\
 Bir kapsayıcı ya da initializer_list.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sabit bir `cont.end()`.
+Bir sabit `cont.end()` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlev tüm C++ standart kitaplık kapsayıcılarıyla ve [initializer_list](../standard-library/initializer-list-class.md)çalışır.
 
-Dönüş değerinin `const_iterator`olduğundan emin olmak için [End ()](../standard-library/iterator-functions.md#end) şablon işlevi yerine bu üye işlevi kullanabilirsiniz. Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `Container` değiştirilebilir ( **const**olmayan) bir kapsayıcı veya `end()` ve `cend()`destekleyen herhangi bir türde `initializer_list` olacak şekilde düşünün.
+Dönüş değerinin olduğunu garantilemek için [End ()](../standard-library/iterator-functions.md#end) şablon işlevi yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, `Container` değiştirilebilir ( **`const`** ve olmayan) bir kapsayıcı veya `initializer_list` ve ' ı destekleyen herhangi bir tür gibi düşünün `end()` `cend()` .
 
 ```cpp
 auto i1 = Container.end();
@@ -352,19 +352,19 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="crbegin"></a>crbegin
+## <a name="crbegin"></a><a name="crbegin"></a>crbegin
 
 ```cpp
 template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
 ```
 
-## <a name="crend"></a>crend
+## <a name="crend"></a><a name="crend"></a>crend
 
 ```cpp
 template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
 ```
 
-## <a name="data"></a>verileri
+## <a name="data"></a><a name="data"></a>verileri
 
 ```cpp
 template <class C> constexpr auto data(C& c) -> decltype(c.data());
@@ -373,7 +373,7 @@ template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
 template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
 ```
 
-## <a name="distance"></a>Uzaklık
+## <a name="distance"></a><a name="distance"></a>Uzaklık
 
 İki yineleyici tarafından ele alınan konumlar arasındaki artış sayısını belirler.
 
@@ -384,10 +384,10 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 İkinciden uzaklığı belirlenecek olan ilk Yineleyici.
 
-*son*\
+*soyadına*\
 Birinciden uzaklığı belirlenecek ikinci Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -396,7 +396,7 @@ Birinciden uzaklığı belirlenecek ikinci Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InputIterator`, bir rastgele erişim Yineleyici için gereksinimleri karşılıyorsa uzaklık işlevinin sabit karmaşıklığı vardır; Aksi takdirde, doğrusal karmaşıklığa sahiptir ve büyük olasılıkla pahalıdır.
+Uzaklık işlevi, `InputIterator` Rastgele erişimli bir yineleyici için gereksinimleri karşılıyorsa sabit karmaşıklığa sahiptir; Aksi takdirde, doğrusal karmaşıklığa sahiptir ve potansiyel olarak pahalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -446,7 +446,7 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-## <a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a>olmamalıdır
 
 ```cpp
 template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
@@ -454,7 +454,7 @@ template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
 template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
 ```
 
-## <a name="end"></a>erer
+## <a name="end"></a><a name="end"></a>erer
 
 Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.
 
@@ -473,23 +473,23 @@ Ty *end(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>Parametreler
 
-*devamı*\
+*bildirisini*\
 Bir kapsayıcı.
 
-*dizi*\
-`Ty`türünde bir nesne dizisi.
+*dizide*\
+Türünde bir nesne dizisi `Ty` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki şablon işlevi `cont.end()` döndürür (ilki sabit değildir ve ikincisi sabittir).
+İlk iki şablon işlevi döndürülür `cont.end()` (ilki sabit değildir ve ikincisi sabittir).
 
-Üçüncü şablon işlevi `array + Size`döndürür.
+Üçüncü şablon işlevi döndürür `array + Size` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Kod örneği için bkz. [Begin](../standard-library/iterator-functions.md#begin).
 
-## <a name="front_inserter"></a>front_inserter
+## <a name="front_inserter"></a><a name="front_inserter"></a>front_inserter
 
 Belirtilen kapsayıcının önünde öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -505,13 +505,13 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcı nesnesiyle ilişkili bir `front_insert_iterator` *_Cont*.
+`front_insert_iterator`Kapsayıcı nesnesiyle ilişkili bir *_Cont*.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Front_insert_iterator sınıfının üye işlevi [front_insert_iterator](../standard-library/front-insert-iterator-class.md#front_insert_iterator) de kullanılabilir.
 
-C++ Standart kitaplık içinde bağımsız değişken, üye işlevi `push_back`: [deque Class](../standard-library/deque-class.md) veya "list Class" olan iki dizi kapsayıcılarından birine başvurmalıdır.
+C++ Standart Kitaplığı içinde bağımsız değişken, üye işlevi olan iki sıra kapsayıcılarından birine başvurmalıdır `push_back` : [deque Sınıfı](../standard-library/deque-class.md) veya "list Class".
 
 ### <a name="example"></a>Örnek
 
@@ -560,9 +560,9 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a>inserter
+## <a name="inserter"></a><a name="inserter"></a>inserter
 
-`insert_iterator<Container>(_Cont, _Where)`yerine `inserter(_Cont, _Where)` kullanmanıza olanak sağlayan bir yardımcı şablon işlevi.
+Yerine kullanmanıza olanak sağlayan bir yardımcı şablon işlevi `inserter(_Cont, _Where)` `insert_iterator<Container>(_Cont, _Where)` .
 
 ```cpp
 template <class Container>
@@ -582,7 +582,7 @@ Ekleme noktasını bulmak için bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator)`<Container>(_Cont, _Where)`döndürür.
+Şablon işlevi insert_iterator döndürür [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator) `<Container>(_Cont, _Where)` .
 
 ### <a name="example"></a>Örnek
 
@@ -631,12 +631,12 @@ After the insertions, the list L is:
 ( 1 20 30 40 500 ).
 ```
 
-## <a name="make_checked_array_iterator"></a>make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a><a name="make_checked_array_iterator"></a>make_checked_array_iterator
 
 Diğer algoritmalar tarafından kullanılabilen bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) oluşturur.
 
 > [!NOTE]
-> Bu işlev, C++ standart kitaplığın Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.
+> Bu işlev, C++ standart kitaplığı 'nın bir Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.
 
 ```cpp
 template <class Iter>
@@ -649,13 +649,13 @@ Iter Ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-*Ptr*\
+*Kaydetmeye*\
 Hedef dizi için işaretçi.
 
-*Boyut*\
+*Boyutla*\
 Hedef dizinin boyutu.
 
-*Dizin*\
+*İndeks*\
 Diziye isteğe bağlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -664,13 +664,13 @@ Diziye isteğe bağlı dizin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`make_checked_array_iterator` işlevi `stdext` ad alanında tanımlanmıştır.
+`make_checked_array_iterator`İşlev `stdext` ad alanında tanımlanır.
 
-Bu işlev, bir ham işaretçi alır — bu, normalde sınır taşmasına neden olur ve bunu denetleyen bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) sınıfında sarmalar. Bu sınıf işaretli olarak işaretlendiğinden, C++ standart kitaplık onunla ilgili uyarı vermez. Daha fazla bilgi ve kod örnekleri için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
+Bu işlev, bir ham işaretçi alır — bu, normalde sınır taşmasına neden olur ve bunu denetleyen bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) sınıfında sarmalar. Bu sınıf işaretlenmiş olarak işaretlendiğinden, C++ standart kitaplığı onunla ilgili uyarı vermez. Daha fazla bilgi ve kod örnekleri için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, bir [vektör](../standard-library/vector-class.md) oluşturulup 10 öğeyle doldurulur. Vektör içeriği, kopyalama algoritmasını kullanarak bir diziye kopyalanır ve sonra `make_checked_array_iterator` hedefi belirtmek için kullanılır. Bunun ardından sınırların denetiminin bilerek ihlali gelir, böylece bir hata ayıklama onaylama işlemi hatası tetiklenir.
+Aşağıdaki örnekte, bir [vektör](../standard-library/vector-class.md) oluşturulup 10 öğeyle doldurulur. Vektör içeriği, kopyalama algoritmasını kullanarak bir diziye kopyalanır ve ardından `make_checked_array_iterator` hedefi belirtmek için kullanılır. Bunun ardından sınırların denetiminin bilerek ihlali gelir, böylece bir hata ayıklama onaylama işlemi hatası tetiklenir.
 
 ```cpp
 // make_checked_array_iterator.cpp
@@ -725,9 +725,9 @@ int main()
 }
 ```
 
-## <a name="make_move_iterator"></a>make_move_iterator
+## <a name="make_move_iterator"></a><a name="make_move_iterator"></a>make_move_iterator
 
-`stored` Yineleyici olarak belirtilen yineleyiciyi içeren bir `move iterator` oluşturur.
+`move iterator`Yineleyici olarak belirtilen yineleyiciyi içeren bir oluşturur `stored` .
 
 ```cpp
 template <class Iterator>
@@ -742,14 +742,14 @@ Yeni taşıma yineleyicisinin içinde depolanan yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `move_iterator` `<Iterator>(_It)`döndürür.
+Şablon işlevi döndürür `move_iterator` `<Iterator>(_It)` .
 
-## <a name="make_unchecked_array_iterator"></a>make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a><a name="make_unchecked_array_iterator"></a>make_unchecked_array_iterator
 
 Diğer algoritmalar tarafından kullanılabilen bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) oluşturur.
 
 > [!NOTE]
-> Bu işlev, C++ standart kitaplığın Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.
+> Bu işlev, C++ standart kitaplığı 'nın bir Microsoft uzantısıdır. Bu işlev kullanılarak uygulanan kod bu Microsoft uzantısını desteklemeyen C++ Standart yapı ortamları için taşınabilir değildir.
 
 ```cpp
 template <class Iter>
@@ -759,7 +759,7 @@ unchecked_array_iterator<Iter>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ptr*\
+*Kaydetmeye*\
 Hedef dizi için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -768,13 +768,13 @@ Hedef dizi için işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`make_unchecked_array_iterator` işlevi `stdext` ad alanında tanımlanmıştır.
+`make_unchecked_array_iterator`İşlev `stdext` ad alanında tanımlanır.
 
 Bu işlev, ham bir işaretçi alır ve bunu denetim olmayan bir sınıfta sarmalayıp hiçbir şey yapmaz, ancak [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)gibi derleyici uyarılarını da susturun. Bu nedenle, denetlenmemiş işaretçi uyarılarıyla onları genel olarak susturmadan veya denetleme maliyeti oluşturmadan baş etmek için hedeflenmiş bir yoldur. Daha fazla bilgi ve kod örnekleri için bkz. [Checked Iterators](../standard-library/checked-iterators.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, bir [vektör](../standard-library/vector-class.md) oluşturulup 10 öğeyle doldurulur. Vektör içeriği, kopyalama algoritmasını kullanarak bir diziye kopyalanır ve sonra `make_unchecked_array_iterator` hedefi belirtmek için kullanılır.
+Aşağıdaki örnekte, bir [vektör](../standard-library/vector-class.md) oluşturulup 10 öğeyle doldurulur. Vektör içeriği, kopyalama algoritmasını kullanarak bir diziye kopyalanır ve ardından `make_unchecked_array_iterator` hedefi belirtmek için kullanılır.
 
 ```cpp
 // make_unchecked_array_iterator.cpp
@@ -823,7 +823,7 @@ int main()
 }
 ```
 
-## <a name="next"></a>ileri
+## <a name="next"></a><a name="next"></a>ileri
 
 Belirtilen sayıda yineler ve yeni yineleyici konumunu döndürür.
 
@@ -836,7 +836,7 @@ InputIterator next(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Geçerli konum.
 
 *_Off*\
@@ -848,9 +848,9 @@ Yinelenme sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `next` artan *_Off* kez döndürür
+Şablon işlevi, `next` artan *_Off* süreleri döndürüyor
 
-## <a name="prev"></a>önceki
+## <a name="prev"></a><a name="prev"></a>önceki
 
 Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.
 
@@ -863,7 +863,7 @@ BidirectionalIterator prev(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*\
+*adı*\
 Geçerli konum.
 
 *_Off*\
@@ -871,23 +871,23 @@ Yinelenme sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `next` azaltma `off` zaman döndürür.
+Şablon işlevi, `next` azaltılır kez döndürülür `off` .
 
-## <a name="rbegin"></a>rbegin
+## <a name="rbegin"></a><a name="rbegin"></a>rbegin
 
 ```cpp
 template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
 template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
 ```
 
-## <a name="rend"></a>rend
+## <a name="rend"></a><a name="rend"></a>rend
 
 ```cpp
 template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
 template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
 ```
 
-## <a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a>boyutla
 
 ```cpp
 template <class C> constexpr auto size(const C& c) -> decltype(c.size());

@@ -40,18 +40,18 @@ helpviewer_keywords:
 - wgetcwd function
 - directories [C++], current working
 ms.assetid: 888dc8c6-5595-4071-be55-816b38e3e739
-ms.openlocfilehash: 950f4f73912d7bab38363e41c61025d27380bef6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b6fb32a593a969f93a934f251f38cd50960440b0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915744"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221893"
 ---
 # <a name="_getcwd-_wgetcwd"></a>_getcwd, _wgetcwd
 
 Geçerli çalışma dizinini alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *_getcwd(
@@ -70,7 +70,7 @@ wchar_t *_wgetcwd(
 Yol için depolama konumu.
 
 *maxlen*\
-Karakter cinsinden yolun en fazla uzunluğu: **_getcwd** için **char** ve **_wgetcwd**için **wchar_t** .
+Karakter cinsinden yolun en fazla uzunluğu: **`char`** **_getcwd** için ve **`wchar_t`** **_wgetcwd**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -82,7 +82,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 **_Getcwd** işlevi, varsayılan sürücü için geçerli çalışma dizininin tam yolunu alır ve *arabelleğe*kaydeder. *Maxlen* tamsayı bağımsız değişkeni yolun uzunluk üst sınırını belirtir. Yolun uzunluğu (Sonlandırıcı null karakteri dahil) *maxlen*değerini aşarsa bir hata oluşur. *Buffer* bağımsız değişkeni **null**olabilir; yolu depolamak için, **malloc**kullanılarak en az boyut *maxlen* (yalnızca daha fazla) için bir arabellek otomatik olarak ayrılır. Bu arabellek daha sonra **boş çağırarak serbest** bırakılır ve **_getcwd** dönüş değeri (ayrılan arabelleğe bir işaretçi) geçirerek serbest bırakılır.
 
-**_getcwd** , geçerli çalışma dizininin yolunu temsil eden bir dize döndürür. Geçerli çalışma dizini kökeyse, dize bir ters eğik çizgiyle (`\`) biter. Geçerli çalışma dizini kök dışında bir dizin ise, dize bir ters eğik çizgiyle değil dizin adıyla biter.
+**_getcwd** , geçerli çalışma dizininin yolunu temsil eden bir dize döndürür. Geçerli çalışma dizini kökeyse, dize bir ters eğik çizgiyle ( `\` ) biter. Geçerli çalışma dizini kök dışında bir dizin ise, dize bir ters eğik çizgiyle değil dizin adıyla biter.
 
 **_wgetcwd** , **_getcwd**geniş karakterli bir sürümüdür; _wgetcwd *arabellek* bağımsız değişkeni ve dönüş değeri **_wgetcwd** geniş karakterli dizelerdir. **_wgetcwd** ve **_getcwd** aynı şekilde davranır.
 
@@ -100,8 +100,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getcwd**|\<Direct. h>|
-|**_wgetcwd**|\<Direct. h> veya \<wchar. h>|
+|**_getcwd**|\<direct.h>|
+|**_wgetcwd**|\<direct.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

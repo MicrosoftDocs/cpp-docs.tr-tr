@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 6c4055e0f14bced1e5047fc502a4bf274126f804
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ddf71c385414a28c2b616b359a93a637abc24aa
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409661"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222140"
 ---
 # <a name="emitidl"></a>emitidl
 
-Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirtir.
+Sonraki tüm IDL özniteliklerinin işlenip işlenmeyeceğini ve oluşturulan. IDL dosyasına yerleştirilip yerleştirilmeyeceğini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ emitidl(state, defaultimports=boolean) ];
@@ -25,32 +25,32 @@ Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerle�
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu*<br/>
-Bu değerlerden biri: `true`, `false`, `forced`, `restricted`, `push`, veya `pop`.
+*durumunda*<br/>
+Şu olası değerlerden biri: **`true`** , **`false`** ,, `forced` `restricted` , `push` veya `pop` .
 
-- Varsa `true`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasında yerleştirilir. İçin varsayılan ayar budur **emitidl**.
+- **`true`** Bir kaynak kod dosyasında karşılaşılan IDL kategorisi öznitelikleri oluşturulan. IDL dosyasına yerleştirilir. Bu, **emitidl**için varsayılan ayardır.
 
-- Varsa `false`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasına yerleştirilmez.
+- **`false`** Bir kaynak kod dosyasında karşılaşılan IDL kategorisi öznitelikleri oluşturulan. IDL dosyasına yerleştirilmez.
 
-- Varsa `restricted`, IDL öznitelikleri dosyasındaki olmasını sağlayan bir [Modülü](module-cpp.md) özniteliği. Derleyici bir .idl dosyası oluşturmaz.
+- İse `restricted` , IDL özniteliklerinin bir [Modül](module-cpp.md) özniteliği olmadan dosyada olmasını sağlar. Derleyici bir. IDL dosyası oluşturmaz.
 
-- Varsa `forced`, bir sonraki geçersiz kılar `restricted` sahip için dosya gerektirmiyor özniteliği, bir `module` IDL varsa özniteliği dosyasında öznitelikleri.
+- İse `forced` , `restricted` dosyada IDL öznitelikleri varsa dosyanın bir özniteliğe sahip olmasını gerektiren sonraki bir özniteliği geçersiz kılar `module` .
 
-- `push` Geçerli kaydetmenizi sağlayan **emitidl** ayarları bir iç **emitidl** yığını ve `pop` , ayarlamanıza imkan sağlar **emitidl** ne olursa olsun değer iç üstünde olduğu için **emitidl** yığını.
+- `push`geçerli **emitidl** ayarlarını bir iç **emitidl** yığınına kaydetmenizi sağlar ve `pop` **emitidl** , iç **emitidl** yığınının en üstünde olan herhangi bir değere ayarlamanıza olanak sağlar.
 
-`defaultimports=`*Boole* \(isteğe bağlı)
+`defaultimports=`*Boole değeri* \( seçim
 
-- Varsa *Boole* olduğu **true**, docobj.idl oluşturulan .idl dosyasına aktarılır. Ayrıca, bir .idl dosyası ile aynı adı taşıyan bir .h dosyası varsa `#include` kaynak kodu .h dosyası ile aynı dizinde bulunan ve ardından söz konusu .idl dosyası için bir içeri aktarma deyimi oluşturulan .idl dosyası içerir.
+- *Boolean* ise **`true`** docobj. IDL dosyası oluşturulan. IDL dosyasına aktarılır. Ayrıca, kaynak kodunuzda kullandığınız bir. h dosyası ile aynı ada sahip bir. IDL dosyası `#include` . h dosyasıyla aynı dizinde bulunursa, oluşturulan. IDL dosyası bu. IDL dosyası için bir içeri aktarma ekstresi içerir.
 
-- Varsa *Boole* olduğu **false**, docobj.idl oluşturulan .idl dosyasına alınmadı. .İdl dosyaları ile açıkça içeri aktarmanız gerekir [alma](import.md).
+- *Boolean* ise **`false`** docobj. IDL dosyası oluşturulan. IDL dosyasına aktarılmaz. [İmport](import.md)ile. IDL dosyalarını açıkça içeri aktarmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sonra **emitidl** C++ öznitelik, bir kaynak kodu dosyasında karşılaşıldığında, IDL kategori öznitelikler oluşturulan .idl dosyasında yerleştirilir. Yoksa hiçbir **emitidl** özniteliği, kaynak kod dosyasında IDL öznitelikleri oluşturulan .idl dosyasının çıkarılır.
+Kaynak kod dosyasında **emitidl** C++ özniteliğiyle KARŞıLAŞıLDıĞıNDA, IDL kategorisi öznitelikleri oluşturulan. IDL dosyasına yerleştirilir. **Emitidl** özniteliği yoksa, kaynak kod dosyasındaki IDL öznitelikleri oluşturulan. IDL dosyasına çıktıdır.
 
-Birden çok olması mümkündür **emitidl** kaynak kodu dosyasında öznitelikleri. Varsa `[emitidl(false)];` sonraki olmadan bir dosya ile karşılaşılırsa `[emitidl(true)];`, sonra oluşturulan .idl dosyasına özniteliklere işlenir.
+Bir kaynak kod dosyasında birden çok **emitidl** özniteliği olması mümkündür. `[emitidl(false)];`Bundan sonra bir dosyada karşılaşılırsa `[emitidl(true)];` , oluşturulan. IDL dosyasına hiçbir öznitelik işlenmeyecektir.
 
-Derleyici, yeni bir dosya karşılaştığında her zaman **emitidl** örtük olarak ayarlandığında **true**.
+Derleyici yeni bir dosya ile karşılaştığında, **emitidl** örtülü olarak olarak ayarlanır **`true`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -58,14 +58,14 @@ Derleyici, yeni bir dosya karşılaştığında her zaman **emitidl** örtük ol
 
 |||
 |-|-|
-|**İçin geçerlidir**|Her yerde|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Öznitelikleri](compiler-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)
+[Derleyici öznitelikleri](compiler-attributes.md)<br/>
+[Tek başına öznitelikler](stand-alone-attributes.md)

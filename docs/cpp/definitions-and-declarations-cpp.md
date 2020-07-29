@@ -2,18 +2,18 @@
 title: Tanımlar ve Bildirimler (C++)
 ms.date: 11/04/2016
 ms.assetid: 56b809c0-e602-4f18-9ca5-cd7a8fbaaf30
-ms.openlocfilehash: 20683f3d2e12f7ffead573cbac46fdd4e106c383
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c35c0adaa1b81e5bf9bfd9e779037bc6068b3174
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189383"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221711"
 ---
 # <a name="definitions-and-declarations-c"></a>Tanımlar ve Bildirimler (C++)
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-DLL arabirimi, sistemdeki bazı programlar tarafından verilmesi bilinen tüm öğeler (işlevler ve veriler) anlamına gelir; diğer bir deyişle, **dllimport** veya **dllexport**olarak belirtilen tüm öğeler. DLL arabirimine dahil edilen tüm bildirimlerin **dllimport** veya **dllexport** özniteliği belirtilmelidir. Ancak, tanım yalnızca **dllexport** özniteliğini belirtmelidir. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
+DLL arabirimi, sistemdeki bazı programlar tarafından verilmesi bilinen tüm öğeler (işlevler ve veriler) anlamına gelir; diğer bir deyişle, veya olarak belirtilen tüm öğeler **`dllimport`** **`dllexport`** . DLL arabirimine dahil edilen tüm bildirimlerin **`dllimport`** ya da **`dllexport`** özniteliği belirtilmelidir. Ancak, tanım yalnızca **`dllexport`** özniteliğini belirtmelidir. Örneğin, aşağıdaki işlev tanımı bir derleyici hatası oluşturur:
 
 ```
 __declspec( dllimport ) int func() {   // Error; dllimport
@@ -34,7 +34,7 @@ Bununla birlikte, doğru sözdizimi şöyledir:
 __declspec( dllexport ) int i = 10;  // Okay--export definition
 ```
 
-**Dllexport** kullanılması bir tanım gösterir, ancak **dllimport** bir bildirimi gösterir. Bir bildirimi zorlamak için, **dllexport** ile **extern** anahtar sözcüğünü kullanmanız gerekir; Aksi takdirde, bir tanım kapsanır. Bu nedenle, aşağıdaki örnekler doğrudur:
+' Nin kullanımı **`dllexport`** bir tanım gösterir, ancak **`dllimport`** bir bildirimi gösterir. **`extern`** Bir bildirimi zorlamak için ile anahtar sözcüğünü kullanmanız gerekir **`dllexport`** ; Aksi takdirde bir tanım kapsanır. Bu nedenle, aşağıdaki örnekler doğrudur:
 
 ```
 #define DllImport   __declspec( dllimport )

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - profile-guided optimizations
 - optimization, profile-guided [C++]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
-ms.openlocfilehash: 062f8fb8138446e4a00ba6501d6eeb8571625749
-ms.sourcegitcommit: 2d7550d0f375aafa428ef0fb2e3962e4232be28e
+ms.openlocfilehash: efa4c35810f6272b89ff11cd1c890a7f535cfc1c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84777324"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232735"
 ---
 # <a name="profile-guided-optimizations"></a>Profil temelli iyileştirmeler
 
@@ -68,7 +68,7 @@ Profil temelli iyileştirmeler, bu denetimleri ve geliştirmeleri içerir:
 
 - **Işlev düzeni** -çağrı grafiğine ve profili oluşturulmuş arayan/çağrılan davranışına göre, aynı yürütme yolu üzerinde olmaya yönelik işlevler aynı bölüme yerleştirilir.
 
-- **Koşullu dal iyileştirmesi** -değer yoklamaları ile, bir switch deyimindeki verilen değerin diğer değerlerden daha sık kullanılması durumunda profil temelli iyileştirmeler bulunabilir.  Bu değer daha sonra switch ifadesinin dışına çekgeçebilir.  Aynı `if` `else` şekilde, `if` `else` `if` `else` hangi bloğun daha sık doğru olduğuna bağlı olarak, en iyi duruma getirme, ya da bloğunun ilk olarak sipariş verdiği.
+- **Koşullu dal iyileştirmesi** -değer yoklamaları ile, bir switch deyimindeki verilen değerin diğer değerlerden daha sık kullanılması durumunda profil temelli iyileştirmeler bulunabilir.  Bu değer daha sonra switch ifadesinin dışına çekgeçebilir.  Aynı **`if`** **`else`** şekilde, **`if`** **`else`** **`if`** **`else`** hangi bloğun daha sık doğru olduğuna bağlı olarak, en iyi duruma getirme, ya da bloğunun ilk olarak sipariş verdiği.
 
 - **Ölü kod ayrımı** -profil oluşturma sırasında çağrılmayan kod, Bölüm kümesinin sonuna eklenen özel bir bölüme taşınır. Bu bölümü, sık kullanılan sayfalardan etkili bir şekilde korur.
 

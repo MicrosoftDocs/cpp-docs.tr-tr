@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2317
 ms.assetid: e44d129b-8d3e-4ce9-9d79-6791ee77f25e
-ms.openlocfilehash: aef89f850ff0a280255e3ec9c4c28ea422038091
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 95444951106d74d01efe84f829b606eb2c547c99
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748118"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221269"
 ---
 # <a name="compiler-error-c2317"></a>Derleyici hatası C2317
 
 ' number ' satırında başlayan ' TRY ' bloğunda hiç catch işleyicisi yok
 
-`try` bloğunun en az bir catch işleyicisi olmalıdır.
+Bir **`try`** bloğun en az bir catch işleyicisi olmalıdır.
 
 Aşağıdaki örnek C2317 oluşturur:
 

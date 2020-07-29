@@ -1,5 +1,5 @@
 ---
-title: Özel durum belirtimleri (throw, noexcept)C++()
+title: Özel durum belirtimleri (throw, noexcept) (C++)
 ms.date: 01/18/2018
 helpviewer_keywords:
 - exceptions [C++], exception specifications
@@ -8,18 +8,18 @@ helpviewer_keywords:
 - throw keyword [C++]
 - noexcept keyword [C++]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-ms.openlocfilehash: 6f8f9466b867603738919c6210055d02d3c579ae
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1fa56ebf0a0358845ef620a89bc416992b3c0e31
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180049"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221581"
 ---
-# <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept)C++()
+# <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 
-Özel durum belirtimleri, C++ programcı 'nin bir işlev tarafından yayabileceği özel durum türleri hakkında amacını gösteren bir dil özelliğidir. Bir işlevin özel durum *belirtimi*kullanarak bir özel durumla ilgili veya çıkış yapabilir olduğunu belirtebilirsiniz. Derleyici, bu bilgileri işleve yapılan çağrıları iyileştirmek ve beklenmeyen bir özel durum işlevi iptal ederseniz programı sonlandırmak için kullanabilir.
+Özel durum belirtimleri, programcı 'nin bir işlev tarafından yayabileceği özel durum türleri hakkında amacını gösteren bir C++ dili özelliğidir. Bir işlevin özel durum *belirtimi*kullanarak bir özel durumla ilgili veya çıkış yapabilir olduğunu belirtebilirsiniz. Derleyici, bu bilgileri işleve yapılan çağrıları iyileştirmek ve beklenmeyen bir özel durum işlevi iptal ederseniz programı sonlandırmak için kullanabilir.
 
-C++ 17 ' den önce iki tür özel durum belirtimi vardı. *Noexcept belirtimi* , c++ 11 ' de yenidir. Bu, işlevi kaçırabilecek olası özel durumların kümesinin boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*veya `throw(optional_type_list)` belirtimi, c++ 11 ' de kullanımdan kaldırılmıştır ve `noexcept(true)`için bir diğer ad olan `throw()`hariç c++ 17 ' de kaldırılmıştır. Bu özel durum belirtimi, bir işlevden hangi özel durumların atılamayacağını, ancak uygulamada sorunlu olduğunu tespit etmek üzere tasarlanmıştır. Biraz faydalı olması kanıtladığı tek bir dinamik özel durum belirtimi koşulsuz `throw()` belirtimidir. Örneğin, işlev bildirimi:
+C++ 17 ' den önce iki tür özel durum belirtimi vardı. *Noexcept belirtimi* , c++ 11 ' de yenidir. Bu, işlevi kaçırabilecek olası özel durumların kümesinin boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*veya `throw(optional_type_list)` belirtimi, c++ 11 ' de kullanımdan kaldırılmıştır ve, için `throw()` bir diğer ad olan hariç c++ 17 ' de kaldırılmıştır `noexcept(true)` . Bu özel durum belirtimi, bir işlevden hangi özel durumların atılamayacağını, ancak uygulamada sorunlu olduğunu tespit etmek üzere tasarlanmıştır. Biraz faydalı olması kanıtladığı tek bir dinamik özel durum belirtimi koşulsuz `throw()` belirtimiydi. Örneğin, işlev bildirimi:
 
 ```cpp
 void MyFunction(int i) throw();
@@ -31,20 +31,20 @@ derleyiciye işlevin hiçbir özel durum oluşturmadığını söyler. Ancak, **
 void MyFunction(int i) noexcept;
 ```
 
-Aşağıdaki tabloda özel durum belirtimlerinin C++ Microsoft uygulamasını özetlenmektedir:
+Aşağıdaki tabloda özel durum belirtimlerinin Microsoft C++ uygulamasını özetlenmektedir:
 
 |Özel durum belirtimi|Anlamı|
 |-----------------------------|-------------|
-|`noexcept`<br/>`noexcept(true)`<br/>`throw()`|İşlev bir özel durum oluşturmaz. [/Std: c++ 14](../build/reference/std-specify-language-standard-version.md) modunda (varsayılan) `noexcept` ve `noexcept(true)` eşdeğerdir. `noexcept` veya `noexcept(true)`olarak belirtilen bir işlevden özel durum oluştuğunda, [std:: Terminate](../standard-library/exception-functions.md#terminate) çağrılır. **/Std: c++ 14** modunda `throw()` olarak belirtilen bir işlevden özel durum oluştuğunda, sonuç tanımsız bir davranıştır. Belirli bir işlev çağrılmaz. Bu, C++ 14 standbundan ayrılan ve derleyicinin [std:: beklenmeyen](../standard-library/exception-functions.md#unexpected)bir şekilde çağrılmasını gerektiren bir farklılaşma anlamına gelir.  <br/> **Visual Studio 2017 sürüm 15,5 ve üzeri**: **/std: c++ 17** modunda, `noexcept`, `noexcept(true)`ve `throw()` tamamen eşdeğerdir. **/Std: c++ 17** modunda, `noexcept(true)`için bir diğer addır `throw()`. **/Std: c++ 17** modunda, bu belirtimlerden biriyle belirtilen bir işlevden bir özel durum oluştuğunda, [std:: Terminate](../standard-library/exception-functions.md#terminate) c++ 17 standardı tarafından gerekli olduğu gibi çağrılır.|
+|**`noexcept`**<br/>`noexcept(true)`<br/>`throw()`|İşlev bir özel durum oluşturmaz. [/Std: c++ 14](../build/reference/std-specify-language-standard-version.md) modunda (varsayılan olarak) **`noexcept`** ve `noexcept(true)` eşdeğerdir. Veya olarak belirtilen bir işlevden özel durum oluştuğunda **`noexcept`** `noexcept(true)` , [std:: Terminate](../standard-library/exception-functions.md#terminate) çağrılır. `throw()` **/Std: c++ 14** modunda olarak belirtilen bir işlevden özel durum oluştuğunda, sonuç tanımsız bir davranıştır. Belirli bir işlev çağrılmaz. Bu, C++ 14 standbundan ayrılan ve derleyicinin [std:: beklenmeyen](../standard-library/exception-functions.md#unexpected)bir şekilde çağrılmasını gerektiren bir farklılaşma anlamına gelir.  <br/> **Visual Studio 2017 sürüm 15,5 ve üzeri**: **/std: c++ 17** modunda,, **`noexcept`** `noexcept(true)` ve `throw()` hepsi eşdeğerdir. **/Std: c++ 17** modunda, `throw()` için bir diğer addır `noexcept(true)` . **/Std: c++ 17** modunda, bu belirtimlerden biriyle belirtilen bir işlevden bir özel durum oluştuğunda, [std:: Terminate](../standard-library/exception-functions.md#terminate) c++ 17 standardı tarafından gerekli olduğu gibi çağrılır.|
 |`noexcept(false)`<br/>`throw(...)`<br/>Belirtim yok|İşlev herhangi türde bir özel durum oluşturabilir.|
-|`throw(type)`| (**C++ 14 ve önceki sürümler**) İşlevi `type`türünde bir özel durum oluşturabilir. Derleyici söz dizimini kabul eder, ancak `noexcept(false)`olarak yorumlar. **/Std: c++ 17** modunda derleyici sorunları uyarı C5040.|
+|`throw(type)`| (**C++ 14 ve önceki sürümler**) İşlevi türünde bir özel durum oluşturabilir `type` . Derleyici söz dizimini kabul eder, ancak olarak yorumlar `noexcept(false)` . **/Std: c++ 17** modunda derleyici sorunları uyarı C5040.|
 
-Bir uygulamada özel durum işleme kullanılıyorsa, çağrı yığınında, `noexcept`, `noexcept(true)`veya `throw()`işaretlenen bir işlevin dış kapsamından çıkmadan önce, oluşturulan özel durumları işleyen bir işlev olmalıdır. Bir özel durum oluşturan ve özel durumu işleyen bir işlev arasında çağrılan işlevler, `noexcept`, `noexcept(true)` (veya `throw()` **/std: c++ 17** modunda) olarak belirtilmişse, noexcept işlevi özel durumu yaytıysa program sonlandırılır.
+Bir uygulamada özel durum işleme kullanılıyorsa, çağrı yığınında, veya olarak işaretlenen bir işlevin dış kapsamından çıkmadan önce, oluşturulan özel durumları işleyen bir işlev olmalıdır **`noexcept`** `noexcept(true)` `throw()` . Bir özel durum oluşturan ve özel durumu işleyen bir işlev arasında çağrılan işlevler **`noexcept`** , `noexcept(true)` (veya `throw()` **/std: c++ 17** modunda) olarak belirtilmişse, noexcept işlevi özel durumu yaydıktan sonra program sonlandırılır.
 
 Bir işlevin özel durum davranışı aşağıdaki etkenlere bağlıdır:
 
 - Hangi [dil standart derleme modu](../build/reference/std-specify-language-standard-version.md) ayarlanır.
-- İşlevi C veya C++altında derlediğiniz olsun.
+- İşlevi C veya C++ altında derlediğiniz olsun.
 
 - Kullandığınız [/Eh](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.
 
@@ -52,13 +52,13 @@ Bir işlevin özel durum davranışı aşağıdaki etkenlere bağlıdır:
 
 C işlevlerinde açık özel durum belirtimlerine izin verilmez. Bir C işlevi, **/EHsc**altında özel durum oluşturmayan kabul edilir ve **/EHS**, **/EHa**veya **/EHac**altında yapılandırılmış özel durumlar oluşturabilir.
 
-Aşağıdaki tabloda, bir C++ işlevin çeşitli derleyici özel durum işleme seçenekleri altında oluşturulup oluşturamayacağını özetlenmektedir:
+Aşağıdaki tabloda, bir C++ işlevinin çeşitli derleyici özel durum işleme seçenekleri altında oluşturulup oluşturamayacağını özetlenmektedir:
 
 |İşlev|/EHsc|/EHs|/EHa|/EHac|
 |--------------|------------|-----------|-----------|------------|
-|C++özel durum belirtimi olmayan işlev|Yes|Yes|Yes|Yes|
-|C++`noexcept`, `noexcept(true)`veya `throw()` özel durum belirtimi ile işlev|Hayır|Hayır|Yes|Yes|
-|C++`noexcept(false)`, `throw(...)`veya `throw(type)` özel durum belirtimi ile işlev|Yes|Yes|Yes|Yes|
+|Özel durum belirtimi olmayan C++ işlevi|Yes|Yes|Yes|Yes|
+|**`noexcept`**, `noexcept(true)` Veya `throw()` özel durum belirtimi ile C++ işlevi|Hayır|Hayır|Evet|Yes|
+|`noexcept(false)`, `throw(...)` Veya `throw(type)` özel durum belirtimi ile C++ işlevi|Yes|Yes|Yes|Yes|
 
 ## <a name="example"></a>Örnek
 
@@ -132,4 +132,4 @@ in handler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [try, throw ve catch Deyimleri (C++)](../cpp/try-throw-and-catch-statements-cpp.md)<br/>
-[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](errors-and-exception-handling-modern-cpp.md)
+[Özel durumlar ve hata işleme için modern C++ en iyi uygulamaları](errors-and-exception-handling-modern-cpp.md)

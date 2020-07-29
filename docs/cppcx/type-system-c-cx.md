@@ -2,12 +2,12 @@
 title: Tür Sistemi (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-ms.openlocfilehash: f4a6ea32681ad033b5db9451682c764f0a6d8959
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: b9d26f0fc79b2dc5000be6e6a06f51efd3f0b53f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404632"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221555"
 ---
 # <a name="type-system-ccx"></a>Tür Sistemi (C++/CX)
 
@@ -51,7 +51,7 @@ Meta verilerde bir tür veya yöntemin görünür olup olmadığı, hangi erişi
 
 Aşağıdaki bölümlerde Windows Çalışma Zamanı türü sisteminin başlıca özellikleri ve bunların C++/CX'DE nasıl desteklendiği açıklanır.
 
-### <a name="namespaces"></a>Ad Alanları
+### <a name="namespaces"></a>Ad alanları
 
 Tüm Windows Çalışma Zamanı türleri bir ad alanı içinde bildirilmelidir; Windows API 'sinin kendisi ad alanları tarafından düzenlenir. Bir. winmd dosyası, kök ad alanıyla aynı ada sahip olmalıdır. Örneğin, A. B. C. MyClass adlı bir sınıf, yalnızca bir. winmd veya A. B. winmd veya A. B. C. winmd adında bir meta veri dosyasında tanımlanmışsa oluşturulabilir. DLL 'nin adı. winmd dosya adıyla eşleşmek için gerekli değildir.
 
@@ -63,7 +63,7 @@ Daha fazla bilgi için bkz. [ad alanları ve tür görünürlüğü](../cppcx/na
 
 Windows Çalışma Zamanı, aşağıdaki temel türler, UInt8, Int16, UInt16, Int32, UInt32, Int64, UInt64, Single, Double, Char16, Boolean ve dize tanımlar. C++/CX, varsayılan ad alanındaki UInt64, uint32, uint64, int16, Int32, int64, float32, float64 ve Char16 olarak temel sayısal türleri destekler. Boolean ve dize, Platform ad alanında da tanımlanmıştır.
 
-C++/CX Ayrıca, `unsigned char` Windows çalışma zamanı desteklenmeyen ve genel API 'lerde kullanılamayan, öğesine denk Uint8 tanımlar.
+C++/CX Ayrıca, **`unsigned char`** Windows çalışma zamanı desteklenmeyen ve genel API 'lerde kullanılamayan, öğesine denk Uint8 tanımlar.
 
 Temel bir tür, bir [Platform:: Ibox arabirim](../cppcx/platform-ibox-interface.md) arabiriminde sarmalanarak null yapılabilir hale getirilebilir. Daha fazla bilgi için bkz. [değer sınıfları ve yapıları](../cppcx/value-classes-and-structs-c-cx.md).
 
@@ -71,7 +71,7 @@ Temel türler hakkında daha fazla bilgi için bkz. [temel türler](../cppcx/fun
 
 ### <a name="strings"></a>Dizeler
 
-Windows Çalışma Zamanı dize, 16 bit UNICODE karakterlerinden oluşan sabit bir dizidir. Windows Çalışma Zamanı bir dize olarak yansıtıldır `Platform::String^` . Bu sınıf, dize oluşturma, işleme ve dönüştürme için yöntemler sağlar `wchar_t` .
+Windows Çalışma Zamanı dize, 16 bit UNICODE karakterlerinden oluşan sabit bir dizidir. Windows Çalışma Zamanı bir dize olarak yansıtıldır `Platform::String^` . Bu sınıf, dize oluşturma, işleme ve dönüştürme için yöntemler sağlar **`wchar_t`** .
 
 Daha fazla bilgi için bkz. [dizeler](../cppcx/strings-c-cx.md).
 

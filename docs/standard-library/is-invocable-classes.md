@@ -15,18 +15,18 @@ helpviewer_keywords:
 - is_nothrow_invocable
 - is_nothrow_invocable_r class
 - is_nothrow_invocable_r
-ms.openlocfilehash: 53394a10464e2688953cd1b5703530e2719b7593
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 47801eff0ea0c41c7b69dfb7a1aa5190a43f1b75
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076452"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233112"
 ---
 # <a name="is_invocable-is_invocable_r-is_nothrow_invocable-is_nothrow_invocable_r-classes"></a>is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r sınıfları
 
-Bu şablonlar, bir türün belirtilen bağımsız değişken türleriyle çağrılabileceğini tespit edebilir. `is_invocable_r` ve `is_nothrow_invocable_r` Ayrıca, çağrının sonucunun belirli bir türe dönüştürülebilir olup olmadığını da saptayabilir. `is_nothrow_invocable` ve `is_nothrow_invocable_r`, çağrının özel durumlar throw olarak bilinmediğine da sahiptir. C++ 17 ' ye eklenmiştir.
+Bu şablonlar, bir türün belirtilen bağımsız değişken türleriyle çağrılabileceğini tespit edebilir. `is_invocable_r``is_nothrow_invocable_r`Ayrıca, çağrının sonucunun belirli bir türe dönüştürülebilir olup olmadığını da belirleyebilirsiniz. `is_nothrow_invocable``is_nothrow_invocable_r`Ayrıca, çağrının özel durumlar throw olarak bilinmesinin bilinmediğini de belirleyebilirsiniz. C++ 17 ' ye eklenmiştir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Callable, class... Args>
@@ -64,23 +64,23 @@ inline constexpr bool is_nothrow_invocable_r_v =
 *Çağrılabilir*\
 Sorgulanacak çağrılabilir tür.
 
-*Bağımsız değişkenler*\
+*Args*\
 Sorgulanacak bağımsız değişken türleri.
 
-*Dönüştürülebilir*\
+*Üstü*\
 *Çağrılabilir* sonucu türü, öğesine dönüştürülebilir olmalıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çağrılabilir tür *çağrılabilir* , değerlendirilmiş olmayan bir *bağlamda arguments bağımsız değişkenleri kullanılarak* çağrıbiliyorsa, `is_invocable` türü koşulu true olarak tutulur.
+`is_invocable`Çağrılabilir tür *çağrılabilir* , değerlendirilmiş olmayan bir bağlamda arguments bağımsız değişkenleri kullanılarak çağrıbiliyorsa tür *Args* koşulu true olarak tutulur.
 
-Çağrılabilir tür *çağrılabilir* , *dönüştürülebilir*bir bağlamda bağımsız değişkenler kullanılarak çağrılabilir olarak çağrılabilir bir sonuç türü oluşturmak için, çağrılabilir *türü olarak çağrılabilir* . `is_invocable_r`
+`is_invocable_r`Çağrılabilir tür çağrılabilir, *dönüştürülebilir*bir bağlamda bağımsız değişkenler kullanılarak çağrılabilir olarak çağrılabilir bir sonuç türü *Args* oluşturmak için, çağrılabilir türü *çağrılabilir* .
 
-Çağrılabilir tür *çağrılabilir* , değerlendirilmiş bir *bağlamda arguments bağımsız değişkenleri kullanılarak* çağrılırsa ve böyle bir çağrının özel durum oluşturmayacak şekilde çağrılabildiği durumlarda `is_nothrow_invocable` türü koşulu true olarak tutulur.
+`is_nothrow_invocable`Çağrılabilir tür *çağrılabilir* değeri, değerlendirilmiş bir bağlamda arguments bağımsız değişkenleri kullanılarak çağrılabiliyorsa ve bu *Args* tür bir çağrının özel durum oluşturmayacak bilinen bir tür koşulu true olur.
 
-Çağrılabilir türde *çağrılabilir* bir sonuç türü oluşturmak için değerlendirilmeyen bağlamdaki *arguments bağımsız değişkenleri kullanılarak* çağrılabiliyorsa ve böyle bir çağrının özel durum oluşturmadığı biliniyorsa, `is_nothrow_invocable_r` türü koşulu *true olarak tutulur*.
+`is_nothrow_invocable_r`Çağrılabilir tür *çağrılabilir* değeri, *dönüştürülebilir*bir bağlam türü oluşturmak için değerlendirilmeyen bağlamdaki arguments *bağımsız* değişkenleri kullanılarak çağrılabiliyorsa ve bu tür bir çağrının özel durum oluşturmadığı biliniyorsa, tür koşulu true olarak tutulur.
 
-*Dönüştürülebilir*, *çağrılabilir*ve Parameter Pack *args* türlerindeki türlerin her biri, tam bir tür, bilinmeyen bir dizi veya büyük olasılıkla MF nitelenmiş **void**olmalıdır. Aksi takdirde, koşulun davranışı tanımsız olur.
+*Dönüştürülebilir*, *çağrılabilir*ve parametre paketi *bağımsız değişkenlerinin* türlerindeki türlerin her biri, tam bir tür, bilinmeyen bir dizi veya bir MF nitelenmiş olmalıdır **`void`** . Aksi takdirde, koşulun davranışı tanımsız olur.
 
 ## <a name="example"></a>Örnek
 
@@ -116,11 +116,11 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [Resync](functional-functions.md#invoke)

@@ -20,18 +20,18 @@ helpviewer_keywords:
 - std::priority_queue [C++], size
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-ms.openlocfilehash: cef85eafaa3aab1c448234399f146191de957b8b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8a1b33e45d066082a0f225067db84a6240e8fc53
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323001"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232956"
 ---
 # <a name="priority_queue-class"></a>priority_queue Sınıfı
 
-Her zaman en büyük veya en yüksek önceliğe sahip olan bazı temel kapsayıcı türündeki en üst öğeye erişimi sınırlayan işlevsellik kısıtlaması sağlayan şablon kapsayıcı bağdaştırıcı sınıfı. priority_queue yeni öğeler eklenebilir ve priority_queue üst öğesi incelenebilir veya kaldırılabilir.
+Her zaman en büyük veya en yüksek önceliğe sahip olan, temel alınan kapsayıcı türünün üst öğesine erişimi sınırlayan bir işlev kısıtlaması sağlayan bir şablon kapsayıcı bağdaştırıcı sınıfı. Yeni öğeler priority_queue eklenebilir ve priority_queue üst öğesi incelenebilir veya kaldırılabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Type, class Container= vector <Type>, class Compare= less <typename Container ::value_type>>
@@ -40,66 +40,66 @@ class priority_queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-priority_queue depolanacak öğe veri türü.
+*Türüyle*\
+Priority_queue depolanacak öğe veri türü.
 
 *Kapsayıcı*\
-priority_queue uygulamak için kullanılan temel kapsayıcının türü.
+Priority_queue uygulamak için kullanılan temeldeki kapsayıcının türü.
 
-*Karşılaştırmak*\
-priority_queue göreli sıralarını belirlemek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır `less<typename Container::value_type>` ve ikili yüklem varsayılan değerdir.
+*Karşılaştır*\
+İki öğe değerini, priority_queue göreli sıralarını belirleyebilmek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<typename Container::value_type>` varsayılan değerdir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir sıra `Type` nesnesinin ilk şablon parametresinde öngörülen sınıf öğeleri [value_type](#value_type) eş anlamlıdır ve ikinci şablon `Container` parametresi tarafından öngörülen temel kapsayıcı sınıfındaki öğe türüyle eşleşmelidir. Bu `Type` tür nesneleri kopyalamak ve bu tür değişkenlere değerler atamak mümkün böylece atanabilir olmalıdır.
+`Type`Bir kuyruk nesnesinin ilk şablon parametresinde ifade edilen sınıfın öğeleri, [value_type](#value_type) ile eşanlamlıdır ve `Container` ikinci şablon parametresi tarafından belirlenen temeldeki kapsayıcı sınıfında öğe türüyle eşleşmelidir. , `Type` Bu türdeki nesneleri kopyalamak ve bu türdeki değişkenlere değer atamak mümkün olduğundan, atanabilir olmalıdır.
 
-priority_queue, sınıfın `Traits`depolanan işlev nesnesini çağırarak denetlenen sırayı sıralar. Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur.
+Priority_queue, sınıfının saklı işlev nesnesini çağırarak denetlediği diziyi sıralar `Traits` . Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur.
 
-priority_queue için uygun temel kapsayıcı sınıfları [deque Sınıf](../standard-library/deque-class.md) ve varsayılan [vektör](../standard-library/vector-class.md) Sınıf `front` `push_back`veya `pop_back` işlemleri destekleyen başka bir sıra kapsayıcı içerir , ve rasgele erişim yineleyici. Altta yatan kapsayıcı sınıfı, ortak arabirim olarak yalnızca sınırlı sayıda sıra kapsayıcı üye işlevini ortaya çıkaran kapsayıcı bağdaştırıcısının içinde kapsüllenir.
+Priority_queue için uygun temel kapsayıcı sınıfları, [deque Sınıfı](../standard-library/deque-class.md) ve varsayılan [vektör sınıfı](../standard-library/vector-class.md) ya `front` da,, `push_back` ve `pop_back` ve bir rastgele erişim Yineleyici işlemlerini destekleyen başka herhangi bir dizi kapsayıcısı içerir. Temel alınan kapsayıcı sınıfı kapsayıcı bağdaştırıcısında kapsüllenir, bu da yalnızca ortak arabirim olarak dizi kapsayıcısı üye işlevlerinin sınırlı kümesini sunar.
 
-Öğelerin eklenmesi ve her `priority_queue` ikisinden öğeleri kaldırmalogaritmik karmaşıklığa sahiptir. Öğelere erişim `priority_queue` in sabit bir karmaşıklığı vardır.
+Her ikisinde de öğe eklemek ve öğeleri kaldırmak `priority_queue` Logaritmik karmaşıklığa sahiptir. İçindeki öğelerine erişmek `priority_queue` sabit karmaşıklığa sahiptir.
 
-C++ Standart Kitaplığı tarafından tanımlanan üç tür kapsayıcı bağdaştırıcısı vardır: yığın, sıra ve priority_queue. Her standart bir veri yapısı için tam olarak denetlenen bir arabirim sağlamak için bazı temel kapsayıcı sınıfının işlevselliğini kısıtlar.
+C++ standart kitaplığı tarafından tanımlanan üç tür kapsayıcı bağdaştırıcısı vardır: yığın, kuyruk ve priority_queue. Her biri, standart bir veri yapısına tam denetimli bir arabirim sağlamak için bazı temel kapsayıcı sınıfının işlevlerini kısıtlar.
 
-- [Yığın Sınıfı,](../standard-library/stack-class.md) son,ilk çıkan (LIFO) veri yapısını destekler. Akılda tutulması gereken iyi bir analog tabak yığını olacaktır. Öğeler (plakalar) yalnızca temel kapsayıcının sonundaki son öğe olan yığının üst kısmından eklenebilir, denetlenebilir veya kaldırılabilir. Yalnızca üst öğeye erişim kısıtlaması yığın sınıfını kullanma nedenidir.
+- [Stack sınıfı](../standard-library/stack-class.md) , son bir ilk çıkar (LIFO) veri yapısını destekler. Göz önünde bulundurmanız gereken bir şey, bir levha yığını olacaktır. Öğeler (levhalar), temel kapsayıcının sonundaki son öğe olan yığının en üstünden eklenebilir, incelenebilir veya kaldırılabilir. Yalnızca Top öğesine erişme kısıtlaması, Stack sınıfının kullanılmasına neden olur.
 
-- [Sıra Sınıfı,](../standard-library/queue-class.md) ilk gelen, ilk çıkan (FIFO) veri yapısını destekler. Akılda tutulması gereken iyi bir analog insanlar bir banka vezneiçin sıraya olacaktır. Öğeler (kişiler) satırın arkasına eklenebilir ve satırın önünden kaldırılır. Bir hattın hem ön hem de arka cephesi denetlenebilir. Bu şekilde yalnızca ön ve arka öğelere erişme kısıtlaması, sıra sınıfını kullanma nedenidir.
+- [Queue sınıfı](../standard-library/queue-class.md) , ilk kez ilk çıkar (FIFO) veri yapısını destekler. İnsanların bir banka teller için yukarı doğru tutulması yararlı olacaktır. Öğeler (kişiler) satırın arkasına eklenebilir ve satırın önüne kaldırılır. Bir çizginin ön ve arka ucu incelenebilir. Yalnızca ön ve arka öğelerine bu şekilde erişme kısıtlaması, Queue sınıfının kullanılmasına neden olur.
 
-- priority_queue sınıf, en büyük öğenin her zaman en üst konumda olması için öğelerini emreder. Bir öğenin eklenmesini ve üst öğenin incelenmesini ve kaldırılmasını destekler. Akılda tutulması gereken iyi bir analog insanlar nerede yaş, boy, ya da başka bir kriter tarafından düzenlenir sıraya olacaktır.
+- Priority_queue sınıfı öğelerini en büyük öğenin her zaman en üstteki konumda olacak şekilde sıralar. Bir öğenin eklenmesini ve en üstteki öğenin incelemesini ve kaldırılmasını destekler. İnsanların yaş, yükseklik veya diğer ölçütlere göre düzenlendikleri yere göz önünde bulundurmanız gereken iyi bir yoldur.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Priority_queue](#priority_queue)|Boş olan `priority_queue` veya bir temel kapsayıcı nesnesinin veya diğer `priority_queue`bir aralığın kopyası olan bir yapıyı.|
+|[priority_queue](#priority_queue)|`priority_queue`Boş olan veya bir taban kapsayıcı nesnesi aralığının bir kopyası olan veya diğer bir sürümü olan oluşturur `priority_queue` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[container_type](#container_type)|Baz kapsayıcının bir . tarafından uyarlanmasını sağlayan bir `priority_queue`tür|
-|[size_type](#size_type)|Bir 'deki öğe sayısını temsil eden imzasız `priority_queue`bir tamsayı türü|
-|[value_type](#value_type)|Bir öğe olarak depolanan nesne türünü temsil `priority_queue`eden bir tür .|
+|[container_type](#container_type)|Tarafından uyarlanabilen temel kapsayıcıyı sağlayan bir tür `priority_queue` .|
+|[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `priority_queue` .|
+|[value_type](#value_type)|İçindeki bir öğe olarak depolanan nesne türünü temsil eden bir tür `priority_queue` .|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[empty](#empty)|Boş olup `priority_queue` olmadığını test edin.|
-|[Pop](#pop)|En büyük öğeyi `priority_queue` üst konumdan kaldırır.|
-|[Itme](#push)|İşleç< öğenin önceliğine göre öncelik sırasına bir öğe ekler.|
-|[Boyutu](#size)|`priority_queue`'deki öğe sayısını verir.|
-|[Sayfanın Üstü](#top)|`priority_queue`En üstteki en büyük öğeye const başvurusu verir.|
+|[empty](#empty)|`priority_queue`Boşsa sınar.|
+|[cağımız](#pop)|Üst konumundan en büyük öğesini kaldırır `priority_queue` .|
+|[push](#push)|< işleçten öğe önceliğine göre öncelik sırasına bir öğe ekler.|
+|[boyutla](#size)|İçindeki öğelerin sayısını döndürür `priority_queue` .|
+|[top](#top)|En üstündeki en büyük öğeye bir const başvurusu döndürür `priority_queue` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<sıra>
+**Üst bilgi:**\<queue>
 
 **Ad alanı:** std
 
-## <a name="priority_queuecontainer_type"></a><a name="container_type"></a>priority_queue:container_type
+## <a name="priority_queuecontainer_type"></a><a name="container_type"></a>priority_queue:: container_type
 
-Temel kapsayıcının uyarlanmasını sağlayan bir tür.
+Uyarlanabilen temel kapsayıcıyı sağlayan bir tür.
 
 ```cpp
 typedef Container container_type;
@@ -107,17 +107,17 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `Container`ile eş anlamlıdır. C++ Standart Kitaplık `deque` sıralı kapsayıcı `vector` sınıfı ve varsayılan sınıf, priority_queue bir nesne için temel kapsayıcı olarak kullanılacak gereksinimleri karşılar. Gereksinimleri karşılayan kullanıcı tanımlı türleri de kullanılabilir.
+Tür, şablon parametresi için bir eş anlamlı `Container` . C++ standart kitaplık sırası kapsayıcı sınıfı `deque` ve varsayılan sınıf, `vector` priority_queue nesne için temel kapsayıcı olarak kullanılacak gereksinimleri karşılar. Gereksinimleri karşılayan Kullanıcı tanımlı türler de kullanılabilir.
 
-Daha fazla `Container`bilgi için [priority_queue Sınıfı](../standard-library/priority-queue-class.md) konusunun Açıklamalar bölümüne bakın.
+Hakkında daha fazla bilgi için `Container` [priority_queue sınıfı](../standard-library/priority-queue-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-Nasıl beyan priority_queue ve nasıl kullanılacağına `container_type`bir örnek için örneğe bakın. [priority_queue](#priority_queue)
+Bildirme ve kullanma hakkında bir örnek için bkz. [priority_queue](#priority_queue) örneği `container_type` .
 
-## <a name="priority_queueempty"></a><a name="empty"></a>priority_queue::boş
+## <a name="priority_queueempty"></a><a name="empty"></a>priority_queue:: boş
 
-priority_queue boşolup priority_queue.
+Priority_queue boş ise sınar.
 
 ```cpp
 bool empty() const;
@@ -125,7 +125,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-priority_queue boşsa **doğrudur;** priority_queue boş değilse **yanlış.**
+**`true`** priority_queue boşsa; **`false`** Priority_queue boş değilse.
 
 ### <a name="example"></a>Örnek
 
@@ -161,9 +161,9 @@ The priority_queue q1 is not empty.
 The priority_queue s2 is empty.
 ```
 
-## <a name="priority_queuepop"></a><a name="pop"></a>priority_queue::pop
+## <a name="priority_queuepop"></a><a name="pop"></a>priority_queue::p op
 
-priority_queue en büyük öğesini üst konumdan kaldırır.
+Üstteki konumdan priority_queue en büyük öğesini kaldırır.
 
 ```cpp
 void pop();
@@ -171,7 +171,7 @@ void pop();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi uygulamak için priority_queue boş olmaması gerekir. priority_queue üst her zaman kapsayıcıda en büyük öğe tarafından işgal edilir.
+Üye işlevini uygulamak için priority_queue boş olmamalıdır. Priority_queue üst öğesi her zaman kapsayıcıdaki en büyük öğe ile dolu.
 
 ### <a name="example"></a>Örnek
 
@@ -217,9 +217,9 @@ After a pop, the priority_queue length is 2.
 After a pop, the element at the top of the priority_queue is 20.
 ```
 
-## <a name="priority_queuepriority_queue"></a><a name="priority_queue"></a>priority_queue::priority_queue
+## <a name="priority_queuepriority_queue"></a><a name="priority_queue"></a>priority_queue::p riority_queue
 
-Boş veya bir temel kapsayıcı nesnesinin veya başka bir priority_queue aralığının kopyası olan bir priority_queue sağlar.
+Boş olan veya bir taban kapsayıcı nesnesi aralığının veya başka bir priority_queue bir kopyası olan bir priority_queue oluşturur.
 
 ```cpp
 priority_queue();
@@ -243,27 +243,27 @@ priority_queue(InputIterator first, InputIterator last, const Traits& _comp, con
 ### <a name="parameters"></a>Parametreler
 
 *_comp*\
-Priority_queue öğeleri ni sipariş etmek için kullanılan tür **constTraits** karşılaştırma işlevi, hangi temel kapsayıcının işlevini karşılaştırmak için varsayılan.
+Priority_queue öğeleri sıralamak için kullanılan **constTraits** türünde karşılaştırma işlevi, varsayılan olarak temel kapsayıcının işlevi karşılaştırılmaktadır.
 
 *_Cont*\
-Yapılandırılan priority_queue temel kapsayıcı bir kopyası olmaktır.
+Oluşturulan priority_queue bir kopya olacak temel kapsayıcı.
 
-*Doğru*\
-Yapılandırılan kümenin priority_queue bir kopyası olmaktır.
+*Right*\
+Oluşturulan kümesinin bir kopyalama olduğu priority_queue.
 
-*Ilk*\
-Kopyalanacak öğeler aralığındaki ilk öğenin konumu.
+*adı*\
+Kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*Son*\
-İlk öğenin kopyalanacak öğe aralığının ötesindeki konumu.
+*soyadına*\
+Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üç oluşturucunun her biri boş bir başlangıç priority_queue belirtir, ikincisi de`comp`elementlerin sırasını oluştururken kullanılacak karşılaştırma işlevinin türünü belirtir, üçüncüsü ise kullanılacak `container_type` ( )`_Cont`belirtilir. Anahtar kelime **açık** otomatik tür dönüştürme belirli türleri bastırır.
+İlk üç oluşturucuların her biri boş bir başlangıç priority_queue belirtir; ikinci olarak, `comp` öğelerin sırasını oluşturmak için kullanılacak karşılaştırma işlevinin türünü () ve ayrıca kullanılacak olan üçüncü öğeyi `container_type` ( `_Cont` ) belirtin. Anahtar sözcüğü **`explicit`** bazı otomatik tür dönüştürme türlerini bastırır.
 
-Dördüncü oluşturucu priority_queue *sağ*bir kopyasını belirtir.
+Dördüncü Oluşturucu priority_queue *sağ*bir kopyasını belirtir.
 
-Son üç oluşturucu, bazı \[kapsayıcının *aralığını ,* *son*) kopyalar ve sınıfın `Traits` karşılaştırma işlevinin türünü belirtirken artan `container_type`açıklıkla priority_queue başlatılması için değerleri kullanır ve .
+Son üç Oluşturucu, \[ bazı kapsayıcının *ilk*, *son*) aralığını, ve sınıfının karşılaştırma işlevinin türünü belirtirken açıkça artan bir priority_queue başlatmak için değerleri kullanır `Traits` `container_type` .
 
 ### <a name="example"></a>Örnek
 
@@ -376,9 +376,9 @@ int main( )
 }
 ```
 
-## <a name="priority_queuepush"></a><a name="push"></a>priority_queue::push
+## <a name="priority_queuepush"></a><a name="push"></a>priority_queue::p USH
 
-İşleç< öğenin önceliğine göre öncelik sırasına bir öğe ekler.
+< işleçten öğe önceliğine göre öncelik sırasına bir öğe ekler.
 
 ```cpp
 void push(const Type& val);
@@ -386,12 +386,12 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Val*\
-Öğe nin üstüne eklenen priority_queue.
+*Acil*\
+Priority_queue en üstüne eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-priority_queue üst kapsayıcıdaki en büyük öğe tarafından işgal edilen konumdur.
+Priority_queue üst öğesi, kapsayıcıdaki en büyük öğe tarafından bulunan pozisyondır.
 
 ### <a name="example"></a>Örnek
 
@@ -425,9 +425,9 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.
 ```
 
-## <a name="priority_queuesize"></a><a name="size"></a>priority_queue::boyut
+## <a name="priority_queuesize"></a><a name="size"></a>priority_queue:: size
 
-priority_queue'daki öğe sayısını verir.
+Priority_queue öğe sayısını döndürür.
 
 ```cpp
 size_type size() const;
@@ -435,7 +435,7 @@ size_type size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-priority_queue geçerli uzunluğu.
+Priority_queue geçerli uzunluğu.
 
 ### <a name="example"></a>Örnek
 
@@ -466,9 +466,9 @@ The priority_queue length is 1.
 The priority_queue length is now 2.
 ```
 
-## <a name="priority_queuesize_type"></a><a name="size_type"></a>priority_queue:size_type
+## <a name="priority_queuesize_type"></a><a name="size_type"></a>priority_queue:: size_type
 
-priority_queue'daki öğe sayısını temsil eden imzasız bir tamsayı türü.
+Bir priority_queue öğe sayısını temsil eden işaretsiz bir tamsayı türü.
 
 ```cpp
 typedef typename Container::size_type size_type;
@@ -476,15 +476,15 @@ typedef typename Container::size_type size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, priority_queue tarafından uyarlanan `size_type` temel kapsayıcının eşanlamlısiyidir.
+Tür, `size_type` priority_queue tarafından uyarlanan taban kapsayıcının eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir [size](#size) ve kullanılacağına `size_type`bir örnek için boyut örneği bakın.
+Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boyut](#size) örneğine bakın `size_type` .
 
-## <a name="priority_queuetop"></a><a name="top"></a>priority_queue::üst
+## <a name="priority_queuetop"></a><a name="top"></a>priority_queue:: top
 
-priority_queue üst kısmındaki en büyük öğeye const başvurusu verir.
+Priority_queue en üstündeki en büyük öğeye bir const başvurusu döndürür.
 
 ```cpp
 const_reference top() const;
@@ -492,11 +492,11 @@ const_reference top() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Priority_queue `Traits` işlevi tarafından belirlenen en büyük öğeye bir başvuru.
+Priority_queue nesnesi tarafından belirlendiği şekilde en büyük öğeye başvuru `Traits` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi uygulamak için priority_queue boş olmaması gerekir.
+Üye işlevini uygulamak için priority_queue boş olmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -530,7 +530,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.
 ```
 
-## <a name="priority_queuevalue_type"></a><a name="value_type"></a>priority_queue::value_type
+## <a name="priority_queuevalue_type"></a><a name="value_type"></a>priority_queue:: value_type
 
 Bir priority_queue öğe olarak depolanan nesne türünü temsil eden bir tür.
 
@@ -540,7 +540,7 @@ typedef typename Container::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, priority_queue tarafından uyarlanan `value_type` temel kapsayıcının eşanlamlısiyidir.
+Tür, `value_type` priority_queue tarafından uyarlanan taban kapsayıcının eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -574,5 +574,5 @@ The element at the top of the priority_queue is 69.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standart Kütüphane Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

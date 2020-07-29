@@ -6,27 +6,27 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C]
 ms.assetid: 015627c7-0924-49b2-a4d1-c77edf5eae6a
-ms.openlocfilehash: b38ff6c535c142bd15ea09a4d7c80010c3fff31f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c46173ceebd7291336c18d36203d1e4dc59ce46d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313369"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222010"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C)
 
-`break` deyimi, göründüğü en yakın kapsayan `do`, `for`, `switch` veya `while` deyiminin yürütülmesini sonlandırır. Denetim, sonlandırılmış deyimi takip eden deyime geçer.
+**`break`** İfadesi, göründüğü en yakın kapsayan **`do`** , **`for`** , **`switch`** , ya da **`while`** deyimin yürütmesini sonlandırır. Denetim, sonlandırılmış deyimi takip eden deyime geçer.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *sıçrama-deyim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**sonundan**
 
-`break` deyimi, bir `switch` deyimi içinde belirli bir durumun işlenmesini sonlandırmak için sıkça kullanılır. Yinelemeli bir kapsayan veya `switch` deyimi olmaması bir hata oluşturur.
+**`break`** Deyimleri, bir deyimindeki belirli bir durumu işlemeyi sonlandırmak için sık kullanılır **`switch`** . Kapsayan yinelemeli veya **`switch`** deyimin olmaması bir hata oluşturur.
 
-İç içe geçmiş deyimler içinde, `break` deyimi yalnızca hemen kendisini kapsayan `do`, `for`, `switch` veya `while` deyimini sonlandırır. Denetimi iç içe geçmiş yapının dışına aktarmak için bir `return` veya `goto` deyimini kullanabilirsiniz.
+İç içe geçmiş deyimler içinde, **`break`** deyimi yalnızca **`do`** **`for`** **`switch`** **`while`** hemen kendisini kapsayan,, veya deyimini sonlandırır. Bir **`return`** veya **`goto`** ifadesini, iç içe geçmiş yapının başka bir yerinde aktarmak için kullanabilirsiniz.
 
-Bu örnekte, `break` deyimi gösterilmektedir:
+Bu örnek, **`break`** ifadesini göstermektedir:
 
 ```
 #include <stdio.h>
@@ -45,4 +45,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[break Deyimi](../cpp/break-statement-cpp.md)
+[Break ekstresi](../cpp/break-statement-cpp.md)

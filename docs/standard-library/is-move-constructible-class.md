@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_move_constructible
 ms.assetid: becdf076-7419-488d-a335-78adf2478b9b
-ms.openlocfilehash: 9585a932a34a24769201aaa379525a9b4c181e41
-ms.sourcegitcommit: 33a898bf976c65f998b4e88a84765a0cef4193a8
+ms.openlocfilehash: 5495ac39a98f5c194f19d28ba85a1d59f47dfbb4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72920099"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222387"
 ---
 # <a name="is_move_constructible-class"></a>is_move_constructible sınıfı
 
 Türün bir taşıma işlemi kullanılarak oluşturulup oluşturulmayacağını sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -26,16 +26,16 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* \
+*Şı*\
 Değerlendirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür *T* bir taşıma işlemi kullanılarak oluşturulabiliyorsa **true** olarak değerlendirilen bir tür koşulu. Bu koşul `is_constructible<T, T&&>`eşdeğerdir. Taşıma oluşturucusuna sahip olmayan, ancak bir `const T&` bağımsız değişkenini kabul eden bir kopya Oluşturucusu olan bir tür *T* , `std::is_move_constructible`karşılar.
+**`true`** Tür *T* bir taşıma işlemi kullanılarak oluşturulabilmesidir olarak değerlendirilen bir tür koşulu. Bu koşul ile eşdeğerdir `is_constructible<T, T&&>` . Taşıma oluşturucusuna sahip olmayan, ancak bağımsız değişken kabul eden bir kopya Oluşturucusu olan bir tür *T* `const T&` `std::is_move_constructible` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

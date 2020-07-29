@@ -4,26 +4,26 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - finally keyword [C++]
 ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
-ms.openlocfilehash: 2574ba5a10bbf5eddc68d6e0265d5dfc99c6d8fc
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: b3331c17fc2313cbd6146db3beb015cd8d8c1eeb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988338"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221464"
 ---
 # <a name="finally"></a>finally
 
-`try` ve `catch` yan tümcelerinin yanı sıra, CLR özel durum işleme bir `finally` yan tümcesini destekler. Sözdizimi, yapılandırılmış özel durum işleme (SEH) içindeki `__finally` bloğunun aynısıdır. `__finally` bloğu, bir `try` veya `catch` bloğunu izleyebilir.
+**`try`** Ve **`catch`** yan tümcelerinin yanı sıra CLR özel durum işleme bir **`finally`** yan tümceyi destekler. Anlambilim, **`__finally`** yapılandırılmış özel durum işleme (SEH) bloğu ile aynıdır. Bir **`__finally`** blok, **`try`** veya bloğunu izleyebilir **`catch`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-`finally` bloğunun amacı, özel durum oluşduktan sonra kalan kaynakları temizleyelim. Hiçbir özel durum atılmasa bile `finally` bloğunun her zaman yürütüldüğünü unutmayın. `catch` bloğu yalnızca, ilişkili `try` bloğunda yönetilen bir özel durum oluşturulursa yürütülür.
+Bloğun amacı, **`finally`** özel durum oluşduktan sonra kalan kaynakları temizleyelim. **`finally`** Hiçbir özel durum atılmasa bile bloğun her zaman yürütüldüğünü unutmayın. **`catch`** Blok yalnızca ilişkili blok içinde yönetilen bir özel durum oluşturulursa yürütülür **`try`** .
 
-`finally`, bağlama duyarlı bir anahtar sözcüktür; daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](../extensions/context-sensitive-keywords-cpp-component-extensions.md) .
+`finally`bağlama duyarlı bir anahtar sözcüktür; daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](../extensions/context-sensitive-keywords-cpp-component-extensions.md) .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, basit bir `finally` bloğunu göstermektedir:
+Aşağıdaki örnekte basit bir blok gösterilmektedir **`finally`** :
 
 ```cpp
 // keyword__finally.cpp

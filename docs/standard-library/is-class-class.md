@@ -7,18 +7,18 @@ helpviewer_keywords:
 - is_class class
 - is_class
 ms.assetid: 96fc34a3-a81b-4ec6-b7fb-baafde1a0f4e
-ms.openlocfilehash: 7dc71622a37164e996b067276ddf8a5d1dd88b62
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4122ad2b4adbd0ed290f26428560c569b3754d7d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456644"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222452"
 ---
-# <a name="isclass-class"></a>is_class Sınıfı
+# <a name="is_class-class"></a>is_class Sınıfı
 
 Türün bir sınıf olup olmadığını sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -32,7 +32,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir **sınıf** veya `cv-qualified` **Yapı**olarak tanımlanmış bir tür ya da bunlardan birinin bir biçimi ise, yanlış *bir değer içeriyorsa* tür belirtiminin bir örneği true olarak tutulur.
+Tür değeri bir veya ya da ya da bunlardan birinin formu olarak tanımlanmış bir *tür ise true* , **`class`** **`struct`** `cv-qualified` Aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -65,12 +65,12 @@ is_class<int> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [is_compound sınıfı](../standard-library/is-compound-class.md)\
-[is_union Sınıfı](../standard-library/is-union-class.md)
+[is_union sınıfı](../standard-library/is-union-class.md)

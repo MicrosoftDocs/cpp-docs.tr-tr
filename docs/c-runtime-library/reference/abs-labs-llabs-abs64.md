@@ -39,18 +39,18 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-ms.openlocfilehash: a21bdbcb54d7fecf00b3c782c562d60ccc866dcc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 96363f8d2139a5c75ee25a2c43b4c7ef55094f13
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171417"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221997"
 ---
 # <a name="abs-labs-llabs-_abs64"></a>abs, labs, llabs, _abs64
 
 Bağımsız değişkenin mutlak değerini hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int abs( int n );
@@ -78,18 +78,18 @@ Sayısal değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin **verdiğinden, uzun, uzun** **uzun**, **float**, **Double**ve **long** **Long** **Double** değerlerini alan ve döndüren **ABS** aşırı yüklerini çağırabilirsiniz. Bu aşırı yüklemeler \<cmath > üst bilgisinde tanımlanmıştır. C programında, **ABS** her zaman bir **int**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden,,,, **abs** **`long`** **`long long`** **`float`** **`double`** ve değerlerini **`long double`** alan ve döndüren ABS aşırı yüklerini çağırabilirsiniz. Bu aşırı yüklemeler \<cmath> üst bilgide tanımlanmıştır. C programında, **ABS** her zaman alır ve döndürür **`int`** .
 
-**Microsoft 'a özgü**: herhangi bir integral türü kullanılarak gösterilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyükse, bu işlevlere dönüştürülemeyen bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ABS** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, `abs(INT_MIN)` `INT_MIN`döndürür `labs(LONG_MIN)` `LONG_MIN`döndürür, `llabs(LLONG_MIN)` `LLONG_MIN`döndürür ve `_abs64(_I64_MIN)` `_I64_MIN`döndürür. Bu, **ABS** işlevlerinin pozitif bir değeri güvence altına almak için kullanılamayacağı anlamına gelir.
+**Microsoft 'a özgü**: herhangi bir integral türü kullanılarak gösterilebilen negatif tamsayılar aralığı, bu türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyükse, bu işlevlere dönüştürülemeyen bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ABS** işlevleri bağımsız değişken değerini değiştirmeden döndürür. Özellikle, döndürür, döndürür, döndürür `abs(INT_MIN)` `INT_MIN` `labs(LONG_MIN)` `LONG_MIN` `llabs(LLONG_MIN)` `LLONG_MIN` ve `_abs64(_I64_MIN)` döndürür `_I64_MIN` . Bu, **ABS** işlevlerinin pozitif bir değeri güvence altına almak için kullanılamayacağı anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |-------------|-----------------------|---------------------------|
-|**ABS**, **Labs**, **LLabs**|\<Math. h > veya \<Stdlib. h >|\<cmath >, \<cstdlib >, \<Stdlib. h > veya \<Math. h >|
-|**_abs64**|\<Stdlib. h >|\<cstdlib > veya \<Stdlib. h >|
+|**ABS**, **Labs**, **LLabs**|\<math.h> veya \<stdlib.h>|\<cmath>, \<cstdlib> , \<stdlib.h> veya\<math.h>|
+|**_abs64**|\<stdlib.h>|\<cstdlib> veya \<stdlib.h>|
 
-İçinde C++ **ABS** 'in aşırı yüklenmiş sürümlerini kullanmak için \<cmath > üst bilgisini eklemeniz gerekir.
+C++ ' da aşırı yüklenmiş **ABS** sürümlerini kullanmak için üstbilgiyi dahil etmeniz gerekir \<cmath> .
 
 ## <a name="example"></a>Örnek
 
@@ -150,8 +150,8 @@ _abs64(_I64_MIN) returns 0x8000000000000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [_cabs](cabs.md)<br/>
 [fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
 [imaxabs](imaxabs.md)

@@ -8,16 +8,16 @@ helpviewer_keywords:
 - blocks, about blocks
 - compound statements
 ms.assetid: 23855939-7430-498e-8936-0c70055ea701
-ms.openlocfilehash: 60d7e88c5ccccac5a1d967a91c8a82dd954d9afc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a06a3d9ce887150ba3333e8e9e874ab337f8b4df
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337337"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221815"
 ---
 # <a name="compound-statements-blocks"></a>Bileşik Deyimler (Bloklar)
 
-Bileşik deyimi kıvırcık ayraçlarla **({ })** kapalı sıfır veya daha fazla ifadeden oluşur. Bileşik deyim, deyim beklenen herhangi bir yerde kullanılabilir. Bileşik deyimlere genellikle "blok" adı verilir.
+Bileşik deyim, küme ayraçları (**{}**) içine alınmış sıfır veya daha fazla deyimden oluşur. Bileşik deyim, deyim beklenen herhangi bir yerde kullanılabilir. Bileşik deyimlere genellikle "blok" adı verilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,7 +27,7 @@ Bileşik deyimi kıvırcık ayraçlarla **({ })** kapalı sıfır veya daha fazl
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki örnek, **if** deyiminin *deyimi* nin deyimi olarak bileşik bir ifade kullanır (sözdizimi hakkındaki ayrıntılar için [If Bildirimi'ne](../cpp/if-else-statement-cpp.md) bakın):
+Aşağıdaki örnek, deyimin *ifade* kısmı olarak bir bileşik ifade kullanır **`if`** (söz dizimi hakkında ayrıntılar için [if ifadesine](../cpp/if-else-statement-cpp.md) bakın):
 
 ```cpp
 if( Amount > 100 )
@@ -42,8 +42,8 @@ else
 ```
 
 > [!NOTE]
-> Bir bildirim bir deyim olduğundan, bir bildirim deyim *listesindeki*ifadelerden biri olabilir. Sonuç olarak, bileşik deyim içinde bildirilen, ancak açıkça statik olarak bildirilmeyen adların yerel kapsamı ve (nesneler için) ömrü vardır. Yerel kapsama sahip isimlerin tedavisi yle ilgili ayrıntılar için [Kapsam'a](../cpp/scope-visual-cpp.md) bakın.
+> Bir bildirim bir deyim olduğundan, bildirim *deyim listesindeki*deyimlerden biri olabilir. Sonuç olarak, bileşik deyim içinde bildirilen, ancak açıkça statik olarak bildirilmeyen adların yerel kapsamı ve (nesneler için) ömrü vardır. Yerel kapsama sahip adların işlenmesi hakkındaki ayrıntılar için bkz. [kapsam](../cpp/scope-visual-cpp.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)
+[C++ deyimlerine genel bakış](../cpp/overview-of-cpp-statements.md)

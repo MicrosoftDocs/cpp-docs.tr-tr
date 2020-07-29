@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: f372ae036ff4843532efa18c3d518820b5f06111
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 504bd4fad47d85b0f92603b2cf77a6fca1e9876b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244425"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233021"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
-İki nesne tek bir nesne olarak değerlendir olanağı sağlayan bir yapı.
+İki nesneyi tek bir nesne olarak işleme yeteneği sağlayan bir yapı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 struct pair
@@ -59,28 +59,28 @@ template<class T1, class T2>
 
 ### <a name="parameters"></a>Parametreler
 
-*val1*\
-İlk öğesi başlatma değeri `pair`.
+*Val1*\
+Değer ilk öğesini başlatıyor `pair` .
 
-*Val2*\
-İkinci öğesini başlatma değeri `pair`.
+*Val2 & lt*\
+Değer ikinci öğesini başlatıyor `pair` .
 
-*sağ*\
-Başka bir çifti öğelerini başlatmak için kullanılacak değerleri olan bir çifti.
+*Right*\
+Farklı bir çiftin öğelerini başlatmak için değerleri kullanılacak olan bir çift.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İlk Oluşturucu (varsayılan) ilk öğe türünün varsayılan çiftinin başlatır `T1` ve ikinci öğe türünün varsayılan `T2`.
+İlk (varsayılan) Oluşturucu, çiftin ilk öğesini varsayılan türüne `T1` ve ikinci öğesine varsayılan türünden varsayılan olarak başlatır `T2` .
 
-İkinci oluşturucu çifti için ilk öğesini başlatan *Val1* ve için ikinci *Val2.*
+İkinci Oluşturucu, çiftin ilk öğesini *val1* ve ikincisi val2 & lt olarak başlatır *.*
 
-Üçüncü (şablon) Oluşturucu çifti için ilk öğesini başlatan `Right`. **İlk** ve için ikinci `Right`. **İkinci**.
+Üçüncü (şablon) Oluşturucu, çiftin ilk öğesini öğesine başlatır `Right` . **ilk** ve ikinci `Right` . **ikinci**.
 
-Dördüncü Oluşturucu çifti için ilk öğesini başlatan *Val1* ve için ikinci *Val2* kullanarak [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Dördüncü Oluşturucu, çiftin ilk öğesini *val1* ve saniye ile *val2 & lt* , [Rvalue Başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md)kullanarak başlatır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapı türündeki nesnelerin bir çift depolar `T1` ve `T2`sırasıyla. Türü `first_type` şablon parametresi ile aynı `T1` türü `second_type` şablon parametresi ile aynı `T2`. `T1` ve `T2` her yalnızca bir varsayılan oluşturucu, bir tek bağımsız değişkenli oluşturucu ve yıkıcı sağlamanız. Türün tüm üyeleri `pair` türü olarak bildirildiği için ortak olan bir `struct` yerine bir **sınıfı**. İki en yaygın kullanım için bir çift ilişkilendirilebilir bir kapsayıcı sınıfları için öğeleri olarak ve iki değer döndüren işlevleri için olarak dönüş türleri olan [map sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md) hem bir anahtar olması ve Her bir öğeyle ilişkili değer türü. İkinci bir çift ilişkilendirilebilir kapsayıcıdır gereksinimlerini karşılayan ve biçiminde bir değer türünde `pair` <  **const**`key_type`, `mapped_type`>.
+Şablon yapısı sırasıyla türünde nesne çifti depolar `T1` `T2` . Tür, `first_type` şablon parametresiyle aynıdır `T1` ve tür, `second_type` şablon parametresiyle aynıdır `T2` . `T1``T2`her gereksinimi yalnızca bir varsayılan Oluşturucu, tek bir bağımsız değişken Oluşturucusu ve yıkıcısı sağlar. Türü `pair` bir değil olarak bildirildiği için türün tüm üyeleri geneldir **`struct`** **`class`** . Bir çiftin en yaygın iki kullanımı, iki değer döndüren işlevler için dönüş [türleri ve hem](../standard-library/map-class.md) anahtar hem de her bir öğe ile ilişkili bir değer türü olan [multimap sınıfı](../standard-library/multimap-class.md) için bir öğe olarak bulunur. İkincisi, çift ilişkilendirilebilir bir kapsayıcının gereksinimlerini karşılar ve> bir değer türüne sahiptir `pair` <  **`const`** `key_type` `mapped_type` .
 
 ## <a name="example"></a>Örnek
 

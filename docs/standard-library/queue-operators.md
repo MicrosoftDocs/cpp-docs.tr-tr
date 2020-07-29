@@ -1,5 +1,5 @@
 ---
-title: '&lt;kuyruğu&gt; işleçleri'
+title: '&lt;kuyruk &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - queue/std::operator!=
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (queue)
 - std::operator&lt;= (queue)
 - std::operator== (queue)
-ms.openlocfilehash: 420d717b34b6c17587f8790701906e06ab008d96
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 8c02e79e6a300f23ac31ea876c9d4576cfe5e9a8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419653"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232930"
 ---
-# <a name="ltqueuegt-operators"></a>&lt;kuyruğu&gt; işleçleri
+# <a name="ltqueuegt-operators"></a>&lt;kuyruk &gt; işleçleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesine eşit olup olmadığını sınar.
 
@@ -35,15 +35,15 @@ bool operator!=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `queue` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `queue` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kuyruklar eşit değilse **doğru** ; Kuyruklar eşitse **false** .
+**`true`** Kuyruklar eşitse; **`false`** Kuyruklar eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -92,7 +92,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
 İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki sıra nesnesinden küçük olup olmadığını sınar.
 
@@ -102,15 +102,15 @@ bool operator<(const queue <Type, Container>& left, const queue <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `queue` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `queue` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki sıra, işlecin sağ tarafındaki sıraya eşit veya daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki sıra, işlecin sağ tarafındaki sıraya eşit veya ondan küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -155,7 +155,7 @@ The queue q1 is less than the queue q2.
 The queue q1 is not less than the queue q3.
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
 İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -165,15 +165,15 @@ bool operator<=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `queue` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `queue` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki sıra işlecin sağ tarafındaki kuyruktan tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki sıra, işlecin sağ tarafındaki kuyruktan tamamen daha küçüktür; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -220,7 +220,7 @@ The queue q1 is greater than the queue q2.
 The queue q1 is less than or equal to the queue q3.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki kuyruk nesnesine eşit olup olmadığını sınar.
 
@@ -230,15 +230,15 @@ bool operator==(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `queue` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `queue` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kuyruklar eşit değilse **doğru** ; Kuyruklar eşitse **false** .
+**`true`** Kuyruklar eşitse; **`false`** Kuyruklar eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -286,7 +286,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
 İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki sıra nesnesinden büyük olup olmadığını sınar.
 
@@ -296,15 +296,15 @@ bool operator>(const queue <Type, Container>& left, const queue <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `queue` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `queue` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki sıra işlecin sağ tarafındaki kuyruktan tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki sıra, işlecin sağ tarafındaki kuyruktan tamamen daha küçüktür; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -352,7 +352,7 @@ The queue q1 is not greater than the queue q2.
 The queue q1 is greater than the queue q3.
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
 İşlecin sol tarafındaki kuyruk nesnesinin, sağ taraftaki sıra nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -362,15 +362,15 @@ bool operator>=(const queue <Type, Container>& left, const queue <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `queue` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `queue` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki sıra işlecin sağ tarafındaki kuyruktan tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki sıra, işlecin sağ tarafındaki kuyruktan tamamen daha küçüktür; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -1,5 +1,5 @@
 ---
-title: mutex Sınıfı (C++ Standart Kitaplık)| Microsoft Dokümanlar
+title: Mutex sınıfı (C++ Standart Kitaplığı) | Microsoft Docs
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::mutex
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::mutex [C++], native_handle
 - std::mutex [C++], try_lock
 - std::mutex [C++], unlock
-ms.openlocfilehash: 84e6e3a46903a204444df9886556ae2c563304a9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 20e2165a70dec8a3d3918eece6cb78057ac19138
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364839"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233047"
 ---
-# <a name="mutex-class-c-standard-library"></a>mutex Sınıfı (C++ Standart Kitaplığı)
+# <a name="mutex-class-c-standard-library"></a>Mutex sınıfı (C++ Standart Kitaplığı)
 
-*Mutex türünü*temsil eder. Bu tür nesneler, bir program içinde karşılıklı dışlama zorlamak için kullanılabilir.
+Bir *mutex türünü*temsil eder. Bu türden nesneler, bir program içinde karşılıklı dışlamayı zorlamak için kullanılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,29 +37,29 @@ class mutex;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Mutex](#mutex)|Bir `mutex` nesne inşa eder.|
-|[mutex::~mutex Destructor](#dtormutex_destructor)|`mutex` Nesne tarafından kullanılan tüm kaynakları salar.|
+|[mutex](#mutex)|Bir `mutex` nesnesi oluşturur.|
+|[mutex:: ~ mutex yıkıcısı](#dtormutex_destructor)|Nesnesi tarafından kullanılan tüm kaynakları serbest bırakır `mutex` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Kilit](#lock)|İş `mutex`parçacığı.|
-|[native_handle](#native_handle)|Mutex tutamacını temsil eden uygulamaya özgü türü döndürür.|
-|[try_lock](#try_lock)|`mutex` Engellemeden sahipliğini elde etmeye çalışır.|
-|[Kilidini](#unlock)|`mutex`Sahiplik serbest bırakır.|
+|[ine](#lock)|İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığını engeller `mutex` .|
+|[native_handle](#native_handle)|Mutex tanıtıcısını temsil eden uygulamaya özel türü döndürür.|
+|[try_lock](#try_lock)|Engellemeden sahipliğini almaya çalışır `mutex` .|
+|[kaldırın](#unlock)|Öğesinin sahipliğini yayınlar `mutex` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<mutex>
+**Üst bilgi:**\<mutex>
 
 **Ad alanı:** std
 
-## <a name="mutexlock"></a><a name="lock"></a>mutex::kilit
+## <a name="mutexlock"></a><a name="lock"></a>mutex:: Lock
 
-İş `mutex`parçacığı.
+İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığını engeller `mutex` .
 
 ```cpp
 void lock();
@@ -67,19 +67,19 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama iş parçacığı zaten `mutex`sahibi ise, davranış tanımsız.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex` , davranış tanımsızdır.
 
-## <a name="mutexmutex-constructor"></a><a name="mutex"></a>mutex::mutex Yapıcı
+## <a name="mutexmutex-constructor"></a><a name="mutex"></a>mutex:: mutex Oluşturucusu
 
-Kilitli olmayan `mutex` bir nesne inşa eder.
+`mutex`Kilitli olmayan bir nesne oluşturur.
 
 ```cpp
 constexpr mutex() noexcept;
 ```
 
-## <a name="mutexmutex-destructor"></a><a name="dtormutex_destructor"></a>mutex::~mutex Destructor
+## <a name="mutexmutex-destructor"></a><a name="dtormutex_destructor"></a>mutex:: ~ mutex yıkıcısı
 
-`mutex` Nesne tarafından kullanılan tüm kaynakları salgılar.
+Nesnesi tarafından kullanılan tüm kaynakları serbest bırakır `mutex` .
 
 ```cpp
 ~mutex();
@@ -87,11 +87,11 @@ constexpr mutex() noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı çalıştığında nesne kilitlenirse, davranış tanımsız kalır.
+Yıkıcı çalıştırıldığında nesne kilitliyse, davranış tanımsızdır.
 
-## <a name="mutexnative_handle"></a><a name="native_handle"></a>mutex::native_handle
+## <a name="mutexnative_handle"></a><a name="native_handle"></a>mutex:: native_handle
 
-Mutex tutamacını temsil eden uygulamaya özgü türü döndürür. Mutex kolu uygulamaya özgü yollarla kullanılabilir.
+Mutex tanıtıcısını temsil eden uygulamaya özel türü döndürür. Mutex tanıtıcısı, uygulamaya özgü yollarla kullanılabilir.
 
 ```cpp
 native_handle_type native_handle();
@@ -99,11 +99,11 @@ native_handle_type native_handle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`native_handle_type`olarak kullanılan `Concurrency::critical_section *` bir oyuncu olarak `void *`tanımlanır.
+`native_handle_type`, `Concurrency::critical_section *` olarak cast olarak tanımlanır `void *` .
 
-## <a name="mutextry_lock"></a><a name="try_lock"></a>mutex::try_lock
+## <a name="mutextry_lock"></a><a name="try_lock"></a>mutex:: try_lock
 
-`mutex` Engellemeden sahipliğini elde etmeye çalışır.
+Engellemeden sahipliğini almaya çalışır `mutex` .
 
 ```cpp
 bool try_lock();
@@ -111,15 +111,15 @@ bool try_lock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yöntem başarıyla sahiplik elde ederse `mutex` **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** Yöntemi öğesinin sahipliğini başarıyla alırsa `mutex` ; Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama iş parçacığı zaten `mutex`sahibi ise, davranış tanımsız.
+Çağıran iş parçacığı öğesine zaten sahipse `mutex` , davranış tanımsızdır.
 
-## <a name="mutexunlock"></a><a name="unlock"></a>mutex::kilidini açmak
+## <a name="mutexunlock"></a><a name="unlock"></a>mutex:: unlock
 
-`mutex`Sahiplik serbest bırakır.
+Öğesinin sahipliğini yayınlar `mutex` .
 
 ```cpp
 void unlock();
@@ -127,9 +127,9 @@ void unlock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama iş parçacığı, davranış `mutex`tanımsız sahibi değilse.
+Çağıran iş parçacığı öğesine sahip değilse `mutex` , davranış tanımsızdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
 [\<mutex>](../standard-library/mutex.md)

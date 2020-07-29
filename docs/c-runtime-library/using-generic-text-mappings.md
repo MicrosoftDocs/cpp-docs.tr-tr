@@ -27,80 +27,80 @@ helpviewer_keywords:
 - UNICODE constant
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-ms.openlocfilehash: aa6827607430bf8f0db37997bac0223833fcd171
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f8616e0ff660b299544ed3c2f0a12feb4dbfe66b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62376061"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221880"
 ---
 # <a name="using-generic-text-mappings"></a>Genel Metin Eşlemelerini Kullanma
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Çeşitli uluslararası pazarlar için kod geliştirmeyi basitleştirmek için çok sayıda veri türleri, yordamlar ve diğer nesneler için Microsoft çalışma zamanı kitaplığı Microsoft'a özgü "genel metin" eşlemeleri sağlar. Bu eşlemeler TCHAR içinde tanımlanır. H Bu ad eşlemeler, herhangi bir karakter kümesi üç tür için derlenebilir genel kod yazmak için kullanabilirsiniz: ASCII (SBCS), MBCS ve Unicode olarak kullanarak tanımladığınız bir bildirim sabiti bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri ANSI uyumlu olmayan Microsoft uzantılarıdır.
+Çeşitli uluslararası pazarlar için kod geliştirmeyi basitleştirmek amacıyla, Microsoft çalışma zamanı kitaplığı birçok veri türü, yordamlar ve diğer nesneler için Microsoft 'a özgü "genel metin" eşlemeleri sağlar. Bu eşlemeler TCHAR içinde tanımlanmıştır. Olsun. Bu ad eşlemelerini, bir ifade kullanarak tanımladığınız bir bildirim sabitine bağlı olarak, üç tür karakter kümesi için derlenebilecek genel kod yazmak üzere kullanabilirsiniz: ASCII (SBCS), MBCS veya Unicode `#define` . Genel metin eşlemeleri, ANSI uyumlu olmayan Microsoft uzantılarıdır.
 
-### <a name="preprocessor-directives-for-generic-text-mappings"></a>Genel metin eşlemeleri için ön işlemci yönergeleri
+### <a name="preprocessor-directives-for-generic-text-mappings"></a>Genel metin eşlemeleri için Önişlemci yönergeleri
 
 |#define|Derlenmiş sürüm|Örnek|
 |--------------|----------------------|-------------|
-|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev` Eşleyen `_wcsrev`|
-|`_MBCS`|Çok baytlı karakter|`_tcsrev` Eşleyen `_mbsrev`|
-|Hiçbiri (varsayılan: ne `_UNICODE` ya da `_MBCS` tanımlanan)|SBCS (ASCII)|`_tcsrev` Eşleyen `strrev`|
+|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev`eşleme`_wcsrev`|
+|`_MBCS`|Çok baytlı karakter|`_tcsrev`eşleme`_mbsrev`|
+|Hiçbiri (varsayılan: ne `_UNICODE` de `_MBCS` tanımlanmamış)|SBCS (ASCıı)|`_tcsrev`eşleme`strrev`|
 
-Örneğin, genel metin işlevi `_tcsrev`TCHAR içinde tanımlanmış. H, eşlenen `mbsrev` varsa `MBCS` programınızdaki veya için tanımlanan `_wcsrev` varsa `_UNICODE` tanımlanmış. Aksi takdirde `_tcsrev` eşlendiği `strrev`.
+Örneğin, TCHAR içinde tanımlanan genel metin işlevi `_tcsrev` . H, `mbsrev` `MBCS` programınızda tanımlanmışsa veya tanımlanmışsa öğesine eşlenir `_wcsrev` `_UNICODE` . Aksi takdirde `_tcsrev` ile eşlenir `strrev` .
 
-Genel metin veri türü `_TCHAR`TCHAR ayrıca tanımlanan. H eşler türüne `char` varsa `_MBCS` türü için tanımlanan `wchar_t` varsa `_UNICODE` tanımlanır ve türüne `char` hiçbiri sabiti tanımlanmışsa. Diğer veri türü eşlemeleri TCHAR sağlanır. Programlama kolaylık sağlamak için H ancak `_TCHAR` kullanışlıdır türü.
+`_TCHAR`TCHAR içinde de tanımlanan genel metin veri türü. H, tanımlanmışsa tür ile eşlenir, **`char`** `_MBCS` **`wchar_t`** `_UNICODE` tanımlıysa yazın ve **`char`** her iki sabit tanımlı değilse yazın. Diğer veri türü eşlemeleri TCHAR içinde verilmiştir. Programlama kolaylığı için H, ancak `_TCHAR` en faydalı türdür.
 
 ### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri
 
-|Genel metin veri türü adı|SBCS (_UNICODE, _MBCS tanımlanmamış)|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|Genel metin veri türü adı|SBCS (_UNICODE, _MBCS tanımlanmadı)|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |----------------------------------|--------------------------------------------|--------------------|-----------------------|
-|`_TCHAR`|`char`|`char`|`wchar_t`|
-|`_TINT`|`int`|`int`|`wint_t`|
-|`_TSCHAR`|`signed char`|`signed char`|`wchar_t`|
-|`_TUCHAR`|`unsigned char`|`unsigned char`|`wchar_t`|
-|`_TXCHAR`|`char`|`unsigned char`|`wchar_t`|
-|`_T` veya `_TEXT`|Herhangi bir etkisi (önişlemci tarafından kaldırıldı)|Herhangi bir etkisi (önişlemci tarafından kaldırıldı)|`L` (aşağıdaki karakter veya Unicode çözümlemesiyle dizeye dönüştürür)|
+|`_TCHAR`|**`char`**|**`char`**|**`wchar_t`**|
+|`_TINT`|**`int`**|**`int`**|`wint_t`|
+|`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
+|`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
+|`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
+|`_T` veya `_TEXT`|Efekt yok (ön işlemci tarafından kaldırıldı)|Efekt yok (ön işlemci tarafından kaldırıldı)|`L`(aşağıdaki karakter veya dizeyi Unicode karşılığına dönüştürür)|
 
-Genel metin eşlemeleri yordamları, değişkenler ve diğer nesneler, tam bir listesi için bkz. [genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
+Yordamların, değişkenlerin ve diğer nesnelerin genel metin eşlemelerinin tam bir listesi için bkz. [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
 
-Aşağıdaki kod parçalarını kullanımını gösteren `_TCHAR` ve `_tcsrev` eşleme MBCS, Unicode ve SBCS modelleri için.
+Aşağıdaki kod parçaları `_TCHAR` `_tcsrev` MBCS, UNICODE ve SBCS modellerine eşleme için ve kullanımını gösterir.
 
 ```
 _TCHAR *RetVal, *szString;
 RetVal = _tcsrev(szString);
 ```
 
-Varsa `MBCS` olmuştur tanımlanan, önişlemci önceki parça aşağıdaki kodu eşler:
+`MBCS`Tanımlanmışsa, ön işlemci önceki parçayı aşağıdaki kodla eşler:
 
 ```
 char *RetVal, *szString;
 RetVal = _mbsrev(szString);
 ```
 
-Varsa `_UNICODE` olmuştur tanımlanan, önişlemci aynı parçaya aşağıdaki kodu eşler:
+`_UNICODE`Tanımlanmışsa, ön işlemci aynı parçayı aşağıdaki kodla eşler:
 
 ```
 wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);
 ```
 
-Kullanılmazsa `_MBCS` ya da `_UNICODE` olmuştur tanımlanan, önişlemci parça tek baytlık ASCII koduna şu şekilde eşlenir:
+Ne `_MBCS` de `_UNICODE` tanımlı değilse, ön işlemci parçayı şu şekilde tek baytlı ASCII koduna eşler:
 
 ```
 char *RetVal, *szString;
 RetVal = strrev(szString);
 ```
 
-Bu nedenle yazma, korumak ve herhangi bir karakter kümesi üç tür için özel yordamlar çalıştırmak için tek kaynak kod dosyasını derleyin.
+Bu nedenle, üç tür karakter kümesinden birine özgü yordamlar ile çalışacak tek bir kaynak kod dosyası yazabilir, bakımını yapabilir ve derleyebilirsiniz.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
-[Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
-[Sabit ve Global Değişken Eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Rutin Eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
-[Örnek Genel Metin Programı](../c-runtime-library/a-sample-generic-text-program.md)
+[Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
+[Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
+[Sabit ve global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
+[Rutin eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
+[Örnek bir genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)

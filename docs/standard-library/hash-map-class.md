@@ -88,21 +88,21 @@ helpviewer_keywords:
 - stdext::hash_map::upper_bound
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
-ms.openlocfilehash: e8c0da199d8a1e9ba388b960fe07ab6ad6fcf4bc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 063b71100af536a249949a1084ab208b6266fd8d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375462"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222478"
 ---
 # <a name="hash_map-class"></a>hash_map Sınıfı
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Her öğenin değeri benzersiz ve ilişkili bir veri değeri olan bir sıralama anahtarı olan bir çifti olduğu bir koleksiyondan hızlı bir şekilde veri depolar ve alır.
+Her öğenin değeri benzersiz olan ve ilişkili bir veri değeri olan bir sıralama anahtarına sahip bir çiftin bulunduğu bir koleksiyondan verileri hızlı bir şekilde depolar ve alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Key,
@@ -115,123 +115,123 @@ class hash_map
 ### <a name="parameters"></a>Parametreler
 
 *Anahtar*\
-hash_map depolanacak anahtar veri türü.
+Hash_map depolanacak anahtar veri türü.
 
-*Türü*\
-hash_map depolanacak öğe veri türü.
+*Türüyle*\
+Hash_map depolanacak öğe veri türü.
 
-*Özellik*\
-İki işlev nesneleri içeren tür, bir sınıf karşılaştırın iki öğe değerleri göreli sırasını belirlemek için sıra anahtarları ve tür imzasız tamsayılar için öğelerin unary `size_t`yüklem anahtar değerleri eşleme bir karma işlevi karşılaştırmak mümkün . Bu bağımsız değişken isteğe `Key`bağlıdır `Key` ve hash_compare<,> > daha az<varsayılan değerdir.
+*Lerdir*\
+İki işlev nesnesi içeren tür, bir sınıftan biri, kendi göreli sıralarını ve öğelerin birli koşul eşleme anahtarı değerleri olan bir karma işlevi, türün işaretsiz tamsayılar olarak belirleyen bir karma işlevi bir sıralama anahtarı olarak karşılaştıramayacak şekilde karşılaştırılmaktadır `size_t` . Bu bağımsız değişken isteğe bağlıdır ve hash_compare<`Key` , daha az<`Key`> > varsayılan değerdir.
 
-*Ayırıcı*\
-hash_map ayırma ve bellek ayırma ile ilgili ayrıntıları kapsülleyen depolanan ayırıcı nesneyi temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve\<varsayılan değer `Key` `Type` ayırıcı çifti const <,>>.
+*Öğe*\
+Hash_map, bellek ayırma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer ayırıcı \<pair <const `Key`, `Type`>>.
 
 ## <a name="remarks"></a>Açıklamalar
 
-hash_map:
+Hash_map:
 
 - İlişkili bir anahtar değerine dayalı öğe değerlerinin verimli alınmasını destekleyen bir değişken boyutu kapsayıcı olan ilişkilendirilebilir bir kapsayıcı.
 
 - Çift yönlüdür, çünkü öğelerine erişmek için çift yönlü bir yineleyici sağlar.
 
-- Karma, çünkü elemanları, öğelerin temel değerlerine uygulanan karma işlevin değerine göre kovalar halinde gruplandırılır.
+- Karma değeri, öğelerinin anahtar değerlerine uygulanan bir karma işlevin değerine bağlı olarak demet halinde gruplandığından karma hale getirilir.
 
 - Benzersizdir, çünkü öğelerinin her birinde benzersiz bir anahtar olması gerekir.
 
 - Bir çift ilişkilendirilebilir kapsayıcıdır, çünkü veri öğelerinin değerleri kendi anahtar değerlerinden farklıdır.
 
-- Sağladığı işlevsellik genel olduğundan ve öğe veya anahtar olarak bulunan belirli veri türünden bağımsız olduğundan, sınıf şablonu. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
+- Sınıf şablonu, sağladığı işlevsellik geneldir ve bu nedenle öğe veya anahtar olarak içerilen belirli veri türünden bağımsızdır. Öğeler ve anahtarlar için kullanılacak veri türleri, karşılaştırma işlevi ve ayırıcı ile birlikte bir sınıf şablonunda parametreler olarak belirtilir.
 
-Sıralama üzerinde karma temel avantajı daha fazla verimlilik; başarılı bir karma eklemeler, silmeler gerçekleştirir ve sıralama teknikleri için kapsayıcıdaki eleman sayısının logaritma ile orantılı bir süre ile karşılaştırıldığında sabit ortalama zaman bulur. Bir hash_map bir öğenin değeri, ancak ilişkili anahtar değeri, doğrudan değiştirilebilir. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve eklenen yeni öğelerle ilişkili yeni anahtar değerleri eklenmelidir.
+Sıralama üzerinden karmalamanın başlıca avantajı daha fazla verimlilik; başarılı bir karma değer ekleme, silme işlemleri gerçekleştirir ve sabit ortalama süre içinde, sıralama teknikleri için kapsayıcıdaki öğelerin sayısının logaritmasına kıyasla bir zaman orantılı olarak bulur. Bir hash_map öğenin değeri, ancak ilişkili anahtar değerini değil doğrudan değiştirilebilir. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve eklenen yeni öğelerle ilişkili yeni anahtar değerleri eklenmelidir.
 
-Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Haşdi hashed musociative kaplar arama, ekleme ve kaldırma işlemleri için optimize edilmiştir. Bu işlemleri açıkça destekleyen üye işlevler, iyi tasarlanmış bir karma işlevle kullanıldığında verimlidir ve bunları ortalama sabit olan ve kapsayıcıdaki öğe sayısına bağlı olmayan bir zamanda gerçekleştirir. İyi tasarlanmış karma işlev karma değerlerin tek tip dağılımını üretir ve farklı anahtar değerleri aynı karma değere eşlendiğinde çakışacağı söylenen çarpışma sayısını en aza indirir. En kötü durumda, mümkün olan en kötü karma işlevi ile, işlem sayısı dizideki eleman sayısıyla (doğrusal zaman) orantılıdır.
+Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve ekleme türüne dayalı olmalıdır. Karma olarak ilişkilendirilebilir kapsayıcılar, arama, ekleme ve kaldırma işlemleri için iyileştirilmiştir. Bu işlemleri açıkça destekleyen üye işlevleri, iyi tasarlanmış bir karma işlevi ile kullanıldığında etkili olur ve bunları ortalama Sabitte olan ve kapsayıcıdaki öğelerin sayısına bağımlı olmayan bir zaman içinde gerçekleştiriyor. İyi tasarlanmış bir karma işlevi, karma değerler için Tekdüzen bir dağıtım üretir ve ayrı anahtar değerleri aynı karma değere eşlendiğinde bir çarpışmanın oluşmasına neden olan çakışmaların sayısını en aza indirir. En kötü durumda, mümkün olan en kötü karma işlevi olan işlem sayısı, dizideki öğelerin sayısıyla orantılıdır (doğrusal saat).
 
-Hash_map, değerleri anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında tercih edilen ilişkisel kapsayıcı olmalıdır. Bu tür bir yapı için bir model, örneğin, tanımlar sağlayan ilişkili dize değerleri ile benzersiz olarak oluşan anahtar kelimeler sıralı bir listedir. Bunun yerine, sözcüklerin birden fazla doğru tanımı varsa, böylece anahtarlar benzersiz değildi, o zaman bir hash_multimap tercih edilen kapsayıcı olacaktır. Diğer taraftan, yalnızca sözcük listesi depolanıyorsa, hash_set doğru kapsayıcı olurdu. Sözcüklerin birden çok oluşumuna izin verilirse, hash_multiset uygun kapsayıcı yapısı olacaktır.
+Değerleri, anahtar ile ilişkilendirirken, uygulama tarafından karşılandıkları durumlarda seçeneğin ilişkilendirilebilir kapsayıcısı olmalıdır. hash_map Bu tür bir yapı modeli, ilgili dize değerleri, deyin, tanımlar,,, ve tanımları sağlayan, benzersiz olarak oluşan anahtar sözcüklerin sıralı bir listesidir. Bunun yerine, sözcüklerin birden fazla doğru tanımı vardı, bu nedenle anahtarlar benzersiz değil, bir hash_multimap seçim kapsayıcısı olur. Diğer taraftan, yalnızca sözcüklerin listesi depolanmakta olduğundan, doğru kapsayıcı hash_set. Sözcüklerin birden çok örneğine izin veriliyorsa, hash_multiset uygun kapsayıcı yapısı olur.
 
-hash_map, denetlediği sırayı, sınıfın depolanmış karma [value_compare](../standard-library/value-compare-class.md) *Özellikleri* nesnesini value_compare çağırarak sıralar. Bu depolanan nesneye üye işlev [key_comp](#key_comp)çağırılarak erişilebilir. Böyle bir işlev nesnesi, daha az [hash_compare](../standard-library/hash-compare-class.md) Anahtar hash_compare\<daha az Anahtar>> sınıf<hash_compare bir nesne gibi aynı şekilde olmalıdır. Özellikle, tüm değerler için *Anahtar* türü `Traits` `Key` *Anahtar*, çağrı ( ) `size_t`türü değerlerinin bir dağıtım verir.
+Hash_map, [value_compare](../standard-library/value-compare-class.md)sınıfının saklı bir karma *nitelikleri* nesnesini çağırarak denetlediği diziyi sıralar. Bu saklı nesneye [key_comp](#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi, [hash_compare](../standard-library/hash-compare-class.md)<anahtarı, daha az> olan bir nesne ile aynı şekilde davranmalıdır \<Key> . Özellikle, *anahtar*türündeki tüm *değerler için* , Call `Traits` (), `Key` türündeki değerlerin bir dağılımını verir `size_t` .
 
-Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. İkili yüklem f(x y) iki bağımsız değişken `x` nesnesi `y` ve **doğru** veya **yanlışın**dönüş değeri olan bir işlev nesnesidir. Bir hash_map uygulanan bir sıralama, ikili yüklem inreflexive, antisimetrik ve geçişli ve eşdeğerlik geçişli ise, iki nesne x ve y hem f(x, y) ve f(y, x) yanlış olduğunda eşdeğer olarak tanımlanır sıkı bir zayıf sıralamadır. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
+Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşul f (x y), iki bağımsız değişken nesnesine `x` ve `y` veya dönüş değerine sahip bir işlev nesnesidir **`true`** **`false`** . İkili koşul geri dönüşsüz, antisimetrik ve geçişli ve denklik geçişli ise, hash_map uygulanan bir sıralama katı zayıf bir sıradır, burada iki nesne x ve y, her ikisi de f (x, y) ve f (y, x) false olduğunda denk olarak tanımlanır. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
-Denetlenmiş dizideki öğelerin gerçek sırası karma işlevine, sıralama işlevine ve kapsayıcı nesnesinde depolanan karma tablonun geçerli boyutuna bağlıdır. Karma tablonun geçerli boyutunu belirleyemezsiniz, bu nedenle genel olarak denetitilen dizideki öğelerin sırasını tahmin edemezsiniz. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
+Denetlenen dizideki öğelerin gerçek sırası, karma işleve, sıralama işlevine ve kapsayıcı nesnesinde depolanan karma tablonun geçerli boyutuna bağlıdır. Karma tablonun geçerli boyutunu belirleyemez, bu nedenle denetimli dizideki öğelerin sırasını genel olarak tahmin edemezsiniz. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
 
-hash_map sınıfı tarafından sağlanan yineleme iki yönlü bir yinelemedir, ancak sınıf üye işlevleri [şablon](#insert) parametreleri olarak alan sürümlere [sahip](#hash_map) hash_map, işlevsellik gereksinimleri çift yönlü yineleyiciler sınıfı tarafından garanti edilenden daha az olan daha zayıf bir giriş yinelemesi alır. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en az işlevsellik kümesidir, ancak sınıf üye işlevleri bağlamında bir dizi `[First, Last)` yineleyici hakkında anlamlı bir şekilde konuşabilmek yeterlidir.
+Hash_map Sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, ancak [Insert](#insert) ve [hash_map](#hash_map) sınıf üyesi işlevleri, şablon parametresi olarak daha zayıf bir giriş yineleyicisini alan, işlevsellik gereksinimleri çift yönlü yineleyicilerin sınıfına göre garantiden daha düşük olan sürümlere sahiptir. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelere göre ilgili bir aile biçimlendirir. Her yineleyici kavramının kendi gereksinimler kümesi vardır ve bunlarla çalışan algoritmaların kendi varsayımlarını yineleyici türü tarafından sağlanan gereksinimlerle sınırlaması gerekir. Bir giriş yineleyicinin bazı nesnelere başvurusunun kaldırılacağı ve dizideki sonraki yineleyiciye artırılabileceği varsayılabilir. Bu en düşük işlevsellik kümesidir, ancak `[First, Last)` sınıf üye işlevleri bağlamında bir dizi yineleyiciler hakkında anlamlı bir şekilde konuşabilmek yeterlidir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Hash_map](#hash_map)|Boş olan `hash_map` veya başka `hash_map`bir şeyin tamamının veya bir kısmının kopyası olan bir yapı.|
+|[hash_map](#hash_map)|`hash_map`Boş olan veya bir kısmının tümünün veya bir kısmının kopyası olan oluşturur `hash_map` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[Allocator_type](#allocator_type)|Nesnenin sınıfını `allocator` `hash_map` temsil eden bir tür.|
-|[const_iterator](#const_iterator)|Bir öğeyi okuyabilen çift yönlü bir yineleme `const` sağlayan `hash_map`bir tür.|
-|[Const_pointer](#const_pointer)|Bir **const** öğesine işaretçi sağlayan `hash_map`bir tür .|
-|[const_reference](#const_reference)|Const **işlemleri** okumak ve gerçekleştirmek için bir `hash_map` **const** öğesinde depolanan bir öğeye başvuru sağlayan bir tür.|
-|[Const_reverse_iterator](#const_reverse_iterator)|Herhangi bir const öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür. **const** `hash_map`|
-|[difference_type](#difference_type)|Yineleyiciler tarafından işaret edilen öğeler arasındaki aralıktaki bir `hash_map` aralığın öğelerinin sayısını temsil etmek için kullanılabilecek imzalı bir tamsayı türü.|
-|[Yineleyici](#iterator)|Bir 'deki herhangi bir öğeyi okuyabilen veya değiştirebilen `hash_map`çift yönlü bir yineleme sağlayan bir tür.|
-|[Key_compare](#key_compare)|İki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi `hash_map`sağlayan bir tür.|
-|[Key_type](#key_type)|Bir `hash_map`tür, .'ın her öğesini oluşturan sıralama anahtar nesnesini açıklar.|
-|[mapped_type](#mapped_type)|Bir 'de depolanan veri türünü `hash_map`temsil eden bir tür|
-|[pointer](#pointer)|Bir öğedeki bir öğeye işaretçi sağlayan bir `hash_map`tür|
-|[Başvuru](#reference)|Bir 'de depolanan bir öğeye `hash_map`başvuru sağlayan bir tür|
-|[Reverse_iterator](#reverse_iterator)|Ters bir öğedeki bir öğeyi okuyabilen veya değiştirebilen `hash_map`çift yönlü bir yineleme sağlayan bir tür.|
-|[size_type](#size_type)|Bir 'deki öğe sayısını temsil eden imzasız `hash_map`bir tamsayı türü|
-|[value_type](#value_type)|İki öğeyi sıraanahtarları olarak karşılaştırabilen bir işlev nesnesi `hash_map`sağlayan bir tür.|
+|[allocator_type](#allocator_type)|Nesnenin sınıfını temsil eden bir tür `allocator` `hash_map` .|
+|[const_iterator](#const_iterator)|İçindeki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `hash_map` .|
+|[const_pointer](#const_pointer)|İçindeki bir öğeye işaretçi sağlayan bir tür **`const`** `hash_map` .|
+|[const_reference](#const_reference)|**`const`** `hash_map` İşlem okumak ve gerçekleştirmek için içinde depolanan bir öğeye başvuru sağlayan bir tür **`const`** .|
+|[const_reverse_iterator](#const_reverse_iterator)|İçindeki herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `hash_map` .|
+|[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü `hash_map` .|
+|[iden](#iterator)|İçindeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür `hash_map` .|
+|[key_compare](#key_compare)|İçindeki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür `hash_map` .|
+|[key_type](#key_type)|Bir tür, öğesinin her öğesini oluşturan sıralama anahtarı nesnesini açıklar `hash_map` .|
+|[mapped_type](#mapped_type)|İçinde depolanan veri türünü temsil eden bir tür `hash_map` .|
+|[pointer](#pointer)|İçindeki bir öğeye işaretçi sağlayan bir tür `hash_map` .|
+|[başvurunun](#reference)|İçinde depolanan bir öğeye başvuru sağlayan bir tür `hash_map` .|
+|[reverse_iterator](#reverse_iterator)|Ters çevrilen bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür `hash_map` .|
+|[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `hash_map` .|
+|[value_type](#value_type)|İçinde göreli sıralarını belirlemede iki öğeyi sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür `hash_map` .|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[at](#at)|Belirli bir anahtar `hash_map` değeri olan bir öğeyi bulur.|
-|[Başlamak](#begin)|'deki ilk öğeyi ele alan bir `hash_map`yineleyici döndürür.|
-|[cbegin](#cbegin)|'deki ilk öğeyi ele alan bir const yineleyici döndürür. `hash_map`|
-|[cend](#cend)|Bir `hash_map`'deki son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.|
-|[Temizleyin](#clear)|Bir' `hash_map`nin tüm öğelerini siler.|
-|[Sayısı](#count)|Anahtarı parametre yle `hash_map` belirtilen bir anahtarla eşleşen bir öğedeki öğe sayısını döndürür.|
-|[crbegin](#crbegin)|Ters bir ilk öğeyi ele alan bir const yineleyici döndürür. `hash_map`|
-|[crend](#crend)|Ters bir önceki son öğeyi yerine getiren konumu gideren bir `hash_map`const yineleyici döndürür.|
-|[emplace](#emplace)|Yerinde inşa edilmiş bir öğeyi `hash_map`bir .|
-|[emplace_hint](#emplace_hint)|Yerinde `hash_map`oluşturulmuş bir öğeyi yerleştirme ipucuyla ekler.|
-|[empty](#empty)|A boşsa `hash_map` sınar.|
-|[Son -unda](#end)|Bir 'deki son öğeyi yerine getiren konumu adresleyen `hash_map`bir yineleyici döndürür.|
-|[equal_range](#equal_range)|Bir çift yineleyiciyi, sırasıyla, belirtilen bir `hash_map` anahtardan büyük bir anahtarla ilk öğeye ve `hash_map` anahtara eşit veya daha büyük bir anahtarla ilk öğeye döndürür.|
-|[Silmek](#erase)|Belirli `hash_map` konumlardaki bir öğeyi veya bir dizi öğeyi kaldırır|
-|[find](#find)|Belirtilen bir anahtara eşdeğer anahtara sahip bir `hash_map` öğedeki öğenin konumunu ele alan bir yineleyici döndürür.|
-|[Get_allocator](#get_allocator)|Oluşturmak için kullanılan `allocator` nesnenin bir `hash_map`kopyasını döndürür.|
-|[Ekle](#insert)|Bir öğeye veya bir dizi öğeye `hash_map`bir öğe ekler.|
-|[Key_comp](#key_comp)|Bir yineleyiciyi, belirtilen bir anahtara eşit veya daha büyük bir anahtar değeriolan ilk `hash_map` öğeye döndürür.|
-|[lower_bound](#lower_bound)|Bir yineleyiciyi, belirtilen bir anahtara eşit veya daha büyük bir anahtar değeriolan ilk `hash_map` öğeye döndürür.|
-|[max_size](#max_size)|Maksimum uzunluğu `hash_map`verir.|
-|[rbegin](#rbegin)|Ters bir ilk öğeyi ele alan bir `hash_map`yineleyici döndürür.|
-|[Rend](#rend)|Ters çevrilmiş bir son öğedeki son öğeyi yerine `hash_map`getiren konumu adresleyen bir yineleyici döndürür.|
-|[Boyutu](#size)|`hash_map`'deki öğe sayısını verir.|
-|[Takas](#swap)|İki `hash_map`s'nin öğelerini değiştirir.|
-|[upper_bound](#upper_bound)|Bir yineleyiciyi, belirtilen bir anahtardan daha büyük bir anahtar değerine sahip olan ilk `hash_map` öğeye döndürür.|
-|[value_comp](#value_comp)|Bir `hash_map`' deki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
+|[hızı](#at)|İçinde `hash_map` belirtilen anahtar değeri ile bir öğesi bulur.|
+|[başladı](#begin)|İçindeki ilk öğeyi adresleyen bir yineleyici döndürür `hash_map` .|
+|[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyen bir const yineleyici döndürür `hash_map` .|
+|[cend](#cend)|İçindeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür `hash_map` .|
+|[lediğiniz](#clear)|Tüm öğelerini siler `hash_map` .|
+|[biriktirme](#count)|Bir `hash_map` anahtarı parametre belirtilen anahtarla eşleşen bir öğe sayısını döndürür.|
+|[crbegin](#crbegin)|Ters çevrilen ilk öğeyi adresleyen bir const yineleyici döndürür `hash_map` .|
+|[crend](#crend)|Ters çevrilen son öğeden sonraki konumu ele alan bir const yineleyici döndürür `hash_map` .|
+|[Emplace](#emplace)|İçinde oluşturulan bir öğesi ekler `hash_map` .|
+|[emplace_hint](#emplace_hint)|Bir yerleştirme ipucuyla birlikte, içine oluşturulmuş bir öğe ekler `hash_map` .|
+|[empty](#empty)|`hash_map`Boşsa, sınar.|
+|[erer](#end)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_map` .|
+|[equal_range](#equal_range)|`hash_map`Belirtilen anahtardan daha büyük bir anahtarla ve bir anahtarla `hash_map` eşit veya ondan daha büyük olan bir anahtarla, içindeki ilk öğeye, sırasıyla bir çift yineleyiciler döndürür.|
+|[silme](#erase)|Belirtilen konumlardan bir öğeyi veya öğe aralığını kaldırır `hash_map`|
+|[find](#find)|İçindeki bir öğenin `hash_map` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
+|[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnenin bir kopyasını döndürür `hash_map` .|
+|[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `hash_map` .|
+|[key_comp](#key_comp)|Bir yineleyiciyi `hash_map` , belirtilen anahtardan daha büyük veya ona eşit olan bir anahtar değeri ile birlikte ilk öğesine döndürür.|
+|[lower_bound](#lower_bound)|Bir yineleyiciyi `hash_map` , belirtilen anahtardan daha büyük veya ona eşit olan bir anahtar değeri ile birlikte ilk öğesine döndürür.|
+|[max_size](#max_size)|Maksimum uzunluğunu döndürür `hash_map` .|
+|[rbegin](#rbegin)|Ters çevrilen ilk öğeyi adresleyen bir yineleyici döndürür `hash_map` .|
+|[rend](#rend)|Ters çevrilen son öğeden sonraki konumu ele alan bir yineleyici döndürür `hash_map` .|
+|[boyutla](#size)|İçindeki öğelerin sayısını döndürür `hash_map` .|
+|[Kur](#swap)|İki öğenin öğelerini değiş tokuş eder `hash_map` .|
+|[upper_bound](#upper_bound)|Bir yineleyiciyi `hash_map` belirtilen anahtardan daha büyük bir anahtar değeri olan ilk öğesine döndürür.|
+|[value_comp](#value_comp)|İçindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `hash_map` .|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operatör&#91;&#93;](#op_at)|Bir öğeyi belirli `hash_map` bir anahtar değeri olan bir öğeye ekler.|
-|[hash_map::operator=](#op_eq)|Bir `hash_map` öğenin öğelerini başka `hash_map`bir kopyayla değiştirir.|
+|[işleç&#91;&#93;](#op_at)|`hash_map`Belirtilen anahtar değeri ile öğesine bir öğesi ekler.|
+|[hash_map:: operator =](#op_eq)|Öğesinin öğelerini `hash_map` başka bir kopyasıyla değiştirir `hash_map` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<hash_map>
+**Üst bilgi:**\<hash_map>
 
 **Ad alanı:** stdext
 
-## <a name="hash_mapallocator_type"></a><a name="allocator_type"></a>hash_map:allocator_type
+## <a name="hash_mapallocator_type"></a><a name="allocator_type"></a>hash_map:: allocator_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map nesnesinin ayırıcı sınıfını temsil eden bir tür.
+Hash_map nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::allocator_type allocator_type;
@@ -239,14 +239,14 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 ### <a name="example"></a>Örnek
 
-Get_allocator için [get_allocator](#get_allocator) örnek bkz. `allocator_type`
+Bir örnek için bkz. [get_allocator](#get_allocator) örneği `allocator_type` .
 
-## <a name="hash_mapat"></a><a name="at"></a>hash_map::at
+## <a name="hash_mapat"></a><a name="at"></a>hash_map:: at
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Belirli bir anahtar değeri olan bir hash_map öğesini bulur.
+Hash_map, belirtilen anahtar değeri olan bir öğe bulur.
 
 ```cpp
 Type& at(const Key& key);
@@ -258,15 +258,15 @@ const Type& at(const Key& key) const;
 
 |Parametre|Açıklama|
 |-|-|
-|*anahtar*|Bulunacak öğenin anahtar değeri.|
+|*anahtar*|Bulunan öğenin anahtar değeri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bulunan öğenin veri değerine bir başvuru.
+Bulunan öğenin veri değerine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken anahtar değeri bulunamazsa, işlev [sınıf out_of_range](../standard-library/out-of-range-class.md)bir nesne atar.
+Bağımsız değişken anahtar değeri bulunamazsa, işlev sınıf [Out_of_range sınıfından](../standard-library/out-of-range-class.md)bir nesne oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -295,12 +295,12 @@ int main( )
 }
 ```
 
-## <a name="hash_mapbegin"></a><a name="begin"></a>hash_map::başlangıç
+## <a name="hash_mapbegin"></a><a name="begin"></a>hash_map:: Begin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map'daki ilk öğeyi ele alan bir yineleyici döndürür.
+Hash_map ilk öğeyi adresleyen bir yineleyici döndürür.
 
 ```cpp
 const_iterator begin() const;
@@ -310,7 +310,7 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-boş bir hash_map hash_map veya konumuilk öğeyi ele alan çift yönlü bir yineleyici.
+Hash_map ilk öğeyi adresleyen çift yönlü yineleyici veya konum boş bir hash_map başarılı oluyor.
 
 ### <a name="example"></a>Örnek
 
@@ -356,12 +356,12 @@ The first element of hm1 is 0.
 The first element of hm1 is now 1.
 ```
 
-## <a name="hash_mapcbegin"></a><a name="cbegin"></a>hash_map::cbegin
+## <a name="hash_mapcbegin"></a><a name="cbegin"></a>hash_map:: cbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map ilk öğeyi ele alan bir const yineleyici döndürür.
+Hash_map ilk öğeyi adresleyen bir const yineleyici döndürür.
 
 ```cpp
 const_iterator cbegin() const;
@@ -369,7 +369,7 @@ const_iterator cbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[hash_map'daki](../standard-library/hash-map-class.md) ilk öğeyi veya boş `hash_map`bir konumdan sonra gelen bir konst çift yönlü yineleme.
+[Hash_map](../standard-library/hash-map-class.md) ilk öğeyi adresleyen bir const çift yönlü yineleyici veya bir boş olan konum `hash_map` .
 
 ### <a name="example"></a>Örnek
 
@@ -400,12 +400,12 @@ int main( )
 The first element of hm1 is 2.
 ```
 
-## <a name="hash_mapcend"></a><a name="cend"></a>hash_map::cend
+## <a name="hash_mapcend"></a><a name="cend"></a>hash_map:: cend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Hash_map son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.
+Hash_map son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
 ```cpp
 const_iterator cend() const;
@@ -413,13 +413,13 @@ const_iterator cend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Bir hash_map](../standard-library/hash-map-class.md)son öğeyi yerine getiren konumu gideren bir const çift yönlü yineleme. Eğer `hash_map` boşsa, `hash_map::cend == hash_map::begin`o zaman.
+Bir [hash_map](../standard-library/hash-map-class.md)son öğeden sonraki konumu ele alan bir const çift yönlü Yineleyici. `hash_map`Boşsa, `hash_map::cend == hash_map::begin` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`bir yineleyicinin sonuna ulaşıp ulaşmadığını test `hash_map`etmek için kullanılır.
+`cend`, bir yineleyicinin sonuna kadar ulaşılmadığını test etmek için kullanılır `hash_map` .
 
-Döndürülen `cend` değer dereferenced olmamalıdır.
+Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -451,12 +451,12 @@ int main( )
 The value of last element of hm1 is 30.
 ```
 
-## <a name="hash_mapclear"></a><a name="clear"></a>hash_map::açık
+## <a name="hash_mapclear"></a><a name="clear"></a>hash_map:: Clear
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-bir hash_map tüm öğelerini siler.
+Hash_map tüm öğelerini siler.
 
 ```cpp
 void clear();
@@ -466,7 +466,7 @@ void clear();
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, hash_map::clear üye işlevinin kullanımını göstermektedir.
+Aşağıdaki örnek hash_map:: Clear üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_map_clear.cpp
@@ -501,12 +501,12 @@ The size of the hash_map is initially 2.
 The size of the hash_map after clearing is 0.
 ```
 
-## <a name="hash_mapconst_iterator"></a><a name="const_iterator"></a>hash_map:const_iterator
+## <a name="hash_mapconst_iterator"></a><a name="const_iterator"></a>hash_map:: const_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map bir **const** öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür.
+Hash_map bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
@@ -514,24 +514,24 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `const_iterator` tür, bir öğenin değerini değiştirmek için kullanılamaz.
+Bir tür `const_iterator` , bir öğenin değerini değiştirmek için kullanılamaz.
 
-hash_map `const_iterator` tarafından tanımlanan value_type nesneleri olan [value_type](#value_type), yani tür `pair< const Key, Type >`, ilk üyesi öğenin anahtarı dır ve ikinci üyesi öğe tarafından tutulan eşlenen datum olan öğelere işaret eder.
+`const_iterator`Tarafından tanımlanan hash_map, [value_type](#value_type) `pair< const Key, Type >` ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesneleri olan öğeleri gösterir.
 
-hash_map bir `const_iterator` `cIter` öğeyi işaret eden bir öğeyi `->` belirtmek için işleci kullanın.
+Bir hash_map bir `const_iterator` `cIter` öğeyi işaret etmek için `->` işlecini kullanın.
 
-Öğe için anahtarın değerine erişmek `cIter->first`için, 'ye `(*cIter).first`eşdeğer olan ' ı kullanın. Öğe için eşlenen datum değerine erişmek için, 'ye `cIter->second` `(*cIter).second`eşdeğer olan ' ı kullanın.
+Öğesinin anahtar değerine erişmek için, `cIter->first` ile eşdeğer olan öğesini kullanın `(*cIter).first` . Öğesi için eşlenen veri değerine erişmek için, `cIter->second` ile eşdeğer olan öğesini kullanın `(*cIter).second` .
 
 ### <a name="example"></a>Örnek
 
-Bir `const_iterator`örnek kullanarak [başlamak](#begin) için örneğe bakın.
+Bir [örnek için bkz](#begin) . using örneği `const_iterator` .
 
-## <a name="hash_mapconst_pointer"></a><a name="const_pointer"></a>hash_map:const_pointer
+## <a name="hash_mapconst_pointer"></a><a name="const_pointer"></a>hash_map:: const_pointer
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-bir hash_map bir **const** öğesi için bir işaretçi sağlayan bir tür.
+Hash_map bir öğeye işaretçi sağlayan bir tür **`const`** .
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_pointer const_pointer;
@@ -539,16 +539,16 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `const_pointer` tür, bir öğenin değerini değiştirmek için kullanılamaz.
+Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanılamaz.
 
-Çoğu durumda, bir hash_map nesnesindeki öğelere erişmek için bir [yineleyici](#iterator) kullanılmalıdır.
+Çoğu durumda, bir [yineleyici](#iterator) hash_map nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="hash_mapconst_reference"></a><a name="const_reference"></a>hash_map:const_reference
+## <a name="hash_mapconst_reference"></a><a name="const_reference"></a>hash_map:: const_reference
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-**Const** işlemleri okumak ve gerçekleştirmek için hash_map depolanan **bir const** öğesine başvuru sağlayan bir tür.
+**`const`** İşlemleri okumak ve gerçekleştirmek için bir hash_map depolanan öğeye başvuru sağlayan bir tür **`const`** .
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
@@ -599,12 +599,12 @@ The key of the first element in the hash_map is 1.
 The data value of the first element in the hash_map is 10.
 ```
 
-## <a name="hash_mapconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>hash_map::const_reverse_iterator
+## <a name="hash_mapconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>hash_map:: const_reverse_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map herhangi bir **const** öğeyi okuyabilen çift yönlü bir yineleme sağlayan bir tür.
+Hash_map herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse)iterator const_reverse_iterator;
@@ -612,24 +612,24 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `const_reverse_iterator` tür bir öğenin değerini değiştiremez ve hash_map ters olarak yinelemek için kullanılır.
+Bir tür, `const_reverse_iterator` bir öğenin değerini değiştiremez ve hash_map ters bir şekilde yinelemek için kullanılır.
 
-hash_map `const_reverse_iterator` tarafından tanımlanan value_type nesneleri olan elemanlar [için](#value_type) `pair` \< tanımlanan , bu tür **const Anahtar, Tip**>, ilk üyesi öğenin anahtarı ve ikinci üyesi öğe tarafından düzenlenen eşlenen datum olduğunu.
+`const_reverse_iterator`Tarafından tanımlanan hash_map, [value_type](#value_type) `pair` \< **const Key, Type**> ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesneleri olan öğeleri gösterir.
 
-hash_map bir `const_reverse_iterator` `crIter` öğeyi işaret eden bir öğeyi **->** belirtmek için işleci kullanın.
+Bir hash_map bir `const_reverse_iterator` `crIter` öğeyi işaret etmek için **->** işlecini kullanın.
 
-Öğe için anahtarın değerine erişmek `crIter`  -> için, **önce**(\* `crIter`) **.first'e**eşdeğer olan ' ı kullanın. Öğe için eşlenen datum değerine erişmek için, `crIter`  ->  **ikinci**, eşdeğer\* `crIter`( ). **ilk**.
+Öğesi için anahtar değerine erişmek üzere, `crIter`  ->  **ilk**olarak ( \* `crIter` ) **. önce**kullanın. Öğesi için eşlenen veri değerine erişmek için, `crIter`  ->  () eşdeğeri olan **ikincisini**kullanın \* `crIter` . **ilk**olarak.
 
 ### <a name="example"></a>Örnek
 
-Nasıl beyan edilip kullanılacağına bir örnek için `const_reverse_iterator` [rend](#rend) örneğine bakın.
+' In nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için bkz. [rend](#rend) için örneğe bakın `const_reverse_iterator` .
 
-## <a name="hash_mapcount"></a><a name="count"></a>hash_map::say
+## <a name="hash_mapcount"></a><a name="count"></a>hash_map:: Count
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Anahtarı parametre yle belirtilen anahtarla eşleşen bir hash_map öğe sayısını verir.
+Anahtarı parametre tarafından belirtilen anahtarla eşleşen bir hash_map öğe sayısını döndürür.
 
 ```cpp
 size_type count(const Key& key) const;
@@ -637,24 +637,24 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*\
-hash_map eşleşecek öğelerin temel değeri.
+*anahtar*\
+Hash_map eşleştirilecek öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-1 hash_map, sıralama anahtarı parametre anahtarıyla eşleşen bir öğe içeriyorsa; 0 hash_map eşleşen bir anahtar ile bir öğe içermiyorsa.
+hash_map sıralama anahtarı parametre anahtarıyla eşleşen bir öğe içeriyorsa, 1. hash_map eşleşen bir anahtara sahip bir öğe içermiyorsa 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev aralıktaki *x* eleman sayısını döndürür
+Üye işlevi aralıktaki *x* öğelerinin sayısını döndürür
 
-\[lower_bound (*anahtar*), upper_bound (*anahtar*)
+\[lower_bound (*anahtar*), upper_bound (*anahtar*))
 
-benzersiz bir bağdaştırıcı konteyner olan hash_map durumunda 0 veya 1'dir.
+benzersiz bir ilişkilendirilebilir kapsayıcı olan hash_map durumunda 0 veya 1 ' dir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, hash_map::count üye işlevinin kullanımını göstermektedir.
+Aşağıdaki örnek hash_map:: Count üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_map_count.cpp
@@ -696,12 +696,12 @@ The number of elements in hm1 with a sort key of 2 is: 1.
 The number of elements in hm1 with a sort key of 3 is: 0.
 ```
 
-## <a name="hash_mapcrbegin"></a><a name="crbegin"></a>hash_map::crbegin
+## <a name="hash_mapcrbegin"></a><a name="crbegin"></a>hash_map:: crbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Ters hash_map ilk öğeyi ele alan bir const yineleyici döndürür.
+Ters çevrilen hash_map ilk öğeyi adresleyen bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crbegin() const;
@@ -709,15 +709,15 @@ const_reverse_iterator crbegin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters [hash_map](../standard-library/hash-map-class.md) ilk öğeyi ele alan veya tersine çevrilmemiş `hash_map`son öğeyi ele alan const ters yönlü bir yineleme.
+Ters çevrilen bir [hash_map](../standard-library/hash-map-class.md) ilk öğeyi ele almak veya geri çevrilmede son öğenin ne olduğunu ele almak için bir const ters çift yönlü Yineleyici `hash_map` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin`bir ile kullanılır [gibi](#begin) ters hash_map ile `hash_map`kullanılır .
+`crbegin`, [BEGIN](#begin) ile birlikte kullanılan bir ters hash_map ile kullanılır `hash_map` .
 
-İade değeri ile `crbegin` `hash_map` nesne değiştirilemez.
+Dönüş değeri ile `crbegin` `hash_map` nesne değiştirilemez.
 
-`crbegin``hash_map` geriye doğru doğrulamak için kullanılabilir.
+`crbegin`, geriye doğru yinelemek için kullanılabilir `hash_map` .
 
 ### <a name="example"></a>Örnek
 
@@ -748,12 +748,12 @@ int main( )
 The first element of the reversed hash_map hm1 is 3.
 ```
 
-## <a name="hash_mapcrend"></a><a name="crend"></a>hash_map::crend
+## <a name="hash_mapcrend"></a><a name="crend"></a>hash_map:: crend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Ters hash_map son öğeyi yerine getiren konumu gideren bir const yineleyici döndürür.
+Ters çevrilen hash_map son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator crend() const;
@@ -761,17 +761,17 @@ const_reverse_iterator crend() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters [hash_map](../standard-library/hash-map-class.md) 'deki son öğeyi başaran konumu (ters çevrilmemiş `hash_map`ilk öğeden önce gelen konum) gideren const ters çift yönlü bir yineleme.
+Ters çevrilen bir [hash_map](../standard-library/hash-map-class.md) (geri çevrilme içindeki ilk öğeden önce gelen konum) izleyen konumu ele alan bir sabit ters çift yönlü Yineleyici `hash_map` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`hash_map gibi ters `hash_map` bir ile [kullanılır::end](#end) `hash_map`ile kullanılır .
+`crend`, bir ters ile birlikte kullanıldığında `hash_map` [hash_map:: End](#end) ile birlikte kullanılır `hash_map` .
 
-İade değeri ile `crend` `hash_map` nesne değiştirilemez.
+Dönüş değeri ile `crend` `hash_map` nesne değiştirilemez.
 
-`crend`ters yineleyicinin sonuna ulaşıp ulaşmadığını test etmek için `hash_map`kullanılabilir.
+`crend`, geriye doğru bir yineleyicinin sonuna ulaşılıp ulaşılmadığını test etmek için kullanılabilir `hash_map` .
 
-Döndürülen `crend` değer dereferenced olmamalıdır.
+Tarafından döndürülen değer `crend` başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -803,12 +803,12 @@ int main( )
 The last element of the reversed hash_map hm1 is 3.
 ```
 
-## <a name="hash_mapdifference_type"></a><a name="difference_type"></a>hash_map::difference_type
+## <a name="hash_mapdifference_type"></a><a name="difference_type"></a>hash_map::d ifference_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Yineleyiciler tarafından işaret edilen öğeler arasında bir aralıkta bir hash_map öğelerinin sayısını temsil etmek için kullanılabilecek imzalı bir tamsayı türü.
+Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki hash_map öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::difference_type difference_type;
@@ -873,12 +873,12 @@ The keys of the mapped elements are: 1 2 3.
 The values of the mapped elements are: 10 20 20.
 ```
 
-## <a name="hash_mapemplace"></a><a name="emplace"></a>hash_map::emplace
+## <a name="hash_mapemplace"></a><a name="emplace"></a>hash_map:: emplace
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Yerinde inşa edilmiş bir öğeyi hash_map ekler.
+Bir hash_map içinde oluşturulmuş bir öğe ekler.
 
 ```cpp
 template <class ValTy>
@@ -891,17 +891,17 @@ emplace(
 
 |Parametre|Açıklama|
 |-|-|
-|*Val*|Zaten bu öğeyi (veya daha genel olarak, anahtarı `hash_map` eşdeğer sıralanmış bir öğe) içermediği [sürece, hash_map](../standard-library/hash-map-class.md) eklenecek bir öğeyi taşımak için kullanılan değer.|
+|*Acil*|[hash_map](../standard-library/hash-map-class.md) `hash_map` Zaten bu öğeyi (ya da daha genel olarak, anahtarı equivalently sıralı bir öğe) içermiyorsa, bir öğeyi hash_map içine eklenecek şekilde taşımak için kullanılan değer.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye `emplace` işlev, ekleme yapılmışsa bool bileşeni doğru döndüren ve `hash_map` anahtar siparişte eşdeğer değere sahip bir öğe yi içeren ve yineleme bileşeni yeni bir öğenin eklendiği veya öğenin bulunduğu adresi döndüren bir öğe varsa yanlış olan bir çifti döndürür.
+`emplace`Üye işlevi, bir ekleme yapılırsa bool bileşeni true değeri döndüren bir çift döndürür ve `hash_map` zaten anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa ve yineleyici bileşeni, yeni bir öğenin eklendiği veya öğenin zaten bulunduğu yere bir adresi döndürürse.
 
-Bu üye işlev tarafından döndürülen `pr` bir çiftin yineleyici `pr.first`bileşenine erişmek için, `*(pr.first)`bunu kullanmak ve dereference için, kullanın . Bu üye işlev tarafından döndürülen bir çiftin `pr` **bool** bileşenine erişmek için, bunu kullanmak `pr.second`ve dereference için, kullanın `*(pr.second)`.
+Bu üye işlevi tarafından döndürülen bir çiftin Yineleyici bileşenine erişmek için, `pr` kullanın ve öğesini kullanın `pr.first` `*(pr.first)` . **`bool`** `pr` Bu üye işlevi tarafından döndürülen bir çiftin bileşenine erişmek için, kullanın ve öğesini kullanın `pr.second` `*(pr.second)` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğenin [hash_map::value_type](#value_type) bir çifttir, böylece bir öğenin değeri, ilk bileşen anahtar değerine eşit, ikinci bileşen ise öğenin veri değerine eşit olan sıralı bir çift olacaktır.
+Bir öğenin [hash_map:: value_type](#value_type) bir çifttir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
 ### <a name="example"></a>Örnek
 
@@ -932,12 +932,12 @@ After the emplace insertion, hm1 contains:
 1 => a
 ```
 
-## <a name="hash_mapemplace_hint"></a><a name="emplace_hint"></a>hash_map:emplace_hint
+## <a name="hash_mapemplace_hint"></a><a name="emplace_hint"></a>hash_map:: emplace_hint
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir yerleşim ipucu ile, bir hash_map içine yerinde inşa edilmiş bir öğe ekler.
+Yerleştirme ipucuyla birlikte hash_map oluşturulan bir öğe ekler.
 
 ```cpp
 template <class ValTy>
@@ -950,18 +950,18 @@ iterator emplace_hint(
 
 |Parametre|Açıklama|
 |-|-|
-|*Val*|Zaten bu öğeyi (veya daha genel olarak, anahtarı `hash_map` eşdeğer sıralanmış bir öğe) içermediği [sürece, hash_map](../standard-library/hash-map-class.md) eklenecek bir öğeyi taşımak için kullanılan değer.|
-|*_Where*|Doğru ekleme noktasını aramaya başlamak için yerle ilgili bir ipucu.|
+|*Acil*|[hash_map](../standard-library/hash-map-class.md) `hash_map` Zaten bu öğeyi (ya da daha genel olarak, anahtarı equivalently sıralı bir öğe) içermiyorsa, bir öğeyi hash_map içine eklenecek şekilde taşımak için kullanılan değer.|
+|*_Where*|Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[hash_multimap::emplace](../standard-library/hash-multimap-class.md#emplace) üye işlevi, yeni öğenin eklendiği `hash_map`veya eşdeğer sıralamaya sahip varolan öğenin bulunduğu konumu gösteren bir yineleyici döndürür.
+[Hash_multimap:: emplace](../standard-library/hash-multimap-class.md#emplace) üye işlevi, yeni öğenin içine eklendiği konuma `hash_map` veya eşdeğer sıralamaya sahip olan öğenin bulunduğu konuma işaret eden bir yineleyici döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğenin [hash_map::value_type](#value_type) bir çifttir, böylece bir öğenin değeri, ilk bileşen anahtar değerine eşit, ikinci bileşen ise öğenin veri değerine eşit olan sıralı bir çift olacaktır.
+Bir öğenin [hash_map:: value_type](#value_type) bir çifttir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
-Ekleme noktası hemen *_Where*takip ederse, logaritmik zaman yerine, amortismana tabi sabit zaman oluşabilir.
+Ekleme noktası *_Where*hemen ardından, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak meydana gelebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -992,12 +992,12 @@ After the emplace insertion, hm1 contains:
 1 => a
 ```
 
-## <a name="hash_mapempty"></a><a name="empty"></a>hash_map::boş
+## <a name="hash_mapempty"></a><a name="empty"></a>hash_map:: boş
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map boşolup hash_map.
+Hash_map boş ise sınar.
 
 ```cpp
 bool empty() const;
@@ -1005,7 +1005,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hash_map boşsa **doğrudur;** hash_map boş değilse **yanlış.**
+**`true`** hash_map boşsa; **`false`** hash_map boş değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1043,12 +1043,12 @@ The hash_map hm1 is not empty.
 The hash_map hm2 is empty.
 ```
 
-## <a name="hash_mapend"></a><a name="end"></a>hash_map::sonu
+## <a name="hash_mapend"></a><a name="end"></a>hash_map:: End
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Hash_map son öğeyi yerine getiren konumu adresleyen bir yineleyici döndürür.
+Hash_map son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_iterator end() const;
@@ -1058,13 +1058,13 @@ iterator end();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hash_map son öğesini yerine getiren konumu ele alan çift yönlü bir yineleyici. hash_map boşsa, hash_map::end == hash_map::begin.
+Bir hash_map son öğeden sonraki konumu ele alan çift yönlü bir yineleyici. Hash_map boşsa, hash_map:: End = = hash_map:: BEGIN.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`end`bir yineleyicinin hash_map sonuna ulaşıp ulaşmadığını test etmek için kullanılır.
+`end`, bir yineleyicinin hash_map sonuna kadar ulaşılıp ulaşmadığını test etmek için kullanılır.
 
-Döndürülen `end` değer dereferenced olmamalıdır.
+Tarafından döndürülen değer `end` başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -1114,12 +1114,12 @@ The value of last element of hm1 is 30.
 The value of last element of hm1 is now 20.
 ```
 
-## <a name="hash_mapequal_range"></a><a name="equal_range"></a>hash_map:equal_range
+## <a name="hash_mapequal_range"></a><a name="equal_range"></a>hash_map:: equal_range
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir hash_map ilk öğeye sırasıyla bir çift yineleyici, belirtilen bir anahtardan büyük bir anahtarla ve anahtara eşit veya daha büyük bir anahtarla hash_map ilk öğeye döndürür.
+Belirtilen anahtardan daha büyük bir anahtarla ve anahtardan daha büyük veya ona eşit olan bir anahtarla hash_map ilk öğe olan bir hash_map yineleyicilerin bir çiftini döndürür.
 
 ```cpp
 pair <const_iterator, const_iterator> equal_range (const Key& key) const;
@@ -1129,14 +1129,14 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*\
-Bağımsız değişken anahtar değeri, aranmakta olan hash_map bir öğenin tür anahtarıyla karşılaştırılacak.
+*anahtar*\
+Aranan hash_map öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlki anahtarın [lower_bound,](#lower_bound) ikincisi anahtarın [upper_bound](#upper_bound) olacak şekilde bir çift yineleyici.
+Birincisi anahtarın [lower_bound](#lower_bound) , ikincisi ise anahtarın [upper_bound](#upper_bound) olan yinelemelerin bir çiftinden biridir.
 
-Üye işlev tarafından döndürülen bir `pr` çiftin ilk yineleyicisine `pr`erişmek için. **ilk** ve alt sınır yineleyici dereference \*için, kullanın ( `pr`. **ilk**). Üye işlev tarafından döndürülen bir `pr` çiftin ikinci yineleyicisine `pr`erişmek için. **ikinci** ve üst sınır yineleyici dereference \*için, kullanın ( `pr`. **ikinci**).
+Üye işlevi tarafından döndürülen bir çiftin ilk Yineleyici öğesine erişmek için `pr` kullanın `pr` . **ilk** olarak, alt sınır Yineleyici için başvuru yapmak üzere \* ( `pr` . **ilk**). Üye işlevi tarafından döndürülen bir çiftin ikinci Yineleyici öğesine erişmek için `pr` kullanın `pr` . **ikincisi** ve üst sınır yineleyicisini başvuru yapmak için \* ( `pr` . **ikinci**).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1201,12 +1201,12 @@ matching the 2nd element of the pair returned by equal_range( 2 ).
 The hash_map hm1 doesn't have an element with a key less than 40.
 ```
 
-## <a name="hash_maperase"></a><a name="erase"></a>hash_map::silme
+## <a name="hash_maperase"></a><a name="erase"></a>hash_map:: Erase
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Hash_map bir öğeyi veya bir öğe aralığını belirtilen konumlardan kaldırır veya belirtilen anahtarla eşleşen öğeleri kaldırır.
+Belirtilen konumlardan bir hash_map öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
 ```cpp
 iterator erase(iterator _Where);
@@ -1221,28 +1221,28 @@ size_type erase(const key_type& key);
 *_Where*\
 Hash_map kaldırılacak öğenin konumu.
 
-*Ilk*\
-hash_map kaldırılan ilk öğenin konumu.
+*adı*\
+Hash_map kaldırılan ilk öğenin konumu.
 
-*Son*\
-hash_map kaldırılan son öğenin hemen ötesine yerleştirin.
+*soyadına*\
+Hash_map kaldırılan son öğenin hemen ötesinde konumlandır.
 
-*Anahtar*\
-hash_map kaldırılacak öğelerin temel değeri.
+*anahtar*\
+Hash_map kaldırılacak öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk iki üye işlev için, kaldırılan öğelerin ötesinde kalan ilk öğeyi belirleyen çift yönlü bir yineleyici veya böyle bir öğe yoksa hash_map sonuna işaretçi.
+İlk iki üye işlevi için, kaldırılan öğelerin dışında kalan ilk öğeyi veya böyle bir öğe yoksa hash_map sonuna işaretçiyi atayan çift yönlü bir yineleyici.
 
-Üçüncü üye işlev için, hash_map kaldırılan öğelerin sayısını döndürür.
+Üçüncü üye işlevi için, hash_map kaldırılan öğelerin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevler hiçbir zaman bir özel durum atmaz.
+Üye işlevleri hiçbir şekilde özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, hash_map::delete üye işlevinin kullanımını göstermektedir.
+Aşağıdaki örnek hash_map:: Erase üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_map_erase.cpp
@@ -1325,12 +1325,12 @@ After another element with a key equal to that
 of the 2nd element is deleted, the hash_map hm3 is: 0 3.
 ```
 
-## <a name="hash_mapfind"></a><a name="find"></a>hash_map::bul
+## <a name="hash_mapfind"></a><a name="find"></a>hash_map:: Find
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Belirli bir anahtara eşdeğer anahtara sahip bir hash_map öğenin konumunu ele alan bir yineleyici döndürür.
+Belirtilen anahtara eşdeğer bir anahtara sahip bir hash_map öğenin konumunu ele alan bir yineleyici döndürür.
 
 ```cpp
 iterator find(const Key& key);
@@ -1340,18 +1340,18 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*\
-Aranmakta olan hash_map öğenin tür anahtarıyla eşleşecek anahtar değeri.
+*anahtar*\
+Aranmakta olan hash_map öğenin sıralama anahtarıyla eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirli bir anahtarla bir öğenin konumunu veya anahtar için eşleşme bulunamazsa hash_map'daki son öğeyi başaran konumu adresleyen bir yineleyici.
+Belirtilen bir anahtarla bir öğenin konumunu ele alan veya anahtar için eşleşme bulunmazsa hash_map son öğeden geçen konumda bulunan bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`find`hash_map bir öğeyi ele alan ve sıralama anahtarı, karşılaştırılabilirlik ilişkisinden daha az bir ilişkiye dayalı bir sıralamayı neden eden ikili bir yüklem altında bağımsız değişken anahtarına eşdeğer olan bir öğeyi döndürür.
+`find`sıralama anahtarı, karşılaştırıdan daha az bir ilişkiye göre sıralama yapan bir ikili koşulda bağımsız değişken anahtarına denk gelen hash_map bir öğeyi ele alan bir yineleyici döndürür.
 
-Bir const_iterator geri `find` dönüş değeri [const_iterator](#const_iterator)atanırsa, hash_map nesnesi değiştirilemez. Bir `find` [yineleyiciye](#iterator)atanan geri dönüş değeri, hash_map nesnesi değiştirilebilir
+Dönüş değeri `find` bir [const_iterator](#const_iterator)atanmışsa, hash_map nesnesi değiştirilemez. Dönüş değeri `find` bir [Yineleyici](#iterator)öğesine atanırsa, hash_map nesnesi değiştirilebilir
 
 ### <a name="example"></a>Örnek
 
@@ -1404,12 +1404,12 @@ The hash_map hm1 doesn't have an element with a key of 4.
 The element of hm1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="hash_mapget_allocator"></a><a name="get_allocator"></a>hash_map:get_allocator
+## <a name="hash_mapget_allocator"></a><a name="get_allocator"></a>hash_map:: get_allocator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map oluşturmak için kullanılan ayırıcı nesnenin bir kopyasını döndürür.
+Hash_map oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
 ```cpp
 Allocator get_allocator() const;
@@ -1417,11 +1417,11 @@ Allocator get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hash_map tarafından kullanılan ayırıcı.
+Hash_map tarafından kullanılan ayırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-hash_map sınıfının ayırıcıları sınıfın depolamayı nasıl yönettiğini belirtir. C++ Standart Kitaplık kapsayıcı sınıfları ile birlikte verilen varsayılan ayırıcılar çoğu programlama gereksinimleri için yeterlidir. Kendi ayırıcı sınıfınızı yazmak ve kullanmak gelişmiş bir C++ konusudur.
+Hash_map Sınıfı için ayrıcılar, sınıfın depolamayı nasıl yönettiğini belirtir. C++ standart kitaplığı kapsayıcı sınıflarıyla birlikte sağlanan varsayılan ayrıcılar çoğu programlama ihtiyacı için yeterlidir. Kendi ayırıcı sınıfınızı yazmak ve kullanmak, gelişmiş bir C++ konudur.
 
 ### <a name="example"></a>Örnek
 
@@ -1480,12 +1480,12 @@ int main( )
 }
 ```
 
-## <a name="hash_maphash_map"></a><a name="hash_map"></a>hash_map:hash_map
+## <a name="hash_maphash_map"></a><a name="hash_map"></a>hash_map:: hash_map
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Boş veya başka bir hash_map tamamının veya bir kısmının kopyası olan bir hash_map kurar.
+Boş bir hash_map oluşturur veya diğer bir hash_map tümünün veya bir kısmının kopyasıdır.
 
 ```cpp
 hash_map();
@@ -1535,35 +1535,35 @@ hash_map(
 
 |Parametre|Açıklama|
 |-|-|
-|*Al*|Varsayılan olarak `Allocator`bu hash_map nesne için kullanılacak depolama ayırıcı sınıfı.|
-|*Comp*|hash_map öğeleri ni sıralamak için kullanılan tür const'un `Traits` `hash_compare`karşılaştırma işlevi varsayılan olarak .|
-|*Doğru*|Hash_map hangi yapılandırılan harita bir kopyası olmaktır.|
-|*Ilk*|Kopyalanacak öğeler aralığındaki ilk öğenin konumu.|
-|*Son*|İlk öğenin kopyalanacak öğe aralığının ötesindeki konumu.|
-|*ılist*|initializer_list|
+|*Eşkenar*|Varsayılan olan bu hash_map nesnesi için kullanılacak depolama ayırıcı sınıfı `Allocator` .|
+|*İnin*|`Traits`Varsayılan olarak, hash_map öğeleri sıralamak için kullanılan const türünde karşılaştırma işlevi `hash_compare` .|
+|*Right*|Oluşturulan haritanın bir kopya olduğu hash_map.|
+|*Birinci*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
+|*Soyadına*|Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.|
+|*IList*|İnitializer_list|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular, hash_map için bellek depolamayı yöneten bir allocator nesnesi türünü depolar ve daha sonra [get_allocator](#get_allocator)çağırarak döndürülebilir. Ayırıcı parametresi genellikle sınıf bildirimlerinde ve alternatif ayırıcıların yerine kullanılan ön işleme makrolarında atlanır.
+Tüm oluşturucular, hash_map bellek depolamayı yöneten bir tür ayırıcı nesnesi depolar ve daha sonra [get_allocator](#get_allocator)çağırarak döndürülür. Ayırıcı parametresi, genellikle sınıf bildirimlerinde atlanır ve alternatif ayırıcıları değiştirmek için kullanılan ön işleme makrolarıyla sonuçlanır.
 
-Tüm yapıcılar hash_map.
+Tüm oluşturucular hash_map başlatır.
 
-Tüm oluşturucular, hash_map tuşları `Traits` arasında bir düzen oluşturmak için kullanılan ve daha sonra [key_comp](#key_comp)çağırarak döndürülebilen bir işlev nesnesi depolar.
+Tüm oluşturucular, `Traits` hash_map anahtarları arasında bir sıra oluşturmak için kullanılan ve daha sonra [key_comp](#key_comp)çağırarak geri döndürülebilecek bir işlev nesnesini depolar.
 
-İlk üç oluşturucu boş bir başlangıç hash_map belirtir, buna ek olarak, ikinci karşılaştırma fonksiyonu nun türünü belirtir *(Comp*) elemanların sırasını oluştururken, üçüncü açıkça kullanılacak ayırıcı türü *(Al)* belirtir. Anahtar kelime **açık** otomatik tür dönüştürme belirli türleri bastırır.
+İlk üç Oluşturucu boş bir ilk hash_map belirtiyor, ek olarak ikinci olarak, öğelerin sırasını oluşturmak için kullanılacak karşılaştırma işlevi (*comp*) türünü ve üçüncü olarak açıkça kullanılacak ayırıcı türünü (*Al*) belirtir. Anahtar sözcüğü **`explicit`** bazı otomatik tür dönüştürme türlerini bastırır.
 
-Dördüncü oluşturucu hash_map *Hakkı'nın*bir kopyasını belirtir.
+Dördüncü Oluşturucu hash_map *sağ*bir kopyasını belirtir.
 
-Sonraki üç oluşturucu, sınıf `[First, Last)` `Traits` ve ayırıcının karşılaştırma işlevinin türünü belirtirken giderek daha açık bir şekilde hash_map aralığını kopyalar.
+Sonraki üç Oluşturucu, `[First, Last)` bir hash_map aralığını, sınıfın ve ayırıcının karşılaştırma işlevinin türünü belirtirken açıkça artarak kopyalar `Traits` .
 
-Son yapıcı hash_map *Sağa*hareket ettirir.
+Son Oluşturucu hash_map *sağa*taşımaktır.
 
-## <a name="hash_mapinsert"></a><a name="insert"></a>hash_map::ekle
+## <a name="hash_mapinsert"></a><a name="insert"></a>hash_map:: INSERT
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir öğeyi veya bir öğe aralığını hash_map ekler.
+Bir hash_map öğe veya öğe aralığı ekler.
 
 ```cpp
 pair <iterator, bool> insert(
@@ -1593,28 +1593,28 @@ iterator insert(
 
 |Parametre|Açıklama|
 |-|-|
-|*Val*|hash_map zaten bu öğeyi (veya daha genel olarak, anahtarı eşdeğer sıralanmış bir öğe) içermediği sürece hash_map eklenecek bir öğenin değeri.|
-|*_Where*|Doğru ekleme noktasını aramaya başlamak için yerle ilgili bir ipucu.|
-|*Ilk*|Bir hash_map kopyalanacak ilk öğenin konumu.|
-|*Son*|Bir hash_map kopyalanacak son öğenin hemen ötesindeki konum.|
+|*Acil*|Hash_map zaten bu öğeyi (veya daha genel olarak, anahtarı equivalently sıralı bir öğe) içermiyorsa, hash_map eklenecek öğenin değeri.|
+|*_Where*|Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.|
+|*adı*|Hash_map kopyalanacak ilk öğenin konumu.|
+|*soyadına*|Hash_map kopyalanacak son öğenin hemen ötesinde konum.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk `insert` üye işlev, bir ekleme yapılmışsa bool bileşeni doğru döndüren ve hash_map zaten anahtar siparişte eşdeğer değere sahip bir öğe içeriyorsa ve yineleyici bileşeni yeni bir öğenin eklendiği veya öğenin bulunduğu adresi döndüren bir öğeyi döndürür.
+İlk `insert` üye işlevi, bir ekleme yapılırsa bool bileşeni true döndüren bir çift döndürür ve hash_map zaten anahtarı sıralamada denk bir değere sahip olan bir öğe içeriyorsa ve yineleyici bileşeni, yeni bir öğenin eklendiği veya öğenin zaten bulunduğu adresi döndüren bir öğe içeriyorsa.
 
-Bu üye işlev tarafından döndürülen `pr` bir çiftin yineleyici `pr`bileşenine erişmek için. **ilk**, ve dereference \*için, kullanmak ( `pr`. **ilk**). Bu üye işlev tarafından döndürülen bir çiftin `pr` **bool** bileşenine erişmek `pr`için. **ikinci**, ve dereference \*için, kullanmak ( `pr`. **ikinci**).
+Bu üye işlevi tarafından döndürülen bir çiftin Yineleyici bileşenine erişmek için `pr` kullanın `pr` . **ilk**olarak, başvuru için \* ( `pr` . **ilk**). **`bool`** `pr` Bu üye işlevi tarafından döndürülen bir çiftin bileşenine erişmek için kullanın `pr` . **ikincisi**ve başvuru yapmak için \* ( `pr` . **ikinci**).
 
-İkinci `insert` üye işlev, ipucu sürümü, yeni öğenin hash_map eklendiği konumu gösteren bir yineleyici döndürür.
+İkinci `insert` üye işlevi olan ipucu sürümü, yeni öğenin hash_map eklendiği konuma işaret eden bir yineleyici döndürür.
 
-Son iki `insert` üye işlev, eklenen değeri hareket ettirdikleri dışında ilk ikisiyle aynı şekilde çalışır.
+Son iki `insert` üye işlevi ilk ikisi ile aynı şekilde davranır, ancak eklenen değeri oluşturur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir öğenin [value_type](../standard-library/map-class.md#value_type) bir çifttir, böylece bir öğenin değeri ilk bileşen anahtar değerine eşit, ikinci bileşen ise öğenin veri değerine eşit sıralı bir çift olacaktır.
+Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifdir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
-Ekleme noktası hemen *_Where*takip ederse, ekleme noktası logaritmik zaman yerine, eklemek ipucu sürümü için amortismana tabi sabit zaman oluşabilir.
+Ekleme noktasının hemen ardından *_Where*, ekleme noktası yerine ekleme işleminin ipucu sürümü için sabit zamanlı olarak ekleme yapılabilir.
 
-Üçüncü üye işlev, öğe değerlerinin dizisini, belirli bir kümenin *[İlk, Son)* aralığındaki bir yineleyici tarafından adreslenen her öğeye karşılık gelen bir hash_map ekler.
+Üçüncü üye işlevi, belirtilen bir küme içindeki *[First, Last)* aralığında bir yineleyici tarafından bahsedilen her öğeye karşılık gelen bir hash_map öğe değerleri dizisini ekler.
 
 ### <a name="example"></a>Örnek
 
@@ -1724,12 +1724,12 @@ After the move insertion, hm4 contains:
 2 => b
 ```
 
-## <a name="hash_mapiterator"></a><a name="iterator"></a>hash_map::iterator
+## <a name="hash_mapiterator"></a><a name="iterator"></a>hash_map:: Yineleyici
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleme sağlayan bir tür.
+Bir hash_map herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::iterator iterator;
@@ -1737,24 +1737,24 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="remarks"></a>Açıklamalar
 
-hash_map `iterator` tarafından tanımlanan value_type nesneleri olan, [value_type](#value_type)yani tür **çifti\<const Key, Type>,** ilk üyesi öğenin anahtarı dır ve ikinci üyesi öğe tarafından tutulan eşlenen datum olan öğeler.
+`iterator`Tarafından tanımlanan hash_map,, ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan tür **çiftinin \<const Key, Type> ** [value_type](#value_type)nesneleri olan öğeleri gösterir.
 
-Çok eşlemedeki bir öğeyi işaret eden bir **yineleyiciyi** `Iter` `->` dereference etmek için işleci kullanın.
+**iterator** `Iter` Çoklu haritadaki bir öğeye işaret eden bir yineleyici başvurusu için `->` işlecini kullanın.
 
-Öğe için anahtarın değerine erişmek `Iter`  -> için, **ilk**olarak\* `Iter`( ) değerine eşdeğer olan kullanın. **ilk**. Öğe için eşlenen datum değerine erişmek için, `Iter`  ->  **ikinci**, eşdeğer\* `Iter`( ). **ikinci**.
+Öğesinin anahtar değerine erişmek için, `Iter`  ->  () ile eşdeğer olan **ilk**öğesini kullanın \* `Iter` . **ilk**olarak. Öğesi için eşlenen veri değerine erişmek için, `Iter`  ->  () eşdeğeri olan **ikincisini**kullanın \* `Iter` . **ikinci**.
 
-Bir `iterator` tür, bir öğenin değerini değiştirmek için kullanılabilir.
+Bir türü `iterator` , bir öğenin değerini değiştirmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir ve kullanılacağına bir örnek `iterator`için [bkz.](#begin)
+' In nasıl bildirilemeyeceğini ve [kullanılacağına ilişkin bir örnek için bkz](#begin) `iterator` ..
 
-## <a name="hash_mapkey_comp"></a><a name="key_comp"></a>hash_map:key_comp
+## <a name="hash_mapkey_comp"></a><a name="key_comp"></a>hash_map:: key_comp
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Hash_map anahtarları sipariş etmek için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
+Hash_map anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
 ```cpp
 key_compare key_comp() const;
@@ -1762,15 +1762,15 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-bir hash_map öğelerini sıralamak için kullandığı işlev nesnesini döndürür.
+Hash_map öğelerini sıralamak için kullandığı işlev nesnesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Depolanan nesne üye işlevi tanımlar
+Saklı nesne, üye işlevini tanımlar
 
-**bool operator**( **const Key&** `left` **, const Key&** `right`);
+**bool işleci**( **const Key&** `left` **, const Key&** `right` );
 
-önce yse ve sıralama `right` sırasına eşit değilse doğru döndürür. **true** `left`
+Bu, **`true`** `left` önce olursa ve sıralama düzeninde eşit değilse döndürür `right` .
 
 ### <a name="example"></a>Örnek
 
@@ -1825,12 +1825,12 @@ int main( )
 }
 ```
 
-## <a name="hash_mapkey_compare"></a><a name="key_compare"></a>hash_map:key_compare
+## <a name="hash_mapkey_compare"></a><a name="key_compare"></a>hash_map:: key_compare
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Eşdeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
+Haritadaki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
 ```cpp
 typedef Traits key_compare;
@@ -1838,20 +1838,20 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare`şablon parametresi `Traits`ile eş anlamlıdır.
+`key_compare`, şablon parametresinin eşanlamlısıdır `Traits` .
 
-[hash_map Sınıfı](../standard-library/hash-map-class.md) `Traits` konusu hakkında daha fazla bilgi için bkz.
+Hakkında daha fazla bilgi için `Traits` [hash_map Sınıfı](../standard-library/hash-map-class.md) konusuna bakın.
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir ve kullanılır? `key_compare` [key_comp](#key_comp)
+Bildirme ve kullanma hakkında bir örnek için bkz. [key_comp](#key_comp) örneği `key_compare` .
 
-## <a name="hash_mapkey_type"></a><a name="key_type"></a>hash_map::key_type
+## <a name="hash_mapkey_type"></a><a name="key_type"></a>hash_map:: key_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir tür, hash_map her öğesini oluşturan sıralama anahtar nesnesini açıklar.
+Bir tür, hash_map her bir öğesini oluşturan sıralama anahtarı nesnesini açıklar.
 
 ```cpp
 typedef Key key_type;
@@ -1859,20 +1859,20 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type`şablon parametresi `Key`ile eş anlamlıdır.
+`key_type`, şablon parametresinin eşanlamlısıdır `Key` .
 
-Daha fazla `Key`bilgi için [hash_map Sınıfı](../standard-library/hash-map-class.md) konusunun Açıklamalar bölümüne bakın.
+Hakkında daha fazla bilgi için `Key` [hash_map Sınıfı](../standard-library/hash-map-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir ve kullanılacağına `key_type`bir örnek için [value_type](#value_type) örneğe bakın.
+Bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği `key_type` .
 
-## <a name="hash_maplower_bound"></a><a name="lower_bound"></a>hash_map:lower_bound
+## <a name="hash_maplower_bound"></a><a name="lower_bound"></a>hash_map:: lower_bound
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir hash_map ilk öğeye, belirtilen anahtara eşit veya daha büyük bir anahtar değeriyle bir yineleyici döndürür.
+Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtar değeri olan bir hash_map ilk öğeye döndürür.
 
 ```cpp
 iterator lower_bound(const Key& key);
@@ -1882,14 +1882,14 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*\
-Bağımsız değişken anahtar değeri, aranmakta olan hash_map bir öğenin tür anahtarıyla karşılaştırılacak.
+*anahtar*\
+Aranan hash_map öğenin sıralama anahtarıyla Karşılaştırılacak bağımsız değişken anahtarı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir öğenin konumunu, bağımsız değişken anahtarına eşit veya daha büyük bir anahtarla veya anahtar için eşleşme bulunamazsa hash_map'daki son öğeyi başaran konumu gideren bir hash_map öğenin konumunu ele alan bir [yineleyici](#iterator) veya [const_iterator.](#const_iterator)
+Bağımsız değişken anahtarına eşit veya ondan daha büyük bir anahtara sahip bir hash_map içindeki bir öğenin konumunu adresleyen veya anahtar için eşleşme bulunmazsa hash_map son öğeden sonraki konumu ele alan bir [Yineleyici](#iterator) veya [const_iterator](#const_iterator) .
 
-Bir `const_iterator`, hash_map `lower_bound` nesnesinin geri dönüş değeri ne olursa olsun değiştirilemez. Bir `iterator`, hash_map `lower_bound` nesnesinin geri dönüş değeri ne olursa olsun değiştirilebilir.
+Dönüş değeri `lower_bound` bir öğesine atanırsa `const_iterator` , hash_map nesnesi değiştirilemez. Dönüş değeri `lower_bound` bir öğesine atanırsa `iterator` , hash_map nesnesi değiştirilebilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1944,12 +1944,12 @@ The hash_map hm1 doesn't have an element with a key of 4.
 The element of hm1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="hash_mapmapped_type"></a><a name="mapped_type"></a>hash_map:mapped_type
+## <a name="hash_mapmapped_type"></a><a name="mapped_type"></a>hash_map:: mapped_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map depolanan veri türünü temsil eden bir tür.
+Hash_map depolanan veri türünü temsil eden bir tür.
 
 ```cpp
 typedef Type mapped_type;
@@ -1957,20 +1957,20 @@ typedef Type mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `mapped_type` şablon parametresi `Type`ile eş anlamlıdır.
+Tür, `mapped_type` şablon parametresi için bir eş anlamlı `Type` .
 
-[hash_map Sınıfı](../standard-library/hash-map-class.md) `Type` konusu hakkında daha fazla bilgi için bkz.
+Hakkında daha fazla bilgi için `Type` [hash_map Sınıfı](../standard-library/hash-map-class.md) konusuna bakın.
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir ve kullanılacağına `key_type`bir örnek için [value_type](#value_type) örneğe bakın.
+Bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği `key_type` .
 
-## <a name="hash_mapmax_size"></a><a name="max_size"></a>hash_map:max_size
+## <a name="hash_mapmax_size"></a><a name="max_size"></a>hash_map:: max_size
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map maksimum uzunluğu verir.
+Hash_map maksimum uzunluğunu döndürür.
 
 ```cpp
 size_type max_size() const;
@@ -1978,7 +1978,7 @@ size_type max_size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_map mümkün olan maksimum uzunluğu.
+Hash_map olabilecek en uzun uzunluk.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2004,12 +2004,12 @@ int main( )
 }
 ```
 
-## <a name="hash_mapoperator"></a><a name="op_at"></a>hash_map::operatör[]
+## <a name="hash_mapoperator"></a><a name="op_at"></a>hash_map:: operator []
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir öğeyi belirli `hash_map` bir anahtar değeri olan bir öğeye ekler.
+`hash_map`Belirtilen anahtar değeri ile öğesine bir öğesi ekler.
 
 ```cpp
 Type& operator[](const Key& key);
@@ -2031,13 +2031,13 @@ Eklenen öğenin veri değerine başvuru.
 
 Bağımsız değişken anahtar değeri bulunamazsa, değer veri türünün varsayılan değeriyle birlikte eklenir.
 
-`operator[]`kullanarak bir `hash_map m` içine öğeleri eklemek için kullanılabilir
+`operator[]`, bir using öğesine öğe eklemek için kullanılabilir `hash_map m`
 
 `m[ key] = DataValue`;
 
-DataValue anahtar değeri ile `mapped_type` öğenin değeri dir. *key*
+Burada DataValue, anahtar `mapped_type` değeri olan öğesinin değerinin değeridir. *key*
 
-Öğeleri `operator[]` eklemek için kullanılırken, döndürülen başvuru eklemenin önceden varolan bir öğeyi değiştirip değiştirmediğini veya yeni bir öğe oluşturup oluşturmadığını göstermez. Üye işlevler [bul](../standard-library/map-class.md#find) ve [ekle,](../standard-library/map-class.md#insert) eklemeden önce belirli bir anahtara sahip bir öğenin zaten mevcut olup olmadığını belirlemek için kullanılabilir.
+`operator[]`Öğeleri eklemek için kullanırken, döndürülen başvuru, bir ekleme işlemi önceden varolan bir öğeyi değiştirip değiştirmediğini veya yeni bir tane oluşturmayı göstermez. [Bul](../standard-library/map-class.md#find) ve [Ekle](../standard-library/map-class.md#insert) üye işlevleri, bir ekleme işleminden önce belirtilen anahtara sahip bir öğenin zaten mevcut olup olmadığını anlamak için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2101,12 +2101,12 @@ int main( )
 }
 ```
 
-## <a name="hash_mapoperator"></a><a name="op_eq"></a>hash_map::operator=
+## <a name="hash_mapoperator"></a><a name="op_eq"></a>hash_map:: operator =
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map öğelerini başka bir hash_map kopyasıyla değiştirir.
+Hash_map öğelerini başka bir hash_map kopyasıyla değiştirir.
 
 ```cpp
 hash_map& operator=(const hash_map& right);
@@ -2118,11 +2118,11 @@ hash_map& operator=(hash_map&& right);
 
 |Parametre|Açıklama|
 |-|-|
-|*Doğru*|[hash_map Sınıfı](../standard-library/hash-map-class.md) `hash_map`kopyalanıyor.|
+|*Right*|İçine kopyalandığı [hash_map Sınıfı](../standard-library/hash-map-class.md) `hash_map` .|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir'deki varolan öğeleri `hash_map`silersonra , `operator=` *''nin* içeriğini `hash_map`kopyalar veya 'ye taşır.
+İçindeki varolan öğeleri sildikten sonra `hash_map` , ' `operator=` nin içeriğini kopyalar ya da içine *taşısa* `hash_map` .
 
 ### <a name="example"></a>Örnek
 
@@ -2162,12 +2162,12 @@ int main( )
 }
 ```
 
-## <a name="hash_mappointer"></a><a name="pointer"></a>hash_map::pointer
+## <a name="hash_mappointer"></a><a name="pointer"></a>hash_map::p oınter
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map bir öğeiçin işaretçi sağlayan bir tür.
+Hash_map bir öğeye işaretçi sağlayan bir tür.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::pointer pointer;
@@ -2175,16 +2175,16 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::po
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `pointer` tür, bir öğenin değerini değiştirmek için kullanılabilir.
+Bir türü `pointer` , bir öğenin değerini değiştirmek için kullanılabilir.
 
-Çoğu durumda, bir hash_map nesnesindeki öğelere erişmek için bir [yineleyici](#iterator) kullanılmalıdır.
+Çoğu durumda, bir [yineleyici](#iterator) hash_map nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="hash_maprbegin"></a><a name="rbegin"></a>hash_map::rbegin
+## <a name="hash_maprbegin"></a><a name="rbegin"></a>hash_map:: rbegin
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Ters hash_map ilk öğeyi ele alan bir yineleyici döndürür.
+Ters çevrilen hash_map ilk öğeyi adresleyen bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rbegin() const;
@@ -2194,15 +2194,15 @@ reverse_iterator rbegin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters hash_map ilk öğeyi ele alan veya ters çevrilmemiş hash_map son öğesini ele alan ters çift yönlü bir yineleme.
+Ters çevrilen bir hash_map ilk öğeyi ele almak veya geri alınamaz hash_map son öğe olduğunu ele almak için ters çift yönlü Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin`[bir](#begin) hash_map ile kullanıldığı gibi ters hash_map ile kullanılır.
+`rbegin`, [Başlangıç](#begin) olarak bir hash_map ile birlikte kullanılan bir ters hash_map ile kullanılır.
 
-Bir const_reverse_iterator geri `rbegin` dönüş değeri [const_reverse_iterator](#const_reverse_iterator)atanmışsa, hash_map nesnesi değiştirilemez. Bir reverse_iterator geri `rbegin` dönüş değeri [reverse_iterator](#reverse_iterator)atanmışsa, hash_map nesnesi değiştirilebilir.
+Dönüş değeri `rbegin` bir [const_reverse_iterator](#const_reverse_iterator)atanmışsa, hash_map nesnesi değiştirilemez. Dönüş değeri `rbegin` bir [reverse_iterator](#reverse_iterator)atanmışsa, hash_map nesnesi değiştirilebilir.
 
-`rbegin`geriye doğru hash_map ile yinelemek için kullanılabilir.
+`rbegin`, bir hash_map geriye doğru yinelemek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2263,12 +2263,12 @@ The reversed hash_map is: 3 2 1 .
 After the erasure, the first element in the reversed hash_map is 2.
 ```
 
-## <a name="hash_mapreference"></a><a name="reference"></a>hash_map::referans
+## <a name="hash_mapreference"></a><a name="reference"></a>hash_map:: Reference
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map depolanan bir öğeye başvuru sağlayan bir tür.
+Hash_map depolanan bir öğeye başvuru sağlayan bir tür.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
@@ -2326,12 +2326,12 @@ The data value of first element in the hash_map is 10.
 The modified data value of first element is 15.
 ```
 
-## <a name="hash_maprend"></a><a name="rend"></a>hash_map::rend
+## <a name="hash_maprend"></a><a name="rend"></a>hash_map:: rend
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Ters hash_map son öğeyi yerine getiren konumu adresleyen bir yineleyici döndürür.
+Ters çevrilen hash_map son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
 ```cpp
 const_reverse_iterator rend() const;
@@ -2341,17 +2341,17 @@ reverse_iterator rend();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ters hash_map 'deki son öğeyi (ters çevrilmemiş hash_map ilk öğeden önce gelen konum) yerine gelen konumu gideren ters çift yönlü bir yineleme.
+Ters çevrilen bir hash_map en son öğeden sonra gelen konumu ele alan ters çift yönlü yineleyici (geri alınamaz hash_map ilk öğeden önce gelen konum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend`[uç](#end) bir hash_map ile kullanıldığı gibi ters hash_map ile kullanılır.
+`rend`, [End](#end) bir hash_map ile kullanıldığı gibi ters bir hash_map kullanılır.
 
-Bir const_reverse_iterator geri `rend` dönüş değeri [const_reverse_iterator](#const_reverse_iterator)atanmışsa, hash_map nesnesi değiştirilemez. Bir reverse_iterator geri `rend` dönüş değeri [reverse_iterator](#reverse_iterator)atanmışsa, hash_map nesnesi değiştirilebilir.
+Dönüş değeri `rend` bir [const_reverse_iterator](#const_reverse_iterator)atanmışsa, hash_map nesnesi değiştirilemez. Dönüş değeri `rend` bir [reverse_iterator](#reverse_iterator)atanmışsa, hash_map nesnesi değiştirilebilir.
 
-`rend`ters yineleyicinin hash_map sonuna ulaşıp ulaşmadığını test etmek için kullanılabilir.
+`rend`ters bir yineleyicinin hash_map sonuna kadar ulaştığı konusunda test etmek için kullanılabilir.
 
-Döndürülen `rend` değer dereferenced olmamalıdır.
+Tarafından döndürülen değer `rend` başvurulmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -2416,12 +2416,12 @@ The reversed hash_map is: 3 2 1 .
 After the erasure, the last element in the reversed hash_map is 2.
 ```
 
-## <a name="hash_mapreverse_iterator"></a><a name="reverse_iterator"></a>hash_map:reverse_iterator
+## <a name="hash_mapreverse_iterator"></a><a name="reverse_iterator"></a>hash_map:: reverse_iterator
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Ters hash_map bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleme sağlayan bir tür.
+Ters çevrilen bir hash_map bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
 ```cpp
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::reverse_iterator reverse_iterator;
@@ -2429,24 +2429,24 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `reverse_iterator` tür bir öğenin değerini değiştiremez ve hash_map ters olarak yinelemek için kullanılır.
+Bir tür, `reverse_iterator` bir öğenin değerini değiştiremez ve hash_map ters bir şekilde yinelemek için kullanılır.
 
-hash_map `reverse_iterator` tarafından tanımlanan value_type nesneleri olan elemanlar [için](#value_type), bu tür **\<çifti const Anahtar, Tip>**, ilk üyesi öğenin anahtarı ve ikinci üyesi eşlenen datum öğe tarafından düzenlenen.
+`reverse_iterator`Tarafından tanımlanan hash_map,, ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan tür **çiftinin \<const Key, Type> ** [value_type](#value_type)nesneleri olan öğeleri gösterir.
 
-bir hash_map `reverse_iterator` `rIter` bir öğeyi işaret eden bir öğeyi belirtmek için -> işleci kullanın.
+Bir hash_map bir `reverse_iterator` `rIter` öğeyi işaret etmek için-> işlecini kullanın.
 
-Öğe için anahtarın değerine erişmek `rIter`  -> için, **ilk**olarak\* `rIter`( ) değerine eşdeğer olan kullanın. **ilk**. Öğe için eşlenen datum değerine erişmek için, `rIter`  ->  **ikinci**, eşdeğer\* `rIter`( ). **ilk**.
+Öğesinin anahtar değerine erişmek için, `rIter`  ->  () ile eşdeğer olan **ilk**öğesini kullanın \* `rIter` . **ilk**olarak. Öğesi için eşlenen veri değerine erişmek için, `rIter`  ->  () eşdeğeri olan **ikincisini**kullanın \* `rIter` . **ilk**olarak.
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilir ve kullanılır. [rbegin](#rbegin) `reverse_iterator`
+Bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği `reverse_iterator` .
 
-## <a name="hash_mapsize"></a><a name="size"></a>hash_map::boyut
+## <a name="hash_mapsize"></a><a name="size"></a>hash_map:: size
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map'daki öğe sayısını verir.
+Hash_map öğe sayısını döndürür.
 
 ```cpp
 size_type size() const;
@@ -2460,7 +2460,7 @@ Hash_map geçerli uzunluğu.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, hash_map:boyut üye işlevinin kullanımını göstermektedir.
+Aşağıdaki örnek hash_map:: size üye işlevinin kullanımını gösterir.
 
 ```cpp
 // hash_map_size.cpp
@@ -2491,12 +2491,12 @@ The hash_map length is 1.
 The hash_map length is now 2.
 ```
 
-## <a name="hash_mapsize_type"></a><a name="size_type"></a>hash_map:size_type
+## <a name="hash_mapsize_type"></a><a name="size_type"></a>hash_map:: size_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-hash_map'daki öğe sayısını temsil eden imzasız bir tamsayı türü.
+Bir hash_map öğe sayısını temsil eden işaretsiz bir tamsayı türü.
 
 ```cpp
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
@@ -2506,14 +2506,14 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::si
 
 ### <a name="example"></a>Örnek
 
-Nasıl beyan edilip kullanılacağına bir örnek için [boyut](#size) örneğine bakın`size_type`
+Bildirme ve kullanma hakkında bir [örnek için bkz](#size) . örnek`size_type`
 
-## <a name="hash_mapswap"></a><a name="swap"></a>hash_map::takas
+## <a name="hash_mapswap"></a><a name="swap"></a>hash_map:: swap
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-İki hash_maps öğelerini değiştirir.
+İki hash_maps öğelerini değiş tokuş eder.
 
 ```cpp
 void swap(hash_map& right);
@@ -2521,12 +2521,12 @@ void swap(hash_map& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Doğru*\
-Argüman, hedef hash_map değiştirilecek öğelerin sağlanmasını hash_map.
+*Right*\
+Bağımsız değişkeni, hedef hash_map birlikte takas edilecek öğeleri sağlayan hash_map.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, öğeleri değiştirilen iki hash_maps öğeleri belirleyen hiçbir başvuru, işaretçi veya yineleyicigeçersiz olur.
+Üye işlevi, öğeleri takas edilmekte olan iki hash_maps öğeleri belirten başvuruları, işaretçileri veya yineleyicileri geçersiz kılar.
 
 ### <a name="example"></a>Örnek
 
@@ -2582,12 +2582,12 @@ After swapping with hm2, hash_map hm1 is: 100 200.
 After swapping with hm3, hash_map hm1 is: 300.
 ```
 
-## <a name="hash_mapupper_bound"></a><a name="upper_bound"></a>hash_map::upper_bound
+## <a name="hash_mapupper_bound"></a><a name="upper_bound"></a>hash_map:: upper_bound
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Bir hash_map ilk öğeye bir yineleyici döndürür, bir anahtar belirli bir anahtardan daha büyük bir değere sahip.
+Bir yineleyiciyi belirtilen anahtardan daha büyük bir değere sahip olan bir hash_map içindeki ilk öğeye döndürür.
 
 ```cpp
 iterator upper_bound(const Key& key);
@@ -2597,14 +2597,14 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*\
-Aranın hash_map bir öğenin sıralama anahtar değeriyle karşılaştırılacak bağımsız değişken anahtar değeri.
+*anahtar*\
+Aranan hash_map öğenin sıralama anahtarı değeriyle Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir öğenin konumunu ele alan bir hash_map, bağımsız değişken anahtarından daha büyük bir anahtarla veya anahtar için eşleşme bulunamazsa hash_map'daki son öğeyi başaran konumu gideren bir [const_iterator.](#iterator) [const_iterator](#const_iterator)
+Bağımsız değişken anahtarından daha büyük bir anahtara sahip bir hash_map içindeki bir öğenin konumunu adresleyen veya anahtar için eşleşme bulunmazsa hash_map son öğeden sonraki konumu ele alan bir [Yineleyici](#iterator) veya [const_iterator](#const_iterator) .
 
-İade değeri bir `const_iterator`, hash_map nesnesi değiştirilemez atanır. İade değeri bir `iterator`, hash_map nesnesi değiştirilebilir atanır.
+Dönüş değeri bir öğesine atanırsa `const_iterator` , hash_map nesnesi değiştirilemez. Dönüş değeri bir öğesine atanırsa `iterator` , hash_map nesnesi değiştirilebilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2660,12 +2660,12 @@ The 1st element of hm1 with a key greater than that
 of the initial element of hm1 is: 20.
 ```
 
-## <a name="hash_mapvalue_comp"></a><a name="value_comp"></a>hash_map:value_comp
+## <a name="hash_mapvalue_comp"></a><a name="value_comp"></a>hash_map:: value_comp
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-Anahtar değerlerini karşılaştırarak hash_map öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
+Anahtar değerlerini karşılaştırarak bir hash_map öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
 
 ```cpp
 value_compare value_comp() const;
@@ -2673,15 +2673,15 @@ value_compare value_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hash_map öğelerini sıralamak için kullandığı karşılaştırma işlevi nesnesini döndürür.
+Hash_map öğelerini sıralamak için kullandığı karşılaştırma işlevi nesnesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hash_map *m*için , eğer iki eleman *e1* (*k1*, *d1*) ve *e2* (*k2*, *d2*) türü [value_type](#value_type)nesneleri, *k1* ve `m.value_comp()(e1, e2)` *k2* tip [key_type](#key_type) ve *d1* ve *d2* [türü](#mapped_type) `m.key_comp()(k1, k2)`mapped_type onların veri vardır . Depolanan nesne üye işlevi tanımlar
+Bir hash_map n için, iki öğe *E1* (*K1*, *D1*) ve *e2* (*K2*, *D2*), [value_type](#value_type)türündeki nesnelerdir; burada *K1* ve *K2* [key_type](#key_type) , *D1* ve *D2* [mapped_type](#mapped_type)türünde olan ve bu durumda ile *m* `m.value_comp()(e1, e2)` eşdeğerdir `m.key_comp()(k1, k2)` . Saklı nesne üye işlevini tanımlar
 
 `bool operator(value_type& left, value_type& right);`
 
-anahtar **true** değeri `left` önce yse ve sıralama sırasına `right` eşit değilse doğru döndürür.
+Bu **`true`** , anahtar değerinin `left` önce ve ' nin sıralama düzeninde anahtar değerine eşit olmaması halinde döndürür `right` .
 
 ### <a name="example"></a>Örnek
 
@@ -2728,12 +2728,12 @@ int main( )
 }
 ```
 
-## <a name="hash_mapvalue_type"></a><a name="value_type"></a>hash_map:value_type
+## <a name="hash_mapvalue_type"></a><a name="value_type"></a>hash_map:: value_type
 
 > [!NOTE]
-> Bu, API artık kullanılmıyor. Alternatif [unordered_map Sınıf](../standard-library/unordered-map-class.md).
+> Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](../standard-library/unordered-map-class.md).
 
-bir hash_map depolanan nesne türünü temsil eden bir tür.
+Hash_map depolanan nesne türünü temsil eden bir tür.
 
 ```cpp
 typedef pair<const Key, Type> value_type;
@@ -2741,7 +2741,7 @@ typedef pair<const Key, Type> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`bir bağşlı `pair<key_type, mapped_type>` kapsayıcının anahtarları sabit olmayan bir yineleme veya başvuru kullanılarak değiştirilemeyebileceğinden değil, olduğu bildirilir. `pair<const key_type, mapped_type>`
+`value_type`, `pair<const key_type, mapped_type>` `pair<key_type, mapped_type>` bir ilişkilendirilebilir kapsayıcının anahtarlarının sabit olmayan bir yineleyici veya başvuru kullanılarak değiştirilemediği için olduğu şekilde bildirilmiştir.
 
 ### <a name="example"></a>Örnek
 
@@ -2805,5 +2805,5 @@ The values of the mapped elements are: 10 20 30.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standart Kütüphane Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

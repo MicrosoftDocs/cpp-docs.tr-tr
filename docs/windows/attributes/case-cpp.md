@@ -1,23 +1,23 @@
 ---
-title: Case (C++ com özniteliği)
+title: Case (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.case
 helpviewer_keywords:
 - case attribute
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
-ms.openlocfilehash: da72fff3bb600b5db2fba0ecdfe9c6a768836f3c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 23330b7b220873725dc566df947f3f3596160029
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167348"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232813"
 ---
 # <a name="case-c"></a>durum (C++)
 
-Bir **birleşimdeki** [switch_type](switch-type.md) özniteliğiyle birlikte kullanılır.
+İçinde [switch_type](switch-type.md) özniteliğiyle kullanılır **`union`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ case(value) ]
@@ -25,22 +25,22 @@ Bir **birleşimdeki** [switch_type](switch-type.md) özniteliğiyle birlikte kul
 
 #### <a name="parameters"></a>Parametreler
 
-*value*<br/>
+*deeri*<br/>
 İşleme sağlamak istediğiniz olası bir giriş değeri. **Değer** türü aşağıdaki türlerden biri olabilir:
 
-- `int`
+- **`int`**
 
-- `char`
+- **`char`**
 
 - `boolean`
 
-- `enum`
+- **`enum`**
 
 ya da böyle bir tür tanımlayıcı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Case** C++ özniteliği **Case** MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bu öznitelik yalnızca [switch_type](switch-type.md) özniteliğiyle birlikte kullanılır.
+**Case** C++ özniteliği, **Case** MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bu öznitelik yalnızca [switch_type](switch-type.md) özniteliğiyle birlikte kullanılır.
 
 ## <a name="example"></a>Örnek
 
@@ -69,7 +69,7 @@ struct SizedValue2 {
 
 |||
 |-|-|
-|**Uygulama hedefi**|Bir **sınıfın** veya **yapının** üyesi|
+|**Şunlara uygulanır**|**`class`** Veya üyesi**`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -79,5 +79,5 @@ struct SizedValue2 {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)

@@ -37,12 +37,12 @@ helpviewer_keywords:
 - trigonometric functions
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
-ms.openlocfilehash: 9007f043b64c666d463f46661cfa5f43646e26b7
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: ee5cb2c3a05514b4f10f73a2b27199b8e3a5ac4b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84506903"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221932"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
@@ -70,14 +70,14 @@ Radyan cinsinden açı.
 
 *X*'in kosinüsü. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|**_DOMAIN**|
 |± INF|**Geçersiz**|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **cos** 'un aşırı yüklerini çağırabilirsiniz. C programında **cos** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, veya değerlerini alan ve döndüren **cos** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **cos** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

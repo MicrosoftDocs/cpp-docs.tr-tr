@@ -1,23 +1,23 @@
 ---
-title: db_column (C++ com özniteliği)
+title: db_column (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_column
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 4ce57443480e35e7a4c7b9e872e41777662ddc20
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b78fb081895b7a3e8f0e266810cd19d1b2792240
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167296"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222153"
 ---
 # <a name="db_column"></a>db_column
 
 Belirtilen bir sütunu satır kümesindeki bir değişkene bağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ db_column(ordinal, dbtype, precision, scale, status, length) ]
@@ -26,7 +26,7 @@ Belirtilen bir sütunu satır kümesindeki bir değişkene bağlar.
 ### <a name="parameters"></a>Parametreler
 
 *numarasını*<br/>
-Verilerin bağlanacağı satır kümesindeki bir alana karşılık gelen sıralı sütun numarası (`DBCOLUMNINFO` sıra sayısı) veya sütun adı (ANSI veya Unicode dizesi). Sayı kullanırsanız, ardışık sıra sayısını atlayabilirsiniz (örneğin: 1, 2, 3, 5). Kullandığınız OLE DB sağlayıcı destekliyorsa, ad boşluk içerebilir. Örneğin, aşağıdaki biçimlerden birini kullanabilirsiniz:
+`DBCOLUMNINFO`Verilerin bağlanacağı satır kümesindeki bir alana karşılık gelen sıralı sütun numarası (sıra sayısı) veya sütun adı (ANSI veya Unicode dizesi). Sayı kullanırsanız, ardışık sıra sayısını atlayabilirsiniz (örneğin: 1, 2, 3, 5). Kullandığınız OLE DB sağlayıcı destekliyorsa, ad boşluk içerebilir. Örneğin, aşağıdaki biçimlerden birini kullanabilirsiniz:
 
 ```cpp
 [db_column("2")] TCHAR szCity[30];
@@ -37,10 +37,10 @@ Verilerin bağlanacağı satır kümesindeki bir alana karşılık gelen sıral�
 Seçim Sütun girişi için OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251(v=vs.85)) .
 
 *duyarlılık*<br/>
-Seçim Sütun girişi için kullanılacak duyarlık. Ayrıntılar için bkz. [Dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) `bPrecision` öğesinin açıklaması.
+Seçim Sütun girişi için kullanılacak duyarlık. Ayrıntılar için, `bPrecision` [dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) öğesinin açıklamasına bakın
 
 *ölçek*<br/>
-Seçim Sütun girişi için kullanılacak ölçek. Ayrıntılar için bkz. [Dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) `bScale` öğesi açıklaması
+Seçim Sütun girişi için kullanılacak ölçek. Ayrıntılar için bkz `bScale` . [dbbinding yapısının](/previous-versions/windows/desktop/ms716845(v=vs.85)) öğesinin açıklaması
 
 *durumlarına*<br/>
 Seçim Bu sütunun durumunu tutmak için kullanılan bir üye değişkeni. Durum, sütun değerinin bir veri değeri mi yoksa NULL gibi başka bir değer mi olduğunu gösterir. Olası değerler için *OLE DB Programcı başvurusunda* [durum](/previous-versions/windows/desktop/ms722617(v=vs.85)) ' a bakın.
@@ -50,17 +50,17 @@ Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye deği�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_column** , belirtilen tablo sütununu satır kümesindeki bir değişkene bağlar. OLE DB `IAccessor`tabanlı bağlamaya katılabileceğiniz üye verilerini ayırır. Bu öznitelik, normalde OLE DB tüketici makroları [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [end_column_map](../../data/oledb/end-column-map.md)ve [COLUMN_ENTRY](../../data/oledb/column-entry.md)kullanılarak tanımlanan sütun eşlemesini ayarlar. Bu, belirtilen sütunu bağlamak için OLE DB [Dbbinding yapısını](/previous-versions/windows/desktop/ms716845(v=vs.85)) işleyebilir. **Db_column** özniteliğiyle işaretlediğiniz her üye, sütun haritasında sütun girişi biçiminde bir giriş kaplayacaktır. Bu nedenle, bu özniteliği komut veya tablo sınıfında sütun haritasını yerleştireceğiniz yerde çağırabilirsiniz.
+**db_column** , belirtilen tablo sütununu satır kümesindeki bir değişkene bağlar. OLE DB tabanlı bağlamaya katılabileceğiniz üye verilerini ayırır `IAccessor` . Bu öznitelik, normalde OLE DB tüketici makroları [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [end_column_map](../../data/oledb/end-column-map.md)ve [COLUMN_ENTRY](../../data/oledb/column-entry.md)kullanılarak tanımlanan sütun eşlemesini ayarlar. Bu, belirtilen sütunu bağlamak için OLE DB [Dbbinding yapısını](/previous-versions/windows/desktop/ms716845(v=vs.85)) işleyebilir. **Db_column** özniteliğiyle işaretlediğiniz her üye, sütun haritasında sütun girişi biçiminde bir giriş kaplayacaktır. Bu nedenle, bu özniteliği komut veya tablo sınıfında sütun haritasını yerleştireceğiniz yerde çağırabilirsiniz.
 
 [Db_table](db-table.md) veya [db_command](db-command.md) öznitelikleriyle birlikte **db_column** kullanın.
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, bir tablodaki sütunu **Long** veri üyesine bağlar ve durum ve uzunluk alanlarını belirtir.
+Bu örnek, bir tablodaki bir sütunu **`long`** veri üyesine bağlar ve durum ve uzunluk alanlarını belirtir.
 
 ```cpp
 // db_column_1.cpp
@@ -80,7 +80,7 @@ class CProducts {
 
 ## <a name="example"></a>Örnek
 
-Bu örnek dört sütunu bir **Long**, bir karakter dizesi, bir zaman damgası ve bir `DB_NUMERIC` tamsayı ile bu sırayla bağlar.
+Bu örnek dört sütunu bir, bir **`long`** karakter dizesi, bir zaman damgası ve bir tamsayı ile `DB_NUMERIC` Bu sırayla bağlar.
 
 ```cpp
 // db_column_2.cpp
@@ -104,7 +104,7 @@ class CProducts {
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**, üye, Yöntem|
+|**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -113,5 +113,5 @@ class CProducts {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Öznitelikleri](ole-db-consumer-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)
+[OLE DB tüketici öznitelikleri](ole-db-consumer-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)

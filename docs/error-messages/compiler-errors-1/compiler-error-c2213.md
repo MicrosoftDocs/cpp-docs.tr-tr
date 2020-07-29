@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2213
 ms.assetid: ff012278-7f3b-4d49-aaed-2349756f6225
-ms.openlocfilehash: 2a5f85adca30474ff8e60dc57694eba099b39387
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d4511098d01ae051ec154bac47ef0b43e1ac60ac
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741345"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221282"
 ---
 # <a name="compiler-error-c2213"></a>Derleyici hatası C2213
 
 ' değiştirici ': __based için geçersiz bağımsız değişken
 
-`__based` değiştirme bağımsız değişkeni geçersiz.
+Değiştirme bağımsız değişkeni **`__based`** geçersiz.
 
 Aşağıdaki örnek C2213 oluşturur:
 

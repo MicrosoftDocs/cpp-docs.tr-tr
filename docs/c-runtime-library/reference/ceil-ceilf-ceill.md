@@ -35,12 +35,12 @@ helpviewer_keywords:
 - ceil function
 - ceilf function
 ms.assetid: f4e5acab-5c8f-4b10-9ae2-9561e6453718
-ms.openlocfilehash: 284443f511217be7873a7d7b02562484b32cefca
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: 2cacd0ad9fa08e903d2ab5cff5f73611c85fab3e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507085"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221958"
 ---
 # <a name="ceil-ceilf-ceill"></a>ceil, ceilf, ceill
 
@@ -75,7 +75,7 @@ Kayan nokta değeri.
 
 **CEIL** işlevleri, *x*değerinden büyük veya buna eşit en küçük tamsayıyı temsil eden bir kayan nokta değeri döndürür. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
@@ -83,7 +83,7 @@ Kayan nokta değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **kayan** veya **uzun** **çift** türleri alan **CEIL** 'nin aşırı yüklerini çağırabilirsiniz. C programında **CEIL** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, veya türündeki **CEIL** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **CEIL** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

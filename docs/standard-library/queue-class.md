@@ -22,18 +22,18 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-ms.openlocfilehash: 512b9499e63933a71a27a87f91a3bef8a65339e1
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 331ca298507e0ebecac0376f660feefdafd9d99d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419660"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232943"
 ---
 # <a name="queue-class"></a>queue Sınıfı
 
 Ön ve geri öğelerine erişimi sınırlayan, bazı temel kapsayıcı türleri için bir işlev kısıtlaması sağlayan bir şablon kapsayıcı bağdaştırıcı sınıfı. Öğeler geri eklenebilir veya ön öğeden kaldırılabilir ve öğeler sıranın her iki ucundan de incelenebilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Type, class Container = deque <Type>>
@@ -42,7 +42,7 @@ class queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür*\
+*Türüyle*\
 Kuyrukta depolanacak öğe veri türü
 
 *Kapsayıcı*\
@@ -50,13 +50,13 @@ Kuyruğu uygulamak için kullanılan temeldeki kapsayıcının türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kuyruk nesnesinin ilk şablon parametresinde `Type` s, sınıfının öğeleri [value_type](#value_type) ile eşanlamlıdır ve ikinci şablon parametresi tarafından belirlenen temel kapsayıcı `Container` sınıfında öğe türüyle eşleşmelidir. `Type`, bu türdeki nesneleri kopyalamak ve bu türdeki değişkenlere değer atamak mümkün olması için atanabilir olmalıdır.
+`Type`Bir kuyruk nesnesinin ilk şablon parametresinde ifade edilen sınıfın öğeleri, [value_type](#value_type) ile eşanlamlıdır ve `Container` ikinci şablon parametresi tarafından belirlenen temeldeki kapsayıcı sınıfında öğe türüyle eşleşmelidir. , `Type` Bu türdeki nesneleri kopyalamak ve bu türdeki değişkenlere değer atamak mümkün olduğundan, atanabilir olmalıdır.
 
-Sıra için uygun temel kapsayıcı sınıfları, [deque](../standard-library/deque-class.md) ve [list](../standard-library/list-class.md)gibi `front`, `back`, `push_back`ve `pop_front`işlemlerini destekleyen herhangi bir sıra kapsayıcısını içerir. Temel alınan kapsayıcı sınıfı kapsayıcı bağdaştırıcısında kapsüllenir, bu da yalnızca ortak arabirim olarak dizi kapsayıcısı üye işlevlerinin sınırlı kümesini sunar.
+Sıra için uygun temel kapsayıcı sınıfları, [deque](../standard-library/deque-class.md) ,, ve işlemlerini destekleyen herhangi bir sıra kapsayıcısını ve [Listeyi](../standard-library/list-class.md)içerir `front` `back` `push_back` `pop_front` . Temel alınan kapsayıcı sınıfı kapsayıcı bağdaştırıcısında kapsüllenir, bu da yalnızca ortak arabirim olarak dizi kapsayıcısı üye işlevlerinin sınırlı kümesini sunar.
 
-Sıra nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf `Type` öğeleri eşitlik karşılaştırılabilir ise ve yalnızca sınıf `Type` öğeleri karşılaştırılabilir değilse küçüktür ve karşılaştırılabilir.
+Sıra nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf öğelerinin `Type` eşitlik karşılaştırılabilir olması halinde ve yalnızca sınıf öğeleri karşılaştırılabilir değilse küçüktür ve karşılaştırılabilir `Type` .
 
-C++ Standart kitaplık tarafından tanımlanan üç tür kapsayıcı bağdaştırıcısı vardır: yığın, kuyruk ve priority_queue. Her biri, standart bir veri yapısına tam denetimli bir arabirim sağlamak için bazı temel kapsayıcı sınıfının işlevlerini kısıtlar.
+C++ standart kitaplığı tarafından tanımlanan üç tür kapsayıcı bağdaştırıcısı vardır: yığın, kuyruk ve priority_queue. Her biri, standart bir veri yapısına tam denetimli bir arabirim sağlamak için bazı temel kapsayıcı sınıfının işlevlerini kısıtlar.
 
 - [Stack sınıfı](../standard-library/stack-class.md) , son bir ilk çıkar (LIFO) veri yapısını destekler. Göz önünde bulundurmanız gereken bir şey, bir levha yığını olacaktır. Öğeler (levhalar), temel kapsayıcının sonundaki son öğe olan yığının en üstünden eklenebilir, incelenebilir veya kaldırılabilir. Yalnızca Top öğesine erişme kısıtlaması, Stack sınıfının kullanılmasına neden olur.
 
@@ -70,28 +70,28 @@ C++ Standart kitaplık tarafından tanımlanan üç tür kapsayıcı bağdaştı
 
 |||
 |-|-|
-|[Sıradaki](#queue)|Boş olan veya temel kapsayıcı nesnesinin kopyası olan bir `queue` oluşturur.|
+|[Sıradaki](#queue)|`queue`Boş veya temel kapsayıcı nesnesinin bir kopyası olan oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[container_type](#container_type)|`queue`tarafından uyarlandığı temel kapsayıcıyı sağlayan bir tür.|
-|[size_type](#size_type)|Bir `queue`öğe sayısını temsil eden işaretsiz bir tamsayı türü.|
-|[value_type](#value_type)|Bir `queue`öğe olarak depolanan nesne türünü temsil eden bir tür.|
+|[container_type](#container_type)|Tarafından uyarlanabilen temel kapsayıcıyı sağlayan bir tür `queue` .|
+|[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `queue` .|
+|[value_type](#value_type)|İçindeki bir öğe olarak depolanan nesne türünü temsil eden bir tür `queue` .|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[Geri](#back)|`queue`arkasında son ve en son eklenen öğeye bir başvuru döndürür.|
-|[olmamalıdır](#empty)|`queue` boş ise sınar.|
-|[yapılan](#front)|`queue`önündeki ilk öğeye bir başvuru döndürür.|
-|[cağımız](#pop)|`queue`önüne bir öğe kaldırır.|
-|[push](#push)|`queue`arkasına bir öğe ekler.|
-|[boyutla](#size)|`queue`öğe sayısını döndürür.|
+|[Geri](#back)|Öğesinin arkasında son ve en son eklenen öğeye bir başvuru döndürür `queue` .|
+|[empty](#empty)|`queue`Boşsa sınar.|
+|[yapılan](#front)|Öğesinin önündeki ilk öğesine bir başvuru döndürür `queue` .|
+|[cağımız](#pop)|Öğesinin önüne bir öğe kaldırır `queue` .|
+|[push](#push)|Öğesinin arkasına bir öğesi ekler `queue` .|
+|[boyutla](#size)|İçindeki öğelerin sayısını döndürür `queue` .|
 
-## <a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a>Geri
 
 Sıranın arkasında son ve en son eklenen öğeye bir başvuru döndürür.
 
@@ -107,7 +107,7 @@ Kuyruğun son öğesi. Sıra boşsa, dönüş değeri tanımsızdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`back` dönüş değeri bir `const_reference`atanırsa, kuyruk nesnesi değiştirilemez. `back` dönüş değeri bir `reference`atanırsa kuyruk nesnesi değiştirilebilir.
+Dönüş değeri `back` öğesine atanmışsa `const_reference` , kuyruk nesnesi değiştirilemez. Dönüş değeri `back` öğesine atanmışsa `reference` , kuyruk nesnesi değiştirilebilir.
 
 1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, boş bir kuyruktaki bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.  Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md) .
 
@@ -137,7 +137,7 @@ int main( )
 }
 ```
 
-## <a name="container_type"></a>container_type
+## <a name="container_type"></a><a name="container_type"></a>container_type
 
 Uyarlanabilen temel kapsayıcıyı sağlayan bir tür.
 
@@ -147,15 +147,15 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Container`şablon parametresi için bir eş anlamlı. İki C++ standart kitaplık sırası kapsayıcı sınıfı — List sınıfı ve varsayılan deque Sınıfı — bir kuyruk nesnesi için temel kapsayıcı olarak kullanılacak gereksinimleri karşılar. Gereksinimleri karşılayan Kullanıcı tanımlı türler de kullanılabilir.
+Tür, şablon parametresi için bir eş anlamlı `Container` . İki C++ standart kitaplık sırası kapsayıcı sınıfı — List sınıfı ve varsayılan deque Sınıfı — bir kuyruk nesnesi için temel kapsayıcı olarak kullanılacak gereksinimleri karşılar. Gereksinimleri karşılayan Kullanıcı tanımlı türler de kullanılabilir.
 
-`Container`hakkında daha fazla bilgi için [Queue Class](../standard-library/queue-class.md) konusunun açıklamalar bölümüne bakın.
+Hakkında daha fazla bilgi için `Container` [Queue Class](../standard-library/queue-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-`container_type`bildirme ve kullanma hakkında bir örnek için bkz. [kuyruk](#queue) örneği.
+Bildirme ve kullanma hakkında bir örnek için bkz. [kuyruk](#queue) örneği `container_type` .
 
-## <a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a>olmamalıdır
 
 Bir kuyruğun boş olup olmadığını sınar.
 
@@ -165,7 +165,7 @@ bool empty() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-sıra boşsa **doğru** ; sıra boş değilse **false** .
+**`true`** sıra boşsa; **`false`** sıra boş değilse.
 
 ### <a name="example"></a>Örnek
 
@@ -201,7 +201,7 @@ The queue q1 is not empty.
 The queue q2 is empty.
 ```
 
-## <a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a>yapılan
 
 Kuyruğun önündeki ilk öğeye bir başvuru döndürür.
 
@@ -217,9 +217,9 @@ Kuyruğun ilk öğesi. Sıra boşsa, dönüş değeri tanımsızdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`front` dönüş değeri bir `const_reference`atanırsa, kuyruk nesnesi değiştirilemez. `front` dönüş değeri bir `reference`atanırsa kuyruk nesnesi değiştirilebilir.
+Dönüş değeri `front` öğesine atanmışsa `const_reference` , kuyruk nesnesi değiştirilemez. Dönüş değeri `front` öğesine atanmışsa `reference` , kuyruk nesnesi değiştirilebilir.
 
-Üye işlevi, boş olmayan bir `reference` denetlenen sıranın ilk öğesine döndürür.
+Üye işlevi, `reference` boş olmayan olması gereken denetlenen sıranın ilk öğesine döndürür.
 
 1 veya 2 olarak tanımlanan [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) kullanılarak derlendiğinde, boş bir kuyruktaki bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.  Daha fazla bilgi için bkz. [Checked Iterators](../standard-library/checked-iterators.md) .
 
@@ -253,7 +253,7 @@ int main() {
 }
 ```
 
-## <a name="pop"></a>cağımız
+## <a name="pop"></a><a name="pop"></a>cağımız
 
 Bir öğeyi kuyruğun önünden kaldırır.
 
@@ -309,7 +309,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.
 ```
 
-## <a name="push"></a>hareketle
+## <a name="push"></a><a name="push"></a>hareketle
 
 Kuyruğun arkasına bir öğe ekler.
 
@@ -319,7 +319,7 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*val*\
+*Acil*\
 Sıranın arkasına eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -358,7 +358,7 @@ The queue length is 3.
 The element at the front of the queue is 10.
 ```
 
-## <a name="queue"></a>Sıradaki
+## <a name="queue"></a><a name="queue"></a>Sıradaki
 
 Boş olan veya temel kapsayıcı nesnesinin bir kopyası olan bir kuyruk oluşturur.
 
@@ -370,12 +370,12 @@ explicit queue(const container_type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Oluşturulan kuyruğun bir kopya olması gereken **const** kapsayıcısı.
+*Right*\
+**`const`** Oluşturulan kuyruğun bir kopya olduğu kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sıra için varsayılan temel kapsayıcı deque ' tır. Ayrıca, liste temel kapsayıcı olarak belirtebilirsiniz, ancak gerekli `pop_front` üye işlevine sahip olmadığından vektör belirtemezsiniz.
+Sıra için varsayılan temel kapsayıcı deque ' tır. Ayrıca, liste temel kapsayıcı olarak belirtebilirsiniz, ancak gerekli üye işlevine sahip olmadığından vektör belirtemezsiniz `pop_front` .
 
 ### <a name="example"></a>Örnek
 
@@ -425,7 +425,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.
 ```
 
-## <a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a>boyutla
 
 Kuyruktaki öğe sayısını döndürür.
 
@@ -466,7 +466,7 @@ The queue length is 1.
 The queue length is now 2.
 ```
 
-## <a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a>size_type
 
 Bir kuyruktaki öğelerin sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -476,13 +476,13 @@ typedef typename Container::size_type size_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, kuyruğa göre uyarlanan taban kapsayıcının `size_type` için bir eş anladır.
+Tür, `size_type` kuyruğa göre uyarlanan taban kapsayıcının eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
-`size_type`bildirme ve kullanma hakkında bir örnek için [Queue:: Front](#front) örneğine bakın.
+Bildirme ve kullanma hakkında bir örnek için [Queue:: Front](#front) örneğine bakın `size_type` .
 
-## <a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a>value_type
 
 Bir kuyrukta öğe olarak depolanan nesne türünü temsil eden bir tür.
 
@@ -492,7 +492,7 @@ typedef typename Container::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, kuyruğa göre uyarlanan taban kapsayıcının `value_type` için bir eş anladır.
+Tür, `value_type` kuyruğa göre uyarlanan taban kapsayıcının eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -526,5 +526,5 @@ The element at the front of the queue is 69.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

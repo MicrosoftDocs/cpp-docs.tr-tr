@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-ms.openlocfilehash: b302d6e08e401a24b465508d5ddabcae8b16bd8f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cfa03706bc6030b337009f7228466a26e242aa6b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213701"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221542"
 ---
 # <a name="mixin-structure"></a>MixIn Yapısı
 
 Çalışma zamanı sınıfının, varsa ve klasik COM arabirimlerinden Windows Çalışma Zamanı arabirimlerinden türemesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<
@@ -31,14 +31,14 @@ struct MixIn;
 
 ### <a name="parameters"></a>Parametreler
 
-*Miþ*<br/>
+*Türetilmiş*<br/>
 [Uygulayan](implements-structure.md) yapıdan türetilmiş bir tür.
 
 *MixInType*<br/>
 Temel tür.
 
 *hasImplements*<br/>
-*Mixintype* , geçerli uygulamadan türetildiyse **true** , temel türü; Aksi takdirde **false** .
+**`true`***Mixintype* , geçerli uygulamadan türetildiyse, temel tür; **`false`** Aksi takdirde.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -56,4 +56,4 @@ Bir sınıf hem Windows Çalışma Zamanı hem de sınıf COM arabirimlerinden t
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

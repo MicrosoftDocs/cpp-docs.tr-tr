@@ -10,18 +10,18 @@ helpviewer_keywords:
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-ms.openlocfilehash: 2865db023425fa301ad5440a0dc8ed491213f33f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 530168f5e259934f7d614b305e6ac1092ba68f4d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368050"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233164"
 ---
 # <a name="insert_iterator-class"></a>insert_iterator Sınıfı
 
-Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin üzerine yazar ve bu nedenle C++ dizisi ve ilişkili kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. Sınıf, `insert_iterator` uyarlanan kapsayıcıtürüne göre baştan çıkarıcıdır.
+Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin üzerine yazar ve bu nedenle C++ dizisi ve ilişkili kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `insert_iterator`Sınıfı, uyarlanmakta olan kapsayıcının türü üzerinde şablonlanmıştır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Container>
@@ -31,40 +31,40 @@ class insert_iterator;
 ### <a name="parameters"></a>Parametreler
 
 *Kapsayıcı*\
-Bir `insert_iterator`.
+Öğelerinin içine ekleneceği kapsayıcının türü `insert_iterator` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür `Container` kapsayıcı değişken boyutlu kapsayıcı gereksinimlerini karşılamak gerekir ve parametreleri tür `Container::iterator` `Container::value_type` ve bir tür `Container::iterator`döndürür iki bağımsız değişken insert üye işlevi var. C++ Standart Kitaplık sırası ve sıralanmış bağdaştırıcı kaplar `insert_iterator`bu gereksinimleri karşılar ve s ile kullanıma uyarlanabilir. İlişkilendirilebilir kapsayıcılar için, konum bağımsız değişkeni, ne kadar iyi olduğuna bağlı olarak performans düşmesi ve artması olasılığı bulunan bir gösterge olarak ele alınır. Bir `insert_iterator` her zaman konteyner ile baş harfe getirilmelidir.
+Türünün kapsayıcısı, `Container` değişken boyutlu bir kapsayıcı için gereksinimleri karşılamalıdır ve parametrelerin tür olduğu `Container::iterator` `Container::value_type` ve bir tür döndüren iki bağımsız değişkenli bir INSERT üye işlevine sahip olmalıdır `Container::iterator` . C++ standart kitaplık sırası ve sıralanmış ilişkilendirilebilir kapsayıcılar bu gereksinimleri karşılar ve ' de kullanılmak üzere uyarlanmıştır `insert_iterator` . İlişkilendirilebilir kapsayıcılar için, konum bağımsız değişkeni, ne kadar iyi olduğuna bağlı olarak performans düşmesi ve artması olasılığı bulunan bir gösterge olarak ele alınır. `insert_iterator`Her zaman kapsayıcında başlatılmış olmalıdır.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[insert_iterator](#insert_iterator)|Bir `insert_iterator` öğeyi kapsayıcıda belirli bir konuma yerleştiren bir öğe inşa eder.|
+|[insert_iterator](#insert_iterator)|Bir `insert_iterator` kapsayıcıda belirtilen konuma bir öğe ekleyen bir oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
 |[container_type](#container_type)|Genel ekleme yapılacak kapsayıcıyı temsil eden bir tür.|
-|[Başvuru](#reference)|İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.|
+|[başvurunun](#reference)|İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç*](#op_star)|Dereferencing işleci genel bir ekleme için `i`  =  `x` çıkış yineleyici ifadesi * * uygulamak için kullanılır.|
-|[işleç++](#op_add_add)|Bir değerin `insert_iterator` depolanabileceği bir sonraki konuma artışlar.|
-|[işleç=](#op_eq)|Atama işleci, genel bir ekleme için `i`  =  `x` çıktı yineleyici ifadesini * * uygulamak için kullanılır.|
+|[işlecinde](#op_star)|`i`  =  Genel bir ekleme için çıkış yineleyici ifadesini uygulamak için kullanılan işleç başvurusu `x` .|
+|[işleç + +](#op_add_add)|Değerini, `insert_iterator` bir değerin depolanabileceği bir sonraki konuma arttırır.|
+|[işleç =](#op_eq)|`i`  =  Genel ekleme için çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci `x` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi** \<: iterator>
+**Üst bilgi**:\<iterator>
 
 **Ad alanı:** std
 
-## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a>insert_iterator:container_type
+## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a>insert_iterator:: container_type
 
 Genel ekleme yapılacak kapsayıcıyı temsil eden bir tür.
 
@@ -74,7 +74,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *Kapsayıcısı*ile eş anlamlıdır.
+Tür, şablon parametresi *kapsayıcısının*eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -106,9 +106,9 @@ The list L2 is: ( 40 20 10 ).
 */
 ```
 
-## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a>insert_iterator:insert_iterator
+## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a>insert_iterator:: insert_iterator
 
-Bir `insert_iterator` öğeyi kapsayıcıda belirli bir konuma yerleştiren bir öğe inşa eder.
+Bir `insert_iterator` kapsayıcıda belirtilen konuma bir öğe ekleyen bir oluşturur.
 
 ```cpp
 insert_iterator(Container& _Cont, typename Container::iterator _It);
@@ -117,14 +117,14 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 ### <a name="parameters"></a>Parametreler
 
 *_Cont*\
-`insert_iterator` Elemanları n içine sokacak kapsayıcı.
+İçine `insert_iterator` öğe eklemek için olduğu kapsayıcı.
 
 *_It*\
-Ekleme pozisyonu.
+Ekleme konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm kapsayıcılar tarafından çağrılan insert `insert_iterator`üye işlevi ne var. Bağşandırıcı kapsayıcılar için konum parametresi sadece bir öneridir. Kesici işlevi değerlere eklemek için kullanışlı bir yol sağlar.
+Tüm kapsayıcılar, tarafından çağrılan INSERT member işlevine sahiptir `insert_iterator` . İlişkilendirilebilir kapsayıcılar için position parametresi yalnızca bir öneridir. Inserter işlevi, değerlere eklemek için uygun bir yol sağlar.
 
 ### <a name="example"></a>Örnek
 
@@ -172,9 +172,9 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_star"></a>insert_iterator::operatör*
+## <a name="insert_iteratoroperator"></a><a name="op_star"></a>insert_iterator:: operator *
 
-Öğeyi döndüren ekleme yinelemesi dereferences adresleri.
+Ekleme yineleyicisinin, öğeyi döndüren adresler olduğunu ortadan kaldırır.
 
 ```cpp
 insert_iterator<Container>& operator*();
@@ -182,11 +182,11 @@ insert_iterator<Container>& operator*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlev, ele verilen öğenin değerini döndürür.
+Üye işlevi, belirtilen öğenin değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici ifadesini =  ** \*** uygulamak için kullanılan Iter**değeri.** Bir `Iter` dizideki bir öğeyi ele alan bir yineleyici ise, ** \*Iter** = **değeri** bu öğeyi değerle değiştirir ve dizideki toplam öğe sayısını değiştirmez.
+Çıkış Yineleyici ifadesi ** \* Iter**değerini uygulamak için kullanılır  =  **value**. `Iter`Bir dizideki bir öğeyi ele alan bir yineleyici ise, ** \* Iter**  =  **değeri** bu öğenin değerini değeri ile değiştirir ve dizideki toplam öğe sayısını değiştirmez.
 
 ### <a name="example"></a>Örnek
 
@@ -232,9 +232,9 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a>insert_iterator::operator++
+## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a>insert_iterator:: operator + +
 
-Bir değerin `insert_iterator` depolanabileceği bir sonraki konuma artışlar.
+Değerini, `insert_iterator` bir değerin depolanabileceği bir sonraki konuma arttırır.
 
 ```cpp
 insert_iterator<Container>& operator++();
@@ -244,11 +244,11 @@ insert_iterator<Container> operator++(int);
 
 ### <a name="parameters"></a>Parametreler
 
-Bir `insert_iterator` değerin depolanabileceği bir sonraki konumu ele alan bir adres.
+Bir `insert_iterator` değerin depolanabileceği bir sonraki konumu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hem preincrementation hem de postincrementation operatörleri aynı sonucu döndürer.
+Hem Preincrementation hem de postincrementation işleçleri aynı sonucu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -296,9 +296,9 @@ After the insertions, the vector vec becomes:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_eq"></a>insert_iterator::operator=
+## <a name="insert_iteratoroperator"></a><a name="op_eq"></a>insert_iterator:: operator =
 
-Kapsayıcıya bir değer ekler ve yeni öğeyi işaret etmek için güncelleştirilmiş yineleyiciyi döndürür.
+Kapsayıcıya bir değer ekler ve yeni öğeye işaret etmek için güncelleştirilmiş yineleyici döndürür.
 
 ```cpp
 insert_iterator<Container>& operator=(
@@ -310,30 +310,30 @@ insert_iterator<Container>& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Val*\
+*Acil*\
 Kapsayıcıya atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcıya eklenen öğeye bir başvuru.
+Kapsayıcıya yerleştirilen öğeye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye operatör değerlendirir
+İlk üye işleci değerlendirilir
 
 `Iter = container->insert(Iter, val)`;
 
 `++Iter;`
 
-sonra `*this`döner.
+ardından döndürür **`*this`** .
 
-İkinci üye operatör değerlendirir
+İkinci üye işleci değerlendirilir
 
 `Iter = container->insert(Iter, std::move(val));`
 
 `++Iter;`
 
-sonra `*this`döner.
+ardından döndürür **`*this`** .
 
 ### <a name="example"></a>Örnek
 
@@ -379,7 +379,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratorreference"></a><a name="reference"></a>insert_iterator::başvuru
+## <a name="insert_iteratorreference"></a><a name="reference"></a>insert_iterator:: Reference
 
 İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.
 
@@ -389,7 +389,7 @@ typedef typename Container::reference reference;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, ilişkili kapsayıcı tarafından denetlendirilen dizinin bir öğesine yapılan bir başvuruyu açıklar.
+Türü, ilişkili kapsayıcı tarafından denetlenen sıranın bir öğesine başvuruyu açıklar.
 
 ### <a name="example"></a>Örnek
 
@@ -430,5 +430,5 @@ The first element in the list L is: 10.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<iterator>](../standard-library/iterator.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standart Kütüphane Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

@@ -1,45 +1,45 @@
 ---
-title: Elipsler ve Variadik Şablonlar
+title: Üç nokta ve değişken bağımsız değişken Şablonlar
 ms.date: 11/04/2016
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
-ms.openlocfilehash: 8326a6b9e75db6adc37a68aa5d5741b004d27d30
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: e916dac40355f4397ef4846c0edf568c60b7d3dd
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82031530"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221633"
 ---
-# <a name="ellipsis-and-variadic-templates"></a>Elipsler ve Variadik Şablonlar
+# <a name="ellipsis-and-variadic-templates"></a>Üç nokta ve değişken bağımsız değişken Şablonlar
 
-Bu makalede, C++ değişken şablonları ile elips ( )`...`nasıl kullanılacağı gösterilmektedir. Elipslerin C ve C++'da birçok kullanımı olmuştur. Bunlar, işlevler için değişken bağımsız değişken listeleri içerir. `printf()` C Runtime Kitaplığı işlevi en iyi bilinen örneklerden biridir.
+Bu makalede, `...` C++ değişen tek değişkenli şablonlar ile üç nokta () nasıl kullanılacağı gösterilmektedir. Üç nokta, C ve C++ ' da birçok kullanım içeriyordu. Bunlar, işlevleri için değişken bağımsız değişken listeleri içerir. `printf()`C çalışma zamanı kitaplığındaki işlev, en iyi bilinen örneklerden biridir.
 
-*Variadic şablon,* rasgele sayıda bağımsız değişkeni destekleyen bir sınıf veya işlev şablonudur. Bu mekanizma, hem sınıf şablonlarına hem de işlev şablonlarına uygulayabileceğiniz ve böylece çok çeşitli tür güvenli ve önemsiz olmayan işlevsellik ve esneklik sağlayabildiğiniz için Özellikle C++ kitaplık geliştiricileri için yararlıdır.
+Değişen bir bağımsız değişken *şablon* , rastgele sayıda bağımsız değişkeni destekleyen bir sınıf veya işlev şablonudur. Bu mekanizma, hem sınıf şablonlarına hem de işlev şablonlarına uygulayabileceğiniz ve bu sayede çok sayıda tür kullanımı güvenli ve önemsiz olmayan işlevsellik ve esneklik sağlayan C++ kitaplık geliştiricileri için yararlıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
-Bir elips variadik şablonlar tarafından iki şekilde kullanılır. Parametre adının solunda, bir *parametre paketini*ve parametre adının sağında, parametre paketlerini ayrı adlara genişletir.
+Üç nokta, değişen sayıda bağımsız değişken içeren şablonlar tarafından iki şekilde kullanılır. Parametre adının solunda, bir *parametre paketini*ve parametre adının sağından bağımsız olarak parametre paketlerini ayrı adlara genişletir.
 
-*Variadic şablon sınıf* tanımı sözdiziminin temel bir örneği aşağıda verilmiştir:
+Aşağıda, değişken sayıda bağımsız *değişken içeren şablon sınıfı* tanım sözdiziminin temel bir örneği verilmiştir:
 
 ```cpp
 template<typename... Arguments> class classname;
 ```
 
-Hem parametre paketleri hem de genişletmeler için, aşağıdaki örneklerde gösterildiği gibi, tercihinize göre elipslerin etrafına boşluk ekleyebilirsiniz:
+Hem parametre paketleri hem de genişletmeleri için, aşağıdaki örneklerde gösterildiği gibi, tercihlerinize göre üç nokta etrafında boşluk ekleyebilirsiniz:
 
 ```cpp
 template<typename ...Arguments> class classname;
 ```
 
-Ya da bu:
+Ya da şunları yapın:
 
 ```cpp
 template<typename ... Arguments> class classname;
 ```
 
-Bu makalenin ilk örnekte gösterilen kuralı kullandığına `typename`dikkat edin (elipsler eklenir).
+Bu makalede, ilk örnekte gösterilen kuralı (üç nokta eklenmiş olan) kullandığına dikkat edin **`typename`** .
 
-Önceki örneklerde, *Bağımsızlar* bir parametre paketidir. Sınıf, `classname` aşağıdaki örneklerde olduğu gibi değişken sayıda bağımsız değişken kabul edebilir:
+Yukarıdaki örneklerde *bağımsız değişkenler* bir parametre paketidir. Sınıfı `classname` , bu örneklerde olduğu gibi değişken sayıda bağımsız değişken kabul edebilir:
 
 ```cpp
 template<typename... Arguments> class vtclass;
@@ -50,21 +50,21 @@ vtclass<float, bool> vtinstance3;
 vtclass<long, std::vector<int>, std::string> vtinstance4;
 ```
 
-Değişken şablon sınıf tanımı nı kullanarak, en az bir parametre de ekleyebilirsiniz:
+Değişen bir bağımsız değişken şablon sınıfı tanımı kullanarak, en az bir parametre de gerektirebilir:
 
 ```cpp
 template <typename First, typename... Rest> class classname;
 ```
 
-*Variadic şablon işlevi* sözdiziminin temel bir örneği aşağıda verilmiştir:
+Aşağıda, değişken sayıda bağımsız *değişken şablon işlev* sözdiziminin temel bir örneği verilmiştir:
 
 ```cpp
 template <typename... Arguments> returntype functionname(Arguments... args);
 ```
 
-*Bağımsız değişken* parametre paketi, bir sonraki bölümde gösterildiği gibi, **çeşitli şablonları anlamak**için genişletilir.
+*Bağımsız değişkenler* parametre paketi daha sonra kullanılmak üzere genişletilir ve bu, sonraki bölümde gösterildiği gibi, değişken olmayan, değişken olmayan **şablonları anlama**.
 
-Variadic şablon işlev sözdizimi diğer formları mümkündür -dahil, ancak bunlarla sınırlı değildir, bu örnekler:
+Değişen bağımsız değişken şablon işlevi sözdizimi, ancak bunlarla sınırlı olmamak üzere, şunlar gibi diğer biçimleri olabilir:
 
 ```cpp
 template <typename... Arguments> returntype functionname(Arguments&... args);
@@ -72,19 +72,19 @@ template <typename... Arguments> returntype functionname(Arguments&&... args);
 template <typename... Arguments> returntype functionname(Arguments*... args);
 ```
 
-**Const** gibi belirteciler de izin verilir:
+Benzer tanımlayıcılar **`const`** da kullanılabilir:
 
 ```cpp
 template <typename... Arguments> returntype functionname(const Arguments&... args);
 ```
 
-Variadic şablon sınıf tanımlarında olduğu gibi, en az bir parametre gerektiren işlevler yapabilirsiniz:
+Değişen sayıda bağımsız değişken şablon sınıfı tanımlarında olduğu gibi, en az bir parametre gerektiren işlevler yapabilirsiniz:
 
 ```cpp
 template <typename First, typename... Rest> returntype functionname(const First& first, const Rest&... args);
 ```
 
-Variadic şablonlar `sizeof...()` işleci (eski `sizeof()` işleç ile ilgisi olmayan) kullanın:
+Bağımsız değişken olmayan şablonlar `sizeof...()` işleci kullanır (eski `sizeof()` işleçle ilgisi yoktur):
 
 ```cpp
 template<typename... Arguments>
@@ -98,13 +98,13 @@ void tfunc(const Arguments&... args)
 }
 ```
 
-## <a name="more-about-ellipsis-placement"></a>Elips yerleşimi hakkında daha fazla şey
+## <a name="more-about-ellipsis-placement"></a>Üç nokta yerleşimi hakkında daha fazla bilgi
 
-Daha önce, bu makalede, parametre paketleri ve açılımları "parametre adının solunda, parametre paketini belirtir ve parametre adının sağında, parametre paketlerini ayrı adlara genişletir" olarak tanımlayan elips yerleşimi açıklanmıştır. Bu teknik olarak doğrudur, ancak koda çeviri de kafa karıştırıcı olabilir. Aşağıdakileri dikkate alın:
+Daha önce Bu makalede parametre paketlerinin solunda "parametre adı ve genişletmeleri tanımlayan üç nokta yerleşimi açıklanmış, bir parametre paketi ve parametre adının sağında, parametre paketleri ayrı adlara genişletilir". Bu teknik açıdan doğrudur ancak koda çeviri için kafa karıştırıcı olabilir. Aşağıdakileri dikkate alın:
 
-- Şablon parametre listesinde (`template <parameter-list>`), `typename...` şablon parametre paketini tanır.
+- Bir Template-List ( `template <parameter-list>` ) parametresinde `typename...` bir şablon parametre paketi tanıtılmıştır.
 
-- Parametre-deklarasyon-yan`func(parameter-list)`tümcesinde ( ), "üst düzey" elips bir işlev parametre paketi sunar ve elips konumlandırma önemlidir:
+- Bir parametre-yan tümce () içinde `func(parameter-list)` , "üst düzey" üç nokta bir işlev parametre paketi tanıtır ve üç nokta konumlandırma önemlidir:
 
     ```cpp
     // v1 is NOT a function parameter pack:
@@ -114,11 +114,11 @@ Daha önce, bu makalede, parametre paketleri ve açılımları "parametre adın�
     template <typename... Types> void func2(std::vector<Types>... v2);
     ```
 
-- Elipsin bir parametre adından hemen sonra görüntülendiği durumlarda, parametre paketi genişletmeniz gerekir.
+- Üç nokta bir parametre adından hemen sonra göründüğünde bir parametre paketi genişletmeye sahip olursunuz.
 
 ## <a name="example"></a>Örnek
 
-Variadik şablon işlev mekanizmasıgöstermek için iyi bir yolu bazı işlevsellik bir yeniden `printf`yazmak kullanmaktır:
+Değişen sayıda bağımsız değişken şablon işlev mekanizmasını belirtmenin iyi bir yolu, bazı işlevlerinden bazılarının yeniden yazılması halinde kullanmaktır `printf` :
 
 ```cpp
 #include <iostream>
@@ -161,4 +161,4 @@ first, 2, third, 3.14159
 ```
 
 > [!NOTE]
-> Variadik şablon işlevlerini içeren uygulamaların çoğu, bazı formların özyinelemesini kullanır, ancak geleneksel özyinelemeden biraz farklıdır.  Geleneksel özyineleme, aynı imzayı kullanarak kendisini çağıran bir işlev içerir. (Aşırı yüklenmiş veya şablonlanmış olabilir, ancak her seferinde aynı imza seçilir.) Variadic özyineleme, farklı (hemen hemen her zaman azalan) bağımsız değişken sayılarını kullanarak ve bu nedenle her seferinde farklı bir imzayı damgalayarak variadik bir işlev şablonu çağırmayı içerir. Bir "temel durum" hala gereklidir, ancak özyinelemenin doğası farklıdır.
+> Değişken bağımsız değişken şablon işlevleri içeren çoğu uygulama, bazı formun özyineleme kullanır, ancak geleneksel özyinelemeden biraz farklıdır.  Geleneksel özyineleme aynı imzayı kullanarak kendisini çağıran bir işlev içerir. (Aşırı yüklenmiş veya şablonlu olabilir, ancak her seferinde aynı imza seçilir.) Değişen sayıda özyineleme, farklı (neredeyse her zaman azalan) bağımsız değişken kullanarak değişen bir değişken işlev şablonunun çağrılmasını ve böylece her seferinde farklı bir imzayı damgalamayı içerir. "Temel Case" yine de gereklidir, ancak özyineleme doğası farklıdır.

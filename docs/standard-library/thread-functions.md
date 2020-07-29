@@ -1,5 +1,5 @@
 ---
-title: '&lt;iş&gt; parçacığı fonksiyonları'
+title: '&lt;iş parçacığı &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - thread/std::get_id
@@ -14,23 +14,23 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: bb0a0a12ec2882701447804f9c88d1776a196cb7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 130328ca07de28e14eedd7fdc99fb8946f26c5cb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375844"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232865"
 ---
-# <a name="ltthreadgt-functions"></a>&lt;iş&gt; parçacığı fonksiyonları
+# <a name="ltthreadgt-functions"></a>&lt;iş parçacığı &gt; işlevleri
 
 ||||
 |-|-|-|
 |[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|
-|[Takas](#swap)|[yield](#yield)|
+|[Kur](#swap)|[yield](#yield)|
 
 ## <a name="get_id"></a><a name="get_id"></a>get_id
 
-Özgün olarak yürütme nin geçerli iş parçacığı tanımlar.
+Yürütmenin geçerli iş parçacığını benzersiz şekilde tanımlar.
 
 ```cpp
 thread::id this_thread::get_id() noexcept;
@@ -38,11 +38,11 @@ thread::id this_thread::get_id() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yürütme iş parçacığıtanımlayan tür [iş parçacığı::id](../standard-library/thread-class.md) nesnesi.
+Yürütmenin geçerli iş parçacığını benzersiz bir şekilde tanımlayan [thread:: ID](../standard-library/thread-class.md) türünde bir nesne.
 
 ## <a name="sleep_for"></a><a name="sleep_for"></a>sleep_for
 
-Arama iş parçacığı engeller.
+Çağıran iş parçacığını engeller.
 
 ```cpp
 template <class Rep,
@@ -53,15 +53,15 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 ### <a name="parameters"></a>Parametreler
 
 *Rel_time*\
-Bir zaman aralığı belirten bir [süre](../standard-library/duration-class.md) nesnesi.
+Bir zaman aralığı belirten [Duration](../standard-library/duration-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *Rel_time*tarafından belirtilen en az süre için çağrı iş parçacığı engeller. Bu işlev herhangi bir özel durum atmaz.
+İşlevi çağıran iş parçacığını en az *Rel_time*tarafından belirtilen zaman için engeller. Bu işlev hiçbir özel durum oluşturmaz.
 
 ## <a name="sleep_until"></a><a name="sleep_until"></a>sleep_until
 
-Arama iş parçacığının en azından belirtilen zamana kadar engellemesi.
+Çağıran iş parçacığını, belirtilen saate kadar en az kadar engeller.
 
 ```cpp
 template <class Clock, class Duration>
@@ -77,11 +77,11 @@ Zaman içinde bir noktayı temsil eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev herhangi bir özel durum atmaz.
+Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="swap"></a><a name="swap"></a>Takas
+## <a name="swap"></a><a name="swap"></a>Kur
 
-İki **iş parçacığı** nesnesinin durumlarını değiştirir.
+İki nesnenin durumunu değiştirir `thread` .
 
 ```cpp
 void swap(thread& Left, thread& Right) noexcept;
@@ -89,19 +89,19 @@ void swap(thread& Left, thread& Right) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Sol **iş parçacığı nesnesi.**
+*Tarafta*\
+Sol `thread` nesne.
 
-*Doğru*\
-Sağ **iş parçacığı nesnesi.**
+*Right*\
+Doğru `thread` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Fonksiyon çağırır. `Left.swap(Right)`
+İşlev çağırır `Left.swap(Right)` .
 
-## <a name="yield"></a><a name="yield"></a>Verim
+## <a name="yield"></a><a name="yield"></a>yield
 
-Geçerli iş parçacığı normalde çalışmaya devam etse bile, işletim sisteminin diğer iş parçacıklarını çalıştırmasını bildirir.
+Geçerli iş parçacığı normalde çalışmaya devam edebilse bile, işletim sistemine diğer iş parçacıklarını çalıştırmasını bildirir.
 
 ```cpp
 inline void yield() noexcept;
@@ -109,4 +109,4 @@ inline void yield() noexcept;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<iş parçacığı>](../standard-library/thread.md)
+[\<thread>](../standard-library/thread.md)

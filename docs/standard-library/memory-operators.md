@@ -1,5 +1,5 @@
 ---
-title: '&lt;bellek&gt; işleçleri'
+title: '&lt;bellek &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - memory/std::operator!=
@@ -10,16 +10,16 @@ f1_keywords:
 - memory/std::operator<<
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-ms.openlocfilehash: 661f1bb4c0f5734d88dd23f73c69b362f59a76c2
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 15762e4853cfd018c7cff997a3ed9ba7d86b3c2e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419933"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233060"
 ---
-# <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
+# <a name="ltmemorygt-operators"></a>&lt;bellek &gt; işleçleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 Nesneler arasında eşitsizlik için testler.
 
@@ -42,10 +42,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Eşitsizlik için test edilecek nesnelerden biri.
 
-*sağ*\
+*Right*\
 Eşitsizlik için test edilecek nesnelerden biri.
 
 *Ty1*\
@@ -56,13 +56,13 @@ Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesneler eşit değilse **true** ; nesneler eşitse **false** .
+**`true`** nesneler eşitse; **`false`** Eğer nesneler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk şablon işleci false döndürür. (Varsayılan ayrıcılar eşittir.)
 
-İkinci ve üçüncü şablon işleçleri `!(left == right)`döndürür.
+İkinci ve üçüncü şablon işleçleri döndürülür `!(left == right)` .
 
 ### <a name="example"></a>Örnek
 
@@ -120,7 +120,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 Nesneler arasındaki eşitlik için testler.
 
@@ -143,10 +143,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Eşitlik için test edilecek nesnelerden biri.
 
-*sağ*\
+*Right*\
 Eşitlik için test edilecek nesnelerden biri.
 
 *Ty1*\
@@ -157,13 +157,13 @@ Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-nesneler eşitse **true** , nesneler eşitse **false** .
+**`true`** nesneler eşitse **`false`** nesneler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İlk şablon işleci true döndürür. (Varsayılan ayrıcılar eşittir.)
 
-İkinci ve üçüncü şablon işleçleri `left.get() ==  right.get()`döndürür.
+İkinci ve üçüncü şablon işleçleri döndürülür `left.get() ==  right.get()` .
 
 ### <a name="example"></a>Örnek
 
@@ -232,7 +232,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
 Bir nesne için ikinci bir nesneden büyük veya ona eşit olan testler.
 
@@ -250,10 +250,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılacak nesnelerden biri.
 
-*sağ*\
+*Right*\
 Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
@@ -264,9 +264,9 @@ Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleçleri `left.get() >= right.get()`döndürür.
+Şablon işleçleri döndürülür `left.get() >= right.get()` .
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
 Bir nesne için ikinci bir nesneden daha az olan testler.
 
@@ -284,10 +284,10 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılacak nesnelerden biri.
 
-*sağ*\
+*Right*\
 Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
@@ -296,7 +296,7 @@ Sol işaretçiye göre denetlenen tür.
 *Ty2*\
 Sağ işaretçiye göre denetlenen tür.
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
 Bir nesne için ikinci bir nesneden daha az veya eşit olan testler.
 
@@ -314,10 +314,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılacak nesnelerden biri.
 
-*sağ*\
+*Right*\
 Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
@@ -328,9 +328,9 @@ Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleçleri `left.get() <= right.get()` döndürür
+Şablon işleçleri döndürüyor`left.get() <= right.get()`
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
 Bir nesne için ikinci bir nesneden daha büyük olan testler.
 
@@ -348,10 +348,10 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Karşılaştırılacak nesnelerden biri.
 
-*sağ*\
+*Right*\
 Karşılaştırılacak nesnelerden biri.
 
 *Ty1*\
@@ -360,7 +360,7 @@ Sol paylaşılan işaretçi tarafından denetlenen tür.
 *Ty2*\
 Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
-## <a name="op_lt_lt"></a>işleç&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
 
 Paylaşılan işaretçiyi akışa yazar.
 
@@ -372,24 +372,24 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### <a name="parameters"></a>Parametreler
 
-*Eled*\
+*Elem*\
 Stream öğesinin türü.
 
 *Tr*\
 Stream öğesi nitelikleri yazın.
 
-*Ty*\
+*Kalite*\
 Paylaşılan işaretçi tarafından denetlenen tür.
 
-*out*\
+*dışı*\
 Çıkış akışı.
 
-*sp*\
+*SP2*\
 Paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `out << sp.get()`döndürür.
+Şablon işlevi döndürür `out << sp.get()` .
 
 ### <a name="example"></a>Örnek
 

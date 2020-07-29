@@ -7,18 +7,18 @@ helpviewer_keywords:
 - is_pointer class
 - is_pointer
 ms.assetid: 44e0a403-7241-4e0a-8922-32877bcb9a4c
-ms.openlocfilehash: d8b15f9eb5ef817f5576387b0d8119b86aa86af7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3429875f53d65de0161c4d6f87fde7a335bb369e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455739"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222348"
 ---
-# <a name="ispointer-class"></a>is_pointer Sınıfı
+# <a name="is_pointer-class"></a>is_pointer Sınıfı
 
 Tür bir işaretçisiyse sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -32,7 +32,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri **void**, bir nesnenin işaretçisi veya bir işlevin işaretçisi ya `cv-qualified` da birinin bir biçimi ise, yanlış bir değer içeriyorsa tür belirtiminin bir örneği true değerini tutar. Ty bir üye işaretçisi veya  üye işlevine yönelik bir işaretçi ise, yanlış bir değer içerir.`is_pointer`
+Tür değeri bir işaretçi, bir nesne işaretçisi veya bir işlev işaretçisi ya da bunlardan birinin bir biçimi ise, yanlış *bir değer içeriyorsa* tür belirtiminin bir örneği true olarak tutulur **`void`** `cv-qualified` . `is_pointer` *Ty* bir üye işaretçisi veya üye işlevine yönelik bir işaretçi ise, yanlış bir değer içerir.
 
 ## <a name="example"></a>Örnek
 
@@ -74,12 +74,12 @@ is_pointer<int *> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [is_member_pointer sınıfı](../standard-library/is-member-pointer-class.md)\
-[is_reference Sınıfı](../standard-library/is-reference-class.md)
+[is_reference sınıfı](../standard-library/is-reference-class.md)

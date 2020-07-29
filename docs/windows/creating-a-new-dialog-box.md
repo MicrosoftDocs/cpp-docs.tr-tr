@@ -12,16 +12,16 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 3eae1aca53c40a33b8d120b02fdde8f68d58b723
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0d5e4836933f1ce32f28c7fd03c81be5b7d09fd9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160431"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87222088"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Iletişim kutusu oluşturma (C++)
 
-Bir C++ iletişim kutusunun konumu ve boyutu ve içindeki denetimlerin konumu ve boyutu iletişim kutusu birimlerinde ölçülür. Tek tek denetimlerin değerleri ve iletişim kutusu, siz seçtiğinizde Visual Studio durum çubuğunun sağ alt kısmında görünür.
+C++ iletişim kutusunun konumu ve boyutu ve içindeki denetimlerin konumu ve boyutu iletişim kutusu birimlerinde ölçülür. Tek tek denetimlerin değerleri ve iletişim kutusu, siz seçtiğinizde Visual Studio durum çubuğunun sağ alt kısmında görünür.
 
 > [!NOTE]
 > Projeniz zaten bir. rc dosyası içermiyorsa, bkz. [Yeni kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
@@ -36,7 +36,7 @@ Bir C++ iletişim kutusunun konumu ve boyutu ve içindeki denetimlerin konumu ve
 
 1. **Kaynak Ekle** Iletişim kutusunda **kaynak türü** listesinden **diyalog** ' ı seçin ve ardından **Yeni**' yi seçin.
 
-   **İletişim** kutusu kaynak türünün yanında bir artı işareti ( **+** ) görünürse, iletişim kutusu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
+   **+** **İletişim** kutusu kaynak türünün yanında bir artı işareti () görünürse, iletişim kutusu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
 
    **İletişim kutusu düzenleyicisinde**yeni iletişim kutusu açılır.
 
@@ -46,7 +46,7 @@ Ayrıca, düzenleme için Iletişim kutusu düzenleyicisinde varolan iletişim k
 
 Bir kullanıcının çıkamayacağı bir çalışma zamanı iletişim kutusu oluşturabilirsiniz. Bu tür iletişim kutusu, oturum açma işlemleri için ve uygulama veya belge kilitleri için kullanışlıdır.
 
-1. İletişim kutusunun **Özellikler** bölmesinde, **Sistem menü** özelliğini **false**olarak ayarlayın.
+1. İletişim kutusunun **Özellikler** bölmesinde, **Sistem menü** özelliğini olarak ayarlayın **`false`** .
 
    Bu ayar, iletişim kutusu sistem menüsünü ve **Kapat** düğmesini devre dışı bırakır.
 
@@ -57,7 +57,7 @@ Bir kullanıcının çıkamayacağı bir çalışma zamanı iletişim kutusu olu
 Bu tür bir iletişim kutusunun test edilmesini etkinleştirmek için, **ESC** tuşuna basıldığında test iletişim kutusu işlevi algılanır. **ESC** , vk_escape sanal anahtarı olarak da bilinir. İletişim kutusunun çalışma zamanında davranması için nasıl tasarlandığına bakılmaksızın **ESC**tuşuna basarak test modunu sona bırakabilirsiniz.
 
 > [!NOTE]
-> MFC uygulamalarında, kullanıcıların çıkamayacağı bir iletişim kutusu oluşturmak için, `OnOK` ve `OnCancel` varsayılan davranışını geçersiz kılmanız gerekir, çünkü ilişkili düğmeleri silseniz bile, iletişim kutusu **ENTER** veya **ESC**tuşuna basarak yine de kapatılabilir.
+> MFC uygulamalarında, kullanıcıların çıkamayacağı bir iletişim kutusu oluşturmak için, varsayılan davranışını geçersiz kılmanız gerekir `OnOK` `OnCancel` , çünkü ilişkili düğmeleri silseniz bile, Iletişim kutusu **ENTER** veya **ESC**tuşuna basarak yine de kapatılabilir.
 
 ### <a name="to-specify-the-location-and-size-of-a-dialog-box"></a>Bir iletişim kutusunun konumunu ve boyutunu belirtmek için
 
@@ -69,7 +69,7 @@ Bir iletişim kutusunun ekranda görüneceği yeri belirtmek için [Özellikler 
 
 - Açık olarak görüntülenen iletişim kutusunun görüneceği yeri açıkça tanımlamak için kullanılan **XPos** ve **enpos** özellikleri.
 
-   Bu konum özellikleri, `{X=0, Y=0}`olarak tanımlanan, görüntüleme alanının sol üst köşesinden alınan değerlerdir.
+   Bu konum özellikleri, olarak tanımlanan görüntüleme alanının sol üst köşesinden alınan değerlerdir `{X=0, Y=0}` .
 
 - Konumu etkileyen **mutlak hizalama** özelliği.
 
@@ -92,7 +92,7 @@ Bir iletişim kutusu tasarlarken, programınızı derlemeden çalışma zamanı 
 
 Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresine göreli bir konumda görüntülenir. İletişim kutusu **mutlak hizalama** özelliğini **doğru**olarak ayarladıysanız, iletişim kutusu ekranın sol üst köşesine göre bir konumda görüntülenir.
 
-1. **Iletişim kutusu Düzenleyicisi** etkin pencere olduğunda, menü **biçimi** > **test iletişim kutusuna**gidin.
+1. **İletişim kutusu Düzenleyicisi** etkin pencere olduğunda menü **biçimlendirme**  >  **test iletişim kutusuna**gidin.
 
 1. Benzetimi sonlandırmak için **ESC** tuşuna basın veya test ettiğiniz Iletişim kutusunda **Kapat** düğmesini seçin.
 
@@ -102,5 +102,5 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
+[İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>
 [Nasıl yapılır: Iletişim kutusu denetimlerini yönetme](../windows/controls-in-dialog-boxes.md)<br/>

@@ -6,18 +6,18 @@ helpviewer_keywords:
 - catching exceptions, thrown from MSIL
 - MSIL, catching exceptions in native code
 ms.assetid: c15afd2b-8505-43bf-8a4a-f1d41532a124
-ms.openlocfilehash: 23adb573a62e93933c487f611c05aed4c08494ef
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 6f2de640a2427bb1ea65d099742967454ca625f6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988272"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221360"
 ---
 # <a name="how-to-catch-exceptions-in-native-code-thrown-from-msil"></a>Nasıl yapılır: MSIL'den Oluşan Yerel Kodda Catch Özel Durumları
 
-Yerel kodda, MSIL 'den yerel C++ özel durumu yakalayabilirsiniz.  `__try` ve `__except`CLR özel durumlarını yakalayabilir.
+Yerel kodda yerel C++ özel durumunu MSIL 'den yakalayabilirsiniz.  CLR özel durumlarını ve ile yakalayabilirsiniz `__try` **`__except`** .
 
-Daha fazla bilgi için bkz. [özel durumlar ve hata işleme C++ için](../cpp/errors-and-exception-handling-modern-cpp.md) [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md) ve modern en iyi uygulamalar.
+Daha fazla bilgi için bkz. [özel durumlar ve hata işleme Için](../cpp/errors-and-exception-handling-modern-cpp.md) [yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md) ve modern C++ en iyi uygulamaları.
 
 ## <a name="example"></a>Örnek
 

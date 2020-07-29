@@ -7,24 +7,24 @@ helpviewer_keywords:
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-ms.openlocfilehash: 3c44c5e7651bb1c5b4c28654b896cbe64bd5bec7
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: a91f82d0377b9065c2927e61e9f2a558a49985f0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988646"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221373"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
 
-Bir <xref:System.String> nesnenin karakterlerine, `wchar_t*` dizeleri alan yönetilmeyen işlevlere yönelik yüksek performanslı çağrılar için erişebilirsiniz. Yöntemi, <xref:System.String> nesnesinin ilk karakterine iç işaretçi verir. Bu işaretçi doğrudan veya sabitlenebilir ve sıradan bir `wchar_t` dizesi bekleyen bir işleve geçirilebilir.
+<xref:System.String>Dizelerin bulunduğu yönetilmeyen işlevlere yönelik yüksek performanslı çağrılar için bir nesnenin karakterlerine erişebilirsiniz `wchar_t*` . Yöntemi, nesnenin ilk karakterine iç işaretçi verir <xref:System.String> . Bu işaretçi doğrudan veya sabitlenebilir ve normal bir dize bekleyen bir işleve geçirilebilir **`wchar_t`** .
 
 ## <a name="example"></a>Örnek
 
-`PtrToStringChars`, iç işaretçi olan (`byref`olarak da bilinir) bir <xref:System.Char>döndürür. Bu nedenle, atık toplamaya tabidir. Yerel bir işleve geçemediğiniz takdirde bu işaretçiyi sabitlemek zorunda kalmazsınız.
+`PtrToStringChars`<xref:System.Char>iç işaretçi (de olarak da bilinir) olan bir döndürür `byref` . Bu nedenle, atık toplamaya tabidir. Yerel bir işleve geçemediğiniz takdirde bu işaretçiyi sabitlemek zorunda kalmazsınız.
 
-Aşağıdaki kodu göz önünde bulundurun.  `ppchar` iç işaretçi olduğundan ve çöp toplayıcı işaret ettiği dizeyi gösteriyorsa, `ppchar`da güncelleştirir. [Pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)olmadan, kod çalışır ve sabitleme nedeniyle olası performans okuması yoktur.
+Aşağıdaki kodu göz önünde bulundurun.  `ppchar`İç işaretçi olduğundan ve çöp toplayıcı işaret ettiği dizeyi işaret ediyorsa, bu işlem de güncelleştirilecek `ppchar` . [Pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md)olmadan, kod çalışır ve sabitleme nedeniyle olası performans okuması yoktur.
 
-`ppchar` yerel bir işleve geçirirseniz, bir sabitleme işaretçisi olmalıdır; Çöp toplayıcı, yönetilmeyen yığın çerçevesindeki işaretçileri güncelleştiremeyecektir.
+`ppchar`Yerel bir işleve geçirirseniz, bunun sabitleme işaretçisi olması gerekir; çöp toplayıcı yönetilmeyen yığın çerçevesindeki işaretçileri güncelleştiremeyecektir.
 
 ```cpp
 // PtrToStringChars.cpp
@@ -77,7 +77,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-İç işaretçinin bir yerel C++ işaretçinin tüm özellikleri vardır. Örneğin, bir bağlı veri yapısına yol göstermek ve yalnızca bir işaretçiyi kullanarak eklemeler ve silmeler yapmak için kullanabilirsiniz:
+İç işaretçinin tüm özelliklerine sahip bir yerel C++ işaretçisi vardır. Örneğin, bir bağlı veri yapısına yol göstermek ve yalnızca bir işaretçiyi kullanarak eklemeler ve silmeler yapmak için kullanabilirsiniz:
 
 ```cpp
 // PtrToStringChars_3.cpp
@@ -101,4 +101,4 @@ void deleteNode( ListNode ^ list, Int32 e ) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

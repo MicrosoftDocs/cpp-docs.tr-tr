@@ -1,23 +1,23 @@
 ---
-title: RDX (C++ com özniteliği)
+title: RDX (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.rdx
 helpviewer_keywords:
 - rdx attribute
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
-ms.openlocfilehash: f0140b759b1d78eb1284213a0dc47d9600b2a83b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b5f0981f249653b1068e2fbec3d02d3209d5f935
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214636"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232761"
 ---
 # <a name="rdx"></a>rdx
 
 Bir kayıt defteri anahtarı oluşturur veya var olan bir kayıt defteri anahtarını değiştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ rdx(key, valuename=NULL, regtype) ]
@@ -32,11 +32,11 @@ Oluşturulacak veya açılacak anahtarın adı.
 Seçim Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarda zaten yoksa, eklenir.
 
 *regtype*<br/>
-Eklenmekte olan kayıt defteri anahtarının türü. Aşağıdakilerden biri olabilir: `text`, `dword`, `binary`veya `CString`.
+Eklenmekte olan kayıt defteri anahtarının türü. Aşağıdakilerden biri olabilir: `text` , `dword` , `binary` veya `CString` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**RDX** C++ özniteliği bir com bileşeni için var olan bir kayıt defteri anahtarı oluşturur veya değiştirir. Özniteliği, hedef üyeyi uygulayan nesnesine bir BEGIN_RDX_MAP makrosu ekler. `RegistryDataExchange`, BEGIN_RDX_MAP makrosunun bir sonucu olarak eklenen bir işlev, kayıt defteri ve veri üyeleri arasında veri aktarmak için kullanılabilir
+**RDX** C++ ÖZNITELIĞI bir com bileşeni için var olan bir kayıt defteri anahtarı oluşturur veya değiştirir. Özniteliği, hedef üyeyi uygulayan nesnesine bir BEGIN_RDX_MAP makrosu ekler. `RegistryDataExchange`BEGIN_RDX_MAP makrosunun bir sonucu olarak eklenen bir işlev, kayıt defteri ve veri üyeleri arasında veri aktarmak için kullanılabilir
 
 Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) öznitelikleri ya da bunlardan birini belirten diğer özniteliklerle birlikte kullanılabilir.
 
@@ -46,7 +46,7 @@ Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-pro
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf** veya **Yapı** üyesi|
+|**Şunlara uygulanır**|**`class`** veya **`struct`** üye|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -78,5 +78,5 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM Öznitelikleri](com-attributes.md)<br/>
+[COM öznitelikleri](com-attributes.md)<br/>
 [registration_script](registration-script.md)

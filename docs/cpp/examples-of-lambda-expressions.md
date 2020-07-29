@@ -4,22 +4,22 @@ ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 106417519d00da1363f214492af9657712487088
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 585e76119b0e848e322c88ad0149ebb42c6b5b1d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320350"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221607"
 ---
 # <a name="examples-of-lambda-expressions"></a>Lambda İfadeleri Örnekleri
 
-Bu makalede, lambda ifadelerinin programlarınızda nasıl kullanılacağı gösterilmektedir. lambda ifadelerine genel bir bakış için [Lambda İfadeleri](../cpp/lambda-expressions-in-cpp.md)bölümüne bakın. Lambda ifadesinin yapısı hakkında daha fazla bilgi için [Bkz. Lambda Expression Sözdizimi.](../cpp/lambda-expression-syntax.md)
+Bu makalede, lambda ifadelerinin programlarınızda nasıl kullanılacağı gösterilmektedir. Lambda ifadelerine genel bakış için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md). Lambda ifadesinin yapısı hakkında daha fazla bilgi için bkz. [lambda Ifadesi sözdizimi](../cpp/lambda-expression-syntax.md).
 
-## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a>Lambda İfadelerini Bildirme
+## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a>Lambda Ifadelerini bildirme
 
 ### <a name="example-1"></a>Örnek 1
 
-Lambda ifadesi yazıldığı için, burada gösterildiği gibi **otomatik** değişkene veya [bir işlev](../standard-library/function-class.md) nesnesine atayabilirsiniz:
+Bir lambda ifadesi yazıldığı için, **`auto`** [`function`](../standard-library/function-class.md) burada gösterildiği gibi bir değişkene veya nesnesine atayabilirsiniz:
 
 ### <a name="code"></a>Kod
 
@@ -55,13 +55,13 @@ int main()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [bkz: otomatik](../cpp/auto-cpp.md), [işlev Sınıfı](../standard-library/function-class.md)ve [Fonksiyon Çağrısı](../cpp/function-call-cpp.md).
+Daha fazla bilgi için bkz [`auto`](../cpp/auto-cpp.md) ., [ `function` sınıf](../standard-library/function-class.md)ve [işlev çağrısı](../cpp/function-call-cpp.md).
 
-Lambda ifadeleri en sık bir işlevin gövdesinde belirtilir, ancak bunları bir değişkeni başharfe atabileceğiniz her yerde bildirebilirsiniz.
+Lambda ifadeleri çoğu zaman bir işlevin gövdesinde bildirilmesine rağmen, bunları bir değişken başlatabileceğiniz her yerde bildirebilirsiniz.
 
 ### <a name="example-2"></a>Örnek 2
 
-Microsoft C++ derleyicisi, ifade çağrıldığında değil, ifade bildirilirken yakalanan değişkenlere bir lambda ifadesini bağlar. Aşağıdaki örnekte, yerel değişkeni `i` değere göre ve yerel `j` değişkeni referansa göre yakalayan bir lambda ifadesi gösterilmektedir. Lambda ifadesi `i` değere göre yakalandığından, `i` programın daha sonra yeniden atanması ifadenin sonucunu etkilemez. Ancak lambda ifadesi `j` referansla yakalandığı için, yeniden `j` atama ifadenin sonucunu etkiler.
+Microsoft C++ derleyicisi, ifade çağrıldığında bir lambda ifadesini yakalanan değişkenlere bağlar. Aşağıdaki örnek, yerel değişkeni `i` değere göre ve yerel değişkeni başvuruya göre yakalayan bir lambda ifadesi gösterir `j` . Lambda ifadesi değere göre yakaladığı için `i` , `i` daha sonra programda yeniden atama ifadenin sonucunu etkilemez. Ancak, lambda ifadesi başvuruya göre yakaladığı için `j` , öğesinin yeniden atanması `j` ifadenin sonucunu etkiler.
 
 ### <a name="code"></a>Kod
 
@@ -97,15 +97,15 @@ int main()
 47
 ```
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a>Lambda İfadelerini Arama
+## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a>Lambda Ifadeleri çağırma
 
-Bir lambda ifadeyi sonraki kod parçacığında gösterildiği gibi anında çağırabilirsiniz. İkinci snippet, bir lambda'nın C++ Standart Kitaplık algoritmalarına `find_if`nasıl geçirilir gibi bir argüman olarak nasıl geçirilir olduğunu gösterir.
+Bir lambda ifadeyi sonraki kod parçacığında gösterildiği gibi anında çağırabilirsiniz. İkinci kod parçacığı, bir lambda gibi C++ standart kitaplık algoritmalarına bağımsız değişken olarak nasıl geçirileceğini gösterir `find_if` .
 
 ### <a name="example-1"></a>Örnek 1
 
-Bu örnek, iki tamsayı toplamını döndüren ve ifadeyi hemen bağımsız `5` değişkenlerle çağıran bir lambda ifadesini bildirir ve: `4`
+Bu örnek, iki tamsayının toplamını döndüren bir lambda ifadesi bildirir ve ifadeyi bağımsız değişkenlerle hemen çağırır `5` `4` :
 
 ### <a name="code"></a>Kod
 
@@ -130,7 +130,7 @@ int main()
 
 ### <a name="example-2"></a>Örnek 2
 
-Bu örnek, `find_if` işleviçin bir argüman olarak bir lambda ifade geçer. Lambda ifadesi, parametresi çift sayı ise **doğru** döndürür.
+Bu örnek, bir lambda ifadesini işlevine bağımsız değişken olarak geçirir `find_if` . Lambda ifadesi, **`true`** parametresi çift sayı ise döndürür.
 
 ### <a name="code"></a>Kod
 
@@ -175,11 +175,11 @@ The first even number in the list is 42.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`find_if` İşlev hakkında daha fazla bilgi için [find_if bkz.](../standard-library/algorithm-functions.md#find_if) Ortak algoritmalar gerçekleştiren C++ Standart Kitaplığı işlevleri hakkında daha fazla bilgi için [ \<algoritma>](../standard-library/algorithm.md)bakın.
+İşlevi hakkında daha fazla bilgi için `find_if` bkz [`find_if`](../standard-library/algorithm-functions.md#find_if) .. Ortak algoritmaları gerçekleştiren C++ standart kitaplığı işlevleri hakkında daha fazla bilgi için bkz [`<algorithm>`](../standard-library/algorithm.md) ..
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a>Nesting Lambda İfadeler
+## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a>Lambda Ifadeleri iç içe geçme
 
 ### <a name="example"></a>Örnek
 
@@ -213,15 +213,15 @@ int main()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu örnekte, `[](int y) { return y * 2; }` iç içe lambda ifadesidir.
+Bu örnekte, `[](int y) { return y * 2; }` iç içe lambda ifadesi olur.
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a>Yüksek Sipariş Lambda Fonksiyonları
+## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a>Daha yüksek sıralı Lambda Işlevleri
 
 ### <a name="example"></a>Örnek
 
-Birçok programlama dili *daha yüksek sıralı işlev* kavramını destekler. Yüksek sıralı işlev, başka bir lambda ifadesini kendi bağımsız değişkeni olarak alan veya döndüren bir lambda ifadesidir. [C++](../standard-library/function-class.md) lambda ifadesinin daha üst düzey bir işlev gibi davranmasını sağlamak için işlev sınıfını kullanabilirsiniz. Aşağıdaki örnek, bir nesneyi döndüren bir `function` lambda ifadesini `function` ve nesneyi bağımsız değişken olarak alan lambda ifadesini gösterir.
+Birçok programlama dili, *daha yüksek sıralı bir işlev* kavramını destekler. Yüksek sıralı işlev, başka bir lambda ifadesini kendi bağımsız değişkeni olarak alan veya döndüren bir lambda ifadesidir. [`function`](../standard-library/function-class.md)Sınıfını, bir C++ lambda ifadesinin daha yüksek sıralı bir işlev gibi davranmasını sağlamak için kullanabilirsiniz. Aşağıdaki örnek, bir nesnesi `function` ve bağımsız değişkeni olarak bir nesnesi alan bir lambda ifadesi döndüren bir lambda ifadesini gösterir `function` .
 
 ### <a name="code"></a>Kod
 
@@ -264,16 +264,16 @@ int main()
 30
 ```
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a>Bir İşlevde Lambda İfadesi Kullanma
+## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a>Bir Işlevde lambda Ifadesi kullanma
 
 ### <a name="example"></a>Örnek
 
-Bir fonksiyonun gövdesinde lambda ifadeleri kullanabilirsiniz. Lambda ifadesi, çevreleyen işlevin erişebileceği herhangi bir işleve veya veri üyesine erişebilir. Çevreleyen sınıfın işlevlerine ve veri üyelerine erişim sağlamak için **bu** işaretçiyi açıkça veya dolaylı olarak yakalayabilirsiniz.
-**Visual Studio 2017 sürüm 15.3 ve sonrası** [(/std:c++17](../build/reference/std-specify-language-standard-version.md)`[*this]`ile kullanılabilir ): Lambda, özgün nesne kapsam dışına çıktıktan sonra kodun yürütülebileceği eşzamanlı veya paralel işlemlerde kullanıldığında **bunu** değere göre yakalayın .
+Bir işlevin gövdesinde lambda ifadeleri kullanabilirsiniz. Lambda ifadesi, kapsayan işlevin erişebileceği herhangi bir işleve veya veri üyesine erişebilir. **`this`** Kapsayan sınıfın işlevlerine ve veri üyelerine erişim sağlamak için işaretçiyi açıkça veya dolaylı olarak yakalayabilirsiniz.
+**Visual Studio 2017 sürüm 15,3 ve üzeri** (ile kullanılabilir [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) ): **`this`** lambda, `[*this]` özgün nesne kapsam dışına çıktıktan sonra, kodun yürütebileceği zaman uyumsuz veya paralel işlemlerde kullanılacak, değere göre yakala ().
 
-Burada gösterildiği **gibi, bu** işaretçiyi bir işlevde açıkça kullanabilirsiniz:
+**`this`** İşaretçiyi, burada gösterildiği gibi açıkça bir işlevde kullanabilirsiniz:
 
 ```cpp
 // capture "this" by reference
@@ -291,7 +291,7 @@ void ApplyScale2(const vector<int>& v) const
 }
 ```
 
-**Bu** işaretçiyi de dolaylı olarak yakalayabilirsiniz:
+Ayrıca işaretçiyi örtük bir şekilde yakalayabilirsiniz **`this`** :
 
 ```cpp
 void ApplyScale(const vector<int>& v) const
@@ -301,7 +301,7 @@ void ApplyScale(const vector<int>& v) const
 }
 ```
 
-Aşağıdaki örnek, `Scale` bir ölçek değerini kapsülleyen sınıfı gösterir.
+Aşağıdaki örnek, `Scale` bir ölçek değerini kapsülleyen sınıfını gösterir.
 
 ```cpp
 // function_lambda_expression.cpp
@@ -355,15 +355,15 @@ int main()
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, `ApplyScale` ölçek değerinin ve her öğenin bir nesnedeki `vector` ürününün yazdırılması için bir lambda ifadesi kullanır. Lambda ifadesi, `_scale` üyeye erişebilmek için **bunu** dolaylı olarak yakalar.
+`ApplyScale`İşlevi, ölçek değerinin çarpımını ve bir nesnedeki her öğeyi yazdırmak için bir lambda ifadesi kullanır `vector` . Lambda ifadesi, üyeye erişmek için örtülü olarak yakalar **`this`** `_scale` .
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a>Lambda İfadelerini Şablonlarla Kullanma
+## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a>Şablonlarla lambda Ifadeleri kullanma
 
 ### <a name="example"></a>Örnek
 
-Lambda ifadeleri yazıldığından, bunları C++ şablonlarıyla birlikte kullanabilirsiniz. Aşağıdaki örnek, `negate_all` işlevleri `print_all` ve işlevleri gösterir. İşlev, `negate_all` `vector` nesnedeki her öğeye unary **işleci** uygular. İşlev, `print_all` nesnedeki her `vector` öğeyi konsola yazdırır.
+Lambda ifadeleri yazıldığından, bunları C++ şablonlarıyla birlikte kullanabilirsiniz. Aşağıdaki örnekte `negate_all` ve `print_all` işlevleri gösterilmektedir. `negate_all`İşlev, birli **`operator-`** öğeyi nesnesindeki her öğeye uygular `vector` . `print_all`İşlevi, nesnesindeki her öğeyi konsola yazdırır `vector` .
 
 ### <a name="code"></a>Kod
 
@@ -419,15 +419,15 @@ After negate_all():
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ şablonları hakkında daha fazla bilgi için [Şablonlar'a](../cpp/templates-cpp.md)bakın.
+C++ şablonları hakkında daha fazla bilgi için bkz. [Şablonlar](../cpp/templates-cpp.md).
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a>Özel Durumları Işleme
+## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a>Özel durumları işleme
 
 ### <a name="example"></a>Örnek
 
-Bir lambda ifadesinin gövdesi, hem yapısal özel durum işleme (SEH) hem de C++ özel durum işleme kurallarına uyar. Harekete geçirilmiş bir özel bir durumu, lambda ifadesinin gövdesi içinde işleyebilir veya özel durum işlemesini kapsayan kapsama erteleyebilirsiniz. Aşağıdaki **örnekte,** bir `vector` nesneyi başka bir nesnenin değerleriyle doldurmak için for_each işlevi ve lambda ifadesi kullanır. İlk vektöre geçersiz erişimi işlemek için bir **deneme**/**yakalama** bloğu kullanır.
+Bir lambda ifadesinin gövdesi, hem yapısal özel durum işleme (SEH) hem de C++ özel durum işleme kurallarına uyar. Harekete geçirilmiş bir özel bir durumu, lambda ifadesinin gövdesi içinde işleyebilir veya özel durum işlemesini kapsayan kapsama erteleyebilirsiniz. Aşağıdaki örnek, bir **`for_each`** nesneyi başka bir değer ile doldurmanız için işlevini ve bir lambda ifadesini kullanır `vector` . **`try`** / **`catch`** İlk vektöre geçersiz erişimi işlemek için bir blok kullanır.
 
 ### <a name="code"></a>Kod
 
@@ -475,15 +475,15 @@ Caught 'invalid vector<T> subscript'.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel durum işleme hakkında daha fazla bilgi için [bkz.](../cpp/exception-handling-in-visual-cpp.md)
+Özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
-## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a>Yönetilen Tiplerle Lambda İfadelerini Kullanma (C++/CLI)
+## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a>Yönetilen türlerle lambda Ifadeleri kullanma (C++/CLı)
 
 ### <a name="example"></a>Örnek
 
-Bir lambda ifadesinin yakalama yan tümcesi yönetilen bir türe sahip bir değişken içeremez. Ancak, lambda ifadesi parametre listesine, yönetilen bir türe sahip bir bağımsız değişken geçirebilirsiniz. Aşağıdaki örnek, yerel yönetilmeyen değişkeni `ch` değere göre yakalayan ve <xref:System.String?displayProperty=fullName> nesneyi parametresi olarak alan bir lambda ifadesi içerir.
+Bir lambda ifadesinin yakalama yan tümcesi yönetilen bir türe sahip bir değişken içeremez. Ancak, lambda ifadesi parametre listesine, yönetilen bir türe sahip bir bağımsız değişken geçirebilirsiniz. Aşağıdaki örnek, yerel yönetilmeyen değişkeni değere göre yakalayan bir lambda ifadesi içerir `ch` ve bir <xref:System.String?displayProperty=fullName> nesneyi parametresi olarak alır.
 
 ### <a name="code"></a>Kod
 
@@ -512,22 +512,22 @@ Hello!
 
 ### <a name="remarks"></a>Açıklamalar
 
-STL/CLR kitaplığı ile lambda ifadeleri de kullanabilirsiniz. Daha fazla bilgi için [Bkz. STL/CLR Kitaplık Başvurusu.](../dotnet/stl-clr-library-reference.md)
+STL/CLR kitaplığı ile lambda ifadeleri de kullanabilirsiniz. Daha fazla bilgi için bkz. [STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md).
 
 > [!IMPORTANT]
-> Lambdas bu ortak dil çalışma zamanı (CLR) yönetilen varlıklar desteklenmez: **ref sınıfı**, **ref struct**, **değer sınıfı**, ve **değer struct**.
+> Lambdalar şu ortak dil çalışma zamanı (CLR) yönetilen varlıklarda desteklenmez: **`ref class`** , **`ref struct`** , **`value class`** ve **`value struct`** .
 
-[[Bu Makalede](#top)]
+[[Bu makalede](#top)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeler](../cpp/lambda-expressions-in-cpp.md)<br/>
-[Lambda İfadesi Söz Dizimi](../cpp/lambda-expression-syntax.md)<br/>
-[auto](../cpp/auto-cpp.md)<br/>
-[function Sınıfı](../standard-library/function-class.md)<br/>
-[find_if](../standard-library/algorithm-functions.md#find_if)<br/>
-[\<algoritma>](../standard-library/algorithm.md)<br/>
-[İşlev Çağrısı](../cpp/function-call-cpp.md)<br/>
+[Lambda Ifadeleri](../cpp/lambda-expressions-in-cpp.md)<br/>
+[Lambda Ifadesi söz dizimi](../cpp/lambda-expression-syntax.md)<br/>
+[`auto`](../cpp/auto-cpp.md)<br/>
+[`function`Sınıfı](../standard-library/function-class.md)<br/>
+[`find_if`](../standard-library/algorithm-functions.md#find_if)<br/>
+[`<algorithm>`](../standard-library/algorithm.md)<br/>
+[İşlev çağrısı](../cpp/function-call-cpp.md)<br/>
 [Şablonlar](../cpp/templates-cpp.md)<br/>
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)
+[STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md)
