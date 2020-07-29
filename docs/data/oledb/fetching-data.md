@@ -7,22 +7,22 @@ helpviewer_keywords:
 - fetching
 - OLE DB consumer templates [C++], fetching data
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284
-ms.openlocfilehash: 441f036d1677806e81bc419ec6a45e810e63a34f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 919eb059f5d3f29d491bf7a6598b0c77163bd783
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409065"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87184650"
 ---
 # <a name="fetching-data"></a>Veri Getirme
 
-Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Kullanmakta olduğunuz erişimci türüne bağlı olarak, sütunların bağlama gerekebilir.
+Veri kaynağını, oturumu ve satır kümesi nesnelerini açtıktan sonra verileri getirebilirsiniz. Kullanmakta olduğunuz erişimcinin türüne bağlı olarak, sütunları bağlamanız gerekebilir.
 
-## <a name="to-fetch-data"></a>Verileri getirmek için
+## <a name="to-fetch-data"></a>Veri getirmek için
 
-1. Uygun kullanarak satır açın **açık** komutu.
+1. Uygun **Aç** komutunu kullanarak satır kümesini açın.
 
-1. Kullanıyorsanız `CManualAccessor`, zaten yapmadıysanız, çıktı sütunlarını bağlayın. Aşağıdaki örnek runbook'undan [DBVIEWER](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) örnek. Sütunları bağlamak için çağrı `GetColumnInfo`, aşağıdaki örnekte gösterildiği gibi bir erişimci bağlamalarla sonra oluşturun:
+1. Kullanıyorsanız `CManualAccessor` , daha önce yapmadıysanız çıkış sütunlarını bağlayın. Aşağıdaki örnek [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) örneğinden alınmıştır. Sütunları bağlamak için `GetColumnInfo` Aşağıdaki örnekte gösterildiği gibi, öğesini çağırın ve bağlamalarla bir erişimci oluşturun:
 
     ```cpp
     // From the DBViewer Sample CDBTreeView::OnQueryEdit
@@ -39,7 +39,7 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
     rs.Bind();
     ```
 
-1. Yazma bir **sırada** verileri almak üzere döngü. Döngüde çağrı `MoveNext` imleç geçin ve aşağıdaki örnekte gösterildiği gibi S_OK dönüş değerini test etmek için:
+1. **`while`** Verileri almak için bir döngü yazın. Döngüsünde, `MoveNext` Aşağıdaki örnekte gösterildiği gibi imleci ilerletmek ve döndürülen değeri S_OK karşı test etmek için çağırın:
 
     ```cpp
     while (rs.MoveNext() == S_OK)
@@ -49,9 +49,9 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
     }
     ```
 
-1. İçinde **sırada** döngüsü, erişimci türüne göre veri getirebilirsiniz.
+1. Döngü içinde **`while`** , erişimci türüne göre verileri getirebilirsiniz.
 
-   - Kullanırsanız [CAccessor](../../data/oledb/caccessor-class.md) sınıfı veri üyelerini içeren bir kullanıcı kaydı olmalıdır. Aşağıdaki örnekte gösterildiği gibi bu veri üyelerini kullanarak verilerinize erişebilirsiniz:
+   - [CAccessor](../../data/oledb/caccessor-class.md) sınıfını kullanıyorsanız, veri üyeleri içeren bir kullanıcı kaydınız olmalıdır. Aşağıdaki örnekte gösterildiği gibi, bu veri üyelerini kullanarak verilerinize erişebilirsiniz:
 
         ```cpp
         while (rs.MoveNext() == S_OK)
@@ -63,7 +63,7 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
         }
         ```
 
-   - Kullanırsanız `CDynamicAccessor` veya `CDynamicParameterAccessor` sınıfı erişim işlevlerini kullanarak veri getirebilirsiniz `GetValue` ve `GetColumn`, aşağıdaki örnekte gösterildiği gibi. Veri türünü belirlemek istiyorsanız kullanmakta olduğunuz, kullanın `GetType`.
+   - `CDynamicAccessor`Veya `CDynamicParameterAccessor` sınıfını kullanırsanız, `GetValue` `GetColumn` Aşağıdaki örnekte gösterildiği gibi, erişim işlevlerini kullanarak verileri getirebilirsiniz. Kullanmakta olduğunuz veri türünü öğrenmek istiyorsanız kullanın `GetType` .
 
         ```cpp
         while (rs.MoveNext() == S_OK)
@@ -78,7 +78,7 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
         }
         ```
 
-   - Kullanırsanız `CManualAccessor`, kendi veri üyeleri belirtin, bunları bağlamak ve gerekir aşağıdaki örnekte gösterildiği gibi doğrudan erişim:
+   - Kullanıyorsanız `CManualAccessor` , aşağıdaki örnekte gösterildiği gibi kendi veri üyelerinizi belirtmeniz, kendiniz bağlamanız ve bunlara doğrudan erişmeniz gerekir:
 
         ```cpp
         while (rs.MoveNext() == S_OK)
@@ -92,4 +92,4 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[OLE DB tüketici şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

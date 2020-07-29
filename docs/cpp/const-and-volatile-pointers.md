@@ -7,43 +7,43 @@ helpviewer_keywords:
 - pointers, and volatile
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-ms.openlocfilehash: 10dd3de05c5dd0b8de7399eaf36834ea22cd208a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a8fd25777d1169ba281fbee173c1c8f5673c8b56
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180400"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227575"
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile işaretçiler
 
-[Const](const-cpp.md) ve [volatile](volatile-cpp.md) anahtar sözcükleri işaretçilerin nasıl ele alınacağını değiştirir. **Const** anahtar sözcüğü, işaretçinin başlangıçtan sonra değiştirilemeyeceğini belirtir; işaretçi, bundan sonra değişiklikten korunmaktadır.
+[Const](const-cpp.md) ve [volatile](volatile-cpp.md) anahtar sözcükleri işaretçilerin nasıl ele alınacağını değiştirir. **`const`** Anahtar sözcüğü, işaretçinin başlangıçtan sonra değiştirilemeyeceğini belirtir; işaretçi bundan sonra değişiklikten korunur.
 
-**Volatile** anahtar sözcüğü, izleyen adla ilişkili değerin Kullanıcı uygulamasındaki eylemlerle farklı eylemler tarafından değiştirilebileceğini belirtir. Bu nedenle, **geçici** anahtar sözcüğü,, kesme hizmeti yordamları ile iletişim için kullanılan birden çok işlem veya küresel veri alanı tarafından erişilebilen paylaşılan bellekteki nesneleri bildirmek için yararlıdır.
+**`volatile`** Anahtar sözcüğü, izleyen adla ilişkili değerin Kullanıcı uygulamasındaki eylemlerle farklı eylemler tarafından değiştirilebileceğini belirtir. Bu nedenle **`volatile`** anahtar sözcüğü, birden fazla işlem veya kesme hizmeti yordamlarına iletişim için kullanılan genel veri alanı tarafından erişilebilen paylaşılan bellekteki nesneleri bildirmek için yararlıdır.
 
-Bir ad **geçici**olarak bildirildiği zaman, derleyici, program tarafından her erişildiğinde değeri bellekten yeniden yükler. Bu, olası iyileştirmeleri önemli ölçüde azaltır. Ancak, bir nesnenin durumu beklenmedik bir şekilde değiştiğinde, yalnızca bu şekilde tahmin edilebilir program performansı sağlanabilir.
+Bir ad olarak bildirildiği zaman **`volatile`** derleyici, program tarafından her erişildiğinde değeri bellekten yeniden yükler. Bu, olası iyileştirmeleri önemli ölçüde azaltır. Ancak, bir nesnenin durumu beklenmedik bir şekilde değiştiğinde, yalnızca bu şekilde tahmin edilebilir program performansı sağlanabilir.
 
-İşaretçi tarafından işaret edilen nesneyi **const** veya **volatile**olarak bildirmek için şu biçimde bir bildirim kullanın:
+İşaretçi tarafından işaret edilen nesneyi veya olarak bildirmek için şu **`const`** **`volatile`** biçimde bir bildirim kullanın:
 
 ```cpp
 const char *cpch;
 volatile char *vpch;
 ```
 
-İşaretçinin değerini (yani, İşaretçisinde depolanan gerçek adresi) **const** veya **volatile**olarak bildirmek için şu biçimde bir bildirim kullanın:
+İşaretçinin değerini (yani, İşaretçisinde depolanan gerçek adresi, veya gibi) bildirmek için **`const`** **`volatile`** formun bir bildirimini kullanın:
 
 ```cpp
 char * const pchc;
 char * volatile pchv;
 ```
 
-Dil C++ , **const**olarak belirtilen bir nesne veya işaretçinin değiştirilmesine izin veren atamaları engeller. Bu tür atamalar, nesne veya işaretçinin birlikte bildirildiği bilgileri kaldırarak orijinal bildirimin amacını ihlal eder. Aşağıdaki bildirimleri dikkate alın:
+C++ dili, olarak belirtilen bir nesne veya işaretçinin değiştirilmesine izin veren atamaları engeller **`const`** . Bu tür atamalar, nesne veya işaretçinin birlikte bildirildiği bilgileri kaldırarak orijinal bildirimin amacını ihlal eder. Aşağıdaki bildirimleri dikkate alın:
 
 ```cpp
 const char cch = 'A';
 char ch = 'B';
 ```
 
-İki nesnenin önceki bildirimleri ( **const char**türü`cch`, char türünde `ch` **)** verildiğinde, aşağıdaki bildirim/başlatmalar geçerlidir:
+İki nesnenin önceki bildirimleri ( `cch` **const char**türünde ve `ch` **char türünde)** verildiğinde, aşağıdaki bildirim/başlatmalar geçerlidir:
 
 ```cpp
 const char *pch1 = &cch;
@@ -61,7 +61,7 @@ char *pch2 = &cch;   // Error
 char *const pch3 = &cch;   // Error
 ```
 
-`pch2` bildirimi, sabit bir nesnenin değiştirilebileceği ve bu nedenle izin verilmeyen bir işaretçiyi bildirir. `pch3` bildirimi, işaretçinin nesnenin değil, sabit olduğunu belirtir; `pch2` bildirimine izin verilmeyen bir nedenden dolayı bildirime izin verilmez.
+`pch2` bildirimi, sabit bir nesnenin değiştirilebileceği ve bu nedenle izin verilmeyen bir işaretçiyi bildirir. Bildirimi, `pch3` işaretçinin nesne değil, sabit olduğunu belirtir; bildirime izin verilmeyen bir nedenden dolayı bildirime izin verilmez `pch2` .
 
 Aşağıdaki sekiz atama, işaretçiyle atama ve önceki bildirimler için işaretçi değerinin değiştirilmesini göstermektedir; şimdilik başlatmanın `pch1` ile `pch8` arasında doğru olduğunu varsayın.
 
@@ -76,20 +76,20 @@ pch3 = &ch;   // Error: pointer declared const
 pch4 = &ch;   // Error: pointer declared const
 ```
 
-**Geçici**olarak veya **const** ve **volatile**'nin bir karışımı olarak belirtilen işaretçiler, aynı kurallara uyar.
+**`volatile`** Veya karışımı olarak belirtilen işaretçiler, **`const`** **`volatile`** aynı kurallara uyar.
 
-**Const** nesnelerinin işaretçileri, genellikle işlev bildirimlerinde aşağıdaki gibi kullanılır:
+Nesne işaretçileri **`const`** , genellikle işlev bildirimlerinde aşağıdaki gibi kullanılır:
 
 ```cpp
 errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *strSource );
 ```
 
-Yukarıdaki ifade, üç bağımsız değişkenin ikisi de **char**türü işaretçisiyse [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)bir işlev bildirir. Bağımsız değişkenler değere göre değil, başvuruya göre geçirildiğinden ve `strSource` **const**olarak bildirilmemiş ise, işlev hem `strDestination` hem de `strSource` değiştirmek ücretsizdir. **Const** olarak `strSource` bildirimi, `strSource` çağrılan işlev tarafından değiştirilemeyen çağrıyı yapana sağlar.
+Yukarıdaki ifade, üç bağımsız değişkenin ikisi de işaretçisiyse [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)bir işlev bildirir **`char`** . Bağımsız değişkenler değere göre değil, başvuruya göre geçirildiğinden ve `strDestination` `strSource` olarak bildirilmemiş ise, işlev her ikisini de değiştirmek ücretsizdir `strSource` **`const`** . Bildirimi, `strSource` **`const`** `strSource` çağrılan işlev tarafından değiştirilemeyen çağıranı sağlar.
 
 > [!NOTE]
-> *Typename* <strong>\*</strong> **const** *typename* <strong>\*</strong>'e standart bir dönüştürme olduğundan [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)`char *` türünde bir bağımsız değişken geçirmek geçerlidir. Ancak, tersi doğru değildir; bir nesne veya işaretçiden **const** özniteliğini kaldırmak için örtük dönüştürme yok.
+> *TypeName* 'ten TypeName 'e standart bir dönüştürme olduğundan <strong>\*</strong> **`const`** *typename* <strong>\*</strong> , strcpy_s türünde bir bağımsız değişken geçirmek geçerlidir `char *` . [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) Ancak, tersi doğru değildir; **`const`** bir nesne veya işaretçiden özniteliği kaldırmak için örtük dönüştürme yok.
 
-Verilen türün **const** işaretçisi aynı türdeki bir işaretçiye atanabilir. Ancak **const** olmayan bir işaretçi bir **const** işaretçisine atanamaz. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:
+**`const`** Verilen türdeki bir işaretçiye aynı türdeki bir işaretçiye atama uygulanabilir. Ancak, işaretçi olmayan bir işaretçi **`const`** bir **`const`** işaretçiye atanamaz. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:
 
 ```cpp
 // const_pointer.cpp
@@ -126,5 +126,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşaretçiler](pointers-cpp.md)
-[ham işaretçiler](raw-pointers.md)
+[İşaretçiler](pointers-cpp.md) 
+ [Ham işaretçiler](raw-pointers.md)

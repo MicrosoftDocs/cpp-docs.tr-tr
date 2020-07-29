@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - integers, casting to floating-point values
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
-ms.openlocfilehash: 8fa013668278fae82bcb2bb9eb1f2aec3cb61581
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3c65beee0cef4eb74d1bad3c03e5a9c11efae27
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312654"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227926"
 ---
 # <a name="casting-integers-to-floating-point-values"></a>Kayan Nokta Değerlerine Tam Sayılar Atama
 
@@ -17,8 +17,8 @@ ms.locfileid: "62312654"
 
 Bir tamsayı, tam olarak değeri temsil edemeyen bir kayan nokta değerine atandığında, değer en yakın uygun değere yuvarlanır (aşağı veya yukarı).
 
-Örneğin, **işaretsiz bir Long** (32 bitlik duyarlık ile) bir **float** (Mantis ' in 23 bittir), sayıyı 256 ' nin en yakın katına yuvarlar. 4.294.966.913 ile 4.294.967.167 arasındaki **uzun** değerler, **float** değeri olan 4.294.967.040 ' e yuvarlanır.
+Örneğin, bir **`unsigned long`** (32 bitlik duyarlık ile) **`float`** (Mantis 23 bit duyarlığa sahiptir), sayıyı 256 ' nin en yakın katına yuvarlar. **`long`** 4.294.966.913 ile 4.294.967.167 arasındaki değerler, **`float`** 4.294.967.040 değerine yuvarlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Matematiği](../c-language/floating-point-math.md)
+[Kayan nokta matematik](../c-language/floating-point-math.md)

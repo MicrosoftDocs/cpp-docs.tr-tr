@@ -1,9 +1,11 @@
 ---
-title: 'Eşitlik İşleçleri: == ve !='
-ms.date: 11/04/2016
+title: 'Eşitlik işleçleri: == ve !='
+description: C++ standart dili eşittir ve eşit değildir işleç sözdizimi ve kullanımı.
+ms.date: 07/23/2020
 f1_keywords:
 - '!='
 - ==
+- not_eq_cpp
 helpviewer_keywords:
 - '!= operator'
 - equality operator
@@ -13,33 +15,31 @@ helpviewer_keywords:
 - not_eq operator
 - equal to operator
 ms.assetid: ba4e9659-2392-4fb4-be5a-910a2a6df45a
-ms.openlocfilehash: 8a0c08f438528caeaac6d5e52e806a36fe56dd25
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 567b83e99dce0354626f08a4788f1343314493b1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189253"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227549"
 ---
-# <a name="equality-operators--and-"></a>Eşitlik İşleçleri: == ve !=
+# <a name="equality-operators--and-"></a>Eşitlik işleçleri: == ve !=
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-expression == expression
-expression != expression
-```
+> *ifade* **`==`** *ifade*\
+> *ifade* **`!=`** *ifade*
 
 ## <a name="remarks"></a>Açıklamalar
 
 İkili eşitlik işleçleri işlenenlerini katı eşitlik veya eşitsizlik için karşılaştırır.
 
-Eşitlik işleçleri (`==`) ve eşit değildir (`!=`), ilişkisel işleçlerden daha düşük önceliğe sahiptir, ancak benzer şekilde davranır. Bu işleçler için sonuç türü **bool**olur.
+Eşitlik işleçleri ( **`==`** ) ve eşit değildir ( **`!=`** ), ilişkisel işleçlerden daha düşük önceliğe sahiptir, ancak benzer şekilde davranır. Bu işleçler için sonuç türü **`bool`** .
 
-Eşittir işleci (`==`), her iki işlenen de aynı değere sahip olursa **true** (1) döndürür. Aksi takdirde, **false** (0) değerini döndürür. Eşit olmayan işleç (`!=`), işlenenler aynı değere sahip değilse **true** değerini döndürür; Aksi takdirde, **false**döndürür.
+Eşittir işleci ( **`==`** ), **`true`** her iki işlenen de aynı değere sahip olursa döndürür; Aksi takdirde, döndürür **`false`** . Eşit olmayan işleç ( **`!=`** ), **`true`** işlenenler aynı değere sahip değilse döndürür; Aksi takdirde, döndürür **`false`** .
 
 ## <a name="operator-keyword-for-"></a>! = İçin işleç anahtar sözcüğü
 
-`not_eq` işleci, `!=` öğesinin metin eşdeğeridir. Programlarınızda `not_eq` işlecine erişmenin iki yolu vardır: üstbilgi dosyasını `iso646.h`dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
+C++, **`not_eq`** için alternatif bir yazım biçimi belirler **`!=`** . (İçin alternatif yazım yok **`==`** .) C 'de alternatif yazım, üst bilgide bir makro olarak sağlanır \<iso646.h> . C++ ' da, alternatif yazım bir anahtar sözcüktür; \<iso646.h>C++ eşdeğeri veya kullanımı \<ciso646> kullanım dışıdır. Microsoft C++ ' da, [`/permissive-`](../build/reference/permissive-standards-conformance.md) [`/Za`](../build/reference/za-ze-disable-language-extensions.md) alternatif yazımı etkinleştirmek için veya derleyici seçeneği gereklidir.
 
 ## <a name="example"></a>Örnek
 
@@ -63,6 +63,6 @@ Eşitlik işleçleri aynı türdeki üyelerle işaretçileri karşılaştırabil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İkili İşleçli İfadeler](../cpp/expressions-with-binary-operators.md)<br/>
-[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C İlişkisel ve Eşitlik İşleçleri](../c-language/c-relational-and-equality-operators.md)
+[İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)<br/>
+[C++ yerleşik işleçleri, önceliği; ve ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C ilişkisel ve eşitlik işleçleri](../c-language/c-relational-and-equality-operators.md)

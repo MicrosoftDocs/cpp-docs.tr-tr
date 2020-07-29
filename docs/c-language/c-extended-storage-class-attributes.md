@@ -7,12 +7,12 @@ helpviewer_keywords:
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-ms.openlocfilehash: c2e372ebe93b9240ac6f489e8b1aefc1fbbded80
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 5e1fe80f3bc1f581c6ea05c54409b1e76eacfce7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857157"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87190227"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 
@@ -29,15 +29,15 @@ Depolama sınıfı bilgilerini belirtmeye yönelik genişletilmiş öznitelik s�
 *depolama sınıfı Belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/
 
-*Extended-decl-değiştirici-seq*:&nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+*Extended-decl-değiştirici-seq*: &nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Extended-decl-değiştirici*<sub>opt</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Extended-decl-değiştirici-seq* *Extended-decl-değiştiricisi*
 
-*Extended-decl-değiştirici*:&nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**zincirinin**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Naked**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**dllexport**
+*Extended-decl-değiştirici*: &nbsp; &nbsp; &nbsp; &nbsp; / \* Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`thread`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`naked`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`dllimport`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`dllexport`**
 
 Boşluk, bildirim değiştiricilerini ayırır. *Genişletilmiş-decl-değiştirici-seq* ' in boş olabileceğini unutmayın; Bu durumda __declspec hiçbir etkisi yoktur.
 

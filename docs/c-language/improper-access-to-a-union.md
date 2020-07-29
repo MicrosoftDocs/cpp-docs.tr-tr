@@ -2,12 +2,12 @@
 title: Birleşime Düzgün Olmayan Erişim
 ms.date: 11/04/2016
 ms.assetid: b273d984-62a8-4003-9a87-bf0149d3f2dd
-ms.openlocfilehash: 9fd7bdc753f6359a8760e58813f9009411c1bf44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a804ed80c8f1ac2f5dd9a24f12c67e96e199b6b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326137"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227835"
 ---
 # <a name="improper-access-to-a-union"></a>Birleşime Düzgün Olmayan Erişim
 
@@ -15,8 +15,8 @@ ms.locfileid: "62326137"
 
 İki tür birleşimi bildirilirse ve bir değer depolanıyorsa, ancak birleşime diğer türle erişildiğinde sonuçlar güvenilir değildir.
 
-Örneğin, **float** birleşimi ve `int` olarak bildirilmiştir. Bir **float** değeri depolanır, ancak program daha sonra değerine bir `int`olarak erişir. Böyle bir durumda, değer **float** değerlerinin iç depolamasına bağlıdır. Tamsayı değeri güvenilir değil.
+Örneğin, **`float`** ve birleşimi **`int`** bildirilmiştir. Bir **`float`** değer depolanır, ancak program daha sonra değerine bir olarak erişir **`int`** . Böyle bir durumda, değer, değerlerin iç depolamasına bağlıdır **`float`** . Tamsayı değeri güvenilir değil.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Birleşimler, Numaralandırmalar ve Bit Alanları](../c-language/structures-unions-enumerations-and-bit-fields.md)
+[Yapılar, birleşimler, numaralandırmalar ve bit alanları](../c-language/structures-unions-enumerations-and-bit-fields.md)

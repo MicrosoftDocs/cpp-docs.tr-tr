@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointers, based
 - based addressing
 ms.assetid: b5446920-89e0-4e2f-91f3-1f2a769a08e8
-ms.openlocfilehash: e5d8c529adfb92c9db1fdcc5a38f688853606d5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1ef1ec98d718e408621f5303e809d09020d5719
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62327437"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87190253"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C)
 
@@ -24,7 +24,7 @@ Microsoft 32-bit ve 64-bit C derleyicileri için, temel alınan bir işaretçi, 
 
 > *tür* **__based (** *taban* **)** *bildirimci*
 
-"İşaretçi tabanlı" temel adresleme, taban olarak bir işaretçi belirtimini mümkün bir şekilde sunar. Temel işaretçi, temel aldığı işaretçinin başlangıcında başlayan bellek bölümünün bir uzaklığında oluşur. İşaretçi adreslerini temel alan işaretçiler, 32-bit ve 64 `__based` bit derlemelerde geçerli olan anahtar sözcüğünün tek biçimidir. Bu tür derlemelerde, 32 bit veya 64 bit, 32-bit veya 64-bit tabanlardır.
+"İşaretçi tabanlı" temel adresleme, taban olarak bir işaretçi belirtimini mümkün bir şekilde sunar. Temel işaretçi, temel aldığı işaretçinin başlangıcında başlayan bellek bölümünün bir uzaklığında oluşur. İşaretçi adreslerini temel alan işaretçiler, **`__based`** 32-bit ve 64 bit derlemelerde geçerli olan anahtar sözcüğünün tek biçimidir. Bu tür derlemelerde, 32 bit veya 64 bit, 32-bit veya 64-bit tabanlardır.
 
 İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir.
 
@@ -46,4 +46,4 @@ struct llist_t
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+[Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)

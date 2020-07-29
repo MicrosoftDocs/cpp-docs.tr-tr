@@ -6,12 +6,12 @@ helpviewer_keywords:
 - typedef declarations
 - types [C], declarations
 ms.assetid: e92a3b82-9269-4bc6-834a-6f431ccac83e
-ms.openlocfilehash: b4bf7bc82cdf792e5a23f6d5533cc4d800fe4252
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3d477e33def7168d01f9c5f8a64579fed0b497eb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62346112"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87190071"
 ---
 # <a name="typedef-declarations"></a>Typedef Bildirimleri
 
@@ -30,18 +30,18 @@ Bir typedef bildirimi, bir değişken veya işlev bildirimiyle aynı şekilde yo
 &nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
 *depolama sınıfı Belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**genişletiyor**
+&nbsp;&nbsp;&nbsp;&nbsp;**`typedef`**
 
 *tür belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Kağıt**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Char**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kısadır**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**'tir**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kalacağını**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Çift**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**imza**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**işaretlenmemiş**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`void`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`char`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`short`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`long`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`float`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`double`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`signed`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union-Belirleyicisi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Sabit Listesi belirticisi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*TypeDef-adı*
@@ -49,9 +49,9 @@ Bir typedef bildirimi, bir değişken veya işlev bildirimiyle aynı şekilde yo
 *typedef-adı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
 
-Bir typedef bildiriminin tür oluşturmadığını unutmayın. Mevcut türler için eş anlamlıları veya diğer yollarla belirtilenebilir türlerin adlarını oluşturur. Bir typedef adı bir tür belirleyici olarak kullanıldığında, bazı tür belirticileriyle birleştirilebilir, ancak diğerleri değildir. Kabul edilebilir değiştiriciler **const** ve `volatile`içerir.
+Bir typedef bildiriminin tür oluşturmadığını unutmayın. Mevcut türler için eş anlamlıları veya diğer yollarla belirtilenebilir türlerin adlarını oluşturur. Bir typedef adı bir tür belirleyici olarak kullanıldığında, bazı tür belirticileriyle birleştirilebilir, ancak diğerleri değildir. Kabul edilebilir değiştiriciler **`const`** ve içerir **`volatile`** .
 
-Typedef adları, ad alanını sıradan tanımlayıcılarla paylaşır (daha fazla bilgi için bkz. [ad alanları](../c-language/name-spaces.md) ). Bu nedenle, bir program bir typedef adına ve aynı ada sahip bir yerel kapsam tanımlayıcısına sahip olabilir. Örneğin:
+Typedef adları, ad alanını sıradan tanımlayıcılarla paylaşır (daha fazla bilgi için bkz. [ad alanları](../c-language/name-spaces.md) ). Bu nedenle, bir program bir typedef adına ve aynı ada sahip bir yerel kapsam tanımlayıcısına sahip olabilir. Örnek:
 
 ```C
 typedef char FlagType;
@@ -73,7 +73,7 @@ typedef char FlagType;
 const FlagType x;
 ```
 
-Bir tanımlayıcı, `FlagType` yapı üyesi veya birleşim üyesi için adı yeniden kullanmak için, tür sağlanmalıdır:
+`FlagType`Bir tanımlayıcı, yapı üyesi veya birleşim üyesi için adı yeniden kullanmak için, tür sağlanmalıdır:
 
 ```C
 const int FlagType;  /* Type specifier required */
@@ -93,7 +93,7 @@ int;  /* Illegal declaration */
 
 İşaretçi, işlev ve dizi türleri dahil olmak üzere typedef ile herhangi bir tür bildirebilirsiniz. Tanımın bildirimle aynı görünürlüğe sahip olduğu sürece yapıyı veya birleşim türünü tanımladıktan önce bir yapı veya birleşim türü işaretçisi için bir typedef adı bildirebilirsiniz.
 
-Typedef adları, kod okunabilirliğini geliştirmek için kullanılabilir. Aşağıdaki bildirimlerden üçü, ilki, `signal` herhangi bir typedef adının kullanılmadan önce tam olarak aynı türü belirtir.
+Typedef adları, kod okunabilirliğini geliştirmek için kullanılabilir. Aşağıdaki bildirimlerden üçü `signal` , ilki, herhangi bir typedef adının kullanılmadan önce tam olarak aynı türü belirtir.
 
 ```C
 typedef void fv( int ), (*pfv)( int );  /* typedef declarations */
@@ -111,7 +111,7 @@ Aşağıdaki örneklerde typedef bildirimleri gösterilmektedir:
 typedef int WHOLE; /* Declares WHOLE to be a synonym for int */
 ```
 
-`WHOLE` Artık `WHOLE i;` veya `const WHOLE i;`gibi bir değişken bildiriminde kullanılabileceğini unutmayın. Ancak bildirim `long WHOLE i;` geçersiz olabilir.
+`WHOLE`Artık veya gibi bir değişken bildiriminde kullanılabileceğini unutmayın `WHOLE i;` `const WHOLE i;` . Ancak bildirim `long WHOLE i;` geçersiz olabilir.
 
 ```C
 typedef struct club
@@ -121,20 +121,20 @@ typedef struct club
 } GROUP;
 ```
 
-Bu ifade, `GROUP` üç üye içeren bir yapı türü olarak bildirir. Bir yapı etiketi `club`de belirtildiğinden, ya typedef Name (`GROUP`) ya da Structure etiketi bildirimlerinde kullanılabilir. Struct anahtar sözcüğünü etiketiyle birlikte kullanmanız gerekir ve struct anahtar sözcüğünü typedef adıyla birlikte kullanamazsınız.
+Bu ifade `GROUP` , üç üye içeren bir yapı türü olarak bildirir. Bir yapı etiketi `club` de belirtildiğinden, ya typedef Name ( `GROUP` ) ya da Structure etiketi bildirimlerinde kullanılabilir. Struct anahtar sözcüğünü etiketiyle birlikte kullanmanız gerekir ve struct anahtar sözcüğünü typedef adıyla birlikte kullanamazsınız.
 
 ```C
 typedef GROUP *PG; /* Uses the previous typedef name
                       to declare a pointer            */
 ```
 
-Türü `PG` , `GROUP` türü bir işaretçi olarak tanımlanır ve bu, sırasıyla bir yapı türü olarak tanımlanmıştır.
+Türü, `PG` türü bir işaretçi olarak `GROUP` tanımlanır ve bu, sırasıyla bir yapı türü olarak tanımlanmıştır.
 
 ```C
 typedef void DRAWF( int, int );
 ```
 
-Bu örnek, değer döndürülmeden ve iki int bağımsız değişken alan bir işlev için tür `DRAWF` sağlar. Bu, örneğin, bildirimin
+Bu örnek, `DRAWF` değer döndürülmeden ve iki int bağımsız değişken alan bir işlev için tür sağlar. Bu, örneğin, bildirimin
 
 ```C
 DRAWF box;

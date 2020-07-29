@@ -1,5 +1,5 @@
 ---
-title: __alignof İşleci
+title: hizalama Işleci
 ms.date: 12/17/2018
 f1_keywords:
 - __alignof_cpp
@@ -13,49 +13,44 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-ms.openlocfilehash: 6bddce29dd97d965303a58cc72aa97dfe8cbd8d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a2046774674858211ae89abb9b4cfc7b09c0a6d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181544"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227640"
 ---
-# <a name="__alignof-operator"></a>__alignof İşleci
+# <a name="alignof-operator"></a>hizalama Işleci
 
-C++ 11, belirtilen türün bayt cinsinden hizalamasını döndüren **bir işlecin hizalamasını** tanıtır. En fazla taşınabilirlik için, Microsoft 'a özgü __alignof işleci yerine hizalama işlecini kullanmanız gerekir.
-
-**Microsoft 'a özgü**
-
-Türün hizalama gereksinimi olan `size_t` türünde bir değer döndürür.
+**`alignof`** İşleci, belirtilen türün bayt cinsinden hizalamasını tür değeri olarak döndürür **`size_t`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-  __alignof( type )
+alignof( type )
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneğin:
+Örnek:
 
-|Expression|Değer|
-|----------------|-----------|
-|**__alignof (Char)**|1|
-|**__alignof (kısa)**|2|
-|**__alignof (int)**|4|
-|**__alignof (\__int64)**|8|
-|**__alignof (float)**|4|
-|**__alignof (çift)**|8|
-|**__alignof (Char\*)**|4|
+| Expression | Değer |
+|--|--|
+| **`alignof( char )`** | 1 |
+| **`alignof( short )`** | 2 |
+| **`alignof( int )`** | 4 |
+| **`alignof( long long )`** | 8 |
+| **`alignof( float )`** | 4 |
+| **`alignof( double )`** | 8 |
 
-**__Alignof** değeri, temel türler için `sizeof` değeri ile aynıdır. Ancak şu örneği göz önünde bulundurun:
+**`alignof`** Değer, **`sizeof`** temel türler için değeriyle aynıdır. Ancak şu örneği göz önünde bulundurun:
 
 ```cpp
 typedef struct { int a; double b; } S;
-// __alignof(S) == 8
+// alignof(S) == 8
 ```
 
-Bu durumda **__alignof** değeri, yapıdaki en büyük öğenin hizalama gereksinimidir.
+Bu durumda, **`alignof`** değer yapıdaki en büyük öğenin hizalama gereksinimidir.
 
 Benzer şekilde, için
 
@@ -63,27 +58,25 @@ Benzer şekilde, için
 typedef __declspec(align(32)) struct { int a; } S;
 ```
 
-`__alignof(S)`, `32`eşittir.
+`alignof(S)`eşittir `32` .
 
-**__Alignof** için bir kullanım, kendi bellek ayırma yordamlarınızın bir parametresi olarak olacaktır. Örneğin, aşağıdaki tanımlı yapı `S`verildiğinde, belirli bir hizalama sınırında bellek ayırmak için `aligned_malloc` adlı bir bellek ayırma yordamını çağırabilirsiniz.
+Bir kullanımı, **`alignof`** kendi bellek ayırma yordamlarınızın bir parametresi olarak olacaktır. Örneğin, aşağıdaki tanımlı yapı verildiğinde `S` , `aligned_malloc` belirli bir hizalama sınırında bellek ayırmak için adlı bir bellek ayırma yordamını çağırabilirsiniz.
 
 ```cpp
 typedef __declspec(align(32)) struct { int a; double b; } S;
 int n = 50; // array size
-S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
+S* p = (S*)aligned_malloc(n * sizeof(S), alignof(S));
 ```
-
-Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_alignof** **__alignof** için bir eş anlamlı.
 
 Hizalamayı değiştirme hakkında daha fazla bilgi için bkz.:
 
 - [pack](../preprocessor/pack.md)
 
-- [align](../cpp/align-cpp.md)
+- [acaktır](../cpp/align-cpp.md)
 
 - [__unaligned](../cpp/unaligned.md)
 
-- [/Zp (Yapı Üyesi Hizalama)](../build/reference/zp-struct-member-alignment.md)
+- [/Zp (yapı üyesi hizalama)](../build/reference/zp-struct-member-alignment.md)
 
 - [Yapı hizalaması örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 'e özgü)
 
@@ -91,9 +84,13 @@ X86 ve x64 için kod hizalama farkları hakkında daha fazla bilgi için bkz.:
 
 - [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
 
-**SON Microsoft 'a özgü**
+### <a name="microsoft-specific"></a>Microsoft'a özgü
+
+**`alignof`** ve, **`__alignof`** Microsoft derleyicisinde eş anlamlılar. C++ 11 ' de standart bir parçası haline gelmeden önce, Microsoft 'a özgü **`__alignof`** işleç bu işlevselliği sağladı. Maksimum taşınabilirlik için, **`alignof`** Microsoft 'a özgü işleç yerine işlecini kullanmanız gerekir **`__alignof`** .
+
+Önceki sürümlerle uyumluluk için, **`_alignof`** **`__alignof`** derleyici seçeneği [ `/Za` \( dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) ' ın belirtildiği durumlar için bir eş anlamlı olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

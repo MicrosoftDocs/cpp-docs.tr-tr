@@ -7,12 +7,12 @@ helpviewer_keywords:
 - function calls, about function calls
 - function calls
 ms.assetid: 2cfa897d-3874-4820-933c-e624f75d1712
-ms.openlocfilehash: cce1a888f3e1224822ab4e97c67bf59da4c46fc9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 495dc3cf77df79336af364eb80ea7edf17b54400
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334569"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227874"
 ---
 # <a name="function-calls"></a>işlev Çağrıları
 
@@ -20,7 +20,7 @@ ms.locfileid: "81334569"
 
 *ifade* (*ifade listesi*<sub>opt</sub>)
 
-Burada *ifadesi* bir işlev adı, veya işlev adresi olarak değerlendirilir ve *ifade listesi* bir ifade listesidir (virgülle ayrılmış olarak). Bu ikinci ifadelerin değerleri, işleve geçirilen bağımsız değişkenlerdir. İşlev bir değer döndürmezse, bunu döndüren `void`bir işlev olarak bildirirsiniz.
+Burada *ifadesi* bir işlev adı, veya işlev adresi olarak değerlendirilir ve *ifade listesi* bir ifade listesidir (virgülle ayrılmış olarak). Bu ikinci ifadelerin değerleri, işleve geçirilen bağımsız değişkenlerdir. İşlev bir değer döndürmezse, bunu döndüren bir işlev olarak bildirirsiniz **`void`** .
 
 Bir bildirim, işlev çağrısından önce mevcutsa, ancak parametrelerle ilgili hiçbir bilgi verilmemişse, bildirilmemiş tüm bağımsız değişkenler normal aritmetik Dönüştürmelere doğru bir şekilde geçer.
 
@@ -31,7 +31,7 @@ Herhangi bir işlev çağrısındaki tek gereksinim, parantezden önceki ifadeni
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, bir `switch` deyimden çağrılan işlev çağrıları gösterilmektedir:
+Bu örnekte, bir deyimden çağrılan işlev çağrıları gösterilmektedir **`switch`** :
 
 ```
 int main()
@@ -73,23 +73,23 @@ void work( int number, long (*function)(int i) )
 }
 ```
 
-Bu örnekte, işlev çağrısı `main`,
+Bu örnekte, işlev çağrısı `main` ,
 
 ```
 work( count, lift );
 ```
 
-bir tamsayı değişkeni `count`, ve işlevin `lift` adresini işleve `work`geçirir. İşlev tanımlayıcısı bir işaretçi ifadesi olarak değerlendirildiğinden işlev adresinin yalnızca işlev tanımlayıcısı vererek geçtiğini unutmayın. Bir işlev tanımlayıcısını bu şekilde kullanmak için, tanımlayıcı kullanılmadan önce işlevin bildirilmesini veya tanımlanması gerekir; Aksi takdirde, tanımlayıcı tanınmıyor. Bu durumda, `work` `main` işlevinin başlangıcında için bir prototipi verilir.
+bir tamsayı değişkeni, `count` ve işlevin adresini `lift` işleve geçirir `work` . İşlev tanımlayıcısı bir işaretçi ifadesi olarak değerlendirildiğinden işlev adresinin yalnızca işlev tanımlayıcısı vererek geçtiğini unutmayın. Bir işlev tanımlayıcısını bu şekilde kullanmak için, tanımlayıcı kullanılmadan önce işlevin bildirilmesini veya tanımlanması gerekir; Aksi takdirde, tanımlayıcı tanınmıyor. Bu durumda, işlevinin başlangıcında için bir prototipi `work` verilir `main` .
 
-İçindeki `function` `work` parametresi bir `int` bağımsız değişken alan ve **uzun** bir değer döndüren bir işlevin işaretçisi olacak şekilde bildirilmiştir. Parametre adının etrafındaki parantezler gereklidir; Bu olmadan, bildirim, **uzun** bir değere işaretçi döndüren bir işlevi belirtir.
+İçindeki parametresi `function` bir `work` **`int`** bağımsız değişken alan ve bir değer döndüren bir işlevin işaretçisi olacak şekilde bildirilmiştir **`long`** . Parametre adının etrafındaki parantezler gereklidir; Bu olmadan, bildirim bir değere işaretçi döndüren bir işlevi belirtir **`long`** .
 
-İşlevi `work` , aşağıdaki işlev çağrısını kullanarak, **for** döngüsü içindeki seçili işlevi çağırır:
+İşlevi `work` **`for`** aşağıdaki işlev çağrısını kullanarak döngünün içindeki seçili işlevi çağırır:
 
 ```
 ( *function )( i );
 ```
 
-Bir bağımsız değişken `i`, çağrılan işleve geçirilir.
+Bir bağımsız değişken, `i` çağrılan işleve geçirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

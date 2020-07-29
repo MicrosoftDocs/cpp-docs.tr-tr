@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C++]
 ms.assetid: 63739928-8985-4b05-93ce-016322e6da3d
-ms.openlocfilehash: 23d31e1456106d5f82c4a13079c72c231b8477bd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 30ca602ecc65099adff7300f730c500a31fe0ed5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190488"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227614"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C++)
 
-**Break** ifadesi, göründüğü en yakın kapsayan döngünün veya koşullu deyimin yürütmesini sonlandırır. Denetim, varsa, deyimin sonunu takip eden deyime geçer.
+**`break`** İfadesi, göründüğü en yakın kapsayan döngünün veya koşullu deyimin yürütmesini sonlandırır. Denetim, varsa, deyimin sonunu takip eden deyime geçer.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,17 +25,17 @@ break;
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Break** deyimi, koşullu [anahtar](../cpp/switch-statement-cpp.md) ifadesiyle ve [Do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), ve [while](../cpp/while-statement-cpp.md) Loop deyimleriyle birlikte kullanılır.
+**`break`** Deyimi, koşullu [anahtar](../cpp/switch-statement-cpp.md) ifadesiyle ve [Do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md), ve [while](../cpp/while-statement-cpp.md) Loop deyimleriyle birlikte kullanılır.
 
-**Switch** ifadesinde, **Break** deyimleri programın **Switch** ifadesinin dışında bir sonraki ifadeyi yürütmesine neden olur. **Break** deyimi olmadan, **varsayılan** yan tümcesi dahil olmak üzere, eşleşen **Case** etiketinden **Switch** ifadesinin sonuna kadar her bir deyimi yürütülür.
+Bir **`switch`** bildiriminde, ifade, **`break`** programın deyimin dışında bir sonraki ifadeyi yürütmesine neden olur **`switch`** . Deyimi olmadan, **`break`** eşleşen **`case`** etiketten, **`switch`** yan tümcesini de içeren deyimin sonuna kadar her bir deyimi **`default`** yürütülür.
 
-Döngülerde **Break** ifadesinin en yakın kapsayan **Do**, **for**veya **while** deyimlerinin yürütülmesi sonlanır. Denetim, varsa, sonlandırılmış deyimi takip eden deyime geçirilir.
+Döngüler ' de, **`break`** ifade en yakın kapsayan **`do`** , **`for`** veya bildiriminin yürütmesini sonlandırır **`while`** . Denetim, varsa, sonlandırılmış deyimi takip eden deyime geçirilir.
 
-İç içe geçmiş deyimler içinde, **Break** deyimi yalnızca hemen kendisini kapsayan **Do**, **for**, **Switch**veya **while** deyimini sonlandırır. Daha derin iç içe yapıların denetimini aktarmak için **Return** veya **goto** ifadesini kullanabilirsiniz.
+İç içe geçmiş deyimler içinde, **`break`** deyimi yalnızca **`do`** **`for`** **`switch`** **`while`** hemen kendisini kapsayan,, veya deyimini sonlandırır. **`return`** **`goto`** Daha derin iç içe yapıların denetimini aktarmak için bir veya ifadesini kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **for** döngüsünde **Break** ifadesinin nasıl kullanılacağını gösterir.
+Aşağıdaki kod, **`break`** ifadesinin bir döngüde nasıl kullanılacağını gösterir **`for`** .
 
 ```cpp
 #include <iostream>
@@ -71,7 +71,7 @@ In each case:
 3
 ```
 
-Aşağıdaki kod, bir **while** döngüsünde ve **Do** döngüsünde **Break** 'in nasıl kullanılacağını gösterir.
+Aşağıdaki kod, **`break`** bir **`while`** döngüde ve döngüsünde nasıl kullanılacağını gösterir **`do`** .
 
 ```cpp
 #include <iostream>
@@ -104,7 +104,7 @@ In each case:
 0123
 ```
 
-Aşağıdaki kod, bir switch ifadesinde **Break** 'in nasıl kullanılacağını gösterir. Her bir durumu ayrı olarak işlemek istiyorsanız, her durumda **Break** kullanmanız gerekir; **Break**kullanmıyorsanız, kod yürütmesi bir sonraki durumda geçer.
+Aşağıdaki kod, **`break`** bir switch ifadesinde nasıl kullanılacağını göstermektedir. **`break`** Her bir durumu ayrı olarak işlemek istiyorsanız, her durumda kullanmanız gerekir; kullanmıyorsanız **`break`** , kod yürütmesi bir sonraki durumda geçer.
 
 ```cpp
 #include <iostream>
@@ -154,5 +154,5 @@ int main() {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Atlama Deyimleri](../cpp/jump-statements-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[continue Deyimi](../cpp/continue-statement-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Continue bildirisi](../cpp/continue-statement-cpp.md)

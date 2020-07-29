@@ -1,20 +1,20 @@
 ---
 title: Hizalama
-description: Modern C++içinde veri hizalaması nasıl belirtilir.
+description: Modern C++ ' da veri hizalaması nasıl belirtilir.
 ms.date: 12/11/2019
 ms.assetid: a986d510-ccb8-41f8-b905-433df9183485
-ms.openlocfilehash: 45b22742394a0b1c159e8b8102a26802a2441929
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 7f6bef061fee41389bad644d9ac5244f5644da76
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076120"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227653"
 ---
 # <a name="alignment"></a>Hizalama
 
-Öğesinin C++ alt düzey özelliklerinden biri, belirli bir donanım mimarisinin en yüksek avantajlarından yararlanmak için bellekteki nesnelerin kesin hizalamasını belirtme yeteneğidir. Varsayılan olarak, derleyici sınıf ve yapı üyelerini boyut değerlerine göre hizalar: `bool` ve `char` 1 baytlık sınırlarda, 2 baytlık sınırlarda `short`, `int`, `long`ve `float`, 8 baytlık sınırlarda `long long`, `double`ve `long double`.
+C++ ' ın alt düzey özelliklerinden biri, belirli bir donanım mimarisinin en yüksek avantajlarından yararlanmak için bellekteki nesnelerin kesin hizalamasını belirtme olanağıdır. Varsayılan olarak, derleyici sınıf ve yapı üyelerini boyut değerlerine göre ve 1 baytlık sınırlar üzerinde, 2 baytlık sınırlar,,, ve 4 baytlık sınırlarda, ve, **`bool`** **`char`** **`short`** **`int`** **`long`** **`float`** **`long long`** **`double`** ve **`long double`** 8 baytlık sınırlarda hizalar.
 
-Çoğu senaryoda, varsayılan hizalama zaten en iyi durumda olduğu için hizalamayla ilgilenmelisiniz. Ancak bazı durumlarda, veri yapılarınız için özel bir hizalama belirterek önemli performans geliştirmeleri veya bellek tasarrufu elde edebilirsiniz. Visual Studio 2015 ' den önce, Microsoft 'a özgü anahtar kelimeleri `__alignof` ve varsayılandan daha büyük bir hizalama belirtmek için `declspec(alignas)` kullanabilirsiniz. Visual Studio 2015 ' den başlayarak, en fazla kod taşınabilirlik için C++ 11 standart anahtar sözcükleri **hizalamasını** ve **alignas** 'yi kullanmanız gerekir. Yeni anahtar sözcükler, Microsoft 'a özgü uzantılar ile aynı şekilde davranır. Bu uzantılara ait belgeler yeni anahtar sözcükler için de geçerlidir. Daha fazla bilgi için bkz. [__Alignof işleci](../cpp/alignof-operator.md) ve [Hizalama](../cpp/align-cpp.md). Standart C++ , hedef platformun varsayılan derleyicisinden daha küçük olan sınırlara göre hizalama için paketleme davranışını belirtmez, bu nedenle yine de bu durumda Microsoft #pragma [paketini](../preprocessor/pack.md) kullanmanız gerekir.
+Çoğu senaryoda, varsayılan hizalama zaten en iyi durumda olduğu için hizalamayla ilgilenmelisiniz. Ancak bazı durumlarda, veri yapılarınız için özel bir hizalama belirterek önemli performans geliştirmeleri veya bellek tasarrufu elde edebilirsiniz. Visual Studio 2015 ' den önce, Microsoft 'a özgü anahtar sözcükleri kullanabilir **`__alignof`** ve **`__declspec(align)`** varsayılandan daha büyük bir hizalama belirtebilirsiniz. Visual Studio 2015 ' den başlayarak, C++ 11 standart anahtar sözcüklerini **`alignof`** ve **`alignas`** en yüksek kod taşınabilirliği için kullanmanız gerekir. Yeni anahtar sözcükler, Microsoft 'a özgü uzantılar ile aynı şekilde davranır. Bu uzantılara ait belgeler yeni anahtar sözcükler için de geçerlidir. Daha fazla bilgi için bkz. [ `alignof` işleç](../cpp/alignof-operator.md) ve [Hizalama](../cpp/align-cpp.md). C++ standardı, hedef platformun varsayılan derleyicisinden daha küçük olan sınırlara göre hizalama için paketleme davranışını belirtmez, bu nedenle yine de Microsoft 'u [`#pragma pack`](../preprocessor/pack.md) Bu durumda kullanmanız gerekir.
 
 Özel hizalamalar ile veri yapılarının bellek ayırması için [aligned_storage sınıfını](../standard-library/aligned-storage-class.md) kullanın. [Aligned_union sınıfı](../standard-library/aligned-union-class.md) , önemsiz olmayan oluşturucular veya Yıkıcılar içeren birleşimler için hizalama belirtmek içindir.
 
@@ -28,9 +28,9 @@ CPU 'Lar bellekte depolanan veriler üzerinde çalışan yönergeleri yürütür
 
 Derleyiciler, verileri hatalı hizalanmış şekilde engelleyecek şekilde veri ayırmaları yapmayı dener.
 
-Basit veri türleri için derleyici, veri türü baytlarına göre boyutun katları olan adresleri atar. Örneğin, derleyici 4 ' ün katları olan `long` değişkenlere adresler atar, bu da adresin alt 2 bitini sıfıra ayarlar.
+Basit veri türleri için derleyici, veri türü baytlarına göre boyutun katları olan adresleri atar. Örneğin, derleyici 4 ' ün katları olan türdeki değişkenlere adresler atar **`long`** ve adresin alt 2 bitini sıfıra ayarlar.
 
-Derleyici Ayrıca yapıları yapının her bir öğesini doğal olarak bir şekilde hizalar. Aşağıdaki kod örneğinde yapıyı `struct x_` göz önünde bulundurun:
+Derleyici Ayrıca yapıları yapının her bir öğesini doğal olarak bir şekilde hizalar. Aşağıdaki kod örneğinde yapıyı göz önünde bulundurun `struct x_` :
 
 ```cpp
 struct x_
@@ -59,17 +59,17 @@ struct x_
 } bar[3];
 ```
 
-Her iki bildirim de 12 bayt olarak `sizeof(struct x_)` döndürür.
+Her iki bildirim de `sizeof(struct x_)` 12 bayt olarak döndürülür.
 
 İkinci bildirim iki doldurma öğesi içerir:
 
-1. `char _pad0[3]`, `int b` üyesini 4 baytlık bir sınıra hizalamak için.
+1. `char _pad0[3]``int b`üyeyi 4 baytlık bir sınırın üzerine hizalamak için.
 
-1. Yapı `struct _x bar[3];` dizi öğelerini dört baytlık bir sınırında hizalamak `char _pad1[1]`.
+1. `char _pad1[1]`yapının dizi öğelerini `struct _x bar[3];` dört baytlık bir sınırın üzerine hizalamak için.
 
-Doldurma `bar[3]` öğelerini doğal erişime izin verecek şekilde hizalar.
+Doldurma öğeleri `bar[3]` doğal erişime izin verecek şekilde hizalar.
 
-Aşağıdaki kod örneği `bar[3]` dizi mizanpajını gösterir:
+Aşağıdaki kod örneği `bar[3]` dizi mizanpajını göstermektedir:
 
 ```Output
 adr offset   element
@@ -96,13 +96,13 @@ adr offset   element
 0x0023   char _pad1[1];
 ```
 
-## <a name="alignof-and-alignas"></a>alignof ve alignas
+## <a name="alignof-and-alignas"></a>`alignof` ve `alignas`
 
-**Alignas** tür Belirleyicisi, değişkenlerin ve Kullanıcı tanımlı C++ türlerin özel hizalamasını belirtmenin taşınabilir ve standart bir yoludur. Aynı **şekilde, belirtilen** bir tür veya değişkenin hizalamasını elde etmek için standart, taşınabilir bir yoldur.
+**`alignas`** Tür Belirleyicisi, değişkenlerin ve Kullanıcı tanımlı türlerin özel hizalamasını belirtmenin taşınabilir, C++ standart bir yoludur. **`alignof`** İşleci aynı şekilde, belirtilen bir tür veya değişkenin hizalamasını elde etmenin standart, taşınabilir bir yoludur.
 
 ## <a name="example"></a>Örnek
 
-Bir sınıf, yapı veya Union üzerinde veya ayrı üyelerde **alignas** kullanabilirsiniz. Birden çok **alignas** belirticisi ile karşılaşıldığında, derleyici en katı birini (en büyük değere sahip olan) seçer.
+**`alignas`** Bir sınıf, yapı veya birleşim üzerinde veya ayrı üyelerde kullanabilirsiniz. Birden çok **`alignas`** belirticiyle karşılaşıldığında, derleyici en katı birini (en büyük değere sahip olan) seçer.
 
 ```cpp
 // alignas_alignof.cpp

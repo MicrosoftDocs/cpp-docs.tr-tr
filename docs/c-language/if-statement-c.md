@@ -11,28 +11,28 @@ helpviewer_keywords:
 - if keyword [C], if statement syntax
 - nested statements
 ms.assetid: d7fc16a0-fdbc-4f39-b596-76e1ca4ad4a5
-ms.openlocfilehash: b6df50d483a6e2958de3100a07c18b89b0c4f12f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67cdae033c3c8669c8bc7ae1d2e3584ef68498f0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233066"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227848"
 ---
 # <a name="if-statement-c"></a>if Deyimi (C)
 
-**IF** deyimleri koşullu dallanmayı denetler. İfadenin değeri sıfır değilse bir **IF** ifadesinin gövdesi yürütülür. **IF** ifadesinin sözdizimi iki form içerir.
+**`if`** İfade, koşullu dallanmayı denetler. **`if`** İfadenin değeri sıfır değilse deyimin gövdesi yürütülür. **`if`** Deyimin sözdiziminin iki formu vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
 *Selection-deyimi*: **if (**  *ifade*  **)**  *deyimi*
 
-**IF (**  *Expression*  **)**  *deyimi*  **Else**  *deyimi*
+**if (***ifade***)***deyim* **`else`** *deyimi*          
 
-Her iki **if** ifadesinin formlarında, bir yapı dışında herhangi bir değere sahip olabilen ifadeler, tüm yan etkiler dahil değerlendirilir.
+Her iki deyimin formlarında, **`if`** bir yapı dışında herhangi bir değere sahip olabilen ifadeler, tüm yan etkiler dahil değerlendirilir.
 
-Sözdiziminin ilk biçiminde, *ifade* true (sıfır dışında) ise *deyim* yürütülür. *İfade* yanlışsa, *deyim* yok sayılır. İkinci sözdizimi biçiminde, **başka**bir deyişle, *ifade* yanlışsa ikinci *deyim* yürütülür. Her iki form ile, deyimlerden biri bir **kesme**, **devam**veya ya `goto`da içermiyorsa, denetim daha sonra, **IF** deyiminden, programdaki bir sonraki ifadeye geçer.
+Sözdiziminin ilk biçiminde, *ifade* true (sıfır dışında) ise *deyim* yürütülür. *İfade* yanlışsa, *deyim* yok sayılır. Öğesinin kullanıldığı ikinci sözdizimi biçiminde **`else`** , *ifade* false ise ikinci *deyim* yürütülür. Her iki form ile, **`if`** deyimlerden biri, veya içermiyorsa, denetim daha sonra deyimden programdaki sonraki deyime geçer **`break`** **`continue`** **`goto`** .
 
-**IF** ifadesinin örnekleri aşağıda verilmiştir:
+Aşağıda deyimin örnekleri verilmiştir **`if`** :
 
 ```
 if ( i > 0 )
@@ -44,9 +44,9 @@ else
 }
 ```
 
-Bu örnekte, ifadenin `y = x/i;` 0 ' dan büyük olması `i` durumunda yürütülür. `i` 0 ' dan küçük veya buna eşitse `i` , öğesine `x` atanır ve `f( x )` öğesine `y`atanır. **IF** yan tümcesini oluşturan deyimin noktalı virgülle bitdiğine unutmayın.
+Bu örnekte, ifadenin 0 ' `y = x/i;` `i` dan büyük olması durumunda yürütülür. `i`0 ' dan küçük veya buna eşitse, `i` öğesine atanır `x` ve `f( x )` öğesine atanır `y` . **`if`** Yan tümcesini oluşturan deyimin noktalı virgülle bitdiğine unutmayın.
 
-Deyimler ve **Else** yan **tümceleri iç içe aktardığınızda, deyimleri ve** yan tümceleri, amacınızı açıklığa kavuşturacak bileşik deyimlerde gruplamak için küme ayraçları kullanın. Hiçbir küme ayracı yoksa, derleyici, **başka**bir şey olmaması **durumunda** her **şeyi** En iyiyle ilişkilendirerek belirsizlikleri öğesini çözer.
+**`if`** Deyimleri ve yan tümceleri iç içe geçirerek **`else`** , deyimleri ve yan tümceleri, amacınızı açıklığa kavuşturacak bileşik deyimlerde gruplamak için ayraçları kullanın. Hiçbir küme ayracı yoksa, derleyici, her biri olmayan en yakın ile ilişkilendirerek belirsizlikleri öğesini çözer **`else`** **`if`** **`else`** .
 
 ```
 if ( i > 0 )           /* Without braces */
@@ -56,7 +56,7 @@ if ( i > 0 )           /* Without braces */
         x = i;
 ```
 
-**Else** yan tümcesi, bu örnekteki iç **if** ifadesiyle ilişkilendirilir. `i` 0 ' dan küçükse veya eşitse, hiçbir değer atanmaz `x`.
+**`else`** Yan tümcesi, **`if`** Bu örnekteki Inner ifadesiyle ilişkilendirilir. `i`0 ' dan küçükse veya eşitse, hiçbir değer atanmaz `x` .
 
 ```
 if ( i > 0 )
@@ -68,7 +68,7 @@ else
     x = i;
 ```
 
-Bu örnekteki iç **if** ifadesini çevreleyen küme ayraçları, dıştaki **if** ifadesinin **Else** yan tümcesini bir parçasını yapar. `i` 0 ' dan küçük veya buna eşitse, `i` öğesine `x`atanır.
+Bu örnekteki iç deyimi çevreleyen parantezler, **`if`** **`else`** dış deyimin yan tümcesini yapar **`if`** . `i`0 ' dan küçük veya buna eşitse, `i` öğesine atanır `x` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

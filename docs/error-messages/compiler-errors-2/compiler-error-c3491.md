@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3491
 ms.assetid: 7f0e71b2-46a0-4d25-bd09-6158a280f509
-ms.openlocfilehash: 78f90ee1c44a0d42e529a027b1e7fc90a0da3cdb
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f6f20d9af424fdd4254fc15e0580d62b9dfba144
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738329"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87184481"
 ---
 # <a name="compiler-error-c3491"></a>Derleyici hatası C3491
 
@@ -21,13 +21,13 @@ Kesilebilir olmayan bir lambda ifadesi, değere göre yakalanan bir değişkenin
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- `mutable` anahtar sözcüğüyle lambda ifadenizi bildirin veya
+- Lambda ifadenizi **`mutable`** anahtar sözcükle bildirin veya
 
 - Değişkeni lambda ifadesinin yakalama listesine başvuruya göre geçirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C3491 üretir çünkü kesilebilir olmayan bir lambda ifadesinin gövdesi, yakalama değişkenini `m`değiştirir:
+Aşağıdaki örnek, kesilebilir olmayan bir lambda ifadesinin gövdesi yakalama değişkenini değiştirdiği için C3491 oluşturur `m` :
 
 ```cpp
 // C3491a.cpp
@@ -41,7 +41,7 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `mutable` anahtar sözcüğüyle lambda ifadesini bildirerek C3491 çözer:
+Aşağıdaki örnek, lambda ifadesini anahtar sözcüğüyle bildirerek C3491 çözer **`mutable`** :
 
 ```cpp
 // C3491b.cpp
@@ -55,4 +55,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)
