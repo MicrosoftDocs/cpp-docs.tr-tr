@@ -7,18 +7,18 @@ helpviewer_keywords:
 - __hook keyword [C++]
 - event handlers [C++], connecting events to
 ms.assetid: f4cabb10-d293-4c0e-a1d2-4745ef9cc22c
-ms.openlocfilehash: c4887d85e01344c171fb0fdfe957f2d8a669ff6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a0eaf0a3bc0617dbcd1f43805af8a95291e7e47
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62153716"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87188173"
 ---
-# <a name="hook"></a>__hook
+# <a name="__hook"></a>__hook
 
-İle bir olay işleyicisi yöntemi ilişkilendirir.
+Bir işleyici yöntemini bir olayla ilişkilendirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 long __hook(
@@ -35,72 +35,72 @@ long __hook(
 
 ### <a name="parameters"></a>Parametreler
 
-*& SourceClass::EventMethod*<br/>
-Olay işleyicisi yöntemine bağlama olay yöntemi için bir işaretçi:
+*&SourceClass:: EventMethod*<br/>
+Olay işleyicisi yöntemini dağıttığınız olay yöntemine yönelik bir işaretçi:
 
-- Yerel C++ olayları: *SourceClass* olay kaynak sınıfı ve *oluşur* etkinliğidir.
+- Yerel C++ olayları: *SourceClass* olay kaynak sınıfıdır ve *eventmethod* olaydır.
 
-- COM olayları: *SourceClass* olay kaynağı arabirim ve *oluşur* yöntemlerinden biridir.
+- COM olayları: *SourceClass* olay kaynağı arabirimidir ve *eventmethod* , yöntemlerinden biridir.
 
-- Yönetilen olaylar: *SourceClass* olay kaynak sınıfı ve *oluşur* etkinliğidir.
+- Yönetilen olaylar: *SourceClass* olay kaynak sınıfıdır ve *eventmethod* olaydır.
 
-*interface*<br/>
-İçin kancalandı arabirim adı *alıcı*, yalnızca, COM Olay alıcıları için *layout_dependent* parametresinin [event_receiver](../windows/attributes/event-receiver.md) özniteliktir **true**.
+*arayüz*<br/>
+Yalnızca [event_receiver](../windows/attributes/event-receiver.md) özniteliğinin *layout_dependent* parametresine sahip olan com olay alıcıları için, *alıcıya*eklenmekte olan arabirim adı **`true`** .
 
-*source*<br/>
-Olay kaynağının bir örneği için bir işaretçi. Kod bağlı olarak `type` belirtilen `event_receiver`, *kaynak* aşağıdakilerden biri olabilir:
+*kaynaktaki*<br/>
+Olay kaynağı örneğine yönelik bir işaretçi. `type`' De belirtilen koda bağlı olarak `event_receiver` , *kaynak* aşağıdakilerden biri olabilir:
 
-- Yerel olay kaynak nesne işaretçisi.
+- Yerel bir olay kaynağı nesne işaretçisi.
 
-- Bir `IUnknown`-işaretçi (COM kaynak) bağlı.
+- `IUnknown`Tabanlı işaretçi (com kaynağı).
 
-- Bir yönetilen nesne işaretçisi (yönetilen olaylar).
+- Yönetilen bir nesne işaretçisi (yönetilen olaylar için).
 
-*& ReceiverClass::HandlerMethod*<br/>
-Olay işleyicisi yöntemi, bir olay kancalandı için bir işaretçi. İşleyici, bir sınıf ya da aynı başvuru yöntemi olarak belirtilir; sınıf adı belirtmezseniz, **__hook** sınıfı, bunu çağrılır olmasını varsayar.
+*&ReceiverClass:: Handleryöntemi*<br/>
+Bir olaya bağlamak için olay işleyicisi yöntemine yönelik bir işaretçi. İşleyici bir sınıfın yöntemi veya aynı başvuru olarak belirtilir; sınıf adını belirtmezseniz, **`__hook`** sınıfının çağrıldığı sınıf olduğunu varsayar.
 
-- Yerel C++ olayları: *ReceiverClass* olay alıcısı sınıfına olduğu ve `HandlerMethod` işleyicidir.
+- Yerel C++ olayları: *ReceiverClass* , olay alıcısı sınıfıdır ve `HandlerMethod` işleyicidir.
 
-- COM olayları: *ReceiverClass* olay alıcısı arabirim ve `HandlerMethod` ona ait işleyiciyi biridir.
+- COM olayları: *ReceiverClass* olay alıcı arabirimidir ve `HandlerMethod` işleyicilerinden biridir.
 
-- Yönetilen olaylar: *ReceiverClass* olay alıcısı sınıfına olduğu ve `HandlerMethod` işleyicidir.
+- Yönetilen olaylar: *ReceiverClass* , olay alıcı sınıfıdır ve `HandlerMethod` işleyicidir.
 
-*Alıcı*<br/>
-(İsteğe bağlı) Olay alıcısı sınıfına örneğine bir işaretçi. Bir alıcı belirtmezseniz, alıcı sınıfın veya yapının, varsayılan değer **__hook** çağrılır.
+*bildiği*<br/>
+Seçim Olay alıcısı sınıfının bir örneğine yönelik işaretçi. Bir alıcı belirtmezseniz, varsayılan olarak çağrılan alıcı sınıfı veya yapısıdır **`__hook`** .
 
 ## <a name="usage"></a>Kullanım
 
-Ana olay alıcısı sınıfına dışında da dahil olmak üzere, herhangi bir işlev kapsamı kullanımda olabilir.
+, Olay alıcı sınıfının dışında, Main dahil herhangi bir işlev kapsamında kullanılabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İç işlevini **__hook** içinde veya bir olay yöntemi ile bir işleyici yöntemi kanca ilişkilendirmek için bir olay alıcısı. Belirtilen olay kaynağı çektiğinde belirtilen işleyici sonra çağrılır. Birden çok tek bir olay işleyicilere bağlayın veya tek bir işleyici çeşitli olaylara bağlama.
+Bir olay alıcısındaki iç işlevi kullanarak **`__hook`** bir işleyici metodunu bir olay yöntemiyle ilişkilendirir veya kanca. Belirtilen işleyici daha sonra kaynak belirtilen olayı harekete geçirirse çağrılır. Birkaç işleyiciyi tek bir olaya veya birkaç olayı tek bir işleyiciye bağlayabilirsiniz.
 
-İki tür vardır **__hook**. Çoğu durumda, ilk (dört bağımsız değişken) form özellikle, COM Olay alıcıları için kullanabileceğiniz *layout_dependent* parametresinin [event_receiver](../windows/attributes/event-receiver.md) özniteliği **false** .
+Öğesinin iki biçimi vardır **`__hook`** . Genellikle [event_receiver](../windows/attributes/event-receiver.md) özniteliğinin *LAYOUT_DEPENDENT* parametresinin olduğu com olay alıcıları için, çoğu durumda, örneğin ilk (dört bağımsız değişken) formunu kullanabilirsiniz **`false`** .
 
-Bu gibi durumlarda yöntemlerinden biri olan bir olayı tetiklemeden önce tüm bir arabirimdeki yöntemlerde kanca gerekmez; Olay işleme yöntemi yalnızca yayılmış gerekir. İkinci (iki bağımsız) biçiminde kullanabileceğiniz **__hook** yalnızca, bir COM olay alıcısının için *layout_dependent* **= true**.
+Bu gibi durumlarda, metotlardan birinde bir olayı tetiketmeden önce bir arabirimdeki tüm yöntemleri bir arada bir bağlama gerekmez; Yalnızca olayı işleyen yöntemin takılması gerekir. **`__hook`** Yalnızca *layout_dependent* **= true**olan bir com olay alıcısı için ikinci (iki bağımsız değişken) biçimini kullanabilirsiniz.
 
-**__hook** bir long değeri döndürür. Sıfır dışında bir dönüş değeri (yönetilen olaylar throw bir özel durum) bir hata oluştuğunu gösterir.
+**`__hook`** uzun bir değer döndürür. Sıfır olmayan dönüş değeri bir hata oluştuğunu belirtir (yönetilen olaylar bir özel durum oluşturur).
 
-Derleyici bir olay varlığını denetler ve olay imza temsilcinin imzasıyla kabul eder.
+Derleyici bir olayın varlığını denetler ve olay imzasının temsilci imzasıyla kabul eder.
 
-COM olayları hariç **__hook** ve **__unhook** olay alıcısı çağrılabilir.
+COM olayları hariç **`__hook`** **`__unhook`** olur ve olay alıcısı dışında çağrılabilir.
 
-Kullanmaya alternatif **__hook** += işlecini kullanmaktır.
+Kullanmanın alternatifi **`__hook`** + = işlecini kullanmaktır.
 
-Yeni sözdiziminde yönetilen olaylar kodlama hakkında daha fazla bilgi için bkz: [olay](../extensions/event-cpp-component-extensions.md).
+Yeni sözdiziminde yönetilen olayları kodlama hakkında daha fazla bilgi için bkz. [olayı](../extensions/event-cpp-component-extensions.md).
 
 > [!NOTE]
 > Şablonlu bir alan veya yapı, olay içeremez.
 
 ## <a name="example"></a>Örnek
 
-Bkz: [olay işleme yerel C++'ta](../cpp/event-handling-in-native-cpp.md) ve [com'da olay işleme](../cpp/event-handling-in-com.md) örnekleri için.
+Örnekler için bkz. [Yerel C++ Içindeki olay işleme](../cpp/event-handling-in-native-cpp.md) ve [com 'da olay işleme](../cpp/event-handling-in-com.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Olay İşleme](../cpp/event-handling.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Olay Işleme](../cpp/event-handling.md)<br/>
 [event_source](../windows/attributes/event-source.md)<br/>
 [event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__unhook](../cpp/unhook.md)<br/>

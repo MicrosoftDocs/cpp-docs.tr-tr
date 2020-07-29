@@ -27,18 +27,18 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: c951716d623d900f975e9d6f8a1c762a155b1a7a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4640004526eda4ff26e9601e15298bcb8ba3c79
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951940"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232475"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
 Bir arabellekteki karakterleri bulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *memchr(
@@ -78,7 +78,7 @@ const wchar_t *wmemchr(
 *arabelleğin*<br/>
 Arabellek işaretçisi.
 
-*c*<br/>
+*,*<br/>
 Aranacak karakter.
 
 *biriktirme*<br/>
@@ -92,14 +92,14 @@ Başarılı olursa, *arabellekteki* *c* 'nin ilk konumuna bir işaretçi döndü
 
 `memchr`ve `wmemchr` *arabelleğin*ilk *sayı* karakterdeki ilk *c* oluşumunu arayın. *C* bulduğunda veya ilk *sayı* karakterini denetlediyseniz, bu yanıt vermez.
 
-C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. ' C++De, iki aşırı yükleme mevcuttur. **Const** işaretçisine alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Bu işlevlerin \_hem\_ **const** hem\_de**const** olmayan sürümleri kullanılabilir değilse, makro CRT const\_doğru aşırı yüklemeleri tanımlanmıştır. C++ İçindeki C++her iki aşırı yük \_için**const** olmayan davranışlara ihtiyacınız varsa const\_Return sembolünü tanımlayın.
+C 'de, bu işlevler **`const`** ilk bağımsız değişken için bir işaretçi alır. C++ ' da, iki aşırı yükleme mevcuttur. ' A bir işaretçi döndüren aşırı yükleme, ' a bir işaretçi döndürür; olmayan bir işaretçiyi **`const`** **`const`** alan sürüm olmayan **`const`** bir işaretçi döndürür **`const`** . Makro \_ CRT \_ const \_ doğru \_ aşırı yüklemeleri, bu işlevlerin hem hem de **`const`** **`const`** sürümleriniz varsa tanımlanmıştır. **`const`** C++ ' da her Iki c++ aşırı yüklemesi için davranışa gerek duyuyorsanız \_ const Return simgesini tanımlayın \_ .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`memchr`|\<Memory. h > veya \<String. h >|
-|`wmemchr`|\<wchar. h >|
+|`memchr`|\<memory.h> veya \<string.h>|
+|`wmemchr`|\<wchar.h>|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -138,7 +138,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 String to be searched:
@@ -152,7 +152,7 @@ Result:      r found at position 12
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ara Bellek Düzenlemesi](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
 [memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>

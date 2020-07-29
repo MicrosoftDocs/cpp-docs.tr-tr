@@ -54,18 +54,18 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-ms.openlocfilehash: 555cd27e87324141f21bdd7ef12f9ff8ea1a4e09
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 44b1abf816020258240d653cfbf8cd806fcb7dd1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913578"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232566"
 ---
 # <a name="_atoi64-_atoi64_l-_wtoi64-_wtoi64_l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
 Bir dizeyi 64 bitlik bir tamsayıya dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 __int64 _atoi64(
@@ -89,12 +89,12 @@ __int64 _wtoi64_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **__int64** değerini döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **_atoi64** için dönüş değeri 0 ' dır.
+Her işlev **`__int64`** , giriş karakterlerinin sayı olarak yorumlanarak üretilen değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **_atoi64** için dönüş değeri 0 ' dır.
 
 Büyük pozitif tamsayı değerleriyle taşma durumunda **_atoi64** , büyük negatif tamsayı değerleriyle taşma durumunda **I64_MAX** ve **I64_MIN** döndürür.
 
@@ -129,8 +129,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**_atoi64**, **_atoi64_l**|\<Stdlib. h>|
-|**_wtoi64**, **_wtoi64_l**|\<Stdlib. h> veya \<wchar. h>|
+|**_atoi64**, **_atoi64_l**|\<stdlib.h>|
+|**_wtoi64**, **_wtoi64_l**|\<stdlib.h> veya \<wchar.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -184,8 +184,8 @@ Overflow condition occurred.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

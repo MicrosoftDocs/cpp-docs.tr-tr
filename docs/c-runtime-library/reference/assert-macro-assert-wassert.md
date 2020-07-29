@@ -1,5 +1,5 @@
 ---
-title: onaylama makrosu, _Onay, _TatLı
+title: onaylama makrosu, _assert _wassert
 ms.date: 11/04/2016
 api_name:
 - assert
@@ -31,18 +31,18 @@ helpviewer_keywords:
 - assert function
 - assert macro
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
-ms.openlocfilehash: badca46a0793e51602f0de87dfca21816dcd6295
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 173974cfd9d3f9b3fc054bb71ad70b757f8ef819
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939616"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232631"
 ---
-# <a name="assert-macro-_assert-_wassert"></a>onaylama makrosu, _Onay, _TatLı
+# <a name="assert-macro-_assert-_wassert"></a>onaylama makrosu, _assert _wassert
 
-Bir ifadeyi değerlendirir ve sonuç **yanlış**olduğunda bir tanılama iletisi yazdırır ve programı iptal eder.
+Bir ifadeyi değerlendirir ve sonuç olduğunda **`false`** bir tanılama iletisi yazdırır ve programı iptal eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 assert(
@@ -63,12 +63,12 @@ void _wassert(
 ### <a name="parameters"></a>Parametreler
 
 *ifadesini*<br/>
-Sıfır (**true**) veya 0 (**false**) olarak değerlendirilen skaler bir ifade (işaretçi ifadeleri dahil).
+Sıfır () **`true`** veya 0 () olarak değerlendirilen skaler bir ifade (işaretçi ifadeleri dahil) **`false`** .
 
-*message*<br/>
+*İleti*<br/>
 Görüntülenecek ileti.
 
-*kısaltın*<br/>
+*filename*<br/>
 Onaylama işlemi başarısız kaynak dosyanın adı.
 
 *satırı*<br/>
@@ -76,33 +76,33 @@ Başarısız onaylama kaynak dosyasındaki satır numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Onaylama** makrosu genellikle program geliştirme sırasında mantık hatalarını belirlemek için kullanılır. Yalnızca program yanlış çalıştığında **yanlış** olarak değerlendirmek için *ifade* bağımsız değişkenini uygulayarak beklenmeyen durumlar meydana geldiğinde program yürütmesini durdurmak için bunu kullanın. Onaylama denetimleri, **ndebug**makrosunu tanımlayarak derleme zamanında kapatılabilir. Bir **/Dndebug** komut satırı seçeneğini kullanarak kaynak dosyalarınızı değiştirmeden **onaylama** makrosunu kapatabilirsiniz. Onay. h > dahil etmeden önce \<bir `#define NDEBUG` yönerge kullanarak kaynak kodunuzda onay makrosunu devre dışı bırakabilirsiniz.
+**Onaylama** makrosu genellikle program geliştirme sırasında mantık hatalarını belirlemek için kullanılır. Yalnızca program yanlış çalıştığında değerlendirmek için *ifade* bağımsız değişkenini uygulayarak beklenmeyen durumlar meydana geldiğinde program yürütmesini durdurmak için bunu kullanın **`false`** . Onaylama denetimleri, **ndebug**makrosunu tanımlayarak derleme zamanında kapatılabilir. Bir **/Dndebug** komut satırı seçeneğini kullanarak kaynak dosyalarınızı değiştirmeden **onaylama** makrosunu kapatabilirsiniz. Dahil etmeden önce bir yönergesi kullanarak kaynak kodunuzda **onaylama** makrosunu kapatabilirsiniz `#define NDEBUG` \<assert.h> .
 
-**Onaylama** makrosu, *ifade* **yanlış** (0) olarak değerlendirildiğinde ve program yürütmeyi sonlandırmak için [iptal](abort.md) 'i çağırdığında bir tanılama iletisi yazdırır. *İfade* **true** ise (sıfır dışında) hiçbir eylem yapılmaz. Tanılama iletisi başarısız ifadeyi, kaynak dosyanın adını ve onaylama işlemi başarısız olan satır numarasını içerir.
+**Onaylama** makrosu, *ifade* (0) değerini değerlendirirken bir tanılama iletisi yazdırır **`false`** ve program yürütmeyi sonlandırmak için [iptali](abort.md) çağırır. *İfade* **`true`** (sıfır dışında) ise hiçbir işlem yapılmaz. Tanılama iletisi başarısız ifadeyi, kaynak dosyanın adını ve onaylama işlemi başarısız olan satır numarasını içerir.
 
 Tanılama iletisi geniş karakterlerle yazdırılır. Bu nedenle, ifadede Unicode karakterler olsa bile beklendiği gibi çalışacaktır.
 
 Tanı iletisinin hedefi, yordamı çağıran uygulamanın türüne bağlıdır. Konsol uygulamaları her zaman **stderr**aracılığıyla iletiyi alır. Windows tabanlı bir uygulamada, **onaylama** , Iletiyi bir **Tamam** düğmesiyle birlikte göstermek üzere bir Ileti kutusu oluşturmak için Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) işlevini çağırır. Kullanıcı **Tamam**' a tıkladığında program hemen iptal edilir.
 
-Uygulama, çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, onay üç düğme içeren bir ileti **kutusu oluşturur:** **Durdur**, **yeniden dene**ve **Yoksay**. Kullanıcı **Durdur**' a tıkladığında program hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında, hata ayıklayıcı çağrılır ve tam ZAMANıNDA (JIT) hata ayıklama etkinse Kullanıcı programda hata ayıklayabilirler. Kullanıcı **Yoksay**' ı tıklarsa, **onaylama** normal yürütmeye devam eder: **Tamam** düğmesi ile ileti kutusunu oluşturma. Bir hata koşulu varken **Yoksay** ' a tıklamak tanımsız davranışa neden olabilir.
+Uygulama, çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, onay üç düğme içeren bir **ileti kutusu oluşturur:** **Abort**, **retry**ve **Ignore**. Kullanıcı **Durdur**' a tıkladığında program hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında, hata ayıklayıcı çağrılır ve tam ZAMANıNDA (JIT) hata ayıklama etkinse Kullanıcı programda hata ayıklayabilirler. Kullanıcı **Yoksay**' ı tıklarsa, **onaylama** normal yürütmeye devam eder: **Tamam** düğmesi ile ileti kutusunu oluşturma. Bir hata koşulu varken **Yoksay** ' a tıklamak tanımsız davranışa neden olabilir.
 
 CRT hata ayıklama hakkında daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 
-**_Onaylama** ve **_TatLı** işlevleri iç CRT işlevlerdir. Bunlar, onayları desteklemek için nesne dosyalarınızda gereken kodu en aza indirmenize yardımcı olur. Bu işlevleri doğrudan çağırmanız önerilmez.
+**_Assert** ve **_WASSERT** işlevleri iç CRT işlevlerdir. Bunlar, onayları desteklemek için nesne dosyalarınızda gereken kodu en aza indirmenize yardımcı olur. Bu işlevleri doğrudan çağırmanız önerilmez.
 
-Onay **makrosu,** **ndebug** tanımlanmadığında C çalışma zamanı kitaplıklarının hem yayın hem de hata ayıklama sürümlerinde etkinleştirilir. **Ndebug** tanımlandığında, makro kullanılabilir ancak bağımsız değişkenini değerlendirmez ve herhangi bir etkiye sahip değildir. Etkin olduğunda, **onaylama** makrosu kendi uygulamasına göre **_ıtlı** çağırır. Diğer onaylama makroları, [_Onaylama](assert-asserte-assert-expr-macros.md), [_Asserte](assert-asserte-assert-expr-macros.md) ve [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md)de mevcuttur, ancak yalnızca [_DEBUG](../../c-runtime-library/debug.md) makrosu tanımlandığında ve hata ayıklama ile bağlantılı kodlarlarsa bunlara geçirilen ifadeleri değerlendirir C çalışma zamanı kitaplıklarının sürümü.
+Onay **makrosu,** **ndebug** tanımlanmadığında C çalışma zamanı kitaplıklarının hem yayın hem de hata ayıklama sürümlerinde etkinleştirilir. **Ndebug** tanımlandığında, makro kullanılabilir ancak bağımsız değişkenini değerlendirmez ve herhangi bir etkiye sahip değildir. Etkinleştirildiğinde, **onaylama** makrosu uygulamasının uygulamasına **_wassert** çağırır. Diğer onaylama makroları, [_assert](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) ve [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md)da kullanılabilir, ancak yalnızca [_DEBUG](../../c-runtime-library/debug.md) makrosu tanımlandığında ve C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı kodlarda olduklarında, bunlara geçirilen ifadeleri değerlendirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**onaylama**, **_TatLı**|\<onaylama. h >|
+|**onaylama**, **_wassert**|\<assert.h>|
 
-**_Onaylama** işlevinin imzası bir üstbilgi dosyasında kullanılamaz. **_İlesert** işlevinin Imzası yalnızca **ndebug** makrosu tanımlanmadığı zaman kullanılabilir.
+**_Assert** işlevinin imzası bir üstbilgi dosyasında kullanılamaz. **_Wassert** işlevinin Imzası yalnızca **ndebug** makrosu tanımlanmadığı zaman kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu programda, **analyze_string** işlevi dize ve uzunlukla ilgili çeşitli koşulları test etmek için **onay makrosunu kullanır** . Koşullardan herhangi biri başarısız olursa, program hatanın nedenini belirten bir ileti yazdırır.
+Bu programda **analyze_string** işlevi, dize ve uzunlukla ilgili çeşitli koşulları test etmek için **onaylama** makrosunu kullanır. Koşullardan herhangi biri başarısız olursa, program hatanın nedenini belirten bir ileti yazdırır.
 
 ```C
 // crt_assert.c
@@ -153,10 +153,10 @@ Bir hata ayıklayıcı yüklüyse, hata ayıklayıcıyı başlatmak için **Hata
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
-[raise](raise.md)<br/>
-[signal](signal.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Makroları](assert-asserte-assert-expr-macros.md)<br/>
+[Hata Işleme](../../c-runtime-library/error-handling-crt.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[durdur](abort.md)<br/>
+[tetikle](raise.md)<br/>
+[sinyal](signal.md)<br/>
+[_ASSERT, _ASSERTE _ASSERT_EXPR makrolar](assert-asserte-assert-expr-macros.md)<br/>
 [_DEBUG](../../c-runtime-library/debug.md)<br/>

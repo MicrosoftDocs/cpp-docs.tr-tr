@@ -29,18 +29,18 @@ helpviewer_keywords:
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-ms.openlocfilehash: c54490a5625bfa2f9ffc95d616c2d73a7acf98e5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 12f54c54b59e43d9a2861489171dd6c9c9436a8a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916080"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232436"
 ---
 # <a name="_putw"></a>_putw
 
 Bir akışa tamsayı yazar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _putw(
@@ -65,7 +65,7 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Putw** işlevi, akışın geçerli konumuna **int** türünde bir ikili değer yazar *.* **_putw** akıştaki öğelerin hizalamasını etkilemez veya özel bir hizalama kabul etmez. **_putw** öncelikle önceki kitaplıklarla uyumluluk içindir. Bir **int** 'in boyutu ve bir **int** içindeki bayt sıralaması sistemler arasında farklı olduğundan, taşınabilirlik sorunları **_putw** meydana gelebilir.
+**_Putw** işlevi, **`int`** akışın geçerli konumuna türünde bir ikili değer yazar *.* **_putw** akıştaki öğelerin hizalamasını etkilemez veya özel bir hizalama kabul etmez. **_putw** öncelikle önceki kitaplıklarla uyumluluk içindir. Taşınabilir bir dosya boyutu **_putw** **`int`** ve içindeki bayt sıralaması **`int`** sistemler arasında farklı olduğundan taşınabilirlik sorunları _putw meydana gelebilir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -73,7 +73,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putw**|\<stdio. h>|
+|**_putw**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -121,5 +121,5 @@ Wrote ten words
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_getw](getw.md)<br/>

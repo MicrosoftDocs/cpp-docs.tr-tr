@@ -1,5 +1,5 @@
 ---
-title: CComCritSecLock Sınıfı
+title: CComCritSecLock sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComCritSecLock
@@ -10,18 +10,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComCritSecLock class
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-ms.openlocfilehash: 4b2ef093c1142b592ad2a6605a08bd8c34a643ea
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: fd2904f67d84db42d6b35aa4e505b063d6ea9a9f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81748079"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224298"
 ---
-# <a name="ccomcritseclock-class"></a>CComCritSecLock Sınıfı
+# <a name="ccomcritseclock-class"></a>CComCritSecLock sınıfı
 
-Bu sınıf, kritik bir bölüm nesnesini kilitleme ve açma yöntemleri sağlar.
+Bu sınıf, kritik bir bölüm nesnesini kilitlemek ve kilidini açmak için yöntemler sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template<class TLock> class CComCritSecLock
@@ -30,33 +30,33 @@ template<class TLock> class CComCritSecLock
 #### <a name="parameters"></a>Parametreler
 
 *TLock*<br/>
-Kilitlenecek ve kilitlenecek nesne.
+Kilitlenecek ve kilitlenmemiş nesne.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CComCritSecLock::CComCritSecLock](#ctor)|Oluşturucu.|
-|[CComCritSecLock::~CComCritSecLock](#dtor)|Yıkıcı.|
+|[CComCritSecLock:: CComCritSecLock](#ctor)|Oluşturucu.|
+|[CComCritSecLock:: ~ CComCritSecLock](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CComCritSecLock::Kilit](#lock)|Kritik bölüm nesnesini kilitlemek için bu yöntemi çağırın.|
-|[CComCritSecLock::Kilidini aç](#unlock)|Kritik bölüm nesnesinin kilidini açmak için bu yöntemi arayın.|
+|[CComCritSecLock:: Lock](#lock)|Kritik bölüm nesnesini kilitlemek için bu yöntemi çağırın.|
+|[CComCritSecLock:: unlock](#unlock)|Kritik bölüm nesnesinin kilidini açmak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[CComCriticalSection Class veya CComAutoCriticalSection](../../atl/reference/ccomcriticalsection-class.md) [Class](../../atl/reference/ccomautocriticalsection-class.md)ile daha güvenli bir şekilde nesneleri kilitlemek ve kilidini açmak için bu sınıfı kullanın.
+Nesneleri [Ccomcriticalhandle bölüm sınıfı](../../atl/reference/ccomcriticalsection-class.md) veya [Ccomautocriticalhandle bölüm sınıfıyla](../../atl/reference/ccomautocriticalsection-class.md)daha güvenli bir şekilde kilitlemek ve kilitlerini açmak için bu sınıfı kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a>CComCritSecLock::CComCritSecLock
+## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a>CComCritSecLock:: CComCritSecLock
 
 Oluşturucu.
 
@@ -66,19 +66,19 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cs*<br/>
+*'ye*<br/>
 Kritik bölüm nesnesi.
 
 *bInitialLock*<br/>
-İlk kilit durumu: **gerçek** kilitli anlamına gelir.
+İlk kilit durumu: **`true`** kilitli anlamına gelir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kritik bölüm nesnesini başharfe ait hale.
+Kritik bölüm nesnesini başlatır.
 
-## <a name="ccomcritseclockccomcritseclock"></a><a name="dtor"></a>CComCritSecLock::~CComCritSecLock
+## <a name="ccomcritseclockccomcritseclock"></a><a name="dtor"></a>CComCritSecLock:: ~ CComCritSecLock
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComCritSecLock() throw();
@@ -88,7 +88,7 @@ Yıkıcı.
 
 Kritik bölüm nesnesinin kilidini açar.
 
-## <a name="ccomcritseclocklock"></a><a name="lock"></a>CComCritSecLock::Kilit
+## <a name="ccomcritseclocklock"></a><a name="lock"></a>CComCritSecLock:: Lock
 
 Kritik bölüm nesnesini kilitlemek için bu yöntemi çağırın.
 
@@ -98,15 +98,15 @@ HRESULT Lock() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne başarıyla kilitlenmişse veya hata yla ilgili bir Hata HRESULT'ı S_OK döndürür.
+Nesne başarıyla kilitliyse S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne zaten kilitliyse, hata ayıklama yapılarda bir Assert hatası oluşur.
+Nesne zaten kilitliyse hata ayıklama yapılarında bir onaylama hatası oluşur.
 
-## <a name="ccomcritseclockunlock"></a><a name="unlock"></a>CComCritSecLock::Kilidini aç
+## <a name="ccomcritseclockunlock"></a><a name="unlock"></a>CComCritSecLock:: unlock
 
-Kritik bölüm nesnesinin kilidini açmak için bu yöntemi arayın.
+Kritik bölüm nesnesinin kilidini açmak için bu yöntemi çağırın.
 
 ```cpp
 void Unlock() throw();
@@ -114,9 +114,9 @@ void Unlock() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnenin kilidi zaten açıksa, hata ayıklama yapılarında bir Assert hatası oluşur.
+Nesnenin kilidi zaten açıksa, hata ayıklama yapılarında bir onaylama hatası oluşur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)<br/>
-[CComAutoCriticalSection Sınıfı](../../atl/reference/ccomautocriticalsection-class.md)
+[Ccomcriticalhandle bölüm sınıfı](../../atl/reference/ccomcriticalsection-class.md)<br/>
+[Ccomautocriticalhandle bölüm sınıfı](../../atl/reference/ccomautocriticalsection-class.md)

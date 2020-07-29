@@ -45,12 +45,12 @@ helpviewer_keywords:
 - trigonometric functions
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-ms.openlocfilehash: 41007e08884da6ccac09c7dc98cef12381e4b45a
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: ad6bed621a0f1b5dd686909e4bf579e915662079
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84506786"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232618"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
@@ -87,7 +87,7 @@ Herhangi bir sayı.
 
 **atan2** , dönüş değerinin çeyreğine ilişkin her iki parametrenin işaretlerini kullanır.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
@@ -97,7 +97,7 @@ Herhangi bir sayı.
 
 **atan** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** bağımsız değişkenlerini alan **atan** ve **atan2** aşırı yüklerini çağırabilirsiniz. C programında, **atan** ve **atan2** her zaman **çift** bağımsız değişken alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **atan** veya **atan2** **`float`** **`long double`** bağımsız değişken alan atan ve atan2 aşırı yüklerini çağırabilirsiniz. C programında, **atan** ve **atan2** her zaman **`double`** bağımsız değişken alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

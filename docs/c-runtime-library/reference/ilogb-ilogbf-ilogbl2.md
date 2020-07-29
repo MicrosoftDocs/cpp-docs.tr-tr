@@ -33,18 +33,18 @@ helpviewer_keywords:
 - ilogbf function
 - ilogbl function
 ms.assetid: 9ef19d57-1caa-41d5-8233-2faad3562fcb
-ms.openlocfilehash: fdafba039537358c9b6a1de21dc176ceea38b4fa
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 6feea7a242a066f669429944226f4ca6022505b6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954761"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232527"
 ---
 # <a name="ilogb-ilogbf-ilogbl"></a>ilogb, ilogbf, ilogbl
 
 Belirtilen değerin taraflı olmayan taban 2 üssünü temsil eden bir tamsayı alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int ilogb(
@@ -75,28 +75,28 @@ Belirtilen değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, *x* 'in Base-2 üssünü işaretli bir **int** değeri olarak döndürün.
+Başarılı olursa, *x* değerinin taban 2 üssünü değer olarak döndürün **`signed int`** .
 
-Aksi takdirde, \<Math. h > tanımlı aşağıdaki değerlerden birini döndürür:
+Aksi takdirde, içinde tanımlanan aşağıdaki değerlerden birini döndürür \<math.h> :
 
-|Giriş|Sonuç|
+|Girdi|Sonuç|
 |-----------|------------|
-|±0|FP_ILOGB0|
+|± 0|FP_ILOGB0|
 |± inf, ± Nan, sonsuz|FP_ILOGBNAN|
 
-Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
+Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren IOF **IGB** aşırı yüklerini çağırabilirsiniz. C **programında,** IBC her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **IGB** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C **programında,** IBC her zaman alır ve döndürür **`double`** .
 
-Bu işlevi çağırmak, eşdeğer **logb** işlevini çağırmaya benzerdir ve sonra Return değerini **int**olarak verir.
+Bu işlevi çağırmak, eşdeğer **logb** işlevini çağırmaya benzer ve sonra dönüş değerini ' a dönüştürmektir **`int`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|ıalınan **GB**, **ılogbf**, **ılogbl**|\<Math. h >|\<cmath >|
+|ıalınan **GB**, **ılogbf**, **ılogbl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

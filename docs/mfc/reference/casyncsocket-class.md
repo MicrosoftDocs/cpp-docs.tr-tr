@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: 9a3a04046d75a4cfdbb50347259820eb727eeb38
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 95d24c9fb9e432a54705a6b8f9fa7638affad2d2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813595"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87195102"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 
@@ -95,13 +95,13 @@ class CAsyncSocket : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAsyncSocket:: CAsyncSocket](#casyncsocket)|Bir `CAsyncSocket` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAsyncSocket:: Accept](#accept)|Yuvada bir bağlantıyı kabul eder.|
 |[CAsyncSocket:: AsyncSelect](#asyncselect)|Yuva için olay bildirimi ister.|
@@ -133,7 +133,7 @@ class CAsyncSocket : public CObject
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAsyncSocket:: OnAccept](#onaccept)|Bir dinleme yuvasına, çağırarak bekleyen bağlantı isteklerini kabul edemediğini bildirir `Accept` .|
 |[CAsyncSocket:: OnClose](#onclose)|Kendisine bağlı olan yuvanın kapatıldığını bir yuvaya bildirir.|
@@ -144,14 +144,14 @@ class CAsyncSocket : public CObject
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAsyncSocket:: operator =](#operator_eq)|Nesnesine yeni bir değer atar `CAsyncSocket` .|
 |[CAsyncSocket:: operator yuvası](#operator_socket)|Nesnenin yuva tanıtıcısını almak için bu işleci kullanın `CAsyncSocket` .|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAsyncSocket:: m_hSocket](#m_hsocket)|Bu nesneye eklenen yuva tanıtıcısını gösterir `CAsyncSocket` .|
 
@@ -819,7 +819,7 @@ BOOL GetSockOpt(
 Değerin alınacağı yuva seçeneği.
 
 *lpOptionValue*<br/>
-İstenen seçeneğin değerinin döndürüleceği arabelleğin bir işaretçisi. Seçili seçenekle ilişkili değer buffer *lpOptionValue*içinde döndürülür. *LpOptionLen* tarafından işaret edilen tamsayı, başlangıçta bu arabelleğin boyutunu bayt cinsinden içermelidir; dönüş sırasında döndürülen değerin boyutuna ayarlanır. SO_LINGER için bu, bir yapının boyutu olacaktır `LINGER` ; diğer tüm seçenekler için, seçeneğe bağlı olarak bool veya **int**boyut olacaktır. Açıklamalar bölümünde Seçenekler listesini ve boyutlarını görün.
+İstenen seçeneğin değerinin döndürüleceği arabelleğin bir işaretçisi. Seçili seçenekle ilişkili değer buffer *lpOptionValue*içinde döndürülür. *LpOptionLen* tarafından işaret edilen tamsayı, başlangıçta bu arabelleğin boyutunu bayt cinsinden içermelidir; dönüş sırasında döndürülen değerin boyutuna ayarlanır. SO_LINGER için bu, bir yapının boyutu olacaktır `LINGER` ; diğer tüm seçenekler için, **`int`** seçeneğe bağlı olarak, bool veya a boyutunda olacaktır. Açıklamalar bölümünde Seçenekler listesini ve boyutlarını görün.
 
 *lpOptionLen*<br/>
 *LpOptionValue* arabelleğinin bayt cinsinden boyutu için bir işaretçi.
@@ -856,26 +856,26 @@ Aşağıdaki seçenekler için desteklenir `GetSockOpt` . Türü, *lpOptionValue
 |SO_DEBUG|BOOL|Hata ayıklama etkinleştirildi.|
 |SO_DONTLINGER|BOOL|True ise SO_LINGER seçeneği devre dışıdır.|
 |SO_DONTROUTE|BOOL|Yönlendirme devre dışı.|
-|SO_ERROR|**int**|Hata durumunu alın ve temizleyin.|
+|SO_ERROR|**`int`**|Hata durumunu alın ve temizleyin.|
 |SO_KEEPALIVE|BOOL|Etkin tutma gönderme gönderiliyor.|
 |SO_LINGER|`struct LINGER`|Geçerli lger seçeneklerini döndürür.|
 |SO_OOBINLINE|BOOL|Normal veri akışında bant dışı veriler alınır.|
 |SO_RCVBUF|int|Alma için arabellek boyutu.|
 |SO_REUSEADDR|BOOL|Yuva zaten kullanımda olan bir adrese bağlanabilir.|
-|SO_SNDBUF|**int**|Gönderimler için arabellek boyutu.|
-|SO_TYPE|**int**|Yuva türü (örneğin, SOCK_STREAM).|
+|SO_SNDBUF|**`int`**|Gönderimler için arabellek boyutu.|
+|SO_TYPE|**`int`**|Yuva türü (örneğin, SOCK_STREAM).|
 |TCP_NODELAY|BOOL|Birleştirme gönderme için Nagle algoritmasını devre dışı bırakır.|
 
 İçin desteklenmeyen Berkeley yazılım dağıtımı (BSD) seçenekleri `GetSockOpt` şunlardır:
 
 |Değer|Tür|Anlamı|
 |-----------|----------|-------------|
-|SO_RCVLOWAT|**int**|Düşük su işareti al.|
-|SO_RCVTIMEO|**int**|Alma zaman aşımı.|
-|SO_SNDLOWAT|**int**|Düşük su işareti gönderin.|
-|SO_SNDTIMEO|**int**|Gönderme zaman aşımı.|
+|SO_RCVLOWAT|**`int`**|Düşük su işareti al.|
+|SO_RCVTIMEO|**`int`**|Alma zaman aşımı.|
+|SO_SNDLOWAT|**`int`**|Düşük su işareti gönderin.|
+|SO_SNDTIMEO|**`int`**|Gönderme zaman aşımı.|
 |IP_OPTIONS||IP üstbilgisindeki seçenekleri alın.|
-|TCP_MAXSEG|**int**|En fazla TCP segment boyutunu alın.|
+|TCP_MAXSEG|**`int`**|En fazla TCP segment boyutunu alın.|
 
 `GetSockOpt`Desteklenmeyen bir seçenekle çağırmak, öğesinden BIR WSAENOPROTOOPT hata kodu oluşmasına neden olur `GetLastError` .
 
@@ -1765,9 +1765,9 @@ Aşağıdaki seçenekler için desteklenir `SetSockOpt` . Türü, *lpOptionValue
 |SO_KEEPALIVE|BOOL|Canlı tutmayı gönder.|
 |SO_LINGER|`struct LINGER`|`Close`Gönderilmemiş veriler varsa açık.|
 |SO_OOBINLINE|BOOL|Normal veri akışında bant dışı veri alın.|
-|SO_RCVBUF|**int**|Alma için arabellek boyutunu belirtin.|
+|SO_RCVBUF|**`int`**|Alma için arabellek boyutunu belirtin.|
 |SO_REUSEADDR|BOOL|Yuvanın zaten kullanımda olan bir adrese bağlanmasına izin verin. (Bkz. [bind](#bind).)|
-|SO_SNDBUF|**int**|Gönderme için arabellek boyutunu belirtin.|
+|SO_SNDBUF|**`int`**|Gönderme için arabellek boyutunu belirtin.|
 |TCP_NODELAY|BOOL|Birleştirme gönderme için Nagle algoritmasını devre dışı bırakır.|
 
 İçin desteklenmeyen Berkeley yazılım dağıtımı (BSD) seçenekleri `SetSockOpt` şunlardır:
@@ -1775,12 +1775,12 @@ Aşağıdaki seçenekler için desteklenir `SetSockOpt` . Türü, *lpOptionValue
 |Değer|Tür|Anlamı|
 |-----------|----------|-------------|
 |SO_ACCEPTCONN|BOOL|Yuva dinliyor|
-|SO_ERROR|**int**|Hata durumunu alın ve temizleyin.|
-|SO_RCVLOWAT|**int**|Düşük su işareti al.|
-|SO_RCVTIMEO|**int**|Alma zaman aşımı|
-|SO_SNDLOWAT|**int**|Düşük su işareti gönderin.|
-|SO_SNDTIMEO|**int**|Gönderme zaman aşımı.|
-|SO_TYPE|**int**|Yuva türü.|
+|SO_ERROR|**`int`**|Hata durumunu alın ve temizleyin.|
+|SO_RCVLOWAT|**`int`**|Düşük su işareti al.|
+|SO_RCVTIMEO|**`int`**|Alma zaman aşımı|
+|SO_SNDLOWAT|**`int`**|Düşük su işareti gönderin.|
+|SO_SNDTIMEO|**`int`**|Gönderme zaman aşımı.|
+|SO_TYPE|**`int`**|Yuva türü.|
 |IP_OPTIONS||IP üstbilgisindeki seçenek alanını ayarla.|
 
 ## <a name="casyncsocketshutdown"></a><a name="shutdown"></a>CAsyncSocket:: kapanıyor
@@ -1879,6 +1879,6 @@ Bu yöntem bir yuva tanıtıcısı ayırır. Yuvayı belirtilen bir adrese bağl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CSocket Sınıfı](../../mfc/reference/csocket-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CSocket sınıfı](../../mfc/reference/csocket-class.md)<br/>
 [CSocketFile sınıfı](../../mfc/reference/csocketfile-class.md)

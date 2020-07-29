@@ -39,18 +39,18 @@ helpviewer_keywords:
 - powf function
 - pow function
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
-ms.openlocfilehash: 38e79b547ad49c6f1c0f5a784d710838afdec388
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 16038cbb2c572575a9424065825697eb4115e43f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916792"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232449"
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 
 *X* ' i *y*'nin kuvvetine göre hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double pow( double x, double y );
@@ -68,7 +68,7 @@ long double pow( long double x, int y );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Temel.
 
 *Iz*<br/>
@@ -82,7 +82,7 @@ S.
 |-----------------------|-------------------------|
 |*x* ! = 0,0 ve *y* = = 0,0|1|
 |*x* = = 0,0 ve *y* = = 0,0|1|
-|*x* = = 0,0 ve *y* < 0|'SI|
+|*x* = = 0,0 ve *y* < 0|INF|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -90,9 +90,9 @@ S.
 
 **POW** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-C++ aşırı yüklemeye izin verdiğinden, **POW**'ın çeşitli aşırı yüklerini çağırabilirsiniz. C programında **POW** her zaman iki **çift** değer alır ve bir **Double** değeri döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **POW**'ın çeşitli aşırı yüklerini çağırabilirsiniz. C programında **POW** her zaman iki **`double`** değer alır ve bir **`double`** değer döndürür.
 
-`pow(int, int)` Aşırı yükleme artık kullanılamıyor. Bu aşırı yüklemeyi kullanırsanız, derleyici [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)yayabilir. Bu sorundan kaçınmak için, ilk parametreyi **Double**, **float**veya **Long** **Double**olarak atayın.
+`pow(int, int)`Aşırı yükleme artık kullanılamıyor. Bu aşırı yüklemeyi kullanırsanız, derleyici [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)yayabilir. Bu sorundan kaçınmak için, ilk parametreyi **`double`** , veya olarak atayın **`float`** **`long double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -100,7 +100,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
-|**POW**, **powf**, **ptıl**|\<Math. h>|\<Math. h> veya \<cmath>|
+|**POW**, **powf**, **ptıl**|\<math.h>|\<math.h> veya \<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -127,7 +127,7 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md) <br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md) <br/>
 [exp, expf, expl](exp-expf.md) <br/>
 [log, logf, log10, log10f](log-logf-log10-log10f.md) <br/>
 [sqrt, sqrtf, sqrtl](sqrt-sqrtf-sqrtl.md) <br/>

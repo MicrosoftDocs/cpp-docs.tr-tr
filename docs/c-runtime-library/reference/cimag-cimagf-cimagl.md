@@ -33,18 +33,18 @@ helpviewer_keywords:
 - cimagf function
 - cimagl function
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
-ms.openlocfilehash: 38eef416afb078614ef26ab5d7c8810f46dd9a85
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: af7d15ee1b5dfd863025565bf8827199f7492841
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939159"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232553"
 ---
 # <a name="cimag-cimagf-cimagl"></a>cimag, cimagf, cimagl
 
 Karmaşık bir sayının sanal kısmını alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double cimag( _Dcomplex z );
@@ -59,7 +59,7 @@ long double cimag( _Lcomplex z );  // C++
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,13 +68,13 @@ Karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** veya **_lcomplex** değerlerini alan ve **float** veya **Long** **Double** değerlerini döndüren **cımag** 'nin aşırı yüklerini çağırabilirsiniz. C programında, **cımag** her zaman bir **_dcomplex** değeri alır ve bir **Double** değeri döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **cimag** 'nin **_Fcomplex** veya **_Lcomplex** değerlerini alan ve döndüren veya değer döndüren aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **cımag** her zaman bir **_Dcomplex** değeri alır ve bir değer döndürür **`double`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**cımag**, **cımıknatıf**, **cımagl**|\<karmaşık. h >|\<ccomplex >|
+|**cımag**, **cımıknatıf**, **cımagl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

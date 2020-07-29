@@ -32,18 +32,18 @@ helpviewer_keywords:
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-ms.openlocfilehash: 54e50da06fbe009184894edc60b6267e372aefc1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9502de7b12394277b01a18caca48a7e783efaf4e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915422"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232488"
 ---
 # <a name="mbtowc-_mbtowc_l"></a>mbtowc, _mbtowc_l
 
 Çok baytlı bir karakteri karşılık gelen geniş bir karaktere dönüştürün.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int mbtowc(
@@ -62,7 +62,7 @@ int _mbtowc_l(
 ### <a name="parameters"></a>Parametreler
 
 *wchar*<br/>
-Geniş bir karakterin adresi (tür **wchar_t**).
+Geniş bir karakterin (tür) adresi **`wchar_t`** .
 
 *mbchar*<br/>
 Bir bayt dizisinin adresi (çok baytlı bir karakter).
@@ -70,7 +70,7 @@ Bir bayt dizisinin adresi (çok baytlı bir karakter).
 *biriktirme*<br/>
 Denetlenecek bayt sayısı.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -87,8 +87,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbtowc**|\<Stdlib. h>|
-|**_mbtowc_l**|\<Stdlib. h>|
+|**mbtowc**|\<stdlib.h>|
+|**_mbtowc_l**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -156,8 +156,8 @@ Attempt to convert a NULL pointer to a wide character:
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>

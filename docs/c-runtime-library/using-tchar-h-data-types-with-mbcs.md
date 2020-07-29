@@ -6,63 +6,63 @@ helpviewer_keywords:
 - MBCS data type
 - _MBCS data type
 ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
-ms.openlocfilehash: b86cbc6d99cbc6969536934c1583ba5207a53629
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1aab0c21a348e4b1a6e85a7adb7f7f8ea1587b2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62377906"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87188641"
 ---
-# <a name="using-tcharh-data-types-with-mbcs"></a>MBCS ile TCHAR.H Veri Türlerini Kullanma
+# <a name="using-tcharh-data-types-with-_mbcs"></a>MBCS ile TCHAR.H Veri Türlerini Kullanma
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Genel metin yordam eşleşmeleri tablosunu belirtir (bkz [genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)), Bildirim sabiti **_MBCS** olan tanımlanan, belirli bir genel metin yordam aşağıdaki tür birini eşler, yordamları:
+Genel metin rutin eşlemelerinin tablosu (bkz. [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)), bildirim sabiti **_MBCS** tanımlandığında, belirli bir genel metin yordamı aşağıdaki yordam türlerinden biriyle eşlenir:
 
-- Çok baytlı bayt, karakterleri ve dizeleri uygun şekilde işler SBCS yordamı. Bu durumda, dize bağımsız değişkenleri türünde olması bekleniyor **char&#42;**. Örneğin, **_tprintf** eşlendiği **printf**; dize bağımsız değişkenleri **printf** türü **char&#42;**. Kullanırsanız **_TCHAR** genel metin veri türü, dize türleri, resmi ve gerçek parametre türleri için **printf** eşleşir çünkü **_TCHAR&#42;**  eşler için **char&#42;**.
+- Çok baytlı baytları, karakterleri ve dizeleri uygun şekilde işleyen bir SBCS yordamı. Bu durumda, dize bağımsız değişkenlerinin **char&#42;** türünde olması beklenir. Örneğin, **_tprintf** **printf**ile eşlenir; **printf** dize bağımsız değişkenleri **char&#42;** türündedir. Dize türleriniz için **_TCHAR** genel metin veri türünü kullanırsanız, **_TCHAR&#42;** **char&#42;** ile eşlendiği için **printf** eşleşmesi için biçimsel ve gerçek parametre türleri.
 
-- Bir MBCS özgü yordamı. Bu durumda, dize bağımsız değişkenleri türünde olması bekleniyor __imzasız char&#42;__. Örneğin, **_tcsrev** eşlendiği **_mbsrev**, bekliyor ve bir dize türü döndürür __imzasız char&#42;__. Yeniden kullanırsanız **_TCHAR** , dize türleri için genel metin veri türü var. türü çakışma olasılığı nedeniyle **_TCHAR** türüne haritalar **char**.
+- MBCS 'ye özgü bir yordamdır. Bu durumda, dize bağımsız değişkenlerinin __işaretsiz char&#42;__ türünde olması beklenir. Örneğin, **_tcsrev** **_mbsrev**eşlenir ve __işaretsiz char&#42;__ türünde bir dize bekler ve döndürür. Yine, dize türleriniz için **_TCHAR** genel metin veri türünü kullanırsanız, **_TCHAR** tür olarak eşlendiği için olası bir tür çakışması vardır **`char`** .
 
-Bu tür çakışması (ve C Derleyici uyarılarını veya neden olan C++ derleyici hataları) engel için üç çözümler aşağıda verilmiştir:
+Aşağıda, bu tür çakışmasını önlemek için üç çözüm bulunur (ve sonuç olarak C derleyicisi uyarıları veya C++ derleyici hataları):
 
-- Varsayılan davranışı kullanın. TCHAR. H genel metin yordam prototipleri aşağıdaki örnekte olduğu gibi çalışma zamanı kitaplığı yordamları sağlar.
+- Varsayılan davranışı kullanın. 'Ta. H, aşağıdaki örnekte olduğu gibi çalışma zamanı kitaplıklarında yordamlar için genel metin rutin prototürler sağlar.
 
    ```C
    char *_tcsrev(char *);
    ```
 
-   Varsayılan durumda, prototipi **_tcsrev** eşlendiği **_mbsrev** aracılığıyla LIBC içinde bir dönüştürücü. LIB. Bu tür değişiklikleri **_mbsrev** gelen parametreleri ve giden dönüş değerini **_TCHAR &#42;**  (gibi **char &#42;** ) için **İmzasız char &#42;**. Bu yöntem kullanırken eşleşen türü sağlar **_TCHAR**, ancak işlev çağrısı yükü nedeniyle görece yavaş olacaktır.
+   Varsayılan durumda, **_tcsrev** için prototip, libc 'teki bir dönüştürücü aracılığıyla **_mbsrev** eşlenir. LIB. Bu, **_mbsrev** gelen parametrelerin türlerini ve giden dönüş değerini **_TCHAR &#42;** ( **char &#42;** gibi) **işaretsiz char &#42;** olarak değiştirir. Bu yöntem **_TCHAR**kullanırken tür eşleştirmeyi sağlar, ancak işlev çağrı yükü nedeniyle oldukça yavaştır.
 
-- Aşağıdaki önişlemci deyim, kodunuzda satır içi işlevi kullanın.
+- Kodunuzda aşağıdaki Önişlemci ifadesini ekleyerek işlevi satır içinde kullanın.
 
    ```C
    #define _USE_INLINING
    ```
 
-   Bu yöntem TCHAR sağlanan bir satır içi işlev dönüştürücü neden olur. H, genel metin yordam doğrudan uygun MBCS yordamına eşlemek için kullanılır. TCHAR alınan aşağıdaki kod alıntıda. H bunun nasıl yapıldığına bir örnek sağlar.
+   Bu yöntem, TCHAR içinde sunulan bir satır içi işlev Dönüştürücüsü oluşturulmasına neden olur. H, genel metin yordamını doğrudan uygun MBCS yordamıyla eşlemek için. Aşağıdaki kod TCHAR 'dan alıntı yapılır. H bunun nasıl yapıldığını gösteren bir örnek sağlar.
 
    ```C
    __inline char *_tcsrev(char *_s1)
    {return (char *)_mbsrev((unsigned char *)_s1);}
    ```
 
-   Kullanabileceğiniz, satır içi kullanım, tür ve hiçbir ek süre olan maliyet garanti eder, en iyi çözümü olmasıdır.
+   Satır içi ' ı kullanacaksanız, bu en iyi çözümdür çünkü tür eşleşmesini garanti eder ve ek bir zaman maliyeti yoktur.
 
-- Kodunuzda aşağıdaki önişlemci ifadesi "doğrudan eşleme" kullanın.
+- Aşağıdaki önişlemci bildirisini kodunuza ekleyerek "doğrudan eşleme" kullanın.
 
    ```C
    #define _MB_MAP_DIRECT
    ```
 
-   Varsayılan davranışı kullanmak istemiyorsanız veya kullanamazsınız, bu yaklaşım hızlı bir alternatif sağlar. satır içi kullanım. Genel metin yordam TCHAR aşağıdaki örnekte olduğu gibi yordamı MBCS sürümü için doğrudan bir makro tarafından eşleştirilecek neden olur. H
+   Bu yaklaşım, varsayılan davranışı kullanmak istemiyorsanız veya satır içi kullanmıyorsanız hızlı bir alternatif sağlar. Aşağıdaki örnekte gösterildiği gibi, genel metin yordamının bir makro tarafından doğrudan, yordamın MBCS sürümüne eşlenmesine neden olur. Olsun.
 
    ```C
    #define _tcschr _mbschr
    ```
 
-Bu yaklaşımı benimsemeniz, uygun veri türü dize bağımsız değişkenleri ve dönüş değerleri dize için kullanıldığından emin olmak için dikkatli olmanız gerekir. Tür atama uygun tür eşleşmesini sağlamak için kullanabileceğiniz veya kullanabileceğiniz **_TXCHAR** genel metin veri türü. **_TXCHAR** türüne haritalar **char** SBCS kod ancak türüne haritalar **imzasız char** MBCS kod. Genel metin makrolar hakkında daha fazla bilgi için bkz. [genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
+Bu yaklaşımı uyguladığınızda, dize bağımsız değişkenleri ve dize dönüş değerleri için uygun veri türlerinin kullanıldığından emin olmak için dikkatli olmanız gerekir. Uygun tür eşleşmesini sağlamak için tür atama kullanabilirsiniz veya **_TXCHAR** genel metin veri türünü kullanabilirsiniz. **_TXCHAR** **`char`** , SBCS kodunda türüyle EŞLENIR, ancak MBCS kodunda tür ile eşlenir **`unsigned char`** . Genel metin makroları hakkında daha fazla bilgi için bkz. [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

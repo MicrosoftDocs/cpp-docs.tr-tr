@@ -28,18 +28,18 @@ helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-ms.openlocfilehash: 2fa902c0fa5a4a78f6fd3e46edeb3799aaf92569
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b18479e50d5b35c8de3dfd11eb34d0d21d45f223
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951929"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232462"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
 İki arabelleki karakterleri karşılaştırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int memcmp(
@@ -69,7 +69,7 @@ Karşılaştırılacak karakter sayısı. ( **Memcmp**için baytları ve **wmemc
 
 Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
-|Dönüş değeri|Buf1 ve buf2 'in ilk *sayı* karakterlerinin ilişkisi|
+|Döndürülen değer|Buf1 ve buf2 'in ilk *sayı* karakterlerinin ilişkisi|
 |------------------|---------------------------------------------------------------|
 |< 0|*buffer1* küçüktür *buffer2*|
 |0|*buffer1* özdeş *buffer2*|
@@ -77,14 +77,14 @@ Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Buffer1* ve *buffer2* öğesinin ilk *sayı* karakterlerini karşılaştırır ve ilişkilerini gösteren bir değer döndürür. Sıfır olmayan bir dönüş değeri işareti, arabelleklerindeki ilk farklı değer çifti arasındaki farkın işaret değeridir. Değerler, **memcmp**için **imzasız** **karakter** ve **wmemcmp**için **wchar_t** olarak yorumlanır.
+*Buffer1* ve *buffer2* öğesinin ilk *sayı* karakterlerini karşılaştırır ve ilişkilerini gösteren bir değer döndürür. Sıfır olmayan bir dönüş değeri işareti, arabelleklerindeki ilk farklı değer çifti arasındaki farkın işaret değeridir. Değerler **`unsigned char`** **memcmp**için olarak yorumlanır ve **`wchar_t`** **wmemcmp**için.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memcmp**|\<Memory. h > veya \<String. h >|
-|**wmemcmp**|\<wchar. h >|
+|**memcmp**|\<memory.h> veya \<string.h>|
+|**wmemcmp**|\<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -142,7 +142,7 @@ int_arr1 is equal to int_arr2.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ara Bellek Düzenlemesi](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memchr, wmemchr](memchr-wmemchr.md)<br/>
 [memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>

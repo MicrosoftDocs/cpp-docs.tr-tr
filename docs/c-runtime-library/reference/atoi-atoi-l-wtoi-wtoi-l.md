@@ -49,18 +49,18 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-ms.openlocfilehash: b8be8af9fc56eea0011e5b07c1573dfe848b6c7d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 49e8569ceec005680f97faa9bc64783a097db36a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919858"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232579"
 ---
 # <a name="atoi-_atoi_l-_wtoi-_wtoi_l"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
 Dizeyi tamsayıya Dönüştür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int atoi(
@@ -84,12 +84,12 @@ int _wtoi_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **int** değeri döndürür. Dönüş değeri, **atoı** ve **_wtoi**için 0 ' dır ve giriş bu türden bir değere dönüştürülemiyorsa.
+Her işlev **`int`** , giriş karakterlerinin sayı olarak yorumlanarak üretilen değeri döndürür. Dönüş değeri, **atoı** ve **_wtoi**için 0 ' dır ve giriş bu türden bir değere dönüştürülemiyorsa.
 
 Büyük negatif tamsayı değerleriyle taşma durumunda **LONG_MIN** döndürülür. **atoı** ve **_wtoi** bu koşullara **INT_MAX** ve **INT_MIN** döndürür. Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
@@ -118,8 +118,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**atoı**|\<Stdlib. h>|
-|**_atoi_l**, **_wtoi**, **_wtoi_l**|\<Stdlib. h> veya \<wchar. h>|
+|**atoı**|\<stdlib.h>|
+|**_atoi_l**, **_wtoi**, **_wtoi_l**|\<stdlib.h> veya \<wchar.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -172,8 +172,8 @@ Overflow condition occurred.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

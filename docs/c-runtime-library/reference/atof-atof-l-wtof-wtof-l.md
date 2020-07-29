@@ -54,18 +54,18 @@ helpviewer_keywords:
 - _wtof function
 - string conversion, to floating point values
 ms.assetid: eb513241-c9a9-4f5c-b7e7-a49b14abfb75
-ms.openlocfilehash: 5200b93a5745dfb8e9b31cd5663452b84cb3058a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8eee8db691b3b652768980237fc90bd675bac89b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909110"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232592"
 ---
 # <a name="atof-_atof_l-_wtof-_wtof_l"></a>atof, _atof_l, _wtof, _wtof_l
 
 Dizeyi Double 'a Dönüştür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double atof(
@@ -89,12 +89,12 @@ double _wtof_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak oluşturulan **Double** değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri 0,0 ' dir.
+Her işlev **`double`** , giriş karakterlerinin sayı olarak yorumlanarak üretilen değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri 0,0 ' dir.
 
 Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
@@ -127,8 +127,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam (ler)|Gerekli başlık|
 |------------------|---------------------|
-|**atof**, **_atof_l**|C: \<Math. h> veya \<stdlib. h> C++: \<cstdlib>, \<Stdlib. h>, \<cmath> veya \<Math. h>|
-|**_wtof**, **_wtof_l**|C: \<Stdlib. h> veya \<wchar. h> C++: \<cstdlib>, \<Stdlib. h> veya \<wchar. h>|
+|**atof**, **_atof_l**|C: \<math.h> veya \<stdlib.h> C++: \<cstdlib> , \<stdlib.h> , \<cmath> veya\<math.h>|
+|**_wtof**, **_wtof_l**|C: \<stdlib.h> veya \<wchar.h> C++: \<cstdlib> , \<stdlib.h> veya\<wchar.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -184,8 +184,8 @@ Function: _atof_l("  -2,309e-25", fr)) = -2.309000e-25
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

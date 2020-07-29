@@ -27,18 +27,18 @@ helpviewer_keywords:
 - malloc function
 - memory allocation
 ms.assetid: 144fcee2-be34-4a03-bb7e-ed6d4b99eea0
-ms.openlocfilehash: 4e699920f37139be40542ba91b3740cd9edef148
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 30d92975d1a3971d29b1758dc23d3a84372288c9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917507"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232514"
 ---
 # <a name="malloc"></a>malloc
 
 Bellek bloklarını ayırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *malloc(
@@ -53,7 +53,7 @@ Ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**malloc** , ayrılan alana bir void işaretçisi döndürür veya yeterli bellek yoksa **null** değer döndürür. **Void**dışında bir türe işaretçi döndürmek için, dönüş değerinde bir tür dönüştürme kullanın. Dönüş değeri tarafından işaret edilen depolama alanının, temel hizalamadan daha az veya buna eşit bir hizalama gereksinimine sahip herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olduğu garanti edilir. (Visual C++, temel hizalama, **çift**veya 8 bayt için gerekli olan hizalamadır. 64 bitlik platformları hedefleyen kodda 16 bayttır.) Daha büyük bir hizalama gereksinimine sahip nesneler için depolama alanı ayırmak üzere [_aligned_malloc](aligned-malloc.md) kullanın — ÖRNEĞIN, SSE türleri [__m128](../../cpp/m128.md) ve **__m256**ve n 'nin 8 ' den büyük olduğu ile `__declspec(align( n ))` belirtilen **n** türleri. *Boyut* 0 ise, **malloc** yığında sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür. İstenen bellek miktarı küçük olsa bile, her zaman **malloc**'den dönüşü denetleyin.
+**malloc** , ayrılan alana bir void işaretçisi döndürür veya yeterli bellek yoksa **null** değer döndürür. Dışında bir türe işaretçi döndürmek için **`void`** , dönüş değerinde bir tür dönüştürme kullanın. Dönüş değeri tarafından işaret edilen depolama alanının, temel hizalamadan daha az veya buna eşit bir hizalama gereksinimine sahip herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olduğu garanti edilir. (Visual C++, temel hizalama **`double`** , veya 8 bayt için gerekli olan hizalamadır. 64 bitlik platformları hedefleyen kodda 16 bayttır.) Daha büyük bir hizalama gereksinimine sahip nesneler için depolama alanı ayırmak üzere [_aligned_malloc](aligned-malloc.md) kullanın — ÖRNEĞIN, SSE türleri [__m128](../../cpp/m128.md) ve **`__m256`** , ve `__declspec(align( n ))` **n** 'nin 8 ' den büyük olduğu ile belirtilen türleri. *Boyut* 0 ise, **malloc** yığında sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür. İstenen bellek miktarı küçük olsa bile, her zaman **malloc**'den dönüşü denetleyin.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -76,11 +76,11 @@ Başlangıç kodu **_environ**, *envp*ve *argv* değişkenleri için depolama al
 |[fkoyar](fputs-fputws.md)|[_getdcwd](getcwd-wgetcwd.md)|[scanf](scanf-scanf-l-wscanf-wscanf-l.md)||
 |[fread](fread.md)|[iyorsa](../../c-runtime-library/gets-getws.md)|[_searchenv](searchenv-wsearchenv.md)||
 
-C++ [_set_new_mode](set-new-mode.md) işlevi, **malloc**için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Varsayılan değeri geçersiz kılmak için, `_set_new_mode(1)` programınızda erken ÇAĞıRıN veya NewMode ile bağlayın. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+C++ [_set_new_mode](set-new-mode.md) işlevi, **malloc**için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılan değeri geçersiz kılmak için, `_set_new_mode(1)` programınızda erken çağırın veya NEWMODE ile bağlayın. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
 Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **malloc** [_malloc_dbg](malloc-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
-**malloc** işaretlendi `__declspec(noalias)` ve `__declspec(restrict)`; Bu, işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer ad olmadığından garanti olduğu anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
+**malloc** işaretlenir `__declspec(noalias)` ve `__declspec(restrict)` ; Bu, işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer ad olmadığından garanti olduğu anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,7 +88,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**malloc**|\<Stdlib. h> ve \<malloc. h>|
+|**malloc**|\<stdlib.h> ve \<malloc.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -135,7 +135,7 @@ Memory freed
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [Süz](free.md)<br/>
 [realloc](realloc.md)<br/>

@@ -26,18 +26,18 @@ helpviewer_keywords:
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-ms.openlocfilehash: 0b12b4adde710f2fc46b3a3790519006fabbb1fc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d4604a6e2dfb00502e3c942c9735a077e1632843
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952770"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232501"
 ---
 # <a name="_malloca"></a>_malloca
 
-Yığında bellek ayırır. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_alloca](alloca.md) 'nın bir sürümüdür.
+Yığında bellek ayırır. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_alloca](alloca.md) bir sürümüdür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *_malloca(
@@ -52,34 +52,34 @@ Yığından ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Malloca** yordamı, ayrılan alana **void** bir işaretçi döndürür ve bu, herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise **_malloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
+**_Malloca** yordamı **`void`** , ayrılan alana bir işaretçi döndürür ve bu, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_malloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-*Boyut* **_Alloca_s_threshold**değerinden büyükse, **_malloca** yığın üzerinde ayırmaya çalışır ve alan ayrılamadığında null bir işaretçi döndürür. *Boyut* , **_Alloca_s_threshold**değerinden küçükse, **_malloca** yığına ayırmaya çalışır ve alan ayrılamadığında bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu özel C++ durum değil; Bu, yapılandırılmış bir özel durumdur. Özel durum işlemenin C++ kullanılması yerine, bu özel durumu yakalamak Için [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
+*Boyut* **_ALLOCA_S_THRESHOLD**değerinden büyükse **_malloca** yığına ayırmaya çalışır ve alan ayrılamadığında null bir işaretçi döndürür. *Boyut* **_ALLOCA_S_THRESHOLD**küçüktür veya eşitse **_malloca** yığına ayrılmaya çalışır ve alan ayrılamadığında bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durumu değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işlemeyi kullanmak yerine, bu özel durumu yakalamak için [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_malloca** , istek belirli bir boyutu **_Alloca_s_threshold**tarafından belirtilen bayt aşarsa, program yığınından veya yığında *Boyut* baytları ayırır. **_Malloca** ve **_alloca** arasındaki fark, boyutun ne olursa olsun, **_alloca** her zaman yığında ayırır. Ayrılan **belleği serbest bırakmak için bir** çağrıya gerek duymayan veya buna izin veren **_alloca 'dan**farklı olarak, **_malloca** , [_freea](freea.md) 'nın boş bellek kullanmasını gerektirir. Hata ayıklama modunda **_malloca** her zaman yığından bellek ayırır.
+**_malloca** , istek **_ALLOCA_S_THRESHOLD**tarafından verilen bayt cinsinden belirli bir boyutu aşarsa program yığınından veya yığında *Boyut* baytları ayırır. **_Malloca** ve **_alloca** arasındaki fark, **_alloca** her zaman yığına ayrılan, boyuttan bağımsız olarak olur. _Alloca **farklı olarak,** ayrılan belleği serbest bırakmak için bir çağrı gerektirmeyen veya buna izin veren **_alloca**aksine, **_malloca** belleği boşaltmak için [_freea](freea.md) kullanılmasını gerektirir. Hata ayıklama modunda **_malloca** her zaman yığından bellek ayırır.
 
-Özel durum işleyicisinde (EH) **_malloca 'yı** açıkça çağırmaya yönelik kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: Görevleri kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirir. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde **_malloca** açıkça çağrılması, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
+Özel durum işleyicisinde (EH) **_malloca** açıkça çağırmak için kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: kendi görevlerini, kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirirler. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde **_malloca** açıkça çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
 
-- Windows NT SEH özel durum filtresi ifadesi: **__except** (`_malloca ()` )
+- Windows NT SEH özel durum filtresi ifadesi: **`__except`** ( `_malloca ()` )
 
-- Windows NT SEH son özel durum işleyicisi: **__finally** {`_malloca ()` }
+- Windows NT SEH son özel durum işleyicisi: **`__finally`** { `_malloca ()` }
 
-- C++EH catch yan tümcesi ifadesi
+- C++ EH catch yan tümcesi ifadesi
 
 Ancak, **_malloca** doğrudan bir Eh yordamının içinden veya daha önce listelenen eh senaryolarından biri tarafından çağrılan uygulama tarafından sağlanan geri aramadan çağrılabilir.
 
 > [!IMPORTANT]
-> Windows XP 'de, **_malloca** bir try/catch bloğu içinde çağrılırsa, catch bloğunda [_resetstkoflw](resetstkoflw.md) çağrısı yapmanız gerekir.
+> Windows XP 'de, bir try/catch bloğu içinde **_malloca** çağrılırsa, catch bloğunda [_resetstkoflw](resetstkoflw.md) çağırmanız gerekir.
 
-Yukarıdaki kısıtlamalara ek olarak, [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken **_malloca** **__except** blokları içinde kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
+Yukarıdaki kısıtlamalara ek olarak, [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken **_malloca** **`__except`** bloklarda kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_malloca**|\<malloc. h >|
+|**_malloca**|\<malloc.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -161,7 +161,7 @@ int main()
 }
 ```
 
-### <a name="input"></a>Giriş
+### <a name="input"></a>Girdi
 
 ```Input
 1000
@@ -175,7 +175,7 @@ Enter the number of bytes to allocate using _malloca: 1000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [malloc](malloc.md)<br/>
 [realloc](realloc.md)<br/>
