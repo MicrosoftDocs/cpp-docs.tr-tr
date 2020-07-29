@@ -6,12 +6,12 @@ helpviewer_keywords:
 - derived classes [C++], virtual functions
 - virtual functions
 ms.assetid: b3e1ed88-2a90-4af8-960a-16f47deb3452
-ms.openlocfilehash: 7c482107b5ad1546c64e0b70ef1714cff8a668ab
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 4296d66af8f8bb9aed4946d6dc57871f447108d2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926098"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231045"
 ---
 # <a name="virtual-functions"></a>Sanal İşlevler
 
@@ -64,9 +64,9 @@ int main() {
 }
 ```
 
-Önceki kodda, öğesine yapılan çağrılar `PrintBalance` , nesne `pAccount` işaret noktaları hariç, ile aynıdır. Sanal `PrintBalance` olduğundan, her bir nesne için tanımlanan işlevin sürümü çağrılır. Türetilmiş sınıflardaki `CheckingAccount` `SavingsAccount` işlev ve temel sınıftaki `Account`işlevi "geçersiz kıl". `PrintBalance`
+Önceki kodda, öğesine yapılan çağrılar `PrintBalance` , nesne işaret noktaları hariç, ile aynıdır `pAccount` . `PrintBalance`Sanal olduğundan, her bir nesne için tanımlanan işlevin sürümü çağrılır. `PrintBalance`Türetilmiş sınıflardaki işlev `CheckingAccount` ve `SavingsAccount` temel sınıftaki işlevi "geçersiz kıl" `Account` .
 
-Bir sınıf, `PrintBalance` işlevin geçersiz kılan bir uygulamasını sağlamayan bildirilirse, temel sınıftan `Account` varsayılan uygulama kullanılır.
+Bir sınıf, işlevin geçersiz kılan bir uygulamasını sağlamayan bildirilirse `PrintBalance` , temel sınıftan varsayılan uygulama `Account` kullanılır.
 
 Türetilmiş sınıflardaki işlevler, yalnızca türleri aynı olduğunda, taban sınıflardaki sanal işlevleri geçersiz kılar. Türetilmiş sınıftaki bir işlev, yalnızca dönüş türündeki bir taban sınıftaki sanal işlevden farklı olamaz; bağımsız değişken listesi de farklı olmalıdır.
 
@@ -138,15 +138,15 @@ Derived::NameOf
 Invoked by Derived
 ```
 
-`NameOf` `Derived` İşlevin`Derived`işaretçisi veya işaretçisi aracılığıyla çağrılıp çağrılmasından bağımsız olarak, işlevini çağırır. `Base` `Derived` İçin işlevini çağırır çünkü `NameOf` bir sanal `pBase` `Derived`işlevdir ve her ikisi de türünde bir nesneye işaretedilir.`pDerived`
+`NameOf`İşlevin işaretçisi veya işaretçisi aracılığıyla çağrılıp çağrılmasından bağımsız olarak `Base` `Derived` , işlevini çağırır `Derived` . İçin işlevini çağırır `Derived` çünkü `NameOf` bir sanal işlevdir ve her ikisi de `pBase` `pDerived` türünde bir nesneye işaret edilir `Derived` .
 
-Sanal işlevler yalnızca sınıf türündeki nesneler için çağrıldığından, genel veya statik işlevleri **sanal**olarak bildiremezsiniz.
+Sanal işlevler yalnızca sınıf türündeki nesneler için çağrıldığından, genel veya statik işlevleri olarak bildiremezsiniz **`virtual`** .
 
-**Sanal** anahtar sözcük, türetilmiş bir sınıfta geçersiz kılma işlevleri bildirirken kullanılabilir, ancak bu gerekli değildir; sanal işlevlerin geçersiz kılmaları her zaman sanal.
+**`virtual`** Anahtar sözcüğü, türetilmiş bir sınıfta geçersiz kılma işlevleri bildirirken kullanılabilir, ancak bu gerekli değildir; sanal işlevlerin geçersiz kılmaları her zaman sanal olur.
 
 Bir temel sınıftaki sanal işlevler, *saf belirtici*kullanılarak bildirilemediği müddetçe tanımlanmalıdır. (Saf sanal işlevler hakkında daha fazla bilgi için bkz. [soyut sınıflar](../cpp/abstract-classes-cpp.md).)
 
-Sanal işlev çağrı mekanizması, kapsam çözümleme işleci (`::`) kullanılarak işlev adını açıkça niteleyerek gizlenebilir. `Account` Sınıfını içeren önceki örneği göz önünde bulundurun. Taban sınıfında `PrintBalance` çağırmak için, aşağıdaki gibi bir kod kullanın:
+Sanal işlev çağrı mekanizması, kapsam çözümleme işleci () kullanılarak işlev adını açıkça niteleyerek gizlenebilir `::` . Sınıfını içeren önceki örneği göz önünde bulundurun `Account` . `PrintBalance`Taban sınıfında çağırmak için, aşağıdaki gibi bir kod kullanın:
 
 ```cpp
 CheckingAccount *pChecking = new CheckingAccount( 100.00 );
@@ -158,4 +158,4 @@ Account *pAccount = pChecking;  // Call Account::PrintBalance
 pAccount->Account::PrintBalance();   //  Explicit qualification.
 ```
 
-Yukarıdaki örnekte ' `PrintBalance` de yapılan çağrılar, sanal işlev çağırma mekanizmasını bastırır.
+`PrintBalance`Yukarıdaki örnekte ' de yapılan çağrılar, sanal işlev çağırma mekanizmasını bastırır.

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - names [C++], class
 - scope [C++], class names
 ms.assetid: 47e26482-0111-466f-b857-598c15d05105
-ms.openlocfilehash: 1f8b79c637662d79051b72e6aabefc99c450bdc5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 024a61419129f669485944a427379dd41c385404
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160885"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231071"
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
 
@@ -25,19 +25,19 @@ Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı
 
 ## <a name="global-names"></a>Genel adlar
 
-Bir nesne, işlev veya Numaralandırıcı, herhangi bir işlev veya sınıf dışında veya genel birli kapsam operatörü (`::`) tarafından önek olarak kullanılırsa ve bu ikili işleçlerden herhangi biri ile birlikte kullanılmazsa genel bir addır:
+Bir nesne, işlev ya da Numaralandırıcı, herhangi bir işlev veya sınıf dışında veya genel birli kapsam operatörü () tarafından önek olarak `::` kullanılırsa ve bu ikili işleçlerden herhangi biri ile birlikte kullanılmazsa genel bir addır:
 
-- Kapsam çözünürlüğü (`::`)
+- Kapsam çözünürlüğü ( `::` )
 
-- Nesneler ve başvurular için üye seçimi ( **.** )
+- Nesneler ve başvurular için üye seçimi (**.**)
 
-- İşaretçiler için üye seçimi ( **->** )
+- İşaretçiler () için üye seçimi **->**
 
 ## <a name="qualified-names"></a>Nitelikli adlar
 
 İkili kapsam çözümleme işleciyle kullanılan adlara (`::`) "nitelenmiş adlar" denir. İkili kapsam çözümleme işlecinden sonra belirtilen ad, işlecin solunda belirtilen sınıfın üyesi veya temel sınıfının üyesi olmalıdır.
 
-Üye seçim işlecinden sonra belirtilen adlar ( **.** ya da **->** ), işlecin solunda belirtilen nesnenin sınıf türünün üyesi veya temel sınıfının üyeleri olmalıdır. Üye seçim işlecinin ( **->** ) sağında belirtilen adlar, **->** sol tarafı bir sınıf nesnesi ve sınıfın başka bir sınıf türüne yönelik bir işaretçi olarak değerlendirilen aşırı yüklenmiş bir üye seçme işleci ( **->** ) tanımladığından başka bir sınıf türünün nesneleri de olabilir. (Bu sağlama, [sınıf üyesi erişimi](../cpp/member-access.md)bölümünde daha ayrıntılı bir şekilde ele alınmıştır.)
+Üye seçim işlecinden sonra belirtilen adlar (**.** ya da **->** ) işlecinin solunda belirtilen nesnenin sınıf türünün üyesi veya temel sınıfının üyeleri olmalıdır. Üye seçim işlecinin () sağında belirtilen adlar **->** Ayrıca, sol tarafı **->** bir sınıf nesnesi ve sınıfın **->** başka bir sınıf türüne yönelik bir işaretçi olarak değerlendirilen aşırı yüklenmiş bir üye seçme işlecini () tanımladığından başka bir sınıf türünün nesneleri de olabilir. (Bu sağlama, [sınıf üyesi erişimi](../cpp/member-access.md)bölümünde daha ayrıntılı bir şekilde ele alınmıştır.)
 
 Derleyici, aşağıdaki sırayı kullanarak ve ad bulunduğunda durarak adları arar:
 
@@ -57,11 +57,11 @@ Bununla birlikte, bu arama sırasında aşağıdaki gibi değişiklikler yapabil
 
 1. Öncesinde `::` olan adlar, aramayı genel bir kapsamdan başlamaya zorlar.
 
-1. **Sınıf**, **Yapı**ve **birleşim** anahtar kelimeleri tarafından önlenen adlar derleyicinin yalnızca **sınıf**, **Yapı**veya **birleşim** adlarını aramasına izin vermez.
+1. **`class`**, **`struct`** Ve anahtar sözcüklerinin önünde bulunan adlar **`union`** derleyicinin yalnızca **`class`** , **`struct`** veya adlarını aramasına izin vermez **`union`** .
 
-1. Kapsam çözümleme işlecinin (`::`) sol tarafındaki adlar yalnızca **sınıf**, **Yapı**, **ad alanı**veya **birleşim** adları olabilir.
+1. Kapsam çözümleme işlecinin () sol tarafındaki adlar `::` yalnızca **`class`** , **`struct`** , **`namespace`** veya **`union`** adları olabilir.
 
-Ad statik olmayan bir üyeye başvuruyor, ancak statik üye işlevinde kullanılıyorsa, bir hata iletisi oluşturulur. Benzer şekilde, ad kapsayan bir sınıftaki herhangi bir statik olmayan üyeye başvuruyorsa, kapsanan sınıfların **Bu** işaretçileri kapsayan sınıf içerdiği için bir hata iletisi oluşturulur.
+Ad statik olmayan bir üyeye başvuruyor, ancak statik üye işlevinde kullanılıyorsa, bir hata iletisi oluşturulur. Benzer şekilde, ad kapsayan bir sınıftaki herhangi bir statik olmayan üyeye başvuruyorsa, kapsanan sınıflarda kapsayan sınıf işaretçileri olmadığından, bir hata iletisi oluşturulur **`this`** .
 
 ## <a name="function-parameter-names"></a>İşlev parametresi adları
 

@@ -9,20 +9,20 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - subscript operator
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
-ms.openlocfilehash: 8974f6619af462050fc8a02798fe44007ea928e4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2573f30b2dfee20d12afea2a1072bbdcef46228b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160898"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231084"
 ---
 # <a name="subscripting"></a>Alt Simge Oluşturma
 
-İşlev çağrısı işleci gibi alt simge işleci ( **[]** ) bir ikili işleç olarak kabul edilir. Alt simge işleci, tek bir bağımsız değişken alan, statik olmayan bir üye işlevi olmalıdır. Bu bağımsız değişken herhangi bir türde olabilir ve istenen dizi alt indisi belirler.
+İşlev çağrısı işleci gibi alt simge işleci (**[]**) bir ikili işleç olarak kabul edilir. Alt simge işleci, tek bir bağımsız değişken alan, statik olmayan bir üye işlevi olmalıdır. Bu bağımsız değişken herhangi bir türde olabilir ve istenen dizi alt indisi belirler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınır denetimi uygulayan **int** türünde bir Vector öğesinin nasıl oluşturulacağını gösterir:
+Aşağıdaki örnek, sınır denetimi uygulayan bir tür vektörünün nasıl oluşturulacağını gösterir **`int`** :
 
 ```cpp
 // subscripting.cpp
@@ -91,10 +91,10 @@ Element: [10] = 10
 
 ## <a name="comments"></a>Yorumlar
 
-`i` önceki programda 10 ' a ulaştığında, **operator []** sınırların dışı bir alt simge kullanıldığını algılar ve bir hata mesajı yayınlar.
+`i`Önceki programda 10 ' a ulaştığında, **operator []** sınırların dışı bir alt simge kullanıldığını algılar ve bir hata mesajı yayınlar.
 
 **[] İşlev işlecinin** bir başvuru türü döndürdüğünü unutmayın. Bu, bir l değeri olmasına neden olur ve bu da atama işleçlerinin her tarafında alt simge olarak kullanılan ifadeleri kullanmanıza olanak sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)
+[İşleç aşırı yüklemesi](../cpp/operator-overloading.md)
