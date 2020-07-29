@@ -51,18 +51,18 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: f04885ef61841ac20f87ab07ce73d3c9342fe39c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b235a85ccab4fd3d3377e656b53276928b425d94
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212168"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232163"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
 [ICommand](/previous-versions/windows/desktop/ms709737(v=vs.85)) arabirimi için uygulama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, class CommandBase = ICommand>
@@ -71,11 +71,11 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `ICommandImpl`türetilir.
+*T*<br/>
+Sınıfınız, öğesinden türetilir `ICommandImpl` .
 
 *CommandBase*<br/>
-Bir komut arabirimi. Varsayılan: `ICommand`.
+Bir komut arabirimi. Varsayılan değer: `ICommand`.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -87,10 +87,10 @@ Bir komut arabirimi. Varsayılan: `ICommand`.
 
 |||
 |-|-|
-|[İptal Etme](#cancel)|Geçerli komut yürütmesini iptal eder.|
+|[İptal](#cancel)|Geçerli komut yürütmesini iptal eder.|
 |[CancelExecution](#cancelexecution)|Geçerli komut yürütmesini iptal eder.|
 |[CreateRowset](#createrowset)|Satır kümesi nesnesi oluşturur.|
-|[Execute](#execute)|Komutunu yürütür.|
+|[Yürütme](#execute)|Komutunu yürütür.|
 |[GetDBSession](#getdbsession)|Komutu oluşturan oturuma bir arabirim işaretçisi döndürür.|
 |[ICommandImpl](#icommandimpl)|Oluşturucu.|
 
@@ -134,7 +134,7 @@ HRESULT CancelExecution();
 
 Tek bir satır kümesi oluşturmak için [Execute](../../data/oledb/icommandimpl-execute.md) tarafından çağırılır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template template <class RowsetClass>
@@ -152,30 +152,30 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 Kullanıcının satır kümesi sınıfını temsil eden bir şablon sınıfı üyesi. Genellikle sihirbaz tarafından oluşturulur.
 
 *pUnkOuter*<br/>
-'ndaki Satır kümesi toplama kapsamında oluşturulduysa denetim `IUnknown` arabirimine yönelik bir işaretçi; Aksi halde, null olur.
+'ndaki `IUnknown`Satır kümesi toplama kapsamında oluşturulduysa denetim arabirimine yönelik bir işaretçi; Aksi takdirde, null olur.
 
 *riıd*<br/>
-'ndaki `ICommand::Execute`içindeki *riıd* 'ye karşılık gelir.
+'ndaki İçindeki *riid* öğesine karşılık gelir `ICommand::Execute` .
 
 *pParams*<br/>
-[ın/out] `ICommand::Execute`'de *pParams* 'e karşılık gelir.
+[ın/out] İçindeki *pParams* 'e karşılık gelir `ICommand::Execute` .
 
 *etkilenen pcrowsa*<br/>
-`ICommand::Execute`' den *etkilenen Pcrowsaöğesine* karşılık gelir.
+İçindeki *Pcrowsaöğesine* karşılık gelir `ICommand::Execute` .
 
 *ppRowset*<br/>
-[ın/out] `ICommand::Execute`'de *ppRowset* öğesine karşılık gelir.
+[ın/out] İçindeki *ppRowset* öğesine karşılık gelir `ICommand::Execute` .
 
 *pRowsetObj*<br/>
 dışı Satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak bir COM nesnesine geçirmeden önce satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PRowsetObj* ömrü *ppRowset*ile ilişkilidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT değeri. Tipik değerlerin listesi için bkz. `ICommand::Execute`.
+Standart bir HRESULT değeri. `ICommand::Execute`Tipik değerlerin listesi için bkz..
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak için, `Execute`içinden `CreateRowset` farklı çağrılar koyun.
+Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak için içinden uygulamasına farklı çağrılar koyun `CreateRowset` `Execute` .
 
 *OLE DB Programcı başvurusunda bkz.* [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
 
@@ -183,7 +183,7 @@ Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturma
 
 Komutunu yürütür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Execute(IUnknown* pUnkOuter,
@@ -201,13 +201,13 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 İstenen giden arabirim, bu işlevin oluşturduğu satır kümesi nesnesinden alınan bir arabirim olacaktır.
 
-`Execute` [CreateRowset](../../data/oledb/icommandimpl-createrowset.md)çağırır. Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak üzere varsayılan uygulamayı geçersiz kılın.
+`Execute`[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)çağırır. Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak üzere varsayılan uygulamayı geçersiz kılın.
 
 ## <a name="icommandimplgetdbsession"></a><a name="getdbsession"></a>Iommandimpl:: GetDBSession
 
 Komutu oluşturan oturuma bir arabirim işaretçisi döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetDBSession) (REFIID riid,
@@ -244,7 +244,7 @@ unsigned m_bCancel:1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değişkeni komut sınıfınızın `Execute` yönteminde alabilir ve uygun şekilde iptal edebilirsiniz.
+Bu değişkeni `Execute` komut sınıfınızın yönteminde alabilir ve uygun şekilde iptal edebilirsiniz.
 
 ## <a name="icommandimplm_bcancelwhenexecuting"></a><a name="bcancelwhenexecuting"></a>Iommandimpl:: m_bCancelWhenExecuting
 
@@ -258,7 +258,7 @@ unsigned m_bCancelWhenExecuting:1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan değer **true 'dur** (iptal edilebilir).
+Varsayılan olarak **`true`** (iptal edilebilir).
 
 ## <a name="icommandimplm_bisexecuting"></a><a name="bisexecuting"></a>Iommandimpl:: m_bIsExecuting
 
@@ -272,9 +272,9 @@ unsigned m_bIsExecuting:1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komut sınıfınızın `Execute` yöntemi bu değişkeni **true**olarak ayarlayabilir.
+`Execute`Komut sınıfınızın yöntemi bu değişkeni olarak ayarlayabilir **`true`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

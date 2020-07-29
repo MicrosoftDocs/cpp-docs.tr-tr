@@ -6,16 +6,16 @@ helpviewer_keywords:
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-ms.openlocfilehash: 41ad348b7109451f519c44f685cea0a271f71925
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cb4960c2f981b99fbc798098357a0ac65e8ddaa6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161016"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232228"
 ---
 # <a name="standard-conversions"></a>Standart dönüşümler
 
-Dil C++ , temel türleri arasındaki dönüştürmeleri tanımlar. Ayrıca işaretçi, başvuru ve işaretçiden üyeye türetilmiş türler için dönüşümler tanımlar. Bu dönüşümler *Standart dönüşümler*olarak adlandırılır.
+C++ dili, temel türleri arasındaki dönüştürmeleri tanımlar. Ayrıca işaretçi, başvuru ve işaretçiden üyeye türetilmiş türler için dönüşümler tanımlar. Bu dönüşümler *Standart dönüşümler*olarak adlandırılır.
 
 Bu bölümde aşağıdaki standart dönüşümler ele alınmaktadır:
 
@@ -51,29 +51,29 @@ long_num1 = int_num;
 long_num2 = int_num * long_num2;
 ```
 
-Bir dönüştürmenin sonucu yalnızca bir başvuru türü üretirse bir l değeridir. Örneğin, `operator int&()` olarak belirtilen kullanıcı tanımlı bir dönüştürme bir başvuru döndürür ve bir l değeri olur. Ancak, `operator int()` olarak belirtilen bir dönüştürme bir nesnesi döndürür ve l değeri değildir.
+Bir dönüştürmenin sonucu yalnızca bir başvuru türü üretirse bir l değeridir. Örneğin, olarak belirtilen kullanıcı tanımlı bir dönüştürme `operator int&()` bir başvuru döndürür ve bir l değeri olur. Ancak, olarak belirtilen bir dönüştürme bir `operator int()` nesnesi döndürür ve bir l değeri değildir.
 
 ## <a name="integral-promotions"></a>Integral yükseltmeler
 
 İntegral türündeki nesneler, daha büyük bir değer kümesini temsil eden bir tür olan başka bir geniş integral türüne dönüştürülebilir. Bu dönüştürme türü, *integral yükseltme*olarak adlandırılır. İntegral yükseltme ile, başka bir integral türünün kullanılabileceği her yerde aşağıdaki türleri bir ifadede kullanabilirsiniz:
 
-- **Char** ve **short int** türündeki nesneler, sabit değerler ve sabitler
+- Ve türündeki nesneler, sabit değerler ve sabitler **`char`****`short int`**
 
 - Numaralandırma türleri
 
-- **int** bit alanları
+- **`int`** bit alanları
 
 - Numaralandırıcılar
 
-C++yükseltmeler, yükseltmeden önceki değer ile aynı olması garantiden sonraki değerin "değer-koruma" değeridir. Değer koruma promosyonları ' nda, daha kısa integral türlerindeki nesneler (örneğin, bit alanları veya **char**türündeki nesneler), **tamsayı** özgün türün tam aralığını temsil ediyorsa **int** türüne yükseltilir. **İnt** tam değer aralığını temsil ediyorsa, nesne **işaretsiz int**türüne yükseltilir.  Bu strateji standart C tarafından kullanılan bir ile aynı olsa da, değer koruma dönüştürmelerinde nesnenin "signedyeti" yoktur.
+Yükseltmeden sonraki değerin, yükseltmeden önceki değerle aynı olması garanti edildikten sonra C++ yükseltmeleri "değer-koruma" olur. Değer koruma promosyonları ' nda, daha kısa integral türündeki nesneler (örneğin, bit alanları veya tür nesneleri **`char`** ), **`int`** **`int`** özgün türün tam aralığını temsil ediyorsa türüne yükseltilir. **`int`** Değerlerin tam aralığını temsil etemiyorum, nesne türüne yükseltilir **`unsigned int`** .  Bu strateji standart C tarafından kullanılan bir ile aynı olsa da, değer koruma dönüştürmelerinde nesnenin "signedyeti" yoktur.
 
 Değer korumalı yükseltmeler ve işaretli durumu koruyan yükseltmeler normalde aynı sonuçları verir. Ancak, yükseltilen nesne şöyle görünüyorsa farklı sonuçlar üretebilirler:
 
-- `/`, `%`, `/=`, `%=`, `<`, `<=`, `>`veya `>=` işleneni
+- ,,,,, `/` `%` `/=` `%=` `<` `<=` , `>` , Veya işleneni`>=`
 
    Bu işleçler sonucu belirlemek için işareti kullanırlar. Değer koruma ve oturum koruma yükseltmeleri, bu işlenenlere uygulandığında farklı sonuçlar üretir.
 
-- `>>` veya `>>=` sol işleneni
+- Veya sol işleneni `>>``>>=`
 
    Bu işleçler, imzalanmış ve işaretsiz miktarları bir vardiya işleminde farklı şekilde işler. İşaretli miktarlar için, bir sağ kaydırma işlemi, işaret biti konumlarına, işaretsiz miktarlar sıfır doldurulurken, işaret bitini bir arada yayar.
 
@@ -81,7 +81,7 @@ Değer korumalı yükseltmeler ve işaretli durumu koruyan yükseltmeler normald
 
 ## <a name="integral-conversions"></a>Integral dönüştürmeleri
 
-*İntegral dönüştürmeleri* integral türleri arasındaki Dönüştürmelere sahiptir. İntegral türleri **char**, **Short** (veya **short int**), int, **Long**ve **Long Long** **'tir**. Bu türler **imzalı** veya **imzasız**ile nitelenmiş olabilir ve imzasız **int**için toplu **olarak kullanılabilir.**
+*İntegral dönüştürmeleri* integral türleri arasındaki Dönüştürmelere sahiptir. İntegral türleri **`char`** , **`short`** (veya **`short int`** ),, **`int`** **`long`** ve **`long long`** . Bu türler veya ile nitelenmiş olabilir **`signed`** **`unsigned`** ve **`unsigned`** için kısayol olarak kullanılabilir **`unsigned int`** .
 
 ### <a name="signed-to-unsigned"></a>İmzasız imzalı
 
@@ -101,7 +101,7 @@ int main()
 // Output: 65533
 ```
 
-Önceki örnekte, **işaretli bir Short**, `i`tanımlanır ve negatif bir sayı olarak başlatılır. İfade `(u = i)`, `i` `u`atamasından önce işaretsiz bir **Short** 'a dönüştürülmesine neden olur.
+Yukarıdaki örnekte, bir **`signed short`** , `i` tanımlanır ve negatif bir sayı olarak başlatılır. İfade, `(u = i)` `i` atamasından önce öğesine dönüştürülmesine neden olur **`unsigned short`** `u` .
 
 ### <a name="unsigned-to-signed"></a>İmzasız imzalı
 
@@ -121,19 +121,19 @@ cout << (i = u) << "\n";
 //Output: -3
 ```
 
-Yukarıdaki örnekte `u`, ifadeyi `(i = u)`değerlendirmek için işaretli bir miktara dönüştürülmesi gereken **işaretsiz bir kısa** tamsayı nesnesidir. Değeri **işaretli bir kısa**sürede doğru şekilde gösterilemediği için veriler gösterildiği gibi yanlış yorumlanır.
+Önceki örnekte, `u` **`unsigned short`** ifadeyi değerlendirmek için işaretli bir miktara dönüştürülmesi gereken bir integral nesnesidir `(i = u)` . Değeri bir içinde doğru şekilde temsil edilemediğinden **`signed short`** , veriler gösterildiği gibi yanlış yorumlanır.
 
 ## <a name="floating-point-conversions"></a>Kayan nokta dönüştürmeleri
 
-Kayan türden bir nesne güvenle daha kesin bir kayan türe dönüştürülebilir — diğer bir deyişle, dönüştürme hiçbir anlam kaybına neden olmaz. Örneğin, **float** 'ten **Double** veya **Double** 'tan **Long Double** arasında dönüştürmeler güvenlidir ve değer değiştirilmez.
+Kayan türden bir nesne güvenle daha kesin bir kayan türe dönüştürülebilir — diğer bir deyişle, dönüştürme hiçbir anlam kaybına neden olmaz. Örneğin, ' den ' e veya türünden ' ye dönüştürme **`float`** **`double`** **`double`** **`long double`** güvenlidir ve değer değiştirilmez.
 
-Kayan türden bir nesne, bu tür tarafından bir Aralık gösterilebilir tablo ise daha az kesin bir türe de dönüştürülebilir. (Kayan türlerin aralıkları için bkz. [kayan sınırlar](../cpp/floating-limits.md) .) Özgün değer tam olarak gösterilemeyen tablo değilse, bir sonraki daha yüksek veya daha düşük gösterilemeyen değere dönüştürülebilir. Bu değer yoksa sonuç tanımsızdır. Aşağıdaki örnek göz önünde bulundurun:
+Kayan türden bir nesne, bu tür tarafından bir Aralık gösterilebilir tablo ise daha az kesin bir türe de dönüştürülebilir. (Kayan türlerin aralıkları için bkz. [kayan sınırlar](../cpp/floating-limits.md) .) Özgün değer tam olarak gösterilemeyen tablo değilse, bir sonraki daha yüksek veya daha düşük gösterilemeyen değere dönüştürülebilir. Bu değer yoksa sonuç tanımsızdır. Aşağıdaki örneği inceleyin:
 
 ```cpp
 cout << (float)1E300 << endl;
 ```
 
-Türe göre en büyük değer gösterilebilir değeri 3.402823466 E38 — 1E300 ' dan çok daha küçük **bir sayıdır.** Bu nedenle, sayı sonsuz olarak dönüştürülür ve sonuç "INF" dir.
+Türe göre maksimum değer gösterilebilir tablo, **`float`** 3.402823466 E38 — 1E300 ' dan çok daha küçük bir sayıdır. Bu nedenle, sayı sonsuz olarak dönüştürülür ve sonuç "INF" dir.
 
 ## <a name="conversions-between-integral-and-floating-point-types"></a>İntegral ve kayan nokta türleri arasındaki dönüşümler
 
@@ -149,10 +149,10 @@ Birçok ikili işleç ( [ikili işleçlere sahip ifadelerde](../cpp/expressions-
 
 |Koşullar karşılandı|Dönüştürme|
 |--------------------|----------------|
-|İki işlenen de **Long Double**türünde.|Diğer işlenen **Long Double**türüne dönüştürülür.|
-|Önceki koşul karşılanmadı ve iki işlenen de **Double**türündedir.|Diğer işlenen **Double**türüne dönüştürülür.|
-|Önceki koşullar karşılanmaz ve her iki işlenen de **float**türündedir.|Diğer işlenen **float**türüne dönüştürülür.|
-|Önceki koşullar karşılanmamıştır (işlenenlerden hiçbiri kayan türlerden değil).|İşlenenler integral promosyonları aşağıdaki gibi alır:<br /><br />-İki işlenen de **işaretsiz Long**türünde ise, diğer işlenen **işaretsiz Long**türüne dönüştürülür.<br />-Önceki koşul karşılanmazsa ve her iki işlenen de **Long** türünde ve diğeri **işaretsiz int**türünde ise, her iki işlenen de **imzasız Long**türüne dönüştürülür.<br />-Önceki iki koşul karşılanmazsa ve iki işlenen de **Long**türünde ise, diğer işlenen de **Long**türüne dönüştürülür.<br />-Önceki üç koşul karşılanmazsa ve iki işlenen de **işaretsiz int**türünde ise, diğer işlenen **işaretsiz int**türüne dönüştürülür.<br />-Önceki koşullardan hiçbiri karşılanmazsa her iki işlenen de **int**türüne dönüştürülür.|
+|İşlenen türü **`long double`** .|Diğer işlenen türüne dönüştürüldü **`long double`** .|
+|Önceki koşul karşılanmadı ve iki işlenen de türde **`double`** .|Diğer işlenen türüne dönüştürüldü **`double`** .|
+|Önceki koşulların karşılanmamaları ve her iki işlenenin de türü **`float`** .|Diğer işlenen türüne dönüştürüldü **`float`** .|
+|Önceki koşullar karşılanmamıştır (işlenenlerden hiçbiri kayan türlerden değil).|İşlenenler integral promosyonları aşağıdaki gibi alır:<br /><br />-Her iki işlenen de tür ise **`unsigned long`** , diğer işlenen türüne dönüştürülür **`unsigned long`** .<br />-Önceki koşul karşılanmazsa ve iki işlenenin türü **`long`** ve diğeri türü ise, **`unsigned int`** her iki işlenen de türüne dönüştürülür **`unsigned long`** .<br />-Önceki iki koşul karşılanmazsa ve iki işlenenin türü ise **`long`** , diğer işlenen türüne dönüştürülür **`long`** .<br />-Önceki üç koşul karşılanmazsa ve iki işlenenin türü ise **`unsigned int`** , diğer işlenen türüne dönüştürülür **`unsigned int`** .<br />-Önceki koşulların hiçbiri karşılanmazsa her iki işlenen de türüne dönüştürülür **`int`** .|
 
 Aşağıdaki kodda, tabloda açıklanan dönüştürme kuralları gösterilmektedir:
 
@@ -173,9 +173,9 @@ int main() {
 }
 ```
 
-Yukarıdaki örnekte bulunan ilk deyim, iki integral türü olan `iVal` ve `ulVal`'ın çarpımını göstermektedir. Koşul, hiçbir işlenenin kayan türde olmadığı ve bir işlenenin **işaretsiz int**türünde olduğu durumdur. Bu nedenle, `iVal`diğer işleneni **işaretsiz int**türüne dönüştürülür. Sonuç daha sonra `dVal`atanır. Burada yer alan koşul, bir işlenenin **Double**türünde olması, bu nedenle çarpın **işaretsiz tamsayı** sonucu **Double**türüne dönüştürülür.
+Yukarıdaki örnekte bulunan ilk deyim, iki integral türü olan `iVal` ve `ulVal`'ın çarpımını göstermektedir. Koşul, hiçbir işlenenin kayan türde olmadığı ve bir işlenenin türü olduğu durumdur **`unsigned int`** . Bu nedenle, diğer işlenen `iVal` türüne dönüştürülür **`unsigned int`** . Sonuç daha sonra öğesine atanır `dVal` . Burada karşılanan koşul bir işlenenin türüdür **`double`** , bu nedenle **`unsigned int`** çarpma sonucu, türe dönüştürülür **`double`** .
 
-Yukarıdaki örnekteki ikinci ifadede bir **float** ve integral türünün eklenmesi gösterilmektedir: `fVal` ve `ulVal`. `ulVal` değişkeni **float** türüne dönüştürülür (tablodaki üçüncü koşul). Eklemenin sonucu, **Double** türüne dönüştürülür (tablodaki ikinci koşul) ve `dVal`atanır.
+Yukarıdaki örnekteki ikinci ifadede, ve integral türünün yanı sıra bir **`float`** integral türü gösterilmektedir: `fVal` ve `ulVal` . `ulVal`Değişken türüne dönüştürüldü **`float`** (tablodaki üçüncü koşul). Eklemenin sonucu türüne dönüştürülür **`double`** (tablodaki ikinci koşul) ve öğesine atanır `dVal` .
 
 ## <a name="pointer-conversions"></a>İşaretçi Dönüştürmeler
 
@@ -189,12 +189,12 @@ Bir sınıfa yönelik işaretçinin, temel sınıfa olan işaretçiye dönüşt�
 
 Temel bir sınıfa erişilebilir olup olmadığı, türetmede kullanılan devralmanın türüne bağlıdır. Aşağıdaki şekilde gösterilen devralmayı göz önünde bulundurun.
 
-![Temel&#45;sınıf erişilebilirliğini gösteren devralma grafiği](../cpp/media/vc38xa1.gif "Temel&#45;sınıf erişilebilirliğini gösteren devralma grafiği") <br/>
+![Temel&#45;sınıfı erişilebilirliğini gösteren devralma grafiği](../cpp/media/vc38xa1.gif "Temel&#45;sınıfı erişilebilirliğini gösteren devralma grafiği") <br/>
 Temel sınıf erişilebilirliği çizimi için devralma grafiği
 
 Aşağıdaki tabloda, şekilde gösterildiği durumlar için temel sınıf erişilebilirliği gösterilmektedir.
 
-|Işlevin türü|Mede|Dönüştürme<br /><br /> B * bir\* yasal mı?|
+|Işlevin türü|Mede|Dönüştürme<br /><br /> B * \* geçerli mi?|
 |----------------------|----------------|-------------------------------------------|
 |Dış (sınıf kapsamlı değil) işlevi|Özel|Hayır|
 ||Korumalı|Hayır|
@@ -210,7 +210,7 @@ Bir sınıfa yönelik işaretçinin bir taban sınıfına bir işaretçiye dön�
 
 Bu tür bir dönüştürmenin sonucu, nesnenin temel sınıf tarafından tamamen tanımlanan bölümü olan *alt nesne için*bir işaretçidir.
 
-Aşağıdaki kod, `B` `A`türetildiği `A` ve `B`iki sınıfı tanımlar. (Devralma hakkında daha fazla bilgi için bkz. [türetilmiş sınıflar](../cpp/inheritance-cpp.md).) Daha sonra `bObject`, `B`türünde bir nesne ve nesneyi işaret eden iki işaretçi (`pA` ve `pB`) tanımlar.
+Aşağıdaki kod, `A` ve `B` ' `B` den türetildiği iki sınıfı tanımlar `A` . (Devralma hakkında daha fazla bilgi için bkz. [türetilmiş sınıflar](../cpp/inheritance-cpp.md).) Daha sonra `bObject` , türü bir nesne `B` ve `pA` nesneyi işaret eden iki işaretçi (ve `pB` ) tanımlar.
 
 ```cpp
 // C2039 expected
@@ -239,24 +239,24 @@ int main()
 }
 ```
 
-İşaretçi `pA`, anlamı "`A`türünde bir nesne işaretçisi olarak yorumlanabilen `A *`türüdür. `bObject` üyeleri (`BComponent` ve `BMemberFunc`gibi), `B` yazmak için benzersizdir ve bu nedenle `pA`üzerinden erişilmez. `pA` işaretçisi, yalnızca sınıf `A`tanımlanmış nesnenin özelliklerine (üye işlevleri ve veriler) erişim sağlar.
+İşaretçi `pA` türü `A *` , anlamı "türünde bir nesne işaretçisi" olarak yorumlanabilen türdür `A` . `bObject`(Ve gibi) üyeleri `BComponent` , `BMemberFunc` yazmak için benzersizdir `B` ve bu nedenle ile erişilemez `pA` . `pA`İşaretçi yalnızca sınıfında tanımlanmış olan nesnenin özelliklerine (üye işlevleri ve veriler) erişim sağlar `A` .
 
 ### <a name="pointer-to-function"></a>İşlev işaretçisi
 
-Tür `void *`, bu işaretçiyi tutacak kadar büyükse, bir işlev işaretçisi `void *`türüne dönüştürülebilir.
+`void *`Tür, `void *` Bu işaretçiyi tutacak kadar büyükse, bir işlev işaretçisi türüne dönüştürülebilir.
 
 ### <a name="pointer-to-void"></a>Void işaretçisi
 
-**Void** türü işaretçiler, diğer herhangi bir türe işaretçilere dönüştürülebilir, ancak yalnızca açık tür saçılması (C 'nin aksine). Herhangi bir türe yönelik bir işaretçi örtük olarak **void**türünde bir işaretçiye dönüştürülebilir. Bir türün tamamlanmamış bir nesnesine yönelik bir işaretçi, **void** (örtük) ve geri (açıkça) işaretçisine dönüştürülebilir. Bu tür bir dönüştürmenin sonucu, orijinal işaretçinin değerine eşittir. Bir nesne bildirildiği takdirde tamamlanmamış olarak kabul edilir, ancak boyutunu veya temel sınıfını belirleyebilmek için yeterli bilgi yok.
+Türe işaretçiler **`void`** , diğer tüm tür işaretçilerine dönüştürülebilir, ancak yalnızca açık tür saçılması (C 'nin aksine). Herhangi bir türe yönelik bir işaretçi, örtük olarak türüne bir işaretçiye dönüştürülebilir **`void`** . Bir türün tamamlanmamış bir nesnesine yönelik bir işaretçi, **`void`** (örtük) ve geri (açıkça) işaretçisine dönüştürülebilir. Bu tür bir dönüştürmenin sonucu, orijinal işaretçinin değerine eşittir. Bir nesne bildirildiği takdirde tamamlanmamış olarak kabul edilir, ancak boyutunu veya temel sınıfını belirleyebilmek için yeterli bilgi yok.
 
-**Const** veya **volatile** olmayan herhangi bir nesneye yönelik bir işaretçi, örtük olarak `void *`türünde bir işaretçiye dönüştürülebilir.
+**`const`** **`volatile`** Türü bir işaretçiye örtük olarak dönüştürülemeyen veya olmayan herhangi bir nesneye yönelik bir işaretçi `void *` .
 
 ### <a name="const-and-volatile-pointers"></a>const ve volatile işaretçiler
 
-C++**const veya** **volatile** türünden **const** veya **volatile**olmayan bir türe Standart dönüştürme sağlamaz. Ancak, herhangi bir dönüştürme sıralaması açık tür atamaları (güvenli olmayan dönüştürmeler dahil) kullanılarak belirtilebilir.
+C++ **`const`** , veya türünden veya olmayan bir türe standart bir dönüştürme sağlamaz **`volatile`** **`const`** **`volatile`** . Ancak, herhangi bir dönüştürme sıralaması açık tür atamaları (güvenli olmayan dönüştürmeler dahil) kullanılarak belirtilebilir.
 
 > [!NOTE]
-> C++statik üyelere işaretçiler haricinde üye işaretçileri, normal işaretçilerden farklıdır ve aynı standart Dönüştürmelere sahip değildir. Statik üye işaretçileri normal işaretçilerdir ve normal işaretçilerle aynı dönüştürmeleri vardır.
+> Statik üyelere işaretçiler haricinde üyelere yönelik C++ işaretçileri, normal işaretçilerden farklıdır ve aynı standart Dönüştürmelere sahip değildir. Statik üye işaretçileri normal işaretçilerdir ve normal işaretçilerle aynı dönüştürmeleri vardır.
 
 ### <a name="null-pointer-conversions"></a>null işaretçi dönüşümleri
 
@@ -275,7 +275,7 @@ char *pszPath = szPath; // Equals &szPath[0].
 
 Belirli bir türü döndüren bir işlevle sonuçlanan ifade, aşağıdakiler haricinde bu türü döndüren bir işlevin işaretçisine dönüştürülür:
 
-- İfade, adres işlecinin ( **&** ) işleneni olarak kullanılır.
+- İfade, adres işlecinin () bir işleneni olarak kullanılır **&** .
 
 - İfade, işlev çağrısı işlecinin bir işleneni olarak kullanılıyorsa.
 
@@ -329,4 +329,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++dil başvurusu](../cpp/cpp-language-reference.md)
+[C++ dili başvurusu](../cpp/cpp-language-reference.md)

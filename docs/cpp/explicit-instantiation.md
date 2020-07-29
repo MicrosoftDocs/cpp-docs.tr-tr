@@ -6,18 +6,18 @@ helpviewer_keywords:
 - explicit instantiation
 - instantiation, explicit
 ms.assetid: 8b0d4e32-45a6-49d5-8041-1ebdd674410e
-ms.openlocfilehash: 0b1290bc23c56c0f35ddd3bb93e37ce4f5f0d2ed
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4b1808791110c4eed237d18436897dac59170206
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361956"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232306"
 ---
 # <a name="explicit-instantiation"></a>Açık Örnekleme
 
 Gerçekte kodunuzda kullanmadan bir şablonlu sınıfın veya işlevin örneklemesini oluşturmak için açık örneklemeyi kullanabilirsiniz. Bu, dağıtım için şablonlar kullanın kitaplık (.lib) dosyaları oluştururken yararlı olduğundan, örneklenmemiş şablon tanımları nesne (.obj) dosyalarına konmaz.
 
-Bu kod açıkça `MyStack` **int** değişkenleri ve altı öğe için anında:
+Bu kod `MyStack` **`int`** , değişkenler ve altı öğe için açık olarak başlatılır:
 
 ```cpp
 template class MyStack<int, 6>;
@@ -31,9 +31,9 @@ Bir sonraki satır yalnızca oluşturucu üye işlevinin örneğini açıkça ol
 template MyStack<int, 6>::MyStack( void );
 ```
 
-[İşlev Şablonu Anlık](../cpp/function-template-instantiation.md)İşlemi'ndeki örnekte gösterildiği gibi, bunları yeniden bildirmek için belirli bir tür bağımsız değişkeni kullanarak işlev şablonlarını açıkça anında oluşturabilirsiniz.
+İşlev [şablonu örneklemede](../cpp/function-template-instantiation.md)örneğinde gösterildiği gibi, yeniden bildirmek üzere belirli bir tür bağımsız değişkeni kullanarak işlev şablonlarının örneğini açıkça oluşturabilirsiniz.
 
-Üyelerin otomatik anlık olarak anlık olarak anımsamasını önlemek için **extern** anahtar sözcüklerini kullanabilirsiniz. Örneğin:
+**`extern`** Üyelerin otomatik olarak örneklenmesini engellemek için anahtar sözcüğünü kullanabilirsiniz. Örnek:
 
 ```cpp
 extern template class MyStack<int, 6>;
@@ -45,11 +45,11 @@ Benzer şekilde, belirli üyeleri dış ve örneklenmemiş olarak işaretleyebil
 extern template MyStack<int, 6>::MyStack( void );
 ```
 
-Derleyicinin birden fazla nesne modülünde aynı anlık kodu oluşturmasını engellemek için **extern** anahtar sözcük lerini kullanabilirsiniz. İşlev çağrılırsa, belirtilen açık şablon parametrelerini en az bir bağlantılı modülde kullanarak şablon işlevinin örneğini oluşturmalısınız, aksi takdirde program oluşturulduğunda bir bağlayıcı hatası alırsınız.
+**`extern`** Derleyicinin aynı örnek oluşturma kodunu birden fazla nesne modülünde oluşturmasını önlemek için anahtar sözcüğünü kullanabilirsiniz. İşlev çağrılırsa, belirtilen açık şablon parametrelerini en az bir bağlantılı modülde kullanarak şablon işlevinin örneğini oluşturmalısınız, aksi takdirde program oluşturulduğunda bir bağlayıcı hatası alırsınız.
 
 > [!NOTE]
-> Uzmanlık **extern** anahtar kelime yalnızca sınıfın gövdesi dışında tanımlanan üye işlevler için geçerlidir. Sınıf bildirimi içinde tanımlanmış işlevler, satır içi işlevleri olarak kabul edilir ve her zaman örneği oluşturulur.
+> **`extern`** Özelleşmenin anahtar sözcüğü yalnızca sınıfın gövdesi dışında tanımlanan üye işlevleri için geçerlidir. Sınıf bildirimi içinde tanımlanmış işlevler, satır içi işlevleri olarak kabul edilir ve her zaman örneği oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlev Şablonları](../cpp/function-templates.md)
+[İşlev şablonları](../cpp/function-templates.md)

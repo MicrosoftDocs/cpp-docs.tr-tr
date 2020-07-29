@@ -8,18 +8,18 @@ helpviewer_keywords:
 - operator!, bstr
 - operator !, bstr
 ms.assetid: 6e60b5a5-2d28-4eec-9e12-790da8f1fdd4
-ms.openlocfilehash: 91b15ba757c1a7058b3544127753a98269a8e974
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6fc04c7fa7cb4bd6ecad894a1c1e4473572ac651
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181050"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232358"
 ---
 # <a name="_bstr_toperator-"></a>_bstr_t::operator !
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Encapsulated `BSTR` boş bir dize olup olmadığını denetler.
+Encapsulated `BSTR` 'ın null bir dize olup olmadığını denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,10 +29,10 @@ bool operator!( ) const throw( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Evet ise TRUE, değilse FALSE döndürür.
+**`true`** Değilse, Evet ise döndürür **`false`** .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+[_bstr_t sınıfı](../cpp/bstr-t-class.md)

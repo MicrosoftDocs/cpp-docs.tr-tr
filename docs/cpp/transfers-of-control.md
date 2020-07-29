@@ -5,18 +5,18 @@ helpviewer_keywords:
 - control flow, branching
 - control flow, transferring control
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
-ms.openlocfilehash: c9a46ccb1cf519080c5105855e41ecd3ebc23f77
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ef437d0a691ceff72485be1ff9584052f540031a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188057"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232189"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 
-Bir başlatıcı geçmiş bir program belirtmek için bir **Switch** deyimindeki **goto** ifadesini veya **Case** etiketini kullanabilirsiniz. Bu kod, başlatıcıyı içeren bildirim, sıçrama ifadesinin gerçekleştiği bloğa ait bir blokta değilse geçersizdir.
+Bir **`goto`** **`case`** **`switch`** başlatıcıyı geçen bir programı belirtmek için, ifadesini veya bir deyimindeki bir etiketi kullanabilirsiniz. Bu kod, başlatıcıyı içeren bildirim, sıçrama ifadesinin gerçekleştiği bloğa ait bir blokta değilse geçersizdir.
 
-Aşağıdaki örnek, `total`, `ch`ve `i`nesneleri bildiren ve Başlatan bir döngüyü gösterir. Ayrıca, denetimi bir başlatıcıyı geçen hatalı bir **goto** bildirisi de vardır.
+Aşağıdaki örnek, ve nesnelerini bildiren ve Başlatan bir döngüyü gösterir `total` `ch` `i` . Ayrıca, **`goto`** denetimi bir başlatıcıyı geçen bir hatalı ifade da vardır.
 
 ```cpp
 // transfers_of_control.cpp
@@ -48,6 +48,6 @@ int main()
 }
 ```
 
-Önceki örnekte, **goto** ifadesinin `i`başlatmayı geçmiş denetimi aktarmaya çalışır. Ancak, `i` bildirilirse ancak başlatılmamışsa, aktarım yasal olur.
+Önceki örnekte,, ' **`goto`** nin başlatılmasından sonra Denetim aktarmaya çalışır `i` . Ancak, `i` bildirilirse, ancak başlatılmamışsa, aktarım geçerli olur.
 
-**While** ifadesinin bir *ifadesidir* olarak işlev gören blokta belirtilen `total` ve `ch`nesneleri, bu blok **Break** ifadesini kullanarak çıkıldığında yok edilir.
+`total` `ch` *statement* **`while`** Bir blok deyimleri kullanılarak çıkış yapıldığında, ve deyimin açıklaması olarak işlev gören blok içinde belirtilen nesneler yok edilir **`break`** .

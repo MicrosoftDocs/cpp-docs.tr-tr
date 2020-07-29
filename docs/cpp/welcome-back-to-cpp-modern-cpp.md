@@ -4,12 +4,12 @@ description: Modern C++ ve bu kişilerin korsiyonda yeni programlama ıoms 'leri
 ms.date: 05/17/2020
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: 76ac17e71368cdeee669b98505778838ef0dfee7
-ms.sourcegitcommit: d4da3693f83a24f840e320e35c24a4a07cae68e2
+ms.openlocfilehash: f2b9159e74ba7ce37c7eab1513826da939a3be49
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83550803"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232202"
 ---
 # <a name="welcome-back-to-c---modern-c"></a>C++ ' a geri hoş geldiniz-modern C++
 
@@ -115,7 +115,7 @@ auto i = m.begin(); // modern C++
 
 ## <a name="range-based-for-loops"></a>Aralık tabanlı `for` döngüler
 
-Diziler ve kapsayıcılar üzerinde C stili yineleme, hataları dizinlemeye ve ayrıca yazmak için de sıkıcı olur. Bu hataları ortadan kaldırmak ve kodunuzu daha okunabilir hale getirmek için `for` standart kitaplık kapsayıcıları ve ham diziler ile Aralık tabanlı döngüler kullanın. Daha fazla bilgi için bkz. [Aralık tabanlı `for` ifade](../cpp/range-based-for-statement-cpp.md).
+Diziler ve kapsayıcılar üzerinde C stili yineleme, hataları dizinlemeye ve ayrıca yazmak için de sıkıcı olur. Bu hataları ortadan kaldırmak ve kodunuzu daha okunabilir hale getirmek için **`for`** standart kitaplık kapsayıcıları ve ham diziler ile Aralık tabanlı döngüler kullanın. Daha fazla bilgi için bkz. [Aralık tabanlı `for` ifade](../cpp/range-based-for-statement-cpp.md).
 
 ```cpp
 #include <iostream>
@@ -200,7 +200,7 @@ C stili programlamada, bir işlev bir işlev *işaretçisi*kullanılarak başka 
     auto result = find_if(begin(v), end(v), [=](int i) { return i > x && i < y; });
 ```
 
-Lambda ifadesi, `[=](int i) { return i > x && i < y; }` türünde tek bir bağımsız değişken alan `int` ve bağımsız değişkenin şundan büyük ve küçük olup olmadığını belirten bir Boolean döndüren "işlev olarak okunabilir `x` `y` ." `x` `y` Lambda içinde ve çevresindeki bağlamdaki değişkenlerin kullanılabileceğini fark edebilirsiniz. `[=]`Bu değişkenlerin değere göre *yakalandığını* belirtir; başka bir deyişle, lambda ifadesinin bu değerlerin kendi kopyaları vardır.
+Lambda ifadesi, `[=](int i) { return i > x && i < y; }` türünde tek bir bağımsız değişken alan **`int`** ve bağımsız değişkenin şundan büyük ve küçük olup olmadığını belirten bir Boolean döndüren "işlev olarak okunabilir `x` `y` ." `x` `y` Lambda içinde ve çevresindeki bağlamdaki değişkenlerin kullanılabileceğini fark edebilirsiniz. `[=]`Bu değişkenlerin değere göre *yakalandığını* belirtir; başka bir deyişle, lambda ifadesinin bu değerlerin kendi kopyaları vardır.
 
 ## <a name="exceptions"></a>Özel durumlar
 

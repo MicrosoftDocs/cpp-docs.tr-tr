@@ -1,6 +1,6 @@
 ---
 title: Yerleşik türler (C++)
-ms.date: 12/11/2019
+ms.date: 07/22/2020
 f1_keywords:
 - __int128_cpp
 - __wchar_t_cpp
@@ -46,57 +46,109 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: 14d96453785a55f625b5467458f9cf79e6739acf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 73486dd4d81fc91007f078ec5c509bcb963d2706
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188627"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232280"
 ---
 # <a name="built-in-types-c"></a>Yerleşik türler (C++)
 
-Yerleşik türler ( *temel türler*de denir) C++ dil standardı tarafından belirtilir ve derleyicide yerleşik olarak bulunur. Yerleşik türler herhangi bir başlık dosyasında tanımlı değil. Yerleşik türler üç kategoriye ayrılmıştır: integral, kayan nokta ve void. Integral türleri tam sayıları işleyebilir. Kayan nokta türleri kesirli parçaları olabilecek değerleri belirtmektir.
+Yerleşik türler ( *temel türler*de denir), C++ dil standardı tarafından belirtilir ve derleyicide yerleşik olarak bulunur. Yerleşik türler herhangi bir başlık dosyasında tanımlı değil. Yerleşik türler üç ana kategoriye ayrılmıştır: *integral*, *kayan nokta*ve *void*. Integral türleri tüm sayıları temsil eder. Kayan nokta türleri, kesirli parçaları olabilecek değerler belirtebilir. Çoğu yerleşik tür, derleyici tarafından ayrı türler olarak değerlendirilir. Ancak, bazı türler *eşanlamlı*veya derleyici tarafından eşdeğer tür olarak değerlendirilir.
 
-[Void](void-cpp.md) türü boş bir değer kümesi tanımlar. **Void** türünde bir değişken belirtilemez — birincil olarak değer döndürmeyen işlevleri bildirmek veya türsüz ya da rasgele yazılmış verilere genel işaretçiler bildirmek için kullanılır. Herhangi bir ifade açıkça dönüştürülebilirler veya **void**türüne dönüştürülebilir. Ancak, bu tür ifadeler aşağıdaki kullanımlar ile kısıtlıdır:
+## <a name="void-type"></a>Void türü
+
+[`void`](void-cpp.md)Tür boş bir değer kümesi tanımlar. Türünde değişken **`void`** belirtilemez. **`void`** Tür, birincil olarak değer döndürmeyen işlevleri bildirmek veya türsüz ya da rastgele yazılmış verilere genel işaretçiler bildirmek için kullanılır. Herhangi bir ifade açıkça dönüştürülebilir veya türüne dönüştürülebilir **`void`** . Ancak, bu tür ifadeler aşağıdaki kullanımlar ile kısıtlıdır:
 
 - Bir ifade deyimi. (Daha fazla bilgi için bkz. [ifadeler](expressions-cpp.md).)
 
 - Virgül işlecinin sol işleneni. (Daha fazla bilgi için bkz. [virgül işleci](comma-operator.md).)
 
-- Koşullu işlecin ikinci veya üçüncü işleneni (`? :`). (Daha fazla bilgi için bkz. [koşullu işlece sahip ifadeler](conditional-operator-q.md).)
+- Koşullu işlecin ikinci veya üçüncü işleneni ( `? :` ). (Daha fazla bilgi için bkz. [koşullu işlece sahip ifadeler](conditional-operator-q.md).)
 
-Aşağıdaki tabloda, bir birbirleriyle bağlantılı olarak tür boyutlarıyla ilgili kısıtlamalar açıklanmaktadır. Bu kısıtlamalar C++ standart tarafından uygulanan ve Microsoft uygulamasından bağımsızdır. Belirli yerleşik türlerin mutlak boyutu standart olarak belirtilmez.
+## <a name="stdnullptr_t"></a>std:: nullptr_t
 
-### <a name="built-in-type-size-restrictions"></a>Yerleşik tür boyutu kısıtlamaları
+Anahtar sözcüğü, **`nullptr`** türünün `std::nullptr_t` herhangi bir ham işaretçi türüne dönüştürülebilir bir null işaretçi sabitinden oluşur. Daha fazla bilgi için bkz. [`nullptr`](nullptr.md).
 
-|Kategori|Tür|İçindekiler|
-|--------------|----------|--------------|
-|Tam|**char**|**Karakter** türü, genellikle temel yürütme karakter kümesinin üyelerini içeren bir integral türüdür; varsayılan olarak bu, MICROSOFT C++içinde ASCII 'dir.<br /><br /> C++ Derleyici **char**, **signed char**ve **işaretsiz char** türündeki değişkenleri farklı türlere sahip olacak şekilde değerlendirir. **Karakter** türündeki değişkenler,/j derleme seçeneği kullanılmadığı sürece varsayılan olarak **imzalanmış char** olarak yazılır gibi **int** 'e yükseltilir. Bu durumda, **imzasız karakter** türü olarak değerlendirilir ve imza uzantısı olmadan **int** 'e yükseltilir.|
-||**bool**|**Bool** türü iki değerden biri **true** veya **false**olan bir integral türüdür. Boyutu belirtilmemiş.|
-||**short**|**Short tamsayı** (veya kısaca **Short**) türü, **char**türünden büyük veya ona eşit olan bir tamsayı türüdür ve **int**türünden daha kısa veya ona eşittir.<br /><br /> **Short** türündeki nesneler, **imzalanmış Short** veya **işaretsiz kısa**olarak bildirilemez. **İmzalanan kısa** , **kısa**bir eşanlamlıdır.|
-||**int**|**İnt** türü, **kısa tamsayı**türünden daha büyük veya ona eşit olan bir tamsayı türüdür ve **Long**türünden daha kısa veya ona eşittir.<br /><br /> **İnt** türündeki nesneler, **imzalanan int** veya **işaretsiz int**olarak bildirilemez. **İmzalanan int** , **int**için bir eş anladır.|
-||**__int8**, **__int16**, **__int32**, **__int64**|Boyutlu tamsayı `__int n`, burada `n` tamsayı değişkeninin bit cinsinden boyutudur. **__int8**, **__int16**, **__int32** ve **__int64** , Microsoft 'a özgü anahtar sözcüklerdir. Tüm mimarilerde tüm türler kullanılamaz. ( **__int128** desteklenmez.)|
-||**long**|**Long** (veya **long int**) türü, **int**türünden büyük veya ona eşit olan bir tamsayı türüdür. (Windows **Long** üzerinde **int**ile aynı boyutta olur.)<br /><br /> **Long** türündeki nesneler, **imzalanmış Long** veya **unsigned long**olarak bildirilemez. **İmzalanan Long** , **Long**için bir eş anlamlı.|
-||**uzun uzun**|İşaretsiz bir **Long**değerinden büyük.<br /><br /> **Uzun uzun** nesne türündeki nesneler, **imzalanmış Long** Long veya **unsigned**Long Long olarak bildirilemez. **imzalanan uzun** Long **uzun**uzun bir eş anlamlı.|
-||**wchar_t**, **__wchar_t**|**Wchar_t** türünde bir değişken, geniş karakter veya çok baytlı karakter türü belirler. Varsayılan olarak, **wchar_t** yerel bir türdür, ancak bir typedef **wchar_t** **işaretsiz Short**için [wchar_t/Zc:](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) kullanabilirsiniz. **__Wchar_t** türü yerel **wchar_t** türü için Microsoft 'a özgü bir eş anlamlıdır.<br /><br /> Geniş karakterli türü belirlemek için bir karakter veya dize sabiti öncesinde L önekini kullanın.|
-|Kayan nokta|**float**|**Float** türü en küçük kayan nokta türüdür.|
-||**double**|**Double** türü, **float**türünden büyük veya buna eşit olan, ancak **Long Double**türündeki boyuttan daha kısa veya eşit olan bir kayan nokta türüdür.<br /><br /> Microsoft 'a özgü: **Long Double** ve **Double** gösterimi özdeş. Ancak, **Long Double** ve **Double** ayrı türlerdir.|
-||**uzun çift**|**Long Double** türü **Double**türünden büyük veya buna eşit bir kayan nokta türüdür.|
+## <a name="boolean-type"></a>Boole türü
 
-**Microsoft 'a özgü**
+[`bool`](bool-cpp.md)Türün değerleri [`true`](../cpp/true-cpp.md) ve olabilir [`false`](../cpp/false-cpp.md) . **`bool`** Türün boyutu uygulamaya özgüdür. Bkz. Microsoft 'a özgü uygulama ayrıntıları için [yerleşik türlerin boyutları](#sizes-of-built-in-types) .
 
-Aşağıdaki tabloda, Microsoft C++'taki yerleşik türler için gereken depolama alanı miktarı listelenmektedir. Özellikle, 64 bitlik işletim sistemlerinde bile 4 **bayt olduğunu unutmayın** .
+## <a name="character-types"></a>Karakter türleri
 
-### <a name="sizes-of-built-in-types"></a>Yerleşik türlerin boyutları
+**`char`** Türü, temel yürütme karakter kümesinin üyelerini verimli bir şekilde kodlayan bir karakter temsili türüdür. C++ derleyicisi,, ve türü değişkenleri **`char`** **`signed char`** **`unsigned char`** farklı türlere sahip olacak şekilde davranır.
 
-|Tür|Boyut|
-|----------|----------|
-|**bool**, **char**, **işaretsiz karakter**, **işaretli karakter**, **__int8**|1 bayt|
-|**__int16**, **kısa**, **işaretsiz kısa**, **wchar_t**, **__wchar_t**|2 bayt|
-|**float**, **__int32**, **int**, **işaretsiz int**, **Long**, **unsigned long**|4 bayt|
-|**Double**, **__int64**, **Long Double**, **Long Long**|8 bayt|
+**Microsoft 'a özgü**: tür değişkenleri, **`char`** **`int`** **`signed char`** [`/J`](../build/reference/j-default-char-type-is-unsigned.md) derleme seçeneği kullanılmadığı sürece varsayılan olarak türünden olarak yükseltilir. Bu durumda, bunlar tür olarak değerlendirilir **`unsigned char`** ve **`int`** oturum açma uzantısı olmadan ' a yükseltilir.
 
-**SON Microsoft 'a özgü**
+Türünde bir değişken **`wchar_t`** , geniş karakter veya çok baytlı bir karakter türüdür. **`L`** Geniş karakterli türü belirtmek için bir karakter veya dize değişmez değerinden önce öneki kullanın.
+
+**Microsoft 'a özgü**: varsayılan olarak **`wchar_t`** yerel bir türdür, ancak [`/Zc:wchar_t-`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) **`wchar_t`** için bir TypeDef oluşturmak için kullanabilirsiniz **`unsigned short`** . **`__wchar_t`** Tür yerel tür Için Microsoft 'a özgü bir eş anlamlıdır **`wchar_t`** .
+
+**`char8_t`** Türü UTF-8 karakter gösterimi için kullanılır. Aynı gösterimine sahiptir **`unsigned char`** , ancak derleyici tarafından ayrı bir tür olarak kabul edilir. **`char8_t`** Tür c++ 20 ' de yenidir. **Microsoft 'a özgü**: öğesinin kullanımı **`char8_t`** , [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği gerektirir.
+
+**`char16_t`** Türü UTF-16 karakter gösterimi için kullanılır. Herhangi bir UTF-16 kod birimini temsil etmek için yeterince büyük olmalıdır. Derleyici tarafından ayrı bir tür olarak değerlendirilir.
+
+**`char32_t`** Tür UTF-32 karakter gösterimi için kullanılır. Herhangi bir UTF-32 kod birimini temsil etmek için yeterince büyük olmalıdır. Derleyici tarafından ayrı bir tür olarak değerlendirilir.
+
+## <a name="floating-point-types"></a>Kayan nokta türleri
+
+Kayan nokta türleri, geniş bir magnitudes için kesirli değerlerin yaklaşık bir şekilde sağlanması için bir IEEE-754 temsili kullanır. Aşağıdaki tabloda, C++ ' daki kayan nokta türleri ve kayan nokta türü boyutlarında karşılaştırılma kısıtlamaları listelenmektedir. Bu kısıtlamalar C++ standardı tarafından uygulanan ve Microsoft uygulamasından bağımsızdır. Yerleşik kayan nokta türlerinin mutlak boyutu standart içinde belirtilmez.
+
+| Tür | İçindekiler |
+|--|--|
+| **`float`** | Tür **`float`** C++ ' da en küçük kayan nokta türüdür. |
+| **`double`** | Tür **`double`** , türünden büyük veya buna eşit olan **`float`** , ancak türünden küçük veya ona eşit olan bir kayan nokta türüdür **`long double`** . |
+| **`long double`** | Tür **`long double`** , türünden büyük veya buna eşit olan bir kayan nokta türüdür **`double`** . |
+
+**Microsoft 'a özgü**: temsili **`long double`** ve **`double`** aynıdır. Ancak, **`long double`** ve **`double`** derleyici tarafından ayrı türler olarak değerlendirilir. Microsoft C++ derleyicisi, 4 ve 8 baytlık IEEE-754 kayan nokta temsillerini kullanır. Daha fazla bilgi için bkz. [IEEE kayan nokta temsili](../build/ieee-floating-point-representation.md).
+
+## <a name="integer-types"></a>Tam sayı türleri
+
+**`int`** Tür, varsayılan temel tamsayı türüdür. Uygulamaya özgü bir Aralık üzerinde tüm sayıların tamamını temsil edebilir.
+
+*İşaretli* bir tamsayı temsili hem pozitif hem de negatif değerleri tutabilecek bir sayıdır. Varsayılan olarak veya **`signed`** değiştirici anahtar sözcüğü mevcut olduğunda kullanılır. **`unsigned`** Değiştirici anahtar sözcüğü yalnızca negatif olmayan değerleri tutabilecek *işaretsiz* bir gösterimi belirtir.
+
+Bir boyut değiştiricisi kullanılan tamsayı gösteriminin bit cinsinden genişliğini belirtir. Dil,, **`short`** **`long`** ve **`long long`** değiştiricilerini destekler. Bir **`short`** tür en az 16 bit genişliğinde olmalıdır. Bir **`long`** tür en az 32 bit genişliğinde olmalıdır. Bir **`long long`** tür en az 64 bit genişliğinde olmalıdır. Standart integral türleri arasındaki bir boyut ilişkisini belirtir:
+
+`1 == sizeof(char) <= sizeof(short) <= sizeof(int) <= sizeof(long) <= sizeof(long long)`
+
+Bir uygulama, her tür için hem minimum boyut gereksinimlerini hem de boyut ilişkisini korumalıdır. Ancak gerçek boyutlar uygulamalar arasında değişebilir ve farklılık gösterebilir. Bkz. Microsoft 'a özgü uygulama ayrıntıları için [yerleşik türlerin boyutları](#sizes-of-built-in-types) .
+
+**`int`** **`signed`** , **`unsigned`** , Veya boyut değiştiricileri belirtildiğinde anahtar sözcük atlanabilir. Varsa değiştiriciler ve **`int`** tür herhangi bir sırada görünebilir. Örneğin, **`short unsigned`** ve **`unsigned int short`** aynı türe başvurun.
+
+### <a name="integer-type-synonyms"></a>Tamsayı türü eş anlamlılar
+
+Aşağıdaki tür grupları derleyici tarafından eş anlamlı olarak kabul edilir:
+
+- **`short`**, **`short int`**, **`signed short`**, **`signed short int`**
+
+- **`unsigned short`**, **`unsigned short int`**
+
+- **`int`**, **`signed`**, **`signed int`**
+
+- **`unsigned`**, **`unsigned int`**
+
+- **`long`**, **`long int`**, **`signed long`**, **`signed long int`**
+
+- **`unsigned long`**, **`unsigned long int`**
+
+- **`long long`**, **`long long int`**, **`signed long long`**, **`signed long long int`**
+
+- **`unsigned long long`**, **`unsigned long long int`**
+
+**Microsoft 'a özgü** tamsayı türleri, belirli Genişlik **`__int8`** , **`__int16`** , **`__int32`** , ve türleri içerir **`__int64`** . Bu türler **`signed`** ve **`unsigned`** değiştiricilerini kullanabilir. **`__int8`** Veri türü türü ile eşanlamlıdır, türü ile eşanlamlıdır, türü ile eşanlamlıdır **`char`** **`__int16`** **`short`** **`__int32`** **`int`** ve **`__int64`** türüyle **`long long`** eşanlamlı olur.
+
+## <a name="sizes-of-built-in-types"></a>Yerleşik türlerin boyutları
+
+Çoğu yerleşik türde uygulama tanımlı boyutlar vardır. Aşağıdaki tabloda, Microsoft C++ ' ta yerleşik türler için gereken depolama alanı miktarı listelenmektedir. Özellikle, **`long`** 64 bit işletim sistemlerinde bile 4 bayttır.
+
+| Tür | Boyut |
+|--|--|
+| **`bool`**, **`char`**, **`char8_t`**, **`unsigned char`**, **`signed char`**, **`__int8`** | 1 bayt |
+| **`char16_t`**, **`__int16`**, **`short`**, **`unsigned short`**, **`wchar_t`**, **`__wchar_t`** | 2 bayt |
+| **`char32_t`**, **`float`**, **`__int32`**, **`int`**, **`unsigned int`**, **`long`**, **`unsigned long`** | 4 bayt |
+| **`double`**, **`__int64`**, **`long double`**, **`long long`**, **`unsigned long long`** | 8 bayt |
 
 Her türün değer aralığının bir özeti için bkz. [veri türü aralıkları](data-type-ranges.md) .
 
@@ -104,4 +156,4 @@ Tür dönüştürmesi hakkında daha fazla bilgi için bkz. [Standart dönüşt�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Türü Aralıkları](data-type-ranges.md)
+[Veri türü aralıkları](data-type-ranges.md)

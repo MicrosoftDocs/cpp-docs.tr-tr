@@ -27,12 +27,12 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-ms.openlocfilehash: c9079ac35c4219495b62cd1f4aa2f8ecbbdcf8c9
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 371422275b965fd2ce12995b55221a011a4edae6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404030"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232371"
 ---
 # <a name="annotating-locking-behavior"></a>Kilitlenme Davranışını Yorumlama
 
@@ -116,7 +116,7 @@ Akıllı kilitler genellikle yerel kilitleri sarın ve ömrünü yönetir. Aşa�
 |`_Moves_lock_(target, source)`|`move constructor`Nesnesinden kilit durumunu aktaran işlemi açıklar `source` `target` . , `target` Yeni oluşturulmuş bir nesne olarak değerlendirilir, bu nedenle önce sahip olduğu tüm durum kaybedilir ve durum tarafından değiştirilmez `source` . `source`Ayrıca, kilit sayısı veya diğer ad hedefi olmayan temiz bir duruma sıfırlanır, ancak bu, işaret eden diğer adlar değişmeden kalır.|
 |`_Replaces_lock_(target, source)`|`move assignment operator`Durumu kaynaktan aktarmadan önce hedef kilidinin serbest bırakıldığı semantiğini açıklar. Bu, önünde bir birleşimi olarak kabul edilebilir `_Moves_lock_(target, source)` `_Releases_lock_(target)` .|
 |`_Swaps_locks_(left, right)`|, `swap` Nesnelerin olduğunu varsayan `left` ve `right` bunların durumunu değiş tokuş eden standart davranışı açıklar. Değiştirilen durum, varsa kilit sayısını ve diğer ad hedefini içerir. Ve nesnelerine işaret eden diğer `left` adlar `right` değişmeden kalır.|
-|`_Detaches_lock_(detached, lock)`|Bir kilit sarmalayıcı türünün içerdiği kaynakla ilişkilendirmesini geri almasına izin verdiği bir senaryoyu açıklar. Bu `std::unique_ptr` , iç işaretçiyle çalışma şekline benzerdir: programcıların işaretçiyi ayıklamasına ve akıllı işaretçi kapsayıcısını temiz bir durumda bırakmasını sağlar. Benzer mantık tarafından desteklenir `std::unique_lock` ve özel kilit sarmalayıcılarını kullanabilirsiniz. Ayrılmış kilit, kendi diğer adlarını korurken, bu nesnenin durumunu (varsa kilit sayısı ve diğer ad hedefi) korur. Kilit sayıları üzerinde hiçbir işlem yoktur (serbest bırakma ve alma). Bu ek açıklama `_Moves_lock_` , ayrılmış bağımsız değişkenin yerine olması dışında tam olarak davranır `return` `this` .|
+|`_Detaches_lock_(detached, lock)`|Bir kilit sarmalayıcı türünün içerdiği kaynakla ilişkilendirmesini geri almasına izin verdiği bir senaryoyu açıklar. Bu `std::unique_ptr` , iç işaretçiyle çalışma şekline benzerdir: programcıların işaretçiyi ayıklamasına ve akıllı işaretçi kapsayıcısını temiz bir durumda bırakmasını sağlar. Benzer mantık tarafından desteklenir `std::unique_lock` ve özel kilit sarmalayıcılarını kullanabilirsiniz. Ayrılmış kilit, kendi diğer adlarını korurken, bu nesnenin durumunu (varsa kilit sayısı ve diğer ad hedefi) korur. Kilit sayıları üzerinde hiçbir işlem yoktur (serbest bırakma ve alma). Bu ek açıklama `_Moves_lock_` , ayrılmış bağımsız değişkenin yerine olması dışında tam olarak davranır **`return`** **`this`** .|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

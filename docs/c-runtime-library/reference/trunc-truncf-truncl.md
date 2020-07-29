@@ -33,18 +33,18 @@ helpviewer_keywords:
 - truncf function
 - truncl function
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
-ms.openlocfilehash: b0c615c91e562fa45f791d8cc20f39a830013aeb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b47d07cbe1e86e3f53d3a562cd5e1b3dca7f4814
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946001"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87232397"
 ---
 # <a name="trunc-truncf-truncl"></a>trunc, truncf, truncl
 
 Belirtilen kayan noktalı değerden küçük veya buna eşit en yakın tamsayıyı belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double trunc( double x );
@@ -68,17 +68,17 @@ Başarılı olursa, sıfıra yuvarlayarak *x*tamsayı değerini döndürür.
 
 Aksi takdirde, aşağıdakilerden birini döndürebilir:
 
-|Sorun|döndürülmesini|
+|Sorun|Döndürülmesini|
 |-----------|------------|
 |*x* = ± Infinity|x|
-|*x* =  ±0|x|
+|*x* = ± 0|x|
 |*x* = Nan|NaN|
 
-Hatalar [_matherr](matherr.md)içinde belirtilen şekilde bildirilir.
+Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **TRUNC** 'nin aşırı yüklerini çağırabilirsiniz. C programında, **TRUNC** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **TRUNC** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **TRUNC** her zaman bir alır ve döndürür **`double`** .
 
 En büyük kayan nokta değerleri tam tamsayılar olduğundan, bu işlev kendi kendine taşmaz. Ancak, bir değeri tamsayı türüne döndürerek işlevin taşmasına neden olabilirsiniz.
 
@@ -86,9 +86,9 @@ Kayan noktadan tam sayıya örtülü olarak dönüştürme ile de aşağı doğr
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**TRUNC**, **truncf**, **truncl**|\<Math. h >|\<cmath >|
+|**TRUNC**, **truncf**, **truncl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
