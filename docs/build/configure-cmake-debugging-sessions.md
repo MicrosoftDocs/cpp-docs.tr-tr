@@ -4,12 +4,12 @@ description: CMake hata ayıklayıcı ayarlarını yapılandırmak için Visual 
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: f860d1ae78d401a9e5079e79684a053220deaa6c
-ms.sourcegitcommit: 3f91111c0350c0237fddb82766c290307f20e659
+ms.openlocfilehash: cc80827458ba7cb61339ec3a36f227747780a47c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83630531"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224090"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake hata ayıklama oturumlarını yapılandırma
 
@@ -33,7 +33,7 @@ Ardından, bir yürütülebilir dosyaya sağ tıklayın ve **Hata Ayıkla**' yı
 
 ## <a name="customize-debugger-settings"></a>Hata ayıklayıcı ayarlarını özelleştirme
 
-Projenizdeki herhangi bir çalıştırılabilir CMake hedefi için hata ayıklayıcı ayarlarını özelleştirebilirsiniz. Bunlar, proje kökündeki bir klasörde bulunan *Launch. vs. JSON*adlı bir yapılandırma dosyasında bulunur *`.vs`* . Hata ayıklama kurulum ayrıntılarınızı yapılandırıp kaydedebildiğinden, bir başlatma yapılandırma dosyası çoğu hata ayıklama senaryosunda yararlıdır. Bu dosyaya üç giriş noktası vardır:
+Projenizdeki herhangi bir çalıştırılabilir CMake hedefi için hata ayıklayıcı ayarlarını özelleştirebilirsiniz. Bunlar, proje kökündeki bir klasörde bulunan *launch.vs.json*adlı bir yapılandırma dosyasında bulunur *`.vs`* . Hata ayıklama kurulum ayrıntılarınızı yapılandırıp kaydedebildiğinden, bir başlatma yapılandırma dosyası çoğu hata ayıklama senaryosunda yararlıdır. Bu dosyaya üç giriş noktası vardır:
 
 - **Hata ayıklama menüsü:** Etkin hata ayıklama hedefine özgü hata ayıklama yapılandırmasını özelleştirmek için ana menüden hata **ayıkla > hata ayıklama ve başlatma ayarları '** nı seçin. Seçili bir hata ayıklama hedefi yoksa, bu seçenek gri renkte olur.
 
@@ -43,15 +43,15 @@ Projenizdeki herhangi bir çalıştırılabilir CMake hedefi için hata ayıklay
 
 ![Hedef görünümü giriş noktası](media/cmake-targets-add-debug-configuration.png "Hedef görünümü giriş noktası")
 
-- **Kök CMakeLists. txt:** Bir kök *Cmakelists. txt* dosyasına sağ tıklayıp **hata ayıklama yapılandırması Ekle** ' yi seçerek **hata ayıklayıcı Seç** iletişim kutusunu açın. İletişim kutusu *herhangi bir* tür hata ayıklama yapılandırması eklemenize olanak tanır, ancak özelliği aracılığıyla çağırmak Için CMake hedefini el ile belirtmeniz gerekir `projectTarget` .
+- **Kök CMakeLists.txt:** Bir kök *CMakeLists.txt* sağ tıklayıp **hata ayıklama yapılandırması Ekle** ' yi seçerek **bir hata ayıklayıcı Seç** iletişim kutusunu açın. İletişim kutusu *herhangi bir* tür hata ayıklama yapılandırması eklemenize olanak tanır, ancak özelliği aracılığıyla çağırmak Için CMake hedefini el ile belirtmeniz gerekir `projectTarget` .
 
 ![Bir hata ayıklayıcı iletişim kutusu seçin](media/cmake-select-a-debugger.png "Bir hata ayıklayıcı iletişim kutusu seçin")
 
-Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırması oluşturmak üzere *Launch. vs. JSON* dosyasını düzenleyebilirsiniz. Dosyayı kaydettiğinizde, Visual Studio **Başlangıç öğesi** açılan menüsünde her yeni yapılandırma için bir giriş oluşturur.
+Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırması oluşturmak üzere dosya *launch.vs.js* düzenleyebilirsiniz. Dosyayı kaydettiğinizde, Visual Studio **Başlangıç öğesi** açılan menüsünde her yeni yapılandırma için bir giriş oluşturur.
 
-## <a name="reference-keys-in-cmakesettingsjson"></a>CMakeSettings. JSON içindeki başvuru anahtarları
+## <a name="reference-keys-in-cmakesettingsjson"></a>CMakeSettings.jsiçindeki başvuru anahtarları
 
-*Cmakesettings. JSON* dosyasındaki herhangi bir anahtara başvurmak için, `cmake.` bunu *Launch. vs. JSON*' da sonuna ekleyin. Aşağıdaki örnek, *launch.vs.json* `remoteCopySources` Şu anda seçili olan yapılandırma Için *cmakesettings. JSON* dosyasındaki anahtarın değerini gösteren basit bir Launch. vs. json dosyasını gösterir:
+Dosyadaki bir *CMakeSettings.js* herhangi bir anahtara başvurmak için, `cmake.` *launch.vs.jsüzerine*sonuna ekleyin. Aşağıdaki örnek, *launch.vs.json* `remoteCopySources` Şu anda seçili olan yapılandırma için *CMakeSettings.json* dosyasındaki anahtarın değerini gösteren basit birlaunch.vs.jsdosyası gösterir:
 
 ```json
 {
@@ -69,13 +69,13 @@ Herhangi bir sayıda CMake hedefi için hata ayıklama yapılandırması oluştu
 }
 ```
 
-*Cmakesettings. JSON* dosyasında tanımlanan **ortam değişkenleri** , sözdizimi kullanılarak Launch. vs. JSON içinde de kullanılabilir `${env.VARIABLE_NAME}` . Visual Studio 2019 sürüm 16,4 ve sonrasında, hata ayıklama hedefleri *Cmakesettings. JSON*içinde belirttiğiniz ortam kullanılarak otomatik olarak başlatılır. Bir ortam değişkenini **null**olarak ayarlayarak ayarı yapabilirsiniz.
+*CMakeSettings.jsüzerinde* tanımlanan **ortam değişkenleri** , sözdizimi kullanılarak launch.vs.jsde kullanılabilir `${env.VARIABLE_NAME}` . Visual Studio 2019 sürüm 16,4 ve sonraki sürümlerinde, hata ayıklama hedefleri *üzerindeCMakeSettings.js*belirttiğiniz ortam kullanılarak otomatik olarak başlatılır. Bir ortam değişkenini **null**olarak ayarlayarak ayarı yapabilirsiniz.
 
-## <a name="launchvsjson-reference"></a>Launch. vs. JSON başvurusu
+## <a name="launchvsjson-reference"></a>Başvuruya Launch.vs.js
 
-Tüm hata ayıklama senaryolarınızı desteklemek için birçok *Launch. vs. JSON* özelliği vardır. Aşağıdaki özellikler, uzak ve yerel tüm hata ayıklama yapılandırmalarında ortaktır:
+Tüm hata ayıklama senaryolarınızı desteklemek için özelliklerde birçok *launch.vs.js* vardır. Aşağıdaki özellikler, uzak ve yerel tüm hata ayıklama yapılandırmalarında ortaktır:
 
-- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. Visual Studio, **hata ayıklama menüsü** veya **hedefler görünümünden** *Launch. vs. JSON* girerseniz, bu özelliği oto doldurur. Bu değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
+- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. **Hata Ayıkla menüsünde** veya **hedefler görünümünden** *launch.vs.js* girerseniz, Visual Studio oto bu özelliği doldurur. Bu değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
 
 - `env`: Sözdizimi kullanılarak eklenecek ek ortam değişkenleri:
 
@@ -88,7 +88,7 @@ Tüm hata ayıklama senaryolarınızı desteklemek için birçok *Launch. vs. JS
 
 - `args`: Hata ayıklamak için programa geçirilen komut satırı bağımsız değişkenleri.
 
-## <a name="launchvsjson-reference-for-remote-projects-and-wsl"></a>Uzak projeler ve WSL için Launch. vs. JSON başvurusu
+## <a name="launchvsjson-reference-for-remote-projects-and-wsl"></a>Uzak projeler ve WSL için başvuru Launch.vs.js
 
 Visual Studio 2019 sürüm 16,6 ' de, `type: cppgdb` uzak sistemlerde ve WSL 'de hata ayıklamayı basitleştirmek için yeni bir hata ayıklama yapılandırması ekledik. Eski hata ayıklama yapılandırmalarının `type: cppdbg` desteklenmeye devam ediyor.
 
@@ -96,7 +96,7 @@ Visual Studio 2019 sürüm 16,6 ' de, `type: cppgdb` uzak sistemlerde ve WSL 'de
 
 - `name`: **Başlangıç öğesi** açılan menüsünde yapılandırmayı tanımlayacak kolay bir ad.
 - `project`: Proje dosyasının göreli yolunu belirtir. Normal olarak, CMake projesinde hata ayıklarken bu yolu değiştirmeniz gerekmez.
-- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. Visual Studio, **hata ayıklama menüsü** veya **hedefler görünümünden** *Launch. vs. JSON* girerseniz, bu özelliği oto doldurur. Bu hedef değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
+- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. **Hata Ayıkla menüsünde** veya **hedefler görünümünden** *launch.vs.js* girerseniz, Visual Studio oto bu özelliği doldurur. Bu hedef değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
 - `debuggerConfiguration`: Hangi hata ayıklama varsayılan değerlerini kullanacağını gösterir. Visual Studio 2019 sürüm 16,6 ' de geçerli tek seçenek `gdb` . Visual Studio 2019 sürüm 16,7 veya üzeri de desteklenir `gdbserver` .
 - `args`: Başlatma sırasında hata ayıklanan programa geçirilen komut satırı bağımsız değişkenleri.
 - `env`: Hata ayıklamakta olan programa başka ortam değişkenleri geçirildi. Örneğin, `{"DISPLAY": "0.0"}`.
@@ -121,17 +121,17 @@ Visual Studio 2019 sürüm 16,6 ' de, `type: cppgdb` uzak sistemlerde ve WSL 'de
 
 #### <a name="deployment-options"></a>Dağıtım seçenekleri
 
-Derleme makinenizi (CMakeSettings. json dosyasında tanımlanır) uzaktan hata ayıklama makinenizden ayırmak için aşağıdaki seçenekleri kullanın.
+Derleme makinenizi (CMakeSettings.jsüzerinde tanımlanmıştır) uzaktan hata ayıklama makinenizden ayırmak için aşağıdaki seçenekleri kullanın.
 
 - `remoteMachineName`: Uzaktan hata ayıklama makinesi. Yalnızca derleme makinesinden farklıysa gereklidir. [Bağlantı yöneticisinde](../linux/connect-to-your-remote-linux-computer.md)mevcut bir giriş olmalıdır. Var olan tüm uzak bağlantıların listesini görüntülemek için **CTRL + boşluk** tuşlarına basın.
-- `disableDeploy`: Varsayılan olarak olur `false` . Derleme/hata ayıklama ayrımı devre dışı olup olmadığını gösterir. Ne zaman `false` , bu seçenek derleme ve hata ayıklamanın iki ayrı makinede oluşmasına izin verir.
+- `disableDeploy`: Varsayılan olarak olur **`false`** . Derleme/hata ayıklama ayrımı devre dışı olup olmadığını gösterir. Ne zaman **`false`** , bu seçenek derleme ve hata ayıklamanın iki ayrı makinede oluşmasına izin verir.
 - `deployDirectory`: Yürütülebilir dosyanın kopyalandığı dizinin tam UNIX yolu `remoteMachineName` .
 - `deploy`: Gelişmiş dağıtım ayarlarından oluşan bir dizi. Bu ayarları yalnızca dağıtım işlemi üzerinde daha ayrıntılı denetim sağlamak istediğinizde yapılandırmanız gerekir. Varsayılan olarak, yalnızca hata ayıklama işlemi için gereken dosyalar uzaktan hata ayıklama makinesine dağıtılır.
   - `sourceMachine`: Dosya veya dizinin kopyalandığı makine. Bağlantı Yöneticisi 'nde depolanan tüm uzak bağlantıların listesini görüntülemek için **Ctrl + Space** tuşlarına basın. WSL üzerinde yerel olarak oluşturulurken Bu seçenek yoksayılır.
   - `targetMachine`: Dosya veya dizinin kopyalandığı makine. Bağlantı Yöneticisi 'nde depolanan tüm uzak bağlantıların listesini görüntülemek için **Ctrl + Space** tuşlarına basın.
   - `sourcePath`: Üzerindeki dosya veya dizin konumu `sourceMachine` .
   - `targetPath`: Üzerindeki dosya veya dizin konumu `targetMachine` .
-  - `deploymentType`: Dağıtım türünün açıklaması. `LocalRemote`ve `RemoteRemote` desteklenir. `LocalRemote`, yerel dosya sisteminden, `remoteMachineName` *Launch. vs. JSON*içinde tarafından belirtilen uzak sisteme kopyalama anlamına gelir. `RemoteRemote`, *Cmakesettings. JSON* dosyasında belirtilen uzak derleme sisteminden *Launch. vs. JSON*içinde belirtilen farklı bir uzak sisteme kopyalama anlamına gelir.
+  - `deploymentType`: Dağıtım türünün açıklaması. `LocalRemote`ve `RemoteRemote` desteklenir. `LocalRemote`, yerel dosya sisteminden `remoteMachineName` *üzerindelaunch.vs.js*tarafından belirtilen uzak sisteme kopyalama anlamına gelir. `RemoteRemote`*CMakeSettings.js* ' de belirtilen uzak yapı sisteminden *launch.vs.jsüzerinde*belirtilen farklı uzak sisteme kopyalama anlamına gelir.
   - `executable`: Dağıtılan dosyanın yürütülebilir olup olmadığını gösterir.
 
 ### <a name="execute-custom-gdb-commands"></a>Özel `gdb` komutları yürütme
@@ -150,7 +150,7 @@ Yapılandırma türü kullanılarak, uzak bir sistemde veya WSL 'de hata ayıkla
 
 - `project`: Proje dosyasının göreli yolunu belirtir. Normal olarak, CMake projesinde hata ayıklarken bu değeri değiştirmeniz gerekmez.
 
-- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. Visual Studio, **hata ayıklama menüsü** veya **hedefler görünümünden** *Launch. vs. JSON* girerseniz, bu özelliği oto doldurur. Bu değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
+- `projectTarget`: Proje oluşturulurken çağrılacak CMake hedefini belirtir. **Hata Ayıkla menüsünde** veya **hedefler görünümünden** *launch.vs.js* girerseniz, Visual Studio oto bu özelliği doldurur. Bu değer, **Başlangıç öğesi** açılan listesinde listelenen mevcut bir hata ayıklama hedefinin adıyla eşleşmelidir.
 
 - `args`: Başlatma sırasında hata ayıklanan programa geçirilen komut satırı bağımsız değişkenleri.
 
@@ -211,7 +211,7 @@ Yapılandırma türü kullanılarak, uzak bir sistemde veya WSL 'de hata ayıkla
 
 - `visualizerFile`: Bu işlemde hata ayıklanırken kullanılacak bir [. natvis dosyası](/visualstudio/debugger/create-custom-views-of-native-objects) . Bu seçenek, düzgün yazdırma ile uyumlu değildir `gdb` . `showDisplayString`Bu özelliği ayarladığınızda de ayarlanır.
 
-- `showDisplayString`: Bir, belirtildiğinde, görüntüleme dizesini sağlayan bir Boole değeri `visualizerFile` . Bu seçeneğin ayarlanması `true` hata ayıklama sırasında daha yavaş performansa neden olabilir.
+- `showDisplayString`: Bir, belirtildiğinde, görüntüleme dizesini sağlayan bir Boole değeri `visualizerFile` . Bu seçeneğin ayarlanması **`true`** hata ayıklama sırasında daha yavaş performansa neden olabilir.
 
 - `setupCommands`: `gdb` Temel alınan hata ayıklayıcıyı ayarlamak için yürütülecek bir veya daha fazla komut (ler).
 

@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-ms.openlocfilehash: 3fe205223b6cf381bbf3e2872b1a84f9d81a3cb7
-ms.sourcegitcommit: 2da5c42928739ca8cd683a9002598f28d8ec5f8e
+ms.openlocfilehash: 7c35abbcabe62da2e60fbc2393c575e7c3872cf3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060061"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224012"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 
 Yapı olayı, MSBuild 'in derleme işlemindeki belirli bir aşamada gerçekleştirdiği bir komuttur. Oluşturma *öncesi* olay, derleme başlamadan önce oluşur; bağlama *öncesi* olay, bağlantı adımı başlamadan önce oluşur; ve derleme *sonrası* olay, derleme başarıyla bittikten sonra oluşur. Derleme olayı yalnızca ilişkili derleme adımı gerçekleşirse oluşur. Örneğin, bağlantı adımı çalıştırılmayan bağlantı öncesi olay oluşmaz.
 
-Üç derleme olayının her biri, bir öğe tanımı grubunda yürütülen bir komut öğesi (`<Command>`) ve`<Message>` **MSBuild** derleme olayını gerçekleştirdiğinde görüntülenen bir ileti öğesi () tarafından temsil edilir. Her öğe isteğe bağlıdır ve aynı öğeyi birden çok kez belirtirseniz, son oluşum öncelik kazanır.
+Üç derleme olayının her biri, bir öğe tanımı grubunda yürütülen bir komut öğesi ( `<Command>` ) ve `<Message>` **MSBuild** derleme olayını gerçekleştirdiğinde görüntülenen bir ileti öğesi () tarafından temsil edilir. Her öğe isteğe bağlıdır ve aynı öğeyi birden çok kez belirtirseniz, son oluşum öncelik kazanır.
 
-Derleme olayının yürütülüp yürütülmediğini göstermek için bir özellik grubunda isteğe bağlı bir *Use-Build* öğesi (`<`*derleme-olay*`UseInBuild>`) belirtilebilir. Bir *Use-Build* öğesinin içerik değeri **true** ya da **false**şeklindedir. Varsayılan olarak, karşılık gelen *derleme kullanımı* öğesi olarak `false`ayarlanmadığı takdirde bir yapı olayı yürütülür.
+*use-in-build* `<` Derleme olayının yürütülüp yürütülmediğini göstermek için bir özellik grubunda isteğe bağlı bir Use-Build öğesi (*derleme-olay* `UseInBuild>` ) belirtilebilir. Bir *Use derlemesi* öğesinin içerik değeri ya da ' dir **`true`** **`false`** . Varsayılan olarak, karşılık gelen *derleme kullanımı* öğesi olarak ayarlanmadığı takdirde bir yapı olayı yürütülür **`false`** .
 
 Aşağıdaki tabloda her derleme olay XML öğesi listelenmektedir:
 
@@ -37,7 +37,7 @@ Aşağıdaki tabloda her *derleme kullanımı* öğesi listelenmektedir:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, [Izlenecek yol: C++ projesi oluşturmak Için MSBuild kullanılarak](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)oluşturulan MyProject. vcxproj dosyasının proje öğesinin içine eklenebilir. *Oluşturma öncesi* bir olay Main. cpp kopyasını oluşturur; *bağlama öncesi* bir olay Main. obj; kopyasını oluşturur. *Derleme sonrası* bir olay MyProject. exe ' nin bir kopyasını oluşturur. Proje sürüm yapılandırması kullanılarak derlenip, derleme olayları yürütülür. Proje bir hata ayıklama yapılandırması kullanılarak derlenise, derleme olayları yürütülmez.
+Aşağıdaki örnek, [Izlenecek yol: C++ projesi oluşturmak Için MSBuild kullanılarak](walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)oluşturulan MyProject. vcxproj dosyasının proje öğesinin içine eklenebilir. *Oluşturma öncesi* bir olay Main. cpp kopyasını oluşturur; *bağlama öncesi* bir olay Main. obj; kopyasını oluşturur. *oluşturma sonrası* bir olay myproject.exe bir kopyasını oluşturur. Proje sürüm yapılandırması kullanılarak derlenip, derleme olayları yürütülür. Proje bir hata ayıklama yapılandırması kullanılarak derlenise, derleme olayları yürütülmez.
 
 ``` xml
 <ItemDefinitionGroup>

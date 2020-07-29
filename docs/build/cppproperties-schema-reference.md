@@ -1,18 +1,18 @@
 ---
-title: CppProperties. JSON başvurusu
+title: Başvuruya CppProperties.js
 ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
-ms.openlocfilehash: be6db52e1e62244e9f44db8ac86238242ab50ca0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2409c1d93d4e9d814407dbd4334daa73ae630775
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328727"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224064"
 ---
-# <a name="cpppropertiesjson-reference"></a>CppProperties. JSON başvurusu
+# <a name="cpppropertiesjson-reference"></a>Başvuruya CppProperties.js
 
-CMake kullanmayan açık klasör projeleri, bir *Cppproperties. JSON* dosyasında IntelliSense için proje yapılandırma ayarlarını saklayabilir. (CMake projeleri bir [Cmakesettings. JSON](customize-cmake-settings.md) dosyası kullanır.) Bir yapılandırma ad/değer çiftlerinden oluşur ve #include yollar, derleyici anahtarları ve diğer parametreleri tanımlar. Açık bir klasör projesinde yapılandırmaların nasıl ekleneceği hakkında daha fazla bilgi için bkz. [C++ Için açık klasör projeleri](open-folder-projects-cpp.md) . Aşağıdaki bölümler çeşitli ayarları özetler. Şemanın tam bir açıklaması için, *Cppproperties. JSON* açık olduğunda, kod düzenleyicisinin en üstünde tam yol verilen *CppProperties_schema. JSON*' a gidin.
+CMake kullanmayan açık klasör projeleri, IntelliSense için proje yapılandırma ayarlarını bir *CppProperties.js* dosyasında saklayabilir. (CMake projeleri dosyada [CMakeSettings.js](customize-cmake-settings.md) kullanır.) Bir yapılandırma ad/değer çiftlerinden oluşur ve #include yollar, derleyici anahtarları ve diğer parametreleri tanımlar. Açık bir klasör projesinde yapılandırmaların nasıl ekleneceği hakkında daha fazla bilgi için bkz. [C++ Için açık klasör projeleri](open-folder-projects-cpp.md) . Aşağıdaki bölümler çeşitli ayarları özetler. Şemanın eksiksiz bir açıklaması için, *CppProperties.js* açık olduğunda kod düzenleyicisinin en üstünde tam yol verilen *CppProperties_schema.json*' a gidin.
 
 ## <a name="configuration-properties"></a>Yapılandırma özellikleri
 
@@ -28,7 +28,7 @@ Bir yapılandırma aşağıdaki özelliklerden herhangi birine sahip olabilir:
 |`forcedInclude`|Her derleme birimine otomatik olarak dahil edilecek üst bilgi (MSVC veya Clang için-include için/FI 'e eşlenir)|
 |`undefines`|Tanımsız olacak makroların listesi (MSVC için/U ile eşlenir)|
 |`intelliSenseMode`|Kullanılacak IntelliSense altyapısı. MSVC, GCC veya Clang için önceden tanımlanmış mimariye özgü çeşitlerden birini belirtebilirsiniz.|
-|`environments`|Bir komut isteminde ortam değişkenleri gibi davranan ve $ {env ile erişilen değişkenlerin Kullanıcı tanımlı kümesi.\<>} makrosu DEĞIŞKENI.|
+|`environments`|Bir komut isteminde ortam değişkenleri gibi davranan ve $ {env.} ile erişilen değişkenlerin Kullanıcı tanımlı kümesi. \<VARIABLE> makroya.|
 
 ### <a name="intellisensemode-values"></a>ıntellisensemode değerleri
 
@@ -58,11 +58,11 @@ Desteklenen değerler şunlardır:
 - Linux-GCC-x64
 - Linux-GCC-ARM
 
-Note: değerler `msvc-x86` ve `msvc-x64` yalnızca eski nedenlerden dolayı desteklenir. Bunun yerine `windows-msvc-*` türevlerini kullanın.
+Note: değerler `msvc-x86` ve `msvc-x64` yalnızca eski nedenlerden dolayı desteklenir. `windows-msvc-*`Bunun yerine türevlerini kullanın.
 
 ## <a name="pre-defined-environments"></a>Önceden tanımlı ortamlar
 
-Visual Studio, karşılık gelen Geliştirici Komut İstemi eşlenen Microsoft C++ için önceden tanımlanmış aşağıdaki ortamları sağlar. Bu ortamlarından birini dağıttığınızda, şu makro söz dizimine sahip genel özelliği `env` kullanarak ortam değişkenlerinden herhangi birine başvurabilirsiniz: $ {env.\<>} DEĞIŞKENI.
+Visual Studio, karşılık gelen Geliştirici Komut İstemi eşlenen Microsoft C++ için önceden tanımlanmış aşağıdaki ortamları sağlar. Bu ortamlarından birini dağıttığınızda, şu makro söz dizimine sahip genel özelliği kullanarak ortam değişkenlerinden herhangi birine başvurabilirsiniz `env` : $ {env. \<VARIABLE> }.
 
 |Değişken Adı|Açıklama|
 |-----------|-----------------|
@@ -85,11 +85,11 @@ Linux iş yükü yüklendiğinde, Linux ve WSL 'yi uzaktan hedeflemek için aşa
 
 ## <a name="user-defined-environments"></a><a name="user_defined_environments"></a>Kullanıcı tanımlı ortamlar
 
-İsteğe bağlı olarak, `environments` *cppproperties. JSON* içindeki değişken kümelerini tanımlamak için ya da genel olarak veya yapılandırma başına özelliğini kullanabilirsiniz. Bu değişkenler, açık bir klasör projesi bağlamında ortam değişkenleri gibi davranır ve $ {env. ile erişilebilir.\< *Tasks. vs. JSON* ve *Launch. vs. JSON* 'dan sonra, burada tanımlandıklarında değişken>} sözdizimi. Ancak, Visual Studio 'Nun dahili olarak kullandığı herhangi bir komut isteminde gerçek ortam değişkenleri olarak ayarlanmaları gerekmez.
+İsteğe bağlı olarak `environments` veya yapılandırma başına *CppProperties.js* değişkenlerin kümelerini tanımlamak için özelliğini kullanabilirsiniz. Bu değişkenler, açık bir klasör projesi bağlamında ortam değişkenleri gibi davranır ve $ {env.} ile erişilebilir \<VARIABLE> *üzerindetasks.vs.js* ve *launch.vs.js* bir sözdizimi burada tanımlandıktan sonra. Ancak, Visual Studio 'Nun dahili olarak kullandığı herhangi bir komut isteminde gerçek ortam değişkenleri olarak ayarlanmaları gerekmez.
 
-**Visual Studio 2019 sürüm 16,4 ve üzeri:** *Cppproperties. JSON* içinde tanımlanan yapılandırmaya özgü değişkenler, hata ayıklama hedefleri ve görevleri tarafından ayarlanması `inheritEnvironments`gerekmeden otomatik olarak alınır. Hata ayıklama hedefleri, *Cppproperties. JSON*içinde belirttiğiniz ortam ile otomatik olarak başlatılır.
+**Visual Studio 2019 sürüm 16,4 ve üzeri:** *CppProperties.jsüzerinde* tanımlanan yapılandırmaya özgü değişkenler, hata ayıklama hedefleri ve görevleri tarafından ayarlanması gerekmeden otomatik olarak alınır `inheritEnvironments` . Hata ayıklama hedefleri, *üzerindeCppProperties.js*belirttiğiniz ortam ile otomatik olarak başlatılır.
 
-**Visual Studio 2019 sürüm 16,3 ve öncesi:** Bir ortamı tükettiğinizde, ortam aynı yapılandırmanın bir parçası olarak tanımlansa bile `inheritsEnvironments` özelliği özelliğinde belirtmeniz gerekir; `environment` özelliği, ortamın adını belirtir. Aşağıdaki örnekte, MSYS2 yüklemesinde GCC için IntelliSense 'i etkinleştirmek üzere örnek bir yapılandırma gösterilmektedir. Yapılandırmanın `mingw_64` ortamı nasıl tanımlayıp devraldığını ve `includePath` özelliğin `INCLUDE` değişkene nasıl erişebileceğini aklınızda bulabilirsiniz.
+**Visual Studio 2019 sürüm 16,3 ve öncesi:** Bir ortamı tükettiğinizde, `inheritsEnvironments` ortam aynı yapılandırmanın bir parçası olarak tanımlansa bile özelliği özelliğinde belirtmeniz gerekir; `environment` özelliği ortamın adını belirtir. Aşağıdaki örnekte, MSYS2 yüklemesinde GCC için IntelliSense 'i etkinleştirmek üzere örnek bir yapılandırma gösterilmektedir. Yapılandırmanın ortamı nasıl tanımlayıp devraldığını `mingw_64` ve `includePath` özelliğin değişkene nasıl erişebileceğini aklınızda bulabilirsiniz `INCLUDE` .
 
 ```json
 "configurations": [
@@ -123,17 +123,17 @@ Bir yapılandırma içinde bir **ortamlar** özelliği tanımladığınızda, ay
 
 ## <a name="built-in-macros"></a>Yerleşik makrolar
 
-*Cppproperties. JSON*içinde aşağıdaki yerleşik makrolara erişebilirsiniz:
+*CppProperties.js*içinde aşağıdaki yerleşik makrolara erişebilirsiniz:
 
 |||
 |-|-|
 |`${workspaceRoot}`| Çalışma alanı klasörünün tam yolu|
-|`${projectRoot}`| *Cppproperties. JSON* ' ın yerleştirildiği klasörün tam yolu|
+|`${projectRoot}`| *CppProperties.jsüzerinde yer alan* klasörün tam yolu|
 |`${env.vsInstallDir}`| Visual Studio 'nun çalışan örneğinin yüklü olduğu klasörün tam yolu|
 
 ### <a name="example"></a>Örnek
 
-Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve diğer yaygın üstbilgileri Içeriyorsa, *cppproperties. JSON* yapılandırma dosyanızı aşağıdakiler dahil olmak üzere güncelleştirmek isteyebilirsiniz:
+Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve diğer ortak üst bilgilerini de içeriyorsa, *CppProperties.js* yapılandırma dosyasında aşağıdakiler dahil olmak üzere güncelleştirmek isteyebilirsiniz:
 
 ```json
 {
@@ -156,14 +156,14 @@ Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve di
 ```
 
 > [!Note]
-> `%WindowsSdkDir%`ve `%VCToolsInstallDir%` genel ortam değişkenleri olarak ayarlanmamış, bu nedenle devenv. exe ' yi bu değişkenleri tanımlayan bir geliştirici komut istemi başlattığınızdan emin olun. (Windows Başlat menüsünde "Geliştirici" yazın.)
+> `%WindowsSdkDir%`ve `%VCToolsInstallDir%` genel ortam değişkenleri olarak ayarlanmamışsa, bu değişkenleri tanımlayan bir Geliştirici Komut İstemi devenv.exe başlattığınızdan emin olun. (Windows Başlat menüsünde "Geliştirici" yazın.)
 
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense hatalarında sorun giderme
 
-İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++** > **Gelişmiş** ' e giderek ve **günlük kaydını** **true**olarak ayarlayarak sorun gidermeye devam edebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
+İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar**  >  **Seçenekler**  >  **metin Düzenleyicisi**  >  **C/C++**  >  **Gelişmiş** ' e giderek ve **günlüğü etkinleştir** **`true`** ' i ayarlayarak sorun giderebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
 
 ![Tanılama günlüğüne kaydetme](media/diagnostic-logging.png)
 
-Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster: Visual C++ log**' u seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
+Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster: Visual C++ log**' u seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *CppProperties.js*' deki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış tarama verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 
 Eksik içerme yollarının neden olduğu IntelliSense hatalarını gidermek için **hata listesi** açın ve çıktısını "yalnızca IntelliSense" olarak filtreleyin ve hata kodu E1696 "kaynak dosyası açılamıyor...".

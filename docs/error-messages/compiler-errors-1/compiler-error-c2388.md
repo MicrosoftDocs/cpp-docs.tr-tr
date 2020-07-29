@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2388
 ms.assetid: 764ad2d7-cb04-425f-ba30-70989488c4a4
-ms.openlocfilehash: 21658a659468a6e2a0d911af70eefdaed320446c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 50148f4fb5c3af33d8de8b005f75f491b0540271
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745063"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225507"
 ---
 # <a name="compiler-error-c2388"></a>Derleyici hatası C2388
 
-' symbol ': bir simge hem __declspec (AppDomain) hem de \__declspec (işlem) ile bildirilemez
+' symbol ': bir simge hem __declspec (AppDomain) hem de \_ _declspec (işlem) ile bildirilemez
 
-`appdomain` ve `process` `__declspec` değiştiriciler aynı sembolde kullanılamaz. Bir değişken için depolama, işlem veya uygulama etki alanı başına mevcuttur.
+`appdomain`Ve `process` **`__declspec`** değiştiricileri aynı sembol üzerinde kullanılamaz. Bir değişken için depolama, işlem veya uygulama etki alanı başına mevcuttur.
 
 Daha fazla bilgi için bkz. [AppDomain](../../cpp/appdomain.md) ve [Process](../../cpp/process.md).
 

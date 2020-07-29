@@ -10,18 +10,18 @@ helpviewer_keywords:
 - stdext::freelist [C++], pop
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-ms.openlocfilehash: 712c1f1638b954d1580eb527dd9eab7401917517
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7425f99f7966548bdb1f94d3007382eeb99863df
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317201"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87193230"
 ---
 # <a name="freelist-class"></a>freelist Sınıfı
 
 Bellek bloklarının listesini yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <std::size_t Sz, class Max>
@@ -32,35 +32,35 @@ class freelist : public Max
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sz*|Dizideki ayrılacak öğe sayısı.|
-|*Max*|Serbest listede depolanacak en fazla öğe sayısını temsil eden maksimum sınıf. Maksimum sınıf [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
+|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
+|*Biçimlendir*|Ücretsiz listede depolanacak en fazla öğe sayısını temsil eden Max sınıfı. Max sınıfı [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf şablonu Max geçti max sınıfı tarafından belirlenen listenin maksimum uzunluğu ile boyutu *Sz* bellek blokları bir listesini *yönetir.*
+Bu sınıf şablonu *, en fazla*değer olarak geçirilen maksimum sınıf tarafından belirlenen listenin en fazla uzunluğu ile *SZ* boyutundaki bellek bloklarının listesini yönetir.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Freelist](#freelist)|Türünde `freelist`bir nesne oluşturuyor.|
+|[freelist](#freelist)|Türünde bir nesne oluşturur `freelist` .|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[Pop](#pop)|İlk bellek bloğunu boş listeden kaldırır.|
-|[Itme](#push)|Listeye bir bellek bloğu ekler.|
+|[cağımız](#pop)|İlk bellek bloğunu ücretsiz listeden kaldırır.|
+|[push](#push)|Listeye bir bellek bloğu ekler.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<tahsisörler>
+**Üst bilgi:**\<allocators>
 
 **Ad alanı:** stdext
 
-## <a name="freelistfreelist"></a><a name="freelist"></a>freelist::freelist
+## <a name="freelistfreelist"></a><a name="freelist"></a>freelist:: freelist
 
-Türünde `freelist`bir nesne oluşturuyor.
+Türünde bir nesne oluşturur `freelist` .
 
 ```cpp
 freelist();
@@ -68,9 +68,9 @@ freelist();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="freelistpop"></a><a name="pop"></a>freelist::pop
+## <a name="freelistpop"></a><a name="pop"></a>freelist::p op
 
-İlk bellek bloğunu boş listeden kaldırır.
+İlk bellek bloğunu ücretsiz listeden kaldırır.
 
 ```cpp
 void *pop();
@@ -78,13 +78,13 @@ void *pop();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçiyi listeden kaldırılan bellek bloğuna döndürür.
+Listeden kaldırılan bellek bloğuna yönelik bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste boşsa üye işlev NULL döndürür. Aksi takdirde, ilk bellek bloğunu listeden kaldırır.
+Üye işlevi, liste boşsa NULL değerini döndürür. Aksi takdirde, ilk bellek bloğunu listeden kaldırır.
 
-## <a name="freelistpush"></a><a name="push"></a>freelist::push
+## <a name="freelistpush"></a><a name="push"></a>freelist::p USH
 
 Listeye bir bellek bloğu ekler.
 
@@ -96,16 +96,16 @@ bool push(void* ptr);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Ptr*|Boş listeye eklenecek bellek bloğuna işaretçi.|
+|*ptr*|Boş listeye eklenecek bellek bloğunun işaretçisi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**true** max sınıfının `full` işlevi **yanlış**dönerse doğru ; aksi takdirde, `push` işlev **yanlış**döndürür.
+**`true`**`full`Max sınıfının işlevi döndürürse **`false`** ; Aksi takdirde, `push` işlev döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Max `full` sınıfının işlevi **yanlış**dönerse, bu üye işlev listenin başına *ptr* tarafından işaret edilen bellek bloğunu ekler.
+`full`Max sınıfının işlevi döndürürse **`false`** , bu üye işlevi *PTR* tarafından işaret edilen bellek bloğunu listenin baş öğesine ekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<tahsisat>](../standard-library/allocators-header.md)
+[\<allocators>](../standard-library/allocators-header.md)

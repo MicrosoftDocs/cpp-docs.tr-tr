@@ -12,18 +12,18 @@ helpviewer_keywords:
 - stdext::sync_per_thread [C++], deallocate
 - stdext::sync_per_thread [C++], equals
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
-ms.openlocfilehash: 2976cdc6671750f0da439e9eb42053518e4af8d9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e7f5fb403ef020135e3dd3b85a1ad67cd435b6e8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376537"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224597"
 ---
 # <a name="sync_per_thread-class"></a>sync_per_thread Sınıfı
 
-Her iş parçacığı için ayrı bir önbellek nesnesi sağlayan bir [eşitleme filtresi](../standard-library/allocators-header.md) açıklar.
+Her iş parçacığı için ayrı bir önbellek nesnesi sağlayan bir [eşitleme filtresi](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Cache>
@@ -34,27 +34,27 @@ class sync_per_thread
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Önbellek*|Eşitleme filtresiyle ilişkili önbellek türü. Bu [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
+|*Önbellek*|Eşitleme filtresiyle ilişkili önbelleğin türü. Bu [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir iş parçacığına ayrılan bloklar başka bir iş parçacığından ayrılamasa da, kullanılan `sync_per_thread` ayırıcılar eşit olarak karşılaştırılabilir. Bu ayırıcılardan biri kullanırken, bir iş parçacığına ayrılan bellek blokları diğer iş parçacıkları tarafından görünür hale getirilmemelidir. Uygulamada bu, bu ayırıcılardan birini kullanan bir kapsayıcıya yalnızca tek bir iş parçacığı tarafından erişilmesi gerektiği anlamına gelir.
+`sync_per_thread`Bir iş parçacığında ayrılan blokların başka bir iş parçacığından serbest bırakılmasa bile, kullanan ayırıcılar eşit olarak karşılaştırılabilir. Bu ayırıcıların birini kullanırken, bir iş parçacığında ayrılan bellek bloklarından biri, diğer iş parçacıkları tarafından görünür yapılmamalıdır. Bu, bu ayırıcılardan birini kullanan bir kapsayıcının yalnızca tek bir iş parçacığı tarafından erişilmesi anlamına gelir.
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
-|[Ayırması](#deallocate)|Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.|
-|[equals](#equals)|Eşitlik için iki önbellek karşılaştırır.|
+|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
+|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<tahsisörler>
+**Üst bilgi:**\<allocators>
 
 **Ad alanı:** stdext
 
-## <a name="sync_per_threadallocate"></a><a name="allocate"></a>sync_per_thread::allocate
+## <a name="sync_per_threadallocate"></a><a name="allocate"></a>sync_per_thread:: ayır
 
 Bellek bloğunu ayırır.
 
@@ -66,15 +66,15 @@ void *allocate(std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sayısı*|Dizideki ayrılacak öğe sayısı.|
+|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, geçerli iş parçacığına `cache::allocate(count)` ait önbellek nesnesine yapılan bir çağrının sonucunu döndürür. Geçerli iş parçacığı için önbellek nesnesi ayrılmamışsa, önce bir önbellek ayırır.
+Üye işlevi, `cache::allocate(count)` geçerli iş parçacığına ait olan Cache nesnesindeki bir çağrının sonucunu döndürür. Geçerli iş parçacığı için bir önbellek nesnesi ayrılmışsa, önce bir tane ayırır.
 
-## <a name="sync_per_threaddeallocate"></a><a name="deallocate"></a>sync_per_thread::deallocate
+## <a name="sync_per_threaddeallocate"></a><a name="deallocate"></a>sync_per_thread::d eallocate
 
-Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.
+Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -84,16 +84,16 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
-|*Sayısı*|Depolamadan ayrılacak nesne sayısı.|
+|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
+|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, `deallocate` geçerli iş parçacığına ait önbellek nesnesini çağırır. Geçerli iş parçacığı için önbellek nesnesi ayrılmamışsa, önce bir önbellek ayırır.
+Üye işlevi, `deallocate` geçerli iş parçacığına ait olan Cache nesnesi üzerinde çağırır. Geçerli iş parçacığı için bir önbellek nesnesi ayrılmışsa, önce bir tane ayırır.
 
-## <a name="sync_per_threadequals"></a><a name="equals"></a>sync_per_thread::eşittir
+## <a name="sync_per_threadequals"></a><a name="equals"></a>sync_per_thread:: Equals
 
-Eşitlik için iki önbellek karşılaştırır.
+, Eşitlik için iki önbelleği karşılaştırır.
 
 ```cpp
 bool equals(const sync<Cache>& Other) const;
@@ -104,14 +104,14 @@ bool equals(const sync<Cache>& Other) const;
 |Parametre|Açıklama|
 |---------------|-----------------|
 |*Önbellek*|Eşitleme filtresinin önbellek nesnesi.|
-|*Diğer*|Eşitlik için karşılaştırılacak önbellek nesnesi.|
+|*Diğer*|Eşitlik için Karşılaştırılacak önbellek nesnesi.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-bu nesne için veya geçerli iş parçacığındaki *Diğer* için önbellek nesnesi ayrılmamışsa **false.** Aksi takdirde, iki önbellek `operator==` nesnelerine uygulama sonucunu döndürür.
+**`false`** Bu nesne için veya geçerli iş parçacığında *başka* bir önbellek nesnesi ayrılmışsa. Aksi takdirde, `operator==` iki önbellek nesnesine uygulamanın sonucunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<tahsisat>](../standard-library/allocators-header.md)
+[\<allocators>](../standard-library/allocators-header.md)

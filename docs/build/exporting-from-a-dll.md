@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [C++], exporting
 - exports table [C++]
 ms.assetid: a08f86c4-5996-460b-ae54-da2b764045f0
-ms.openlocfilehash: 6bdf5b86724ae07aa073a9feb1cc4d5723bc6e6b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6a8555561fcf935b3968bd6cb6d19ec42a78563
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196748"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224025"
 ---
 # <a name="exporting-from-a-dll"></a>DLL'den Dışarı Aktarma
 
@@ -25,7 +25,7 @@ Bir DLL dosyası bir. exe dosyasına benzer bir şekilde, önemli bir farklılı
 
 - DLL oluştururken bir modül tanımı (. def) dosyası oluşturun ve. def dosyasını kullanın. [DLL 'inizdeki işlevleri ad yerine sıraya göre dışarı aktarmak](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)istiyorsanız bu yaklaşımı kullanın.
 
-- İşlevin tanımında **__declspec (dllexport)** anahtar sözcüğünü kullanın.
+- İşlevin tanımındaki anahtar sözcüğünü kullanın **`__declspec(dllexport)`** .
 
 İki yöntemden birini kullanarak işlevleri dışarı aktarırken [__stdcall](../cpp/stdcall.md) çağırma kuralını kullandığınızdan emin olun.
 
@@ -59,4 +59,4 @@ Bir DLL dosyası bir. exe dosyasına benzer bir şekilde, önemli bir farklılı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri ve Dışarı Aktarma](importing-and-exporting.md)
+[İçeri ve dışarı aktarma](importing-and-exporting.md)

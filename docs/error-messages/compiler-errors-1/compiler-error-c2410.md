@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2410
 ms.assetid: b69b2de1-56f3-4ebc-8913-04ac57ffe8a1
-ms.openlocfilehash: e4d30ff0fbca7428fb1dcf252bcad50bd53488d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7e6e07fb90827fb28fcdde2f723a36c4529a1868
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205733"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225494"
 ---
 # <a name="compiler-error-c2410"></a>Derleyici hatası C2410
 
@@ -19,4 +19,4 @@ ms.locfileid: "80205733"
 
 Tanımlayıcı, bu bağlamda birden fazla yapının veya birleşimin üyesi.
 
-Hataya neden olan işlenen üzerinde bir yapı veya birleşim belirleyicisi kullanın. Bir yapı veya birleşim Belirleyicisi, `struct` veya `union` türünde bir tanıtıcıdır (`typedef` ad veya başvurulan yapı veya birleşim ile aynı türde bir değişken). Belirtici, işleneni kullanmak için ilk üye seçim işlecinin (.) sol işleneni olmalıdır.
+Hataya neden olan işlenen üzerinde bir yapı veya birleşim belirleyicisi kullanın. Bir yapı veya birleşim Belirleyicisi, türü **`struct`** veya **`union`** ( **`typedef`** başvurulan yapı veya birleşim ile aynı türde bir değişken) türünde bir tanıtıcıdır. Belirtici, işleneni kullanmak için ilk üye seçim işlecinin (.) sol işleneni olmalıdır.

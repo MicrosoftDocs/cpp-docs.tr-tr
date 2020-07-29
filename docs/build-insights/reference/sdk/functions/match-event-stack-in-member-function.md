@@ -1,6 +1,6 @@
 ---
-title: MatchEventStackInmemberFonksiyonu
-description: C++ Build Insights SDK MatchEventStackInMemberFunction fonksiyon başvurusu.
+title: MatchEventStackInMemberFunction
+description: C++ Build Insights SDK 'Sı MatchEventStackInMemberFunction işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 28842a02e7edc2e00266d8c7941798f4ce714ded
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: db02ce5656bf8970ead7b49d5580f7d81bebb1b2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323879"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224142"
 ---
-# <a name="matcheventstackinmemberfunction"></a>MatchEventStackInmemberFonksiyonu
+# <a name="matcheventstackinmemberfunction"></a>MatchEventStackInMemberFunction
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-İşlev, `MatchEventStackInMemberFunction` bir üye işlevin parametre listesiyle açıklanan belirli bir olay hiyerarşisi ile olay yığınını eşleştirmek için kullanılır. Eşleşen hiyerarşiler daha fazla işleme için üye işlevine iletilir. Olaylar, olay yığınları ve hiyerarşiler hakkında daha fazla bilgi edinmek için [olay tablosuna](../event-table.md)bakın.
+İşlevi, bir `MatchEventStackInMemberFunction` üye işlevinin parametre listesi tarafından tanımlanan belirli bir olay hiyerarşisine karşı bir olay yığınını eşleştirmek için kullanılır. Eşleşen hiyerarşiler, daha fazla işleme için üye işlevine iletilir. Olaylar, olay yığınları ve Hiyerarşiler hakkında daha fazla bilgi için bkz. [olay tablosu](../event-table.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -82,41 +82,41 @@ bool MatchEventStackInMemberFunction(
 ### <a name="parameters"></a>Parametreler
 
 *TInterface*\
-Üye işlevi içeren tür.
+Üye işlevini içeren tür.
 
-*Geri Dönüş*\
-Üye işlevin dönüş türü.
+*TReturn*\
+Üye işlevinin dönüş türü.
 
-*T1*, ..., *T10*\
-Eşleşmek için olay hiyerarşisini açıklayan türleri.
+*T1*,..., *T10*\
+Eşleştirilecek olay hiyerarşisini tanımlayan türler.
 
 *TExtraParams*\
-Üye işlev tarafından kabul edilen ek parametrelerin türleri ve olay hiyerarşisi türleri.
+Üye işlevi tarafından kabul edilen ek parametrelerin türleri ve olay hiyerarşisi türleri.
 
 *TExtraArgs*\
-Geçirilen ek bağımsız değişkenlerin `MatchEventStackInMemberFunction`türleri.
+Geçirilen ek bağımsız değişkenlerin türleri `MatchEventStackInMemberFunction` .
 
 *eventStack*\
-T1 ile *T10* arasında açıklanan olay türü *T10*hiyerarşisi ile eşleşecek olay yığını.
+*T1* tarafından *T10*aracılığıyla tanımlanan olay türü hiyerarşisine göre eşleştirilecek olay yığını.
 
 *objectPtr*\
-*Üye Func'ın* çağrıldığı bir nesneye işaretçi.
+*Memberfunc* 'ın çağrıldığı nesne için bir işaretçi.
 
-*üyeFunc*\
-Eşleşmek için olay türü hiyerarşisini açıklayan üye işlev.
+*memberFunc*\
+Eşleştirilecek olay türü hiyerarşisini açıklayan üye işlevi.
 
 *extraArgs*\
-Olay türü hiyerarşi parametreleri ile birlikte *üyeFunc* mükemmel iletilir olsun bağımsız değişkenler.
+Mükemmel şekilde olan bağımsız değişkenler, olay türü hiyerarşisi parametreleriyle birlikte *Memberfunc* 'a iletilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleştirme başarılı veya **yanlış** başka bir şekilde **doğru** bir **bool** değeri.
+**`bool`** **`true`** Eşleşmesinin başarılı olması veya **`false`** başka türlü bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*eventStack'teki* son olay her zaman maç için olay türü hiyerarşisindeki son girişle eşleşir. Olay türü hiyerarşisindeki diğer tüm türler, aynı sırada olmaları koşuluyla, son uçağı dışında *eventStack'* teki herhangi bir konuma uYağabilir.
+*Eventstack* 'teki son olay her zaman eşleşecek şekilde olay türü hiyerarşisinde son girişle eşleştirilir. Olay türü hiyerarşisindeki diğer tüm türler, en son dışında, aynı sırada olmaları şartıyla *Eventstack* 'teki herhangi bir konumla eşleştirebilir.
 
-*T1* ile *T10* parametreleri için kullanılacak olay *türleri, yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için [olay tablosuna](../event-table.md)bakın.
+*T1* aracılığıyla *T10* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 

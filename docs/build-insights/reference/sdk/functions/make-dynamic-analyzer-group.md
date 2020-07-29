@@ -1,6 +1,6 @@
 ---
 title: MakeDynamicAnalyzerGroup
-description: C++ Build Insights SDK MakeDynamicAnalyzerGroup fonksiyon başvurusu.
+description: C++ Build Insights SDK Makedynamicanaliz Zergroup işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 148eeea41f29ac6dd75653feed7f3f3f8c301911
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c4c244066b41837a8dd95b44bab2b096134ed5d4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323969"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224207"
 ---
 # <a name="makedynamicanalyzergroup"></a>MakeDynamicAnalyzerGroup
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-İşlev `MakeDynamicAnalyzerGroup` dinamik bir çözümleyici grubu oluşturmak için kullanılır. Bir çözümleyici grubunun üyeleri, izlemedeki tüm olaylar analiz edilene kadar olayları soldan sağa tektek alır.
+`MakeDynamicAnalyzerGroup`İşlevi bir dinamik çözümleyici grubu oluşturmak için kullanılır. Bir çözümleyici grubunun üyeleri, bir izleme içindeki tüm olaylar çözümlenene kadar olayları bir veya soldan sağa doğru bir şekilde alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 auto MakeDynamicAnalyzerGroup(std::vector<IAnalyzer*> analyzers);
@@ -39,17 +39,17 @@ auto MakeDynamicAnalyzerGroup(std::vector<std::unique_ptr<IAnalyzer>> analyzers)
 
 ### <a name="parameters"></a>Parametreler
 
-*Analizörleri*\
-Dinamik çözümleyici grubuna dahil edilen [IAnalyzer](../other-types/ianalyzer-class.md) işaretçilerinden oluşan bir vektör. Bu işaretçiler ham `std::unique_ptr`veya `std::shared_ptr`.
+*Çözümleyicileri*\
+Dinamik çözümleyici grubuna eklenen bir [ıanalyzer](../other-types/ianalyzer-class.md) işaretçileri vektörü. Bu işaretçiler ham, veya olabilir `std::unique_ptr` `std::shared_ptr` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dinamik bir analizci grubu. İade değerini yakalamak için **otomatik** anahtar sözcüğü kullanın.
+Dinamik çözümleyici grubu. **`auto`** Dönüş değerini yakalamak için anahtar sözcüğünü kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Statik çözümleyici gruplarının aksine, dinamik çözümleyici grubunun üyelerinin derleme zamanında bilinmesi gerekmez. Program girişine göre çalışma zamanında çözümleyici grup üyelerini seçebilir veya derleme zamanında bilinmeyen diğer değerleri temel alabilirsiniz. Statik çözümleyici gruplarının aksine, dinamik çözümleyici grubundaki [IAnalyzer](../other-types/ianalyzer-class.md) işaretçileri çok biçimli davranışa sahiptir ve sanal işlev çağrıları doğru bir şekilde gönderilir. Bu esneklik, muhtemelen daha yavaş bir olay işleme süresi pahasına gelir. Tüm çözümleyici grup üyeleri derleme zamanında biliniyorsa ve çok biçimli davranışa ihtiyacınız yoksa statik çözümleyici grubu kullanmayı düşünün. Statik çözümleyici grubu kullanmak için Bunun yerine [MakeStaticAnalyzerGroup'u](make-static-analyzer-group.md) arayın.
+Statik çözümleyici gruplarının aksine, dinamik çözümleyici grubunun üyelerinin derleme zamanında bilinmesine gerek yoktur. Program girdisine göre veya derleme zamanında bilinmeyen diğer değerlere bağlı olarak çalışma zamanında çözümleyici grup üyelerini seçebilirsiniz. Statik çözümleyici gruplarından farklı olarak, [`IAnalyzer`](../other-types/ianalyzer-class.md) dinamik çözümleyici grubundaki işaretçiler polimorfik davranışa sahiptir ve sanal işlev çağrıları doğru şekilde dağıtılır. Bu esneklik, büyük olasılıkla daha yavaş bir olay işleme süresinin maliyetiyle gelir. Tüm çözümleyici grubu üyeleri derleme zamanında bilindiğinde ve Polimorfik davranışa ihtiyacınız yoksa statik çözümleyici grubunu kullanmayı düşünün. Statik çözümleyici grubunu kullanmak için [`MakeStaticAnalyzerGroup`](make-static-analyzer-group.md) bunun yerine çağırın.
 
-Dinamik bir çözümleyici grubu statik bir çözümleyici grubu içinde kapsüllenebilir. Adresini [MakeStaticAnalyzerGroup'a](make-static-analyzer-group.md)vererek yapılır. Dinamik çözümleyici gruplarını yalnızca statik çözümleyici gruplarını kabul eden [Analyze](analyze.md)gibi işlevlere geçirmek için bu tekniği kullanın.
+Dinamik çözümleyici grubu statik çözümleyici grubu içinde kapsüllenebilir. Adresi adresine geçirerek yapılır [`MakeStaticAnalyzerGroup`](make-static-analyzer-group.md) . Dinamik çözümleyici gruplarını [`Analyze`](analyze.md) yalnızca statik çözümleyici gruplarını kabul eden gibi işlevlere geçirmek için bu tekniği kullanın.
 
 ::: moniker-end

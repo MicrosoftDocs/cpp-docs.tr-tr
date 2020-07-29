@@ -1,5 +1,5 @@
 ---
-title: CComObjectRoot Class
+title: CComObjectRoot sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectRoot
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectRoot class
 ms.assetid: f8797c38-6e73-4f67-85c2-71654cffa8eb
-ms.openlocfilehash: 9a9ffa1813fb15297d209894050b6bcce6802df2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98868e67fd14899a75f86837034ba540d22039e3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62259371"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224246"
 ---
-# <a name="ccomobjectroot-class"></a>CComObjectRoot Class
+# <a name="ccomobjectroot-class"></a>CComObjectRoot sınıfı
 
-Bu tür tanımı, [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) iş parçacığı modeli sunucusunun varsayılan şablonlaştırılmış.
+[CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) Bu typedef, sunucunun varsayılan iş parçacığı modelinde şablonsaldır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,18 +26,18 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComObjectRoot` olan bir `typedef` , [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) iş parçacığı modeli sunucusunun varsayılan şablonlaştırılmış. Bu nedenle [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) ya da başvuru [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md).
+`CComObjectRoot`, **`typedef`** sunucunun varsayılan iş parçacığı modelinde [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) şablonsaldır. Böylece [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) , [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md) veya [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md)'e başvurur.
 
-`CComObjectRootEx` toplanmayan ve toplanan nesneler için nesne başvuru sayısı management işler. Nesnenizin değil toplanmakta olan ve nesnenizin toplanır, için dış bilinmeyen işaretçi tutan nesne başvuru sayısını tutar. Toplanan nesneler için `CComObjectRootEx` yöntemleri, iç nesneyi oluşturmak için hatasını işlemek için kullanılabilir ve iç nesne dış nesne iç arabirimleri yayımlandığında silinmeye karşı koru için silinir.
+`CComObjectRootEx`hem toplanmış hem de toplanmış nesneler için nesne başvuru sayısı yönetimini işler. Nesneniz toplanmıyor ise nesne başvuru sayısını tutar ve nesneniz toplanırsa bu, bilinmeyen dış öğesine işaretçiyi barındırır. Toplanmış nesneler için `CComObjectRootEx` Yöntemler, oluşturulacak iç nesnenin başarısızlığını işlemek ve iç arabirimler serbest bırakıldığında ya da iç nesne silindiğinde, dış nesne silinmeye karşı korumak için kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
-[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
-[CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
-[CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComObject sınıfı](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

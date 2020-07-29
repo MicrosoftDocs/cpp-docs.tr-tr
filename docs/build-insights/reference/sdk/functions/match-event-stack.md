@@ -1,6 +1,6 @@
 ---
 title: MatchEventStack
-description: C++ Build Insights SDK MatchEventStack fonksiyon başvurusu.
+description: C++ Build Insights SDK 'Sı MatchEventStack işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: a223d420e8c48667fbd1c6569f02d0486f597b5e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ae476c402c3ea0cad558ce41a979b4233e0f1dd3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323868"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224129"
 ---
 # <a name="matcheventstack"></a>MatchEventStack
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-İşlev, `MatchEventStack` olay yığınını belirli bir olay hiyerarşisi ile eşleştirmek için kullanılır. Eşleşen hiyerarşiler daha fazla işleme için bir işleyiciye iletilir. Olaylar, olay yığınları ve hiyerarşiler hakkında daha fazla bilgi edinmek için [olay tablosuna](../event-table.md)bakın.
+`MatchEventStack`İşlevi, bir olay yığınını belirli bir olay hiyerarşisine göre eşleştirmek için kullanılır. Eşleşen hiyerarşiler daha fazla işleme için bir işleyiciye iletilir. Olaylar, olay yığınları ve Hiyerarşiler hakkında daha fazla bilgi için bkz. [olay tablosu](../event-table.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -44,35 +44,35 @@ bool MatchEventStack(
 ### <a name="parameters"></a>Parametreler
 
 *TEvent*\
-Olay yığınında eşleşecek en büyük ebeveynin türü.
+Olay yığınında eşleştirilecek Eldest üst öğesinin türü.
 
 *TEvents*\
 Olay yığınında eşleştirmek istediğiniz kalan türler.
 
-*TCallable*\
-`operator()`Destekleyen bir tür. Hangi bağımsız değişkenlerin bu işleişle geçirildiği hakkında daha fazla bilgi için *çağrılabilir* parametre açıklamasına bakın.
+*# Çağrılabilir*\
+Tarafından desteklenen bir tür `operator()` . Hangi bağımsız değişkenlerin bu işlece geçirildiği hakkında daha fazla bilgi için bkz. *çağrılabilir* parametre açıklaması.
 
 *TExtraArgs*\
-Ek bağımsız değişken türleri' `MatchEventStack`ne geçti.
+Öğesine geçirilen fazladan bağımsız değişkenlerin türleri `MatchEventStack` .
 
 *eventStack*\
-*TEvent* ve *TEvents*tarafından açıklanan olay türü hiyerarşisi ile eşleşecek olay yığını.
+*Tevent* ve *TEvents*tarafından tanımlanan olay türü hiyerarşisine göre eşleştirilecek olay yığını.
 
-*Callable*\
-Olay yığınını *TEvent* ve *TEvents* `MatchEventStack` tarafından açıklanan olay türü hiyerarşisi ile başarıyla eşleştirildikten *sonra, çağrılabilir*çağırır. Olay hiyerarşisinde her tür için *çağrılabilir* bir r değeri bağımsız değişkenine geçer. *ExtraArgs* parametre paketi *çağrılabilir*kalan parametreleri mükemmel iletilir.
+*çağrılabilir*\
+Olay yığınını, *tevent* ve *TEvents*tarafından tanımlanan olay türü hiyerarşisine başarıyla eşleştirdikten sonra `MatchEventStack` *çağrılabilir*çağırır. Olay hiyerarşisindeki her tür için *çağrılabilir* bir r-value bağımsız değişkenine geçirilir. *Extraargs* parametre paketi, kalan *çağrılabilir*parametrelerde kusursuz iletilir.
 
 *extraArgs*\
-Eşleşen olay türüyle birlikte *çağrılabilir* için mükemmel iletilen bağımsız değişkenler.
+Kusursuz şekilde iletilen bağımsız değişkenler, eşleşen olay türüyle birlikte *çağrılabilir* .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleştirme başarılı veya **yanlış** başka bir şekilde **doğru** bir **bool** değeri.
+**`bool`** **`true`** Eşleşmesinin başarılı olması veya **`false`** başka türlü bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*EventStack* son olay her zaman concatenated \[ *TEvent*son giriş karşı eşleşir , *TEvents ...* \] türü listesi. Diğer tüm *TEvent* ve *TEvents* girişleri, aynı sırada olmaları koşuluyla, son hariç *eventStack'teki* herhangi bir konumla eşleşebilir.
+*Eventstack* 'teki son olay her zaman birleştirilmiş \[ *tevent*, *TEvents...* Type listesindeki son girdiye göre eşleşir \] . Diğer tüm *tevent* ve *TEvents* girişleri, en son dışında, aynı sırada olmaları şartıyla *eventstack* 'teki herhangi bir konumla eşleşir.
 
-*TEvent* ve *TEvents* parametreleri için kullanılacak olay *türleri, yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için [olay tablosuna](../event-table.md)bakın.
+*Tevent* ve *TEvents* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 

@@ -7,35 +7,35 @@ helpviewer_keywords:
 - __asm keyword [C++], data members
 - structure types in __asm blocks
 ms.assetid: e99f5a28-0381-4090-8ece-6af8f2436a49
-ms.openlocfilehash: b4341f87226118906749dcdb18b9227e68be6a23
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8fbe855c2f5de96d81e6c8a27c4bfcee0864f12c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318086"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87193048"
 ---
 # <a name="accessing-c-or-c-data-in-__asm-blocks"></a>__asm Bloklarında C veya C++ Verilerine Erişme
 
 **Microsoft'a Özgü**
 
-Satır aralarının büyük kolaylığı, C veya C++ değişkenlerine ada göre başvurma yeteneğidir. Blok, `__asm` bloğun göründüğü kapsamda değişken adları da dahil olmak üzere tüm sembollere başvurabilir. Örneğin, C değişkeni `var` kapsam içindeyse, yönerge
+Satır içi derlemenin harika bir kolaylığı, C veya C++ değişkenlerini ada göre ifade edebilmesidir. Bir **`__asm`** blok, bloğun göründüğü kapsamda değişken adları dahil tüm simgelere başvurabilir. Örneğin, C değişkeni `var` kapsamdadır, yönerge
 
 ```cpp
 __asm mov eax, var
 ```
 
-değerini `var` EAX'ta saklar.
+değerini `var` EAX içinde depolar.
 
-Bir sınıf, yapı veya sendika üyesinin benzersiz `__asm` bir adı varsa, bir blok, dönem ( `typedef` **.**) işlecinden önce değişkeni veya adı belirtmeden yalnızca üye adını kullanarak bu ada başvurabilir. Ancak üye adı benzersiz değilse, dönem işlecinden `typedef` hemen önce bir değişken veya ad yerleştirmeniz gerekir. Örneğin, aşağıdaki örnekteki `same_name` yapı türleri üye adı olarak paylaş:.
+Bir sınıf, yapı veya birleşim üyesinin benzersiz bir adı varsa, bir blok, **`__asm`** **`typedef`** nokta (**.**) işlecinden önce değişkeni veya adı belirtmeden yalnızca üye adını kullanarak buna başvurabilir. Ancak üye adı benzersiz değilse, **`typedef`** nokta işlecinden hemen önce bir değişkeni veya adı yerleştirmeniz gerekir. Örneğin, aşağıdaki örnek paylaşımında bulunan yapı türleri `same_name` üye adı:.
 
-Değişkenleri türleri ile bildirirseniz
+Türler ile değişkenler bildirirseniz
 
 ```cpp
 struct first_type hal;
 struct second_type oat;
 ```
 
-üyeye `same_name` yapılan tüm başvurular değişken `same_name` adını kullanmalıdır, çünkü benzersiz değildir. Ancak üyenin `weasel` benzersiz bir adı vardır, bu nedenle yalnızca üye adını kullanarak bu adı başvurabilirsiniz:
+üyenin tüm başvuruları `same_name` değişken adını kullanmalıdır çünkü `same_name` benzersiz değil. Ancak üyenin `weasel` benzersiz bir adı vardır, bu yüzden yalnızca üye adını kullanarak buna başvurabilirsiniz:
 
 ```cpp
 // InlineAssembler_Accessing_C_asm_Blocks.cpp
@@ -68,12 +68,12 @@ int main()
 }
 ```
 
-Değişken adını atlayarak yalnızca bir kodlama kolaylığı olduğunu unutmayın. Değişken adı olup olmadığı aynı derleme yönergeleri oluşturulur.
+Değişken adını atlayarak yalnızca bir kodlama rahatlığını unutmayın. Aynı derleme yönergeleri, değişken adının mevcut olup olmadığına bakılmaksızın oluşturulur.
 
-C++'daki veri üyelerine erişim kısıtlamalarına bakılmaksızın erişebilirsiniz. Ancak, üye işlevleri arayamazsınız.
+Erişim kısıtlamalarına bakmaksızın C++ ' daki veri üyelerine erişebilirsiniz. Ancak, üye işlevleri çağrılamaz.
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>
+[__Asm bloklarında C veya C++ kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

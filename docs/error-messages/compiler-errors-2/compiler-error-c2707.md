@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2707
 ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
-ms.openlocfilehash: e29812563ef1d4d7f6612ea2516f2f6327e90e1b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: eaac568387138450577ead23f1470c37ad300335
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760445"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225429"
 ---
 # <a name="compiler-error-c2707"></a>Derleyici hatası C2707
 
@@ -19,11 +19,11 @@ ms.locfileid: "74760445"
 
 Yapılandırılmış özel durum işleme iç bilgileri belirli bağlamlarda geçersizdir:
 
-- özel durum filtresinin veya `__except` bloğunun dışında `_exception_code()`
+- `_exception_code()`özel durum filtresinin veya **`__except`** bloğunun dışında
 
-- özel durum filtresinin dışında `_exception_info()`
+- `_exception_info()`özel durum filtresinin dışında
 
-- `__finally` bloğunun dışında `_abnormal_termination()`
+- `_abnormal_termination()`bir **`__finally`** bloğun dışında
 
 Hatayı gidermek için özel durum işleme iç kapsamının uygun bağlamda yerleştirildiğinden emin olun.
 

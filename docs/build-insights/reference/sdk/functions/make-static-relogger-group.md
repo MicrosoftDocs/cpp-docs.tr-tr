@@ -1,6 +1,6 @@
 ---
 title: MakeStaticReloggerGroup
-description: C++ Build Insights SDK MakeStaticReloggerGroup fonksiyon başvurusu.
+description: C++ Build Insights SDK 'Sı MakeStaticReloggerGroup işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 75b638537cb8e0cdeeb5476a3f5277e8e90d9baf
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b74ee778ffafbcb4c292b4b36b309d5ff4d66c27
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323909"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224168"
 ---
 # <a name="makestaticreloggergroup"></a>MakeStaticReloggerGroup
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-İşlev, `MakeStaticReloggerGroup` [Relog](relog.md)gibi işlevlere geçirilebilen statik bir relogger grubu oluşturmak için kullanılır. Bir relogger grubunun üyeleri, bir izlemedeki tüm olaylar işlenene kadar olayları soldan sağa tektek alır.
+`MakeStaticReloggerGroup`İşlevi, [relog](relog.md)gibi işlevlere geçirilebilecek bir statik yeniden günlükçüsü grubu oluşturmak için kullanılır. Bir yeniden günlükçü grubunun üyeleri, bir izleme içindeki tüm olaylar işlenene kadar olayları birer birer soldan sağa alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename... TReloggerPtrs>
@@ -39,15 +39,15 @@ auto MakeStaticReloggerGroup(TReloggerPtrs... reloggers);
 *TReloggerPtrs*\
 Bu parametre her zaman çıkarılır.
 
-*reloggers*\
-Statik relogger grubuna dahil edilen Bir parametre [iRelogger](../other-types/irelogger-class.md) işaretçipaketi. Bu işaretçiler ham `std::unique_ptr`veya `std::shared_ptr`. [IAnalyzer](../other-types/ianalyzer-class.md) işaretçileri `IRelogger` de bir devralma ilişkisi nedeniyle işaretçiler olarak kabul edilir.
+*yeniden oturum defterleri*\
+[`IRelogger`](../other-types/irelogger-class.md)Statik yeniden günlükçüsü grubuna dahil edilen işaretçilerin parametre paketi. Bu işaretçiler ham, veya olabilir `std::unique_ptr` `std::shared_ptr` . [`IAnalyzer`](../other-types/ianalyzer-class.md)Ayrıca, `IRelogger` bir devralma ilişkisi nedeniyle işaretçiler de kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Statik bir relogger grubu. İade değerini yakalamak için **otomatik** anahtar sözcüğü kullanın.
+Statik yeniden günlükçüsü grubu. **`auto`** Dönüş değerini yakalamak için anahtar sözcüğünü kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dinamik relogger gruplarının aksine, statik relogger grubunun üyeleri derleme zamanında bilinmelidir. Ayrıca, statik bir relogger grubu çok biçimli davranış yok [IRelogger](../other-types/irelogger-class.md) işaretçileri içerir. Windows için Olay İzleme (ETW) izlemesini çözümlemek için statik bir `IRelogger` relogger grubu kullanırken, arabirime yapılan çağrılar her zaman relogger grup üyesi tarafından doğrudan işaret edilen nesneye gider. Bu esneklik kaybı, daha hızlı olay işleme süreleri olasılığıyla birlikte gelir. Bir relogger grubunun üyeleri derleme zamanında bilinmiyorsa veya işaretçilerinizde `IRelogger` polimorfik davranış gerektiriyorsanız, dinamik bir relogger grubu kullanmayı düşünün. Bunun yerine [MakeDynamicReloggerGroup'u](make-dynamic-relogger-group.md) arayarak dinamik bir relogger grubu kullanabilirsiniz.
+Dinamik yeniden günlükçü gruplarından farklı olarak, statik yeniden günlükçüsü grubunun üyeleri derleme zamanında bilinmelidir. Ayrıca, statik bir yeniden günlükçü grubu [`IRelogger`](../other-types/irelogger-class.md) polimorfik davranışa sahip olmayan işaretçiler içerir. Bir Windows için olay Izleme (ETW) izlemek için bir statik yeniden günlükçüsü grubu kullanırken, arabirime yapılan çağrılar `IRelogger` her zaman yeniden günlükçü grubu üyesi tarafından işaret edilen nesneye çözümlenir. Bu esneklik kaybı, daha hızlı olay işleme süreleriyle birlikte gelir. Bir yeniden günlükçü grubunun üyeleri derleme zamanında tanınamaz veya işaretçilerde polimorfik davranışa ihtiyaç duyuyorsanız `IRelogger` , dinamik bir yeniden günlükçüsü grubu kullanmayı düşünün. Bunun yerine çağırarak dinamik bir yeniden günlükçüsü grubu kullanabilirsiniz [`MakeDynamicReloggerGroup`](make-dynamic-relogger-group.md) .
 
 ::: moniker-end

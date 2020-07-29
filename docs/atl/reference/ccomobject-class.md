@@ -1,5 +1,5 @@
 ---
-title: CComObject Sınıfı
+title: CComObject sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComObject
@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComObject class
 ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0
-ms.openlocfilehash: de6ffb45fe5c6f73ab656d5c6185b70d9f5edd38
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 81246ad8bd6281d0b7578932cd431609a1ec4ac5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327638"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224259"
 ---
-# <a name="ccomobject-class"></a>CComObject Sınıfı
+# <a name="ccomobject-class"></a>CComObject sınıfı
 
-Bu sınıf, `IUnknown` birbirlmeyen bir nesne için uygular.
+Bu sınıf, `IUnknown` toplanmayan bir nesne için uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template<class Base>
@@ -33,31 +33,31 @@ class CComObject : public Base
 #### <a name="parameters"></a>Parametreler
 
 *Temel*<br/>
-CComObjectRoot veya [CComObjectRootEx'ten](../../atl/reference/ccomobjectrootex-class.md)türetilen sınıfınızın yanı sıra nesne üzerinde desteklemek istediğiniz diğer arabirimlerden de. [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)
+Sınıfınız, [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)öğesinden türetilir ve ayrıca, nesne üzerinde desteklemek istediğiniz diğer arabirimlerin yanı sıra.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CcomObject::ccomobject](#ccomobject)|Oluşturucu.|
-|[CcomObject::~ccomObject](#dtor)|Yıkıcı.|
+|[CComObject:: CComObject](#ccomobject)|Oluşturucu.|
+|[CComObject:: ~ CComObject](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CcomObject::Addref](#addref)|Nesne üzerinde başvuru sayısını artırımı.|
-|[CComObject::CreateInstance](#createinstance)|(Statik) Yeni `CComObject` bir nesne oluşturur.|
-|[CcomObject::QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi alır.|
-|[CcomObject::Sürüm](#release)|Başvuru sayısını nesneye ayarı eder.|
+|[CComObject:: AddRef](#addref)|Nesnedeki başvuru sayısını artırır.|
+|[CComObject:: CreateInstance](#createinstance)|Se Yeni bir `CComObject` nesne oluşturur.|
+|[CComObject:: QueryInterface](#queryinterface)|İstenen arabirim için bir işaretçi alır.|
+|[CComObject:: Release](#release)|Nesnedeki başvuru sayısını azaltır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComObject`biraraya olmayan bir nesne için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular. Ancak, çağırır `QueryInterface` `AddRef`, `Release` , ve `CComObjectRootEx`.
+`CComObject`toplanmayan bir nesne için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular. Bununla birlikte,, ve ' a yönelik çağrılar `QueryInterface` `AddRef` `Release` için atanır `CComObjectRootEx` .
 
-Kullanma `CComObject`hakkında daha fazla bilgi için, [ATL COM Nesnelerin](../../atl/fundamentals-of-atl-com-objects.md)makale temelleri bakın.
+Kullanma hakkında daha fazla bilgi için `CComObject` , [atl com nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -67,11 +67,11 @@ Kullanma `CComObject`hakkında daha fazla bilgi için, [ATL COM Nesnelerin](../.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="ccomobjectaddref"></a><a name="addref"></a>CcomObject::Addref
+## <a name="ccomobjectaddref"></a><a name="addref"></a>CComObject:: AddRef
 
-Nesne üzerinde başvuru sayısını artırımı.
+Nesnedeki başvuru sayısını artırır.
 
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -79,11 +79,11 @@ STDMETHOD_(ULONG, AddRef)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu işlev, nesneüzerinde yeni artışlı başvuru sayısını döndürür. Bu değer tanılama veya test için yararlı olabilir.
+Bu işlev, nesnedeki yeni artan başvuru sayısını döndürür. Bu değer tanılama veya test için yararlı olabilir.
 
-## <a name="ccomobjectccomobject"></a><a name="ccomobject"></a>CcomObject::ccomobject
+## <a name="ccomobjectccomobject"></a><a name="ccomobject"></a>CComObject:: CComObject
 
-Yapıcı, modül kilit sayısını artımlı.
+Oluşturucu modül kilit sayısını artırır.
 
 ```
 CComObject(void* = NULL);
@@ -92,17 +92,17 @@ CComObject(void* = NULL);
 ### <a name="parameters"></a>Parametreler
 
 <em>void\*</em><br/>
-[içinde] Bu adsız parametre kullanılmaz. Diğer `CComXXXObjectXXX` yapıcılarla simetri için var olur.
+'ndaki Bu adlandırılmamış parametre kullanılmıyor. Diğer oluşturucularla birlikte simetri için de mevcuttur `CComXXXObjectXXX` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı onu yok ediyor.
+Yıkıcı onu azaltır.
 
-Türetilmiş bir `CComObject`nesne **yeni** işleç kullanılarak başarıyla oluşturulursa, ilk başvuru sayısı 0'dır. Başvuru sayısını uygun değere (1) ayarlamak için [AddRef](#addref) işlevini arayın.
+Türetilmiş bir `CComObject` nesne işleci kullanılarak başarıyla oluşturulursa **`new`** , ilk başvuru sayısı 0 ' dır. Başvuru sayısını uygun değere (1) ayarlamak için [AddRef](#addref) işlevine bir çağrı yapın.
 
-## <a name="ccomobjectccomobject"></a><a name="dtor"></a>CcomObject::~ccomObject
+## <a name="ccomobjectccomobject"></a><a name="dtor"></a>CComObject:: ~ CComObject
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 CComObject();
@@ -110,11 +110,11 @@ CComObject();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları boşaltıyor, [FinalRelease'i](ccomobjectrootex-class.md#finalrelease)çağırır ve modül kilidi sayısını atar.
+Ayrılan tüm kaynakları serbest bırakır, [sonlandırmayı](ccomobjectrootex-class.md#finalrelease)çağırır ve modül kilit sayısını azaltır.
 
-## <a name="ccomobjectcreateinstance"></a><a name="createinstance"></a>CComObject::CreateInstance
+## <a name="ccomobjectcreateinstance"></a><a name="createinstance"></a>CComObject:: CreateInstance
 
-Bu statik işlev, [CoCreateInstance'ın](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)yükü olmadan yeni bir **CComObject<** `Base` **>** nesnesi oluşturmanıza olanak tanır.
+Bu statik işlev **CComObject<** `Base` **>** , [Cocreateınstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)'ın ek yükü olmadan yeni bir CComObject<nesnesi oluşturmanıza olanak sağlar.
 
 ```
 static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
@@ -122,8 +122,8 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*S*<br/>
-[çıkış] **CComObject<** `Base` **>** işaretçisine işaretçi. Başarısız `CreateInstance` olursa, *pp* NULL olarak ayarlanır.
+*Sy*<br/>
+dışı Bir **CComObject<** işaretçisine yönelik işaretçi `Base` **>** . `CreateInstance`Başarısız olursa, *PP* değeri null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -131,9 +131,9 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen nesnenin başvuru sayısı sıfırdır, bu nedenle hemen arayın `AddRef` ve `Release` ardından işi bittiğinde nesne işaretçisi üzerindeki başvuruyu serbest bırakır.
+Döndürülen nesnenin başvuru sayısı sıfır, bu yüzden hemen çağırın, `AddRef` sonra `Release` işlemi bitirdiğinizde nesne İşaretçisinde başvuruyu serbest bırakmak için kullanın.
 
-Nesneye doğrudan erişime ihtiyacınız yoksa, ancak yine de ek yükü olmadan `CoCreateInstance`yeni bir nesne oluşturmak istiyorsanız, [CComCoClass kullanın::CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) yerine.
+Nesneye doğrudan erişmeniz gerekmiyorsa ancak ek yükü olmadan yeni bir nesne oluşturmak istiyorsanız, `CoCreateInstance` bunun yerine [CComCoClass:: CreateInstance](../../atl/reference/ccomcoclass-class.md#createinstance) kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -141,7 +141,7 @@ Nesneye doğrudan erişime ihtiyacınız yoksa, ancak yine de ek yükü olmadan 
 
 [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]
 
-## <a name="ccomobjectqueryinterface"></a><a name="queryinterface"></a>CcomObject::QueryInterface
+## <a name="ccomobjectqueryinterface"></a><a name="queryinterface"></a>CComObject:: QueryInterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -153,22 +153,22 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*ııd*<br/>
-[içinde] İstenen arabirimin tanımlayıcısı.
+*'si*<br/>
+'ndaki İstenen arabirimin tanımlayıcısı.
 
-*ppvNesne*<br/>
-[çıkış] *iid*tarafından tanımlanan arabirim işaretçisine işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* NULL olarak ayarlanır.
+*ppvObject*<br/>
+dışı *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* null olarak ayarlanır.
 
-*S*<br/>
-[çıkış] Türüne göre tanımlanan arabirim `Q`işaretçisi için bir işaretçi . Nesne bu arabirimi desteklemiyorsa, *pp* NULL olarak ayarlanır.
+*Sy*<br/>
+dışı Tür tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi `Q` . Nesne bu arabirimi desteklemiyorsa, *PP* değeri null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart bir HRESULT değeri.
 
-## <a name="ccomobjectrelease"></a><a name="release"></a>CcomObject::Sürüm
+## <a name="ccomobjectrelease"></a><a name="release"></a>CComObject:: Release
 
-Başvuru sayısını nesneye ayarı eder.
+Nesnedeki başvuru sayısını azaltır.
 
 ```
 STDMETHOD_(ULONG, Release)();
@@ -176,12 +176,12 @@ STDMETHOD_(ULONG, Release)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu işlev, nesne üzerinde yeni verilen başvuru sayısını döndürür. Hata ayıklama oluştururda, iade değeri tanılama veya sınama için yararlı olabilir. Hata ayıklama yapılarında `Release` her zaman 0 döndürür.
+Bu işlev, nesnedeki yeni azaltma başvuru sayısını döndürür. Hata ayıklama yapılarında, dönüş değeri tanılama veya test için yararlı olabilir. Hata ayıklama olmayan derlemelerde, `Release` her zaman 0 döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CComAggObject Sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
-[CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
+[CComAggObject sınıfı](../../atl/reference/ccomaggobject-class.md)<br/>
+[CComPolyObject sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
 [DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
 [DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

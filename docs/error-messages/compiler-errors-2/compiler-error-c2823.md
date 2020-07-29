@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2823
 ms.assetid: 982b1b35-1a7c-456e-b711-f80cfe2d571e
-ms.openlocfilehash: ef07e1b542c4c3977f35de7ed9cd0f0a5358cedb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c277437bdc4622e7ae8a63eb9b0a553e0079bc02
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201961"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225390"
 ---
 # <a name="compiler-error-c2823"></a>Derleyici hatası C2823
 
 > TypeDef şablonu geçersiz
 
-`typedef` tanımlarında şablonlara izin verilmez.
+Tanımlarda şablonlara izin verilmez **`typedef`** .
 
 ## <a name="example"></a>Örnek
 

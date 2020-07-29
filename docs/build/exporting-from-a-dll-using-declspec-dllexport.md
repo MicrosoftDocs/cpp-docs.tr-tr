@@ -9,22 +9,22 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: 075962758773660085ae0b98b668c264524cc6aa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 77dc6dc14efe2a7ccf46c41477ed4fd6d1956856
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328590"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224038"
 ---
 # <a name="exporting-from-a-dll-using-__declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 
-**__Declspec (dllexport)** anahtar sözcüğünü kullanarak bir dll 'den verileri, işlevleri, sınıfları veya sınıf üye işlevlerini dışarı aktarabilirsiniz. **__declspec (dllexport)** , nesne dosyasına dışarı aktarma yönergesini ekler, böylece bir. def dosyası kullanmanıza gerek kalmaz.
+Anahtar sözcüğünü kullanarak bir DLL 'den verileri, işlevleri, sınıfları veya sınıf üye işlevlerini dışarı aktarabilirsiniz **`__declspec(dllexport)`** . **`__declspec(dllexport)`**. def dosyası kullanmanıza gerek kalmaması için, nesne dosyasına dışarı aktarma yönergesini ekler.
 
-Bu kolaylık, düzenlenmiş C++ işlev adlarını dışa aktarmaya çalışırken en belirgin şekilde görünür. Ad dekorasyonu için standart belirtim olmadığından, bir içe aktarılmış işlevin adı derleyici sürümleri arasında değişebilir. **__Declspec (dllexport)** KULLANıYORSANıZ, dll ve Dependent. exe dosyalarını yeniden derleme yalnızca adlandırma kuralı değişikliklerinin hesaba sağlanması gerekir.
+Bu kolaylık, düzenlenmiş C++ işlev adlarını dışa aktarmaya çalışırken en belirgin şekilde görünür. Ad dekorasyonu için standart belirtim olmadığından, bir içe aktarılmış işlevin adı derleyici sürümleri arasında değişebilir. Kullanırsanız **`__declspec(dllexport)`** , dll ve Dependent. exe dosyalarını yeniden derleme yalnızca adlandırma kuralı değişikliklerinin hesabında gereklidir.
 
-Sıra sayısı, NONAME ve PRIVATE gibi birçok dışarı aktarma yönergesi yalnızca bir. def dosyasında yapılabilir ve bu öznitelikleri. def dosyası olmadan belirtmenin bir yolu yoktur. Ancak, bir. def dosyası kullanmanın yanı sıra **__declspec (dllexport)** kullanmak yapı hatalarına neden olmaz.
+Sıra sayısı, NONAME ve PRIVATE gibi birçok dışarı aktarma yönergesi yalnızca bir. def dosyasında yapılabilir ve bu öznitelikleri. def dosyası olmadan belirtmenin bir yolu yoktur. Ancak, **`__declspec(dllexport)`** bir. def dosyası kullanmanın yanı sıra derleme hatalarına neden olmaz.
 
-İşlevleri dışarı aktarmak için, anahtar sözcük belirtilmişse **__declspec (dllexport)** anahtar sözcüğü çağırma kuralı anahtar sözcüğünün sol tarafında görünmelidir. Örneğin:
+İşlevleri dışarı aktarmak için anahtar sözcük **`__declspec(dllexport)`** belirtilmişse, çağırma kuralı anahtar sözcüğünün sol tarafında görünür olmalıdır. Örnek:
 
 ```
 __declspec(dllexport) void __cdecl Function1(void);
@@ -38,15 +38,15 @@ class __declspec(dllexport) CExampleExport : public CObject
 ```
 
 > [!NOTE]
-> `__declspec(dllexport)``__clrcall` çağırma kuralına sahip bir işleve uygulanamaz.
+> `__declspec(dllexport)`çağırma kuralına sahip bir işleve uygulanamaz `__clrcall` .
 
-DLL 'nizi oluştururken genellikle, dışarı aktardığınız işlev prototiplerini ve/veya sınıflarını içeren bir üst bilgi dosyası oluşturun ve üstbilgi dosyasındaki bildirimlere **__declspec (dllexport)** ekleyin. Kodunuzu daha okunabilir hale getirmek için **__declspec (dllexport)** için bir makro tanımlayın ve dışarı aktardığınız her sembol ile makroyu kullanın:
+DLL 'nizi oluştururken genellikle, dışarı aktardığınız işlev prototiplerini ve/veya sınıflarını içeren bir üst bilgi dosyası oluşturun ve **`__declspec(dllexport)`** üstbilgi dosyasındaki bildirimlere ekleyin. Kodunuzu daha okunabilir hale getirmek için bir makro tanımlayın **`__declspec(dllexport)`** ve dışarı aktardığınız her sembol ile makroyu kullanın:
 
 ```
 #define DllExport   __declspec( dllexport )
 ```
 
-**__declspec (dllexport)** , Işlev adlarını dll 'nin dışarı aktarma tablosunda depolar. Tablonun boyutunu iyileştirmek istiyorsanız, bkz. [BIR DLL 'Den Işlevleri ad yerine sıraya göre dışarı aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+**`__declspec(dllexport)`** işlev adlarını DLL 'nin dışarı aktarma tablosunda depolar. Tablonun boyutunu iyileştirmek istiyorsanız, bkz. [BIR DLL 'Den Işlevleri ad yerine sıraya göre dışarı aktarma](exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 

@@ -26,18 +26,18 @@ helpviewer_keywords:
 - std::lognormal_distribution [C++], param_type
 - std::lognormal_distribution [C++], param_type
 ms.assetid: f2d6a431-6c3a-4370-b12e-4adb4ddf6cc4
-ms.openlocfilehash: ae13505da411b9a9cc445560907d053afa4bf81d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bf6cb4a620243f35886835e996eb34bc7b0e6960
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351698"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224792"
 ---
 # <a name="lognormal_distribution-class"></a>lognormal_distribution Sınıfı
 
-Günlük normal dağılım oluşturur.
+Günlük normal dağıtımı oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class RealType = double>
@@ -69,30 +69,30 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *RealType*\
-Kayan nokta sonuç türü, varsayılan **olarak iki katına çıkar.** Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, Log Normal Distribution'a göre dağıtılan kullanıcı tarafından belirtilen integral türüdeğerlerini üreten veya hiçbiri sağlanmamışsa **çift** yazın bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, günlük normal dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[lognormal_distribution](#lognormal_distribution)|`lognormal_distribution::m`|`lognormal_distribution::param`|
 |`lognormal_distribution::operator()`|`lognormal_distribution::s`|[param_type](#param_type)|
 
-Özellik işlevleri `m()` `s()` ve saklanan dağıtım parametreleri *m* ve *s*değerleri , sırasıyla döndürün.
+Özelliği `m()` `s()` , ve sırasıyla depolanan dağıtım parametreleri için değerleri döndürür. *m* *s*
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-LogNormal dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesi [LogNormal Distribution'a](https://go.microsoft.com/fwlink/p/?linkid=400917)bakın.
+LogNormal dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [LogNormal dağıtımı](https://go.microsoft.com/fwlink/p/?linkid=400917).
 
 ## <a name="example"></a>Örnek
 
@@ -180,13 +180,13 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="lognormal_distributionlognormal_distribution"></a><a name="lognormal_distribution"></a>lognormal_distribution:lognormal_distribution
+## <a name="lognormal_distributionlognormal_distribution"></a><a name="lognormal_distribution"></a>lognormal_distribution:: lognormal_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit lognormal_distribution(RealType m = 0.0, RealType s = 1.0);
@@ -195,26 +195,26 @@ explicit lognormal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*M*\
-Dağıtım `m` parametresi.
+*m*\
+`m`Dağıtım parametresi.
 
-*S*\
-Dağıtım `s` parametresi.
+*malar*\
+`s`Dağıtım parametresi.
 
-*parm*\
-Dağılımı `param_type` oluşturmak için kullanılan yapı.
+*parametresi*\
+`param_type`Dağıtımı oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < s`
+**Önkoşul:**`0.0 < s`
 
-İlk oluşturucu, `m` depolanan değeri *m* değerini tutan ve depolanan `s` değeri *s*değerini tutan bir nesne inşa eder.
+İlk Oluşturucu, saklı `m` değeri *k* değerini tutan ve saklı `s` değeri *s*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="lognormal_distributionparam_type"></a><a name="param_type"></a>lognormal_distribution::param_type
+## <a name="lognormal_distributionparam_type"></a><a name="param_type"></a>lognormal_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -230,21 +230,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*M*\
-Dağıtım `m` parametresi.
+*m*\
+`m`Dağıtım parametresi.
 
-*S*\
-Dağıtım `s` parametresi.
+*malar*\
+`s`Dağıtım parametresi.
 
-*Doğru*\
-Karşılaştırmak `param_type` için kullanılan yapı.
+*Right*\
+`param_type`Karşılaştırmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < s`
+**Önkoşul:**`0.0 < s`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

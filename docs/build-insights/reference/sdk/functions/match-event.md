@@ -1,6 +1,6 @@
 ---
-title: Maç Etkinliği
-description: C++ Build Insights SDK MatchEvent fonksiyon başvurusu.
+title: MatchEvent
+description: C++ Build Insights SDK 'Sı MatchEvent işlevi başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 0c60653641c676716bcdd60865433773da79325f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8ec2c6bfcacf28998058dc66b5f363fbf1ea5d70
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323865"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224116"
 ---
-# <a name="matchevent"></a>Maç Etkinliği
+# <a name="matchevent"></a>MatchEvent
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-İşlev, `MatchEvent` bir olayı olay türleri listesiyle eşleştirmek için kullanılır. Olay listedeki bir türle eşleşiyorsa, daha fazla işlem için bir işleyiciye iletilir.
+`MatchEvent`İşlevi bir olayı olay türleri listesiyle eşleştirmek için kullanılır. Olay listedeki bir türle eşleşiyorsa, daha fazla işleme için bir işleyiciye iletilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -44,33 +44,33 @@ bool MatchEvent(
 ### <a name="parameters"></a>Parametreler
 
 *TEvent*\
-Eşleştirmek istediğiniz ilk etkinlik türü.
+Eşleştirmek istediğiniz ilk olay türü.
 
 *TEvents*\
 Eşleştirmek istediğiniz kalan olay türleri.
 
-*TCallable*\
-`operator()`Destekleyen bir tür. Hangi bağımsız değişkenlerin bu işleişle geçirildiği hakkında daha fazla bilgi için *çağrılabilir* parametre açıklamasına bakın.
+*# Çağrılabilir*\
+Tarafından desteklenen bir tür `operator()` . Hangi bağımsız değişkenlerin bu işlece geçirildiği hakkında daha fazla bilgi için bkz. *çağrılabilir* parametre açıklaması.
 
 *TExtraArgs*\
-Geçirilen ek bağımsız değişkenlerin `MatchEvent`türleri.
+Geçirilen ek bağımsız değişkenlerin türleri `MatchEvent` .
 
-*Olay*\
-*Olay TEvent* ve *TEvents*tarafından açıklanan olay türleri karşı maç .
+*olay*\
+*Tevent* ve *TEvents*tarafından tanımlanan olay türleriyle eşleşecek olay.
 
-*Callable*\
-`MatchEvent`etkinliği *TEvent* ve *TEvents*tarafından açıklanan olay türlerinden herhangi biriyle başarıyla eşleştirdikten sonra *çağrılabilir* çağırır. *Çağrılabilir'e* geçirilen ilk bağımsız değişken, eşleşen olay türünün r değeridir. *ExtraArgs* parametre paketi *çağrılabilir*kalan parametreleri mükemmel iletilir.  
+*çağrılabilir*\
+`MatchEvent`olay, *tevent* ve *TEvents*tarafından tanımlanan herhangi bir olay türüyle başarılı bir şekilde eşleştirdikten sonra *çağrılabilir* çağırır. *Çağrılabilir* öğesine geçirilen ilk bağımsız değişken, eşleşen olay türünün bir r değeridir. *Extraargs* parametre paketi, kalan *çağrılabilir*parametrelerde kusursuz iletilir.  
 
 *extraArgs*\
-Eşleşen olay türüyle birlikte *çağrılabilir* için mükemmel iletilen bağımsız değişkenler.
+Kusursuz şekilde iletilen bağımsız değişkenler, eşleşen olay türüyle birlikte *çağrılabilir* .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleştirme başarılı **veya** **yanlış** başka bir şekilde doğru bir **bool** değeri.
+**`bool`** **`true`** Eşleşmesinin başarılı olduğu veya **`false`** başka türlü bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*TEvent* ve *TEvents* parametreleri için kullanılacak olay *türleri, yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için [olay tablosuna](../event-table.md)bakın.
+*Tevent* ve *TEvents* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 

@@ -21,18 +21,18 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: d3aaedf616bf50e18e21b465727f10190fd127b2
-ms.sourcegitcommit: ac5e5edd3e4f31d5dc7df48316cb7649b3f4a41f
+ms.openlocfilehash: 771a2973e0254194d99ddfd46ca7df7d6cc8e5a4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86872393"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224831"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
 Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class locale;
@@ -161,7 +161,7 @@ Sonraki eklemeler için sayısal biçimlendirme kuralları, `cout` genel yerel a
 
 |||
 |-|-|
-|[Klasik](#classic)|Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.|
+|[klasik](#classic)|Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.|
 |[Genel](#global)|Varsayılan programın yerel ayarını sıfırlar.|
 
 ### <a name="operators"></a>İşleçler
@@ -204,7 +204,7 @@ static const int none = 0;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bir bit maskesi türünün bir grubunu bir grup yerel ayarında temsil eden veya ilgili C yerel ayar kategorilerinden herhangi birini temsil etmek için kullanılabilen bir **int** türü için bir eş anlamlı. Öğeleri şunlardır:
+Tür, bir **`int`** bit maskesi türünün bir grubunu bir grup yerel ayarında temsil eden veya Ilgili C yerel ayar kategorilerinin herhangi birini temsil etmek için kullanılabilen bir türün eş anlamlısıdır. Öğeleri şunlardır:
 
 - `collate`, C kategorisine karşılık gelen LC_COLLATE
 
@@ -574,7 +574,7 @@ Eşitsizlik için test edilecek yerel ayarlardan biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerel ayar aynı yerel ayarın kopyası değilse, **true** olan bir Boolean değeri. Yerel ayarların aynı yerel ayar kopyaları olması durumunda bu **yanlış** olur.
+**`true`** Yerel ayarlarda aynı yerel ayarın kopyası yoksa bir Boole değeri. Bu **`false`** , yerel ayarların aynı yerel ayarın kopyaları olması durumunda olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -641,7 +641,7 @@ Karşılaştırılacak ikinci dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- `true`*sol* olarak lexıse, *yoksa, tersi*durumda `false` .
+- **`true`***sol* olarak lexıse, *yoksa, tersi*durumda **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -701,7 +701,7 @@ Eşitlik için test edilecek yerel ayarlardan biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerel ayarların aynı yerel ayar kopyaları olması durumunda **doğru** olan bir Boole değeri. Yerel ayarlar aynı yerel ayarın kopyası değilse, bu **false 'tur** .
+**`true`** Yerel ayarların aynı yerel ayar kopyaları olması durumunda olan bir Boole değeri. **`false`** Yerel ayarların aynı yerel ayarın kopyası yoksa, bu olur.
 
 ### <a name="remarks"></a>Açıklamalar
 

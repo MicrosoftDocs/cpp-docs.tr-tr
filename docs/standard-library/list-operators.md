@@ -1,5 +1,5 @@
 ---
-title: '&lt;List&gt; işleçleri'
+title: '&lt;liste &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - list/std::operator!=
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (list)
 - std::operator&lt;= (list)
 - std::operator== (list)
-ms.openlocfilehash: 7b0b7540c1b9a55140405a55e8e034f9c6ec646c
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 8648258f17bff577ba1c0dde5016f5f284b82e25
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420045"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224844"
 ---
-# <a name="ltlistgt-operators"></a>&lt;List&gt; işleçleri
+# <a name="ltlistgt-operators"></a>&lt;liste &gt; işleçleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -37,15 +37,15 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-listeler eşitse **true** ; listeler eşitse **false** .
+**`true`** listeler eşitse; **`false`** listeler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -76,7 +76,7 @@ Lists not equal.
 */
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
 İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden küçük olup olmadığını sınar.
 
@@ -88,15 +88,15 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeye eşit ancak bundan küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeye eşit ancak ondan küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -131,7 +131,7 @@ List c1 is less than list c2.
 */
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
 İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -143,15 +143,15 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden daha küçükse veya eşitse **doğru** . Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki liste işlecin sağ tarafındaki listeden daha küçükse veya eşitse, Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -186,7 +186,7 @@ List c1 is less than or equal to list c2.
 */
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -198,15 +198,15 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeye eşitse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeye eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -237,7 +237,7 @@ The lists are equal.
 */
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
 İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesinden büyük olup olmadığını sınar.
 
@@ -249,15 +249,15 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden büyükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki liste, işlecin sağ tarafındaki listeden büyükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -292,7 +292,7 @@ List c1 is greater than list c2.
 */
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
 İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -304,15 +304,15 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki liste işlecin sağ tarafındaki listeden büyükse veya buna eşitse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki liste işlecin sağ tarafındaki listeden büyükse veya buna eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 

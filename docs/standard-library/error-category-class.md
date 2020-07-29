@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-ms.openlocfilehash: 136320ba3be36ec20fc08e0d83b1ce3274ed08ff
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: ced6046b93a8d5140118e1e9de848df13a8c29c4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737567"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224883"
 ---
 # <a name="error_category-class"></a>error_category Sınıfı
 
@@ -113,7 +113,7 @@ Karşılaştırılacak [error_code](../standard-library/error-code-class.md) nes
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Kategori ve değer eşitse **true** ; Aksi takdirde, **false**.
+**`true`** Kategori ve değer eşitse; Aksi takdirde, **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -179,7 +179,7 @@ Eşitlik için sınanacak nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-nesneler eşitse **true** ; nesneler eşitse **false** .
+**`true`** nesneler eşitse; **`false`** nesneler eşitse.
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -200,7 +200,7 @@ Eşitsizlik için test edilecek nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**true** `error_category` nesne sağa geçirilen nesneye eşit değilse true, `error_category` Aksi takdirde **false**. *right*
+**`true`**`error_category`nesne `error_category` *sağa*geçirilen nesneye eşit değilse, tersi durumda **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -221,7 +221,7 @@ bool operator<(const error_category& right) const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**true** `error_category` nesne `error_category` karşılaştırma için geçirilen nesneden küçükse true; Aksi takdirde, **false**.
+**`true`**`error_category`nesne `error_category` karşılaştırma için geçirilen nesneden küçükse; Aksi takdirde, **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -243,4 +243,4 @@ typedef int value_type;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu tür tanımı **int**için bir eş anlamlı.
+Bu tür tanımı için bir eş anlamlı **`int`** .

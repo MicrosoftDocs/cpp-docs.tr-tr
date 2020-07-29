@@ -1,6 +1,6 @@
 ---
-title: MatchEventInmemberFunction
-description: C++ Build Insights SDK MatchEventInMemberFunction fonksiyon başvurusu.
+title: MatchEventInMemberFunction
+description: C++ Build Insights SDK 'Sı MatchEventInMemberFunction işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 522630da16e3f4a1294316d88140f4bc25dca2c8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d3fdc015b0744cb5d0f98a1c9025343b93489ed9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323894"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87224155"
 ---
-# <a name="matcheventinmemberfunction"></a>MatchEventInmemberFunction
+# <a name="matcheventinmemberfunction"></a>MatchEventInMemberFunction
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-İşlev, `MatchEventInMemberFunction` bir olayı bir üye işlevin ilk parametresi tarafından açıklanan türle eşleştirmek için kullanılır. Eşleşen olay daha fazla işleme için üye işlevine iletilir.
+İşlevi, bir `MatchEventInMemberFunction` olayı bir üye işlevinin ilk parametresi tarafından tanımlanan türe karşı eşleştirmek için kullanılır. Eşleşen olay, daha fazla işleme için üye işlevine iletilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -46,39 +46,39 @@ bool MatchEventInMemberFunction(
 ### <a name="parameters"></a>Parametreler
 
 *TInterface*\
-Üye işlevi içeren tür.
+Üye işlevini içeren tür.
 
-*Geri Dönüş*\
-Üye işlevin dönüş türü.
+*TReturn*\
+Üye işlevinin dönüş türü.
 
 *TEvent*\
-Eşleşecek olayın türü.
+Eşleştirilecek etkinliğin türü.
 
 *TExtraParams*\
-Üye işlev tarafından kabul edilen ekstra parametrelerin türleri ve eşleşecek olay türü.
+Eşleştirilecek olay türü ile birlikte, üye işlevi tarafından kabul edilen ek parametrelerin türleri.
 
 *TExtraArgs*\
-Geçirilen ek bağımsız değişkenlerin `MatchEventInMemberFunction`türleri.
+Geçirilen ek bağımsız değişkenlerin türleri `MatchEventInMemberFunction` .
 
-*Olay*\
-*TEvent*tarafından açıklanan olay türüne göre eşleşecek olay.
+*olay*\
+*Tevent*tarafından tanımlanan olay türüyle eşleşecek olay.
 
 *objectPtr*\
-*Üye Func'ın* çağrıldığı bir nesneye işaretçi.
+*Memberfunc* 'ın çağrıldığı nesne için bir işaretçi.
 
-*üyeFunc*\
-Eşleşmek için olay türünü açıklayan üye işlev.
+*memberFunc*\
+Eşleştirilecek olay türünü açıklayan üye işlevi.
 
 *extraArgs*\
-Olay türü parametresi ile birlikte *üyeFunc* için mükemmel iletilir olsun argümanlar.
+Mükemmel şekilde olan bağımsız değişkenler, olay türü parametresiyle birlikte *Memberfunc* 'a iletilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eşleştirme başarılı veya **yanlış** başka bir şekilde **doğru** bir **bool** değeri.
+**`bool`** **`true`** Eşleşmesinin başarılı olması veya **`false`** başka türlü bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*TEvent* parametresi için kullanılacak olay *türü, yakalama sınıfları*listesinden seçilebilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için [olay tablosuna](../event-table.md)bakın.
+*Tevent* parametresi için kullanılacak olay türü, *yakalama sınıfları*listesinden seçilebilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 

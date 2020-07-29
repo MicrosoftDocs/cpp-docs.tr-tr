@@ -9,18 +9,18 @@ helpviewer_keywords:
 - inline assembly, calling functions
 - __asm keyword [C++], calling functions
 ms.assetid: f8a8d568-d175-4e23-9b24-36ef60a4cab3
-ms.openlocfilehash: 94bbfda3a5fd15885f3d8276d506541418a9489f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 73be1142747dc608d683e6bd847639b9df718a13
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169597"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87192632"
 ---
 # <a name="calling-c-functions-in-inline-assembly"></a>Satır İçi Derlemede C İşlevlerini Çağırma
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`__asm` bloğu C Kitaplığı yordamları dahil olmak üzere C işlevlerini çağırabilir. Aşağıdaki örnek `printf` kitaplığı yordamını çağırır:
+Bir **`__asm`** blok, c Kitaplığı yordamları dahil olmak üzere c işlevlerini çağırabilir. Aşağıdaki örnek, `printf` kitaplık yordamını çağırır:
 
 ```cpp
 // InlineAssembler_Calling_C_Functions_in_Inline_Assembly.cpp
@@ -56,10 +56,10 @@ int main( void )
 printf( format, hello, world );
 ```
 
-örnek, `world`, `hello`ve `format`işaretçileri bu sırayla iter ve sonra `printf`çağırır.
+örnek,, ve için `world` işaretçileri `hello` `format` Bu sırayla iter ve ardından çağırır `printf` .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>
+[Satır içi assembler](../../assembler/inline/inline-assembler.md)<br/>

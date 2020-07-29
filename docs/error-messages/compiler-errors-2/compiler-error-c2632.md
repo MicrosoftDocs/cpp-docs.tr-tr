@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2632
 ms.assetid: b15a6b1b-42d2-4e1b-8660-e6bfde61052d
-ms.openlocfilehash: f69d43bf50f5f13957e49d1e9ffa798a3db5a7b3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8ea3a106e8819bf067203f220ca51e17b87bfe46
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754699"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225468"
 ---
 # <a name="compiler-error-c2632"></a>Derleyici hatası C2632
 
@@ -26,7 +26,7 @@ Aşağıdaki örnek C2632 oluşturur:
 int float i;   // C2632
 ```
 
-Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak da oluşturulabilir. `bool` artık uygun bir tür. Önceki sürümlerde, `bool` bir typedef idi ve bu adla tanımlayıcılar oluşturabilirsiniz.
+Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak da oluşturulabilir. **`bool`** Artık uygun bir tür. Önceki sürümlerde, **`bool`** bir typedef idi ve bu adla tanımlayıcılar oluşturabilirsiniz.
 
 Aşağıdaki örnek C2632 oluşturur:
 
@@ -36,4 +36,4 @@ Aşağıdaki örnek C2632 oluşturur:
 void f(int bool);   // C2632
 ```
 
-Bu hatayı düzeltmek için, kodun hem Visual Studio .NET 2003 hem de Visual Studio .NET sürümlerinde C++geçerli olması için tanımlayıcıyı yeniden adlandırın.
+Bu hatayı düzeltmek için, kodun hem Visual Studio .NET 2003 hem de Visual C++ Visual Studio .NET sürümlerinde geçerli olması için tanımlayıcıyı yeniden adlandırın.
