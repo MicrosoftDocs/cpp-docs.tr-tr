@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4532
 ms.assetid: 4e2a286a-d233-4106-9f65-29be1a94ca02
-ms.openlocfilehash: 97ef7093aa56b41b869979e09d77fc448c6cf43d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b8c7503c7d1c1b711006415a327c360731222042
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186445"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87196350"
 ---
 # <a name="compiler-warning-level-1-c4532"></a>Derleyici Uyarısı (düzey 1) C4532
 
@@ -19,7 +19,7 @@ ms.locfileid: "80186445"
 
 Derleyici aşağıdaki anahtar sözcüklerden biriyle karşılaştı:
 
-- [continue](../../cpp/continue-statement-cpp.md)
+- [devam](../../cpp/continue-statement-cpp.md)
 
 - [break](../../cpp/break-statement-cpp.md)
 
@@ -27,9 +27,9 @@ Derleyici aşağıdaki anahtar sözcüklerden biriyle karşılaştı:
 
 olağan dışı Sonlandırma sırasında [__finally](../../cpp/try-finally-statement.md) veya [finally](../../dotnet/finally.md) bloğunun dışına atlanmasına neden olur.
 
-Bir özel durum oluşursa ve yığın sonlandırma işleyicilerinin yürütülmesi sırasında (`__finally` ya da finally blokları) ve kodunuz, `__finally` bloğu bitmeden önce bir `__finally` bloğunun dışına atlarken, davranış tanımsızdır. Denetim geri sarma koduna dönemeyebilir, bu nedenle özel durum düzgün işlenmeyebilir.
+Bir özel durum oluşursa ve yığın sonlandırma işleyicilerinin yürütülmesi sırasında ( **`__finally`** ya da finally blokları) ve kodunuz, blok bitmeden önce bir bloğun dışına atlarken, **`__finally`** **`__finally`** davranış tanımsızdır. Denetim geri sarma koduna dönemeyebilir, bu nedenle özel durum düzgün işlenmeyebilir.
 
-**__Finally** bloğundan birini atlamanız gerekiyorsa, önce olağan dışı sonlandırmasını denetleyin.
+Bir bloktan birini atlamanız gerekiyorsa **`__finally`** önce olağan dışı sonlandırmasını denetleyin.
 
 Aşağıdaki örnek C4532 oluşturur; uyarıları çözümlemek için, sıçrama deyimlerini açıklama olarak belirlemeniz yeterlidir.
 

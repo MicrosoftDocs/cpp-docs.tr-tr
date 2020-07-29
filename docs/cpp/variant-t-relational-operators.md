@@ -15,20 +15,20 @@ helpviewer_keywords:
 - operator != [C++], relational operators
 - == operator [C++], with specific Visual C++ objects
 ms.assetid: 141bacb8-41a2-44dd-b3c0-4ad1f884f4ea
-ms.openlocfilehash: e0d7ea1a0bcaf8329cff0cdfb0c01154f3c5a73b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6e0296a2bf4ce97e41fdf6208c3dd1c6b91215dc
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187576"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226951"
 ---
 # <a name="_variant_t-relational-operators"></a>_variant_t İlişkisel İşleçleri
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Eşitlik veya eşitsizlik için iki `_variant_t` nesnesini karşılaştırın.
+`_variant_t`Eşitlik veya eşitsizlik için iki nesneyi karşılaştırın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 bool operator==(
@@ -44,21 +44,21 @@ bool operator!=(
 #### <a name="parameters"></a>Parametreler
 
 *varSrc*<br/>
-`_variant_t` nesnesiyle Karşılaştırılacak bir `VARIANT`.
+`VARIANT`Nesnesiyle Karşılaştırılacak bir `_variant_t` .
 
 *pSrc*<br/>
-`_variant_t` nesnesiyle Karşılaştırılacak `VARIANT` işaretçisi.
+`VARIANT`Nesnesiyle Karşılaştırılacak öğesine işaretçisi `_variant_t` .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Karşılaştırma tutuyorsa **true** , değilse **false** döndürür.
+**`true`** Eğer Eğer karşılaştırmayla karşılaştırılmaları durumunda, döndürür **`false`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-, Eşitlik veya eşitsizlik için test eden bir `_variant_t` nesnesini `VARIANT`karşılaştırır.
+Bir `_variant_t` nesneyi `VARIANT` , eşitlik veya eşitsizlik için test bir ile karşılaştırır.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_variant_t Sınıfı](../cpp/variant-t-class.md)
+[_variant_t sınıfı](../cpp/variant-t-class.md)

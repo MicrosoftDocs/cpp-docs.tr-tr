@@ -7,18 +7,18 @@ helpviewer_keywords:
 - namespaces [C++], unqualified names in
 - using keyword [C++]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-ms.openlocfilehash: d762ea36e83d2384b7bb50c2914f6a634c134d15
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3aa0c7c4615aaf5eae9f4eae534e52167bf79ff0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187849"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227029"
 ---
 # <a name="using-declaration"></a>using bildirimi
 
-**Using** bildirimi, using bildiriminin göründüğü bildirime dayalı bölgeye bir ad getirir.
+**`using`** Bildirimi, using bildiriminin göründüğü bildirime dayalı bölgeye bir ad getirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 using [typename] nested-name-specifier unqualified-id ;
@@ -27,15 +27,15 @@ using declarator-list ;
 
 ### <a name="parameters"></a>Parametreler
 
-*iç içe ad belirleyicisi* Bir kapsam çözümleme işleci tarafından sonlandırılan bir ad alanı, sınıf veya sabit listesi adı ve kapsam çözümleme işleçleri (::) dizisi. Genel ad alanından bir ad tanıtmak için tek bir kapsam çözümleme işleci kullanılabilir. Anahtar sözcüğü **TypeName** isteğe bağlıdır ve temel sınıftan bir sınıf şablonuna getirilen bağımlı adları çözümlemek için kullanılabilir.
+*iç içe ad belirleyicisi* Bir kapsam çözümleme işleci tarafından sonlandırılan bir ad alanı, sınıf veya sabit listesi adı ve kapsam çözümleme işleçleri (::) dizisi. Genel ad alanından bir ad tanıtmak için tek bir kapsam çözümleme işleci kullanılabilir. Anahtar sözcüğü **`typename`** isteğe bağlıdır ve temel sınıftan bir sınıf şablonuna getirilen bağımlı adları çözümlemek için kullanılabilir.
 
 *nitelenmemiş kimlik* Tanımlayıcı, aşırı yüklenmiş bir operatör adı, Kullanıcı tanımlı sabit değer operatörü veya dönüştürme işlevi adı, sınıf yıkıcısı adı veya şablon adı ve bağımsız değişken listesi olabilecek nitelenmemiş bir kimlik ifadesi.
 
-*bildirimci-liste* [**TypeName**] *iç içe-ad belirleyicisi* *nitelenmemiş kimlik* bildiriciler için virgülle ayrılmış bir liste ve isteğe bağlı olarak üç nokta.
+*bildirimci-liste* [ **`typename`** ] *İç içe-ad belirleyicisi* *nitelenmemiş kimlik* bildiricileri ve isteğe bağlı olarak üç nokta olan virgülle ayrılmış bir liste.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Using bildirimi, başka bir yerde bildirildiği bir varlığın eşanlamlısı olarak nitelenmemiş bir ad sağlar. Belirli bir ad alanındaki tek bir adın, göründüğü bildirim bölgesinde Açık nitelendirme olmadan kullanılmasına izin verir. Bu, bir ad alanındaki *Tüm* adların nitelik olmadan kullanılmasına izin veren [using yönergesine](../cpp/namespaces-cpp.md#using_directives)karşılık gelir. **Using** anahtar sözcüğü, [tür diğer adları](../cpp/aliases-and-typedefs-cpp.md)için de kullanılır.
+Using bildirimi, başka bir yerde bildirildiği bir varlığın eşanlamlısı olarak nitelenmemiş bir ad sağlar. Belirli bir ad alanındaki tek bir adın, göründüğü bildirim bölgesinde Açık nitelendirme olmadan kullanılmasına izin verir. Bu, bir ad alanındaki *Tüm* adların nitelik olmadan kullanılmasına izin veren [using yönergesine](../cpp/namespaces-cpp.md#using_directives)karşılık gelir. **`using`** Anahtar sözcüğü, [tür diğer adları](../cpp/aliases-and-typedefs-cpp.md)için de kullanılır.
 
 ## <a name="example"></a>Örnek
 
@@ -125,7 +125,7 @@ In B::f()
 
 ## <a name="example"></a>Örnek
 
-Using bildirimi kullanılarak belirtilen üyelere, açık nitelik kullanılarak başvurulabilir. `::` ön eki genel ad alanına başvurur.
+Using bildirimi kullanılarak belirtilen üyelere, açık nitelik kullanılarak başvurulabilir. `::`Ön ek, genel ad alanına başvurur.
 
 ```cpp
 // using_declaration3.cpp
@@ -167,7 +167,7 @@ In A::g
 
 Bir using bildirimi yapıldığında, bildirim tarafından oluşturulan eş anlamlı yalnızca using bildiriminin noktasında geçerli olan tanımlara başvurur. Using bildiriminden sonra bir ad alanına eklenen tanımlar geçerli eş anlamlı değildir.
 
-**Using** bildirimiyle tanımlanan bir ad, özgün adı için bir diğer addır. Özgün bildirimin türünü, bağlantı veya diğer özniteliklerini etkilemez.
+Bildirim tarafından tanımlanan bir ad **`using`** , özgün adı için bir diğer addır. Özgün bildirimin türünü, bağlantı veya diğer özniteliklerini etkilemez.
 
 ```cpp
 // post_declaration_namespace_additions.cpp
@@ -213,11 +213,11 @@ void g() {
 }
 ```
 
-Yukarıdaki örnekte, `using B::i` deyimin `g()` işlevinde ikinci bir `int i` bildirilmesine neden olur. `B::f` tarafından tanıtılan işlev adları farklı parametre türlerine sahip olduğundan `using B::f` ifade `f(char)` işlevi ile çakışmaz.
+Yukarıdaki örnekte, `using B::i` ifade, işlevde saniyenin bildirilmesine neden olur `int i` `g()` . `using B::f` `f(char)` Tarafından tanıtılan işlev adları `B::f` farklı parametre türlerine sahip olduğundan, ifade işlevle çakışmaz.
 
 ## <a name="example"></a>Örnek
 
-Yerel işlev bildirimi, bildirimi kullanılarak tanıtılan bir işlevle aynı ada ve türe sahip olamaz. Örneğin:
+Yerel işlev bildirimi, bildirimi kullanılarak tanıtılan bir işlevle aynı ada ve türe sahip olamaz. Örnek:
 
 ```cpp
 // functions_in_namespaces2.cpp
@@ -327,5 +327,5 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ad Alanları](../cpp/namespaces-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Ad alanları](../cpp/namespaces-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

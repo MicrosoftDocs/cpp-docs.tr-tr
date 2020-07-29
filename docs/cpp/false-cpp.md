@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - false keyword [C++]
 ms.assetid: cc13aec5-1f02-4d38-8dbf-5473ea2b354f
-ms.openlocfilehash: f363e309b91e44472447d040aa36752750afec6f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d6162bdde3dea0d245a0c83c1d52b06003fee16c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188941"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227497"
 ---
 # <a name="false-c"></a>false (C++)
 
-Anahtar sözcüğü, [bool](../cpp/bool-cpp.md) türünde bir değişken veya koşullu ifade için iki değerden biridir (koşullu ifade artık **Gerçek** bir Boolean ifadedir). Örneğin, `i` **bool**türünde bir değişkense, `i = false;` ifade `i`**false değerini** atar.
+Anahtar sözcüğü, [bool](../cpp/bool-cpp.md) türünde bir değişken veya koşullu ifade için iki değerden biridir (koşullu ifade artık bir **`true`** Boolean ifadedir). Örneğin, `i` türünde bir değişkense **`bool`** , `i = false;` ifade **`false`** öğesine atar `i` .
 
 ## <a name="example"></a>Örnek
 
@@ -39,4 +39,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

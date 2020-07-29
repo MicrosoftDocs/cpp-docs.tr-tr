@@ -2,16 +2,16 @@
 title: Bağımlı Türleri Ad Çözme
 ms.date: 11/04/2016
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-ms.openlocfilehash: e9954eab2793f9adf0de75775563df0ae6f063f3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: de40bd056fe351e679ff32d9908c068ea4c6752a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161164"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227315"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Bağımlı Türleri Ad Çözme
 
-Derleyiciye verilen nitelenmiş adın bir tür tanımladığından emin olmak için şablon tanımlarındaki nitelenmiş adlar için **TypeName** kullanın. Daha fazla bilgi için bkz. [TypeName](../cpp/typename.md).
+**`typename`** Derleyiciye verilen nitelenmiş adın bir tür tanımladığından emin olmak için şablon tanımlarındaki nitelikli adlar için kullanın. Daha fazla bilgi için bkz. [TypeName](../cpp/typename.md).
 
 ```cpp
 // template_name_resolution1.cpp
@@ -40,7 +40,7 @@ int main()
 Name resolved by using typename keyword.
 ```
 
-Bağımlı adlar için ad arama, hem şablon tanımının bağlamlarından adları inceler — aşağıdaki örnekte, bu bağlam `myFunction(char)`ve şablon örneği oluşturma bağlamını bulur. Aşağıdaki örnekte, şablon Main içinde oluşturulur; Bu nedenle `MyNamespace::myFunction`, örnekleme noktasından görünür ve daha iyi eşleşme olarak çekilir. `MyNamespace::myFunction` yeniden adlandırılırsa, bunun yerine `myFunction(char)` çağrılır.
+Bağımlı adlar için ad arama, şablon tanımının her iki bağlamından da adları inceler — aşağıdaki örnekte, bu bağlam bulur `myFunction(char)` ve şablon örneği oluşturma bağlamıdır. Aşağıdaki örnekte, şablon Main içinde oluşturulur; Bu nedenle, `MyNamespace::myFunction` örnekleme noktasından görünür ve daha iyi eşleşme olarak çekilir. `MyNamespace::myFunction` yeniden adlandırılırsa, bunun yerine `myFunction(char)` çağrılır.
 
 Tüm adlar, bağımsız adlar gibi çözümlenir. Bununla birlikte, olası bir çakışma varsa tam adlar kullanmanızı öneririz.
 

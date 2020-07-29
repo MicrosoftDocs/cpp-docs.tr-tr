@@ -8,12 +8,12 @@ helpviewer_keywords:
 - setlocale function
 - language strings
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
-ms.openlocfilehash: 5a430154c9ad31a9776eeb2ba569fa0da33fac81
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: ae4b695682e00ef2f26287957400344ddd96dff4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373556"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189681"
 ---
 # <a name="ucrt-locale-names-languages-and-countryregion-strings"></a>UCRT yerel ayar adları, diller ve ülke/bölge dizeleri
 
@@ -34,7 +34,7 @@ ms.locfileid: "86373556"
 
 Yerel ayarı belirtmek için yalnızca kod sayfasını kullanırsanız, kullanıcının varsayılan dili ve [GetUserDefaultLocaleName](/windows/win32/api/winnls/nf-winnls-getuserdefaultlocalename) tarafından raporlanan ülke/bölge kullanılır. Örneğin, `".1254"` İngilizce (Birleşik Devletler) için yapılandırılmış bir kullanıcının yerel ayarı olarak (ANSI Türkçe) belirtirseniz, depolanan yerel ayar olur `English_United States.1254` . Tutarsız davranışa neden olabileceğinden, bu biçim önerilmez.
 
-*Yerel ayar* bağımsız değişkeni değeri `C` , C çevirisi IÇIN en az ANSI uyumlu ortamı belirtir. `C`Yerel ayar her **char** veri türünün 1 bayt ve değeri her zaman 256 ' den küçük olduğunu varsayar. *Yerel ayar* boş bir dizeye işaret ediyorsa, yerel ayar uygulama tanımlı yerel ortamdır.
+*Yerel ayar* bağımsız değişkeni değeri `C` , C çevirisi IÇIN en az ANSI uyumlu ortamı belirtir. `C`Yerel ayar her **`char`** veri türünün 1 bayt ve değeri her zaman 256 ' den küçük olduğunu varsayar. *Yerel ayar* boş bir dizeye işaret ediyorsa, yerel ayar uygulama tanımlı yerel ortamdır.
 
 `setlocale`Kategori kullanarak, ve işlevleri için aynı anda tüm yerel ayar kategorilerini belirtebilirsiniz `_wsetlocale` `LC_ALL` . Kategorilerin tümü aynı yerel ayara ayarlanabilir veya bu biçime sahip bir yerel bağımsız değişken kullanarak her kategoriyi ayrı ayrı ayarlayabilirsiniz:
 

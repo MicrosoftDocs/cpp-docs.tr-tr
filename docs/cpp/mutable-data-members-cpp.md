@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - mutable keyword [C++]
 ms.assetid: ebe89746-3d36-43a8-8d69-f426af23f551
-ms.openlocfilehash: db3a9594a77a9ada971213eaea74a9842bd96a54
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9370952f503850fbc296c3df912d4a0fafe163f0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179347"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227354"
 ---
 # <a name="mutable-data-members-c"></a>Değişebilir Veri Üyeleri (C++)
 
-Bu anahtar sözcük, yalnızca bir sınıfın statik olmayan ve const olmayan veri üyelerine uygulanabilir. Bir veri üyesi **değişebilir**olarak bildirilirse, bu veri üyesine bir **const** üye işlevinden bir değer atama geçerli olur.
+Bu anahtar sözcük, yalnızca bir sınıfın statik olmayan ve const olmayan veri üyelerine uygulanabilir. Bir veri üyesi bildirilirse **`mutable`** , bu veri üyesine üye işlevden bir değer atama geçerli olur **`const`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -25,7 +25,7 @@ mutable member-variable-declaration;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneğin, `m_accessCount` **kesilebilir**olarak bildirildiği ve bu nedenle `GetFlag` bir const üye işlevi olsa da `GetFlag` tarafından değiştirilebilecek için aşağıdaki kod hatasız olarak derlenir.
+Örneğin, aşağıdaki kod, olarak bildirildiği için hata olmadan derlenir `m_accessCount` **`mutable`** ve bu nedenle, `GetFlag` `GetFlag` bir const üye işlevi olsa da değiştirilebilir.
 
 ```cpp
 // mutable.cpp
@@ -49,4 +49,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -16,18 +16,18 @@ helpviewer_keywords:
 - _ptr64 keyword [C++]
 - __ptr32 keyword [C++]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
-ms.openlocfilehash: c3ebe642284c6ee269dbfc39985630b7d949435f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5ff2fa22c8a466252cfaf8b80dc8d56774aff58e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179217"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227159"
 ---
 # <a name="__ptr32-__ptr64"></a>__ptr32, __ptr64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-**__ptr32** , 32 bitlik bir sistemde yerel bir işaretçiyi temsil ettiğinde, **__ptr64** 64 bit sistemdeki yerel bir işaretçiyi temsil eder.
+**`__ptr32`** 32 bitlik bir sistemde yerel bir işaretçiyi temsil ederken, **`__ptr64`** 64 bit sistemde yerel bir işaretçiyi temsil eder.
 
 Aşağıdaki örnek, bu işaretçi türlerinin her birinin nasıl bildirilemeyeceğini göstermektedir:
 
@@ -36,16 +36,16 @@ int * __ptr32 p32;
 int * __ptr64 p64;
 ```
 
-32 bitlik bir sistemde, **__ptr64** ile belirtilen bir işaretçi 32 bit işaretçiye kesilir. 64 bitlik bir sistemde, **__ptr32** ile belirtilen bir işaretçi 64 bit işaretçiye zorlanır.
+32 bitlik bir sistemde, ile belirtilen bir işaretçi **`__ptr64`** 32 bitlik bir işaretçiye kesilir. 64 bitlik bir sistemde, ile belirtilen bir işaretçi **`__ptr32`** 64 bit işaretçiye zorlanır.
 
 > [!NOTE]
-> **/Clr: Pure**ile derlerken **__ptr32** veya **__ptr64** kullanamazsınız. Aksi halde, derleyici hatası C2472 oluşturulur. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
+> **`__ptr32`** **`__ptr64`** **/Clr: Pure**ile derleme yaparken veya kullanamazsınız. Aksi halde, derleyici hatası C2472 oluşturulur. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-Önceki sürümlerle uyumluluk için, **_ptr32** ve **_ptr64** **__ptr32** ve **__Ptr64** , [/za \(dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirlenmediği durumlar için eş anlamlılardır.
+Önceki sürümlerle uyumluluk için, **_ptr32** ve **_ptr64** , için eş anlamlılardır **`__ptr32`** ve **`__ptr64`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) gibi derleyici seçeneği belirtilmiştir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, **__ptr32** ve **__ptr64** anahtar sözcükleriyle işaretçilerin nasıl bildirilemeyeceğini ve ayrılacağını gösterir.
+Aşağıdaki örnek, **`__ptr32`** ve anahtar sözcükleriyle işaretçilerin nasıl bildirilemeyeceğini ve ayrılacağını gösterir **`__ptr64`** .
 
 ```cpp
 #include <cstdlib>

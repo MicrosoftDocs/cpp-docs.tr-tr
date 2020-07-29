@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [C++], scope
 - scope, C++ names
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
-ms.openlocfilehash: a5b5601c89991fbe1a148ebaf781fe2ad6a9dfc4
-ms.sourcegitcommit: c4cf8976939dd0e13e25b82930221323ba6f15d4
+ms.openlocfilehash: 5cff7a4607201175c7095a87134850583b76d636
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83204131"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227094"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
@@ -31,9 +31,9 @@ Altı tür kapsam vardır:
 
 - **Yerel kapsam** Parametre adları da dahil olmak üzere bir işlev veya lambda içinde belirtilen bir ad, yerel kapsama sahiptir. Bunlar genellikle "Yereller" olarak anırlar. Bunlar yalnızca kendi bildirim noktasından işlevin veya lambda gövdesinin sonuna kadar görünür. Yerel kapsam, bu makalenin ilerleyen kısımlarında ele alınan bir blok kapsamı türüdür.
 
-- **Sınıf kapsamı** Sınıf üyelerinin adları, bildirim noktasına bakılmaksızın sınıf tanımının tamamında genişleyen sınıf kapsamına sahiptir. Sınıf üyesi erişilebilirliği **genel**, **özel**ve **korumalı** anahtar sözcükler tarafından daha fazla denetlenir. Ortak veya korumalı üyelere yalnızca üye seçim işleçleri (**.** ya da **->** ) ya da üye işaretçisi işleçleri (**.** <strong>\*</strong> veya **->** <strong>\*</strong> ).
+- **Sınıf kapsamı** Sınıf üyelerinin adları, bildirim noktasına bakılmaksızın sınıf tanımının tamamında genişleyen sınıf kapsamına sahiptir. Sınıf üyesi erişilebilirliği **`public`** ,, **`private`** ve anahtar kelimeleri tarafından daha fazla denetlenir **`protected`** . Ortak veya korumalı üyelere yalnızca üye seçim işleçleri (**.** ya da **->** ) ya da üye işaretçisi işleçleri (**.** <strong>\*</strong> veya **->** <strong>\*</strong> ).
 
-- **Ekstre kapsamı** **For**, **IF**, **while**veya **Switch** ifadesinde belirtilen adlar, ifade bloğunun sonuna kadar görünür.
+- **Ekstre kapsamı** ,, Veya ifadesinde belirtilen adlar, **`for`** **`if`** **`while`** **`switch`** ifade bloğunun sonuna kadar görünür.
 
 - **İşlev kapsamı** Bir [etikette](labeled-statements.md) işlev kapsamı vardır. Bu, bir işlev gövdesi boyunca, bildirim noktası önünde bile görünür olduğu anlamına gelir. İşlev kapsamı `goto cleanup` , etiket bildirilmeden önce gibi deyimler yazmanızı mümkün kılar `cleanup` .
 
@@ -58,7 +58,7 @@ i = 0
 
 ## <a name="hiding-class-names"></a>Sınıf adlarını gizleme
 
-Aynı kapsamda bir işlev, nesne veya değişken ya da Numaralandırıcı bildirerek sınıf adlarını gizleyebilirsiniz. Ancak, sınıf adına anahtar sözcük **sınıfının**ön eki olduğunda yine de erişilebilir.
+Aynı kapsamda bir işlev, nesne veya değişken ya da Numaralandırıcı bildirerek sınıf adlarını gizleyebilirsiniz. Ancak, anahtar sözcüğünün önekli sınıf adına yine de erişilebilir **`class`** .
 
 ```cpp
 // hiding_class_names.cpp
@@ -94,18 +94,18 @@ int main()
 > [!NOTE]
 > Herhangi bir yerde sınıf adı ( `Account` ) çağrılır, anahtar sözcük sınıfı, bunu küresel kapsamlı değişken hesabından ayırt etmek için kullanılmalıdır. Bu kural, sınıf adı kapsam çözümleme işlecinin (::) ' nin sol tarafında gerçekleştiğinde uygulanmaz. Kapsam çözümleme işlecinin sol tarafındaki adlar her zaman sınıf adları olarak kabul edilir.
 
-Aşağıdaki örnek, `Account` **Class** anahtar sözcüğünü kullanarak türünde bir nesne için bir işaretçinin nasıl bildirileceğini gösterir:
+Aşağıdaki örnek, `Account` anahtar sözcüğünü kullanarak türünde bir nesne için bir işaretçinin nasıl bildirileceğini gösterir **`class`** :
 
 ```cpp
 class Account *Checking = new class Account( Account );
 ```
 
-`Account`Yukarıdaki deyimindeki başlatıcıdaki (parantez içinde) genel kapsama sahiptir; **Double**türündedir.
+`Account`Yukarıdaki deyimindeki başlatıcıdaki (parantez içinde) genel kapsama sahiptir; bu tür **`double`** .
 
 > [!NOTE]
 > Bu örnekte gösterildiği gibi tanımlayıcı adlarının yeniden kullanılması kötü programlama stili olarak kabul edilir.
 
-Sınıf nesnelerinin bildirimi ve başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). **Yeni** ve **silme** ücretsiz-mağaza işleçlerini kullanma hakkında daha fazla bilgi için, bkz. [New ve delete işleçleri](new-and-delete-operators.md).
+Sınıf nesnelerinin bildirimi ve başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). Ve serbest mağaza işleçlerini kullanma hakkında daha fazla bilgi için **`new`** **`delete`** bkz. [New ve delete işleçleri](new-and-delete-operators.md).
 
 ## <a name="hiding-names-with-global-scope"></a>Genel kapsamlı adları gizleme
 

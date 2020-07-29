@@ -1,18 +1,18 @@
 ---
-title: Sınıflar, structs ve sendikalar için parantez başlatma
-description: Herhangi bir C++ sınıfı, yapı veya birleşim ile ayraç başlatma kullanma
+title: Sınıflar, yapılar ve birleşimler için küme ayracı başlatma
+description: Herhangi bir C++ sınıfı, struct veya Union ile ayraç başlatma kullanın
 ms.date: 11/19/2019
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-ms.openlocfilehash: 4628ffe8935fc32e86468c631d5d9e9622d63d2e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d862ff01ef7375c9d46791f7549d8a07682c3586
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374071"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227432"
 ---
 # <a name="brace-initialization"></a>Küme ayracı başlatma
 
-Her zaman bir sınıf için bir oluşturucu tanımlamak için gerekli değildir, özellikle nispeten basit olanlar. Kullanıcılar, aşağıdaki örnekte gösterildiği gibi, tek düzen başlatma kullanarak bir sınıfın veya yapının nesnelerini başlatmayı sağlayabilir:
+Özellikle görece basit olan bir sınıf için bir Oluşturucu tanımlanması her zaman gerekli değildir. Kullanıcılar, aşağıdaki örnekte gösterildiği gibi Tekdüzen başlatma kullanarak bir sınıfın veya yapının nesnelerini başlatabilir:
 
 ```cpp
 // no_constructor.cpp
@@ -61,7 +61,7 @@ int main()
 }
 ```
 
-Bir sınıf veya yapı oluşturucu olmadığında, liste öğelerini üyelerin sınıfta beyan edildiği sırada sağladığınıunutmayın. Sınıfın bir oluşturucusu varsa, öğeleri parametreler sırasına göre sağlayın. Bir türde örtülü veya açıkça beyan edilmiş varsayılan bir oluşturucu varsa, varsayılan ayraç başlatma (boş ayraçlarla) kullanabilirsiniz. Örneğin, aşağıdaki sınıf hem varsayılan hem de varsayılan olmayan ayraç başlatma kullanılarak başharflere alınabilir:
+Bir sınıf veya yapının hiçbir Oluşturucusu yoksa, liste öğelerini üyelerin sınıfta bildirildiği sırada sağlayabileceğinizi unutmayın. Sınıfta bir Oluşturucu varsa, parametreleri parametreler sırasıyla belirtin. Bir türün örtük olarak veya açıkça bildirildiği bir varsayılan Oluşturucusu varsa, varsayılan ayraç başlatma (boş küme ayraçları ile) kullanabilirsiniz. Örneğin, aşağıdaki sınıf hem varsayılan hem de varsayılan olmayan ayraç başlatma kullanılarak başlatılabilir:
 
 ```cpp
 #include <string>
@@ -90,7 +90,7 @@ int main()
 }
 ```
 
-Bir sınıfın varsayılan olmayan oluşturucuları varsa, sınıf üyelerinin ayraç ilkbenatörde göründüğü sıra, üyelerin (önceki `class_a` örnekte olduğu gibi) bildirilen sıra değil, ilgili parametrelerin oluşturucuda görüntülenme sırasıdır. Aksi takdirde, tür beyan edilen bir oluşturucu yoksa, üyelerin ayraç ilkizerinde görünme sırası, beyan edildikleri sırayla aynıdır; Bu durumda, istediğiniz kadar çok kamu üyesini açabilir, ancak herhangi bir üyeyi atlayamazsınız. Aşağıdaki örnek, bildirilen bir oluşturucu olmadığında ayraç başlatmada kullanılan sırayı gösterir:
+Bir sınıfta varsayılan olmayan oluşturucular varsa, sınıf üyelerinin ayraç başlatıcısında görünme sırası, üyelerin bildirildiği sıra (önceki örnekte olduğu gibi) değil, ilgili parametrelerin oluşturucuda görünme sıradır `class_a` . Aksi halde, türün tanımlı bir Oluşturucusu yoksa, üyelerin küme ayracı başlatıcısında görünme sırası, bildirildiği sırayla aynıdır; Bu durumda, istediğiniz sayıda ortak üyenin başlatılmasını sağlayabilirsiniz, ancak hiçbir üyeyi atlayamazsınız. Aşağıdaki örnek, tanımlı bir Oluşturucu olmadığında küme ayracı başlatma içinde kullanılan sırayı gösterir:
 
 ```cpp
 class class_d {
@@ -112,7 +112,7 @@ int main()
 }
 ```
 
-Varsayılan oluşturucu açıkça beyan edilmiş ancak silinmiş olarak işaretlenmişse, varsayılan ayraç başlatma kullanılamaz:
+Varsayılan Oluşturucu açık olarak bildirilirse ancak silinmiş olarak işaretlenmişse, varsayılan küme ayracı başlatma kullanılamaz:
 
 ```cpp
 class class_f {
@@ -128,7 +128,7 @@ int main()
 }
 ```
 
-Örneğin, işlev parametresi veya iade değeri veya **yeni** anahtar kelime olarak genellikle başlatma yı yapacağınız her yerde ayraç başlatma yı kullanabilirsiniz:
+Genellikle başlatma yaptığınız her yerde (örneğin, bir işlev parametresi veya dönüş değeri olarak veya anahtar sözcüğüyle) küme ayracı başlatma kullanabilirsiniz **`new`** :
 
 ```cpp
 class_d* cf = new class_d{4.5};
@@ -136,20 +136,20 @@ kr->add_d({ 4.5 });
 return { 4.5 };
 ```
 
-**/std:c++17** modunda, boş ayraç başlatma kuralları biraz daha kısıtlayıcıdır. Bkz. [Türemiş oluşturucular ve genişletilmiş toplu başlatma.](constructors-cpp.md#extended_aggregate)
+**/Std: c++ 17** modunda, boş küme ayracı başlatması kuralları biraz daha kısıtlayıcıdır. Bkz. [türetilmiş oluşturucular ve genişletilmiş toplu başlatma](constructors-cpp.md#extended_aggregate).
 
-## <a name="initializer_list-constructors"></a>initializer_list yapıcılar
+## <a name="initializer_list-constructors"></a>initializer_list oluşturucular
 
-[initializer_list Sınıfı,](../standard-library/initializer-list-class.md) bir oluşturucuve diğer bağlamlarda kullanılabilecek belirli bir türnesnelerin listesini temsil eder. Ayraç başlatmayı kullanarak bir initializer_list oluşturabilirsiniz:
+[Initializer_list sınıfı](../standard-library/initializer-list-class.md) , bir oluşturucuda ve diğer bağlamlarda kullanılabilen, belirtilen bir türün nesne listesini temsil eder. Küme ayracı başlatma kullanarak bir initializer_list oluşturabilirsiniz:
 
 ```cpp
 initializer_list<int> int_list{5, 6, 7};
 ```
 
 > [!IMPORTANT]
-> Bu sınıfı kullanmak için [ \<initializer_list>](../standard-library/initializer-list.md) üstbilgi eklemeniz gerekir.
+> Bu sınıfı kullanmak için üstbilgiyi dahil etmeniz gerekir [\<initializer_list>](../standard-library/initializer-list.md) .
 
-Bir `initializer_list` kopyalanabilir. Bu durumda, yeni listenin üyeleri özgün listenin üyelerine başvurur:
+`initializer_list`, Kopyalanabilir. Bu durumda, yeni listenin üyeleri özgün listenin üyelerine başvurulardır:
 
 ```cpp
 initializer_list<int> ilist1{ 5, 6, 7 };
@@ -158,7 +158,7 @@ if (ilist1.begin() == ilist2.begin())
     cout << "yes" << endl; // expect "yes"
 ```
 
-Standart kitaplık kapsayıcı sınıfları `wstring`ve `regex`ayrıca `initializer_list` `string`, , ve , yapıcılar var. Aşağıdaki örnekler, bu oluşturucularla nasıl başlangıç yapılacağını gösterir:
+Standart Kitaplık kapsayıcı sınıfları ve ayrıca, `string` ve, `wstring` `regex` `initializer_list` oluşturucuları vardır. Aşağıdaki örneklerde, bu oluşturucularla küme ayracı başlatmanın nasıl yapılacağı gösterilmektedir:
 
 ```cpp
 vector<int> v1{ 9, 10, 11 };
@@ -169,5 +169,5 @@ regex rgx{ 'x', 'y', 'z' };
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)<br/>
+[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)<br/>
 [Oluşturucular](../cpp/constructors-cpp.md)

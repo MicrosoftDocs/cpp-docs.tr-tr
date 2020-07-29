@@ -9,18 +9,18 @@ helpviewer_keywords:
 - declaring classes [C++]
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-ms.openlocfilehash: 8ace21e3c8ced72b34898a716eae882a3750c8ef
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 672156e65e223be45c91558ed91065859566a8b9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367899"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227289"
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 
-Bir sınıf başka bir sınıf kapsamında bildirilebilir. Böyle bir sınıfa "iç içe sınıf" denir. İç içe sınıflar, çevreleyen sınıfın kapsamı içinde kabul edilir ve bu kapsamda kullanılabilir. İç içe geçen bir sınıfa hemen çevreleyen kapsam dışında bir kapsamdan başvurmak için tam nitelikli bir ad kullanmanız gerekir.
+Bir sınıf, başka bir sınıfın kapsamı içinde bildirilebilecek. Böyle bir sınıfa "Nested Class" adı verilir. İç içe geçmiş sınıflar kapsayan sınıfın kapsamı içinde olduğu kabul edilir ve bu kapsam içinde kullanılabilir. Kendi kendine kapsayan kapsamı dışında bir kapsamdaki iç içe bir sınıfa başvurmak için, tam nitelikli bir ad kullanmanız gerekir.
 
-Aşağıdaki örnek, iç içe sınıfların nasıl bildirilen gösterir:
+Aşağıdaki örnek, iç içe sınıfların nasıl bildirilemeyeceğini göstermektedir:
 
 ```cpp
 // nested_class_declarations.cpp
@@ -54,16 +54,16 @@ int main()
 }
 ```
 
-`BufferedIO::BufferedInput`ve `BufferedIO::BufferedOutput` içinde `BufferedIO`ilan edilir. Bu sınıf adları sınıf `BufferedIO`kapsamı dışında görünmez. Ancak, tür `BufferedIO` bir nesne türleri `BufferedInput` veya `BufferedOutput`herhangi bir nesne içermez.
+`BufferedIO::BufferedInput`ve `BufferedIO::BufferedOutput` içinde bildirilmiştir `BufferedIO` . Bu sınıf adları, sınıfının kapsamı dışında görünür değildir `BufferedIO` . Ancak, türünde bir nesne, `BufferedIO` ya da tür nesneleri içermez `BufferedInput` `BufferedOutput` .
 
-İç içe geçmiş sınıflar doğrudan adları, tür adlarını, statik üyelerin adlarını ve sayısalatörleri yalnızca çevreleyen sınıftan kullanabilir. Diğer sınıf üyelerinin adlarını kullanmak için işaretçileri, başvuruları veya nesne adlarını kullanmanız gerekir.
+İç içe geçmiş sınıflar adları, tür adlarını, statik üyelerin adlarını ve yalnızca kapsayan sınıftan bulunan numaralandırıcıları doğrudan kullanabilir. Diğer sınıf üyelerinin adlarını kullanmak için işaretçiler, başvurular veya nesne adları kullanmanız gerekir.
 
-`BufferedIO` Önceki örnekte, numaralandırma `IOError` ya `BufferedIO::BufferedInput` da `BufferedIO::BufferedOutput`işlevde `good`gösterildiği gibi iç içe sınıflarda üye işlevler tarafından doğrudan erişilebilir.
+Önceki `BufferedIO` örnekte, sabit listesine, `IOError` iç içe geçmiş sınıflarda üye işlevleri `BufferedIO::BufferedInput` veya `BufferedIO::BufferedOutput` işlevinde gösterildiği gibi doğrudan erişilebilir `good` .
 
 > [!NOTE]
-> İç içe sınıflar yalnızca sınıf kapsamı içinde türleri bildirir. İç içe olan sınıfın içerdiği nesnelerin oluşturulmasına neden olmazlar. Önceki örnek, iç içe iki sınıf bildirir, ancak bu sınıf türlerinin herhangi bir nesnesini bildirmez.
+> İç içe sınıflar yalnızca sınıf kapsamı içindeki türleri bildirir. İç içe yerleştirilmiş sınıfın içerilen nesnelerinin oluşturulmasına neden olmaz. Yukarıdaki örnek, iki iç içe sınıf bildirir ancak bu sınıf türlerindeki herhangi bir nesne bildirmiyor.
 
-İç içe geçen sınıf bildiriminin kapsam görünürlüğünün bir istisnası, bir tür adının bir forward bildirimiyle birlikte bildirilmesidir.  Bu durumda, iletme bildirimi tarafından bildirilen sınıf adı, kapsamı sınıf dışı en küçük kapsam olarak tanımlanan, çevreleyen sınıfın dışında görünür.  Örneğin:
+Bir iç içe sınıf bildiriminin kapsam görünürlüğü için bir özel durum, bir tür adının bir iletme bildirimiyle birlikte bildirildiği durumdur.  Bu durumda, iletme bildirimi tarafından belirtilen sınıf adı kapsayan sınıfın dışında görünür ve kapsamı, en küçük kapsayan sınıf olmayan kapsam olarak tanımlanır.  Örnek:
 
 ```cpp
 // nested_class_declarations_2.cpp
@@ -90,13 +90,13 @@ int main()
 }
 ```
 
-## <a name="access-privilege-in-nested-classes"></a>İç içe sınıflarda ayrıcalığa erişin
+## <a name="access-privilege-in-nested-classes"></a>İç içe sınıflarda erişim ayrıcalığı
 
 Bir sınıfı başka bir sınıf içinde iç içe geçirmek, iç içe geçmiş sınıfın üye işlevlerine özel erişim ayrıcalıkları vermez. Benzer şekilde, çevreleyen sınıfın üye işlevlerinin iç içe geçmiş sınıf üyeleri için özel erişimi yoktur.
 
-## <a name="member-functions-in-nested-classes"></a>İç içe sınıflarda üye işlevler
+## <a name="member-functions-in-nested-classes"></a>İç içe sınıflarda üye işlevleri
 
-İç içe geçen sınıflarda bildirilen üye işlevler dosya kapsamında tanımlanabilir. Önceki örnek yazılmış olabilir:
+İç içe sınıflarda belirtilen üye işlevleri, dosya kapsamında tanımlanabilir. Yukarıdaki örnek yazılmış olabilir:
 
 ```cpp
 // member_functions_in_nested_classes.cpp
@@ -134,13 +134,13 @@ int main()
 }
 ```
 
-Önceki örnekte, işlev adını bildirmek için *nitelikli tür adı* sözdizimi kullanılır. Bildirge:
+Önceki örnekte, *tam tür adı* sözdizimi işlev adını bildirmek için kullanılır. Bildirim:
 
 ```cpp
 BufferedIO::BufferedInput::read()
 ```
 
-"sınıfın `read` bir üyesi olan işlev" anlamına gelir. `BufferedInput` `BufferedIO` Bu bildirim *de yolduma türü adı* sözdizimini kullandığından, aşağıdaki formun yapıları mümkündür:
+" `read` sınıfının kapsamındaki sınıfının bir üyesi olan işlev `BufferedInput` `BufferedIO` ." anlamına gelir. Bu bildirim *tam tür adı* sözdizimini kullandığından, aşağıdaki formun yapıları olasıdır:
 
 ```cpp
 typedef BufferedIO::BufferedInput BIO_INPUT;
@@ -148,11 +148,11 @@ typedef BufferedIO::BufferedInput BIO_INPUT;
 int BIO_INPUT::read()
 ```
 
-Önceki bildirim öncekine eşdeğerdir, ancak sınıf adlarının yerine **bir typedef** adı kullanır.
+Önceki bildirim öncekiyle eşdeğerdir, ancak **`typedef`** sınıf adlarının yerine bir ad kullanır.
 
 ## <a name="friend-functions-in-nested-classes"></a>İç içe sınıflarda arkadaş işlevleri
 
-İç içe geçen bir sınıfta bildirilen arkadaş işlevleri, çevreleyen sınıfın değil, iç içe geçen sınıfın kapsamına girer. Bu nedenle, arkadaş işlevleri, çevreleyen sınıfın üyelerine veya üye işlevlerine özel erişim ayrıcalıkları elde etmez. Bir arkadaş işlevinde iç içe geçen bir sınıfta bildirilen bir ad kullanmak istiyorsanız ve arkadaş işlevi dosya kapsamında tanımlanırsa, nitelikli tür adlarını aşağıdaki gibi kullanın:
+İç içe yerleştirilmiş bir sınıfta belirtilen arkadaş işlevleri, kapsayan sınıfın değil, iç içe yerleştirilmiş sınıfın kapsamında olduğu kabul edilir. Bu nedenle arkadaş işlevleri, kapsayan sınıfın üyeleri veya üye işlevleri için özel erişim ayrıcalıklarına sahip olmaz. Bir Friend işlevindeki iç içe yerleştirilmiş bir sınıfta belirtilen bir ad kullanmak istiyorsanız ve arkadaş işlevi dosya kapsamında tanımlanmışsa, tam tür adlarını aşağıdaki gibi kullanın:
 
 ```cpp
 // friend_functions_and_nested_classes.cpp
@@ -198,14 +198,14 @@ int main()
 }
 ```
 
-Aşağıdaki kod, arkadaş `GetExtendedErrorStatus` işlevi olarak bildirilen işlevi gösterir. Dosya kapsamında tanımlanan işlevde, ileti statik bir diziden sınıf üyesine kopyalanır. Daha iyi bir `GetExtendedErrorStatus` uygulama olarak ilan etmek olduğunu unutmayın:
+Aşağıdaki kod, `GetExtendedErrorStatus` bir Friend işlevi olarak belirtilen işlevi gösterir. Dosya kapsamında tanımlanan işlevde bir ileti bir statik diziden sınıf üyesine kopyalanır. Daha iyi bir uygulamasının `GetExtendedErrorStatus` bunu şöyle bildirdiğine unutmayın:
 
 ```cpp
 int GetExtendedErrorStatus( char *message )
 ```
 
-Önceki arabirimde, birkaç sınıf hata iletisinin kopyalanmasını istedikleri bir bellek konumu geçirerek bu işlevin hizmetlerini kullanabilir.
+Önceki arabirim ile, birkaç sınıf, hata iletisinin kopyalanmasını istedikleri bir bellek konumunu geçirerek bu işlevin hizmetlerini kullanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)
+[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)

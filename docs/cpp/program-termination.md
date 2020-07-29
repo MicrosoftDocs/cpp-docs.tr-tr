@@ -1,75 +1,75 @@
 ---
-title: C++program sonlandırma
-description: Bir C++-dil programının exit yollarını açıklar.
+title: C++ program sonlandırma
+description: :::no-loc(exit):::C++ dili programın yollarını açıklar.
 ms.date: 01/15/2020
 helpviewer_keywords:
 - terminating execution
 - quitting applications
-- exiting applications
+- :::no-loc(exit):::ing applications
 - programs [C++], terminating
 ms.assetid: fa0ba9de-b5f1-4e7b-aa65-e7932068b48c
 no-loc:
-- exit
-- abort
-- return
-- main
-- atexit
-- void
-ms.openlocfilehash: f83c9d5da5b0a1127603a97fd7946e9cca43a7a5
-ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
+- ':::no-loc(exit):::'
+- ':::no-loc(abort):::'
+- ':::no-loc(return):::'
+- ':::no-loc(main):::'
+- ':::no-loc(atexit):::'
+- ':::no-loc(void):::'
+ms.openlocfilehash: 216aef5dbe8d110f9d75d43b5009b89fc5bfda51
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76123961"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227185"
 ---
-# <a name="c-program-termination"></a>C++program sonlandırma
+# <a name="c-program-termination"></a>C++ program sonlandırma
 
-' C++De, bir programı şu yollarla exit yapabilirsiniz:
+C++ ' da, :::no-loc(exit)::: şu yollarla bir program kullanabilirsiniz:
 
-- [exit](exit-function.md) işlevini çağırın.
-- [abort](abort-function.md) işlevini çağırın.
-- `main`[return](return-statement-cpp.md) bir ifade yürütün.
+- İşlevi çağırın [:::no-loc(exit):::](:::no-loc(exit):::-function.md) .
+- İşlevi çağırın [:::no-loc(abort):::](:::no-loc(abort):::-function.md) .
+- Öğesinden bir [:::no-loc(return):::](:::no-loc(return):::-statement-cpp.md) Ekstre yürütün `:::no-loc(main):::` .
 
-## <a name="opno-locexit-function"></a>exit işlevi
+## <a name="no-locexit-function"></a>:::no-loc(exit)::: işlevi
 
-\<Stdlib. h > içinde belirtilen [exit](../c-runtime-library/reference/exit-exit-exit.md) işlevi bir C++ programı sonlandırır. `exit` için bir bağımsız değişken olarak sağlanan değer, programın return kodu veya exit kodu olarak işletim sistemine döndürülür. Kurala göre, sıfır return bir kodu programın başarıyla tamamlandığı anlamına gelir. Programınızın başarısını veya başarısızlığını göstermek için \<Stdlib. h > içinde de tanımlanan sabitleri EXIT_FAILURE ve EXIT_SUCCESS kullanabilirsiniz.
+[:::no-loc(exit):::](../c-runtime-library/reference/:::no-loc(exit):::-:::no-loc(exit):::-:::no-loc(exit):::.md)İçinde belirtilen işlev, \<stdlib.h> bir C++ programını sonlandırır. İçin bir bağımsız değişken olarak sağlanan değer `:::no-loc(exit):::` , :::no-loc(return)::: programın :::no-loc(return)::: kodu veya kodu olarak işletim sistemine gönderilir :::no-loc(exit)::: . Kural gereği, bir :::no-loc(return)::: sıfır kodu programın başarıyla tamamlandığı anlamına gelir. \<stdlib.h>Programınızın başarısını veya başarısızlığını göstermek için ' de tanımlanan sabitleri EXIT_FAILURE ve EXIT_SUCCESS kullanabilirsiniz.
 
-`main` işlevinden bir **return** deyimin verilmesi, `exit` işlevinin bağımsız değişkeni olarak return değeri ile çağrılmasının eşdeğeridir.
+İşlevinden bir **`:::no-loc(return):::`** deyimin verilmesi, `:::no-loc(main):::` `:::no-loc(exit):::` işlevi :::no-loc(return)::: bağımsız değişkeni olarak değeriyle çağırma ile eşdeğerdir.
 
-## <a name="opno-locabort-function"></a>abort işlevi
+## <a name="no-locabort-function"></a>:::no-loc(abort)::: işlevi
 
-Ayrıca, standart içerme dosyasında \<Stdlib. h > olarak da tanımlanan [abort](../c-runtime-library/reference/abort.md) işlevi bir C++ programı sonlandırır. `exit` ve `abort` arasındaki fark `exit`, C++ çalışma zamanı sonlandırma işlemenin ortaya sürmesidir (genel nesne yıkıcıları çağrılır), ancak `abort` programı hemen sonlandırır. `abort` işlevi, başlatılmış genel statik nesneler için normal yok etme işlemini atlar. Ayrıca, [atexit](../c-runtime-library/reference/atexit.md) işlevi kullanılarak belirtilen özel işlemleri de atlar.
+[:::no-loc(abort):::](../c-runtime-library/reference/:::no-loc(abort):::.md)Standart içerme dosyasında da belirtilen işlev \<stdlib.h> bir C++ programını sonlandırır. Ve arasındaki fark `:::no-loc(exit):::` , `:::no-loc(abort):::` `:::no-loc(exit):::` C++ çalışma zamanı sonlandırma işlemenin gerçekleşmesini olanaklı olmasına olanak sağlar (genel nesne yıkıcıları çağrılır), ancak `:::no-loc(abort):::` programı hemen sonlandırır. `:::no-loc(abort):::`İşlev, başlatılmış genel statik nesneler için normal yok etme işlemini atlar. Ayrıca, işlevi kullanılarak belirtilen özel işlemleri de atlar [:::no-loc(atexit):::](../c-runtime-library/reference/:::no-loc(atexit):::.md) .
 
-## <a name="opno-locatexit-function"></a>atexit işlevi
+## <a name="no-locatexit-function"></a>:::no-loc(atexit)::: işlevi
 
-Program sonlandırmadan önce yürütülen eylemleri belirtmek için [atexit](../c-runtime-library/reference/atexit.md) işlevini kullanın. **atexit** çağrısı öncesinde başlatılan genel statik nesne, exitişleme işlevinin yürütülmesinden önce yok edilir.
+[:::no-loc(atexit):::](../c-runtime-library/reference/:::no-loc(atexit):::.md)Program sonlandırmadan önce yürütülen eylemleri belirtmek için işlevini kullanın. ' A çağrı öncesinde başlatılan genel statik nesne **:::no-loc(atexit):::** , işleme işlevinin yürütülmesi öncesinde yok edilmez :::no-loc(exit)::: .
 
-## <a name="opno-locreturn-statement-in-opno-locmain"></a>main return ifade
+## <a name="no-locreturn-statement-in-no-locmain"></a>:::no-loc(return):::içindeki ifade:::no-loc(main):::
 
-`main` [return](return-statement-cpp.md) bir deyimin `exit` işlevi çağrılırken işlevsel olarak eşdeğerdir. Aşağıdaki örnek göz önünde bulundurun:
+Öğesinden bir [:::no-loc(return):::](:::no-loc(return):::-statement-cpp.md) deyimin verilmesi, `:::no-loc(main):::` işlevi çağırmaya yönelik işlevsel olarak eşdeğerdir `:::no-loc(exit):::` . Aşağıdaki örneği inceleyin:
 
 ```cpp
-// return_statement.cpp
+// :::no-loc(return):::_statement.cpp
 #include <stdlib.h>
-int main()
+int :::no-loc(main):::()
 {
-    exit( 3 );
-    return 3;
+    :::no-loc(exit):::( 3 );
+    :::no-loc(return)::: 3;
 }
 ```
 
-Yukarıdaki örnekteki `exit` ve **return** deyimleri işlevsel olarak aynıdır. Ancak, C++ **void** dışında return türlerine sahip işlevlerin bir değer return gerekir. **return** bildiri, `main`bir değer return sağlar.
+`:::no-loc(exit):::` **`:::no-loc(return):::`** Yukarıdaki örnekteki ve deyimleri işlevsel olarak aynıdır. Ancak C++, :::no-loc(return)::: bir değerden farklı türlere sahip olan işlevleri gerektirir **`:::no-loc(void):::`** :::no-loc(return)::: . **`:::no-loc(return):::`** İfade, :::no-loc(return)::: öğesinden bir değer sağlar `:::no-loc(main):::` .
 
 ## <a name="destruction-of-static-objects"></a>Statik nesneleri yok etme
 
-`exit` çağırdığınızda veya `main`bir **return** ifadesini çalıştırdığınızda statik nesneler, başlatma işlemi için ters sırada (varsa `atexit` çağrısından sonra) yok edilir. Aşağıdaki örnek, başlatma ve Temizleme işlemlerinin nasıl çalıştığını gösterir.
+`:::no-loc(exit):::`Öğesinden bir ekstre çağırdığınızda veya yürüttüğünüzde **`:::no-loc(return):::`** `:::no-loc(main):::` , statik nesneler, başlatma işlemi için ters sırada (varsa, ' a yönelik çağrıdan sonra) yok edilir `:::no-loc(atexit):::` . Aşağıdaki örnek, başlatma ve Temizleme işlemlerinin nasıl çalıştığını gösterir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `sd1` ve `sd2` statik nesneler `main`girişinden önce oluşturulur ve başlatılır. Bu program **return** ifadesini kullanarak sonlandırıldıktan sonra, ilk `sd2` yok edilir ve `sd1`. `ShowData` sınıfı için yıkıcısı bu statik nesnelerle ilişkili dosyaları kapatır.
+Aşağıdaki örnekte, statik nesneler ve ' a `sd1` `sd2` girişinden önce oluşturulur ve başlatılır `:::no-loc(main):::` . Bu program, ifadesini kullanarak sonlandırıldıktan sonra **`:::no-loc(return):::`** , ilk olarak `sd2` yok edilir ve sonra `sd1` . Sınıfın yıkıcısı `ShowData` Bu statik nesnelerle ilişkili dosyaları kapatır.
 
 ```cpp
-// using_exit_or_return1.cpp
+// using_:::no-loc(exit):::_or_:::no-loc(return):::1.cpp
 #include <stdio.h>
 class ShowData {
 public:
@@ -83,7 +83,7 @@ public:
    ~ShowData() { fclose( OutputDev ); }
 
    // Disp function shows a string on the output device.
-   void Disp( char *szData ) {
+   :::no-loc(void)::: Disp( char *szData ) {
       fputs( szData, OutputDev );
    }
 private:
@@ -98,16 +98,16 @@ ShowData sd1 = "CON";
 //   is directed to a file called "HELLO.DAT"
 ShowData sd2 = "hello.dat";
 
-int main() {
+int :::no-loc(main):::() {
    sd1.Disp( "hello to default device\n" );
    sd2.Disp( "hello to file hello.dat\n" );
 }
 ```
 
-Bu kodu yazmak için başka bir yol da blok kapsamı olan `ShowData` nesneleri bildirmek, kapsam dışına çıktıklarında yok edilmesi gerekir:
+Bu kodu yazmanın başka bir yolu `ShowData` da blok kapsamına sahip nesneleri bildirmek, kapsam dışına çıktıklarında yok edilmesi gerekir:
 
 ```cpp
-int main() {
+int :::no-loc(main):::() {
    ShowData sd1, sd2( "hello.dat" );
 
    sd1.Disp( "hello to default device\n" );
@@ -117,4 +117,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[main işlevi ve komut satırı bağımsız değişkenleri](main-function-command-line-args.md)
+[:::no-loc(main):::işlev ve komut satırı bağımsız değişkenleri](:::no-loc(main):::-function-command-line-args.md)

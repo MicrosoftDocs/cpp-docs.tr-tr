@@ -2,12 +2,12 @@
 title: Çeviri birimleri ve bağlantı (C++)
 ms.date: 12/11/2019
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-ms.openlocfilehash: e964a3c70c138caf8848e6a6366097cbfb90f548
-ms.sourcegitcommit: f7ebdfc3a260778c2ef938747cba1376c70ced15
+ms.openlocfilehash: 5a166efc7ae926f6b028c35007b0972d0a652d6d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84108402"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227198"
 ---
 # <a name="translation-units-and-linkage"></a>Çeviri birimleri ve bağlantı
 
@@ -44,7 +44,7 @@ Bazı durumlarda, bir *cpp* dosyasında genel bir değişken veya sınıf bildir
 
 *Ücretsiz bir işlev* , genel veya ad alanı kapsamında tanımlanan bir işlevdir. Const olmayan genel değişkenler ve ücretsiz işlevler varsayılan olarak *dış bağlantıya*sahiptir; Bunlar, programdaki herhangi bir çeviri biriminden görülebilir. Bu nedenle, başka bir genel nesne bu ada sahip olamaz. *İç bağlantıya* sahip bir simge veya *hiçbir bağlantı* , yalnızca bildirildiği çeviri birimi içinde görünür. Bir adın iç bağlantısı olduğunda, aynı ad başka bir çeviri biriminde bulunabilir. Sınıf tanımları veya işlev gövdeleri içinde belirtilen değişkenlerin bağlantısı yok.
 
-Genel bir adı, açıkça **statik**olarak bildirerek iç bağlantıya sahip olacak şekilde zorlayabilirsiniz. Bu, görünürlüğünü, bildirildiği aynı çeviri birimiyle sınırlandırır. Bu bağlamda **statik** , yerel değişkenlere uygulandığında farklı bir şey anlamına gelir.
+Genel bir adı, olarak açıkça bildirerek iç bağlantıya sahip olacak şekilde zorlayabilirsiniz **`static`** . Bu, görünürlüğünü, bildirildiği aynı çeviri birimiyle sınırlandırır. Bu bağlamda, **`static`** yerel değişkenlere uygulandığında farklı bir şey anlamına gelir.
 
 Aşağıdaki nesneler varsayılan olarak iç bağlantıya sahiptir:
 
@@ -53,7 +53,7 @@ Aşağıdaki nesneler varsayılan olarak iç bağlantıya sahiptir:
 - tür tanımları
 - ad alanı kapsamındaki statik nesneler
 
-Bir const nesnesine dış bağlantı vermek için bunu **extern** olarak bildirin ve bir değer atayın:
+Bir const nesnesine dış bağlantı vermek için, olarak bildirin **`extern`** ve bir değer atayın:
 
 ```cpp
 extern const int value = 42;

@@ -19,24 +19,24 @@ helpviewer_keywords:
 - throwing exceptions [C++]
 - throw keyword [C++], throw() vs. throw(...)
 ms.assetid: 15e6a87b-b8a5-4032-a7ef-946c644ba12a
-ms.openlocfilehash: 03f7f6f5a1a2842ad7fb0ba2715fada130277e70
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4108d24b2c285b9d55d514dffae7b2efda1b3f86
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187992"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227068"
 ---
 # <a name="try-throw-and-catch-statements-c"></a>try, throw ve catch Deyimleri (C++)
 
-' C++De özel durum işlemeyi uygulamak için, **TRY**, **throw**ve **catch** ifadelerini kullanırsınız.
+C++ ' da özel durum işlemeyi uygulamak için, **`try`** **`throw`** ve ifadelerini kullanırsınız **`catch`** .
 
-İlk olarak, bir özel durum oluşturabilecek bir veya daha fazla deyimi kapsamak için bir **TRY** bloğu kullanın.
+İlk olarak, **`try`** özel durum oluşturabilecek bir veya daha fazla deyimi kapsamak için bir blok kullanın.
 
-Bir **throw** ifadesi, bir **TRY** bloğunda olağanüstü bir koşulun (genellikle bir hata) oluştuğunu bildirir. Bir **throw** ifadesinin işleneni olarak herhangi bir türdeki bir nesneyi kullanabilirsiniz. Genellikle, bu nesne, hata hakkında bilgi iletmek için kullanılır. Çoğu durumda, [std:: Exception](../standard-library/exception-class.md) sınıfını veya standart kitaplıkta tanımlı türetilmiş sınıflardan birini kullanmanızı öneririz. Bunlardan biri uygun değilse, kendi özel durum sınıfınızı `std::exception`türetmenizi öneririz.
+Bir **`throw`** ifade, bir blok içinde olağanüstü bir koşulun (genellikle bir hata) oluştuğunu bildirir **`try`** . Bir ifadenin işleneni olarak herhangi bir türdeki bir nesneyi kullanabilirsiniz **`throw`** . Genellikle, bu nesne, hata hakkında bilgi iletmek için kullanılır. Çoğu durumda, [std:: Exception](../standard-library/exception-class.md) sınıfını veya standart kitaplıkta tanımlı türetilmiş sınıflardan birini kullanmanızı öneririz. Bunlardan biri uygun değilse, kendi özel durum sınıfınızı ' den türetmenizi öneririz `std::exception` .
 
-Oluşturulan özel durumları işlemek için bir **TRY** bloğunun hemen sonrasında bir veya daha fazla **catch** bloğu uygulayın. Her **catch** bloğu işleyebileceği özel durum türünü belirtir.
+Oluşturulan özel durumları işlemek için, bir bloğu izleyen bir veya daha fazla **`catch`** blok uygulayın **`try`** . Her **`catch`** blok işleyebileceği özel durum türünü belirtir.
 
-Bu örnekte bir **TRY** bloğu ve işleyicileri gösterilmektedir. `GetNetworkResource()` bir ağ bağlantısı üzerinden veri edindiğini ve iki özel durum türünün `std::exception`türetilen Kullanıcı tanımlı sınıflar olduğunu varsayalım. Özel durumların **catch** deyimindeki **const** başvurusuyla yakalandığına dikkat edin. Özel durumları değere göre oluşturmanız ve sabit başvuruya göre yakalamanız önerilir.
+Bu örnekte bir **`try`** blok ve işleyicileri gösterilmektedir. `GetNetworkResource()`Verilerin bir ağ bağlantısı üzerinden elde olduğunu ve iki özel durum türünün ' den türetilen Kullanıcı tanımlı sınıflar olduğunu varsayın `std::exception` . Özel durumların, deyimindeki başvuruya göre yakalandığına dikkat edin **`const`** **`catch`** . Özel durumları değere göre oluşturmanız ve sabit başvuruya göre yakalamanız önerilir.
 
 ## <a name="example"></a>Örnek
 
@@ -74,9 +74,9 @@ MyData GetNetworkResource()
 
 ## <a name="remarks"></a>Açıklamalar
 
-**TRY** yan tümcesinden sonraki kod, kodun korunan bölümüdür. **Throw** ifadesi (yani, bir özel durum *) oluşturur.* **Catch** yan tümcesinden sonraki kod bloğu özel durum işleyicisidir. Bu, **throw** ve **catch** ifadelerindeki türler uyumluysa oluşturulan özel durumu *yakalayan* işleyicidir. **Catch** bloklarındaki tür eşlemeyi yöneten kuralların listesi için bkz. [catch blokları nasıl değerlendirilir](../cpp/how-catch-blocks-are-evaluated-cpp.md). **Catch** ifadesinde bir tür yerine bir üç nokta (...) belirtilmemişse, **catch** bloğu her bir özel durum türünü işler. [/EHa](../build/reference/eh-exception-handling-model.md) seçeneğiyle derlerken, bunlar C yapısal özel durumlar ve sistem tarafından oluşturulan ya da bellek koruma, sıfıra bölme ve kayan nokta ihlalleri gibi zaman uyumsuz özel durumlar içerebilir. **Catch** blokları eşleşen bir tür bulmak için Program sırasıyla işlendiği için, üç nokta işleyicisi ilişkili **TRY** bloğunun son işleyicisi olmalıdır. `catch(...)` dikkatle kullanın; catch bloğu yakalanan özel özel durumu nasıl işleyeceğinizi bilmediği takdirde bir programın devam etmesine izin vermeyin. Genellikle, bir `catch(...)` bloğu hataları günlüğe kaydetmek ve program yürütme durdurulmadan önce özel temizleme gerçekleştirmek için kullanılır.
+Yan tümcesinden sonraki kod, **`try`** kodun korunan bölümüdür. İfade (yani **`throw`** , bir özel durum) *oluşturur*. Yan tümcesinden sonraki kod bloğu **`catch`** özel durum işleyicisidir. Bu, *catches* **`throw`** ve ifadelerindeki türler uyumluysa oluşturulan özel durumu yakalayan işleyicidir **`catch`** . Bloklardaki tür eşlemeyi yöneten kuralların listesi için **`catch`** bkz. [catch blokları nasıl değerlendirilir](../cpp/how-catch-blocks-are-evaluated-cpp.md). **`catch`** İfade bir tür yerine üç nokta (...) belirtiyorsa, **`catch`** blok her bir özel durum türünü işler. [/EHa](../build/reference/eh-exception-handling-model.md) seçeneğiyle derlerken, bunlar C yapısal özel durumlar ve sistem tarafından oluşturulan ya da bellek koruma, sıfıra bölme ve kayan nokta ihlalleri gibi zaman uyumsuz özel durumlar içerebilir. **`catch`** Blok, eşleşen bir tür bulmak için Program sırasıyla işlendiği için, üç nokta işleyicisi ilişkili blok için son işleyici olmalıdır **`try`** . `catch(...)`Dikkatli kullanın; catch bloğu yakalanan özel özel durumu nasıl işleyeceğinizi bilmediği takdirde bir programın devam etmesine izin vermeyin. Genellikle bir `catch(...)` blok, hataları günlüğe kaydetmek ve program yürütmesi durdurulmadan önce özel temizleme gerçekleştirmek için kullanılır.
 
-İşleneni olmayan bir **throw** ifadesi, işlenmekte olan özel durumu yeniden oluşturur. Bu, özgün özel durumun polimorfik türü bilgilerini koruduğundan, özel durum yeniden oluşturulduğunda bu biçim önerilir. Böyle bir ifade yalnızca bir **catch** işleyicisinde veya bir **catch** işleyicisinden çağrılan bir işlevde kullanılmalıdır. Yeniden oluşturulmuş özel durum nesnesi bir kopya değil, özgün özel durum nesnesidir.
+İşleneni olmayan bir **`throw`** ifade, işlenmekte olan özel durumu yeniden oluşturur. Bu, özgün özel durumun polimorfik türü bilgilerini koruduğundan, özel durum yeniden oluşturulduğunda bu biçim önerilir. Böyle bir ifade yalnızca bir **`catch`** işleyicide veya bir işleyiciden çağrılan bir işlevde kullanılmalıdır **`catch`** . Yeniden oluşturulmuş özel durum nesnesi bir kopya değil, özgün özel durum nesnesidir.
 
 ```cpp
 try {
@@ -93,7 +93,7 @@ catch(...) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[İşlenilmeyen C++ Özel Durumları](../cpp/unhandled-cpp-exceptions.md)<br/>
+[Özel durumlar ve hata işleme için modern C++ en iyi uygulamaları](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[İşlenmeyen C++ özel durumları](../cpp/unhandled-cpp-exceptions.md)<br/>
 [__uncaught_exception](../c-runtime-library/reference/uncaught-exception.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - protected keyword [C++], member access
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
-ms.openlocfilehash: 79ca081726c1f26a251763e2533ade730f075e2f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 25b25447737a075bcf4f02f1c3049c996fb4c678
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317265"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227172"
 ---
 # <a name="protected-c"></a>protected (C++)
 
@@ -26,7 +26,7 @@ protected base-class
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Korumalı** anahtar kelime, *üye listesindeki* sınıf üyelerine bir sonraki erişim belirticisine **(ortak** veya **özel)** veya sınıf tanımının sonuna kadar erişim belirtir. **Korumalı** olarak bildirilen sınıf üyeleri yalnızca aşağıdakiler tarafından kullanılabilir:
+**`protected`** Anahtar sözcüğü, *üye listesindeki* sınıf üyelerine bir sonraki erişim tanımlayıcısına ( **`public`** veya **`private`** ) veya sınıf tanımının sonuna kadar erişimi belirtir. Olarak belirtilen sınıf üyeleri **`protected`** yalnızca şunlar tarafından kullanılabilir:
 
 - Başlangıçta bu üyeleri bildiren sınıfın üye işlevleri.
 
@@ -36,20 +36,20 @@ protected base-class
 
 - Korumalı üyelere özel erişimi de olan, doğrudan özel olarak türetilmiş sınıflar.
 
-Bir taban sınıfın adından önce, **korumalı** anahtar kelime, taban sınıfın ortak ve korumalı üyelerinin türetilmiş sınıflarının korunan üyeleri olduğunu belirtir.
+Bir temel sınıfın adından önce, **`protected`** anahtar sözcüğü, temel sınıfın ortak ve korunan üyelerinin, türetilmiş sınıflarının korunan üyeleri olduğunu belirtir.
 
-Korumalı üyeler, yalnızca beyan edildikleri sınıfın üyeleri tarafından erişilebilen **özel** üyeler kadar özel değildir, ancak herhangi bir işlevde erişilebilen kamu üyeleri kadar **genel** değildirler.
+Korunan Üyeler **`private`** , yalnızca bildirildiği sınıfın üyeleri tarafından erişilebilen, ancak **`public`** herhangi bir işlevde erişilebilen üye olarak ortak olmayan üyeler olarak özel değildir.
 
-**Statik** olarak da bildirilen korumalı üyeler, türemiş bir sınıfın herhangi bir arkadaşı veya üye işlevi tarafından erişilebilir. **Statik** olarak bildirilmemiş korumalı üyeler, türemiş bir sınıftaki arkadaşlar ve üye işlevler için yalnızca türemiş sınıfın işaretçisi, başvurusu veya nesnesi aracılığıyla erişilebilir.
+Aynı zamanda olarak da belirtilen korumalı üyelere **`static`** , türetilmiş bir sınıfın herhangi bir arkadaşınız veya üye işleviyle erişilebilir. Olarak bildirilmemiş Korunan üyelere, türetilmiş bir **`static`** sınıftaki arkadaş ve üye işlevleri yalnızca türetilmiş sınıfın işaretçisi, başvuru veya nesne aracılığıyla erişilebilir.
 
-İlgili bilgiler için, [sınıf üyelerine erişimi denetlemede](member-access-control-cpp.md) [arkadaş,](../cpp/friend-cpp.md) [ortak,](../cpp/public-cpp.md) [özel](../cpp/private-cpp.md)ve üye erişim tablosuna bakın.
+İlgili bilgiler için, [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md)içindeki [arkadaş](../cpp/friend-cpp.md), [genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md)ve üye erişim tablosuna bakın.
 
 ## <a name="clr-specific"></a>/clr Özel
 
-CLR türlerinde, C++ erişim belirtici anahtar kelimeler **(genel,** **özel**ve **korumalı)** derlemelerle ilgili türlerin ve yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için [Üye Erişim Denetimi'ne](member-access-control-cpp.md)bakın.
+CLR türlerinde, C++ erişim belirtici anahtar sözcükleri ( **`public`** , **`private`** ve **`protected`** ) derlemelerle ilgili olarak türlerin ve yöntemlerin görünürlüğünü etkileyebilir. Daha fazla bilgi için bkz. [üye Access Control](member-access-control-cpp.md).
 
 > [!NOTE]
-> [/LN](../build/reference/ln-create-msil-module.md) ile derlenen dosyalar bu davranışdan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.
+> [/Ln](../build/reference/ln-create-msil-module.md) ile derlenen dosyalar bu davranıştan etkilenmez. Bu durumda, tüm yönetilen sınıflar (ortak veya özel) görünür.
 
 ## <a name="end-clr-specific"></a>END /clr Özel
 
@@ -89,5 +89,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıf Üyelerine Erişimi Denetleme](member-access-control-cpp.md)<br/>
+[Sınıf üyelerine erişimi denetleme](member-access-control-cpp.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __raise keyword [C++]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-ms.openlocfilehash: eb3ab24378071663b2a6a1abab700b81c3172419
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: db6ba1693e4d3144b95530646b061e9cd7a58a5a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317227"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227133"
 ---
 # <a name="__raise"></a>__raise
 
@@ -26,9 +26,9 @@ __raise method-declarator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Daha fazla bilgi için [etkinliğe](../extensions/event-cpp-component-extensions.md) bakın.
+Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Daha fazla bilgi için bkz. [olay](../extensions/event-cpp-component-extensions.md) .
 
-**__raise** anahtar kelimesi, olay olmayan bir sözcüğü çağırırsanız bir hatanın yayımedilmesine neden olur.
+**`__raise`** Bir olay olmayan bir çağrı yaparsanız anahtar sözcüğü bir hata oluşturulmasına neden olur.
 
 > [!NOTE]
 > Şablonlu bir alan veya yapı, olay içeremez.
@@ -62,5 +62,5 @@ int main() {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[Olay Yönetimi](../cpp/event-handling.md)<br/>
+[Olay Işleme](../cpp/event-handling.md)<br/>
 [Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)

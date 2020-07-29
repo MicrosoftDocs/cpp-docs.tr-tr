@@ -8,16 +8,16 @@ helpviewer_keywords:
 - operator = [C++], variant
 - = operator [C++], with specific Visual C++ objects
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
-ms.openlocfilehash: 402251592a87b723d75fd1b2cd0786be7b17dbfc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2db26a378526cd5f48992cb32ea46e9677125e66
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187628"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226964"
 ---
 # <a name="_variant_toperator-"></a>_variant_t::operator =
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -119,40 +119,40 @@ _variant_t& operator=(
 
 İşleç, `_variant_t` nesnesine yeni bir değer atar:
 
-- **operator = (**  *varSrc*  **)** Var olan bir `VARIANT` `_variant_t` nesnesine atar.
+- **operator = (**  *varSrc*  **)** Varolan bir `VARIANT` `_variant_t` nesneye atar.
 
-- **operator = (**  *pvarsrc*  **)** Var olan bir `VARIANT` `_variant_t` nesnesine atar.
+- **operator = (**  *pvarsrc*  **)** Varolan bir `VARIANT` `_variant_t` nesneye atar.
 
-- **operator = (**  *var_t_Src*  **)** Var olan bir `_variant_t` nesnesini bir `_variant_t` nesnesine atar.
+- **operator = (**  *var_t_Src*  **)** Varolan bir `_variant_t` nesneyi bir nesnesine atar `_variant_t` .
 
-- **operator = (** *SSRC* **)** `_variant_t` nesnesine bir **kısa** tamsayı değeri atar.
+- **operator = (**  *SSRC*  **)** **`short`** Bir nesneye tamsayı değeri atar `_variant_t` .
 
-- **operator = (** `lSrc` **)** `_variant_t` nesnesine **uzun** bir tamsayı değeri atar.
+- **operator = (** `lSrc` **)** **`long`** bir nesneye tamsayı değeri atar `_variant_t` .    
 
-- **operator = (** *fltsrc* **)** `_variant_t` nesnesine bir **float** sayısal değeri atar.
+- **operator = (**  *fltsrc*  **)** **`float`** Bir nesneye sayısal değer atar `_variant_t` .
 
-- **operator = (** *dblsrc* **)** `_variant_t` nesnesine bir **Double** sayısal değer atar.
+- **operator = (**  *dblsrc*  **)** **`double`** Bir nesneye sayısal değer atar `_variant_t` .
 
-- **operator = (**  *cysrc*  **)** Bir `CY` nesnesini `_variant_t` nesnesine atar.
+- **operator = (**  *cysrc*  **)** Nesnesine bir `CY` nesnesi atar `_variant_t` .
 
-- **operator = (**  *bstrsrc*  **)** Bir `BSTR` nesnesini `_variant_t` nesnesine atar.
+- **operator = (**  *bstrsrc*  **)** Nesnesine bir `BSTR` nesnesi atar `_variant_t` .
 
-- **operator = (**  *wstrSrc*  **)** `_variant_t` nesnesine bir Unicode dizesi atar.
+- **operator = (**  *wstrSrc*  **)** Bir nesneye Unicode dizesi atar `_variant_t` .
 
-- **operator = (** `strSrc` **)** `_variant_t` nesnesine çok baytlı bir dize atar.
+- **operator = (** `strSrc` **)** bir nesneye çok baytlı bir dize atar `_variant_t` .    
 
-- **operator = (** `bSrc` **)** `_variant_t` nesnesine bir **bool** değeri atar.
+- **operator = (** `bSrc` **)** **`bool`** bir nesnesine bir değer atar `_variant_t` .  
 
-- **operator = (**  *pdispsrc*  **)** Bir `VT_DISPATCH` nesnesini `_variant_t` nesnesine atar.
+- **operator = (**  *pdispsrc*  **)** Nesnesine bir `VT_DISPATCH` nesnesi atar `_variant_t` .
 
-- **operator = (**  *piunknownsrc*  **)** Bir `VT_UNKNOWN` nesnesini `_variant_t` nesnesine atar.
+- **operator = (**  *piunknownsrc*  **)** Nesnesine bir `VT_UNKNOWN` nesnesi atar `_variant_t` .
 
-- **operator = (** *decsrc* **)** `_variant_t` nesnesine bir `DECIMAL` değeri atar.
+- **operator = (**  *decsrc*  **)** Nesnesine bir `DECIMAL` değer atar `_variant_t` .
 
-- **operator = (** `bSrc` **)** `_variant_t` nesnesine bir `BYTE` değeri atar.
+- **operator = (** `bSrc` **)** `BYTE` bir nesnesine bir değer atar `_variant_t` .  
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_variant_t Sınıfı](../cpp/variant-t-class.md)
+[_variant_t sınıfı](../cpp/variant-t-class.md)

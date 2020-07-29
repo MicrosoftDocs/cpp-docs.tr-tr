@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
-ms.openlocfilehash: 41e06cc50f36a077a34d992c416a543e5bf9b593
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a7ce730b8d723a839c5b509c825cff84111ca613
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371471"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226925"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits Yapısı
 
-Başharfe getirilmemiş bir tutamacın ortak özelliklerini tanımlar.
+Başlatılmamış tanıtıcının ortak özelliklerini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,18 +30,18 @@ struct HANDLENullTraits;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Adı   | Açıklama
+Ad   | Açıklama
 ------ | ---------------------
-`Type` | HANDLE ile eş anlamlıdır.
+`Type` | TANıTıCı için eş anlamlı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                                  | Açıklama
+Ad                                                  | Açıklama
 ----------------------------------------------------- | -----------------------------
-[HANDLENullTraits::Kapat](#close)                     | Belirtilen tutamacı kapatır.
-[HANDLENullTraits::GetInvalidValue](#getinvalidvalue) | Geçersiz bir tutamacı temsil eder.
+[Handlenullnitelikler:: Close](#close)                     | Belirtilen tanıtıcıyı kapatır.
+[Handlenullnitelikler:: GetInvalidValue](#getinvalidvalue) | Geçersiz bir tanıtıcıyı temsil eder.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,13 +49,13 @@ Adı                                                  | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Ad alanı:** Microsoft::WRL::Sarmalayıcılar::HandleTraits
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar:: Handlenitelikler
 
-## <a name="handlenulltraitsclose"></a><a name="close"></a>HANDLENullTraits::Kapat
+## <a name="handlenulltraitsclose"></a><a name="close"></a>Handlenullnitelikler:: Close
 
-Belirtilen tutamacı kapatır.
+Belirtilen tanıtıcıyı kapatır.
 
 ```cpp
 inline static bool Close(
@@ -65,16 +65,16 @@ inline static bool Close(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Kapama kıyı.
+*olsun*<br/>
+Kapatılacak tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*h* kolu başarıyla kapalı ise **doğru;** aksi takdirde, **yanlış**.
+**`true`** tanıtıcı *h* başarıyla kapatılırsa Aksi takdirde, **`false`** .
 
-## <a name="handlenulltraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>HANDLENullTraits::GetInvalidValue
+## <a name="handlenulltraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>Handlenullnitelikler:: GetInvalidValue
 
-Geçersiz bir tutamacı temsil eder.
+Geçersiz bir tanıtıcıyı temsil eder.
 
 ```cpp
 inline static Type GetInvalidValue();
@@ -82,4 +82,4 @@ inline static Type GetInvalidValue();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman `nullptr` döndürür.
+Her zaman döndürülür **`nullptr`** .

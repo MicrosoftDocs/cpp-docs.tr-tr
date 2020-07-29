@@ -43,18 +43,18 @@ helpviewer_keywords:
 - strtoul_l function
 - tcstoul function
 ms.assetid: 38f2afe8-8178-4e0b-8bbe-d5c6ad66e3ab
-ms.openlocfilehash: 9e0e466893aedb565fcd5852c6768ecfc620c611
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ceeb541a44d969db471cb2ba798bdc13079b5759
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912398"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189265"
 ---
 # <a name="strtoul-_strtoul_l-wcstoul-_wcstoul_l"></a>strtoul, _strtoul_l, wcstoul, _wcstoul_l
 
 Dizeleri işaretsiz uzun tamsayı değerine dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 unsigned long strtoul(
@@ -92,7 +92,7 @@ Taramayı durduran karakter işaretçisi.
 *base*<br/>
 Kullanılacak sayı temeli.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -103,7 +103,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, *strSource* giriş dizesini **işaretsiz** bir **Long**değerine dönüştürür.
+Bu işlevlerin her biri, *strSource* giriş dizesini bir öğesine dönüştürür **`unsigned long`** .
 
 **strtoul** , bir sayının parçası olarak tanıyamadığı Ilk karakterde *strSource* dize okumasını durduruyor. Bu, Sonlandırıcı null karakteri olabilir veya *tabandan*büyük veya buna eşit ilk sayısal karakter olabilir. Yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*; içindeki taban karakterinin tanınmasını belirler. daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **strtoul** ve **wcstoul** geçerli yerel ayarı kullanır; **_strtoul_l** ve **_wcstoul_l** , bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -122,18 +122,18 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 **strtoul** , *strSource* 'un aşağıdaki biçimdeki bir dizeyi işaret etmek istiyor:
 
-> [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **x** }]] [*basamaklar* &#124; *harfler*]
+> [*boşluk*] [{ **+** &#124; **-** }] [**0** [{ **x** &#124; **x** }]] [*rakam* &#124; *harf*]
 
-Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır. *rakamlar* bir veya daha fazla ondalık basamaklıdır. *harfler* , ' a '-' z ' (veya ' a '-' z ') harflerinden biridir. Bu forma uymayan ilk karakter taramayı durduruyor. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Base* 0 Ise, *strSource* tarafından işaret edilen dizenin ilk karakterleri, temeli belirlemede kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. Taban aralığının dışındaki ilk karakter taramayı sonlandırır. Örneğin, *Base* 0 ise ve taranan ilk karakter ' 0 ' ise, sekizlik bir tamsayı varsayılır ve ' 8 ' veya ' 9 ' karakteri taramayı durduracaktır. **strtoul** , artı (**+**) ya da eksi (**-**) işareti ön ekine izin verir; Baştaki eksi işareti, dönüş değerinin nelenmiş olduğunu gösterir.
+Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır. *rakamlar* bir veya daha fazla ondalık basamaklıdır. *harfler* , ' a '-' z ' (veya ' a '-' z ') harflerinden biridir. Bu forma uymayan ilk karakter taramayı durduruyor. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Base* 0 Ise, *strSource* tarafından işaret edilen dizenin ilk karakterleri, temeli belirlemede kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. Taban aralığının dışındaki ilk karakter taramayı sonlandırır. Örneğin, *Base* 0 ise ve taranan ilk karakter ' 0 ' ise, sekizlik bir tamsayı varsayılır ve ' 8 ' veya ' 9 ' karakteri taramayı durduracaktır. **strtoul** , artı ( **+** ) ya da eksi ( **-** ) işareti ön ekine izin verir; baştaki eksi işareti, dönüş değerinin nelenmiş olduğunu gösterir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtoul**|\<Stdlib. h>|
-|**wcstoul**|\<Stdlib. h> veya \<wchar. h>|
-|**_strtoul_l**|\<Stdlib. h>|
-|**_wcstoul_l**|\<Stdlib. h> veya \<wchar. h>|
+|**strtoul**|\<stdlib.h>|
+|**wcstoul**|\<stdlib.h> veya \<wchar.h>|
+|**_strtoul_l**|\<stdlib.h>|
+|**_wcstoul_l**|\<stdlib.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -144,7 +144,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [localeconv](localeconv.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>

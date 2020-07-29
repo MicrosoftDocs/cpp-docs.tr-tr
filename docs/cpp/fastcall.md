@@ -8,32 +8,32 @@ f1_keywords:
 helpviewer_keywords:
 - __fastcall keyword [C++]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
-ms.openlocfilehash: d4b650542a3a85c8f0008374abef02686c5491a3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 420552dd62c46ab5c2fa7e201387f258617f8453
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188928"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227484"
 ---
 # <a name="__fastcall"></a>__fastcall
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-**__Fastcall** çağırma kuralı, işlevlerdeki bağımsız değişkenlerin, mümkün olduğunda yazmaçlara geçirileceğini belirtir. Bu çağırma kuralı yalnızca x86 mimarisi için geçerlidir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
+**`__fastcall`** Çağırma kuralı, işlevler için bağımsız değişkenlerin, mümkün olduğunda yazmaçlara geçirileceğini belirtir. Bu çağırma kuralı yalnızca x86 mimarisi için geçerlidir. Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
 
 |Öğe|Uygulama|
 |-------------|--------------------|
 |Bağımsız değişken geçirme sırası|Bağımsız değişken listesinde soldan sağa bulunan ilk iki DWORD veya daha küçük bağımsız değişken ECX ve EDX yazmaçlarında geçirilir; Tüm diğer bağımsız değişkenler yığına sağdan sola geçirilir.|
 |Yığın bakımı sorumluluğu|Çağrılan işlev, yığındaki bağımsız değişkenleri pop 'ları.|
-|Ad düzenleme kuralı|Oturum açma (\@), adlara ön ek olarak eklenir; bir at işareti ve ardından parametre listesindeki bayt sayısı (ondalık), adlara son olarak sabitlenmiştir.|
+|Ad düzenleme kuralı|At işareti ( \@ ), adlara ön ek olarak, parametre listesindeki bayt sayısı (ondalık olarak), adlara son olarak sabitlenmiştir.|
 |Durum çevirisi kuralları|Durum çevirisi yapılmaz.|
 
 > [!NOTE]
 > Gelecekteki derleyici sürümleri, parametreleri depolamak için farklı Yazmaçları kullanabilir.
 
-[/Gr](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneğinin kullanılması, işlev çakışan bir öznitelik kullanılarak bildirilemediği veya işlevin adı `main`olmadığı sürece modüldeki her işlevin **__fastcall** olarak derlenmesine neden olur.
+[/Gr](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneğinin kullanılması, **`__fastcall`** işlev çakışan bir öznitelik kullanılarak bildirilemediği veya işlevin adı olduğu sürece, modüldeki her işlevin olarak derlenmesine neden olur `main` .
 
-**__Fastcall** anahtar sözcüğü, ARM ve x64 mimarileri hedefleyen derleyiciler tarafından kabul edilir ve yok sayılır; bir x64 yongasında, kurala göre ilk dört bağımsız değişken mümkün olduğunda yazmaçlara geçirilir ve yığında ek bağımsız değişkenler geçirilir. Daha fazla bilgi için bkz. [x64 çağırma kuralı](../build/x64-calling-convention.md). ARM yongasında, en fazla dört tamsayı bağımsız değişkeni ve sekiz kayan nokta bağımsız değişkeni, yazmaçlara geçirilebilir ve ek bağımsız değişkenler yığına geçirilir.
+**`__fastcall`** Anahtar sözcüğü, ARM ve x64 mimarileri hedefleyen derleyiciler tarafından kabul edilir ve yok sayılır; bir x64 yongasında, kurala göre, ilk dört bağımsız değişken mümkün olduğunda yazmaçlara geçirilir ve yığında ek bağımsız değişkenler geçirilir. Daha fazla bilgi için bkz. [x64 çağırma kuralı](../build/x64-calling-convention.md). ARM yongasında, en fazla dört tamsayı bağımsız değişkeni ve sekiz kayan nokta bağımsız değişkeni, yazmaçlara geçirilebilir ve ek bağımsız değişkenler yığına geçirilir.
 
 Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımını ele alalım:
 
@@ -55,11 +55,11 @@ void CMyClass::mymethod() { return; }
 void __fastcall CMyClass::mymethod() { return; }
 ```
 
-Önceki sürümlerle uyumluluk için, [/za \(dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, **_fastcall** **__fastcall** için bir eş anlamlı.
+Önceki sürümlerle uyumluluk için, **_fastcall** **`__fastcall`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde _fastcall için bir eş anlamlı.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `DeleteAggrWrapper` işlev, Yazmaçlarda bağımsız değişkenleri geçti:
+Aşağıdaki örnekte, işlev, `DeleteAggrWrapper` Yazmaçlarda bağımsız değişkenleri geçti:
 
 ```cpp
 // Example of the __fastcall keyword
@@ -74,5 +74,5 @@ typedef BOOL (__fastcall *funcname_ptr)(void * arg1, const char * arg2, DWORD fl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Bağımsız değişken geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -22,18 +22,18 @@ helpviewer_keywords:
 - __int8 keyword [C++]
 - __int64 keyword [C++]
 ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
-ms.openlocfilehash: 4e793f23581f7dc62a39fcd8c5c504fb5a2ccbc9
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 7888a282fffbaa2a23783c3875e02838fd0b1826
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301476"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227406"
 ---
 # <a name="__int8-__int16-__int32-__int64"></a>__int8, __int16, __int32, __int64
 
-**Microsoft 'a özgü**
+**Microsoft'a özgü**
 
-Microsoft C/C++ özellikleri, boyutlandırılmış tamsayı türlerini destekler. 8, 16-, 32-veya 64-bit tamsayı değişkenlerini **__int**<em>n</em> tür belirleyicisi kullanarak bildirebilirsiniz; burada *n* 8, 16, 32 veya 64.
+Microsoft C/C++ özellikleri, boyutlandırılmış tamsayı türlerini destekler. 8, 16, **`__intN`** ***`N`*** 32 veya 64 olan tür belirticisini kullanarak 8, 16-, 32-veya 64-bit tamsayı değişkenleri bildirebilirsiniz.
 
 Aşağıdaki örnekte, bu tür boyutlandırılmış tamsayıların her biri için bir değişken bildirilir:
 
@@ -44,13 +44,13 @@ __int32 nLarge;     // Declares 32-bit integer
 __int64 nHuge;      // Declares 64-bit integer
 ```
 
-**__İnt8**, **__int16**ve **__INT32** türleri aynı boyutta olan ANSI türleri için eş anlamlılardır ve birden çok platformda aynı şekilde davranan taşınabilir kod yazmak için yararlıdır. **__İnt8** veri türü **char**türü ile eşanlamlı, **__int16** tür **Short**ile eşanlamlı ve **__int32** **int**türü ile eşanlamlı bir tür. **__İnt64** türü **Long Long**ile eşanlamlı bir tür.
+, **`__int8`** Ve türleri **`__int16`** **`__int32`** aynı boyutta olan ANSI türleri için eş anlamlılardır ve birden çok platformda aynı şekilde davranan taşınabilir kod yazmak için yararlıdır. **`__int8`** Veri türü türü ile eşanlamlıdır, türü ile eşanlamlıdır **`char`** **`__int16`** **`short`** ve **`__int32`** türüyle **`int`** eşanlamlı olur. **`__int64`** Tür, türü ile eşanlamlıdır **`long long`** .
 
-Önceki sürümlerle uyumluluk için **_int8**, **_int16**, **_int32**ve **_Int64** , [/za __int8 dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde **__int16**, **__int32**, **__int64**ve **\(** için eş anlamlılardır.
+Önceki sürümlerle uyumluluk için,,, ve,,, ve **`_int8`** **`_int16`** **`_int32`** **`_int64`** için eş anlamlılardır, **`__int8`** **`__int16`** **`__int32`** ve **`__int64`** derleyici seçeneği [ `/Za` \( devre dışı bırak ' ı devre dışı bırakır)](../build/reference/za-ze-disable-language-extensions.md) belirtilirse.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir __int*xx* parametresinin **int**'e Yükseltilecek olduğunu gösterir:
+Aşağıdaki örnek, bir `__intN` parametresinin Yükseltilecek olduğunu gösterir **`int`** :
 
 ```cpp
 // sized_int_types.cpp
@@ -73,10 +73,8 @@ int main()
 func
 ```
 
-**SON Microsoft 'a özgü**
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [Yerleşik türler](../cpp/fundamental-types-cpp.md)<br/>
-[Veri Türü Aralıkları](../cpp/data-type-ranges.md)<br/>
+[Veri türü aralıkları](../cpp/data-type-ranges.md)<br/>

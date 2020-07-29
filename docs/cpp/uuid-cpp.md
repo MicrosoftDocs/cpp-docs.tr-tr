@@ -7,18 +7,18 @@ helpviewer_keywords:
 - __declspec keyword [C++], uuid
 - uuid __declspec keyword
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
-ms.openlocfilehash: 09e40d38382bea0f902fda03d15d24e0cf1a627d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f775820fe7f84c5081a213ca9ecb07d617716a9d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187810"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226990"
 ---
 # <a name="uuid-c"></a>uuid (C++)
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Derleyici, bir GUID veya tanımlanmış bir sınıfa veya yapıya (yalnızca tam COM nesne tanımları) **UUID** özniteliğiyle iliştirir.
+Derleyici, belirtilen veya tanımlanmış bir sınıfa veya yapıya bir GUID ekler (yalnızca tam COM nesne tanımları) **`uuid`** özniteliği ile.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -28,14 +28,14 @@ __declspec( uuid("ComObjectGUID") ) declarator
 
 ## <a name="remarks"></a>Açıklamalar
 
-**UUID** özniteliği bağımsız değişkeni olarak bir dize alır. Bu dize, **{}** sınırlayıcılarını içeren veya içermeyen normal kayıt defteri BIÇIMINDEKI bir GUID 'yi adlandırır. Örneğin:
+**`uuid`** Özniteliği bağımsız değişkeni olarak bir dize alır. Bu dize, **{}** sınırlayıcılarını içeren veya içermeyen normal kayıt defteri BIÇIMINDEKI bir GUID 'yi adlandırır. Örnek:
 
 ```cpp
 struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;
 struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;
 ```
 
-Bu öznitelik bir yeniden bildirimde uygulanabilir. Bu, sistem üstbilgilerinin `IUnknown`gibi arabirimlerin tanımlarını sağlamasına izin verir ve diğer bir başlıktaki (örneğin \<Comdef. h >) bir yeniden bildirimi GUID sağlar.
+Bu öznitelik bir yeniden bildirimde uygulanabilir. Bu, sistem üstbilgilerinin, gibi arabirimlerin tanımlarını sağlamasına `IUnknown` ve diğer bir başlıktaki (gibi) yeniden BILDIRIME GUID sağlamak için izin verir \<comdef.h> .
 
 Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) , Kullanıcı tanımlı bir türe eklenen sabit GUID 'i almak için uygulanabilir.
 
@@ -44,4 +44,4 @@ Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) , Kullanıcı tanıml�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__declspec](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

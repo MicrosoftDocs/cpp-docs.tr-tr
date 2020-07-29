@@ -11,61 +11,61 @@ helpviewer_keywords:
 - operators [C++], overloading
 - operator overloading
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
-ms.openlocfilehash: a16f68088ffffd6c3cf38f5ae3adda5f2d59fb57
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 822bd5efb3125e69ff60aa42ba6419969cace403
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188577"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227237"
 ---
 # <a name="operator-overloading"></a>İşleç aşırı yüklemesi
 
-**İşleç** anahtar sözcüğü, bir sınıfın örneklerine uygulandığında hangi *işleç-symbol* anlamına geldiğini belirten bir işlev bildirir. Bu, işleci birden çok anlamı veya "aşırı yükleme" sağlar. Derleyici, işlenenlerinin türlerini inceleyerek bir işlecin farklı anlamları arasında ayrım yapar.
+**`operator`** Anahtar sözcüğü, bir sınıfın örneklerine uygulandığında *işleç sembolünün* ne anlama geldiğini belirten bir işlev bildirir. Bu, işleci birden çok anlamı veya "aşırı yükleme" sağlar. Derleyici, işlenenlerinin türlerini inceleyerek bir işlecin farklı anlamları arasında ayrım yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *tür* **işleci** *işleci-symbol* **(** *parametre-liste* **)**
+> *tür* **`operator`** *operator-symbol* **(** *parametre-listesi* **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
 Birçok yerleşik işlecin işlevini küresel olarak veya sınıf sınıfı temelinde yeniden tanımlayabilirsiniz. Aşırı yüklenmiş işleçler işlev olarak uygulanır.
 
-Aşırı yüklenmiş bir işlecin adı **operator** *x*, burada *x* , aşağıdaki tabloda göründüğü gibi işleçtir. Örneğin, toplama işlecini aşırı yüklemek için **işleç +** adlı bir işlev tanımlarsınız. Benzer şekilde, toplama/atama işlecini aşırı yüklemek için **+=** , **+ =** adlı bir işlev tanımlayın.
+Daha aşırı yüklenmiş bir işlecin adı **`operator`** *x*olur, burada *x* , aşağıdaki tabloda göründüğü gibi işleçtir. Örneğin, toplama işlecini aşırı yüklemek için **işleç +** adlı bir işlev tanımlarsınız. Benzer şekilde, toplama/atama işlecinin yükünü aşırı yüklemek için **+=** , **işleç + =** adlı bir işlev tanımlayın.
 
 ### <a name="redefinable-operators"></a>Yeniden tanımlanabilir operatörler
 
 |İşleç|Ad|Tür|
 |--------------|----------|----------|
 |**,**|Virgül|İkili|
-|**!**|Mantıksal DEĞIL|Li|
+|**!**|Mantıksal NOT|Birli|
 |**!=**|Eşitsizlik|İkili|
-|**%**|Modulus|İkili|
+|**%**|Mod|İkili|
 |**%=**|Mod ataması|İkili|
 |**&**|Bit düzeyinde AND|İkili|
-|**&**|Şunun adresi:|Li|
+|**&**|Şunun adresi:|Birli|
 |**&&**|Mantıksal VE|İkili|
 |**&=**|Bit düzeyinde AND ataması|İkili|
 |**( )**|İşlev çağrısı|—|
-|**( )**|Cast Işleci|Li|
+|**( )**|Cast Işleci|Birli|
 |**&#42;**|Çarpma|İkili|
-|**&#42;**|İşaretçi başvurusu|Li|
+|**&#42;**|İşaretçi başvurusu|Birli|
 |**&#42;=**|Çarpma ataması|İkili|
 |**+**|Toplama|İkili|
-|**+**|Birli artı|Li|
-|**++**|Artış <sup>1</sup>|Li|
+|**+**|Birli artı|Birli|
+|**++**|Artış <sup>1</sup>|Birli|
 |**+=**|Toplama ataması|İkili|
 |**-**|Çıkarma|İkili|
-|**-**|Tekli olumsuzlama|Li|
-|**--**|Azaltma <sup>1</sup>|Li|
+|**-**|Tekli olumsuzlama|Birli|
+|**--**|Azaltma <sup>1</sup>|Birli|
 |**-=**|Çıkarma ataması|İkili|
 |**->**|Üye seçimi|İkili|
 |**->&#42;**|Üye işaretçisi seçimi|İkili|
-|**/**|Bölme|İkili|
+|**/**|Bölüm|İkili|
 |**/=**|Bölme ataması|İkili|
 |**\<**|Küçüktür|İkili|
 |**<<**|Sola kaydırma|İkili|
 |**<<=**|Sola kaydırma ataması|İkili|
-|**<=**|Küçüktür veya eşittir|İkili|
+|**<=**|Küçük veya eşittir|İkili|
 |**=**|Atama|İkili|
 |**==**|Eşitlik|İkili|
 |**>**|Büyüktür|İkili|
@@ -77,11 +77,11 @@ Aşırı yüklenmiş bir işlecin adı **operator** *x*, burada *x* , aşağıda
 |**^=**|Dışlamalı veya atama|İkili|
 |**&#124;**|Bit düzeyinde kapsamalı OR|İkili|
 |**&#124;=**|Bit düzeyinde kapsamalı OR ataması|İkili|
-|**&#124;&#124;**|Mantıksal VEYA|İkili|
-|**~**|Birinin tamamlayıcısı|Li|
-|**sil**|Sil|—|
-|**new**|Yeni|—|
-|dönüştürme işleçleri|dönüştürme işleçleri|Li|
+|**&#124;&#124;**|Mantıksal EĞER|İkili|
+|**~**|Birinin tamamlayıcısı|Birli|
+|**`delete`**|Sil|—|
+|**`new`**|Yeni|—|
+|dönüştürme işleçleri|dönüştürme işleçleri|Birli|
 
 <sup>1</sup> birli artırma ve azaltma işleçlerinin iki sürümü var: preıncrement ve postıncrement.
 
@@ -89,11 +89,11 @@ Daha fazla bilgi için bkz. [operatör aşırı yüklemesi Için genel kurallar]
 
 - [Birli Işleçler](../cpp/overloading-unary-operators.md)
 
-- [İkili İşleçler](../cpp/binary-operators.md)
+- [İkili Işleçler](../cpp/binary-operators.md)
 
 - [Atama](../cpp/assignment.md)
 
-- [İşlev Çağrısı](../cpp/function-call-cpp.md)
+- [İşlev çağrısı](../cpp/function-call-cpp.md)
 
 - [Alt Simge Oluşturma](../cpp/subscripting.md)
 
@@ -101,16 +101,16 @@ Daha fazla bilgi için bkz. [operatör aşırı yüklemesi Için genel kurallar]
 
 - [Artış ve azaltma](../cpp/increment-and-decrement-operator-overloading-cpp.md).
 
-- [Kullanıcı Tanımlı Tür Dönüşümleri](../cpp/user-defined-type-conversions-cpp.md)
+- [Kullanıcı tanımlı tür dönüştürmeleri](../cpp/user-defined-type-conversions-cpp.md)
 
-Aşağıdaki tabloda gösterilen işleçler aşırı yüklenemez. Tablo önişlemci sembolleri **#** ve **##** içerir.
+Aşağıdaki tabloda gösterilen işleçler aşırı yüklenemez. Tablo önişlemci sembolleri **#** ve içerir **##** .
 
 ### <a name="nonredefinable-operators"></a>Yeniden tanımlanabilir Işleçler
 
 |İşleç|Ad|
 |-|-|
 |**.**|Üye seçimi|
-|**.&#42;**|Üye işaretçisi seçimi|
+|**. &#42;**|Üye işaretçisi seçimi|
 |**::**|Kapsam çözümlemesi|
 |**? :**|Koşullu|
 |**#**|Önişlemci dizeye Dönüştür|
@@ -125,7 +125,7 @@ pt.operator+( 3 );  // Call addition operator to add 3 to pt.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek iki karmaşık sayı eklemek için **+** işlecini aşırı yükler ve sonucu döndürür.
+Aşağıdaki örnek **+** iki karmaşık sayı eklemek için işlecini aşırı yükler ve sonucu döndürür.
 
 ```cpp
 // operator_overloading.cpp
@@ -162,21 +162,21 @@ int main() {
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [İşleç Aşırı Yüklemesi Genel Kuralları](../cpp/general-rules-for-operator-overloading.md)
+- [Işleç aşırı yüklemesi için genel kurallar](../cpp/general-rules-for-operator-overloading.md)
 
-- [Aşırı Yükleme Birli İşleçleri](../cpp/overloading-unary-operators.md)
+- [Birli Işleçleri aşırı yükleme](../cpp/overloading-unary-operators.md)
 
-- [İkili İşleçler](../cpp/binary-operators.md)
+- [İkili Işleçler](../cpp/binary-operators.md)
 
 - [Atama](../cpp/assignment.md)
 
-- [İşlev Çağrısı](../cpp/function-call-cpp.md)
+- [İşlev çağrısı](../cpp/function-call-cpp.md)
 
 - [Alt Simge Oluşturma](../cpp/subscripting.md)
 
-- [Üye Erişimi](../cpp/member-access.md)
+- [Üye erişimi](../cpp/member-access.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

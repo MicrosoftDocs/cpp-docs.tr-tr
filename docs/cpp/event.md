@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __event keyword [C++]
 - events [C++], __event
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
-ms.openlocfilehash: f8935408c6e9b43347d4ad6088505a461e254ae2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2adbadecacb41a8e92cd36f55da9b376b4e1b006
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366299"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227523"
 ---
 # <a name="__event"></a>__event
 
@@ -29,26 +29,26 @@ __event member-declarator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-__event anahtar **kelimesi** yöntem bildirimine, arabirim bildirimine veya veri üye bildirimine uygulanabilir. Ancak, iç içe bir sınıfın bir üyesini hak kazanmak için **__event** anahtar sözcük kullanamazsınız.
+Anahtar sözcüğü **`__event`** bir yöntem bildirimine, bir arabirim bildirimine veya bir veri üyesi bildirimine uygulanabilir. Ancak, **`__event`** iç içe bir sınıfın bir üyesini nitelemek için anahtar sözcüğünü kullanamazsınız.
 
-Etkinlik kaynağınızın ve alıcınızın yerel C++, COM veya yönetilen (.NET Framework) olup olmadığına bağlı olarak, aşağıdaki yapıları olay olarak kullanabilirsiniz:
+Olay kaynağınız ve alıcılarınızın yerel C++, COM veya yönetilen (.NET Framework) olmasına bağlı olarak, aşağıdaki yapıları olay olarak kullanabilirsiniz:
 
-|Yerli C++|COM|Yönetilen (.NET Framework)|
+|Yerel C++|COM|Yönetilen (.NET Framework)|
 |------------------|---------|--------------------------------|
 |Yöntem|—|method|
 |—|arabirim|—|
 |—|—|veri üyesi|
 
-İşleyici yöntemini olay yöntemiyle ilişkilendirmek için olay alıcısında [__hook](../cpp/hook.md) kullanın. **__event** anahtar sözcüğüyle bir olay oluşturduktan sonra, olay çağrıldığında bu olaya daha sonra bağlanan tüm olay işleyicilerinin çağrılacağını unutmayın.
+Bir işleyici yöntemini bir olay yöntemiyle ilişkilendirmek için bir olay alıcısında [__hook](../cpp/hook.md) kullanın. Anahtar sözcüğüyle bir olay oluşturduktan sonra **`__event`** , olay çağrıldığında daha sonra bu olaya yönelik tüm olay işleyicileri çağırılır.
 
-**__event** yöntemi bildiriminin bir tanımı olamaz; bir tanım örtülü olarak oluşturulur, bu nedenle olay yöntemi sıradan bir yöntem gibi çağrılabilir.
+**`__event`** Yöntem bildiriminde bir tanım olamaz; bir tanım örtülü olarak oluşturulur, bu nedenle olay yöntemi sıradan bir yöntem gibi çağrılabilir.
 
 > [!NOTE]
 > Şablonlu bir alan veya yapı, olay içeremez.
 
-## <a name="native-events"></a>Yerel Etkinlikler
+## <a name="native-events"></a>Yerel olaylar
 
-Yerel olaylar yöntemdir. İade türü genellikle HRESULT veya **geçersizdir,** ancak bir **enum**da dahil olmak üzere herhangi bir integral türü olabilir. Bir olay integral bir iade türü kullandığında, bir olay işleyicisi sıfır olmayan bir değer verdiğinde bir hata koşulu tanımlanır ve bu durumda yükseltilen olay diğer temsilcileri çağırır.
+Yerel olaylar yöntemlerdir. Dönüş türü genellikle HRESULT veya **`void`** , dahil olmak üzere herhangi bir tamsayı türü olabilir **`enum`** . Bir olay bir integral dönüş türü kullandığında, bir olay işleyicisi sıfır dışında bir değer döndürdüğünde bir hata koşulu tanımlanır, bu durumda, yükseltilen olay diğer temsilcileri çağıracaktır.
 
 ```cpp
 // Examples of native C++ events:
@@ -56,30 +56,30 @@ __event void OnDblClick();
 __event HRESULT OnClick(int* b, char* s);
 ```
 
-Örnek kod için [Yerel C++'da Olay İşleme'ye](../cpp/event-handling-in-native-cpp.md) bakın.
+Örnek kod için bkz. [Yerel C++ Içindeki olay işleme](../cpp/event-handling-in-native-cpp.md) .
 
 ## <a name="com-events"></a>COM Olayları
 
-COM olayları arabirimlerdir. Olay kaynağı arabirimindeki bir yöntemin parametreleri *parametrelerde* olmalıdır (ancak bu kesinlikle zorlanmaz), çünkü çoklu döküm yaparken *bir çıkış* parametresi yararlı değildir. Bir *çıkış* parametresi kullanırsanız, düzey 1 uyarısı verilir.
+COM olayları arayüzlerdir. Bir olay kaynak arabirimindeki bir yöntemin parametreleri, çok noktaya yayın sırasında yararlı olmadığından, parametreler içinde olmalıdır (ancak bu, daha *iyi* bir *şekilde* zorlanmaz). Bir *Out* parametresi kullanırsanız düzey 1 uyarısı verilir.
 
-İade türü genellikle HRESULT veya **geçersizdir,** ancak **enum**dahil olmak üzere herhangi bir integral türü olabilir. Bir olay integral bir iade türü kullandığında ve bir olay işleyicisi sıfır olmayan bir değer döndürdüğünde, bu bir hata koşuludur ve bu durumda yükseltilen olay diğer temsilcilere çağrıları iptal eder. Derleyicinin oluşturulan IDL'de bir olay kaynağı arabirimini otomatik olarak [kaynak](../windows/attributes/source-cpp.md) olarak işaretlemeyeceğini unutmayın.
+Dönüş türü genellikle HRESULT veya **`void`** , dahil olmak üzere herhangi bir integral türü olabilir **`enum`** . Bir olay integral dönüş türü kullandığında ve olay işleyicisi sıfır dışında bir değer döndürdüğünde bir hata durumudur, bu durumda, yapılmakta olan olay diğer temsilcilere çağrı durdurur. Derleyicinin otomatik olarak bir olay kaynağı arabirimini oluşturulan IDL 'de [kaynak](../windows/attributes/source-cpp.md) olarak işaretyacağını unutmayın.
 
-[__interface](../cpp/interface.md) anahtar sözcüğü, com olay kaynağı için **__event** sonra her zaman gereklidir.
+[__İnterface](../cpp/interface.md) anahtar sözcüğü **`__event`** bir com olay kaynağı için her zaman gereklidir.
 
 ```cpp
 // Example of a COM event:
 __event __interface IEvent1;
 ```
 
-Örnek kod için [COM'da Olay İşleme'ye](../cpp/event-handling-in-com.md) bakın.
+Örnek kod için bkz. [com 'Da olay işleme](../cpp/event-handling-in-com.md) .
 
-## <a name="managed-events"></a>Yönetilen Etkinlikler
+## <a name="managed-events"></a>Yönetilen olaylar
 
-Yeni sözdiziminde kodlama olayları hakkında bilgi için [olaya](../extensions/event-cpp-component-extensions.md)bakın.
+Yeni sözdiziminde olayları kodlama hakkında daha fazla bilgi için bkz. [olayı](../extensions/event-cpp-component-extensions.md).
 
-Yönetilen olaylar veri üyeleri veya yöntemleridir. Bir olayla kullanıldığında, bir temsilcinin dönüş türü [Ortak Dil Belirtimi](/dotnet/standard/language-independence-and-language-independent-components)ile uyumlu olmalıdır. Olay işleyicisinin dönüş türü, temsilcinin dönüş türüyle eşleşmelidir. Temsilciler hakkında daha fazla bilgi [için, Bkz. Temsilciler ve Etkinlikler.](../dotnet/delegates-and-events.md) Yönetilen bir olay bir veri üyesiise, türü bir temsilci için bir işaretçi olmalıdır.
+Yönetilen olaylar veri üyeleri veya yöntemlerdir. Bir olayla birlikte kullanıldığında, bir temsilcinin dönüş türü [ortak dil belirtimiyle](/dotnet/standard/language-independence-and-language-independent-components)uyumlu olmalıdır. Olay işleyicisinin dönüş türü, temsilcinin dönüş türüyle aynı olmalıdır. Temsilciler hakkında daha fazla bilgi için bkz. [Temsilciler ve olaylar](../dotnet/delegates-and-events.md). Yönetilen bir olay bir veri üyesiyse, türü bir temsilciye yönelik bir işaretçi olmalıdır.
 
-.NET Framework'de, bir veri üyesine bir yöntemin kendisiymisgibi davranabilirsiniz (diğer bir deyişle, `Invoke` karşılık gelen temsilciyöntemi). Yönetilen bir olay veri üyesini bildirmek için temsilci türünü önceden tanımlamanız gerekir. Buna karşılık, yönetilen bir olay yöntemi, zaten tanımlanmamışsa, ilgili yönetilen temsilciyi dolaylı olarak tanımlar. Örneğin, olay gibi `OnClick` bir olay değerini aşağıdaki gibi bildirebilirsiniz:
+.NET Framework, bir veri üyesini bir yöntemin kendisi (yani, `Invoke` karşılık gelen temsilcinin yöntemi) gibi kabul edebilirsiniz. Yönetilen bir olay veri üyesini bildirmek için temsilci türünü önceden tanımlamanız gerekir. Bunun aksine, yönetilen bir olay yöntemi zaten tanımlı değilse karşılık gelen yönetilen temsilciyi örtülü olarak tanımlar. Örneğin, aşağıdaki gibi bir olay gibi bir olay değeri bildirebilirsiniz `OnClick` :
 
 ```cpp
 // Examples of managed events:
@@ -87,9 +87,9 @@ __event ClickEventHandler* OnClick;  // data member as event
 __event void OnClick(String* s);  // method as event
 ```
 
-Yönetilen bir olayı dolaylı olarak bildirirken, olay işleyicileri eklendiğinde veya kaldırıldığında çağrılacak olan eklenti ve kaldır ıcılarını belirtebilirsiniz. Olayı sınıfın dışından çağıran (yükselten) yöntemi de tanımlayabilirsiniz.
+Yönetilen bir olayı örtük olarak bildirirken, olay işleyicileri eklendiğinde veya kaldırıldığında çağrılabilecek ekleme ve kaldırma erişimcileri belirtebilirsiniz. Ayrıca, olayı sınıfın dışından çağıran (Başlatan) yöntemi tanımlayabilirsiniz.
 
-## <a name="example-native-events"></a>Örnek: Yerel Olaylar
+## <a name="example-native-events"></a>Örnek: yerel olaylar
 
 ```cpp
 // EventHandling_Native_Event.cpp
@@ -101,7 +101,7 @@ public:
 };
 ```
 
-## <a name="example-com-events"></a>Örnek: COM Etkinlikleri
+## <a name="example-com-events"></a>Örnek: COM olayları
 
 ```cpp
 // EventHandling_COM_Event.cpp
@@ -130,7 +130,7 @@ public:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[Olay Yönetimi](../cpp/event-handling.md)<br/>
+[Olay Işleme](../cpp/event-handling.md)<br/>
 [event_source](../windows/attributes/event-source.md)<br/>
 [event_receiver](../windows/attributes/event-receiver.md)<br/>
 [__hook](../cpp/hook.md)<br/>

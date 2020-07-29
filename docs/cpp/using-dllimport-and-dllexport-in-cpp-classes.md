@@ -13,20 +13,20 @@ helpviewer_keywords:
 - dllexport attribute [C++]
 - dllexport attribute [C++], classes [C++]
 ms.assetid: 8d7d1303-b9e9-47ca-96cc-67bf444a08a9
-ms.openlocfilehash: c0a2c96a37f58c956976980beafd5ecbed4d1318
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4687db45c767f4323c97aff0a685aa3aeeb83e94
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365112"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227016"
 ---
 # <a name="using-dllimport-and-dllexport-in-c-classes"></a>C++ Sınıflarında dllimport ve dllexport Kullanma
 
 **Microsoft'a Özgü**
 
-C++ sınıflarını **dllimport** veya **dllexport** özniteliği ile bildirebilirsiniz. Bu formlar, sınıfın tamamının içe aktarıldığını veya dışa aktarıldığını ima eder. Bu şekilde dışa aktarılan sınıflara dışa aktarılabilir sınıflar denir.
+C++ sınıflarını **`dllimport`** veya **`dllexport`** özniteliğiyle bildirebilirsiniz. Bu formlar, sınıfın tamamının içeri aktarılacağını veya verildiğini göstermez. Bu şekilde dışarı aktarılmış sınıflar, dışarı aktarılabilir sınıflar olarak adlandırılır.
 
-Aşağıdaki örnek, dışa aktarılabilir bir sınıf tanımlar. Tüm üye işlevleri ve statik verileri dışa aktarılır:
+Aşağıdaki örnek, verilebilir bir sınıfı tanımlar. Tüm üye işlevleri ve statik veriler verilir:
 
 ```cpp
 #define DllExport   __declspec( dllexport )
@@ -37,43 +37,43 @@ class DllExport C {
 };
 ```
 
-Dışa aktarılabilir sınıfın üyeleri üzerinde **dllimport** ve **dllexport** özniteliklerinin açık kullanımının yasak olduğunu unutmayın.
+**`dllimport`** Ve **`dllexport`** özniteliklerinin verilebilir bir sınıfın üyeleri üzerinde açık olarak kullanılması yasaktır.
 
-## <a name="dllexport-classes"></a><a name="_pluslang_using_dllimport_and_dllexport_in_c2b2bdllexportclasses"></a>dllexport Sınıfları
+## <a name="dllexport-classes"></a><a name="_pluslang_using_dllimport_and_dllexport_in_c2b2bdllexportclasses"></a>dllexport sınıfları
 
-Bir sınıf **dllexport**olarak beyan ettiğinizde, tüm üye işlevleri ve statik veri üyeleri dışa aktarılır. Tüm bu üyelerin tanımlarını aynı programda sağlamanız gerekir. Aksi takdirde, bir bağlayıcı hatası oluşturulur. Bu kuralın tek istisnası, açık tanımlar sağlamanız gerekmeyen saf sanal işlevler için geçerlidir. Ancak, soyut bir sınıf için bir yıkıcı her zaman taban sınıf için yıkıcı tarafından çağrıldığı için, saf sanal yıkıcılar her zaman bir tanım sağlamalıdır. Bu kuralların dışa aktarılmaz sınıflar için aynı olduğunu unutmayın.
+Bir sınıf bildirdiğinizde **`dllexport`** , tüm üye işlevleri ve statik veri üyeleri verilir. Aynı programda bu gibi tüm üyelerin tanımlarını sağlamanız gerekir. Aksi takdirde, bir bağlayıcı hatası oluşturulur. Bu kural için bir özel durum saf sanal işlevler için geçerlidir ve bu, açık tanımları sağlamanız gerekmez. Ancak, bir soyut sınıf için yıkıcının her zaman temel sınıfın yıkıcısı tarafından çağrıldığından, saf sanal Yıkıcılar her zaman bir tanım sağlamalıdır. Bu kuralların dışarı aktarılabilir sınıflar için aynı olduğunu unutmayın.
 
-Sınıf türü veya sınıf döndüren işlevler verilerini dışa aktarAcaksanız, sınıfı dışa aktardığınızdan emin olun.
+Sınıf türünün veya sınıfları döndüren işlevlerin verilerini dışa aktardığınızda, sınıfını dışarı aktardığınızdan emin olun.
 
-## <a name="dllimport-classes"></a><a name="_pluslang_dllexport_classesdllexportclasses"></a>dllimport Sınıflar
+## <a name="dllimport-classes"></a><a name="_pluslang_dllexport_classesdllexportclasses"></a>dllimport sınıfları
 
-Bir sınıf **dllimport**olarak beyan ettiğinizde, tüm üye işlevleri ve statik veri üyeleri alınır. Dllimport ve **dllexport'un** sınıf dışı türlerdeki davranışından farklı olarak, statik veri üyeleri aynı programda **dllimport** **dllimport** sınıfının tanımlandığı bir tanım belirtemez.
+Bir sınıf bildirdiğinizde **`dllimport`** , tüm üye işlevleri ve statik veri üyeleri içeri aktarılır. **`dllimport`** **`dllexport`** Sınıf olmayan türlerin ve üzerindeki davranışının aksine, statik veri üyeleri bir sınıfın tanımlandığı aynı programda bir tanımı belirtemez **`dllimport`** .
 
-## <a name="inheritance-and-exportable-classes"></a><a name="_pluslang_using_dllimport_and_dllexport_in_c2b2binheritanceandexportableclasses"></a>Kalıtım ve Dışa Aktarılabilir Sınıflar
+## <a name="inheritance-and-exportable-classes"></a><a name="_pluslang_using_dllimport_and_dllexport_in_c2b2binheritanceandexportableclasses"></a>Devralma ve dışarı aktarılabilir sınıflar
 
-Dışa aktarılabilir sınıfın tüm taban sınıfları dışa aktarılabilir olmalıdır. Değilse, derleyici uyarısı oluşturulur. Ayrıca, aynı zamanda sınıfları olan tüm erişilebilir üyeler dışa aktarılabilir olmalıdır. Bu kural, **dllexport** sınıfının **dllimport** sınıfından, **dllimport** sınıfının da **dllexport** sınıfından devralmasına izin verir (ikincisi önerilmese de). Kural olarak, DLL istemcisi için erişilebilir olan her şey (C++ erişim kurallarına göre) dışa aktarılabilir arabirimin bir parçası olmalıdır. Bu, satır satır işlevlerinde başvurulan özel veri üyelerini içerir.
+Dışarı aktarılabilir bir sınıfın tüm temel sınıfları dışarı aktarılabilir olmalıdır. Aksi takdirde, bir derleyici uyarısı oluşturulur. Ayrıca, aynı zamanda sınıflar olan tüm erişilebilir Üyeler dışarı aktarılabilir olmalıdır. Bu kural, bir sınıfın bir sınıftan **`dllexport`** devralmasını **`dllimport`** ve sınıftan devralması için bir sınıftan **`dllimport`** **`dllexport`** (ikincisi önerilmese de) izin verir. Kural olarak, DLL 'nin istemcisiyle erişilebilen her şey (C++ erişim kurallarına göre), dışarı aktarılabilir arabirimin bir parçası olmalıdır. Bu, satır içi işlevlerde başvurulan özel veri üyelerini içerir.
 
-## <a name="selective-member-importexport"></a><a name="_pluslang_using_dllimport_and_dllexport_in_c2b2bselectivememberimportexport"></a>Seçici Üye İthalat/İhracat
+## <a name="selective-member-importexport"></a><a name="_pluslang_using_dllimport_and_dllexport_in_c2b2bselectivememberimportexport"></a>Seçmeli üye Içeri/dışarı aktarma
 
-Bir sınıf içindeki üye işlevler ve statik verilerin örtülü olarak dış bağlantısı olduğundan, sınıfın tamamı dışa aktarılamadığı sürece bunları **dllimport** veya **dllexport** özniteliği ile bildirebilirsiniz. Sınıfın tamamı içe aktarılır veya dışa aktarılırsa, üye işlevlerin ve verilerin **dllimport** veya **dllexport** olarak açık beyanı yasaktır. Bir statik veri üyesini sınıf tanımı içinde **dllexport**olarak bildirirseniz, aynı program içinde bir yerde bir tanım olmalıdır (sınıf dışı dış bağlantıda olduğu gibi).
+Bir sınıftaki üye işlevleri ve statik verilerin örtük olarak dış bağlantısı olduğundan, **`dllimport`** **`dllexport`** sınıfın tamamı verilemediği takdirde, veya özniteliğiyle bunları bildirebilirsiniz. Tüm sınıf içeri veya içeri aktarılmışsa, üye işlevleri ve verilerinin açık bildirimi **`dllimport`** veya olarak **`dllexport`** engellenir. Bir sınıf tanımı içinde bir statik veri üyesi bildirirseniz **`dllexport`** , bir tanım aynı program içinde (harici olmayan dış bağlantı ile olduğu gibi) bir yerde gerçekleşmelidir.
 
-Benzer şekilde, **dllimport** veya **dllexport** öznitelikleri ile üye işlevleri bildirebilirsiniz. Bu durumda, aynı program içinde bir yerde bir **dllexport** tanımı sağlamanız gerekir.
+Benzer şekilde, veya öznitelikleri ile üye işlevleri bildirebilirsiniz **`dllimport`** **`dllexport`** . Bu durumda, **`dllexport`** aynı programda bir yerde bir tanım sağlamanız gerekir.
 
-Seçici üye ithalat ve ihracatı ile ilgili birkaç önemli noktaya dikkat etmek faydalıdır:
+Seçmeli üye içeri ve dışarı aktarma ile ilgili birkaç önemli noktayı aklınızda bulundurularak:
 
-- Seçici üye alma/dışa aktarma en iyi dışa aktarılan sınıf arabiriminin daha kısıtlayıcı bir sürümünü sağlamak için kullanılır; diğer bir tanesi, dilin izin vereceğinden daha az genel ve özel özelliği ortaya çıkaran bir DLL tasarlayabilirsiniz. Ayrıca, dışa aktarılabilir arabirimi hassas ayarlamak için de yararlıdır: istemcinin, tanım gereği, bazı özel verilere erişemediğini bildiğinizde, tüm sınıfı dışa aktarmanız gerekmez.
+- Seçmeli üye içeri/dışarı aktarma en iyi şekilde, dışarı aktarılan sınıf arabiriminin daha kısıtlayıcı olan bir sürümünü sağlamak için kullanılır; diğer bir deyişle, dilden daha az ortak ve özel özellikler sunan bir DLL tasarlayabilmeniz için bir tane. Dışarı aktarılabilir arabirim için ince ayar yapmak için de kullanışlıdır. istemcinin, tanım olarak bazı özel verilere erişemediğini bildiğiniz durumlarda, tüm sınıfı dışarı aktarmanız gerekir.
 
-- Bir sınıfta bir sanal işlev dışa aktarın, bunların tümünün dışa aktarMası veya en azından istemcinin doğrudan kullanabileceği sürümleri sağlamanız gerekir.
+- Bir sınıfta bir sanal işlevi dışa aktardığınızda, bunların tümünü dışarı aktarmanız gerekir ya da en azından istemcinin doğrudan kullanabileceği sürümleri sağlarsınız.
 
-- Sanal işlevlere sahip seçici üye alma/dışa aktarma kullandığınız bir sınıfa sahipseniz, işlevlerin dışa aktarılabilir arabirimde veya tanımlı satır içinde (istemci tarafından görülebilir) olması gerekir.
+- Sanal işlevlerle seçmeli üye içeri/dışarı aktarma kullandığınız bir sınıfınız varsa, işlevlerin dışarı aktarılabilir arabirimde olması veya satır içi tanımlanmış olması (istemciye görünür) gerekir.
 
-- Bir üyeyi **dllexport** olarak tanımlar, ancak sınıf tanımına eklemezseniz, derleyici hatası oluşturulur. Üyeyi sınıf üstbilgisinde tanımlamanız gerekir.
+- Bir üyeyi olarak tanımlayabilir **`dllexport`** ancak sınıf tanımına dahil değilseniz, bir derleyici hatası oluşturulur. Üyeyi sınıf üstbilgisinde tanımlamanız gerekir.
 
-- Sınıf üyelerinin **dllimport** veya **dllexport** olarak tanımlanmasına izin verilse de, sınıf tanımında belirtilen arabirimi geçersiz kılamazsınız.
+- Ya da olarak sınıf üyelerinin tanımına **`dllimport`** **`dllexport`** izin verilse de, sınıf tanımında belirtilen arabirimi geçersiz kılamazsınız.
 
-- Bir üye işlevi, ilân ettiğiniz sınıf tanımının gövdesi dışında bir yerde tanımlarsanız, işlev **dllexport** veya **dllimport** olarak tanımlanırsa (bu tanım sınıf bildiriminde belirtilenden farklıysa) bir uyarı oluşturulur.
+- Bir üye işlevini, bildirdiğiniz sınıf tanımının gövdesinden farklı bir yerde tanımlarsanız, işlev **`dllexport`** veya **`dllimport`** (Bu tanım, sınıf bildiriminde belirtilenden farklıysa) bir uyarı oluşturulur.
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

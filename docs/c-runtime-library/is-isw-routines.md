@@ -19,12 +19,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 4dad7ff74112da7fc7d0d01714b0cf0dd4e4495c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8292f04fb8771b8270b6f8e2be3ca2f044f6c9b7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940174"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189785"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 
@@ -35,7 +35,7 @@ ms.locfileid: "70940174"
 |[isascii, __isascii, iswascii](../c-runtime-library/reference/isascii-isascii-iswascii.md)|[islower, iswlower, _islower_l, _iswlower_l](../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md)|
 |[isblank, iswblank, _isblank_l, _iswblank_l](../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)|[isprint, iswprint, _isprint_l, _iswprint_l](../c-runtime-library/reference/isprint-iswprint-isprint-l-iswprint-l.md)|
 |[iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l](../c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)|[ispunct, iswpunct, _ispunct_l, _iswpunct_l](../c-runtime-library/reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md)|
-|[SCC, SCC, SCC, __scc \_,, _iswcsym, \__scc symf, \__iswcsymf, _scc sym_l, _iswcsym_l, _scc symf_l, _iswcsymf_l](../c-runtime-library/reference/iscsym-functions.md)|[isspace, iswspace, _isspace_l, _iswspace_l](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)|
+|[SCC, SCC, __iscsym, \_ _iswcsym, \_ _iscsymf, \_ _iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l](../c-runtime-library/reference/iscsym-functions.md)|[isspace, iswspace, _isspace_l, _iswspace_l](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)|
 |[_isctype, iswctype, _isctype_l, _iswctype_l](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|[isupper, _isupper_l, iswupper, _iswupper_l](../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md)|
 |[isdigit, iswdigit, _isdigit_l, _iswdigit_l](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)|[isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|
 
@@ -43,16 +43,16 @@ ms.locfileid: "70940174"
 
 Bu yordamlar belirtilen koşullar için karakterleri test etme.
 
-Bu **yordamlar,** -1 (`EOF`) ile **uchar_max** (0xFF) (dahil) arasında herhangi bir tamsayı bağımsız değişkeni için anlamlı sonuçlar üretir. Beklenen bağımsız değişken türü `int`.
+Bu **yordamlar,** -1 ( `EOF` ) ile **uchar_max** (0xFF) (dahil) arasında herhangi bir tamsayı bağımsız değişkeni için anlamlı sonuçlar üretir. Beklenen bağımsız değişken türü **`int`** .
 
 > [!CAUTION]
-> **In** yordamları için, türünde `char` bir bağımsız değişken geçirmek öngörülemeyen sonuçlara neden olabilir. 0x7F 'den büyük bir değere `char` sahip olan bir sbcs veya mbcs tek baytlı karakteri negatif. Bir `char` geçirildiğinde, derleyici değeri işaretli `int` veya imzalı bir **Long**değerine dönüştürebilir. Bu değer, derleyici tarafından, beklenmeyen sonuçlarla işaret eden genişletilmiş olabilir.
+> **In** yordamları için, türünde bir bağımsız değişken geçirmek **`char`** öngörülemeyen sonuçlara neden olabilir. **`char`** 0x7F 'den büyük bir değere sahip olan BIR sbcs veya mbcs tek baytlı karakteri negatif. Bir **`char`** geçirildiğinde, derleyici değeri bir **`signed int`** veya bir olarak dönüştürebilir **`signed long`** . Bu değer, derleyici tarafından, beklenmeyen sonuçlarla işaret eden genişletilmiş olabilir.
 
-**İsw** yordamları,-1 ' den (**weof**), 0xFFFF, dahil olmak üzere herhangi bir tamsayı değeri için anlamlı sonuçlar üretir. **Wint_t** VERI türü wchar içinde tanımlanmıştır. **İşaretsiz kısa**olarak H; herhangi bir geniş karakter veya geniş karakter dosya sonu (**weof**) değeri tutabilir.
+**İsw** yordamları,-1 ' den (**weof**), 0xFFFF, dahil olmak üzere herhangi bir tamsayı değeri için anlamlı sonuçlar üretir. **Wint_t** VERI türü wchar içinde tanımlanmıştır. H a **`unsigned short`** ; herhangi bir geniş karakter veya geniş karakter dosya sonu (**weof**) değerini alabilir.
 
-Çıkış değeri yerel ayarın `LC_CTYPE` kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) . **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
+Çıkış değeri `LC_CTYPE` yerel ayarın kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-"C" yerel ayarında, **Bu yordamlar için** test koşulları aşağıdaki gibidir:
+"C" yerel **ayarında, bu yordamlar için** test koşulları aşağıdaki gibidir:
 
 `isalnum`<br/>
 Alfasayısal (A-Z, A-z veya 0-9).
@@ -102,46 +102,46 @@ Onaltılık basamak (A-F, A-f veya 0-9).
 **İsw** yordamları için, belirtilen koşulun test sonucu yerel ayardan bağımsızdır. **İsw** işlevleri için test koşulları aşağıdaki gibidir:
 
 `iswalnum`<br/>
-`iswalpha`veya `iswdigit`.
+`iswalpha` veya `iswdigit`.
 
 `iswalpha`<br/>
-`iswcntrl` `iswdigit`,,, Veya`iswspace` hiçbiri sıfır dışında olmayan, uygulama tanımlı bir küme olan herhangi bir geniş karakter. `iswpunct` `iswalpha`yalnızca `iswupper` veya`iswlower` sıfır dışında bir geniş karakter için sıfır dışında bir değer döndürür.
+`iswcntrl`,, `iswdigit` `iswpunct` , Veya hiçbiri sıfır dışında olmayan, uygulama tanımlı bir küme olan herhangi bir geniş karakter `iswspace` . `iswalpha`yalnızca `iswupper` veya sıfır dışında bir geniş karakter için sıfır dışında bir değer döndürür `iswlower` .
 
 `iswascii`<br/>
 ASCII karakterinin geniş karakterli temsili (0x0000-0x007F).
 
 `iswblank`<br/>
-Standart boşluk karakterine karşılık gelen veya yanlış olan `iswalnum` uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. Standart boş karakterler boşluk (L ' ') ve yatay sekme (L ' \t ').
+Standart boşluk karakterine karşılık gelen veya yanlış olan uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter `iswalnum` . Standart boş karakterler boşluk (L ' ') ve yatay sekme (L ' \t ').
 
 `iswcntrl`<br/>
 Denetim geniş karakter.
 
 `__iswcsym`<br/>
-İçin geçerli olan `isalnum` herhangi bir geniş karakter veya ' _ ' karakteri.
+İçin geçerli olan herhangi bir geniş karakter `isalnum` veya ' _ ' karakteri.
 
 `__iswcsymf`<br/>
-İçin geçerli olan `iswalpha` herhangi bir geniş karakter veya ' _ ' karakteri.
+İçin geçerli olan herhangi bir geniş karakter `iswalpha` veya ' _ ' karakteri.
 
 `iswctype`<br/>
-Karakter, `desc` bağımsız değişken tarafından belirtilen özelliğe sahip. Bağımsız değişkeninin geçerli her bir değeri için,aşağıdakitablodagösterildiğigibieşdeğerbirgenişkaraktersınıflandırmayordamıvardır:`iswctype` `desc`
+Karakter, bağımsız değişken tarafından belirtilen özelliğe sahip `desc` . Bağımsız değişkeninin geçerli her bir değeri için `desc` `iswctype` , aşağıdaki tabloda gösterildiği gibi eşdeğer bir geniş karakter sınıflandırma yordamı vardır:
 
 ### <a name="equivalence-of-iswctypec-desc-to-other-isw-testing-routines"></a>İswctype (c, DESC) diğer isw test yordamlarına denklik
 
 |*DESC* bağımsız değişkeninin değeri|ıwctype ( *c, DESC* ) eşdeğeri|
 |------------------------------|----------------------------------------|
-|**_ALFA**|**iswalpha (** `c` **)**|
+|**_ALPHA**|**iswalpha (** `c` **)**|
 |**_ALPHA** &#124; **_DIGIT**|**iswalnum (** `c` **)**|
 |**_BLANK**|**ıwıblank (** `c` **)**|
-|**_DENETIM**|**iswcnw (** `c` **)**|
-|**_BASAMAK**|**iswdigit (** `c` **)**|
+|**_CONTROL**|**iswcnw (** `c` **)**|
+|**_DIGIT**|**iswdigit (** `c` **)**|
 |**_ALPHA** &#124; **_DIGIT** &#124; **_PUNCT**|**iswgraf (** `c` **)**|
-|**_DÜŞÜK**|**iswlower (** `c` **)**|
+|**_LOWER**|**iswlower (** `c` **)**|
 |**_ALPHA** &#124; **_BLANK** &#124; **_DIGIT** &#124; **_PUNCT**|**iswprint (** `c` **)**|
 |**_PUNCT**|**iswpunct (** `c` **)**|
 |**_BLANK**|**ıwıblank (** `c` **)**|
-|**_BOŞLUK**|**iswspace (** `c` **)**|
-|**_ÜST**|**iswupper (** `c` **)**|
-|**_ONALTILI**|**iswxdigit (** `c` **)**|
+|**_SPACE**|**iswspace (** `c` **)**|
+|**_UPPER**|**iswupper (** `c` **)**|
+|**_HEX**|**iswxdigit (** `c` **)**|
 
 `iswdigit`<br/>
 Ondalık basamaklı bir karaktere karşılık gelen geniş karakter.
@@ -150,19 +150,19 @@ Ondalık basamaklı bir karaktere karşılık gelen geniş karakter.
 Boşluk geniş karakteri (L ' ') dışında yazdırılabilir geniş karakter.
 
 `iswlower`<br/>
-Küçük `iswcntrl`harf veya `iswdigit` ,,,veya`iswspace` olmayan, ,,yadasıfırdanfarklıbiruygulamatanımlıgenişkarakterkümesi.`iswpunct` `iswlower`yalnızca küçük harflere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
+Küçük harf veya,,, `iswcntrl` veya olmayan,,, `iswdigit` ya da `iswpunct` `iswspace` sıfırdan farklı bir uygulama tanımlı geniş karakter kümesi. `iswlower`yalnızca küçük harflere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
 
 `iswprint`<br/>
 Boşluk geniş karakteri (L ' ') içeren yazdırılabilir geniş karakter.
 
 `iswpunct`<br/>
-Boşluk geniş karakteri (L ' ') veya geniş karakter `iswalnum` olmayan, yazdırılabilir geniş karakter.
+Boşluk geniş karakteri (L ' ') veya geniş karakter olmayan, yazdırılabilir geniş karakter `iswalnum` .
 
 `iswspace`<br/>
-Standart boşluk karakterine karşılık gelen veya yanlış olan `iswalnum` uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. Standart boşluk karakterleri şunlardır: boşluk (L ' '), form akışı (L ' \f '), yeni satır (L ' \n '), satır başı (l ' \r '), yatay sekme (L ' \t ') ve dikey sekme (L ' \v ').
+Standart boşluk karakterine karşılık gelen veya yanlış olan uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter `iswalnum` . Standart boşluk karakterleri şunlardır: boşluk (L ' '), form akışı (L ' \f '), yeni satır (L ' \n '), satır başı (l ' \r '), yatay sekme (L ' \t ') ve dikey sekme (L ' \v ').
 
 `iswupper`<br/>
-Büyük harf olan veya `iswcntrl`,, `iswpunct`, ya `iswspace` da sıfırdan farklı olmayan, `iswdigit`uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. `iswupper`yalnızca büyük harfli karakterlere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
+Büyük harf olan veya,, `iswcntrl` `iswdigit` `iswpunct` , ya da `iswspace` sıfırdan farklı olmayan, uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. `iswupper`yalnızca büyük harfli karakterlere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
 
 `iswxdigit`<br/>
 Onaltılık basamaklı bir karaktere karşılık gelen geniş karakter.
@@ -205,7 +205,7 @@ int main( void )
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 00            AS  C                              .
@@ -340,8 +340,8 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflaması](../c-runtime-library/character-classification.md)<br/>
-[locale](../c-runtime-library/locale.md)<br/>
+[Karakter sınıflandırması](../c-runtime-library/character-classification.md)<br/>
+[Yerel Ayar](../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[to İşlevleri](../c-runtime-library/to-functions.md)
+[Çok baytlı karakter dizilerinin yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[to Işlevleri](../c-runtime-library/to-functions.md)

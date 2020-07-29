@@ -7,22 +7,22 @@ helpviewer_keywords:
 - novtable __declspec keyword
 - __declspec keyword [C++], novtable
 ms.assetid: cfef09c5-8c1e-4b14-8a72-7d726ded4484
-ms.openlocfilehash: d101e73f2f8d476c50b1b80b8daa7994151d43af
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ccf544608bcba83af17702767562ef93d775b5a9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177839"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87227263"
 ---
 # <a name="novtable"></a>novtable
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bu, **__declspec** genişletilmiş bir özniteliktir.
+Bu genişletilmiş bir **`__declspec`** özniteliktir.
 
-Bu **__declspec** biçimi herhangi bir sınıf bildirimine uygulanabilir, ancak yalnızca saf arabirim sınıflarına, diğer bir deyişle, kendi kendilerine hiçbir değer oluşturulamamayacak sınıflara uygulanmalıdır. **__Declspec** , derleyicinin oluşturucudaki vfptr 'yi başlatmak için kod üretmesine ve sınıfın yıkıcısında ' a yanıt vermez. Çoğu durumda bu, yalnızca sınıf ile ilişkili vtable başvurularını kaldırır ve böylece bağlayıcı onu kaldırır. Bu **__declspec** biçimini kullanmak kod boyutunda önemli bir azalmaya neden olabilir.
+Bu form **`__declspec`** herhangi bir sınıf bildirimine uygulanabilir, ancak yalnızca saf arabirim sınıflarına, diğer bir deyişle, kendi kendilerine hiçbir değer oluşturulamamayacak sınıflara uygulanmalıdır. , **`__declspec`** Derleyicinin Oluşturucu ve sınıf yıkıcısında vfptr 'yi başlatmak için kod oluşturmasını engeller. Çoğu durumda bu, yalnızca sınıf ile ilişkili vtable başvurularını kaldırır ve böylece bağlayıcı onu kaldırır. Bu formun kullanılması **`__declspec`** kod boyutunda önemli bir azalmaya neden olabilir.
 
-**Novtable** ile işaretlenmiş bir sınıf örneğini oluşturmaya çalışırsanız ve sonra bir sınıf üyesine erişin, bir erişim IHLALI (AV) alırsınız.
+İle işaretlenmiş bir sınıf örneğini oluşturmaya **`novtable`** ve ardından bir sınıf üyesine erişime çalışırsanız, bir erişim ihlali (AV) alırsınız.
 
 ## <a name="example"></a>Örnek
 
@@ -57,5 +57,5 @@ In Y
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__declspec](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[`__declspec`](../cpp/declspec.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)
