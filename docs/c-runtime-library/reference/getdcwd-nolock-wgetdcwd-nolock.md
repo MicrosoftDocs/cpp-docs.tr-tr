@@ -37,12 +37,12 @@ helpviewer_keywords:
 - _wgetdcwd_nolock function
 - directories [C++], current working
 ms.assetid: d9bdf712-43f8-4173-8f9a-844e82beaa97
-ms.openlocfilehash: cef2c39d3cfcb7690a644d9d2db68f25259b8162
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c07c52e0dcfe84c5f00a9a0b67d872a860941c6f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955196"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229447"
 ---
 # <a name="_getdcwd_nolock-_wgetdcwd_nolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
 
@@ -51,7 +51,7 @@ Belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *_getdcwd_nolock(
@@ -75,7 +75,7 @@ Disk sürücüsü.
 Yol için depolama konumu.
 
 *maxlen*<br/>
-Karakter cinsinden yol uzunluğu üst sınırı: **_wgetdcwd**için **char** , **_getdcwd** ve **wchar_t** için.
+Karakter cinsinden en fazla yol uzunluğu: **`char`** **_getdcwd** ve **`wchar_t`** **_wgetdcwd**için.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -83,7 +83,7 @@ Bkz. [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_getdcwd_nolock** ve **_wgetdcwd_nolock** , sırasıyla **_getdcwd** ve **_wgetdcwd**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**_getdcwd_nolock** ve **_wgetdcwd_nolock** , sırasıyla **_getdcwd** ve **_wgetdcwd**aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -95,14 +95,14 @@ Bkz. [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdcwd_nolock**|\<Direct. h >|
-|**_wgetdcwd_nolock**|\<Direct. h > veya \<wchar. h >|
+|**_getdcwd_nolock**|\<direct.h>|
+|**_wgetdcwd_nolock**|\<direct.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizin Denetimi](../../c-runtime-library/directory-control.md)<br/>
+[Dizin denetimi](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>
 [_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
 [_getdrive](getdrive.md)<br/>

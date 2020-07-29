@@ -7,47 +7,47 @@ helpviewer_keywords:
 - class members [C++], types of
 - class members
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
-ms.openlocfilehash: cb978434707a9a7808b3388fc541ce4e0d996b0f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 02c5593d9fb5e72ee6b398c9637397ab26c9f3f2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366673"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229070"
 ---
 # <a name="class-member-overview"></a>Sınıf Üyelerine Genel bakış
 
-Bir sınıf veya yapı, üyelerinden oluşur. Bir sınıfın yaptığı iş, üye işlevleri tarafından gerçekleştirilir. Koruduğu durum veri üyelerinde depolanır. Üyelerin başlatılması yapıcılar tarafından yapılır ve bellek serbest bırakılması ve kaynakların serbest bırakılması gibi temizleme çalışmaları yıkıcılar tarafından yapılır. C++11 ve sonraki durumlarda, veri üyeleri (ve genellikle olmalıdır) bildirim noktasında başharfe biçilebilir.
+Bir sınıf veya yapı, üyelerinden oluşur. Bir sınıfın yaptığı iş, kendi üye işlevleri tarafından gerçekleştirilir. Tuttuğu durum, veri üyelerinde saklanır. Üyelerin başlatılması oluşturucular tarafından yapılır ve bellek boşaltma ve kaynakların serbest bırakılması gibi temizleme işleri yok ediciler tarafından yapılır. C++ 11 ve sonrasında veri üyeleri, bildirim noktasında başlatılabilir (ve genellikle).
 
-## <a name="kinds-of-class-members"></a>Sınıf üyeleri çeşitleri
+## <a name="kinds-of-class-members"></a>Sınıf üyesi türleri
 
 Üye kategorilerinin tam listesi aşağıdaki gibidir:
 
-- [Özel Üye Fonksiyonları](special-member-functions.md).
+- [Özel üye işlevleri](special-member-functions.md).
 
-- [Üye Fonksiyonlar Genel Bakış](overview-of-member-functions.md).
+- [Üye Işlevlerine genel bakış](overview-of-member-functions.md).
 
-- Yerleşik türleri ve diğer kullanıcı tanımlı türleri de dahil olmak üzere [veri üyeleri.](static-members-cpp.md)
+- Yerleşik türler ve diğer Kullanıcı tanımlı türler dahil olmak üzere [veri üyeleri](static-members-cpp.md) .
 
 - İşleçler
 
-- [İç Içe Sınıf Bildirimleri](nested-class-declarations.md) ve.)
+- [Iç Içe sınıf bildirimleri](nested-class-declarations.md) ve.)
 
 - [Birleşimler](unions.md)
 
-- [Sayısallaştırmalar](../cpp/enumerations-cpp.md).
+- [Numaralandırmalar](../cpp/enumerations-cpp.md).
 
 - [Bit alanları](../cpp/cpp-bit-fields.md).
 
 - [Arkadaşlar](../cpp/friend-cpp.md).
 
-- [Takma adlar ve typedefs](../cpp/aliases-and-typedefs-cpp.md).
+- [Diğer adlar ve tür tanımları](../cpp/aliases-and-typedefs-cpp.md).
 
     > [!NOTE]
     >  Sınıf bildirimi içinde bulunduğundan arkadaşlar yukarıdaki listeye dahil edilmiştir. Ancak sınıf kapsamı içinde olmadıklarından gerçek sınıf üyeleri değildirler.
 
 ## <a name="example-class-declaration"></a>Örnek sınıf bildirimi
 
-Aşağıdaki örnekbasit bir sınıf bildirimini gösterir:
+Aşağıdaki örnekte basit bir sınıf bildirimi gösterilmektedir:
 
 ```cpp
 // TestRun.h
@@ -92,33 +92,33 @@ int TestRun::_instances{ 0 };
 
 ## <a name="member-accessibility"></a>Üye erişilebilirliği
 
-Bir sınıfın üyeleri üye listesinde ilan edilir. Bir sınıfın üye listesi, erişim belirteçleri olarak bilinen anahtar kelimeler kullanılarak herhangi bir sayıda **özel,** **korumalı** ve **ortak** bölüme ayrılabilir.  Bir iki nokta üst üste **:** erişim belirtici takip etmelidir.  Bu bölümlerin bitişik olması gerekmez, diğer bir deyişle, bu anahtar sözcüklerden biri üye listesinde birkaç kez görünebilir.  Sonraki erişim belirticisi veya kapanış ayracına kadar, anahtar sözcük tüm üyelerin erişimini belirler. Daha fazla bilgi için [Üye Erişim Denetimi (C++)](../cpp/member-access-control-cpp.md)'a bakın.
+Bir sınıfın üyeleri üye listesinde bildirilmiştir. Bir sınıfın üye listesi **`private`** , **`protected`** **`public`** erişim belirticileri olarak bilinen anahtar sözcükler kullanılarak herhangi bir sayıda ve bölümüne ayrılabilir.  İki nokta üst üste **:** erişim belirticisini izlemelidir.  Bu bölümlerin bitişik olması gerekmez, diğer bir deyişle, bu anahtar sözcüklerden biri üye listesinde birkaç kez görünebilir.  Sonraki erişim belirticisi veya kapanış ayracına kadar, anahtar sözcük tüm üyelerin erişimini belirler. Daha fazla bilgi için bkz. [üye Access Control (C++)](../cpp/member-access-control-cpp.md).
 
 ## <a name="static-members"></a>Statik üyeler
 
-Bir veri üyesi statik olarak bildirilebilir, bu da sınıfın tüm nesnelerinin aynı kopyaya erişebileceği anlamına gelir. Bir üye işlev statik olarak bildirilebilir, bu durumda yalnızca sınıfın statik veri üyelerine erişebilir (ve *bu* işaretçisi yoktur). Daha fazla bilgi için Statik [Veri Üyeleri'ne](../cpp/static-members-cpp.md)bakın.
+Bir veri üyesi statik olarak bildirilemez. Bu, sınıfın tüm nesnelerinin aynı kopyasına erişebileceği anlamına gelir. Üye işlevi statik olarak bildirilemez, bu durumda yalnızca sınıfın statik veri üyelerine erişebilir (ve *Bu* işaretçiye sahip değildir). Daha fazla bilgi için bkz. [statik veri üyeleri](../cpp/static-members-cpp.md).
 
 ## <a name="special-member-functions"></a>Özel üye işlevleri
 
-Özel üye işlevler, kaynak kodunuzda belirtmezseniz derleyici tarafından otomatik olarak sağlanan işlevlerdir.
+Özel üye işlevleri, kaynak kodunuzda belirtmeyin derleyici tarafından otomatik olarak sağlanacak işlevlerdir.
 
 1. Varsayılan kurucu
 
 1. Kopya oluşturucu
 
-1. **(C++11)** Taşı oluşturucu
+1. **(C++ 11)** Oluşturucuyu Taşı
 
 1. Kopya atama işleci
 
-1. **(C++11)** Atama işlecini taşı
+1. **(C++ 11)** Taşıma atama işleci
 
 1. Yok edici
 
-Daha fazla bilgi için [Özel Üye Fonksiyonları'na](../cpp/special-member-functions.md)bakın.
+Daha fazla bilgi için bkz. [özel üye işlevleri](../cpp/special-member-functions.md).
 
 ## <a name="memberwise-initialization"></a>Memberwise başlatma
 
-C++11 ve sonraki durumlarda statik olmayan üye bildirimciler baş harflerini içerebilir.
+C++ 11 ve sonrasında, statik olmayan üye Bildirimciler başlatıcıları içerebilir.
 
 ```cpp
 class CanInit
@@ -140,9 +140,9 @@ int main()
 }
 ```
 
-Bir üyeye bir kurucuya bir değer atanmışsa, bu değer, üyenin bildirim noktasında başharfe basılan değerin üzerine yazar.
+Bir üyeye oluşturucuda bir değer atanırsa, bu değer üyenin bildirim noktasında başlatıldığı değerin üzerine yazar.
 
-Belirli bir sınıf türünün tüm nesneleri için statik veri üyelerinin paylaşılan tek bir kopyası vardır. Statik veri üyeleri tanımlanmış olmalıdır ve dosya kapsamında başlatılabilir. (Statik veri üyeleri hakkında daha fazla bilgi için Statik [Veri Üyeleri'ne](../cpp/static-members-cpp.md)bakın.) Aşağıdaki örnek, bu başlatmaların nasıl gerçekleştirilini gösterir:
+Belirli bir sınıf türünün tüm nesneleri için statik veri üyelerinin paylaşılan tek bir kopyası vardır. Statik veri üyeleri tanımlanmış olmalıdır ve dosya kapsamında başlatılabilir. (Statik veri üyeleri hakkında daha fazla bilgi için bkz. [statik veri üyeleri](../cpp/static-members-cpp.md).) Aşağıdaki örnek, bu başlatmanın nasıl gerçekleştirileceğini göstermektedir:
 
 ```cpp
 // class_members2.cpp
@@ -172,4 +172,4 @@ int CanInit2::j = i;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)
+[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)

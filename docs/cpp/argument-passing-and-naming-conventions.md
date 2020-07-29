@@ -13,16 +13,16 @@ helpviewer_keywords:
 - passing arguments [C++], conventions
 - conventions [C++], argument names
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
-ms.openlocfilehash: e621db339102f1f40030bc7826d383d306a39be8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b6b65b4e0cc33ea384eff306952589a49e7ad41a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190774"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229239"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C++ derleyicileri, bağımsız değişkenleri geçirme ve işlevler ile çağıranlar arasında değer döndürme kurallarını belirtmenize olanak tanır. Tüm kurallar desteklenen platformlarda kullanılabilir değildir ve bazı kurallar platforma özgü uygulamalar kullanır. Çoğu durumda, belirli bir platformda desteklenmeyen bir kural belirten anahtar sözcükler veya derleyici anahtarları yok sayılır ve platform varsayılan kuralı kullanılır.
 
@@ -35,17 +35,17 @@ Derleyici, işlevinde kullanılıyorsa ESI, EDI, EBX ve EBP yazmaçlarını kayd
 
 Kendi işlev giriş ve bitiş kodunuzu tanımlama hakkında daha fazla bilgi için bkz. [Naked Işlev çağrıları](../cpp/naked-function-calls.md).
 
-X64 platformlarını hedefleyen koddaki varsayılan çağırma kuralları hakkında daha fazla bilgi için, bkz. [x64 çağırma kuralı](../build/x64-calling-convention.md). ARM platformlarını hedefleyen koddaki kural sorunlarını çağırma hakkında daha fazla bilgi için bkz. [genel C++ görsel ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md).
+X64 platformlarını hedefleyen koddaki varsayılan çağırma kuralları hakkında daha fazla bilgi için, bkz. [x64 çağırma kuralı](../build/x64-calling-convention.md). ARM platformlarını hedefleyen koddaki kural sorunlarını çağırma hakkında daha fazla bilgi için bkz. [Common VISUAL C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md).
 
 Aşağıdaki çağırma kuralları, Visual C/C++ derleyicisi tarafından desteklenir.
 
-|Anahtar sözcüğü|Yığın Temizleme|Parametre geçirme|
+|Sözcükle|Yığın Temizleme|Parametre geçirme|
 |-------------|-------------------|-----------------------|
 |[__cdecl](../cpp/cdecl.md)|Çağıran|Yığındaki parametreleri ters sırada (sağdan sola) iter|
 |[__clrcall](../cpp/clrcall.md)|yok|Parametreleri, CLR ifade yığınına sırasıyla (soldan sağa) yükleyin.|
 |[__stdcall](../cpp/stdcall.md)|Çağrılan|Yığındaki parametreleri ters sırada (sağdan sola) iter|
 |[__fastcall](../cpp/fastcall.md)|Çağrılan|Kayıtlarda depolanır ve sonra yığına gönderilir|
-|[__thiscall](../cpp/thiscall.md)|Çağrılan|Yığına gönderildi; **Bu** işaretçi ecx 'te depolandı|
+|[__thiscall](../cpp/thiscall.md)|Çağrılan|Yığına gönderildi; **`this`** ECX 'de depolanan işaretçi|
 |[__vectorcall](../cpp/vectorcall.md)|Çağrılan|Kayıtlarda depolanır ve sonra yığına ters sırada (sağdan sola) gönderilir|
 
 İlgili bilgiler için bkz. [eski çağırma kuralları](../cpp/obsolete-calling-conventions.md).
@@ -54,4 +54,4 @@ Aşağıdaki çağırma kuralları, Visual C/C++ derleyicisi tarafından destekl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çağırma Kuralları](../cpp/calling-conventions.md)
+[Çağırma kuralları](../cpp/calling-conventions.md)

@@ -52,18 +52,18 @@ helpviewer_keywords:
 - _sntscanf_s function
 - snwscanf_s_l function
 ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
-ms.openlocfilehash: 33507990c1b7e2c6fd1b30e2bdb9277ab611ef2a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 6c814d0085fed90f1b3c36684f54368d811c294f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947956"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229408"
 ---
 # <a name="_snscanf_s-_snscanf_s_l-_snwscanf_s-_snwscanf_s_l"></a>_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 
-Belirtilen uzunluktaki bir dizeden biçimlendirilen verileri okur. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_snscanf, _snscanf_l, _snwscanf, _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) sürümlerini içerir.
+Belirtilen uzunluktaki bir dizeden biçimlendirilen verileri okur. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_snscanf, _snscanf_l, _snwscanf _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) sürümleridir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int __cdecl _snscanf_s(
@@ -95,10 +95,10 @@ int __cdecl _snwscanf_s_l(
 *girişinin*<br/>
 İncelenecek giriş dizesi.
 
-*length*<br/>
+*uzunluklu*<br/>
 *Girişte*incelenecek karakter sayısı.
 
-*format*<br/>
+*formatını*<br/>
 Bir veya daha fazla biçim belirticisi.
 
 *ayarlar*<br/>
@@ -113,7 +113,7 @@ Bu işlevlerin her ikisi de başarıyla dönüştürülen ve atanan alanların s
 
 *Giriş* veya *Biçim* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -122,7 +122,7 @@ Bu işlev, giriş dizesinden inceleyecek sabit sayıda karakter belirtme olanağ
 Arabellek boyutu parametresi, **c**, **c**, **s**, **s**ve **[** türünde alan karakterleriyle gereklidir. Daha fazla bilgi için bkz. [scanf Type alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir.
+> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -137,8 +137,8 @@ Arabellek boyutu parametresi, **c**, **c**, **s**, **s**ve **[** türünde alan 
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_snscanf_s**, **_snscanf_s_l**|\<stdio. h >|
-|**_snwscanf_s**, **_snwscanf_s_l**|\<stdio. h > veya \<wchar. h >|
+|**_snscanf_s**, **_snscanf_s_l**|\<stdio.h>|
+|**_snwscanf_s**, **_snwscanf_s_l**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -179,4 +179,4 @@ _snwscanf_s converted 2 fields: 15 and 12.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[scanf Genişlik Belirtimi](../../c-runtime-library/scanf-width-specification.md)<br/>
+[scanf genişlik belirtimi](../../c-runtime-library/scanf-width-specification.md)<br/>

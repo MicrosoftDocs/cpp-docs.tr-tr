@@ -8,16 +8,16 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: 11b42c9e6210c2432563bba43c55517abd4265fe
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 2efe5be5e44751831a56b29cfc629df2d21843f7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245951"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229187"
 ---
 # <a name="bad_cast-exception"></a>bad_cast özel durumu
 
-**Bad_cast** özel durumu, bir başvuru türüne başarısız bir dönüştürme sonucu olarak **dynamic_cast** işleci tarafından oluşturulur.
+**Bad_cast** özel durumu, bir **`dynamic_cast`** başvuru türüne başarısız bir dönüştürme sonucu olarak işleç tarafından oluşturulur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +34,7 @@ catch (bad_cast)
 class bad_cast : public exception
 ```
 
-Aşağıdaki kod, **bad_cast** özel durumunu oluşturan başarısız **dynamic_cast** bir örnek içerir.
+Aşağıdaki kod, **`dynamic_cast`** **bad_cast** özel durumunu oluşturan başarısız bir örneği içerir.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
@@ -72,19 +72,19 @@ Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-Sonra **TRY** bloğunda dönüştürmenin anlamlı olduğunu aşağıdaki gibi tersine çevirin:
+Sonra, bloktaki dönüştürme türünü aşağıdaki gibi tersine çevirin **`try`** :
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 ```
 
-## <a name="members"></a>Üyeleri
+## <a name="members"></a>Üyeler
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Constructor|Açıklama|
+|Oluşturucu|Açıklama|
 |-|-|
-|[bad_cast](#bad_cast)|`bad_cast`türündeki nesneler için Oluşturucu.|
+|[bad_cast](#bad_cast)|Türündeki nesneler için Oluşturucu `bad_cast` .|
 
 ### <a name="functions"></a>İşlevler
 
@@ -96,26 +96,26 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç =](#op_eq)|Bir `bad_cast` nesnesini diğerine atayan atama işleci.|
+|[işleç =](#op_eq)|Bir nesneyi diğerine atayan atama işleci `bad_cast` .|
 
-## <a name="bad_cast"></a>bad_cast
+## <a name="bad_cast"></a><a name="bad_cast"></a>bad_cast
 
-`bad_cast`türündeki nesneler için Oluşturucu.
+Türündeki nesneler için Oluşturucu `bad_cast` .
 
 ```cpp
 bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a>işleç =
 
-Bir `bad_cast` nesnesini diğerine atayan atama işleci.
+Bir nesneyi diğerine atayan atama işleci `bad_cast` .
 
 ```cpp
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a>Yazdırılacak
+## <a name="what"></a><a name="what"></a>Yazdırılacak
 
 ```cpp
 const char* what() const noexcept override;
@@ -123,6 +123,6 @@ const char* what() const noexcept override;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[dynamic_cast işleci](../cpp/dynamic-cast-operator.md)\
-[Anahtar sözcükler](../cpp/keywords-cpp.md)\
-[Özel C++ durumlar ve hata işleme için modern en iyi uygulamalar](../cpp/errors-and-exception-handling-modern-cpp.md)
+[dynamic_cast Işleci](../cpp/dynamic-cast-operator.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
+[Özel durumlar ve hata işleme için modern C++ en iyi uygulamaları](../cpp/errors-and-exception-handling-modern-cpp.md)

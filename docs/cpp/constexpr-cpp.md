@@ -1,102 +1,102 @@
 ---
-title: constexpr (C++)
-description: C++ Language constexpr anahtar sözcüğüne kılavuzluk edin.
+title: :::no-loc(constexpr):::C++
+description: 'C++ dili :::no-loc(constexpr)::: anahtar sözcüğüne kılavuz.'
 ms.date: 01/28/2020
 f1_keywords:
-- constexpr_cpp
+- :::no-loc(constexpr):::_cpp
 ms.assetid: c6458ccb-51c6-4a16-aa61-f69e6f4e04f7
 no-loc:
-- constexpr
-- const
-- inline
-- goto
-- try
-- if
-- switch
-- for
-- while
-ms.openlocfilehash: 4f34eef3217377ab50a2d80d42b5bea4b054c5be
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+- ':::no-loc(constexpr):::'
+- ':::no-loc(const):::'
+- ':::no-loc(inline):::'
+- ':::no-loc(goto):::'
+- ':::no-loc(try):::'
+- ':::no-loc(if):::'
+- ':::no-loc(switch):::'
+- ':::no-loc(for):::'
+- ':::no-loc(while):::'
+ms.openlocfilehash: d66dc333b7ac9fba94221dc4efa723c7919ef88f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821785"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229031"
 ---
-# <a name="opno-locconstexpr-c"></a>constexpr (C++)
+# <a name="no-locconstexpr-c"></a>:::no-loc(constexpr):::C++
 
-**constexpr** anahtar sözcüğü c++ 11 ' de tanıtılmıştır ve c++ 14 ' te geliştirilmiştir. Bu, *sabit bir ifade*anlamına gelir. **const** gibi, değişkenlere de uygulanabilir: herhangi bir kod değeri değiştirmeye çalıştığında bir derleyici hatası tetiklenir. **const** farklı olarak, **constexpr** işlevlere ve sınıf oluşturuculara da uygulanabilir. **constexpr** değerin veya dönüş değerinin sabit olduğunu ve mümkün olduğu durumlarda, derleme zamanında hesaplandığı anlamına gelir.
+Anahtar sözcüğü **`:::no-loc(constexpr):::`** c++ 11 ' de tanıtılmıştır ve c++ 14 ' te geliştirilmiştir. Bu, * :::no-loc(const)::: ant ifadesi*anlamına gelir. Benzer şekilde **`:::no-loc(const):::`** , değişkenler için de uygulanabilir: herhangi bir kod değeri bir değere ayarlamaya çalıştığında derleyici hatası tetiklenir :::no-loc(if)::: . Aksine **`:::no-loc(const):::`** , **`:::no-loc(constexpr):::`** işlevler ve sınıf ruörler için de uygulanabilir :::no-loc(const)::: . **`:::no-loc(constexpr):::`** değerin veya dönüş değerinin, sahip olduğunu :::no-loc(const)::: ve ne zaman, derleme zamanında hesaplandığını gösterir.
 
-**constexpr** bir integral değeri, şablon bağımsız değişkenleri ve dizi bildirimleri gibi const bir tam sayının gerekli olduğu her yerde kullanılabilir. Çalışma zamanı yerine derleme sırasında bir değer hesaplanırsa, programınızın daha hızlı çalışmasına ve daha az bellek kullanmasına yardımcı olur.
+**`:::no-loc(constexpr):::`** Tam sayı değeri :::no-loc(const)::: , şablon bağımsız değişkenleri ve dizi bildirimleri gibi bir tamsayı gerekli olduğunda kullanılabilir. Çalışma zamanı yerine derleme sırasında bir değer hesaplanırsa, programınızın daha hızlı çalışmasına ve daha az bellek kullanmasına yardımcı olur.
 
-Derleme zamanı sabit hesaplamaların karmaşıklığını ve derleme süresi üzerinde olası etkileri sınırlamak için, C++ 14 standardı sabit deyimlerdeki türlerin [değişmez türler](trivial-standard-layout-and-pod-types.md#literal_types)olmasını gerektirir.
+Derleme zamanı :::no-loc(const)::: ant hesaplamaların karmaşıklığını ve derleme süresi üzerinde olası etkileri sınırlamak için, c++ 14 standardı, :::no-loc(const)::: ant ifadelerindeki türlerin [değişmez türler](trivial-standard-layout-and-pod-types.md#literal_types)olmasını gerektirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> *sabit-ifade* **;** **constexpr** *değişmez değer türü* *tanımlayıcısı* **=** \
-> **constexpr** *değişmez değer türü* *tanımlayıcı* **{** *sabit-ifade* **}** **;** \
-> **constexpr** *değişmez değer türü* *tanımlayıcı* **(** *params* **)** **;** \
-> **constexpr** *ctor* **(** *params* **)** **;**
+> **`:::no-loc(constexpr):::`***değişmez değer türü* * :::no-loc(if)::: * **=** * :::no-loc(const)::: ıkarant-Expression* **;**\
+> **`:::no-loc(constexpr):::`***sabit değerli tür* * :::no-loc(if)::: * kimliği \ **{** * :::no-loc(const)::: ant-Expression* **}** **;**\
+> **`:::no-loc(constexpr):::`***değişmez değer türü* * :::no-loc(if)::: * **(** *params* **)** **;**\
+> **`:::no-loc(constexpr):::`***ctor* **(** *params* **)** **;**
 
 ## <a name="parameters"></a>Parametreler
 
-*params*\
-Her birinin sabit değer türü olması gereken bir veya daha fazla parametre, kendisi de sabit bir ifade olmalıdır.
+*parametrelerin*\
+Her birinin bir sabit değer türü olması gereken ve kendisi bir ant ifadesi olması gereken bir veya daha fazla parametre :::no-loc(const)::: .
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-**constexpr** değişken veya işlev bir [sabit değer türü](trivial-standard-layout-and-pod-types.md#literal_types)döndürmelidir.
+**`:::no-loc(constexpr):::`** Değişken veya işlev bir [sabit değer türü](trivial-standard-layout-and-pod-types.md#literal_types)döndürmelidir.
 
-## <a name="opno-locconstexpr-variables"></a>constexpr değişkenleri
+## <a name="no-locconstexpr-variables"></a>:::no-loc(constexpr):::değişkenlerinin
 
-**const** ve **constexpr** değişkenleri arasındaki birincil fark, bir **const** değişkeninin başlatılmasının çalışma zamanına kadar ertelenebilir. Derleme zamanında bir **constexpr** değişkeni başlatılmalıdır.  Tüm **constexpr** değişkenleri **const** .
+:::no-loc(if):::Ve değişkenleri arasındaki birincil d Ference, **`:::no-loc(const):::`** **`:::no-loc(constexpr):::`** bir **`:::no-loc(const):::`** değişkenin başlatılmasının çalışma zamanına kadar ertelenebilir. Bir **`:::no-loc(constexpr):::`** değişken derleme zamanında başlatılmalıdır.  Tüm **`:::no-loc(constexpr):::`** değişkenler **`:::no-loc(const):::`** .
 
-- Bir değişken, değişmez değer türüne sahip ve başlatıldığında **constexpr** ile bildirilemez. Başlatma bir Oluşturucu tarafından gerçekleştirilirse, Oluşturucu **constexpr** olarak bildirilmelidir.
+- Bir değişken **`:::no-loc(constexpr):::`** , bir sabit değer türüne sahip ve başlatıldığında ile bildirilemez. Başlatma :::no-loc(for)::: bir ructor tarafından med ise :::no-loc(const)::: , :::no-loc(const)::: ructor olarak bildirilmelidir **`:::no-loc(constexpr):::`** .
 
-- Bir başvuru, bu koşulların her ikisi de karşılandığında **constexpr** olarak bildirilebilecek: başvurulan nesne sabit bir ifade tarafından başlatılır ve başlatma sırasında çağrılan örtük dönüştürmeler de sabit ifadelerdir.
+- Bir başvuru, **`:::no-loc(constexpr):::`** Bu koşulların her ikisi de karşılandığında olduğu gibi bildirilebilecek: başvurulan nesne bir :::no-loc(const)::: ant ifadesi tarafından başlatılır ve başlatma sırasında çağrılan örtük dönüştürmeler de :::no-loc(const)::: ant ifadeleridir.
 
-- Bir **constexpr** değişkenin veya işlevin tüm bildirimlerinin **constexpr** tanımlayıcısı olmalıdır.
+- Bir **`:::no-loc(constexpr):::`** değişken veya işlev için tüm bildirimlerin **`:::no-loc(constexpr):::`** spec ier 'ı olmalıdır :::no-loc(if)::: .
 
 ```cpp
-constexpr float x = 42.0;
-constexpr float y{108};
-constexpr float z = exp(5, 3);
-constexpr int i; // Error! Not initialized
+:::no-loc(constexpr)::: float x = 42.0;
+:::no-loc(constexpr)::: float y{108};
+:::no-loc(constexpr)::: float z = exp(5, 3);
+:::no-loc(constexpr)::: int i; // Error! Not initialized
 int j = 0;
-constexpr int k = j + 1; //Error! j not a constant expression
+:::no-loc(constexpr)::: int k = j + 1; //Error! j not a :::no-loc(const):::ant expression
 ```
 
-## <a name="constexpr_functions"></a>constexpr işlevleri
+## <a name="no-locconstexpr-functions"></a><a name=":::no-loc(constexpr):::_functions"></a>:::no-loc(constexpr):::işlevler
 
-Bir **constexpr** işlevi, dönüş değeri, kod tüketen derleme sırasında tablo oluşturma sırasında oluşturulabilir. Kod kullanan bir **constexpr** değişkeni başlatmak veya tür olmayan bir şablon bağımsız değişkeni sağlamak için derleme zamanında dönüş değeri gereklidir. Bağımsız değişkenleri **constexpr** değerler olduğunda, bir **constexpr** işlevi bir derleme zamanı sabiti üretir. **constexpr** olmayan bağımsız değişkenlerle çağrıldığında veya derleme zamanında değeri gerekli olmadığında, bir normal işlev gibi çalışma zamanında bir değer üretir. (Bu çift davranış aynı işlevin **constexpr** ve **constexpr** olmayan sürümlerini yazmak zorunda kalmanızı sağlar.)
+Bir **`:::no-loc(constexpr):::`** işlev, kod tüketme gerektirdiğinde derleme zamanında dönüş değeri tablo olarak belirlenir. Kod tüketen, derleme zamanında bir **`:::no-loc(constexpr):::`** değişken başlatmak veya tür olmayan bir şablon bağımsız değişkeni sağlamak için dönüş değeri gereklidir. Bağımsız değişkenleri değerler olduğunda **`:::no-loc(constexpr):::`** , bir **`:::no-loc(constexpr):::`** işlev derleme zamanı :::no-loc(const)::: ant üretir. **`:::no-loc(constexpr):::`** Bağımsız değişkenlerle çağrıldığında veya derleme zamanında değeri gerekli olmadığında, çalışma zamanında normal bir işlev gibi bir değer oluşturur. (Bu çift davranış, **`:::no-loc(constexpr):::`** aynı işlevin sürümlerini yazma ve sürüm olmayanlar için sizi kaydeder **`:::no-loc(constexpr):::`** .)
 
-**constexpr** işlev veya Oluşturucu örtük olarak **inline** .
+**`:::no-loc(constexpr):::`** İşlev veya :::no-loc(const)::: ructor örtük olarak **`:::no-loc(inline):::`** .
 
-constexpr işlevler için aşağıdaki kurallar geçerlidir:
+İşlevler için aşağıdaki kurallar geçerlidir :::no-loc(constexpr)::: :
 
-- **constexpr** işlev yalnızca [sabit değer türlerini](trivial-standard-layout-and-pod-types.md#literal_types)kabul etmeli ve döndürmelidir.
+- Bir **`:::no-loc(constexpr):::`** işlev yalnızca [sabit değer türlerini](trivial-standard-layout-and-pod-types.md#literal_types)kabul etmeli ve döndürmelidir.
 
-- Bir **constexpr** işlevi yinelemeli olabilir.
+- Bir **`:::no-loc(constexpr):::`** işlev özyinelemeli olabilir.
 
-- [Sanal](../cpp/virtual-cpp.md)olamaz. Kapsayıcı sınıfın herhangi bir sanal temel sınıfı olduğunda **constexpr** bir Oluşturucu tanımlanamaz.
+- [Sanal](../cpp/virtual-cpp.md)olamaz. Bir :::no-loc(const)::: ructor **`:::no-loc(constexpr):::`** , kapsayan sınıfın herhangi bir sanal temel sınıfa sahip olduğu zaman olarak tanımlanamaz.
 
-- Gövde `= default` veya `= delete`olarak tanımlanabilir.
+- Gövde veya olarak tanımlanabilir `= default` `= delete` .
 
-- Gövdede **goto** deyimi veya **try** blokları bulunabilir.
+- Gövde hiçbir **`:::no-loc(goto):::`** deyim veya **`:::no-loc(try):::`** blok içerebilir.
 
-- **constexpr** olmayan bir şablonun açık özelleştirmesi, **constexpr** olarak bildirilemez:
+- Şablon olmayan bir özelleşmenin açık bir özelleştirmesi **`:::no-loc(constexpr):::`** şöyle bildirilebilecek **`:::no-loc(constexpr):::`** :
 
-- **constexpr** şablonun açık bir özelleştirmesi de **constexpr** olmak zorunda değildir:
+- Bir şablonun açık özelleştirmesi **`:::no-loc(constexpr):::`** de şunları yapmak zorunda değildir **`:::no-loc(constexpr):::`** :
 
-Aşağıdaki kurallar, Visual Studio 2017 ve üzeri sürümlerde **constexpr** işlevleri için geçerlidir:
+Aşağıdaki kurallar, **`:::no-loc(constexpr):::`** Visual Studio 2017 ve üzeri işlevleri için geçerlidir:
 
-- **if** ve **switch** deyimlerini ve **for** , Aralık tabanlı **for** , **while** ve **Do-while** dahil tüm döngü deyimlerini içerebilir.
+- **`:::no-loc(if):::`** **`:::no-loc(switch):::`** , Ve deyimleri ve **`:::no-loc(for):::`** , Aralık tabanlı **`:::no-loc(for):::`** , **`:::no-loc(while):::`** ** :::no-loc(while)::: **ve gibi tüm döngü deyimlerini içerebilir.
 
-- Yerel değişken bildirimleri içerebilir, ancak değişkenin başlatılmış olması gerekir. Bu bir sabit değer türü olmalıdır ve **statik** veya iş parçacığı yerel olamaz. Yerel olarak belirtilen değişkenin **const** olması gerekmez ve zaman zaman olabilir.
+- Yerel değişken bildirimleri içerebilir, ancak değişkenin başlatılmış olması gerekir. Bu bir sabit değer türü olmalıdır ve **`static`** ya da iş parçacığı yerel olamaz. Yerel olarak belirtilen değişkenin olması gerekmez ve zaman zaman **`:::no-loc(const):::`** olabilir.
 
-- **constexpr** **statik** olmayan bir üye işlevinin örtük olarak **const** olması gerekmez.
+- **`:::no-loc(constexpr):::`** Üye olmayan bir **`static`** işlevin örtük olması gerekmez **`:::no-loc(const):::`** .
 
 ```cpp
-constexpr float exp(float x, int n)
+:::no-loc(constexpr)::: float exp(float x, int n)
 {
     return n == 0 ? 1 :
         n % 2 == 0 ? exp(x * x, n / 2) :
@@ -105,25 +105,25 @@ constexpr float exp(float x, int n)
 ```
 
 > [!TIP]
-> Visual Studio hata ayıklayıcıda, en iyi hale getirilmemiş bir hata ayıklama derlemesinde hata ayıklarken, içine bir kesme noktası yerleştirerek **constexpr** işlevinin derleme zamanında değerlendirileceğini anlayabilirsiniz. Kesme noktası isabet alıyorsa, işlev çalışma zamanında çağırılır.  Aksi takdirde, işlev derleme zamanında çağırılır.
+> Visual Studio hata ayıklayıcıda, en iyi hale getirilmemiş bir hata ayıklama derlemesinde hata ayıklarken bir **`:::no-loc(constexpr):::`** işlevin içine bir kesme noktası koyarak derleme zamanında değerlendirileceğini söyleyebilirsiniz. Kesme noktası isabet alıyorsa, işlev çalışma zamanında çağırılır.  Aksi takdirde, işlev derleme zamanında çağırılır.
 
-## <a name="extern-opno-locconstexpr"></a>extern constexpr
+## <a name="extern-no-locconstexpr"></a>Dış:::no-loc(constexpr):::
 
-[/Zc: externConstexpr](../build/reference/zc-externconstexpr.md) derleyici seçeneği derleyicinin **extern constexpr** kullanılarak belirtilen değişkenlere [dış bağlantı](../c-language/external-linkage.md) uygulamasını sağlar. Visual Studio 'nun önceki sürümlerinde, varsayılan olarak veya **/Zc: externConstexpr-** belirtildiğinde, **extern** anahtar sözcüğü kullanıldığında bile Visual Studio **constexpr** değişkenlerine iç bağlantı uygular. **/Zc: externConstexpr** seçeneği, Visual Studio 2017 güncelleştirme 15,6 ' den başlayarak kullanılabilir ve varsayılan olarak kapalıdır. [/Permissive-](../build/reference/permissive-standards-conformance.md) seçeneği **/Zc: externConstexpr**'yi etkinleştirmez.
+[/Zc: externConstexpr](../build/reference/zc-extern:::no-loc(constexpr):::.md) derleyici seçeneği derleyicinin [dış](../c-language/external-linkage.md) bağlantıyı **extern :::no-loc(constexpr)::: **kullanılarak belirtilen değişkenlere uygulamasını sağlar. Visual Studio 'nun önceki sürümlerinde, varsayılan olarak ya da **/Zc: externConstexpr-** spec olduğunda :::no-loc(if)::: , Visual Studio, **`:::no-loc(constexpr):::`** anahtar sözcüğü kullanıldığında bile değişkenlere iç bağlantı uygular **`extern`** . **/Zc: externConstexpr** seçeneği, Visual Studio 2017 güncelleştirme 15,6 ' den başlayarak kullanılabilir ve varsayılan olarak kapalıdır. [/Permissive-](../build/reference/permissive-standards-con:::no-loc(for):::mance.md) seçeneği **/Zc: externConstexpr**'yi etkinleştirmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, **constexpr** değişkenleri, işlevleri ve Kullanıcı tanımlı bir türü gösterir. `main()`' deki son ifadede, değerin derleme zamanında bilinmesi gerekmediği için, **constexpr** üye işlevi `GetValue()` bir çalışma zamanı çağrıdır.
+Aşağıdaki örnek, **`:::no-loc(constexpr):::`** değişkenleri, işlevleri ve Kullanıcı tanımlı bir türü gösterir. İçindeki son ifadede `main()` , **`:::no-loc(constexpr):::`** `GetValue()` değer derleme zamanında bilinmesi gerekmediği için üye işlevi bir çalışma zamanı çağrıdır.
 
 ```cpp
-// constexpr.cpp
-// Compile with: cl /EHsc /W4 constexpr.cpp
+// :::no-loc(constexpr):::.cpp
+// Compile with: cl /EHsc /W4 :::no-loc(constexpr):::.cpp
 #include <iostream>
 
 using namespace std;
 
 // Pass by value
-constexpr float exp(float x, int n)
+:::no-loc(constexpr)::: float exp(float x, int n)
 {
     return n == 0 ? 1 :
         n % 2 == 0 ? exp(x * x, n / 2) :
@@ -131,7 +131,7 @@ constexpr float exp(float x, int n)
 };
 
 // Pass by reference
-constexpr float exp2(const float& x, const int& n)
+:::no-loc(constexpr)::: float exp2(:::no-loc(const)::: float& x, :::no-loc(const)::: int& n)
 {
     return n == 0 ? 1 :
         n % 2 == 0 ? exp2(x * x, n / 2) :
@@ -140,13 +140,13 @@ constexpr float exp2(const float& x, const int& n)
 
 // Compile-time computation of array length
 template<typename T, int N>
-constexpr int length(const T(&)[N])
+:::no-loc(constexpr)::: int length(:::no-loc(const)::: T(&)[N])
 {
     return N;
 }
 
-// Recursive constexpr function
-constexpr int fac(int n)
+// Recursive :::no-loc(constexpr)::: function
+:::no-loc(constexpr)::: int fac(int n)
 {
     return n == 1 ? 1 : n * fac(n - 1);
 }
@@ -155,8 +155,8 @@ constexpr int fac(int n)
 class Foo
 {
 public:
-    constexpr explicit Foo(int i) : _i(i) {}
-    constexpr int GetValue() const
+    :::no-loc(constexpr)::: explicit Foo(int i) : _i(i) {}
+    :::no-loc(constexpr)::: int GetValue() :::no-loc(const):::
     {
         return _i;
     }
@@ -166,17 +166,17 @@ private:
 
 int main()
 {
-    // foo is const:
-    constexpr Foo foo(5);
+    // foo is :::no-loc(const)::::
+    :::no-loc(constexpr)::: Foo foo(5);
     // foo = Foo(6); //Error!
 
     // Compile time:
-    constexpr float x = exp(5, 3);
-    constexpr float y { exp(2, 5) };
-    constexpr int val = foo.GetValue();
-    constexpr int f5 = fac(5);
-    const int nums[] { 1, 2, 3, 4 };
-    const int nums2[length(nums) * 2] { 1, 2, 3, 4, 5, 6, 7, 8 };
+    :::no-loc(constexpr)::: float x = exp(5, 3);
+    :::no-loc(constexpr)::: float y { exp(2, 5) };
+    :::no-loc(constexpr)::: int val = foo.GetValue();
+    :::no-loc(constexpr)::: int f5 = fac(5);
+    :::no-loc(const)::: int nums[] { 1, 2, 3, 4 };
+    :::no-loc(const)::: int nums2[length(nums) * 2] { 1, 2, 3, 4, 5, 6, 7, 8 };
 
     // Run time:
     cout << "The value of foo is " << foo.GetValue() << endl;
@@ -190,4 +190,4 @@ Visual Studio 2015 veya üzeri.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Bildirimler ve tanımlar](../cpp/declarations-and-definitions-cpp.md)\
-[const](../cpp/const-cpp.md)
+[:::no-loc(const):::](../cpp/:::no-loc(const):::-cpp.md)

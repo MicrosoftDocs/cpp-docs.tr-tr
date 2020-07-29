@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - continue keyword [C++]
 ms.assetid: 3c94ee57-f732-4c1d-8537-d0ce5382bfd4
-ms.openlocfilehash: b3790ecfde0af958b3244cfdaa61524ba78d6267
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 55a81338f1a0f9036a6d42c4bac7c99489c18d64
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180283"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229005"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C++)
 
@@ -27,11 +27,11 @@ continue;
 
 Geçerli yinelemedeki kalan deyimler yürütülmedi. Döngünün sonraki yinelemesi şöyle belirlenir:
 
-- **Do** **veya while döngüsünde,** sonraki yineleme **Do** veya **while** deyiminin denetim ifadesini yeniden değerlendirerek başlar.
+- Bir **`do`** veya **`while`** döngüsünde, bir sonraki yineleme, veya deyiminin denetim ifadesini yeniden değerlendirerek başlar **`do`** **`while`** .
 
-- Bir **for** döngüsünde (`for`sözdizimini kullanarak (`init-expr`; `cond-expr`; `loop-expr`)), `loop-expr` yan tümcesi yürütülür. Sonra `cond-expr` yan tümcesi yeniden değerlendirilerek, sonuca bağlı olarak döngü sonlanır ya da başka bir yineleme meydana gelir.
+- Bir **`for`** döngüde (söz dizimini kullanarak `for( <init-expr> ; <cond-expr> ; <loop-expr> )` ), `<loop-expr>` yan tümce yürütülür. Sonra `<cond-expr>` yan tümce yeniden değerlendirilecektir ve sonuca bağlı olarak, döngü sonlanır ya da başka bir yineleme meydana gelir.
 
-Aşağıdaki örnek, **Continue** ifadesinin kod bölümlerini atlamak ve bir sonraki yinelemeye başlamak için nasıl kullanılabileceğini gösterir.
+Aşağıdaki örnek, **`continue`** bir ifadenin kod bölümlerini atlamak ve bir sonraki yinelemeye başlamak için nasıl kullanılabileceğini gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -63,4 +63,4 @@ after the do loop
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Atlama Deyimleri](../cpp/jump-statements-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

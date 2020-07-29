@@ -8,16 +8,16 @@ helpviewer_keywords:
 - bad_typeid exception
 - exceptions [C++], bad_typeid
 ms.assetid: 5963ed58-4ede-4597-957d-f7bbd06299c2
-ms.openlocfilehash: bb56de77ba001b5a511ef3a2695d18109b1ed3ca
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 3e01f97c67803408c9ce5bf056e3e9ed4746d259
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245926"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229174"
 ---
 # <a name="bad_typeid-exception"></a>bad_typeid özel durumu
 
-**TypeId** IÇIN işlenen null işaretçisiyse, **bad_typeid** özel durumu [TypeId işleci](../cpp/typeid-operator.md) tarafından oluşturulur.
+**Bad_typeid** özel durumu, IÇIN işleneni null işaretçisiyse [TypeId işleci](../cpp/typeid-operator.md) tarafından oluşturulur **`typeid`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,7 +44,7 @@ public:
 };
 ```
 
-Aşağıdaki örnek, **bad_typeid** bir özel durum oluşturan **TypeId** işlecini gösterir.
+Aşağıdaki örnek, **`typeid`** **bad_typeid** bir özel durum oluşturan işleci gösterir.
 
 ```cpp
 // expre_bad_typeid.cpp
@@ -80,5 +80,5 @@ Object is NULL
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md)\
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Çalışma zamanı tür bilgileri](../cpp/run-time-type-information.md)\
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

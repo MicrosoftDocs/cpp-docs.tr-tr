@@ -118,18 +118,18 @@ helpviewer_keywords:
 - _tstat64 function
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-ms.openlocfilehash: 607a7aff3acf923e0dd62e0dc332283f66b436b1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bb9603b6a76e92561db6c28792e4644949e190d8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918317"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229343"
 ---
 # <a name="_stat-_stat32-_stat64-_stati64-_stat32i64-_stat64i32-_wstat-_wstat32-_wstat64-_wstati64-_wstat32i64-_wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
 Bir dosya üzerinde durum bilgilerini alın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _stat(
@@ -206,7 +206,7 @@ Bir dosyadaki tarih damgası, **_stat32** veya **_wstat32**kullanmadığınız v
 
 Bu işlevlerin çeşitlemeleri 32-veya 64 bit zaman türlerini ve 32 veya 64-bit dosya uzunluklarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**.
 
-**_stat** **_stat64i32**eşdeğerdir ve **struct** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_stat** 32 bitlik bir zaman kullanır ve **Yapı** **_stat** 32 bit bir zaman içerir. Aynı, **_stati64**için de geçerlidir.
+**_stat** **_stat64i32**eşdeğerdir ve **`struct`** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_stat** 32 bitlik bir süre kullanır ve **`struct`** **_stat** 32 bit zaman içerir. Aynı, **_stati64**için de geçerlidir.
 
 > [!NOTE]
 > **_wstat** , Windows Vista sembolik bağlantılarıyla çalışmaz. Bu durumlarda **_wstat** her zaman 0 ' ın bir dosya boyutunu rapor eder. **_stat** sembolik bağlantılarla doğru şekilde çalışır.
@@ -260,8 +260,8 @@ SYS\STAT'TE tanımlanan **_stat** yapısı. H, aşağıdaki alanları içerir.
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_stat**, **_stat32**, **_stat64**, **_stati64**, **_stat32i64**, **_stat64i32**|\<sys/Types. h> ardından \<sys/stat. h>|\<errno. h>|
-|**_wstat**, **_wstat32**, **_wstat64**, **_wstati64**, **_wstat32i64**, **_wstat64i32**|\<sys/Types. h> ardından \<sys/stat. h> veya \<wchar. h>|\<errno. h>|
+|**_stat**, **_stat32**, **_stat64**, **_stati64**, **_stat32i64**, **_stat64i32**|\<sys/types.h>izleyen\<sys/stat.h>|\<errno.h>|
+|**_wstat**, **_wstat32**, **_wstat64**, **_wstati64**, **_wstat32i64**, **_wstat64i32**|\<sys/types.h>ardından \<sys/stat.h> veya\<wchar.h>|\<errno.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -330,7 +330,7 @@ Time modified : Thu Feb 07 14:39:36 2002
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](access-waccess.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [_getmbcp](getmbcp.md)<br/>

@@ -37,18 +37,18 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: 107636d1e732ab7b3ed3003691d3678acc012b7d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ea7051fc086a254dabcf7fcd59f6a70e8fa0c0cd
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909905"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229421"
 ---
 # <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
 Hiperbolik sinüsü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double sinh(double x);
@@ -63,23 +63,23 @@ long double sinh(long double x);  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Sinh** işlevleri *x*' in hiperbolik sinüsünü döndürür. Varsayılan olarak, sonuç çok büyükse, **errno** ' ı **ERANGE** **olarak ayarlar ve** ±**HUGE_VAL**döndürür.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Yok|_DOMAIN|
+|± QNAN, IND|Hiçbiri|_DOMAIN|
 |&#124;x&#124; ≥ 7.104760 e + 002|TAŞMA + tam değil|TAŞMA|
 
 Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **sinh** 'nin **float** veya **Long** **Double** değerleri alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında **sinh** her zaman **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, veya değerlerini alan ve döndüren **sinh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **sinh** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -87,7 +87,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
-|**sinh**, **sinhf**, **sinhl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> veya \<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -122,7 +122,7 @@ cosh( 1.570796 ) = 2.509178
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
 [asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
 [atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>

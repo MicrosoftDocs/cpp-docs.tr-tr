@@ -44,18 +44,18 @@ helpviewer_keywords:
 - strings [C++], reading
 - _sscanf_s_l function
 ms.assetid: 956e65c8-00a5-43e8-a2f2-0f547ac9e56c
-ms.openlocfilehash: 14707b64a9c5c49837391be59d83ee39b79d5065
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e92fc2544b6b137c64c388bed9013a6fdd5d3252
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957979"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229356"
 ---
 # <a name="sscanf_s-_sscanf_s_l-swscanf_s-_swscanf_s_l"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 
-Bir dizeden biçimlendirilen verileri okur. [Sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md) 'nin bu SÜRÜMLERI, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
+Bir dizeden biçimlendirilen verileri okur. [Sscanf, _sscanf_l, swscanf _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md) bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int sscanf_s(
@@ -87,7 +87,7 @@ int _swscanf_s_l(
 *arabelleğin*<br/>
 Depolanan veriler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi. Daha fazla bilgi için bkz. [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 *değişkendir*<br/>
@@ -129,20 +129,20 @@ char c[4];
 sscanf_s(input, "%4c", &c, (unsigned)_countof(c)); // not null terminated
 ```
 
-Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf Type alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
+Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir. 64 bitlik hedefler için derlerken, **_countof** veya **sizeof** sonuçlarını doğru boyuta dönüştürmek için statik bir tür kullanın.
+> Boyut parametresi **`unsigned`** **size_t**değil türündedir. 64 bitlik hedefler için derlerken, **_countof** veya **`sizeof`** sonuçları doğru boyuta dönüştürmek için statik bir tür kullanın.
 
 *Biçim* bağımsız değişkeni, giriş alanlarının yorumunu denetler ve **scanf_s** işlevi için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**swscanf_s** , **sscanf_s**öğesinin geniş karakterli bir sürümüdür; **swscanf_s** bağımsız değişkenleri geniş karakterli dizelerdir. **sscanf_s** çok baytlı onaltılık karakterleri işlemez. **swscanf_s** , Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi halde, **swscanf_s** ve **sscanf_s** aynı şekilde davranır.
+**swscanf_s** , **sscanf_s**geniş karakterli bir sürümüdür; **swscanf_s** bağımsız değişkenler geniş karakterli dizelerdir. **sscanf_s** çok baytlı onaltılık karakterleri işlemez. **Swscanf_s** Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **swscanf_s** ve **sscanf_s** aynı şekilde davranır.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_stscanf_s**|**sscanf_s**|**sscanf_s**|**swscanf_s**|
 |**_stscanf_s_l**|**_sscanf_s_l**|**_sscanf_s_l**|**_swscanf_s_l**|
@@ -151,8 +151,8 @@ Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**sscanf_s**, **_sscanf_s_l**|\<stdio. h >|
-|**swscanf_s**, **_swscanf_s_l**|\<stdio. h > veya \<wchar. h >|
+|**sscanf_s**, **_sscanf_s_l**|\<stdio.h>|
+|**swscanf_s**, **_swscanf_s_l**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -198,8 +198,8 @@ Real:     = 15.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)<br/>

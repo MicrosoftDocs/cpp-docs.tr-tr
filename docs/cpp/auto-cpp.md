@@ -1,5 +1,5 @@
 ---
-title: Auto (C++)
+title: auto (C++)
 ms.date: 12/10/2019
 f1_keywords:
 - auto_CPP
@@ -7,35 +7,31 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: 0991c836d1ade663be3e1b734ec4745796b91abd
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 675f6919b6804cfb1d2c5395d046cb5fa39e625d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301658"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229200"
 ---
-# <a name="auto-c"></a>Auto (C++)
+# <a name="auto-c"></a>`auto`C++
 
 Bir belirtilen değişkenin türünü başlatma ifadesinden kesintiler.
 
 > [!NOTE]
-> Standart C++ , bu anahtar sözcük için özgün ve düzeltilmiş anlamı tanımlar. Visual Studio 2010 ' den önce **Auto** anahtar sözcüğü *Otomatik* depolama sınıfında bir değişken bildirir; diğer bir deyişle, yerel ömrü olan bir değişkendir. Visual Studio 2010 ' den itibaren **Auto** anahtar sözcüğü, türü, bildiriminde başlatma ifadesinden çıkarılan bir değişken bildirir. [/Zc: Auto&#91;&#93; -](../build/reference/zc-auto-deduce-variable-type.md) derleyici seçeneği **Auto** anahtar sözcüğünün anlamını denetler.
+> C++ standardı, bu anahtar sözcük için özgün ve düzeltilmiş anlamı tanımlar. Visual Studio 2010 ' den önce, **`auto`** anahtar sözcüğü *Otomatik* depolama sınıfında bir değişken bildirir; diğer bir deyişle, yerel ömrü olan bir değişkendir. Visual Studio 2010 ' den itibaren **`auto`** anahtar sözcüğü, türü, bildiriminde başlatma ifadesinden çıkarılan bir değişken bildirir. [ `/Zc:auto`&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) derleyici seçeneği, **`auto`** anahtar sözcüğünün anlamını denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-auto declarator initializer;
-```
+> **`auto`***bildirimci* *başlatıcısı***`;`**
 
-```
-[](auto param1, auto param2) {};
-```
+> **`[](auto`***Param1* **`, auto`** *param2***`) {};`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Auto** anahtar sözcüğü, derleyicisini, türü bir veya bir lambda ifade parametresi olan bir veya bir bağımsız değişken olarak kullanmak için olarak bildirir.
+**`auto`** Anahtar sözcüğü, derleyicisini, türü olarak belirtilen bir değişkenin veya lambda ifadesi parametresinin başlatma ifadesini kullanacak şekilde yönlendirir.
 
-Bu avantajları sağladığından, gerçekten bir dönüştürme istemediğiniz durumlar dışında, **Otomatik** anahtar sözcüğünü kullanmanızı öneririz:
+**`auto`** Bu avantajları sağladığından, gerçekten bir dönüştürme istemediğiniz durumlar için anahtar sözcüğünü kullanmanızı öneririz:
 
 - **Sağlamlık:** İfadenin türü değiştirilirse — bu, bir işlev dönüş türü değiştirildiğinde, yalnızca çalışır.
 
@@ -45,31 +41,31 @@ Bu avantajları sağladığından, gerçekten bir dönüştürme istemediğiniz 
 
 - **Verimlilik:** Kodlarınız daha verimli olabilir.
 
-**Otomatik**olarak kullanmak isteyebileceğiniz dönüştürme durumları:
+Kullanmak isteyebileceğiniz dönüştürme durumları **`auto`** :
 
 - Belirli bir tür istediğinizde, başka hiçbir şey yapmayabilir.
 
-- İfade şablonu yardımcı türleri — Örneğin, `(valarray+valarray)`.
+- İfade şablonu yardımcı türleri — Örneğin, `(valarray+valarray)` .
 
-**Auto** anahtar sözcüğünü kullanmak için bir değişken bildirmek üzere bir tür yerine bunu kullanın ve bir başlatma ifadesi belirtin. Ayrıca, **const**, **volatile**, işaretçi (`*`), başvuru (`&`) ve rvalue başvurusu (`&&`) gibi belirticileri ve bildirimcileri kullanarak **Auto** anahtar sözcüğünü değiştirebilirsiniz. Derleyici başlatma ifadesini değerlendirir ve değişkenin türünü bırakmak için bu bilgileri kullanır.
+Anahtar sözcüğünü kullanmak için bir **`auto`** değişken bildirmek üzere bir tür yerine bunu kullanın ve bir başlatma ifadesi belirtin. Ayrıca, **`auto`** anahtar sözcüğünü **`const`** ,, **`volatile`** işaretçi ( **`*`** ), başvuru () **`&`** ve rvalue başvurusu ( **`&&`** ) gibi belirticileri ve bildirimcileri kullanarak da değiştirebilirsiniz. Derleyici başlatma ifadesini değerlendirir ve değişkenin türünü bırakmak için bu bilgileri kullanır.
 
-Başlatma ifadesi bir atama (eşittir işareti sözdizimi), doğrudan başlatma (işlev stili sözdizimi), [işleç New](new-operator-cpp.md) ifadesi veya başlatma ifadesi [Aralık tabanlı for deyimi (C++)](../cpp/range-based-for-statement-cpp.md) deyiminde *Aralık bildirimi* parametresi olabilir. Daha fazla bilgi için bu belgede daha sonra [başlatıcılar](../cpp/initializers.md) ve kod örnekleri bölümüne bakın.
+Başlatma ifadesi bir atama (eşittir işareti söz dizimi), doğrudan başlatma (işlev stili sözdizimi), bir [`operator new`](new-operator-cpp.md) ifade veya başlatma ifadesi bir [Aralık tabanlı `for` deyim (C++)](../cpp/range-based-for-statement-cpp.md) deyimindeki *Aralık bildirimi* parametresi olabilir. Daha fazla bilgi için bu belgede daha sonra [başlatıcılar](../cpp/initializers.md) ve kod örnekleri bölümüne bakın.
 
-**Auto** anahtar sözcüğü bir tür için yer tutucudur, ancak kendisi bir tür değildir. Bu nedenle, **Auto** anahtar sözcüğü [sizeof](../cpp/sizeof-operator.md) ve (/CLI için C++) [TypeId](../extensions/typeid-cpp-component-extensions.md)gibi tür veya işleçlerinde kullanılamaz.
+**`auto`** Anahtar sözcüğü bir tür için yer tutucudur, ancak kendisi bir tür değildir. Bu nedenle **`auto`** anahtar sözcüğü, [`sizeof`](../cpp/sizeof-operator.md) ve gibi (C++/CLI için) atamalar veya operatörler içinde kullanılamaz [`typeid`](../extensions/typeid-cpp-component-extensions.md) .
 
 ## <a name="usefulness"></a>Yarar
 
-**Auto** anahtar sözcüğü, karmaşık bir türü olan bir değişkeni bildirmenin basit bir yoludur. Örneğin, başlatma ifadesinin şablonlar, işlev işaretçileri veya üye işaretçileri içeren bir değişken bildirmek için **Auto** kullanabilirsiniz.
+**`auto`** Anahtar sözcüğü, karmaşık bir türü olan bir değişkeni bildirmenin basit bir yoludur. Örneğin, **`auto`** başlatma ifadesinin şablonlar, işlev işaretçileri veya üye işaretçileri içeren bir değişken bildirmek için kullanabilirsiniz.
 
-Ayrıca, bir lambda ifadesine bir değişken bildirmek ve başlatmak için **Auto** öğesini de kullanabilirsiniz. Lambda ifadesinin türü yalnızca derleyiciye bilindiği için değişkenin türünü kendiniz bildiremezsiniz. Daha fazla bilgi için bkz. [lambda Ifadelerine örnekler](../cpp/examples-of-lambda-expressions.md).
+Bir **`auto`** lambda ifadesine bir değişken bildirmek ve başlatmak için de kullanabilirsiniz. Lambda ifadesinin türü yalnızca derleyiciye bilindiği için değişkenin türünü kendiniz bildiremezsiniz. Daha fazla bilgi için bkz. [lambda Ifadelerine örnekler](../cpp/examples-of-lambda-expressions.md).
 
 ## <a name="trailing-return-types"></a>Sondaki dönüş türleri
 
-Şablon kitaplıklarını yazmaya yardımcı olması için, **Otomatik**olarak, **decltype** tür belirleyicisi ile birlikte kullanabilirsiniz. Dönüş türü, şablon bağımsız değişkenlerinin türlerine bağlı olan bir şablon işlevi bildirmek için **Auto** ve **decltype** kullanın. Ya da **Otomatik** ve **decltype** kullanarak başka bir işleve yapılan çağrıyı sarmalayan bir şablon işlevi bildirir ve sonra bu diğer işlevin dönüş türü olan herhangi bir değer döndürür. Daha fazla bilgi için bkz. [decltype](../cpp/decltype-cpp.md).
+**`auto`** **`decltype`** Şablon kitaplıklarını yazmaya yardımcı olması için tür belirticisiyle birlikte kullanabilirsiniz. **`auto`** **`decltype`** Dönüş türü, şablon bağımsız değişkenlerinin türlerine bağlı olan bir şablon işlevi bildirmek için ve kullanın. Veya, **`auto`** başka bir **`decltype`** işleve yapılan çağrıyı sarmalayan bir şablon işlevi bildirmek için ve öğesini kullanın ve ardından diğer işlevin dönüş türü olan herhangi bir değer döndürür. Daha fazla bilgi için bkz. [`decltype`](../cpp/decltype-cpp.md).
 
 ## <a name="references-and-cv-qualifiers"></a>Başvurular ve CV niteleyicileri
 
-**Otomatik** bırakılanlar başvurularını, const niteleyicilerini ve geçici niteleyicileri kullanmayı unutmayın. Aşağıdaki örnek göz önünde bulundurun:
+' Nin, bu **`auto`** başvuruları, **`const`** niteleyicileri ve niteleyicileri kullanma ' yı unutmayın **`volatile`** . Aşağıdaki örneği inceleyin:
 
 ```cpp
 // cl.exe /analyze /EHsc /W4
@@ -91,11 +87,11 @@ int main( )
 }
 ```
 
-Önceki örnekte, myAuto bir int başvurusu değil int 'tir, bu nedenle çıkış `11 11`, `11 12` değil, başvuru niteleyicisi **Otomatik**olarak bırakılmadığı takdirde olur.
+Önceki örnekte, myAuto bir **`int`** başvuru değildir, bu **`int`** nedenle çıkış, `11 11` `11 12` başvuru niteleyicisi tarafından bırakılmadığı takdirde olduğu gibi değildir **`auto`** .
 
 ## <a name="type-deduction-with-braced-initializers-c14"></a>Küme ayracıyla belirtilen başlatıcıları ile tür kesintisi (c++ 14)
 
-Aşağıdaki kod örneğinde, küme ayraçları kullanılarak otomatik değişkenin nasıl başlatıldığı gösterilmektedir. B ve C arasındaki ve ile E arasındaki farkı dikkate alın.
+Aşağıdaki kod örneği, **`auto`** küme ayraçları kullanarak nasıl bir değişkenin başlatılacağını göstermektedir. B ve C arasındaki ve ile E arasındaki farkı dikkate alın.
 
 ```cpp
 #include <initializer_list>
@@ -124,39 +120,39 @@ int main()
 
 ## <a name="restrictions-and-error-messages"></a>Kısıtlamalar ve hata Iletileri
 
-Aşağıdaki tabloda **Auto** anahtar sözcüğünün kullanımıyla ilgili kısıtlamalar ve derleyicinin yaydığı karşılık gelen tanılama hata iletisi listelenmektedir.
+Aşağıdaki tabloda **`auto`** , anahtar sözcüğünün kullanımıyla ilgili kısıtlamalar ve derleyicinin yaydığı karşılık gelen tanılama hata iletisi listelenmektedir.
 
 |Hata numarası|Açıklama|
 |------------------|-----------------|
-|[C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md)|**Auto** anahtar sözcüğü diğer tür tanımlayıcılarla birleştirilemez.|
-|[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|**Auto** anahtar sözcüğüyle belirtilen sembolün bir başlatıcısı olmalıdır.|
-|[C3532](../error-messages/compiler-errors-2/compiler-error-c3532.md)|Bir tür bildirmek için **Auto** anahtar sözcüğünü yanlış kullandınız. Örneğin, bir yöntem dönüş türü veya dizi bildirdiniz.|
-|[C3533](../error-messages/compiler-errors-2/compiler-error-c3533.md), [C3539](../error-messages/compiler-errors-2/compiler-error-c3539.md)|Bir parametre veya şablon bağımsız değişkeni **Auto** anahtar sözcüğüyle bildirilemez.|
-|[C3535](../error-messages/compiler-errors-2/compiler-error-c3535.md)|Yöntem veya şablon parametresi **Auto** anahtar sözcüğüyle bildirilemez.|
+|[C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md)|**`auto`** Anahtar sözcüğü diğer tür tanımlayıcılarla birleştirilemez.|
+|[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|**`auto`** Anahtar sözcüğüyle belirtilen sembolün bir başlatıcısı olmalıdır.|
+|[C3532](../error-messages/compiler-errors-2/compiler-error-c3532.md)|**`auto`** Bir tür bildirmek için anahtar sözcüğünü yanlış kullandınız. Örneğin, bir yöntem dönüş türü veya dizi bildirdiniz.|
+|[C3533](../error-messages/compiler-errors-2/compiler-error-c3533.md), [C3539](../error-messages/compiler-errors-2/compiler-error-c3539.md)|Bir parametre veya şablon bağımsız değişkeni, **`auto`** anahtar sözcüğüyle bildirilemez.|
+|[C3535](../error-messages/compiler-errors-2/compiler-error-c3535.md)|Bir yöntem veya şablon parametresi **`auto`** anahtar sözcüğü ile bildirilemez.|
 |[C3536](../error-messages/compiler-errors-2/compiler-error-c3536.md)|Bir sembol başlatılmadan önce kullanılamaz. Pratikte bu, değişken kendisini başlatmak için kullanılamayan anlamına gelir.|
-|[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|**Auto** anahtar sözcüğüyle belirtilen bir türe atanamaz.|
-|[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|**Auto** anahtar sözcüğüyle belirtilen bir bildirimci listesindeki tüm semboller aynı türe çözümlenmelidir. Daha fazla bilgi için bkz. [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md).|
-|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|[Sizeof](../cpp/sizeof-operator.md) ve [TypeId](../extensions/typeid-cpp-component-extensions.md) işleçleri **Auto** anahtar sözcüğüyle belirtilen bir simgeye uygulanamaz.|
+|[C3537](../error-messages/compiler-errors-2/compiler-error-c3537.md)|Anahtar sözcüğüyle belirtilen bir türe atanamaz **`auto`** .|
+|[C3538](../error-messages/compiler-errors-2/compiler-error-c3538.md)|Anahtar sözcükle belirtilen bir bildirimci listesindeki tüm semboller **`auto`** aynı türe çözümlenmelidir. Daha fazla bilgi için bkz. [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md).|
+|[C3540](../error-messages/compiler-errors-2/compiler-error-c3540.md), [C3541](../error-messages/compiler-errors-2/compiler-error-c3541.md)|[Sizeof](../cpp/sizeof-operator.md) ve [TypeId](../extensions/typeid-cpp-component-extensions.md) işleçleri, anahtar sözcüğüyle belirtilen bir simgeye uygulanamaz **`auto`** .|
 
 ## <a name="examples"></a>Örnekler
 
-Bu kod parçaları, **Auto** anahtar sözcüğünün kullanılabileceği bazı yolları gösterir.
+Bu kod parçaları, **`auto`** anahtar sözcüğünün kullanılabileceği bazı yolları gösterir.
 
-Aşağıdaki bildirimler eşdeğerdir. İlk ifadede, değişken `j` **int**türünde olarak bildirilmiştir. İkinci deyimde, başlangıç ifadesi (0) bir tamsayı olduğu için değişken `k` **int** türü olarak anlaşılamıyor.
+Aşağıdaki bildirimler eşdeğerdir. İlk ifadede, değişken tür olarak `j` bildirilmiştir **`int`** . İkinci ifadede, `k` **`int`** başlangıç ifadesi (0) bir tamsayı olduğundan değişken tür olarak anlaşılamıyor.
 
 ```cpp
 int j = 0;  // Variable j is explicitly type int.
 auto k = 0; // Variable k is implicitly type int because 0 is an integer.
 ```
 
-Aşağıdaki bildirimler eşdeğerdir, ancak ikinci bildirim birinciden daha basittir. **Auto** anahtar sözcüğünü kullanmanın en etkileyici nedenlerinden biri basitdir.
+Aşağıdaki bildirimler eşdeğerdir, ancak ikinci bildirim birinciden daha basittir. Anahtar sözcüğünü kullanmanın en etkileyici nedenlerinden biri **`auto`** basitdir.
 
 ```cpp
 map<int,list<string>>::iterator i = m.begin();
 auto i = m.begin();
 ```
 
-Aşağıdaki kod parçası, **for** **döngüleri başlatıldığında** `iter` ve `elem` değişkenlerin türünü bildirir.
+Aşağıdaki kod parçası değişkenlerin türünü `iter` ve `elem` **`for`** ve Aralık döngülerinin ne zaman başlatılacağını bildirir **`for`** .
 
 ```cpp
 // cl /EHsc /nologo /W4
@@ -184,7 +180,7 @@ int main()
 }
 ```
 
-Aşağıdaki kod parçası, işaretçileri bildirmek için **New** operator ve pointer bildirimini kullanır.
+Aşağıdaki kod parçası, **`new`** işaretçileri bildirmek için işleç ve işaretçi bildirimini kullanır.
 
 ```cpp
 double x = 12.34;
@@ -200,14 +196,14 @@ auto c = 'a', *d(&c);          // Resolves to char.
 auto m = 1, &n = m;            // Resolves to int.
 ```
 
-Bu kod parçası, değişken `x` 200 değerine sahip bir tamsayı olarak bildirmek için koşullu işleci (`?:`) kullanır:
+Bu kod parçası, `?:` değişkeni `x` 200 değerine sahip bir tamsayı olarak bildirmek için koşullu işleci () kullanır:
 
 ```cpp
 int v1 = 100, v2 = 200;
 auto x = v1 > v2 ? v1 : v2;
 ```
 
-Aşağıdaki kod parçası, **int**yazmak için değişken `x` `y`, **const int**türünde bir başvuruya ve değişken `fp` de **int**türü döndüren bir işlevin işaretçisine bir işaretçi olarak başlatır.
+Aşağıdaki kod parçası, türü için değişkeni `x` **`int`** , türüne `y` başvuru için değişkeni **`const int`** ve `fp` tür döndüren bir işlevin işaretçisine değişken **`int`** olarak başlatır.
 
 ```cpp
 int f(int x) { return x; }
@@ -224,13 +220,13 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[auto Anahtar Sözcüğü](../cpp/auto-keyword.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[/Zc:auto (Değişken Türünü Türet)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[sizeof İşleci](../cpp/sizeof-operator.md)<br/>
-[typeid](../extensions/typeid-cpp-component-extensions.md)<br/>
-[New işleci](new-operator-cpp.md)<br/>
-[Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)<br/>
-[Lambda İfadeleri Örnekleri](../cpp/examples-of-lambda-expressions.md)<br/>
+[`auto`Sözcükle](../cpp/auto-keyword.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[`/Zc:auto`(Değişken türünü türet)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
+[`sizeof`İşlecinde](../cpp/sizeof-operator.md)<br/>
+[`typeid`](../extensions/typeid-cpp-component-extensions.md)<br/>
+[`operator new`](new-operator-cpp.md)<br/>
+[Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)<br/>
+[Lambda Ifadeleri örnekleri](../cpp/examples-of-lambda-expressions.md)<br/>
 [Başlatıcılar](../cpp/initializers.md)<br/>
-[decltype](../cpp/decltype-cpp.md)
+[`decltype`](../cpp/decltype-cpp.md)

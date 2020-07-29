@@ -1,6 +1,9 @@
 ---
-title: 'Bit Düzeyinde Özel OR İşleci: ^'
-ms.date: 11/04/2016
+title: 'Bit düzeyinde özel OR işleci: ^'
+description: C++ standart dil özel veya işleç sözdizimi ve kullanımı.
+ms.date: 07/23/2020
+f1_keywords:
+- xor_cpp
 helpviewer_keywords:
 - operators [C++], bitwise
 - exclusive OR operator
@@ -10,30 +13,29 @@ helpviewer_keywords:
 - OR operator [C++], bitwise exclusive
 - operators [C++], logical
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
-ms.openlocfilehash: 9a44dc60a985729aae79ed0e2e48c44adace647b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0f64b9f90b70756d29fcabb361cc07abe58e0a54
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190722"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229109"
 ---
-# <a name="bitwise-exclusive-or-operator-"></a>Bit Düzeyinde Özel OR İşleci: ^
+# <a name="bitwise-exclusive-or-operator-"></a>Bit düzeyinde özel OR işleci: ^
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-expression ^ expression
-```
+> *ifade* **`^`** *ifade*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde dışlamalı OR işleci ( **^** ), ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine karşılaştırır. Bir bit 0 ise ve diğer bit 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.
+Bit düzeyinde dışlamalı OR işleci ( **`^`** ), ilk işleneninin her bir bitini ikinci işleneninin karşılık gelen bitine karşılaştırır. İlk işlenendeki bit 0 ise ve diğer bit 1 ise, karşılık gelen sonuç biti 1 olarak ayarlanır. Aksi takdirde, karşılık gelen sonuç biti 0 olarak ayarlanır.
 
-Bit düzeyinde dışlamalı veya işlecin her iki işleneni de İntegral türünde olmalıdır. [Standart dönüştürmelerde](standard-conversions.md) ele alınan Olağan aritmetik dönüştürmeler işlenenlere uygulanır.
+İşlecin her iki işleneni de İntegral türlerine sahip olmalıdır. [Standart dönüştürmelerde](standard-conversions.md) ele alınan Olağan aritmetik dönüştürmeler işlenenlere uygulanır.
 
 ## <a name="operator-keyword-for-"></a>^ İçin işleç anahtar sözcüğü
 
-**Xor** işleci **^** metin eşdeğeridir. Programlarınızda **Xor** işlecine erişmenin iki yolu vardır: `iso646.h`üst bilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
+C++, **`xor`** için alternatif bir yazım biçimi belirler **`^`** . C 'de alternatif yazım, üst bilgide bir makro olarak sağlanır \<iso646.h> . C++ ' da, alternatif yazım bir anahtar sözcüktür; \<iso646.h>C++ eşdeğeri veya kullanımı \<ciso646> kullanım dışıdır. Microsoft C++ ' da, [`/permissive-`](../build/reference/permissive-standards-conformance.md) [`/Za`](../build/reference/za-ze-disable-language-extensions.md) alternatif yazımı etkinleştirmek için veya derleyici seçeneği gereklidir.
+
 
 ## <a name="example"></a>Örnek
 
@@ -53,4 +55,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+[C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

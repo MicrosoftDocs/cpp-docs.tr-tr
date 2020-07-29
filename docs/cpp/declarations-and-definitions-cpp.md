@@ -2,16 +2,16 @@
 title: Bildirimler ve tanımlar (C++)
 ms.date: 12/12/2019
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
-ms.openlocfilehash: 7aa9e07a471ed5a32ecc8f13690f1a1bf08b655f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 688c1960e37fe74edecabebc4cb8090af9d0dd58
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077214"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87228966"
 ---
 # <a name="declarations-and-definitions-c"></a>Bildirimler ve tanımlar (C++)
 
-C++ Program değişkenler, işlevler, türler ve ad alanları gibi çeşitli varlıklardan oluşur. Bu varlıkların her biri, kullanılmadan önce *bildirilmelidir* . Bir bildirim varlık için benzersiz bir ad ve kendi türü ve diğer özellikleri hakkında bilgi gösterir. C++ Bir adın bildirildiği noktada derleyiciye görünür hale geldiği bir noktasıdır. Derleme biriminde daha sonraki bir noktada belirtilen bir işleve veya sınıfa başvuramaz. Değişkenler, kullanıldıkları noktadan önce mümkün olduğunca yakın olarak bildirilmelidir.
+C++ programı, değişkenler, işlevler, türler ve ad alanları gibi çeşitli varlıklardan oluşur. Bu varlıkların her biri, kullanılmadan önce *bildirilmelidir* . Bir bildirim varlık için benzersiz bir ad ve kendi türü ve diğer özellikleri hakkında bilgi gösterir. C++ ' da, bir adın bildirildiği nokta derleyiciye görünür hale geldiği noktasıdır. Derleme biriminde daha sonraki bir noktada belirtilen bir işleve veya sınıfa başvuramaz. Değişkenler, kullanıldıkları noktadan önce mümkün olduğunca yakın olarak bildirilmelidir.
 
 Aşağıdaki örnekte bazı bildirimler gösterilmektedir:
 
@@ -40,21 +40,21 @@ namespace N {
 }
 ```
 
-5\. satırda `main` işlevi bildirilmiştir. 7\. satırda, `pi` adlı bir **const** değişkeni bildirilmiştir ve *başlatılır*. 8\. satırda, bir tamsayı `i`, işlev `f`tarafından üretilen değer ile bildirilmiştir ve başlatılır. `f` adı, 3. satırdaki *iletme bildirimi* nedeniyle derleyici tarafından görülebilir.
+5. satırda, `main` işlev bildirilmiştir. 7. satırda, **`const`** adlı bir değişken `pi` bildirilmiştir ve *başlatılır*. 8. satırda, bir tamsayı `i` bildirilmiştir ve işlev tarafından üretilen değer ile başlatılır `f` . `f`3. satırdaki *iletme bildirimi* nedeniyle ad derleyici tarafından görülebilir.
 
-9\. satırda, `C` türünde `obj` adlı bir değişken bildirilmiştir. Ancak, bu bildirim bir hata oluşturur, çünkü `C` programın sonraki kısımlarında olana kadar bildirilmemiş ve ileriye dönük olarak bildirilmemiş. Hatayı onarmak için, `main` önce tüm `C` *tanımını* taşıyabilir ya da bunun için bir ileri bildirim ekleyebilirsiniz. Bu davranış C#, bir kaynak dosyasındaki bildirim noktasından önce işlev ve sınıfların kullanılabileceği gibi diğer dillerden farklıdır.
+9. satırda, tür adlı bir değişken `obj` `C` bildirilmiştir. Ancak, bu bildirim bir hata oluşturur çünkü `C` daha sonra program içinde bildirilmemiş ve ileriye dönük olarak bildirilmemiş. Hatayı onarmak için önce tüm *tanımını* taşıyabilir `C` ya da `main` bunun için bir ileri bildirim ekleyebilirsiniz. Bu davranış, C# gibi işlevlerin ve sınıfların bir kaynak dosyadaki bildirim noktasından önce kullanılabileceği diğer dillerden farklıdır.
 
-10. satırda, `std::string` türünde `str` adlı bir değişken bildirilmiştir. `std::string` adı, 1. satırdaki kaynak dosyayla birleştirilmiş `string` [üst bilgi dosyasında](header-files-cpp.md) tanıtıldığı için görülebilir. `std`, `string` sınıfının bildirildiği ad alanıdır.
+10. satırda, tür adlı bir değişken `str` `std::string` bildirilmiştir. Bu ad, `std::string` `string` 1. satırda kaynak dosyayla birleştirilmiş [üst bilgi dosyasında](header-files-cpp.md) tanıtıldığı için görülebilir. `std`, `string` sınıfının bildirildiği ad alanıdır.
 
-11. satırda, `j` adı bildirilmemiş olduğundan bir hata oluşur. Bir bildirimin, javaScript gibi diğer dillerin aksine bir tür sağlaması gerekir. 12. satırda, derleyicinin `k` türünü, ile başlatıldığı değere göre çıkardığını belirten `auto` anahtar sözcüğü kullanılır. Bu örnekte derleyici tür için `int` seçer.  
+11. satırda, ad bildirilmemiş olduğundan bir hata oluşur `j` . Bir bildirimin, javaScript gibi diğer dillerin aksine bir tür sağlaması gerekir. 12 **`auto`** . satırda anahtar sözcüğü kullanılır, bu da derleyiciye başlatıldığı değere göre türü çıkarmasını söyler `k` . Bu örnekte derleyici **`int`** tür için seçer.  
 
 ## <a name="declaration-scope"></a>Bildirim kapsamı
 
-Bildirim tarafından tanıtılan ad, bildirimin gerçekleştiği *kapsam* içinde geçerlidir. Önceki örnekte, `main` işlevi içinde belirtilen değişkenler *Yerel değişkenlerdir*. Ana, *genel kapsamda*`i` adlı başka bir değişken belirtebilirsiniz ve tamamen ayrı bir varlık olabilir. Ancak, bu tür bir ad yinelemesi programcı karışıklığına ve hatalara neden olabilir ve kaçınılması gerekir. 21. satırda `C` sınıfı, `N`ad alanı kapsamında bildirilmiştir. Ad alanı kullanımı *ad çakışmalarını*önlemeye yardımcı olur. Çoğu C++ standart kitaplık adı `std` ad alanı içinde bildirilmiştir. Kapsam kurallarının bildirimlerle nasıl etkileşim kurduğu hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
+Bildirim tarafından tanıtılan ad, bildirimin gerçekleştiği *kapsam* içinde geçerlidir. Önceki örnekte, işlevinin içinde bildirildiği değişkenler `main` *Yerel değişkenlerdir*. `i` *Genel kapsamda*Main dışında adlı başka bir değişken bildirebilir ve tamamen ayrı bir varlık olabilir. Ancak, bu tür bir ad yinelemesi programcı karışıklığına ve hatalara neden olabilir ve kaçınılması gerekir. 21. satırda, sınıf `C` ad alanının kapsamında bildirilmiştir `N` . Ad alanı kullanımı *ad çakışmalarını*önlemeye yardımcı olur. Çoğu C++ Standart Kitaplık adı ad alanı içinde bildirilmiştir `std` . Kapsam kurallarının bildirimlerle nasıl etkileşim kurduğu hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
 
 ## <a name="definitions"></a>Tanımlar
 
-İşlevler, sınıflar, numaralandırmalar ve sabit değişkenler dahil olmak üzere bazı varlıkların, bildirildiği gibi tanımlanmalıdır. *Tanım* , derleyicinin programın ilerleyen kısımlarında makine kodu oluşturması için ihtiyaç duyacağı tüm bilgileri sağlar. Önceki örnekte, 3. satır `f` işlev için bir bildirim içerir, ancak işlevin *tanımı* , 15 ile 18 arası satırlarda sağlanır. 21. satırda, sınıf `C` hem hem de tanımlanır (tanımlanmış sınıfın hiçbir şey yapmamasına rağmen). Bir sabit değişken tanımlanmış, diğer bir deyişle, bildirildiği aynı ifadede bir değer atanmış olmalıdır. Derleyici için ne kadar alan ayrılacağını bildiğinden, `int` gibi yerleşik bir türün bildirimi otomatik olarak bir tanımdır.
+İşlevler, sınıflar, numaralandırmalar ve sabit değişkenler dahil olmak üzere bazı varlıkların, bildirildiği gibi tanımlanmalıdır. *Tanım* , derleyicinin programın ilerleyen kısımlarında makine kodu oluşturması için ihtiyaç duyacağı tüm bilgileri sağlar. Önceki örnekte, 3. satırda, işlev için bir bildirim bulunur, `f` ancak işlevin *tanımı* , 15 ile 18 arası satırlarda sağlanır. 21. satırda, sınıf `C` hem olarak hem de tanımlanır (tanımlanmış sınıf hiçbir şey yapmasa da). Bir sabit değişken tanımlanmış, diğer bir deyişle, bildirildiği aynı ifadede bir değer atanmış olmalıdır. **`int`** Derleyici için ne kadar alan ayrılacağını bildiğinden, gibi yerleşik bir türün bildirimi otomatik olarak bir tanımdır.
 
 Aşağıdaki örnek ayrıca tanımlar olan bildirimleri gösterir:
 
@@ -84,7 +84,7 @@ char *strchr( const char *Str, const char Target );
 
 ## <a name="typedefs-and-using-statements"></a>Typedefs ve using deyimleri
 
-Daha eski sürümlerinde C++, başka bir ad için *diğer* ad olan yeni bir ad bildirmek üzere [typedef](aliases-and-typedefs-cpp.md) anahtar sözcüğü kullanılır. Örneğin `std::string` tür `std::basic_string<char>`için başka bir addır. Programcıların, gerçek adı değil, typedef adını kullanmasının açık olması gerekir. Modern C++bir [using](aliases-and-typedefs-cpp.md) anahtar sözcüğü typedef üzerinden tercih edilir, ancak fikir aynıdır: zaten tanımlanmış ve tanımlı bir varlık için yeni bir ad bildirilmiştir.
+C++ ' ın eski sürümlerinde [`typedef`](aliases-and-typedefs-cpp.md) anahtar sözcüğü, başka bir ad için *diğer* ad olan yeni bir ad bildirmek üzere kullanılır. Örneğin, türü `std::string` için başka bir addır `std::basic_string<char>` . Programcıların, gerçek adı değil, typedef adını kullanmasının açık olması gerekir. Modern C++ ' da, [`using`](aliases-and-typedefs-cpp.md) anahtar sözcük tercih edilir **`typedef`** , ancak fikir aynıdır: zaten bildirildiği ve tanımlanan bir varlık için yeni bir ad bildirilmiştir.
 
 ## <a name="static-class-members"></a>Statik sınıf üyeleri
 
@@ -92,21 +92,21 @@ Statik sınıf veri üyeleri, sınıfının tüm nesneleri tarafından paylaşı
 
 ## <a name="extern-declarations"></a>extern bildirimleri
 
-Bir C++ program birden fazla [derleme birimi](header-files-cpp.md)içerebilir. Ayrı bir derleme biriminde tanımlı bir varlık bildirmek için [extern](extern-cpp.md) anahtar sözcüğünü kullanın. Bildirimdeki bilgiler derleyici için yeterlidir, ancak varlığın tanımı bağlantı adımında bulunamıyorsa, bağlayıcı bir hata oluşturacak.
+C++ programı birden fazla [derleme birimi](header-files-cpp.md)içerebilir. Ayrı bir derleme biriminde tanımlı bir varlık bildirmek için [`extern`](extern-cpp.md) anahtar sözcüğünü kullanın. Bildirimdeki bilgiler derleyici için yeterlidir, ancak varlığın tanımı bağlantı adımında bulunamıyorsa, bağlayıcı bir hata oluşturacak..
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 [Depolama sınıfları](storage-classes-cpp.md)<br/>
-[const](const-cpp.md)<br/>
-[constexpr](constexpr-cpp.md)<br/>
-[extern](extern-cpp.md)<br/>
+[`const`](const-cpp.md)<br/>
+[`constexpr`](constexpr-cpp.md)<br/>
+[`extern`](extern-cpp.md)<br/>
 [Başlatıcılar](initializers.md)<br/>
 [Diğer adlar ve tür tanımları](aliases-and-typedefs-cpp.md)<br/>
-[using bildirimi](using-declaration.md)<br/>
-[volatile](volatile-cpp.md)<br/>
-[decltype](decltype-cpp.md)<br/>
-[İçindeki özniteliklerC++](attributes.md)<br/>
+[`using`bağımsız](using-declaration.md)<br/>
+[`volatile`](volatile-cpp.md)<br/>
+[`decltype`](decltype-cpp.md)<br/>
+[C++ içindeki öznitelikler](attributes.md)<br/>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Kavramlar](../cpp/basic-concepts-cpp.md)<br/>
+[Temel kavramlar](../cpp/basic-concepts-cpp.md)<br/>

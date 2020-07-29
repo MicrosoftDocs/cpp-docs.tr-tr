@@ -6,12 +6,12 @@ helpviewer_keywords:
 - operators [C++], binary
 - binary operators [C++]
 ms.assetid: c0e7fbff-bc87-4708-8333-504ac09ee83e
-ms.openlocfilehash: 030ae71fec7a0d1572804f30d09f6f9b2749e436
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f44217b68f6700603218c6f4f3e846075b7e7d55
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181310"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229135"
 ---
 # <a name="binary-operators"></a>İkili İşleçler
 
@@ -23,7 +23,7 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 |--------------|----------|
 |**,**|Virgül|
 |**!=**|Eşitsizlik|
-|**%**|Modulus|
+|**%**|Mod|
 |**%=**|Mod/atama|
 |**&**|Bit düzeyinde AND|
 |**&&**|Mantıksal VE|
@@ -36,12 +36,12 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 |**-=**|Çıkarma/atama|
 |**->**|Üye seçimi|
 |**->&#42;**|Üye işaretçisi seçimi|
-|**/**|Bölme|
+|**/**|Bölüm|
 |**/=**|Bölme/atama|
 |**<**|Küçüktür|
 |**<<**|Sola kaydırma|
 |**<<=**|Sola kaydırma/atama|
-|**<=**|Küçüktür veya eşittir|
+|**<=**|Küçük veya eşittir|
 |**=**|Atama|
 |**==**|Eşitlik|
 |**>**|Büyüktür|
@@ -52,17 +52,17 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 |**^=**|Özel VEYA/atama|
 |**&#124;**|Bit düzeyinde kapsamalı OR|
 |**&#124;=**|Bit düzeyinde kapsamlı VEYA/atama|
-|**&#124;&#124;**|Mantıksal VEYA|
+|**&#124;&#124;**|Mantıksal EĞER|
 
 İkili işleç işlevini statik olmayan bir üye olarak bildirmek için şu biçimde bildirmeniz gerekir:
 
-> *ret türü* **işleç işleci** *op* **(** *arg* **)**
+> *ret türü* **`operator`** *op* **(** *arg* **)**
 
 Burada *ret-Type* dönüş türü, *op* , yukarıdaki tabloda listelenen işleçlerden *biridir ve bağımsız değişken herhangi* bir türde bağımsız değişkendir.
 
 İkili bir işleç işlevini genel bir işlev olarak bildirmek için şu biçimde bildirmeniz gerekir:
 
-> *ret türü* **işleç işleci** *op* **(** _arg1_ **,** _arg2_ **)**
+> *ret türü* **`operator`** *op* **(** _arg1_**,** _arg2_ **)**
 
 Burada *ret-Type* ve *op* , Üye operatörü işlevleri ve *arg1* ve *arg2* bağımsız değişkenleri için açıklanmıştır. Bağımsız değişkenlerden en az biri sınıf türünde olmalıdır.
 
@@ -71,4 +71,4 @@ Burada *ret-Type* ve *op* , Üye operatörü işlevleri ve *arg1* ve *arg2* bağ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)
+[İşleç aşırı yüklemesi](../cpp/operator-overloading.md)

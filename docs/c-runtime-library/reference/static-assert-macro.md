@@ -21,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-ms.openlocfilehash: ac609fc7af937b6f56cd5b310341409187df7de4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 78544424b727797158109fa3000ee2ebf8066cf7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957940"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229330"
 ---
 # <a name="_static_assert-macro"></a>_STATIC_ASSERT Makrosu
 
 Derleme zamanında bir ifadeyi değerlendirin ve sonuç **false**olduğunda bir hata oluşturun.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _STATIC_ASSERT(
@@ -47,11 +47,11 @@ Sıfır (**true**) veya 0 (**false**) olarak değerlendirilen ifade (işaretçil
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makro, [_Onay ve _ASSERTE makrolarına benzer ve](assert-asserte-assert-expr-macros.md)bu durum, *Boolean* , çalışma zamanı yerine derleme zamanında değerlendirilir. *Boolean* **değeri false** (0) olarak değerlendirilirse, [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturulur.
+Bu makro, [_assert ve _ASSERTE makrolarına benzer ve](assert-asserte-assert-expr-macros.md)bu durum, *Boolean* , çalışma zamanı yerine derleme zamanında değerlendirilir. *Boolean* **değeri false** (0) olarak değerlendirilirse, [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, [sizeof](../../c-language/sizeof-operator-c.md) bir **int** 'in 2 bayttan büyük veya buna eşit olup olmadığını ve [sizeof](../../c-language/sizeof-operator-c.md) 'un **Long** 'ın 1 bayt olup olmadığını denetliyoruz. Program derlenmez ve **Long** 1 bayttan büyük olduğu Için [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturacaktır.
+Bu örnekte, [sizeof](../../c-language/sizeof-operator-c.md) **`int`** a 'nın 2 bayta eşit veya daha büyük olup olmadığını ve [sizeof](../../c-language/sizeof-operator-c.md) a 'nın 1 bayt olup olmadığını denetliyoruz **`long`** . Program derlenmez ve 1 bayttan büyük olduğu için [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturacaktır **`long`** .
 
 ```C
 // crt__static_assert.c
@@ -73,11 +73,11 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Makrosu|Gerekli başlık|
+|Makroya|Gerekli başlık|
 |-----------|---------------------|
-|**_STATIC_ONAYLAMA**|\<Crtdbg. h >|
+|**_STATIC_ASSERT**|\<crtdbg.h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Makroları](assert-asserte-assert-expr-macros.md)<br/>
+[_ASSERT, _ASSERTE _ASSERT_EXPR makrolar](assert-asserte-assert-expr-macros.md)<br/>

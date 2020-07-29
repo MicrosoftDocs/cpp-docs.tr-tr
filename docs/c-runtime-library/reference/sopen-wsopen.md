@@ -37,18 +37,18 @@ helpviewer_keywords:
 - files [C++], sharing
 - _wsopen function
 ms.assetid: a9d4cccf-06e9-414d-96fa-453fca88cc1f
-ms.openlocfilehash: 58fa41a2824f86411cab50b11eedd922739ed5b1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b02219ba0afa37fdff02b6848540064d12cd001d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909323"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229382"
 ---
 # <a name="_sopen-_wsopen"></a>_sopen, _wsopen
 
 Paylaşım için bir dosya açar. Bu işlevlerin daha güvenli sürümleri mevcuttur: bkz. [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _sopen(
@@ -107,7 +107,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tsopen**|**_sopen**|**_sopen**|**_wsopen**|
 
-' In tamsayı *ifadesi,* \<fcntl. h> tanımlı aşağıdaki bildirim sabitlerinden bir veya daha fazlasını birleştirerek oluşturulur. İki veya daha fazla *sabit bağımsız değişkeni*bir şekilde kullandığınızda, BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir.
+*Gecikme* tamsayı ifadesi, içinde tanımlanan aşağıdaki bildirim sabitlerinden biri veya daha fazlası birleştirilerek oluşturulur \<fcntl.h> . İki veya daha fazla *sabit bağımsız değişkeni*bir şekilde kullandığınızda, BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir.
 
 |*oflag* sabiti|Davranış|
 |-|-|
@@ -131,11 +131,11 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY**belirtmeniz gerekir. Erişim modu için varsayılan değer yoktur.
 
-**_O_WTEXT**, **_O_U8TEXT**veya **_O_U16TEXT**kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadan okunan VERILERI, tür **wchar_t**olarak depolanan UTF-16 verilerine çevirir. Unicode modunda açılan bir dosyaya yazan işlevler, türü **wchar_t**olarak depolanan UTF-16 verilerini içeren arabellekleri bekler. Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
+**_O_WTEXT**, **_O_U8TEXT**veya **_O_U16TEXT**kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadaki okunan verileri, tür olarak depolanan UTF-16 verilerine çevirir **`wchar_t`** . Unicode modunda açılan bir dosyaya yazan işlevler, tür olarak depolanan UTF-16 verileri içeren arabellekler bekler **`wchar_t`** . Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
 
-**_Sopen** **_O_WRONLY** | **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
+**_Sopen** **_O_WRONLY**  |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
 
-*Shflag* bağımsız değişkeni, \<Share. h> tanımlı aşağıdaki bildirim sabitlerinden birini içeren sabit bir ifadedir.
+*Shflag* bağımsız değişkeni, içinde tanımlanan aşağıdaki bildirim sabitlerinden birini içeren sabit bir ifadedir \<share.h> .
 
 |*shflag* sabiti|Davranış|
 |-|-|
@@ -144,7 +144,7 @@ Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY*
 | **_SH_DENYRD** | Bir dosyaya okuma erişimini reddeder. |
 | **_SH_DENYNO** | Okuma ve yazma erişimine izin verir. |
 
-*Pmode* bağımsız değişkeni yalnızca **_O_CREAT** belirtildiğinde gereklidir. Dosya yoksa, *pmode* dosyanın yeni dosya ilk kez kapatıldığında ayarlanan izin ayarlarını belirtir. Aksi halde *pmode* yok sayılır. *pmode* , **_S_IWRITE** bildirim sabitlerinden birini ya da her ikisini içeren bir tamsayı ifadesidir ve SYS\Stat.h> \<içinde tanımlanan **_S_IREAD**. Her iki sabit de verildiğinde, bit düzeyinde OR işleci ile birleştirilir. *Pmode* 'un anlamı aşağıdaki gibidir.
+*Pmode* bağımsız değişkeni yalnızca **_O_CREAT** belirtildiğinde gereklidir. Dosya yoksa, *pmode* dosyanın yeni dosya ilk kez kapatıldığında ayarlanan izin ayarlarını belirtir. Aksi halde *pmode* yok sayılır. *pmode* , **_S_IWRITE** bildirim sabitlerinden birini veya her ikisini içeren bir tamsayı ifadesidir ve içinde tanımlanan **_S_IREAD** \<sys\stat.h> . Her iki sabit de verildiğinde, bit düzeyinde OR işleci ile birleştirilir. *Pmode* 'un anlamı aşağıdaki gibidir.
 
 |*pmode*|Anlamı|
 |-|-|
@@ -152,7 +152,7 @@ Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY*
 | **_S_IWRITE** | Yazma izni veriliyor. (Aslında, okuma ve yazma izni verir.) |
 | **_S_IREAD** &#124; **_S_IWRITE** | Okuma ve yazma izni verildi. |
 
-Yazma izni verilmezse, dosya salt okunurdur. Windows işletim sisteminde tüm dosyalar okunabilir; salt yazılır izin vermek mümkün değildir. Bu nedenle, **_S_IWRITE** ve **_S_IREAD** | **_S_IWRITE** modları eşdeğerdir.
+Yazma izni verilmezse, dosya salt okunurdur. Windows işletim sisteminde tüm dosyalar okunabilir; salt yazılır izin vermek mümkün değildir. Bu nedenle, **_S_IWRITE** ve **_S_IREAD**  |  **_S_IWRITE** modları eşdeğerdir.
 
 **_sopen** izinler ayarlanmadan önce, geçerli dosya izni maskesini *pmode* 'a uygular. (Bkz. [_umask](umask.md).)
 
@@ -160,8 +160,8 @@ Yazma izni verilmezse, dosya salt okunurdur. Windows işletim sisteminde tüm do
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_sopen**|\<GÇ. h>|\<fcntl. h>, \<sys\types.h>, \<sys\stat.h>, \<Share. h>|
-|**_wsopen**|\<GÇ. h> veya \<wchar. h>|\<fcntl. h>, \<sys\types.h>, \<sys\stat.h>, \<Share. h>|
+|**_sopen**|\<io.h>|\<fcntl.h>, \<sys\types.h>, \<sys\stat.h>, \<share.h>|
+|**_wsopen**|\<io.h> veya \<wchar.h>|\<fcntl.h>, \<sys\types.h>, \<sys\stat.h>, \<share.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

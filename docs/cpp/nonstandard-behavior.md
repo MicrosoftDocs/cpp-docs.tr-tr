@@ -6,18 +6,18 @@ helpviewer_keywords:
 - Microsoft-specific, compiler behavior
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-ms.openlocfilehash: d3bb4ca843833cfe9e027f694f25c989895487bb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f31938c78e443bb53a286f79661d86b7a6e9edbc
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161041"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87186548"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 
-Aşağıdaki bölümlerde, Microsoft uygulamasının C++ , C++ standart ile uyumlu olmadığı yerlerden bazıları listelenmektedir. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.
+Aşağıdaki bölümlerde, C++ ' ın Microsoft uygulamasının C++ standardına uygun olmadığı bazı konumlar listelenmektedir. Aşağıda verilen bölüm numaraları C++ 11 standartındaki (ISO/IEC 14882:2011(E)) bölüm numaralarına başvurur.
 
-C++ Standart içinde tanımlananlardan farklı derleyici limitleri listesi [derleyici sınırları](../cpp/compiler-limits.md)içinde verilmiştir.
+C++ standardında tanımlananlardan farklı derleyici limitleri listesi [derleyici sınırları](../cpp/compiler-limits.md)içinde verilmiştir.
 
 ## <a name="covariant-return-types"></a>Birlikte Değişken Dönüş Türleri
 
@@ -38,7 +38,7 @@ class B : virtual A
 
 ## <a name="binding-nondependent-names-in-templates"></a>Şablonlarda Bağımlı Olmayan Adları Bağlama
 
-Microsoft C++ derleyicisi, başlangıçta bir şablonu ayrıştırırken bağımlı olmayan adları bağlamayı desteklememektedir. Bu, C++ ISO belirtiminin 14.6.3 bölümü ile uyumlu değildir. Bu, şablonun görülmesinden sonra (ancak şablon örneği oluşturulmadan önce) aşırı yüklerin bildirilmesine neden olabilir.
+Microsoft C++ derleyicisi, başlangıçta bir şablonu ayrıştırırken bağımlı olmayan adların bağlamasını desteklememektedir. Bu, C++ ISO belirtiminin 14.6.3 bölümü ile uyumlu değildir. Bu, şablonun görülmesinden sonra (ancak şablon örneği oluşturulmadan önce) aşırı yüklerin bildirilmesine neden olabilir.
 
 ```cpp
 #include <iostream>
@@ -64,7 +64,7 @@ int main() {
 
 ## <a name="function-exception-specifiers"></a>İşlev Özel Durum Belirleyicileri.
 
-`throw()` dışındaki işlev özel durum belirticileri ayrıştırıldı, ancak kullanılmaz. Bu, ISO C++ belirtiminin 15.4 bölümü ile uyumlu değildir. Örneğin:
+İşlev özel durum tanımlayıcıları `throw()` ayrıştırıldı, ancak kullanılmaz. Bu, ISO C++ belirtiminin 15.4 bölümü ile uyumlu değildir. Örnek:
 
 ```cpp
 void f() throw(int); // parsed but not used
@@ -75,7 +75,7 @@ void g() throw();    // parsed and used
 
 ## <a name="char_traitseof"></a>char_traits::eof()
 
-Standart C++ [char_traits:: EOF](../standard-library/char-traits-struct.md#eof) , geçerli bir `char_type` değerine karşılık gelmiyor olmalıdır. Microsoft C++ derleyicisi **char**türü için bu kısıtlamayı uygular, ancak **wchar_t**türü için kullanmaz. Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.
+C++ standardı [char_traits:: EOF](../standard-library/char-traits-struct.md#eof) ' un geçerli bir değere karşılık gelmesi gerektiğini belirtir `char_type` . Microsoft C++ derleyicisi tür için bu kısıtlamayı zorlar **`char`** , ancak türü için uygular **`wchar_t`** . Bu, C++ ISO belirtiminin 12.1.1 bölümündeki Tablo 62'deki gereksinimlerle uyumlu değildir. Aşağıdaki örnek bunu gösterir.
 
 ```cpp
 #include <iostream>
@@ -94,4 +94,4 @@ int main()
 
 ## <a name="storage-location-of-objects"></a>Nesnelerin Depolama Konumu
 
-C++ standardı (bölüm 1.8 paragraph 6) tam C++ nesnelerinin benzersiz konumlara sahip olmasını gerektirir. Ancak Microsoft C++ile, veri üyesi olmayan türlerin nesne ömrü için diğer türlerle bir depolama konumunu paylaşacağı durumlar vardır.
+C++ standardı (bölüm 1.8 paragraph 6) tam C++ nesnelerinin benzersiz konumlara sahip olmasını gerektirir. Ancak, Microsoft C++ ' da, veri üyesi olmayan türlerin nesne ömrü için diğer türlerle bir depolama konumunu paylaşacağı durumlar vardır.

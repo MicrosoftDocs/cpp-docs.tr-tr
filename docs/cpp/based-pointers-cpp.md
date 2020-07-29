@@ -10,16 +10,16 @@ helpviewer_keywords:
 - based pointers
 - pointers, based
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
-ms.openlocfilehash: 24c3a7f85c4ea05c38f3ab1d3f637ea0ab24d4c5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a76fe56e0e6bd0501bbc3e23e138cb2e75055c73
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363754"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229148"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C++)
 
-**__based** anahtar kelimesi işaretçileri (varolan işaretçilerden uzaklıkolan işaretçiler) temel alından işaretçileri beyan etmenizi sağlar. __based **__based** anahtar kelimesi Microsoft'a özgüdür.
+**`__based`** Anahtar sözcüğü işaretçiler (varolan işaretçilerden uzaklık olan işaretçiler) temelinde işaretçiler bildirmenize olanak tanır. **`__based`** Anahtar sözcüğü, Microsoft 'a özgüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,9 +29,9 @@ type __based( base ) declarator
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşaretçi adreslerine dayalı işaretçiler, 32 bit veya 64 bit derlemelerde geçerli olan **__based** anahtar kelimenin tek biçimidir. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.
+İşaretçi adreslerini temel alan işaretçiler, **`__based`** 32-bit veya 64 bit derlemelerde geçerli olan anahtar sözcüğünün tek biçimidir. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.
 
-İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir. Örneğin:
+İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir. Örnek:
 
 ```cpp
 // based_pointers1.cpp
@@ -46,11 +46,11 @@ struct llist_t {
 `vpBuffer` işaretçisine, programda daha sonra ayrılan belleğin adresi atanır. Bağlantılı liste, `vpBuffer` değerine göre yeniden konumlandırılır.
 
 > [!NOTE]
-> İşaretçiler içeren kalıcı tanımlayıcılar da [bellek eşlenen dosyaları](/windows/win32/Memory/file-mapping)kullanılarak gerçekleştirilebilir.
+> İşaretçiler içeren kalıcı tanımlayıcılar, [bellek eşlemeli dosyalar](/windows/win32/Memory/file-mapping)kullanılarak da gerçekleştirilebilir.
 
 Temel alınan işaretçinin başvurusu kaldırılırken, temel açıkça belirtilmeli veya bildirim aracılığıyla örtük olarak bilinmelidir.
 
-Önceki sürümlerle uyumluluk için **_based,** derleyici seçeneği [/Za \(Dil uzantıları)](../build/reference/za-ze-disable-language-extensions.md) belirtilmedikçe **__based** eşanlamlıdır.
+Önceki sürümlerle uyumluluk için, **_based** **`__based`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde _based için bir eş anlamlı.
 
 ## <a name="example"></a>Örnek
 

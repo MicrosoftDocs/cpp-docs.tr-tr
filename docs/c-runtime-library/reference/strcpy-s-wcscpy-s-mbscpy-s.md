@@ -45,12 +45,12 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-ms.openlocfilehash: d8cfbc97f6c2a6d865a1436a276641a4d8f93713
-ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
+ms.openlocfilehash: b2957490dbf045b9a3258a72b6bda0aaf1a38c0f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84206199"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229304"
 ---
 # <a name="strcpy_s-wcscpy_s-_mbscpy_s-_mbscpy_s_l"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
@@ -116,7 +116,7 @@ errno_t _mbscpy_s_l(
 Hedef dize arabelleğinin konumu.
 
 *dest_size*<br/>
-Daraltma ve çok baytlı işlevler için **karakter** birimlerindeki hedef dize arabelleğinin boyutu ve geniş işlevler için **wchar_t** birimleri. Bu değer sıfırdan büyük ve **RSIZE_MAX**daha büyük olmalıdır. Bu boyut hesaplarının dizeyi izleyen Sonlandırıcı için olduğundan emin olun `NULL` .
+**`char`** Daraltma ve çok baytlı işlevler için birim cinsinden hedef dize arabelleğinin boyutu ve **`wchar_t`** geniş işlevlere yönelik birimler. Bu değer sıfırdan büyük ve **RSIZE_MAX**daha büyük olmalıdır. Bu boyut hesaplarının dizeyi izleyen Sonlandırıcı için olduğundan emin olun `NULL` .
 
 *src*<br/>
 Null ile sonlandırılmış kaynak dize arabelleği.

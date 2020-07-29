@@ -37,12 +37,12 @@ helpviewer_keywords:
 - calculating square roots
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-ms.openlocfilehash: 8983d0854b82d532aad57fa80b03bbe3313970f0
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: 6b769be6bcb0fba8c322e3df7a9ac96e4e83a85d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84506890"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229369"
 ---
 # <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
 
@@ -75,7 +75,7 @@ Negatif olmayan kayan nokta değeri
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **sqrt** 'nin **float** veya **Long** **Double** türlerini alan aşırı yüklerini çağırabilirsiniz. C programında **sqrt** her zaman **Double**değerini alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, veya türündeki **sqrt** 'ın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **sqrt** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -83,7 +83,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 **Sqrt** işlevleri *x*'in kare kökünü döndürür. Varsayılan olarak, *x* negatifse **sqrt** , sonsuz bir NaN döndürür.
 
-|Giriş|SEH özel durumu|**_matherr** Duruma|
+|Girdi|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND|yok|_DOMAIN|
 |- ∞|yok|_DOMAIN|
