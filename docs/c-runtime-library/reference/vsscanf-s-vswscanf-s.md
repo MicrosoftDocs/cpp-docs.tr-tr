@@ -24,18 +24,18 @@ f1_keywords:
 - vswscanf_s
 - _vstscanf_s
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
-ms.openlocfilehash: bacda4288a6745ea57c31e68e515ae7b37418096
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9150642a6a21198ae43bdea5f33cc5a8f0b6a581
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946028"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87189005"
 ---
 # <a name="vsscanf_s-vswscanf_s"></a>vsscanf_s, vswscanf_s
 
 Bir dizeden biçimlendirilen verileri okur. [Vsscanf, vswscanf](vsscanf-vswscanf.md) 'in bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int vsscanf_s(
@@ -55,7 +55,7 @@ int vswscanf_s(
 *arabelleğin*<br/>
 Depolanan veriler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi. Daha fazla bilgi için bkz. [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
 *Arglist*<br/>
@@ -71,22 +71,22 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_er
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Vsscanf_s** işlevi, *arabellekteki* verileri, *Arglist* bağımsız değişken listesindeki her bağımsız değişken tarafından verilen konumlara okur. Bağımsız değişken listesindeki bağımsız değişkenler, *biçimde*bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli olan **vsscanf**sürümünden farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s**veya String-Control kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır.
+**Vsscanf_s** işlevi *arabellekteki* verileri, *Arglist* bağımsız değişken listesindeki her bağımsız değişken tarafından verilen konumlara okur. Bağımsız değişken listesindeki bağımsız değişkenler, *biçimde*bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli olan **vsscanf**sürümünden farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s**veya String-Control kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır.
 
 Arabellek boyutu, Sonlandırıcı null değerini içerir. Bir genişlik belirtimi alanı, okunan belirtecin arabelleğe sığmasını sağlamak için kullanılabilir. Bir genişlik belirtimi alanı kullanılmıyorsa ve okunan belirteç arabelleğe sığmayacak kadar büyük ise, bu arabelleğe hiçbir şey yazılmaz.
 
-Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf Type alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
+Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir.
+> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
 
 *Biçim* bağımsız değişkeni, giriş alanlarının yorumunu denetler ve **scanf_s** işlevi için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**vswscanf_s** , **vsscanf_s**öğesinin geniş karakterli bir sürümüdür; **vswscanf_s** bağımsız değişkenleri geniş karakterli dizelerdir. **vsscanf_s** çok baytlı onaltılık karakterleri işlemez. **vswscanf_s** , Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi halde, **vswscanf_s** ve **vsscanf_s** aynı şekilde davranır.
+**vswscanf_s** , **vsscanf_s**geniş karakterli bir sürümüdür; **vswscanf_s** bağımsız değişkenler geniş karakterli dizelerdir. **vsscanf_s** çok baytlı onaltılık karakterleri işlemez. **Vswscanf_s** Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **vswscanf_s** ve **vsscanf_s** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vstscanf_s**|**vsscanf_s**|**vsscanf_s**|**vswscanf_s**|
 
@@ -94,8 +94,8 @@ Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**vsscanf_s**|\<stdio. h >|
-|**vswscanf_s**|\<stdio. h > veya \<wchar. h >|
+|**vsscanf_s**|\<stdio.h>|
+|**vswscanf_s**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -153,9 +153,9 @@ Real:     = 15.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
 [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [vsscanf, vswscanf](vsscanf-vswscanf.md)<br/>

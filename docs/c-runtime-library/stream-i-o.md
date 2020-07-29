@@ -6,12 +6,12 @@ helpviewer_keywords:
 - I/O [CRT], stream
 - stream I/O
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
-ms.openlocfilehash: 0fc49d4cd26593cb02a2ff05c3205cc630ef848c
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8bff3cd74dfe4b1e3aa749ec28a361dd4a09c2f7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444613"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231253"
 ---
 # <a name="stream-io"></a>Akış G/Ç
 
@@ -19,7 +19,7 @@ Bu işlevler, verileri farklı boyutlarda ve biçimlerdeki, tek karakterlerden b
 
 ## <a name="stream-io-routines"></a>Akış g/ç yordamları
 
-|Yordam|Kullanım|
+|Yordam|Kullanın|
 |-------------|---------|
 |[clearerr](../c-runtime-library/reference/clearerr.md), [clearerr_s](../c-runtime-library/reference/clearerr-s.md)|Akış için hata göstergesini temizle|
 |[fclose](../c-runtime-library/reference/fclose-fcloseall.md)|Akışı kapat|
@@ -51,13 +51,13 @@ Bu işlevler, verileri farklı boyutlarda ve biçimlerdeki, tek karakterlerden b
 |[getchar, getwchar](../c-runtime-library/reference/getc-getwc.md)|**Stdin** 'den karakter oku ( **fgetchar** ve **fgetwchar**makro sürümleri)|
 |[_getmaxstdio](../c-runtime-library/reference/getmaxstdio.md)|Akış g/ç düzeyinde izin verilen aynı anda açık dosya sayısını döndürür.|
 |[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|**STDIN** 'den satırı oku|
-|[_getw](../c-runtime-library/reference/getw.md)|Akıştan ikili **int** 'i oku|
+|[_getw](../c-runtime-library/reference/getw.md)|Akıştan binary oku **`int`**|
 |[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md),[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|**Stdout** 'a biçimlendirilen verileri yazma|
 |[putc, putwc](../c-runtime-library/reference/putc-putwc.md)|Akışa karakter yazma ( **fputc** ve **fputwc**makro sürümleri)|
 |[putchar, putwchar](../c-runtime-library/reference/putc-putwc.md)|**Stdout** 'a karakter yazma ( **fputchar** ve **fputwchar**makro sürümleri)|
 |[puts, _putws](../c-runtime-library/reference/puts-putws.md)|Satırı akışa yaz|
-|[_putw](../c-runtime-library/reference/putw.md)|İkili **int** 'i akışa yaz|
-|[rewind](../c-runtime-library/reference/rewind.md)|Dosya konumunu akışın başına taşı|
+|[_putw](../c-runtime-library/reference/putw.md)|İkiliden **`int`** akışa yazma|
+|[geri sar](../c-runtime-library/reference/rewind.md)|Dosya konumunu akışın başına taşı|
 |[_rmtmp](../c-runtime-library/reference/rmtmp.md)|**Tmpfile** tarafından oluşturulan geçici dosyaları Kaldır|
 |[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md),[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)|**STDIN** 'den biçimlendirilen verileri okuma|
 |[setbuf](../c-runtime-library/reference/setbuf.md)|Denetim akışı arabelleğe alma|
@@ -95,5 +95,5 @@ Giriş yalnızca bir **fflush** veya dosya konumlandırma işlevine (**fseek**, 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
+[Giriş ve çıkış](../c-runtime-library/input-and-output.md)<br/>
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

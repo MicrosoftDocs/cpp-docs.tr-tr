@@ -8,16 +8,16 @@ helpviewer_keywords:
 - expressions [C++], primary
 - expressions [C++], qualified names
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
-ms.openlocfilehash: 03f0d0d04ad8ef2b052b9303d15437c53369a003
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c827f811813091abc62d07f12ac387bc2a0a0cc5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177631"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231149"
 ---
 # <a name="primary-expressions"></a>Birincil İfadeler
 
-Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Bunlar, kapsam çözümleme işleci (`::`) tarafından nitelenmiş sabit değerler, adlar ve adlardır.  Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:
+Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Bunlar, kapsam çözümleme işleci () tarafından nitelenmiş sabit değerler, adlar ve adlardır `::` .  Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:
 
 ```
 literal
@@ -28,9 +28,9 @@ name
 
 Sabit *değer* sabit bir birincil ifadedir. Türü kendi belirtiminin biçimine bağlıdır. Değişmez değerler belirtme hakkında ayrıntılı bilgi için bkz. [değişmez değerler](../cpp/numeric-boolean-and-pointer-literals-cpp.md) .
 
-**This** anahtar sözcüğü bir sınıf nesnesine yönelik bir işaretçidir. Statik olmayan üye işlevlerinde kullanılabilir ve işlevin çağrıldığı sınıfın örneğini gösterir. **Bu** anahtar sözcük, bir sınıf üye işlevinin gövdesi dışında kullanılamaz.
+**`this`** Anahtar sözcüğü bir sınıf nesnesine yönelik bir işaretçidir. Statik olmayan üye işlevlerinde kullanılabilir ve işlevin çağrıldığı sınıfın örneğini gösterir. **`this`** Anahtar sözcüğü bir sınıf üye işlevinin gövdesi dışında kullanılamaz.
 
-**Bu** işaretçinin türü, **Bu** işaretçiyi özellikle değiştirmekte olmayan işlevler içindeki const (`type` sınıf adı) `type` **\*** . Aşağıdaki örnek, üye işlev bildirimlerini ve **bunun**türlerini gösterir:
+İşaretçinin türü, **`this`** `type` ** \* ** `type` işaretçinin özellikle değişmeyen işlevler içindeki const (sınıf adıdır) ' dir **`this`** . Aşağıdaki örnek, üye işlev bildirimlerini ve türlerini gösterir **`this`** :
 
 ```cpp
 // expre_Primary_Expressions.cpp
@@ -44,9 +44,9 @@ public:
 };
 ```
 
-**Bu** işaretçinin türünü değiştirme hakkında daha fazla bilgi Için [Bu işaretçiye](this-pointer.md) bakın.
+İşaretçinin türünü değiştirme hakkında daha fazla bilgi için [Bu işaretçiye](this-pointer.md) bakın **`this`** .
 
-Bir ad tarafından izlenen kapsam çözümleme işleci (`::`), birincil bir ifade oluşturur.  Bu gibi adlar üye adları değil, genel kapsamdaki adlar olmalıdır.  Bu ifadenin türü adın bildirimi tarafından belirlenir. Bildirim adı lvalue ise, bu bir lvalue olur (diğer bir deyişle, bir atama işleci ifadesinin sol tarafında görünebilir). Söz konusu ad geçerli kapsamda gizlenmiş olsa da, kapsam çözümleme işleci başvurulacak bir genel bir ad sağlar. Kapsam çözümleme işlecinin nasıl kullanılacağına ilişkin bir örnek için bkz. [kapsam](../cpp/scope-visual-cpp.md) .
+Kapsam çözümleme işleci ( `::` ) ardından bir ad, birincil bir ifade oluşturur.  Bu gibi adlar üye adları değil, genel kapsamdaki adlar olmalıdır.  Bu ifadenin türü adın bildirimi tarafından belirlenir. Bildirim adı lvalue ise, bu bir lvalue olur (diğer bir deyişle, bir atama işleci ifadesinin sol tarafında görünebilir). Söz konusu ad geçerli kapsamda gizlenmiş olsa da, kapsam çözümleme işleci başvurulacak bir genel bir ad sağlar. Kapsam çözümleme işlecinin nasıl kullanılacağına ilişkin bir örnek için bkz. [kapsam](../cpp/scope-visual-cpp.md) .
 
 Parantez içine alınmış bir ifade, türü ve değeri parantez içinde olmayan ifadelerle aynı olan birincil bir ifadedir. Parantez içinde olmayan bir ifade bir lvalue ise, bu bir l-value olur.
 
@@ -76,4 +76,4 @@ A<int> // a template id
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İfade Türleri](../cpp/types-of-expressions.md)
+[Ifade türleri](../cpp/types-of-expressions.md)

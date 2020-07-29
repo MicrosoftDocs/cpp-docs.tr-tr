@@ -9,40 +9,40 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-ms.openlocfilehash: 3282f98f48f7e416857ef2f766563ab6038ca41a
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 01eaeaa57ee4d09452f37a7241f89e75fdca843e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857274"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231110"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 
-Yapılandırılmış özel durum işleme (SEH), donanım hataları gibi belirli olağanüstü kod durumlarını işlemek için bir Microsoft uzantısıdır. Windows ve Microsoft C++ , SEH 'yi desteklese de, kodunuzu daha taşınabilir ve esnek C++ hale getiren ISO standardı özel durum işlemeyi kullanmanızı öneririz. Bununla birlikte, mevcut kodu korumak veya belirli türde programlar için yine de SEH kullanmanız gerekebilir.
+Yapılandırılmış özel durum işleme (SEH), donanım hataları gibi belirli olağanüstü kod durumlarını işlemek için bir Microsoft uzantısıdır. Windows ve Microsoft C++, SEH 'yi desteklese de, kodunuzu daha taşınabilir ve esnek hale getiren ISO standardı C++ özel durum işlemeyi kullanmanızı öneririz. Bununla birlikte, mevcut kodu korumak veya belirli türde programlar için yine de SEH kullanmanız gerekebilir.
 
 **Microsoft 'a özgü:**
 
 ## <a name="grammar"></a>Dilbilgisi
 
 *try-except-deyimleri* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *bileşik deyim* **__except** **(** *ifade* **)** *bileşik-deyim*
+&nbsp;&nbsp;&nbsp;&nbsp;**__try** *bileşik deyim* **`__except`** **(** *ifade* **)** *bileşik deyim*
 
 *try-finally-deyimin* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **__try** *bileşik ifade* **__finally** *bileşik-ekstresi*
+&nbsp;&nbsp;&nbsp;&nbsp;**__try** *bileşik ifade* **`__finally`** *bileşik-ekstresi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-SEH ile, yürütme beklenmedik şekilde sonlandırılırsa bellek blokları ve dosyalar gibi kaynakların doğru şekilde serbest bırakıldığını sağlayabilirsiniz. Ayrıca, özel sorunları (örneğin, yetersiz bellek), **goto** deyimlerine veya dönüş kodlarının ayrıntılı test edilmesine bağlı olmayan kısa şekilde yapılandırılmış kodu kullanarak da işleyebilirsiniz.
+SEH ile, yürütme beklenmedik şekilde sonlandırılırsa bellek blokları ve dosyalar gibi kaynakların doğru şekilde serbest bırakıldığını sağlayabilirsiniz. Ayrıca, belirli sorunları (örneğin, yetersiz bellek), **`goto`** deyimlere veya dönüş kodlarının ayrıntılı test edilmesine bağlı olmayan kısa şekilde yapılandırılmış kodu kullanarak da işleyebilirsiniz.
 
-Bu makalede başvurulan try-except ve try-finally deyimleri, C dilinin Microsoft uzantılarıdır. Uygulamalar, daha sonra yürütmeyi sonlandıran olaylardan sonra bir programın denetimini ele geçirmesine olanak tanıyarak SEH 'yi destekler. SEH C++ kaynak dosyalarla çalışabilse de, için C++özel olarak tasarlanmamıştır. [/EHa veya/EHsc](../build/reference/eh-exception-handling-model.md) seçeneğini C++ kullanarak DERLEYEBILECEĞINIZ bir programda SEH kullanırsanız, yerel nesneler için Yıkıcılar çağrılır, ancak diğer yürütme davranışı beklediğiniz gibi olmayabilir. Bir çizim için bu makalenin ilerleyen kısımlarındaki örneğe bakın. Birçok durumda, SEH yerine Microsoft C++ derleyicisinin de desteklediği ISO standardı [ C++ özel durum işlemeyi](../cpp/try-throw-and-catch-statements-cpp.md)kullanmanızı öneririz. Özel durum C++ işlemeyi kullanarak, kodunuzun daha taşınabilir olmasını sağlayabilir ve herhangi bir türdeki özel durumları işleyebilirsiniz.
+Bu makalede başvurulan try-except ve try-finally deyimleri, C dilinin Microsoft uzantılarıdır. Uygulamalar, daha sonra yürütmeyi sonlandıran olaylardan sonra bir programın denetimini ele geçirmesine olanak tanıyarak SEH 'yi destekler. SEH C++ kaynak dosyalarıyla çalışabilse de, C++ için özel olarak tasarlanmamıştır. [/EHa veya/EHsc](../build/reference/eh-exception-handling-model.md) seçeneğini kullanarak derleyebileceğiniz bir C++ programında SEH kullanırsanız, yerel nesneler için Yıkıcılar çağrılır, ancak diğer yürütme davranışı beklediğiniz gibi olmayabilir. Bir çizim için bu makalenin ilerleyen kısımlarındaki örneğe bakın. Birçok durumda, SEH yerine Microsoft C++ derleyicisinin desteklediği ISO standardı [C++ özel durum işlemeyi](../cpp/try-throw-and-catch-statements-cpp.md)kullanmanızı öneririz. C++ özel durum işlemeyi kullanarak, kodunuzun daha taşınabilir olmasını sağlayabilir ve herhangi bir türdeki özel durumları işleyebilirsiniz.
 
-SEH kullanan C kodunuz varsa, özel durum işleme kullanan C++ C++ kodla onu karıştırabilirsiniz. Bilgi için bkz. [içinde C++yapılandırılmış özel durumları işleme ](../cpp/exception-handling-differences.md).
+SEH kullanan C kodunuz varsa, bunu C++ özel durum işleme kullanan C++ kodu ile karıştırabilirsiniz. Bilgi için bkz. [C++ ' da yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md).
 
 İki SEH mekanizması vardır:
 
-- Özel durum [işleyicileri](../cpp/writing-an-exception-handler.md)veya **__except** blokları, özel durum yanıt verebilir veya kapatabilir.
+- Özel durum [işleyicileri](../cpp/writing-an-exception-handler.md)veya **`__except`** blokları, özel durum yanıt verebilir veya kapatabilir.
 
-- [Sonlandırma işleyicileri](../cpp/writing-a-termination-handler.md)veya her zaman çağrılan **__finally** blokları, bir özel durumun sonlandırmasına neden olup olmadığı.
+- [Sonlandırma işleyicileri](../cpp/writing-a-termination-handler.md)veya **`__finally`** her zaman çağrılan bloklar, bir özel durumun sonlandırmasına neden olup olmadığı.
 
 Bu iki tür işleyici farklıdır, ancak "yığını geri sarma" olarak bilinen bir işlemle yakından ilgilidir. Yapılandırılmış bir özel durum oluştuğunda Windows, şu anda etkin olan en son yüklenen özel durum işleyicisini arar. İşleyici üç işlemlerden birini gerçekleştirebilir:
 
@@ -58,7 +58,7 @@ Yığın olmadığından, işletim sistemi her bir işlev için yazdığınız s
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-- [Özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)
+- [Özel Durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)
 
 - [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)
 
@@ -66,7 +66,7 @@ Yığın olmadığından, işletim sistemi her bir işlev için yazdığınız s
 
 ## <a name="example"></a>Örnek
 
-Daha önce belirtildiği gibi, bir C++ programda SEH kullanırsanız ve **/EHa** veya **/EHsc** seçeneğini kullanarak derlerseniz yerel nesneler için Yıkıcılar çağrılır. Ancak, özel durumlar da kullanıyorsanız C++ , yürütme sırasındaki davranış beklediğiniz gibi olmayabilir. Bu örnek, bu davranış farklarını gösterir.
+Daha önce belirtildiği gibi, bir C++ programında SEH kullanırsanız ve **/EHa** veya **/EHsc** seçeneğini kullanarak derlerseniz yerel nesneler için Yıkıcılar çağrılır. Ancak, aynı zamanda C++ özel durumları kullanıyorsanız, yürütme sırasındaki davranış beklediğiniz gibi olmayabilir. Bu örnek, bu davranış farklarını gösterir.
 
 ```cpp
 #include <stdio.h>
@@ -115,14 +115,14 @@ int main()
 }
 ```
 
-Bu kodu derlemek için **/EHsc** kullanırsanız, ancak `CPPEX` yerel test denetimi makrosu tanımsızdır, `TestClass` yok edicinin yürütülmesi olmaz ve çıkış şöyle görünür:
+Bu kodu derlemek için **/EHsc** kullanırsanız, ancak yerel test denetimi makrosu `CPPEX` tanımlanmamışsa, yok `TestClass` edicinin yürütülmesi olmaz ve çıkış şöyle görünür:
 
 ```Output
 Triggering SEH exception
 Executing SEH __except block
 ```
 
-Kodu derlemek için **/EHsc** kullanırsanız ve `CPPEX` `/DCPPEX` kullanılarak tanımlıysa (bir C++ özel durum oluşturulur), `TestClass` yıkıcısı yürütülür ve çıktı şöyle görünür:
+Kodu derlemek için **/EHsc** kullanırsanız ve `CPPEX` kullanılarak tanımlanmışsa `/DCPPEX` (bir C++ özel durumu oluştuğunda), `TestClass` yıkıcı yürütülür ve çıktı şöyle görünür:
 
 ```Output
 Throwing C++ exception
@@ -130,7 +130,7 @@ Destroying TestClass!
 Executing SEH __except block
 ```
 
-Kodu derlemek için **/EHa** kullanırsanız `TestClass` yıkıcısı, özel durumun `std::throw` kullanılarak mı yoksa özel durum TETIKLENMESI için seh kullanılarak mı yoksa, tanımlı `CPPEX` olup olmadığı, yani tanımlanmış olup olmamasına bakılmaksızın yürütülür. Çıktı şöyle görünür:
+Kodu derlemek için **/EHa** kullanırsanız, `TestClass` yıkıcı özel durumun kullanılarak `std::throw` mı yoksa özel durumu tetiklemek için seh kullanılarak mı yoksa yani tanımlanmış olup olmamasına bakılmaksızın, yok edicisi yürütülür `CPPEX` . Çıktı şöyle görünür:
 
 ```Output
 Throwing C++ exception
@@ -145,7 +145,7 @@ Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](../build/referenc
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[\<özel durum >](../standard-library/exception.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[\<exception>](../standard-library/exception.md)<br/>
 [Hatalar ve özel durum Işleme](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [Yapılandırılmış özel durum Işleme (Windows)](/windows/win32/debug/structured-exception-handling)

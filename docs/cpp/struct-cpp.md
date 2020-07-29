@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: e9ffd30dd0017e912fd7c196e2d3f0e987fb0810
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5f247a99d3f04a15ebd54718a46dae8512a580d6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330589"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231123"
 ---
 # <a name="struct-c"></a>struct (C++)
 
-**Yapı** anahtar sözcüğü bir yapı türü ve/veya bir yapı türünün değişkenini tanımlar.
+**`struct`** Anahtar sözcüğü bir yapı türü ve/veya bir yapı türünün değişkenini tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 [template-spec] struct [ms-decl-spec] [tag [: base-list ]]
@@ -29,44 +29,44 @@ ms.locfileid: "62330589"
 
 #### <a name="parameters"></a>Parametreler
 
-*Şablon belirtimi*<br/>
-İsteğe bağlı şablon belirtimleri. Daha fazla bilgi için [şablon belirtimleri](templates-cpp.md).
+*Şablon-spec*<br/>
+İsteğe bağlı şablon belirtimleri. Daha fazla bilgi için [Şablon belirtimleri](templates-cpp.md)' ne bakın.
 
-*struct*<br/>
-**Yapı** anahtar sözcüğü.
+*sýný*<br/>
+**`struct`** Anahtar sözcüğü.
 
 *MS-decl-spec*<br/>
-İsteğe bağlı depolama sınıfı belirtimi. Daha fazla bilgi için [__declspec](../cpp/declspec.md) anahtar sözcüğü.
+İsteğe bağlı depolama sınıfı belirtimi. Daha fazla bilgi için [__declspec](../cpp/declspec.md) anahtar sözcüğüne bakın.
 
 *Etiket*<br/>
-Yapıya verilen tür adı. Etiket yapı kapsamında ayrılmış bir sözcük haline gelir. Etiket isteğe bağlıdır. Atlanırsa, anonim bir yapı tanımlanır. Daha fazla bilgi için [anonim sınıf türleri](../cpp/anonymous-class-types.md).
+Yapıya verilen tür adı. Etiket yapı kapsamında ayrılmış bir sözcük haline gelir. Etiket isteğe bağlıdır. Atlanırsa, anonim bir yapı tanımlanır. Daha fazla bilgi için bkz. [anonim sınıf türleri](../cpp/anonymous-class-types.md).
 
-*temel-liste*<br/>
-Bu yapının üyelerini derleyeceği isteğe bağlı sınıf veya yapı listesi. Bkz: [taban sınıfları](../cpp/base-classes.md) daha fazla bilgi için. Her temel sınıf veya yapı adı bir erişim belirticisi tarafından öncesinde ([genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md)) ve [sanal](../cpp/virtual-cpp.md) anahtar sözcüğü. Üye erişimi tabloya bakın [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) daha fazla bilgi için.
+*temel liste*<br/>
+Bu yapının üyelerini derleyeceği isteğe bağlı sınıf veya yapı listesi. Daha fazla bilgi için bkz. [temel sınıflar](../cpp/base-classes.md) . Her temel sınıf veya yapı adı öncesinde bir erişim belirticisi ([genel](../cpp/public-cpp.md), [özel](../cpp/private-cpp.md), [korumalı](../cpp/protected-cpp.md)) ve [sanal](../cpp/virtual-cpp.md) anahtar sözcük olabilir. Daha fazla bilgi için [sınıf üyelerine erişimi denetleme](member-access-control-cpp.md) içindeki üye erişimi tablosuna bakın.
 
 *üye listesi*<br/>
-Yapı üyeleri listesi. Başvurmak [sınıf üyelerine genel bakış](../cpp/class-member-overview.md) daha fazla bilgi için. Burada tek fark **yapı** yerine kullanılan **sınıfı**.
+Yapı üyeleri listesi. Daha fazla bilgi için [sınıf üyesine genel bakış](../cpp/class-member-overview.md) bölümüne bakın. Burada tek fark, **`struct`** yerinde kullanılır **`class`** .
 
 *Bildirimciler*<br/>
-Yapı adlarını belirten bildirimci listesi. Bildirimci listeleri yapı türünün bir veya daha fazla örneğini bildirir. Bildirimciler, yapının tüm veri üyeleri ise Başlatıcı Listeleri içerebilir **genel**. Veri üyeleri olduğundan Başlatıcı Listeleri yapılarda ortaktır **genel** varsayılan olarak.  Bkz: [genel bakış, Bildirimcileri](../cpp/overview-of-declarators.md) daha fazla bilgi için.
+Yapının adlarını belirten bildirimci listesi. Bildirimci listeleri yapı türünün bir veya daha fazla örneğini bildirir. Bildiriciler, yapının tüm veri üyeleri ise başlatıcı listeleri içerebilir **`public`** . Veri üyeleri varsayılan olarak olduğundan, başlatıcı listeleri yapılarda ortaktır **`public`** .  Daha fazla bilgi için bkz. [Bildirimcilerin genel bakış](../cpp/overview-of-declarators.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
 Yapı türü, kullanıcı tanımlı bileşik bir türdür. Farklı türlere sahip olabilen alanlar veya üyelerden oluşur.
 
-Üyeleri şeylerdir ancak C++'da, bir sınıf ile aynı yapısıdır **genel** varsayılan olarak.
+C++ ' da, bir yapı, üyelerinin varsayılan olarak olması dışında bir sınıf ile aynıdır **`public`** .
 
-Yönetilen sınıflar ve yapılar için hakkında daha fazla bilgi için C++/CLI, bkz: [sınıfları ve yapıları](../extensions/classes-and-structs-cpp-component-extensions.md).
+C++/CLı ' daki yönetilen sınıflar ve yapılar hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md).
 
 ## <a name="using-a-structure"></a>Bir Yapı Kullanma
 
-C'de, açık olarak kullanmalısınız **yapı** bir yapıyı bildirmek için anahtar sözcüğü. C++'ta kullanmak gerekmez **yapı** tür tanımlandıktan sonra anahtar sözcüğü.
+C 'de, **`struct`** bir yapıyı bildirmek için anahtar sözcüğünü açık olarak kullanmalısınız. C++ ' da, **`struct`** tür tanımlandıktan sonra anahtar sözcüğünü kullanmanız gerekmez.
 
 Yapı türü kapanış küme ayracı ile noktalı virgül arasına bir veya daha fazla virgülle ayrılmış değişken adı yerleştirilerek tanımlandığında değişkenleri bildirme seçeneğine sahip olursunuz.
 
 Yapı değişkenleri başlatılabilir. Başlatma her değişken için ayraç içine alınmalıdır.
 
-İlgili bilgiler için bkz. [sınıfı](../cpp/class-cpp.md), [birleşim](../cpp/unions.md), ve [enum](../cpp/enumerations-cpp.md).
+İlgili bilgiler için bkz. [Class](../cpp/class-cpp.md), [Union](../cpp/unions.md)ve [enum](../cpp/enumerations-cpp.md).
 
 ## <a name="example"></a>Örnek
 
