@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculating floors of values
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-ms.openlocfilehash: 24c6811a755ea242d424c5dd06cdf48c6e9c1b20
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: dd1b88f51dfd414fc1668199350db1e2c34b9f33
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507007"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218694"
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 
@@ -75,7 +75,7 @@ Kayan nokta değeri.
 
 **Floor** işlevleri, *x*değerinden küçük veya buna eşit olan en büyük tamsayıyı temsil eden bir kayan nokta değeri döndürür. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|_DOMAIN|
 
@@ -83,7 +83,7 @@ Kayan nokta değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerlerini alan ve döndüren **Floor** aşırı yüklerini çağırabilirsiniz. C programında, **kat** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **katın** aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **kat** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

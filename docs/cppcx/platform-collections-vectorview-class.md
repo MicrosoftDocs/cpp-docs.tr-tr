@@ -1,5 +1,5 @@
 ---
-title: Platform::Collections::VectorView Sınıfı
+title: 'Platform:: Collections:: VectorView sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -12,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-ms.openlocfilehash: 7f12c7b926cd8d3d8fc892cff6f2245e7c216219
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: 207f5d517eaae475af1c65a284a3d1ebe50621af
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032232"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218396"
 ---
-# <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView Sınıfı
+# <a name="platformcollectionsvectorview-class"></a>Platform:: Collections:: VectorView sınıfı
 
-Dizin tarafından tek tek erişilebilen sıralı nesne koleksiyonunun salt okunur görünümünü temsil eder. Koleksiyondaki her nesnenin türü şablon parametresi tarafından belirtilir.
+Dizin tarafından tek tek erişilebilen bir nesne koleksiyonunun salt okunurdur görünümünü temsil eder. Koleksiyondaki her nesnenin türü, şablon parametresi tarafından belirtilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <typename T, typename E>
@@ -33,32 +33,32 @@ template <typename T, typename E>
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-`VectorView` Nesnede bulunan öğelerin türü.
+Nesnede bulunan öğelerin türü `VectorView` .
 
-*E*<br/>
-Türü değerleri ile eşitliği test etmek için ikili `T`bir yüklem belirtir. Varsayılan değer: `std::equal_to<T>`.
+*A*<br/>
+Tür değerleriyle eşitlik testi için bir ikili koşul belirtir `T` . Varsayılan değer: `std::equal_to<T>`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf `VectorView` [Windows:Foundation::Collections::IVectorView\<T>](/uwp/api/windows.foundation.collections.ivectorview-1) arabirimi ve Standart Şablon Kitaplığı yineleyicileri için destek uygular.
+`VectorView`Sınıfı [Windows:: Foundation:: Collections:: ıvectorview \<T> ](/uwp/api/windows.foundation.collections.ivectorview-1) arabirimini ve standart Şablon kitaplığı yineleyiciler desteğini uygular.
 
 ### <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[VectorView::VectorView](#ctor)|VectorView sınıfının yeni bir örneğini başolarak karşılar.|
+|[VectorView:: VectorView](#ctor)|VectorView sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[VectorView::İlk](#first)|VectorView'daki ilk öğeyi belirten bir yineleyici döndürür.|
-|[VectorView::GetAt](#getat)|Belirtilen dizin tarafından belirtilen geçerli VectorView öğesini alır.|
-|[VectorView::GetMany](#getmany)|Belirtilen dizinden başlayarak geçerli VectorView'den bir öğe dizisi alır.|
-|[VectorView::IndexOf](#indexof)|Geçerli VectorView'de belirtilen öğeyi arar ve bulunursa, öğenin dizinini döndürür.|
-|[VectorView::Boyut](#size)|Geçerli VectorView nesnesindeki öğe sayısını döndürür.|
+|[VectorView:: First](#first)|VectorView içindeki ilk öğeyi belirten bir yineleyici döndürür.|
+|[VectorView:: GetAt](#getat)|Belirtilen dizin tarafından belirtilen geçerli VectorView öğesini alır.|
+|[VectorView:: GetMany](#getmany)|Belirtilen dizinden başlayarak, geçerli Vektörtorview öğesinden bir öğe dizisi alır.|
+|[VectorView:: IndexOf](#indexof)|Geçerli vektör görünümünde belirtilen öğeyi arar ve bulunursa öğenin dizinini döndürür.|
+|[VectorView:: size](#size)|Geçerli VectorView nesnesindeki öğe sayısını döndürür.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -66,13 +66,13 @@ Sınıf `VectorView` [Windows:Foundation::Collections::IVectorView\<T>](/uwp/api
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** collection.h
+**Üstbilgi:** Collection. h
 
-**Ad alanı:** Platform::Koleksiyonlar
+**Ad alanı:** Platform:: Collections
 
-## <a name="vectorviewfirst-method"></a><a name="first"></a>VectorView::İlk Yöntem
+## <a name="vectorviewfirst-method"></a><a name="first"></a>VectorView:: First yöntemi
 
-VectorView'daki ilk öğeyi belirten bir yineleyici döndürür.
+VectorView içindeki ilk öğeyi belirten bir yineleyici döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -84,17 +84,17 @@ virtual Windows::Foundation::Collections::IIterator<T>^
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-VectorView'daki ilk öğeyi belirten bir yineleyici.
+VectorView içindeki ilk öğeyi belirten bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-First() tarafından döndürülen yineleyiciyi tutmanın kullanışlı bir yolu, otomatik **tür** kesintisi anahtar sözcüğüyle birlikte bildirilen bir değişkene iade değerini atamaktır. Örneğin, `auto x = myVectorView->First();`.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **`auto`** tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myVectorView->First();`.
 
-## <a name="vectorviewgetat-method"></a><a name="getat"></a>VectorView::GetAt Yöntemi
+## <a name="vectorviewgetat-method"></a><a name="getat"></a>VectorView:: GetAt yöntemi
 
 Belirtilen dizin tarafından belirtilen geçerli VectorView öğesini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -105,18 +105,18 @@ T GetAt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-VectorView nesnesinde belirli bir öğeyi belirten sıfır tabanlı, imzasız bir tamsayı.
+*indeks*<br/>
+VectorView nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`index` Parametre tarafından belirtilen öğe. Eleman türü VectorView şablon parametresi, *T*tarafından belirtilir.
+Parametresi tarafından belirtilen öğe `index` . Öğe türü, VectorView şablon parametresi, *T*ile belirtilir.
 
-## <a name="vectorviewgetmany-method"></a><a name="getmany"></a>VectorView::GetMany Yöntemi
+## <a name="vectorviewgetmany-method"></a><a name="getmany"></a>VectorView:: GetMany yöntemi
 
-Belirtilen dizinden başlayarak geçerli VectorView'den bir öğe dizisi alır.
+Belirtilen dizinden başlayarak, geçerli Vektörtorview öğesinden bir öğe dizisi alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -128,21 +128,21 @@ virtual unsigned int GetMany(
 
 ### <a name="parameters"></a>Parametreler
 
-*Startındex*<br/>
-Alınacak öğelerin başlangıcının sıfır tabanlı dizin.
+*startIndex*<br/>
+Alınacak öğelerin başlangıcına ait sıfır tabanlı dizin.
 
-*Dest*<br/>
-Bu işlem tamamlandığında, VectorView'daki son öğede `startIndex` belirtilen öğeden başlayan ve biten bir dizi öğe.
+*HD*<br/>
+Bu işlem tamamlandığında, `startIndex` vektör görünümündeki son öğe tarafından belirtilen ve biten öğe ile başlayan bir öğe dizisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Alınan öğe sayısı.
 
-## <a name="vectorviewindexof-method"></a><a name="indexof"></a>VectorView::IndexOf Yöntemi
+## <a name="vectorviewindexof-method"></a><a name="indexof"></a>VectorView:: IndexOf yöntemi
 
-Geçerli VectorView'de belirtilen öğeyi arar ve bulunursa, öğenin dizinini döndürür.
+Geçerli vektör görünümünde belirtilen öğeyi arar ve bulunursa öğenin dizinini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -154,19 +154,19 @@ virtual bool IndexOf(
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-Bulunması gereken öğe.
+*deeri*<br/>
+Bulunacak öğe.
 
-*Dizin*<br/>
-Parametre `value` bulunursa maddenin sıfır tabanlı dizin; aksi takdirde, 0.
+*indeks*<br/>
+Parametre bulunursa öğenin sıfır tabanlı dizini `value` ; Aksi durumda 0.
 
-Madde maddenin ilk öğesi yse `VectorView` veya madde bulunamazsa dizin parametresi 0'dır. *index* İade değeri **doğruysa,** öğe bulundu ve ilk öğedir; aksi takdirde, öğe bulunamadı.
+Öğe öğesinin ilk öğesi ise veya öğe bulunmazsa *Dizin* parametresi 0 ' dır `VectorView` . Dönüş değeri ise **`true`** , öğe bulunursa ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-belirtilen öğe bulunursa **geçerlidir;** aksi takdirde, **yanlış**.
+**`true`** Belirtilen öğe bulunursa; Aksi takdirde, **`false`** .
 
-## <a name="vectorviewsize-method"></a><a name="size"></a>VectorView::Boyut Yöntemi
+## <a name="vectorviewsize-method"></a><a name="size"></a>VectorView:: size yöntemi
 
 Geçerli VectorView nesnesindeki öğe sayısını döndürür.
 
@@ -179,13 +179,13 @@ virtual property unsigned int Size;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli VectorView'deki öğelerin sayısı.
+Geçerli Vektörtorview içindeki öğe sayısı.
 
-## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a>VectorView::VectorView Oluşturucu
+## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a>VectorView:: VectorView Oluşturucusu
 
-VectorView sınıfının yeni bir örneğini başolarak karşılar.
+VectorView sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 VectorView();
@@ -241,40 +241,40 @@ VectorView(
 
 ### <a name="parameters"></a>Parametreler
 
-*ınit*<br/>
-Geçerli VectorView'i başlatmak için kullanılan nesne koleksiyonu nun türü.
+*Dengeleyici*<br/>
+Geçerli vektörleştirme görünümünü başlatmak için kullanılan nesne koleksiyonunun türü.
 
-*ıl*<br/>
-Bir [std::initializer_list](../standard-library/initializer-list-class.md) olan öğeleri VectorView baş harflerini leştirmek için kullanılacaktır.
+*Demiryolu*<br/>
+Vektörtorview 'ı başlatmak için öğeleri kullanılacak [std:: initializer_list](../standard-library/initializer-list-class.md) .
 
 *N*<br/>
-Geçerli VectorView'i başlatmaya kullanılan nesneler koleksiyonundaki öğe sayısı.
+Geçerli vektör görünümünü başlatmak için kullanılan nesne koleksiyonundaki öğe sayısı.
 
-*Boyutu*<br/>
-VectorView'daki öğelerin sayısı.
+*boyutla*<br/>
+Vektörtorview içindeki öğe sayısı.
 
-*value*<br/>
-Geçerli VectorView'deki her öğeyi başlatmak için kullanılan bir değer.
+*deeri*<br/>
+Geçerli Vektörtorview içindeki her öğeyi başlatmak için kullanılan bir değer.
 
-*v*<br/>
-Geçerli VectorView'i başlatmada kullanılan [bir std::vektöre](../standard-library/vector-class.md) bir [Lvalues ve Rvalues.](../cpp/lvalues-and-rvalues-visual-cpp.md)
+*Yönetim*<br/>
+Bir [lvalues ve rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) , geçerli Vektörtorview 'u başlatmak için kullanılan bir [std:: vector](../standard-library/vector-class.md) öğesine.
 
-*Ptr*<br/>
-Geçerli VectorView'i başlatmak için kullanılan bir `std::vector` işaretçi.
+*ptr*<br/>
+`std::vector`Geçerli Vektörtorview 'ı başlatmak için kullanılan bir işaretçisi.
 
-*Arr*<br/>
-[Bir Platform::Geçerli](../cppcx/platform-array-class.md) VectorView'i başlatmak için kullanılan dizi nesnesi.
+*ARR*<br/>
+Geçerli Vektörtorview 'ı başlatmak için kullanılan bir [Platform:: Array](../cppcx/platform-array-class.md) nesnesi.
 
-*A*<br/>
-Geçerli VectorView'i başlatmak için kullanılan [std::dizi](../standard-library/array-class-stl.md) nesnesi.
+*a*<br/>
+Geçerli Vektörtorview 'ı başlatmak için kullanılan bir [std:: Array](../standard-library/array-class-stl.md) nesnesi.
 
-*Ilk*<br/>
-Geçerli VectorView'i başlatmak için kullanılan nesne dizisinin ilk öğesi. Türü mükemmel `first` *yönlendirme*yoluyla geçirilir. Daha fazla bilgi için [Bkz. Rvalue Başvuru Bildirimcisi: &&. ](../cpp/rvalue-reference-declarator-amp-amp.md)
+*adı*<br/>
+Geçerli vektörleştirme görünümünü başlatmak için kullanılan nesne dizisindeki ilk öğe. Türü, `first` *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-*Son*<br/>
-Geçerli VectorView'i başlatmak için kullanılan nesneler dizisinin son öğesi. Türü mükemmel `last` *yönlendirme*yoluyla geçirilir. Daha fazla bilgi için [Bkz. Rvalue Başvuru Bildirimcisi: &&. ](../cpp/rvalue-reference-declarator-amp-amp.md)
+*soyadına*<br/>
+Geçerli vektör görünümünü başlatmak için kullanılan nesneler dizisindeki son öğe. Türü, `last` *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform İsim Alanı](platform-namespace-c-cx.md)<br/>
-[C++'da Windows Runtime Bileşenleri Oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+[Platform ad alanı](platform-namespace-c-cx.md)<br/>
+[C++ ' ta Windows Çalışma Zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

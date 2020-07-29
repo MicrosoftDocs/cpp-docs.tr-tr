@@ -1,27 +1,31 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4742
-ms.date: 11/04/2016
+ms.date: 07/22/2020
 f1_keywords:
 - C4742
 helpviewer_keywords:
 - C4742
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
-ms.openlocfilehash: af97c72f496177d2e94cf18f9685ac33c5e62404
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e6ecd082a9f6d690414761d11d3a0adf101f87c2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185665"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233242"
 ---
 # <a name="compiler-warning-level-1-c4742"></a>Derleyici Uyarısı (düzey 1) C4742
 
-' var ', ' FILE1 ' ve ' dosya2 ': Number ve Number değerlerinde farklı hizalamaya sahip
+> '*Variable*', '*FILE1*' ve '*dosya2*' içinde farklı hizalamaya sahip: *Sayı1* ve *sayı2*
 
-İki dosyada başvurulan veya tanımlanan bir dış değişkenin bu dosyalarda farklı hizalaması vardır. Derleyici, *FILE1* içindeki değişken için `__alignof`, *dosya2*içindeki değişken için `__alignof` farklılık gösterdiğinde bu uyarı yayınlanır. Bunun nedeni, farklı dosyalardaki değişkeni bildirirken uyumsuz türler kullanılması veya farklı dosyalarda eşleşmeyen `#pragma pack` kullanılması olabilir.
+İki dosyada başvurulan veya tanımlanan bir dış değişkenin bu dosyalarda farklı hizalaması vardır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu uyarı, derleyici **`alignof`** *FILE1* içindeki değişken için **`alignof`** *dosya2*' deki değişken için farklılık gösterir. Bunun nedeni, farklı dosyalardaki değişkeni bildirirken uyumsuz türler kullanılması veya farklı dosyalardaki eşleştirmesiz olarak kullanılması olabilir `#pragma pack` .
 
 Bu uyarıyı çözümlemek için aynı tür tanımını kullanın ya da değişkenler için farklı adlar kullanın.
 
-Daha fazla bilgi için bkz. [Pack](../../preprocessor/pack.md) ve [__alignof işleci](../../cpp/alignof-operator.md).
+Daha fazla bilgi için bkz [`pack`](../../preprocessor/pack.md) . ve [ `alignof` işleci](../../cpp/alignof-operator.md).
 
 ## <a name="example"></a>Örnek
 
@@ -34,8 +38,6 @@ struct X {
    char x, y, z, w;
 } global;
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C4742 oluşturur.
 

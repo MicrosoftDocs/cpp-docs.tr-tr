@@ -6,12 +6,12 @@ helpviewer_keywords:
 - unary operators [C++], expressions with
 - expressions [C++], operators
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-ms.openlocfilehash: 26aad64e5b9c7a496c2e6bb131b82740c06abe07
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 032ebd99041de9308d16710b2a27e0db3cddd4df
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188980"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233762"
 ---
 # <a name="expressions-with-unary-operators"></a>Birli İşleçli İfadeler
 
@@ -35,15 +35,15 @@ Birli İşleçler bir ifadede yalnızca bir işlenen üzerinde çalışır. Birl
 
 - [Cast işleci ()](../cpp/cast-operator-parens.md)
 
-- [sizeof işleci](../cpp/sizeof-operator.md)
+- [`sizeof`işlecinde](../cpp/sizeof-operator.md)
 
-- [__uuidof işleci](../cpp/uuidof-operator.md)
+- [`__uuidof`işlecinde](../cpp/uuidof-operator.md)
 
-- [__alignof işleci](../cpp/alignof-operator.md)
+- [`alignof`işlecinde](../cpp/alignof-operator.md)
 
-- [New işleci](../cpp/new-operator-cpp.md)
+- [`new`işlecinde](../cpp/new-operator-cpp.md)
 
-- [delete işleci](../cpp/delete-operator-cpp.md)
+- [`delete`işlecinde](../cpp/delete-operator-cpp.md)
 
 Bu operatörlerin sağdan sola ilişkilendirilebilirliği vardır. Birli ifadeler genellikle bir sonek veya birincil ifadeden önce gelen sözdizimini içerir.
 
@@ -51,17 +51,17 @@ Aşağıdakiler, birli ifadelerin olası formlarıdır.
 
 - *sonek ifadesi*
 
-- `++` *birli ifade*
+- `++` *birli-ifade*
 
-- `--` *birli ifade*
+- `--` *birli-ifade*
 
 - *birli işleç* *atama ifadesi*
 
-- **sizeof** *birli ifadesi*
+- **`sizeof`***birli ifade*
 
-- `sizeof(` *tür adı* `)`
+- `sizeof(`*tür adı*`)`
 
-- `decltype(` *ifade* `)`
+- `decltype(`*ifade*`)`
 
 - *Ayırma ifadesi*
 
@@ -69,14 +69,14 @@ Aşağıdakiler, birli ifadelerin olası formlarıdır.
 
 Herhangi bir *sonek* ifadesi bir *birli ifade*olarak değerlendirilir ve herhangi bir birincil ifade bir *sonek ifadesi*olarak kabul edildiğinden, birincil ifadeler de *birli ifade* olarak kabul edilir. Daha fazla bilgi için bkz. [sonek ifadeleri](../cpp/postfix-expressions.md) ve [birincil ifadeler](../cpp/primary-expressions.md).
 
-*Birli işleç* , aşağıdaki simgelerden birini veya daha fazlasını içerir: `* & + - ! ~`
+*Birli işleç* , aşağıdaki simgelerden birini veya daha fazlasını içerir:`* & + - ! ~`
 
 *Cast ifadesi* , türü değiştirmek için isteğe bağlı bir tür dönüştürme içeren birli bir ifadedir. Daha fazla bilgi için bkz. [tür dönüştürme işleci: ()](../cpp/cast-operator-parens.md).
 
 Bir *ifade* herhangi bir ifade olabilir. Daha fazla bilgi için bkz. [ifadeler](../cpp/expressions-cpp.md).
 
-*Ayırma ifadesi* **New** işlecine başvurur. *Ayırmayı kaldırma ifadesi* **Delete** işlecine başvurur. Daha fazla bilgi için bu konunun önceki kısımlarında bulunan bağlantılara bakın.
+*Ayırma ifadesi* işleci anlamına gelir **`new`** . *Ayırmayı kaldırma ifadesi* işleci anlamına gelir **`delete`** . Daha fazla bilgi için bu konunun önceki kısımlarında bulunan bağlantılara bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İfade Türleri](../cpp/types-of-expressions.md)
+[Ifade türleri](../cpp/types-of-expressions.md)

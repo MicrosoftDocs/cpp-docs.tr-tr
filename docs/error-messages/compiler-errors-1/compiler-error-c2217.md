@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2217
 ms.assetid: 1ce1e3f5-4171-4376-804d-967f7e612935
-ms.openlocfilehash: 7417c651fde6bef781bb6eb2e081cd3ad8ecc3a0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b033d95b127a45451a776cdc336ea7d2649d3716
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741306"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87209753"
 ---
 # <a name="compiler-error-c2217"></a>Derleyici hatası C2217
 
@@ -21,9 +21,9 @@ ms.locfileid: "74741306"
 
 ### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Kesme (`__interrupt`) işlevi `near`olarak bildirilmiştir. Kesme işlevlerinin `far`olması gerekir.
+1. Interrupt ( `__interrupt` ) işlevi olarak bildirilmiştir `near` . Kesme işlevleri olmalıdır `far` .
 
-1. `__stdcall`veya `__fastcall`ile belirtilen kesme işlevi. Kesme işlevlerinin C çağrı kurallarını kullanması gerekir.
+1. Veya ile belirtilen kesme işlevi **`__stdcall`** **`__fastcall`** . Kesme işlevlerinin C çağrı kurallarını kullanması gerekir.
 
 ## <a name="example"></a>Örnek
 

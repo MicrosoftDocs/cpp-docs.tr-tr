@@ -38,18 +38,18 @@ helpviewer_keywords:
 - time, converting values
 - localtime_s function
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
-ms.openlocfilehash: 3d73aa32243776215b04303b37a4398bc8c35c04
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 26ebadf49632b9e312f3d0c0a0788720d3230312
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911582"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218617"
 ---
 # <a name="localtime_s-_localtime32_s-_localtime64_s"></a>localtime_s, _localtime32_s, _localtime64_s
 
 Bir **time_t** zamanı değerini bir **TM** yapısına dönüştürür ve yerel saat dilimi için düzeltir. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [localtime, _localtime32 _localtime64](localtime-localtime32-localtime64.md) sürümleridir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t localtime_s(
@@ -82,9 +82,9 @@ Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodla
 
 |*tmDest*|*sourceTime*|Döndürülen değer|*Tmdest* değeri|Geçersiz parametre işleyicisini çağırır|
 |-----------|------------|------------------|--------------------|---------------------------------------|
-|**DEĞER**|kaydedilmemiş|**EıNVAL**|Değiştirilmedi|Yes|
+|**DEĞER**|herhangi biri|**EıNVAL**|Değiştirilmedi|Yes|
 |**Null** değil (geçerli belleğe işaret eder)|**DEĞER**|**EıNVAL**|Tüm alanlar-1 olarak ayarlandı|Yes|
-|**Null** değil (geçerli belleğe işaret eder)|0 ' dan küçük veya **_MAX__TIME64_T** değerinden büyük|**EıNVAL**|Tüm alanlar-1 olarak ayarlandı|No|
+|**Null** değil (geçerli belleğe işaret eder)|0 ' dan küçük veya **_MAX__TIME64_T** değerinden büyük|**EıNVAL**|Tüm alanlar-1 olarak ayarlandı|Hayır|
 
 İlk iki hata koşulu durumunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
@@ -101,7 +101,7 @@ Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodla
 
 **localtime_s** , **_localtime64_s**değerlendirilen ve **time_t** **__time64_t**eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t**olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunu yapmak **localtime_s** **_localtime32_s**değerlendirmesine neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
-[TM](../../c-runtime-library/standard-types.md) yapı türü alanları, her biri bir **int**olan aşağıdaki değerleri depolar.
+[TM](../../c-runtime-library/standard-types.md) yapı türü alanları, her biri bir olan aşağıdaki değerleri depolar **`int`** .
 
 |Alan|Açıklama|
 |-|-|
@@ -123,7 +123,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |-------------|---------------------|-|
-|**localtime_s**, **_localtime32_s**, **_localtime64_s**|\<Time. h>|\<CTime> veya \<saati. h>|
+|**localtime_s**, **_localtime32_s**, **_localtime64_s**|\<time.h>|\<ctime> veya \<time.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

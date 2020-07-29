@@ -8,12 +8,12 @@ helpviewer_keywords:
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-ms.openlocfilehash: 2a0bd21023bd1c6bc14b1f587c85960cf1e8b820
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a409efbe2908954d394656cb989ad6b80a9ce22
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62244188"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233645"
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 
@@ -67,9 +67,9 @@ int main()
 }
 ```
 
-Yukarıdaki kod, başvuru tarafından geçirilen yapının üyelerine üye seçme işleci kullanılarak erişildiğini göstermektedir (**.**) yerine, işaretçi üye seçme işleci (**->**).
+Önceki kod, başvuru tarafından geçirilen bir yapının üyelerine, işaretçi üye seçim işleci () yerine üye seçim işleci (**.**) kullanılarak erişildiğini gösterir **->** .
 
-Başvuru türleri olarak geçirilen bağımsız değişkenler işaretçi olmayan türlerinin söz dizimi gözlemleyin olsa da, işaretçi türlerinin önemli bir karakteristik korurlar: Bunlar olarak bildirilmedikleri sürece değiştirilebilirler **const**. Önceki kodun amacı `date` nesnesini değiştirmek olmadığı için daha uygun bir işlev prototipi şöyle olur:
+Başvuru türleri olarak geçirilen bağımsız değişkenler işaretçi olmayan türlerin sözdizimini gözlemlese de, işaretçi türlerinin önemli bir özelliğini korurlar: olarak bildirilmeyen sürece bunlar değiştirilebilir **`const`** . Önceki kodun amacı `date` nesnesini değiştirmek olmadığı için daha uygun bir işlev prototipi şöyle olur:
 
 ```cpp
 long DateOfYear( const Date& date );
@@ -77,7 +77,7 @@ long DateOfYear( const Date& date );
 
 Bu prototip, `DateOfYear` işlevinin bağımsız değişkenini değiştirmeyeceğini garanti eder.
 
-Standart dönüştürme olmadığından herhangi bir başvuru türü alınarak prototipli işlev onun yerine aynı türden bir nesne kabul edebilir *typename* için *typename* <strong>&</strong>.
+Bir başvuru türü alan herhangi bir işlev *prototipten* *TypeName*'e standart bir dönüştürme olduğundan, onun yerine aynı türdeki bir nesneyi kabul edebilir <strong>&</strong> .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

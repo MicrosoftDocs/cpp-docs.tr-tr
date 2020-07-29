@@ -1,5 +1,5 @@
 ---
-title: Platform::Koleksiyonlar::VectorViewIterator Sınıfı
+title: 'Platform:: Collections:: Vectorviewwiterator sınıfı'
 ms.date: 03/27/2019
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - VectorViewIterator Class
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
-ms.openlocfilehash: 01ae4286e996db9819cb697360f6de9c344edd21
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3fed25b975eefe33f9eb7014ca91a52ba419c936
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363703"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211573"
 ---
-# <a name="platformcollectionsvectorviewiterator-class"></a>Platform::Koleksiyonlar::VectorViewIterator Sınıfı
+# <a name="platformcollectionsvectorviewiterator-class"></a>Platform:: Collections:: Vectorviewwiterator sınıfı
 
-Windows Runtime`IVectorView` arabiriminden türetilen nesneler için Standart Şablon Kitaplığı yineleyicisi sağlar.
+Windows Çalışma Zamanı arabiriminden türetilmiş nesneler için standart bir şablon kitaplığı Yineleyici sağlar `IVectorView` .
 
-`ViewVectorIterator`türündeki `VectorProxy<T>`öğeleri depolayan bir proxy yineleyicidir. Ancak, proxy nesnesi kullanıcı kodu için hemen hemen hiç görünür değildir. Daha fazla bilgi için [Bkz. Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
+`ViewVectorIterator`, türündeki öğeleri depolayan bir proxy Yineleyici `VectorProxy<T>` . Ancak, proxy nesnesi neredeyse hiçbir şekilde Kullanıcı koduna görünmez. Daha fazla bilgi için bkz. [Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <typename T>
@@ -30,45 +30,45 @@ class VectorViewIterator;
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-VectorViewIterator şablon sınıfının dis adı.
+VectorViewIterator şablon sınıfının TypeName 'i.
 
 ### <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`difference_type`|İşaretçi farkı (ptrdiff_t).|
-|`iterator_category`|Rasgele erişim yineleme kategorisi (::std::random_access_iterator_tag).|
-|`pointer`|VectorViewIterator'un uygulanması için gerekli olan dahili türe işaretçi.|
-|`reference`|VectorViewIterator'un uygulanması için gerekli olan dahili türe başvuru.|
-|`value_type`|Yazı `T` adı.|
+|`difference_type`|Bir işaretçi farkı (ptrdiff_t).|
+|`iterator_category`|Rastgele erişim Yineleyici kategorisi (:: std:: random_access_iterator_tag).|
+|`pointer`|Vektörtorviewiterator uygulamasının uygulanması için gerekli olan bir iç tür işaretçisi.|
+|`reference`|VectorViewIterator 'in uygulanması için gerekli olan bir iç türe başvuru.|
+|`value_type`|`T`TypeName.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[VectorViewIterator::VectorViewIterator](#ctor)|VectorViewIterator sınıfının yeni bir örneğini başolarak karşılar.|
+|[VectorViewIterator:: Vectorviewwiterator](#ctor)|Vectorviewwiterator sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[VectorViewIterator::operatör- Operatör](#operator-minus)|Yeni bir yineleyici veren geçerli yineleyiciden belirli sayıda öğe veya yinelenenler arasındaki öğe sayısını veren geçerli yineleyiciden belirtilen bir yineleyici çıkarılır.|
-|[VectorViewIterator::operator-- Operatör](#operator-decrement)|Geçerli VectorViewIterator'u atar.|
-|[VectorViewIterator::operator!= Operatör](#operator-inequality)|Geçerli VectorViewIterator'un belirli bir VectorViewIterator'a eşit olup olmadığını gösterir.|
-|[VectorViewIterator::operator* Operatör](#operator-dereference)|Geçerli VectorViewIterator tarafından belirtilen öğeye bir başvuru alır.|
-|[VectorViewIterator::operatör\[\]](#operator-at)|Geçerli VectorViewIterator'dan belirtilen bir yer değiştirme öğesine bir başvuru alır.|
-|[VectorViewIterator::operator+ Operatör](#operator-plus)|Belirtilen VectorViewIterator'dan belirtilen deplasmantaki elemana başvuran bir VectorViewIterator döndürür.|
-|[VectorViewIterator::operator++ Operatör](#operator-increment)|Geçerli VectorViewIterator'u atar.|
-|[VectorViewIterator::operator+= Operatör](#operator-plus-equals)|Geçerli VectorViewIterator'u belirtilen yer değiştirmeyle karşılar.|
-|[VectorViewIterator::operatör< Operatörü](#operator-less-than)|Geçerli VectorViewIterator'un belirli bir VectorViewIterator'dan daha az olup olmadığını gösterir.|
-|[VectorViewIterator::operator\<= Operatör](#operator-less-than-or-equals)|Geçerli VectorViewIterator'un belirtilen VectorViewIterator'dan daha az mı yoksa eşit mi olduğunu gösterir.|
-|[VectorViewIterator::operator-= Operatör](#operator-minus-assign)|Geçerli VectorViewIterator'u belirtilen yer değiştirmeyle eriter.|
-|[VectorViewIterator::operator== Operatör](#operator-equality)|Geçerli VectorViewIterator'un belirli bir VectorViewIterator'a eşit olup olmadığını gösterir.|
-|[VectorViewIterator::operatör> Operatörü](#operator-greater-than)|Geçerli VectorViewIterator'un belirli bir VectorViewIterator'dan büyük olup olmadığını gösterir.|
-|[VectorViewIterator::operatör-> Operatörü](#operator-arrow)|Geçerli VectorViewIterator tarafından başvurulan öğenin adresini alır.|
-|[VectorViewIterator::operatör>= Operatör](#operator-greater-than-or-equals)|Geçerli VectorViewIterator'un belirtilen VectorViewIterator'dan büyük mü yoksa eşit mi olduğunu gösterir.|
+|[VectorViewIterator:: operator-Işleci](#operator-minus)|Geçerli yineleyiciden belirtilen sayıda öğeyi, yeni bir yineleyici oluşturan ya da geçerli yineleyiciden belirtilen bir yineleyiciyi, yineleyiciler arasındaki öğe sayısını çıkaran şekilde çıkartır.|
+|[VectorViewIterator:: operator--Işleci](#operator-decrement)|Geçerli Vektörtorviewiterator 'ı azaltır.|
+|[VectorViewIterator:: operator! = Işleci](#operator-inequality)|Geçerli VectorViewIterator 'ın belirtilen bir VectorViewIterator değerine eşit olup olmadığını gösterir.|
+|[VectorViewIterator:: operator * Işleci](#operator-dereference)|Geçerli VectorViewIterator tarafından belirtilen öğeye bir başvuru alır.|
+|[VectorViewIterator:: işleci\[\]](#operator-at)|Geçerli VectorViewIterator öğesinden belirtilen bir öteleme olan öğeye bir başvuru alır.|
+|[VectorViewIterator:: operator + Işleci](#operator-plus)|Belirtilen Vectorviewwiterator öğesinden belirtilen yer alan öğeye başvuran bir Vectorviewwiterator döndürür.|
+|[VectorViewIterator:: operator + + Işleci](#operator-increment)|Geçerli Vektörtorviewiterator değerini artırır.|
+|[VectorViewIterator:: operator + = Işleci](#operator-plus-equals)|Belirtilen öteleme ile geçerli Vektörtorviewiterator öğesini arttırır.|
+|[VectorViewIterator:: operator< Işleci](#operator-less-than)|Geçerli VectorViewIterator 'ın belirtilen bir Vectorviewwiterator değerinden küçük olup olmadığını gösterir.|
+|[VectorViewIterator:: operator \< = işleci](#operator-less-than-or-equals)|Geçerli VectorViewIterator 'ın belirtilen bir VectorViewIterator değerinden küçük veya bu değere eşit olup olmadığını gösterir.|
+|[VectorViewIterator:: operator-= Işleci](#operator-minus-assign)|Belirtilen öteleme ile geçerli Vektörtorviewiterator 'ı azaltır.|
+|[VectorViewIterator:: operator = = Işleci](#operator-equality)|Geçerli VectorViewIterator 'ın belirtilen bir VectorViewIterator değerine eşit olup olmadığını gösterir.|
+|[VectorViewIterator:: operator> Işleci](#operator-greater-than)|Geçerli VectorViewIterator 'ın belirtilen bir Vectorviewwiterator değerinden büyük olup olmadığını gösterir.|
+|[VectorViewIterator:: operator-> Işleci](#operator-arrow)|Geçerli VectorViewIterator tarafından başvurulan öğenin adresini alır.|
+|[VectorViewIterator:: operator>= Işleci](#operator-greater-than-or-equals)|Geçerli VectorViewIterator 'ın belirtilen bir Vectorviewwiterator değerinden büyük veya bu değere eşit olup olmadığını gösterir.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -76,11 +76,11 @@ VectorViewIterator şablon sınıfının dis adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** collection.h
+**Üstbilgi:** Collection. h
 
-**Ad alanı:** Platform::Koleksiyonlar
+**Ad alanı:** Platform:: Collections
 
-## <a name="vectorviewiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>VectorViewIterator::operatör-&gt; Operatör
+## <a name="vectorviewiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>VectorViewIterator:: operator- &gt; işleci
 
 Geçerli VectorViewIterator tarafından başvurulan öğenin adresini alır.
 
@@ -94,11 +94,11 @@ Detail::ArrowProxy<T> operator->() const;
 
 Geçerli VectorViewIterator tarafından başvurulan öğenin değeri.
 
-İade değerinin türü, bu işlecinin uygulanması için gerekli olan belirtilmemiş bir iç türüdür.
+Dönüş değerinin türü, bu işlecin uygulanması için gerekli olan belirtilmemiş bir iç türdür.
 
-## <a name="vectorviewiteratoroperator---operator"></a><a name="operator-decrement"></a>VectorViewIterator::operator-- Operatör
+## <a name="vectorviewiteratoroperator---operator"></a><a name="operator-decrement"></a>VectorViewIterator:: operator--Işleci
 
-Geçerli VectorViewIterator'u atar.
+Geçerli Vektörtorviewiterator 'ı azaltır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -109,15 +109,15 @@ VectorViewIterator operator--(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sözdizimi kararları ve ardından geçerli VectorViewIterator döndürür. İkinci sözdizimi, geçerli VectorViewIterator'un bir kopyasını döndürür ve ardından geçerli VectorViewIterator'u verir.
+İlk sözdizimi, ve ardından geçerli Vektörtorviewiterator değerini azaltır. İkinci sözdizimi, geçerli VectorViewIterator 'in bir kopyasını döndürür ve ardından geçerli Vektörtorviewiterator değerini azaltır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk VectorViewIterator sözdizimi geçerli VectorViewIterator ön-kararnameler.
+İlk VectorViewIterator sözdizimi, geçerli Vektörtorviewiterator ' i önceden azaltır.
 
-İkinci sözdizimi, geçerli VectorViewIterator'u atar. İkinci `int` sözdiziminde tür, gerçek bir tamsayı operand değil, bir post-crement işlemi gösterir.
+İkinci sözdizimi sonrası, geçerli Vektörtorviewiterator ' i azaltır. **`int`** İkinci söz diziminde tür, gerçek bir tamsayı işleneni değil, azaltma sonrası bir işlemi gösterir.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-dereference"></a>VectorViewIterator::operatör\* Operatörü
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-dereference"></a>VectorViewIterator:: operator \* işleci
 
 Geçerli VectorViewIterator tarafından belirtilen öğeye bir başvuru alır.
 
@@ -131,11 +131,11 @@ reference operator*() const;
 
 Geçerli VectorViewIterator tarafından belirtilen öğe.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-equality"></a>VectorViewIterator::operator== Operatör
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-equality"></a>VectorViewIterator:: operator = = Işleci
 
-Geçerli VectorViewIterator'un belirli bir VectorViewIterator'a eşit olup olmadığını gösterir.
+Geçerli VectorViewIterator 'ın belirtilen bir VectorViewIterator değerine eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 bool operator==(const VectorViewIterator& other) const;
@@ -143,18 +143,18 @@ bool operator==(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*farklı*<br/>
 Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-akım `VectorViewIterator` *diğer*ine eşitse **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** geçerli varsa `VectorViewIterator` , tersi durumda *other* **`false`** .
 
-## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than"></a>VectorViewIterator::operatör&gt; Operatörü
+## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than"></a>VectorViewIterator:: operator &gt; işleci
 
-Geçerli VectorViewIterator'un belirli bir VectorViewIterator'dan büyük olup olmadığını gösterir.
+Geçerli VectorViewIterator 'ın belirtilen bir Vectorviewwiterator değerinden büyük olup olmadığını gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -163,18 +163,18 @@ bool operator>(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*farklı*<br/>
 Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-geçerli VectorViewIterator *diğerinden*daha büyükise **doğrudur** ; aksi takdirde, **yanlış**.
+**`true`** geçerli VectorViewIterator *bundan büyükse;* Aksi takdirde, **`false`** .
 
-## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than-or-equals"></a>VectorViewIterator::operator&gt;= Operatör
+## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than-or-equals"></a>VectorViewIterator:: operator &gt; = işleci
 
-Akımın `VectorViewIterator` belirtilenden `VectorViewIterator`büyük mü yoksa eşit mi olduğunu gösterir.
+Geçerli, `VectorViewIterator` belirtilen değere eşit veya ondan büyük olup olmadığını gösterir `VectorViewIterator` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -183,16 +183,16 @@ bool operator>=(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*farklı*<br/>
 Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-akım `VectorViewIterator` *diğerinden*büyük veya eşitse **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** geçerli bir değerden `VectorViewIterator` büyükse veya buna eşitse, aksi *other*takdirde **`false`** .
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-increment"></a>VectorViewIterator::operator++ Operatör
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-increment"></a>VectorViewIterator:: operator + + Işleci
 
-Geçerli VectorViewIterator'u atar.
+Geçerli Vektörtorviewiterator değerini artırır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -204,19 +204,19 @@ VectorViewIterator operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sözdizimi artışlarını ve ardından geçerli VectorViewIterator'u döndürür. İkinci sözdizimi, geçerli VectorViewIterator'un bir kopyasını döndürür ve ardından geçerli VectorViewIterator'u da atar.
+İlk sözdizimi artar ve ardından geçerli Vektörtorviewiterator öğesini döndürür. İkinci sözdizimi, geçerli VectorViewIterator öğesinin bir kopyasını döndürür ve ardından geçerli VectorViewIterator öğesini arttırır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk VectorViewIterator sözdizimi geçerli VectorViewIterator ön-artışlar.
+İlk VectorViewIterator sözdizimi, geçerli Vektörtorviewiterator öğesini önceden arttırır.
 
-İkinci sözdizimi, geçerli VectorViewIterator'u aşamalı olarak atar. İkinci `int` sözdiziminde tür, gerçek bir tamsayı operand değil, artış sonrası işlemi gösterir.
+İkinci sözdizimi, geçerli Vektörtorviewiterator öğesini arttırır. **`int`** İkinci sözdiziminde tür, gerçek bir tamsayı işleneni değil, artırma sonrası bir işlemi gösterir.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-inequality"></a>VectorViewIterator::operator!= Operatör
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-inequality"></a>VectorViewIterator:: operator! = Işleci
 
-Geçerli VectorViewIterator'un belirli bir VectorViewIterator'a eşit olup olmadığını gösterir.
+Geçerli VectorViewIterator 'ın belirtilen bir VectorViewIterator değerine eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 bool operator!=(const VectorViewIterator& other) const;
@@ -224,18 +224,18 @@ bool operator!=(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
+*farklı*<br/>
 Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-akım `VectorViewIterator` *diğer*eşit değilse **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** geçerli, `VectorViewIterator` *diğer*bir değere eşit değilse, tersi durumda **`false`** .
 
-## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than"></a>VectorViewIterator::operatör&lt; Operatörü
+## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than"></a>VectorViewIterator:: operator &lt; işleci
 
-Geçerli VectorIterator'un belirli bir VectorIterator'dan daha az olup olmadığını gösterir.
+Geçerli VectorIterator 'ın belirtilen bir VectorIterator değerinden küçük olup olmadığını gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 bool operator<(const VectorViewIterator& other) const;
@@ -243,18 +243,18 @@ bool operator<(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
-Başka `VectorIterator`bir .
+*farklı*<br/>
+Başka bir `VectorIterator` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-akım `VectorIterator` *diğerinden*daha az ise **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** geçerli `VectorIterator` *diğer*değerinden küçükse, aksi durumda, **`false`** .
 
-## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than-or-equals"></a>VectorViewIterator::operator&lt;= Operatör
+## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than-or-equals"></a>VectorViewIterator:: operator &lt; = işleci
 
-Akımın `VectorIterator` belirtilenden `VectorIterator`küçük mü yoksa eşit mi olduğunu gösterir.
+Geçerli `VectorIterator` bir belirtilen değere eşit veya ondan küçük olup olmadığını gösterir `VectorIterator` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -263,18 +263,18 @@ bool operator<=(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*<br/>
-Başka `VectorIterator`bir .
+*farklı*<br/>
+Başka bir `VectorIterator` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-akım `VectorIterator` *diğerinden*daha az veya eşitse **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** geçerli, `VectorIterator` *diğer*bir değerden küçükse veya eşitse, aksi durumda **`false`** .
 
-## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus"></a>VectorViewIterator::operatör- Operatör
+## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus"></a>VectorViewIterator:: operator-Işleci
 
-Yeni bir yineleyici veren geçerli yineleyiciden belirli sayıda öğe veya yinelenenler arasındaki öğe sayısını veren geçerli yineleyiciden belirtilen bir yineleyici çıkarılır.
+Geçerli yineleyiciden belirtilen sayıda öğeyi, yeni bir yineleyici oluşturan ya da geçerli yineleyiciden belirtilen bir yineleyiciyi, yineleyiciler arasındaki öğe sayısını çıkaran şekilde çıkartır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -285,21 +285,21 @@ difference_type operator-(const VectorViewIterator& other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
+*No*<br/>
 Bir dizi öğe.
 
-*Diğer*<br/>
+*farklı*<br/>
 Başka bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk işleci sözdizimi, geçerli VectorViewIterator'dan daha az eleman olan `n` bir VectorViewIterator nesnesini döndürür. İkinci işleç sözdizimi, akım ve `other` VectorViewIterator arasındaki eleman sayısını döndürür.
+İlk işleç sözdizimi, `n` geçerli vectorviewiterator öğesinden daha az öğe olan bir vectorviewiterator nesnesi döndürür. İkinci işleç sözdizimi, geçerli ve `other` vektörtorviewiterator arasındaki öğe sayısını döndürür.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus-equals"></a>VectorViewIterator::operator+= Operatör
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus-equals"></a>VectorViewIterator:: operator + = Işleci
 
-Geçerli VectorViewIterator'u belirtilen yer değiştirmeyle karşılar.
+Belirtilen öteleme ile geçerli Vektörtorviewiterator öğesini arttırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 VectorViewIterator& operator+=(difference_type n);
@@ -307,18 +307,18 @@ VectorViewIterator& operator+=(difference_type n);
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
-Tamsayı deplasmanı.
+*No*<br/>
+Tamsayı değiştirme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş VectorViewIterator.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus"></a>VectorViewIterator::operator+ Operatör
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus"></a>VectorViewIterator:: operator + Işleci
 
-Belirtilen VectorViewIterator'dan belirtilen deplasmantaki elemana başvuran bir VectorViewIterator döndürür.
+Belirtilen Vectorviewwiterator öğesinden belirtilen yer alan öğeye başvuran bir Vectorviewwiterator döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -333,25 +333,25 @@ inline VectorViewIterator<T> operator+
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-İkinci sözdiziminde, VectorViewIterator'un tür adı.
+İkinci sözdiziminde, VectorViewIterator typeName.
 
-*n*<br/>
-Bir sonda değişimi.
+*No*<br/>
+Bir tamsayı değiştirme.
 
-*Ⅰ*<br/>
+*i*<br/>
 İkinci sözdiziminde, bir VectorViewIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sözdiziminde, geçerli VectorViewIterator'dan belirtilen yer değiştirme öğesine başvuran bir VectorViewIterator.
+İlk sözdiziminde, geçerli VectorViewIterator öğesinden belirtilen yer alan öğeye başvuran bir VectorViewIterator.
 
-İkinci sözdiziminde, parametrenin `i`başlangıcından itibaren belirtilen yer değiştirme öğesine başvuran bir VectorViewIterator.
+İkinci sözdiziminde, parametrenin başlangıcından belirtilen ötede öğeye başvuran bir VectorViewIterator `i` .
 
-## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus-assign"></a>VectorViewIterator::operator-= Operatör
+## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus-assign"></a>VectorViewIterator:: operator-= Işleci
 
-Geçerli VectorIterator'u belirtilen yer değiştirmeyle erteler.
+Belirtilen öteleme ile geçerli Vektörtorterator 'ı azaltır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 VectorViewIterator& operator-=(difference_type n);
@@ -359,18 +359,18 @@ VectorViewIterator& operator-=(difference_type n);
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
-Bir sonda değişimi.
+*No*<br/>
+Bir tamsayı değiştirme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Güncelleştirilmiş VectorIterator.
 
-## <a name="vectorviewiteratoroperator"></a><a name="operator-at"></a>VectorViewIterator::operatör\[\]
+## <a name="vectorviewiteratoroperator"></a><a name="operator-at"></a>VectorViewIterator:: işleci\[\]
 
-Geçerli VectorViewIterator'dan belirtilen bir yer değiştirme öğesine bir başvuru alır.
+Geçerli VectorViewIterator öğesinden belirtilen bir öteleme olan öğeye bir başvuru alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 reference operator[](difference_type n) const;
@@ -378,18 +378,18 @@ reference operator[](difference_type n) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
-Bir sonda değişimi.
+*No*<br/>
+Bir tamsayı değiştirme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli VectorViewIterator'daki öğeler tarafından `n` yer değiştiren öğe.
+`n`Geçerli VectorViewIterator öğesinden öğeler tarafından yer alan öğe.
 
-## <a name="vectorviewiteratorvectorviewiterator-constructor"></a><a name="ctor"></a>VectorViewIterator::VectorViewIterator Constructor
+## <a name="vectorviewiteratorvectorviewiterator-constructor"></a><a name="ctor"></a>VectorViewIterator:: Vectorviewwiterator Oluşturucusu
 
-VectorViewIterator sınıfının yeni bir örneğini başolarak karşılar.
+Vectorviewwiterator sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 
@@ -402,13 +402,13 @@ explicit VectorViewIterator(
 
 ### <a name="parameters"></a>Parametreler
 
-*v*<br/>
-Bir IVectorView\<T> nesnesi.
+*Yönetim*<br/>
+Bir ıvectorview \<T> nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sözdizimi örneği varsayılan oluşturucudur. İkinci sözdizimi örneği, IVectorView\<T> nesnesinden bir VectorViewIterator oluşturmak için kullanılan açık bir oluşturucudur.
+İlk sözdizimi örneği varsayılan oluşturucudur. İkinci sözdizimi örneği bir ıvectorview nesnesinden bir VectorViewIterator oluşturmak için kullanılan açık bir oluşturucudur \<T> .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform İsim Alanı](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

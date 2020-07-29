@@ -48,18 +48,18 @@ helpviewer_keywords:
 - strtoui64_l function
 - strtoui64 function
 ms.assetid: 7fcb537e-4554-4ceb-a5b6-bc09244e72ef
-ms.openlocfilehash: 430d72595aadc677fe51d9ed868e4388071decec
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dc70cc5a2a7c1c8975e90d5e8d1d5225522e0592
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912450"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233944"
 ---
 # <a name="_strtoui64-_wcstoui64-_strtoui64_l-_wcstoui64_l"></a>_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 
-Bir dizeyi işaretsiz bir **__int64** değerine dönüştürür.
+Bir dizeyi bir değere dönüştürür **`unsigned __int64`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 unsigned __int64 _strtoui64(
@@ -97,7 +97,7 @@ Taramayı durduran karakter işaretçisi.
 *base*<br/>
 Kullanılacak sayı temeli.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -112,7 +112,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strtoui64** Işlevi, *strSource* 'u işaretsiz bir **unsigned** **__int64**dönüştürür. **_wcstoui64** , **_strtoui64**geniş karakterli bir sürümüdür; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde bu işlevler aynı şekilde davranır.
+**_Strtoui64** Işlevi, *strSource* öğesini öğesine dönüştürür **`unsigned __int64`** . **_wcstoui64** , **_strtoui64**geniş karakterli bir sürümüdür; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde bu işlevler aynı şekilde davranır.
 
 Her iki işlev de bir sayının parçası olarak tanıyamadığı ilk karakterde *strSource* dize okumasını durdurur. Bu, Sonlandırıcı null karakteri olabilir veya *tabandan*büyük veya buna eşit ilk sayısal karakter olabilir.
 
@@ -131,7 +131,7 @@ Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*; içindeki ta
 
 **_strtoui64** , *strSource* 'un aşağıdaki biçimdeki bir dizeye işaret etmek istiyor:
 
-> [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **x** }]] [*basamaklar* &#124; *harfler*]
+> [*boşluk*] [{ **+** &#124; **-** }] [**0** [{ **x** &#124; **x** }]] [*rakam* &#124; *harf*]
 
 Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır. *rakamlar* bir veya daha fazla ondalık basamaklıdır. *harfler* , ' a '-' z ' (veya ' a '-' z ') harflerinden biridir. Bu forma uymayan ilk karakter taramayı durduruyor. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Base* 0 Ise, *strSource* tarafından işaret edilen dizenin ilk karakterleri, temeli belirlemede kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. Taban aralığının dışındaki ilk karakter taramayı sonlandırır. Örneğin, *Base* 0 ise ve taranan ilk karakter ' 0 ' ise, sekizlik bir tamsayı varsayılır ve ' 8 ' veya ' 9 ' karakteri taramayı durduracaktır.
 
@@ -139,10 +139,10 @@ Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır. *rakaml
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtoui64**|\<Stdlib. h>|
-|**_wcstoui64**|\<Stdlib. h> veya \<wchar. h>|
-|**_strtoui64_l**|\<Stdlib. h>|
-|**_wcstoui64_l**|\<Stdlib. h> veya \<wchar. h>|
+|**_strtoui64**|\<stdlib.h>|
+|**_wcstoui64**|\<stdlib.h> veya \<wchar.h>|
+|**_strtoui64_l**|\<stdlib.h>|
+|**_wcstoui64_l**|\<stdlib.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -169,7 +169,7 @@ u = 18446744073709551615
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [localeconv](localeconv.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>

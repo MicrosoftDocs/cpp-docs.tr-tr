@@ -51,18 +51,18 @@ helpviewer_keywords:
 - wtol function
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-ms.openlocfilehash: 56f2efb4e7282cbcfb6a123f56797e2867d6bb4b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ffb318a53b34e1d69e533b05f80e942c945e1af7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913529"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218734"
 ---
 # <a name="atol-_atol_l-_wtol-_wtol_l"></a>atol, _atol_l, _wtol, _wtol_l
 
 Bir dizeyi uzun tamsayıya Dönüştür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long atol(
@@ -86,12 +86,12 @@ long _wtol_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **uzun** değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri **Atol** Için 0l olur.
+Her işlev **`long`** , giriş karakterlerinin sayı olarak yorumlanarak üretilen değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri **Atol** Için 0l olur.
 
 Büyük pozitif tamsayı değerleriyle taşma durumunda, **Atol** **LONG_MAX**döndürür; büyük negatif tamsayı değerleriyle taşma durumunda **LONG_MIN** döndürülür. Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
@@ -124,8 +124,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**Atol**|\<Stdlib. h>|
-|**_atol_l**, **_wtol**, **_wtol_l**|\<Stdlib. h> ve \<wchar. h>|
+|**Atol**|\<stdlib.h>|
+|**_atol_l**, **_wtol**, **_wtol_l**|\<stdlib.h> ve \<wchar.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -179,8 +179,8 @@ Overflow condition occurred.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

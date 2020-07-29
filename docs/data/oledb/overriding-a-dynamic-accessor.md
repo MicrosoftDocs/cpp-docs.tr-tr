@@ -6,18 +6,18 @@ helpviewer_keywords:
 - dynamic accessors
 - overriding, dynamic accessors
 ms.assetid: cbefd156-6da5-490d-b795-c2d7d874f7ce
-ms.openlocfilehash: d46531f2d4075df98081886dfdfd1f2cf65d9948
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d616079745c0a5adfa4167e4bdde8e7768f9b9d8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209852"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218318"
 ---
 # <a name="overriding-a-dynamic-accessor"></a>Dinamik Erişimciyi Geçersiz Kılma
 
-`CDynamicAccessor`gibi bir dinamik erişimci kullandığınızda, komut `Open` yöntemi, açılan satır kümesinin sütun bilgilerine göre sizin için otomatik olarak bir erişimci oluşturur. Sütunların nasıl bağlandığını tam olarak denetlemek için Dinamik erişimciyi geçersiz kılabilirsiniz.
+Gibi bir dinamik erişimci kullandığınızda `CDynamicAccessor` , komut `Open` yöntemi, açılan satır kümesinin sütun bilgilerine göre sizin için otomatik olarak bir erişimci oluşturur. Sütunların nasıl bağlandığını tam olarak denetlemek için Dinamik erişimciyi geçersiz kılabilirsiniz.
 
-Dinamik erişimciyi geçersiz kılmak için `CCommand::Open` metoduna son parametre olarak **false** geçirin. Bu, `Open` erişimci otomatik olarak oluşturmasını engeller. Daha sonra `GetColumnInfo` çağırıp, bağlamak istediğiniz her sütun için `AddBindEntry` çağırabilirsiniz. Aşağıdaki kod nasıl yapılacağını göstermektedir:
+Dinamik erişimciyi geçersiz kılmak için **`false`** yönteme son parametre olarak geçirin `CCommand::Open` . Bu, `Open` erişimcinin otomatik olarak oluşturulmasını engeller. Daha sonra bağlamak istediğiniz `GetColumnInfo` her bir sütun için çağrı ve çağrı yapabilirsiniz `AddBindEntry` . Aşağıdaki kod nasıl yapılacağını göstermektedir:
 
 ```cpp
 USES_CONVERSION;
@@ -71,4 +71,4 @@ while (product.MoveNext() == S_OK)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Erişimcileri Kullanma](../../data/oledb/using-accessors.md)
+[Erişimcileri kullanma](../../data/oledb/using-accessors.md)

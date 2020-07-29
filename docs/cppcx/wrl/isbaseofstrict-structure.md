@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsBaseOfStrict structure
 - Microsoft::WRL::Details::IsBaseOfStrict::value constant
 ms.assetid: 6fed7366-c8d4-4991-b4fb-43ed93f8e1bf
-ms.openlocfilehash: 71db5a1b52a7d7d5471c15591fb34d954b465d07
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 11acb4c7162a17ff763a574c27c186061ae476a7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371362"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211534"
 ---
 # <a name="isbaseofstrict-structure"></a>IsBaseOfStrict Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename Base, typename Derived>
@@ -33,24 +33,24 @@ struct IsBaseOfStrict<Base, Base>;
 ### <a name="parameters"></a>Parametreler
 
 *Temel*<br/>
-Temel türü.
+Temel tür.
 
 *Türetilmiş*<br/>
-Türetilmiş türü.
+Türetilmiş tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir türün diğerinin temeli olup olmadığını sınar.
+Bir türün diğerinin temeli olup olmadığını test eder.
 
-İlk şablon, bir türün **doğru** veya **yanlış**verebilecek bir taban türünden türetilip türetilmediğini sınar. İkinci şablon, bir türün kendisinden türetilip türetilip türetilenin her zaman **yanlış**verir sınar.
+İlk şablon, bir türün bir temel türden türetilip türetilmediğini test eder, bu, **`true`** veya anlamına gelebilir **`false`** . İkinci şablon bir türün kendisinden türetilip türetilmediğini test eder ve her zaman verir **`false`** .
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-Adı                            | Açıklama
+Ad                            | Açıklama
 ------------------------------- | --------------------------------------------------
-[IsBaseOfStrict::değer](#value) | Bir türün diğerinin temeli olup olmadığını gösterir.
+[IsBaseOfStrict:: Value](#value) | Bir türün diğerinin temeli olup olmadığını gösterir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -58,13 +58,13 @@ Adı                            | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** internal.h
+**Üst bilgi:** iç. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="isbaseofstrictvalue"></a><a name="value"></a>IsBaseOfStrict::değer
+## <a name="isbaseofstrictvalue"></a><a name="value"></a>IsBaseOfStrict:: Value
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 static const bool value = __is_base_of(Base, Derived);
@@ -74,4 +74,4 @@ static const bool value = __is_base_of(Base, Derived);
 
 Bir türün diğerinin temeli olup olmadığını gösterir.
 
-`value`türü **true** `Base` türünün `Derived`bir taban sınıf ise doğrudur , aksi takdirde **yanlıştır**.
+`value`**`true`** tür, `Base` türün temel bir sınıfı ise, `Derived` Aksi durumda **`false`** .

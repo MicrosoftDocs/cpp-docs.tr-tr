@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4512
 ms.assetid: afb68995-684a-4be5-a73a-38d7a16dc030
-ms.openlocfilehash: c09832a4f27bff51cbb5bd847a3123e62c9ee8d5
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 068bdb2c7c87e8fe7cd3e482f53934de098a6166
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991005"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218097"
 ---
 # <a name="compiler-warning-level-4-c4512"></a>Derleyici Uyarısı (düzey 4) C4512
 
@@ -23,13 +23,13 @@ Türetilmiş sınıf tarafından erişilemeyen temel sınıf için atama işleci
 
 Bu uyarıyı önlemek için, sınıf için Kullanıcı tanımlı bir atama işleci belirtin.
 
-Derleyici aynı zamanda bir tane tanımlamayan bir sınıf için atama işleci işlevi de oluşturacaktır. Bu atama işleci, bir nesnenin veri üyelerinin üye tabanlı kopyasıdır. `const` veri öğeleri başlatmadan sonra değiştirilemediğinden, sınıf bir `const` öğesi içeriyorsa, varsayılan atama işleci çalışmaz. C4512 uyarısının başka bir nedeni, başvuru türündeki statik olmayan bir veri üyesinin bir bildirimidir. Amaç kopyalanabilir olmayan bir tür oluşturmak için bir varsayılan kopya Oluşturucu oluşturmayı da engellemeniz gerekir.
+Derleyici aynı zamanda bir tane tanımlamayan bir sınıf için atama işleci işlevi de oluşturacaktır. Bu atama işleci, bir nesnenin veri üyelerinin üye tabanlı kopyasıdır. **`const`** Veri öğeleri başlatmadan sonra değiştirilemediğinden, sınıf bir **`const`** öğe içeriyorsa, varsayılan atama işleci çalışmaz. C4512 uyarısının başka bir nedeni, başvuru türündeki statik olmayan bir veri üyesinin bir bildirimidir. Amaç kopyalanabilir olmayan bir tür oluşturmak için bir varsayılan kopya Oluşturucu oluşturmayı da engellemeniz gerekir.
 
 Kodunuzun C4512 uyarısını üç farklı şekilde çözebilirsiniz:
 
 - Sınıf için açıkça bir atama işleci tanımlayın.
 
-- Sınıf içindeki veri öğesinden **const** veya Reference işlecini kaldırın.
+- **`const`** Sınıf içindeki veri öğesinden ref işlecini veya başvurusunu kaldırın.
 
 - Uyarıyı bastırmak için #pragma [Uyarı](../../preprocessor/warning.md) ifadesini kullanın.
 

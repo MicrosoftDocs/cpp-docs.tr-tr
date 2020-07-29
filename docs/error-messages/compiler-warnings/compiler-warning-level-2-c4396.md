@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4396
 ms.assetid: 7cd6b283-db17-4574-b299-03e0b913ad70
-ms.openlocfilehash: f37fcc7ece09bb9028a522ec6baf85d0e0e585c2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fec6875fdb2e8a60e71fe08da1ed4e8fa82e4641
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161821"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87206048"
 ---
 # <a name="compiler-warning-level-2-c4396"></a>Derleyici Uyarısı (düzey 2) C4396
 
@@ -21,11 +21,11 @@ Bir işlev şablonunun özelleştirmesi [satır içi](../../cpp/inline-functions
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Friend işlevi bildiriminden `inline`, `__inline`veya `__forceinline` belirticisini kaldırın.
+- **`inline`** **`__inline`** **`__forceinline`** Friend işlevi bildiriminden, veya belirticisini kaldırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `inline` belirleyicisi ile geçersiz bir Friend işlevi bildirimi gösterir.
+Aşağıdaki kod örneği, tanımlayıcı ile geçersiz bir Friend işlevi bildirimi gösterir **`inline`** .
 
 ```cpp
 // C4396.cpp

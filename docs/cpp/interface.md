@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - __interface keyword [C++]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-ms.openlocfilehash: 9b265dcbaca9f8fa836795cca990804371813647
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9ca13ed91601fa3a64071304c14d483e84c314a3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178217"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233723"
 ---
 # <a name="__interface"></a>__interface
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bir Microsoft C++ arabirimi aşağıdaki gibi tanımlanabilir:
+Microsoft C++ arabirimi şu şekilde tanımlanabilir:
 
 - , Sıfır veya daha fazla taban arabiriminden devralınabilir.
 
@@ -39,7 +39,7 @@ modifier __interface interface-name {interface-definition};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu C++ kurallarla bir [sınıf](../cpp/class-cpp.md) veya [Yapı](../cpp/struct-cpp.md) uygulanabilir, ancak **__interface** uygular.
+C++ [sınıfı](../cpp/class-cpp.md) veya [yapısı](../cpp/struct-cpp.md) bu kurallarla uygulanabilir, ancak **`__interface`** bunları uygular.
 
 Örneğin, aşağıdaki örnek bir arabirim tanımıdır:
 
@@ -52,13 +52,13 @@ __interface IMyInterface {
 
 Yönetilen arabirimler hakkında daha fazla bilgi için bkz. [interface class](../extensions/interface-class-cpp-component-extensions.md).
 
-`CommitX` ve `get_X` işlevlerinin saf sanal olduğunu açıkça belirtmeniz gerekmediğine dikkat edin. İlk işlev için eşdeğer bir bildirim şöyle olacaktır:
+`CommitX`Ve işlevlerinin saf sanal olduğunu açıkça belirtmeniz gerekmediğine dikkat edin `get_X` . İlk işlev için eşdeğer bir bildirim şöyle olacaktır:
 
 ```cpp
 virtual HRESULT CommitX() = 0;
 ```
 
-**__interface** [novtable](../cpp/novtable.md) **__declspec** değiştiricisini gerektirir.
+**`__interface`**[novtable](../cpp/novtable.md) **`__declspec`** değiştiricisini gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -146,5 +146,5 @@ bstr_data = Testing
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Arabirim Öznitelikleri](../windows/attributes/interface-attributes.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Arabirim öznitelikleri](../windows/attributes/interface-attributes.md)

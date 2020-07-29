@@ -19,16 +19,16 @@ helpviewer_keywords:
 - Microsoft::WRL::WeakRef::operator& operator
 - Microsoft::WRL::WeakRef::WeakRef, constructor
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
-ms.openlocfilehash: 681f5a64c3e2902c66facbd4f0ac3a3663a7e79d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 715a823784aaa75f9abe349ef0a7ddc9e5d607d1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374249"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218357"
 ---
 # <a name="weakref-class"></a>WeakRef Sınıfı
 
-Klasik COM'u değil, yalnızca Windows Runtime tarafından kullanılabilecek zayıf bir *başvuruyu* temsil eder. Zayıf bir başvuru, erişilebilir veya erişilemeyen bir nesneyi temsil eder.
+Klasik COM değil yalnızca Windows Çalışma Zamanı tarafından kullanılabilen *zayıf bir başvuruyu* temsil eder. Zayıf başvuru, erişilebilir olabilecek veya erişilemeyen bir nesneyi temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,32 +40,32 @@ class WeakRef : public ComPtr<IWeakReference>;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[WeakRef::WeakRef Oluşturucusu](#weakref)|`WeakRef` sınıfının yeni bir örneğini başlatır.|
-|[WeakRef::~WeakRef Yıkıcısı](#tilde-weakref)|Sınıfın geçerli örneğini `WeakRef` deinitialize eder.|
+|[WeakRef::~WeakRef Yıkıcısı](#tilde-weakref)|Sınıfın geçerli örneğini kaldırır `WeakRef` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[WeakRef::As Metodu](#as)|Belirtilen arabirimi temsil etmek için belirtilen `ComPtr` işaretçi parametresini ayarlar.|
-|[WeakRef::AsIID Metodu](#asiid)|Belirtilen arabirim kimliğini temsil etmek için belirtilen `ComPtr` işaretçi parametresini ayarlar.|
-|[WeakRef::CopyTo Metodu](#copyto)|Bir arabirime işaretçi atayan, varsa, belirtilen işaretçi değişkenine.|
+|[WeakRef::As Metodu](#as)|Belirtilen bir `ComPtr` arabirimi göstermek için belirtilen işaretçi parametresini ayarlar.|
+|[WeakRef::AsIID Metodu](#asiid)|Belirtilen `ComPtr` ARABIRIM kimliğini temsil etmek için belirtilen işaretçi parametresini ayarlar.|
+|[WeakRef::CopyTo Metodu](#copyto)|Varsa, belirtilen işaretçi değişkenine bir arabirime bir işaretçi atar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[WeakRef::operator& İşleci](#operator-ampersand-operator)|Geçerli `WeakRef` `ComPtrRef` nesneyi temsil eden bir nesne döndürür.|
+|[WeakRef::operator& İşleci](#operator-ampersand-operator)|`ComPtrRef`Geçerli nesneyi temsil eden bir nesne döndürür `WeakRef` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `WeakRef` nesne, bir nesneyle ilişkili ve geçerli veya geçersiz olabilecek güçlü bir *başvuru*tutar. Güçlü `As()` bir `AsIID()` başvuru elde etmek için veya yöntemi arayın. Güçlü başvuru geçerli olduğunda, ilişkili nesneye erişebilir. Güçlü başvuru geçersiz olduğunda`nullptr`( ), ilişkili nesneye erişilemez.
+`WeakRef`Nesnesi, bir nesneyle ilişkili olan *güçlü bir başvuruyu*tutar ve geçerli veya geçersiz olabilir. `As()` `AsIID()` Güçlü bir başvuru almak için veya metodunu çağırın. Güçlü başvuru geçerliyse, ilişkili nesneye erişebilir. Güçlü başvuru geçersiz olduğunda ( **`nullptr`** ), ilişkili nesne erişilemez olur.
 
-Nesne `WeakRef` genellikle, varlığı dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil etmek için kullanılır. Örneğin, bir `WeakRef` dosya nesnesine bir başvuru bir nesne oluşturmak. Dosya açıkken, güçlü başvuru geçerlidir. Ancak dosya kapatılırsa, güçlü başvuru geçersiz olur.
+Bir `WeakRef` nesne, genellikle varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil etmek için kullanılır. Örneğin, bir `WeakRef` dosya nesnesine başvurudan bir nesne oluşturun. Dosya açıkken, güçlü başvuru geçerli olur. Ancak dosya kapalıysa, güçlü başvuru geçersiz hale gelir.
 
-Windows 10 SDK'daki [As](#as), [AsIID](#asiid) ve [CopyTo](#copyto) yöntemlerinde bir davranış değişikliği olduğunu unutmayın. Daha önce, bu yöntemlerden herhangi birini `WeakRef` aradıktan sonra, aşağıdaki kodda olduğu gibi güçlü bir başvurunun başarıyla elde edilip edilemediğinizi belirlemek için `nullptr`
+Windows 10 SDK 'daki [as](#as), [AsIID](#asiid) ve [CopyTo](#copyto) yöntemlerinde bir davranış değişikliği olduğunu unutmayın. Daha önce, bu yöntemlerden herhangi birini çağırdıktan sonra, `WeakRef` **`nullptr`** aşağıdaki kodda olduğu gibi, güçlü bir başvurunun başarıyla alınıp alınmadığını öğrenmek için ' a bakabilirsiniz:
 
 ```cpp
 WeakRef wr;
@@ -84,7 +84,7 @@ if(wr == nullptr)
 }
 ```
 
-Yukarıdaki kod, Windows 10 SDK (veya daha sonra) kullanırken çalışmaz. Bunun yerine, '' için `nullptr`geçirilen işaretçiyi denetleyin.
+Yukarıdaki kod, Windows 10 SDK (veya üzeri) kullanılırken çalışmaz. Bunun yerine, için geçirilen işaretçiyi kontrol edin **`nullptr`** .
 
 ```cpp
 if (strongRef == nullptr)
@@ -101,21 +101,21 @@ if (strongRef == nullptr)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** client.h
+**Üstbilgi:** Client. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="weakrefweakref-destructor"></a><a name="tilde-weakref"></a>WeakRef::~WeakRef Yıkıcı
+## <a name="weakrefweakref-destructor"></a><a name="tilde-weakref"></a>WeakRef:: ~ WeakRef yıkıcısı
 
-Sınıfın geçerli örneğini `WeakRef` deinitialize eder.
+Sınıfın geçerli örneğini kaldırır `WeakRef` .
 
 ```cpp
 ~WeakRef();
 ```
 
-## <a name="weakrefas-method"></a><a name="as"></a>WeakRef::Yöntem olarak
+## <a name="weakrefas-method"></a><a name="as"></a>WeakRef:: as yöntemi
 
-Belirtilen arabirimi temsil etmek için belirtilen `ComPtr` işaretçi parametresini ayarlar.
+Belirtilen bir `ComPtr` arabirimi göstermek için belirtilen işaretçi parametresini ayarlar.
 
 ```cpp
 template<typename U>
@@ -132,30 +132,30 @@ HRESULT As(
 ### <a name="parameters"></a>Parametreler
 
 *U*<br/>
-Arayüz kimliği.
+Arabirim KIMLIĞI.
 
-*Ptr*<br/>
-Bu işlem tamamlandığında, *U*parametreyi temsil eden bir nesne.
+*ptr*<br/>
+Bu işlem tamamlandığında, *U*parametresini temsil eden bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- bu işlem başarılı olursa S_OK; aksi takdirde, işlemin başarısız olmasının nedenini gösteren bir HRESULT ve *ptr'* ye `nullptr`ayarlanır.
+- Bu işlem başarılı olursa S_OK; Aksi takdirde, işlemin başarısız olmasının nedenini belirten bir HRESULT ve *PTR* olarak ayarlanır **`nullptr`** .
 
-- Bu işlem başarılı olursa S_OK, `WeakRef` ancak geçerli nesne zaten serbest bırakıldı. Parametre *ptr* ayarlanır `nullptr`.
+- Bu işlem başarılı olursa, ancak geçerli `WeakRef` nesne zaten yayınlanmışsa S_OK. *PTR* parametresi olarak ayarlanır **`nullptr`** .
 
-- bu işlem başarılı olursa S_OK, `WeakRef` ancak geçerli nesne *U*parametresinden türetilmiş değildir. Parametre *ptr* ayarlanır `nullptr`.
+- Bu işlem başarılı olursa, ancak geçerli `WeakRef` nesne *U*parametresinden türetilmediği için S_OK. *PTR* parametresi olarak ayarlanır **`nullptr`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*U* `IWeakReference`parametresi veya türetilmiş değilse bir hata `IInspectable`yayılır.
+*U* parametresi ise veya türetilmediği takdirde bir hata yayınlanır `IWeakReference` `IInspectable` .
 
-İlk şablon, kodunuzda kullanmanız gereken formdur. İkinci şablon, [otomatik](../../cpp/auto-cpp.md) tür tümdengelimi anahtar sözcüğü gibi C++ dil özelliklerini destekleyen dahili, yardımcı uzmanlıktır.
+İlk şablon, kodunuzda kullanmanız gereken formdur. İkinci şablon, [Otomatik](../../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğü gibi C++ dil özelliklerini destekleyen bir iç, yardımcı özelleşmedir.
 
-Windows 10 SDK'dan başlayarak, bu `WeakRef` yöntem `nullptr` zayıf başvuru nun alınıp alınamadığını belirtmez, bu `WeakRef` nedenle `nullptr`içini denetleyen hata denetimi kodundan kaçınmanız gerekir. Bunun yerine, *ptr* için kontrol edin. `nullptr`
+Windows 10 SDK ' dan itibaren, bu yöntem, `WeakRef` zayıf başvuru alınamadığından örneği olarak ayarlamaz **`nullptr`** , bu nedenle için öğesini denetleyen hata denetimi kodunu kullanmaktan kaçının `WeakRef` **`nullptr`** . Bunun yerine, için *PTR* 'yi denetleyin **`nullptr`** .
 
-## <a name="weakrefasiid-method"></a><a name="asiid"></a>WeakRef::AsiID Yöntemi
+## <a name="weakrefasiid-method"></a><a name="asiid"></a>WeakRef:: AsIID yöntemi
 
-Belirtilen arabirim kimliğini temsil etmek için belirtilen `ComPtr` işaretçi parametresini ayarlar.
+Belirtilen `ComPtr` ARABIRIM kimliğini temsil etmek için belirtilen işaretçi parametresini ayarlar.
 
 ```cpp
 HRESULT AsIID(
@@ -166,31 +166,31 @@ HRESULT AsIID(
 
 ### <a name="parameters"></a>Parametreler
 
-*Riid*<br/>
-Arayüz kimliği.
+*riıd*<br/>
+Arabirim KIMLIĞI.
 
-*Ptr*<br/>
-Bu işlem tamamlandığında, parametre *riid*temsil eden bir nesne .
+*ptr*<br/>
+Bu işlem tamamlandığında, parametre *riıd*temsil eden bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- bu işlem başarılı olursa S_OK; aksi takdirde, işlemin başarısız olmasının nedenini gösteren bir HRESULT ve *ptr'* ye `nullptr`ayarlanır.
+- Bu işlem başarılı olursa S_OK; Aksi takdirde, işlemin başarısız olmasının nedenini belirten bir HRESULT ve *PTR* olarak ayarlanır **`nullptr`** .
 
-- Bu işlem başarılı olursa S_OK, `WeakRef` ancak geçerli nesne zaten serbest bırakıldı. Parametre *ptr* ayarlanır `nullptr`.
+- Bu işlem başarılı olursa, ancak geçerli `WeakRef` nesne zaten yayınlanmışsa S_OK. *PTR* parametresi olarak ayarlanır **`nullptr`** .
 
-- bu işlem başarılı olursa S_OK, `WeakRef` ancak geçerli nesne parametre *riid*türetilmiş değildir. Parametre *ptr* ayarlanır `nullptr`. (Daha fazla bilgi için Bkz. Açıklamalar.)
+- Bu işlem başarılı olursa, ancak geçerli `WeakRef` nesne *riıd*parametresinden türetilmediği için S_OK. *PTR* parametresi olarak ayarlanır **`nullptr`** . (Daha fazla bilgi için bkz. açıklamalar.)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametre *riid* türetilmiş değilse bir hata `IInspectable`yayılan . Bu hata, iade değerinin yerini adar.
+*Riıd* parametresi öğesinden türetilmediği takdirde bir hata yayınlanır `IInspectable` . Bu hata, dönüş değerinin yerini almıştır.
 
-İlk şablon, kodunuzda kullanmanız gereken formdur. İkinci şablon (burada gösterilmez, ancak üstbilgi dosyasında bildirilir) [otomatik](../../cpp/auto-cpp.md) tür tümdengelim anahtar sözcüğü gibi C++ dil özelliklerini destekleyen dahili, yardımcı uzmanlıktır.
+İlk şablon, kodunuzda kullanmanız gereken formdur. İkinci şablon (burada gösterilmez, ancak başlık dosyasında belirtilir), [Otomatik](../../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğü gibi C++ dil özelliklerini destekleyen bir iç, yardımcı özelleşmedir.
 
-Windows 10 SDK'dan başlayarak, bu `WeakRef` yöntem `nullptr` zayıf başvuru nun alınıp alınamadığını belirtmez, bu `WeakRef` nedenle `nullptr`içini denetleyen hata denetimi kodundan kaçınmanız gerekir. Bunun yerine, *ptr* için kontrol edin. `nullptr`
+Windows 10 SDK ' dan itibaren, bu yöntem, `WeakRef` zayıf başvuru alınamadığından örneği olarak ayarlamaz **`nullptr`** , bu nedenle için öğesini denetleyen hata denetimi kodunu kullanmaktan kaçının `WeakRef` **`nullptr`** . Bunun yerine, için *PTR* 'yi denetleyin **`nullptr`** .
 
-## <a name="weakrefcopyto-method"></a><a name="copyto"></a>WeakRef::CopyTo Yöntemi
+## <a name="weakrefcopyto-method"></a><a name="copyto"></a>WeakRef:: CopyTo yöntemi
 
-Bir arabirime işaretçi atayan, varsa, belirtilen işaretçi değişkenine.
+Varsa, belirtilen işaretçi değişkenine bir arabirime bir işaretçi atar.
 
 ```cpp
 HRESULT CopyTo(
@@ -211,27 +211,27 @@ HRESULT CopyTo(
 ### <a name="parameters"></a>Parametreler
 
 *U*<br/>
-Bir `IInspectable` arabirim işaretle. *U* türetilmiş değilse bir hata `IInspectable`yayılır.
+Bir `IInspectable` arabirim işaretçisi. *U* öğesinden türetilmediği takdirde bir hata yayınlanır `IInspectable` .
 
-*Riid*<br/>
-Arayüz kimliği. *Riid* türetilmiş değilse bir hata `IWeakReference`yayılır.
+*riıd*<br/>
+Arabirim KIMLIĞI. *Riıd* öğesinden türetilmediği takdirde bir hata yayınlanır `IWeakReference` .
 
-*Ptr*<br/>
-Bir iki kat-dolaylı `IInspectable` işaretçi `IWeakReference`veya .
+*ptr*<br/>
+Ya da için, dolaylı olarak dolaylı bir işaretçi `IInspectable` `IWeakReference` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT. Daha fazla bilgi için **Açıklamalar'a**bakın.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. Daha fazla bilgi için bkz. **açıklamalar**.
 
 ### <a name="remarks"></a>Açıklamalar
 
-S_OK'nin geri dönüş değeri, bu işlemin başarılı olduğu anlamına gelir, ancak zayıf başvurunun güçlü bir başvuruyla çözülüp çözülmediğini göstermez. S_OK döndürülürse, *p* parametresi güçlü bir başvuru olduğunu sınlayın; diğer bir şey, parametre *p'* ye `nullptr`eşit değildir.
+S_OK dönüş değeri, bu işlemin başarılı olduğu, ancak zayıf başvurunun güçlü bir başvuruya çözümlenip çözümlenmediğini belirtmediği anlamına gelir. S_OK döndürülürse, *p* parametresinin bir güçlü başvuru olduğunu test edin; diğer bir deyişle, *p* parametresi değerine eşit değildir **`nullptr`** .
 
-Windows 10 SDK'dan başlayarak, bu `WeakRef` yöntem `nullptr` zayıf başvuru nun alınıp alınamadığını belirtmez, bu `WeakRef` `nullptr`nedenle içini denetleyen hata denetimi kodundan kaçınmanız gerekir. Bunun yerine, *ptr* için kontrol edin. `nullptr`
+Windows 10 SDK ' dan itibaren, bu yöntem, `WeakRef` zayıf başvuru alınamadığından örneği olarak ayarlamaz **`nullptr`** , bu nedenle, için öğesini denetleyen hata denetim kodunu kullanmaktan kaçının `WeakRef` **`nullptr`** . Bunun yerine, için *PTR* 'yi denetleyin **`nullptr`** .
 
-## <a name="weakrefoperatoramp-operator"></a><a name="operator-ampersand-operator"></a>WeakRef::operatör&amp; Operatörü
+## <a name="weakrefoperatoramp-operator"></a><a name="operator-ampersand-operator"></a>WeakRef:: operator &amp; işleci
 
-Geçerli `WeakRef` `ComPtrRef` nesneyi temsil eden bir nesne döndürür.
+`ComPtrRef`Geçerli nesneyi temsil eden bir nesne döndürür `WeakRef` .
 
 ```cpp
 Details::ComPtrRef<WeakRef> operator&() throw()
@@ -239,13 +239,13 @@ Details::ComPtrRef<WeakRef> operator&() throw()
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli `ComPtrRef` `WeakRef` nesneyi temsil eden bir nesne.
+`ComPtrRef`Geçerli nesneyi temsil eden nesne `WeakRef` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, kodunuzda kullanılmaması gereken bir dahili yardımcı işleçtir.
+Bu, kodunuzda kullanılması amaçlanan bir iç yardımcı işleçtir.
 
-## <a name="weakrefweakref-constructor"></a><a name="weakref"></a>WeakRef::WeakRef Yapıcı
+## <a name="weakrefweakref-constructor"></a><a name="weakref"></a>WeakRef:: WeakRef Oluşturucusu
 
 `WeakRef` sınıfının yeni bir örneğini başlatır.
 
@@ -274,9 +274,9 @@ WeakRef(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ptr*<br/>
-Geçerli `WeakRef` nesneyi başharfe atan varolan bir nesneye işaretçi, başvuru veya rvalue-başvurusu.
+*ptr*<br/>
+Geçerli nesneyi Başlatan mevcut nesnesine bir işaretçi, başvuru veya rvalue başvurusu `WeakRef` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu boş `WeakRef` bir nesneyi baş harfe doğru laştırır. İkinci oluşturucu bir işaretçiden arabirime bir `WeakRef` nesneyi başharfe `IWeakReference` yönlendirir. Üçüncü oluşturucu bir `WeakRef` nesneyi bir nesneye `ComPtr<IWeakReference>` başvurudan başharfe ait hale getirmek. Dördüncü ve beşinci kurucular başka `WeakRef` `WeakRef` bir nesneden bir nesneyi başharfe alarlar.
+İlk Oluşturucu boş bir nesne başlatır `WeakRef` . İkinci Oluşturucu, bir `WeakRef` nesneyi bir işaretçiden `IWeakReference` arabirime başlatır. Üçüncü Oluşturucu bir nesne başvurusundan bir nesnesi başlatır `WeakRef` `ComPtr<IWeakReference>` . Dördüncü ve beşinci oluşturucular, bir `WeakRef` nesneyi başka bir `WeakRef` nesneden başlatır.

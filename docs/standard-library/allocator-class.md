@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 5459fdbd445e7823dcc28096a7b7da3c0c5b38cf
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 547fdc83f0524c8bfd44754f26ca8c4d21f6a599
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617505"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87204995"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
@@ -468,7 +468,7 @@ Oluşturulan nesnenin başlatılacağı değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi **New** (( `void` \* ) `ptr` ) **türü** () ile eşdeğerdir `val` .
+İlk üye işlevi değerine eşdeğerdir `new ((void *) ptr) Type(val)` .
 
 #### <a name="example"></a>Örnek
 
@@ -874,7 +874,7 @@ Belleğin ayrıldığı öğenin türü.
 
 Bu yapı, uygulanan kapsayıcının öğe türünden farklı tür için bellek ayırmak için yararlıdır.
 
-Üye sınıfı şablonu diğer türü tanımlar. Tek amacı tür **allocator** \<_ **Other**> adı **ayırıcısı**verilen tür adı ayırıcısını sağlamaktır \< **Type**> .
+Üye sınıfı şablonu diğer türü tanımlar. Tek amacı, tür adı verilen tür adını sağlamaktır `allocator<_Other>` `allocator<Type>` .
 
 Örneğin, türünde bir ayırıcı nesnesi verildiğinde `al` `A` , ifadesi ile türünde bir nesne ayırabilirsiniz `_Other` :
 

@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - TerminateMap function
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-ms.openlocfilehash: 560f563e43fc8b818b04cd0bda6b01fbc916cb84
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2aa4d6733d2a4e458ff8abff192778d52a4522b2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213557"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233502"
 ---
 # <a name="terminatemap-function"></a>TerminateMap İşlevi
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 inline bool TerminateMap(
@@ -29,18 +29,18 @@ inline bool TerminateMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*module*<br/>
+*birimi*<br/>
 [Modül](module-class.md).
 
 *serverName*<br/>
 Parametre *modülü*tarafından belirtilen modüldeki sınıf fabrikalarının bir alt kümesinin adı.
 
 *forceTerminate*<br/>
-etkin olduklarından bağımsız olarak sınıf fabrikalarını sonlandırmak için **true** ; herhangi bir fabrika etkin ise, sınıf fabrikalarını sonlandırmak için **false** .
+**`true`** sınıf fabrikalarını etkin olmalarından bağımsız olarak sonlandırmak için **`false`** herhangi bir fabrika etkin ise, sınıf fabrikalarını sonlandıramayın.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tüm sınıf fabrikaları sonlandırılırsa **doğru** . Aksi takdirde, **false**.
+**`true`** Tüm sınıf fabrikaları sonlandırılırsa; Aksi takdirde, **`false`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -54,4 +54,4 @@ Belirtilen modüldeki sınıf fabrikalarını kapatır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

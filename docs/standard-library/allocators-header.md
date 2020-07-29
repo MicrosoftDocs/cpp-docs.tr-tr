@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-ms.openlocfilehash: f981b86ed8f5d3b240d9f02380a603eb4f2605bc
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 69c086515230fd5a9aaa039ef02b7995842fa260
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623575"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87204891"
 ---
 # <a name="ltallocatorsgt"></a>&lt;ayırıcılar&gt;
 
 Düğüm tabanlı kapsayıcılar için bellek blokları ayırmaya ve serbest bırakma konusunda yardımcı olan çeşitli şablonlar tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 #include <allocators>
@@ -80,7 +80,7 @@ std::list<int, alloc<int> > _List1;
 
 _Lst1, `allocator_chunklist` ve [sync_per_thread](sync-per-thread-class.md) Eşitleme filtresiyle düğümleri ayırır.
 
-Blok ayırıcısı bir önbellek veya filtredir. Önbellek, std:: size_t türünde bir bağımsız değişken alan bir sınıf şablonudur. Tek boyuttaki bellek bloklarını ayıran ve ayıran bir blok ayırıcısı tanımlar. **Yeni**işleç kullanarak bellek almalıdır, ancak her bir blok için **Yeni** operatör için ayrı bir çağrı yapmamalıdır. Örneğin, daha büyük bir bloktan veya ön yeniden tahsisatın ardından önbellek serbest bırakılmış bloklardan alt ayırma olabilir.
+Blok ayırıcısı bir önbellek veya filtredir. Önbellek, std:: size_t türünde bir bağımsız değişken alan bir sınıf şablonudur. Tek boyuttaki bellek bloklarını ayıran ve ayıran bir blok ayırıcısı tanımlar. Bu, işleç kullanarak bellek almalıdır **`new`** , ancak her blok için ayrı bir işleç çağrısı yapmamalıdır **`new`** . Örneğin, daha büyük bir bloktan veya ön yeniden tahsisatın ardından önbellek serbest bırakılmış bloklardan alt ayırma olabilir.
 
 Şablon örneği oluşturulurken kullanılan std:: size_t bağımsız değişkeninin değerini yeniden ayıramayan bir derleyici ile, bir önbelleğin üye işlevlerine aktarılan ve serbest bırakma _Sz bağımsız değişkenin değeri olması gerekmez.
 

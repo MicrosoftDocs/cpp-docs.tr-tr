@@ -50,12 +50,12 @@ helpviewer_keywords:
 - _mbsstr_l function
 - strstr function
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
-ms.openlocfilehash: 1fb6c025ec324fceb1b11dd23ed61500f08b4535
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3ac4df470e40b35257495d51c5d2d0efdb9310af
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910992"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233996"
 ---
 # <a name="strstr-wcsstr-_mbsstr-_mbsstr_l"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 
@@ -64,7 +64,7 @@ Dizedeki arama dizesinin ilk oluşumuna yönelik bir işaretçi döndürür.
 > [!IMPORTANT]
 > `_mbsstr`ve `_mbsstr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *strstr(
@@ -128,7 +128,7 @@ Aranacak null ile sonlandırılmış dize.
 *strSearch*<br/>
 Aranacak null ile sonlandırılmış dize.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -137,12 +137,12 @@ Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev `strstr` , *Str*içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi döndürür. Arama, null karakter sonlandırılmasını içermez. `wcsstr`, öğesinin `strstr` geniş karakterli sürümüdür ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; `_mbsstr` bunların çok baytlı karakter dizeleridir. `_mbsstr`parametrelerini doğrular. *Str* veya *strSearch* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbsstr` EINVAL olarak `errno` ayarlar ve 0 döndürür. `strstr`ve `wcsstr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+`strstr`İşlev, *Str*içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi döndürür. Arama, null karakter sonlandırılmasını içermez. `wcsstr`, öğesinin geniş karakterli sürümüdür `strstr` ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; bunlar `_mbsstr` çok baytlı karakter dizeleridir. `_mbsstr`parametrelerini doğrular. *Str* veya *strSearch* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbsstr` `errno` EINVAL olarak ayarlar ve 0 döndürür. `strstr`ve `wcsstr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
 > [!IMPORTANT]
 > Bu işlevler, arabellek taşması sorunundan bir tehdit oluşturabilir. Arabellek taşması sorunları, bir sisteme saldırmak için kullanılabilir ve bu, izin verilmeyen ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. C++ ' da, iki aşırı yükleme mevcuttur. **Const** işaretçisi alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin hem **const** hem de**const** olmayan sürümleri kullanılabilir değilse tanımlanmıştır. Her iki C++ aşırı yüklemesi için**const** olmayan davranışlara ihtiyacınız varsa, _CONST_RETURN sembolünü tanımlayın.
+C 'de, bu işlevler **`const`** ilk bağımsız değişken için bir işaretçi alır. C++ ' da, iki aşırı yükleme mevcuttur. ' A bir işaretçi getiren aşırı yükleme, ' a bir işaretçi döndürür. olmayan bir işaretçi **`const`** **`const`** alan sürüm olmayan **`const`** bir işaretçi döndürür **`const`** . Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin hem hem de **`const`** **`const`** sürümleri kullanılabilir olduğunda tanımlanmıştır. **`const`** Her Iki C++ aşırı yüklemesi için davranışa gerek duyuyorsanız, _CONST_RETURN sembolünü tanımlayın.
 
 Çıkış değeri, LC_CTYPE yerel ayar kategorisi ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **_L** sonekine sahip olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -159,9 +159,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`strstr`|\<String. h>|
-|`wcsstr`|\<String. h> veya \<wchar. h>|
-|`_mbsstr`, `_mbsstr_l`|\<mbstring. h>|
+|`strstr`|\<string.h>|
+|`wcsstr`|\<string.h> veya \<wchar.h>|
+|`_mbsstr`, `_mbsstr_l`|\<mbstring.h>|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -205,8 +205,8 @@ lazy found at position 36
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)<br/>

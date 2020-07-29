@@ -4,35 +4,35 @@ ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler, limits for language constructs
 ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
-ms.openlocfilehash: 9e61cae1638c87f03b6fa775552408961bde6859
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e0e2381d88c727466b06a97c72826d2d5e15a87b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189588"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233775"
 ---
 # <a name="compiler-limits"></a>Derleyici Sınırları
 
-C++ Standart çeşitli dil yapıları için sınırlar önerir. Aşağıda, Microsoft C++ derleyicisinin önerilen sınırları uygulamayan durumların bir listesi verilmiştir. İlk sayı ISO C++ 11 standardında (ıNITS/ISO/IEC 14882-2011 [2012], ek B) ve Ikinci sayının Microsoft C++ derleyicisi tarafından uygulanan sınırın üzerinde kurulduğu limidir:
+C++ standardı çeşitli dil yapıları için sınırlar önerir. Aşağıda, Microsoft C++ derleyicisinin önerilen sınırları uygulamayan durumların bir listesi verilmiştir. İlk sayı ISO C++ 11 standardında (ıNITS/ISO/ıEC 14882-2011 [2012], ek B) ve ikinci sayının Microsoft C++ derleyicisi tarafından uygulanan sınırın üzerinde kurulduğu limidir:
 
-- Bileşik deyimlerin, yineleme denetim yapılarının ve seçim denetimi yapılarının iç içe geçirilmesi- C++ standart: 256, Microsoft C++ derleyicisi: iç içe geçmiş deyimlerin birleşimine bağlıdır, ancak genellikle 100 ve 110 arasındadır.
+- Bileşik deyimlerin, yineleme denetim yapılarının ve seçim denetimi yapılarının iç içe geçirilmesi-C++ standart: 256, Microsoft C++ derleyicisi: iç içe geçmiş deyimlerin birleşimine bağlıdır, ancak genellikle 100 ve 110 arasındadır.
 
-- Tek bir makro tanımındaki parametreler- C++ standart: 256, Microsoft C++ derleyicisi: 127.
+- Bir makro tanımındaki parametreler-C++ standart: 256, Microsoft C++ derleyicisi: 127.
 
-- Tek makro çağrısı içindeki bağımsız değişkenler C++ -standart: 256, C++ Microsoft derleyicisi 127.
+- Bir makro çağrısında bağımsız değişkenler-C++ standart: 256, Microsoft C++ derleyicisi 127.
 
-- Karakter dizesi değişmez değeri veya geniş dize sabit değerindeki karakterler (birleştirme sonrasında)- C++ standart: 65536, Microsoft C++ derleyicisi: 65535 tek baytlık karakterler, null SONLANDıRıCı dahil, ve null sonlandırıcı dahil olmak üzere 32767 çift baytlık karakterler.
+- Karakter dizesi sabit değerindeki veya geniş dize sabit değerindeki (birleştirme sonrası) karakterler-C++ standart: 65536, Microsoft C++ derleyicisi: 65535 tek baytlık karakterler, null Sonlandırıcı dahil, ve NULL Sonlandırıcı dahil olmak üzere 32767 çift baytlı karakterler.
 
-- Tek bir `struct-declaration-list` C++ standart: 256, Microsoft C++ derleyicisi: 16 içinde iç içe sınıf, yapı veya birleşim tanımlarının düzeyleri.
+- Tek C++ standardında iç içe sınıf, yapı veya birleşim tanımlarının düzeyleri `struct-declaration-list` : 256, Microsoft C++ derleyicisi: 16.
 
-- Oluşturucu tanımında üye başlatıcıları- C++ standart: 6144, Microsoft C++ derleyicisi: en az 6144.
+- Bir Oluşturucu tanımındaki üye başlatıcıları-C++ standart: 6144, Microsoft C++ derleyicisi: en az 6144.
 
-- Bir tanımlayıcının kapsam nitelikleri- C++ standart: 256, Microsoft C++ derleyicisi: 127.
+- Bir tanımlayıcının kapsam nitelikleri-C++ standart: 256, Microsoft C++ derleyicisi: 127.
 
-- İç **extern** içe olmayan dış C++ özellikler-standart: 1024 C++ , Microsoft derleyicisi: 9 (genel **kapsamda örtük** **extern** belirtimini saymanız ya da 10.
+- İç içe **`extern`** belirtimler-C++ standart: 1024, Microsoft C++ derleyicisi: 9 (genel kapsamda örtülü **`extern`** Belirtim sayılmaz veya genel kapsamda örtük belirtimi saymanız halinde 10 **`extern`** .
 
-- Şablon bildiriminde şablon bağımsız değişkenleri- C++ standart: 1024, Microsoft C++ derleyicisi: 2046.
+- Şablon bildiriminde şablon bağımsız değişkenleri-C++ standart: 1024, Microsoft C++ derleyicisi: 2046.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)
+[Standart olmayan davranış](../cpp/nonstandard-behavior.md)

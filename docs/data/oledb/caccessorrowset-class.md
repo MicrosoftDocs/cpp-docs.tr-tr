@@ -27,18 +27,18 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: efb5618c03b1f70a809bb2bafe9611474799e00b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 42b7d385877d68db22ccaf6665e8043dbfe2ee44
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212257"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233489"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 
 Bir satır kümesini ve onunla ilişkili erişimcileri tek bir sınıfta kapsüller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class TAccessor = CNoAccessor,
@@ -64,19 +64,19 @@ Satır kümesi sınıfı.
 
 |||
 |-|-|
-|[Bind](#bind)|Bağlamalar oluşturur (`bBind`, [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde **false** olarak belirtildiğinde kullanılır).|
+|[Bağladığınızda](#bind)|Bağlamalar oluşturur ( `bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtildiğinde kullanılır).|
 |[CAccessorRowset](#caccessorrowset)|Oluşturucu.|
-|[~Eksik](#close)|Satır kümesini ve tüm erişimcileri kapatır.|
+|[Kapat](#close)|Satır kümesini ve tüm erişimcileri kapatır.|
 |[FreeRecordMemory](#freerecordmemory)|Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır.|
 |[GetColumnInfo](#getcolumninfo)|[IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\))uygular.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf `TAccessor` erişimciyi yönetir. *TRowset* sınıfı satır kümesini yönetir.
+Sınıf `TAccessor` , erişimciyi yönetir. *TRowset* sınıfı satır kümesini yönetir.
 
 ## <a name="caccessorrowsetbind"></a><a name="bind"></a>CAccessorRowset:: bind
 
-[CCommand:: Open](../../data/oledb/ccommand-open.md)içinde `bBind` **false** olarak belirttiyseniz bağlamaları oluşturur.
+`bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtilmişse bağlamaları oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -90,7 +90,7 @@ Standart HRESULT.
 
 ## <a name="caccessorrowsetcaccessorrowset"></a><a name="caccessorrowset"></a>CAccessorRowset:: CAccessorRowset
 
-`CAccessorRowset` nesnesini başlatır.
+Nesnesini başlatır `CAccessorRowset` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -126,7 +126,7 @@ void FreeRecordMemory();
 
 Açılan satır kümesinden sütun bilgilerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetColumnInfo(DBORDINAL* pulColumns,
@@ -154,4 +154,4 @@ Daha fazla bilgi için *OLE DB Programcı başvurusunda* [IColumnsInfo:: GetColu
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

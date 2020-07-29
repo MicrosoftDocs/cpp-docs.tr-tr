@@ -8,29 +8,29 @@ helpviewer_keywords:
 - SBCS and MBCS data types
 - data types [C], MBCS and SBCS
 ms.assetid: 4c3ef9da-e397-48d4-800e-49dba36db171
-ms.openlocfilehash: 2d73155e36909efb1a7261f9fe45c2431525437a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72215b7a3fff638daf02f136e3a107ce8a8a00d5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62390925"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233918"
 ---
 # <a name="sbcs-and-mbcs-data-types"></a>SBCS ve MBCS Veri Türleri
 
-Yalnızca bir çok baytlı karakter veya çok baytlı karakterin bir bayt işleyen herhangi bir Microsoft MBCS çalışma zamanı kitaplığı rutini bekliyor bir `unsigned int` bağımsız değişken (burada 0x00 < karakter değeri = < 0xFFFF ve 0x00 = < bayt değeri = < 0xFF =). Çok baytlı bayt veya karakter dizesi bağlamda işleyen bir MBCS yordamı olarak gösterilemeyecek kadar çok baytlı karakter dizesi bekliyor. bir `unsigned char` işaretçi.
+Yalnızca bir çok baytlı karakter veya çok baytlı bir karakterin bir baytını işleyen Microsoft MBCS çalışma zamanı kitaplığı yordamı bir **`unsigned int`** bağımsız değişken (0x00 <= karakter değeri <= 0xFFFF ve 0x00 <= Byte değeri <= 0xFF) bekler. Bir dize bağlamındaki çok baytlı baytları veya karakterleri işleyen bir MBCS yordamı, çok baytlı karakter dizesinin bir işaretçi olarak temsil olmasını bekler **`unsigned char`** .
 
 > [!CAUTION]
-> Her bayt çok baytlı karakterin bir 8 bit temsil edilebilir **char**. Ancak, bir türünün SBCS veya MBCS tek baytlık karakter **char** 0x7F değerinden büyük bir değere sahip. Ne tür bir karakter dönüştürülür doğrudan bir **int** veya **uzun**, sonuç derleyici tarafından işareti genişletilmiş ve bu nedenle beklenmeyen sonuçlara yol açabilir.
+> Çok baytlı bir karakterin her baytı, 8 bit içinde gösterilebilir **`char`** . Ancak, **`char`** 0x7F 'den büyük bir değere sahip olan BIR sbcs veya mbcs tek baytlık karakter negatif olur. Böyle bir karakter doğrudan bir veya a 'ya dönüştürüldüğünde **`int`** **`long`** , sonuç derleyici tarafından işaret genişletilir ve bu nedenle beklenmedik sonuçlara neden olabilir.
 
-Bu nedenle bir 8-bit olarak çok baytlı karakterin bir baytını temsil eden en iyisidir `unsigned char`. Veya negatif bir sonuç önlemek için yalnızca bir tek baytlı karakter türü dönüştürme **char** için bir `unsigned char` için dönüştürmeden önce bir **int** veya **uzun**.
+Bu nedenle, çok baytlı bir karakterin baytını 8 bit olarak temsil etmek en iyisidir **`unsigned char`** . Ya da, negatif bir sonuçtan kaçınmak için, tek baytlı bir karakteri bir **`char`** **`unsigned char`** veya bir öğesine dönüştürmeden önce türüne dönüştürmeniz yeterlidir **`int`** **`long`** .
 
-Bazı SBCS dize işleme işlevleri (imzalanmış) çünkü **char** <strong>\*</strong> parametre türü uyuşmazlığı derleyici uyarı neden olur, **_MBCS** olduğu tanımlı. Bu uyarı, verimliliği sırasına göre listelenen önlemek için üç yol vardır:
+Bazı SBCS dize işleme işlevleri (imzalı) parametre aldığı için **`char`** <strong>\*</strong> , **_MBCS** tanımlandığında bir tür uyuşmazlığı derleyici uyarısı oluşur. Verimlilik sırasıyla listelenen bu uyarıyı önlemenin üç yolu vardır:
 
-1. Tür kullanımı uyumlu satır içi işlevleri TCHAR kullanın. H Bu varsayılan davranıştır.
+1. TCHAR 'daki tür kullanımı uyumlu satır içi işlevleri kullanın. Olsun. Bu, varsayılan davranıştır.
 
-1. TCHAR içinde doğrudan makroları kullanın. Tanımlayarak H **_MB_MAP_DIRECT** komut satırında. Bunu yaparsanız, el ile türlerinin eşleşmesi gerekir. Bu, en hızlı yoludur ancak tür kullanımı uyumlu değil.
+1. TCHAR 'daki doğrudan makroları kullanın. H komutunu komut satırında tanımlayarak **_MB_MAP_DIRECT** . Bunu yaparsanız, türleri el ile eşleştirebilirsiniz. Bu en hızlı yöntemdir, ancak tür kullanımı güvenli değildir.
 
-1. Tür kullanımı uyumlu statik olarak bağlı bir kitaplığı işlevleri TCHAR kullanabilirsiniz. H Bunu yapmak için definovat konstantu **_NO_INLINING** komut satırında. Ancak en iyi tür açısından güvenli yavaş yöntem budur.
+1. TCHAR 'daki tür kullanımı uyumlu statik bağlantılı kitaplık işlevlerini kullanın. Olsun. Bunu yapmak için, komut satırındaki sabit **_NO_INLINING** tanımlayın. Bu en yavaş yöntemdir, ancak tür açısından güvenlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2071
 ms.assetid: f8c09255-a5c4-47e3-8089-3d875ae43cc5
-ms.openlocfilehash: 1dc9781bc0cf1bc6c7f879cc3971828983471c6f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cd815bf90b135f65072a56911c7c4b0f054fcfec
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757754"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87210078"
 ---
 # <a name="compiler-error-c2071"></a>Derleyici hatası C2071
 
 ' tanımlayıcı ': Geçersiz depolama sınıfı
 
-`identifier`, geçersiz bir [depolama sınıfıyla](../../c-language/c-storage-classes.md)bildirildi. Bu hata, bir tanımlayıcı için birden fazla depolama sınıfı belirtildiğinde veya tanım depolama sınıfı bildirimiyle uyumsuz olduğunda oluşabilir.
+`identifier`geçersiz bir [depolama sınıfıyla](../../c-language/c-storage-classes.md)bildirildi. Bu hata, bir tanımlayıcı için birden fazla depolama sınıfı belirtildiğinde veya tanım depolama sınıfı bildirimiyle uyumsuz olduğunda oluşabilir.
 
-Bu sorunu gidermek için, tanımlayıcının amaçlanan depolama sınıfını anlayın — Örneğin, `static` veya `extern`— ve eşleşecek bildirimi düzeltin.
+Bu sorunu gidermek için, tanımlayıcının hedeflenen depolama sınıfını (örneğin, **`static`** veya **`extern`** ) anlayın ve eşleşecek bildirimi düzeltin.
 
 ## <a name="example"></a>Örnek
 

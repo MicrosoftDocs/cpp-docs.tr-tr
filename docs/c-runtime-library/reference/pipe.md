@@ -30,12 +30,12 @@ helpviewer_keywords:
 - pipes
 - pipe function
 ms.assetid: 8d3e9800-4041-44b5-9e93-2df0b0354a75
-ms.openlocfilehash: d3805de6a591169f94926c09a4542ec01f221d1d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 692a891549e0c84d6297b108918d9d7c58495ef7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916834"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234048"
 ---
 # <a name="_pipe"></a>_pipe
 
@@ -44,7 +44,7 @@ Okuma ve yazma için bir kanal oluşturur.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _pipe(
@@ -57,7 +57,7 @@ int _pipe(
 ### <a name="parameters"></a>Parametreler
 
 *pfds*<br/>
-Okuma ve yazma dosya tanımlayıcılarını tutmak için iki **tamsayı** dizisine yönelik işaretçi.
+**`int`** Okuma ve yazma dosya tanımlayıcılarını tutan iki dizi için işaretçi.
 
 *psıze*<br/>
 Ayrılacak bellek miktarı.
@@ -81,7 +81,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 **_Pipe** işlevi, bir programın diğer programlara bilgi iletmek için kullandığı yapay bir g/ç kanalı olan bir *Kanal*oluşturur. Bir dosya işaretçisi, dosya tanımlayıcısı veya her ikisi de içerdiğinden ve standart kitaplık giriş ve çıkış işlevleri kullanılarak okunan veya üzerine yazılan bir kanal, bir dosyaya benzer. Ancak, Kanal belirli bir dosyayı veya cihazı temsil etmez. Bunun yerine, programın kendi belleğinden bağımsız olarak bellekteki geçici depolamayı temsil eder ve tamamen işletim sistemi tarafından denetlenir.
 
-**_pipe** , **_open** benzer ancak kanalı okumak ve yazmak için açıp bir tane yerine iki dosya tanımlayıcısı döndürüyor. Program, kanalın her iki tarafını kullanabilir veya ihtiyaç duymaz. Örneğin, Windows 'daki komut işlemcisi **Program1** | **Program2**gibi bir komut yürüttüğünde bir kanal oluşturur.
+**_pipe** , **_open** benzer ancak kanalı okumak ve yazmak için açıp bir tane yerine iki dosya tanımlayıcısı döndürüyor. Program, kanalın her iki tarafını kullanabilir veya ihtiyaç duymaz. Örneğin, Windows 'daki komut işlemcisi **Program1**Program2 gibi bir komut yürüttüğünde bir kanal oluşturur  |  **PROGRAM2**.
 
 **Program1** 'ın standart çıkış tanımlayıcısı, kanalın yazma tanımlayıcısına iliştirilir. **Program2** 'ın standart giriş tanımlayıcısı, kanalın okuma tanımlayıcısına iliştirilir. Bu, bilgileri diğer programlara geçirmek için geçici dosyalar oluşturma gereksinimini ortadan kaldırır.
 
@@ -91,7 +91,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 Çok iş parçacıklı programlarda kilitleme yapılmaz. Döndürülen dosya tanımlayıcıları yeni açılır ve **_pipe** çağrısı tamamlanana kadar herhangi bir iş parçacığı tarafından başvurulmamalıdır.
 
-Bir üst işlem ve alt işlem arasında iletişim kurmak için **_pipe** işlevini kullanmak için, her işlemin kanalda yalnızca bir açıklayıcı açık olması gerekir. Tanımlayıcılar Opposites olmalıdır: üst öğenin açık bir okuma tanımlayıcısı varsa, alt öğenin açık bir yazma tanımlayıcısına sahip olması gerekir. Bunu yapmanın en kolay yolu, *TextMode*ile **_O_NOINHERIT** bayrağını bit**|** seviyesinde veya () kullanmaktır. Daha sonra, alt kanal tanımlayıcısının üst öğeye geçmesini istediğiniz devralınabilir bir kopyasını oluşturmak için **_dup** veya **_dup2** kullanın. Özgün tanımlayıcıyı kapatın ve sonra alt işlemi üretme. Oluşturma çağrısından dönerek, üst işlemdeki yinelenen tanımlayıcıyı kapatın. Daha fazla bilgi için bu makalenin devamındaki örnek 2 bölümüne bakın.
+Bir üst işlem ve alt işlem arasında iletişim kurmak için **_pipe** işlevini kullanmak için, her işlemin kanalda yalnızca bir açıklayıcı açık olması gerekir. Tanımlayıcılar Opposites olmalıdır: üst öğenin açık bir okuma tanımlayıcısı varsa, alt öğenin açık bir yazma tanımlayıcısına sahip olması gerekir. Bunu yapmanın en kolay yolu, **|** *textmode*ile **_O_NOINHERIT** bayrağını bit seviyesinde veya () kullanmaktır. Daha sonra, alt kanal tanımlayıcısının üst öğeye geçmesini istediğiniz devralınabilir bir kopyasını oluşturmak için **_dup** veya **_dup2** kullanın. Özgün tanımlayıcıyı kapatın ve sonra alt işlemi üretme. Oluşturma çağrısından dönerek, üst işlemdeki yinelenen tanımlayıcıyı kapatın. Daha fazla bilgi için bu makalenin devamındaki örnek 2 bölümüne bakın.
 
 Windows işletim sisteminde, tüm tanımlayıcıları kapatıldığında bir kanal yok edilir. (Kanalda tüm okuma tanımlayıcıları kapatılmışsa, kanala yazmak hataya neden olur.) Kanal üzerindeki tüm okuma ve yazma işlemleri, g/ç isteğini tamamlamaya yetecek kadar veri veya yeterli arabellek alanı olana kadar bekler.
 
@@ -101,7 +101,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_pipe**|\<GÇ. h>|\<fcntl. h>, 1 \<errno. h>2|
+|**_pipe**|\<io.h>|\<fcntl.h>, 1 \<errno.h> 2|
 
 **_O_BINARY** ve **_O_TEXT** tanımları için 1.
 
@@ -349,5 +349,5 @@ This is speaker beep number 10...
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

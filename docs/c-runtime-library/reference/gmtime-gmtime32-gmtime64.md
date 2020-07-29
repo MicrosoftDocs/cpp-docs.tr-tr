@@ -37,18 +37,18 @@ helpviewer_keywords:
 - gmtime64 function
 - time structure conversion
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
-ms.openlocfilehash: 16f4315837873c8d78065ea97a11188bdddedbed
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 86919e2ba6f5e301f1dffd87dfb4ecd22ce416e2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916231"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234113"
 ---
 # <a name="gmtime-_gmtime32-_gmtime64"></a>gmtime, _gmtime32, _gmtime64
 
 **Time_t** saat değerini bir **TM** yapısına dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [gmtime_s, _gmtime32_s, _gmtime64_s](gmtime-s-gmtime32-s-gmtime64-s.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 struct tm *gmtime( const time_t *sourceTime );
@@ -63,7 +63,7 @@ Saklı saate yönelik işaretçi. Süre gece yarısı (00:00:00), 1 Ocak 1970, E
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-[TM](../../c-runtime-library/standard-types.md)türünde bir yapıya yönelik işaretçi. Döndürülen yapının alanları, *sourcetime* bağımsız değişkeninin değerlendirilen değerini yerel saat yerine UTC olarak tutar. Yapı alanlarının her biri, aşağıdaki gibi **int**türündedir:
+[TM](../../c-runtime-library/standard-types.md)türünde bir yapıya yönelik işaretçi. Döndürülen yapının alanları, *sourcetime* bağımsız değişkeninin değerlendirilen değerini yerel saat yerine UTC olarak tutar. Yapı alanlarının her biri **`int`** , aşağıdaki gibi türündedir:
 
 |Alan|Açıklama|
 |-|-|
@@ -98,7 +98,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |-------------|---------------------|-|
-|**gmsaati**, **_gmtime32** **_gmtime64**|\<Time. h>|\<CTime> veya \<saati. h>|
+|**gmsaati**, **_gmtime32** **_gmtime64**|\<time.h>|\<ctime> veya \<time.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - derived classes [C++], declaring
 - inheritance, keywords
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
-ms.openlocfilehash: f0aae655540b4d3f9130d9840d77e0abcf270cc2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bc9afdcb7971c478c1cad9185cece57ea6326a48
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374095"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233736"
 ---
 # <a name="inheritance-keywords"></a>Devralınan Anahtar Sözcükler
 
@@ -38,45 +38,45 @@ class [__virtual_inheritance] class-name;
 burada:
 
 *sınıf adı*<br/>
-Bildirilen sınıfın adı.
+Bildirildiği sınıfın adı.
 
-C++ sınıfın tanımından önce bir sınıf üyesine işaretçi bildirmenizi sağlar. Örneğin:
+C++, sınıfın tanımından önce bir sınıf üyesine yönelik bir işaretçi bildirmenize olanak tanır. Örnek:
 
 ```cpp
 class S;
 int S::*p;
 ```
 
-Yukarıdaki kodda, `p` S sınıfının tamsayı üyesiiçin işaretçi olarak beyan edilir. Ancak, `class S` bu kodda henüz tanımlanmamıştır; sadece ilan edilmiştir. Derleyici böyle bir işaretçiyle karşılaştığında, işaretçinin genelleştirilmiş bir temsilini yapması gerekir. Gösterimin boyutu belirtilen devralma modeline bağlıdır. Derleyiciye bir devralma modeli belirtmenin dört yolu vardır:
+Yukarıdaki kodda, `p` sınıfının tamsayı üyesine yönelik bir işaretçi olarak bildirilmiştir. Ancak, `class S` Bu kodda henüz tanımlanmamış; yalnızca bildirilmiştir. Derleyici böyle bir işaretçi ile karşılaştığında, işaretçinin genelleştirilmiş bir gösterimini yapması gerekir. Gösteriminin boyutu belirtilen devralma modeline bağlıdır. Derleyiciye devralma modeli belirtmek için dört yol vardır:
 
-- **Üyeye Pointer gösterimi** altındaki IDE'de
+- IDE 'de **üye işaretçisi gösterimi** altında
 
-- [/vmg](../build/reference/vmb-vmg-representation-method.md) anahtarını kullanarak komut satırında
+- [/VMG](../build/reference/vmb-vmg-representation-method.md) anahtarını kullanarak komut satırında
 
-- [pointers_to_members](../preprocessor/pointers-to-members.md) pragma kullanma
+- [Pointers_to_members](../preprocessor/pointers-to-members.md) pragma 'ı kullanma
 
-- Kalıtım anahtar kelimelerini **__single_inheritance,** **__multiple_inheritance**ve **__virtual_inheritance**kullanarak. Bu teknik, sınıf başına olarak kalıtım modelini denetler.
+- Devralma anahtar sözcüklerini kullanarak **`__single_inheritance`** , **`__multiple_inheritance`** ve **`__virtual_inheritance`** . Bu teknik, devralma modelini sınıf başına temelinde denetler.
 
     > [!NOTE]
-    >  Sınıfı tanımladıktan sonra her zaman bir sınıfın bir üyesine işaretçi bildirirseniz, bu seçeneklerden hiçbirini kullanmanız gerekmez.
+    >  Sınıfı tanımladıktan sonra sınıfın üyesine her zaman bir işaretçi bildirirseniz, bu seçeneklerden herhangi birini kullanmanız gerekmez.
 
-Sınıf tanımından önce bir sınıfın bir üyesine işaretçi bildirmek, ortaya çıkan yürütülebilir dosyanın boyutunu ve hızını etkiler. Bir sınıf tarafından kullanılan kalıtım ne kadar karmaşıksa, sınıfın bir üyesini işaretçiyi temsil etmek için gereken bayt sayısı da o kadar büyük türde ve işaretçiyi yorumlamak için gereken kod da o kadar büyüktür. Tek devralma en az karmaşıktır ve sanal devralma en karmaşıktır.
+Sınıf tanımından önce bir sınıfın üyesine yönelik bir işaretçi bildirmek, elde edilen yürütülebilir dosyanın boyutunu ve hızını etkiler. Bir sınıf tarafından kullanılan devralma ne kadar karmaşık olursa, sınıfın bir üyesine yönelik bir işaretçiyi temsil etmek için gereken bayt sayısı ve işaretçiyi yorumlamak için gereken kod daha büyük olur. Tek devralma en az karmaşıktır ve sanal devralma en karmaşıktır.
 
-Yukarıdaki örnek aşağıdaki şekilde değiştirilirse:
+Yukarıdaki örnek olarak değiştirilirse:
 
 ```cpp
 class __single_inheritance S;
 int S::*p;
 ```
 
-komut satırı seçenekleri veya pragmalar ne olursa olsun, üyelerine işaretçiler mümkün olan en küçük gösterimi `class S` kullanır.
+komut satırı seçenekleri veya pragmalar ne olursa olsun, üye işaretçileri `class S` olası en küçük gösterimi kullanır.
 
 > [!NOTE]
-> Bir sınıf işaretçisi-üye gösterimaynı ileri bildirimi, o sınıfın üyelerine işaretçileri bildiren her çeviri biriminde ve bildirimler üyelere işaretçiler beyan edilmeden önce bildirge nin gerçekleşmesi gerekir.
+> Bir sınıf işaretçisinin üye gösteriminin aynı iletme bildirimi, bu sınıfın üyelerine işaretçiler bildiren her bir çeviri biriminde gerçekleşmelidir ve bu bildirimin, üyelerin işaretçilerine bildirilmeden önce gerçekleşmesi gerekir.
 
-Önceki sürümlerle uyumluluk **için, _single_inheritance,** **_multiple_inheritance**ve **_virtual_inheritance** **__single_inheritance**, **__multiple_inheritance**ve **__virtual_inheritance** eşanlamlıdır, derleyici seçeneği [/Za \(Dil uzantılarını devre dışı kılamaz)](../build/reference/za-ze-disable-language-extensions.md) belirtilir.
+Önceki sürümlerle uyumluluk için, **_single_inheritance**, **_multiple_inheritance**ve **_virtual_inheritance** **`__single_inheritance`** ,, **`__multiple_inheritance`** ve **`__virtual_inheritance`** [< za \( dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, ve için eş anlamlılardır.
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

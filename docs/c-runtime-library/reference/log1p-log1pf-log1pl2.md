@@ -37,18 +37,18 @@ helpviewer_keywords:
 - log1pf function
 - log1pl function
 ms.assetid: a40d965d-b4f6-42f4-ba27-2395546f7c12
-ms.openlocfilehash: 21bba72b204f975b806e43cdc6d36d8efa173b9b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d599567e38d216e78720a3d6b330310095acdd11
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911424"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218591"
 ---
 # <a name="log1p-log1pf-log1pl"></a>log1p, log1pf, log1pl
 
 1 ile belirtilen değerin doğal logaritmasını hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double log1p(
@@ -74,7 +74,7 @@ long double log1pl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta bağımsız değişkeni.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -83,7 +83,7 @@ Başarılı olursa, (*x* + 1) için doğal (Base-*e*) günlüğünü döndürür
 
 Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
-|Giriş|Sonuç|SEH özel durumu|errno|
+|Girdi|Sonuç|SEH özel durumu|errno|
 |-----------|------------|-------------------|-----------|
 |+ INF|+ INF|||
 |Denormals|Giriş ile aynı|ÖĞE||
@@ -98,9 +98,9 @@ Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
 ## <a name="remarks"></a>Açıklamalar
 
-*X* 0 yakınında **log1p** işlevleri kullanmaktan `log(x + 1)` daha doğru olabilir.
+X 0 yakınında **log1p** işlevleri kullanmaktan daha doğru olabilir `log(x + 1)` . *x*
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **log1p** aşırı yüklerini çağırabilirsiniz. C programında, **log1p** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **log1p** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **log1p** her zaman alır ve döndürür **`double`** .
 
 *X* doğal bir sayı ise, bu işlev (*x* -1) çarpınımını logaritmasını döndürür.
 
@@ -110,7 +110,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**log1p**, **log1pf**, **log1pl**|\<Math. h>|\<cmath>|
+|**log1p**, **log1pf**, **log1pl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

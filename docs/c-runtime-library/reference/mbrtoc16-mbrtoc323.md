@@ -32,18 +32,18 @@ helpviewer_keywords:
 - mbrtoc16 function
 - mbrtoc32 function
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
-ms.openlocfilehash: 0e3d5ceffa5adc9e9f6ba96cccb46a3fbcfca69a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 113c103cfedfe1982c8524623b259c3d58d4f4e2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919559"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234074"
 ---
 # <a name="mbrtoc16-mbrtoc32"></a>mbrtoc16, mbrtoc32
 
 Dizedeki ilk UTF-8 çok baytlı karakterini karşılık gelen UTF-16 veya UTF-32 karakterine dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 size_t mbrtoc16(
@@ -64,7 +64,7 @@ size_t mbrtoc32(
 ### <a name="parameters"></a>Parametreler
 
 *hedefine*\
-Dönüştürülecek UTF-8 çok baytlı karakterin **char16_t** veya **char32_t** denk işaretçisi. Null ise, işlev bir değer depolamaz.
+**`char16_t`** **`char32_t`** Dönüştürülecek UTF-8 çok baytlı karakterin veya eşdeğeri için işaretçi. Null ise, işlev bir değer depolamaz.
 
 *kaynaktaki*\
 Dönüştürülecek UTF-8 çok baytlı karakter dizesinin işaretçisi.
@@ -91,7 +91,7 @@ Başarılı olduğunda, geçerli *durum* değeri verildiğinde geçerli olan bu 
 
 **Mbrtoc16** işlevi, ilk tamamlanmış ve geçerli UTF-8 çok baytlı karakterini bulmak için *kaynaktan* *max_bytes* bayt okur ve sonra karşılık gelen UTF-16 karakterini *hedefte*depolar. Karakter, yedek çifti gibi birden fazla UTF-16 çıkış karakteri gerektiriyorsa, *durum* değeri, sonraki **mbrtoc16**çağrısında bir sonraki UTF-16 karakterini *hedefte* depolayacak şekilde ayarlanır. **Mbrtoc32** işlevi aynıdır, ancak ÇıKTı bir UTF-32 karakteri olarak depolanır.
 
-*Kaynak* null ise, bu işlevler *hedef* *için* **null** bağımsız değişkenler `""` (boş, null sonlandırılmış bir dize) ve *max_bytes*için 1 kullanılarak yapılan çağrının eşdeğerini döndürür. *Hedef* ve *max_bytes* geçirilen değerler yoksayıldı.
+*Kaynak* null ise, bu işlevler *hedef*için **null** bağımsız değişkenler `""` (boş, null sonlandırılmış bir dize) ve *max_bytes*için 1 kullanılarak yapılan çağrının eşdeğerini döndürür. *source* *Hedef* ve *max_bytes* geçirilen değerler yoksayıldı.
 
 *Kaynak* null değilse, işlev dizenin başlangıcında başlar ve kaydırma dizileri dahil olmak üzere sonraki UTF-8 çok baytlı karakterini tamamlaması gereken bayt sayısını belirlemede *max_bytes* bayta kadar inceler. İncelenen baytlar geçerli ve tam bir UTF-8 çok baytlı karakter içeriyorsa, işlev karakteri 16 bit veya 32 bitlik geniş karakter veya karakterlere dönüştürür. *Hedef* null değilse, işlev hedefteki ilk (ve muhtemelen yalnızca) sonuç karakterini depolar. Ek çıkış karakterleri gerekliyse, bir değer bir *durum*olarak ayarlanır, böylece işlevin sonraki çağrıları ek karakterlerin çıktısını verir ve-3 değerini döndürür. Daha fazla çıkış karakteri gerekmiyorsa, *durum* ilk kaydırma durumuna ayarlanır.
 
@@ -103,7 +103,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**mbrtoc16**, **mbrtoc32**|\<uşar. h>|\<cuchar>|
+|**mbrtoc16**, **mbrtoc32**|\<uchar.h>|\<cuchar>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../compatibility.md).
 

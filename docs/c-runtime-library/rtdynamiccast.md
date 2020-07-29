@@ -20,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - __RTDynamicCast
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
-ms.openlocfilehash: a5384966ff96c4e4831ba06f7c67467156a9ecd2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 238310791baebc941ad23b798adc1ea2e7fffcbb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170078"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218513"
 ---
 # <a name="__rtdynamiccast"></a>__RTDynamicCast
 
 [Dynamic_cast](../cpp/dynamic-cast-operator.md) işlecinin çalışma zamanı uygulama.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 PVOID __RTDynamicCast (
@@ -52,25 +52,25 @@ Polimorfik nesne işaretçisi.
 Nesne içindeki sanal işlev işaretçisinin boşluğu.
 
 *SrcType*<br/>
-`inptr` parametresi tarafından işaret edilen statik nesne türü.
+Parametresi tarafından işaret edilen statik nesne türü `inptr` .
 
 *Öğesi*<br/>
 İstenen dönüştürme sonucu.
 
 *IsReference*<br/>
-Giriş bir başvuru ise **doğru** ; Giriş bir işaretçisiyse **false** .
+**`true`** Giriş bir başvuru ise, **`false`** Giriş bir işaretçisiyse.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa uygun alt nesneye yönelik işaretçi. Aksi takdirde, **null**.
 
-## <a name="exceptions"></a>Özel Durumlar
+## <a name="exceptions"></a>Özel durumlar
 
-`dynamic_cast<>` giriş bir başvuru ise ve dönüştürme başarısız olursa `bad_cast()`.
+`bad_cast()`girişi `dynamic_cast<>` bir başvuru ise ve atama başarısız olursa.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`inptr` `TargetType`türündeki bir nesneye dönüştürür. `inptr` türü, `TargetType` bir işaretçisiyse veya `TargetType` bir başvuru ise bir l değeri olduğunda bir işaretçi olmalıdır. `TargetType`, önceden tanımlanmış bir sınıf türüne veya void işaretçisine bir işaretçi veya başvuru olmalıdır.
+`inptr`Türündeki bir nesneye dönüştürür `TargetType` . Türü bir işaretçisiyse `inptr` `TargetType` veya bir başvuru ise l değeri bir işaretçi olmalıdır `TargetType` . `TargetType`bir işaretçi veya önceden tanımlanmış bir sınıf türüne başvuru ya da void işaretçisi olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 

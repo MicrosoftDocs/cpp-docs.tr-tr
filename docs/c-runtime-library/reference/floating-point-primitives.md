@@ -157,12 +157,12 @@ helpviewer_keywords:
 - _dsin
 - _ldsin
 - _fdsin
-ms.openlocfilehash: c103d28dc111af4736bdc299b498b98eccb3af60
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e28c873206d8f050dbde2afc9ebfe3540b6642ff
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916692"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218695"
 ---
 # <a name="floating-point-primitives"></a>Kayan nokta temel elemanları
 
@@ -172,7 +172,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 ## <a name="_dclass-_ldclass-_fdclass"></a>_dclass, _ldclass, _fdclass
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _dclass(double x);
@@ -182,7 +182,7 @@ short __cdecl _fdclass(float x);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -201,7 +201,7 @@ Daha fazla ayrıntı için, Microsoft 'a özgü [_fpclass, _fpclassf](fpclass-fp
 
 ## <a name="_dsign-_ldsign-_fdsign"></a>_dsign, _ldsign, _fdsign
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 int __cdecl _dsign(double x);
@@ -211,7 +211,7 @@ int __cdecl _fdsign(float x);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -220,7 +220,7 @@ Bu kayan nokta temel elemanlar, CRT içindeki [signbit](signbit.md) makrosunu ve
 
 ## <a name="_dpcomp-_ldpcomp-_fdpcomp"></a>_dpcomp, _ldpcomp, _fdpcomp
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 int __cdecl _dpcomp(double x, double y);
@@ -247,7 +247,7 @@ Bu temel elemanlar, [ısbüyüktür, isgreaterequal, ıless, islessequal, ıless
 
 ## <a name="_dtest-_ldtest-_fdtest"></a>_dtest, _ldtest, _fdtest
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _dtest(double* px);
@@ -276,7 +276,7 @@ Daha fazla ayrıntı için, Microsoft 'a özgü [_fpclass, _fpclassf](fpclass-fp
 
 ## <a name="_d_int-_ld_int-_fd_int"></a>_d_int, _ld_int, _fd_int
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _d_int(double* px, short exp);
@@ -298,7 +298,7 @@ Bu kayan nokta temelleri, bir kayan nokta değeri *px* ve üs değer *Exp*işare
 
 ## <a name="_dscale-_ldscale-_fdscale"></a>_dscale, _ldscale, _fdscale
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _dscale(double* px, long exp);
@@ -320,7 +320,7 @@ Bu kayan nokta temelleri bir kayan nokta değeri *px* ve üs değer *Exp*için b
 
 ## <a name="_dunscale-_ldunscale-_fdunscale"></a>_dunscale, _ldunscale, _fdunscale
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _dunscale(short* pexp, double* px);
@@ -342,7 +342,7 @@ Bu kayan nokta temel elemanlar, mantisinin (Mantis) ve mümkünse üs bir değer
 
 ## <a name="_dexp-_ldexp-_fdexp"></a>_dexp, _ldexp, _fdexp
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _dexp(double* px, double y, long exp);
@@ -367,7 +367,7 @@ Bu kayan nokta temel elemanlar, *px* , *y* <sup>** 2 '*</sup>ye eşit olan konum
 
 ## <a name="_dnorm-_fdnorm"></a>_dnorm, _fdnorm
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 short __cdecl _dnorm(unsigned short* ps);
@@ -377,15 +377,15 @@ short __cdecl _fdnorm(unsigned short* ps);
 ### <a name="parameters"></a>Parametreler
 
 *PS*<br/>
-**İşaretsiz** **kısa**bir dizi olarak ifade edilen kayan noktalı değerin bit düzeyinde gösterimine yönelik işaretçi.
+Dizi olarak ifade edilen kayan nokta değerinin bit düzeyinde gösterimine yönelik işaretçi **`unsigned short`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta temel elemanlar, yetersiz bir kayan nokta değerinin kesirli kısmını normalleştirin ve *özellikleri*veya taraflı düzeyi eşleşecek şekilde ayarlar. Değer,, veya `_float_val` Math. h içinde belirtilen tür atlama UNION öğesinden bir **işaretsiz** **Short** `_double_val` `_ldouble_val`dizisine dönüştürülen kayan nokta türünün bit düzeyinde temsili olarak geçirilir. Dönüş değeri, bir NaN veya Infinity, aksi takdirde çıkış değerinde giriş kayan nokta değerindeki **fpsınıflandırın** sonucudur.
+Bu kayan nokta temel elemanlar, yetersiz bir kayan nokta değerinin kesirli kısmını normalleştirin ve *özellikleri*veya taraflı düzeyi eşleşecek şekilde ayarlar. Değer, **`unsigned short`** `_double_val` `_ldouble_val` `_float_val` Math. h içinde tanımlanan, ya da tür atlama UNION öğesinden bir diziye dönüştürülen kayan nokta türünün bit düzeyinde temsili olarak geçirilir. Dönüş değeri, bir NaN veya Infinity, aksi takdirde çıkış değerinde giriş kayan nokta değerindeki **fpsınıflandırın** sonucudur.
 
 ## <a name="_dpoly-_ldpoly-_fdpoly"></a>_dpoly, _ldpoly, _fdpoly
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 double __cdecl _dpoly(double x, double const* table, int n);
@@ -395,7 +395,7 @@ float __cdecl _fdpoly(float x, _float const* table, int n);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 *tablosundan*<br/>
@@ -406,11 +406,11 @@ Değerlendirilecek polinom 'un sırası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu kayan nokta temel elemanlar, *x* 'in, katlarının *tablo*içindeki karşılık gelen sabit değerlerle temsil edildiği sıra *n* olarak değerlendirilmesi. Örneğin, *tablo*\[0] = 3,0, *tablo*\[1] = 4,0, *tablo*\[2] = 5,0 ve *n* = 2 ise, polinom 5.0 x<sup>2</sup> + 4.0 x + 3,0 ' i temsil eder. Bu polinom, *x* /2,0 için değerlendirilirse, sonuç 31,0 ' dir. Bu işlevler dahili olarak kullanılmaz.
+Bu kayan nokta temel elemanlar, *x* 'in, katlarının *tablo*içindeki karşılık gelen sabit değerlerle temsil edildiği sıra *n* olarak değerlendirilmesi. Örneğin, *tablo* \[ 0] = 3,0, *tablo* \[ 1] = 4,0, *tablo* \[ 2] = 5,0 ve *n* = 2 ise, polinom 5.0 x<sup>2</sup> + 4.0 x + 3,0 ' i temsil eder. Bu polinom, *x* /2,0 için değerlendirilirse, sonuç 31,0 ' dir. Bu işlevler dahili olarak kullanılmaz.
 
 ## <a name="_dlog-_dlog-_dlog"></a>_dlog, _dlog, _dlog
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 double __cdecl _dlog(double x, int base_flag);
@@ -420,7 +420,7 @@ float __cdecl _fdlog(float x, int base_flag);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 *base_flag*<br/>
@@ -432,7 +432,7 @@ Bu kayan nokta temel elemanlar, *base_flag* 0 olduğunda *x*, LN (*x*) veya log<
 
 ## <a name="_dsin-_ldsin-_fdsin"></a>_dsin, _ldsin, _fdsin
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```C
 double __cdecl _dsin(double x, unsigned int quadrant);
@@ -442,11 +442,11 @@ float __cdecl _fdsin(float x, unsigned int quadrant);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta işlev bağımsız değişkeni.
 
 *ğine*<br/>
-, `sin` `cos`,, Ve `-cos` sonuçlarını oluşturmak için kullanılan, çeyrek daire 0, 1, 2 veya 3. `-sin`
+,,, Ve sonuçlarını oluşturmak için kullanılan, çeyrek daire 0, 1, 2 veya 3 `sin` `cos` `-sin` `-cos` .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -454,7 +454,7 @@ Bu kayan nokta temel elemanlar, *çeyrek* modül 4 ' ün *x* sapmasını sinüs�
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üstbilgi: \<Math. h>
+Üst bilgi\<math.h>
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

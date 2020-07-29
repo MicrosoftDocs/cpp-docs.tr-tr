@@ -6,12 +6,12 @@ helpviewer_keywords:
 - data types [C++], function return types
 - functions [C++], return types
 ms.assetid: 5b73be1d-2dc7-41df-ab0a-adcba36f2ad1
-ms.openlocfilehash: 5e84643713dcbcb278fe7ce07c5d55f3593ec2ef
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b2997348a3234302655187af25c9c4644c95e48e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188304"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233632"
 ---
 # <a name="reference-type-function-returns"></a>Başvuru Türü İşlev Dönüşleri
 
@@ -86,7 +86,7 @@ Ayrıca Main 'de Point nesnesi kapsamda kalır ve bu nedenle başvuru üyeleri h
 
 Başvuru türlerinin bildirimleri, aşağıdaki durumlar dışında başlatıcılar içermelidir:
 
-- Açık **extern** bildirimi
+- Açık **`extern`** bildirim
 
 - Bir sınıf üyesinin bildirimi
 
@@ -108,7 +108,7 @@ Foo& GetFoo()
 } // f is destroyed here
 ```
 
-Derleyici bu durumda bir uyarı verir: `warning C4172: returning address of local variable or temporary`. Basit programlarda, bellek konumunun üzerine yazılmadan önce başvuruya çağrı tarafından erişildiğinde hiçbir erişim ihlali gerçekleşmeyecektir. Bunun nedeni, bu durumla kaynaklanmaktadır. Uyarıyı önemseme.
+Derleyici bu durumda bir uyarı verir: `warning C4172: returning address of local variable or temporary` . Basit programlarda, bellek konumunun üzerine yazılmadan önce başvuruya çağrı tarafından erişildiğinde hiçbir erişim ihlali gerçekleşmeyecektir. Bunun nedeni, bu durumla kaynaklanmaktadır. Uyarıyı önemseme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

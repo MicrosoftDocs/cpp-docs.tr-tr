@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2280
+title: Derleyici hatası C2280
 ms.date: 04/25/2017
 f1_keywords:
 - C2280
 helpviewer_keywords:
 - C2280
 ms.assetid: e6c5b1fb-2b9b-4554-8ff9-775eeb37161b
-ms.openlocfilehash: e1ec032878fefdc1992605df5ee1aa13c673d4cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9ee5b8105241ee347812a0dcc083a4f1cc7dca49
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388910"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87208414"
 ---
-# <a name="compiler-error-c2280"></a>Derleyici Hatası C2280
+# <a name="compiler-error-c2280"></a>Derleyici hatası C2280
 
-'*bildirimi*': silinmiş bir işleve başvurmaya çalışıyor
+'*declaration*': silinmiş bir işleve başvurulmaya çalışılıyor
 
-Derleyicinin başvuru girişimi algıladı bir `deleted` işlevi. Bu hata, açıkça olarak işaretlenen bir üye işlevine bir çağrı tarafından kaynaklanabilir `= deleted` kaynak kodunda. Bu hata, yapı ya da otomatik olarak bildirildi ve olarak işaretlenmiş bir sınıf, bir örtük özel üye işlevine bir çağrı tarafından da kaynaklanabilir `deleted` derleyici tarafından. Ne zaman derleyici otomatik olarak oluşturduğu hakkında daha fazla bilgi için `default` veya `deleted` özel üye işlevleri [özel üye işlevleri](../../cpp/special-member-functions.md).
+Derleyici bir işleve başvurma girişimi algıladı `deleted` . Bu hata, kaynak kodda açıkça işaretlenmiş bir üye işlevine yapılan çağrıdan kaynaklanabilir `= deleted` . Bu hata ayrıca, otomatik olarak tanımlanan ve derleyici tarafından olarak işaretlenen bir yapının veya sınıfın örtük özel üye işlevine yapılan bir çağrı nedeniyle oluşabilir `deleted` . Derleyicinin otomatik olarak ne zaman oluşturduğu veya özel üye işlevleri hakkında daha fazla bilgi için **`default`** `deleted` bkz. [özel üye işlevleri](../../cpp/special-member-functions.md).
 
-## <a name="example-explicitly-deleted-functions"></a>Örnek: Açıkça silinen İşlevler
+## <a name="example-explicitly-deleted-functions"></a>Örnek: açıkça silinen işlevler
 
-Bir çağrı bir açıkça `deleted` işlevi bu hataya neden olur. Bir açıkça `deleted` üye işlevi gelir sınıfın veya yapının kasıtlı olarak bu nedenle bu sorunu gidermek için kullanımını önlemek üzere tasarlanmış, bunu önlemek için kodunuzu değiştirmeniz gerekir.
+Açıkça `deleted` işlev çağrısı bu hataya neden olur. Açıkça bir `deleted` üye işlevi, sınıfın veya yapının kullanımını önlemek için kasıtlı olarak tasarlandığını gösterir, bu nedenle bu sorunu çözmemek için kodunuzu değiştirmelisiniz.
 
 ```cpp
 // C2280_explicit.cpp
@@ -42,9 +42,9 @@ void f() {
 }
 ```
 
-## <a name="example-uninitialized-data-members"></a>Örnek: Başlatılmamış veri üyesi
+## <a name="example-uninitialized-data-members"></a>Örnek: başlatılmamış veri üyeleri
 
-Bir başlatılmamış bir başvuru türü veri üyesi veya `const` veri üyesi örtük olarak bildirmek derleyicinin neden olan bir `deleted` varsayılan oluşturucu. Bu sorunu düzeltmek için bildirildiğinde veri üyesi başlatılamıyor.
+Başlatılmamış bir başvuru türü veri üyesi veya **`const`** veri üyesi, derleyicinin örtülü olarak varsayılan bir Oluşturucu tanımlamasına neden olur `deleted` . Bu sorunu onarmak için, veri üyesini bildirildiği zaman başlatın.
 
 ```cpp
 // C2280_uninit.cpp
@@ -58,9 +58,9 @@ struct A {
 } a;    // C2280
 ```
 
-## <a name="example-reference-and-const-data-members"></a>Örnek: Başvuru ve const veri üyeleri
+## <a name="example-reference-and-const-data-members"></a>Örnek: başvuru ve const veri üyeleri
 
-A `const` veya başvuru türü veri üyesi neden bildirmek derleyicinin bir `deleted` kopya atama işleci. Basit kopyalama veya taşıma çalışamaz. Bu nedenle başlatıldıktan sonra bu üyeler, atanamaz. Bu sorunu gidermek için hataya neden atama işlemleri kaldırmak için mantığınızı değiştirmeniz önerilir.
+Bir **`const`** veya başvuru türü veri üyesi, derleyicinin bir `deleted` kopya atama işleci tanımlamasına neden olur. Başlatıldıktan sonra, bu üyelere öğesine atanamaz, bu nedenle basit bir kopya veya taşıma çalışamıyoruz. Bu sorunu giderecek şekilde, hataya neden olan atama işlemlerini kaldırmak için mantığınızı değiştirmenizi öneririz.
 
 ```cpp
 // C2280_ref.cpp
@@ -79,11 +79,11 @@ void f() {
 }
 ```
 
-## <a name="example-movable-deletes-implicit-copy"></a>Örnek: Taşınabilir örtülü kopya siler
+## <a name="example-movable-deletes-implicit-copy"></a>Örnek: taşınabilir örtük kopyayı siler
 
-Bir sınıf, bir taşıma Oluşturucusu veya taşıma atama işleci bildirir ancak açıkça bir kopya Oluşturucu bildirmiyor derleyici örtük olarak bir kopya Oluşturucusu bildirir ve olarak tanımladığı `deleted`. Benzer şekilde, bir sınıf için bir taşıma Oluşturucusu veya taşıma atama işleci bildirir, ancak bu kopya atama işleci açıkça bildirmiyor derleyici örtük olarak bir kopya atama işleci bildirir ve tanımlar olarak `deleted`. Bu sorunu gidermek için bu üyeleri açıkça bildirmeniz gerekir.
+Bir sınıf bir taşıma Oluşturucusu veya taşıma ataması operatörü bildiriyorsa, ancak açıkça bir kopya Oluşturucu bildirmiyorsa, derleyici dolaylı olarak bir kopya Oluşturucu bildirir ve bunu olarak tanımlar `deleted` . Benzer şekilde, bir sınıf bir taşıma Oluşturucusu veya taşıma ataması işlecini bildirirse, ancak açıkça bir kopya atama işleci bildirmiyorsa, derleyici dolaylı olarak bir kopya atama işleci bildirir ve bunu olarak tanımlar `deleted` . Bu sorunu onarmak için, bu üyeleri açıkça bildirmeniz gerekir.
 
-İle hatası C2280 gördüğünüzde bir `unique_ptr`, olasılıkla olan olduğundan, kopya oluşturucuyu çağırmak denediğinizden bir `deleted` işlevi. Tasarıma göre bir `unique_ptr` kopyalanamıyor. Bir taşıma Oluşturucu, bunun yerine sahipliğini devretmek için kullanın.
+Bir ile bağlantılı olarak hata C2280 gördüğünüzde `unique_ptr` , bu, bir işlev olan kopya oluşturucusunu çağırmaya çalışırken neredeyse kesinlikle olur `deleted` . Tasarıma göre, bir `unique_ptr` kopyalanamıyor. Bunun yerine sahipliği aktarmak için bir taşıma Oluşturucusu kullanın.
 
 ```cpp
 // C2280_move.cpp
@@ -108,9 +108,9 @@ void copy(base *p)
 }
 ```
 
-## <a name="example-variant-and-volatile-members"></a>Örnek: Değişken ve volatile üyeleri
+## <a name="example-variant-and-volatile-members"></a>Örnek: değişken ve geçici Üyeler
 
-DSCP ve oluşturulan varsayılan oluşturucular ve Yıkıcılar anonim birleşimler için önce Visual Studio 2015 güncelleştirme 2 derleyici sürümleri yoktu. Bunlar artık örtük olarak bildirilen `deleted`. Bu sürümleri de izin DSCP örtük tanımını `default` kopyalama ve taşıma oluşturucuları ve `default` kopyalama ve taşıma atama işleçleri sınıfları ve yapıları sahip `volatile` üye değişkenleri. Derleyici artık bu Önemsiz olmayan oluşturuculara ve atama işleçleri için göz önünde bulundurur ve oluşturmadığını `default` uygulamaları. Bu tür bir sınıfının bir birleşim veya bir sınıf içinde anonim birleşim üyesi olduğunda, kopyalama ve taşıma oluşturucuları ve kopyalama ve taşıma atama işleçleri birleşim veya sınıf örtük olarak tanımlanır `deleted`. Bu sorunu gidermek için açıkça gerekli özel üye işlevleri bildirmeniz gerekir.
+Visual Studio 2015 güncelleştirme 2 ' den önceki derleyici sürümleri, anonim birleşimler için uyumsuz ve üretilmiş varsayılan oluşturucular ve Yıkıcılar. Bunlar artık örtük olarak olarak bildirilmiştir `deleted` . Bu sürümler Ayrıca, **`default`** **`default`** üye değişkenleri olan sınıflarda ve yapılarda atama işleçlerini ve kopyalama ve taşıma oluşturucularının uyumsuz bir örtük tanımına izin verebilir **`volatile`** . Derleyici artık bunları önemsiz olmayan oluşturuculara ve atama işleçlerine sahip olacak şekilde değerlendirir ve **`default`** uygulama oluşturmaz. Böyle bir sınıf bir birleşimin üyesi veya bir sınıfın içindeki anonim bir birleşim olduğunda, birleşim veya sınıfın kopyalama ve Taşıma Oluşturucuları ile kopyalama ve taşıma atama işleçleri örtülü olarak tanımlanmıştır `deleted` . Bu sorunu onarmak için gerekli özel üye işlevlerini açıkça bildirmeniz gerekir.
 
 ```cpp
 // C2280_variant.cpp
@@ -137,11 +137,11 @@ int main() {
 }
 ```
 
-## <a name="example-indirect-base-members-deleted"></a>Örnek: Silinen dolaylı temel üyeleri
+## <a name="example-indirect-base-members-deleted"></a>Örnek: dolaylı temel Üyeler silindi
 
-Visual Studio 2015 güncelleştirme 2 önce derleyici sürümleri DSCP ve türetilmiş bir sınıf özel üye işlevlerini dolaylı olarak türetilmiş çağırmak izin verilen `private virtual` temel sınıflar. Böyle bir çağrı yapıldığında derleyici artık derleyici hatası C2280 verir.
+Visual Studio 2015 güncelleştirme 2 ' den önceki derleyici sürümleri uyumlu değildi ve türetilmiş bir sınıfın dolaylı olarak türetilmiş temel sınıfların özel üye işlevlerini çağırabilmesi için izin verildi `private virtual` . Derleyici artık bu tür bir çağrı yapıldığında derleyici hatası C2280 yayınlar.
 
-Bu örnekte, sınıf `top` özel sanal dolaylı olarak türeyen `base`. Uyumlu kod içinde bu üyeleri yapar `base` erişilemez `top`; türündeki nesne bir `top` varsayılan oluşturulmuş veya yok edilemez. Eski derleyici çalışma biçimine dayalı kod bu sorunu çözmek için kullanılacak Ara sınıfı değiştirme `protected virtual` türetme ya da değişiklik `top` doğrudan türetme kullanılacak sınıfı:
+Bu örnekte, sınıfı `top` dolaylı olarak özel sanal sunucudan türetilir `base` . Bu, uyumlu bir kodda, erişilemeyen üyeleri, `base` Varsayılan olarak `top` `top` oluşturulamaz veya yok edilebilir hale getirir. Eski derleyici davranışına bağlı olan koddaki bu sorunu onarmak için, ara sınıfı türetme kullanacak şekilde değiştirin `protected virtual` veya `top` sınıfı doğrudan türetmeye kullanılacak şekilde değiştirin:
 
 ```cpp
 // C2280_indirect.cpp

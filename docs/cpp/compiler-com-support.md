@@ -5,26 +5,26 @@ helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-ms.openlocfilehash: 6ab697e5a090158b034a385e60978cff4a73f488
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 9a5961049cbc54c94cec5b444e2d98f013dda932
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857586"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233788"
 ---
 # <a name="compiler-com-support"></a>Derleyici COM Desteği
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Microsoft C++ derleyicisi, bileşen nesne MODELI (com) tür kitaplıklarını doğrudan okuyabilir ve içeriği derlemeye eklenebilecek C++ kaynak koda çevirebilir. Dil uzantıları, masaüstü uygulamalarına yönelik istemci tarafında COM programlamayı kolaylaştırmak için kullanılabilir.
+Microsoft C++ derleyicisi, bileşen nesne modeli (COM) tür kitaplıklarını doğrudan okuyabilir ve içeriği derlemeye dahil edilebilir C++ kaynak koduna çevirebilir. Dil uzantıları, masaüstü uygulamalarına yönelik istemci tarafında COM programlamayı kolaylaştırmak için kullanılabilir.
 
-[#İmport Önişlemci yönergesini](../preprocessor/hash-import-directive-cpp.md)kullanarak, derleyici bir tür kitaplığını OKUYABILIR ve com arabirimlerini sınıflar olarak açıklayan bir C++ üstbilgi dosyasına dönüştürebilir. Ortaya çıkan tür kitaplığı üstbilgi dosyaları için içeriğin Kullanıcı denetimi için bir dizi `#import` özniteliği vardır.
+[#İmport Önişlemci yönergesini](../preprocessor/hash-import-directive-cpp.md)kullanarak, derleyici bir tür kitaplığını OKUYABILIR ve com arabirimlerini sınıflar olarak açıklayan bir C++ üst bilgi dosyasına dönüştürebilir. `#import`Oluşturulan tür kitaplığı üst bilgi dosyaları için içeriğin Kullanıcı denetimi için bir dizi öznitelik vardır.
 
-Bir COM nesnesine bir genel benzersiz tanımlayıcı (GUID) atamak için [__declspec](../cpp/declspec.md) genişletilmiş öznitelik [UUID](../cpp/uuid-cpp.md) 'sini kullanabilirsiniz. Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) bir com NESNESIYLE ilişkili GUID 'yi ayıklamak için kullanılabilir. Bir COM nesnesinin veri üyesi için `get` ve `set` yöntemlerini belirtmek için başka bir **__declspec** özniteliği, [özelliği](../cpp/property-cpp.md)kullanılabilir.
+Bir COM nesnesine bir genel benzersiz tanımlayıcı (GUID) atamak için [__declspec](../cpp/declspec.md) genişletilmiş öznitelik [UUID](../cpp/uuid-cpp.md) 'sini kullanabilirsiniz. Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) bir com NESNESIYLE ilişkili GUID 'yi ayıklamak için kullanılabilir. Bir **`__declspec`** [property](../cpp/property-cpp.md) `get` `set` com nesnesinin veri üyesi için ve yöntemlerini belirtmek için başka bir öznitelik, özelliği kullanılabilir.
 
-`VARIANT` ve `BSTR` türlerini desteklemek, akıllı işaretçiler uygulamak ve `_com_raise_error`tarafından oluşturulan hata nesnesini kapsüllemek için bir COM desteği genel işlevleri ve sınıfları kümesi verilmiştir:
+`VARIANT`Ve `BSTR` türlerini desteklemek, akıllı işaretçiler uygulamak ve tarafından oluşturulan hata nesnesini kapsüllemek IÇIN bir com desteği genel işlevleri ve sınıfları kümesi verilmiştir `_com_raise_error` :
 
-- [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)
+- [Derleyici COM genel Işlevleri](../cpp/compiler-com-global-functions.md)
 
 - [_bstr_t](../cpp/bstr-t-class.md)
 
@@ -38,5 +38,5 @@ Bir COM nesnesine bir genel benzersiz tanımlayıcı (GUID) atamak için [__decl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)<br/>
-[Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)
+[Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)<br/>
+[Derleyici COM genel Işlevleri](../cpp/compiler-com-global-functions.md)

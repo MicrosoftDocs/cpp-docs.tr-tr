@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2047
 ms.assetid: 686a5a81-3857-4753-84a0-5c2e7149cbee
-ms.openlocfilehash: b6e531487038ab7610be3c79b5acdd85d1073de4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f42a1f1dadcff95934236f153be7df7244bff8cb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740123"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87210585"
 ---
 # <a name="compiler-error-c2047"></a>Derleyici hatası C2047
 
 Geçersiz varsayılan
 
-Anahtar sözcüğü `default` yalnızca bir `switch` bildiriminde görünebilir.
+Anahtar sözcüğü **`default`** yalnızca bir **`switch`** ifadede görünebilir.
 
 Aşağıdaki örnek C2047 oluşturur:
 

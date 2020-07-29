@@ -26,18 +26,18 @@ helpviewer_keywords:
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-ms.openlocfilehash: 77ce6e0cdb5e1ad3f5317989c7804abc5aed4e69
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: 159f474927b4aaf364ad6972450edbe513a3c0b0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821440"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218747"
 ---
 # <a name="_alloca"></a>_alloca
 
 Yığında bellek ayırır. Daha güvenli bir sürüm kullanılabilir olduğundan bu işlev kullanım dışıdır; bkz. [_malloca](malloca.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *_alloca(
@@ -52,9 +52,9 @@ Yığından ayrılacak bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Alloca** yordamı, ayrılan alana **void** bir işaretçi döndürür ve bu, herhangi bir tür nesnenin depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_alloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
+**_Alloca** yordamı **`void`** , ayrılan alana bir işaretçi döndürür ve bu, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_alloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-Boşluk ayrılabileceği takdirde bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durum değil; Bu, yapılandırılmış bir özel durumdur. Özel durum işlemenin C++ kullanılması yerine, [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
+Boşluk ayrılabileceği takdirde bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durumu değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işleme kullanmak yerine, [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -62,24 +62,24 @@ Boşluk ayrılabileceği takdirde bir yığın taşması özel durumu oluşturul
 
 Özel durum işleyicisinde (EH) **_alloca** açıkça çağırmak için kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: kendi görevlerini, kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirirler. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde **_alloca** açıkça çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
 
-- Windows NT SEH özel durum filtresi ifadesi: `__except ( _alloca() )`
+- Windows NT SEH özel durum filtresi ifadesi:`__except ( _alloca() )`
 
-- Windows NT SEH son özel durum işleyicisi: `__finally { _alloca() }`
+- Windows NT SEH son özel durum işleyicisi:`__finally { _alloca() }`
 
-- C++EH catch yan tümcesi ifadesi
+- C++ EH catch yan tümcesi ifadesi
 
 Ancak, **_alloca** doğrudan bir Eh yordamının içinden veya daha önce listelenen eh senaryolarından biri tarafından çağrılan uygulama tarafından sağlanan geri aramadan çağrılabilir.
 
 > [!IMPORTANT]
 > Windows XP 'de, bir try/catch bloğu içinde **_alloca** çağrılırsa, catch bloğunda [_resetstkoflw](resetstkoflw.md) çağırmanız gerekir.
 
-Yukarıdaki kısıtlamalara ek olarak,[/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken **_alloca** **__except** bloklarda kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
+Yukarıdaki kısıtlamalara ek olarak,[/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği kullanılırken **_alloca** **`__except`** bloklarda kullanılamaz. Daha fazla bilgi için bkz. [/clr kısıtlamaları](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_alloca**|\<malloc. h >|
+|**_alloca**|\<malloc.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -141,7 +141,7 @@ Allocated 1000 bytes of stack at 0x0012FB50
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [malloc](malloc.md)<br/>
 [realloc](realloc.md)<br/>

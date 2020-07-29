@@ -37,18 +37,18 @@ helpviewer_keywords:
 - lgammal function
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-ms.openlocfilehash: a610b0412b7e10949a810f4e360686292cff9ee3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d751a3487db1d7c0135d4a1ae87cb84d374825fa
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916444"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218656"
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 
 Belirtilen değerin gama işlevinin mutlak logaritmasına ilişkin doğal logaritmayı belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double lgamma( double x );
@@ -63,7 +63,7 @@ long double lgamma( long double x ); //C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Hesaplama değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -83,7 +83,7 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **lgamma** aşırı yüklerini çağırabilirsiniz. C programında, **lgama** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **lgamma** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **lgama** her zaman alır ve döndürür **`double`** .
 
 X bir Rational Number ise, bu işlev (x-1) faktöriyelini logaritmasını döndürür.
 
@@ -93,7 +93,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**lgamma**, **lgamaf**, **lgammal**|\<Math. h>|\<cmath>|
+|**lgamma**, **lgamaf**, **lgammal**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

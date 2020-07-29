@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4710
 ms.assetid: 76381ec7-3fc1-4bee-9a0a-c2c8307b92e2
-ms.openlocfilehash: c39848b9b3e94e35c4d0c0937a0974b717c6bd8d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c30b98204f447f4d9d0ab8d687602a361d909363
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198182"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218071"
 ---
 # <a name="compiler-warning-level-4-c4710"></a>Derleyici Uyarısı (düzey 4) C4710
 
@@ -19,7 +19,7 @@ ms.locfileid: "80198182"
 
 Verilen işlev satır içi genişletme için seçildi, ancak derleyici satır içinde gerçekleştirmedi.
 
-İç hat kullanımı derleyicinin kararına göre yapılır. **Register** anahtar sözcüğü gibi **satır içi** anahtar sözcük, derleyici için bir ipucu olarak kullanılır. Derleyici, hız için derleme yaparken kodun hızlandırılmasına veya belirli bir işlevin boş alana göre daha küçük olmasını sağlamak için belirli bir işlevi satır içi olarak kullanıp kullanmadığını anlamak için buluşsal yöntemler kullanır. Derleyici, alan için derleme yaparken yalnızca satır içi çok küçük işlevlere sahip olur.
+İç hat kullanımı derleyicinin kararına göre yapılır. Anahtar sözcüğü **`inline`** gibi anahtar sözcüğü, **`register`** derleyici için bir ipucu olarak kullanılır. Derleyici, hız için derleme yaparken kodun hızlandırılmasına veya belirli bir işlevin boş alana göre daha küçük olmasını sağlamak için belirli bir işlevi satır içi olarak kullanıp kullanmadığını anlamak için buluşsal yöntemler kullanır. Derleyici, alan için derleme yaparken yalnızca satır içi çok küçük işlevlere sahip olur.
 
 Bazı durumlarda, derleyici, mekanik nedenlerle belirli bir işlevi satır içi olarak içermez. Derleyicinin bir işlevi satır içi olarak görmemesinin nedenleri listesi için bkz. [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) .
 

@@ -1,27 +1,27 @@
 ---
-title: Derleyici Hatası C2440
+title: Derleyici hatası C2440
 ms.date: 03/28/2017
 f1_keywords:
 - C2440
 helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-ms.openlocfilehash: 8de433361901b5d247616c154afc48d637373d43
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 75b2ba62182a33137b433c836b4acf7c9e1fc231
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448036"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87207985"
 ---
-# <a name="compiler-error-c2440"></a>Derleyici Hatası C2440
+# <a name="compiler-error-c2440"></a>Derleyici hatası C2440
 
-'conversion': 'type1' 'type2' olarak dönüştürülemez
+' dönüştürme ': ' type1 ' iken ' type2 ' olarak dönüştürülemez
 
-Derleyici türüne dönüştürülemiyor `type1` için `type2`.
+Derleyici öğesinden `type1` öğesine atanamaz `type2` .
 
 ## <a name="example"></a>Örnek
 
-C2440, sabit olmayan başlatmaya çalışıyorsanız oluşabilir `char*` (veya `wchar_t*`) C++ kodunda bir dize kullanarak, derleyici Uyumluluğu seçeneği [/ZC: strictstrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) ayarlanır. C'de, dize sabit değeri türünü dizisi olan `char`, ancak C++'da dizisidir `const char`. Bu örnek C2440 oluşturur:
+C2440 **`char*`** `wchar_t*` , derleyici uyumluluk seçeneği [/Zc: strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) ayarlandığında, C++ kodunda bir dize sabiti kullanarak const olmayan bir (veya) başlatmaya çalıştığınızda olabilir. C 'de, dize sabit değerinin türü dizidir **`char`** , ancak C++ ' da dizidir `const char` . Bu örnek C2440 oluşturur:
 
 ```cpp
 // C2440s.cpp
@@ -40,7 +40,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Void * üyesine bir işaretçi dönüştürme yapmayı denediğinizde c2440 öğesine de neden. Sonraki örnek C2440 oluşturur:
+C2440, bir işaretçiyi bir üyeye void * öğesine dönüştürmeye çalıştığınızda da oluşabilir. Sonraki örnek C2440 oluşturur:
 
 ```cpp
 // C2440.cpp
@@ -63,7 +63,7 @@ public:
 
 ## <a name="example"></a>Örnek
 
-Sadece ileri bildirimli ancak tanımlanmamış bir türden atama yapmayı denediğinizde c2440 öğesine de neden. Bu örnek C2440 oluşturur:
+C2440, yalnızca iletme yapılmış ancak tanımlanmamış bir türden atama yapmaya çalıştığınızda da oluşabilir. Bu örnek C2440 oluşturur:
 
 ```cpp
 // c2440a.cpp
@@ -78,13 +78,13 @@ Base * func(Derived * d) {
 
 ## <a name="example"></a>Örnek
 
-15 ve 16 sonraki örneğin satırlarındaki C2440 hataları nitelenmiştir `Incompatible calling conventions for UDT return value` ileti. A *UDT* bir sınıf, yapı veya birleşim gibi kullanıcı tanımlı bir tür. Bir UDT çağırma kuralı, bir iletme bildirimiyle çakışıyor gerçek çağırma kuralı işlevi işaretçisi olduğunda ve UDT dönüş türü belirtildiğinde, bu tür uyumsuzluk hataları neden olur.
+15. satırlardaki C2440 hataları ve sonraki örnek 16, iletiyle nitelenir `Incompatible calling conventions for UDT return value` . *Udt* , sınıf, yapı veya birleşim gibi Kullanıcı tanımlı bir türdür. Bu tür uyumsuzluk hataları, bir iletme bildiriminin dönüş türünde belirtilen bir UDT çağırma kuralı, UDT 'nin gerçek çağırma kuralıyla ve bir işlev işaretçisi dahil edildiğinde çakışırsa oluşur.
 
-Örnekte, ilk vardır ve yapı döndüren bir işlev için bir yapı bildirimleri; Derleyici yapının C++ çağırma kuralını kullandığını varsayar. Ardından, varsayılan olarak, C kullanır yapı tanımının çağrı kuralı. Derleyici, dönüş türünde struct çağırma kuralının yapının bir tamamını okumayı bitirmeden struct çağırma kuralını bilmediğinden `get_c2` da C++ olduğu varsayılır.
+Örnekte, önce bir struct ve struct döndüren bir işlev için ileri bildirimler vardır; Derleyici, yapının C++ çağırma kuralını kullandığını varsayar. Next, varsayılan olarak C çağırma kuralını kullanan yapı tanımıdır. Derleyici, yapının tamamını okumayı tamamlayana kadar yapının çağırma kuralını bilmez çünkü, dönüş türü içindeki yapının çağırma kuralı `get_c2` da C++ olarak kabul edilir.
 
-Yapı, yapı döndüren başka bir işlev bildirimi gelir, ancak bu noktada derleyici yapının çağırma kuralının C++ olduğunu bilir. Benzer şekilde, yapı döndüren işlev işaretçisi, derleyici yapının C++ çağırma kuralı kullandığını bilebilmesi için yapı tanımından sonra tanımlanır.
+Yapısına, yapısını döndüren başka bir işlev bildirimi gelir, ancak bu noktada, derleyici yapının çağırma kuralının C++ olduğunu bilir. Benzer şekilde, yapısını döndüren işlev işaretçisi yapı tanımından sonra tanımlanır, böylece derleyici yapının C++ çağırma kuralını kullandığını bilir.
 
-Uyumsuz çağırma kuralları nedeniyle oluşan c2440 hatası düzeltmek için UDT tanımından sonra UDT döndüren işlevleri bildirin.
+Uyumsuz çağırma kuralları nedeniyle oluşan C2440 çözümlemek için, UDT tanımından sonra UDT döndüren işlevleri bildirin.
 
 ```cpp
 // C2440b.cpp
@@ -128,7 +128,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2440, iç işaretçiye sıfır atarsanız da oluşabilir:
+C2440, iç işaretçiye sıfır atarsanız da gerçekleşebilir:
 
 ```cpp
 // C2440c.cpp
@@ -143,7 +143,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2440, kullanıcı tanımlı bir dönüştürmenin yanlış kullanımı için de oluşabilir. Örneğin, ne zaman bir dönüştürme operatörünün tanımlanmış olarak `explicit`, derleyici örtük bir dönüştürme kullanamazsınız. Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı Dönüşümler (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). Bu örnek C2440 oluşturur:
+C2440, Kullanıcı tanımlı dönüştürmenin yanlış kullanımı için de oluşabilir. Örneğin, bir dönüştürme işleci olarak tanımlandığında **`explicit`** , derleyici onu örtük bir dönüşümde kullanamaz. Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı dönüşümler (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). Bu örnek C2440 oluşturur:
 
 ```cpp
 // C2440d.cpp
@@ -167,7 +167,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2440, türü olan bir Visual C++ dizi örneği oluşturmayı denerseniz de oluşabilir bir <xref:System.Array>.  Daha fazla bilgi için [diziler](../../extensions/arrays-cpp-component-extensions.md).  Sonraki örnek C2440 oluşturur:
+C2440, türü bir olan Visual C++ dizisinin bir örneğini oluşturmayı denerseniz da oluşabilir <xref:System.Array> .  Daha fazla bilgi için bkz. [diziler](../../extensions/arrays-cpp-component-extensions.md).  Sonraki örnek C2440 oluşturur:
 
 ```cpp
 // C2440e.cpp
@@ -182,7 +182,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2440 öznitelik özelliğinde yapılan değişiklikler nedeniyle de oluşabilir.  Aşağıdaki örnek C2440 oluşturur.
+C2440, öznitelikler özelliğindeki değişiklikler nedeniyle de oluşabilir.  Aşağıdaki örnek C2440 oluşturur.
 
 ```cpp
 // c2440f.cpp
@@ -194,9 +194,9 @@ C2440 öznitelik özelliğinde yapılan değişiklikler nedeniyle de oluşabilir
 
 ## <a name="example"></a>Örnek
 
-Microsoft C++ derleyici artık sağlayan [const_cast işleci](../../cpp/const-cast-operator.md) alta dönüştürmesine için kullanan kaynak kodu **/CLR** programlama derlenmiştir.
+Microsoft C++ derleyicisi artık **/clr** programlama kullanan kaynak kodu derlendiğinde [const_cast işlecinin](../../cpp/const-cast-operator.md) , dönüştürmeyi açmasına izin vermez.
 
-Bu c2440 hatasını düzeltmek için doğru atama işlecini kullanın. Daha fazla bilgi için [atama işleçleri](../../cpp/casting-operators.md).
+Bu C2440 çözümlemek için doğru atama işlecini kullanın. Daha fazla bilgi için bkz. [atama işleçleri](../../cpp/casting-operators.md).
 
 Bu örnek C2440 oluşturur:
 
@@ -215,7 +215,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-C2440, derleyici Visual Studio 2015 güncelleştirme 3'te uyumluluk değişiklikleri nedeniyle oluşabilir. Daha önce derleyici yanlış belirli farklı ifadeler aynı türü olarak tanımlamak için bir şablon eşleşme ele bir `static_cast` işlemi. Derleyici türleri doğru ayırır ve kod şimdi, yararlandı önceki `static_cast` davranışı bozulur. Bu sorunu gidermek için şablonu parametre türüyle eşleşmiyor veya kullanmak için şablon bağımsız değişkeni değiştirmek bir `reinterpret_cast` veya C stili tür dönüştürme.
+C2440, Visual Studio 2015 güncelleştirme 3 ' te derleyicinin uyumluluk değişiklikleri nedeniyle oluşabilir. Daha önce, derleyici bir işlem için bir şablon eşleşmesi tanımlarken aynı tür olarak belirli farklı ifadeleri yanlış olarak ele ıyordu **`static_cast`** . Artık derleyici, türleri doğru şekilde ayırır ve önceki davranışa bağlı olan kod **`static_cast`** bozulur. Bu sorunu onarmak için, şablon bağımsız değişkenini şablon parametre türüyle eşleşecek şekilde değiştirin ya da **`reinterpret_cast`** ya da C stili bir tür dönüştürme kullanın.
 
 Bu örnek C2440 oluşturur:
 
@@ -242,11 +242,11 @@ This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in
 
 ## <a name="example"></a>Örnek
 
-### <a name="copy-list-initialization"></a>Kopya listesi başlatması
+### <a name="copy-list-initialization"></a>Kopya listesini başlatma
 
-Visual Studio 2017 ve üzeri için kilitlenmelere neden olabilir ve Visual Studio 2015'te yakalanan olmayan Başlatıcı Listeleri kullanarak nesne oluşturma ilgili derleyici hataları doğru şekilde yükseltmek veya çalışma zamanı davranışı tanımsız. C ++ 17 kopya listesi başlatması, derleyicinin açık bir oluşturucu aşırı yükleme çözümlemesi için göz önünde bulundurmanız gerekir, ancak aşırı yükleyen gerçekten seçilirse hata yükseltmeniz gerekir.
+Visual Studio 2017 ve üzeri, Visual Studio 2015 ' de yakalanmayan başlatıcı listeleri kullanarak nesne oluşturmayla ilgili derleyici hatalarını doğru şekilde yükseltir ve kilitlenmelere veya tanımsız çalışma zamanı davranışına neden olabilir. C++ 17 Copy-List-Initialization sürümünde, derleyici aşırı yükleme çözümlemesi için açık bir Oluşturucu kabul etmek zorundadır, ancak aşırı yükleme gerçekten seçilirse bir hata oluşturması gerekir.
 
-Aşağıdaki örnek, Visual Studio 2015'te ancak Visual Studio 2017 derler.
+Aşağıdaki örnek Visual Studio 2015 ' de derlenir ancak Visual Studio 2017 ' de değildir.
 
 ```cpp
 // C2440j.cpp
@@ -263,7 +263,7 @@ int main()
 }
 ```
 
-Hatayı düzeltmek için doğrudan başlatma kullanın:
+Hatayı düzeltmek için, doğrudan başlatma kullanın:
 
 ```cpp
 // C2440k.cpp
@@ -281,9 +281,9 @@ int main()
 
 ## <a name="example"></a>Örnek
 
-### <a name="cv-qualifiers-in-class-construction"></a>sınıf oluşturma CV niteleyicileri
+### <a name="cv-qualifiers-in-class-construction"></a>sınıf yapııncv niteleyicileri
 
-Visual Studio 2015'te derleyici bazen yanlışlıkla bir sınıf nesnesi bir oluşturucu çağrısı aracılığıyla oluştururken cv niteleyici yoksayar. Bu durum bir kilitlenme veya beklenmeyen çalışma zamanı davranışına neden olabilir. Aşağıdaki örnek, Visual Studio 2015'te derler ancak Visual Studio 2017 ve sonraki sürümlerinde bir derleyici hatası oluşturur:
+Visual Studio 2015 ' de, derleyici bazen bir Oluşturucu çağrısı aracılığıyla bir sınıf nesnesi oluştururken CV niteleyicisi yanlış yoksayar. Bu, kilitlenme veya beklenmeyen çalışma zamanı davranışına neden olabilir. Aşağıdaki örnek Visual Studio 2015 ' de derlenir ancak Visual Studio 2017 ve sonraki sürümlerde bir derleyici hatası oluşturur:
 
 ```cpp
 struct S
@@ -295,4 +295,4 @@ struct S
 int i = (const S)0; // error C2440
 ```
 
-Hatayı düzeltmek için işleci Int() const olarak bildirin.
+Hatayı düzeltmek için int () işlecini const olarak bildirin.

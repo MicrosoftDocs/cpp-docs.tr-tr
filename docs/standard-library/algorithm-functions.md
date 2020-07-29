@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: c8c550be87eacf81fab994239e07ed2358fad39b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5b83306d34c5e881e679ac4b6f0d7b9c249035cd
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617657"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87205580"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma &gt; işlevleri
 
@@ -329,7 +329,7 @@ They have values of 10 & 20.
 
 ## <a name="all_of"></a><a name="all_of"></a>all_of
 
-Verilen aralıktaki her bir öğede bir koşul olduğunda **true** döndürür.
+**`true`** Verilen aralıktaki her bir öğede bir koşul varsa döndürür.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -358,15 +358,15 @@ Bir koşulun denetlenmesi için nereden başlayacağını gösteren bir giriş Y
 Bir koşulu denetlenecek öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
 *pred*\
-İçin sınanacak koşul. Bu, denetlenen bir öğe tarafından karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesidir. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+İçin sınanacak koşul. Bu, denetlenen bir öğe tarafından karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesidir. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Belirtilen aralıktaki her öğede koşul algılanırsa veya Aralık boşsa **true** , değilse **false** değerini döndürür.
+**`true`** Belirtilen aralıktaki her öğede koşulun algılanıp algılanmadığını veya aralığın boş olduğunu, **`false`** Aksi takdirde öğesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon **işlevi yalnızca,** Aralık içinde her biri için true değerini döndürür `N` `[0, last - first)` `pred(*(first + N))` . **true**
+Şablon işlevi **`true`** yalnızca, Aralık içinde her biri için `N` `[0, last - first)` koşulun olduğu durumlarda döndürür `pred(*(first + N))` **`true`** .
 
 ### <a name="example"></a>Örnek
 
@@ -405,7 +405,7 @@ All the elements are even numbers.
 
 ## <a name="any_of"></a><a name="any_of"></a>any_of
 
-Bir koşul, belirtilen öğe aralığında en az bir kez olduğunda **true** döndürür.
+**`true`** Belirtilen öğe aralığında bir koşul en az bir kez olduğunda döndürür.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -434,15 +434,15 @@ Bir koşul için bir öğe aralığının nerede başlatılacağını gösteren 
 Bir koşulu denetlenecek öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
 *pred*\
-İçin sınanacak koşul. Bu, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Koşul, sınanmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlar. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+İçin sınanacak koşul. Bu, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Koşul, sınanmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlar. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Koşul, belirtilen aralıkta en az bir kez algılanırsa **true** , koşul hiç algılanmadıysa **false** döndürür.
+Koşul **`true`** hiçbir zaman algılanmadıysa, koşulun belirtilen aralıkta en az bir kez algılanıp algılanmadığını döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca, Aralık içinde bazıları için **true** değerini döndürür `N`
+Şablon işlevi **`true`** yalnızca, Aralık içinde bazıları için döndürür `N`
 
 `[0, last - first)`, koşul `pred(*(first + N))` true 'dur.
 
@@ -511,11 +511,11 @@ Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu 
 Öğe değeri ile eşleşmesi gereken veya ikili koşul tarafından belirtilen öğe değeri ile koşulu karşılaması gereken değer.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-aralıkta belirtilen değere eşit veya eşdeğer bir öğe bulunursa **true** ; Aksi takdirde, **false**.
+**`true`** aralıkta belirtilen değere eşit veya eşdeğer bir öğe bulunursa; Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -650,7 +650,7 @@ Değerlerin Clamp *değerine* alt sınırı.
 Değerlerin Clamp *değerine* göre üst sınırı.
 
 *pred*\
-*Değeri* *alt* veya *üst*ile karşılaştırmak için kullanılan bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve ilki ikinciden küçükse **true** , aksi durumda **false**değerini döndürür.
+*Değeri* *alt* veya *üst*ile karşılaştırmak için kullanılan bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ilki ikinciden küçükse ve aksi takdirde, öğesini döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -862,7 +862,7 @@ v2 with shifted insert = ( 0 3 6 9 0 10 0 10 20 27 30 )
 
 ## <a name="copy_if"></a><a name="copy_if"></a>copy_if
 
-Bir dizi öğe içinde, belirtilen koşul için **doğru** olan öğeleri kopyalar.
+Bir dizi öğe içinde, belirtilen koşul için olan öğeleri kopyalar **`true`** .
 
 ```cpp
 template<class InputIterator, class OutputIterator, class UnaryPredicate>
@@ -896,7 +896,7 @@ Aralığın sonunu gösteren bir giriş yineleyicisi.
 Kopyalanmış öğelerin hedefini gösteren çıkış yineleyicisi.
 
 *pred*\
-Aralıktaki her öğenin test edileceği koşul. Bu koşul, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Aralıktaki her öğenin test edileceği koşul. Bu koşul, Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -1148,7 +1148,7 @@ Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *pred*\
-Bir öğenin sayılmaması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Bir öğenin sayılmaması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -1289,17 +1289,17 @@ Test edilecek ikinci aralıktaki ilk öğenin konumunu ele aldığı bir giriş 
 Test edilecek ikinci aralıktaki son öğeden bir önceki öğenin konumunu ele aldığı bir giriş Yineleyici.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-yalnızca, veya öğesi öğesine göre karşılaştırıldığı zaman ikili koşulun altında aralıklar özdeş veya eşdeğer ise **true** . Aksi takdirde, **false**.
+**`true`** Eğer ve yalnızca, öğe öğesi öğesine göre karşılaştırıldığı zaman ikili koşul altında aralıklar özdeş veya eşdeğer ise; Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Aranacak Aralık geçerli olmalıdır; tüm yineleyiciler başvurulmalıdır ve en son konuma artırılamadı tarafından ilk kez ulaşılabilir.
 
-İki Aralık eşitse, algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal olur. Aksi takdirde, işlev hemen **false**döndürür.
+İki Aralık eşitse, algoritmanın zaman karmaşıklığı, aralıkta bulunan öğelerin sayısında doğrusal olur. Aksi takdirde, işlev hemen döndürülür **`false`** .
 
 `operator==`Ne ne de Kullanıcı tanımlı koşul, işlenenleri arasında simetrik, yansımalı ve geçişli bir denklik ilişkisi uygulamak için gerekli değildir.
 
@@ -1367,7 +1367,7 @@ Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu 
 Sıralı aralıktaki aranmakta olan değer.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişkeni alır ve **`true`** tatmin edildiğinde ve **`false`** karşılanmadığı durumlarda döndürür.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -1768,7 +1768,7 @@ Arama için aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir yine
 Arama için aralıktaki son öğeden geçen bir konumu ele alarak ileri Yineleyici.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -1932,7 +1932,7 @@ Eşleştirilecek aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir
 Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -2070,11 +2070,11 @@ Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *pred*\
-Aranmakta olan öğenin yerine getirilmesi için koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin bir şekilde olmalıdır `bool pred(const T& arg);` ; burada, başvuru `T` `InputIterator` yapıldığında örtük olarak dönüştürülebilen bir tür olur. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
+Aranmakta olan öğenin yerine getirilmesi için koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve **`true`** memnun olursa veya karşılanmıyorsa ' i döndürür **`false`** . *Pred* imzası etkin bir şekilde olmalıdır `bool pred(const T& arg);` ; burada, başvuru `T` `InputIterator` yapıldığında örtük olarak dönüştürülebilen bir tür olur. **`const`** Anahtar sözcüğü yalnızca işlev nesnesinin veya lambda 'nin bağımsız değişkeni değiştirmemelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Koşul tarafından belirtilen koşulu karşılayan aralıktaki ilk öğeyi ifade eden bir giriş Yineleyici (koşul, **true**sonucunu vermez). Koşulu karşılayan bir öğe bulunmazsa, *son*döndürür.
+Koşul tarafından belirtilen koşulu karşılayan aralıktaki ilk öğeyi ifade eden bir giriş yineleyicisi (koşul sonuçları **`true`** ). Koşulu karşılayan bir öğe bulunmazsa, *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2192,11 +2192,11 @@ Aranacak aralıktaki ilk öğenin konumunu ele aldığı bir giriş Yineleyici.
 Aranacak aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *pred*\
-Aranan öğenin karşılanmadığı koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür. *Pred* imzası etkin bir şekilde olmalıdır `bool pred(const T& arg);` ; burada, başvuru `T` `InputIterator` yapıldığında örtük olarak dönüştürülebilen bir tür olur. **Const** anahtar sözcüğü yalnızca işlev nesnesinin veya lambda bağımsız değişkeni değiştirmemelidir.
+Aranan öğenin karşılanmadığı koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi veya [lambda ifadesi](../cpp/lambda-expressions-in-cpp.md) . Birli koşul tek bir bağımsız değişken alır ve **`true`** memnun olursa veya karşılanmıyorsa ' i döndürür **`false`** . *Pred* imzası etkin bir şekilde olmalıdır `bool pred(const T& arg);` ; burada, başvuru `T` `InputIterator` yapıldığında örtük olarak dönüştürülebilen bir tür olur. **`const`** Anahtar sözcüğü yalnızca işlev nesnesinin veya lambda 'nin bağımsız değişkeni değiştirmemelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Koşul tarafından belirtilen koşulu karşılamayan aralıktaki ilk öğeyi başvuran bir giriş Yineleyici (koşul **false**olarak sonuçlanır). Tüm öğeler koşulu karşılıyorsa (koşul her öğe için **true** sonucunu verir), *son*döndürür.
+Koşul tarafından belirtilen koşulu karşılamayan aralıktaki ilk öğeyi başvuran bir giriş yineleyicisi (koşul sonuçları içinde olur **`false`** ). Tüm öğeler koşulu karşılıyorsa (koşul **`true`** her öğe için sonuç verir), *son*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2598,11 +2598,11 @@ Kullanılacak yürütme ilkesi.
 İkinci art arda sıralanmış kaynak aralıklarının ikinci içindeki son öğeden geçen bir bir girdi yineleyicisi, ikincinin tüm öğelerinin birincinin içinde yer almayacağı için test edilir.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişkeni alır ve **`true`** tatmin edildiğinde ve **`false`** karşılanmadığı durumlarda döndürür.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-ilk sıralanmış Aralık ikinci sıralı aralıktaki tüm öğeleri içeriyorsa **true** ; Aksi takdirde, **false**.
+**`true`** ilk sıralanmış Aralık ikinci sıralı aralıktaki tüm öğeleri içeriyorsa; Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2816,7 +2816,7 @@ Art arda iki sıralı aralığın ikinci, tek bir aralığa göre birleştirilec
 Art arda iki sıralı aralığın ikinci, tek bir aralığa göre birleştirilmesi ve sıralanabilmesi için geçen öğeden geçen öğeden geçen bir çift yönlü Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2939,7 +2939,7 @@ vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )
 
 ## <a name="is_heap"></a><a name="is_heap"></a>is_heap
 
-Belirtilen aralıktaki öğeler bir yığın oluşturbiliyorsa, **true** döndürür.
+**`true`** Belirtilen aralıktaki öğelerin bir yığın oluştur, döndürür.
 
 ```cpp
 template<class RandomAccessIterator>
@@ -2979,11 +2979,11 @@ Bir yığını denetlemek için aralığın başlangıcını belirten rastgele b
 Bir aralığın sonunu gösteren bir rastgele erişim Yineleyici.
 
 *pred*\
-Order öğelerini test etmek için bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Order öğelerini test etmek için bir koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Belirtilen aralıktaki öğeler bir yığın oluşturacaksa **true** , değilse **false** döndürür.
+**`true`** Belirtilen aralıktaki öğelerin, yoksa bir yığın **`false`** oluşturduklarında, döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3049,7 +3049,7 @@ Belirtilen Aralık bir yığın veya bir ya da daha az öğe içeriyorsa *son* d
 
 ## <a name="is_partitioned"></a><a name="is_partitioned"></a>is_partitioned
 
-Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğeler **false**test eden herhangi bir öğeden önce geliyorsa **true** döndürür.
+**`true`** Bir koşulu test eden belirtilen aralıktaki tüm öğelerin **`true`** test eden herhangi bir öğeden önce gelip gelmediğini döndürür **`false`** .
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -3078,15 +3078,15 @@ Bir aralığın bir koşulu denetlemeye başladığı yeri gösteren bir giriş 
 Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 
 *pred*\
-Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğelerin, **yanlış**test eden herhangi bir öğeden önce geldiği ve aksi durumda **false**döndürdüğünden, **true** döndürür.
+**`true`** Bir koşulu test eden belirtilen aralıktaki tüm öğelerin **`true`** test eden herhangi bir öğeden önce geldiği **`false`** ve aksi takdirde döndürdüğü zaman döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca içindeki **true** tüm öğeler `[first, last)` *Pred*tarafından bölümlenmiş ise true değerini döndürür; diğer bir deyişle, ' deki tüm öğeler, `X` `[first, last)` `pred (X)` false olan tüm öğelerden önce oluşur `Y` `pred (Y)` . **false**
+Şablon işlevi **`true`** yalnızca içindeki tüm öğeler `[first, last)` *Pred*tarafından bölümlenmiş ise döndürür; diğer bir deyişle, ' deki tüm `X` öğeler `[first, last)` `pred (X)` , öğesinin tüm öğelerinden önce oluşur `Y` `pred (Y)` **`false`** .
 
 ## <a name="is_permutation"></a><a name="is_permutation"></a>is_permutation
 
@@ -3138,17 +3138,17 @@ Karşılaştırma için kullanılan ikinci bir aralığın ilk öğesine başvur
 Karşılaştırma için kullanılan ikinci bir aralığın son öğesinden bir geçen bir ileri Yineleyici.
 
 *pred*\
-Denklik için test eden ve **bool**döndüren bir koşul.
+Denklik için test eden ve bir döndüren koşul **`bool`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-aralıklar karşılaştırma koşuluna göre özdeş olacak şekilde yeniden düzenlenbiliyorsa, **true** . Aksi takdirde, **false**.
+**`true`** aralıklar, karşılaştırma koşuluna göre özdeş olacak şekilde yeniden düzenlenebilir olduğunda, Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
 `is_permutation`en kötü durumda büyük olasılıkla karmaşıklığa sahiptir.
 
-İlk şablon işlevi, tarafından belirlenen aralıkta olduğu gibi, *first2* adresinden başlayan aralıkta çok sayıda öğe olduğunu varsayar `[first1, last1)` . İkinci aralıkta daha fazla öğe varsa, bunlar yok sayılır; daha az varsa, tanımsız bir davranış meydana gelir. Üçüncü şablon işlevi (C++ 14 ve üzeri) Bu varsayımını yapmaz. Her ikisi de **true değeri** yalnızca, `[first1, last1)` x = = Y, *first2* veya ' den başlayarak Aralık içinde olduğu gibi, x = = Y için aynı aralıkta bulunan her bir x öğesi için de geçerlidir `[first2, last2)` . Burada, `operator==` işlenenleri arasında ikili bir karşılaştırma gerçekleştirmeniz gerekir.
+İlk şablon işlevi, tarafından belirlenen aralıkta olduğu gibi, *first2* adresinden başlayan aralıkta çok sayıda öğe olduğunu varsayar `[first1, last1)` . İkinci aralıkta daha fazla öğe varsa, bunlar yok sayılır; daha az varsa, tanımsız bir davranış meydana gelir. Üçüncü şablon işlevi (C++ 14 ve üzeri) Bu varsayımını yapmaz. Her ikisi de **`true`** yalnızca, `[first1, last1)` *first2* veya ' de ' den başlayarak Aralık içinde olduğu gibi x = = Y için aynı aralıkta bulunan her bir x öğesi için, her iki öğe için de döndürülür `[first2, last2)` . Burada, `operator==` işlenenleri arasında ikili bir karşılaştırma gerçekleştirmeniz gerekir.
 
 İkinci ve dördüncü şablon işlevleri aynı şekilde davranır, ancak `operator==(X, Y)` ile değiştirilir `Pred(X, Y)` . Doğru şekilde davranması için koşul simetrik, yansımalı ve geçişli olmalıdır.
 
@@ -3210,7 +3210,7 @@ int main()
 
 ## <a name="is_sorted"></a><a name="is_sorted"></a>is_sorted
 
-Belirtilen aralıktaki öğeler sıralanmış sıradüzende ise, **true** döndürür.
+**`true`** Belirtilen aralıktaki öğelerin sıralı sırada olup olmadığını döndürür.
 
 ```cpp
 template<class ForwardIterator>
@@ -3250,7 +3250,7 @@ Denetlenecek aralığın başlayacağı konumu gösteren bir ileri Yineleyici.
 Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
 *pred*\
-İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür. Bu, ile aynı görevi gerçekleştirir `operator<` .
+İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ya da döndürür **`false`** . Bu, ile aynı görevi gerçekleştirir `operator<` .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3262,7 +3262,7 @@ Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
 `ForwardIterator`Belirtilen aralıktan sıralanmış sırada olan son öğeye ayarlanmış bir döndürür.
 
-İkinci sürüm, belirtilen iki öğe sıralanmış sırada olduğunda **true değeri** döndüren bir karşılaştırma işlevi nesnesi sağlamanıza olanak sağlar ve aksi takdirde **yanlış** olur.
+İkinci sürüm, belirtilen iki öğe sıralı sırada olduğunda döndürülen bir karşılaştırma işlevi nesnesi sağlamanıza olanak tanır **`true`** ve **`false`** Aksi takdirde.
 
 ```cpp
 template<class ForwardIterator>
@@ -3302,7 +3302,7 @@ Denetlenecek aralığın nerede başlayacağını gösteren bir ileriye doğru y
 Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
 *pred*\
-İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+İki öğe arasında bir sıra belirlenmesi için sınanacak koşul. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -3526,11 +3526,11 @@ Karşılaştırılacak ikinci aralıktaki ilk öğenin konumunu ele almak için 
 Karşılaştırılan ikinci aralıktaki son öğeden sonraki konumu ele aldığı bir giriş Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişkeni alır ve **`true`** tatmin edildiğinde ve **`false`** karşılanmadığı durumlarda döndürür.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-ilk Aralık, ikinci aralıktan sözcüıgrafik küçükse **true** ; Aksi halde **yanlış**.
+**`true`** ilk Aralık, ikinci aralıktan sözcüıgrafik olarak küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3540,7 +3540,7 @@ Sıralar arasında bir lexicografik karşılaştırması, onları öğesine gör
 
 - Hiçbir inede bulunmadı, ancak bir dizide diğerinin daha fazla öğesi vardır ve daha kısa bir sıra daha uzun bir sıra daha küçüktür olarak kabul edilir.
 
-- Herhangi bir inede bulunmadı ve diziler aynı sayıda öğeye sahip ve bu nedenle sıralar eşitse ve Karşılaştırmanın sonucu **false**.
+- Hiçbir inede bulunmadı ve diziler aynı sayıda öğeye sahip ve bu nedenle sıralar eşit ve Karşılaştırmanın sonucu **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -3668,7 +3668,7 @@ Bir ileriye doğru yineleyici, aranacak aralıktaki son öğeden sonraki konumu 
 Düzenli aralıktaki ilk konumu veya olası ilk konumu aranmakta olan değer.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -3802,7 +3802,7 @@ Bir yığına dönüştürülecek aralıktaki ilk öğenin konumunu ele alarak r
 Bir yığına dönüştürülecek aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3901,7 +3901,7 @@ Karşılaştırılacak nesneleri içeren Başlatıcı listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`max`Algoritma parametre olarak geçirilme sırasında olağandışı bir şekilde yapılır. Çoğu C++ Standart Kitaplığı algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Bir dizi öğe üzerinde çalışan bir işleve ihtiyacınız varsa, bunun yerine [max_element](algorithm-functions.md#max_element) kullanın. Visual Studio 2017, initializer_list alan aşırı yüklemelerin üzerinde **constexpr** 'yi sunar.
+`max`Algoritma parametre olarak geçirilme sırasında olağandışı bir şekilde yapılır. Çoğu C++ Standart Kitaplığı algoritmaları, konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen bir dizi öğe üzerinde çalışır. Bir dizi öğe üzerinde çalışan bir işleve ihtiyacınız varsa, bunun yerine [max_element](algorithm-functions.md#max_element) kullanın. Visual Studio 2017 **`constexpr`** , initializer_list alan aşırı yüklemeleri mümkün.
 
 ### <a name="example"></a>Örnek
 
@@ -4113,7 +4113,7 @@ En büyük öğe için aranacak aralıktaki ilk öğenin konumunu ele alarak ile
 En büyük öğe için Aranmak üzere aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -4288,7 +4288,7 @@ Art arda iki sıralı kaynak aralığının ikinci kısmında son öğeden geçe
 İkinci kaynak aralıklarının tek bir sıralanmış aralıkta birleştirileceği hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , değilse **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -4677,7 +4677,7 @@ En küçük öğe için aranacak aralıktaki ilk öğenin konumunu ele alarak il
 En küçük öğe için Aranmak üzere aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , değilse **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -4841,7 +4841,7 @@ Bir aralığın başlangıcını gösteren bir ileri Yineleyici.
 Bir aralığın sonunu gösteren bir ileri Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve ilki ikinciden küçükse **true** , aksi takdirde **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve **`true`** ilki ikinciden küçükse ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -5003,7 +5003,7 @@ Test edilecek ikinci aralıktaki ilk öğenin konumunu ele aldığı bir giriş 
 Test edilecek ikinci aralıktaki son öğeden bir önceki öğenin konumunu ele aldığı bir giriş Yineleyici.
 
 *pred*\
-Her aralıktaki geçerli öğeleri karşılaştıran ve eşdeğer olup olmadığını belirleyen Kullanıcı tanımlı koşul işlevi nesnesi. Memnun olmadığında **true** , **false** değeri döndürür.
+Her aralıktaki geçerli öğeleri karşılaştıran ve eşdeğer olup olmadığını belirleyen Kullanıcı tanımlı koşul işlevi nesnesi. Karşılanıp karşılanmadığı durumlarda geri döner **`true`** **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -5206,11 +5206,11 @@ Aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 Çift yönlü bir yineleyici, aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-lexıgrafiksel bir sonraki permütasyon varsa ve aralığın orijinal sıralamasını değiştirse **doğru** ; Aksi takdirde **yanlış**, bu durumda sıralama lexıgrafiksel en küçük permütasyon 'e dönüştürülür.
+**`true`** lexıgrafiksel bir sonraki permütasyon varsa ve aralığın orijinal sıralamasını değiştirdiyseniz; Aksi takdirde **`false`** , sıralama lexıgrafiksel en küçük permütasyon 'e dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5408,7 +5408,7 @@ Bölümün sınırında doğru sıralanabilmesi için öğenin konumunu ele alan
 Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişkeni alır ve **`true`** tatmin edildiğinde ve **`false`** karşılanmadığı durumlarda döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5488,7 +5488,7 @@ int main() {
 
 ## <a name="none_of"></a><a name="none_of"></a>none_of
 
-Verilen aralıktaki öğeler arasında hiçbir zaman bir koşul mevcut olmadığında **true** döndürür.
+**`true`** Verilen aralıktaki öğeler arasında bir koşul hiçbir zaman mevcut olmadığında döndürür.
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
@@ -5517,15 +5517,15 @@ Bir koşul için bir dizi öğeyi denetlemeye nereden başlayacağını belirten
 Bir öğe aralığının sonunu gösteren bir giriş Yineleyici.
 
 *pred*\
-Sınanacak koşul. Bu, koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Sınanacak koşul. Bu, koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
-Koşul, belirtilen aralıkta en az bir kez saptanmamışsa **true** , koşul algılanırsa **false** değerini döndürür.
+**`true`** Koşulun belirtilen aralıkta en az bir kez algılanıp algılanmadığını ve koşulun algılanıp algılanmadığını döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi yalnızca, **true** `N` Aralık içinde, `[0, last - first)` koşul `pred(*(first + N))` her zaman **false**olduğunda true döndürür.
+Şablon işlevi yalnızca, **`true`** `N` Aralık içinde, `[0, last - first)` koşulun `pred(*(first + N))` her zaman olduğu durumlarda döndürür **`false`** .
 
 ## <a name="partial_sort"></a><a name="partial_sort"></a>partial_sort
 
@@ -5576,7 +5576,7 @@ Sıralama yapılacak alt aralıktaki son öğeden bir önceki konumu ele alarak 
 Kısmen sıralanacak aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5714,7 +5714,7 @@ Sıralanmış hedef aralıktaki ilk öğenin konumunu ele alarak rastgele erişi
 Sıralanmış hedef aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -5833,7 +5833,7 @@ Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak çift yö
 Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak çift yönlü bir yineleyici.
 
 *pred*\
-Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -5890,7 +5890,7 @@ int main()
 
 ## <a name="partition_copy"></a><a name="partition_copy"></a>partition_copy
 
-, Koşulun bir hedefe **doğru** olması için ve koşulun **yanlış** olduğu bir diğerinin olduğu öğeleri kopyalar. Öğeler belirtilen bir aralıktan gelmelidir.
+Bir koşula ait olan öğeleri **`true`** ve koşulun başka bir hedefe olduğu öğeleri kopyalar **`false`** . Öğeler belirtilen bir aralıktan gelmelidir.
 
 ```cpp
 template<class InputIterator, class OutputIterator1, class OutputIterator2, class UnaryPredicate>
@@ -5929,7 +5929,7 @@ Bir aralığın sonunu gösteren bir giriş yineleyicisi.
 *Pred*kullanılarak test edilen bir koşul için yanlış döndüren öğeleri kopyalamak için kullanılan bir çıkış yineleyicisi.
 
 *pred*\
-Sınanacak koşul. Bu, test edilecek koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Sınanacak koşul. Bu, test edilecek koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5956,7 +5956,7 @@ Bir `ForwardIterator` koşulu denetlemek için aralığın başlangıcını beli
 Bir `ForwardIterator` aralığın sonunu gösteren bir.
 
 *pred*\
-Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **true** veya **false**değerini döndürür.
+Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gereken koşulu tanımlayan Kullanıcı tanımlı bir koşul işlevi nesnesi tarafından sağlanır. Birli koşul tek bir bağımsız değişken alır ve **`true`** ya da döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -5964,7 +5964,7 @@ Sınanacak koşul. Bu, aranmakta olan öğe tarafından yerine getirilmesi gerek
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `it` ' de false ' olan ilk yineleyiciyi bulur `[first, last)` `pred(*it)` . **false** Sıra, *Pred*tarafından sıralanmalıdır.
+Şablon işlevi `it` ' de ' deki ilk yineleyiciyi bulur `[first, last)` `pred(*it)` **`false`** . Sıra, *Pred*tarafından sıralanmalıdır.
 
 ## <a name="pop_heap"></a><a name="pop_heap"></a>pop_heap
 
@@ -5992,7 +5992,7 @@ Yığın içindeki ilk öğenin konumunu ele alarak rastgele erişimli bir yinel
 Yığın içindeki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6101,11 +6101,11 @@ Aralıktaki ilk öğenin konumunu gösteren çift yönlü bir yineleyici.
 Çift yönlü bir yineleyici, aralıktaki son öğeden geçmiş bir konuma işaret ediyor.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-lexıgrafik önceki permütasyon varsa ve aralığın orijinal sıralamasını değiştirse **doğru** ; Aksi takdirde **yanlış**, bu durumda sıralama lexıgrafiksel en büyük PERMÜTASYONA dönüştürülür.
+**`true`** lexıgrafiksel önceki permütasyon varsa ve aralığın orijinal sıralamasını değiştirmediyse; Aksi takdirde **`false`** , sıralama lexıgrafiksel en büyük PERMÜTASYONA dönüştürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6276,7 +6276,7 @@ Yığın içindeki ilk öğenin konumunu ele alarak rastgele erişimli bir yinel
 Bir yığına dönüştürülecek aralıktaki son öğeden geçmiş bir konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7643,7 +7643,7 @@ Eşleştirilecek aralıktaki ilk öğenin konumunu ele alarak ileriye doğru bir
 Bir ileri Yineleyici, eşleştirilecek aralıktaki son öğeden sonraki konumu ele alıyor.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 *Arayıcının*\
 Aranacak kalıbı ve kullanılacak arama algoritmasını kapsülleyen Arayıcının. Aramacılar hakkında daha fazla bilgi için bkz. [default_searcher Class](default-searcher-class.md), [boyer_moore_horspool_searcher Class](boyer-moore-horspool-searcher-class.md)ve [boyer_moore_searcher sınıfı](boyer-moore-searcher-class.md).
@@ -7815,7 +7815,7 @@ Aranmakta olan alt dizinin boyutu.
 Aranan dizideki öğelerin değeri.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -7975,7 +7975,7 @@ Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının 
 İki kaynak aralığının iki kaynak aralığının farkını temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -8177,7 +8177,7 @@ Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının 
 İki kaynak aralığının iki kaynak aralığının kesişimini temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -8375,7 +8375,7 @@ Art arda iki sıralı kaynak aralığının ikinci ve iki kaynak aralığının 
 İki kaynak aralığının iki kaynak aralığının simetrik farkını temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış yineleyicisi.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -8577,7 +8577,7 @@ Art arda iki sıralı kaynak aralığının ikincisine göre son öğeden geçen
 İki kaynak aralığının iki kaynak aralığın birleşimini temsil eden tek bir sıralanmış aralığa Birleşik olarak bulunacağı, hedef aralıktaki ilk öğenin konumunu ele aldığı çıkış Yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve ilk öğe ikinci öğeden küçük olduğunda **true** , aksi durumda **false** döndürmelidir.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** ilk öğe ikinci öğeden küçük olduğunda ve **`false`** Aksi halde döndürmelidir.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -8785,7 +8785,7 @@ Sıralanacak aralıktaki ilk öğenin konumunu ele alarak rastgele erişimli bir
 Sıralanacak aralıktaki son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Bu ikili koşul iki bağımsız değişken alır ve iki bağımsız değişken sıradaysa **true** , aksi takdirde **false** döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir. Daha fazla bilgi için bkz. [algoritmalar](algorithms.md).
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Bu ikili koşul iki bağımsız değişkeni alır ve **`true`** iki bağımsız değişken sırayla ve **`false`** Aksi takdirde öğesini döndürür. Bu karşılaştırıcı işlevi, dizideki öğe çiftlerine katı bir zayıf sıralama getirmelidir. Daha fazla bilgi için bkz. [algoritmalar](algorithms.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8889,7 +8889,7 @@ Hedef yığında ilk öğenin konumunu ele alarak rastgele erişimli bir yineley
 Hedef yığında son öğeden sonraki konumu ele alarak rastgele erişimli bir yineleyici.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Karşılaştırma koşulu iki bağımsız değişkeni alır ve **`true`** tatmin edildiğinde ve **`false`** karşılanmadığı durumlarda döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8994,7 +8994,7 @@ Bölümlendirilmek üzere aralıktaki ilk öğenin konumunu ele alarak çift yö
 Bölümlendirilmek üzere aralıktaki son öğeden geçmiş bir konumu ele alarak çift yönlü bir yineleyici.
 
 *pred*\
-Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve memnun olursa **true** , aksi takdirde **false** döndürür.
+Bir öğe sınıflandırılabildiğinde karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. Birli koşul tek bir bağımsız değişken alır ve **`true`** memnun olursa veya karşılanmıyorsa ' i döndürür **`false`** .
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -9095,7 +9095,7 @@ Sıralanacak aralıktaki ilk öğenin konumunu ele alarak çift yönlü bir yine
 Sıralanacak aralıktaki son öğeden bir tane olan konumu ele alarak çift yönlü bir yineleyici.
 
 *pred*\
-Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Sıralamada birbirini izleyen öğeler tarafından karşılanması gereken karşılaştırma ölçütünü tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9557,7 +9557,7 @@ Yinelenen kaldırma için Taranacak aralıktaki ilk öğenin konumunu ele alarak
 Yinelenen kaldırma için taranacak olan aralıktaki son öğeden bir önceki konumu ele alarak ileriye doğru bir yineleyici.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -9713,7 +9713,7 @@ Kaynak aralıktaki kopyalanacak son öğeden bir önceki konumu ele alarak ileri
 Bir çıkış yineleyicisi, bir kopyayı ardışık yinelemeler kaldırılmış şekilde alan hedef aralıktaki ilk öğenin konumunu ele alıyor.
 
 *pred*\
-İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+İki öğenin eşdeğer olarak alınması durumunda karşılanması gereken koşulu tanımlayan Kullanıcı tanımlı koşul işlevi nesnesi. İkili koşul iki bağımsız değişkeni alır ve **`true`** memnun olmadığında ve **`false`** ne zaman karşılanmamış olarak döner.
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -9832,7 +9832,7 @@ Aranacak aralıktaki son öğeden geçen bir konum.
 Sıralanmış aralıktaki, döndürülen Yineleyici tarafından belirtilen öğenin değeri ile aşılması gereken değer.
 
 *pred*\
-Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı karşılaştırma koşulu işlev nesnesi. Karşılaştırma koşulu iki bağımsız değişken alır ve memnun olmadığında **true** ve **false** değeri döndürür.
+Bir öğenin diğerinden küçük olduğu anlamlı olduğunu tanımlayan Kullanıcı tanımlı karşılaştırma koşulu işlev nesnesi. Karşılaştırma koşulu iki bağımsız değişkeni alır ve **`true`** tatmin edildiğinde ve **`false`** karşılanmadığı durumlarda döndürür.
 
 ### <a name="return-value"></a>Döndürülen değer
 

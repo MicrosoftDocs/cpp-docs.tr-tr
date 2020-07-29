@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3538
 ms.assetid: ef3698a5-7356-4c62-b9af-5d3a4baed958
-ms.openlocfilehash: d1bd287c6b7e0b07938db55c282c69cd00fd25df
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 290faa1a227920cd46f32a4adf0dd6a6f3687c6d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761549"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233372"
 ---
 # <a name="compiler-error-c3538"></a>Derleyici hatası C3538
 
@@ -21,11 +21,11 @@ Bir bildirim listesindeki tüm tanımlanmış değişkenler aynı türde çözü
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Listedeki tüm `auto` bildirimlerinin aynı türde olduğundan emin olun.
+1. **`auto`** Listedeki tüm bildirimlerin aynı türde olduğundan emin olun.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki deyimler C3538 yield. Her bir ifade birden çok değişken bildirir, ancak `auto` anahtar sözcüğünün her kullanımı aynı tür olarak çözümlenmez.
+Aşağıdaki deyimler C3538 yield. Her bir ifade birden çok değişken bildirir, ancak **`auto`** anahtar sözcüğünün her kullanımı aynı tür olarak çözümlenmez.
 
 ```cpp
 // C3538.cpp

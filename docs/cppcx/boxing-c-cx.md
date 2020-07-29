@@ -2,16 +2,16 @@
 title: Kutulama (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-ms.openlocfilehash: 90c5af31efc6523683227dbf54c85390bc98510a
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 59c7f8ec56a912ed993316fba093b87bd85e16b1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740674"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233541"
 ---
 # <a name="boxing-ccx"></a>Kutulama (C++/CX)
 
-*Kutulama* , değişken türü olarak [Platform:: Object ^](../cppcx/platform-object-class.md) ' i alan bir yönteme geçirildiğinde, [Windows:: Foundation::D atetime](/uwp/api/windows.foundation.datetime)gibi bir değer türü değişkeni veya bir temel skaler `int`tür (bir başvuru sınıfında) sarmalandır .
+*Kutulama* , [Windows:: Foundation::D atetime](/uwp/api/windows.foundation.datetime)gibi bir değer türü değişkeni ya da **`int`** değişken, giriş türü olarak [Platform:: Object ^](../cppcx/platform-object-class.md) alan bir yönteme geçirildiğinde bir tür temel skaler türü sarmalama.
 
 ## <a name="passing-a-value-type-to-an-object-parameter"></a>Bir nesne ^ parametresine değer türü geçirme
 
@@ -19,13 +19,13 @@ ms.locfileid: "70740674"
 
 [!code-cpp[cx_boxing#01](../cppcx/codesnippet/CPP/cx_boxing/class1.cpp#01)]
 
-### <a name="using-platformiboxt-to-support-nullable-value-types"></a>Nullable değer türlerini desteklemek için Platform\<:: ibox T > kullanma
+### <a name="using-platformiboxt-to-support-nullable-value-types"></a>\<T>Nullable değer türlerini desteklemek Için Platform:: IBox kullanma
 
-C#ve Visual Basic Nullable değer türleri kavramını destekler. /CX C++içinde, null yapılabilir değer türü `Platform::IBox<T>` parametrelerini destekleyen ortak yöntemleri açığa çıkarmak için türünü kullanabilirsiniz. Aşağıdaki örnek, bir C++ C# çağıran bağımsız değişkenlerden biri için null geçirdiğinde null döndüren bir/CX ortak yöntemi gösterir.
+C# ve Visual Basic Nullable değer türleri kavramını destekler. C++/CX ' te, `Platform::IBox<T>` null yapılabilir değer türü parametrelerini destekleyen ortak yöntemleri açığa çıkarmak için türünü kullanabilirsiniz. Aşağıdaki örnek, bir C# çağıranı bağımsız değişkenlerden biri için null geçirdiğinde null döndüren bir C++/CX ortak yöntemi gösterir.
 
 [!code-cpp[cx_boxing#02](../cppcx/codesnippet/CPP/cx_boxing/class1.h#02)]
 
-C# Xaml istemcisinde şu şekilde kullanabilirsiniz:
+C# XAML istemcisinde bunu şöyle kullanabilirsiniz:
 
 ```
 
@@ -40,5 +40,5 @@ C# Xaml istemcisinde şu şekilde kullanabilirsiniz:
 
 [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Atama (C++/CX)](../cppcx/casting-c-cx.md)<br/>
-[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[C++/CX dil başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Ad alanı başvurusu](../cppcx/namespaces-reference-c-cx.md)

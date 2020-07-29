@@ -38,12 +38,12 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], destroy
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
-ms.openlocfilehash: b55a7ec92787cb6b3103bf71b65d137d24ffff04
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 452a6bdc0382af4c9d01921c51dbaa0e00ccdcb2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617582"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87205008"
 ---
 # <a name="allocator_base-class"></a>allocator_base Sınıfı
 
@@ -85,8 +85,8 @@ class allocator_base
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[_Charalloc](#charalloc)|**Char**türünde bir dizi için depolamayı ayırır.|
-|[_Chardealloc](#chardealloc)|**Char**türünde öğeleri içeren dizi için depolamayı boşaltır.|
+|[_Charalloc](#charalloc)|Bir dizi türü için depolama ayırır **`char`** .|
+|[_Chardealloc](#chardealloc)|Türündeki öğeleri içeren dizi için depolamayı boşaltır **`char`** .|
 |[adrestir](#address)|Değeri belirtilen bir nesnenin adresini bulur.|
 |[allocate](#allocate)|En az bazı sayıda öğe depolamak için yeterince büyük bir bellek bloğu ayırır.|
 |[oluşturma](#construct)|Belirtilen bir değer ile başlatılan belirli bir adreste belirli bir nesne türü oluşturur.|
@@ -102,7 +102,7 @@ class allocator_base
 
 ## <a name="allocator_base_charalloc"></a><a name="charalloc"></a>allocator_base:: _Charalloc
 
-**Char**türünde bir dizi için depolamayı ayırır.
+Bir dizi türü için depolama ayırır **`char`** .
 
 ```cpp
 char *_Charalloc(size_type count);
@@ -124,7 +124,7 @@ Bu üye işlevi, yeniden bağlama Derlenemeyen bir derleyici ile derlendikleri z
 
 ## <a name="allocator_base_chardealloc"></a><a name="chardealloc"></a>allocator_base:: _Chardealloc
 
-**Char**türünde öğeleri içeren dizi için depolamayı boşaltır.
+Türündeki öğeleri içeren dizi için depolamayı boşaltır **`char`** .
 
 ```cpp
 void _Chardealloc(void* ptr, size_type count);
@@ -139,7 +139,7 @@ void _Chardealloc(void* ptr, size_type count);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, yeniden bağlama Derlenemeyen bir derleyici ile derlendikleri zaman kapsayıcı tarafından kullanılır. `_Chardealloc`Eşitleme filtresinin işlevini çağırarak Kullanıcı tanımlı ayırıcıyı uygular `deallocate` . İşaretçi PTR, `_Charalloc` `*this` aynı boyut ve türden bir dizi nesnesi ayırarak, buna eşit olarak karşılaştırdığı bir ayırıcı nesnesi için çağrısı tarafından daha önce döndürülmüş olmalıdır. `_Chardealloc`hiçbir koşulda özel durum oluşturmaz.
+Bu üye işlevi, yeniden bağlama Derlenemeyen bir derleyici ile derlendikleri zaman kapsayıcı tarafından kullanılır. `_Chardealloc`Eşitleme filtresinin işlevini çağırarak Kullanıcı tanımlı ayırıcıyı uygular `deallocate` . İşaretçi PTR, `_Charalloc` **`*this`** aynı boyut ve türden bir dizi nesnesi ayırarak, buna eşit olarak karşılaştırdığı bir ayırıcı nesnesi için çağrısı tarafından daha önce döndürülmüş olmalıdır. `_Chardealloc`hiçbir koşulda özel durum oluşturmaz.
 
 ## <a name="allocator_baseaddress"></a><a name="address"></a>allocator_base:: adres
 

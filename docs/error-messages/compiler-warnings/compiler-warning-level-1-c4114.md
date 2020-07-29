@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4114
 ms.assetid: 3983e1c6-e8bb-46dc-8894-e1827db48797
-ms.openlocfilehash: 5662dba4339765db27d225eff2ad382ed56396ac
-ms.sourcegitcommit: 0cfc43f90a6cc8b97b24c42efcf5fb9c18762a42
+ms.openlocfilehash: 8d2b0339ff3cce9a68dce57a5f2b4efac076c5c2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73626292"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233320"
 ---
 # <a name="compiler-warning-level-1-c4114"></a>Derleyici Uyarısı (düzey 1) C4114
 
 aynı tür niteleyicisi birden fazla kez kullanıldı
 
-Bir tür bildirimi veya tanımı birden çok kez bir tür niteleyicisi (**const**, **volatile**, **imzalanmış**veya **imzasız**) kullanır. Bu, Microsoft uzantıları (/Ze) ile bir uyarı ve ANSI uyumluluğu (/Za) altında bir hata oluşmasına neden olur.
+Bir tür bildirimi veya tanımı bir tür niteleyicisi ( **`const`** ,, **`volatile`** **`signed`** veya) birden **`unsigned`** çok kez kullanır. Bu, Microsoft uzantıları (/Ze) ile bir uyarı ve ANSI uyumluluğu (/Za) altında bir hata oluşmasına neden olur.
 
 Aşağıdaki örnek C4114 oluşturur:
 

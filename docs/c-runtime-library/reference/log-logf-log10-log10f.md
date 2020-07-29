@@ -48,12 +48,12 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-ms.openlocfilehash: ce01a16e173ba3afb7ad8a0d55303559519fe19e
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: ddfe0198ab83f72868f383d6c35f040415893ad4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507046"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218604"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
@@ -86,7 +86,7 @@ Logaritmanın bulunduğu değer.
 
 **Günlük** işlevleri, başarılı olursa *x* 'in doğal logaritmasını ( *e*tabanı) döndürür. **Log10** işlevleri, 10 tabanında logaritmasını döndürür. *X* negatifse, bu işlevler varsayılan olarak sonsuz (IND) döndürür. *X* 0 ise sonsuz (INF) döndürür.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|_DOMAIN|
 |± 0|SıFıR bölme|_SING|
@@ -96,7 +96,7 @@ Logaritmanın bulunduğu değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long Double** değerleri alıp döndüren **log** ve **log10** aşırı yüklerini çağırabilirsiniz. C programında, **log** ve **log10** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, bir veya değerleri alıp döndüren **günlük** ve **log10** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **log** ve **log10** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

@@ -33,18 +33,18 @@ helpviewer_keywords:
 - normf function
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-ms.openlocfilehash: 8deaa07d984a3840c73e594535ffffc9078d4716
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 38e7283ca5acd5571589d3ef0b19c626806e4bca
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951312"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234061"
 ---
 # <a name="norm-normf-norml"></a>norm, normf, norml
 
 Karmaşık bir sayının kare boyutunu alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double norm( _Dcomplex z );
@@ -59,7 +59,7 @@ long double norm( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,15 +68,15 @@ Karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** veya **_lcomplex** değerlerini alan ve **float** ya da **Long Double** değerlerini döndüren **norm** aşırı yüklerini çağırabilirsiniz. C programında, **norm** her zaman bir **_dcomplex** değeri alır ve bir **Double** değeri döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** veya **_Lcomplex** değerlerini alan ve döndüren veya değer döndüren **norm** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **norm** her zaman bir **_Dcomplex** değeri alır ve bir değer döndürür **`double`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**norm**, **normf**, **NORML**|\<karmaşık. h >|\<karmaşık. h >|
+|**norm**, **normf**, **NORML**|\<complex.h>|\<complex.h>|
 
-**_Fcomplex**, **_Dcomplex**ve **_lcomplex** türleri, uygulanmayan yerel C99 türlerinin, sırasıyla **float _complex**, **Double _complex**ve **Long Double _complex**değerlerinin Microsoft 'a özgü eşdeğerlerine sahiptir.  Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_Fcomplex**, **_Dcomplex**ve **_Lcomplex** türler, uygulanmayan yerel C99 türlerinin (sırasıyla **float _Complex**, **çift _Complex**ve **uzun çift _Complex**) Microsoft 'a özgü eşdeğerlerine sahiptir.  Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

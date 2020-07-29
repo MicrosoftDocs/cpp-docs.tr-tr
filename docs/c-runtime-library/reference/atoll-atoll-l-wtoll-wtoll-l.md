@@ -41,18 +41,18 @@ helpviewer_keywords:
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-ms.openlocfilehash: 89a4d94a98e58f4ef5489554e02866a8471ade20
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f18fb618909b2dfd4bcd1b4d759fe7a895724896
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913517"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218721"
 ---
 # <a name="atoll-_atoll_l-_wtoll-_wtoll_l"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 
-Bir dizeyi **uzun** **uzun** tamsayıya dönüştürür.
+Dizeyi bir **`long long`** tamsayıya dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long long atoll(
@@ -76,12 +76,12 @@ long long _wtoll_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her işlev, giriş karakterlerinin sayı olarak yorumlanarak üretilen **uzun** **uzun** değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **aücretli** için dönüş değeri 0 ' dır.
+Her işlev **`long long`** , giriş karakterlerinin sayı olarak yorumlanarak üretilen değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, **aücretli** için dönüş değeri 0 ' dır.
 
 Büyük pozitif tamsayı değerleriyle taşma için, **aücretli** **LLONG_MAX**döndürür ve büyük negatif tamsayı değerleriyle taşma için **LLONG_MIN**döndürür.
 
@@ -89,7 +89,7 @@ Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçiri
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir karakter dizesini **uzun** **uzun** bir tamsayı değerine dönüştürür.
+Bu işlevler bir karakter dizesini bir **`long long`** tamsayı değerine dönüştürür.
 
 Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
 
@@ -117,8 +117,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Çalıştırmasını|Gerekli başlık|
 |--------------|---------------------|
-|**aücretli**, **_atoll_l**|\<Stdlib. h>|
-|**_wtoll**, **_wtoll_l**|\<Stdlib. h> veya \<wchar. h>|
+|**aücretli**, **_atoll_l**|\<stdlib.h>|
+|**_wtoll**, **_wtoll_l**|\<stdlib.h> veya \<wchar.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -173,8 +173,8 @@ Overflow condition occurred.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

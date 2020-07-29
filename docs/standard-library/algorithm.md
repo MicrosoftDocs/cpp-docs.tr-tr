@@ -8,18 +8,18 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: d36ee5ea0d38455b52cb988dc30b13d47be16e53
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a2a48eec2ed75fffd711a8704cb8c896f8ee7242
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623841"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87205541"
 ---
 # <a name="ltalgorithmgt"></a>&lt;algoritmalar&gt;
 
 Algoritmalar gerçekleştiren C++ standart kitaplık kapsayıcı şablonu işlevlerini tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 (see relevant links below for specific algorithm syntax)
@@ -49,13 +49,13 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |||
 |-|-|
 |[adjacent_find](algorithm-functions.md#adjacent_find)|Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.|
-|[all_of](algorithm-functions.md#all_of)|Verilen aralıktaki her bir öğede bir koşul olduğunda **true** döndürür.|
-|[any_of](algorithm-functions.md#any_of)|Bir koşul, belirtilen öğe aralığında en az bir kez olduğunda **true** döndürür.|
+|[all_of](algorithm-functions.md#all_of)|**`true`** Verilen aralıktaki her bir öğede bir koşul varsa döndürür.|
+|[any_of](algorithm-functions.md#any_of)|**`true`** Belirtilen öğe aralığında bir koşul en az bir kez olduğunda döndürür.|
 |[binary_search](algorithm-functions.md#binary_search)|Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığını ya da bir ikili koşula göre belirtilen anlamda ona eşdeğer bir öğe olup olmadığını sınar.|
 |[Clamp](algorithm-functions.md#clamp)||
 |[kopya](algorithm-functions.md#copy)|Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.|
 |[copy_backward](algorithm-functions.md#copy_backward)|Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.|
-|[copy_if](algorithm-functions.md#copy_if)|Belirli bir koşul için **doğru** test eden bir aralıktaki tüm öğeleri kopyalayın|
+|[copy_if](algorithm-functions.md#copy_if)|Belirtilen bir koşul için test edilen belirli bir aralıktaki tüm öğeleri Kopyala **`true`**|
 |[copy_n](algorithm-functions.md#copy_n)|Belirtilen sayıda öğeyi kopyalar.|
 |[biriktirme](algorithm-functions.md#count)|Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.|
 |[count_if](algorithm-functions.md#count_if)|Değerleri belirtilen bir koşulla eşleşen bir aralıktaki öğelerin sayısını döndürür.|
@@ -70,16 +70,16 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |[find_if_not](algorithm-functions.md#find_if_not)|Bir koşulu karşılamayan belirtilen aralıktaki ilk öğeyi döndürür.|
 |[for_each](algorithm-functions.md#for_each)|Bir aralıktaki ileriye doğru sıradaki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.|
 |[for_each_n](algorithm-functions.md#for_each_n)||
-|[oluştur](algorithm-functions.md#generate)|Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.|
+|[üretecek](algorithm-functions.md#generate)|Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.|
 |[generate_n](algorithm-functions.md#generate_n)|Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki belirtilen öğe sayısına atar ve birinin son atanan değere geçirdiği konuma döner.|
 |[içermektedir](algorithm-functions.md#includes)|Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.|
 |[inplace_merge](algorithm-functions.md#inplace_merge)|Ardışık iki sıralanmış aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
-|[is_heap](algorithm-functions.md#is_heap)|Belirtilen aralıktaki öğeler bir yığın oluşturbiliyorsa, **true** döndürür.|
-|[is_heap_until](algorithm-functions.md#is_heap_until)|Belirtilen Aralık son öğeye kadar bir yığın alıyorsa **true** değerini döndürür.|
-|[is_partitioned](algorithm-functions.md#is_partitioned)|Bir koşul için **doğru** test eden belirtilen aralıktaki tüm öğeler **false**test eden herhangi bir öğeden önce geliyorsa **true** döndürür.|
+|[is_heap](algorithm-functions.md#is_heap)|**`true`** Belirtilen aralıktaki öğelerin bir yığın oluştur, döndürür.|
+|[is_heap_until](algorithm-functions.md#is_heap_until)|**`true`** Belirtilen aralığın son öğe kadar bir yığın olarak form halinde olup olmadığını döndürür.|
+|[is_partitioned](algorithm-functions.md#is_partitioned)|**`true`** Bir koşulu test eden belirtilen aralıktaki tüm öğelerin **`true`** test eden herhangi bir öğeden önce gelip gelmediğini döndürür **`false`** .|
 |[is_permutation](algorithm-functions.md#is_permutation)|Belirli bir aralıktaki öğelerin geçerli bir permütasyon yapıp olmadığını belirler.|
-|[is_sorted](algorithm-functions.md#is_sorted)|Belirtilen aralıktaki öğeler sıralanmış sıradüzende ise, **true** döndürür.|
-|[is_sorted_until](algorithm-functions.md#is_sorted_until)|Belirtilen aralıktaki öğeler sıralanmış sıradüzende ise, **true** döndürür.|
+|[is_sorted](algorithm-functions.md#is_sorted)|**`true`** Belirtilen aralıktaki öğelerin sıralı sırada olup olmadığını döndürür.|
+|[is_sorted_until](algorithm-functions.md#is_sorted_until)|**`true`** Belirtilen aralıktaki öğelerin sıralı sırada olup olmadığını döndürür.|
 |[iter_swap](algorithm-functions.md#iter_swap)|Belirtilen yineleyicilerin bir çifti tarafından başvurulan iki değeri birbiriyle değiştirir.|
 |[lexicographical_compare](algorithm-functions.md#lexicographical_compare)|Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.|
 |[lower_bound](algorithm-functions.md#lower_bound)|Sıralı bir aralıkta belirtilen değere eşit ya da daha büyük bir değere sahip ilk öğenin konumunu bulur, burada sıralama kriteri bir ikili koşula göre belirtilebilir.|
@@ -95,12 +95,12 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |[&lt;alg &gt; Taşı](algorithm-functions.md#alg_move)|Belirtilen aralıkla ilişkili öğeleri taşı.|
 |[move_backward](algorithm-functions.md#move_backward)|Bir yineleyicinin öğelerini diğerine taşır. Hareket belirli bir aralıktaki son öğeyle başlar ve söz konusu aralıktaki ilk öğeyle biter.|
 |[next_permutation](algorithm-functions.md#next_permutation)|Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.|
-|[none_of](algorithm-functions.md#none_of)|Verilen aralıktaki öğeler arasında hiçbir zaman bir koşul mevcut olmadığında **true** döndürür.|
+|[none_of](algorithm-functions.md#none_of)|**`true`** Verilen aralıktaki öğeler arasında bir koşul hiçbir zaman mevcut olmadığında döndürür.|
 |[nth_element](algorithm-functions.md#nth_element)|Aralıktaki sıranın *n*. öğesini doğru bir şekilde bulur ve bu sayede dizideki tüm öğelerin bu değerden küçük veya ona eşit olması ve dizide izleyen tüm öğelerin bu değerden büyük veya ona eşit olması için bir dizi öğeyi bölümler.|
 |[partial_sort](algorithm-functions.md#partial_sort)|Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.|
 |[partial_sort_copy](algorithm-functions.md#partial_sort_copy)|Öğeleri bir kaynak aralığından bir hedef aralığa kopyalar, burada kaynak öğeleri daha küçük olana ya da belirtilen başka bir ikili koşula göre sıralanır.|
 |[bölümünüzün](algorithm-functions.md#partition)|Bir aralıktaki öğeleri, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.|
-|[partition_copy](algorithm-functions.md#partition_copy)|, Koşulun bir hedefe **doğru** olması için ve koşulun **yanlış** olduğu bir diğerinin olduğu öğeleri kopyalar. Öğeler belirtilen bir aralıktan gelmelidir.|
+|[partition_copy](algorithm-functions.md#partition_copy)|Bir koşula ait olan öğeleri **`true`** ve koşulun başka bir hedefe olduğu öğeleri kopyalar **`false`** . Öğeler belirtilen bir aralıktan gelmelidir.|
 |[partition_point](algorithm-functions.md#partition_point)|Koşulu karşılamayan verili aralıktaki ilk öğeyi döndürür. Öğeler koşulu karşılayanlar karşılamayanlardan önce gelecek şekilde sıralanır.|
 |[pop_heap](algorithm-functions.md#pop_heap)|En büyük öğeyi bir yığının önünden aralıktaki bir sonraki son konuma kaldırır ve ardından kalan öğelerden yeni bir yığın oluşturur.|
 |[prev_permutation](algorithm-functions.md#prev_permutation)|Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.|

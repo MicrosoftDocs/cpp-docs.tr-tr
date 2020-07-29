@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Microsoft::WRL::SimpleClassFactory class
 - Microsoft::WRL::SimpleClassFactory::CreateInstance method
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
-ms.openlocfilehash: 924b9d2c30f11e6f0444d9c647807f1c86dcc411
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 66794789e51a2635fae646cca49e4fae8385dfe0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373556"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211157"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
 
-Taban sınıf oluşturmak için temel bir mekanizma sağlar.
+Temel sınıf oluşturmak için temel bir mekanizma sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Base>
@@ -30,13 +30,13 @@ class SimpleClassFactory : public ClassFactory<>;
 ### <a name="parameters"></a>Parametreler
 
 *Temel*<br/>
-Taban sınıf.
+Temel sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Taban sınıf varsayılan bir oluşturucu sağlaması gerekir.
+Temel sınıf varsayılan bir Oluşturucu sağlamalıdır.
 
-Aşağıdaki kod örneği `SimpleClassFactory` [ActivatableClassWithFactoryEx](activatableclass-macros.md) makrosu ile nasıl kullanılacağını gösterir.
+Aşağıdaki kod örneği, `SimpleClassFactory` [ActivatableClassWithFactoryEx](activatableclass-macros.md) makrosu ile nasıl kullanılacağını göstermektedir.
 
 `ActivatableClassWithFactoryEx(MyClass, SimpleClassFactory, MyServerName);`
 
@@ -44,7 +44,7 @@ Aşağıdaki kod örneği `SimpleClassFactory` [ActivatableClassWithFactoryEx](a
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[SimpleClassFactory::CreateInstance Metodu](#createinstance)|Belirtilen arabirimin bir örneğini oluşturur.|
 
@@ -74,11 +74,11 @@ Aşağıdaki kod örneği `SimpleClassFactory` [ActivatableClassWithFactoryEx](a
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** module.h
+**Üstbilgi:** Module. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="simpleclassfactorycreateinstance-method"></a><a name="createinstance"></a>SimpleClassFactory::CreateInstance Yöntemi
+## <a name="simpleclassfactorycreateinstance-method"></a><a name="createinstance"></a>SimpleClassFactory:: CreateInstance yöntemi
 
 Belirtilen arabirimin bir örneğini oluşturur.
 
@@ -93,20 +93,20 @@ STDMETHOD( CreateInstance )(
 #### <a name="parameters"></a>Parametreler
 
 *pUnkOuter*<br/>
-Olmalı `nullptr`; aksi takdirde, iade değeri CLASS_E_NOAGGREGATION.
+Olmalıdır **`nullptr`** ; Aksi takdirde, dönüş değeri CLASS_E_NOAGGREGATION.
 
-SimpleClassFactory toplamayı desteklemez. Toplama desteklenir ve oluşturulan nesne bir agreganın parçası ysa, *pUnkOuter* toplamın `IUnknown` denetleme arabirimine işaretçi olur.
+SimpleClassFactory toplamayı desteklemiyor. Toplama destekleniyorsa ve oluşturulmakta olan nesne bir toplamanın parçasıysa, *pUnkOuter* toplamanın denetim arabirimine bir işaretçi olacaktır `IUnknown` .
 
-*Riid*<br/>
-Oluşturulacak nesnenin arabirim kimliği.
+*riıd*<br/>
+Oluşturulacak nesnenin arabirim KIMLIĞI.
 
-*ppvNesne*<br/>
-Bu işlem tamamlandığında, *riid* parametresi tarafından belirtilen nesnenin bir örneğini işaretçi.
+*ppvObject*<br/>
+Bu işlem tamamlandığında, *riıd* parametresi tarafından belirtilen nesnenin örneğine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`__WRL_STRICT__` Tanımlanırsa, sınıf şablonu parametresinde belirtilen taban sınıf [RuntimeClass'tan](runtimeclass-class.md)türetilmemişse veya ClassicCom veya WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değeriyle yapılandırılmamışsa bir ileri savunma hatası yayımlanır.
+`__WRL_STRICT__`Tanımlanmışsa, sınıf şablonu parametresinde belirtilen temel sınıf [RuntimeClass](runtimeclass-class.md)'dan türetilmemişse veya ClassicCom veya WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değeriyle yapılandırılmamışsa bir onaylama hatası yayınlanır.

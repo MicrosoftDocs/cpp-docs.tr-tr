@@ -1,66 +1,66 @@
 ---
 title: Ham işaretçiler (C++)
-description: C++'da ham işaretçiler nasıl kullanılır?
+description: C++ ' ta ham işaretçiler kullanma
 ms.date: 04/21/2020
 helpviewer_keywords:
 - pointers [C++]
 no-loc:
-- void
-- nullptr
-- const
-- char
-- new
-- delete
-ms.openlocfilehash: 8ba188154d7395ce7be3878fa9dbee2fde08a130
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+- ':::no-loc(void):::'
+- ':::no-loc(nullptr):::'
+- ':::no-loc(const):::'
+- ':::no-loc(char):::'
+- ':::no-loc(new):::'
+- ':::no-loc(delete):::'
+ms.openlocfilehash: 53679559888191fe7f2aad7cb5a70d607974ae96
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032102"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233658"
 ---
 # <a name="raw-pointers-c"></a>Ham işaretçiler (C++)
 
-*İşaretçi* bir değişken türüdür. Bellekte bir nesnenin adresini depolar ve bu nesneye erişmek için kullanılır. *Ham işaretçi,* kullanım ömrü akıllı işaretçi gibi kapsülleme nesnesi tarafından denetlenmeyen bir [işaretçidir.](smart-pointers-modern-cpp.md) Ham işaretçiye işaretçi olmayan başka bir değişkenin adresi atanabilir [nullptr](nullptr.md)veya 'nin değeri . Değer atanmamış bir işaretçi rasgele veri içerir.
+*İşaretçi* bir değişken türüdür. Bir nesnenin adresini bellekte depolar ve bu nesneye erişmek için kullanılır. *Ham işaretçi* , yaşam süresi [akıllı bir işaretçi](smart-pointers-modern-cpp.md)gibi bir Kapsülleyici nesne tarafından denetlenmeyen bir işaretçisidir. Bir ham işaretçiye başka bir işaretçi olmayan değişkenin adresi atanabilir veya bir değeri atanabilir [:::no-loc(nullptr):::](:::no-loc(nullptr):::.md) . Değer atanmamış bir işaretçi rastgele veri içeriyor.
 
-Bir işaretçi, işaret ettiği nesnenin değerini almak için de *başvurudan* ayrılabilir. *Üye erişim işleci,* bir nesnenin üyelerine erişim sağlar.
+Ayrıca, işaret ettiği nesnenin değerini almak için bir işaretçiye de *başvurulmalıdır* . *Üye erişim işleci* , bir nesnenin üyelerine erişim sağlar.
 
 ```cpp
-    int* p = nullptr; // declare pointer and initialize it
+    int* p = :::no-loc(nullptr):::; // declare pointer and initialize it
                       // so that it doesn't store a random address
     int i = 5;
     p = &i; // assign pointer to address of object
     int j = *p; // dereference p to retrieve the value at its address
 ```
 
-Bir işaretçi, yazılan bir nesneyi **void** veya . Bir program [bellekteki yığında](https://wikipedia.org/wiki/Heap) bir nesne ayırdığında, işaretçi biçiminde o nesnenin adresini alır. Bu tür işaretçiler, *işaretçilere sahip olmak*olarak adlandırılır. Sahip olunan bir işaretçi (veya bir kopyası), yığın ayrılan nesneyi artık gerekmediğinde açıkça serbest etmek için kullanılmalıdır. Bellek lerin serbest hale getirilmemesi bellek *sızıntısına*neden oluyor ve bu bellek konumunu makinedeki başka bir program için kullanılamaz hale getirir. Kullanılarak **new** ayrılan bellek (veya **delete** ** delete \[]** kullanılarak serbest bırakılmalıdır). Daha fazla bilgi için [ new bkz. delete ](new-and-delete-operators.md)
+Bir işaretçi, türü belirlenmiş bir nesneye veya öğesine işaret edebilir **`:::no-loc(void):::`** . Bir program bellekte [yığında](https://wikipedia.org/wiki/Heap) bir nesne ayırdığında, bu nesnenin adresini işaretçi biçiminde alır. Bu tür işaretçilere *sahip işaretçiler*denir. Artık gerekli olmadığında yığın tarafından ayrılan nesneyi açıkça serbest bırakmak için, sahip olan bir işaretçinin (veya bir kopyasının) kullanılması gerekir. Bellek *sızıntısına*neden olan belleği serbest bırakma başarısız olur ve bu bellek konumunu makinedeki başka bir program için kullanılamaz hale işler. Kullanılarak ayrılan bellek **`:::no-loc(new):::`** **`:::no-loc(delete):::`** (veya ** :::no-loc(delete)::: \[ ]**) kullanılarak serbest bırakılmalıdır. Daha fazla bilgi için bkz. [ :::no-loc(new)::: ve :::no-loc(delete)::: işleçleri](:::no-loc(new):::-and-:::no-loc(delete):::-operators.md).
 
 ```cpp
-    MyClass* mc = new MyClass(); // allocate object on the heap
+    MyClass* mc = :::no-loc(new)::: MyClass(); // allocate object on the heap
     mc->print(); // access class member
-    delete mc; // delete object (please don't forget!)
+    :::no-loc(delete)::: mc; // :::no-loc(delete)::: object (please don't forget!)
 ```
 
-Bir işaretçi (olarak **const** bildirilmemişse) bellekteki başka bir konumu işaret etmek için artımlı veya decremented olabilir. Bu işlem *işaretçi aritmetik*denir. C stili programlamada diziler deki veya diğer veri yapılarındaki öğeler üzerinde yeniden doğrulamak için kullanılır. İşaretçi **const** farklı bir bellek konumuna işaret etmek için yapılamaz ve bu anlamda bir [başvuruya](references-cpp.md)benzer. Daha fazla bilgi için [ const bkz.](const-and-volatile-pointers.md)
+Bir işaretçi (olarak bildirilirse **`:::no-loc(const):::`** ), bellekte başka bir konuma işaret etmek için arttırılır veya azaltılır. Bu işlem *işaretçi aritmetiği*olarak adlandırılır. Diziler veya diğer veri yapılarında öğeleri yinelemek için C stili programlamada kullanılır. **`:::no-loc(const):::`** Farklı bir bellek konumuna işaret etmek için bir işaretçi yapılamaz ve bu anlamlı bir [başvuruya](references-cpp.md)benzerdir. Daha fazla bilgi için bkz. [ :::no-loc(const)::: ve geçici işaretçiler](:::no-loc(const):::-and-volatile-pointers.md).
 
 ```cpp
     // declare a C-style string. Compiler adds terminating '\0'.
-    const char* str = "Hello world";
+    :::no-loc(const)::: :::no-loc(char):::* str = "Hello world";
 
-    const int c = 1;
-    const int* pconst = &c; // declare a non-const pointer to const int
-    const int c2 = 2;
-    pconst = &c2;  // OK pconst itself isn't const
-    const int* const pconst2 = &c;
-    // pconst2 = &c2; // Error! pconst2 is const.
+    :::no-loc(const)::: int c = 1;
+    :::no-loc(const)::: int* p:::no-loc(const)::: = &c; // declare a non-:::no-loc(const)::: pointer to :::no-loc(const)::: int
+    :::no-loc(const)::: int c2 = 2;
+    p:::no-loc(const)::: = &c2;  // OK p:::no-loc(const)::: itself isn't :::no-loc(const):::
+    :::no-loc(const)::: int* :::no-loc(const)::: p:::no-loc(const):::2 = &c;
+    // p:::no-loc(const):::2 = &c2; // Error! p:::no-loc(const):::2 is :::no-loc(const):::.
 ```
 
-64 bit işletim sistemlerinde, bir işaretçinin boyutu 64 bitdir. Bir sistemin işaretçi boyutu, ne kadar adreslenebilir belleğe sahip olabileceğini belirler. Bir işaretçinin tüm kopyaları aynı bellek konumuna işaret eder. İşaretçiler (referanslarla birlikte) C++'da daha büyük nesneleri işlevlere ve işlevlerden geçirmek için yaygın olarak kullanılır. Bunun nedeni, bir nesnenin adresini kopyalamak genellikle nesnenin tamamını kopyalamak yerine daha verimli olmasıdır. Bir işlev tanımlarken, nesneyi **const** değiştirmek için işlev niyetinde değilseniz işaretçi parametrelerini belirtin. Genel olarak, **const** başvuru, nesnenin değeri büyük olasılıkla olmadığı sürece nesneleri **nullptr** işlevlere geçirmek için tercih edilen yoldur.
+64 bit işletim sistemlerinde, bir işaretçinin boyutu 64 bittir. Sistemin işaretçi boyutu, ne kadar adreslenebilir bellek olduğunu belirler. Bir işaretçinin tüm kopyaları aynı bellek konumuna işaret noktasıdır. İşaretçiler (başvurularla birlikte), C++ ' da daha büyük nesneler ve işlevlere daha fazla nesne geçirmek için yaygın olarak kullanılır. Bunun nedeni genellikle nesnenin adresinin tüm nesneyi kopyalamaktan daha etkili olması. Bir işlevi tanımlarken, **`:::no-loc(const):::`** nesneyi değiştirmek için işlevi belirtmediğiniz sürece işaretçi parametreleri belirtin. Genel olarak, **`:::no-loc(const):::`** nesneler, nesne değeri belki de olabilir değilse nesneleri işlevlere geçirmek için tercih edilen yoldur **`:::no-loc(nullptr):::`** .
 
-[İşlevlere işaretçiler](#pointers_to_functions) işlevlerin diğer işlevlere geçirilmesini sağlar ve C stili programlamada "geri arama" için kullanılır. Modern C++, bu amaçla [lambda ifadelerini](lambda-expressions-in-cpp.md) kullanır.
+[Işlevlerin işaretçileri](#pointers_to_functions) , işlevlerin diğer işlevlere geçirilmesini sağlar ve C stili programlamada "geri aramalar" için kullanılır. Modern C++, bu amaçla [lambda ifadeleri](lambda-expressions-in-cpp.md) kullanır.
 
 ## <a name="initialization-and-member-access"></a>Başlatma ve üye erişimi
 
-Aşağıdaki örnek, ham bir işaretçiyi nasıl bildirecek, baş harfe bildirecek ve kullanacağınızı gösterir. Yığına ayrılan bir **new** nesneyi işaret etmek için başharflere para **delete** yla başharfe getirilmiştir ve bunu açıkça . Örnek, ham işaretçilerle ilişkili tehlikelerden birkaçını da gösterir. (Unutmayın, bu örnek C tarzı programlama değil, modern C++!)
+Aşağıdaki örnek, bir ham işaretçinin nasıl bildirilemeyeceğini, başlatılacağını ve kullanılacağını gösterir. **`:::no-loc(new):::`** Yığın üzerinde ayrılmış bir nesneyi işaret etmek üzere kullanılarak başlatılır ve bu, açıkça yapmanız gerekir **`:::no-loc(delete):::`** . Örnek, ham işaretçilerle ilişkili bazı tehlikeler de gösterilmektedir. (Bu örnek C stili bir programlama, modern C++ değil!) olduğunu unutmayın!)
 
 ```cpp
 #include <iostream>
@@ -71,11 +71,11 @@ class MyClass
 public:
     int num;
     std::string name;
-    void print() { std::cout << name << ":" << num << std::endl; }
+    :::no-loc(void)::: print() { std::cout << name << ":" << num << std::endl; }
 };
 
 // Accepts a MyClass pointer
-void func_A(MyClass* mc)
+:::no-loc(void)::: func_A(MyClass* mc)
 {
     // Modify the object that mc points to.
     // All copies of the pointer will point to
@@ -84,7 +84,7 @@ void func_A(MyClass* mc)
 }
 
 // Accepts a MyClass object
-void func_B(MyClass mc)
+:::no-loc(void)::: func_B(MyClass mc)
 {
     // mc here is a regular object, not a pointer.
     // Use the "." operator to access members.
@@ -98,8 +98,8 @@ void func_B(MyClass mc)
 int main()
 {
     // Use the * operator to declare a pointer type
-    // Use new to allocate and initialize memory
-    MyClass* pmc = new MyClass{ 108, "Nick" };
+    // Use :::no-loc(new)::: to allocate and initialize memory
+    MyClass* pmc = :::no-loc(new)::: MyClass{ 108, "Nick" };
 
     // Prints the memory address. Usually not what you want.
     std:: cout << pmc << std::endl;
@@ -133,24 +133,24 @@ int main()
     func_B(*pmc);
     pmc->print(); // "Erika, 3" (original not modified by function)
 
-    delete(pmc); // don't forget to give memory back to operating system!
-   // delete(pmc2); //crash! memory location was already deleted
+    :::no-loc(delete):::(pmc); // don't forget to give memory back to operating system!
+   // :::no-loc(delete):::(pmc2); //crash! memory location was already :::no-loc(delete):::d
 }
 ```
 
-## <a name="pointer-arithmetic-and-arrays"></a>İşaretçi aritmetik ve diziler
+## <a name="pointer-arithmetic-and-arrays"></a>İşaretçi aritmetik ve dizileri
 
-İşaretçiler ve diziler yakından ilişkilidir. Bir dizi bir işleve göre geçirildiğinde, ilk öğeye işaretçi olarak geçirilir. Aşağıdaki örnek, işaretçilerin ve dizilerin aşağıdaki önemli özelliklerini gösterir:
+İşaretçiler ve diziler yakından ilgilidir. Bir dizi değere göre bir işleve geçirildiğinde, ilk öğeye işaretçi olarak geçirilir. Aşağıdaki örnek, işaretçilerin ve dizilerin aşağıdaki önemli özelliklerini gösterir:
 
-- `sizeof` işleci, bir dizinin baytlarının toplam boyutunu döndürür
-- eleman sayısını belirlemek için, toplam baytları bir öğenin boyutuna bölmek
-- bir dizi bir işleve geçirildiğinde, işaretçi *türüne*
-- bir `sizeof` işaretçiye uygulandığında işleç işaretçi boyutunu, x86'da 4 bayt veya x64'te 8 bayt döndürür
+- **`sizeof`** işleci, bir dizinin bayt cinsinden toplam boyutunu döndürür
+- öğelerin sayısını öğrenmek için, toplam baytları bir öğe boyutuna bölün
+- bir dizi bir işleve geçirildiğinde bir işaretçi *türü olur*
+- **`sizeof`** bir işaretçiye uygulandığında operatör, x64 üzerinde 5 bayt veya 8 bayt üzerinde işaretçi boyutunu döndürür
 
 ```cpp
 #include <iostream>
 
-void func(int arr[], int length)
+:::no-loc(void)::: func(int arr[], int length)
 {
     // returns pointer size. not useful here.
     size_t test = sizeof(arr);
@@ -171,9 +171,9 @@ int main()
 }
 ```
 
-Bazı aritmetik işlemler,const işaretçilerde başka bir bellek konumuna işaret etmelerini sağlamak için kullanılabilir. İşaretçiler **++**, ve **+=** işleçler kullanılarak artımlı **-=** **--** ve kararnameler. Bu teknik diziler halinde kullanılabilir ve özellikle yazılmamış veri arabelleklerinde yararlıdır. A ** void ** (1 bayt) boyutuna **char** göre artımlı olur. Yazılan işaretçi, işaret ettiği türün boyutuna göre artış alar.
+Bazı aritmetik işlemler, :::no-loc(const)::: başka bir bellek konumuna işaret etmek için işaretçilerden farklı kullanılabilir. İşaretçiler artar ve **++** , **+=** , **-=** ve işleçleri kullanılarak azaltılır **--** . Bu teknik diziler için kullanılabilir ve özellikle türsüz verilerin arabelleklerinde faydalıdır. **:::no-loc(void):::\***, Bir **`:::no-loc(char):::`** (1 baytlık) boyutuna göre artırılır. Yazılı bir işaretçi, işaret ettiği türün boyutuyla artırılır.
 
-Aşağıdaki örnek, işaretçi aritmetik Windows'da bir bitmap tek tek piksel erişmek için nasıl kullanılabileceğini gösterir. Ve dereference **new** **delete** işlecinin kullanımına dikkat edin.
+Aşağıdaki örnek, Windows üzerindeki bir bit eşlemdeki tek tek piksellere erişmek için işaretçi aritmetiğinin nasıl kullanılabileceğini gösterir. **`:::no-loc(new):::`** Ve **`:::no-loc(delete):::`** ' nin ve başvuru işlecinin kullanımını dikkate alın.
 
 ```cpp
 #include <Windows.h>
@@ -192,8 +192,8 @@ int main()
     header.biCompression = BI_RGB;
     header.biSize = sizeof(BITMAPINFOHEADER);
 
-    constexpr int bufferSize = 30000;
-    unsigned char* buffer = new unsigned char[bufferSize];
+    :::no-loc(const):::expr int bufferSize = 30000;
+    unsigned :::no-loc(char):::* buffer = :::no-loc(new)::: unsigned :::no-loc(char):::[bufferSize];
 
     BITMAPFILEHEADER bf;
     bf.bfType = 0x4D42;
@@ -203,11 +203,11 @@ int main()
     bf.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER); //54
 
     // Create a gray square with a 2-pixel wide outline.
-    unsigned char* begin = &buffer[0];
-    unsigned char* end = &buffer[0] + bufferSize;
-    unsigned char* p = begin;
-    constexpr int pixelWidth = 3;
-    constexpr int borderWidth = 2;
+    unsigned :::no-loc(char):::* begin = &buffer[0];
+    unsigned :::no-loc(char):::* end = &buffer[0] + bufferSize;
+    unsigned :::no-loc(char):::* p = begin;
+    :::no-loc(const):::expr int pixelWidth = 3;
+    :::no-loc(const):::expr int borderWidth = 2;
 
     while (p < end)
     {
@@ -224,32 +224,32 @@ int main()
         {
             *p = 0xC3; // Gray
         }
-        p++; // Increment one byte sizeof(unsigned char).
+        p++; // Increment one byte sizeof(unsigned :::no-loc(char):::).
     }
 
     ofstream wf(R"(box.bmp)", ios::out | ios::binary);
 
-    wf.write(reinterpret_cast<char*>(&bf), sizeof(bf));
-    wf.write(reinterpret_cast<char*>(&header), sizeof(header));
-    wf.write(reinterpret_cast<char*>(begin), bufferSize);
+    wf.write(reinterpret_cast<:::no-loc(char):::*>(&bf), sizeof(bf));
+    wf.write(reinterpret_cast<:::no-loc(char):::*>(&header), sizeof(header));
+    wf.write(reinterpret_cast<:::no-loc(char):::*>(begin), bufferSize);
 
-    delete[] buffer; // Return memory to the OS.
+    :::no-loc(delete):::[] buffer; // Return memory to the OS.
     wf.close();
 }
 ```
 
-## <a name="opno-locvoid-pointers"></a>void* işaretçiler
+## <a name="no-locvoid-pointers"></a>:::no-loc(void):::* işaretçiler
 
-Yalnızca ham **void** bir bellek konumuna işaret etmek için bir işaretçi. Bazen işaretçileri kullanmak ** void ** gerekir, örneğin C++ kodu ile C işlevleri arasında geçiş yaparken.
+Bir işaretçi **`:::no-loc(void):::`** yalnızca ham bellek konumunu işaret eder. Bazen **:::no-loc(void):::\*** , örneğin C++ kodu ve C işlevleri arasında geçiş yaparken işaretçiler kullanılması gerekir.
 
-Bir yazılı işaretçi bir void işaretçiye atıldığında, bellek konumunun içeriği değişmez. Ancak, tür bilgileri kaybolur, böylece artış veya decrement işlemleri yapamazsınız. Bir bellek konumu, örneğin, tekrar `MyClass*` `void*` dan ve `MyClass*`geri döküm olabilir. Bu tür işlemler doğal olarak hataya açıktır ve hatalardan kaçınmak için büyük özen gerektirir. Modern C++ işaretçilerin void hemen hemen her koşulda kullanılmasını engeller.
+Belirlenmiş bir işaretçi bir :::no-loc(void)::: işaretçiye ayarlandığında, bellek konumunun içeriği değiştirilmez. Ancak, tür bilgileri kaybedilir, böylece artırma veya azaltma işlemleri yapamazsınız. Bir bellek konumu, örneğin, ve ' den ' A kadar arasında tür oluşturulabilir `MyClass*` **`:::no-loc(void):::*`** `MyClass*` . Bu gibi işlemler, doğal olarak hataya açıktır ve hatalara yönelik harika bir sorun olması gerekir :::no-loc(void)::: . Modern C++, :::no-loc(void)::: neredeyse tüm koşullarda işaretçiler etkilenmeden.
 
 ```cpp
 
 //func.c
-void func(void* data, int length)
+:::no-loc(void)::: func(:::no-loc(void):::* data, int length)
 {
-    char* c = (char*)(data);
+    :::no-loc(char):::* c = (:::no-loc(char):::*)(data);
 
     // fill in the buffer with data
     for (int i = 0; i < length; ++i)
@@ -264,7 +264,7 @@ void func(void* data, int length)
 
 extern "C"
 {
-    void func(void* data, int length);
+    :::no-loc(void)::: func(:::no-loc(void):::* data, int length);
 }
 
 class MyClass
@@ -272,35 +272,35 @@ class MyClass
 public:
     int num;
     std::string name;
-    void print() { std::cout << name << ":" << num << std::endl; }
+    :::no-loc(void)::: print() { std::cout << name << ":" << num << std::endl; }
 };
 
 int main()
 {
-    MyClass* mc = new MyClass{10, "Marian"};
-    void* p = static_cast<void*>(mc);
+    MyClass* mc = :::no-loc(new)::: MyClass{10, "Marian"};
+    :::no-loc(void):::* p = static_cast<:::no-loc(void):::*>(mc);
     MyClass* mc2 = static_cast<MyClass*>(p);
     std::cout << mc2->name << std::endl; // "Marian"
 
-    // use operator new to allocate untyped memory block
-    void* pvoid = operator new(1000);
-    char* pchar = static_cast<char*>(pvoid);
-    for(char* c = pchar; c < pchar + 1000; ++c)
+    // use operator :::no-loc(new)::: to allocate untyped memory block
+    :::no-loc(void):::* p:::no-loc(void)::: = operator :::no-loc(new):::(1000);
+    :::no-loc(char):::* p:::no-loc(char)::: = static_cast<:::no-loc(char):::*>(p:::no-loc(void):::);
+    for(:::no-loc(char):::* c = p:::no-loc(char):::; c < p:::no-loc(char)::: + 1000; ++c)
     {
         *c = 0x00;
     }
-    func(pvoid, 1000);
-    char ch = static_cast<char*>(pvoid)[0];
+    func(p:::no-loc(void):::, 1000);
+    :::no-loc(char)::: ch = static_cast<:::no-loc(char):::*>(p:::no-loc(void):::)[0];
     std::cout << ch << std::endl; // 'A'
-    operator delete(p);
+    operator :::no-loc(delete):::(p);
 }
 ```
 
 ## <a name="pointers-to-functions"></a><a name="pointers_to_functions"></a>İşlevlere işaretçiler
 
-C stili programlamada, işlev işaretçileri öncelikle işlevleri diğer işlevlere geçirmek için kullanılır. Bu teknik, arayan bir işlevin davranışını değiştirmeden özelleştirmesine olanak tanır. Modern C++'da [lambda ifadeleri](lambda-expressions-in-cpp.md) daha fazla tür güvenliği ve diğer avantajlarla aynı yeteneği sağlar.
+C stili programlamada, işlev işaretçileri birincil olarak işlevleri diğer işlevlere geçirmek için kullanılır. Bu teknik, çağıranın, bir işlevin davranışını değiştirmeden özelleştirmesini sağlar. Modern C++ ' da, [lambda ifadeleri](lambda-expressions-in-cpp.md) daha büyük tür güvenliği ve diğer avantajlar ile aynı özelliği sağlar.
 
-İşlev işaretçisi bildirimi, işaretli işlevin sahip olması gereken imzayı belirtir:
+Bir işlev işaretçisi bildirimi, işaret eden işlevin sahip olması gereken imzayı belirtir:
 
 ```cpp
 // Declare pointer to any function that...
@@ -309,14 +309,14 @@ C stili programlamada, işlev işaretçileri öncelikle işlevleri diğer işlev
 string (*g)(string a);
 
 // has no return value and no parameters
-void (*x)();
+:::no-loc(void)::: (*x)();
 
 // ...returns an int and takes three parameters
 // of the specified types
 int (*i)(int i, string s, double d);
 ```
 
-Aşağıdaki örnekte, `combine` parametre olarak a `std::string` kabul eden ve bir `std::string`. döndüren herhangi bir işlevi alan bir işlev gösterilmektedir. Geçirilen işleve bağlı `combine`olarak, bir dize hazırlar veya ekler.
+Aşağıdaki örnek, `combine` bir parametresi olarak alan ve döndüren bir işlevi gösterir `std::string` `std::string` . Öğesine geçirilen işleve bağlı olarak `combine` , bu ya da bir dize ekler veya ekler.
 
 ```cpp
 #include <iostream>
@@ -350,7 +350,7 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akıllı işaretçiler](smart-pointers-modern-cpp.md)
-[Indirection Operatör: *](indirection-operator-star.md)<br/>
+[Akıllı işaretçiler](smart-pointers-modern-cpp.md) 
+ [Yöneltme işleci: *](indirection-operator-star.md)<br/>
 [Address-of İşleci: &](address-of-operator-amp.md)</br>
-[C++'a tekrar hoş geldiniz](welcome-back-to-cpp-modern-cpp.md)
+[C++ ' a geri hoş geldiniz](welcome-back-to-cpp-modern-cpp.md)

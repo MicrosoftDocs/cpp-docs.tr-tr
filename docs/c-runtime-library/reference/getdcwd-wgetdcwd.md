@@ -40,18 +40,18 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-ms.openlocfilehash: 69e9d0b0eaa3a62d95ea602b68b5d1ad0df99e4a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c9ae07c5880cb86b0aafb0dc66a7c1ce3edcc9d8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919213"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218669"
 ---
 # <a name="_getdcwd-_wgetdcwd"></a>_getdcwd, _wgetdcwd
 
 Belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *_getdcwd(
@@ -79,7 +79,7 @@ Yol için depolama konumu veya **null**.
 **Null** belirtilirse, bu işlev, **malloc**kullanarak en az *maxlen* boyut arabelleği ayırır ve **_getdcwd** dönüş değeri ayrılan arabelleğin bir işaretçisidir. Arabellek, **serbest** çağırarak ve işaretçi geçirerek serbest bırakılabilirler.
 
 *maxlen*<br/>
-Yolun uzunluk üst sınırını belirten sıfır dışında pozitif bir tamsayı, **_getdcwd** için **char** ve **_wgetdcwd**için **wchar_t** .
+Yolun uzunluk üst sınırını ( **`char`** **_getdcwd** ve _wgetdcwd için karakter cinsinden belirten sıfır olmayan pozitif bir tamsayı **`wchar_t`** . **_wgetdcwd**
 
 *Maxlen* değeri sıfıra eşit veya daha küçükse, geçersiz parametre işleyicisi çağrılır. Daha fazla bilgi için bkz. [parametre doğrulama](../../c-runtime-library/parameter-validation.md).
 
@@ -91,7 +91,7 @@ Belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu temsil eden bi
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getdcwd** işlevi, belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır ve *arabelleğe*kaydeder. Geçerli çalışma dizini köke ayarlandıysa, dize bir ters eğik çizgiyle (\\) biter. Geçerli çalışma dizini kök dışında bir dizine ayarlandıysa, dize bir ters eğik çizgiyle değil, dizin adıyla biter.
+**_Getdcwd** işlevi, belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır ve *arabelleğe*kaydeder. Geçerli çalışma dizini köke ayarlandıysa, dize bir ters eğik çizgiyle ( \\ ) biter. Geçerli çalışma dizini kök dışında bir dizine ayarlandıysa, dize bir ters eğik çizgiyle değil, dizin adıyla biter.
 
 **_wgetdcwd** , **_getdcwd**geniş karakterli bir sürümüdür ve *arabellek* parametresi ve dönüş değeri geniş karakterli dizelerdir. Aksi takdirde, **_wgetdcwd** ve **_getdcwd** aynı şekilde davranır.
 
@@ -113,8 +113,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdcwd**|\<Direct. h>|
-|**_wgetdcwd**|\<Direct. h> veya \<wchar. h>|
+|**_getdcwd**|\<direct.h>|
+|**_wgetdcwd**|\<direct.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

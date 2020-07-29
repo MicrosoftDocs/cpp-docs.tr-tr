@@ -11,30 +11,30 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
-ms.openlocfilehash: 7f98667d3a771994d1b4e54b429f42cb566c102c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1173ad609a1b2c95d6cf118f4e2d5defeec5b9c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316034"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234347"
 ---
 # <a name="zcforscope-force-conformance-in-for-loop-scope"></a>/Zc:forScope (Döngü Kapsamında Uyumluluğu Zorla)
 
-Standart C++ davranışını uygulamak için kullanılan [için](../../cpp/for-statement-cpp.md) Microsoft uzantıları ile ([/Ze](za-ze-disable-language-extensions.md)).
+Microsoft uzantılarına sahip döngüler [için](../../cpp/for-statement-cpp.md) standart C++ davranışını uygulamak için kullanılır ([/ze](za-ze-disable-language-extensions.md)).
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Zc:forScope**[**-**]
+> **/Zc: forScope**[ **-** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart bir davranıştır izin vermek için bir **için** döngü Başlatıcısı Git kapsam dışına **için** döngü. Altında **/Zc:forScope-** ve [/Ze](za-ze-disable-language-extensions.md), **için** döngü başlatıcısı, yerel kapsama sonlandırılana kadar kapsam içinde kalır.
+Standart davranış, bir **`for`** döngünün başlatıcısının döngüden sonra kapsam dışına gitmesini sağlamak için kullanılır **`for`** . **/Zc: forScope-** ve [/ze](za-ze-disable-language-extensions.md)altında, **`for`** döngünün başlatıcısı yerel kapsam bitene kadar kapsamda kalır.
 
-**/ZC: forscope** seçeneği varsayılan olarak açıktır. **/ ZC: forscope** zaman etkilenmez [/ permissive-](permissive-standards-conformance.md) seçeneği belirtildi.
+**/Zc: forScope** seçeneği varsayılan olarak açık. **/Zc:** [/Permissive-](permissive-standards-conformance.md) seçeneği belirtildiğinde forScope etkilenmez.
 
-**/Zc:forScope-** seçeneği kullanım dışıdır ve gelecek sürümde kaldırılacak. Kullanım **/Zc:forScope-** kullanımdan kaldırma uyarısı D9035 oluşturur.
+**/Zc: forScope-** seçeneği kullanım dışıdır ve gelecek sürümlerde kaldırılır. **/Zc: forScope kullanımı-** kullanımdan kaldırma Uyarısı D9035 oluşturur.
 
-Altında aşağıdaki kodu derler **/Ze** ancak altında olmayan **/Za**:
+Aşağıdaki kod **/ze** altında derlenir ancak **/za**altında değildir:
 
 ```cpp
 // zc_forScope.cpp
@@ -51,21 +51,21 @@ int main() {
 }
 ```
 
-Kullanırsanız **/Zc:forScope-**, C4288 uyarı (varsayılan olarak kapalı) bir değişken, bir önceki kapsamındaki yapılan bildirimi nedeniyle kapsamları dahilinde olması durumunda oluşturulur. Bunu göstermek için kaldırma `//` bildirmek için örnek kod karakter `int i`.
+**/Zc: forScope-** kullanırsanız, bir değişken önceki bir kapsamda yapılan bir bildirim nedeniyle kapsam içinde olduğunda uyarı C4288 (varsayılan olarak kapalı) oluşturulur. Bunu göstermek için, `//` örnek kodda bildirmek üzere karakterleri kaldırın `int i` .
 
-Çalışma zamanı davranışını değiştirebilirsiniz **/ZC: forscope** kullanarak [uygun](../../preprocessor/conform.md) pragması.
+[Uygun](../../preprocessor/conform.md) pragmayı kullanarak **/Zc: forScope** öğesinin çalışma zamanı davranışını değiştirebilirsiniz.
 
-Kullanırsanız **/Zc:forScope-** varolan .pch dosyasını içeren bir proje, bir uyarı oluşturulduğu, **/Zc:forScope-** göz ardı edilir ve derleme, var olan .pch dosyaları kullanarak devam eder. Oluşturulan yeni .pch dosyası istiyorsanız kullanın [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](yc-create-precompiled-header-file.md).
+Varolan bir. pch dosyasına sahip bir projede **/Zc: forScope** kullanırsanız, bir uyarı oluşturulur, **/Zc: forScope-** yok sayılır ve derleme mevcut. pch dosyalarını kullanarak devam eder. Yeni bir. pch dosyası oluşturulmasını istiyorsanız [/Yıc (önceden derlenmiş üst bilgi dosyası oluştur)](yc-create-precompiled-header-file.md)seçeneğini kullanın.
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **dil** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **dil** özellik sayfasını seçin.
 
-1. Değiştirme **için döngü kapsamında uyumluluğu zorla** özelliği.
+1. **Döngü kapsamı Için zorla uygunluğu** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -74,4 +74,4 @@ Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standa
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>
-[/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)](za-ze-disable-language-extensions.md)<br/>
+[/Za,/Ze (dil uzantılarını devre dışı bırak)](za-ze-disable-language-extensions.md)<br/>

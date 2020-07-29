@@ -67,12 +67,12 @@ helpviewer_keywords:
 - fstrset function
 - _tcsset_l function
 ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
-ms.openlocfilehash: 304f0cf5929dcce68402dd2f7dc2ce3b28e36db9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 99cf969714115effcfd7f8f82b2247556d5dd110
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911120"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234009"
 ---
 # <a name="_strset-_strset_l-_wcsset-_wcsset_l-_mbsset-_mbsset_l"></a>_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 
@@ -81,7 +81,7 @@ Bir dizenin karakterlerini bir karaktere ayarlar. Bu işlevlerin daha güvenli s
 > [!IMPORTANT]
 > **_mbsset** ve **_mbsset_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *_strset(
@@ -121,7 +121,7 @@ Ayarlanacak null ile sonlandırılmış dize.
 *,*<br/>
 Karakter ayarı.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -130,7 +130,7 @@ Değiştirilen dizeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strset** işlevi, *Str* 'den *c*'ye dönüştürülen tüm karakterleri (yani Sonlandırıcı null karakteri hariç) **belirler.** **_wcsset** ve **_mbsset_l** , **_strset**geniş karakter ve çok baytlı karakter sürümleridir ve bağımsız değişkenlerin ve dönüş değerlerinin veri türleri buna göre farklılık gösterir. Bu işlevler, aynı şekilde davranır.
+**_Strset** işlevi, *Str* 'den *c*'ye dönüştürülüp tüm karakterleri (Sonlandırıcı null karakteri hariç) belirler **`char`** . **_wcsset** ve **_mbsset_l** , **_strset**geniş karakter ve çok baytlı karakter sürümleridir ve bağımsız değişkenlerin ve dönüş değerlerinin veri türleri buna göre farklılık gösterir. Bu işlevler, aynı şekilde davranır.
 
 **_mbsset** parametrelerini doğrular. *Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_Mbsset** **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. **_strset** ve **_wcsset** parametrelerini doğrulamaz.
 
@@ -152,11 +152,11 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strset**|\<String. h>|
-|**_strset_l**|\<Tchar. h>|
-|**_wcsset**|\<String. h> veya \<wchar. h>|
-|**_wcsset_l**|\<Tchar. h>|
-|**_mbsset**, **_mbsset_l**|\<mbstring. h>|
+|**_strset**|\<string.h>|
+|**_strset_l**|\<tchar.h>|
+|**_wcsset**|\<string.h> veya \<wchar.h>|
+|**_wcsset_l**|\<tchar.h>|
+|**_mbsset**, **_mbsset_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -187,8 +187,8 @@ After:  *******************************
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)<br/>
 [memset, wmemset](memset-wmemset.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

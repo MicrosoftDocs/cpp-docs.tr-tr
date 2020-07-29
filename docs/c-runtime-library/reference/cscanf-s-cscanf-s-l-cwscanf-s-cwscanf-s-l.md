@@ -51,21 +51,21 @@ helpviewer_keywords:
 - _tcscanf_s function
 - tcscanf_s_l function
 ms.assetid: 9ccab74d-916f-42a6-93d8-920525efdf4b
-ms.openlocfilehash: be9d2b0af461b25f5c4db37bb084afcf822480ea
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a869ae4ab1b5f81c4198f620662604b79f19c2ab
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938523"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234243"
 ---
 # <a name="_cscanf_s-_cscanf_s_l-_cwscanf_s-_cwscanf_s_l"></a>_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 
-Konsoldan biçimlendirilen verileri okur. [_Cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md) 'in bu daha güvenli SÜRÜMLERI, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
+Konsoldan biçimlendirilen verileri okur. [_Cscanf, _cscanf_l, _cwscanf _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md) daha güvenli SÜRÜMLERI, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri içerir.
 
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _cscanf_s(
@@ -90,7 +90,7 @@ int _cwscanf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
@@ -107,12 +107,12 @@ Bu işlevler, parametrelerini doğrular. *Biçim* null işaretçisiyse, bu Işle
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cscanf_s** işlevi, verileri doğrudan konsolundan *bağımsız değişken*tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki*bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) işlevi için *Biçim* parametresiyle aynı form ve işleve sahiptir. **_Cscanf_s** normalde giriş karakterini yankılarken, son çağrı **_ungetch**ise bunu yapmaz.
+**_Cscanf_s** işlevi, verileri doğrudan konsolundan *bağımsız değişken*tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki*bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) işlevi için *Biçim* parametresiyle aynı form ve işleve sahiptir. **_Cscanf_s** normalde giriş karakterini yankılarken, son çağrı **_ungetch**, bunu yapmaz.
 
-**Scanf** ailesindeki işlevlerin diğer güvenli sürümleri gibi, **_cscanf_s** ve **_cswscanf_s** , alan karakterleri için **c**, **c**, **s**, **s**ve **[** için boyut bağımsız değişkenlerini gerektirir. Daha fazla bilgi için bkz. [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
+**Scanf** ailesindeki işlevlerin diğer güvenli sürümleri gibi **_cscanf_s** ve **_cswscanf_s** , **c**, **c**, **s**, **s**ve **[** tür alanı karakterleri için boyut bağımsız değişkenleri gerektirir. Daha fazla bilgi için bkz. [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> Boyut parametresi, **size_t**değil, **işaretsiz**türündedir.
+> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -127,8 +127,8 @@ Bu işlevler, parametrelerini doğrular. *Biçim* null işaretçisiyse, bu Işle
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cscanf_s**, **_cscanf_s_l**|\<conio. h >|
-|**_cwscanf_s**, **_cwscanf_s_l**|\<conio. h > veya \<wchar. h >|
+|**_cscanf_s**, **_cscanf_s_l**|\<conio.h>|
+|**_cwscanf_s**, **_cwscanf_s_l**|\<conio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

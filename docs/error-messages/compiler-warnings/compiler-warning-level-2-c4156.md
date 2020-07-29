@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4156
 ms.assetid: 9adf3acb-c0fe-42a8-a4db-5822b1493f77
-ms.openlocfilehash: b9add4af0fddf8d68bbba0293530f2bb0ce3800d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 279ab5d9de738fb4e2aa6dece4bb16353eca031b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162094"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87206490"
 ---
 # <a name="compiler-warning-level-2-c4156"></a>Derleyici Uyarısı (düzey 2) C4156
 
 ' DELETE ' deyiminin dizi biçimi kullanılmadan bir dizi ifadesinin silinmesi; dizi formu değiştirildi
 
-**Delete** 'in dizi olmayan biçimi bir diziyi silemez. Derleyici, **Delete** öğesini dizi formuna çevirdi.
+Dizi olmayan form **`delete`** bir diziyi silemez. Derleyici **`delete`** dizi formuna çevrilir.
 
 Bu uyarı yalnızca Microsoft uzantıları (/Ze) altında oluşur.
 

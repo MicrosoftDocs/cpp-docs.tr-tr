@@ -47,18 +47,18 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-ms.openlocfilehash: fe362099c63bbaa533532fd3a1a6567ac0173916
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d923fe3a8c23c1c5e983d8766835af2c266b17d2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911396"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218578"
 ---
 # <a name="logb-logbf-logbl-_logb-_logbf"></a>logb, logbf, logbl, _logb, _logbf
 
 Kayan nokta bağımsız değişkeninin üs değerini ayıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double logb(
@@ -86,7 +86,7 @@ float _logbf(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -97,11 +97,11 @@ Kayan nokta değeri.
 
 **Logb** işlevleri, *x* sonsuz aralıkla gösterilse de kayan *nokta bağımsız değişkeninin*üstel değerini ayıklar. *X* bağımsız değişkeninin Normalleştirilmemiş olması halinde normalleştirilmiş gibi davranır.
 
-C++ aşırı yüklemeye izin verdiğinden,, **float** veya **Long** **Double** değerleri alıp döndüren **logb** 'nin aşırı yüklerini çağırabilirsiniz. C programında **logb** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, alan veya değer döndüren **logb** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **logb** her zaman alır ve döndürür **`double`** .
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Yok|_DOMAIN|
+|± QNAN, IND|Hiçbiri|_DOMAIN|
 |± 0|SıFıR bölme|_SING|
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
@@ -110,8 +110,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_logb**|\<float. h>|
-|**logb**, **logbf**, **logbl**, **_logbf**|\<Math. h>|
+|**_logb**|\<float.h>|
+|**logb**, **logbf**, **logbl**, **_logbf**|\<math.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -121,5 +121,5 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](frexp.md)<br/>

@@ -38,18 +38,18 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: ff74ae93f01c7e8588a0eff1f48d3f6f0e6d5e81
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 511d67586a7adc2b26cc6acbdf39beff78f9c38a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210775"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218331"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 
 [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)) arabirimi için bir uygulama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -58,8 +58,8 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `IDBInitializeImpl`türetilir.
+*T*<br/>
+Sınıfınız, öğesinden türetilir `IDBInitializeImpl` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -145,7 +145,7 @@ DWORD m_dwStatus;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bayraklar veri kaynağı nesnesi için çeşitli özniteliklerin durumunu belirtir veya belirtir. Aşağıdaki **enum** değerlerinden bir veya daha fazlasını içerir:
+Bu bayraklar veri kaynağı nesnesi için çeşitli özniteliklerin durumunu belirtir veya belirtir. Aşağıdaki değerlerden bir veya daha fazlasını içerir **`enum`** :
 
 ```cpp
 enum DATASOURCE_FLAGS {
@@ -174,4 +174,4 @@ CUtlPropInfo< T >* m_pCUtlPropInfo;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

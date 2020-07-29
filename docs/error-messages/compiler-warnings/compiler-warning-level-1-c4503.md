@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4503
 ms.assetid: 7c5a98ae-5b6d-41d8-b881-12d3ffd5e392
-ms.openlocfilehash: 9077c448f3b5f1d70d18047b91dcf300e606c91f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1d3af2b5629906679db46f6f669084c11a41f7ca
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186556"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233255"
 ---
 # <a name="compiler-warning-level-1-c4503"></a>Derleyici Uyarısı (düzey 1) böylelikle C4503
 
@@ -23,7 +23,7 @@ Bu derleyici uyarısı artık kullanılmıyor ve Visual Studio 2017 ve üzeri de
 
 Düzenlenmiş ad, derleyici sınırından (4096) daha uzun ve kesildi. Bu uyarıyı ve kesilmesini önlemek için, kullanılan tanımlayıcıların veya ad uzunluklarının sayısını azaltın. Derleyici sınırından daha uzun olan düzenlenmiş adların bir karması uygulanmış ve ad çarpışmanın tehlike altında olmadığı.
 
-Visual Studio 'nun daha eski bir sürümünü kullanırken, kodunuz şablonlarda görsel olarak özelleştirilmiş şablonlar içerdiğinde bu uyarı verilebilir. Örneğin, haritalar Haritası ( C++ standart kitaplıktan). Bu durumda, tür tanımları ' nı eşlemeyi içeren bir tür (örneğin bir **Yapı**) yapabilirsiniz.
+Visual Studio 'nun daha eski bir sürümünü kullanırken, kodunuz şablonlarda görsel olarak özelleştirilmiş şablonlar içerdiğinde bu uyarı verilebilir. Örneğin, haritalar Haritası (C++ standart kitaplığından). Bu durumda, tür tanımları ' ı eşlemeyi içeren bir tür ( **`struct`** Örneğin,) yapabilirsiniz.
 
 Ancak, kodunuzu yeniden yapılandırmak istemediğinize karar verebilirsiniz.  Böylelikle C4503 üreten bir uygulama teslim etmek mümkündür, ancak kesilen bir sembolle bağlantı zamanı hataları alırsanız, hata içindeki sembolün türünü belirlemek daha zor olabilir. Hata ayıklama da daha zor olabilir; hata ayıklayıcının sembol adı tür adı ile difficultly eşlemesi olabilir. Ancak programın doğruluğu, kesilen adından etkilenmez.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-ms.openlocfilehash: 8c373ad1eba07337dc970cb84202370c147560dd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 333f76c2f570832c9d08a7ad666f2540cca37f05
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80163916"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233346"
 ---
 # <a name="compiler-warning-level-1-c4091"></a>Derleyici Uyarısı (düzey 1) C4091
 
@@ -21,7 +21,7 @@ Derleyici, kullanıcının bildirildiği bir değişkene sahip olduğu, ancak de
 
 ## <a name="example"></a>Örnek
 
-Kullanıcı tanımlı tür bildiriminin başındaki `__declspec` özniteliği, bu tür değişkeni için geçerlidir. C4091, hiçbir değişkenin bildirilmemiş olduğunu gösterir. Aşağıdaki örnek C4091 oluşturur.
+**`__declspec`** Kullanıcı tanımlı tür bildiriminin başındaki bir öznitelik, bu tür değişkeni için geçerlidir. C4091, hiçbir değişkenin bildirilmemiş olduğunu gösterir. Aşağıdaki örnek C4091 oluşturur.
 
 ```cpp
 // C4091.cpp

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - reinterpret_cast keyword [C++]
 ms.assetid: eb3283c7-7f88-467e-affd-407d37b46d6c
-ms.openlocfilehash: 34c2fcb0e1f7f4df4e207d1737afc9c42e011feb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 33da7427adeb0a0cade2a369664d7fbd34790681
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188291"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233606"
 ---
 # <a name="reinterpret_cast-operator"></a>reinterpret_cast İşleci
 
@@ -25,17 +25,17 @@ reinterpret_cast < type-id > ( expression )
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Reinterpret_cast** işlecinin kötüye kullanımı kolayca güvenli bir şekilde yapılabilir. İstenen dönüştürme doğal olarak alt düzey değilse, diğer atama işleçlerinden birini kullanmalısınız.
+İşlecin kötüye kullanılması **`reinterpret_cast`** kolayca güvenli bir şekilde yapılabilir. İstenen dönüştürme doğal olarak alt düzey değilse, diğer atama işleçlerinden birini kullanmalısınız.
 
-**Reinterpret_cast** işleci `int*``char*` gibi dönüştürmeler için veya doğal olarak güvenli olmayan `Unrelated_class*``One_class*` için kullanılabilir.
+**`reinterpret_cast`** İşleci, **`char*`** doğal olarak **`int*`** `One_class*` güvenli olmayan, veya için gibi dönüştürmeler için kullanılabilir `Unrelated_class*` .
 
-**Reinterpret_cast** sonucu, özgün türüne geri dönüştürülenden başka hiçbir şey için güvenli bir şekilde kullanılamaz. Diğer kullanımlar, en iyi, taşınabilir olmayan.
+Bir öğesinin sonucu, **`reinterpret_cast`** özgün türüne dönüştürülmesinden başka hiçbir şey için güvenli bir şekilde kullanılamaz. Diğer kullanımlar, en iyi, taşınabilir olmayan.
 
-**Reinterpret_cast** işleci **const**, **volatile**veya **__unaligned** özniteliklerinin üzerine atanamaz. Bu öznitelikleri kaldırma hakkında bilgi için bkz. [Const_cast işleci](../cpp/const-cast-operator.md) .
+**`reinterpret_cast`** İşleç **`const`** , **`volatile`** , veya **`__unaligned`** özniteliklerini alamaz. Bu öznitelikleri kaldırma hakkında bilgi için bkz. [Const_cast işleci](../cpp/const-cast-operator.md) .
 
-**Reinterpret_cast** işleci, null işaretçi değerini hedef türün null işaretçi değerine dönüştürür.
+**`reinterpret_cast`** İşleç, null işaretçi değerini hedef türün null işaretçi değerine dönüştürür.
 
-**Reinterpret_cast** pratik kullanımı, bir değeri bir dizine eşleyen bir karma işlevdir, bu da iki farklı değerin aynı dizinle seyrek bir şekilde bitmesi için bir değer kullanır.
+' Nin pratik kullanımı, bir **`reinterpret_cast`** değeri bir dizinle eşleştiren, iki farklı değerin aynı dizinle nadiren bir şekilde bir arada bulunduğu bir şekilde bir dizin ile eşlendiği bir karma işlevdir.
 
 ```cpp
 #include <iostream>
@@ -77,9 +77,9 @@ Output:
 64829
 ```
 
-**Reinterpret_cast** , işaretçinin bir integral türü olarak işlenmesine izin verir. Sonuç daha sonra, benzersiz bir dizin (yüksek oranda olasılığa göre benzersiz) oluşturmak için bit kaydırılacağı ve kendisi ile XORed. Sonra bu dizin, işlevin dönüş türüne standart bir C stili atama ile kesilir.
+, **`reinterpret_cast`** İşaretçinin bir integral türü olarak işlenmesine izin verir. Sonuç daha sonra, benzersiz bir dizin (yüksek oranda olasılığa göre benzersiz) oluşturmak için bit kaydırılacağı ve kendisi ile XORed. Sonra bu dizin, işlevin dönüş türüne standart bir C stili atama ile kesilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Atama İşleçleri](../cpp/casting-operators.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Atama Işleçleri](../cpp/casting-operators.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

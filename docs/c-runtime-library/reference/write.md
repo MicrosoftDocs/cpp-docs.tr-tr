@@ -28,18 +28,18 @@ helpviewer_keywords:
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-ms.openlocfilehash: b56022f39264a200bf6fa550bffa8e5e0ed73cf0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 02864a797a64e6c1b1d836edf4e435cdb43d0932
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916701"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87211625"
 ---
 # <a name="_write"></a>_write
 
 Verileri bir dosyaya yazar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _write(
@@ -68,7 +68,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 Dosya metin modunda açılırsa, her satır besleme karakteri çıkışdaki bir satır başı satır besleme çiftiyle değiştirilmiştir. Değişiklik, dönüş değerini etkilemez.
 
-Dosya Unicode çeviri modunda açıldığında — Örneğin, *fd* **_open** veya **_sopen** kullanılarak açılırsa ve **_O_WTEXT**içeren bir mod parametresi, **_O_U16TEXT**veya **_O_U8TEXT**ya da **FOPEN** ve **CCS = UNICODE**, **CCS = UTF-16le**veya **CCS = UTF-8**içeren bir mod parametresi kullanılarak açılırsa veya mod, **_setmode**kullanarak bir Unicode çeviri moduna değiştiyse,*arabellek* **UTF-16** verileri içeren bir **wchar_t** dizisinin işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açıldığında — Örneğin, *fd* **_open** veya **_sopen** kullanılarak açılırsa ve **_O_WTEXT**içeren bir mod parametresi, **_O_U16TEXT**veya **_O_U8TEXT**ya da **FOPEN** ve **CCS = UNICODE**, **CCS = UTF-16le**veya **CCS = UTF-8**içeren bir mod parametresi kullanılarak açılırsa veya mod, **_setmode**kullanarak bir Unicode çeviri moduna değiştiyse,*arabellek* **`wchar_t`** **UTF-16** verileri içeren bir dizinin işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -82,7 +82,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_write**|\<GÇ. h>|
+|**_write**|\<io.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

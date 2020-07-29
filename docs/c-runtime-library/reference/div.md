@@ -28,18 +28,18 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-ms.openlocfilehash: 5b40fa0c4cc9cdf0c0de0f6af21da04b0c70369f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 24432ec1514f6cd2d569fd5752a8ed7118059d6a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937700"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234230"
 ---
 # <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
 
 Bölümü ve iki tamsayı değerinin kalanını hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 div_t div(
@@ -77,19 +77,19 @@ Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**int** türünde bağımsız değişkenler kullanılarak çağrılan **div** , **div_t**türünde bir yapı döndürür, bu da bölümü ve kalanı içerir. **Long** türündeki bağımsız değişkenlere sahip dönüş değeri **ldiv_t**, ve **Long** **Long** türündeki bağımsız değişkenlerle birlikte return değeri **lldiv_t**. **div_t**, **ldiv_t**ve \< **lldiv_t** , Stdlib. h > tanımlanmıştır.
+tür bağımsız değişkenleri kullanılarak çağrılan **div** , **`int`** bölüm ve geri kalanı içeren **div_t**türünde bir yapı döndürür. Türündeki bağımsız değişkenlerle birlikte dönüş değeri **`long`** **ldiv_t**, ve türündeki bağımsız değişkenlerle birlikte dönüş değeri **`long long`** **lldiv_t**. **div_t**, **ldiv_t**ve **lldiv_t** ' de tanımlanmıştır \<stdlib.h> .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Div** işlevi, *numer* 'ı *denom* ile böler ve böylece bölümü ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) **yapısı, Bölüm**, **quot**ve kalanını içerir. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
+**Div** işlevi, *numer* 'ı *denom* ile böler ve böylece bölümü ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) **yapısı, Bölüm**, **quot**ve geri kalanını içerir. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
 
-**Uzun** veya **uzun** **uzunlukta** bağımsız değişkenler alan C++ **DIV** 'in aşırı yüklemeleri yalnızca kod için kullanılabilir. [Ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) dönüş türleri, **div_t**üyeleriyle aynı anlamlara sahip olan **quot** ve **REM**üyelerini içerir.
+Or bağımsız değişkenlerini **div** alan **`long`** veya **`long long`** yalnızca C++ kodunda kullanılabilen div öğesinin aşırı yüklemeleri. [Ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) dönüş türleri, **div_t**üyeleriyle aynı anlamlara sahip olan **quot** ve **REM**üyelerini içerir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**div**, **ldiv**, **lldiv**|\<Stdlib. h >|
+|**div**, **ldiv**, **lldiv**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -133,6 +133,6 @@ The quotient is 67, and the remainder is 5
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ldiv, lldiv](ldiv-lldiv.md)<br/>
 [imaxdiv](imaxdiv.md)<br/>

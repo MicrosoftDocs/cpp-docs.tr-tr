@@ -30,18 +30,18 @@ helpviewer_keywords:
 - error handling
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-ms.openlocfilehash: 06da25fb38d18691f78973f4e63a8b7b48d98ce1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cd6e4df47b28e84bb0ac5ee857cfa1a3e7cf805a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913966"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218552"
 ---
 # <a name="_set_new_handler"></a>_set_new_handler
 
-**Yeni** operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır.
+Operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır **`new`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 _PNH _set_new_handler( _PNH pNewHandler );
@@ -58,7 +58,7 @@ Uygulama tarafından sağlanan bellek işleme işlevine yönelik işaretçi. 0 b
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_set_new_handler** işlevi, **Yeni** operatör bellek ayıramazsa denetimi karşılayan bir özel durum işleme işlevi belirtir. **Yeni** işlem başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler**bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. New. h içinde tanımlanan **_PNH**, **int** türünde bir bağımsız değişken getiren ve **size_t**türünde bir bağımsız değişken alan bir işlev işaretçisidir. Ayrılacak alan miktarını belirtmek için **size_t** kullanın.
+C++ **_set_new_handler** işlevi, **`new`** işleç bellek ayıramazsa denetimi karşılayan bir özel durum işleme işlevi belirtir. **`new`** Başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler**bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. New. h içinde tanımlanan **_PNH**, türü döndüren **`int`** ve **size_t**türünde bir bağımsız değişken alan bir işlev işaretçisidir. Ayrılacak alan miktarını belirtmek için **size_t** kullanın.
 
 Varsayılan işleyici yok.
 
@@ -95,7 +95,7 @@ int main( void )
    // . . .
 ```
 
-C++ [_set_new_mode](set-new-mode.md) işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın **_set_new_handler**tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın:
+C++ [_set_new_mode](set-new-mode.md) işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın **_set_new_handler**tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın:
 
 ```cpp
 _set_new_mode(1);
@@ -103,7 +103,7 @@ _set_new_mode(1);
 
 programınızın başlarında veya NewMode. obj ile bağlantılandırın.
 
-Kullanıcı tanımlı `operator new` bir sağlanmışsa, yeni işleyici işlevleri hata durumunda otomatik olarak çağrılmaz.
+Kullanıcı tanımlı bir `operator new` sağlanmışsa, yeni işleyici işlevleri hata durumunda otomatik olarak çağrılmaz.
 
 Daha fazla bilgi için bkz. *C++ dil başvurusunda* [Yeni](../../cpp/new-operator-cpp.md) ve [Sil](../../cpp/delete-operator-cpp.md) .
 
@@ -113,7 +113,7 @@ Dinamik olarak bağlı tüm dll 'Ler veya yürütülebilir dosyalar için tek bi
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_new_handler**|\<Yeni. h>|
+|**_set_new_handler**|\<new.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -169,7 +169,7 @@ Please contact the application's support team for more information.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [Süz](free.md)<br/>
 [realloc](realloc.md)<br/>

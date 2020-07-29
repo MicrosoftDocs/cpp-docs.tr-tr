@@ -57,20 +57,20 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-ms.openlocfilehash: 5339472574bced99d833a0b60e8b72b10b0fa989
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ce4b3ca37fc5e13ace3058cb9ec9e9daad073b47
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208370"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87210936"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 
-Şablon sınıfı, ilk kez ilk çıkar erişimi olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Temel kapsayıcıyı sıra olarak yönetmek için kapsayıcı bağdaştırıcısı `queue` kullanırsınız.
+Şablon sınıfı, ilk kez ilk çıkar erişimi olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Kapsayıcı bağdaştırıcısını, temeldeki bir `queue` kapsayıcıyı sıra olarak yönetmek için kullanırsınız.
 
-Aşağıdaki açıklamada, ikinci *değeri* bir başvuru türü olmadığı sürece `GValue`, bu durumda `Value^`. Benzer şekilde, ikinci bir başvuru türü olmadığı sürece, `GContainer` *kapsayıcı* ile aynıdır, bu durumda `Container^`.
+Aşağıdaki açıklamada, `GValue` Ikinci *değeri* bir başvuru türü olmadığı sürece, bu örnekte olduğu gibi olur `Value^` . Benzer şekilde, `GContainer` ikincinin bir başvuru türü olmadığı ve bu durumda olduğu sürece *kapsayıcı* ile aynıdır `Container^` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -92,13 +92,13 @@ Temel alınan kapsayıcının türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<clienext/Queue >
+**Üst bilgi:**\<cliext/queue>
 
 **Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[queue::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
 |[queue::container_type (STL/CLR)](#container_type)|Temel alınan kapsayıcının türü.|
@@ -130,23 +130,23 @@ Temel alınan kapsayıcının türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |[queue::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
-|[operator!= (queue) (STL/CLR)](#op_neq)|`queue` nesnenin başka bir `queue` nesnesine eşit olup olmadığını belirler.|
-|[operator< (queue) (STL/CLR)](#op_lt)|`queue` nesnenin başka bir `queue` nesnesinden küçük olup olmadığını belirler.|
-|[operator<= (queue) (STL/CLR)](#op_lteq)|`queue` nesnenin başka bir `queue` nesnesinden küçük veya ona eşit olup olmadığını belirler.|
-|[operator== (queue) (STL/CLR)](#op_eq)|`queue` nesnenin başka bir `queue` nesnesine eşit olup olmadığını belirler.|
-|[operator> (queue) (STL/CLR)](#op_gt)|`queue` nesnenin başka bir `queue` nesnesinden büyük olup olmadığını belirler.|
-|[operator>= (queue) (STL/CLR)](#op_gteq)|`queue` nesnenin başka bir `queue` nesnesinden büyük veya ona eşit olup olmadığını belirler.|
+|[işleç! = (kuyruk) (STL/CLR)](#op_neq)|Bir `queue` nesnenin başka bir nesneye eşit olup olmadığını belirler `queue` .|
+|[işleç< (kuyruk) (STL/CLR)](#op_lt)|Bir `queue` nesnenin başka bir nesneden daha az olup olmadığını belirler `queue` .|
+|[işleç<= (kuyruk) (STL/CLR)](#op_lteq)|Bir `queue` nesnenin başka bir nesneden küçük veya ona eşit olup olmadığını belirler `queue` .|
+|[operator = = (Queue) (STL/CLR)](#op_eq)|Bir `queue` nesnenin başka bir nesneye eşit olup olmadığını belirler `queue` .|
+|[işleç> (kuyruk) (STL/CLR)](#op_gt)|Bir `queue` nesnenin başka bir nesneden daha büyük olup olmadığını belirler `queue` .|
+|[operator>= (queue) (STL/CLR)](#op_gteq)|Bir `queue` nesnenin başka bir nesneden büyük veya ona eşit olup olmadığını belirler `queue` .|
 
 ## <a name="interfaces"></a>Arabirimler
 
 |Arabirim|Açıklama|
 |---------------|-----------------|
 |<xref:System.ICloneable>|Bir nesneyi çoğaltın.|
-|IQueue\<değeri, kapsayıcı >|Genel kapsayıcı bağdaştırıcısını koruyun.|
+|IQueue\<Value, Container>|Genel kapsayıcı bağdaştırıcısını koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesnesi, `Value` öğelerini depolayan ve isteğe bağlı olarak büyüdüğü `Container`türündeki temel bir kapsayıcı aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Nesne, erişimi yalnızca ilk öğeyi ityana ve son öğeyi alarak, ilk çıkar bir sıra (FıFO kuyruğu veya yalnızca bir kuyruk olarak da bilinir) uygulayarak kısıtlar.
+Nesnesi, `Container` öğeleri depolayan ve isteğe bağlı olarak büyüyen türündeki temeldeki bir kapsayıcı aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır `Value` . Nesne, erişimi yalnızca ilk öğeyi ityana ve son öğeyi alarak, ilk çıkar bir sıra (FıFO kuyruğu veya yalnızca bir kuyruk olarak da bilinir) uygulayarak kısıtlar.
 
 ## <a name="members"></a>Üyeler
 
@@ -154,7 +154,7 @@ Nesnesi, `Value` öğelerini depolayan ve isteğe bağlı olarak büyüdüğü `
 
 Tüm öğeleri değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void assign(queue<Value, Container>% right);
@@ -167,7 +167,7 @@ Eklenecek kapsayıcı bağdaştırıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, temel alınan kapsayıcıya `right.get_container()` atar. Bu, sıranın tüm içeriğini değiştirmek için kullanılır.
+Üye işlevi, `right.get_container()` temel alınan kapsayıcıya atar. Bu, sıranın tüm içeriğini değiştirmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -364,7 +364,7 @@ typedef Container value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `Container`şablon parametresi için bir eş anlamlı.
+Tür, şablon parametresi için bir eş anlamlı `Container` .
 
 ### <a name="example"></a>Örnek
 
@@ -464,7 +464,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Queue:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() == 0`eşdeğerdir. Bu, sıranın boş olup olmadığını test etmek için kullanılır.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Queue:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md)ile eşdeğerdir `() == 0` . Bu, sıranın boş olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -685,7 +685,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar. (`GValue` `value_type` ya da `value_type` bir başvuru türü ise `value_type^`.)
+Tür, `GValue` Bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan türünde bir nesne tanımlar. ( `GValue` ya da `value_type` `value_type^` `value_type` bir başvuru türüdür.)
 
 ### <a name="example"></a>Örnek
 
@@ -776,7 +776,7 @@ a b c
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 queue <Value, Container>% operator=(queue <Value, Container>% right);
@@ -789,7 +789,7 @@ Kopyalanacak kapsayıcı bağdaştırıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -886,7 +886,7 @@ void push(value_type val);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sıranın sonunda `val` değeri olan bir öğe ekler. Kuyruğa bir öğe eklemek için bunu kullanırsınız.
+Üye işlevi, sıranın sonunda değeri olan bir öğesi ekler `val` . Kuyruğa bir öğe eklemek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -919,7 +919,7 @@ a b c
 
 Kapsayıcı bağdaştırıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 queue();
@@ -948,13 +948,13 @@ Oluşturucu:
 
 `queue(queue<Value, Container>% right);`
 
-`right.get_container()`kopyası olan kaydırılmış bir kapsayıcı oluşturur. Sıra nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+bir kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` . Sıra nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `queue(queue<Value, Container>^ right);`
 
-`right->get_container()`kopyası olan kaydırılmış bir kapsayıcı oluşturur. Sıra nesnesi tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız `*right`.
+bir kopyası olan sarmalanmış bir kapsayıcı oluşturur `right->get_container()` . Sıra nesnesi tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız `*right` .
 
 Oluşturucu:
 
@@ -1069,7 +1069,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [Queue:: Empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)`()`.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [Queue:: Empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -1259,7 +1259,7 @@ a b c
 
 Kuyruk eşit değil karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -1278,7 +1278,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left == right)`döndürür. İki kuyruk öğe öğesine göre karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(left == right)` . İki kuyruk öğe öğesine göre karşılaştırıldığı zaman, *sol* öğenin *doğru* şekilde sıralı olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1326,11 +1326,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a>işleç&lt; (kuyruk) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a>işleç &lt; (kuyruk) (STL/CLR)
 
 Sıra karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -1349,7 +1349,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi true değerini döndürür, en düşük konum için de bu `!(right[i] < left[i])` `left[i] < right[i]`true `i`. Aksi takdirde, `left->`[Queue:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() <` döndürür `right->size()` bu, iki kuyruk öğe öğesine göre karşılaştırıldığı zaman *sağdan* *önce doğru sıralı olup olmadığını test* etmek için kullanılır.
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, `left->` iki kuyruk öğe öğesine göre karşılaştırıldığı zaman, sol taraftaki bir süre önce sola doğru sıralı olup olmadığını test etmek için onu döndürür [:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md) `() <` `right->size()` . *left* *right*
 
 ### <a name="example"></a>Örnek
 
@@ -1397,11 +1397,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (kuyruk) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a>operator &lt; = (kuyruk) (STL/CLR)
 
 Kuyruk küçüktür veya eşittir karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -1420,7 +1420,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(right < left)`döndürür. İki kuyruk öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan* ayrılmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `!(right < left)` . İki kuyruk öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan* ayrılmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1472,7 +1472,7 @@ a b d
 
 Kuyruk eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -1491,7 +1491,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her konum için `i``left[i] ==` `right[i]`için true değerini döndürür. İki kuyruk öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her bir konum için aynı uzunluğa sahip olursa true değerini döndürür `i` `left[i] ==` `right[i]` . İki kuyruk öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1539,11 +1539,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a>işleç&gt; (kuyruk) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a>işleç &gt; (kuyruk) (STL/CLR)
 
 Sıra karşılaştırmadan daha büyük.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -1562,7 +1562,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `right` `<` `left`döndürüyor. İki kuyruk öğe öğesine göre karşılaştırıldığı zaman, *sol* taraftaki *doğru* olup olmadığını test etmek için kullanırsınız.
+İşleç işlevi döndürülür `right` `<` `left` . İki kuyruk öğe öğesine göre karşılaştırıldığı zaman, *sol* taraftaki *doğru* olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1610,11 +1610,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (kuyruk) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a>operator &gt; = (kuyruk) (STL/CLR)
 
 Sıra daha büyük veya eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Value,
@@ -1633,7 +1633,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left < right)`döndürür. İki kuyruk öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(left < right)` . İki kuyruk öğe öğesine göre karşılaştırıldığı zaman *sağdan* *sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

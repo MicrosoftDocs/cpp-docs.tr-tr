@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4150
 ms.assetid: ff1760ec-0d9f-4d45-b797-94261624becf
-ms.openlocfilehash: c4d84165c7fcda4ceab94b1380a818236f6f5ea5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a3993d2b993205c98de968ca893f24f703b3b635
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162120"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218149"
 ---
 # <a name="compiler-warning-level-2-c4150"></a>Derleyici Uyarısı (düzey 2) C4150
 
 eksik ' Type ' türüne yönelik işaretçinin silinmesi; yok edici çağrılmadı
 
-**Delete** işleci, bildirildiği ancak tanımlanmadığı bir türü silmek için çağrılır, bu nedenle derleyici bir yıkıcı bulamaz.
+**`delete`** İşleci, tanımlanmış ancak tanımlanmamış bir türü silmek için çağrılır, bu nedenle derleyici bir yıkıcı bulamaz.
 
 Aşağıdaki örnek C4150 oluşturur:
 

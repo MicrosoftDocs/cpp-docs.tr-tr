@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2180
 ms.assetid: ea71b39e-b977-48a7-b7bd-af68ef5e263b
-ms.openlocfilehash: 5e9444356e536a8369dbcf62cac3c7538d9da5dd
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 3794a1ce0fcbe60c06cb3efca45a3081e85c17ce
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301905"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87210026"
 ---
 # <a name="compiler-error-c2180"></a>Derleyici hatası C2180
 
 Denetim ifadesi ' Type ' türüne sahip
 
-`if`, `while`, `for`veya `do` deyimindeki denetim ifadesi, `void`bir ifade saçılması. Bu sorunu onarmak için denetim ifadesini, bir `bool` üreten bir şekilde veya `bool`dönüştürülebilir bir tür ile değiştirin.
+,,, Veya deyimindeki denetim ifadesi, ' a **`if`** **`while`** **`for`** **`do`** bir ifade tür **`void`** . Bu sorunu giderecek şekilde denetlemek için, denetim ifadesini bir **`bool`** veya olarak dönüştürülebileceği bir tür üreten bir tür ile değiştirin **`bool`** .
 
 Aşağıdaki örnek C2180 oluşturur:
 

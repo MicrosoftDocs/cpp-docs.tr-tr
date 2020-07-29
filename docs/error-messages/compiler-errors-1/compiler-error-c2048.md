@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2048
 ms.assetid: 44704726-85fc-42f0-afb9-194df8c4ca7c
-ms.openlocfilehash: 039be85541a7cd3864187433e5b3299bca7d067e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 483e4d706a1c08899e6cd6e1ec561a21ed805014
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740136"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87210442"
 ---
 # <a name="compiler-error-c2048"></a>Derleyici hatası C2048
 
 birden çok varsayılan
 
-`switch` bir ifade birden çok `default` etiketi içerir. Hatayı çözümlemek için `default` etiketlerden birini silin.
+Bir **`switch`** ifade birden çok **`default`** etiket içerir. **`default`** Hatayı çözümlemek için etiketlerden birini silin.
 
 Aşağıdaki örnek C2048 oluşturur:
 

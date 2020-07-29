@@ -35,18 +35,18 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: acf885c923db3fdf91119b29a78d64824384166b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 29458f2d752f1fe59778b752480e268f8243f15e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913505"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234282"
 ---
 # <a name="_beginthread-_beginthreadex"></a>_beginthread, _beginthreadex
 
 Bir iş parçacığı oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 uintptr_t _beginthread( // NATIVE CODE
@@ -109,13 +109,13 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Beginthread** işlevi, *start_address*bir yordamın yürütülmesini Başlatan bir iş parçacığı oluşturur. *Start_address* yordam, çağırma kuralı için **__cdecl** (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve dönüş değeri içermemelidir. İş parçacığı bu yordama döndüğünde otomatik olarak sonlandırılır. İş parçacıkları hakkında daha fazla bilgi için bkz. [daha eski kod Için çoklu Iş parçacığı desteği (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
+**_Beginthread** işlevi, *start_address*bir yordamın yürütülmesini Başlatan bir iş parçacığı oluşturur. *Start_address* yordam, **`__cdecl`** çağırma kuralı için (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve dönüş değeri içermemelidir. İş parçacığı bu yordama döndüğünde otomatik olarak sonlandırılır. İş parçacıkları hakkında daha fazla bilgi için bkz. [daha eski kod Için çoklu Iş parçacığı desteği (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
 **_beginthreadex** , Win32 [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) API 'sine **_beginthread** daha yakından benzer. **_beginthreadex** **_beginthread** aşağıdaki yollarla farklıdır:
 
 - **_beginthreadex** üç ek parametreye sahiptir: *initflag*, *Security*ve **threadadddr**. Yeni iş parçacığı, belirtilen güvenlik ile askıya alınmış bir durumda oluşturulabilir ve iş parçacığı tanımlayıcısı olan *thrdadddr*kullanılarak erişilebilir.
 
-- **_Beginthreadex** geçirilen *start_address* yordamı, çağrı kuralını **__stdcall** (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve bir iş parçacığı çıkış kodu döndürmelidir.
+- **_Beginthreadex** geçirilen *start_address* yordamı, **`__stdcall`** çağırma kuralı için (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve bir iş parçacığı çıkış kodu döndürmelidir.
 
 - **_beginthreadex** , hata durumunda-1L yerine 0 döndürür.
 
@@ -146,8 +146,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_beginthread**|\<Process. h>|
-|**_beginthreadex**|\<Process. h>|
+|**_beginthread**|\<process.h>|
+|**_beginthreadex**|\<process.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -329,8 +329,8 @@ Counter should be 1000000; it is-> 1000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)
+- [İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)
 - [_endthread, _endthreadex](endthread-endthreadex.md)
-- [durdurulmaya](abort.md)
+- [durdur](abort.md)
 - [exit, _Exit, _exit](exit-exit-exit.md)
 - [GetExitCodeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread)

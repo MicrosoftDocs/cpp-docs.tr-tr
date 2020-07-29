@@ -6,15 +6,15 @@ f1_keywords:
 helpviewer_keywords:
 - C2152
 ms.assetid: a9ea2b0c-d55d-41c7-ba9f-dd75592ffc8a
-ms.openlocfilehash: 10178d2cd40af60603b908a9351b8e14d12c5570
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f2949aba53ba7a2e977405cf2e03c22f3aeac646
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207200"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87210039"
 ---
 # <a name="compiler-error-c2152"></a>Derleyici hatası C2152
 
 ' tanımlayıcı ': farklı özniteliklere sahip işlevlere yönelik işaretçiler
 
-Tek bir çağırma kuralına sahip bir işleve yönelik işaretçi (`__cdecl`, `__stdcall`veya `__fastcall`), başka bir çağırma kuralına sahip bir işleve bir işaretçiye atanır.
+Tek bir çağırma kuralına sahip bir işlev işaretçisi ( **`__cdecl`** , **`__stdcall`** , veya **`__fastcall`** ), başka bir çağırma kuralına sahip bir işleve bir işaretçiye atanır.

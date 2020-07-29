@@ -26,16 +26,16 @@ helpviewer_keywords:
 - _RTC_NumErrors function
 - RTC_NumErrors function
 ms.assetid: 7e82adae-38e2-4f8b-bc0b-37bda8109fd1
-ms.openlocfilehash: 72056208ca6d714f788ae325b90786f5be4ab443
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0e0af8596dbc7f48bc3f6b996219ec7c7a57749d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949026"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234035"
 ---
 # <a name="_rtc_numerrors"></a>_RTC_NumErrors
 
-Çalışma zamanı hata denetimleri (RTC) tarafından tespit edilebilir toplam hata sayısını döndürür. Bu numarayı **for** döngüsünde denetim olarak kullanabilirsiniz, burada döngüdeki her bir değer [_RTC_GetErrDesc](rtc-geterrdesc.md)' e geçirilir.
+Çalışma zamanı hata denetimleri (RTC) tarafından tespit edilebilir toplam hata sayısını döndürür. Bu numarayı döngüde **`for`** her bir değerin [_RTC_GetErrDesc](rtc-geterrdesc.md)geçirildiği bir döngüdeki denetim olarak kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,13 +46,13 @@ int _RTC_NumErrors( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değeri, görsel C++ çalışma zamanı hata denetimleri tarafından tespit edilebilir toplam hata sayısını temsil eden bir tamsayı.
+Değeri, Visual C++ çalışma zamanı hata denetimleri tarafından tespit edilebilir toplam hata sayısını temsil eden bir tamsayı.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_RTC_NumErrors**|\<rtcapı. h >|
+|**_RTC_NumErrors**|\<rtcapi.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -63,4 +63,4 @@ Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
-[Çalışma Zamanı Hata Denetimi](../../c-runtime-library/run-time-error-checking.md)<br/>
+[Çalışma zamanı hata denetimi](../../c-runtime-library/run-time-error-checking.md)<br/>

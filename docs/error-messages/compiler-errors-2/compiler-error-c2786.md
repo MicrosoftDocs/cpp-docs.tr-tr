@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2786
 ms.assetid: 6676d8c0-86dd-4a39-bdda-b75a35f4d137
-ms.openlocfilehash: ba5d05e9c7cc702509144fb876a1301bfc8bf3d4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 60e921c17cd2b3f9462df77094162bb3f1eff379
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74739616"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87206685"
 ---
 # <a name="compiler-error-c2786"></a>Derleyici hatası C2786
 
@@ -21,7 +21,7 @@ ms.locfileid: "74739616"
 
 1. Bağımsız değişken Kullanıcı tanımlı bir tür değil.
 
-1. `__uuidof` bağımsız değişkenden GUID ayıklanamaz.
+1. **`__uuidof`** bağımsız değişkenden GUID ayıklanamıyor.
 
 Aşağıdaki örnek C2786 oluşturur:
 

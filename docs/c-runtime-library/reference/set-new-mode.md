@@ -29,18 +29,18 @@ helpviewer_keywords:
 - _set_new_mode function
 - set_new_mode function
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768
-ms.openlocfilehash: f3635d462d2c7438ce985d74ff347120c02c82e0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: aa21854f6a8c4b58a510b16e824449a53b91f329
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920095"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218539"
 ---
 # <a name="_set_new_mode"></a>_set_new_mode
 
 **Malloc**için yeni bir işleyici modu ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 int _set_new_mode( int newhandlermode );
@@ -57,7 +57,7 @@ int _set_new_mode( int newhandlermode );
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_set_new_mode** işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Daha fazla bilgi için bkz. *C++ dil başvurusundaki* [New](../../cpp/new-operator-cpp.md) ve [Delete](../../cpp/delete-operator-cpp.md) işleçleri. Varsayılanı geçersiz kılmak için şunu çağırın:
+C++ **_set_new_mode** işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Daha fazla bilgi için bkz. *C++ dil başvurusundaki* [New](../../cpp/new-operator-cpp.md) ve [Delete](../../cpp/delete-operator-cpp.md) işleçleri. Varsayılanı geçersiz kılmak için şunu çağırın:
 
 ```cpp
 _set_new_mode(1);
@@ -65,7 +65,7 @@ _set_new_mode(1);
 
 programınızın başlarında veya NewMode. obj ile bağlantılandırın (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
-Bu işlev, parametresini doğrular. *Newhandlermode* 0 veya 1 ' den başka bir şeydir, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa <strong>_set_new_mode</strong> -1 döndürür ve **errno** öğesini olarak `EINVAL`ayarlar.
+Bu işlev, parametresini doğrular. *Newhandlermode* 0 veya 1 ' den başka bir şeydir, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa <strong>_set_new_mode</strong> -1 döndürür ve **errno** öğesini olarak ayarlar `EINVAL` .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -73,13 +73,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_new_mode**|\<Yeni. h>|
+|**_set_new_mode**|\<new.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [Süz](free.md)<br/>
 [realloc](realloc.md)<br/>

@@ -30,18 +30,18 @@ helpviewer_keywords:
 - numbers, converting
 - converting double numbers
 ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
-ms.openlocfilehash: 9ac623c6cb80c774184dcb005e6d1d631c498040
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e76ebd065d323a9ae501ce6a7a5790389c7d5dad
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915149"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234217"
 ---
 # <a name="_ecvt_s"></a>_ecvt_s
 
-**Çift** sayıyı dizeye dönüştürür. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_ecvt](ecvt.md) bir sürümüdür.
+Bir **`double`** sayıyı dizeye dönüştürür. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_ecvt](ecvt.md) bir sürümüdür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t _ecvt_s(
@@ -92,10 +92,10 @@ Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu oldu
 
 |*_Buffer*|*_SizeInBytes*|_Value|_Count|_Dec|_Sign|Döndürülen değer|*Arabellekteki* değer|
 |---------------|--------------------|-------------|-------------|-----------|------------|------------------|-----------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|**Null** değil (geçerli belleğe işaret eder)|<= 0|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**DEĞER**|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|Değiştirilmedi.|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|<= 0|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**DEĞER**|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|Değiştirilmedi.|
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
@@ -121,7 +121,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_ecvt_s**|\<Stdlib. h>|\<errno. h>|
+|**_ecvt_s**|\<stdlib.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -160,7 +160,7 @@ Converted value: 12000
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt_s](fcvt-s.md)<br/>

@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-ms.openlocfilehash: af29c70dca56b1e68eef3614357269c587a77ec9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b6ca3f8b994756a21d85860fd8aff429ee38e58b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623675"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87204943"
 ---
 # <a name="allocatorltvoidgt-class"></a>ayırıcı &lt; void &gt; sınıfı
 
-Bu bağlamda anlamlı olan türleri tanımlayarak **void**türüne sahip sınıf şablonu ayırıcı özelleştirmesi.
+**`void`** Bu bağlamda anlamlı olan türleri tanımlayarak yazmak için sınıf şablonu ayırıcı özelleştirmesi.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <>
@@ -41,7 +41,7 @@ class allocator<void> {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, **void**türü için sınıf şablonu [ayırıcısını](allocator-class.md) açık bir şekilde özelleştirir. Oluşturucuları ve atama operatörü sınıf şablonuyla aynı şekilde davranır, ancak yalnızca aşağıdaki türleri tanımlar:
+Sınıfı, türü için sınıf şablonu [ayırıcısını](allocator-class.md) açık bir şekilde özelleştirir **`void`** . Oluşturucuları ve atama operatörü sınıf şablonuyla aynı şekilde davranır, ancak yalnızca aşağıdaki türleri tanımlar:
 
 - [const_pointer](allocator-class.md#const_pointer).
 

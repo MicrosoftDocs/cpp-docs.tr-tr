@@ -5,12 +5,12 @@ f1_keywords:
 - C4305
 helpviewer_keywords:
 - C4305
-ms.openlocfilehash: dc718e5f7ebe9478ed1bf2a7323db940935cb1d6
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 567442bc48487e4f7d1f905f871d15f913646e87
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926119"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233294"
 ---
 # <a name="compiler-warning-level-1-c4305"></a>Derleyici Uyarısı (düzey 1) C4305
 
@@ -41,4 +41,4 @@ int main()
 }
 ```
 
-Bu sorunu düzeltmek için doğru türdeki bir değeri kullanarak başlatın veya doğru türe açık bir tür dönüştürme kullanın. Örneğin, bir **float** değişkeni başlatmak için ya da **float bağımsız değişkeni alan bir oluşturucuya** geçiş yapmak için **Double** (kayan nokta değişmez değerleri için varsayılan tür) yerine 2.71828 f gibi bir **float** sabit değeri kullanın.
+Bu sorunu düzeltmek için doğru türdeki bir değeri kullanarak başlatın veya doğru türe açık bir tür dönüştürme kullanın. Örneğin, bir **`float`** **`double`** **`float`** değişken başlatmak veya bağımsız değişken alan bir oluşturucuya geçirmek için bir yerine 2.71828 f (kayan nokta değişmez değerleri için varsayılan tür) gibi bir değişmez değer kullanın **`float`** .

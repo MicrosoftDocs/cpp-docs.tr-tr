@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4127
 ms.assetid: f59ded9e-5227-45bd-ac43-2aa861581363
-ms.openlocfilehash: 9d4397c11c4d2f0f9013c7df914cbc4be9fd4e9d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: afca92602aa6033c56869d3f84192ca0f029a23e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198490"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218123"
 ---
 # <a name="compiler-warning-level-4-c4127"></a>Derleyici Uyarısı (düzey 4) C4127
 
@@ -19,9 +19,9 @@ ms.locfileid: "80198490"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**IF** deyiminin veya **while** döngüsünün denetim ifadesi bir sabit olarak değerlendirilir. Visual Studio 2015 güncelleştirme 3 ' ten başlayarak, ortak bir dizi kullanımı nedeniyle, 1 veya **true** gibi önemsiz sabitler, bir ifadede bir işlemin sonucu olmadıkları sürece uyarıyı tetiklemez.
+**`if`** Deyim veya döngünün denetim ifadesi **`while`** bir sabit olarak değerlendirilir. Ortak Ise kullanımı nedeniyle, Visual Studio 2015 güncelleştirme 3 ' ten başlayarak, bir ifadede bir işlemin sonucu olmadıkları sürece, 1 gibi önemsiz sabitler veya **`true`** uyarı tetiklemez.
 
-Döngü ortasında çıkış yaptığından **while** döngüsünün denetim ifadesi bir sabit ise **while** döngüsünü bir **for** döngüsü ile değiştirmeyi göz önünde bulundurun. Bir **for** döngüsünün başlatma, sonlandırma testi ve döngü artışını atlayabilirsiniz, bu da döngünün `while(1)`gibi sonsuz olmasına neden olur ve **for** ifadesinin gövdesinden döngüden çıkabilirsiniz.
+Döngü **`while`** ortasında çıkış yaptığından döngünün denetim ifadesi bir sabit ise **`while`** döngüyü bir **`for`** döngüyle değiştirmeyi düşünün. Bir döngünün başlatma, sonlandırma testi ve döngü artışını atlayabilirsiniz **`for`** , bu da döngünün yalnızca gibi sonsuz olmasına neden olur `while(1)` ve ifadenin gövdesinden gelen döngüden çıkabilirsiniz **`for`** .
 
 ## <a name="example"></a>Örnek
 

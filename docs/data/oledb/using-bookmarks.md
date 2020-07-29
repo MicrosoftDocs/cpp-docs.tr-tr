@@ -7,16 +7,16 @@ helpviewer_keywords:
 - bookmarks, OLE DB
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-ms.openlocfilehash: 5a4a2d65ba7367b5568603b5f08a07c6d85cc4a5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8caa33b3bafbaa9e537d9669aa7b60a9355475ef
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209321"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218305"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 
-Satır kümesini açmadan önce, sağlayıcıya yer işaretlerini kullanmak istediğinizi söylemeniz gerekir. Bunu yapmak için, özellik kümesinde `DBPROP_BOOKMARKS` özelliğini **true** olarak ayarlayın. Sağlayıcı, yer işaretlerini sütun sıfır olarak alır, bu nedenle statik bir erişimci kullanıyorsanız özel makro BOOKMARK_ENTRY ve `CBookmark` sınıfını kullanmanız gerekir. `CBookmark`, bağımsız değişkenin, yer işareti arabelleğinin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Bir yer işareti için gereken arabellek uzunluğu sağlayıcıya bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB sağlayıcısını kullanıyorsanız, arabelleğin 4 bayt olması gerekir.
+Satır kümesini açmadan önce, sağlayıcıya yer işaretlerini kullanmak istediğinizi söylemeniz gerekir. Bunu yapmak için özelliği `DBPROP_BOOKMARKS` **`true`** özellik kümesi içinde olarak ayarlayın. Sağlayıcı, yer işaretlerini sütun sıfır olarak alır, bu yüzden statik erişimci kullanıyorsanız özel makro BOOKMARK_ENTRY ve `CBookmark` sınıfını kullanmanız gerekir. `CBookmark`, bağımsız değişkenin, yer işareti arabelleğinin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Bir yer işareti için gereken arabellek uzunluğu sağlayıcıya bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB sağlayıcısını kullanıyorsanız, arabelleğin 4 bayt olması gerekir.
 
 ```cpp
 class CProducts
@@ -41,7 +41,7 @@ CSession session;
 product.Open(session, "Products", &propset);
 ```
 
-`CDynamicAccessor`kullanırsanız, arabellek çalışma zamanında dinamik olarak ayarlanır. Bu durumda, bir `CBookmark`, arabellek uzunluğu belirtmemenizi belirten özelleşmiş bir sürümünü kullanabilirsiniz. Aşağıdaki kod örneğinde gösterildiği gibi, geçerli kayıttaki yer işaretini almak için `GetBookmark` işlevini kullanın:
+Kullanırsanız `CDynamicAccessor` , arabellek çalışma zamanında dinamik olarak ayarlanır. Bu durumda, `CBookmark` bir arabellek uzunluğu belirtmezseniz özel bir sürümünü kullanabilirsiniz. `GetBookmark`Aşağıdaki kod örneğinde gösterildiği gibi, geçerli kayıttaki yer işaretini almak için işlevini kullanın:
 
 ```cpp
 CTable<CDynamicAccessor> product;
@@ -59,4 +59,4 @@ Sağlayıcılardaki yer imlerini destekleme hakkında daha fazla bilgi için bkz
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Erişimcileri Kullanma](../../data/oledb/using-accessors.md)
+[Erişimcileri kullanma](../../data/oledb/using-accessors.md)

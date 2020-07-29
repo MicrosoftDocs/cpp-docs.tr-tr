@@ -28,18 +28,18 @@ helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 3ff1456a-7898-44bc-9266-a328a80b6006
-ms.openlocfilehash: 29b760d8831411142aad052fdef510efb0486747
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 70ed4adb7ceada53205fd69f111c8976fe95c711
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914517"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234022"
 ---
 # <a name="set_terminate-crt"></a>set_terminate (CRT)
 
 **Terminate**tarafından çağrılacak kendi sonlandırma yordamınıza sahip olun.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 terminate_function set_terminate( terminate_function termFunction );
@@ -60,7 +60,7 @@ Yazdığınız sonlandırma işlevine yönelik işaretçi.
 
 Çok iş parçacıklı bir ortamda, sonlandırma işlevleri her iş parçacığı için ayrı olarak korunur. Her yeni iş parçacığının kendi Terminate işlevini yüklemesi gerekir. Bu nedenle, her iş parçacığı kendi sonlandırma işlemenin ücretlendirilmiştir.
 
-**Terminate_function** türü Eh içinde tanımlanır. Kullanıcı tanımlı sonlandırma işlevinin işaretçisi olarak H, **void**döndüren *termFunction* . Özel işleviniz *termFunction* , bağımsız değişken alabilir ve çağırana dönmemelidir. Varsa, [iptal](abort.md) çağırılır. *TermFunction*içinden bir özel durum oluşmayabilir.
+**Terminate_function** türü Eh içinde tanımlanır. Kullanıcı tanımlı sonlandırma işlevinin işaretçisi olarak H, döndüren *termFunction* **`void`** . Özel işleviniz *termFunction* , bağımsız değişken alabilir ve çağırana dönmemelidir. Varsa, [iptal](abort.md) çağırılır. *TermFunction*içinden bir özel durum oluşmayabilir.
 
 ```cpp
 typedef void ( *terminate_function )( );
@@ -77,7 +77,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**set_terminate**|\<Eh. h>|
+|**set_terminate**|\<eh.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -88,7 +88,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel durum Işleme yordamları](../../c-runtime-library/exception-handling-routines.md)<br/>
-[durdurulmaya](abort.md)<br/>
+[durdur](abort.md)<br/>
 [_get_terminate](get-terminate.md)<br/>
 [set_unexpected](set-unexpected-crt.md)<br/>
 [sonlandırmayı](terminate-crt.md)<br/>

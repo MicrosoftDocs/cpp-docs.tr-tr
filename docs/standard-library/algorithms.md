@@ -8,12 +8,12 @@ helpviewer_keywords:
 - algorithm template function C++ library conventions
 - conventions [C++], C++ algorithm
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
-ms.openlocfilehash: 4b49b3c296d3afcbb26af028dc0b4a885444a897
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6532cb56bb70c82525a13ba53efdd6203ebafb12
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617638"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87205229"
 ---
 # <a name="algorithms"></a>Algoritmalar
 
@@ -33,7 +33,7 @@ Algoritma şablonu işlevlerinin açıklamaları çeşitli toplu tümceler üzer
 
 - X ve Y *gibi ifadeler*  -  *Y*Rastgele erişimli *X* yineleyiciler *Y* dışında yineleyiciler olabilir, matematik açısından tasarlanmıştır. İşlevin **-** Bu tür bir değeri belirlemesi gerekiyorsa işleç değerlendirmesi gerekmez. Aynı zamanda *x*  +  *n* ve *x*n gibi ifadeler için de geçerlidir  -  *N*; burada *N* bir tamsayı türüdür.
 
-Birçok algoritma, ile gibi ikili bir karşılaştırma gerçekleştiren bir koşulu `operator==` **bool** sonucu verecek şekilde kullanır. Koşul işlevi `operator==` veya bunun herhangi bir değişikliği, işlenenlerinin birini değiştirmemelidir. Her değerlendirildiğinde aynı **bool** sonucunu vermelidir ve iki işlenenin bir kopyası işlenenin yerini aldığında aynı sonucu vermelidir.
+Birçok algoritma, bir sonuç sağlamak için gibi ikili bir karşılaştırma gerçekleştiren bir koşul kullanır `operator==` **`bool`** . Koşul işlevi `operator==` veya bunun herhangi bir değişikliği, işlenenlerinin birini değiştirmemelidir. **`bool`** Her değerlendirildiğinde aynı sonucu vermelidir ve iki işlenenin bir kopyası işlenenin yerini aldığında aynı sonucu vermelidir.
 
 Çeşitli algoritmalar, bir dizideki öğe çiftlerine katı zayıf bir sıralama gerçekleştiren bir koşul kullanır. *Pred*(*X*, *Y*) koşulu için:
 
@@ -45,9 +45,9 @@ Birçok algoritma, ile gibi ikili bir karşılaştırma gerçekleştiren bir ko�
 
 Bu algoritmalardan bazıları örtük olarak *X* \< *Y*. Other predicates that typically satisfy the strict weak ordering requirement are *X* > *Y*, `less` (*x*, *y*) ve `greater` (*x*, *y*) koşulunu kullanır. Ancak, *X* \<= *Y* and *X* > =  *Y* gibi koşulların bu gereksinimi karşılamadığını unutmayın.
 
-İlk olarak aralıktaki yineleyiciler tarafından belirlenen bir dizi öğe, \[ *First* *Last* **<** *N* \[ 0, *son*  -  *ilk*) ve aralıktaki her bir N için (*n*, *M* *son*  -  *ilk*) koşul \! ( \* (*ilk*olarak)  +  *M*< \* (*ilk*  +  *N*)) true ise işleçle sıralanan bir sıralamadır. (Öğelerin artan sırada sıralanacağını unutmayın.) Koşul işlevi `operator<` veya bunun herhangi bir değişikliği, işlenenlerinin birini değiştirmemelidir. Her değerlendirildiğinde aynı **bool** sonucunu vermelidir ve iki işlenenin bir kopyası işlenenin yerini aldığında aynı sonucu vermelidir. Üstelik, karşılaştırıldığı işlenenler üzerinde katı bir zayıf sıralama getirmelidir.
+İlk olarak aralıktaki yineleyiciler tarafından belirlenen bir dizi öğe, \[ *First* *Last* **<** *N* \[ 0, *son*  -  *ilk*) ve aralıktaki her bir N için (*n*, *M* *son*  -  *ilk*) koşul \! ( \* (*ilk*olarak)  +  *M*< \* (*ilk*  +  *N*)) true ise işleçle sıralanan bir sıralamadır. (Öğelerin artan sırada sıralanacağını unutmayın.) Koşul işlevi `operator<` veya bunun herhangi bir değişikliği, işlenenlerinin birini değiştirmemelidir. **`bool`** Her değerlendirildiğinde aynı sonucu vermelidir ve iki işlenenin bir kopyası işlenenin yerini aldığında aynı sonucu vermelidir. Üstelik, karşılaştırıldığı işlenenler üzerinde katı bir zayıf sıralama getirmelidir.
 
-Aralık içinde yineleyiciler tarafından belirlenen öğelerin bir dizisi \[ `First` , `Last` `operator<` 1. Aralık içindeki her *N* için, \[ *en son*  -  *ilk başta*) koşulun \! (ilk \* _First_  <  \* (*ilk*  +  *n*)) doğru olması halinde sıralı bir yığın olur. (İlk öğe en genişdir.) İç yapısı başka bir şekilde yalnızca [make_heap](algorithm-functions.md#make_heap), [pop_heap](algorithm-functions.md#pop_heap)ve [Push_heap](algorithm-functions.md#push_heap)şablon işlevleri için de bilinir. Sıralı bir dizide, koşul işlevinde `operator<` veya herhangi bir değişiklik için, işlenenlerinin birini değiştirmemelidir ve karşılaştırıldığı işlenenler üzerinde katı bir zayıf sıralama getirmelidir. Her değerlendirildiğinde aynı **bool** sonucunu vermelidir ve iki işlenenin bir kopyası işlenenin yerini aldığında aynı sonucu vermelidir.
+Aralık içinde yineleyiciler tarafından belirlenen öğelerin bir dizisi \[ `First` , `Last` `operator<` 1. Aralık içindeki her *N* için, \[ *en son*  -  *ilk başta*) koşulun \! (ilk \* _First_  <  \* (*ilk*  +  *n*)) doğru olması halinde sıralı bir yığın olur. (İlk öğe en genişdir.) İç yapısı başka bir şekilde yalnızca [make_heap](algorithm-functions.md#make_heap), [pop_heap](algorithm-functions.md#pop_heap)ve [Push_heap](algorithm-functions.md#push_heap)şablon işlevleri için de bilinir. Sıralı bir dizide, koşul işlevinde `operator<` veya herhangi bir değişiklik için, işlenenlerinin birini değiştirmemelidir ve karşılaştırıldığı işlenenler üzerinde katı bir zayıf sıralama getirmelidir. **`bool`** Her değerlendirildiğinde aynı sonucu vermelidir ve iki işlenenin bir kopyası işlenenin yerini aldığında aynı sonucu vermelidir.
 
 C++ Standart Kitaplığı algoritmaları [\<algorithm>](algorithm.md) ve [\<numeric>](numeric.md) üst bilgi dosyalarında bulunur.
 

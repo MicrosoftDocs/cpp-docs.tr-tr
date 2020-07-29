@@ -34,12 +34,12 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-ms.openlocfilehash: 078efc2fa5499e23ce7f2fb6f8fc0ffc5123de1e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1d2202bd1ca59ee42287c398da429df132e24fcb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909550"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87234087"
 ---
 # <a name="isleadbyte-_isleadbyte_l"></a>isleadbyte, _isleadbyte_l
 
@@ -48,7 +48,7 @@ Bir karakterin çok baytlı bir karakterin ön baytı olup olmadığını belirl
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int isleadbyte( int c );
@@ -68,7 +68,7 @@ bağımsız değişken test koşulunu karşılıyorsa veya değilse 0 sıfır ol
 
 **Ileadbyte** makrosu, bağımsız değişkeni çok baytlı bir karakterin ilk baytı ise sıfır dışında bir değer döndürür. **ıleadbyte** ,-1 (**EOF**) ile **uchar_max** (0xFF) (dahil) arasında herhangi bir tamsayı bağımsız değişkeni için anlamlı bir sonuç üretir.
 
-**Ileadbyte** 'ın beklenen bağımsız değişken türü **int**'tir; imzalı bir karakter geçirilirse, derleyici onu oturum açma uzantısı tarafından bir tamsayıya dönüştürebilir ve öngörülemeyen sonuçlara neden olabilir.
+**Ileadbyte** 'ın beklenen bağımsız değişken türü **`int`** ; imzalı bir karakter geçirilirse, derleyici imza uzantısı tarafından bir tamsayıya dönüştürebilir ve öngörülemeyen sonuçlara neden olabilir.
 
 Bu işlevin **_l** sonekine sahip sürümü, yerel ayara bağlı davranışı için geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır.
 
@@ -84,13 +84,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ıleadbyte**|\<CType. h>|
-|**_isleadbyte_l**|\<CType. h>|
+|**ıleadbyte**|\<ctype.h>|
+|**_isleadbyte_l**|\<ctype.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

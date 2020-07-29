@@ -39,18 +39,18 @@ helpviewer_keywords:
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-ms.openlocfilehash: ca514c60945f25c3d335e0b02110e50ed14f9269
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7e3c56805b3af9bb5e739bd74d03bce015c65895
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911811"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233931"
 ---
 # <a name="timespec_get-_timespec32_get-_timespec64_get"></a>timespec_get, _timespec32_get, _timespec64_get
 
 Belirtilen zaman tabanına göre, ilk bağımsız değişken tarafından işaret edilen aralığı geçerli takvim zamanına göre belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int timespec_get(
@@ -85,7 +85,7 @@ Başarılı olursa *taban* değeri 0 döndürür.
 
 **Microsoft'a Özgü**
 
-Bu işlevler yalnızca *temel* değer olarak **TIME_UTC** destekler. Bu, *time_spec* değerini dönem başı, gece yarısı, 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) için saniye ve nanosaniye sayısına ayarlar. Bir **yapı** **_timespec32**, **tv_sec** bir **__time32_t** değeridir. Bir **yapı** **_timespec64**, **tv_sec** bir **__time64_t** değeridir. Bir **struct** **timespec**içinde **tv_sec** , önişlemci makrosu _USE_32BIT_TIME_T tanımlandığına bağlı olarak 32 bit veya 64 bit olan **time_t** türüdür. **Timespec_get** işlevi _USE_32BIT_TIME_T tanımlanmışsa **_timespec32_get** çağıran bir satır içi işlevdir; Aksi takdirde **_timespec64_get**çağırır.
+Bu işlevler yalnızca *temel* değer olarak **TIME_UTC** destekler. Bu, *time_spec* değerini dönem başı, gece yarısı, 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) için saniye ve nanosaniye sayısına ayarlar. **`struct`** **_Timespec32**, **tv_sec** bir **__time32_t** değeridir. **`struct`** **_Timespec64**, **tv_sec** bir **__time64_t** değeridir. Bir **`struct`** **timespec**içinde **tv_sec** , önişlemci makrosu _USE_32BIT_TIME_T tanımlanmış olup olmadığına bağlı olarak 32 bit veya 64 bit olan bir **time_t** türüdür. **Timespec_get** işlevi _USE_32BIT_TIME_T tanımlanmışsa **_timespec32_get** çağıran bir satır içi işlevdir; Aksi takdirde **_timespec64_get**çağırır.
 
 **Son Microsoft 'a özgü**
 
@@ -95,7 +95,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<Time. h>, C++: \<CTime> veya \<Time. h>|
+|**timespec_get**, **_timespec32_get**, **_timespec64_get**|C: \<time.h> , C++: \<ctime> veya\<time.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

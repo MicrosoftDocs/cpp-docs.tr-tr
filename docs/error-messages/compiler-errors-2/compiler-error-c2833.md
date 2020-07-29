@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2833
 ms.assetid: b9418ce1-e2ee-4599-8959-6fde89c27569
-ms.openlocfilehash: c1467a3c67cccf28cc6b9bd0f987fe77b8da8988
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a6ffcb13d04f3c7c5ac62e147a2b6b2b305e11e1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757884"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218175"
 ---
 # <a name="compiler-error-c2833"></a>Derleyici hatası C2833
 
-' işleç işleci ' tanınan bir işleç veya tür değil
+> ' işleç *işleci-adı*' tanınan bir işleç veya tür değil
 
-`operator` kelimesinin ardından, geçersiz kılmak istediğiniz bir operatör veya dönüştürmek istediğiniz bir tür gelmelidir.
+Sözcüğe, **`operator`** geçersiz kılmak istediğiniz bir *operatör adı* veya dönüştürmek istediğiniz bir tür gelmelidir.
 
 Yönetilen bir türde tanımlayabileceğiniz işleçlerin bir listesi için, bkz. [Kullanıcı tanımlı işleçler](../../dotnet/user-defined-operators-cpp-cli.md).
 

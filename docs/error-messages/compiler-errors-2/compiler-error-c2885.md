@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2885
 ms.assetid: 7743e5f3-a034-44b4-9ee8-5a6254c27f8c
-ms.openlocfilehash: e60f3fff2ef61f4d6374072c05a2ad3e64a57031
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9b6b7bb54d5dce48dc6fce517eb0c909b0284da2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760934"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87233450"
 ---
 # <a name="compiler-error-c2885"></a>Derleyici hatası C2885
 
@@ -21,7 +21,7 @@ ms.locfileid: "74760934"
 
 ## <a name="example"></a>Örnek
 
-Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir: iç içe bir türe `using` bildirimine sahip olmak için artık geçerli değil; iç içe geçmiş türde yaptığınız her başvuruyu açıkça nitelemeniz, türü bir ad alanına yerleştirmeniz veya bir typedef oluşturmanız gerekir.
+Bu hata, Visual Studio 2005 için yapılan derleyici uyumluluğu işinin bir sonucu olarak oluşturulabilir: iç içe bir türe yönelik bir bildirime sahip olmak için artık geçerli değil **`using`** ; iç içe geçmiş türde yaptığınız her başvuruyu açıkça nitelemeniz, türü bir ad alanına koymanız veya bir typedef oluşturmanız gerekir.
 
 Aşağıdaki örnek C2885 oluşturur.
 
@@ -54,7 +54,7 @@ int main () {
 
 ## <a name="example"></a>Örnek
 
-Bir sınıf üyesiyle birlikte `using` anahtar sözcüğünü kullanıyorsanız, C++ bu üyeyi başka bir sınıf (türetilmiş bir sınıf) içinde tanımlamanızı gerektirir.
+**`using`** Anahtar sözcüğünü bir sınıf üyesiyle birlikte kullanırsanız, C++ bu üyeyi başka bir sınıf (türetilmiş bir sınıf) içinde tanımlamanızı gerektirir.
 
 Aşağıdaki örnek C2885 oluşturur.
 
