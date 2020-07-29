@@ -7,18 +7,18 @@ helpviewer_keywords:
 - portability [C++], type int
 - signed integers
 ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
-ms.openlocfilehash: ebce276c8c4efa822601fe36652057b37e922570
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2bfd9e108b36f073635c6d9e55e2299764dcb309
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334443"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87198872"
 ---
 # <a name="type-int"></a>Tür int
 
-İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` tür `short int` ya da **long int** türüyle eşdeğerdir ve hedef ortama bağlı olarak `unsigned int` tür **işaretsiz Short** ya da `unsigned long` tür ile eşdeğerdir. `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.
+Bir **`signed int`** veya öğesinin boyutu, **`unsigned int`** belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde **`int`** tür genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde **`int`** tür genellikle 32 bittir veya 4 bayttır. Bu nedenle, **`int`** türü **`short int`** ya da **`long int`** türüne eşdeğerdir ve **`unsigned int`** **`unsigned short`** **`unsigned long`** hedef ortama bağlı olarak tür ya da türüne eşdeğerdir. **`int`** Türler, aksi belirtilmediği takdirde, tüm imzalı değerleri temsil eder.
 
-`int` ve `unsigned int` tür tanımlayıcıları (veya `unsigned`) C dilinin belirli özelliklerini tanımlar (örneğin, `enum` türü). Bu durumlarda, belirli bir uygulama için `int` ve unsigned int tanımları gerçek depolamayı belirler.
+Tür belirticileri **`int`** ve **`unsigned int`** (veya yalnızca **`unsigned`** ) C dilinin belirli özelliklerini tanımlar (örneğin, **`enum`** türü). Bu durumlarda, **`int`** **`unsigned int`** belirli bir uygulama için ve tanımları gerçek depolamayı tespit ediyor.
 
 **Microsoft'a Özgü**
 
@@ -27,7 +27,7 @@ ms.locfileid: "81334443"
 **SON Microsoft 'a özgü**
 
 > [!NOTE]
-> int ve unsigned int tanımlayıcıları C programlarında sık sık kullanılır, çünkü belirli bir makinenin tam sayı değerlerini o makine için en etkin şekilde işlemesine olanak verirler. Ancak, int ve unsigned int türlerinin boyutu değişebildiği için belirli bir int boyutuna bağlı olan programlar diğer makinelere taşınabilir olmayabilir. Programları daha taşınabilir hale getirmek için, sabit kodlanmış veri boyutları yerine sizeof işleci ( [sizeof işleci](../c-language/sizeof-operator-c.md)içinde anlatıldığı gibi) ile ifadeleri kullanabilirsiniz.
+> **`int`** Ve **`unsigned int`** tür belirticileri, belirli bir makinenin bu makine için en verimli şekilde tam sayı değerlerini Işlemesini sağladığından C programlarında yaygın olarak kullanılır. Ancak, **`int`** ve türlerinin boyutları farklı olduğundan, **`unsigned int`** belirli bir boyuta bağlı olan programlar **`int`** diğer makinelere taşınmayabilir. Programları daha taşınabilir hale getirmek için, **`sizeof`** sabit kodlanmış veri boyutları yerine işleçle ( [ `sizeof` işleçte](../c-language/sizeof-operator-c.md)anlatıldığı gibi) ifadeleri kullanabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

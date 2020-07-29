@@ -37,12 +37,12 @@ helpviewer_keywords:
 - trigonometric functions
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-ms.openlocfilehash: 8e50a40df126b400163c2dde8c950da03d286aef
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: 7e6e4d9fee0df20ab81f15483cd5f7f4de16d751
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507020"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216732"
 ---
 # <a name="sin-sinf-sinl"></a>sin, sinf, sinl
 
@@ -70,16 +70,16 @@ Radyan cinsinden açı.
 
 **Sin** işlevleri *x*sinüsünü döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Yok|_DOMAIN|
+|± QNAN, IND|Hiçbiri|_DOMAIN|
 |± ∞ (sin, sinf, sinl)|Geçersiz|_DOMAIN|
 
 Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **Sin** 'in aşırı yüklerini çağırabilirsiniz. C programında, **Sin** her zaman **Double**öğesini alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **Sin** 'in aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **Sin** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

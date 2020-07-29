@@ -43,18 +43,18 @@ helpviewer_keywords:
 - _mkgmtime32 function
 - time, converting
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
-ms.openlocfilehash: 4b20073a2022c7da59a5e224a04051901b7b8a4f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cc8ccfc628a0f0c5dd649dbb5cf3bd0b552b5d11
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914650"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216888"
 ---
 # <a name="_mkgmtime-_mkgmtime32-_mkgmtime64"></a>_mkgmtime, _mkgmtime32, _mkgmtime64
 
-**Struct** **TM** tarafından temsil edilen UTC zamanını, **TIME_T** türü tarafından temsil edilen UTC zamanına dönüştürür.
+Bir TM tarafından temsil edilen UTC süresini bir **`struct`** **tm** **time_t** türü ile temsil edilen UTC zamanına dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 time_t _mkgmtime(
@@ -71,7 +71,7 @@ __time64_t _mkgmtime64(
 ### <a name="parameters"></a>Parametreler
 
 *timeptr*\
-Dönüştürülecek **Yapı** **TM** olarak UTC zamanına yönelik bir işaretçi.
+Dönüştürülecek bir TM olarak UTC saati işaretçisi **`struct`** **tm** .
 
 ## <a name="return-value"></a>Dönüş Değeri
 

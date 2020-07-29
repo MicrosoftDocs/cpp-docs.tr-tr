@@ -29,12 +29,12 @@ helpviewer_keywords:
 - stack, recovering
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-ms.openlocfilehash: b19b66279427aa4623cff037e67067096eb6bd42
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6f4d5d930ebdc487c3c2bcc2f93494a25528c438
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917778"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216784"
 ---
 # <a name="_resetstkoflw"></a>_resetstkoflw
 
@@ -79,7 +79,7 @@ Bu en büyük yığın boyutu aşıldığında, sistem aşağıdaki üç şeyi y
 
 Bu noktada yığının artık bir Guard sayfası olmadığını unutmayın. Bir sonraki sefer, bir koruyucu sayfa olması gereken her seferinde yığın sonuna kadar bir süre büyüdükçe, program yığının sonunun ötesinde yazar ve erişim ihlaline neden olur.
 
-Bir yığın taşması özel durumu sonrasında kurtarma yapıldığında koruma sayfasını geri yüklemek için **_resetstkoflw** çağırın. Bu işlev, **__except** bloğunun ana gövdesinin içinden veya bir **__except** bloğunun dışında çağrılabilir. Bununla birlikte, ne zaman kullanılması gerektiği konusunda bazı kısıtlamalar vardır. **_resetstkoflw** hiçbir şekilde çağrılmamalıdır:
+Bir yığın taşması özel durumu sonrasında kurtarma yapıldığında koruma sayfasını geri yüklemek için **_resetstkoflw** çağırın. Bu işlev, bir bloğun ana gövdesinin içinden **`__except`** veya bir bloğun dışında çağrılabilir **`__except`** . Bununla birlikte, ne zaman kullanılması gerektiği konusunda bazı kısıtlamalar vardır. **_resetstkoflw** hiçbir şekilde çağrılmamalıdır:
 
 - Filtre ifadesi.
 
@@ -87,17 +87,17 @@ Bir yığın taşması özel durumu sonrasında kurtarma yapıldığında koruma
 
 - Bir filtre işlevinden çağrılan işlev.
 
-- Bir **catch** bloğu.
+- Bir **`catch`** blok.
 
-- **__Finally** bloğu.
+- Bir **`__finally`** blok.
 
 Bu noktalarda, yığın henüz yeterince uygun değildir.
 
-Yığın taşması özel durumları, C++ özel durumları değil, yapılandırılmış özel durumlar olarak oluşturulur. bu nedenle **_resetstkoflw** , bir yığın taşması özel durumunu yakalayacağından sıradan bir **catch** bloğunda yararlı değildir. Ancak, C++ özel durumları oluşturan yapılandırılmış bir özel durum Çeviricisi uygulamak için [_set_se_translator](set-se-translator.md) kullanılırsa (ikinci örnekte olduğu gibi), bir yığın taşması özel durumu c++ catch bloğu tarafından Işlenebilen bir c++ özel durumu oluşur.
+Yığın taşması özel durumları, C++ özel durumları değil, yapılandırılmış özel durumlar olarak oluşturulur. bu nedenle **_resetstkoflw** , **`catch`** bir yığın taşması özel durumu yakalayacağından sıradan bir blokta yararlı değildir. Ancak, C++ özel durumları oluşturan yapılandırılmış bir özel durum Çeviricisi uygulamak için [_set_se_translator](set-se-translator.md) kullanılırsa (ikinci örnekte olduğu gibi), bir yığın taşması özel durumu c++ catch bloğu tarafından Işlenebilen bir c++ özel durumu oluşur.
 
 Yapılandırılmış özel durum çevirici işlevi tarafından oluşturulan bir özel durumdan erişilen bir C++ catch bloğunda **_resetstkoflw** çağırmak güvenli değildir. Bu durumda, yığın alanı serbest bırakılmaz ve yığın işaretçisi, catch bloğundan önce geri çevrilebilir nesneler için çağrılsa bile, catch bloğunun dışına çıkana kadar sıfırlanmaz. Bu işlev, yığın alanı serbest bırakılır ve yığın işaretçisi sıfırlanana kadar çağrılmamalıdır. Bu nedenle, yalnızca catch bloğundan çıkıldıktan sonra çağrılmalıdır. Bir önceki yığın taşmasından kurtarmaya çalışan catch bloğunda oluşan bir yığın taşması kurtarılabilir olmadığından ve catch bloğunda taşma, kendisinin aynı catch bloğu tarafından işlendiği bir özel durum harekete geçirirse programın yanıt vermemesine neden olabileceğinden, catch bloğunda olabildiğince az yığın alanı kullanılmalıdır.
 
-**_Resetstkoflw** , **__except** bloğu içinde olduğu gibi doğru bir konumda kullanılsalar bile başarısız olabilir. Yığını geri döndürmeden sonra bile, yığının son sayfasına yazmadan **_resetstkoflw** yürütmek için yeterli yığın alanı yoksa, **_resetstkoflw** koruma sayfası olarak yığının son sayfasını sıfırlayamaz ve hata belirten 0 değerini döndürür. Bu nedenle, bu işlevin güvenli kullanımı, yığının kullanım açısından güvenli olduğunu varsaymak yerine dönüş değerinin denetlenmesini içermelidir.
+**_Resetstkoflw** , bir blok içindeki gibi doğru bir konumda kullanılsa bile başarısız olabilir **`__except`** . Yığını geri döndürmeden sonra bile, yığının son sayfasına yazmadan **_resetstkoflw** yürütmek için yeterli yığın alanı yoksa, **_resetstkoflw** koruma sayfası olarak yığının son sayfasını sıfırlayamaz ve hata belirten 0 değerini döndürür. Bu nedenle, bu işlevin güvenli kullanımı, yığının kullanım açısından güvenli olduğunu varsaymak yerine dönüş değerinin denetlenmesini içermelidir.
 
 Yapılandırılmış özel durum işleme, uygulama **/clr** ile derlendiğinde bir **STATUS_STACK_OVERFLOW** özel durumu yakalayamaz (bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)).
 
@@ -107,7 +107,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_resetstkoflw**|\<malloc. h>|
+|**_resetstkoflw**|\<malloc.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

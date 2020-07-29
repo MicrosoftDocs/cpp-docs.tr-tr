@@ -37,18 +37,18 @@ helpviewer_keywords:
 - fmaf function
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-ms.openlocfilehash: be3578aa9c66f329e191749b4506091bff69b1eb
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d82565ed53f311ef1b2cf5942d207bf96090bd13
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914949"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217005"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
 İki değeri birlikte çarpar, üçüncü bir değer ekler ve sonra, ara yuvarlama nedeniyle herhangi bir duyarlık kaybı olmadan sonucu yuvarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double fma(
@@ -84,7 +84,7 @@ long double fmal(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Çarpılacak ilk değer.
 
 *Iz*<br/>
@@ -112,7 +112,7 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **FMA** aşırı yüklerini çağırabilirsiniz. C programında **FMA** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **FMA** 'nın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **FMA** her zaman alır ve döndürür **`double`** .
 
 Bu işlev değeri sonsuz duyarlığa alınmış gibi hesaplar ve sonra nihai sonucu yuvarlar.
 
@@ -122,7 +122,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**FMA**, **fmaf**, **Fmal**|\<Math. h>|\<cmath>|
+|**FMA**, **fmaf**, **Fmal**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

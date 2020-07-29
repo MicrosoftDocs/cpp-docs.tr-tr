@@ -1,23 +1,23 @@
 ---
-title: transmit_as (C++ com özniteliği)
+title: transmit_as (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.transmit_as
 helpviewer_keywords:
 - transmit_as attribute
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
-ms.openlocfilehash: cf89be12672ac77a67617b6b222f27d739db9261
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a34d57cc60dcc65e8b111c595fdd819dea407b78
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214493"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87201134"
 ---
 # <a name="transmit_as"></a>transmit_as
 
 Derleyiciye, iletilen bir tür ile istemci ve sunucu uygulamalarının işlemekte olan bir türü ilişkilendireceğini bildirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ transmit_as(type) ]
@@ -25,12 +25,12 @@ Derleyiciye, iletilen bir tür ile istemci ve sunucu uygulamalarının işlemekt
 
 ### <a name="parameters"></a>Parametreler
 
-*type*<br/>
+*türüyle*<br/>
 İstemci ve sunucu arasında aktarılan veri türünü belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Transmit_as** C++ özniteliği [transmit_as](/windows/win32/Midl/transmit-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Transmit_as** C++ özniteliği, [transmit_as](/windows/win32/Midl/transmit-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -70,7 +70,7 @@ struct _TREE_NODE_TYPE * right;
 
 |||
 |-|-|
-|**Uygulama hedefi**|**genişletiyor**|
+|**Şunlara uygulanır**|**`typedef`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -80,5 +80,5 @@ struct _TREE_NODE_TYPE * right;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[export](export.md)
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[işlemi](export.md)

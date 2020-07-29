@@ -20,16 +20,16 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-ms.openlocfilehash: 28399a1cd55407aadbc5d59e1e835892218ad0c8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e6b4df60f4d28839419d02fd3ed6d7cbf73d327f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376604"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87202200"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 
-**Char** dizisi nesnesinde depolanan öğeler dizisine ve bu öğelerden öğelerin iletimini kontrol eden bir akış arabelleği açıklar.
+Dizi nesnesinde depolanan bir öğe dizisine ve öğesinden öğelerin aktarılmasını denetleyen bir akış arabelleği tanımlar **`char`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,53 +39,53 @@ class strstreambuf : public streambuf
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesnenin nasıl oluşturulduruna bağlı olarak, dizideki değişiklikleri karşılamak için gerektiğinde ayrılabilir, genişletilebilir ve serbest bırakılabilir.
+Nesnenin nasıl oluşturulduğuna bağlı olarak, dizideki değişikliklere uyum sağlamak için gerektiğinde ayrılabilir, genişletilebilir ve serbest bırakılmış olabilir.
 
-Sınıfın `strstreambuf` bir `strstreambuf` nesnesi, mod olarak birkaç mod bilgisi biti depolar. Bu bitler, denetlenen dizinin:
+Sınıfının bir nesnesi `strstreambuf` , modu gibi birkaç bit mod bilgisini depolar `strstreambuf` . Bu bitler denetimli sıranın olup olmadığını gösterir:
 
-- Tahsis edildi ve eninde sonunda serbest bırakılmaları gerekiyor.
+- Ayrıldı ve sonunda serbest bırakılmalıdır.
 
 - Değiştirilebilir.
 
-- Depolama yeniden tahsis edilerek genişletilebilir.
+- , Depolama alanı realolarak eklenerek genişletilebilir.
 
-- Dondurulmuş ve bu nedenle nesne yok edilmeden önce çözülmüş olması gerekir veya nesne dışında bir ajans tarafından serbest (tahsis) .
+- Dondurulmuş ve bu nedenle nesne yok edilirken veya (ayrılmışsa) nesne dışında bir acenteden önce dondurulmamış olması gerekir.
 
-Bu ayrı mod bitlerinin durumuna bakılmaksızın, dondurulan denetlenen bir dizi değiştirilemez veya genişletilemez.
+Dondurulmuş olan denetimli bir sıra, bu ayrı mod bitlerinin durumundan bağımsız olarak değiştirilemez veya genişletilemez.
 
-Nesne ayrıca ayırmayı denetleyen `strstreambuf` iki işlev için işaretçiler depolar. Bunlar null işaretçileriyse, nesne denetitilen sıra için depolamayı ayırma ve serbest etme yöntemini tasarlar.
+Nesne Ayrıca, ayırmayı denetleyen iki işleve işaretçiler depolar `strstreambuf` . Bunlar null işaretçilerse, nesne, denetimli sıra için depolamayı ayırmak ve serbest bırakma yöntemine sahiptir.
 
 > [!NOTE]
-> Bu sınıf amortismana uğradı. Bunun yerine [stringbuf](../standard-library/sstream-typedefs.md#stringbuf) veya [wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf) kullanmayı düşünün.
+> Bu sınıf kullanım dışıdır. Bunun yerine [stringarabelleğe](../standard-library/sstream-typedefs.md#stringbuf) veya [wstringarabelleğe](../standard-library/sstream-typedefs.md#wstringbuf) kullanmayı düşünün.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Strstreambuf](#strstreambuf)|Türünde `strstreambuf`bir nesne oluşturuyor.|
+|[strstreambuf](#strstreambuf)|Türünde bir nesne oluşturur `strstreambuf` .|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[Dondurmak](#freeze)|Akış arabelleği akışı arabellek işlemleri nde kullanılamamasına neden olur.|
-|[Taşma](#overflow)|Tam bir arabelleğe yeni bir karakter eklendiğinde çağrılabilen korumalı sanal işlev.|
-|[pbackfail](#pbackfail)|Giriş akışına bir öğeyi geri koymaya çalışan ve sonra onu geçerli öğe (bir sonraki işaretçitarafından işaret edilen) yapmaya çalışan korumalı bir sanal üye işlev.|
-|[pcount](#pcount)|Denetlenmeye nisken diziye yazılan öğe sayısının sayısını döndürür.|
-|[seekoff](#seekoff)|Denetitilen akışlar için geçerli konumları değiştirmeye çalışan korumalı sanal üye işlevi.|
-|[seekpos](#seekpos)|Denetitilen akışlar için geçerli konumları değiştirmeye çalışan korumalı sanal üye işlevi.|
-|[Str](#str)|Çağrılar [donuyor](#freeze)ve ardından bir işaretçiyi denetitilen dizinin başına döndürür.|
-|[akış altı](#underflow)|Giriş akışından geçerli öğeyi ayıklamak için korunan bir sanal işlev.|
+|[amazsınız](#freeze)|Akış arabelleği işlemleri aracılığıyla akış arabelleğinin kullanılamamasına neden olur.|
+|[taşma](#overflow)|Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.|
+|[pbackfail](#pbackfail)|Giriş akışına bir öğe geri döndürmeye çalışan korumalı bir sanal üye işlevi ve ardından bunu geçerli öğe (sonraki işaretçinin gösterdiği) yapın.|
+|[pcount](#pcount)|Denetlenen diziye yazılan öğe sayısının sayısını döndürür.|
+|[seekoff](#seekoff)|Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.|
+|[seekpos](#seekpos)|Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.|
+|[üstbilgisine](#str)|Çağırır [ve](#freeze)sonra denetlenen sıranın başlangıcına bir işaretçi döndürür.|
+|[öğe](#underflow)|Giriş akışından geçerli öğeyi ayıklamak için korunan bir sanal işlev.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<strstream>
+**Üst bilgi:**\<strstream>
 
 **Ad alanı:** std
 
-## <a name="strstreambuffreeze"></a><a name="freeze"></a>strstreambuf::dondurma
+## <a name="strstreambuffreeze"></a><a name="freeze"></a>strstreamarabelleğe:: Freeze
 
-Akış arabelleği akışı arabellek işlemleri nde kullanılamamasına neden olur.
+Akış arabelleği işlemleri aracılığıyla akış arabelleğinin kullanılamamasına neden olur.
 
 ```cpp
 void freeze(bool _Freezeit = true);
@@ -94,16 +94,16 @@ void freeze(bool _Freezeit = true);
 ### <a name="parameters"></a>Parametreler
 
 *_Freezeit*\
-Derenin dondurulmasını isteyip istemediğini gösteren **bir bool.**
+**`bool`** Akışın dondurulmuş olmasını isteyip istemediğinizi belirten bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Freezeit* doğruysa, işlev depolanan `strstreambuf` modu değiştirerek denetlenir diziyi dondurabilir. Aksi takdirde, kontrollü dizi dondurulmuş değil yapar.
+*_Freezeit* true ise, işlev, `strstreambuf` denetlenen diziyi dondurulmuş hale getirmek için saklı modu değiştirir. Aksi takdirde, denetlenen sıranın dondurulmuş olmasını sağlar.
 
-[str](#str) `freeze`anlamına gelir .
+[Str](#str) şunları belirtir `freeze` .
 
 > [!NOTE]
-> Dondurulmuş bir arabellek imha `strstreambuf` sırasında serbest bırakılmaz. Bellek sızıntısını önlemek için boşverilmeden önce arabelleği çözmeniz gerekir.
+> Dondurulmuş bir arabellek, yok etme sırasında serbest bırakılmaz `strstreambuf` . Bellek sızıntısını önlemek için, serbest bırakmadan önce arabelleği ortadan kaldırmalısınız.
 
 ### <a name="example"></a>Örnek
 
@@ -171,9 +171,9 @@ after clearing stream: stream good
 test1test3
 ```
 
-## <a name="strstreambufoverflow"></a><a name="overflow"></a>strstreambuf::taşma
+## <a name="strstreambufoverflow"></a><a name="overflow"></a>strstreamarabelleğe:: overflow
 
-Tam bir arabelleğe yeni bir karakter eklendiğinde çağrılabilen korumalı sanal işlev.
+Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.
 
 ```cpp
 virtual int overflow(int _Meta = EOF);
@@ -182,23 +182,23 @@ virtual int overflow(int _Meta = EOF);
 ### <a name="parameters"></a>Parametreler
 
 *_Meta*\
-Arabelleğe eklenecek karakter veya `EOF`.
+Arabelleğe eklenecek karakter veya `EOF` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olamazsa, döndürür. `EOF` Aksi takdirde, * \_Meta* == `EOF`ise, başka `EOF`bir değer döndürür . Aksi takdirde, * \_Meta*döndürür.
+İşlev başarılı olmazsa, döndürür `EOF` . Aksi takdirde, * \_ meta*ise dışında  ==  `EOF` bir değer döndürür `EOF` . Aksi takdirde, * \_ meta*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-* \_Meta* != `EOF`, korunan sanal üye işlev çıktı `(char)_Meta` arabelleği içine öğe eklemeye çalışır. Bunu çeşitli şekillerde yapabilirsiniz:
+Eğer * \_ meta* ! = ise `EOF` , korumalı sanal üye işlevi öğeyi çıkış arabelleğine eklemeye çalışır `(char)_Meta` . Bunu çeşitli yollarla yapabilirsiniz:
 
-- Bir yazma konumu varsa, öğeyi yazma konumuna depolayabilir ve çıktı arabelleği için bir sonraki işaretçiyi artım.
+- Bir yazma konumu varsa, öğeyi yazma konumuna kaydedebilir ve çıkış arabelleği için sonraki işaretçiyi artırabilirsiniz.
 
-- Depolanan strstreambuf modu, denetlenmiş sıranın değiştirilebilir, genişletilebilir ve dondurulmadığını söylüyorsa, işlev çıktı arabelleği için yeni bir ayırma yaparak bir yazma konumu sağlayabilir. Çıktı arabelleği bu şekilde genişletilmesi de ilişkili giriş arabellek genişletir.
+- Saklı strstreammode, denetlenen sıranın değiştirilebilir, genişletilebilir ve dondurulmuş olduğunu söyyorsa, bu işlev çıktı arabelleği için yeni ayırarak bir yazma konumu kullanılabilir hale getirir. Çıkış arabelleğini bu şekilde genişletmek, ilişkili giriş arabelleğini de genişletir.
 
-## <a name="strstreambufpbackfail"></a><a name="pbackfail"></a>strstreambuf::pbackfail
+## <a name="strstreambufpbackfail"></a><a name="pbackfail"></a>strstreamarabelleğe::p backfail
 
-Giriş akışına bir öğeyi geri koymaya çalışan ve sonra onu geçerli öğe (bir sonraki işaretçitarafından işaret edilen) yapan korumalı sanal üye işlev.
+Giriş akışına bir öğe geri döndürmeye çalışan korumalı bir sanal üye işlevi ve ardından bunu geçerli öğe yapar (sonraki işaretçinin gösterdiği).
 
 ```cpp
 virtual int pbackfail(int _Meta = EOF);
@@ -207,25 +207,25 @@ virtual int pbackfail(int _Meta = EOF);
 ### <a name="parameters"></a>Parametreler
 
 *_Meta*\
-Arabelleğe eklenecek karakter veya `EOF`.
+Arabelleğe eklenecek karakter veya `EOF` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olamazsa, döndürür. `EOF` Aksi takdirde, * \_Meta* == `EOF`ise, başka `EOF`bir değer döndürür . Aksi takdirde, * \_Meta*döndürür.
+İşlev başarılı olmazsa, döndürür `EOF` . Aksi takdirde, * \_ meta*ise dışında  ==  `EOF` bir değer döndürür `EOF` . Aksi takdirde, * \_ meta*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlev, bir öğeyi giriş arabellesine geri koymaya ve sonra onu geçerli öğe (bir sonraki işaretçiye işaret eden) yapmaya çalışır.
+Korumalı sanal üye işlevi, giriş arabelleğine bir öğe geri döndürmeye çalışır ve sonra geçerli öğe (sonraki işaretçinin gösterdiği) yapar.
 
-* \_Meta* == ise, geri itmek için öğe etkili bir geçerli öğeönce akışı zaten biridir.`EOF` Aksi takdirde, bu öğe `ch = (char)_Meta`nin yerine . İşlev çeşitli şekillerde bir öğegeri koyabilirsiniz:
+Eğer * \_ meta*ise  ==  `EOF` , geri gönderme öğesi geçerli öğeden önceki bir akışta etkin bir şekilde zaten var. Aksi takdirde, bu öğe ile değiştirilmiştir `ch = (char)_Meta` . İşlevi bir öğeyi çeşitli yollarla geri alabilir:
 
-- Bir geri alma konumu varsa ve orada depolanan öğe `ch`ile karşılaştırıldığında, giriş arabelleği için bir sonraki işaretçiyi atabilir.
+- Bir Putback konumu varsa ve şuna eşit olarak karşılaştırıldığı öğe, `ch` giriş arabelleği için bir sonraki işaretçiyi azaledebilir.
 
-- Bir geri alma konumu varsa ve strstreambuf modu denetitilen sıranın değiştirilebilir `ch` olduğunu söylüyorsa, işlev putback konumuna depolayabilir ve giriş arabelleği için bir sonraki işaretçiyi atayabilir.
+- Bir Putback konumu varsa ve strstreambuffer modu denetlenen diziyi değiştirilebilir ise, işlev `ch` putback konumunu saklayabilir ve giriş arabelleği için bir sonraki işaretçiyi azaltır.
 
-## <a name="strstreambufpcount"></a><a name="pcount"></a>strstreambuf::p sayısı
+## <a name="strstreambufpcount"></a><a name="pcount"></a>strstreamarabelleğe::p sayısı
 
-Denetlenmeye nisken diziye yazılan öğe sayısının sayısını döndürür.
+Denetlenen diziye yazılan öğe sayısının sayısını döndürür.
 
 ```cpp
 streamsize pcount() const;
@@ -233,11 +233,11 @@ streamsize pcount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetlenmeyen sıraya yazılan öğe sayısının sayısı.
+Denetlenen diziye yazılan öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellikle, [pptr](../standard-library/basic-streambuf-class.md#pptr) null işaretçiise, işlev sıfır döndürür. Aksi takdirde, `pptr`  -  [pbase](../standard-library/basic-streambuf-class.md#pbase)döndürür.
+Özellikle, [pptr](../standard-library/basic-streambuf-class.md#pptr) null işaretçisiyse, işlev sıfır döndürür. Aksi takdirde, `pptr`  -  [pbase](../standard-library/basic-streambuf-class.md#pbase)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -258,9 +258,9 @@ int main( )
 }
 ```
 
-## <a name="strstreambufseekoff"></a><a name="seekoff"></a>strstreambuf::seekoff
+## <a name="strstreambufseekoff"></a><a name="seekoff"></a>strstreamarabelleğe:: seekoff
 
-Denetitilen akışlar için geçerli konumları değiştirmeye çalışan korumalı sanal üye işlevi.
+Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.
 
 ```cpp
 virtual streampos seekoff(streamoff _Off,
@@ -270,38 +270,38 @@ virtual streampos seekoff(streamoff _Off,
 
 ### <a name="parameters"></a>Parametreler
 
-*_off*\
-*_Way*göreli aramak için pozisyon .
+*_Off*\
+*_Way*göreli olarak arama konumu.
 
-*_way*\
-Ofset işlemleri için başlangıç noktası. Bkz. olası değerler için [seekdir.](../standard-library/ios-base-class.md#seekdir)
+*_Way*\
+Dengeleme işlemleri için başlangıç noktası. Olası değerler için bkz. [seekdir](../standard-library/ios-base-class.md#seekdir) .
 
 *_Which*\
-İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin vermektir.
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev ya da her iki akış konumunu değiştirmeyi başarırsa, ortaya çıkan akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumunu döndürür.
+İşlev ya da her iki akış konumunu değiştirme içinde başarılı olursa, sonuç akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korunan sanal üye işlevi, denetitilen akışlar için geçerli konumları değiştirmeye çalışır. Sınıf strstreambuf bir nesne için, bir akış konumu tamamen bir akış ofset oluşur. Ofset sıfır, denetlenir dizinin ilk öğesini belirtir.
+Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları endeavors. Strstreamarabelleğe sınıfının bir nesnesi için bir akış konumu yalnızca bir akış sapmasını içerir. Sıfır değeri, denetlenen dizinin ilk öğesini belirler.
 
-Yeni pozisyon aşağıdaki gibi belirlenir:
+Yeni konum aşağıdaki gibi belirlenir:
 
-- Eğer `_Way == ios_base::beg`, yeni pozisyon akışı artı *_Off*başlangıcıdır.
+- İse `_Way == ios_base::beg` , yeni konum akışın başıdır ve *_Off*.
 
-- Eğer `_Way == ios_base::cur`, yeni konum geçerli akış konumu artı *_Off.*
+- İse `_Way == ios_base::cur` , yeni konum geçerli akış konumu artı *_Off*.
 
-- Eğer `_Way == ios_base::end`, yeni pozisyon akışı artı *_Off*sonudur.
+- İse `_Way == ios_base::end` , yeni konum akışın sonu artı *_Off*.
 
-`_Which & ios_base::in` Sıfır değilse ve giriş arabelleği varsa, işlev giriş arabelleği okumak için bir sonraki konumu değiştirir. Ayrıca `_Which & ios_base::out` sıfır `_Way != ios_base::cur`değilse ve çıktı arabelleği varsa, işlev de okumak için bir sonraki konumu eşleşecek şekilde yazmak için bir sonraki konumu ayarlar.
+`_Which & ios_base::in`Sıfır değilse ve giriş arabelleği varsa, işlev giriş arabelleğinde okunacak bir sonraki konumu değiştirir. `_Which & ios_base::out`Ayrıca sıfır dışında bir değer varsa `_Way != ios_base::cur` ve çıkış arabelleği varsa, işlev, sonraki konumu okumak için de bir sonraki konumdan eşleşecek şekilde ayarlar.
 
-Aksi takdirde, sıfır olmayan `_Which & ios_base::out` ve çıktı arabellek varsa, işlev çıktı arabelleği yazmak için bir sonraki konumu değiştirir. Aksi takdirde, konumlandırma işlemi başarısız olur. Bir konumlandırma işleminin başarılı olabilmesi için, elde edilen akış konumunun denetlenme sırası içinde olması gerekir.
+Aksi halde, `_Which & ios_base::out` sıfır değilse ve çıkış arabelleği varsa, işlev sonraki konumu çıkış arabelleğine yazmak için değiştirir. Aksi takdirde, konumlandırma işlemi başarısız olur. Konumlandırma işleminin başarılı olması için, elde edilen akış konumu denetimli sıra içinde olmalıdır.
 
-## <a name="strstreambufseekpos"></a><a name="seekpos"></a>strstreambuf::seekpos
+## <a name="strstreambufseekpos"></a><a name="seekpos"></a>strstreamarabelleğe:: seekpos
 
-Denetitilen akışlar için geçerli konumları değiştirmeye çalışan korumalı sanal üye işlevi.
+Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.
 
 ```cpp
 virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::in | ios_base::out);
@@ -310,24 +310,24 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 ### <a name="parameters"></a>Parametreler
 
 *_Sp*\
-Aranacak pozisyon.
+Arama yapılacak konum.
 
 *_Which*\
-İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin vermektir.
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev ya da her iki akış konumunu değiştirmeyi başarırsa, ortaya çıkan akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumunu döndürür. Akış konumunun geçersiz olup olmadığını belirlemek için, `pos_type(off_type(-1))`iade değerini .
+İşlev ya da her iki akış konumunu değiştirme içinde başarılı olursa, sonuç akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumu döndürür. Akış konumunun geçersiz olup olmadığını anlamak için dönüş değerini ile karşılaştırın `pos_type(off_type(-1))` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korunan sanal üye işlevi, denetitilen akışlar için geçerli konumları değiştirmeye çalışır. Sınıf strstreambuf bir nesne için, bir akış konumu tamamen bir akış ofset oluşur. Ofset sıfır, denetlenir dizinin ilk öğesini belirtir. Yeni pozisyon *_Sp*tarafından belirlenir.
+Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları endeavors. Strstreamarabelleğe sınıfının bir nesnesi için bir akış konumu yalnızca bir akış sapmasını içerir. Sıfır değeri, denetlenen dizinin ilk öğesini belirler. Yeni konum *_Sp*belirlenir.
 
-ios_base::in sıfır değilse ve giriş arabelleği varsa, işlev giriş arabelleği okumak için bir sonraki konumu değiştirir. **ios_base::in** `_Which`  &  `_Which` değilse ve çıktı arabelleği varsa, işlev de okumak için bir sonraki konumu eşleşecek şekilde yazmak için bir sonraki konumu  &  `ios_base::out` ayarlar. Aksi takdirde, `_Which`  &  `ios_base::out` sıfır olmayan ve çıktı arabellek varsa, işlev çıktı arabelleği yazmak için bir sonraki konumu değiştirir. Aksi takdirde, konumlandırma işlemi başarısız olur. Bir konumlandırma işleminin başarılı olabilmesi için, elde edilen akış konumunun denetlenme sırası içinde olması gerekir.
+`_Which`  &  **İos_base:: ın** sıfır değilse ve giriş arabelleği varsa, işlev giriş arabelleğinde okunacak bir sonraki konumu değiştirir. `_Which`  &  `ios_base::out` Sıfır dışında ise ve çıkış arabelleği varsa, bu işlev bir sonraki konumu okumak üzere bir sonraki konumdan eşleşecek şekilde de ayarlar. Aksi halde, `_Which`  &  `ios_base::out` sıfır değilse ve çıkış arabelleği varsa, işlev sonraki konumu çıkış arabelleğine yazmak için değiştirir. Aksi takdirde, konumlandırma işlemi başarısız olur. Konumlandırma işleminin başarılı olması için, elde edilen akış konumu denetimli sıra içinde olmalıdır.
 
-## <a name="strstreambufstr"></a><a name="str"></a>strstreambuf::str
+## <a name="strstreambufstr"></a><a name="str"></a>strstreamarabelleğe:: Str
 
-Çağrılar [donuyor](#freeze)ve ardından bir işaretçiyi denetitilen dizinin başına döndürür.
+Çağırır [ve](#freeze)sonra denetlenen sıranın başlangıcına bir işaretçi döndürür.
 
 ```cpp
 char *str();
@@ -335,138 +335,138 @@ char *str();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetlenen dizinin başına bir işaretçi.
+Denetlenen dizinin başlangıcına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açıkça eklemediğiniz sürece sonlandırıcı null öğesi yoktur.
+Açıkça bir tane eklemediğiniz takdirde Sonlandırıcı null öğe yok.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [strstreambuf::str](#freeze) kullanan **str**bir örnek için dondurma .
+**Str**kullanan bir örnek için bkz. [strstreamarabelleğe:: Freeze](#freeze) .
 
-## <a name="strstreambufstrstreambuf"></a><a name="strstreambuf"></a>strstreambuf::strstreambuf
+## <a name="strstreambufstrstreambuf"></a><a name="strstreambuf"></a>strstreamarabelleğe:: strstreamarabelleğe
 
-Türünde `strstreambuf`bir nesne oluşturuyor.
+Türünde bir nesne oluşturur `strstreambuf` .
 
 ```cpp
 explicit strstreambuf(streamsize count = 0);
 
-strstreambuf(void (* _Allocfunc)(size_t),
-    void (* _Freefunc)(void*));
+strstreambuf(void (* alloc_func)(size_t),
+    void (* free_func)(void*));
 
-strstreambuf(char* _Getptr,
+strstreambuf(char* getptr,
     streamsize count,
-    char* _Putptr = 0);
+    char* putptr = 0);
 
-strstreambuf(signed char* _Getptr,
+strstreambuf(signed char* getptr,
     streamsize count,
-    signed char* _Putptr = 0);
+    signed char* putptr = 0);
 
-strstreambuf(unsigned char* _Getptr,
+strstreambuf(unsigned char* getptr,
     streamsize count,
-    unsigned char* _Putptr = 0);
+    unsigned char* putptr = 0);
 
-strstreambuf(const char* _Getptr,
+strstreambuf(const char* getptr,
     streamsize count);
 
-strstreambuf(const signed char* _Getptr,
+strstreambuf(const signed char* getptr,
     streamsize count);
 
-strstreambuf(const unsigned char* _Getptr,
+strstreambuf(const unsigned char* getptr,
     streamsize count);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Allocfunc*\
+*alloc_func*\
 Arabellek belleği ayırmak için kullanılan işlev.
 
-*Sayısı*\
-*_Getptr*işaret eden arabelleğe işaret edilen uzunluğunu belirler. *_Getptr* bir bağımsız değişken (ilk oluşturucu formu) değilse, arabellekler için önerilen bir ayırma boyutu.
+*biriktirme*\
+*Getptr*tarafından işaret edilen arabelleğin uzunluğunu belirler. *Getptr* bir bağımsız değişken (ilk Oluşturucu formu) değilse, arabellekler için önerilen bir ayırma boyutu.
 
 *_Freefunc*\
-Arabellek belleği serbest için kullanılan işlev.
+Arabellek belleğini serbest bırakmak için kullanılan işlev.
 
-*_Getptr*\
+*getptr*\
 Giriş için kullanılan bir arabellek.
 
-*_Putptr*\
+*putptr*\
 Çıktı için kullanılan bir arabellek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu, giriş arabelleği, çıktı arabelleği ve strstreambuf ayırmasını denetleyen tüm işaretçilerde bir null işaretçisi depolar. Bu, denetlenmiş sırayı değiştirilebilir ve genişletilebilir hale getirmek için depolanan strstreambuf modunu ayarlar. Ayrıca, önerilen ilk ayırma boyutu olarak *saymayı* kabul eder.
+İlk Oluşturucu, giriş arabelleğini, çıkış arabelleğini ve strstreambuffer ayırmayı denetleyen tüm işaretçilerde boş bir işaretçi depolar. Denetlenen sırayı değiştirilebilir ve Genişletilebilir hale getirmek için depolanan strstreammode modunu ayarlar. Ayrıca, önerilen ilk ayırma boyutu olarak *Count* kabul eder.
 
-İkinci oluşturucu ilk gibi çalışır, ancak bu depolama ve * \_Freefunc* işlevi için işaretçi olarak depolama ayırmak için aramak için işlev için işaretçi olarak * \_Allocfunc* depolar bu depolama serbest aramak için çağrı.
+İkinci Oluşturucu ilk gibi davranır, ancak depolama alanını ayırmak için çağrılacak işlevin işaretçisi olarak *alloc_func* depolar ve bu depolama alanını serbest bırakmak için çağrılacak işlevin işaretçisi olarak *free_func* .
 
-Üç yapıcı:
+Üç Oluşturucu:
 
 ```cpp
-strstreambuf(char *_Getptr,
+strstreambuf(char *getptr,
     streamsize count,
     char *putptr = 0);
 
-strstreambuf(signed char *_Getptr,
+strstreambuf(signed char *getptr,
     streamsize count,
     signed char *putptr = 0);
 
-strstreambuf(unsigned char *_Getptr,
+strstreambuf(unsigned char *getptr,
     streamsize count,
     unsigned char *putptr = 0);
 ```
 
-ayrıca, denetlenebilen sırayı tutmak için kullanılan dizi nesnesini `_Getptr` belirleyen dışında, ilk gibi de görünür. (Bu nedenle, bir null işaretçi olmamalıdır.) Dizideki *N* öğesi sayısı aşağıdaki gibi belirlenir:
+aynı zamanda, *getptr* 'nin denetimli sırayı tutmak için kullanılan dizi nesnesini sıralaması dışında, ilki gibi davranır. (Bu nedenle, null bir işaretçi olmaması gerekir.) Dizideki *öğelerin sayısı* şu şekilde belirlenir:
 
-- (> 0), sonra *N* . `count``count`
+- (*Sayı* > 0 *) ise,* *N* sayılır.
 
-- Eğer`count` ( == 0), `strlen`sonra *N* ( `_Getptr` ( **const** `char` *) ise.
+- If (*Count* = = 0), sonra *N* , `strlen((const char *) getptr )` .
 
-- `count` (< 0), sonra *N* **INT_MAX.**
+- (*Sayı* < 0) Ise, *N* **INT_MAX**.
 
-Null `_Putptr` işaretçiise, işlev yürütülerek sadece bir giriş arabelleği kurar:
+*Putptr* null işaretçisiyse, işlev yalnızca şunu yürüterek bir giriş arabelleği oluşturur:
 
 ```cpp
-setg(_Getptr,
-    _Getptr,
-    _Getptr + N);
+setg(getptr,
+    getptr,
+    getptr + N);
 ```
 
-Aksi takdirde, yürüterek hem giriş hem de çıktı arabellekleri kurar:
+Aksi takdirde, şunu yürüterek hem giriş hem de çıkış arabellekleri kurar:
 
 ```cpp
-setg(_Getptr,
-    _Getptr,
-    _Putptr);
+setg(getptr,
+    getptr,
+    putptr);
 
-setp(_Putptr,
-    _Getptr + N);
+setp(putptr,
+    getptr + N);
 ```
 
-Bu durumda, `_Putptr` [ `_Getptr`, `_Getptr`  +  *N*] aralığında olmalıdır.
+Bu durumda, *putptr* [ *getptr*, *getptr*  +  *N*] aralığında olmalıdır.
 
-Son olarak, üç yapıcılar:
+Son olarak, üç Oluşturucu:
 
 ```cpp
-strstreambuf(const char *_Getptr,
+strstreambuf(const char *getptr,
     streamsize count);
 
-strstreambuf(const signed char *_Getptr,
+strstreambuf(const signed char *getptr,
     streamsize count);
 
-strstreambuf(const unsigned char *_Getptr,
+strstreambuf(const unsigned char *getptr,
     streamsize count);
 ```
 
-tüm aynı şekilde:
+tümü aynı şekilde davranır:
 
 ```cpp
-streambuf((char *)_Getptr, count);
+streambuf((char *)getptr, count);
 ```
 
-depolanan mod, denetlenmiş sırayı ne değiştirilebilir ne de genişletilebilir hale getirir.
+saklı mod, denetimli sırayı değiştirilebilir veya Genişletilebilir olarak yapmaz.
 
-## <a name="strstreambufunderflow"></a><a name="underflow"></a>strstreambuf::underflow
+## <a name="strstreambufunderflow"></a><a name="underflow"></a>strstreamarabelleğe:: yetersiz
 
 Giriş akışından geçerli öğeyi ayıklamak için korunan bir sanal işlev.
 
@@ -476,15 +476,15 @@ virtual int underflow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olamazsa, döndürür. `EOF` Aksi takdirde, yukarıda açıklandığı gibi dönüştürülen giriş akışındaki geçerli öğeyi döndürür.
+İşlev başarılı olmazsa, döndürür `EOF` . Aksi halde, yukarıda açıklandığı gibi dönüştürülmüş olarak, giriş akışındaki geçerli öğeyi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korunan sanal üye işlevi, giriş `ch` arabelleğinden geçerli öğeyi ayıklamak, sonra geçerli akış konumunu`int`ilerletmek`unsigned char`ve öğeyi ( )( ) **ch**olarak döndürmek için çaba göstermektedir. Bunu yalnızca tek bir şekilde yapabilir: okuma konumu varsa, okuma konumunda depolanan öğe olarak alır `ch` ve giriş arabelleği için bir sonraki işaretçiyi ilerler.
+Korumalı sanal üye işlevi, geçerli öğeyi `ch` giriş arabelleğinden ayıklamak için endeavors, sonra geçerli akış konumunu ilerletin ve öğesini olarak döndürür `(int)(unsigned char)ch` . Bunu yalnızca bir şekilde yapabilir: bir okuma konumu kullanılabiliyorsa, `ch` okuma konumunda depolanan öğe olarak alır ve giriş arabelleği için bir sonraki işaretçiyi ilerletir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [streambuf](../standard-library/streambuf-typedefs.md#streambuf)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[iostream Programlama](../standard-library/iostream-programming.md)\
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams kuralları](../standard-library/iostreams-conventions.md)

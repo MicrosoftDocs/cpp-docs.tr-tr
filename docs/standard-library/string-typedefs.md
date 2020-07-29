@@ -1,5 +1,5 @@
 ---
-title: '&lt;dize&gt; typedefs'
+title: '&lt;dize &gt; türü tanımları'
 ms.date: 11/04/2016
 f1_keywords:
 - string/std::string
@@ -7,25 +7,25 @@ f1_keywords:
 - string/std::u32string
 - string/std::wstring
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
-ms.openlocfilehash: 1ee36d67d137c74e17fff845f9d412b2673f311e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8e662e4c13012f31014817489b61ee3ed6bc36e0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376635"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87202304"
 ---
-# <a name="ltstringgt-typedefs"></a>&lt;dize&gt; typedefs
+# <a name="ltstringgt-typedefs"></a>&lt;dize &gt; türü tanımları
 
 ||||
 |-|-|-|
-|[Dize](#string)|[u16string](#u16string)|[u32string](#u32string)|
+|[dizisinde](#string)|[u16string](#u16string)|[u32string](#u32string)|
 |[wstring](#wstring)|
 
-## <a name="string"></a><a name="string"></a>Dize
+## <a name="string"></a><a name="string"></a>dizisinde
 
-Sınıf [şablonunun](../standard-library/basic-string-class.md) uzmanlık basic_string türü **char**öğeleriyle açıklayan bir tür.
+Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`char`** .
 
-Özelleştirmek diğer typedefs `basic_string` [wstring](../standard-library/string-typedefs.md#wstring)dahil , [u16string](../standard-library/string-typedefs.md#u16string), ve [u32string](../standard-library/string-typedefs.md#u32string).
+Özelleştirecek diğer tür tanımları `basic_string` , [wstring](../standard-library/string-typedefs.md#wstring), [u16string](../standard-library/string-typedefs.md#u16string)ve [u32string](../standard-library/string-typedefs.md#u32string)içerir.
 
 ```cpp
 typedef basic_string<char, char_traits<char>, allocator<char>> string;
@@ -33,7 +33,7 @@ typedef basic_string<char, char_traits<char>, allocator<char>> string;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşdeğer beyanlar şunlardır:
+Eşdeğer bildirimler aşağıda verilmiştir:
 
 ```cpp
 string str("");
@@ -41,13 +41,13 @@ string str("");
 basic_string<char> str("");
 ```
 
-Dize oluşturucuların listesi için [bkz: basic_string:basic_string](../standard-library/basic-string-class.md#basic_string).
+Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
 ## <a name="u16string"></a><a name="u16string"></a>u16string
 
-Sınıf [şablonunun](../standard-library/basic-string-class.md) uzmanlık basic_string tanımlayan bir tür. `char16_t`
+Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`char16_t`** .
 
-Özelleştirmek `basic_string` diğer typedefs [wstring,](../standard-library/string-typedefs.md#wstring) [string](../standard-library/string-typedefs.md#string)ve [u32string](../standard-library/string-typedefs.md#u32string)içerir.
+Özelleştirecek diğer tür tanımları `basic_string` [wstring](../standard-library/string-typedefs.md#wstring), [String](../standard-library/string-typedefs.md#string)ve [u32string](../standard-library/string-typedefs.md#u32string)içerir.
 
 ```cpp
 typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16string;
@@ -55,13 +55,13 @@ typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16st
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize oluşturucuların listesi için [bkz: basic_string:basic_string](../standard-library/basic-string-class.md#basic_string).
+Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
 ## <a name="u32string"></a><a name="u32string"></a>u32string
 
-Sınıf [şablonunun](../standard-library/basic-string-class.md) uzmanlık basic_string tanımlayan bir tür. `char32_t`
+Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`char32_t`** .
 
-Özelleştirmek `basic_string` diğer typedefs [string,](../standard-library/string-typedefs.md#string) [u16string](../standard-library/string-typedefs.md#u16string)ve [wstring](../standard-library/string-typedefs.md#wstring)içerir.
+Özelleştirecek diğer tür tanımları `basic_string` [String](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string)ve [wstring](../standard-library/string-typedefs.md#wstring)içerir.
 
 ```cpp
 typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32string;
@@ -69,13 +69,13 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize oluşturucuların listesi için [bkz: basic_string:basic_string](../standard-library/basic-string-class.md#basic_string).
+Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
 ## <a name="wstring"></a><a name="wstring"></a>wstring
 
-Sınıf şablonunun uzmanlık wchar_t **türü**öğeleriyle [basic_string](../standard-library/basic-string-class.md) açıklayan bir tür.
+Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`wchar_t`** .
 
-Özelleştirmek `basic_string` diğer typedefs [string,](../standard-library/string-typedefs.md#string) [u16string](../standard-library/string-typedefs.md#u16string)ve [u32string](../standard-library/string-typedefs.md#u32string)içerir.
+Özelleştirecek diğer tür tanımları `basic_string` [String](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string)ve [u32string](../standard-library/string-typedefs.md#u32string)içerir.
 
 ```cpp
 typedef basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>> wstring;
@@ -83,7 +83,7 @@ typedef basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>> wstring;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eşdeğer beyanlar şunlardır:
+Eşdeğer bildirimler aşağıda verilmiştir:
 
 ```cpp
 wstring wstr(L"");
@@ -91,11 +91,11 @@ wstring wstr(L"");
 basic_string<wchar_t> wstr(L"");
 ```
 
-Dize oluşturucuların listesi için [bkz: basic_string:basic_string](../standard-library/basic-string-class.md#basic_string).
+Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
 > [!NOTE]
-> **wchar_t** boyutu uygulama tanımlı. Kodunuz **wchar_t** belirli bir boyuta bağlıysa, platformunuzun uygulamasını kontrol `sizeof(wchar_t)`edin (örneğin, ). Tüm platformlarda aynı kalması garanti edilen genişliğe sahip bir dize karakter türüne ihtiyacınız varsa, [string](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string)veya [u32string](../standard-library/string-typedefs.md#u32string)kullanın.
+> Boyutu **`wchar_t`** uygulama tanımlı ' dır. Kodunuz **`wchar_t`** belirli bir boyut için bağımlıysa, platformun uygulamasını (örneğin, ile `sizeof(wchar_t)` ) denetleyin. Tüm platformlarda aynı olmaya devam eden bir genişlik içeren bir dize karakter türüne ihtiyacınız varsa, [String](../standard-library/string-typedefs.md#string), [u16string](../standard-library/string-typedefs.md#u16string)veya [u32string](../standard-library/string-typedefs.md#u32string)kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dize>](../standard-library/string.md)
+[\<string>](../standard-library/string.md)

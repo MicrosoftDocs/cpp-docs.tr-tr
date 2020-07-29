@@ -1,17 +1,17 @@
 ---
-title: Unique (C++ com özniteliği)
+title: Unique (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.unique
 helpviewer_keywords:
 - unique attribute
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
-ms.openlocfilehash: d8c01e2fcee6b906b7f70370a0d539192e348104
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a46d607ef03fcb75fea31835726d0e2d95e71df8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214441"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87201030"
 ---
 # <a name="unique-c"></a>benzersiz (C++)
 
@@ -25,7 +25,7 @@ Benzersiz bir işaretçi belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Unique** C++ özniteliği [benzersiz](/windows/win32/Midl/unique) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Unique** C++ özniteliği, [benzersiz](/windows/win32/Midl/unique) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -37,7 +37,7 @@ Benzersiz bir işaretçi belirtir.
 
 |||
 |-|-|
-|**Uygulama hedefi**|**typedef**, **struct**, **Union**, Interface parametresi, Interface yöntemi|
+|**Şunlara uygulanır**|**`typedef`**, **`struct`** ,, **`union`** Interface parametresi, arabirim yöntemi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -47,5 +47,5 @@ Benzersiz bir işaretçi belirtir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[Parametre öznitelikleri](parameter-attributes.md)

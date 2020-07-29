@@ -5,16 +5,16 @@ f1_keywords:
 - functional/std::default_searcher
 helpviewer_keywords:
 - std::default_searcher [C++]
-ms.openlocfilehash: 2c8b93b83b271f787c993f789e1a68f84a60f016
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3b5b05dfa2613f9eeaaa18fa8066bcd44f57d1be
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368921"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87203734"
 ---
-# <a name="default_searcher-class"></a>default_searcher Sınıfı
+# <a name="default_searcher-class"></a>default_searcher sınıfı
 
-A, `default_searcher` nesnenin oluşturucusunda belirtilen bir sırayı arayan işlemler için bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrı işlecine sağlanan başka bir sıra içinde yapılır. Çağırır `default_searcher` [std::arama](algorithm-functions.md#search) gerçekleştirmek için arama.
+, `default_searcher` Nesne oluşturucusunda belirtilen bir diziyi Arayıcı işlemler için bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrısı işlecine belirtilen başka bir sıra içinde yapılır. `default_searcher`Aramayı gerçekleştirmek için [std:: Search](algorithm-functions.md#search) çağırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,11 +41,11 @@ class default_searcher
 | **Oluşturucu** | |
 | [default_searcher](#default-searcher-constructor) | |
 | **İşleçler** | |
-| [işleç()](#operator-call) | |
+| [operator ()](#operator-call) | |
 
-## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a>default_searcher yapıcı
+## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a>default_searcher Oluşturucusu
 
-Aramak için `default_searcher` sırayı ve eşitlik yüklemini kullanarak bir işlev nesnesi oluşturuyor.
+`default_searcher`Aranacak diziyi ve bir eşitlik koşulunu kullanarak bir işlev nesnesi oluşturur.
 
 ```cpp
 default_searcher(                   // C++17
@@ -62,23 +62,23 @@ constexpr default_searcher(         // C++20
 ### <a name="parameters"></a>Parametreler
 
 *pat_first*\
-Aranacak dizinin ilk öğesi.
+Arama yapılacak dizinin ilk öğesi.
 
 *pat_last*\
 Aranacak dizinin sonu.
 
-*Pred*\
-Sıra öğeleri için isteğe bağlı eşitlik karşılaştırma yüklemi. Eşitlik karşılaştırma türü belirtilmemişse, varsayılan `std::equal_to`değer.
+*pred*\
+Dizi öğeleri için isteğe bağlı eşitlik karşılaştırma koşulu. Bir eşitlik karşılaştırma türü belirtilmemişse, varsayılan olur `std::equal_to` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BinaryPredicate* veya *ForwardIterator* türlerinin kopya oluşturucusu tarafından atılan herhangi bir özel durum atar.
+*BinaryPredicate* veya *ForwardIterator* türlerinin kopya Oluşturucusu tarafından oluşturulan özel durumu oluşturur.
 
-Bu sınıf C++17'de yenidir. C++20 yapıcı `constexpr`yaptı.
+Bu sınıf C++ 17 ' de yenidir. C++ 20 Oluşturucu yaptı **`constexpr`** .
 
-## <a name="operator"></a><a name="operator-call"></a>işleç()
+## <a name="operator"></a><a name="operator-call"></a>operator ()
 
-İşlev işlecinin çağrı işleci. Oluşturucuya belirtilen `[first, last)` sırayı bağımsız değişken dizisi içinde arar.
+İşlev işlecinin Call işleci. Oluşturucuya belirtilen dizi için bağımsız değişken sırası içinde arar `[first, last)` .
 
 ```cpp
 template <class ForwardIterator2>   // C++17
@@ -94,26 +94,26 @@ constexpr pair<ForwardIterator2, ForwardIterator2> operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Dizinin içinde aramak için ilk öğesi.
+*adı*\
+İçinde arama yapılacak dizinin ilk öğesi.
 
-*Son*\
-İçinde aramak için sıranın sonu.
+*soyadına*\
+İçinde arama yapılacak dizinin sonu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yineleyicilerin bir çiftini döndürür. İlk yineleyici *i* etkili bir sonucudur:
+Yineleyicilerin bir çiftini döndürür. İlk *Yineleyici, öğesinin etkili* sonucudur:
 
 `std::search( first, last, pat_first, pat_last, pred )`.
 
-Çiftin ikinci *yineleyicisi i** *son*ise *sondur.* Aksi takdirde, etkili bir sonucu:
+İkilinin ikinci yineleyicisi *en son* *bir*. *i* Aksi takdirde, bunun etkili sonucu:
 
 `std::next( i, std::distance( pat_first, pat_last ))`.
 
-Bu sınıf C++17'de yenidir. C++20 arama işleci `constexpr`yaptı.
+Bu sınıf C++ 17 ' de yenidir. C++ 20 çağrı işlecini yaptı **`constexpr`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<fonksiyonel>](functional.md)\
-[algoritma fonksiyonları](algorithm-functions.md)\
-[std::arama](algorithm-functions.md#search)
+[\<functional>](functional.md)\
+[algoritma işlevleri](algorithm-functions.md)\
+[std:: arama](algorithm-functions.md#search)

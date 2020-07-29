@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3537
 ms.assetid: f537ebd1-4fb0-4e09-a453-4f38db2c6881
-ms.openlocfilehash: ef3e954987b84ea128342b38307769903df4b346
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 663ef761d6c52aeb4c3cc9ce109079c647904e36
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740487"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87197559"
 ---
 # <a name="compiler-error-c3537"></a>Derleyici hatası C3537
 
 ' tür ': ' Auto ' içeren bir türe dönüştüremezsiniz
 
-Tür `auto` anahtar sözcüğünü içerdiğinden ve varsayılan [/Zc: Auto](../../build/reference/zc-auto-deduce-variable-type.md) derleyici seçeneği etkin olduğundan, belirtilen türe bir değişken atanamaz.
+Tür **`auto`** anahtar sözcüğünü içerdiğinden ve varsayılan [/Zc: Auto](../../build/reference/zc-auto-deduce-variable-type.md) derleyici seçeneği etkin olduğundan, belirtilen türe bir değişken atanamaz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, C3537 verir, çünkü değişkenler `auto` anahtar sözcüğünü içeren bir türe dönüştürülür.
+Aşağıdaki kod, C3537 verir, çünkü değişkenler anahtar sözcüğünü içeren bir türe dönüştürülür **`auto`** .
 
 ```cpp
 // C3537.cpp

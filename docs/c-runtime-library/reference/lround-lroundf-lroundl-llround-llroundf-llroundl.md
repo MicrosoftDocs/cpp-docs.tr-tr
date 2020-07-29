@@ -46,18 +46,18 @@ helpviewer_keywords:
 - llroundf function
 - lroundl function
 ms.assetid: cfb88a35-54c6-469f-85af-f7d695dcfdd8
-ms.openlocfilehash: 10d5e1284f756107cee03b970d026d9e2896adf2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0be17ceb579bfc7da7b9f47ac1b6942383eebb91
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911361"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216901"
 ---
 # <a name="lround-lroundf-lroundl-llround-llroundf-llroundl"></a>lround, lroundf, lroundl, llround, llroundf, llroundl
 
 Kayan noktalı bir değeri en yakın tamsayıya yuvarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long lround(
@@ -94,20 +94,20 @@ long long llroundl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Lround** ve **llround** işlevleri, en yakın **Long** veya **Long** **Long** tamsayıyı *x*öğesine döndürür. Kayan nokta yuvarlama modunun ayarı ne olursa olsun, yarı çift değerler sıfırdan uzağa yuvarlanır. Hata döndürme yok.
+**Lround** ve **llround** işlevleri, en yakın **`long`** veya **`long long`** tamsayı olarak *x*döndürür. Kayan nokta yuvarlama modunun ayarı ne olursa olsun, yarı çift değerler sıfırdan uzağa yuvarlanır. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **lround** veya **llround** aşırı yüklerini çağırabilirsiniz. C programında, **lround** ve **llround** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alıp döndüren **lround** veya **llround** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **lround** ve **llround** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -115,7 +115,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<Math. h>|
+|**lround**, **lroundf**, **lroundl**, **llround**, **llroundf**, **llroundl**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -157,7 +157,7 @@ lroundl(-3.500000) is -4
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
 [floor, floorf, floorl](floor-floorf-floorl.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>

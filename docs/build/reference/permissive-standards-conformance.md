@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 3b5ddc4b4e9b70b2191a17d2201a441603182149
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: 69a6b413ec6d9d6897e5f11a11aac8c75db2cf5f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507033"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217213"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive- (Standartlara uyumluluk)
 
@@ -40,7 +40,7 @@ Varsayılan olarak, bu **`/permissive-`** seçenek Visual Studio 2017 sürüm 15
 
 Derleyicinin Visual Studio 2017 sürüm 15,3 ' den başlayarak sürümünde seçeneği, seçeneğini **`/permissive-`** Ayarlar [**`/Zc:ternary`**](zc-ternary.md) . Derleyici Ayrıca iki aşamalı ad araması için gereksinimlerin daha fazlasını uygular. **`/permissive-`** Seçenek ayarlandığında, derleyici işlev ve sınıf şablonu tanımlarını ayrıştırır ve şablonlarda kullanılan bağımlı ve bağımlı olmayan adları tanımlar. Bu sürümde, yalnızca ad bağımlılığı Analizi gerçekleştirilir.
 
-Standart uygulamaya kaydolan ortama özgü uzantılar ve dil alanı tarafından etkilenmemektedir **`/permissive-`** . Örneğin, Microsoft 'a özgü `__declspec` , çağırma kuralı ve yapılandırılmış özel durum işleme anahtar sözcükleri ve derleyiciye özgü pragma yönergeleri ya da öznitelikleri, derleyici tarafından mod 'da bayraklamaz **`/permissive-`** .
+Standart uygulamaya kaydolan ortama özgü uzantılar ve dil alanı tarafından etkilenmemektedir **`/permissive-`** . Örneğin, Microsoft 'a özgü **`__declspec`** , çağırma kuralı ve yapılandırılmış özel durum işleme anahtar sözcükleri ve derleyiciye özgü pragma yönergeleri ya da öznitelikleri, derleyici tarafından mod 'da bayraklamaz **`/permissive-`** .
 
 **`/permissive-`** Seçeneği, hangi dil yapılarının uyumsuz olduğunu anlamak için geçerli derleyici sürümündeki uygunluk desteğini kullanır. Bu seçenek, kodunuzun C++ standardının belirli bir sürümüne uyup uymadığını belirleyemez. En son taslak standardı için uygulanan tüm derleyici desteğini etkinleştirmek için [**`/std:c++latest`**](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini Şu anda uygulanmış olan C++ 17 standardına göre kısıtlamak için [**`/std:c++17`**](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini C++ 14 standardına daha yakından eşleşecek şekilde kısıtlamak için, [**`/std:c++14`**](std-specify-language-standard-version.md) varsayılan olan seçeneğini kullanın.
 

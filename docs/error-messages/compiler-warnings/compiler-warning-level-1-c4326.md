@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4326
 ms.assetid: d44d2c4e-9456-42d3-b35b-4ba4b2d42ec7
-ms.openlocfilehash: 32bcd85b1cd1bb6c89678daae02f4f31a9318b6d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 41d8b271660ce0b6840e701ddac0f0538b265968
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162978"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87196558"
 ---
 # <a name="compiler-warning-level-1-c4326"></a>Derleyici Uyarısı (düzey 1) C4326
 
@@ -19,7 +19,7 @@ ms.locfileid: "80162978"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir işlev *Type1*dışında bir tür döndürdü. Örneğin, [/za](../../build/reference/za-ze-disable-language-extensions.md)kullanarak **Main** bir **int**döndürmedi.
+Bir işlev *Type1*dışında bir tür döndürdü. Örneğin, [/za](../../build/reference/za-ze-disable-language-extensions.md)kullanarak **Main** bir döndürmez **`int`** .
 
 ## <a name="example"></a>Örnek
 

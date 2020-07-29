@@ -52,18 +52,18 @@ helpviewer_keywords:
 - llrintf function
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-ms.openlocfilehash: effb146cac201a21651f21e3e5c040fbb68819a6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c692b97598e2342628c3171fc22aeead9c864d60
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911380"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216914"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
 Geçerli yuvarlama modunu ve yönünü kullanarak belirtilen kayan nokta değerini en yakın integral değere yuvarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long int lrint(
@@ -109,7 +109,7 @@ long long int llrintl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -122,7 +122,7 @@ Başarılı olursa *x*'in yuvarlatılmış tamsayı değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alan **lrint** ve **llrint** aşırı yüklerini çağırabilirsiniz. C programında **lrint** ve **llrint** her zaman bir **Double**alır.
+C++ aşırı yüklemeye izin verdiğinden, ve türündeki **lrint** ve **llrint** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **lrint** ve **llrint** her zaman bir alır **`double`** .
 
 *X* , bir integral değerin kayan nokta eşdeğerini temsil ediyorsa, bu işlevler **FE_INEXACT**yükseltir.
 
@@ -134,7 +134,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<Math. h>|\<cmath>|
+|**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

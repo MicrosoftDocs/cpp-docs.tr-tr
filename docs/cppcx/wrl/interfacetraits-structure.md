@@ -19,18 +19,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::InterfaceTraits::IidCount constant
 - Microsoft::WRL::Details::InterfaceTraits::Verify method
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
-ms.openlocfilehash: 17f743a38af3ddc600a55e38905d19868d076a22
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c08c6e8bbcc16120dd44da69a2933fc3ec42f387
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371364"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216576"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename I0>
@@ -50,38 +50,38 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 *I0*<br/>
 Arabirimin adı.
 
-*Gizlenmiş Tip*<br/>
-Desteklenen `RuntimeClass` `Implements` arabirim iI'leri listesinde olmayacak bir arabirim için. `ChainInterfaces`
+*CloakedType*<br/>
+`RuntimeClass`Ve için `Implements` `ChainInterfaces` , desteklenen arabirim kimlikleri listesinde olmayan bir arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Arabirimin ortak özelliklerini uygular.
+Bir arabirimin ortak karakteristiklerini uygular.
 
-İkinci şablon, gizlenmiş arabirimler için bir uzmanlık alanıdır. Üçüncü şablon, Nil parametreleri için bir uzmanlık alanıdır.
+İkinci şablon, örtülmüş arabirimler için bir özelleştirme. Üçüncü şablon, Nil parametreleri için bir özelleştirme.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a><a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a><a name="public-typedefs"></a>Ortak tür tanımları
 
-Adı   | Açıklama
+Ad   | Açıklama
 ------ | ------------------------------------------
-`Base` | *I0* şablon parametresi ile eş anlamlıdır.
+`Base` | *I0* şablon parametresi için bir eş anlamlı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                                   | Açıklama
+Ad                                                   | Açıklama
 ------------------------------------------------------ | ----------------------------------------------------------------------------------------
-[Arayüz Özellikleri::Cancastto](#cancastto)               | Belirtilen işaretçinin bir işaretçiye `Base`atılıp atılmayacağını gösterir.
-[Arayüz Özellikleri::Casttobase](#casttobase)             | Belirtilen işaretçiyi bir işaretçiye `Base`atar.
-[Arayüz Özellikleri::Casttounknown](#casttounknown)       | Belirtilen işaretçiyi bir işaretçiye `IUnknown`atar.
-[ArayüzÖzellikleri::FillArrayWithIid](#fillarraywithiid) | Dizin bağımsız değişkeni tarafından belirtilen dizi öğesinin arabirim kimliğini `Base` atar.
-[Arayüz Özellikleri::Doğrula](#verify)                     | Doğrulanmış `Base` doğrular.
+[Interfacetoyits:: Cankıto](#cancastto)               | Belirtilen işaretçinin işaretçisine bir işaretçiye tür ataması yapılıp yapılmayacağını belirtir `Base` .
+[Interfacetoyits:: Rotobase](#casttobase)             | Belirtilen işaretçiyi işaretçisine çevirir `Base` .
+[Interfacetoyits:: Rotounknown](#casttounknown)       | Belirtilen işaretçiyi işaretçisine çevirir `IUnknown` .
+[InterfaceTraits:: Fillarraywithııd](#fillarraywithiid) | Öğesinin arabirim KIMLIĞINI `Base` Dizin bağımsız değişkeni tarafından belirtilen dizi öğesine atar.
+[Interfacetoyits:: doğrula](#verify)                     | `Base`Doğru şekilde türetildiğini doğrular.
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-Adı                                   | Açıklama
+Ad                                   | Açıklama
 -------------------------------------- | ---------------------------------------------------------------------------------------
-[ArayüzÖzellikleri::IidCount](#iidcount) | Geçerli `InterfaceTraits` nesneyle ilişkili arabirim işlemi numarasını tutar.
+[Interfacetoyits:: ııdcount](#iidcount) | Geçerli nesneyle ilişkili arabirim kimliklerinin sayısını tutar `InterfaceTraits` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -89,13 +89,13 @@ Adı                                   | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** implements.h
+**Üst bilgi:** uygular. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="interfacetraitscancastto"></a><a name="cancastto"></a>Arayüz Özellikleri::Cancastto
+## <a name="interfacetraitscancastto"></a><a name="cancastto"></a>Interfacetoyits:: Cankıto
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 template<typename T>
@@ -108,28 +108,28 @@ static __forceinline bool CanCastTo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ptr*<br/>
-Bir tür için işaretçi adı.
+*ptr*<br/>
+Bir tür işaretçisinin adı.
 
-*Riid*<br/>
-Arayüz `Base`kimliği.
+*riıd*<br/>
+Öğesinin arabirim KIMLIĞI `Base` .
 
-*Ppv*<br/>
-Bu işlem başarılı olursa, *ppv* tarafından `Base`belirtilen arabirime işaret ediyor. Aksi *takdirde, ppv* `nullptr`ayarlanır.
+*PPV*<br/>
+Bu işlem başarılı olursa, *PPV* tarafından belirtilen arabirime işaret eder `Base` . Aksi halde, *PPV* olarak ayarlanır **`nullptr`** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-bu işlem başarılı olursa ve *ptr* bir `Base`işaretçiye atılırsa **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** Bu işlem başarılı olursa ve *PTR* , öğesine bir işaretçiye tür, `Base` Aksi durumda, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen işaretçinin bir işaretçiye `Base`atılıp atılmayacağını gösterir.
+Belirtilen işaretçinin işaretçisine bir işaretçiye tür ataması yapılıp yapılmayacağını belirtir `Base` .
 
-Hakkında daha `Base`fazla bilgi için [Public Typedefs](#public-typedefs) bölümüne bakın.
+Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitscasttobase"></a><a name="casttobase"></a>Arayüz Özellikleri::Casttobase
+## <a name="interfacetraitscasttobase"></a><a name="casttobase"></a>Interfacetoyits:: Rotobase
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 template<typename T>
@@ -141,24 +141,24 @@ static __forceinline Base* CastToBase(
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Parametre *ptr*türü .
+*PTR*parametresinin türü.
 
-*Ptr*<br/>
-*T*türüne işaretçi .
+*ptr*<br/>
+*T*türü işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi `Base`.
+Bir işaretçisi `Base` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen işaretçiyi bir işaretçiye `Base`atar.
+Belirtilen işaretçiyi işaretçisine çevirir `Base` .
 
-Hakkında daha `Base`fazla bilgi için [Public Typedefs](#public-typedefs) bölümüne bakın.
+Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitscasttounknown"></a><a name="casttounknown"></a>Arayüz Özellikleri::Casttounknown
+## <a name="interfacetraitscasttounknown"></a><a name="casttounknown"></a>Interfacetoyits:: Rotounknown
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 template<typename T>
@@ -170,24 +170,24 @@ static __forceinline IUnknown* CastToUnknown(
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Parametre *ptr*türü .
+*PTR*parametresinin türü.
 
-*Ptr*<br/>
-*T*yazın işaretçisi .
+*ptr*<br/>
+*T*türü işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türetildiği IUnknown `Base` işaretçisi.
+Türetilen IUnknown için işaretçi `Base` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen işaretçiyi bir işaretçiye `IUnknown`atar.
+Belirtilen işaretçiyi işaretçisine çevirir `IUnknown` .
 
-Hakkında daha `Base`fazla bilgi için [Public Typedefs](#public-typedefs) bölümüne bakın.
+Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitsfillarraywithiid"></a><a name="fillarraywithiid"></a>ArayüzÖzellikleri::FillArrayWithIid
+## <a name="interfacetraitsfillarraywithiid"></a><a name="fillarraywithiid"></a>InterfaceTraits:: Fillarraywithııd
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 __forceinline static void FillArrayWithIid(
@@ -198,23 +198,23 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Sıfır tabanlı dizin değeri içeren bir alana işaretçi.
+*indeks*<br/>
+Sıfır tabanlı bir dizin değeri içeren bir alana yönelik işaretçi.
 
-*iids*<br/>
-Bir dizi arayüz tonu.
+*IID*<br/>
+Arabirim kimlikleri dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizin bağımsız değişkeni tarafından belirtilen dizi öğesinin arabirim kimliğini `Base` atar.
+Öğesinin arabirim KIMLIĞINI `Base` Dizin bağımsız değişkeni tarafından belirtilen dizi öğesine atar.
 
-Bu API'nin adının aksine, yalnızca bir dizi öğesi değiştirilir; tüm dizi değil.
+Bu API 'nin adı tersine, yalnızca bir dizi öğesi değiştirilir; tüm dizi değildir.
 
-Hakkında daha `Base`fazla bilgi için [Public Typedefs](#public-typedefs) bölümüne bakın.
+Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitsiidcount"></a><a name="iidcount"></a>ArayüzÖzellikleri::IidCount
+## <a name="interfacetraitsiidcount"></a><a name="iidcount"></a>Interfacetoyits:: ııdcount
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 static const unsigned long IidCount = 1;
@@ -222,11 +222,11 @@ static const unsigned long IidCount = 1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `InterfaceTraits` nesneyle ilişkili arabirim işlemi numarasını tutar.
+Geçerli nesneyle ilişkili arabirim kimliklerinin sayısını tutar `InterfaceTraits` .
 
-## <a name="interfacetraitsverify"></a><a name="verify"></a>Arayüz Özellikleri::Doğrula
+## <a name="interfacetraitsverify"></a><a name="verify"></a>Interfacetoyits:: doğrula
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 __forceinline static void Verify();
@@ -234,6 +234,6 @@ __forceinline static void Verify();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Doğrulanmış `Base` doğrular.
+`Base`Doğru şekilde türetildiğini doğrular.
 
-Hakkında daha `Base`fazla bilgi için [Public Typedefs](#public-typedefs) bölümüne bakın.
+Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.

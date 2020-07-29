@@ -33,18 +33,18 @@ helpviewer_keywords:
 - fminf function
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-ms.openlocfilehash: df01f2205291920b8c0519db622c93048278beb1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d6cd16c298c3f4bedb8064d66efd2d4bbe20c22b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957089"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216992"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
 Belirtilen iki değerden daha küçük bir değer belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double fmin(
@@ -85,23 +85,23 @@ Karşılaştırılacak ikinci değer.
 
 Başarılı olursa *x* veya *y değerinden*küçük bir değer döndürür.
 
-|Giriş|Sonuç|
+|Girdi|Sonuç|
 |-----------|------------|
 |*x* Nan|*Iz*|
 |*y* Nan|*x*|
 |*x* ve *y* Nan 'tir|NaN|
 
-İşlev [_matherr](matherr.md) 'nin çağrılmasına neden olmaz, kayan nokta özel durumlarına neden olur veya **errno**değerini değiştirebilir.
+İşlev [_matherr](matherr.md) çağrılamaz, kayan nokta özel durumlara neden oluyor veya **errno**değerini değiştiremiyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **float** ve **Long** **Double** türlerini alıp döndüren **fmin** aşırı yüklerini çağırabilirsiniz. C programında **fmin** her zaman bir **Double**değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **fmin** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **fmin** her zaman alır ve döndürür **`double`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**fmin**, **fminf**, **fminl**|C: \<Math. h ><br />C++: \<Math. h > veya \<cmath >|
+|**fmin**, **fminf**, **fminl**|,\<math.h><br />C++: \<math.h> veya\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

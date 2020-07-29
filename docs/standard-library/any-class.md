@@ -15,18 +15,18 @@ helpviewer_keywords:
 - any/std::any::reset
 - any/std::any::swap
 - any/std::any::type
-ms.openlocfilehash: 050276da665ab6ed3eb53d9e65bfea06b88bcbea
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 66e74a7fa7f35aae9ac9e1f3ba7520e8d3f9b3f2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267981"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87203968"
 ---
 # <a name="any-class"></a>herhangi bir sınıf
 
-Herhangi bir nesne veya Oluşturucu gereksinimleri karşılayan herhangi bir türde bir örnek var olan hiçbir değer depoları adlı sınıfı durumu.
+Oluşturucu gereksinimlerini karşılayan herhangi bir türün bir örneğini depolar ya da herhangi bir nesne sınıfının durumu olarak adlandırılan değer içermez.
 
-Saklı örneği içindeki değeri olarak adlandırılır. İki durumlu ya da her ikisi de herhangi bir değer varsa veya her ikisi de bir değere sahip ve içerdiği değerlerin aynı olduğundan aynıdır.
+Saklı örneğe içerilen değer denir. İki durum, her ikisi de bir değere sahip değilse ya da her ikisinde de bir değer varsa ve içerilen değerler aynıysa aynıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,27 +40,27 @@ class any
 
 |||
 |-|-|
-|[Tüm](#any)|Türünde bir nesne oluşturur `any`.|
+|[kaydedilmemiş](#any)|Türünde bir nesne oluşturur `any` .|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[emplace](#emplace)|Herhangi bir değer ayarlar.|
-|[has_value](#has_value)|Döndürür **true** varsa bir değer.|
-|[Sıfırlama](#reset)|Herhangi bir sıfırlar.|
-|[değiştirme](#swap)|İki değiştirir herhangi bir nesne.|
-|[type](#type)|Herhangi bir türü döndürür.|
+|[Emplace](#emplace)|Herhangi bir değer ayarlar.|
+|[has_value](#has_value)|**`true`** Herhangi birinin bir değere sahip olup olmadığını döndürür.|
+|[döndürmek](#reset)|Herhangi birini sıfırlar.|
+|[Kur](#swap)|İki nesneyi değiştirir.|
+|[türüyle](#type)|Herhangi bir türü döndürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operator=](#op_eq)|Herhangi başka bir kopyasına sahip olan tüm değiştirir.|
+|[işleç =](#op_eq)|Herhangi birinin bir kopyasını diğerinin kopyasıyla değiştirir.|
 
-## <a name="any"></a> Tüm
+## <a name="any"></a><a name="any"></a>kaydedilmemiş
 
-Türünde bir nesne oluşturur `any`. Ayrıca bir yok edici içerir.
+Türünde bir nesne oluşturur `any` . Ayrıca bir yıkıcı içerir.
 
 ```cpp
 constexpr any() noexcept;
@@ -76,7 +76,7 @@ template <class T, class U, class... Args>
 ~any();
 ```
 
-## <a name="emplace"></a> emplace
+## <a name="emplace"></a><a name="emplace"></a>Emplace
 
 Herhangi bir değer ayarlar.
 
@@ -87,17 +87,17 @@ template <class T, class U, class... Args>
     decay_t<T>& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="has_value"></a> has_value
+## <a name="has_value"></a><a name="has_value"></a>has_value
 
-Döndürür **true** varsa bir değer.
+**`true`** Herhangi birinin bir değere sahip olup olmadığını döndürür.
 
 ```cpp
 bool has_value() const noexcept;
 ```
 
-## <a name="op_eq"></a> işleç =
+## <a name="operator"></a><a name="op_eq"></a>işleç =
 
-Herhangi başka bir kopyasına sahip olan tüm değiştirir.
+Herhangi birinin bir kopyasını diğerinin kopyasıyla değiştirir.
 
 ```cpp
 any& operator=(const any& right);
@@ -108,26 +108,26 @@ template <class T>
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Tüm hiçbir kopyalanıyor.
+*Right*\
+Herhangi birine kopyalanırlar.
 
-## <a name="reset"></a> Sıfırlama
+## <a name="reset"></a><a name="reset"></a>döndürmek
 
-Herhangi bir sıfırlar.
+Herhangi birini sıfırlar.
 
 ```cpp
 void reset() noexcept;
 ```
 
-## <a name="swap"></a> değiştirme
+## <a name="swap"></a><a name="swap"></a>Kur
 
-İki değiştirir herhangi bir nesne.
+İki nesneyi değiştirir.
 
 ```cpp
 void swap(any& rhs) noexcept;
 ```
 
-## <a name="type"></a> Türü
+## <a name="type"></a><a name="type"></a>türüyle
 
 Herhangi bir türü döndürür.
 

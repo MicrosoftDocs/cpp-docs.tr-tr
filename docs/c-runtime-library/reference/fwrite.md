@@ -27,18 +27,18 @@ helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-ms.openlocfilehash: ab1e172374cd117b07cc62923d291fbd3972882e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b604819391629d057850c17466807e7c329c472d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919443"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87198599"
 ---
 # <a name="fwrite"></a>fwrite
 
 Verileri bir akışa yazar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 size_t fwrite(
@@ -71,7 +71,7 @@ Yazılacak en fazla öğe sayısı.
 
 **Fwrite** işlevi, sayı *uzunluğunun her biri,* *arabelleğe* çıkış *akışına*kadar olan öğeleri *say* için yazar. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten yazılan bayt sayısıyla artırılır. *Akış* metin modunda açılırsa, her satır akışı bir satır başı satır besleme çiftiyle değiştirilmiştir. Değiştirme işleminin dönüş değeri üzerinde hiçbir etkisi yoktur.
 
-*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**içeren BIR Mode PARAMETRESI kullanılarak açılırsa **CCS = UTF-16LE**veya **ccs = utf-8**ya da mod, **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**içeren bir mod parametresi **_setmode** kullanarak bir Unicode çeviri moduna değiştirildiyse,*arabellek* UTF-16 verileri içeren bir **wchar_t** dizisine yönelik bir işaretçi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**içeren BIR Mode PARAMETRESI kullanılarak açılırsa **CCS = UTF-16LE**veya **ccs = UTF-8**veya mod, **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**içeren bir mod parametresi **_setmode** kullanarak bir Unicode çeviri moduna değiştirildiyse,*Ara bellek* , **`wchar_t`** UTF-16 verileri içeren bir Array işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 Bu işlev çağıran iş parçacığını kilitlediği için iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fwrite_nolock**.
 
@@ -81,7 +81,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fwrite**|\<stdio. h>|
+|**fwrite**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -91,7 +91,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_setmode](setmode.md)<br/>
 [fread](fread.md)<br/>
 [_fwrite_nolock](fwrite-nolock.md)<br/>

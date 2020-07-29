@@ -34,18 +34,18 @@ helpviewer_keywords:
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-ms.openlocfilehash: 774a35f257b02c67b22618224a60ed501476a6f4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d1b5c60e2e6bd8ba4d5f3b4297dff4bd57c650f2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917827"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216797"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
 İki tamsayı değerinin kalanını hesaplar ve işaret ile bir tamsayı değeri ve bir parametrede belirtilen konumdaki alanın yaklaşık büyüklüğü ile birlikte depolar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double remquo( double numer, double denom, int* quo );
@@ -71,13 +71,13 @@ Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**remquo** , *x* / *y*'nin kayan nokta kalanını döndürür. *Y* değeri 0,0 ise, **remquo** bir sessiz NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+**remquo** , *x*y 'nin kayan nokta kalanını döndürür  /  *y*. *Y* değeri 0,0 ise, **remquo** bir sessiz NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Remquo** işlevi *, x* / *y* \* *i* *y* *x* =  + *f*'nin kayan *nokta geri kalanını* hesaplar *, burada bir tamsayıdır,* *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür.
+**Remquo** işlevi *, x*i y f 'nin kayan *nokta geri kalanını* hesaplar  /  *y* *x*  =  *i* \* *y*  +  *f*, burada bir tamsayıdır, *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür. *i*
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** değerleri alıp döndüren **remquo** aşırı yüklerini çağırabilirsiniz. C programında, **remquo** her zaman iki **çift** bağımsız değişken alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, bir veya değerlerini alan ve döndüren **remquo** aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **remquo** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -85,7 +85,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------|-|
-|**remquo**, **remquof**, **remquol**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> veya \<math.h>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -116,7 +116,7 @@ Approximate signed quotient is -3
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ldiv, lldiv](ldiv-lldiv.md)<br/>
 [imaxdiv](imaxdiv.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>

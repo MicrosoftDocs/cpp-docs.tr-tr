@@ -9,12 +9,12 @@ helpviewer_keywords:
 - storage class specifiers, C storage classes
 - storage duration
 ms.assetid: 893fb929-f7a9-43dc-a0b3-29cb1ef845c1
-ms.openlocfilehash: 77aefe41fecf003218343710ef090eebf99446a8
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 4f793e8485628faf0a80445ce0414835e3b71d1f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857118"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217174"
 ---
 # <a name="c-storage-classes"></a>C Depolama Sınıfları
 
@@ -24,21 +24,21 @@ Otomatik değişkenler veya yerel yaşam süreleri olan değişkenler, her yür�
 
 C aşağıdaki depolama sınıfı belirticilerini sağlar:
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 *depolama sınıfı Belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kaydolunamadı**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**se**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Dış**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**genişletiyor**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/
+&nbsp;&nbsp;&nbsp;&nbsp;**`auto`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`register`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`static`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`extern`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`typedef`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__declspec (`***Extended-decl-değiştirici-seq* **`)`**  / \* Microsoft 'a özgü\*/
 
-Haricinde `__declspec` , bildiriminde *bildirim belirticisi* içinde yalnızca bir *depolama sınıfı Belirleyicisi* kullanabilirsiniz. Depolama sınıfı belirtimi yapılbelirtilmemişse, blok içindeki bildirimler otomatik nesneler oluşturur.
+Haricinde **`__declspec`** , bildiriminde *bildirim belirticisi* içinde yalnızca bir *depolama sınıfı Belirleyicisi* kullanabilirsiniz. Depolama sınıfı belirtimi yapılbelirtilmemişse, blok içindeki bildirimler otomatik nesneler oluşturur.
 
-**Auto** veya **yazmaç** belirticisi ile belirtilen öğelerin yerel yaşam süreleri vardır. **Statik** veya belirticiyle belirtilen öğelerin `extern` küresel yaşam süreleri vardır.
+**`auto`** Veya belirticisiyle belirtilen öğelerin **`register`** yerel yaşam süreleri vardır. **`static`** Veya belirticisiyle belirtilen öğelerin **`extern`** küresel yaşam süreleri vardır.
 
-`typedef`Ve `__declspec` diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında belirli bilgiler için `typedef` bkz. [typedef bildirimleri](../c-language/typedef-declarations.md). Hakkında belirli bilgiler için `__declspec` bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+**`typedef`** Ve **`__declspec`** diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında belirli bilgiler için **`typedef`** bkz. [ `typedef` Bildirimler](../c-language/typedef-declarations.md). Hakkında belirli bilgiler için **`__declspec`** bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
 Değişken ve işlev bildirimlerinin kaynak dosyalar içinde yerleştirilmesi, depolama sınıfını ve görünürlüğünü de etkiler. Tüm işlev tanımlarının dışındaki bildirimler "dış düzeyde" gözükme söylenir. İşlev tanımlarının içindeki bildirimler "iç düzeyde" görünür.
 

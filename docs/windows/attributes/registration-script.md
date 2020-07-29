@@ -1,23 +1,23 @@
 ---
-title: registration_script (C++ com özniteliği)
+title: registration_script (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.registration_script
 helpviewer_keywords:
 - registration_script attribute
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
-ms.openlocfilehash: 780f3d41676d01458f47542d6f0862a278edff6a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 53b5cb0cb36d9d6627f16f99cbb0d142af8cee6d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214584"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217226"
 ---
 # <a name="registration_script"></a>registration_script
 
 Belirtilen özel kayıt betiğini yürütür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ registration_script(script) ]
@@ -26,11 +26,11 @@ Belirtilen özel kayıt betiğini yürütür.
 ### <a name="parameters"></a>Parametreler
 
 *SCRIPT*<br/>
-Özel bir kayıt betiği (. RGS) dosyasının tam yolu. `script = "none"`gibi **none**değeri, coclass 'ın kayıt gereksinimlerini içermediğini gösterir.
+Özel bir kayıt betiği (. RGS) dosyasının tam yolu. **None**değeri, `script = "none"` coclass 'ın hiçbir kayıt gereksinimi olmadığını gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Registration_script** C++ özniteliği, *komut dosyası*tarafından belirtilen özel kayıt betiğini yürütür. Bu öznitelik belirtilmemişse, standart bir. rgs dosyası (bileşeni kaydetmek için bilgi içeren) kullanılır. . Rgs dosyaları hakkında daha fazla bilgi için bkz. [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md).
+C++ özniteliği **Registration_script** *betiği*tarafından belirtilen özel kayıt betiğini yürütür. Bu öznitelik belirtilmemişse, standart bir. rgs dosyası (bileşeni kaydetmek için bilgi içeren) kullanılır. . Rgs dosyaları hakkında daha fazla bilgi için bkz. [atl kayıt defteri bileşeni (kaydedici)](../../atl/atl-registry-component-registrar.md).
 
 Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir.
 
@@ -63,15 +63,15 @@ class CMyClass:public IFace {};
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM Öznitelikleri](com-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
+[COM öznitelikleri](com-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
 [rdx](rdx.md)

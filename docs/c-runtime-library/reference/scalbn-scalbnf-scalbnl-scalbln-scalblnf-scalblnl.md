@@ -46,18 +46,18 @@ helpviewer_keywords:
 - scalbnf function
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-ms.openlocfilehash: 3d450459b4f428e5d5f1f02eaa71a126e4f710df
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 351f56629435754f74565d9674874d5a73915773
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918182"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231383"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
 Kayan noktalı sayıyı FLT_RADIX tam sayı gücüyle çarpar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double scalbn(
@@ -104,7 +104,7 @@ long double scalblnl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 *exp*<br/>
@@ -118,9 +118,9 @@ Tamsayı üs.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**FLT_RADIX** , \<float. h> yerel kayan nokta Radix olarak tanımlanır; ikili sistemlerde, 2 değerine sahiptir ve **scalbümn** , [ldexp](ldexp.md)ile eşdeğerdir.
+**FLT_RADIX** , \<float.h> ikili sistemlerde yerel kayan nokta Radix olarak tanımlanır; 2 değerine sahiptir ve **scalbümn** , [ldexp](ldexp.md)ile eşdeğerdir.
 
-C++ aşırı yüklemeye izin verdiğinden, yukarı ve **uzun** **çift** türleri **alıp döndüren** **scalbümn** ve **scalbln** yüklerini çağırabilirsiniz. C programında, **scalbümn** her zaman bir **Double** ve **int** alır ve bir **Double**döndürür ve **scalbln** her zaman **çift** ve **uzun** sürer ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ' nin ve döndüren **scalbümn** ve **scalbln** yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **scalbümn** her zaman bir ve bir alır ve **`double`** **`int`** bir döndürür ve **`double`** **scalbln** her zaman bir **`double`** ve bir alır **`long`** ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -128,7 +128,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**scalbümn**, **scalbümnf**, **scalbümnl**, **scalbln**, **scalblnf**, **scalblnl**|\<Math. h>|\<cmath>|
+|**scalbümn**, **scalbümnf**, **scalbümnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -158,7 +158,7 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](frexp.md)<br/>
 [ldexp](ldexp.md)<br/>
 [modf, modff, modfl](modf-modff-modfl.md)<br/>

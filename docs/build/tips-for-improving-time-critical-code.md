@@ -30,12 +30,12 @@ helpviewer_keywords:
 - _lfind function
 - heap allocation, time-critical code performance
 ms.assetid: 3e95a8cc-6239-48d1-9d6d-feb701eccb54
-ms.openlocfilehash: 039b86eec024daf8e3473bba5d89f190507f3cfd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a2cc8062368b89e38b5f96b3134742123af24310
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335450"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231487"
 ---
 # <a name="tips-for-improving-time-critical-code"></a>Zamana Bağlı Kodu Geliştirme İpuçları
 
@@ -51,7 +51,7 @@ Hızlı kod yazma, uygulamanızın tüm yönlerini ve sistemle etkileşimini anl
 
 - İşi gerçekleştirmek için gereken en düşük işi öğrenin.
 
-Kodunuzun performansı hakkında bilgi toplamak için performans izleyicisi 'ni (Perfmon. exe) kullanabilirsiniz.
+Kodunuzun performansı hakkında bilgi toplamak için performans izleyicisi 'ni (perfmon.exe) kullanabilirsiniz.
 
 ## <a name="sections-in-this-article"></a>Bu makaledeki bölümler
 
@@ -107,19 +107,19 @@ Sıralamaya kıyasla daha az sayıda arama vardır. Arama zaman açısından ön
 
 Microsoft Foundation Sınıfları (MFC) kod yazmayı büyük ölçüde basitleştirir. Zaman açısından kritik kod yazarken, bazı sınıflarda bulunan ek yükün farkında olmanız gerekir. Zaman açısından kritik kodunuzun, performans gereksinimlerinizi karşılayıp karşılamadığını görmek için kullandığı MFC kodunu inceleyin. Aşağıdaki listede, bilmeniz gereken MFC sınıfları ve işlevleri tanımlanmaktadır:
 
-- `CString`MFC, dinamik olarak bir [CString](../atl-mfc-shared/reference/cstringt-class.md) için bellek ayırmak üzere C çalışma zamanı kitaplığını çağırır. Genel olarak, `CString` diğer tüm dinamik olarak ayrılan dizeler kadar etkilidir. Dinamik olarak ayrılan herhangi bir dizede olduğu gibi, dinamik ayırma ve yayınlama ek yüküne sahiptir. Genellikle, yığındaki basit `char` bir dizi aynı amaca sunabilir ve daha hızlıdır. Sabit bir dizeyi `CString` depolamak için kullanmayın. Bunun yerine `const char *` kullanın. Bir `CString` nesneyle gerçekleştirdiğiniz tüm işlemler bazı ek yüke sahiptir. Çalışma zamanı kitaplık [dizesi işlevlerinin](../c-runtime-library/string-manipulation-crt.md) kullanılması daha hızlı olabilir.
+- `CString`MFC, dinamik olarak bir [CString](../atl-mfc-shared/reference/cstringt-class.md) için bellek ayırmak üzere C çalışma zamanı kitaplığını çağırır. Genel olarak, `CString` diğer tüm dinamik olarak ayrılan dizeler kadar etkilidir. Dinamik olarak ayrılan herhangi bir dizede olduğu gibi, dinamik ayırma ve yayınlama ek yüküne sahiptir. Genellikle, yığındaki basit bir **`char`** dizi aynı amaca sunabilir ve daha hızlıdır. `CString`Sabit bir dizeyi depolamak için kullanmayın. Bunun yerine `const char *` kullanın. Bir nesneyle gerçekleştirdiğiniz tüm işlemler `CString` bazı ek yüke sahiptir. Çalışma zamanı kitaplık [dizesi işlevlerinin](../c-runtime-library/string-manipulation-crt.md) kullanılması daha hızlı olabilir.
 
-- `CArray`Bir [CArray](../mfc/reference/carray-class.md) , normal bir dizinin olmadığı esnekliği sağlar, ancak programınız bunun için gerekli olmayabilir. Dizi için belirli sınırları biliyorsanız bunun yerine genel sabit bir dizi kullanabilirsiniz. Kullanıyorsanız `CArray`, boyutunu oluşturmak için `CArray::SetSize` kullanın ve bir yeniden tahsisat gerektiğinde artarak büyüdüğü öğe sayısını belirtin. Aksi takdirde, öğeleri eklemek, dizinizi sık aralıklarla yeniden tahsis edebilir ve kopyalanabilir, bu da verimsiz olan ve belleği parçalara ayırabilecek. Ayrıca bir diziye bir öğe eklerseniz, `CArray` sonraki öğeleri bellekte taşıdıysanız ve diziyi büyütmeniz gerekebilir. Bu eylemler, önbellek isabetsizliği ve sayfa hatalarına neden olabilir. MFC 'nin kullandığı koda bakarsanız, performansı artırmak için senaryonuza özgü bir şey yazabilmenize bakabilirsiniz. , `CArray` Örneğin, bir şablon olduğundan, belirli türler için Uzmanlıklar sağlayabilirsiniz `CArray` .
+- `CArray`Bir [CArray](../mfc/reference/carray-class.md) , normal bir dizinin olmadığı esnekliği sağlar, ancak programınız bunun için gerekli olmayabilir. Dizi için belirli sınırları biliyorsanız bunun yerine genel sabit bir dizi kullanabilirsiniz. Kullanıyorsanız `CArray` , `CArray::SetSize` boyutunu oluşturmak için kullanın ve bir yeniden tahsisat gerektiğinde artarak büyüdüğü öğe sayısını belirtin. Aksi takdirde, öğeleri eklemek, dizinizi sık aralıklarla yeniden tahsis edebilir ve kopyalanabilir, bu da verimsiz olan ve belleği parçalara ayırabilecek. Ayrıca bir diziye bir öğe eklerseniz, `CArray` sonraki öğeleri bellekte taşıdıysanız ve diziyi büyütmeniz gerekebilir. Bu eylemler, önbellek isabetsizliği ve sayfa hatalarına neden olabilir. MFC 'nin kullandığı koda bakarsanız, performansı artırmak için senaryonuza özgü bir şey yazabilmenize bakabilirsiniz. , `CArray` Örneğin, bir şablon olduğundan, `CArray` belirli türler için Uzmanlıklar sağlayabilirsiniz.
 
-- `CList`[CList](../mfc/reference/clist-class.md) , benzer bir şekilde bağlanmış bir liste olduğundan, öğe ekleme işlemi baş, kuyruklu ve listedeki bilinen bir konumda (`POSITION`) hızlı bir şekilde. Değere veya dizine göre öğe aramak için sıralı bir arama gerekir, ancak liste uzunsa bu yavaş olabilir. Kodunuz, kullanmayı `CList`yeniden düşünmek isteyebileceğiniz, daha zengin bağlantılı bir liste gerektirmiyorsa. Listedir bağlantılı bir liste kullanmak, tüm işlemler için ek bir işaretçi ve bu işaretçi için bellek güncelleştirme yükünü kaydeder. Ek bellek harika değildir, ancak önbellek isabetsizliği veya sayfa hataları için başka bir fırsattır.
+- `CList`[CList](../mfc/reference/clist-class.md) , benzer bir şekilde bağlanmış bir liste olduğundan, öğe ekleme işlemi baş, kuyruklu ve listedeki bilinen bir konumda () hızlı bir şekilde `POSITION` . Değere veya dizine göre öğe aramak için sıralı bir arama gerekir, ancak liste uzunsa bu yavaş olabilir. Kodunuz, kullanmayı yeniden düşünmek isteyebileceğiniz, daha zengin bağlantılı bir liste gerektirmiyorsa `CList` . Listedir bağlantılı bir liste kullanmak, tüm işlemler için ek bir işaretçi ve bu işaretçi için bellek güncelleştirme yükünü kaydeder. Ek bellek harika değildir, ancak önbellek isabetsizliği veya sayfa hataları için başka bir fırsattır.
 
 - `IsKindOf`Bu işlev, çok sayıda çağrı oluşturabilir ve farklı veri alanlarında çok fazla belleğe erişebilir, bu da hatalı başvuru yer kaplar. Hata ayıklama derlemesi (örneğin, bir onaylama çağrısında) için kullanışlıdır, ancak bunu bir yayın derlemesi içinde kullanmaktan kaçının.
 
-- `PreTranslateMessage`Belirli `PreTranslateMessage` bir Windows ağacının farklı klavye hızlandırıcılara ihtiyacı olduğunda veya ileti göndericisinin ileti işleme eklemeniz gerektiğinde kullanın. `PreTranslateMessage`MFC dağıtım iletilerini değiştirir. Geçersiz kıldıysanız `PreTranslateMessage`, bunu yalnızca gerekli düzeyde yapın. Örneğin, yalnızca belirli bir görünümün alt öğelerine giden `CMainFrame::PreTranslateMessage` iletilerde ilgileniyorsanız, üzerine yazmak gerekli değildir. Bunun `PreTranslateMessage` yerine görünüm sınıfı için geçersiz kılın.
+- `PreTranslateMessage``PreTranslateMessage`Belirli bir Windows ağacının farklı klavye hızlandırıcılara ihtiyacı olduğunda veya ileti göndericisinin ileti işleme eklemeniz gerektiğinde kullanın. `PreTranslateMessage`MFC dağıtım iletilerini değiştirir. Geçersiz kıldıysanız `PreTranslateMessage` , bunu yalnızca gerekli düzeyde yapın. Örneğin, `CMainFrame::PreTranslateMessage` yalnızca belirli bir görünümün alt öğelerine giden iletilerde ilgileniyorsanız, üzerine yazmak gerekli değildir. `PreTranslateMessage`Bunun yerine görünüm sınıfı için geçersiz kılın.
 
-   Herhangi bir pencereye gönderilen iletileri işlemek için kullanarak `PreTranslateMessage` normal dağıtım yolunu atlamayın. Bu amaçla [pencere yordamlarını](../mfc/registering-window-classes.md) ve MFC ileti eşlemelerini kullanın.
+   `PreTranslateMessage`Herhangi bir pencereye gönderilen iletileri işlemek için kullanarak normal dağıtım yolunu atlamayın. Bu amaçla [pencere yordamlarını](../mfc/registering-window-classes.md) ve MFC ileti eşlemelerini kullanın.
 
-- `OnIdle`Boştaki olaylar, `WM_KEYDOWN` ve `WM_KEYUP` olayları gibi beklenmez. Süreölçerler, kodunuzun tetiklenmesi için daha verimli bir yol olabilir. Yanlış iletiler oluşturarak `OnIdle` veya her zaman bir geçersiz kılmaya dönerek `TRUE` `OnIdle`, iş parçacığınız uyku moduna neden olmayacak şekilde, tekrar tekrar çağrılabilir şekilde zorlamayın. Bir zamanlayıcı veya ayrı bir iş parçacığı daha uygun olabilir.
+- `OnIdle`Boştaki olaylar, ve olayları gibi beklenmez `WM_KEYDOWN` `WM_KEYUP` . Süreölçerler, kodunuzun tetiklenmesi için daha verimli bir yol olabilir. `OnIdle`Yanlış iletiler oluşturarak veya her zaman `TRUE` bir geçersiz `OnIdle` kılmaya dönerek, iş parçacığınız uyku moduna neden olmayacak şekilde, tekrar tekrar çağrılabilir şekilde zorlamayın. Bir zamanlayıcı veya ayrı bir iş parçacığı daha uygun olabilir.
 
 ## <a name="shared-libraries"></a><a name="vcovrsharedlibraries"></a>Paylaşılan kitaplıklar
 
@@ -127,7 +127,7 @@ Kod yeniden kullanımı tercih edilir. Bununla birlikte, başka birinin kodunu k
 
 ## <a name="heaps"></a><a name="_core_heaps"></a>Yığınlar
 
-Birden çok Heap 'yi dikkatli kullanın. İle `HeapCreate` oluşturulan ek Heap 'ler `HeapAlloc` , ilgili bir ayırma kümesini yönetmenizi ve sonra atmayı sağlar. Çok fazla bellek oluşturmayın. Birden çok Heap kullanıyorsanız, başlangıçta taahhüt edilen bellek miktarına özel bir dikkat ödeyin.
+Birden çok Heap 'yi dikkatli kullanın. İle oluşturulan ek Heap 'ler, `HeapCreate` `HeapAlloc` ilgili bir ayırma kümesini yönetmenizi ve sonra atmayı sağlar. Çok fazla bellek oluşturmayın. Birden çok Heap kullanıyorsanız, başlangıçta taahhüt edilen bellek miktarına özel bir dikkat ödeyin.
 
 Birden çok Heap yerine, kodunuz ve varsayılan yığın arasında arabirim sağlamak için yardımcı işlevleri kullanabilirsiniz. Yardımcı işlevler, uygulamanızın performansını iyileştirebilecek özel ayırma stratejilerini kolaylaştırır. Örneğin, sık sık küçük ayırmalar gerçekleştirirseniz, bu ayırmaları varsayılan yığının bir bölümü için yerelleştirmek isteyebilirsiniz. Büyük bir bellek bloğu ayırabilir ve sonra bu bloğundan alt ayırmak için bir yardımcı işlevi kullanabilirsiniz. Bunu yaparsanız, ayırma varsayılan yığından geldiği için kullanılmayan belleğe sahip ek yığınlara sahip olmayacaktır.
 
@@ -159,4 +159,4 @@ Daha küçük çalışma kümeleri başvuru, daha az sayfa hatası ve daha fazla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodunuzu İyileştirme](optimizing-your-code.md)
+[Kodunuzu iyileştirme](optimizing-your-code.md)

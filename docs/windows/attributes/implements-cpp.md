@@ -1,23 +1,23 @@
 ---
-title: uygular (C++ COM özniteliği)
+title: Implements (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.implements
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 9425f998f0e8fbe5f16e6eb136e00ba3fb7bd5d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e9e2d8f0bea26579fa40cf0e5d8d053b913ef318
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62409400"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217239"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 
-IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.
+IDL coclass 'ın üyeleri olmaya zorlanan dağıtım arabirimlerini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ implements(
@@ -26,15 +26,15 @@ IDL coclass'ı üyesi olmaya zorlanıp dağıtma arabirimleri belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*Arabirimleri*<br/>
-Virgülle ayrılmış bir IDL coclass'ı üyesi olacak arabirimlerin listesi. Tek bir arabirim belirtmek için bir toplu yöntemi **uygular (** *interface_name* **)**.
+*arabirimlerdeki*<br/>
+IDL coclass 'ın üyesi olacak arabirimlerin virgülle ayrılmış bir listesi. Tek bir arabirim belirtmek için bir toplu Yöntem **uygulanır (** *interface_name* **)**.
 
-*görüntüleme*<br/>
-Virgülle ayrılmış bir IDL coclass'ı üyesi olacak dispinterface listesi. Tek bir dispinterface belirtmek için bir toplu yöntemi **uygular (görüntü arabirimlerinde =** *dispinterface_name* **)**.
+*dispınterfaces*<br/>
+, IDL coclass 'ın bir üyesi olacak dispınterface 'in virgülle ayrılmış bir listesi. Tek bir dispınterface belirtmek için bir toplu Yöntem **uygulanır (dispınterfaces =** *dispinterface_name* **)**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, COM-olan arabirimler yalnızca temel sınıfları `coclass` IDL coclass'ı eklenir. **uygulayan** IDL olmasını diğer arabirimleri zorla sayesinde `coclass` üyeleri.
+Varsayılan olarak, IDL coclass 'a yalnızca temel sınıfları olan COM arabirimleri `coclass` eklenir. **implements** , DIĞER arabirimlerin IDL üyeleri olmasını zorlamanızı sağlar `coclass` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -42,18 +42,18 @@ Varsayılan olarak, COM-olan arabirimler yalnızca temel sınıfları `coclass` 
 
 |||
 |-|-|
-|**İçin geçerlidir**|**sınıf**, **yapısı**|
-|**Tekrarlanabilir**|Evet|
-|**Gerekli öznitelikleri**|Yok.|
-|**Geçersiz öznitelikler**|Yok.|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
+|**Tekrarlanabilir**|Yes|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
-Daha fazla bilgi için [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
+Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, üç bölümlerinde: bir .idl dosyası ve onun ilişkili .h dosyası ve bir C++ dosyası.
+Aşağıdaki örnek üç bölümden oluşur:. IDL dosyası ve onunla ilişkili. h dosyası ve bir C++ dosyası.
 
-Derleyici için kullanılabilecek aşağıdaki .idl dosyası varsayılır.
+Derleyici tarafından kullanılabilecek aşağıdaki. IDL dosyasını varsayın.
 
 ```
 // attr_implements.idl
@@ -101,7 +101,7 @@ library odod
 
 ## <a name="example"></a>Örnek
 
-Ve ayrıca derleyicinin kullanılabilir olması gereken aşağıdaki .h dosyası.
+Ve ayrıca derleyici tarafından kullanılabilir olması gereken aşağıdaki. h dosyası.
 
 ```cpp
 // attr_implements.h
@@ -381,7 +381,7 @@ CBar;
 
 ## <a name="example"></a>Örnek
 
-Uygular, olmadan aşağıdaki programı `IBar1`, `IBar2`, ve `ISna` içinde olmayacaktır `coclass` oluşturulan IDL içinde.
+Aşağıdaki programda,,, ve,,,, `IBar1` `IBar2` ve, `ISna` `coclass` üretilen IDL içinde yer olmayacaktır.
 
 ```cpp
 // attr_implements.cpp
@@ -486,5 +486,5 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Öznitelikleri](compiler-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)
+[Derleyici öznitelikleri](compiler-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)

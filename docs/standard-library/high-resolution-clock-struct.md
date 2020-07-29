@@ -1,5 +1,5 @@
 ---
-title: high_resolution_clock yapı | Microsoft Docs
+title: high_resolution_clock struct | Microsoft Docs
 ms.custom: ''
 ms.date: 05/22/2018
 ms.technology: cpp-standard-libraries
@@ -12,16 +12,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b00b20e7cea4fa24b37ad33d5536eb9844e6953
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 850d5e3a5434aa44e23a7f74aeb9c306ab6c0a8e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268092"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87203214"
 ---
-# <a name="steadyclock-struct"></a>steady_clock yapısı
+# <a name="steady_clock-struct"></a>steady_clock yapısı
 
-Temsil eden bir *high_resolution* saati.
+Bir *high_resolution* saati temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,19 +35,19 @@ class high_resolution_clock
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`duration`|İçin bir eşanlamlı `nanoseconds`içinde tanımlanmış \<chrono >.|
-|`period`|İçin bir eşanlamlı `nano`içinde tanımlanmış \<oranı >.|
-|`rep`|İçin bir eşanlamlı **uzun** **uzun**, içinde içerilen saat tik taklarının sayısını belirtmek için kullanılan tür `duration`.|
-|`time_point`|İçin bir eşanlamlı `chrono::time_point<high_resolution_clock>`.|
+|`duration`|İçin bir eş anlamlı `nanoseconds` , içinde tanımlanır \<chrono> .|
+|`period`|İçin bir eş anlamlı `nano` , içinde tanımlanır \<ratio> .|
+|`rep`|İçin bir eş anlamlı **`long long`** , öğesinin içerilen örneklemede saat işaretleri sayısını temsil etmek için kullanılan tür `duration` .|
+|`time_point`|İçin bir eş anlamlı `chrono::time_point<high_resolution_clock>` .|
 
 ## <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|`now`|Olarak geçerli saati döndürür bir `time_point` değeri.|
+|`now`|Geçerli saati bir değer olarak döndürür `time_point` .|
 
 ## <a name="constants"></a>Sabitler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`is_steady`|Tutan **true**. A `high_resolution_clock` olduğu *sürekli*.|
+|`is_steady`|Tutar **`true`** . Bir `high_resolution_clock` *sabit*değer.|

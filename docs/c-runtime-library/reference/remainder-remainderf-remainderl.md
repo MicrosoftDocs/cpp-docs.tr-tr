@@ -34,18 +34,18 @@ helpviewer_keywords:
 - remainderl
 - remainder
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
-ms.openlocfilehash: 6b2a1a94fa39f9e9474f7bc3da3150bf4134d35f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b880054430574b6ea1e8bc456774acc35cf116ad
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917844"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216810"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
 İki kayan noktalı değer bölümünün geri kalanını hesaplar ve en yakın tamsayı değerine yuvarlanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double remainder( double x, double y );
@@ -60,7 +60,7 @@ long double remainder( long double x, long double y ); /* C++ only */
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Pay.
 
 *Iz*<br/>
@@ -68,13 +68,13 @@ Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*X* / *y*'nin kayan nokta kalanı. *Y* değeri 0,0 ise, **kalanı** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
+X y 'nin kayan nokta kalanı *x*  /  *y*. *Y* değeri 0,0 ise, **kalanı** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında daha fazla bilgi için bkz. [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kalan** *y* işlevler *x* - *x* /  *x* /  + *r* / *y* *n* *y**y* *n* *n* *r*  = n \* y r 'nin kayan nokta geri kalanını hesaplar. burada n, x y *değeri için en*yakın *tamsayıdır ve n her &#124;* n x y &#124; = 1/2 olur. *R* = 0 olduğunda, *r* *x*işaretine eşittir.
+**Kalan** işlevler x n y r 'nin kayan nokta *geri kalanını* hesaplar *x*  /  *y* *x*  =  *n* \* *y*  +  *r*. burada *n*, x y değeri için en yakın tamsayıdır ve n *x*  /  *y* her &#124; *n* *n*  -  *x*  /  *y* &#124; = 1/2 olur. *R* = 0 olduğunda, *r* *x*işaretine eşittir.
 
-C++ aşırı yüklemeye izin verdiğinden **float** veya **Long** **Double** değerlerini alan ve döndüren **geri** yüklerin aşırı yüklerini çağırabilirsiniz. C programında, **kalan** her zaman iki **çift** bağımsız değişken alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, geri kalan ve değer döndüren **geri** yüklerin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **kalan** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -82,7 +82,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------|-|
-|**kalan**, **remainderf**, **remainderl**|\<Math. h>|\<cmath> veya \<Math. h>|
+|**kalan**, **remainderf**, **remainderl**|\<math.h>|\<cmath> veya \<math.h>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -110,7 +110,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ldiv, lldiv](ldiv-lldiv.md)<br/>
 [imaxdiv](imaxdiv.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>

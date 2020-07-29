@@ -34,18 +34,18 @@ helpviewer_keywords:
 - fmod function
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-ms.openlocfilehash: a6fcb7feeae72ff15d7b1ed0d55c5abbb408135a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 4fa3df46358932b8a62a6b8529baed4a5c9e5c49
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914964"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216979"
 ---
 # <a name="fmod-fmodf-fmodl"></a>FMOD, fmodf, fmodl
 
 Kayan nokta kalanını hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double fmod(
@@ -77,13 +77,13 @@ Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fmod** , *x* / *y*'nin kayan nokta kalanını döndürür. *Y* değeri 0,0 ise, **fmod** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında bilgi için bkz. [printf](printf-printf-l-wprintf-wprintf-l.md).
+**fmod** , *x*y 'nin kayan nokta kalanını döndürür  /  *y*. *Y* değeri 0,0 ise, **fmod** sessiz bir NaN döndürür. **Printf** ailesi tarafından sessiz bir NaN 'ın temsili hakkında bilgi için bkz. [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fmod** işlevi *, x* / *y* \* *i* *y* *x* =  + *f*'nin kayan *nokta geri kalanını* hesaplar *, burada bir tamsayı,* *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür.
+**Fmod** işlevi *, x*i y f 'nin kayan *nokta geri kalanını* hesaplar  /  *y* *x*  =  *i* \* *y*  +  *f*, burada bir tamsayı *,* *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür.
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **fmod** 'un aşırı yüklerini çağırabilirsiniz. C programında **fmod** her zaman iki **çift** bağımsız değişken alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alıp döndüren **fmod** 'un aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **fmod** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -91,7 +91,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fmod**, **fmodf**, **fmodl**|\<Math. h>|
+|**fmod**, **fmodf**, **fmodl**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -119,7 +119,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
 [fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
 [floor, floorf, floorl](floor-floorf-floorl.md)<br/>

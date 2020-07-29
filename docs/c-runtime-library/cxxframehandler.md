@@ -20,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - __CxxFrameHandler
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
-ms.openlocfilehash: db856850688e378cde9eaa1fb510cb325ce0644b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b6350568bdba41da90609dfd5e2e60269e7d729f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170988"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217044"
 ---
 # <a name="__cxxframehandler"></a>__CxxFrameHandler
 
 İç CRT işlevi. Yapılandırılmış özel durum çerçevelerini işlemek için CRT tarafından kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 EXCEPTION_DISPOSITION __CxxFrameHandler(
@@ -45,7 +45,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 #### <a name="parameters"></a>Parametreler
 
 *pExcept*<br/>
-Olası `catch` deyimlerine geçirilen özel durum kaydı.
+Olası deyimlere geçirilen özel durum kaydı **`catch`** .
 
 *pRN*<br/>
 Özel durumu işlemek için kullanılan yığın çerçevesiyle ilgili dinamik bilgiler. Daha fazla bilgi için bkz. ehdata. h.

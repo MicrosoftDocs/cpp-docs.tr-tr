@@ -58,12 +58,12 @@ helpviewer_keywords:
 - _mbsnccnt function
 - _wcsncnt function
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
-ms.openlocfilehash: 020b844d884182ae7553fec9e9db746987189910
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 77746af98e5d62b80d5a0d2d93eb1f717c74b33e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914204"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231344"
 ---
 # <a name="_strncnt-_wcsncnt-_mbsnbcnt-_mbsnbcnt_l-_mbsnccnt-_mbsnccnt_l"></a>_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 
@@ -72,7 +72,7 @@ Belirtilen bir Count içindeki karakter veya bayt sayısını döndürür.
 > [!IMPORTANT]
 > **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt**ve **_mbsnccnt_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 size_t _strncnt(
@@ -111,12 +111,12 @@ size_t _mbsnccnt_l(
 *biriktirme*<br/>
 *Str*içinde İncelenme karakter veya bayt sayısı.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbcnt** ve **_mbsnbcnt_l** , *Str*çok baytlı karakterlerinin ilk *sayısında* bulunan bayt sayısını döndürür. **_mbsnccnt** ve **_mbsnccnt_l** , *Str*'nin ilk bayt *sayısında* bulunan karakter sayısını döndürür. *Str* incelemesi tamamlanmadan null karakter ile karşılaşılırsa, null karakterden önce bulunan bayt veya karakter sayısını döndürür. *Str* *sayı* sayısından az karakter veya bayttan oluşuyorsa, dizedeki karakter veya bayt sayısını döndürür. *Count* değeri sıfırdan küçükse 0 döndürür. Önceki sürümlerde, bu işlevlerde **size_t**yerine **int** türünde bir dönüş değeri vardı.
+**_mbsnbcnt** ve **_mbsnbcnt_l** , *Str*çok baytlı karakterlerinin ilk *sayısında* bulunan bayt sayısını döndürür. **_mbsnccnt** ve **_mbsnccnt_l** , *Str*'nin ilk bayt *sayısında* bulunan karakter sayısını döndürür. *Str* incelemesi tamamlanmadan null karakter ile karşılaşılırsa, null karakterden önce bulunan bayt veya karakter sayısını döndürür. *Str* *sayı* sayısından az karakter veya bayttan oluşuyorsa, dizedeki karakter veya bayt sayısını döndürür. *Count* değeri sıfırdan küçükse 0 döndürür. Önceki sürümlerde, bu işlevlerin size_t yerine bir dönüş değeri vardı **`int`** . **size_t**
 
 **_strncnt** , tek baytlık dize *Str*'nin ilk *sayım* baytındaki karakter sayısını döndürür. **_wcsncnt** , geniş karakterli dize *Str*'nin ilk *sayı* geniş karakterdeki karakter sayısını döndürür.
 
@@ -146,12 +146,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcnt**|\<mbstring. h>|
-|**_mbsnbcnt_l**|\<mbstring. h>|
-|**_mbsnccnt**|\<mbstring. h>|
-|**_mbsnccnt_l**|\<mbstring. h>|
-|**_strncnt**|\<Tchar. h>|
-|**_wcsncnt**|\<Tchar. h>|
+|**_mbsnbcnt**|\<mbstring.h>|
+|**_mbsnbcnt_l**|\<mbstring.h>|
+|**_mbsnccnt**|\<mbstring.h>|
+|**_mbsnccnt_l**|\<mbstring.h>|
+|**_strncnt**|\<tchar.h>|
+|**_wcsncnt**|\<tchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -185,6 +185,6 @@ The first 10 characters are single-byte.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>

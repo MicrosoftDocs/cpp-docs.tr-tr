@@ -12,42 +12,42 @@ helpviewer_keywords:
 - simple types, names
 - type names [C++], simple
 ms.assetid: 0d4b515a-4f68-4786-83cf-a5d43c7cb6f3
-ms.openlocfilehash: 4003d9427c160b0e1c725cdc591190bd9777b3de
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfbca4ae87d84286b94120eaf24de928ae75f3c9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234936"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87200328"
 ---
 # <a name="data-type-specifiers-and-equivalents"></a>Veri Türü Tanımlayıcıları ve Eşdeğerleri
 
-Bu kitap, genellikle uzun biçimler yerine aşağıdaki tabloda listelenen tür tanımlayıcılarının biçimlerini kullanır ve `char` türünün varsayılan olarak işaretli olduğunu varsayar. Bu nedenle, bu kitabın tamamında `char` , **imzalanmış char**ile eşdeğerdir.
+Bu kitap genellikle, uzun formlar yerine aşağıdaki tabloda listelenen tür Belirticilerinin formlarını kullanır ve **`char`** türün varsayılan olarak imzalandığını varsayar. Bu nedenle, bu kitabın tamamında **`char`** ile eşdeğerdir **`signed char`** .
 
-### <a name="type-specifiers-and-equivalents"></a>Tür Tanımlayıcıları ve Eşdeğerleri
+## <a name="type-specifiers-and-equivalents"></a>Tür Tanımlayıcıları ve Eşdeğerleri
 
 |Tür Tanımlayıcısı|Eşdeğerleri|
 |--------------------|---------------------|
-|**imzalanan karakter**1|**char**|
-|**imzalanan int**|**imzalanan**, **int**|
-|**imzalanan kısa tamsayı**|**kısa**, **imzalanmış kısa**|
-|**imzalanan long int**|**uzun**, **imzalanan uzun**|
-|**unsigned char**|—|
-|**unsigned int**|**işaretlenmemiş**|
-|**işaretsiz kısa tamsayı**|**imzasız short**|
-|**işaretsiz long int**|**imzasız long**|
-|**float**|—|
-|**uzun çift**2|—|
+|**`signed char`** 1|**`char`**|
+|**`signed int`**|**`signed`**, **`int`**|
+|**`signed short int`**|**`short`**, **`signed short`**|
+|**`signed long int`**|**`long`**, **`signed long`**|
+|**`unsigned char`**|—|
+|**`unsigned int`**|**`unsigned`**|
+|**`unsigned short int`**|**`unsigned short`**|
+|**`unsigned long int`**|**`unsigned long`**|
+|**`float`**|—|
+|**`long double`** iki|—|
 
-1 **char** türünü varsayılan olarak işaretsiz hale getirerek (/j derleyici seçeneğini belirterek), **imzalanmış char** 'ı **char**olarak kısaltabilirsiniz.
+1 **`char`** türü varsayılan olarak imzasız yaptığınızda ( **`/J`** derleyici seçeneğini belirterek), **`signed char`** olarak kısaltabilirsiniz **`char`** .
 
-2 32-bit ve 64 bit işletim sistemlerinde, Microsoft C derleyicisi **Long Double** 'u **Double**türüne eşler.
+2 32 bit ve 64 bit işletim sistemlerinde, Microsoft C derleyicisi **`long double`** türü ile eşlenir **`double`** .
 
 **Microsoft'a Özgü**
 
-Varsayılan **karakter** türünü imzalanmış iken işaretsiz olarak değiştirmek için/j derleyici seçeneğini belirtebilirsiniz. Bu seçenek etkin olduğunda, **char** **işaretsiz char**ile aynı anlamına gelir ve imzalı bir karakter değeri bildirmek için **imzalı** anahtar sözcüğünü kullanmanız gerekir. Bir **char** değeri açıkça imzalı olarak bildirilirse,/j seçeneği bunu etkilemez ve bir **int** türü iletildiklerinde olduğunda değer, işaret genişletilir. İletildiklerinde to **int** Type olduğunda **char** türü sıfır genişletilir.
+**`/J`** Varsayılan türünü olarak değiştirmek için derleyici seçeneğini belirtebilirsiniz **`char`** **`signed char`** **`unsigned char`** . Bu seçenek etkin olduğunda, **`char`** ile aynı anlamına gelir **`unsigned char`** ve **`signed`** imzalı bir karakter değeri bildirmek için anahtar sözcüğünü kullanmanız gerekir. Bir **`char`** değer açıkça bildirilirse **`signed`** , **`/J`** seçenek bunu etkilemez ve bir türe iletildiklerinde olduğunda değer, işaret genişletilir **`int`** . Tür **`char`** iletildiklerinde olduğunda tür sıfır genişletilir **`int`** .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Tür Tanımlayıcıları](../c-language/c-type-specifiers.md)
+[C tür belirticileri](../c-language/c-type-specifiers.md)

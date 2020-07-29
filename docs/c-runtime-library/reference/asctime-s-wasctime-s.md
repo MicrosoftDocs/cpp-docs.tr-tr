@@ -36,18 +36,18 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-ms.openlocfilehash: 282f4666734a4a8fd9c6825ee18265bd03fff65b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 529663a8c36a1b934a4dd99852aee19fb1a1e6e6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909414"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217018"
 ---
 # <a name="asctime_s-_wasctime_s"></a>asctime_s, _wasctime_s
 
 Bir **TM** zaman yapısını bir karakter dizesine Dönüştür. Bu işlevler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [_wasctime asctime](asctime-wasctime.md) sürümleridir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t asctime_s(
@@ -81,7 +81,7 @@ Karakter dizesi sonucunu depolamak için arabelleğin bir işaretçisi. Bu işle
 Sonucu depolamak için kullanılan arabelleğin boyutu.
 
 *tmSource*<br/>
-Saat/tarih yapısı. Bu işlev, geçerli bir **struct** **TM** nesnesine yönelik bir işaretçi olduğunu varsayar.
+Saat/tarih yapısı. Bu işlev, geçerli bir TM nesnesine bir işaretçi olduğunu varsayar **`struct`** **tm** .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -92,8 +92,8 @@ Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runti
 |*arabelleğin*|*numberOfElements*|*tmSource*|Döndürülmesini|*Arabellekteki* değer|
 |--------------|------------------------|----------|------------|-----------------------|
 |**DEĞER**|Herhangi biri|Herhangi biri|**EıNVAL**|Değiştirilmedi|
-|**Null** değil (geçerli belleğe işaret eder)|0|Herhangi biri|**EıNVAL**|Değiştirilmedi|
-|**Null** değil|0< boyutu < 26|Herhangi biri|**EıNVAL**|Boş dize|
+|**Null** değil (geçerli belleğe işaret eder)|0|Herhangi bir|**EıNVAL**|Değiştirilmedi|
+|**Null** değil|0< boyutu < 26|Herhangi bir|**EıNVAL**|Boş dize|
 |**Null** değil|>= 26|**DEĞER**|**EıNVAL**|Boş dize|
 |**Null** değil|>= 26|Zaman bileşenleri için geçersiz zaman yapısı veya Aralık değerleri|**EıNVAL**|Boş dize|
 
@@ -118,7 +118,7 @@ Başarılıysa sıfır. Bir hata oluşursa, [parametre doğrulama](../../c-runti
 
 Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Saat dilimi ortamı ve genel değişkenleri tanımlama hakkında bilgi için yerel saati ve [_ftime64](tzset.md) işlevini yapılandırma hakkında bilgi için [zaman, _time32, _time64](time-time32-time64.md), [_ftime, _ftime32, localtime_s](ftime-ftime32-ftime64.md)ve _localtime32_s [,](localtime-s-localtime32-s-localtime64-s.md) _localtime64_s, _tzset işlevlerine bakın.
 
-**Asctime_s** tarafından üretilen dize sonucu, tam 26 karakter içerir ve forma `Wed Jan 02 02:03:55 1980\n\0`sahiptir. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL**bir hata kodu döndürülür.
+**Asctime_s** tarafından üretilen dize sonucu, tam 26 karakter içerir ve forma sahiptir `Wed Jan 02 02:03:55 1980\n\0` . 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Daha az ise, **EINVAL**bir hata kodu döndürülür.
 
 **_wasctime_s** , **asctime_s**geniş karakterli bir sürümüdür. **_wasctime_s** ve **asctime_s** aynı şekilde davranır.
 
@@ -138,8 +138,8 @@ C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafında
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**asctime_s**|\<Time. h>|
-|**_wasctime_s**|\<Time. h> veya \<wchar. h>|
+|**asctime_s**|\<time.h>|
+|**_wasctime_s**|\<time.h> veya \<wchar.h>|
 
 ## <a name="security"></a>Güvenlik
 

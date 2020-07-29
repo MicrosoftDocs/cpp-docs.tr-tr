@@ -6,18 +6,18 @@ helpviewer_keywords:
 - external linkage, about external linkage
 - external linkage
 ms.assetid: a6f8ea69-b405-4cdd-bf12-ad5462b73183
-ms.openlocfilehash: 35b0fda1f501755640123f5181454a5c36b7e986
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 05fd4bd07aca995a938c7744dfd506d2a71b8774
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233747"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217096"
 ---
 # <a name="external-linkage"></a>Dış Bağlantı
 
-Bir tanımlayıcı için dosya kapsam düzeyindeki ilk bildirim **statik** depolama sınıfı belirticisini kullanmıyorsa, nesnenin dış bağlantısı vardır.
+Bir tanımlayıcı için dosya kapsam düzeyindeki ilk bildirim **`static`** depolama sınıfı belirticisini kullanmıyorsa, nesnenin dış bağlantısı vardır.
 
-Bir işlevin tanımlayıcısının bildiriminde hiçbir *depolama sınıfı Belirleyicisi*yoksa, bağlantısı tam olarak *depolama sınıfı belirticisiyle* `extern`bildirildiği gibi belirlenir. Bir nesne için tanımlayıcı bildiriminde dosya kapsamı varsa ve *depolama sınıfı Belirleyicisi*yoksa, bağlantısı harici olur.
+Bir işlevin tanımlayıcısının bildiriminde hiçbir *depolama sınıfı Belirleyicisi*yoksa, bağlantısı tam olarak *depolama sınıfı belirticisiyle* bildirildiği gibi belirlenir **`extern`** . Bir nesne için tanımlayıcı bildiriminde dosya kapsamı varsa ve *depolama sınıfı Belirleyicisi*yoksa, bağlantısı harici olur.
 
 Dış bağlantıya sahip bir tanımlayıcının adı aynı işlevi veya veri nesnesini, dış bağlantısıyla aynı ada sahip başka bir bildirime sahip olacak şekilde atar. İki bildirim aynı çeviri biriminde veya farklı çeviri birimlerinde olabilir. Nesne veya işlevin genel ömrü de varsa, nesne veya işlev tüm program tarafından paylaşılır.
 

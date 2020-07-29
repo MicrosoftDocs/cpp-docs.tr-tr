@@ -37,18 +37,18 @@ helpviewer_keywords:
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-ms.openlocfilehash: d9e7adb321d85c728c5185c1663fd7f945fc4a82
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 898544f5b191eb68e0ed6f17d7c3c7df849e8d11
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914574"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216862"
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
 
 Belirtilen kayan nokta değerini bir tamsayıya yuvarlar ve bu değeri kayan noktalı bir biçimde döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double nearbyint( double x );
@@ -63,7 +63,7 @@ long double nearbyint( long double x ); //C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -84,7 +84,7 @@ Bu işlev ve [rint](rint-rintf-rintl.md) arasındaki birincil fark, bu işlevin 
 
 En büyük kayan nokta değerleri tam tamsayılar olduğundan, bu işlev kendi kendine hiçbir şekilde taşmayacaktır; Bunun yerine, çıktı, kullandığınız işlevin sürümüne bağlı olarak dönüş değerini taşrabilir.
 
-C++ aşırı yüklemeye izin verdiğinden, **float** veya **Long** **Double** **parametreleri alan ve döndüren bir daha** fazla. C **programında, her** zaman iki çift değer alır ve bir Double değeri döndürür.
+C++ aşırı yüklemeye izin verdiğinden **, bir** **`float`** veya parametresi alıp döndürür **`long double`** . C **programında, her** zaman iki çift değer alır ve bir Double değeri döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -92,7 +92,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|bir **tamsayı**, bir tam açıklama, bir **intf**, **yaklaştığında**|\<Math. h>|\<cmath> veya \<Math. h>|
+|bir **tamsayı**, bir tam açıklama, bir **intf**, **yaklaştığında**|\<math.h>|\<cmath> veya \<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

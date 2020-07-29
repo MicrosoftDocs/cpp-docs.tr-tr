@@ -6,20 +6,20 @@ helpviewer_keywords:
 - importing DLLs [C++], applications
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
-ms.openlocfilehash: 8fd15212a1ca5e31198c50ac2626755ac0171ae7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b858b2ed1b07c143ba24bacbc51c6bba50e3860
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188892"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231526"
 ---
 # <a name="importing-into-an-application"></a>Bir Uygulamaya Aktarma
 
 İki yöntemi kullanarak işlevleri bir uygulamaya aktarabilirsiniz:
 
-- Ana uygulamadaki bir işlev tanımında **__declspec (dllimport)** anahtar sözcüklerini kullanın
+- **`__declspec(dllimport)`** Ana uygulamadaki bir işlev tanımındaki anahtar sözcükleri kullanın
 
-- **__Declspec (dllimport)** ile birlikte bir modül tanımı (. def) dosyası kullanın
+- İle birlikte bir modül tanımı (. def) dosyası kullanın**`__declspec(dllimport)`**
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -33,4 +33,4 @@ ms.locfileid: "62188892"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri ve Dışarı Aktarma](importing-and-exporting.md)
+[İçeri ve dışarı aktarma](importing-and-exporting.md)

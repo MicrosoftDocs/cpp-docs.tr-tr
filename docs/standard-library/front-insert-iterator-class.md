@@ -10,18 +10,18 @@ helpviewer_keywords:
 - std::front_insert_iterator [C++], container_type
 - std::front_insert_iterator [C++], reference
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
-ms.openlocfilehash: 455db433aff1c1aa241beeb6e2435807959b7dd4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8f60b2e5e21b559edb630be2aee377341d4480f6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317157"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87203279"
 ---
 # <a name="front_insert_iterator-class"></a>front_insert_iterator Sınıfı
 
-Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin önüne yazar ve bu nedenle C++ dizi kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. Sınıf, `front_insert_iterator` kapsayıcının türüne göre baştan çıkarıcıdır.
+Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin önüne yazar ve bu nedenle C++ dizi kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `front_insert_iterator`Sınıf kapsayıcının türü üzerinde şablonsaldır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Container>
@@ -31,11 +31,11 @@ class front_insert_iterator;
 ### <a name="parameters"></a>Parametreler
 
 *Kapsayıcı*\
-Ön elemanlara bir `front_insert_iterator`.
+Kapsayıcı türü, tarafından hangi öğelerin eklenebileceği önüne `front_insert_iterator` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsayıcının itfa edilecek sabit sürede dizininin başına öğe eklemenin mümkün olduğu ön ekleme dizisinin gereksinimlerini karşılaması gerekir. [Deque Class](../standard-library/deque-class.md) ve [list Class](../standard-library/list-class.md) tarafından tanımlanan C++ Standart `push_front` Kitaplık sıra kapsayıcıları, gerekli üye işlevi sağlar ve bu gereksinimleri karşılar. Buna karşılık, [vektör Sınıfı](../standard-library/vector-class.md) tarafından tanımlanan sıra kapsayıcıları bu gereksinimleri karşılamaz ve s ile `front_insert_iterator`kullanıma uyarlanamaz. A `front_insert_iterator` her zaman konteyner ile baş harfe getirilmelidir.
+Kapsayıcının itfa edilecek sabit sürede dizininin başına öğe eklemenin mümkün olduğu ön ekleme dizisinin gereksinimlerini karşılaması gerekir. [Deque Sınıfı](../standard-library/deque-class.md) ve [List sınıfı](../standard-library/list-class.md) tarafından tanımlanan C++ standart kitaplık sırası kapsayıcıları, gerekli `push_front` üye işlevini sağlar ve bu gereksinimleri karşılar. Buna karşılık, [vektör sınıfı](../standard-library/vector-class.md) tarafından tanımlanan dizi kapsayıcıları bu gereksinimleri karşılamaz ve ile kullanmak için uyarlayamaz `front_insert_iterator` . `front_insert_iterator`Her zaman kapsayıcısı ile birlikte başlatılmalıdır.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -48,23 +48,23 @@ Kapsayıcının itfa edilecek sabit sürede dizininin başına öğe eklemenin m
 |Tür adı|Açıklama|
 |-|-|
 |[container_type](#container_type)|Ön ekleme yapılacak kapsayıcıyı temsil eden bir tür.|
-|[Başvuru](#reference)|İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.|
+|[başvurunun](#reference)|İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[işleç*](#op_star)|Dereferencing işleci ön ekleme için çıkış \* `i`  =  `x` yineleyici ifadesini uygulamak için kullanılır.|
-|[işleç++](#op_add_add)|Bir değerin `front_insert_iterator` depolanabileceği bir sonraki konuma artışlar.|
-|[işleç=](#op_eq)|Ön ekleme için çıktı yineleyici ifadesini \* `i`  =  `x` uygulamak için kullanılan atama işleci.|
+|[işlecinde](#op_star)|\* `i`  =  `x` Ön ekleme için çıkış yineleyici ifadesini uygulamak üzere kullanılan başvuru başvurusu.|
+|[işleç + +](#op_add_add)|Değerini, `front_insert_iterator` bir değerin depolanabileceği bir sonraki konuma arttırır.|
+|[işleç =](#op_eq)|\* `i`  =  `x` Ön ekleme için çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi** \<: iterator>
+**Üst bilgi**:\<iterator>
 
 **Ad alanı:** std
 
-## <a name="front_insert_iteratorcontainer_type"></a><a name="container_type"></a>front_insert_iterator:container_type
+## <a name="front_insert_iteratorcontainer_type"></a><a name="container_type"></a>front_insert_iterator:: container_type
 
 Ön ekleme yapılacak kapsayıcıyı temsil eden bir tür.
 
@@ -74,7 +74,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *Kapsayıcısı*ile eş anlamlıdır.
+Tür, şablon parametresi *kapsayıcısının*eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -106,7 +106,7 @@ The list L2 is: ( 40 10 20 ).
 */
 ```
 
-## <a name="front_insert_iteratorfront_insert_iterator"></a><a name="front_insert_iterator"></a>front_insert_iterator::front_insert_iterator
+## <a name="front_insert_iteratorfront_insert_iterator"></a><a name="front_insert_iterator"></a>front_insert_iterator:: front_insert_iterator
 
 Belirtilen kapsayıcı nesnesinin önünde öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -117,11 +117,11 @@ explicit front_insert_iterator(Container& _Cont);
 ### <a name="parameters"></a>Parametreler
 
 *_Cont*\
-Öğeleri eklemek için `front_insert_iterator` hangi kapsayıcı nesne.
+İçine `front_insert_iterator` öğe eklemek için olduğu kapsayıcı nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre kapsayıcı nesnesi için A. `front_insert_iterator`
+`front_insert_iterator`Parametresi için bir kapsayıcı nesnesi.
 
 ### <a name="example"></a>Örnek
 
@@ -169,9 +169,9 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a>front_insert_iterator::operatör\*
+## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a>front_insert_iterator:: işleci\*
 
-Adresleç öğeyi döndüren ekleme yinelemesini dereferences.
+, Kendisine ait olduğu öğeyi döndüren ekleme yineleyicisi ' ne başvurur.
 
 ```cpp
 front_insert_iterator<Container>& operator*();
@@ -179,11 +179,11 @@ front_insert_iterator<Container>& operator*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlev, ele verilen öğenin değerini döndürür.
+Üye işlevi, belirtilen öğenin değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıktı yineleyici ifadesini =  ** \*** uygulamak için kullanılan Iter**değeri.** Bir `Iter` dizideki bir öğeyi ele alan bir yineleyici ise, ** \*Iter** = **değeri** bu öğeyi değerle değiştirir ve dizideki toplam öğe sayısını değiştirmez.
+Çıkış Yineleyici ifadesi ** \* Iter**değerini uygulamak için kullanılır  =  **value**. `Iter`Bir dizideki bir öğeyi ele alan bir yineleyici ise, ** \* Iter**  =  **değeri** bu öğenin değerini değeri ile değiştirir ve dizideki toplam öğe sayısını değiştirmez.
 
 ### <a name="example"></a>Örnek
 
@@ -230,9 +230,9 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a>front_insert_iterator::operator++
+## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a>front_insert_iterator:: operator + +
 
-Bir değerin `back_insert_iterator` depolanabileceği bir sonraki konuma artışlar.
+Değerini, `back_insert_iterator` bir değerin depolanabileceği bir sonraki konuma arttırır.
 
 ```cpp
 front_insert_iterator<Container>& operator++();
@@ -242,11 +242,11 @@ front_insert_iterator<Container> operator++(int);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `front_insert_iterator` değerin depolanabileceği bir sonraki konumu ele alan bir adres.
+Bir `front_insert_iterator` değerin depolanabileceği bir sonraki konumu ele alıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hem preincrementation hem de postincrementation operatörleri aynı sonucu döndürer.
+Hem Preincrementation hem de postincrementation işleçleri aynı sonucu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -281,9 +281,9 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a>front_insert_iterator::operator=
+## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a>front_insert_iterator:: operator =
 
-Ekbir değer kapsayıcının önüne ekler (iter).
+Kapsayıcının önüne bir değer ekler (gönderir).
 
 ```cpp
 front_insert_iterator<Container>& operator=(typename Container::const_reference val);
@@ -293,22 +293,22 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 
 ### <a name="parameters"></a>Parametreler
 
-*Val*\
+*Acil*\
 Kapsayıcıya atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kapsayıcının önüne yerleştirilen son öğeye bir başvuru.
+Kapsayıcının önüne yerleştirilen son öğeye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye operatör `container.push_front( val)`değerlendirir, `*this`sonra döndürür.
+İlk üye işleci değerlendirilir `container.push_front( val)` ve ardından döndürür **`*this`** .
 
-İkinci üye operatör değerlendirir
+İkinci üye işleci değerlendirilir
 
 `container->push_front((typename Container::value_type&&) val)`,
 
-sonra `*this`döner.
+ardından döndürür **`*this`** .
 
 ### <a name="example"></a>Örnek
 
@@ -343,7 +343,7 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratorreference"></a><a name="reference"></a>front_insert_iterator::başvuru
+## <a name="front_insert_iteratorreference"></a><a name="reference"></a>front_insert_iterator:: Reference
 
 İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.
 
@@ -390,5 +390,5 @@ The first element in the list L is: 30.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<iterator>](../standard-library/iterator.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ Standart Kütüphane Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

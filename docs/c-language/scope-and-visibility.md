@@ -6,12 +6,12 @@ helpviewer_keywords:
 - visibility
 - file scope [C++]
 ms.assetid: a019eb7c-66ed-46a7-bc9f-89a963930a56
-ms.openlocfilehash: 01b2bc8d75c3c65639a3ff0c57b1a368760eba53
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 354b354a72b5a96a190ce2322eb160b7d6bff1c2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158351"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87199405"
 ---
 # <a name="scope-and-visibility"></a>Kapsam ve Görünürlük
 
@@ -27,8 +27,8 @@ Blok kapsamı blok kapsamına sahip bir tanımlayıcı için bildirimci veya tü
 
 İşlev prototipi kapsamındaki bir tanımlayıcı için bildiri dolabı veya tür Belirleyicisi, bir işlev prototipindeki (işlev bildiriminin parçası olmayan) parametre bildirimlerinin listesi içinde görünür. Kapsamı, işlev bildirimci sonunda sona erer.
 
-Diğer kaynak dosyalarında görünür değişkenleri oluşturmak için uygun bildirimler, [depolama sınıflarında](../c-language/c-storage-classes.md)açıklanmıştır. Ancak, **statik** depolama sınıfı Belirleyicisi ile dış düzeyde belirtilen değişkenler ve işlevler yalnızca tanımlandıkları kaynak dosya içinde görünür. Tüm diğer işlevler genel olarak görünür.
+Diğer kaynak dosyalarında görünür değişkenleri oluşturmak için uygun bildirimler, [depolama sınıflarında](../c-language/c-storage-classes.md)açıklanmıştır. Ancak, dış düzeyde, **`static`** depolama sınıfı belirticisiyle belirtilen değişkenler ve işlevler yalnızca tanımlandıkları kaynak dosya içinde görünür. Tüm diğer işlevler genel olarak görünür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+[Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

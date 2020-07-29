@@ -3,11 +3,12 @@ title: x64 çağırma kuralı
 description: Varsayılan x64 çağırma kuralının ayrıntıları.
 ms.date: 07/06/2020
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: 9bfecd0fb154658a299d3dac7d9e45398ebe450b
-ms.sourcegitcommit: 85d96eeb1ce41d9e1dea947f65ded672e146238b
+ms.openlocfilehash: b615d2e4473fed1d090b7411211c08b0b824bc8f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86058639"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87200861"
 ---
 # <a name="x64-calling-convention"></a>x64 çağırma kuralı
 
@@ -43,7 +44,7 @@ En soldaki dört konumda bulunan tamsayı değerli bağımsız değişkenler, s�
 
 İlk dört parametrede herhangi bir kayan nokta ve çift duyarlıklı bağımsız değişken, konuma göre XMM0-XMM3 ile geçirilir. Kayan nokta değerleri yalnızca vararg bağımsız değişkenleri olduğunda RCX, RDX, R8 ve R9 tamsayı kayıtlarına yerleştirilir. Ayrıntılar için bkz. [varargs](#varargs). Benzer şekilde, XMM0-XMM3 Yazmaçları karşılık gelen bağımsız değişken bir tamsayı veya işaretçi türü olduğunda yoksayılır.
 
-[`__m128`](../cpp/m128.md)türler, diziler ve dizeler hiçbir şekilde anında değer tarafından geçirilmez. Bunun yerine, çağıran tarafından ayrılan belleğe bir işaretçi geçirilir. 8, 16, 32 veya 64 bit ve tür yapılar ve birleşimler `__m64` aynı boyutta tamsayılar gibi geçirilir. Diğer boyutlardaki yapılar veya birleşimler, çağıran tarafından ayrılan belleğe bir işaretçi olarak geçirilir. Bir işaretçi olarak geçirilen bu toplama türleri için, `__m128` arayan tarafından ayrılan geçici bellek, 16 baytlık hizalı olmalıdır.
+[`__m128`](../cpp/m128.md)türler, diziler ve dizeler hiçbir şekilde anında değer tarafından geçirilmez. Bunun yerine, çağıran tarafından ayrılan belleğe bir işaretçi geçirilir. 8, 16, 32 veya 64 bit ve tür yapılar ve birleşimler **`__m64`** aynı boyutta tamsayılar gibi geçirilir. Diğer boyutlardaki yapılar veya birleşimler, çağıran tarafından ayrılan belleğe bir işaretçi olarak geçirilir. Bir işaretçi olarak geçirilen bu toplama türleri için, **`__m128`** arayan tarafından ayrılan geçici bellek, 16 baytlık hizalı olmalıdır.
 
 Yığın alanı içermeyen ve diğer işlevleri çağırmadığı iç işlevler, bazen ek yazmaç bağımsız değişkenlerini geçirmek için diğer geçici Yazmaçları kullanır. Bu iyileştirme, derleyici ile iç işlev uygulamasıyla sıkı bağlama mümkün hale getirilir.
 
@@ -55,9 +56,9 @@ Aşağıdaki tablo, parametrelerin türe ve konuma göre nasıl geçtiğini öze
 |-|-|-|-|-|-|
 | kayan nokta | yığın | XMM3 | XMM2 | XMM1 | XMM0 |
 | integer | yığın | R9 | R8 | RDX | RCX |
-| Toplamlar (8, 16, 32 veya 64 bit) ve`__m64` | yığın | R9 | R8 | RDX | RCX |
+| Toplamlar (8, 16, 32 veya 64 bit) ve**`__m64`** | yığın | R9 | R8 | RDX | RCX |
 | Diğer toplamalar, işaretçiler olarak | yığın | R9 | R8 | RDX | RCX |
-| `__m128`, bir işaretçi olarak | yığın | R9 | R8 | RDX | RCX |
+| **`__m128`**, bir işaretçi olarak | yığın | R9 | R8 | RDX | RCX |
 
 ### <a name="example-of-argument-passing-1---all-integers"></a>Bağımsız değişken geçen bir örnek 1-tüm tamsayılar
 
@@ -103,9 +104,9 @@ func2() {   // RCX = 2, RDX = XMM1 = 1.0, and R8 = 7
 }
 ```
 
-## <a name="return-values"></a>Döndürülen değerler
+## <a name="return-values"></a>Dönüş değerleri
 
-Türü de dahil olmak üzere 64 bite uyaabilecek skaler bir dönüş değeri `__m64` , Kx aracılığıyla döndürülür. ; Gibi float, Double değerleri ve vektör türlerini içeren skalar olmayan türler, [`__m128`](../cpp/m128.md) [`__m128i`](../cpp/m128i.md) [`__m128d`](../cpp/m128d.md) XMM0 içinde döndürülür. IX veya XMM0 içinde döndürülen değer içindeki kullanılmayan bitlerin durumu tanımsız.
+Türü de dahil olmak üzere 64 bite uyaabilecek skaler bir dönüş değeri **`__m64`** , Kx aracılığıyla döndürülür. ; Gibi float, Double değerleri ve vektör türlerini içeren skalar olmayan türler, [`__m128`](../cpp/m128.md) [`__m128i`](../cpp/m128i.md) [`__m128d`](../cpp/m128d.md) XMM0 içinde döndürülür. IX veya XMM0 içinde döndürülen değer içindeki kullanılmayan bitlerin durumu tanımsız.
 
 Kullanıcı tanımlı türler, genel işlevlerden ve statik üye işlevlerdeki değere göre döndürülebilir. Bir Kullanıcı tanımlı türü, bir GREX değerine göre döndürmek için, 1, 2, 4, 8, 16, 32 veya 64 bit uzunluğunda olmalıdır. Ayrıca, Kullanıcı tanımlı Oluşturucusu, yok edicisi veya kopya atama operatörünün olması gerekir. Özel veya korumalı statik olmayan veri üyelerine sahip olamaz ve başvuru türündeki statik olmayan veri üyesi olamaz. Temel sınıflar veya sanal işlevlere sahip olamaz. Ayrıca, bu gereksinimleri karşılayan veri üyelerine de sahip olabilir. (Bu tanım temelde bir C++ 03 POD türü ile aynıdır. Tanım C++ 11 standardında değiştiğinden, `std::is_pod` Bu test için kullanılması önerilmez.) Aksi takdirde, çağıran dönüş değeri için bellek ayırmayı ve ilk bağımsız değişken olarak ona bir işaretçi iletmelidir. Kalan bağımsız değişkenler daha sonra sağa bir bağımsız değişken kaydıralınır. Aynı işaretçi, RAMPAIÇINDEKI çağrılan tarafından döndürülmelidir.
 
@@ -211,7 +212,7 @@ Denetim bayraklarının listesi oluşturulmamış kurallarla ilgili kuralların 
 
 ## <a name="setjmplongjmp"></a>setjmp/longjmp
 
-Setjmpex. h veya setjmp. h dahil ettiğinizde, tüm çağrıları [`setjmp`](../c-runtime-library/reference/setjmp.md) [`longjmp`](../c-runtime-library/reference/longjmp.md) ve yıkıcıları ve çağrıları çağıran bir geriye doğru çağırır `__finally` .  Bu davranış, setjmp. h dahil olmak üzere, `__finally` yan tümcelerde ve yıkıcılarda çağrılan x86 'dan farklıdır.
+Setjmpex. h veya setjmp. h dahil ettiğinizde, tüm çağrıları [`setjmp`](../c-runtime-library/reference/setjmp.md) [`longjmp`](../c-runtime-library/reference/longjmp.md) ve yıkıcıları ve çağrıları çağıran bir geriye doğru çağırır **`__finally`** .  Bu davranış, setjmp. h dahil olmak üzere, **`__finally`** yan tümcelerde ve yıkıcılarda çağrılan x86 'dan farklıdır.
 
 `setjmp`Geçerli yığın işaretçisini, geçici olmayan kayıtları ve MXCSR yazmaçlarını koruyan bir çağrı.  `longjmp`En son `setjmp` çağrı sitesine geri dönmek ve yığın işaretçisi, geçici olmayan Yazmaçları ve MXCSR yazmaçlarını en son çağrıya göre korunan duruma geri döndürecek şekilde çağırır `setjmp` .
 

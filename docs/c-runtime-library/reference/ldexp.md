@@ -39,18 +39,18 @@ helpviewer_keywords:
 - exponent, floating-point numbers
 - floating-point functions, mantissa and exponent
 ms.assetid: aa7f5310-3879-4f63-ae74-86a39fbdedfa
-ms.openlocfilehash: 95eb1eb3ca18e0e7d3450951c930a07f954bc299
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bbd1742cdace30d5bc3bd5e9d592bb24a86f917f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916537"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216927"
 ---
 # <a name="ldexp-ldexpf-ldexpl"></a>ldexp, ldexpf, ldexpl
 
 Bir kayan noktalı sayıyı iki tam sayı gücüyle çarpar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double ldexp(
@@ -77,7 +77,7 @@ long double ldexpl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 *exp*<br/>
@@ -85,13 +85,13 @@ Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Ldexp** işlevleri, başarılı olursa *x* \* 2<sup>*Exp*</sup> değerini döndürür. Taşma durumunda ve *x*işaretine bağlı olarak, **ldexp** , +/- **HUGE_VAL**; döndürür. **errno** değeri **ERANGE**olarak ayarlanır.
+**Ldexp** işlevleri, *x* \* başarılı olursa x 2<sup>*Exp*</sup> değerini döndürür. Taşma durumunda ve *x*işaretine bağlı olarak, **ldexp** , +/- **HUGE_VAL**; döndürür. **errno** değeri **ERANGE**olarak ayarlanır.
 
 **Errno** ve olası hata dönüş değerleri hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **ldexp** 'nin **float** veya **Long** **Double** türlerini içeren aşırı yüklerini çağırabilirsiniz. C programında, **ldexp** her zaman bir **Double** ve **int** alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, veya türündeki **ldexp** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **ldexp** her zaman bir ve alır **`double`** **`int`** ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -99,7 +99,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**ldexp**, **ldexpf**, **ldexpl**|\<Math. h>|\<cmath>|
+|**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -129,6 +129,6 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](frexp.md)<br/>
 [modf, modff, modfl](modf-modff-modfl.md)<br/>

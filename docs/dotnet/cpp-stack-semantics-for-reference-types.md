@@ -4,42 +4,42 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: 4d9aaa493eab39199ac75b6b9fe888c3e103f115
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 886d0d16d8b81364078db5604ab10d8dcc3fa561
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448073"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87197845"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 
-Visual Studio 2005'ten önce bir başvuru türünün bir örneği yalnızca kullanarak oluşturulabilir `new` toplanan yığın atık nesneyi oluşturan işleci. Bununla birlikte, artık yığında yerel türünün örneğini oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünün bir örneğini oluşturabilirsiniz. Bu nedenle, kullanın gerekmez [yeni başvuru, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında, derleyicinin nesnenin yok Edicisi çağırır.
+Visual Studio 2005 ' den önce, başvuru türünün bir örneği yalnızca, **`new`** atık toplanan yığında nesneyi oluşturan işleci kullanılarak oluşturulabilir. Bununla birlikte, artık yığında yerel bir türün örneğini oluşturmak için kullandığınız söz dizimini kullanarak başvuru türünün bir örneğini oluşturabilirsiniz. Bu nedenle, başvuru türünde bir nesne oluşturmak için [Yeni ref, gcnew](../extensions/ref-new-gcnew-cpp-component-extensions.md) kullanmanız gerekmez. Nesne kapsam dışına geçtiğinde, derleyici nesnenin yıkıcıyı çağırır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yığın anlamları kullanarak bir başvuru türünün örneğini oluşturmak, derleyici dahili olarak örnek atık toplanan yığında oluşturun (kullanarak `gcnew`).
+Yığın semantiğini kullanarak bir başvuru türü örneği oluşturduğunuzda, derleyici örneği atık toplanan yığında (kullanarak) dahili olarak oluşturur **`gcnew`** .
 
-Bir işlev imzası veya dönüş türü bir değere göre başvuru türünde bir örnek içerdiğinde, işlevi meta veriler (ile modreq) özel işlem gerektiren olarak işaretlenir. Bu özel işlem şu anda olan Visual C++ istemciler tarafından; yalnızca sağlanan Diğer diller, alıcı işlevleri veya yığın anlamları ile oluşturulan başvuru türleri kullanan veri şu anda desteklemez.
+Bir işlevin imzası veya dönüş türü, değer bir başvuru türünün bir örneğini içerdiğinde, bu işlev meta verilerde özel işleme (modreq ile) göre işaretlenir. Bu özel işleme Şu anda yalnızca Visual C++ istemcileri tarafından sağlanır; diğer diller şu anda, yığın semantiğinin oluşturduğu başvuru türlerini kullanan işlevleri veya verileri kullanmayı desteklememektedir.
 
-Kullanmak için bir neden `gcnew` (dinamik ayırma) yığını yerine türü yok yok Edicisi varsa semantiği olacaktır. Ayrıca, yığın anlamları işlevi imzalarında ile oluşturulan başvuru türlerini kullanarak Visual C++ dışındaki diller tarafından tüketilmesi işlevlerinizi istiyorsanız mümkün olmaz.
+**`gcnew`** Tür yok edicisi yoksa yığın semantiği yerine kullanmanın bir nedeni (dinamik ayırma) olur. Ayrıca, işlevlerinizin Visual C++ dışındaki diller tarafından kullanılmasını istiyorsanız işlev imzalarında yığın semantiğinin kullanıldığı başvuru türlerini kullanmak mümkün olmaz.
 
-Derleyici, bir başvuru türü için bir kopya Oluşturucu oluşturmaz. Bu nedenle, bir değere göre başvuru türü imzada kullanan bir işlev tanımlarsanız, başvuru türü için bir kopya Oluşturucu tanımlamanız gerekir. Bir başvuru türü için bir kopya Oluşturucu bir imza aşağıdaki biçime sahiptir: `R(R%){}`.
+Derleyici, bir başvuru türü için kopya Oluşturucusu oluşturmaz. Bu nedenle, İmzada değere göre başvuru türü kullanan bir işlev tanımlarsanız, başvuru türü için bir kopya Oluşturucu tanımlamanız gerekir. Bir başvuru türü için kopya Oluşturucu aşağıdaki biçimde bir imzaya sahip: `R(R%){}` .
 
-Derleyicinin bir varsayılan atama işleci bir başvuru türü için oluşturmaz. Atama işleci, yığın anlamları kullanarak bir nesne oluşturun ve yığın anlamları kullanarak oluşturduğunuz var olan bir nesne ile başlatmak sağlar. Bir atama işleci bir başvuru türü için bir imza aşağıdaki biçime sahiptir: `void operator=( R% ){}`.
+Derleyici, bir başvuru türü için varsayılan atama işleci oluşturmaz. Atama işleci, yığın semantiğini kullanarak bir nesne oluşturmanıza ve yığın semantiğini kullanarak oluşturulan mevcut bir nesneyle başlatmanıza olanak tanır. Bir başvuru türü için atama işleci aşağıdaki biçimde bir imzaya sahip: `void operator=( R% ){}` .
 
-Türün yok Edicisi kritik kaynakları serbest bırakır ve başvuru türleri için yığın anlamları kullanırsanız yok ediciyi açıkça çağırmak gerekmez (veya çağrı `delete`). Başvuru türlerindeki Yıkıcılar hakkında daha fazla bilgi için bkz. [yok ediciler ve sonlandırıcılar, nasıl yapılır: Sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+Türün yıkıcısı kritik kaynaklar yayımlarsa ve başvuru türleri için yığın semantiğini kullanıyorsanız, yıkıcıyı (veya çağrısını) açıkça çağırmanız gerekmez **`delete`** . Başvuru türlerindeki yok ediciler hakkında daha fazla bilgi için bkz. [nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 
-Derleyici tarafından üretilen atama işleci aşağıdaki eklemelerle normal standart C++ kurallarını izler:
+Derleyici tarafından oluşturulan atama operatörü, aşağıdaki eklemelerle olağan standart C++ kurallarını izler:
 
-- Üyeleri bir başvuru türü için bir tanıtıcı türü olan herhangi bir statik olmayan veri kopyalanan (bir işaretçi türü olan bir statik olmayan veri üyesi gibi kabul edilir) basit.
+- Türü bir başvuru türüne yönelik tanıtıcı olan statik olmayan veri üyeleri, basit bir şekilde kopyalanır (türü işaretçi olan statik olmayan bir veri üyesi olarak işlenir).
 
-- Değer türü bir basit türü olan herhangi bir statik olmayan veri üyesi kopyalanır.
+- Türü bir değer türü olan statik olmayan herhangi bir veri üyesi, yüzeysel olarak kopyalanabilir.
 
-- Bir başvuru türünün bir örneği, türü olan herhangi bir statik olmayan veri üyesi başvuru türün kopya oluşturucu çağrısı çağırır.
+- Türü bir başvuru türünün örneği olan statik olmayan herhangi bir veri üyesi, başvuru türünün kopya oluşturucusuna bir çağrı çağıracaktır.
 
-Derleyici ayrıca sağlar bir `%` birli işleç, temel alınan tanıtıcı türü için yığın anlamları kullanılarak oluşturulan bir başvuru türünün bir örneği dönüştürülecek.
+Derleyici Ayrıca, `%` yığın semantiği kullanılarak oluşturulan bir başvuru türünün örneğini temel alınan tanıtıcı türüne dönüştürmek için birli bir operatör sağlar.
 
-Yığın anlamları ile kullanmak için aşağıdaki başvuru türleri kullanılamıyor:
+Aşağıdaki başvuru türleri yığın semantiğinin kullanımına açık değil:
 
 - [temsilci (C++ Bileşen Uzantıları)](../extensions/delegate-cpp-component-extensions.md)
 
@@ -51,7 +51,7 @@ Yığın anlamları ile kullanmak için aşağıdaki başvuru türleri kullanıl
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki kod örneği, başvuru türleri için yığın anlamları örneklerini bildirmek gösterilmektedir nasıl atama işleci ve kopya Oluşturucusu çalışır ve yığın anlamları kullanılarak oluşturulan başvuru türü ile nasıl bir izleme başvurusu.
+Aşağıdaki kod örneği, dizi semantiğine sahip başvuru türleri örneklerinin nasıl bildirilemeyeceğini, atama işlecinin ve kopya oluşturucusunun nasıl çalıştığını ve yığın semantiği kullanılarak oluşturulan başvuru türü ile izleme başvurusunun nasıl başlatılacağını gösterir.
 
 ### <a name="code"></a>Kod
 
@@ -101,7 +101,7 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 98
@@ -113,4 +113,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve Yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
+[Sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)

@@ -113,18 +113,18 @@ helpviewer_keywords:
 - converting numbers, to strings
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-ms.openlocfilehash: 424ee4fb732811bffc6a83c0de57cd35fe747c42
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 28e6e2300c96e6236ffc4fd927d8153a1f8bcd13
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914662"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216940"
 ---
 # <a name="itoa-_itoa-ltoa-_ltoa-ultoa-_ultoa-_i64toa-_ui64toa-_itow-_ltow-_ultow-_i64tow-_ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
 Bir tamsayıyı bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char * _itoa( int value, char *buffer, int radix );
@@ -197,7 +197,7 @@ Bu işlevlerin her biri, *arabelleğe*bir işaretçi döndürür. Hata döndürm
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_İtoa**, **_ltoa**, **_ultoa**, **_i64toa**ve **_ui64toa** işlevleri verilen *değer* bağımsız değişkeninin basamaklarını null ile sonlandırılmış bir karakter dizesine **dönüştürür ve sonucu** **(_itoa ve** **_ltoa için**33 65 karaktere **kadar)** *arabelleğe*dönüştürür. **_ultoa** *Taban* eşittir 10 ve *değer* negatifse, depolanan dizenin ilk karakteri eksi işareti (**-**) olur. **_İtow**, **_ltow**, **_ultow**, **_i64tow**ve **_ui64tow** işlevleri sırasıyla **_itoa**, **_ltoa**, **_ultoa**, **_i64toa**ve **_ui64toa**geniş karakter sürümleridir.
+**_İtoa**, **_ltoa**, **_ultoa**, **_i64toa**ve **_ui64toa** işlevleri verilen *değer* bağımsız değişkeninin basamaklarını null ile sonlandırılmış bir karakter dizesine **dönüştürür ve sonucu** **(_itoa ve** **_ltoa için**33 65 karaktere **kadar)** *arabelleğe*dönüştürür. **_ultoa** *Taban* eşittir 10 ve *değer* negatifse, depolanan dizenin ilk karakteri eksi işareti ( **-** ) olur. **_İtow**, **_ltow**, **_ultow**, **_i64tow**ve **_ui64tow** işlevleri sırasıyla **_itoa**, **_ltoa**, **_ultoa**, **_i64toa**ve **_ui64toa**geniş karakter sürümleridir.
 
 > [!IMPORTANT]
 > Bu işlevler, çok küçük bir arabellek sonunu geçmiş olabilir. Arabellek taşmalarını engellemek için, *arabelleğin* dönüştürülmüş rakamları ve sondaki null karakteri ve bir işaret karakterini tutabilecek kadar büyük olduğundan emin olun. Bu işlevlerin kötüye kullanılması, kodunuzda ciddi güvenlik sorunlarına neden olabilir.
@@ -240,7 +240,7 @@ Bir dize dönüştürme işlevinde, Bu makrolardan birini kullanmak için, uygun
 |**_i64toa**, **_i64tow**|16<br/>10<br/>8<br/>2|**_MAX_I64TOSTR_BASE16_COUNT**<br/>**_MAX_I64TOSTR_BASE10_COUNT**<br/>**_MAX_I64TOSTR_BASE8_COUNT**<br/>**_MAX_I64TOSTR_BASE2_COUNT**|
 |**_ui64toa**, **_ui64tow**|16<br/>10<br/>8<br/>2|**_MAX_U64TOSTR_BASE16_COUNT**<br/>**_MAX_U64TOSTR_BASE10_COUNT**<br/>**_MAX_U64TOSTR_BASE8_COUNT**<br/>**_MAX_U64TOSTR_BASE2_COUNT**|
 
-Bu örnek, taban 2 ' de **imzasız uzun uzun** bir süre içerecek büyüklükte bir arabellek tanımlamak için bir dönüştürme sayısı makrosu kullanır:
+Bu örnek **`unsigned long long`** , taban 2 ' de bulunan bir arabellek tanımlamak için bir dönüştürme sayısı makrosu kullanır:
 
 ```cpp
 #include <wchar.h>
@@ -266,9 +266,9 @@ int main()
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ıtoa**, **ltoa**, **ultoa**|\<Stdlib. h>|
-|**_itoa**, **_ltoa**, **_ultoa**, **_i64toa**, **_ui64toa**|\<Stdlib. h>|
-|**_itow**, **_ltow**, **_ultow**, **_i64tow**, **_ui64tow**|\<Stdlib. h> veya \<wchar. h>|
+|**ıtoa**, **ltoa**, **ultoa**|\<stdlib.h>|
+|**_itoa**, **_ltoa**, **_ultoa**, **_i64toa**, **_ui64toa**|\<stdlib.h>|
+|**_itow**, **_ltow**, **_ultow**, **_i64tow**, **_ui64tow**|\<stdlib.h> veya \<wchar.h>|
 
 Bu işlevler ve makrolar, Microsoft 'a özgüdür. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

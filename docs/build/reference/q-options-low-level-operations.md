@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Q compiler option [C++]
 - -Q compiler option [C++]
 - /Q compiler option [C++]
-ms.openlocfilehash: 722a63a43e5e08fe80b26f908c7ae92df2fdb29c
-ms.sourcegitcommit: 0f4ee9056d65043fa5a715f0ad1031c0ed30e2b6
+ms.openlocfilehash: f5342071cef76bcc736f128c344279898a61c462
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034525"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231500"
 ---
 # <a name="q-options-low-level-operations"></a>/Q Seçenekler (Düşük Düzey İşlemler)
 
@@ -20,9 +20,9 @@ Aşağıdaki alt düzey derleyici işlemlerini gerçekleştirmek için **/q** de
 
 - [/Qfast_transcendentals (hızlı bir şekilde zorla zorla)](qfast-transcendentals-force-fast-transcendentals.md): hızlı bir şekilde, daha fazla işlem oluşturur.
 
-- [/Qifist (_Ftol bastır)](qifist-suppress-ftol.md): kayan nokta türünden bir tamsayı türüne dönüştürme yapılması gerektiğinde `_ftol` bastırır (yalnızca x86).
+- [/Qifist (_Ftol bastır)](qifist-suppress-ftol.md): bir `_ftol` kayan nokta türünden bir tamsayı türüne dönüştürme yapılması gerektiğinde bastırır (yalnızca x86).
 
-- [/Qimprecise_fwaits (TRY blokları içinde fwait 'Yi Kaldır)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): `try` blokları içindeki `fwait` komutları kaldırır.
+- [/Qimprecise_fwaits (TRY blokları içinde fwait 'Yi Kaldır)](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md): `fwait` bloklar içindeki komutları kaldırır **`try`** .
 
 - [/Qıntel-JCC-errat](qintel-jcc-erratum.md): Intel atlaymcode (JCC) ermıtum mikro kod güncelleştirmesinden kaynaklanan performans etkisini azaltır.
 
@@ -42,5 +42,5 @@ Aşağıdaki alt düzey derleyici işlemlerini gerçekleştirmek için **/q** de
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

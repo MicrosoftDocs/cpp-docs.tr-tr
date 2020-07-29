@@ -1,5 +1,5 @@
 ---
-title: '&lt;type_traits &gt;'
+title: '&lt;type_traits&gt;'
 ms.date: 02/21/2019
 f1_keywords:
 - <type_traits>
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: a0d7f57d13b4387dd5ba39048adf65d9ec7ca3f5
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 94178d2efd1942a7475fa7987526b021b1c6fb68
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684421"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87201970"
 ---
-# <a name="lttype_traitsgt"></a>&lt;type_traits &gt;
+# <a name="lttype_traitsgt"></a>&lt;type_traits&gt;
 
 Tür bağımsız değişkenlerinin özellikleri hakkında bilgi veren derleme zamanı sabitlerinin şablonlarını tanımlar veya dönüştürülmüş türler üretir.
 
@@ -26,22 +26,22 @@ Tür bağımsız değişkenlerinin özellikleri hakkında bilgi veren derleme za
 
 ## <a name="remarks"></a>Açıklamalar
 
-@No__t_0type_traits > içindeki sınıflar ve şablonlar, derleme zamanında tür çıkarımı, sınıflandırma ve dönüştürmeyi desteklemek için kullanılır. Bunlar ayrıca, türle ilgili hataları algılamak ve genel kodunuzu iyileştirmenize yardımcı olmak için kullanılır. Birli tür nitelikleri bir türün özelliğini betimleyen, ikili tür nitelikleri türler arasındaki ilişkiyi tanımlıyor ve dönüştürme nitelikleri bir türün özelliğini değiştirir.
+İçindeki sınıflar ve şablonlar, \<type_traits> derleme zamanında tür çıkarımı, sınıflandırma ve dönüştürmeyi desteklemek için kullanılır. Bunlar ayrıca, türle ilgili hataları algılamak ve genel kodunuzu iyileştirmenize yardımcı olmak için kullanılır. Birli tür nitelikleri bir türün özelliğini betimleyen, ikili tür nitelikleri türler arasındaki ilişkiyi tanımlıyor ve dönüştürme nitelikleri bir türün özelliğini değiştirir.
 
-Yardımcı sınıfı `integral_constant` ve şablon Uzmanlıkları `true_type` ve `false_type` tür koşullarına ait temel sınıfları oluşturur. *Tür koşulu* bir veya daha fazla tür bağımsız değişkeni alan bir şablondur. Bir tür koşulu *doğru taşıdığı*zaman, doğrudan veya dolaylı olarak [true_type](../standard-library/type-traits-typedefs.md#true_type)adresinden türetilir. Bir tür koşulu *yanlış*olduğunda, [false_type](../standard-library/type-traits-typedefs.md#false_type)adresinden doğrudan veya dolaylı olarak genel olarak türetilir.
+Yardımcı sınıfı `integral_constant` ve şablonu, `true_type` `false_type` tür koşullarına yönelik temel sınıfları özelleştirmeler ve oluşturur. *Tür koşulu* bir veya daha fazla tür bağımsız değişkeni alan bir şablondur. Bir tür koşulu *doğru taşıdığı*zaman, [true_type](../standard-library/type-traits-typedefs.md#true_type)doğrudan veya dolaylı olarak, genel olarak türetilir. Bir tür koşulu *yanlış taşıdığı*zaman, [false_type](../standard-library/type-traits-typedefs.md#false_type)doğrudan veya dolaylı olarak, genel olarak türetilir.
 
-Bir *tür değiştirici* veya *dönüştürme nitelik* , bir veya daha fazla şablon bağımsız değişkeni alan ve `type` bir üyeye sahip olan ve değiştirilmiş tür için bir eş anlamlı olan bir şablondur.
+Bir *tür değiştirici* veya *dönüştürme nitelik* , bir veya daha fazla şablon bağımsız değişkeni alan ve `type` değiştirilmiş tür için bir eş anlamlı olan bir üyeye sahip olan bir şablondur.
 
 ### <a name="alias-templates"></a>Diğer ad şablonları
 
-Tür nitelikleri ifadelerini basitleştirmek için `typename some_trait<T>::type` [diğer ad şablonları](../cpp/aliases-and-typedefs-cpp.md) sağlanır; burada *some_trait* , sınıf şablonu adıdır. Örneğin, [add_const](../standard-library/add-const-class.md) , türü için bir diğer ad şablonuna sahiptir `add_const_t`, şöyle tanımlanır:
+Tür nitelikleri ifadelerini basitleştirmek için, için [diğer ad şablonları](../cpp/aliases-and-typedefs-cpp.md) `typename some_trait<T>::type` sağlanır; burada *some_trait* sınıf şablonu adıdır. Örneğin [add_const](../standard-library/add-const-class.md) , türü için bir diğer ad şablonuna sahiptir, `add_const_t` şöyle tanımlanır:
 
 ```cpp
 template <class T>
 using add_const_t = typename add_const<T>::type;
 ```
 
-Bunlar, `type` üyeleri için belirtilen diğer adlardır:
+Üyeler için belirtilen diğer adlar şunlardır `type` :
 
 ||||
 |-|-|-|
@@ -68,8 +68,8 @@ Birincil tür kategorileri
 
 |||
 |-|-|
-|[is_void](../standard-library/is-void-class.md)|Türün **void**olup olmadığını test eder.|
-|[is_null_pointer](../standard-library/is-null-pointer-class.md)|Türün `std::nullptr_t` olup olmadığını test eder.|
+|[is_void](../standard-library/is-void-class.md)|Türün olup olmadığını test eder **`void`** .|
+|[is_null_pointer](../standard-library/is-null-pointer-class.md)|Türün olup olmadığını test eder `std::nullptr_t` .|
 |[is_integral](../standard-library/is-integral-class.md)|Türün integral olup olmadığını test eder.|
 |[is_floating_point](../standard-library/is-floating-point-class.md)|Türün kayan nokta olup olmadığını sınar.|
 |[is_array](../standard-library/is-array-class.md)|Türün bir dizi olup olmadığını test eder.|
@@ -89,7 +89,7 @@ Bileşik tür kategorileri
 |-|-|
 |[is_reference](../standard-library/is-reference-class.md)|Türün bir başvuru olup olmadığını test eder.|
 |[is_arithmetic](../standard-library/is-arithmetic-class.md)|Türün aritmetik olup olmadığını test eder.|
-|[is_fundamental](../standard-library/is-fundamental-class.md)|Türün **void** mi yoksa aritmetik mi olduğunu sınar.|
+|[is_fundamental](../standard-library/is-fundamental-class.md)|Türün mi yoksa aritmetik mi olduğunu sınar **`void`** .|
 |[is_object](../standard-library/is-object-class.md)|Türün bir nesne türü olup olmadığını test eder.|
 |[is_scalar](../standard-library/is-scalar-class.md)|Türün skaler olup olmadığını test eder.|
 |[is_compound](../standard-library/is-compound-class.md)|Türün skaler olup olmadığını test eder.|
@@ -99,17 +99,17 @@ Tür özellikleri
 
 |||
 |-|-|
-|[is_const](../standard-library/is-const-class.md)|Türün **const**olup olmadığını test eder.|
-|[is_volatile](../standard-library/is-volatile-class.md)|Türün **geçici**olup olmadığını test eder.|
+|[is_const](../standard-library/is-const-class.md)|Türün olup olmadığını test eder **`const`** .|
+|[is_volatile](../standard-library/is-volatile-class.md)|Türün olup olmadığını test eder **`volatile`** .|
 |[is_trivial](../standard-library/is-trivial-class.md)|Türün önemsiz olup olmadığını test eder.|
 |[is_trivially_copyable](../standard-library/is-trivially-copyable-class.md)|Türün Üçlü kopyalanabilir olup olmadığını test eder.|
 |[is_standard_layout](../standard-library/is-standard-layout-class.md)|Türün Standart Düzen türü olup olmadığını sınar.|
 |[is_pod](../standard-library/is-pod-class.md)|Türün POD olup olmadığını test eder.|
-|[is_literal_type](../standard-library/is-literal-type-class.md)|Türün bir `constexpr` değişkeni olup olmayacağını veya bir `constexpr` işlevinde kullanılıp kullanılmadığını sınar.|
+|[is_literal_type](../standard-library/is-literal-type-class.md)|Türün bir **`constexpr`** değişken ya da bir işlevde kullanılıp kullanılamayacağını sınar **`constexpr`** .|
 |[is_empty](../standard-library/is-empty-class.md)|Türün boş bir sınıf olup olmadığını test eder.|
 |[is_polymorphic](../standard-library/is-polymorphic-class.md)|Türün çok biçimli bir sınıf olup olmadığını sınar.|
 |[is_abstract](../standard-library/is-abstract-class.md)|Türün soyut bir sınıf olup olmadığını test eder.|
-|[is_final](../standard-library/is-final-class.md)|Türün `final` işaretli bir sınıf türü olup olmadığını sınar.|
+|[is_final](../standard-library/is-final-class.md)|Türün işaretlenmiş bir sınıf türü olup olmadığını sınar `final` .|
 |[is_aggregate](../standard-library/is-aggregate-class.md)||
 |[is_signed](../standard-library/is-signed-class.md)|Türün işaretli bir tamsayı olup olmadığını test eder.|
 |[is_unsigned](../standard-library/is-unsigned-class.md)|Türün işaretsiz bir tamsayı olup olmadığını test eder.|
@@ -168,9 +168,9 @@ Const geçici değişiklikler
 
 |||
 |-|-|
-|[add_const](../standard-library/add-const-class.md)|Türden bir **const** türü üretir.|
-|[add_volatile](../standard-library/add-volatile-class.md)|Türden **geçici** bir tür üretir.|
-|[add_cv](../standard-library/add-cv-class.md)|Türden bir **const geçici** türü üretir.|
+|[add_const](../standard-library/add-const-class.md)|Türden bir **`const`** tür üretir.|
+|[add_volatile](../standard-library/add-volatile-class.md)|Türden bir **`volatile`** tür üretir.|
+|[add_cv](../standard-library/add-cv-class.md)|Türden bir **`const volatile`** tür üretir.|
 |[remove_const](../standard-library/remove-const-class.md)|Türden const olmayan bir tür üretir.|
 |[remove_volatile](../standard-library/remove-volatile-class.md)|Türden geçici olmayan bir tür üretir.|
 |[remove_cv](../standard-library/remove-cv-class.md)|Türden const olmayan geçici olmayan bir tür üretir.|
@@ -228,4 +228,4 @@ Mantıksal işleç nitelikleri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<functional >](../standard-library/functional.md)
+[\<functional>](../standard-library/functional.md)

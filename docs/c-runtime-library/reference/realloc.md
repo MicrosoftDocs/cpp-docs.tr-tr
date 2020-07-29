@@ -37,18 +37,18 @@ helpviewer_keywords:
 - _frealloc function
 - reallocate memory blocks
 ms.assetid: 2b2239de-810b-4b11-9438-32ab0a244185
-ms.openlocfilehash: 15c818ee6f70d02fb9b63f12deef6b1bf3698322
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 72c38021452940553bad770160ecc5db7ea546d0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917937"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216823"
 ---
 # <a name="realloc"></a>realloc
 
 Bellek bloklarını yeniden tahsis edin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *realloc(
@@ -67,13 +67,13 @@ Bayt cinsinden yeni boyut.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**realloc** , yeniden ayrılan (ve muhtemelen taşınan) bellek bloğuna **void** bir işaretçi döndürür.
+**realloc** **`void`** , yeniden ayrılan (ve muhtemelen taşınan) bellek bloğuna yönelik bir işaretçi döndürür.
 
 Bloğu verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, özgün blok değiştirilmeden bırakılır ve **null** döndürülür.
 
 *Boyut* sıfırsa, *memblock* tarafından işaret edilen blok serbest bırakılır; dönüş değeri **null**ve *memblock* serbest bırakılmış bir blok üzerine gelindiğinde bırakılır.
 
-Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. **Void**dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
+Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garantili bir depolama alanına işaret eder. Dışında bir türe işaretçi almak için **`void`** , dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -83,7 +83,7 @@ Dönüş değeri, herhangi bir nesne türünün depolanması için uygun şekild
 
 bellek ayırma başarısız olursa veya istenen bellek miktarı **_HEAP_MAXREQ**aşarsa, **realloc** **errno** değerini **ENOMEM** olarak ayarlar. Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**realloc** , yeni işleyici modunu ayarlamak için C++ [_set_new_mode](set-new-mode.md) işlevini kullanmak üzere **malloc** çağırır. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylelikle **realloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni** işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın
+**realloc** , yeni işleyici modunu ayarlamak için C++ [_set_new_mode](set-new-mode.md) işlevini kullanmak üzere **malloc** çağırır. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylelikle **realloc** bellek ayıramadığında, **malloc** , yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın
 
 ```C
 _set_new_mode(1);
@@ -93,7 +93,7 @@ daha erken bir programda veya NEWMODE ile bağlantılandırın. OBJ (bkz. [bağl
 
 Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **realloc** [_realloc_dbg](realloc-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-**realloc** , ve `__declspec(noalias)` işlevinin `__declspec(restrict)`genel değişkenleri değiştirmeyeceği garantisi olduğunu ve döndürülen işaretçinin diğer ad olmadığından emin olduğunu belirtir ve olarak işaretlenir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
+**realloc** , `__declspec(noalias)` ve `__declspec(restrict)` işlevinin genel değişkenleri değiştirmeyeceği garantisi olduğunu ve döndürülen işaretçinin diğer ad olmadığından emin olduğunu belirtir ve olarak işaretlenir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -101,7 +101,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**realloc**|\<Stdlib. h> ve \<malloc. h>|
+|**realloc**|\<stdlib.h> ve \<malloc.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -154,7 +154,7 @@ Size of block after realloc of 1000 more longs: 8000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
 [Süz](free.md)<br/>
 [malloc](malloc.md)<br/>

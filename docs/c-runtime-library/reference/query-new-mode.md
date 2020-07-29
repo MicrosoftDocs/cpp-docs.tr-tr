@@ -27,12 +27,12 @@ helpviewer_keywords:
 - handler modes
 - _query_new_mode function
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768
-ms.openlocfilehash: 59724dafdc6488596478d0b44b254c4f498fce99
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 26fabc71337f1554b63909697b601a0bd9e86638
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950110"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216836"
 ---
 # <a name="_query_new_mode"></a>_query_new_mode
 
@@ -52,13 +52,13 @@ int _query_new_mode(
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_Query_new_mode** işlevi, C++ [malloc](malloc.md)için [_set_new_mode](set-new-mode.md) işlevi tarafından ayarlanan yeni işleyici modunu gösteren bir tamsayı döndürür. Yeni işleyici modu, bellek ayırmayı başarısızlığından, **malloc** 'in [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırmaya yönelik olup olmadığını gösterir. Varsayılan olarak, **malloc** hata durumunda yeni işleyici yordamını çağırmaz. Bu davranışı geçersiz kılmak için **_set_new_mode** kullanabilirsiniz, böylece hata **malloc** , yeni işleyici yordamını, bellek ayıramadığında **Yeni** işlecin yaptığı şekilde çağırır. Daha fazla bilgi için, C++ dil başvurusundaki [New ve delete işleçleri](../../cpp/new-and-delete-operators.md) tartışmalarına bakın.
+C++ **_query_new_mode** işlevi, [malloc](malloc.md)için c++ [_set_new_mode](set-new-mode.md) işlevi tarafından ayarlanan yeni işleyici modunu gösteren bir tamsayı döndürür. Yeni işleyici modu, bellek ayırmayı başarısızlığından, **malloc** 'in [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırmaya yönelik olup olmadığını gösterir. Varsayılan olarak, **malloc** hata durumunda yeni işleyici yordamını çağırmaz. Bu davranışı geçersiz kılmak için **_set_new_mode** kullanabilirsiniz, böylece hata **malloc** , yeni işleyici yordamını, **`new`** bellek ayıramadığında işlecin yaptığı şekilde çağırır. Daha fazla bilgi için bkz. C++ dil başvurusunda [yeni ve delete işleçleri](../../cpp/new-and-delete-operators.md) tartışması.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_query_new_mode**|\<Yeni. h >|
+|**_query_new_mode**|\<new.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -68,8 +68,8 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
-[free](free.md)<br/>
+[Süz](free.md)<br/>
 [realloc](realloc.md)<br/>
 [_query_new_handler](query-new-handler.md)<br/>

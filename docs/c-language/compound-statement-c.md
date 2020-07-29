@@ -5,16 +5,16 @@ helpviewer_keywords:
 - compound statements
 - statements, compound
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
-ms.openlocfilehash: 42d4c1d21c3e98dfc0281a47a35e033852f8de18
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 93f7fd24049c744874fb0ab3bda37eedef3a139a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312576"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87200588"
 ---
 # <a name="compound-statement-c"></a>Bileşik Deyim (C)
 
-Bileşik bir ifade ("Block" olarak da bilinir) genellikle başka bir deyimin gövdesi olarak görünür (örneğin, **IF** ifadesi). [Bildirimler ve türler](../c-language/declarations-and-types.md) , bileşik bir deyimin başlangıcında görünebilen bildirimlerin formunu ve anlamını açıklar.
+Bileşik bir ifade ("Block" olarak da bilinir) genellikle başka bir deyimin gövdesi olarak görünür (örneğin, ifadesi) **`if`** . [Bildirimler ve türler](../c-language/declarations-and-types.md) , bileşik bir deyimin başlangıcında görünebilen bildirimlerin formunu ve anlamını açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,11 +31,11 @@ Bileşik bir ifade ("Block" olarak da bilinir) genellikle başka bir deyimin gö
 
 Bildirimler varsa, bunların herhangi bir deyimden önce gelmesi gerekir. Bir bileşik deyimin başlangıcında belirtilen her tanımlayıcı kapsam, kendi bildirim noktasından bloğunun sonuna kadar uzanır. Bir iç blokta aynı tanımlayıcıya ait bir bildirim mevcut değilse, blok genelinde görünür.
 
-Bir bileşik deyimdeki tanımlayıcılar, daha önce yalnızca bir olabilen `extern` **yazmaç**, **static**veya `extern`, Except işlevleri ile açıkça belirtilmediği sürece **Otomatik** olarak adlandırılır. İşlev bildirimlerinde `extern` belirticisi devre dışı bırakabilirsiniz ve işlev yine de olur `extern`.
+Bir bileşik deyimdeki tanımlayıcılar **`auto`** , açıkça,, veya dışında, ancak **`register`** **`static`** **`extern`** yalnızca olabilir **`extern`** . **`extern`** İşlev bildirimlerinde belirticisi devre dışı bırakabilirsiniz ve işlev yine de olur **`extern`** .
 
-Depolama sınıfı `extern`ile Birleşik bir ifadede bir değişken veya işlev bildirilirse, depolama ayrılmamış ve başlatmaya izin verilmez. Bildirim, başka bir yerde tanımlanmış bir dış değişken veya işleve başvurur.
+Depolama sınıfı ile Birleşik bir ifadede bir değişken veya işlev bildirilirse, depolama ayrılmamış ve başlatmaya izin verilmez **`extern`** . Bildirim, başka bir yerde tanımlanmış bir dış değişken veya işleve başvurur.
 
-**Auto** veya **register** anahtar sözcüğüyle bir blokta belirtilen değişkenler yeniden ayrılır ve gerekirse bileşik deyimin her girildiği her seferinde başlatılır. Bu değişkenler bileşik deyimden çıkıldıktan sonra tanımlanmamıştır. Bir blok içinde bildirildiği bir değişkenin **static** özniteliği varsa, program yürütme başladığında değişken başlatılır ve değeri program boyunca tutar. **Statik**hakkında bilgi için bkz. [Depolama sınıfları](../c-language/c-storage-classes.md) .
+Or anahtar sözcüğüyle bir blokta belirtilen değişkenler **`auto`** **`register`** yeniden ayrılır ve gerekirse bileşik deyimin her girildiği her seferinde başlatılır. Bu değişkenler bileşik deyimden çıkıldıktan sonra tanımlanmamıştır. Bir blok içinde bildirildiği bir değişkenin **`static`** özniteliği varsa, program yürütme başladığında değişken başlatılır ve değeri program boyunca tutar. Hakkında bilgi için bkz. [Depolama sınıfları](../c-language/c-storage-classes.md) **`static`** .
 
 Bu örnekte bileşik bir ifade gösterilmektedir:
 
@@ -48,7 +48,7 @@ if ( i > 0 )
 }
 ```
 
-Bu örnekte, `i` 0 ' dan büyükse, bileşik deyimin içindeki tüm deyimler sırasıyla yürütülür.
+Bu örnekte, 0 ' `i` dan büyükse, bileşik deyimin içindeki tüm deyimler sırasıyla yürütülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

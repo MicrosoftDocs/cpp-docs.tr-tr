@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_ data member
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT, constructor
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-ms.openlocfilehash: a111e0368ec6f4fcf8e89383b6261ad25ca6ebcf
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 4b7dbe8ae1648e4185a9eb1e1142df4a3869aa2f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403835"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216550"
 ---
 # <a name="synclockwithstatust-class"></a>SyncLockWithStatusT Sınıfı
 
@@ -115,7 +115,7 @@ Geçerli `SyncLockWithStatusT` nesnenin bir kaynağa sahip olup olmadığını g
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**true** `SyncLockWithStatusT` nesne kilitliyse true, aksi durumda **false**.
+**`true`**`SyncLockWithStatusT`nesne kilitliyse, tersi durumda **`false`** .
 
 ## <a name="synclockwithstatuststatus_"></a><a name="status"></a>SyncLockWithStatusT:: status_
 
@@ -159,4 +159,4 @@ Başka bir nesneye başvuru `SyncLockWithStatusT` .
 
 `SyncLockWithStatusT` sınıfının yeni bir örneğini başlatır.
 
-İlk Oluşturucu geçerli `SyncLockWithStatusT` nesneyi `SyncLockWithStatusT` *diğer*parametreye göre belirtilen başka bir nesneden başlatır ve ardından diğer nesneyi geçersiz kılar `SyncLockWithStatusT` . İkinci Oluşturucu olur `protected` ve geçerli `SyncLockWithStatusT` nesneyi geçersiz bir duruma başlatır.
+İlk Oluşturucu geçerli `SyncLockWithStatusT` nesneyi `SyncLockWithStatusT` *diğer*parametreye göre belirtilen başka bir nesneden başlatır ve ardından diğer nesneyi geçersiz kılar `SyncLockWithStatusT` . İkinci Oluşturucu olur **`protected`** ve geçerli `SyncLockWithStatusT` nesneyi geçersiz bir duruma başlatır.

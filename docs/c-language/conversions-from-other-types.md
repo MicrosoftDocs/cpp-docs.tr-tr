@@ -5,27 +5,27 @@ helpviewer_keywords:
 - values, converting
 - type casts, conversion
 ms.assetid: 30fbd974-8f5a-4b70-ac44-d3937b96b702
-ms.openlocfilehash: f9f2d73e57c576dcf8afed008a74e5e7dd9b9d6f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd00bbb8944a0273163fa0c5952be510c9dd697c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312472"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87200341"
 ---
 # <a name="conversions-from-other-types"></a>Diğer türlerden dönüştürmeler
 
-Bir **sabit listesi** değeri tanımına göre **bir int** değeri olduğundan, **enum** değerine ve bu değerden gelen dönüştürmeler, **int** türüyle aynı olanlardır. Microsoft C derleyicisi için, bir tamsayı **Long**ile aynıdır.
+Bir değer **`enum`** tanım tarafından bir değer olduğundan **`int`** , bir değerden ve bu değerden Dönüştürmelere **`enum`** tür için olanlarla aynıdır **`int`** . Microsoft C derleyicisi için bir tamsayı, ile aynıdır **`long`** .
 
 **Microsoft'a Özgü**
 
 Yapı veya birleşim türleri arasında dönüştürme yapılmasına izin verilmez.
 
-Herhangi bir değer **void**türüne dönüştürülebilir, ancak böyle bir dönüştürmenin sonucu yalnızca bir ifade değerinin atıldığı bağlamda (örneğin, ifade deyiminde) kullanılabilir.
+Herhangi bir değer türüne dönüştürülebilir **`void`** , ancak böyle bir dönüştürmenin sonucu yalnızca bir ifade değerinin atıldığı bağlamda (örneğin, ifade deyiminde) kullanılabilir.
 
-**Void** türü tanımına göre değer içermez. Bu nedenle, başka bir türe dönüştürülemez ve diğer türler atamaya göre **void** olarak dönüştürülemez. Ancak, [tür atama dönüştürmelerinde](../c-language/type-cast-conversions.md)anlatıldığı gibi, bir değeri açıkça **void**türüne çevirebilirsiniz.
+**`void`** Türün tanımına göre değeri yok. Bu nedenle, başka bir türe dönüştürülemez ve diğer türler **`void`** atama ile öğesine dönüştürülemez. Ancak, **`void`** [tür atama dönüştürmelerinde](../c-language/type-cast-conversions.md)anlatıldığı gibi bir değeri açıkça türüne çevirebilirsiniz.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Atama Dönüştürmeleri](../c-language/assignment-conversions.md)
+[Atama dönüştürmeleri](../c-language/assignment-conversions.md)

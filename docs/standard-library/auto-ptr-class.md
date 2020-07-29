@@ -14,22 +14,22 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: 6b429b0e5c734f81216c988e372c02021528cffd
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 1f2c8cce234910fbf69a35c8f8ef2fb0fe2a41c0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72690036"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87203889"
 ---
 # <a name="auto_ptr-class"></a>auto_ptr Sınıfı
 
 Denetim bir blok ayrıldığında kaynağın otomatik olarak yok edilmesini sağlayan bir kaynak etrafında akıllı bir işaretçi sarar.
 
-Daha uyumlu `unique_ptr` sınıf `auto_ptr` yerini alır. Daha fazla bilgi için bkz. [Unique_ptr Class](../standard-library/unique-ptr-class.md).
+Daha yetenekli `unique_ptr` sınıf yerini alır `auto_ptr` . Daha fazla bilgi için bkz. [Unique_ptr sınıfı](../standard-library/unique-ptr-class.md).
 
-@No__t_0 ve özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md).
+Ve özel durum işleme hakkında daha fazla bilgi için `throw()` bkz. [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 class auto_ptr {
@@ -55,17 +55,17 @@ class auto_ptr {
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
-Mevcut bir kaynağın alınacağı `auto_ptr`.
+*Right*\
+`auto_ptr`Mevcut bir kaynağın alınacağı kaynak.
 
-*ptr* \
+*kaydetmeye*\
 Saklı işaretçinin yerini alacak şekilde belirtilen işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, ayrılmış bir nesneye `auto_ptr` olarak adlandırılan akıllı bir işaretçi tanımlar. İşaretçi null olmalı veya **Yeni**tarafından ayrılmış bir nesne belirlemelidir. @No__t_0, depolanan değeri başka bir nesneye atanırsa sahipliği aktarır. (Bir null işaretçiyle bir aktarımdan sonra saklı değeri değiştirir.) @No__t_0 için yıkıcı, ayrılan nesneyi siler. @No__t_0, denetim bir blok dışında ayrıldığında, ayrılmış bir nesnenin otomatik olarak silinmesini sağlar. Aynı nesneye sahip olan iki `auto_ptr<Type>` nesnesi oluşturmamalıdır.
+Sınıf şablonu, ayrılmış bir nesneye, olarak adlandırılan akıllı bir işaretçi tanımlar `auto_ptr` . İşaretçi null olmalıdır veya tarafından ayrılan bir nesne atamalısınız **`new`** . `auto_ptr`Depolanan değeri başka bir nesneye atanmışsa sahipliği aktarır. (Bir null işaretçiyle bir aktarımdan sonra saklı değeri değiştirir.) İçin yıkıcısı, `auto_ptr<Type>` ayrılan nesneyi siler. , `auto_ptr<Type>` Denetim bir blok dışında ayrıldığında, ayrılmış bir nesnenin otomatik olarak silinmesini sağlar. `auto_ptr<Type>`Aynı nesneye sahip iki nesne oluşturmamalıdır.
 
-Bir `auto_ptr<Type>` nesnesini, bir işlev çağrısının bağımsız değişkeni olarak değere geçirebilirsiniz. Bir `auto_ptr` herhangi bir standart kitaplık kapsayıcısının öğesi olamaz. C++ Standart kitaplık kapsayıcısıyla `auto_ptr<Type>` nesneleri dizisini güvenilir bir şekilde yönetemezsiniz.
+Bir `auto_ptr<Type>` nesneyi değere göre bir işlev çağrısına bağımsız değişken olarak geçirebilirsiniz. `auto_ptr`Herhangi bir standart kitaplık kapsayıcısının öğesi olamaz. `auto_ptr<Type>`C++ standart kitaplığı kapsayıcısı ile bir nesne dizisini güvenilir bir şekilde yönetemezsiniz.
 
 ## <a name="members"></a>Üyeler
 
@@ -73,35 +73,35 @@ Bir `auto_ptr<Type>` nesnesini, bir işlev çağrısının bağımsız değişke
 
 |||
 |-|-|
-|[auto_ptr](#auto_ptr)|@No__t_0 türündeki nesneler için Oluşturucu.|
+|[auto_ptr](#auto_ptr)|Türündeki nesneler için Oluşturucu `auto_ptr` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[element_type](#element_type)|Tür, `Type` şablon parametresi için bir eş anlamlı.|
+|[element_type](#element_type)|Tür, şablon parametresi için bir eş anlamlı `Type` .|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[get](#get)|Üye işlevi `myptr` saklı işaretçiyi döndürür.|
-|[Yayın](#release)|Üye, bir null işaretçiyle `myptr` saklı işaretçinin yerini alır ve daha önce depolanan işaretçiyi döndürür.|
-|[döndürmek](#reset)|Üye işlevi `delete myptr` ifadeyi değerlendirir, ancak yalnızca saklı işaretçi değeri `myptr` işlev çağrısının sonucu olarak değişirse değişir. Ardından, saklı işaretçinin *PTR*ile yerini alır.|
+|[Al](#get)|Üye işlevi, saklı işaretçiyi döndürür `myptr` .|
+|[Yayın](#release)|Üye, saklı işaretçiyi `myptr` null işaretçiyle değiştirir ve daha önce depolanmış işaretçiyi döndürür.|
+|[döndürmek](#reset)|Üye işlevi, `delete myptr` yalnızca saklı işaretçi değeri `myptr` işlev çağrısının sonucu olarak değişirse ifadeyi değerlendirir. Ardından, saklı işaretçinin *PTR*ile yerini alır.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[işleç =](#op_eq)|Bir `auto_ptr` nesnesinden diğerine sahiplik aktaran atama işleci.|
-|[işlecinde](#op_star)|@No__t_0 türündeki nesneler için başvuru kaldırma işleci.|
+|[işleç =](#op_eq)|Bir nesneden diğerine sahiplik aktaran atama işleci `auto_ptr` .|
+|[işlecinde](#op_star)|Türündeki nesneler için başvuru kaldırma işleci `auto_ptr` .|
 |[operator->](#op_arrow)|Üye erişimine izin vermek için işleç.|
-|[operator auto_ptr \<Other >](#op_auto_ptr_lt_other_gt)|@No__t_0 bir türden `auto_ptr` başka bir türe yayınlar.|
-|[operator auto_ptr_ref \<Other >](#op_auto_ptr_ref_lt_other_gt)|Bir `auto_ptr` `auto_ptr_ref`.|
+|[işleç auto_ptr\<Other>](#op_auto_ptr_lt_other_gt)|Bir türden `auto_ptr` başka bir türe yayınlar `auto_ptr` .|
+|[işleç auto_ptr_ref\<Other>](#op_auto_ptr_ref_lt_other_gt)|Bir ' dan ' a yayınlar `auto_ptr` `auto_ptr_ref` .|
 
-### <a name="auto_ptr"></a>auto_ptr
+### <a name="auto_ptr"></a><a name="auto_ptr"></a>auto_ptr
 
-@No__t_0 türündeki nesneler için Oluşturucu.
+Türündeki nesneler için Oluşturucu `auto_ptr` .
 
 ```cpp
 explicit auto_ptr(Type* ptr  = 0) throw();
@@ -116,19 +116,19 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*ptr* \
-@No__t_0 kapsülleyen nesnenin işaretçisi.
+*kaydetmeye*\
+`auto_ptr`Sarmalayan nesnenin işaretçisi.
 
-*sağ* \
-Oluşturucu tarafından kopyalanacak `auto_ptr` nesnesi.
+*Right*\
+`auto_ptr`Oluşturucu tarafından kopyalanacak nesne.
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, ayrılmış nesnenin saklı işaretçisi olan `myptr` *PTR* 'yi depolar. İkinci Oluşturucu, *sağdan*depolanan işaretçinin *sahipliğini doğrudan depolayarak*aktarır. `myptr` [yayın](#release) .
+İlk Oluşturucu, içindeki *PTR* `myptr` 'yi, ayrılan nesneye saklı işaretçi olarak depolar. İkinci Oluşturucu, *sağdan*depolanan işaretçinin *sahipliğini doğrudan depolayarak*aktarır. [release](#release) içindeki yayın `myptr` .
 
-Üçüncü Oluşturucu, `right` depolanmasının dışında ikinci ile aynı şekilde davranır. `ref`. `myptr` `release`, burada `ref` `right` içinde saklanan başvurudur.
+Üçüncü Oluşturucu, ikinci ile aynı şekilde davranır, ancak depolar hariç olur `right` . `ref`. `release``myptr`' de, burada `ref` depolanan başvurudur `right` .
 
-Şablon Oluşturucusu ikinci Oluşturucu ile aynı şekilde davranır. Bu, `Other` işaretçisinin örtük olarak `Type` işaretçisine dönüştürülebileceği şekilde yapılır.
+Şablon Oluşturucusu ikinci Oluşturucu ile aynı şekilde davranır. Bu, işaretçisine örtük olarak bir işaretçiye `Other` dönüştürülebilir `Type` .
 
 #### <a name="example"></a>Örnek
 
@@ -189,17 +189,17 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-### <a name="element_type"></a>element_type
+### <a name="element_type"></a><a name="element_type"></a>element_type
 
-Tür, `Type` şablon parametresi için bir eş anlamlı.
+Tür, şablon parametresi için bir eş anlamlı `Type` .
 
 ```cpp
 typedef Type element  _type;
 ```
 
-### <a name="get"></a>Al
+### <a name="get"></a><a name="get"></a>Al
 
-Üye işlevi `myptr` saklı işaretçiyi döndürür.
+Üye işlevi, saklı işaretçiyi döndürür `myptr` .
 
 ```cpp
 Type *get() const throw();
@@ -207,7 +207,7 @@ Type *get() const throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Saklı işaretçi `myptr`.
+Saklı işaretçi `myptr` .
 
 #### <a name="example"></a>Örnek
 
@@ -256,9 +256,9 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-### <a name="op_eq"></a>işleç =
+### <a name="operator"></a><a name="op_eq"></a>işleç =
 
-Bir `auto_ptr` nesnesinden diğerine sahiplik aktaran atama işleci.
+Bir nesneden diğerine sahiplik aktaran atama işleci `auto_ptr` .
 
 ```cpp
 template <class Other>
@@ -269,24 +269,24 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ* \
-@No__t_0 türünde bir nesne.
+*Right*\
+`auto_ptr` türünün bir nesnesi.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0 türündeki bir nesneye başvuru.
+Türündeki bir nesneye başvuru `auto_ptr<Type>` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Atama ifadesi `delete myptr` değerlendirir, ancak yalnızca saklı işaretçi atamanın sonucu olarak değişirse `myptr`. Daha sonra *sağ* *olarak depolanan işaretçinin sahipliğini doğrudan depolayarak*aktarır. `myptr` [yayın](#release) . İşlev __\*this__döndürür.
+Atama, `delete myptr` ancak yalnızca saklı işaretçi `myptr` atamanın sonucu olarak değişirse ifadeyi değerlendirir. Daha sonra *sağ* *olarak depolanan işaretçinin sahipliğini doğrudan depolayarak*aktarır. [release](#release) içindeki yayın `myptr` . İşlevi __ \* bunu__döndürür.
 
 #### <a name="example"></a>Örnek
 
 Üye işlecinin kullanımına bir örnek için bkz. [auto_ptr](#auto_ptr).
 
-### <a name="op_star"></a>işlecinde
+### <a name="operator"></a><a name="op_star"></a>işlecinde
 
-@No__t_0 türündeki nesneler için başvuru kaldırma işleci.
+Türündeki nesneler için başvuru kaldırma işleci `auto_ptr` .
 
 ```cpp
 Type& operator*() const throw();
@@ -294,17 +294,17 @@ Type& operator*() const throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçiye sahip `Type` türündeki bir nesneye başvuru.
+İşaretçinin sahip olduğu türü bir nesneye başvuru `Type` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Yöneltme işleci `*`[Al](#get)döndürür. Bu nedenle, saklı işaretçi null olmamalıdır.
+Yöneltme işleci `*` [Get](#get)döndürüyor. Bu nedenle, saklı işaretçi null olmamalıdır.
 
 #### <a name="example"></a>Örnek
 
 Üye işlevini nasıl kullanacağınızı gösteren bir örnek için bkz. [auto_ptr](#auto_ptr).
 
-### <a name="op_arrow"></a>operator-&gt;
+### <a name="operator-gt"></a><a name="op_arrow"></a>işlecinde&gt;
 
 Üye erişimine izin vermek için işleç.
 
@@ -314,19 +314,19 @@ Type * operator->() const throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0 sahip olunan nesnenin üyesi.
+Sahip olunan nesnenin üyesi `auto_ptr` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Seçim işleci [get](#get) `( )` döndürür, bu sayede *AP* -> **üyesi** ifadesi ( *AP*) ile aynı şekilde davranır. **Get**())-> **üyesi**; burada *AP* , `auto_ptr` sınıfının \< **tür**> bir nesnesidir. Bu nedenle, saklı işaretçi null olmamalı ve `Type` bir sınıf, yapı veya `member` üyesi olan birleşim türü olmalıdır.
+Seçim işleci [Get](#get)değerini döndürür `( )` , böylece ifade *AP* ->  **üyesi** ( *AP*) ile aynı şekilde davranır. **Get**())-> **üyesi**, burada *AP* sınıfının bir nesnesidir `auto_ptr` \< **Type**> . Bu nedenle, saklı işaretçi null olmamalı ve bir `Type` sınıf, yapı veya üye içeren birleşim türü olmalıdır `member` .
 
 #### <a name="example"></a>Örnek
 
 Üye işlevini nasıl kullanacağınızı gösteren bir örnek için bkz. [auto_ptr](#auto_ptr).
 
-### <a name="op_auto_ptr_lt_other_gt"></a>operator auto_ptr &lt;Other &gt;
+### <a name="operator-auto_ptrltothergt"></a><a name="op_auto_ptr_lt_other_gt"></a>işleç auto_ptr &lt; diğer&gt;
 
-@No__t_0 bir türden `auto_ptr` başka bir türe yayınlar.
+Bir türden `auto_ptr` başka bir türe yayınlar `auto_ptr` .
 
 ```cpp
 template <class Other>
@@ -335,7 +335,7 @@ operator auto _ptr<Other>() throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Tür atama işleci `auto_ptr` \< **diğer**> ( **\*this**) döndürür.
+Tür atama işleci `auto_ptr` \< **Other**> ( ** \* this**) döndürür.
 
 #### <a name="example"></a>Örnek
 
@@ -354,9 +354,9 @@ int main()
 }
 ```
 
-### <a name="op_auto_ptr_ref_lt_other_gt"></a>operator auto_ptr_ref &lt;Other &gt;
+### <a name="operator-auto_ptr_refltothergt"></a><a name="op_auto_ptr_ref_lt_other_gt"></a>işleç auto_ptr_ref &lt; diğer&gt;
 
-Bir `auto_ptr` `auto_ptr_ref`.
+Bir ' dan ' a yayınlar `auto_ptr` `auto_ptr_ref` .
 
 ```cpp
 template <class Other>
@@ -365,7 +365,7 @@ operator auto _ptr  _ref<Other>() throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Tür atama işleci, **auto_ptr_ref** \< **diğer**> ( **\*this**) döndürür.
+Tür atama işleci **auto_ptr_ref** \< **Other**> ( ** \* this**) döndürür.
 
 #### <a name="example"></a>Örnek
 
@@ -415,9 +415,9 @@ main exiting
 ~C:  1
 ```
 
-### <a name="release"></a>Yayın
+### <a name="release"></a><a name="release"></a>Yayın
 
-Üye, bir null işaretçiyle `myptr` saklı işaretçinin yerini alır ve daha önce depolanan işaretçiyi döndürür.
+Üye, saklı işaretçiyi `myptr` null işaretçiyle değiştirir ve daha önce depolanmış işaretçiyi döndürür.
 
 ```cpp
 Type *release() throw();
@@ -429,7 +429,7 @@ Daha önce saklı işaretçi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye, bir null işaretçiyle `myptr` saklı işaretçinin yerini alır ve daha önce depolanan işaretçiyi döndürür.
+Üye, saklı işaretçiyi `myptr` null işaretçiyle değiştirir ve daha önce depolanmış işaretçiyi döndürür.
 
 #### <a name="example"></a>Örnek
 
@@ -477,9 +477,9 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-### <a name="reset"></a>döndürmek
+### <a name="reset"></a><a name="reset"></a>döndürmek
 
-Üye işlevi `delete myptr` ifadeyi değerlendirir, ancak yalnızca depolanan işaretçi değeri bir işlev çağrısının sonucu olarak değişirse `myptr`. Ardından, saklı işaretçiyi `ptr` değiştirir.
+Üye işlevi, `delete myptr` yalnızca saklı işaretçi değeri `myptr` bir işlev çağrısının sonucu olarak değişirse ifadeyi değerlendirir. Ardından, saklı işaretçinin ile değiştirir `ptr` .
 
 ```cpp
 void reset(Type* ptr = 0);
@@ -487,8 +487,8 @@ void reset(Type* ptr = 0);
 
 #### <a name="parameters"></a>Parametreler
 
-*ptr* \
-Saklı işaretçinin `myptr` değiştirmek için belirtilen işaretçi.
+*kaydetmeye*\
+Saklı işaretçinin yerini alacak şekilde belirtilen işaretçi `myptr` .
 
 #### <a name="example"></a>Örnek
 

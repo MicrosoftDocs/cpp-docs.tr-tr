@@ -9,18 +9,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsSame structure
 - Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
-ms.openlocfilehash: fcaf33309521b44163022e0ffa9b1e03e53e2551
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8c209d5a8d2a35f2643e90e5595d86f41519f30b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371343"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216563"
 ---
 # <a name="issame-structure"></a>IsSame Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename T1, typename T2>
@@ -40,15 +40,15 @@ Başka bir tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen bir türün başka bir belirtilen türle aynı olup olmadığını sınar.
+Belirtilen bir türün, belirtilen başka bir türle aynı olup olmadığını test eder.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-Adı                    | Açıklama
+Ad                    | Açıklama
 ----------------------- | --------------------------------------------------
-[IsSame::değer](#value) | Bir türün diğerinin aynı olup olmadığını gösterir.
+[IsSame:: değer](#value) | Bir türün diğeri ile aynı olup olmadığını gösterir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -56,13 +56,13 @@ Adı                    | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** internal.h
+**Üst bilgi:** iç. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="issamevalue"></a><a name="value"></a>IsSame::değer
+## <a name="issamevalue"></a><a name="value"></a>IsSame:: değer
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 template <typename T1, typename T2>
@@ -80,6 +80,6 @@ struct IsSame<T1, T1>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türün diğerinin aynı olup olmadığını gösterir.
+Bir türün diğeri ile aynı olup olmadığını gösterir.
 
-`value`şablon parametreleri aynıysa ve şablon parametreleri farklıysa **yanlış** ise **doğrudur.**
+`value`**`true`** şablon parametrelerinin aynı olması ve **`false`** şablon parametrelerinin farklı olması durumunda.

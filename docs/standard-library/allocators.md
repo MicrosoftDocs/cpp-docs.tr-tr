@@ -5,12 +5,12 @@ helpviewer_keywords:
 - allocators
 - C++ Standard Library, allocators
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746
-ms.openlocfilehash: abef6f4e641b7936157ee063443a5b2a220fdd52
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5aee23f72c5b0fb955b4dcc76a3f8c51eca7be70
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623509"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87204241"
 ---
 # <a name="allocators"></a>Ayırıcılar
 
@@ -28,7 +28,7 @@ C++ standart kitaplığı, ayırıcı için varsayılan bir uygulama sağlar. C+
 
 ## <a name="writing-your-own-allocator-c11"></a>Kendi ayırıcıyı yazma (C++ 11)
 
-Varsayılan ayırıcı, belleği ayırmak ve serbest bırakmak için **New** ve **Delete** kullanır. Paylaşılan bellek kullanma gibi farklı bir bellek ayırma yöntemi kullanmak istiyorsanız, kendi ayırıcıyı oluşturmanız gerekir. C++ 11 ' i hedefliyorsanız ve yeni bir özel ayırıcı yazmanız gerekiyorsa, mümkünse bunu minimum ayırıcı yapın. Eski stil ayırıcı uygulamış olsanız bile, sizin için otomatik olarak sağlanacak daha verimli bir yöntemden faydalanmak için onu *en az ayırıcı* olacak şekilde değiştirmeyi göz önünde bulundurun `construct()` .
+Varsayılan ayırıcı, **`new`** **`delete`** bellek ayırmak ve serbest bırakmak için ve kullanır. Paylaşılan bellek kullanma gibi farklı bir bellek ayırma yöntemi kullanmak istiyorsanız, kendi ayırıcıyı oluşturmanız gerekir. C++ 11 ' i hedefliyorsanız ve yeni bir özel ayırıcı yazmanız gerekiyorsa, mümkünse bunu minimum ayırıcı yapın. Eski stil ayırıcı uygulamış olsanız bile, sizin için otomatik olarak sağlanacak daha verimli bir yöntemden faydalanmak için onu *en az ayırıcı* olacak şekilde değiştirmeyi göz önünde bulundurun `construct()` .
 
 Minimum ayırıcı çok daha az ortak gerektirir ve `allocate` `deallocate` tüm işleri oluşturan ve üye işlevlerine odaklanabilmenizi sağlar. Minimum ayırıcı oluştururken, aşağıdaki örnekte gösterilenler dışında hiçbir üye uygulamayın:
 

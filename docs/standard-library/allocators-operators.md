@@ -5,12 +5,12 @@ f1_keywords:
 - allocators/std::operator!=
 - allocators/std::operator==
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-ms.openlocfilehash: a21708ca090b0db561391308f347d90b77c62645
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7d22e550c7054c2197163f2edf829ec17a85a145
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623567"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87204566"
 ---
 # <a name="ltallocatorsgt-operators"></a>&lt;ayrıcılar &gt; işleçleri
 
@@ -40,7 +40,7 @@ bool operator!=(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ayırıcı nesneleri eşitse **true** ; ayırıcı nesneleri eşitse **false** .
+**`true`** ayırıcı nesneleri eşitse; **`false`** ayırıcı nesneleri eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -66,7 +66,7 @@ bool operator==(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ayırıcı nesneleri eşitse **true** ; ayırıcı nesneleri eşitse **false** .
+**`true`** ayırıcı nesneler eşitse; **`false`** ayırıcı nesneleri eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 

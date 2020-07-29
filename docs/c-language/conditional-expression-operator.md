@@ -6,12 +6,12 @@ helpviewer_keywords:
 - operators [C++], conditional
 - expressions [C++], conditional
 ms.assetid: c4f1a5ca-0844-44a7-a384-eca584d4e3dd
-ms.openlocfilehash: a64317c75e48111148053cc7efb62fb5a6d79f7f
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 03f9673da109151bd2146daf7539841f1cac07c6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749186"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217135"
 ---
 # <a name="conditional-expression-operator"></a>Koşullu İfade İşleci
 
@@ -37,13 +37,13 @@ Koşullu bir işlemin sonucunun türü, *ifadenin* veya *koşullu ifade* işlene
 
 - Her iki *ifade* ve *koşullu ifade* aynı yapıya, birleşime veya işaretçi türüne sahip ise, sonucun türü aynı yapı, birleşim veya işaretçi türüdür.
 
-- Her iki işlenen de türüne `void`sahipse, sonucun türü `void`vardır.
+- Her iki işlenen de türüne sahipse **`void`** , sonucun türü vardır **`void`** .
 
-- Her iki işlenen de herhangi bir türde nesnenin işaretçisiyse ve diğer işlenen için `void`bir işaretçisiyse, nesne işaretçisi işaretçisine dönüştürülür `void` ve sonuç bir işaretçisidir. `void`
+- Her iki işlenen de herhangi bir türde nesnenin işaretçisiyse ve diğer işlenen için bir işaretçisiyse **`void`** , nesne işaretçisi işaretçisine dönüştürülür **`void`** ve sonuç bir işaretçisidir **`void`** .
 
 - Herhangi bir *ifade* veya *koşullu ifade* bir işaretçisiyse ve diğer işlenen değeri 0 olan sabit bir ifadesiyse, sonucun türü işaretçi türüdür.
 
-İşaretçiler için tür karşılaştırmasına, işaretçi noktalarının önemli olduğu türdeki**const** tür niteleyicileri `volatile`(const veya), ancak sonuç türü, her iki bileşenden de niteleyicileri devralır.
+İşaretçiler için tür **`const`** **`volatile`** karşılaştırmasına, işaretçi noktalarının önemli olduğu türdeki tür niteleyicileri (veya), ancak sonuç türü, her iki bileşenden da niteleyicileri devralır.
 
 ## <a name="examples"></a>Örnekler
 
@@ -53,7 +53,7 @@ Aşağıdaki örneklerde koşullu işlecin kullanımları gösterilmektedir:
 j = ( i < 0 ) ? ( -i ) : ( i );
 ```
 
-Bu örnek öğesinin `i` mutlak değerini olarak `j`atar. `i` 0 ' dan küçükse, `-i` öğesine `j`atanır. `i` 0 ' dan büyük veya buna eşitse, `i` öğesine `j`atanır.
+Bu örnek öğesinin mutlak değerini olarak atar `i` `j` . `i`0 ' dan küçükse, `-i` öğesine atanır `j` . `i`0 ' dan büyük veya buna eşitse, `i` öğesine atanır `j` .
 
 ```cpp
 void f1( void );
@@ -66,7 +66,7 @@ int y;
 ( x == y ) ? ( f1() ) : ( f2() );
 ```
 
-Bu örnekte, ve ' iki işlev `f1` `f2`ve ve iki değişken, `x` ve `y`' i bildirilmiştir. Programın ilerleyen kısımlarında, iki değişken aynı değere sahip ise, işlev `f1` çağrılır. Aksi takdirde `f2` , çağrılır.
+Bu örnekte, ve ' iki işlev ve ve `f1` `f2` iki değişken, ve ' i `x` `y` bildirilmiştir. Programın ilerleyen kısımlarında, iki değişken aynı değere sahip ise, işlev `f1` çağrılır. Aksi takdirde, `f2` çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

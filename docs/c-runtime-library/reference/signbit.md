@@ -6,18 +6,18 @@ f1_keywords:
 - math/signbit
 helpviewer_keywords:
 - signbit function
-ms.openlocfilehash: ce2f632f11296bf71036011a57f242365951d7f2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f8399c16d2abc70a50740b0629bc5d9b3a1f067
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62356335"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216745"
 ---
 # <a name="signbit"></a>signbit
 
-Bir kayan nokta değeri negatif olup olmadığını belirler.
+Kayan nokta değerinin negatif olup olmadığını belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int signbit(
@@ -40,27 +40,27 @@ inline bool signbit(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Test etmek için kayan nokta değeri.
+Sınanacak kayan nokta değeri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-**signbit** sıfır olmayan bir değer döndürür (**true** C++'ta), bağımsız değişken *x* negatif veya negatif sonsuz. 0 döndürür (**false** C++'ta) bağımsız değişken negatif olmayan, Pozitif sonsuz veya bir NAN ise.
+**signbit** **`true`** *x* bağımsız değişkeni negatif veya negatif sonsuzluk ise, signbit sıfır olmayan bir değer (C++ olarak) döndürür. **`false`** Bağımsız değişken negatif olmayan, pozitif sonsuz veya NaN ise 0 döndürür (C++ ' ta).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**signbit** C ve C++ derlendiğinde aşırı yüklenmiş bir satır içi işlev olarak derlendiğinde bir makro.
+**signbit** , C olarak derlendiğinde bir makrodur ve C++ olarak derlendiğinde aşırı yüklenmiş bir satır içi işlevdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
+|İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------------|-------------------------------|
-|**signbit**|\<Math.h >|\<Math.h > veya \<cmath >|
+|**signbit**|\<math.h>|\<math.h> veya \<cmath>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>
 [isinf](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

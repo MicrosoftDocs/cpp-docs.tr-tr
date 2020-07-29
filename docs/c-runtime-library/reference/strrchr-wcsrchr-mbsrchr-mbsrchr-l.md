@@ -48,12 +48,12 @@ helpviewer_keywords:
 - _ftcsrchr function
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
-ms.openlocfilehash: 2475eab34c6a18b3dc7a8a15145c184cea543aee
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d1350cf14df0c87d57a87ad3aced35e3887b6676
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911153"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231305"
 ---
 # <a name="strrchr-wcsrchr-_mbsrchr-_mbsrchr_l"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
@@ -62,7 +62,7 @@ Bir karakterin son geçtiği bir dizeyi tarar.
 > [!IMPORTANT]
 > `_mbsrchr`ve `_mbsrchr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 char *strrchr(
@@ -126,7 +126,7 @@ Aranacak null ile sonlandırılmış dize.
 *,*<br/>
 Yer alan karakter.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -135,11 +135,11 @@ Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevi `strrchr` , *Str*içindeki son *c* örneğini bulur ( **char**'a dönüştürülür). Arama, Sonlandırıcı null karakterini içerir.
+`strrchr`İşlevi Str içinde son *c* (dönüştürüldü) oluşumunu bulur **`char`** . *str* Arama, Sonlandırıcı null karakterini içerir.
 
-`wcsrchr`ve `_mbsrchr` , öğesinin `strrchr`geniş karakterli ve çok baytlı karakter sürümleridir. Bağımsız değişkenleri ve dönüş değeri `wcsrchr` geniş karakterli dizelerdir; `_mbsrchr` bunların çok baytlı karakter dizeleridir.
+`wcsrchr`ve, `_mbsrchr` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strrchr` . Bağımsız değişkenleri ve dönüş değeri `wcsrchr` geniş karakterli dizelerdir; bunlar `_mbsrchr` çok baytlı karakter dizeleridir.
 
-C 'de, bu işlevler ilk bağımsız değişken için bir **const** işaretçisi alır. C++ ' da, iki aşırı yükleme mevcuttur. **Const** işaretçisine alan aşırı yükleme **const**için bir işaretçi döndürür; **const** olmayan bir işaretçi alan sürüm,**const**olmayan bir işaretçi döndürür. Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin hem **const** hem de**const** olmayan sürümleri kullanılabilir değilse tanımlanmıştır. Her iki C++ aşırı yüklemesi için**const** olmayan davranışlara ihtiyacınız varsa, _CONST_RETURN sembolünü tanımlayın.
+C 'de, bu işlevler **`const`** ilk bağımsız değişken için bir işaretçi alır. C++ ' da, iki aşırı yükleme mevcuttur. ' A bir işaretçi döndüren aşırı yükleme, ' a bir işaretçi döndürür; olmayan bir işaretçiyi **`const`** **`const`** alan sürüm olmayan **`const`** bir işaretçi döndürür **`const`** . Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin hem hem de **`const`** **`const`** sürümleri kullanılabilir olduğunda tanımlanmıştır. **`const`** Her Iki C++ aşırı yüklemesi için davranışa gerek duyuyorsanız, _CONST_RETURN sembolünü tanımlayın.
 
 `_mbsrchr`parametrelerini doğrular. *Str* null Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `errno` EINVAL olarak ayarlanır ve `_mbsrchr` 0 döndürür. `strrchr`ve `wcsrchr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
@@ -158,21 +158,21 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`strrchr`|\<String. h>|
-|`wcsrchr`|\<String. h> veya \<wchar. h>|
-|`_mbsrchr`, `_mbsrchr_l`|\<mbstring. h>|
+|`strrchr`|\<string.h>|
+|`wcsrchr`|\<string.h> veya \<wchar.h>|
+|`_mbsrchr`, `_mbsrchr_l`|\<mbstring.h>|
 
 Uyumluluk hakkında daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Kullanımıyla `strrchr`ilgili bir örnek için bkz. [strchr](strchr-wcschr-mbschr-mbschr-l.md).
+Kullanımıyla ilgili bir örnek için `strrchr` bkz. [strchr](strchr-wcschr-mbschr-mbschr-l.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

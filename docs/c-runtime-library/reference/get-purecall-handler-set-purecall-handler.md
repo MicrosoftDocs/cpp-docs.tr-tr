@@ -37,18 +37,18 @@ helpviewer_keywords:
 - _set_purecall_handler_m function
 - _get_purecall_handler function
 ms.assetid: 2759b878-8afa-4129-86e7-72afc2153d9c
-ms.openlocfilehash: 73fc2ffe5cd4ed65c8695432b53816090bbc5f8e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9f21258fa1f6ecd2d1717b00ef2cecaee9c865e2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955669"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216953"
 ---
 # <a name="_get_purecall_handler-_set_purecall_handler"></a>_get_purecall_handler, _set_purecall_handler
 
 Saf sanal işlev çağrısının hata işleyicisini alır veya ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 typedef void (__cdecl* _purecall_handler)(void);
@@ -61,27 +61,27 @@ _purecall_handler __cdecl _set_purecall_handler(
 ### <a name="parameters"></a>Parametreler
 
 *çalışmayacaktır*<br/>
-Bir saf sanal işlev çağrıldığında çağrılacak işlev. **_Purecall_handler** işlevi void dönüş türüne sahip olmalıdır.
+Bir saf sanal işlev çağrıldığında çağrılacak işlev. **_Purecall_handler** işlev, void dönüş türüne sahip olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki **_purecall_handler**. Önceki işleyici yoksa **nullptr** döndürür.
+Önceki **_purecall_handler**. **`nullptr`** Önceki işleyici yoksa döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Get_purecall_handler** ve **_Set_purecall_handler** işlevleri, Microsoft 'a özgüdür ve yalnızca kod için C++ geçerlidir.
+**_Get_purecall_handler** ve **_set_purecall_handler** işlevleri Microsoft 'A özgüdür ve yalnızca C++ kodu için geçerlidir.
 
-Saf sanal işleve yapılan bir çağrı, bir uygulamaya sahip olmadığı için bir hatadır. Varsayılan olarak, derleyici, saf sanal bir işlev çağrıldığında bir hata işleyicisi işlevini çağırmak için kod üretir, bu da programı sonlandırır. Hata ayıklama veya raporlama amaçlarıyla yakalamak için, saf sanal işlev çağrıları için kendi hata işleyicisi işlevinizi yükleyebilirsiniz. Kendi hata işleyicinizi kullanmak için, **_purecall_handler** imzasına sahip bir işlev oluşturun ve ardından **_set_purecall_handler** kullanarak geçerli işleyiciyi yapın.
+Saf sanal işleve yapılan bir çağrı, bir uygulamaya sahip olmadığı için bir hatadır. Varsayılan olarak, derleyici, saf sanal bir işlev çağrıldığında bir hata işleyicisi işlevini çağırmak için kod üretir, bu da programı sonlandırır. Hata ayıklama veya raporlama amaçlarıyla yakalamak için, saf sanal işlev çağrıları için kendi hata işleyicisi işlevinizi yükleyebilirsiniz. Kendi hata işleyicinizi kullanmak için, **_purecall_handler** imzaya sahip bir işlev oluşturun ve sonra geçerli işleyici yapmak için **_set_purecall_handler** kullanın.
 
 Her işlem için yalnızca bir **_purecall_handler** olduğundan, **_set_purecall_handler** çağırdığınızda tüm iş parçacıklarını hemen etkiler. Herhangi bir iş parçacığında son çağıran işleyiciyi ayarlar.
 
-Varsayılan davranışı geri yüklemek için, bir **nullptr** bağımsız değişkeni kullanarak **_set_purecall_handler** çağırın.
+Varsayılan davranışı geri yüklemek için bir bağımsız değişken kullanarak **_set_purecall_handler** çağırın **`nullptr`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_purecall_handler**, **_set_purecall_handler**|\<cstdlib > veya \<Stdlib. h >|
+|**_get_purecall_handler**, **_set_purecall_handler**|\<cstdlib> veya \<stdlib.h>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -136,5 +136,5 @@ In _purecall_handler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
+[Hata Işleme](../../c-runtime-library/error-handling-crt.md)<br/>
 [_purecall](purecall.md)<br/>

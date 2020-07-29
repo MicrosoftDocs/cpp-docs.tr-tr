@@ -17,16 +17,16 @@ helpviewer_keywords:
 - std::error_condition::clear
 - std::error_condition::message
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
-ms.openlocfilehash: cbadf6a22871cc9a23d37c095a398490c8a4c72c
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: c63676e7bdf5ce1547b4feae16c7899ace545ad2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245794"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87203370"
 ---
-# <a name="errorcondition-class"></a>error_condition Sınıfı
+# <a name="error_condition-class"></a>error_condition Sınıfı
 
-Kullanıcı tanımlı hata kodları temsil eder.
+Kullanıcı tanımlı hata kodlarını temsil eder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,7 +36,7 @@ class error_condition;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türünde bir nesne `error_condition` bir hata kodu değeri ve temsil eden bir nesne için bir işaretçi depolayan bir [kategori](../standard-library/error-category-class.md) hata kodları için kullanılan kullanıcı tanımlı hata bildirdi.
+Türünde bir nesne `error_condition` , bir hata kodu değerini ve bir nesne işaretçisini, Kullanıcı tanımlı hatalar için kullanılan hata kodları [kategorisini](../standard-library/error-category-class.md) temsil eden bir nesneye bir işaretçi halinde depolar.
 
 ## <a name="members"></a>Üyeler
 
@@ -44,36 +44,36 @@ Türünde bir nesne `error_condition` bir hata kodu değeri ve temsil eden bir n
 
 |||
 |-|-|
-|[error_condition](#error_condition)|Türünde bir nesne oluşturur `error_condition`.|
+|[error_condition](#error_condition)|Türünde bir nesne oluşturur `error_condition` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |||
 |-|-|
-|[value_type](#value_type)|Depolanan hata kodu değerini temsil eden tür.|
+|[value_type](#value_type)|Depolanan hata kodu değerini temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
 |||
 |-|-|
-|[Ata](#assign)|Bir hata kodu değeri ve kategori için bir hata durumu atar.|
-|[Kategori](#category)|Hata kategorisi döndürür.|
-|[Temizle](#clear)|Hata kodu değerini ve kategorisini temizler.|
-|[message](#message)|Hata kodu adını döndürür.|
+|[assign (atamak)](#assign) |Bir hata koşuluna bir hata kodu değeri ve kategorisi atar.|
+|[alan](#category)|Hata kategorisini döndürür.|
+|[lediğiniz](#clear)|Hata kodu değerini ve kategorisini temizler.|
+|[İleti](#message)|Hata kodunun adını döndürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |||
 |-|-|
-|[operator==](#op_eq_eq)|Arasındaki eşitliği sınar `error_condition` nesneleri.|
-|[operator!=](#op_neq)|Arasındaki eşitsizliği sınar `error_condition` nesneleri.|
-|[işleç <](#op_lt)|Olmadığını test eder `error_condition` nesne küçüktür `error_code` nesnesi geçirildi karşılaştırma için.|
-|[operator=](#op_eq)|İçin yeni bir sabit listesi değeri atar `error_condition` nesne.|
-|[bool işleci](#op_bool)|Türünde bir değişken bıraktığı `error_condition`.|
+|[işleç = =](#op_eq_eq)|Nesneler arasındaki eşitlik için testler `error_condition` .|
+|[işleç! =](#op_neq)|Nesneler arasında eşitsizlik için testler `error_condition` .|
+|[işleç<](#op_lt)|`error_condition`Nesnenin `error_code` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.|
+|[işleç =](#op_eq)|Nesnesine yeni bir numaralandırma değeri atar `error_condition` .|
+|[işleç bool](#op_bool)|Türünde bir değişken yayınlar `error_condition` .|
 
-### <a name="assign"></a> Ata
+### <a name="assign"></a><a name="assign"></a>ata
 
-Bir hata kodu değeri ve kategori için bir hata durumu atar.
+Bir hata koşuluna bir hata kodu değeri ve kategorisi atar.
 
 ```cpp
 void assign(value_type val, const error_category& _Cat);
@@ -81,19 +81,19 @@ void assign(value_type val, const error_category& _Cat);
 
 #### <a name="parameters"></a>Parametreler
 
-*VAL*\
-Hata kodu değeri depolamak için `error_code`.
+*Acil*\
+İçinde depolanacak hata kodu değeri `error_code` .
 
 *_Cat*\
-Depolamak için hata kategorisi `error_code`.
+İçinde depolanacak hata kategorisi `error_code` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi depoları *val* hata kodu değeri ve bir işaretçi olarak *_Cat*.
+Üye işlevi, değer olarak *Val* 'yi hata kodu değeri ve *_Cat*bir işaretçi olarak depolar.
 
-### <a name="category"></a> Kategori
+### <a name="category"></a><a name="category"></a>alan
 
-Hata kategorisi döndürür.
+Hata kategorisini döndürür.
 
 ```cpp
 const error_category& category() const;
@@ -101,11 +101,11 @@ const error_category& category() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Depolanan hata kategorisi için başvuru
+Depolanan hata kategorisine yönelik bir başvuru
 
 #### <a name="remarks"></a>Açıklamalar
 
-### <a name="clear"></a> Temizle
+### <a name="clear"></a><a name="clear"></a>lediğiniz
 
 Hata kodu değerini ve kategorisini temizler.
 
@@ -115,11 +115,11 @@ clear();
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bir sıfır hata kodu değeri ve bir işaretçi depolar [generic_category](../standard-library/system-error-functions.md#generic_category) nesne.
+Üye işlevi sıfır hata kodu değerini ve [generic_category](../standard-library/system-error-functions.md#generic_category) nesnesine bir işaretçi depolar.
 
-### <a name="error_condition"></a> error_condition
+### <a name="error_condition"></a><a name="error_condition"></a>error_condition
 
-Türünde bir nesne oluşturur `error_condition`.
+Türünde bir nesne oluşturur `error_condition` .
 
 ```cpp
 error_condition();
@@ -134,26 +134,26 @@ error_condition(_Enum _Errcode,
 
 #### <a name="parameters"></a>Parametreler
 
-*VAL*\
-Hata kodu değeri depolamak için `error_condition`.
+*Acil*\
+İçinde depolanacak hata kodu değeri `error_condition` .
 
 *_Cat*\
-Depolamak için hata kategorisi `error_condition`.
+İçinde depolanacak hata kategorisi `error_condition` .
 
 *_Errcode*\
-Numaralandırma değeri depolamak için `error_condition`.
+İçinde depolanacak numaralandırma değeri `error_condition` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu sıfır hata kodu değeri ve bir işaretçi depolar [generic_category](../standard-library/system-error-functions.md#generic_category).
+İlk Oluşturucu sıfır hata kodu değeri ve [generic_category](../standard-library/system-error-functions.md#generic_category)bir işaretçi depolar.
 
-İkinci oluşturucu depoları *val* hata kodu değeri ve bir işaretçi olarak [error_category](../standard-library/error-category-class.md).
+İkinci Oluşturucu, değer olarak *Val* 'yi hata kodu değeri ve [error_category](../standard-library/error-category-class.md)bir işaretçi olarak depolar.
 
-Üçüncü Oluşturucu depoları `(value_type)_Errcode` hata kodu değeri ve bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category).
+Üçüncü Oluşturucu, `(value_type)_Errcode` hata kodu değeri olarak depolar ve [generic_category](../standard-library/system-error-functions.md#generic_category)bir işaretçisi.
 
-### <a name="message"></a> İleti
+### <a name="message"></a><a name="message"></a>İleti
 
-Hata kodu adını döndürür.
+Hata kodunun adını döndürür.
 
 ```cpp
 string message() const;
@@ -161,15 +161,15 @@ string message() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-A `string` hata kodu adını temsil eden.
+`string`Hata kodunun adını temsil eden.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevinin döndürdüğü `category().message(value())`.
+Bu üye işlev döndürür `category().message(value())` .
 
-### <a name="op_eq_eq"></a> işleç ==
+### <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
-Arasındaki eşitliği sınar `error_condition` nesneleri.
+Nesneler arasındaki eşitlik için testler `error_condition` .
 
 ```cpp
 bool operator==(const error_condition& right) const;
@@ -177,20 +177,20 @@ bool operator==(const error_condition& right) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*\
-Eşitlik için test edilecek ojbect.
+*Right*\
+Eşitlik için test edilecek Ojbect.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler eşitse; **false** nesneler eşit değilse.
+**`true`** nesneler eşitse; **`false`** Eğer nesneler eşitse.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci döndürür `category() == right.category() && value == right.value()`.
+Üye işleci döndürür `category() == right.category() && value == right.value()` .
 
-### <a name="op_neq"></a> işleç! =
+### <a name="operator"></a><a name="op_neq"></a>işleç! =
 
-Arasındaki eşitsizliği sınar `error_condition` nesneleri.
+Nesneler arasında eşitsizlik için testler `error_condition` .
 
 ```cpp
 bool operator!=(const error_condition& right) const;
@@ -198,20 +198,20 @@ bool operator!=(const error_condition& right) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*\
+*Right*\
 Eşitsizlik için test edilecek nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `error_condition` nesnesi eşit değil `error_condition` geçirilen nesne *doğru*; Aksi takdirde **false**.
+**`true`**`error_condition`nesne `error_condition` *sağa*geçirilen nesneye eşit değilse, tersi durumda **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci döndürür `!(*this == right)`.
+Üye işleci döndürür `!(*this == right)` .
 
-### <a name="op_lt"></a> İşleci&lt;
+### <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
-Olmadığını test eder `error_condition` nesne küçüktür `error_code` nesnesi geçirildi karşılaştırma için.
+`error_condition`Nesnenin `error_code` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.
 
 ```cpp
 bool operator<(const error_condition& right) const;
@@ -219,20 +219,20 @@ bool operator<(const error_condition& right) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*sağ*\
-`error_condition` Karşılaştırılacak nesne.
+*Right*\
+`error_condition`Karşılaştırılacak nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** varsa `error_condition` nesne küçüktür `error_condition` karşılaştırma için; geçirilen nesne Aksi takdirde, **false**.
+**`true`**`error_condition`nesne `error_condition` karşılaştırma için geçirilen nesneden küçükse; Aksi takdirde, **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci döndürür `category() < right.category() || category() == right.category() && value < right.value()`.
+Üye işleci döndürür `category() < right.category() || category() == right.category() && value < right.value()` .
 
-### <a name="op_eq"></a> işleç =
+### <a name="operator"></a><a name="op_eq"></a>işleç =
 
-İçin yeni bir sabit listesi değeri atar `error_condition` nesne.
+Nesnesine yeni bir numaralandırma değeri atar `error_condition` .
 
 ```cpp
 template <class _Enum>
@@ -245,19 +245,19 @@ error_condition(_Enum error,
 #### <a name="parameters"></a>Parametreler
 
 *_Errcode*\
-Numaralandırma değeri atamak için `error_condition` nesne.
+Nesneye atanacak numaralandırma değeri `error_condition` .
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bir başvuru `error_condition` yeni sabit listesi değeri üye işlevi tarafından atanan nesne.
+`error_condition`Üye işlevi tarafından yeni numaralandırma değerine atanmakta olan nesneye bir başvuru.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci depoları `(value_type)error` hata kodu değeri ve bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category). Döndürür `*this`.
+Üye işleci, `(value_type)error` hata kodu değeri ve [generic_category](../standard-library/system-error-functions.md#generic_category)işaretçisi olarak depolar. Döndürür **`*this`** .
 
-### <a name="op_bool"></a> bool işleci
+### <a name="operator-bool"></a><a name="op_bool"></a>işleç bool
 
-Türünde bir değişken bıraktığı `error_condition`.
+Türünde bir değişken yayınlar `error_condition` .
 
 ```cpp
 explicit operator bool() const;
@@ -265,13 +265,13 @@ explicit operator bool() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Boole değeri `error_condition` nesne.
+Nesnenin Boolean değeri `error_condition` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-İşleci için bir değer dönüştürülebilir döndürür **true** yalnızca [değer](#value) sıfıra eşit değil. Dönüş türüne dönüştürülebilir yalnızca **bool**değil, `void *` veya bilinen diğer skaler türler.
+İşleci **`true`** yalnızca [değeri](#value) sıfıra eşit değilse, dönüştürülebilir bir değer döndürür. Dönüş türü, türüne **`bool`** değil, `void *` veya diğer bilinen skalar türlere dönüştürülebilir.
 
-### <a name="value"></a> Değer
+### <a name="value"></a><a name="value"></a>deeri
 
 Depolanan hata kodu değerini döndürür.
 
@@ -281,13 +281,13 @@ value_type value() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Türü depolanan hata kodu değerini [value_type](#value_type).
+[Value_type](#value_type)türünde depolanan hata kodu değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-### <a name="value_type"></a> value_type
+### <a name="value_type"></a><a name="value_type"></a>value_type
 
-Depolanan hata kodu değerini temsil eden tür.
+Depolanan hata kodu değerini temsil eden bir tür.
 
 ```cpp
 typedef int value_type;
@@ -295,4 +295,4 @@ typedef int value_type;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Tür tanımını eşanlamlıdır **int**.
+Tür tanımı için bir eş anlamlı **`int`** .

@@ -34,18 +34,18 @@ helpviewer_keywords:
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-ms.openlocfilehash: 5e2b3d7a571a3005b1c52eacaa85e1ede6d30b77
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 009f56de506b50f81502a2aad7632244b069d09a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917715"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216771"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
 Kayan noktalı bir değeri kayan nokta biçimindeki en yakın tamsayıya yuvarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double rint( double x );
@@ -60,21 +60,21 @@ long double rint( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Rint** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Yarı çift değerler kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır ve bu da, bir değer olarak, daha önce, bir **tamsayı** işlevleriyle aynıdır. Bir sonuç, bağımsız değişkenden değerde farklıysa,,,,, bir **FE_INEXACT** kayan **nokta işlevlerinin aksine** , **rint** işlevleri kayan nokta özel durumunu oluşturabilir. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|**_matherr** Duruma|
+|Girdi|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|yok|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **float** ve **Long** **Double** değerleri alıp döndüren **rint** 'nin aşırı yüklerini çağırabilirsiniz. C programında, **rint** her zaman bir **Double**alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **rint** 'nin aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **rint** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -82,7 +82,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**rint**, **rintf**, **rintl**|\<Math. h>|\<cmath>|
+|**rint**, **rintf**, **rintl**|\<math.h>|\<cmath>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -124,7 +124,7 @@ rintl(-2.500000) is -3
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
 [floor, floorf, floorl](floor-floorf-floorl.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>

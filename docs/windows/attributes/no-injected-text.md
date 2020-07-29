@@ -1,23 +1,23 @@
 ---
-title: no_injected_text (C++ com özniteliği)
+title: no_injected_text (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.no_injected_text
 helpviewer_keywords:
 - no_injected_text attribute
 ms.assetid: 5256f808-e41e-4f4a-9ea5-e447919f5696
-ms.openlocfilehash: 5f98be3478b2e1eeb4b464f1784f3f4ece22d8a4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7e5c822c45888f41e8dd849f25658d0139e6fda0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166620"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87201251"
 ---
 # <a name="no_injected_text"></a>no_injected_text
 
 Öznitelik kullanımı sonucu olarak derleyicinin ekleme kodundan yapılmasını engeller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ no_injected_text(boolean) ];
@@ -26,7 +26,7 @@ ms.locfileid: "80166620"
 ### <a name="parameters"></a>Parametreler
 
 *Boolean*<br/>
-Seçim kod eklemek istiyorsanız **true** , kodun eklenmesine izin vermek için **false** . Varsayılan değer **true** 'dur.
+(İsteğe bağlı) **`true`** kod eklemek istiyorsanız **`false`** kodun eklenmesine izin verin. **`true`** varsayılandır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -38,7 +38,7 @@ Seçim kod eklemek istiyorsanız **true** , kodun eklenmesine izin vermek için 
 
 |||
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -47,4 +47,4 @@ Seçim kod eklemek istiyorsanız **true** , kodun eklenmesine izin vermek için 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Öznitelikleri](compiler-attributes.md)
+[Derleyici öznitelikleri](compiler-attributes.md)

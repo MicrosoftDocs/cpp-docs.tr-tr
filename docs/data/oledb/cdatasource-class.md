@@ -56,12 +56,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: 646d4b3548a1c5ee1bdfaf64f7823fa584abaac5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f6b5182fdc451217e2f61642f96e77f679c45d37
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212046"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216511"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
@@ -83,11 +83,11 @@ class CDataSource
 
 |||
 |-|-|
-|[~Eksik](#close)|Bağlantıyı kapatır.|
+|[Kapat](#close)|Bağlantıyı kapatır.|
 |[Getınitializationstring](#getinitializationstring)|Şu anda açık olan veri kaynağının başlatma dizesini alır.|
 |[GetProperties](#getproperties)|Bağlı veri kaynağı için şu anda ayarlanmış olan özelliklerin değerlerini alır.|
 |[GetProperty](#getproperty)|Bağlı veri kaynağı için şu anda ayarlanmış olan tek bir özelliğin değerini alır.|
-|[Açın](#open)|`CLSID`, `ProgID`ya da çağıran tarafından sağlanmış bir `CEnumerator` bilinen adı kullanarak bir sağlayıcıya (veri kaynağı) bir bağlantı oluşturur.|
+|[Aç](#open)|`CLSID`, `ProgID` Ya da `CEnumerator` çağıran tarafından sağlanmış bilinen bir ad kullanarak bir sağlayıcıya (veri kaynağı) bir bağlantı oluşturur.|
 |[OpenFromFileName](#openfromfilename)|Kullanıcı tarafından sağlanan dosya adı tarafından belirtilen bir dosyadaki veri kaynağını açar.|
 |[OpenFromInitializationString](#openfrominitializationstring)|Bir başlatma dizesi tarafından belirtilen veri kaynağını açar.|
 |[OpenWithPromptFileName](#openwithpromptfilename)|Kullanıcının, ilgili veri kaynağını açmak için önceden oluşturulmuş bir veri bağlantısı dosyası seçmesine izin verir.|
@@ -95,13 +95,13 @@ class CDataSource
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabilir. Bu oturumlar `CSession`tarafından temsil edilir. `CSession::Open`bir oturum oluşturmadan önce bağlantıyı açmak için [CDataSource:: Open](../../data/oledb/cdatasource-open.md) çağrısı yapmanız gerekir.
+Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabilir. Bu oturumlar tarafından temsil edilir `CSession` . İle oturum oluşturmadan önce bağlantıyı açmak için [CDataSource:: Open](../../data/oledb/cdatasource-open.md) ' i çağırmanız gerekir `CSession::Open` .
 
-`CDataSource`kullanmanın bir örneği için bkz. [CATDB](../../overview/visual-cpp-samples.md) örneği.
+Öğesinin nasıl kullanılacağına ilişkin bir örnek için `CDataSource` bkz. [CATDB](../../overview/visual-cpp-samples.md) örneği.
 
 ## <a name="cdatasourceclose"></a><a name="close"></a>CDataSource:: Close
 
-`m_spInit` işaretçisini serbest bırakarak bağlantıyı kapatır.
+İşaretçiyi serbest bırakarak bağlantıyı kapatır `m_spInit` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -113,7 +113,7 @@ void Close() throw();
 
 Şu anda açık olan bir veri kaynağının başlatma dizesini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetInitializationString(BSTR* pInitializationString,
@@ -126,7 +126,7 @@ HRESULT GetInitializationString(BSTR* pInitializationString,
 dışı Başlatma dizesinin işaretçisi.
 
 *bIncludePassword*<br/>
-'ndaki dize bir parola içeriyorsa **doğru** ; Aksi halde **yanlış**.
+[in] **`true`** dize bir parola içeriyorsa; Aksi takdirde **`false`** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -140,7 +140,7 @@ Elde edilen başlatma dizesi daha sonra bu veri kaynağı bağlantısını yenid
 
 Bağlı veri kaynağı nesnesi için istenen özellik bilgilerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetProperties(ULONG ulPropIDSets,
@@ -165,7 +165,7 @@ Tek bir özelliği almak için [GetProperty](../../data/oledb/cdatasource-getpro
 
 Bağlı veri kaynağı nesnesi için belirtilen özelliğin değerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetProperty(const GUID& guid,
@@ -182,7 +182,7 @@ HRESULT GetProperty(const GUID& guid,
 'ndaki Döndürülecek özelliğin özellik KIMLIĞI.
 
 *pVariant*<br/>
-dışı `GetProperty`, özelliğin değerini döndüren Variant için bir işaretçi.
+dışı Variant için bir işaretçi, `GetProperty` özelliğin değerini döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -194,9 +194,9 @@ Birden çok özellik almak için [GetProperties](../../data/oledb/cdatasource-ge
 
 ## <a name="cdatasourceopen"></a><a name="open"></a>CDataSource:: Open
 
-`CLSID`, `ProgID`veya `CEnumerator` bilinen bir ad kullanarak bir veri kaynağına bağlantı açar veya kullanıcıya bir Bulucu iletişim kutusu ister.
+, Veya bilinen bir ad kullanarak bir veri kaynağına bağlantı açar `CLSID` `ProgID` `CEnumerator` veya kullanıcıya bir Bulucu iletişim kutusu ister.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Open(const CLSID& clsid,
@@ -240,7 +240,7 @@ HRESULT Open(LPCSTR szProgID,
 #### <a name="parameters"></a>Parametreler
 
 *in*<br/>
-'ndaki Veri sağlayıcısının `CLSID`.
+'ndaki `CLSID`Veri sağlayıcısı.
 
 *pPropSet*<br/>
 'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın.
@@ -264,7 +264,7 @@ HRESULT Open(LPCSTR szProgID,
 'ndaki Bir program tanımlayıcısı.
 
 *sının*<br/>
-'ndaki Çağıran bir `CLSID`belirtmezse bağlantıyı açmaya yönelik bilinen adı almak için kullanılan bir [CEnumerator](../../data/oledb/cenumerator-class.md) nesnesi.
+'ndaki Çağıran bir belirtmezse bağlantıyı açmaya yönelik bilinen adı almak için kullanılan bir [CEnumerator](../../data/oledb/cenumerator-class.md) nesnesi `CLSID` .
 
 *lendiği*<br/>
 'ndaki İletişim kutusunun üst öğesi olacak pencerenin tutamacı. *HWND* parametresini kullanan işlev aşırı yüklemesinin kullanılması, otomatik olarak hizmet bileşenlerini çağırır; Ayrıntılar için bkz. açıklamalar.
@@ -278,13 +278,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*HWND* parametresini kullanan yöntem aşırı yüklemesi, Oledb32. dll ' deki hizmet bileşenleriyle bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
+*HWND* parametresini kullanan yöntem aşırı yüklemesi, oledb32.dll ' deki hizmet bileşenleriyle bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
 
-*HWND* parametresini kullanmayan yöntem aşırı yüklemeleri, Oledb32. dll ' deki hizmet bileşenlerini kullanmadan bir veri kaynağı nesnesi açın. Bu işlev aşırı yüklemeleri ile açılmış bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi, hizmet bileşenleri işlevlerinin hiçbirini kullanmaz.
+*HWND* parametresini kullanmayan yöntem aşırı yüklemeleri, oledb32.dll ' deki hizmet bileşenlerini kullanmadan bir veri kaynağı nesnesi açın. Bu işlev aşırı yüklemeleri ile açılmış bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi, hizmet bileşenleri işlevlerinin hiçbirini kullanmaz.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod, OLE DB şablonlarıyla bir Jet 4,0 veri kaynağının nasıl açılacağını gösterir. Jet veri kaynağını bir OLE DB veri kaynağı olarak değerlendirmiş olursunuz. Ancak, `Open` çağrın iki özellik kümesi olması gerekir: biri DBPROPSET_DBINIT ve diğeri DBPROPSET_JETOLEDB_DBINIT için, DBPROP_JETOLEDB_DATABASEPASSWORD ayarlayabilmeniz için.
+Aşağıdaki kod, OLE DB şablonlarıyla bir Jet 4,0 veri kaynağının nasıl açılacağını gösterir. Jet veri kaynağını bir OLE DB veri kaynağı olarak değerlendirmiş olursunuz. Ancak, için çağrın `Open` iki özellik kümesine ihtiyacı vardır: biri DBPROPSET_DBINIT diğeri diğeri DBPROPSET_JETOLEDB_DBINIT için, DBPROP_JETOLEDB_DATABASEPASSWORD ayarlayabilmeniz için.
 
 [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]
 
@@ -292,7 +292,7 @@ Aşağıdaki kod, OLE DB şablonlarıyla bir Jet 4,0 veri kaynağının nasıl a
 
 Kullanıcı tarafından sağlanan dosya adı tarafından belirtilen bir dosyadaki veri kaynağını açar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
@@ -311,13 +311,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Oledb32. dll ' deki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
+Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
 
 ## <a name="cdatasourceopenfrominitializationstring"></a><a name="openfrominitializationstring"></a>CDataSource:: OpenFromInitializationString
 
 Kullanıcı tarafından sağlanan başlatma dizesi tarafından belirtilen bir veri kaynağını açar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
@@ -330,9 +330,9 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
 'ndaki Başlatma dizesi.
 
 *Fpromptforınfo*<br/>
-'ndaki Bu bağımsız değişken **true**olarak ayarlanırsa `OpenFromInitializationString`, DBPROP_INIT_PROMPT özelliğini DBPROMPT_COMPLETEREQUIRED olarak ayarlar, bu da yalnızca daha fazla bilgi gerektiğinde kullanıcıya sorulup sorulmayacağını belirtir. Bu, başlatma dizesinin parola gerektiren bir veritabanını belirttiği durumlar için yararlıdır, ancak dize parolayı içermez. Veritabanına bağlanmaya çalışırken kullanıcıdan bir parola (veya eksik olan herhangi bir bilgi) istenir.
+'ndaki Bu bağımsız değişken olarak ayarlandıysa **`true`** , `OpenFromInitializationString` yalnızca daha fazla bilgi gerekiyorsa, kullanıcıdan istenmesini belirten DBPROP_INIT_PROMPT özelliğini DBPROMPT_COMPLETEREQUIRED olarak ayarlar. Bu, başlatma dizesinin parola gerektiren bir veritabanını belirttiği durumlar için yararlıdır, ancak dize parolayı içermez. Veritabanına bağlanmaya çalışırken kullanıcıdan bir parola (veya eksik olan herhangi bir bilgi) istenir.
 
-Varsayılan değer **false**şeklindedir; bu, kullanıcıdan hiçbir şekilde sorulmayacağını belirtir (DBPROMPT_NOPROMPT DBPROP_INIT_PROMPT belirler).
+Varsayılan değer **`false`** , kullanıcıya hiçbir şekilde sorulmayacağını (DBPROMPT_NOPROMPT DBPROP_INIT_PROMPT ayarlar) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -340,13 +340,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Oledb32. dll ' deki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir.
+Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir.
 
 ## <a name="cdatasourceopenwithpromptfilename"></a><a name="openwithpromptfilename"></a>CDataSource:: OpenWithPromptFileName
 
 Bu yöntem kullanıcıya bir iletişim kutusu sorar, ardından Kullanıcı tarafından belirtilen dosyayı kullanarak bir veri kaynağı açar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
@@ -371,13 +371,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Oledb32. dll ' deki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
+Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
 
 ## <a name="cdatasourceopenwithservicecomponents"></a><a name="openwithservicecomponents"></a>CDataSource:: OpenWithServiceComponents
 
-Oledb32. dll içindeki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar.
+oledb32.dll ' deki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT OpenWithServiceComponents (const CLSID clsid,
@@ -392,7 +392,7 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 #### <a name="parameters"></a>Parametreler
 
 *in*<br/>
-'ndaki Veri sağlayıcısının `CLSID`.
+'ndaki `CLSID`Veri sağlayıcısı.
 
 *Szprogıd*<br/>
 'ndaki Veri sağlayıcısının program KIMLIĞI.
@@ -409,9 +409,9 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Oledb32. dll ' deki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
+Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar. Bu DLL, kaynak havuzu oluşturma, otomatik Işlem kaydı vb. gibi hizmet bileşenleri özelliklerinin uygulanmasını içerir. Daha fazla bilgi için, [OLE DB Programcı kılavuzundaki](/previous-versions/windows/desktop/ms713643(v=vs.85))OLE DB başvurusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
