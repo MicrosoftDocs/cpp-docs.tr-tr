@@ -4,12 +4,12 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: c80bb27761b8de91f7caee5932f28f1ec2ac0e29
-ms.sourcegitcommit: 166039ceea3256c26fb23920b96de4257b8cf149
+ms.openlocfilehash: 55327d53f3f9e8439ba6e008f1b5a6b384722d54
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84946654"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229876"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>Şema başvurusunda CMakeSettings.js
 
@@ -31,7 +31,7 @@ IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğ
 
 `configuration`, Şu özelliklere sahiptir:
 
-- `addressSanitizerEnabled`: `true` Program, adres Temizleme (Windows üzerinde deneysel) ile derleniyorsa. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
+- `addressSanitizerEnabled`: **`true`** Program, adres Temizleme (Windows üzerinde deneysel) ile derleniyorsa. Linux 'ta, en iyi sonuçlar için-FNO-yoksay-Frame-pointer ve derleyici iyileştirme düzeyi-OS veya-Oo ile derleyin.
 - `addressSanitizerRuntimeFlags`: ASAN_OPTIONS ortam değişkeni aracılığıyla Addresstemizleme işlevine geçirilen çalışma zamanı bayrakları. Biçim: FLAG1 = değer: flag2 = değer2.
 - `buildCommandArgs`: CMake sonrasında--Build--. geçirilen yerel derleme anahtarlarını belirtir Örneğin, Dokja Oluşturucu kullanıldığında-v ' d e geçiş, komut satırlarını çıktı olarak zorlar. Dokja komutları hakkında daha fazla bilgi için bkz. [dokja komut satırı bağımsız değişkenleri](#ninja) .
 - `buildRoot`: CMake 'in seçili Oluşturucu için derleme betikleri oluşturduğu dizini belirtir.  **-DCMAKE_BINARY_DIR** anahtarına eşlenir ve *CMakeCache.txt* nerede oluşturulacağını belirtir. Klasör yoksa, oluşturulur. Desteklenen makrolar şunlardır,,,,, `${workspaceRoot}` `${workspaceHash}` `${projectFile}` `${projectDir}` `${thisFile}` `${thisFileDir}` , `${name}` , `${generator}` , `${env.VARIABLE}` .
@@ -44,7 +44,7 @@ IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğ
 - `configurationType`: seçili Oluşturucu için derleme türü yapılandırmasını belirtir. Aşağıdakilerden biri olabilir:
 
   - Hata ayıklama
-  - Sürüm
+  - Yayınla
   - MinSizeRel
   - Relwithdeınfo
   
@@ -280,7 +280,7 @@ ninja: invalid option -- `-?'
 usage: ninja [options] [targets...]
 ```
 
-|Seçenek|Description|
+|Seçenek|Açıklama|
 |--------------|------------|
 | --sürüm  | dokja sürümünü Yazdır ("1.7.1")|
 |   -C DIR   | başka bir şey yapmadan önce DIR olarak değiştirin|

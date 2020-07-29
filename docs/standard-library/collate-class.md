@@ -22,18 +22,18 @@ helpviewer_keywords:
 - std::collate [C++], hash
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-ms.openlocfilehash: f05c2e9482f8a0bada3868fdc946d4d26a0e0e1d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ccdf05a7a41fc7f646852e7d326832b86c41dde8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371933"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230110"
 ---
 # <a name="collate-class"></a>collate Sınıfı
 
-Bir dize içindeki karakterlerin sıralanması ve gruplanması, bunlar ile dizelerin karmalarını karşılaştırmaları denetlemek için yerel bir yönü olarak hizmet verebilecek bir nesneyi açıklayan bir sınıf şablonu.
+Bir dize içindeki karakterlerin sıralamasını ve gruplamasını denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu, aralarında karşılaştırmalar ve dizelerin karması.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class CharType>
@@ -42,46 +42,46 @@ class collate : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*Chartype*\
+*CharType*\
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için ilk girişim benzersiz `id`bir pozitif değer depolar. Bazı dillerde, karakterler gruplandırılır ve tek bir karakter olarak ele alınır ve bazılarındaysa tekil karakterler iki karaktermiş gibi ele alınır. Harmanlama sınıfı tarafından sağlanan harmanlama hizmetleri bu durumları sıralamaya yönelik yöntem sağlar.
+Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolanmış bir başlangıç sıfır değeri bulunur. Depolanan değerine erişmek için yapılan ilk girişim, içinde benzersiz bir pozitif değer depolar `id` . Bazı dillerde, karakterler gruplandırılır ve tek bir karakter olarak ele alınır ve bazılarındaysa tekil karakterler iki karaktermiş gibi ele alınır. Harmanlama sınıfı tarafından sağlanan harmanlama hizmetleri bu durumları sıralamaya yönelik yöntem sağlar.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Collate](#collate)|Dize sıralama kuralları işlemek `collate` için yerel bir yönü olarak hizmet veren sınıf nesneleri için oluşturucu.|
+|[harman](#collate)|`collate`Dize sıralama kurallarını işlemek için bir yerel ayar modeli olarak hizmet veren sınıfının nesneleri için Oluşturucu.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[Char_type](#char_type)|Bir tür `CharType`karakterini açıklayan bir tür.|
-|[string_type](#string_type)|Tür karakterleri içeren bir `basic_string` tür dizesini `CharType`açıklayan bir tür.|
+|[char_type](#char_type)|Türünde bir karakteri tanımlayan tür `CharType` .|
+|[string_type](#string_type)|Türünde karakter içeren türde bir dizeyi tanımlayan tür `basic_string` `CharType` .|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[Karşılaştırmak](#compare)|Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırır.|
+|[Karşılaştır](#compare)|Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırır.|
 |[do_compare](#do_compare)|Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırmak için çağrılan sanal işlev.|
 |[do_hash](#do_hash)|Kendi modeline özgü kurallara göre dizilerin karma değerini belirlemek için çağrılan sanal işlev.|
 |[do_transform](#do_transform)|Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürmek için çağrılan bir sanal işlev.|
-|[Karma](#hash)|Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.|
-|[Dönüştürmek](#transform)|Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.|
+|[yla](#hash)|Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.|
+|[Dönüşümler](#transform)|Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<yerel>
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
-## <a name="collatechar_type"></a><a name="char_type"></a>harman::char_type
+## <a name="collatechar_type"></a><a name="char_type"></a>harmanlama:: char_type
 
-Bir tür `CharType`karakterini açıklayan bir tür.
+Türünde bir karakteri tanımlayan tür `CharType` .
 
 ```cpp
 typedef CharType char_type;
@@ -89,11 +89,11 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi `CharType`ile eş anlamlıdır.
+Tür, şablon parametresi için bir eş anlamlı `CharType` .
 
-## <a name="collatecollate"></a><a name="collate"></a>harman::harman
+## <a name="collatecollate"></a><a name="collate"></a>collate:: COLLATE
 
-Dize sıralama kuralları işlemek için bir yerel fason olarak hizmet veren sınıf harman nesneleri için oluşturucu.
+Dize sıralama kurallarını işlemek için bir yerel ayar modeli olarak hizmet veren sınıf harmanlama nesneleri için Oluşturucu.
 
 ```cpp
 public:
@@ -108,25 +108,25 @@ const char* _Locname,
 
 ### <a name="parameters"></a>Parametreler
 
-*_refs*\
-Nesneiçin bellek yönetimi türünü belirtmek için kullanılan eden arameger değeri.
+*_Refs*\
+Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri.
 
 *_Locname*\
-Yerel yerin adı.
+Yerel ayarın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Refs* parametresi için olası değerler ve önemi şunlardır:
+*_Refs* parametresi için olası değerler ve bunların önemi şunlardır:
 
-- 0: Nesnenin ömrü, onu içeren yerel nesneler tarafından yönetilir.
+- 0: nesnenin ömrü, kendisini içeren yerel ayarlara göre yönetilir.
 
-- 1: Nesnenin ömrü el ile yönetilmelidir.
+- 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değildir.
+- \>1: Bu değerler tanımlı değil.
 
-Kurucu, temel nesnesini yerel olarak başlaşır:: **locale::**[fason](../standard-library/locale-class.md#facet_class)( ).`_Refs`
+Oluşturucu kendi temel nesnesini **locale::**[model](../standard-library/locale-class.md#facet_class)() ile başlatır `_Refs` .
 
-## <a name="collatecompare"></a><a name="compare"></a>harman::karşılaştır
+## <a name="collatecompare"></a><a name="compare"></a>collate:: Compare
 
 Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırır.
 
@@ -139,33 +139,33 @@ int compare(const CharType* first1,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk1*\
-Karşılaştırılacak ilk sırada ilk öğeyi işaretle.
+*first1*\
+Karşılaştırılacak ilk dizideki ilk öğe işaretçisi.
 
-*son1*\
-Karşılaştırılacak ilk dizideki son öğeyi işaretle.
+*last1*\
+Karşılaştırılacak ilk dizideki son öğenin işaretçisi.
 
-*ilk2*\
-Karşılaştırılacak ikinci sırada ilk öğeiçin işaretçi.
+*first2*\
+Karşılaştırılacak ikinci dizideki ilk öğenin işaretçisi.
 
-*son2*\
-Karşılaştırılacak ikinci sırada son öğeyi işaretçi.
+*last2*\
+Karşılaştırılacak ikinci dizideki son öğenin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlev döner:
+Üye işlevi şunu döndürür:
 
-- -1 eğer ilk sekans ikinci sekanstan daha az karşılaştırırsa.
+- -1 ilk sıra ikinci diziden daha az karşılaştırırsa.
 
-- +1 eğer ikinci sıra ilk ardandan daha az karşılaştırırsa.
+- İkinci sıra ilk diziden daha az karşılaştırırsa + 1.
 
-- Diziler eşdeğerse 0.
+- diziler eşdeğer ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sıra, dizilerde en erken eşit olmayan çiftte daha küçük öğeye sahipse veya eşit olmayan çiftler yoksa, ilk sıra daha kısaysa daha az karşılaştırır.
+İlk sıra, dizideki en yakın eşit olmayan çiftte daha küçük bir öğe varsa veya eşit olmayan çiftler yoksa, ancak ilk sıra daha kısadır.
 
-Üye işlev [do_compare](#do_compare) `first1`döndürür ( , , `last1` `first2`, . `last2`
+Üye işlevi [do_compare](#do_compare)döndürür ( `first1` ,, `last1` , `first2` `last2` ).
 
 ### <a name="example"></a>Örnek
 
@@ -192,7 +192,7 @@ int main() {
 }
 ```
 
-## <a name="collatedo_compare"></a><a name="do_compare"></a>harman::do_compare
+## <a name="collatedo_compare"></a><a name="do_compare"></a>harmanlama::d o_compare
 
 Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırmak için çağrılan sanal işlev.
 
@@ -205,37 +205,37 @@ virtual int do_compare(const CharType* first1,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk1*\
-Karşılaştırılacak ilk sırada ilk öğeyi işaretle.
+*first1*\
+Karşılaştırılacak ilk dizideki ilk öğe işaretçisi.
 
-*son1*\
-Karşılaştırılacak ilk dizideki son öğeyi işaretle.
+*last1*\
+Karşılaştırılacak ilk dizideki son öğenin işaretçisi.
 
-*ilk2*\
-Karşılaştırılacak ikinci sırada ilk öğeiçin işaretçi.
+*first2*\
+Karşılaştırılacak ikinci dizideki ilk öğenin işaretçisi.
 
-*son2*\
-Karşılaştırılacak ikinci sırada son öğeyi işaretçi.
+*last2*\
+Karşılaştırılacak ikinci dizideki son öğenin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlev döner:
+Üye işlevi şunu döndürür:
 
-- -1 eğer ilk sekans ikinci sekanstan daha az karşılaştırırsa.
+- -1 ilk sıra ikinci diziden daha az karşılaştırırsa.
 
-- +1 eğer ikinci sıra ilk ardandan daha az karşılaştırırsa.
+- İkinci sıra ilk diziden daha az karşılaştırırsa + 1.
 
-- Diziler eşdeğerse 0.
+- diziler eşdeğer ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korunan sanal üye işlevi [ * first1, Last1)* dizisini *[ first2, last2]* dizisiyle karşılaştırır. Bu tür `CharType`karşılık gelen `operator<` öğelerin çiftleri arasında uygulayarak değerleri karşılaştırır. İlk sıra, dizilerde en erken eşit olmayan çiftte daha küçük elemana sahipse veya eşit olmayan çiftler yoksa, ilk sıra daha kısaysa daha az karşılaştırır.
+Korumalı sanal üye işlevi [* First1, last1) * konumundaki diziyi *[first2, last2*) sırasıyla karşılaştırır. `operator<`Türündeki karşılık gelen öğelerin çiftleri arasında uygulanarak değerleri karşılaştırır `CharType` . İlk sıra, dizideki en yakın eşit olmayan çiftte daha küçük bir öğe varsa veya eşit olmayan çiftler yoksa, ancak ilk sıra daha kısadır.
 
 ### <a name="example"></a>Örnek
 
-Harmanlamak için örneğe [bakın::karşılaştırın](#compare), hangi çağrıları . `do_compare`
+Öğesini çağıran [collate:: Compare](#compare)örneğine bakın `do_compare` .
 
-## <a name="collatedo_hash"></a><a name="do_hash"></a>harmlate::do_hash
+## <a name="collatedo_hash"></a><a name="do_hash"></a>harmanlama::d o_hash
 
 Kendi modeline özgü kurallara göre dizilerin karma değerini belirlemek için çağrılan sanal işlev.
 
@@ -245,25 +245,25 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Değeri olan dizideki ilk karaktere işaretçi belirlenecek.
+*adı*\
+Dizide değeri belirlenecek olan ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Değeri olan dizideki son karaktere işaretçi belirlenecek.
+*soyadına*\
+Dizideki değeri belirlenecek olan son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi için **uzun** olan türkarma değeri.
+Dizi için türün karma değeri **`long`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Karma değer, örneğin, bir dizi liste arasında sözde rasgele dizileri dağıtmak yararlı olabilir.
+Karma değer, örneğin bir liste dizisi genelinde rastgele dizileri rastgele dağıtırken yararlı olabilir.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [karma](#hash)için örnek `do_hash`, hangi çağırır .
+' İ çağıran [karma](#hash)örneğine bakın `do_hash` .
 
-## <a name="collatedo_transform"></a><a name="do_transform"></a>harmlate::do_transform
+## <a name="collatedo_transform"></a><a name="do_transform"></a>harmanlama::d o_transform
 
 Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürmek için çağrılan bir sanal işlev.
 
@@ -273,11 +273,11 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Dönüştürülecek dizideki ilk karaktere işaretçi.
+*adı*\
+Dönüştürülecek dizideki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Dönüştürülecek dizideki son karaktere işaretçi.
+*soyadına*\
+Dönüştürülecek dizideki son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -285,13 +285,13 @@ Dönüştürülmüş karakter dizisi olan bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, denetlenen dizi sıranın bir kopyası `first` `last`olan sınıf [string_type](#string_type) bir nesnedöndürür [ , ). \< **Harmanlama CharType**> türetilen bir sınıf do_compare geçersiz `do_transform` [kılarsa,](#do_compare)aynı zamanda eşleşmesi geçersiz kılınmalıdır. `collate::compare`Geçirilen, iki dönüştürülmüş dizeleri türemiş sınıfta karşılaştırmak için dönüştürülmemiş dizeleri geçen alacağı aynı sonucu vermelidir.
+Korumalı sanal üye işlevi, denetlenen sırası [,) sırasının bir kopyası olan [string_type](#string_type) sınıfının bir nesnesini döndürür `first` `last` . Harmanlanmalardan türetilen bir sınıf \< **CharType**> [do_compare](#do_compare)geçersiz kıldığında, eşleşmesi için de geçersiz kılar `do_transform` . Öğesine geçirildiğinde `collate::compare` , dönüştürülmüş dizeleri türetilmiş sınıfta karşılaştırmak üzere geçirmeden elde edilen iki dize aynı sonucu verir.
 
 ### <a name="example"></a>Örnek
 
-[Dönüştürme](#transform)örneğine bakın , `do_transform`hangi çağırır .
+Öğesini çağıran [dönüştürme](#transform)örneğine bakın `do_transform` .
 
-## <a name="collatehash"></a><a name="hash"></a>harman::karma
+## <a name="collatehash"></a><a name="hash"></a>collate:: Hash
 
 Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.
 
@@ -301,21 +301,21 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Değeri olan dizideki ilk karaktere işaretçi belirlenecek.
+*adı*\
+Dizide değeri belirlenecek olan ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Değeri olan dizideki son karaktere işaretçi belirlenecek.
+*soyadına*\
+Dizideki değeri belirlenecek olan son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizi için **uzun** olan türkarma değeri.
+Dizi için türün karma değeri **`long`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev [do_hash](#do_hash) `first`döndürür ( , `last`).
+Üye işlevi [do_hash](#do_hash)( `first` ,) döndürür `last` .
 
-Karma değer, örneğin, bir dizi liste arasında sözde rasgele dizileri dağıtmak yararlı olabilir.
+Karma değer, örneğin bir liste dizisi genelinde rastgele dizileri rastgele dağıtırken yararlı olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -345,9 +345,9 @@ int main( )
 541187293 551279837
 ```
 
-## <a name="collatestring_type"></a><a name="string_type"></a>harman::string_type
+## <a name="collatestring_type"></a><a name="string_type"></a>harmanlama:: string_type
 
-Tür karakterleri içeren bir `basic_string` tür dizesini `CharType`açıklayan bir tür.
+Türünde karakter içeren türde bir dizeyi tanımlayan tür `basic_string` `CharType` .
 
 ```cpp
 typedef basic_string<CharType> string_type;
@@ -355,13 +355,13 @@ typedef basic_string<CharType> string_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, nesneleri kaynak dizinin kopyalarını depolayabilen sınıf şablonu [basic_string](../standard-library/basic-string-class.md) bir uzmanlık açıklar.
+Türü, bir sınıf şablonu [basic_string](../standard-library/basic-string-class.md) , nesneleri kaynak dizinin kopyalarını depolayabilen bir özelleşme tanımlar.
 
 ### <a name="example"></a>Örnek
 
-Nasıl beyan ve kullanılacağına `string_type`bir örnek için bkz. [transform](#transform)
+Bildirme ve kullanma hakkında bir örnek için `string_type` bkz. [Transform](#transform).
 
-## <a name="collatetransform"></a><a name="transform"></a>harman::dönüştürme
+## <a name="collatetransform"></a><a name="transform"></a>collate:: Transform
 
 Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.
 
@@ -371,19 +371,19 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ilk*\
-Dönüştürülecek dizideki ilk karaktere işaretçi.
+*adı*\
+Dönüştürülecek dizideki ilk karaktere yönelik bir işaretçi.
 
-*Son*\
-Dönüştürülecek dizideki son karaktere işaretçi.
+*soyadına*\
+Dönüştürülecek dizideki son karaktere yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüştürülmüş karakter dizisini içeren bir dize.
+Dönüştürülmüş karakter sırasını içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev [do_transform](#do_transform)`first`döndürür ( , `last`).
+Üye işlevi [do_transform](#do_transform)( `first` ,) döndürür `last` .
 
 ### <a name="example"></a>Örnek
 
@@ -429,5 +429,5 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<yerel>](../standard-library/locale.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[\<locale>](../standard-library/locale.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

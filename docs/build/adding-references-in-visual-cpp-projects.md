@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: c7facb82054eed4ef28c52830b8a3079eecb7fdc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 37c0120b7879678ad65dfbbffc17bd6d6791fdfe
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169961"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229915"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıkları ve bileşenleri kullanma
 
@@ -26,7 +26,7 @@ Genellikle, bir C++ projesinin statik kitaplık (. lib dosyaları), DLL, Windows
 
 Statik kitaplık projeniz aynı çözümde oluşturulmakta ise:
 
-1. #<a name="include-the-header-files-for-the-static-library-using-quotation-marks-in-a-typical-solution-the-path-will-start-with-library-project-name-intellisense-will-help-you-find-it"></a>tırnak işaretleri kullanarak statik kitaplık için üst bilgi dosyalarını ekleyin. Tipik bir çözümde yol ile `../<library project name>`başlar. IntelliSense onu bulmanıza yardımcı olur.
+1. #<a name="include-the-header-files-for-the-static-library-using-quotation-marks-in-a-typical-solution-the-path-will-start-with-library-project-name-intellisense-will-help-you-find-it"></a>tırnak işaretleri kullanarak statik kitaplık için üst bilgi dosyalarını ekleyin. Tipik bir çözümde yol ile başlar `../<library project name>` . IntelliSense onu bulmanıza yardımcı olur.
 2. Statik kitaplık projesine bir başvuru ekleyin. **Çözüm Gezgini** içindeki uygulama projesi düğümünün altında **Başvurular** ' a sağ tıklayın ve **Başvuru Ekle**' yi seçin.
 
 Statik kitaplık çözümün bir parçası değilse:
@@ -98,11 +98,11 @@ Aşağıdaki özellikler çeşitli türlerde başvurularda kullanılabilir. Bunl
 
 - **Yerel uydu derlemelerini kopyalama (C++/CLı)**
 
-   Başvurulan derlemenin uydu derlemelerinin derleme sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca yereli **Kopyala** **doğru**ise kullanılır.
+   Başvurulan derlemenin uydu derlemelerinin derleme sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca yereli **Kopyala** ise kullanılır **`true`** .
 
 - **Başvuru bütünleştirilmiş kodu çıkışı**
 
-   Bu derlemenin yapı işleminde kullanıldığını belirtir. **True**ise derleme sırasında derleyici komut satırında derleme kullanılır.
+   Bu derlemenin yapı işleminde kullanıldığını belirtir. İse **`true`** , derleme sırasında derleyici komut satırında derleme kullanılır.
 
 ### <a name="project-to-project-reference-properties"></a>Projeden projeye başvuru özellikleri
 
@@ -148,7 +148,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
    Başvurunun etiketini görüntüler.
 
-- **Adı**
+- **Ad**
 
    Başvurunun adını görüntüler.
 
@@ -158,7 +158,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
 - **Tanımlayıcı ad**
 
-   `true`başvurulan derlemenin tanımlayıcı bir adı varsa. Tanımlayıcı adlı bütünleştirilmiş kod benzersiz bir şekilde sürümü oluşturulmuş.
+   **`true`** başvurulan derlemenin tanımlayıcı bir adı varsa. Tanımlayıcı adlı bütünleştirilmiş kod benzersiz bir şekilde sürümü oluşturulmuş.
 
 - **Sürüm**
 

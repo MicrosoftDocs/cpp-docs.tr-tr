@@ -10,12 +10,12 @@ helpviewer_keywords:
 - pinning pointers
 - pin_ptr keyword [C++]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
-ms.openlocfilehash: 920135943c9dfb46b00ee6ceb2535fde128dffb0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9a9144229b75c09a892ddbf5bd592e67c7c2b6d9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172041"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230564"
 ---
 # <a name="pin_ptr-ccli"></a>pin_ptr (C++/CLI)
 
@@ -33,7 +33,7 @@ Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini
 
 *Sabitleme işaretçisi* , nesne işaret eden atık toplanan yığında taşınmasını engelleyen iç bir işaretçidir. Diğer bir deyişle, Sabitleme işaretçisinin değeri ortak dil çalışma zamanı tarafından değiştirilmez. Yönetilmeyen işlev çağrısının çözümlenmesi sırasında adresin beklenmedik şekilde değişmemesi için, yönetilen bir sınıfın adresini yönetilmeyen bir işleve geçirdiğinizde bu gereklidir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [cli::]pin_ptr<cv_qualifiertype>var = &initializer;
@@ -42,12 +42,12 @@ Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini
 ### <a name="parameters"></a>Parametreler
 
 *cv_qualifier*<br/>
-**const** veya **volatile** niteleyicileri. Varsayılan olarak sabitleme işaretçisi **geçici**olur. Yok ancak Sabitleme işaretçisinin **geçici**bir şekilde bildirildiği bir hata değildir.
+**`const`** veya **`volatile`** niteleyicileri. Varsayılan olarak sabitleme işaretçisi olur **`volatile`** . Yok ancak sabitleme işaretçisi bildirmek için bir hata değildir **`volatile`** .
 
-*type*<br/>
+*türüyle*<br/>
 *Başlatıcı*türü.
 
-*var*<br/>
+*l*<br/>
 **Pin_ptr** değişkeninin adı.
 
 *izer*<br/>
@@ -59,7 +59,7 @@ Bir başvuru türünün üyesi, yönetilen bir dizinin öğesi ya da yerel bir i
 
 Yönetilen bir sınıfın bir nesnesi veya alt nesnesi sabitlenebilir ve bu durumda ortak dil çalışma zamanı atık toplama sırasında taşınamaz. Bunun asıl kullanımı, yönetilmeyen bir işlev çağrısının gerçek parametresi olarak yönetilen verilere bir işaretçi geçirmektir. Bir koleksiyon çevrimi sırasında, çalışma zamanı sabitleme işaretçisi için oluşturulan meta verileri inceler ve işaret ettiği öğeyi taşımaz.
 
-Bir nesnenin sabitlenmesi Ayrıca değer alanlarını da sabitler; diğer bir deyişle, ilkel veya değer türünün alanları. Ancak, izleme tutamacı (`%`) tarafından tanımlanan alanlar sabitlenmez.
+Bir nesnenin sabitlenmesi Ayrıca değer alanlarını da sabitler; diğer bir deyişle, ilkel veya değer türünün alanları. Ancak, izleme tutamacı () tarafından belirtilen alanlar `%` sabitlenmez.
 
 Yönetilen bir nesnede tanımlanan bir alt nesnenin sabitlenmesi, tüm nesnenin sabitlenmesini etkiler.
 
@@ -85,15 +85,15 @@ Sabitleme işaretçileri şu şekilde kullanılamaz:
 
 - bir tür dönüştürmenin hedef türü.
 
-**pin_ptr** , `cli` ad alanıdır. Daha fazla bilgi için bkz. [Platform, Default ve CLI ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md).
+**pin_ptr** `cli` ad alanıdır. Daha fazla bilgi için bkz. [Platform, Default ve CLI ad alanları](platform-default-and-cli-namespaces-cpp-component-extensions.md).
 
-İç işaretçiler hakkında daha fazla bilgi için bkz. [interior_ptrC++(/CLI)](interior-ptr-cpp-cli.md).
+İç işaretçiler hakkında daha fazla bilgi için bkz. [interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md).
 
 İşaretçileri sabitleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: işaretçi ve dizileri sabitleme](how-to-pin-pointers-and-arrays.md) ve [nasıl yapılır: sabitleme Işaretçileri ve değer türleri bildirme](how-to-declare-pinning-pointers-and-value-types.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
@@ -147,7 +147,7 @@ int main() {
 45
 ```
 
-Aşağıdaki örnek bir iç işaretçinin sabitleme işaretçisine dönüştürüleceğini ve adres işlecinin (`&`) dönüş türünün, işlenen yönetilen yığında olduğunda iç işaretçi olduğunu gösterir.
+Aşağıdaki örnek, bir iç işaretçinin sabitleme işaretçisine dönüştürüleceğini ve adres işlecinin () dönüş türünün, `&` işlenen yönetilen yığında olduğunda iç işaretçi olduğunu gösterir.
 
 ```cpp
 // pin_ptr_2.cpp

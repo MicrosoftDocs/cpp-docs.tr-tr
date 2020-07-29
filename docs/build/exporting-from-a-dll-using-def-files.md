@@ -6,16 +6,16 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 6f7d58bcb42edd89527fff41b08a15321722a6cf
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 8fdbb060502f339eb748306eef582d2f296b1f60
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078518"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229837"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma
 
-Modül tanımı veya DEF dosyası (*. def), bir DLL 'nin çeşitli özniteliklerini tanımlayan bir veya daha fazla modül deyimi içeren bir metin dosyasıdır. DLL 'nin işlevlerini dışarı aktarmak için **__declspec (dllexport)** anahtar sözcüğünü KULLANMıYORSANıZ, dll bir def dosyası gerektirir.
+Modül tanımı veya DEF dosyası (*. def), bir DLL 'nin çeşitli özniteliklerini tanımlayan bir veya daha fazla modül deyimi içeren bir metin dosyasıdır. **`__declspec(dllexport)`** DLL 'nin işlevlerini dışarı aktarmak için anahtar sözcüğünü kullanmıyorsanız, dll BIR def dosyası gerektirir.
 
 En az bir DEF dosyası aşağıdaki modül tanımı deyimlerini içermelidir:
 
@@ -34,7 +34,7 @@ EXPORTS
    Min   @4
 ```
 
-MFC DLL oluşturmak için [MFC DLL Sihirbazı 'nı](../mfc/reference/mfc-dll-wizard.md) kullanırsanız, sihirbaz sizin için bir Iskelet def dosyası oluşturur ve projenize otomatik olarak ekler. Bu dosyaya aktarılacak işlevlerin adlarını ekleyin. MFC olmayan dll 'Ler için, DEF dosyasını kendiniz oluşturun ve projenize ekleyin. Ardından **Proje** > **özellikleri** > **Linker**bağlayıcı > **Input**giriş > **Modülü tanım dosyası** ' na gidin ve def dosyasının adını girin. Her yapılandırma ve platform için bu adımı tekrarlayın veya **yapılandırma = tüm yapılandırmalar**ve **Platform = tüm platformlar**' ı seçerek tümünü bir kez yapın.
+MFC DLL oluşturmak için [MFC DLL Sihirbazı 'nı](../mfc/reference/mfc-dll-wizard.md) kullanırsanız, sihirbaz sizin için bir Iskelet def dosyası oluşturur ve projenize otomatik olarak ekler. Bu dosyaya aktarılacak işlevlerin adlarını ekleyin. MFC olmayan dll 'Ler için, DEF dosyasını kendiniz oluşturun ve projenize ekleyin. Ardından **Proje**  >  **özellikleri**  >  **bağlayıcı**  >  **giriş**  >  **Modülü tanım dosyası** ' na gidin ve def dosyasının adını girin. Her yapılandırma ve platform için bu adımı tekrarlayın veya **yapılandırma = tüm yapılandırmalar**ve **Platform = tüm platformlar**' ı seçerek tümünü bir kez yapın.
 
 Bir C++ dosyasındaki işlevleri dışarı aktarıyorsanız, birlikte bulunan adları DEF dosyasına yerleştirmeniz veya dışarı aktarılan işlevlerinizi extern "C" kullanarak standart C bağlantısıyla tanımlamanız gerekir. Düzenlenmiş adları DEF dosyasına yerleştirmeniz gerekiyorsa, bunları [dumpbin](../build/reference/dumpbin-reference.md) aracını kullanarak veya bağlayıcı [/map](../build/reference/map-generate-mapfile.md) seçeneğini kullanarak elde edebilirsiniz. Derleyici tarafından üretilen düzenlenmiş adların derleyiciye özgü olduğunu unutmayın. Microsoft C++ derleyicisi (MSVC) tarafından üretilen düzenlenmiş adları bir DEF dosyasına yerleştirirseniz, DLL 'nize bağlanan uygulamaların aynı MSVC sürümü kullanılarak oluşturulması gerekir; böylece, çağıran uygulamadaki düzenlenmiş adların DLL 'nin DEF dosyasındaki adı verdiğiniz adlarla eşleşmesi gerekir.
 
@@ -51,11 +51,11 @@ Bir C++ dosyasındaki işlevleri dışarı aktarıyorsanız, birlikte bulunan ad
 #define AFX_DATA
 ```
 
-Bu satırlar, dahili olarak kullanılan veya sınıflarınıza eklenen MFC değişkenlerinin MFC uzantı DLL 'nizden içeri aktarılmasını (veya içe aktarılmasını) sağlar. Örneğin, kullanarak `DECLARE_DYNAMIC`bir sınıfı türettiğinde,, sınıfınıza `CRuntimeClass` üye değişkeni eklemek için makro genişletilir. Bu dört satırı bırakmak, DLL 'nizin yanlış bir şekilde derlenmesi veya bağlantı oluşturmasına ya da istemci uygulaması DLL 'ye bağlasa hata oluşmasına neden olabilir.
+Bu satırlar, dahili olarak kullanılan veya sınıflarınıza eklenen MFC değişkenlerinin MFC uzantı DLL 'nizden içeri aktarılmasını (veya içe aktarılmasını) sağlar. Örneğin, kullanarak bir sınıfı türettiğinde `DECLARE_DYNAMIC` ,, `CRuntimeClass` sınıfınıza üye değişkeni eklemek için makro genişletilir. Bu dört satırı bırakmak, DLL 'nizin yanlış bir şekilde derlenmesi veya bağlantı oluşturmasına ya da istemci uygulaması DLL 'ye bağlasa hata oluşmasına neden olabilir.
 
 DLL derlerken bağlayıcı, bir dışa aktarma (. exp) dosyası ve bir içeri aktarma kitaplığı (. lib) dosyası oluşturmak için DEF dosyasını kullanır. Bağlayıcı daha sonra DLL dosyasını oluşturmak için dışarı aktarma dosyasını kullanır. DLL 'ye örtük olarak bağlanan ve derleme sırasında içeri aktarma kitaplığına bağlantı veren yürütülebilir dosyalar.
 
-MFC 'nin, MFCx0. dll ' den işlevleri ve sınıfları dışarı aktarmak için DEF dosyaları kullandığını unutmayın.
+MFC 'nin işlevleri ve sınıfları MFCx0.dll dışarı aktarmak için DEF dosyaları kullandığını unutmayın.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -77,7 +77,7 @@ MFC 'nin, MFCx0. dll ' den işlevleri ve sınıfları dışarı aktarmak için D
 
 - [. def dosyaları](reference/module-definition-dot-def-files.md)
 
-- [Modül tanımı deyimleri için kurallar](reference/rules-for-module-definition-statements.md)
+- [Modül tanımlama deyimleri kuralları](reference/rules-for-module-definition-statements.md)
 
 - [Düzenlenmiş adlar](reference/decorated-names.md)
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-ms.openlocfilehash: 5014a32386a0a140f0fdc00b23a0ac24a54afcee
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 805fffcc6cafe92df91af6b01bb53240a0d70f51
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626140"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230499"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 
@@ -62,7 +62,7 @@ Bu yordam, istediğiniz diğer özel özellikleri eklemek için de kullanılabil
 
 1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
 
-1. **Özellik türü** kutusunda, **kısa**' ı seçin.
+1. **Özellik türü** kutusunda, öğesini seçin **`short`** .
 
 1. Get ve set işlevleriniz için benzersiz adlar yazın veya varsayılan adları kabul edin.
 
@@ -95,6 +95,6 @@ Son olarak, `GetCircleOffset` ve `SetCircleOffset` işlevlerinin uygulamaları d
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Özellikler](mfc-activex-controls-properties.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Özellikler](mfc-activex-controls-properties.md)<br/>
+[MFC ActiveX denetimleri: Yöntemler](mfc-activex-controls-methods.md)<br/>
 [Coelcontrol sınıfı](reference/colecontrol-class.md)

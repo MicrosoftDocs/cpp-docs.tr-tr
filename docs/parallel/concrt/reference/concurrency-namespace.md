@@ -20,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-ms.openlocfilehash: 66c2e6e323ed9f12f30e9392ec7afe431fc2138b
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: f710ead679484c41b006566a711a03ba153201ec
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446746"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230382"
 ---
 # <a name="concurrency-namespace"></a>concurrency Ad Alanı
 
 `Concurrency`Ad alanı, C++ için eşzamanlı bir programlama çerçevesi olan eşzamanlılık çalışma zamanı erişim sağlayan sınıfları ve işlevleri sağlar. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../../../parallel/concrt/concurrency-runtime.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 namespace concurrency;
@@ -83,7 +83,7 @@ namespace concurrency;
 |[invalid_link_target sınıfı](invalid-link-target-class.md)|Bu sınıf, `link_target` bir mesajlaşma bloğunun yöntemi çağrıldığında ve mesajlaşma bloğu hedefle bağlantı kuramadı durumunda oluşturulan bir özel durumu açıklar. Bu, mesajlaşma bloğunun izin verdiği bağlantı sayısını aşmanın veya belirli bir hedefin aynı kaynağa iki kez bağlantı kurmaya çalıştığı sonuç olabilir.|
 |[invalid_multiple_scheduling sınıfı](invalid-multiple-scheduling-class.md)|Bu sınıf `task_handle` `run` `task_group` `structured_task_group` , veya yöntemlerine aradaki bir çağrı olmadan bir veya nesnesinin yöntemi kullanılarak bir nesne birden çok kez zamanlandığında oluşturulan bir `wait` özel durumu açıklar `run_and_wait` .|
 |[invalid_operation sınıfı](invalid-operation-class.md)|Bu sınıf, Eşzamanlılık Çalışma Zamanı tarafından oluşturulan başka bir özel durum türü tarafından daha doğru bir şekilde açıklanmayan geçersiz bir işlem gerçekleştirildiğinde oluşturulan bir özel durumu açıklar.|
-|[invalid_oversubscribe_operation sınıfı](invalid-oversubscribe-operation-class.md)|Bu sınıf, `Context::Oversubscribe` yöntemi parametresi `_BeginOversubscription` `false` `Context::Oversubscribe` olarak ayarlanmış bir yönteme önceki bir çağrı olmadan olarak `_BeginOversubscription` çağrıldığında oluşturulan `true` bir özel durumu açıklar.|
+|[invalid_oversubscribe_operation sınıfı](invalid-oversubscribe-operation-class.md)|Bu sınıf, `Context::Oversubscribe` yöntemi parametresi `_BeginOversubscription` **`false`** `Context::Oversubscribe` olarak ayarlanmış bir yönteme önceki bir çağrı olmadan olarak `_BeginOversubscription` çağrıldığında oluşturulan **`true`** bir özel durumu açıklar.|
 |[invalid_scheduler_policy_key sınıfı](invalid-scheduler-policy-key-class.md)|Bu sınıf, bir nesne oluşturucusuna geçersiz veya bilinmeyen bir anahtar geçirildiğinde oluşturulan bir özel durumu açıklar `SchedulerPolicy` veya `SetPolicyValue` bir nesnenin yöntemi, yöntemi gibi `SchedulerPolicy` diğer yollarla değiştirilmesi gereken bir anahtarı geçirmez `SetConcurrencyLimits` .|
 |[invalid_scheduler_policy_thread_specification sınıfı](invalid-scheduler-policy-thread-specification-class.md)|Bu sınıf, bir nesnenin eşzamanlılık sınırlarını ayarlamak için bir girişimde bulunulduğunda, `SchedulerPolicy` anahtarın değeri anahtarın değerinden küçükse oluşan bir özel durum tanımlar `MinConcurrency` `MaxConcurrency` .|
 |[invalid_scheduler_policy_value sınıfı](invalid-scheduler-policy-value-class.md)|Bu sınıf, bir nesnenin ilke anahtarı `SchedulerPolicy` Bu anahtar için geçersiz bir değere ayarlandığında oluşturulan bir özel durumu açıklar.|
@@ -179,7 +179,7 @@ namespace concurrency;
 |[asend Işlevi](concurrency-namespace-functions.md#asend)|Fazla Yüklendi. Verileri hedef bloğuna yaymaya yönelik bir görevi zamanlayan zaman uyumsuz gönderme işlemi.|
 |[cancel_current_task Işlevi](concurrency-namespace-functions.md#cancel_current_task)|Yürütülmekte olan görevi iptal eder. Bu işlev, görevin yürütülmesini iptal etmek için bir görevin gövdesinden çağrılabilir ve durumu girmeye neden olur `canceled` .<br /><br /> Bir ' ın gövdesinde değilseniz bu işlevi çağırmak için desteklenen bir senaryo değildir `task` . Bunun yapılması, uygulamanızda kilitlenme veya yanıt verme gibi tanımsız davranışlara neden olur.|
 |[create_async Işlevi](concurrency-namespace-functions.md#create_async)|Kullanıcı tarafından sağlanan lambda veya işlev nesnesini temel alan Windows Çalışma Zamanı zaman uyumsuz yapı oluşturur. Öğesinin dönüş türü `create_async` `IAsyncAction^` , `IAsyncActionWithProgress<TProgress>^` `IAsyncOperation<TResult>^` `IAsyncOperationWithProgress<TResult, TProgress>^` yöntemine geçirilen lambda imzasına göre,,, veya ' den biridir.|
-|[create_task Işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Bir PPL [görev](task-class.md) nesnesi oluşturur. `create_task`, bir görev oluşturucusunu kullandığınız her yerde kullanılabilir. Görev oluştururken anahtar sözcüğünün kullanılmasına izin verdiğinden, genellikle kolaylık sağlaması için sağlanır `auto` .|
+|[create_task Işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Bir PPL [görev](task-class.md) nesnesi oluşturur. `create_task`, bir görev oluşturucusunu kullandığınız her yerde kullanılabilir. Görev oluştururken anahtar sözcüğünün kullanılmasına izin verdiğinden, genellikle kolaylık sağlaması için sağlanır **`auto`** .|
 |[CreateResourceManager Işlevi](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma Zamanı Kaynak Yöneticisi tek örneğini temsil eden bir arabirim döndürür. Kaynak Yöneticisi, kaynakların birbirleriyle birlikte çalışmak isteyen zamanlayıcılar 'ye atanmasından sorumludur.|
 |[DisableTracing Işlevi](concurrency-namespace-functions.md#disabletracing)|Eşzamanlılık Çalışma Zamanı izlemeyi devre dışı bırakır. ETW izlemenin varsayılan olarak kaydı silindiğinden bu işlev kullanım dışıdır.|
 |[EnableTracing Işlevi](concurrency-namespace-functions.md#enabletracing)|Eşzamanlılık Çalışma Zamanı izlemeye izin vermez. ETW izleme artık varsayılan olarak açık olduğundan bu işlev kullanım dışıdır.|
@@ -191,7 +191,7 @@ namespace concurrency;
 |[GetProcessorNodeCount Işlevi](concurrency-namespace-functions.md#getprocessornodecount)|Temel sistemdeki NUMA düğümlerinin veya işlemci paketlerinin sayısını döndürür.|
 |[GetSchedulerId Işlevi](concurrency-namespace-functions.md#getschedulerid)|Arabirimi uygulayan bir Scheduler 'a atanabilen benzersiz bir tanımlayıcı döndürür `IScheduler` .|
 |[interruption_point Işlevi](concurrency-namespace-functions.md#interruption_point)|İptal için bir kesinti noktası oluşturur. Bu işlevin çağrıldığı bağlamda bir iptal işlemi devam ediyorsa, bu, şu anda yürütülen paralel çalışmanın yürütülmesini iptal eden bir iç özel durum oluşturur. İptal işlemi devam ediyorsa, işlev hiçbir şey yapmaz.|
-|[is_current_task_group_canceling Işlevi](concurrency-namespace-functions.md#is_current_task_group_canceling)|Geçerli bağlamda şu anda yürütülmekte olan görev grubunun etkin bir iptal etme (veya kısa bir süre) üzerinde olup olmadığına ilişkin bir gösterge döndürür. Geçerli bağlamda şu anda bir görev grubu yürütülerek `false` döndürülmeyeceğini unutmayın.|
+|[is_current_task_group_canceling Işlevi](concurrency-namespace-functions.md#is_current_task_group_canceling)|Geçerli bağlamda şu anda yürütülmekte olan görev grubunun etkin bir iptal etme (veya kısa bir süre) üzerinde olup olmadığına ilişkin bir gösterge döndürür. Geçerli bağlamda şu anda bir görev grubu yürütülerek **`false`** döndürülmeyeceğini unutmayın.|
 |[make_choice Işlevi](concurrency-namespace-functions.md#make_choice)|Fazla Yüklendi. `choice`İsteğe bağlı `Scheduler` veya `ScheduleGroup` iki veya daha fazla giriş kaynağından bir mesajlaşma bloğu oluşturur.|
 |[make_greedy_join Işlevi](concurrency-namespace-functions.md#make_greedy_join)|Fazla Yüklendi. `greedy multitype_join`İsteğe bağlı `Scheduler` veya `ScheduleGroup` iki veya daha fazla giriş kaynağından bir mesajlaşma bloğu oluşturur.|
 |[make_join Işlevi](concurrency-namespace-functions.md#make_join)|Fazla Yüklendi. `non_greedy multitype_join`İsteğe bağlı `Scheduler` veya `ScheduleGroup` iki veya daha fazla giriş kaynağından bir mesajlaşma bloğu oluşturur.|

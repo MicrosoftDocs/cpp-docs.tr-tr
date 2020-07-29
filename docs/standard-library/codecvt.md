@@ -1,5 +1,5 @@
 ---
-title: '&lt;codecvt &gt;'
+title: '&lt;codecvt&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - codecvt
@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt header
 ms.assetid: d44ee229-00d5-4761-9b48-0c702122789d
-ms.openlocfilehash: 972672e80ce4f82402296317c75e35dcd10c9e93
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: e571c1ca8beef684a40bbf643e83aba3f205fc8e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688278"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230123"
 ---
-# <a name="ltcodecvtgt"></a>&lt;codecvt &gt;
+# <a name="ltcodecvtgt"></a>&lt;codecvt&gt;
 
-[Codecvt](../standard-library/codecvt-class.md)sınıf şablonunu temel alan nesneleri tanımlayan çeşitli sınıf şablonları tanımlar. Bu nesneler, `Elem` türünde bir değer dizisi ve **char**türünde bir değer dizisi arasındaki dönüştürmeleri denetleyen [yerel ayar modelleri](../standard-library/locale-class.md#facet_class) olarak işlev görebilir.
+[Codecvt](../standard-library/codecvt-class.md)sınıf şablonunu temel alan nesneleri tanımlayan çeşitli sınıf şablonları tanımlar. Bu nesneler, türü bir değer dizisi ve türünde bir değer dizisi arasındaki dönüştürmeleri denetleyen [yerel ayar modelleri](../standard-library/locale-class.md#facet_class) olarak işlev görebilir `Elem` **`char`** .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,9 +32,9 @@ Bu üst bilgide belirtilen yerel ayar modelleri çeşitli karakter kodlamaları 
 
 - UCS-2, program içinde 16 bit tam sayı olarak kodlanmış Unicode 'dur.
 
-- UTF-16, program içinde bir veya 2 16 bitlik tamsayılar olarak kodlanmış Unicode 'dur. (Bu, standart C veya standart C++için geçerli bir geniş karakter kodlamasının tüm gereksinimlerini karşılamaz. Yine de bu şekilde yaygın olarak kullanılır.)
+- UTF-16, program içinde bir veya 2 16 bitlik tamsayılar olarak kodlanmış Unicode 'dur. (Bu, standart C veya standart C++ için geçerli bir geniş karakter kodlamasının tüm gereksinimlerini karşılamaz. Yine de bu şekilde yaygın olarak kullanılır.)
 
-Bayt akışları için (bir dosyada depolanır, bir bayt dizisi olarak iletilir veya bir **char**dizisinde program içinde depolanır):
+Bayt akışları için (bir dosyada depolanır, bir bayt dizisi olarak iletilir veya bir dizisinde program içinde depolanır **`char`** ):
 
 - UTF-8, bir bayt akışı içinde, belirleyici bayt düzeninde bir veya daha fazla sekiz bitlik bayt olarak kodlanmış Unicode 'dur.
 
@@ -42,7 +42,7 @@ Bayt akışları için (bir dosyada depolanır, bir bayt dizisi olarak iletilir 
 
 - UTF-16, bir bayt akışı içinde Unicode, her 16 bit tamsayıyla 2 8 bit bayt olarak sunulan UTF-16 olarak kodlanır ve öncelikle daha önemli bir bayt olur.
 
-### <a name="enumerations"></a>Numaralandırmalar
+### <a name="enumerations"></a>Listelemeler
 
 |||
 |-|-|
@@ -50,7 +50,7 @@ Bayt akışları için (bir dosyada depolanır, bir bayt dizisi olarak iletilir 
 
 ### <a name="classes"></a>Sınıflar
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-|-|
 |[codecvt_utf8](codecvt-utf8-class.md)|UCS-2 veya UCS-4 olarak kodlanan geniş karakterler arasında dönüştürme yapan bir yerel ayar modeli ve UTF-8 olarak kodlanmış bir bayt akışı temsil eder.|
 |[codecvt_utf8_utf16](codecvt-utf8-utf16-class.md)|UTF-16 olarak kodlanmış geniş karakterler ve UTF-8 olarak kodlanmış bir bayt akışı arasında dönüştüren bir yerel ayar modeli temsil eder.|
@@ -58,7 +58,7 @@ Bayt akışları için (bir dosyada depolanır, bir bayt dizisi olarak iletilir 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<codecvt >
+**Üst bilgi:**\<codecvt>
 
 **Ad alanı:** std
 

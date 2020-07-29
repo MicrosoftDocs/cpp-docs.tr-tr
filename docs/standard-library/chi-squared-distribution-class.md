@@ -23,18 +23,18 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-ms.openlocfilehash: 6d85e9b10831bc964706ef94d715b7a5d4ab4c50
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 634a78274a9c7a4ed75466b083f4ee4880401630
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366354"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230175"
 ---
 # <a name="chi_squared_distribution-class"></a>chi_squared_distribution Sınıfı
 
-Ki-kare li bir dağılım oluşturur.
+Çi-kare dağılımı üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class RealType = double>
@@ -67,33 +67,33 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *RealType*\
-Kayan nokta sonuç türü, varsayılan **olarak iki katına çıkar.** Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
-*ÜRNG*\
-Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, kullanıcı tarafından belirtilen kayan nokta türü değerlerini üreten bir dağılım veya hiçbiri sağlanmazsa **çift** yazın, Ki-Karedağılımına göre dağıtılan bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, kikare dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|
 |`chi_squared_distribution::operator()`||[param_type](#param_type)|
 
-Özellik işlevi `n()` depolanan dağıtım parametresi `n`için değeri döndürür.
+Property işlevi, `n()` depolanan dağıtım parametresi için değeri döndürür `n` .
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-Ki-kare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makale [Chi-Squared Dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400528)bakın.
+Kikare dağıtımı hakkında ayrıntılı bilgi için, Wolfram MathWorld article [Chi-kare dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=400528)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -172,7 +172,7 @@ Distribution for 10 samples:
     10: 1.5429743723
 ```
 
-İkinci tur:
+İkinci çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -195,7 +195,7 @@ Distribution for 10 samples:
     10: 1.3552086624
 ```
 
-Üçüncü tur:
+Üçüncü çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -220,13 +220,13 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="chi_squared_distributionchi_squared_distribution"></a><a name="chi_squared_distribution"></a>chi_squared_distribution:chi_squared_distribution
+## <a name="chi_squared_distributionchi_squared_distribution"></a><a name="chi_squared_distribution"></a>chi_squared_distribution:: chi_squared_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit chi_squared_distribution(result_type n = 1.0);
@@ -235,23 +235,23 @@ explicit chi_squared_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*n*\
-Dağıtım `n` parametresi.
+*No*\
+`n`Dağıtım parametresi.
 
-*parm*\
-Dağılımı oluşturmak için kullanılan parametre yapısı.
+*parametresi*\
+Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < n`
+**Önkoşul:**`0.0 < n`
 
-İlk oluşturucu, depolanan `n` değeri *n*değerini tutan bir nesne yi inşa eder.
+İlk Oluşturucu, saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="chi_squared_distributionparam_type"></a><a name="param_type"></a>chi_squared_distribution::param_type
+## <a name="chi_squared_distributionparam_type"></a><a name="param_type"></a>chi_squared_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -266,18 +266,18 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*n*\
-Dağıtım `n` parametresi.
+*No*\
+`n`Dağıtım parametresi.
 
-*Doğru*\
-Bununla `param_type` karşılaştırılacak nesne.
+*Right*\
+`param_type`Karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < n`
+**Önkoşul:**`0.0 < n`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

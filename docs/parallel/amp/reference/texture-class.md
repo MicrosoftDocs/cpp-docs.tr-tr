@@ -17,18 +17,18 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch
 - AMP_GRAPHICS/concurrency::graphics::texture::row_pitch
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
-ms.openlocfilehash: f7a38c84c5def629c7a42b2c05bf1ed04441593b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: b8a37293166ec21aeb9410f05fb70c9753ec4f22
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127783"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230421"
 ---
 # <a name="texture-class"></a>texture Sınıfı
 
-Doku, kapsam etki alanındaki bir `accelerator_view` veri toplamasının toplamıdır. Bir uzantı etki alanındaki her öğe için bir değişken koleksiyonudur. Her değişken, ilkel tür (`unsigned int`C++ , `int`, `float`, `double`), skaler bir tür (`norm`veya `unorm`) veya kısa bir vektör türü için karşılık gelen bir değer barındırır.
+Doku, kapsam etki alanındaki bir veri toplamasının toplamıdır `accelerator_view` . Bir uzantı etki alanındaki her öğe için bir değişken koleksiyonudur. Her değişken, C++ temel türü ( **`unsigned int`** , **`int`** , **`float`** , **`double`** ), skaler bir tür ( `norm` , veya `unorm` ) veya kısa bir vektör türü ile eşleşen bir değer barındırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename value_type,  int _Rank>
@@ -57,19 +57,19 @@ Dokunun derecesi.
 |Ad|Açıklama|
 |----------|-----------------|
 |[doku Oluşturucusu](#ctor)|`texture` sınıfının yeni bir örneğini başlatır.|
-|[~ doku yıkıcısı](#ctor)|`texture` nesnesini yok eder.|
+|[~ doku yıkıcısı](#ctor)|Nesneyi yok eder `texture` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[copy_to](#copy_to)|Derin bir kopya yaparak `texture` nesnesini hedefe kopyalar.|
-|[verileri](#data)|Bu dokunun ham verilerine bir CPU işaretçisi döndürür.|
-|[get](#get)|Belirtilen dizindeki öğenin değerini döndürür.|
+|[copy_to](#copy_to)|`texture`Derin bir kopya gerçekleştirerek nesneyi hedefe kopyalar.|
+|[data](#data)|Bu dokunun ham verilerine bir CPU işaretçisi döndürür.|
+|[Al](#get)|Belirtilen dizindeki öğenin değerini döndürür.|
 |[get_associated_accelerator_view](#get_associated_accelerator_view)|Bu dokunun kopyalanacağı tercih edilen hedef olan [accelerator_view](accelerator-view-class.md) döndürür.|
 |[get_depth_pitch](#get_depth_pitch)|CPU 'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını döndürür.|
 |[get_row_pitch](#get_row_pitch)|CPU 'da 2B veya 3B hazırlama dokusundaki her satır arasında bulunan bayt sayısını döndürür.|
-|[set](#set)|Belirtilen dizindeki öğenin değerini ayarlar.|
+|[kurmak](#set)|Belirtilen dizindeki öğenin değerini ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -83,7 +83,7 @@ Dokunun derecesi.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[sıralama sabiti](#rank)|`texture` nesnesinin derecesini alır.|
+|[sıralama sabiti](#rank)|Nesnenin derecesini alır `texture` .|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
@@ -105,15 +105,15 @@ Dokunun derecesi.
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="dtor"></a>~ doku
+## <a name="texture"></a><a name="dtor"></a>~ doku
 
-`texture` nesnesini yok eder.
+Nesneyi yok eder `texture` .
 
 ```cpp
 ~texture() restrict(cpu);
 ```
 
-## <a name="associated_accelerator_view"></a>associated_accelerator_view
+## <a name="associated_accelerator_view"></a><a name="associated_accelerator_view"></a>associated_accelerator_view
 
 Bu dokunun kopyalanacağı tercih edilen hedef olan [accelerator_view](accelerator-view-class.md) alır.
 
@@ -121,9 +121,9 @@ Bu dokunun kopyalanacağı tercih edilen hedef olan [accelerator_view](accelerat
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
 ```
 
-## <a name="copy_to"></a>copy_to
+## <a name="copy_to"></a><a name="copy_to"></a>copy_to
 
-Derin bir kopya yaparak `texture` nesnesini hedefe kopyalar.
+`texture`Derin bir kopya gerçekleştirerek nesneyi hedefe kopyalar.
 
 ```cpp
 void copy_to(texture& _Dest) const;
@@ -141,7 +141,7 @@ Dokunun derecesi.
 *value_type*<br/>
 Dokudaki öğelerin türü.
 
-## <a name="data"></a>verileri
+## <a name="data"></a><a name="data"></a>verileri
 
 Bu dokunun ham verilerine bir CPU işaretçisi döndürür.
 
@@ -155,7 +155,7 @@ const void* data() const restrict(cpu);
 
 Dokunun ham verilerine yönelik bir işaretçi.
 
-## <a name="depth_pitch"></a>depth_pitch
+## <a name="depth_pitch"></a><a name="depth_pitch"></a>depth_pitch
 
 CPU 'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını alır.
 
@@ -163,7 +163,7 @@ CPU 'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;
 ```
 
-## <a name="get"></a>Al
+## <a name="get"></a><a name="get"></a>Al
 
 Belirtilen dizindeki öğenin değerini döndürür.
 
@@ -180,7 +180,7 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 
 Belirtilen dizindeki öğenin değeri.
 
-## <a name="get_associated_accelerator_view"></a>get_associated_accelerator_view
+## <a name="get_associated_accelerator_view"></a><a name="get_associated_accelerator_view"></a>get_associated_accelerator_view
 
 Bu dokunun kopyalanacağı tercih edilen hedef olan accelerator_view döndürür.
 
@@ -192,7 +192,7 @@ Concurrency::accelerator_view get_associated_accelerator_view() const restrict(c
 
 Bu dokunun kopyalanacağı tercih edilen hedef [accelerator_view](accelerator-view-class.md) .
 
-## <a name="get_depth_pitch"></a>get_depth_pitch
+## <a name="get_depth_pitch"></a><a name="get_depth_pitch"></a>get_depth_pitch
 
 CPU 'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısını döndürür.
 
@@ -204,7 +204,7 @@ unsigned int get_depth_pitch() const restrict(cpu);
 
 CPU 'da bir 3B hazırlama dokusundaki her derinlik dilimi arasında bulunan bayt sayısı.
 
-## <a name="get_row_pitch"></a>get_row_pitch
+## <a name="get_row_pitch"></a><a name="get_row_pitch"></a>get_row_pitch
 
 2 boyutlu bir hazırlama dokusundaki her satır arasında veya 3 boyutlu bir hazırlama dokusundaki bir derinlik diliminin her satırı arasında bulunan bayt sayısını döndürür.
 
@@ -216,7 +216,7 @@ unsigned int get_row_pitch() const restrict(cpu);
 
 2 boyutlu bir hazırlama dokusundaki her satır arasında veya 3 boyutlu hazırlama dokusundaki bir derinlik diliminin her satırı arasında bulunan bayt sayısı.
 
-## <a name="operator_call"></a>operator ()
+## <a name="operator"></a><a name="operator_call"></a>operator ()
 
 Parametreler tarafından belirtilen öğe değerini döndürür.
 
@@ -258,7 +258,7 @@ Dizinin derecesi.
 
 Parametreler tarafından belirtilen öğe değeri.
 
-## <a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a>operator []
 
 Belirtilen dizindeki öğeyi döndürür.
 
@@ -280,7 +280,7 @@ Dizin.
 
 Belirtilen dizinde olan öğe.
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a>işleç =
 
 Belirtilen [doku](texture-class.md) nesnesini buna kopyalar.
 
@@ -295,21 +295,21 @@ texture& operator= (
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-Kopyalamanın `texture` nesnesi.
+`texture`Kopyalanacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `texture` nesnesine bir başvuru.
+Bu nesneye bir başvuru `texture` .
 
-## <a name="rank"></a>sırası
+## <a name="rank"></a><a name="rank"></a>sırası
 
-`texture` nesnesinin derecesini alır.
+Nesnenin derecesini alır `texture` .
 
 ```cpp
 static const int rank = _Rank;
 ```
 
-## <a name="row_pitch"></a>row_pitch
+## <a name="row_pitch"></a><a name="row_pitch"></a>row_pitch
 
 CPU 'da 2B veya 3B hazırlama dokusundaki her satır arasında bulunan bayt sayısını alır.
 
@@ -317,7 +317,7 @@ CPU 'da 2B veya 3B hazırlama dokusundaki her satır arasında bulunan bayt say�
 __declspec(property(get= get_row_pitch)) unsigned int row_pitch;
 ```
 
-## <a name="set"></a>kurmak
+## <a name="set"></a><a name="set"></a>kurmak
 
 Belirtilen dizindeki öğenin değerini ayarlar.
 
@@ -335,10 +335,10 @@ void set(
 *_Rank*<br/>
 Dizinin derecesi.
 
-*value*<br/>
+*deeri*<br/>
 Öğesinin yeni değeri.
 
-## <a name="ctor"></a>uyla
+## <a name="texture"></a><a name="ctor"></a>uyla
 
 `texture` sınıfının yeni bir örneğini başlatır.
 

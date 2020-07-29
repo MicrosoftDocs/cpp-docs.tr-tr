@@ -2,16 +2,16 @@
 title: chrono değişmez değerleri
 ms.date: 11/04/2016
 ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
-ms.openlocfilehash: 28ba8138d41cf1bd72911959f07b0d3c9e5fdc0e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: d8416580df09a8a466678702cb20ba4ddf37eb28
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68244895"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230162"
 ---
 # <a name="chrono-literals"></a>chrono değişmez değerleri
 
-(C ++ 14) \<Chrono > Üstbilgi tanımlar 12 [kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md) saat, dakika, saniye, milisaniye cinsinden, mikrosaniye ve nanosaniye temsil eden bir değişmez değerleri kullanarak kolaylaştırmak için. Her kullanıcı tanımlı sabit bir integral ve kayan nokta bir aşırı yüklemesi vardır. Değişmez değerler std::chrono kapsamında olduğunda, kapsamın içine otomatik olarak getirildikten literals::chrono_literals satır içi ad alanında tanımlanır.
+(C++ 14) \<chrono>Üst bilgi, saat, dakika, saniye, milisaniye, mikrosaniye ve nanosaniye değerlerini temsil eden sabit değerleri kullanmayı kolaylaştırmak için 12 [Kullanıcı tanımlı sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar. Kullanıcı tanımlı her değişmez değer bir integral ve kayan nokta aşırı yüklemesi içerir. Sabit değerler, std:: hatası, kapsam içinde olduğunda otomatik olarak kapsama getirilen sabit değerler:: chrono_literals satır içi ad alanında tanımlanmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,11 +60,11 @@ inline namespace literals {
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Alan değişmez bir **uzun uzun** bağımsız değişken bir değer ya da karşılık gelen türünü döndürür. Dönüş bağımsız değişken alan bir kayan sabit değerleri noktası bir [süresi](../standard-library/duration-class.md).
+Bağımsız değişken alan sabit değerler, **`long long`** bir değeri veya ilgili türü döndürür. Kayan nokta bağımsız değişkeni alan sabit değerler bir [süre](../standard-library/duration-class.md)döndürür.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekler chrono değişmez değerleri kullanmak nasıl iş.
+Aşağıdaki örneklerde, EO değişmez değerlerinin nasıl kullanılacağı gösterilmiştir.
 
 ```cpp
 constexpr auto day = 24h;

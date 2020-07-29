@@ -8,20 +8,20 @@ helpviewer_keywords:
 - ll_lshift intrinsic
 - __ll_lshift intrinsic
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94
-ms.openlocfilehash: 158ecbf39320d70b51f1f498a0b689ba58fec363
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 988284b81c9f04ee5d7f09f8a2f173a689f9fb55
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221816"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230525"
 ---
 # <a name="__ll_lshift"></a>__ll_lshift
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Sağlanan 64 bitlik değeri belirtilen bit sayısı ile sola kaydırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 unsigned __int64 __ll_lshift(
@@ -38,9 +38,9 @@ unsigned __int64 __ll_lshift(
 *nBit*\
 'ndaki Kaydırılacak bit sayısı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Maske, bitler tarafından `nBit` sola kaydırır.
+Maske, bitler tarafından sola `nBit` kaydırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -48,13 +48,13 @@ Maske, bitler tarafından `nBit` sola kaydırır.
 |---------------|------------------|
 |`__ll_lshift`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Programınızı 64 bitlik mimari için derlerseniz ve `nBit` 63 ' den büyükse, kaydırma yapılacak bit sayısı mod 64 ' dir. `nBit` Programınızı 32 bitlik mimari için derlerseniz ve `nBit` 31 ' den büyükse, kaydırma yapılacak bit sayısı mod 32 ' dir. `nBit`
+Programınızı 64 bitlik mimari için derlerseniz ve `nBit` 63 ' den büyükse, kaydırma yapılacak bit sayısı `nBit` mod 64 ' dir. Programınızı 32 bitlik mimari için derlerseniz ve `nBit` 31 ' den büyükse, kaydırma yapılacak bit sayısı `nBit` mod 32 ' dir.
 
-Ad `ll` içinde, (`__int64`) üzerinde `long long` bir işlem olduğunu gösterir.
+`ll`Ad içinde, () üzerinde bir işlem olduğunu gösterir **`long long`** **`__int64`** .
 
 ## <a name="example"></a>Örnek
 
@@ -77,7 +77,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 10000
@@ -90,6 +90,6 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__ll_rshıft](../intrinsics/ll-rshift.md)\
-[__ull_rshıft](../intrinsics/ull-rshift.md)\
+[__ll_rshift](../intrinsics/ll-rshift.md)\
+[__ull_rshift](../intrinsics/ull-rshift.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

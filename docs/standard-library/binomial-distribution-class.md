@@ -26,18 +26,18 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: dc9bb1c3edf9187b1e5dc1e924298b9dbb02e2ba
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d0bba986889dfbd17fddcd0c6985c082f6f74c29
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376707"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230252"
 ---
 # <a name="binomial_distribution-class"></a>binomial_distribution Sınıfı
 
-Binom dağılımı oluşturur.
+Binom dağılımı üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class IntType = int>
@@ -72,33 +72,33 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *IntType*\
-**İnt**varsayılan olarak, tümsedo sonuç türü. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Tamsayı sonuç türü, varsayılan olarak olur **`int`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
-*ÜRNG*\
-Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, Binomial Distribution ayrık olasılık işlevine göre dağıtılan, kullanıcı tarafından belirtilen integral türüdeğerlerini üreten bir dağılım veya hiçbiri sağlanmamışsa **int** yazın bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı veya **`int`** hiçbir değer sağlanmazsa, binom dağılımı ayrık olasılık işlevine göre dağıtılan bir dağılımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
 |`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
 
-Özellik üyeleri `t()` `p()` ve sırasıyla şu anda depolanan dağıtım parametre değerleri *t* ve *p* döndürün.
+Özellik üyeleri `t()` ve `p()` Şu anda depolanmış olan dağıtım parametre değerlerini sırasıyla *t* ve *p* döndürür.
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-Binom dağılımı ayrık olasılık fonksiyonu hakkında ayrıntılı bilgi için Wolfram MathWorld makale [Binom Dağılımı'na](https://go.microsoft.com/fwlink/p/?linkid=398469)bakın.
+Binom dağılımı ayrık olasılık işlevi hakkında ayrıntılı bilgi için Wolfram MathWorld article [binom dağıtımına](https://go.microsoft.com/fwlink/p/?linkid=398469)bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -179,7 +179,7 @@ Histogram for 100 samples:
     12 :
 ```
 
-İkinci tur:
+İkinci çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -203,7 +203,7 @@ Histogram for 100 samples:
     16 ::
 ```
 
-Üçüncü tur:
+Üçüncü çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -227,13 +227,13 @@ Histogram for 100 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="binomial_distributionbinomial_distribution"></a><a name="binomial_distribution"></a>binomial_distribution:binomial_distribution
+## <a name="binomial_distributionbinomial_distribution"></a><a name="binomial_distribution"></a>binomial_distribution:: binomial_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit binomial_distribution(result_type t = 1, double p = 0.5);
@@ -242,24 +242,24 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*T*\
-Dağıtım `t` parametresi.
+*şı*\
+`t`Dağıtım parametresi.
 
-*P*\
-Dağıtım `p` parametresi.
+*Lama*\
+`p`Dağıtım parametresi.
 
-*parm*\
-Dağılımı `param_type` oluşturmak için kullanılan yapı.
+*parametresi*\
+`param_type`Dağıtımı oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:** `0 ≤ t` ve`0.0 ≤ p ≤ 1.0`
+**Önkoşul:** `0 ≤ t` '`0.0 ≤ p ≤ 1.0`
 
-İlk oluşturucu, depolanan *p* değeri *p* değerini tutan ve depolanan *t* değeri t değerini tutan *bir*nesne inşa eder.
+İlk Oluşturucu, saklı *p* değeri *p* değerini tutan ve depolanan *t* değeri *t*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="binomial_distributionparam_type"></a><a name="param_type"></a>binomial_distribution::param_type
+## <a name="binomial_distributionparam_type"></a><a name="param_type"></a>binomial_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 
@@ -277,21 +277,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*T*\
-Dağıtım `t` parametresi.
+*şı*\
+`t`Dağıtım parametresi.
 
-*P*\
-Dağıtım `p` parametresi.
+*Lama*\
+`p`Dağıtım parametresi.
 
-*Doğru*\
-Bununla `param_type` karşılaştırılacak nesne.
+*Right*\
+`param_type`Karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:** `0 ≤ t` ve`0.0 ≤ p ≤ 1.0`
+**Önkoşul:** `0 ≤ t` '`0.0 ≤ p ≤ 1.0`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

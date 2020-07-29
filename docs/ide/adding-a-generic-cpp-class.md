@@ -10,26 +10,26 @@ helpviewer_keywords:
 - generic classes
 - generic C++ class wizard [C++]
 ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
-ms.openlocfilehash: 08ebe572da605e0f6d4d712bd7e48159598ba844
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e81ea442578e69bdd28301eba8f70561f6aa76c6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344447"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230551"
 ---
 # <a name="add-a-generic-c-class"></a>Genel C++ sınıfı ekleme
 
-Genel C++ sınıfı kullanarak ekleyebilirsiniz **sınıf görünümü**. Genel C++ sınıfı, tanımladığınız veya tanımladığınız bir sınıftan türetilen bir sınıftır.
+**Sınıf görünümü**kullanarak genel C++ sınıfı ekleyebilirsiniz. Genel C++ sınıfı, tanımladığınız veya tanımladığınız bir sınıftan türetilmiş bir sınıftır.
 
-**Genel C++ sınıfı için bir proje eklemek için:**
+**Bir projeye Genel C++ sınıfı eklemek için:**
 
-1. İçinde **sınıf görünümü**, yeni bir sınıf eklemek için seçmek istediğiniz projeye sağ tıklayıp **Ekle**ve ardından **sınıfı**.
+1. **Sınıf görünümü**' de, yeni sınıfı eklemek istediğiniz projeye sağ tıklayın, **Ekle**' yi ve ardından **sınıf**' ı seçin.
 
-1. İçinde [sınıfı Ekle](../ide/add-class-dialog-box.md) Şablonlar bölmesinde, Seç iletişim kutusu **C++ sınıfı**. Seçin **Ekle** görüntülenecek [genel C++ sınıfı Sihirbazı](#generic-c-class-wizard).
+1. [Sınıf Ekle](../ide/add-class-dialog-box.md) iletişim kutusunda, Şablonlar bölmesinde, **C++ sınıfı**' nı seçin. [Genel C++ sınıf sihirbazını](#generic-c-class-wizard)göstermek için **Ekle** ' yi seçin.
 
-1. Sihirbazı'nda, bir sınıf adı sağlayın ve ayarlarını tanımlayın veya Varsayılanları kabul edin.
+1. Sihirbazda bir sınıf adı girip ayarları tanımlayın veya Varsayılanları kabul edin.
 
-1. Sihirbazı kapatmak ve yeni genel C++ sınıfı projesinde görüntülemek için seçin **son**.
+1. Sihirbazı kapatmak ve yeni Genel C++ sınıfını projede görüntülemek için **son**' u seçin.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -37,41 +37,41 @@ Genel C++ sınıfı kullanarak ekleyebilirsiniz **sınıf görünümü**. Genel 
 
 ## <a name="generic-c-class-wizard"></a>Genel C++ sınıfı Sihirbazı
 
-Projeye Genel C++ sınıfı ekler. Sınıfı, ATL veya MFC devralmaz.
+Bir projeye Genel C++ sınıfı ekler. Sınıf, ATL veya MFC 'den kalıtımla almaz.
 
 - **Sınıf adı**
 
-  Yeni bir sınıf adını ayarlar.
+  Yeni sınıfın adını ayarlar.
 
-- **.h dosyası**
+- **. h dosyası**
 
-  Yeni bir sınıf için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıf adı**. Üst bilgi dosyası istediğiniz konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesini seçin (**...** ). Var olan bir dosya belirtin ve seçeneğini belirlerseniz **son**, sihirbaz sınıf bildirimi dosya içeriği eklenmeyeceğini belirtmenizi ister. Bildirimi eklemek için seçin **Evet**; sihirbaza dönmek ve başka bir dosya adı belirtin, seçmek için **Hayır**.
+  Yeni sınıf için üst bilgi dosyasının adını ayarlar. Bu ad, varsayılan olarak, **sınıf adı**' nda sağladığınız adı temel alır. Üstbilgi dosyasını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini (**...**) seçin. Var olan bir dosyayı belirtip **son**' u seçerseniz, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Bildirimi eklemek için **Evet**' i seçin; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır**' ı seçin.
 
-- **.cpp dosyası**
+- **. cpp dosyası**
 
-  Yeni bir sınıf için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıf adı**. Uygulama dosyasına seçtiğiniz bir konuma kaydetmek için veya mevcut bir dosyaya sınıf tanımı eklemek için üç nokta düğmesini seçin (**...** ). Var olan bir dosya belirtin ve seçeneğini belirlerseniz **son**, sihirbaz sınıf tanımı için dosya içeriğini eklenmeyeceğini belirtmenizi ister. Tanımı eklemek için seçin **Evet**; sihirbaza dönmek ve başka bir dosya adı belirtin, seçmek için **Hayır**.
+  Yeni sınıf için uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **sınıf adı**' nda sağladığınız adı temel alır. Uygulama dosyasını istediğiniz konuma kaydetmek veya sınıf tanımını mevcut bir dosyaya eklemek için üç nokta düğmesini (**...**) seçin. Var olan bir dosyayı belirtip **son**' u seçerseniz, sihirbaz, sınıf tanımının dosya içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Tanımı eklemek için **Evet**' i seçin; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır**' ı seçin.
 
 - **Temel sınıf**
 
-  Yeni bir sınıf için taban sınıf ayarlar.
+  Yeni sınıfın temel sınıfını ayarlar.
 
 - **Erişim**
 
-  Yeni bir sınıf için taban sınıf üyelerine erişimi ayarlar. Erişim değiştiricileri diğer sınıflara sahip sınıf üyesi işlevleri için erişim düzeyini belirten anahtar sözcüklerdir. Erişim belirtme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Varsayılan olarak, sınıf erişim düzeyini ayarlamak `public`.
+  Yeni sınıf için temel sınıf üyelerine erişimi ayarlar. Erişim değiştiricileri, diğer sınıfların sınıf üye işlevlerine sahip olduğu erişim düzeyini belirten anahtar kelimelerdir. Erişimin nasıl belirtilme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Varsayılan olarak, sınıf erişim düzeyi olarak ayarlanır **`public`** .
 
-  - `public`
-  - `protected`
-  - `private`
-  - **Varsayılan** (herhangi bir erişim değiştiricisi oluşturulur.)
+  - **`public`**
+  - **`protected`**
+  - **`private`**
+  - **Varsayılan** (hiçbir erişim değiştiricisi oluşturulmaz.)
 
 - **Sanal yıkıcı**
 
-  Sınıf yok edicisini sanal olup olmadığını belirtir. Sanal bir yıkıcı kullanımını türetilmiş sınıfların örneklerini silindiğinde doğru yok Edicisi çağrılır emin olmaya yardımcı olur.
+  Sınıf yıkıcısında sanal olup olmadığını belirtir. Sanal yıkıcı kullanımı, türetilmiş sınıfların örnekleri silindiğinde doğru yıkıcının çağrıldığından emin olmanıza yardımcı olur.
 
-- **Satır içi**
+- **Çizgi**
 
-  Üstbilgi dosyasında, sınıf oluşturucusu hem satır içi işlevleri olarak sınıf tanımı oluşturur.
+  Hem sınıf oluşturucusunu hem de sınıf tanımını başlık dosyasında satır içi işlevler olarak oluşturur.
 
 - **Yönetilen**
 
-  Bu onay kutusu seçildiğinde, yönetilen bir sınıf ve üstbilgi dosyası ekler. Bu onay kutusu temizlenirse, yerel bir sınıf ve üstbilgi dosyası ekler.
+  Seçildiğinde, yönetilen bir sınıf ve üstbilgi dosyası ekler. Temizlenme sırasında, yerel bir sınıf ve üstbilgi dosyası ekler.

@@ -6,19 +6,19 @@ f1_keywords:
 helpviewer_keywords:
 - cassert header
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-ms.openlocfilehash: 58ebd91fb4fa32cf31d2c49429d0445b92fe0c82
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b28f4554610d37b881494748f75499f46cd9e8d9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449915"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230239"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
-C Standart Kitaplığı başlığı \<onayı. h > içerir ve ilişkili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
+C standart kitaplığı üst bilgisini içerir \<assert.h> ve ilgili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 > [!NOTE]
-> \<onaylama. h >, `static_assert` makroyu tanımlamaz.
+> \<assert.h>**`static_assert`** makroyu tanımlamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,11 +34,11 @@ C Standart Kitaplığı başlığı \<onayı. h > içerir ve ilişkili adları `
 
 ### <a name="remarks"></a>Açıklamalar
 
-`assert(E)`yalnızca, ndebug tanımlanıyorsa `assert` veya yeniden tanımlandığında, ya da bool değerine dönüştürülmüş bir değer  **true**olarak değerlendirilirse bir sabittir.
+`assert(E)`yalnızca bir sabittir, NDEBUG, `assert` son tanımlanan veya yeniden tanımlandı *E* **`true`**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[onaylama makrosu, _Onay, _TatLı](../c-runtime-library/reference/assert-macro-assert-wassert.md)\
+[onaylama makrosu, _assert _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)\
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

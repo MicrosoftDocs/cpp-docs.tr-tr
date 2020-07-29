@@ -1,8 +1,8 @@
 ---
 title: Komut satırından Microsoft C++ araç takımını kullanın
-description: Visual Studio IDE 'nin dışında, komut satırından Microsoft C++ derleyicisi araç zinciri (MSVC) kullanın.
+description: Visual Studio IDE 'nin dışında, komut satırından Microsoft C++ (MSVC) derleyicisi araç takımını kullanın.
 ms.custom: conceptual
-ms.date: 11/12/2019
+ms.date: 04/21/2020
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -10,16 +10,19 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: ec30cba8e119f96efc5bca156fa565db77904520
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: f729947e4d798e5817ff8d4e5abe09eaca090e01
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417441"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229902"
 ---
 # <a name="use-the-microsoft-c-toolset-from-the-command-line"></a>Komut satırından Microsoft C++ araç takımını kullanın
 
-Visual Studio 'da bulunan araçları kullanarak komut satırında C ve C++ uygulamaları oluşturabilirsiniz. Microsoft C++ (MSVC) derleyicisi araç takımı, Visual Studio IDE 'yi içermeyen tek başına bir paket olarak da indirilebilir.
+Visual Studio 'da bulunan araçları kullanarak komut satırında C ve C++ uygulamaları oluşturabilirsiniz. Microsoft C++ (MSVC) derleyicisi araç takımı Ayrıca tek başına bir paket olarak indirilebilir. Kullanmayı planlamıyorsanız, Visual Studio IDE 'yi yüklemeniz gerekmez.
+
+> [!NOTE]
+> Bu makalede, bireysel derleyicileri, Linler, kütüphaneian ve diğer temel araçları kullanmak için bir ortam ayarlama hakkında bilgi sağlanır. Yerel proje derleme sistemi, MSBuild, bu makalede açıklandığı gibi ortamı kullanmaz. MSBuild 'i komut satırından kullanma hakkında daha fazla bilgi için bkz. [komut satırı-C++ üzerinde MSBuild](msbuild-visual-cpp.md).
 
 ## <a name="download-and-install-the-tools"></a>Araçları indirme ve yükleme
 
@@ -75,59 +78,59 @@ Yapı ortamını varolan bir komut istemi penceresinde ayarlamayı tercih ediyor
 
 ::: moniker range=">= vs-2019"
 
-Komut dosyası konumu, yüklediğiniz Visual Studio sürümüne ve yükleme sırasında yaptığınız seçimlere bağlı olarak değişir. Visual Studio 2019 için, 64 bit sistemdeki tipik yükleme konumu Program Files (x86 \\)\\Microsoft Visual Studio\\2019\\*Edition*' dır. *Sürüm* Community, Professional, Enterprise, buildtools veya sağladığınız başka bir takma ad olabilir.
+Komut dosyası konumu, yüklediğiniz Visual Studio sürümüne ve yükleme sırasında yaptığınız seçimlere bağlı olarak değişir. Visual Studio 2019 için, 64 bit sistemdeki tipik yükleme konumu \\ Program Files (x86) \\ Microsoft Visual Studio \\ 2019 \\ *Edition*' dır. *Sürüm* Community, Professional, Enterprise, buildtools veya sağladığınız başka bir takma ad olabilir.
 
 ::: moniker-end
 ::: moniker range="= vs-2017"
 
-Komut dosyası konumu, yüklediğiniz Visual Studio sürümüne ve yükleme sırasında yaptığınız seçimlere bağlı olarak değişir. Visual Studio 2017 için, 64 bit sistemdeki tipik yükleme konumu Program Files (x86 \\)\\Microsoft Visual Studio\\2017\\*Edition*' dır. *Sürüm* Community, Professional, Enterprise, buildtools veya sağladığınız başka bir takma ad olabilir.
+Komut dosyası konumu, yüklediğiniz Visual Studio sürümüne ve yükleme sırasında yaptığınız seçimlere bağlı olarak değişir. Visual Studio 2017 için, 64 bit sistemdeki tipik yükleme konumu \\ Program Files (x86) \\ Microsoft Visual Studio \\ 2017 \\ *Edition*' dır. *Sürüm* Community, Professional, Enterprise, buildtools veya sağladığınız başka bir takma ad olabilir.
 
 ::: moniker-end
 ::: moniker range="< vs-2017"
 
-Komut dosyası konumu, Visual Studio sürümüne ve yükleme dizinine göre değişir. Visual Studio 2015 için, tipik yükleme konumu Program Files ( \\x86)\\Microsoft Visual Studio 14,0 ' dir.
+Komut dosyası konumu, Visual Studio sürümüne ve yükleme dizinine göre değişir. Visual Studio 2015 için, tipik yükleme konumu \\ Program Files (x86) \\ Microsoft Visual Studio 14,0 ' dir.
 
 ::: moniker-end
 
-VsDevCmd. bat adlı birincil Geliştirici komut istemi komut dosyası, Common7\\Tools alt dizininde bulunur. Hiçbir parametre belirtilmediğinde, ortamı, 32 bit x86 kodu oluşturmak için x86 yerel araçları kullanacak şekilde ayarlar.
+Birincil Geliştirici komut istemi komut dosyası VsDevCmd.bat, Common7 \\ araçları alt dizininde bulunur. Hiçbir parametre belirtilmediğinde, ortamı, 32 bit x86 kodu oluşturmak için x86 yerel araçları kullanacak şekilde ayarlar.
 
 ::: moniker range=">= vs-2017"
 
-Belirli derleme mimarilerini ayarlamak için daha fazla komut dosyası kullanılabilir. Kullanılabilen komut dosyaları, Visual Studio iş yüklerine ve yüklediğiniz seçeneklere bağlıdır. Visual Studio 2017 ve Visual Studio 2019 ' de, bunları VC\\yardımcı\\derleme alt dizininde bulabilirsiniz.
+Belirli derleme mimarilerini ayarlamak için daha fazla komut dosyası kullanılabilir. Kullanılabilen komut dosyaları, Visual Studio iş yüklerine ve yüklediğiniz seçeneklere bağlıdır. Visual Studio 2017 ve Visual Studio 2019 ' de, bunları VC \\ yardımcı \\ derleme alt dizininde bulabilirsiniz.
 
 ::: moniker-end
 ::: moniker range="< vs-2017"
 
-Belirli derleme mimarilerini ayarlamak için daha fazla komut dosyası kullanılabilir. Kullanılabilen komut dosyaları, Visual Studio iş yüklerine ve yüklediğiniz seçeneklere bağlıdır. Visual Studio 2015 ' de, mimari,\\VC bin veya VC\\bin\\*mimari* alt dizinlerinde bulunur, bu, *mimarinin* yerel veya çapraz derleyici seçeneklerinden biridir.
+Belirli derleme mimarilerini ayarlamak için daha fazla komut dosyası kullanılabilir. Kullanılabilen komut dosyaları, Visual Studio iş yüklerine ve yüklediğiniz seçeneklere bağlıdır. Visual Studio 2015 ' de, mimari, VC \\ bin veya VC \\ bin \\ *mimari* alt dizinlerinde bulunur, bu, *mimarinin* yerel veya çapraz derleyici seçeneklerinden biridir.
 
 ::: moniker-end
 
-Bu komut dosyaları varsayılan parametreleri ayarlar ve belirtilen yapı mimarisi ortamını ayarlamak için VsDevCmd. bat ' i çağırır. Tipik bir yükleme, şu komut dosyalarını içerebilir:
+Bu komut dosyaları varsayılan parametreleri ayarlar ve belirtilen yapı mimarisi ortamını ayarlamak için VsDevCmd.bat çağırır. Tipik bir yükleme, şu komut dosyalarını içerebilir:
 
 |Komut dosyası|Konak ve hedef mimarileri|
 |---|---|
-|**Vcvars32. bat**| 32 bit x86 yerel araçlarını kullanarak 32 bit x86 kodu oluşturun.|
-|**vcvars64. bat**| 64 bit x64-yerel araçlarını kullanarak 64 bit x64 kodu oluşturun.|
-|**vcvarsx86_amd64. bat**| 32-bit x86 yerel çapraz araçlarını kullanarak 64 bit x64 kodu oluşturun.|
-|**vcvarsamd64_x86. bat**| 64-bit x64-yerel çapraz araçlarını kullanarak 32 bit x86 kodu oluşturun.|
-|**vcvarsx86_arm. bat**| ARM kodu oluşturmak için 32 bitlik x86 yerel çapraz araçları kullanın.|
-|**vcvarsamd64_arm. bat**| ARM kodu oluşturmak için 64 bitlik x64 yerel çapraz araçları kullanın.|
-|**vcvarsall. bat**| Konak ve hedef mimarileri, Windows SDK ve platform seçeneklerini belirtmek için parametreleri kullanın. Desteklenen seçeneklerin listesi için, **/help** parametresini kullanarak çağırın.|
+|**vcvars32.bat**| 32 bit x86 yerel araçlarını kullanarak 32 bit x86 kodu oluşturun.|
+|**vcvars64.bat**| 64 bit x64-yerel araçlarını kullanarak 64 bit x64 kodu oluşturun.|
+|**vcvarsx86_amd64.bat**| 32-bit x86 yerel çapraz araçlarını kullanarak 64 bit x64 kodu oluşturun.|
+|**vcvarsamd64_x86.bat**| 64-bit x64-yerel çapraz araçlarını kullanarak 32 bit x86 kodu oluşturun.|
+|**vcvarsx86_arm.bat**| ARM kodu oluşturmak için 32 bitlik x86 yerel çapraz araçları kullanın.|
+|**vcvarsamd64_arm.bat**| ARM kodu oluşturmak için 64 bitlik x64 yerel çapraz araçları kullanın.|
+|**vcvarsall.bat**| Konak ve hedef mimarileri, Windows SDK ve platform seçeneklerini belirtmek için parametreleri kullanın. Desteklenen seçeneklerin listesi için, **/help** parametresini kullanarak çağırın.|
 
 > [!CAUTION]
-> Vcvarsall. bat dosyası ve diğer Visual Studio komut dosyaları bilgisayardan bilgisayara farklılık gösterebilir. Eksik veya hasarlı bir vcvarsall. bat dosyasını başka bir bilgisayardaki bir dosya kullanarak değiştirmeyin. Eksik dosyayı değiştirmek için Visual Studio yükleyicisini yeniden çalıştırın.
+> vcvarsall.bat dosyası ve diğer Visual Studio komut dosyaları bilgisayardan bilgisayara farklılık gösterebilir. Eksik veya hasarlı bir vcvarsall.bat dosyasını başka bir bilgisayardaki bir dosya kullanarak değiştirmeyin. Eksik dosyayı değiştirmek için Visual Studio yükleyicisini yeniden çalıştırın.
 >
-> Vcvarsall. bat dosyası aynı zamanda sürümden sürüme de değişir. Visual Studio 'nun geçerli sürümü, Visual Studio 'nun önceki bir sürümüne de sahip olan bir bilgisayarda yüklüyse, aynı komut istemi penceresinde farklı sürümlerden vcvarsall. bat veya başka bir Visual Studio komut dosyası çalıştırmayın.
+> vcvarsall.bat dosyası sürümden sürüme de değişir. Visual Studio 'nun geçerli sürümü, Visual Studio 'nun önceki bir sürümüne de sahip olan bir bilgisayarda yüklüyse, aynı komut istemi penceresinde farklı sürümlerden vcvarsall.bat veya başka bir Visual Studio komut dosyası çalıştırmayın.
 
 ## <a name="use-the-developer-tools-in-an-existing-command-window"></a>Varolan bir komut penceresinde geliştirici araçlarını kullanma
 
-Varolan bir komut penceresinde belirli bir yapı mimarisini belirtmenin en kolay yolu, vcvarsall. bat dosyasını kullanmaktır. Yerel 32-bit veya 64 bit derleme için komut satırını yapılandırmak üzere ortam değişkenlerini ayarlamak için vcvarsall. bat kullanın. Bağımsız değişkenler, x86, x64, ARM veya ARM64 işlemcilerde çapraz derleme belirtmenize olanak tanır. Microsoft Store, Evrensel Windows Platformu veya Windows Masaüstü platformlarını hedefleyebilirsiniz. Hangi Windows SDK kullanacağınızı bile belirtebilir ve platform araç takımı sürümünü seçebilirsiniz.
+Varolan bir komut penceresinde belirli bir yapı mimarisini belirtmenin en kolay yolu vcvarsall.bat dosyasını kullanmaktır. Yerel 32-bit veya 64 bit derleme için komut satırını yapılandırmak üzere ortam değişkenlerini ayarlamak için vcvarsall.bat kullanın. Bağımsız değişkenler, x86, x64, ARM veya ARM64 işlemcilerde çapraz derleme belirtmenize olanak tanır. Microsoft Store, Evrensel Windows Platformu veya Windows Masaüstü platformlarını hedefleyebilirsiniz. Hangi Windows SDK kullanacağınızı bile belirtebilir ve platform araç takımı sürümünü seçebilirsiniz.
 
-Bir bağımsız değişken olmadan kullanıldığında, vcvarsall. bat, 32 bitlik Windows Masaüstü hedefleri için geçerli x86 yerel derleyicisini kullanmak üzere ortam değişkenlerini yapılandırır. Ortamı yerel veya çapraz derleyici araçlarından birini kullanacak şekilde yapılandırmak için bağımsız değişken ekleyebilirsiniz. , bilgisayarınızda yüklü olmayan veya kullanılamayan bir yapılandırma belirtirseniz vcvarsall. bat bir hata iletisi görüntüler.
+Bağımsız değişken olmadan kullanıldığında vcvarsall.bat, ortam değişkenlerini 32 bitlik Windows Masaüstü hedefleri için geçerli x86 yerel derleyicisini kullanacak şekilde yapılandırır. Ortamı yerel veya çapraz derleyici araçlarından birini kullanacak şekilde yapılandırmak için bağımsız değişken ekleyebilirsiniz. vcvarsall.bat, bilgisayarınızda yüklü olmayan veya kullanılamayan bir yapılandırma belirtirseniz bir hata iletisi görüntüler.
 
 ### <a name="vcvarsall-syntax"></a>vcvarsall sözdizimi
 
-> **vcvarsall. bat** [*mimari*] [*platform_type*] [*winsdk_version*] [**-vcvars_ver =**_vcversion_]
+> **vcvarsall.bat** [*mimari*] [*platform_type*] [*winsdk_version*] [**-vcvars_ver =**_vcversion_]
 
 *mimarisini*<br/>
 Bu isteğe bağlı bağımsız değişken kullanılacak konak ve hedef mimarisini belirtir. *Mimari* belirtilmemişse, varsayılan derleme ortamı kullanılır. Bu bağımsız değişkenler desteklenir:
@@ -135,13 +138,13 @@ Bu isteğe bağlı bağımsız değişken kullanılacak konak ve hedef mimarisin
 |*mimarisini*|Derleyici|Konak bilgisayar mimarisi|Derleme çıkışı (hedef) mimarisi|
 |----------------------------|--------------|----------------------------------|-------------------------------|
 |**x86**|x86 32 bit yerel|x86, x64|x86|
-|**x86\_AMD64** veya **x86\_x64**|x86 çapraz üzerinde x64|x86, x64|x64|
+|**x86 \_ AMD64** veya **x86 \_ x64**|x86 çapraz üzerinde x64|x86, x64|x64|
 |**x86_arm**|X86 çapraz üzerinde ARM|x86, x64|ARM|
 |**x86_arm64**|ARM64 üzerinde x86 çapraz|x86, x64|ARM64|
 |**AMD64** veya **x64**|x64 64-bit yerel|x64|x64|
-|**AMD64\_x86** veya **x64\_x86**|x64 üzerinde x86 çapraz|x64|x86|
-|**AMD64\_ARM** veya **x64\_ARM**|X64 çapraz ARM|x64|ARM|
-|**AMD64\_arm64** veya **x64\_arm64**|X64 çapraz ARM64|x64|ARM64|
+|**AMD64 \_ x86** veya **x64 \_ x86**|x64 üzerinde x86 çapraz|x64|x86|
+|**AMD64 \_ ARM** veya **x64 \_ ARM**|X64 çapraz ARM|x64|ARM|
+|**AMD64 \_ arm64** veya **x64 \_ arm64**|X64 çapraz ARM64|x64|ARM64|
 
 *platform_type*<br/>
 Bu isteğe bağlı bağımsız değişken platform türü olarak **Store** veya **UWP** belirtmenize olanak tanır. Varsayılan olarak, ortam masaüstü veya konsol uygulamaları oluşturmak üzere ayarlanır.
@@ -171,7 +174,7 @@ Visual Studio 2015 derleyici araç takımını belirtmek için **-vcvars_ver = 1
 
 #### <a name="to-set-up-the-build-environment-in-an-existing-command-prompt-window"></a><a name="vcvarsall"></a>Derleme ortamını varolan bir komut istemi penceresinde ayarlamak için
 
-1. Komut isteminde, Visual Studio yükleme dizinine geçmek için CD komutunu kullanın. Ardından, yapılandırmaya özgü komut dosyalarını içeren alt dizine geçmek için CD 'yi yeniden kullanın. Visual Studio 2019 ve Visual Studio 2017 için, *\\VC yardımcı\\derleme* alt dizinini kullanın. Visual Studio 2015 için *VC* alt dizinini kullanın.
+1. Komut isteminde, Visual Studio yükleme dizinine geçmek için CD komutunu kullanın. Ardından, yapılandırmaya özgü komut dosyalarını içeren alt dizine geçmek için CD 'yi yeniden kullanın. Visual Studio 2019 ve Visual Studio 2017 için, *VC \\ yardımcı \\ derleme* alt dizinini kullanın. Visual Studio 2015 için *VC* alt dizinini kullanın.
 
 1. Tercih ettiğiniz geliştirici ortamınız için komutunu girin. Örneğin, 64 bitlik bir platformda UWP için ARM kodu oluşturmak için, en son Windows SDK ve Visual Studio derleyicisi araç takımını kullanarak şu komut satırını kullanın:
 
@@ -201,7 +204,7 @@ Kullanılan komut hedefini görmek için geliştirici komut istemi kısayolunun 
 
 ::: moniker-end
 
-Mimariye özgü toplu iş dosyaları *mimari* parametresini ayarlar ve vcvarsall. bat çağrısını çağırır. Aynı seçenekleri vcvarsall. bat ' a geçiş yaptığınız şekilde bu toplu iş dosyalarına geçirebilir veya doğrudan vcvarsall. bat ' i çağırabilirsiniz. Kendi komut kısayolunuzun parametrelerini belirtmek için bunları çift tırnaklı komutun sonuna ekleyin. Örneğin, en son Windows SDK kullanarak 64 bitlik bir platformda UWP için ARM kodu oluşturmaya yönelik bir kısayol aşağıda verilmiştir. Önceki bir derleyici araç takımını kullanmak için sürüm numarasını belirtin. Kısayolunuzun bu komut hedefi gibi bir şey kullanın:
+Mimariye özgü toplu iş dosyaları *mimari* parametresini ayarlar ve vcvarsall.bat çağırır. Aynı seçenekleri, vcvarsall.bat geçirdiğiniz gibi bu toplu iş dosyalarına geçirebilirsiniz veya doğrudan vcvarsall.bat çağırabilirsiniz. Kendi komut kısayolunuzun parametrelerini belirtmek için bunları çift tırnaklı komutun sonuna ekleyin. Örneğin, en son Windows SDK kullanarak 64 bitlik bir platformda UWP için ARM kodu oluşturmaya yönelik bir kısayol aşağıda verilmiştir. Önceki bir derleyici araç takımını kullanmak için sürüm numarasını belirtin. Kısayolunuzun bu komut hedefi gibi bir şey kullanın:
 
 ::: moniker range=">= vs-2019"
 
@@ -219,28 +222,32 @@ Mimariye özgü toplu iş dosyaları *mimari* parametresini ayarlar ve vcvarsall
 
 ::: moniker-end
 
-Yolu, Visual Studio yükleme dizininizi yansıtacak şekilde ayarlayın. Vcvarsall. bat dosyasında belirli sürüm numaraları hakkında ek bilgiler bulunur.
+Yolu, Visual Studio yükleme dizininizi yansıtacak şekilde ayarlayın. vcvarsall.bat dosyası belirli sürüm numaraları hakkında ek bilgiler içerir.
 
 ## <a name="command-line-tools"></a>Komut satırı araçları
 
 Bir komut isteminde C/C++ projesi oluşturmak için, Visual Studio şu komut satırı araçlarını sağlar:
 
 [CL](reference/compiling-a-c-cpp-program.md)<br/>
-Kaynak kodu dosyalarını derlemek ve uygulamalar, kitaplıklar ve DLL 'Lerde bağlamak için derleyici (CL. exe) kullanın.
+Kaynak kodu dosyalarını derlemek ve uygulamalar, kitaplıklar ve DLL 'Lerde bağlamak için derleyicisini (cl.exe) kullanın.
 
 [Bağlantı](reference/linking.md)<br/>
-Derlenen nesne dosyalarını ve kitaplıklarını uygulamalar ve DLL 'Lere bağlamak için bağlayıcı (LINK. exe) kullanın.
-
-[MSBuild](msbuild-visual-cpp.md)<br/>
-Bir derlemeyi yapılandırmak ve araç takımını dolaylı olarak çağırmak için MSBuild (MSBuild. exe) ve proje dosyası (. vcxproj) kullanın. Visual Studio IDE 'de **Build** Project veya **Build Solution** komutunu çalıştırmaya eşdeğerdir. Komut satırından MSBuild çalıştırmak, gelişmiş bir senaryodur ve sık önerilmez.
-
-[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
-Visual Studio IDE 'yi görüntülemeden belirli derleme komutlarını yürütmek için **/Build** veya **/Clean** gibi bir komut satırı anahtarıyla birlikte devenv (devenv. exe) kullanın. Genel olarak, Visual Studio 'nun MSBuild 'in karmaşıklıklarını işleyebilmesine izin vermek için doğrudan MSBuild kullanılarak DEVENV tercih edilir.
+Derlenen nesne dosyalarını ve kitaplıklarını uygulamalar ve DLL 'Lere bağlamak için bağlayıcı (link.exe) kullanın.
 
 [NMAKE](reference/nmake-reference.md)<br/>
-Geleneksel derleme görevleri dosyasını temel alan C++ projeleri oluşturmak için Windows 'ta NMAKE (nmake. exe) kullanın.
+Geleneksel derleme görevleri dosyasını temel alan C++ projeleri oluşturmak için Windows 'ta NMAKE (nmake.exe) kullanın.
 
-Komut satırında oluşturduğunuzda F1 komutu anında yardım için kullanılamaz. Bunun yerine, uyarılar, hatalar ve iletiler hakkında bilgi almak için bir arama motoru kullanabilir veya çevrimdışı Yardım dosyalarını kullanabilirsiniz. Arama [docs.Microsoft.com](https://docs.microsoft.com/cpp/)içinde kullanmak için sayfanın üst kısmındaki arama kutusunu kullanın.
+Komut satırında oluşturduğunuzda F1 komutu anında yardım için kullanılamaz. Bunun yerine, uyarılar, hatalar ve iletilerle ilgili bilgi almak için bir arama motoru kullanabilirsiniz. Ayrıca çevrimdışı Yardım dosyalarını indirebilir ve kullanabilirsiniz. Arama 'yı [docs.Microsoft.com](https://docs.microsoft.com/cpp/)içinde kullanmak için, herhangi bir makalenin üst kısmındaki arama kutusuna sorgunuzu girin.
+
+## <a name="command-line-project-management-tools"></a>Komut satırı proje yönetimi araçları
+
+Visual Studio IDE, MSBuild 'e göre yerel bir proje yapı sistemi kullanır. Doğrudan MSBuild 'i çağırabilir veya IDE 'yi kullanmadan yerel proje sistemini kullanabilirsiniz:
+
+[MSBuild](msbuild-visual-cpp.md)<br/>
+Bir derlemeyi yapılandırmak ve araç takımını dolaylı olarak çağırmak için MSBuild (msbuild.exe) ve proje dosyası (. vcxproj) kullanın. Visual Studio IDE 'de **Build** Project veya **Build Solution** komutunu çalıştırmaya eşdeğerdir. Komut satırından MSBuild çalıştırmak, gelişmiş bir senaryodur ve sık önerilmez. Visual Studio sürüm 16,5 ' den başlayarak MSBuild, kullanılan araç takımını ve kitaplıkları denetlemek için komut satırı ortamını kullanmaz.
+
+[DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>
+Visual Studio IDE 'yi görüntülemeden belirli derleme komutlarını yürütmek için **/Build** veya **/Clean** gibi bir komut satırı anahtarıyla birleştirilmiş devenv (devenv.exe) kullanın. Genel olarak, Visual Studio 'nun MSBuild 'in karmaşıklıklarını işleyebilmesine izin vermek için doğrudan MSBuild kullanılarak DEVENV tercih edilir. Visual Studio sürüm 16,5 ' den başlayarak DEVENV, kullanılan araç takımını ve kitaplıkları denetlemek için komut satırı ortamını kullanmaz.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -249,23 +256,23 @@ Bu makalelerde, komut satırında uygulama oluşturma ve komut satırı derleme 
 [İzlenecek yol: komut satırında yerel C++ programını derleme](walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)<br/>
 Komut satırında C++ programını oluşturmayı ve derlemeyi gösteren bir örnek sağlar.
 
-[İzlenecek Yol: Komut satırında C programı derleme](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut satırında C programı derleme](walkthrough-compile-a-c-program-on-the-command-line.md)<br/>
 C programlama dilinde yazılmış bir programın nasıl derleneceğini açıklar.
 
-[İzlenecek yol: komut satırında C++/CLı programını derleme](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut satırında C++/CLI programı derleme](walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)<br/>
 .NET Framework kullanan bir C++/CLı programını oluşturmayı ve derlemeyi açıklar.
 
-[İzlenecek yol: komut satırında C++/CX programı derleme](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
+[İzlenecek yol: Komut satırında C++/CX programı derleme](walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)<br/>
 Windows Çalışma Zamanı kullanan bir C++/CX programını oluşturmayı ve derlemeyi açıklar.
 
 [Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](setting-the-path-and-environment-variables-for-command-line-builds.md)<br/>
 X86, x64, ARM ve ARM64 platformlarını hedeflemek için ortam değişkenlerini 32-bit veya 64 bit araç takımını kullanacak şekilde ayarlama.
 
 [NMAKE başvurusu](reference/nmake-reference.md)<br/>
-Microsoft program bakım yardımcı programını (NMAKE) anlatan makalelere bağlantılar sağlar. EXE).
+Microsoft program bakım yardımcı programını (NMAKE.EXE) tanımlayan makalelere bağlantılar sağlar.
 
 [Komut satırında MSBuild-C++](msbuild-visual-cpp.md)<br/>
-Komut satırından MSBuild. exe ' nin nasıl kullanılacağını tartışan makalelere bağlantılar sağlar.
+Komut satırından msbuild.exe kullanmayı tartışan makalelere bağlantılar sağlar.
 
 ## <a name="related-sections"></a>İlgili bölümler
 
@@ -273,10 +280,10 @@ Komut satırından MSBuild. exe ' nin nasıl kullanılacağını tartışan maka
 Bu derleyici seçeneklerinin bir hata ayıklama veya sürüm çalışma zamanı kitaplığı kullanmak için nasıl kullanılacağını açıklar.
 
 [C/C++ derleyici seçenekleri](reference/compiler-options.md)<br/>
-C ve C++ derleyici seçeneklerini ve CL. exe ' yi tartışan makalelere bağlantılar sağlar.
+C ve C++ derleyici seçeneklerini ve CL.exe tartışan makalelere bağlantılar sağlar.
 
 [MSVC bağlayıcı seçenekleri](reference/linker-options.md)<br/>
-Bağlayıcı seçeneklerini ve LINK. exe ' yi tartışan makalelere bağlantılar sağlar.
+Bağlayıcı seçeneklerini ve LINK.exe tartışan makalelere bağlantılar sağlar.
 
 [Ek MSVC derleme araçları](reference/c-cpp-build-tools.md)<br/>
 Visual Studio 'da bulunan C/C++ derleme araçlarına bağlantılar sağlar.

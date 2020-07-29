@@ -1,23 +1,23 @@
 ---
-title: kısıtlanmış (C++ com özniteliği)
+title: kısıtlı (C++ COM özniteliği)
 ms.date: 10/03/2018
 f1_keywords:
 - vc-attr.restricted
 helpviewer_keywords:
 - restricted attribute
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
-ms.openlocfilehash: a47c56673e19f891b24ff433b9c614804f0bd51c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0545c07936c59a59dd4712f4b0a2fd98a6701f2e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166373"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230032"
 ---
 # <a name="restricted"></a>kısıtlı
 
 Bir Module, Interface veya dispınterface üyesinin rastgele çağrılamıyor olduğunu belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ restricted(
@@ -32,7 +32,7 @@ Bir COM nesnesi üzerinde rastgele çağrılmayan bir veya daha fazla arabirim. 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Restricted** C++ özniteliği, [kısıtlı](/windows/win32/Midl/restricted) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Kısıtlı** C++ özniteliği, [kısıtlı](/windows/win32/Midl/restricted) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -67,9 +67,9 @@ class c : public a, public b
 
 |||
 |-|-|
-|**Uygulama hedefi**|Arabirim yöntemi, **arabirim**, **sınıf**, **Yapı**|
+|**Şunlara uygulanır**|Arabirim yöntemi, **arabirim**, **`class`** ,**`struct`**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|**coclass** ( **sınıfa** veya **yapıya**uygulandığında)|
+|**Gerekli öznitelikler**|**coclass** (veya öğesine uygulandığında **`class`** **`struct`** )|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -77,5 +77,5 @@ class c : public a, public b
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Arabirim Öznitelikleri](interface-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)
+[Arabirim öznitelikleri](interface-attributes.md)<br/>
+[Yöntem öznitelikleri](method-attributes.md)

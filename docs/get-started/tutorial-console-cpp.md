@@ -1,19 +1,19 @@
 ---
-title: C++ ' da konsol Hesaplayıcı oluşturma
+title: C++ içinde konsol hesaplayıcı oluşturma
 description: Visual C++ ' de bir Merhaba Dünya konsol uygulaması ve Hesaplayıcı uygulaması oluşturun
 ms.custom: mvc
 ms.date: 08/19/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: b292d5b8e1db7415aed6427f2327788e08a28a20
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 5f448e68878e211969c89f7c4c750e3231d3a9b7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404456"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230590"
 ---
-# <a name="create-a-console-calculator-in-c"></a>C++ ' da konsol Hesaplayıcı oluşturma
+# <a name="create-a-console-calculator-in-c"></a>C++ içinde konsol hesaplayıcı oluşturma
 
 ::: moniker range=">=vs-2019"
 
@@ -123,7 +123,7 @@ Artık, kodun beklendiği gibi çalıştığını doğrulamak için her değişi
    > Kodu anlama:
    >
    > - `#include`Deyimleri, diğer dosyalarda bulunan koda başvuru yapmanıza olanak sağlar. Bazen açılı ayraçlar () ile çevrelenmiş bir dosya adı görebilirsiniz **\<\>** ; diğer zamanlarda tırnak işaretleri (**""**) ile çevrelenmiş olur. Genel olarak, C++ standart kitaplığına başvururken açılı ayraçlar kullanılır, ancak teklifler diğer dosyalar için kullanılır.
-   > - `using namespace std;`Çizgi derleyiciye C++ standart kitaplığı 'ndan bu dosyada kullanılacak şeyler beklendiğini söyler. Bu satır olmadan, bir kitaplıktaki her anahtar sözcüğünün `std::` , kapsamını göstermek için önünde bir ile olması gerekir. Örneğin, bu satır olmadan her başvurunun `cout` olarak yazılması gerekir `std::cout` . `using`Kodun daha temiz görünmesini sağlamak için ifade eklenir.
+   > - `using namespace std;`Çizgi derleyiciye C++ standart kitaplığı 'ndan bu dosyada kullanılacak şeyler beklendiğini söyler. Bu satır olmadan, bir kitaplıktaki her anahtar sözcüğünün `std::` , kapsamını göstermek için önünde bir ile olması gerekir. Örneğin, bu satır olmadan her başvurunun `cout` olarak yazılması gerekir `std::cout` . **`using`** Kodun daha temiz görünmesini sağlamak için ifade eklenir.
    > - `cout`Anahtar sözcüğü, C++ ' ta standart çıktıya yazdırmak için kullanılır. **\<\<** İşleci derleyiciye, standart çıktıya ne olduğunu bildirir.
    > - **Endl** anahtar sözcüğü ENTER tuşu gibidir; satırı sonlandırır ve imleci bir sonraki satıra kaydırır. `\n` `endl` Her zaman arabelleği temizleyerek ve bu, çok küçük bir uygulama olduğundan, `endl` daha iyi okunabilirlik için kullanıldığından, dizenin içine (""), aynı şeyi yapmak için ("") koymak daha iyi bir uygulamadır.
    > - Tüm C++ deyimlerinin noktalı virgülle bitmesi ve tüm C++ uygulamalarının bir işlev içermesi gerekir `main()` . Bu işlev, programın başlangıçta çalıştığı şeydir. Kullanılabilmesi için tüm koda erişilebilir olması gerekir `main()` .
@@ -205,7 +205,7 @@ Biraz matematik mantığı ekleme zamanı.
    >
    > - İşlevi `Calculate` bir sayı, bir işleç ve ikinci bir sayı kullanır, ardından istenen işlemi sayılar üzerinde gerçekleştirir.
    > - Switch ifadesinde hangi işlecin sağlandığını kontrol eder ve yalnızca bu işleme karşılık gelen servis talebi yürütülür. Varsayılan: durum, kullanıcının kabul edilmeyen bir işleç yazdığında, dolayısıyla programın kesintiye uğramaması durumunda bir geri dönüş olur. Genel olarak, geçersiz kullanıcı girişini daha zarif bir şekilde işlemek en iyisidir, ancak Bu öğreticinin kapsamı dışındadır.
-   > - `double`Anahtar sözcüğü, Onlukları destekleyen bir sayı türünü gösterir. Bu şekilde, hesaplayıcı hem Decimal Math hem de Integer Math işleyebilir. `Calculate`İşlevin, kodun çok başlangıcında (Bu, işlevin dönüş türünü belirtir), bu nedenle her zaman bir sayının bu tür bir değer döndürmesi gerekir `double` . Bu, varsayılan durumda bile 0,0 getirdiğimiz anlamına gelir.
+   > - **`double`** Anahtar sözcüğü, Onlukları destekleyen bir sayı türünü gösterir. Bu şekilde, hesaplayıcı hem Decimal Math hem de Integer Math işleyebilir. `Calculate`İşlevin, kodun çok başlangıcında (Bu, işlevin dönüş türünü belirtir), bu nedenle her zaman bir sayının bu tür bir değer döndürmesi gerekir **`double`** . Bu, varsayılan durumda bile 0,0 getirdiğimiz anlamına gelir.
    > - . H dosyası, derleyicinin hangi parametrelere ihtiyacı olduğunu ve bundan beklenen dönüş türünü belirten işlev *prototipini*bildirir. . Cpp dosyası, işlevin tüm uygulama ayrıntılarına sahiptir.
 
 Kodu bu noktada yeniden oluşturup çalıştırırsanız, hangi işlemin gerçekleştirileceğini soran bir çıkış devam eder. Sonra, `main` bazı hesaplamalar yapmak için işlevini değiştirirsiniz.
@@ -251,7 +251,7 @@ Kodu bu noktada yeniden oluşturup çalıştırırsanız, hangi işlemin gerçek
    > - C++ programları her zaman `main()` işlevde başladığından, diğer kodumuzu buradan çağırmamız gerekir, bu nedenle bir `#include` ifade gereklidir.
    > - Bazı ilk değişkenler,, `x` `y` `oper` ve `result` sırasıyla ilk Number, İkinci sayı, işleç ve nihai sonucu depolayacak şekilde bildirilmiştir. Bu, burada yapılan tanımsız davranışlara engel olmak için bazı ilk değerleri vermek her zaman iyi bir uygulamadır.
    > - `Calculator c;`Satır, sınıfının bir örneği olarak ' c ' adlı bir nesne bildirir `Calculator` . Sınıfın kendisi, hesaplayıcıların nasıl çalıştığı hakkında yalnızca bir şema olur; nesnesi, matematik yapan özel Hesaplayıcı ' dır.
-   > - `while (true)`İfade bir döngüdür. Döngü içindeki kod, ' ın içindeki koşul doğru olduğu sürece yeniden yürütmeye devam eder `()` . Koşul yalnızca olarak listelendiğinden, `true` her zaman doğru olduğundan, döngü süresiz olarak çalışır. Programı kapatmak için Kullanıcı konsol penceresini el ile kapatması gerekir. Aksi takdirde, program her zaman yeni giriş bekler.
+   > - `while (true)`İfade bir döngüdür. Döngü içindeki kod, ' ın içindeki koşul doğru olduğu sürece yeniden yürütmeye devam eder `()` . Koşul yalnızca olarak listelendiğinden, **`true`** her zaman doğru olduğundan, döngü süresiz olarak çalışır. Programı kapatmak için Kullanıcı konsol penceresini el ile kapatması gerekir. Aksi takdirde, program her zaman yeni giriş bekler.
    > - `cin`Anahtar sözcüğü, kullanıcıdan girişi kabul etmek için kullanılır. Bu giriş akışı, konsol penceresinde girilen bir metin satırını işlemek için yeterince akıllı bir işlemdir ve Kullanıcı girişinin gerekli belirtile eşleştiğini varsayarak, listelenen değişkenlerin her birini sırayla yerleştirebilirsiniz. Bu satırı, örneğin iki sayıdan fazla farklı giriş türlerini kabul etmek için değiştirebilir, ancak `Calculate()` işlevin bunu işlemek için de güncelleştirilmeleri gerekir.
    > - `c.Calculate(x, oper, y);`İfade, `Calculate` daha önce tanımlanan işlevi çağırır ve girilen giriş değerlerini sağlar. İşlev daha sonra ' de depolanan bir sayı döndürür `result` .
    > - Son olarak `result` konsola yazdırılır, böylece Kullanıcı hesaplamanın sonucunu görür.
@@ -487,7 +487,7 @@ Artık, kodun beklendiği gibi çalıştığını doğrulamak için her değişi
    >
    > - `#include`Deyimleri, diğer dosyalarda bulunan koda başvuru yapmanıza olanak sağlar. Bazen açılı ayraçlar () ile çevrelenmiş bir dosya adı görebilirsiniz **\<\>** ; diğer zamanlarda tırnak işaretleri (**""**) ile çevrelenmiş olur. Genel olarak, C++ standart kitaplığına başvururken açılı ayraçlar kullanılır, ancak teklifler diğer dosyalar için kullanılır.
    > - `#include "pch.h"`(Veya Visual Studio 2017 ve önceki sürümler `#include "stdafx.h"` ) satırında önceden derlenmiş üst bilgi olarak bilinen bir şey bulunuyor. Bunlar genellikle profesyonel programcılar tarafından derleme sürelerini geliştirmek için kullanılır, ancak Bu öğreticinin kapsamı dışındadır.
-   > - `using namespace std;`Çizgi derleyiciye C++ standart kitaplığı 'ndan bu dosyada kullanılacak şeyler beklendiğini söyler. Bu satır olmadan, bir kitaplıktaki her anahtar sözcüğünün `std::` , kapsamını göstermek için önünde bir ile olması gerekir. Örneğin, bu satır olmadan her başvurunun `cout` olarak yazılması gerekir `std::cout` . `using`Kodun daha temiz görünmesini sağlamak için ifade eklenir.
+   > - `using namespace std;`Çizgi derleyiciye C++ standart kitaplığı 'ndan bu dosyada kullanılacak şeyler beklendiğini söyler. Bu satır olmadan, bir kitaplıktaki her anahtar sözcüğünün `std::` , kapsamını göstermek için önünde bir ile olması gerekir. Örneğin, bu satır olmadan her başvurunun `cout` olarak yazılması gerekir `std::cout` . **`using`** Kodun daha temiz görünmesini sağlamak için ifade eklenir.
    > - `cout`Anahtar sözcüğü, C++ ' ta standart çıktıya yazdırmak için kullanılır. **\<\<** İşleci derleyiciye, standart çıktıya ne olduğunu bildirir.
    > - **Endl** anahtar sözcüğü ENTER tuşu gibidir; satırı sonlandırır ve imleci bir sonraki satıra kaydırır. `\n` `endl` Her zaman arabelleği temizleyerek ve bu, çok küçük bir uygulama olduğundan, `endl` daha iyi okunabilirlik için kullanıldığından, dizenin içine (""), aynı şeyi yapmak için ("") koymak daha iyi bir uygulamadır.
    > - Tüm C++ deyimlerinin noktalı virgülle bitmesi ve tüm C++ uygulamalarının bir işlev içermesi gerekir `main()` . Bu işlev, programın başlangıçta çalıştığı şeydir. Kullanılabilmesi için tüm koda erişilebilir olması gerekir `main()` .
@@ -568,7 +568,7 @@ Biraz matematik mantığı ekleme zamanı.
    >
    > - İşlevi `Calculate` bir sayı, bir işleç ve ikinci bir sayı kullanır, ardından istenen işlemi sayılar üzerinde gerçekleştirir.
    > - Switch ifadesinde hangi işlecin sağlandığını kontrol eder ve yalnızca bu işleme karşılık gelen servis talebi yürütülür. Varsayılan: durum, kullanıcının kabul edilmeyen bir işleç yazdığında, dolayısıyla programın kesintiye uğramaması durumunda bir geri dönüş olur. Genel olarak, geçersiz kullanıcı girişini daha zarif bir şekilde işlemek en iyisidir, ancak Bu öğreticinin kapsamı dışındadır.
-   > - `double`Anahtar sözcüğü, Onlukları destekleyen bir sayı türünü gösterir. Bu şekilde, hesaplayıcı hem Decimal Math hem de Integer Math işleyebilir. `Calculate`İşlevin, kodun çok başlangıcında (Bu, işlevin dönüş türünü belirtir), bu nedenle her zaman bir sayının bu tür bir değer döndürmesi gerekir `double` . Bu, varsayılan durumda bile 0,0 getirdiğimiz anlamına gelir.
+   > - **`double`** Anahtar sözcüğü, Onlukları destekleyen bir sayı türünü gösterir. Bu şekilde, hesaplayıcı hem Decimal Math hem de Integer Math işleyebilir. `Calculate`İşlevin, kodun çok başlangıcında (Bu, işlevin dönüş türünü belirtir), bu nedenle her zaman bir sayının bu tür bir değer döndürmesi gerekir **`double`** . Bu, varsayılan durumda bile 0,0 getirdiğimiz anlamına gelir.
    > - . H dosyası, derleyicinin hangi parametrelere ihtiyacı olduğunu ve bundan beklenen dönüş türünü belirten işlev *prototipini*bildirir. . Cpp dosyası, işlevin tüm uygulama ayrıntılarına sahiptir.
 
 Kodu bu noktada yeniden oluşturup çalıştırırsanız, hangi işlemin gerçekleştirileceğini soran bir çıkış devam eder. Sonra, `main` bazı hesaplamalar yapmak için işlevini değiştirirsiniz.
@@ -615,7 +615,7 @@ Kodu bu noktada yeniden oluşturup çalıştırırsanız, hangi işlemin gerçek
    > - C++ programları her zaman `main()` işlevde başladığından, diğer kodumuzu buradan çağırmamız gerekir, bu nedenle bir `#include` ifade gereklidir.
    > - Bazı ilk değişkenler,, `x` `y` `oper` ve `result` sırasıyla ilk Number, İkinci sayı, işleç ve nihai sonucu depolayacak şekilde bildirilmiştir. Bu, burada yapılan tanımsız davranışlara engel olmak için bazı ilk değerleri vermek her zaman iyi bir uygulamadır.
    > - `Calculator c;`Satır, sınıfının bir örneği olarak ' c ' adlı bir nesne bildirir `Calculator` . Sınıfın kendisi, hesaplayıcıların nasıl çalıştığı hakkında yalnızca bir şema olur; nesnesi, matematik yapan özel Hesaplayıcı ' dır.
-   > - `while (true)`İfade bir döngüdür. Döngü içindeki kod, ' ın içindeki koşul doğru olduğu sürece yeniden yürütmeye devam eder `()` . Koşul yalnızca olarak listelendiğinden, `true` her zaman doğru olduğundan, döngü süresiz olarak çalışır. Programı kapatmak için Kullanıcı konsol penceresini el ile kapatması gerekir. Aksi takdirde, program her zaman yeni giriş bekler.
+   > - `while (true)`İfade bir döngüdür. Döngü içindeki kod, ' ın içindeki koşul doğru olduğu sürece yeniden yürütmeye devam eder `()` . Koşul yalnızca olarak listelendiğinden, **`true`** her zaman doğru olduğundan, döngü süresiz olarak çalışır. Programı kapatmak için Kullanıcı konsol penceresini el ile kapatması gerekir. Aksi takdirde, program her zaman yeni giriş bekler.
    > - `cin`Anahtar sözcüğü, kullanıcıdan girişi kabul etmek için kullanılır. Bu giriş akışı, konsol penceresinde girilen bir metin satırını işlemek için yeterince akıllı bir işlemdir ve Kullanıcı girişinin gerekli belirtile eşleştiğini varsayarak, listelenen değişkenlerin her birini sırayla yerleştirebilirsiniz. Bu satırı, örneğin iki sayıdan fazla farklı giriş türlerini kabul etmek için değiştirebilir, ancak `Calculate()` işlevin bunu işlemek için de güncelleştirilmeleri gerekir.
    > - `c.Calculate(x, oper, y);`İfade, `Calculate` daha önce tanımlanan işlevi çağırır ve girilen giriş değerlerini sağlar. İşlev daha sonra ' de depolanan bir sayı döndürür `result` .
    > - Son olarak `result` konsola yazdırılır, böylece Kullanıcı hesaplamanın sonucunu görür.

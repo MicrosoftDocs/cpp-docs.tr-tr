@@ -7,16 +7,16 @@ helpviewer_keywords:
 - add_volatile class
 - add_volatile
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14
-ms.openlocfilehash: 1a4ad8a86b88cdfa98f043bb49ba6eeff8b090c9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e8c213a116ff7a7d4218179f0e944ac4f84a75e5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619212"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230278"
 ---
 # <a name="add_volatile-class"></a>add_volatile Sınıfı
 
-Belirtilen türden **geçici** bir tür yapar.
+**`volatile`** Belirtilen türden bir tür yapar.
 
 ## <a name="syntax"></a>Söz dizimi
 
@@ -35,7 +35,7 @@ Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir örneğinin bir `add_volatile<T>` **typedef** `type` başvuru, bir işlev veya geçici nitelenmiş bir *T* tür, aksi durumda **geçici** *T*bir tür olması halinde *t* olan bir üye typedef öğesi vardır. Diğer ad, `add_volatile_t` **typedef** üyesine erişmek için bir kısayoldur `type` .
+Öğesinin bir örneği `add_volatile<T>` **`typedef`** `type` bir başvuru, bir işlev veya geçici *T* nitelenmiş bir tür *ise t* olan bir üyeye sahiptir, aksi halde **`volatile`** *t*. Diğer ad, `add_volatile_t` üyeye erişmek için bir kısayoldur **`typedef`** `type` .
 
 ## <a name="example"></a>Örnek
 

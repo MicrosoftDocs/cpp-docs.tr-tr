@@ -11,26 +11,26 @@ helpviewer_keywords:
 - 64-bit compiler [C++], porting 32-bit code
 - Win64 [C++]
 ms.assetid: d17fb838-7513-4e2d-8b27-a1666f17ad76
-ms.openlocfilehash: 004fe7ace6102feecbcb2f542b5b93268ae2f868
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 68f4dc4276c5cbce687477ca25ec69f0cb544acb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493321"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229863"
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>Genel Visual C++ 64 Bit Geçiş Sorunları
 
 64 bitlik bir Windows işletim sisteminde çalıştırılacak uygulamalar oluşturmak için Microsoft C++ derleyicisini (MSVC) kullandığınızda, aşağıdaki sorunlardan haberdar olmanız gerekir:
 
-- `int` , 64 bit Windows işletim sistemlerinde 32 bitlik `long` değerlerdir. 64 bitlik platformlar için derlemeyi planladığınız programlar için, 32 bit değişkenlere işaretçiler atamamaya dikkat etmeniz gerekir. İşaretçiler 64 bit platformlarda 64 bittir ve bunu bir 32-bit değişkenine atarsanız işaretçi değerini kesecektir.
+- **`int`** **`long`** , 64 bit Windows işletim sistemlerinde 32 bitlik değerlerdir. 64 bitlik platformlar için derlemeyi planladığınız programlar için, 32 bit değişkenlere işaretçiler atamamaya dikkat etmeniz gerekir. İşaretçiler 64 bit platformlarda 64 bittir ve bunu bir 32-bit değişkenine atarsanız işaretçi değerini kesecektir.
 
-- `size_t`, `time_t`ve `ptrdiff_t` 64 bit Windows işletim sistemlerinde 64 bitlik değerlerdir.
+- `size_t`, `time_t` ve `ptrdiff_t` 64 bit Windows işletim sistemlerinde 64 bitlik değerlerdir.
 
 - `time_t`, Visual Studio 2005 ve önceki sürümlerde 32 bit Windows işletim sistemlerinde 32 bitlik bir değerdir. `time_t`artık varsayılan olarak 64 bitlik bir tamsayıdır. Daha fazla bilgi için bkz. [süre yönetimi](../c-runtime-library/time-management.md).
 
-   Kodunuzun bir `int` değeri aldığını ve bir `size_t` veya `time_t` değeri olarak işlem yaparken dikkat etmeniz gerekir. Sayının 32 bitlik bir sayıdan daha büyük olması ve verilerin `int` depoya geri geçirildiğinde kesilecek olması mümkündür.
+   Kodunuzun bir **`int`** değeri aldığını ve bir veya değeri olarak işlem yaparken dikkat etmeniz gerekir `size_t` `time_t` . Sayının 32 bitlik bir sayıdan daha büyük olması ve verilerin depoya geri geçirildiğinde kesilecek olması mümkündür **`int`** .
 
-% X (onaltılı `int` biçim) `printf` değiştiricisi, 64 bitlik bir Windows işletim sisteminde beklendiği gibi çalışmaz. Yalnızca kendisine geçirilen değerin ilk 32 biti üzerinde çalışır.
+% X (onaltılı **`int`** Biçim) `printf` değiştiricisi, 64 bitlik bir Windows işletim sisteminde beklendiği gibi çalışmaz. Yalnızca kendisine geçirilen değerin ilk 32 biti üzerinde çalışır.
 
 - Onaltılık biçimde 32 bitlik bir integral türü göstermek için% I32x kullanın.
 
@@ -40,7 +40,7 @@ ms.locfileid: "69493321"
 
 Daha fazla bilgi için bkz.
 
-- [MSVC Derleyicisi Seçenekleri](reference/compiler-options.md)
+- [MSVC derleyici seçenekleri](reference/compiler-options.md)
 
 - [Geçiş Ipuçları](/windows/win32/WinProg64/migration-tips)
 

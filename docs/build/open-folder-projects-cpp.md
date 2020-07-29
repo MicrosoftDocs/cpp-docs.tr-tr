@@ -4,12 +4,12 @@ ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 9264aa4bf77de406bdde9042ef9ec4251763f721
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 73d6ff9fb9411b146082989d581ed35298b911ad
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320956"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229811"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio 'da C++ derleme sistemleri için açık klasör desteği
 
@@ -33,11 +33,11 @@ Visual Studio IDE 'yi, ana menüden doğrudan desteklenmeyen bir yapı sistemi v
 
 | | |
 |-|-|
-|CppProperties. JSON|Göz atmak için özel yapılandırma bilgilerini belirtin. Gerekirse, kök proje klasörünüzde bu dosyayı oluşturun. (CMake projelerinde kullanılmaz.)|
-|Tasks. vs. JSON|Özel derleme komutlarını belirtin. **Çözüm Gezgini** bağlam menüsü öğesi aracılığıyla erişilen **görevleri yapılandırın**.|
-|Launch. vs. JSON|Hata ayıklayıcı için komut satırı bağımsız değişkenlerini belirtin. **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları**aracılığıyla erişilir.|
+|Üzerinde CppProperties.js|Göz atmak için özel yapılandırma bilgilerini belirtin. Gerekirse, kök proje klasörünüzde bu dosyayı oluşturun. (CMake projelerinde kullanılmaz.)|
+|Üzerinde tasks.vs.js|Özel derleme komutlarını belirtin. **Çözüm Gezgini** bağlam menüsü öğesi aracılığıyla erişilen **görevleri yapılandırın**.|
+|Üzerinde launch.vs.js|Hata ayıklayıcı için komut satırı bağımsız değişkenlerini belirtin. **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları**aracılığıyla erişilir.|
 
-## <a name="configure-code-navigation-with-cpppropertiesjson"></a>CppProperties. JSON ile kod gezintisini yapılandırma
+## <a name="configure-code-navigation-with-cpppropertiesjson"></a>CppProperties.jsile kod gezintisini yapılandırma
 
 **Tanıma Git** gibi IntelliSense ve gözatma davranışlarının doğru çalışması Için, Visual Studio 'nun hangi derleyicisini kullandığınızı, sistem üstbilgilerinin nerede olduğunu ve doğrudan açtığınız klasörde (çalışma alanı klasörü) değil ek içerme dosyalarının nerede bulunduğunu bilmesi gerekir. Bir yapılandırma belirtmek için ana araç çubuğunda açılan listeden **yapılandırmaları Yönet** ' i seçebilirsiniz:
 
@@ -47,7 +47,7 @@ Visual Studio aşağıdaki varsayılan yapılandırmalara sahiptir:
 
 ![Varsayılan yapılandırma](media/default-configurations.png)
 
-Örneğin, **x64-Debug**' ı seçerseniz, Visual Studio kök proje klasörünüzde *cppproperties. JSON* adlı bir dosya oluşturur:
+Örneğin, **x64-Debug**' ı seçerseniz, Visual Studio kök proje klasörünüzde *CppProperties.js* adlı bir dosya oluşturur:
 
 ```json
 {
@@ -73,10 +73,10 @@ Visual Studio aşağıdaki varsayılan yapılandırmalara sahiptir:
 }
 ```
 
-Bu yapılandırma, Visual Studio [x64 Geliştirici komut istemi](building-on-the-command-line.md)ortam değişkenlerini devralır. Bu değişkenlerden biri, `INCLUDE` `${env.INCLUDE}` makroyu kullanarak buraya başvurabilirsiniz. Özelliği `includePath` , Visual Studio 'ya IntelliSense için gereken tüm kaynakları nerede bakacağını söyler. Bu durumda, "ıNCLUDE ortam değişkeni tarafından belirtilen tüm dizinlere ve ayrıca geçerli çalışma klasörü ağacındaki tüm dizinlere bak" diyor. `name` Özelliği, açılan menüde görünecek addır ve istediğiniz herhangi bir şey olabilir. Özelliği `defines` , koşullu derleme blokları Ile karşılaştığında IntelliSense 'e ipuçları sağlar. `intelliSenseMode` Özelliği, derleyici türüne göre bazı ek ipuçları sağlar. MSVC, GCC ve Clang için çeşitli seçenekler mevcuttur.
+Bu yapılandırma, Visual Studio [x64 Geliştirici komut istemi](building-on-the-command-line.md)ortam değişkenlerini devralır. Bu değişkenlerden biri, `INCLUDE` makroyu kullanarak buraya başvurabilirsiniz `${env.INCLUDE}` . `includePath`Özelliği, Visual Studio 'Ya IntelliSense için gereken tüm kaynakları nerede bakacağını söyler. Bu durumda, "ıNCLUDE ortam değişkeni tarafından belirtilen tüm dizinlere ve ayrıca geçerli çalışma klasörü ağacındaki tüm dizinlere bak" diyor. `name`Özelliği, açılan menüde görünecek addır ve istediğiniz herhangi bir şey olabilir. `defines`Özelliği, koşullu derleme blokları ile karşılaştığında IntelliSense 'e ipuçları sağlar. `intelliSenseMode`Özelliği, derleyici türüne göre bazı ek ipuçları sağlar. MSVC, GCC ve Clang için çeşitli seçenekler mevcuttur.
 
 > [!NOTE]
-> Visual Studio, *Cppproperties. JSON*içindeki ayarları yok saymış görünüyorsa, *. gitignore* dosyanıza şu şekilde bir özel durum eklemeyi deneyin: `!/CppProperties.json`.
+> Visual Studio *CppProperties.jsüzerindeki*ayarları yok saymış görünüyorsa, *. gitignore* dosyanıza şu şekilde bir özel durum eklemeyi deneyin: `!/CppProperties.json` .
 
 ## <a name="default-configuration-for-mingw-w64"></a>MinGW için varsayılan yapılandırma-W64
 
@@ -109,9 +109,9 @@ MinGW-W64 yapılandırmasını eklerseniz JSON şuna bakar:
 }
 ```
 
-`environments` Bloğa göz önünde edin. Bu, ortam değişkenleri gibi davranan ve yalnızca *Cppproperties. JSON* dosyasında değil, diğer yapılandırma dosyaları *görev. vs. JSON* ve *Launch. vs. JSON*içinde de bulunan özellikleri tanımlar. `Mingw64` Yapılandırma `mingw_w64` ortamı devralır ve değerini belirtmek için `INCLUDE` özelliğini kullanır. `includePath` Gerektiğinde bu dizi özelliğine başka yollar ekleyebilirsiniz. '
+Bloğa göz önünde edin `environments` . Ortam değişkenleri gibi davranan ve yalnızca dosyadaki *CppProperties.js* değil, diğer yapılandırma dosyalarında de *task.vs.js* ve *launch.vs.jsaçık*olan özellikleri tanımlar. `Mingw64`Yapılandırma `mingw_w64` ortamı devralır ve `INCLUDE` değerini belirtmek için özelliğini kullanır `includePath` . Gerektiğinde bu dizi özelliğine başka yollar ekleyebilirsiniz. '
 
-`intelliSenseMode` Özelliği gcc için uygun bir değere ayarlanır. Tüm bu özellikler hakkında daha fazla bilgi için bkz. [Cppproperties şema başvurusu](cppproperties-schema-reference.md).
+`intelliSenseMode`Özelliği GCC için uygun bir değere ayarlanır. Tüm bu özellikler hakkında daha fazla bilgi için bkz. [Cppproperties şema başvurusu](cppproperties-schema-reference.md).
 
 Her şey doğru şekilde çalıştığında, bir türün üzerine geldiğinizde GCC başlıklarından IntelliSense görürsünüz:
 
@@ -119,19 +119,19 @@ Her şey doğru şekilde çalıştığında, bir türün üzerine geldiğinizde 
 
 ## <a name="enable-intellisense-diagnostics"></a>IntelliSense tanılamayı etkinleştir
 
-İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar** > **Seçenekler** > **metin Düzenleyicisi** > **C/C++** > **Gelişmiş** ' e giderek ve **günlük kaydını** **true**olarak ayarlayarak sorun gidermeye devam edebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
+İstediğiniz IntelliSense 'i görmüyorsanız, **Araçlar**  >  **Seçenekler**  >  **metin Düzenleyicisi**  >  **C/C++**  >  **Gelişmiş** ' e giderek ve **günlüğü etkinleştir** **`true`** ' i ayarlayarak sorun giderebilirsiniz. İle başlamak için **günlük kaydı düzeyini** 5 olarak ayarlamayı ve filtreleri 8 ' e **kaydetmeyi** deneyin.
 
 ![Tanılama günlüğüne kaydetme](media/diagnostic-logging.png)
 
-Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster: Visual C++ günlük*' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *Cppproperties. JSON*içindeki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış gözatma verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
+Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster: Visual C++ günlük*' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *CppProperties.js*' deki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış gözatma verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 
-### <a name="define-build-tasks-with-tasksvsjson"></a>Görevler. vs. JSON ile derleme görevlerini tanımlama
+### <a name="define-build-tasks-with-tasksvsjson"></a>Üzerinde tasks.vs.jsderleme görevleri tanımlayın
 
 Mevcut çalışma alanınızda bulunan dosyalar üzerinde, derleme betikleri veya diğer dış işlemleri otomatikleştirebilir ve bunları doğrudan IDE 'de görevler olarak çalıştırabilirsiniz. Bir dosya veya klasöre sağ tıklayıp **görevleri Yapılandır**' ı seçerek yeni bir görev yapılandırabilirsiniz.
 
 ![Klasörü aç görevleri yapılandırma](media/configure-tasks.png)
 
-Bu, Visual Studio 'Nun kök proje klasörünüzde oluşturduğu. vs klasöründeki *Tasks. vs. JSON* dosyasını oluşturur (veya açar). Bu dosyada herhangi bir rastgele görev tanımlayabilir ve ardından **Çözüm Gezgini** bağlam menüsünden çağırabilirsiniz. GCC örneğine devam etmek için aşağıdaki kod parçacığında, bir proje derlemek için *g + +. exe* ' yi çağıran tek bir görevle birlikte tamamlanmış bir *Görevler. vs. JSON* dosyası gösterilmektedir. Projenin *Hello. cpp*adlı tek bir dosya içerdiğini varsayın.
+Bu, Visual Studio 'Nun kök proje klasörünüzde oluşturduğu. vs klasöründeki dosyasında *tasks.vs.js* oluşturur (veya açar). Bu dosyada herhangi bir rastgele görev tanımlayabilir ve ardından **Çözüm Gezgini** bağlam menüsünden çağırabilirsiniz. GCC örneğine devam etmek için aşağıdaki kod parçacığında, bir proje derlemek için *g + +. exe* ' yi çağıran tek bir görevle dosyadaki bir bütün *tasks.vs.js* gösterilmektedir. Projenin *Hello. cpp*adlı tek bir dosya içerdiğini varsayın.
 
 ```json
 {
@@ -154,9 +154,9 @@ Bu, Visual Studio 'Nun kök proje klasörünüzde oluşturduğu. vs klasöründe
 
 ```
 
-JSON dosyası *. vs* alt klasörüne yerleştirilir. Bu klasörü görmek için **Çözüm Gezgini**üstündeki **tüm dosyaları göster** düğmesine tıklayın. Bu görevi, **Çözüm Gezgini** kök düğümüne sağ tıklayıp **Merhaba Build**' i seçerek çalıştırabilirsiniz. Görev tamamlandığında **Çözüm Gezgini**yeni bir *Hello. exe* dosyası görmeniz gerekir.
+JSON dosyası *. vs* alt klasörüne yerleştirilir. Bu klasörü görmek için **Çözüm Gezgini**üstündeki **tüm dosyaları göster** düğmesine tıklayın. Bu görevi, **Çözüm Gezgini** kök düğümüne sağ tıklayıp **Merhaba Build**' i seçerek çalıştırabilirsiniz. Görev tamamlandığında, **Çözüm Gezgini** *hello.exe* yeni bir dosya görmeniz gerekir.
 
-Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnek, tek bir görevi tanımlayan *Tasks. vs. json dosyasını* gösterir. `taskLabel`bağlam menüsünde görünen adı tanımlar. `appliesTo`komutun hangi dosyalara uygulanabilir olduğunu tanımlar. `command` Özelliği, konsolunun yolunu tanımlayan ComSpec ortam değişkenine başvurur (Windows üzerinde*cmd. exe* ). Ayrıca, CppProperties. JSON veya CMakeSettings. JSON içinde belirtilen ortam değişkenlerine de başvurabilirsiniz. `args` Özelliği çağrılacak komut satırını belirtir. `${file}` Makro seçili dosyayı **Çözüm Gezgini**alır. Aşağıdaki örnek, seçili olan. cpp dosyasının dosya adını görüntüler.
+Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnekte, tek bir görevi tanımlayan bir *dosyatasks.vs.js* gösterilmektedir. `taskLabel`bağlam menüsünde görünen adı tanımlar. `appliesTo`komutun hangi dosyalara uygulanabilir olduğunu tanımlar. `command`Özelliği, konsol yolunu (Windows üzerinde*cmd.exe* ) tanımlayan ComSpec ortam değişkenine başvurur. Ayrıca, üzerinde veya CMakeSettings.jsüzerinde CppProperties.jsolarak belirtilen ortam değişkenlerine de başvurabilirsiniz. `args`Özelliği çağrılacak komut satırını belirtir. `${file}`Makro seçili dosyayı **Çözüm Gezgini**alır. Aşağıdaki örnek, seçili olan. cpp dosyasının dosya adını görüntüler.
 
 ```json
 {
@@ -173,13 +173,13 @@ Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnek, tek bir görevi
 }
 ```
 
-*Tasks. vs. JSON*dosyasını kaydettikten sonra, klasördeki herhangi bir *. cpp* dosyasına sağ tıklayabilir, bağlam menüsünden **echo filename** ' i seçebilir ve çıkış penceresinde görünen dosya adına bakabilirsiniz.
+*tasks.vs.js*kaydettikten sonra, klasördeki herhangi bir *. cpp* dosyasına sağ tıklayabilir, bağlam menüsünden **echo filename** ' i seçebilir ve çıkış penceresinde dosya adının görüntülenmesini sağlayabilirsiniz.
 
-Daha fazla bilgi için bkz. [Tasks. vs. JSON şema başvurusu](tasks-vs-json-schema-reference-cpp.md).
+Daha fazla bilgi için bkz. [şema başvurusundaTasks.vs.js](tasks-vs-json-schema-reference-cpp.md).
 
-### <a name="configure-debugging-parameters-with-launchvsjson"></a>Launch. vs. JSON ile hata ayıklama parametrelerini yapılandırma
+### <a name="configure-debugging-parameters-with-launchvsjson"></a>launch.vs.jshata ayıklama parametrelerini yapılandırma
 
-Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Bu, var olan bir *Launch. vs. JSON* dosyasını açar veya yoksa, bir dizi minimum başlatma ayarı ile yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGw-W64 projesinde hata ayıklamak için, **MinGW/Cygwin (GDB) için C/C++ başlatma**' yı seçiyoruz. Bu, *gdb. exe* ' yi kullanmak için varsayılan değerler hakkında bazı eğitirüler içeren bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden biri `MINGW_PREFIX`. Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya *Cppproperties. JSON*içinde `MINGW_PREFIX` bir özellik tanımlayabilirsiniz:
+Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Bu, dosya üzerinde var olan bir *launch.vs.js* açar veya yoksa, bir dizi minimum başlatma ayarı olan yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGw-W64 projesinde hata ayıklamak için, **MinGW/Cygwin (GDB) için C/C++ başlatma**' yı seçiyoruz. Bu, varsayılan değerler hakkında bazı eğitimleri tahmin etmek için *gdb.exe* kullanmaya yönelik bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden biri `MINGW_PREFIX` . Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya `MINGW_PREFIX` *üzerindeCppProperties.js*bir özellik tanımlayabilirsiniz:
 
 ```json
 {
@@ -207,11 +207,11 @@ Hata ayıklamayı başlatmak için, hata ayıklama açılan menüsünde yürüt�
 
 **Hata ayıklayıcıyı başlatma** iletişim kutusunu ve ardından programınızı çalıştıran bir dış konsol penceresini görmeniz gerekir.
 
-Daha fazla bilgi için bkz. [Launch. vs. JSON şema başvurusu](launch-vs-schema-reference-cpp.md).
+Daha fazla bilgi için bkz. [şema başvurusundalaunch.vs.js](launch-vs-schema-reference-cpp.md).
 
 ## <a name="launching-other-executables"></a>Diğer yürütülebilir dosyalar başlatılıyor
 
-Bilgisayarınızda çalıştırılabilir dosya için başlatma ayarları tanımlayabilirsiniz. Aşağıdaki örnek, *7za* 'yi başlatır ve `args` JSON dizisine ekleyerek ek bağımsız değişkenleri belirtir:
+Bilgisayarınızda çalıştırılabilir dosya için başlatma ayarları tanımlayabilirsiniz. Aşağıdaki örnek, *7za* 'yi başlatır ve JSON dizisine ekleyerek ek bağımsız değişkenleri belirtir `args` :
 
 ```json
 {

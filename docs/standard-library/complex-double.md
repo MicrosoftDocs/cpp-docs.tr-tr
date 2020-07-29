@@ -1,23 +1,23 @@
 ---
-title: karmaşık &lt;double &gt;
+title: karmaşık &lt; Çift&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - complex/std::complex<double>
 helpviewer_keywords:
 - complex<double> function
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
-ms.openlocfilehash: 8955669f4bc6fd7b3b373751e0e5134205dd1657
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: b9bf4780dd78800653804762301b36ff6bb30a92
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689785"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230084"
 ---
-# <a name="complexltdoublegt"></a>karmaşık &lt;double &gt;
+# <a name="complexltdoublegt"></a>karmaşık &lt; Çift&gt;
 
-İlki, karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden **Double**türü her ikisi de içeren sıralı bir nesne çifti depolayan bir nesneyi tanımlar.
+**`double`** İlki, karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden, her ikisi de türünde sıralı bir nesne çifti depolayan bir nesne tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <>
@@ -36,24 +36,24 @@ constexpr explicit complex(const complex<long double>& complexNum);
 
 ### <a name="parameters"></a>Parametreler
 
-*Realval* \
-Oluşturulan karmaşık sayının gerçek parçası için **Double** türü değeri.
+*RealVal*\
+**`double`** Oluşturulan karmaşık sayının gerçek parçası için tür değeri.
 
-*Imagval* \
-Oluşturulan karmaşık sayının sanal bölümü için **Double** türü değeri.
+*Imagval*\
+**`double`** Oluşturulmakta olan karmaşık sayının sanal parçasının tür değeri.
 
-*Karmaşıksayı* \
-Gerçek ve sanal parçaları, bir karmaşık sayıda **Double** oluşturulması için kullanılan **float** veya **Long Double** türündeki karmaşık sayı.
+*Karmaşıksayı*\
+**`float`** **`long double`** Oluşturulan karmaşık bir tür türü başlatmak için gerçek ve sanal parçaları kullanılan tür veya türün karmaşık sayısı **`double`** .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Double**türünde karmaşık bir sayı.
+Karmaşık türden bir sayıdır **`double`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonunun, **Double** türündeki karmaşık bir sınıfın açık özelleştirmesi, sınıf şablonundan yalnızca tanımladığı oluşturucularda farklılık gösterir. **Float** türünden **Double** 'a dönüştürmenin örtük olmasına izin verilir, ancak **Long Double** 'dan **Double** 'a dönüştürmenin **Açık**olması gerekir. Atama söz dizimini kullanarak tür dönüşümle başlatma, **Açık** kuralların kullanımı.
+Sınıf şablonunun karmaşık bir tür karmaşık özelleştirmesi, **`double`** sınıf şablonundan yalnızca tanımladığı oluşturucularda farklılık gösterir. Öğesinden öğesine dönüştürmenin **`float`** **`double`** örtük olmasına izin verilir, ancak öğesinden **`long double`** öğesine dönüştürmenin **`double`** olması gerekir **`explicit`** . **`explicit`** Atama söz dizimini kullanarak tür dönüşümle başlatma kurallarını kullanma.
 
-@No__t_0 sınıf şablonu hakkında daha fazla bilgi için bkz. [Complex Class](../standard-library/complex-class.md). @No__t_0 sınıf şablonu üyelerinin listesi için bkz.
+Sınıf şablonu hakkında daha fazla bilgi için `complex` bkz. [Complex Class](../standard-library/complex-class.md). Sınıf şablonu üyelerinin listesi için `complex` bkz..
 
 ## <a name="example"></a>Örnek
 
@@ -112,11 +112,11 @@ arg ( c3 ) = 0.896055 radians, which is 51.3402 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**: \<complex >
+**Üst bilgi**:\<complex>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[karmaşık sınıf](../standard-library/complex-class.md) \
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[karmaşık sınıf](../standard-library/complex-class.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

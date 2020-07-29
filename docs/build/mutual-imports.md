@@ -14,12 +14,12 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-ms.openlocfilehash: f01e69138a6ca1744645a1c2fa8525b7088e260d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 771ce7506359178c1b8346598e93c30a20329fe8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295681"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229798"
 ---
 # <a name="mutual-imports"></a>Karşılıklı İçeri Aktarmalar
 
@@ -37,20 +37,20 @@ Karşılıklı içeri aktarmaları işlemek için genel çözüm şunlardır:
 
 1. Tüm içeri aktarma kitaplıklarını derlemek için bağlantı veya LıB kullandıktan sonra, önceki adımda oluşturulmamış yürütülebilir dosyaları derlemek için geri dönün ve bağlantıyı çalıştırın. BAĞLANTı satırında karşılık gelen. exp dosyasının belirtilmesi gerektiğini unutmayın.
 
-   DLL1 için bir içeri aktarma kitaplığı oluşturmak üzere daha önce LıB yardımcı programını çalıştırırsanız LIB, DLL1. exp dosyasını da üreten. DLL1. dlll derlerken bağlantı kurmak için DLL1. exp 'yi giriş olarak kullanmanız gerekir.
+   DLL1 için bir içeri aktarma kitaplığı oluşturmak üzere daha önce LıB yardımcı programını çalıştırırsanız LIB, DLL1. exp dosyasını da üreten. DLL1.dlll oluştururken bağlantı kurmak için DLL1. exp 'yi giriş olarak kullanmanız gerekir.
 
 Aşağıdaki çizimde, iki karşılıklı içeri aktarma dll, DLL1 ve DLL2 için bir çözüm gösterilmektedir. 1. adım, DLL1 üzerinde/DEF seçenek kümesiyle LIB komutunu kullanmaktır. 1. adım DLL1. lib, bir içeri aktarma kitaplığı ve DLL1. exp üretir. 2. adımda içeri aktarma kitaplığı, DLL2's sembolleri için içeri aktarma kitaplığı üreten DLL2 oluşturmak için kullanılır. 3. adım, DLL1. exp ve DLL2. lib kullanarak girdi olarak DLL1 oluşturur. LıB, DLL2's içeri aktarma kitaplığı derlemek için kullanılmadığından, DLL2 için bir. exp dosyası gerekli değildir.
 
-(media/vc37yj1.gif "İki DLL 'yi bağlamak için karşılıklı içeri aktarmaları kullanarak") ![iki DLL 'yi bağlamak için karşılıklı içeri aktarmalar kullanma]<br/>
+![İki DLL 'yi bağlamak için karşılıklı içeri aktarmaları kullanma](media/vc37yj1.gif "İki DLL 'yi bağlamak için karşılıklı içeri aktarmaları kullanma")<br/>
 Iki dll 'yi karşılıklı Içeri aktarmalar ile bağlama
 
 ## <a name="limitations-of-_afxext"></a>_AFXEXT sınırlamaları
 
-MFC uzantı dll 'lerinizin ön işlemci sembolünü, `_AFXEXT` bırden çok MFC uzantı dll katmanınız olmadığı sürece kullanabilirsiniz. Kendi MFC uzantı dll 'larınızda bulunan ve daha sonra MFC sınıflarından türeten sınıfları çağıran MFC uzantı dll 'Leri varsa, karışıklığı önlemek için kendi önişlemci sembolünü kullanmanız gerekir.
+MFC uzantı dll `_AFXEXT` 'lerinizin ön işlemci sembolünü, birden çok MFC uzantı dll katmanınız olmadığı sürece kullanabilirsiniz. Kendi MFC uzantı dll 'larınızda bulunan ve daha sonra MFC sınıflarından türeten sınıfları çağıran MFC uzantı dll 'Leri varsa, karışıklığı önlemek için kendi önişlemci sembolünü kullanmanız gerekir.
 
-Bu sorun, Win32 'de, bir DLL 'den içeri aktarıldıysa **__declspec (dllexport)** olarak açıkça bir veri bildirmeniz ve bir dll 'den içeri aktarılacaksa **__declspec (dllimport)** olması gerekir. Tanımladığınızda `_AFXEXT`, MFC başlıkları **AFX_EXT_CLASS** doğru tanımlandığından emin olur.
+Bu sorun, Win32 'de, bir DLL 'den aktarılmış gibi herhangi bir veriyi açıkça bildirmeniz **`__declspec(dllexport)`** ve **`__declspec(dllimport)`** bir dll 'den içeri aktarılmanız gerekir. Tanımladığınızda `_AFXEXT` , MFC başlıkları **AFX_EXT_CLASS** doğru tanımlandığından emin olur.
 
-Birden çok katmanınız olduğunda, bir MFC uzantı DLL 'SI yeni sınıfları dışarı aktarabileceğinden ve başka bir MFC uzantısı DLL 'sinden başka sınıfları içeri aktarabileceğinden, **AFX_EXT_CLASS** gibi bir sembol yeterli değildir. Bu sorunu çözmek için dll 'yi kullanarak DLL 'nin kendisini oluşturduğunuzu belirten özel bir ön işlemci sembolünü kullanın. Örneğin, bir. dll ve B. dll olmak üzere iki MFC uzantı dll 'si düşünün. Her biri, sırasıyla bir. h ve B. h içindeki bazı sınıfları dışa aktarır. B. dll, bir. dll dosyasından sınıfları kullanır. Üst bilgi dosyaları şuna benzer:
+Birden çok katmanınız olduğunda, bir MFC uzantı DLL 'SI yeni sınıfları dışarı aktarabileceğinden ve başka bir MFC uzantısı DLL 'sinden başka sınıfları içeri aktarabileceğinden, **AFX_EXT_CLASS** gibi bir sembol yeterli değildir. Bu sorunu çözmek için dll 'yi kullanarak DLL 'nin kendisini oluşturduğunuzu belirten özel bir ön işlemci sembolünü kullanın. Örneğin, A.dll ve B.dll iki MFC uzantı dll 'Sini düşünün. Her biri, sırasıyla bir. h ve B. h içindeki bazı sınıfları dışa aktarır. B.dll, A.dll sınıfları kullanır. Üst bilgi dosyaları şuna benzer:
 
 ```
 /* A.H */
@@ -75,15 +75,15 @@ class CLASS_DECL_B CExampleB : public CExampleA
 ...
 ```
 
-Bir. dll oluşturulduğunda, ile `/D A_IMPL` oluşturulur ve B. dll oluşturulduğunda, ile `/D B_IMPL`oluşturulur. Her DLL için ayrı semboller kullanarak, `CExampleB` B. dll oluşturulurken `CExampleA` içeri aktarılır ve içeri aktarılır. `CExampleA`, bir. dll oluşturulduğunda ve B. dll (veya başka bir istemci) tarafından kullanıldığında içeri aktarılır.
+A.dll oluşturulduğunda, ile oluşturulur `/D A_IMPL` ve B.dll yapılandırıldığında ile oluşturulur `/D B_IMPL` . Her DLL için ayrı semboller kullanarak, `CExampleB` `CExampleA` B.dll oluşturulurken içeri aktarılır ve içeri aktarılır. `CExampleA`A.dll oluşturulurken ve B.dll (ya da başka bir istemci tarafından) kullanıldığında içeri aktarılır.
 
-Yerleşik **AFX_EXT_CLASS** ve `_AFXEXT` önişlemci sembolleri kullanılırken bu tür katmanlama yapılamaz. Yukarıda açıklanan teknik, MFC 'nin kendi etkin teknolojilerini, veritabanını ve ağ MFC uzantı dll 'Lerini oluştururken kullandığı mekanizmanın aksine bir şekilde bu sorunu çözer.
+Yerleşik **AFX_EXT_CLASS** ve önişlemci sembolleri kullanılırken bu tür katmanlama yapılamaz `_AFXEXT` . Yukarıda açıklanan teknik, MFC 'nin kendi etkin teknolojilerini, veritabanını ve ağ MFC uzantı dll 'Lerini oluştururken kullandığı mekanizmanın aksine bir şekilde bu sorunu çözer.
 
 ## <a name="not-exporting-the-entire-class"></a>Sınıfın tamamı dışarı aktarılmıyor
 
-Bir sınıfın tamamını dışa aktardığınızda, MFC makroları tarafından oluşturulan gerekli veri öğelerinin doğru şekilde dışarı aktarıldığından emin olmanız gerekir. Bu, belirli sınıfınızın makrosunu yeniden `AFX_DATA` tanımlayarak yapılabilir. Bu, tüm sınıfı dışarı aktardığınız zaman yapılmalıdır.
+Bir sınıfın tamamını dışa aktardığınızda, MFC makroları tarafından oluşturulan gerekli veri öğelerinin doğru şekilde dışarı aktarıldığından emin olmanız gerekir. Bu, `AFX_DATA` belirli sınıfınızın makrosunu yeniden tanımlayarak yapılabilir. Bu, tüm sınıfı dışarı aktardığınız zaman yapılmalıdır.
 
-Örneğin:
+Örnek:
 
 ```
 /* A.H */
@@ -129,4 +129,4 @@ class CExampleA : public CObject
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri ve Dışarı Aktarma](importing-and-exporting.md)
+[İçeri ve dışarı aktarma](importing-and-exporting.md)

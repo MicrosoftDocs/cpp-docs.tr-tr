@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4540
 ms.assetid: 8085e748-5f4d-43c2-b06d-eaf794edbf72
-ms.openlocfilehash: 859ff75bbd4b3fe248d9658495e64c0c039fbb40
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 13935e7eebdf3e7b7e89fad8c55d410cf2788e4d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186419"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87230655"
 ---
 # <a name="compiler-warning-level-1-c4540"></a>Derleyici Uyarısı (düzey 1) C4540
 
 dynamic_cast erişilemeyen veya belirsiz tabana dönüştürmek için kullanılır; çalışma zamanı testi başarısız olacak (' type1 '-' type2 ')
 
-Bir türden diğerine dönüştürmek için `dynamic_cast` kullandınız. Derleyici, bir temel sınıf erişilemez olduğu (örneğin, örneğin`private`) veya belirsiz olduğu (örneğin, sınıf hiyerarşisinde birden çok kez göründüğü) için dönüştürmenin her zaman başarısız olacağını ( **null**döndürecek) belirledi.
+**`dynamic_cast`** Bir türden diğerine dönüştürmek için kullandınız. Derleyici, taban sınıfına erişilemediğinden (örneğin **NULL** **`private`** ,) veya belirsiz (örneğin, sınıf hiyerarşisinde birden çok kez görünür) olduğundan, dönüştürmenin her zaman başarısız olacağını (null döndürecek) belirledi.
 
-Aşağıda bu uyarının bir örneği gösterilmektedir. **B** sınıfı, **A**sınıfından türetilir. Program, b **sınıfı `private`** ve bu nedenle erişilemez olduğu için her zaman başarısız olacak şekilde **b** sınıfından (türetilmiş sınıf) **bir sınıf A**'ya dönüştürmek için `dynamic_cast` kullanır. **A** erişiminin **genel** olarak değiştirilmesi, uyarıyı çözmeyecektir.
+Aşağıda bu uyarının bir örneği gösterilmektedir. **B** sınıfı, **A**sınıfından türetilir. Program, **`dynamic_cast`** b sınıfından olduğu ve bu nedenle erişilemeyen için her zaman başarısız olacak şekilde, **b** sınıfından (türetilmiş sınıf) sınıf **B** **A**'ya dönüştürmek için kullanır **`private`** . ' **A** erişiminin değiştirilmesi **`public`** uyarıyı çözmeyecektir.
 
 ```cpp
 // C4540.cpp

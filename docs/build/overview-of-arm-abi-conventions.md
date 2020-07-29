@@ -2,12 +2,12 @@
 title: ARM ABı kurallarına genel bakış
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-ms.openlocfilehash: 8737f7b1cbe0651b43eb3b9990a4035b60bd01b9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fc211b887b2b82f533c1e36bf95e6fd6b8e24728
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320726"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87229772"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABı kurallarına genel bakış
 
@@ -185,9 +185,9 @@ Tamsayı türü değerleri r0 içinde döndürülür ve isteğe bağlı olarak 6
 
 Yığın her zaman 4 baytlık hizalı olmalıdır ve herhangi bir işlev sınırında 8 baytlık hizalı olmalıdır. Bu, 64 bitlik yığın değişkenlerinde birbirine kenetlenmiş işlemlerin sık kullanımını desteklemek için gereklidir. ARM EABI, yığının herhangi bir genel arabirimde 8 bayt hizalı olduğunu belirtir. Tutarlılık için ARM ABı, tüm işlev sınırlarını bir ortak arabirim olacak şekilde değerlendirir.
 
-Bir çerçeve işaretçisi kullanmak zorunda olan işlevler — Örneğin, yığın işaretçisini dinamik olarak değiştiren `alloca` ya da değiştiren işlevler), R11 içinde çerçeve işaretçisini, bir OG işlevi içinde ayarlaması ve epıg 'ye kadar değişmeden bırakmalıdır. Çerçeve işaretçisi gerektirmeyen işlevler, prolog 'daki tüm yığın güncelleştirmelerini gerçekleştirmelidir ve yığın işaretçisini epıg 'ye kadar değişmeden bırakır.
+Bir çerçeve işaretçisi kullanmak zorunda olan işlevler — Örneğin, `alloca` yığın işaretçisini dinamik olarak değiştiren ya da değiştiren işlevler), R11 içinde çerçeve işaretçisini, bir OG işlevi içinde ayarlaması ve epıg 'ye kadar değişmeden bırakmalıdır. Çerçeve işaretçisi gerektirmeyen işlevler, prolog 'daki tüm yığın güncelleştirmelerini gerçekleştirmelidir ve yığın işaretçisini epıg 'ye kadar değişmeden bırakır.
 
-Yığın üzerinde 4 KB veya daha fazla alan işlevleri, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu, hiçbir kodun, Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık" kullanmasını sağlar. Genellikle, bu, toplam yığın ayırmayı `__chkstk` R4 içinde 4 ' te bölünen ve son yığın ayırma miktarını R4 ' de geri döndüren yardımcı tarafından yapılır.
+Yığın üzerinde 4 KB veya daha fazla alan işlevleri, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu, hiçbir kodun, Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık" kullanmasını sağlar. Genellikle, bu, `__chkstk` toplam yığın ayırmayı R4 içinde 4 ' te bölünen ve son yığın ayırma miktarını R4 ' de geri döndüren yardımcı tarafından yapılır.
 
 ### <a name="red-zone"></a>Kırmızı bölge
 
@@ -201,7 +201,7 @@ Windows 'daki varsayılan çekirdek modu yığını üç sayfalardır (12 KB). �
 
 Numaralandırmadaki en az bir değer 64-bit çift sözcüklü depolama alanı gerektirmediği için numaralandırmalar 32 bitlik tamsayı türleridir. Bu durumda, numaralandırma 64 bitlik bir tamsayı türüne yükseltilir.
 
-`wchar_t``unsigned short`, diğer platformlarla uyumluluğu korumak için ile eşdeğer olacak şekilde tanımlanır.
+**`wchar_t`****`unsigned short`**, diğer platformlarla uyumluluğu korumak için ile eşdeğer olacak şekilde tanımlanır.
 
 ## <a name="stack-walking"></a>Yığın yürüme
 
@@ -213,13 +213,13 @@ Windows kodu, hızlı yığın yürümesini etkinleştirmek için çerçeve işa
 
 ARM EABI, geriye doğru izleme kodları kullanan bir özel durum izleme modeli belirtir. Bununla birlikte, bu belirtim Windows 'da geriye doğru izleme için yeterli değildir; bu, işlemcinin bir işlevin işlem veya başlangıç sayısının ortasında olduğu durumları ele almalıdır. ARM özel durum verilerinde Windows ve geri sarma hakkında daha fazla bilgi için bkz. [ARM özel durum işleme](arm-exception-handling.md).
 
-Oluşturulan kodun özel durum işleme katılmasını sağlamak için `RtlAddFunctionTable` , ve ilişkili işlevlere yapılan çağrılarında belirtilen dinamik işlev tabloları kullanılarak, dinamik olarak üretilen kodun açıklanmasını öneririz.
+`RtlAddFunctionTable`Oluşturulan kodun özel durum işleme katılmasını sağlamak için, ve ilişkili işlevlere yapılan çağrılarında belirtilen dinamik işlev tabloları kullanılarak, dinamik olarak üretilen kodun açıklanmasını öneririz.
 
 ## <a name="cycle-counter"></a>Bisiklet sayacı
 
-Windows çalıştıran ARM işlemcileri bir bisiklet sayacını desteklemek için gereklidir, ancak sayacı doğrudan kullanmak sorunlara neden olabilir. Bu sorunlardan kaçınmak için ARM 'de Windows, normalleştirilmiş bir 64 bit kullanım sayacı değeri istemek için tanımsız bir Opcode kullanır. C veya C++ ' dan, uygun `__rdpmccntr64` Opcode 'ı göstermek için iç öğesini kullanın; derlemesinden, `__rdpmccntr64` yönergesini kullanın. Döngü sayacını okumak Cortex-A9 üzerinde yaklaşık 60 döngü sürer.
+Windows çalıştıran ARM işlemcileri bir bisiklet sayacını desteklemek için gereklidir, ancak sayacı doğrudan kullanmak sorunlara neden olabilir. Bu sorunlardan kaçınmak için ARM 'de Windows, normalleştirilmiş bir 64 bit kullanım sayacı değeri istemek için tanımsız bir Opcode kullanır. C veya C++ ' dan, `__rdpmccntr64` uygun Opcode 'ı oluşturmak için iç öğesini kullanın; derlemeden `__rdpmccntr64` yönergesini kullanın. Döngü sayacını okumak Cortex-A9 üzerinde yaklaşık 60 döngü sürer.
 
-Sayaç, saat değil, doğru bir geçiş sayacıdır; Bu nedenle, sayım sıklığı işlemci sıklığıyla farklılık gösterir. Geçen saat süresini ölçmek istiyorsanız kullanın `QueryPerformanceCounter`.
+Sayaç, saat değil, doğru bir geçiş sayacıdır; Bu nedenle, sayım sıklığı işlemci sıklığıyla farklılık gösterir. Geçen saat süresini ölçmek istiyorsanız kullanın `QueryPerformanceCounter` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
