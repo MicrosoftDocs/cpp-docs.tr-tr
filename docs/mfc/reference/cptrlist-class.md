@@ -8,16 +8,16 @@ helpviewer_keywords:
 - CPtrList class [MFC]
 - generic lists
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
-ms.openlocfilehash: 5b88b0950b3b46f9738bd26080883c00d46f8555
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d7da4fe52d25d9ffdf6371aa40f41d7082f1165c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62372445"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226847"
 ---
 # <a name="cptrlist-class"></a>CPtrList sınıfı
 
-Void işaretçilerin listelerini destekler.
+Void işaretçilerinin listesini destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,23 +27,23 @@ class CPtrList : public CObject
 
 ## <a name="members"></a>Üyeler
 
-Üye işlevlerinin `CPtrList` sınıfın üye işlevleri için benzer [CObList](../../mfc/reference/coblist-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CObList` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir işlev parametre veya dönüş değeri olarak alternatif bir işaretçiye **void**.
+Öğesinin üye işlevleri, `CPtrList` sınıf [CObList](../../mfc/reference/coblist-class.md)öğesinin üye işlevlerine benzerdir. Bu benzerlik nedeniyle, `CObList` üye işlevi özellikleri için başvuru belgelerini kullanabilirsiniz. Bir `CObject` işaretçiyi işlev parametresi veya dönüş değeri olarak gördüğünüz her yerde, bir işaretçisi yerine **`void`** .
 
 `CObject*& CObList::GetHead() const;`
 
-Örneğin, için çevirir
+Örneğin, öğesine çevirir
 
 `void*& CPtrList::GetHead() const;`
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPtrList` ımplement_dynamıc makrosu, çalışma zamanı tür erişimi ve dökme için desteği kapsayan bir `CDumpContext` nesne. Tek tek işaretçi liste öğelerini dökümü gerekiyorsa, 1 veya daha büyük derinliği döküm bağlam ayarlamanız gerekir.
+`CPtrList`çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek bir işaretçi listesi öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-İşaretçi listeleri nelze serializovat.
+İşaretçi listeleri serileştirilemiyor.
 
-Olduğunda bir `CPtrList` nesnesi silindiğinde veya yalnızca işaretçiler öğelerine kaldırıldığında kaldırılır, bunlar başvuru varlıkları.
+Bir `CPtrList` nesne silindiğinde veya öğeleri kaldırıldığında, başvurdukları varlıkların değil yalnızca işaretçiler kaldırılır.
 
-Kullanma hakkında daha fazla bilgi için `CPtrList`, makaleye göz atın [koleksiyonları](../../mfc/collections.md).
+Kullanma hakkında daha fazla bilgi için `CPtrList` bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -53,10 +53,10 @@ Kullanma hakkında daha fazla bilgi için `CPtrList`, makaleye göz atın [kolek
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CObList Sınıfı](../../mfc/reference/coblist-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CObList sınıfı](../../mfc/reference/coblist-class.md)

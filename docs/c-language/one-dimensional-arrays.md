@@ -10,12 +10,12 @@ helpviewer_keywords:
 - square brackets [ ], arrays
 - subscript expressions
 ms.assetid: e28536e5-3b77-46b5-97fd-9b938c771816
-ms.openlocfilehash: 7ac57a65d575ba6a9134f3c4474103735411847d
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: c310d610b4e4cfc5ae5620d38337a5b8fd5243ef
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299110"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226359"
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 
@@ -38,7 +38,7 @@ int main() {
 
 Alt simge ifadeleri genellikle dizi öğelerine başvurmak için kullanılır, ancak herhangi bir işaretçiye bir alt simge uygulayabilirsiniz. Değerlerin sırası ne olursa olsun, *ifade* köşeli ayraç (**[]**) içine alınmalıdır.
 
-Alt simge ifadesi, tam sayı değeri işaretçi değerine eklenerek değerlendirilir ve ardından yöneltme işleci (<strong>\*</strong>) uygulamaya eklenir. (Yöneltme işlecinin bir tartışması için bkz. [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md) .) Aslında, tek boyutlu bir dizi için aşağıdaki dört ifade eşdeğerdir, yani `a` bir işaretçi ve `b` bir tamsayıdır.
+Alt simge ifadesi, tam sayı değeri işaretçi değerine eklenerek değerlendirilir ve ardından yöneltme işleci () uygulamaya eklenir <strong>\*</strong> . (Yöneltme işlecinin bir tartışması için bkz. [yöneltme ve adres işleçleri](../c-language/indirection-and-address-of-operators.md) .) Aslında, tek boyutlu bir dizi için aşağıdaki dört ifade eşdeğerdir, yani `a` bir işaretçi ve `b` bir tamsayıdır.
 
 ```
 a[b]
@@ -49,15 +49,15 @@ b[a]
 
 Toplama işleci (eklenen [Işleçlere](../c-language/c-additive-operators.md)göre) için dönüştürme kurallarına göre, integral değeri, işaretçi tarafından ele alınan türün uzunluğuna göre çarpılarak bir adres denkleine dönüştürülür.
 
-Örneğin, tanımlayıcının `line` bir `int` değerler dizisine başvurduğunu varsayın. Aşağıdaki yordam, alt simge ifadesini `line[ i ]`değerlendirmek için kullanılır:
+Örneğin, tanımlayıcının `line` bir değerler dizisine başvurduğunu varsayın **`int`** . Aşağıdaki yordam, alt simge ifadesini değerlendirmek için kullanılır `line[ i ]` :
 
-1. Tamsayı değeri `i` , bir `int` öğenin uzunluğu olarak tanımlanan bayt sayısıyla çarpılır. Dönüştürülmüş değeri konumları `i` temsil eder `i` `int` .
+1. Tamsayı değeri, `i` bir öğenin uzunluğu olarak tanımlanan bayt sayısıyla çarpılır **`int`** . Dönüştürülmüş değeri `i` konumları temsil eder `i` **`int`** .
 
-1. `line`Bu dönüştürülen değer, konumundan `i` `int` `line`konum konumu olan bir adres sağlamak için özgün işaretçi değerine () eklenir.
+1. Bu dönüştürülen değer, konumundan konum konumu `line` olan bir adres sağlamak için özgün işaretçi değerine () eklenir `i` **`int`** `line` .
 
-1. Yöneltme işleci yeni adrese uygulanır. Sonuç, bu konumdaki dizi öğesinin değeridir (ıntuicanlı, `line [ i ]`).
+1. Yöneltme işleci yeni adrese uygulanır. Sonuç, bu konumdaki dizi öğesinin değeridir (ıntuicanlı, `line [ i ]` ).
 
-Alt simge ifadesi `line[0]` , tarafından `line` temsil edilen adresten alınan konum 0 olduğundan, satırın ilk öğesinin değerini temsil eder. Benzer şekilde, gibi bir ifade `line[5]` , öğesi, satırdaki beş konum veya dizideki altıncı öğe olan öğe anlamına gelir.
+Alt simge ifadesi `line[0]` , tarafından temsil edilen adresten alınan konum 0 olduğundan, satırın ilk öğesinin değerini temsil eder `line` . Benzer şekilde, gibi bir ifade, `line[5]` öğesi, satırdaki beş konum veya dizideki altıncı öğe olan öğe anlamına gelir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

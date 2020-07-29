@@ -11,16 +11,16 @@ f1_keywords:
 helpviewer_keywords:
 - IVirtualProcessorRoot structure
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
-ms.openlocfilehash: f642a29d0a80568f7a5f2a5e89f6951d4819243e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 869d51144b686dd684f62b337bb90eff8a9a5589
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364255"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87193958"
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot Yapısı
 
-İş parçacığı proxy'si yürütülebileceği bir donanım iş parçacığı için soyutlama.
+İş parçacığı proxy 'sinin yürütebileceği donanım iş parçacığı için bir soyutlama.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,18 +32,18 @@ struct IVirtualProcessorRoot : public IExecutionResource;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[iVirtualProcessorRoot::Etkinleştir](#activate)|Yürütme bağlamı arabirimiyle `pContext` ilişkili iş parçacığı proxy'sinin bu sanal işlemci kökünde yürütmeye başlamasına neden olur.|
-|[IVirtualProcessorRoot::Deactivate](#deactivate)|Yürütme bağlamını göndermeyi durdurmak için şu anda bu sanal işlemci köküüzerinde çalıştırıyorum iş parçacığı proxy neden olur. İş parçacığı proxy `Activate` yöntemiiçin bir çağrı yürütme devam edecektir.|
-|[iVirtualProcessorRoot::Tüm Görevlerin Görünür Olmasını Sağlar](#ensurealltasksvisible)|Tek tek işlemcilerin bellek hiyerarşisinde depolanan verilerin sistemdeki tüm işlemciler tarafından görülebilmesine neden olur. Yöntem dönmeden önce tüm işlemcilerde tam bellek çitinin yürütülmesini sağlar.|
-|[IVirtualProcessorRoot::Getid](#getid)|Sanal işlemci kökü için benzersiz bir tanımlayıcı döndürür.|
+|[IVirtualProcessorRoot:: Activate](#activate)|Yürütme bağlamı arabirimiyle ilişkili iş parçacığı proxy 'sinin `pContext` Bu sanal işlemci kökünde yürütülmeye başlamasını sağlar.|
+|[IVirtualProcessorRoot::D eactivate](#deactivate)|Şu anda bu sanal işlemci kökünde çalışan iş parçacığı proxy 'sinin Yürütme bağlamını gönderme durmasına neden olur. İş parçacığı proxy 'si, yönteme yapılan bir çağrıda yürütülmeye sürdürülecek `Activate` .|
+|[IVirtualProcessorRoot:: EnsureAllTasksVisible](#ensurealltasksvisible)|Tek tek işlemcilerin bellek hiyerarşisinde depolanan verilerin sistemdeki tüm işlemcilere görünür hale gelmesine neden olur. Yöntemin döndürdüğü tüm işlemcilerde tam bir bellek diliminin yürütülmesini sağlar.|
+|[IVirtualProcessorRoot:: GetId](#getid)|Sanal işlemci kökü için benzersiz bir tanımlayıcı döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her sanal işlemci kökilişkili bir yürütme kaynağı vardır. `IVirtualProcessorRoot` [Arabirim, IExecutionResource](iexecutionresource-structure.md) arabiriminden devralır. Birden çok sanal işlemci kökü aynı temel donanım iş parçacığına karşılık gelebilir.
+Her sanal işlemci kökünün ilişkili bir yürütme kaynağı vardır. `IVirtualProcessorRoot`Arabirim [IExecutionResource](iexecutionresource-structure.md) arabiriminden devralır. Birden çok sanal işlemci kökü, aynı temel alınan donanım iş parçacığına karşılık gelebilir.
 
-Kaynak Yöneticisi, kaynak isteklerine yanıt olarak zamanlayıcılara sanal işlemci kökleri verir. Zamanlayıcı, yürütme bağlamıyla etkinleştirerek işi gerçekleştirmek için sanal işlemci kökünü kullanabilir.
+Kaynak Yöneticisi, kaynak isteklerine yanıt olarak zamanlayıcılar 'e sanal işlemci kökleri verir. Bir zamanlayıcı, bir yürütme bağlamı ile etkinleştirerek çalışmayı gerçekleştirmek için bir sanal işlemci kökü kullanabilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -53,13 +53,13 @@ Kaynak Yöneticisi, kaynak isteklerine yanıt olarak zamanlayıcılara sanal iş
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ivirtualprocessorrootactivate-method"></a><a name="activate"></a>iVirtualProcessorRoot::Etkinleştirme Yöntemi
+## <a name="ivirtualprocessorrootactivate-method"></a><a name="activate"></a>IVirtualProcessorRoot:: Activate yöntemi
 
-Yürütme bağlamı arabirimiyle `pContext` ilişkili iş parçacığı proxy'sinin bu sanal işlemci kökünde yürütmeye başlamasına neden olur.
+Yürütme bağlamı arabirimiyle ilişkili iş parçacığı proxy 'sinin `pContext` Bu sanal işlemci kökünde yürütülmeye başlamasını sağlar.
 
 ```cpp
 virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
@@ -67,28 +67,28 @@ virtual void Activate(_Inout_ IExecutionContext* pContext) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pcontext*<br/>
-Bu sanal işlemci kökünde gönderilecek yürütme bağlamına bir arabirim.
+*pContext*<br/>
+Bu sanal işlemci kökünde dağıtılacak yürütme bağlamına yönelik bir arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yürütme bağlamı arabirimi ile ilişkili değilse Kaynak Yöneticisi bir iş parçacığı proxy sağlar`pContext`
+Kaynak Yöneticisi, yürütme bağlamı arabirimiyle ilişkilendirilmediği bir iş parçacığı proxy 'si sağlar`pContext`
 
-Yöntem, `Activate` Kaynak Yöneticisi tarafından döndürülen yeni bir sanal işlemci kökü üzerinde çalışmayı yürütmeye başlamak veya devre dışı bırakılmış veya devre dışı bırakmak üzere olan sanal işlemci kökündeki iş parçacığı proxy'sini devam ettirmek için kullanılabilir. Bkz. [IVirtualProcessorRoot::Ddevre](#deactivate) dışı bırakma hakkında daha fazla bilgi için etkinleştirin. Devre dışı bırakılmış bir sanal işlemci kökünü devam `pContext` ettirirken, parametre sanal işlemci kökünü devre dışı bırakmak için kullanılan parametreyle aynı olmalıdır.
+`Activate`Yöntemi, kaynak yöneticisi tarafından döndürülen yeni bir sanal işlemci kökünde iş yürütmeye başlamak veya devre dışı bırakılan veya devre dışı bırakmak üzere olan bir sanal işlemci kökünde iş parçacığı proxy 'sini sürdürmek için kullanılabilir. Devre dışı bırakma hakkında daha fazla bilgi için bkz. [IVirtualProcessorRoot::D eactivate](#deactivate) . Devre dışı bırakılan bir sanal işlemci kökünü sürdürülürken, parametre `pContext` sanal işlemci kökünü devre dışı bırakmak için kullanılan parametreyle aynı olmalıdır.
 
-Sanal işlemci kökü ilk kez etkinleştirildikten sonra, sonraki `Deactivate` çift `Activate` çağrılar birbiriyle yarışabilir ve diğerleriyle yarışabilir. Bu, Kaynak Yöneticisi'nin, amaçlandığını niçin aradığı `Activate` `Deactivate` aramayı almadan önce bir çağrı almasının kabul edilebilir olduğu anlamına gelir.
+Bir sanal işlemci kökü ilk kez etkinleştirildikten sonra, ve ' a yapılan çağrı çiftleri birbirini `Deactivate` `Activate` verebilir. Bu, Kaynak Yöneticisi için, kendisine `Activate` ait olan çağrıyı almadan önce bir çağrı alması için kabul edilebilir olduğu anlamına gelir `Deactivate` .
 
-Sanal işlemci kökünü etkinleştirdiğinizde, Kaynak Yöneticisi'ne bu sanal işlemci kökünün şu anda işle meşgul olduğunu bildiren bir işaret verirsiniz. Zamanlayıcınız bu köküzerinde yürütülecek herhangi bir iş bulamıyorsa, Kaynak Yöneticisi'ne sanal işlemci kökünü boşta olduğunu bildiren `Deactivate` yöntemi çağırması beklenir. Kaynak Yöneticisi, sistemi yüklemek için bu verileri kullanır.
+Bir sanal işlemci kökünü etkinleştirdiğinizde, bu sanal işlemci kökünün Şu anda çalışmaya meşgul olduğunu Kaynak Yöneticisi sinyaliniz. Scheduler bu kökte yürütülecek bir iş bulamazsa, `Deactivate` sanal işlemci kökünün boşta olduğunu Kaynak Yöneticisi bildiren yöntemi çağırmak beklenir. Kaynak Yöneticisi, sistemin yükünü dengelemek için bu verileri kullanır.
 
-`invalid_argument`bağımsız değişken `pContext` in değeri `NULL`varsa atılır.
+`invalid_argument`bağımsız değişkenin değeri varsa oluşturulur `pContext` `NULL` .
 
-`invalid_operation`bağımsız değişken, `pContext` bu sanal işlemci kökü tarafından en son gönderilen yürütme bağlamını temsil etmiyorsa atılır.
+`invalid_operation`bağımsız değişken, `pContext` Bu sanal işlemci kökü tarafından en son dağıtılan Yürütme bağlamını temsil etmediği zaman oluşturulur.
 
-Sanal işlemci kökünü etkinleştirme eylemi, temel donanım iş parçacığının abonelik düzeyini bir artırır. Abonelik düzeyleri hakkında daha fazla bilgi için [bkz: IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
+Bir sanal işlemci kökünü etkinleştirme eylemi, temel alınan donanım iş parçacığının abonelik düzeyini bir tane artırır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="ivirtualprocessorrootdeactivate-method"></a><a name="deactivate"></a>IVirtualProcessorRoot::Deactivate Yöntemi
+## <a name="ivirtualprocessorrootdeactivate-method"></a><a name="deactivate"></a>IVirtualProcessorRoot::D eactivate yöntemi
 
-Yürütme bağlamını göndermeyi durdurmak için şu anda bu sanal işlemci köküüzerinde çalıştırıyorum iş parçacığı proxy neden olur. İş parçacığı proxy `Activate` yöntemiiçin bir çağrı yürütme devam edecektir.
+Şu anda bu sanal işlemci kökünde çalışan iş parçacığı proxy 'sinin Yürütme bağlamını gönderme durmasına neden olur. İş parçacığı proxy 'si, yönteme yapılan bir çağrıda yürütülmeye sürdürülecek `Activate` .
 
 ```cpp
 virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
@@ -96,30 +96,30 @@ virtual bool Deactivate(_Inout_ IExecutionContext* pContext) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pcontext*<br/>
-Şu anda bu kök tarafından gönderilen bağlam.
+*pContext*<br/>
+Bu kök tarafından şu anda gönderilen bağlam.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Boole değeri. **True** değeri, iş parçacığı `Deactivate` `Activate` proxy'sinin yönteme yapılan çağrıya yanıt olarak yöntemden döndüğünü gösterir. Bir değer, kaynak yöneticisindeki bir bildirim olayına yanıt olarak iş parçacığı proxy'sinin yöntemden geri döndüğünü `false` gösterir. Kullanıcı modu zamanlanabilir (UMS) iş parçacığı zamanlayıcısında, bu, maddelerin zamanlayıcının tamamlanma listesinde göründüğünü ve zamanlayıcının bunları işlemek için gerekli olduğunu gösterir.
+Boole değeri. Değeri, **`true`** iş parçacığı proxy 'sinin yöntemine yapılan `Deactivate` çağrıya yanıt olarak yönteminden döndürüldüğünü gösterir `Activate` . Değeri, **`false`** iş parçacığı proxy 'sinin Kaynak Yöneticisi bir bildirim olayına yanıt olarak yönteminden döndürüldüğünü gösterir. Bir Kullanıcı modu zamanlanabilen (UMS) iş parçacığı Scheduler 'da, bu öğelerin Scheduler 'ın tamamlanma listesinde göründü olduğunu ve Scheduler 'ın bunları işlemek için gerekli olduğunu gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zamanlayıcınızda herhangi bir iş bulamadığınızda sanal işlemci kökünü yürütmeyi geçici olarak durdurmak için bu yöntemi kullanın. Yönteme `Deactivate` yapılan bir çağrı, sanal `Dispatch` işlemci kökünün en son etkinleştirilen yürütme bağlamı yöntemi nin içinden kaynaklanmalıdır. Başka bir deyişle, `Deactivate` yöntemi çağıran iş parçacığı proxy şu anda sanal işlemci köküüzerinde yürütülen biri olmalıdır. Yöntemin yürütülmediğiniz sanal işlemci kökünde çağrılması tanımlanmamış davranışlara neden olabilir.
+Zamanlayıcıda herhangi bir iş bulamadığınızda bir sanal işlemci kökünü yürütmeyi geçici olarak durdurmak için bu yöntemi kullanın. Yöntemine yapılan bir çağrı, `Deactivate` `Dispatch` sanal işlemci kökünün en son etkinleştirildiği yürütme bağlamı yönteminin içinden kaynaklanmalıdır. Diğer bir deyişle, yöntemi çağıran iş parçacığı proxy 'si, `Deactivate` Şu anda sanal işlemci kökünde yürütülmekte olan bir olmalıdır. Üzerinde yürütmekte olduğunuz bir sanal işlemci kökünde yöntemi çağırmak tanımsız davranışa neden olabilir.
 
-Devre dışı bırakılmış bir sanal işlemci kökü, `Activate` `Deactivate` yönteme geçirilen aynı bağımsız değişkenle yönteme yapılan bir çağrıyla uyandırılabilir. Zamanlayıcı, çağrıların ve `Activate` `Deactivate` yöntemlerin eşleştirilmesini sağlamaktan sorumludur, ancak belirli bir sırada alınması gerekmez. Kaynak Yöneticisi, metnin `Activate` amacı nın geldiği `Deactivate` yönteme çağrı almadan önce yönteme çağrı almayı işleyebilir.
+Devre dışı bırakılmış bir sanal işlemci kökü, yönteme `Activate` geçirilmiş aynı bağımsız değişkenle birlikte yöntemi çağrısıyla birlikte woolabilir `Deactivate` . Zamanlayıcı, `Activate` ve yöntemlerine yapılan çağrıların `Deactivate` eşlenmesinin ve belirli bir sırada alınmaları gerekmeyeceğinden sorumludur. Kaynak Yöneticisi, `Activate` yöntemi için amaçlanan yönteme çağrı almadan önce bir çağrı almayı işleyebilir `Deactivate` .
 
-Sanal işlemci kökü uyanır ve `Deactivate` yöntemden gelen geri dönüş değeri **yanlış**ise, zamanlayıcı `IUMSCompletionList::GetUnblockNotifications` yöntem aracılığıyla UMS tamamlama listesini sorgulamalı, `Deactivate` bu bilgilere göre hareket etmeli ve daha sonra yöntemi yeniden aramalıdır. Bu yöntem değeri `Deactivate` `true`döndürür gibi bir zaman akadar tekrarlanmalıdır.
+Bir sanal işlemci kök Awakens ve döndürülen değer `Deactivate` değer ise **`false`** , Scheduler YÖNTEMI aracılığıyla UMS tamamlama listesini sorgulayıp, daha `IUMSCompletionList::GetUnblockNotifications` sonra `Deactivate` yöntemi yeniden çağırmalıdır. Bu, yöntem değeri döndürdüğünden Bu süre kadar tekrarlanmalıdır `Deactivate` **`true`** .
 
-`invalid_argument`bağımsız değişken `pContext` NULL değerine sahipse atılır.
+`invalid_argument`bağımsız değişkenin `pContext` DEĞERI null ise oluşturulur.
 
-`invalid_operation`sanal işlemci kökü hiç etkinleştirilmemişse veya `pContext` bağımsız değişken bu sanal işlemci kökü tarafından en son gönderilen yürütme bağlamını temsil etmiyorsa atılır.
+`invalid_operation`sanal işlemci kökü hiç etkinleştirilmemişse veya bağımsız değişken `pContext` Bu sanal işlemci kökü tarafından en son dağıtılan Yürütme bağlamını temsil etmediği zaman oluşturulur.
 
-Sanal işlemci kökünü devre dışı düşürme eylemi, temel donanım iş parçacığının abonelik düzeyini bir azaltır. Abonelik düzeyleri hakkında daha fazla bilgi için [bkz: IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
+Sanal işlemci kökünü devre dışı bırakma eylemi, temel alınan donanım iş parçacığının abonelik düzeyini bir azaltır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="ivirtualprocessorrootensurealltasksvisible-method"></a><a name="ensurealltasksvisible"></a>iVirtualProcessorRoot::EnsureAllTasksVisible Yöntemi
+## <a name="ivirtualprocessorrootensurealltasksvisible-method"></a><a name="ensurealltasksvisible"></a>IVirtualProcessorRoot:: EnsureAllTasksVisible yöntemi
 
-Tek tek işlemcilerin bellek hiyerarşisinde depolanan verilerin sistemdeki tüm işlemciler tarafından görülebilmesine neden olur. Yöntem dönmeden önce tüm işlemcilerde tam bellek çitinin yürütülmesini sağlar.
+Tek tek işlemcilerin bellek hiyerarşisinde depolanan verilerin sistemdeki tüm işlemcilere görünür hale gelmesine neden olur. Yöntemin döndürdüğü tüm işlemcilerde tam bir bellek diliminin yürütülmesini sağlar.
 
 ```cpp
 virtual void EnsureAllTasksVisible(_Inout_ IExecutionContext* pContext) = 0;
@@ -127,20 +127,20 @@ virtual void EnsureAllTasksVisible(_Inout_ IExecutionContext* pContext) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pcontext*<br/>
-Şu anda bu sanal işlemci kökü tarafından gönderilen bağlam.
+*pContext*<br/>
+Bu sanal işlemci kökü tarafından şu anda gönderilen bağlam.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zamanlayıcıya yeni çalışma eklenmesiyle sanal işlemci kökünün devre dışı bırakılmasını eşitlemek istediğinizde bu yöntem yararlı olabilir. Performans nedenleriyle, bellek engelini yürütmeden zamanlayıcınıza iş öğeleri eklemeye karar verebilirsiniz, bu da bir işlemcide çalıştırılan bir iş parçacığı tarafından eklenen iş öğelerinin diğer tüm işlemciler tarafından hemen görülememesi anlamına gelir. Yöntemle `Deactivate` birlikte bu yöntemi kullanarak zamanlayıcınızın tüm sanal işlemci köklerini devre dışı bırakmadığından emin olabilirsiniz.
+Bu yöntemi, bir sanal işlemci kökünü devre dışı bırakmak istediğinizde, yeni çalışmanın Scheduler 'a eklenmesini istediğiniz durumlarda yararlı olabilir. Performans nedenleriyle, bir bellek engeli yürütmeden iş öğelerini zamanlayıcıya eklemeyi seçebilirsiniz. Bu, bir işlemci üzerinde çalışan iş öğelerinin, tüm diğer işlemcilere hemen görünmeyeceği anlamına gelir. Bu yöntemi yöntemiyle birlikte kullanarak, Scheduler `Deactivate` 'nizin, iş öğeleri Zamanlayıcınızın koleksiyonlarında bulunan tüm sanal işlemci köklerinin devre dışı olmamasını sağlayabilirsiniz.
 
-Yönteme `EnsureAllTasksVisibleThe` yapılan bir çağrı, sanal `Dispatch` işlemci kökünün en son etkinleştirilen yürütme bağlamı yöntemi nin içinden kaynaklanmalıdır. Başka bir deyişle, `EnsureAllTasksVisible` yöntemi çağıran iş parçacığı proxy şu anda sanal işlemci köküüzerinde yürütülen biri olmalıdır. Yöntemin yürütülmediğiniz sanal işlemci kökünde çağrılması tanımlanmamış davranışlara neden olabilir.
+Yöntemine yapılan bir çağrı, `EnsureAllTasksVisibleThe` `Dispatch` sanal işlemci kökünün en son etkinleştirildiği yürütme bağlamı yönteminin içinden kaynaklanmalıdır. Diğer bir deyişle, yöntemi çağıran iş parçacığı proxy 'si, `EnsureAllTasksVisible` Şu anda sanal işlemci kökünde yürütülmekte olan bir olmalıdır. Üzerinde yürütmekte olduğunuz bir sanal işlemci kökünde yöntemi çağırmak tanımsız davranışa neden olabilir.
 
-`invalid_argument`bağımsız değişken `pContext` in değeri `NULL`varsa atılır.
+`invalid_argument`bağımsız değişkenin değeri varsa oluşturulur `pContext` `NULL` .
 
-`invalid_operation`sanal işlemci kökü hiç etkinleştirilmemişse veya `pContext` bağımsız değişken bu sanal işlemci kökü tarafından en son gönderilen yürütme bağlamını temsil etmiyorsa atılır.
+`invalid_operation`sanal işlemci kökü hiç etkinleştirilmemişse veya bağımsız değişken `pContext` Bu sanal işlemci kökü tarafından en son dağıtılan Yürütme bağlamını temsil etmediği zaman oluşturulur.
 
-## <a name="ivirtualprocessorrootgetid-method"></a><a name="getid"></a>iVirtualProcessorRoot::Getid Yöntemi
+## <a name="ivirtualprocessorrootgetid-method"></a><a name="getid"></a>IVirtualProcessorRoot:: GetID Yöntemi
 
 Sanal işlemci kökü için benzersiz bir tanımlayıcı döndürür.
 
@@ -150,8 +150,8 @@ virtual unsigned int GetId() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonda tanımlayıcısı.
+Bir tamsayı tanımlayıcı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[concurrency Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

@@ -1,5 +1,5 @@
 ---
-title: CAtlList Sınıfı
+title: CAtlList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlList
@@ -37,18 +37,18 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: 2c16713af11a915772085165ed294cba4ae337f2
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 15830a30e8236a13f3911d1b84d3727d3246fc0b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168052"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226678"
 ---
-# <a name="catllist-class"></a>CAtlList Sınıfı
+# <a name="catllist-class"></a>CAtlList sınıfı
 
 Bu sınıf, bir liste nesnesi oluşturmak ve yönetmek için yöntemler sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename E, class ETraits = CElementTraits<E>>
@@ -67,20 +67,20 @@ class CAtlList
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlList:: ıNARGTYPE](#inargtype)||
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlList:: CAtlList](#catllist)|Oluşturucu.|
 |[CAtlList:: ~ CAtlList](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlList:: AddHead](#addhead)|Listenin baş bir öğesini bir öğe eklemek için bu yöntemi çağırın.|
 |[CAtlList:: AddHeadList](#addheadlist)|Listenin baş bir listesini varolan bir listeyi eklemek için bu yöntemi çağırın.|
@@ -113,9 +113,9 @@ class CAtlList
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı `CAtlList` , ardışık olarak veya değere göre erişilebilen, benzersiz olmayan nesnelerin sıralı listesini destekler. `CAtlList`listeler, benzer bağlantılı listeler gibi davranır. Her listede bir baş ve kuyruk bulunur ve yeni öğeler (veya bazı durumlarda listeler) listenin sonuna veya belirli öğelerden önce ya da sonra eklenebilir.
+`CAtlList`Sınıfı, ardışık olarak veya değere göre erişilebilen, benzersiz olmayan nesnelerin sıralı listesini destekler. `CAtlList`listeler, benzer bağlantılı listeler gibi davranır. Her listede bir baş ve kuyruk bulunur ve yeni öğeler (veya bazı durumlarda listeler) listenin sonuna veya belirli öğelerden önce ya da sonra eklenebilir.
 
-`CAtlList` Yöntemlerin çoğu bir konum değeri kullanır. Bu değer, öğelerin depolandığı gerçek bellek konumuna başvurmak ve doğrudan hesaplanmaması ya da tahmin olmaması gereken yöntemler tarafından kullanılır. Listedeki *n*. öğeye erişmeniz gerekiyorsa, [CAtlList:: FindIndex](#findindex) yöntemi belirli bir dizin için karşılık gelen konum değerini döndürür. [CAtlList:: GetNext](#getnext) ve [CAtlList:: getöncekini](#getprev) yöntemleri, listedeki nesneler arasında yinelemek için kullanılabilir.
+`CAtlList`Yöntemlerin çoğu bir konum değeri kullanır. Bu değer, öğelerin depolandığı gerçek bellek konumuna başvurmak ve doğrudan hesaplanmaması ya da tahmin olmaması gereken yöntemler tarafından kullanılır. Listedeki *n*. öğeye erişmeniz gerekiyorsa, [CAtlList:: FindIndex](#findindex) yöntemi belirli bir dizin için karşılık gelen konum değerini döndürür. [CAtlList:: GetNext](#getnext) ve [CAtlList:: getöncekini](#getprev) yöntemleri, listedeki nesneler arasında yinelemek için kullanılabilir.
 
 ATL ile kullanılabilen koleksiyon sınıfları hakkında daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
 
@@ -248,7 +248,7 @@ Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAtlList` Nesne için Oluşturucu. Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının bir ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
+Nesne için Oluşturucu `CAtlList` . Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının bir ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -266,7 +266,7 @@ Yok edicisi.
 
 Tüm öğeleri listeden kaldırmak için [CAtlList:: RemoveAll](#removeall) öğesine yapılan bir çağrı dahil olmak üzere tüm ayrılmış kaynakları serbest bırakır.
 
-Hata ayıklama yapılarında, listede çağrısından sonra hala bazı öğeler varsa, bir onaylama hatası oluşur `RemoveAll`.
+Hata ayıklama yapılarında, listede çağrısından sonra hala bazı öğeler varsa, bir onaylama hatası oluşur `RemoveAll` .
 
 ## <a name="catllistfind"></a><a name="find"></a>CAtlList:: Find
 
@@ -343,9 +343,9 @@ Belirli bir öğeyi belirten konum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste **const**ise, `GetAt` öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
+Liste ise, **`const`** `GetAt` öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
 
-Liste **const**değilse, `GetAt` öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
+Liste yoksa **`const`** , `GetAt` öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
 
 Hata ayıklama yapılarında, *POS* null değerine eşitse bir onaylama hatası oluşur.
 
@@ -384,9 +384,9 @@ Listenin başında öğesi veya bir kopyasına bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste **const**ise, `GetHead` listenin başlangıcında öğenin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
+Liste ise **`const`** , listenin başında `GetHead` öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
 
-Liste **const**değilse, `GetHead` listenin başında öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
+Liste yoksa **`const`** , `GetHead` listenin başında öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
 
 Hata ayıklama yapılarında, listenin başı değeri NULL olduğunda bir onaylama hatası oluşur.
 
@@ -426,13 +426,13 @@ const E& GetNext(POSITION& pos) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *'un*<br/>
-Önceki bir çağrı `GetNext`tarafından döndürülen bir konum değeri, [CAtlList:: GetHeadPosition](#getheadposition)veya diğer `CAtlList` yöntem.
+Önceki bir çağrı tarafından döndürülen bir konum değeri, `GetNext` [CAtlList:: GetHeadPosition](#getheadposition)veya diğer `CAtlList` Yöntem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**ise, `GetNext` listenin bir sonraki öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
+Liste ise **`const`** , `GetNext` listenin bir sonraki öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
 
-Liste **const**değilse, `GetNext` listenin bir sonraki öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
+Liste yoksa **`const`** , `GetNext` listenin bir sonraki öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -454,13 +454,13 @@ const E& GetPrev(POSITION& pos) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *'un*<br/>
-Önceki bir çağrı `GetPrev`tarafından döndürülen bir konum değeri, [CAtlList:: getwebcontrol Position](#gettailposition)veya diğer `CAtlList` yöntem.
+Önceki bir çağrı tarafından döndürülen bir konum değeri, `GetPrev` [CAtlList:: getwebcontrol Position](#gettailposition)veya diğer `CAtlList` Yöntem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Liste **const**ise, `GetPrev` listenin bir öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
+Liste ise **`const`** , listenin bir `GetPrev` öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
 
-Liste **const**değilse, `GetPrev` listenin bir öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
+Liste yoksa **`const`** , `GetPrev` listenin bir öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -485,9 +485,9 @@ Listenin kuyruklu öğesine veya bir kopyasına bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Liste **const**ise, `GetTail` listenin başlangıcında öğenin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
+Liste ise **`const`** , listenin başında `GetTail` öğesinin bir kopyasını döndürür. Bu yöntem, yöntemin yalnızca bir atama ifadesinin sağ tarafında kullanılmasını sağlar ve listenin değiştirilmesini önler.
 
-Liste **const**değilse, `GetTail` listenin başında öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
+Liste yoksa **`const`** , `GetTail` listenin başında öğesine bir başvuru döndürür. Bu yöntem, bir atama ifadesinin her iki tarafında da kullanılmasına izin verir ve bu sayede liste girişlerinin değiştirilmesine izin verir.
 
 Hata ayıklama yapılarında, listenin kuyruğu NULL ' a işaret ediyorsa bir onaylama hatası meydana gelir.
 
@@ -668,7 +668,7 @@ Kaldırılacak öğenin konum değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*POS* tarafından başvurulan öğe kaldırılır ve bellek serbest bırakılır. Listenin baş veya kuyruğunu kaldırmak `RemoveAt` için kullanılması kabul edilebilir.
+*POS* tarafından başvurulan öğe kaldırılır ve bellek serbest bırakılır. `RemoveAt`Listenin baş veya kuyruğunu kaldırmak için kullanılması kabul edilebilir.
 
 Hata ayıklama yapılarında, liste geçerli değilse veya öğenin kaldırılması listenin liste yapısının parçası olmayan belleğe erişmesine neden olursa bir onaylama hatası oluşur.
 
@@ -798,5 +798,5 @@ Belirtilen iki konumda öğeleri değiştirir. Hata ayıklama yapılarında, kon
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CList Sınıfı](../../mfc/reference/clist-class.md)<br/>
+[CList sınıfı](../../mfc/reference/clist-class.md)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-ms.openlocfilehash: 7252eb2fa5d34618a1c38484a2506bae27a1106a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 7241d903e44329eb8fd50155059355a470fb7b90
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69497218"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226626"
 ---
 # <a name="ccomenum-class"></a>CComEnum sınıfı
 
 Bu sınıf bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <class Base,
@@ -37,7 +37,7 @@ COM Numaralandırıcı arabirimi. Örnek için bkz. [IEnumString](/windows/win32
 *piıd*<br/>
 Numaralandırıcı arabiriminin arabirim KIMLIĞINE yönelik bir işaretçi.
 
-*ŞI*<br/>
+*T*<br/>
 Numaralandırıcı arabirimi tarafından kullanıma sunulan öğenin türü.
 
 *Kopyala*<br/>
@@ -48,15 +48,15 @@ Sınıfın iş parçacığı modeli. Bu parametrenin varsayılan değeri, projen
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComEnum`bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf, C++ standart bir kitaplık kapsayıcısını temel alan bir Numaralandırıcı uygulayan [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) öğesine benzerdir. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
+`CComEnum`bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) 'e benzer ve bir C++ standart kitaplık kapsayıcısını temel alan bir Numaralandırıcı uygular. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="to-use-this-class"></a>Bu sınıfı kullanmak için:
 
-- **typedef** bu sınıfın özelleştirmesi.
+- **`typedef`** Bu sınıfın özelleştirmesi.
 
-- Öğesinin`CComObject`bir özelleştirmesi içinde şablon bağımsız değişkeni olarak **typedef** kullanın.
+- **`typedef`** Bir özelleştirmesi içinde şablon bağımsız değişkeni olarak kullanın `CComObject` .
 
-- `CComObject` Özelleşmenin bir örneğini oluşturun.
+- Özelleşmenin bir örneğini oluşturun `CComObject` .
 
 - [CComEnumImpl:: Init](../../atl/reference/ccomenumimpl-class.md#init)çağırarak Numaralandırıcı nesnesini başlatın.
 
@@ -88,11 +88,11 @@ Bu şablon işlevi, `_NewEnum` aşağıda gösterildiği gibi bir koleksiyon ara
 
 [!code-cpp[NVC_ATL_COM#33](../../atl/codesnippet/cpp/ccomenum-class_2.h)]
 
-Bu kod, bir için `CComEnum` bir typedef oluşturur ve bu, `IEnumVariant` arabirim aracılığıyla bir çeşit vektörü gösterir. `CVariantArrayCollection` Sınıfı`CreateEnumerator` , bu türün Numaralandırıcı nesneleriyle çalışmayı özelleştirmektedir ve gerekli bağımsız değişkenleri geçirir.
+Bu kod **`typedef`** `CComEnum` , arabirim aracılığıyla bir çeşit vektörünün ortaya çıkaran bir için oluşturur `IEnumVariant` . `CVariantArrayCollection`Sınıfı, `CreateEnumerator` Bu türün Numaralandırıcı nesneleriyle çalışmayı özelleştirmektedir ve gerekli bağımsız değişkenleri geçirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
-[CComEnumImpl Sınıfı](../../atl/reference/ccomenumimpl-class.md)<br/>
-[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)
+[CComEnumImpl sınıfı](../../atl/reference/ccomenumimpl-class.md)<br/>
+[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)

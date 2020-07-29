@@ -2,18 +2,18 @@
 title: 'Varsayılan::(type_name):: Equals yöntemi'
 ms.date: 12/30/2016
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873
-ms.openlocfilehash: 57143da18e98ed2d034343726ac96a92b4d1b23c
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 2e50cd10217dbf5c639a131e758264c7cd8f68a9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444318"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225793"
 ---
 # <a name="defaulttype_nameequals-method"></a>Varsayılan::(type_name):: Equals yöntemi
 
 Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool Equals(
@@ -23,12 +23,12 @@ bool Equals(
 
 ### <a name="parameters"></a>Parametreler
 
-*nesnesi*<br/>
+*obj*<br/>
 Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-nesneler eşitse **true** , aksi takdirde **false**.
+**`true`** nesneler eşitse, tersi durumda **`false`** .
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -42,4 +42,4 @@ nesneler eşitse **true** , aksi takdirde **false**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Varsayılan Ad Alanı](../cppcx/default-namespace.md)
+[varsayılan ad alanı](../cppcx/default-namespace.md)

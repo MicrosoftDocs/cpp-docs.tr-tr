@@ -13,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - ISchedulerProxy structure
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
-ms.openlocfilehash: f4a9e79c2da56406610ad6da08fb438e2f92923d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dcb6d175fa84e33f6a5af974eb76f1e1246bdc35
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368157"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226704"
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy Yapısı
 
-Zamanlayıcıların kaynak ayırma konusunda anlaşmak için Eşzamanlı Çalışma Zamanı Kaynak Yöneticisi ile iletişim kurduğu arabirim.
+Zamanlayıcılar tarafından kaynak ayırmayı anlaşmak için Eşzamanlılık Çalışma Zamanı Kaynak Yöneticisi iletişim kuran arabirim.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,18 +34,18 @@ struct ISchedulerProxy;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[ISchedulerProxy::BindContext](#bindcontext)|Yürütme bağlamını, zaten bir iş parçacığı yla ilişkilendirmiyorsa, iş parçacığı proxy'si ile ilişkilendirin.|
-|[ISchedulerProxy::CreateOversubscriber](#createoversubscriber)|Varolan bir yürütme kaynağıyla ilişkili donanım iş parçacığında yeni bir sanal işlemci kökü oluşturur.|
-|[ISchedulerProxy::RequestInitialVirtualProcessors](#requestinitialvirtualprocessors)|Sanal işlemci köklerinin ilk tahsisini ister. Her sanal işlemci kökü, zamanlayıcı için iş gerçekleştirebilecek bir iş parçacığı yürütme yeteneğini temsil eder.|
-|[ISchedulerProxy::Kapatma](#shutdown)|Kaynak Yöneticisi'ne zamanlayıcının kapatılıyor olduğunu belirtir. Bu, Kaynak Yöneticisi'nin zamanlayıcıya verilen tüm kaynakları hemen geri almasına neden olur.|
-|[ISchedulerProxy::SubscribeCurrentThread](#subscribecurrentthread)|Geçerli iş parçacığıkaynak yöneticisine kaydeder ve bu zamanlayıcıyla ilişkilendirerek.|
-|[ISchedulerProxy::UnbindContext](#unbindcontext)|Bir iş parçacığı proxy'sini `pContext` parametre tarafından belirtilen yürütme bağlamından uzaklaştırın ve iş parçacığı proxy fabrikasının boş havuzuna döndürür. Bu yöntem yalnızca ISchedulerProxy üzerinden bağlanan bir yürütme bağlamında çağrılabilir::BindContext yöntemi ve `pContext` henüz bir IThreadProxy parametresi olarak başlatılmış [değil::SwitchTo](ithreadproxy-structure.md#switchto) yöntemi çağrısı. [ISchedulerProxy::BindContext](#bindcontext)|
+|[Ibıchedulerproxy:: BindContext](#bindcontext)|Zaten bir ilişkili değilse, bir yürütme bağlamını bir iş parçacığı proxy 'si ile ilişkilendirir.|
+|[Ibıchedulerproxy:: CreateOversubscriber](#createoversubscriber)|Mevcut bir yürütme kaynağıyla ilişkili donanım iş parçacığında yeni bir sanal işlemci kökü oluşturur.|
+|[Ibıchedulerproxy:: Requestınitialvirtualiþlemcileri](#requestinitialvirtualprocessors)|Sanal işlemci köklerinin ilk ayırmasını ister. Her sanal işlemci kökü Zamanlayıcı için iş gerçekleştirebilen bir iş parçacığını yürütme yeteneğini temsil eder.|
+|[Ibıchedulerproxy:: kapanıyor](#shutdown)|Kaynak Yöneticisi Scheduler 'ın kapandığını bildirir. Bu, Kaynak Yöneticisi Scheduler 'a verilen tüm kaynakları hemen geri kazanmasına neden olur.|
+|[ISchedulerProxy:: SubscribeCurrentThread](#subscribecurrentthread)|Geçerli iş parçacığını Bu Zamanlayıcı ile ilişkilendirerek Kaynak Yöneticisi kaydeder.|
+|[Ibıchedulerproxy:: UnbindContext](#unbindcontext)|Bir iş parçacığı proxy 'sini parametresi tarafından belirtilen yürütme bağlamından ilişkilendirir `pContext` ve iş parçacığı proxy fabrikasının boş havuzuna döndürür. Bu yöntem yalnızca [ıbıchedulerproxy:: BindContext](#bindcontext) yöntemi aracılığıyla bağlı bir yürütme bağlamı üzerinde çağrılabilir ve henüz `pContext` bir [IThreadProxy:: SwitchTo](ithreadproxy-structure.md#switchto) yöntem çağrısının parametresi ile başlatılmamış olabilir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi, `ISchedulerProxy` [IResourceManager:RegisterScheduler](iresourcemanager-structure.md#registerscheduler) yöntemini kullanarak birlikte kaydeden her zamanlayıcıya bir arabirim verir.
+Kaynak Yöneticisi, `ISchedulerProxy` [IResourceManager:: RegisterScheduler](iresourcemanager-structure.md#registerscheduler) yöntemi kullanılarak kaydeden her Scheduler 'a bir arabirim sağlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -53,13 +53,13 @@ Kaynak Yöneticisi, `ISchedulerProxy` [IResourceManager:RegisterScheduler](ireso
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ischedulerproxybindcontext-method"></a><a name="bindcontext"></a>ISchedulerProxy::BindContext Yöntemi
+## <a name="ischedulerproxybindcontext-method"></a><a name="bindcontext"></a>Ibıchedulerproxy:: BindContext yöntemi
 
-Yürütme bağlamını, zaten bir iş parçacığı yla ilişkilendirmiyorsa, iş parçacığı proxy'si ile ilişkilendirin.
+Zaten bir ilişkili değilse, bir yürütme bağlamını bir iş parçacığı proxy 'si ile ilişkilendirir.
 
 ```cpp
 virtual void BindContext(_Inout_ IExecutionContext* pContext) = 0;
@@ -67,18 +67,18 @@ virtual void BindContext(_Inout_ IExecutionContext* pContext) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pcontext*<br/>
-Bir iş parçacığı proxy ile ilişkilendirmek için yürütme bağlamına bir arayüz.
+*pContext*<br/>
+Bir iş parçacığı proxy 'si ile ilişkilendirilecek yürütme bağlamına yönelik arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, [IThreadProxy::SwitchTo](ithreadproxy-structure.md#switchto) yöntemi isteğe bağlı bir yürütme bağlamına bir iş parçacığı proxy bağlar. Ancak, yöntemin zaten bağlı bir içeriğe geçişini sağlamak `SwitchTo` için bir bağlamı önceden bağlamanın gerekli olduğu durumlar vardır. Bu, bellek ayıran yöntemleri arayamaz ve iş parçacığı proxy iş parçacığı proxy serbest havuzda hazır değilse bir iş parçacığı proxy bağlama bellek ayırma içerebilir gibi bir UMS zamanlama bağlamında durumdur.
+Normalde, [IThreadProxy:: SwitchTo](ithreadproxy-structure.md#switchto) yöntemi bir iş parçacığı proxy 'sini isteğe bağlı bir yürütme bağlamına bağlar. Ancak, `SwitchTo` metodun zaten bağlı bir içeriğe geçiş yapıldığından emin olmak için bir bağlamı önceden bağlamak gerekli olduğu durumlar vardır. Bu durum, bellek ayıran yöntemleri arayamamakta olduğu ve bir iş parçacığı proxy 'sinin serbest bırakılmadığı iş parçacığı proxy 'si fabrikası için bir iş parçacığı proxy 'si kullanılabilir değilse bellek ayırmayı içerebilen bir UMS zamanlama bağlamıdır.
 
-`invalid_argument`parametre `pContext` değerine `NULL`sahipse atılır.
+`invalid_argument`parametrenin değeri varsa oluşturulur `pContext` `NULL` .
 
-## <a name="ischedulerproxycreateoversubscriber-method"></a><a name="createoversubscriber"></a>ISchedulerProxy::CreateOversubscriber Yöntemi
+## <a name="ischedulerproxycreateoversubscriber-method"></a><a name="createoversubscriber"></a>Ibıchedulerproxy:: CreateOversubscriber yöntemi
 
-Varolan bir yürütme kaynağıyla ilişkili donanım iş parçacığında yeni bir sanal işlemci kökü oluşturur.
+Mevcut bir yürütme kaynağıyla ilişkili donanım iş parçacığında yeni bir sanal işlemci kökü oluşturur.
 
 ```cpp
 virtual IVirtualProcessorRoot* CreateOversubscriber(_Inout_ IExecutionResource* pExecutionResource) = 0;
@@ -87,21 +87,21 @@ virtual IVirtualProcessorRoot* CreateOversubscriber(_Inout_ IExecutionResource* 
 ### <a name="parameters"></a>Parametreler
 
 *pExecutionResource*<br/>
-Aşırı `IExecutionResource` abone olmak istediğiniz donanım iş parçacığı temsil eden bir arabirim.
+`IExecutionResource`Fazla abone olmak istediğiniz donanım iş parçacığını temsil eden bir arabirim.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `IVirtualProcessorRoot` arayüz.
+Bir `IVirtualProcessorRoot` arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zamanlayıcınız belirli bir donanım iş parçacığına sınırlı bir süre için aşırı abone olmak istediğinde bu yöntemi kullanın. Sanal işlemci köküyle iş bittiğinde, arabirimdeki [Kaldır](iexecutionresource-structure.md#remove) yöntemini çağırarak bu `IVirtualProcessorRoot` yöntemi kaynak yöneticisine döndürmelisiniz.
+Zamanlayıcı, belirli bir donanım iş parçacığını sınırlı bir süre için fazla sayıda abone olmak istediğinde bu yöntemi kullanın. Sanal işlemci kökünü tamamladıktan sonra, arabirimdeki [Remove](iexecutionresource-structure.md#remove) metodunu çağırarak Kaynak Yöneticisi 'ne dönmeniz gerekir `IVirtualProcessorRoot` .
 
-`IVirtualProcessorRoot` Arabirim `IExecutionResource` arabirimden devraldığı için varolan sanal işlemci köküne bile fazla abone olabilirsiniz.
+Arabirim arabirimden devraldığı için, var olan bir sanal işlemci köküne da fazla abone olabilirsiniz `IVirtualProcessorRoot` `IExecutionResource` .
 
-## <a name="ischedulerproxyrequestinitialvirtualprocessors-method"></a><a name="requestinitialvirtualprocessors"></a>ISchedulerProxy::RequestInitialVirtualProcessors Yöntemi
+## <a name="ischedulerproxyrequestinitialvirtualprocessors-method"></a><a name="requestinitialvirtualprocessors"></a>Ibıchedulerproxy:: Requestınitialvirtualişlemcilerle yöntemi
 
-Sanal işlemci köklerinin ilk tahsisini ister. Her sanal işlemci kökü, zamanlayıcı için iş gerçekleştirebilecek bir iş parçacığı yürütme yeteneğini temsil eder.
+Sanal işlemci köklerinin ilk ayırmasını ister. Her sanal işlemci kökü Zamanlayıcı için iş gerçekleştirebilen bir iş parçacığını yürütme yeteneğini temsil eder.
 
 ```cpp
 virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurrentThread) = 0;
@@ -109,28 +109,28 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 
 ### <a name="parameters"></a>Parametreler
 
-*doSubscribeCurrentThread*<br/>
-Kaynak ayırma sırasında geçerli iş parçacığına abone olunup hesaba katılmamak.
+*Dosubkaralama Becurrentthread*<br/>
+Kaynak ayırma sırasında geçerli iş parçacığının ve hesabın abone yapılıp yapılmayacağını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametre `IExecutionResource` `doSubscribeCurrentThread` **değeri gerçekse,** geçerli iş parçacığının arabirimi. Değer **yanlışsa,** yöntem NULL döndürür.
+`IExecutionResource`Parametrenin değeri varsa, geçerli iş parçacığı için arabirim `doSubscribeCurrentThread` **`true`** . Değer ise **`false`** , YÖNTEMI null değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir zamanlayıcı herhangi bir çalışmayı yürütmeden önce, Kaynak Yöneticisi'nden sanal işlemci kökleri istemek için bu yöntemi kullanmalıdır. Kaynak [Yöneticisi, IScheduler::GetPolicy'yi](ischeduler-structure.md#getpolicy) kullanarak zamanlayıcının ilkesine erişecek `MinConcurrency`ve `MaxConcurrency` `TargetOversubscriptionFactor` ilke anahtarlarıiçin değerleri kullanacak ve başlangıçta zamanlayıcıya kaç donanım iş parçacığı atayacak ve her donanım iş parçacığı için kaç sanal işlemci kökü oluşturulacağını belirleyecek. Zamanlayıcı ilkelerinin bir zamanlayıcının ilk tahsisatLarını belirlemek için nasıl kullanıldığı hakkında daha fazla bilgi için [Bkz.](concurrency-namespace-enums.md)
+Zamanlayıcı herhangi bir çalışmayı yürütmeden önce, Kaynak Yöneticisi sanal işlemci kökleri istemek için bu yöntemi kullanmalıdır. Kaynak Yöneticisi, [IScheduler:: GetPolicy](ischeduler-structure.md#getpolicy) kullanarak Scheduler ilkesine erişir ve ilke anahtarlarının değerlerini kullanır ve `MinConcurrency` `MaxConcurrency` her bir `TargetOversubscriptionFactor` donanım iş parçacığı için başlangıçta ve kaç tane sanal işlemci köklerine atanacağını belirleme ve bu Zamanlayıcı için kaç tane donanım iş parçacığının oluşturulacağını belirlemektir. Zamanlayıcı ilkelerinin bir Scheduler 'ın ilk ayırmasını belirlemede nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [PolicyElementKey](concurrency-namespace-enums.md).
 
-Kaynak Yöneticisi, iScheduler yöntemini arayarak bir zamanlayıcıya kaynak verir::Sanal işlemci köklerinin bir listesini içeren [VirtualProcessors ekler.](ischeduler-structure.md#addvirtualprocessors) Yöntem, bu yöntem dönmeden önce zamanlayıcıya geri çağrılolarak çağrılır.
+Kaynak Yöneticisi, sanal işlemci köklerinin listesini içeren [IComparer:: AddVirtualProcessor](ischeduler-structure.md#addvirtualprocessors) metodunu çağırarak bir Scheduler 'a kaynak verir. Yöntemi, bu yöntemin döndürüldüğünden önce Scheduler 'a geri çağırma olarak çağrılır.
 
-Zamanlayıcı, parametreyi `doSubscribeCurrentThread` **doğru**olarak ayarlayarak geçerli iş parçacığı için `IExecutionResource` abonelik istediyse, yöntem bir arabirim döndürür. Abonelik [iExecutionResource::Remove](iexecutionresource-structure.md#remove) yöntemi kullanılarak daha sonraki bir noktada sonlandırılmalıdır.
+Zamanlayıcı, parametresi olarak ayarlanarak geçerli iş parçacığı için abonelik isteğinde bulunursa `doSubscribeCurrentThread` **`true`** , yöntem bir `IExecutionResource` arabirim döndürür. Aboneliğin [IExecutionResource:: Remove](iexecutionresource-structure.md#remove) yöntemi kullanılarak sonraki bir noktada sonlandırılması gerekir.
 
-Hangi donanım iş parçacığının seçili olduğunu belirlerken, Kaynak Yöneticisi işlemci düğümü afiyeti için en iyi duruma getirmeye çalışır. Geçerli iş parçacığı için abonelik isteniyorsa, geçerli iş parçacığının bu zamanlayıcıya atanan çalışmaya katılmak niyetinde olduğunun bir göstergesidir. Böyle bir durumda, ayrılan sanal işlemci kökleri, varsa geçerli iş parçacığının yürütüldettiği işlemci düğümünde bulunur.
+Hangi donanım iş parçacıklarının seçili olduğunu belirlerken, Kaynak Yöneticisi işlemci düğümü benzeşimi için iyileştirmeye çalışacaktır. Geçerli iş parçacığı için abonelik isteniyorsa, bu, geçerli iş parçacığının Bu Scheduler 'a atanan işe katılmayı amaçladığı bir göstergesidir. Böyle bir durumda, ayrılan sanal işlemcilerin kökleri, mümkünse geçerli iş parçacığının yürütüldüğü işlemci düğümünde bulunur.
 
-Bir iş parçacığıabone olma eylemi, temel donanım iş parçacığının abonelik düzeyini bir artırır. Abonelik sonlandırıldığında abonelik düzeyi bir azaltılır. Abonelik düzeyleri hakkında daha fazla bilgi için [bkz: IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
+Bir iş parçacığını abone olma eylemi, temel alınan donanım iş parçacığının abonelik düzeyini bir tane artırır. Abonelik sonlandırıldığı zaman abonelik düzeyi bir şekilde azaltılır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="ischedulerproxyshutdown-method"></a><a name="shutdown"></a>ISchedulerProxy::Kapatma Yöntemi
+## <a name="ischedulerproxyshutdown-method"></a><a name="shutdown"></a>Ibıchedulerproxy:: kapanıyor yöntemi
 
-Kaynak Yöneticisi'ne zamanlayıcının kapatılıyor olduğunu belirtir. Bu, Kaynak Yöneticisi'nin zamanlayıcıya verilen tüm kaynakları hemen geri almasına neden olur.
+Kaynak Yöneticisi Scheduler 'ın kapandığını bildirir. Bu, Kaynak Yöneticisi Scheduler 'a verilen tüm kaynakları hemen geri kazanmasına neden olur.
 
 ```cpp
 virtual void Shutdown() = 0;
@@ -138,15 +138,15 @@ virtual void Shutdown() = 0;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zamanlamacının `IExecutionContext` yöntemleri `ISchedulerProxy::RequestInitialVirtualProcessors` kullanarak harici bir iş parçacığına abone olması sonucunda `ISchedulerProxy::SubscribeCurrentThread` aldığı tüm arabirimler `IExecutionResource::Remove` veya zamanlayıcı kendini kapatmadan önce kaynak yöneticisine döndürülmelidir.
+Tüm `IExecutionContext` arabirimler, bir dış iş parçacığının yöntemlerini kullanarak abone olma sonucu olarak aldığı `ISchedulerProxy::RequestInitialVirtualProcessors` veya `ISchedulerProxy::SubscribeCurrentThread` Zamanlayıcı kendisini kapatmadan önce kullanılarak Kaynak Yöneticisi döndürülmelidir `IExecutionResource::Remove` .
 
-Zamanlayıcınız devre dışı bırakılmış sanal işlemci köklerine sahipse, bunları IVirtualProcessorRoot kullanarak etkinleştirmeniz [gerekir::Etkinleştirin](ivirtualprocessorroot-structure.md#activate)ve iş parçacığı proxy'lerinin, `Shutdown` bir zamanlayıcı proxy'ye çağırmadan önce gönderdikleri yürütme bağlamlarının `Dispatch` yöntemini bırakmasını sağlar.
+Scheduler 'da devre dışı bırakılmış bir sanal işlemci kökü varsa, [IVirtualProcessorRoot:: Activate](ivirtualprocessorroot-structure.md#activate)öğesini kullanarak bunları etkinleştirmeniz gerekir ve iş parçacığı proxy 'leri, `Dispatch` `Shutdown` bir Zamanlayıcı proxy üzerinde çağırmadan önce, gönderen yürütme bağlamlarının yöntemini bırakır.
 
-Tüm sanal işlemci kökleri kapatma sırasında Kaynak Yöneticisi'nin kendisine çağrılar `Remove` yoluyla verdiği tüm sanal işlemci köklerini tek tek döndürmesi gerekli değildir.
+Scheduler 'ın tüm sanal işlemci köklerinin, bu yönteme çağrı aracılığıyla Kaynak Yöneticisi, `Remove` tüm sanal işlemci köklerinin, kapatılırken Kaynak Yöneticisi döndürüldüğünden bağımsız olarak tek başına döndürülmesi gerekli değildir.
 
-## <a name="ischedulerproxysubscribecurrentthread-method"></a><a name="subscribecurrentthread"></a>ISchedulerProxy::SubscribeCurrentThread Yöntemi
+## <a name="ischedulerproxysubscribecurrentthread-method"></a><a name="subscribecurrentthread"></a>Ibıchedulerproxy:: SubscribeCurrentThread yöntemi
 
-Geçerli iş parçacığıkaynak yöneticisine kaydeder ve bu zamanlayıcıyla ilişkilendirerek.
+Geçerli iş parçacığını Bu Zamanlayıcı ile ilişkilendirerek Kaynak Yöneticisi kaydeder.
 
 ```cpp
 virtual IExecutionResource* SubscribeCurrentThread() = 0;
@@ -154,19 +154,19 @@ virtual IExecutionResource* SubscribeCurrentThread() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışma `IExecutionResource` zamanında geçerli iş parçacığı temsil eden ara yüz.
+`IExecutionResource`Çalışma zamanındaki geçerli iş parçacığını temsil eden arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi'nin zamanlayıcınıza ve diğer zamanlayıcılarınıza kaynak ayırırken geçerli iş parçacığının hesabını kullanmasını istiyorsanız bu yöntemi kullanın. İş parçacığı, zamanlayıcınızın Kaynak Yöneticisi'nden aldığı sanal işlemci kökleriyle birlikte programlayıcınıza sıralanmış çalışmaya katılmayı planladığında özellikle yararlıdır. Kaynak Yöneticisi, sistemdeki donanım iş parçacığının gereksiz aşırı aboneliğini önlemek için bilgileri kullanır.
+Kaynak Yöneticisi Scheduler 'a ve diğer zamanlayıcılar kaynak atarken geçerli iş parçacığı için hesap kullanmasını istiyorsanız bu yöntemi kullanın. İş parçacığı, Scheduler 'ın Kaynak Yöneticisi aldığı sanal işlemci kökleriyle birlikte Zamanlayıcı 'ya sıraya alınan çalışmaya katılmayı planlıyorsa özellikle yararlıdır. Kaynak Yöneticisi sistemdeki donanım iş parçacıklarının gereksiz aşırı aboneliğini engellemek için bilgileri kullanır.
 
-Bu yöntemle alınan yürütme [kaynağı, IExecutionResource::Remove](iexecutionresource-structure.md#remove) yöntemi kullanılarak Kaynak Yöneticisi'ne döndürülmelidir. `Remove` Yöntemi çağıran iş parçacığı, daha önce `SubscribeCurrentThread` yöntem olarak adlandırılan aynı iş parçacığı olmalıdır.
+Bu yöntem aracılığıyla alınan yürütme kaynağı [IExecutionResource:: Remove](iexecutionresource-structure.md#remove) yöntemi kullanılarak Kaynak Yöneticisi döndürülmelidir. Yöntemi çağıran iş parçacığının, `Remove` daha önce yöntemini çağıran aynı iş parçacığı olması gerekir `SubscribeCurrentThread` .
 
-Bir iş parçacığıabone olma eylemi, temel donanım iş parçacığının abonelik düzeyini bir artırır. Abonelik sonlandırıldığında abonelik düzeyi bir azaltılır. Abonelik düzeyleri hakkında daha fazla bilgi için [bkz: IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
+Bir iş parçacığını abone olma eylemi, temel alınan donanım iş parçacığının abonelik düzeyini bir tane artırır. Abonelik sonlandırıldığı zaman abonelik düzeyi bir şekilde azaltılır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="ischedulerproxyunbindcontext-method"></a><a name="unbindcontext"></a>ISchedulerProxy::UnbindContext Yöntemi
+## <a name="ischedulerproxyunbindcontext-method"></a><a name="unbindcontext"></a>Ibıchedulerproxy:: UnbindContext yöntemi
 
-Bir iş parçacığı proxy'sini `pContext` parametre tarafından belirtilen yürütme bağlamından uzaklaştırın ve iş parçacığı proxy fabrikasının boş havuzuna döndürür. Bu yöntem yalnızca ISchedulerProxy üzerinden bağlanan bir yürütme bağlamında çağrılabilir::BindContext yöntemi ve `pContext` henüz bir IThreadProxy parametresi olarak başlatılmış [değil::SwitchTo](ithreadproxy-structure.md#switchto) yöntemi çağrısı. [ISchedulerProxy::BindContext](#bindcontext)
+Bir iş parçacığı proxy 'sini parametresi tarafından belirtilen yürütme bağlamından ilişkilendirir `pContext` ve iş parçacığı proxy fabrikasının boş havuzuna döndürür. Bu yöntem yalnızca [ıbıchedulerproxy:: BindContext](#bindcontext) yöntemi aracılığıyla bağlı bir yürütme bağlamı üzerinde çağrılabilir ve henüz `pContext` bir [IThreadProxy:: SwitchTo](ithreadproxy-structure.md#switchto) yöntem çağrısının parametresi ile başlatılmamış olabilir.
 
 ```cpp
 virtual void UnbindContext(_Inout_ IExecutionContext* pContext) = 0;
@@ -174,12 +174,12 @@ virtual void UnbindContext(_Inout_ IExecutionContext* pContext) = 0;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pcontext*<br/>
-İş parçacığı proxy'sinden ayırmak için yürütme bağlamı.
+*pContext*<br/>
+İş parçacığı proxy 'sinden ilişkiyi kaldırmak için yürütme bağlamı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[concurrency Ad Alanı](concurrency-namespace.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
 [IScheduler Yapısı](ischeduler-structure.md)<br/>
 [IThreadProxy Yapısı](ithreadproxy-structure.md)<br/>
 [IVirtualProcessorRoot Yapısı](ivirtualprocessorroot-structure.md)<br/>

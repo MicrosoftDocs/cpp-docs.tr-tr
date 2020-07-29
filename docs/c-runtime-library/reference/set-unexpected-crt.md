@@ -25,18 +25,18 @@ helpviewer_keywords:
 - unexpected function
 - exception handling, termination
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
-ms.openlocfilehash: 77c8f0ae8c64423a656a2ebbe1fe3ef6dbe1b794
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f05eab14a53c8abc119a8014d5ac99dc076a9c25
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948297"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226170"
 ---
 # <a name="set_unexpected-crt"></a>set_unexpected (CRT)
 
 **Beklenmeyen**bir şekilde çağrılacak kendi sonlandırma işlevinizi kurar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 unexpected_function set_unexpected( unexpected_function unexpFunction );
@@ -53,19 +53,19 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Set_unexpected** işlevi, **beklenmeyen**bir şekilde çağrılan Işlev olarak *unexpFunction* 'yi yüklüyor. geçerli C++ özel durum işleme uygulamasında beklenmeyen bir şekilde kullanılmıyor. **Unexpected_function** türü Eh içinde tanımlanır. Kullanıcı tanımlı beklenmeyen işlevin işaretçisi olarak H, **void**döndüren *unexpFunction* . Özel *unexpFunction* işleviniz çağırana dönmemelidir.
+**Set_unexpected** işlevi, **beklenmeyen**bir şekilde çağrılan Işlev olarak *unexpFunction* 'yi yüklüyor. Geçerli C++ özel durum işleme uygulamasında **beklenmeyen** bir şekilde kullanılmıyor. **Unexpected_function** türü Eh içinde tanımlanır. Kullanıcı tanımlı beklenmeyen bir işlevin işaretçisi olarak H, döndüren *unexpFunction* **`void`** . Özel *unexpFunction* işleviniz çağırana dönmemelidir.
 
 ```cpp
 typedef void ( *unexpected_function )( );
 ```
 
-Varsayılan olarak, **beklenmeyen** çağrılar **sonlandırılır**. Kendi sonlandırma işlevinizi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_unexpected** çağırarak bu varsayılan davranışı değiştirebilirsiniz. **beklenmeyen** , **set_unexpected**için bağımsız değişken olarak verilen son işlevi çağırır.
+Varsayılan olarak, **beklenmeyen** çağrılar **sonlandırılır**. Kendi sonlandırma işlevinizi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_unexpected** çağırarak, bu varsayılan davranışı değiştirebilirsiniz. **beklenmeyen** bir bağımsız değişken olarak verilen son işlevi çağıran **set_unexpected**.
 
-**Set_terminate**çağrısıyla yüklenen özel sonlandırma işlevinin aksine, *unexpFunction*içinden bir özel durum oluşturulabilir.
+Bir **set_terminate**çağrısıyla yüklenen özel sonlandırma işlevinin aksine, *unexpFunction*içinden bir özel durum oluşturulabilir.
 
 Çok iş parçacıklı bir ortamda, her iş parçacığı için beklenmeyen işlevler ayrı olarak korunur. Her yeni iş parçacığının kendi beklenmeyen işlevini yüklemesi gerekir. Bu nedenle, her iş parçacığı kendi beklenmeyen işleme üzerinden ücretlendirilir.
 
-Özel durum işlemenin geçerli Microsoft uygulamasında, beklenmeyen çağrılar varsayılan olarak **sonlandırılır** ve özel durum işleme çalışma zamanı kitaplığı tarafından hiçbir zaman çağrılmaz. C++ **Terminate**yerine **beklenmeyen** bir şekilde çağırmanın belirli bir avantajı yoktur.
+C++ özel durum işlemenin geçerli Microsoft uygulamasında, **beklenmeyen** çağrılar varsayılan olarak **sonlandırılır** ve özel durum işleme çalışma zamanı kitaplığı tarafından hiçbir zaman çağrılmaz. **Terminate**yerine **beklenmeyen** bir şekilde çağırmanın belirli bir avantajı yoktur.
 
 Dinamik olarak bağlı tüm dll 'Ler veya EXEs için tek bir **set_unexpected** işleyicisi vardır. **set_unexpected** çağırsanız bile işleyiciniz başka bir dll veya exe tarafından ayarlanmış bir işleyiciyi değiştirmiş olabilir.
 
@@ -73,14 +73,14 @@ Dinamik olarak bağlı tüm dll 'Ler veya EXEs için tek bir **set_unexpected** 
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**set_unexpected**|\<Eh. h >|
+|**set_unexpected**|\<eh.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel Durum İşleme Rutinleri](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
+[Özel durum Işleme yordamları](../../c-runtime-library/exception-handling-routines.md)<br/>
+[durdur](abort.md)<br/>
 [_get_unexpected](get-unexpected.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>
 [sonlandırmayı](terminate-crt.md)<br/>

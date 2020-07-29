@@ -7,18 +7,18 @@ helpviewer_keywords:
 - class types [C++], class statements
 - class keyword [C++]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-ms.openlocfilehash: c1b9d8f6510dfe15644f0e47cad7e0aecbac36c9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6475bc3703ce1bd7cf6103f4be8c12edc36e98b9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180982"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226014"
 ---
 # <a name="class-c"></a>class (C++)
 
-**Class** anahtar sözcüğü bir sınıf türü bildirir veya bir sınıf türünün nesnesini tanımlar.
+**`class`** Anahtar sözcüğü bir sınıf türü bildirir veya bir sınıf türünün nesnesini tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 [template-spec]
@@ -34,8 +34,8 @@ class [ms-decl-spec] [tag [: base-list ]]
 *Şablon-spec*<br/>
 İsteğe bağlı şablon belirtimleri. Daha fazla bilgi için bkz. [Şablonlar](templates-cpp.md).
 
-*class*<br/>
-**Class** anahtar sözcüğü.
+*sınıfı*<br/>
+**`class`** Anahtar sözcüğü.
 
 *MS-decl-spec*<br/>
 İsteğe bağlı depolama sınıfı belirtimi. Daha fazla bilgi için [__declspec](../cpp/declspec.md) anahtar sözcüğüne bakın.
@@ -50,13 +50,13 @@ Bu sınıfın üyelerinin türetileceğini sınıfların veya yapıların isteğ
 Sınıf üyeleri listesi. Daha fazla bilgi için [sınıf üyesine genel bakış](../cpp/class-member-overview.md) bölümüne bakın.
 
 *Bildirimciler*<br/>
-Sınıf türünün bir veya daha fazla örneğinin adlarını belirten bildirimci listesi. Sınıfın tüm veri üyeleri **herkese açık**ise, Bildirimciler Başlatıcı listeler içerebilir. Bu yapılar, veri üyeleri varsayılan olarak sınıflarından, varsayılan olarak **ortak** olan yapılarda daha yaygın bir şekilde yapılır. Daha fazla bilgi için bkz. [Bildirimcilerin genel bakış](../cpp/overview-of-declarators.md) .
+Sınıf türünün bir veya daha fazla örneğinin adlarını belirten bildirimci listesi. Sınıfın tüm veri üyeleri ise, Bildirimciler başlatıcı listeleri içerebilir **`public`** . Bu yapılar, veri üyeleri varsayılan olarak sınıflardan farklı olan yapılarda daha yaygındır **`public`** . Daha fazla bilgi için bkz. [Bildirimcilerin genel bakış](../cpp/overview-of-declarators.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
 Genel olarak sınıflar hakkında daha fazla bilgi için aşağıdaki konulardan birine bakın:
 
-- [struct](../cpp/struct-cpp.md)
+- [sýný](../cpp/struct-cpp.md)
 
 - [birleşim](../cpp/unions.md)
 
@@ -66,7 +66,7 @@ Genel olarak sınıflar hakkında daha fazla bilgi için aşağıdaki konulardan
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-/CLI ve C++ C++/CX 'deki yönetilen sınıflar ve yapılar hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
+C++/CLı ve C++/CX içindeki yönetilen sınıflar ve yapılar hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
 
 ## <a name="example"></a>Örnek
 
@@ -78,7 +78,6 @@ Genel olarak sınıflar hakkında daha fazla bilgi için aşağıdaki konulardan
 
 #include <iostream>
 #include <string>
-#define TRUE = 1
 using namespace std;
 
 class dog
@@ -143,5 +142,5 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)

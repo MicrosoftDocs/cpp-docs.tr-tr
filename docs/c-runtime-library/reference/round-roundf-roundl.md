@@ -34,18 +34,18 @@ helpviewer_keywords:
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-ms.openlocfilehash: 1c35972b38f8e440788404b5891a78d16197d739
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ed7f8457373466e442d7998cee0a14389de4321e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916716"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226183"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
 Kayan noktalı bir değeri en yakın tamsayıya yuvarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double round(
@@ -67,20 +67,20 @@ long double roundl(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Round** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Kayan nokta yuvarlama modunun ayarı ne olursa olsun, yarı çift değerler sıfırdan uzağa yuvarlanır. Hata döndürme yok.
 
-|Giriş|SEH özel durumu|Matherr özel durumu|
+|Girdi|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden **float** ve **Long** **Double** değerleri alıp döndüren **yuvarlak** aşırı yüklerini çağırabilirsiniz. C programında, **hepsini** her zaman alır ve bir **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **yuvarlak** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **hepsini** her zaman alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,7 +88,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**round**, **roundf**, **roundl**|\<Math. h>|
+|**round**, **roundf**, **roundl**|\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -130,7 +130,7 @@ roundl(-2.500000) is -3
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
 [floor, floorf, floorl](floor-floorf-floorl.md)<br/>
 [fmod, fmodf](fmod-fmodf.md)<br/>

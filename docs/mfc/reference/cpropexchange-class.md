@@ -1,5 +1,5 @@
 ---
-title: CpropExchange Sınıfı
+title: CPropExchange sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPropExchange
@@ -22,16 +22,16 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-ms.openlocfilehash: 7818b15e502bb32640d6b9dbfe1a6e4927c70650
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 09fb1bd34f3b5eadb78d8f9081450c042fe22f9e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363984"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226873"
 ---
-# <a name="cpropexchange-class"></a>CpropExchange Sınıfı
+# <a name="cpropexchange-class"></a>CPropExchange sınıfı
 
-OLE denetimleriniz için kalıcılığın uygulanmasını destekler.
+OLE Denetimleriniz için kalıcılık uygulamasını destekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,32 +43,32 @@ class AFX_NOVTABLE CPropExchange
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPropExchange::ExchangeBlobProp](#exchangeblobprop)|İkili büyük nesne (BLOB) özelliğini değiştirir.|
-|[CpropExchange::ExchangeFontProp](#exchangefontprop)|Bir yazı tipi özelliğini değiştirir.|
-|[CpropExchange::ExchangePersistentProp](#exchangepersistentprop)|Bir özelliği denetim ve dosya arasında değiştirir.|
-|[CpropExchange::ExchangeProp](#exchangeprop)|Herhangi bir yerleşik türdeki özellikleri değiştirir.|
-|[CpropExchange::ExchangeVersion](#exchangeversion)|OLE denetiminin sürüm numarasını değiştirir.|
-|[CpropExchange::GetVersion](#getversion)|OLE denetiminin sürüm numarasını alır.|
-|[CPropExchange::IsAsynchronous](#isasynchronous)|Özellik değişimlerinin eşzamanlı olarak yapIlip yapılmadığını belirler.|
-|[CpropExchange::Isloading](#isloading)|Özelliklerin denetime yüklenip yüklenmediğini veya denetimden kaydedilip kaydedilemeyeceğini gösterir.|
+|[CPropExchange:: ExchangeBlobProp](#exchangeblobprop)|İkili büyük nesne (BLOB) özelliğini değiş tokuş eder.|
+|[CPropExchange:: ExchangeFontProp](#exchangefontprop)|Yazı tipi özelliğini değiş tokuş eder.|
+|[CPropExchange:: ExchangePersistentProp](#exchangepersistentprop)|Denetim ve Dosya arasında bir özellik alışverişi yapın.|
+|[CPropExchange:: ExchangeProp](#exchangeprop)|Herhangi bir yerleşik türün özelliklerini değiştirir.|
+|[CPropExchange:: ExchangeVersion](#exchangeversion)|OLE denetiminin sürüm numarasını değiş tokuş eder.|
+|[CPropExchange:: GetVersion](#getversion)|OLE denetiminin sürüm numarasını alır.|
+|[CPropExchange:: IsAsynchronous](#isasynchronous)|Özellik değişimlerinin zaman uyumsuz olarak gerçekleştirilip yapılamayacağını belirler.|
+|[CPropExchange:: ısyükleniyor](#isloading)|Özelliklerin denetime yüklenip yüklenmediğini veya sunucudan kaydedilip kaydedilmediğini gösterir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPropExchange`taban sınıfa sahip değildir.
+`CPropExchange`taban sınıfına sahip değildir.
 
-Bir mülk değişiminin bağlamını ve yönünü belirler.
+Bir özellik değişiminin bağlamını ve yönünü belirler.
 
-Kalıcılık, denetimin genellikle özellikleriyle temsil edilen durum bilgilerinin, denetimin kendisi ile bir ortam arasında değişimidir.
+Kalıcılık, denetimin kendisi ve orta arasında, genellikle özellikleriyle temsil edilen, denetimin durum bilgilerinin alışverişinin kendisidir.
 
-Çerçeve, Bir OLE `CPropExchange` denetiminin özelliklerinin yüklenmesi veya kalıcı depolama alanına depolanması gerektiği bildirildiğinde türetilen bir nesne yi inşa eder.
+Framework, `CPropExchange` BIR OLE denetimi özelliklerinin kalıcı depolama alanından yüklenebileceği veya kalıcı olarak depolanabileceği hakkında bildirim geldiğinde öğesinden türetilmiş bir nesne oluşturur.
 
-Çerçeve, bu `CPropExchange` nesneye bir işaretçi `DoPropExchange` yi denetiminizin işlevine geçirir. Denetiminiz için başlangıç dosyalarını oluşturmak için bir sihirbaz `DoPropExchange` kullandıysanız, denetiminizin işlevi çağırır. `COleControl::DoPropExchange` Taban sınıf sürümü, denetimin stok özelliklerini değiştirir; denetiminize eklediğiniz özellikleri değiştirmek için türetilmiş sınıfınızın sürümünü değiştirirsiniz.
+Framework, denetimin işlevine bu nesneye bir işaretçi geçirir `CPropExchange` `DoPropExchange` . Denetiminiz için başlangıç dosyalarını oluşturmak üzere bir sihirbaz kullandıysanız, denetiminizin `DoPropExchange` işlevi çağırır `COleControl::DoPropExchange` . Temel sınıf sürüm, denetimin stok özelliklerini de değiş tokuş eder; türetilmiş sınıfınızın sürümünü, denetitiğiniz Exchange özelliklerine değiştirirsiniz.
 
-`CPropExchange`bir denetimin özelliklerini seri hale getirmek veya bir denetimin yükü veya oluşturulması üzerine bir denetimin özelliklerini başlatmak için kullanılabilir. Ve `ExchangeProp` `ExchangeFontProp` üye işlevleri `CPropExchange` özellikleri depolamak ve farklı medya bunları yüklemek edebiliyoruz.
+`CPropExchange`bir denetimin özelliklerini seri hale getirmek veya bir denetimin yükleme veya oluşturma sırasında denetimin özelliklerini başlatmak için kullanılabilir. `ExchangeProp`Ve `ExchangeFontProp` üyesi işlevleri `CPropExchange` özellikleri depolayıp farklı medyalardan yükleyebilir.
 
-Kullanma `CPropExchange`hakkında daha fazla bilgi için, makaleye bakın [MFC ActiveX Denetimleri: Özellik Sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
+Kullanma hakkında daha fazla bilgi için `CPropExchange` [MFC ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -76,11 +76,11 @@ Kullanma `CPropExchange`hakkında daha fazla bilgi için, makaleye bakın [MFC A
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxctl.h
+**Üst bilgi:** afxctl. h
 
-## <a name="cpropexchangeexchangeblobprop"></a><a name="exchangeblobprop"></a>CPropExchange::ExchangeBlobProp
+## <a name="cpropexchangeexchangeblobprop"></a><a name="exchangeblobprop"></a>CPropExchange:: ExchangeBlobProp
 
-İkili büyük nesne (BLOB) verilerini depolayan bir özelliği seri hale getiren bir özellik.
+İkili büyük nesne (BLOB) verilerini depolayan bir özelliği seri hale getirir.
 
 ```
 virtual BOOL ExchangeBlobProp(
@@ -92,27 +92,27 @@ virtual BOOL ExchangeBlobProp(
 ### <a name="parameters"></a>Parametreler
 
 *pszPropName*<br/>
-Değiştirilen mülkün adı.
+Değiştirilen özelliğin adı.
 
 *phBlob*<br/>
-Özelliğin depolandığı yeri gösteren bir değişkene işaretçi (değişken genellikle sınıfınızın bir üyesidir).
+Özelliğin nerede depolandığını gösteren bir değişken işaretçisi (değişken genellikle sınıfınızın bir üyesidir).
 
-*hBlobVarsayılan*<br/>
+*hBlobDefault*<br/>
 Özellik için varsayılan değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişim başarılı olsaydı sıfır olmayan; Başarısız olursa 0.
+Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, *phBlob*tarafından başvurulan değişkenden okunur veya yazıldığı gibi. *hBlobDefault* belirtilirse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme başarısız olursa kullanılır.
+Özelliğin değeri, uygun şekilde, *phBlob*tarafından başvurulan değişkene göre okunurdur veya yazılır. *HBlobDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirilmesi başarısız olursa kullanılır.
 
-`CArchivePropExchange::ExchangeBlobProp`İşlevler `CResetPropExchange::ExchangeBlobProp`, `CPropsetPropExchange::ExchangeBlobProp` ve bu saf sanal işlevi geçersiz kılar.
+, `CArchivePropExchange::ExchangeBlobProp` Ve işlevleri `CResetPropExchange::ExchangeBlobProp` `CPropsetPropExchange::ExchangeBlobProp` Bu saf sanal işlevi geçersiz kılar.
 
-## <a name="cpropexchangeexchangefontprop"></a><a name="exchangefontprop"></a>CpropExchange::ExchangeFontProp
+## <a name="cpropexchangeexchangefontprop"></a><a name="exchangefontprop"></a>CPropExchange:: ExchangeFontProp
 
-Bir depolama ortamı ile denetim arasında bir yazı tipi özelliği değişimi.
+Bir depolama ortamı ve denetim arasında bir yazı tipi özelliği değiş tokuş eder.
 
 ```
 virtual BOOL ExchangeFontProp(
@@ -125,30 +125,30 @@ virtual BOOL ExchangeFontProp(
 ### <a name="parameters"></a>Parametreler
 
 *pszPropName*<br/>
-Değiştirilen mülkün adı.
+Değiştirilen özelliğin adı.
 
-*Yazı tipi*<br/>
-Yazı tipi özelliğini içeren bir [CFontHolder](../../mfc/reference/cfontholder-class.md) nesnesine başvuru.
+*Yazý*<br/>
+Yazı tipi özelliğini içeren bir [Cfontheski](../../mfc/reference/cfontholder-class.md) nesnesine başvuru.
 
 *pFontDesc*<br/>
-*pFontDispAmbient* NULL olduğunda yazı tipi özelliğinin varsayılan durumunu başlatmaya yönelik değerleri içeren bir [FONTDESC](/windows/win32/api/olectl/ns-olectl-fontdesc) yapısına işaretçi.
+*Pfontdispambtıı* null olduğunda Font özelliğinin varsayılan durumunu başlatma değerlerini Içeren [fontdesc](/windows/win32/api/olectl/ns-olectl-fontdesc) yapısına yönelik bir işaretçi.
 
-*pFontDispAmbient*<br/>
-Yazı tipi `IFontDisp` özelliğinin varsayılan durumunu başlatmada kullanılacak bir yazı tipinin arabirimine işaretçi.
+*Pfontdispambun*<br/>
+`IFontDisp`Yazı tipi özelliğinin varsayılan durumunu başlatmak için kullanılacak yazı tipinin arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişim başarılı olsaydı sıfır olmayan; Başarısız olursa 0.
+Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazı tipi özelliği ortamdan denetime yükleniyorsa, yazı tipinin özellikleri ortamdan `CFontHolder` alınır ve *yazı tipi* tarafından başvurulan nesne onlarla birlikte baş harfe çevrilir. Yazı tipi özelliği depolanıyorsa, yazı tipi nesnesindeki özellikler ortama yazılır.
+Yazı tipi özelliği ortamdan denetime yükleniyorsa, yazı tipinin özellikleri ortamdan alınır ve `CFontHolder` *yazı tipi* tarafından başvurulan nesne bunlar ile başlatılır. Yazı tipi özelliği depolanıyorsa, yazı tipi nesnesindeki Özellikler ortama yazılır.
 
-`CArchivePropExchange::ExchangeFontProp`İşlevler `CResetPropExchange::ExchangeFontProp`, `CPropsetPropExchange::ExchangeFontProp` ve bu saf sanal işlevi geçersiz kılar.
+, `CArchivePropExchange::ExchangeFontProp` Ve işlevleri `CResetPropExchange::ExchangeFontProp` `CPropsetPropExchange::ExchangeFontProp` Bu saf sanal işlevi geçersiz kılar.
 
-## <a name="cpropexchangeexchangepersistentprop"></a><a name="exchangepersistentprop"></a>CpropExchange::ExchangePersistentProp
+## <a name="cpropexchangeexchangepersistentprop"></a><a name="exchangepersistentprop"></a>CPropExchange:: ExchangePersistentProp
 
-Denetim ve dosya arasında bir özellik alışverişi.
+Denetim ve Dosya arasında bir özellik değiş tokuş eder.
 
 ```
 virtual BOOL ExchangePersistentProp(
@@ -161,30 +161,30 @@ virtual BOOL ExchangePersistentProp(
 ### <a name="parameters"></a>Parametreler
 
 *pszPropName*<br/>
-Değiştirilen mülkün adı.
+Değiştirilen özelliğin adı.
 
 *ppUnk*<br/>
-Özelliğin `IUnknown` arabirimi için bir işaretçi içeren bir değişken için bir işaretçi (bu değişken genellikle sınıfının bir üyesidir).
+Özelliğin arabirimine bir işaretçi içeren bir değişken işaretçisi `IUnknown` (Bu değişken, genellikle sınıfınızın bir üyesidir).
 
-*ııd*<br/>
-Denetimin kullanacağı özellikteki arabirimin arabirim kimliği.
+*'si*<br/>
+Denetimin kullanacağı özelliğin arabirim KIMLIĞI.
 
-*pUnkVarsayılan*<br/>
+*pUnkDefault*<br/>
 Özellik için varsayılan değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişim başarılı olsaydı sıfır olmayan; Başarısız olursa 0.
+Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik dosyadan denetime yükleniyorsa, özellik oluşturulur ve dosyadan parayla başolarak başolarak yüklenir. Özellik depolanıyorsa, değeri dosyaya yazılır.
+Özellik dosyadan denetime yükleniyorsa, özelliği dosyasından oluşturulur ve başlatılır. Özellik depolanıyorsa, değeri dosyasına yazılır.
 
-`CArchivePropExchange::ExchangePersistentProp`İşlevler `CResetPropExchange::ExchangePersistentProp`, `CPropsetPropExchange::ExchangePersistentProp` ve bu saf sanal işlevi geçersiz kılar.
+, `CArchivePropExchange::ExchangePersistentProp` Ve işlevleri `CResetPropExchange::ExchangePersistentProp` `CPropsetPropExchange::ExchangePersistentProp` Bu saf sanal işlevi geçersiz kılar.
 
-## <a name="cpropexchangeexchangeprop"></a><a name="exchangeprop"></a>CpropExchange::ExchangeProp
+## <a name="cpropexchangeexchangeprop"></a><a name="exchangeprop"></a>CPropExchange:: ExchangeProp
 
-Bir depolama ortamı ile denetim arasında bir özellik değişimi.
+Bir depolama ortamı ve denetim arasında bir özellik değiş tokuş eder.
 
 ```
 virtual BOOL ExchangeProp(
@@ -197,40 +197,40 @@ virtual BOOL ExchangeProp(
 ### <a name="parameters"></a>Parametreler
 
 *pszPropName*<br/>
-Değiştirilen mülkün adı.
+Değiştirilen özelliğin adı.
 
 *vtProp*<br/>
 Değiştirilen özelliğin türünü belirten bir sembol. Olası değerler şunlardır:
 
 |Sembol|Özellik Türü|
 |------------|-------------------|
-|VT_I2|**short**|
-|VT_I4|**long**|
-|VT_BOOL|**Bool**|
-|Vt_bstr|`CString`|
-|Vt_cy|**CY**|
-|VT_R4|**float**|
-|VT_R8|**double**|
+|VT_I2|**`short`**|
+|VT_I4|**`long`**|
+|VT_BOOL|**BOOL**|
+|VT_BSTR|`CString`|
+|VT_CY|**CY**|
+|VT_R4|**`float`**|
+|VT_R8|**`double`**|
 
 *pvProp*<br/>
-Özelliğin değeriiçin bir işaretçi.
+Özelliğin değerine yönelik bir işaretçi.
 
-*pvVarsayılan*<br/>
-Özellik için varsayılan değeri işaretçi.
+*pvDefault*<br/>
+Özellik için varsayılan değer işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değişim başarılı olsaydı sıfır olmayan; Başarısız olursa 0.
+Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik ortamdan denetime yükleniyorsa, özelliğin değeri ortamdan alınır ve *pvProp*tarafından işaret edilen nesnede depolanır. Özellik ortama depolanıyorsa, *pvProp* tarafından işaret edilen nesnenin değeri ortama yazılır.
+Özelliği ortamdan denetime yüklenemıyorsa, özelliğin değeri ortamdan alınır ve *pvProp*tarafından işaret edilen nesnede depolanır. Özellik ortamda depolanıyorsa, *pvProp* tarafından işaret edilen nesnenin değeri ortama yazılır.
 
-`CArchivePropExchange::ExchangeProp`İşlevler `CResetPropExchange::ExchangeProp`, `CPropsetPropExchange::ExchangeProp` ve bu saf sanal işlevi geçersiz kılar.
+, `CArchivePropExchange::ExchangeProp` Ve işlevleri `CResetPropExchange::ExchangeProp` `CPropsetPropExchange::ExchangeProp` Bu saf sanal işlevi geçersiz kılar.
 
-## <a name="cpropexchangeexchangeversion"></a><a name="exchangeversion"></a>CpropExchange::ExchangeVersion
+## <a name="cpropexchangeexchangeversion"></a><a name="exchangeversion"></a>CPropExchange:: ExchangeVersion
 
-Bir sürüm numarasının kalıcılığını işlemek için çerçeve tarafından çağrılır.
+Sürüm numarasının kalıcılığını işlemek için Framework tarafından çağırılır.
 
 ```
 virtual BOOL ExchangeVersion(
@@ -241,22 +241,22 @@ virtual BOOL ExchangeVersion(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwVersionLoaded*<br/>
-Yüklenen kalıcı verilerin sürüm numarasının depolandığı bir değişkene başvuru.
+*Dwversionyüklendi*<br/>
+Yüklenmekte olan kalıcı verilerin sürüm numarasının depolanacağı bir değişkene başvuru.
 
-*dwVersionVarsayılan*<br/>
+*dwVersionDefault*<br/>
 Denetimin geçerli sürüm numarası.
 
-*bDönüştür*<br/>
-Kalıcı verileri geçerli sürüme dönüştürüp dönüştürmeyecek lerini veya yüklenen sürümde tutup tutmayacağını gösterir.
+*bConvert*<br/>
+Kalıcı verilerin geçerli sürüme mi dönüştürüleceğini yoksa aynı sürüme mi yüklendiğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfırsız; 0 aksi takdirde.
+İşlev başarılı olursa sıfır dışı; 0 Aksi takdirde.
 
-## <a name="cpropexchangegetversion"></a><a name="getversion"></a>CpropExchange::GetVersion
+## <a name="cpropexchangegetversion"></a><a name="getversion"></a>CPropExchange:: GetVersion
 
-Denetimin sürüm numarasını almak için bu işlevi arayın.
+Denetimin sürüm numarasını almak için bu işlevi çağırın.
 
 ```
 DWORD GetVersion();
@@ -266,9 +266,9 @@ DWORD GetVersion();
 
 Denetimin sürüm numarası.
 
-## <a name="cpropexchangeisasynchronous"></a><a name="isasynchronous"></a>CPropExchange::IsAsynchronous
+## <a name="cpropexchangeisasynchronous"></a><a name="isasynchronous"></a>CPropExchange:: IsAsynchronous
 
-Özellik değişimlerinin eşzamanlı olarak yapIlip yapılmadığını belirler.
+Özellik değişimlerinin zaman uyumsuz olarak gerçekleştirilip yapılamayacağını belirler.
 
 ```
 BOOL IsAsynchronous();
@@ -276,11 +276,11 @@ BOOL IsAsynchronous();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellikler eş senkronize olarak değiştirilirse DOĞRU döndürür, aksi takdirde FALSE.
+Özellikler zaman uyumsuz olarak alınıp eşitse TRUE, değilse FALSE döndürür.
 
-## <a name="cpropexchangeisloading"></a><a name="isloading"></a>CpropExchange::Isloading
+## <a name="cpropexchangeisloading"></a><a name="isloading"></a>CPropExchange:: ısyükleniyor
 
-Özelliklerin denetime yüklenip yüklenmediğini veya denetimden kaydedilip kaydedilemediğini belirlemek için bu işlevi arayın.
+Denetimin denetime yüklenip yüklenmediğini veya sunucudan kaydedilip kaydedilmediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL IsLoading();
@@ -288,9 +288,9 @@ BOOL IsLoading();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellikler yükleniyorsa sıfır olmayan; aksi takdirde 0.
+Özellikler yükleniyorsa sıfır dışı; Aksi takdirde 0.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Coelcontrol::D oPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)

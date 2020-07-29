@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_oversubscribe_operation class
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
-ms.openlocfilehash: 7a879fc2da2f963cd4b5ea5fcd7e9506f86ce051
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 0c95d234fee412c1dacb014dd135ca56fc73bf5e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77140840"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87193971"
 ---
 # <a name="invalid_oversubscribe_operation-class"></a>invalid_oversubscribe_operation Sınıfı
 
-Bu sınıf, `Context::Oversubscribe` yöntemi, `_BeginOversubscription` parametresi **true**olarak ayarlanmış `Context::Oversubscribe` yöntemine önceki bir çağrı olmadan, `_BeginOversubscription` parametresi **false** olarak çağrıldığında oluşturulan bir özel durumu açıklar.
+Bu sınıf, `Context::Oversubscribe` yöntemi parametresi `_BeginOversubscription` **`false`** `Context::Oversubscribe` olarak ayarlanmış bir yönteme önceki bir çağrı olmadan olarak `_BeginOversubscription` çağrıldığında oluşturulan **`true`** bir özel durumu açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,7 +31,7 @@ class invalid_oversubscribe_operation : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. `invalid_oversubscribe_operation` nesnesi oluşturur.|
+|[invalid_oversubscribe_operation](#ctor)|Fazla Yüklendi. Bir `invalid_oversubscribe_operation` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,9 +45,9 @@ class invalid_oversubscribe_operation : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>invalid_oversubscribe_operation
+## <a name="invalid_oversubscribe_operation"></a><a name="ctor"></a>invalid_oversubscribe_operation
 
-`invalid_oversubscribe_operation` nesnesi oluşturur.
+Bir `invalid_oversubscribe_operation` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
@@ -62,4 +62,4 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

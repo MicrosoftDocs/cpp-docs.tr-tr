@@ -1,46 +1,48 @@
 ---
-title: 'Mantıksal OR işleci: ||'
-ms.date: 06/14/2018
+title: 'Mantıksal OR işleci:  &#124;&#124;'
+description: C++ standart dil mantıksal veya işleç sözdizimi ve kullanımı.
+ms.date: 07/23/2020
 f1_keywords:
 - '||'
+- or_cpp
 helpviewer_keywords:
 - OR operator [C++], logical
 - '|| operator'
 - OR operator
 - logical OR operator
 ms.assetid: 31837c99-2655-4bf3-8ded-f13b7a9dc533
-ms.openlocfilehash: 94b2bc024dd7223ac7adacc72924f5ee289bab37
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1845aef59f88d5dd044cefedd21cb618e1102e13
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178086"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226001"
 ---
-# <a name="logical-or-operator-"></a>Mantıksal OR işleci: ||
+# <a name="logical-or-operator-124124"></a>Mantıksal OR işleci:  &#124;&#124;
 
 ## <a name="syntax"></a>Sözdizimi
 
-> mantıksal *or* -ifadesi **||** *mantıksal and ifadesi*
+> *mantıksal or ifadesi* **`||`** *mantıksal and ifadesi*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mantıksal OR işleci ( **||** ), her iki IŞLENEN de TRUE ise true Boole değerini döndürür ve aksı takdirde false döndürür. İşlenenler, değerlendirmeden önce örtük olarak **bool** türüne dönüştürülür ve sonuç **bool**türündedir. Mantıksal OR'un ilişkilendirilebilirliği soldan sağadır.
+Mantıksal OR işleci (), ya **`||`** **`true`** da her iki işlenen ise Boolean değeri döndürür **`true`** ve **`false`** Aksi takdirde döndürür. İşlenenler, değerlendirmeden önce örtük olarak türüne dönüştürülür **`bool`** ve sonuç tür olur **`bool`** . Mantıksal OR'un ilişkilendirilebilirliği soldan sağadır.
 
-Mantıksal OR işlecinin işlenenlerinin aynı türden olmasına gerek yoktur, ancak integral veya işaretçi türünde olmaları gerekir. İşlenenler, genel olarak ilişkisel veya eşitlik ifadeleridir.
+Mantıksal OR işlecinin işlenenleri aynı türde değil, ancak Boolean, integral veya işaretçi türünde olmalıdır. İşlenenler, genel olarak ilişkisel veya eşitlik ifadeleridir.
 
 İlk işlenen, mantıksal OR ifadesinin değerlendirilmesine devam edilmeden önce tamamen değerlendirilir ve tüm yan etkiler tamamlanır.
 
-İkinci işlenen, yalnızca ilk işlenen yanlış (0) olarak değerlendirilirse değerlendirilir. Bu, mantıksal OR ifadesi doğru olduğunda ikinci işlenenin değerlendirilmesine gerek bırakmaz.
+İkinci işlenen, **`false`** MANTıKSAL or ifadesi olduğunda değerlendirme gerekli olmadığından, yalnızca ilk işlenen olarak değerlendirilirse değerlendirilir **`true`** . Bu, *kısa devre* değerlendirmesi olarak bilinir.
 
 ```cpp
 printf( "%d" , (x == w || x == y || x == z) );
 ```
 
-Yukarıdaki örnekte, `x``w`, `y` veya `z`'ye eşitse, `printf` işlevinin ikinci bağımsız değişkeni doğru olarak değerlendirilir ve 1 değeri yazdırılır. Aksi takdirde, false olarak değerlendirilir ve 0 değeri yazdırılır. Koşullardan biri doğru olarak değerlendirildiğinde değerlendirme sona erer.
+Yukarıdaki örnekte,,, `x` veya değerine eşitse, `w` `y` `z` işlevin ikinci bağımsız değişkeni `printf` olarak değerlendirilir **`true`** ve bu da bir tamsayıya yükseltilir ve 1 değeri yazdırılır. Aksi takdirde, olarak değerlendirilir **`false`** ve 0 değeri yazdırılır. Koşullardan biri olarak değerlendirdiği anda **`true`** değerlendirme duraklar.
 
-## <a name="operator-keyword-for-124124"></a>İçin işleç anahtar sözcüğü&#124;&#124;
+## <a name="operator-keyword-for-124124"></a> &#124;&#124; için işleç anahtar sözcüğü
 
-**Or** işleci **||** metin eşdeğeridir. Programlarınızda **or** işlecine erişmenin iki yolu vardır: \<iso646. h > üstbilgi dosyasını dahil edin veya [/za](../build/reference/za-ze-disable-language-extensions.md) (dil uzantılarını devre dışı bırak) derleyici seçeneğiyle derleyin.
+C++, **`or`** için alternatif bir yazım biçimi belirler **`||`** . C 'de alternatif yazım, üst bilgide bir makro olarak sağlanır \<iso646.h> . C++ ' da, alternatif yazım bir anahtar sözcüktür; \<iso646.h>C++ eşdeğeri veya kullanımı \<ciso646> kullanım dışıdır. Microsoft C++ ' da, [`/permissive-`](../build/reference/permissive-standards-conformance.md) [`/Za`](../build/reference/za-ze-disable-language-extensions.md) alternatif yazımı etkinleştirmek için veya derleyici seçeneği gereklidir.
 
 ## <a name="example"></a>Örnek
 
@@ -64,6 +66,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Yerleşik operatörler öncelik ve birleşim](cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[C Mantıksal İşleçleri](../c-language/c-logical-operators.md)
+[C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C mantıksal işleçleri](../c-language/c-logical-operators.md)

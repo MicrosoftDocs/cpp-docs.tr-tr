@@ -10,12 +10,12 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-ms.openlocfilehash: fe9280f434dd6267b03764df2ee663c494f007d8
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 1d905e02be02784b562b9d1a8f72a9bfa4057b9b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857040"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226333"
 ---
 # <a name="return-type"></a>Dönüş Türü
 
@@ -34,26 +34,26 @@ Bir işlevin dönüş türü, işlevin döndürdüğü değerin boyutunu ve tür
 &nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
 *tür belirleyicisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Kağıt**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Char**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kısadır**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**'tir**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int8** / __int8\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int16** / __int16\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int32** / __int32\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__int64** / __int64\* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**kalacağını**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**float**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Çift**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**imza**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**işaretlenmemiş**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`void`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`char`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`short`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int8`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int16`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int32`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int64`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`long`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`float`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`double`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`signed`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`unsigned`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union-Belirleyicisi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Sabit Listesi belirticisi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*TypeDef-adı*
 
-*Tür belirleyicisi* herhangi bir temel, yapı veya birleşim türü belirtebilir. *Tür belirleyicisi*eklemezseniz, dönüş türü `int` varsayılır.
+*Tür belirleyicisi* herhangi bir temel, yapı veya birleşim türü belirtebilir. *Tür belirleyicisi*eklemezseniz, dönüş türü **`int`** varsayılır.
 
-İşlev tanımında verilen dönüş türü, programın başka bir yerinde, işlevin bildirimlerinde dönüş türüyle eşleşmelidir. Bir işlev, bir ifade içeren bir `return` deyim yürütüldüğünde bir değer döndürür. İfade değerlendirilir, gerekirse dönüş değeri türüne dönüştürülür ve işlevin çağrıldığı noktaya döndürülür. Bir işlev dönüş türü `void`ile bildirilirse, bir ifade içeren bir dönüş deyimi uyarı oluşturur ve ifade değerlendirilmez.
+İşlev tanımında verilen dönüş türü, programın başka bir yerinde, işlevin bildirimlerinde dönüş türüyle eşleşmelidir. Bir işlev **`return`** , bir ifade içeren bir deyim yürütüldüğünde bir değer döndürür. İfade değerlendirilir, gerekirse dönüş değeri türüne dönüştürülür ve işlevin çağrıldığı noktaya döndürülür. Bir işlev dönüş türü ile bildirilirse, bir **`void`** ifade içeren bir dönüş deyimi uyarı oluşturur ve ifade değerlendirilmez.
 
 Aşağıdaki örnekler işlev dönüş değerlerini gösterir.
 
@@ -73,7 +73,7 @@ STUDENT sortstu( STUDENT a, STUDENT b )
 }
 ```
 
-`STUDENT` Bu örnek, türü `typedef` bir bildirimiyle tanımlar ve dönüş türüne sahip `sortstu` `STUDENT` işlevi tanımlar. İşlevi, iki yapı bağımsız değişkenlerinden birini seçer ve döndürür. İşlevin sonraki çağrılarında, derleyici bağımsız değişken türlerinin olduğundan emin olmak için kontrol eder `STUDENT`.
+Bu örnek, `STUDENT` türü bir bildirimiyle tanımlar **`typedef`** ve `sortstu` dönüş türüne sahip işlevi tanımlar `STUDENT` . İşlevi, iki yapı bağımsız değişkenlerinden birini seçer ve döndürür. İşlevin sonraki çağrılarında, derleyici bağımsız değişken türlerinin olduğundan emin olmak için kontrol eder `STUDENT` .
 
 > [!NOTE]
 > Verimlilik, yapının tamamı yerine, yapıya işaretçi geçirilerek geliştirilebilir.
@@ -93,10 +93,10 @@ char *smallstr( char s1[], char s2[] )
 }
 ```
 
-Bu örnek, bir karakter dizisine bir işaretçi döndüren bir işlevi tanımlar. İşlevi bağımsız değişken olarak iki karakter dizisi (dizeler) alır ve iki dizenin kısaldığına bir işaretçi döndürür. Bir dizi işaretçisi dizi öğelerinden birincilerine işaret eder ve türüne sahiptir; Bu nedenle, işlevinin dönüş türü, türüne `char`yönelik bir işaretçidir.
+Bu örnek, bir karakter dizisine bir işaretçi döndüren bir işlevi tanımlar. İşlevi bağımsız değişken olarak iki karakter dizisi (dizeler) alır ve iki dizenin kısaldığına bir işaretçi döndürür. Bir dizi işaretçisi dizi öğelerinden birincilerine işaret eder ve türüne sahiptir; Bu nedenle, işlevinin dönüş türü, türüne yönelik bir işaretçidir **`char`** .
 
-Prototip ve dönüş değerleri için doğru `int` tür denetlemesi etkin olacak şekilde, prototipler önerilse de, dönüş türü olan işlevleri bildirmeniz gerekir.
+**`int`** Prototip ve dönüş değerleri için doğru tür denetlemesi etkin olacak şekilde, prototipler önerilse de, dönüş türü olan işlevleri bildirmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C İşlev Tanımları](../c-language/c-function-definitions.md)
+[C Işlev tanımları](../c-language/c-function-definitions.md)

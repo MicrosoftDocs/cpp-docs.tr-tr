@@ -7,16 +7,16 @@ helpviewer_keywords:
 - '#error%2C assert%2C static_assert [C++]'
 - user-supplied messages [C++], compile time
 ms.assetid: ebf7d885-61c8-4233-b0ae-1c9a38e0f385
-ms.openlocfilehash: d76f0c2f7dc5a4202bff3f93e097a1c186f4601a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a4861b3e1d17835f11f5e148d6b62051a6747f80
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190566"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226027"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 
-Dil, uygulamanızda hata ayıklamanıza yardımcı olan üç hata işleme mekanizmasını destekler: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), static_assert anahtar sözcüğü ve [onaylama makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. [static_assert](../cpp/static-assert.md) C++ Üç mekanizmaların hepsi hata iletileri ve iki Ayrıca yazılım onaylamalarını da test edin. Yazılım onay belgesi, programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Derleme zamanı onaylama işlemi başarısız olursa, derleyici bir tanılama iletisi ve derleme hatası verir. Çalışma zamanı onayı başarısız olursa, işletim sistemi bir tanılama iletisi yayınlar ve uygulamanızı kapatır.
+C++ dili, uygulamanızda hata ayıklamanıza yardımcı olan üç hata işleme mekanizmasını destekler: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [onaylama makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Üç mekanizmaların hepsi hata iletileri ve iki Ayrıca yazılım onaylamalarını da test edin. Yazılım onay belgesi, programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Derleme zamanı onaylama işlemi başarısız olursa, derleyici bir tanılama iletisi ve derleme hatası verir. Çalışma zamanı onayı başarısız olursa, işletim sistemi bir tanılama iletisi yayınlar ve uygulamanızı kapatır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -26,15 +26,15 @@ Uygulamanızın ömrü, ön işleme, derleme ve çalışma zamanı aşamasından
 
 - [Static_assert](../cpp/static-assert.md) bildirimi, derleme zamanında geçerli olur. Boole değerine dönüştürülebilen, Kullanıcı tarafından belirtilen integral ifadesiyle temsil edilen bir yazılım onayını sınar. İfade sıfır (false) olarak değerlendirilirse, derleyici Kullanıcı tarafından belirtilen iletiyi yayınlar ve derleme hata vererek başarısız olur.
 
-   `static_assert` bildirimi, şablon bağımsız değişkenleri Kullanıcı tarafından belirtilen ifadeye dahil olabileceğinden, özellikle hata ayıklama için yararlıdır.
+   **`static_assert`** Bildirim özellikle, şablon bağımsız değişkenleri Kullanıcı tarafından belirtilen ifadeye dahil olabileceğinden, bu durum, şablonlarda hata ayıklama için yararlıdır.
 
 - [Onaylama makrosu, _assert _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu çalışma zamanında etkilidir. Kullanıcı tarafından belirtilen bir ifadeyi değerlendirir ve sonuç sıfırsa, sistem bir tanılama iletisi yayınlar ve uygulamanızı kapatır. [_Assert](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) ve _ASSERTE gibi birçok farklı makro, bu makroya benzer ancak sistem tarafından tanımlanan veya Kullanıcı tanımlı tanılama iletileri verebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[#error Yönergesi (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>
-[assert Makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
-[_ASSERT, _ASSERTE, _ASSERT_EXPR Makroları](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
+[#error yönergesi (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>
+[onaylama makrosu, _assert _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
+[_ASSERT, _ASSERTE _ASSERT_EXPR makrolar](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)<br/>
 [static_assert](../cpp/static-assert.md)<br/>
-[_STATIC_ASSERT Makrosu](../c-runtime-library/reference/static-assert-macro.md)<br/>
+[_STATIC_ASSERT makro](../c-runtime-library/reference/static-assert-macro.md)<br/>
 [Şablonlar](../cpp/templates-cpp.md)

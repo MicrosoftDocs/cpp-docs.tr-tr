@@ -34,18 +34,18 @@ helpviewer_keywords:
 - wopen function
 - open function
 ms.assetid: 13f6a0c3-d1aa-450d-a7aa-74abc91b163e
-ms.openlocfilehash: 4ce6e9aebe5d058143ad737f9c9db5bb68b30b1f
-ms.sourcegitcommit: eff68e4e82be292a5664616b16a526df3e9d1cda
+ms.openlocfilehash: f57ad33fe09938e0f04d0ca2615898fa2cdbd642
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80150738"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226209"
 ---
 # <a name="_open-_wopen"></a>_open, _wopen
 
 Bir dosya açar. Daha güvenli sürümler kullanılabilir olduğundan bu işlevler kullanım dışıdır; bkz. [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _open(
@@ -62,7 +62,7 @@ int _wopen(
 
 ### <a name="parameters"></a>Parametreler
 
-*kısaltın*<br/>
+*filename*<br/>
 Dosya adı.
 
 *oflag*<br/>
@@ -95,7 +95,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_topen**|**_open**|**_open**|**_wopen**|
 
-*oflag* , \<fcntl. h > tanımlanan bir veya daha fazla bildirim sabitinden veya sabit kombinasyondan oluşturulan bir tamsayı ifadesidir.
+*oflag* , içinde tanımlanan bir veya daha fazla bildirim sabitlerinden veya sabit kombinasyondan oluşturulan bir tamsayı ifadesidir \<fcntl.h> .
 
 |*oflag* sabiti|Davranış|
 |-|-|
@@ -104,7 +104,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 | **_O_CREAT** | Bir dosya oluşturur ve yazmak için açar. Dosya *adı* tarafından belirtilen dosya varsa herhangi bir etkiye sahip değildir. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
 | **_O_CREAT** &#124; **_O_SHORT_LIVED** | Geçici olarak bir dosya oluşturur ve mümkünse disk boşaltılamaz. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
 | **_O_CREAT** &#124; **_O_TEMPORARY** | Geçici olarak bir dosya oluşturur; Dosya, son dosya tanımlayıcısı kapatıldığında silinir. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
-| **_O_CREAT** &#124; `_O_EXCL` | Dosya *adı* tarafından belirtilen bir dosya varsa bir hata değeri döndürür. Yalnızca **_O_CREAT**ile kullanıldığında geçerlidir. |
+| **_O_CREAT** &#124;`_O_EXCL` | Dosya *adı* tarafından belirtilen bir dosya varsa bir hata değeri döndürür. Yalnızca **_O_CREAT**ile kullanıldığında geçerlidir. |
 | **_O_NOINHERIT** | Paylaşılan bir dosya tanımlayıcısının oluşturulmasını engeller. |
 | **_O_RANDOM** | Önbellek için en iyi duruma getirilmiş, ancak sınırlı olmamak üzere, diskten rastgele erişim |
 | **_O_RDONLY** | Yalnızca okuma için bir dosya açar. **_O_RDWR** veya **_O_WRONLY**ile belirtilemez. |
@@ -121,21 +121,21 @@ Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY*
 
 **_O_WTEXT** bir dosyayı okumak üzere açmak için kullanılırsa, **_open** dosyanın başlangıcını okur ve bir bayt sırası işaretini (BOM) denetler. Bir BOM varsa, dosya, ürün reçetesine bağlı olarak UTF-8 veya UTF-16LE olarak değerlendirilir. Bir BOM yoksa, dosya ANSI olarak değerlendirilir. Bir dosya **_O_WTEXT**kullanılarak yazmak için açıldığında, UTF-16 kullanılır. Önceki herhangi bir ayar veya bayt sırası işaretinden bağımsız olarak **_O_U8TEXT** kullanılırsa, dosya her zaman UTF-8 olarak açılır; **_O_U16TEXT** kullanılıyorsa, dosya her zaman UTF-16 olarak açılır.
 
-**_O_WTEXT**, **_O_U8TEXT**veya **_O_U16TEXT**kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadan okunan VERILERI, tür **wchar_t**olarak depolanan UTF-16 verilerine çevirir. Unicode modunda açılan bir dosyaya yazan işlevler, türü **wchar_t**olarak depolanan UTF-16 verilerini içeren arabellekleri bekler. Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
+**_O_WTEXT**, **_O_U8TEXT**veya **_O_U16TEXT**kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadaki okunan verileri, tür olarak depolanan UTF-16 verilerine çevirir **`wchar_t`** . Unicode modunda açılan bir dosyaya yazan işlevler, tür olarak depolanan UTF-16 verileri içeren arabellekler bekler **`wchar_t`** . Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
 
-**_Open** , **_O_WRONLY** |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**ile çağrılırsa, önce dosyayı okumak ve yazmak için açmaya çalışır, ardından ürün reçetesini okuyabilir, sonra yazmak için yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
+**_Open** **_O_WRONLY**  |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
 
 *Oflag* bağımsız değişkenini oluşturmak için iki veya daha fazla bildirim sabiti kullanıldığında sabitler BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir. İkili ve metin modlarıyla ilgili bir tartışma için bkz. [metin ve Ikili mod dosya g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-*Pmode* bağımsız değişkeni yalnızca **_O_CREAT** belirtildiğinde gereklidir. Dosya zaten varsa *pmode* yok sayılır. Aksi halde, *pmode* , yeni dosya ilk kez kapatıldığında ayarlanan dosya izin ayarlarını belirtir. **_open** izinler ayarlanmadan önce, geçerli dosya izni maskesini *pmode* 'a uygular. (Daha fazla bilgi için bkz. [_umask](umask.md).) *pmode* , \<SYS\Stat.h > içinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içeren bir tamsayı ifadesidir.
+*Pmode* bağımsız değişkeni yalnızca **_O_CREAT** belirtildiğinde gereklidir. Dosya zaten varsa *pmode* yok sayılır. Aksi halde, *pmode* , yeni dosya ilk kez kapatıldığında ayarlanan dosya izin ayarlarını belirtir. **_open** izinler ayarlanmadan önce, geçerli dosya izni maskesini *pmode* 'a uygular. (Daha fazla bilgi için bkz. [_umask](umask.md).) *pmode* , içinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya ikisini içeren bir tamsayı ifadesidir \<sys\stat.h> .
 
-|*pmode*|Açıklama|
+|*pmode*|Anlamı|
 |-|-|
 | **_S_IREAD** | Yalnızca okuma izni verilir. |
 | **_S_IWRITE** | Yazma izni veriliyor. (Aslında, okuma ve yazma izni verir.) |
 | **_S_IREAD** &#124; **_S_IWRITE** | Okuma ve yazma izni verildi. |
 
-Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **&#124;** ) ile birleştirilir. Windows 'da tüm dosyalar okunabilir; salt yazılır izin kullanılamıyor. Bu nedenle, **_S_IWRITE** ve **_S_IREAD** |  **_S_IWRITE** eşdeğerdir.
+Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **&#124;** ) ile birleştirilir. Windows 'da tüm dosyalar okunabilir; salt yazılır izin kullanılamıyor. Bu nedenle, **_S_IWRITE** ve **_S_IREAD**  |  **_S_IWRITE** modları eşdeğerdir.
 
 Başka bir işletim sisteminde geçerli bir *pmode* belirtse bile, bazı **_S_IREAD** ve **_S_IWRITE** birleşimi dışında bir değer *pmode*için belirtilmişse, ya *da Izin verilen bir diğer değer belirtildiğinde* , Işlev hata ayıklama modunda bir onaylama işlemi oluşturur ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
 
@@ -143,8 +143,8 @@ Başka bir işletim sisteminde geçerli bir *pmode* belirtse bile, bazı **_S_IR
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_open**|\<IO. h >|\<fcntl. h >, \<sys\types.h >, \<SYS\Stat.h >|
-|**_wopen**|\<io. h > veya \<wchar. h >|\<fcntl. h >, \<sys\types.h >, \<SYS\Stat.h >|
+|**_open**|\<io.h>|\<fcntl.h>, \<sys\types.h>, \<sys\stat.h>|
+|**_wopen**|\<io.h> veya \<wchar.h>|\<fcntl.h>, \<sys\types.h>, \<sys\stat.h>|
 
 **_open** ve **_wopen** Microsoft uzantılarıdır. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -193,7 +193,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Open succeeded on input file

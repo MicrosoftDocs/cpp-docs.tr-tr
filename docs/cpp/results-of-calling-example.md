@@ -8,40 +8,40 @@ helpviewer_keywords:
 - results, __cdecl call
 - results, __stdcall call
 ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
-ms.openlocfilehash: edbeb187e568b833673d91ef70ff57fbd460659c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1bf5fe62b8ef2b7a37bf72b7a40e5d47af3f3961
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179061"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225884"
 ---
 # <a name="results-of-calling-example"></a>Çağırma Örneği Sonuçları
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 ## <a name="__cdecl"></a>__cdecl
 
-C ile donatılmış işlev adı `_MyFunc`.
+C ile donatılmış işlev adı `_MyFunc` .
 
 ![CDECL çağırma kuralı](../cpp/media/vc37i01.gif "CDECL çağırma kuralı") <br/>
-**__Cdecl** çağırma kuralı
+**`__cdecl`** Çağırma kuralı
 
 ## <a name="__stdcall-and-thiscall"></a>__stdcall ve thiscall
 
-C düzenlenmiş adı ( **__stdcall**) `_MyFunc@20`. C++ Düzenlenmiş ad uygulamaya özgüdür.
+C düzenlenmiş adı ( **`__stdcall`** ), `_MyFunc@20` . C++ düzenlenmiş adı uygulamaya özgüdür.
 
 ![&#95;&#95;stdcall ve thiscall çağırma kuralları](../cpp/media/vc37i02.gif "&#95;&#95;stdcall ve thiscall çağırma kuralları") <br/>
 __Stdcall ve thiscall çağırma kuralları
 
 ## <a name="__fastcall"></a>__fastcall
 
-C düzenlenmiş adı ( **__fastcall**) `@MyFunc@20`. C++ Düzenlenmiş ad uygulamaya özgüdür.
+C düzenlenmiş adı ( **`__fastcall`** ), `@MyFunc@20` . C++ düzenlenmiş adı uygulamaya özgüdür.
 
-![Fastcall için &#95; &#95;çağrı kuralı](../cpp/media/vc37i03.gif "Fastcall için &#95; &#95;çağrı kuralı") <br/>
+![ &#95;&#95;fastcall için çağrı kuralı](../cpp/media/vc37i03.gif " &#95;&#95;fastcall için çağrı kuralı") <br/>
 __Fastcall çağırma kuralı
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çağırma Örneği: İşlev Prototipi ve Çağrı](../cpp/calling-example-function-prototype-and-call.md)
+[Çağırma örneği: Işlev prototipi ve çağrı](../cpp/calling-example-function-prototype-and-call.md)

@@ -3,12 +3,12 @@ title: SAL'ı Anlama
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-ms.openlocfilehash: fe48e31e5f4390915c4f3b5b6bf9c09bbd9fffe1
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 78a254bca6a90826d47f20ee9909a8cc66e23e28
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403991"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226053"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 
@@ -78,7 +78,7 @@ Bu uygulama, bir ortak-tek hatası içerir. Neyse ki, kod yazarı SAL arabellek 
 
 SAL, kullanım düzenine göre sınıflandırılan dört temel parametre türünü tanımlar.
 
-|Category|Parametre ek açıklaması|Açıklama|
+|Kategori|Parametre ek açıklaması|Açıklama|
 |--------------|--------------------------|-----------------|
 |**Çağrılan işleve giriş**|`_In_`|Veriler çağrılan işleve geçirilir ve salt okunurdur.|
 |**Çağrılan işleve giriş ve arayana çıkış**|`_Inout_`|Kullanılabilir veriler işleve geçirilir ve potansiyel olarak değiştirilebilir.|
@@ -359,7 +359,7 @@ Visual Studio Code analizi, bu işlevin, başvuru yapılmadan önce NULL olduğu
 
 ### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Örnek: \_ ile birlikte \_ gelen başarı ek açıklaması \_\_
 
-Ek açıklamalar, çoğu nesneye uygulanabilir.  Özellikle, bir işlevin tamamına açıklama ekleyebilirsiniz.  Bir işlevin en belirgin özelliklerinden biri, başarılı veya başarısız olmasına neden olabilir. Ancak, bir arabellek ve boyutu arasındaki ilişki gibi C/C++, işlev başarısını veya hatasını ifade edemez. `_Success_`Ek açıklamayı kullanarak bir işlevin başarısını nasıl göründüğünü söyleyebilirsiniz.  Ek açıklamanın parametresi, `_Success_` yalnızca true olduğunda işlevin başarılı olduğunu gösterir. İfade, ek açıklama ayrıştırıcısının işleyebileceği herhangi bir şey olabilir. İşlev döndürmede sonra ek açıklamaların etkileri yalnızca işlev başarılı olduğunda geçerlidir. Bu örnek `_Success_` `_Out_` , doğru şeyi yapmak için ile nasıl etkileşimde bulunacağını gösterir. `return`Dönüş değerini göstermek için anahtar sözcüğünü kullanabilirsiniz.
+Ek açıklamalar, çoğu nesneye uygulanabilir.  Özellikle, bir işlevin tamamına açıklama ekleyebilirsiniz.  Bir işlevin en belirgin özelliklerinden biri, başarılı veya başarısız olmasına neden olabilir. Ancak, bir arabellek ve boyutu arasındaki ilişki gibi C/C++, işlev başarısını veya hatasını ifade edemez. `_Success_`Ek açıklamayı kullanarak bir işlevin başarısını nasıl göründüğünü söyleyebilirsiniz.  Ek açıklamanın parametresi, `_Success_` yalnızca true olduğunda işlevin başarılı olduğunu gösterir. İfade, ek açıklama ayrıştırıcısının işleyebileceği herhangi bir şey olabilir. İşlev döndürmede sonra ek açıklamaların etkileri yalnızca işlev başarılı olduğunda geçerlidir. Bu örnek `_Success_` `_Out_` , doğru şeyi yapmak için ile nasıl etkileşimde bulunacağını gösterir. **`return`** Dönüş değerini göstermek için anahtar sözcüğünü kullanabilirsiniz.
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)

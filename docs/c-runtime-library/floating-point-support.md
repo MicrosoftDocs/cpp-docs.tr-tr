@@ -8,12 +8,12 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: a0ee21378a6feb7ada39dc00f0e181672470e231
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: ca1648719a4a98efc56ea3f543336b803c81c40f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821518"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226235"
 ---
 # <a name="math-and-floating-point-support"></a>Matematik ve kayan nokta desteği
 
@@ -21,11 +21,11 @@ Evrensel C çalışma zamanı kitaplığı (UCRT), ISO C99 tarafından gerekenle
 
 Kayan nokta matematik kitaplığı işlevlerinin birçoğu, farklı CPU mimarileri için farklı uygulamalara sahiptir. Örneğin, 32 bit x86 CRT, 64 bit x64 CRT 'den farklı bir uygulamaya sahip olabilir. Ayrıca, bazı işlevlerden belirli bir CPU mimarisi için birden çok uygulama olabilir. En verimli uygulama, CPU tarafından desteklenen yönerge kümelerine bağlı olarak çalışma zamanında dinamik olarak seçilir. Örneğin, 32 bit x86 CRT 'de, bazı işlevlerde hem x87 uygulama hem de bir SSE2 uygulama vardır. SSE2 destekleyen bir CPU üzerinde çalışırken, daha hızlı SSE2 uygulama kullanılır. SSE2 desteklemeyen bir CPU üzerinde çalışırken, daha yavaş x87 uygulama kullanılır. Matematik kitaplığı işlevlerinin farklı uygulamaları, sonuçlarını oluşturmak için farklı CPU yönergeleri ve farklı algoritmalar kullanabileceğinden, işlevler CPU 'larda farklı sonuçlar üretebilir. Çoğu durumda, sonuçlar doğru bir şekilde yuvarlanmış sonucu +/-1 ULP içinde, ancak gerçek sonuçlar CPU 'larda farklılık gösterebilir.
 
-Microsoft C/C++ ve Microsoft Visual C++ 'ın önceki 16 bit sürümleri, 80 bitlik bir duyarlık kayan nokta veri türü olarak **uzun çift** türü destekliyordu. Visual C++'ın sonraki sürümlerinde **Long Double** veri türü, **double** türü ile özdeş olan 64 bitlik bir duyarlık kayan nokta veri türüdür. Derleyici **Long Double** ve **Double** değerlerini ayrı türler olarak değerlendirir, ancak **Long Double** işlevleri **çift** karşılıklarıyla aynıdır. CRT, ISO C99 kaynak kodu uyumluluğu için matematik işlevlerinin **uzun çift** sürümlerini sağlar, ancak ikili temsilinin diğer derleyicilerden farklı olabileceğini unutmayın.
+Microsoft C/C++ ' ın önceki 16 bit sürümleri ve Microsoft Visual C++ **`long double`** türü 80 bitlik bir duyarlık kayan nokta veri türü olarak destekliyordu. Visual C++ sonraki sürümlerinde **`long double`** veri türü, türü ile özdeş olan 64 bitlik bir duyarlık kayan nokta veri türüdür **`double`** . Derleyici, **`long double`** ve **`double`** ayrı türler olarak davranır, ancak **`long double`** işlevler **`double`** karşılıklarıyla aynıdır. CRT, **`long double`** ISO C99 kaynak kodu uyumluluğu için matematik işlevlerinin sürümlerini sağlar, ancak ikili temsilinin diğer derleyicilerden farklı olabileceğini unutmayın.
 
 ## <a name="supported-math-and-floating-point-routines"></a>Desteklenen matematik ve kayan nokta yordamları
 
-|Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Yordam|Kullanın|
 |-|-|
 [abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Bir tamsayı türünün mutlak değerini hesaplar
 [acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|Yay kosinüs değerini hesaplar
@@ -34,20 +34,20 @@ Microsoft C/C++ ve Microsoft Visual C++ 'ın önceki 16 bit sürümleri, 80 bitl
 [asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)|Hiperbolik yay sinüsünü hesaplar
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Yay tanjantını hesaplar
 [atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)|Hiperbolik yay tanjantını hesaplar
-[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü dizeyi bir **Double** 'a dönüştürür
-[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Bir dizeyi **Double** 'a dönüştürür
-[_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü dizeyi **float** veya **Long Double** 'a dönüştürür
+[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü bir dizeyi öğesine dönüştürür**`double`**
+[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Bir dizeyi öğesine dönüştürür**`double`**
+[_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü dizeyi bir veya öğesine dönüştürür **`float`****`long double`**
 [cbrt, cbrtf, cbrtl](../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md)|Küp kökünü hesaplar
 [ceil, ceilf, ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Tavan hesaplar
 [_chgsign, _chgsignf, _chgsignl](../c-runtime-library/reference/chgsign-chgsignf-chgsignl.md)|Toplamsal tersini hesaplar
 [_clear87, _clearfp](../c-runtime-library/reference/clear87-clearfp.md)|Kayan nokta durum kaydını alır ve temizler
-[_control87, \__control87_2 _controlfp](../c-runtime-library/reference/control87-controlfp-control87-2.md)|Kayan nokta denetim sözcüğünü alır ve ayarlar
+[_control87, \_ _control87_2, _controlfp](../c-runtime-library/reference/control87-controlfp-control87-2.md)|Kayan nokta denetim sözcüğünü alır ve ayarlar
 [_controlfp_s](../c-runtime-library/reference/controlfp-s.md)|**_Controlfp** güvenli sürümü
 [copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl](../c-runtime-library/reference/copysign-copysignf-copysignl-copysign-copysignf-copysignl.md)|Bir bağımsız değişkenin büyüklüğüne ve diğerinin işaretine sahip bir değer döndürür
 [cos, cosf, cosl](../c-runtime-library/reference/cos-cosf-cosl.md)|Sinüsü hesaplar
 [cosh, coshf, coshl](../c-runtime-library/reference/cosh-coshf-coshl.md)|Hiperbolik sinüsü hesaplar
 [div, ldiv, lldiv](../c-runtime-library/reference/div.md)|Bölümü ve iki tamsayı değerinin kalanını hesaplar
-[_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Bir **Double** öğesini dizeye dönüştürür
+[_ecvt](../c-runtime-library/reference/ecvt.md), [ecvt](../c-runtime-library/reference/posix-ecvt.md)|Bir **`double`** dizeye dönüştürür
 [_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|**_Ecvt** güvenli sürümü
 [HATAİŞLEV, erff, ERFL](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Hata işlevini hesaplar
 [erfc, erfcf, erfcl](../c-runtime-library/reference/erf-erff-erfl-erfc-erfcf-erfcl.md)|Tamamlayıcı hata işlevini hesaplar
@@ -83,7 +83,7 @@ Microsoft C/C++ ve Microsoft Visual C++ 'ın önceki 16 bit sürümleri, 80 bitl
 [_gcvt_s](../c-runtime-library/reference/gcvt-s.md)|**_Gcvt** güvenli sürümü
 [_get_FMA3_enable, _set_FMA3_enable](../c-runtime-library/reference/get-fma3-enable-set-fma3-enable.md)|X64 üzerinde FMA3 yönergelerinin kullanımı için bir bayrak alır veya ayarlar
 [hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl](../c-runtime-library/reference/hypot-hypotf-hypotl-hypot-hypotf-hypotl.md)|Hipotenüsü hesaplar
-[ıalınan GB, ılogbf, ılogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|Taban-2 üssün oluşan tamsayıyı hesaplar
+[ilogb, ilogbf, ilogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|Taban-2 üssün oluşan tamsayıyı hesaplar
 [imaxabs](../c-runtime-library/reference/imaxabs.md)|Bir tamsayı türünün mutlak değerini hesaplar
 [imaxdiv](../c-runtime-library/reference/imaxdiv.md)|Bölümü ve iki tamsayı değerinin kalanını hesaplar
 [isfinite, _finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|Değerin sonlu olup olmadığını belirler
@@ -94,15 +94,15 @@ Microsoft C/C++ ve Microsoft Visual C++ 'ın önceki 16 bit sürümleri, 80 bitl
 [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevini hesaplar
 [ldexp, ldexpf, ldexpl](../c-runtime-library/reference/ldexp.md)|Hesaplar x * 2<sup>n</sup>
 [lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|Gama işlevinin mutlak logaritmasına ilişkin doğal logaritmayı hesaplar
-[llrint, llrintf, llrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
-[llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
+[llrint, llrintf, llrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan noktalı bir değeri en yakın **`long long`** değere yuvarlar
+[llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan noktalı bir değeri en yakın **`long long`** değere yuvarlar
 [log, logf, logl, log10, log10f, log10l](../c-runtime-library/reference/log-logf-log10-log10f.md)|Doğal veya 10 tabanında logaritmayı hesaplar
 [log1p, log1pf, log1pl](../c-runtime-library/reference/log1p-log1pf-log1pl2.md)|1 + x 'in doğal logaritmasını hesaplar
 [log2, log2f, log2l](../c-runtime-library/reference/log2-log2f-log2l.md)|2 tabanında logaritmayı hesaplar
 [logb, logbf, logbl, _logb, _logbf](../c-runtime-library/reference/logb-logbf-logbl-logb-logbf.md)|Kayan nokta değerinin üssünü döndürür
-[lrint, lrintf, lrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
+[lrint, lrintf, lrintl](../c-runtime-library/reference/lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)|Kayan noktalı bir değeri en yakın **`long`** değere yuvarlar
 [_lrotl, _lrotr](../c-runtime-library/reference/lrotl-lrotr.md)|Bir tamsayı değerini sola veya sağa döndürür
-[lround, lroundf, lroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan noktalı bir değeri en yakın **Long** değere yuvarlar
+[lround, lroundf, lroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)|Kayan noktalı bir değeri en yakın **`long`** değere yuvarlar
 [_matherr](../c-runtime-library/reference/matherr.md)|Varsayılan matematik hata işleyicisi
 [__max](../c-runtime-library/reference/max.md)|İki değerden daha büyük bir değer döndüren makro
 [__min](../c-runtime-library/reference/min.md)|İki değerden daha küçük bir değer döndüren makro
@@ -126,13 +126,13 @@ Microsoft C/C++ ve Microsoft Visual C++ 'ın önceki 16 bit sürümleri, 80 bitl
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsü hesaplar
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Kare kökünü hesaplar
 [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Kayan nokta durum sözcüğünü alır
-[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Dizeyi **float** öğesine dönüştürür
-[strsöyle, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeyi **Long** **Double** 'a dönüştürür
+[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Bir dizeyi öğesine dönüştürür**`float`**
+[strsöyle, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeyi öğesine dönüştürür**`long double`**
 [tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Tanjantı hesaplar
 [tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Hiperbolik tanjantı hesaplar
 [tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Gama işlevini hesaplar
 [trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Kesirli kısmını keser
-[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeyi **Double** 'a dönüştürür
+[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeyi öğesine dönüştürür**`double`**
 [_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevini hesaplar
 
 ## <a name="see-also"></a>Ayrıca bkz.

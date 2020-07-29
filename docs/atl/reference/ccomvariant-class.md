@@ -1,5 +1,5 @@
 ---
-title: CComVariant Sınıfı
+title: CComVariant sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComVariant
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: 9a84d91e20242fb206d1d3f71fcb3dd207561f62
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a435cf8e5501e4f21af53091dc0e28f1c1037379
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327224"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226574"
 ---
-# <a name="ccomvariant-class"></a>CComVariant Sınıfı
+# <a name="ccomvariant-class"></a>CComVariant sınıfı
 
-Bu sınıf, depolanan veri türünü belirten bir üye sağlayarak VARIANT türünü sarar.
+Bu sınıf, depolanan veri türünü gösteren bir üye sağlayan DEĞIŞKEN türünü sarmalanmış.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,41 +41,41 @@ class CComVariant : public tagVARIANT
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Kcomvariant::Ccomvariant](#ccomvariant)|Oluşturucu.|
-|[Kcomvariant::~Ccomvariant](#dtor)|Yıkıcı.|
+|[Ccomvarıant:: CComVariant](#ccomvariant)|Oluşturucu.|
+|[Ccomvarıant:: ~ CComVariant](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Ccomvariant::Ekle](#attach)|`CComVariant` Nesneye bir VARYANT bağlar.|
-|[Ccomvariant::changetype](#changetype)|Nesneyi `CComVariant` yeni bir türe dönüştürür.|
-|[Ccomvariant::Clear](#clear)|Nesneyi `CComVariant` temizler.|
-|[Ccomvariant::Kopyala](#copy)|Nesneye bir VARYANT `CComVariant` kopyalar.|
-|[Ccomvariant::copyto](#copyto)|`CComVariant` Nesnenin içeriğini kopyalar.|
-|[CComVariant::Detach](#detach)|Temel VARYANT'ı `CComVariant` nesneden ayırır.|
-|[Ccomvariant::Getsize](#getsize)|`CComVariant` Nesnenin içeriğinin bayt sayısında boyutu döndürür.|
-|[Ccomvariant::readfromstream](#readfromstream)|Bir akıştan varyant yükler.|
-|[Ccomvariant::setbyref](#setbyref)|Nesneyi `CComVariant` başharfe ve `vt` üyeyi VT_BYREF ayarlar.|
-|[Ccomvariant::Writetostream](#writetostream)|Temel VARYANT'ı bir akışa kaydeder.|
+|[Ccomvarıant:: Attach](#attach)|Nesneye bir DEĞIŞKEN ekler `CComVariant` .|
+|[CComVariant:: ChangeType](#changetype)|`CComVariant`Nesneyi yeni bir türe dönüştürür.|
+|[Ccomvarıant:: Clear](#clear)|Nesneyi temizler `CComVariant` .|
+|[Ccomvarıant:: Copy](#copy)|Bir VARYANTı `CComVariant` nesnesine kopyalar.|
+|[CComVariant:: CopyTo](#copyto)|Nesnesinin içeriğini kopyalar `CComVariant` .|
+|[CComVariant::D etach](#detach)|Temel varyansı `CComVariant` nesneden ayırır.|
+|[Ccomvarıant:: GetSize](#getsize)|Nesnenin içeriğinin bayt cinsinden boyutunu döndürür `CComVariant` .|
+|[CComVariant:: ReadFromStream](#readfromstream)|Akıştan bir DEĞIŞKEN yükler.|
+|[CComVariant:: SetByRef](#setbyref)|Nesnesini başlatır `CComVariant` ve `vt` üyeyi VT_BYREF olarak ayarlar.|
+|[CComVariant:: WriteToStream](#writetostream)|Temel varyansı bir akışa kaydeder.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |||
 |-|-|
-|[CComVariant::operatör <](#operator_lt)|Nesnenin `CComVariant` belirtilen VARYANT'tan daha az olup olmadığını gösterir.|
-|[CComVariant::operatör >](#operator_gt)|Nesnenin `CComVariant` belirtilen VARYANT'tan büyük olup olmadığını gösterir.|
-|[işleç !=](#operator_neq)|Nesnenin `CComVariant` belirtilen VARYANT'a eşit olup olmadığını gösterir.|
-|[işleç =](#operator_eq)|`CComVariant` Nesneye bir değer atar.|
-|[işleç ==](#operator_eq_eq)|Nesnenin `CComVariant` belirtilen VARYANT'a eşit olup olmadığını gösterir.|
+|[Ccomvarıant:: operator <](#operator_lt)|`CComVariant`Nesnenin BELIRTILEN VARIANT 'tan daha az olup olmadığını gösterir.|
+|[Ccomvarıant:: operator >](#operator_gt)|`CComVariant`Nesnenin BELIRTILEN değişkenden daha büyük olup olmadığını gösterir.|
+|[işleç! =](#operator_neq)|`CComVariant`Nesnenin BELIRTILEN varyanta eşit olup olmadığını gösterir.|
+|[işleç =](#operator_eq)|Nesnesine bir değer atar `CComVariant` .|
+|[işleç = =](#operator_eq_eq)|`CComVariant`Nesnenin BELIRTILEN varyanta eşit olup olmadığını gösterir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComVariant`bir sendika ve bir üyeden oluşan VARIANT ve VARIANTARG türünü sarar ve birsendikada depolanan verilerin türünü gösterir. VARIAN'lar genellikle Otomasyon'da kullanılır.
+`CComVariant`birleşim ve birleşim içinde depolanan verilerin türünü gösteren bir üyenin yer aldığı varyant ve VARIANTARG türünü sarmalanmış. Çeşitler genellikle Otomasyonda kullanılır.
 
-`CComVariant`varyantın kullanılabildiği her yerde kullanılabilen VARIANT türünden türetilmiştir. Örneğin, V_VT makroyu kullanarak a `CComVariant` türünü ayıklayabilir veya `vt` üyeye bir VARYANT'ta olduğu gibi doğrudan erişebilirsiniz.
+`CComVariant`değişken türünden türeyebilir, bu nedenle bir VARYANTıN kullanılabileceği her yerde kullanılabilir. Örneğin, bir türü ayıklamak için V_VT makrosunu kullanabilir `CComVariant` veya `vt` yalnızca bir değişkenle yaptığınız gibi, üyeye doğrudan erişebilirsiniz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -85,11 +85,11 @@ class CComVariant : public tagVARIANT
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcomcli.h
+**Üstbilgi:** atlcomclı. h
 
-## <a name="ccomvariantattach"></a><a name="attach"></a>Ccomvariant::Ekle
+## <a name="ccomvariantattach"></a><a name="attach"></a>Ccomvarıant:: Attach
 
-Nesnenin `CComVariant` geçerli içeriğini güvenli bir şekilde temizler, *pSrc* içeriğini bu nesneye kopyalar, sonra *pSrc'nin* varyant türünü VT_EMPTY ayarlar.
+Nesnenin geçerli içeriğini güvenli bir şekilde temizler `CComVariant` , *pSrc* içeriğini bu nesneye kopyalar ve ardından *psrc* 'nin varyant türünü VT_EMPTY olarak ayarlar.
 
 ```
 HRESULT Attach(VARIANT* pSrc);
@@ -98,7 +98,7 @@ HRESULT Attach(VARIANT* pSrc);
 ### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-[içinde] Nesneye eklenecek [VARYANT'a](/windows/win32/api/oaidl/ns-oaidl-variant) işaret edilir.
+'ndaki Nesneye eklenecek [varyanta](/windows/win32/api/oaidl/ns-oaidl-variant) işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -106,11 +106,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pSrc* tarafından tutulan verilerin sahipliği `CComVariant` nesneye aktarılır.
+*PSrc* tarafından tutulan verilerin sahipliği `CComVariant` nesnesine aktarılır.
 
-## <a name="ccomvariantccomvariant"></a><a name="ccomvariant"></a>Kcomvariant::Ccomvariant
+## <a name="ccomvariantccomvariant"></a><a name="ccomvariant"></a>Ccomvarıant:: CComVariant
 
-Her `VariantInit` kurucu, Win32 işlevini `CComVariant` çağırarak veya nesnenin değerini ve türünü geçirilen parametrelere göre ayarlayarak nesnenin güvenli başlatılmasını işler.
+Her Oluşturucu `CComVariant` `VariantInit` Win32 işlevini çağırarak veya geçirilen parametrelere göre nesnenin değerini ve türünü ayarlayarak nesnenin güvenli bir şekilde başlatılmasını işler.
 
 ```
 CComVariant() throw();
@@ -141,47 +141,47 @@ CComVariant(const CComBSTR& bstrSrc);
 ### <a name="parameters"></a>Parametreler
 
 *varSrc*<br/>
-[içinde] `CComVariant` Nesneyi `CComVariant` başlatmada kullanılan veya VARIANT. Kaynak varyantın içeriği dönüşüm olmadan hedefe kopyalanır.
+'ndaki `CComVariant`Nesneyi başlatmak için kullanılan veya değişkeni `CComVariant` . Kaynak varyantın içeriği, dönüştürme yapılmadan hedefe kopyalanır.
 
 *lpszSrc*<br/>
-[içinde] `CComVariant` Nesneyi başlatmada kullanılan karakter dizesi. Sıfır sonlandırılmış geniş (Unicode) karakter dizesini oluşturucunun LPCOLESTR sürümüne veya LPCSTR sürümüne bir ANSI dizesi geçirebilirsiniz. Her iki durumda da dize kullanılarak `SysAllocString`ayrılan Unicode BSTR dönüştürülür. `CComVariant` Nesnenin türü VT_BSTR.
+'ndaki Nesneyi başlatmak için kullanılan karakter dizesi `CComVariant` . Sıfır ile sonlandırılmış geniş (Unicode) bir karakter dizesini oluşturucunun LPCOTASTR sürümüne veya bir ANSI dizesinin LPCSTR sürümüne geçirebilirsiniz. Her iki durumda da, dize kullanılarak ayrılmış bir Unicode BSTR 'e dönüştürülür `SysAllocString` . Nesne türü VT_BSTR olacaktır `CComVariant` .
 
 *bSrc*<br/>
-[içinde] `CComVariant` Nesneyi başharfe almak için kullanılan **bool.** **Bool** bağımsız değişkeni depolanmadan önce VARIANT_BOOL dönüştürülür. Nesnenin `CComVariant` türü VT_BOOL.
+'ndaki **`bool`** Nesneyi başlatmak için kullanılır `CComVariant` . **`bool`** Bağımsız değişken depolanmadan önce VARIANT_BOOL dönüştürülür. Nesne türü VT_BOOL olacaktır `CComVariant` .
 
 *nSrc*<br/>
-[içinde] **Int**, **BYTE**, **kısa**, **uzun**, LONGLONG, ULONGLONG, **imzasız kısa**, **imzasız uzun**, veya **imzasız int** `CComVariant` nesnenin başlatılması için kullanılır. `CComVariant` Nesnenin türü sırasıyla VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4 olacaktır.
+'ndaki **`int`** Nesneyi başlatmak için, **byte**, **`short`** , **`long`** , longlong, ULONGLONG, **`unsigned short`** , **`unsigned long`** veya **`unsigned int`** kullanılır `CComVariant` . `CComVariant`Nesnenin türü, sırasıyla VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4 olacaktır.
 
 *vtSrc*<br/>
-[içinde] Varyantın türü. İlk parametre **int**olduğunda, geçerli türleri VT_I4 ve VT_INT. İlk parametre **uzun**olduğunda, geçerli türleri VT_I4 ve VT_ERROR. İlk parametre **çift**olduğunda, geçerli türleri VT_R8 ve VT_DATE. İlk parametre **imzasız int**olduğunda, geçerli türleri VT_UI4 ve VT_UINT.
+'ndaki Varyantın türü. İlk parametre olduğunda **`int`** Geçerli türler VT_I4 ve VT_INT. İlk parametre olduğunda **`long`** Geçerli türler VT_I4 ve VT_ERROR. İlk parametre olduğunda **`double`** Geçerli türler VT_R8 ve VT_DATE. İlk parametre olduğunda **`unsigned int`** Geçerli türler VT_UI4 ve VT_UINT.
 
 *fltSrc*<br/>
-[içinde] `CComVariant` Nesneyi başlatmada kullanılan **şamandıra.** `CComVariant` Nesnenin türü VT_R4.
+'ndaki **`float`** Nesneyi başlatmak için kullanılır `CComVariant` . Nesne türü VT_R4 olacaktır `CComVariant` .
 
 *dblSrc*<br/>
-[içinde] `CComVariant` Nesneyi başlatmada kullanılan **çift.** `CComVariant` Nesnenin türü VT_R8.
+'ndaki **`double`** Nesneyi başlatmak için kullanılır `CComVariant` . Nesne türü VT_R8 olacaktır `CComVariant` .
 
 *cySrc*<br/>
-[içinde] Nesneyi `CY` başlatmak `CComVariant` için kullanılır. Nesnenin `CComVariant` türü VT_CY.
+'ndaki `CY`Nesneyi başlatmak için kullanılır `CComVariant` . Nesne türü VT_CY olacaktır `CComVariant` .
 
 *pSrc*<br/>
-[içinde] Nesneyi `IDispatch` başlatmada kullanılan işaretçi. `IUnknown` `CComVariant` `AddRef`arabirim işaretçisi üzerinde çağrılacaktır. `CComVariant` Nesnenin türü sırasıyla VT_DISPATCH veya VT_UNKNOWN olacaktır.
+'ndaki `IDispatch` `IUnknown` Nesneyi başlatmak için kullanılan veya işaretçisi `CComVariant` . `AddRef`, arabirim işaretçisi üzerinde çağrılır. `CComVariant`Nesnenin türü sırasıyla VT_DISPATCH veya VT_UNKNOWN olacaktır.
 
-Veya nesneyi başlatmada kullanılan SAFERRAY işaretçisi. `CComVariant` SAFEARRAY'in bir kopyası `CComVariant` nesnede depolanır. `CComVariant` Nesnenin türü SAFEARRAY ve VT_ARRAY orijinal türü bir arada olacaktır.
+Ya da, nesneyi başlatmak için kullanılan SAFERRAY işaretçisi `CComVariant` . SAFEARRAY 'in bir kopyası `CComVariant` nesnesinde depolanır. Nesnenin türü, `CComVariant` SafeArray ve vt_array orijinal türünün bir birleşimi olacaktır.
 
-*Csrc*<br/>
-[içinde] **Char** nesneyi başlatmaiçin `CComVariant` kullanılır. Nesnenin `CComVariant` türü VT_I1.
+*cSrc*<br/>
+'ndaki **`char`** Nesneyi başlatmak için kullanılır `CComVariant` . Nesne türü VT_I1 olacaktır `CComVariant` .
 
 *bstrSrc*<br/>
-[içinde] BSTR nesneyi başlatmak `CComVariant` için kullanılır. `CComVariant` Nesnenin türü VT_BSTR.
+'ndaki Nesneyi başlatmak için kullanılan BSTR `CComVariant` . Nesne türü VT_BSTR olacaktır `CComVariant` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı CComVariant arayarak temizleme [yönetir::Clear](#clear).
+Yıkıcı, [Ccomvarıant:: Clear](#clear)öğesini çağırarak Temizleme işlemini yönetir.
 
-## <a name="ccomvariantccomvariant"></a><a name="dtor"></a>Kcomvariant::~Ccomvariant
+## <a name="ccomvariantccomvariant"></a><a name="dtor"></a>Ccomvarıant:: ~ CComVariant
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComVariant() throw();
@@ -189,11 +189,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem CComVariant çağırarak temizleme [yönetir::Temizleyin](#clear).
+Bu yöntem, [Ccomvarıant:: Clear](#clear)öğesini çağırarak Temizleme işlemini yönetir.
 
-## <a name="ccomvariantchangetype"></a><a name="changetype"></a>Ccomvariant::changetype
+## <a name="ccomvariantchangetype"></a><a name="changetype"></a>CComVariant:: ChangeType
 
-Nesneyi `CComVariant` yeni bir türe dönüştürür.
+`CComVariant`Nesneyi yeni bir türe dönüştürür.
 
 ```
 HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
@@ -201,11 +201,11 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*vtYeni*<br/>
-[içinde] `CComVariant` Nesne için yeni tür.
+*Yeni VT*<br/>
+'ndaki Nesnenin yeni türü `CComVariant` .
 
 *pSrc*<br/>
-[içinde] Değeri yeni türe dönüştürülecek VARYANT için bir işaretçi. Varsayılan değer NULL'dur, `CComVariant` yani nesne yerine dönüştürülür.
+'ndaki DEĞIŞKEN için değeri yeni türe dönüştürülecek olan bir işaretçi. Varsayılan değer NULL, yani `CComVariant` nesnenin yerinde dönüştürülecektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -213,11 +213,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Eğer pSrc*için bir `ChangeType` değer geçerseniz, dönüştürme için kaynak olarak bu VARIANT kullanır. Aksi takdirde, `CComVariant` nesne kaynak olacaktır.
+*PSrc*için bir değer geçirirseniz, `ChangeType` Bu değişkeni dönüştürmenin kaynağı olarak kullanır. Aksi takdirde, `CComVariant` nesne kaynak olur.
 
-## <a name="ccomvariantclear"></a><a name="clear"></a>Ccomvariant::Clear
+## <a name="ccomvariantclear"></a><a name="clear"></a>Ccomvarıant:: Clear
 
-Win32 `CComVariant` işlevini çağırarak nesneyi temizler. `VariantClear`
+`CComVariant`Win32 işlevini çağırarak nesneyi temizler `VariantClear` .
 
 ```
 HRESULT Clear();
@@ -229,11 +229,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı otomatik olarak çağırır. `Clear`
+Yıkıcı otomatik olarak çağırır `Clear` .
 
-## <a name="ccomvariantcopy"></a><a name="copy"></a>Ccomvariant::Kopyala
+## <a name="ccomvariantcopy"></a><a name="copy"></a>Ccomvarıant:: Copy
 
-Nesneyi `CComVariant` serbest bırakıp, belirtilen VARYANT'ın bir kopyasını atar.
+Nesneyi serbest bırakır `CComVariant` ve sonra belirtilen varyantın bir kopyasını atar.
 
 ```
 HRESULT Copy(const VARIANT* pSrc);
@@ -242,15 +242,15 @@ HRESULT Copy(const VARIANT* pSrc);
 ### <a name="parameters"></a>Parametreler
 
 *pSrc*<br/>
-[içinde] [VARYANT'ın](/windows/win32/api/oaidl/ns-oaidl-variant) kopyalanacak bir işaretçisi.
+'ndaki Kopyalanacak [varyanta](/windows/win32/api/oaidl/ns-oaidl-variant) yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Standart bir HRESULT değeri.
 
-## <a name="ccomvariantcopyto"></a><a name="copyto"></a>Ccomvariant::copyto
+## <a name="ccomvariantcopyto"></a><a name="copyto"></a>CComVariant:: CopyTo
 
-`CComVariant` Nesnenin içeriğini kopyalar.
+Nesnesinin içeriğini kopyalar `CComVariant` .
 
 ```
 HRESULT CopyTo(BSTR* pstrDest);
@@ -259,7 +259,7 @@ HRESULT CopyTo(BSTR* pstrDest);
 ### <a name="parameters"></a>Parametreler
 
 *pstrDest*<br/>
-Nesnenin içeriğinin bir kopyasını alacak bir BSTR'ye işaret eder. `CComVariant`
+Nesnenin içeriğinin bir kopyasını alacak bir BSTR 'ye işaret eder `CComVariant` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -267,11 +267,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CComVariant` VT_BSTR türünde olmalıdır.
+`CComVariant`Nesne VT_BSTR türünde olmalıdır.
 
-## <a name="ccomvariantdetach"></a><a name="detach"></a>CComVariant::Detach
+## <a name="ccomvariantdetach"></a><a name="detach"></a>CComVariant::D etach
 
-Alttaki VARYANT'ı `CComVariant` nesneden ayırır ve nesnenin türünü VT_EMPTY ayarlar.
+Nesneden temel varyansı ayırır `CComVariant` ve nesnenin türünü VT_EMPTY olarak ayarlar.
 
 ```
 HRESULT Detach(VARIANT* pDest);
@@ -280,7 +280,7 @@ HRESULT Detach(VARIANT* pDest);
 ### <a name="parameters"></a>Parametreler
 
 *pDest*<br/>
-[çıkış] Nesnenin temel VARYANT değerini döndürür.
+dışı Nesnenin temel varyant değerini döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -288,11 +288,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pDest* tarafından başvurulan VARIANT içeriğinin, çağrı `CComVariant` nesnesinin değeri ve türü atanmadan önce otomatik olarak temizleneceğini unutmayın.
+*PDest* tarafından başvurulan değişkenin içeriğinin, nesne değeri ve türü atanmadan önce otomatik olarak temizlendiğini unutmayın `CComVariant` .
 
-## <a name="ccomvariantgetsize"></a><a name="getsize"></a>Ccomvariant::Getsize
+## <a name="ccomvariantgetsize"></a><a name="getsize"></a>Ccomvarıant:: GetSize
 
-Basit-sabit boyutlu VARIANT'lar için bu yöntem, temel veri türü artı **boyutlarını (VARTYPE)** **döndürür.**
+Basit sabit boyutlu çeşitler için bu yöntem, **`sizeof`** temel alınan veri türü ve **SIZEOF (VARTYPE)** için değer döndürür.
 
 ```
 ULONG GetSize() const;
@@ -300,19 +300,19 @@ ULONG GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CComVariant` Nesnenin geçerli içeriğinin baytboyutu.
+Nesnenin geçerli içeriğinin bayt cinsinden boyutu `CComVariant` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-VARIANT bir arabirim işaretçisi içeriyorsa, `GetSize` sorgular veya `IPersistStream` `IPersistStreamInit`. Başarılı olursa, iade değeri, artı bir CLSID ve `GetSizeMax` **boyutlar (VARTYPE)** **tarafından** döndürülen değerin düşük sıralı 32 bit.'dir. Arabirim işaretçisi `GetSize` NULL ise, CLSID artı **boyut (VARTYPE)** **boyutlarını** döndürür. Toplam boyutu ULONG_MAX daha büyükse, `GetSize` hata yı gösteren **(VARTYPE) boyutlarını** döndürür.
+DEĞIŞKEN bir arabirim işaretçisi içeriyorsa, `GetSize` veya için sorgular `IPersistStream` `IPersistStreamInit` . Başarılı olursa, dönüş değeri artı ve ile döndürülen değerin düşük sıralı 32 bittir `GetSizeMax` `sizeof(CLSID)` `sizeof(VARTYPE)` . Arabirim işaretçisi NULL ise, `GetSize` `sizeof(CLSID)` artı döndürür `sizeof(VARTYPE)` . Toplam boyut ULONG_MAX büyükse, `GetSize` `sizeof(VARTYPE)` bir hatayı gösteren döndürür.
 
-Diğer tüm durumlarda, tip VT_BSTR geçici bir VARYANT geçerli VARYANT'tan zorla çıkarılır. Bu BSTR uzunluğu dize uzunluğu artı dize kendisi uzunluğu artı null karakter artı **boyutu (VARTYPE)** boyutu olarak hesaplanır. VARYANT, tür VT_BSTR varyantına zorlanamıyorsa, `GetSize` **(VARTYPE) boyutlarını**döndürür.
+Diğer tüm durumlarda, VT_BSTR türünde geçici bir DEĞIŞKEN geçerli VARIANT 'tan zorlandır. Bu BSTR 'nin uzunluğu, dizenin uzunluğu artı dize uzunluğu ve null karakter artı **sizeof (VARTYPE)** boyutu olarak hesaplanır. DEĞIŞKEN VT_BSTR türünde bir DEĞIŞKENLE zorlanamadığında, `GetSize` **SIZEOF (VARTYPE)** döndürür.
 
-Bu yöntemle döndürülen boyut, CComVariant tarafından kullanılan bayt sayısıyla [eşleşir::WriteToStream](#writetostream) başarılı koşullar altında.
+Bu yöntem tarafından döndürülen boyut, başarılı koşullar altında [CComVariant:: WriteToStream](#writetostream) tarafından kullanılan bayt sayısıyla eşleşir.
 
-## <a name="ccomvariantoperator-"></a><a name="operator_eq"></a>CComVariant::operator =
+## <a name="ccomvariantoperator-"></a><a name="operator_eq"></a>Ccomvarıant:: operator =
 
-`CComVariant` Nesneye bir değer ve karşılık gelen bir tür atar.
+Nesneye bir değer ve karşılık gelen tür atar `CComVariant` .
 
 ```
 CComVariant& operator=(const CComVariant& varSrc);
@@ -342,40 +342,40 @@ CComVariant& operator=(char cSrc) throw();
 ### <a name="parameters"></a>Parametreler
 
 *varSrc*<br/>
-[içinde] `CComVariant` Nesneye `CComVariant` atanacak veya [VARYANT.](/windows/win32/api/oaidl/ns-oaidl-variant) Kaynak varyantın içeriği dönüşüm olmadan hedefe kopyalanır.
+'ndaki `CComVariant`Nesneye atanacak veya [değişken](/windows/win32/api/oaidl/ns-oaidl-variant) `CComVariant` . Kaynak varyantın içeriği, dönüştürme yapılmadan hedefe kopyalanır.
 
 *bstrSrc*<br/>
-[içinde] `CComVariant` Nesneye atanacak BSTR. `CComVariant` Nesnenin türü VT_BSTR.
+'ndaki Nesneye atanacak BSTR `CComVariant` . Nesne türü VT_BSTR olacaktır `CComVariant` .
 
 *lpszSrc*<br/>
-[içinde] Nesneye atanacak karakter `CComVariant` dizesi. Sıfır sonlandırılmış geniş (Unicode) karakter dizesini operatörün LPCOLESTR sürümüne veya LPCSTR sürümüne bir ANSI dizesi geçirebilirsiniz. Her iki durumda da, dize kullanılarak `SysAllocString`ayrılan Unicode BSTR dönüştürülür. `CComVariant` Nesnenin türü VT_BSTR.
+'ndaki Nesneye atanacak karakter dizesi `CComVariant` . Sıfır ile sonlandırılmış geniş (Unicode) bir karakter dizesini işlecin LPCOLESTR sürümüne veya bir ANSI dizesini de LPCSTR sürümüne geçirebilirsiniz. Her iki durumda da, dize kullanılarak ayrılmış bir Unicode BSTR 'e dönüştürülür `SysAllocString` . Nesne türü VT_BSTR olacaktır `CComVariant` .
 
 *bSrc*<br/>
-[içinde] `CComVariant` Nesneye atanacak **bool.** **Bool** bağımsız değişkeni depolanmadan önce VARIANT_BOOL dönüştürülür. Nesnenin `CComVariant` türü VT_BOOL.
+'ndaki **`bool`** `CComVariant` Nesnesine atanacak. **`bool`** Bağımsız değişken depolanmadan önce VARIANT_BOOL dönüştürülür. Nesne türü VT_BOOL olacaktır `CComVariant` .
 
 *nSrc*<br/>
-[içinde] **Int**, BYTE, **kısa**, **uzun**, LONGLONG, ULONGLONG, **imzasız kısa**, **imzasız uzun**, veya **imzasız int** `CComVariant` nesneye atanacak. `CComVariant` Nesnenin türü sırasıyla VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4 olacaktır.
+'ndaki **`int`** Nesnesine atanacak, Byte, **`short`** , **`long`** , LONGLONG, ULONGLONG, **`unsigned short`** , **`unsigned long`** , veya **`unsigned int`** `CComVariant` . `CComVariant`Nesnenin türü, sırasıyla VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4 olacaktır.
 
 *fltSrc*<br/>
-[içinde] `CComVariant` Nesneye atanacak **şamandıra.** `CComVariant` Nesnenin türü VT_R4.
+'ndaki **`float`** `CComVariant` Nesnesine atanacak. Nesne türü VT_R4 olacaktır `CComVariant` .
 
 *dblSrc*<br/>
-[içinde] `CComVariant` Nesneye atanacak **çift.** `CComVariant` Nesnenin türü VT_R8.
+'ndaki **`double`** `CComVariant` Nesnesine atanacak. Nesne türü VT_R8 olacaktır `CComVariant` .
 
 *cySrc*<br/>
-[içinde] `CComVariant` Nesneye `CY` atanacak. Nesnenin `CComVariant` türü VT_CY.
+'ndaki `CY` `CComVariant` Nesnesine atanacak. Nesne türü VT_CY olacaktır `CComVariant` .
 
 *pSrc*<br/>
-[içinde] Nesneye `IDispatch` atanacak işaretçi veya `IUnknown` işaretçi. `CComVariant` `AddRef`arabirim işaretçisi üzerinde çağrılacaktır. `CComVariant` Nesnenin türü sırasıyla VT_DISPATCH veya VT_UNKNOWN olacaktır.
+'ndaki `IDispatch` `IUnknown` Nesneye atanacak olan veya işaretçisi `CComVariant` . `AddRef`, arabirim işaretçisi üzerinde çağrılır. `CComVariant`Nesnenin türü sırasıyla VT_DISPATCH veya VT_UNKNOWN olacaktır.
 
-Veya, nesneye atanacak bir `CComVariant` SAFEARRAY işaretçisi. SAFEARRAY'in bir kopyası `CComVariant` nesnede depolanır. `CComVariant` Nesnenin türü SAFEARRAY ve VT_ARRAY orijinal türü bir arada olacaktır.
+Ya da nesneye atanacak bir SAFEARRAY işaretçisi `CComVariant` . SAFEARRAY 'in bir kopyası `CComVariant` nesnesinde depolanır. Nesnenin türü, `CComVariant` SafeArray ve vt_array orijinal türünün bir birleşimi olacaktır.
 
-*Csrc*<br/>
-[içinde] `CComVariant` Nesneye atanacak char. Nesnenin `CComVariant` türü VT_I1.
+*cSrc*<br/>
+'ndaki Nesneye atanacak karakter `CComVariant` . Nesne türü VT_I1 olacaktır `CComVariant` .
 
-## <a name="ccomvariantoperator-"></a><a name="operator_eq_eq"></a>CComVariant::operator ==
+## <a name="ccomvariantoperator-"></a><a name="operator_eq_eq"></a>Ccomvarıant:: operator = =
 
-Nesnenin `CComVariant` belirtilen VARYANT'a eşit olup olmadığını gösterir.
+`CComVariant`Nesnenin BELIRTILEN varyanta eşit olup olmadığını gösterir.
 
 ```
 bool operator==(const VARIANT& varSrc) const throw();
@@ -383,13 +383,13 @@ bool operator==(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VarSrc* değeri ve türü `CComVariant` nesnenin değerine ve türüne eşitse TRUE döndürür. Aksi takdirde, YANLIŞ. İşletici karşılaştırma yı gerçekleştirmek için kullanıcının varsayılan yerel sini kullanır.
+*VarSrc* değeri ve türü, sırasıyla DEĞERINE eşitse true değerini döndürür `CComVariant` . Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
 
-İşleç yalnızca varyant türlerinin değerini karşılaştırır. Dizeleri, tümsegerleri ve kayan noktaları karşılaştırır, ancak dizileri veya kayıtları karşılaştırır.
+İşleci yalnızca değişken türlerinin değerini karşılaştırır. Dizeleri, tamsayıları ve kayan noktaları karşılaştırır, ancak dizileri veya kayıtları karşılaştırır.
 
-## <a name="ccomvariantoperator-"></a><a name="operator_neq"></a>CComVariant::operatör !=
+## <a name="ccomvariantoperator-"></a><a name="operator_neq"></a>Ccomvarıant:: operator! =
 
-Nesnenin `CComVariant` belirtilen VARYANT'a eşit olup olmadığını gösterir.
+`CComVariant`Nesnenin BELIRTILEN varyanta eşit olup olmadığını gösterir.
 
 ```
 bool operator!=(const VARIANT& varSrc) const throw();
@@ -397,13 +397,13 @@ bool operator!=(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VarSrc* değeri veya türü `CComVariant` nesnenin değerine veya türüne eşit değilse TRUE döndürür. Aksi takdirde, YANLIŞ. İşletici karşılaştırma yı gerçekleştirmek için kullanıcının varsayılan yerel sini kullanır.
+*VarSrc* değeri veya türü, sırasıyla nesne değerine veya türüne EŞIT değilse true döndürür `CComVariant` . Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
 
-İşleç yalnızca varyant türlerinin değerini karşılaştırır. Dizeleri, tümsegerleri ve kayan noktaları karşılaştırır, ancak dizileri veya kayıtları karşılaştırır.
+İşleci yalnızca değişken türlerinin değerini karşılaştırır. Dizeleri, tamsayıları ve kayan noktaları karşılaştırır, ancak dizileri veya kayıtları karşılaştırır.
 
-## <a name="ccomvariantoperator-lt"></a><a name="operator_lt"></a>CComVariant::operatör&lt;
+## <a name="ccomvariantoperator-lt"></a><a name="operator_lt"></a>CComVariant:: işleci&lt;
 
-Nesnenin `CComVariant` belirtilen VARYANT'tan daha az olup olmadığını gösterir.
+`CComVariant`Nesnenin BELIRTILEN VARIANT 'tan daha az olup olmadığını gösterir.
 
 ```
 bool operator<(const VARIANT& varSrc) const throw();
@@ -411,11 +411,11 @@ bool operator<(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnenin `CComVariant` değeri *varSrc*değerinden daha azsa TRUE döndürür. Aksi takdirde, YANLIŞ. İşletici karşılaştırma yı gerçekleştirmek için kullanıcının varsayılan yerel sini kullanır.
+`CComVariant`Nesnenin değeri *varSrc*değerinden küçükse true değerini döndürür. Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
 
-## <a name="ccomvariantoperator-gt"></a><a name="operator_gt"></a>CComVariant::operatör&gt;
+## <a name="ccomvariantoperator-gt"></a><a name="operator_gt"></a>CComVariant:: işleci&gt;
 
-Nesnenin `CComVariant` belirtilen VARYANT'tan büyük olup olmadığını gösterir.
+`CComVariant`Nesnenin BELIRTILEN değişkenden daha büyük olup olmadığını gösterir.
 
 ```
 bool operator>(const VARIANT& varSrc) const throw();
@@ -423,11 +423,11 @@ bool operator>(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnenin değeri `CComVariant` *varSrc*değerinden büyükse TRUE döndürür. Aksi takdirde, YANLIŞ. İşletici karşılaştırma yı gerçekleştirmek için kullanıcının varsayılan yerel sini kullanır.
+`CComVariant`Nesnenin değeri *varSrc*değerinden büyükse true değerini döndürür. Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
 
-## <a name="ccomvariantreadfromstream"></a><a name="readfromstream"></a>Ccomvariant::readfromstream
+## <a name="ccomvariantreadfromstream"></a><a name="readfromstream"></a>CComVariant:: ReadFromStream
 
-Altta yatan VARYANT'ı belirtilen akışta bulunan VARYANT'a ayarlar.
+Temeldeki varyansı belirtilen akışta bulunan VARYANTA göre ayarlar.
 
 ```
 HRESULT ReadFromStream(IStream* pStream);
@@ -436,7 +436,7 @@ HRESULT ReadFromStream(IStream* pStream);
 ### <a name="parameters"></a>Parametreler
 
 *pStream*<br/>
-[içinde] Verileri içeren akıştaki [IStream](/windows/win32/api/objidl/nn-objidl-istream) arabirimine bir işaretçi.
+'ndaki Verileri içeren akıştaki [IStream](/windows/win32/api/objidl/nn-objidl-istream) arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -444,11 +444,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ReadToStream`[WriteToStream](#writetostream)için önceki bir çağrı gerektirir.
+`ReadToStream`[WriteToStream](#writetostream)'e daha önceki bir çağrı gerektirir.
 
-## <a name="ccomvariantsetbyref"></a><a name="setbyref"></a>Ccomvariant::setbyref
+## <a name="ccomvariantsetbyref"></a><a name="setbyref"></a>CComVariant:: SetByRef
 
-Nesneyi `CComVariant` başharfe ve `vt` üyeyi VT_BYREF ayarlar.
+Nesnesini başlatır `CComVariant` ve `vt` üyeyi VT_BYREF olarak ayarlar.
 
 ```
 template < typename T >
@@ -458,20 +458,20 @@ void SetByRef(T* pT) throw();
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-VARYANT türü, örneğin, BSTR, **int**, veya **char**.
+DEĞIŞKEN türü, örneğin, BSTR, **`int`** veya **`char`** .
 
-*Pt*<br/>
-Nesneyi başlatmaiçin kullanılan `CComVariant` işaretçi.
+*Yönergelerinin*<br/>
+Nesneyi başlatmak için kullanılan işaretçi `CComVariant` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetByRef`nesneyi `CComVariant` işaretçi *pT'ye* açan ve üyeyi `vt` VT_BYREF ayarlayan bir işlev şablonudur. Örneğin:
+`SetByRef`, `CComVariant` nesneyi Işaretçi *PT* olarak başlatan ve `vt` üyeyi VT_BYREF olarak ayarlayan bir işlev şablonudur. Örnek:
 
 [!code-cpp[NVC_ATL_Utilities#76](../../atl/codesnippet/cpp/ccomvariant-class_1.cpp)]
 
-## <a name="ccomvariantwritetostream"></a><a name="writetostream"></a>Ccomvariant::Writetostream
+## <a name="ccomvariantwritetostream"></a><a name="writetostream"></a>CComVariant:: WriteToStream
 
-Temel VARYANT'ı bir akışa kaydeder.
+Temel varyansı bir akışa kaydeder.
 
 ```
 HRESULT WriteToStream(IStream* pStream);
@@ -480,7 +480,7 @@ HRESULT WriteToStream(IStream* pStream);
 ### <a name="parameters"></a>Parametreler
 
 *pStream*<br/>
-[içinde] Akış üzerindeki [IStream](/windows/win32/api/objidl/nn-objidl-istream) arabirimine işaretçi.
+'ndaki Akıştaki [IStream](/windows/win32/api/objidl/nn-objidl-istream) arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -488,4 +488,4 @@ Standart bir HRESULT değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

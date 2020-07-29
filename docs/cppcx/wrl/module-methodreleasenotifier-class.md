@@ -15,18 +15,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::MethodReleaseNotifier::MethodReleaseNotifier, constructor
 - Microsoft::WRL::Module::MethodReleaseNotifier::object_ data member
 ms.assetid: 5c2902be-964b-488f-9f1c-adf504995cbc
-ms.openlocfilehash: c641f150b6f029facffa62f7b47c7da32138735e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5b0e5766fda878acb1fdc54a79ce162444eb06de
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371295"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225728"
 ---
 # <a name="modulemethodreleasenotifier-class"></a>Module::MethodReleaseNotifier Sınıfı
 
-Geçerli modüldeki son nesne serbest bırakıldığında bir olay işleyicisi çağırır. Olay işleyicisi bir nesne ve onun işaretçi-to-a-method üyesi tarafından belirtilir.
+Geçerli modüldeki son nesne serbest bırakıldığında bir olay işleyicisini çağırır. Olay işleyicisi bir nesne ve onun işaretçiden yönteme üyesi tarafından belirtilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename T>
@@ -42,22 +42,22 @@ class MethodReleaseNotifier : public ReleaseNotifier;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Adı                                                                                                 | Açıklama
+Ad                                                                                                 | Açıklama
 ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------
-[Modül::MethodReleaseNotifier::MethodReleaseNotifier](#methodreleasenotifier-methodreleasenotifier) | `Module::MethodReleaseNotifier` sınıfının yeni bir örneğini başlatır.
+[Module:: MethodReleaseNotifier:: MethodReleaseNotifier](#methodreleasenotifier-methodreleasenotifier) | `Module::MethodReleaseNotifier` sınıfının yeni bir örneğini başlatır.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                                                   | Açıklama
+Ad                                                                   | Açıklama
 ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------
-[Modül::MethodReleaseNotifier::Invoke](#methodreleasenotifier-invoke) | Geçerli `Module::MethodReleaseNotifier` nesneyle ilişkili olay işleyicisini çağırır.
+[Module:: MethodReleaseNotifier:: Invoke](#methodreleasenotifier-invoke) | Geçerli nesneyle ilişkili olay işleyicisini çağırır `Module::MethodReleaseNotifier` .
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-Adı                                                                    | Açıklama
+Ad                                                                    | Açıklama
 ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------
-[Modül::MethodReleaseNotifier::method_](#methodreleasenotifier-method) | Geçerli `Module::MethodReleaseNotifier` nesne için olay işleyicisi için bir işaretçi tutar.
-[Modül::MethodReleaseNotifier::object_](#methodreleasenotifier-object) | Üye işlevi geçerli `Module::MethodReleaseNotifier` nesnenin olay işleyicisi olan nesneye işaretçi tutar.
+[Module:: MethodReleaseNotifier:: method_](#methodreleasenotifier-method) | Geçerli nesne için olay işleyicisine bir işaretçi tutar `Module::MethodReleaseNotifier` .
+[Module:: MethodReleaseNotifier:: object_](#methodreleasenotifier-object) | Üye işlevi, geçerli nesne için olay işleyicisi olan nesneye bir işaretçi tutar `Module::MethodReleaseNotifier` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -67,27 +67,27 @@ Adı                                                                    | Açık
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** module.h
+**Üstbilgi:** Module. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="modulemethodreleasenotifierinvoke"></a><a name="methodreleasenotifier-invoke"></a>Modül::MethodReleaseNotifier::Invoke
+## <a name="modulemethodreleasenotifierinvoke"></a><a name="methodreleasenotifier-invoke"></a>Module:: MethodReleaseNotifier:: Invoke
 
-Geçerli `Module::MethodReleaseNotifier` nesneyle ilişkili olay işleyicisini çağırır.
+Geçerli nesneyle ilişkili olay işleyicisini çağırır `Module::MethodReleaseNotifier` .
 
 ```cpp
 void Invoke();
 ```
 
-## <a name="modulemethodreleasenotifiermethod_"></a><a name="methodreleasenotifier-method"></a>Modül::MethodReleaseNotifier::method_
+## <a name="modulemethodreleasenotifiermethod_"></a><a name="methodreleasenotifier-method"></a>Module:: MethodReleaseNotifier:: method_
 
-Geçerli `Module::MethodReleaseNotifier` nesne için olay işleyicisi için bir işaretçi tutar.
+Geçerli nesne için olay işleyicisine bir işaretçi tutar `Module::MethodReleaseNotifier` .
 
 ```cpp
 void (T::* method_)();
 ```
 
-## <a name="modulemethodreleasenotifiermethodreleasenotifier"></a><a name="methodreleasenotifier-methodreleasenotifier"></a>Modül::MethodReleaseNotifier::MethodReleaseNotifier
+## <a name="modulemethodreleasenotifiermethodreleasenotifier"></a><a name="methodreleasenotifier-methodreleasenotifier"></a>Module:: MethodReleaseNotifier:: MethodReleaseNotifier
 
 `Module::MethodReleaseNotifier` sınıfının yeni bir örneğini başlatır.
 
@@ -102,18 +102,18 @@ MethodReleaseNotifier(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nesne*<br/>
+*object*<br/>
 Üye işlevi olay işleyicisi olan bir nesne.
 
-*Yöntem*<br/>
+*yöntemidir*<br/>
 Olay işleyicisi olan parametre *nesnesinin* üye işlevi.
 
-*Sürüm*<br/>
-Temel `true` Modülü aramayı etkinleştirmek için [belirtin::ReleaseNotifier::Release()](module-releasenotifier-class.md#releasenotifier-release) yöntemi; aksi takdirde, belirtin. `false`
+*Yayın*<br/>
+**`true`** Temeldeki modülün çağrılmasını etkinleştirmek için belirtin [:: ReleaseNotifier:: Release ()](module-releasenotifier-class.md#releasenotifier-release) yöntemi; aksi takdirde, belirtin **`false`** .
 
-## <a name="modulemethodreleasenotifierobject_"></a><a name="methodreleasenotifier-object"></a>Modül::MethodReleaseNotifier::object_
+## <a name="modulemethodreleasenotifierobject_"></a><a name="methodreleasenotifier-object"></a>Module:: MethodReleaseNotifier:: object_
 
-Üye işlevi geçerli `Module::MethodReleaseNotifier` nesnenin olay işleyicisi olan nesneye işaretçi tutar.
+Üye işlevi, geçerli nesne için olay işleyicisi olan nesneye bir işaretçi tutar `Module::MethodReleaseNotifier` .
 
 ```cpp
 T* object_;

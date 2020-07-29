@@ -28,18 +28,18 @@ helpviewer_keywords:
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-ms.openlocfilehash: fc1dfcc54259dfe40d2fc37be1e1c0ab63ab7c4a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 786246afbb8ce4f733f733af75af3a70ce33006d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916321"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226222"
 ---
 # <a name="_getw"></a>_getw
 
 Akıştan bir tamsayı alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _getw(
@@ -58,7 +58,7 @@ int _getw(
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getw** işlevi, *Stream* ile ilişkili dosyadan **int** türünde bir sonraki ikili değeri okur ve bir sonraki okunmamış karakteri işaret eden ilişkili dosya işaretçisini (varsa) artırır. **_getw** akıştaki öğelerin herhangi bir özel hizalamasını varsaymaz. **İnt** türünün boyutu ve **int** türü içindeki bayt sıralaması sistemler arasında farklı olduğundan, taşıma ile ilgili sorunlar **_getw** oluşabilir.
+**_Getw** işlevi, **`int`** *akış* ile ilişkili dosyadaki bir sonraki ikili değerini okur ve sonraki okunmamış karakteri işaret eden ilişkili dosya işaretçisini (varsa) artırır. **_getw** akıştaki öğelerin herhangi bir özel hizalamasını varsaymaz. **_getw** **`int`** Tür boyutu ve tür içindeki bayt sıralaması **`int`** sistemler arasında farklı olduğundan, taşıma ile ilgili sorunlar _getw oluşabilir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -66,7 +66,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getw**|\<stdio. h>|
+|**_getw**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -105,7 +105,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_getwtxt"></a>Giriş: crt_getw. txt
+### <a name="input-crt_getwtxt"></a>Giriş: crt_getw.txt
 
 ```Input
 Line one.
@@ -120,5 +120,5 @@ First data word in file: 0x656e694c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_putw](putw.md)<br/>

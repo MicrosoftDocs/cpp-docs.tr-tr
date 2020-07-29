@@ -3,12 +3,12 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: 6813a119453bfd365763269169f1291fa165bdcd
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: e8202d03517086192ae893caff0602ec86fcb426
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446876"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226795"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -249,7 +249,7 @@ Bu sürümdeki C++ derleyicisini ve standart kitaplığı, C++ 11 ve C++ 14 öze
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Derleyici, yapılandırılmış bağlamalar, `constexpr` Lambdalar, `if constexpr` satır içi değişkenler, katlama ifadeleri ve tür sistemine ekleme gibi c++ 17 ' de yeni olan özelliklerin %75 ' sini destekler `noexcept` . Bu özellikler seçeneğinin altında bulunur **`/std:c++17`** . Daha fazla bilgi için bkz. [Visual Studio 'da C++ uyumluluk geliştirmeleri 2017](cpp-conformance-improvements.md)
+Derleyici, yapılandırılmış bağlamalar, **`constexpr`** Lambdalar, `if constexpr` satır içi değişkenler, katlama ifadeleri ve tür sistemine ekleme gibi c++ 17 ' de yeni olan özelliklerin %75 ' sini destekler **`noexcept`** . Bu özellikler seçeneğinin altında bulunur **`/std:c++17`** . Daha fazla bilgi için bkz. [Visual Studio 'da C++ uyumluluk geliştirmeleri 2017](cpp-conformance-improvements.md)
 
 ##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
@@ -296,7 +296,7 @@ Visual C++ çalışma zamanı performansı, daha iyi oluşturulan kod kalitesiyl
 
 Microsoft C++ derleyicisi, Intel 'in AVX-512 ' i destekler. Bu, AVX-512 ' deki yeni işlevleri 128 bit ve 256 bit geniş yazmaçlara getiren vektör uzunluğu yönergelerine sahiptir.
 
-[/Zc: noexceptTypes-](../build/reference/zc-noexcepttypes.md) seçeneği, `noexcept` genel olarak c++ 17 modu kullanılırken c++ 14 sürümüne dönmek için kullanılabilir. Bu seçenek `throw()` , tüm kodunuzu aynı anda yeniden yazmak zorunda kalmadan, kaynak kodunuzu c++ 17 ' ye uyacak şekilde güncelleştirmenizi sağlar. Daha fazla bilgi için bkz. [dinamik özel durum belirtimi kaldırma ve noexcept](cpp-conformance-improvements.md#noexcept_removal).
+[/Zc: noexceptTypes-](../build/reference/zc-noexcepttypes.md) seçeneği, **`noexcept`** genel olarak c++ 17 modu kullanılırken c++ 14 sürümüne dönmek için kullanılabilir. Bu seçenek `throw()` , tüm kodunuzu aynı anda yeniden yazmak zorunda kalmadan, kaynak kodunuzu c++ 17 ' ye uyacak şekilde güncelleştirmenizi sağlar. Daha fazla bilgi için bkz. [dinamik özel durum belirtimi kaldırma ve noexcept](cpp-conformance-improvements.md#noexcept_removal).
 
 ##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
@@ -314,7 +314,7 @@ Microsoft C++ derleyicisi, Intel 'in AVX-512 ' i destekler. Bu, AVX-512 ' deki y
 - `std::promise`Daha önce kodun sürekli olarak engellenmesine neden olabilecek taşıma atama işleci düzeltildi.
 - `atomic<T*>`Örtülü dönüşümle derleyici hataları düzeltildi `T*` .
 - `pointer_traits<Ptr>`Şimdi doğru şekilde algılar `Ptr::rebind<U>` .
-- `const`Çıkarma işlecinde eksik niteleyici düzeltildi `move_iterator` .
+- **`const`** Çıkarma işlecinde eksik niteleyici düzeltildi `move_iterator` .
 - Ve isteyen durum bilgisi olan Kullanıcı tanımlı ayrıcılar için sessiz hatalı CodeGen düzeltildi `propagate_on_container_copy_assignment` `propagate_on_container_move_assignment` .
 - `atomic<T>`Şimdi aşırı yüklenmiş `operator&()` .
 - Hatalı çağrılar için biraz daha geliştirilmiş derleyici tanılaması `bind()` .
@@ -335,8 +335,8 @@ Visual Studio 2017 RTM 'de daha standart kitaplık geliştirmeleri vardır. Tüm
 - Ayrıca, bildirimde bulunan özel durum belirtimi, Clang **-wmicrosoft-Exception-spec**tarafından bildirilen bir önceki bildirimle eşleşmez.
 - Ayrıca, Clang ve C1XX tarafından bildirilen sabit bir bellek-başlatıcı-liste sıralama uyarıları.
 - Sıralanmamış kapsayıcılar, kapsayıcılar kendilerini takas edildiğinde karma işlevlerini veya koşullarını değiştirmedi. Şimdi.
-- Çok sayıda kapsayıcı takas işlemi artık işaretlenmiş `noexcept` (Standart kitaplığımızda, eşit olmayan Ayırıcısız davranış koşulu algılanırken bir özel durum oluşturma hiçbir zaman yoktur `propagate_on_container_swap` ).
-- Birçok `vector<bool>` işlem artık işaretlendi `noexcept` .
+- Çok sayıda kapsayıcı takas işlemi artık işaretlenmiş **`noexcept`** (Standart kitaplığımızda, eşit olmayan Ayırıcısız davranış koşulu algılanırken bir özel durum oluşturma hiçbir zaman yoktur `propagate_on_container_swap` ).
+- Birçok `vector<bool>` işlem artık işaretlendi **`noexcept`** .
 - Standart kitaplık artık, `value_type` bir opt çıkış taraması ile eşleşen ayırıcıyı (c++ 17 modunda) zorlayacaktır.
 - Kendi kendine Aralık-INSERT işlevinin `basic_string` dizelerin içeriğini karıştıran bazı koşullar düzeltildi. (Note: kendinden aralığa ekleme, standart tarafından hala yasaktır.)
 - `basic_string::shrink_to_fit()`Artık ayırıcı tarafından etkilenmemektedir `propagate_on_container_swap` .
@@ -360,7 +360,7 @@ Visual Studio 2017 RTM 'de daha standart kitaplık geliştirmeleri vardır. Tüm
 
 - Ekledik, \<any\> , \<string_view\> `apply()` , `make_from_tuple()` .
 - , \<optional\> , \<variant\> `shared_ptr::weak_type` Ve eklendi \<cstdalign\> .
-- ,, Ve, ve, ve içinde C++ 14 etkindir `constexpr` `min(initializer_list)` `max(initializer_list)` `minmax(initializer_list)` `min_element()` `max_element()` `minmax_element()` .
+- ,, Ve, ve, ve içinde C++ 14 etkindir **`constexpr`** `min(initializer_list)` `max(initializer_list)` `minmax(initializer_list)` `min_element()` `max_element()` `minmax_element()` .
 
 Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp-language-conformance.md).
 
@@ -368,11 +368,11 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp
 
 - Birkaç ek C++ 17 özelliği uygulandı. Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](cpp-conformance-improvements.md#improvements_153).
 - Uygulanan P0602R0 "varyant ve isteğe bağlı, kopyalama/taşıma üç aylık dönemi yaymalıdır.
-- Standart kitaplık artık, [/gr-](../build/reference/gr-enable-run-time-type-information.md) seçeneği aracılığıyla dinamik RTTI 'nin devre dışı bırakılmakta olduğunu gösterir. Hem hem de `dynamic_pointer_cast()` `rethrow_if_nested()` kendiliğinden gerektirir `dynamic_cast` , bu nedenle standart kitaplık artık bunları altında olarak işaretler `=delete` **`/GR-`** .
+- Standart kitaplık artık, [/gr-](../build/reference/gr-enable-run-time-type-information.md) seçeneği aracılığıyla dinamik RTTI 'nin devre dışı bırakılmakta olduğunu gösterir. Hem hem de `dynamic_pointer_cast()` `rethrow_if_nested()` kendiliğinden gerektirir **`dynamic_cast`** , bu nedenle standart kitaplık artık bunları altında olarak işaretler `=delete` **`/GR-`** .
 - Dinamik RTTı aracılığıyla devre dışı bırakılmış olsa bile **`/GR-`** , biçiminde "STATIC RTTI" `typeid(SomeType)` de kullanılabilir ve çeşitli standart kitaplık bileşenlerini güçlendirir. Standart kitaplık artık bu özelliği aracılığıyla devre dışı bırakmayı desteklemektedir **`/D_HAS_STATIC_RTTI=0`** . Bu bayrak Ayrıca ve ' ın ve üye işlevlerini devre dışı bırakır, ve ' ın `std::any` `target()` `target_type()` `std::function` `get_deleter()` arkadaş üye işlevi `std::shared_ptr` `std::weak_ptr` .
-- Standart kitaplık artık `constexpr` koşullu olarak tanımlanmış makrolar yerine, c++ 14 ' i koşullu olarak kullanır.
+- Standart kitaplık artık **`constexpr`** koşullu olarak tanımlanmış makrolar yerine, c++ 14 ' i koşullu olarak kullanır.
 - Standart kitaplık artık dahili olarak diğer ad şablonlarını kullanır.
-- Standart kitaplık artık `nullptr` , yerine dahili olarak kullanılmaktadır `nullptr_t{}` . (NULL 'in iç kullanımı eradkıdı. 0-null olarak iç kullanımı, yavaş bir şekilde temizleniyor.)
+- Standart kitaplık artık **`nullptr`** , yerine dahili olarak kullanılmaktadır `nullptr_t{}` . (NULL 'in iç kullanımı eradkıdı. 0-null olarak iç kullanımı, yavaş bir şekilde temizleniyor.)
 - Standart kitaplık artık `std::move()` , stillistik yanlış kullanımı yerine dahili olarak kullanılmaktadır `std::forward()` .
 - `static_assert(false, "message")`Olarak değiştirildi `#error message` . Bu değişiklik, `#error` derlemeyi hemen durdurduğu için derleyici tanılamayı geliştirir.
 - Standart kitaplık artık işlevleri olarak işaretler `__declspec(dllimport)` . Modern bağlayıcı teknolojisine artık gerek yoktur.
@@ -439,7 +439,7 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp
 
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
-- `noexcept` `std::atomic` Uygulamasının, yapılandırılmış özel durum Işleme (SEH) kullanan işlevlere uygulamayı önleyen, ile etkileşimlere geçici bir şekilde çalışmıştır.
+- **`noexcept`** `std::atomic` Uygulamasının, yapılandırılmış özel durum Işleme (SEH) kullanan işlevlere uygulamayı önleyen, ile etkileşimlere geçici bir şekilde çalışmıştır.
 - Standart kitaplığın iç `_Deallocate()` işlevi, daha küçük koda optimize edilecek şekilde değiştirildi ve bu da daha fazla yere satır içine alınmış olabilir.
 - `std::try_lock()`Özyineleme yerine paket genişletmesi kullanılacak şekilde değiştirildi.
 - Kilitleme `std::lock()` engelleme algoritması, `lock()` Tüm kilitlere dönme yerine işlemleri kullanmak için geliştirildi `try_lock()` .
@@ -456,7 +456,7 @@ Daha fazla bilgi için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp
 - `basic_string`Değiştirme işlemleri artık yeniden boyutlandırma yerine tercih edilen durumda yeniden ayrılmış arabellekler oluşturur. Örneğin, bir dizenin başındaki bir INSERT artık, içeriği tam olarak bir kez eklendikten sonra taşımıştır. Aşağı ya da yeni ayrılmış arabelleğe taşınır. Bu durumda, ilk olarak yeni ayrılan arabelleğe ve ardından aşağı doğru bir şekilde bir kez taşınmaz.
 - İçindeki C standart kitaplığını çağıran işlemler, \<string\> artık `errno` TLS ile yinelenen etkileşimi kaldırmak için adresi önbelleğe alma işlemini kaldırır.
 - Uygulamayı basitleşme `is_pointer` .
-- İşlev tabanlı Ifadenin SFıNAE 'ye ve tabanlı olarak değiştirilmesi bitti `struct` `void_t` .
+- İşlev tabanlı Ifadenin SFıNAE 'ye ve tabanlı olarak değiştirilmesi bitti **`struct`** `void_t` .
 - Standart Kitaplık algoritmaları artık, geri artan yineleyiciler yapmaktan kaçınır.
 - 64-bit sistemlerde 32 bit ayırıcılar kullanılırken düzeltilen kesme uyarıları.
 - `std::vector`Bunu yapmak, mümkün olduğunda arabelleği yeniden kullanmak için artık, POCıMA dışı olmayan eşit ayırıcı durumunda daha etkilidir.
@@ -657,7 +657,7 @@ Visual Studio 2017 ile birlikte gelen Clang/C2 araç takımı artık **`/bigobj`
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-- Yeni C++ Temel Yönergeleri denetimleri, akıllı işaretçi doğruluğunu, genel başlatıcıların doğru kullanımını ve benzer yapıların kullanımını `goto` ve hatalı yayınları kapsamasını kapsar.
+- Yeni C++ Temel Yönergeleri denetimleri, akıllı işaretçi doğruluğunu, genel başlatıcıların doğru kullanımını ve benzer yapıların kullanımını **`goto`** ve hatalı yayınları kapsamasını kapsar.
 
 - 15.3 sürümünde karşılaşabileceğiniz bazı uyarı numaraları 15.5 sürümünde artık mevcut değil. Bu uyarıların yerine daha belirgin denetimler kullanıma sunuldu.
 
@@ -697,7 +697,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
-  ![Arayın](media/search.png)
+  ![Arama](media/search.png)
 
 - **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklayın.
 

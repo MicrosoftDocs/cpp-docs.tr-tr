@@ -1,5 +1,5 @@
 ---
-title: CAutoPtr Sınıfı
+title: CAutoPtr sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAutoPtr
@@ -12,21 +12,21 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtr class
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
-ms.openlocfilehash: 7f15e16b075b9a5327723a7f081100313f14ea77
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 699e62362bc74009e3faed3b4fd66b579c9c4cd3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167727"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226665"
 ---
-# <a name="cautoptr-class"></a>CAutoPtr Sınıfı
+# <a name="cautoptr-class"></a>CAutoPtr sınıfı
 
 Bu sınıf, bir akıllı işaretçi nesnesini temsil eder.
 
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename T>
@@ -42,22 +42,22 @@ class CAutoPtr
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAutoPtr:: CAutoPtr](#cautoptr)|Oluşturucu.|
 |[CAutoPtr:: ~ CAutoPtr](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAutoPtr:: Attach](#attach)|Varolan bir işaretçinin sahipliğini almak için bu yöntemi çağırın.|
 |[CAutoPtr::D etach](#detach)|Bir işaretçinin sahipliğini serbest bırakmak için bu yöntemi çağırın.|
-|[CAutoPtr:: ücretsiz](#free)|Tarafından işaret edilen bir nesneyi silmek için bu yöntemi çağırın `CAutoPtr`.|
+|[CAutoPtr:: ücretsiz](#free)|Tarafından işaret edilen bir nesneyi silmek için bu yöntemi çağırın `CAutoPtr` .|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAutoPtr:: operator T *](#operator_t_star)|Atama işleci.|
 |[CAutoPtr:: operator =](#operator_eq)|Atama işleci.|
@@ -65,7 +65,7 @@ class CAutoPtr
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAutoPtr:: m_p](#m_p)|İşaretçi verisi üye değişkeni.|
 
@@ -73,11 +73,11 @@ class CAutoPtr
 
 Bu sınıf, kapsam dışı kaldığında kaynakları otomatik olarak boşaltarak bellek sızıntılarına karşı korumaya yardımcı olacak akıllı bir işaretçi oluşturmak ve yönetmek için yöntemler sağlar.
 
-Daha ayrıntılı `CAutoPtr`olarak, işaretçinin kopyalama Oluşturucusu ve atama işleci, işaretçinin sahipliğini aktarma, kaynak işaretçiyi hedef işaretçiye kopyalama ve kaynak işaretçisini null olarak ayarlama. Bu nedenle, her biri aynı işaretçiyi `CAutoPtr` depolayan iki nesnenin olması olanaksız ve bu, aynı işaretçiyi iki kez silmenin olasılığını azaltır.
+Daha ayrıntılı olarak, `CAutoPtr` işaretçinin kopyalama Oluşturucusu ve atama işleci, işaretçinin sahipliğini aktarma, kaynak işaretçiyi hedef işaretçiye kopyalama ve kaynak IŞARETÇISINI null olarak ayarlama. Bu nedenle, `CAutoPtr` her biri aynı işaretçiyi depolayan iki nesnenin olması olanaksız ve bu, aynı işaretçiyi iki kez silmenin olasılığını azaltır.
 
-`CAutoPtr`Ayrıca işaretçiler koleksiyonunun oluşturulmasını basitleştirir. Bir koleksiyon sınıfı türetmek ve yıkıcıyı geçersiz kılmak yerine bir `CAutoPtr` nesne koleksiyonu oluşturmak daha basittir. Koleksiyon silindiğinde, `CAutoPtr` nesneler kapsam dışına geçer ve kendilerini otomatik olarak siler.
+`CAutoPtr`Ayrıca işaretçiler koleksiyonunun oluşturulmasını basitleştirir. Bir koleksiyon sınıfı türetmek ve yıkıcıyı geçersiz kılmak yerine bir nesne koleksiyonu oluşturmak daha basittir `CAutoPtr` . Koleksiyon silindiğinde, `CAutoPtr` nesneler kapsam dışına geçer ve kendilerini otomatik olarak siler.
 
-[CHeapPtr](../../atl/reference/cheapptr-class.md) ve varyantlar `CAutoPtr`, C++ **New** ve **Delete** işleçleri yerine farklı yığın işlevleri kullanarak bellek ayırıp serbest bırakmak dışında, ile aynı şekilde çalışır. [CAutoVectorPtr](../../atl/reference/cautovectorptr-class.md) `CAutoPtr`, bellek ayırmak ve serbest bırakmak için **Vector New []** ve **Vector delete []** gibi tek farklılık ile benzerdir.
+[CHeapPtr](../../atl/reference/cheapptr-class.md) ve varyantlar `CAutoPtr` , C++ ve işleçleri yerine farklı yığın işlevleri kullanarak bellek ayırıp serbest bırakmak dışında, ile aynı şekilde çalışır **`new`** **`delete`** . [CAutoVectorPtr](../../atl/reference/cautovectorptr-class.md) `CAutoPtr` , bellek ayırmak ve serbest bırakmak için **Vector New []** ve **Vector delete []** gibi tek farklılık ile benzerdir.
 
 Ayrıca, diziler veya akıllı işaretçiler listesi gerektiğinde bkz. [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) ve [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) .
 
@@ -100,7 +100,7 @@ void Attach(T* p) throw();
 ### <a name="parameters"></a>Parametreler
 
 *Lama*<br/>
-`CAutoPtr` Nesne Bu işaretçinin sahipliğini alır.
+`CAutoPtr`Nesne Bu işaretçinin sahipliğini alır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -133,11 +133,11 @@ CAutoPtr(CAutoPtr<T>& p) throw();
 Var olan bir işaretçi.
 
 *TSrc*<br/>
-Başka bir `CAutoPtr`tarafından yönetilmekte olan tür, geçerli nesneyi başlatmak için kullanılır.
+Başka bir tarafından yönetilmekte olan tür `CAutoPtr` , geçerli nesneyi başlatmak için kullanılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAutoPtr` Nesnesi var olan bir işaretçi kullanılarak oluşturulabilir ve bu durumda işaretçinin sahipliğini aktarır.
+`CAutoPtr`Nesnesi var olan bir işaretçi kullanılarak oluşturulabilir ve bu durumda işaretçinin sahipliğini aktarır.
 
 ### <a name="example"></a>Örnek
 
@@ -169,7 +169,7 @@ T* Detach() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işaretçinin sahipliğini serbest bırakır, [CAutoPtr:: m_p](#m_p) veri ÜYESI değişkenini null olarak ayarlar ve işaretçinin bir kopyasını döndürür. Öğesini çağırdıktan `Detach`sonra, `CAutoPtr` nesnenin daha önce yanıtı kabul eden ayrılmış kaynakların serbest bırakılmasının için programcıya kalmıştır.
+Bir işaretçinin sahipliğini serbest bırakır, [CAutoPtr:: m_p](#m_p) veri ÜYESI değişkenini null olarak ayarlar ve işaretçinin bir kopyasını döndürür. Öğesini çağırdıktan sonra `Detach` , `CAutoPtr` nesnenin daha önce yanıtı kabul eden ayrılmış kaynakların serbest bırakılmasının için programcıya kalmıştır.
 
 ### <a name="example"></a>Örnek
 
@@ -177,7 +177,7 @@ Bir işaretçinin sahipliğini serbest bırakır, [CAutoPtr:: m_p](#m_p) veri Ü
 
 ## <a name="cautoptrfree"></a><a name="free"></a>CAutoPtr:: ücretsiz
 
-Tarafından işaret edilen bir nesneyi silmek için bu yöntemi çağırın `CAutoPtr`.
+Tarafından işaret edilen bir nesneyi silmek için bu yöntemi çağırın `CAutoPtr` .
 
 ```cpp
 void Free() throw();
@@ -185,7 +185,7 @@ void Free() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tarafından işaret edilen nesne serbest `CAutoPtr` bırakılır ve [cautoptr:: m_p](#m_p) veri üyesi değişkeni null olarak ayarlanır.
+Tarafından işaret edilen nesne `CAutoPtr` serbest bırakılır ve [CAutoPtr:: m_p](#m_p) VERI üyesi değişkeni null olarak ayarlanır.
 
 ## <a name="cautoptrm_p"></a><a name="m_p"></a>CAutoPtr:: m_p
 
@@ -221,11 +221,11 @@ Bir sınıf türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir **CAutoPtr\< T >** başvurusunu döndürür.
+Bir **CAutoPtr \< T > **öğesine bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atama `CAutoPtr` *işleci, nesneyi*herhangi bir geçerli işaretçiden ayırır ve yeni işaretçiyi o yere ekler.
+Atama işleci, `CAutoPtr` nesneyi herhangi bir geçerli işaretçiden ayırır ve yeni işaretçiyi o yere ekler. *p*
 
 ### <a name="example"></a>Örnek
 
@@ -245,7 +245,7 @@ T* operator->() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAutoPtr` Nesne tarafından işaret edilen bir sınıftaki yöntemi çağırmak için bu işleci kullanın. Hata ayıklama yapılarında, NULL değeri `CAutoPtr` işaret ediyorsa bir onaylama hatası meydana gelir.
+Nesne tarafından işaret edilen bir sınıftaki yöntemi çağırmak için bu işleci kullanın `CAutoPtr` . Hata ayıklama yapılarında, NULL değeri işaret ediyorsa bir onaylama hatası meydana gelir `CAutoPtr` .
 
 ### <a name="example"></a>Örnek
 
@@ -269,6 +269,6 @@ Sınıf şablonunda tanımlanan nesne veri türüne bir işaretçi döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
-[CAutoVectorPtr Sınıfı](../../atl/reference/cautovectorptr-class.md)<br/>
+[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[CAutoVectorPtr sınıfı](../../atl/reference/cautovectorptr-class.md)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -5,16 +5,16 @@ helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-ms.openlocfilehash: 23625ddf44d16a4dc408b87f27b9cdfba7a9cbd4
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: b4b3ba5fdbc11ec97870b0f06fd1aabd3b57f5ca
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077230"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87225975"
 ---
 # <a name="lvalues-and-rvalues-c"></a>Lvalues ve Rvalues (C++)
 
-Her C++ ifadenin bir türü vardır ve bir *değer kategorisine*aittir. Değer kategorileri, derleyicilerin ifade değerlendirmesi sırasında geçici nesneleri oluştururken, kopyalarken ve taşırken izlemesi gereken kuralların temelini oluşturur.
+Her C++ ifadesinin bir türü vardır ve bir *değer kategorisine*aittir. Değer kategorileri, derleyicilerin ifade değerlendirmesi sırasında geçici nesneleri oluştururken, kopyalarken ve taşırken izlemesi gereken kuralların temelini oluşturur.
 
 C++ 17 standardı, ifade değeri kategorilerini aşağıdaki şekilde tanımlar:
 
@@ -26,9 +26,9 @@ C++ 17 standardı, ifade değeri kategorilerini aşağıdaki şekilde tanımlar:
 
 Aşağıdaki diyagramda kategoriler arasındaki ilişkiler gösterilmektedir:
 
-![C++ifade değeri kategorileri](media/value_categories.png "C++ifade değeri kategorileri")
+![C++ ifade değeri kategorileri](media/value_categories.png "C++ ifade değeri kategorileri")
 
-Lvalue, programınızın erişebileceği bir adrese sahiptir. Lvalue ifadesi örnekleri, **const** değişkenleri, dizi öğeleri, bir lvalue başvurusu döndüren işlev çağrıları, bit alanları, birleşimler ve sınıf üyeleri dahil değişken adlarını içerir.
+Lvalue, programınızın erişebileceği bir adrese sahiptir. Lvalue ifadeleri örnekleri, **`const`** değişkenler, dizi öğeleri, bir lvalue başvurusu döndüren işlev çağrıları, bit alanları, birleşimler ve sınıf üyeleri gibi değişken adlarını içerir.
 
 Bir prvalue olamaz ifadesinde, programınız tarafından erişilebilen bir adres yok. Prvalue olamaz ifadelerine örnek olarak değişmez değerler, başvuru olmayan bir tür döndüren işlev çağrıları ve Evalution ifadesi sırasında oluşturulan ancak derleyici tarafından erişilebilen geçici nesneler sayılabilir.
 
@@ -64,12 +64,12 @@ int main()
 ```
 
 > [!NOTE]
-> Bu konudaki örneklerde, işleçler aşırı yüklü olmadığında doğru ve hatalı kullanım gösterilmektedir. İşleçleri aşırı yükleyerek, bir lvalue `j * 4` gibi bir ifade yapabilirsiniz.
+> Bu konudaki örneklerde, işleçler aşırı yüklü olmadığında doğru ve hatalı kullanım gösterilmektedir. İşleçleri aşırı yükleyerek, lvalue gibi bir ifade yapabilirsiniz `j * 4` .
 
-Nesne başvurularına başvurduğunuzda, *lvalue* ve *rvalue* terimleri genellikle kullanılır. Başvurular hakkında daha fazla bilgi için bkz. [lvalue başvuru bildirimci: &](../cpp/lvalue-reference-declarator-amp.md) ve [rvalue başvuru bildirimci: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+Nesne başvurularına başvurduğunuzda, *lvalue* ve *rvalue* terimleri genellikle kullanılır. Başvurular hakkında daha fazla bilgi için bkz. [lvalue başvuru bildirimci: &](../cpp/lvalue-reference-declarator-amp.md) ve [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Kavramlar](../cpp/basic-concepts-cpp.md)<br/>
+[Temel kavramlar](../cpp/basic-concepts-cpp.md)<br/>
 [Lvalue Başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)<br/>
 [Rvalue Başvuru Bildirimcisi: &&](../cpp/rvalue-reference-declarator-amp-amp.md)

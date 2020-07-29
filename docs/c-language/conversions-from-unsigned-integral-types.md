@@ -8,12 +8,12 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-ms.openlocfilehash: 3099f0113103223e392dc20560899b4a6e3ebf20
-ms.sourcegitcommit: c51b2c665849479fa995bc3323a22ebe79d9d7ce
+ms.openlocfilehash: 08b88b1343f56f8d79fc39c53505b26caecfe3c4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71998794"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87226470"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız tam sayı türlerinden dönüştürmeler
 
@@ -35,7 +35,7 @@ printf_s( "%hd\n", j );   // Prints -3
 
 **Microsoft'a Özgü**
 
-Microsoft derleyicisinde, **imzasız** (veya **işaretsiz int**) ve **işaretsiz Long** farklıdır ancak eşdeğer türlerdir. **İşaretsiz bir int** değerin dönüştürülmesi, **işaretsiz bir Long**değeri dönüştürülürken aynı şekilde devam eder.
+Microsoft derleyicisinde **`unsigned`** (veya **`unsigned int`** ) ve **`unsigned long`** farklı ancak eşdeğer türlerdir. Bir değerin dönüştürülmesi **`unsigned int`** , bir öğesinin dönüştürülmesine benzer şekilde devam eder **`unsigned long`** .
 
 **SON Microsoft 'a özgü**
 
@@ -43,48 +43,48 @@ Aşağıdaki tabloda, imzasız integral türlerinden dönüşümler özetlenmekt
 
 ## <a name="table-of-conversions-from-unsigned-integral-types"></a>İşaretsiz integral türlerindeki dönüştürmelerin tablosu
 
-|Başlangıç|Alıcı|Yöntem|
+|Kaynak|Amaç|Yöntem|
 |----------|--------|------------|
-|**unsigned char**|**char**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**unsigned char**|**short**|Sıfır-uzat|
-|**unsigned char**|**long**|Sıfır-uzat|
-|**unsigned char**|**long long**|Sıfır-uzat|
-|**unsigned char**|**imzasız short**|Sıfır-uzat|
-|**unsigned char**|**imzasız long**|Sıfır-uzat|
-|**unsigned char**|**imzasız uzun uzun**|Sıfır-uzat|
-|**unsigned char**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**unsigned char**|**double**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**unsigned char**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**imzasız short**|**char**|Düşük sıra baytını koru|
-|**imzasız short**|**short**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**imzasız short**|**long**|Sıfır-uzat|
-|**imzasız short**|**long long**|Sıfır-uzat|
-|**imzasız short**|**unsigned char**|Düşük sıra baytını koru|
-|**imzasız short**|**imzasız long**|Sıfır-uzat|
-|**imzasız short**|**imzasız uzun uzun**|Sıfır-uzat|
-|**imzasız short**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**imzasız short**|**double**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**imzasız short**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**imzasız long**|**char**|Düşük sıra baytını koru|
-|**imzasız long**|**short**|Düşük sıralı kelimeyi koru|
-|**imzasız long**|**long**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**imzasız long**|**long long**|Sıfır-uzat|
-|**imzasız long**|**unsigned char**|Düşük sıra baytını koru|
-|**imzasız long**|**imzasız short**|Düşük sıralı kelimeyi koru|
-|**imzasız long**|**imzasız uzun uzun**|Sıfır-uzat|
-|**imzasız long**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**imzasız long**|**double**|Doğrudan **Double** 'a Dönüştür|
-|**imzasız long**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
-|**imzasız uzun uzun**|**char**|Düşük sıra baytını koru|
-|**imzasız uzun uzun**|**short**|Düşük sıralı kelimeyi koru|
-|**imzasız uzun uzun**|**long**|Düşük sıralı DWORD 'yi koru|
-|**imzasız uzun uzun**|**long long**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
-|**imzasız uzun uzun**|**unsigned char**|Düşük sıra baytını koru|
-|**imzasız uzun uzun**|**imzasız short**|Düşük sıralı kelimeyi koru|
-|**imzasız uzun uzun**|**imzasız long**|Düşük sıralı DWORD 'yi koru|
-|**imzasız uzun uzun**|**float**|**Long**'a Dönüştür; **uzun** **kaya** Dönüştür|
-|**imzasız uzun uzun**|**double**|Doğrudan **Double** 'a Dönüştür|
-|**imzasız uzun uzun**|**uzun çift**|**Long**'a Dönüştür; **uzun** - **çift** Dönüştür|
+|**`unsigned char`**|**`char`**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**`unsigned char`**|**`short`**|Sıfır-uzat|
+|**`unsigned char`**|**`long`**|Sıfır-uzat|
+|**`unsigned char`**|**`long long`**|Sıfır-uzat|
+|**`unsigned char`**|**`unsigned short`**|Sıfır-uzat|
+|**`unsigned char`**|**`unsigned long`**|Sıfır-uzat|
+|**`unsigned char`**|**`unsigned long long`**|Sıfır-uzat|
+|**`unsigned char`**|**`float`**|Dönüştür **`long`** ; Dönüştür **`long`****`float`**|
+|**`unsigned char`**|**`double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
+|**`unsigned char`**|**`long double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
+|**`unsigned short`**|**`char`**|Düşük sıra baytını koru|
+|**`unsigned short`**|**`short`**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**`unsigned short`**|**`long`**|Sıfır-uzat|
+|**`unsigned short`**|**`long long`**|Sıfır-uzat|
+|**`unsigned short`**|**`unsigned char`**|Düşük sıra baytını koru|
+|**`unsigned short`**|**`unsigned long`**|Sıfır-uzat|
+|**`unsigned short`**|**`unsigned long long`**|Sıfır-uzat|
+|**`unsigned short`**|**`float`**|Dönüştür **`long`** ; Dönüştür **`long`****`float`**|
+|**`unsigned short`**|**`double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
+|**`unsigned short`**|**`long double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
+|**`unsigned long`**|**`char`**|Düşük sıra baytını koru|
+|**`unsigned long`**|**`short`**|Düşük sıralı kelimeyi koru|
+|**`unsigned long`**|**`long`**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**`unsigned long`**|**`long long`**|Sıfır-uzat|
+|**`unsigned long`**|**`unsigned char`**|Düşük sıra baytını koru|
+|**`unsigned long`**|**`unsigned short`**|Düşük sıralı kelimeyi koru|
+|**`unsigned long`**|**`unsigned long long`**|Sıfır-uzat|
+|**`unsigned long`**|**`float`**|Dönüştür **`long`** ; Dönüştür **`long`****`float`**|
+|**`unsigned long`**|**`double`**|Doğrudan Dönüştür**`double`**|
+|**`unsigned long`**|**`long double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
+|**`unsigned long long`**|**`char`**|Düşük sıra baytını koru|
+|**`unsigned long long`**|**`short`**|Düşük sıralı kelimeyi koru|
+|**`unsigned long long`**|**`long`**|Düşük sıralı DWORD 'yi koru|
+|**`unsigned long long`**|**`long long`**|Bit modelini koru; yüksek sıralı bit, işaret biti olur|
+|**`unsigned long long`**|**`unsigned char`**|Düşük sıra baytını koru|
+|**`unsigned long long`**|**`unsigned short`**|Düşük sıralı kelimeyi koru|
+|**`unsigned long long`**|**`unsigned long`**|Düşük sıralı DWORD 'yi koru|
+|**`unsigned long long`**|**`float`**|Dönüştür **`long`** ; Dönüştür **`long`****`float`**|
+|**`unsigned long long`**|**`double`**|Doğrudan Dönüştür**`double`**|
+|**`unsigned long long`**|**`long double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
