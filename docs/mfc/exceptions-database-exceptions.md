@@ -11,12 +11,12 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: 96f9e5f836205df71e03638858cb00b788d03c0b
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: aaed2a9f88c46a405b754b78242478f93cffda31
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403731"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217967"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 
@@ -54,11 +54,11 @@ DAO hataları, DAO hatası nesne türü ve DAO hataları koleksiyonu hakkında e
 
 ## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a>Veritabanı özel durum Işleme örneği
 
-Aşağıdaki örnek, **Yeni** işleçle yığında bir [CRecordset](reference/crecordset-class.md)ile türetilmiş nesne oluşturmaya çalışır ve ardından kayıt kümesini (ODBC veri kaynağı için) açar. DAO sınıflarına benzer bir örnek için aşağıdaki "DAO özel durum örneği" ne bakın.
+Aşağıdaki örnek, işleçle yığın üzerinde bir [CRecordset](reference/crecordset-class.md)ile türetilmiş nesne oluşturmaya çalışır **`new`** ve ardından kayıt kümesini (ODBC veri kaynağı için) açar. DAO sınıflarına benzer bir örnek için aşağıdaki "DAO özel durum örneği" ne bakın.
 
 ### <a name="odbc-exception-example"></a>ODBC özel durum örneği
 
-[Open](reference/crecordset-class.md#open) member işlevi, bir özel durum OLUŞTURABILIR (ODBC sınıfları Için [CDBException](reference/cdbexception-class.md) türünde), bu nedenle bu kod, `Open` çağrıyı bir **TRY** bloğu ile ayraç içine alın. Sonraki **catch** bloğu bir yakalar `CDBException` . Bilinen özel durum nesnesinin kendisini inceleyebilirsiniz, `e` ancak bu durumda bir kayıt kümesi oluşturma girişiminin başarısız olduğunu bilmek için yeterlidir. **Catch** bloğu bir ileti kutusu görüntüler ve kayıt kümesi nesnesini silerek temizler.
+[Open](reference/crecordset-class.md#open) member işlevi ODBC sınıfları için bir özel durum ( [CDBException](reference/cdbexception-class.md) türünde) oluşturabilir, bu nedenle bu kod, `Open` çağrıyı bir blok ile ayraç içine alın **`try`** . Sonraki **`catch`** blok bir yakalar `CDBException` . Bilinen özel durum nesnesinin kendisini inceleyebilirsiniz, `e` ancak bu durumda bir kayıt kümesi oluşturma girişiminin başarısız olduğunu bilmek için yeterlidir. **`catch`** Blok bir ileti kutusu görüntüler ve kayıt kümesi nesnesini silerek temizler.
 
 [!code-cpp[NVC_MFCDatabase#36](codesnippet/cpp/exceptions-database-exceptions_1.cpp)]
 

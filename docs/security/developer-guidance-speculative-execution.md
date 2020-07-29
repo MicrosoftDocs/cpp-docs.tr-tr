@@ -1,5 +1,5 @@
 ---
-title: Kurgusal yürütme yan kanal için C++ Geliştirici Kılavuzu
+title: Kurgusal yürütme tarafı kanalları için C++ Geliştirici Kılavuzu
 ms.date: 07/10/2018
 helpviewer_keywords:
 - Visual C++, security
@@ -8,30 +8,30 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-ms.openlocfilehash: b3895cdb060d45d3f75c75f75c930e868b3654b2
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: d0b9faf0bd11892c05e25e981e8cd729cb623dd4
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448602"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219332"
 ---
-# <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanal için C++ Geliştirici Kılavuzu
+# <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme tarafı kanalları için C++ Geliştirici Kılavuzu
 
-Bu makalede, tanımlamak ve C++ yazılım kurgusal yürütme yan kanal donanım güvenlik açıklarını azaltmaya yardımcı olmak üzere, geliştiriciler için kılavuz içerir. Bu güvenlik açıklarına güven sınırları boyunca hassas bilgileri açığa çıkarabileceği ve yönergeleri kurgusal, sırası yürütülmesini destekleyen işlemcilerde çalışan yazılımları etkileyebilir. Bu sınıf güvenlik açıklarının Ocak 2018 ' açıklanan first ve ek arka plan olan ve yönergeler bulunabilir [Microsoft'un güvenlik danışma belgesi](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002).
+Bu makale, geliştiricilerin C++ yazılımlarında yansımalı yürütme tarafı kanal donanım açıklarını tanımlamaya ve azaltmaya yardımcı olmak için rehberlik içerir. Bu güvenlik açıkları, güven sınırları genelinde hassas bilgileri açığa çıkarabilir ve yönergelerin, kurgusal ve sıra dışı yürütmeyi destekleyen işlemcilerde çalışan yazılımları etkileyebilir. Bu güvenlik açığı sınıfı ilk olarak Ocak, 2018 ve ek arka planda açıklanmıştı ve [Microsoft 'un güvenlik danışmanlığı](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)içinde rehberlik bulunabilir.
 
-Bu makalede tarafından sağlanan yönergeleri sınıfları tarafından temsil edilen güvenlik açıklarının ilişkilidir:
+Bu makale tarafından sunulan kılavuz, tarafından temsil edilen güvenlik açıklarına yönelik sınıflarla ilgilidir:
 
-1. CVE-2017-5753, Spectre değişkeni 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı bir koşullu dalı misprediction sonucu olarak ortaya çıkan kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilişkilidir. Microsoft C++ derleyici Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) için destek içerir `/Qspectre` savunmasız kodlama desenleri sınırlı bir dizi için bir derleme zamanı azaltma sağlayan anahtar CVE-2017-5753 için ilgili. `/Qspectre` Anahtarıdır ayrıca Visual Studio 2015 güncelleştirme 3'ten kullanılabilir [KB 4338871](https://support.microsoft.com/help/4338871). Belgelerine [/qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar.
+1. CVE-2017-5753, Spectre Variant 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı, koşullu bir dalın yanlış tahmin sonucu olarak oluşan yansımalı yürütme nedeniyle ortaya çıkabilecek yan kanallar ile ilgilidir. Visual Studio 2017 ' de Microsoft C++ derleyicisi (Version 15.5.5 ile başlayarak), `/Qspectre` CVE-2017-5753 ile ilgili sınırlı olabilecek güvenlik açıklarına yönelik kodlama desenlerine yönelik derleme zamanı azaltma sağlayan anahtar için destek içerir. Bu `/Qspectre` anahtar, Visual Studio 2015 güncelleştirme 3 Ile [KB 4338871](https://support.microsoft.com/help/4338871)arasında da kullanılabilir. [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağının belgeleri, etkileri ve kullanımı hakkında daha fazla bilgi sağlar.
 
-2. CVE-2018-olarak da bilinen 3639, [kurgusal Store atlama (SSB)](https://aka.ms/sescsrdssb). Bu donanım güvenlik açığı sınıfı, bir iş yükünün bellek erişim misprediction sonucunda bağımlı bir deposu önceden kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilgilidir.
+2. CVE-2018-3639, Ayrıca, [Specutive deposu atlama (SSB)](https://aka.ms/sescsrdssb)olarak da bilinir. Bu donanım güvenlik açığı sınıfı, bellek erişiminin yanlış tahmin sonucu olarak bağımlı bir deponun önünde oluşan bir yükün önünde yürütülebileceği için ortaya çıkabilecek yan kanallar ile ilgilidir.
 
-Kurgusal yürütme yan kanal güvenlik açıklarına erişilebilir giriş başlıklı sunuda bulunabilir [çalışması Spectre ve Meltdown](https://www.youtube.com/watch?v=_4O0zMW-Zu4) bu sorunları bulunan araştırma ekipler biri tarafından.
+Bu sorunları tespit eden araştırma takımlarından biri tarafından [Spectre ve Meltüksel olma durumu](https://www.youtube.com/watch?v=_4O0zMW-Zu4) başlıklı sunuda, yansımalı yürütme tarafı kanalı güvenlik açıklarına erişilebilir bir giriş bulabilirsiniz.
 
-## <a name="what-are-speculative-execution-side-channel-hardware-vulnerabilities"></a>Kurgusal yürütme yan kanal donanım güvenlik açıklarını nelerdir?
+## <a name="what-are-speculative-execution-side-channel-hardware-vulnerabilities"></a>Spectıcı yürütme tarafı kanal donanımı güvenlik açıkları nelerdir?
 
-Modern CPU hale getirerek daha yüksek performans derecesi sağlamak kurgusal ve sırası yürütme yönergeleri kullanın. Örneğin, bu genellikle speculatively tahmin edilen dal hedef adresindeki yönergeleri yürütmeye başlamak CPU sağlayan hedef dalı (koşullu ve dolaylı) hakkında tahminde bulunarak gerçekleştirilir gerçek dal hedefi olana kadar bu nedenle bir kabini kaçınma çözüldü. CPU, daha sonra bir misprediction oluştuğunu bulur, durumunda, tüm speculatively hesaplanan makine durumu atılır. Bu, hiçbir mimari görünür mispredicted Spekülasyon etkilerini olmasını sağlar.
+Modern CPU 'Lar, yönergelerin öngörülebilir ve sıra dışı yürütmesini kullanarak daha yüksek performans sağlar. Örneğin, bu genellikle, CPU 'nun tahmin edilen dal hedefinde yönergeleri tahmin etmeye başlamasını sağlayan dalların (koşullu ve dolaylı) hedefi tahmine dayalı olarak gerçekleştirilir ve bu sayede gerçek dal hedefi çözümlenene kadar bir cepten kaçının. CPU 'nun daha sonra yanlış tahmin oluştuğunu bulduğu durumda, hesaplanan tüm makine durumları atılır. Bu durum, yanlış tahmin edilen öngörülere ilişkin mimari açıdan görünür etkileri olmamasını sağlar.
 
-Kurgusal yürütmeyi mimari görünürlük durumunu etkilemez, ancak CPU tarafından kullanılan çeşitli önbellekleri gibi mimari olmayan durumda kalan izlemeleri bırakabilirsiniz. Bu, yan kanal güvenlik açıkları ortaya çıkmasına neden veren kurgusal yürütme kalan bu izlemelerin olur. Bunu daha iyi anlamak için CVE-2017-5753 (denetleyin sınırları atlama) örneği sağlayan aşağıdaki kod parçasını göz önünde bulundurun:
+Yansımalı yürütme, mimari türsel görünür durumunu etkilemez, ancak CPU tarafından kullanılan çeşitli önbellekler gibi, farklı izlemeler mimari olmayan bir durumda kalabilir. Bu, daha fazla yüz kanallı güvenlik açıklarına neden olan belirgin yürütmenin daha açık izlemelerinden oluşur. Bunu daha iyi anlamak için, CVE-2017-5753 (sınır denetimi atlama) örneği sağlayan aşağıdaki kod parçasını göz önünde bulundurun:
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -45,53 +45,53 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-Bu örnekte, `ReadByte` olan bir arabellek, arabellek boyutu ve bir dizin o arabelleğe sağlanan. Tarafından belirtilen dizin parametresi `untrusted_index`, daha az tarafından sağlanan yönetici olmayan bir işlem gibi ayrıcalıklı bağlamı. Varsa `untrusted_index` olduğu küçüktür `buffer_size`, sonra da bu dizindeki karakteri okuyabilir `buffer` ve bellek tarafından başvurulan paylaşılan bir bölge içinde dizin için kullanılan `shared_buffer`.
+Bu örnekte, `ReadByte` bir arabellek, arabellek boyutu ve bu arabellekteki bir dizin sağlanır. Tarafından belirtilen dizin parametresi, `untrusted_index` yönetici olmayan bir işlem gibi daha az ayrıcalıklı bir bağlam tarafından sağlanır. `untrusted_index`Değerinden küçükse `buffer_size` , bu dizindeki karakter `buffer` tarafından okunan ve tarafından başvurulan paylaşılan bellek bölgesinde dizin oluşturma için kullanılır `shared_buffer` .
 
-Garanti edilir gibi bir mimari açıdan bakıldığında, bu kod dizisi mükemmel güvenli `untrusted_index` her zaman küçüktür `buffer_size`. Ancak, kurgusal yürütmeyi saklanacaktır CPU koşullu bir dal yanlış tahmin ve IF işlevinin gövdesi yürütme mümkündür deyimi bile `untrusted_index` büyüktür veya eşittir `buffer_size`. Bu söz konusu kümelerdeki CPU bayt sınırları from beyond speculatively okuyabilirsiniz `buffer` (olan bir gizli dizi olabilir) ve sonra bir sonraki yük adresini hesaplamak için bu bayt değeri kullanabilirsiniz `shared_buffer`.
+Mimari perspektifinden, bu kod dizisi `untrusted_index` her zaman en az bir değer olacak şekilde mükemmel bir güvendedir `buffer_size` . Ancak, yansımalı yürütmenin olması durumunda CPU 'nun koşullu dalı yanlış tahmin edebilmesi ve IF ifadesinin gövdesini daha `untrusted_index` büyük veya buna eşit olduğunda bile yürütmesi mümkündür `buffer_size` . Bunun bir sonucu olarak CPU, sınırının ötesinde `buffer` (gizli olabilir) bir bayt okuyabilir ve daha sonra bu bayt değerini kullanarak sonraki yükün adresini hesaplatabiliriz `shared_buffer` .
 
-CPU sonunda bu misprediction algılar, ancak kalan yan etkileri je mimo rozsah okuma bayt değeri hakkında bilgi açığa CPU önbelleği bırakılabilir `buffer`. Bu yan etkileri daha az tarafından algılanabilir ayrıcalıklı içerik ne kadar hızlı yoklama işlemi tarafından sistem üzerinde çalışan her önbellek satır içinde `shared_buffer` erişilir. Bunu gerçekleştirmek için uygulanacak adımlar şunlardır:
+CPU sonunda bu yanlış tahmin tespit ederken, kalan kenar etkileri, sınırların dışına okunan bayt değeri hakkındaki bilgileri açığa çıkarmak üzere CPU önbelleğinde kalabilir `buffer` . Bu yan etkiler, içindeki her bir önbellek satırına ne kadar hızlı erişildiğini inceleyerek sistemde çalışan daha az ayrıcalıklı bir bağlam tarafından algılanabilir `shared_buffer` . Bunu gerçekleştirmek için gerçekleştirilebilecek adımlar şunlardır:
 
-1. **Çağırma `ReadByte` ile birden çok kez `untrusted_index` olan küçüktür `buffer_size`** . Saldırıyı gerçekleştiren bağlam çağrılacak victim bağlam neden olabilir `ReadByte` (örneğin, RPC) dal göstergesi olduğu gibi değil-taken olarak olmasını eğitilmiş `untrusted_index` olduğu küçüktür `buffer_size`.
+1. ** `ReadByte` `untrusted_index` Birden `buffer_size` az kez çağırın **. Saldırma bağlamı, kurban 'in, `ReadByte` dal tahmine dayalı olarak alınmamasına benzer şekilde (örneğin, RPC aracılığıyla) çağırmasına yol açabilir `untrusted_index` `buffer_size` .
 
-2. **Çizgiler önbellek temizleme `shared_buffer`** . Saldırıyı gerçekleştiren bağlam tüm bellek tarafından başvurulan paylaşılan bölgedeki önbellek satırları temizlemek gerekir `shared_buffer`. Bellek bölgesini paylaşılan olduğundan, bu oldukça basittir ve yapı içleri gibi kullanılarak gerçekleştirilebilir `_mm_clflush`.
+2. **İçindeki `shared_buffer` tüm önbellek çizgilerini temizler **. Saldırma bağlamı, tarafından başvurulan paylaşılan bellek bölgesindeki tüm önbellek çizgilerini boşaltmalıdır `shared_buffer` . Bellek bölgesi paylaşıldığından bu, basittir ve gibi iç bilgiler kullanılarak gerçekleştirilebilir `_mm_clflush` .
 
-3. **Çağırma `ReadByte` ile `untrusted_index` daha büyük olan `buffer_size`** . Çağrılacak victim bağlam saldırıyı gerçekleştiren bağlam neden `ReadByte` dalın değil alınıp yanlış tahmin şekilde. IF işlevinin gövdesi speculatively yürütmek için işlemciyi block ile Bu nedenler `untrusted_index` daha büyük olan `buffer_size`, bu nedenle işlemleri okuma için önde gelen, `buffer`. Sonuç olarak, `shared_buffer` işlemleri, bu nedenle CPU tarafından yüklenmesine izin ilgili önbellek satırı neden okundu potansiyel olarak gizli bir değer kullanarak dizinlenir.
+3. ** `ReadByte` `untrusted_index` Değerinden `buffer_size` büyük olan öğesini çağırın **. Saldırıda bulunan bağlam, kurban 'in `ReadByte` dalın alınmamasını, yanlış tahmin edecek şekilde çağırmasına neden olur. Bu, işlemcinin, IF bloğunun gövdesini daha büyük bir şekilde yürütmesine olanak sağlar ve bu `untrusted_index` `buffer_size` nedenle, bir sınırların dışında bir okuma ile başa çıkar `buffer` . Sonuç olarak, `shared_buffer` sınır dışında okunan bir gizli dizi değeri kullanılarak dizine alınır ve bu nedenle ilgili önbellek SATıRıNıN CPU tarafından yüklenmesine neden olur.
 
-4. **Her önbellek satırı oku `shared_buffer` , en hızlı erişilir görmek için**. Saldırıyı gerçekleştiren bağlam içinde her önbellek satırı okuyabilirsiniz `shared_buffer` diğerlerinden önemli ölçüde daha hızlı yükler önbellek satırı algılayın. Adım 3'tarafından getirdiğiniz olasılığı yüksek olan bir önbellek satırı budur. Bu örnekte bayt değeri ve önbellek satırı arasında 1:1 ilişki olduğundan, bu işlemleri okunan bayt gerçek değerini çıkarsamak bir saldırgan sağlar.
+4. ** `shared_buffer` En hızlı şekilde erişildiğini görmek için içindeki her bir önbellek satırını okuyun**. Saldırıda bulunan bağlam, içindeki her bir önbellek satırını okuyabilir `shared_buffer` ve diğerlerinden önemli ölçüde daha hızlı yüklenen önbellek satırını tespit edebilir. Bu, adım 3 ' te getirilen, büyük olasılıkla önbellek satırdır. Bu örnekteki bayt değeri ile Önbellek satırı arasında 1:1 bir ilişki olduğundan, bu, saldırganın sınırların dışında okunan baytın gerçek değerini çıkarması için izin verir.
 
-Yukarıdaki adımları CVE-2017-5753 örneğini kötüye ile birlikte temizleme + yeniden bilinen bir yöntem kullanarak bir örnek sağlar.
+Yukarıdaki adımlar, bir CVE-2017-5753 örneğini kullanmaktan yararlanarak TEMIZLEME + yeniden yükleme olarak bilinen bir tekniği kullanmanın bir örneğini sağlar.
 
-## <a name="what-software-scenarios-can-be-impacted"></a>Hangi yazılım senaryoları etkilenebilir?
+## <a name="what-software-scenarios-can-be-impacted"></a>Hangi yazılım senaryolarında etkilenebilirsiniz?
 
-Gibi bir işlem kullanılarak güvenli yazılım geliştirme [güvenlik geliştirme yaşam döngüsü](https://www.microsoft.com/sdl/) (SDL) uygulamalarında mevcut güven sınırları belirlemek geliştiriciler genellikle gerektirir. Burada bir uygulama gibi sistem üzerinde başka bir işlem ya da yönetici olmayan kullanıcı modu işlem çekirdek modu aygıt sürücüsü olması durumunda en az güvenilen bir bağlam tarafından sağlanan verilerle etkileşimde bulunabilir yerde bir güven sınırı var. Yeni bir sınıf içeren kurgusal yürütme yan kanal güvenlik açıklarının birçok güven sınırları içinde kodu ve bir cihazdaki verileri yalıtmaya mevcut yazılım güvenlik modelleri için geçerlidir.
+[Güvenlik geliştirme yaşam döngüsü](https://www.microsoft.com/sdl/) (SDL) gibi bir işlemi kullanarak güvenli yazılım geliştirme, genellikle geliştiricilerin uygulamasında mevcut olan güven sınırlarını belirlemesini gerektirir. Bir uygulamanın, sistemdeki başka bir işlem veya çekirdek modu cihaz sürücüsü durumunda yönetici olmayan bir Kullanıcı modu işlemi gibi daha az güvenilir bir bağlam tarafından belirtilen verilerle etkileşime girebileceği yerlerde bir güven sınırı bulunur. Yansımalı yürütme tarafı kanallarını içeren yeni güvenlik açığı sınıfı, bir cihazdaki kodu ve verileri yalıtmak için mevcut yazılım güvenlik modellerindeki birçok güven sınırıyla ilgilidir.
 
-Aşağıdaki tabloda, burada geliştiriciler açıklarından oluşan hakkında endişe olması gerekebilir yazılım güvenlik modelleri bir özetini sunar:
+Aşağıdaki tabloda, geliştiricilerin bu güvenlik açıklarına karşı endişeleri olması gerekebilecek yazılım güvenlik modellerinin bir özeti verilmiştir:
 
 |Güven sınırı|Açıklama|
 |----------------|----------------|
-|Sanal makine sınır|Güvenilir olmayan verileri başka bir sanal makineden alma ayrı sanal makineler'de iş yüklerini yalıtmak uygulamaları risk altında olabilir.|
-|Çekirdek sınırı|Bir yönetici olmayan kullanıcı modu işlemden güvenilmeyen verileri alan bir çekirdek modu aygıt sürücüsü risk altında olabilir.|
-|Bir işlem sınırı|Gibi bir uzak yordam çağrısı (RPC), paylaşılan bellek veya diğer işlem arası iletişim (IPC) mekanizmaları risk altında olabilir yerel sistem üzerinde çalışan başka bir işlemden güvenilmeyen verileri alan bir uygulama.|
-|Kuşatma sınır|Kuşatma dışında güvenilmeyen verileri alır (örneğin, Intel SGX) güvenli kuşatma içinde yürüten bir uygulama risk altında olabilir.|
-|Dil sınır|Yorumlar uygulama veya tam zamanında (JIT) derler ve yazılmış güvenilmeyen kod yürüten bir üst düzey dil risk altında olabilir.|
+|Sanal makine sınırı|Başka bir sanal makineden güvenilmeyen verileri alan ayrı sanal makinelerde iş yüklerini yalıtmak için uygulamalar risk altında olabilir.|
+|Çekirdek sınırı|Yönetici olmayan bir kullanıcı modundan güvenilmeyen verileri alan çekirdek modu bir cihaz sürücüsü risk altında olabilir.|
+|İşlem sınırı|Yerel sistemde çalışan, uzak yordam çağrısı (RPC), paylaşılan bellek veya diğer Işlem arası Iletişim (IPC) mekanizmaları gibi başka bir işlemden güvenilmeyen verileri alan bir uygulama risk altında olabilir.|
+|Şifreleme sınırı|Güvenli bir kuşatma (örneğin, Intel SGX) içinde yürütülen ve güvenilir olmayan verileri şifreleme dışından alan bir uygulama risk altında olabilir.|
+|Dil sınırı|Daha yüksek düzeyde bir dilde yazılan güvenilmeyen kodu, ya da tam zamanında (JıT) derleyen ve yürüten bir uygulama riskli olabilir.|
 
-Güven sınırları belirleyip kurgusal yürütme yan kanal güvenlik açıklarına olası örneklerini gidermek için saldırı yüzeyini kodu gözden geçirmelisiniz kullanıma sunulan saldırı yüzeyini yukarıdakilerden herhangi biri için olan uygulamalar. Uzak ağ protokolleri gibi uzak saldırı yüzeylerini maruz güven sınırları kurgusal yürütme yan kanal güvenlik açıklarına risk için sergilemiştir değil olduğunu unutulmamalıdır.
+Yukarıdaki güven sınırlarının herhangi birine açık saldırı yüzeyi olan uygulamaların, öngörülebilir yürütme tarafı kanalı güvenlik açıklarının olası örneklerini belirlemek ve azaltmak için saldırı yüzeyinde kodu gözden geçirmesi gerekir. Uzak ağ protokolleri gibi uzak saldırı yüzeylerine sunulan güven sınırlarının, öngörülebilir yürütme tarafı kanalı güvenlik açıklarına karşı risk altında gösterilmediğini not edilmelidir.
 
-## <a name="potentially-vulnerable-coding-patterns"></a>Savunmasız kodlama desenleri
+## <a name="potentially-vulnerable-coding-patterns"></a>Savunmasız olabilecek kodlama desenleri
 
-Kurgusal yürütme yan kanal güvenlik açıklarına söz konusu kümelerdeki birden çok kodlama desenleri ortaya çıkabilir. Bu bölümde, savunmasız kodlama desenleri açıklar ve her biri için örnekler sağlar, ancak bu Temalar çeşidi olabileceğini tanınması gereken. Bu nedenle, geliştiriciler, örnekler ve kapsamlı bir liste tüm savunmasız kodlama düzeni olarak değil, bu desenleri yararlanmak için önerilir. Yazılım şu anda mevcut bellek güvenlik açıklarının aynı sınıfları ayrıca kurgusal boyunca mevcut olabilir ve sırası yolları dahil olmak üzere ancak bunlarla sınırlı olmamak arabellek taşmaları, yürütme işlemleri erişir, ilk değeri atanmamış bellek kullanımı, türü dizi karışıklık ve benzeri. Saldırganlar, mimari yolları boyunca bellek emniyet açıklardan yararlanmak için kullanabileceğiniz aynı temelleri kurgusal yollarını da uygulanabilir.
+Yansımalı yürütme tarafı kanalları, birden çok kodlama deseninden kaynaklanan bir sonuç olabilir. Bu bölümde, savunmasız olabilecek kodlama desenleri açıklanmakta ve her biri için örnekler sağlanmaktadır, ancak bu temalarda çeşitlemelerin mevcut olabileceğini de bilmelidir. Bu nedenle, geliştiricilerin bu desenleri örnek olarak ele geçirmesine ve potansiyel olarak güvenlik açığı bulunan tüm kodlama desenlerinin ayrıntılı bir listesi olarak yerine getirilmesi önerilir. Günümüzde yazılımda mevcut olabilecek aynı bellek güvenliği güvenlik açıkları sınıfları, Ayrıca, arabellek taşmaları, sınır dışı dizi erişimleri, Başlatılmamış bellek kullanımı, tür karışıklık vb. dahil, ancak bunlarla sınırlı olmamak üzere, yürütmenin öngörülebilir ve sıra dışı yolları üzerinde de bulunabilir. Saldırganların daha fazla bellek güvenliği güvenlik açıklarına karşı kullanabileceği temel türler, mimari yollar için de ayrıca yansımalı yollar için de uygulanabilir.
 
-Genel olarak, koşullu ifade, denetlenmesi veya daha az güvenilir bir bağlam tarafından etkileyen veriler üzerinde çalıştığında kurgusal yürütme yan kanal ilgili koşullu dalı misprediction ortaya çıkabilir. Örneğin, bu koşullu ifadeler kullanılan içerebilir `if`, `for`, `while`, `switch`, veya Üçlü deyimleri. Her deyim için derleyici CPU, ardından çalışma zamanında dal hedefi tahmin koşullu bir dal oluşturabilir.
+Genel olarak, koşullu dalla ilgili, koşullu bir ifade, daha az güvenilir bir bağlam tarafından denetlenebilen veya etkilenerek, koşullu bir ifade üzerinde çalışırken meydana gelen yürütme tarafı kanalları olabilir. Örneğin, bu,,,, **`if`** **`for`** **`while`** **`switch`** veya üçlü deyimler içinde kullanılan koşullu ifadeler içerebilir. Bu deyimlerden her biri için, derleyici, CPU 'nun daha sonra çalışma zamanında dal hedefini tahmin edebildiğini koşullu bir dal oluşturabilir.
 
-Her örnek için bir geliştirici bir risk azaltma önünde bir engel burada neden olabilirdi "SPEKÜLASYON ENGELİ" ifadesini içeren bir açıklama eklenir. Bu bölümde daha ayrıntılı aşamadaki risk azaltmalarını temel ele alınmıştır.
+Her örnek için, bir geliştiricinin risk azaltma olarak bir engel tanıtabileceği "SPECULASYON ENGELI" ifadesini içeren bir açıklama eklenir. Bu, azaltmaları konusunda bölümünde daha ayrıntılı bir şekilde ele alınmıştır.
 
-## <a name="speculative-out-of-bounds-load"></a>Kurgusal işlemleri yükleme
+## <a name="speculative-out-of-bounds-load"></a>Yansımalı olmayan yük
 
-Bu kategori, kodlama desenleri işlemleri kurgusal bir müşteri adayları bir koşullu dalı misprediction içerir bellek erişimi.
+Bu kodlama desenleri kategorisi, bir dizi ayırma dışı bellek erişimine yol gösteren bir koşullu dal yanlış tahminini içerir.
 
-### <a name="array-out-of-bounds-load-feeding-a-load"></a>Dizi işlemleri yük yük besleme
+### <a name="array-out-of-bounds-load-feeding-a-load"></a>Dizi sınırların dışında yükleme bir yükü beslemeyi
 
-CVE-2017-5753 (sınırları atlama denetlemek) için başlangıçta açıklandığı gibi güvenlik açığı kodlama düzeni bu kodlama modelidir. Bu makalenin arka plan ayrıntılı bu deseni açıklar.
+Bu kodlama stili, ilk olarak CVE-2017-5753 için güvenlik açığı bulunan kodlama deseninin (sınır denetimi atlama) açıklanacaktır. Bu makalenin arka plan bölümünde bu model ayrıntılı olarak açıklanmaktadır.
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -106,7 +106,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-Benzer şekilde, yük, sonlandırma aşan bir döngü ile birlikte oluşabilir bir dizi işlemleri nedeniyle bir misprediction koşul. Bu örnekte, koşullu dalı ilişkili `x < buffer_size` ifade ve yanlış tahmin speculatively gövdesi yürütme `for` ne zaman döngü `x` büyüktür veya eşittir `buffer_size`, bu nedenle imzalanmayarak kurgusal bir işlemleri yükleyin.
+Benzer şekilde, bir dizi sınırların dışında bir yük, yanlış tahmin nedeniyle Sonlandırma koşulunu aşan bir döngüyle birlikte gerçekleşebilir. Bu örnekte, ifadeyle ilişkilendirilen koşullu dal, `x < buffer_size` **`for`** büyük veya eşit olduğunda döngünün gövdesini yanlış tahmin edebilir ve ortaya çıkabilir. bu `x` `buffer_size` nedenle, daha sonra yansımalı olmayan bir yükün oluşmasına neden olur.
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -121,11 +121,11 @@ unsigned char ReadBytes(unsigned char *buffer, unsigned int buffer_size) {
 }
 ```
 
-### <a name="array-out-of-bounds-load-feeding-an-indirect-branch"></a>Dizi işlemleri yük dolaylı bir dal besleme
+### <a name="array-out-of-bounds-load-feeding-an-indirect-branch"></a>Dizi sınırların dışı yükü dolaylı bir dalı besliyor
 
-Bu kodlama düzeni burada koşullu dalı misprediction açabilir. durum içerir. bir işlev işaretçileri sonra hangi müşteri adaylarını dolaylı bir hedef dala yönelik bir dizi için erişim işlemleri işlemleri okundu. Aşağıdaki kod parçacığını bu gösteren bir örnek sağlar.
+Bu kodlama düzeni, koşullu bir dalın yanlış tahmin durumunun bir dizi işlev işaretçisi dizisine neden olabileceği, daha sonra sınırların dışında okunan hedef adrese dolaylı bir dala yol açabilecek bir durum içerir. Aşağıdaki kod parçacığı bunu gösteren bir örnek sağlar.
 
-Bu örnekte, güvenilmeyen ileti tanımlayıcı DispatchMessage sağlanır `untrusted_message_id` parametresi. Varsa `untrusted_message_id` olduğu küçüktür `MAX_MESSAGE_ID`, işlev işaretçileri, bir dizide dizine ve dallanma kullanılırsa karşılık gelen dal hedefi. Bu kod mimari güvenlidir, ancak CPU koşullu bir dal yanlış tahminlerinin, neden `DispatchTable` tarafından dizinlenen `untrusted_message_id` büyüktür veya eşittir, değer olduğunda `MAX_MESSAGE_ID`, bu nedenle önüne bir işlemleri erişim. Bu kurgusal yürütmeyi speculatively yürütülen kod bağlı olarak bilgileri açığa çıkmasına neden olabilir dizinin sınırları ötesinde türetilmiş bir dal hedef adresinden neden olabilir.
+Bu örnekte,, DispatchMessage parametresi aracılığıyla bir güvenilmeyen ileti tanımlayıcısı sağlanır `untrusted_message_id` . `untrusted_message_id`Değerinden küçükse `MAX_MESSAGE_ID` , bir işlev işaretçilerine ve dal dizisine dizin eklemek için kullanılır. Bu kod, güvenli mimari türdedir, ancak CPU koşullu dalı yanlış tahmin eder, `DispatchTable` `untrusted_message_id` değeri değerinden büyük veya buna eşit olduğunda `MAX_MESSAGE_ID` , bu nedenle bir sınır dışı erişime göre dizin oluşturma ile sonuçlanabilir. Bu durum, dizi sınırlarının ötesine türetilmiş bir dal hedefi adresinden oluşan ve yürütülen koda bağlı olarak bilgilerin açığa çıkmasına neden olabilecek bir dal hedef adresinden elde edilen yürütmenin oluşmasına neden olabilir.
 
 ```cpp
 #define MAX_MESSAGE_ID 16
@@ -142,13 +142,13 @@ void DispatchMessage(unsigned int untrusted_message_id, unsigned char *buffer, u
 }
 ```
 
-Bir dizinin işlemleri durum başka bir yük besleme yük bu koşul ayrıca bir misprediction nedeniyle, sonlandırma koşulu aşan bir döngü ile birlikte ortaya çıkabilir.
+Bir dizi sınırların dışında başka bir yük beslemesiyle, bu durum, yanlış tahmin nedeniyle Sonlandırma koşulunu aşan bir döngüyle birlikte da oluşabilir.
 
-### <a name="array-out-of-bounds-store-feeding-an-indirect-branch"></a>Dizi işlemleri depolamak dolaylı bir dal besleme
+### <a name="array-out-of-bounds-store-feeding-an-indirect-branch"></a>Dizi sınırların dışı depo bir dolaylı dalı besliyor
 
-Yük bir dolaylı dal hedefi etkilemek önceki örnekte bir kurgusal nasıl işlemleri gösterilmiştir, ancak aynı zamanda mümkündür bir işlev işaretçisi veya dönüş adresi gibi bir dolaylı dal hedefi değiştirme işlemleri depolayın. Kurgusal yürütmeyi bu büyük olasılıkla bir saldırgan tarafından belirtilen adresten açabilir.
+Önceki örnekte, bir dizi sınır dışı yükün dolaylı bir dal hedefini nasıl etkileyebileceğini gösterdi. Ayrıca, bir dizi dışı deponun, bir işlev işaretçisi veya dönüş adresi gibi bir dolaylı dal hedefini değiştirmesi de mümkündür. Bu, saldırgan tarafından belirtilen adresten yansımalı yürütmeye neden olabilir.
 
-Bu örnekte, güvenilmeyen bir dizin aracılığıyla geçirilen `untrusted_index` parametresi. Varsa `untrusted_index` öğe sayısı'dan küçük `pointers` dizi (256 öğeleri) ve ardından sağlanan işaretçi değeri `ptr` yazılan `pointers` dizisi. Bu kod mimari güvenlidir, ancak CPU koşullu bir dal yanlış tahminlerinin, neden `ptr` yığın tarafından ayrılan sınırlarının ötesine speculatively yazılan `pointers` dizisi. Bu dönüş adresi kurgusal Bozulması neden olabilir `WriteSlot`. Bir saldırganın değerini kontrol edebilirsiniz, `ptr`, rastgele bir kurgusal yürütmeyi neden mümkün olabilir ne zaman adres `WriteSlot` kurgusal yol boyunca döndürür.
+Bu örnekte, güvenilmeyen bir dizin parametresi aracılığıyla geçirilir `untrusted_index` . `untrusted_index` `pointers` Dizi öğesinin (256 öğeleri) öğe sayısından küçükse, içindeki girilen işaretçi değeri `ptr` `pointers` diziye yazılır. Bu kod güvenli mimaridir, ancak CPU koşullu dalı yanlış tahmin eder, `ptr` yığın tarafından ayrılan dizinin sınırlarının ötesinde yansımalı olarak yazılabilir `pointers` . Bu, için dönüş adresinin yansımalı bozulmasına yol açabilir `WriteSlot` . Bir saldırgan değerini denetleyebilse, bu durum, `ptr` rastgele bir adres üzerinde döndüğünde rastgele bir adresten rastgele yürütmeye yol açabilir `WriteSlot` .
 
 ```cpp
 unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
@@ -160,7 +160,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-Benzer şekilde, adlı bir işlev işaretçisi yerel bir değişken, `func` speculatively adresini değiştirmek mümkün olabilir, yığında ayrılan, `func` koşullu dalı misprediction oluştuğunda ifade eder. İşlev işaretçisi aracılığıyla çağrıldığında bir rastgele adresinden kurgusal yürütmeyi sonuçlanabilir.
+Benzer şekilde, bir işlev işaretçisi adlı bir yerel değişken `func` yığında ayrılmışsa, `func` koşullu dal yanlış tahmin gerçekleştiğinde buna başvuran adresi bir şekilde değiştirmek mümkün olabilir. Bu, işlev işaretçisi aracılığıyla çağrıldığında rastgele bir adresten rastgele yürütmeye neden olabilir.
 
 ```cpp
 unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
@@ -174,15 +174,15 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-Bu örneklerin her ikisi kurgusal değişikliği yığın ayırma dolaylı dal işaretçiler içeren unutulmamalıdır. Genel değişkenler, yığın tarafından ayrılan bellek ve hatta salt okunur bellek üzerinde bazı CPU'yu kurgusal değişikliği de meydana gelebilir mümkündür. Yığın tarafından ayrılan bellek, Microsoft C++ derleyici speculatively yığın ayırma dolaylı dal hedefi gibi yerel değişkenler arabellekler için bir güvenlik bitişik yerleştirilir olacak şekilde yeniden sıralayarak değiştirmek daha zor hale getirmek için adımları zaten alır tanımlama bilgisi parçası olarak [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) derleyici güvenlik özelliği.
+Bu örneklerin her ikisinde de yığın tarafından ayrılan dolaylı dal işaretçilerinin yansımalı değişikliğini içeren Not edilmelidir. Genel değişkenler, yığın olarak ayrılan bellek ve hatta bazı CPU 'Larda salt okuma belleği için de yansımalı değişiklik yapılabilir. Yığın tarafından ayrılan bellek için, Microsoft C++ derleyicisi zaten, ara değerli dolaylı dal hedeflerini daha zor hale getirmek için, örneğin, arabelleklerin bir güvenlik tanımlama bilgisine bir, [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) derleyici güvenlik özelliğinin bir parçası olarak yerleştirilmesini sağlar.
 
-## <a name="speculative-type-confusion"></a>Kurgusal türü karışıklığı
+## <a name="speculative-type-confusion"></a>Spectıcı tür karışıklığı
 
-Bu kategori, kurgusal türü karışıklığa ortaya çıkmasına neden veren desenleri kodlama ile ilgilidir. Bu durum, bellek kurgusal yürütme sırasında hatalı bir tür mimari olmayan bir yol kullanılarak erişilen oluşur. Koşullu dalı misprediction hem kurgusal deposu atlama olabilecek bir kurgusal türü karışıklığa neden olabilir.
+Bu kategori, yansımalı bir tür karışıklığına izin veren kodlama desenleriyle ilgilidir. Bu durum, yansımalı yürütme sırasında mimari olmayan bir yol boyunca hatalı bir tür kullanılarak belleğe erişildiğinde meydana gelir. Hem koşullu dal yanlış tahmin hem de yansımalı depo atlama, büyük olasılıkla kurgusal bir tür karışıklığına neden olabilir.
 
-Kurgusal deposu atlama için bu burada bir derleyici birden fazla değişken için yığın konumunu kullanır senaryolarda oluşabilir. Bunun nedeni, mimari türünde bir değişken deposu `A` , böylece yük türü izin vererek atlanmasına `A` değişkeni atanmadan önce speculatively yürütülecek. Daha önce depolanan değişken farklı türde ise, bu kurgusal türü Karışıklığı önlemek için bir koşul oluşturabilirsiniz.
+Yansımalı mağaza atlaması için bu durum, bir derleyicinin birden çok türdeki değişkenler için yığın konumunu yeniden kullandığı senaryolarda oluşabilir. Bunun nedeni, türünde bir değişkenin mimari deposunun `A` atlanabileceği ve bu sayede tür yükünün, `A` değişken atanmadan önce yansımalı olarak yürütülmesine izin verilmesi nedeniyle oluşur. Daha önce depolanan değişken farklı bir tür ise, bu durum, bir yansımalı tür karışıklığına yönelik koşullar oluşturabilir.
 
-Koşullu dalı misprediction için aşağıdaki kod parçacığı tanımlamak için kullanılacak kurgusal türü karışıklık verebilirsiniz farklı koşullar gelmek üzere.
+Koşullu dal yanlış tahmin için aşağıdaki kod parçacığı, yansımalı tür karışıklığına izin verebileceğini belirten farklı koşulları anlatmak için kullanılacaktır.
 
 ```cpp
 enum TypeName {
@@ -234,21 +234,21 @@ unsigned char ProcessType(CBaseType *obj)
 }
 ```
 
-### <a name="speculative-type-confusion-leading-to-an-out-of-bounds-load"></a>Kurgusal türü Karışıklığı önlemek için önde gelen bir yükleme işlemleri
+### <a name="speculative-type-confusion-leading-to-an-out-of-bounds-load"></a>Sınır dışı bir yük için yansımalı tür karışıklık lideri
 
-Bu kodlama düzeni burada kurgusal türü karışıklık sonuçlanabilir çalışması içerir bir işlemleri veya burada yüklenen değer akışları sonraki yük adresi türü yanıltıcı alan erişimi. Bu dizi işlemleri kodlama desenine benzer ancak alternatif yukarıda da gösterildiği gibi sıralı kodlama ile bildirilen. Bu örnekte, bir saldırıyı gerçekleştiren bağlamı yürütülecek victim bağlam neden olabilecek `ProcessType` birden çok kez türünde bir nesne ile `CType1` (`type` alan eşittir `Type1`). Bu, ilk koşullu dalı eğitim etkisi olmayacak `if` deyimini çekildiği tahmin değil. Saldırıyı gerçekleştiren bağlamı daha sonra yürütülecek victim bağlam neden `ProcessType` türünde bir nesne ile `CType2`. İlk koşul dallandırma yaparsanız bu bir kurgusal türü kullanıcılarda kafa karışıklığına neden olabilir `if` ifade yanlış tahminlerinin ve gövdesini yürütür `if` deyimi, bu nedenle türünde bir nesne atama `CType2` için `CType1`. Bu yana `CType2` küçük olduğuna `CType1`, bellek erişimi `CType1::field2` sonucunda bir kurgusal işlemleri, gizli verileri yükler. Bu değer bir yük içinde kullanılır `shared_buffer` hangi oluşturabilirsiniz gözlemlenebilir bir yan etkileri gibi dizi ile örnekte açıklanan önceden işlemleri.
+Bu kodlama stili, kurgusal bir tür karışıklığın, yüklenen değer beslemelerinin sonraki bir yükleme adresi olan bir sınır dışında veya tür karışmış alan erişimine neden olduğu bir durum içerir. Bu dizi sınırların dışında kodlama düzenine benzerdir, ancak yukarıda gösterildiği gibi alternatif bir kodlama sırası aracılığıyla yapılır. Bu örnekte, bir saldırma bağlamı, kurban bağlamının `ProcessType` bir nesne türü `CType1` ( `type` alan eşittir) ile birden çok kez yürütülmesine neden olabilir `Type1` . Bu, ilk deyimin tahmin edilmesi için koşullu dala eğitim etkisine sahip olur **`if`** . Sonra da saldırın bağlamı, kurban bağlamının `ProcessType` türünde bir nesne ile yürütülmesine neden olabilir `CType2` . Bu, ilk deyimin koşullu dalı **`if`** yanlış tahmin eder ve deyim gövdesini çalıştırırsa ve bu **`if`** nedenle türünde bir nesne dönüştürdüğünden, yansımalı bir tür karışıklığına neden olabilir `CType2` `CType1` . `CType2`Öğesinden daha küçük olduğu `CType1` için bellek erişimi gizli olabilecek `CType1::field2` verilerin yansımalı olmayan bir yüküne neden olur. Daha sonra bu değer `shared_buffer` , daha önce açıklandığı gibi dizi sınırların dışında, daha sonra observable yan etkileri oluşturabileceğiniz bir yüklemede kullanılır.
 
-### <a name="speculative-type-confusion-leading-to-an-indirect-branch"></a>Dolaylı bir dala baştaki kurgusal türü karışıklığı
+### <a name="speculative-type-confusion-leading-to-an-indirect-branch"></a>Dolaylı bir dala kurgusal tür karışıklık lideri
 
-Bu kodlama düzeni kurgusal türü karışıklık kurgusal yürütme sırasında güvenli olmayan bir dolaylı dalda burada sonuçlanabilir çalışması içerir. Bu örnekte, bir saldırıyı gerçekleştiren bağlamı yürütülecek victim bağlam neden olabilecek `ProcessType` birden çok kez türünde bir nesne ile `CType2` (`type` alan eşittir `Type2`). Bu ilk koşullu dalı eğitim etkisi olacaktır `if` alınmasını deyimi ve `else if` deyimi değil gerçekleştirilecek. Saldırıyı gerçekleştiren bağlamı daha sonra yürütülecek victim bağlam neden `ProcessType` türünde bir nesne ile `CType1`. İlk koşul dallandırma yaparsanız bu bir kurgusal türü kullanıcılarda kafa karışıklığına neden olabilir `if` deyimi tahmin geçen ve `else if` deyimi değil çekildiği tahmin böylece gövdesi yürütülürken `else if` ve türündebirnesneatama`CType1` için `CType2`. Bu yana `CType2::dispatch_routine` alanı ile çakışıyor `char` dizi `CType1::field1`, bu kurgusal bir dolaylı dalda bir istenmeyen dal hedefine neden olabilir. Saldırıyı gerçekleştiren bağlam bayt değerleri denetleyemeyeceğinizi `CType1::field1` dizi, bunlar olabilir dal hedef adresi denetleyebilirsiniz.
+Bu kodlama stili, yansımalı bir tür karışıklığın, öngörülebilir yürütme sırasında güvenli olmayan bir dolaylı dala neden olduğu bir durum içerir. Bu örnekte, bir saldırma bağlamı, kurban bağlamının `ProcessType` bir nesne türü `CType2` ( `type` alan eşittir) ile birden çok kez yürütülmesine neden olabilir `Type2` . Bu, ilk deyimin alınması için koşullu dala **`if`** ve bu `else if` bildirimin alınmayacak şekilde eğitim etkisine sahip olur. Sonra da saldırın bağlamı, kurban bağlamının `ProcessType` türünde bir nesne ile yürütülmesine neden olabilir `CType1` . Bu, ilk deyimin koşullu dalı **`if`** çekilirken ve `else if` deyim tahmin alınmadığından, bu, ' ın gövdesini yürütülerek `else if` ve türünde bir nesne dönüştürdüğünden, `CType1` Yansımalı bir tür karışıklığına neden olabilir `CType2` . Alan, `CType2::dispatch_routine` dizi ile örtüştüğünden **`char`** `CType1::field1` , bu durum, istenmeyen bir dal hedefine yansımalı bir dolaylı dala neden olabilir. Saldırma bağlamı dizideki bayt değerlerini denetleyebilir, bu, `CType1::field1` dal hedefi adresini denetleyebilir.
 
-## <a name="speculative-uninitialized-use"></a>Kurgusal başlatılmamış kullanın
+## <a name="speculative-uninitialized-use"></a>Kurgusal başlatılmamış kullanım
 
-Bu kategori, kodlama desenleri, kurgusal yürütmeyi burada ve ilk değeri atanmamış bellek erişim sonraki yük ya da dolaylı dal akışa kullanma senaryoları kapsar. Bu kodlama desenleri için açıklardan olacak şekilde bir saldırganın denetlemek ya da atayamayacağına içinde kullanılıyor bağlam tarafından başlatılan olmadan kullanılan bellek içeriğini etkilemek olması gerekir.
+Bu kodlama desenleri kategorisi, speculatıcı yürütmenin başlatılmamış belleğe erişebileceği ve sonraki bir yük ya da dolaylı dalı akışa almak için kullanabileceği senaryolar içerir. Bu kodlama desenlerinin yararlanması için bir saldırganın, ' de kullanılmakta olan bağlamı tarafından başlatılmadan kullanılan bellek içeriğini denetleyebilmesi veya anlamlı bir şekilde etkilemesini sağlaması gerekir.
 
-### <a name="speculative-uninitialized-use-leading-to-an-out-of-bounds-load"></a>Kurgusal başlatılmamış kullanmak için önde gelen bir yükleme işlemleri
+### <a name="speculative-uninitialized-use-leading-to-an-out-of-bounds-load"></a>Bir sınır dışı yüklemeye önde gelen başlatılmamış kullanım
 
-Kurgusal bir başlatılmamış kullanmak olası açabilir bir işlemleri bir saldırgan tarafından denetlenen değerini kullanarak yükleyin. Değerini aşağıdaki örnekte `index` atanan `trusted_index` mimari yazmalar ve `trusted_index` ya da eşit olduğu varsayılır `buffer_size`. Ancak, derleyici tarafından üretilen kod bağlı olarak, bir kurgusal deposu atlama yükü sağlayan oluşabilir mümkündür `buffer[index]` ve atama için önceden yürütmek için bağımlı ifadeler `index`. Bu meydana gelirse, başlatılmamış bir değer `index` uzaklık olarak kullanılacak `buffer` işlemleri hassas bilgileri okuyun ve bu bağımlı yükünü yan kanalımızdan üzerinden iletmek bir saldırgan sağlayabilir `shared_buffer` .
+Beklenmeyen bir başlatılmamış kullanım, bir saldırgan denetimli değeri kullanılarak bir sınır dışı yüklemeye neden olabilir. Aşağıdaki örnekte, değeri `index` `trusted_index` Tüm mimari yollarda atanır ve değerinden `trusted_index` küçük veya buna eşit olduğu varsayılır `buffer_size` . Ancak, derleyici tarafından üretilen koda bağlı olarak, yük, `buffer[index]` ve bağımlı deyimlere atamanın önüne yürütülmesine izin veren bir yansımalı depo atlama meydana gelebilir `index` . Bu durum oluşursa, için başlatılmamış bir değer, `index` `buffer` bir saldırganın hassas bilgileri sınırların dışına okumasını ve bunu bağımlı bir kanaldan bir yan kanal aracılığıyla bunu sağlayabileceği konum olarak kullanılacaktır `shared_buffer` .
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -269,9 +269,9 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-### <a name="speculative-uninitialized-use-leading-to-an-indirect-branch"></a>Dolaylı bir dala baştaki kurgusal başlatılmamış kullanın
+### <a name="speculative-uninitialized-use-leading-to-an-indirect-branch"></a>Bir dolaylı dala kurgusal kullanım lideri başlatılmadı
 
-Kurgusal bir başlatılmamış kullanın, burada dal hedefi bir saldırgan tarafından denetlenir dolaylı bir dala potansiyel olarak açabilir. Aşağıdaki örnekte `routine` ya da atanan `DefaultMessageRoutine1` veya `DefaultMessageRoutine` değerine göre `mode`. Mimari yola göre bu sonuçlanır `routine` önüne dolaylı dal her zaman başlatılmış. Derleyici tarafından üretilen kod bağlı olarak, bir kurgusal deposu atlama aracılığıyla dolaylı dal izin veren ancak oluşabilir `routine` speculatively atamaya önüne yürütülecek `routine`. Bu meydana gelirse, bir saldırganın saldırgan etkilemek veya başlatılmamış değerini kontrol varsayılarak bir rastgele adresinden speculatively yürütülecek mümkün olabilir `routine`.
+Kurgusal bir başlatılmamış kullanım, dal hedefinin bir saldırgan tarafından denetlendiği dolaylı bir dala neden olabilir. Aşağıdaki örnekte, `routine` `DefaultMessageRoutine1` `DefaultMessageRoutine` değerine bağlı olarak ya da değerine göre atanır `mode` . Mimari yolda, bu, `routine` dolaylı daldan önce her zaman başlatılmış olur. Ancak, derleyici tarafından üretilen koda bağlı olarak, dolaylı `routine` dalın ' a atamanın önüne yürütülmesine izin veren bir yansımalı mağaza geçişi meydana gelebilir `routine` . Bu durum oluşursa, saldırgan rastgele bir adresten ayrılabilir ve bu da saldırganın başlatılmamış değerini etkileyebileceğini veya denetleyebilmesini kabul edebilir `routine` .
 
 ```cpp
 #define MAX_MESSAGE_ID 16
@@ -302,19 +302,19 @@ void DispatchMessage(unsigned int untrusted_message_id, unsigned char *buffer, u
 
 ## <a name="mitigation-options"></a>Risk azaltma seçenekleri
 
-Kurgusal yürütme yan kanal güvenlik açıklarına kaynak koduna değişiklikleri yaparak azaltılabilir. Bu değişiklikleri ekleyerek gibi belirli bir güvenlik açığı örneklerini Azaltıcı ekleyebileceği bir *Spekülasyon engeli*, veya hassas bilgilerin erişilemez kurgusal sağlamak için bir uygulama tasarımını değişiklikler yaparak yürütme.
+Kaynak kodda değişiklik yapılarak, yansımalı yürütme tarafı kanal güvenlik açıkları azaltılabilir. Bu değişiklikler, bir açığa *çıkarma engeli*ekleyerek ya da bir uygulamanın tasarımında değişiklik yaparak, bir güvenlik açığı oluşturarak ya da gizli bilgilerin yansımalı yürütmeye erişilememesi için değişiklikler yaparak bir güvenlik açığının belirli örneklerini azaltmaya yönelik olabilir.
 
-### <a name="speculation-barrier-via-manual-instrumentation"></a>Spekülasyon engeli aracılığıyla el ile izleme
+### <a name="speculation-barrier-via-manual-instrumentation"></a>El ile izleme yoluyla yansımalı engel
 
-A *Spekülasyon engeli* mimari olmayan yol ilerlemesini kurgusal yürütmeyi önlemek için bir geliştirici tarafından el ile girilebilir. Örneğin, bir geliştirici bir Spekülasyon engeli tehlikeli bir kodlama düzeni önce bir koşullu blok, blok başına (sonra koşullu bir dal) ya da gövdesi ekleyebilirsiniz veya bir sorun ilk yüklenmesinden önce. Bu, bir koşullu dalı misprediction tehlikeli kod yürütme seri hale getirme mimari olmayan bir yola yürütülmesini engeller. Spekülasyon engeli dizisi, aşağıdaki tabloda açıklandığı gibi donanım mimarisi tarafından farklıdır:
+Yansımalı yürütmenin mimari olmayan bir yol üzerinde devam etmelerini engellemek için bir geliştirici tarafından bir *Yansımalı engel* el ile eklenebilir. Örneğin, bir geliştirici, bir koşullu blok gövdesinde, bloğun başlangıcında (koşullu daldan sonra) veya sorun olan ilk yükün önünde bir, tehlikeli kodlama düzeninden önce bir yansımalı engel ekleyebilir. Bu, bir koşullu dalın yanlış tahmin çalışmasının, yürütmeyi serileştirerek mimari olmayan bir yoldaki tehlikeli kodu yürütmesini engeller. Aşağıdaki tabloda açıklandığı gibi, speculasyon engel sırası donanım mimarisine göre farklılık gösterir:
 
-|Mimari|CVE-2017-5753 için iç Spekülasyon engeli|CVE-2018-3639 için iç Spekülasyon engeli|
+|Mimari|CVE-2017-5753 için speculasyon engel iç|CVE-2018-3639 için speculasyon engel iç|
 |----------------|----------------|----------------|
-|x86/x64|_mm_lfence()|_mm_lfence()|
-|ARM|şu anda kullanılamıyor|__dsb(0)|
-|ARM64|şu anda kullanılamıyor|__dsb(0)|
+|x86/x64|_mm_lfence ()|_mm_lfence ()|
+|ARM|Şu anda kullanılamıyor|__dsb (0)|
+|ARM64|Şu anda kullanılamıyor|__dsb (0)|
 
-Örneğin, aşağıdaki kod desenini kullanarak azaltılabilir `_mm_lfence` aşağıda gösterildiği gibi iç.
+Örneğin, aşağıdaki kod deseninin, `_mm_lfence` aşağıda gösterildiği gibi iç kullanılarak azaltılabilir.
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -329,15 +329,15 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-### <a name="speculation-barrier-via-compiler-time-instrumentation"></a>Spekülasyon engeli aracılığıyla derleme zamanı izleme
+### <a name="speculation-barrier-via-compiler-time-instrumentation"></a>Derleyici zamanı izleme aracılığıyla yansımalı engel
 
-Microsoft C++ derleyici Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) için destek içerir `/Qspectre` otomatik olarak bir Spekülasyon engeli sınırlı sayıda savunmasız kodlama desenleri için ekleyen bir anahtar ile ilgili CVE-2017-5753. Belgelerine [/qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. Bu bayrak tüm savunmasız kodlama desenleri kapsamaz ve bu nedenle geliştiriciler üzerinde bu sınıf, güvenlik açığı için kapsamlı bir risk azaltma olarak doğrulamamalısınız unutulmaması önemlidir.
+Visual Studio 2017 ' de Microsoft C++ derleyicisi (sürüm 15.5.5 ile başlayan), `/Qspectre` CVE-2017-5753 ile ilgili sınırlı olabilecek çok sayıda kodlama desenlerine yönelik bir otomatik olarak bir otomatik olarak bir otomatik olarak bir otomatik olarak belirtilen engel ekler. [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağının belgeleri, etkileri ve kullanımı hakkında daha fazla bilgi sağlar. Bu bayrağın, güvenlik açığı bulunan tüm kodlama düzenlerini kapsamadığını ve bu tür geliştiricilerin bu güvenlik açığına yönelik kapsamlı bir azaltma olarak bu şekilde güvenmediğine dikkat edin.
 
-### <a name="masking-array-indices"></a>Dizi dizinleri maskeleme
+### <a name="masking-array-indices"></a>Dizi dizinlerini maskeleme
 
-Burada bir kurgusal'ı işlemleri yük durumlarda oluşabilir dizi dizini kesin hem de mimari ve mimari olmayan yolunda dizi dizini açıkça bağlı mantıksal ekleyerek sınırlanmış. Bir dizi ikinin üssü için uygun bir boyut için ayrılabilir, örneğin, ardından basit maskesi tanıtılabilir. Bu olduğu varsayılır, aşağıdaki örnekte gösterilmiştir `buffer_size` ikinin üssü için hizalanır. Bu sağlar `untrusted_index` olduğundan her zaman küçüktür `buffer_size`bile koşullu dalı misprediction gerçekleşir ve `untrusted_index` değerinden büyük veya ona eşit bir değeri geçirildi `buffer_size`.
+Belirlenen sınırların dışında bir yükün gerçekleşebileceği durumlarda, dizi dizinini açıkça bağlamak için mantık eklenerek, dizi dizini hem mimari hem de mimari olmayan yol üzerinde kesin bir şekilde bağlanabilir. Örneğin, bir dizi iki kuvvetle hizalanmış bir boyuta ayrılabileceği takdirde, basit bir maske tanıtıabilir. Bu, ikisinin gücüne hizalanmış olduğu varsayıldığı örnekte gösterilmiştir `buffer_size` . Bu, `untrusted_index` `buffer_size` koşullu dal yanlış tahmin gerçekleşirse ve ' `untrusted_index` den büyük veya buna eşit bir değer ile geçirilse bile, her zaman daha küçük olmasını sağlar `buffer_size` .
 
-Burada gerçekleştirilen dizin maskeleme kurgusal deposu atlama derleyici tarafından oluşturulan kodu bağlı olarak tabi olabilir, bu unutulmamalıdır.
+Burada gerçekleştirilen dizin maskelemenin, derleyici tarafından oluşturulan koda bağlı olarak, kurgusal depo geçişine tabi olduğunu not edilmelidir.
 
 ```cpp
 // A pointer to a shared memory region of size 1MB (256 * 4096)
@@ -352,11 +352,11 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 }
 ```
 
-### <a name="removing-sensitive-information-from-memory"></a>Hassas bilgileri bellekten kaldırılıyor
+### <a name="removing-sensitive-information-from-memory"></a>Hassas bilgileri bellekten kaldırma
 
-Kurgusal yürütme yan kanal güvenlik açıklarına azaltmak için kullanılabilecek başka bir teknik, hassas bilgileri bellekten kaldırmaktır. Yazılım geliştiricileri kurgusal yürütme sırasında hassas bilgileri erişilebilir değil, kendi uygulama yeniden fırsatları bakabilirsiniz. Bu hassas bilgileri ayrı işlemlerde yalıtmak için bir uygulama tasarımını Düzenleyicisi tarafından gerçekleştirilebilir. Örneğin, bir web tarayıcı uygulaması ayrı işlemlerde, bu nedenle bir işlem kurgusal yürütmeyi çıkış noktaları arası verilerine erişebilir olmasını önleyen içine her web kaynağı ile ilişkili verileri yalıtmak deneyebilirsiniz.
+Öngörülebilir yürütme tarafı kanalının güvenlik açıklarını azaltmak için kullanılabilecek başka bir teknik ise hassas bilgileri bellekten kaldırmalıdır. Yazılım geliştiricileri, gizli bilgilere, öngörülebilir yürütme sırasında erişilemeyecek şekilde, uygulamasını yeniden düzenleme fırsatlarına bakabilirler. Bu, hassas bilgileri ayrı işlemlere yalıtmak için bir uygulamanın tasarımını yeniden düzenleyerek gerçekleştirilebilir. Örneğin, bir Web tarayıcı uygulaması her bir Web kaynağıyla ilişkili verileri ayrı işlemlere ayırmaya çalışabilir ve bu sayede bir işlemin, öngörülebilir yürütme aracılığıyla çıkış kaynaklı verilere erişmesini önler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kurgusal yürütme yan kanal güvenlik açıklarını azaltmaya yönelik kılavuz](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)<br/>
-[Kurgusal yürütme yan kanal donanım güvenlik açıkları azaltma](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)
+[Yansımalı yürütme yan kanallı güvenlik açıklarını azaltmaya yönelik kılavuz](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002)<br/>
+[Kurgusal yürütme tarafı kanal donanımı güvenlik açıklarını Azaltıcı](https://blogs.technet.microsoft.com/srd/2018/03/15/mitigating-speculative-execution-side-channel-hardware-vulnerabilities/)

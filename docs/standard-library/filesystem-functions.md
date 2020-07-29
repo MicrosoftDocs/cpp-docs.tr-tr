@@ -84,16 +84,16 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.openlocfilehash: 1e5994faab69c1809f820b41186d9b618aa7c193
-ms.sourcegitcommit: d2ccbba1bf4e66d6b6b0582dc01ba39f4a54f0aa
+ms.openlocfilehash: c637c4893a13df577fd6c083c8a4f2380c9c4cad
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82984090"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219163"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi &gt; işlevleri
 
-[ \< Dosya sistemi>](../standard-library/filesystem.md) üst bilgisindeki Bu ücretsiz işlevler, yollar, dosyalar, symbağlantılar, dizinler ve birimlerde işlemleri değiştirerek ve sorgular. Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md).
+Başlıktaki bu ücretsiz işlevler, [\<filesystem>](../standard-library/filesystem.md) yollar, dosyalar, symbağlantılar, dizinler ve birimlerde işlemleri değiştirerek ve sorgular. Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md).
 
 ## <a name="absolute"></a><a name="absolute"></a>salt
 
@@ -131,7 +131,7 @@ path canonical(const path& pval, const path& base, error_code& ec);
 
 İşlevlerin hepsi, mutlak bir yol adı oluşturur `pabs = absolute(pval, base)` (veya `pabs = absolute(pval)` Base parametresi olmayan aşırı yükleme için), ardından aşağıdaki adım dizisinde onu kurallı bir biçime küçültün:
 
-1. `X`True olan her yol bileşeni `is_symlink(X)` , **true** ile değiştirilmiştir `read_symlink(X)` .
+1. Tarafından değiştirildiği her yol bileşeni `X` `is_symlink(X)` **`true`** `read_symlink(X)` .
 
 1. Her yol bileşeni `.` (nokta, önceki yol bileşenleri tarafından belirlenen geçerli dizindir) kaldırılır.
 
@@ -217,7 +217,7 @@ Tüm işlevler muhtemelen ' den ' a ' *dan* ' *a kadar olan* dosyayı *opts*, `c
 
 Aksi takdirde, `!exists(to) || opts & copy_options::overwrite_existing || opts & copy_options::update_existing&& last_write_time(to) < last_write_time(from) || !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options:update_existing))` , ' *den* *dosyasına*içeriğini ve özniteliklerini dosyasına kopyalamayı deneyin. Kopyalama girişimi başarısız olursa hata olarak bildirin.
 
-Kopyalama denendiğinde ve başarılı olursa işlevler **true** , değilse **false**döndürür.
+**`true`** Kopyalama denendiğinde ve başarılı olursa işlevler döndürülür; Aksi takdirde **`false`** .
 
 ## <a name="copy_symlink"></a><a name="copy_symlink"></a>copy_symlink
 
@@ -235,7 +235,7 @@ bool create_directories(const path& pval);
 bool create_directories(const path& pval, error_code& ec) noexcept;
 ```
 
-B c gibi bir yol adı \/ için \/ , işlev gerektiği şekilde a ve \/ b dizinini oluşturur, böylece Dizin bir \/ b c 'yi gerektiği şekilde oluşturabilir \/ . Yalnızca aslında *Pval*dizinini oluşturduğunda **true** değerini döndürür.
+B c gibi bir yol adı \/ için \/ , işlev gerektiği şekilde a ve \/ b dizinini oluşturur, böylece Dizin bir \/ b c 'yi gerektiği şekilde oluşturabilir \/ . **`true`** Yalnızca aslında *Pval*dizinini oluşturduğunda döndürülür.
 
 ## <a name="create_directory"></a><a name="create_directory"></a>create_directory
 
@@ -304,7 +304,7 @@ bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-İşlevler yalnızca *sol* ve *sağ* aynı dosya sistemi varlığını seçtiğinizde **true değerini** döndürür.
+İşlevler **`true`** yalnızca *sol* ve *sağ* aynı dosya sistemi varlığını seçtiğinizde döndürülür.
 
 ## <a name="exists"></a><a name="exists"></a>bulunur
 
@@ -486,7 +486,7 @@ bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-İşlevler yalnızca ve dosya başarıyla kaldırılmışsa **true değerini** döndürür `exists(symlink_status(pval))` . Bir oluşturmaksızın, seçtiği dosya değil, kendisi tarafından kaldırılır.
+İşlevler **`true`** yalnızca `exists(symlink_status(pval))` ve dosya başarıyla kaldırılırsa döndürülür. Bir oluşturmaksızın, seçtiği dosya değil, kendisi tarafından kaldırılır.
 
 ## <a name="remove_all"></a><a name="remove_all"></a>remove_all
 

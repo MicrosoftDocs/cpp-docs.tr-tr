@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Zc:noexceptTypes
 - -Zc:noexceptTypes
 ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
-ms.openlocfilehash: 0f833209938ccc09cbc37235788b6f719d4d12d4
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: 09817372e818a05c389a083aac5f04e03b1ab0e1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84506877"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218955"
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/Zc:noexceptTypes (C++17 noexcept kuralları)
 
-C++ 17 standardı, `throw()` için bir diğer ad yapar `noexcept` , `throw(` *`type-list`* `)` ve kaldırır `throw(...)` ve belirli türlerin dahil etmesine izin verir `noexcept` . Bu değişiklik, C++ 14 veya daha önceki bir sürümü ile uyumlu koddaki kaynak uyumluluk sorunlarına neden olabilir. **`/Zc:noexceptTypes`** Seçeneği c++ 17 standardına uygunluğu belirler. **`/Zc:noexceptTypes-`** kod C++ 17 modunda derlendiğinde C++ 14 ve önceki bir davranışına izin verir.
+C++ 17 standardı, `throw()` için bir diğer ad yapar **`noexcept`** , `throw(` *`type-list`* `)` ve kaldırır `throw(...)` ve belirli türlerin dahil etmesine izin verir **`noexcept`** . Bu değişiklik, C++ 14 veya daha önceki bir sürümü ile uyumlu koddaki kaynak uyumluluk sorunlarına neden olabilir. **`/Zc:noexceptTypes`** Seçeneği c++ 17 standardına uygunluğu belirler. **`/Zc:noexceptTypes-`** kod C++ 17 modunda derlendiğinde C++ 14 ve önceki bir davranışına izin verir.
 
 ## <a name="syntax"></a>Sözdizimi
 

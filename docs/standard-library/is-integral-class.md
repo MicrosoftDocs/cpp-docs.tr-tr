@@ -7,18 +7,18 @@ helpviewer_keywords:
 - is_integral class
 - is_integral
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397
-ms.openlocfilehash: a367bb06f49dd2c9c64f0c257a3573add5645efe
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a3d618b77d69f5d80736ac20304c9184c5963b25
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456248"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217772"
 ---
-# <a name="isintegral-class"></a>is_integral Sınıfı
+# <a name="is_integral-class"></a>is_integral Sınıfı
 
 Tür integral ise sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -32,9 +32,9 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri integral türlerden biri veya `cv-qualified` integral türlerinden birinin bir formu *ise tür* koşulu örneği true, aksi takdirde false barındırır.
+Tür değeri integral türlerden biri veya integral türlerinden birinin bir formu *ise tür* koşulu örneği true, `cv-qualified` Aksi takdirde false barındırır.
 
-İntegral türü **bool**, **char**, **işaretsiz karakter**, **imzalanmış char**, **wchar_t**, **Short**, **işaretsiz Short**, **int**, **işaretsiz int**, **Long**ve **işaretsiz Long**'dan biridir. Ayrıca, bunları sağlayan derleyiciler ile, bir integral türü **uzun uzun**, **imzasız uzun uzun**, **__int64**ve **işaretsiz __int64**olabilir.
+İntegral türü,,,, **`bool`** , **`char`** **`unsigned char`** **`signed char`** **`wchar_t`** **`short`** , **`unsigned short`** , **`int`** , **`unsigned int`** , **`long`** , ve **`unsigned long`** ' den biridir. Ayrıca, bunları sağlayan derleyiciler ile, bir integral türü,,, **`long long`** **`unsigned long long`** **`__int64`** ve **işaretsiz __int64**olabilir.
 
 ## <a name="example"></a>Örnek
 
@@ -70,12 +70,12 @@ is_integral<float> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [is_enum sınıfı](../standard-library/is-enum-class.md)\
-[is_floating_point Sınıfı](../standard-library/is-floating-point-class.md)
+[is_floating_point sınıfı](../standard-library/is-floating-point-class.md)

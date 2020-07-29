@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::basic_filebuf [C++], uflow
 - std::basic_filebuf [C++], underflow
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
-ms.openlocfilehash: ae1b6b9460ec58aec319196e3c116bd29c3e80e4
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 7dc244cde3d77ad99add1c35716779a55eac9263
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737514"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219319"
 ---
 # <a name="basic_filebuf-class"></a>basic_filebuf Sınıfı
 
@@ -71,7 +71,7 @@ Dosya arabelleğinin temel öğesinin nitelikleri (genellikle `char_traits<Char_
 Sınıf şablonu, *Char_T*türünde öğelerin aktarımını denetleyen bir akış arabelleği tanımlar. Bu, karakter nitelikleri, bir dış dosyada depolanan öğelerin dizisine ve sonuna *kadar, karakter*nitelikleri belirler.
 
 > [!NOTE]
-> Türündeki nesneler, tür `basic_filebuf` __ \* __ `char_type` parametresi tarafından belirtilen *Char_T*bağımsız olarak char türünde bir iç arabellekle oluşturulur. Bu, bir Unicode dizesinin ( **wchar_t** karakter içeren), iç arabelleğe yazılmadan önce bir ANSI dizesine ( **char** karakterleri içeren) dönüştürülemeyeceği anlamına gelir. Arabellekte Unicode dizeleri depolamak için **wchar_t** türünde yeni bir arabellek oluşturun ve yöntemi kullanarak ayarlayın [`basic_streambuf::pubsetbuf`](../standard-library/basic-streambuf-class.md#pubsetbuf) `()` . Bu davranışı gösteren bir örnek görmek için aşağıya bakın.
+> Türündeki nesneler, tür `basic_filebuf` __ \* __ `char_type` parametresi tarafından belirtilen *Char_T*bağımsız olarak char türünde bir iç arabellekle oluşturulur. Bu, bir Unicode dizesinin (karakter içeren **`wchar_t`** ), **`char`** iç arabelleğe yazılmadan önce bir ANSI dizesine (karakterler içeren) dönüştürülemeyeceği anlamına gelir. Arabellekte Unicode dizeleri depolamak için, yeni bir ara bellek oluşturun **`wchar_t`** ve yöntemi kullanarak ayarlayın [`basic_streambuf::pubsetbuf`](../standard-library/basic-streambuf-class.md#pubsetbuf) `()` . Bu davranışı gösteren bir örnek görmek için aşağıya bakın.
 
 Sınıfının bir nesnesi `basic_filebuf<Char_T, Tr>` , bir `FILE` Açık dosyayla ilişkili akışı denetleyen nesneyi atayan bir dosya işaretçisi depolar. Ayrıca, korumalı üye işlevleri [taşması](#overflow) ve [yetersiz kalması](#underflow)tarafından kullanılmak üzere iki dosya dönüştürme modellerinin işaretçilerini depolar. Daha fazla bilgi için bkz. [`basic_filebuf::open`](#open).
 
@@ -216,7 +216,7 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
 |-|-|
 |[~eksik](#close)|Bir dosyayı kapatır.|
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını gösterir.|
-|[open](#open)|Bir dosya açar.|
+|[açın](#open)|Bir dosya açar.|
 |[taşma](#overflow)|Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.|
 |[pbackfail](#pbackfail)|Korumalı sanal üye işlevi, giriş akışına bir öğe geri döndürmeye çalışır ve sonra geçerli öğe (sonraki işaretçinin gösterdiği) yapar.|
 |[seekoff](#seekoff)|Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.|
@@ -271,9 +271,9 @@ Dosya işaretçisi null işaretçisiyse üye işlevi null bir işaretçi döndü
 
 ### <a name="remarks"></a>Açıklamalar
 
-`close`çağırır `fclose(fp)` . Bu işlev sıfır dışında bir değer döndürürse, işlev null bir işaretçi döndürür. Aksi takdirde, dosyanın başarıyla kapatıldığını göstermek için **bunu** döndürür.
+`close`çağırır `fclose(fp)` . Bu işlev sıfır dışında bir değer döndürürse, işlev null bir işaretçi döndürür. Aksi takdirde, **`this`** dosyanın başarıyla kapatıldığını göstermek için döndürür.
 
-Geniş bir akış için, akışın açıldığı veya son çağrısından bu yana herhangi bir ekleme gerçekleştiyse, `streampos` işlev çağırır [`overflow`](#overflow) . Ayrıca, gerektiğinde çağırmak için dosya dönüştürme modeli kullanılarak, ilk dönüştürme durumunu geri yüklemek için gereken herhangi bir diziyi de ekler `fac` `fac.unshift` . Char türünde oluşturulan her öğe, `byte` **char** `fp` form art arda gelen çağrılar tarafından gösterildiği gibi, dosya işaretçisi tarafından belirtilen ilişkili akışa yazılır `fputc(byte, fp)` . `fac.unshift`Veya yazma çağrısı başarısız olursa, işlev başarılı olmaz.
+Geniş bir akış için, akışın açıldığı veya son çağrısından bu yana herhangi bir ekleme gerçekleştiyse, `streampos` işlev çağırır [`overflow`](#overflow) . Ayrıca, gerektiğinde çağırmak için dosya dönüştürme modeli kullanılarak, ilk dönüştürme durumunu geri yüklemek için gereken herhangi bir diziyi de ekler `fac` `fac.unshift` . Türünde oluşturulan her öğe, `byte` **`char`** Dosya işaretçisi tarafından belirlenen ilişkili akışa, `fp` form art arda yapılan çağrılar ile yazılır `fputc(byte, fp)` . `fac.unshift`Veya yazma çağrısı başarısız olursa, işlev başarılı olmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -342,7 +342,7 @@ bool is_open() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dosya işaretçisi null değilse **true** .
+**`true`** Dosya işaretçisi null değilse.
 
 ### <a name="example"></a>Örnek
 
@@ -413,7 +413,7 @@ Varsayılan dosya açma koruması, [_fsopen _wfsopen](../c-runtime-library/refer
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arabellek zaten açıksa veya dosya işaretçisi null işaretçisiyse, işlev null bir işaretçi döndürür. Aksi takdirde, bunu **döndürür.**
+Arabellek zaten açıksa veya dosya işaretçisi null işaretçisiyse, işlev null bir işaretçi döndürür. Aksi takdirde, döndürür **`this`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -510,7 +510,7 @@ Korumalı sanal üye işlevi, giriş arabelleğine bir öğe koyar ve sonra bunu
 
 - İşlev bir konum kullanılabilir hale getirmek `putback` için bu işlemi yapabilir, sonraki işaretçiyi o konuma işaret etmek için ayarlayabilir ve `ch` Bu konumda saklayın.
 
-- İşlev, giriş akışına bir öğe geri gönderebiliyorsanız, örneğin `ungetc` **char**türünde bir öğe çağırarak, bunu yapabilirsiniz.
+- İşlev, giriş akışına bir öğe geri gönderebiliyorsanız, türü gibi bir öğe çağırarak, bu işlemi yapabilir `ungetc` **`char`** .
 
 ## <a name="basic_filebufpos_type"></a><a name="pos_type"></a>basic_filebuf::p os_type
 
@@ -582,7 +582,7 @@ Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları 
 
 Hem okuma hem de yazma için açılmış bir dosya için hem giriş hem de çıkış akışları birlikte konumlandırılır. Ekleme ve ayıklama arasında geçiş yapmak için ya da ' i çağırmanız gerekir [`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff) [`pubseekpos`](../standard-library/basic-streambuf-class.md#pubseekpos) . `pubseekoff`(Ve için) çağrılarının `seekoff` metin akışları, ikili akışlar ve geniş akışlar için çeşitli sınırlamaları vardır.
 
-Geniş bir akış için, akışın açıldığı veya son çağrısından bu yana herhangi bir ekleme gerçekleştiyse, `streampos` işlev [taşma](#overflow)işlevini çağırır. Ayrıca, gerektiğinde çağırmak için dosya dönüştürme modeli kullanılarak, ilk dönüştürme durumunu geri yüklemek için gereken herhangi bir diziyi de ekler `fac` `fac.unshift` . Char türünde oluşturulan her öğe, `byte` **char** `fp` form art arda gelen çağrılar tarafından gösterildiği gibi, dosya işaretçisi tarafından belirtilen ilişkili akışa yazılır `fputc(byte, fp)` . `fac.unshift`Veya yazma çağrısı başarısız olursa, işlev başarılı olmaz.
+Geniş bir akış için, akışın açıldığı veya son çağrısından bu yana herhangi bir ekleme gerçekleştiyse, `streampos` işlev [taşma](#overflow)işlevini çağırır. Ayrıca, gerektiğinde çağırmak için dosya dönüştürme modeli kullanılarak, ilk dönüştürme durumunu geri yüklemek için gereken herhangi bir diziyi de ekler `fac` `fac.unshift` . Türünde oluşturulan her öğe, `byte` **`char`** Dosya işaretçisi tarafından belirlenen ilişkili akışa, `fp` form art arda yapılan çağrılar ile yazılır `fputc(byte, fp)` . `fac.unshift`Veya yazma çağrısı başarısız olursa, işlev başarılı olmaz.
 
 ## <a name="basic_filebufsetbuf"></a><a name="setbuf"></a>basic_filebuf:: setarabelleğe
 
@@ -608,7 +608,7 @@ Korumalı üye işlevi, dosya işaretçisi `fp` null işaretçisiyse sıfır dö
 
 ### <a name="remarks"></a>Açıklamalar
 
-`setbuf``setvbuf( fp, (char*) _Buffer, _IOFBF, count * sizeof( Char_T))` `count` akış için bir arabellek olarak *_buffer* başlayarak öğe dizisini sunmaya yönelik çağrılar. Bu işlev sıfır dışında bir değer döndürürse, işlev null bir işaretçi döndürür. Aksi takdirde **, bunu başarılı olarak bildirmek için döndürür** .
+`setbuf``setvbuf( fp, (char*) _Buffer, _IOFBF, count * sizeof( Char_T))` `count` akış için bir arabellek olarak *_buffer* başlayarak öğe dizisini sunmaya yönelik çağrılar. Bu işlev sıfır dışında bir değer döndürürse, işlev null bir işaretçi döndürür. Aksi takdirde, sinyal başarı ' ya döner **`this`** .
 
 ## <a name="basic_filebufswap"></a><a name="swap"></a>basic_filebuf:: swap
 
@@ -661,7 +661,7 @@ Korumalı sanal üye işlevi, giriş akışından geçerli öğeyi çıkarmaya �
 
 - Bir okuma konumu varsa, `ch` okuma konumunda depolanan öğesi olarak alır ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
-- Bu, formun birbirini izleyen çağrılarında olduğu gibi **char**türünde bir veya daha fazla öğeyi okuyabilir `fgetc(fp)` ve `ch` `Char_T` `fac` gerektiğinde çağırmak için dosya dönüştürme modeli kullanarak bunları türünde bir öğeye dönüştürebilir `fac.in` . Herhangi bir okuma veya dönüştürme başarısız olursa, işlev başarılı olmaz.
+- Bu, **`char`** formun birbirini izleyen çağrılarında olduğu gibi, türünde bir veya daha fazla öğeyi okuyabilir `fgetc(fp)` ve `ch` `Char_T` `fac` gereken şekilde çağırmak için dosya dönüştürme modeli kullanarak bunları türünde bir öğeye dönüştürebilir `fac.in` . Herhangi bir okuma veya dönüştürme başarısız olursa, işlev başarılı olmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

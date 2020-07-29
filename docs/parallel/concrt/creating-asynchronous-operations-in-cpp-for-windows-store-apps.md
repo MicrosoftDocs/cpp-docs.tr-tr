@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: a12900f3145f0dde797fe56c893442e1632cc01c
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 0361da761b9b05e75233711df9e826c15aa14e28
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404518"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213937"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ ' da zaman uyumsuz Işlemler oluşturma
 
@@ -29,7 +29,7 @@ Zaman uyumsuz programlama kullanımı, uygulamaların kullanıcı girişine yan�
 
 - İç zaman uyumsuz işlemlerin iptal edilmesine olanak tanımak için iptal belirteçlerini kullanın.
 
-- İşlevin davranışı, `create_async` kendisine geçirilen çalışma işlevinin dönüş türüne bağlıdır. Bir görevi döndüren ( `task<T>` veya `task<void>` ) zaman uyumlu olarak çağıran bağlamda çalışan bir çalışma işlevi `create_async` . Rastgele bir bağlamda döndüren veya çalıştırılan bir iş işlevi `T` `void` .
+- İşlevin davranışı, `create_async` kendisine geçirilen çalışma işlevinin dönüş türüne bağlıdır. Bir görevi döndüren ( `task<T>` veya `task<void>` ) zaman uyumlu olarak çağıran bağlamda çalışan bir çalışma işlevi `create_async` . Rastgele bir bağlamda döndüren veya çalıştırılan bir iş işlevi `T` **`void`** .
 
 - Daha sonra çalışan bir görev zinciri oluşturmak için [concurrency:: task:: then](reference/task-class.md#then) yöntemini kullanabilirsiniz. UWP uygulamasında, bir görevin devamlılıkları için varsayılan bağlam, bu görevin nasıl oluşturulduğuna bağlıdır. Görev, görev oluşturucusuna zaman uyumsuz bir eylem geçirilerek veya zaman uyumsuz bir eylem döndüren bir lambda ifadesi geçirerek oluşturulduysa, bu görevin tüm devamlılıkları için varsayılan bağlam geçerli bağlamdır. Görev zaman uyumsuz bir eylemden oluşturulmuşsa, varsayılan olarak görevin devamlılıkları için rastgele bir bağlam kullanılır. Varsayılan bağlamı [concurrency:: task_continuation_context](../../parallel/concrt/reference/task-continuation-context-class.md) sınıfıyla geçersiz kılabilirsiniz.
 
@@ -63,7 +63,7 @@ Bir sonuç döndüren zaman uyumsuz bir işlemi temsil eder.
 [Windows:: Foundation:: IAsyncOperationWithProgress\<TResult, TProgress>](/uwp/api/windows.foundation.iasyncoperationwithprogress-2)<br/>
 Bir sonuç döndüren ve raporların ilerlemesini veren zaman uyumsuz bir işlemi temsil eder.
 
-Bir *eylemin* kavramı, zaman uyumsuz görevin bir değer üretmeyeceği anlamına gelir (döndüren bir işlevi düşünün `void` ). Bir *işlemin* kavramı, zaman uyumsuz görevin bir değer üretmesi anlamına gelir. *İlerleme* kavramı, görevin işlem iletilerini çağırana bildirebileceği anlamına gelir. JavaScript, .NET Framework ve Visual C++ her biri, ABı sınırında kullanılmak üzere bu arabirimlerin örneklerini oluşturmak için kendi yolunu sağlar. Visual C++ için PPL [eşzamanlılık:: create_async](reference/concurrency-namespace-functions.md#create_async) işlevi sağlar. Bu işlev, bir görevin tamamlandığını temsil eden Windows Çalışma Zamanı zaman uyumsuz bir eylem veya işlem oluşturur. `create_async`İşlev bir iş işlevi (genellikle bir lambda ifadesi) alır, dahili olarak bir `task` nesne oluşturur ve bu görevi dört zaman uyumsuz Windows çalışma zamanı arabirimlerinden birine kaydırır.
+Bir *eylemin* kavramı, zaman uyumsuz görevin bir değer üretmeyeceği anlamına gelir (döndüren bir işlevi düşünün **`void`** ). Bir *işlemin* kavramı, zaman uyumsuz görevin bir değer üretmesi anlamına gelir. *İlerleme* kavramı, görevin işlem iletilerini çağırana bildirebileceği anlamına gelir. JavaScript, .NET Framework ve Visual C++ her biri, ABı sınırında kullanılmak üzere bu arabirimlerin örneklerini oluşturmak için kendi yolunu sağlar. Visual C++ için PPL [eşzamanlılık:: create_async](reference/concurrency-namespace-functions.md#create_async) işlevi sağlar. Bu işlev, bir görevin tamamlandığını temsil eden Windows Çalışma Zamanı zaman uyumsuz bir eylem veya işlem oluşturur. `create_async`İşlev bir iş işlevi (genellikle bir lambda ifadesi) alır, dahili olarak bir `task` nesne oluşturur ve bu görevi dört zaman uyumsuz Windows çalışma zamanı arabirimlerinden birine kaydırır.
 
 > [!NOTE]
 > `create_async`Yalnızca başka bir dilden veya başka bir Windows çalışma zamanı bileşeninden erişilebilen işlevsellik oluşturmanız gerektiğinde kullanın. `task`İşlemin hem işlem hem de aynı bileşendeki C++ kodu tarafından tüketildiğini bildiğiniz zaman doğrudan sınıfını kullanın.
@@ -79,8 +79,8 @@ Aşağıdaki tabloda, uygulamanızda zaman uyumsuz işlemleri tanımlamak için 
 
 |Bu Windows Çalışma Zamanı arabirimini oluşturmak için|Bu türü buradan döndür`create_async`|Örtük bir iptal belirteci kullanmak için bu parametre türlerini iş işlevinize geçirin|Açık bir iptal belirteci kullanmak için bu parametre türlerini iş işlevinize geçirin|
 |----------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-|`IAsyncAction`|`void` veya `task<void>`|(yok)|(`cancellation_token`)|
-|`IAsyncActionWithProgress<TProgress>`|`void` veya `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
+|`IAsyncAction`|**`void`** veya`task<void>`|(yok)|(`cancellation_token`)|
+|`IAsyncActionWithProgress<TProgress>`|**`void`** veya`task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 |`IAsyncOperation<TResult>`|`T` veya `task<T>`|(yok)|(`cancellation_token`)|
 |`IAsyncActionOperationWithProgress<TProgress, TProgress>`|`T` veya `task<T>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 
@@ -92,7 +92,7 @@ Aşağıdaki örnek, `IAsyncAction` başka bir Windows çalışma zamanı bileş
 
 ## <a name="example-creating-a-c-windows-runtime-component-and-consuming-it-from-c"></a><a name="example-component"></a>Örnek: C++ Windows Çalışma Zamanı bileşeni oluşturma ve C 'den kullanma\#
 
-İşlem yoğunluklu işlemleri gerçekleştirmek için UI ve C++ Windows Çalışma Zamanı bileşeni tanımlamak üzere XAML ve C# kullanan bir uygulamayı düşünün. Bu örnekte, C++ bileşeni belirli bir aralıktaki hangi sayıların asal olduğunu hesaplar. Dört Windows Çalışma Zamanı zaman uyumsuz görev arabirimleri arasındaki farkları göstermek için, Visual Studio 'da, **boş bir çözüm** oluşturup dosyayı adlandırarak başlatın `Primes` . Ardından **Windows çalışma zamanı bileşen** projesi çözümüne ekleyin ve bunu yeniden adlandırın `PrimesLibrary` . Oluşturulan C++ üst bilgi dosyasına aşağıdaki kodu ekleyin (Bu örnek, bu örnekte Class1. h 'yi, Primes. h olarak yeniden adlandırır). Her `public` Yöntem dört zaman uyumsuz arabirimden birini tanımlar. Bir değer döndüren yöntemler bir [Windows:: Foundation:: Collections:: IVector \<int> ](/uwp/api/windows.foundation.collections.ivector-1) nesnesi döndürür. İlerlemeyi rapor eden yöntemler, `double` tamamlanan genel çalışmanın yüzdesini tanımlayan değerler üretir.
+İşlem yoğunluklu işlemleri gerçekleştirmek için UI ve C++ Windows Çalışma Zamanı bileşeni tanımlamak üzere XAML ve C# kullanan bir uygulamayı düşünün. Bu örnekte, C++ bileşeni belirli bir aralıktaki hangi sayıların asal olduğunu hesaplar. Dört Windows Çalışma Zamanı zaman uyumsuz görev arabirimleri arasındaki farkları göstermek için, Visual Studio 'da, **boş bir çözüm** oluşturup dosyayı adlandırarak başlatın `Primes` . Ardından **Windows çalışma zamanı bileşen** projesi çözümüne ekleyin ve bunu yeniden adlandırın `PrimesLibrary` . Oluşturulan C++ üst bilgi dosyasına aşağıdaki kodu ekleyin (Bu örnek, bu örnekte Class1. h 'yi, Primes. h olarak yeniden adlandırır). Her **`public`** Yöntem dört zaman uyumsuz arabirimden birini tanımlar. Bir değer döndüren yöntemler bir [Windows:: Foundation:: Collections:: IVector \<int> ](/uwp/api/windows.foundation.collections.ivector-1) nesnesi döndürür. İlerlemeyi rapor eden yöntemler, **`double`** tamamlanan genel çalışmanın yüzdesini tanımlayan değerler üretir.
 
 [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]
 
@@ -169,7 +169,7 @@ Aşağıdaki yöntem bildirimlerini `MainPage` sınıfına ekleyin (MainPage. h)
 
 [!code-cpp[concrt-windowsstore-commonwords#3](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_8.h)]
 
-Aşağıdaki `using` deyimlerini MainPage. cpp öğesine ekleyin.
+Aşağıdaki **`using`** deyimlerini MainPage. cpp öğesine ekleyin.
 
 [!code-cpp[concrt-windowsstore-commonwords#4](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_9.cpp)]
 

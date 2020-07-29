@@ -7,20 +7,20 @@ helpviewer_keywords:
 - cvtsi2ss instruction
 - _mm_cvtsi64x_ss intrinsic
 ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f
-ms.openlocfilehash: 0e9bacc56f212e804467d1c6e0159a1749235976
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: a8227fcb482267946ea7ba08ee352c43e1ac6f6e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217459"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218006"
 ---
 # <a name="_mm_cvtsi64x_ss"></a>_mm_cvtsi64x_ss
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Convert 64 bit tamsayının x64 genişletilmiş sürümünü skaler tek duyarlıklı kayan noktalı değer (`cvtsi2ss`) yönergesine üretir.
+Convert 64 bit tamsayının x64 genişletilmiş sürümünü skaler tek duyarlıklı kayan noktalı değer ( `cvtsi2ss` ) yönergesine üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 __m128 _mm_cvtsi64x_ss(
@@ -32,26 +32,26 @@ __m128 _mm_cvtsi64x_ss(
 ### <a name="parameters"></a>Parametreler
 
 *a*\
-'ndaki Dört `__m128` tek duyarlıklı kayan nokta değeri içeren bir yapı.
+'ndaki **`__m128`** Dört tek duyarlıklı kayan nokta değeri içeren bir yapı.
 
 *kenarı*\
 'ndaki Kayan noktalı değere dönüştürülecek 64 bitlik bir tamsayı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-İlk `__m128` kayan nokta değeri, dönüştürmenin sonucu olan bir yapı. Diğer üç değer *bir*' dan değiştirilmeden kopyalanır.
+**`__m128`** İlk kayan nokta değeri, dönüştürmenin sonucu olan bir yapı. Diğer üç değer *bir*' dan değiştirilmeden kopyalanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`_mm_cvtsi64x_ss`|X64|
+|`_mm_cvtsi64x_ss`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yapı bir XMM kaydını temsil ettiğinden, iç değer b değerinin sistem belleğinden bir XMM kaydına taşınmasına izin verir. `__m128`
+**`__m128`** Yapı BIR XMM kaydını temsil ettiğinden, iç değer *b* değerinin sistem belleğinden bir XMM kaydına taşınmasına izin verir.
 
 Bu yordam yalnızca iç öğe olarak kullanılabilir.
 

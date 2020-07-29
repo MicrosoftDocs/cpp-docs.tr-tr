@@ -6,12 +6,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: d4ec3036a5c4d42d9d98e91f628416b75e596d12
-ms.sourcegitcommit: 3f91111c0350c0237fddb82766c290307f20e659
+ms.openlocfilehash: 56719f6919b9329e74c947bc74053562d7743215
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83630455"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213950"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluğu tablosu
 
@@ -26,12 +26,12 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 
 |  |  |
 |--|--|
-| __C++ 03/11 çekirdek dil özellikleri__ | __Destek__ |
+| __C++ 03/11 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;Diğer her şey | VS 2015 <sup> [A](#note_A)</sup> |
 | &nbsp;&nbsp;İki aşamalı ad arama | VS 2017 15,7 <sup> [B](#note_B)</sup> |
 | &nbsp;&nbsp;[`N2634 Expression SFINAE`](https://wg21.link/N2634) | VS 2017 15,7 |
 | &nbsp;&nbsp;[`N1653 C99 preprocessor`](https://wg21.link/N1653) | Kısmi <sup> [C](#note_C)</sup> |
-| __C++ 14 çekirdek dil özellikleri__ | __Destek__ |
+| __C++ 14 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`N3323 Tweaked wording for contextual conversions`](https://wg21.link/N3323) | VS 2013 |
 | &nbsp;&nbsp;[`N3472 Binary literals`](https://wg21.link/N3472) | VS 2015 |
 | &nbsp;&nbsp;[`N3638 auto and decltype(auto) return types`](https://wg21.link/n3638) | VS 2015 |
@@ -43,7 +43,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`N3651 Variable templates`](https://wg21.link/n3651) | VS 2015,2 |
 | &nbsp;&nbsp;[`N3652 Extended constexpr`](https://wg21.link/n3652) | VS 2017 15,0 |
 | &nbsp;&nbsp;[`N3653 Default member initializers for aggregates`](https://wg21.link/n3653) | VS 2017 15,0 |
-| __C++ 17 çekirdek dil özellikleri__ | __Destek__ |
+| __C++ 17 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`N4086 Removing trigraphs`](https://wg21.link/n4086) | VS 2010 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`N3922 New rules for auto with braced-init-lists`](https://wg21.link/n3922) | VS 2015 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`N4051 typename in template template-parameters`](https://wg21.link/n4051) | VS 2015 <sup> [14](#note_14)</sup> |
@@ -84,7 +84,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0145R3 Refining expression evaluation order`](https://wg21.link/p0145r3)<br/>&nbsp;&nbsp;[`P0400R0 Order of evaluation of function arguments`](https://wg21.link/p0400r0) | VS 2017 15,7 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0195R2 Pack expansions in using-declarations`](https://wg21.link/p0195r2) | VS 2017 15,7 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0283R2 Ignoring unrecognized attributes`](https://wg21.link/p0283r2) | VS 2015 <sup> [14](#note_14)</sup> |
-| __C++ 17 çekirdek dil özellikleri (hata raporları)__ | __Destek__ |
+| __C++ 17 çekirdek dil özellikleri (hata raporları)__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`P0702R1 Fixing class template argument deduction for initializer-list ctors`](https://wg21.link/p0702r1) | VS 2017 15,7 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0961R1 Relaxing the structured bindings customization point finding rules`](https://wg21.link/p0961r1) | VS 2019 16,0 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0969R0 Allowing structured bindings to accessible members`](https://wg21.link/p0969r0) | VS 2019 16,0 <sup> [17](#note_17)</sup> |
@@ -96,7 +96,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0859R0 CWG 1581: When are constexpr member functions defined`](https://wg21.link/p0859r0) | Hayır |
 | &nbsp;&nbsp;[`P1009R2 Array size deduction in new-expressions`](https://wg21.link/P1009R2) | Hayır |
 | &nbsp;&nbsp;[`P1286R2 Contra CWG DR1778`](https://wg21.link/P1286R2) | Hayır |
-| __C++ 20 çekirdek dil özellikleri__ | __Destek__ |
+| __C++ 20 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`P0704R1 Fixing const lvalue ref-qualified pointers to members`](https://wg21.link/p0704r1) | VS 2015 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P1041R4 Make char16_t/char32_t string literals be UTF-16/32`](https://wg21.link/P1041R4) | VS 2015 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P1330R0 Changing the active member of a union inside constexpr`](https://wg21.link/P1330R0) | VS 2017 15,0 <sup> [14](#note_14)</sup> |
@@ -183,7 +183,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 
 |  |  |
 |--|--|
-| __C++ 20 Standart Kitaplık Özellikleri__ | __Destek__ |
+| __C++ 20 Standart Kitaplık Özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`P0809R0 Comparing Unordered Containers`](https://wg21.link/p0809r0) | VS 2010 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P0858R0 Constexpr Iterator Requirements`](https://wg21.link/p0858r0) | VS 2017 15,3 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0777R1 Avoiding Unnecessary Decay`](https://wg21.link/p0777r1) | VS 2017 15,7 <sup> [14](#note_14)</sup> |
@@ -263,7 +263,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1023R0 constexpr For std::array Comparisons`](https://wg21.link/P1023R0) | Hayır |
 | &nbsp;&nbsp;[`P1032R1 Miscellaneous constexpr`](https://wg21.link/P1032R1) | Hayır |
 | &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | Hayır |
-| __C++ 17 standart kitaplığı özellikleri__ | __Destek__ |
+| __C++ 17 standart kitaplığı özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`LWG 2221 Formatted output operator for nullptr`](https://cplusplus.github.io/LWG/issue2221) | VS 2019 16,1 |
 | &nbsp;&nbsp;[`N3911 void_t`](https://wg21.link/n3911) | VS 2015 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`N4089 Safe Conversions In unique_ptr<T[]>`](https://wg21.link/n4089) | VS 2015 <sup> [14](#note_14)</sup> |
@@ -346,7 +346,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0607R0 Inline Variables for the Standard Library`](https://wg21.link/p0607r0) | VS 2017 15,5 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0618R0 Deprecating <codecvt>`](https://wg21.link/p0618r0) | VS 2017 15,5 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0682R1 Repairing Elementary String Conversions`](https://wg21.link/P0682R1) | VS 2015 15,7 <sup> [17](#note_17)</sup> |
-| __C++ 14 standart kitaplık özellikleri__ | __Destek__ |
+| __C++ 14 standart kitaplık özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`N3462 SFINAE-Friendly result_of`](https://wg21.link/n3462) | VS 2015,2 |
 | &nbsp;&nbsp;[`N3302 constexpr For <complex>`](https://wg21.link/n3302) | VS 2015 |
 | &nbsp;&nbsp;[`N3469 constexpr For <chrono>`](https://wg21.link/n3469) | VS 2015 |
@@ -397,7 +397,7 @@ __VS 2019 16,6__ , Visual Studio 2019 sürüm 16,6 ' te desteklenen özellikleri
 
 ### <a name="notes"></a>Notlar
 
-<a name="note_A"></a>__Bir__ [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) modunda, dinamik özel durum belirtimleri uygulanmayan olarak kalır ve `throw()` için de bir eş anlamlı olarak değerlendirilir `__declspec(nothrow)` . C++ 17 ' de, dinamik özel durum belirtimleri büyük ölçüde P0003R5 tarafından kaldırılmıştır, bir vestige bırakarak bir: `throw()` kullanım dışı ve için bir eş anlamlı olarak davranması gerekir `noexcept` . [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)Modunda, MSVC artık, `throw()` Bu, `noexcept` diğer bir deyişle, sonlandırma aracılığıyla zorlama ile aynı davranışı vererek standart 'ye uyar.
+<a name="note_A"></a>__Bir__ [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) modunda, dinamik özel durum belirtimleri uygulanmayan olarak kalır ve `throw()` için de bir eş anlamlı olarak değerlendirilir `__declspec(nothrow)` . C++ 17 ' de, dinamik özel durum belirtimleri büyük ölçüde P0003R5 tarafından kaldırılmıştır, bir vestige bırakarak bir: `throw()` kullanım dışı ve için bir eş anlamlı olarak davranması gerekir **`noexcept`** . [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)Modunda, MSVC artık, `throw()` Bu, **`noexcept`** diğer bir deyişle, sonlandırma aracılığıyla zorlama ile aynı davranışı vererek standart 'ye uyar.
 
 Derleyici seçeneği [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.md) eski davranışımızı ister `__declspec(nothrow)` . Bu `throw()` , c++ 20 ' de kaldırılacak. Standart ve uygulamamız içindeki bu değişikliklere yanıt olarak kod geçirmeye yardımcı olmak için, ve altında özel durum belirtimi sorunlarıyla ilgili yeni derleyici uyarıları eklenmiştir [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) [`/permissive-`](../build/reference/permissive-standards-conformance.md) .
 
@@ -407,7 +407,7 @@ Derleyici seçeneği [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.m
 
 <a name="note_D"></a>__D__ , gizlenecek [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) bir uyarı ile altında desteklenir [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md) .
 
-<a name="note_E"></a>__Bu,__ bir önceki sürümle uyumsuz olan, `std::experimental` oluşturmaksızın desteği, hata düzeltmeleri ve standart-gerekli davranıştaki değişiklikler için gerekli hale getirilen yeni bir uygulama. Şu anda dosya sistemi> de dahil olmak üzere, \< New `std::filesystem` ve Previous `std::experimental::filesystem` ve \< deneysel/FileSystem> dahil olmak üzere yalnızca eski deneysel uygulamayı sağlar. Deneysel uygulama, kitaplıkların sonraki ABı-kırılımı sürümünde KALDıRıLACAK.
+<a name="note_E"></a>__Bu,__ bir önceki sürümle uyumsuz olan, `std::experimental` oluşturmaksızın desteği, hata düzeltmeleri ve standart-gerekli davranıştaki değişiklikler için gerekli hale getirilen yeni bir uygulama. Şu anda, dahil \<filesystem> Yeni `std::filesystem` ve önceki `std::experimental::filesystem` ve dahil olmak üzere \<experimental/filesystem> yalnızca eski deneysel uygulamayı sağlar. Deneysel uygulama, kitaplıkların sonraki ABı-kırılımı sürümünde KALDıRıLACAK.
 
 <a name="note_G"></a>Bir derleyici iç tarafından desteklenen __G__ .
 

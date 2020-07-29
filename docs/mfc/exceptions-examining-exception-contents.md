@@ -9,16 +9,16 @@ helpviewer_keywords:
 - try-catch exception handling [MFC], exception contents
 - throwing exceptions [MFC], exception contents
 ms.assetid: dfda4782-b969-4f60-b867-cc204ea7f33a
-ms.openlocfilehash: 8554dda2f465aa058cea3d257c22ec38bc6e2c18
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7500db2a29f9d4ccef37b9265f5f2968c2d07993
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625897"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217954"
 ---
 # <a name="exceptions-examining-exception-contents"></a>Özel Durumlar: Özel Durum İçeriklerini İnceleme
 
-Bir **catch** bloğunun bağımsız değişkeni neredeyse herhangi bir veri türünde olabilir, ancak MFC işlevleri sınıfından türetilen türlerin özel durumlarını atar `CException` . Bir MFC işlevi tarafından oluşturulan bir özel durumu yakalamak için, bağımsız değişkeni bir nesne **catch** işaretçisi `CException` (veya gibi öğesinden türetilmiş bir nesne) olan bir catch bloğu yazarsınız `CException` `CMemoryException` . Özel durumun tam türüne bağlı olarak, özel durumun özel nedeni hakkında bilgi toplamak için özel durum nesnesinin veri üyelerini inceleyebilirsiniz.
+Bir **`catch`** bloğun bağımsız değişkeni neredeyse herhangi bir veri türünde olabilir, ancak MFC işlevleri sınıfından türetilen türlerin özel durumlarını atar `CException` . Bir MFC işlevi tarafından oluşturulan bir özel durumu yakalamak için, **`catch`** bağımsız değişkeni bir `CException` nesne işaretçisi (veya gibi öğesinden türetilmiş bir nesne) olan bir blok yazarsınız `CException` `CMemoryException` . Özel durumun tam türüne bağlı olarak, özel durumun özel nedeni hakkında bilgi toplamak için özel durum nesnesinin veri üyelerini inceleyebilirsiniz.
 
 Örneğin, türü, `CFileException` `m_cause` dosya özel durumunun nedenini belirten bir numaralandırılmış tür içeren veri üyesine sahiptir. Olası dönüş değerlerine bazı örnekler `CFileException::fileNotFound` ve ' dir `CFileException::readOnly` .
 

@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4291
 ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
-ms.openlocfilehash: c1972236e30be4e6ca738b606b00398f5c7860e0
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e45856702eef7f24595d10b81f39047d8f9a08b2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754861"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221009"
 ---
 # <a name="compiler-warning-level-1-c4291"></a>Derleyici Uyarısı (düzey 1) C4291
 
-'declaration' : eşleşen operatör silme bulunamadı; başlatma bir özel durum atarsa bellek serbest bırakılmaz
+' declaration ': eşleşen bir işleç silme bulunamadı; başlatma bir özel durum oluşturursa bellek boşaltılmaz
 
-Yerleşim [silme](../../cpp/delete-operator-cpp.md)nin olmadığı [yeni](../../cpp/new-operator-cpp.md) bir yerleşim kullanılır.
+Yerleştirme [silme](../../cpp/delete-operator-cpp.md)işlemi olmayan [Yeni](../../cpp/new-operator-cpp.md) bir yerleştirme kullanılır.
 
-Bellek işleç **yeni**olan bir nesne için tahsis edildiğinde, nesnenin oluşturucusu çağrılır. Oluşturucu bir özel durum atarsa, nesne için ayrılan herhangi bir bellek ayrılmalıdır. İşleç **yeni** **silmek** işlevi yoksa bu gerçekleşemez.
+İşleci olan bir nesne için bellek ayrıldığında **`new`** , nesnenin Oluşturucusu çağırılır. Oluşturucu bir özel durum oluşturursa, nesne için ayrılan tüm bellek serbest bırakılmalıdır. Bu işleç ile eşleşen bir operatör işlevi yoksa, bu işlem gerçekleştirilemez **`delete`** **`new`** .
 
-İşleciyi herhangi bir ekstra bağımsız değişken olmadan **yeni** kullanır ve özel durum işlemeyi etkinleştirmek için [/GX](../../build/reference/gx-enable-exception-handling.md), [/EHs](../../build/reference/eh-exception-handling-model.md), veya /EHa seçenekleriyle derlerseniz, derleyici, oluşturucu bir özel durum atarsa operatör **silme** çağrısı yapmak için kod oluşturur.
+İşlecini **`new`** özel bir bağımsız değişken olmadan kullanırsanız ve [/GX](../../build/reference/gx-enable-exception-handling.md), [/EHS](../../build/reference/eh-exception-handling-model.md)veya/EHa seçenekleriyle derlerseniz, **`delete`** Oluşturucu bir özel durum oluşturursa, derleyici işleci çağırmak için kod üretir.
 
-**Yeni** işlecinin yerleşim biçimini (ayırmanın boyutuna ek olarak bağımsız değişkenli form) kullanırsanız ve nesnenin oluşturucusu bir özel durum atarsa, derleyici yine de işleç **silme**çağrısı için kod oluşturur; ancak bunu yalnızca, belleği ayıran **yeni** işleç yenisinin yerleşim formuyla eşleşen bir işleç **silme** yerleşim formu varsa bunu yapar. Örneğin:
+İşlecin yerleştirme formunu **`new`** (ayırmanın boyutuna ek olarak bağımsız değişkenlerle birlikte) kullanıyorsanız ve nesnenin Oluşturucusu bir özel durum oluşturursa, derleyici işleci çağırmak için kod oluşturur **`delete`** ; ancak yalnızca **`delete`** , belleği ayrılan işlecin yerleştirme formuyla eşleşen bir operatör yerleştirme formu varsa bunu olur **`new`** . Örnek:
 
 ```cpp
 // C4291.cpp
@@ -74,7 +74,7 @@ int main(void)
 }
 ```
 
-Yukarıdaki örnek, **işleç** **silme** nin yerleşim formu yeni işlecinin yerleşim formuyla eşleşen tanımlanmadığından C4291 uyarısı oluşturur. Sorunu çözmek **için, ana**kodun üzerine ekleyin. Aşırı yüklenilen işleci **silme** işlevi parametrelerinin ilk parametre hariç, aşırı yüklenen **new**işleciyeninin parametreleri ile eşleştirildiğine dikkat edin.
+Yukarıdaki örnek, **`delete`** işleç yerleştirme formu ile eşleşen hiçbir yerleştirme biçimi tanımlanmadığı için uyarı C4291 oluşturur **`new`** . Sorunu çözmek için, **Main**'in üzerine aşağıdaki kodu ekleyin. Tüm aşırı yüklenmiş işleç **`delete`** işlevi parametrelerinin **`new`** , ilk parametre hariç, aşırı yüklenmiş işleçle eşleştiğinden emin olun.
 
 ```cpp
 void operator delete(void* pMem, char* pszFilename, int nLine)

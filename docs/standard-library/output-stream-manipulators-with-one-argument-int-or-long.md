@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams, int or long argument manipulators
 ms.assetid: 338f3164-b5e2-4c5a-a605-7d9dc3629ca1
-ms.openlocfilehash: 93e4de25323514eb4105814b565dc3ddc3fbb737
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 203797eef95e3dab0c079e35baefcea99c3b966d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453003"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217668"
 ---
 # <a name="output-stream-manipulators-with-one-argument-int-or-long"></a>Bir Bağımsız Değişkenli Çıkış Akışı Manipülatörleri (int veya long)
 
-İostream sınıf kitaplığı, parametreli düzenlemeler oluşturmaya yönelik bir makro kümesi sağlar. Tek bir **int** veya **Long** bağımsız değişkenine sahip olan düzenlemeler özel bir durumdur. Tek bir **int** veya **Long** bağımsız değişkenini (gibi `setw`) kabul eden bir çıkış akışı oluşturma işlemi oluşturmak için, \<iomanıp > tanımlanmış olan _smanıp makrosunu kullanmanız gerekir. Bu örnek, akışa `fillblank` belirtilen sayıda boşluk ekleyen bir işleici tanımlar:
+İostream sınıf kitaplığı, parametreli düzenlemeler oluşturmaya yönelik bir makro kümesi sağlar. Tek **`int`** veya bağımsız değişkenine sahip olan düzenlemeler **`long`** özel bir durumdur. Tek veya bağımsız değişken (gibi) kabul eden bir çıkış akışı oluşturma işlemi oluşturmak için **`int`** **`long`** `setw` , içinde tanımlanan _Smanip makrosunu kullanmanız gerekir \<iomanip> . Bu örnek `fillblank` , akışa belirtilen sayıda boşluk ekleyen bir işleici tanımlar:
 
 ## <a name="example"></a>Örnek
 
@@ -48,4 +48,4 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız Değişkenlerle Birlikte Özel Manipülatörler](../standard-library/custom-manipulators-with-arguments.md)
+[Bağımsız değişkenlerle özel Işleicileri](../standard-library/custom-manipulators-with-arguments.md)

@@ -124,12 +124,12 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: 160e5b6d8eb4b45850dc071299413d9ad2cfcee9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6182d66b49647758bf17ab160d536e39b97b8c0f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212075"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216485"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 
@@ -152,8 +152,8 @@ class CDynamicAccessor : public CAccessorBase
 |||
 |-|-|
 |[AddBindEntry](#addbindentry)|Varsayılan erişimciyi geçersiz kılarken çıkış sütunlarına bir bağlama girişi ekler.|
-|[CDynamicAccessor](#cdynamicaccessor)|`CDynamicAccessor` nesnesini başlatır ve başlatır.|
-|[~Eksik](#close)|Tüm sütunların bağlantısını kaldırır, ayrılan belleği serbest bırakır ve sınıfında [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) arabirim işaretçisini yayınlar.|
+|[CDynamicAccessor](#cdynamicaccessor)|Nesneyi örnekleyen ve başlatır `CDynamicAccessor` .|
+|[Kapat](#close)|Tüm sütunların bağlantısını kaldırır, ayrılan belleği serbest bırakır ve sınıfında [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) arabirim işaretçisini yayınlar.|
 |[GetBlobHandling](#getblobhandling)|Geçerli satır için BLOB işleme değerini alır.|
 |[GetBlobSizeLimit](#getblobsizelimit)|En büyük BLOB boyutunu bayt cinsinden alır.|
 |[GetBookmark](#getbookmark)|Geçerli satırın yer işaretini alır.|
@@ -174,7 +174,7 @@ class CDynamicAccessor : public CAccessorBase
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sütun adları, sütun sayısı, veri türü vb. gibi sütun bilgilerini almak için `CDynamicAccessor` yöntemler kullanın. Daha sonra bu sütun bilgisini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız.
+Sütun `CDynamicAccessor` adları, sütun sayısı, veri türü vb. gibi sütun bilgilerini elde etmek için yöntemleri kullanın. Daha sonra bu sütun bilgisini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız.
 
 Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md)kullanarak arabellekteki verileri alın.
 
@@ -184,7 +184,7 @@ Bir tartışma ve dinamik erişimci sınıflarını kullanma örnekleri için bk
 
 Çıkış sütunlarına bir bağlama girişi ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
@@ -193,7 +193,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
 #### <a name="parameters"></a>Parametreler
 
 *bilgisine*<br/>
-'ndaki Sütun bilgilerini içeren `DBCOLUMNINFO` yapısı. *OLE DB Programcı başvurusunda* [IColumnsInfo:: GETCOLUMNıNFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) IÇINDE "DBCOLUMNINFO yapýlarý" başlığına bakın.
+'ndaki `DBCOLUMNINFO`Sütun bilgilerini içeren bir yapı. *OLE DB Programcı başvurusunda* [IColumnsInfo:: GETCOLUMNıNFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) IÇINDE "DBCOLUMNINFO yapýlarý" başlığına bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -201,13 +201,13 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDynamicAccessor` ile oluşturulan varsayılan erişimciyi geçersiz kılarken bu yöntemi kullanın (bkz. [verileri nasıl alabilirim?](../../data/oledb/fetching-data.md)).
+İle oluşturulan varsayılan erişimciyi geçersiz kılarken bu yöntemi kullanın `CDynamicAccessor` (bkz. [verileri nasıl alabilirim?](../../data/oledb/fetching-data.md)).
 
 ## <a name="cdynamicaccessorcdynamicaccessor"></a><a name="cdynamicaccessor"></a>CDynamicAccessor:: CDynamicAccessor
 
-`CDynamicAccessor` nesnesini başlatır ve başlatır.
+Nesneyi örnekleyen ve başlatır `CDynamicAccessor` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
@@ -224,9 +224,9 @@ En büyük BLOB boyutu bayt cinsinden; Bu değer üzerindeki sütun verileri bir
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDynamicAccessor` nesnesini başlatmak için oluşturucuyu kullanırsanız, blob 'Ları nasıl bağlayacağınız belirtebilirsiniz. Blob 'Lar, grafikler, ses veya derlenmiş kod gibi ikili veriler içerebilir. Varsayılan davranış, sütunları 8.000 bayttan fazla BLOB olarak değerlendirmek ve bunları bir `ISequentialStream` nesnesine bağlamayı denemedir. Ancak, BLOB boyutu olacak şekilde farklı bir değer belirtebilirsiniz.
+Nesneyi başlatmak için oluşturucuyu kullanırsanız `CDynamicAccessor` , blob 'ları nasıl bağlayacağınız belirtebilirsiniz. Blob 'Lar, grafikler, ses veya derlenmiş kod gibi ikili veriler içerebilir. Varsayılan davranış, sütunları 8.000 bayttan fazla BLOB olarak değerlendirmek ve bunları bir nesneye bağlamayı denemedir `ISequentialStream` . Ancak, BLOB boyutu olacak şekilde farklı bir değer belirtebilirsiniz.
 
-Ayrıca, `CDynamicAccessor` BLOB verileri olarak niteleyen sütun verilerini nasıl işleyeceğini belirtebilirsiniz: BLOB verilerini varsayılan şekilde işleyebilir; BLOB verilerini atlayabilir (bağlanamaz). ya da, BLOB verilerini sağlayıcıya ayrılan belleğe bağlayabilir.
+Blob verileri `CDynamicAccessor` olarak niteleyen sütun verilerini nasıl işleyeceğinizi de belirtebilirsiniz: blob verilerini varsayılan şekilde işleyebilir; blob verilerini atlayabilir (bağlamaz) veya blob verilerini sağlayıcıya ayrılan belleğe bağlayabilir.
 
 ## <a name="cdynamicaccessorclose"></a><a name="close"></a>CDynamicAccessor:: Close
 
@@ -270,7 +270,7 @@ const DBLENGTH GetBlobSizeLimit() const;
 
 Geçerli satırın yer işaretini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetBookmark(CBookmark< >* pBookmark) const throw();
@@ -287,7 +287,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir yer işaretini almak için `DBPROP_IRowsetLocate` VARIANT_TRUE ayarlamanız gerekir.
+`DBPROP_IRowsetLocate`Bir yer işaretini almak için VARIANT_TRUE olarak ayarlamanız gerekir.
 
 ## <a name="cdynamicaccessorgetcolumncount"></a><a name="getcolumncount"></a>CDynamicAccessor:: GetColumnCount
 
@@ -307,7 +307,7 @@ Alınan sütun sayısı.
 
 Sütun özelliklerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetColumnFlags(DBORDINAL nColumn,
@@ -324,7 +324,7 @@ dışı Sütun özelliklerini açıklayan bir bit maskesi işaretçisi. *OLE DB 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sütun özellikleri başarıyla alınırsa **true** değerini döndürür. Aksi takdirde, **false**döndürür.
+**`true`** Sütun özelliklerinin başarıyla alınıp alınmadığını döndürür. Aksi takdirde, döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -334,7 +334,7 @@ Sütun numarası bir öğesinden uzaklığa göre belirlenir. Sıfır sütunu ö
 
 Çoğu tüketiciden gereken sütun meta verilerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetColumnInfo(IRowset* pRowset,
@@ -352,7 +352,7 @@ HRESULT GetColumnInfo(IRowset* pRowset,
 dışı Satır kümesindeki sütun sayısının döndürüleceği bir bellek işaretçisi; Bu sayı, varsa yer işareti sütununu içerir.
 
 *Ppcolumnınfo*<br/>
-dışı Bir dizi `DBCOLUMNINFO` yapının döndürüleceği bir bellek işaretçisi. *OLE DB Programcı başvurusunda* [IColumnsInfo:: GETCOLUMNıNFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) IÇINDE "DBCOLUMNINFO yapýlarý" başlığına bakın.
+dışı Bir yapı dizisinin döndürüleceği bir bellek işaretçisi `DBCOLUMNINFO` . *OLE DB Programcı başvurusunda* [IColumnsInfo:: GETCOLUMNıNFO](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) IÇINDE "DBCOLUMNINFO yapýlarý" başlığına bakın.
 
 *ppStringsBuffer*<br/>
 dışı Tek bir ayırma bloğunda, tüm dize değerleri ( *ColumnID* veya *pwszName*içinde kullanılan adlar) için depolama işaretçisi döndürecek bir bellek işaretçisi.
@@ -363,13 +363,13 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DBORDINAL`, `DBCOLUMNINFO`ve `OLECHAR`veri türleri hakkında bilgi edinmek için *OLE DB Programcı başvurusu* Içindeki [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) bölümüne bakın.
+, Ve veri türleri hakkında bilgi edinmek için *OLE DB Programcı başvurusu* Içindeki [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) bölümüne `DBORDINAL` bakın `DBCOLUMNINFO` `OLECHAR` .
 
 ## <a name="cdynamicaccessorgetcolumnname"></a><a name="getcolumnname"></a>CDynamicAccessor:: GetColumnName
 
 Belirtilen sütunun adını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();
@@ -388,7 +388,7 @@ Belirtilen sütunun adı.
 
 Belirtilen sütunun veri türünü alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetColumnType(DBORDINAL nColumn,
@@ -405,13 +405,13 @@ dışı Belirtilen sütunun veri türüne yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
 ## <a name="cdynamicaccessorgetlength"></a><a name="getlength"></a>CDynamicAccessor:: GetLength
 
 Belirtilen sütunun uzunluğunu alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetLength(DBORDINAL nColumn,
@@ -437,7 +437,7 @@ dışı Sütunun bayt cinsinden uzunluğunu içeren tamsayıya yönelik bir işa
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen sütun bulunursa **true** değerini döndürür. Aksi takdirde, bu işlev **false**döndürür.
+**`true`** Belirtilen sütun bulunursa döndürür. Aksi takdirde, bu işlev döndürür **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -447,7 +447,7 @@ Belirtilen sütun bulunursa **true** değerini döndürür. Aksi takdirde, bu i�
 
 Sütun adı verilen sütun numarasını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetOrdinal(const CHAR* pColumnName,
@@ -467,13 +467,13 @@ dışı Sütun numarasına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen ada sahip bir sütun bulunursa **true** değerini döndürür. Aksi takdirde, bu işlev **false**döndürür.
+**`true`** Belirtilen ada sahip bir sütun bulunursa döndürür. Aksi takdirde, bu işlev döndürür **`false`** .
 
 ## <a name="cdynamicaccessorgetstatus"></a><a name="getstatus"></a>CDynamicAccessor:: GetStatus
 
 Belirtilen sütunun durumunu alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetStatus(DBORDINAL nColumn,
@@ -499,13 +499,13 @@ dışı Sütun durumunu içeren değişkene yönelik bir işaretçi. Daha fazla 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen sütun bulunursa **true** değerini döndürür. Aksi takdirde, bu işlev **false**döndürür.
+**`true`** Belirtilen sütun bulunursa döndürür. Aksi takdirde, bu işlev döndürür **`false`** .
 
 ## <a name="cdynamicaccessorgetvalue"></a><a name="getvalue"></a>CDynamicAccessor:: GetValue
 
 Belirtilen sütun için verileri alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void* GetValue(DBORDINAL nColumn) const throw();
@@ -527,7 +527,7 @@ bool GetValue(const WCHAR* pColumnName, ctype* pData) const throw();
 #### <a name="parameters"></a>Parametreler
 
 *CType*<br/>
-'ndaki Özel işleme gerektiren dize türleri (`CHAR*`, `WCHAR*`) dışında herhangi bir veri türünü işleyen şablonlu bir parametre. `GetValue`, burada belirttiğiniz alana göre uygun veri türünü kullanır.
+'ndaki Özel işleme gerektiren dize türleri (,) dışında herhangi bir veri türünü işleyen şablonlu bir parametre `CHAR*` `WCHAR*` . `GetValue`Burada belirttiğiniz alana göre uygun veri türünü kullanır.
 
 *Nsütun*<br/>
 'ndaki Sütun numarası. Sütun numaraları 1 ile başlar. 0 değeri, varsa yer işareti sütununa başvurur.
@@ -540,9 +540,9 @@ dışı Belirtilen sütunun içerik işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize verilerini geçirmek istiyorsanız, `GetValue`şablonlu olmayan sürümlerini kullanın. Bu yöntemin şablonlu olmayan sürümleri, belirtilen sütun verilerini içeren arabelleğin kısmına işaret eden `void*`döndürür. Sütun bulunmazsa NULL değerini döndürür.
+Dize verilerini geçirmek istiyorsanız, şablonlu olmayan sürümlerini kullanın `GetValue` . Bu yöntemin şablonlu olmayan sürümleri **`void*`** , belirtilen sütun verilerini içeren arabelleğin kısmına işaret eden geri döner. Sütun bulunmazsa NULL değerini döndürür.
 
-Diğer tüm veri türleri için `GetValue`şablonlu sürümlerinin kullanılması daha basittir. Şablonlu sürümler başarılı veya hatalı hata durumunda **false** **değerini döndürür.**
+Diğer tüm veri türleri için, şablonlu sürümlerinin kullanılması daha basittir `GetValue` . Şablonlu sürümler **`true`** başarı veya başarısızlık durumunda geri döner **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -554,7 +554,7 @@ Hata ayıklama modunda, *pData* boyutu işaret ettiği sütunun boyutuna eşit d
 
 Geçerli satır için BLOB işleme değerini ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);
@@ -565,15 +565,15 @@ bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);
 *eBlobHandling*<br/>
 BLOB verilerinin nasıl işleneceğini belirtir. Bu, aşağıdaki değerleri alabilir:
 
-- DBBLOBHANDLING_DEFAULT: sütun verilerini *nBlobSize* (`SetBlobSizeLimit`tarafından ayarlandığı gıbı) blob verileri olarak işleyin ve bir `ISequentialStream` veya `IStream` nesnesi aracılığıyla alın. Bu seçenek, *nBlobSize* boyutundan büyük verileri içeren veya dbtype_ıunknown olarak listelenen her sütunu blob verileri olarak bağlamaya çalışır.
+- DBBLOBHANDLING_DEFAULT: sütun verilerini BLOB verileri olarak *nBlobSize* (tarafından ayarlandığı gibi `SetBlobSizeLimit` ) aşıyor ve bir `ISequentialStream` veya nesnesi aracılığıyla alma `IStream` . Bu seçenek, *nBlobSize* boyutundan büyük verileri içeren veya dbtype_ıunknown olarak listelenen her sütunu blob verileri olarak bağlamaya çalışır.
 
-- DBBLOBHANDLING_NOSTREAMS: sütun verilerini *nBlobSize* (`SetBlobSizeLimit`tarafından ayarlandığı gıbı) blob verileri olarak işleyin ve sağlayıcıya ayrılan, tüketiciye ait bellek ' deki başvuruya alın. Bu seçenek, birden fazla BLOB sütunu olan tablolar için yararlıdır ve sağlayıcı her erişimci için yalnızca bir `ISequentialStream` nesnesini destekler.
+- DBBLOBHANDLING_NOSTREAMS: sütun verilerini *nBlobSize* (tarafından ayarlandığı şekılde `SetBlobSizeLimit` ) blob verileri olarak işleyin ve sağlayıcıya ayrılan, tüketiciye ait bellek ' deki başvuruya alın. Bu seçenek, birden fazla BLOB sütunu olan tablolar için yararlıdır ve sağlayıcı her erişimci için yalnızca bir nesne destekler `ISequentialStream` .
 
 - DBBLOBHANDLING_SKIP: Skip (bağlama) blob 'Ları içeren bir sütun niteleyen (erişimci sütun değerini bağlamaz veya alamaz, ancak yine de sütun durumunu ve uzunluğu alır).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Open`çağrılmadan önce `SetBlobHandling` çağırmalısınız.
+`SetBlobHandling`Çağrılmadan önce öğesini çağırmanız gerekir `Open` .
 
 Bir Oluşturucu yöntemi [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) blob işleme değerini DBBLOBHANDLING_DEFAULT olarak ayarlar.
 
@@ -581,7 +581,7 @@ Bir Oluşturucu yöntemi [CDynamicAccessor](../../data/oledb/cdynamicaccessor-cl
 
 En büyük BLOB boyutunu bayt cinsinden ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void SetBlobSizeLimit(DBLENGTH nBlobSize);
@@ -594,7 +594,7 @@ BLOB boyut sınırını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-En büyük BLOB boyutunu bayt cinsinden ayarlar; Bu değerden daha büyük olan sütun verileri bir BLOB olarak değerlendirilir. Bazı sağlayıcılar sütunlar için çok büyük boyutlar (2 GB gibi) verir. Bu boyuttaki bir sütun için bellek ayırmaya çalışmak yerine, genellikle bu sütunları blob olarak bağlamaya çalışırsınız. Bu şekilde, tüm belleği ayırmanız gerekmez, ancak tüm verileri korksız bir biçimde okumaya devam edebilirsiniz. Ancak, `CDynamicAccessor`, yerel veri türlerinde büyük sütunları bağlamaya zorlamak isteyebileceğiniz bazı durumlar vardır. Bunu yapmak için, `Open`çağrılmadan önce `SetBlobSizeLimit` çağırın.
+En büyük BLOB boyutunu bayt cinsinden ayarlar; Bu değerden daha büyük olan sütun verileri bir BLOB olarak değerlendirilir. Bazı sağlayıcılar sütunlar için çok büyük boyutlar (2 GB gibi) verir. Bu boyuttaki bir sütun için bellek ayırmaya çalışmak yerine, genellikle bu sütunları blob olarak bağlamaya çalışırsınız. Bu şekilde, tüm belleği ayırmanız gerekmez, ancak tüm verileri korksız bir biçimde okumaya devam edebilirsiniz. Ancak, `CDynamicAccessor` yerel veri türlerinde büyük sütunları bağlamaya zorlamak isteyebileceğiniz bazı durumlar vardır. Bunu yapmak için `SetBlobSizeLimit` çağrılmadan önce çağırın `Open` .
 
 Bir kurucu yöntemi [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) , en büyük blob boyutunu varsayılan değer olan 8.000 bayt olarak ayarlar.
 
@@ -602,7 +602,7 @@ Bir kurucu yöntemi [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.m
 
 Belirtilen sütunun uzunluğunu ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool SetLength(DBORDINAL nColumn,
@@ -628,13 +628,13 @@ bool SetLength(const WCHAR* pColumnName,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen sütun uzunluğu başarıyla ayarlandıysa **true** değerini döndürür. Aksi takdirde, bu işlev **false**döndürür.
+**`true`** Belirtilen sütun uzunluğu başarıyla ayarlandıysa döndürür. Aksi takdirde, bu işlev döndürür **`false`** .
 
 ## <a name="cdynamicaccessorsetstatus"></a><a name="setstatus"></a>CDynamicAccessor:: SetStatus
 
 Belirtilen sütunun durumunu ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool SetStatus(DBORDINAL nColumn,
@@ -660,13 +660,13 @@ bool SetStatus(const WCHAR* pColumnName,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen sütun durumu başarıyla ayarlandıysa **true** değerini döndürür. Aksi takdirde, bu işlev **false**döndürür.
+**`true`** Belirtilen sütun durumunun başarıyla ayarlanmış olup olmadığını döndürür. Aksi takdirde, bu işlev döndürür **`false`** .
 
 ## <a name="cdynamicaccessorsetvalue"></a><a name="setvalue"></a>CDynamicAccessor:: SetValue
 
 Verileri belirtilen bir sütuna depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class ctype>
@@ -688,12 +688,12 @@ bool SetValue(
 #### <a name="parameters"></a>Parametreler
 
 *CType*<br/>
-'ndaki Özel işleme gerektiren dize türleri (`CHAR*`, `WCHAR*`) dışında herhangi bir veri türünü işleyen şablonlu bir parametre. `GetValue`, burada belirttiğiniz alana göre uygun veri türünü kullanır.
+'ndaki Özel işleme gerektiren dize türleri (,) dışında herhangi bir veri türünü işleyen şablonlu bir parametre `CHAR*` `WCHAR*` . `GetValue`Burada belirttiğiniz alana göre uygun veri türünü kullanır.
 
 *pColumnName*<br/>
 'ndaki Sütun adını içeren bir karakter dizesinin işaretçisi.
 
-*verileri*<br/>
+*data*<br/>
 'ndaki Verileri içeren bellek işaretçisi.
 
 *Nsütun*<br/>
@@ -701,14 +701,14 @@ bool SetValue(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize verileri ayarlamak istiyorsanız, `GetValue`şablonlu olmayan sürümlerini kullanın. Bu yöntemin şablonlu olmayan sürümleri, belirtilen sütun verilerini içeren arabelleğin kısmına işaret eden `void*`döndürür. Sütun bulunmazsa NULL değerini döndürür.
+Dize verileri ayarlamak istiyorsanız, şablonlu olmayan sürümlerini kullanın `GetValue` . Bu yöntemin şablonlu olmayan sürümleri **`void*`** , belirtilen sütun verilerini içeren arabelleğin kısmına işaret eden geri döner. Sütun bulunmazsa NULL değerini döndürür.
 
-Diğer tüm veri türleri için `GetValue`şablonlu sürümlerinin kullanılması daha basittir. Şablonlu sürümler başarılı veya hatalı hata durumunda **false** **değerini döndürür.**
+Diğer tüm veri türleri için, şablonlu sürümlerinin kullanılması daha basittir `GetValue` . Şablonlu sürümler **`true`** başarı veya başarısızlık durumunda geri döner **`false`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicParameterAccessor Sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
-[CManualAccessor Sınıfı](../../data/oledb/cmanualaccessor-class.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CAccessor sınıfı](../../data/oledb/caccessor-class.md)<br/>
+[CDynamicParameterAccessor sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)<br/>
+[CManualAccessor sınıfı](../../data/oledb/cmanualaccessor-class.md)

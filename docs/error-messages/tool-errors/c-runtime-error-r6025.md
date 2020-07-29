@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6025
 ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
-ms.openlocfilehash: d5edb08278b7b6b9b3eb62e92fc04410f96a8f09
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 6e184ba24ad535697a727276a980fd082625e082
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075122"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218058"
 ---
 # <a name="c-runtime-error-r6025"></a>C Çalışma Zamanı Hatası R6025
 
@@ -30,4 +30,4 @@ saf sanal işlev çağrısı
 
 Saf sanal işlev çağrısını işlemek için hiçbir nesne örneği oluşturulmadı.
 
-Bu hata, türetilmiş sınıfın türüne atama tarafından oluşturulan bir işaretçi aracılığıyla soyut bir temel sınıfta bir sanal işlevin çağrılmasından kaynaklanır, ancak aslında temel sınıfa bir işaretçidir. Bu durum, bir **void** <strong>\*</strong> , temel sınıfın oluşturulması sırasında **void** <strong>\*</strong> oluşturulduğunda bir sınıfa işaretçiye atama yapıldığında meydana gelebilir.
+Bu hata, türetilmiş sınıfın türüne atama tarafından oluşturulan bir işaretçi aracılığıyla soyut bir temel sınıfta bir sanal işlevin çağrılmasından kaynaklanır, ancak aslında temel sınıfa bir işaretçidir. Bu durum **`void`** <strong>\*</strong> , **`void`** <strong>\*</strong> temel sınıfın oluşturulması sırasında oluşturulduğu sırada bir sınıfa işaretçiye atama yapılırken meydana gelebilir.

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_move_assignable
 ms.assetid: 000baa02-cbba-49de-9870-af730033348e
-ms.openlocfilehash: 8273be92a9c7e60e446b3c2b561a6020e70fb2f2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 92e3364843b5614c9fa108d33605b35962726aa2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455887"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217746"
 ---
-# <a name="isnothrowmoveassignable-class"></a>is_nothrow_move_assignable sınıfı
+# <a name="is_nothrow_move_assignable-class"></a>is_nothrow_move_assignable sınıfı
 
-Türün **nothrow** taşıma atama işlecine sahip olup olmadığını sınar.
+Türün bir **`nothrow`** taşıma ataması operatörüne sahip olup olmadığını sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -31,11 +31,11 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür olarak bir nothrow taşıma atama işleci varsa, tür  koşulunda bir örnek true, aksi takdirde false barındırır.
+*Tür olarak* bir nothrow taşıma atama işleci varsa, tür koşulunda bir örnek true, aksi takdirde false barındırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

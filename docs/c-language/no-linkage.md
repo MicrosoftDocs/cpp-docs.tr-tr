@@ -5,16 +5,16 @@ helpviewer_keywords:
 - no linkage
 - linkage [C++], none
 ms.assetid: 5a413082-1034-4e04-b76b-8d14668bf434
-ms.openlocfilehash: c80cb814145ac986864fe351e664d8472f3bf880
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7c9a5b8f0ba92830500e55818093981a044d2df
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232395"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218812"
 ---
 # <a name="no-linkage"></a>Bağlantı Yok
 
-Bir blok içerisindeki tanımlayıcının bildirimi `extern` depolama sınıfı tanımlayıcısını içermiyorsa, tanımlayıcının bağlantısı yoktur ve tanımlayıcı işleve özgüdür.
+Bir blok içindeki tanımlayıcı için bir bildirim, **`extern`** depolama sınıfı belirticisini içermiyorsa, tanımlayıcının bağlantısı yoktur ve işlev için benzersizdir.
 
 Aşağıdaki tanımlayıcıların bağlantısı yoktur:
 
@@ -22,7 +22,7 @@ Aşağıdaki tanımlayıcıların bağlantısı yoktur:
 
 - Bir işlev parametresi olarak bildirilmiş bir tanımlayıcı
 
-- `extern` depolama sınıfı tanımlayıcısı olmadan bildirilmiş bir nesneye yönelik blok kapsamı tanımlayıcısı
+- Depolama sınıfı tanımlayıcısı olmadan belirtilen bir nesne için blok kapsamı tanımlayıcısı **`extern`**
 
 Tanımlayıcının hiçbir bağlantı yoksa, aynı kapsamda aynı adın yeniden bildirilmesi (bildirimcide veya tür tanımlayıcısında) simge yeniden tanımlama hatası oluşturur.
 

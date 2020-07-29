@@ -11,12 +11,12 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-ms.openlocfilehash: e4fafd12d22f6ff7635380e139f60c110a193d9d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a02b71609ec19d6106153bf67e9d56b860cfdfff
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622819"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217941"
 ---
 # <a name="exceptions-freeing-objects-in-exceptions"></a>Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma
 
@@ -30,9 +30,9 @@ Bu makalede, bir özel durum oluştuğunda nesneleri serbest bırakma yöntemi v
 
 Bunu yapmak için iki birincil yöntem vardır.
 
-- **TRY** ve **catch** anahtar sözcüklerini kullanarak yerel durumları işleyin ve sonra tüm nesneleri tek bir deyimle yok edin.
+- Ve anahtar sözcüklerini kullanarak yerel özel durumları işleyin **`try`** ve **`catch`** sonra tüm nesneleri tek bir deyimle yok edin.
 
-- Daha fazla işleme için özel durumu bloğunun dışına vermeden önce **catch** bloğundaki tüm nesneleri yok edin.
+- **`catch`** Daha fazla işleme için özel durumu bloğunun dışına vermeden önce bloktaki tüm nesneleri yok edin.
 
 Bu iki yaklaşım aşağıdaki sorunlu örnekteki çözümler olarak aşağıda gösterilmiştir:
 
@@ -50,7 +50,7 @@ Bu yeni örnek, özel durumu yakalamak ve yerel olarak işlemek için bir özel 
 
 ## <a name="throwing-exceptions-after-destroying-objects"></a><a name="_core_throwing_exceptions_after_destroying_objects"></a>Nesneleri yok etme sonrasında özel durumlar üretiliyor
 
-Özel durumları işlemenin bir diğer yolu da, bir sonraki dış özel durum işleme bağlamına geçirmektir. **Catch** blosonra, yerel olarak ayrılan nesnelerinizin bir bölümünü temizleme işlemini gerçekleştirebilir ve ardından daha fazla işleme için üzerinde özel durum oluşturabilirsiniz.
+Özel durumları işlemenin bir diğer yolu da, bir sonraki dış özel durum işleme bağlamına geçirmektir. **`catch`** Blobundan sonra, yerel olarak ayrılan nesnelerinizi bazı temizleme işlemleri yapabilir ve daha fazla işlem için üzerinde özel durum oluşturabilirsiniz.
 
 Oluşturma işlevinin yığın nesnelerini serbest bırakma gereksinimi olabilir veya olmayabilir. İşlev normal durumda döndürmeden önce yığın nesnesini her zaman ayırır, ayrıca işlev özel durumu oluşturmadan önce yığın nesnesini serbest bırakır. Diğer taraftan, işlev normal durumda döndürülmeden önce nesneyi serbest bırakılmadığı takdirde, yığın nesnesinin serbest bırakılıp bırakılmayacağı konusunda bir servis talebine karar vermelisiniz.
 

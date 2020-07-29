@@ -1,5 +1,5 @@
 ---
-title: '&lt;&gt; işleçlerini ayarla'
+title: '&lt;&gt;işleç ayarla'
 ms.date: 03/27/2019
 f1_keywords:
 - set/std::operator!=
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: 4618030cf81f79a085e16052c8b9c547201e3577
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: a3256b7d963feca75e4a975def0f6da77538d278
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419548"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217512"
 ---
-# <a name="ltsetgt-operators"></a>&lt;&gt; işleçlerini ayarla
+# <a name="ltsetgt-operators"></a>&lt;&gt;işleç ayarla
 
-## <a name="op_neq"></a>işleç! = (küme)
+## <a name="operator-set"></a><a name="op_neq"></a>işleç! = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesine eşit olup olmadığını sınar.
 
@@ -35,15 +35,15 @@ bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `set` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-kümeler eşit değilse **doğru** ; kümeler eşitse **false** .
+**`true`** kümeler eşitse; **`false`** Eğer kümeler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -86,7 +86,7 @@ The sets s1 and s3 are equal.
 */
 ```
 
-## <a name="op_lt"></a>işleç&lt; (küme)
+## <a name="operatorlt-set"></a><a name="op_lt"></a>işleç &lt; (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden küçük olup olmadığını sınar.
 
@@ -96,15 +96,15 @@ bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `set` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki küme, işlecin sağ tarafındaki kümesinden tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki küme, işlecin sağ tarafındaki kümesinden tamamen daha küçüktür; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -147,7 +147,7 @@ The set s1 is not less than the set s3.
 */
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;= (küme)
+## <a name="operatorlt-set"></a><a name="op_lt_eq"></a>operator &lt; = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -157,15 +157,15 @@ bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `set` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki küme, işlecin sağ tarafındaki ayarlamaya eşitse veya eşitse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki küme, işlecin sağ tarafındaki ayarla değerinden küçükse veya eşitse, Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -216,7 +216,7 @@ The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
 ```
 
-## <a name="op_eq_eq"></a>işleç = = (küme)
+## <a name="operator-set"></a><a name="op_eq_eq"></a>işleç = = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesine eşit olup olmadığını sınar.
 
@@ -226,15 +226,15 @@ bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `set` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki küme, işlecin sağ tarafındaki ayarlamaya eşitse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki küme, işlecin sağ tarafındaki ayarlamaya eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -278,7 +278,7 @@ The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
 ```
 
-## <a name="op_gt"></a>işleç&gt; (küme)
+## <a name="operatorgt-set"></a><a name="op_gt"></a>işleç &gt; (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden büyük olup olmadığını sınar.
 
@@ -288,15 +288,15 @@ bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `set` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki küme, işlecin sağ tarafındaki kümesinden büyükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki küme, işlecin sağ tarafındaki kümesinden büyükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -339,7 +339,7 @@ The set s1 is greater than the set s3.
 */
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;= (küme)
+## <a name="operatorgt-set"></a><a name="op_gt_eq"></a>operator &gt; = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -349,15 +349,15 @@ bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `set` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `set` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki küme, listenin sağ tarafındaki ayarla daha büyükse veya eşitse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki küme, listenin sağ tarafındaki ayarla değerinden büyükse veya bu değere eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -408,7 +408,7 @@ Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
 ```
 
-## <a name="op_neq_multiset"></a>işleç! = (çoklu küme)
+## <a name="operator-multiset"></a><a name="op_neq_multiset"></a>işleç! = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit olup olmadığını sınar.
 
@@ -418,15 +418,15 @@ bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <K
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `multiset` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-kümeler veya multisets 'ler eşitse **true** ; kümeler veya çoklu kümeler eşitse **false** .
+**`true`** kümeler veya çoklu kümeler eşit değilse; **`false`** Eğer kümeler veya çoklu kümeler eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -470,7 +470,7 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="op_lt_multiset"></a>işleç&lt; (çoklu küme)
+## <a name="operatorlt-multiset"></a><a name="op_lt_multiset"></a>işleç &lt; (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden küçük olup olmadığını sınar.
 
@@ -480,15 +480,15 @@ bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `multiset` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli tamamen daha küçükse **true** . Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli tamamen daha küçüktür; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -536,7 +536,7 @@ The multiset s1 is less than the multiset s2.
 The multiset s1 is not less than the multiset s3.
 ```
 
-## <a name="op_lt_eq_multiset"></a>işleç&lt;= (çoklu küme)
+## <a name="operatorlt-multiset"></a><a name="op_lt_eq_multiset"></a>operator &lt; = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
@@ -546,15 +546,15 @@ bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `multiset` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çok kümeli veya daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çok kümeli veya daha küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -611,7 +611,7 @@ The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
 ```
 
-## <a name="op_eq_eq_multiset"></a>işleç = = (çoklu küme)
+## <a name="operator-multiset"></a><a name="op_eq_eq_multiset"></a>işleç = = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit olup olmadığını sınar.
 
@@ -621,15 +621,15 @@ bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `multiset` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki bir çoklu küme, işlecin sağ tarafındaki çok kümeli birine eşitse **true** . Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli birine eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -673,7 +673,7 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="op_gt_multiset"></a>işleç&gt; (çoklu küme)
+## <a name="operatorgt-multiset"></a><a name="op_gt_multiset"></a>işleç &gt; (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden büyük olup olmadığını sınar.
 
@@ -683,15 +683,15 @@ bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `multiset` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli daha büyükse **true** . Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki çoklu küme, işlecin sağ tarafındaki çoklu kümeli daha büyükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -739,7 +739,7 @@ The multiset s1 is not greater than the multiset s2.
 The multiset s1 is greater than the multiset s3.
 ```
 
-## <a name="op_gt_eq_multiset"></a>işleç&gt;= (çoklu küme)
+## <a name="operatorgt-multiset"></a><a name="op_gt_eq_multiset"></a>operator &gt; = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -749,15 +749,15 @@ bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `multiset` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `multiset` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki çoklu küme, listenin sağ tarafındaki çoklu kümeli daha büyükse veya eşitse **doğru** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki çoklu küme, listenin sağ tarafındaki çoklu kümeli daha büyükse veya buna eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 

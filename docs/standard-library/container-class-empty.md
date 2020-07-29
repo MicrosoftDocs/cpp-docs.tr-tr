@@ -4,19 +4,19 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - empty method
 ms.assetid: 2055418d-3c42-4d28-a7db-111586119ed9
-ms.openlocfilehash: 7417a0504435eb5d1391bc170c9b878524ac21c7
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: ee837c058a5a6ed7ca4e8bd55e0b889f3246ee68
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257916"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217824"
 ---
 # <a name="container-classempty"></a>Kapsayıcı Sınıfı::empty
 
 > [!NOTE]
-> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplığı 'nda kullanılan kapsayıcılardan oluşan işlevsel bir örnek olarak Microsoft C++ belgelerinde yer almaktadır. Daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Boş bir denetlenen dizi için **true** döndürür.
+**`true`** Boş denetimli bir sıra için döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,4 +26,4 @@ bool empty() const;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)
+[Örnek kapsayıcı sınıfı](../standard-library/sample-container-class.md)

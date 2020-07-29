@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2664
 ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
-ms.openlocfilehash: 93bdac489dea0356ce3da3298cd8ed6bcb6f623c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8bb9ecef2e08e1f65a817e1a6496a421e727eb13
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756012"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221126"
 ---
 # <a name="compiler-error-c2664"></a>Derleyici hatası C2664
 
 ' function ': n ' type1 ' bağımsız değişkeni ' type2 ' olarak dönüştürülemez
 
-Bu parametre dönüştürme sorunu, bir sınıf örneği oluşturulduysa ve `explicit` anahtar sözcüğüyle işaretlenmiş bir Oluşturucu üzerinde örtük bir dönüştürme denendiğinde gerçekleşebilir. Açık dönüştürmeler hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı tür dönüştürmeleri](../../cpp/user-defined-type-conversions-cpp.md).
+Bu parametre dönüştürme sorunu, bir sınıfın bir örneği oluşturulduysa ve anahtar sözcüğüyle işaretlenmiş bir Oluşturucu üzerinde örtük bir dönüştürme denendiğinde meydana gelebilir **`explicit`** . Açık dönüştürmeler hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı tür dönüştürmeleri](../../cpp/user-defined-type-conversions-cpp.md).
 
-Bir nesne için bir parametre olarak başvuru alan bir işleve geçici bir nesne geçirilirse, bu başvuru `const` başvuru olmalıdır.
+Bir nesne için bir parametre olarak başvuru alan bir işleve geçici bir nesne geçirilirse, bu başvuru bir **`const`** başvuru olmalıdır.
 
 İşlev, işlevin beklediği türde olmayan bir parametreye geçirilmişse, uygun oluşturucu kullanılarak geçici bir nesne oluşturulur. Bu geçici nesne, daha sonra işleve geçirilir. Bu durumda, geçici nesne, başvuruyu başlatmak üzere kullanılır. Dilin önceki sürümlerinde, tüm başvurular geçici nesneler tarafından başlatılabiliyordu.
 
@@ -31,7 +31,7 @@ C2664 'yi onarmak için
 
 C2664, aynı zamanda, bir sınıf, temel sınıflarından birinde bir üye gizlediğinde de meydana gelebilir.
 
-Daha fazla bilgi için bkz. [nasıl yapılır: System:: String 'i wchar_t * veya char\*olarak dönüştürme ](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md).
+Daha fazla bilgi için bkz. [nasıl yapılır: System:: String 'i wchar_t * veya char \* olarak dönüştürme](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md).
 
 ## <a name="example"></a>Örnek
 
@@ -78,7 +78,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Sonraki örnek, `Test`çağırmak için bir dize sabiti kullanarak C2664 gösterir ve nasıl düzeltileceğini gösterir. Parametresi bir `szString` başvurusu olduğundan, uygun Oluşturucu tarafından bir nesne oluşturulmalıdır. Sonuç, başvuruyu başlatmak üzere kullanılamayan geçici bir nesnedir.
+Sonraki örnek, çağırmak için bir dize sabiti kullanarak C2664 gösterir `Test` ve nasıl düzeltileceğini gösterir. Parametresi bir `szString` başvuru olduğundan, uygun Oluşturucu tarafından bir nesne oluşturulmalıdır. Sonuç, başvuruyu başlatmak üzere kullanılamayan geçici bir nesnedir.
 
 ```cpp
 // C2664c.cpp
@@ -119,7 +119,7 @@ int main() {
 
 ## <a name="example"></a>Örnek
 
-Derleyici, `const`uygulamak C++ için standart gereksinimleri zorlar. Bu örnek C2664 oluşturur:
+Derleyici, uygulamak için C++ standart gereksinimlerini zorlar **`const`** . Bu örnek C2664 oluşturur:
 
 ```cpp
 // C2664d.cpp
@@ -232,7 +232,7 @@ library myproj1 {
 }
 ```
 
-C2664 Ayrıca, Visual C++ 6,0 ' den sonraki sürümlere kod taşıma sırasında `wchar_t` kullanılarak da oluşturulur. Visual C++ 6,0 ve önceki sürümlerde `wchar_t`, `unsigned short` için bir `typedef` ve bu nedenle örtülü olarak bu türe dönüştürülebilir. Visual C++ 6,0 ' den sonra, `wchar_t` C++ standart içinde belirtildiği gibi kendi yerleşik türü olur ve artık `unsigned short`olarak örtülü olarak dönüştürülebilir değildir. Bkz. [/Zc: wchar_t (wchar_t yerel tür)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+C2664 Ayrıca **`wchar_t`** Visual C++ 6,0 ' den sonraki sürümlere kod taşıma sırasında kullanılarak da oluşturulur. Visual C++ 6,0 ve önceki sürümlerde, **`wchar_t`** bir **`typedef`** için **`unsigned short`** ve bu tür için örtük olarak dönüştürülebilir. Visual C++ 6,0 ' den sonra, **`wchar_t`** C++ standardında belirtildiği şekilde kendi yerleşik türü olur ve artık örtülü olarak dönüştürülebilir değildir **`unsigned short`** . Bkz. [/Zc: wchar_t (wchar_t yerel tür)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ## <a name="example"></a>Örnek
 

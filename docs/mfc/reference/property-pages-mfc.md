@@ -5,49 +5,49 @@ helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: 6456a192a502a0fcc032eaefc667c90ecec86d42
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9689d511760752903b83b34199fb035c0e7a8d37
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751144"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87214054"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 
-Özellik sayfaları, iletişim veri alışverişine (DDX) dayalı bir veri eşleme mekanizmasını destekleyerek görüntüleme ve düzenleme için özelleştirilebilir, grafiksel bir arabirimde belirli OLE denetim özelliklerinin geçerli değerlerini görüntüler.
+Özellik sayfaları, iletişim kutusu veri değişimi (DDX) temelinde bir veri eşleme mekanizmasını destekleyerek, görüntüleme ve düzenlemeyle ilgili OLE denetimi özelliklerinin geçerli değerlerini özelleştirilebilir, grafik bir arabirim halinde görüntüler.
 
-Bu veri eşleme mekanizması özellik sayfası denetimlerini OLE denetiminin tek tek özellikleriyle eşler. Denetim özelliğinin değeri, özellik sayfası denetiminin durumunu veya içeriğini yansıtır. Özellik sayfası denetimleri ve özellikleri **DDP_** arasındaki eşleme, özellik sayfasının `DoDataExchange` üye işlevindeki DDP_ işlev çağrıları tarafından belirtilir. Aşağıda, denetiminizin özellik sayfasını kullanarak girilen veri alışverişi yapan **DDP_** işlevlerin bir listesi verilmiştir:
+Bu veri eşleme mekanizması, özellik sayfası denetimlerini OLE denetiminin bireysel özelliklerine eşler. Denetim özelliğinin değeri, özellik sayfası denetiminin durumunu veya içeriğini yansıtır. Özellik sayfası denetimleri ve özellikleri arasındaki eşleme, özellik sayfasının üye işlevindeki **ddp_** işlev çağrıları tarafından belirtilir `DoDataExchange` . Aşağıda, denetiminizin Özellik sayfası kullanılarak girilen Exchange verilerinin **ddp_** işlevlerinin bir listesi verilmiştir:
 
-### <a name="property-page-data-transfer"></a>Özellik Sayfası Veri Aktarımı
+### <a name="property-page-data-transfer"></a>Özellik sayfası Veri Aktarımı
 
 |||
 |-|-|
-|[DDP_CBIndex](#ddp_cbindex)|Seçili dizenin dizini bir açılan kutuya denetim özelliğiyle bağlar.|
-|[DDP_CBString](#ddp_cbstring)|Seçili dizeyi bir açılan kutuya denetim özelliğiyle bağlar. Seçili dize özelliğin değeriyle aynı harflerle başlayabilir, ancak tam olarak eşleşmesi gerekmez.|
-|[DDP_CBStringExact](#ddp_cbstringexact)|Seçili dizeyi bir açılan kutuya denetim özelliğiyle bağlar. Seçili dize ve özelliğin dize değeri tam olarak eşleşmelidir.|
-|[DDP_Check](#ddp_check)|Denetimin özellik sayfasındaki bir onay kutusunu denetimin özelliğiyle bağlar.|
-|[DDP_LBIndex](#ddp_lbindex)|Seçili dizenin dizinini bir liste kutusuna denetim özelliğiyle bağlar.|
-|[DDP_LBString](#ddp_lbstring)|Seçili dizeyi bir liste kutusuna denetim özelliğiyle bağlar. Seçili dize özelliğin değeriyle aynı harflerle başlayabilir, ancak tam olarak eşleşmesi gerekmez.|
-|[DDP_LBStringExact](#ddp_lbstringexact)|Seçili dizeyi bir liste kutusuna denetim özelliğiyle bağlar. Seçili dize ve özelliğin dize değeri tam olarak eşleşmelidir.|
-|[DDP_PostProcessing](#ddp_postprocessing)|Mülk değerlerinin denetiminizden aktarılmasını tamamlar.|
-|[DDP_Radio](#ddp_radio)|Denetimin özellik sayfasındaki bir radyo düğmesi grubunu denetimin özelliğiyle bağlar.|
-|[DDP_Text](#ddp_text)|Denetimin özellik sayfasındaki denetimi denetimin özelliğiyle bağlar. Bu işlev, **çift,** **kısa,** BSTR ve **uzun**gibi birkaç farklı türde özelliği işler.|
+|[DDP_CBIndex](#ddp_cbindex)|Bir açılan kutuda seçilen dizenin dizinini denetimin özelliği ile bağlantılandırır.|
+|[DDP_CBString](#ddp_cbstring)|Bir açılan kutudaki Seçili dizeyi denetimin özelliği ile bağlar. Seçilen dize, özelliğin değeri ile aynı harfle başlayabilir, ancak tamamen eşleşmesi gerekmez.|
+|[DDP_CBStringExact](#ddp_cbstringexact)|Bir açılan kutudaki Seçili dizeyi denetimin özelliği ile bağlar. Seçilen dize ve özelliğin dize değeri tam olarak eşleşmelidir.|
+|[DDP_Check](#ddp_check)|Denetimin özelliği olan denetimin özellik sayfasındaki onay kutusunu bağlar.|
+|[DDP_LBIndex](#ddp_lbindex)|Bir liste kutusunda seçili dizenin dizinini denetimin özelliği ile bağlantılandırır.|
+|[DDP_LBString](#ddp_lbstring)|Bir liste kutusunda seçili dizeyi denetimin özelliği ile bağlar. Seçilen dize, özelliğin değeri ile aynı harfle başlayabilir, ancak tam olarak eşleşmesi gerekmez.|
+|[DDP_LBStringExact](#ddp_lbstringexact)|Bir liste kutusunda seçili dizeyi denetimin özelliği ile bağlar. Seçilen dize ve özelliğin dize değeri tam olarak eşleşmelidir.|
+|[DDP_PostProcessing](#ddp_postprocessing)|Denetiinizden özellik değerlerinin aktarımını sonlandırır.|
+|[DDP_Radio](#ddp_radio)|Denetimin özellik sayfasındaki bir radyo düğmesi grubunu denetimin özelliği ile bağlar.|
+|[DDP_Text](#ddp_text)|Denetimin özellik sayfasında denetimin özelliği ile bir denetimi bağlar. Bu işlev,,, BSTR ve gibi birçok farklı özellik türünü işler **`double`** **`short`** **`long`** .|
 
-`DoDataExchange` İşlev ve özellik sayfaları hakkında daha fazla bilgi için [ActiveX Denetimleri makalesine bakın: Özellik Sayfaları.](../../mfc/mfc-activex-controls-property-pages.md)
+İşlev ve özellik sayfaları hakkında daha fazla bilgi için `DoDataExchange` , [ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md)makalesine bakın.
 
-Aşağıda, OLE denetimi için özellik sayfalarını oluşturmak ve yönetmek için kullanılan makroların listesi ve
+Bir OLE denetimi için özellik sayfaları oluşturmak ve yönetmek için kullanılan makroların listesi aşağıda verilmiştir:
 
 ### <a name="property-pages"></a>Özellik Sayfaları
 
 |||
 |-|-|
-|[BEGIN_PROPPAGEIDS](#begin_proppageids)|Özellik sayfası iYeliklerinin listesini başlatın.|
-|[END_PROPPAGEIDS](#end_proppageids)|Özellik sayfası iYelikleri listesini sona erdirer.|
-|[PROPPAGEID](#proppageid)|Denetim sınıfının özellik sayfasını bildirir.|
+|[BEGIN_PROPPAGEIDS](#begin_proppageids)|Özellik sayfası kimliklerinin listesini başlatır.|
+|[END_PROPPAGEIDS](#end_proppageids)|Özellik sayfası kimliklerinin listesini sonlandırır.|
+|[PROPPAGEıD](#proppageid)|Denetim sınıfının özellik sayfasını bildirir.|
 
 ## <a name="ddp_cbindex"></a><a name="ddp_cbindex"></a>DDP_CBIndex
 
-Bir tamsayı özelliğinin değerini `DoDataExchange` özellik sayfasındaki açılan kutudaki geçerli seçimin diziniyle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Bir Integer özelliğinin değerini, özellik sayfasındaki Birleşik giriş kutusunda bulunan geçerli seçimin diziniyle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_CBIndex(
@@ -59,29 +59,29 @@ void AFXAPI DDP_CBIndex(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili açılan kutu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-Kimlik *tarafından*belirtilen açılan kutu kontrolü ile değiştirilecek kontrol özelliğinin özelliği.
+*Kimliğe*göre belirtilen Birleşik giriş kutusu denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_CBIndex` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_CBIndex` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_cbstring"></a><a name="ddp_cbstring"></a>DDP_CBString
 
-Bir dize özelliğinin değerini `DoDataExchange` özellik sayfasındaki açılan kutudaki geçerli seçimle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Bir dize özelliğinin değerini özellik sayfasındaki Birleşik giriş kutusunda bulunan geçerli seçimle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_CBString(
@@ -93,29 +93,29 @@ void AFXAPI DDP_CBString(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili açılan kutu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Id*tarafından belirtilen açılan kutu dizesi ile değiştirilecek kontrol özelliğinin özellik adı.
+*Kimliğe*göre belirtilen Birleşik giriş kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_CBString` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_CBString` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_cbstringexact"></a><a name="ddp_cbstringexact"></a>DDP_CBStringExact
 
-Özellik sayfasındaki açılan kutudaki `DoDataExchange` geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Özellik sayfasındaki Birleşik giriş kutusunda bulunan geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_CBStringExact(
@@ -127,29 +127,29 @@ void AFXAPI DDP_CBStringExact(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili açılan kutu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Id*tarafından belirtilen açılan kutu dizesi ile değiştirilecek kontrol özelliğinin özellik adı.
+*Kimliğe*göre belirtilen Birleşik giriş kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_CBStringExact` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_CBStringExact` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_check"></a><a name="ddp_check"></a>DDP_Check
 
-Özelliğin değerini ilişkili özellik `DoDataExchange` sayfası onay kutusu denetimiyle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Özelliğin değerini ilişkili özellik sayfası onay kutusu denetimiyle senkronize etmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_Check(
@@ -161,29 +161,29 @@ void AFXAPI DDP_Check(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili onay kutusu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili onay kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-Kimlik *tarafından*belirtilen onay kutusu denetimi ile değiştirilecek kontrol özelliğinin özelliği.
+*Kimliğe*göre belirtilen onay kutusu denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_Check` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_Check` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_lbindex"></a><a name="ddp_lbindex"></a>DDP_LBIndex
 
-Bir tamsayı özelliğinin değerini `DoDataExchange` özellik sayfasındaki bir liste kutusundageçerli seçimin diziniyle eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Bir Integer özelliğinin değerini, özellik sayfasındaki bir liste kutusunda geçerli seçimin diziniyle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_LBIndex(
@@ -195,29 +195,29 @@ void AFXAPI DDP_LBIndex(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Id*tarafından belirtilen liste kutusu dizeile değiştirilecek kontrol özelliğinin özellik adı.
+*Kimliğe*göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_LBIndex` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_LBIndex` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_lbstring"></a><a name="ddp_lbstring"></a>DDP_LBString
 
-Özellik sayfasındaki liste kutusunda `DoDataExchange` geçerli seçimle bir dize özelliğinin değerini eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Bir dize özelliğinin değerini, özellik sayfasındaki bir liste kutusunda bulunan geçerli seçimle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_LBString(
@@ -229,29 +229,29 @@ void AFXAPI DDP_LBString(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Id*tarafından belirtilen liste kutusu dizeile değiştirilecek kontrol özelliğinin özellik adı.
+*Kimliğe*göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_LBString` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_LBString` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_lbstringexact"></a><a name="ddp_lbstringexact"></a>DDP_LBStringExact
 
-Özellik sayfasındaki liste kutusunda `DoDataExchange` geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşitlemek için özellik sayfanızın işlevinde bu işlevi çağırın.
+`DoDataExchange`Özellik sayfasındaki bir liste kutusunda bulunan geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_LBStringExact(
@@ -263,29 +263,29 @@ void AFXAPI DDP_LBStringExact(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Id*tarafından belirtilen liste kutusu dizeile değiştirilecek kontrol özelliğinin özellik adı.
+*Kimliğe*göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_LBStringExact` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_LBStringExact` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_postprocessing"></a><a name="ddp_postprocessing"></a>DDP_PostProcessing
 
-Özellik değerleri kaydedilirken özellik `DoDataExchange` sayfasından denetiminize özellik değerlerinin transferini tamamlamak için özellik sayfanızın işlevinde bu işlevi arayın.
+Özellik değerleri, özellik değerleri `DoDataExchange` kaydedilirken denetim sayfasından denetimi aktarmak için özellik sayfasının işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
@@ -293,22 +293,22 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm veri alışverişi işlevleri tamamlandıktan sonra bu işlev çağrılmalıdır. Örneğin:
+Bu işlev, tüm veri değişimi işlevleri tamamlandıktan sonra çağrılmalıdır. Örnek:
 
 [!code-cpp[NVC_MFCAxCtl#15](../../mfc/reference/codesnippet/cpp/property-pages-mfc_1.cpp)]
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_radio"></a><a name="ddp_radio"></a>DDP_Radio
 
-İlgili özellik sayfası radyo `DoPropExchange` düğmesi denetimi ile özelliğin değerini senkronize etmek için denetiminizin işlevinde bu işlevi arayın.
+`DoPropExchange`Özelliğin değerini ilişkili özellik sayfası radyo düğmesi denetimiyle eşleştirmek için, denetimin işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_Radio(
@@ -320,29 +320,29 @@ void AFXAPI DDP_Radio(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen kontrol özelliği ile ilişkili radyo düğmesi denetiminin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliğiyle ilişkili radyo düğmesi DENETIMININ kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-Id *tarafından*belirtilen radyo düğmesi kontrolü ile değiştirilecek kontrol özelliğinin özelliği.
+*Kimliğe*göre belirtilen radyo düğmesi denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_Radio` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_Radio` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="ddp_text"></a><a name="ddp_text"></a>DDP_Text
 
-Özelliğin değerini ilişkili özellik `DoDataExchange` sayfası denetimiyle eşitlemek için denetiminizin işlevinde bu işlevi çağırın.
+`DoDataExchange`Özelliğin değerini ilişkili özellik sayfası denetimiyle eşleştirmek için denetiminizin işlevinde bu işlevi çağırın.
 
 ```cpp
 void AFXAPI DDP_Text(
@@ -396,29 +396,29 @@ void AFXAPI DDP_Text(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Kimliği*<br/>
-*pszPropName*tarafından belirtilen denetim özelliği ile ilişkili denetimin kaynak kimliği.
+*id*<br/>
+*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili DENETIMIN kaynak kimliği.
 
-*Üye*<br/>
-*Id* tarafından belirtilen özellik sayfası denetimi ile ilişkili üye değişkeni ve *pszPropName*tarafından belirtilen özellik .
+*üyesidir*<br/>
+*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-Kimlik *tarafından*belirtilen kontrol ile değiştirilecek kontrol özelliğinin özelliği.
+*Kimliğe*göre belirtilen denetimle değiştirilen denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, ilgili `DDX_Text` işlev çağrısından önce çağrılmalıdır.
+Bu işlev, karşılık gelen `DDX_Text` işlev çağrısından önce çağrılmalıdır.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="begin_proppageids"></a><a name="begin_proppageids"></a>BEGIN_PROPPAGEIDS
 
-Denetiminizin özellik sayfası iYelikleri listesinin tanımını başla.
+Denetimin özellik sayfası kimlikleri listesinin tanımını başlatır.
 
 ```
 BEGIN_PROPPAGEIDS(class_name,  count)
@@ -427,24 +427,24 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 ### <a name="parameters"></a>Parametreler
 
 *class_name*<br/>
-Özellik sayfalarının belirtildiği denetim sınıfının adı.
+Özellik sayfaları belirtime denetim sınıfının adı.
 
-*Sayısı*<br/>
+*biriktirme*<br/>
 Denetim sınıfı tarafından kullanılan özellik sayfası sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınızın üye işlevlerini tanımlayan uygulama (.cpp) dosyasında, özellik sayfası listesini BEGIN_PROPPAGEIDS makrosuyla başlatın, ardından her mülk sayfanız için makro girişleri ekleyin ve END_PROPPAGEIDS makrosuyla özellik sayfası listesini tamamlayın.
+Sınıfınız için üye işlevleri tanımlayan uygulama (. cpp) dosyasında, özellik sayfası listesini BEGIN_PROPPAGEIDS makrosu ile başlatın, sonra özellik sayfalarınızın her biri için makro girişleri ekleyin ve özellik sayfası listesini END_PROPPAGEIDS makroyla doldurun.
 
-Özellik sayfaları hakkında daha fazla bilgi için [ActiveX Denetimleri: Özellik Sayfaları](../../mfc/mfc-activex-controls-property-pages.md)makalesine bakın.
+Özellik sayfaları hakkında daha fazla bilgi için, [ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md)makalesine bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="end_proppageids"></a><a name="end_proppageids"></a>END_PROPPAGEIDS
 
-Özellik sayfası kimlik listenizin tanımını sona erdirer.
+Özellik sayfası KIMLIK listenizin tanımını sonlandırır.
 
 ```
 END_PROPPAGEIDS(class_name)
@@ -453,13 +453,13 @@ END_PROPPAGEIDS(class_name)
 ### <a name="parameters"></a>Parametreler
 
 *class_name*<br/>
-Özellik sayfasının sahibi denetim sınıfının adı.
+Özellik sayfasının sahibi olan denetim sınıfının adı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
-## <a name="proppageid"></a><a name="proppageid"></a>PROPPAGEID
+## <a name="proppageid"></a><a name="proppageid"></a>PROPPAGEıD
 
 OLE denetiminiz tarafından kullanılmak üzere bir özellik sayfası ekler.
 
@@ -469,17 +469,17 @@ PROPPAGEID(clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*Clsıd*<br/>
-Özellik sayfasının benzersiz sınıf kimliği.
+*in*<br/>
+Özellik sayfasının benzersiz sınıf KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm PROPPAGEID makroları, denetiminizin uygulama dosyasındaki BEGIN_PROPPAGEIDS ve END_PROPPAGEIDS makrolar arasına yerleştirilmelidir.
+Tüm PROPPAGEıD makroları, denetimin uygulama dosyasında BEGIN_PROPPAGEIDS ve END_PROPPAGEIDS makroları arasına yerleştirilmelidir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxctl.h
+  **Başlık** afxctl. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - declaring arrays
 - arrays [C++], declaring
 ms.assetid: 5f958b97-cef0-4058-bbc6-37c460aaed9b
-ms.openlocfilehash: 4bc75e86601da77758490544cc5b02c485dcee46
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 917d79a7c4f4d030efaaa769ca8f205cf37f55fe
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313551"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218929"
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 
@@ -28,17 +28,17 @@ ms.locfileid: "62313551"
 
 *init-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *başlatıcısı*
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci* **=** *Başlatıcı*
 
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*Direct-bildirimci*:/\* bir işlev bildirimci\*/<br/>
+*Direct-bildirimci*:/ \* bir işlev bildirimci\*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Direct-declarator*  **[**  *sabit ifade*<sub>katılımı</sub> **]**
 
 *Sabit ifade* isteğe bağlı olduğundan, sözdiziminin iki biçimi vardır:
 
-- İlk form bir dizi değişkenini tanımlar. Köşeli ayraçlar içindeki *sabit ifade* bağımsız değişkeni dizideki öğelerin sayısını belirtir. Varsa, *sabit ifadesi*integral türüne ve sıfırdan büyük bir değere sahip olmalıdır. Her öğe tür *belirleyicisi*tarafından verilen türe sahiptir; bu, dışında `void`herhangi bir tür olabilir. Dizi öğesi bir işlev türü olamaz.
+- İlk form bir dizi değişkenini tanımlar. Köşeli ayraçlar içindeki *sabit ifade* bağımsız değişkeni dizideki öğelerin sayısını belirtir. Varsa, *sabit ifadesi*integral türüne ve sıfırdan büyük bir değere sahip olmalıdır. Her öğe tür *belirleyicisi*tarafından verilen türe sahiptir; bu, dışında herhangi bir tür olabilir **`void`** . Dizi öğesi bir işlev türü olamaz.
 
 - İkinci form, başka bir yerde tanımlanmış bir değişken bildirir. Köşeli ayraçlar değil parantez içinde *sabit ifade* bağımsız değişkenini atlar. Bu formu yalnızca, diziyi önceden oluşturduysanız veya bir parametre olarak bildirildiği ya da programın başka bir yerde açıkça tanımlanmış bir diziye başvuru olarak bildirildiği durumlarda kullanabilirsiniz.
 
@@ -72,7 +72,7 @@ Bu örneklerde dizi bildirimleri gösterilmektedir:
 float matrix[10][15];
 ```
 
-Adlı `matrix` iki boyutlu dizide, her birinin **float** türüne sahip 150 öğesi vardır.
+Adlı iki boyutlu dizide `matrix` , her biri türüne sahip 150 öğe vardır **`float`** .
 
 ```C
 struct {
@@ -86,14 +86,14 @@ Bu bir yapı dizisinin bir bildirimidir. Bu dizide 100 öğe vardır; her öğe 
 extern char *name[];
 ```
 
-Bu ifade, işaretçilerin bir dizisinin türünü ve adını bildirir `char`. Gerçek tanımı başka bir `name` yerde gerçekleşir.
+Bu ifade, işaretçilerin bir dizisinin türünü ve adını bildirir **`char`** . Gerçek tanımı `name` başka bir yerde gerçekleşir.
 
 **Microsoft'a Özgü**
 
-Bir dizinin en büyük boyutunu tutmak için gereken tamsayı türü **size_t**boyutudur. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** 0x00000000 `unsigned int` Ile 0x7CFFFFFF arasındadır.
+Bir dizinin en büyük boyutunu tutmak için gereken tamsayı türü **size_t**boyutudur. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** **`unsigned int`** 0x00000000 Ile 0x7CFFFFFF arasındadır.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+[Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)

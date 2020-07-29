@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: bdd3da8d3a5165262c00bc3475122e31f5770726
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9a8976700cfb0f333c2715c573aa2d239e2a8e3a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270399"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218994"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H (Dış Adların Uzunluğunu Kısıtla)
 
@@ -27,30 +27,30 @@ Kullanım dışı. Dış adların uzunluğunu kısıtlar.
 
 ## <a name="arguments"></a>Arguments
 
-*Sayı*<br/>
-Dış adlar bir programda izin verilen en büyük uzunluğunu belirtir.
+*sayı*<br/>
+Bir programda izin verilen en fazla dış ad uzunluğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, dış (ortak) adların uzunluğunu 2.047 karakterdir. Bu, C ve C++ programları için geçerlidir. Kullanarak **/H** yalnızca tanımlayıcıları için izin verilen uzunluk sınırını azaltın, artırmak değildir. Arasında boşluk **/H** ve *numarası* isteğe bağlıdır.
+Varsayılan olarak, dış (genel) adların uzunluğu 2.047 karakterdir. Bu, C ve C++ programları için geçerlidir. **/H** kullanılması yalnızca izin verilen en fazla tanımlayıcı uzunluğunu azaltabilir, bunu artırmaz. **/H** ve *sayı* arasındaki boşluk isteğe bağlıdır.
 
-Dış adlar daha uzun bir program içeriyorsa *numarası*, ek karakterler yoksayılır. Bir program olmadan derlerseniz **/H** ve tanımlayıcı 2.047'den fazla karakter içeriyorsa, derleyici oluşturacak [önemli hata C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md).
+Bir program *sayıdan*daha uzun dış adlar içeriyorsa, ek karakterler yok sayılır. Bir programı **/h** olmadan derlerseniz ve bir tanımlayıcı 2.047 'den fazla karakter içeriyorsa, derleyici [Önemli Hata C1064](../../error-messages/compiler-errors-1/fatal-error-c1064.md)oluşturacaktır.
 
-Tüm derleyici tarafından oluşturulan altçizgiyi uzunluğu sınırı içerir (**\_**) veya at işareti (**\@**). Bu karakterler, tanımlayıcı bir parçasıdır ve önemli bir konuma taşıyın.
+Uzunluk sınırı, derleyici tarafından oluşturulan öndeki alt çizgi ( **\_** ) veya işareti ( **\@** ) içerir. Bu karakterler tanımlayıcının bir parçasıdır ve önemli bir konum alır.
 
-- Derleyici bir alt çizgi ekler (**\_**) değiştiren adlarına `__cdecl` (varsayılan) ve `__stdcall` işaretini çağırma kuralları ve önde gelen (**\@** ) değiştiren adlarına `__fastcall` çağırma kuralı.
+- Derleyici, **\_** (varsayılan) ve çağırma kuralları tarafından değiştirilen adlara, baştaki bir alt çizgi () **`__cdecl`** **`__stdcall`** ve **\@** çağrı kuralı tarafından değiştirilen adlara () işareti ekler **`__fastcall`** .
 
-- Adlarını değiştiren derleyici bağımsız değişkeni boyut bilgileri ekler `__fastcall` ve `__stdcall` çağırma kuralları ve C++ adları için tür bilgilerini ekler.
+- Derleyici, bağımsız değişken boyut bilgilerini ve çağırma kuralları tarafından değiştirilen adlara ekler **`__fastcall`** **`__stdcall`** ve C++ adlarına tür bilgilerini ekler.
 
-İlginizi çekebilecek **/H** yararlıdır:
+**/H** yararlı bulabilirsiniz:
 
-- Karma dil veya taşınabilir programlar oluşturduğunuzda.
+- Karışık dil veya taşınabilir programlar oluşturduğunuzda.
 
-- Dış tanımlayıcı için bir uzunluk sınırları zorunlu tuttukları araçlarını kullandığınızda.
+- Dış tanımlayıcıların uzunluğuna sınır uygulayan araçlar kullandığınızda.
 
-- Hata ayıklama sembolleri kullanan boşluk miktarını sınırlamak istediğinizde.
+- Bir hata ayıklama derlemesinde simgelerin kullandığı alan miktarını kısıtlamak istediğinizde.
 
-Aşağıdaki örnekte gösterildiği nasıl kullanarak **/H** gerçekten tanımlayıcısı uzunlukları çok sınırlı olması durumunda hatalara neden olabilir:
+Aşağıdaki örnek, bir tanımlayıcı uzunlukları çok fazla sınırlıysa **/h** 'in nasıl hata verebileceğini gösterir:
 
 ```cpp
 // compiler_option_H.cpp
@@ -66,19 +66,19 @@ void func1(void) {}
 void func2(void) {}
 ```
 
-Ayrıca kullanırken dikkatli olmanız gerekir **/H** seçeneği önceden tanımlanmış derleyici tanımlayıcı nedeniyle. En fazla tanımlayıcı uzunluğu çok küçükse, önceden tanımlanmış belirli tanımlayıcıları çözümlenmemiş yanı sıra belirli bir kitaplığı işlev çağrıları olacaktır. Örneğin, varsa `printf` işlevi kullanılır ve seçeneği **/H5** derleme zamanında sembolü belirtilen **_prin** başvurmak için oluşturulacak `printf`, ve bu bulunamayacaktır Kitaplıkta.
+Ayrıca, önceden tanımlanmış derleyici tanımlayıcıları nedeniyle **/h** seçeneğini kullanırken dikkatli olmanız gerekir. En fazla tanımlayıcı uzunluğu çok küçükse, bazı önceden tanımlanmış tanımlayıcıların yanı sıra belirli kitaplık işlev çağrıları da çözülmeyecektir. Örneğin, `printf` işlev kullanılıyorsa ve derleme zamanında **/H5** seçeneği belirtilmişse, sembol **_prin** başvurmak için oluşturulur `printf` ve bu, kitaplıkta bulunamacaktır.
 
-Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](gl-whole-program-optimization.md).
+**/H** kullanımı [/GL (tüm program iyileştirmesi)](gl-whole-program-optimization.md)ile uyumsuzdur.
 
-**/H** Visual Studio 2005 seçeneği kullanım dışı; en fazla uzunluk sınırları yükseltildi ve **/H** artık gerekli değildir. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
+**/H** seçeneği Visual Studio 2005 ' den beri kullanım dışıdır; Maksimum uzunluk sınırları arttı ve **/h** artık gerekli değildir. Kullanım dışı bırakılan derleyici seçeneklerinin bir listesi için, bkz. [kategoriye göre listelenen derleyici seçeneklerinde](compiler-options-listed-by-category.md) **kullanım dışı ve kaldırılmış derleyici seçenekleri** .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Derleyici seçeneğini girin **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusunda derleyici seçeneğini girin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -86,5 +86,5 @@ Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](gl-whole-pro
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)

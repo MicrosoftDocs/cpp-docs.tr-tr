@@ -1,19 +1,19 @@
 ---
-title: Genel arabirimler (C++/CLI)
+title: Genel Arabirimler (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - generic interfaces
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
-ms.openlocfilehash: 35dba37f1441144a3f7276388be1f61bebc84139
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f5a74eaafa7ff348079ec367a7c2318f86081f15
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182025"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218032"
 ---
-# <a name="generic-interfaces-ccli"></a>Genel arabirimler (C++/CLI)
+# <a name="generic-interfaces-ccli"></a>Genel Arabirimler (C++/CLI)
 
 Sınıflarda tür parametrelerine uygulanan kısıtlamalar, arabirimlerde tür parametrelerine uygulananlarla aynıdır (bkz. [genel sınıflar (C++/CLI)](generic-classes-cpp-cli.md)).
 
@@ -36,13 +36,13 @@ Arabirimler hakkında daha fazla bilgi için bkz. [interface class](interface-cl
 Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikler**.
 
 *sınıf anahtarı*<br/>
-**Class** veya **TypeName**
+**`class`** veya**`typename`**
 
 *tür-parametre tanımlayıcıları*<br/>
 Virgülle ayrılmış tanımlayıcılar listesi.
 
 *tür-parametre-kısıtlamalar-yan tümceler*<br/>
-[Genel tür parametrelerindeki (C++/CLI) kısıtlamalarda](constraints-on-generic-type-parameters-cpp-cli.md) belirtilen formu alır
+[Genel tür parametrelerindeki kısıtlamalarda belirtilen formu alır (C++/CLI)](constraints-on-generic-type-parameters-cpp-cli.md)
 
 *Erişilebilirlik-değiştiriciler*<br/>
 Seçim Erişilebilirlik değiştiricileri (örn. **Genel, özel**).
@@ -61,7 +61,7 @@ Seçim Bu türe göre değişkenlerin bildirimleri.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, genel bir arabirimin nasıl bildirildiği ve örneklendirileceğini gösterilmektedir. Örnekte, genel arabirim `IList<ItemType>` bildirilmiştir. Daha sonra, farklı uygulamalarla `List1<ItemType>` ve `List2<ItemType>`iki genel sınıf tarafından uygulanır.
+Aşağıdaki örnekte, genel bir arabirimin nasıl bildirildiği ve örneklendirileceğini gösterilmektedir. Örnekte, genel arabirim `IList<ItemType>` bildirilmiştir. Daha sonra iki genel sınıf `List1<ItemType>` ve `List2<ItemType>` farklı uygulamalarla uygulanır.
 
 ```cpp
 // generic_interface.cpp
@@ -238,7 +238,7 @@ List2
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, `IMyGenIface`özelleştirecek genel bir arabirim, `IMyGenIface`ve genel olmayan iki arabirim `IMySpecializedInt` ve `ImySpecializedString`bildirir. Bu iki özel arabirim daha sonra iki sınıf tarafından uygulanır, `MyIntClass` ve `MyStringClass`. Örnek, genel arabirimlerin nasıl özelleştirilecek, genel ve genel olmayan arabirimlerin nasıl oluşturulacağı ve arabirimlerde açıkça uygulanan üyelerin nasıl çağrılacağını gösterir.
+Bu örnek, genel bir arabirim, `IMyGenIface` ve genel olmayan iki arabirim bildirir ve bu `IMySpecializedInt` `ImySpecializedString` specialize `IMyGenIface` . Bu iki özel arabirim daha sonra iki sınıf tarafından uygulanır `MyIntClass` ve `MyStringClass` . Örnek, genel arabirimlerin nasıl özelleştirilecek, genel ve genel olmayan arabirimlerin nasıl oluşturulacağı ve arabirimlerde açıkça uygulanan üyelerin nasıl çağrılacağını gösterir.
 
 ```cpp
 // generic_interface2.cpp

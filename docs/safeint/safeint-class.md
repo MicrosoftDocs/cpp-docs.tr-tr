@@ -10,12 +10,12 @@ helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-ms.openlocfilehash: 0445901f935dbf16872dfeca40ca8d9808dd774e
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 97d81401cfd01d6d39457a9d63c39bc25901128e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737577"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219358"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 
@@ -49,13 +49,13 @@ class SafeInt;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-| Name                          |  Açıklama |
+| Ad                          |  Açıklama |
 |---------------------------|--------------------|
 | [SafeInt::SafeInt](#safeint)  |  Varsayılan Oluşturucu. |
 
 ### <a name="assignment-operators"></a>Atama İşleçleri
 
-| Name  |  Sözdizimi |
+| Ad  |  Sözdizimi |
 |----|---------|
 | =     |  `template<typename U>`<br />`SafeInt<T,E>& operator= (const U& rhs)` |
 | =     |  `SafeInt<T,E>& operator= (const T& rhs) throw()` |
@@ -64,7 +64,7 @@ class SafeInt;
 
 ### <a name="casting-operators"></a>Atama İşleçleri
 
-| Name              |  Sözdizimi |
+| Ad              |  Sözdizimi |
 |------|---------------------------------|
 | bool              |  `operator bool() throw()` |
 | char              |  `operator char() const` |
@@ -82,7 +82,7 @@ class SafeInt;
 
 ### <a name="comparison-operators"></a>Karşılaştırma İşleçleri
 
-| Name  |  Sözdizimi |
+| Ad  |  Sözdizimi |
 |----|----------------|
 | \<     |  `template<typename U>`<br /><br /> `bool operator< (U rhs) const throw()` |
 | \<     |  `bool operator< (SafeInt<T,E> rhs) const throw()` |
@@ -101,7 +101,7 @@ class SafeInt;
 
 ### <a name="arithmetic-operators"></a>Aritmetik İşleçler
 
-| Name  |  Sözdizimi |
+| Ad  |  Sözdizimi |
 |----|--------------|
 | +     |  `const SafeInt<T,E>& operator+ () const throw()` |
 | -     |  `SafeInt<T,E> operator- () const` |
@@ -134,7 +134,7 @@ class SafeInt;
 
 ### <a name="logical-operators"></a>Mantıksal İşleçler
 
-| Name     |  Sözdizimi |
+| Ad     |  Sözdizimi |
 |------|--------------|
 | !        |  `bool operator !() const throw()` |
 | ~        |  `SafeInt<T,E> operator~ () const throw()` |
@@ -187,7 +187,7 @@ SafeInt nesnesiyle mantıksal bir karşılaştırma yaptığınızda karşılaş
 
 - `((uint)~0) > -1`
 
-İlk ifade **true**olarak çözümlenir, ancak ikinci ifade olarak çözümlenir `false` . 0 bit düzeyinde Olumsuzlaştırma değeri 0xFFFFFFFF ' dir. İkinci ifadede, varsayılan karşılaştırma işleci 0xFFFFFFFF ile 0xFFFFFFFF arasında karşılaştırır ve bunların eşit olduğunu varsayar. Sınıfın karşılaştırma operatörü `SafeInt` ikinci parametrenin negatif olduğunu, ancak ilk parametre işaretsiz olduğunu gösterir. Bu nedenle, bit temsili özdeş olsa da, `SafeInt` mantıksal işleç işaretsiz tamsayının-1 ' den büyük olduğunu farkettir.
+İlk ifade olarak çözümlenir **`true`** , ancak ikinci ifade olarak çözümlenir **`false`** . 0 bit düzeyinde Olumsuzlaştırma değeri 0xFFFFFFFF ' dir. İkinci ifadede, varsayılan karşılaştırma işleci 0xFFFFFFFF ile 0xFFFFFFFF arasında karşılaştırır ve bunların eşit olduğunu varsayar. Sınıf için karşılaştırma işleci `SafeInt` ikinci parametrenin negatif olduğunu, ancak ilk parametre imzasız olduğunu gösterir. Bu nedenle, bit temsili özdeş olsa da, `SafeInt` mantıksal işleç işaretsiz tamsayının-1 ' den büyük olduğunu farkettir.
 
 `SafeInt`Sınıfını Üçlü işleçle birlikte kullanırken dikkatli olun `?:` . Aşağıdaki kod satırını göz önünde bulundurun.
 
@@ -201,7 +201,7 @@ Derleyici bunu buna dönüştürür:
 Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);
 ```
 
-`flag`İse `false` , derleyici-1 değerini olarak atamak yerine bir özel durum atar `x` . Bu nedenle, bu davranışı önlemek için, kullanılacak doğru kod aşağıdaki satırdır.
+`flag`İse **`false`** , derleyici-1 değerini olarak atamak yerine bir özel durum atar `x` . Bu nedenle, bu davranışı önlemek için, kullanılacak doğru kod aşağıdaki satırdır.
 
 ```cpp
 Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;

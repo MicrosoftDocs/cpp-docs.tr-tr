@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - do-while keyword [C]
 ms.assetid: f2ac20a6-10c7-4a08-b5e3-c3b3639dbeaf
-ms.openlocfilehash: 3658fe7635ad77db6d6e08ff9d7c30e29d665721
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4a10b9df9f7276eb8e241d76726bca26f2c0cb75
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438595"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218877"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 
@@ -19,7 +19,7 @@ ms.locfileid: "79438595"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*yineleme-deyimi*: &nbsp; &nbsp; &nbsp; &nbsp; **Do***deyimi***while (***ifade***);**        
+*yineleme-deyimi*: &nbsp; &nbsp; &nbsp; &nbsp; **`do`** *deyim***while (***ifade***);**        
 
 *Do-while* deyimi içindeki *ifade* , döngünün gövdesi yürütüldükten sonra değerlendirilir. Bu nedenle, döngünün gövdesi her zaman en az bir kez yürütülür.
 
@@ -29,7 +29,7 @@ ms.locfileid: "79438595"
 
 1. Sonra *ifade* değerlendirilir. *İfade* false ise *do-while* deyimi sonlanır ve denetim programdaki sonraki deyime geçer. *İfade* true (sıfır dışında) ise işlem, 1. adımdan itibaren yinelenir.
 
-Deyimdeki bir **Break**, **goto**veya **Return** deyimleri yürütüldüğünde *do-while* ifadesini de sonlandırabilirsiniz.
+*Do-while* deyimleri **`break`** , bir, **`goto`** veya **`return`** deyimleri deyimin gövdesinde yürütüldüğünde de sonlanabilir.
 
 Bu, *do-while* ifadesinin bir örneğidir:
 
@@ -41,7 +41,7 @@ do
 } while ( x > 0 );
 ```
 
-Bu *do-while* deyiminde, başlangıç değerinden bağımsız olarak `y = f( x );` iki `x--;` deyim ve yürütülür `x`. Sonra `x > 0` değerlendirilir. `x` 0 ' dan büyükse, ifade gövdesi yeniden yürütülür ve `x > 0` yeniden değerlendirilirse. Deyimin gövdesi, 0 ' dan büyük `x` kaldığı sürece tekrar tekrar yürütülür. *Do-while* ifadesinin yürütülmesi 0 veya negatif olduğunda `x` sonlanır. Döngünün gövdesi en az bir kez yürütülür.
+Bu *do-while* deyiminde, `y = f( x );` başlangıç değerinden bağımsız olarak iki deyim ve `x--;` yürütülür `x` . Sonra `x > 0` değerlendirilir. `x`0 ' dan büyükse, ifade gövdesi yeniden yürütülür ve yeniden `x > 0` değerlendirilirse. Deyimin gövdesi, `x` 0 ' dan büyük kaldığı sürece tekrar tekrar yürütülür. *Do-while* ifadesinin yürütülmesi `x` 0 veya negatif olduğunda sonlanır. Döngünün gövdesi en az bir kez yürütülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

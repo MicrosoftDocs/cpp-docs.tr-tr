@@ -1,5 +1,5 @@
 ---
-title: CSimpleStringT Sınıfı
+title: CSimpleStringT sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CSimpleStringT
@@ -36,18 +36,18 @@ helpviewer_keywords:
 - strings [C++], ATL class
 - CSimpleStringT class
 ms.assetid: 15814fcb-5b8f-4425-a97e-3b61fc9b48d8
-ms.openlocfilehash: 76d418c4f063d5787209ea72e7c681013eb37801
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: bbbab04ff311d874fc209d2c46fadda57e79a222
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747040"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219098"
 ---
-# <a name="csimplestringt-class"></a>CSimpleStringT Sınıfı
+# <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 
-Bu sınıf `CSimpleStringT` bir nesneyi temsil eder.
+Bu sınıf bir nesneyi temsil eder `CSimpleStringT` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <typename BaseType>
@@ -57,81 +57,81 @@ class CSimpleStringT
 ### <a name="parameters"></a>Parametreler
 
 *BaseType*<br/>
-String sınıfının karakter türü. Aşağıdakilerden biri olabilir:
+Dize sınıfının karakter türü. Aşağıdakilerden biri olabilir:
 
-- **char** (ANSI karakter dizeleri için).
+- **`char`**(ANSI karakter dizeleri için).
 
-- **wchar_t** (Unicode karakter dizeleri için).
+- **`wchar_t`**(Unicode karakter dizeleri için).
 
 - TCHAR (hem ANSI hem de Unicode karakter dizeleri için).
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSimpleStringT::PCXSTR](#pcxstr)|Sabit bir dize için bir işaretçi.|
-|[CSimpleStringT::PXSTR](#pxstr)|Dize için bir işaretçi.|
+|[CSimpleStringT::P CXSTR](#pcxstr)|Sabit dize işaretçisi.|
+|[CSimpleStringT::P XSTR](#pxstr)|Dize işaretçisi.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSimpleStringt::CSimpleStringt](#ctor)|Nesneleri `CSimpleStringT` çeşitli şekillerde inşa eder.|
-|[CSimpleStringt::~CSimpleStringt](#dtor)|Yıkıcı.|
+|[CSimpleStringT:: CSimpleStringT](#ctor)|`CSimpleStringT`Nesneleri çeşitli şekillerde oluşturur.|
+|[CSimpleStringT:: ~ CSimpleStringT](#dtor)|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSimpleStringT::Ek](#append)|Varolan `CSimpleStringT` `CSimpleStringT` bir nesneye bir nesne ekler.|
-|[CSimpleStringT::AppendChar](#appendchar)|Varolan `CSimpleStringT` bir nesneye bir karakter ekler.|
-|[CSimpleStringT::CopyChars](#copychars)|Bir karakteri veya karakteri başka bir dize kopyalar.|
-|[CSimpleStringT::CopyCharsOverlapped](#copycharsoverlapped)|Bir karakteri veya karakteri arabelleklerin çakıştüğü başka bir dize kopyalar.|
-|[CSimpleStringT::Boş](#empty)|Bir dizeyi sıfır uzunluğuna zorlar.|
-|[CSimpleStringT::FreeExtra](#freeextra)|Dize nesnesi tarafından daha önce ayrılan herhangi bir ek belleği serbest eder.|
-|[CSimpleStringT::GetAllocLength](#getalloclength)|Bir `CSimpleStringT` nesnenin ayrılan uzunluğunu alır.|
-|[CSimpleStringT::Getat](#getat)|Karakteri belirli bir konumda döndürür.|
-|[CSimpleStringT::GetBuffer](#getbuffer)|Bir `CSimpleStringT`' deki karakterlere işaretçi verir.|
-|[CSimpleStringT::GetBufferSetLength](#getbuffersetlength)|Bir işaretçiyi , belirtilen `CSimpleStringT`uzunluğa kesilen karakterlere döndürür.|
-|[CSimpleStringT::Getlength](#getlength)|Bir `CSimpleStringT` nesnedeki karakter sayısını döndürür.|
-|[CSimpleStringT::GetManager](#getmanager)|Nesnenin bellek yöneticisini `CSimpleStringT` alır.|
-|[CSimpleStringT::GetString](#getstring)|Karakter dizesini alır|
-|[CSimpleStringT::Boş](#isempty)|Nesnenin `CSimpleStringT` karakter içerip içermediğini sınar.|
-|[CSimpleStringT::LockAraffer](#lockbuffer)|Başvuru sayma devre dışı kılabilir ve arabellekteki dizeyi korur.|
-|[CSimpleStringT::P](#preallocate)|Karakter arabelleği için belirli bir bellek miktarı ayırır.|
-|[CSimpleStringT::ReleaseArabellek](#releasebuffer)|`GetBuffer`Tarafından döndürülen arabelleğe denetim serbest|
-|[CSimpleStringT::ReleaseBufferSetLength](#releasebuffersetlength)|`GetBuffer`Tarafından döndürülen arabelleğe denetim serbest|
-|[CSimpleStringT::Setat](#setat)|Belirli bir konumda bir karakter ayarlar.|
-|[CSimpleStringT::SetManager](#setmanager)|Bir `CSimpleStringT` nesnenin bellek yöneticisini ayarlar.|
-|[CSimpleStringT::SetString](#setstring)|`CSimpleStringT` Nesnenin dizesini ayarlar.|
-|[CSimpleStringT::StringLength](#stringlength)|Belirtilen dizedeki karakter sayısını verir.|
-|[CSimpleStringT::Truncate](#truncate)|Dizeyi belirli bir uzunluğa bağlar.|
-|[CSimpleStringT::UnlockAraffer](#unlockbuffer)|Başvuru sayımını sağlar ve arabellekteki dizeyi serbest bırakır.|
+|[CSimpleStringT:: Append](#append)|Varolan bir `CSimpleStringT` nesneye bir nesne ekler `CSimpleStringT` .|
+|[CSimpleStringT:: AppendChar](#appendchar)|Varolan bir nesneye bir karakter ekler `CSimpleStringT` .|
+|[CSimpleStringT:: CopyChars](#copychars)|Bir karakteri veya karakteri başka bir dizeye kopyalar.|
+|[CSimpleStringT:: Copycharsoverladmış](#copycharsoverlapped)|Bir karakteri veya karakterleri, arabelleklerin çakıştığı başka bir dizeye kopyalar.|
+|[CSimpleStringT:: Empty](#empty)|Bir dizeyi sıfır uzunluğuna zorlar.|
+|[CSimpleStringT:: FreeExtra](#freeextra)|Dize nesnesi tarafından daha önce ayrılan ek belleği serbest bırakır.|
+|[CSimpleStringT:: GetAllocLength](#getalloclength)|Bir nesnenin ayrılan uzunluğunu alır `CSimpleStringT` .|
+|[CSimpleStringT:: GetAt](#getat)|Verilen konumdaki karakteri döndürür.|
+|[CSimpleStringT:: GetBuffer](#getbuffer)|İçindeki karakterlere bir işaretçi döndürür `CSimpleStringT` .|
+|[CSimpleStringT:: GetBufferSetLength](#getbuffersetlength)|İçindeki karakterlere bir işaretçi döndürür `CSimpleStringT` , belirtilen uzunluğa kesiliyor.|
+|[CSimpleStringT:: GetLength](#getlength)|Bir nesnedeki karakter sayısını döndürür `CSimpleStringT` .|
+|[CSimpleStringT:: GetManager](#getmanager)|Nesnenin bellek yöneticisini alır `CSimpleStringT` .|
+|[CSimpleStringT:: GetString](#getstring)|Karakter dizesini alır|
+|[CSimpleStringT:: IsEmpty](#isempty)|Bir `CSimpleStringT` nesnenin karakter içerip içermediğini test eder.|
+|[CSimpleStringT:: LockBuffer](#lockbuffer)|Başvuru saymayı devre dışı bırakır ve arabellekteki dizeyi korur.|
+|[CSimpleStringT::P yeniden tahsis](#preallocate)|Karakter arabelleği için belirli miktarda bellek ayırır.|
+|[CSimpleStringT:: ReleaseBuffer](#releasebuffer)|Tarafından döndürülen arabelleğin denetimini yayınlar `GetBuffer` .|
+|[CSimpleStringT:: ReleaseBufferSetLength](#releasebuffersetlength)|Tarafından döndürülen arabelleğin denetimini yayınlar `GetBuffer` .|
+|[CSimpleStringT:: SetAt](#setat)|Verilen konumda bir karakter ayarlar.|
+|[CSimpleStringT:: SetManager](#setmanager)|Bir nesnenin bellek yöneticisini ayarlar `CSimpleStringT` .|
+|[CSimpleStringT:: SetString](#setstring)|Bir nesnenin dizesini ayarlar `CSimpleStringT` .|
+|[CSimpleStringT:: StringLength](#stringlength)|Belirtilen dizedeki karakter sayısını döndürür.|
+|[CSimpleStringT:: Truncate](#truncate)|Dizeyi belirtilen uzunluğa kırpar.|
+|[CSimpleStringT:: UnlockBuffer](#unlockbuffer)|Başvuru saymayı ve arabellekteki dizeyi serbest bırakır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSimpleStringT::operatör PCXSTR](#operator_pcxstr)|C stili dize olarak `CSimpleStringT` bir nesnede depolanan karakterlere doğrudan erişir.|
-|[CSimpleStringT::işleç\[\]](#operator_at)|Karakteri belirli bir konumda döndürür — `GetAt`operatör ikamesi için .|
-|[CSimpleStringT::işleç +=](#operator_add_eq)|Varolan bir dize sonuna yeni bir dize concatenates.|
-|[CSimpleStringT::operatör =](#operator_eq)|Nesneye yeni bir `CSimpleStringT` değer atar.|
+|[CSimpleStringT:: operator PCXSTR](#operator_pcxstr)|Bir nesnede depolanan karakterlere doğrudan `CSimpleStringT` C stili dize olarak erişir.|
+|[CSimpleStringT:: işleci\[\]](#operator_at)|Verilen konumdaki karakteri döndürür — için işleç değiştirme `GetAt` .|
+|[CSimpleStringT:: operator + =](#operator_add_eq)|Varolan bir dizenin sonuna yeni bir dize ekler.|
+|[CSimpleStringT:: operator =](#operator_eq)|Nesnesine yeni bir değer atar `CSimpleStringT` .|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleStringT`Visual C++ tarafından desteklenen çeşitli dize sınıfları için taban sınıftır. Dize nesnesinin bellek yönetimi ve temel arabellek işlemesi için en az destek sağlar. Daha gelişmiş dize nesneleri için [CStringT Sınıfı'na](../../atl-mfc-shared/reference/cstringt-class.md)bakın.
+`CSimpleStringT`, Visual C++ tarafından desteklenen çeşitli dize sınıfları için temel sınıftır. Dize nesnesinin bellek yönetimi ve temel arabellek düzenlemesi için en düşük desteği sağlar. Daha gelişmiş dize nesneleri için bkz. [CStringT sınıfı](../../atl-mfc-shared/reference/cstringt-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsimpstr.h
+**Üstbilgi:** atlsimpstr. h
 
-## <a name="csimplestringtappend"></a><a name="append"></a>CSimpleStringT::Ek
+## <a name="csimplestringtappend"></a><a name="append"></a>CSimpleStringT:: Append
 
-Varolan `CSimpleStringT` `CSimpleStringT` bir nesneye bir nesne ekler.
+Varolan bir `CSimpleStringT` nesneye bir nesne ekler `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void Append(const CSimpleStringT& strSrc);
@@ -142,21 +142,21 @@ void Append(PCXSTR pszSrc);
 #### <a name="parameters"></a>Parametreler
 
 *strSrc*<br/>
-Eklenecek `CSimpleStringT` nesne.
+`CSimpleStringT`Eklenecek nesne.
 
 *pszSrc*<br/>
-Eklenecek karakterleri içeren bir dize için bir işaretçi.
+Eklenecek karakterleri içeren bir dize işaretçisi.
 
-*nUzunluk*<br/>
-Ekinde ekili karakter sayısı.
+*nLength*<br/>
+Eklenecek karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varolan `CSimpleStringT` bir nesneyi başka `CSimpleStringT` bir nesneye eklemek için bu yöntemi çağırın.
+Varolan bir `CSimpleStringT` nesneyi başka bir nesneye eklemek için bu yöntemi çağırın `CSimpleStringT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::Append`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::Append` .
 
 ```cpp
 CSimpleString str1(pMgr), str2(pMgr);
@@ -166,11 +166,11 @@ str1.Append(str2);
 ASSERT(_tcscmp(str1, _T("Soccer is an elegant game")) == 0);
 ```
 
-## <a name="csimplestringtappendchar"></a><a name="appendchar"></a>CSimpleStringT::AppendChar
+## <a name="csimplestringtappendchar"></a><a name="appendchar"></a>CSimpleStringT:: AppendChar
 
-Varolan `CSimpleStringT` bir nesneye bir karakter ekler.
+Varolan bir nesneye bir karakter ekler `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void AppendChar(XCHAR ch);
@@ -178,18 +178,18 @@ void AppendChar(XCHAR ch);
 
 #### <a name="parameters"></a>Parametreler
 
-*Caner*<br/>
+*denetleyebilirsiniz*<br/>
 Eklenecek karakter
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen karakteri varolan `CSimpleStringT` bir nesnenin sonuna eklemek için bu işlevi çağırın.
+Belirtilen karakteri varolan bir nesnenin sonuna eklemek için bu işlevi çağırın `CSimpleStringT` .
 
-## <a name="csimplestringtcopychars"></a><a name="copychars"></a>CSimpleStringT::CopyChars
+## <a name="csimplestringtcopychars"></a><a name="copychars"></a>CSimpleStringT:: CopyChars
 
-Bir karakteri veya karakteri bir `CSimpleStringT` nesneye kopyalar.
+Bir karakteri veya karakterleri `CSimpleStringT` nesnesine kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 static void CopyChars(
@@ -201,21 +201,21 @@ static void CopyChars(
 #### <a name="parameters"></a>Parametreler
 
 *pchDest*<br/>
-Karakter dizesine işaretçi.
+Karakter dizesinin işaretçisi.
 
 *pchSrc*<br/>
-Kopyalanacak karakterleri içeren bir dize için bir işaretçi.
+Kopyalanacak karakterleri içeren bir dize işaretçisi.
 
-*nChars*<br/>
+*Nchar 'lar*<br/>
 Kopyalanacak *pchSrc* karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PchSrc'den* *pchDest* dizesine karakterleri kopyalamak için bu yöntemi arayın.
+*PchSrc* 'Den *pchDest* dizesine karakter kopyalamak için bu yöntemi çağırın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::CopyChars`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::CopyChars` .
 
 ```cpp
 CSimpleString str(_T("xxxxxxxxxxxxxxxxxxx"), 20, pMgr);
@@ -225,11 +225,11 @@ str.CopyChars(str.GetBuffer(), pszSrc, 12);
 _tprintf_s(_T("%s\n"), str);
 ```
 
-## <a name="csimplestringtcopycharsoverlapped"></a><a name="copycharsoverlapped"></a>CSimpleStringT::CopyCharsOverlapped
+## <a name="csimplestringtcopycharsoverlapped"></a><a name="copycharsoverlapped"></a>CSimpleStringT:: Copycharsoverladmış
 
-Bir karakteri veya karakteri bir `CSimpleStringT` nesneye kopyalar.
+Bir karakteri veya karakterleri `CSimpleStringT` nesnesine kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 static void CopyCharsOverlapped(
@@ -241,27 +241,27 @@ static void CopyCharsOverlapped(
 #### <a name="parameters"></a>Parametreler
 
 *pchDest*<br/>
-Karakter dizesine işaretçi.
+Karakter dizesinin işaretçisi.
 
 *pchSrc*<br/>
-Kopyalanacak karakterleri içeren bir dize için bir işaretçi.
+Kopyalanacak karakterleri içeren bir dize işaretçisi.
 
-*nChars*<br/>
+*Nchar 'lar*<br/>
 Kopyalanacak *pchSrc* karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PchSrc'den* *pchDest* dizesine karakterleri kopyalamak için bu yöntemi arayın. `CopyChars`Aksine, `CopyCharsOverlapped` çakışmış olabilir karakter arabelleklerinden kopyalama için güvenli bir yöntem sağlar.
+*PchSrc* 'Den *pchDest* dizesine karakter kopyalamak için bu yöntemi çağırın. Aksine `CopyChars` , `CopyCharsOverlapped` Çakışan karakter arabelleklerinden kopyalamak için güvenli bir yöntem sağlar.
 
 ### <a name="example"></a>Örnek
 
-[CSimpleStringT örneğine bakın:CopyChars](#copychars)veya kaynak kodu `CSimpleStringT::SetString` (atlsimpstr.h bulunur).
+[CSimpleStringT:: CopyChars](#copychars)örneğine veya kaynak koduna `CSimpleStringT::SetString` (atlsimpstr. h içinde bulunur) bakın.
 
-## <a name="csimplestringtcsimplestringt"></a><a name="ctor"></a>CSimpleStringt::CSimpleStringt
+## <a name="csimplestringtcsimplestringt"></a><a name="ctor"></a>CSimpleStringT:: CSimpleStringT
 
-Bir `CSimpleStringT` nesne inşa eder.
+Bir `CSimpleStringT` nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 CSimpleStringT(const XCHAR* pchSrc, int nLength, IAtlStringMgr* pStringMgr);
@@ -273,27 +273,27 @@ explicit CSimpleStringT(IAtlStringMgr* pStringMgr) throw();
 #### <a name="parameters"></a>Parametreler
 
 *strSrc*<br/>
-Varolan `CSimpleStringT` bir nesne bu `CSimpleStringT` nesneye kopyalanacak.
+`CSimpleStringT`Bu nesneye Kopyalanacak varolan bir nesne `CSimpleStringT` .
 
 *pchSrc*<br/>
-Uzunluk *nLength*karakter dizisi için bir işaretçi , null değil sona erdi.
+Null ile değil, *nLength*uzunluklu bir karakter dizisine yönelik bir işaretçi.
 
 *pszSrc*<br/>
-Bu `CSimpleStringT` nesneye kopyalanacak null-sonlandırılan dize.
+Bu nesneye kopyalanacak null ile sonlandırılmış bir dize `CSimpleStringT` .
 
-*nUzunluk*<br/>
-'deki `pch`karakter sayısının sayısı.
+*nLength*<br/>
+İçindeki karakterlerin sayısı `pch` .
 
 *pStringMgr*<br/>
-`CSimpleStringT` Nesnenin bellek yöneticisine bir işaretçi. Için `IAtlStringMgr` daha fazla bilgi `CSimpleStringT`ve bellek yönetimi için, [Bellek Yönetimi ve CStringT](../memory-management-with-cstringt.md)bakın.
+Nesnenin bellek Yöneticisi işaretçisi `CSimpleStringT` . Ve için bellek yönetimi hakkında daha fazla bilgi için `IAtlStringMgr` `CSimpleStringT` bkz. [bellek yönetimi ve CStringT](../memory-management-with-cstringt.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni `CSimpleStringT` bir nesne oluştur. Kurucular giriş verilerini yeni ayrılmış depolama alanına kopyaladığı için bellek özel durumları oluşabilir.
+Yeni bir `CSimpleStringT` nesne oluşturun. Oluşturucular giriş verilerini yeni ayrılmış depolama alanına kopyalayacağından, bellek özel durumları oluşabilir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ATL `CSimpleStringT::CSimpleStringT` **typedef** `CSimpleString`kullanarak kullanımını göstermektedir. `CSimpleString`sınıf şablonunun `CSimpleStringT`yaygın olarak kullanılan bir uzmanlık alanıdır.
+Aşağıdaki örnek, ATL kullanarak öğesinin kullanımını gösterir `CSimpleStringT::CSimpleStringT` **`typedef`** `CSimpleString` . `CSimpleString`, sınıf şablonunun yaygın olarak kullanılan bir özelleştirmesi `CSimpleStringT` .
 
 ```cpp
 CSimpleString s1(pMgr);
@@ -310,9 +310,9 @@ CSimpleString s5(_T("xxxxxx"), 6, pMgr);
 // s5 = "xxxxxx"
 ```
 
-## <a name="csimplestringtempty"></a><a name="empty"></a>CSimpleStringT::Boş
+## <a name="csimplestringtempty"></a><a name="empty"></a>CSimpleStringT:: Empty
 
-Bu `CSimpleStringT` nesneyi boş bir dize yapar ve belleği uygun şekilde serbest kılar.
+Bu `CSimpleStringT` nesneyi boş bir dize yapar ve uygun şekilde belleği serbest bırakır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -322,20 +322,20 @@ void Empty() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [Bkz. Dizeleri: CString Özel Durum Temizleme.](../cstring-exception-cleanup.md)
+Daha fazla bilgi için bkz. [dizeler: CString özel durum temizleme](../cstring-exception-cleanup.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::Empty`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::Empty` .
 
 ```cpp
 CSimpleString s(pMgr);
 ASSERT(s.IsEmpty());
 ```
 
-## <a name="csimplestringtfreeextra"></a><a name="freeextra"></a>CSimpleStringT::FreeExtra
+## <a name="csimplestringtfreeextra"></a><a name="freeextra"></a>CSimpleStringT:: FreeExtra
 
-Daha önce dize tarafından ayrılan ancak artık gerekmeden ayrılan herhangi bir ekstra belleği serbest bırakmaz.
+Daha önce dize tarafından ayrılan ancak artık gerekli olmayan ek belleği serbest bırakır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -345,7 +345,7 @@ void FreeExtra();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, dize nesnesi tarafından tüketilen bellek yükü azaltmalıdır. Yöntem, arabelleği [GetLength](#getlength)tarafından döndürülen tam uzunluğa göre yeniden tahsis eder.
+Bu, dize nesnesi tarafından tüketilen bellek ek yükünü azaltmalıdır. Yöntemi, arabelleği [GetLength](#getlength)tarafından döndürülen tam uzunluğa yeniden konumlandırır.
 
 ### <a name="example"></a>Örnek
 
@@ -384,9 +384,9 @@ Alloc length is 1031, String length is 15
 Alloc length is 15, String length is 15
 ```
 
-## <a name="csimplestringtgetalloclength"></a><a name="getalloclength"></a>CSimpleStringT::GetAllocLength
+## <a name="csimplestringtgetalloclength"></a><a name="getalloclength"></a>CSimpleStringT:: GetAllocLength
 
-Bir `CSimpleStringT` nesnenin ayrılan uzunluğunu alır.
+Bir nesnenin ayrılan uzunluğunu alır `CSimpleStringT` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -400,13 +400,13 @@ Bu nesne için ayrılan karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CSimpleStringT` nesne için ayrılan karakter sayısını belirlemek için bu yöntemi çağırın. Bu işlevi arama örneği için [FreeExtra'ya](#freeextra) bakın.
+Bu nesne için ayrılan karakter sayısını öğrenmek için bu yöntemi çağırın `CSimpleStringT` . Bu işlevi çağırma örneği için [FreeExtra](#freeextra) bölümüne bakın.
 
-## <a name="csimplestringtgetat"></a><a name="getat"></a>CSimpleStringT::Getat
+## <a name="csimplestringtgetat"></a><a name="getat"></a>CSimpleStringT:: GetAt
 
-Bir nesneden `CSimpleStringT` bir karakter döndürür.
+Nesnesinden bir karakter döndürür `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 XCHAR GetAt(int iChar) const;
@@ -414,31 +414,31 @@ XCHAR GetAt(int iChar) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*iChar*<br/>
-`CSimpleStringT` Nesnedeki karakterin sıfır tabanlı dizini. *iChar* parametresi 0'dan büyük veya eşit ve [GetLength](#getlength)tarafından döndürülen değerden daha az olmalıdır. Aksi `GetAt` takdirde, bir özel durum oluşturur.
+*ICHAR*<br/>
+Nesnedeki karakterin sıfır tabanlı dizini `CSimpleStringT` . *Ihar* parametresi 0 ' dan büyük veya buna eşit ve [GetLength](#getlength)tarafından döndürülen değerden küçük olmalıdır. Aksi takdirde, `GetAt` bir özel durum oluşturur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizede `XCHAR` belirtilen konumdaki karakteri içeren bir karakter.
+`XCHAR`Dizedeki belirtilen konumdaki karakteri içeren bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*iChar*tarafından belirtilen bir karakteri döndürmek için bu yöntemi arayın. Aşırı yüklenen alt komut dosyası (**[]**) `GetAt`işleci için uygun bir diğer addır. Null terminator kullanarak `GetAt`bir özel durum oluşturmadan ele alınabiliyor. Ancak, `GetLength`tarafından sayılmaz ve döndürülen değer 0'dır.
+*ICHAR*tarafından belirtilen bir karakteri döndürmek için bu yöntemi çağırın. Aşırı yüklenmiş alt simge (**[]**) işleci için uygun bir diğer addır `GetAt` . Null Sonlandırıcı kullanılarak özel bir durum üretilmeden adreslenebilir `GetAt` . Ancak, tarafından sayılmaz `GetLength` ve döndürülen değer 0 ' dır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, nasıl kullanılacağını `CSimpleStringT::GetAt`gösterir.
+Aşağıdaki örnek nasıl kullanılacağını göstermektedir `CSimpleStringT::GetAt` .
 
 ```cpp
 CSimpleString s(_T("abcdef"), pMgr);
 ASSERT(s.GetAt(2) == _T('c'));
 ```
 
-## <a name="csimplestringtgetbuffer"></a><a name="getbuffer"></a>CSimpleStringT::GetBuffer
+## <a name="csimplestringtgetbuffer"></a><a name="getbuffer"></a>CSimpleStringT:: GetBuffer
 
-`CSimpleStringT` Nesne için iç karakter arabelleği için bir işaretçi döndürür.
+Nesnenin iç karakter arabelleğine yönelik bir işaretçi döndürür `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 PXSTR GetBuffer(int nMinBufferLength);
@@ -448,27 +448,27 @@ PXSTR GetBuffer();
 #### <a name="parameters"></a>Parametreler
 
 *nMinBufferLength*<br/>
-Karakter arabelleği tutabileceği en az karakter sayısı. Bu değer, null terminator için alan içermez.
+Karakter arabelleğinin tutabileceğinden en az karakter sayısı. Bu değer, null Sonlandırıcı için boşluk içermez.
 
-*nMinBufferLength* geçerli arabellek uzunluğundan daha büyükse, geçerli arabelleği yok eder, `GetBuffer` istenen boyutun arabelleğiyle değiştirir ve nesne başvuru sayısını sıfırlar. Bu arabellekte daha önce [LockBuffer'ı](#lockbuffer) aradıysanız, arabellek kilidini kaybedersiniz.
+*NMinBufferLength* geçerli arabelleğin uzunluğundan daha büyükse, `GetBuffer` geçerli arabelleği yok eder, istenen boyutun bir arabelleği ile değiştirir ve nesne başvuru sayısını sıfıra sıfırlar. Daha önce bu arabellekte [LockBuffer](#lockbuffer) çağrılırsa, arabellek kilidini kaybedersiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenin (null-sonlandırılan) karakter arabelleği için bir `PXSTR` işaretçi.
+`PXSTR`Nesnenin (null ile sonlandırılmış) karakter arabelleğinin bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnenin arabellek içeriğini döndürmek için `CSimpleStringT` bu yöntemi çağırın. Döndürülen `PXSTR` sabit değildir ve bu nedenle `CSimpleStringT` içeriğin doğrudan değiştirilmesine izin verir.
+Nesnenin arabellek içeriğini döndürmek için bu yöntemi çağırın `CSimpleStringT` . Döndürülen `PXSTR` bir sabit değildir ve bu nedenle içeriğin doğrudan değiştirilmesine izin verir `CSimpleStringT` .
 
-Dize içeriğini değiştirmek `GetBuffer` için döndürülen işaretçiyi kullanırsanız, diğer `CSimpleStringT` üye yöntemleri kullanmadan önce [ReleaseBuffer'ı](#releasebuffer) aramanız gerekir.
+Tarafından döndürülen işaretçiyi `GetBuffer` dize içeriklerini değiştirmek için kullanırsanız, başka bir üye yöntemi kullanmadan önce [ReleaseBuffer](#releasebuffer) öğesini çağırmanız gerekir `CSimpleStringT` .
 
-Ek `CSimpleStringT` işlemler `CSimpleStringT` `GetBuffer` arabelleğin yeniden ayrılmasına `ReleaseBuffer` neden olabileceğinden, iade edilen adres aramadan sonra geçerli olmayabilir. 'nin uzunluğunu değiştirmezseniz arabellek yeniden tahsis `CSimpleStringT`edilmez.
+Tarafından döndürülen adres, ' `GetBuffer` e yapılan çağrıdan sonra geçerli olmayabilir `ReleaseBuffer` çünkü ek `CSimpleStringT` İşlemler `CSimpleStringT` arabelleğin yeniden ayrılmasına neden olabilir. Uzunluğunu değiştirmeyin arabelleği yeniden tahsis edilmez `CSimpleStringT` .
 
-`CSimpleStringT` Nesne yok edildiğinde arabellek belleği otomatik olarak serbest bırakılır.
+Arabellek belleği, nesne yok edildiğinde otomatik olarak serbest bırakılır `CSimpleStringT` .
 
-Dize uzunluğunu kendiniz izlerseniz, sonlandırıcı null karakteri uygulamamalısınız. Ancak, arabelleği `ReleaseBuffer`' ile serbest bırakdığınızda son dize uzunluğunu belirtmeniz gerekir. Sonlandırıcı null karakterini eklerseniz, uzunluk için -1 (varsayılan) geçmeniz gerekir. `ReleaseBuffer`sonra arabellek uzunluğunu belirler.
+Dize uzunluğunu kendiniz izlemenize sonra, Sonlandırıcı null karakterini eklememelisiniz. Ancak, ile arabelleği serbest bırakıldığında son dize uzunluğunu belirtmeniz gerekir `ReleaseBuffer` . Bir Sonlandırıcı null karakteri ekleymeniz durumunda, uzunluğu için-1 (varsayılan) geçişi yapmalısınız. `ReleaseBuffer`sonra arabellek uzunluğunu belirler.
 
-İsteği `GetBuffer` karşılamak için yeterli bellek varsa, bu yöntem bir CMemoryException* atar.
+İsteği karşılamak için yeterli bellek yoksa `GetBuffer` , bu yöntem bir CMemoryException * oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -483,11 +483,11 @@ ASSERT(_tcscmp(s, _T("Hello")) == 0);
 s.ReleaseBuffer();
 ```
 
-## <a name="csimplestringtgetbuffersetlength"></a><a name="getbuffersetlength"></a>CSimpleStringT::GetBufferSetLength
+## <a name="csimplestringtgetbuffersetlength"></a><a name="getbuffersetlength"></a>CSimpleStringT:: GetBufferSetLength
 
-*NLength'ta*belirtilen uzunluğu tam `CSimpleStringT` olarak eşleştirmek için gerekirse, nesne için iç karakter arabelleği için bir işaretçi döndürür.
+Nesne için iç karakter arabelleğinin bir işaretçisini `CSimpleStringT` , *nLength*olarak belirtilen uzunlukla tam olarak eşleşmesi gerekiyorsa, kesilmesi veya büyümesini sağlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 PXSTR GetBufferSetLength(int nLength);
@@ -495,36 +495,36 @@ PXSTR GetBufferSetLength(int nLength);
 
 #### <a name="parameters"></a>Parametreler
 
-*nUzunluk*<br/>
-Karakterlerdeki `CSimpleStringT` karakter arabelleği tam boyutu.
+*nLength*<br/>
+`CSimpleStringT`Karakter arabelleğinin karakter cinsinden tam boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenin (null-sonlandırılan) karakter arabelleği için bir `PXSTR` işaretçi.
+`PXSTR`Nesnenin (null ile sonlandırılmış) karakter arabelleğinin bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleStringT` Nesnenin iç arabelleği belirli bir uzunluk almak için bu yöntemi arayın. Döndürülen `PXSTR` işaretçi **const** değildir ve `CSimpleStringT` böylece içeriğin doğrudan değiştirilmesine izin verir.
+Nesnenin iç arabelleğinin belirtilen uzunluğunu almak için bu yöntemi çağırın `CSimpleStringT` . Döndürülen `PXSTR` işaretçi değildir ve bu **`const`** nedenle içeriğin doğrudan değiştirilmesine izin verir `CSimpleStringT` .
 
-Dize içeriğini değiştirmek için [GetBufferSetLength](#getbuffersetlength) tarafından döndürülen `ReleaseBuffer` işaretçiyi kullanırsanız, diğer `CsimpleStringT` `CSimpleStringT` yöntemleri kullanmadan önce iç durumunu güncelleştirmek için arayın.
+Dize içeriklerini değiştirmek için [GetBufferSetLength](#getbuffersetlength) tarafından döndürülen işaretçiyi kullanırsanız, `ReleaseBuffer` `CsimpleStringT` diğer herhangi bir yöntemi kullanmadan önce iç durumunu güncelleştirme ' yi çağırın `CSimpleStringT` .
 
-Ek `CSimpleStringT` işlemler `CSimpleStringT` `GetBufferSetLength` arabelleğin yeniden ayrılmasına `ReleaseBuffer` neden olabileceğinden, iade edilen adres aramadan sonra geçerli olmayabilir. 'nin uzunluğunu `CSimpleStringT`değiştirmezseniz arabellek yeniden atanmamış.
+Tarafından döndürülen adres, ' `GetBufferSetLength` e yapılan çağrıdan sonra geçerli olmayabilir `ReleaseBuffer` çünkü ek `CSimpleStringT` İşlemler `CSimpleStringT` arabelleğin yeniden ayrılmasına neden olabilir. Uzunluğunu değiştirmeyin, arabellek yeniden atanmaz `CSimpleStringT` .
 
-`CSimpleStringT` Nesne yok edildiğinde arabellek belleği otomatik olarak serbest bırakılır.
+Arabellek belleği, nesne yok edildiğinde otomatik olarak serbest bırakılır `CSimpleStringT` .
 
-Dize uzunluğunu kendiniz izlerseniz, sonlandırıcı null karakteri eklemayın. Arabelleği kullanarak serbest bırakdığınızda son dize uzunluğunu belirtmeniz `ReleaseBuffer`gerekir. Uzunluk `ReleaseBuffer` `ReleaseBuffer`için -1 (varsayılan) geç' i aradiğinizde sonlandırıcı bir null karakteri eklerseniz ve `ReleaseBuffer` uzunluğunu belirlemek için arabellekte bir `strlen` işlem gerçekleştirir.
+Dize uzunluğunu kendiniz izlemenize devam ederseniz, Sonlandırıcı null karakterini eklemeyin. Kullanarak arabelleği serbest aktardığınızda son dize uzunluğunu belirtmeniz gerekir `ReleaseBuffer` . ' I çağırdığınızda bir Sonlandırıcı null karakteri eklerseniz `ReleaseBuffer` , uzunluğu için-1 ' i (varsayılan) olarak geçirin `ReleaseBuffer` ve `ReleaseBuffer` `strlen` uzunluğunu belirlemede arabelleğe alır.
 
 Başvuru sayımı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- Windows SDK'da [Başvuru Sayımı yoluyla Nesne Yaşam Ömürlerini Yönetme.](/windows/win32/com/managing-object-lifetimes-through-reference-counting)
+- Windows SDK [başvuru sayımı aracılığıyla nesne yaşam sürelerini yönetme](/windows/win32/com/managing-object-lifetimes-through-reference-counting) .
 
-- Windows SDK'da [Başvuru Sayımı'nı uygulama.](/windows/win32/com/implementing-reference-counting)
+- Windows SDK [başvuru sayımı uygulama](/windows/win32/com/implementing-reference-counting) .
 
-- Windows SDK'da [Başvuru Sayılarını Yönetme Kuralları.](/windows/win32/com/rules-for-managing-reference-counts)
+- Windows SDK [başvuru sayılarını yönetme kuralları](/windows/win32/com/rules-for-managing-reference-counts) .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::GetBufferSetLength`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::GetBufferSetLength` .
 
 ```cpp
 CSimpleString str(pMgr);
@@ -540,9 +540,9 @@ str += _T(" soccer is best!");
 ASSERT(_tcscmp(str, _T("Cup soccer is best!")) == 0);
 ```
 
-## <a name="csimplestringtgetlength"></a><a name="getlength"></a>CSimpleStringT::Getlength
+## <a name="csimplestringtgetlength"></a><a name="getlength"></a>CSimpleStringT:: GetLength
 
-Nesnedeki `CSimpleStringT` karakter sayısını döndürür.
+Nesnedeki karakter sayısını döndürür `CSimpleStringT` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -556,13 +556,13 @@ Dizedeki karakterlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnedeki karakter sayısını döndürmek için bu yöntemi çağırın. Sayım null terminator içermez.
+Nesnedeki karakter sayısını döndürmek için bu yöntemi çağırın. Sayı null Sonlandırıcı içermiyor.
 
-Çok bayt karakter kümeleri (MBCS) `GetLength` için her 8 bitlik karakter sayar; diğer bir deyişle, bir çok bayt karakterde bir kurşun ve iz bayt iki bayt olarak sayılır. Bu işlevi arama örneği için [FreeExtra'ya](#freeextra) bakın.
+Çok baytlı karakter kümeleri (MBCS) için `GetLength` her 8 bitlik karakteri sayar; diğer bir deyişle, bir çok baytlı karakter içindeki bir öncü ve sondaki bayt iki bayt olarak sayılır. Bu işlevi çağırma örneği için [FreeExtra](#freeextra) bölümüne bakın.
 
-## <a name="csimplestringtgetmanager"></a><a name="getmanager"></a>CSimpleStringT::GetManager
+## <a name="csimplestringtgetmanager"></a><a name="getmanager"></a>CSimpleStringT:: GetManager
 
-Nesnenin bellek yöneticisini `CSimpleStringT` alır.
+Nesnenin bellek yöneticisini alır `CSimpleStringT` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -572,13 +572,13 @@ IAtlStringMgr* GetManager() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne için bellek yöneticisine `CSimpleStringT` bir işaretçi.
+Nesne için bellek Yöneticisi işaretçisi `CSimpleStringT` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleStringT` Nesne tarafından kullanılan bellek yöneticisini almak için bu yöntemi arayın. Bellek yöneticileri ve dize nesneleri hakkında daha fazla bilgi için Bellek [Yönetimi ve CStringT'e](../memory-management-with-cstringt.md)bakın.
+Nesne tarafından kullanılan bellek yöneticisini almak için bu yöntemi çağırın `CSimpleStringT` . Bellek yöneticileri ve dize nesneleri hakkında daha fazla bilgi için bkz. [bellek yönetimi ve CStringT](../memory-management-with-cstringt.md).
 
-## <a name="csimplestringtgetstring"></a><a name="getstring"></a>CSimpleStringT::GetString
+## <a name="csimplestringtgetstring"></a><a name="getstring"></a>CSimpleStringT:: GetString
 
 Karakter dizesini alır.
 
@@ -590,18 +590,18 @@ PCXSTR GetString() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Null-sonlandırılan karakter dizesine işaretçi.
+Null ile sonlandırılmış bir karakter dizesinin işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneyle ilişkili karakter dizesini `CSimpleStringT` almak için bu yöntemi çağırın.
+Nesneyle ilişkili karakter dizesini almak için bu yöntemi çağırın `CSimpleStringT` .
 
 > [!NOTE]
-> Döndürülen `PCXSTR` işaretçi **const'tür** ve `CSimpleStringT` içeriğin doğrudan değiştirilmesine izin vermez.
+> Döndürülen `PCXSTR` işaretçi, **`const`** içerik doğrudan değişikliğine izin vermez `CSimpleStringT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::GetString`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::GetString` .
 
 ```cpp
 CSimpleString str(pMgr);
@@ -609,9 +609,9 @@ str += _T("Cup soccer is best!");
 _tprintf_s(_T("%s"), str.GetString());
 ```
 
-## <a name="csimplestringtisempty"></a><a name="isempty"></a>CSimpleStringT::Boş
+## <a name="csimplestringtisempty"></a><a name="isempty"></a>CSimpleStringT:: IsEmpty
 
-Boş `CSimpleStringT` durum için bir nesneyi sınar.
+`CSimpleStringT`Boş koşul için bir nesneyi sınar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -621,24 +621,24 @@ bool IsEmpty() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenin `CSimpleStringT` 0 uzunluğu varsa TRUE döndürür; aksi takdirde YANLIŞ.
+`CSimpleStringT`Nesnenin 0 uzunluğu varsa true, DEĞILSE false döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneboş bir dize içeriyorsa belirlemek için bu yöntemi arayın.
+Nesnenin boş bir dize içerip içermediğini anlamak için bu yöntemi çağırın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::IsEmpty`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::IsEmpty` .
 
 ```cpp
 CSimpleString s(pMgr);
 ASSERT(s.IsEmpty());
 ```
 
-## <a name="csimplestringtlockbuffer"></a><a name="lockbuffer"></a>CSimpleStringT::LockAraffer
+## <a name="csimplestringtlockbuffer"></a><a name="lockbuffer"></a>CSimpleStringT:: LockBuffer
 
-Başvuru sayma devre dışı kılabilir ve arabellekteki dizeyi korur.
+Başvuru saymayı devre dışı bırakır ve arabellekteki dizeyi korur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -648,34 +648,34 @@ PXSTR LockBuffer();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CSimpleStringT` nesneye işaretçi veya null-sonlandırılan dize.
+Bir `CSimpleStringT` nesne veya null ile sonlandırılmış bir dize işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleStringT` Nesnenin arabelleği kilitlemek için bu yöntemi arayın. Arayarak, `LockBuffer`başvuru sayısı için -1 ile dize bir kopyasını oluşturun. Başvuru sayısı değeri -1 olduğunda, arabellekteki dize "kilitli" durumda olarak kabul edilir. Kilitli bir durumdayken, dize iki şekilde korunur:
+Nesne arabelleğini kilitlemek için bu yöntemi çağırın `CSimpleStringT` . Çağırarak `LockBuffer` , başvuru sayısı için-1 ile dizenin bir kopyasını oluşturursunuz. Başvuru sayısı değeri-1 olduğunda, arabellekteki dize "kilitli" durumunda olduğu kabul edilir. Kilitli durumda olan dize iki şekilde korunur:
 
-- Başka hiçbir dize, bu dize kilitli dize atansa bile, kilitli dizedeki verilere başvuru alamaz.
+- Başka hiçbir dize, bu dize kilitli dizeye atanmış olsa bile, kilitli dizedeki verilere başvuru alamaz.
 
-- Kilitli dize, diğer dize kilitli dize kopyalanmış olsa bile, başka bir dize başvuruasla.
+- Başka bir dize kilitli dizeye kopyalansa bile, kilitli dize hiçbir şekilde başka bir dizeye başvurmayacaktır.
 
-Arabellekteki dizeyi kilitleyerek, dizesinin arabelleküzerindeki özel tutmasının bozulmadan kalmasını sağlarsınız.
+Arabellekteki dizeyi kilitleyerek, dizenin arabelleğe ait dışlamalı tutmanın bozulmadan kalacağından emin olursunuz.
 
-Bitirdikten `LockBuffer`sonra, başvuru sayısını 1'e sıfırlamak için [UnlockBuffer'ı](#unlockbuffer) arayın.
+İle işiniz bittiğinde `LockBuffer` , başvuru sayısını 1 ' e sıfırlamak Için [UnlockBuffer](#unlockbuffer) ' ı çağırın.
 
 > [!NOTE]
-> Kilitli bir arabelleküzerinde [GetBuffer'ı](#getbuffer) arar `GetBuffer` ve `nMinBufferLength` parametreyi geçerli arabellek uzunluğundan daha büyük olarak ayarlarsanız, arabellek kilidini kaybedersiniz. Geçerli arabelleği yok etmek için `GetBuffer` böyle bir çağrı, istenen boyutun bir arabellek ile değiştirir ve sıfırlanır.
+> [GetBuffer](#getbuffer) öğesini kilitli bir arabellekte çağırırsanız ve `GetBuffer` parametreyi `nMinBufferLength` geçerli arabelleğin uzunluğundan daha büyük olarak ayarlarsanız, arabellek kilidini kaybedersiniz. Bu tür bir çağrı `GetBuffer` geçerli arabelleği yok eder, istenen boyutun arabelleği ile değiştirir ve başvuru sayısını sıfıra sıfırlar.
 
 Başvuru sayımı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- Windows SDK'da [Başvuru Sayımı yoluyla Nesne Yaşam Ömürlerini Yönetme](/windows/win32/com/managing-object-lifetimes-through-reference-counting)
+- Windows SDK [başvuru sayımı aracılığıyla nesne yaşam sürelerini yönetme](/windows/win32/com/managing-object-lifetimes-through-reference-counting)
 
-- Windows SDK'da [Başvuru Sayımı](/windows/win32/com/implementing-reference-counting) Uygulama
+- Windows SDK [başvuru sayımı uygulama](/windows/win32/com/implementing-reference-counting)
 
-- Windows SDK'da [Başvuru Sayılarını Yönetme Kuralları](/windows/win32/com/rules-for-managing-reference-counts)
+- Windows SDK [başvuru sayılarını yönetmeye yönelik kurallar](/windows/win32/com/rules-for-managing-reference-counts)
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::LockBuffer`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::LockBuffer` .
 
 ```cpp
 CSimpleString str(_T("Hello"), pMgr);
@@ -687,11 +687,11 @@ _tprintf_s(_T("%c"), ch);
 str.UnlockBuffer();
 ```
 
-## <a name="csimplestringtoperator"></a><a name="operator_at"></a>CSimpleStringT::işleç\[\]
+## <a name="csimplestringtoperator"></a><a name="operator_at"></a>CSimpleStringT:: işleci\[\]
 
-Karakter dizisinin tek bir karakterine erişmek için bu işlevi arayın.
+Karakter dizisinin tek bir karakterine erişmek için bu işlevi çağırın.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 XCHAR operator[](int iChar) const;
@@ -699,30 +699,30 @@ XCHAR operator[](int iChar) const;
 
 #### <a name="parameters"></a>Parametreler
 
-*iChar*<br/>
+*ICHAR*<br/>
 Dizedeki bir karakterin sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşırı yüklenen alt yazı (**[]**) işleci *iChar'da*sıfır tabanlı dizin tarafından belirtilen tek bir karakteri döndürür. Bu işleç [GetAt](#getat) üye işlevi için uygun bir yedektir.
+Aşırı yüklenmiş alt simge (**[]**) Işleci, *ıhar*'da sıfır tabanlı dizin tarafından belirtilen tek bir karakter döndürür. Bu işleç, [GetAt](#getat) üye işlevinin kullanışlı bir alternatifi.
 
 > [!NOTE]
-> Bir karakterin değerini almak için alt komut dosyası (**[]**) işleci `CSimpleStringT`kullanabilirsiniz, ancak bir `CSimpleStringT`karakterin değerini değiştirmek için kullanamazsınız.
+> ' Deki bir karakterin değerini almak için alt simge (**[]**) işlecini kullanabilirsiniz `CSimpleStringT` , ancak bunu, içindeki bir karakterin değerini değiştirmek için kullanamazsınız `CSimpleStringT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::operator []`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::operator []` .
 
 ```cpp
 CSimpleString s(_T("abc"), pMgr);
 ASSERT(s[1] == _T('b'));
 ```
 
-## <a name="csimplestringtoperator-"></a><a name="operator_at"></a>CSimpleStringT::işleç\[\]
+## <a name="csimplestringtoperator-"></a><a name="operator_at"></a>CSimpleStringT:: işleci\[\]
 
-Karakter dizisinin tek bir karakterine erişmek için bu işlevi arayın.
+Karakter dizisinin tek bir karakterine erişmek için bu işlevi çağırın.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 XCHAR operator[](int iChar) const;
@@ -730,21 +730,21 @@ XCHAR operator[](int iChar) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*iChar*<br/>
+*ICHAR*<br/>
 Dizedeki bir karakterin sıfır tabanlı dizini.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aşırı yüklenen alt yazı (**[]**) işleci *iChar'da*sıfır tabanlı dizin tarafından belirtilen tek bir karakteri döndürür. Bu işleç [GetAt](#getat) üye işlevi için uygun bir yedektir.
+Aşırı yüklenmiş alt simge (**[]**) Işleci, *ıhar*'da sıfır tabanlı dizin tarafından belirtilen tek bir karakter döndürür. Bu işleç, [GetAt](#getat) üye işlevinin kullanışlı bir alternatifi.
 
 > [!NOTE]
-> Bir karakterin değerini almak için alt komut dosyası (**[]**) işleci `CSimpleStringT`kullanabilirsiniz, ancak bir `CSimpleStringT`karakterin değerini değiştirmek için kullanamazsınız.
+> ' Deki bir karakterin değerini almak için alt simge (**[]**) işlecini kullanabilirsiniz `CSimpleStringT` , ancak bunu, içindeki bir karakterin değerini değiştirmek için kullanamazsınız `CSimpleStringT` .
 
-## <a name="csimplestringtoperator-"></a><a name="operator_add_eq"></a>CSimpleStringT::işleç +=
+## <a name="csimplestringtoperator-"></a><a name="operator_add_eq"></a>CSimpleStringT:: operator + =
 
-Varolan bir dize sonuna kadar yeni bir dize veya karakter birleştirir.
+Varolan bir dizenin sonuna yeni bir dize veya karakter birleştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 CSimpleStringT& operator +=(PCXSTR pszSrc);
@@ -759,32 +759,32 @@ CSimpleStringT& operator +=(wchar_t ch);
 #### <a name="parameters"></a>Parametreler
 
 *pszSrc*<br/>
-Null-sonlandırılan dize için bir işaretçi.
+Null ile sonlandırılmış bir dize işaretçisi.
 
 *strSrc*<br/>
-Varolan `CSimpleStringT` bir nesneye işaretçi.
+Varolan bir nesneye yönelik bir işaretçi `CSimpleStringT` .
 
-*Caner*<br/>
+*denetleyebilirsiniz*<br/>
 Eklenecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç başka `CSimpleStringT` bir nesneyi veya karakteri kabul eder. Bu karmaşıklaştırma işleci kullandığınızda bellek özel durumları oluşabilir, çünkü bu `CSimpleStringT` nesneye eklenen karakterler için yeni depolama alanı ayrılabilir.
+İşleç başka bir `CSimpleStringT` nesneyi veya karakteri kabul eder. Bu nesneye eklenen karakterler için yeni depolama alanı ayrıldığından, bu birleştirme işlecini her kullandığınızda bellek özel durumlarının gerçekleşebileceğini unutmayın `CSimpleStringT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::operator +=`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::operator +=` .
 
 ```cpp
 CSimpleString str(_T("abc"), pMgr);
 ASSERT(_tcscmp((str += _T("def")), _T("abcdef")) == 0);
 ```
 
-## <a name="csimplestringtoperator-"></a><a name="operator_eq"></a>CSimpleStringT::operatör =
+## <a name="csimplestringtoperator-"></a><a name="operator_eq"></a>CSimpleStringT:: operator =
 
-Nesneye yeni bir `CSimpleStringT` değer atar.
+Nesnesine yeni bir değer atar `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 CSimpleStringT& operator =(PCXSTR pszSrc);
@@ -794,18 +794,18 @@ CSimpleStringT& operator =(const CSimpleStringT& strSrc);
 #### <a name="parameters"></a>Parametreler
 
 *pszSrc*<br/>
-Null-sonlandırılan dize için bir işaretçi.
+Null ile sonlandırılmış bir dize işaretçisi.
 
 *strSrc*<br/>
-Varolan `CSimpleStringT` bir nesneye işaretçi.
+Varolan bir nesneye yönelik bir işaretçi `CSimpleStringT` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hedef dize (sol taraf) yeni verileri depolayacak kadar büyükse, yeni bellek ayırma işlemi yapılmaz. Atama işlecini her kullandığınızda bellek özel durumları oluşabilir, çünkü yeni depolama `CSimpleStringT` genellikle ortaya çıkan nesneyi tutmak için ayrılmıştır.
+Hedef dize (sol tarafta) yeni verileri depolamak için zaten büyükse, yeni bir bellek ayırma gerçekleştirilmez. Yeni depolama genellikle sonuçta elde edilen nesneyi tutmak üzere ayrıldığından, atama işlecini her kullandığınızda bellek özel durumlarının gerçekleşebileceğini unutmayın `CSimpleStringT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::operator =`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::operator =` .
 
 ```cpp
 CSimpleString s1(pMgr), s2(pMgr);
@@ -827,9 +827,9 @@ s1 = _T("x");
 ASSERT(_tcscmp(s1, _T("x")) == 0);
 ```
 
-## <a name="csimplestringtoperator-pcxstr"></a><a name="operator_pcxstr"></a>CSimpleStringT::operatör PCXSTR
+## <a name="csimplestringtoperator-pcxstr"></a><a name="operator_pcxstr"></a>CSimpleStringT:: operator PCXSTR
 
-C stili dize olarak `CSimpleStringT` bir nesnede depolanan karakterlere doğrudan erişir.
+Bir nesnede depolanan karakterlere doğrudan `CSimpleStringT` C stili dize olarak erişir.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -839,15 +839,15 @@ operator PCXSTR() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize verilerine bir karakter işaretçisi.
+Dizenin verilerine yönelik bir karakter işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir karakter kopyalanır; yalnızca bir işaretçi döndürülür. Bu operatöre dikkat edin. Karakter işaretçisini aldıktan sonra bir `CString` nesneyi değiştirirseniz, işaretçiyi geçersiz sayan bellek yeniden tahsisine neden olabilirsiniz.
+Hiçbir karakter kopyalanmaz; yalnızca bir işaretçi döndürülür. Bu işleçle dikkatli olun. `CString`Karakter işaretçisini elde ettikten sonra bir nesneyi değiştirirseniz, işaretçiyi geçersiz kılan belleğin yeniden alınmasına neden olabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::operator PCXSTR`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::operator PCXSTR` .
 
 ```cpp
 // If the prototype of a function is known to the compiler,
@@ -879,9 +879,9 @@ wcout << strSports;
 wcout << (PCWSTR)strSports;
 ```
 
-## <a name="csimplestringtpcxstr"></a><a name="pcxstr"></a>CSimpleStringT::PCXSTR
+## <a name="csimplestringtpcxstr"></a><a name="pcxstr"></a>CSimpleStringT::P CXSTR
 
-Sabit bir dize için bir işaretçi.
+Sabit dize işaretçisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -889,11 +889,11 @@ Sabit bir dize için bir işaretçi.
 typedef ChTraitsBase< BaseType >::PCXSTR PCXSTR;
 ```
 
-## <a name="csimplestringtpreallocate"></a><a name="preallocate"></a>CSimpleStringT::P
+## <a name="csimplestringtpreallocate"></a><a name="preallocate"></a>CSimpleStringT::P yeniden tahsis
 
-`CSimpleStringT` Nesne için belirli bir bayt miktarı ayırır.
+Nesne için belirli bir bayt miktarı ayırır `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void Preallocate( int nLength);
@@ -901,18 +901,18 @@ void Preallocate( int nLength);
 
 #### <a name="parameters"></a>Parametreler
 
-*nUzunluk*<br/>
-Karakterlerdeki `CSimpleStringT` karakter arabelleği tam boyutu.
+*nLength*<br/>
+`CSimpleStringT`Karakter arabelleğinin karakter cinsinden tam boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne için belirli bir arabellek boyutu `CSimpleStringT` ayırmak için bu yöntemi çağırın.
+Nesne için belirli bir arabellek boyutunu ayırmak üzere bu yöntemi çağırın `CSimpleStringT` .
 
-`CSimpleStringT`karakter arabelleği için alan ayıramıyorsa STATUS_NO_MEMORY bir özel durum oluşturur. Varsayılan olarak, bellek ayırma WIN32 API işlevleri `HeapAlloc` veya `HeapReAlloc`.
+`CSimpleStringT`karakter arabelleği için alan ayıramadığında STATUS_NO_MEMORY bir özel durum oluşturur. Varsayılan olarak, bellek ayırma WIN32 API işlevleri veya tarafından gerçekleştirilir `HeapAlloc` `HeapReAlloc` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::Preallocate`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::Preallocate` .
 
 ```cpp
 CSimpleString str(pMgr);
@@ -921,9 +921,9 @@ str.Preallocate(100);
 _tprintf_s(_T("Allocated length: %d\n"), str.GetAllocLength());
 ```
 
-## <a name="csimplestringtpxstr"></a><a name="pxstr"></a>CSimpleStringT::PXSTR
+## <a name="csimplestringtpxstr"></a><a name="pxstr"></a>CSimpleStringT::P XSTR
 
-Dize için bir işaretçi.
+Dize işaretçisi.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -931,11 +931,11 @@ Dize için bir işaretçi.
 typedef ChTraitsBase< BaseType >::PXSTR PXSTR;
 ```
 
-## <a name="csimplestringtreleasebuffer"></a><a name="releasebuffer"></a>CSimpleStringT::ReleaseArabellek
+## <a name="csimplestringtreleasebuffer"></a><a name="releasebuffer"></a>CSimpleStringT:: ReleaseBuffer
 
-[GetBuffer](#getbuffer)tarafından ayrılan arabellek denetimini serbest bırakır.
+[GetBuffer](#getbuffer)tarafından ayrılan arabelleğin denetimini yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void ReleaseBuffer(int nNewLength = -1);
@@ -944,15 +944,15 @@ void ReleaseBuffer(int nNewLength = -1);
 #### <a name="parameters"></a>Parametreler
 
 *nNewLength*<br/>
-Karakterlerdeki dizenin yeni uzunluğu, null terminator'u sayma. Dize null sonlandırılırsa, -1 `CSimpleStringT` varsayılan değer boyutu dizenin geçerli uzunluğuna ayarlar.
+Dizenin karakter cinsinden yeni uzunluğu, null sonlandırıcıyı saymaz. Dize null sonlandırılırsa,-1 varsayılan değeri `CSimpleStringT` dizenin geçerli uzunluğuna ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize nesnesinin arabelleği yeniden tahsis etmek veya serbest serbest bu yöntemi arayın. Arabellekteki dize geçersiz olduğunu biliyorsanız, *nNewLength* bağımsız değişkenini atlayabilirsiniz. Dizeniz null sonlandırılmazsa, uzunluğunu belirtmek için *nNewLength'ı* kullanın. [GetBuffer](#getbuffer) tarafından döndürülen adres, aramadan `ReleaseBuffer` veya `CSimpleStringT` başka bir işlemden sonra geçersizdir.
+Dize nesnesinin arabelleğini yeniden ayırmak veya boşaltmak için bu yöntemi çağırın. Arabellekteki dizenin null sonlandırıldığını biliyorsanız, *nNewLength* bağımsız değişkenini atlayabilirsiniz. Dizeniz null sonlandırılırsa, uzunluğunu belirtmek için *nNewLength* kullanın. [GetBuffer](#getbuffer) tarafından döndürülen adres, `ReleaseBuffer` ya da başka bir işlem çağrısından sonra geçersizdir `CSimpleStringT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::ReleaseBuffer`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::ReleaseBuffer` .
 
 ```cpp
 const int bufferSize = 1024;
@@ -972,11 +972,11 @@ ASSERT(s.GetLength() == 3);
 // Length still 3
 ```
 
-## <a name="csimplestringtreleasebuffersetlength"></a><a name="releasebuffersetlength"></a>CSimpleStringT::ReleaseBufferSetLength
+## <a name="csimplestringtreleasebuffersetlength"></a><a name="releasebuffersetlength"></a>CSimpleStringT:: ReleaseBufferSetLength
 
-[GetBuffer](#getbuffer)tarafından ayrılan arabellek denetimini serbest bırakır.
+[GetBuffer](#getbuffer)tarafından ayrılan arabelleğin denetimini yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void ReleaseBufferSetLength(int nNewLength);
@@ -985,17 +985,17 @@ void ReleaseBufferSetLength(int nNewLength);
 #### <a name="parameters"></a>Parametreler
 
 *nNewLength*<br/>
-Serbest bırakılan dize uzunluğu
+Serbest bırakılmakta olan dizenin uzunluğu
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, dize nesnesi için geçerli bir uzunluk geçirilmesi gerektiği [dışında, ReleaseBuffer'a](#releasebuffer) işlevsel olarak benzer.
+Bu işlev, bir dize nesnesi için geçerli bir uzunluk iletilmesi dışında, işleve [ReleaseBuffer](#releasebuffer) ile benzerdir.
 
-## <a name="csimplestringtsetat"></a><a name="setat"></a>CSimpleStringT::Setat
+## <a name="csimplestringtsetat"></a><a name="setat"></a>CSimpleStringT:: SetAt
 
-Bir nesneden tek `CSimpleStringT` bir karakter ayarlar.
+Nesnesinden tek bir karakter ayarlar `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void SetAt(int iChar, XCHAR ch);
@@ -1003,19 +1003,19 @@ void SetAt(int iChar, XCHAR ch);
 
 #### <a name="parameters"></a>Parametreler
 
-*iChar*<br/>
-`CSimpleStringT` Nesnedeki karakterin sıfır tabanlı dizini. *iChar* parametresi 0'dan büyük veya eşit ve [GetLength](#getlength)tarafından döndürülen değerden daha az olmalıdır.
+*ICHAR*<br/>
+Nesnedeki karakterin sıfır tabanlı dizini `CSimpleStringT` . *Ihar* parametresi 0 ' dan büyük veya buna eşit ve [GetLength](#getlength)tarafından döndürülen değerden küçük olmalıdır.
 
-*Caner*<br/>
+*denetleyebilirsiniz*<br/>
 Yeni karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*iChar'da*bulunan karakterin üzerine yazmak için bu yöntemi arayın. *iChar* varolan dize sınırlarını aşarsa, bu yöntem dize büyütmez.
+*ICHAR*konumunda bulunan karakterin üzerine yazmak için bu yöntemi çağırın. Bu yöntem, *ıhar* varolan dizenin sınırlarını aşarsa dizeyi genişletmeyecektir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::SetAt`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::SetAt` .
 
 ```cpp
 CSimpleString s(_T("abcdef"), pMgr);
@@ -1023,11 +1023,11 @@ s.SetAt(1, _T('a'));
 ASSERT(_tcscmp(s, _T("aacdef")) == 0);
 ```
 
-## <a name="csimplestringtsetmanager"></a><a name="setmanager"></a>CSimpleStringT::SetManager
+## <a name="csimplestringtsetmanager"></a><a name="setmanager"></a>CSimpleStringT:: SetManager
 
-Nesnenin bellek yöneticisini `CSimpleStringT` belirtir.
+Nesnenin bellek yöneticisini belirtir `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void SetManager(IAtlStringMgr* pStringMgr);
@@ -1036,26 +1036,26 @@ void SetManager(IAtlStringMgr* pStringMgr);
 #### <a name="parameters"></a>Parametreler
 
 *pStringMgr*<br/>
-Yeni bellek yöneticisi için bir işaretçi.
+Yeni bellek yöneticisine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleStringT` Nesne tarafından kullanılan yeni bir bellek yöneticisi belirtmek için bu yöntemi arayın. Bellek yöneticileri ve dize nesneleri hakkında daha fazla bilgi için Bellek [Yönetimi ve CStringT'e](../memory-management-with-cstringt.md)bakın.
+Nesnesi tarafından kullanılan yeni bir bellek yöneticisi belirtmek için bu yöntemi çağırın `CSimpleStringT` . Bellek yöneticileri ve dize nesneleri hakkında daha fazla bilgi için bkz. [bellek yönetimi ve CStringT](../memory-management-with-cstringt.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::SetManager`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::SetManager` .
 
 ```cpp
 CSimpleString s(pMgr);
 s.SetManager(pCustomMgr);
 ```
 
-## <a name="csimplestringtsetstring"></a><a name="setstring"></a>CSimpleStringT::SetString
+## <a name="csimplestringtsetstring"></a><a name="setstring"></a>CSimpleStringT:: SetString
 
-`CSimpleStringT` Nesnenin dizesini ayarlar.
+Bir nesnenin dizesini ayarlar `CSimpleStringT` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void SetString(PCXSTR pszSrc, int nLength);
@@ -1065,26 +1065,26 @@ void SetString(PCXSTR pszSrc);
 #### <a name="parameters"></a>Parametreler
 
 *pszSrc*<br/>
-Null-sonlandırılan dize için bir işaretçi.
+Null ile sonlandırılmış bir dize işaretçisi.
 
-*nUzunluk*<br/>
-*pszSrc*karakter sayısı nın sayısı.
+*nLength*<br/>
+*PszSrc*içindeki karakterlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dizeyi `CSimpleStringT` nesneye kopyalayın. `SetString`arabellekteki eski dize verilerinin üzerine yazar.
+Nesnesine bir dize kopyalayın `CSimpleStringT` . `SetString`Arabellekteki eski dize verilerinin üzerine yazar.
 
-`SetString` *PszSrc'nin* her iki sürümüde de null işaretçi olup olmadığını kontrol edin ve varsa E_INVALIDARG bir hata atın.
+Her iki sürümü de `SetString` *pszSrc* 'nin null bir işaretçi olup olmadığını denetler ve varsa E_INVALIDARG bir hata oluşturur.
 
-`SetString` *PszSrc'nin* tek parametreli sürümü, null-terminatedstring'e işaret eder.
+Öğesinin tek parametreli sürümü `SetString` *pszSrc* 'in null ile sonlandırılmış bir dizeye işaret etmek bekler.
 
-`SetString` *PszSrc'nin* iki parametreli versiyonu da geçersiz bir dize olmasını bekler. Önce null terminator ile karşılaşmadığı sürece dize uzunluğu olarak *nLength* kullanır.
+Öğesinin iki parametreli sürümü `SetString` de *pszSrc* 'nin null ile sonlandırılmış bir dize olmasını bekler. İlk olarak bir null Sonlandırıcı ile karşılaşmadığı sürece dize uzunluğu olarak *nLength* kullanır.
 
-*PszSrc'nin* `SetString` iki parametreli sürümü, geçerli arabellekteki bir `CSimpleStringT`konuma işaret edip etmediğini de denetler. Bu özel durumda, `SetString` dize verilerini arabelleğine kopyalarken dize verilerinin üzerine yazmayan bir bellek kopyalama işlevi kullanır.
+İki parametreli sürümü, `SetString` *pszSrc* 'nin içindeki geçerli arabellekte bir konuma işaret ettiğini de denetler `CSimpleStringT` . Bu özel durumda, `SetString` dize verilerini arabelleğine geri kopyalayan dize verilerinin üzerine yazmayan bir bellek kopyalama işlevi kullanır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::SetString`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::SetString` .
 
 ```cpp
 CSimpleString s(_T("abcdef"), pMgr);
@@ -1093,11 +1093,11 @@ s.SetString(_T("Soccer"), 6);
 ASSERT(_tcscmp(s, _T("Soccer")) == 0);
 ```
 
-## <a name="csimplestringtstringlength"></a><a name="stringlength"></a>CSimpleStringT::StringLength
+## <a name="csimplestringtstringlength"></a><a name="stringlength"></a>CSimpleStringT:: StringLength
 
-Belirtilen dizedeki karakter sayısını verir.
+Belirtilen dizedeki karakter sayısını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
@@ -1105,30 +1105,30 @@ ATL_NOINLINE static int StringLength(PCXSTR psz) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*Psz*<br/>
-Null-sonlandırılan dize için bir işaretçi.
+*PSZ*<br/>
+Null ile sonlandırılmış bir dize işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*psz*karakter sayısı; null terminatör saymıyorum.
+*PSZ*; içindeki karakter sayısı null Sonlandırıcı sayılıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Psz*tarafından işaret edilen dizedeki karakter sayısını almak için bu yöntemi arayın.
+*PSZ*tarafından işaret edilen dizedeki karakter sayısını almak için bu yöntemi çağırın.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::StringLength`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::StringLength` .
 
 ```cpp
 ASSERT(CSimpleString::StringLength(_T("soccer")) == 6);
 ```
 
-## <a name="csimplestringttruncate"></a><a name="truncate"></a>CSimpleStringT::Truncate
+## <a name="csimplestringttruncate"></a><a name="truncate"></a>CSimpleStringT:: Truncate
 
-Dizeyi yeni uzunluğa doğru truncates.
+Dizeyi yeni uzunluğa kırpar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void Truncate(int nNewLength);
@@ -1141,14 +1141,14 @@ Dizenin yeni uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize içeriğini yeni uzunluğa ayırmak için bu yöntemi çağırın.
+Dizenin içeriğini yeni uzunluğa kesmek için bu yöntemi çağırın.
 
 > [!NOTE]
-> Bu, arabelleğe ayrılan uzunluğunu etkilemez. Geçerli arabelleği azaltmak veya artırmak için [FreeExtra](#freeextra) ve [Preallocate'a](#preallocate)bakın.
+> Bu, arabelleğin ayrılan uzunluğunu etkilemez. Geçerli arabelleği azaltmak veya artırmak için bkz. [FreeExtra](#freeextra) ve [preallocate](#preallocate).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, ..000.000.000.000.000.000. `CSimpleStringT::Truncate`
+Aşağıdaki örnek öğesinin kullanımını gösterir `CSimpleStringT::Truncate` .
 
 ```cpp
 CSimpleString str(_T("abcdefghi"), pMgr);
@@ -1159,9 +1159,9 @@ _tprintf_s(_T("Allocated length: %d\n"), str.GetLength());
 _tprintf_s(_T("Contents: %s\n"), str);
 ```
 
-## <a name="csimplestringtunlockbuffer"></a><a name="unlockbuffer"></a>CSimpleStringT::UnlockAraffer
+## <a name="csimplestringtunlockbuffer"></a><a name="unlockbuffer"></a>CSimpleStringT:: UnlockBuffer
 
-`CSimpleStringT` Nesnenin arabelleği kilidini açar.
+Nesnesinin arabelleğini kaldırır `CSimpleStringT` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1171,13 +1171,13 @@ void UnlockBuffer() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize referans sayısını 1'e sıfırlamak için bu yöntemi çağırın.
+Dizenin başvuru sayısını 1 ' e sıfırlamak için bu yöntemi çağırın.
 
-`CSimpleStringT` Yıkıcı, yıkıcı çağrıldığında `UnlockBuffer` arabelleğenin kilitli olmadığından emin olmak için otomatik olarak arar. Bu yöntemin bir örneği için [Bkz. LockBuffer.](#lockbuffer)
+Yıkıcı `CSimpleStringT` `UnlockBuffer` çağrıldığında arabelleğin kilitlenmemesini sağlamak için otomatik olarak çağırır. Bu yöntemin bir örneği için bkz. [LockBuffer](#lockbuffer).
 
-## <a name="csimplestringtcsimplestringt"></a><a name="dtor"></a>CSimpleStringt::~CSimpleStringt
+## <a name="csimplestringtcsimplestringt"></a><a name="dtor"></a>CSimpleStringT:: ~ CSimpleStringT
 
-Bir `CSimpleStringT` nesneyi yok eder.
+Bir nesneyi yok eder `CSimpleStringT` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -1187,9 +1187,9 @@ Bir `CSimpleStringT` nesneyi yok eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneyi yok etmek `CSimpleStringT` için bu yöntemi çağırın.
+Nesneyi yok etmek için bu yöntemi çağırın `CSimpleStringT` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Paylaşılan Sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_move_constructible
 ms.assetid: d186d97b-7b89-470a-8d30-993046a83379
-ms.openlocfilehash: 7f1ccdba11f62fcbeaf54162f80f0717feaa2fa1
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 115a1b6c2157a139786c0b8762a9a614bbcd6deb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455871"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217733"
 ---
-# <a name="isnothrowmoveconstructible-class"></a>is_nothrow_move_constructible Sınıfı
+# <a name="is_nothrow_move_constructible-class"></a>is_nothrow_move_constructible Sınıfı
 
-Türün **nothrow** taşıma oluşturucusuna sahip olup olmadığını sınar.
+Türün bir taşıma oluşturucusuna sahip olup olmadığını sınar **`nothrow`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -35,7 +35,7 @@ Tür kümesi bir nothrow taşıma *oluşturucusuna sahipse,* tür koşulunun bir
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

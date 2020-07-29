@@ -51,12 +51,12 @@ helpviewer_keywords:
 - std::span [C++], rend
 - std::span [C++], size
 - std::span [C++], size_bytes
-ms.openlocfilehash: e77f57bc56a75406745349e19d03bc26edc5470d
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 86ef4afcb5e6e7a9d244a8c2f2126bec7e1ace75
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813515"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217460"
 ---
 # <a name="span-class-c-standard-library"></a>Span sınıfı (C++ Standart Kitaplığı)
 
@@ -86,8 +86,8 @@ class span;
 
 | **Tür Tanımları** | **Açıklama** |
 |-|-|
-| [const_pointer](#pointer) | Bir öğe işaretçisinin türü `const` . |
-| [const_reference](#reference) | Bir öğeye başvuru türü `const` . |
+| [const_pointer](#pointer) | Bir öğe işaretçisinin türü **`const`** . |
+| [const_reference](#reference) | Bir öğeye başvuru türü **`const`** . |
 | [difference_type](#difference_type) | İki öğe arasındaki işaretli mesafenin türü. |
 | [element_type](#element_type) | Span öğesinin türü. |
 | [iden](#iterator) | Bir yayılma için yineleyicinin türü. |
@@ -95,7 +95,7 @@ class span;
 | [başvurunun](#reference) | Bir öğe için bir başvuru türü. |
 | [reverse_iterator](#reverse_iterator) | Bir yayılma için ters yineleyicinin türü. |
 | [size_type](#size_type) | Yayılma alanındaki iki öğe arasındaki işaretsiz uzaklık sonucunun türü. |
-| [value_type](#value_type) | Veya nitelikleri olmayan bir öğenin türü `const` `volatile` . |
+| [value_type](#value_type) | Veya nitelikleri olmayan bir öğenin türü **`const`** **`volatile`** . |
 | **Oluşturucular** | **Açıklama** |
 |[kapsamı](#span)| Oluşturun `span` .|
 | **Yineleyici desteği** | **Açıklama** |
@@ -105,9 +105,9 @@ class span;
 |[rend](#rend) | Yayılma alanının önüne işaret eden bir ters Yineleyici alın; diğer bir deyişle, ters çevrilen yayılma alanının sonu.|
 | **Erişim öğeleri**| **Açıklama** |
 |[Geri](#back) | Yayılma alanındaki son öğeyi alır.|
-|[verileri](#data) | Yayılma alanındaki ilk öğenin adresini alın.|
+|[data](#data) | Yayılma alanındaki ilk öğenin adresini alın.|
 |[yapılan](#front) | Yayılma alanındaki ilk öğeyi alır.|
-|[işlecinde\[\]](#op_at) | Belirtilen konumdaki bir öğeye erişin.|
+|[işleç\[\]](#op_at) | Belirtilen konumdaki bir öğeye erişin.|
 | **Gözlemciler** | **Açıklama** |
 |[empty](#empty)| Yayılımın boş olup olmadığını test edin.|
 |[boyutla](#size) | Yayılma alanındaki öğelerin sayısını alır.|
@@ -306,7 +306,7 @@ constexpr bool empty() const noexcept;
 
 ### <a name="return-value"></a>Döndürülen değer
 
-`true`İf ise döndürür `this->size() == 0` . Aksi takdirde `false` .
+**`true`** İf ise döndürür `this->size() == 0` . Aksi takdirde **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -619,7 +619,7 @@ int main()
 
 ## <a name="spanpointer"></a><a name="pointer"></a> `span::pointer`
 
-Bir işaretçiye ve işaretçiye yönelik türler `const` , span öğesine.
+Bir işaretçiye ve işaretçiye yönelik türler **`const`** , span öğesine.
 
 ```cpp
 using pointer = T*;
@@ -693,7 +693,7 @@ int main()
 
 ## <a name="spanreference"></a><a name="reference"></a> `span::reference`
 
-Bir başvuru için türler ve bir başvuru, bir `const` span öğesine.
+Bir başvuru için türler ve bir başvuru, bir **`const`** span öğesine.
 
 ```cpp
 using reference = T&;
@@ -1058,7 +1058,7 @@ mySpan.subspan<1>: 12
 
 ## <a name="spanvalue_type"></a><a name="value_type"></a> `span::value_type`
 
-Yayılma alanındaki, veya nitelikleri olmadan öğenin türü `const` `volatile` .
+Yayılma alanındaki, veya nitelikleri olmadan öğenin türü **`const`** **`volatile`** .
 
 ```cpp
 using value_type = std::remove_cv_t<T>;

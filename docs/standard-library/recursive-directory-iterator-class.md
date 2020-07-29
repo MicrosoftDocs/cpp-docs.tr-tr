@@ -4,18 +4,18 @@ ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::tr2::sys::recursive_directory_iterator
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
-ms.openlocfilehash: a5200c030986ebbcfccb1eba2963e8317c879eb6
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 0f9bdc3edd7f5798afaa8d170adc35708a6aafa2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72686799"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217629"
 ---
 # <a name="recursive_directory_iterator-class"></a>recursive_directory_iterator Sınıfı
 
-Bir dizindeki dosya adlarıyla sıralı olabilecek, muhtemelen alt dizinlere yinelemeli olarak azalan bir giriş yineleyicisini açıklar. Bir yineleyici `X` için ifade `*X`, dosya adını ve durumu hakkında bilinen her şeyi sarmalayan sınıf `directory_entry` bir nesne olarak değerlendirilir.
+Bir dizindeki dosya adlarıyla sıralı olabilecek, muhtemelen alt dizinlere yinelemeli olarak azalan bir giriş yineleyicisini açıklar. Bir yineleyici için `X` ifade, `*X` `directory_entry` dosya adını ve durumu hakkında bilinen her şeyi sarmalayan bir sınıf nesnesi olarak değerlendirir.
 
-Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi gezintisiC++()](../standard-library/file-system-navigation.md).
+Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,78 +27,78 @@ class recursive_directory_iterator;
 
 Sınıf şablonu şunları depolar:
 
-1. `stack<pair<directory_iterator, path>>` türünde bir nesne, bu, sıralanacak dizinlerin iç içe geçme amacını temsil eden Exposition amaçları doğrultusunda `mystack` olarak adlandırılır
+1. `stack<pair<directory_iterator, path>>` `mystack` burada, sıralanacak dizinlerin iç içe geçme amacını temsil eden Exposition amaçları için aranan bir nesne
 
-1. Burada `myentry` çağrılan `directory_entry` bir nesne, Dizin dizisindeki geçerli dosya adını temsil eder.
+1. `directory_entry` `myentry` burada çağrılan, Dizin dizisindeki geçerli dosya adını temsil eden bir nesne
 
-1. Burada `no_push` adlı **bool**türünde bir nesne, alt dizinlere özyinelemeli olarak, yinelenen olarak devre dışı bırakılıp bırakılmadığını kaydeder
+1. **`bool`** burada çağrılan, burada çağrılan ve `no_push` özyinelemeli olarak alt dizinlere ayrılan bir nesne devre dışı olup olmadığını kaydeden bir nesne
 
-1. Burada `myoptions` çağrılan `directory_options` türünde bir nesne, oluşturma sırasında belirlenen seçenekleri kaydeder
+1. `directory_options`burada çağrılan ve `myoptions` oluşturma sırasında belirlenen seçenekleri kaydeden bir nesne.
 
-@No__t_0 türündeki varsayılan oluşturulmuş bir nesne `mystack.top().first` bir sıra sonu yineleyicisini içerir ve dizi son yineleyicisini temsil eder. Örneğin, Dizin `abc` `def` (bir dizin), `def/ghi` ve `jkl`, kod:
+Türü varsayılan olarak oluşturulmuş bir nesne `recursive_directory_entry` , öğesinde sıra sonu yineleyicisini içerir `mystack.top().first` ve dizi son yineleyiciyi temsil eder. Örneğin, dizinde `abc` `def` (bir dizin), `def/ghi` ve, ve kodu olan dizin verildiğinde `jkl` :
 
 ```cpp
 for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
     visit(next->path());
 ```
 
-`path("abc/def/ghi")` ve `path("abc/jkl")` bağımsız değişkenlerle ziyaret eder. Sıralamayı bir dizin alt ağacı aracılığıyla iki şekilde niteleyebilirsiniz:
+, ve bağımsız değişkenlerle birlikte `path("abc/def/ghi")` ziyareti çağırır `path("abc/jkl")` . Sıralamayı bir dizin alt ağacı aracılığıyla iki şekilde niteleyebilirsiniz:
 
-1. Bir dizin oluşturmaksızın, yalnızca değeri `directory_options::follow_directory_symlink` olan bir `directory_options` bağımsız değişkeni olan bir `recursive_directory_iterator` oluşturursanız taranır.
+1. Bir dizin oluşturmaksızın yalnızca değeri olan bir `recursive_directory_iterator` bağımsız değişkenle birlikte oluşturduysanız taranır `directory_options` `directory_options::follow_directory_symlink` .
 
-1. @No__t_0 çağırırsanız, bir artış sırasında daha sonra karşılaşılan bir dizin özyinelemeli olarak taranmaz.
+1. Bu durumda, `disable_recursion_pending` daha sonra bir artış sırasında karşılaşılan bir sonraki dizin, özyinelemeli olarak taranmaz.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[recursive_directory_iterator](#recursive_directory_iterator)|Bir `recursive_directory_iterator` oluşturur.|
+|[recursive_directory_iterator](#recursive_directory_iterator)|Bir oluşturur `recursive_directory_iterator` .|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[derinliğini](#depth)|@No__t_0 döndürür, bu nedenle `pval` derinlik sıfırdır.|
-|[disable_recursion_pending](#disable_recursion_pending)|@No__t_1 ' de **true** depolar.|
+|[derinliğini](#depth)|Değerini döndürür `mystack.size() - 1` , bu nedenle `pval` 0 ' dır.|
+|[disable_recursion_pending](#disable_recursion_pending)|**`true`** İçinde depolar `no_push` .|
 |[ılamadı](#increment)|Sıradaki dosya adına ilerler.|
-|[Seçenekler](#options)|@No__t_0 döndürür.|
+|[Seçenekler](#options)|`myoptions` döndürür.|
 |[cağımız](#pop)|Sonraki nesneyi döndürür.|
-|[recursion_pending](#recursion_pending)|@No__t_0 döndürür.|
+|[recursion_pending](#recursion_pending)|`!no_push` döndürür.|
 
 ### <a name="operators"></a>İşleçler
 
 |İşleç|Açıklama|
 |-|-|
-|[operator!=](#op_neq)|@No__t_0 döndürür.|
+|[işleç! =](#op_neq)|`!(*this == right)` döndürür.|
 |[işleç =](#op_as)|Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.|
-|[işleç = =](#op_eq)|Yalnızca `*this` ve *sağ* sıralı yineleyiciler ise veya her ikisi de dizi sırası yineleyiciler değilse **true** değerini döndürür.|
-|[işlecinde](#op_multiply)|@No__t_0 döndürür.|
-|[operator->](#op_cast)|@No__t_0 döndürür.|
-|[işleç + +](#op_increment)|@No__t_0 artırır.|
+|[işleç = =](#op_eq)|**`true`** Yalnızca **`*this`** ve *sağ* sıralı yineleyiciler ise veya her ikisi de dizi sırası yineleyiciler değilse döndürür.|
+|[işlecinde](#op_multiply)|`myentry` döndürür.|
+|[operator->](#op_cast)|`&**this` döndürür.|
+|[işleç + +](#op_increment)|Değerini artırır `recursive_directory_iterator` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<filesystem >
+**Üst bilgi:**\<filesystem>
 
 **Ad alanı:** std:: TR2:: sys
 
-## <a name="depth"></a>recursive_directory_iterator::d epth
+## <a name="recursive_directory_iteratordepth"></a><a name="depth"></a>recursive_directory_iterator::d epth
 
-@No__t_0 döndürür, bu nedenle `pval` derinlik sıfırdır.
+Değerini döndürür `mystack.size() - 1` , bu nedenle `pval` 0 ' dır.
 
 ```cpp
 int depth() const;
 ```
 
-## <a name="disable_recursion_pending"></a>recursive_directory_iterator::d isable_recursion_pending
+## <a name="recursive_directory_iteratordisable_recursion_pending"></a><a name="disable_recursion_pending"></a>recursive_directory_iterator::d isable_recursion_pending
 
-@No__t_1 ' de **true** depolar.
+**`true`** İçinde depolar `no_push` .
 
 ```cpp
 void disable_recursion_pending();
 ```
 
-## <a name="increment"></a>recursive_directory_iterator:: Increment
+## <a name="recursive_directory_iteratorincrement"></a><a name="increment"></a>recursive_directory_iterator:: Increment
 
 Sıradaki dosya adına ilerler.
 
@@ -108,16 +108,16 @@ recursive_directory_iterator& increment(error_code& ec) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*ec* \
+*EC*\
 Belirtilen hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, iç içe dizideki bir sonraki dosya adına ilerle çalışır. Başarılı olursa, bu dosya adını `myentry` depolar; Aksi takdirde, dizi sonu Yineleyici oluşturur.
+İşlev, iç içe dizideki bir sonraki dosya adına ilerle çalışır. Başarılı olursa, bu dosya adını ' de depolar `myentry` ; Aksi takdirde, sıra sonu Yineleyici oluşturur.
 
-## <a name="op_neq"></a>recursive_directory_iterator:: operator! =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_neq"></a>recursive_directory_iterator:: operator! =
 
-@No__t_0 döndürür.
+`!(*this == right)` döndürür.
 
 ```cpp
 bool operator!=(const recursive_directory_iterator& right) const;
@@ -125,10 +125,10 @@ bool operator!=(const recursive_directory_iterator& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*Right*\
 Karşılaştırma için [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) .
 
-## <a name="op_as"></a>recursive_directory_iterator:: operator =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_as"></a>recursive_directory_iterator:: operator =
 
 Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.
 
@@ -139,12 +139,12 @@ recursive_directory_iterator& operator=(recursive_directory_iterator&&) noexcept
 
 ### <a name="parameters"></a>Parametreler
 
-*recursive_directory_iterator* \
-@No__t_1 Kopyalanmakta olan [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) .
+*recursive_directory_iterator*\
+İçine kopyalandığı [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) `recursive_directory_iterator` .
 
-## <a name="op_eq"></a>recursive_directory_iterator:: operator = =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_eq"></a>recursive_directory_iterator:: operator = =
 
-Yalnızca `*this` ve *sağ* sıralı yineleyiciler ise veya her ikisi de dizi sırası yineleyiciler değilse **true** değerini döndürür.
+**`true`** Yalnızca **`*this`** ve *sağ* sıralı yineleyiciler ise veya her ikisi de dizi sırası yineleyiciler değilse döndürür.
 
 ```cpp
 bool operator==(const recursive_directory_iterator& right) const;
@@ -152,28 +152,28 @@ bool operator==(const recursive_directory_iterator& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ* \
+*Right*\
 Karşılaştırma için [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) .
 
-## <a name="op_multiply"></a>recursive_directory_iterator:: operator *
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_multiply"></a>recursive_directory_iterator:: operator *
 
-@No__t_0 döndürür.
+`myentry` döndürür.
 
 ```cpp
 const directory_entry& operator*() const;
 ```
 
-## <a name="op_cast"></a>recursive_directory_iterator:: operator->
+## <a name="recursive_directory_iteratoroperator-"></a><a name="op_cast"></a>recursive_directory_iterator:: operator->
 
-@No__t_0 döndürür.
+`&**this` döndürür.
 
 ```cpp
 const directory_entry * operator->() const;
 ```
 
-## <a name="op_increment"></a>recursive_directory_iterator:: operator + +
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_increment"></a>recursive_directory_iterator:: operator + +
 
-@No__t_0 artırır.
+Değerini artırır `recursive_directory_iterator` .
 
 ```cpp
 recursive_directory_iterator& operator++();
@@ -183,22 +183,22 @@ recursive_directory_iterator& operator++(int);
 
 ### <a name="parameters"></a>Parametreler
 
-*int* \
+*'tir*\
 Belirtilen artış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi `increment()` çağırır ve sonra `*this` döndürür. İkinci üye işlevi nesnenin bir kopyasını yapar, `increment()` çağırır ve sonra kopyayı döndürür.
+İlk üye işlevi çağırır `increment()` ve sonra döndürür **`*this`** . İkinci üye işlevi nesnenin bir kopyasını yapar, çağırır ve `increment()` sonra kopyayı döndürür.
 
-## <a name="options"></a>recursive_directory_iterator:: Options
+## <a name="recursive_directory_iteratoroptions"></a><a name="options"></a>recursive_directory_iterator:: seçenekler
 
-@No__t_0 döndürür.
+`myoptions` döndürür.
 
 ```cpp
 directory_options options() const;
 ```
 
-## <a name="pop"></a>recursive_directory_iterator::p op
+## <a name="recursive_directory_iteratorpop"></a><a name="pop"></a>recursive_directory_iterator::p op
 
 Sonraki nesneyi döndürür.
 
@@ -208,19 +208,19 @@ void pop();
 
 ### <a name="remarks"></a>Açıklamalar
 
-@No__t_0 nesne bir sıra sonu yineleyicisi haline gelir. Aksi takdirde, üye işlevi geçerli (ayrıntılı) dizinin taranmasını sonlandırır ve bir sonraki daha düşük derinlikte devam eder.
+`depth() == 0`Nesne bir sıra sonu yineleyicisi olursa. Aksi takdirde, üye işlevi geçerli (ayrıntılı) dizinin taranmasını sonlandırır ve bir sonraki daha düşük derinlikte devam eder.
 
-## <a name="recursion_pending"></a>recursive_directory_iterator::recursion_pending
+## <a name="recursive_directory_iteratorrecursion_pending"></a><a name="recursion_pending"></a>recursive_directory_iterator:: recursion_pending
 
-@No__t_0 döndürür.
+`!no_push` döndürür.
 
 ```cpp
 bool recursion_pending() const;
 ```
 
-## <a name="recursive_directory_iterator"></a>recursive_directory_iterator::recursive_directory_iterator
+## <a name="recursive_directory_iteratorrecursive_directory_iterator"></a><a name="recursive_directory_iterator"></a>recursive_directory_iterator:: recursive_directory_iterator
 
-Bir `recursive_directory_iterator` oluşturur.
+Bir oluşturur `recursive_directory_iterator` .
 
 ```cpp
 recursive_directory_iterator() noexcept;
@@ -240,26 +240,26 @@ recursive_directory_iterator(recursive_directory_iterator&&) noexcept = default;
 
 ### <a name="parameters"></a>Parametreler
 
-*Pval* \
+*Pval*\
 Belirtilen yol.
 
-*error_code* \
+*error_code*\
 Belirtilen hata kodu.
 
-*OptIn* \
+*OptIn*\
 Belirtilen dizin seçenekleri.
 
-*recursive_directory_iterator* \
-Oluşturulan `recursive_directory_iterator` bir kopya olduğu `recursive_directory_iterator`.
+*recursive_directory_iterator*\
+`recursive_directory_iterator`Oluşturulan öğesinin `recursive_directory_iterator` bir kopyalama olduğu yer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu bir dizi sonu yineleyiciyi üretir. İkinci ve üçüncü oluşturucular `myoptions` `no_push` ve **`directory_options::none` depolar,** sonra da bir dizin olarak *Pval* 'yi açmayı ve okumayı dener. Başarılı olursa, iç içe dizideki ilk dizin olmayan dosya adını belirlemek için `mystack` ve `myentry` başlatır; Aksi takdirde, bir dizi son yineleyicisi üretir.
+İlk Oluşturucu bir dizi sonu yineleyiciyi üretir. İkinci ve üçüncü oluşturucular içinde ve ' de depolar **`false`** `no_push` `directory_options::none` `myoptions` , ardından bir dizin olarak *Pval* 'yi açmayı ve okumayı dener. Başarılı olursa, `mystack` `myentry` iç içe geçmiş dizideki ilk dizin olmayan dosya adını tasarlarlar ve bunları başlatır, aksi takdirde bir dizi son yineleyiciyi üretir.
 
-Dördüncü ve beşinci oluşturucular, ikinci ve üçüncü ile aynı şekilde davranır, ancak `myoptions` *ilk olarak onları depolarlar* . Varsayılan olarak construtors beklendiği gibi davranır.
+Dördüncü ve beşinci oluşturucular, ikinci ve üçüncü ile *aynı şekilde davranır* `myoptions` . Varsayılan olarak construtors beklendiği gibi davranır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) \
-[\<filesystem >](../standard-library/filesystem.md) \
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<filesystem>](../standard-library/filesystem.md)\
 [Dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md)

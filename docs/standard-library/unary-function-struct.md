@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - unary_function class
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
-ms.openlocfilehash: deb142bb263af51bee515e445ea705bf248461b5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: a38a22abe4381afd45948e56d46c54f39028517d
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243479"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217382"
 ---
-# <a name="unaryfunction-struct"></a>unary_function Yapısı
+# <a name="unary_function-struct"></a>unary_function Yapısı
 
-Birli işlev nesnesi sağlayan türetilen sınıfları tarafından devralındığından türlerini tanımlayan boş bir temel yapı.
+Birli işlev nesnesi sağlayan türetilmiş sınıflar tarafından devralınabilir olabilecek türleri tanımlayan boş bir temel yapı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,9 +29,9 @@ struct unary_function
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapı biçiminde bir üye işlevi tanımlayan sınıflar için temel olarak hizmet veren **result_type**`operator()`( **constargument_type &** ) **const**.
+Şablon yapısı, **result_type**form üye işlevini tanımlayan sınıflar için temel görevi görür `operator()` ( **constargument_type&**) **`const`** .
 
-Tüm bu türetilmiş birli işlevleri kendi tek bağımsız değişken türü olarak başvurabilir **argument_type** ve kendi dönüş türü olarak **result_type**.
+Tüm türetilmiş birli işlevler, **argument_type** olarak tek bağımsız değişken türüne ve **result_type**olarak dönüş türüne başvurabilir.
 
 ## <a name="example"></a>Örnek
 

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_constructible
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d
-ms.openlocfilehash: 7ec4fc3ef5d9a799d5d77124870fbb337061c94c
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e52b16965d849f992731c4ff4254fd218b944269
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455998"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217759"
 ---
-# <a name="isnothrowconstructible-class"></a>is_nothrow_constructible sınıfı
+# <a name="is_nothrow_constructible-class"></a>is_nothrow_constructible sınıfı
 
 Bir türün oluşturulabilir olup olmadığını test eder ve belirtilen bağımsız değişken türleri kullanıldığında throw olarak bilinir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, class... Args>
@@ -26,7 +26,7 @@ struct is_nothrow_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 *Args*\
@@ -34,11 +34,11 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür koşulunun bir örneği, *T* türü bağımsız *değişkenler*içindeki bağımsız değişken türleri kullanılarak oluşturulabilir ise true, Oluşturucu derleyicinin throw tarafından bilinmez; Aksi takdirde yanlış olur. Değişken  tanımı `T t(std::declval<Args>()...);` düzgün biçimlendirilmişse tür T oluşturulabilir. *T* ve *args* içindeki tüm türlerin her ikisi de, bilinmeyen türler, **void**veya dizileri olmalıdır.
+Tür koşulunun bir örneği, *T* türü bağımsız *değişkenler*içindeki bağımsız değişken türleri kullanılarak oluşturulabilir ise true, Oluşturucu derleyicinin throw tarafından bilinmez; Aksi takdirde yanlış olur. Değişken tanımı düzgün biçimlendirilmişse tür *T* oluşturulabilir `T t(std::declval<Args>()...);` . Hem *T* hem de *args* içindeki tüm türler, tamamlanmış bir veya daha fazla türde **`void`** bir dizi olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

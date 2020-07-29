@@ -31,12 +31,12 @@ helpviewer_keywords:
 - SafeNotEquals function
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-ms.openlocfilehash: 9af34e7dcb13f54b824088fa81b6d5a7145c6ae5
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: c968601d95403dd63540a7a8ec2190a199fa1c5a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334916"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219345"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 
@@ -63,7 +63,7 @@ Bu işlevlerin her biri iki şablon türüne sahiptir: `T` ve `U` . Bu türlerin
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-Section                                                  | Description
+Section                                                  | Açıklama
 -------------------------------------------------------- | ----------------------------------------------------
 [SafeInt](safeint-class.md)                   | `SafeInt`Sınıfı.
 [SafeIntException](safeintexception-class.md) | SafeInt kitaplığına özgü özel durum sınıfı.
@@ -94,7 +94,7 @@ dışı `SafeAdd`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata oluşursa **doğru** ; bir hata oluşursa **false** .
+**`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
 ## <a name="safecast"></a><a name="safecast"></a>SafeCast
 
@@ -118,7 +118,7 @@ dışı Yeni sayı türüne bir başvuru. Bu, türünde olmalıdır `U` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata oluşursa **doğru** ; bir hata oluşursa **false** .
+**`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
 ## <a name="safedivide"></a><a name="safedivide"></a>SafeDivide
 
@@ -146,7 +146,7 @@ dışı `SafeDivide`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata oluşursa **doğru** ; bir hata oluşursa **false** .
+**`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
 ## <a name="safeequals"></a><a name="safeequals"></a>SafeEquals
 
@@ -170,7 +170,7 @@ inline bool SafeEquals (
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* ve *u* eşitse **true** ; Aksi halde **yanlış**.
+**`true`***t* ve *u* eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -198,7 +198,7 @@ inline bool SafeGreaterThan (
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* , *u*'dan büyükse **doğru** , Aksi halde **yanlış**.
+**`true`***t* *u*'den büyükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -226,7 +226,7 @@ inline bool SafeGreaterThanEquals (
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* , *u*'den büyük veya buna eşitse **true** ; Aksi halde **yanlış**.
+**`true`***t* , *u*'dan büyükse veya eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -254,7 +254,7 @@ inline bool SafeLessThan (
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* , *u*'den küçükse **true** ; Aksi halde **yanlış**.
+**`true`***t* *u*'den küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -282,7 +282,7 @@ inline bool SafeLessThanEquals (
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* , *u*'den küçük veya ona eşitse **true** ; Aksi halde **yanlış**.
+**`true`***t* , *u*'den küçükse veya eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -314,7 +314,7 @@ dışı `SafeModulus`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata oluşursa **doğru** ; bir hata oluşursa **false** .
+**`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
 ## <a name="safemultiply"></a><a name="safemultiply"></a>SafeMultiply
 
@@ -342,7 +342,7 @@ dışı `SafeMultiply`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true`bir hata oluşursa; `false`bir hata oluşursa.
+**`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
 ## <a name="safenotequals"></a><a name="safenotequals"></a>SafeNotEquals
 
@@ -366,7 +366,7 @@ inline bool SafeNotEquals (
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*t* ve *u* eşitse **true** ; Aksi halde **yanlış**.
+**`true`***t* ve *u* eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -398,4 +398,4 @@ dışı `SafeSubtract`Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-hata oluşursa **doğru** ; bir hata oluşursa **false** .
+**`true`** bir hata oluşursa; **`false`** bir hata oluşursa.

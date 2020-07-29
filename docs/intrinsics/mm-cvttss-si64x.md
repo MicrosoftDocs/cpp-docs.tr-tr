@@ -7,20 +7,20 @@ helpviewer_keywords:
 - _mm_cvttss_si64x intrinsic
 - cvttss2si instruction
 ms.assetid: f9a3fd07-5bd8-4758-8744-6315c082cf87
-ms.openlocfilehash: 69016a4e23b020b2c4c79c6b97a5a76f2b2dc028
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 6d920a5c59cacb23c7fb155c7ac8e813a9b0e8d0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217422"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217993"
 ---
 # <a name="_mm_cvttss_si64x"></a>_mm_cvttss_si64x
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Convert 'in x64 genişletilmiş sürümünü kesme tek duyarlıklı kayan noktalı sayı () ile 64 bit tamsayı (`cvttss2si`) yönergesiyle yayar.
+Convert 'in x64 genişletilmiş sürümünü kesme tek duyarlıklı kayan noktalı sayı () ile 64 bit tamsayı ( `cvttss2si` ) yönergesiyle yayar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 __int64 _mm_cvttss_si64x(
@@ -31,9 +31,9 @@ __int64 _mm_cvttss_si64x(
 ### <a name="parameters"></a>Parametreler
 
 *deeri*\
-'ndaki Tek `__m128` duyarlıklı kayan nokta değerleri içeren bir yapı.
+'ndaki **`__m128`** Tek duyarlıklı kayan nokta değerleri içeren bir yapı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 İlk kayan nokta değerinin 64 bitlik bir tamsayıya dönüştürülmesinin sonucu.
 
@@ -41,13 +41,13 @@ __int64 _mm_cvttss_si64x(
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`_mm_cvttss_si64x`|X64|
+|`_mm_cvttss_si64x`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-İç `_mm_cvtss_si64x` öğe yalnızca bu geçersiz dönüştürmelerde sıfıra doğru kesilir. `__m128` Yapı bir XMM kaydını temsil ettiğinden, oluşturulan yönerge verileri bir XMM kaydındaki sistem belleğine taşıdır.
+İç öğe `_mm_cvtss_si64x` yalnızca bu geçersiz dönüştürmelerde sıfıra doğru kesilir. **`__m128`** Yapı BIR XMM kaydını temsil ettiğinden, oluşturulan yönerge verileri BIR XMM kaydındaki sistem belleğine taşıdır.
 
 Bu yordam yalnızca iç öğe olarak kullanılabilir.
 

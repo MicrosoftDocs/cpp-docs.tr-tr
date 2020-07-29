@@ -13,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-ms.openlocfilehash: 445e368ced9d9c8faf30351ecaeecc4e1b8a59f2
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d3dc730e19aaadfed171816e92837ba2766883cb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142842"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213885"
 ---
 # <a name="call-class"></a>çağrı Sınıfı
 
-`call` mesajlaşma bloğu, bir ileti alırken belirtilen bir işlevi çağıran çok kaynaklı ve sıralı bir `target_block`.
+İleti `call` bloğu, bir `target_block` ileti alırken belirtilen bir işlevi çağıran birden çok kaynaktır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class T, class _FunctorType = std::function<void(T const&)>>
@@ -33,7 +33,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Bu bloğa yayılan iletilerin yük türü.
 
 *_FunctorType*<br/>
@@ -45,18 +45,18 @@ Bu bloğun kabul edebileceği işlevlerin imzası.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[çaðýrmak](#ctor)|Fazla Yüklendi. `call` mesajlaşma bloğu oluşturur.|
-|[~ Call yıkıcı](#dtor)|`call` mesajlaşma bloğunu yok eder.|
+|[çaðýrmak](#ctor)|Fazla Yüklendi. `call`İleti bloğu oluşturur.|
+|[~ Call yıkıcı](#dtor)|`call`Mesajlaşma bloğunu yok eder.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[process_input_messages](#process_input_messages)|Giriş iletilerinde çağırma işlevini yürütür.|
-|[process_message](#process_message)|Bu `call` mesajlaşma bloğu tarafından kabul edilen bir iletiyi işler.|
-|[propagate_message](#propagate_message)|Zaman uyumsuz bir iletiyi `ISource` bloğundan bu `call` mesajlaşma bloğuna aktarır. Kaynak bloğu tarafından çağrıldığında `propagate` yöntemi tarafından çağrılır.|
-|[send_message](#send_message)|Zaman uyumlu olarak bir `ISource` bloğundan bu `call` mesajlaşma bloğuna bir ileti geçirir. Kaynak bloğu tarafından çağrıldığında `send` yöntemi tarafından çağrılır.|
-|[supports_anonymous_source](#supports_anonymous_source)|Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için `supports_anonymous_source` yöntemini geçersiz kılar. ( [IComparer:: supports_anonymous_source](itarget-class.md#supports_anonymous_source)geçersiz kılar.)|
+|[process_message](#process_message)|Bu mesajlaşma bloğu tarafından kabul edilen bir iletiyi işler `call` .|
+|[propagate_message](#propagate_message)|Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `call` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.|
+|[send_message](#send_message)|Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `call` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.|
+|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source`Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için yöntemini geçersiz kılar. ( [IComparer:: supports_anonymous_source](itarget-class.md#supports_anonymous_source)geçersiz kılar.)|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -76,9 +76,9 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>çaðýrmak
+## <a name="call"></a><a name="ctor"></a>çaðýrmak
 
-`call` mesajlaşma bloğu oluşturur.
+`call`İleti bloğu oluşturur.
 
 ```cpp
 call(
@@ -116,28 +116,28 @@ Kabul edilen her ileti için çağrılacak bir işlev.
 Sunulan iletilerin kabul edilip edilmeyeceğini belirleyen bir filtre işlevi.
 
 *_PScheduler*<br/>
-`call` mesajlaşma bloğunun yayma görevinin içinde `Scheduler` nesnesi zamanlandı.
+`Scheduler` `call` Mesajlaşma bloğunun yayma görevinin zamanlandığı nesne.
 
 *_PScheduleGroup*<br/>
-`call` mesajlaşma bloğunun yayma görevinin içinde `ScheduleGroup` nesnesi zamanlandı. Kullanılan `Scheduler` nesnesi, zamanlama grubu tarafından kapsanıyor.
+`ScheduleGroup` `call` Mesajlaşma bloğunun yayma görevinin zamanlandığı nesne. `Scheduler`Kullanılan nesne, zamanlama grubu tarafından kapsanıyor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`_PScheduler` veya `_PScheduleGroup` parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır.
+Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır `_PScheduler` `_PScheduleGroup` .
 
-Tür `_Call_method`, bu `call` mesajlaşma bloğu tarafından bir iletiyi işlemek için çağrılan imza `void (T const &)` olan bir functor.
+Tür, `_Call_method` `void (T const &)` Bu `call` mesajlaşma bloğu tarafından bir iletiyi işlemek için çağrılan imzaya sahip olan bir functor.
 
-Tür `filter_method`, bu `call` mesajlaşma bloğu tarafından sunulan ve önerilen bir iletiyi kabul edip etmediğini belirlemede çağrılan, imza `bool (T const &)` olan bir functor.
+Tür, `filter_method` `bool (T const &)` Bu `call` mesajlaşma bloğu tarafından önerilen bir iletiyi kabul edip etmediğini tespit etmek için çağrılan imzaya sahip bir functor.
 
-## <a name="dtor"></a>~ Call
+## <a name="call"></a><a name="dtor"></a>~ Call
 
-`call` mesajlaşma bloğunu yok eder.
+`call`Mesajlaşma bloğunu yok eder.
 
 ```cpp
 ~call();
 ```
 
-## <a name="process_input_messages"></a>process_input_messages
+## <a name="process_input_messages"></a><a name="process_input_messages"></a>process_input_messages
 
 Giriş iletilerinde çağırma işlevini yürütür.
 
@@ -150,9 +150,9 @@ virtual void process_input_messages(_Inout_ message<T>* _PMessage);
 *_PMessage*<br/>
 İşlenecek ileti işaretçisi.
 
-## <a name="process_message"></a>process_message
+## <a name="process_message"></a><a name="process_message"></a>process_message
 
-Bu `call` mesajlaşma bloğu tarafından kabul edilen bir iletiyi işler.
+Bu mesajlaşma bloğu tarafından kabul edilen bir iletiyi işler `call` .
 
 ```cpp
 virtual void process_message(_Inout_ message<T>* _PMessage);
@@ -163,9 +163,9 @@ virtual void process_message(_Inout_ message<T>* _PMessage);
 *_PMessage*<br/>
 İşlenecek ileti işaretçisi.
 
-## <a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
 
-Zaman uyumsuz bir iletiyi `ISource` bloğundan bu `call` mesajlaşma bloğuna aktarır. Kaynak bloğu tarafından çağrıldığında `propagate` yöntemi tarafından çağrılır.
+Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `call` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
 ```cpp
 virtual message_status propagate_message(
@@ -176,7 +176,7 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-`message` nesnesine yönelik bir işaretçi.
+Nesneye yönelik bir işaretçi `message` .
 
 *_PSource*<br/>
 İletiyi sunan kaynak bloğuna yönelik bir işaretçi.
@@ -185,9 +185,9 @@ virtual message_status propagate_message(
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a>send_message
 
-Zaman uyumlu olarak bir `ISource` bloğundan bu `call` mesajlaşma bloğuna bir ileti geçirir. Kaynak bloğu tarafından çağrıldığında `send` yöntemi tarafından çağrılır.
+Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `call` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
 ```cpp
 virtual message_status send_message(
@@ -198,7 +198,7 @@ virtual message_status send_message(
 ### <a name="parameters"></a>Parametreler
 
 *_PMessage*<br/>
-`message` nesnesine yönelik bir işaretçi.
+Nesneye yönelik bir işaretçi `message` .
 
 *_PSource*<br/>
 İletiyi sunan kaynak bloğuna yönelik bir işaretçi.
@@ -207,9 +207,9 @@ virtual message_status send_message(
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
 
-Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için `supports_anonymous_source` yöntemini geçersiz kılar.
+`supports_anonymous_source`Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için yöntemini geçersiz kılar.
 
 ```cpp
 virtual bool supports_anonymous_source();
@@ -217,9 +217,9 @@ virtual bool supports_anonymous_source();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**çünkü blok** sunulan iletileri ertelemez.
+**`true`** bloğu sunulan iletileri ertelemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[transformer Sınıfı](transformer-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[Transformatör sınıfı](transformer-class.md)

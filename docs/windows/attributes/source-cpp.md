@@ -1,23 +1,23 @@
 ---
-title: Kaynak (C++ com özniteliği)
+title: Kaynak (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.source
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: 5f961513b948c3195aea864d97313ac09e97344e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 274e446aecc4d0d7096211bbae88e0f170ae44a2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166230"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213833"
 ---
 # <a name="source-c"></a>kaynak (C++)
 
 Bir sınıfında, bağlantı noktaları için COM nesnesinin kaynak arabirimlerini belirtir. Bir özellik veya yöntemde, üyenin bir olay kaynağı olan bir nesne veya DEĞIŞKEN döndürdüğünü gösterir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ source(interfaces) ]
@@ -30,7 +30,7 @@ Bir sınıfa kaynak özniteliği uyguladığınızda belirttiğiniz bir veya dah
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kaynak** C++ öznitelik, [kaynak](/windows/win32/Midl/source) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Kaynak** C++ özniteliği, [kaynak](/windows/win32/Midl/source) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 Bir nesnenin varsayılan kaynak arabirimini belirtmek için [varsayılan](default-cpp.md) özniteliğini kullanabilirsiniz.
 
@@ -74,9 +74,9 @@ class NN : public b
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**, **arabirim**|
+|**Şunlara uygulanır**|**`class`**, **`struct`** , **arabirim**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|`coclass` (sınıfa veya yapıya uygulandığında)|
+|**Gerekli öznitelikler**|`coclass`(sınıfa veya yapıya uygulandığında)|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -84,6 +84,6 @@ class NN : public b
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[Yöntem öznitelikleri](method-attributes.md)<br/>
 [coclass](coclass.md)

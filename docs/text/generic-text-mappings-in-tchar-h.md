@@ -1,5 +1,5 @@
 ---
-title: Tchar.h'deki Genel Metin Eşlemeleri
+title: Tchar. h 'de Genel metin eşlemeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - mapping generic-text
@@ -10,86 +10,86 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: bf872df2e6fb49e64a973e8799eef98dec1cb472
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c317e7d67cc3d086dacbe0f24b0103d389afefda
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361352"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217304"
 ---
-# <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'deki Genel Metin Eşlemeleri
+# <a name="generic-text-mappings-in-tcharh"></a>Tchar. h 'de Genel metin eşlemeleri
 
-Microsoft çalışma zamanı kitaplığı, uluslararası kullanım için kodun taşınmasını kolaylaştırmak için, birçok veri türü, yordam ve diğer nesneler için Microsoft'a özgü genel metin eşlemeleri sağlar. Tchar.h'de tanımlanan bu eşlemeleri, bir `#define` deyim kullanarak tanımladığınız bir bildirim sabitine bağlı olarak tek bayt, çok bayt veya Unicode karakter kümeleri için derlenebilecek genel kod yazmak için kullanabilirsiniz. Genel metin eşlemeleri, ANSI uyumlu olmayan Microsoft uzantılarıdır.
+Uluslararası kullanım için kodun taşınmasını basitleştirmek amacıyla, Microsoft çalışma zamanı kitaplığı birçok veri türü, yordamlar ve diğer nesneler için Microsoft 'a özgü genel metin eşlemeleri sağlar. Bir bildirimini kullanarak tanımladığınız bir bildirim sabitine bağlı olarak, tek baytlı, çok baytlı veya Unicode karakter kümeleri için derlenebilecek genel kod yazmak üzere Tchar. h içinde tanımlanan bu eşlemeleri kullanabilirsiniz `#define` . Genel metin eşlemeleri, ANSI uyumlu olmayan Microsoft uzantılarıdır.
 
-tchar.h'yi kullanarak, aynı kaynaklardan tek bayt, Multibayt Karakter Kümesi (MBCS) ve Unicode uygulamaları oluşturabilirsiniz. tchar.h, doğru önişlemci tanımlarıyla `_tcs`, `str`yani `_mbs` `wcs` işlevlerin eşlenediğini (öneki olan) makroları tanımlar. MBCS oluşturmak için sembolü `_MBCS`tanımlayın. Unicode oluşturmak için, `_UNICODE`sembolü tanımlayın. Tek bayt uygulaması oluşturmak için, ne (varsayılan) tanımlayın. Varsayılan olarak, `_UNICODE` MFC uygulamaları için tanımlanır.
+Tchar. h kullanarak, aynı kaynaklardan tek baytlı, çok baytlı karakter kümesi (MBCS) ve Unicode uygulamaları oluşturabilirsiniz. Tchar. h, doğru önişlemci tanımlarına sahip olan makroları (öneki olan) tanımlar,, `_tcs` `str` `_mbs` veya `wcs` işlevlerine uygun şekilde eşleyin. MBCS oluşturmak için, sembolünü tanımlayın `_MBCS` . Unicode oluşturmak için simgeyi tanımlayın `_UNICODE` . Tek baytlık bir uygulama oluşturmak için, (varsayılan) öğesini değil tanımlayın. Varsayılan olarak `_UNICODE` MFC uygulamaları için tanımlanmıştır.
 
-Veri `_TCHAR` türü tchar.h'de koşullu olarak tanımlanır. Sembol yapınız için `_UNICODE` tanımlanmışsa, `_TCHAR` **wchar_t**olarak tanımlanır; aksi takdirde, tek bayt ve MBCS oluşturur için, **bu char**olarak tanımlanır. (**wchar_t**, temel Unicode geniş karakterli veri türü, 8-bit imzalı **char**16-bit muadilidir .) Uluslararası uygulamalar için, `_tcs` bayt lar yerine `_TCHAR` birimler halinde çalışan fonksiyonlar ailesini kullanın. Örneğin, `_tcsncpy` kopyalar, `n` `_TCHARs` `n` bayt değil.
+`_TCHAR`Veri türü Tchar. h içinde koşullu olarak tanımlanır. Sembol `_UNICODE` derleme için tanımlıysa, `_TCHAR` olarak tanımlanır **`wchar_t`** ; Aksi takdirde, tek baytlı ve MBCS derlemeleri için olarak tanımlanır **`char`** . ( **`wchar_t`** basit Unicode geniş karakterli veri türü, 8 bit 'e karşılık gelen 16 bittir **`signed char`** .) Uluslararası uygulamalar için, `_tcs` bayt değil birimlerde çalışan işlev ailesini kullanın `_TCHAR` . Örneğin, `_tcsncpy` `n` `_TCHARs` bayt değil, kopyalar `n` .
 
-Bazı Single Byte Karakter Kümesi (SBCS) dize `char*` işleme işlevleri parametreleri aldığından (imzalı) parametreleri, tanımlandığında `_MBCS` bir tür uyumsuzluğu derleyici uyarı sonuçları. Bu uyarıyı önlemenin üç yolu vardır:
+Bazı tek bayt karakter kümesi (SBCS) dize işleme işlevleri (imzalı) parametre aldığı için **`char*`** , tanımlandığında bir tür uyuşmazlığı derleyici uyarısı oluşur `_MBCS` . Bu uyarıyı önlemenin üç yolu vardır:
 
-1. Tchar.h'deki tip güvenli satır içi işlevini kullanın. Bu varsayılan davranıştır.
+1. Tchar. h içinde tür kullanımı uyumlu satır içi işlev dönüştürücüler kullanın. Bu, varsayılan davranıştır.
 
-1. Komut satırında tanımlayarak `_MB_MAP_DIRECT` tchar.h'deki doğrudan makroları kullanın. Bunu yaparsanız, türleri el ile eşleştirmeniz gerekir. Bu en hızlı yöntemdir, ancak tür güvenli değildir.
+1. Komut satırını tanımlayarak Tchar. h içindeki doğrudan makroları kullanın `_MB_MAP_DIRECT` . Bunu yaparsanız, türleri el ile eşleştirebilirsiniz. Bu en hızlı yöntemdir, ancak tür kullanımı güvenli değildir.
 
-1. Tchar.h'deki tür-güvenli statik bağlı kitaplık işlevini kullanın. Bunu yapmak için komut `_NO_INLINING` satırındaki sabiti tanımlayın. Bu en yavaş yöntemdir, ancak en çok tür güvenlidir.
+1. Tchar. h içinde tür kullanımı uyumlu statik bağlantılı kitaplık işlevi dönüştürücüler kullanın. Bunu yapmak için, `_NO_INLINING` komut satırında sabiti tanımlayın. Bu en yavaş yöntemdir, ancak tür açısından güvenlidir.
 
-### <a name="preprocessor-directives-for-generic-text-mappings"></a>Genel Metin Eşlemeleri için Önİşlemci Yönergeleri
+### <a name="preprocessor-directives-for-generic-text-mappings"></a>Genel metin eşlemeleri için Önişlemci yönergeleri
 
-|# tanımlamak|Derlenmiş sürüm|Örnek|
+|# define|Derlenmiş sürüm|Örnek|
 |---------------|----------------------|-------------|
-|`_UNICODE`|Unicode (geniş karakterli)|`_tcsrev`için haritalar`_wcsrev`|
-|`_MBCS`|Çok bayt karakter|`_tcsrev`için haritalar`_mbsrev`|
-|Yok (varsayılan ne `_UNICODE` `_MBCS` de tanımlanmış)|SBCS (ASCII)|`_tcsrev`için haritalar`strrev`|
+|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev`eşleme`_wcsrev`|
+|`_MBCS`|Çok baytlı karakter|`_tcsrev`eşleme`_mbsrev`|
+|Hiçbiri (varsayılan değer `_UNICODE` veya tanımlı değil `_MBCS` )|SBCS (ASCıı)|`_tcsrev`eşleme`strrev`|
 
-Örneğin, tchar.h'de tanımlanan genel metin `_tcsrev`işlevi, programınızda tanımlayıp tanımladığınızı `_wcsrev` veya `_UNICODE`tanımladığınız `_mbsrev` `_MBCS` için eşler. Aksi `_tcsrev` takdirde, `strrev`haritalar . Diğer veri türü eşlemeleri programlama kolaylığı için tchar.h'de sağlanır, ancak `_TCHAR` en kullanışlı olandır.
+Örneğin, `_tcsrev` Tchar. h 'de tanımlanan genel metin işlevi, `_mbsrev` `_MBCS` programınızda tanımladıysanız veya ' i `_wcsrev` tanımlıysa ile eşlenir `_UNICODE` . Aksi takdirde, `_tcsrev` ile eşlenir `strrev` . Diğer veri türü eşlemeleri, programlama kolaylığı için Tchar. h içinde sağlanır, ancak `_TCHAR` en yararlı seçenektir.
 
-### <a name="generic-text-data-type-mappings"></a>Genel Metin Veri Türü Eşlemeleri
+### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri
 
-|Genel Metin<br /> Veri Türü Adı|_UNICODE &<br /> _MBCS Tanımlanmamış|_mbcs<br /> Tanımlanan|_unıcode<br /> Tanımlanan|
+|Genel metin<br /> Veri türü adı|_UNICODE &<br /> _MBCS tanımsız|_MBCS<br /> Tanımlı|_UNICODE<br /> Tanımlı|
 |--------------------------------------|----------------------------------------|------------------------|---------------------------|
-|`_TCHAR`|**char**|**char**|**wchar_t**|
-|`_TINT`|**int**|**unsigned int**|`wint_t`|
-|`_TSCHAR`|**imzalı char**|**imzalı char**|**wchar_t**|
-|`_TUCHAR`|**unsigned char**|**unsigned char**|**wchar_t**|
-|`_TXCHAR`|**char**|**unsigned char**|**wchar_t**|
-|`_T` veya `_TEXT`|Efekt yok (önişlemci tarafından kaldırıldı)|Efekt yok (önişlemci tarafından kaldırıldı)|`L`(aşağıdaki karakteri veya dizeyi Unicode muadili olarak dönüştürür)|
+|`_TCHAR`|**`char`**|**`char`**|**`wchar_t`**|
+|`_TINT`|**`int`**|**`unsigned int`**|`wint_t`|
+|`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
+|`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
+|`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
+|`_T` veya `_TEXT`|Efekt yok (ön işlemci tarafından kaldırıldı)|Efekt yok (ön işlemci tarafından kaldırıldı)|`L`(aşağıdaki karakteri veya dizeyi Unicode karşılığına dönüştürür)|
 
-Yordamların, değişkenlerin ve diğer nesnelerin genel metin eşlemelerinin listesi için, Çalışma Zamanı Kitaplığı Başvurusu'ndaki [Genel Metin Eşlemeleri'ne](../c-runtime-library/generic-text-mappings.md) bakın.
+Yordamların, değişkenlerin ve diğer nesnelerin genel metin eşlemelerinin bir listesi için bkz. çalışma zamanı kitaplık başvurusunda [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md) .
 
 > [!NOTE]
-> Gömülü null `str` baytlar içerme olasılığı yüksek olan Unicode dizelerine sahip işlevler ailesini kullanmayın. Benzer şekilde, MBCS (veya SBCS) dizelerine sahip `wcs` işlevailesikullanmayın.
+> `str`İşlev ailesini, gömülü null baytları içermesi olası Unicode dizeleriyle birlikte kullanmayın. Benzer şekilde, `wcs` MBCS (veya SBCS) dizeleriyle birlikte işlev ailesini kullanmayın.
 
-Aşağıdaki kod parçaları, MBCS, Unicode ve SBCS modellerinin `_TCHAR` kullanımını ve `_tcsrev` eşleme için kullanımını göstermektedir.
+Aşağıdaki kod parçaları `_TCHAR` `_tcsrev` MBCS, UNICODE ve SBCS modellerine eşleme için ve kullanımını gösterir.
 
 ```cpp
 _TCHAR *RetVal, *szString;
 RetVal = _tcsrev(szString);
 ```
 
-`_MBCS` Tanımlanmışsa, önişlemci bu parçayı bu kodla eşler:
+`_MBCS`Tanımlanmışsa, Önişlemci bu parçayı bu kodla eşler:
 
 ```cpp
 char *RetVal, *szString;
 RetVal = _mbsrev(szString);
 ```
 
-`_UNICODE` Tanımlanmışsa, önişlemci bu parçayı bu kodla eşler:
+`_UNICODE`Tanımlanmışsa, Önişlemci bu parçayı bu kodla eşler:
 
 ```cpp
 wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);
 ```
 
-Ne `_MBCS` değilse `_UNICODE` veya tanımlanmamışsa, önişlemci parçayı aşağıdaki gibi tek bayt ASCII koduyla eşler:
+Ne `_MBCS` de `_UNICODE` tanımlı değilse, ön işlemci parçayı şu şekilde tek baytlı ASCII koduna eşler:
 
 ```cpp
 char *RetVal, *szString;
 RetVal = strrev(szString);
 ```
 
-Bu nedenle, üç karakter kümesinden herhangi biri için özel yordamlarla çalışacak tek kaynakkodlu bir kod dosyası yazabilir, koruyabilir ve derleyebilirsiniz.
+Bu nedenle, üç tür karakter kümesinden birine özgü yordamlar ile çalışmak için tek kaynaklı bir kod dosyası yazabilir, bakımını yapabilir ve derleyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Metin ve Dizeleri](../text/text-and-strings-in-visual-cpp.md)<br/>
-[_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma](../text/using-tchar-h-data-types-with-mbcs-code.md)
+[Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
+[TCHAR kullanma. _MBCS kodlu H veri türleri](../text/using-tchar-h-data-types-with-mbcs-code.md)

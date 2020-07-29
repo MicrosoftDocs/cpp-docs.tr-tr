@@ -1,5 +1,5 @@
 ---
-title: '&lt;dize&gt; operatörleri'
+title: '&lt;dize &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - string/std::operator!=
@@ -20,24 +20,24 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: fef2eb784eca9c9eabbdcd727b051d5c2a4ccfd2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0e63054365f4b29cf474a46dbf7c730f54759792
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376645"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217395"
 ---
-# <a name="ltstringgt-operators"></a>&lt;dize&gt; operatörleri
+# <a name="ltstringgt-operators"></a>&lt;dize &gt; işleçleri
 
 ||||
 |-|-|-|
-|[işleç!=](#op_neq)|[Işleç&gt;](#op_gt)|[Işleç&gt;&gt;](#op_gt_gt)|
-|[Işleç&gt;=](#op_gt_eq)|[Işleç&lt;](#op_lt)|[Işleç&lt;&lt;](#op_lt_lt)|
-|[Işleç&lt;=](#op_lt_eq)|[işleç+](#op_add)|[işleç==](#op_eq_eq)|
+|[işleç! =](#op_neq)|[işleç&gt;](#op_gt)|[işleç&gt;&gt;](#op_gt_gt)|
+|[işleç&gt;=](#op_gt_eq)|[işleç&lt;](#op_lt)|[işleç&lt;&lt;](#op_lt_lt)|
+|[işleç&lt;=](#op_lt_eq)|[işleç +](#op_add)|[işleç = =](#op_eq_eq)|
 
-## <a name="operator"></a><a name="op_add"></a>işleç+
+## <a name="operator"></a><a name="op_add"></a>işleç +
 
-İki dize nesnesi birleştirir.
+İki dize nesnesini birleştirir.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -103,19 +103,19 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Bir C stili dize veya `basic_string` bir tür nesnesi concatenated için.
+*tarafta*\
+Bir C stili dize veya birleştirilecek türü nesne `basic_string` .
 
-*Doğru*\
-Bir C stili dize veya `basic_string` bir tür nesnesi concatenated için.
+*Right*\
+Bir C stili dize veya birleştirilecek türü nesne `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş dizelerinin biraraya getirin.
+Giriş dizelerinin bitiştirilmesi olan dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonunun `operator+` iki nesnesini basic_string [Sınıf'ı](../standard-library/basic-string-class.md)birleştirmek için her biri aşırı yüklenir. Tüm etkili `basic_string< CharType, Traits, Allocator>(Left).append(right)`bir şekilde geri dönün. Daha fazla bilgi için [eke](../standard-library/basic-string-class.md#append)bakın.
+Her bir yeniden yüklemeyi, `operator+` sınıf şablonu [basic_string sınıfının](../standard-library/basic-string-class.md)iki nesnesini birleştirmek için çalışır. Tüm etkin şekilde geri döner `basic_string< CharType, Traits, Allocator>(Left).append(right)` . Daha fazla bilgi için bkz. [append](../standard-library/basic-string-class.md#append).
 
 ### <a name="example"></a>Örnek
 
@@ -169,9 +169,9 @@ The string concatenating s1 & s3 is: antiheroine
 The string concatenating s1 & s3 is: antiheroine!
 ```
 
-## <a name="operator"></a><a name="op_neq"></a>işleç!=
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
-Işlecinin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesine eşit olmamasını test edin.
+İşlecin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -192,19 +192,19 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*tarafta*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
-*Doğru*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*Right*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecinin sol tarafındaki dize nesnesi sağ taraftaki dize nesnesine lexicographically eşit değilse **doğru;** aksi takdirde **yanlış**.
+**`true`** işlecin sol tarafındaki dize nesnesi, sağ taraftaki dize nesnesine sözcüıgrafik olarak eşit değilse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize nesneleri arasındaki karşılaştırma, karakterlerinin çift yönlü lexicographical karşılaştırmasını temel alıncaya dayanır. Aynı sayıda karaktere sahiplerse ve ilgili karakter değerleri aynıysa, iki dize eşittir. Aksi takdirde, eşit değildir.
+Dize nesneleri arasındaki karşılaştırma, karakterlerinin ikili bir lexıgraf karşılaştırmasını temel alır. İki dize aynı sayıda karakter içeriyorsa ve ilgili karakter değerleri aynıysa eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -260,9 +260,9 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç==
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
-Işlecinin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesine eşit olup olmadığını test edin.
+İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesine eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -283,19 +283,19 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*tarafta*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
-*Doğru*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*Right*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecinin sol tarafındaki dize nesnesi lexicographically sağ taraftaki dize nesnesine eşit ise **doğru;** aksi takdirde **yanlış**.
+**`true`** işlecin sol tarafındaki dize nesnesi, sağ taraftaki dize nesnesine lexıgrafik eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize nesneleri arasındaki karşılaştırma, karakterlerinin çift yönlü lexicographical karşılaştırmasını temel alıncaya dayanır. Aynı sayıda karaktere sahiplerse ve ilgili karakter değerleri aynıysa, iki dize eşittir. Aksi takdirde, eşit değildir.
+Dize nesneleri arasındaki karşılaştırma, karakterlerinin ikili bir lexıgraf karşılaştırmasını temel alır. İki dize aynı sayıda karakter içeriyorsa ve ilgili karakter değerleri aynıysa eşittir. Aksi takdirde, bunlar eşit değildir.
 
 ### <a name="example"></a>Örnek
 
@@ -351,9 +351,9 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>Işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
-İşleçin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesinden daha az olup olmadığını test edin.
+İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden küçük olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -374,25 +374,25 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*tarafta*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
-*Doğru*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*Right*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecinin sol tarafındaki dize nesnesi lexicographically sağ taraftaki dize nesnesinden daha az ise **doğru;** aksi takdirde **yanlış**.
+**`true`** işlecin sol tarafındaki dize nesnesi, sağ taraftaki dize nesnesinden sözcüıgrafik değerinden küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizeleri arasında bir lexicographical karşılaştırma kadar karakter karakter karşılaştırır:
+Dizeler arasında bir lexıgraf karşılaştırması, bu karakterleri şu kadar karakterle karşılaştırır:
 
-- Bu iki karşılık gelen karakter eşit siz bulur ve bunların karşılaştırma sonucu dizeleri arasında karşılaştırma sonucu olarak alınır.
+- Karşılık gelen iki karakteri eşit olarak bulur ve karşılaştırma sonuçları, dizeler arasındaki Karşılaştırmanın sonucu olarak alınır.
 
-- Hiçbir eşitsizlik bulur, ancak bir dize diğerinden daha fazla karaktere sahiptir ve kısa dize daha uzun dize daha az olarak kabul edilir.
+- Herhangi bir değer yok buluyor, ancak bir dize diğerinin daha fazla karaktere sahip ve daha kısa dize, daha uzun bir dizeden daha az kabul edilir.
 
-- Hiçbir eşitsizlik bulmaz ve dizelerin aynı sayıda karaktere sahip olduğunu ve böylece dizelerin eşit olduğunu bulur.
+- Herhangi bir inede bulmadan, dizelerin aynı sayıda karaktere sahip olduğunu ve bu nedenle dizelerin eşit olduğunu bulduğunu bulur.
 
 ### <a name="example"></a>Örnek
 
@@ -447,9 +447,9 @@ The string s1 is not less than the string s3.
 The string s3 is less than the string s2.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>Işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
-Işlecinin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesinden daha az veya eşit olup olmadığını test edin.
+İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -470,25 +470,25 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*tarafta*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
-*Doğru*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*Right*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecinin sol tarafındaki dize nesnesi lexicographically daha az veya sağ taraftaki dize nesnesine eşit ise **doğru;** aksi takdirde **yanlış**.
+**`true`** işlecin sol tarafındaki dize nesnesi, sağ taraftaki dize nesnesinden sözcüıgrafiksel olarak küçüktür veya eşitse. Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizeleri arasında bir lexicographical karşılaştırma kadar karakter karakter karşılaştırır:
+Dizeler arasında bir lexıgraf karşılaştırması, bu karakterleri şu kadar karakterle karşılaştırır:
 
-- Bu iki karşılık gelen karakter eşit siz bulur ve bunların karşılaştırma sonucu dizeleri arasında karşılaştırma sonucu olarak alınır.
+- Karşılık gelen iki karakteri eşit olarak bulur ve karşılaştırma sonuçları, dizeler arasındaki Karşılaştırmanın sonucu olarak alınır.
 
-- Hiçbir eşitsizlik bulur, ancak bir dize diğerinden daha fazla karaktere sahiptir ve kısa dize daha uzun dize daha az olarak kabul edilir.
+- Herhangi bir değer yok buluyor, ancak bir dize diğerinin daha fazla karaktere sahip ve daha kısa dize, daha uzun bir dizeden daha az kabul edilir.
 
-- Hiçbir eşitsizlik bulmaz ve dizelerin aynı sayıda karaktere sahip olduğunu bulur, böylece dizeleri eşittir.
+- Herhangi bir inede bulmadan, dizelerin aynı sayıda karakter içerdiğinden, dizelerin eşit olduğundan emin olur.
 
 ### <a name="example"></a>Örnek
 
@@ -550,9 +550,9 @@ The string s1 is less than or equal to the string s3.
 The string s2 is greater than the string s3.
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>Işleç&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
 
-Çıktı akışına bir dize yazan şablon işlevi.
+Çıkış akışına bir dize yazan bir şablon işlevi.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -564,22 +564,22 @@ basic_ostream<CharType, Traits>& operator<<(
 ### <a name="parameters"></a>Parametreler
 
 *_Ostr*\
-Çıkış akışı na yazılır.
+Yazılan çıkış akışı.
 
-*Str*\
+*üstbilgisine*\
 Çıkış akışına girilecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dize değerini çıkış akışına *_Ostr.*
+Belirtilen dizenin değerini, çıkış akışına *_Ostr*yazar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, sınıf şablonuna [basic_string](../standard-library/basic-string-class.md) bir nesne *str* eklemek için **<<işleci** aşırı * \_yükler.* İşlev etkin `_Ostr.write( str.c_str, str.size )`bir şekilde döndürür.
+Şablon işlevi, sınıf şablonu [basic_string](../standard-library/basic-string-class.md) bir nesne *Str* eklemek için **işleç<<** aşırı * \_ yükler.* İşlevi etkin bir şekilde döndürür `_Ostr.write( str.c_str, str.size )` .
 
-## <a name="operatorgt"></a><a name="op_gt"></a>Işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
-İşleçin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesinden daha büyük olup olmadığını test edin.
+İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden büyük olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -600,25 +600,25 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*tarafta*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
-*Doğru*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*Right*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecinin sol tarafındaki dize nesnesi lexicographically sağ taraftaki dize nesnesinden büyükse **doğru;** aksi takdirde **yanlış**.
+**`true`** işlecin sol tarafındaki dize nesnesi sağ taraftaki dize nesnesinden sözcüıgrafik büyükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizeleri arasında bir lexicographical karşılaştırma kadar karakter karakter karşılaştırır:
+Dizeler arasında bir lexıgraf karşılaştırması, bu karakterleri şu kadar karakterle karşılaştırır:
 
-- Bu iki karşılık gelen karakter eşit siz bulur ve bunların karşılaştırma sonucu dizeleri arasında karşılaştırma sonucu olarak alınır.
+- Karşılık gelen iki karakteri eşit olarak bulur ve karşılaştırma sonuçları, dizeler arasındaki Karşılaştırmanın sonucu olarak alınır.
 
-- Hiçbir eşitsizlik bulur, ancak bir dize diğerinden daha fazla karaktere sahiptir ve kısa dize daha uzun dize daha az olarak kabul edilir.
+- Herhangi bir değer yok buluyor, ancak bir dize diğerinin daha fazla karaktere sahip ve daha kısa dize, daha uzun bir dizeden daha az kabul edilir.
 
-- Hiçbir eşitsizlik bulmaz ve dizelerin aynı sayıda karaktere sahip olduğunu ve böylece dizelerin eşit olduğunu bulur.
+- Herhangi bir inede bulmadan, dizelerin aynı sayıda karaktere sahip olduğunu ve bu nedenle dizelerin eşit olduğunu bulduğunu bulur.
 
 ### <a name="example"></a>Örnek
 
@@ -680,9 +680,9 @@ The string s3 is greater than the string s1.
 The string s2 is greater than the string s3.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>Işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
-İşleyicinin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesinden büyük veya eşit olup olmadığını test edin.
+İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -703,25 +703,25 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*tarafta*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
-*Doğru*\
-C stili dize veya karşılaştırılması gereken bir tür `basic_string` nesne.
+*Right*\
+Karşılaştırılacak bir C stili dize veya tür nesnesi `basic_string` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecinin sol tarafındaki dize nesnesi lexicographically daha büyük veya sağ taraftaki dize nesnesine eşit ise **doğru;** aksi takdirde **yanlış**.
+**`true`** işlecin sol tarafındaki dize nesnesi, sağ taraftaki dize nesnesinden sözcüıgrafik veya daha büyük olmalıdır; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizeleri arasında bir lexicographical karşılaştırma kadar karakter karakter karşılaştırır:
+Dizeler arasında bir lexıgraf karşılaştırması, bu karakterleri şu kadar karakterle karşılaştırır:
 
-- Bu iki karşılık gelen karakter eşit siz bulur ve bunların karşılaştırma sonucu dizeleri arasında karşılaştırma sonucu olarak alınır.
+- Karşılık gelen iki karakteri eşit olarak bulur ve karşılaştırma sonuçları, dizeler arasındaki Karşılaştırmanın sonucu olarak alınır.
 
-- Hiçbir eşitsizlik bulur, ancak bir dize diğerinden daha fazla karaktere sahiptir ve kısa dize daha uzun dize daha az olarak kabul edilir.
+- Herhangi bir değer yok buluyor, ancak bir dize diğerinin daha fazla karaktere sahip ve daha kısa dize, daha uzun bir dizeden daha az kabul edilir.
 
-- Hiçbir eşitsizlik bulur ve dizeleri karakter aynı sayıda bulur ve böylece dizeleri eşittir.
+- Herhangi bir inede bulmadan, dizelerin aynı sayıda karakteri olduğunu ve bu nedenle dizelerin eşit olduğunu bulur.
 
 ### <a name="example"></a>Örnek
 
@@ -783,9 +783,9 @@ The string s3 is greater than or equal to the string s1.
 The string s2 is greater than or equal to the string s3.
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>Işleç&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>işlecinde&gt;&gt;
 
-Giriş akışından bir dize okuyan bir şablon işlevi.
+Giriş akışından bir dizeyi okuyan bir şablon işlevi.
 
 ```cpp
 template <class CharType, class Traits, class Allocator>
@@ -797,30 +797,30 @@ basic_istream<CharType, Traits>& operator>>(
 ### <a name="parameters"></a>Parametreler
 
 *_Istr*\
-Sırayı ayıklamak için kullanılan giriş akışı
+Diziyi ayıklamak için kullanılan giriş akışı
 
-*Doğru*\
-Giriş akışından çıkarılan dize.
+*Right*\
+Giriş akışından ayıklanan dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dize değerini *_Istr* okur ve *sağa*döndürür.
+*_Istr* belirtilen dizenin değerini okur ve *sağa*döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Operatör, `skipws` bayrak ayarlı şatmadığı sürece önde gelen beyaz boşlukları atlar. Bir sonraki karakter beyaz bir boşluk olana veya dosyanın sonuna ulaşılana kadar aşağıdaki tüm karakterleri okur.
+Bayrak ayarlanmadığı takdirde işleç baştaki boşlukları atlar `skipws` . Sonraki karakter bir boşluk olana veya dosyanın sonuna ulaşılana kadar aşağıdaki tüm karakterleri okur.
 
-Şablon işlevi, *sağ* tarafından kontrol edilen diziyi *_Istr*akıştan çıkarılan bir dizi öğeyle değiştirmeye>>**işleç** aşırı yükler. Çıkarma durur:
+Şablon işlevi, bir dizi *_Istr*ayıklanan bir dizi öğe ile *doğrudan* denetlenen sırayı değiştirmek için **işleç>>** aşırı yükler. Ayıklama durduruluyor:
 
-- Dosyanın sonunda.
+- Dosya sonunda.
 
-- Fonksiyon özleri `_Istr`sonra . bu değer sıfır değilse, **genişlik** elemanları.
+- İşlev ayıkladıktan sonra `_Istr` . Bu değer sıfır değilse **Width** öğeleri.
 
-Fonksiyon özleri `_Istr`sonra . [max_size](../standard-library/basic-string-class.md#max_size) elementler.
+İşlev ayıkladıktan sonra `_Istr` . [max_size](../standard-library/basic-string-class.md#max_size) öğeleri.
 
-- Fonksiyon bir öğe *ch* ayıklar sonra [hangi use_facet](../standard-library/basic-filebuf-class.md#open)<  `getloc`**ctype** \< **CharType**> >( ). **(** **ctype** \< **CharType**>:: **space**, *ch*) doğrudur, bu durumda karakter geri konur.
+- İşlev, *ch* [use_facet](../standard-library/basic-filebuf-class.md#open) <  **CType** \< **CharType**> > () için bir öğe ch öğesini ayıkladıktan sonra `getloc` . **is**( **CType** \< **CharType**> :: **Space**, *ch*) değeri true 'dur, bu durumda karakter geri konur.
 
-İşlev hiçbir öğeyi ayıklarsa, [setstate](../standard-library/basic-ios-class.md#setstate)()`ios_base::failbit`olarak adlandırılır. Her durumda, **bu istr**çağırır. **genişliği**(0) \* ve **bu**döndürür.
+İşlev hiçbir öğe ayıklaıyorsa, [SetState](../standard-library/basic-ios-class.md#setstate)() öğesini çağırır `ios_base::failbit` . Herhangi bir durumda, **ISTR**çağırır. **Width**(0) ve döndürür \* **`this`** .
 
 ### <a name="example"></a>Örnek
 
@@ -843,4 +843,4 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dize>](../standard-library/string.md)
+[\<string>](../standard-library/string.md)

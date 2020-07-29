@@ -6,16 +6,16 @@ helpviewer_keywords:
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-ms.openlocfilehash: 7f9864e6b49446ea68d82e76e877ce9c677b893d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71877ed770384190cb7f856567d9e7e845e3da19
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410765"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217330"
 ---
 # <a name="buffer-overflow"></a>Arabellek Taşması
 
-Karakter boyutları değişen bir arabelleğe karakter yerleştirdiğinizde sorunlara neden olabilir. Karakterleri bir dizeden kopyalar, aşağıdaki kodu düşünün `sz`, bir arabelleğine `rgch`:
+Karakterleri bir arabelleğe yerleştirdiğinizde, değişen karakter boyutları sorunlara neden olabilir. Dizeyi bir dizeden, arabelleğe bir dizeye kopyalayan aşağıdaki kodu göz önünde bulundurun `sz` `rgch` :
 
 ```cpp
 cb = 0;
@@ -23,7 +23,7 @@ while( cb < sizeof( rgch ) )
     rgch[ cb++ ] = *sz++;
 ```
 
-Soru da şudur: Olan son bayt bir ön bayt kopyalanır? Olası Arabellek Taşması çünkü aşağıdaki sorunu çözmez:
+Soru: son bayt bir ön bayt kopyaladınız mı? Arabelleği taşabileceğinden, aşağıdakiler sorunu çözmez:
 
 ```cpp
 cb = 0;
@@ -35,7 +35,7 @@ while( cb < sizeof( rgch ) )
 }
 ```
 
-`_mbccpy` Çağrı çalışır doğru şeyi yapmak: 1 veya 2 bayt olup tam karakter kopyalayın. Ancak, 2 bayt genişliğinde karakter değilse kopyalanan son karakter arabelleği uymayabilir dikkate almaz. Doğru çözümdür:
+`_mbccpy`Çağrı doğru bir şeyi yapmayı dener — 1 veya 2 bayt olsun, tam karakteri kopyalayın. Ancak, karakter 2 baytlık genişse, kopyaladığınız son karakterin arabelleğe sığmadığını hesaba almaz. Doğru çözüm şunlardır:
 
 ```cpp
 cb = 0;
@@ -47,7 +47,7 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 }
 ```
 
-Bu kodu test döngüsünde olası arabellek taşması kullanmadan test `_mbclen` işaret ettiği geçerli karakter boyutunu test etmek için `sz`. Bir çağrı yaparak `_mbsnbcpy` işlevi, kodda değiştirebilirsiniz **sırada** tek satırlık bir kod ile döngüsü. Örneğin:
+Bu kod, `_mbclen` tarafından işaret edilen geçerli karakterin boyutunu test etmek için kullanarak döngü testinde olası arabellek taşması için test eder `sz` . İşleve bir çağrı yaparak `_mbsnbcpy` , **`while`** döngüdeki kodu tek bir kod satırıyla değiştirebilirsiniz. Örnek:
 
 ```cpp
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );
@@ -55,4 +55,4 @@ _mbsnbcpy( rgch, sz, sizeof( rgch ) );
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)
+[MBCS programlama Ipuçları](../text/mbcs-programming-tips.md)

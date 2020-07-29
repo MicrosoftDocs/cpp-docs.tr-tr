@@ -6,12 +6,12 @@ helpviewer_keywords:
 - union keyword [C], declarations
 - variant records
 ms.assetid: 978c6165-e0ae-4196-afa7-6d94e24f62f7
-ms.openlocfilehash: dbc85a467161457641dd86acf5f3720bf4e14247
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3414a478ec741351f1e1540a214cca38c029749f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291047"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213703"
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
 
@@ -24,8 +24,8 @@ ms.locfileid: "62291047"
 &nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*
 
 *struct veya-Union*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sýný**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**birleşim**
+&nbsp;&nbsp;&nbsp;&nbsp;**`struct`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`union`**
 
 *struct-declaration-List*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-bildirimi*<br/>
@@ -44,14 +44,14 @@ Birleşim içeriği şu şekilde tanımlanır
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-bildirimci*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct-declarator-list*  **,**  *struct-declarator*
 
-**Birleşim** türüne sahip bir değişken, bu tür tarafından tanımlanan değerlerden birini depolar. Aynı kurallar yapı ve birleşim bildirimlerini yönetir. Birleşimlerde de bit alanları olabilir.
+Türüne sahip bir değişken **`union`** , bu tür tarafından tanımlanan değerlerden birini depolar. Aynı kurallar yapı ve birleşim bildirimlerini yönetir. Birleşimlerde de bit alanları olabilir.
 
-Birleşimlerin üyeleri tamamlanmamış bir tür, tür `void`veya işlev türüne sahip olamaz. Bu nedenle, Üyeler birleşimin bir örneği olamaz, ancak bildirildiği birleşim türüne işaretçiler olabilir.
+Birleşimlerin üyeleri tamamlanmamış bir tür, tür **`void`** veya işlev türüne sahip olamaz. Bu nedenle, Üyeler birleşimin bir örneği olamaz, ancak bildirildiği birleşim türüne işaretçiler olabilir.
 
 Birleşim türü bildirimi yalnızca bir şablondur. Değişken bildirildiği sürece bellek ayrılmamış.
 
 > [!NOTE]
-> İki tür birleşimi bildirilirse ve bir değer depolanıyorsa, ancak birleşime diğer türle erişildiğinde sonuçlar güvenilir değildir. Örneğin, **float** birleşimi ve `int` olarak bildirilmiştir. Bir **float** değeri depolanır, ancak program daha sonra değerine bir `int`olarak erişir. Böyle bir durumda, değer **float** değerlerinin iç depolamasına bağlıdır. Tamsayı değeri güvenilir değil.
+> İki tür birleşimi bildirilirse ve bir değer depolanıyorsa, ancak birleşime diğer türle erişildiğinde sonuçlar güvenilir değildir. Örneğin, **`float`** ve birleşimi **`int`** bildirilmiştir. Bir **`float`** değer depolanır, ancak program daha sonra değerine bir olarak erişir **`int`** . Böyle bir durumda, değer, değerlerin iç depolamasına bağlıdır **`float`** . Tamsayı değeri güvenilir değil.
 
 ## <a name="examples"></a>Örnekler
 
@@ -65,7 +65,7 @@ union sign   /* A definition and a declaration */
 } number;
 ```
 
-Bu örnek, `sign` türünde bir UNION değişkeni tanımlar ve iki üyeye sahip adlı `number` bir değişken bildirir: `svar`, işaretli bir tamsayı ve `uvar`işaretsiz bir tamsayı. Bu bildirim geçerli değerinin `number` imzalı ya da işaretsiz bir değer olarak depolanmasını sağlar. Bu birleşim türüyle ilişkili etiket `sign`.
+Bu örnek, türünde bir UNION değişkeni tanımlar `sign` ve iki üyeye sahip adlı bir değişken bildirir `number` : `svar` , işaretli bir tamsayı ve işaretsiz bir `uvar` tamsayı. Bu bildirim geçerli değerinin `number` imzalı ya da işaretsiz bir değer olarak depolanmasını sağlar. Bu birleşim türüyle ilişkili etiket `sign` .
 
 ```C
 union               /* Defines a two-dimensional */
@@ -79,7 +79,7 @@ union               /* Defines a two-dimensional */
 } screen[25][80];
 ```
 
-`screen` Dizi 2.000 öğe içeriyor. Dizideki her öğe, iki üye içeren tek bir birleşimdir: `window1` ve. `screenval` `window1` Üye, `icon` iki bitlik alan üyesi olan bir yapıdır ve `color`. `screenval` Üye bir `int`. Herhangi bir zamanda, her UNION öğesi tarafından temsil `int` edilen `screenval` ya da temsil eden `window1`yapıyı barındırır.
+`screen`Dizi 2.000 öğe içeriyor. Dizideki her öğe, iki üye içeren tek bir birleşimdir: `window1` ve `screenval` . `window1`Üye, iki bitlik alan üyesi olan bir yapıdır `icon` ve `color` . `screenval`Üye bir **`int`** . Herhangi bir zamanda, her UNION öğesi tarafından temsil **`int`** edilen ya da temsil `screenval` eden yapıyı barındırır `window1` .
 
 **Microsoft'a Özgü**
 
@@ -123,4 +123,4 @@ Başvuru sendikaları hakkında bilgi için bkz. [Yapı ve birleşim üyeleri](.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+[Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)

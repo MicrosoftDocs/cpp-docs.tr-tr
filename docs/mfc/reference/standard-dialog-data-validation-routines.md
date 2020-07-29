@@ -4,43 +4,43 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-ms.openlocfilehash: 83e3e215ec8d66321bbac5a4a308b04ef69dc68c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2511e2ec6dbd4e27c0e12e35bdc1cd671bf72eaa
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372898"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213989"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 
-Bu konu, ortak MFC iletişim denetimleri için kullanılan standart iletişim veri doğrulama (DDV) yordamlarını listeler.
+Bu konu başlığı altında, genel MFC iletişim denetimleri için kullanılan standart iletişim kutusu veri doğrulama (DDV) yordamları listelenmektedir.
 
 > [!NOTE]
-> Standart iletişim veri alışverişi yordamları afxdd_.h. üstbilgi dosyasında tanımlanır. Ancak, uygulamalar afxwin.h içermelidir.
+> Standart iletişim kutusu veri değişimi yordamları afxdd_. h üstbilgi dosyasında tanımlanmıştır. Ancak, uygulamalar Afxwin. h 'yi içermelidir.
 
-### <a name="ddv-functions"></a>DDV Fonksiyonları
+### <a name="ddv-functions"></a>DDV Işlevleri
 
 |||
 |-|-|
-|[DDV_MaxChars](#ddv_maxchars)|Belirli bir denetim değerindeki karakter sayısının belirli bir maksimumu aşmadığını doğrular.|
-|[DDV_MinMaxByte](#ddv_minmaxbyte)|Verilen bir denetim değerinin belirli bir **BYTE** aralığını aşmadığını doğrular.|
-|[DDV_MinMaxDateTime](#ddv_minmaxdatetime)|Verilen denetim değerinin belirli bir zaman aralığını aşmadığını doğrular.|
-|[DDV_MinMaxDouble](#ddv_minmaxdouble)|Verilen denetim değerinin belirli bir **çift** aralığı aşmadığını doğrular.|
-|[DDV_MinMaxDWord](#ddv_minmaxdword)|Belirli bir denetim değerinin belirli bir **DWORD** aralığını aşmadığını doğrular.|
-|[DDV_MinMaxFloat](#ddv_minmaxfloat)|Verilen denetim değerinin belirli bir **float** aralığını aşmadığını doğrular.|
-|[DDV_MinMaxInt](#ddv_minmaxint)|Verilen denetim değerinin belirli bir **int** aralığını aşmadığını doğrular.|
-|[DDV_MinMaxLong](#ddv_minmaxlong)|Verilen denetim değerinin belirli bir **uzun** aralığı aşmadığını doğrular.|
-|[DDV_MinMaxLongLong](#ddv_minmaxlonglong)|Verilen bir denetim değerinin belirli bir **UZUN aralığı** aşmadığını doğrular.|
-|[DDV_MinMaxMonth](#ddv_minmaxmonth)|Verilen denetim değerinin belirli bir tarih aralığını aşmadığını doğrular.|
-|[DDV_MinMaxShort](#ddv_minmaxshort)|Verilen denetim değerinin belirli bir **kısa** aralığı aşmadığını doğrular.|
-|[DDV_MinMaxSlider](#ddv_minmaxslider)|Belirli bir kaydırıcı denetim değerinin verilen aralıkta düştüğünü doğrular.|
+|[DDV_MaxChars](#ddv_maxchars)|Belirli bir denetim değerindeki karakterlerin sayısını, verilen en fazla sayıyı aşmadığını doğrular.|
+|[DDV_MinMaxByte](#ddv_minmaxbyte)|Verilen bir denetim değerinin belirtilen bir **bayt** aralığını aşmadığını doğrular.|
+|[DDV_MinMaxDateTime](#ddv_minmaxdatetime)|Verilen bir denetim değerinin belirli bir zaman aralığını aşmadığını doğrular.|
+|[DDV_MinMaxDouble](#ddv_minmaxdouble)|Verilen bir denetim değerinin verilen bir aralığı aşmadığını doğrular **`double`** .|
+|[DDV_MinMaxDWord](#ddv_minmaxdword)|Verilen bir denetim değerinin belirli bir **DWORD** aralığını aşmadığını doğrular.|
+|[DDV_MinMaxFloat](#ddv_minmaxfloat)|Verilen bir denetim değerinin verilen bir aralığı aşmadığını doğrular **`float`** .|
+|[DDV_MinMaxInt](#ddv_minmaxint)|Verilen bir denetim değerinin verilen bir aralığı aşmadığını doğrular **`int`** .|
+|[DDV_MinMaxLong](#ddv_minmaxlong)|Verilen bir denetim değerinin verilen bir aralığı aşmadığını doğrular **`long`** .|
+|[DDV_MinMaxLongLong](#ddv_minmaxlonglong)|Verilen bir denetim değerinin, verili bir **longlong** aralığını aşmadığını doğrular.|
+|[DDV_MinMaxMonth](#ddv_minmaxmonth)|Verilen bir denetim değerinin belirli bir tarih aralığını aşmadığını doğrular.|
+|[DDV_MinMaxShort](#ddv_minmaxshort)|Verilen bir denetim değerinin verilen bir aralığı aşmadığını doğrular **`short`** .|
+|[DDV_MinMaxSlider](#ddv_minmaxslider)|Verilen bir kaydırıcı denetim değerinin verilen aralık dahilinde olduğunu doğrular.|
 |[DDV_MinMaxUInt](#ddv_minmaxuint)|Verilen bir denetim değerinin belirli bir **UINT** aralığını aşmadığını doğrular.|
-|[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verilen denetim değerinin iki belirtilen değer arasında düştüğünü doğrular.|
-|[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verilen bir denetim değerinin belirli bir **ULONGLONG** aralığını aşmadığını doğrular.|
+|[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verilen bir denetim değerinin belirtilen iki değer arasında olduğunu doğrular.|
+|[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verilen bir denetim değerinin belirtilen bir **ULONGLONG** aralığını aşmadığını doğrular.|
 
 ## <a name="ddv_maxchars"></a><a name="ddv_maxchars"></a>DDV_MaxChars
 
-`DDV_MaxChars` *Değerle* ilişkili denetimdeki karakter miktarının *nChars'ı*aşmadığını doğrulamak için arayın.
+`DDV_MaxChars`Denetimdeki metinle ilişkili karakter miktarının *nchar*değerlerini aşmadığını doğrulamak için çağırın *value* .
 
 ```cpp
 void AFXAPI DDV_MaxChars(
@@ -51,26 +51,26 @@ void AFXAPI DDV_MaxChars(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
-*nChars*<br/>
-İzin verilen maksimum karakter sayısı.
+*Nchar 'lar*<br/>
+İzin verilen en fazla karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxbyte"></a><a name="ddv_minmaxbyte"></a>DDV_MinMaxByte
 
-`DDV_MinMaxByte` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxByte` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxByte(
@@ -82,29 +82,29 @@ void AFXAPI DDV_MinMaxByte(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-İzin verilen minimum değer (BYTE türünden).
+En küçük değer (bayt türünde) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (byTE türü) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (bayt türü).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxdatetime"></a><a name="ddv_minmaxdatetime"></a>DDV_MinMaxDateTime
 
-*RefValue* ile ilişkili tarih ve saat seçici [kontrolündeki](../../mfc/reference/cdatetimectrl-class.md)saat/tarih değerinin *refMinRange* ve *refMaxRange*arasında düştüğünü doğrulamak için arayın. `DDV_MinMaxDateTime`
+`DDV_MinMaxDateTime` *Refvalue* ile ilişkili tarih ve saat seçici denetimindeki ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) zaman/tarih değerinin *refMinRange* ve *refMaxRange*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxDateTime(
@@ -122,29 +122,29 @@ void AFXAPI DDV_MinMaxDateTime(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar. Bu nesneyi silmeniz gerekmez.
+*pDX*<br/>
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar. Bu nesneyi silmeniz gerekmez.
 
 *refValue*<br/>
-İletişim kutusunun, form görünümünün veya denetim görünümü nesnesinin üye değişkeniyle ilişkili bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesine yapılan başvuru. Bu nesne doğrulanacak verileri içerir.
+İletişim kutusu, form görünümü veya denetim görünümü nesnesinin üye değişkeniyle ilişkili bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) veya [cotadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesine başvuru. Bu nesne Doğrulanacak verileri içerir.
 
 *refMinRange*<br/>
-İzin verilen minimum tarih/saat değeri.
+İzin verilen en düşük tarih/saat değeri.
 
 *refMaxRange*<br/>
-İzin verilen maksimum tarih/saat değeri.
+İzin verilen en uzun tarih/saat değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxdouble"></a><a name="ddv_minmaxdouble"></a>DDV_MinMaxDouble
 
-`DDV_MinMaxDouble` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxDouble` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxDouble(
@@ -156,29 +156,29 @@ void AFXAPI DDV_MinMaxDouble(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-İzin verilen minimum değer **(çift**tip).
+En küçük değer (türü **`double`** ) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer **(tip çift)** izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (türü **`double`** ).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxdword"></a><a name="ddv_minmaxdword"></a>DDV_MinMaxDWord
 
-`DDV_MinMaxDWord` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxDWord` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxDWord(
@@ -190,29 +190,29 @@ void AFXAPI DDV_MinMaxDWord(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-İzin verilen minimum değer (DWORD türünden).
+En küçük değer (DWORD türünde) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (DWORD türü) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (DWORD türü).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxfloat"></a><a name="ddv_minmaxfloat"></a>DDV_MinMaxFloat
 
-`DDV_MinMaxFloat` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxFloat` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxFloat(
@@ -224,29 +224,29 @@ void AFXAPI DDV_MinMaxFloat(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-İzin verilen minimum değer (tür **float)**
+En küçük değer (türü **`float`** ) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (tür **float)** izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (türü **`float`** ).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxint"></a><a name="ddv_minmaxint"></a>DDV_MinMaxInt
 
-`DDV_MinMaxInt` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxInt` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxInt(
@@ -258,29 +258,29 @@ void AFXAPI DDV_MinMaxInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-Minimum değer (tür **int)** izin verilir.
+En küçük değer (türü **`int`** ) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (tür **int)** izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (türü **`int`** ).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxlong"></a><a name="ddv_minmaxlong"></a>DDV_MinMaxLong
 
-`DDV_MinMaxLong` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxLong` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxLong(
@@ -292,29 +292,29 @@ void AFXAPI DDV_MinMaxLong(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-İzin verilen minimum değer **(uzun**tür)
+En küçük değer (türü **`long`** ) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer **(uzun**tür) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (türü **`long`** ).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxlonglong"></a><a name="ddv_minmaxlonglong"></a>DDV_MinMaxLongLong
 
-`DDV_MinMaxLongLong` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxLongLong` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxLongLong(
@@ -326,29 +326,29 @@ void AFXAPI DDV_MinMaxLongLong(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-Minimum değer (longlong türü) izin verilir.
+En küçük değer (LONGLONG türünde) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (longlong türü) izin verilir.
+*maxVal*<br/>
+En büyük değer (LONGLONG türünde) izin verilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxmonth"></a><a name="ddv_minmaxmonth"></a>DDV_MinMaxMonth
 
-RefValue ile ilişkili ay takvim [kontrolündeki](../../mfc/reference/cmonthcalctrl-class.md)saat/tarih değerinin *refMinRange* ve *refMaxRange*arasında düştüğünü doğrulamak için arayın. *refValue* `DDV_MinMaxMonth`
+`DDV_MinMaxMonth` *Refvalue* ile ilişkili aylık takvim denetimindeki ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) saat/tarih değerinin *refMinRange* ve *refMaxRange*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxMonth(
@@ -366,29 +366,29 @@ void AFXAPI DDV_MinMaxMonth(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *refValue*<br/>
-İletişim kutusu, form `CTime` görünümü `COleDateTime` veya denetim görünümü nesnesinin üye değişkeniyle ilişkili türdeki veya bir nesneye yapılan başvuru. Bu nesne doğrulanacak verileri içerir. MFC çağrıldığında `DDV_MinMaxMonth` bu başvurugeçer.
+`CTime` `COleDateTime` İletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir üye değişkeniyle ilişkili veya türü bir nesneye başvuru. Bu nesne Doğrulanacak verileri içerir. Çağrıldığında, MFC bu başvuruyu geçirir `DDV_MinMaxMonth` .
 
 *refMinRange*<br/>
-İzin verilen minimum tarih/saat değeri.
+İzin verilen en düşük tarih/saat değeri.
 
 *refMaxRange*<br/>
-İzin verilen maksimum tarih/saat değeri.
+İzin verilen en uzun tarih/saat değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxshort"></a><a name="ddv_minmaxshort"></a>DDV_MinMaxShort
 
-`DDV_MinMaxShort` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxShort` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxShort(
@@ -400,29 +400,29 @@ void AFXAPI DDV_MinMaxShort(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-Minimum değer **(kısa**tür) izin verilir.
+En küçük değer (türü **`short`** ) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer **(kısa**tür) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (türü **`short`** ).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxslider"></a><a name="ddv_minmaxslider"></a>DDV_MinMaxSlider
 
-`DDV_MinMaxSlider` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxSlider` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxSlider(
@@ -434,29 +434,29 @@ void AFXAPI DDV_MinMaxSlider(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+[CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesine yönelik bir işaretçi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-Doğrulanacak değere bir başvuru. Bu parametre kaydırıcı denetiminin geçerli başparmak konumunu tutar veya ayarlar.
+*deeri*<br/>
+Doğrulanacak değere bir başvuru. Bu parametre kaydırıcı denetiminin geçerli Thumb konumunu tutar veya ayarlar.
 
 *minVal*<br/>
-İzin verilen minimum değer.
+İzin verilen en düşük değer.
 
-*Maxval*<br/>
-İzin verilen maksimum değer.
+*maxVal*<br/>
+İzin verilen en büyük değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın. Kaydırıcı denetimleri hakkında daha fazla bilgi için [Bkz. CSliderCtrl'yi kullanma.](../../mfc/using-csliderctrl.md)
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md). Kaydırıcı denetimleri hakkında daha fazla bilgi için bkz. [CSliderCtrl kullanma](../../mfc/using-csliderctrl.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxuint"></a><a name="ddv_minmaxuint"></a>DDV_MinMaxUInt
 
-`DDV_MinMaxUInt` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxUInt` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxUInt(
@@ -468,29 +468,29 @@ void AFXAPI DDV_MinMaxUInt(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-Minimum değer (UINT türü) izin verilir.
+En küçük değer (UINT türünde) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (UINT türü) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (UINT türünde).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxulonglong"></a><a name="ddv_minmaxulonglong"></a>DDV_MinMaxULongLong
 
-`DDV_MinMaxULongLong` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxULongLong` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
 ```cpp
 void AFXAPI DDV_MinMaxULongLong(
@@ -502,31 +502,31 @@ void AFXAPI DDV_MinMaxULongLong(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-Minimum değer (ULONGLONG türü) izin verilir.
+En küçük değer (ULONGLONG türünde) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer (ULONGLONG türü) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (ULONGLONG türünde).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../../mfc/dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdd_.h
+  **Üst bilgi** afxdd_. h
 
 ## <a name="ddv_minmaxunsigned"></a>DDV_MinMaxUnsigned
 
-`DDV_MinMaxUnsigned` *Değerle* ilişkili denetimdeki değerin *minVal* ve *maxVal*arasında düştüğünü doğrulamak için arayın.
+`DDV_MinMaxUnsigned` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
    void AFXAPI DDV_MinMaxUnsigned(
@@ -538,29 +538,29 @@ DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulam
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdx*<br/>
-Bir `CDataExchange` nesneye işaretçi. Çerçeve, yönü de dahil olmak üzere veri alışverişi bağlamını oluşturmak için bu nesneyi sağlar.
+*pDX*<br/>
+Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
-*Değer*<br/>
-İletişim kutusunun, form görünümünün veya verilerin doğrulandığı denetim görünümü nesnesinin üye değişkenine yapılan başvuru.
+*deeri*<br/>
+İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünümü nesnesinin üye değişkenine başvuru.
 
 *minVal*<br/>
-Minimum değer **(imzasız** tür) izin verilir.
+En küçük değer (türü **`unsigned`** ) izin verilir.
 
-*Maxval*<br/>
-Maksimum değer **(imzasız** tür) izin verilir.
+*maxVal*<br/>
+İzin verilen en büyük değer (türü **`unsigned`** ).
 
 ### <a name="remarks"></a>Açıklamalar
 
-DDV hakkında daha fazla bilgi için [İletişim Veri Alışverişi ve Doğrulama'ya](../dialog-data-exchange-and-validation.md)bakın.
+DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve doğrulaması](../dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdd_.h
+**Üst bilgi:** afxdd_. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Standart İletişim Veri Alışverişi Yordamları](standard-dialog-data-exchange-routines.md)<br/>
-[Makrolar ve Küreseller](mfc-macros-and-globals.md)<br/>
+[Standart Iletişim kutusu veri değişimi yordamları](standard-dialog-data-exchange-routines.md)<br/>
+[Makrolar ve genel öğeler](mfc-macros-and-globals.md)<br/>
 [DDX_Slider](standard-dialog-data-exchange-routines.md#ddx_slider)<br/>
 [DDX_FieldSlider](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md#ddx_fieldslider)

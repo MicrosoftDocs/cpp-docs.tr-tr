@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, inline_depth
 - inline_depth pragma
 ms.assetid: 2bba60fe-43ea-4d09-90f7-aafaba3bad07
-ms.openlocfilehash: be57178280e278683b85db1413ff5724b5260aef
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 73540ec19c4ecc18a740dace0d23a37ad43182c0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220976"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219423"
 ---
 # <a name="inline_depth-pragma"></a>inline_depth pragması
 
@@ -25,7 +25,7 @@ Satır içi buluşsal arama derinliğini belirtir. Çağrı grafiğinde belirtil
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu pragma, [satır içi](../cpp/inline-functions-cpp.md) ve [__inline](../cpp/inline-functions-cpp.md)olarak işaretlenen işlevlerin listesini denetler veya `/Ob` seçeneğinin altında otomatik olarak satır içine alır.
+Bu pragma, [satır içi](../cpp/inline-functions-cpp.md) ve [__inline](../cpp/inline-functions-cpp.md)olarak işaretlenmiş işlevlerin listesini denetler veya seçeneğinin altında otomatik olarak satır içine alır `/Ob` .
 
 *n* , 0 ile 255 arasında bir değer olabilir; burada 255, çağrı grafiğinde sınırsız derinliğe yol açabilir. 0 değeri satır içi genişletmeyi engeller. *N* belirtilmediğinde, varsayılan 254 değeri kullanılır.
 
@@ -35,7 +35,7 @@ Bu pragmayı kullanmak için, `/Ob` derleyici seçeneğini 1 veya daha yüksek b
 
 Satır içi derinlik, genişleme sırasında azaltılabilir ancak artmaz. Satır içi derinlik 6 ise ve genişletme sırasında Önişlemci, 8 değeriyle bir **inline_depth** pragma ile karşılaştığında, derinlik 6 kalır.
 
-**İnline_depth** pragma ile `__forceinline`işaretlenen işlevleri etkilemez.
+**İnline_depth** pragma ile işaretlenen işlevleri etkilemez **`__forceinline`** .
 
 > [!NOTE]
 > Özyinelemeli işlevler, satır içinde en fazla 16 çağrılık bir derinlikle değiştirilebilir.

@@ -26,18 +26,18 @@ helpviewer_keywords:
 - std::cauchy_distribution [C++], param_type
 - std::cauchy_distribution [C++], param_type
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
-ms.openlocfilehash: ea75395c14c0babf5a047e7ae8f937e2a237b445
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 965ad6751938c07a0a62fedc8f65d53f9f6d2b04
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81317129"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217837"
 ---
 # <a name="cauchy_distribution-class"></a>cauchy_distribution Sınıfı
 
-Cauchy dağılımı nı oluşturur.
+Bir Cauşy dağıtımı oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class RealType = double>
@@ -71,33 +71,33 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *RealType*\
-Kayan nokta sonuç türü, varsayılan **olarak iki katına çıkar.** Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
-*ÜRNG*\
-Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, cauchy Dağılımı'na göre dağıtılan kullanıcı tarafından belirtilen kayan nokta türü değerlerini üreten veya hiçbiri sağlanmamışsa **çift** yazın bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, Cauşy dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[cauchy_distribution](#cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|
 |`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#param_type)|
 
-Özellik işlevleri `a()` `b()` ve saklanan dağıtım parametreleri `a` için `b`kendi değerlerini döndürün ve .
+Özelliği, ve `a()` `b()` depolanan dağıtım parametreleri ve için ilgili değerlerini döndürür `a` `b` .
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-Cauchy dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makale [Cauchy Dağıtım](https://go.microsoft.com/fwlink/p/?linkid=400523)bakın.
+Cauşy dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [Cauşy dağıtımı](https://go.microsoft.com/fwlink/p/?linkid=400523).
 
 ## <a name="example"></a>Örnek
 
@@ -184,7 +184,7 @@ Distribution for 10 samples:
     10: 2.5253154706
 ```
 
-İkinci tur:
+İkinci çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -209,7 +209,7 @@ Distribution for 10 samples:
     10: 25.2531547063
 ```
 
-Üçüncü tur:
+Üçüncü çalıştırma:
 
 ```Output
 Use CTRL-Z to bypass data entry and run using default values.
@@ -236,13 +236,13 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="cauchy_distributioncauchy_distribution"></a><a name="cauchy_distribution"></a>cauchy_distribution:cauchy_distribution
+## <a name="cauchy_distributioncauchy_distribution"></a><a name="cauchy_distribution"></a>cauchy_distribution:: cauchy_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit cauchy_distribution(result_type a = 0.0, result_type b = 1.0);
@@ -251,24 +251,24 @@ explicit cauchy_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*A*\
-Dağıtım `a` parametresi.
+*a*\
+`a`Dağıtım parametresi.
 
-*B*\
-Dağıtım `b` parametresi.
+*kenarı*\
+`b`Dağıtım parametresi.
 
-*parm*\
-Dağılımı `param_type` oluşturmak için kullanılan yapı.
+*parametresi*\
+`param_type`Dağıtımı oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < b`
+**Önkoşul:**`0.0 < b`
 
-İlk oluşturucu, `a` depolanan değeri *a* değerini tutan ve depolanan `b` değeri *b*değerini tutan bir nesne yi inşa eder.
+İlk Oluşturucu, saklı değeri `a` *a* değerini tutan ve saklı `b` değeri *b*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="cauchy_distributionparam_type"></a><a name="param_type"></a>cauchy_distribution::param_type
+## <a name="cauchy_distributionparam_type"></a><a name="param_type"></a>cauchy_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 
@@ -286,21 +286,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*A*\
-Dağıtım `a` parametresi.
+*a*\
+`a`Dağıtım parametresi.
 
-*B*\
-Dağıtım `b` parametresi.
+*kenarı*\
+`b`Dağıtım parametresi.
 
-*Doğru*\
-Bununla `param_type` karşılaştırılacak nesne.
+*Right*\
+`param_type`Karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:**`0.0 < b`
+**Önkoşul:**`0.0 < b`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

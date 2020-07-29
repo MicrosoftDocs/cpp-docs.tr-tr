@@ -26,18 +26,18 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 2c6a976f3874d563f5bba600b9894ae0103625b0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0401d2e9b5849bdd9f00628107a142606f5f6933
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319589"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219137"
 ---
 # <a name="fisher_f_distribution-class"></a>fisher_f_distribution Sınıfı
 
-Fisher F dağılımı nı oluşturur.
+Bir Fisher F dağıtımı oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class RealType = double>
@@ -70,33 +70,33 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *RealType*\
-Kayan nokta sonuç türü, varsayılan **olarak iki katına çıkar.** Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
-*ÜRNG*\
-Tek tip rastgele sayı üreteç motoru. Olası türler için [ \<rasgele>](../standard-library/random.md)bakın.
+*URNG*\
+Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../standard-library/random.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, Fisher'ın F-Dağılımına göre dağıtılan kullanıcı tarafından belirtilen kayan nokta türüdeğerlerini üreten veya hiçbiri sağlanmamışsa **çift** yazın bir dağılım açıklar. Aşağıdaki tablo, tek tek üyelerle ilgili makalelere bağlantılar ala.
+Sınıf şablonu, kullanıcının belirttiği kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, Fisher 'Nin F dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 ||||
 |-|-|-|
 |[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|
 |`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|
 
-Özellik işlevleri `m()` `n()` ve saklanan dağıtım parametreleri `m` için `n` değerleri döndürün ve sırasıyla.
+Özelliği, `m()` `n()` depolanan dağıtım parametrelerinin `m` ve sırasıyla değerlerini döndürür `n` .
 
-Özellik üyesi, `param()` depolanan `param_type` dağıtım parametre paketini ayarlar veya döndürür.
+Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
-`min()` Ve `max()` üye işlevler, sırasıyla mümkün olan en küçük sonucu ve mümkün olan en büyük sonucu döndürer.
+`min()`Ve `max()` üye işlevleri, sırasıyla olası en küçük sonucu ve en büyük olası sonucu döndürür.
 
-`reset()` Üye işlev önbelleğe alınan değerleri atar, böylece bir sonraki `operator()` çağrının sonucu çağrıdan önce motordan elde edilen değerlere bağlı olmaz.
+`reset()`Üye işlevi önbelleğe alınmış tüm değerleri atar, böylece sonraki çağrının sonucu, `operator()` çağrıdan önce altyapıdan alınan değerlere bağlı değildir.
 
-Üye `operator()` işlevler, geçerli parametre paketinden veya belirtilen parametre paketinden URNG motoruna dayalı olarak oluşturulan bir sonraki değeri döndürür.
+`operator()`Üye işlevleri, geçerli parametre paketinden ya da belirtilen parametre paketinden, URNG altyapısına göre oluşturulan bir sonraki değeri döndürür.
 
-Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için [ \<rastgele>](../standard-library/random.md)bakın.
+Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-F-dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makale [F-Distribution](https://go.microsoft.com/fwlink/p/?linkid=400899)bakın.
+F-dağıtımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine [F-Distribution](https://go.microsoft.com/fwlink/p/?linkid=400899)bölümüne bakın.
 
 ## <a name="example"></a>Örnek
 
@@ -183,7 +183,7 @@ Distribution for 10 samples:
     10: 3.4320929653
 ```
 
-İkinci tur:
+İkinci çalıştırma:
 
 ```Output
 Enter a floating point value for the 'm' distribution parameter (must be greater than zero): 1
@@ -207,7 +207,7 @@ Distribution for 10 samples:
     10: 20829747131.7185860000
 ```
 
-Üçüncü tur:
+Üçüncü çalıştırma:
 
 ```Output
 Enter a floating point value for the 'm' distribution parameter (must be greater than zero): .1
@@ -233,13 +233,13 @@ Distribution for 10 samples:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<rastgele>
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
-## <a name="fisher_f_distributionfisher_f_distribution"></a><a name="fisher_f_distribution"></a>fisher_f_distribution:fisher_f_distribution
+## <a name="fisher_f_distributionfisher_f_distribution"></a><a name="fisher_f_distribution"></a>fisher_f_distribution:: fisher_f_distribution
 
-Dağıtımı kurar.
+Dağıtımı oluşturur.
 
 ```cpp
 explicit fisher_f_distribution(result_type m = 1.0, result_type n = 1.0);
@@ -248,26 +248,26 @@ explicit fisher_f_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*M*\
-Dağıtım `m` parametresi.
+*m*\
+`m`Dağıtım parametresi.
 
-*n*\
-Dağıtım `n` parametresi.
+*No*\
+`n`Dağıtım parametresi.
 
-*parm*\
-Dağılımı `param_type` oluşturmak için kullanılan yapı.
+*parametresi*\
+`param_type`Dağıtımı oluşturmak için kullanılan yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:** `0.0 < m` ve`0.0 < n`
+**Önkoşul:** `0.0 < m` '`0.0 < n`
 
-İlk oluşturucu, `m` depolanan değeri *m* değerini tutan ve depolanan `n` değeri *n*değerini tutan bir nesne inşa eder.
+İlk Oluşturucu, saklı `m` değeri *k* değerini tutan ve saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
 
-İkinci oluşturucu, depolanan parametreleri *parm'dan*başharfe çevrilmiş bir nesne inşa eder. Üye işlevi arayarak varolan bir dağıtımın `param()` geçerli parametrelerini alabilir ve ayarlayabilirsiniz.
+İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="fisher_f_distributionparam_type"></a><a name="param_type"></a>fisher_f_distribution::param_type
+## <a name="fisher_f_distributionparam_type"></a><a name="param_type"></a>fisher_f_distribution::p aram_type
 
-Dağıtım parametrelerini depolar.
+Dağıtımın parametrelerini depolar.
 
 ```cpp
 struct param_type {
@@ -283,21 +283,21 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*M*\
-Dağıtım `m` parametresi.
+*m*\
+`m`Dağıtım parametresi.
 
-*n*\
-Dağıtım `n` parametresi.
+*No*\
+`n`Dağıtım parametresi.
 
-*Doğru*\
-Bununla `param_type` karşılaştırılacak nesne.
+*Right*\
+`param_type`Karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ön koşul:** `0.0 < m` ve`0.0 < n`
+**Önkoşul:** `0.0 < m` '`0.0 < n`
 
-Bu yapı, varolan bir dağılımın depolanan parametrelerini `param()` ayarlamak ve `operator()` depolanan parametrelerin yerine kullanılmak üzere üye işlevine anında dağıtım Sınıfı oluşturucuya geçirilebilir.
+Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<rastgele>](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

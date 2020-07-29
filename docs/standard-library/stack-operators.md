@@ -1,5 +1,5 @@
 ---
-title: '&lt;Stack&gt; işleçleri'
+title: '&lt;yığın &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - stack/std::operator!=
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (stack)
 - std::operator&lt;= (stack)
 - std::operator== (stack)
-ms.openlocfilehash: 169698d30edd4a7995cb05e1909c1ffc38b0b6ef
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: ac694e517279e43a501bb8289544e5da5ddba72b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419436"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217421"
 ---
-# <a name="ltstackgt-operators"></a>&lt;Stack&gt; işleçleri
+# <a name="ltstackgt-operators"></a>&lt;yığın &gt; işleçleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a>işleç! =
 
 İşlecin sol tarafındaki yığın nesnesinin, sağ taraftaki yığın nesnesine eşit olup olmadığını sınar.
 
@@ -35,15 +35,15 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `stack` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `stack` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yığınlar veya yığınlar eşit değilse **doğru** ; yığınlar veya yığınlar eşitse **false** .
+**`true`** yığınlar veya yığınlar eşit değilse; **`false`** yığınlar veya yığınlar eşitse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -90,7 +90,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
 
 İşlecin sol tarafındaki yığın nesnesinin, sağ taraftaki yığın nesnesinden küçük olup olmadığını sınar.
 
@@ -100,15 +100,15 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `stack` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `stack` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki yığın işlecin sağ tarafındaki yığına eşit veya ondan küçükse **true** ;. Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki yığın, işlecin sağ tarafındaki yığına eşit ve daha küçükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -174,7 +174,7 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
 
 İşlecin sol tarafındaki yığın nesnesinin, sağ taraftaki yığın nesnesine eşit veya ondan küçük olup olmadığını test eder.
 
@@ -184,15 +184,15 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `stack` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `stack` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki yığın işlecin sağ tarafındaki yığına küçüktür veya ona eşitse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki yığın işlecin sağ tarafındaki yığına küçüktür veya ona eşitse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -241,7 +241,7 @@ The stack s1 is greater than the stack s2.
 The stack s1 is less than or equal to the stack s3.
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
 
 İşlecin sol tarafındaki yığın nesnesinin, sağ taraftaki yığın nesnesine eşit olup olmadığını sınar.
 
@@ -251,15 +251,15 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `stack` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `stack` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yığınlar veya yığınlar eşitse **true** ; yığınlar veya yığınlar eşitse **false** .
+**`true`** yığınlar veya yığınlar eşitse; **`false`** yığınlar veya yığınlar eşit değilse.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -306,7 +306,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
 
 İşlecin sol tarafındaki yığın nesnesinin, sağ taraftaki yığın nesnesinden büyük olup olmadığını sınar.
 
@@ -316,15 +316,15 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `stack` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `stack` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki yığın işlecin sağ tarafındaki yığına eşit veya ondan büyükse **doğru** ;. Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki yığın, işlecin sağ tarafındaki yığına eşit ve daha büyükse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -375,7 +375,7 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
 
 İşlecin sol tarafındaki yığın nesnesinin, sağ taraftaki yığın nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -385,15 +385,15 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `stack` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `stack` türünün bir nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-işlecin sol tarafındaki yığın işlecin sağ tarafındaki yığından tamamen daha küçükse **true** ; Aksi halde **yanlış**.
+**`true`** işlecin sol tarafındaki yığın işlecin sağ tarafındaki yığından tamamen daha küçüktür; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 

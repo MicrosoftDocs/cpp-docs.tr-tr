@@ -1,21 +1,21 @@
 ---
-title: dize (C++ com özniteliği)
+title: dize (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.string
 helpviewer_keywords:
 - string attribute
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
-ms.openlocfilehash: 96d5e609130b34a4a5f35109ce691c2de470e537
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 68708cce2e167c6f40b461d52861fe4ed82be867
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166172"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213820"
 ---
 # <a name="string-c"></a>string (C++)
 
-Tek boyutlu bir **char**, **wchar_t**, `byte` (veya eşdeğeri) dizisinin veya bu dizi işaretçisinin bir dize olarak değerlendirilmesinin gerektiğini gösterir.
+Tek boyutlu **`char`** , **`wchar_t`** , `byte` (veya eşdeğer) dizinin ya da bu tür bir dizi işaretçisinin bir dize olarak değerlendirilmesinin gerektiği anlamına gelir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,7 +50,7 @@ __interface IFireTabCtrl
 
 |||
 |-|-|
-|**Uygulama hedefi**|Array, Interface parametresi, Interface yöntemi için dizi veya işaretçi|
+|**Şunlara uygulanır**|Array, Interface parametresi, Interface yöntemi için dizi veya işaretçi|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Hiçbiri|
 |**Geçersiz öznitelikler**|Hiçbiri|
@@ -60,5 +60,5 @@ __interface IFireTabCtrl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Dizi Öznitelikleri](array-attributes.md)<br/>
-[export](export.md)
+[Dizi öznitelikleri](array-attributes.md)<br/>
+[işlemi](export.md)

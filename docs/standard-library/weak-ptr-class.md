@@ -28,18 +28,18 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-ms.openlocfilehash: 2591c4cd124f83085235828d3eb29ab1a90d894a
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: f76682b14e49e5f699144674da33b0826975e2d6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684080"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217343"
 ---
 # <a name="weak_ptr-class"></a>weak_ptr Sınıfı
 
 Zayıf bağlantılı bir işaretçi sarar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<class T> class weak_ptr;
@@ -47,40 +47,40 @@ template<class T> class weak_ptr;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* \
+*Şı*\
 Zayıf işaretçi tarafından denetlenen tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, bir veya daha fazla [shared_ptr](shared-ptr-class.md) nesnesi tarafından yönetilen bir kaynağı işaret eden bir nesneyi tanımlar. Bir kaynağa işaret eden `weak_ptr` nesneleri kaynağın başvuru sayısını etkilemez. Bu kaynağı yöneten son `shared_ptr` nesnesi yok edildiğinde, kaynağa işaret eden `weak_ptr` nesneler olsa bile kaynak serbest bırakılır. Bu davranış, veri yapılarında döngüleri önlemeye yönelik olarak gereklidir.
+Sınıf şablonu, bir veya daha fazla [shared_ptr](shared-ptr-class.md) nesnesi tarafından yönetilen bir kaynağı işaret eden bir nesneyi tanımlar. `weak_ptr`Bir kaynağa işaret eden nesneler kaynağın başvuru sayısını etkilemez. Bu kaynağı yöneten son nesne yok edildiğinde, kaynağı `shared_ptr` işaret eden nesneler olsa bile kaynak serbest bırakılır `weak_ptr` . Bu davranış, veri yapılarında döngüleri önlemeye yönelik olarak gereklidir.
 
-@No__t_0 nesnesi, o kaynağa sahip bir `shared_ptr` nesnesinden oluşturulmuşsa, bu kaynağa işaret eden bir `weak_ptr` nesnesinden oluşturulmuşsa veya bu kaynağa [işleç =](#op_eq)ile atanmışsa bir kaynağı işaret eder. @No__t_0 nesne, işaret ettiği kaynağa doğrudan erişim sağlamaz. Kaynağı kullanması gereken kod, bu kaynağa sahip olan bir `shared_ptr` nesnesi aracılığıyla üye işlevi [kilidi](#lock)çağırarak oluşturulur. Kaynak sahibi olan tüm `shared_ptr` nesneleri yok edileceği için, ' ın gösterdiği kaynak serbest bırakıldığında bir `weak_ptr` nesnesinin süresi doldu. Süresi sona ermeyen bir `weak_ptr` nesnesi üzerinde `lock` çağırmak boş bir shared_ptr nesnesi oluşturur.
+Bir nesne, kaynağı işaret eden bir nesneden oluşturulmuşsa, bu kaynağı `weak_ptr` `shared_ptr` işaret eden bir nesneden oluşturulduysa `weak_ptr` veya bu kaynağa [işleç =](#op_eq)ile atanmışsa bir kaynağı işaret eder. Bir `weak_ptr` nesne, işaret ettiği kaynağa doğrudan erişim sağlamaz. Kaynağı kullanması gereken kod `shared_ptr` , bu kaynağı, üye işlev [kilidi](#lock)çağırarak oluşturulan kaynağa sahip bir nesne aracılığıyla yapar. `weak_ptr`Kaynak sahibi olan tüm nesneler yok edildiğinden, bir nesnenin, gösterdiği kaynak serbest bırakıldığında süresi doldu `shared_ptr` . `lock` `weak_ptr` Süresi sona ermeyen bir nesneyi çağırmak boş bir shared_ptr nesnesi oluşturur.
 
-Boş bir weak_ptr nesnesi herhangi bir kaynağa işaret etmez ve denetim bloğu içermez. Üye işlevi `lock` boş bir shared_ptr nesnesi döndürür.
+Boş bir weak_ptr nesnesi herhangi bir kaynağa işaret etmez ve denetim bloğu yoktur. Üye işlevi `lock` boş bir shared_ptr nesnesi döndürüyor.
 
-Bir döngüye `shared_ptr` nesneleri tarafından denetlenen iki veya daha fazla kaynak, birbirini dışlayan `shared_ptr` nesneleri tutan zaman gerçekleşir. Örneğin, üç öğesi olan dairesel bir bağlantılı listede baş düğüm `N0` vardır; Bu düğüm, bir sonraki düğüme sahip bir `shared_ptr` nesnesi barındırır, `N1`; Bu düğüm, bir sonraki düğüme sahip bir `shared_ptr` nesnesi barındırır, `N2`; Bu düğüm, sırasıyla baş düğüme sahip bir `shared_ptr` nesnesi tutar `N0`, döngüyü kapatıyor. Bu durumda, başvuru sayıları hiçbir şekilde sıfır olmaz ve döngüdeki düğümler hiçbir şekilde serbest bırakılmaz. Döngüyü ortadan kaldırmak için, son düğüm `N2` bir `shared_ptr` nesnesi yerine `N0` işaret eden bir `weak_ptr` nesnesi olmalıdır. @No__t_0 nesnesi sahip olmadığından `N0` `N0` başvuru sayısını etkilemez ve programın baş düğüme en son başvurusu yok edildiğinde, listedeki düğümler de yok edilir.
+Nesneler tarafından denetlenen iki veya daha fazla kaynak, `shared_ptr` karşılıklı olarak başvurulan nesneleri tutan zaman bir döngüden oluşur `shared_ptr` . Örneğin, üç öğesi olan bir döngüsel bağlantılı listede bir baş düğüm bulunur; bu düğüm bir sonraki düğüme sahip bir nesne barındırır; bu düğüm bir sonraki düğüme sahip bir nesne barındırır; bu `N0` `shared_ptr` düğüm, `N1` `shared_ptr` `N2` sırasıyla `shared_ptr` baş düğüme sahip olan bir nesneyi tutar ve `N0` döngüyü kapatıyor. Bu durumda, başvuru sayıları hiçbir şekilde sıfır olmaz ve döngüdeki düğümler hiçbir şekilde serbest bırakılmaz. Döngüyü ortadan kaldırmak için, son düğüm `N2` `weak_ptr` bir nesne yerine üzerine işaret eden bir nesneyi tutmalıdır `N0` `shared_ptr` . `weak_ptr`Nesne sahip `N0` olmadığı için `N0` başvuru sayısını etkilemez ve programın baş düğüme en son başvurusu yok edildiğinde, listedeki düğümler de yok edilir.
 
 ## <a name="members"></a>Üyeler
 
 |||
 |-|-|
 | **Oluşturucular** | |
-|[weak_ptr](#weak_ptr)|Bir `weak_ptr` oluşturur.|
+|[weak_ptr](#weak_ptr)|Bir oluşturur `weak_ptr` .|
 | **Yıkıcılar** | |
-|[~ weak_ptr](#tilde-weak_ptr)|Bir `weak_ptr` oluşturur.|
+|[~ weak_ptr](#tilde-weak_ptr)|Bir oluşturur `weak_ptr` .|
 | **Tür tanımları** | |
 |[element_type](#element_type)|Öğenin türü.|
 | **Üye işlevleri** | |
 |[aşıldığı](#expired)|Sahiplik süresi dolmuşsa sınar.|
-|[lock](#lock)|Bir kaynağın özel sahipliğini edinir.|
-|[owner_before](#owner_before)|Bu `weak_ptr`, belirtilen işaretçiden önce (veya ondan küçük) sıralandıysa **true** döndürür.|
+|[ine](#lock)|Bir kaynağın özel sahipliğini edinir.|
+|[owner_before](#owner_before)|**`true`** Bu, `weak_ptr` belirtilen işaretçiden önce (veya ondan küçük) sıralanmış ise döndürür.|
 |[döndürmek](#reset)|Sahip olunan kaynak.|
-|[Kur](#swap)|İki `weak_ptr` nesnesini değiştirir.|
-|[use_count](#use_count)|@No__t_0 nesnelerinin sayısını sayar.|
-| **işleçler** | |
+|[Kur](#swap)|İki `weak_ptr` nesneyi değiştirir.|
+|[use_count](#use_count)|Nesne sayısını sayar `shared_ptr` .|
+| **İşleçler** | |
 |[işleç =](#op_eq)|Sahip olunan kaynağı değiştirir.|
 
-## <a name="element_type"></a>element_type
+## <a name="element_type"></a><a name="element_type"></a>element_type
 
 Öğenin türü.
 
@@ -91,7 +91,7 @@ using element_type = remove_extent_t<T>; // C++20
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, `T` şablon parametresi için bir eş anlamlı.
+Tür, şablon parametresi için bir eş anlamlı `T` .
 
 ### <a name="example"></a>Örnek
 
@@ -117,7 +117,7 @@ int main()
 *wp0.lock() == 5
 ```
 
-## <a name="expired"></a>aşıldığı
+## <a name="expired"></a><a name="expired"></a>aşıldığı
 
 Sahipliğin süresi dolmuşsa, yani başvurulan nesnenin silindiğini sınar.
 
@@ -127,7 +127,7 @@ bool expired() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `*this` süresi dolmuşsa **true** , aksi takdirde **false**döndürür.
+Üye işlevi, **`true`** **`*this`** süresi dolmuşsa döndürür, aksi takdirde **`false`** .
 
 ### <a name="example"></a>Örnek
 
@@ -166,9 +166,9 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="lock"></a>ine
+## <a name="lock"></a><a name="lock"></a>ine
 
-Bir kaynağın sahipliğini paylaşan bir `shared_ptr` alır.
+Bir `shared_ptr` kaynağın sahipliğini paylaşan bir alır.
 
 ```cpp
 shared_ptr<T> lock() const noexcept;
@@ -176,7 +176,7 @@ shared_ptr<T> lock() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `*this` süresi dolmuşsa boş bir [shared_ptr](shared-ptr-class.md) nesnesi döndürür; Aksi takdirde, `*this` işaret eden kaynağın sahibi olan bir `shared_ptr<T>` nesnesi döndürür. @No__t_0 atomik yürütmeye denk bir değer döndürür.
+Üye işlevi, süresi dolmuşsa boş bir [shared_ptr](shared-ptr-class.md) nesnesi döndürür **`*this`** ; Aksi takdirde `shared_ptr<T>` , işaret eden kaynağa sahip bir nesne döndürür **`*this`** . Öğesinin atomik yürütülmesine denk bir değer döndürür `expired() ? shared_ptr<T>() : shared_ptr<T>(*this)` .
 
 ### <a name="example"></a>Örnek
 
@@ -215,7 +215,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a>işleç =
 
 Sahip olunan kaynağı değiştirir.
 
@@ -231,15 +231,15 @@ weak_ptr& operator=(const shared_ptr<Other>& ptr) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer* \
+*Farklı*\
 Paylaşılan veya zayıf işaretçi tarafından denetlenen tür.
 
-*ptr* \
+*kaydetmeye*\
 Kopyalanacak zayıf işaretçi veya paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleçler, `*this` tarafından şu anda işaret edilen kaynağı serbest bırakın ve *PTR* tarafından adlandırılan kaynağın sahipliğini `*this` olarak atar. Bir operatör başarısız olursa, `*this` değişmeden bırakır. Her işlecin `weak_ptr(ptr).swap(*this)` eşdeğer bir etkisi vardır.
+İşleçler, ' ın şu anda gösterdiği kaynağı serbest bırakın **`*this`** ve *PTR* tarafından adlandırılan kaynağın sahipliğini öğesine atar **`*this`** . Bir operatör başarısız olursa, **`*this`** değiştirilmez. Her işlecin öğesine eşdeğer bir etkisi vardır `weak_ptr(ptr).swap(*this)` .
 
 ### <a name="example"></a>Örnek
 
@@ -273,9 +273,9 @@ int main()
 *wp1.lock() == 10
 ```
 
-## <a name="owner_before"></a>owner_before
+## <a name="owner_before"></a><a name="owner_before"></a>owner_before
 
-Bu `weak_ptr`, belirtilen işaretçiden önce (veya ondan küçük) sıralandıysa **true** döndürür.
+**`true`** Bu, `weak_ptr` belirtilen işaretçiden önce (veya ondan küçük) sıralanmış ise döndürür.
 
 ```cpp
 template <class Other>
@@ -287,14 +287,14 @@ bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr* \
-Bir `shared_ptr` ya da `weak_ptr` lvalue başvurusu.
+*kaydetmeye*\
+Bir veya öğesine lvalue başvurusu `shared_ptr` `weak_ptr` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon üye işlevi, `*this` *PTR*'den önce sıralandıysanız **true** döndürür.
+Şablon üye işlevi, **`true`** **`*this`** *PTR*'den önce Sıralansa, döndürür.
 
-## <a name="reset"></a>döndürmek
+## <a name="reset"></a><a name="reset"></a>döndürmek
 
 Sahip olunan kaynağı serbest bırakır.
 
@@ -304,7 +304,7 @@ void reset() noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `*this` tarafından işaret edilen kaynağı serbest bırakır ve `*this` boş bir `weak_ptr` nesnesine dönüştürür.
+Üye işlevi tarafından işaret edilen kaynağı serbest bırakır **`*this`** ve **`*this`** boş bir `weak_ptr` nesneye dönüştürür.
 
 ### <a name="example"></a>Örnek
 
@@ -336,9 +336,9 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a>Kur
 
-İki `weak_ptr` nesnesini değiştirir.
+İki `weak_ptr` nesneyi değiştirir.
 
 ```cpp
 void swap(weak_ptr& wp) noexcept;
@@ -353,12 +353,12 @@ void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*wp* \
+*WB*\
 İle takas edilecek zayıf işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `swap` sonra, `*this` tarafından başlangıçta işaret edilen kaynak *WP*'e göre işaret edilir ve başlangıçta *WP* tarafından işaret edilen kaynak `*this` tarafından işaret edilir. İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz. Şablon özelleşmenin etkisi `a.swap(b)` eşdeğerdir.
+Bir sonrasında `swap` , tarafından tarafından işaret edilen kaynak **`*this`** *WP*tarafından işaret edilir ve başlangıçta *WP* tarafından işaret edilen kaynak tarafından işaret edilir **`*this`** . İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz. Şablon özelleşmenin etkisi, ' nin eşdeğeridir `a.swap(b)` .
 
 ### <a name="example"></a>Örnek
 
@@ -405,9 +405,9 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="use_count"></a>use_count
+## <a name="use_count"></a><a name="use_count"></a>use_count
 
-Paylaşılan kaynağa sahip olan `shared_ptr` nesne sayısını sayar.
+`shared_ptr`Paylaşılan kaynağa sahip olan nesne sayısını sayar.
 
 ```cpp
 long use_count() const noexcept;
@@ -415,7 +415,7 @@ long use_count() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, kaynak `*this` tarafından işaret edilen `shared_ptr` nesne sayısını döndürür.
+Üye işlevi `shared_ptr` tarafından işaret edilen kaynağın sahip olduğu nesne sayısını döndürür **`*this`** .
 
 ### <a name="example"></a>Örnek
 
@@ -445,9 +445,9 @@ wp.use_count() == 1
 wp.use_count() == 2
 ```
 
-## <a name="weak_ptr"></a>weak_ptr
+## <a name="weak_ptr"></a><a name="weak_ptr"></a>weak_ptr
 
-Bir `weak_ptr` oluşturur.
+Bir oluşturur `weak_ptr` .
 
 ```cpp
 constexpr weak_ptr() noexcept;
@@ -468,18 +468,18 @@ weak_ptr(const shared_ptr<Other>& sp) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer* \
-Paylaşılan/zayıf işaretçi tarafından denetlenen tür. _Diğer \*_ `element_type*` uyumlu olmadığı takdirde bu oluşturucular aşırı yükleme çözümüne katılmaz.
+*Farklı*\
+Paylaşılan/zayıf işaretçi tarafından denetlenen tür. _Diğeri \* _ ile uyumlu olmadığı takdirde bu oluşturucular aşırı yükleme çözümüne katılmaz `element_type*` .
 
-*wp* \
+*WB*\
 Kopyalanacak zayıf işaretçi.
 
-*sp* \
+*SP2*\
 Kopyalanacak paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan Oluşturucu boş bir `weak_ptr` nesnesi oluşturur. Bağımsız değişken işaretçisi boş ise bağımsız değişken alan oluşturucuların her biri boş bir `weak_ptr` nesnesi oluşturur. Aksi takdirde, bağımsız değişken tarafından adlandırılan kaynağı işaret eden bir `weak_ptr` nesnesi oluşturur. Paylaşılan nesnenin başvuru sayısı değiştirilmez.
+Varsayılan Oluşturucu boş bir nesne oluşturur `weak_ptr` . Bağımsız değişken işaretçisi boş ise bağımsız değişken alan oluşturucuların her biri boş bir `weak_ptr` nesne oluşturur. Aksi takdirde, `weak_ptr` bağımsız değişken tarafından adlandırılan kaynağı işaret eden bir nesne oluşturur. Paylaşılan nesnenin başvuru sayısı değiştirilmez.
 
 ### <a name="example"></a>Örnek
 
@@ -514,9 +514,9 @@ wp0.expired() == true
 *wp2.lock() == 5
 ```
 
-## <a name="tilde-weak_ptr"></a>~ weak_ptr
+## <a name="weak_ptr"></a><a name="tilde-weak_ptr"></a>~ weak_ptr
 
-@No__t_0 yok eder.
+Yok eder `weak_ptr` .
 
 ```cpp
 ~weak_ptr();
@@ -524,10 +524,10 @@ wp0.expired() == true
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı bu `weak_ptr` yok eder, ancak nesnenin saklı işaretçi noktalarının başvuru sayısı üzerinde hiçbir etkisi yoktur.
+Yok edicisi bunu yok eder, `weak_ptr` ancak nesnenin saklı işaretçi noktalarının başvuru sayısı üzerinde hiçbir etkisi yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md) \
-[\<memory >](memory.md) \
-[shared_ptr Sınıfı](shared-ptr-class.md)
+[Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
+[\<memory>](memory.md)\
+[shared_ptr sınıfı](shared-ptr-class.md)

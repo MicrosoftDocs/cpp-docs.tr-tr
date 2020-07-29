@@ -90,12 +90,12 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: 9c326c337ff210ef9de26b3fd88c0d853832b260
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b7125390013e417123f09a5cc7f58be9ea87db56
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211880"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216472"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 
@@ -133,7 +133,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sağlayıcı, tüketicinin bu sınıfı kullanması için `ICommandWithParameters` desteklemelidir.
+Sağlayıcı, `ICommandWithParameters` tüketicinin bu sınıfı kullanması için destek sağlamalıdır.
 
 Parametre bilgileri, bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) ve [GetParamType](../../data/oledb/cdynamicparameteraccessor-getparamtype.md)kullanarak arabellekteki parametre verilerini elde edin.
 
@@ -143,7 +143,7 @@ Bu sınıfın bir SQL Server saklı yordamı yürütmek ve çıkış parametre d
 
 Oluşturucu.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 typedef CDynamicParameterAccessor _ParamClass;
@@ -169,7 +169,7 @@ BLOB işlemesi hakkında daha fazla bilgi için [CDynamicAccessor:: CDynamicAcce
 
 Parametre arabelleğindeki belirtilen parametreye ait dize olmayan verileri alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class ctype>bool GetParam(DBORDINAL nParam,
@@ -199,9 +199,9 @@ dışı Arabellekten alınan verileri içeren bellek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablonlu olmayan sürümler için arabellekten alınan verileri içeren belleği işaret eder. Şablonlu sürümler için başarılı veya hatalı hata durumunda **false** **döndürür.**
+Şablonlu olmayan sürümler için arabellekten alınan verileri içeren belleği işaret eder. Şablonlu sürümler için **`true`** başarı veya başarısızlık durumunda döndürür **`false`** .
 
-Arabelleğinden dize olmayan parametre verilerini almak için `GetParam` kullanın. Arabellekteki dize parametresi verilerini almak için [GetParamString](../../data/oledb/cdynamicparameteraccessor-getparamstring.md) kullanın.
+`GetParam`Arabelleğinden dize olmayan parametre verilerini almak için kullanın. Arabellekteki dize parametresi verilerini almak için [GetParamString](../../data/oledb/cdynamicparameteraccessor-getparamstring.md) kullanın.
 
 ## <a name="cdynamicparameteraccessorgetparamcount"></a><a name="getparamcount"></a>CDynamicParameterAccessor:: GetParamCount
 
@@ -221,7 +221,7 @@ Parametre sayısı.
 
 Belirtilen parametrenin bir giriş veya çıkış parametresi olup olmadığını belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetParamIO(DBORDINAL nParam,
@@ -234,7 +234,7 @@ bool GetParamIO(DBORDINAL nParam,
 'ndaki Parametre numarası (1 ' den fazla). 0 parametresi, dönüş değerleri için ayrılmıştır. Parametre numarası, SQL veya saklı yordam çağrısındaki sırası temelinde parametrenin dizinidir. Örnek için bkz. [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) .
 
 *Pparaıo*<br/>
-Belirtilen parametrenin `DBPARAMIO` türünü (giriş veya çıkış) içeren değişkene yönelik bir işaretçi. Aşağıdaki gibi tanımlanır:
+`DBPARAMIO`Belirtilen parametrenin türünü (giriş veya çıkış) içeren değişkene yönelik bir işaretçi. Aşağıdaki gibi tanımlanır:
 
 ```cpp
 typedef DWORD DBPARAMIO;
@@ -248,13 +248,13 @@ enum DBPARAMIOENUM {
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
 ## <a name="cdynamicparameteraccessorgetparamlength"></a><a name="getparamlength"></a>CDynamicParameterAccessor:: GetParamLength
 
 Arabellekte depolanan belirtilen parametrenin uzunluğunu alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetParamLength(DBORDINAL nParam,
@@ -273,13 +273,13 @@ dışı Belirtilen parametrenin bayt cinsinden uzunluğunu içeren değişkene y
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk geçersiz kılma başarılı veya hatalı olduğunda **false** **döndürür.** İkinci geçersiz kılma, parametrenin uzunluğunu içeren belleğe işaret eder.
+İlk geçersiz kılma **`true`** başarı veya başarısızlık durumunda geri döner **`false`** . İkinci geçersiz kılma, parametrenin uzunluğunu içeren belleğe işaret eder.
 
 ## <a name="cdynamicparameteraccessorgetparamname"></a><a name="getparamname"></a>CDynamicParameterAccessor:: GetParamName
 
 Belirtilen parametrenin adını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 LPOLESTR GetParamName(DBORDINAL nParam) const throw();
@@ -298,7 +298,7 @@ Belirtilen parametrenin adı.
 
 Arabellekte depolanan belirtilen parametrenin durumunu alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetParamStatus(DBORDINAL nParam,
@@ -317,13 +317,13 @@ dışı Belirtilen parametrenin DBSTATUS durumunu içeren değişkene yönelik b
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk geçersiz kılma başarılı veya hatalı olduğunda **false** **döndürür.** İkinci geçersiz kılma, belirtilen parametrenin durumunu içeren belleğe işaret eder.
+İlk geçersiz kılma **`true`** başarı veya başarısızlık durumunda geri döner **`false`** . İkinci geçersiz kılma, belirtilen parametrenin durumunu içeren belleğe işaret eder.
 
 ## <a name="cdynamicparameteraccessorgetparamstring"></a><a name="getparamstring"></a>CDynamicParameterAccessor:: GetParamString
 
 Arabellekte depolanan belirtilen parametrenin dize verilerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetParamString(DBORDINAL nParam,
@@ -347,7 +347,7 @@ bool GetParamString(DBORDINAL nParam,
 'ndaki Parametre numarası (1 ' den fazla). 0 parametresi, dönüş değerleri için ayrılmıştır. Parametre numarası, SQL veya saklı yordam çağrısındaki sırası temelinde parametrenin dizinidir. Örnek için bkz. [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) .
 
 *strOutput*<br/>
-dışı Belirtilen parametrenin ANSI (`CSimpleStringA`) veya Unicode (`CSimpleStringW`) dize verileri. `CString`türünde bir parametre geçirmeniz gerekir, örneğin:
+dışı `CSimpleStringA`Belirtilen PARAMETRENIN ANSI () veya UNICODE ( `CSimpleStringW` ) dize verileri. Türünde bir parametre geçirmeniz gerekir `CString` , örneğin:
 
 [!code-cpp[NVC_OLEDB_Consumer#9](../../data/oledb/codesnippet/cpp/cdynamicparameteraccessor-getparamstring_1.cpp)]
 
@@ -359,19 +359,19 @@ dışı *PBuffer* tarafından işaret edilen arabelleğin boyutuna yönelik bir 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-*PBuffer* null ise, bu yöntem *pMaxLen* tarafından işaret edilen bellek için gereken arabellek boyutunu ayarlar ve verileri kopyalamadan **doğru** döndürür.
+*PBuffer* null ise, bu yöntem, *pMaxLen* tarafından işaret edilen bellekteki gerekli arabellek boyutunu ayarlar ve **`true`** verileri kopyalamadan döndürülür.
 
 Arabellek *pBuffer* tüm dizeyi içerecek kadar büyük değilse bu yöntem başarısız olur.
 
-Arabellekteki dize parametresi verilerini almak için `GetParamString` kullanın. Arabellekteki dize olmayan parametre verilerini almak için [GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) kullanın.
+`GetParamString`Arabellekteki dize parametresi verilerini almak için kullanın. Arabellekteki dize olmayan parametre verilerini almak için [GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) kullanın.
 
 ## <a name="cdynamicparameteraccessorgetparamtype"></a><a name="getparamtype"></a>CDynamicParameterAccessor:: GetParamType
 
 Belirtilen parametrenin veri türünü alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool GetParamType(DBORDINAL nParam,
@@ -388,13 +388,13 @@ dışı Belirtilen parametrenin veri türünü içeren değişkene yönelik bir 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
 ## <a name="cdynamicparameteraccessorsetparam"></a><a name="setparam"></a>CDynamicParameterAccessor:: SetParam
 
 Belirtilen (dize olmayan) verileri kullanarak parametre arabelleğini ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class ctype>
@@ -414,7 +414,7 @@ bool SetParam(TCHAR* pParamName,
 Veri türü olan şablonlu bir parametre.
 
 *nParam*<br/>
-'ndaki Parametre numarası (1 ' den fazla). 0 parametresi, dönüş değerleri için ayrılmıştır. Parametre numarası, SQL veya saklı yordam çağrısındaki sırası temelinde parametrenin dizinidir. Örneğin:
+'ndaki Parametre numarası (1 ' den fazla). 0 parametresi, dönüş değerleri için ayrılmıştır. Parametre numarası, SQL veya saklı yordam çağrısındaki sırası temelinde parametrenin dizinidir. Örnek:
 
 [!code-cpp[NVC_OLEDB_Consumer#8](../../data/oledb/codesnippet/cpp/cdynamicparameteraccessor-setparam_1.cpp)]
 
@@ -429,15 +429,15 @@ Veri türü olan şablonlu bir parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-Arabellekte dize olmayan parametre verilerini ayarlamak için `SetParam` kullanın. Arabellekte dize parametresi verilerini ayarlamak için [SetParamString](../../data/oledb/cdynamicparameteraccessor-setparamstring.md) kullanın.
+`SetParam`Arabellekte dize olmayan parametre verilerini ayarlamak için kullanın. Arabellekte dize parametresi verilerini ayarlamak için [SetParamString](../../data/oledb/cdynamicparameteraccessor-setparamstring.md) kullanın.
 
 ## <a name="cdynamicparameteraccessorsetparamlength"></a><a name="setparamlength"></a>CDynamicParameterAccessor:: SetParamLength
 
 Arabellekte depolanan belirtilen parametrenin uzunluğunu ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool SetParamLength(DBORDINAL nParam,
@@ -454,13 +454,13 @@ bool SetParamLength(DBORDINAL nParam,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
 ## <a name="cdynamicparameteraccessorsetparamstatus"></a><a name="setparamstatus"></a>CDynamicParameterAccessor:: SetParamStatus
 
 Arabellekte depolanan belirtilen parametrenin durumunu ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool SetParamStatus(DBORDINAL nParam,
@@ -477,13 +477,13 @@ bool SetParamStatus(DBORDINAL nParam,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
 ## <a name="cdynamicparameteraccessorsetparamstring"></a><a name="setparamstring"></a>CDynamicParameterAccessor:: SetParamString
 
 Arabellekte depolanan belirtilen parametrenin dize verilerini ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool SetParamString(DBORDINAL nParam,
@@ -506,16 +506,16 @@ bool SetParamString(DBORDINAL nParam,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başarılı veya hatalı olduğunda **false** **döndürür.**
+**`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-*pString*için belirtilen en büyük boyuttan daha büyük bir dize ayarlamaya çalışırsanız `SetParamString` başarısız olur.
+`SetParamString`*pString*için belirtilen en büyük boyuttan daha büyük bir dize ayarlamaya çalışırsanız başarısız olur.
 
-Arabellekte dize parametresi verilerini ayarlamak için `SetParamString` kullanın. Arabellekte dize olmayan parametre verilerini ayarlamak için [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) kullanın.
+`SetParamString`Arabellekte dize parametresi verilerini ayarlamak için kullanın. Arabellekte dize olmayan parametre verilerini ayarlamak için [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CManualAccessor Sınıfı](../../data/oledb/cmanualaccessor-class.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CAccessor sınıfı](../../data/oledb/caccessor-class.md)<br/>
+[CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)<br/>
+[CManualAccessor sınıfı](../../data/oledb/cmanualaccessor-class.md)

@@ -8,36 +8,36 @@ helpviewer_keywords:
 - tracking references
 - '% tracking reference [C++]'
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
-ms.openlocfilehash: ccd31b3e334dc5a4cd2e48b94c9dbe85cf13c16b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 93f56580f35ffc1f6e517905467c3deb92922f5f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368230"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87218019"
 ---
 # <a name="tracking-reference-operator-ccli-and-ccx"></a>İzleme Başvurusu İşleci (C++/CLI ve C++/CX)
 
-Bir *izleme* `%`başvurusu (`&`) sıradan bir C++ başvurusu gibi, bir nesne bir izleme başvurusuna atandığında, nesnenin başvuru sayısının artması dışında kullanılır.
+*İzleme başvurusu* ( `%` ), bir `&` nesne izleme başvurusuna atandığında nesnenin başvuru sayısının artması dışında sıradan bir C++ başvurusu () gibi davranır.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
-Bir izleme başvurusu aşağıdaki özelliklere sahiptir.
+İzleme başvurusu aşağıdaki özelliklere sahiptir.
 
-- Bir nesnenin izleme başvurusuna atanması, nesnenin başvuru sayısının artışalmasına neden olur.
+- Bir nesnenin bir izleme başvurusuna atanması, nesnenin başvuru sayısının arttırmasına neden olur.
 
-- Yerel bir`&`başvuru ( ) bir `*`. Bir izleme`%`başvurusu ( ) bir `^`. Bir nesneye sahip `%` olduğunuz sürece, nesne hafızada canlı kalacaktır.
+- Bir yerel başvuru ( `&` ), başvuru yaptığınız zaman sonucudur `*` . Bir izleme başvurusu ( `%` ), başvuru yaptığınız zaman sonucudur `^` . Bir nesneye sahip olduğunuz sürece `%` nesne bellekte etkin kalır.
 
-- Nokta (`.`) üye erişim işleci nesnenin bir üyesine erişmek için kullanılır.
+- Nokta ( `.` ) üye erişim işleci, nesnenin bir üyesine erişmek için kullanılır.
 
-- İzleme başvuruları değer türleri ve işlonlar `String^`için geçerlidir (örneğin).
+- İzleme başvuruları değer türleri ve işleyiciler için geçerlidir (örneğin `String^` ).
 
-- Bir izleme başvurusuna null veya **nullptr** değeri atanamaz. Bir izleme başvurusu, gerektiğinde başka bir geçerli nesneye yeniden atanabilir.
+- İzleme başvurusuna null veya **`nullptr`** değer atanamaz. İzleme başvurusu, gerektiği kadar geçerli olan başka bir nesneye yeniden atanabilir.
 
-- Bir izleme başvurusu unary take-address işleci olarak kullanılamaz.
+- İzleme başvurusu birli adres alma işleci olarak kullanılamaz.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-İzleme başvurusu, %'nin referans sayılan olması dışında standart bir C++ başvurusu gibi olur. Aşağıdaki parçacık% ve ^ türleri arasında dönüştürmek için nasıl gösterir:
+Bir izleme başvurusu, standart C++ başvurusu gibi davranır, ancak% bir başvuru sayılır. Aşağıdaki kod parçacığında,% ve ^ türleri arasında nasıl dönüştürme yapılacağı gösterilmektedir:
 
 ```cpp
 Foo^ spFoo = ref new Foo();
@@ -45,7 +45,7 @@ Foo% srFoo = *spFoo;
 Foo^ spFoo2 = %srFoo;
 ```
 
-Aşağıdaki örnek, ^'un %'lik bir işleve nasıl geçirilebildiğini gösterir.
+Aşağıdaki örnek, bir ^ ' i alan bir işleve nasıl geçirileceğini gösterir.
 
 ```cpp
 ref class Foo sealed {};
@@ -65,21 +65,21 @@ ref class Foo sealed {};
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-C++/CLI'de, çöp toplanmış yığında CLR türündeki bir nesneye bağlandığınızda bir tutamaç için izleme başvurusu kullanabilirsiniz.
+C++/CLı ' da, atık toplanmış yığında bir CLR türünün nesnesine bağladığınızda bir tanıtıcıya yönelik izleme başvurusunu kullanabilirsiniz.
 
-CLR'de, çöp toplayıcı başvurulan nesneyi her hareket ettirdiğinde izleme başvuru değişkeninin değeri otomatik olarak güncelleştirilir.
+CLR 'de, çöp toplayıcı başvurulan nesneyi her taşıdıkça izleme başvuru değişkeninin değeri otomatik olarak güncelleştirilir.
 
-Bir izleme başvurusu yalnızca yığında bildirilebilir. İzleme başvurusu sınıfın üyesi olamaz.
+İzleme başvurusu yalnızca yığında bildirilebilecek. İzleme başvurusu bir sınıfın üyesi olamaz.
 
-Çöp toplanmış yığındaki bir nesneye yerel C++ başvurusu yapmak mümkün değildir.
+Atık olarak toplanmış yığında bir nesneye yerel C++ başvurusu yapmak mümkün değildir.
 
-C++/CLI'deki başvuruları izleme hakkında daha fazla bilgi için bkz:
+C++/CLı ' daki başvuruları izleme hakkında daha fazla bilgi için bkz.:
 
-- [Nasıl yapılır: C++/CLI Üzerinde İzleme Başvurularını Kullanma](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)
+- [Nasıl yapılır: C++/CLı ' da Izleme başvurularını kullanma](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)
 
 ### <a name="examples"></a>Örnekler
 
-C++/CLI için aşağıdaki örnek, yerel ve yönetilen türleri ile bir izleme başvurusu nasıl kullanılacağını gösterir.
+Aşağıdaki C++/CLı örneği, yerel ve yönetilen türlerle izleme başvurusunun nasıl kullanılacağını gösterir.
 
 ```cpp
 // tracking_reference_1.cpp
@@ -117,7 +117,7 @@ int main() {
 }
 ```
 
-C++/CLI için aşağıdaki örnek, bir diziye izleme başvurusu nasıl bağlanılmayı gösterir.
+Aşağıdaki C++/CLı örneği bir diziye bir izleme başvurusunun nasıl bağlanacağını gösterir.
 
 ```cpp
 // tracking_reference_2.cpp

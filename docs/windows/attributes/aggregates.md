@@ -1,5 +1,5 @@
 ---
-title: Toplamlar (C++ com özniteliği)
+title: Toplamlar (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.aggregates
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-ms.openlocfilehash: 08e623d84553f9fcf556c9cf480c1816c7300460
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 65a166faa9380272c87af92ebaf8294c0e0b1af3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168505"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217291"
 ---
 # <a name="aggregates"></a>toplamlar
 
 Nesnenin CLSID tarafından belirtilen nesneyi topladığını gösterir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ aggregates(clsid, variable_name) ]
@@ -32,11 +32,11 @@ Nesnenin CLSID tarafından belirtilen nesneyi topladığını gösterir.
 Toplanamayan nesnenin CLSID değerini belirtir.
 
 *variable_name*<br/>
-Eklenecek değişkenin adı. Bu değişken, toplanan nesnenin `IUnknown` içerir.
+Eklenecek değişkenin adı. Bu değişken, `IUnknown` toplanmakta olan nesneyi içerir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir nesneye uygulandığında, **toplamalar** C++ özniteliği toplanmış nesne için bir dış sarmalayıcı uygular (`clsid`tarafından belirtilir).
+Bir nesneye uygulandığında, **toplamaları** C++ özniteliği toplanmış nesne (tarafından belirtilen) için bir dış sarmalayıcı uygular `clsid` .
 
 Bu öznitelik, [coclass](coclass.md), [ProgID](progid.md)veya [vi_progid](vi-progid.md) özniteliğinin (ya da bunlardan birini belirten başka bir özniteliğin) aynı öğeye uygulanmasını gerektirir. Tek bir öznitelik kullanılırsa, diğer ikisi otomatik olarak uygulanır. Örneğin, `progid` uygulanmışsa `vi_progid` ve `coclass` de uygulanır.
 
@@ -83,18 +83,18 @@ struct CObject : IObject
 
 |||
 |-|-|
-|**Uygulama hedefi**|**sınıf**, **Yapı**|
+|**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Yes|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass`, `progid`veya `vi_progid`.|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
 |**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM Öznitelikleri](com-attributes.md)<br/>
-[Sınıf Öznitelikleri](class-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
+[COM öznitelikleri](com-attributes.md)<br/>
+[Sınıf öznitelikleri](class-attributes.md)<br/>
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)<br/>
 [Toplama](/windows/win32/com/aggregation)<br/>
 [Toplanabilir](/windows/win32/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

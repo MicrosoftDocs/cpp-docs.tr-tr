@@ -7,18 +7,18 @@ helpviewer_keywords:
 - enable_shared_from_this class
 - enable_shared_from_this
 ms.assetid: 9237603d-22e2-421f-b070-838ac006baf5
-ms.openlocfilehash: 152a5e0433f2eab5160fbdedde8f18f42f2303e6
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 9b417eabdaf6002724a0fa947dd97dea6f0df0a5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245861"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217785"
 ---
-# <a name="enablesharedfromthis-class"></a>enable_shared_from_this Sınıfı
+# <a name="enable_shared_from_this-class"></a>enable_shared_from_this Sınıfı
 
-Üretmeye yardımcı olur bir `shared_ptr`.
+Bir oluşturulmasına yardımcı olur `shared_ptr` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 class enable_shared_from_this {
@@ -38,20 +38,20 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
-Paylaşılan işaretçiyle kontrol edilen tür.
+*Kalite*\
+Paylaşılan işaretçi tarafından denetlenen tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türetilmiş nesneler `enable_shared_from_this` kullanabilirsiniz `shared_from_this` üye işlevleri oluşturmak için yöntemleri [shared_ptr](../standard-library/shared-ptr-class.md) bu paylaşım sahipliğinin var olan örneğinin sahipleri `shared_ptr` sahipler. Aksi takdirde, yeni bir oluşturursanız `shared_ptr` kullanarak **bu**, varolan farklıdır `shared_ptr` sahiplerinin, başvuru geçersiz veya birden çok kez silinmesine neden neden olabilir.
+Öğesinden türetilen nesneler, `enable_shared_from_this` var olan `shared_from_this` sahiplerin sahipliğini paylaşan örnek [shared_ptr](../standard-library/shared-ptr-class.md) sahiplerini oluşturmak için üye işlevlerindeki yöntemleri kullanabilir `shared_ptr` . Aksi takdirde, kullanarak yeni bir oluşturursanız `shared_ptr` **`this`** , bu, var olan `shared_ptr` sahiplerden farklıdır, bu da geçersiz başvurulara yol açabilir veya nesnenin birden çok kez silinmesine neden olabilir.
 
-Oluşturucular, yok edici ve atama işleci, yanlışlıkla kötüye kullanımı önlemek için korunur. Şablon bağımsız değişken türü *Ty* türetilmiş sınıf türünde olmalıdır.
+Oluşturucular, yıkıcı ve atama işleci yanlışlıkla kötüye kullanımı önlemeye yardımcı olmak için korunur. Şablon bağımsız *değişken türü, türetilmiş sınıfın türü olmalıdır* .
 
-Kullanım örneği için bkz: [enable_shared_from_this::shared_from_this](#shared_from_this).
+Kullanım örneği için bkz. [enable_shared_from_this:: shared_from_this](#shared_from_this).
 
-## <a name="shared_from_this"></a> shared_from_this
+## <a name="shared_from_this"></a><a name="shared_from_this"></a>shared_from_this
 
-Oluşturur bir `shared_ptr` , var olan örneğinin sahipliği paylaşır `shared_ptr` sahipler.
+`shared_ptr`Örneği, var olan sahiplerin sahipliğini paylaşan bir oluşturur `shared_ptr` .
 
 ```cpp
 shared_ptr<T> shared_from_this();
@@ -60,7 +60,7 @@ shared_ptr<const T> shared_from_this() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesnelerden türetilmesi zaman `enable_shared_from_this` temel sınıfı, `shared_from_this` şablon üye işlev dönüş bir [shared_ptr sınıfı](../standard-library/shared-ptr-class.md) var olan bu örneği sahipliğini paylaşan nesne `shared_ptr` sahipler. Aksi takdirde, yeni bir oluşturursanız `shared_ptr` gelen **bu**, varolan farklıdır `shared_ptr` sahiplerinin, başvuru geçersiz veya birden çok kez silinmesine neden neden olabilir. Çağırırsanız davranış tanımlanmamıştır `shared_from_this` zaten sahibi olmayan bir örneği üzerinde bir `shared_ptr` nesne.
+Temel sınıftan nesneler türettiğinizde `enable_shared_from_this` , `shared_from_this` şablon üye işlevleri bu örneğin sahipliğini var olan sahiplerle paylaşan bir [shared_ptr sınıf](../standard-library/shared-ptr-class.md) nesnesi döndürür `shared_ptr` . Aksi takdirde, öğesinden yeni bir oluşturursanız `shared_ptr` , **`this`** Bu, var olan `shared_ptr` sahiplerden farklıdır, bu da geçersiz başvurulara yol açabilir veya nesnenin birden çok kez silinmesine neden olabilir. `shared_from_this`Bir nesneye ait olmayan bir örneğe çağrı yaparsanız davranış tanımsızdır `shared_ptr` .
 
 ### <a name="example"></a>Örnek
 
@@ -96,7 +96,7 @@ int main()
 sp2->val == 3
 ```
 
-## <a name="weak_from_this"></a> weak_from_this
+## <a name="weak_from_this"></a><a name="weak_from_this"></a>weak_from_this
 
 ```cpp
 weak_ptr<T> weak_from_this() noexcept;

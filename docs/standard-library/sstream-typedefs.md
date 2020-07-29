@@ -1,5 +1,5 @@
 ---
-title: '&lt;sstream&gt; typedefs'
+title: '&lt;sstream &gt; tür tanımları'
 ms.date: 11/04/2016
 f1_keywords:
 - iosfwd/std::istringstream
@@ -11,14 +11,14 @@ f1_keywords:
 - iosfwd/std::wstringbuf
 - iosfwd/std::wstringstream
 ms.assetid: d102edd2-ecea-4a35-a398-cf96e58dd422
-ms.openlocfilehash: c25d3fa66b5105ad2e1ff5a08ebdde90d1d156be
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a549b413a58e138cda279cd6f3f3e2afc68c6aa6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336644"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87217434"
 ---
-# <a name="ltsstreamgt-typedefs"></a>&lt;sstream&gt; typedefs
+# <a name="ltsstreamgt-typedefs"></a>&lt;sstream &gt; tür tanımları
 
 ||||
 |-|-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "81336644"
 
 ## <a name="istringstream"></a><a name="istringstream"></a>istringstream
 
-Char şablon `basic_istringstream` parametresi **char** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_istringstream`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`char`** .
 
 ```cpp
 typedef basic_istringstream<char> istringstream;
@@ -36,11 +36,11 @@ typedef basic_istringstream<char> istringstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_istringstream](../standard-library/basic-istringstream-class.md)için eşanlamlıdır, türü **char**elemanları için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_istringstream](../standard-library/basic-istringstream-class.md)sınıf şablonu için bir eş anladır **`char`** .
 
 ## <a name="ostringstream"></a><a name="ostringstream"></a>ostringstream
 
-Char şablon `basic_ostringstream` parametresi **char** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_ostringstream`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`char`** .
 
 ```cpp
 typedef basic_ostringstream<char> ostringstream;
@@ -48,11 +48,11 @@ typedef basic_ostringstream<char> ostringstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_ostringstream](../standard-library/basic-ostringstream-class.md)için eşanlamlıdır, türü **char**elemanları için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_ostringstream](../standard-library/basic-ostringstream-class.md)sınıf şablonu için bir eş anladır **`char`** .
 
 ## <a name="stringbuf"></a><a name="stringbuf"></a>stringbuf
 
-Char şablon `basic_stringbuf` parametresi **char** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_stringbuf`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`char`** .
 
 ```cpp
 typedef basic_stringbuf<char> stringbuf;
@@ -60,11 +60,11 @@ typedef basic_stringbuf<char> stringbuf;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_stringbuf](../standard-library/basic-stringbuf-class.md)için eşanlamlıdır, türü **char**elemanları için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_stringbuf](../standard-library/basic-stringbuf-class.md)sınıf şablonu için bir eş anladır **`char`** .
 
 ## <a name="stringstream"></a><a name="stringstream"></a>stringstream
 
-Char şablon `basic_stringstream` parametresi **char** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_stringstream`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`char`** .
 
 ```cpp
 typedef basic_stringstream<char> stringstream;
@@ -72,11 +72,11 @@ typedef basic_stringstream<char> stringstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_stringstream](../standard-library/basic-stringstream-class.md)için eşanlamlıdır, türü **char**elemanları için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_stringstream](../standard-library/basic-stringstream-class.md)sınıf şablonu için bir eş anladır **`char`** .
 
 ## <a name="wistringstream"></a><a name="wistringstream"></a>wistringstream
 
-wchar_t şablon `basic_istringstream` parametresi **wchar_t** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_istringstream`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`wchar_t`** .
 
 ```cpp
 typedef basic_istringstream<wchar_t> wistringstream;
@@ -84,11 +84,11 @@ typedef basic_istringstream<wchar_t> wistringstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_istringstream](../standard-library/basic-istringstream-class.md)için eşanlamlıdır, tür **wchar_t**öğeleri için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_istringstream](../standard-library/basic-istringstream-class.md)sınıf şablonu için bir eş anladır **`wchar_t`** .
 
 ## <a name="wostringstream"></a><a name="wostringstream"></a>wostringstream
 
-wchar_t şablon `basic_ostringstream` parametresi **wchar_t** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_ostringstream`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`wchar_t`** .
 
 ```cpp
 typedef basic_ostringstream<wchar_t> wostringstream;
@@ -96,11 +96,11 @@ typedef basic_ostringstream<wchar_t> wostringstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_ostringstream](../standard-library/basic-ostringstream-class.md)için eşanlamlıdır, tür **wchar_t**öğeleri için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_ostringstream](../standard-library/basic-ostringstream-class.md)sınıf şablonu için bir eş anladır **`wchar_t`** .
 
 ## <a name="wstringbuf"></a><a name="wstringbuf"></a>wstringbuf
 
-wchar_t şablon `basic_stringbuf` parametresi **wchar_t** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_stringbuf`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`wchar_t`** .
 
 ```cpp
 typedef basic_stringbuf<wchar_t> wstringbuf;
@@ -108,11 +108,11 @@ typedef basic_stringbuf<wchar_t> wstringbuf;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_stringbuf](../standard-library/basic-stringbuf-class.md)için eşanlamlıdır, **wchar_t**türü öğeleri için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_stringbuf](../standard-library/basic-stringbuf-class.md)sınıf şablonu için bir eş anladır **`wchar_t`** .
 
 ## <a name="wstringstream"></a><a name="wstringstream"></a>wstringstream
 
-wchar_t şablon `basic_stringstream` parametresi **wchar_t** üzerinde özelleştirilmiş bir tür oluşturur.
+`basic_stringstream`Şablon parametresi üzerinde özelleştirilmiş bir tür oluşturur **`wchar_t`** .
 
 ```cpp
 typedef basic_stringstream<wchar_t> wstringstream;
@@ -120,7 +120,7 @@ typedef basic_stringstream<wchar_t> wstringstream;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü sınıf şablonu [basic_stringstream](../standard-library/basic-stringstream-class.md)için eşanlamlıdır, **wchar_t**türü öğeleri için özel .
+Türü, türü öğeler için özelleştirilmiş [basic_stringstream](../standard-library/basic-stringstream-class.md)sınıf şablonu için bir eş anladır **`wchar_t`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

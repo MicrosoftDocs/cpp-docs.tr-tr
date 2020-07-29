@@ -6,32 +6,32 @@ helpviewer_keywords:
 - CString objects, reference counting
 - CString class (Visual C++)
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-ms.openlocfilehash: a84ae21b60d87971cb2f7b758dd369b4078607e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8ebf3441c7d8856fe412e2efed4c717b01ced362
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199215"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219020"
 ---
 # <a name="using-cstring"></a>CString kullanma
 
-Bu bölümdeki konular ile programlamayı açıklar `CString`. Hakkındaki referans belgeleri `CString` sınıfı, belgelerine bakın [CStringT](../atl-mfc-shared/reference/cstringt-class.md).
+Bu bölümdeki konular ile nasıl programlama yapılacağını açıklamaktadır `CString` . Sınıfıyla ilgili başvuru belgeleri için `CString` bkz. [CStringT](../atl-mfc-shared/reference/cstringt-class.md)belgeleri.
 
-Kullanılacak `CString`, dahil `atlstr.h` başlığı.
+Kullanmak için `CString` `atlstr.h` üst bilgiyi ekleyin.
 
-`CString`, `CStringA`, Ve `CStringW` sınıflardır adlı bir sınıf şablonunun uzmanlıkları [CStringT](../atl-mfc-shared/reference/cstringt-class.md) destekledikleri karakter veri türüne göre.
+`CString`, `CStringA` , Ve `CStringW` sınıfları, destekledikleri karakter verilerinin türüne göre [CStringT](../atl-mfc-shared/reference/cstringt-class.md) adlı bir sınıf şablonunun uzmanlıklarıdır.
 
-A `CStringW` nesnesini içeren **wchar_t** yazın ve Unicode dizelerini destekler. A `CStringA` nesnesini içeren **char** türü ve destekleyen tek baytlı ve çok baytlı (MBCS) dizeleri. A `CString` nesnesi ya da destekler **char** türü veya `wchar_t` MBCS sembol veya UNICODE sembolü derleme zamanında tanımlı olup olmadığı bağlı olarak türü.
+Bir `CStringW` nesne türü içerir **`wchar_t`** ve Unicode dizelerini destekler. Bir `CStringA` nesne türü içerir **`char`** ve tek baytlı ve çok BAYTLı (MBCS) dizeleri destekler. Bir `CString` nesne, **`char`** **`wchar_t`** MBCS SEMBOLÜNÜN mi yoksa UNICODE sembolünün derleme zamanında mi tanımlandığına bağlı olarak türü ya da türü destekler.
 
-A `CString` nesnesi karakter verileri tutan bir `CStringData` nesne. `CString` NULL ile sonlandırılmış C stili dizeler kabul eder. `CString` dize izler ancak daha hızlı performans için uzunluk LPCWSTR dönüştürmeyi desteklemek için depolanan karakter verileri NULL karakter de korur. `CString` C stili dize verdiğinde null Sonlandırıcı içerir. İçinde başka yerlerde bir NULL ekleyebilirsiniz bir `CString`, ancak beklenmeyen sonuçlara neden olabilir.
+`CString`Nesne, bir nesnede karakter verilerini tutar `CStringData` . `CString`NULL ile sonlandırılmış C stili dizeleri kabul eder. `CString`daha hızlı performans için dize uzunluğunu izler, ancak LPCWSTR 'e dönüştürmeyi desteklemek için depolanan karakter verilerinde NULL karakteri de korur. `CString`, bir C stili dize dışarı aktardığında null Sonlandırıcı içerir. Başka konumlarda bir NULL ekleyebilirsiniz `CString` , ancak bu durum beklenmedik sonuçlara neden olabilir.
 
-Aşağıdaki dize sınıfları kümesi ile ya da CRT desteği olmadan, bir MFC Kitaplığı bağlama olmadan kullanılabilir: `CAtlString`, `CAtlStringA`, ve `CAtlStringW`.
+Aşağıdaki dize sınıfları kümesi, CRT desteği olan veya olmayan bir MFC Kitaplığı bağlamadan kullanılabilir: `CAtlString` , `CAtlStringA` ve `CAtlStringW` .
 
-`CString` Yerel projelerinde kullanılır. Yönetilen kod için (C++/CLI) projeleri kullanmak `System::String`.
+`CString`Yerel projelerde kullanılır. Yönetilen kod (C++/CLı) projeleri için kullanın `System::String` .
 
-Daha fazla özellik eklemek için `CString`, `CStringA`, veya `CStringW` şu anda sunar, öğesinin oluşturduğunuz `CStringT` , ek özellikleri içerir.
+, Veya şu anda tekliften daha fazla özellik eklemek için `CString` `CStringA` `CStringW` , ek özellikleri içeren bir alt sınıfı oluşturmalısınız `CStringT` .
 
-Aşağıdaki kod nasıl oluşturulacağını gösterir. bir `CString` ve bunu standart çıktıya yazdırın:
+Aşağıdaki kod, oluşturma `CString` ve standart çıktıya yazdırma işlemlerinin nasıl yapılacağını gösterir:
 
 ```cpp
 #include <atlstr.h>
@@ -44,41 +44,41 @@ int main() {
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Temel CString İşlemleri](../atl-mfc-shared/basic-cstring-operations.md)<br/>
-Temel açıklar `CString` işlemleri, tek karakterler erişme C değişmez değer dizeleri nesneleri oluşturma da dahil olmak üzere bir `CString`, iki nesne birleştirme ve karşılaştırma `CString` nesneleri.
+[Temel CString Işlemleri](../atl-mfc-shared/basic-cstring-operations.md)<br/>
+`CString`C değişmez dizelerinden nesne oluşturma, bir uygulamasındaki tek tek karakterlere erişme, `CString` iki nesneyi birleştirerek ve nesneleri karşılaştırma dahil olmak üzere temel işlemleri açıklar `CString` .
 
 [Dize Veri Yönetimi](../atl-mfc-shared/string-data-management.md)<br/>
-Unicode ve MBCS ile kullanımını açıklar `CString`.
+İle Unicode ve MBCS kullanımını açıklar `CString` .
 
-[CString Semantiği](../atl-mfc-shared/cstring-semantics.md)<br/>
-Açıklayan nasıl `CString` nesnesi kullanılır.
+[CString semantiği](../atl-mfc-shared/cstring-semantics.md)<br/>
+Nesnelerin nasıl `CString` kullanıldığını açıklar.
 
-[C Stili Dizelerle İlgili CString İşlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-Düzenleme içeriğini açıklayan bir `CString` nesne gibi bir C tarzı null ile sonlandırılmış dize.
+[C stili dizeleriyle Ilgili CString Işlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
+Bir `CString` nesnenin Içeriğini C stili null ile sonlandırılmış bir dize gibi düzenleme işlemini açıklar.
 
-[BSTR için Bellek Ayırma ve Serbest Bırakma](../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)<br/>
+[BSTR için bellek ayırma ve serbest bırakma](../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)<br/>
 BSTR ve COM nesneleri için bellek kullanımını açıklar.
 
-[CString Özel Durum Temizleme](../atl-mfc-shared/cstring-exception-cleanup.md)<br/>
-Bu açıkça temizlenmesi MFC 3.0 açıklar ve daha sonra artık gerekli değildir.
+[CString özel durum Temizleme](../atl-mfc-shared/cstring-exception-cleanup.md)<br/>
+MFC 3,0 ve sonrasında açık Temizleme işleminin artık gerekli olmadığını açıklar.
 
-[CString Bağımsız Değişken Geçirme](../atl-mfc-shared/cstring-argument-passing.md)<br/>
-CString nesneleri işlevlere geçirmek nasıl ve nasıl döndürüleceğini açıklar `CString` işlevleri nesneleri.
+[CString bağımsız değişken geçirme](../atl-mfc-shared/cstring-argument-passing.md)<br/>
+CString nesnelerinin işlevlere nasıl geçirileceğini ve işlevlerden nesnelerin nasıl döneceğinizi açıklar `CString` .
 
-[Unicode ve Çok Baytlı Karakter Kümesi (MBCS) Desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
-MFC için Unicode etkinleştirilir ve MBCS desteği nasıl açıklar.
+[Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
+MFC 'nin Unicode ve MBCS desteği için nasıl etkinleştirildiğini açıklar.
 
 ## <a name="reference"></a>Başvuru
 
 [CStringT](../atl-mfc-shared/reference/cstringt-class.md)<br/>
-Hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
+Sınıfı hakkında başvuru bilgileri sağlar `CStringT` .
 
-[CSimpleStringT Sınıfı](../atl-mfc-shared/reference/csimplestringt-class.md)<br/>
-Hakkında başvuru bilgileri sağlar `CSimpleStringT` sınıfı.
+[CSimpleStringT sınıfı](../atl-mfc-shared/reference/csimplestringt-class.md)<br/>
+Sınıfı hakkında başvuru bilgileri sağlar `CSimpleStringT` .
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-Dize verileri yönetmek için çeşitli yollar açıklayan konulara bağlantılar içerir.
+Dize verilerini yönetmenin çeşitli yollarını tanımlayan konuların bağlantılarını içerir.
 
 [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
