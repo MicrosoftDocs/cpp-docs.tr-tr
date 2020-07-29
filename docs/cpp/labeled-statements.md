@@ -5,12 +5,12 @@ helpviewer_keywords:
 - labeled statement
 - statements, labeled
 ms.assetid: 456a26d5-0fcc-4d1a-b71f-fa9ff3d73b91
-ms.openlocfilehash: d971a0e9864aeada1db5f004ef70577512e78c76
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a10d071e46c79f49abf7e3eba498fae0487ccdc7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179698"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213365"
 ---
 # <a name="labeled-statements"></a>Etiketli Deyimler
 
@@ -56,7 +56,7 @@ int main() {
 
 **Goto ekstresi**
 
-Kaynak programdaki bir *tanımlayıcı* etiketinin görünümü bir etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimleri, denetimi bir *tanımlayıcı* etiketine aktarabilir. Aşağıdaki kod parçası, **goto** ifadesinin ve bir *tanımlayıcı* etiketinin kullanımını gösterir:
+Kaynak programdaki bir *tanımlayıcı* etiketinin görünümü bir etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimleri, denetimi bir *tanımlayıcı* etiketine aktarabilir. Aşağıdaki kod parçası **`goto`** deyimin ve *tanımlayıcı* etiketinin kullanımını gösterir:
 
 Etiket kendi başına görünemez, her zaman bir deyime bağlı olmalıdır. Tek başına bir etiket gerekiyorsa, etiketten sonra boş bir deyim koyun.
 
@@ -81,7 +81,7 @@ int main() {
 
 **Case ekstresi**
 
-**Case** anahtar sözcüğünden sonra görünen Etiketler bir **Switch** ifadesinin dışında da görünmeyebilir. (Bu kısıtlama **varsayılan** anahtar sözcüğü için de geçerlidir.) Aşağıdaki kod parçası, **büyük/küçük harf** etiketlerinin doğru kullanımını gösterir:
+Anahtar sözcükten sonra görünen Etiketler **`case`** bir deyimin dışında da yer alamaz **`switch`** . (Bu kısıtlama anahtar sözcüğü için de geçerlidir **`default`** .) Aşağıdaki kod parçası etiketlerin doğru kullanımını gösterir **`case`** :
 
 ```cpp
 // Sample Microsoft Windows message processing loop.
@@ -111,7 +111,7 @@ switch( msg )
 
 ## <a name="labels-in-the-case-statement"></a>Case deyimindeki Etiketler
 
-**Case** anahtar sözcüğünden sonra görünen Etiketler bir **Switch** ifadesinin dışında da görünmeyebilir. (Bu kısıtlama **varsayılan** anahtar sözcüğü için de geçerlidir.) Aşağıdaki kod parçası, **büyük/küçük harf** etiketlerinin doğru kullanımını gösterir:
+Anahtar sözcükten sonra görünen Etiketler **`case`** bir deyimin dışında da yer alamaz **`switch`** . (Bu kısıtlama anahtar sözcüğü için de geçerlidir **`default`** .) Aşağıdaki kod parçası etiketlerin doğru kullanımını gösterir **`case`** :
 
 ```cpp
 // Sample Microsoft Windows message processing loop.
@@ -156,7 +156,7 @@ switch( msg )
 
 ## <a name="labels-in-the-goto-statement"></a>Goto deyimindeki Etiketler
 
-Kaynak programdaki bir *tanımlayıcı* etiketinin görünümü bir etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimleri, denetimi bir *tanımlayıcı* etiketine aktarabilir. Aşağıdaki kod parçası, **goto** ifadesinin ve bir *tanımlayıcı* etiketinin kullanımını gösterir:
+Kaynak programdaki bir *tanımlayıcı* etiketinin görünümü bir etiket bildirir. Yalnızca bir [goto](../cpp/goto-statement-cpp.md) deyimleri, denetimi bir *tanımlayıcı* etiketine aktarabilir. Aşağıdaki kod parçası **`goto`** deyimin ve *tanımlayıcı* etiketinin kullanımını gösterir:
 
 Etiket kendi başına görünemez, her zaman bir deyime bağlı olmalıdır. Tek başına bir etiket gerekiyorsa, etiketten sonra boş bir deyim koyun.
 
@@ -180,5 +180,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)<br/>
-[switch Deyimi (C++)](../cpp/switch-statement-cpp.md)
+[C++ deyimlerine genel bakış](../cpp/overview-of-cpp-statements.md)<br/>
+[Switch deyimleri (C++)](../cpp/switch-statement-cpp.md)

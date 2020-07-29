@@ -27,18 +27,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleT::operator= operator
 - Microsoft::WRL::Wrappers::HandleT::~HandleT, destructor
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
-ms.openlocfilehash: bde7d7f1bd6730d96cb0f7a0d191a32eb8ed3e8c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 661d3cb92b20fc929a9bae3cad7bb55740e5e096
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371461"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213014"
 ---
 # <a name="handlet-class"></a>HandleT Sınıfı
 
-Bir nesneye bir tutamacı temsil eder.
+Bir nesneye olan tanıtıcıyı temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <typename HandleTraits>
@@ -47,51 +47,51 @@ class HandleT;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kulp Özellikleri*<br/>
-[Bir tanıtıcının](handletraits-structure.md) ortak özelliklerini tanımlayan HandleTraits yapısının bir örneği.
+*HandleTraits*<br/>
+Bir tanıtıcının ortak özelliklerini tanımlayan [Handlenitelikleri](handletraits-structure.md) yapısının bir örneği.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Adı     | Açıklama
+Ad     | Açıklama
 -------- | -----------------------------
-`Traits` | Bir eşanlamlı `HandleTraits`.
+`Traits` | İçin bir eş anlamlı `HandleTraits` .
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Adı                                | Açıklama
+Ad                                | Açıklama
 ----------------------------------- | --------------------------------------------------
-[Elek::Handlet](#handlet)        | `HandleT` sınıfının yeni bir örneğini başlatır.
-[Handlet::~Handlet](#tilde-handlet) | Sınıfın bir örneğini `HandleT` deinitialize eder.
+[HandleT:: HandleT](#handlet)        | `HandleT` sınıfının yeni bir örneğini başlatır.
+[HandleT:: ~ HandleT](#tilde-handlet) | Sınıfının bir örneğini kaldırır `HandleT` .
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                         | Açıklama
+Ad                         | Açıklama
 ---------------------------- | ----------------------------------------------------------------------
-[HandleT::Ekle](#attach)   | Belirtilen tutamacı geçerli `HandleT` nesneyle ilişkilendirer.
-[Başa::Kapat](#close)     | Geçerli `HandleT` nesneyi kapatır.
-[Kulp::Detach](#detach)   | Geçerli `HandleT` nesneyi alttaki tutamacından susun.
-[Handlet::Get](#get)         | Dayanak tutamacın değerini alır.
-[Handlet::Geçersiz](#isvalid) | Geçerli `HandleT` nesnenin bir tanıtıcıyı temsil edip etmediğini gösterir.
+[HandleT:: Attach](#attach)   | Belirtilen tanıtıcıyı geçerli `HandleT` nesneyle ilişkilendirir.
+[HandleT:: Close](#close)     | Geçerli nesneyi kapatır `HandleT` .
+[HandleT::D etach](#detach)   | Geçerli `HandleT` nesneyi temeldeki tanıtıcıdan ayırır.
+[HandleT:: Get](#get)         | Temel alınan tanıtıcının değerini alır.
+[HandleT:: IsValid](#isvalid) | Geçerli `HandleT` nesnenin bir tanıtıcıyı temsil edip etmediğini gösterir.
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-Adı                                     | Açıklama
+Ad                                     | Açıklama
 ---------------------------------------- | ------------------------------------
-[Başa::InternalClose](#internalclose) | Geçerli `HandleT` nesneyi kapatır.
+[HandleT:: InternalClose](#internalclose) | Geçerli nesneyi kapatır `HandleT` .
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Adı                                   | Açıklama
+Ad                                   | Açıklama
 -------------------------------------- | ----------------------------------------------------------------------------------
-[HandleT::operator=](#operator-assign) | Belirtilen `HandleT` nesnenin değerini geçerli `HandleT` nesneye taşır.
+[HandleT:: operator =](#operator-assign) | Belirtilen `HandleT` nesnenin değerini geçerli `HandleT` nesneye kaydırır.
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-Adı                        | Açıklama
+Ad                        | Açıklama
 --------------------------- | ----------------------------------------------------------------
-[Başa::handle_](#handle) | `HandleT` Nesne tarafından temsil edilen tutamacı içerir.
+[HandleT:: handle_](#handle) | Nesnesi tarafından temsil edilen tanıtıcıyı içerir `HandleT` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -99,21 +99,21 @@ Adı                        | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="handlethandlet"></a><a name="tilde-handlet"></a>Handlet::~Handlet
+## <a name="handlethandlet"></a><a name="tilde-handlet"></a>HandleT:: ~ HandleT
 
-Sınıfın bir örneğini `HandleT` deinitialize eder.
+Sınıfının bir örneğini kaldırır `HandleT` .
 
 ```cpp
 ~HandleT();
 ```
 
-## <a name="handletattach"></a><a name="attach"></a>HandleT::Ekle
+## <a name="handletattach"></a><a name="attach"></a>HandleT:: Attach
 
-Belirtilen tutamacı geçerli `HandleT` nesneyle ilişkilendirer.
+Belirtilen tanıtıcıyı geçerli `HandleT` nesneyle ilişkilendirir.
 
 ```cpp
 void Attach(
@@ -123,12 +123,12 @@ void Attach(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Bir kulp.
+*olsun*<br/>
+Bir tanıtıcı.
 
-## <a name="handletclose"></a><a name="close"></a>Başa::Kapat
+## <a name="handletclose"></a><a name="close"></a>HandleT:: Close
 
-Geçerli `HandleT` nesneyi kapatır.
+Geçerli nesneyi kapatır `HandleT` .
 
 ```cpp
 void Close();
@@ -136,13 +136,13 @@ void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Akımın altında yatan `HandleT` tutamaç kapatılır `HandleT` ve geçersiz duruma ayarlanır.
+Geçerli olan tanıtıcı `HandleT` kapalıdır ve `HandleT` geçersiz duruma ayarlanır.
 
-Tanıtıcı düzgün kapanmazsa, arama iş parçacığında bir özel durum yükseltilir.
+Tanıtıcı doğru şekilde kapanmazsa, çağıran iş parçacığında bir özel durum oluşturulur.
 
-## <a name="handletdetach"></a><a name="detach"></a>Kulp::Detach
+## <a name="handletdetach"></a><a name="detach"></a>HandleT::D etach
 
-Geçerli `HandleT` nesneyi alttaki tutamacından susun.
+Geçerli `HandleT` nesneyi temeldeki tanıtıcıdan ayırır.
 
 ```cpp
 typename HandleTraits::Type Detach();
@@ -150,15 +150,15 @@ typename HandleTraits::Type Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Altta yatan tutamak.
+Temel alınan tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem tamamlandığında, akım `HandleT` geçersiz duruma ayarlanır.
+Bu işlem tamamlandığında, geçerli `HandleT` durum geçersiz duruma ayarlanır.
 
-## <a name="handletget"></a><a name="get"></a>Handlet::Get
+## <a name="handletget"></a><a name="get"></a>HandleT:: Get
 
-Dayanak tutamacın değerini alır.
+Temel alınan tanıtıcının değerini alır.
 
 ```cpp
 typename HandleTraits::Type Get() const;
@@ -166,17 +166,17 @@ typename HandleTraits::Type Get() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir kulp.
+Bir tanıtıcı.
 
-## <a name="handlethandle_"></a><a name="handle"></a>Başa::handle_
+## <a name="handlethandle_"></a><a name="handle"></a>HandleT:: handle_
 
-`HandleT` Nesne tarafından temsil edilen tutamacı içerir.
+Nesnesi tarafından temsil edilen tanıtıcıyı içerir `HandleT` .
 
 ```cpp
 typename HandleTraits::Type handle_;
 ```
 
-## <a name="handlethandlet"></a><a name="handlet"></a>Elek::Handlet
+## <a name="handlethandlet"></a><a name="handlet"></a>HandleT:: HandleT
 
 `HandleT` sınıfının yeni bir örneğini başlatır.
 
@@ -193,16 +193,16 @@ HandleT(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Bir kulp.
+*olsun*<br/>
+Bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu, bir `HandleT` nesneye geçerli bir tutamacı olmayan bir nesneyi başharfe alerler. İkinci oluşturucu `HandleT` *h*parametresinden yeni bir nesne oluşturur.
+İlk Oluşturucu bir `HandleT` nesne için geçerli bir tanıtıcı olmayan bir nesne başlatır. İkinci Oluşturucu h parametresinden yeni bir `HandleT` nesne oluşturur. *h*
 
-## <a name="handletinternalclose"></a><a name="internalclose"></a>Başa::InternalClose
+## <a name="handletinternalclose"></a><a name="internalclose"></a>HandleT:: InternalClose
 
-Geçerli `HandleT` nesneyi kapatır.
+Geçerli nesneyi kapatır `HandleT` .
 
 ```cpp
 virtual bool InternalClose();
@@ -210,13 +210,13 @@ virtual bool InternalClose();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-geçerli `HandleT` başarıyla kapalı ise **doğru;** aksi takdirde, **yanlış**.
+**`true`** geçerli bir `HandleT` şekilde kapatılırsa, aksi durumda, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InternalClose()``protected`.
+`InternalClose()`**`protected`**.
 
-## <a name="handletisvalid"></a><a name="isvalid"></a>Handlet::Geçersiz
+## <a name="handletisvalid"></a><a name="isvalid"></a>HandleT:: IsValid
 
 Geçerli `HandleT` nesnenin bir tanıtıcıyı temsil edip etmediğini gösterir.
 
@@ -226,11 +226,11 @@ bool IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**bir** tutamacı `HandleT` temsil ederse doğrudur; aksi takdirde, **yanlış**.
+**`true`** Eğer Eğer `HandleT` bir tanıtıcıyı temsil ediyorsa, tersi durumda **`false`** .
 
-## <a name="handletoperator"></a><a name="operator-assign"></a>HandleT::operator=
+## <a name="handletoperator"></a><a name="operator-assign"></a>HandleT:: operator =
 
-Belirtilen `HandleT` nesnenin değerini geçerli `HandleT` nesneye taşır.
+Belirtilen `HandleT` nesnenin değerini geçerli `HandleT` nesneye kaydırır.
 
 ```cpp
 HandleT& operator=(
@@ -240,13 +240,13 @@ HandleT& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Bir tanıtıcıya rvalue-reference.
+*olsun*<br/>
+Bir tanıtıcıya bir rvalue başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli `HandleT` nesneye bir başvuru.
+Geçerli nesneye bir başvuru `HandleT` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu *işlem,* h `HandleT` parametresi ile belirtilen nesneyi geçersiz kılarak
+Bu işlem `HandleT` *h*parametresi tarafından belirtilen nesneyi geçersiz kılar.

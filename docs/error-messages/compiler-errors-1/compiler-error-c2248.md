@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2248
 ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
-ms.openlocfilehash: 843676638037aab9544f1fbd8c5c6d56d351e485
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d35ded4b06423be53911f3efd0b55d75cb979773
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80206565"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212819"
 ---
 # <a name="compiler-error-c2248"></a>Derleyici hatası C2248
 
 '*üye*': '*Class*' sınıfında belirtilen '*access_level*' üyesine erişilemiyor
 
-Türetilmiş bir sınıfın üyeleri bir temel sınıfın `private` üyelerine erişemez. Sınıf örneklerinin `private` veya `protected` üyelerine erişemezsiniz.
+Türetilmiş bir sınıfın üyeleri **`private`** bir temel sınıfın üyelerine erişemez. **`private`** Sınıf örneklerine erişemez veya **`protected`** üye ekleyemezsiniz.
 
 ## <a name="example"></a>Örnek
 
@@ -51,7 +51,7 @@ int main() {
 }
 ```
 
-C2248 sunan başka bir uyumluluk sorunu, şablon arkadaşları ve özelleştirmesi 'nın kullanımı. Bu sorunu onarmak için, < > veya belirli şablon parametrelerini boş bir şablon parametre listesi kullanarak arkadaş şablon işlevleri bildirin.
+C2248 sunan başka bir uyumluluk sorunu, şablon arkadaşları ve özelleştirmesi 'nın kullanımı. Bu sorunu onarmak için, bir boş şablon parametre listesi <> veya belirli şablon parametrelerini kullanarak arkadaş şablon işlevleri bildirin.
 
 ```cpp
 // C2248_template.cpp

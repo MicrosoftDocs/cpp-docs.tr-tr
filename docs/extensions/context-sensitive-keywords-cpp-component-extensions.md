@@ -1,5 +1,5 @@
 ---
-title: Bağlama duyarlı anahtar sözcükler (C++/CLI ve C++/CX)
+title: Bağlama Duyarlı Anahtar Sözcükler (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - context-sensitive keywords
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-ms.openlocfilehash: 53fcaf13eb56ae14841861bffd1a29376304b8d6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 82bf4c3f0deed788b7b1e50f1d8d82e63dc27f6f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182181"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219760"
 ---
-# <a name="context-sensitive-keywords--ccli-and-ccx"></a>Bağlama duyarlı anahtar sözcükler (C++/CLI ve C++/CX)
+# <a name="context-sensitive-keywords--ccli-and-ccx"></a>Bağlama Duyarlı Anahtar Sözcükler (C++/CLI ve C++/CX)
 
 *Bağlama duyarlı anahtar sözcükler* yalnızca belirli bağlamlarda tanınan dil öğeleridir. Belirli bağlam dışında, bağlama duyarlı bir anahtar sözcük Kullanıcı tanımlı bir sembol olabilir.
 
@@ -24,11 +24,11 @@ ms.locfileid: "80182181"
 
 Aşağıda, bağlama duyarlı anahtar sözcüklerin bir listesi verilmiştir:
 
-- [abstract](abstract-cpp-component-extensions.md)
+- [Soyut](abstract-cpp-component-extensions.md)
 
-- [delegate](delegate-cpp-component-extensions.md)
+- [ğini](delegate-cpp-component-extensions.md)
 
-- [event](event-cpp-component-extensions.md)
+- [olay](event-cpp-component-extensions.md)
 
 - [finally](../dotnet/finally.md)
 
@@ -38,15 +38,15 @@ Aşağıda, bağlama duyarlı anahtar sözcüklerin bir listesi verilmiştir:
 
 - `internal`
 
-- [değişmez değer](literal-cpp-component-extensions.md)
+- [ayarını](literal-cpp-component-extensions.md)
 
 - [override](override-cpp-component-extensions.md)
 
-- [property](property-cpp-component-extensions.md)
+- [özelliði](property-cpp-component-extensions.md)
 
 - [sealed](sealed-cpp-component-extensions.md)
 
-- `where` ( [genel](generics-cpp-component-extensions.md)türlerin parçası)
+- `where`( [genel](generics-cpp-component-extensions.md)türlerin parçası)
 
 Okunabilirlik amacıyla, bağlama duyarlı anahtar sözcüklerinizi Kullanıcı tanımlı semboller olarak sınırlamak isteyebilirsiniz.
 
@@ -58,7 +58,7 @@ Okunabilirlik amacıyla, bağlama duyarlı anahtar sözcüklerinizi Kullanıcı 
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -68,11 +68,11 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, uygun bağlamda **özellik** bağlamı duyarlı anahtar sözcüğünün bir özelliği ve değişkeni tanımlamak için kullanılabileceğini gösterir.
+Aşağıdaki kod örneği, uygun bağlamda, **`property`** bağlam duyarlı anahtar sözcüğünün bir özelliği ve bir değişkeni tanımlamak için kullanılabileceğini gösterir.
 
 ```cpp
 // context_sensitive_keywords.cpp
@@ -101,4 +101,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

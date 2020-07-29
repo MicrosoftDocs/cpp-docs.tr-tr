@@ -1,62 +1,62 @@
 ---
-title: 'İzlenecek yol: Bir projenin (C++)'
+title: 'İzlenecek Yol: Proje Hatalarını Ayıklama (C++)'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - projects [C++], debugging
 - project debugging [C++]
 - debugging projects
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
-ms.openlocfilehash: ce792345b045a1e647de6363ca094fb3f3826b73
-ms.sourcegitcommit: 8bb2bea1384b290b7570b01608a86c7488ae7a02
+ms.openlocfilehash: 61433213619c16caf67de905a6da93c7360db298
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67400970"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219683"
 ---
-# <a name="walkthrough-debugging-a-project-c"></a>İzlenecek yol: Bir projenin (C++)
+# <a name="walkthrough-debugging-a-project-c"></a>İzlenecek Yol: Proje Hatalarını Ayıklama (C++)
 
-Bu izlenecek yolda, proje sınandığında bulunan sorunu gidermek için programı değiştirin.
+Bu kılavuzda, projeyi test ettiğinizde bulduğunuz sorunu gidermek için programı değiştirirsiniz.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Bu izlenecek yol, C++ dili temellerini anladığınızı varsayar.
+- Bu izlenecek yol, C++ dilinin temellerini anladığınızı varsayar.
 
-- Ayrıca, listelenen önceki izlenecek yolları tamamladığınız varsayılır [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md).
+- Ayrıca [, C++ masaüstü geliştirme Için Visual STUDIO IDE 'Yi kullanma](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)bölümünde listelenen daha önceki ilgili talimatları tamamlamış olduğunu varsaymaktadır.
 
-### <a name="to-fix-a-program-that-has-a-bug"></a>Bir hata olan bir program düzeltmek için
+### <a name="to-fix-a-program-that-has-a-bug"></a>Hata içeren bir programı onarmak için
 
-1. Ne olacağını görmek için bir `Cardgame` nesnesi yok edildiğinde, yok Edicisi görüntüleme `Cardgame` sınıfı.
+1. Bir nesne yok edildiğinde ne olduğunu görmek için `Cardgame` , sınıf için yıkıcıyı görüntüleyin `Cardgame` .
 
-   Menü çubuğunda, **görünümü** > **sınıf görünümü**.
+   Menü çubuğunda sınıf görünümü **görüntüle**' yi seçin  >  **Class View**.
 
-   İçinde **sınıf görünümü** penceresinde genişletin **Game** proje ağacı ve seçin **Cardgame** yöntemleri ve sınıf üyeleri görüntülemek için sınıf.
+   **Sınıf görünümü** penceresinde, **oyun** projesi ağacını genişletin ve sınıf üyelerini ve yöntemlerini göstermek için **Cardgame** sınıfını seçin.
 
-   Kısayol menüsünü açın **~Cardgame(void)** yıkıcı ve ardından **tanıma**.
+   **~ Cardgame (void)** yıkıcısı için kısayol menüsünü açın ve ardından **Tanıma Git**' i seçin.
 
-1. Azaltmak için `totalParticipants` bir Cardgame sona erdiğinde, açılış ve kapanış küme ayraçlarını arasına aşağıdaki kodu ekleyin `Cardgame::~Cardgame` yıkıcı.
+1. `totalParticipants`Bir Cardgame 'in ne zaman sona ereceğini azaltmak için, yok edicinin açılış ve kapanış ayraçları arasına aşağıdaki kodu ekleyin `Cardgame::~Cardgame` .
 
    [!code-cpp[NVC_Walkthrough_Debugging_A_Project#110](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_1.cpp)]
 
-1. Siz değiştirdikten sonra aşağıdaki kodu Cardgame.cpp dosya benzemelidir:
+1. Cardgame. cpp dosyası, değiştirdikten sonra aşağıdaki koda benzemelidir:
 
    [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
 
-1. Menü çubuğunda, **derleme** > **Çözümü Derle**.
+1. Menü **çubuğunda Build**  >  **Build Solution**öğesini seçin.
 
-1. Derleme tamamlandığında, çalıştırma, hata ayıklama modunda seçerek **hata ayıklama** > **hata ayıklamayı Başlat** seçerek veya menü çubuğunda **F5** anahtarı. Program ilk kesme noktasında duraklatılır.
+1. Oluşturma tamamlandığında, menü çubuğunda Hata **Ayıkla**  >  **Başlat** ' ı seçerek veya **F5** tuşunu seçerek bunu hata ayıklama modunda çalıştırın. Program ilk kesme noktasında duraklatılır.
 
-1. Menü çubuğunda, program aracılığıyla adım tercih **hata ayıklama** > **Step Over**, ya da seçin **F10** anahtarı.
+1. Programda ilerlemek için, menü çubuğunda **Hata Ayıkla**  >  **adımlayın**' i seçin veya **F10** tuşunu seçin.
 
-   Her birinden sonra dikkat `Cardgame` Oluşturucusu yürütülmeden, değerini `totalParticipants` artırır. Zaman `PlayGames` işlevi tarafından döndürülen her `Cardgame` örneği kapsam dışına gider ve silindi (ve yok Edicisi çağrılır) `totalParticipants` azaltır. Hemen önce `return` deyimi yürütüldüğünde, `totalParticipants` 0 değerine eşittir.
+   Her bir `Cardgame` Oluşturucu yürütüldükten sonra, artış değeri olduğuna dikkat edin `totalParticipants` . İşlev döndürüldüğünde `PlayGames` , her `Cardgame` örnek kapsam dışına çıkar ve silinir (ve yıkıcı çağrıldığında), `totalParticipants` azalır. **`return`** Deyimden hemen önce, 0 ' a `totalParticipants` eşittir.
 
-1. Çıkana kadar adımlarken devam veya seçerek çalışmasına izin **hata ayıklama** > **çalıştırma** seçerek veya menü çubuğunda **F5** anahtarı.
+1. Programdan çıkana kadar devam edin veya menü çubuğunda **Hata Ayıkla**  >  **Çalıştır** ' ı seçerek veya **F5** tuşunu seçerek çalışmasına izin verin.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [İzlenecek yol: Projeyi Test Etme (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
-**Sonraki:** [İzlenecek yol: Programınızı Dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)
+**Previous:** [Izlenecek yol: projeyi test etme (C++)](../ide/walkthrough-testing-a-project-cpp.md)<br/>
+**Sonraki:** [Izlenecek yol: programınızı dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)<br/>
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)<br/>
 [Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>

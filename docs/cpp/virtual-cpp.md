@@ -10,18 +10,18 @@ helpviewer_keywords:
 - virtual functions [C++], declaring
 - virtual keyword [C++]
 ms.assetid: c2eb987d-6cf3-43b6-aa0c-29a6f561b1ae
-ms.openlocfilehash: a8948594bade940834e041adc73d56cc7847acc0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3477f77b811d8bec09b63664a05a4e251214aefa
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187511"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213131"
 ---
 # <a name="virtual-c"></a>virtual (C++)
 
-**Sanal** anahtar sözcüğü bir sanal işlev veya bir sanal temel sınıf bildirir.
+**`virtual`** Anahtar sözcüğü bir sanal işlev veya bir sanal temel sınıf bildirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 virtual [type-specifiers] member-function-declarator
@@ -37,7 +37,7 @@ Sanal üye işlevinin dönüş türünü belirtir.
 Bir üye işlevi bildirir.
 
 *erişim Belirleyicisi*<br/>
-Taban sınıfına, **genel**, **korumalı** veya **özel**erişim düzeyini tanımlar. **Sanal** anahtar sözcüğünden önce veya sonra görünebilir.
+, Veya temel sınıfına erişim düzeyini tanımlar **`public`** **`protected`** **`private`** . Anahtar sözcüğünden önce veya sonra görünebilir **`virtual`** .
 
 *taban sınıfı adı*<br/>
 Önceden tanımlanmış bir sınıf türünü tanımlar.
@@ -50,4 +50,4 @@ Ayrıca şu anahtar sözcüklere bakın: [sınıf](../cpp/class-cpp.md), [özel]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

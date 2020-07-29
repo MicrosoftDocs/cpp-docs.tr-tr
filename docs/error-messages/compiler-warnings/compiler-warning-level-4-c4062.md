@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4062
 ms.assetid: 36d1c6ae-c917-4b08-bf30-2eb49ee94169
-ms.openlocfilehash: 79658afc31565b708cdbd8a88f49b887cdd10cf3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: efe021c9994e20f2630e31537bcc6099783b4308
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62401416"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220008"
 ---
 # <a name="compiler-warning-level-4-c4062"></a>Derleyici Uyarısı (düzey 4) C4062
 
-> Numaralandırıcı '*tanımlayıcı*'numaralandırıcısının switch' ın*numaralandırma*' işlenmezse
+> '*Enumeration*' numaralandırmasının anahtarındaki Numaralandırıcı '*Identifier*' işlenmiyor
 
-Numaralandırıcı *tanımlayıcı* yok ilişkili `case` işleyicisinde bir `switch` deyimi ve hiçbir `default` yakalamak etiket. Eksik servis talebi bir gözetim olabilir ve kodunuzdaki olası bir hatadır. İlgili bir uyarı kullanılmayan numaralandırıcılar üzerinde `switch` sahip deyimleri bir `default` durumda bkz [C4061](compiler-warning-level-4-c4061.md).
+Numaralandırıcı *tanımlayıcısının* `case` bir ifadede ilişkili işleyicisi yok **`switch`** ve **`default`** bunu yakalayasağlayan bir etiket yok. Eksik durum, hatalı bir bakış olabilir ve kodunuzda olası bir hatadır. Büyük/küçük harfli olmayan ifadelerde kullanılmayan numaralandırıcılara ilişkin ilgili uyarı için **`switch`** **`default`** bkz. [C4061](compiler-warning-level-4-c4061.md).
 
-Varsayılan olarak bu uyarıyı kapalıdır. Varsayılan olarak kapalı olan uyarıları etkinleştirme hakkında daha fazla bilgi için bkz. [derleyici uyarıları, olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
+Bu uyarı varsayılan olarak kapalıdır. Varsayılan olarak kapalı olan uyarıların nasıl etkinleştirileceği hakkında daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4062 oluşturur ve bu sorunun nasıl gösterir:
+Aşağıdaki örnek C4062 oluşturur ve nasıl düzeltileceğini gösterir:
 
 ```cpp
 // C4062.cpp

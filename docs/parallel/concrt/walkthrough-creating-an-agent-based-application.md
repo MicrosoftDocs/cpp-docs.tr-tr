@@ -5,154 +5,154 @@ helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 20197786e3d3c2d34d29af748c1cc073902cf70d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4e67b3fc3363955ae02973847912c021eca95ded
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377453"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219488"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 
-Bu konu, temel aracı tabanlı bir uygulamanın nasıl oluşturulacağını açıklar. Bu izne, metin dosyasındaki verileri eşit bir şekilde okuyan bir aracı oluşturabilirsiniz. Uygulama, bu dosyanın içeriğinin denetimini hesaplamak için Adler-32 checksum algoritmasını kullanır.
+Bu konu, temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını açıklamaktadır. Bu kılavuzda, bir metin dosyasından verileri zaman uyumsuz olarak okuyan bir aracı oluşturabilirsiniz. Uygulama, bu dosyanın içeriğinin sağlama toplamını hesaplamak için Adler-32 sağlama algoritmasını kullanır.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
-Bu gözden geçirmeyi tamamlamak için aşağıdaki konuları anlamanız gerekir:
+Bu izlenecek yolu tamamlamak için aşağıdaki konuları anlamanız gerekir:
 
-- [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
+- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)
 
-- [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)
+- [Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
-- [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)
+- [İleti geçirme Işlevleri](../../parallel/concrt/message-passing-functions.md)
 
-- [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)
+- [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="sections"></a><a name="top"></a>Bölüm
+## <a name="sections"></a><a name="top"></a>Başlıklı
 
-Bu izlik, aşağıdaki görevlerin nasıl gerçekleştirildirilebildiğini gösterir:
+Bu izlenecek yol, aşağıdaki görevlerin nasıl gerçekleştirileceğini göstermektedir:
 
 - [Konsol Uygulaması Oluşturma](#createapplication)
 
-- [file_reader Sınıfı Oluşturma](#createagentclass)
+- [File_reader sınıfı oluşturma](#createagentclass)
 
-- [Uygulamada file_reader Sınıfını Kullanma](#useagentclass)
+- [Uygulamada file_reader sınıfını kullanma](#useagentclass)
 
-## <a name="creating-the-console-application"></a><a name="createapplication"></a>Konsol Uygulamasını Oluşturma
+## <a name="creating-the-console-application"></a><a name="createapplication"></a>Konsol uygulaması oluşturma
 
-Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvurulan bir C++ konsol uygulamasının nasıl oluşturulacağı gösterilmektedir. İlk adımlar Visual Studio'nun hangi sürümünü kullandığınıza bağlı olarak değişir. Visual Studio'nun tercih ettiğiniz sürümüiçin belgeleri görmek için **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir C++ konsol uygulamasının nasıl oluşturulacağı gösterilmektedir. İlk adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker range="vs-2019"
 
-### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>Visual Studio 2019'da C++ konsol uygulaması oluşturmak için
+### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir C++ konsol uygulaması oluşturmak için
 
-1. Ana menüden, **Yeni Proje Oluştur** iletişim kutusunu açmak için **Yeni** > **Proje** **Dosyası'nı** > seçin.
+1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **Dil'i** **C++** olarak ayarlayın, **Platform'u** **Windows'a**ayarlayın ve **Project türünü** **Konsol'a**ayarlayın.
+1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **Konsol Uygulaması'nı** seçin ve **ardından İleri'yi**seçin. Sonraki sayfada, projenin `BasicAgent` adı olarak girin ve istenirse proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, `BasicAgent` projenin adı olarak girin ve isterseniz proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
-1. **Çözüm Gezgini'ndeki**proje düğümüne sağ tıklayın ve **Özellikler'i**seçin. **Yapılandırma Özellikleri** > **Altında C/C++** > **Önceden Derlenmiş Üstbilgi** > **Önceden Derlenmiş üstbilgi** **oluştur'u**seçin.
+1. **Çözüm Gezgini**' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma özellikleri**  >  **C/C++**  >  **önceden derlenmiş üst**  >  **bilgi üst bilgisi ön** **Create**
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>Visual Studio 2017 ve önceki yıllarda C++ konsol uygulaması oluşturmak için
+### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>Visual Studio 2017 ve önceki sürümlerde bir C++ konsol uygulaması oluşturmak için
 
-1. **Dosya** menüsünde **Yeni'yi**tıklatın ve ardından **Yeni Proje** iletişim kutusunu görüntülemek için **Project'i** tıklatın.
+1. **Dosya** menüsünde **Yeni**' ye ve ardından **Proje** ' ye tıklayarak **Yeni proje** iletişim kutusunu görüntüleyin.
 
-1. Yeni **Proje** iletişim kutusunda, **Proje türleri** bölmesinde **Visual C++** düğümünü seçin ve ardından **Şablonlar** bölmesinde **Win32 Konsol Uygulaması'nı** seçin. Örneğin `BasicAgent`proje için bir ad yazın ve **Win32 Konsol Uygulama Sihirbazı'nı**görüntülemek için **Tamam'ı** tıklatın.
+1. **Yeni proje** iletişim kutusunda, **proje türleri** bölmesinde **Visual C++** düğümünü seçin ve ardından **Şablonlar** bölmesinde **Win32 konsol uygulaması** ' nı seçin. Proje için bir ad yazın, örneğin, `BasicAgent` ve ardından **Win32 konsol uygulaması sihirbazını**göstermek için **Tamam** ' a tıklayın.
 
-1. **Win32 Konsol Uygulama Sihirbazı** iletişim kutusunda **Finish'i**tıklatın.
+1. **Win32 konsol uygulaması Sihirbazı** Iletişim kutusunda **son**' a tıklayın.
 
 ::: moniker-end
 
-1. *Pch.h* (Visual Studio 2017 ve önceki*stdafx.h)* olarak aşağıdaki kodu ekleyin:
+1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ), aşağıdaki kodu ekleyin:
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
-   Üstbilgi dosyası aracıları.h eşzamanlılık işlevselliğini [içerir::aracı](../../parallel/concrt/reference/agent-class.md) sınıfı.
+   Agents. h üstbilgi dosyası, [concurrency:: Agent](../../parallel/concrt/reference/agent-class.md) sınıfının işlevlerini içerir.
 
-1. Uygulamanın oluşturularak ve çalıştırılarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı oluşturmak için **Yapı** menüsünde **Çözüm Oluştur'u**tıklatın. Uygulama başarılı bir şekilde yapılsa, **Hata Ayıklama** Başlat menüsünde **Hata Ayıklama başlat'ı** tıklatarak uygulamayı çalıştırın.
+1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur**' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
 
 [[Üst](#top)]
 
-## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a>file_reader Sınıfı Oluşturma
+## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a>File_reader sınıfı oluşturma
 
-Bu bölümde `file_reader` sınıf nasıl oluşturulacak gösterilmektedir. Çalışma zamanı, her aracının çalışmayı kendi bağlamında gerçekleştirmesini zamanlar. Bu nedenle, işi eşzamanlı olarak gerçekleştiren, ancak diğer bileşenlerle eşzamanlı olarak etkileşimde bulunan bir aracı oluşturabilirsiniz. Sınıf, `file_reader` belirli bir giriş dosyasındaki verileri okur ve bu dosyadaki verileri belirli bir hedef bileşene gönderir.
+Bu bölümde sınıfının nasıl oluşturulacağı gösterilmektedir `file_reader` . Çalışma zamanı, her aracıyı kendi bağlamında iş gerçekleştirecek şekilde zamanlar. Bu nedenle, işi zaman uyumlu olarak gerçekleştiren, ancak diğer bileşenleriyle zaman uyumsuz olarak etkileşim kuran bir aracı oluşturabilirsiniz. `file_reader`Sınıfı, belirli bir giriş dosyasından verileri okur ve bu dosyadaki verileri belirli bir hedef bileşene gönderir.
 
 #### <a name="to-create-the-file_reader-class"></a>File_reader sınıfını oluşturmak için
 
-1. Projenize yeni bir C++ üstbilgi dosyası ekleyin. Bunu yapmak için, **Çözüm Gezgini'ndeki** **Üstbilgi Dosyaları** düğümüne sağ tıklayın, **Ekle'yi**tıklatın ve ardından **Yeni Öğe'yi**tıklatın. **Şablonlar** bölmesinde **Üstbilgi Dosyası (.h)** seçeneğini belirleyin. Yeni **Öğe Ekle** iletişim kutusunda `file_reader.h` Ad **kutusuna** yazın ve sonra **Ekle'yi**tıklatın.
+1. Projenize yeni bir C++ üst bilgi dosyası ekleyin. Bunu yapmak için **Çözüm Gezgini**' deki **üstbilgi dosyaları** düğümüne sağ tıklayın, **Ekle**' ye ve ardından **Yeni öğe**' ye tıklayın. **Şablonlar** bölmesinde **üst bilgi dosyası (. h)** öğesini seçin. **Yeni öğe Ekle** iletişim kutusunda, `file_reader.h` **ad** kutusuna yazın ve ardından **Ekle**' ye tıklayın.
 
-1. file_reader.h olarak, aşağıdaki kodu ekleyin.
+1. File_reader. h 'de aşağıdaki kodu ekleyin.
 
 [!code-cpp[concrt-basic-agent#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_2.h)]
 
-1. file_reader.h'de, `file_reader` `agent`'den türeyen bir sınıf oluşturun.
+1. File_reader. h 'de, öğesinden türetilen adlı bir sınıf oluşturun `file_reader` `agent` .
 
 [!code-cpp[concrt-basic-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_3.h)]
 
-1. Aşağıdaki veri üyelerini sınıfınızın bölümüne `private` ekleyin.
+1. Aşağıdaki veri üyelerini **`private`** sınıfınızın bölümüne ekleyin.
 
 [!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
 
-   Üye, `_file_name` aracının okuduğu dosya adıdır. `_target` Üye bir [eşzamanlılık::ITarget](../../parallel/concrt/reference/itarget-class.md) nesnesi aracısı dosyanın içeriğini yazar. Üye, `_error` aracının ömrü boyunca meydana gelen herhangi bir hatayı tutar.
+   `_file_name`Üye, aracının okuduğu dosya adıdır. `_target`Üye, aracının dosyanın içeriğini yazdığı bir [concurrency:: ITarget](../../parallel/concrt/reference/itarget-class.md) nesnesidir. `_error`Üye, aracının ömrü boyunca oluşan tüm hataları barındırır.
 
-1. Sınıfın `file_reader` `public` bölümüne oluşturucular için aşağıdaki kodu ekleyin. `file_reader`
+1. `file_reader`Oluşturucularının sınıfının bölümüne aşağıdaki kodu ekleyin **`public`** `file_reader` .
 
 [!code-cpp[concrt-basic-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_5.h)]
 
-   Her yapıcı veya aşırı `file_reader` yük veri üyelerini ayarlar. İkinci ve üçüncü yapıcı aşırı yükleme, uygulamanızın aracınızla belirli bir zamanlayıcı kullanmasını sağlar. İlk aşırı yükleme aracınızla birlikte varsayılan zamanlayıcıyı kullanır.
+   Her bir Oluşturucu aşırı yüklemesi, `file_reader` veri üyelerini ayarlar. İkinci ve üçüncü Oluşturucu aşırı yüklemesi, uygulamanızın aracısıyla belirli bir Zamanlayıcı kullanmasını sağlar. İlk aşırı yükleme, aracılarınız ile varsayılan zamanlayıcıyı kullanır.
 
-1. `get_error` Yöntemi `file_reader` sınıfın ortak bölümüne ekleyin.
+1. `get_error`Yöntemini sınıfının genel bölümüne ekleyin `file_reader` .
 
 [!code-cpp[concrt-basic-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_6.h)]
 
-   Yöntem, `get_error` aracının ömrü boyunca oluşan herhangi bir hatayı alır.
+   `get_error`Yöntemi, aracının ömrü boyunca oluşan tüm hataları alır.
 
-1. [Eşzamanlılık uygulayın::agent::sınıfının](reference/agent-class.md#run) `protected` bölümünde çalıştır yöntemi.
+1. Sınıfınızın bölümünde [concurrency:: Agent:: Run](reference/agent-class.md#run) yöntemini uygulayın **`protected`** .
 
 [!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_7.h)]
 
-Yöntem `run` dosyayı açar ve dosyadaki verileri okur. Yöntem, `run` dosya işleme sırasında oluşan hataları yakalamak için özel durum işleme kullanır.
+`run`Yöntemi dosyayı açar ve verileri okur. `run`Yöntemi, dosya işleme sırasında oluşan hataları yakalamak için özel durum işlemeyi kullanır.
 
-   Bu yöntem dosyadaki verileri her okuduğunda, [eşzamanlılığı çağırır::bu](reference/concurrency-namespace-functions.md#asend) verileri hedef arabelleğe göndermek için asend işlevi. İşlemin sonunu belirtmek için boş dizeyi hedef arabellesine gönderir.
+   Bu yöntemin dosyadaki verileri okuduğu her seferinde, bu verileri hedef arabelleğe göndermek için [concurrency:: asend](reference/concurrency-namespace-functions.md#asend) işlevini çağırır. İşlemin sonunu belirtmek için boş dizeyi hedef arabelleğine gönderir.
 
-Aşağıdaki örnek, file_reader.h.'nin tüm içeriğini gösterir.
+Aşağıdaki örnek file_reader. h öğesinin tüm içeriğini gösterir.
 
 [!code-cpp[concrt-basic-agent#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_8.h)]
 
 [[Üst](#top)]
 
-## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a>Uygulamada file_reader Sınıfını Kullanma
+## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a>Uygulamada file_reader sınıfını kullanma
 
-Bu bölümde, bir `file_reader` metin dosyasının içeriğini okumak için sınıfın nasıl kullanılacağı gösterilmektedir. Ayrıca eşzamanlılık nasıl oluşturulacak [gösterir::bu](../../parallel/concrt/reference/call-class.md) dosya verilerini alan ve Adler-32 checksum hesaplar çağrı nesnesi.
+Bu bölümde, `file_reader` bir metin dosyasının içeriğini okumak için sınıfının nasıl kullanılacağı gösterilmektedir. Ayrıca, bu dosya verilerini alan ve Adler-32 sağlama toplamını hesaplayan bir [concurrency:: Call](../../parallel/concrt/reference/call-class.md) nesnesinin nasıl oluşturulacağını gösterir.
 
 #### <a name="to-use-the-file_reader-class-in-your-application"></a>File_reader sınıfını Uygulamanızda kullanmak için
 
-1. BasicAgent.cpp'de aşağıdaki `#include` ifadeyi ekleyin.
+1. BasicAgent. cpp içinde aşağıdaki `#include` ifadeyi ekleyin.
 
 [!code-cpp[concrt-basic-agent#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_9.cpp)]
 
-1. BasicAgent.cpp'de aşağıdaki `using` yönergeleri ekleyin.
+1. BasicAgent. cpp içinde aşağıdaki **`using`** yönergeleri ekleyin.
 
 [!code-cpp[concrt-basic-agent#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_10.cpp)]
 
-1. İşlevde, `_tmain` işlemin sonunu işaret eden bir [eşzamanlılık::olay](../../parallel/concrt/reference/event-class.md) nesnesi oluşturun.
+1. `_tmain`İşlevinde, işleme sonuna işaret eden bir [eşzamanlılık:: Event](../../parallel/concrt/reference/event-class.md) nesnesi oluşturun.
 
 [!code-cpp[concrt-basic-agent#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_11.cpp)]
 
-1. Veri `call` aldığında checksum güncelleyen bir nesne oluşturun.
+1. `call`Veri aldığında sağlama toplamını güncelleştiren bir nesne oluşturun.
 
 [!code-cpp[concrt-basic-agent#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_12.cpp)]
 
-   Bu `call` nesne, `event` işlemenin sonunu işaret etmek için boş dize aldığında da nesneyi ayarlar.
+   Bu `call` nesne, `event` işleme sonuna işaret etmek üzere boş dizeyi aldığında nesneyi de ayarlar.
 
-1. Test.txt dosyasından okuyan ve dosyanın içeriğini `file_reader` `call` nesneye yazan bir nesne oluşturun.
+1. `file_reader`test.txt dosyadan okuyan bir nesne oluşturun ve bu dosyanın içeriğini `call` nesnesine yazar.
 
 [!code-cpp[concrt-basic-agent#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_13.cpp)]
 
@@ -160,15 +160,15 @@ Bu bölümde, bir `file_reader` metin dosyasının içeriğini okumak için sın
 
 [!code-cpp[concrt-basic-agent#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_14.cpp)]
 
-1. Nesnenin `call` tüm verileri almasını ve bitirmesini bekleyin.
+1. `call`Nesnenin tüm verileri almasını ve tamamlamasını bekleyin.
 
 [!code-cpp[concrt-basic-agent#14](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_15.cpp)]
 
-1. Hataolup etmeyin dosya okuyucuyu denetleyin. Hata oluştuysa, son Adler-32 toplamını hesaplayın ve toplamı konsola yazdırın.
+1. Hatalar için dosya okuyucuyu denetleyin. Bir hata oluşmazsa, son Adler-32 toplamını hesaplayın ve toplamı konsola yazdırın.
 
 [!code-cpp[concrt-basic-agent#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_16.cpp)]
 
-Aşağıdaki örnek, BasicAgent.cpp dosyasının tamamını gösterir.
+Aşağıdaki örnekte, tüm BasicAgent. cpp dosyası gösterilmektedir.
 
 [!code-cpp[concrt-basic-agent#16](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_17.cpp)]
 
@@ -176,7 +176,7 @@ Aşağıdaki örnek, BasicAgent.cpp dosyasının tamamını gösterir.
 
 ## <a name="sample-input"></a>Örnek Giriş
 
-Bu giriş dosyası text.txt örnek içeriği:
+Bu, giriş dosyasının örnek içeriğidir text.txt:
 
 ```Output
 The quick brown fox
@@ -186,7 +186,7 @@ over the lazy dog
 
 ## <a name="sample-output"></a>Örnek Çıktı
 
-Örnek girişi ile kullanıldığında, bu program aşağıdaki çıktıyı üretir:
+Örnek girişle birlikte kullanıldığında, bu program aşağıdaki çıktıyı üretir:
 
 ```Output
 Adler-32 sum is fefb0d75
@@ -194,18 +194,18 @@ Adler-32 sum is fefb0d75
 
 ## <a name="robust-programming"></a>Güçlü Programlama
 
-Veri üyelerine eşzamanlı erişimi önlemek için, çalışma gerçekleştiren yöntemleri `protected` sınıfınızın bölümüne eklemenizi `private` öneririz. Yalnızca aracıya veya aracıdan sınıfınızın `public` bölümüne ileti gönderen veya alan yöntemler ekleyin.
+Veri üyelerine eşzamanlı erişimi engellemek için, **`protected`** sınıfınızın veya bölümüne iş yapan Yöntemler eklemenizi öneririz **`private`** . Yalnızca, aracıınızın bölümüne veya aracıdan ileti gönderen ya da alan yöntemler ekleyin **`public`** .
 
-Aracınızı her zaman [eşzamanlılık çağırın:::daracınızı](reference/agent-class.md#done) tamamlanan duruma taşımak için tek bir yöntem. Yöntemden `run` dönmeden önce genellikle bu yöntemi çağırırsınız.
+Aracınızı tamamlandı durumuna taşımak için her zaman [concurrency:: Agent::d bir](reference/agent-class.md#done) yöntemi çağırın. Genellikle bu yöntemi yönteminden döndürmeden önce çağırın `run` .
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Aracı tabanlı bir uygulamanın başka bir örneği için [bkz.](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
+Aracı tabanlı bir uygulamanın başka bir örneği için bkz. [Izlenecek yol: birleştirmeyi engellemek için birleştirmeyi kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)<br/>
-[Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)<br/>
-[İzlenecek Yol: Kilitlenmeyi Önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
+[Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
+[İleti geçirme Işlevleri](../../parallel/concrt/message-passing-functions.md)<br/>
+[Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)<br/>
+[İzlenecek yol: kilitlenmeyi engellemek için birleştirmeyi kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)

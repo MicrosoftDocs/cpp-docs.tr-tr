@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2867
 ms.assetid: 63be26b2-d9ab-4f3d-a8b7-981ce3e4d6b9
-ms.openlocfilehash: 42b931d208000cc35e65c7bff9c20901cef24713
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 66d71d87fbb8e5dce495803f1251565bb14d23f8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755063"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212650"
 ---
 # <a name="compiler-error-c2867"></a>Derleyici hatası C2867
 
 ' Identifier ': bir ad alanı değil
 
-Bir `using` yönergesi, ad alanı dışında bir şeye uygulanır.
+Bir **`using`** yönerge, ad alanı dışında bir şeye uygulanır.
 
 Aşağıdaki örnek C2867 oluşturur:
 

@@ -22,18 +22,18 @@ helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-ms.openlocfilehash: 278fca89046fcfc98e8c3ff726918cb4319e4ab0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ee6d5e56bb9f41a842e53984f754c7c07d58a125
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951256"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213508"
 ---
 # <a name="offsetof-macro"></a>OffsetOf makrosu
 
 Üyenin üst yapısının başından itibaren konumunu alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 size_t offsetof(
@@ -56,7 +56,7 @@ Kaydırın belirleneceği üst veri yapısındaki üyenin adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**OffsetOf** makrosu,, *structName* tarafından belirtilen yapının başlangıcından itibaren, **size_t**türünde bir değer olarak, *MemberName* 'in bayt cinsinden sapmasını döndürür. **Struct** anahtar sözcüğünü içeren türler belirtebilirsiniz.
+**OffsetOf** makrosu, **size_t**türünde bir değer olarak *structName* tarafından belirtilen yapının başlangıcından itibaren, *MemberName* 'in bayt cinsinden sapmasını döndürür. Anahtar sözcüğü ile türleri belirtebilirsiniz **`struct`** .
 
 > [!NOTE]
 > **OffsetOf** bir işlev değildir ve bir C prototipi kullanılarak açıklanamaz.
@@ -65,7 +65,7 @@ Kaydırın belirleneceği üst veri yapısındaki üyenin adı.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**OffsetOf**|\<stddef. h >|
+|**OffsetOf**|\<stddef.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -75,4 +75,4 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>

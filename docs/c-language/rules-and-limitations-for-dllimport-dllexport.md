@@ -1,25 +1,25 @@
 ---
-title: dllimport/dllexport için Kurallar ve Sınırlamalar
+title: Dllimport-dllexport için kurallar ve sınırlamalar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dllexport attribute [C++], limitations and rules
 - dllimport attribute [C++], limitations and rules
 - dllexport attribute [C++]
 ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
-ms.openlocfilehash: cc83a43fd09299710585fa104dbd4dc847036c68
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c2f121d978962fe7fc03aa453fb0a16650aa2727
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158433"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220879"
 ---
 # <a name="rules-and-limitations-for-dllimportdllexport"></a>dllimport/dllexport için Kurallar ve Sınırlamalar
 
 **Microsoft'a Özgü**
 
-- Bir işlevi **dllimport** veya `dllexport` Attribute olmadan bildirirseniz, işlev dll arabiriminin bir parçası olarak kabul edilmez. Bu nedenle, işlevin tanımı bu modülde veya aynı programın başka bir modülünde mevcut olmalıdır. İşlevi DLL arabiriminin bir parçası yapmak için, diğer modüldeki işlevin tanımını olarak `dllexport`bildirmeniz gerekir. Aksi halde, istemci oluşturulduğunda bir bağlayıcı hatası oluşturulur.
+- Or özniteliği olmadan bir işlev bildirirseniz **`dllimport`** `dllexport` , işlev dll arabiriminin bir parçası olarak kabul edilmez. Bu nedenle, işlevin tanımı bu modülde veya aynı programın başka bir modülünde mevcut olmalıdır. İşlevi DLL arabiriminin bir parçası yapmak için, diğer modüldeki işlevin tanımını olarak bildirmeniz gerekir `dllexport` . Aksi halde, istemci oluşturulduğunda bir bağlayıcı hatası oluşturulur.
 
-- Programınızdaki tek bir modül aynı işlev için **dllimport** ve `dllexport` bildirimler içeriyorsa, `dllexport` öznitelik **dllimport** özniteliğiyle önceliklidir. Ancak, bir derleyici uyarısı oluşturulur. Örneğin:
+- Programınızdaki tek bir modül **`dllimport`** `dllexport` aynı işlev için ve bildirim içeriyorsa, özniteliği `dllexport` özniteliği üzerinde önceliklidir **`dllimport`** . Ancak, bir derleyici uyarısı oluşturulur. Örnek:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -31,7 +31,7 @@ ms.locfileid: "62158433"
 
     ```
 
-- **Dllimport** özniteliğiyle belirtilen bir veri nesnesinin adresiyle bir statik veri işaretçisi başlatamıyor. Örneğin, aşağıdaki kod hatalar oluşturur:
+- Özniteliği ile belirtilen bir veri nesnesinin adresiyle bir statik veri işaretçisi başlatamıyor **`dllimport`** . Örneğin, aşağıdaki kod hatalar oluşturur:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -50,7 +50,7 @@ ms.locfileid: "62158433"
 
     ```
 
-- Bir statik işlev işaretçisini **dllimport** ile belirtilen adresle birlikte başlatmak, işlevin adresı yerine DLL içeri aktarma dönüştürücüsü (denetimi işleve aktaran bir kod Saplaması) için işaretçiyi ayarlar. Bu atama bir hata iletisi oluşturmaz:
+- İle belirtilen bir işlevin adresiyle bir statik işlev işaretçisi başlatmak, **`dllimport`** işlevin adresi yerine, DLL içeri aktarma dönüştürücüsü (denetimi işleve aktaran bir kod Saplaması) adresine işaretçiyi ayarlar. Bu atama bir hata iletisi oluşturmaz:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -69,7 +69,7 @@ ms.locfileid: "62158433"
 
     ```
 
-- Bir nesnenin bildiriminde `dllexport` özniteliği içeren bir program, bu nesnenin tanımını sağlaması gerektiğinden, bir `dllexport` işlev adresiyle genel veya yerel bir statik işlev işaretçisi başlatabilirsiniz. Benzer şekilde, bir `dllexport` veri nesnesinin adresiyle genel veya yerel bir statik veri işaretçisi başlatabilirsiniz. Örneğin:
+- `dllexport`Bir nesnenin bildiriminde özniteliği içeren bir program, bu nesnenin tanımını sağlaması gerektiğinden, bir işlev adresiyle genel veya yerel bir statik işlev işaretçisi başlatabilirsiniz `dllexport` . Benzer şekilde, bir veri nesnesinin adresiyle genel veya yerel bir statik veri işaretçisi başlatabilirsiniz `dllexport` . Örnek:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -98,4 +98,4 @@ ms.locfileid: "62158433"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DLL İçeri ve Dışarı Aktarma İşlevleri](../c-language/dll-import-and-export-functions.md)
+[DLL Içeri ve dışarı aktarma Işlevleri](../c-language/dll-import-and-export-functions.md)

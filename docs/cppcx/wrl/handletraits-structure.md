@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue method
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
-ms.openlocfilehash: 604098cd3289722767117910d6e44e272dcb8b77
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c04e53789fd737b12ca10ef2c279a05fb43f5925
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371443"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213001"
 ---
 # <a name="handletraits-structure"></a>HANDLETraits Yapısı
 
-Bir tutamacın ortak özelliklerini tanımlar.
+Bir tanıtıcının ortak özelliklerini tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,18 +30,18 @@ struct HANDLETraits;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Adı   | Açıklama
+Ad   | Açıklama
 ------ | ---------------------
-`Type` | HANDLE ile eş anlamlıdır.
+`Type` | TANıTıCı için eş anlamlı.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                              | Açıklama
+Ad                                              | Açıklama
 ------------------------------------------------- | -----------------------------
-[HANDLETraits::Kapat](#close)                     | Belirtilen tutamacı kapatır.
-[HANDLETraits::GetInvalidValue](#getinvalidvalue) | Geçersiz bir tutamacı temsil eder.
+[Handlenitelikler:: Close](#close)                     | Belirtilen tanıtıcıyı kapatır.
+[Handlenitelikleri:: GetInvalidValue](#getinvalidvalue) | Geçersiz bir tanıtıcıyı temsil eder.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -49,13 +49,13 @@ Adı                                              | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Ad alanı:** Microsoft::WRL::Sarmalayıcılar::HandleTraits
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar:: Handlenitelikler
 
-## <a name="handletraitsclose"></a><a name="close"></a>HANDLETraits::Kapat
+## <a name="handletraitsclose"></a><a name="close"></a>Handlenitelikler:: Close
 
-Belirtilen tutamacı kapatır.
+Belirtilen tanıtıcıyı kapatır.
 
 ```cpp
 inline static bool Close(
@@ -65,16 +65,16 @@ inline static bool Close(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Kapama kıyı.
+*olsun*<br/>
+Kapatılacak tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*h* kolu başarıyla kapalı ise **doğru;** aksi takdirde, **yanlış**.
+**`true`** tanıtıcı *h* başarıyla kapatılırsa Aksi takdirde, **`false`** .
 
-## <a name="handletraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>HANDLETraits::GetInvalidValue
+## <a name="handletraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>Handlenitelikleri:: GetInvalidValue
 
-Geçersiz bir tutamacı temsil eder.
+Geçersiz bir tanıtıcıyı temsil eder.
 
 ```cpp
 inline static HANDLE GetInvalidValue();
@@ -82,4 +82,4 @@ inline static HANDLE GetInvalidValue();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her zaman INVALID_HANDLE_VALUE döner. (INVALID_HANDLE_VALUE Windows tarafından tanımlanır.)
+Her zaman INVALID_HANDLE_VALUE döndürür. (INVALID_HANDLE_VALUE, Windows tarafından tanımlanır.)

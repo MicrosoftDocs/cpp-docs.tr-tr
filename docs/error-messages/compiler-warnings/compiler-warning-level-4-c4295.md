@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4295
 ms.assetid: 20dbff85-9f62-4ca3-8fe9-079d4512006d
-ms.openlocfilehash: 5e8b546e4eb4b60197db504382b3230e779b1dec
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: d960e5a5e2d7ad2d2b650095c42e9afea7bfe7fb
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70924844"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219878"
 ---
 # <a name="compiler-warning-level-4-c4295"></a>Derleyici Uyarısı (düzey 4) C4295
 
@@ -21,7 +21,7 @@ Dizi başlatıldı, ancak dizideki son karakter null değil; diziye dize olarak 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4295 oluşturur. Bu sorunu düzeltebilmeniz için, dizi boyutunun daha büyük olduğunu, başlatıcı dizesinden bir Sonlandırıcı null değerini tutacak şekilde bildirebilir veya bir dizi başlatıcısı listesi kullanarak `char`, null sonlandırılmış bir dize değil, bunun bir dizisi olduğunu net hale getirebilirsiniz.
+Aşağıdaki örnek C4295 oluşturur. Bu sorunu düzeltebilmeniz için, dizi boyutunun daha büyük olduğunu, başlatıcı dizesinden bir Sonlandırıcı null değerini tutacak şekilde bildirebilir veya bir dizi başlatıcısı listesi kullanarak **`char`** , null sonlandırılmış bir dize değil, bunun bir dizisi olduğunu net hale getirebilirsiniz.
 
 ```C
 // C4295.c

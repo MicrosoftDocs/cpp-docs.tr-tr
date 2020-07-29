@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - __super keyword [C++]
 ms.assetid: f0957c31-9256-405b-b402-cad182404b5f
-ms.openlocfilehash: b6f6a7e108224ab4c97893104c5d6c38d325fa42
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3afc2e8049cfcca40db389bed84baa6f42dae126
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160833"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213157"
 ---
-# <a name="__super"></a>__super
+# `__super`
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Geçersiz kılmamanız gereken bir işlev için temel sınıf uygulamasını çağırmamayı açıkça belirtmenize olanak tanır.
 
@@ -29,9 +29,9 @@ __super::member_function();
 
 Tüm erişilebilir temel sınıf yöntemleri, aşırı yükleme çözümleme aşamasında değerlendirilir ve en iyi eşleşmeyi sağlayan işlev çağrılan biridir.
 
-**__super** yalnızca bir üye işlevinin gövdesinde bulunabilir.
+**`__super`** yalnızca bir üye işlevinin gövdesinde yer alabilir.
 
-**__super** , using bildirimiyle birlikte kullanılamaz. Daha fazla bilgi için bkz. [bildirimi kullanma](../cpp/using-declaration.md) .
+**`__super`** Using bildirimiyle birlikte kullanılamaz. Daha fazla bilgi için bkz. [bildirimi kullanma](../cpp/using-declaration.md) .
 
 Kod eklenen [özniteliklerin](../windows/attributes/attributes-alphabetical-reference.md) tanıtılmasıyla birlikte kodunuz, bilinen adlara sahip ancak çağırmak istediğiniz yöntemleri içeren bir veya daha fazla temel sınıf içerebilir.
 
@@ -62,4 +62,4 @@ struct D : B1, B2 {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

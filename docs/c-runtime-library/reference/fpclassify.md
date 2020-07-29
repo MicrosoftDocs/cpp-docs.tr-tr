@@ -23,18 +23,18 @@ helpviewer_keywords:
 - fpclassify macro
 - fpclassify function
 ms.assetid: bf549499-7ff9-4a58-8692-f2d1cb6bab81
-ms.openlocfilehash: e9b5aa1f7dc20cc920a51c2c36371eb907469875
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 75cfdc33c21059e190fd04f4cd1b73716e74ac42
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957061"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213586"
 ---
 # <a name="fpclassify"></a>fpclassify
 
 Bağımsız değişkenin kayan nokta sınıflandırmasını döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int fpclassify(
@@ -61,7 +61,7 @@ Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fpsınıflandır** *x*bağımsız değişkeninin kayan nokta sınıfını gösteren bir tamsayı değeri döndürür. Bu tablo, \<Math. h > tanımlanmış **fpsınıflandır**tarafından döndürülen olası değerleri gösterir.
+**fpsınıflandır** *x*bağımsız değişkeninin kayan nokta sınıfını gösteren bir tamsayı değeri döndürür. Bu tablo, içinde tanımlanan **fpsınıflandır**tarafından döndürülen olası değerleri gösterir \<math.h> .
 
 |Değer|Açıklama|
 |-----------|-----------------|
@@ -73,17 +73,17 @@ Sınanacak kayan nokta değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C 'de, **fpsınıflandır** bir makrodur; ' C++de, **fpsınıflandır** , **float**, **Double**veya **Long** **Double**bağımsız değişken türleri kullanılarak aşırı yüklenmiş bir işlevdir. Her iki durumda da, döndürülen değer, herhangi bir ara gösterimde değil, bağımsız değişken ifadesinin etkin türüne bağlıdır. Örneğin, normal bir **Double** veya **Long** **Double** değeri bir **float**'e dönüştürüldüğünde sonsuz, denormal veya sıfır değeri olabilir.
+C 'de, **fpsınıflandır** bir makrodur; C++ ' da, **fpsınıflandır** , veya bağımsız değişken türleri kullanılarak aşırı yüklenmiş bir işlevdir **`float`** **`double`** **`long double`** . Her iki durumda da, döndürülen değer, herhangi bir ara gösterimde değil, bağımsız değişken ifadesinin etkin türüne bağlıdır. Örneğin, normal **`double`** veya değer, **`long double`** bir sonsuza dönüştürüldüğünde bir Infinity, denormal veya sıfır değeri olabilir **`float`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev/makro|Gerekli üst bilgi (C)|Gerekli üst bilgiC++()|
+|İşlev/makro|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |---------------------|---------------------------|-------------------------------|
-|**fpclassify**|\<Math. h >|\<Math. h > veya \<cmath >|
+|**fpclassify**|\<math.h>|\<math.h> veya \<cmath>|
 
 **Fpsınıflandır** makrosu ve **fpsınıflandır** Işlevleri ISO C99 ve c++ 11 belirtimlerine uyar. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

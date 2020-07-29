@@ -1,5 +1,5 @@
 ---
-title: CFrameWnd Sınıfı
+title: CFrameWnd sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CFrameWnd
@@ -106,16 +106,16 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 3bb93420b39be5d6fb9a6691cec8300fdccb0e73
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: b31e8d28cba5199d0a40a050bb2b284cfafc5c55
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754983"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212429"
 ---
-# <a name="cframewnd-class"></a>CFrameWnd Sınıfı
+# <a name="cframewnd-class"></a>CFrameWnd sınıfı
 
-Pencereyi yönetmek için üyelerle birlikte üst üste binen veya açılır çerçeve penceresi olan Bir Windows tek belge arabiriminin (SDI) işlevselliğini sağlar.
+Windows tek belge arabirimi (SDI) örtüşen veya açılan çerçeve penceresinin, pencereyi yönetmek için üyelerle birlikte işlevlerini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -127,139 +127,139 @@ class CFrameWnd : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFrameWnd::CFrameWnd](#cframewnd)|Bir `CFrameWnd` nesne inşa eder.|
+|[CFrameWnd:: CFrameWnd](#cframewnd)|Bir `CFrameWnd` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFrameWnd::Etkinleştirme Çerçevesi](#activateframe)|Çerçeveyi görünür ve kullanıcı tarafından kullanılabilir hale getirir.|
-|[CFrameWnd::BeginModalState](#beginmodalstate)|Çerçeve penceresini modal olarak ayarlar.|
-|[CFrameWnd::Oluştur](#create)|`CFrameWnd` Nesneyle ilişkili Windows çerçeve penceresi oluşturmak ve başlatmayı arayın.|
-|[CFrameWnd::CreateView](#createview)|`CView`Türetilen olmayan bir çerçeve içinde bir görünüm oluşturur.|
-|[CFrameWnd::DockControlBar](#dockcontrolbar)|Bir kontrol çubuğuna yanaşıyor.|
-|[CFrameWnd::Etkinleştirme Docking](#enabledocking)|Bir denetim çubuğunun kenetlenmesini sağlar.|
-|[CFrameWnd::EndModalState](#endmodalstate)|Çerçeve penceresinin modal durumunu sona erdirer. Tüm pencereleri devre dışı `BeginModalState`bırakmanızı sağlar.|
-|[CFrameWnd::FloatControlBar](#floatcontrolbar)|Bir kontrol çubuğu yüzer.|
-|[CFrameWnd::GetActiveDocument](#getactivedocument)|Etkin nesneyi döndürür. `CDocument`|
-|[CFrameWnd::GetActiveFrame](#getactiveframe)|Etkin nesneyi döndürür. `CFrameWnd`|
-|[CFrameWnd::GetActiveView](#getactiveview)|Etkin nesneyi döndürür. `CView`|
-|[CFrameWnd::GetControlBar](#getcontrolbar)|Denetim çubuğunu alır.|
-|[CFrameWnd::GetDockState](#getdockstate)|Çerçeve penceresinin dock durumunu alır.|
-|[CFrameWnd::GetMenuBarState](#getmenubarstate)|Geçerli MFC uygulamasında menünün görüntü durumunu alır.|
-|[CFrameWnd::GetMenuBarVisibility](#getmenubarvisibility)|Geçerli MFC uygulamasındaki menünün varsayılan davranışının gizli veya görünür olup olmadığını gösterir.|
-|[CFrameWnd::GetMessageBar](#getmessagebar)|Çerçeve penceresine ait durum çubuğuna bir işaretçi döndürür.|
-|[CFrameWnd::GetMessageString](#getmessagestring)|Komut kimliğine karşılık gelen iletiyi alır.|
-|[CFrameWnd::GetTitle](#gettitle)|İlgili denetim çubuğunun başlığını alır.|
-|[CFrameWnd::InitialUpdateFrame](#initialupdateframe)|Çerçeve `OnInitialUpdate` penceresindeki tüm görünümlere ait üye işlevin çağrılmasını neden olur.|
-|[CFrameWnd::InModalState](#inmodalstate)|Çerçeve penceresinin modal durumda olup olmadığını belirten bir değer döndürür.|
-|[CFrameWnd::IsTracking](#istracking)|Splitter çubuğunun şu anda taşınıp taşınmayanlarını belirler.|
-|[CFrameWnd::LoadAccelTable](#loadacceltable)|Hızlandırıcı tablosunu yüklemek için arayın.|
-|[CFrameWnd::LoadBarState](#loadbarstate)|Denetim çubuğu ayarlarını geri yüklemek için arayın.|
-|[CFrameWnd::LoadFrame](#loadframe)|Kaynak bilgilerinden dinamik olarak bir çerçeve penceresi oluşturmak için arayın.|
-|[CFrameWnd::NegotiateBorderSpace](#negotiateborderspace)|Çerçeve penceresinde kenarlık alanını görüşür.|
-|[CFrameWnd::OnBarCheck](#onbarcheck)|Belirtilen denetim çubuğunda bir eylem yapıldığında çağrılır.|
-|[CFrameWnd::OnContextHelp](#oncontexthelp)|Yerinde öğeler için SHIFT+F1 Yardım'ı işler.|
-|[CFrameWnd::OnSetPreviewMode](#onsetpreviewmode)|Uygulamanın ana çerçeve penceresini yazdırma önizleme moduna ve dışına ayarlar.|
-|[CFrameWnd::OnUpdateControlBarMenu](#onupdatecontrolbarmenu)|İlişkili menü güncelleştirildiğinde çerçeve tarafından çağrılır.|
-|[CFrameWnd::RecalcLayout](#recalclayout)|`CFrameWnd` Nesnenin denetim çubuklarını yeniden konumlandırın.|
-|[CFrameWnd::SaveBarState](#savebarstate)|Denetim çubuğu ayarlarını kaydetmek için arayın.|
-|[CFrameWnd::SetActivePreviewView](#setactivepreviewview)|Belirtilen görünümü Zengin Önizleme için etkin görünüm olarak belirtir.|
-|[CFrameWnd::SetActiveView](#setactiveview)|Etkin `CView` nesneyi ayarlar.|
-|[CFrameWnd::SetDockState](#setdockstate)|Ana penceredeki çerçeve penceresini yerleştirmeyi arayın.|
-|[CFrameWnd::SetMenuBarState](#setmenubarstate)|Geçerli MFC uygulamasındaki menünün ekran durumunu gizli veya görüntülenecek şekilde ayarlar.|
-|[CFrameWnd::SetMenuBarVisibility](#setmenubarvisibility)|Geçerli MFC uygulamasındaki menünün varsayılan davranışını gizli veya görünür olarak ayarlar.|
-|[CFrameWnd::SetMessageText](#setmessagetext)|Standart durum çubuğunun metnini ayarlar.|
-|[CFrameWnd::SetProgressBarPosition](#setprogressbarposition)|Görev çubuğunda görüntülenen Windows 7 ilerleme çubuğu için geçerli konumu ayarlar.|
-|[CFrameWnd::SetProgressBarRange](#setprogressbarrange)|Görev çubuğunda görüntülenen Windows 7 ilerleme çubuğu aralığını ayarlar.|
-|[CFrameWnd::SetProgressBarState](#setprogressbarstate)|Görev çubuğu düğmesinde görüntülenen ilerleme göstergesinin türünü ve durumunu ayarlar.|
-|[CFrameWnd::SetTaskbarOverlayIcon](#settaskbaroverlayicon)|Fazla Yüklendi. Uygulama durumunu veya kullanıcıya bir bildirim belirtmek için görev çubuğuna bir bindirme uygular.|
-|[CFrameWnd::SetTitle](#settitle)|İlgili denetim çubuğunun başlığını ayarlar.|
-|[CFrameWnd::ShowControlBar](#showcontrolbar)|Kontrol çubuğunu göstermek için arayın.|
-|[CFrameWnd::ShowOwnedWindows](#showownedwindows)|Nesnenin torunları olan tüm `CFrameWnd` pencereleri gösterir.|
+|[CFrameWnd:: ActivateFrame](#activateframe)|Çerçeveyi görünür ve Kullanıcı tarafından kullanılabilir hale getirir.|
+|[CFrameWnd:: BeginModalState](#beginmodalstate)|Çerçeve penceresini kalıcı olarak ayarlar.|
+|[CFrameWnd:: Create](#create)|Nesnesiyle ilişkili Windows çerçeve penceresini oluşturmak ve başlatmak için çağırın `CFrameWnd` .|
+|[CFrameWnd:: CreateView](#createview)|Bir çerçeve içinde türetilmeyen bir görünüm oluşturur `CView` .|
+|[CFrameWnd::D ockControlBar](#dockcontrolbar)|Denetim çubuğunu kontrol edin.|
+|[CFrameWnd:: EnableDocking](#enabledocking)|Denetim çubuğunun yerleştirilmiş olmasını sağlar.|
+|[CFrameWnd:: EndModalState](#endmodalstate)|Çerçeve penceresinin kalıcı durumunu sonlandırır. Tarafından devre dışı bırakılan tüm pencereleri izin vermez `BeginModalState` .|
+|[CFrameWnd:: FloatControlBar](#floatcontrolbar)|Bir denetim çubuğunu float.|
+|[CFrameWnd:: GetActiveDocument](#getactivedocument)|Etkin nesneyi döndürür `CDocument` .|
+|[CFrameWnd:: GetActiveFrame](#getactiveframe)|Etkin nesneyi döndürür `CFrameWnd` .|
+|[CFrameWnd:: GetActiveView](#getactiveview)|Etkin nesneyi döndürür `CView` .|
+|[CFrameWnd:: GetControlBar](#getcontrolbar)|Denetim çubuğunu alır.|
+|[CFrameWnd:: GetDockState](#getdockstate)|Bir çerçeve penceresinin yerleştirme durumunu alır.|
+|[CFrameWnd:: GetMenuBarState](#getmenubarstate)|Geçerli MFC uygulamasındaki menünün görüntüleme durumunu alır.|
+|[CFrameWnd:: GetMenuBarVisibility](#getmenubarvisibility)|Geçerli MFC uygulamasındaki menünün varsayılan davranışının gizli ya da görünür olup olmadığını gösterir.|
+|[CFrameWnd:: GetMessageBar](#getmessagebar)|Çerçeve penceresine ait olan durum çubuğuna bir işaretçi döndürür.|
+|[CFrameWnd:: GetMessageString](#getmessagestring)|Komut KIMLIĞINE karşılık gelen iletiyi alır.|
+|[CFrameWnd:: GetTitle](#gettitle)|İlgili denetim çubuğunun başlığını alır.|
+|[CFrameWnd:: ınitialupdateframe](#initialupdateframe)|`OnInitialUpdate`Çerçeve penceresindeki tüm görünümlere ait üye işlevinin çağrılmasına neden olur.|
+|[CFrameWnd:: InModalState](#inmodalstate)|Bir çerçeve penceresinin kalıcı durumda olup olmadığını gösteren bir değer döndürür.|
+|[CFrameWnd:: IsTracking](#istracking)|Ayırıcı çubuğun Şu anda taşınıp taşınmadığını belirler.|
+|[CFrameWnd:: LoadAccelTable](#loadacceltable)|Hızlandırıcı tablosu yükleme çağrısı.|
+|[CFrameWnd:: LoadBarState](#loadbarstate)|Denetim çubuğu ayarlarını geri yükleme çağrısı.|
+|[CFrameWnd:: LoadFrame](#loadframe)|Kaynak bilgilerden dinamik olarak bir çerçeve penceresi oluşturmak için çağırın.|
+|[CFrameWnd:: NegotiateBorderSpace](#negotiateborderspace)|Çerçeve penceresinde kenarlık alanı üzerinde anlaşır.|
+|[CFrameWnd:: OnBarCheck](#onbarcheck)|Belirtilen denetim çubuğunda bir eylem yapıldığında çağırılır.|
+|[CFrameWnd:: OnContextHelp](#oncontexthelp)|Yerinde öğeler için SHIFT + F1 yardımını işler.|
+|[CFrameWnd:: Onsetönizleme modu](#onsetpreviewmode)|Uygulamanın ana çerçeve penceresini baskı önizleme modundan ve dışına ayarlar.|
+|[CFrameWnd:: OnUpdateControlBarMenu](#onupdatecontrolbarmenu)|İlişkili menü güncelleştirildiği zaman Framework tarafından çağırılır.|
+|[CFrameWnd:: RecalcLayout](#recalclayout)|Nesnenin denetim çubuklarını konumlandırır `CFrameWnd` .|
+|[CFrameWnd:: SaveBarState](#savebarstate)|Denetim çubuğu ayarlarını kaydetme çağrısı.|
+|[CFrameWnd:: Setactiveönizleme görünümü](#setactivepreviewview)|Belirtilen görünümü zengin önizleme için etkin görünüm olarak belirler.|
+|[CFrameWnd:: SetActiveView](#setactiveview)|Etkin nesneyi ayarlar `CView` .|
+|[CFrameWnd:: SetDockState](#setdockstate)|Ana pencereye çerçeve penceresini yerleştirmek için çağırın.|
+|[CFrameWnd:: SetMenuBarState](#setmenubarstate)|Geçerli MFC uygulamasındaki menünün görüntüleme durumunu gizli veya görüntülenir olarak ayarlar.|
+|[CFrameWnd:: SetMenuBarVisibility](#setmenubarvisibility)|Geçerli MFC uygulamasındaki menünün varsayılan davranışını gizli ya da görünür olacak şekilde ayarlar.|
+|[CFrameWnd:: SetMessageText](#setmessagetext)|Standart durum çubuğunun metnini ayarlar.|
+|[CFrameWnd:: SetProgressBarPosition](#setprogressbarposition)|Görev çubuğunda görüntülenmek üzere Windows 7 ilerleme çubuğunun geçerli konumunu ayarlar.|
+|[CFrameWnd:: SetProgressBarRange](#setprogressbarrange)|Görev çubuğunda görüntülenmek üzere Windows 7 ilerleme çubuğu aralığını ayarlar.|
+|[CFrameWnd:: SetProgressBarState](#setprogressbarstate)|Bir görev çubuğu düğmesinde görünen ilerleme göstergesinin türünü ve durumunu ayarlar.|
+|[CFrameWnd:: Settaskbaroverlayıcon](#settaskbaroverlayicon)|Fazla Yüklendi. Uygulama durumunu veya kullanıcıya yönelik bir bildirimi göstermek için bir görev çubuğu düğmesine bir kaplama uygular.|
+|[CFrameWnd:: SetTitle](#settitle)|İlgili denetim çubuğunun başlığını ayarlar.|
+|[CFrameWnd:: ShowControlBar](#showcontrolbar)|Denetim çubuğunu göstermek için çağırın.|
+|[CFrameWnd:: ShowOwnedWindows](#showownedwindows)|Nesnenin alt öğesi olan tüm pencereleri gösterir `CFrameWnd` .|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFrameWnd::OnCreateClient](#oncreateclient)|Çerçeve için bir istemci penceresi oluşturur.|
-|[CFrameWnd::OnHideMenuBar](#onhidemenubar)|Geçerli MFC uygulamasındaki menü gizlenmeden önce çağrılır.|
-|[CFrameWnd::OnShowMenuBar](#onshowmenubar)|Geçerli MFC uygulamasındaki menü görüntülenmeden önce çağrılır.|
+|[CFrameWnd:: OnCreateClient](#oncreateclient)|Çerçeve için bir istemci penceresi oluşturur.|
+|[CFrameWnd:: OnHideMenuBar](#onhidemenubar)|Geçerli MFC uygulamasındaki menü gizlenmadan önce çağırılır.|
+|[CFrameWnd:: OnShowMenuBar](#onshowmenubar)|Geçerli MFC uygulamasındaki menü görüntülenmeden önce çağırılır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFrameWnd::m_bAutoMenuEnable](#m_bautomenuenable)|Menü öğeleri için otomatik etkinleştirme ve işlevselliği devre dışı kullanabilirsiniz.|
-|[CFrameWnd::rectVarsayılan](#rectdefault)|Windows'un `CRect` pencerenin başlangıç boyutunu `CFrameWnd` ve konumunu seçmesine izin verecek bir nesne oluştururken bu paraziti parametre olarak geçirin.|
+|[CFrameWnd:: m_bAutoMenuEnable](#m_bautomenuenable)|Menü öğeleri için otomatik etkinleştirme ve devre dışı bırakma işlevlerini denetler.|
+|[CFrameWnd:: rectDefault](#rectdefault)|`CRect` `CFrameWnd` Windows 'un ilk boyutunu ve konumunu seçmesini sağlamak için bir nesne oluştururken bu statik olarak bir parametre olarak geçirin.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanız için kullanışlı bir çerçeve penceresi oluşturmak `CFrameWnd`için, 'den bir sınıf türetin. Uygulamanıza özgü verileri depolamak için türemiş sınıfa üye değişkenler ekleyin. İletiler pencereye yönlendirildiğinde ne olacağını belirtmek için ileti işleyicisi üye işlevlerini ve türetilmiş sınıfta bir ileti eşlemi uygulayın.
+Uygulamanız için kullanışlı bir çerçeve penceresi oluşturmak için, öğesinden bir sınıf türetebilirsiniz `CFrameWnd` . Uygulamanıza özgü verileri depolamak için türetilmiş sınıfa üye değişkenleri ekleyin. İletileri pencereye yönlendirdiğinde ne olacağını belirtmek için ileti işleyicisi üye işlevlerini ve türetilmiş sınıfta bir ileti eşlemesi uygulayın.
 
-Çerçeve penceresi oluşturmanın üç yolu vardır:
+Çerçeve penceresi oluşturmak için üç yol vardır:
 
-- [Doğrudan Oluştur](#create)kullanarak oluşturun.
+- Oluşturmayı kullanarak doğrudan [oluşturun](#create).
 
-- [LoadFrame](#loadframe)kullanarak doğrudan oluşturabilirsiniz.
+- [LoadFrame](#loadframe)kullanarak doğrudan oluşturun.
 
-- Dolaylı olarak bir belge şablonu kullanarak oluşturmak.
+- Bir belge şablonu kullanarak dolaylı olarak oluşturun.
 
-Birini `Create` aramadan `LoadFrame`önce , C++ **yeni** işleci kullanarak yığın üzerinde çerçeve penceresi nesnesini oluşturmanız gerekir. Aramadan `Create`önce, çerçeve için simge ve sınıf stillerini ayarlamak için [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global işlevine bir pencere sınıfı da kaydedebilirsiniz.
+Ya da çağrısından önce `Create` `LoadFrame` , C++ işlecini kullanarak yığında kare pencere nesnesi oluşturmanız gerekir **`new`** . `Create`' İ çağırmadan önce, çerçeveye ait simge ve sınıf stillerini ayarlamak Için [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) genel işleviyle bir pencere sınıfı kaydedebilirsiniz.
 
-Çerçevenin `Create` oluşturma parametrelerini hemen bağımsız değişken olarak geçirmek için üye işlevi kullanın.
+`Create`Çerçevenin oluşturma parametrelerini hemen bağımsız değişken olarak geçirmek için üye işlevini kullanın.
 
-`LoadFrame`daha `Create`az bağımsız değişken gerektirir ve bunun yerine çerçevenin resim yazısı, simge, hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardan varsayılan değerlerinin çoğunu alır. Bu kaynaklartarafından `LoadFrame`erişilebilmek için tüm kaynakların aynı kaynak kimliğine sahip olması gerekir (örneğin, IDR_MAINFRAME).
+`LoadFrame`öğesinden daha az bağımsız değişken gerektirir `Create` ve bunun yerine çerçevenin başlık, simge, Hızlandırıcı tablosu ve menü dahil olmak üzere kaynaklardaki varsayılan değerlerinin çoğunu alır. Tarafından erişilebilmesi için `LoadFrame` , tüm bu kaynakların aynı kaynak kimliğine sahip olması gerekir (örneğin, IDR_MAINFRAME).
 
-Bir `CFrameWnd` nesne görünümler ve belgeler içeriyorsa, doğrudan programcı tarafından değil, dolaylı olarak çerçeve tarafından oluşturulur. Nesne `CDocTemplate` çerçevenin oluşturulmasını, içeren görünümlerin oluşturulmasını ve görünümlerin uygun belgeye bağlantısını yönetir. `CDocTemplate` Oluşturucunun `CRuntimeClass` parametreleri ilgili üç sınıfın (belge, çerçeve ve görünüm) Bir `CRuntimeClass` nesne, kullanıcı tarafından belirtildiğinde dinamik olarak yeni çerçeveler oluşturmak için çerçeve tarafından kullanılır (örneğin, Yeni Dosya komutu veya birden çok belge arabirimi (MDI) Penceresi Yeni komutu kullanılarak).
+Bir `CFrameWnd` nesne görünümler ve belgeler içerdiğinde, doğrudan programcı tarafından değil Framework tarafından dolaylı olarak oluşturulur. `CDocTemplate`Nesnesi çerçevenin oluşturulmasını, kapsayan görünümlerin oluşturulmasını ve görünümlerin ilgili belge ile bağlantısını düzenler. Oluşturucunun parametreleri, `CDocTemplate` `CRuntimeClass` içerilen üç sınıfın (belge, çerçeve ve Görünüm) sayısını belirtir. Bir `CRuntimeClass` nesne, Kullanıcı tarafından belirtildiğinde (örneğin, dosya yeni komut veya birden çok belge arabirimi (MDI) pencereyi yeni komut), yeni çerçeveleri dinamik olarak oluşturmak için çerçevesi tarafından kullanılır.
 
-Yukarıdaki RUNTIME_CLASS mekanizmasının `CFrameWnd` doğru çalışabilmesi için, türetilen bir çerçeve penceresi sınıfının DECLARE_DYNCREATE ile birlikte bildirilmesi gerekir.
+`CFrameWnd`Yukarıdaki RUNTIME_CLASS mekanizmanın doğru çalışması için öğesinden türetilmiş bir çerçeve pencere sınıfı DECLARE_DYNCREATE bildirilmelidir.
 
-A, `CFrameWnd` Windows için tipik bir uygulamada ana pencerenin aşağıdaki işlevlerini gerçekleştirmek için varsayılan uygulamaları içerir:
+`CFrameWnd`, Windows için tipik bir uygulamada bir ana pencerenin aşağıdaki işlevlerini gerçekleştirmek üzere varsayılan uygulamaları içerir:
 
-- Çerçeve `CFrameWnd` penceresi, Windows etkin penceresinden veya geçerli giriş odağından bağımsız olarak şu anda etkin olan görünümü izler. Çerçeve yeniden etkinleştirildiğinde, etkin görünüm ' i `CView::OnActivateView`arayarak bildirilir.
+- Bir `CFrameWnd` çerçeve penceresi, Windows etkin penceresinden veya geçerli giriş odağından bağımsız olan şu anda etkin olan görünümü izler. Çerçeve yeniden etkinleştirildiğinde, etkin görünüme çağırarak bildirim gönderilir `CView::OnActivateView` .
 
-- Komut iletileri ve birçok ortak çerçeve bildirim iletileri, `OnSetFocus` `OnHScroll`bu `OnVScroll` tarafından `CWnd`işlenen de dahil `CFrameWnd` olmak üzere , , ve işlevleri , şu anda etkin görünümüne bir çerçeve penceresi tarafından devredilir.
+- Komut iletileri ve,, ve işlevleri tarafından işlenenler dahil olmak üzere birçok yaygın çerçeve bildirimi iletisi, `OnSetFocus` `OnHScroll` `OnVScroll` `CWnd` `CFrameWnd` Şu anda etkin olan görünüm için bir çerçeve penceresi tarafından temsil edilir.
 
-- Şu anda etkin görünüm (veya bir MDI çerçevesi durumunda şu anda etkin MDI alt çerçeve penceresi) çerçeve penceresinin alt yazısını belirleyebilir. Bu özellik, çerçeve penceresinin FWS_ADDTOTITLE stil bitini kapatarak devre dışı bırakılabilir.
+- Şu anda etkin olan görünüm (ya da bir MDI çerçevesi durumunda etkin olan MDI alt çerçeve penceresi), çerçeve penceresinin açıklamalı alt yazısını tespit edebilir. Bu özellik, çerçeve penceresinin FWS_ADDTOTITLE stil bitini kapatarak devre dışı bırakılabilir.
 
-- Çerçeve `CFrameWnd` penceresi, çerçeve penceresinin istemci alanı içindeki denetim çubuklarının, görünümlerin ve diğer alt pencerelerin konumlandırılmasını yönetir. Çerçeve penceresi, araç çubuğunun ve diğer denetim çubuğu düğmelerinin boşta zaman güncellenmesini de yapar. Çerçeve `CFrameWnd` penceresi, araç çubuğu ve durum çubuğunda ve dışında başka bir yerde veya dışında ggling için varsayılan komutuygulamaları da vardır.
+- Çerçeve penceresi, `CFrameWnd` çerçeve penceresinin istemci alanının içindeki denetim çubuklarının, görünümlerin ve diğer alt pencerelerin konumlandırılmasını yönetir. Çerçeve penceresi ayrıca araç çubuğunun ve diğer denetim çubuğu düğmelerinin boşta zamanlı güncelleştirilmesini de yapar. `CFrameWnd`Çerçeve penceresi ayrıca araç çubuğu ve durum çubuğu üzerinde geçiş yapmak ve kapatmak için varsayılan komut uygulamalarına sahiptir.
 
-- Çerçeve `CFrameWnd` penceresi ana menü çubuğunu yönetir. Açılır menü görüntülendiğinde, çerçeve penceresi hangi menü öğelerinin etkinleştirilmesi, devre dışı edilmesi veya denetlenmesi gerektiğini belirlemek için UPDATE_COMMAND_UI mekanizmasını kullanır. Kullanıcı bir menü öğesi seçtiğinde, çerçeve penceresi durum çubuğunu bu komutun ileti dizesiyle güncelleştirir.
+- Bir `CFrameWnd` çerçeve penceresi, ana menü çubuğunu yönetir. Bir açılır menü görüntülendiğinde, çerçeve penceresi hangi menü öğelerinin etkinleştirileceğini, devre dışı bırakılacağını veya denetleneceğini öğrenmek için UPDATE_COMMAND_UI mekanizmasını kullanır. Kullanıcı bir menü öğesi seçtiğinde, çerçeve penceresi durum çubuğunu ilgili komutun ileti dizesiyle güncelleştirir.
 
-- `CFrameWnd` Çerçeve penceresinde klavye hızlandırıcılarını otomatik olarak çeviren isteğe bağlı bir hızlandırıcı tablosu vardır.
+- Bir `CFrameWnd` çerçeve penceresi, klavye hızlandırıcılarını otomatik olarak çeviren isteğe bağlı bir Hızlandırıcı tablosuna sahiptir.
 
-- Çerçeve `CFrameWnd` penceresinde, içeriğe duyarlı `LoadFrame` yardım için kullanılan isteğe bağlı bir yardım kimliği kümesi vardır. Çerçeve penceresi, bağlama duyarlı yardım (SHIFT+F1) ve yazdırma-önizleme modları gibi yarı modal durumların ana orkestratörüdür.
+- `CFrameWnd`Çerçeve penceresinde, `LoadFrame` bağlama duyarlı yardım için kullanılan isteğe bağlı BIR Yardım kimliği kümesi vardır. Çerçeve penceresi, bağlama duyarlı Yardım (SHIFT + F1) ve baskı önizleme modları gibi semimodal durumlarının ana Orchestrator.
 
-- Çerçeve `CFrameWnd` penceresi, Dosya Yöneticisi'nden sürüklenen ve çerçeve penceresine bırakılan bir dosyayı açar. Bir dosya uzantısı kaydedilir ve uygulamayla ilişkilendirilirse, çerçeve penceresi, kullanıcı Dosya Yöneticisi'nde bir veri dosyası açtığında veya `ShellExecute` Windows işlevi çağrıldığında oluşan dinamik veri alışverişi (DDE) açık isteğine yanıt verir.
+- Bir `CFrameWnd` çerçeve penceresi dosya yöneticisinden sürüklenen ve çerçeve penceresinde bırakılan bir dosyayı açar. Bir dosya uzantısı kayıtlı ve uygulamayla ilişkiliyse, çerçeve penceresi Kullanıcı dosya yöneticisinde bir veri dosyası açtığında veya Windows işlevi çağrıldığında gerçekleşen dinamik veri değişimi (DDE) açık isteğine yanıt verir `ShellExecute` .
 
-- Çerçeve penceresi ana uygulama penceresiise (diğer `CWinThread::m_pMainWnd`bir şekilde), kullanıcı uygulamayı kapattığında, çerçeve penceresi kullanıcıdan değiştirilen `OnClose` belgeleri `OnQueryEndSession`kaydetmesini ister (için ve).
+- Çerçeve penceresi ana uygulama penceresuyorsa (yani `CWinThread::m_pMainWnd` ), Kullanıcı uygulamayı kapattığında çerçeve penceresi kullanıcıdan değiştirilen tüm belgeleri kaydetmesini ister ( `OnClose` ve için `OnQueryEndSession` ).
 
-- Çerçeve penceresi ana uygulama penceresiise, çerçeve penceresi WinHelp'i çalıştırmak için bağlamdır. Çerçeve penceresini kapatmak WINHELP'i kapatır. EXE bu uygulama için yardım için başlatıldı.
+- Çerçeve penceresi ana uygulama penceresuyorsa, çerçeve penceresi WinHelp 'yi çalıştırmaya yönelik bağlamdır. Çerçeve penceresinin kapatılması, bu uygulama için yardım başlatıldığında WINHELP.EXE kapanır.
 
-Çerçeve penceresini yok etmek için C++ **silme** işleci kullanmayın. Bunun yerine `CWnd::DestroyWindow` kullanın. Pencere `CFrameWnd` yok `PostNcDestroy` edildiğinde C++ nesnesi siler. Kullanıcı çerçeve penceresini kapattığında, `OnClose` varsayılan işleyici `DestroyWindow`.
+**`delete`** Bir çerçeve penceresini yok etmek Için C++ işlecini kullanmayın. Bunun yerine `CWnd::DestroyWindow` kullanın. Uygulamasının `CFrameWnd` uygulanması, `PostNcDestroy` pencere yok edildiğinde C++ nesnesini silecektir. Kullanıcı çerçeve penceresini kapattığında, varsayılan `OnClose` işleyici çağırır `DestroyWindow` .
 
-Daha fazla `CFrameWnd`bilgi için [Bkz. Çerçeve Windows.](../../mfc/frame-windows.md)
+Hakkında daha fazla bilgi için `CFrameWnd` bkz. [çerçeve pencereleri](../../mfc/frame-windows.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 `CFrameWnd`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cframewndactivateframe"></a><a name="activateframe"></a>CFrameWnd::Etkinleştirme Çerçevesi
+## <a name="cframewndactivateframe"></a><a name="activateframe"></a>CFrameWnd:: ActivateFrame
 
-Çerçeve penceresini kullanıcıtarafından görünür ve kullanılabilir olacak şekilde etkinleştirmek ve geri yüklemek için bu üye işlevini arayın.
+Görünür ve Kullanıcı tarafından kullanılabilir olması için çerçeve penceresini etkinleştirmek ve geri yüklemek için bu üye işlevi çağırın.
 
 ```
 virtual void ActivateFrame(int nCmdShow = -1);
@@ -268,31 +268,31 @@ virtual void ActivateFrame(int nCmdShow = -1);
 ### <a name="parameters"></a>Parametreler
 
 *nCmdShow*<br/>
-CWnd geçmek için parametre [belirtir::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow). Varsayılan olarak, çerçeve gösterilir ve doğru şekilde geri yüklenir.
+[CWnd:: ShowWindow](../../mfc/reference/cwnd-class.md#showwindow)'a geçirilecek parametreyi belirtir. Varsayılan olarak, çerçeve gösterilir ve doğru şekilde geri yüklenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev genellikle dde, OLE veya çerçeve penceresini veya içeriğini kullanıcıya gösterebilecek başka bir olay gibi kullanıcı dışı bir arabirim olayından sonra çağrılır.
+Bu üye işlev genellikle bir DDE, OLE veya bir kullanıcı arabirimi gibi bir kullanıcı arabirimi olayından sonra, çerçeve penceresini veya içeriğini kullanıcıya gösteremeyen başka bir olay olarak çağrılır.
 
-Varsayılan uygulama çerçeveyi etkinleştirir ve Z sırasının en üstüne getirir ve gerekirse uygulamanın ana çerçeve penceresi için aynı adımları yürütür.
+Varsayılan uygulama çerçeveyi etkinleştirir ve Z düzeninin en üstüne getirir ve gerekirse uygulamanın ana çerçeve penceresi için aynı adımları gerçekleştirir.
 
-Çerçevenin etkinleştirilme şeklini değiştirmek için bu üye işlevi geçersiz kılın. Örneğin, MDI alt pencerelerini en üst düzeye çıkarmaya zorlayabilirsiniz. Uygun işlevselliği ekleyin, ardından taban sınıf sürümünü açık bir *nCmdShow*ile arayın.
+Çerçevenin nasıl etkinleştirildiğini değiştirmek için bu üye işlevini geçersiz kılın. Örneğin, MDI alt pencerelerini ekranı kaplayacak şekilde zorlayabilirsiniz. Uygun işlevi ekleyin ve ardından bir açık *nCmdShow*ile temel sınıf sürümünü çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#1](../../mfc/reference/codesnippet/cpp/cframewnd-class_1.cpp)]
 
-## <a name="cframewndbeginmodalstate"></a><a name="beginmodalstate"></a>CFrameWnd::BeginModalState
+## <a name="cframewndbeginmodalstate"></a><a name="beginmodalstate"></a>CFrameWnd:: BeginModalState
 
-Bir çerçeve penceresi modal yapmak için bu üye işlevi arayın.
+Bir çerçeve penceresini kalıcı hale getirmek için bu üye işlevini çağırın.
 
 ```
 virtual void BeginModalState();
 ```
 
-## <a name="cframewndcframewnd"></a><a name="cframewnd"></a>CFrameWnd::CFrameWnd
+## <a name="cframewndcframewnd"></a><a name="cframewnd"></a>CFrameWnd:: CFrameWnd
 
-Bir `CFrameWnd` nesne oluşturur, ancak görünür çerçeve penceresi oluşturmaz.
+Bir `CFrameWnd` nesne oluşturur, ancak görünür çerçeve penceresini oluşturmaz.
 
 ```
 CFrameWnd();
@@ -300,11 +300,11 @@ CFrameWnd();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünür `Create` pencereyi oluşturmak için arayın.
+`Create`Görünür pencereyi oluşturmak için çağırın.
 
-## <a name="cframewndcreate"></a><a name="create"></a>CFrameWnd::Oluştur
+## <a name="cframewndcreate"></a><a name="create"></a>CFrameWnd:: Create
 
-`CFrameWnd` Nesneyle ilişkili Windows çerçeve penceresi oluşturmak ve başlatmayı arayın.
+Nesnesiyle ilişkili Windows çerçeve penceresini oluşturmak ve başlatmak için çağırın `CFrameWnd` .
 
 ```
 virtual BOOL Create(
@@ -321,42 +321,42 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpszClassName*<br/>
-Windows sınıfını isimleyen geçersiz sonlandırılmış karakter dizesini işaret edin. Sınıf `AfxRegisterWndClass` adı, genel işlevveya `RegisterClass` Windows işlevine kayıtlı herhangi bir ad olabilir. NULL ise, önceden tanımlanmış `CFrameWnd` varsayılan öznitelikleri kullanır.
+Windows sınıfına ad veren null ile sonlandırılmış bir karakter dizesini işaret eder. Sınıf adı, `AfxRegisterWndClass` genel işlev veya Windows işlevi ile kaydedilmiş herhangi bir ad olabilir `RegisterClass` . NULL ise, önceden tanımlanmış varsayılan `CFrameWnd` öznitelikleri kullanır.
 
 *lpszWindowName*<br/>
-Pencere adını temsil eden null-sonlandırılan karakter dizesini gösterir. Başlık çubuğu için metin olarak kullanılır.
+Pencere adını temsil eden, null ile sonlandırılmış bir karakter dizesini işaret eder. Başlık çubuğu için metin olarak kullanılır.
 
-*Dwstyle*<br/>
-Pencere [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) özniteliklerini belirtir. Başlık çubuğunun pencerede temsil edilen belgenin adını otomatik olarak görüntülemesini istiyorsanız FWS_ADDTOTITLE stilini ekleyin.
+*dwStyle*<br/>
+Pencere [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) özniteliklerini belirtir. Başlık çubuğunun pencerede temsil edilen belge adını otomatik olarak görüntülemesini istiyorsanız FWS_ADDTOTITLE stilini ekleyin.
 
 *Rect*<br/>
-Pencerenin boyutunu ve konumunu belirtir. *rectDefault* değeri, Windows'un yeni pencerenin boyutunu ve konumunu belirtmesine olanak tanır.
+Pencerenin boyutunu ve konumunu belirtir. *RectDefault* değeri Windows 'un yeni pencerenin boyutunu ve konumunu belirlemesine izin verir.
 
 *pParentWnd*<br/>
-Bu çerçeve penceresinin ana penceresini belirtir. Bu parametre üst düzey çerçeve pencereleri için NULL olmalıdır.
+Bu çerçeve penceresinin üst penceresini belirtir. Bu parametre, üst düzey çerçeve pencereleri için NULL olmalıdır.
 
 *lpszMenuName*<br/>
-Pencereyle birlikte kullanılacak menü kaynağının adını tanımlar. Menüde dize yerine tamsayı kimliği varsa MAKEINTRESOURCE'ı kullanın. Bu parametre NULL olabilir.
+Pencereyle birlikte kullanılacak menü kaynağının adını tanımlar. Menüdeki bir dize yerine bir tamsayı KIMLIĞI varsa, MAKEINTRESOURCE kullanın. Bu parametre NULL olabilir.
 
 *dwExStyle*<br/>
-Pencere genişletilmiş [stil](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) özniteliklerini belirtir.
+Pencere genişletilmiş [Stil](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) özniteliklerini belirtir.
 
-*Pcontext*<br/>
-[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısıiçin bir işaretçi belirtir. Bu parametre NULL olabilir.
+*pContext*<br/>
+[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısına yönelik bir işaretçi belirtir. Bu parametre NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlatma başarılı olursa sıfırsız; aksi takdirde 0.
+Başlatma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CFrameWnd` nesneyi iki adımda oluştur. İlk olarak, `CFrameWnd` nesneyi oluşturan oluşturucuyu çağırın `Create`ve ardından Windows çerçeve penceresini oluşturan `CFrameWnd` ve nesneye iliştiren ", " çağırın. `Create`pencerenin sınıf adını ve pencere adını aparat eder ve stili, üst öğesi ve ilişkili menüsü için varsayılan değerleri kaydeder.
+`CFrameWnd`İki adımda bir nesne oluşturun. İlk olarak, nesnesini oluşturan oluşturucuyu çağırın `CFrameWnd` ve sonra `Create` Windows çerçeve penceresini oluşturan ve bunu nesnesine ekleyen çağırın `CFrameWnd` . `Create`pencerenin sınıf adını ve pencere adını başlatır ve stili, üst ve ilişkili menüsü için varsayılan değerleri kaydeder.
 
-Bağımsız değişkenlerini belirtmek yerine çerçeve penceresini kaynaktan yüklemek yerine kullanın. `LoadFrame` `Create`
+`LoadFrame` `Create` Çerçeve penceresini, bağımsız değişkenlerini belirtmek yerine bir kaynaktan yüklemek yerine kullanın.
 
-## <a name="cframewndcreateview"></a><a name="createview"></a>CFrameWnd::CreateView
+## <a name="cframewndcreateview"></a><a name="createview"></a>CFrameWnd:: CreateView
 
-Çerçeve `CreateView` içinde görünüm oluşturmak için arayın.
+`CreateView`Çerçeve içinde bir görünüm oluşturmak için çağırın.
 
 ```
 CWnd* CreateView(
@@ -366,23 +366,23 @@ CWnd* CreateView(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pcontext*<br/>
+*pContext*<br/>
 Görünüm ve belge türünü belirtir.
 
-*Nıd*<br/>
-Görünümün kimlik numarası.
+*NID*<br/>
+Bir görünümün KIMLIK numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CWnd` nesneye işaretçi; aksi takdirde NULL.
+`CWnd`Başarılı olursa nesne işaretçisi; aksi takdırde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çerçeve içinde türetilmiş olmayan `CView`"görünümler" oluşturmak için bu üye işlevi kullanın. Aradıktan `CreateView`sonra, görünümü el ile etkin olarak ayarlamalı ve görünür olacak şekilde ayarlamanız gerekir; bu görevler otomatik olarak `CreateView`.
+Bir çerçeve içinde türetilmeyen "görünümler" oluşturmak için bu üye işlevini kullanın `CView` . Çağrıldıktan sonra `CreateView` , görünümü el ile etkin olarak ayarlamanız ve görünür olacak şekilde ayarlamanız gerekir; bu görevler tarafından otomatik olarak gerçekleştirilmez `CreateView` .
 
-## <a name="cframewnddockcontrolbar"></a><a name="dockcontrolbar"></a>CFrameWnd::DockControlBar
+## <a name="cframewnddockcontrolbar"></a><a name="dockcontrolbar"></a>CFrameWnd::D ockControlBar
 
-Denetim çubuğunun çerçeve penceresine sabitlenebedilmesine neden olur.
+Bir denetim çubuğunun çerçeve penceresine yerleştirilmesine neden olur.
 
 ```cpp
 void DockControlBar(
@@ -394,31 +394,31 @@ void DockControlBar(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-Kenetlenecek kontrol çubuğunu işaret edin.
+Yerleşik olacak denetim çubuğunu işaret eder.
 
 *nDockBarID*<br/>
-Yerleştirme için çerçeve penceresinin hangi taraflarını göz önünde bulundurması gerektiğini belirler. 0 veya aşağıdakilerden biri veya daha fazlası olabilir:
+Çerçeve penceresinin hangi yüzlerini sabitleme için dikkate verileceğini belirler. 0 veya aşağıdakilerden biri veya daha fazlası olabilir:
 
-- AFX_IDW_DOCKBAR_TOP Çerçeve penceresinin üst tarafına dock.
+- AFX_IDW_DOCKBAR_TOP çerçeve penceresinin üst tarafına yerleştir.
 
-- AFX_IDW_DOCKBAR_BOTTOM Çerçeve penceresinin alt tarafına sabitle.
+- AFX_IDW_DOCKBAR_BOTTOM çerçeve penceresinin alt tarafına yerleştir.
 
-- AFX_IDW_DOCKBAR_LEFT Çerçeve penceresinin sol tarafına dock.
+- AFX_IDW_DOCKBAR_LEFT çerçeve penceresinin sol tarafına yerleştirin.
 
-- AFX_IDW_DOCKBAR_RIGHT Çerçeve penceresinin sağ tarafına sabitle.
+- AFX_IDW_DOCKBAR_RIGHT çerçeve penceresinin sağ tarafına yerleştirin.
 
-0 ise, kontrol çubuğu hedef çerçeve penceresine yerleştirme için etkin olan herhangi bir tarafa sabitlenebilir.
+0 ise, denetim çubuğu hedef çerçeve penceresinde yerleştirme için etkin olan herhangi bir tarafa sabitlenebilir.
 
-*Lprect*<br/>
-Ekran koordinatlarında, kontrol çubuğunun hedef çerçeve penceresinin istemci olmayan alanına nerede kenetleneceğini belirler.
+*lpRect*<br/>
+Denetim çubuğunun hedef çerçeve penceresinin istemci olmayan alanına yerleştirilme ekran koordinatlarını belirler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim çubuğu, hem [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) hem de [CFrameWnd::EnableDocking'e](#enabledocking)yapılan aramalarda belirtilen çerçeve penceresinin kenarlarından birine sabitlenir. Seçilen yan *nDockBarID*tarafından belirlenir.
+Denetim çubuğu, hem [CControlBar:: EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) hem de [CFrameWnd:: EnableDocking](#enabledocking)çağrılarında belirtilen çerçeve penceresinin kenarlarından birine yerleştirilir. Seçilen kenar *nDockBarID*tarafından belirlenir.
 
-## <a name="cframewndenabledocking"></a><a name="enabledocking"></a>CFrameWnd::Etkinleştirme Docking
+## <a name="cframewndenabledocking"></a><a name="enabledocking"></a>CFrameWnd:: EnableDocking
 
-Çerçeve penceresinde takılabilir denetim çubuklarını etkinleştirmek için bu işlevi çağırın.
+Bir çerçeve penceresinde yerleştirilebilir denetim çubuklarını etkinleştirmek için bu işlevi çağırın.
 
 ```cpp
 void EnableDocking(DWORD dwDockStyle);
@@ -427,29 +427,29 @@ void EnableDocking(DWORD dwDockStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwDockStyle*<br/>
-Çerçeve penceresinin hangi taraflarının denetim çubukları için yerleştirme siteleri olarak hizmet edebileceğini belirtir. Aşağıdakilerden biri veya birkaçı olabilir:
+Çerçeve penceresinin hangi yüzlerini denetim çubukları için yerleştirme siteleri olarak barındırabileceği belirtir. Aşağıdakilerden biri veya birkaçı olabilir:
 
-- CBRS_ALIGN_TOP İstemci alanının üst kısmında kenetlenme sağlar.
+- CBRS_ALIGN_TOP, istemci alanının en üstünde yerleştirme yapılmasına Izin verir.
 
-- CBRS_ALIGN_BOTTOM İstemci alanının altına kenetlenmeyi sağlar.
+- CBRS_ALIGN_BOTTOM, istemci alanının en altında yerleştirmeyi sağlar.
 
-- CBRS_ALIGN_LEFT İstemci alanının sol tarafına kenetlenmeyi sağlar.
+- CBRS_ALIGN_LEFT istemci alanının sol tarafında yerleştirme yapılmasına Izin verir.
 
-- CBRS_ALIGN_RIGHT İstemci alanının sağ tarafına kenetlenmeyi sağlar.
+- CBRS_ALIGN_RIGHT istemci alanının sağ tarafında yerleştirme yapılmasına Izin verir.
 
-- CBRS_ALIGN_ANY İstemci alanının herhangi bir tarafına kenetlenmeyi sağlar.
+- CBRS_ALIGN_ANY istemci alanının herhangi bir tarafında yerleştirme yapılmasına Izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, denetim çubukları aşağıdaki sırada çerçeve penceresinin bir tarafına sabitlenir: üst, alt, sol, sağ.
+Varsayılan olarak, denetim çubukları çerçeve penceresinin bir tarafına şu sırada yerleştirilir: üst, alt, sol, sağ.
 
 ### <a name="example"></a>Örnek
 
-  CToolBar örneğine [bakın:Oluştur](../../mfc/reference/ctoolbar-class.md#create).
+  [CToolBar:: Create](../../mfc/reference/ctoolbar-class.md#create)örneğine bakın.
 
-## <a name="cframewndendmodalstate"></a><a name="endmodalstate"></a>CFrameWnd::EndModalState
+## <a name="cframewndendmodalstate"></a><a name="endmodalstate"></a>CFrameWnd:: EndModalState
 
-Bir çerçeve penceresini modal'dan modeless'a değiştirmek için bu üye işlevini arayın.
+Bir çerçeve penceresini kalıcı durumundan kalıcı olarak değiştirmek için bu üye işlevi çağırın.
 
 ```
 virtual void EndModalState();
@@ -457,11 +457,11 @@ virtual void EndModalState();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`EndModalState`[BeginModalState](#beginmodalstate)tarafından devre dışı bırakılan tüm pencereleri etkinleştirir.
+`EndModalState`[BeginModalState](#beginmodalstate)tarafından devre dışı bırakılan tüm pencereleri etkin bir şekilde sunar.
 
-## <a name="cframewndfloatcontrolbar"></a><a name="floatcontrolbar"></a>CFrameWnd::FloatControlBar
+## <a name="cframewndfloatcontrolbar"></a><a name="floatcontrolbar"></a>CFrameWnd:: FloatControlBar
 
-Bir denetim çubuğunun çerçeve penceresine sabitlenmemesi için bu işlevi çağırın.
+Bir denetim çubuğunun çerçeve penceresine yerleştirilmemesine neden olmak için bu işlevi çağırın.
 
 ```cpp
 void FloatControlBar(
@@ -473,33 +473,33 @@ void FloatControlBar(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-Yüzdürilecek kontrol çubuğuna işaret edin.
+Kaydırılan denetim çubuğunu işaret eder.
 
-*Nokta*<br/>
-Kontrol çubuğunun sol üst köşesinin yerleştirileceği ekran koordinatlarında konum.
+*seçeneğinin*<br/>
+Denetim çubuğunun sol üst köşesinin yerleştirileceği, ekran koordinatlarına göre konumu.
 
-*Dwstyle*<br/>
-Denetim çubuğunu yeni çerçeve penceresi içinde yatay mı yoksa dikey olarak mı hizalayacağını belirtir. Aşağıdakilerden herhangi biri olabilir:
+*dwStyle*<br/>
+Denetim çubuğunun yeni çerçeve penceresinde yatay veya dikey olarak hizalanıp hizalanmayacağını belirtir. Aşağıdakilerden biri olabilir:
 
-- CBRS_ALIGN_TOP Kontrol çubuğunu dikey olarak yönlendirir.
+- CBRS_ALIGN_TOP denetim çubuğunu dikey olarak yönlendirir.
 
-- CBRS_ALIGN_BOTTOM Kontrol çubuğunu dikey olarak yönlendirir.
+- CBRS_ALIGN_BOTTOM denetim çubuğunu dikey olarak yönlendirir.
 
-- CBRS_ALIGN_LEFT Kontrol çubuğunu yatay olarak yönlendirir.
+- CBRS_ALIGN_LEFT, Denetim çubuğunu yatay olarak yönlendirir.
 
-- CBRS_ALIGN_RIGHT Yönler kontrol çubuğu yatay.
+- CBRS_ALIGN_RIGHT, Denetim çubuğunu yatay olarak yönlendirir.
 
-Hem yatay hem de dikey yönlendirmeyi belirten stiller geçilirse, araç çubuğu yatay olarak yönlendirilir.
+Stiller hem yatay hem de Dikey yönlendirmeyi belirttiyse, araç çubuğu yatay olarak dağıtılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, program önceki yürütme ayarları geri olduğunda bu uygulama başlangıç yapılır.
+Genellikle, bu, program önceki yürütmeden ayarları geri yüklerken uygulama başlangıcında yapılır.
 
-Bu işlev, kullanıcı sol fare düğmesini bırakarak bir bırakma işlemine neden olduğunda, denetim çubuğunu yerleştirme için kullanılamayan bir konumun üzerine sürüklerek çerçeve tarafından çağrılır.
+Bu işlev, Kullanıcı, Denetim çubuğunu yerleştirme için kullanılamayan bir konum üzerine sürüklerken sol fare düğmesini serbest bırakarak bir bırakma işlemine neden olduğunda, Framework tarafından çağrılır.
 
-## <a name="cframewndgetactivedocument"></a><a name="getactivedocument"></a>CFrameWnd::GetActiveDocument
+## <a name="cframewndgetactivedocument"></a><a name="getactivedocument"></a>CFrameWnd:: GetActiveDocument
 
-Geçerli etkin görünüme bağlı akımiçin `CDocument` bir işaretçi almak için bu üye işlevi arayın.
+Geçerli etkin görünüme iliştirilmiş geçerli bir işaretçi almak için bu üye işlevini çağırın `CDocument` .
 
 ```
 virtual CDocument* GetActiveDocument();
@@ -507,11 +507,11 @@ virtual CDocument* GetActiveDocument();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli [CDocument](../../mfc/reference/cdocument-class.md)için bir işaretçi . Geçerli bir belge yoksa NULL döndürür.
+Geçerli [CDocument](../../mfc/reference/cdocument-class.md)işaretçisi. Geçerli belge yoksa, NULL değerini döndürür.
 
-## <a name="cframewndgetactiveframe"></a><a name="getactiveframe"></a>CFrameWnd::GetActiveFrame
+## <a name="cframewndgetactiveframe"></a><a name="getactiveframe"></a>CFrameWnd:: GetActiveFrame
 
-MDI çerçeve penceresinin etkin çoklu belge arabirimi (MDI) alt penceresine işaretçi almak için bu üye işlevi arayın.
+Bir MDI çerçeve penceresinin etkin birden çok belge arabirimi (MDI) alt penceresine bir işaretçi almak için bu üye işlevini çağırın.
 
 ```
 virtual CFrameWnd* GetActiveFrame();
@@ -519,15 +519,15 @@ virtual CFrameWnd* GetActiveFrame();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Etkin MDI alt penceresiiçin bir işaretçi. Uygulama bir SDI uygulamasıysa veya MDI çerçeve penceresi etkin bir belgeye sahip değilse, **örtük bu** işaretçi döndürülür.
+Etkin MDI alt penceresine yönelik bir işaretçi. Uygulama bir SDI uygulaması veya MDI çerçeve penceresinde etkin bir belge yoksa örtük **`this`** işaretçi döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Etkin Bir MDI alt alanı yoksa veya uygulama tek bir belge arabirimi (SDI) ise, **örtük bu** işaretçi döndürülür.
+Etkin bir MDI alt öğesi yoksa veya uygulama tek bir belge arabirimi (SDI) ise örtük **`this`** işaretçi döndürülür.
 
-## <a name="cframewndgetactiveview"></a><a name="getactiveview"></a>CFrameWnd::GetActiveView
+## <a name="cframewndgetactiveview"></a><a name="getactiveview"></a>CFrameWnd:: GetActiveView
 
-Bir çerçeve penceresine bağlı etkin görünüm (varsa) için bir işaretçi `CFrameWnd`almak için bu üye işlevi arayın ( ).
+Bir çerçeve penceresine () iliştirilmiş etkin görünüm (varsa) için bir işaretçi almak üzere bu üye işlevini çağırın `CFrameWnd` .
 
 ```
 CView* GetActiveView() const;
@@ -535,17 +535,17 @@ CView* GetActiveView() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli [CView](../../mfc/reference/cview-class.md)için bir işaretçi . Geçerli görünüm yoksa NULL döndürür.
+Geçerli [CView](../../mfc/reference/cview-class.md)işaretçisi. Geçerli görünüm yoksa, NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MDI ana çerçeve penceresi `CMDIFrameWnd`için çağrıldığında NULL döndürür ( ). Bir MDI uygulamasında, MDI ana çerçeve penceresi ile ilişkili bir görünüm yok. Bunun yerine, her `CMDIChildWnd`bir alt pencere ( ) bir veya daha fazla ilişkili görünümleri vardır. Bir MDI uygulamasındaki etkin görünüm, önce etkin MDI alt penceresi nin bulunması ve ardından bu alt pencerenin etkin görünümünü niçin bularak elde edilebilir. Etkin MDI alt penceresi işlevi `MDIGetActive` arayarak `GetActiveFrame` veya aşağıdaki lerde gösterildiği gibi bulunabilir:
+Bu işlev, bir MDI ana kare penceresi () için çağrıldığında NULL değerini döndürür `CMDIFrameWnd` . MDI uygulamasında MDI ana çerçeve penceresinde onunla ilişkili bir görünüm yoktur. Bunun yerine, her bir alt pencerenin ( `CMDIChildWnd` ) bir veya daha fazla ilişkili görünümü vardır. MDI uygulamasındaki etkin görünüm, önce etkin MDI alt penceresi eklenerek ve ardından o alt pencere için etkin görünüm bulunurken elde edilebilir. Etkin MDI alt penceresi, işlevi çağırarak `MDIGetActive` veya `GetActiveFrame` aşağıdaki şekilde gösterildiği gibi bulunabilir:
 
 [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/cpp/cframewnd-class_2.cpp)]
 
-## <a name="cframewndgetcontrolbar"></a><a name="getcontrolbar"></a>CFrameWnd::GetControlBar
+## <a name="cframewndgetcontrolbar"></a><a name="getcontrolbar"></a>CFrameWnd:: GetControlBar
 
-Kimlikle ilişkili denetim çubuğuna erişmek için arayın. `GetControlBar`
+`GetControlBar`Kimlik ile ilişkili denetim çubuğuna erişim kazanmak için çağırın.
 
 ```
 CControlBar* GetControlBar(UINT nID);
@@ -553,22 +553,22 @@ CControlBar* GetControlBar(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Kontrol çubuğunun kimlik numarası.
+*NID*<br/>
+Bir denetim çubuğunun KIMLIK numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kimlikle ilişkili denetim çubuğuna işaretçi.
+KIMLIK ile ilişkili denetim çubuğuna yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nID* parametresi, denetim `Create` çubuğunun yöntemine geçirilen benzersiz tanımlayıcıyı ifade eder. Denetim çubukları hakkında daha fazla bilgi için Denetim [Çubukları](../../mfc/control-bars.md)başlıklı konuya bakın.
+*NID* parametresi, denetim çubuğunun yöntemine geçirilen benzersiz tanımlayıcıyı ifade eder `Create` . Denetim çubukları hakkında daha fazla bilgi için [Denetim çubukları](../../mfc/control-bars.md)başlıklı konuya bakın.
 
-`GetControlBar`yüzer ve bu nedenle şu anda çerçevenin bir alt penceresi olmasa bile denetim çubuğu döndürecektir.
+`GetControlBar`, kayan olsa bile denetim çubuğunu döndürür ve bu nedenle şu anda çerçevenin alt penceresi değildir.
 
-## <a name="cframewndgetdockstate"></a><a name="getdockstate"></a>CFrameWnd::GetDockState
+## <a name="cframewndgetdockstate"></a><a name="getdockstate"></a>CFrameWnd:: GetDockState
 
-Çerçeve penceresinin denetim çubukları hakkındaki durum bilgilerini bir `CDockState` nesnede depolamak için bu üye işlevi arayın.
+Bir nesnedeki çerçeve penceresinin denetim çubukları hakkında durum bilgilerini depolamak için bu üye işlevi çağırın `CDockState` .
 
 ```cpp
 void GetDockState(CDockState& state) const;
@@ -576,16 +576,16 @@ void GetDockState(CDockState& state) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*durum*<br/>
-Döndükten sonra çerçeve penceresinin denetim çubuklarının geçerli durumunu içerir.
+*durumunda*<br/>
+Dönüş sırasında çerçeve penceresinin denetim çubuklarının geçerli durumunu içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha sonra kullanarak depolama `CDockState` `CDockState::SaveState` ya da `Serialize`içeriğini yazabilirsiniz. Daha sonra denetim çubuklarını önceki bir duruma geri yüklemek `CDockState::LoadState` `Serialize`istiyorsanız, `SetDockState` durumu yükleyin veya , önceki durumu çerçeve penceresinin denetim çubuklarına uygulamak için arayın.
+Daha sonra, `CDockState` veya kullanarak depolama alanına içeriğini yazabilirsiniz `CDockState::SaveState` `Serialize` . Daha sonra Denetim çubuklarını önceki bir duruma geri yüklemek istiyorsanız, durumu veya ile yükleyin ve `CDockState::LoadState` `Serialize` ardından `SetDockState` önceki durumu çerçeve penceresinin denetim çubuklarına uygulamak için çağırın.
 
-## <a name="cframewndgetmenubarstate"></a><a name="getmenubarstate"></a>CFrameWnd::GetMenuBarState
+## <a name="cframewndgetmenubarstate"></a><a name="getmenubarstate"></a>CFrameWnd:: GetMenuBarState
 
-Geçerli MFC uygulamasında menünün görüntü durumunu alır.
+Geçerli MFC uygulamasındaki menünün görüntüleme durumunu alır.
 
 ```
 virtual DWORD GetMenuBarState();
@@ -593,19 +593,19 @@ virtual DWORD GetMenuBarState();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri aşağıdaki değerlere sahip olabilir:
+Dönüş değeri aşağıdaki değerlere sahip olabilir:
 
-- AFX_MBS_VISIBLE (0x01) - Menü görünür.
+- AFX_MBS_VISIBLE (0x01)-menü görünür.
 
-- AFX_MBS_HIDDEN (0x02) - Menü gizlidir.
+- AFX_MBS_HIDDEN (0x02)-menü gizlenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı hatası oluşursa, bu yöntem Hata Ayıklama modunda öne çıkar ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilen bir özel durum ortaya çıkarır.
+Bir çalışma zamanı hatası oluşursa, bu yöntem hata ayıklama modunda onaylar ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilmiş bir özel durum oluşturur.
 
-## <a name="cframewndgetmenubarvisibility"></a><a name="getmenubarvisibility"></a>CFrameWnd::GetMenuBarVisibility
+## <a name="cframewndgetmenubarvisibility"></a><a name="getmenubarvisibility"></a>CFrameWnd:: GetMenuBarVisibility
 
-Geçerli MFC uygulamasındaki menünün varsayılan durumunun gizli mi yoksa görünür mü olduğunu gösterir.
+Geçerli MFC uygulamasındaki menünün varsayılan durumunun gizli veya görünür olup olmadığını gösterir.
 
 ```
 virtual DWORD CFrameWnd::GetMenuBarVisibility();
@@ -615,19 +615,19 @@ virtual DWORD CFrameWnd::GetMenuBarVisibility();
 
 Bu yöntem aşağıdaki değerlerden birini döndürür:
 
-- AFX_MBV_KEEPVISIBLE (0x01) - Menü her zaman görüntülenir ve varsayılan olarak odak noktası yoktur.
+- AFX_MBV_KEEPVISIBLE (0x01)-menü her zaman görüntülenir ve varsayılan olarak odağa sahip değildir.
 
-- AFX_MBV_DISPLAYONFOCUS (0x02) - Menü varsayılan olarak gizlidir. Menü gizliyse, menüyü görüntülemek ve odağı vermek için ALT tuşuna basın. Menü görüntüleniyorsa, gizlemek için ALT veya ESC tuşuna basın.
+- AFX_MBV_DISPLAYONFOCUS (0x02)-menü varsayılan olarak gizlidir. Menü gizliyse, menüyü göstermek ve odağı vermek için ALT tuşuna basın. Menü görüntüleniyorsa, gizlemek için ALT veya ESC tuşuna basın.
 
-- AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04) (bitwise kombinasyonu (VEYA)) - Menü varsayılan olarak gizlidir. Menü gizliyse, menüyü görüntülemek ve odağı vermek için F10 tuşuna basın. Menü görüntülenirse, menüdeki veya menüden odağı kaydırmak için F10 tuşuna basın. Menü, gizlemek için ALT veya ESC tuşuna basana kadar görüntülenir.
+- AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04) (bit düzeyinde birleşim (veya))-menü varsayılan olarak gizlidir. Menü gizliyse, menüyü göstermek ve odağı vermek için F10 tuşuna basın. Menü görüntüleniyorsa, odağı açıp kapatmak için F10 tuşuna basın. Menü, ALT veya ESC tuşuna basarak gizleyecek şekilde görüntülenir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı hatası oluşursa, bu yöntem Hata Ayıklama modunda öne çıkar ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilen bir özel durum ortaya çıkarır.
+Bir çalışma zamanı hatası oluşursa, bu yöntem hata ayıklama modunda onaylar ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilmiş bir özel durum oluşturur.
 
-## <a name="cframewndgetmessagebar"></a><a name="getmessagebar"></a>CFrameWnd::GetMessageBar
+## <a name="cframewndgetmessagebar"></a><a name="getmessagebar"></a>CFrameWnd:: GetMessageBar
 
-Durum çubuğuna bir işaretçi almak için bu üye işlevi arayın.
+Durum çubuğuna bir işaretçi almak için bu üye işlevi çağırın.
 
 ```
 virtual CWnd* GetMessageBar();
@@ -635,11 +635,11 @@ virtual CWnd* GetMessageBar();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Durum çubuğu penceresine işaretçi.
+Durum çubuğu penceresine yönelik işaretçi.
 
-## <a name="cframewndgetmessagestring"></a><a name="getmessagestring"></a>CFrameWnd::GetMessageString
+## <a name="cframewndgetmessagestring"></a><a name="getmessagestring"></a>CFrameWnd:: GetMessageString
 
-Komut iÞleri iÞlisi için özel dizeli ler sağlamak için bu işlevi geçersiz kıntır.
+Komut kimlikleri için özel dizeler sağlamak üzere bu işlevi geçersiz kılın.
 
 ```
 virtual void GetMessageString(
@@ -649,17 +649,17 @@ virtual void GetMessageString(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-İstenilen iletinin kaynak kimliği.
+*NID*<br/>
+İstenen iletinin kaynak KIMLIĞI.
 
 *rMessage*<br/>
-`CString`iletiyi yerleştirmek için nesne.
+`CString`iletinin yerleştirileceği nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, kaynak dosyasından *nID* tarafından belirtilen dizeyi yükler. Durum çubuğundaki ileti dizesinin güncelleştirilmesi gerektiğinde, bu işlev çerçeve tarafından çağrılır.
+Varsayılan uygulama, yalnızca *NID* tarafından belirtilen dizeyi kaynak dosyasından yükler. Bu işlev, durum çubuğundaki ileti dizesinin güncelleştirilmesi gerektiğinde Framework tarafından çağırılır.
 
-## <a name="cframewndgettitle"></a><a name="gettitle"></a>CFrameWnd::GetTitle
+## <a name="cframewndgettitle"></a><a name="gettitle"></a>CFrameWnd:: GetTitle
 
 Pencere nesnesinin başlığını alır.
 
@@ -671,9 +671,9 @@ CString GetTitle() const;
 
 Pencere nesnesinin geçerli başlığını içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi.
 
-## <a name="cframewndinitialupdateframe"></a><a name="initialupdateframe"></a>CFrameWnd::InitialUpdateFrame
+## <a name="cframewndinitialupdateframe"></a><a name="initialupdateframe"></a>CFrameWnd:: ınitialupdateframe
 
-Yeni `IntitialUpdateFrame` bir çerçeve oluşturduktan sonra `Create`arayın.
+`IntitialUpdateFrame`İle yeni bir çerçeve oluşturduktan sonra çağırın `Create` .
 
 ```cpp
 void InitialUpdateFrame(
@@ -684,20 +684,20 @@ void InitialUpdateFrame(
 ### <a name="parameters"></a>Parametreler
 
 *pDoc*<br/>
-Çerçeve penceresinin ilişkili olduğu belgeyi işaret ediyor. NULL olabilir.
+Çerçeve penceresinin ilişkilendirildiği belgeyi işaret eder. NULL olabilir.
 
 *bMakeVisible*<br/>
-TRUE ise, çerçevenin görünür ve etkin hale gelmesi gerektiğini gösterir. FALSE ise, hiçbir torunları görünür hale getirilir.
+DOĞRU ise, çerçevenin görünür ve etkin hale gelmesi gerektiğini gösterir. YANLıŞSA, hiçbir alt öğe görünür hale getirilmez.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, bu çerçeve penceresindeki tüm `OnInitialUpdate` görünümlerinin çağrılarını almasına neden olur.
+Bu, bu çerçeve penceresindeki tüm görünümlerin aramalarını almasına neden olur `OnInitialUpdate` .
 
-Ayrıca, daha önce etkin bir görünüm yoksa, çerçeve penceresinin birincil görünümü etkin hale getirilir. Birincil görünüm, AFX_IDW_PANE_FIRST çocuk kimliğine sahip bir görünümdür. Son olarak, *bMakeVisible* sıfır değilse çerçeve penceresi görünür hale getirilir. *bMakeVisible* 0 ise, çerçeve penceresinin geçerli odak ve görünür durumu değişmeden kalır. Dosya Yeni ve Dosya Aç'ın çerçevesinin uygulamasını kullanırken bu işlevi aramak gerekli değildir.
+Ayrıca, daha önce etkin bir görünüm yoksa, çerçeve penceresinin birincil görünümü etkin hale getirilir. Birincil görünüm, AFX_IDW_PANE_FIRST alt KIMLIĞI olan bir görünümüdür. Son olarak, *bMakeVisible* sıfır değilse çerçeve penceresi görünür hale getirilir. *BMakeVisible* 0 ise, çerçeve penceresinin geçerli odağı ve görünür durumu değişmeden kalır. Framework 'ün yeni dosya ve dosya açma uygulamasının uygulanması kullanılırken bu işlevi çağırmak gerekli değildir.
 
-## <a name="cframewndinmodalstate"></a><a name="inmodalstate"></a>CFrameWnd::InModalState
+## <a name="cframewndinmodalstate"></a><a name="inmodalstate"></a>CFrameWnd:: InModalState
 
-Çerçeve penceresinin modal veya modeless olup olmadığını kontrol etmek için bu üye işlevi arayın.
+Bir çerçeve penceresinin kalıcı veya kalıcı olup olmadığını denetlemek için bu üye işlevi çağırın.
 
 ```
 BOOL InModalState() const;
@@ -705,11 +705,11 @@ BOOL InModalState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız ise evet; aksi takdirde 0.
+Evet ise sıfır dışı; Aksi takdirde 0.
 
-## <a name="cframewndistracking"></a><a name="istracking"></a>CFrameWnd::IsTracking
+## <a name="cframewndistracking"></a><a name="istracking"></a>CFrameWnd:: IsTracking
 
-Penceredeki ayırıcı çubuğunun şu anda taşınıp taşınmamakta olup olmadığını belirlemek için bu üye işlevi arayın.
+Penceredeki Bölümlendirici çubuğunun Şu anda taşınıp taşınmadığını öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL IsTracking() const;
@@ -717,11 +717,11 @@ BOOL IsTracking() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ayırıcı işlemi devam ediyorsa sıfır olmayan; aksi takdirde 0.
+Bir Splitter işlemi devam ediyorsa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cframewndloadacceltable"></a><a name="loadacceltable"></a>CFrameWnd::LoadAccelTable
+## <a name="cframewndloadacceltable"></a><a name="loadacceltable"></a>CFrameWnd:: LoadAccelTable
 
-Belirtilen hızlandırıcı tablosunu yüklemek için arayın.
+Belirtilen Hızlandırıcı tablosunu yüklemek için çağırın.
 
 ```
 BOOL LoadAccelTable(LPCTSTR lpszResourceName);
@@ -730,23 +730,23 @@ BOOL LoadAccelTable(LPCTSTR lpszResourceName);
 ### <a name="parameters"></a>Parametreler
 
 *lpszResourceName*<br/>
-Hızlandırıcı kaynağının adını tanımlar. Kaynak bir sonda kimliğiyle tanımlanırsa MAKEINTRESOURCE'ı kullanın.
+Hızlandırıcı kaynağının adını tanımlar. Kaynak bir tamsayı KIMLIĞIYLE tanımlanmışsa MAKEINTRESOURCE kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hızlandırıcı tablosu başarıyla yüklenmişse sıfırsız; aksi takdirde 0.
+Hızlandırıcı tablosu başarıyla yüklenmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı anda yalnızca bir tablo yüklenebilir.
+Tek seferde yalnızca bir tablo yüklenebilir.
 
-Kaynaklardan yüklenen hızlandırıcı tabloları, uygulama sona erdiğinde otomatik olarak serbest bırakılır.
+Kaynaklardan yüklenen Hızlandırıcı tabloları, uygulama sonlandırıldığında otomatik olarak serbest bırakılır.
 
-Çerçeve penceresi `LoadFrame` oluşturmak için ararsanız, çerçeve menü ve simge kaynakları ile birlikte bir hızlandırıcı tablo yükler ve bu üye işlevi için sonraki bir çağrı sonra gereksizdir.
+`LoadFrame`Çerçeve penceresini oluşturmak için çağrı yaparsanız çerçeve, menü ve simge kaynaklarıyla birlikte bir Hızlandırıcı tablosu yükler ve bu üye işlevine yönelik sonraki bir çağrı gereksizdir.
 
-## <a name="cframewndloadbarstate"></a><a name="loadbarstate"></a>CFrameWnd::LoadBarState
+## <a name="cframewndloadbarstate"></a><a name="loadbarstate"></a>CFrameWnd:: LoadBarState
 
-Çerçeve penceresine ait her denetim çubuğunun ayarlarını geri yüklemek için bu işlevi arayın.
+Çerçeve penceresine ait olan her bir denetim çubuğunun ayarlarını geri yüklemek için bu işlevi çağırın.
 
 ```cpp
 void LoadBarState(LPCTSTR lpszProfileName);
@@ -755,17 +755,17 @@ void LoadBarState(LPCTSTR lpszProfileName);
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-Başlatma (INI) dosyasındaki bir bölümün veya durum bilgilerinin depolandığı Windows kayıt defterindeki bir anahtarın adı.
+Başlatma (INI) dosyasındaki bir bölümün adı veya Windows kayıt defteri 'nde durum bilgilerinin depolandığı bir anahtar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geri yüklenen bilgiler görünürlük, yatay/dikey yönlendirme, yerleştirme durumu ve kontrol çubuğu konumunu içerir.
+Geri yüklenen bilgiler görünürlük, yatay/dikey yön, yerleştirme durumu ve denetim çubuğu konumunu içerir.
 
-Geri yüklemek istediğiniz ayarlar, aramadan `LoadBarState`önce kayıt defterine yazılmalıdır. [CWinApp::SetRegistryKey'i](../../mfc/reference/cwinapp-class.md#setregistrykey)arayarak bilgileri kayıt defterine yazın. [SaveBarState'i](#savebarstate)arayarak bilgileri INI dosyasına yazın.
+Geri yüklemek istediğiniz ayarların, çağrısından önce kayıt defterine yazılması gerekir `LoadBarState` . Bu bilgileri, [CWinApp:: SetRegistryKey](../../mfc/reference/cwinapp-class.md#setregistrykey)çağırarak kayıt defterine yazın. [SaveBarState](#savebarstate)' i ÇAĞıRARAK bilgileri INI dosyasına yazın.
 
-## <a name="cframewndloadframe"></a><a name="loadframe"></a>CFrameWnd::LoadFrame
+## <a name="cframewndloadframe"></a><a name="loadframe"></a>CFrameWnd:: LoadFrame
 
-Kaynak bilgilerinden dinamik olarak bir çerçeve penceresi oluşturmak için arayın.
+Kaynak bilgilerden dinamik olarak bir çerçeve penceresi oluşturmak için çağırın.
 
 ```
 virtual BOOL LoadFrame(
@@ -777,31 +777,31 @@ virtual BOOL LoadFrame(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDKaynak*<br/>
-Çerçeve penceresiile ilişkili paylaşılan kaynakların kimliği.
+*nIDResource*<br/>
+Çerçeve penceresiyle ilişkili paylaşılan kaynakların KIMLIĞI.
 
 *dwDefaultStyle*<br/>
-Çerçevenin [stili.](../../mfc/reference/styles-used-by-mfc.md#window-styles) Başlık çubuğunun pencerede temsil edilen belgenin adını otomatik olarak görüntülemesini istiyorsanız FWS_ADDTOTITLE stilini ekleyin.
+Çerçevenin [stili](../../mfc/reference/styles-used-by-mfc.md#window-styles). Başlık çubuğunun pencerede temsil edilen belge adını otomatik olarak görüntülemesini istiyorsanız FWS_ADDTOTITLE stilini ekleyin.
 
 *pParentWnd*<br/>
-Çerçevenin üst öğesiiçin bir işaretçi.
+Çerçevenin üst öğesi için bir işaretçi.
 
-*Pcontext*<br/>
-[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısıiçin bir işaretçi. Bu parametre NULL olabilir.
+*pContext*<br/>
+[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısına yönelik bir işaretçi. Bu parametre NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CFrameWnd` nesneyi iki adımda oluştur. İlk olarak, `CFrameWnd` nesneyi oluşturan oluşturucuyu çağırın `LoadFrame`ve ardından Windows çerçeve penceresini ve ilişkili kaynakları `CFrameWnd` yükleyen ve çerçeve penceresini nesneye ekleyen " çağırın. *nIDResource* parametresi, çerçeve penceresi için başlığın menü, hızlandırıcı tablosu, simgesi ve dize kaynağını belirtir.
+`CFrameWnd`İki adımda bir nesne oluşturun. İlk olarak, nesnesini oluşturan oluşturucuyu çağırın `CFrameWnd` ve ardından `LoadFrame` Windows çerçeve penceresini ve ilişkili kaynakları yükleyen ve çerçeveye çerçeve penceresi ekleyen çağırın `CFrameWnd` . *Nidresource* parametresi menü, Hızlandırıcı tablosu, simgesini ve çerçeve penceresi için başlığın dize kaynağını belirtir.
 
-Çerçeve `Create` penceresinin oluşturma `LoadFrame` parametrelerinin tümlerini belirtmek istediğinizde yerine üye işlevi kullanın.
+`Create` `LoadFrame` Çerçeve penceresinin oluşturulma parametrelerini belirtmek istediğiniz zaman yerine Member işlevini kullanın.
 
-Çerçeve, `LoadFrame` belge şablonu nesnesini kullanarak bir çerçeve penceresi oluşturduğunda çağırır.
+Framework `LoadFrame` bir belge şablonu nesnesi kullanarak bir çerçeve penceresi oluşturduğunda çağırır.
 
-Çerçeve, içerdiği görünüm nesneleri de dahil olmak üzere çerçeve penceresine bağlanacak nesneleri belirtmek için *pContext* bağımsız değişkenini kullanır. 'yi aradiğinizde `LoadFrame` *pContext* bağımsız değişkenini NULL olarak ayarlayabilirsiniz.
+Framework, içerilen görünüm nesneleri dahil olmak üzere çerçeve penceresine bağlanacak nesneleri belirtmek için *pContext* bağımsız değişkenini kullanır. ' İ çağırdığınızda *pContext* BAĞıMSıZ değişkenini null olarak ayarlayabilirsiniz `LoadFrame` .
 
-## <a name="cframewndm_bautomenuenable"></a><a name="m_bautomenuenable"></a>CFrameWnd::m_bAutoMenuEnable
+## <a name="cframewndm_bautomenuenable"></a><a name="m_bautomenuenable"></a>CFrameWnd:: m_bAutoMenuEnable
 
-Bu veri üyesi etkinleştirildiğinde (varsayılan olan), kullanıcı bir menü aşağı çektiğinde ON_UPDATE_COMMAND_UI veya ON_COMMAND işleyicileri olmayan menü öğeleri otomatik olarak devre dışı bırakılır.
+Bu veri üyesi etkinleştirildiğinde (varsayılan olarak), ON_UPDATE_COMMAND_UI veya ON_COMMAND işleyicileri olmayan menü öğeleri Kullanıcı bir menü seçtiğinde otomatik olarak devre dışı bırakılır.
 
 ```
 BOOL m_bAutoMenuEnable;
@@ -809,22 +809,22 @@ BOOL m_bAutoMenuEnable;
 
 ### <a name="remarks"></a>Açıklamalar
 
-ON_COMMAND işleyicisi olan ancak ON_UPDATE_COMMAND_UI işleyicisi olmayan menü öğeleri otomatik olarak etkinleştirilir.
+ON_COMMAND işleyicisi olan ancak ON_UPDATE_COMMAND_UI işleyicisi olan menü öğeleri otomatik olarak etkinleştirilmez.
 
-Bu veri üyesi ayarlandığında, menü öğeleri araç çubuğu düğmelerinin etkin olduğu şekilde otomatik olarak etkinleştirilir.
+Bu veri üyesi ayarlandığında, menü öğeleri araç çubuğu düğmelerinin etkinleştirildiği şekilde otomatik olarak etkinleştirilir.
 
 > [!NOTE]
 > `m_bAutoMenuEnable`üst düzey menü öğeleri üzerinde hiçbir etkisi yoktur.
 
-Bu veri üyesi, geçerli seçimi temel alarak isteğe bağlı komutların uygulanmasını kolaylaştırır ve menü öğelerini etkinleştirmek ve devre dışı bırakmak için ON_UPDATE_COMMAND_UI işleyicileri yazma gereksinimini azaltır.
+Bu veri üyesi, geçerli seçime bağlı olarak isteğe bağlı komutların uygulanmasını basitleştirir ve menü öğelerini etkinleştirmek ve devre dışı bırakmak için ON_UPDATE_COMMAND_UI işleyicileri yazma ihtiyacını azaltır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#3](../../mfc/reference/codesnippet/cpp/cframewnd-class_3.cpp)]
 
-## <a name="cframewndnegotiateborderspace"></a><a name="negotiateborderspace"></a>CFrameWnd::NegotiateBorderSpace
+## <a name="cframewndnegotiateborderspace"></a><a name="negotiateborderspace"></a>CFrameWnd:: NegotiateBorderSpace
 
-OLE inplace etkinleştirme sırasında bir çerçeve penceresinde kenarlık alanı müzakere etmek için bu üye işlevi arayın.
+OLE yerinde etkinleştirme sırasında bir çerçeve penceresinde kenarlık alanı üzerinde anlaşmak için bu üye işlevini çağırın.
 
 ```
 virtual BOOL NegotiateBorderSpace(
@@ -835,28 +835,28 @@ virtual BOOL NegotiateBorderSpace(
 ### <a name="parameters"></a>Parametreler
 
 *nBorderCmd*<br/>
-Aşağıdaki değerlerden birini `enum BorderCmd`içerir:
+Aşağıdaki değerlerden birini içerir `enum BorderCmd` :
 
-- `borderGet`= 1 olarak
+- `borderGet`= 1
 
 - `borderRequest`= 2
 
 - `borderSet`= 3
 
 *lpRectBorder*<br/>
-Bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya kenarlığın koordinatlarını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işlecemez.
+Kenarlığın koordinatlarını belirten bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev `CFrameWnd` OLE sınır alanı müzakeresinin uygulanmasıdır.
+Bu üye işlevi, `CFrameWnd` OLE sınır alanı anlaşmasının uygulamasıdır.
 
-## <a name="cframewndonbarcheck"></a><a name="onbarcheck"></a>CFrameWnd::OnBarCheck
+## <a name="cframewndonbarcheck"></a><a name="onbarcheck"></a>CFrameWnd:: OnBarCheck
 
-Belirtilen denetim çubuğunda bir eylem yapıldığında çağrılır.
+Belirtilen denetim çubuğunda bir eylem yapıldığında çağırılır.
 
 ```
 afx_msg BOOL OnBarCheck(UINT nID);
@@ -864,16 +864,16 @@ afx_msg BOOL OnBarCheck(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Denetim çubuğunun kimliği gösteriliyor.
+*NID*<br/>
+Gösterilen denetim çubuğunun KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim çubuğu varsa sıfırolmayan; aksi takdirde 0.
+Denetim çubuğu varsa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cframewndoncontexthelp"></a><a name="oncontexthelp"></a>CFrameWnd::OnContextHelp
+## <a name="cframewndoncontexthelp"></a><a name="oncontexthelp"></a>CFrameWnd:: OnContextHelp
 
-Yerinde öğeler için SHIFT+F1 Yardım'ı işler.
+Yerinde öğeler için SHIFT + F1 yardımını işler.
 
 ```
 afx_msg void OnContextHelp();
@@ -881,17 +881,17 @@ afx_msg void OnContextHelp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçeriğe duyarlı yardımı etkinleştirmek için,
+Bağlama duyarlı yardımı etkinleştirmek için bir
 
 [!code-cpp[NVC_MFCDocViewSDI#16](../../mfc/codesnippet/cpp/cframewnd-class_4.cpp)]
 
-sınıf ileti `CFrameWnd` eşleme ve ayrıca bu üye işlevi etkinleştirmek için bir hızlandırıcı tablo girişi ( genellikle SHIFT +F1) ekleyin.
+`CFrameWnd`sınıfınıza yönelik bildirim ve ayrıca, bu üye işlevi etkinleştirmek için genellıkle SHIFT + F1 şeklinde bir kısayol tablosu girişi ekleyin.
 
-Uygulamanız bir OLE Kapsayıcısıysa, `OnContextHelp` çerçeve penceresi nesnesi içinde bulunan tüm yerinde öğeleri Yardım moduna koyar. İmleç bir ok ve soru işaretine dönüşür ve kullanıcı daha sonra fare işaretçisini taşıyabilir ve iletişim kutusu, pencere, menü veya komut düğmesini seçmek için sol fare düğmesine basabilir. Bu üye işlev, `WinHelp` imlecin altındaki nesnenin Yardım bağlamıyla Windows işlevini çağırır.
+Uygulamanız bir OLE kapsayıcısıdır, `OnContextHelp` çerçeve penceresi nesnesinin içindeki tüm yerinde öğeleri yardım moduna geçirir. İmleç ok ve soru işaretine dönüşür ve Kullanıcı daha sonra fare işaretçisini taşıyabilir ve bir iletişim kutusu, pencere, menü ya da komut düğmesi seçmek için sol fare düğmesine basabilir. Bu üye işlevi, `WinHelp` imleç altındaki nesnenin yardım bağlamı Ile Windows işlevini çağırır.
 
-## <a name="cframewndoncreateclient"></a><a name="oncreateclient"></a>CFrameWnd::OnCreateClient
+## <a name="cframewndoncreateclient"></a><a name="oncreateclient"></a>CFrameWnd:: OnCreateClient
 
-Yürütme sırasında çerçeve tarafından `OnCreate`çağrılan .
+Yürütmesi sırasında Framework tarafından çağırılır `OnCreate` .
 
 ```
 virtual BOOL OnCreateClient(
@@ -902,29 +902,29 @@ virtual BOOL OnCreateClient(
 ### <a name="parameters"></a>Parametreler
 
 *lpcs*<br/>
-Windows [CREATESTRUCT](/windows/win32/api/winuser/ns-winuser-createstructw) yapısıiçin bir işaretçi.
+Windows [CREATESTRUCT](/windows/win32/api/winuser/ns-winuser-createstructw) yapısına yönelik bir işaretçi.
 
-*Pcontext*<br/>
-[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısıiçin bir işaretçi.
+*pContext*<br/>
+[CCreateContext](../../mfc/reference/ccreatecontext-structure.md) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi asla arama.
+Bu işlevi hiçbir şekilde çağırmayın.
 
-Bu işlevin varsayılan uygulaması, `CView` mümkünse *pContext'da*sağlanan bilgilerden bir nesne oluşturur.
+Bu işlevin varsayılan uygulanması `CView` , mümkünse *pContext*'te belirtilen bilgilerden bir nesne oluşturur.
 
-`CCreateContext` Nesnede geçirilen değerleri geçersiz kılmak veya çerçeve penceresinin ana istemci alanında yol denetimlerini değiştirmek için bu işlevi geçersiz kılın. Geçersiz `CCreateContext` kılabileceğiniz üyeler [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) sınıfında açıklanmıştır.
+Nesneye geçirilen değerleri geçersiz kılmak `CCreateContext` veya çerçeve penceresinin ana istemci alanındaki denetimleri değiştirmek için bu işlevi geçersiz kılın. `CCreateContext`Geçersiz kılabileceğiniz Üyeler [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) sınıfında açıklanmıştır.
 
 > [!NOTE]
-> Yapıda geçirilen değerleri `CREATESTRUCT` değiştirmeyin. Bunlar yalnızca bilgilendirme amaçlıdır. Örneğin, ilk pencere dikdörtgenini geçersiz kılmak istiyorsanız, `CWnd` [PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow)üye işlevini geçersiz kılın.
+> Yapıda geçirilen değerleri değiştirme `CREATESTRUCT` . Bunlar yalnızca bilgilendirme amaçlıdır. Örneğin, ilk pencere dikdörtgenini geçersiz kılmak istiyorsanız, `CWnd` üye işlevi önceden [Reatewindow](../../mfc/reference/cwnd-class.md#precreatewindow)' u geçersiz kılın.
 
-## <a name="cframewndonhidemenubar"></a><a name="onhidemenubar"></a>CFrameWnd::OnHideMenuBar
+## <a name="cframewndonhidemenubar"></a><a name="onhidemenubar"></a>CFrameWnd:: OnHideMenuBar
 
-Sistem geçerli MFC uygulamasında menü çubuğunu gizlemek üzereyken bu işlev çağrılır.
+Bu işlev, sistem geçerli MFC uygulamasındaki menü çubuğunu gizlemek üzereyken çağrılır.
 
 ```
 virtual void OnHideMenuBar();
@@ -932,11 +932,11 @@ virtual void OnHideMenuBar();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi, sistem menüyü gizlemek üzereyken uygulamanızın özel eylemler gerçekleştirmesini sağlar. Menünün gizlenmesini engelleyemezsiniz, ancak örneğin menü stilini veya durumu almak için diğer yöntemleri arayabilirsiniz.
+Bu olay işleyicisi, sistem menüyü gizlemek üzere olduğunda uygulamanızın özel eylemler gerçekleştirmesini sağlar. Menünün gizli olmasını engellenemez, ancak örneğin, menü stilini veya durumunu almak için diğer yöntemleri çağırabilirsiniz.
 
-## <a name="cframewndonsetpreviewmode"></a><a name="onsetpreviewmode"></a>CFrameWnd::OnSetPreviewMode
+## <a name="cframewndonsetpreviewmode"></a><a name="onsetpreviewmode"></a>CFrameWnd:: Onsetönizleme modu
 
-Uygulamanın ana çerçeve penceresini yazdırma önizleme moduna girip çıkmak için bu üye işlevini arayın.
+Bu üye işlevini, uygulamanın ana çerçeve penceresini yazdırma önizleme modundan ve dışına ayarlamak için çağırın.
 
 ```
 virtual void OnSetPreviewMode(
@@ -946,21 +946,21 @@ virtual void OnSetPreviewMode(
 
 ### <a name="parameters"></a>Parametreler
 
-*bÖnizleme*<br/>
-Uygulamayı yazdırma önizleme moduna yerleştirip yerleştirmeyini belirtir. Yazdırma önizlemesine yerleştirilecek TRUE, önizleme modunu iptal etmek için FALSE olarak ayarlayın.
+*bPreview*<br/>
+Uygulamanın baskı önizleme modunda yerleştirip yerleştirmeyeceğini belirtir. Baskı önizlemede yerleştirmek için TRUE, Önizleme modunu iptal etmek için FALSE olarak ayarlayın.
 
-*pDevlet*<br/>
-Bir yapıiçin `CPrintPreviewState` bir işaretçi.
+*pState*<br/>
+Bir yapıya yönelik işaretçi `CPrintPreviewState` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama tüm standart araç çubuklarını devre dışı kalır ve ana menüyü ve ana istemci penceresini gizler. Bu, MDI çerçeve pencerelerini geçici SDI çerçeve pencerelerine dönüştürür.
+Varsayılan uygulama tüm standart araç çubuklarını devre dışı bırakır ve ana menüyü ve ana istemci penceresini gizler. Bu, MDI çerçeve pencerelerini geçici SDI çerçeve pencereleri olarak açar.
 
-Yazdırma önizlemesi sırasında denetim çubuklarının ve diğer çerçeve pencere parçalarının gizlenme ve gösterilmesini özelleştirmek için bu üye işlevi geçersiz kılın. Geçersiz kılınan sürümden taban sınıf uygulamasını çağırın.
+Yazdırma önizlemesi sırasında denetim çubuklarının ve diğer çerçeve pencere bölümlerinin gizlenme ve gösterilmesini özelleştirmek için bu üye işlevi geçersiz kılın. Geçersiz kılınan sürüm içinden temel sınıf uygulamasını çağırın.
 
-## <a name="cframewndonshowmenubar"></a><a name="onshowmenubar"></a>CFrameWnd::OnShowMenuBar
+## <a name="cframewndonshowmenubar"></a><a name="onshowmenubar"></a>CFrameWnd:: OnShowMenuBar
 
-Sistem geçerli MFC uygulamasında menü çubuğunu görüntülemek üzereyken bu işlev çağrılır.
+Bu işlev, sistem geçerli MFC uygulamasında menü çubuğunu göstermek üzereyken çağrılır.
 
 ```
 virtual void OnShowMenuBar();
@@ -968,11 +968,11 @@ virtual void OnShowMenuBar();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi, menü görüntülenmek üzereyken uygulamanızın özel eylemler gerçekleştirmesini sağlar. Menünün görüntülenmesini engelleyemezsiniz, ancak örneğin menü stilini veya durumu almak için diğer yöntemleri arayabilirsiniz.
+Bu olay işleyicisi, bir menü görüntülenmek üzere olduğunda uygulamanızın özel eylemler gerçekleştirmesini sağlar. Menünün görüntülenmesini engellenemez, ancak örneğin, menü stilini veya durumunu almak için diğer yöntemleri çağırabilirsiniz.
 
-## <a name="cframewndonupdatecontrolbarmenu"></a><a name="onupdatecontrolbarmenu"></a>CFrameWnd::OnUpdateControlBarMenu
+## <a name="cframewndonupdatecontrolbarmenu"></a><a name="onupdatecontrolbarmenu"></a>CFrameWnd:: OnUpdateControlBarMenu
 
-İlişkili menü güncelleştirildiğinde çerçeve tarafından çağrılır.
+İlişkili menü güncelleştirildiği zaman Framework tarafından çağırılır.
 
 ```
 afx_msg void OnUpdateControlBarMenu(CCmdUI* pCmdUI);
@@ -981,11 +981,11 @@ afx_msg void OnUpdateControlBarMenu(CCmdUI* pCmdUI);
 ### <a name="parameters"></a>Parametreler
 
 *pCmdUI*<br/>
-Güncelleştirme komutunu oluşturan menüyü temsil eden [ccmdUI](../../mfc/reference/ccmdui-class.md) nesnesine işaretçi. Güncelleştirme işleyicisi, kullanıcı arabirimini güncelleştirmek için *pCmdUI* aracılığıyla nesnenin `CCmdUI` [Üye](../../mfc/reference/ccmdui-class.md#enable) İşleyiş etkinleştir işlevini çağırır.
+Update komutunu oluşturan menüyü temsil eden [CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine yönelik bir işaretçi. Güncelleştirme işleyicisi, [Enable](../../mfc/reference/ccmdui-class.md#enable) `CCmdUI` Kullanıcı arabirimini güncelleştirmek için nesnesinin *pCmdUI* aracılığıyla üye etkinleştirme işlevini çağırır.
 
-## <a name="cframewndrecalclayout"></a><a name="recalclayout"></a>CFrameWnd::RecalcLayout
+## <a name="cframewndrecalclayout"></a><a name="recalclayout"></a>CFrameWnd:: RecalcLayout
 
-Standart denetim çubukları üzerinde veya kapalı veya çerçeve penceresi yeniden boyutlandırılır zaman çerçeve tarafından çağrılır.
+Standart denetim çubukları açık veya kapalı olduğunda ya da çerçeve penceresi yeniden boyutlandırılırken Framework tarafından çağırılır.
 
 ```
 virtual void RecalcLayout(BOOL bNotify = TRUE);
@@ -994,25 +994,25 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bNotify*<br/>
-Çerçeve penceresi için etkin yerinde öğenin düzen değişikliği bildirimini alıp almadığını belirler. DOĞRUysa, öğe bildirilir; aksi takdirde YANLIŞ.
+Çerçeve penceresi için etkin yerinde öğenin düzen değişikliği bildirimini alıp almayacağını belirler. TRUE ise, öğe bilgilendirilir; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevin varsayılan `CWnd` uygulaması, `RepositionBars` çerçevedeki ve ana istemci penceresindeki (genellikle bir `CView` veya MDICLIENT) tüm denetim çubuklarını yeniden konumlandırmak için üye işlevi çağırır.
+Bu üye işlevin varsayılan uygulanması, `CWnd` `RepositionBars` çerçeve içindeki tüm denetim çubuklarının yanı sıra ana istemci penceresinde (genellikle a veya MDICLIENT) yeniden konumlandırmak için üye işlevini çağırır `CView` .
 
-Çerçeve penceresinin düzeni değiştikten sonra denetim çubuklarının görünümünü ve davranışını denetlemek için bu üye işlevi geçersiz kılın. Örneğin, denetim çubuklarını açtığınızda veya kapattığınızda veya başka bir denetim çubuğu eklediğinizde arayın.
+Çerçeve penceresinin düzeni değiştirildikten sonra Denetim çubuklarının görünümünü ve davranışını denetlemek için bu üye işlevini geçersiz kılın. Örneğin, denetim çubuklarını açıp kapattığınızda veya başka bir denetim çubuğu eklediğinizde bunu çağırın.
 
-## <a name="cframewndrectdefault"></a><a name="rectdefault"></a>CFrameWnd::rectVarsayılan
+## <a name="cframewndrectdefault"></a><a name="rectdefault"></a>CFrameWnd:: rectDefault
 
-Windows'un `CRect` pencerenin başlangıç boyutunu ve konumunu seçmesine izin vermek için bir pencere oluştururken bu paraziti parametre olarak geçirin.
+Pencerenin `CRect` ilk boyutunu ve konumunu seçmesini sağlamak için bir pencere oluştururken bu statik parametreyi parametre olarak geçirin.
 
 ```
 static AFX_DATA const CRect rectDefault;
 ```
 
-## <a name="cframewndsavebarstate"></a><a name="savebarstate"></a>CFrameWnd::SaveBarState
+## <a name="cframewndsavebarstate"></a><a name="savebarstate"></a>CFrameWnd:: SaveBarState
 
-Çerçeve penceresine ait her denetim çubuğu yla ilgili bilgileri depolamak için bu işlevi arayın.
+Çerçeve penceresine ait olan her denetim çubuğu hakkındaki bilgileri depolamak için bu işlevi çağırın.
 
 ```cpp
 void SaveBarState(LPCTSTR lpszProfileName) const;
@@ -1021,15 +1021,15 @@ void SaveBarState(LPCTSTR lpszProfileName) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-Başlatma dosyasındaki bir bölümün veya durum bilgilerinin depolandığı Windows kayıt defterindeki bir anahtarın adı.
+Başlangıç dosyasındaki bir bölümün adı veya Windows kayıt defteri 'nde durum bilgilerinin depolandığı bir anahtar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bilgiler [LoadBarState](#loadbarstate)kullanarak başlatma dosyasından okunabilir. Depolanan bilgiler görünürlük, yatay/dikey yönlendirme, yerleştirme durumu ve kontrol çubuğu konumunu içerir.
+Bu bilgiler, başlatma dosyasından [LoadBarState](#loadbarstate)kullanılarak okunabilir. Depolanan bilgiler görünürlük, yatay/dikey yön, yerleştirme durumu ve denetim çubuğu konumunu içerir.
 
-## <a name="cframewndsetactivepreviewview"></a><a name="setactivepreviewview"></a>CFrameWnd::SetActivePreviewView
+## <a name="cframewndsetactivepreviewview"></a><a name="setactivepreviewview"></a>CFrameWnd:: Setactiveönizleme görünümü
 
-Belirtilen görünümü Zengin Önizleme için etkin görünüm olarak belirtir.
+Belirtilen görünümü zengin önizleme için etkin görünüm olarak belirler.
 
 ```cpp
 void SetActivePreviewView(CView* pViewNew);
@@ -1038,13 +1038,13 @@ void SetActivePreviewView(CView* pViewNew);
 ### <a name="parameters"></a>Parametreler
 
 *pViewNew*<br/>
-Etkinleştirilecek bir görünüm için bir işaretçi.
+Etkinleştirilecek bir görünümün işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cframewndsetactiveview"></a><a name="setactiveview"></a>CFrameWnd::SetActiveView
+## <a name="cframewndsetactiveview"></a><a name="setactiveview"></a>CFrameWnd:: SetActiveView
 
-Etkin görünümü ayarlamak için bu üye işlevi arayın.
+Etkin görünümü ayarlamak için bu üye işlevini çağırın.
 
 ```cpp
 void SetActiveView(
@@ -1055,18 +1055,18 @@ void SetActiveView(
 ### <a name="parameters"></a>Parametreler
 
 *pViewNew*<br/>
-Etkin bir görünüm için bir [CView](../../mfc/reference/cview-class.md) nesnesine işaretçi veya NULL belirtir.
+Bir [CView](../../mfc/reference/cview-class.md) nesnesine yönelik bir işaretçi ya da etkin görünüm olmadan null değerini belirtir.
 
 *bNotify*<br/>
-Görünümün etkinleştirmeden haberdar edilip edilmeyeceğini belirtir. TRUE ise, `OnActivateView` yeni görünüm için çağrılır; FALSE ise, öyle değildir.
+Görünümün etkinleştirme için bildirim uygulanıp bildirilmeyeceğini belirtir. TRUE ise `OnActivateView` Yeni görünüm için çağırılır; yanlışsa, değildir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı odağı çerçeve penceresi içindeki bir görünüme değiştirdiğinde çerçeve bu işlevi otomatik olarak çağırır. Odağı belirtilen görünüme değiştirmek için açıkça arayabilirsiniz. `SetActiveView`
+Kullanıcı odağı çerçeve penceresi içindeki bir görünüme değiştirdiğinde Framework bu işlevi otomatik olarak çağırır. `SetActiveView`Odağı belirtilen görünüme dönüştürmek için açıkça çağrı yapabilirsiniz.
 
-## <a name="cframewndsetdockstate"></a><a name="setdockstate"></a>CFrameWnd::SetDockState
+## <a name="cframewndsetdockstate"></a><a name="setdockstate"></a>CFrameWnd:: SetDockState
 
-`CDockState` Bir nesnede depolanan durum bilgilerini çerçeve penceresinin denetim çubuklarına uygulamak için bu üye işlevi arayın.
+Bir nesne içinde depolanan durum bilgilerini `CDockState` çerçeve penceresinin denetim çubuklarına uygulamak için bu üye işlevini çağırın.
 
 ```cpp
 void SetDockState(const CDockState& state);
@@ -1074,16 +1074,16 @@ void SetDockState(const CDockState& state);
 
 ### <a name="parameters"></a>Parametreler
 
-*durum*<br/>
+*durumunda*<br/>
 Depolanan durumu çerçeve penceresinin denetim çubuklarına uygulayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim çubuklarının önceki durumunu geri yüklemek için, depolanan `CDockState::LoadState` `Serialize`durumu yükleyebilir veya çerçeve penceresinin denetim çubuklarına uygulamak için kullanabilirsiniz. `SetDockState` Önceki durum `CDockState` ile nesnede depolanır`GetDockState`
+Denetim çubuklarının önceki bir durumunu geri yüklemek için, saklı durumu veya ile yükleyebilir `CDockState::LoadState` `Serialize` , ardından `SetDockState` bunu çerçeve penceresinin denetim çubuklarına uygulamak için kullanabilirsiniz. Önceki durum, `CDockState` ile nesnesinde depolanır`GetDockState`
 
-## <a name="cframewndsetmenubarstate"></a><a name="setmenubarstate"></a>CFrameWnd::SetMenuBarState
+## <a name="cframewndsetmenubarstate"></a><a name="setmenubarstate"></a>CFrameWnd:: SetMenuBarState
 
-Geçerli MFC uygulamasındaki menünün ekran durumunu gizli veya görüntülenecek şekilde ayarlar.
+Geçerli MFC uygulamasındaki menünün görüntüleme durumunu gizli veya görüntülenir olarak ayarlar.
 
 ```
 virtual BOOL SetMenuBarState(DWORD nState);
@@ -1093,19 +1093,19 @@ virtual BOOL SetMenuBarState(DWORD nState);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Nstate*|[içinde] Menüyü görüntülemek veya gizlemek için belirtir. *nState* parametresi aşağıdaki değerlere sahip olabilir:<br /><br />- AFX_MBS_VISIBLE (0x01) - Menü gizliyse görüntülenir, ancak görünürse hiçbir etkisi yoktur.<br />- AFX_MBS_HIDDEN (0x02) - Görünürse menüyü gizler, ancak gizliyse hiçbir etkisi yoktur.|
+|*nDurum*|'ndaki Menünün görüntülenip görüntülenmeyeceğini veya gizlenmeyeceğini belirtir. *NState* parametresi aşağıdaki değerlere sahip olabilir:<br /><br />-AFX_MBS_VISIBLE (0x01)-menü gizliyse menüyü görüntüler, ancak görünür durumdaysa hiçbir etkiye sahip olmaz.<br />-AFX_MBS_HIDDEN (0x02)-görünür durumdaysa menüyü gizler, ancak gizliyse hiçbir etkisi olmaz.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem menü durumunu başarıyla değiştirirse DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem menü durumunu başarıyla değiştirirse TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanı hatası oluşursa, bu yöntem Hata Ayıklama modunda öne çıkar ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilen bir özel durum ortaya çıkarır.
+Bir çalışma zamanı hatası oluşursa, bu yöntem hata ayıklama modunda onaylar ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilmiş bir özel durum oluşturur.
 
-## <a name="cframewndsetmenubarvisibility"></a><a name="setmenubarvisibility"></a>CFrameWnd::SetMenuBarVisibility
+## <a name="cframewndsetmenubarvisibility"></a><a name="setmenubarvisibility"></a>CFrameWnd:: SetMenuBarVisibility
 
-Geçerli MFC uygulamasındaki menünün varsayılan davranışını gizli veya görünür olarak ayarlar.
+Geçerli MFC uygulamasındaki menünün varsayılan davranışını gizli ya da görünür olacak şekilde ayarlar.
 
 ```
 virtual void SetMenuBarVisibility(DWORD nStyle);
@@ -1115,17 +1115,17 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*nStyle*|[içinde] Menünün varsayılan olarak gizli olup olmadığını veya görünür olup olmadığını ve odağı olup olmadığını belirtir. *nStyle* parametresi aşağıdaki değerlere sahip olabilir:<br /><br />- AFX_MBV_KEEPVISIBLE (0x01) -<br />     Menü her zaman görüntülenir ve varsayılan olarak odak noktası yoktur.<br />- AFX_MBV_DISPLAYONFOCUS (0x02) -<br />     Menü varsayılan olarak gizlenir. Menü gizliyse, menüyü görüntülemek ve odağı vermek için ALT tuşuna basın. Menü görüntüleniyorsa, menüyü gizlemek için ALT veya ESC tuşuna basın.<br />- AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (bitwise kombinasyonu (VEYA)) - Menü varsayılan olarak gizlidir. Menü gizliyse, menüyü görüntülemek ve odağı vermek için F10 tuşuna basın. Menü görüntülenirse, menüdeki veya menüden odağı kaydırmak için F10 tuşuna basın. Menü, gizlemek için ALT veya ESC tuşuna basana kadar görüntülenir.|
+|*nStyle*|'ndaki Menünün varsayılan olarak gizli olup olmadığını veya görünür olduğunu ve odağa sahip olduğunu belirtir. *NStyle* parametresi aşağıdaki değerlere sahip olabilir:<br /><br />-AFX_MBV_KEEPVISIBLE (0x01)-<br />     Menü her zaman görüntülenir ve varsayılan olarak odağa sahip değildir.<br />-AFX_MBV_DISPLAYONFOCUS (0x02)-<br />     Menü varsayılan olarak gizlidir. Menü gizliyse, menüyü göstermek ve odağı vermek için ALT tuşuna basın. Menü görüntüleniyorsa menüyü gizlemek için ALT veya ESC tuşuna basın.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (bit düzeyinde birleşim (veya))-menü varsayılan olarak gizlidir. Menü gizliyse, menüyü göstermek ve odağı vermek için F10 tuşuna basın. Menü görüntüleniyorsa, odağı açıp kapatmak için F10 tuşuna basın. Menü, ALT veya ESC tuşuna basarak gizleyecek şekilde görüntülenir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nStyle* parametresinin değeri geçerli değilse, bu yöntem Hata Ayıklama modunda ileri sürülür ve Sürüm modunda [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) yükseltir. Diğer çalışma zamanı hataları durumunda, bu yöntem Hata Ayıklama modunda ileri sürüler ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilen bir özel durum yükseltir.
+*NStyle* parametresinin değeri geçerli değilse, bu yöntem hata ayıklama modunda onay verir ve bırakma modunda [Cinvalidargexception](../../mfc/reference/cinvalidargexception-class.md) 'ı başlatır. Diğer çalışma zamanı hataları söz konusu olduğunda, bu yöntem hata ayıklama modunda onay verir ve [CException](../../mfc/reference/cexception-class.md) sınıfından türetilmiş bir özel durum oluşturur.
 
-Bu yöntem, Windows Vista ve daha sonra için yazılmış uygulamalarda menülerin durumunu etkiler.
+Bu yöntem, Windows Vista ve üzeri için yazılmış uygulamalardaki menülerin durumunu etkiler.
 
-## <a name="cframewndsetmessagetext"></a><a name="setmessagetext"></a>CFrameWnd::SetMessageText
+## <a name="cframewndsetmessagetext"></a><a name="setmessagetext"></a>CFrameWnd:: SetMessageText
 
-0 kimliği olan durum çubuğu bölmesine bir dize yerleştirmek için bu işlevi arayın.
+KIMLIĞI 0 olan durum çubuğu bölmesine bir dize yerleştirmek için bu işlevi çağırın.
 
 ```cpp
 void SetMessageText(LPCTSTR lpszText);
@@ -1134,19 +1134,19 @@ void SetMessageText(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszMetin*<br/>
-Durum çubuğuna yerleştirilecek dizeyi işaret edin.
+*lpszText*<br/>
+Durum çubuğuna yerleştirilecek dizeyi işaret eder.
 
-*Nıd*<br/>
-Durum çubuğuna yerleştirilecek dize dize kaynak kimliği.
+*NID*<br/>
+Durum çubuğuna yerleştirilecek dizenin dize kaynak KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu genellikle durum çubuğunun en sol ve en uzun bölmesidir.
 
-## <a name="cframewndsetprogressbarposition"></a><a name="setprogressbarposition"></a>CFrameWnd::SetProgressBarPosition
+## <a name="cframewndsetprogressbarposition"></a><a name="setprogressbarposition"></a>CFrameWnd:: SetProgressBarPosition
 
-Görev çubuğunda görüntülenen Windows 7 ilerleme çubuğunun geçerli konumunu ayarlar.
+Görev çubuğunda görüntülenmek üzere Windows 7 ilerleme çubuğunun geçerli konumunu ayarlar.
 
 ```cpp
 void SetProgressBarPosition(int nProgressPos);
@@ -1155,13 +1155,13 @@ void SetProgressBarPosition(int nProgressPos);
 ### <a name="parameters"></a>Parametreler
 
 *nProgressPos*<br/>
-Ayarlanacak konumu belirtir. Tarafından belirlenen aralıkta `SetProgressBarRange`olmalıdır.
+Ayarlanacak konumu belirtir. Tarafından ayarlanan Aralık dahilinde olmalıdır `SetProgressBarRange` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cframewndsetprogressbarrange"></a><a name="setprogressbarrange"></a>CFrameWnd::SetProgressBarRange
+## <a name="cframewndsetprogressbarrange"></a><a name="setprogressbarrange"></a>CFrameWnd:: SetProgressBarRange
 
-Görev çubuğunda görüntülenen Windows 7 ilerleme çubuğunun aralığını ayarlar.
+Görev çubuğunda görüntülenmek üzere Windows 7 ilerleme çubuğunun aralığını ayarlar.
 
 ```cpp
 void SetProgressBarRange(
@@ -1172,16 +1172,16 @@ void SetProgressBarRange(
 ### <a name="parameters"></a>Parametreler
 
 *nRangeMin*<br/>
-Minimum değer.
+En küçük değer.
 
 *nRangeMax*<br/>
-Maksimal değer.
+Maxhayvan değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cframewndsetprogressbarstate"></a><a name="setprogressbarstate"></a>CFrameWnd::SetProgressBarState
+## <a name="cframewndsetprogressbarstate"></a><a name="setprogressbarstate"></a>CFrameWnd:: SetProgressBarState
 
-Görev çubuğu düğmesinde görüntülenen ilerleme göstergesinin türünü ve durumunu ayarlar.
+Bir görev çubuğu düğmesinde görünen ilerleme göstergesinin türünü ve durumunu ayarlar.
 
 ```cpp
 void SetProgressBarState(TBPFLAG tbpFlags);
@@ -1189,14 +1189,14 @@ void SetProgressBarState(TBPFLAG tbpFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*tbpBayraklar*<br/>
-İlerleme düğmesinin geçerli durumunu denetleyen bayraklar. Tüm devletler birbirini dışladığı için aşağıdaki bayraklardan yalnızca birini belirtin: TBPF_NOPROGRESS, TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED.
+*tbpFlags*<br/>
+İlerleme düğmesinin geçerli durumunu denetleyen bayraklar. Tüm durumlar birbirini dışlamalı olduğundan aşağıdaki bayraklardan yalnızca birini belirtin: TBPF_NOPROGRESS, TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cframewndsettaskbaroverlayicon"></a><a name="settaskbaroverlayicon"></a>CFrameWnd::SetTaskbarOverlayIcon
+## <a name="cframewndsettaskbaroverlayicon"></a><a name="settaskbaroverlayicon"></a>CFrameWnd:: Settaskbaroverlayıcon
 
-Fazla Yüklendi. Uygulama durumunu belirtmek veya kullanıcıyı bilgilendirmek için görev çubuğuna bir bindirme uygular.
+Fazla Yüklendi. Uygulama durumunu göstermek veya kullanıcıya bildirimde bulunan bir görev çubuğu düğmesine bir kaplama uygular.
 
 ```
 BOOL SetTaskbarOverlayIcon(
@@ -1210,22 +1210,22 @@ BOOL SetTaskbarOverlayIcon(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDKaynak*<br/>
-Bindirme olarak kullanılacak bir simgenin Kaynak Kimliğini belirtir. Ayrıntılar için *hIcon* açıklamasına bakın.
+*nIDResource*<br/>
+Kaplama olarak kullanılacak simgenin kaynak KIMLIĞINI belirtir. Ayrıntılar için bkz. *HICON* için açıklama.
 
 *lpcszDescr*<br/>
-Erişilebilirlik amacıyla bindirme tarafından iletilen bilgilerin alt metin sürümünü sağlayan bir dize işaretçisi.
+Erişilebilirlik amacıyla, yer kaplayan bilgilerin alt metin sürümünü sağlayan bir dize işaretçisi.
 
-*Hıcon*<br/>
-Bindirme olarak kullanılacak bir simgenin tutamacı. Bu küçük bir simge olmalı, inç başına 96 nokta (dpi) 16x16 piksel ölçme. Görev çubuğu düğmesine zaten bir bindirme simgesi uygulanmışsa, varolan bindirme değiştirilir. Bu değer NULL olabilir. NULL değerinin nasıl işleneceğiniz, görev çubuğu düğmesinin tek bir pencereyi mi yoksa bir pencere grubunu mu temsil etmediğine bağlıdır. Artık ihtiyaç duyulmadığında *hIcon'u* serbest hale getirmek arama uygulamasının sorumluluğundadır.
+*HICON*<br/>
+Kaplama olarak kullanılacak simgenin tutamacı. Bu küçük bir simge olmalıdır, %96 nokta/inç (dpi) üzerinde 16x16 piksel ölçme. Bir kaplama simgesi zaten görev çubuğu düğmesine uygulanmışsa, varolan bir kaplama değiştirilmiştir. Bu değer NULL olabilir. NULL değerin nasıl işlendiği, görev çubuğu düğmesinin tek bir pencereyi mi yoksa bir pencere grubunu mı temsil ettiğini bağlıdır. Artık gerekli olmadığında, çağıran uygulamanın *HICON* ücretsiz olarak kullanıldığı sorumluluğudur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Doğru eğer başarılı; İşletim sistemi sürümü Windows 7'den küçükse veya simgeyi ayarlayarak bir hata oluşuyorsa FALSE.
+Başarılı olursa doğru; İşletim sistemi sürümü Windows 7 ' den küçükse veya simgeyi ayarlarken bir hata oluşursa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cframewndsettitle"></a><a name="settitle"></a>CFrameWnd::SetTitle
+## <a name="cframewndsettitle"></a><a name="settitle"></a>CFrameWnd:: SetTitle
 
 Pencere nesnesinin başlığını ayarlar.
 
@@ -1236,11 +1236,11 @@ void SetTitle(LPCTSTR lpszTitle);
 ### <a name="parameters"></a>Parametreler
 
 *lpszTitle*<br/>
-Pencere nesnesinin başlığını içeren bir karakter dizesine işaretçi.
+Pencere nesnesinin başlığını içeren bir karakter dizesinin işaretçisi.
 
-## <a name="cframewndshowcontrolbar"></a><a name="showcontrolbar"></a>CFrameWnd::ShowControlBar
+## <a name="cframewndshowcontrolbar"></a><a name="showcontrolbar"></a>CFrameWnd:: ShowControlBar
 
-Denetim çubuğunu göstermek veya gizlemek için bu üye işlevini arayın.
+Denetim çubuğunu göstermek veya gizlemek için bu üye işlevini çağırın.
 
 ```cpp
 void ShowControlBar(
@@ -1252,17 +1252,17 @@ void ShowControlBar(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-Gösterilecek veya gizlenmek üzere denetim çubuğuna işaretçi.
+Görüntülenecek veya gizlenecek denetim çubuğunun işaretçisi.
 
-*bGöster*<br/>
-TRUE ise, denetim çubuğunun gösterilen olduğunu belirtir. FALSE ise, denetim çubuğunun gizleneceğini belirtir.
+*bShow*<br/>
+DOĞRU ise, denetim çubuğunun gösterildiğini belirtir. YANLıŞSA, denetim çubuğunun gizlendiğini belirtir.
 
-*bGecikme*<br/>
-TRUE ise, denetim çubuğunu göstermeyi geciktirin. FALSE ise, denetim çubuğunu hemen gösterin.
+*bDelay*<br/>
+DOĞRU ise, Denetim çubuğunu gösteren gecikme. YANLıŞSA, Denetim çubuğunu hemen gösterin.
 
-## <a name="cframewndshowownedwindows"></a><a name="showownedwindows"></a>CFrameWnd::ShowOwnedWindows
+## <a name="cframewndshowownedwindows"></a><a name="showownedwindows"></a>CFrameWnd:: ShowOwnedWindows
 
-Nesnenin `CFrameWnd` torunları olan tüm pencereleri göstermek için bu üye işlevi arayın.
+Nesnenin alt öğesi olan tüm pencereleri göstermek için bu üye işlevi çağırın `CFrameWnd` .
 
 ```cpp
 void ShowOwnedWindows(BOOL bShow);
@@ -1270,16 +1270,16 @@ void ShowOwnedWindows(BOOL bShow);
 
 ### <a name="parameters"></a>Parametreler
 
-*bGöster*<br/>
-Sahip olunan pencerelerin gösterileceğini veya gizleneceğini belirtir.
+*bShow*<br/>
+Sahip olunan pencerelerin gösterilip gösterilmeyeceğini veya gizlenmeyeceğini belirtir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[CMDIFrameWnd Sınıfı](../../mfc/reference/cmdiframewnd-class.md)<br/>
-[CMDIChildWnd Sınıfı](../../mfc/reference/cmdichildwnd-class.md)<br/>
-[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
-[CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[CRuntimeClass Yapısı](../../mfc/reference/cruntimeclass-structure.md)
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[CMDIFrameWnd sınıfı](../../mfc/reference/cmdiframewnd-class.md)<br/>
+[Cmdicchild Dwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md)<br/>
+[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
+[CRuntimeClass yapısı](../../mfc/reference/cruntimeclass-structure.md)

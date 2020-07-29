@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3168
 ms.assetid: 4c36fcfb-c351-48ff-b4eb-78d2aa1b4d55
-ms.openlocfilehash: 4f09c7e250b4c2b02ba2db582f92d54336bed673
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a40a79c48b0f437271063e555593464f55fe9837
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761796"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212598"
 ---
 # <a name="compiler-error-c3168"></a>Derleyici hatası C3168
 
 ' Type ': sabit listesi için temeldeki tür geçersiz
 
-`enum` türü için belirttiğiniz temel tür geçerli değil. Temel alınan tür, bir integral C++ türü veya karşılık gelen bir clr türü olmalıdır.
+Tür için belirttiğiniz temel tür **`enum`** geçerli değil. Temel alınan tür, bir integral C++ türü veya karşılık gelen bir CLR türü olmalıdır.
 
 Aşağıdaki örnek C3168 oluşturur:
 

@@ -1,5 +1,5 @@
 ---
-title: Platform::MTAThreadAttribute sınıfı
+title: 'Platform:: MTAThreadAttribute sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -9,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::MTAThreadAttribute Class
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-ms.openlocfilehash: 4564def412834ae0586292e8aa533d3b2bd0d679
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 700eeae226be48c1f6659d621f2f5c0ed397bb7f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152676"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213053"
 ---
-# <a name="platformmtathreadattribute-class"></a>Platform::MTAThreadAttribute sınıfı
+# <a name="platformmtathreadattribute-class"></a>Platform:: MTAThreadAttribute sınıfı
 
-Bir uygulama için iş parçacığı modeli çok iş parçacıklı grup (MTA) olduğunu gösterir.
+Bir uygulama için iş parçacığı modelinin çok iş parçacıklı apartman (MTA) olduğunu gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,17 +32,17 @@ public ref class MTAThreadAttribute sealed : Attribute
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[MTAThreadAttribute Oluşturucusu 1](#ctor) Oluşturucusu|Sınıfının yeni bir örneğini başlatır.|
+|[MTAThreadAttribute Oluşturucu 1](#ctor) Oluşturucusu|Sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-MTAThreadAttribute özniteliğini devraldığı [Platform::Object sınıfı](../cppcx/platform-object-class.md). Ayrıca MTAThreadAttribute aşırı veya aşağıdaki üyeleri içerir:
+MTAThreadAttribute özniteliği [Platform:: Object sınıfından](../cppcx/platform-object-class.md)devralınır. MTAThreadAttribute Ayrıca, aşağıdaki üyelere de aşırı yükler veya sahiptir:
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[MTAThreadAttribute::Equals](#equals)|Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.|
-|[MTAThreadAttribute::GetHashCode](#gethashcode)|Bu örneğin karma kodunu döndürür.|
-|[MTAThreadAttribute::ToString](#tostring)|Geçerli nesneyi temsil eden bir dize döndürür.|
+|[MTAThreadAttribute:: Equals](#equals)|Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.|
+|[MTAThreadAttribute:: GetHashCode](#gethashcode)|Bu örneğe ilişkin karma kodu döndürür.|
+|[MTAThreadAttribute:: ToString](#tostring)|Geçerli nesneyi temsil eden dizeyi döndürür.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,11 +50,11 @@ MTAThreadAttribute özniteliğini devraldığı [Platform::Object sınıfı](../
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-## <a name="ctor"></a> MTAThreadAttribute Oluşturucusu
+## <a name="mtathreadattribute-constructor"></a><a name="ctor"></a>MTAThreadAttribute Oluşturucusu
 
 MTAThreadAttribute sınıfının yeni bir örneğini başlatır.
 
@@ -64,11 +64,11 @@ MTAThreadAttribute sınıfının yeni bir örneğini başlatır.
 public:MTAThreadAttribute();
 ```
 
-## <a name="equals"></a> MTAThreadAttribute::Equals
+## <a name="mtathreadattributeequals"></a><a name="equals"></a>MTAThreadAttribute:: Equals
 
-Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.
+Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 public:virtual override bool Equals( Object^ obj );
@@ -81,11 +81,11 @@ Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**doğru** nesneler eşit; Aksi takdirde, **false**.
+**`true`** nesneler eşitse; Aksi takdirde, **`false`** .
 
-## <a name="gethashcode"></a> MTAThreadAttribute::GetHashCode
+## <a name="mtathreadattributegethashcode"></a><a name="gethashcode"></a>MTAThreadAttribute:: GetHashCode
 
-Bu örneğin karma kodunu döndürür.
+Bu örneğe ilişkin karma kodu döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -97,9 +97,9 @@ public:int GetHashCode();
 
 Bu örneğin karma kodu.
 
-## <a name="tostring"></a> MTAThreadAttribute::ToString
+## <a name="mtathreadattributetostring"></a><a name="tostring"></a>MTAThreadAttribute:: ToString
 
-Geçerli nesneyi temsil eden bir dize döndürür.
+Geçerli nesneyi temsil eden dizeyi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -109,8 +109,8 @@ public:String^ ToString();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli nesneyi temsil eden bir dize.
+Geçerli nesneyi temsil eden dize.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

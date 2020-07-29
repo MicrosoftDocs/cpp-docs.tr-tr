@@ -42,18 +42,18 @@ helpviewer_keywords:
 - _tcstoll function
 - _strtoll_l function
 ms.assetid: e2d05dcf-d3b2-4291-9e60-dee77e540fd7
-ms.openlocfilehash: 2cb8d47ce9f045d3652d1523d1f39c8be72f8997
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 047932a1f1474d443179a37b3dbc4fde6c995a99
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912435"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213482"
 ---
 # <a name="strtoll-_strtoll_l-wcstoll-_wcstoll_l"></a>strtoll, _strtoll_l, wcstoll, _wcstoll_l
 
-Bir dizeyi **Long** **Long** değerine dönüştürür.
+Bir dizeyi bir değere dönüştürür **`long long`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long long strtoll(
@@ -91,7 +91,7 @@ Taramayı durduran karakter işaretçisi.
 *base*<br/>
 Kullanılacak sayı temeli.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -106,7 +106,7 @@ Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strücretli** Işlevi, *strSource* 'u uzun bir **long** **uzunluğa**dönüştürür. Her iki işlev de bir sayının parçası olarak tanıyamadığı ilk karakterde *strSource* dize okumasını durdurur. Bu, Sonlandırıcı null karakteri olabilir veya *tabandan*büyük veya buna eşit olan ilk sayısal karakter olabilir. **wcstoll** , **strücretli**'in geniş karakterli bir sürümüdür; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
+**Strücretli** Işlevi, *strSource* ' a dönüştürür **`long long`** . Her iki işlev de bir sayının parçası olarak tanıyamadığı ilk karakterde *strSource* dize okumasını durdurur. Bu, Sonlandırıcı null karakteri olabilir veya *tabandan*büyük veya buna eşit olan ilk sayısal karakter olabilir. **wcstoll** , **strücretli**'in geniş karakterli bir sürümüdür; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -123,7 +123,7 @@ Yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*; içindeki taban karak
 
 **strücretli** , *strSource* 'un aşağıdaki biçimdeki bir dizeye işaret etmek istiyor:
 
-> [*boşluk*] [{**+** &#124; **-**}] [**0** [{ **x** &#124; **x** }]] [*basamaklar* &#124; *harfler*]
+> [*boşluk*] [{ **+** &#124; **-** }] [**0** [{ **x** &#124; **x** }]] [*rakam* &#124; *harf*]
 
 Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *rakamlar* bir veya daha fazla ondalık basamaklıdır; *harfler* , ' a '-' z ' (veya ' a '-' z ') harflerinden biridir. Bu forma uymayan ilk karakter taramayı durduruyor. *Taban* 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. *Base* 0 Ise, *strSource* tarafından işaret edilen dizenin ilk karakterleri temeli belirlemede kullanılır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. Taban aralığının dışındaki ilk karakter taramayı sonlandırır. Örneğin, *Base* 0 ise ve taranan ilk karakter ' 0 ' ise, sekizlik bir tamsayı varsayılır ve ' 8 ' veya ' 9 ' karakteri taramayı sonlandırır.
 
@@ -131,15 +131,15 @@ Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *rakaml
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strücretli**, **_strtoll_l**|\<Stdlib. h>|
-|**wcstoll**, **_wcstoll_l**|\<Stdlib. h> veya \<wchar. h>|
+|**strücretli**, **_strtoll_l**|\<stdlib.h>|
+|**wcstoll**, **_wcstoll_l**|\<stdlib.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [localeconv](localeconv.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>

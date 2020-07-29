@@ -29,18 +29,18 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-ms.openlocfilehash: cd50de1d1ade1d83b97bc465ff7e4c73b52fba2d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1fccb66632e832b491832cfac12fb1940bdf0f87
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942333"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213599"
 ---
 # <a name="_crtreportblocktype"></a>_CrtReportBlockType
 
 Verilen bir hata ayıklama yığını blok işaretçisi ile ilişkili blok türünü/alt türü döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _CrtReportBlockType(
@@ -55,11 +55,11 @@ Geçerli bir hata ayıklama yığın bloğunun işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir hata ayıklama yığın işaretçisi geçirildiğinde, **_Crtreportblocktype** işlevi bir **int**biçimindeki blok türünü ve alt türü döndürür. Geçersiz bir işaretçi geçirildiğinde, işlev-1 döndürür.
+Geçerli bir hata ayıklama yığın işaretçisi geçirildiğinde, **_CrtReportBlockType** işlevi, blok türünü ve alt türünü bir şeklinde döndürür **`int`** . Geçersiz bir işaretçi geçirildiğinde, işlev-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtreportblocktype**tarafından döndürülen türü ve alt türü ayıklamak için, döndürülen değer üzerinde makrolar **_Block_type** ve **_block_subtype** (her ikisi de Crtdbg. h içinde tanımlanmıştır) kullanın.
+**_CrtReportBlockType**tarafından döndürülen türü ve alt türü ayıklamak için, döndürülen değer üzerinde makrolar **_BLOCK_TYPE** ve **_BLOCK_SUBTYPE** (Crtdbg. h içinde tanımlanan) kullanın.
 
 Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 
@@ -67,7 +67,7 @@ Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi iç
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtReportBlockType**|\<Crtdbg. h >|
+|**_CrtReportBlockType**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

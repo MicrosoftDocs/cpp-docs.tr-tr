@@ -4,12 +4,12 @@ ms.date: 10/21/2019
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: 51de46487d85f4b8d7d357a0d1842f3d3192fff7
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: b68d9c857db35791486dfc0c1ee02a096a8f5a0a
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404801"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219475"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003 - 2015
 
@@ -66,7 +66,7 @@ Ayrıca, derleyici uyumsuzluğuna yönelik sürekli geliştirmeler bazen derleyi
 
   - `double pow(double, int)`, `float pow(float, float)`, `float pow(float, int)`, `long double pow(long double, long double)`, `long double pow(long double, int)`
 
-  - `float``long double`kayan nokta işlevlerinin,,,,,,,,, `acos` `acosh` `asin` `asinh` `atan` `atanh` `atan2` `cbrt` `ceil` `copysign` , `cos` , `cosh` , `erf` `erfc` `exp` `exp2` `expm1` `fabs` `fdim` `floor` `fma` `fmax` `fmin` `fmod` `frexp` `hypot` `ilogb` `ldexp` `lgamma` `llrint` `llround` `log` `log10` `log1p` `log2` `lrint` `lround` `modf` `nearbyint` `nextafter` `nexttoward` `remainder` `remquo` `rint` `round` `scalbln` `scalbn` `sin` `sinh` `sqrt` `tan` `tanh` `tgamma` ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,`trunc`
+  - **`float`****`long double`** kayan nokta işlevlerinin,,,,,,,,, `acos` `acosh` `asin` `asinh` `atan` `atanh` `atan2` `cbrt` `ceil` `copysign` , `cos` , `cosh` , `erf` `erfc` `exp` `exp2` `expm1` `fabs` `fdim` `floor` `fma` `fmax` `fmin` `fmod` `frexp` `hypot` `ilogb` `ldexp` `lgamma` `llrint` `llround` `log` `log10` `log1p` `log2` `lrint` `lround` `modf` `nearbyint` `nextafter` `nexttoward` `remainder` `remquo` `rint` `round` `scalbln` `scalbn` `sin` `sinh` `sqrt` `tan` `tanh` `tgamma` ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,`trunc`
 
   `abs`Yalnızca üst bilgiyi içeren bir kayan nokta türü ile kullanan kodunuz varsa \<math.h> , kayan nokta sürümleri artık kullanılabilir olmayacaktır. Çağrı şimdi `abs(int)` , bir kayan nokta bağımsız değişkeni ile birlikte, bu hatayı oluşturan olarak çözümleniyor:
 
@@ -451,7 +451,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **kesilebilir anahtar sözcüğü**
 
-   Daha önce hata olmadan derlenen konumlarda **kesilebilir** depolama sınıfı belirticisine artık izin verilmez. Artık derleyici hata C2071 (Geçersiz depolama sınıfı) veriyor. Standart olarak, **kesilebilir** tanımlayıcı yalnızca sınıf veri üyelerinin adlarına uygulanabilir ve const veya static olarak belirtilen adlara uygulanamaz ve başvuru üyelerine uygulanamaz.
+   **`mutable`** Depolama sınıfı belirticisine daha önce hatasız derlendikleri yerlerde artık izin verilmez. Artık derleyici hata C2071 (Geçersiz depolama sınıfı) veriyor. Standarda göre, **`mutable`** belirtici yalnızca sınıf veri üyelerinin adlarına uygulanabilir ve const veya static olarak belirtilen adlara uygulanamaz ve başvuru üyelerine uygulanamaz.
 
    Örneğin, aşağıdaki kodu göz önünde bulundurun:
 
@@ -468,11 +468,11 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     error C2071: 'S::r': illegal storage class
     ```
 
-   Hatayı onarmak için, gereksiz **kesilebilir** anahtar sözcüğünü kaldırın.
+   Hatayı düzeltemedi, gereksiz **`mutable`** anahtar sözcüğünü kaldırın.
 
 - **char_16_t ve char32_t**
 
-   `char16_t` `char32_t` Bu türler artık yerleşik olarak değerlendirildiğinden, bir **typedef**içinde artık diğer adlar kullanılamaz. Kullanıcılar ve kitaplık yazarlarının `char16_t` `char32_t` `uint16_t` , sırasıyla ve ' nin diğer adlarını tanımlamak için yaygındır `uint32_t` .
+   Artık **`char16_t`** **`char32_t`** **`typedef`** Bu türler yerleşik olarak değerlendirildiğinden, bir içinde diğer ad olarak kullanılamaz. Kullanıcılar ve kitaplık yazarlarının **`char16_t`** **`char32_t`** `uint16_t` , sırasıyla ve ' nin diğer adlarını tanımlamak için yaygındır `uint32_t` .
 
     ```cpp
     #include <cstdint>
@@ -489,7 +489,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   Kodunuzu güncelleştirmek için, **typedef** bildirimlerini kaldırın ve bu adlarla çakışan diğer tanımlayıcıları yeniden adlandırın.
+   Kodunuzu güncelleştirmek için **`typedef`** bildirimleri kaldırın ve bu adlarla çakışan diğer tanımlayıcıları yeniden adlandırın.
 
 - **Tür olmayan şablon parametreleri**
 
@@ -522,7 +522,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Kodunuzda bu hatayı gidermek için kullandığınız şablon bağımsız değişkeninin türünün şablon parametresinin belirtilen türüyle eşleştiğinden emin olun.
 
-- **__declspec (Hizala)**
+- **`__declspec(align)`**
 
    Derleyici artık işlevlerde kabul etmez `__declspec(align)` . Bu yapı her zaman yoksayıldı, ancak şimdi bir derleyici hatası veriyor.
 
@@ -551,7 +551,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   Bu sorun, kopya oluşturucusunun özel olması, bu nedenle bir özel durumu işlemenin normal sırasında nesne olduğu gibi kopyalanamaz. Kopya Oluşturucu **Açık**olarak bildirildiğinde aynı durum geçerlidir.
+   Bu sorun, kopya oluşturucusunun özel olması, bu nedenle bir özel durumu işlemenin normal sırasında nesne olduğu gibi kopyalanamaz. Aynı kopya Oluşturucu bildirildiği zaman geçerlidir **`explicit`** .
 
     ```cpp
     struct S
@@ -566,7 +566,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   Kodunuzu güncelleştirmek için, özel durum nesnenizin kopya oluşturucusunun **ortak** olduğundan ve **Açık**olarak işaretlenmemiş olduğundan emin olun.
+   Kodunuzu güncelleştirmek için, özel durum nesnenizin kopya oluşturucusunun olmadığından **`public`** ve işaretlenmediğinden emin olun **`explicit`** .
 
    Bir özel durumu değere göre yakalamak Ayrıca özel durum nesnesinin kopyalanabilir olmasını gerektirir. Aşağıdaki kod Visual Studio 2013 derlenmiş, ancak Visual Studio 2015 ' de derlenmiyor:
 
@@ -592,7 +592,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   **Catch** için parametre türünü bir başvuruya dönüştürerek bu sorunu çözebilirsiniz.
+   İçin parametre türünü bir başvuruya değiştirerek bu sorunu çözebilirsiniz **`catch`** .
 
     ```cpp
     catch (D& d)
@@ -641,9 +641,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Yeni yerleştirme ve silme**
 
-   C++ 14 standardı ile uyumlu hale getirmek için **Delete** işlecinde bir değişiklik yapılmıştır. Standartlar değişikliğinin ayrıntıları, [C++ boyutunda ayırmayı kaldırma](https://isocpp.org/files/papers/n3778.html)' da bulunabilir. Değişiklikler, bir boyut parametresi alan Global **Delete** işlecinin bir formunu ekler. Son değişiklik, daha önce aynı imzaya sahip bir işleç **silme** işlemi ( **Yeni bir yerleştirme** işleçle karşılık gelen) kullandığınızda bir derleyici hatası (C2956 ' in, derleyicinin uygun bir eşleşen **silme** işlecini belirlemeyi denediği koddaki konum) ile karşılaşırsınız.
+   **`delete`** C++ 14 standardı ile uyumlu hale getirmek için işleçte bir değişiklik yapılmıştır. Standartlar değişikliğinin ayrıntıları, [C++ boyutunda ayırmayı kaldırma](https://isocpp.org/files/papers/n3778.html)' da bulunabilir. Değişiklikler, **`delete`** bir boyut parametresi alan genel işlecin bir formunu ekler. Son değişiklik, daha önce **`delete`** aynı imzaya sahip bir işleç kullanıyorsanız ( **Yeni bir yerleştirme** işlecine karşılık gelmesi için) bir derleyici hatası (C2956 ' in, derleyicinin uygun bir eşleşen operatör tanımlamak için yaptığı konum) ile ilgili olarak, bir derleyici hatası ( **`delete`** ) alırsınız.
 
-   İşlev, `void operator delete(void *, size_t)` c++ 11 ' deki **yerleştirme yeni** işlevine karşılık gelen bir **yerleşim silme** işleçiydi `void * operator new(size_t, size_t)` . C++ 14 boyutunda ayırmayı kaldırma ile, bu Delete işlevi artık *olağan bir ayırmayı kaldırma işlevidir* (Global **Delete** işleci). Standart, yeni bir yerleşim kullanılması karşılık gelen bir silme işlevini arar ve normal bir ayırmayı kaldırma işlevi bulursa programın hatalı biçimlendirilmiş olması gerekir.
+   İşlev, `void operator delete(void *, size_t)` c++ 11 ' deki **yerleştirme yeni** işlevine karşılık gelen bir **yerleşim silme** işleçiydi `void * operator new(size_t, size_t)` . C++ 14 boyutunda ayırmayı kaldırma ile, bu Delete işlevi artık *olağan bir ayırmayı kaldırma işlevidir* (genel **`delete`** operatör). Standart, yeni bir yerleşim kullanılması karşılık gelen bir silme işlevini arar ve normal bir ayırmayı kaldırma işlevi bulursa programın hatalı biçimlendirilmiş olması gerekir.
 
    Örneğin, kodunuzun hem **yerleştirmesini** hem de bir **yerleşimi silmeyi**tanımladığını varsayalım:
 
@@ -652,15 +652,15 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     void operator delete(void*, std::size_t) noexcept;
     ```
 
-   Bu sorun, tanımladığınız bir **yerleşim silme** işleci ve yeni global boyutlu **silme** işleci arasındaki işlev imzalarındaki eşleşme nedeniyle oluşur. `size_t`Herhangi bir **yerleştirme New** ve **Delete** işleçleri için dışında farklı bir tür kullanıp kullanmayacağınızı göz önünde bulundurun. `size_t` **Typedef** 'in türü DERLEYICIYE bağımlıdır; MSVC içinde **işaretsiz int** için bir **typedef** . İyi bir çözüm, şöyle bir numaralandırılmış tür kullanmaktır:
+   Bu sorun, tanımladığınız bir **yerleştirme silme** işleci ile yeni genel boyutlu operatör arasındaki işlev imzalarındaki eşleşme nedeniyle oluşur **`delete`** . `size_t`Herhangi bir **yerleştirme için yeni** ve işleçlerden farklı bir tür kullanıp kullanmayacağınızı göz önünde bulundurun **`delete`** . Türü `size_t` **`typedef`** derleyiciye BAĞıMLıDıR; **`typedef`** **`unsigned int`** MSVC içinde için bir. İyi bir çözüm, şöyle bir numaralandırılmış tür kullanmaktır:
 
     ```cpp
     enum class my_type : size_t {};
     ```
 
-   Ardından, **yeni yerleştirme** tanımınızı değiştirin ve bu türü, yerine ikinci bağımsız değişken olarak kullanmak için **silin** `size_t` . Ayrıca yeni bir türü geçirmek (örneğin, `static_cast<my_type>` tam sayı değerinden dönüştürmek için kullanarak) ve **Yeni** ve **silme** tanımını tam sayı türüne dönüştürmek için yeni yerleştirme için yapılan çağrıları güncelleştirmeniz gerekir. Bunun için bir **enum** kullanmanız gerekmez; üye içeren bir sınıf türü `size_t` de çalışır.
+   Ardından, **yeni yerleştirme** tanımınızı değiştirin ve **`delete`** Bu türü, yerine ikinci bağımsız değişken olarak kullanın `size_t` . Ayrıca yeni bir türü geçirmek (örneğin, `static_cast<my_type>` tam sayı değerinden dönüştürmek için kullanarak) ve tanımını güncelleştirmek ve **`new`** **`delete`** tamsayı türüne dönmek için, yeni yerleştirme için yapılan çağrıları güncelleştirmeniz gerekir. Bunun için bir öğesi kullanmanız gerekmez **`enum`** ; üye içeren bir sınıf türü `size_t` de çalışır.
 
-   Alternatif bir çözüm de **yeni yerleşimi** tamamen ortadan kaldırabilmeyebilirsiniz. Kodunuz, yerleştirme bağımsız değişkeninin ayrılan veya Silinen nesnenin boyutu olduğu bir bellek havuzunu uygulamak için **yeni yerleştirme** kullanıyorsa, boyutu kaldırma özelliği kendi özel bellek havuzu kodunuzu değiştirmek için uygun olabilir ve yerleştirme işlevlerinin kurtulabileceği ve yerleştirme işlevleri yerine kendi iki bağımsız değişkenli **silme** işlecini kullanmanız yeterlidir.
+   Alternatif bir çözüm de **yeni yerleşimi** tamamen ortadan kaldırabilmeyebilirsiniz. Kodunuz, yerleştirme bağımsız değişkeninin ayrılan veya Silinen nesnenin boyutu olduğu bir bellek havuzunu uygulamak için **yeni yerleştirme** kullanıyorsa, boyutu kaldırma özelliği kendi özel bellek havuzu kodunuzu değiştirmek için uygun olabilir ve yerleştirme işlevlerinin kurtulabileceği ve yerleştirme işlevleri yerine kendi iki bağımsız değişken işlecini kullanmanız yeterlidir **`delete`** .
 
    Kodunuzu hemen güncelleştirmek istemiyorsanız, derleyici seçeneğini kullanarak eski davranışa dönüştürebilirsiniz `/Zc:sizedDealloc-` . Bu seçeneği kullanırsanız, iki bağımsız değişken silme işlevi yoktur ve **yerleştirme silme** işleçle bir çakışmaya neden olmaz.
 
@@ -949,7 +949,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     S1<S2> s;
     ```
 
-   Hatayı düzeltemedi, `typename` başlatıcıdan kaldırın:
+   Hatayı düzeltemedi, **`typename`** başlatıcıdan kaldırın:
 
     ```cpp
     S1() : T::type() // OK
@@ -974,7 +974,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Sınıf şablonu içindeki bir static_assert kullanılan sabit her zaman başarısız olur.**
 
-   Aşağıdaki kod, ' nin `static_assert` her zaman başarısız olmasına neden olur:
+   Aşağıdaki kod, ' nin **`static_assert`** her zaman başarısız olmasına neden olur:
 
     ```cpp
     template <size_t some_value>
@@ -987,7 +987,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     //other partial specializations here
     ```
 
-   Bu sorunu geçici olarak çözmek için, değeri bir **yapıda**sarmalayın:
+   Bu sorunu geçici olarak çözmek için, değeri bir ile sarmalayın **`struct`** :
 
     ```cpp
     template <size_t some_value>
@@ -1072,7 +1072,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Hatayı onarmak için, çağrısını tam olarak niteleyebilirsiniz `bind: N::bind(...)` . Ancak, bu değişiklik bildirilmemiş bir tanımlayıcı (C2065) aracılığıyla bildiriminizde, bunun yerine **using** bildirimiyle düzeltilmesi uygun olabilir.
+   Hatayı onarmak için, çağrısını tam olarak niteleyebilirsiniz `bind: N::bind(...)` . Ancak, bu değişiklik bildirilmemiş bir tanımlayıcı (C2065) aracılığıyla bildiriminizde, bunun yerine bildirim ile düzeltilmesi uygun olabilir **`using`** .
 
    Bu model genellikle ComPtr ve ad alanındaki diğer türler ile gerçekleşir `Microsoft::WRL` .
 
@@ -1215,17 +1215,17 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Kodu onarmak için, catch bloğunu olarak değiştirebilirsiniz `catch (const D &)` ancak daha iyi çözüm genellıkle MFC try/catch makrolarını kullanır.
 
-- **hizalama artık bir anahtar sözcük**
+- **`alignof`Artık bir anahtar sözcüktür**
 
-   Aşağıdaki kod şimdi hata C2332: ' class ': etiket adı eksik. Kodu gidermek için, sınıfını yeniden adlandırmanız gerekir ya da sınıf aynı işi **Hizalama**ile yapıyorsa, yalnızca sınıfını yeni anahtar sözcükle değiştirmelisiniz.
+   Aşağıdaki kod şimdi hata C2332: ' class ': etiket adı eksik. Kodu gidermek için, sınıfını yeniden adlandırmanız gerekir ya da sınıf aynı işi ile yapıyorsa, **`alignof`** yalnızca sınıfını yeni anahtar sözcükle değiştirmelisiniz.
 
     ```cpp
     class alignof{}
     ```
 
-- **constexpr artık bir anahtar sözcük**
+- **`constexpr`Artık bir anahtar sözcüktür**
 
-   Aşağıdaki kod artık hata C2059 oluşturuyor: sözdizimi hatası: ') '. Kodu onarmak için, "constexpr" olarak adlandırılan işlev veya değişken adlarını yeniden adlandırmanız gerekir.
+   Aşağıdaki kod artık hata C2059 oluşturuyor: sözdizimi hatası: ') '. Kodu onarmak için, çağrılan işlev veya değişken adlarını yeniden adlandırmanız gerekir **`constexpr`** .
 
     ```cpp
     int constexpr() {return 1;}
@@ -1233,7 +1233,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Taşınabilir türler const olamaz**
 
-   Bir işlev, taşınması amaçlanan bir tür döndürdüğünde, dönüş türü **const**olmamalıdır.
+   Bir işlev, taşınması amaçlanan bir tür döndürdüğünde, dönüş türü olmamalıdır **`const`** .
 
 - **Silinen kopya oluşturucular**
 
@@ -1507,7 +1507,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Hatayı gidermek için, `0` Bu örnekte gösterildiği gibi, ya da başka bir şekilde bunun yerine **nullptr** kullanın:
+   Hatayı gidermek için, `0` **`nullptr`** Bu örnekte gösterildiği gibi, küme ayraçlarını veya başka bir kullanım etrafında kaldırın:
 
     ```cpp
     struct S {
@@ -1582,7 +1582,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Hatayı gidermek için etrafındaki parantezleri kaldırın `j` . Parantezler açıklık için gerekliyse, bir **typedef**kullanın.
+   Hatayı gidermek için etrafındaki parantezleri kaldırın `j` . Parantezler açıklık için gerekliyse, bir kullanın **`typedef`** .
 
 - **Derleyici tarafından oluşturulan oluşturucular ve __declspec (novtable)**
 
@@ -1627,7 +1627,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     static_assert(std::is_convertible<D, B2>::value, "fail");
     ```
 
-   Hatayı onarmak için, ' yi, `static_assert` işaretçilerle ve ile karşılaştırılmasını sağlayacak şekilde değiştirin `D` `B2` :
+   Hatayı onarmak için, ' yi, **`static_assert`** işaretçilerle ve ile karşılaştırılmasını sağlayacak şekilde değiştirin `D` `B2` :
 
     ```cpp
     static_assert(std::is_convertible<D*, B2*>::value, "fail");
@@ -1635,7 +1635,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **__declspec (novtable) bildirimleri tutarlı olmalıdır**
 
-   `__declspec`bildirimlerin tüm kitaplıklar arasında tutarlı olması gerekir. Aşağıdaki kod artık tek tanımlı bir kural (ODR) ihlaline neden olacak:
+   **`__declspec`** bildirimlerin tüm kitaplıklar arasında tutarlı olması gerekir. Aşağıdaki kod artık tek tanımlı bir kural (ODR) ihlaline neden olacak:
 
     ```cpp
     //a.cpp
@@ -1755,7 +1755,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Yeni işleç New ve delete işleci**
 
-   Derleyicinin önceki sürümleri, üyenin üye olmayan **işlecine** **ve üyenin statik** olarak bildirilmesini ve genel ad alanından farklı ad alanlarında bildirilmesine izin verilir.  Bu eski davranış, programın programladığı **Yeni** veya **silme** işletmeni uygulamasını çağırmayacağı ve sessiz bozuk çalışma zamanı davranışına neden olan bir risk oluşturdu. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve bunun yerine derleyici hatası C2323 yayınlar.
+   Derleyicinin önceki sürümleri, üyenin üye olmayan **işlecine** **ve üyenin statik** olarak bildirilmesini ve genel ad alanından farklı ad alanlarında bildirilmesine izin verilir.  Bu eski davranış, programın **`new`** **`delete`** Programcı tarafından amaçlanan veya işletmen uygulamasını çağırmayacağı ve sessiz hatalı çalışma zamanı davranışına neden olduğu bir risk oluşturdu. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve bunun yerine derleyici hatası C2323 yayınlar.
 
     ```Output
     error C2323: 'operator new': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace.
@@ -1773,7 +1773,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
     ```
 
-   Ayrıca, derleyici belirli bir tanılama sunmasa da, **Yeni** satır içi işleç hatalı biçimlendirilmiş olarak kabul edilir.
+   Ayrıca, derleyici belirli bir tanılama sunmasa da, satır içi işleç **`new`** Hatalı biçimlendirilmiş olarak kabul edilir.
 
 - **Sınıf olmayan türlerde ' operator *Type*() ' (Kullanıcı tanımlı dönüştürme) çağrılıyor**
 
@@ -1807,7 +1807,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Ayrıntılı tür tanımlayıcıda gereksiz TypeName**
 
-   Derleyicinin önceki sürümlerinde, bir ayrıntılı tür tanımlayıcıda **TypeName** değeri verilir, ancak bu şekilde yazılan kod anlam yanlış olur. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve bunun yerine derleyici hatası C3406 yayınlar.
+   Derleyicinin önceki sürümleri **`typename`** bir ayrıntılı tür belirticisinde izin verilir, ancak bu şekilde yazılan kod anlam yanlış olur. Derleyici artık bu şekilde yazılmış kodu kabul etmez ve bunun yerine derleyici hatası C3406 yayınlar.
 
     ```Output
     error C3406: 'typename' cannot be used in an elaborated type specifier
@@ -1915,7 +1915,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Switch ifadesinin uyarılarını geri yükleme**
 
-   Derleyicinin önceki bir sürümü, **Switch** deyimleriyle ilgili bazı uyarıları kaldırdı; Bu uyarılar artık geri yüklendi. Derleyici artık geri yüklenen uyarıları verir ve belirli durumlar (varsayılan durum dahil) ile ilgili uyarılar artık switch ifadesinin son satırı yerine sorunlu durumu içeren satıra çıkarılır. Artık bu uyarıların geçmiş dışında farklı satırlarda verilmesi sonucunda, daha önce kullanılarak gizlenen uyarılar `#pragma warning(disable:####)` amaçlanan şekilde gizlemeyebilir. Bu uyarıların istendiği şekilde görüntülenmesini sağlamak için, `#pragma warning(disable:####)` yönergeyi ilk sorunlu durumun üzerindeki bir satıra taşımak gerekebilir. Geri yüklenen uyarılar aşağıda verilmiştir:
+   Derleyicinin önceki bir sürümü deyimlerle ilgili bazı uyarıları kaldırdı **`switch`** ; Bu uyarılar artık geri yüklendi. Derleyici artık geri yüklenen uyarıları verir ve belirli durumlar (varsayılan durum dahil) ile ilgili uyarılar artık switch ifadesinin son satırı yerine sorunlu durumu içeren satıra çıkarılır. Artık bu uyarıların geçmiş dışında farklı satırlarda verilmesi sonucunda, daha önce kullanılarak gizlenen uyarılar `#pragma warning(disable:####)` amaçlanan şekilde gizlemeyebilir. Bu uyarıların istendiği şekilde görüntülenmesini sağlamak için, `#pragma warning(disable:####)` yönergeyi ilk sorunlu durumun üzerindeki bir satıra taşımak gerekebilir. Geri yüklenen uyarılar aşağıda verilmiştir:
 
     ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels
@@ -2205,9 +2205,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **Ek uyarılar ve hatalar, SFıNAE ifadesi için kısmi destek sonucu olarak verilebilir.**
 
-   Derleyicinin önceki sürümleri, SFıNAE ifadesi için destek eksikliği nedeniyle, **decltype** belirticileri içindeki belirli tür ifadeleri ayrıştırmadı. Bu eski davranış yanlıştı ve C++ standardına uymuyor. Derleyici artık bu ifadeleri ayrıştırır ve sürekli uyumluluk geliştirmeleri nedeniyle ifade SFıNAE için kısmi desteğe sahiptir. Sonuç olarak, derleyici artık derleyicinin önceki sürümlerinin ayrıştırmadığı ifadelerde bulunan uyarıları ve hataları verir.
+   Derleyicinin önceki sürümleri, **`decltype`** SFıNAE ifadesi için destek eksikliği nedeniyle, tanımlayıcılarda belirli tür ifadeleri ayrıştırmadı. Bu eski davranış yanlıştı ve C++ standardına uymuyor. Derleyici artık bu ifadeleri ayrıştırır ve sürekli uyumluluk geliştirmeleri nedeniyle ifade SFıNAE için kısmi desteğe sahiptir. Sonuç olarak, derleyici artık derleyicinin önceki sürümlerinin ayrıştırmadığı ifadelerde bulunan uyarıları ve hataları verir.
 
-   Bu yeni davranış, henüz bildirilmemiş bir tür içeren bir **decltype** ifadesini ayrıştırdığında, derleyici bir sonuç olarak derleyici hatası C2039 yayınlar.
+   Bu yeni davranış **`decltype`** , henüz bildirilmemiş bir tür içeren bir ifadeyi ayrıştırdığında, derleyici bir sonuç olarak derleyici hatası C2039 yayınlar.
 
     ```Output
     error C2039: 'type': is not a member of '`global namespace''
@@ -2241,7 +2241,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   Bu yeni davranış, bağımlı bir adın bir tür olduğunu belirtmek için **TypeName** anahtar sözcüğünün gerekli bir kullanımı eksik olan bir **decltype** ifadesini ayrıştırdığında, derleyici derleyici uyarısı C4346 derleyici hatası C2923 ile birlikte yayınlar.
+   Bu yeni davranış, bağımlı bir **`decltype`** adın bir tür olduğunu belirtmek için anahtar sözcüğünün gerekli bir kullanımı eksik olan bir ifadeyi ayrıştırdığında, derleyici derleyici **`typename`** uyarısı C4346 derleyici hatası C2923 ile birlikte verir.
 
     ```Output
     warning C4346: 'S2<T>::Type': dependent name is not a type
@@ -2292,9 +2292,9 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-- `volatile`**üye değişkenleri örtük olarak tanımlanmış oluşturucuları ve atama işleçlerini önler**
+- **`volatile`****üye değişkenleri örtük olarak tanımlanmış oluşturucuları ve atama işleçlerini önler**
 
-   Derleyicinin önceki sürümlerinde, varsayılan kopyalama/taşıma oluşturucuları ve varsayılan kopyalama/taşıma atama işleçleri otomatik olarak oluşturulan **geçici** üye değişkenlerine sahip bir sınıf izin verilir. Bu eski davranış yanlıştı ve C++ standardına uymuyor. Derleyici artık, bu işleçlerin varsayılan uygulamalarının otomatik olarak oluşturulmasını önleyen, önemsiz olmayan oluşturma ve atama işleçleri olan **geçici** üye değişkenlerine sahip bir sınıfı kabul eder. Böyle bir sınıf bir birleşimin üyesi (veya bir sınıfın içindeki anonim bir birleşim) olduğunda, birleşimin kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri (veya anonim birleşim içeren sınıf) örtük olarak silindi olarak tanımlanır. Açıkça tanımlanmaksızın birleşim (veya anonim birleşim içeren sınıf) oluşturmaya veya kopyalamaya çalışılması bir hatadır ve derleyici sonuç olarak derleyici hatası C2280 yayınlar.
+   Derleyicinin önceki sürümlerinde, **`volatile`** varsayılan kopyalama/taşıma oluşturucuları ve varsayılan kopyalama/taşıma atama işleçleri otomatik olarak oluşturulan üye değişkenlerine sahip bir sınıf izin verilir. Bu eski davranış yanlıştı ve C++ standardına uymuyor. Derleyici artık, üye değişkenleri olan bir sınıfı, **`volatile`** Bu işleçlerin varsayılan uygulamalarının otomatik olarak oluşturulmasını önleyen, önemsiz olmayan oluşturma ve atama işleçleri olacak şekilde değerlendirir. Böyle bir sınıf bir birleşimin üyesi (veya bir sınıfın içindeki anonim bir birleşim) olduğunda, birleşimin kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri (veya anonim birleşim içeren sınıf) örtük olarak silindi olarak tanımlanır. Açıkça tanımlanmaksızın birleşim (veya anonim birleşim içeren sınıf) oluşturmaya veya kopyalamaya çalışılması bir hatadır ve derleyici sonuç olarak derleyici hatası C2280 yayınlar.
 
     ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -2380,7 +2380,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **WinRT kodunda, enum iletme bildirimine izin verilmiyor** (yalnızca etkiler `/ZW` )
 
-   Windows Çalışma Zamanı (WinRT) için derlenen kod, yönetilen C++ kodunun derleyici anahtarı kullanılarak .NET Framework için derlendiğine benzer şekilde, **numaralandırma** türlerinin ileri olarak bildirilmesine izin vermez `/clr` . Bu davranış, bir numaralandırma boyutunun her zaman bilinmesini ve WinRT türü sistemine doğru şekilde yansıtılmasını sağlar. Derleyici bu şekilde yazılmış kodu reddeder ve derleyici hatası C3197 ile birlikte derleyici hatası C2599 yayınlar.
+   Windows Çalışma Zamanı (WinRT) için derlenen kod **`enum`** , yönetilen C++ kodunun derleyici anahtarı kullanılarak .NET Framework için derlendiğine benzer şekilde, türlerin iletme olarak bildirilmesine izin vermez `/clr` . Bu davranış, bir numaralandırma boyutunun her zaman bilinmesini ve WinRT türü sistemine doğru şekilde yansıtılmasını sağlar. Derleyici bu şekilde yazılmış kodu reddeder ve derleyici hatası C3197 ile birlikte derleyici hatası C2599 yayınlar.
 
     ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -2467,7 +2467,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
 - **std:: is_convertable artık kendinden atamayı algılar** (Standart Kitaplığı)
 
-   Nitelik türünün önceki sürümleri, `std::is_convertable` kopya Oluşturucusu silindiği veya özel bir sınıf türünün kendi kendine atamasını doğru bir şekilde algılamadı. Şimdi, `std::is_convertable<>::value` Silinmiş veya özel kopya Oluşturucusu olan bir sınıf türüne uygulandığında doğru olarak **false** olarak ayarlanmıştır.
+   Nitelik türünün önceki sürümleri, `std::is_convertable` kopya Oluşturucusu silindiği veya özel bir sınıf türünün kendi kendine atamasını doğru bir şekilde algılamadı. Şimdi, `std::is_convertable<>::value` **`false`** Silinmiş veya özel kopya Oluşturucusu olan bir sınıf türüne uygulandığında doğru şekilde ayarlanmıştır.
 
    Bu değişiklik ile ilişkili bir derleyici tanılaması yok.
 
@@ -2491,7 +2491,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     static_assert(std::is_convertible<X1&, X1>::value, "BOOM");static_assert(std::is_convertible<X2&, X2>::value, "BOOM");
     ```
 
-   Derleyicinin önceki sürümlerinde, bu örneğin en altındaki statik onaylar, `std::is_convertable<>::value` yanlış olarak **doğru**olarak ayarlandığından geçer. Artık `std::is_convertable<>::value` **yanlış**olarak ayarlanmıştır, statik onayların başarısız olmasına neden olur.
+   Derleyicinin önceki sürümlerinde, bu örneğin en altındaki statik onaylar, `std::is_convertable<>::value` yanlış olarak ayarlandığı için geçti **`true`** . Artık,, `std::is_convertable<>::value` **`false`** statik onayların başarısız olmasına neden olan olarak doğru şekilde ayarlanmıştır.
 
 - **Varsayılan olarak ayarlanmış veya silinmiş önemsiz kopyalama ve taşıma oluşturucuları erişim belirticilerine göre**
 
@@ -2723,7 +2723,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   Önceki sürümlerde, çağrı **sanal** bir çağrı olduğundan bir hata verilmedi; Bununla birlikte, program çalışma zamanında çökebilir. Artık, sınıfın son olduğu bilindiğinden bir bağlayıcı hatası verilmektedir. Bu örnekte, hatayı düzeltemedi, tanımını içeren obj 'e göre bağlantı oluşturursunuz `S2::f` .
+   Önceki sürümlerde, çağrı bir çağrı olduğundan bir hata verilmedi **`virtual`** ; Bununla birlikte, program çalışma zamanında çökebilir. Artık, sınıfın son olduğu bilindiğinden bir bağlayıcı hatası verilmektedir. Bu örnekte, hatayı düzeltemedi, tanımını içeren obj 'e göre bağlantı oluşturursunuz `S2::f` .
 
 - Ad alanlarında arkadaş işlevlerini kullandığınızda, ona başvurmadan önce arkadaş işlevini yeniden bildirmeniz gerekir, aksi durumda derleyici artık ISO C++ standardına uygun olduğundan bir hata alırsınız. Örneğin, bu örnek artık derlenmezse:
 
@@ -2740,7 +2740,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-   Bu kodu düzeltmek için **arkadaş** işlevini bildirin:
+   Bu kodu düzeltmek için, işlevi bildirin **`friend`** :
 
     ```cpp
     namespace NS {
@@ -2797,14 +2797,14 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     }
     ```
 
-- Derleyici ISO C++ 11 ile uyumlu hale getirilmesinden önce aşağıdaki kod derlenir ve `x` **int**türünde çözümlenmesine neden olur:
+- Derleyici ISO C++ 11 ile uyumlu hale getirilmesinden önce aşağıdaki kod derlenir ve bu `x` tür çözümlenmesine neden olur **`int`** :
 
     ```cpp
     auto x = {0};
     int y = x;
     ```
 
-   Bu kod `x` , bir türü olarak çözümlenmektedir `std::initializer_list<int>` ve int türüne atamaya çalışan bir sonraki satırda hataya neden olur `x` . **int** (Varsayılan olarak dönüştürme yoktur.) Bu kodu düzeltmek için, **Auto**yerine **int** kullanın:
+   Bu kod `x` , bir türü olarak çözümlenir `std::initializer_list<int>` ve türe atamaya çalışan bir sonraki satırda hataya neden olur `x` **`int`** . (Varsayılan olarak dönüştürme yoktur.) Bu kodu düzeltmek için öğesini kullanarak şunları **`int`** değiştirin **`auto`** :
 
     ```cpp
     int x = {0};
@@ -2854,7 +2854,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
 
    Visual Studio 2012 ' de, `E1` ın ifadesi `E1::b` `::E1` genel kapsamda olarak çözümlenir. Visual Studio 2013 içinde, `E1` ifadesinde `E1::b` `typedef E2` tanımına çözümler `main()` ve türü vardır `::E2` .
 
-- Nesne düzeni değişti. x64 üzerinde, bir sınıfın nesne düzeni önceki sürümlere göre değişebilmektedir. Bir **sanal** işlevi varsa, ancak **sanal** işlevine sahip bir taban sınıfı yoksa, derleyicinin nesne modeli, veri üyesi düzeninden sonra **sanal** işlev tablosuna bir işaretçi ekler. Başka bir deyişle, ilgili düzen her durumda en uygun düzen olmayabilir. Önceki sürümlerde, x64 için en iyi duruma getirme sizin için düzeni iyileştirmeye çalışır, ancak karmaşık kod durumlarında düzgün şekilde çalışamadığı için Visual Studio 2013 kaldırılmıştır. Örneğin, aşağıdaki kodu düşünün:
+- Nesne düzeni değişti. x64 üzerinde, bir sınıfın nesne düzeni önceki sürümlere göre değişebilmektedir. Bir **`virtual`** işlevi varsa, ancak işlevi olan bir temel sınıfı yoksa **`virtual`** , derleyicinin nesne modeli, **`virtual`** veri üyesi düzeninden sonra bir işlev tablosuna bir işaretçi ekler. Başka bir deyişle, ilgili düzen her durumda en uygun düzen olmayabilir. Önceki sürümlerde, x64 için en iyi duruma getirme sizin için düzeni iyileştirmeye çalışır, ancak karmaşık kod durumlarında düzgün şekilde çalışamadığı için Visual Studio 2013 kaldırılmıştır. Örneğin, aşağıdaki kodu düşünün:
 
     ```cpp
     __declspec(align(16)) struct S1 {
@@ -2867,7 +2867,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-- Visual Studio 2013, `sizeof(S2)` x64 üzerindeki sonucu 48, ancak önceki sürümlerde 32 olarak değerlendirilir. Bu işlemi x64 için Visual Studio 2013 C++ derleyicisinde 32 olarak değerlendirmek için **sanal** işleve sahip bir kukla taban sınıfı ekleyin:
+- Visual Studio 2013, `sizeof(S2)` x64 üzerindeki sonucu 48, ancak önceki sürümlerde 32 olarak değerlendirilir. Bu işlemi x64 için Visual Studio 2013 C++ derleyicisinde 32 olarak değerlendirmek için, işlevi olan bir kukla taban sınıfı ekleyin **`virtual`** :
 
     ```cpp
     __declspec(align(16)) struct S1 {
@@ -2883,7 +2883,7 @@ Bu farklılıklar, kaynak kodunuzu veya diğer yapı yapıtlarınızı etkileyeb
     };
     ```
 
-   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın `/W3` ve uyarı C4370 ' ı açın. Örneğin:
+   Kodunuzda daha önceki bir sürümün iyileştirmeye çalıştığı yerleri bulmak için, derleyici seçeneğiyle birlikte bu sürümden bir derleyici kullanın `/W3` ve uyarı C4370 ' ı açın. Örnek:
 
     ```cpp
     #pragma warning(default:4370)
@@ -2952,7 +2952,7 @@ Visual Studio 2013 C++ derleyicisi, Visual Studio 2010 ' de uygulanmış olan _I
 
    Bu değişikliğin yan etkisi olarak, kimlik durumu artık çalışmaz (common_type \<T> her zaman t türünde sonuç vermez). Bu davranış önerilen çözünürlüğe uyar, ancak önceki davranışa bağlı olan tüm kodları keser.
 
-   Bir kimlik türü nitelik gerekliyse, içinde tanımlı standart olmayan ' ı kullanmayın, `std::identity` \<type_traits> çünkü için çalışmaz \<void> . Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. Aşağıda bir örnek verilmiştir:
+   Bir kimlik türü nitelik gerekliyse, içinde tanımlı standart olmayan ' ı kullanmayın, `std::identity` \<type_traits> çünkü için çalışmaz \<void> . Bunun yerine, gereksinimlerinize uyan kendi kimlik türü ayırt edici niteliğini uygulayın. İşte bir örnek:
 
     ```cpp
     template < typename T> struct Identity {
@@ -3000,7 +3000,7 @@ Visual Studio 2013 C++ derleyicisi, Visual Studio 2010 ' de uygulanmış olan _I
 
 - `/Yl`Derleyici seçeneği değişti. Varsayılan olarak, derleyici bu seçeneği kullanarak belirli koşullar altında LNK2011 hatalara yol açabilir. Daha fazla bilgi için bkz. [/Rivl (hata ayıklama kitaplığı IÇIN PCH başvurusu Ekle)](../build/reference/yl-inject-pch-reference-for-debug-library.md).
 
-- Kullanılarak derlenen kodda `/clr` , **enum** sınıfı anahtar sözcüğü, ortak dil çalışma zamanı (CLR) sabit listesini değil bir c++ 11 sabit listesini tanımlar. Bir CLR numaralandırması tanımlamak için, erişilebilirliği hakkında açık olması gerekir.
+- Kullanılarak derlenen kodda `/clr` **`enum`** class anahtar sözcüğü, ortak dil çalışma zamanı (CLR) sabit listesini değil bir c++ 11 sabit listesini tanımlar. Bir CLR numaralandırması tanımlamak için, erişilebilirliği hakkında açık olması gerekir.
 
 - Bağımlı bir adı (C++ dili standart uyumluluğu) açıkça ayırt etmek için şablon anahtar sözcüğünü kullanın. Aşağıdaki örnekte, vurgulanan şablon anahtar sözcüğü belirsizliği çözümlemek için zorunludur. Daha fazla bilgi için bkz. [bağımlı türler Için ad çözümlemesi](../cpp/name-resolution-for-dependent-types.md).
 
@@ -3232,9 +3232,9 @@ Visual Studio 2013 C++ derleyicisi, Visual Studio 2010 ' de uygulanmış olan _I
 
 ### <a name="compiler"></a>Derleyici
 
-- **Auto** anahtar sözcüğünün yeni bir varsayılan anlamı vardır. Eski anlamının kullanılması nadir olduğundan, çoğu uygulama bu değişiklikten etkilenmez.
+- **`auto`** Anahtar sözcüğünün yeni bir varsayılan anlamı vardır. Eski anlamının kullanılması nadir olduğundan, çoğu uygulama bu değişiklikten etkilenmez.
 
-- Yeni **static_assert** anahtar sözcüğü tanıtılmıştır, bu, kodunuzda bu adda bir tanımlayıcı zaten varsa ad çakışmasına neden olur.
+- **`static_assert`** Kodunuzda bu adda bir tanımlayıcı zaten varsa, yeni anahtar sözcük, ad çakışmasına neden olur.
 
 - Yeni lambda gösterimi desteği, bir IDL UUID özniteliğinde tırnak işareti olmayan bir GUID kodlama desteğini dışlar.
 
@@ -3284,7 +3284,7 @@ Visual Studio 2013 C++ derleyicisi, Visual Studio 2010 ' de uygulanmış olan _I
 
 - `CComPtr::CComPtr(int)`Oluşturucu kaldırılır. Bu Oluşturucu, `CComPtr` null makrodan bir nesnenin oluşturulmasını izin verdi, ancak gereksizdir ve sıfır olmayan tamsayılarla izin verilen nonsensical kurulumlarını.
 
-   `CComPtr`Yine de 0 olarak tanımlanan null 'dan oluşturulabilir, ancak 0 ' dan farklı bir tamsayıdan oluşturulmuşsa başarısız olur. Bunun yerine **nullptr** kullanın.
+   `CComPtr`Yine de 0 olarak tanımlanan null 'dan oluşturulabilir, ancak 0 ' dan farklı bir tamsayıdan oluşturulmuşsa başarısız olur. **`nullptr`** Bunun yerine kullanın.
 
 - Aşağıdaki `ctype` üye işlevleri kaldırılmıştır: `ctype::_Do_narrow_s` , `ctype::_Do_widen_s` , `ctype::_narrow_s` , `ctype::_widen_s` . Bir uygulama bu üye işlevlerinden birini kullanıyorsa, bunu karşılık gelen güvenli olmayan sürümle değiştirmelisiniz: `ctype::do_narrow` , `ctype::do_widen` , `ctype::narrow` , `ctype::widen` .
 
@@ -3490,9 +3490,9 @@ Visual Studio 2013 C++ derleyicisi, Visual Studio 2010 ' de uygulanmış olan _I
 
 - Statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz ([derleyici hatası C2477](../error-messages/compiler-errors-1/compiler-error-c2477.md)).
 
-- Bir **typedef** 'in başlatılmasına standart tarafından izin verilmiyor ve şimdi bir derleyici hatası oluşturuyor ([derleyici hatası C2513](../error-messages/compiler-errors-2/compiler-error-c2513.md)).
+- Bir **`typedef`** Standart tarafından başlatılmasına izin verilmez ve şimdi bir derleyici hatası oluşturur ([derleyici hatası C2513](../error-messages/compiler-errors-2/compiler-error-c2513.md)).
 
-- **bool** artık uygun bir türdür ([derleyici hatası C2632](../error-messages/compiler-errors-2/compiler-error-c2632.md)).
+- **`bool`** Artık uygun bir tür ([derleyici hatası C2632](../error-messages/compiler-errors-2/compiler-error-c2632.md)).
 
 - Bir UDC artık aşırı yüklenmiş işleçlerle ([C2666](../error-messages/compiler-errors-2/compiler-error-c2666.md)) belirsizlik oluşturabilir.
 

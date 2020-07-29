@@ -1,5 +1,5 @@
 ---
-title: CGdiObject Sınıfı
+title: CGdiObject sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CGdiObject
@@ -30,16 +30,16 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-ms.openlocfilehash: 0cd7a0e0ed500ee9394b00e8906640e9f950163b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 759b25a8f77bb4e6b372431b637b4a97aca8e149
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373731"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212416"
 ---
-# <a name="cgdiobject-class"></a>CGdiObject Sınıfı
+# <a name="cgdiobject-class"></a>CGdiObject sınıfı
 
-Bit eşlemler, bölgeler, fırçalar, kalemler, paletler ve yazı tipleri gibi çeşitli Windows grafik aygıtı arabirimi (GDI) nesneleri için taban sınıf sağlar.
+Bit eşlemler, bölgeler, fırçalar, kalemler, paletler ve yazı tipleri gibi çeşitli türlerde Windows grafik cihaz arabirimi (GDI) nesneleri için bir temel sınıf sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,58 +51,58 @@ class CGdiObject : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGdiObject::CGdiObject](#cgdiobject)|Bir `CGdiObject` nesne inşa eder.|
+|[CGdiObject:: CGdiObject](#cgdiobject)|Bir `CGdiObject` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGdiObject::Ekle](#attach)|Bir `CGdiObject` nesneye Windows GDI nesnesi bağlar.|
-|[CGdiObject::CreateStockObject](#createstockobject)|Bir tutamacı Windows önceden tanımlanmış stok kalemlerinden, fırçalarından veya yazı tiplerinden birine alır.|
-|[CGdiObject::DeleteObject](#deleteobject)|Nesneyle ilişkili tüm sistem depolama `CGdiObject` alanını serbest katarak nesneye iliştirilen Windows GDI nesnesini bellekten siler.|
-|[CGdiObject::DeleteTempMap](#deletetempmap)|Tarafından oluşturulan `CGdiObject` geçici nesneleri siler. `FromHandle`|
-|[CGdiObject::Detach](#detach)|Bir Windows GDI nesnesini `CGdiObject` bir nesneden ayırır ve bir tutamacı Windows GDI nesnesine döndürür.|
-|[CGdiObject::FromHandle](#fromhandle)|Bir Windows GDI nesnesine tutamacı verilen bir `CGdiObject` nesneye işaretçiyi döndürür.|
-|[CGdiObject::GetObject](#getobject)|Arabelleği nesneye bağlı Windows GDI nesnesini `CGdiObject` açıklayan verilerle doldurur.|
-|[CGdiObject::GetObjectType](#getobjecttype)|GDI nesnesinin türünü alır.|
-|[CGdiObject::GetSafeHandle](#getsafehandle)|Bu `m_hObject` **this** NULL olmadığı sürece döndürür, bu durumda NULL döndürülür.|
-|[CGdiObject::UnrealizeObject](#unrealizeobject)|Fırçanın kaynağını sıfırlar veya mantıksal bir paleti sıfırlar.|
+|[CGdiObject:: Attach](#attach)|Nesnesine bir Windows GDI nesnesi ekler `CGdiObject` .|
+|[CGdiObject:: Createstokobject](#createstockobject)|Windows önceden tanımlanmış hisse senedi, fırçalar veya yazı tiplerinden birine yönelik bir tanıtıcı alır.|
+|[CGdiObject::D eleteObject](#deleteobject)|`CGdiObject`Nesneyle ilişkili tüm sistem depolama alanını boşaltarak, nesneye eklenen WINDOWS GDI nesnesini bellekten siler.|
+|[CGdiObject::D eleteTempMap](#deletetempmap)|`CGdiObject`Tarafından oluşturulan geçici nesneleri siler `FromHandle` .|
+|[CGdiObject::D etach](#detach)|Bir Windows GDI nesnesini bir nesneden ayırır `CGdiObject` ve WINDOWS GDI nesnesine bir tanıtıcı döndürür.|
+|[CGdiObject:: FromHandle](#fromhandle)|Bir `CGdiObject` WINDOWS GDI nesnesine bir tanıtıcı verilen nesneye yönelik bir işaretçi döndürür.|
+|[CGdiObject:: GetObject](#getobject)|Nesneye eklenen Windows GDI nesnesini açıklayan verilerle bir arabelleği doldurur `CGdiObject` .|
+|[CGdiObject:: GetObjectType](#getobjecttype)|GDI nesnesinin türünü alır.|
+|[CGdiObject:: GetSafeHandle](#getsafehandle)|`m_hObject`Null olmadığı **`this`** ve bu durumda null değer döndürülmediği takdirde döndürür.|
+|[CGdiObject:: UnrealizeObject](#unrealizeobject)|Bir fırçanın kaynağını sıfırlar veya bir mantıksal paleti sıfırlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGdiObject::operatör !=](#operator_neq)|İki GDI nesnesi mantıksal olarak eşit olup olmadığını belirler.|
-|[CGdiObject::operator ==](#operator_eq_eq)|İki GDI nesnesi mantıksal olarak eşit olup olmadığını belirler.|
-|[CGdiObject::operatör HGDIOBJ](#operator_hgdiobj)|Bağlı Windows GDI nesnesine bir HANDLE alır.|
+|[CGdiObject:: operator! =](#operator_neq)|İki GDI nesnesinin mantıksal olarak eşit olup olmadığını belirler.|
+|[CGdiObject:: operator = =](#operator_eq_eq)|İki GDI nesnesinin mantıksal olarak eşit olup olmadığını belirler.|
+|[CGdiObject:: operator HGDIOBJ](#operator_hgdiobj)|Ekli Windows GDI nesnesine bir tanıtıcı alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGdiObject::m_hObject](#m_hobject)|Bu nesneye bağlı HBITMAP, HPALETTE, HRGN, HBRUSH, HPEN veya HFONT içeren bir TUTAK.|
+|[CGdiObject:: m_hObject](#m_hobject)|Bu nesneye eklenen HBıX, HPALETTE, HRGN, HFıRÇA, HPEN veya HFONT 'u içeren bir tanıtıcı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Asla doğrudan `CGdiObject` bir şey yaratmazsın. Bunun yerine, bir nesneyi türetilmiş sınıflarından `CBrush`birinden oluşturursunuz, örneğin. `CPen`
+Hiçbir şekilde doğrudan oluşturmayın `CGdiObject` . Bunun yerine, veya gibi türetilmiş sınıflarından birindeki bir nesne oluşturursunuz `CPen` `CBrush` .
 
-Daha fazla `CGdiObject`bilgi için [Bkz. Grafik Nesneler.](../../mfc/graphic-objects.md)
+Hakkında daha fazla bilgi için `CGdiObject` bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CGdiObject`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cgdiobjectattach"></a><a name="attach"></a>CGdiObject::Ekle
+## <a name="cgdiobjectattach"></a><a name="attach"></a>CGdiObject:: Attach
 
-Bir `CGdiObject` nesneye Windows GDI nesnesi bağlar.
+Nesnesine bir Windows GDI nesnesi ekler `CGdiObject` .
 
 ```
 BOOL Attach(HGDIOBJ hObject);
@@ -111,15 +111,15 @@ BOOL Attach(HGDIOBJ hObject);
 ### <a name="parameters"></a>Parametreler
 
 *hObject*<br/>
-Windows GDI nesnesine (örneğin, HPEN veya HBRUSH) bir HANDLE.
+Windows GDI nesnesine yönelik bir tanıtıcı (örneğin, HPEN veya HBRUSH).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eki başarılı olursa sıfır olmayan; aksi takdirde 0.
+Ek başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cgdiobjectcgdiobject"></a><a name="cgdiobject"></a>CGdiObject::CGdiObject
+## <a name="cgdiobjectcgdiobject"></a><a name="cgdiobject"></a>CGdiObject:: CGdiObject
 
-Bir `CGdiObject` nesne inşa eder.
+Bir `CGdiObject` nesnesi oluşturur.
 
 ```
 CGdiObject();
@@ -127,11 +127,11 @@ CGdiObject();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Asla doğrudan `CGdiObject` bir şey yaratmazsın. Bunun yerine, bir nesneyi türetilmiş sınıflarından `Cbrush`birinden oluşturursunuz, örneğin. `CPen`
+Hiçbir şekilde doğrudan oluşturmayın `CGdiObject` . Bunun yerine, veya gibi türetilmiş sınıflarından birindeki bir nesne oluşturursunuz `CPen` `Cbrush` .
 
-## <a name="cgdiobjectcreatestockobject"></a><a name="createstockobject"></a>CGdiObject::CreateStockObject
+## <a name="cgdiobjectcreatestockobject"></a><a name="createstockobject"></a>CGdiObject:: Createstokobject
 
-Önceden tanımlanmış stok Windows GDI kalemlerinden, fırçalarından veya yazı tiplerinden birine bir tutamaç alır `CGdiObject` ve GDI nesnesini nesneye bağlar.
+Önceden tanımlanmış hisse senedi Windows GDI kalemleri, fırçaları veya yazı tiplerden birine yönelik bir tanıtıcı alır ve GDI nesnesini `CGdiObject` nesneye ekler.
 
 ```
 BOOL CreateStockObject(int nIndex);
@@ -139,8 +139,8 @@ BOOL CreateStockObject(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-İstenilen stok nesnesinin türünü belirten bir sabit. Uygun değerlerin açıklaması için Windows SDK'daki [GetStockObject](/windows/win32/api/wingdi/nf-wingdi-getstockobject) parametresi *fnObject* parametresini görün.
+*nDizin*<br/>
+İstenen hisse senedi nesnesi türünü belirten bir sabit. Uygun değerlerin bir açıklaması için Windows SDK, bkz. [Getıstokobject](/windows/win32/api/wingdi/nf-wingdi-getstockobject) Için *fnObject* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -148,11 +148,11 @@ BOOL CreateStockObject(int nIndex);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi, stok kalemi gibi `CPen` Windows GDI nesne türüne karşılık gelen türemiş sınıflardan biriyle çağırın.
+Bu işlevi, `CPen` bir hisse senedi kalemi gibi WINDOWS GDI nesne türüne karşılık gelen türetilmiş sınıflardan biriyle çağırın.
 
-## <a name="cgdiobjectdeleteobject"></a><a name="deleteobject"></a>CGdiObject::DeleteObject
+## <a name="cgdiobjectdeleteobject"></a><a name="deleteobject"></a>CGdiObject::D eleteObject
 
-Windows GDI nesnesi ile ilişkili tüm sistem depolamasını serbest kılarak ekli Windows GDI nesnesini bellekten siler.
+Windows GDI nesnesiyle ilişkili tüm sistem depolama alanını boşaltarak ekli Windows GDI nesnesini bellekten siler.
 
 ```
 BOOL DeleteObject();
@@ -160,17 +160,17 @@ BOOL DeleteObject();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-GDI nesnesi başarıyla silinmişse sıfırolmayan; aksi takdirde 0.
+GDI nesnesi başarıyla silinmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CGdiObject` Nesneyle ilişkili depolama bu çağrıdan etkilenmez. Uygulama, şu `DeleteObject` anda `CGdiObject` aygıt bağlamında seçilmiş bir nesneyi aramamalıdır.
+Nesneyle ilişkili depolama alanı `CGdiObject` Bu çağrıdan etkilenmez. Uygulama `DeleteObject` `CGdiObject` , şu anda bir cihaz bağlamına seçili olan bir nesneyi çağırmamalıdır.
 
-Desen fırçası silindiğinde, fırçayla ilişkili bit eşlemi silinmez. Bit eşlemi bağımsız olarak silinmelidir.
+Bir desenli fırça silindiğinde, fırçayla ilişkili bit eşlem silinmez. Bit eşlemin bağımsız olarak silinmesi gerekir.
 
-## <a name="cgdiobjectdeletetempmap"></a><a name="deletetempmap"></a>CGdiObject::DeleteTempMap
+## <a name="cgdiobjectdeletetempmap"></a><a name="deletetempmap"></a>CGdiObject::D eleteTempMap
 
-Boşta kalan `CWinApp` zaman işleyicisi `DeleteTempMap` tarafından otomatik `CGdiObject` olarak çağrılır, tarafından `FromHandle`oluşturulan geçici nesneleri siler.
+`CWinApp`, Boşta kalma süresi işleyicisi tarafından otomatik olarak çağırılır, `DeleteTempMap` `CGdiObject` tarafından oluşturulan geçici nesneleri siler `FromHandle` .
 
 ```
 static void PASCAL DeleteTempMap();
@@ -178,15 +178,15 @@ static void PASCAL DeleteTempMap();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DeleteTempMap`nesneyi silmeden önce geçici `CGdiObject` bir nesneye eklenen Windows `CGdiObject` GDI nesnesini ayırır.
+`DeleteTempMap`nesne silinmeden önce geçici bir nesneye eklenen Windows GDI nesnesini ayırır `CGdiObject` `CGdiObject` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/cpp/cgdiobject-class_1.cpp)]
 
-## <a name="cgdiobjectdetach"></a><a name="detach"></a>CGdiObject::Detach
+## <a name="cgdiobjectdetach"></a><a name="detach"></a>CGdiObject::D etach
 
-Bir Windows GDI nesnesini `CGdiObject` bir nesneden ayırır ve bir tutamacı Windows GDI nesnesine döndürür.
+Bir Windows GDI nesnesini bir nesneden ayırır `CGdiObject` ve WINDOWS GDI nesnesine bir tanıtıcı döndürür.
 
 ```
 HGDIOBJ Detach();
@@ -194,11 +194,11 @@ HGDIOBJ Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-A `HANDLE` Windows GDI nesnesine ayrılmış; aksi takdirde hiçbir GDI nesnesi eklenmişse NULL.
+`HANDLE`WINDOWS GDI nesnesine bir ayrılır; Aksi takdirde, herhangi BIR GDI nesnesi ekli DEĞILSE null olur.
 
-## <a name="cgdiobjectfromhandle"></a><a name="fromhandle"></a>CGdiObject::FromHandle
+## <a name="cgdiobjectfromhandle"></a><a name="fromhandle"></a>CGdiObject:: FromHandle
 
-Bir Windows GDI nesnesine tutamacı verilen bir `CGdiObject` nesneye işaretçiyi döndürür.
+Bir `CGdiObject` WINDOWS GDI nesnesine bir tanıtıcı verilen nesneye yönelik bir işaretçi döndürür.
 
 ```
 static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
@@ -207,21 +207,21 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
 ### <a name="parameters"></a>Parametreler
 
 *hObject*<br/>
-Windows GDI nesnesine HANDLE.
+Windows GDI nesnesine yönelik bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçici veya `CGdiObject` kalıcı olabilecek bir işaretçi.
+`CGdiObject`Geçici veya kalıcı olabilecek bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows `CGdiObject` GDI nesnesine zaten bağlı olmayan bir nesne `CGdiObject` ise, geçici bir nesne oluşturulur ve eklenir.
+Bir `CGdiObject` nesne WINDOWS GDI nesnesine zaten iliştirilmişse, geçici bir `CGdiObject` nesne oluşturulur ve eklenir.
 
-Bu `CGdiObject` geçici nesne yalnızca, uygulamanın olay döngüsünde boşta kalma süresine sahip olana ve tüm geçici grafik nesnelerinsilindiği zamana kadar geçerlidir. Bunu söylemenin başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olmasıdır.
+Bu geçici `CGdiObject` nesne yalnızca uygulamanın olay döngüsünde süresi bir sonraki sefer, tüm geçici grafik nesneleri silindiği zaman geçerli olur. Bunun başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olduğu durumdur.
 
-## <a name="cgdiobjectgetobject"></a><a name="getobject"></a>CGdiObject::GetObject
+## <a name="cgdiobjectgetobject"></a><a name="getobject"></a>CGdiObject:: GetObject
 
-Arabelleği, belirtilen nesneyi tanımlayan verilerle doldurur.
+Belirtilen nesneyi tanımlayan verilerle bir arabelleği doldurur.
 
 ```
 int GetObject(
@@ -231,34 +231,34 @@ int GetObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*nSayısı*<br/>
-*lpObject* arabelleği içine kopyalamak için bayt sayısını belirtir.
+*nCount*<br/>
+*LpObject* arabelleğine kopyalanacak bayt sayısını belirtir.
 
 *lpObject*<br/>
-Bilgileri almak için kullanıcı tarafından sağlanan arabelleği işaret ediyor.
+Bilgileri almak için Kullanıcı tarafından sağlanan bir arabelleğe işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Alınan bayt sayısı; aksi takdirde 0 bir hata oluşursa.
+Alınan bayt sayısı; Aksi takdirde 0 bir hata oluşur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, aşağıdaki listede gösterildiği gibi, türü grafik nesnesinin türüne bağlı olan bir veri yapısı alır:
+İşlevi, aşağıdaki listede gösterildiği gibi, türü grafik nesnesinin türüne bağlı olan bir veri yapısını alır:
 
 |Nesne|Arabellek türü|
 |------------|-----------------|
 |`CPen`|[LOGPEN](/windows/win32/api/Wingdi/ns-wingdi-logpen)|
-|`CBrush`|[Logbrush](/windows/win32/api/wingdi/ns-wingdi-logbrush)|
-|`CFont`|[Logfont](/windows/win32/api/wingdi/ns-wingdi-logfontw)|
-|`CBitmap`|[Bitmap](/windows/win32/api/wingdi/ns-wingdi-bitmap)|
+|`CBrush`|[LOGBRUSH](/windows/win32/api/wingdi/ns-wingdi-logbrush)|
+|`CFont`|[GÜNLÜĞE kaydetme YAZı tipi](/windows/win32/api/wingdi/ns-wingdi-logfontw)|
+|`CBitmap`|[BITEŞ](/windows/win32/api/wingdi/ns-wingdi-bitmap)|
 |`CPalette`|WORD|
-|`CRgn`|Desteklenmiyor|
+|`CRgn`|Desteklenmez|
 
-Nesne bir `CBitmap` nesneyse, `GetObject` bit eşleminin yalnızca genişliğini, yüksekliğini ve renk biçimi bilgilerini döndürür. Gerçek bitcmap kullanılarak [alınabilir::GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits).
+Nesne bir `CBitmap` nesnese, `GetObject` yalnızca bit eşlemin genişlik, yükseklik ve renk biçimi bilgilerini döndürür. Gerçek bitler [CBitmap:: GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits)kullanılarak alınabilir.
 
-Nesne bir `CPalette` nesneyse, `GetObject` paletteki giriş sayısını belirten bir WORD alır. İşlev, paleti tanımlayan [LOGPALETT](/windows/win32/api/wingdi/ns-wingdi-logpalette) yapısını almaz. Bir uygulama CPalette arayarak palet girişleri hakkında bilgi [alabilirsiniz::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).
+Nesne bir `CPalette` nesnedir, `GetObject` paletteki giriş sayısını BELIRTEN bir sözcük alır. İşlev, paleti tanımlayan [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) yapısını almaz. Bir uygulama, [CPalette:: GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries)çağırarak palet girişleri hakkında bilgi alabilir.
 
-## <a name="cgdiobjectgetobjecttype"></a><a name="getobjecttype"></a>CGdiObject::GetObjectType
+## <a name="cgdiobjectgetobjecttype"></a><a name="getobjecttype"></a>CGdiObject:: GetObjectType
 
 GDI nesnesinin türünü alır.
 
@@ -268,37 +268,37 @@ UINT GetObjectType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa nesnenin türü; aksi takdirde 0. Değer aşağıdakilerden biri olabilir:
+Başarılı olursa nesnenin türü; Aksi takdirde 0. Değer aşağıdakilerden biri olabilir:
 
-- OBJ_BITMAP Bitmap
+- OBJ_BITMAP bit eşlem
 
-- OBJ_BRUSH Fırçası
+- OBJ_BRUSH fırçası
 
-- OBJ_FONT Yazı Tipi
+- OBJ_FONT yazı tipi
 
-- OBJ_PAL Palet
+- OBJ_PAL paleti
 
-- OBJ_PEN Kalem
+- OBJ_PEN kalem
 
-- OBJ_EXTPEN Genişletilmiş kalem
+- OBJ_EXTPEN genişletilmiş kalem
 
-- OBJ_REGION Bölgesi
+- OBJ_REGION bölgesi
 
-- OBJ_DC Cihaz bağlamı
+- OBJ_DC cihaz bağlamı
 
-- OBJ_MEMDC Bellek aygıtı bağlamı
+- OBJ_MEMDC bellek cihaz bağlamı
 
-- OBJ_METAFILE Metafile
+- OBJ_METAFILE meta dosyası
 
-- metadosya aygıt bağlamı OBJ_METADC
+- OBJ_METADC meta dosyası cihaz bağlamı
 
-- OBJ_ENHMETAFILE Geliştirilmiş metadosya
+- OBJ_ENHMETAFILE gelişmiş meta dosyası
 
-- OBJ_ENHMETADC Gelişmiş-metafile aygıt bağlamı
+- OBJ_ENHMETADC gelişmiş-meta dosyası cihaz bağlamı
 
-## <a name="cgdiobjectgetsafehandle"></a><a name="getsafehandle"></a>CGdiObject::GetSafeHandle
+## <a name="cgdiobjectgetsafehandle"></a><a name="getsafehandle"></a>CGdiObject:: GetSafeHandle
 
-Bu `m_hObject` **this** NULL olmadığı sürece döndürür, bu durumda NULL döndürülür.
+`m_hObject`Null olmadığı **`this`** ve bu durumda null değer döndürülmediği takdirde döndürür.
 
 ```
 HGDIOBJ GetSafeHandle() const;
@@ -306,27 +306,27 @@ HGDIOBJ GetSafeHandle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ekli Windows GDI nesnesine bir HANDLE; aksi takdirde hiçbir nesne eklenmişse NULL.
+Ekli Windows GDI nesnesine yönelik bir tanıtıcı; Aksi takdirde, hiçbir nesne iliştirilmişse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, genel tutamak arabirimi paradigmasının bir parçasıdır ve NULL bir tanıtıcı için geçerli veya özel bir değer olduğunda yararlıdır.
+Bu, genel tanıtıcı arabirim paradigmasının bir parçasıdır ve NULL ya da bir tanıtıcı için özel bir değer olduğunda faydalıdır.
 
 ### <a name="example"></a>Örnek
 
-  CWnd örneğine [bakın::IsWindowEnabled](../../mfc/reference/cwnd-class.md#iswindowenabled).
+  [CWnd:: IsWindowEnabled](../../mfc/reference/cwnd-class.md#iswindowenabled)örneğine bakın.
 
-## <a name="cgdiobjectm_hobject"></a><a name="m_hobject"></a>CGdiObject::m_hObject
+## <a name="cgdiobjectm_hobject"></a><a name="m_hobject"></a>CGdiObject:: m_hObject
 
-Bu nesneye bağlı HBITMAP, HRGN, HBRUSH, HPEN, HPALETTE veya HFONT içeren bir TUTAK.
+Bu nesneye eklenen HBıX, HRGN, HFıRÇA, HPEN, HPALETI veya HFONT içeren bir tanıtıcı.
 
 ```
 HGDIOBJ m_hObject;
 ```
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a>CGdiObject::operatör !=
+## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a>CGdiObject:: operator! =
 
-İki GDI nesnesi mantıksal olarak eşit olup olmadığını belirler.
+İki GDI nesnesinin mantıksal olarak eşit olup olmadığını belirler.
 
 ```
 BOOL operator!=(const CGdiObject& obj) const;
@@ -335,15 +335,15 @@ BOOL operator!=(const CGdiObject& obj) const;
 ### <a name="parameters"></a>Parametreler
 
 *obj*<br/>
-Varolan `CGdiObject`bir işaretçi.
+Var olan bir işaretçi `CGdiObject` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Sol taraftaki bir GDI nesnesinin sağ taraftaki bir GDI nesnesine eşit olup olmadığını belirler.
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a>CGdiObject::operator ==
+## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a>CGdiObject:: operator = =
 
-İki GDI nesnesi mantıksal olarak eşit olup olmadığını belirler.
+İki GDI nesnesinin mantıksal olarak eşit olup olmadığını belirler.
 
 ```
 BOOL operator==(const CGdiObject& obj) const;
@@ -352,23 +352,23 @@ BOOL operator==(const CGdiObject& obj) const;
 ### <a name="parameters"></a>Parametreler
 
 *obj*<br/>
-Varolan `CGdiObject`bir .
+Var olan bir başvuru `CGdiObject` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Sol taraftaki bir GDI nesnesinin sağ taraftaki bir GDI nesnesine eşit olup olmadığını belirler.
 
-## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a>CGdiObject::operatör HGDIOBJ
+## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a>CGdiObject:: operator HGDIOBJ
 
-Bağlı Windows GDI nesnesine bir HANDLE alır; aksi takdirde hiçbir nesne eklenmişse NULL.
+Ekli Windows GDI nesnesine bir tanıtıcı alır; Aksi takdirde, hiçbir nesne iliştirilmişse NULL.
 
 ```
 operator HGDIOBJ() const;
 ```
 
-## <a name="cgdiobjectunrealizeobject"></a><a name="unrealizeobject"></a>CGdiObject::UnrealizeObject
+## <a name="cgdiobjectunrealizeobject"></a><a name="unrealizeobject"></a>CGdiObject:: UnrealizeObject
 
-Fırçanın kaynağını sıfırlar veya mantıksal bir paleti sıfırlar.
+Bir fırçanın kaynağını sıfırlar veya bir mantıksal paleti sıfırlar.
 
 ```
 BOOL UnrealizeObject();
@@ -376,22 +376,22 @@ BOOL UnrealizeObject();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfın `UnrealizeObject` bir üye işlevi olsa da, yalnızca veya `CPalette` nesnelerüzerinde `CBrush` çağrılmalıdır. `CGdiObject`
+`UnrealizeObject`, Sınıfının bir üye işlevi olsa `CGdiObject` da, yalnızca `CBrush` veya nesnelerinde çağrılmalıdır `CPalette` .
 
-Nesneler `CBrush` için, `UnrealizeObject` bir sonraki kez bir aygıt bağlamına seçildiğinde verilen fırçanın kaynağını sıfırlamak için sistem yönlendirir. Nesne bir `CPalette` nesneyse, `UnrealizeObject` sistemi paleti daha önce gerçekleştiredilmemiş gibi gerçekleştirmeye yönlendirir. Uygulama CDC çağırır bir sonraki [kez::Belirtilen](../../mfc/reference/cdc-class.md#realizepalette) palet için RealizePalette fonksiyonu, sistem tamamen sistem paleti için mantıksal palet yeniden eşler.
+`CBrush`Nesneler için, `UnrealizeObject` bir sonraki sefer bir cihaz bağlamına seçildiği zaman, sistemi verilen fırçanın kaynağını sıfırlamasına yöneltir. Nesne bir `CPalette` nesnese, `UnrealizeObject` daha önce gerçekleştirilmese de, sistemi paleti fark etmek için yönlendirir. Uygulama, belirtilen palet için [CDC:: RealizePalette](../../mfc/reference/cdc-class.md#realizepalette) işlevini bir sonraki çağırdığında, sistem mantıksal paleti sistem paletiyle tamamen yeniden eşler.
 
-İşlev `UnrealizeObject` stok nesneleri ile kullanılmamalıdır. Yeni `UnrealizeObject` bir fırça kaynağı ayarlandığında [(CDC::SetBrushOrg](../../mfc/reference/cdc-class.md#setbrushorg) işlevi) işlev çağrılmalıdır. İşlev, `UnrealizeObject` şu anda seçili fırça veya herhangi bir görüntü bağlamının şu anda seçili paleti için çağrılmamalıdır.
+`UnrealizeObject`İşlev, stok nesneleriyle birlikte kullanılmamalıdır. `UnrealizeObject`Her yeni fırça kaynağı ayarlandığında işlevin çağrılması gerekir ( [CDC:: Setbrühorg](../../mfc/reference/cdc-class.md#setbrushorg) işlevi yoluyla). `UnrealizeObject`İşlevin Şu anda seçili olan fırça veya herhangi bir görüntüleme bağlamının seçili paleti için çağrılmaması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CBitmap Sınıfı](../../mfc/reference/cbitmap-class.md)<br/>
-[CBrush Sınıfı](../../mfc/reference/cbrush-class.md)<br/>
-[CFont Sınıfı](../../mfc/reference/cfont-class.md)<br/>
-[CPalette Sınıfı](../../mfc/reference/cpalette-class.md)<br/>
-[CPen Sınıfı](../../mfc/reference/cpen-class.md)<br/>
-[CRgn Sınıfı](../../mfc/reference/crgn-class.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CBitmap sınıfı](../../mfc/reference/cbitmap-class.md)<br/>
+[CBrush sınıfı](../../mfc/reference/cbrush-class.md)<br/>
+[CFont sınıfı](../../mfc/reference/cfont-class.md)<br/>
+[CPalette sınıfı](../../mfc/reference/cpalette-class.md)<br/>
+[CPen sınıfı](../../mfc/reference/cpen-class.md)<br/>
+[CRgn sınıfı](../../mfc/reference/crgn-class.md)

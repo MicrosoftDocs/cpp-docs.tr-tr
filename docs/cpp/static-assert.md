@@ -7,18 +7,18 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: a3336e9e41e3dc6804c2398d3ef815ba8c471e50
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 411c4c386031bd44a0303e6cfeec1fbea7ea2dda
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160911"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213222"
 ---
 # <a name="static_assert"></a>static_assert
 
-Derleme zamanında yazılım onayını sınar. Belirtilen sabit ifade FALSE ise, derleyici belirtilen iletiyi, varsa, bir hata varsa ve derleme C2338 hatasıyla başarısız olur. Aksi takdirde, bildirimin etkisi yoktur.
+Derleme zamanında yazılım onayını sınar. Belirtilen sabit ifade ise, **`false`** derleyici belirtilen iletiyi görüntüler, varsa, derleme C2338 hatasıyla başarısız olur; aksi takdirde, bildirimin etkisi yoktur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 static_assert( constant-expression, string-literal );
@@ -30,22 +30,22 @@ static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|*Sabit ifadesi*|Boole değerine dönüştürülemeyen bir integral sabit ifadesi.<br /><br /> Değerlendirilen ifade sıfır (false) ise, *dize-sabit* parametresi görüntülenir ve derleme hata vererek başarısız olur. İfade sıfır değilse (true), **static_assert** bildiriminin etkisi yoktur.|
+|*Sabit ifadesi*|Boole değerine dönüştürülemeyen bir integral sabit ifadesi.<br /><br /> Değerlendirilen ifade sıfır (false) ise, *dize-sabit* parametresi görüntülenir ve derleme hata vererek başarısız olur. İfade sıfır değilse (true) **`static_assert`** bildiriminde hiçbir etkisi yoktur.|
 |*dize sabit değeri*|*Sabit ifade* parametresi sıfırsa görüntülenen bir ileti. İleti, derleyicinin [taban karakter kümesindeki](../c-language/ascii-character-set.md) bir karakter dizesidir; Yani [çok baytlı veya geniş karakterler](../c-language/multibyte-and-wide-characters.md)değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir **static_assert** bildiriminin *sabit ifade* parametresi bir *yazılım*onayını temsil eder. Yazılım onay belgesi, programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Koşul doğru ise, **static_assert** bildiriminin etkisi yoktur. Koşul false ise, onay başarısız olur, derleyici iletiyi *dize sabit değeri* parametresinde görüntüler ve derleme hata vererek başarısız olur. Visual Studio 2017 ve üzeri sürümlerde dize-sabit parametresi isteğe bağlıdır.
+Bir bildirimin *sabit ifade* parametresi **`static_assert`** bir *yazılım*onayını temsil eder. Yazılım onay belgesi, programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Koşul doğru ise, **`static_assert`** bildirimin hiçbir etkisi yoktur. Koşul false ise, onay başarısız olur, derleyici iletiyi *dize sabit değeri* parametresinde görüntüler ve derleme hata vererek başarısız olur. Visual Studio 2017 ve üzeri sürümlerde dize-sabit parametresi isteğe bağlıdır.
 
-**Static_assert** bildirimi, bir yazılım onayını derleme zamanında sınar. Buna karşılık, [onaylama makrosu ve _assert ve _wassert işlevleri](../c-runtime-library/reference/assert-macro-assert-wassert.md) , bir yazılım onayını çalışma zamanında test ediyor ve boşluk veya zaman içinde çalışma süresi maliyeti doğurur. **Static_assert** bildirimi, şablon bağımsız değişkenleri *sabit ifade* parametresine dahil olabileceğinden, özellikle hata ayıklama için yararlıdır.
+**`static_assert`** Bildirim, derleme zamanında bir yazılım onayını sınar. Buna karşılık, [onaylama makrosu ve _assert ve _wassert işlevleri](../c-runtime-library/reference/assert-macro-assert-wassert.md) , bir yazılım onayını çalışma zamanında test ediyor ve boşluk veya zaman içinde çalışma süresi maliyeti doğurur. **`static_assert`** Bildirim, şablon bağımsız değişkenleri *sabit ifade* parametresine dahil edildiğinden, özellikle hata ayıklama için yararlıdır.
 
-Derleyici, bildirime karşılaşıldığında sözdizimi hataları için **static_assert** bildirimini inceler. Derleyici, bir şablon parametresine bağlı değilse, *sabit ifade* parametresini hemen değerlendirir. Aksi halde, derleyici, şablon örneği oluşturulurken *sabit ifade* parametresini değerlendirir. Sonuç olarak, derleyici, bildirim ile karşılaşıldığında bir kez tanılama iletisi ve şablon örneği oluşturulduğunda bir hata verebilir.
+Derleyici, **`static_assert`** bildirime rastlana kadar sözdizimi hataları için bildirimi inceler. Derleyici, bir şablon parametresine bağlı değilse, *sabit ifade* parametresini hemen değerlendirir. Aksi halde, derleyici, şablon örneği oluşturulurken *sabit ifade* parametresini değerlendirir. Sonuç olarak, derleyici, bildirim ile karşılaşıldığında bir kez tanılama iletisi ve şablon örneği oluşturulduğunda bir hata verebilir.
 
-Ad alanı, sınıf veya blok kapsamındaki **static_assert** anahtar sözcüğünü kullanabilirsiniz. ( **Static_assert** anahtar sözcüğü, ad alanı kapsamında kullanılabilmesi için, programınıza yeni bir ad sunmasa bile teknik olarak bir bildirimidir.)
+**`static_assert`** Anahtar sözcüğünü ad alanı, sınıf veya blok kapsamı ' nde kullanabilirsiniz. ( **`static_assert`** Anahtar sözcüğü, ad alanı kapsamında kullanılabilmesi için, programınıza yeni bir ad sunmasa bile, teknik olarak bir bildirimidir.)
 
 ## <a name="description"></a>Açıklama
 
-Aşağıdaki örnekte, **static_assert** bildiriminde ad alanı kapsamı vardır. Derleyici `void *`türünün boyutunu bildiğinden, ifade hemen değerlendirilir.
+Aşağıdaki örnekte, **`static_assert`** bildiriminde ad alanı kapsamı vardır. Derleyici, türü boyutunu bildiğinden `void *` , ifade hemen değerlendirilir.
 
 ## <a name="example"></a>Örnek
 
@@ -55,7 +55,7 @@ static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 
 ## <a name="description"></a>Açıklama
 
-Aşağıdaki örnekte, **static_assert** bildiriminde sınıf kapsamı vardır. **Static_assert** , bir şablon parametresinin *düz bir eski veri* (pod) türü olduğunu doğrular. Derleyici, bildirildiği zaman **static_assert** bildirimi inceler, ancak `basic_string` sınıf şablonu `main()`içinde örneklendirilene kadar *sabit ifade* parametresini değerlendirmez.
+Aşağıdaki örnekte, **`static_assert`** bildiriminde sınıf kapsamı vardır. , **`static_assert`** Bir şablon parametresinin *düz bir eski veri* (pod) türü olduğunu doğrular. Derleyici **`static_assert`** bildirildiği zaman bildirimi inceler, ancak sınıf şablonu içinde örneklendirilene kadar *sabit ifade* parametresini değerlendirmez `basic_string` `main()` .
 
 ## <a name="example"></a>Örnek
 
@@ -84,7 +84,7 @@ int main()
 
 ## <a name="description"></a>Açıklama
 
-Aşağıdaki örnekte, **static_assert** bildiriminde blok kapsamı vardır. **Static_assert** , VMPage yapısının boyutunun sistemin sanal bellek PageSize değerine eşit olduğunu doğrular.
+Aşağıdaki örnekte, **`static_assert`** bildiriminde blok kapsamı vardır. **`static_assert`** VMPage yapısının boyutunun, sistemin sanal bellek PageSize değerine eşit olduğunu doğrular.
 
 ## <a name="example"></a>Örnek
 
@@ -106,8 +106,8 @@ public:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Onaylama ve Kullanıcının Sağladığı İletiler (C++)](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-[#error Yönergesi (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>
-[assert Makrosu, _assert, _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
+[#error yönergesi (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>
+[onaylama makrosu, _assert _wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md)<br/>
 [Şablonlar](../cpp/templates-cpp.md)<br/>
-[ASCII Karakter Kümesi](../c-language/ascii-character-set.md)<br/>
-[Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)
+[ASCII karakter kümesi](../c-language/ascii-character-set.md)<br/>
+[Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)

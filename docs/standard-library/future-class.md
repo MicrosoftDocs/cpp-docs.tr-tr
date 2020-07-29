@@ -20,16 +20,16 @@ helpviewer_keywords:
 - std::future [C++], wait
 - std::future [C++], wait_for
 - std::future [C++], wait_until
-ms.openlocfilehash: e71c750ddeb198faa3ae9c5960b2668c376241ed
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ac52429919f83a90a87141399952e248e18e0862
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370712"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220944"
 ---
 # <a name="future-class"></a>future Sınıfı
 
-Bir *eşzamanlı geri dönüş nesnesi*açıklar.
+*Zaman uyumsuz bir dönüş nesnesi*tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,42 +40,42 @@ class future;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her standart *asynchronous sağlayıcı* türü bu şablonun bir anlık bir ani bir nesne döndürür. Nesne, `future` ilişkili olduğu eşzamanlı sağlayıcıya yalnızca erişim sağlar. Aynı eşil sağlayıcıyla ilişkili birden çok eşzamanlı iade nesnesine ihtiyacınız varsa, `future` nesneyi [shared_future](../standard-library/shared-future-class.md) bir nesneye kopyalayın.
+Her standart *zaman uyumsuz sağlayıcı* , türü bu şablonun örneklenmesi olan bir nesne döndürür. Bir `future` nesnesi, ilişkili olduğu zaman uyumsuz sağlayıcıya tek erişim sağlar. Aynı zaman uyumsuz sağlayıcıyla ilişkili birden fazla zaman uyumsuz dönüş nesnesine ihtiyacınız varsa, `future` nesneyi [shared_future](../standard-library/shared-future-class.md) nesnesine kopyalayın.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Gelecek](#future)|Bir `future` nesne inşa eder.|
+|[yayımlanacak](#future)|Bir `future` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[get](#get)|İlişkili eşzamanlı durumda depolanan sonucu alır.|
-|[paylaş](#share)|Nesneyi bir `shared_future`.|
-|[Geçerli](#valid)|Nesnenin boş olup olmadığını belirtir.|
-|[Bekle](#wait)|İlişkili asenkron durum hazır olana kadar geçerli iş parçacığı engeller.|
-|[wait_for](#wait_for)|İlişkili eşzamanlı durum hazır olana veya belirtilen süre geçene kadar engeller.|
-|[wait_until](#wait_until)|İlişkili eşzamanlı durum hazır olana veya belirli bir zaman alanına kadar engeller.|
+|[Al](#get)|İlişkili zaman uyumsuz durumda depolanan sonucu alır.|
+|[paylaş](#share)|Nesnesini bir öğesine dönüştürür `shared_future` .|
+|[geçerli](#valid)|Nesnenin boş olup olmadığını belirtir.|
+|[bekleneceğini](#wait)|İlişkili zaman uyumsuz durum hazırlanana kadar geçerli iş parçacığını engeller.|
+|[wait_for](#wait_for)|İlişkili zaman uyumsuz duruma kadar veya belirtilen süre geçene kadar engeller.|
+|[wait_until](#wait_until)|İlişkili zaman uyumsuz durum hazırlanana veya belirli bir zaman noktasına kadar engeller.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[gelecek::operator=](#op_eq)|İlişkili asenkron durumu belirtilen bir nesneden aktarın.|
+|[Future:: operator =](#op_eq)|İlişkili zaman uyumsuz durumu belirtilen bir nesneden aktarır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<gelecek>
+**Üst bilgi:**\<future>
 
 **Ad alanı:** std
 
-## <a name="futurefuture-constructor"></a><a name="future"></a>gelecek::gelecekteki Constructor
+## <a name="futurefuture-constructor"></a><a name="future"></a>Future:: Future Oluşturucusu
 
-Bir `future` nesne inşa eder.
+Bir `future` nesnesi oluşturur.
 
 ```cpp
 future() noexcept;
@@ -84,18 +84,18 @@ future(future&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*\
+*Farklı*\
 Bir `future` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu, ilişkili `future` asynchronous durumu olmayan bir nesne yi inşa eder.
+İlk Oluşturucu, `future` ilişkili zaman uyumsuz durumu olmayan bir nesne oluşturur.
 
-İkinci oluşturucu bir `future` nesne inşa eder ve ilişkili asenkron durumu *Diğer'den*aktarıyor. *Diğer* artık ilişkili bir eşzamanlı durum vardır.
+İkinci Oluşturucu bir nesne oluşturur `future` ve ilişkili zaman uyumsuz durumu *diğer*öğesinden aktarır. *Artık ilişkili* bir zaman uyumsuz duruma sahip değildir.
 
-## <a name="futureget"></a><a name="get"></a>gelecek::get
+## <a name="futureget"></a><a name="get"></a>Future:: Get
 
-İlişkili eşzamanlı durumda depolanan sonucu alır.
+İlişkili zaman uyumsuz durumda depolanan sonucu alır.
 
 ```cpp
 Ty get();
@@ -103,21 +103,21 @@ Ty get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonuç bir özel durumsa, yöntem onu yeniden atar. Aksi takdirde, sonuç döndürülür.
+Sonuç bir özel durumdur, yöntemi onu yeniden atar. Aksi takdirde sonuç döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sonucu almadan önce, ilişkili asynchronous durumu hazır olana kadar geçerli iş parçacığı engeller.
+Bu yöntem, sonucu almadan önce, ilişkili zaman uyumsuz durum hazırlanana kadar geçerli iş parçacığını engeller.
 
-Kısmi uzmanlık için, `future<Ty&>`depolanan değer etkili bir geri dönüş değeri olarak asynchronous sağlayıcısına geçirilen nesneye bir başvurudur.
+Kısmi `future<Ty&>` özelleşme için, saklı değer, geri dönüş değeri olarak zaman uyumsuz Sağlayıcıya geçirilen nesneye bir başvuru sağlar.
 
-Uzmanlık için depolanan değer `future<void>`olmadığından, yöntem **geçersiz**döndürür.
+Özelleştirme için depolanan değer olmadığından `future<void>` , yöntemi döndürür **`void`** .
 
-Diğer uzmanlıklarda yöntem, iade değerini depolanan değerden taşır. Bu nedenle, bu yöntemi yalnızca bir kez arayın.
+Diğer uzmanlıklardan Yöntem, dönüş değerini saklı değerden taşımaktadır. Bu nedenle, bu yöntemi yalnızca bir kez çağırın.
 
-## <a name="futureoperator"></a><a name="op_eq"></a>gelecek::operator=
+## <a name="futureoperator"></a><a name="op_eq"></a>Future:: operator =
 
-İlişkili bir eşzamanlı durumu belirtilen bir nesneden aktarın.
+Belirtilen bir nesneden ilişkili bir zaman uyumsuz durumu aktarır.
 
 ```cpp
 future& operator=(future&& Right) noexcept;
@@ -125,7 +125,7 @@ future& operator=(future&& Right) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Doğru*\
+*Right*\
 Bir `future` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -134,11 +134,11 @@ Bir `future` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aktarımdan sonra, *Sağ* artık ilişkili bir eşzamanlı durum vardır.
+Aktarımdan *sonra, artık* ilişkili bir zaman uyumsuz duruma sahip değildir.
 
-## <a name="futureshare"></a><a name="share"></a>gelecek::paylaş
+## <a name="futureshare"></a><a name="share"></a>Future:: Share
 
-Nesneyi [shared_future](../standard-library/shared-future-class.md) bir nesneye dönüştürür.
+Nesneyi [shared_future](../standard-library/shared-future-class.md) nesnesine dönüştürür.
 
 ```cpp
 shared_future<Ty> share();
@@ -148,9 +148,9 @@ shared_future<Ty> share();
 
 `shared_future(move(*this))`
 
-## <a name="futurevalid"></a><a name="valid"></a>gelecek::geçerli
+## <a name="futurevalid"></a><a name="valid"></a>geleceğe yönelik:: geçerli
 
-Nesnenin ilişkili bir asynchronous durumu olup olmadığını belirtir.
+Nesnenin ilişkili bir zaman uyumsuz duruma sahip olup olmadığını belirtir.
 
 ```cpp
 bool valid() noexcept;
@@ -158,11 +158,11 @@ bool valid() noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-nesnenin ilişkili bir eşzamanlı durumu varsa **doğru;** aksi takdirde, **yanlış**.
+**`true`** nesnenin ilişkili bir zaman uyumsuz durumu varsa; Aksi takdirde, **`false`** .
 
-## <a name="futurewait"></a><a name="wait"></a>gelecek::bekle
+## <a name="futurewait"></a><a name="wait"></a>daha sonra:: wait
 
-İlişkili asynchronous durumu *hazır*olana kadar geçerli iş parçacığı engeller.
+İlişkili zaman uyumsuz durum *hazırlanana*kadar geçerli iş parçacığını engeller.
 
 ```cpp
 void wait() const;
@@ -170,11 +170,11 @@ void wait() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir eşzamanlı durum, yalnızca eşzamanlı sağlayıcısı bir iade değeri depolanmışsa veya bir özel durum depolarsa *hazırdır.*
+İlişkili bir zaman uyumsuz durum *, yalnızca zaman* uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
-## <a name="futurewait_for"></a><a name="wait_for"></a>gelecek::wait_for
+## <a name="futurewait_for"></a><a name="wait_for"></a>daha sonra:: wait_for
 
-İlişkili eşzamanlı durum *hazır* olana veya belirli bir zaman aralığı geçene kadar geçerli iş parçacığı engeller.
+İlişkili zaman uyumsuz durum *hazırlanana* veya belirli bir zaman aralığı geçene kadar geçerli iş parçacığını engeller.
 
 ```cpp
 template <class Rep, class Period>
@@ -184,19 +184,19 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 ### <a name="parameters"></a>Parametreler
 
 *Rel_time*\
-İş parçacığının bloklar ettiği maksimum zaman aralığını belirten [bir kronometre::duration](../standard-library/duration-class.md) nesnesi.
+Bir zaman hatası: iş parçacığının engellediği maksimum zaman aralığını belirten [:d uration](../standard-library/duration-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geri dönme nedenini gösteren [bir future_status.](../standard-library/future-enums.md#future_status)
+Dönme nedeninizi belirten bir [future_status](../standard-library/future-enums.md#future_status) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir eşzamanlı durum, yalnızca eşzamanlı sağlayıcısı bir iade değeri depolanmışsa veya bir özel durum depolarsa hazırdır.
+İlişkili bir zaman uyumsuz durum, yalnızca zaman uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
-## <a name="futurewait_until"></a><a name="wait_until"></a>gelecek::wait_until
+## <a name="futurewait_until"></a><a name="wait_until"></a>daha sonra:: wait_until
 
-İlişkili eşzamanlı durum *hazır* olana veya belirli bir zaman noktasına gelene kadar geçerli iş parçacığı engeller.
+İlişkili zaman uyumsuz durum *hazırlanana* veya belirtilen bir zaman noktasına gelene kadar geçerli iş parçacığını engeller.
 
 ```cpp
 template <class Clock, class Duration>
@@ -206,17 +206,17 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 ### <a name="parameters"></a>Parametreler
 
 *Abs_time*\
-Bir [kronometre:time_point](../standard-library/time-point-class.md) nesnesi, iş parçacığının engelini kaldırabileceği bir süre yi belirtir.
+İş parçacığının engellemesini kaldırmak için geçen süreyi belirten bir zaman [hatası:: time_point](../standard-library/time-point-class.md) nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geri dönme nedenini gösteren [bir future_status.](../standard-library/future-enums.md#future_status)
+Dönme nedeninizi belirten bir [future_status](../standard-library/future-enums.md#future_status) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili bir eşzamanlı durum, yalnızca eşzamanlı sağlayıcısı bir iade değeri depolanmışsa veya bir özel durum depolarsa *hazırdır.*
+İlişkili bir zaman uyumsuz durum *, yalnızca zaman* uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[\<gelecek>](../standard-library/future.md)
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[\<future>](../standard-library/future.md)

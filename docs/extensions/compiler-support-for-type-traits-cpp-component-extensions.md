@@ -1,5 +1,5 @@
 ---
-title: Tür nitelikleri için derleyici desteği (C++/CLI ve C++/CX)
+title: Tür Özellikleri için Derleyici Desteği (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -61,16 +61,16 @@ helpviewer_keywords:
 - __is_simple_value_class keyword [C++]
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-ms.openlocfilehash: 1bfb4308dc76e3393eceddf8dedd6d11e73adc17
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 16c79e05c6ba6f50a3e6c0d6dd5f48963be40fa8
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172536"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219787"
 ---
-# <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>Tür nitelikleri için derleyici desteği (C++/CLI ve C++/CX)
+# <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>Tür Özellikleri için Derleyici Desteği (C++/CLI ve C++/CX)
 
-Microsoft C++ derleyicisi, bir türün derleme zamanında C++çeşitli özelliklerini gösteren/CLI ve C++/CX uzantıları için *tür nitelikleri* destekler.
+Microsoft C++ derleyicisi, derleme zamanında bir türün çeşitli özelliklerini gösteren C++/CLı ve C++/CX uzantıları için *tür nitelikleri* destekler.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -78,13 +78,13 @@ Microsoft C++ derleyicisi, bir türün derleme zamanında C++çeşitli özellikl
 
 Tür nitelikleri özellikle kitaplıkları yazan programcılar için yararlıdır.
 
-Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. Nitelik türünün adı tarafından belirtilen koşul karşılanmazsa, tüm tür nitelikleri **false** döndürür.
+Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. **`false`** Nitelik türünün adı tarafından belirtilen koşul karşılanmazsa, tüm tür nitelikleri döndürülür.
 
-(Aşağıdaki listede, kod örnekleri yalnızca/Cli'de C++yazılmıştır. Ancak, aksi belirtilmedikçe, karşılık gelen nitelik türü C++/CX içinde de desteklenir. "Platform türü" terimi Windows Çalışma Zamanı türler veya ortak dil çalışma zamanı türleri anlamına gelir.)
+(Aşağıdaki listede, kod örnekleri yalnızca C++/cliendilinde yazılmıştır. Ancak, aksi belirtilmedikçe, karşılık gelen nitelik türü C++/CX içinde de desteklenir. "Platform türü" terimi Windows Çalışma Zamanı türler veya ortak dil çalışma zamanı türleri anlamına gelir.)
 
-- `__has_assign(` *türü* `)`
+- `__has_assign(`*tür*`)`
 
-   Platform veya yerel türün bir kopya atama işleci varsa, **true** döndürür.
+   **`true`** Platform veya yerel türün bir kopya atama işleci varsa döndürür.
 
     ```cpp
     ref struct R {
@@ -96,9 +96,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_copy(` *türü* `)`
+- `__has_copy(`*tür*`)`
 
-   Platform veya yerel türün bir kopya Oluşturucusu varsa, **true** döndürür.
+   **`true`** Platform veya yerel türün bir kopya Oluşturucusu olup olmadığını döndürür.
 
     ```cpp
     ref struct R {
@@ -110,9 +110,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_finalizer(` *türü* `)`
+- `__has_finalizer(`*tür*`)`
 
-   (/Cx'de C++desteklenmez.) CLR türünün bir sonlandırıcısı varsa, **true** döndürür. Daha fazla bilgi için bkz. [nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) .
+   (C++/CX'DE desteklenmez.) **`true`** CLR türünün sonlandırıcısı varsa döndürür. Daha fazla bilgi için bkz. [nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) .
 
     ```cpp
     using namespace System;
@@ -127,9 +127,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_nothrow_assign(` *türü* `)`
+- `__has_nothrow_assign(`*tür*`)`
 
-   Bir kopya atama işlecinin boş bir özel durum belirtimi varsa **true** değerini döndürür.
+   **`true`** Bir kopya atama işlecinin boş bir özel durum belirtimine sahip olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -143,9 +143,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_nothrow_constructor(` *türü* `)`
+- `__has_nothrow_constructor(`*tür*`)`
 
-   Varsayılan oluşturucunun boş bir özel durum belirtimi varsa **true** değerini döndürür.
+   **`true`** Varsayılan oluşturucunun boş bir özel durum belirtimine sahip olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -159,9 +159,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_nothrow_copy(` *türü* `)`
+- `__has_nothrow_copy(`*tür*`)`
 
-   Kopya oluşturucunun boş bir özel durum belirtimi varsa **true** değerini döndürür.
+   **`true`** Kopya oluşturucusunun boş bir özel durum belirtimi olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -175,9 +175,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_trivial_assign(` *türü* `)`
+- `__has_trivial_assign(`*tür*`)`
 
-   Türün önemsiz, derleyici tarafından oluşturulan bir atama işleci varsa **true** değerini döndürür.
+   **`true`** Türün önemsiz, derleyici tarafından oluşturulan bir atama işleci varsa döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -189,9 +189,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_trivial_constructor(` *türü* `)`
+- `__has_trivial_constructor(`*tür*`)`
 
-   Türün önemsiz, derleyici tarafından üretilmiş bir Oluşturucusu varsa **true** değerini döndürür.
+   **`true`** Türün önemsiz, derleyici tarafından oluşturulan bir oluşturucuya sahip olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -203,9 +203,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_trivial_copy(` *türü* `)`
+- `__has_trivial_copy(`*tür*`)`
 
-   Türün önemsiz, derleyici tarafından oluşturulan bir kopya Oluşturucusu varsa **true** değerini döndürür.
+   **`true`** Türün önemsiz, derleyici tarafından oluşturulan bir kopya oluşturucusuna sahip olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -217,9 +217,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_trivial_destructor(` *türü* `)`
+- `__has_trivial_destructor(`*tür*`)`
 
-   Türün önemsiz, derleyici tarafından oluşturulan bir yıkıcı varsa **true** döndürür.
+   **`true`** Türün önemsiz, derleyici tarafından oluşturulan bir yıkıcıya sahip olup olmadığını döndürür.
 
     ``` cpp
     // has_trivial_destructor.cpp
@@ -232,9 +232,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_user_destructor(` *türü* `)`
+- `__has_user_destructor(`*tür*`)`
 
-   Platform veya yerel türün Kullanıcı tarafından belirtilen yıkıcı varsa, **true** döndürür.
+   **`true`** Platform veya yerel türün Kullanıcı tarafından tanımlanmış bir yıkıcıya sahip olup olmadığını döndürür.
 
     ```cpp
     // has_user_destructor.cpp
@@ -249,11 +249,11 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__has_virtual_destructor(` *türü* `)`
+- `__has_virtual_destructor(`*tür*`)`
 
-   Türün bir sanal yıkıcısı varsa, **true** döndürür.
+   **`true`** Türün bir sanal yok ediciye sahip olup olmadığını döndürür.
 
-   `__has_virtual_destructor` Ayrıca platform türlerinde da kullanılabilir ve bir platform türündeki Kullanıcı tanımlı yıkıcının sanal bir yıkıcıdır.
+   `__has_virtual_destructor`Ayrıca platform türlerinde ve bir platform türündeki Kullanıcı tanımlı yok edicinin sanal bir yıkıcıdır.
 
     ```cpp
     // has_virtual_destructor.cpp
@@ -268,11 +268,11 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_abstract(` *türü* `)`
+- `__is_abstract(`*tür*`)`
 
-   Tür soyut bir tür ise, **true** döndürür. Yerel soyut türler hakkında daha fazla bilgi için bkz. [soyut sınıflar](../cpp/abstract-classes-cpp.md).
+   **`true`** Türün soyut bir tür olup olmadığını döndürür. Yerel soyut türler hakkında daha fazla bilgi için bkz. [soyut sınıflar](../cpp/abstract-classes-cpp.md).
 
-   `__is_abstract` platform türleri için de geçerlidir. En az bir üyesi olan bir arabirim, en az bir soyut üyeye sahip bir başvuru türü olan bir soyut türdür. Soyut platform türleri hakkında daha fazla bilgi için bkz. [abstract](abstract-cpp-component-extensions.md).
+   `__is_abstract`Platform türleri için de geçerlidir. En az bir üyesi olan bir arabirim, en az bir soyut üyeye sahip bir başvuru türü olan bir soyut türdür. Soyut platform türleri hakkında daha fazla bilgi için bkz. [abstract](abstract-cpp-component-extensions.md).
 
     ```cpp
     // is_abstract.cpp
@@ -289,9 +289,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
 - `__is_base_of(` `base` `,` `derived` `)`
 
-   Her iki tür de aynı ise, birinci tür ikinci türün temel sınıfı ise **true** döndürür.
+   **`true`** Her iki tür de aynı ise, ilk türün ikinci türün temel sınıfı olup olmadığını döndürür.
 
-   `__is_base_of` Ayrıca platform türleri üzerinde de kullanılabilir. Örneğin, ilk tür bir [arabirim sınıfı](interface-class-cpp-component-extensions.md) ise ve ikinci tür arabirimini uyguluyorsa, **true** döndürür.
+   `__is_base_of`Platform türleri üzerinde de kullanılabilir. Örneğin, **`true`** ilk tür bir [arabirim sınıfı](interface-class-cpp-component-extensions.md) ise ve ikinci tür arabirimi uygularsa bu döndürülür.
 
     ```cpp
     // is_base_of.cpp
@@ -308,9 +308,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_class(` *türü* `)`
+- `__is_class(`*tür*`)`
 
-   Tür yerel bir sınıf veya yapı ise, **true** döndürür.
+   **`true`** Türün bir yerel sınıf veya yapı birimi olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -322,9 +322,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_convertible_to(` `from` `,``to` `)`
+- `__is_convertible_to(` `from` `,`  `to` `)`
 
-   İlk tür ikinci türe dönüştürülebiliyorsa, **true** döndürür.
+   **`true`** İlk türün ikinci türe dönüştürülebileceğinden, döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -340,9 +340,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_delegate(` *türü* `)`
+- `__is_delegate(`*tür*`)`
 
-   `type` bir Temsilciyse, **true** döndürür. Daha fazla bilgi için bkz. [temsilciC++(/CLI C++ve/CX)](delegate-cpp-component-extensions.md).
+   **`true`** `type` Bir Temsilciyse döndürür. Daha fazla bilgi için bkz. [Temsilci (c++/CLI ve c++/cx)](delegate-cpp-component-extensions.md).
 
     ```cpp
     delegate void MyDel();
@@ -351,9 +351,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_empty(` *türü* `)`
+- `__is_empty(`*tür*`)`
 
-   Türün örnek veri üyeleri yoksa, **true** döndürür.
+   **`true`** Türün örnek veri üyelerine sahip olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -367,9 +367,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_enum(` *türü* `)`
+- `__is_enum(`*tür*`)`
 
-   Tür yerel bir sabit listesi ise, **true** döndürür.
+   **`true`** Türün yerel bir sabit listesi olup olmadığını döndürür.
 
     ```cpp
     // is_enum.cpp
@@ -389,9 +389,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_interface_class(` *türü* `)`
+- `__is_interface_class(`*tür*`)`
 
-   Platform arabirimi geçirilirse **true** döndürür. Daha fazla bilgi için bkz. [interface class](interface-class-cpp-component-extensions.md).
+   **`true`** Platform arabirimi geçirilmezse döndürür. Daha fazla bilgi için bkz. [interface class](interface-class-cpp-component-extensions.md).
 
     ```cpp
     // is_interface_class.cpp
@@ -403,9 +403,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_pod(` *türü* `)`
+- `__is_pod(`*tür*`)`
 
-   Tür, Oluşturucu veya özel veya korumalı statik olmayan üyeler, temel sınıf ve sanal işlev olmadan bir sınıf veya birleşim ise **true** döndürür. PODs C++ hakkında daha fazla bilgi için bkz. Standart, Bölüm 8.5.1/1, 9/4 ve 3.9/10.
+   **`true`** Tür, Oluşturucu ya da özel veya korumalı statik olmayan üyeler, temel sınıf ve sanal işlev olmadan bir sınıf veya birleşim ise döndürür. PODs hakkında daha fazla bilgi için bkz. C++ Standard, sections 8.5.1/1, 9/4 ve 3.9/10.
 
    `__is_pod`, temel türlerde false döndürür.
 
@@ -419,9 +419,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_polymorphic(` *türü* `)`
+- `__is_polymorphic(`*tür*`)`
 
-   Yerel türde sanal işlevler varsa, **true** döndürür.
+   **`true`** Yerel bir türün sanal işlevlere sahip olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -435,9 +435,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_ref_array(` *türü* `)`
+- `__is_ref_array(`*tür*`)`
 
-   Platform dizisi geçirildiğinde **true** döndürür. Daha fazla bilgi için bkz. [diziler](arrays-cpp-component-extensions.md).
+   **`true`** Platform dizisi geçmişse döndürür. Daha fazla bilgi için bkz. [diziler](arrays-cpp-component-extensions.md).
 
     ```cpp
     using namespace System;
@@ -447,9 +447,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_ref_class(` *türü* `)`
+- `__is_ref_class(`*tür*`)`
 
-   Başvuru sınıfı geçirilirse **true** döndürür. Kullanıcı tanımlı başvuru türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
+   **`true`** Başvuru sınıfı geçirilirse döndürür. Kullanıcı tanımlı başvuru türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
 
     ```cpp
     using namespace System;
@@ -460,9 +460,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_sealed(` *türü* `)`
+- `__is_sealed(`*tür*`)`
 
-   Korumalı olarak işaretlenmiş bir platform veya yerel tür geçmişse **true** döndürür. Daha fazla bilgi için bkz. [Sealed](sealed-cpp-component-extensions.md).
+   **`true`** Platform veya yerel tür Sealed olarak işaretlenmiş olarak geçirilirse döndürür. Daha fazla bilgi için bkz. [Sealed](sealed-cpp-component-extensions.md).
 
     ```cpp
     ref class R sealed{};
@@ -471,9 +471,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_simple_value_class(` *türü* `)`
+- `__is_simple_value_class(`*tür*`)`
 
-   Atık toplanmış yığına başvuru içermeyen bir değer türü geçirtiyse **true** döndürür. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
+   **`true`** Atık toplanmış yığına başvuru içermeyen bir değer türü geçirilmezse döndürür. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
 
     ```cpp
     using namespace System;
@@ -489,9 +489,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_union(` *türü* `)`
+- `__is_union(`*tür*`)`
 
-   Bir tür birleşimse **true** döndürür.
+   **`true`** Bir türün birleşim olup olmadığını döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -506,9 +506,9 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
     }
     ```
 
-- `__is_value_class(` *türü* `)`
+- `__is_value_class(`*tür*`)`
 
-   Değer türü geçirildiğinde **true** döndürür. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
+   **`true`** Değer türü geçirilmezse döndürür. Kullanıcı tanımlı değer türleri hakkında daha fazla bilgi için bkz. [sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md).
 
     ```cpp
     value struct V {};
@@ -522,11 +522,11 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu platform sonlandırıcıları desteklemediğinden `__has_finalizer(`*türü*`)` türü nitelik desteklenmiyor.
+`__has_finalizer(` *type* `)` Bu platform sonlandırıcıları desteklemediğinden nitelik tür türü desteklenmiyor.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -536,13 +536,13 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
 **Örnek**
 
-Aşağıdaki kod örneği, bir `/clr` derlemesi için bir derleyici türü nitelik göstermek için bir sınıf şablonunun nasıl kullanılacağını gösterir. Daha fazla bilgi için bkz. [Windows çalışma zamanı ve yönetilen şablonlar](windows-runtime-and-managed-templates-cpp-component-extensions.md).
+Aşağıdaki kod örneği, bir derleme için nitelik derleyici türü göstermek için bir sınıf şablonunun nasıl kullanılacağını gösterir `/clr` . Daha fazla bilgi için bkz. [Windows çalışma zamanı ve yönetilen şablonlar](windows-runtime-and-managed-templates-cpp-component-extensions.md).
 
 ```cpp
 // compiler_type_traits.cpp
@@ -570,4 +570,4 @@ R is a ref class
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

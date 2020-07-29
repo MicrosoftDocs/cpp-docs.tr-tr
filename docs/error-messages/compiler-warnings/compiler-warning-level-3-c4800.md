@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4800
 ms.assetid: 4f409799-a250-45ed-bb5f-657691b0d9f7
-ms.openlocfilehash: 828b38aeb184741af284f2d7722017b24f6255a3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a516be2e6e1966c3249ed21cc6d480ddea8b5ec1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198594"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220021"
 ---
 # <a name="compiler-warning-level-4-c4800"></a>Derleyici Uyarısı (düzey 4) C4800
 
@@ -23,7 +23,7 @@ Visual Studio 2019 ve üzeri:
 C4800, Visual Studio 2015 ve önceki sürümlerde 3. düzey bir uyarıdır:
 > '*Type*': değer bool ' true ' veya ' false ' olarak zorlanıyor (performans uyarısı)
 
-Bu uyarı bir değer `bool`türüne örtük olarak dönüştürüldüğünde oluşturulur. Genellikle, bu ileti, `int` değişkeninin yalnızca **true** ve **false**değerlerini içerdiği ve `bool`türü olarak yeniden bildirilebileceği `bool` değişkenlerine `int` değişkenleri atanırken oluşur. `bool`türünü kullanmak için ifadeyi yeniden yazamıyoruz, ifadeye "`!=0`" ekleyebilirsiniz ve bu ifade türü `bool`sağlar. İfadeyi `bool` türüne atama, tasarım ile olan uyarıyı devre dışı bırakmaz.
+Bu uyarı, bir değer örtük olarak türüne dönüştürüldüğünde oluşturulur **`bool`** . Genellikle, bu ileti **`int`** **`bool`** **`int`** değişkenin yalnızca değerler **`true`** ve ve **`false`** tür olarak yeniden bildirilebileceği değişkenlere **`bool`** atanması nedeniyle oluşur. Türü kullanmak için ifadeyi yeniden yazamıyoruz, ifadeye **`bool`** " `!=0` " ekleyebilirsiniz **`bool`** . İfadeyi türüne atama **`bool`** , tasarım ile olan uyarıyı devre dışı bırakmaz.
 
 ::: moniker range=">= vs-2017"
 Bu uyarı, Visual Studio 2017 ' de yayılmaz.

@@ -59,18 +59,18 @@ helpviewer_keywords:
 - nexttowardf function
 - nexttowardl function
 ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-ms.openlocfilehash: b137fd131536da6b8630b9cadf69238ce48964bf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6122fd8921bdb413c4b24128b2428a70ccda0892
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909333"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213521"
 ---
 # <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 
 Sonraki gösterilemeyen kayan noktalı değeri döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double nextafter( double x, double y );
@@ -95,7 +95,7 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Başlangıçtan başlamak için kayan nokta değeri.
 
 *Iz*<br/>
@@ -109,7 +109,7 @@ Doğru gidilecek kayan nokta değeri.
 
 *Y*parametre türü dışında, **nextafter** ve **NexTTo** işlev aileleri eşdeğerdir. *X* ve *y* eşitse, döndürülen değer *y* , dönüş türüne dönüştürülür.
 
-C++ aşırı yüklemeye izin verdiğinden \<, cmath> eklerseniz, bu Return **float** ve **Long** **Double** türlerine doğru **nextafter** ve **nextaşırı** yüklerini çağırabilirsiniz. C programında, **nextafter** ve **Next,** her zaman **Double**döndürür.
+C++ aşırı yüklemeye izin verdiğinden, Eğer eklerseniz, \<cmath> Bu return ve türlerine doğru **nextafter** ve **nextaşırı** yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **nextafter** ve **nexther** zaman dön **`double`** .
 
 **_Nextafter** ve **_nextafterf** işlevleri Microsoft 'a özgüdür. **_Nextafterf** işlevi yalnızca x64 için derlerken kullanılabilir.
 
@@ -119,12 +119,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------------|-------------------------------|
-|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nextnext**, **nexttowardf**, **nexttowardl**|\<Math. h>|\<Math. h> veya \<cmath>|
-|**_nextafter**|\<float. h>|\<float. h> veya \<cfloat>|
+|**nextafter**, **nextafterf**, **nextafterl**, **_nextafterf**, **nextnext**, **nexttowardf**, **nexttowardl**|\<math.h>|\<math.h> veya \<cmath>|
+|**_nextafter**|\<float.h>|\<float.h> veya \<cfloat>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

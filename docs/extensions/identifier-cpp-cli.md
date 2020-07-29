@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - __identifier keyword [C++]
 ms.assetid: 348428af-afa7-4ff3-b571-acf874301cf2
-ms.openlocfilehash: 0da32aae9a8c2c7f21ee9576e1e1147822314a36
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5f95e9fc55acd33705b855c7c4f0ef268d4776a0
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172184"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219696"
 ---
 # <a name="__identifier-ccli"></a>__tanımlayıcı (C++/CLI)
 
-C++ Anahtar sözcüklerin tanımlayıcı olarak kullanılmasına izin vermez.
+C++ anahtar sözcüklerinin tanımlayıcı olarak kullanılmasına izin vermez.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
@@ -35,13 +35,13 @@ Anahtar sözcük olmayan tanımlayıcılara izin verilen **__identifier** anahta
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ### <a name="examples"></a>Örnekler
 
 **Örnek**
 
-Aşağıdaki örnekte, **şablon** adlı bir sınıf içinde C# oluşturulur ve DLL olarak dağıtılır. **Şablon** sınıfını C++kullanan/CLI programında, **__identifier** anahtar sözcüğü, **şablonun** standart C++ bir anahtar sözcük olduğunu bir şekilde gizleme.
+Aşağıdaki örnekte, adlı bir sınıf `template` C# dilinde oluşturulur ve DLL olarak dağıtılır. Sınıfını kullanan C++/CLı programında `template` , **`__identifier`** anahtar sözcüğü `template` Standart C++ anahtar sözcüğü olan olguyu gizleme.
 
 ```csharp
 // identifier_template.cs
@@ -65,15 +65,15 @@ int main() {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**__İdentifier** anahtar sözcüğü `/clr` derleyici seçeneği ile geçerlidir.
+**__İdentifier** anahtar sözcüğü, `/clr` derleyici seçeneği ile geçerlidir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekte, **şablon** adlı bir sınıf içinde C# oluşturulur ve DLL olarak dağıtılır. **Şablon** sınıfını C++kullanan/CLI programında, **__identifier** anahtar sözcüğü, **şablonun** standart C++ bir anahtar sözcük olduğunu bir şekilde gizleme.
+Aşağıdaki örnekte, adlı bir sınıf `template` C# dilinde oluşturulur ve DLL olarak dağıtılır. Sınıfını kullanan C++/CLı programında `template` , **`__identifier`** anahtar sözcüğü `template` Standart C++ anahtar sözcüğü olan olguyu gizleme.
 
 ```csharp
 // identifier_template.cs
@@ -96,5 +96,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

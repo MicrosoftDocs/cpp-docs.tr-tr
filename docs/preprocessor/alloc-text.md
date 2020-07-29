@@ -8,12 +8,12 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: 7ddb12b39e068dea42f7a47f7fd937424be43725
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: c638c2026a493453aeb5aff00ba6273efb5f184e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216344"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219449"
 ---
 # <a name="alloc_text-pragma"></a>alloc_text pragması
 
@@ -21,19 +21,19 @@ Belirtilen işlev tanımlarının bulunduğu kod bölümünü adlandırır. Prag
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **#pragma alloc_text (** "*textsection*" **,** *işlev1* [ **,** *function2* ...] **)**
+> **#pragma alloc_text (** "*textsection*" **,** *işlev1* [**,** *function2* ...] **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Alloc_text** pragma, üye işlevlerini veya C++ aşırı yüklenmiş işlevleri işlemez. Yalnızca C bağlantısıyla belirtilen işlevler için geçerlidir — diğer bir deyişle, **extern "C"** bağlantı belirtimiyle belirtilen işlevler. Bu pragmayı C++ bağlantısı olan bir işlevde kullanırsanız, bir derleyici hatası oluşturulur.
+**Alloc_text** pragma, C++ üye işlevlerini veya aşırı yüklenmiş işlevleri işlemez. Yalnızca C bağlantısıyla belirtilen işlevler için geçerlidir — diğer bir deyişle, **extern "C"** bağlantı belirtimiyle belirtilen işlevler. Bu pragmayı C++ bağlantısı olan bir işlevde kullanırsanız, bir derleyici hatası oluşturulur.
 
-Kullanılarak `__based` işlev adresleme desteklenmediğinden, Bölüm konumlarının belirtilmesi için **alloc_text** pragma kullanılması gerekir. *Textsection* tarafından belirtilen ad çift tırnak işareti içine alınmalıdır.
+Kullanılarak işlev adresleme **`__based`** desteklenmediğinden, Bölüm konumlarının belirtilmesi **alloc_text** pragma 'un kullanılmasını gerektirir. *Textsection* tarafından belirtilen ad çift tırnak işareti içine alınmalıdır.
 
 **Alloc_text** pragma, belirtilen işlevlerin ve bu işlevlerin tanımlarından önce bildirimlerinden sonra gelmelidir.
 
 Bir **alloc_text** pragma içinde başvurulan işlevler pragma ile aynı modülde tanımlanmalıdır. Aksi takdirde, tanımsız bir işlev daha sonra farklı bir metin bölümüne derlenirse, hata yakalanmayabilir veya yakalanmayabilir. Program genellikle düzgün bir şekilde çalışacak olsa da, işlev hedeflenen bölümlerde ayrılmayacaktır.
 
-**Alloc_text** ile ilgili diğer sınırlamalar aşağıdaki gibidir:
+**Alloc_text** diğer sınırlamalar aşağıdaki gibidir:
 
 - Bir işlev içinde kullanılamaz.
 

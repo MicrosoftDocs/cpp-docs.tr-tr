@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4221
 ms.assetid: 8532bd68-54dc-4526-8597-f61dcb0a0129
-ms.openlocfilehash: fa948865685af4cbd6a865cfbf1d8546b29ab280
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e925f315e8506453403b0a0eda75b7c2956cc05c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80161145"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219943"
 ---
 # <a name="compiler-warning-level-4-c4221"></a>Derleyici Uyarısı (düzey 4) C4221
 
 Standart olmayan uzantı kullanıldı: ' Identifier ': otomatik değişkenin adresi kullanılarak başlatılamaz
 
-Varsayılan Microsoft uzantıları (/Ze) ile bir toplam türü (**dizi**, `struct`veya **birleşim**) bir yerel (otomatik) değişkeninin adresiyle başlatabilirsiniz.
+Varsayılan Microsoft uzantıları (/Ze) ile bir toplam türü (**dizi**, **`struct`** veya **`union`** ) yerel (otomatik) değişken adresiyle başlatabilirsiniz.
 
 ## <a name="example"></a>Örnek
 

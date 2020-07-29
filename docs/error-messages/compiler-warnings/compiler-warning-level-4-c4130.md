@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4130
 ms.assetid: 45e4c7b2-6b51-41c7-ba5e-941aa5c7d3dc
-ms.openlocfilehash: 3bc632bf641fa3944cfd21dc405590c803498d80
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 7b2fbccfd3b124220d6e310c01adace1d3e112c1
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991573"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219969"
 ---
 # <a name="compiler-warning-level-4-c4130"></a>Derleyici Uyarısı (düzey 4) C4130
 
@@ -34,6 +34,6 @@ int main()
 }
 ```
 
-**IF** ifadesinde, işaretçi kodda her gerçekleştiğinde ayrı olarak ayrılan "Hello" dizesinin adresine `pc` İşaretçisinde depolanan değeri karşılaştırır. **IF** ifadesinde işaret eden dize, "Hello" dizesiyle `pc` ile karşılaştırmaz.
+**`if`** İfade, İşaretçisinde depolanan değeri, `pc` dize kodda her gerçekleştiğinde ayrı olarak ayrılan "Hello" dizesinin adresine karşılaştırır. **`if`** İfade, işaret eden dizeyi `pc` "Hello" dizesiyle karşılaştırmaz.
 
 Dizeleri karşılaştırmak için `strcmp` işlevini kullanın.

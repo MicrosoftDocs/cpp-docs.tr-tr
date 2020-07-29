@@ -6,17 +6,17 @@ f1_keywords:
 helpviewer_keywords:
 - C2030
 ms.assetid: 5806cead-64df-4eff-92de-52c9a3f5ee62
-ms.openlocfilehash: e3f3936e6fd37da16c923cb482f45cec11833b3c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f9090e098d7f523bf7bc12b7fa4d9312f6ca5466
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208038"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212910"
 ---
 # <a name="compiler-error-c2030"></a>Derleyici Hatası C2030
 
 ' protected private ' erişilebilirliği olan yıkıcı, ' Sealed ' olarak tanımlanan bir sınıfın üyesi olamaz
 
-`sealed` olarak belirtilen bir Windows Çalışma Zamanı sınıfı korunan özel yıkıcıya sahip olamaz. Sealed türlerde yalnızca ortak sanal ve özel sanal olmayan yıkıcılarda izin verilir. Daha fazla bilgi için bkz. [başvuru sınıfları ve yapıları](../../cppcx/ref-classes-and-structs-c-cx.md).
+Olarak tanımlanan Windows Çalışma Zamanı bir sınıfın **`sealed`** korunan özel yıkıcısı olamaz. Sealed türlerde yalnızca ortak sanal ve özel sanal olmayan yıkıcılarda izin verilir. Daha fazla bilgi için bkz. [başvuru sınıfları ve yapıları](../../cppcx/ref-classes-and-structs-c-cx.md).
 
 Bu hatayı düzeltemedi, yok edicinin erişilebilirliğini değiştirin.

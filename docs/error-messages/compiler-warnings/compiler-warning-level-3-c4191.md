@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4191
 ms.assetid: 576d3bc6-95b7-448a-af31-5d798452df09
-ms.openlocfilehash: 817e74d278aa3d91c65ffeb8ab9ac5844041446e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9914818520fafb707b6821ba827e867b8aea9928
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198971"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220034"
 ---
 # <a name="compiler-warning-level-3-c4191"></a>Derleyici Uyarısı (düzey 3) C4191
 
@@ -25,11 +25,11 @@ ms.locfileid: "80198971"
 
 - Farklı boyutlara, tür kategorilerine veya sınıflandırmalara sahip bağımsız değişken veya dönüş türleri.
 
-- Farklı bağımsız değişken listesi uzunlukları (`__cdecl`' de, daha kısa vararg olsa da, daha kısa bir liste olarak daha kısa listeye dönüştürme üzerinde.
+- Farklı bağımsız değişken listesi uzunlukları (açık **`__cdecl`** , daha kısa bir şekilde vararg olsa bile)
 
-- İşleve yönelik işaretçilere karşı veri işaretçisi ( **void** <strong>\*</strong>dışında).
+- **`void`** <strong>\*</strong> İşleve yönelik işaretçilere göre (dışındaki) veri işaretçisi.
 
-- `reinterpret_cast`bir hata veya uyarı veren diğer tür farkı.
+- Bir hata veya uyarı veren diğer tür farkı **`reinterpret_cast`** .
 
 Bu işlevin sonuç işaretçisi aracılığıyla çağrılması programınızın kilitlenmesine neden olabilir.
 

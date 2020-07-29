@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - restrict clause (C++ AMP)
 ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
-ms.openlocfilehash: b3464b758c6b66cdbd5015ee4b7c9d11eb2209dd
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 31db9e8c6f18879e65596593c10a8b3413c5cea9
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404944"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213274"
 ---
 # <a name="restrict-c-amp"></a>restrict (C++ AMP)
 
 Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++ Accelerated Massive Parallelism (C++ AMP) çalışma zamanı kullanan uygulamalarda işlevdeki kod ve işlevin davranışı için kısıtlamalar uygular.
 
 > [!NOTE]
-> **__Declspec** Storage sınıfı özniteliklerinin parçası olan **Restrict** anahtar sözcüğü hakkında bilgi için bkz. [Restrict](../cpp/restrict.md).
+> **`restrict`** Depolama sınıfı özniteliklerinin bir parçası olan anahtar sözcük hakkında daha fazla bilgi için **`__declspec`** bkz. [Restrict](../cpp/restrict.md).
 
-**Restrict** yan tümcesi aşağıdaki formları alır:
+**`restrict`** Yan tümcesi aşağıdaki formları alır:
 
 |Yan Tümce|Açıklama|
 |------------|-----------------|
@@ -31,7 +31,7 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Restrict** anahtar sözcüğü bağlamsal bir anahtar sözcüktür. Kısıtlama tanımlayıcıları `cpu` ve `amp`, ayrılmış sözcükler değildir. Tanımlayıcıların listesi genişletilemez. **Restrict** yan tümcesine sahip olmayan bir işlev, yan tümcesine sahip bir işlevle aynıdır `restrict(cpu)` .
+**`restrict`** Anahtar sözcüğü bağlamsal bir anahtar sözcüktür. Kısıtlama tanımlayıcıları `cpu` ve `amp`, ayrılmış sözcükler değildir. Tanımlayıcıların listesi genişletilemez. Yan tümcesine sahip olmayan bir işlev, **`restrict`** yan tümcesine sahip bir işlevle aynıdır `restrict(cpu)` .
 
 `restrict(amp)` yan tümcesine sahip bir işlev aşağıdaki kısıtlamalara sahiptir:
 
@@ -39,7 +39,7 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
 - İşlev satır içine alınabilir olmalıdır.
 
-- İşlev yalnızca **int**, **işaretsiz int**, **float**ve **Double** değişkenlerini ve yalnızca bu türleri içeren sınıfları ve yapıları bildirebilir. **bool** öğesine de izin verilir, ancak bunu bir bileşik türde kullanıyorsanız 4 baytlık hizalı olmalıdır.
+- İşlev yalnızca,,, **`int`** **`unsigned int`** **`float`** ve **`double`** değişkenlerini ve yalnızca bu türleri içeren sınıfları ve yapıları bildirebilir. **`bool`** Ayrıca buna izin verilir, ancak bileşik bir tür içinde kullanıyorsanız 4 baytlık hizalı olmalıdır.
 
 - Lambda işlevleri, başvuruya göre yakalama gerçekleştiremez ve işaretçileri yakalayamaz.
 
@@ -61,19 +61,19 @@ Kısıtlama tanımlayıcısı işlev ve lambda bildirimlerine uygulanabilir. C++
 
   - İşaretçilerin işaretçileri.
 
-  - **goto** deyimleri.
+  - **`goto`** deyimler.
 
   - Etiketli deyimler.
 
-  - **TRY**, **catch**veya **throw** deyimleri.
+  - **`try`**, **`catch`** , veya **`throw`** deyimleri.
 
   - Genel değişkenler.
 
   - Statik değişkenler. Bunun yerine [Tile_static anahtar sözcüğünü](../cpp/tile-static-keyword.md) kullanın.
 
-  - **dynamic_cast** yayınları.
+  - **`dynamic_cast`** Podcast.
 
-  - **TypeId** işleci.
+  - **`typeid`** İşleci.
 
   - asm bildirimleri.
 

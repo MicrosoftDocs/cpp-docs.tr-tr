@@ -6,18 +6,18 @@ f1_keywords:
 - math/isnormal
 helpviewer_keywords:
 - isnormal function
-ms.openlocfilehash: e426fbce71efff1e810a03b8347e7c48aa0d91d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e12cabb57f2e51c08b4d93af33dae85164d016b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62286446"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213534"
 ---
 # <a name="isnormal"></a>isnormal
 
-Bir kayan nokta değeri normal bir değer olup olmadığını belirler.
+Kayan nokta değerinin normal bir değer olup olmadığını belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int isnormal(
@@ -33,27 +33,27 @@ inline bool isnormal(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Test etmek için kayan nokta değeri.
+Sınanacak kayan nokta değeri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-**isnormal** sıfır dışında bir değeri döndürür (**true** içinde C++ kodu), bağımsız değişken *x* ne sıfır, subnormal, sonsuz veya NaN bir değil. Aksi takdirde, **isnormal** 0 döndürür (**false** içinde C++ kod).
+**isnormal** **`true`** *x* bağımsız değişkeni sıfır, alt normal, sonsuz veya NaN ise, IsNormal sıfır dışında bir değer döndürür (C++ kodunda). Aksi takdirde, **IsNormal** 0 döndürür ( **`false`** C++ kodunda).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**isnormal** C ve olarak derlendiğinde bir satır içi işlev şablonu olarak derlendiğinde bir makro C++.
+**IsNormal** , C olarak derlenmiş bir makrodur ve C++ olarak derlendiğinde bir satır içi işlev şablonudur.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|Gerekli başlık (C)|Gerekli başlık (C++)|
+|İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------------|-------------------------------|
-|**isnormal**|\<Math.h >|\<Math.h > veya \<cmath >|
+|**isnormal**|\<math.h>|\<math.h> veya \<cmath>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>
 [isinf](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>

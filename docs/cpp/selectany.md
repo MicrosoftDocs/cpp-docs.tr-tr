@@ -7,41 +7,39 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-ms.openlocfilehash: e8ca82900ffd16264aca494950d4793029e55d9c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e279184322c239e7768eb8fd4321ee451b2cb94c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365595"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213235"
 ---
-# <a name="selectany"></a>selectany
+# `selectany`
 
 **Microsoft'a Özgü**
 
-Derleyiciye, bildirilen genel veri öğesinin (değişken veya nesne) herhangi bir comdat (paketlenmiş işlev) olduğunu söyler.
+Derleyiciye, belirtilen genel veri öğesinin (değişken veya nesne) bir seçim-any COMDAT (paketlenmiş bir işlev) olduğunu söyler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```
-__declspec( selectany ) declarator
-```
+> **`__declspec( selectany )`***bildirimci*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlantı zamanda, bir COMDAT'ın birden çok tanımı görülürse, bağlayıcı birini seçer ve geri kalanını atar. Bağlayıcı seçeneği [/OPT:REF](../build/reference/opt-optimizations.md) (Optimizasyonlar) seçilirse, bağlayıcı çıkışındaki tüm başvurulanamayan veri öğelerini kaldırmak için COMDAT eliminasyonu oluşur.
+Bağlantı zamanında, bir COMDAT 'ın birden fazla tanımı görülebilecekse, bağlayıcı bir tane seçer ve geri kalanını atar. Bağlayıcı seçeneği [`/OPT:REF`](../build/reference/opt-optimizations.md) (iyileştirmeler) seçiliyse, bağlayıcı çıkışındaki tüm başvurulmayan veri öğelerini kaldırmak IÇIN COMDAT eleme oluşur.
 
-Bildirimdeki global işlev veya statik yöntemlerle oluşturucular ve atamalar bir referans oluşturmaz ve /OPT:REF ortadan kaldırılmasını engellemez. Bu tür koddan kaynaklanan yan etkiler, verilere başka başvuru bulunmadığında bağlı olmamalıdır.
+Genel işlev veya bildirimdeki statik yöntemler tarafından oluşturucular ve atama bir başvuru oluşturmaz ve/OPT: REF eleme işlemini engellemez. Bu tür koddan yan etkileri, verilere yönelik başka bir başvuru yoksa bağımlı olmamalıdır.
 
-Dinamik olarak başlatılan, genel nesneler için **selectany,** başvurulmamış bir nesnenin başlatma kodunu da atar.
+Dinamik olarak başlatılmış genel nesneler için, **`selectany`** başvurulmayan bir nesnenin başlatma kodunu da atar.
 
-Genel bir veri öğesi normalde bir EXE veya DLL projesinde yalnızca bir kez baş harfe çevrilebilir. **selectany,** aynı üstbilgi birden fazla kaynak dosyada göründüğünde, üstbilgiler tarafından tanımlanan genel verilerin başlatılmasında kullanılabilir. **selectany** hem C hem de C++ derleyicilerinde kullanılabilir.
+Genel veri öğesi, normalde bir EXE veya DLL projesinde yalnızca bir kez başlatılabilir. **`selectany`** aynı üst bilgi birden fazla kaynak dosyasında göründüğünde üstbilgiler tarafından tanımlanan genel verileri başlatırken kullanılabilir. **`selectany`** Hem C hem de C++ derleyicilerde kullanılabilir.
 
 > [!NOTE]
-> **selectany** yalnızca dışarıdan görünen genel veri öğelerinin gerçek başlatılmasına uygulanabilir.
+> **`selectany`** yalnızca dışarıdan görünür olan genel veri öğelerinin gerçek başlatmasına uygulanabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu kod, **selectany** özniteliğinin nasıl kullanılacağını gösterir:
+Bu kod, özniteliğinin nasıl kullanılacağını gösterir **`selectany`** :
 
 ```cpp
 //Correct - x1 is initialized and externally visible
@@ -75,7 +73,7 @@ __declspec(selectany) X x(1);
 
 ## <a name="example"></a>Örnek
 
-Bu kod, [/OPT:ICF](../build/reference/opt-optimizations.md) bağlayıcı seçeneğini de kullandığınızda comdat verilerinin katlandığından emin olmak için **selectany** özniteliğinin nasıl kullanılacağını gösterir. Verilerin **selectany** ile işaretlenerek **const** (salt) bir bölüme yerleştirilmesi gerektiğini unutmayın. Salt okunur bölümünü açıkça belirtmeniz gerekir.
+Bu kod, **`selectany`** bağlayıcı seçeneğini de kullandığınızda VERI COMDAT katlamasını sağlamak için özniteliğinin nasıl kullanılacağını gösterir [`/OPT:ICF`](../build/reference/opt-optimizations.md) . Verilerin **`selectany`** **`const`** (salt okunur) bir bölüm ile işaretlenmiş ve yerleştirilmiş olması gerektiğini unutmayın. Salt okunurdur bölümünü açıkça belirtmeniz gerekir.
 
 ```cpp
 // selectany2.cpp
@@ -88,9 +86,9 @@ int main() {
 }
 ```
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__declspec](../cpp/declspec.md)<br/>
+[`__declspec`](../cpp/declspec.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)

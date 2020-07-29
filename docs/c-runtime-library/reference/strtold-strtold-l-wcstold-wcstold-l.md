@@ -35,18 +35,18 @@ f1_keywords:
 - _strtold_l
 - wcstold
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-ms.openlocfilehash: ba57eed25fd8e1310b9e837c55cb1e1f7ec2b718
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 14d67153eda851edc543e6eb2ad441ef35132ee5
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912595"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213495"
 ---
 # <a name="strtold-_strtold_l-wcstold-_wcstold_l"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
 Dizeleri uzun çift duyarlıklı kayan noktalı değere dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long double strtold(
@@ -77,12 +77,12 @@ Dönüştürülecek null ile sonlandırılmış dize.
 *endptr*<br/>
 Taramayı durduran karakter işaretçisi.
 
-*locale*<br/>
+*ayarlar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strma** , kayan noktalı sayının değerini **uzun** bir **Double**olarak döndürür; bu durumda, işlevin bir taşmaya neden olacağı durumlar dışında, işlev +/-**HUGE_VALL**döndürür. **HUGE_VALL** işareti, gösterilemeyen değerin işaretiyle eşleşir. Hiçbir dönüştürme gerçekleştirilemiyorsa veya bir yetersiz kalması durumunda **strbildirilir** 0 döndürür.
+**strtend** , kayan noktalı sayının değerini olarak döndürür **`long double`** ; Bu durumda, işlevin bir taşmaya neden olacağı durumlar dışında, işlev +/-**HUGE_VALL**döndürür. **HUGE_VALL** işareti, gösterilemeyen değerin işaretiyle eşleşir. Hiçbir dönüştürme gerçekleştirilemiyorsa veya bir yetersiz kalması durumunda **strbildirilir** 0 döndürür.
 
 **wcstold** , **strıse**'ye bir değer döndürür. Her iki işlev için de **errno** , taşma veya yetersiz kalması durumunda ve [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrıldığında **ERANGE** olarak ayarlanır.
 
@@ -90,7 +90,7 @@ Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her işlev, *strSource* giriş dizesini **uzun** bir **Double**'a dönüştürür. **Strsöylefunction** , bir sayının parçası olarak tanıyamadığı Ilk karakterde *strSource* dize okumasını durduruyor. Bu, Sonlandırıcı null karakteri olabilir. **Stristeninin** geniş karakterli sürümü **wcstold**; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
+Her işlev, *strSource* giriş dizesini öğesine dönüştürür **`long double`** . **Strsöylefunction** , bir sayının parçası olarak tanıyamadığı Ilk karakterde *strSource* dize okumasını durduruyor. Bu, Sonlandırıcı null karakteri olabilir. **Stristeninin** geniş karakterli sürümü **wcstold**; *strSource* bağımsız değişkeni geniş karakterli bir dizedir. Aksi takdirde, bu işlevler aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -109,14 +109,14 @@ Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*'ta taban kara
 
 [*boşluk*] [*imzala*] [*basamaklar*] [. *basamaklar*] [{**d** &#124; **d** &#124; **e** &#124; **e**} [*oturum açma*]*basamakları*]
 
-Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *işareti* artı (**+**) veya eksi (**-**); ve *rakamlar* bir veya daha fazla ondalık basamaktır. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e**veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
+Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *işareti* artı ( **+** ) ya da eksi ( **-** ); *rakamlar* bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e**veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strsöyle,** **_strtold_l**|\<Stdlib. h>|
-|**wcstold**, **_wcstold_l**|\<Stdlib. h> veya \<wchar. h>|
+|**strsöyle,** **_strtold_l**|\<stdlib.h>|
+|**wcstold**, **_wcstold_l**|\<stdlib.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -154,9 +154,9 @@ string = 3.1415926535898This stopped it
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
 [Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
 [strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>

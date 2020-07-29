@@ -1,95 +1,95 @@
 ---
-title: main işlevi ve komut satırı bağımsız değişkenleri (C++)
-description: main işlevi, bir C++ programın giriş noktasıdır.
+title: :::no-loc(main):::işlev ve komut satırı bağımsız değişkenleri (C++)
+description: :::no-loc(main):::İşlevi, bir C++ programının giriş noktasıdır.
 ms.date: 01/15/2019
 ms.assetid: c6568ee6-40ab-4ae8-aa44-c99e232f64ac
 no-loc:
-- main
-- wmain
-- inline
-- static
-- _tmain
-- void
-- exit
-- argc
-- argv
-- envp
-- CreateProcess
-- GetModuleFileName
-- char
-- wchar_t
-- extern
-ms.openlocfilehash: 33753e30304a9bb63c135979d3f20098e6b6401a
-ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
+- ':::no-loc(main):::'
+- ':::no-loc(wmain):::'
+- ':::no-loc(inline):::'
+- ':::no-loc(static):::'
+- ':::no-loc(_tmain):::'
+- ':::no-loc(void):::'
+- ':::no-loc(exit):::'
+- ':::no-loc(argc):::'
+- ':::no-loc(argv):::'
+- ':::no-loc(envp):::'
+- ':::no-loc(CreateProcess):::'
+- ':::no-loc(GetModuleFileName):::'
+- ':::no-loc(char):::'
+- ':::no-loc(wchar_t):::'
+- ':::no-loc(extern):::'
+ms.openlocfilehash: 9fe7c7a0808584a70bffa541903866b3de364e5f
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76123909"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213326"
 ---
-# <a name="opno-locmain-function-and-command-line-arguments"></a>main işlevi ve komut satırı bağımsız değişkenleri
+# <a name="no-locmain-function-and-command-line-arguments"></a>:::no-loc(main):::işlev ve komut satırı bağımsız değişkenleri
 
-Tüm C++ programlar `main` işleve sahip olmalıdır. Bir C++ *. exe* projesini main işlevi olmadan derlemeye çalışırsanız, derleyici bir hata oluşturacak. (Dinamik bağlantı kitaplıkları ve static kitaplıklarında `main` işlevi yoktur.) `main` işlevi, kaynak kodunuzun yürütmeyi başladığı yerdir, ancak bir program `main` işlevine girmeden önce, açık başlatıcıları olmayan tüm static sınıf üyeleri sıfır olarak ayarlanır. Microsoft C++'ta, genel static nesneleri `main`girişinden önce de başlatılır. Çeşitli kısıtlamalar, diğer C++ işlevler için uygulanan `main` işlevi için geçerlidir. `main` işlevi:
+Tüm C++ programlarının bir işlevi olmalıdır `:::no-loc(main):::` . Bir C++ *. exe* projesini işlev olmadan derlemeye çalışırsanız :::no-loc(main)::: , derleyici bir hata oluşturacak. (Dinamik bağlantı kitaplıkları ve :::no-loc(static)::: kitaplıklarının `:::no-loc(main):::` işlevi yoktur.) `:::no-loc(main):::`İşlev, kaynak kodunuzun yürütmeyi başladığı yerdir, ancak bir program işleve girmeden önce `:::no-loc(main):::` :::no-loc(static)::: Açık başlatıcılar olmayan tüm sınıf üyeleri sıfır olarak ayarlanır. Microsoft C++ ' da, genel :::no-loc(static)::: nesneler öğesine girişinden önce de başlatılır `:::no-loc(main):::` . Çeşitli kısıtlamalar, `:::no-loc(main):::` diğer C++ işlevleri için uygulanan işlev için geçerlidir. `:::no-loc(main):::`İşlev:
 
 - Aşırı yüklenemez (bkz. [Işlev aşırı yüklemesi](function-overloading.md)).
-- **inline** olarak bildirilemez.
-- **static** olarak bildirilemez.
+- Olarak bildirilemez **`:::no-loc(inline):::`** .
+- Olarak bildirilemez **`:::no-loc(static):::`** .
 - Alınan adresi olamaz.
 - Çağrılamaz.
 
-main işlevi, dile yerleştirilmiş olduğundan bir bildirime sahip değildir. Olsaydı, `main` için bildirim söz dizimi şöyle görünür:
+:::no-loc(main):::Dilde yerleşik olduğundan işlevin bildirimi yoktur. Olsaydı, için bildirim söz dizimi şöyle `:::no-loc(main):::` görünür:
 
 ```cpp
-int main();
-int main(int argc, char *argv[], char *envp[]);
+int :::no-loc(main):::();
+int :::no-loc(main):::(int :::no-loc(argc):::, :::no-loc(char)::: *:::no-loc(argv):::[], :::no-loc(char)::: *:::no-loc(envp):::[]);
 ```
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Kaynak dosyalarınız Unicode geniş karakterler kullanıyorsa, `main`geniş karakterli sürümü olan `wmain`kullanabilirsiniz. `wmain` için bildirim sözdizimi şöyledir:
+Kaynak dosyalarınız Unicode genelinde :::no-loc(char)::: acters erişim kullanıyorsa, `:::no-loc(wmain):::` ' nin geniş acter sürümü olan ' yi kullanabilirsiniz :::no-loc(char)::: `:::no-loc(main):::` . İçin bildirim sözdizimi `:::no-loc(wmain):::` aşağıdaki gibidir:
 
 ```cpp
-int wmain( );
-int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
+int :::no-loc(wmain):::( );
+int :::no-loc(wmain):::(int :::no-loc(argc):::, :::no-loc(wchar_t)::: *:::no-loc(argv):::[], :::no-loc(wchar_t)::: *:::no-loc(envp):::[]);
 ```
 
-Ayrıca, Tchar. h içinde tanımlanan `_tmain`de kullanabilirsiniz. _UNICODE tanımlanmadığı müddetçe `_tmain` `main` çözümlenir. Bu durumda, `_tmain` `wmain`çözümlenmektedir.
+`:::no-loc(_tmain):::`T. h içinde tanımlanan öğesini de kullanabilirsiniz :::no-loc(char)::: . `:::no-loc(_tmain):::``:::no-loc(main):::`_UNICODE tanımlanmadığı müddetçe olarak çözümlenir. Bu durumda, `:::no-loc(_tmain):::` olarak çözümlenir `:::no-loc(wmain):::` .
 
-Dönüş değeri belirtilmemişse, derleyici bir dönüş değeri olarak sıfır sağlar. Alternatif olarak, `main` ve `wmain` işlevleri döndürülen **void** (dönüş değeri yok) olarak da bildirilemez. **void** döndüren `main` veya `wmain` bildirirseniz, bir [Return](../cpp/return-statement-in-program-termination-cpp.md) ifadesini kullanarak üst işleme veya işletim sistemine bir exit kodu geri dönemezsiniz. `main` veya `wmain` **void** olarak bildirildiği zaman bir exit kodu döndürmek için [exit](../cpp/exit-function.md) işlevini kullanmanız gerekir.
+Dönüş değeri belirtilmemişse, derleyici bir dönüş değeri olarak sıfır sağlar. Alternatif olarak, `:::no-loc(main):::` ve `:::no-loc(wmain):::` işlevleri döndüren **`:::no-loc(void):::`** (dönüş değeri yok) olarak bildirilemez. `:::no-loc(main):::`Öğesini bildirir veya `:::no-loc(wmain):::` iade ederseniz **`:::no-loc(void):::`** , :::no-loc(exit)::: bir [dönüş](../cpp/return-statement-in-program-termination-cpp.md) ifadesini kullanarak bir kodu üst işleme veya işletim sistemine geri dönemezsiniz. :::no-loc(exit):::Veya olarak bildirildiği zaman bir kod döndürmek için `:::no-loc(main):::` `:::no-loc(wmain):::` **`:::no-loc(void):::`** işlevini kullanmanız gerekir [:::no-loc(exit):::](../cpp/:::no-loc(exit):::-function.md) .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="command-line-arguments"></a>Komut satırı bağımsız değişkenleri
 
-`main` veya `wmain` bağımsız değişkenleri, bağımsız değişkenlerin ve isteğe bağlı olarak ortam değişkenlerine erişimin uygun komut satırı ayrıştırmasını sağlar. `argc` ve `argv` türleri, dil tarafından tanımlanır. `argc`, `argv`ve `envp` adları geleneksel olarak bulunur, ancak bunları dilediğiniz gibi adlandırabilirsiniz.
+Bağımsız değişkenlerin `:::no-loc(main):::` `:::no-loc(wmain):::` ve isteğe bağlı olarak, ortam değişkenlerine erişim için uygun komut satırı ayrıştırmasını veya buna izin verir. `:::no-loc(argc):::`Ve türleri `:::no-loc(argv):::` dil tarafından tanımlanır. , `:::no-loc(argc):::` Ve adları `:::no-loc(argv):::` `:::no-loc(envp):::` geleneksel olarak bulunur, ancak bunları dilediğiniz gibi adlandırabilirsiniz.
 
 ```cpp
-int main( int argc, char* argv[], char* envp[]);
-int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
+int :::no-loc(main):::( int :::no-loc(argc):::, :::no-loc(char):::* :::no-loc(argv):::[], :::no-loc(char):::* :::no-loc(envp):::[]);
+int :::no-loc(wmain):::( int :::no-loc(argc):::, :::no-loc(wchar_t):::* :::no-loc(argv):::[], :::no-loc(wchar_t):::* :::no-loc(envp):::[]);
 ```
 
 Bağımsız değişken tanımları aşağıdaki gibidir:
 
-*argc*<br/>
-*argv* ' de izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı. *argc* parametresi her zaman 1 ' den büyük veya eşittir.
+*:::no-loc(argc):::*<br/>
+İçinde izleyen bağımsız değişkenlerin sayısını içeren bir tamsayı *:::no-loc(argv):::* . *:::no-loc(argc):::* Parametresi her zaman 1 ' den büyük veya eşittir.
 
-*argv*<br/>
-Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural gereği, `argv[0]` programın çağrıldığı komuttur, `argv[1]` ilk komut satırı bağımsız değişkenidir ve bu nedenle, her zaman NULL olan `argv[argc]`kadar olur. Komut satırı işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) .
+*:::no-loc(argv):::*<br/>
+Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kuralına göre, `:::no-loc(argv):::[0]` programın çağrıldığı komuttur, `:::no-loc(argv):::[1]` ilk komut satırı bağımsız değişkeni, ve `:::no-loc(argv):::[:::no-loc(argc):::]` Bu nedenle her zaman null olan. Komut satırı işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) .
 
-İlk komut satırı bağımsız değişkeni her zaman `argv[1]` ve en son bir `argv[argc - 1]`.
+İlk komut satırı bağımsız değişkeni her zaman `:::no-loc(argv):::[1]` ve en son bir ' dır `:::no-loc(argv):::[:::no-loc(argc)::: - 1]` .
 
 > [!NOTE]
-> Kural gereği, `argv[0]` programın çağrıldığı komuttur. Ancak, [CreateProcess](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanarak bir işlem oluşturulabilir ve hem birinci hem de ikinci bağımsız değişkenleri (*lpApplicationName* ve *lpcommandline*) kullanıyorsanız, `argv[0]` yürütülebilir bir ad olmayabilir; yürütülebilir adı ve tam yolunu almak için [GetModuleFileName](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) kullanın.
+> Kuralına göre, `:::no-loc(argv):::[0]` programın çağrıldığı komuttur. Ancak, kullanarak bir işlem oluşturulabilir [:::no-loc(CreateProcess):::](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) ve hem birinci hem de ikinci bağımsız değişkenleri (*lpApplicationName* ve *lpCommandLine*) kullanırsanız, `:::no-loc(argv):::[0]` yürütülebilir ad olmayabilir; [:::no-loc(GetModuleFileName):::](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) yürütülebilir adı ve tam yolunu almak için kullanın.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-*envp*<br/>
-Birçok UNIX sisteminde ortak bir uzantı olan *envp* dizisi Microsoft C++'ta kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi bir NULL girdisiyle sonlandırılır. **char** (`char *envp[]`) işaretçilerin bir dizisi olarak veya **char** işaretçilerine işaretçi olarak (`char **envp`) belirtilebilir. Programınız `main`yerine `wmain` kullanıyorsa, **char** yerine **wchar_t** veri türünü kullanın. `main` ve `wmain` geçirilen ortam bloğu, geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı `putenv` veya `_wputenv`çağrısıyla değiştirirseniz, geçerli ortam (`getenv` veya `_wgetenv` tarafından döndürülen) ve `_environ` veya `_wenviron` değişkeni) değişir, ancak envp tarafından işaret edilen blok değişmeyecektir. Ortam işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) . Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.
+*:::no-loc(envp):::*<br/>
+*:::no-loc(envp):::* Bırçok UNIX sisteminde ortak bir uzantı olan dizi, Microsoft C++ ' da kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi, NULL bir girdi tarafından sona erdirildi. () İşaretçilerinden oluşan bir dizi **`:::no-loc(char):::`** `:::no-loc(char)::: *:::no-loc(envp):::[]` ya da () işaretçilerin işaretçisi olarak belirtilebilir **`:::no-loc(char):::`** `:::no-loc(char)::: **:::no-loc(envp):::` . Programınız `:::no-loc(wmain):::` yerine kullanıyorsa `:::no-loc(main):::` , **`:::no-loc(wchar_t):::`** yerine veri türünü kullanın **`:::no-loc(char):::`** . Ortam bloğu, `:::no-loc(main):::` ve `:::no-loc(wmain):::` geçerli ortamın "dondurulmuş" bir kopyasına geçirilir. Daha sonra ortamı bir veya çağrısı yoluyla değiştirirseniz `putenv` `_wputenv` , geçerli ortam ( `getenv` veya ile veya değişkeni tarafından döndürülen `_wgetenv` `_environ` `_wenviron` ) değişir ancak tarafından işaret edilen blok :::no-loc(envp)::: değişmez. Ortam işlemeyi gizleme hakkında bilgi için bkz. [komut satırı Işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) . Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.
 
 **SON Microsoft 'a özgü**
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, `main`için *argc* , *argv* ve *envp* bağımsız değişkenlerinin nasıl kullanılacağını gösterir:
+Aşağıdaki örnek *:::no-loc(argc):::* ,, *:::no-loc(argv):::* ve *:::no-loc(envp):::* bağımsız değişkenlerinin nasıl kullanılacağını gösterir `:::no-loc(main):::` :
 
 ```cpp
 // argument_definitions.cpp
@@ -98,42 +98,42 @@ Aşağıdaki örnek, `main`için *argc* , *argv* ve *envp* bağımsız değişke
 #include <string.h>
 
 using namespace std;
-int main( int argc, char *argv[], char *envp[] ) {
+int :::no-loc(main):::( int :::no-loc(argc):::, :::no-loc(char)::: *:::no-loc(argv):::[], :::no-loc(char)::: *:::no-loc(envp):::[] ) {
     int iNumberLines = 0;    // Default is no line numbers.
 
     // If /n is passed to the .exe, display numbered listing
     // of environment variables.
 
-    if ( (argc == 2) && _stricmp( argv[1], "/n" ) == 0 )
+    if ( (:::no-loc(argc)::: == 2) && _stricmp( :::no-loc(argv):::[1], "/n" ) == 0 )
          iNumberLines = 1;
 
     // Walk through list of strings until a NULL is encountered.
-    for( int i = 0; envp[i] != NULL; ++i ) {
+    for( int i = 0; :::no-loc(envp):::[i] != NULL; ++i ) {
         if( iNumberLines )
-            cout << i << ": " << envp[i] << "\n";
+            cout << i << ": " << :::no-loc(envp):::[i] << "\n";
     }
 }
 ```
 
-## <a name="parsing-c-command-line-arguments"></a>Komut C++ satırı bağımsız değişkenlerini ayrıştırma
+## <a name="parsing-c-command-line-arguments"></a>C++ komut satırı bağımsız değişkenlerini ayrıştırma
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C/C++ başlangıç kodu, işletim sistemi komut satırında verilen bağımsız değişkenleri yorumlarken aşağıdaki kuralları kullanır:
 
 - Bağımsız değişkenler boşluk veya sekme olan boşluk ile sınırlandırılmıştır.
 
-- Giriş işareti karakteri (^) bir kaçış karakteri veya sınırlayıcı olarak tanınmıyor. Karakter, programdaki `argv` dizisine geçirilmeden önce, işletim sistemindeki komut satırı ayrıştırıcısı tarafından tamamen işlenir.
+- Şapka işareti :::no-loc(char)::: (^) bir kaçış :::no-loc(char)::: veya sınırlayıcı olarak tanınmıyor. :::no-loc(char):::Acter, programdaki diziye geçirilmeden önce, işletim sistemindeki komut satırı ayrıştırıcısı tarafından tamamen işlenir `:::no-loc(argv):::` .
 
 - Çift tırnak işaretleri ("*String*") ile çevrelenen bir dize, içinde yer alan boşluk ne olursa olsun tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınmış bir dize bir bağımsız değişkene gömülebilir.
 
-- Önünde ters eğik çizgi (\\") olan çift tırnak işareti, sabit değer çift tırnak işareti karakteri (") olarak yorumlanır.
+- Önünde ters eğik çizgi (") olan bir çift tırnak işareti \\ , sabit değer çift tırnak işareti :::no-loc(char)::: (") olarak yorumlanır.
 
 - Ters eğik çizgiler, bir çift tırnak işaretinden hemen önce gelmedikleri takdirde tam olarak yorumlanır.
 
-- İki ters eğik çizgi daha sonra çift tırnak işaretiyle, bir ters eğik çizgi, her ters eğik çizgi çifti için `argv` dizisine yerleştirilir ve çift tırnak işareti bir dize sınırlayıcısı olarak yorumlanır.
+- İki ters eğik çizgi daha sonra çift tırnak işareti kullanıyorsa, bir ters eğik çizgi `:::no-loc(argv):::` her çift eğik çizgi için diziye yerleştirilir ve çift tırnak işareti dize sınırlayıcısı olarak yorumlanır.
 
-- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, her ters eğik çizgi çifti için `argv` dizisine bir ters eğik çizgi konur ve çift tırnak işareti geri kalan ters eğik çizgi ile, bir sabit değer çift tırnak işareti (") `argv`yerleştirilmesine neden olur.
+- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, her ters eğik çizgi çifti için bir ters eğik çizgi konur `:::no-loc(argv):::` ve çift tırnak işareti, yeniden :::no-loc(main)::: oluşturma ters eğik çizgiyle ("), bir sabit değer çift tırnak işaretine (") yerleştirilmesine neden olur `:::no-loc(argv):::` .
 
 ### <a name="example"></a>Örnek
 
@@ -145,17 +145,17 @@ Aşağıdaki program komut satırı bağımsız değişkenlerinin nasıl geçti�
 #include <iostream>
 
 using namespace std;
-int main( int argc,      // Number of strings in array argv
-          char *argv[],   // Array of command-line argument strings
-          char *envp[] )  // Array of environment variable strings
+int :::no-loc(main):::( int :::no-loc(argc):::,      // Number of strings in array :::no-loc(argv):::
+          :::no-loc(char)::: *:::no-loc(argv):::[],   // Array of command-line argument strings
+          :::no-loc(char)::: *:::no-loc(envp):::[] )  // Array of environment variable strings
 {
     int count;
 
     // Display each command-line argument.
     cout << "\nCommand-line arguments:\n";
-    for( count = 0; count < argc; count++ )
-         cout << "  argv[" << count << "]   "
-                << argv[count] << "\n";
+    for( count = 0; count < :::no-loc(argc):::; count++ )
+         cout << "  :::no-loc(argv):::[" << count << "]   "
+                << :::no-loc(argv):::[count] << "\n";
 }
 ```
 
@@ -163,7 +163,7 @@ Aşağıdaki tabloda, önceki listede bulunan kuralları gösteren örnek giriş
 
 ### <a name="results-of-parsing-command-lines"></a>Komut satırlarını ayrıştırma sonuçları
 
-|Komut satırı girişi|argv[1]|argv[2]|argv[3]|
+|Komut satırı girişi|:::no-loc(argv):::1|:::no-loc(argv):::iki|:::no-loc(argv):::03|
 |-------------------------|---------------|---------------|---------------|
 |`"abc" d e`|`abc`|`d`|`e`|
 |`a\\b d"e f"g h`|`a\\b`|`de fg`|`h`|
@@ -174,26 +174,26 @@ Aşağıdaki tabloda, önceki listede bulunan kuralları gösteren örnek giriş
 
 ## <a name="wildcard-expansion"></a>Joker karakter genişletmesi
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Dosya adı ve yol bağımsız değişkenlerini komut satırında belirtmek için soru işareti (?) ve yıldız işareti (*) gibi joker karakterler kullanabilirsiniz.
 
-Komut satırı bağımsız değişkenleri, `_setargv` (veya geniş karakter ortamında `_wsetargv`) adlı bir yordam tarafından işlenir. Bu, varsayılan olarak joker karakterleri `argv` dize dizisindeki ayrı dizelere genişletmez. Joker karakter genişletmeyi etkinleştirme hakkında daha fazla bilgi için bkz. [genişleyen joker bağımsız değişkenleri](../c-language/expanding-wildcard-arguments.md).
+Komut satırı bağımsız değişkenleri `_set:::no-loc(argv):::` , (veya `_wset:::no-loc(argv):::` geniş acter ortamında) adlı bir yordam tarafından işlenir :::no-loc(char)::: . Bu, varsayılan olarak joker karakterleri dize dizisindeki ayrı dizelerde genişletmez `:::no-loc(argv):::` . Joker karakter genişletmeyi etkinleştirme hakkında daha fazla bilgi için bkz. [genişleyen joker bağımsız değişkenleri](../c-language/expanding-wildcard-arguments.md).
 
 **SON Microsoft 'a özgü**
 
 ## <a name="customizing-c-command-line-processing"></a>C++ komut satırı işlemini özelleştirme
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Programınız komut satırı bağımsız değişkenleri içermiyorsa, komut satırı işlemeyi gerçekleştiren kitaplık yordamının kullanımını kaldırarak az miktarda alan kaydedebilirsiniz. Bu yordam `_setargv` olarak adlandırılır ve [joker karakter genişletmesi](../cpp/wildcard-expansion.md)bölümünde açıklanmıştır. Kullanımını bastırmak için `main` işlevini içeren dosyada hiçbir şey yapmaz ve `_setargv`adlandırın. `_setargv` çağrısı daha sonra `_setargv`tanımınız tarafından karşılanır ve kitaplık sürümü yüklenmez.
+Programınız komut satırı bağımsız değişkenleri içermiyorsa, komut satırı işlemeyi gerçekleştiren kitaplık yordamının kullanımını kaldırarak az miktarda alan kaydedebilirsiniz. Bu yordam çağrılır `_set:::no-loc(argv):::` ve [joker karakter genişletmesi](../cpp/wildcard-expansion.md)bölümünde açıklanmıştır. Kullanımını bastırmak için, işlevi içeren dosyada hiçbir şey yapmayan bir yordam tanımlayın `:::no-loc(main):::` ve bunu adlandırın `_set:::no-loc(argv):::` . Çağrısı `_set:::no-loc(argv):::` daha sonra tanımınız tarafından karşılanır `_set:::no-loc(argv):::` ve kitaplık sürümü yüklenmez.
 
-Benzer şekilde, ortam tablosuna hiçbir daha `envp` bağımsız değişkeni aracılığıyla erişemiyorsanız, ortam işleme yordamının `_setenvp`yerine, kendi boş bir yordamını sağlayabilirsiniz. `_setargv` işlevinde olduğu gibi, `_setenvp` **"C"extern** olarak bildirilmelidir.
+Benzer şekilde, ortam tablosuna hiçbir `:::no-loc(envp):::` daha bağımsız değişken aracılığıyla erişemiyorsanız, ortam işleme yordamının yerine, kendi boş bir yordamını sağlayabilirsiniz `_set:::no-loc(envp):::` . İşlevinde olduğu gibi `_set:::no-loc(argv):::` , `_set:::no-loc(envp):::` ** :::no-loc(extern)::: "C"** olarak bildirilmelidir.
 
-Programınız, C çalışma zamanı kitaplığındaki `spawn` veya `exec` ailesinden bir yordam çağrısı yapabilir. Bu yordam, bir ortamı üst işlemden alt işleme geçirmek için kullanıldığından, ortam işleme yordamını gizlemez.
+Programınız, `spawn` `exec` C çalışma zamanı kitaplığındaki veya yordam ailesine çağrı yapabilir. Bu yordam, bir ortamı üst işlemden alt işleme geçirmek için kullanıldığından, ortam işleme yordamını gizlemez.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Temel Kavramlar](../cpp/basic-concepts-cpp.md)
+[Temel kavramlar](../cpp/basic-concepts-cpp.md)

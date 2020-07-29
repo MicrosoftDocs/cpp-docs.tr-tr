@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4364
 ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
-ms.openlocfilehash: 79c8809b4de9d6853aaacec4283bf01d0e89305e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5423a5525f9bef4d949bfee2de058fe19d0ec181
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187108"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87220047"
 ---
 # <a name="compiler-warning-level-1-c4364"></a>Derleyici Uyarısı (düzey 1) C4364
 
-\#, daha önce as_friend özniteliği olmadan konumda (line_number) görülen ' dosya ' derlemesi için kullanılıyor; as_friend uygulanmadı
+\#daha önce as_friend özniteliği olmadan konumunda (line_number) görülen ' dosya ' derlemesi için kullanılıyor; as_friend uygulanmadı
 
-Verilen bir meta veri dosyası için bir `#using` yönergesi tekrarlandı, ancak `as_friend` niteleyicisi ilk oluşumda kullanılmadı; Derleyici ikinci `as_friend`yoksayacaktır.
+`#using`Belirtilen meta veri dosyası için bir yönerge tekrarlandı, ancak **`as_friend`** niteleyici ilk oluşumda kullanılmadı; derleyici ikincisini yoksayacak **`as_friend`** .
 
-Daha fazla bilgi için bkz. [arkadaş derlemelerC++()](../../dotnet/friend-assemblies-cpp.md).
+Daha fazla bilgi için bkz. [arkadaş derlemeler (C++)](../../dotnet/friend-assemblies-cpp.md).
 
 ## <a name="example"></a>Örnek
 

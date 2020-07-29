@@ -1,5 +1,5 @@
 ---
-title: Platform::Nesne Sınıfı
+title: 'Platform:: Object sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -12,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: 8300ec484bdb58919ce8e450b706dd07c275ceee
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dded4602eda9653f50d26ef1b4aae86af96a262b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363681"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213040"
 ---
-# <a name="platformobject-class"></a>Platform::Nesne Sınıfı
+# <a name="platformobject-class"></a>Platform:: Object sınıfı
 
-Windows Runtime uygulamalarında ref sınıfları ve ref structs için ortak davranış sağlar. Tüm ref sınıfı ve ref struct örnekleri dolaylı olarak Platform::Object^ dönüştürülebilir ve sanal ToString yöntemini geçersiz kılabilir.
+Windows Çalışma Zamanı uygulamalarında ref sınıfları ve başvuru yapıları için ortak davranış sağlar. Tüm ref sınıfı ve ref struct örnekleri, dolaylı olarak platform:: Object ^ türüne dönüştürülebilir ve sanal ToString metodunu geçersiz kılabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,19 +33,19 @@ public ref class Object : Object
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Nesne::Nesne](#ctor)|Nesne sınıfının yeni bir örneğini başolarak adlandırır.|
+|[Object:: Object](#ctor)|Nesne sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Nesne::Eşittir](#equals)|Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.|
-|[Nesne::GetHashCode](#gethashcode)|Bu örneğe ilişkin karma kodu döndürür.|
-|[Nesne::ReferenceEquals](#referenceequals)|Belirtilen Nesne örneklerinin aynı örnek olup olmadığını belirler.|
+|[Nesne:: Equals](#equals)|Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.|
+|[Nesne:: GetHashCode](#gethashcode)|Bu örneğe ilişkin karma kodu döndürür.|
+|[Nesne:: ReferenceEquals](#referenceequals)|Belirtilen nesne örneklerinin aynı örnek olup olmadığını belirler.|
 |[ToString](#tostring)|Geçerli nesneyi temsil eden dizeyi döndürür. Geçersiz kılınabilir.|
-|[GetType](#gettype)|Bir [Platform alır::Geçerli](../cppcx/platform-type-class.md) örneği açıklayan tür.|
+|[GetType](#gettype)|Geçerli örneği açıklayan bir [Platform:: Type](../cppcx/platform-type-class.md) alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,15 +55,15 @@ public ref class Object : Object
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Başlık:** vccorlib.h
+**Üstbilgi:** vccorlib. h
 
-**Ad alanı:** Platform
+**Ad alanı:** Platformunun
 
-## <a name="objectequals-method"></a><a name="equals"></a>Nesne::Eşittir Yöntemi
+## <a name="objectequals-method"></a><a name="equals"></a>Object:: Equals yöntemi
 
 Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool Equals(
@@ -78,11 +78,11 @@ Karşılaştırma yapılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-nesneler eşitse **doğru,** aksi takdirde **yanlış**.
+**`true`** nesneler eşitse, tersi durumda **`false`** .
 
-## <a name="objectgethashcode-method"></a><a name="gethashcode"></a>Nesne::GetHashCode Yöntemi
+## <a name="objectgethashcode-method"></a><a name="gethashcode"></a>Object:: GetHashCode yöntemi
 
-Com `IUnknown`nesnesi yse bu örnek için * kimlik değerini veya com nesnesi değilse hesaplanmış karma değeri döndürür.
+`IUnknown`Bu örnek için BIR com nesnesi veya BIR com nesnesi değilse hesaplanan karma değeri olan * kimlik değerini döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -92,15 +92,15 @@ public:int GetHashCode();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu nesneyi benzersiz olarak tanımlayan sayısal bir değer.
+Bu nesneyi benzersiz bir şekilde tanımlayan sayısal bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Haritalardaki nesneler için anahtarlar oluşturmak için GetHashCode'u kullanabilirsiniz. Karma kodları [Nesne::Equals'ı](#equals)kullanarak karşılaştırabilirsiniz. Kod yolu son derece `GetHashCode` kritikse ve `Equals` yeterince hızlı değilse, temel COM katmanına `IUnknown` düşebilir ve yerel işaretçi karşılaştırmaları yapabilirsiniz.
+Eşlemlerdeki nesneler için anahtar oluşturmak üzere GetHashCode kullanabilirsiniz. Karma kodlarını, [nesne:: Equals](#equals)kullanarak karşılaştırabilirsiniz. Kod yolu son derece kritiktir ve `GetHashCode` `Equals` yeterince hızlı değilse, temel alınan com katmanına açılır ve yerel `IUnknown` işaretçi karşılaştırmaları yapabilirsiniz.
 
-## <a name="objectgettype-method"></a><a name="gettype"></a>Nesne::GetType Yöntemi
+## <a name="objectgettype-method"></a><a name="gettype"></a>Object:: GetType yöntemi
 
-Platform [döndürür::Bir](../cppcx/platform-type-class.md) nesnenin çalışma zamanı türünü açıklayan nesne yazın.
+Bir nesnenin çalışma zamanı türünü açıklayan bir [Platform:: Type](../cppcx/platform-type-class.md) nesnesi döndürür.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -110,23 +110,23 @@ Object::GetType();
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-[Bir Platform::Nesnenin](../cppcx/platform-type-class.md) çalışma zamanı türünü açıklayan nesne yazın.
+Nesnenin çalışma zamanı türünü açıklayan bir [Platform:: Type](../cppcx/platform-type-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Statik [Tür::GetTypeCode](../cppcx/platform-type-class.md#gettypecode) bir Platform almak için [kullanılabilir::Geçerli](../cppcx/platform-typecode-enumeration.md) türü temsil eden TypeCode Numaralandırma değeri. Bu, çoğunlukla yerleşik türleri için yararlıdır. [Platform::String](../cppcx/platform-string-class.md) is Object (1) dışında herhangi bir ref sınıfının tür kodudur.
+Statik [tür:: GetTypeCode](../cppcx/platform-type-class.md#gettypecode) , geçerli türü temsil eden bir [Platform:: TypeCode numaralandırma](../cppcx/platform-typecode-enumeration.md) değeri almak için kullanılabilir. Bu, çoğunlukla yerleşik türler için yararlıdır. [Platform:: String](../cppcx/platform-string-class.md) 'in yanı sıra herhangi bir ref sınıfı için tür kodu Object (1).
 
-[Windows:UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) sınıfı, Windows API'lerinde Windows bileşenleri ve uygulamalar arasında tür bilgilerini aktarmanın dilden bağımsız bir yolu olarak kullanılır. T[Platformu::Type Class](../cppcx/platform-type-class.md) arasında `Type` dönüştürme için `TypeName`işleçleri vardır.
+Windows [:: UI:: XAML:: Interop:: TypeName](/uwp/api/windows.ui.xaml.interop.typename) sınıfı Windows API 'lerinde Windows bileşenleri ve uygulamalar arasında tür bilgilerini geçirmenin dilden bağımsız bir yolu olarak kullanılır. T[Platform:: Type sınıfında](../cppcx/platform-type-class.md) ve arasında dönüştürme işleçleri vardır `Type` `TypeName` .
 
-Örneğin XAML sayfaları `Platform::Type` arasında gezinirken bir sınıf adı için bir nesne döndürmek için [typeid](../extensions/typeid-cpp-component-extensions.md) işleci kullanın:
+Sınıf adı için bir nesne döndürmek için [TypeId](../extensions/typeid-cpp-component-extensions.md) işlecini kullanın `Platform::Type` , örneğin XAML sayfaları arasında gezinirken:
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## <a name="objectobject-constructor"></a><a name="ctor"></a>Nesne::Nesne Oluşturucu
+## <a name="objectobject-constructor"></a><a name="ctor"></a>Object:: Object Oluşturucusu
 
-Nesne sınıfının yeni bir örneğini başolarak adlandırır.
+Nesne sınıfının yeni bir örneğini başlatır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -134,11 +134,11 @@ Nesne sınıfının yeni bir örneğini başolarak adlandırır.
 public:Object();
 ```
 
-## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a>Nesne::ReferenceEquals Yöntemi
+## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a>Object:: ReferenceEquals yöntemi
 
-Belirtilen Nesne örneklerinin aynı örnek olup olmadığını belirler.
+Belirtilen nesne örneklerinin aynı örnek olup olmadığını belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2);
@@ -154,9 +154,9 @@ Karşılaştırma yapılacak ikinci nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-iki nesne aynıysa **doğrudur;** aksi takdirde, **yanlış**.
+**`true`** iki nesne aynı ise, Aksi takdirde, **`false`** .
 
-## <a name="objecttostring-method-ccx"></a><a name="tostring"></a>Nesne::ToString Yöntemi (C++/CX)
+## <a name="objecttostring-method-ccx"></a><a name="tostring"></a>Object:: ToString yöntemi (C++/CX)
 
 Geçerli nesneyi temsil eden dizeyi döndürür.
 
@@ -169,7 +169,7 @@ virtual String^ ToString();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli nesneyi temsil eden dize. Ref sınıfınızda veya yapınızda özel bir dize iletisi sağlamak için bu yöntemi geçersiz kılabilirsiniz:
+Geçerli nesneyi temsil eden dize. Başvuru sınıfınıza veya yapısına özel bir dize iletisi sağlamak için bu yöntemi geçersiz kılabilirsiniz:
 
 ```cpp
 public ref class Tree sealed
@@ -185,6 +185,6 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform İsim Alanı](platform-namespace-c-cx.md)<br/>
-[Platform::Type Sınıfı](platform-type-class.md)<br/>
-[Tür Sistemi](type-system-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)<br/>
+[Platform:: Type sınıfı](platform-type-class.md)<br/>
+[Tür sistemi](type-system-c-cx.md)

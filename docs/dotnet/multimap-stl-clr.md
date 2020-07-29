@@ -97,28 +97,28 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: 3dfe329d-a078-462a-b050-7999ce6110ad
-ms.openlocfilehash: 5175aba55a61cb54bbb5b941bb9b78f06a1b4b25
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a2491b5c9e3c95a805d69265caf3267fd1e9c8c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80208536"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212936"
 ---
 # <a name="multimap-stlclr"></a>çoklu eşleme (STL/CLR)
 
-Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Öğe dizisini, her biri bir öğe depolayan (neredeyse) dengeli sıralı düğüm ağacı olarak yönetmek için kapsayıcı `multimap` kullanırsınız. Bir öğesi, sırası sıralamak için bir anahtardan ve Ride için bir eşlenen değer içerir.
+Şablon sınıfı, çift yönlü erişime sahip olan öğelerin değişen uzunluklu bir dizisini denetleyen bir nesneyi tanımlar. Öğe `multimap` dizisini, her biri bir öğe depolayan (neredeyse) dengeli sıralı düğüm ağacı olarak yönetmek için kapsayıcısını kullanırsınız. Bir öğesi, sırası sıralamak için bir anahtardan ve Ride için bir eşlenen değer içerir.
 
-Aşağıdaki açıklamada `GValue` şöyle olur:
+Aşağıdaki açıklamada, `GValue` ile aynıdır:
 
 `Microsoft::VisualC::StlClr::GenericPair<GKey, GMapped>`
 
 burada:
 
-`GKey`, ikinci değer bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda `Key^`
+`GKey`, ikinci bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda`Key^`
 
-`GMapped`, ikincisi bir başvuru türü olmadığı sürece *eşlenir* ile aynıdır, bu durumda `Mapped^`
+`GMapped`, ikincisi bir başvuru türü olmadığı sürece *eşlenme* ile aynıdır, bu durumda`Mapped^`
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -137,21 +137,21 @@ template<typename Key,
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar*<br/>
+*Key*<br/>
 Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
-*Eşlendiği*<br/>
+*Mapped*<br/>
 Denetlenen dizideki bir öğenin ek bileşen türü.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<clienext/Map >
+**Üst bilgi:**\<cliext/map>
 
 **Ad alanı:** cliext
 
 ## <a name="declarations"></a>Bildirimler
 
-|Tür Tanımlaması|Açıklama|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[multimap::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[multimap::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
@@ -197,12 +197,12 @@ Denetlenen dizideki bir öğenin ek bileşen türü.
 |İşleç|Açıklama|
 |--------------|-----------------|
 |[multimap::operator= (STL/CLR)](#op_as)|Denetlenen sırayı değiştirir.|
-|[operator!= (multimap) (STL/CLR)](#op_neq)|`multimap` nesnenin başka bir `multimap` nesnesine eşit olup olmadığını belirler.|
-|[operator< (multimap) (STL/CLR)](#op_lt)|`multimap` nesnenin başka bir `multimap` nesnesinden küçük olup olmadığını belirler.|
-|[operator<= (multimap) (STL/CLR)](#op_lteq)|`multimap` nesnenin başka bir `multimap` nesnesinden küçük veya ona eşit olup olmadığını belirler.|
-|[operator== (multimap) (STL/CLR)](#op_eq)|`multimap` nesnenin başka bir `multimap` nesnesine eşit olup olmadığını belirler.|
-|[operator> (multimap) (STL/CLR)](#op_gt)|`multimap` nesnenin başka bir `multimap` nesnesinden büyük olup olmadığını belirler.|
-|[operator>= (multimap) (STL/CLR)](#op_gteq)|`multimap` nesnenin başka bir `multimap` nesnesinden büyük veya ona eşit olup olmadığını belirler.|
+|[işleç! = (multimap) (STL/CLR)](#op_neq)|Bir `multimap` nesnenin başka bir nesneye eşit olup olmadığını belirler `multimap` .|
+|[operator< (multimap) (STL/CLR)](#op_lt)|Bir `multimap` nesnenin başka bir nesneden daha az olup olmadığını belirler `multimap` .|
+|[işleç<= (multimap) (STL/CLR)](#op_lteq)|Bir `multimap` nesnenin başka bir nesneden küçük veya ona eşit olup olmadığını belirler `multimap` .|
+|[operator = = (multimap) (STL/CLR)](#op_eq)|Bir `multimap` nesnenin başka bir nesneye eşit olup olmadığını belirler `multimap` .|
+|[işleç> (multimap) (STL/CLR)](#op_gt)|Bir `multimap` nesnenin başka bir nesneden daha büyük olup olmadığını belirler `multimap` .|
+|[işleç>= (multimap) (STL/CLR)](#op_gteq)|Bir `multimap` nesnenin başka bir nesneden büyük veya ona eşit olup olmadığını belirler `multimap` .|
 
 ## <a name="interfaces"></a>Arabirimler
 
@@ -213,33 +213,33 @@ Denetlenen dizideki bir öğenin ek bileşen türü.
 |<xref:System.Collections.ICollection>|Öğe grubunu saklayın.|
 |<xref:System.Collections.Generic.IEnumerable%601>|Yazılı öğeler aracılığıyla sıralama.|
 |<xref:System.Collections.Generic.ICollection%601>|Türü belirtilmiş öğelerin grubunu koruyun.|
-|\<anahtar, değer >|Genel kapsayıcıyı koruyun.|
+|Iree\<Key, Value>|Genel kapsayıcıyı koruyun.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Nesnesi, tek tek düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı bir (neredeyse) dengeli ağaca öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesnesi, [multimap:: key_compare (STL/CLR)](../dotnet/multimap-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Multimap 'i oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırma `operator<(key_type, key_type)`. Bu saklı nesneye [multimap:: key_comp (STL/CLR)](../dotnet/multimap-key-comp-stl-clr.md)`()`üye işlevini çağırarak erişirsiniz.
+Nesnesi, [multimap:: key_compare (STL/CLR)](../dotnet/multimap-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Multimap 'i oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<(key_type, key_type)` . Bu saklı nesneye [multimap:: key_comp (STL/CLR)](../dotnet/multimap-key-comp-stl-clr.md)üye işlevini çağırarak erişirsiniz `()` .
 
-Bu tür bir temsilci nesnesi [multimap:: key_type (STL/CLR)](../dotnet/multimap-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y`:
+Bu tür bir temsilci nesnesi [multimap:: key_type (STL/CLR)](../dotnet/multimap-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y` :
 
-`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
+`key_comp()(X, Y)`her çağrıda aynı Boole sonucunu döndürür.
 
-`key_comp()(X, Y)` true ise, `key_comp()(Y, X)` false olmalıdır.
+`key_comp()(X, Y)`True ise, false olmalıdır `key_comp()(Y, X)` .
 
-`key_comp()(X, Y)` true ise, `X` `Y`önce sipariş olarak kabul edilir.
+`key_comp()(X, Y)`True ise, daha `X` önce sipariş olarak kabul edilir `Y` .
 
-`!key_comp()(X, Y) && !key_comp()(Y, X)` true ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
+`!key_comp()(X, Y) && !key_comp()(Y, X)`True ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
 
-Denetlenen dizide `Y` önce gelen herhangi bir öğe `X` için, `key_comp()(Y, X)` false olur. (Varsayılan temsilci nesnesi için, anahtarlar hiçbir şekilde değerde azalmayın.) Şablon sınıfı [eşlemesinin (STL/CLR)](../dotnet/map-stl-clr.md)aksine, şablon sınıfı `multimap` bir nesne, tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
+`X`Denetlenen dizide önündeki tüm öğeler için `Y` `key_comp()(Y, X)` false olur. (Varsayılan temsilci nesnesi için, anahtarlar hiçbir şekilde değerde azalmayın.) Şablon sınıfı [eşlemesinin (STL/CLR)](../dotnet/map-stl-clr.md)aksine, şablon sınıfının bir nesnesi `multimap` tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
 
 Her öğe ayrı bir anahtar ve eşlenmiş bir değer içerir. Sıra, dizi içindeki öğe sayısının logaritmasına orantılı bir şekilde bir dizi işlem içeren rastgele bir öğenin aranması, eklenmesine ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Multimap çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`()`tarafından döndürülen Yineleyici öğesine karşılık gelir. Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir çoklu eşleme yineleyicisini artırabilirsiniz ve daha sonra `end()`eşit olarak karşılaştırırsınız. Ancak `end()`tarafından döndürülen yineleyici başvurusu oluşturamazsınız.
+Multimap çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir çoklu harita yineleyicisini artırabilirsiniz ve daha sonra eşittir ile karşılaştırılır `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Bir multimap öğesine doğrudan sayısal konumu verildiğinde (rastgele erişim Yineleyici gerektiren) başvurmayacağınızı unutmayın.
 
-Çoklu eşleme Yineleyici, ilişkili çok eşleme düğümüne bir tanıtıcı depolar, bu da ilişkili kapsayıcısına bir tutamacı depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Birden çok eşleme yineleyicisi, ilişkili multimap düğümü bazı multimap ile ilişkilendirildiği sürece geçerli kalır. Ayrıca, geçerli bir yineleyici bir şekilde başvurulmasını sağlar--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. `end()`eşit olmadığı sürece.
+Çoklu eşleme Yineleyici, ilişkili çok eşleme düğümüne bir tanıtıcı depolar, bu da ilişkili kapsayıcısına bir tutamacı depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Birden çok eşleme yineleyicisi, ilişkili multimap düğümü bazı multimap ile ilişkilendirildiği sürece geçerli kalır. Üstelik, geçerli bir yineleyici bir şekilde gönderilir--bunu, oluşturduğu öğe değerine erişmek veya değiştirmek için kullanabilirsiniz. buna eşit olmadığı sürece `end()` .
 
 Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağırır. Kapsayıcının yok edilmesi tüm öğeleri siler. Bu nedenle, öğe türü bir başvuru sınıfı olan bir kapsayıcı, kapsayıcının hiçbir öğenin etkin olmamasını sağlar. Ancak, bir işleç kapsayıcısının *öğelerini yok ettiğini* unutmayın.
 
@@ -257,7 +257,7 @@ iterator begin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir çift yönlü yineleyiciyi döndürür. Denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için bunu kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durumu değişebilir.
+Üye işlevi, denetimli sıranın ilk öğesini veya boş bir dizinin sonunun ötesinde bir çift yönlü yineleyiciyi döndürür. Denetlenen dizinin başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -308,7 +308,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, multimap:: [BEGIN](../dotnet/multimap-begin-stl-clr.md) (stl/clr)`(` multimap:: [End](../dotnet/multimap-end-stl-clr.md) (stl/clr)`())``(),` multimap:: [Erase](../dotnet/multimap-erase-stl-clr.md) (STL/CLR) etkin şekilde çağırır. Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi, [multimap:: Erase (STL/CLR)](../dotnet/multimap-erase-stl-clr.md) `(` [multimap:: BEGIN (STL/CLR)](../dotnet/multimap-begin-stl-clr.md) `(),` [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)öğesini etkin olarak çağırıyor `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -366,7 +366,7 @@ typedef T2 const_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetlenen dizi için bir sabit çift yönlü Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T2`.
+Türü, `T2` Denetlenen dizi için bir sabit çift yönlü yineleyiciyi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -453,7 +453,7 @@ typedef T4 const_reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için sabit bir ters Yineleyici olarak kullanılabilecek belirtilmemiş türde `T4` bir nesne tanımlar.
+Türü, `T4` denetimli sıra için sabit bir ters Yineleyici işlevi görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -487,7 +487,7 @@ int main()
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 size_type count(key_type key);
@@ -603,7 +603,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Multimap:: size (STL/CLR)](../dotnet/multimap-size-stl-clr.md)`() == 0`eşdeğerdir. Multimap 'in boş olup olmadığını test etmek için bunu kullanırsınız.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Multimap:: size (STL/CLR)](../dotnet/multimap-size-stl-clr.md)eşdeğerdir `() == 0` . Multimap 'in boş olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -700,7 +700,7 @@ int main()
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 pair_iter_iter equal_range(key_type _Keyval);
@@ -713,7 +713,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntemi, multimap:: [lower_bound (STL](../dotnet/multimap-lower-bound-stl-clr.md) /clr)`(_Keyval),` [multimap:: upper_bound (stl/clr)](../dotnet/multimap-upper-bound-stl-clr.md)`(_Keyval)``-` yineleyiciler çifti döndürür. Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Yöntem, yineleyiciler `-` [multimap:: lower_bound (STL/CLR)](../dotnet/multimap-lower-bound-stl-clr.md) `(_Keyval),` [multimap:: upper_bound (STL/CLR)](../dotnet/multimap-upper-bound-stl-clr.md)çiftini döndürür `(_Keyval)` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -761,7 +761,7 @@ equal_range(L'x') empty = True
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -785,9 +785,9 @@ Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetimli sıranın öğesini kaldırır ve bu tür bir öğe yoksa, öğesinden sonra kalan ilk öğeyi atayan bir yineleyici döndürür ya da [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`()`. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve bu tür bir öğe yoksa, öğesinden sonra kalan ilk öğeyi atayan bir yineleyici döndürür ya da [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
-İkinci üye işlevi, [`first`, `last`) aralığındaki denetimli sıranın öğelerini kaldırır ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici döndürür veya böyle bir öğe yoksa `end()`. Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
+İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
 Üçüncü üye işlevi, anahtarı *anahtara*denk sıralama değerine sahip denetimli dizinin herhangi bir öğesini kaldırır ve kaldırılan öğe sayısının sayısını döndürür. Bu anahtarı, belirtilen bir anahtarla eşleşen tüm öğeleri kaldırmak ve saymak için kullanırsınız.
 
@@ -854,7 +854,7 @@ erase(L'e') = 1
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator find(key_type key);
@@ -867,7 +867,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`()`döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi halde, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1098,7 +1098,7 @@ typedef GValue generic_value;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan `GValue` türünde bir nesne tanımlar.
+Tür, `GValue` Bu şablon kapsayıcı sınıfı için genel arabirimle birlikte kullanılacak saklı öğe değerini açıklayan türünde bir nesne tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1144,7 +1144,7 @@ int main()
 
 Öğeleri ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator insert(value_type val);
@@ -1179,7 +1179,7 @@ Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 İkinci üye işlevi, bir ipucu olarak *WHERE* (performansı artırmak için) ve yeni eklenen öğeyi atayan bir yineleyici döndüren bir *değer değeri olan*bir öğe ekler. Bildiğiniz bir öğeye bitişik olabilecek tek bir öğe eklemek için bunu kullanırsınız.
 
-Üçüncü üye işlevi [`first`, `last`) dizisini ekler. Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
+Üçüncü üye işlevi [,) dizisini ekler `first` `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla öğe eklemek için bunu kullanırsınız.
 
 Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
@@ -1270,7 +1270,7 @@ typedef T1 iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü, denetimli sıra için çift yönlü bir yineleyici olarak kullanılabilecek belirtilmemiş türde `T1` bir nesne tanımlar.
+Türü, `T1` denetimli sıra için çift yönlü bir yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -1468,7 +1468,7 @@ a b c
 
 Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator lower_bound(key_type key);
@@ -1481,7 +1481,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *anahtara*denk sıralamaya sahip olan denetimli dizideki ilk öğeyi `X` belirler. Böyle bir öğe yoksa, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`()`döndürür; Aksi takdirde, `X`atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, `X` denetimli dizideki, *anahtara*denk sıralamaya sahip ilk öğeyi belirler. Böyle bir öğe yoksa, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1527,7 +1527,7 @@ lower_bound(L'x')==end() = True
 
 Değer nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 static value_type make_value(key_type key, mapped_type mapped);
@@ -1543,7 +1543,7 @@ Aranacak eşlenen değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, anahtarı *anahtar* olan ve eşlenmiş değeri *eşlenmiş*bir `value_type` nesnesi döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
+Üye işlevi, `value_type` anahtarı *anahtar* olan ve eşlenmiş değeri *eşlenmiş*bir nesne döndürür. Diğer birçok üye işlevi ile kullanmak üzere uygun bir nesne oluşturmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1621,7 +1621,7 @@ int main()
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 multimap();
@@ -1658,7 +1658,7 @@ Oluşturucu:
 
 `multimap();`
 
-denetlenen sırayı, varsayılan sıralama koşulu `key_compare()`, hiçbir öğesi olmadan başlatır. Varsayılan sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+Varsayılan sıralama koşulu ile denetimli sırayı öğesi olmadan başlatır `key_compare()` . Varsayılan sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
@@ -1670,25 +1670,25 @@ Oluşturucu:
 
 `multimap(multimap<Key, Mapped>% right);`
 
-[`right.begin()`, `right.end()`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Bu, varsayılan sıralama koşulu ile, multimap *nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanılır.
+[,) sırası ile denetlenen sırayı `right.begin()` `right.end()` varsayılan sıralama koşulu ile başlatır. Bu, varsayılan sıralama koşulu ile, multimap *nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanılır.
 
 Oluşturucu:
 
 `multimap(multimap<Key, Mapped>^ right);`
 
-[`right->begin()`, `right->end()`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Bu, varsayılan sıralama koşulu ile, multimap *nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanılır.
+[,) sırası ile denetlenen sırayı `right->begin()` `right->end()` varsayılan sıralama koşulu ile başlatır. Bu, varsayılan sıralama koşulu ile, multimap *nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanılır.
 
 Oluşturucu:
 
 `template<typename InIter> multimap(InIter first, InIter last);`
 
-[`first`, `last`) sırası ile denetimli sırayı varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+[,) sırası ile denetlenen sırayı `first` `last` varsayılan sıralama koşulu ile başlatır. Varsayılan sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
 `template<typename InIter> multimap(InIter first, InIter last, key_compare^ pred);`
 
-[`first`, `last`) sırası ile denetimli sırayı, sıralama koşulu *Pred*ile başlatır. Belirtilen sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+[,) sırası ile denetlenen sırayı `first` `last` , sıralama koşulu *Pred*ile başlatır. Belirtilen sıralama koşulu ile, denetimli diziyi başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 Oluşturucu:
 
@@ -1794,7 +1794,7 @@ size() = 0
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 multimap<Key, Mapped>% operator=(multimap<Key, Mapped>% right);
@@ -1807,7 +1807,7 @@ Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci nesnesine *sağ* kopyalar ve ardından `*this`döndürür. Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
+Üye işleci nesnesine *sağ* kopyalar ve ardından döndürür **`*this`** . Denetlenen diziyi, denetimli sıranın bir kopyasıyla değiştirmek için bunu *kullanırsınız.*
 
 ### <a name="example"></a>Örnek
 
@@ -1857,7 +1857,7 @@ reverse_iterator rbegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `beginning` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın başlangıcını `current` atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın son öğesini veya boş bir dizinin başlangıcının ötesinde bir ters yineleyici döndürür. Bu nedenle, `beginning` ters sıranın öğesini belirler. Doğru sırada görülen denetimli sıranın başlangıcını atayan bir yineleyici elde etmek için bunu kullanırsınız `current` , ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1953,7 +1953,7 @@ reverse_iterator rend();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, ters sıranın `end` belirler. Bu uygulamayı, geriye doğru sırada görülen denetlenen sıranın `current` sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
+Üye işlevi, denetimli sıranın başlangıcının hemen ötesinde bir ters yineleyici döndürür. Bu nedenle, `end` ters sıranın öğesini belirler. Bu uygulamayı, `current` geriye doğru sırada görülen denetlenen sıranın sonunu atayan bir yineleyici elde etmek için kullanırsınız, ancak denetlenen sıranın uzunluğu değişirse durum değişebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -2006,7 +2006,7 @@ typedef T3 reverse_iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, denetlenen sıra için ters Yineleyici olarak kullanılabilecek belirtilmemiş türdeki bir nesneyi tanımlar `T3`.
+Tür, `T3` denetlenen sıra için ters Yineleyici olarak işlev görebilecek belirtilmemiş türdeki bir nesneyi tanımlar.
 
 ### <a name="example"></a>Örnek
 
@@ -2048,7 +2048,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı hakkında bilgi için bkz. [multimap:: Empty (STL/CLR)](../dotnet/multimap-empty-stl-clr.md)`()`.
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [multimap:: Empty (STL/CLR)](../dotnet/multimap-empty-stl-clr.md) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2140,7 +2140,7 @@ end()-begin() = 3
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void swap(multimap<Key, Mapped>% right);
@@ -2153,7 +2153,7 @@ void swap(multimap<Key, Mapped>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `this` ve *sağ*arasındaki denetlenen dizileri değiştirir. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2258,7 +2258,7 @@ int main()
 
 Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 iterator upper_bound(key_type key);
@@ -2271,7 +2271,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *anahtara*denk sıralama içeren kontrollü dizide `X` son öğeyi belirler. Böyle bir öğe yoksa veya denetlenen dizideki son öğe `X`, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)`()`döndürür. Aksi takdirde, `X`ötesinde ilk öğeyi atayan bir yineleyici döndürür. Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki en son öğeyi, `X` *anahtara*denk sıralama olarak belirler. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise, [multimap:: End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)döndürür `()` ; Aksi takdirde, ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2420,7 +2420,7 @@ typedef generic_value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür `generic_value`için bir eş anlamlı.
+Tür için bir eş anlamlı `generic_value` .
 
 ### <a name="example"></a>Örnek
 
@@ -2456,7 +2456,7 @@ int main()
 
 Liste eşit değildir karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2475,7 +2475,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left == right)`döndürür. İki multimaps öğe öğesine göre karşılaştırıldığı sürece *sol* öğenin *doğru* sıralı olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(left == right)` . İki multimaps öğe öğesine göre karşılaştırıldığı sürece *sol* öğenin *doğru* sıralı olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2523,11 +2523,11 @@ int main()
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-multimap-stlclr"></a><a name="op_lt"></a>işleç&lt; (multimap) (STL/CLR)
+## <a name="operatorlt-multimap-stlclr"></a><a name="op_lt"></a>işleç &lt; (multimap) (STL/CLR)
 
 Liste karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2546,7 +2546,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi true değerini döndürür, en düşük konum için de bu `!(right[i] < left[i])` `left[i] < right[i]`true `i`. Aksi takdirde, İki multimaps öğe öğesine göre karşılaştırıldığı zaman, *sol taraftaki sola* *doğru sıralı* olup olmadığını test etmek için onu `left->size() < right->size()` döndürür.
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi takdirde, `left->size() < right->size()` İki multimaps öğe öğesine göre karşılaştırıldığı zaman, sol *right* taraftaki bir süre önce *sola* doğru sıralı olup olmadığını test etmek için bunu kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2594,11 +2594,11 @@ int main()
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-multimap-stlclr"></a><a name="op_lteq"></a>işleç&lt;= (multimap) (STL/CLR)
+## <a name="operatorlt-multimap-stlclr"></a><a name="op_lteq"></a>operator &lt; = (multimap) (STL/CLR)
 
 Küçüktür veya eşit karşılaştırma listesi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2617,7 +2617,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(right < left)`döndürür. İki multimaps öğeyi öğesine göre karşılaştırdıktan sonra *sol* öğenin *doğru* sıralı olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(right < left)` . İki multimaps öğeyi öğesine göre karşılaştırdıktan sonra *sol* öğenin *doğru* sıralı olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2669,7 +2669,7 @@ int main()
 
 Liste eşit karşılaştırması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2688,7 +2688,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her konum için `i``left[i] ==` `right[i]`için true değerini döndürür. İki multimaps öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi yalnızca *sol* ve *sağ* tarafından denetlenen diziler aynı uzunlukta ve her bir konum için aynı uzunluğa sahip olursa true değerini döndürür `i` `left[i] ==` `right[i]` . İki multimaps öğe öğesine göre karşılaştırıldığı zaman *solinin* *doğru* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2736,11 +2736,11 @@ int main()
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-multimap-stlclr"></a><a name="op_gt"></a>işleç&gt; (multimap) (STL/CLR)
+## <a name="operatorgt-multimap-stlclr"></a><a name="op_gt"></a>işleç &gt; (multimap) (STL/CLR)
 
 Karşılaştırmadan daha büyük bir liste.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2759,7 +2759,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `right` `<` `left`döndürüyor. İki multimaps öğe öğesine göre karşılaştırıldığı zaman, *sol* taraftaki *doğru* olup olmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `right` `<` `left` . İki multimaps öğe öğesine göre karşılaştırıldığı zaman, *sol* taraftaki *doğru* olup olmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2807,11 +2807,11 @@ int main()
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-multimap-stlclr"></a><a name="op_gteq"></a>işleç&gt;= (multimap) (STL/CLR)
+## <a name="operatorgt-multimap-stlclr"></a><a name="op_gteq"></a>operator &gt; = (multimap) (STL/CLR)
 
 Büyük veya eşit karşılaştırmayı listele.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<typename Key,
@@ -2830,7 +2830,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi `!(left` `<` `right)`döndürüyor. İki multimaps öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan önce sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(left` `<` `right)` . İki multimaps öğe öğesine göre karşılaştırıldığı *zaman,* *sol taraftan önce sola* doğru sıralanmadığını test etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 

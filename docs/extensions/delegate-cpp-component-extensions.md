@@ -1,5 +1,5 @@
 ---
-title: Temsilci (C++/CLI ve C++/CX)
+title: delegate (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-ms.openlocfilehash: 388ccb28c9311b4727199e6b7324771c24c2906d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 77cd17eb8c164a08af9ec783f8aba422785609b6
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172444"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219735"
 ---
-# <a name="delegate--ccli-and-ccx"></a>Temsilci (C++/CLI ve C++/CX)
+# <a name="delegate--ccli-and-ccx"></a>delegate (C++/CLI ve C++/CX)
 
 Bir işlev işaretçisini temsil eden bir tür bildirir.
 
@@ -27,13 +27,13 @@ Hem Windows Çalışma Zamanı hem de ortak dil çalışma zamanı temsilcileri 
 
 **temsilci** , bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md).
 
-Tür bir temsilciyise, derleme zamanında algılamak için, nitelik türü `__is_delegate()` kullanın. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Tür bir temsilciyise, derleme zamanında algılamak için `__is_delegate()` nitelik türünü kullanın. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
 C++/CX, aşağıdaki söz dizimine sahip temsilcileri destekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 access
@@ -48,7 +48,7 @@ delegate-type-identifier
 ### <a name="parameters"></a>Parametreler
 
 *erişmesini*<br/>
-seçim Temsilcinin **erişilebilirliği (varsayılan** ) veya **özel**olabilir. İşlev prototipi de **const** veya **volatile** anahtar sözcükleriyle nitelenme olabilir.
+seçim Temsilcinin erişilebilirliği **`public`** (varsayılan) veya olabilir **`private`** . İşlev prototipi **`const`** veya anahtar sözcükleriyle de nitelenebilir **`volatile`** .
 
 *dönüş türü*<br/>
 İşlev prototipinin dönüş türü.
@@ -56,22 +56,22 @@ seçim Temsilcinin **erişilebilirliği (varsayılan** ) veya **özel**olabilir.
 *temsilci türü tanımlayıcı*<br/>
 Belirtilen temsilci türünün adı.
 
-*parametreler*<br/>
+*parametrelere*<br/>
 Seçim İşlev prototipinin türleri ve tanımlayıcıları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temsilci ile aynı prototipi içeren bir olay bildirmek için *Delegate-Type-Identifier* kullanın. Daha fazla bilgi için bkz. [TemsilcilerC++(/CX)](../cppcx/delegates-c-cx.md).
+Temsilci ile aynı prototipi içeren bir olay bildirmek için *Delegate-Type-Identifier* kullanın. Daha fazla bilgi için bkz. [Temsilciler (C++/CX)](../cppcx/delegates-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/ZW`
+Derleyici seçeneği:`/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 Ortak dil çalışma zamanı, aşağıdaki söz dizimine sahip temsilcileri destekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 access
@@ -87,7 +87,7 @@ seçim Temsilcinin dışındaki temsilci erişilebilirliği herkese açık veya 
 *function_declaration*<br/>
 Temsilciye bağlanabilen işlevin imzası. Bir temsilcinin dönüş türü herhangi bir yönetilen tür olabilir. Birlikte çalışabilirlik nedenleriyle, bir temsilcinin dönüş türünün CLS türü olması önerilir.
 
-İlişkisiz bir temsilci tanımlamak için, *function_declaration* ilk parametresi nesnenin **Bu** işaretçisinin türü olmalıdır.
+İlişkisiz bir temsilci tanımlamak için *function_declaration* ilk parametresi **`this`** nesne işaretçisinin türü olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -97,11 +97,11 @@ Bir temsilci, statik bir yöntem gibi bir değer sınıfının bir yöntemine de
 
 Bir temsilci aşağıdaki özelliklere sahiptir:
 
-- `System::MulticastDelegate`devralır.
+- Öğesinden devralır `System::MulticastDelegate` .
 
 - İki bağımsız değişken alan bir oluşturucuya sahiptir: yönetilen sınıfa veya NULL 'a (statik bir metoda bağlama durumunda) ve belirtilen türdeki tam bir yönteme yönelik bir işaretçi.
 
-- İmzası, temsilcinin belirtilen imzasıyla eşleşen `Invoke`adlı bir yöntemi vardır.
+- `Invoke`İmzası, temsilcinin belirtilen imzasıyla eşleşen adlı bir yöntemi vardır.
 
 Bir temsilci çağrıldığında, bu işlevin işlevleri eklendiği sırada çağırılır.
 
@@ -125,7 +125,7 @@ Temsilciler hakkında daha fazla bilgi için bkz.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği: `/clr`
+Derleyici seçeneği:`/clr`
 
 ### <a name="examples"></a>Örnekler
 
@@ -202,4 +202,4 @@ in static func3 11
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

@@ -28,18 +28,18 @@ helpviewer_keywords:
 - memory allocation, arrays
 - calloc function
 ms.assetid: 17bb79a1-98cf-4096-90cb-1f9365cd6829
-ms.openlocfilehash: 76243342233ea895b947d4aa4a246b316aa8f405
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 067ce6f347f4b24ad8c85990e70fe4d79305535c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918718"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213638"
 ---
 # <a name="calloc"></a>calloc
 
 Başlatılmış öğeleri 0 olarak, bellekte bir diziyi ayırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *calloc(
@@ -50,7 +50,7 @@ void *calloc(
 
 ### <a name="parameters"></a>Parametreler
 
-*number*<br/>
+*sayı*<br/>
 Öğe sayısı.
 
 *boyutla*<br/>
@@ -58,7 +58,7 @@ Her öğenin bayt cinsinden uzunluğu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**calloc** , ayrılan alana bir işaretçi döndürür. Dönüş değeri tarafından işaret edilen depolama alanı, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garanti edilir. **Void**dışında bir türe işaretçi almak için, dönüş değerinde bir tür dönüştürme kullanın.
+**calloc** , ayrılan alana bir işaretçi döndürür. Dönüş değeri tarafından işaret edilen depolama alanı, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garanti edilir. Dışında bir türe işaretçi almak için **`void`** , dönüş değerinde bir tür dönüştürme kullanın.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -68,7 +68,7 @@ bir bellek ayırma başarısız olursa veya istenen bellek miktarı **_HEAP_MAXR
 
 Microsoft uygulamasında, *sayı* veya *Boyut* sıfırsa, **calloc** , sıfır olmayan boyuttaki ayrılmış bir blok için bir işaretçi döndürür. Döndürülen işaretçiyi okuma veya yazma girişimi tanımsız davranışa yol açar.
 
-**calloc** , *yeni işleyici modunu*ayarlamak için C++ [_set_new_mode](set-new-mode.md) işlevini kullanır. Yeni işleyici modu, hata durumunda, **calloc** ' in [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **calloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **calloc** bellek ayıramadığında, yeni işleyici yordamını aynı nedenden dolayı başarısız olduğunda **Yeni işlecin yaptığı** şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın
+**calloc** , *yeni işleyici modunu*ayarlamak için C++ [_set_new_mode](set-new-mode.md) işlevini kullanır. Yeni işleyici modu, hata durumunda, **calloc** ' in [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **calloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **calloc** bellek ayıramadığında, yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın
 
 ```C
 _set_new_mode(1);
@@ -78,7 +78,7 @@ programınızı erken veya *NewMode ile bağlayın. OBJ* (bkz. [bağlantı seçe
 
 Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **calloc** [_calloc_dbg](calloc-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-**calloc** , `__declspec(noalias)` ve `__declspec(restrict)`işlevin genel değişkenleri değiştirmeyeceği garantisini ve döndürülen işaretçinin diğer ad olmadığını belirtir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
+**calloc** , `__declspec(noalias)` ve `__declspec(restrict)` işlevin genel değişkenleri değiştirmeyeceği garantisini ve döndürülen işaretçinin diğer ad olmadığını belirtir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,7 +86,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**calloc**|\<Stdlib. h> ve \<malloc. h>|
+|**calloc**|\<stdlib.h> ve \<malloc.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -119,7 +119,7 @@ Allocated 40 long integers
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [Süz](free.md)<br/>
 [malloc](malloc.md)<br/>
 [realloc](realloc.md)<br/>

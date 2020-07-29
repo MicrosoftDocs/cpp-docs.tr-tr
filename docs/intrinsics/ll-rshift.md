@@ -8,20 +8,20 @@ helpviewer_keywords:
 - __ll_rshift intrinsic
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-ms.openlocfilehash: ad17991d84acb7e531baf9435610ebd566197a22
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 6ae750f1a8825096ee30adb01768d5603ab23a01
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217493"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219670"
 ---
 # <a name="__ll_rshift"></a>__ll_rshift
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 İlk parametre tarafından belirtilen 64 bitlik bir değeri, ikinci parametre tarafından belirtilen bir bit sayısıyla sağa kaydırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 __int64 __ll_rshift(
@@ -38,9 +38,9 @@ __int64 __ll_rshift(
 *nBit*\
 'ndaki Bit sayısı, x64 üzerindeki mod 64 ve x86 üzerinde mod 32.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Bitler tarafından `nBit` kaydırılan maske.
+Bitler tarafından kaydırılan maske `nBit` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -48,11 +48,11 @@ Bitler tarafından `nBit` kaydırılan maske.
 |---------------|------------------|
 |`__ll_rshift`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkinci parametre x64 üzerinde 64 ' den büyükse (x86 üzerinde 32), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 64 (x86 üzerinde 32) alınır. Ön ek, 64 bitlik işaretli integral türü için `long long` `__int64`bir işlem, başka bir ad olduğunu gösterir. `ll`
+İkinci parametre x64 üzerinde 64 ' den büyükse (x86 üzerinde 32), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 64 (x86 üzerinde 32) alınır. `ll`Ön ek, **`long long`** **`__int64`** 64 bitlik işaretli integral türü için bir işlem, başka bir ad olduğunu gösterir.
 
 ## <a name="example"></a>Örnek
 
@@ -78,7 +78,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 ffffffffffffff00
@@ -88,7 +88,7 @@ fffffffffffffff0
 ```
 
 > [!NOTE]
-> `_ull_rshift` Kullanıldıysa, sağa kaydırılan değerin MSB değeri sıfır olur, bu nedenle istenen sonuç negatif bir değer söz konusu olduğunda elde edilmez.
+> `_ull_rshift`Kullanıldıysa, sağa kaydırılan değerin MSB değeri sıfır olur, bu nedenle istenen sonuç negatif bir değer söz konusu olduğunda elde edilmez.
 
 **SON Microsoft 'a özgü**
 

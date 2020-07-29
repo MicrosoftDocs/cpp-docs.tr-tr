@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2243
 ms.assetid: b90065bb-d251-4ba9-8b4c-280ee13fa9c0
-ms.openlocfilehash: f5a62b1c12b94735d0383697bf7a92d12d64b21f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ab0dbe8c5595c18a01f78c22056803dce91a3f31
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757806"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212845"
 ---
 # <a name="compiler-error-c2243"></a>Derleyici hatası C2243
 
 ' type1 ' öğesinden ' type2 ' öğesine ' dönüştürme türü ' dönüştürmesi var, ancak erişilebilir değil
 
-Erişim Koruması (`protected` veya `private`), bir işaretçiden türetilmiş bir sınıfa, taban sınıfına olan işaretçiye dönüştürmeyi engelledi.
+Erişim Koruması ( **`protected`** veya **`private`** ), bir işaretçiden türetilmiş bir sınıfa, taban sınıfına olan işaretçiye dönüştürmeyi engelledi.
 
 Aşağıdaki örnek C2243 oluşturur:
 
@@ -35,4 +35,4 @@ E e;
 B *p2 = &e;
 ```
 
-`protected` veya `private` erişimi olan temel sınıflara türetilmiş sınıfın istemcileri erişemez. Bu erişim denetimi düzeyleri, temel sınıfın istemciler için görünmezlik bir uygulama ayrıntısı olduğunu göstermek için kullanılır. Türetilmiş sınıfın istemcilerinin, bir türetilmiş sınıf işaretçisinin temel sınıfa yönelik bir işaretçiye örtük dönüştürülmesine erişmesini istiyorsanız ortak türetme kullanın.
+Veya erişimi olan temel sınıflara **`protected`** **`private`** türetilmiş sınıfın istemcileri erişemez. Bu erişim denetimi düzeyleri, temel sınıfın istemciler için görünmezlik bir uygulama ayrıntısı olduğunu göstermek için kullanılır. Türetilmiş sınıfın istemcilerinin, bir türetilmiş sınıf işaretçisinin temel sınıfa yönelik bir işaretçiye örtük dönüştürülmesine erişmesini istiyorsanız ortak türetme kullanın.

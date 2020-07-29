@@ -1,5 +1,5 @@
 ---
-title: CControlBar Sınıfı
+title: CControlBar sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CControlBar
@@ -44,16 +44,16 @@ helpviewer_keywords:
 - CControlBar [MFC], m_bAutoDelete
 - CControlBar [MFC], m_pInPlaceOwner
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
-ms.openlocfilehash: c2f8ea48bf9a1f015928650085b07198b152771a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 7a08efb7cbe848ec6d8ccba57671f3ef0dc8e74c
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754789"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212572"
 ---
-# <a name="ccontrolbar-class"></a>CControlBar Sınıfı
+# <a name="ccontrolbar-class"></a>CControlBar sınıfı
 
-Denetim çubuğu sınıfları [CStatusBar,](../../mfc/reference/cstatusbar-class.md) [CToolBar,](../../mfc/reference/ctoolbar-class.md) [CDialogBar,](../../mfc/reference/cdialogbar-class.md) [CReBar](../../mfc/reference/crebar-class.md)ve [COleResizeBar](../../mfc/reference/coleresizebar-class.md)için taban sınıf.
+Denetim çubuğu sınıfları [CStatusBar](../../mfc/reference/cstatusbar-class.md), [CToolBar](../../mfc/reference/ctoolbar-class.md), [CDialogBar](../../mfc/reference/cdialogbar-class.md), [CReBar](../../mfc/reference/crebar-class.md)ve [COleResizeBar](../../mfc/reference/coleresizebar-class.md)için temel sınıf.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,67 +65,67 @@ class CControlBar : public CWnd
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CControlBar::CControlBar](#ccontrolbar)|Bir `CControlBar` nesne inşa eder.|
+|[CControlBar:: CControlBar](#ccontrolbar)|Bir `CControlBar` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CControlBar::CalcDynamicLayout](#calcdynamiclayout)|[CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi olarak dinamik bir denetim çubuğunun boyutunu döndürür.|
-|[CControlBar::CalcFixedLayout](#calcfixedlayout)|Denetim çubuğunun boyutunu [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi olarak döndürür.|
-|[CControlBar::CalcInsideRect](#calcinsiderect)|Denetim çubuğu alanının geçerli boyutlarını verir; sınırları da dahil olmak üzere.|
-|[CControlBar::DoPaint](#dopaint)|Denetim çubuğunun kenarlıklarını ve kavrayan ını işler.|
-|[CControlBar::DrawBorders](#drawborders)|Denetim çubuğunun kenarlıklarını işler.|
-|[CControlBar::DrawGripper](#drawgripper)|Kontrol çubuğunun kavrayan ını işler.|
-|[CControlBar::Etkinleştirdocking](#enabledocking)|Bir denetim çubuğunun kenetlenmesini veya yüzdürmesine izin verir.|
-|[CControlBar::GetBarStyle](#getbarstyle)|Denetim çubuğu stili ayarlarını alır.|
-|[CControlBar::GetBorders](#getborders)|Denetim çubuğunun kenarlık değerlerini alır.|
-|[CControlBar::GetCount](#getcount)|Denetim çubuğundaki HWND olmayan öğelerin sayısını verir.|
-|[CControlBar::GetDockingFrame](#getdockingframe)|Bir işaretçiyi denetim çubuğunun kenetlendiği çerçeveye döndürür.|
-|[CControlBar::IsFloating](#isfloating)|Söz konusu denetim çubuğu kayan bir denetim çubuğuysa sıfır olmayan bir değer verir.|
-|[CControlBar::OnUpdateCmdUI](#onupdatecmdui)|Komut UI işleyicilerini çağırır.|
-|[CControlBar::SetBarStyle](#setbarstyle)|Denetim çubuğu stili ayarlarını değiştirir.|
-|[CControlBar::SetBorders](#setborders)|Denetim çubuğunun kenarlık değerlerini ayarlar.|
-|[CControlBar::SetinplaceOwner](#setinplaceowner)|Denetim çubuğunun yerine sahibini değiştirir.|
+|[CControlBar:: CalcDynamicLayout](#calcdynamiclayout)|Dinamik denetim çubuğunun boyutunu [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi olarak döndürür.|
+|[CControlBar:: CalcFixedLayout](#calcfixedlayout)|Denetim çubuğunun boyutunu [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi olarak döndürür.|
+|[CControlBar:: CalcInsideRect](#calcinsiderect)|Denetim çubuğu alanının geçerli boyutlarını döndürür; kenarlıkları dahil edin.|
+|[CControlBar::D oPaint](#dopaint)|Denetim çubuğunun kenarlıklarını ve kavrayıcıyı işler.|
+|[CControlBar::D Rawkenarlýklar](#drawborders)|Denetim çubuğunun kenarlıklarını işler.|
+|[CControlBar::D Rawkavrayıcı](#drawgripper)|Denetim çubuğunun kavrayıcıyı işler.|
+|[CControlBar:: EnableDocking](#enabledocking)|Denetim çubuğunun yerleştirilmiş veya kayan olmasına izin verir.|
+|[CControlBar:: GetBarStyle](#getbarstyle)|Denetim çubuğu stili ayarlarını alır.|
+|[CControlBar:: Getkenarlýklar](#getborders)|Denetim çubuğunun kenarlık değerlerini alır.|
+|[CControlBar:: GetCount](#getcount)|Denetim çubuğundaki HWND olmayan öğe sayısını döndürür.|
+|[CControlBar:: GetDockingFrame](#getdockingframe)|Bir denetim çubuğunun yerleştirildiği çerçeveye bir işaretçi döndürür.|
+|[CControlBar:: ıskayan](#isfloating)|Söz konusu denetim çubuğu bir kayan denetim çubuğu ise, sıfır dışında bir değer döndürür.|
+|[CControlBar:: OnUpdateCmdUI](#onupdatecmdui)|Komut UI işleyicilerini çağırır.|
+|[CControlBar:: SetBarStyle](#setbarstyle)|Denetim çubuğu stili ayarlarını değiştirir.|
+|[CControlBar:: Setkenarlýklar](#setborders)|Denetim çubuğunun kenarlık değerlerini ayarlar.|
+|[CControlBar:: Setınplaceowner](#setinplaceowner)|Denetim çubuğunun yerinde sahibini değiştirir.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CControlBar::m_bAutoDelete](#m_bautodelete)|Sıfır değilse, `CControlBar` Windows denetim çubuğu yok edildiğinde nesne silinir.|
-|[CControlBar::m_pInPlaceOwner](#m_pinplaceowner)|Kontrol çubuğunun yerinde sahibi.|
+|[CControlBar:: m_bAutoDelete](#m_bautodelete)|Sıfır değilse, `CControlBar` Windows Denetim çubuğu yok edildiğinde nesne silinir.|
+|[CControlBar:: m_pInPlaceOwner](#m_pinplaceowner)|Denetim çubuğunun yerinde sahibi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Denetim çubuğu genellikle çerçeve penceresinin soluna veya sağına hizalanmış bir penceredir. Windows iletileri oluşturan ve yanıtlayan pencereler veya windows olmayan ve uygulama kodu veya çerçeve kodu tarafından yönetilen HWND tabanlı olmayan öğeler olan, HWND tabanlı denetimler olan alt öğeler içerebilir. Liste kutuları ve denetimleri HWND tabanlı denetimlere örnektir; durum çubuğu bölmeleri ve bitmap düğmeleri HWND tabanlı olmayan denetimlere örnektir.
+Denetim çubuğu, genellikle bir çerçeve penceresinin soluna veya sağına hizalanmış bir penceredir. Windows iletileri oluşturan ve yanıt veren Windows olan ve Windows olmayan ve uygulama kodu veya Framework kodu tarafından yönetilen ve HWND tabanlı olmayan öğeler olan HWND tabanlı denetimler olan alt öğeler içerebilir. Liste kutuları ve düzenleme denetimleri HWND tabanlı denetimlerin örnekleridir; durum çubuğu bölmeleri ve bit eşlem düğmeleri HWND tabanlı olmayan denetimlere örnektir.
 
-Denetim çubuğu pencereleri genellikle bir üst çerçeve penceresinin alt pencereleridir ve genellikle çerçeve penceresinin istemci görünümü veya MDI istemcisi için kardeştir. Nesne, `CControlBar` kendisini konumlandırmak için üst pencerenin istemci dikdörtgeni hakkındaki bilgileri kullanır. Daha sonra üst pencerenin istemci alanında ne kadar boşluk kaldığı konusunda üst pencereyi bildirir.
+Denetim çubuğu pencereleri genellikle üst çerçeve penceresinin alt pencereleri olur ve genellikle çerçeve penceresinin istemci görünümü veya MDI istemcisiyle eş lardır. Bir `CControlBar` nesnesi, kendisini konumlandırmak için üst pencerenin istemci dikdörtgeniyle ilgili bilgileri kullanır. Daha sonra ana pencerenin istemci alanında ayrılmamış alanın ne kadar alana ayrıldığına ilişkin olarak ana pencereye bildirir.
 
-Daha fazla `CControlBar`bilgi için bkz:
+Hakkında daha fazla bilgi için `CControlBar` bkz.
 
-- [Denetim Çubukları](../../mfc/control-bars.md)
+- [Denetim çubukları](../../mfc/control-bars.md)
 
-- [Teknik Not 31: Kontrol Çubukları](../../mfc/tn031-control-bars.md).
+- [Teknik notta 31: denetim çubukları](../../mfc/tn031-control-bars.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 `CControlBar`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxext.h
+**Üstbilgi:** afxext. h
 
-## <a name="ccontrolbarcalcdynamiclayout"></a><a name="calcdynamiclayout"></a>CControlBar::CalcDynamicLayout
+## <a name="ccontrolbarcalcdynamiclayout"></a><a name="calcdynamiclayout"></a>CControlBar:: CalcDynamicLayout
 
-Çerçeve, dinamik bir araç çubuğunun boyutlarını hesaplamak için bu üye işlevi çağırır.
+Framework, dinamik bir araç çubuğunun boyutlarını hesaplamak için bu üye işlevini çağırır.
 
 ```
 virtual CSize CalcDynamicLayout(
@@ -135,33 +135,33 @@ virtual CSize CalcDynamicLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-*nUzunluk*<br/>
-*DwMode'a*bağlı olarak kontrol çubuğunun istenen boyutu yatay veya dikeydir.
+*nLength*<br/>
+*DwMode*'a bağlı olarak, yatay veya dikey olan denetim çubuğunun istenen boyutu.
 
 *nMode*<br/>
-Dinamik denetim çubuğunun yüksekliğini ve genişliğini belirlemek için aşağıdaki önceden tanımlanmış bayraklar kullanılır. Bayrakları birleştirmek için bitwise-OR (&#124;) işlecikullanın.
+Aşağıdaki önceden tanımlanmış bayraklar, dinamik denetim çubuğunun yüksekliğini ve genişliğini belirlemede kullanılır. Bayrakları birleştirmek için bit düzeyinde OR (&#124;) işlecini kullanın.
 
 |Düzen modu bayrakları|Anlamı|
 |-----------------------|-------------------|
-|LM_STRETCH|Denetim çubuğunun çerçevenin boyutuna kadar uzatılıp genişletilmeyeceğini gösterir. Çubuk bir yerleştirme çubuğu değilse ayarlayın (yerleştirme için kullanılamaz). Çubuk kenetlendiğinde veya kayan olduğunda ayarlanmaz (yerleştirme için kullanılabilir). Ayarlanırsa, LM_STRETCH *nLength* yoklar ve LM_HORZ durumuna göre boyutları döndürür. LM_STRETCH [CalcFixedLayout](#calcfixedlayout)kullanılan *bStretch* parametre benzer çalışır; germe ve yönlendirme arasındaki ilişki hakkında daha fazla bilgi için üye işlevi ne bakın.|
-|LM_HORZ|Çubuğun yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. Çubuk yatay olarak yönlendirilmişse ve dikey olarak yönlendirilmişse ayarlanmaz. LM_HORZ [CalcFixedLayout](#calcfixedlayout)kullanılan *bHorz* parametre benzer çalışır; germe ve yönlendirme arasındaki ilişki hakkında daha fazla bilgi için üye işlevi ne bakın.|
-|LM_MRUWIDTH|En son kullanılan dinamik genişlik. *nLength* parametresini yok sayar ve hatırlanan en son kullanılan genişliği kullanır.|
-|LM_HORZDOCK|Yatay Kenetlenmiş Boyutlar. *nLength* parametresini yoksa ve en büyük genişliğe sahip dinamik boyutu döndürür.|
-|LM_VERTDOCK|Dikey Kenetlenmiş Boyutlar. *nLength* parametresini yoksa ve en yüksek liğe sahip dinamik boyutu döndürür.|
-|LM_LENGTHY|*nLength* genişlik yerine yükseklik (Y yönü) gösteriyorsa ayarlayın.|
-|LM_COMMIT|Kayan denetim çubuğunun geçerli genişliğine LM_MRUWIDTH sıfırlar.|
+|LM_STRETCH|Denetim çubuğunun çerçeve boyutuna esnetilip esnetilmeyeceğini gösterir. Çubuk bir yerleştirme çubuğu değilse (yerleştirme için kullanılamaz) ayarlayın. Çubuk yerleştirildiğinde veya kayan olduğunda (yerleştirme için kullanılabilir) ayarlı değildir. Ayarlanırsa, LM_STRETCH *nLength* yok sayılır ve LM_HORZ durumuna göre boyutları döndürür. LM_STRETCH, [CalcFixedLayout](#calcfixedlayout)Içinde kullanılan *beskme* parametresine benzer şekilde çalışır. uzatma ve yönlendirme arasındaki ilişki hakkında daha fazla bilgi için bkz. üye işlevi.|
+|LM_HORZ|Çubuğun yatay veya dikey olarak yönlendirildiğini gösterir. Çubuk yatay olarak yönlendirilliyse ve dikey olarak yönlendirilliyse ayarlanır. LM_HORZ, [CalcFixedLayout](#calcfixedlayout)Içinde kullanılan *bHorz* parametresine benzer şekilde çalışır. uzatma ve yönlendirme arasındaki ilişki hakkında daha fazla bilgi için bkz. üye işlevi.|
+|LM_MRUWIDTH|En son kullanılan dinamik Genişlik. *NLength* parametresini yoksayar ve anımsanan en son kullanılan genişliği kullanır.|
+|LM_HORZDOCK|Yatay yerleştirilmiş boyutlar. *NLength* parametresini yoksayar ve en büyük genişliğe sahip dinamik boyutu döndürür.|
+|LM_VERTDOCK|Dikey yerleştirilmiş boyutlar. *NLength* parametresini yoksayar ve en büyük yüksekliğe sahip dinamik boyutu döndürür.|
+|LM_LENGTHY|*NLength* genişlik yerine yüksekliği (Y yönü) gösteriyorsa ayarlanır.|
+|LM_COMMIT|LM_MRUWIDTH kayan denetim çubuğunun geçerli genişliğine sıfırlar.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Bir CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesinin piksel olarak denetim çubuğu boyutu.
+[CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesinin piksel cinsinden denetim çubuğu boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türetilmiş sınıflarda kendi dinamik düzeninizi sağlamak için `CControlBar`bu üye işlevini geçersiz kılın. `CControlBar` [CToolbar](../../mfc/reference/ctoolbar-class.md)gibi, türetilen MFC sınıfları bu üye işlevi geçersiz kılar ve kendi uygulamalarını sağlar.
+' Den türettiğiniz sınıflarda kendi dinamik düzeninizi sağlamak için bu üye işlevini geçersiz kılın `CControlBar` . CToolBar gibi öğesinden türetilmiş MFC sınıfları `CControlBar` , bu üye işlevini geçersiz kılar ve kendi uygulamasını sağlar. [CToolbar](../../mfc/reference/ctoolbar-class.md)
 
-## <a name="ccontrolbarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CControlBar::CalcFixedLayout
+## <a name="ccontrolbarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CControlBar:: CalcFixedLayout
 
-Denetim çubuğunun yatay boyutunu hesaplamak için bu üye işlevi arayın.
+Bir denetim çubuğunun yatay boyutunu hesaplamak için bu üye işlevini çağırın.
 
 ```
 virtual CSize CalcFixedLayout(
@@ -171,32 +171,32 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-*bStretch*<br/>
-Çubuğun çerçevenin boyutuna kadar uzatılıp uzatılması gerektiğini gösterir. çubuk bir yerleştirme çubuğu olmadığında (yerleştirme için kullanılamaz) *bStretch* parametresi sıfır değildir ve kenetlendiğinde veya kayan olduğunda (yerleştirme için kullanılabilir) 0'dır.
+*Besnetme*<br/>
+Çubuğun çerçevenin boyutuna esnetilip uzatılmayacağını gösterir. Çubuk bir yerleştirme çubuğu olmadığında (yerleştirme için kullanılamaz) ve yerleştirildiğinde veya kayan olduğunda (yerleştirme için kullanılabilir) 0 olduğunda *Besnetme* parametresi sıfır dışı olur.
 
 *bHorz*<br/>
-Çubuğun yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. çubuk yatay olarak yönlendirilmişse *bHorz* parametresi sıfır değildir ve dikey olarak yönlendirilmişse 0'dır.
+Çubuğun yatay veya dikey olarak yönlendirildiğini gösterir. Çubuk yatay olarak yönlendirilse *bHorz* parametresi sıfır değildir ve dikey olarak yönlendirilse 0 ' dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CSize` nesnenin piksel olarak denetim çubuğu boyutu.
+Bir nesnenin piksel cinsinden denetim çubuğu boyutu `CSize` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubukları gibi denetim çubukları, denetim çubuğunda bulunan düğmeleri yerleştirmek için yatay veya dikey olarak esneebilir.
+Araç çubukları gibi denetim çubukları, Denetim çubuğunda bulunan düğmelere uyum sağlamak için yatay veya dikey olarak uzatılabilirler.
 
-*bStretch* TRUE ise, *bHorz*tarafından sağlanan yönlendirme boyunca boyutu gerin. Başka bir deyişle, *bHorz* FALSE ise, denetim çubuğu dikey olarak gerilir. *bStretch* FALSE ise, hiçbir esneme oluşur. Aşağıdaki tabloda *bStretch* ve *bHorz*olası permütasyon ve ortaya çıkan kontrol çubuğu stilleri gösterir.
+*Besnetme* doğruysa, boyutu *bHorz*tarafından belirtilen yönle birlikte uzatın. Diğer bir deyişle, *bHorz* yanlış ise, denetim çubuğu dikey olarak uzatılır. *Besnetme* yanlışsa, bir Esnetme gerçekleşmez. Aşağıdaki tabloda, *Besnetme* ve *bHorz*gibi olası permütasyon ve ortaya çıkan denetim çubuğu stilleri gösterilmektedir.
 
-|bStretch|bHorz|Germe|Yön|Yerleştirme/yerleştirme|
+|Besnetme|bHorz|Uzatı|Yön|Yerleştirme/yerleştirme yok|
 |--------------|-----------|----------------|-----------------|--------------------------|
-|TRUE|TRUE|Yatay germe|Yatay odaklı|Kenetlenme|
-|TRUE|FALSE|Dikey germe|Dikey odaklı|Kenetlenme|
-|FALSE|TRUE|Esneme yok|Yatay odaklı|Takma|
-|FALSE|FALSE|Esneme yok|Dikey odaklı|Takma|
+|TRUE|TRUE|Yatay uzatma|Yatay yönelimli|Yerleştirme yok|
+|TRUE|FALSE|Dikey Uzatma|Dikey yönelimli|Yerleştirme yok|
+|FALSE|TRUE|Hiçbir uzatma yok|Yatay yönelimli|Tanımlaya|
+|FALSE|FALSE|Hiçbir uzatma yok|Dikey yönelimli|Tanımlaya|
 
-## <a name="ccontrolbarcalcinsiderect"></a><a name="calcinsiderect"></a>CControlBar::CalcInsideRect
+## <a name="ccontrolbarcalcinsiderect"></a><a name="calcinsiderect"></a>CControlBar:: CalcInsideRect
 
-Çerçeve, denetim çubuğunun istemci alanını hesaplamak için bu işlevi çağırır.
+Framework, denetim çubuğunun istemci alanını hesaplamak için bu işlevi çağırır.
 
 ```
 virtual void CalcInsideRect(
@@ -207,28 +207,28 @@ virtual void CalcInsideRect(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-Denetim çubuğunun geçerli boyutlarını içerir; sınırları da dahil olmak üzere.
+Denetim çubuğunun geçerli boyutlarını içerir; kenarlıkları dahil edin.
 
 *bHorz*<br/>
-Çubuğun yatay veya dikey olarak yönlendirilmiş olduğunu gösterir. çubuk yatay olarak yönlendirilmişse *bHorz* parametresi sıfır değildir ve dikey olarak yönlendirilmişse 0'dır.
+Çubuğun yatay veya dikey olarak yönlendirildiğini gösterir. Çubuk yatay olarak yönlendirilse *bHorz* parametresi sıfır değildir ve dikey olarak yönlendirilse 0 ' dır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlev, denetim çubuğu boyanmadan önce çağrılır.
 
-Kenarlıkların ve denetim çubuğunun kavrayıcı çubuğunun görüntülemeyi özelleştirmek için bu işlevi geçersiz kılın.
+Denetim çubuğunun kenarlıkların ve kavrayıcı çubuğunun işlenmesini özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="ccontrolbarccontrolbar"></a><a name="ccontrolbar"></a>CControlBar::CControlBar
+## <a name="ccontrolbarccontrolbar"></a><a name="ccontrolbar"></a>CControlBar:: CControlBar
 
-Bir `CControlBar` nesne inşa eder.
+Bir `CControlBar` nesnesi oluşturur.
 
 ```
 CControlBar();
 ```
 
-## <a name="ccontrolbardopaint"></a><a name="dopaint"></a>CControlBar::DoPaint
+## <a name="ccontrolbardopaint"></a><a name="dopaint"></a>CControlBar::D oPaint
 
-Denetim çubuğunun kenarlıklarını ve kavrayan çubuğunu işlemek için çerçeve tarafından çağrılır.
+Denetim çubuğunun kenarlıklarını ve kavrayıcı çubuğunu işlemek için Framework tarafından çağırılır.
 
 ```
 virtual void DoPaint(CDC* pDC);
@@ -236,18 +236,18 @@ virtual void DoPaint(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Denetim çubuğunun kenarlıklarını ve kavrayıcısını işlemek için kullanılacak aygıt bağlamını işaret ediyor.
+*Kökündeki*<br/>
+Denetim çubuğunun kenarlıklarını ve kavrayıcıyı işlemek için kullanılacak cihaz bağlamını işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Denetim çubuğunun çizim davranışını özelleştirmek için bu işlevi geçersiz kılın.
 
-Başka bir özelleştirme yöntemi `DrawBorders` ve `DrawGripper` işlevleri geçersiz kılmak ve kenarlıklar ve kavrayan için özel çizim kodu eklemektir. Bu yöntemler varsayılan `DoPaint` yöntem tarafından çağrıldığı için `DoPaint` geçersiz kılma gerekmez.
+Başka bir özelleştirme yöntemi, `DrawBorders` ve işlevlerini geçersiz kılmak `DrawGripper` ve Kenarlıklar ve kavrayıcı için özel çizim kodu eklemektir. Bu yöntemler varsayılan yöntem tarafından çağrıldığı için `DoPaint` , bir geçersiz kılma `DoPaint` gerekli değildir.
 
-## <a name="ccontrolbardrawborders"></a><a name="drawborders"></a>CControlBar::DrawBorders
+## <a name="ccontrolbardrawborders"></a><a name="drawborders"></a>CControlBar::D Rawkenarlýklar
 
-Denetim çubuğunun kenarlıklarını işlemek için çerçeve tarafından çağrıldı.
+Denetim çubuğunun kenarlıklarını işlemek için Framework tarafından çağırılır.
 
 ```
 virtual void DrawBorders(
@@ -257,19 +257,19 @@ virtual void DrawBorders(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Denetim çubuğunun kenarlıklarını işlemek için kullanılacak aygıt bağlamını işaret ediyor.
+*Kökündeki*<br/>
+Denetim çubuğunun kenarlıklarını işlemek için kullanılacak cihaz bağlamını işaret eder.
 
 *Rect*<br/>
-Denetim `CRect` çubuğunun boyutlarını içeren bir nesne.
+`CRect`Denetim çubuğunun boyutlarını içeren nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Denetim çubuğu kenarlıklarının görünümünü özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="ccontrolbardrawgripper"></a><a name="drawgripper"></a>CControlBar::DrawGripper
+## <a name="ccontrolbardrawgripper"></a><a name="drawgripper"></a>CControlBar::D Rawkavrayıcı
 
-Kontrol çubuğunun kavrayan işlemek için çerçeve tarafından çağrıldı.
+Denetim çubuğunun kavrayıcıyı işlemek için Framework tarafından çağırılır.
 
 ```
 virtual void DrawGripper(
@@ -279,19 +279,19 @@ virtual void DrawGripper(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Kontrol çubuğu kavrayıcısını işlemek için kullanılacak aygıt bağlamını işaret ediyor.
+*Kökündeki*<br/>
+Denetim çubuğu kavrayıcıyı işlemek için kullanılacak cihaz bağlamına işaret eder.
 
 *Rect*<br/>
-Kontrol `CRect` çubuğu tutucunun boyutlarını içeren bir nesne.
+`CRect`Denetim çubuğu kavrayıcı boyutlarını içeren bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kontrol çubuğu kavrayan görünümünü özelleştirmek için bu işlevi geçersiz kılın.
+Denetim çubuğu kavrayıcı görünümünü özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="ccontrolbarenabledocking"></a><a name="enabledocking"></a>CControlBar::Etkinleştirdocking
+## <a name="ccontrolbarenabledocking"></a><a name="enabledocking"></a>CControlBar:: EnableDocking
 
-Bir denetim çubuğunun kenetlenmesini sağlamak için bu işlevi arayın.
+Bir denetim çubuğunun yerleştirilme özelliğini etkinleştirmek için bu işlevi çağırın.
 
 ```cpp
 void EnableDocking(DWORD dwDockStyle);
@@ -300,29 +300,29 @@ void EnableDocking(DWORD dwDockStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwDockStyle*<br/>
-Denetim çubuğunun kenetlenmeyi destekleyip desteklemediğini ve desteklenirse denetim çubuğunun kenetlenebileceği ana penceresinin yanlarını belirtir. Aşağıdakilerden biri veya birkaçı olabilir:
+Denetim çubuğunun yerleştirmeyi ve üst penceresinin, varsa denetim çubuğunun sabitlenebilir olduğunu ve bunların yanlarını destekleyip desteklemediğini belirtir. Aşağıdakilerden biri veya daha fazlası olabilir:
 
-- CBRS_ALIGN_TOP İstemci alanının üst kısmında kenetlenme sağlar.
+- CBRS_ALIGN_TOP, istemci alanının en üstünde yerleştirme yapılmasına Izin verir.
 
-- CBRS_ALIGN_BOTTOM İstemci alanının altına kenetlenmeyi sağlar.
+- CBRS_ALIGN_BOTTOM, istemci alanının en altında yerleştirmeyi sağlar.
 
-- CBRS_ALIGN_LEFT İstemci alanının sol tarafına kenetlenmeyi sağlar.
+- CBRS_ALIGN_LEFT istemci alanının sol tarafında yerleştirme yapılmasına Izin verir.
 
-- CBRS_ALIGN_RIGHT İstemci alanının sağ tarafına kenetlenmeyi sağlar.
+- CBRS_ALIGN_RIGHT istemci alanının sağ tarafında yerleştirme yapılmasına Izin verir.
 
-- CBRS_ALIGN_ANY İstemci alanının herhangi bir tarafına kenetlenmeyi sağlar.
+- CBRS_ALIGN_ANY istemci alanının herhangi bir tarafında yerleştirme yapılmasına Izin verir.
 
-- CBRS_FLOAT_MULTI Birden çok denetim çubuklarının tek bir mini çerçeve penceresinde yüzdürilmesine izin verir.
+- CBRS_FLOAT_MULTI, tek bir mini çerçeve penceresinde birden fazla denetim çubuğunun ayrılmasını sağlar.
 
-0 (yani bayrak olmadığını gösterirse), denetim çubuğu yanaşmayacak.
+0 ise (yani, bayrak yoksa) denetim çubuğu çalışmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen taraflar, hedef çerçeve penceresine yerleştirme için etkinleştirilen taraflardan biriyle eşleşmelidir veya denetim çubuğu bu çerçeve penceresine sabitlenemez.
+Belirtilen kenarlar, hedef çerçeve penceresinde yerleştirme için etkinleştirilen taraflardan biriyle eşleşmelidir veya denetim çubuğu bu çerçeve penceresine yerleştirilmemelidir.
 
-## <a name="ccontrolbargetbarstyle"></a><a name="getbarstyle"></a>CControlBar::GetBarStyle
+## <a name="ccontrolbargetbarstyle"></a><a name="getbarstyle"></a>CControlBar:: GetBarStyle
 
-Denetim çubuğu için şu anda hangi **CBRS_** (denetim çubuğu stilleri) ayarlarının ayarlanabilmek için bu işlevi arayın.
+Denetim çubuğu için hangi **cbrs_** (denetim çubuğu stilleri) ayarlarının ayarlandığını öğrenmek için bu işlevi çağırın.
 
 ```
 DWORD GetBarStyle();
@@ -330,15 +330,15 @@ DWORD GetBarStyle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim çubuğunun geçerli **CBRS_** (denetim çubuğu stilleri) ayarları. Kullanılabilir stillerin tam listesi için [CControlBar::SetBarStyle'a](#setbarstyle) bakın.
+Denetim çubuğu için geçerli **cbrs_** (denetim çubuğu stilleri) ayarları. Kullanılabilir stillerin tüm listesi için bkz. [CControlBar:: SetBarStyle](#setbarstyle) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-**WS_** (pencere stili) stilini işlemez.
+**WS_** (pencere stili) stillerini işlemez.
 
-## <a name="ccontrolbargetborders"></a><a name="getborders"></a>CControlBar::GetBorders
+## <a name="ccontrolbargetborders"></a><a name="getborders"></a>CControlBar:: Getkenarlýklar
 
-Denetim çubuğu için geçerli kenarlık değerlerini döndürür.
+Denetim çubuğu için geçerli sınır değerlerini döndürür.
 
 ```
 CRect GetBorders() const;
@@ -346,11 +346,11 @@ CRect GetBorders() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim `CRect` çubuğu nesnesinin her iki tarafının geçerli genişliğini (piksel olarak) içeren bir nesne. Örneğin, [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesinin *sol* üyesinin değeri sol el kenarlığı genişliğidir.
+`CRect`Denetim çubuğu nesnesinin her bir tarafındaki geçerli genişliği (piksel cinsinden) içeren bir nesne. Örneğin, [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesinin *sol* üyesinin değeri, sol kenarlığın genişliğidir.
 
-## <a name="ccontrolbargetcount"></a><a name="getcount"></a>CControlBar::GetCount
+## <a name="ccontrolbargetcount"></a><a name="getcount"></a>CControlBar:: GetCount
 
-`CControlBar` Nesnedeki HWND olmayan öğelerin sayısını verir.
+Nesnedeki HWND olmayan öğe sayısını döndürür `CControlBar` .
 
 ```
 int GetCount() const;
@@ -358,15 +358,15 @@ int GetCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnedeki HWND olmayan öğelerin `CControlBar` sayısı. Bu işlev, [cdialogbar](../../mfc/reference/cdialogbar-class.md) nesnesi için 0 döndürür.
+Nesnedeki HWND olmayan öğe sayısı `CControlBar` . Bu işlev bir [CDialogBar](../../mfc/reference/cdialogbar-class.md) nesnesi için 0 döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğenin türü türemiş nesneye bağlıdır: [CStatusBar](../../mfc/reference/cstatusbar-class.md) nesneleri için bölmeler ve [CToolBar](../../mfc/reference/ctoolbar-class.md) nesneleri için düğmeler ve ayırıcılar.
+Öğenin türü türetilmiş nesneye bağlıdır: [CStatusBar](../../mfc/reference/cstatusbar-class.md) nesneleri için bölmeler, [CToolBar](../../mfc/reference/ctoolbar-class.md) nesneleri için düğmeler ve ayırıcılar.
 
-## <a name="ccontrolbargetdockingframe"></a><a name="getdockingframe"></a>CControlBar::GetDockingFrame
+## <a name="ccontrolbargetdockingframe"></a><a name="getdockingframe"></a>CControlBar:: GetDockingFrame
 
-Denetim çubuğunuzun sabitlendiği geçerli çerçeve penceresine işaretçi almak için bu üye işlevi arayın.
+Denetim çubuğunuzun yerleştirildiği geçerli çerçeve penceresine bir işaretçi almak için bu üye işlevini çağırın.
 
 ```
 CFrameWnd* GetDockingFrame() const;
@@ -374,17 +374,17 @@ CFrameWnd* GetDockingFrame() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa çerçeve penceresine işaretçi; aksi takdirde NULL.
+Başarılı olursa çerçeve penceresine yönelik bir işaretçi; Aksi takdirde NULL.
 
-Denetim çubuğu bir çerçeve penceresine sabitlenmezse (diğer bir süre, denetim çubuğu kayansa), bu işlev bir işaretçiyi ana [CMiniFrameWnd'e](../../mfc/reference/cminiframewnd-class.md)döndürür.
+Denetim çubuğu bir çerçeve penceresine yerleştirilmemişse (yani, denetim çubuğu kayan ise), bu işlev üst [CMiniFrameWnd](../../mfc/reference/cminiframewnd-class.md)için bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Takılabilir denetim çubukları hakkında daha fazla bilgi için [Bkz. CControlBar::EnableDocking](#enabledocking) ve [CFrameWnd::DockControlBar](../../mfc/reference/cframewnd-class.md#dockcontrolbar).
+Yerleştirilebilir denetim çubukları hakkında daha fazla bilgi için bkz. [CControlBar:: EnableDocking](#enabledocking) ve [CFrameWnd::D ockcontrolbar](../../mfc/reference/cframewnd-class.md#dockcontrolbar).
 
-## <a name="ccontrolbarisfloating"></a><a name="isfloating"></a>CControlBar::IsFloating
+## <a name="ccontrolbarisfloating"></a><a name="isfloating"></a>CControlBar:: ıskayan
 
-Denetim çubuğunun kayan veya kenetlenip kenetlenmediğini belirlemek için bu üye işlevini arayın.
+Denetim çubuğunun kayan mı yoksa yerleştirilmiş mi olduğunu anlamak için bu üye işlevi çağırın.
 
 ```
 BOOL IsFloating() const;
@@ -392,15 +392,15 @@ BOOL IsFloating() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim çubuğu kayarsa sıfırsız; aksi takdirde 0.
+Denetim çubuğu yüzer ise sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir denetim çubuğunun durumunu docked'dan kayana değiştirmek için [CFrameWnd'i arayın:FloatControlBar.](../../mfc/reference/cframewnd-class.md#floatcontrolbar)
+Bir denetim çubuğunun durumunu, sabitlenmiş iken kayan olarak değiştirmek için [CFrameWnd:: FloatControlBar](../../mfc/reference/cframewnd-class.md#floatcontrolbar)öğesini çağırın.
 
-## <a name="ccontrolbarm_bautodelete"></a><a name="m_bautodelete"></a>CControlBar::m_bAutoDelete
+## <a name="ccontrolbarm_bautodelete"></a><a name="m_bautodelete"></a>CControlBar:: m_bAutoDelete
 
-Sıfır değilse, `CControlBar` Windows denetim çubuğu yok edildiğinde nesne silinir.
+Sıfır değilse, `CControlBar` Windows Denetim çubuğu yok edildiğinde nesne silinir.
 
 ```
 BOOL m_bAutoDelete;
@@ -408,23 +408,23 @@ BOOL m_bAutoDelete;
 
 ### <a name="remarks"></a>Açıklamalar
 
-*m_bAutoDelete* bool tipi nin ortak bir değişkenidir.
+*M_BAUTODELETE* bool türünde genel bir değişkendir.
 
-Denetim çubuğu nesnesi genellikle bir çerçeve penceresi nesnesine katıştırılır. Bu durumda, çerçeve penceresi yok edildiğinde katıştırılmış denetim çubuğu nesnesi yok edildiğinden *m_bAutoDelete* 0'dır.
+Bir denetim çubuğu nesnesi genellikle çerçeve pencere nesnesine katıştırılır. Bu durumda, çerçeve penceresi yok edildiğinde katıştırılmış denetim çubuğu nesnesi yok edileceği için, *m_bAutoDelete* 0 ' dır.
 
-Yığına bir `CControlBar` nesne ayırırsanız ve **sil'i**aramayı planlamazsanız, bu değişkeni sıfır olmayan bir değere ayarlayın.
+Yığında bir nesne ayırırsanız ve çağırmayı planlamıyorsanız, bu değişkeni sıfır dışında bir değere ayarlayın `CControlBar` **`delete`** .
 
-## <a name="ccontrolbarm_pinplaceowner"></a><a name="m_pinplaceowner"></a>CControlBar::m_pInPlaceOwner
+## <a name="ccontrolbarm_pinplaceowner"></a><a name="m_pinplaceowner"></a>CControlBar:: m_pInPlaceOwner
 
-Kontrol çubuğunun yerinde sahibi.
+Denetim çubuğunun yerinde sahibi.
 
 ```
 CWnd* m_pInPlaceOwner;
 ```
 
-## <a name="ccontrolbaronupdatecmdui"></a><a name="onupdatecmdui"></a>CControlBar::OnUpdateCmdUI
+## <a name="ccontrolbaronupdatecmdui"></a><a name="onupdatecmdui"></a>CControlBar:: OnUpdateCmdUI
 
-Bu üye işlev, araç çubuğunun veya durum çubuğunun durumunu güncelleştirmek için çerçeve tarafından çağrılır.
+Bu üye işlevi, araç çubuğunun ya da durum çubuğunun durumunu güncelleştirmek için Framework tarafından çağırılır.
 
 ```
 virtual void OnUpdateCmdUI(
@@ -435,20 +435,20 @@ virtual void OnUpdateCmdUI(
 ### <a name="parameters"></a>Parametreler
 
 *pTarget*<br/>
-Uygulamanın ana çerçeve penceresine işaret ediyor. Bu işaretçi, güncelleştirme iletilerini yönlendirmek için kullanılır.
+Uygulamanın ana çerçeve penceresine işaret eder. Bu işaretçi, güncelleştirme iletilerini yönlendirme için kullanılır.
 
 *bDisableIfNoHndler*<br/>
-Güncelleştirme işleyicisi olmayan bir denetimin devre dışı bırakılmış olarak otomatik olarak görüntülenip görüntülenmemesi gerektiğini belirten bayrak.
+Güncelleştirme işleyicisi olmayan bir denetimin otomatik olarak devre dışı olarak görüntülenip görüntülenmeyeceğini belirten bayrak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tek bir düğmeyi veya bölmeyi güncelleştirmek için, bir güncelleştirme işleyicisini uygun şekilde ayarlamak için ileti haritanızdaki ON_UPDATE_COMMAND_UI makroyu kullanın. Bu makroyu kullanma hakkında daha fazla bilgi için [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) bakın.
+Tek bir düğmeyi veya bölmeyi güncelleştirmek için ileti haritadaki ON_UPDATE_COMMAND_UI makrosunu kullanarak bir güncelleştirme işleyicisini uygun şekilde ayarlayın. Bu makroyu kullanma hakkında daha fazla bilgi için bkz. [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) .
 
-`OnUpdateCmdUI`uygulama boşta olduğunda çerçeve tarafından çağrılır. Güncellenecek çerçeve penceresi, en azından dolaylı olarak görünür bir çerçeve penceresinin alt penceresi olmalıdır. `OnUpdateCmdUI`gelişmiş bir geçersizdir.
+`OnUpdateCmdUI`, uygulama boştayken Framework tarafından çağırılır. Görüntülenecek çerçeve penceresinin, görünür bir çerçeve penceresinin en azından dolaylı olarak bir alt pencere olması gerekir. `OnUpdateCmdUI`Gelişmiş bir geçersiz kılınabilir.
 
-## <a name="ccontrolbarsetbarstyle"></a><a name="setbarstyle"></a>CControlBar::SetBarStyle
+## <a name="ccontrolbarsetbarstyle"></a><a name="setbarstyle"></a>CControlBar:: SetBarStyle
 
-Denetim çubuğu için istenen **CBRS_** stilleri ayarlamak için bu işlevi arayın.
+Denetim çubuğu için istenen **cbrs_** stillerini ayarlamak için bu işlevi çağırın.
 
 ```cpp
 void SetBarStyle(DWORD dwStyle);
@@ -456,42 +456,42 @@ void SetBarStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
-Denetim çubuğu için istenen stiller. Aşağıdakilerden biri veya birkaçı olabilir:
+*dwStyle*<br/>
+Denetim çubuğu için istenen stiller. Aşağıdakilerden biri veya daha fazlası olabilir:
 
-- CBRS_ALIGN_TOP Denetim çubuğunun çerçeve penceresinin istemci alanının üst bölümüne sabitlemesine izin verir.
+- CBRS_ALIGN_TOP, denetim çubuğunun bir çerçeve penceresinin istemci alanının üstüne yerleştirilme olanağı sağlar.
 
-- CBRS_ALIGN_BOTTOM Denetim çubuğunun çerçeve penceresinin istemci alanının altına sabitlemesine izin verir.
+- CBRS_ALIGN_BOTTOM, denetim çubuğunun bir çerçeve penceresinin istemci alanının altına yerleştirilme olanağı sağlar.
 
-- CBRS_ALIGN_LEFT Denetim çubuğunun çerçeve penceresinin istemci alanının sol tarafına sabitlemesine izin verir.
+- CBRS_ALIGN_LEFT, denetim çubuğunun bir çerçeve penceresinin istemci alanının sol tarafına yerleştirilme olanağı sağlar.
 
-- CBRS_ALIGN_RIGHT Denetim çubuğunun çerçeve penceresinin istemci alanının sağ tarafına sabitlemesine izin verir.
+- CBRS_ALIGN_RIGHT, denetim çubuğunun bir çerçeve penceresinin istemci alanının sağ tarafına yerleştirilme olanağı sağlar.
 
-- CBRS_ALIGN_ANY Denetim çubuğunun çerçeve penceresinin istemci alanının herhangi bir tarafına sabitlemesine izin verir.
+- CBRS_ALIGN_ANY, denetim çubuğunun bir çerçeve penceresinin istemci alanının herhangi bir tarafına yerleştirilme olanağı sağlar.
 
-- CBRS_BORDER_TOP Görünür olduğunda denetim çubuğunun üst kenarına bir kenarlık çizilmesine neden olur.
+- CBRS_BORDER_TOP, görünür hale geldiğinde denetim çubuğunun üst kenarına bir kenarlık çizilmesini neden olur.
 
-- CBRS_BORDER_BOTTOM Görünür olduğunda denetim çubuğunun alt kenarına bir kenarlık çizilmesine neden olur.
+- CBRS_BORDER_BOTTOM, görünür hale geldiğinde denetim çubuğunun alt kenarına bir kenarlığın çizilmesini sağlar.
 
-- CBRS_BORDER_LEFT Görünür olduğunda denetim çubuğunun sol kenarına bir kenar çizilmesine neden olur.
+- CBRS_BORDER_LEFT, görünür hale geldiğinde denetim çubuğunun sol kenarında bir kenarlığın çizilmesini sağlar.
 
-- CBRS_BORDER_RIGHT Görünür olduğunda denetim çubuğunun sağ kenarına bir kenar çizilmesine neden olur.
+- CBRS_BORDER_RIGHT, görünür hale geldiğinde denetim çubuğunun sağ kenarında bir kenarlığın çizilmesini sağlar.
 
-- CBRS_FLOAT_MULTI Birden çok denetim çubuklarının tek bir mini çerçeve penceresinde yüzdürilmesine izin verir.
+- CBRS_FLOAT_MULTI, tek bir mini çerçeve penceresinde birden fazla denetim çubuğunun ayrılmasını sağlar.
 
-- CBRS_TOOLTIPS Denetim çubuğu için araç ipuçlarının görüntülenmesine neden olur.
+- CBRS_TOOLTIPS, denetim çubuğu için araç ipuçlarının görüntülenmesine neden olur.
 
-- CBRS_FLYBY İleti metninin araç ipuçlarıyla aynı anda güncelleştirilmesine neden olur.
+- CBRS_FLYBY ileti metninin araç ipuçlarıyla aynı zamanda güncelleştirilmesini sağlar.
 
-- CBRS_GRIPPER Herhangi bir türetilmiş sınıf için `CReBar` `CControlBar`çizilecek bir nesnedeki bantlarda kullanılana benzer bir kavrayanın çizilmesine neden olur.
+- CBRS_GRIPPER, bir nesne içindeki bantların `CReBar` herhangi bir türetilmiş sınıf için çizilmesine benzer bir kavrayıcı neden olur `CControlBar` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 **WS_** (pencere stili) ayarlarını etkilemez.
 
-## <a name="ccontrolbarsetborders"></a><a name="setborders"></a>CControlBar::SetBorders
+## <a name="ccontrolbarsetborders"></a><a name="setborders"></a>CControlBar:: Setkenarlýklar
 
-Denetim çubuğunun kenarlıklarının boyutunu ayarlamak için bu işlevi arayın.
+Denetim çubuğu kenarlıklarının boyutunu ayarlamak için bu işlevi çağırın.
 
 ```cpp
 void SetBorders(
@@ -506,29 +506,29 @@ void SetBorders(LPCRECT lpRect);
 ### <a name="parameters"></a>Parametreler
 
 *cxLeft*<br/>
-Denetim çubuğunun sol kenarlığı genişliği (piksel olarak).
+Denetim çubuğunun sol kenarlığının genişliği (piksel cinsinden).
 
 *cyTop*<br/>
-Denetim çubuğunun üst sınırının yüksekliği (piksel olarak).
+Denetim çubuğunun üst kenarlığının yüksekliği (piksel cinsinden).
 
-*cxSağ*<br/>
-Denetim çubuğunun sağ kenarlığı genişliği (piksel olarak).
+*cxRight*<br/>
+Denetim çubuğunun sağ kenarlığının genişliği (piksel cinsinden).
 
 *cyBottom*<br/>
-Denetim çubuğunun alt kenarlığınyüksekliği (piksel olarak).
+Denetim çubuğunun alt kenarlığının yüksekliği (piksel cinsinden).
 
-*Lprect*<br/>
-Denetim çubuğu nesnesinin her kenarlığı için geçerli genişliğini (piksel olarak) içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaretçi.
+*lpRect*<br/>
+Denetim çubuğu nesnesinin her kenarlığının geçerli genişliğini (piksel cinsinden) içeren bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine yönelik işaretçi.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, denetim çubuğunun üst ve alt kenarlıklarını 5 piksel, sol ve sağ kenarlıkları ise 2 pikselolarak ayarlar:
+Aşağıdaki kod örneği, denetim çubuğunun üst ve alt kenarlıklarını 5 piksel ve sol ve sağ kenarlıklarını 2 piksel olarak ayarlar:
 
 [!code-cpp[NVC_MFCControlLadenDialog#61](../../mfc/codesnippet/cpp/ccontrolbar-class_1.cpp)]
 
-## <a name="ccontrolbarsetinplaceowner"></a><a name="setinplaceowner"></a>CControlBar::SetinplaceOwner
+## <a name="ccontrolbarsetinplaceowner"></a><a name="setinplaceowner"></a>CControlBar:: Setınplaceowner
 
-Denetim çubuğunun yerine sahibini değiştirir.
+Denetim çubuğunun yerinde sahibini değiştirir.
 
 ```cpp
 void SetInPlaceOwner(CWnd* pWnd);
@@ -536,17 +536,17 @@ void SetInPlaceOwner(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-Bir `CWnd` nesneye işaretçi.
+*pWnd*<br/>
+Bir `CWnd` nesne işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Ctoolbar Sınıfı](../../mfc/reference/ctoolbar-class.md)<br/>
-[CDialogBar Sınıfı](../../mfc/reference/cdialogbar-class.md)<br/>
-[CStatusBar Sınıfı](../../mfc/reference/cstatusbar-class.md)<br/>
-[CReBar Sınıfı](../../mfc/reference/crebar-class.md)
+[MFC örnek CTRLBARS](../../overview/visual-cpp-samples.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md)<br/>
+[CDialogBar sınıfı](../../mfc/reference/cdialogbar-class.md)<br/>
+[CStatusBar sınıfı](../../mfc/reference/cstatusbar-class.md)<br/>
+[CReBar sınıfı](../../mfc/reference/crebar-class.md)

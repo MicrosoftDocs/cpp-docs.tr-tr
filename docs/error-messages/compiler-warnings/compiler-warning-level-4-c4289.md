@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4289
 ms.assetid: 0dbd2863-4cde-4e16-894b-104a2d5fa724
-ms.openlocfilehash: b9083670465d68493d90a8e96ff7ee5db34c1978
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 8742fd5e64f2ba1877fa3fbecfb221ef295d463e
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991317"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87219904"
 ---
 # <a name="compiler-warning-level-4-c4289"></a>Derleyici Uyarısı (düzey 4) C4289
 
 standart olmayan uzantı kullanıldı : 'var': for döngüsünde bildirimi yapılan döngü denetim değişkeni for döngüsü kapsamının dışında kullanılıyor
 
-[/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc: forScope**ile derlerken, [for döngüsünde belirtilen bir değişken](../../cpp/for-statement-cpp.md) **for**döngüsü kapsamından sonra kullanılır.
+[/Ze](../../build/reference/za-ze-disable-language-extensions.md) ve **/Zc: forScope**ile derlerken, [for](../../cpp/for-statement-cpp.md) döngüsünde belirtilen bir değişken **`for`** -Loop kapsamından sonra kullanıldı.
 
-**/Ze**ile döngüler **için** standart davranışın nasıl belirtilme hakkında bilgi için bkz. [/Zc: forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) .
+/Ze ile Döngülerde standart davranış belirtme hakkında bilgi için bkz. [/Zc: forScope](../../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) **`for`** . **/Ze**
 
 Bu uyarı varsayılan olarak kapalıdır. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
 

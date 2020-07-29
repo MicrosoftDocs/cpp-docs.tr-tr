@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2059
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-ms.openlocfilehash: f91eb428fcb49c81187788730128545916955790
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 52b389806f5bacac78750bc745cd77699eb59735
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127666"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212884"
 ---
 # <a name="compiler-error-c2059"></a>Derleyici hatası C2059
 
@@ -19,7 +19,7 @@ sözdizimi hatası: ' token '
 
 Belirteç bir sözdizimi hatasına neden oldu.
 
-Aşağıdaki örnek, `j`bildiren çizgi için bir hata iletisi oluşturur.
+Aşağıdaki örnek, bildiren çizgi için bir hata iletisi oluşturur `j` .
 
 ```cpp
 // C2059e.cpp
@@ -31,9 +31,9 @@ Aşağıdaki örnek, `j`bildiren çizgi için bir hata iletisi oluşturur.
 
 Hatanın nedenini öğrenmek için yalnızca hata iletisinde listelenen satırı değil, aynı zamanda yukarıdaki satırları inceleyin. Satırları incelemek sorun hakkında hiçbir clue yoksa, hata iletisinde listelenen satırı ve belki de büyük olasılıkla birçok satırı açıklama olarak oluşturmayı deneyin.
 
-Hata iletisi bir `typedef` değişkenini hemen izleyen bir sembol üzerinde oluşursa, değişkenin kaynak kodunda tanımlandığından emin olun.
+Hata iletisi bir değişkeni hemen izleyen bir sembol üzerinde oluşursa **`typedef`** , değişkenin kaynak kodunda tanımlandığından emin olun.
 
-Bir Önişlemci sembol adı tanımlayıcı olarak yeniden kullanıldığında C2059 tetiklenir. Aşağıdaki örnekte, derleyici `DIGITS.ONE` 1 sayısı olarak görür ve bu, Enum öğesi adı olarak geçerli değildir:
+Bir Önişlemci sembol adı tanımlayıcı olarak yeniden kullanıldığında C2059 tetiklenir. Aşağıdaki örnekte, derleyici, `DIGITS.ONE` Enum öğesi adı olarak geçerli olmayan 1 sayısı olarak görür:
 
 ```cpp
 #define ONE 1
@@ -44,7 +44,7 @@ enum class DIGITS {
 };
 ```
 
-C2059, bir sembol hiçbir şey için hesaplanırsa, **/d**_symbol_ **=** derlemek için kullanıldığında meydana gelebilir.
+Bir sembol, derleme için **/d**_simgesi_ kullanıldığında olabileceği gibi Nothing olarak değerlendirilirse C2059 alabilirsiniz **=** .
 
 ```cpp
 // C2059a.cpp
@@ -111,7 +111,7 @@ namespace A  {
 }
 ```
 
-Bir ada sahip olabilecek bir operatör (`::`, `->`ve `.`), aşağıdaki örnekte gösterildiği gibi anahtar `template`sözcüğü gelmelidir:
+Bir adı (,, ve) nitelebilecek bir operatör `::` `->` `.` **`template`** , bu örnekte gösterildiği gibi anahtar sözcüğü gelmelidir:
 
 ```cpp
 template <typename T> struct Allocator {
@@ -125,7 +125,7 @@ template <typename X, typename AY> struct Container {
 };
 ```
 
-Varsayılan olarak, C++ `AY::Rebind` şablon olmadığını varsayar; Bu nedenle, aşağıdaki `<` küçüktür işareti olarak yorumlanır.  Derleyiciye, açılı ayracın doğru ayrıştırabilmesi için `Rebind` bir şablon olduğunu açıkça bildirmeniz gerekir. Bu hatayı düzeltmek için, aşağıda gösterildiği gibi, bağımlı türün adı üzerinde `template` anahtar sözcüğünü kullanın:
+Varsayılan olarak, C++ `AY::Rebind` bir şablon olmadığını varsayar; bu nedenle, aşağıdakiler `<` küçüktür işareti olarak yorumlanır.  Derleyiciye, `Rebind` açılı ayracın doğru ayrıştırabilmesi için açıkça bir şablon olduğunu söylemelisiniz. Bu hatayı düzeltmek için, **`template`** aşağıda gösterildiği gibi bağımlı türün adında anahtar sözcüğünü kullanın:
 
 ```cpp
 template <typename T> struct Allocator {

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-ms.openlocfilehash: 85ff8d77bda30bcf0b107f733098d07c4fd80283
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 6d3102cfd41d68458332025cbf3410e3f169523b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813528"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87212455"
 ---
 # <a name="cfileexception-class"></a>CFileException Sınıfı
 
@@ -45,13 +45,13 @@ class CFileException : public CException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CFileException:: CFileException](#cfileexception)|Bir `CFileException` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CFileException:: Errnotoözel durumu](#errnotoexception)|Çalışma zamanı hata numarasına karşılık gelen nedeni kodu döndürür.|
 |[CFileException:: GetErrorMessage](#geterrormessage)|Özel durumu açıklayan iletiyi alır.|
@@ -61,7 +61,7 @@ class CFileException : public CException
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CFileException:: m_cause](#m_cause)|Özel durum nedenine karşılık gelen taşınabilir kodu içerir.|
 |[CFileException:: m_lOsError](#m_loserror)|İlgili işletim sistemi hata numarasını içerir.|
@@ -185,7 +185,7 @@ int m_cause;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu veri üyesi **int**türünde ortak bir değişkendir. Numaralandırıcılar ve anlamları aşağıdaki gibidir:
+Bu veri üyesi, türünde ortak bir değişkendir **`int`** . Numaralandırıcılar ve anlamları aşağıdaki gibidir:
 
 | Hata | Değer ve anlamı |
 |--|--|
@@ -298,6 +298,6 @@ Varsa, özel duruma neden olan dosyanın adını içeren dizeye yönelik bir iş
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Özel Durum İşleme](../../mfc/reference/exception-processing.md)
+[CException sınıfı](../../mfc/reference/cexception-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Özel durum Işleme](../../mfc/reference/exception-processing.md)

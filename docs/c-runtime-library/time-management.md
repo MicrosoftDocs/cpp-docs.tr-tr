@@ -7,12 +7,12 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: 24859a0b35274881b03b960807904ed38b19e354
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 096207465b1be2eba70e95cff2c226924fc91bd7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444593"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213456"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
@@ -22,10 +22,10 @@ Bu işlevleri, geçerli saati almak ve dönüştürmek, ayarlamak ve gerektiği 
 
 ### <a name="time-routines"></a>Zaman yordamları
 
-|İşlev|Kullanım|
+|İşlev|Kullanın|
 |--------------|---------|
 |[yoksaat, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|**Struct** from türünden karakter dizesine saati dönüştürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
-|[clock](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati saati döndürür.|
+|[saat](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati saati döndürür.|
 |[CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [_ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|**Time_t**, **__time32_t** veya **__time64_t** türünden karakter dizesine kadar olan süreyi dönüştürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
 |[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|İki kez işlem farkı.|
 |[_ftime, _ftime32, _ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md),[_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)|Geçerli sistem saatini **struct _timeb** veya Type struct türünde bir değişkende depolayın **__timeb64** bu işlevlerin sürümleri **_s** sonekiyle daha güvenlidir.|
@@ -42,10 +42,10 @@ Bu işlevleri, geçerli saati almak ve dönüştürmek, ayarlamak ve gerektiği 
 |[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)|Belirtilen dosya için, yapıda depolanan geçerli saat veya saat değerini kullanarak değiştirme süresini ayarlayın.|
 
 > [!NOTE]
-> Microsoft c/C++ C++ sürüm 7,0 ' nin tüm sürümlerinde ve tüm Visual C++sürümlerinde, time işlevi geçerli saati 1 Ocak 1970 ' de gece yarısından beri geçen saniye sayısı olarak döndürür. Microsoft C/C++ sürüm 7,0 ' de, **süresi** 31 Aralık 1899 ' de gece yarısından beri geçen saniye sayısı olarak geçerli saati geri döndürdü.
+> Microsoft c/C++ sürüm 7,0 hariç tüm Microsoft C/C++ sürümlerinde ve tüm Visual C++ sürümlerinde, Time işlevi, 1 Ocak 1970 ' de gece yarısından beri geçen saniye sayısı olarak geçerli saati döndürür. Microsoft C/C++ sürüm 7,0 ' de, **süresi** 31 Aralık 1899 ' de gece yarısından beri geçen saniye sayısı olarak geçerli saati geri döndürdü.
 
 > [!NOTE]
-> Visual C++ Studio 2005 ' nin visual StudioC++ ' den önceki sürümlerinde, **time_t** uzun bir **long** **int** (32 BIT) ve bu nedenle, 19 Ocak 2038, UTC 'den 3:14:07 önceki tarihler için kullanılamadı. **time_t** artık varsayılan olarak **__time64_t** eşdeğerdir, ancak **_USE_32BIT_TIME_T** değişiklik **time_t** ve 32-bit **__time32_t**alan sürümleri **çağırmak için birçok** zaman işlevi zorlayarak. Daha fazla bilgi için, bireysel zaman işlevleri için belgelerde [standart türler](../c-runtime-library/standard-types.md) ve açıklamalar bölümüne bakın.
+> Visual Studio 2005 ' den önceki Visual C++ ve Microsoft C/C++ sürümlerinde, **time_t** bir **`long int`** (32 bit) ve bu nedenle 19 Ocak 2038, UTC 'den 3:14:07 önceki tarihler için kullanılamadı. **time_t** artık varsayılan olarak **__time64_t** eşdeğerdir, ancak **_USE_32BIT_TIME_T** değişiklik **time_t** ve 32-bit **__time32_t**alan sürümleri **çağırmak için birçok** zaman işlevi zorlayarak. Daha fazla bilgi için, bireysel zaman işlevleri için belgelerde [standart türler](../c-runtime-library/standard-types.md) ve açıklamalar bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
