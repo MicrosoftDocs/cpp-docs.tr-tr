@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3163
 ms.assetid: 17dcafa3-f416-4e04-a232-f9569218ba75
-ms.openlocfilehash: 436fb112758dfdec9997ff7e6dd7ef8f9dcdc66e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 29f810ab1ab1608ab9c0492c9f88b8edfe042168
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761783"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390032"
 ---
 # <a name="compiler-error-c3163"></a>Derleyici hatası C3163
 
-' yapı ': öznitelikler önceki bildirimle tutarsız
+> '*Yapı*': öznitelikler önceki bildirimle tutarsız
 
 Bir tanıma uygulanan öznitelikler, bir bildirime uygulanan öznitelik (ler) ile çakışıyor.
 
 C3163 çözümlemek için bir yol, ileri bildiriminde öznitelikleri ortadan kaldırmektir. Bir iletme bildirimindeki tüm öznitelikler, tanımdaki özniteliklerden veya en çoğuna eşit olmalıdır.
 
-C3163 hatasının olası bir nedeni, Microsoft kaynak kodu ek açıklama dili (SAL) ile ilgilidir. **/Analyze** işaretini kullanarak projenizi derlemenize kadar Sal makroları genişlemez. /Analyze olmadan düzgün bir şekilde derlenen bir program,/Analyze seçeneği ile yeniden derlemenize çalışırsanız C3163 oluşturabilir. SAL hakkında daha fazla bilgi için bkz. [sal ek açıklamaları](../../c-runtime-library/sal-annotations.md).
+C3163 hatasının olası bir nedeni, Microsoft kaynak kodu ek açıklama dili (SAL) ile ilgilidir. , Bayrağını kullanarak projenizi derlemediğiniz takdirde SAL makroları genişlemez **`/analyze`** . Seçeneği olmadan düzgün bir şekilde derlenen bir program **`/analyze`** , bunu seçeneğiyle yeniden derlemenize çalışırsanız C3163 oluşturabilir **`/analyze`** . SAL hakkında daha fazla bilgi için bkz. [sal ek açıklamaları](../../c-runtime-library/sal-annotations.md).
 
 ## <a name="example"></a>Örnek
 
@@ -40,4 +40,4 @@ using namespace System;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)
+[SAL ek açıklamaları](../../c-runtime-library/sal-annotations.md)

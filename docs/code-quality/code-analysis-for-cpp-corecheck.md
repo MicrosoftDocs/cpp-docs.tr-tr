@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
-ms.openlocfilehash: 7519706c0a8e23c56f8951647fb16c24d3f1e189
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e85ce8baed9a1ef39e0ab759ab86a5b570a42fa6
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216693"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389954"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Temel Yönergeleri denetleyicisi başvurusu
 
-Bu bölümde C++ Temel Yönergeleri denetleyicisi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [/analyze (kod analizi)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Bu bölümde C++ Temel Yönergeleri denetleyicisi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Bazı uyarılar birden fazla gruba aittir ve tüm uyarıların tamamı bir başvuru konusuna sahip değildir.

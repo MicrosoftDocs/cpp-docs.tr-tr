@@ -1,21 +1,21 @@
 ---
 title: Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
-ms.date: 07/13/2020
+ms.date: 07/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 8b6d3fe8c8e441d4b233f2f4008d8aae9225726f
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: b132400485c041b96e81736bcda04922b2cda88c
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373859"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389824"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 
-Visual Studio 'da, kod analizi ile ilişkili belirli proje ihtiyaçlarını karşılamak için özel bir *kural kümesi* oluşturabilir ve değiştirebilirsiniz. Varsayılan kural kümeleri içinde depolanır `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets` .
+Visual Studio 'da, kod analizi ile ilişkili belirli proje ihtiyaçlarını karşılamak için özel bir *kural kümesi* oluşturabilir ve değiştirebilirsiniz. Varsayılan kural kümeleri içinde depolanır *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`* .
 
-**Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunu, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunu, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis).
 
 Visual Studio 'da özel bir C++ kural kümesi oluşturmak için Visual Studio IDE 'de bir C/C++ projesi açık olmalıdır. Daha sonra kural kümesi düzenleyicisinde bir standart kural kümesi açıp, belirli kuralları ekleyip kaldırarak ve isteğe bağlı olarak, kod analizi bir kuralın ihlal edildiğini belirlediğinde oluşan eylemi değiştirirsiniz.
 
@@ -23,9 +23,11 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Tek bir var olan kural kümesinden özel bir kural oluşturmak için
 
-1. Çözüm Gezgini, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+::: moniker range="<=vs-2017"
 
-1. **Özellikler** sekmesinde, **Kod Analizi**' ni seçin.
+1. Çözüm Gezgini ' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+
+1. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **Kod Analizi** > **genel** özellik sayfasını seçin.
 
 1. **Kural kümesi** açılan listesinde aşağıdakilerden birini yapın:
 
@@ -36,6 +38,25 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
    - **\<Browse...>** Listede olmayan var olan bir kural kümesini belirtmeyi seçin.
 
 1. Kural kümesi düzenleyicisinde kuralları göstermek için **Aç** ' ı seçin.
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+
+1. Çözüm Gezgini ' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+
+1. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **Kod Analizi** > **Microsoft** özellik sayfasını seçin.
+
+1. **Etkin kurallar** açılan listesinde aşağıdakilerden birini yapın:
+
+   - Özelleştirmek istediğiniz kural kümesini seçin.
+
+     \-veya
+
+   - **\<Browse...>** Listede olmayan var olan bir kural kümesini belirtmeyi seçin.
+
+1. Kural kümesi düzenleyicisinde kuralları göstermek için **Aç** ' ı seçin.
+
+::: moniker-end
 
 ## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Kural kümesi düzenleyicisinde bir kural kümesini değiştirmek için
 
@@ -77,41 +98,23 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir metin düzenleyicisinde bir kural kümesi oluşturmak için
 
-Bir metin düzenleyicisinde özel bir kural kümesi oluşturabilir, bunu bir uzantıya sahip herhangi bir yerde saklayabilir `.ruleset` ve [/Analyze: RuleSet](/cpp/build/reference/analyze-code-analysis) derleyici seçeneğiyle uygulayabilirsiniz.
+Bir metin düzenleyicisinde özel bir kural kümesi oluşturabilir, bunu bir uzantıya sahip herhangi bir yerde saklayabilir *`.ruleset`* ve [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis) derleyici seçeneğiyle uygulayabilirsiniz.
 
 Aşağıdaki örnek, başlangıç noktası olarak kullanabileceğiniz temel bir kural kümesi dosyasını gösterir:
 
-::: moniker range="<=vs-2017"
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+<RuleSet Name="New Rule Set" Description="New rules to apply." ToolsVersion="10.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
     <Rule Id="C6001" Action="Warning" />
     <Rule Id="C26494" Action="Warning" />
   </Rules>
 </RuleSet>
 ```
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
-  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
-    <Rule Id="C6001" Action="Warning" />
-    <Rule Id="C26494" Action="Warning" />
-  </Rules>
-</RuleSet>
-```
-
-::: moniker-end
 
 ## <a name="ruleset-schema"></a>RuleSet şeması
 
-Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar. RuleSet şeması içinde depolanır `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd` . Kendi kural kümelerinizi programlama yoluyla yazmak veya özel RuleSets 'in doğru biçime bağlı olup olmadığını doğrulamak için bunu kullanabilirsiniz. Daha fazla bilgi için bkz. [nasıl yapılır: xsd şemasını temel alan XML belgesi oluşturma](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar. RuleSet şeması içinde depolanır *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`* . Kendi kural kümelerinizi programlama yoluyla yazmak veya özel RuleSets 'in doğru biçime bağlı olup olmadığını doğrulamak için bunu kullanabilirsiniz. Daha fazla bilgi için bkz. [nasıl yapılır: xsd şemasını temel alan XML belgesi oluşturma](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

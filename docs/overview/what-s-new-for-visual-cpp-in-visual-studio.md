@@ -3,12 +3,12 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: e8202d03517086192ae893caff0602ec86fcb426
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 28b3708c8064623a364b7a60eb63c508808b0a0b
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226795"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87390006"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -513,12 +513,11 @@ C++ için platformlar arası Web API 'SI olan CPPRestSDK, 2.9.0 sürümüne gün
 
 Yeniden düzenleme ve kod gezintisi için IntelliSense altyapısını kullanan birkaç C++ işlemi çok daha hızlı çalışır. Aşağıdaki sayılar, 3500 projeleriyle Visual Studio Jmıum çözümüne dayalıdır:
 
-|||
-|-|-|
-|Özellik|Performans Iyileştirmesi|
-|Rename|5.3 x|
-|Imzayı Değiştir |4.5 x|
-|Tüm Başvuruları Bul|4.7 x|
+| Özellik | Performans Iyileştirmesi |
+|--|--|
+| Rename | 5.3 x |
+| Imzayı Değiştir | 4.5 x |
+| Tüm Başvuruları Bul | 4.7 x |
 
 C++ artık CTRL + tıklama **tanımına git**' i destekliyor ve tanımlara kolayca gidilme yapıyor. Üretkenlik güç araçları paketinden yapı görselleştiricisi, artık varsayılan olarak ürüne de dahildir.
 
@@ -667,7 +666,7 @@ Visual Studio 2017 ile birlikte gelen Clang/C2 araç takımı artık **`/bigobj`
 
 ##### <a name="visual-studio-2017-version-157"></a>Visual Studio 2017 sürüm 15.7 Sürüm Notları
 
-- Çalıştırılacak kod analizi kurallarını belirtmenize imkan tanıyan [/Analyze: RuleSet](../build/reference/analyze-code-analysis.md)için destek eklendi.
+- İçin destek eklendi [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md) , bu, çalıştırılacak kod analizi kurallarını belirtmenize olanak tanır.
 - Ek C++ Temel Yönergeleri kuralları için destek eklendi.  Daha fazla bilgi için bkz. [C++ temel yönergeleri denetleyicileri kullanma](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
 ## <a name="unit-testing-in-visual-studio-2017"></a>Visual Studio 2017 ' de birim testi
@@ -697,7 +696,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
-  ![Arama](media/search.png)
+  ![Arayın](media/search.png)
 
 - **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklayın.
 

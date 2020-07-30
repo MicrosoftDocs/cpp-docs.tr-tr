@@ -1,33 +1,71 @@
 ---
 title: C++ Temel Yönergeleri denetleyicilerini kullanma
-ms.date: 08/14/2018
+description: C++ Temel Yönergeleri için Microsoft C++ kod analizi kurallarını ayarlama ve kullanma.
+ms.date: 07/27/2020
 ms.topic: conceptual
 dev_langs:
 - CPP
-ms.openlocfilehash: 9c36c17e819e954d66833f059fe794ac14898e75
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8a9c09eba23e2db3c1929cf1e24163947cf015b9
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227731"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389993"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
-C++ Temel Yönergeleri, C++ uzmanları ve tasarımcıları tarafından oluşturulan C++ ' da kodlama hakkında taşınabilir bir yönergeler, kurallar ve en iyi uygulamalar kümesidir. Visual Studio şu anda, C++ için kod çözümleme araçlarının bir parçası olarak bu kuralların bir alt kümesini desteklemektedir. Temel kılavuz dama, Visual Studio 2017 ve Visual Studio 2019 ' de varsayılan olarak yüklenir ve [Visual studio 2015 için bir NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
+C++ Temel Yönergeleri, C++ uzmanları ve tasarımcıları tarafından oluşturulan C++ ' da kodlama hakkında taşınabilir bir yönergeler, kurallar ve en iyi uygulamalar kümesidir. Visual Studio şu anda, C++ için kod çözümleme araçlarının bir parçası olarak bu kuralların bir alt kümesini desteklemektedir. Temel kılavuz dama, Visual Studio 2017 ve Visual Studio 2019 ' de varsayılan olarak yüklenir. [Visual Studio 2015 için bir NuGet paketi olarak kullanılabilir](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>C++ Temel Yönergeleri projesi
 
-Bjarne Stroustrup ve diğerleri tarafından oluşturulan C++ Temel Yönergeleri, modern C++ ' ı güvenli ve etkili bir şekilde kullanmaya yönelik bir kılavuzdur. Yönergeler statik tür güvenliğini ve kaynak güvenliğini vurgular. Bu, dilin hata olasılığı olan kısımlarını ortadan kaldırmaya veya en aza indirmenin yollarını belirler ve kodunuzun daha basit ve daha iyi performans sağlamak için güvenilir bir yol sunar. Bu yönergeler standart C++ temeli tarafından korunur. Daha fazla bilgi edinmek için bkz. belge, [C++ temel yönergeleri](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)ve C++ temel yönergeleri belge proje dosyalarına [GitHub](https://github.com/isocpp/CppCoreGuidelines)'da erişin.
+Bjarne Stroustrup ve diğerleri tarafından oluşturulan C++ Temel Yönergeleri, modern C++ ' ı güvenli ve etkili bir şekilde kullanmaya yönelik bir kılavuzdur. Yönergeler statik tür güvenliğini ve kaynak güvenliğini vurgular. Bu, dilin en fazla hata olasılığı olan kısımlarını ortadan kaldırmaya veya en aza indirmenize yönelik yolları belirler. Ayrıca, kodunuzun daha basit, daha güvenilir ve daha iyi performansa sahip olmasını da öneririz. Bu yönergeler standart C++ temeli tarafından korunur. Daha fazla bilgi edinmek için bkz. belge, [C++ temel yönergeleri](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)ve C++ temel yönergeleri belge proje dosyalarına [GitHub](https://github.com/isocpp/CppCoreGuidelines)'da erişin.
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Kod çözümlemede C++ Temel Denetimi yönergeleri etkinleştirme
 
-Projeniz için **Özellik sayfaları** Iletişim kutusunun **Kod Analizi** bölümünde **derleme üzerinde Kod analizini etkinleştir** onay kutusunu seçerek projenizde kod analizini etkinleştirebilirsiniz.
+::: moniker range="<=vs-2017"
+
+C++ Temel Denetimi kuralların bir alt kümesi, Microsoft yerel olarak önerilen kural kümesine dahildir. Bu, kod analizi etkinleştirildiğinde varsayılan olarak çalışan RuleSet ' dir.
+
+### <a name="to-enable-code-analysis-on-your-project"></a>Projenizde kod analizini etkinleştirmek için
+
+1. Projeniz için **Özellik sayfaları** iletişim kutusunu açın.
+
+1. **Yapılandırma özellikleri** > **Kod Analizi** özellik sayfasını seçin.
+
+1. **Derleme üzerinde Kod analizini etkinleştir** onay kutusunu seçin.
 
 ![Kod Analizi genel ayarları için özellik sayfası](media/cppcorecheck_codeanalysis_general.png)
 
-C++ Temel Denetimi kuralların bir alt kümesi, kod analizi etkinleştirildiğinde varsayılan olarak çalışan Microsoft yerel önerilen kural kümesine dahildir. Ek çekirdek denetimi kurallarını etkinleştirmek için, aşağı açılan listeye tıklayın ve hangi kural kümelerini dahil etmek istediğinizi seçin:
+Ek çekirdek denetimi kurallarını etkinleştirmek için, açılan listeyi açın ve hangi kural kümelerini dahil etmek istediğinizi seçin:
 
 ![Ek C++ Temel Denetimi kural kümeleri için açılan menü](media/cppcorecheck_codeanalysis_extensions.png)
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+
+C++ Temel Denetimi kuralların bir alt kümesi, Microsoft yerel olarak önerilen kural kümesine dahildir. Bu, Microsoft Kod Analizi etkinleştirildiğinde varsayılan olarak çalışan RuleSet ' dir.
+
+### <a name="to-enable-code-analysis-on-your-project"></a>Projenizde kod analizini etkinleştirmek için:
+
+1. Projeniz için **Özellik sayfaları** iletişim kutusunu açın.
+
+1. **Yapılandırma özellikleri** > **Kod Analizi** özellik sayfasını seçin.
+
+1. **Derlemede Kod analizini etkinleştir** ' i ayarlayın ve **Microsoft Kod Analizi özelliklerini etkinleştirin** .
+
+Ayrıca, desteklenen tüm C++ Temel Denetimi kurallarını çalıştırmayı seçebilir veya çalıştırmak için kendi alt kümeinizi seçebilirsiniz:
+
+### <a name="to-enable-additional-core-check-rules"></a>Ek çekirdek denetimi kurallarını etkinleştirmek için
+
+1. Projeniz için **Özellik sayfaları** iletişim kutusunu açın.
+
+1. **Yapılandırma özellikleri** > **Kod Analizi** > **Microsoft** özellik sayfasını seçin.
+
+1. **Etkin kurallar** açılan listesini açın ve **birden çok kural kümesi Seç**' i seçin.
+
+1. **Kural kümeleri Ekle veya Kaldır** iletişim kutusunda hangi kural kümelerini dahil etmek istediğinizi seçin.
+
+::: moniker-end
 
 ## <a name="examples"></a>Örnekler
 
@@ -60,7 +98,7 @@ Bu örnek C++ Temel Denetimi kuralların bulabileceği uyarıların birkaçını
 
 - C26481 kural sınırları. 1: işaretçi aritmetiği kullanmayın. Bunun yerine `span` kullanın.
 
-Bu kodu derlerken C++ Temel Denetimi Code Analysis kural kümeleri yüklenip etkinleştirilirse, ilk iki uyarı çıkışlardır, ancak üçüncüsü bastırılır. Örnek koddan derleme çıktısı aşağıda verilmiştir:
+C++ Temel Denetimi kod analizi kural kümelerini yükleyip etkinleştirin ve sonra bu kodu derleyin. Kod Analizi ilk iki uyarıyı çıkarır ve üçüncüsü bastırır. Visual Studio 2015 'de örnek koddan derleme çıktısı aşağıda verilmiştir:
 
 ```Output
 1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
@@ -72,41 +110,69 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-C++ Temel Yönergeleri daha iyi ve daha güvenli bir kod yazmanıza yardımcı olur. Ancak, bir kuralın veya profilin uygulanmaması gereken bir örneğiniz varsa, doğrudan kodda görüntülenmesini kolaydır. `gsl::suppress`Aşağıdaki kod bloğunda bir kuralın ihlal edildiğini ve raporlanmasını C++ temel denetimi önlemek için özniteliğini kullanabilirsiniz. Belirli kuralları bastırmak için tek tek deyimleri işaretleyebilirsiniz. `[[gsl::suppress(bounds)]]`Belirli bir kural numarası dahil etmeden yazarak tüm sınır profilini de gizleyebilirsiniz.
+C++ Temel Yönergeleri daha iyi ve daha güvenli bir kod yazmanıza yardımcı olur. Ancak, bir kuralın veya profilin uygulanmaması gereken bir örnek bulabilirsiniz. Doğrudan kodda bastırmak kolaydır. `[[gsl::suppress]]`Aşağıdaki kod bloğunda bir kuralın ihlal edildiğini ve raporlanmasını C++ temel denetimi önlemek için özniteliğini kullanabilirsiniz. Belirli kuralları bastırmak için tek tek deyimleri işaretleyebilirsiniz. `[[gsl::suppress(bounds)]]`Belirli bir kural numarası dahil etmeden yazarak tüm sınır profilini de gizleyebilirsiniz.
 
 ## <a name="supported-rule-sets"></a>Desteklenen kural kümeleri
 
-C++ Temel Yönergeleri denetleyicisi 'ne yeni kurallar eklendikçe, önceden var olan kod için üretilen uyarı sayısı artmayabilir. Etkinleştirilecek kural türlerini filtrelemek için, önceden tanımlanmış kural kümelerini kullanabilirsiniz.
-Kuralların çoğu için başvuru konuları [Visual Studio C++ temel denetimi Reference](code-analysis-for-cpp-corecheck.md)altındadır.
+C++ Temel Yönergeleri denetleyicisi 'ne yeni kurallar eklendikçe, önceden var olan kod için üretilen uyarı sayısı artmayabilir. Etkinleştirilecek kural türlerini filtrelemek için, önceden tanımlanmış kural kümelerini kullanabilirsiniz. [Visual Studio C++ temel denetimi Reference](code-analysis-for-cpp-corecheck.md)' ın altındaki kurallara ilişkin başvuru makalelerini bulacaksınız.
 
-Visual Studio 2017 sürüm 15,3 itibariyle desteklenen kural kümeleri şunlardır:
+- **Aritmetik kurallar**: aritmetik [taşma](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [imzalanmış imzasız işlemler](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned)ve [bit işlemesini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)algılamaya yönelik kurallar. <sup>15,6</sup>
 
-- **Sahip Işaretçisi kuralları** [ \<T> C++ temel yönergeleri sahip ile ilgili kaynak yönetimi denetimlerini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)uygular.
+- **Sınır kuralları**: [C++ temel yönergeleri sınır profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)zorlar. <sup>15,3</sup>
 
-- **Const kuralları** [C++ temel yönergeleri const ile ilgili denetimleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)uygular.
+- **Sınıf kuralları**: özel üye işlevlerinin ve sanal belirtimlerinin uygun kullanımına odaklanabilecek birkaç kural. [Sınıflar ve sınıf hiyerarşileri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)için önerilen denetimlerin bir alt kümesidir. <sup>15,5</sup>
 
-- **Ham Işaretçi kuralları** [C++ temel yönergeleri ham işaretçilerle ilgili kaynak yönetimi denetimlerini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)uygular.
+- **Eşzamanlılık kuralları**: Hatalı koruyucu nesne bildirimlerini yakalayan tek bir kural. Daha fazla bilgi için bkz. [eşzamanlılık ile ilgili yönergeler](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). <sup>15,5</sup>
 
-- **Benzersiz Işaretçi kuralları** [C++ temel yönergeleri benzersiz işaretçi semantiğine sahip türlerle ilgili kaynak yönetimi denetimlerini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)uygular.
+- **Const kuralları**: [C++ temel yönergeleri const ile ilgili denetimleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)zorla. <sup>15,3</sup>
 
-- **Sınır kuralları** [C++ temel yönergeleri sınır profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)zorlar.
+- **Bildirim kuralları**: genel değişkenlerin nasıl [bildiribileceğine odaklanarak arabirimler yönergelerinden](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) oluşan birkaç kural. <sup>15,5</sup>
 
-- **Tür kuralları** [C++ temel yönergeleri tür profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)zorlar.
+- **Numaralandırma kuralları**: Bu kurallar [, C++ temel yönergeleri Enum ile ilgili denetimleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum)uygular. <sup>16,3</sup>
 
-**Visual Studio 2017 sürüm 15,5**:
+- **Deneysel kurallar** Bunlar, çok yararlı olan ancak günlük kullanıma yönelik olmayan C++ Temel Denetimi kurallardır. Bunları deneyin ve [geri bildirim sağlayın](https://developercommunity.visualstudio.com/content/idea/post.html?space=62). <sup>16,0</sup>
 
-- **Sınıf kuralları** Özel üye işlevlerinin ve sanal belirtimlerinin uygun kullanımına odaklanarak birkaç kural. Bu, [sınıflar ve sınıf hiyerarşileri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)için önerilen denetimlerin bir alt kümesidir.
-- **Eşzamanlılık kuralları** Kötü olarak tanımlanmış koruyucu nesnelerini yakalayan tek bir kural. Daha fazla bilgi için bkz. [eşzamanlılık ile ilgili yönergeler](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
-- **Bildirim kuralları** [Arabirimler yönergelerinden](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) gelen ve genel değişkenlerin nasıl bildirildiği üzerinde odaklanılmış olan birkaç kural.
-- **Işlev kuralları** Belirleyici benimseme konusunda yardımcı olan iki denetim **`noexcept`** . Bu, [clear işlevi tasarımı ve uygulamasıyla](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)ilgili yönergelerin bir parçasıdır.
-- **Paylaşılan Işaretçi kuralları** [Kaynak yönetimi](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) yönergeleri zorlaması kapsamında, paylaşılan işaretçilerin işlevlere nasıl geçirildiğine veya yerel olarak nasıl kullanıldığına özgü birkaç kural ekledik.
-- **Stil kuralları** [Goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)'in kullanıldığı basit ancak önemli bir denetim. Bu, C++ ' da kodlama stili ve ifadelerin ve deyimlerin geliştirmesinde ilk adımdır.
+- **Işlev kuralları**: belirticinin benimsenmesine yardımcı olan iki denetim **`noexcept`** . [Açık işlev tasarımı ve uygulamasıyla](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)ilgili yönergelerin bir parçasıdır. <sup>15,5</sup>
 
-**Visual Studio 2017 sürüm 15,6**:
+- **GSL kuralları**: Bu kurallar, [C++ temel yönergeleri kılavuz destek kitaplığıyla](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-gsl)ilgili denetimleri uygular. <sup>15,7</sup>
 
-- **Aritmetik kurallar** Aritmetik [taşma](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [imzalanmış imzasız işlemleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) ve [bit işlemesini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative)algılamaya yönelik kurallar.
+- **Ömür kuralları**: bu kurallar [C++ temel yönergeleri ömür profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prolifetime-lifetime-safety-profile)uygular. <sup>15,7</sup>
 
-Uyarıları yalnızca bir veya birkaç gruptan sınırlandırmayı seçebilirsiniz. **Yerel en düşük** ve **Yerel önerilen** kural kümeleri, diğer ön hızlı denetimlerin yanı sıra C++ temel denetimi kuralları içerir. Kullanılabilir kural kümelerini görmek için, proje özellikleri iletişim kutusunu açın, **kod Analysis\genel**' i seçin, **kural kümeleri** açılan kutusunda açılan menüyü açın ve **birden çok kural kümesi seçin**. Visual Studio 'da kural kümeleri kullanma hakkında daha fazla bilgi için bkz. [çalıştırılacak C++ kurallarını belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- **Sahip Işaretçisi kuralları**: [ \<T> C++ temel yönergeleri sahip ile ilgili kaynak yönetimi denetimlerini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)zorlayın.<sup> 15,3</sup>
+
+- **Ham Işaretçi kuralları**: [C++ temel yönergeleri ham işaretçilerle ilgili kaynak yönetimi denetimlerini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)zorlayın. <sup>15,3</sup>
+
+- **Paylaşılan Işaretçi kuralları**: [kaynak yönetimi](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) yönergeleri zorlaması 'nın bir parçasıdır. <sup>15,5</sup> paylaşılan işaretçilerin işlevlere nasıl geçirildiğine veya yerel olarak nasıl kullanıldığına özgü birkaç kural ekledik.
+
+- **STL kuralları**: Bu kurallar, [C++ temel yönergeleri C++ standart kitaplığı (STL)](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-stdlib)ile ilgili denetimleri uygular. <sup>15,7</sup>
+
+- **Stil kuralları**: [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto)'in kullanıldığı basit ancak önemli bir denetim. <sup>15,5</sup> , kodlama stilinizi ve C++ ' da ifadelerin ve deyimlerin kullanımını geliştirmenin ilk adımıdır.
+
+- **Tür kuralları**: [C++ temel yönergeleri tür profilini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)zorla. <sup>15,3</sup>
+
+- **Benzersiz Işaretçi kuralları**: [C++ temel yönergeleri benzersiz işaretçi semantiğine sahip türlerle ilgili kaynak yönetimi denetimlerini](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)zorlayın. <sup>15,3</sup>
+
+- **C++ temel denetimi kuralları**: Bu kural kümesi, deneysel kurallar dışında, şu anda uygulanmış olan tüm denetimleri içerir [C++ temel yönergeleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c-core-guidelines).
+
+<sup>15,3</sup> bu kurallar Ilk olarak Visual Studio 2017 sürüm 15,3 \ ' de görüntülendi.
+<sup>15,5</sup> bu kurallar Ilk olarak Visual Studio 2017 sürüm 15,5 \ ' de görüntülendi.
+<sup>15,6</sup> bu kurallar Ilk olarak Visual Studio 2017 sürüm 15,6 \ ' de görüntülendi.
+<sup>15,7</sup> bu kurallar Ilk olarak Visual Studio 2017 sürüm 15,7 \ ' de görüntülendi.
+<sup>16,0</sup> bu kurallar Ilk olarak Visual Studio 2019 sürüm 16,0 \ ' de görüntülendi.
+<sup>16,3</sup> bu kurallar Ilk olarak Visual Studio 2019 sürüm 16,3 ' de görüntülendi
+
+Uyarıları yalnızca bir veya birkaç gruptan sınırlandırmayı seçebilirsiniz. **Yerel en düşük** ve **Yerel önerilen** kural kümeleri C++ temel denetimi kuralları ve diğer ön hızlı denetimleri içerir.
+
+::: moniker range="<=vs-2017"
+
+Kullanılabilir kural kümelerini görmek için, **Proje özellikleri** iletişim kutusunu açın. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri**  >  **Kod Analizi**  >  **genel** özellik sayfasını seçin. Ardından, kullanılabilir kural kümelerini görmek için, **kural kümeleri** açılan kutusunda açılan menüyü açın. Kural kümelerinin özel bir birleşimini oluşturmak için, **birden çok kural kümesi Seç**' i seçin. **Kural kümeleri Ekle veya Kaldır** iletişim kutusu, aralarından seçim yapabileceğiniz kuralları listeler. Visual Studio 'da kural kümeleri kullanma hakkında daha fazla bilgi için bkz. [çalıştırılacak C++ kurallarını belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+
+::: moniker-end
+::: moniker range=">=vs-2019"
+
+Kullanılabilir kural kümelerini görmek için, **Proje özellikleri** iletişim kutusunu açın. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri**  >  **Kod Analizi**  >  **Microsoft** özellik sayfasını seçin. Ardından, kullanılabilir kural kümelerini görmek için **etkin kurallar** açılan kutusunda açılan menüyü açın. Kural kümelerinin özel bir birleşimini oluşturmak için, **birden çok kural kümesi Seç**' i seçin. **Kural kümeleri Ekle veya Kaldır** iletişim kutusu, aralarından seçim yapabileceğiniz kuralları listeler. Visual Studio 'da kural kümeleri kullanma hakkında daha fazla bilgi için bkz. [çalıştırılacak C++ kurallarını belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+
+::: moniker-end
 
 ## <a name="macros"></a>Makrolar
 
@@ -132,7 +198,7 @@ Bu makrolar, kural kümelerine karşılık gelir ve uyarı numaralarının boşl
 
 ## <a name="attributes"></a>Öznitelikler
 
-Microsoft C++ derleyicisinin GSL gösterme özniteliği için sınırlı bir desteği vardır. Bu, bir işlev içindeki ifade ve blok deyimlerindeki uyarıları gizlemek için kullanılabilir.
+Microsoft C++ derleyicisinin özniteliği için sınırlı desteği vardır `[[gsl::suppress]]` . Deyim ve işlev içindeki blok deyimlerindeki uyarıları bastırmak için kullanılabilir.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -158,26 +224,33 @@ Microsoft C++ derleyicisinin GSL gösterme özniteliği için sınırlı bir des
 
 #Pragmas yerine, bir proje veya tek bir dosya için uyarıları bastırmak üzere dosyanın özellik sayfasında komut satırı seçeneklerini kullanabilirsiniz. Örneğin, bir dosya için uyarı C26400 devre dışı bırakmak için:
 
-1. **Çözüm Gezgini** dosyaya sağ tıklayın
+1. **Çözüm Gezgini** dosyasında dosyaya sağ tıklayın ve **Özellikler**' i seçin.
 
-1. **Özellikleri Seç | C/C++ | Komut satırı**
+1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. **Ek seçenekler** penceresinde, ekleyin `/wd26400` .
+1. **Ek seçenekler** düzenleme kutusunda, ekleyin *`/wd26400`* .
 
-Komut satırı seçeneğini belirterek, bir dosyanın tüm kod analizini geçici olarak devre dışı bırakabilirsiniz `/analyze-` . Bu, Kod analizini daha sonra yeniden etkinleştirmenizi hatırlatır ve ' */analiz ze-' ile '/Analyze ' değerini geçersiz kılan*bir uyarı oluşturur.
+Komut satırı seçeneğini belirterek, bir dosyanın tüm kod analizini geçici olarak devre dışı bırakabilirsiniz **`/analyze-`** . Daha sonra kod analizini yeniden etkinleştirmenizi hatırlatır, ' */analiz ze-' ile '/Analyze ' öğesini geçersiz kılmayı*bildiren bir uyarı D9025 görürsünüz.
 
 ## <a name="enable-the-c-core-guidelines-checker-on-specific-project-files"></a><a name="corecheck_per_file"></a>Belirli proje dosyalarında C++ Temel Yönergeleri denetleyiciyi etkinleştirin
 
-Bazen odaklanmış kod analizi yapmak ve Visual Studio IDE 'yi kullanmaya devam etmek faydalı olabilir. Aşağıdaki örnek senaryo, derleme süresini kaydetmek ve sonuçların filtrelanmasını kolaylaştırmak için büyük projeler için kullanılabilir:
+Bazen odaklanmış kod analizi yapmak ve Visual Studio IDE 'yi kullanmaya devam etmek faydalı olabilir. Büyük projeler için aşağıdaki örnek senaryoyu deneyin. Derleme süresini kaydedebilir ve sonuçların filtrelemesine daha kolay hale getirebilirsiniz:
 
 1. Komut kabuğu 'nda `esp.extension` ve `esp.annotationbuildlevel` ortam değişkenlerini ayarlayın.
+
 1. Bu değişkenleri devralması için komut kabuğundan Visual Studio 'Yu açın.
+
 1. Projenizi yükleyin ve özelliklerini açın.
+
 1. Kod analizini etkinleştirin, uygun kural kümelerini seçin, ancak kod analizi uzantılarını etkinleştirmeyin.
+
 1. C++ Temel Yönergeleri denetleyicisi ile çözümlemek istediğiniz dosyaya gidin ve özelliklerini açın.
-1. **C/C++ \ komut satırı seçeneklerini** belirleyin ve Ekle`/analyze:plugin EspXEngine.dll`
-1. Önceden derlenmiş üstbilginin kullanımını devre dışı bırakın (**C/C++ \ önceden derlenmiş üstbilgiler**). Uzantı altyapısı, ön derlenmiş üst bilgiden (PCH) iç bilgilerini okumaya çalışabileceğinden bu gereklidir; PCH varsayılan proje seçenekleriyle derlenirse, uyumlu olmaz.
-1. Projeyi yeniden derleyin. Ortak önceden denetim denetimleri tüm dosyalarda çalıştırılmalıdır. C++ Temel Yönergeleri denetleyicisi varsayılan olarak etkinleştirilmediğinden, yalnızca onu kullanmak üzere yapılandırılmış dosya üzerinde çalışmalıdır.
+
+1. **Yapılandırma özelliklerini**seçin  >  **C/C++**  >  **komut satırı**  >  **ek seçenekler** ve Ekle*`/analyze:plugin EspXEngine.dll`*
+
+1. Önceden derlenmiş üstbilginin kullanımını devre dışı bırakın (**yapılandırma özellikleri**  >  **C/C++**  >  **önceden derlenmiş üst bilgiler**). Uzantı altyapısı, ön derlenmiş üst bilgiden (PCH) iç bilgilerini okumaya çalışabileceğinden, gereklidir. PCH varsayılan proje seçenekleriyle derlenmişse uyumlu olmaz.
+
+1. Projeyi yeniden derleyin. Ortak önceden denetim denetimleri tüm dosyalarda çalıştırılmalıdır. C++ Temel Yönergeleri denetleyicisi varsayılan olarak etkin olmadığından, yalnızca onu kullanmak üzere yapılandırılmış dosya üzerinde çalışmalıdır.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>C++ Temel Yönergeleri denetleyiciyi Visual Studio dışında kullanma
 
@@ -195,9 +268,9 @@ Yerel kod analizi denetleyicisi (PREfast), MSBuild ortamıyla özel hedef dosyal
   </PropertyGroup>
 ```
 
-Microsoft. cpp. targets dosyasını içeri aktarmadan önce bu özellikleri eklediğinizden emin olun. Belirli kural kümelerini seçebilir veya özel bir kural kümesi oluşturabilir veya diğer ön denetimleri içeren varsayılan kural kümesini kullanabilirsiniz.
+Dosya içeri aktarmadan önce bu özellikleri eklediğinizden emin olun *`Microsoft.Cpp.targets`* . Belirli kural kümelerini seçebilir veya özel bir kural kümesi oluşturabilirsiniz. Ya da, diğer ön denetimleri içeren varsayılan kural kümesini kullanın.
 
-C++ Core Checker 'ı yalnızca, [daha önce açıklanan](#corecheck_per_file)yaklaşımı kullanarak ve MSBuild dosyalarını kullanarak yalnızca belirtilen dosyalarda çalıştırabilirsiniz. Ortam değişkenleri şu öğe kullanılarak ayarlanabilir `BuildMacro` :
+C++ Core Checker 'ı yalnızca belirtilen dosyalarda çalıştırabilirsiniz. [Daha önce açıklandığı](#corecheck_per_file)gibi aynı yaklaşımı kullanın, ancak MSBuild dosyalarını kullanın. Ortam değişkenleri şu öğe kullanılarak ayarlanabilir `BuildMacro` :
 
 ```xml
 <ItemGroup>
@@ -220,30 +293,32 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 
 ### <a name="non-msbuild-projects"></a>MSBuild olmayan projeler
 
-MSBuild 'e bağlı olmayan bir yapı sistemi kullanıyorsanız, denetleyiciyi yine de çalıştırabilirsiniz, ancak kod çözümleme altyapısı yapılandırmasının bazı iç kodlarını tanımanız gerekir. Gelecekte bu iç yapıları desteklenecek garanti edilmez.
+MSBuild üzerinde olmayan bir yapı sistemi kullanıyorsanız, denetleyiciyi çalışmaya devam edebilirsiniz. Bunu kullanmak için, kod analizi altyapısı yapılandırmasının bazı iç kodlarını tanımanız gerekir. Visual Studio 'nun gelecek sürümlerinde bu iç yapılar için destek garantisi vermeyiz.
 
-Birkaç ortam değişkeni ayarlamanız ve derleyici için uygun komut satırı seçeneklerini kullanmanız gerekir. Derleyici, dizin ekleme vb. için belirli yolları aramanız gerekmiyorsa, "yerel araçlar komut Istemi" ortamı altında çalışmak daha iyidir.
+Kod analizi için birkaç ortam değişkeni ve derleyici komut satırı seçeneği gereklidir. Derleyici, dizin ekleme vb. için belirli yolları aramanız gerekmiyorsa **Yerel araçlar komut istemi** ortamını kullanmanızı öneririz.
 
 - **Ortam değişkenleri**
   - `set esp.extensions=cppcorecheck.dll`Bu, altyapıya C++ Temel Yönergeleri modülünü yüklemesini söyler.
   - `set esp.annotationbuildlevel=ignore`Bu, SAL ek açıklamalarını işleyen mantığı devre dışı bırakır. Ek açıklamalar C++ Temel Yönergeleri denetleyicisi 'nde Kod analizini etkilemez, ancak işlemleri zaman alır (bazen uzun zaman). Bu ayar isteğe bağlıdır, ancak önemle önerilir.
-  - `set caexcludepath=%include%`Standart üstbilgiler üzerinde harekete çıkabilecek uyarıları devre dışı bırakmanızı kesinlikle öneririz. Buraya daha fazla yol ekleyebilirsiniz. Örneğin, projenizdeki ortak üst bilgilerin yolu.
+  - `set caexcludepath=%include%`Standart üstbilgiler üzerinde başlatılan uyarıları devre dışı bırakmanızı kesinlikle öneririz. Buraya daha fazla yol ekleyebilirsiniz. Örneğin, projenizdeki ortak üst bilgilerin yolu.
 
 - **Komut satırı seçenekleri**
-  - `/analyze`Kod analizini etkinleştirilir (yalnızca/Analyze: Only ve/Analyze: quiet) kullanmayı düşünün.
-  - `/analyze:plugin EspXEngine.dll`Bu seçenek, kod analizi uzantıları altyapısını önceden hızlı yükler. Bu altyapı, sırasıyla C++ Temel Yönergeleri denetleyiciyi yükler.
+  - **`/analyze`** Kod analizini etkinleştirilir (ve kullanmayı da **`/analyze:only`** düşünün **`/analyze:quiet`** ).
+  - **`/analyze:plugin EspXEngine.dll`** Bu seçenek, kod analizi uzantıları altyapısını önceden hızlı yükler. Bu altyapı, sırasıyla C++ Temel Yönergeleri denetleyiciyi yükler.
 
 ## <a name="use-the-guideline-support-library"></a>Kılavuz desteği kitaplığını kullanma
 
-Kılavuz Desteği kitaplığı, temel yönergeleri takip etmenize yardımcı olmak için tasarlanmıştır. GSL, hataya açık olan yapıları daha güvenli alternatifler ile değiştirmenize olanak tanıyan tanımlar içerir. Örneğin, bir `T*, length` parametre çiftini `span<T>` türüyle değiştirebilirsiniz. GSL, adresinde bulunabilir [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl) . Kitaplık açık kaynağıdır, bu sayede kaynakları görüntüleyebilir, yorum yapabilir veya katkıda bulunabilirsiniz. Proje adresinde bulunabilir [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL) .
+Kılavuz Desteği kitaplığı (GSL), temel yönergeleri takip etmenize yardımcı olmak için tasarlanmıştır. GSL, hataya açık olan yapıları daha güvenli alternatifler ile değiştirmenize olanak tanıyan tanımlar içerir. Örneğin, bir `T*, length` parametre çiftini `span<T>` türüyle değiştirebilirsiniz. GSL, adresinde bulunabilir [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl) . Kitaplık açık kaynağıdır, bu sayede kaynakları görüntüleyebilir, yorum yapabilir veya katkıda bulunabilirsiniz. Proje adresinde bulunabilir [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL) .
+
+::: moniker range="vs-2015"
 
 ## <a name="use-the-c-core-check-guidelines-in-visual-studio-2015-projects"></a><a name="vs2015_corecheck"></a>Visual Studio 2015 projelerinde C++ Temel Denetimi yönergeleri kullanma
 
-Visual Studio 2015 kullanıyorsanız, C++ Temel Denetimi Code Analysis kural kümeleri varsayılan olarak yüklenmez. Visual Studio 2015 ' de C++ Temel Denetimi Code Analysis araçlarını etkinleştirebilmeniz için bazı ek adımlar gerçekleştirmeniz gerekir. Microsoft, bir NuGet paketi kullanarak Visual Studio 2015 projeleri için destek sağlar. Paket Microsoft. CppCoreCheck olarak adlandırılmıştır ve ' de mevcuttur [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck) . Bu paket, güncelleştirme 1 ile en az Visual Studio 2015 yüklü olmasını gerektirir.
+Visual Studio 2015 kullanıyorsanız, C++ Temel Denetimi Code Analysis kural kümeleri varsayılan olarak yüklenmez. Visual Studio 2015 ' de C++ Temel Denetimi Code Analysis araçlarını etkinleştirebilmeniz için ek adımlar gerekir. Microsoft, bir NuGet paketi kullanarak Visual Studio 2015 projeleri için destek sağlar. Paket Microsoft. CppCoreCheck olarak adlandırılmıştır ve ' de mevcuttur [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck) . Bu paket, güncelleştirme 1 ile en az Visual Studio 2015 yüklü olmasını gerektirir.
 
-Paket, yalnızca üst bilgi kılavuz destek kitaplığı (GSL) olan bir bağımlılık olarak başka bir paket de yüklüyor. GSL, konumundaki GitHub 'da da kullanılabilir [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL) .
+Paket, yalnızca üst bilgi kılavuz Desteği kitaplığı (GSL) olarak başka bir paket de bir bağımlılık olarak yüklenir. GSL, konumundaki GitHub 'da da kullanılabilir [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL) .
 
-Kod Analizi kurallarının yüklenme biçimi nedeniyle, Visual Studio 2015 içinde denetlemek istediğiniz her C++ projesine Microsoft. CppCoreCheck NuGet paketini yüklemelisiniz.
+Kod Analizi kurallarının Visual Studio 2015 içinde yüklenme biçimi nedeniyle, `Microsoft.CppCoreCheck` denetlemek istediğiniz her C++ projesine NuGet paketini yüklemelisiniz.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de projenize Microsoft. CppCoreCheck paketini eklemek için
 
@@ -255,7 +330,9 @@ Kod Analizi kurallarının yüklenme biçimi nedeniyle, Visual Studio 2015 için
 
 1. Microsoft. CppCoreCheck paketini seçin ve ardından, kuralları projenize eklemek için **yükler** düğmesini seçin.
 
-   NuGet paketi projenize kod analizini etkinleştirdiğinizde çağrılan, projenize ek bir MSBuild *. targets* dosyası ekler. Bu *. targets* dosyası, C++ temel denetimi kurallarını Visual Studio Code Analysis aracına ek bir uzantı olarak ekler. Paket yüklendiğinde, yayınlanan ve deneysel kuralları etkinleştirmek veya devre dışı bırakmak için özellik sayfaları iletişim kutusunu kullanabilirsiniz.
+   NuGet paketi projenize *`.targets`* Kod analizini etkinleştirdiğinizde çağrılan ek bir MSBuild dosyası ekler. *`.targets`* Dosya, C++ temel denetimi kurallarını Visual Studio Code Analysis aracına ek bir uzantı olarak ekler. Paket yüklendiğinde, yayınlanan ve deneysel kuralları etkinleştirmek veya devre dışı bırakmak için özellik sayfaları iletişim kutusunu kullanabilirsiniz.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

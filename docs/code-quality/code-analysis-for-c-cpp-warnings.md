@@ -1,5 +1,5 @@
 ---
-title: C/C++ uyarılar için kod analizi
+title: C/C++ uyarıları için kod analizi
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -13,18 +13,18 @@ helpviewer_keywords:
 - native code analysis
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
-ms.openlocfilehash: 781a904bed40a07a0448203b8887663f39caeed0
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 5562df8b6f0cfba6799e208acb9c1c223fb53e5e
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418930"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389980"
 ---
-# <a name="code-analysis-for-cc-warnings"></a>C/C++ uyarılar için kod analizi
+# <a name="code-analysis-for-cc-warnings"></a>C/C++ uyarıları için kod analizi
 
-Bu bölümde,C++ [ C++ temel kılavuz denetleyicileri](code-analysis-for-cpp-corecheck.md)tarafından oluşturulan C/Code analiz uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [/analyze (kod analizi)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Bu bölümde, [C++ temel yönergeleri denetleyicileri](code-analysis-for-cpp-corecheck.md)tarafından oluşturulan C/C++ kod analizi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Kod Çözümlemesi ile C/C++ Kod Kalitesini Çözümleme](../code-quality/code-analysis-for-c-cpp-overview.md)
+- [Kod Analizini Kullanarak C/C++ Kod Kalitesini Analiz Etme](../code-quality/code-analysis-for-c-cpp-overview.md)
 - [C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3028
 ms.assetid: 175e697f-8e8f-492a-8456-6240ffbbb900
-ms.openlocfilehash: 0a497de92d782f65bfc27db27755718e7c6bbdbe
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 623197a615c05adad52676b93fb58a62f805741e
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74735886"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389863"
 ---
 # <a name="compiler-error-c3028"></a>Derleyici hatası C3028
 
@@ -79,8 +79,7 @@ MyClass::MyClass(int x) {
    // OK
       ;
 
-   #pragma omp parallel reduction(+: x, g_i, MyClass::x_public,
-   MyClass::x_private)
+   #pragma omp parallel reduction(+: x, g_i, MyClass::x_public, MyClass::x_private)
    // OK
       ;
 

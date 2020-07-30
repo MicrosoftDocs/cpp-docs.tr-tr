@@ -2,12 +2,12 @@
 title: Visual C++ yeni 2003&#39;2015
 ms.date: 07/02/2019
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: e0fc576e8478a8d86d54daee22d797744eb870b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8c73cf5fbd35c747f648ad2475a9ad49162a58d9
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219462"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389941"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ yeni 2003&#39;2015
 
@@ -1850,7 +1850,7 @@ PROP_ENTRY_TYPE ve PROP_ENTRY_TYPE_EX işlevlerini genişletmek için ATL 'ye ye
 
 #### <a name="analyze-warnings"></a>/Analyze uyarıları
 
-Çoğu `/analyze` (kurumsal kod analizi) uyarıları C çalışma zamanı (CRT), MFC ve ATL kitaplıklarından kaldırılmıştır.
+Çoğu **`/analyze`** (kurumsal kod analizi) uyarıları C çalışma zamanı (CRT), MFC ve ATL kitaplıklarından kaldırılmıştır.
 
 #### <a name="animation-and-d2d-support"></a>Animasyon ve D2D desteği
 

@@ -1,19 +1,19 @@
 ---
-title: Önemli Hata C1083
+title: Önemli hata C1083
 ms.date: 09/01/2017
 f1_keywords:
 - C1083
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-ms.openlocfilehash: 87f3440dc71246c3a925ed3d64f8ccf1b2c28cd1
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: f51e93475f104f165895c9d7e2733d741af30502
+ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404287"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87389785"
 ---
-# <a name="fatal-error-c1083"></a>Önemli Hata C1083
+# <a name="fatal-error-c1083"></a>Önemli hata C1083
 
 > Dosya *türü* açılamıyor: '*Dosya*': *ileti*
 
@@ -29,7 +29,7 @@ istediğiniz dosyayı bulamayabilirsiniz. Çoğu C++ standart kitaplığı üstb
 
 `#include <algorithm>`
 
-Belirli C Çalışma Zamanı Kitaplığı üstbilgileri , standart ekleme dizininin alt dizininde yer alır. Örneğin, sys/Types. h 'yi dahil etmek için, yönergesine sys alt dizin adını dahil etmeniz gerekir `#include` :
+Belirli C Çalışma Zamanı Kitaplığı üstbilgileri , standart ekleme dizininin alt dizininde yer alır. Örneğin, dahil etmek için *`sys/types.h`* *`sys`* yönergede alt dizin adını dahil etmeniz gerekir `#include` :
 
 `#include <sys/types.h>`
 
@@ -45,9 +45,9 @@ Ad açılı parantezlerle çevrelenise,
 
 `#include <stdio.h>`
 
-Derleyici, yapı ortamı, **/ı** derleyici seçeneği, **/x** derleyici seçeneği ve **Include** ortam değişkeni tarafından tanımlanan bir arama yolunu izler. Dosya bulmak için kullanılan arama sırasına ilişkin belirli ayrıntılar dahil olmak üzere daha fazla bilgi için, bkz. [#include yönergesi (C/C++)](../../preprocessor/hash-include-directive-c-cpp.md) ve [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
+Derleyici, derleme ortamı, **`/I`** derleyici seçeneği, **`/X`** derleyici seçeneği ve **Include** ortam değişkeni tarafından tanımlanan bir arama yolunu izler. Dosya bulmak için kullanılan arama sırasına ilişkin belirli ayrıntılar dahil olmak üzere daha fazla bilgi için, bkz. [#include yönergesi (C/C++)](../../preprocessor/hash-include-directive-c-cpp.md) ve [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md).
 
-İçerme dosyalarınız, kaynak dizininizle ilişkili başka bir dizinde yer alıyorsa ve dahil etme yönergelerinden göreli bir yol kullanıyorsanız, açılı ayraçlar yerine çift tırnak işareti kullanmanız gerekir. Örneğin, MyHeader. h başlık dosyanız, üst bilgiler adlı proje kaynaklarınızın alt dizinindeyse, bu örnek dosyayı bulamaz ve C1083 neden olur:
+İçerme dosyalarınız, kaynak dizininizle ilişkili başka bir dizinde yer alıyorsa ve dahil etme yönergelerinden göreli bir yol kullanıyorsanız, açılı ayraçlar yerine çift tırnak işareti kullanmanız gerekir. Örneğin, üst bilgi dosyanız, *`myheader.h`* üst bilgiler adlı proje kaynaklarınızın bir alt dizinindeyse, bu örnek dosyayı bulamaz ve C1083 neden olur:
 
 `#include <headers\myheader.h>`
 
@@ -55,23 +55,23 @@ Ancak bu örnek şu şekilde geçerlidir:
 
 `#include "headers\myheader.h"`
 
-Göreli yollar Ayrıca, ekleme arama yolundaki dizinlerle birlikte kullanılabilir. **Include** ortam değişkenine veya Visual Studio 'Daki **içerme dizinleri** yolunuza bir dizin eklerseniz, yolun bir parçasını dahil etme yönergelerine de eklemeyin. Örneğin, üstbilgileriniz \yol\example\headers\myheader.h dizininde bulunuyorsa ve Visual Studio 'daki **Include Dizin** yolunuza \yol\example\headers\ eklerseniz, ancak `#include` yönerggeniz dosyayı şu şekilde ifade eder:
+Göreli yollar Ayrıca, ekleme arama yolundaki dizinlerle birlikte kullanılabilir. **Include** ortam değişkenine veya Visual Studio 'Daki **içerme dizinleri** yolunuza bir dizin eklerseniz, yolun bir parçasını dahil etme yönergelerine de eklemeyin. Örneğin, üstbilgileriniz adresinde bulunuyorsa *`\path\example\headers\myheader.h`* ve *`\path\example\headers\`* Visual Studio 'Da **içerme dizinleri** yolunuza eklerseniz, `#include` yönerggeniz dosyayı şu şekilde gösterir:
 
 `#include <headers\myheader.h>`
 
-Dosya bulunamadı. Ekleme arama yolunda belirtilen dizine göre doğru yolu kullanın. Bu örnekte, arama yolunu ekleme yolunu \yol\Örnek olarak değiştirebilir \, veya yönergesinden üstbilgiler \ yol kesimini kaldırabilirsiniz `#include` .
+Dosya bulunamadı. Ekleme arama yolunda belirtilen dizine göre doğru yolu kullanın. Bu örnekte, arama yolunu Ekle *`\path\example\`* ' yi değiştirebilir veya *`headers\`* yönergeden yol kesimini kaldırabilirsiniz `#include` .
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve vcpkg
 
-Derlemeniz kapsamında bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, kitaplığı yüklemek ve derlemek için [vcpkg](../../vcpkg.md)'Yi bir C++ paket yöneticisi olarak kullanmayı düşünün. vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar.
+Derlemenizi bir parçası olarak bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, [`vcpkg`](../../vcpkg.md) kitaplığı yüklemek ve derlemek için bir C++ paket yöneticisi kullanmayı düşünün. vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar.
 
 ## <a name="the-file-is-in-your-project-but-not-the-include-search-path"></a>Dosya projenizde, ancak içerme arama yolu değil
 
-Üst bilgi dosyaları bir projenin parçası olarak **Çözüm Gezgini** listelendiğinde bile, dosyalar yalnızca derleyici tarafından `#include` `#import` kaynak dosyadaki bir veya yönergeyle başvurulduğu zaman ve ekleme arama yolunda yer alır. Farklı türde yapılar farklı arama yolları kullanabilir. **/X** derleyici seçeneği, dizinleri içerme arama yolundan dışlamak için kullanılabilir. Bu, farklı yapıların aynı ada sahip farklı ekleme dosyalarını kullanmasına, fakat farklı dizinlerde tutulmasına olanak tanır. Bu, önişlemci komutlarını kullanarak koşullu derlemeye alternatiftir. **/X** derleyici seçeneği hakkında daha fazla bilgi için bkz. [/X (Standart içerme yollarını yoksay)](../../build/reference/x-ignore-standard-include-paths.md).
+Üst bilgi dosyaları bir projenin parçası olarak **Çözüm Gezgini** listelendiğinde bile, dosyalar yalnızca derleyici tarafından `#include` `#import` kaynak dosyadaki bir veya yönergeyle başvurulduğu zaman ve ekleme arama yolunda yer alır. Farklı türde yapılar farklı arama yolları kullanabilir. **`/X`** Derleyici seçeneği, dizinleri içerme arama yolundan dışlamak için kullanılabilir. Bu, farklı yapıların aynı ada sahip farklı ekleme dosyalarını kullanmasına, fakat farklı dizinlerde tutulmasına olanak tanır. Bu, önişlemci komutlarını kullanarak koşullu derlemeye alternatiftir. Derleyici seçeneği hakkında daha fazla bilgi için **`/X`** bkz. [ `/X` (Standart içerme yollarını yoksay)](../../build/reference/x-ignore-standard-include-paths.md).
 
-Bu sorunu gidermek için, eklenen veya içeri aktarılan dosyayı aramak üzere derleyici tarafından kullanılan yolu düzeltin. Yeni bir proje varsayılan içerme arama yollarını kullanır. Projeniz için bir dizin eklemek üzere ekleme arama yolunu değiştirmeniz gerekebilir. Komut satırında derlerken, dosyanın yolunu belirtmek için yolu **Include** ortam değişkenine veya **/i** derleyici seçeneğine ekleyin.
+Bu sorunu gidermek için, eklenen veya içeri aktarılan dosyayı aramak üzere derleyici tarafından kullanılan yolu düzeltin. Yeni bir proje varsayılan içerme arama yollarını kullanır. Projeniz için bir dizin eklemek üzere ekleme arama yolunu değiştirmeniz gerekebilir. Komut satırında derleme yapıyorsanız, dosyanın yolunu belirtmek için yolu **Include** ortam değişkenine veya **`/I`** derleyici seçeneğine ekleyin.
 
-Visual Studio 'da içerme dizin yolunu ayarlamak için projenin **Özellik sayfaları** iletişim kutusunu açın. Sol bölmedeki **yapılandırma özellikleri** altında **VC + + dizinleri** ' ni seçin ve ardından **dizinleri dahil et** özelliğini düzenleyin. Visual Studio 'da derleyici tarafından aranan Kullanıcı başına ve proje başına dizinler hakkında daha fazla bilgi için bkz. [VC + + dizinleri Özellik sayfası](../../build/reference/vcpp-directories-property-page.md). **/İ** derleyici seçeneği hakkında daha fazla bilgi için bkz. [/I (ek içerme dizinleri)](../../build/reference/i-additional-include-directories.md).
+Visual Studio 'da içerme dizin yolunu ayarlamak için projenin **Özellik sayfaları** iletişim kutusunu açın. Sol bölmedeki **yapılandırma özellikleri** altında **VC + + dizinleri** ' ni seçin ve ardından **dizinleri dahil et** özelliğini düzenleyin. Visual Studio 'da derleyici tarafından aranan Kullanıcı başına ve proje başına dizinler hakkında daha fazla bilgi için bkz. [VC + + dizinleri Özellik sayfası](../../build/reference/vcpp-directories-property-page.md). Derleyici seçeneği hakkında daha fazla bilgi için **`/I`** bkz. [ `/I` (ek ekleme dizinleri)](../../build/reference/i-additional-include-directories.md).
 
 ## <a name="the-command-line-include-or-lib-environment-is-not-set"></a>Komut satırı IÇERME veya LıB ortamı ayarlanmadı
 
@@ -87,15 +87,15 @@ C1083 hatası, dosyanın yanlış versiyonunun eklendiğini de belirtebilir. Ör
 
 ## <a name="the-precompiled-headers-are-not-yet-precompiled"></a>Önceden derlenmiş üstbilgiler henüz önceden derlenmiş değil
 
-Bir proje, önceden derlenmiş üstbilgileri kullanmak üzere yapılandırıldığında, üstbilgi içeriğini kullanan dosyaların derlenebilmesi için ilgili .pch dosyalarının oluşturulması gerekir. Örneğin, *pch. cpp* dosyası (Visual Studio 2017 ve önceki sürümlerde*stdadfx. cpp* ) yeni projeler için proje dizininde otomatik olarak oluşturulur. Önceden derlenmiş üstbilgi dosyalarını oluşturmak için öncelikle bu dosyayı derleyin. Tipik derleme işlemi tasarımında, bu otomatik olarak yapılır. Daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/creating-precompiled-header-files.md).
+Bir proje önceden derlenmiş üstbilgileri kullanacak şekilde yapılandırıldığında, *`.pch`* üst bilgi içeriğini kullanan dosyaların derlenebilecek şekilde ilgili dosyaların oluşturulması gerekir. Örneğin, *`pch.cpp`* dosya ( *`stdafx.cpp`* Visual Studio 2017 ve önceki sürümlerde) yeni projeler için proje dizininde otomatik olarak oluşturulur. Önceden derlenmiş üstbilgi dosyalarını oluşturmak için öncelikle bu dosyayı derleyin. Tipik derleme işlemi tasarımında, bu otomatik olarak yapılır. Daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/creating-precompiled-header-files.md).
 
 ## <a name="additional-causes"></a>Ek nedenler
 
 - Bir SDK veya üçüncü taraf kitaplığı yüklediniz, ancak SDK veya kitaplık yüklendikten sonra yeni bir geliştirici komut istemi penceresi açmadı. SDK veya kitaplık, **ekleme** yoluna dosya eklerse, bu ortam değişkeni değişikliklerini almak için yeni bir geliştirici komut istemi penceresi açmanız gerekebilir.
 
-- Dosya yönetilen kodu kullanıyor, ancak **/clr** seçeneği belirtilmemiş. Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+- Dosya yönetilen kodu kullanıyor, ancak derleyici seçeneği **`/clr`** belirtilmedi. Daha fazla bilgi için bkz. [ `/clr` (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
-- Dosya, üstbilgileri önceden derlemek için kullanılandan farklı bir **/Analyze** derleyici seçenek ayarı kullanılarak derlenir. Bir projenin üst bilgileri önceden derlenmiş olduğunda, hepsi aynı **/Analyze** ayarlarını kullanmalıdır. Daha fazla bilgi için bkz. [/analyze (kod analizi)](../../build/reference/analyze-code-analysis.md).
+- Dosya, **`/analyze`** üstbilgileri önceden derlemek için kullanılandan farklı bir derleyici seçenek ayarı kullanılarak derlenir. Bir projenin üst bilgileri önceden derlenmiş olduğunda, hepsi aynı **`/analyze`** ayarları kullanmalıdır. Daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](../../build/reference/analyze-code-analysis.md).
 
 - Dosya veya dizin, Linux için Windows alt sistemi tarafından oluşturulmuştur, dizin başına büyük/küçük harf duyarlılığı etkindir ve bir yol veya dosyanın belirtilen durumu diskteki yol veya dosya durumuyla eşleşmez.
 
