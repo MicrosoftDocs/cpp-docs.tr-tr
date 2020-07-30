@@ -9,26 +9,26 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: bd18f673-4dda-4bc1-92fd-d1ce10074910
-ms.openlocfilehash: bc238dd0088558233d84f8bbd15d06743e133449
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d917c93ab8ef2e896f3ef09c9d9191dae49116c3
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326020"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213729"
 ---
 # <a name="c-enumeration-declarations"></a>C Numaralandırma Bildirimleri
 
 Sabit listesi bir adlandırılmış tamsayı sabitleri kümesinden oluşur. Sabit listesi türü bildirimi, (isteğe bağlı) numaralandırma etiketinin adını verir ve adlandırılmış tamsayı tanımlayıcılarının kümesini tanımlar ("numaralandırma kümesi," "Numaralandırıcı sabitleri," "Numaralandırıcılar" veya "Üyeler" olarak adlandırılır). Numaralandırma türüne sahip bir değişken, bu tür tarafından tanımlanan numaralandırma kümesinin değerlerinden birini depolar.
 
-`enum` Türündeki değişkenler, dizin oluşturma ifadelerinde ve tüm aritmetik ve ilişkisel işleçlerin işlenenleri olarak kullanılabilir. Numaralandırmalar, ön `#define` işlemci yönergesine bir alternatif sağlar ve bunlar sizin için değerlerin üretibileceği ve normal kapsam kurallarına Uyama avantajları sağlar.
+Türündeki değişkenler, **`enum`** Dizin oluşturma ifadelerinde ve tüm aritmetik ve ilişkisel işleçlerin işlenenleri olarak kullanılabilir. Numaralandırmalar, ön işlemci yönergesine bir alternatif sağlar `#define` ve bunlar sizin için değerlerin üretibileceği ve normal kapsam kurallarına Uyama avantajları sağlar.
 
-ANSI C 'de, bir Numaralandırıcı sabitinin değerini tanımlayan ifadeler her zaman türünde olmalıdır `int` ; Bu nedenle, bir numaralandırma değişkeniyle ilişkilendirilen depolama, tek `int` bir değer için gereken depolama alanı olur. Sabit Listesi sabiti veya numaralandırılmış türdeki bir değer, C dilinin bir tamsayı ifadesine izin verdiği her yerde kullanılabilir.
+ANSI C 'de, bir Numaralandırıcı sabitinin değerini tanımlayan ifadeler her zaman türünde olur; bu **`int`** nedenle, bir numaralandırma değişkeniyle ilişkili depolama alanı tek bir değer için gereken depolama alanı olur **`int`** . Sabit Listesi sabiti veya numaralandırılmış türdeki bir değer, C dilinin bir tamsayı ifadesine izin verdiği her yerde kullanılabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *sabit listesi belirticisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**enum** *tanımlayıcı*<sub>opt</sub> **{** *Numaralandırıcı-listesi* **}**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sabit listesi** *tanımlayıcısı*
+&nbsp;&nbsp;&nbsp;&nbsp;**`enum`***tanımlayıcı*<sub>opt</sub> **{** *Numaralandırıcı-listesi* **}**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`enum`***tanımlayıcı*
 
 İsteğe bağlı *tanımlayıcı* , *Numaralandırıcı listesi*tarafından tanımlanan numaralandırma türünü adlandırır. Bu tanımlayıcı genellikle liste tarafından belirtilen numaralandırmanın "Tag" olarak adlandırılır. Formun tür Belirleyicisi
 
@@ -41,9 +41,9 @@ enum identifier
 
 *tanımlayıcıyı* , *Numaralandırıcı listesi* olmayan Terminal tarafından belirtilen numaralandırmanın etiketi olacak şekilde bildirir. *Numaralandırıcı-listesi* , "Numaralandırıcı içeriği" tanımlar. *Numaralandırıcı listesi* aşağıda ayrıntılı olarak açıklanmıştır.
 
-Bir etiketin bildirimi görünür durumdaysa etiketi kullanan, ancak *Numaralandırıcı olmayan* sonraki bildirimler, önceden tanımlanmış numaralandırılmış türü belirtir. Etiket tanımlı bir numaralandırma türüne başvurmalıdır ve bu numaralandırma türü geçerli kapsamda olmalıdır. Numaralandırma türü başka bir yerde tanımlandığından, *Numaralandırıcı listesi* Bu bildirimde görünmüyor. Sabit listesi türleri için Numaralandırmalardan ve `typedef` bildirimlerden türetilen türlerin bildirimleri numaralandırma türü tanımlanmadan önce numaralandırma etiketini kullanabilir.
+Bir etiketin bildirimi görünür durumdaysa etiketi kullanan, ancak *Numaralandırıcı olmayan* sonraki bildirimler, önceden tanımlanmış numaralandırılmış türü belirtir. Etiket tanımlı bir numaralandırma türüne başvurmalıdır ve bu numaralandırma türü geçerli kapsamda olmalıdır. Numaralandırma türü başka bir yerde tanımlandığından, *Numaralandırıcı listesi* Bu bildirimde görünmüyor. Sabit listesi türleri için Numaralandırmalardan ve bildirimlerden türetilen türlerin bildirimleri numaralandırma **`typedef`** türü tanımlanmadan önce numaralandırma etiketini kullanabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *Numaralandırıcı-liste*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sının*<br/>
@@ -51,18 +51,18 @@ Bir etiketin bildirimi görünür durumdaysa etiketi kullanan, ancak *Numaraland
 
 *Numaralandırıcı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi-sabit*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;sabit *listesi-sabit* **=** *sabit ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi-sabit* **=** *sabit ifadesi*
 
 sabit *listesi-sabit*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
 
 *Sabit listesi listesindeki* her *numaralandırma sabiti* , numaralandırma kümesinin bir değerini adlandırır. Varsayılan olarak, ilk *sabit listesi-sabit* değeri 0 ile ilişkilendirilir. Listedeki bir sonraki *sabit* listesi, açıkça başka bir değerle ilişkilendirmediğiniz takdirde ( *sabit ifade* + 1) değeri ile ilişkilendirilir. Sabit *listesinin* adı, değerine eşdeğerdir.
 
-Varsayılan değer sırasını geçersiz kılmak için sabit *listesi-sabit = sabit ifadesi* kullanabilirsiniz. Bu nedenle, *numaralandırma-sabit = sabit ifadesi* *Numaralandırıcı-listesinde*görünürse, sabit *ifade*tarafından verilen değer *numaralandırma sabiti* ile ilişkilendirilir. *Sabit ifadesinin* `int` türü olmalıdır ve negatif olabilir.
+Varsayılan değer sırasını geçersiz kılmak için sabit *listesi-sabit = sabit ifadesi* kullanabilirsiniz. Bu nedenle, *numaralandırma-sabit = sabit ifadesi* *Numaralandırıcı-listesinde*görünürse, sabit *ifade*tarafından verilen değer *numaralandırma sabiti* ile ilişkilendirilir. *Sabit ifadesinin* **`int`** türü olmalıdır ve negatif olabilir.
 
 Aşağıdaki kurallar, bir numaralandırma kümesinin üyeleri için geçerlidir:
 
-- Sabit Listesi kümesi, yinelenen sabit değerler içerebilir. Örneğin, 0 değerini aynı küme içinde ve `null` `zero`adında iki farklı tanımlayıcı ile ilişkilendirebilirsiniz.
+- Sabit Listesi kümesi, yinelenen sabit değerler içerebilir. Örneğin, 0 değerini `null` aynı küme içinde ve adında iki farklı tanımlayıcı ile ilişkilendirebilirsiniz `zero` .
 
 - Numaralandırma listesindeki tanımlayıcılar, diğer numaralandırma listelerindeki sıradan değişken adları ve tanımlayıcılar dahil olmak üzere aynı kapsamda bulunan diğer tanımlayıcılardan farklı olmalıdır.
 
@@ -85,15 +85,15 @@ enum DAY            /* Defines an enumeration type    */
 } workday;
 ```
 
-0 değeri, varsayılan olarak ile `saturday` ilişkilendirilir. Tanımlayıcı `sunday` açıkça 0 olarak ayarlanır. Kalan tanımlayıcılara varsayılan olarak 1 ila 5 değeri verilir.
+0 değeri, `saturday` Varsayılan olarak ile ilişkilendirilir. Tanımlayıcı `sunday` açıkça 0 olarak ayarlanır. Kalan tanımlayıcılara varsayılan olarak 1 ila 5 değeri verilir.
 
-Bu örnekte, bir kümeden `DAY` bir değer değişkenine `today`atanır.
+Bu örnekte, bir kümeden bir değer `DAY` değişkenine atanır `today` .
 
 ```
 enum DAY today = wednesday;
 ```
 
-Sabit Listesi sabiti adının değeri atamak için kullanıldığını unutmayın. Numaralandırma türü `DAY` daha önce bildirildiği için yalnızca numaralandırma etiketi `DAY` gereklidir.
+Sabit Listesi sabiti adının değeri atamak için kullanıldığını unutmayın. `DAY`Numaralandırma türü daha önce bildirildiği için yalnızca numaralandırma etiketi `DAY` gereklidir.
 
 Numaralandırılmış veri türü değişkenine açıkça bir tam sayı değeri atamak için tür dönüştürme kullanın:
 
@@ -138,7 +138,7 @@ if ( match_flag == false )
     end_flag = true;
 ```
 
-Adlandırılmamış Numaralandırıcı veri türleri de bildirilebilecek. Veri türünün adı atlanmış, ancak değişkenler bildirilebilecek. Değişken `response` , tanımlı tür değişkenidir:
+Adlandırılmamış Numaralandırıcı veri türleri de bildirilebilecek. Veri türünün adı atlanmış, ancak değişkenler bildirilebilecek. Değişken, `response` tanımlı tür değişkenidir:
 
 ```
 enum { yes, no } response;

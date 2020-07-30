@@ -5,16 +5,16 @@ helpviewer_keywords:
 - objects [C++], destroying
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-ms.openlocfilehash: 1e1190f49c7ccf5c312172f265d32a4b855bd878
-ms.sourcegitcommit: 2da5c42928739ca8cd683a9002598f28d8ec5f8e
+ms.openlocfilehash: 5da7659d2d45bca9efba21be2cd0bf581d539780
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060143"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221672"
 ---
 # <a name="destructors-c"></a>Yıkıcılar (C++)
 
-Yıkıcı, nesne kapsam dışına geçtiğinde otomatik olarak çağrılan üye işlevdir veya bir **Delete**çağrısıyla açıkça yok edilir. Yıkıcı, önünde bir tilde (`~`) ile aynı ada sahiptir. Örneğin, `String` sınıfının yok edicisi şu şekilde bildirilir: `~String()`.
+Yıkıcı, nesne kapsam dışına geçtiğinde veya öğesine yapılan bir çağrı tarafından açıkça yok edildiğinde otomatik olarak çağrılan bir üye işlevdir **`delete`** . Yıkıcı, önünde bir tilde () ile aynı ada sahiptir `~` . Örneğin, `String` sınıfının yok edicisi şu şekilde bildirilir: `~String()`.
 
 Yok edicisi tanımlamadıysanız, derleyici varsayılan bir tane sağlar; birçok sınıf için bu yeterlidir. Sınıf, yalnızca yayımlanması gereken sistem kaynaklarına veya işaret ettikleri belleğe ait işaretçileri depoladığında özel bir yıkıcı tanımlamanız gerekir.
 
@@ -57,21 +57,21 @@ int main() {
 }
 ```
 
-Önceki örnekte, yıkıcı `String::~String` metin depolaması için dinamik olarak ayrılan alanı serbest bırakmak için **Delete** işlecini kullanır.
+Önceki örnekte, yıkıcı `String::~String` **`delete`** metin depolaması için dinamik olarak ayrılan alanı serbest bırakmak için işlecini kullanır.
 
 ## <a name="declaring-destructors"></a>Yıkıcıları bildirme
 
-Yok ediciler, sınıfla aynı adı taşıyan, ancak önüne bir tilde (`~`) gelen işlevlerdir
+Yok ediciler, sınıfla aynı adı taşıyan, ancak önüne bir tilde () gelen işlevlerdir `~`
 
 Birçok kural, yok edicilerin bildirimini yönetir. Yıkıcılar
 
 - Bağımsız değişkenleri kabul etmez.
 
-- Değer döndürmeyin (veya **void**).
+- Değer döndürmez (veya **`void`** ).
 
-- **Const**, **volatile**veya **static**olarak bildirilemez. Ancak, **const**, **volatile**veya **static**olarak belirtilen nesnelerin yok edilmesi için çağrılabilir.
+- , Veya olarak bildirilemez **`const`** **`volatile`** **`static`** . Ancak,, veya olarak belirtilen nesnelerin yok edilmesi için çağrılabilir **`const`** **`volatile`** **`static`** .
 
-- **Sanal**olarak bildirilebilecek. Sanal yıkıcıları kullanarak, türünü bilmeden nesneleri yok edebilirsiniz — nesnenin doğru yıkıcısı sanal işlev mekanizması kullanılarak çağrılır. Yok edicilerin soyut sınıflar için saf sanal işlev olarak da bildirilebilecek olduğunu unutmayın.
+- Olarak bildirilebilecek **`virtual`** . Sanal yıkıcıları kullanarak, türünü bilmeden nesneleri yok edebilirsiniz — nesnenin doğru yıkıcısı sanal işlev mekanizması kullanılarak çağrılır. Yok edicilerin soyut sınıflar için saf sanal işlev olarak da bildirilebilecek olduğunu unutmayın.
 
 ## <a name="using-destructors"></a>Yıkıcıları kullanma
 
@@ -79,7 +79,7 @@ Aşağıdaki olaylardan biri gerçekleştiğinde yok ediciler çağrılır:
 
 - Blok kapsamlı bir yerel (otomatik) nesne kapsam dışına gider.
 
-- **New** işleci kullanılarak ayrılan bir nesne, **Delete**kullanılarak açıkça serbest bırakılır.
+- İşleci kullanılarak ayrılan bir nesne **`new`** , kullanılarak açıkça serbest bırakılır **`delete`** .
 
 - Geçici bir nesnenin kullanım ömrü sona erer.
 
@@ -160,9 +160,9 @@ class D : virtual public A, virtual public B
 class E : public C, public D, virtual public B
 ```
 
-Türündeki `E`bir nesnenin sanal temel sınıflarının yok etme sırasını tespit etmek için, derleyici aşağıdaki algoritmayı uygulayarak bir liste oluşturur:
+Türündeki bir nesnenin sanal temel sınıflarının yok etme sırasını tespit etmek için `E` , derleyici aşağıdaki algoritmayı uygulayarak bir liste oluşturur:
 
-1. Grafikteki en derin noktadan başlayarak (Bu durumda, `E`) grafiğin sol tarafında yer alın.
+1. Grafikteki en derin noktadan başlayarak (Bu durumda,) grafiğin sol tarafında yer alın `E` .
 
 1. Tüm düğümler ziyaret edilene kadar soltward traversals gerçekleştirin. Geçerli düğümün adını aklınızda edin.
 
@@ -174,29 +174,29 @@ Türündeki `E`bir nesnenin sanal temel sınıflarının yok etme sırasını te
 
 1. Sağ taraftaki bir sonraki yol üzerinde grafiği yukarı ve aşağı doğru gez.
 
-1. 2\. adıma gidin.
+1. 2. adıma gidin.
 
 1. Son yukarı doğru yol tükendiğinde, geçerli düğümün adını aklınızda bulunur.
 
-1. 3\. adıma gidin.
+1. 3. adıma gidin.
 
 1. Alt düğüm geçerli düğüm olana kadar bu işleme devam edin.
 
-Bu nedenle, sınıfı `E`için yok etme sırası şu şekilde olur:
+Bu nedenle, sınıfı için `E` yok etme sırası şu şekilde olur:
 
-1. Sanal olmayan temel sınıf `E`.
+1. Sanal olmayan temel sınıf `E` .
 
-1. Sanal olmayan temel sınıf `D`.
+1. Sanal olmayan temel sınıf `D` .
 
-1. Sanal olmayan temel sınıf `C`.
+1. Sanal olmayan temel sınıf `C` .
 
-1. Sanal temel sınıf `B`.
+1. Sanal temel sınıf `B` .
 
-1. Sanal temel sınıf `A`.
+1. Sanal temel sınıf `A` .
 
 Bu işlem, benzersiz girişlerin sıralı bir listesini oluşturur. Sınıf adı iki kez görünmez. Liste oluşturulduktan sonra, bu, ters sırada ve listedeki her bir sınıfın yıkıcısında birinciden birincine çağırılır.
 
-Oluşturma veya yok etme sırası, birincil olarak bir sınıftaki oluşturucular veya Yıkıcılar, ilk veya daha sonra oluşturulan diğer bileşene bağlı olduğunda `A` (örneğin, yukarıda gösterilen şekilde) kodu `B` yürütüldüğünde hala mevcut olmaya devam eder veya tersi de geçerlidir.
+Oluşturma veya yok etme sırası öncelikli olarak, bir sınıftaki oluşturucular veya Yıkıcılar, ilk olarak oluşturulan veya daha az kalıcı hale getiren diğer bileşene bağlı olduğunda (örneğin, `A` yukarıda gösterilen şekilde), `B` kodu yürütüldüğünde hala mevcut olmaya güveniliyorsa veya bunun tersini yapar.
 
 Devralma grafiğindeki sınıflar arasında bu tür bağımlılıklar, daha sonra en soldaki yol olan ve böylece oluşturma ve yok etme sırasını değiştiren sınıflar değişeceğinden,
 
@@ -209,11 +209,11 @@ class MultInherit : public Base1, public Base2
 ...
 ```
 
-Önceki örnekte, `Base2` için yıkıcısı, için `Base1`yıkıcının önüne çağırılır.
+Önceki örnekte, için yıkıcısı, `Base2` için yıkıcının önüne çağırılır `Base1` .
 
 ## <a name="explicit-destructor-calls"></a>Açık yıkıcı çağrıları
 
-Bir yok ediciyi açıkça çağırmak nadiren gereklidir. Ancak, mutlak adreslerde yerleştirilen nesnelerin temizleme işlemini yapmak yararlı olabilir. Bu nesneler, bir yerleştirme bağımsız değişkeni alan Kullanıcı tanımlı **Yeni** bir işleç kullanılarak genellikle ayrılır. Boş depodan ayrılmadığından **Delete** işleci bu belleği serbest bırakılamaz (daha fazla bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md)). Ancak yok edici için yapılan bir çağrı uygun temizleme işlemini yapabilir. `s` sınıfından bir nesne (`String`) için yok ediciyi açıkça çağırmak istediğinizde, aşağıdaki deyimleri kullanın:
+Bir yok ediciyi açıkça çağırmak nadiren gereklidir. Ancak, mutlak adreslerde yerleştirilen nesnelerin temizleme işlemini yapmak yararlı olabilir. Bu nesneler, genellikle **`new`** bir yerleştirme bağımsız değişkeni alan Kullanıcı tanımlı bir operatör kullanılarak ayrılır. **`delete`** İşleç, ücretsiz depodan ayrılmadığından bu belleği serbest bırakılamaz (daha fazla bilgi için bkz. [yeni ve silme işleçleri](../cpp/new-and-delete-operators.md)). Ancak yok edici için yapılan bir çağrı uygun temizleme işlemini yapabilir. `s` sınıfından bir nesne (`String`) için yok ediciyi açıkça çağırmak istediğinizde, aşağıdaki deyimleri kullanın:
 
 ```cpp
 s.String::~String();     // non-virtual call
@@ -231,7 +231,7 @@ Bir sınıf, kaynak alıyorsa ve kaynağı güvenli bir şekilde yönetmek için
 
 Bu özel işlevler Kullanıcı tarafından tanımlanmamışsa, derleyici tarafından örtülü olarak tanımlanmıştır. Örtük olarak oluşturulan oluşturucular ve atama işleçleri, bir nesne bir kaynağı yönetirken neredeyse kesinlikle yanlış olan yüzeysel, üye tabanlı kopyalamayı gerçekleştirir.
 
-Sonraki örnekte, örtük olarak oluşturulan kopya Oluşturucu işaretçileri `str1.text` yapar ve `str2.text` aynı belleğe başvurur ve ' den `copy_strings()`döntiğimiz zaman, tanımsız bir davranış olan bu bellek iki kez silinir:
+Sonraki örnekte, örtük olarak oluşturulan kopya Oluşturucu işaretçileri yapar `str1.text` ve `str2.text` aynı belleğe başvurur ve ' den döntiğimiz zaman, `copy_strings()` tanımsız bir davranış olan bu bellek iki kez silinir:
 
 ```cpp
 void copy_strings()
@@ -246,5 +246,5 @@ Açıkça bir yıkıcı, kopya Oluşturucusu veya kopya atama işleci tanımlama
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kopya Oluşturucuları ve Kopya Atama İşleçleri](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)</br>
-[Taşıma Oluşturucuları ve Taşıma Atama İşleçleri](../cpp/move-constructors-and-move-assignment-operators-cpp.md)
+[Kopya oluşturucuları ve kopya atama Işleçleri](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)</br>
+[Taşıma Oluşturucuları ve taşıma atama Işleçleri](../cpp/move-constructors-and-move-assignment-operators-cpp.md)

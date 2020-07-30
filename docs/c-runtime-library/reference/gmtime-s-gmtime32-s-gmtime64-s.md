@@ -41,18 +41,18 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-ms.openlocfilehash: 152b0569d452fc48af7583b23c6a2449cb24d0d6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8cebd2eab1c0a5b650f33ccca1e87a0a8cad1e08
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916228"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213560"
 ---
 # <a name="gmtime_s-_gmtime32_s-_gmtime64_s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 
 Bir zaman değerini bir **TM** yapısına dönüştürür. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_gmtime64 _gmtime32](gmtime-gmtime32-gmtime64.md) sürümleridir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t gmtime_s(
@@ -85,7 +85,7 @@ Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodla
 
 |*tmDest*|*sourceTime*|Döndürülmesini|*Tmdest* değeri|
 |-----------|------------|------------|--------------------|
-|**DEĞER**|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
+|**DEĞER**|herhangi biri|**EıNVAL**|Değiştirilmedi.|
 |**Null** değil (geçerli belleğe işaret eder)|**DEĞER**|**EıNVAL**|Tüm alanlar-1 olarak ayarlanmıştır.|
 |**Null** değil|< 0|**EıNVAL**|Tüm alanlar-1 olarak ayarlanmıştır.|
 
@@ -98,7 +98,7 @@ Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodla
 > [!NOTE]
 > Hedef ortam, gün ışığından yararlanma saatinin etkin olup olmadığını belirlemeyi denemelidir. C çalışma zamanı kitaplığı, gün ışığından yararlanma saatinin hesaplanmasını uygulamak için Birleşik Devletler kuralları varsayar.
 
-Yapı alanlarının her biri, aşağıdaki tabloda gösterildiği gibi **int**türündedir.
+Yapı alanlarının her biri **`int`** , aşağıdaki tabloda gösterildiği gibi türündedir.
 
 |Alan|Açıklama|
 |-|-|
@@ -122,7 +122,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |-------------|---------------------|-|
-|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<Time. h>|\<CTime> veya \<saati. h>|
+|**gmtime_s**, **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime> veya \<time.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

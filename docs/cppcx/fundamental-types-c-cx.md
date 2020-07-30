@@ -43,7 +43,7 @@ Aşağıdaki tabloda yerleşik sayısal türler listelenmektedir. Sayısal türl
 
 Aşağıdaki tabloda Windows Çalışma Zamanı mimarisi tarafından tanımlanan ve C++/CX' te yerleşik olan bazı ek türler listelenmektedir. Nesne ve dize başvuru türleridir. Diğerleri değer türlerdir. Bu türlerin tümü `Platform` ad alanında bildirilmiştir. Tam liste için bkz. [Platform ad alanı](../cppcx/platform-namespace-c-cx.md).
 
-|Ad|Tanım|
+|Name|Tanım|
 |----------|----------------|
 |Nesne|Tüm Windows Çalışma Zamanı türlerini temsil eder.|
 |Dize|Metni temsil eden bir dizi karakter.|

@@ -17,24 +17,24 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-ms.openlocfilehash: 5c0ab3579fcb9633c435305a8b02b0c3f73d7a6f
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: 874c4b974348d1bef8c8c3837f46c1c27d6d304b
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825710"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87215198"
 ---
 # <a name="opt-optimizations"></a>/OPT (İyileştirmeler)
 
 LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denetler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/OPT:**{**ref** | **NOREF**} \
-> **/OPT:**{**ICF**[**=**_yinelemeler_] | **NOICF**} \
-> **/OPT:**{**LBR** | **NOLBR**}
+> **/OPT:**{**ref**  |  **NOREF**} \
+> **/OPT:**{**ICF**[ **=** _yinelemeler_] | **NOICF**} \
+> **/OPT:**{**LBR**  |  **NOLBR**}
 
-## <a name="arguments"></a>Bağımsız Değişkenler
+## <a name="arguments"></a>Arguments
 
 **Başvuru** &#124; **NOREF**
 
@@ -42,22 +42,22 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
 
 /OPT: REF etkinleştirildiğinde bağlantı, başvurulmayan paketlenmiş işlevleri ve verileri, *Compts*olarak bilinen verileri kaldırır. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. **/OPT: ref** seçeneği artımlı bağlamayı de devre dışı bırakır.
 
-Satır içine alınmış işlevler ve bir sınıf bildiriminde tanımlanan üye işlevleri her zaman Comtts ' dir. Bir nesne dosyasındaki tüm işlevler, [/GY](gy-enable-function-level-linking.md) seçeneği kullanılarak derlenmişse COMDAT 'lar içine yapılır. COMDAT 'a **const** verileri yerleştirmek için kullanarak `__declspec(selectany)`bunu bildirmeniz gerekir. Kaldırma veya katlama için veri belirtme hakkında daha fazla bilgi için bkz. [selectany](../../cpp/selectany.md).
+Satır içine alınmış işlevler ve bir sınıf bildiriminde tanımlanan üye işlevleri her zaman Comtts ' dir. Bir nesne dosyasındaki tüm işlevler, [/GY](gy-enable-function-level-linking.md) seçeneği kullanılarak derlenmişse COMDAT 'lar içine yapılır. **`const`** Comduts 'e veri yerleştirmek için kullanarak bunu bildirmeniz gerekir `__declspec(selectany)` . Kaldırma veya katlama için veri belirtme hakkında daha fazla bilgi için bkz. [selectany](../../cpp/selectany.md).
 
 /OPT: **NOREF** veya [/Debug](debug-generate-debug-info.md) belirtilmediği takdirde, varsayılan olarak, **/OPT: ref** bağlayıcı tarafından etkinleştirilir. Bu varsayılanı geçersiz kılmak ve başvurulmayan Comnts 'yi programda tutmak için **/OPT: NOREF**belirtin. Belirli bir sembolün kaldırılmasını geçersiz kılmak için [/Include](include-force-symbol-references.md) seçeneğini kullanabilirsiniz.
 
 [/Debug](debug-generate-debug-info.md) belirtilirse, **/opt** Için varsayılan değer **NOREF**' dir ve tüm işlevler görüntüde korunur. Bu varsayılanı geçersiz kılmak ve bir hata ayıklama derlemesini iyileştirmek için **/OPT: ref**belirtin. Bu, yürütülebilir dosyanızın boyutunu azaltabilir ve hata ayıklama yapılarında bile yararlı bir iyileştirme olabilir. Hata ayıklama yapılarında özdeş işlevleri korumak için **/OPT: NOıCF** belirtmenizi öneririz. Bu yığın izlemelerini okumayı ve aksi takdirde birlikte katlanacak işlevlerde kesme noktalarını ayarlamayı kolaylaştırır.
 
-**ICF**\[ICF**=**_yinelemeleri_] **NOICF** &#124;
+**ICF** \[ ICF **=** _yinelemeler_] &#124; **NOICF**
 
-Aynı COMDAT katlamayı gerçekleştirmek için **ICF**\[**=**_yinelemelerini_kullanın]. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı *yineleme* parametresi, simgelerin yineleme için kaç kez gezeceği sayısını belirtir. Varsayılan yineleme sayısı 1 ' dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.
+**ICF** \[ **=** Aynı COMDAT katlamayı gerçekleştirmek için ICF_yinelemelerini_kullanın]. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı *yineleme* parametresi, simgelerin yineleme için kaç kez gezeceği sayısını belirtir. Varsayılan yineleme sayısı 1 ' dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.
 
 /OPT: **NOICF** veya [/Debug](debug-generate-debug-info.md) belirtilmediği takdirde, varsayılan olarak, **/OPT: ICF** bağlayıcı tarafından etkinleştirilir. Bu varsayılanı geçersiz kılmak ve Comnts 'nin programa katlanmasını engellemek için **/OPT: NOıCF**belirtin.
 
 Bir hata ayıklama derlemesinde, COMDAT katlamayı etkinleştirmek için açıkça **/OPT: ICF** belirtmeniz gerekir. Ancak, **/OPT: ICF** özdeş verileri veya işlevleri birleştirebildiğinden, yığın izlemelerinde görünen işlev adlarını değiştirebilir. Ayrıca, belirli işlevlerde kesme noktalarını ayarlamayı veya hata ayıklayıcıdaki bazı verileri incelemenizi olanaksız hale getirir ve kodunuzda tek adım ilerlemenizin sizi beklenmedik işlevlere götürebilirler. Kodun davranışı aynıdır, ancak hata ayıklayıcı sunumu çok karmaşık olabilir. Bu nedenle, küçük kodun avantajları bu dezavantajların avantajlarından yararlanmadığı müddetçe hata ayıklama yapılarında **/OPT: ICF** kullanmanızı önermiyoruz.
 
 > [!NOTE]
-> **/OPT: ICF** aynı adresin farklı işlevlere veya salt okunabilir veri üyelerine (yani, **/GY**kullanılarak derlendiğinde **const** değişkenlerine) atanmasına neden olabileceğinden, işlevler veya salt okuma veri üyeleri için benzersiz adreslere bağlı olan bir programı bozabilir. Daha fazla bilgi için bkz. [/GY (Işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md).
+> **/OPT: ICF** aynı adresin farklı işlevlere veya salt okunabilir veri üyelerine (yani, **`const`** **/GY**kullanılarak derlendikleri değişkenlerle) atanmasına neden olabileceğinden, işlevler veya salt okuma veri üyeleri için benzersiz adreslere bağlı olan bir programı bozabilir. Daha fazla bilgi için bkz. [/GY (Işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md).
 
 **LBR** &#124; **NOLBR**
 
@@ -83,7 +83,7 @@ Bağlayıcı iyileştirmesi daha fazla zaman alır, ancak en iyi duruma getirilm
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **iyileştirme** özellik sayfasını seçin.
 
 1. Bu özelliklerden birini değiştirin:
 
@@ -95,7 +95,7 @@ Bağlayıcı iyileştirmesi daha fazla zaman alır, ancak en iyi duruma getirilm
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **komut satırı** özellik sayfasını seçin.
 
 1. **Ek seçenekler**' de seçeneği girin:
 
@@ -103,9 +103,9 @@ Bağlayıcı iyileştirmesi daha fazla zaman alır, ancak en iyi duruma getirilm
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableCOMDATFolding%2A> . <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OptimizeReferences%2A> ve Özellikler.
+- Bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableCOMDATFolding%2A> <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OptimizeReferences%2A> . ve Özellikler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

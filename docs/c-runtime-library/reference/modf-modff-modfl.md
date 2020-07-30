@@ -36,18 +36,18 @@ helpviewer_keywords:
 - modff function
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
-ms.openlocfilehash: def04602cdeb0ad180bd4c51c02f570c94809784
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 644e50564f1b433921a6a0d8099ea5229db7ed93
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914634"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87216875"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
 Kayan nokta değerini kesirli ve tamsayı bölümlerine böler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double modf( double x, double * intptr );
@@ -62,7 +62,7 @@ long double modf( long double x, long double * intptr );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
 *serisi*<br/>
@@ -78,7 +78,7 @@ Bu işlev, *x*'in işaretli kesirli kısmını döndürür. Hata döndürme yok.
 
 **modf** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md) .
 
-C++ aşırı yüklemeye izin verir, bu sayede **float** veya **Long** **Double** parametreleri alıp döndüren **modf** 'nin aşırı yüklerini çağırabilirsiniz. C programında **modf** her zaman iki çift değer alır ve bir Double değeri döndürür.
+C++ aşırı yüklemeye izin verdiğinden, işlem yapan ve döndüren **modf** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **modf** her zaman iki çift değer alır ve bir Double değeri döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,7 +86,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**modf**, **modff**, **modfl**|C: \<Math. h><br /><br /> C++:, \<cmath> veya \<Math. h>|
+|**modf**, **modff**, **modfl**|,\<math.h><br /><br /> C++:, \<cmath> veya\<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -116,6 +116,6 @@ For -14.876543, the fraction is -0.876543 and the integer is -14
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [frexp](frexp.md)<br/>
 [ldexp](ldexp.md)<br/>

@@ -9,18 +9,18 @@ helpviewer_keywords:
 - type casts [C++], about type-cast conversion
 - type-cast conversions [C++]
 ms.assetid: 57ab5902-f12f-4326-a2f6-6282f1d4025a
-ms.openlocfilehash: d54e4c15f84ccecad629d48341e5d3ae26d8cecf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cc2b6d87d6fedf8d36373c901cdb6a6ba8b5f0e7
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344947"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87231461"
 ---
 # <a name="type-cast-conversions"></a>Tür Atama Dönüştürmeleri
 
 Türleri açıkça dönüştürmek için tür atamaları kullanabilirsiniz.
 
-**Sözdizimi**
+**Syntax**
 
 *Cast ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Birli ifade*<br/>
@@ -37,14 +37,14 @@ Türleri açıkça dönüştürmek için tür atamaları kullanabilirsiniz.
 |-----------------------|-----------------------|
 |Integral türleri|Herhangi bir tamsayı türü veya kayan nokta türü ya da bir nesne işaretçisi|
 |Kayan nokta|Herhangi bir aritmetik tür|
-|Bir nesne işaretçisi veya (**void** <strong>\*</strong>)|Herhangi bir tamsayı türü, (**void** <strong>\*</strong>), bir nesne işaretçisi veya işlev işaretçisi|
+|Bir nesne işaretçisi veya ( **`void`** <strong>\*</strong> )|Herhangi bir tamsayı türü, ( **`void`** <strong>\*</strong> ), bir nesne işaretçisi veya işlev işaretçisi|
 |İşlev işaretçisi|Herhangi bir integral türü, bir nesnenin işaretçisi veya bir işlev işaretçisi|
 |Bir yapı, birleşim veya dizi|Yok|
 |Void türü|Herhangi bir tür|
 
-Herhangi bir tanımlayıcı `void` türüne atanabilir. Ancak, bir tür atama ifadesinde belirtilen tür yoksa `void`, bu türe dönüştürmenin tanımlayıcısı bir `void` ifade olamaz. Herhangi bir ifade öğesine `void`dönüşebilir, ancak türündeki `void` bir ifade başka bir türe atanamaz. Örneğin, dönüş türü olan `void` bir işlevin dönüş, başka bir türe dönüşme türüne sahip olamaz.
+Herhangi bir tanımlayıcı **`void`** türüne atanabilir. Ancak, bir tür atama ifadesinde belirtilen tür yoksa **`void`** , bu türe dönüştürmenin tanımlayıcısı bir **`void`** ifade olamaz. Herhangi bir ifade öğesine dönüşebilir **`void`** , ancak türündeki bir ifade başka bir **`void`** türe atanamaz. Örneğin, dönüş türü olan bir işlevin **`void`** dönüş, başka bir türe dönüşme türüne sahip olamaz.
 
-**Void** <strong>\*</strong> ifadesinin türü işaretçi değil `void`, türüne sahip olduğunu unutmayın. `void` Bir nesne `void` türüne yayınlandıysanız, sonuçta elde edilen ifade herhangi bir öğeye atanamaz. Benzer şekilde, bir tür dönüştürme nesnesi kabul edilebilir bir l değeri değildir, bu nedenle tür atama nesnesine atama yapılamaz.
+Bir ifadenin tür **`void`** <strong>\*</strong> değil için tür işaretçisi olduğunu unutmayın **`void`** **`void`** . Bir nesne türüne yayınlandıysanız **`void`** , sonuçta elde edilen ifade herhangi bir öğeye atanamaz. Benzer şekilde, bir tür dönüştürme nesnesi kabul edilebilir bir l değeri değildir, bu nedenle tür atama nesnesine atama yapılamaz.
 
 **Microsoft'a Özgü**
 
@@ -52,8 +52,8 @@ Tanımlayıcı boyutu değişmez olduğu sürece tür dönüştürme bir l-Value
 
 **SON Microsoft 'a özgü**
 
-Bir ifadeyi Cast ile türüne `void` dönüştürebilirsiniz, ancak sonuç ifadesi yalnızca bir değer gerekli olmadığı durumlarda kullanılabilir. Bir nesne işaretçisi, **void** <strong>\*</strong> değerine dönüştürüldü ve özgün türe geri döndürülür.
+Bir ifadeyi **`void`** Cast ile türüne dönüştürebilirsiniz, ancak sonuç ifadesi yalnızca bir değer gerekli olmadığı durumlarda kullanılabilir. Özgün türe dönüştürülen ve geri dönüştürülecek bir nesne işaretçisi, **`void`** <strong>\*</strong> özgün değerine döndürülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tür Dönüştürmeleri](../c-language/type-conversions-c.md)
+[Tür dönüştürmeleri](../c-language/type-conversions-c.md)

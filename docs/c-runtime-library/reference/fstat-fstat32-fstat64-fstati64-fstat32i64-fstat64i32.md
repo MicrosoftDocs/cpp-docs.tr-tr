@@ -57,18 +57,18 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-ms.openlocfilehash: 81c272187c681010e7b8560d43f2fad87e1e0fdc
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 75ab00e8ee464e9042ba266b8d72e5ded48785ee
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910132"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87221906"
 ---
 # <a name="_fstat-_fstat32-_fstat64-_fstati64-_fstat32i64-_fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
 Açık bir dosya hakkında bilgi alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _fstat(
@@ -132,7 +132,7 @@ Stat. h, Types. h içinde tanımlanan [_dev_t](../../c-runtime-library/standard-
 
 Bu işlevlerin çeşitlemeleri 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64-bit dosya uzunluklarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**.
 
-**_fstat** **_fstat64i32**eşdeğerdir ve **struct** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_fstat** 32 bitlik bir zaman kullanır ve **Yapı** **_stat** 32 bit bir zaman içerir. Aynı, **_fstati64**için de geçerlidir.
+**_fstat** **_fstat64i32**eşdeğerdir ve **`struct`** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_fstat** 32 bitlik bir süre kullanır ve **`struct`** **_stat** 32 bit zaman içerir. Aynı, **_fstati64**için de geçerlidir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -153,12 +153,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fstat**|\<sys/stat. h> ve \<sys/Types. h>|
-|**_fstat32**|\<sys/stat. h> ve \<sys/Types. h>|
-|**_fstat64**|\<sys/stat. h> ve \<sys/Types. h>|
-|**_fstati64**|\<sys/stat. h> ve \<sys/Types. h>|
-|**_fstat32i64**|\<sys/stat. h> ve \<sys/Types. h>|
-|**_fstat64i32**|\<sys/stat. h> ve \<sys/Types. h>|
+|**_fstat**|\<sys/stat.h> ve \<sys/types.h>|
+|**_fstat32**|\<sys/stat.h> ve \<sys/types.h>|
+|**_fstat64**|\<sys/stat.h> ve \<sys/types.h>|
+|**_fstati64**|\<sys/stat.h> ve \<sys/types.h>|
+|**_fstat32i64**|\<sys/stat.h> ve \<sys/types.h>|
+|**_fstat64i32**|\<sys/stat.h> ve \<sys/types.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -229,7 +229,7 @@ Time modified : Wed May 07 15:25:11 2003
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](access-waccess.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>

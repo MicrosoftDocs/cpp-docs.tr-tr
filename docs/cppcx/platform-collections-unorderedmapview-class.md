@@ -5,18 +5,18 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-ms.openlocfilehash: f0096982ad5d11b9ea394c9f02ba748a52e4216b
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: acfc168959deb83244c98c5d361cf9e73c1388f2
+ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82031491"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "87213066"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView Sınıfı
 
-Anahtar değeri çiftleri topluluğu olan *bir haritaya*salt okunur görünümü temsil eder.
+Anahtar-değer çiftleri koleksiyonu olan bir *haritada*salt okunurdur görünümü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -28,36 +28,36 @@ ref class UnorderedMapView sealed;
 
 #### <a name="parameters"></a>Parametreler
 
-*Kahraman*<br/>
-Anahtar değeri çiftindeki anahtarın türü.
+*K*<br/>
+Anahtar-değer çiftindeki anahtar türü.
 
 *V*<br/>
-Anahtar değeri çiftindeki değerin türü.
+Anahtar-değer çiftindeki değerin türü.
 
-*C*<br/>
-Eşitlik için iki temel değeri karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak, [\<std::equal_to K>](../standard-library/equal-to-struct.md)
+*,*<br/>
+İki anahtar değerini eşitlik için karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak [std:: equal_to \<K> ](../standard-library/equal-to-struct.md)
 
 ### <a name="remarks"></a>Açıklamalar
 
-UnorderedMapView, [Windows:Foundation::Collections::IMapView\<K,V>](/uwp/api/windows.foundation.collections.imapview-2) arabirimi üzerinden geçirilen ve uygulama ikili arabirimi (ABI) üzerinden geçirilen somut bir C++ uygulamasıdır. Daha fazla bilgi için [Bkz. Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
+UnorderedMapView, uygulama ikili arabirimi (ABı) arasında geçirilen [Windows:: Foundation:: Collections:: \<K,V> ımapview](/uwp/api/windows.foundation.collections.imapview-2) arabiriminin somut bir C++ uygulamasıdır. Daha fazla bilgi için bkz. [Koleksiyonlar (C++/CX)](../cppcx/collections-c-cx.md).
 
 ### <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[SırasızMapView::SırasızMapView](#ctor)|SıradışıMapView sınıfının yeni bir örneğini başlattı.|
+|[UnorderedMapView:: UnorderedMapView](#ctor)|UnorderedMapView sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[SırasızMapView::İlk](#first)|Harita görünümündeki ilk öğeye başharflendirilen bir yineleyici döndürür.|
-|[SırasızMapView::HasKey](#haskey)|Geçerli UnorderedMapView'in belirtilen anahtarı içerip içerip içermediğini belirler.|
-|[SırasızMapView::Arama](#lookup)|Geçerli Sıradışı MapView nesnesinde belirtilen anahtardaki öğeyi alır.|
-|[SırasızMapView::Boyut](#size)|Geçerli Sıradışı MapView nesnesindeki öğe sayısını verir.|
-|[SırasızMapView::Bölme](#split)|Özgün bir UnorderedMapView nesnesi iki UnorderedMapView nesnesine böler.|
+|[UnorderedMapView:: First](#first)|Harita görünümündeki ilk öğeye başlatılan bir yineleyici döndürür.|
+|[UnorderedMapView:: HasKey](#haskey)|Geçerli UnorderedMapView 'ın belirtilen anahtarı içerip içermediğini belirler.|
+|[UnorderedMapView:: Lookup](#lookup)|Geçerli UnorderedMapView nesnesinde belirtilen anahtardaki öğeyi alır.|
+|[UnorderedMapView:: size](#size)|Geçerli UnorderedMapView nesnesindeki öğe sayısını döndürür.|
+|[UnorderedMapView:: Split](#split)|Orijinal UnorderedMapView nesnesini iki UnorderedMapView nesnelerine böler.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,15 +65,15 @@ UnorderedMapView, [Windows:Foundation::Collections::IMapView\<K,V>](/uwp/api/win
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** collection.h
+**Üstbilgi:** Collection. h
 
-**Ad alanı:** Platform::Koleksiyonlar
+**Ad alanı:** Platform:: Collections
 
-## <a name="unorderedmapviewfirst-method"></a><a name="first"></a>SırasızMapView::İlk Yöntem
+## <a name="unorderedmapviewfirst-method"></a><a name="first"></a>UnorderedMapView:: First yöntemi
 
-İlk [Windows::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğesini sıralanmamış haritada belirten bir yineleyici döndürür.
+Sıralanmamış eşlemede ilk [Windows:: Foundation:: Collections:: IKeyValuePair \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğesini belirten bir yineleyici döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual Windows::Foundation::Collections::IIterator<
@@ -87,13 +87,13 @@ Harita görünümündeki ilk öğeyi belirten bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-First() tarafından döndürülen yineleyiciyi tutmanın kullanışlı bir yolu, otomatik **tür** kesintisi anahtar sözcüğüyle birlikte bildirilen bir değişkene iade değerini atamaktır. Örneğin, `auto x = myMapView->First();`.
+Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **`auto`** tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myMapView->First();`.
 
-## <a name="unorderedmapviewhaskey-method"></a><a name="haskey"></a>SırasızMapView::HasKey Yöntemi
+## <a name="unorderedmapviewhaskey-method"></a><a name="haskey"></a>UnorderedMapView:: HasKey yöntemi
 
-Geçerli UnorderedMap'in belirtilen anahtarı içerip içerip içermediğini belirler.
+Geçerli UnorderedMap 'in belirtilen anahtarı içerip içermediğini belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool HasKey(K key);
@@ -102,17 +102,17 @@ bool HasKey(K key);
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Öğeyi bulmak için kullanılan anahtar. Türü `key` k *türüdür.*
+Öğesini bulmak için kullanılan anahtar. Türü `key` TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-anahtar bulunursa **doğru;** aksi takdirde, **yanlış**.
+**`true`** anahtar bulunursa; Aksi takdirde, **`false`** .
 
-## <a name="unorderedmapviewlookup-method"></a><a name="lookup"></a>SırasızMapView::Arama Yöntemi
+## <a name="unorderedmapviewlookup-method"></a><a name="lookup"></a>UnorderedMapView:: Lookup yöntemi
 
-Belirtilen K türünün anahtarıyla ilişkili V türünün değerini alır.
+K türünde belirtilen anahtarla ilişkilendirilen V türü değerini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 V Lookup(K key);
@@ -121,17 +121,17 @@ V Lookup(K key);
 ### <a name="parameters"></a>Parametreler
 
 *anahtar*<br/>
-Sırasız MapView'deki bir öğeyi bulmak için kullanılan anahtar. Türü `key` k *türüdür.*
+UnorderedMapView içindeki bir öğeyi bulmak için kullanılan anahtar. Türü `key` TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`key`' ile eşleştirilmiş olan değer. İade değerinin türü *V*türüdür.
+İle eşleştirilmiş değer `key` . Dönüş değerinin türü, TypeName *V*.
 
-## <a name="unorderedmapviewsize-method"></a><a name="size"></a>SırasızMapView::Boyut Yöntemi
+## <a name="unorderedmapviewsize-method"></a><a name="size"></a>UnorderedMapView:: size yöntemi
 
-Windows sayısını [döndürür::Foundation::Collections::IKeyValuePair\<K,V>](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğeleri SırasızMapView.)'de.
+UnorderedMapView içindeki [Windows:: Foundation:: Collections:: IKeyValuePair \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğelerinin sayısını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual property unsigned int Size;
@@ -139,13 +139,13 @@ virtual property unsigned int Size;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sırasız MapView'daki öğelerin sayısı.
+Sırasız MapView içindeki öğe sayısı.
 
-## <a name="unorderedmapviewsplit-method"></a><a name="split"></a>SırasızMapView::Bölme Yöntemi
+## <a name="unorderedmapviewsplit-method"></a><a name="split"></a>UnorderedMapView:: Split yöntemi
 
-Geçerli UnorderedMapView nesnesini iki SıradışıMapView nesnesine böler. Bu yöntem çalışmıyor.
+Geçerli UnorderedMapView nesnesini iki UnorderedMapView nesnelerine böler. Bu yöntem işlemsel değil.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void Split(
@@ -157,21 +157,21 @@ void Split(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilkBölüm*<br/>
-Özgün UnorderedMapView nesnesinin ilk bölümü.
+*Ilkbölüm*<br/>
+Orijinal UnorderedMapView nesnesinin ilk bölümü.
 
 *secondPartition*<br/>
-Özgün UnorderedMapView nesnesinin ikinci bölümü.
+Orijinal UnorderedMapView nesnesinin ikinci bölümü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem işlevsel değildir; Hiçbir şey yapmaz.
+Bu yöntem işlemsel değil; hiçbir şey yapmaz.
 
-## <a name="unorderedmapviewunorderedmapview-constructor"></a><a name="ctor"></a>SırasızMapView::SırasızMapView Oluşturucu
+## <a name="unorderedmapviewunorderedmapview-constructor"></a><a name="ctor"></a>UnorderedMapView:: UnorderedMapView Oluşturucusu
 
-SıradışıMapView sınıfının yeni bir örneğini başlattı.
+UnorderedMapView sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 UnorderedMapView();
@@ -218,28 +218,28 @@ UnorderedMapView(
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
-Yer bulmak için öğelerin sayısı.
+*No*<br/>
+İçin alan önceden ayrılacak öğe sayısı.
 
-*ınit*<br/>
-SırasızMapView'in daktison adı.
+*Dengeleyici*<br/>
+UnorderedMapView typeName.
 
 *H*<br/>
-Bir anahtar için karma değer edebilen bir işlev nesnesi. Varsayılan [std::hash\<K>](../standard-library/hash-class.md) destekleyen `std::hash` türleri için.
+Bir anahtar için karma değer sağlayan bir işlev nesnesi. Tarafından desteklenen türler için [std: \<K> : Hash](../standard-library/hash-class.md) varsayılandır `std::hash` .
 
 *P*<br/>
-Eşitliklerini belirlemek için iki anahtarı karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan [\<std::equal_to K>](../standard-library/equal-to-struct.md).
+Eşitliklerini belirleyebilmek için iki anahtarı karşılaştırabilen bir işlev nesnesi sağlayan bir tür. Varsayılan olarak [std:: equal_to \<K> ](../standard-library/equal-to-struct.md).
 
-*M*<br/>
-UnorderedMapView'i başlatmada kullanılan [bir std::unordered_map](../standard-library/unordered-map-class.md) için bir başvuru veya [Lvalues ve Rvalues.](../cpp/lvalues-and-rvalues-visual-cpp.md)
+*m*<br/>
+UnorderedMapView 'u başlatmak için kullanılan bir [std:: unordered_map](../standard-library/unordered-map-class.md) için bir başvuru veya [lvalues ve rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) .
 
-*Ilk*<br/>
-SıradışıMapView'i başlatmada kullanılan bir dizi öğedeki ilk öğenin giriş yineleyicisi.
+*adı*<br/>
+UnorderedMapView 'ı başlatmak için kullanılan öğe aralığındaki ilk öğenin giriş yineleyicisi.
 
-*Son*<br/>
-SıradışıMapView'i başlatmada kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
+*soyadına*<br/>
+UnorderedMapView 'ı başlatmak için kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::Koleksiyonlar Namespace](../cppcx/platform-collections-namespace.md)<br/>
-[Windows::Foundation::IMapView](/uwp/api/windows.foundation.collections.imapview-2)
+[Platform:: Collections ad alanı](../cppcx/platform-collections-namespace.md)<br/>
+[Windows:: Foundation:: ımapview](/uwp/api/windows.foundation.collections.imapview-2)
