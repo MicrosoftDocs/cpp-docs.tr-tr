@@ -1,5 +1,5 @@
 ---
-title: COleDataSource Sınıfı
+title: Cotadatasource sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDataSource
@@ -36,18 +36,18 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: 8746be43e3f2a31558904323392983b183d4f198
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 2cce7b888f929da9d313babc51a7724a4eb43482
+ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753903"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87470938"
 ---
-# <a name="coledatasource-class"></a>COleDataSource Sınıfı
+# <a name="coledatasource-class"></a>Cotadatasource sınıfı
 
-Bir uygulamanın, Pano veya sürükle-bırak işlemleri gibi veri aktarım işlemleri sırasında sunacağı verileri yerleştirdiği bir önbellek görevi görür.
+, Bir uygulamanın pano veya sürükle ve bırak işlemleri gibi veri aktarımı işlemleri sırasında sunabileceği verileri yerleştirdiği bir önbellek gibi davranır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleDataSource : public CCmdTarget
@@ -57,52 +57,52 @@ class COleDataSource : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDataSource::COleDataSource](#coledatasource)|Bir `COleDataSource` nesne inşa eder.|
+|[Cotadatasource:: Cotadatasource](#coledatasource)|Bir `COleDataSource` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDataSource::Önbellek Verileri](#cachedata)|Bir `STGMEDIUM` yapı kullanarak belirli bir biçimde veri sunar.|
-|[COleDataSource::CacheGlobalData](#cacheglobaldata)|Bir HGLOBAL kullanarak belirli bir biçimde veri sunar.|
-|[COleDataSource::DelayRenderData](#delayrenderdata)|Gecikmiş işlemeyi kullanarak verileri belirli bir biçimde sunar.|
-|[COleDataSource::DelayRenderFileData](#delayrenderfiledata)|Verileri işaretçide `CFile` belirli bir biçimde sunar.|
-|[COleDataSource::DelaySetData](#delaysetdata)|Desteklenen her biçim için çağrıda `OnSetData`bulunuldu.|
-|[COleDataSource::DoDragDrop](#dodragdrop)|Bir veri kaynağıyla sürükle ve bırak işlemleri gerçekleştirir.|
-|[COleDataSource::Boş](#empty)|Veri nesnesini `COleDataSource` boşaltır.|
-|[COleDataSource::FlushClipboard](#flushclipboard)|Tüm verileri Pano'ya işler.|
-|[COleDataSource::GetClipboardSahibi](#getclipboardowner)|Panoya yerleştirilen verilerin hala orada olduğunu doğrular.|
-|[COleDataSource::OnRenderData](#onrenderdata)|Gecikmiş işlemenin bir parçası olarak verileri alır.|
-|[COleDataSource::OnRenderFileData](#onrenderfiledata)|Gecikmiş işlemenin `CFile` bir parçası olarak verileri alır.|
-|[COleDataSource::OnRenderGlobalData](#onrenderglobaldata)|Gecikmiş işlemenin bir parçası olarak verileri bir HGLOBAL'a alır.|
-|[COleDataSource::OnSetData](#onsetdata)|`COleDataSource` Nesnedeki verileri değiştirmek için çağrıldı.|
-|[COleDataSource::SetClipboard](#setclipboard)|Panoya `COleDataSource` bir nesne yerleştirir.|
+|[Cotadatasource:: CacheData](#cachedata)|Bir yapıyı kullanarak belirtilen biçimdeki verileri sağlar `STGMEDIUM` .|
+|[Cotadatasource:: CacheGlobalData](#cacheglobaldata)|Verileri bir HGLOBAL kullanarak belirtilen biçimde sunar.|
+|[Cotadatasource::D elayRenderData](#delayrenderdata)|Gecikmeli işleme kullanarak verileri belirtilen biçimde sunar.|
+|[Cotadatasource::D elayRenderFileData](#delayrenderfiledata)|Bir işaretçi içindeki verileri belirtilen biçimde sunar `CFile` .|
+|[Cotadatasource::D elaySetData](#delaysetdata)|İçinde desteklenen her biçim için çağırılır `OnSetData` .|
+|[Cotadatasource::D oDragDrop](#dodragdrop)|Bir veri kaynağıyla sürükle ve bırak işlemleri gerçekleştirir.|
+|[Cotadatasource:: Empty](#empty)|`COleDataSource`Veri nesnesini boşaltır.|
+|[Cotadatasource:: FlushClipboard](#flushclipboard)|Tüm verileri panoya işler.|
+|[Cotadatasource:: GetClipboardOwner](#getclipboardowner)|Panoya yerleştirilmiş verilerin hala orada bulunduğunu doğrular.|
+|[Cotadatasource:: OnRenderData](#onrenderdata)|Verileri gecikmeli işlemenin bir parçası olarak alır.|
+|[Cotadatasource:: OnRenderFileData](#onrenderfiledata)|Verileri `CFile` gecikmeli işlemenin bir parçası olarak içine alır.|
+|[Cotadatasource:: OnRenderGlobalData](#onrenderglobaldata)|Gecikmeli işleme kapsamında verileri bir HGLOBAL 'e alır.|
+|[Cotadatasource:: OnSetData](#onsetdata)|Nesnedeki verileri değiştirmek için çağırılır `COleDataSource` .|
+|[Cotadatasource:: SetClipboard](#setclipboard)|Panoya bir `COleDataSource` nesne yerleştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Doğrudan OLE veri kaynakları oluşturabilirsiniz. Alternatif olarak, [COleClientItem](../../mfc/reference/coleclientitem-class.md) ve [COleServerItem](../../mfc/reference/coleserveritem-class.md) sınıfları, kendi `CopyToClipboard` ve `DoDragDrop` üye işlevlerine yanıt olarak OLE veri kaynakları oluşturur. Bkz. [COleServerItem::Kısa](../../mfc/reference/coleserveritem-class.md#copytoclipboard) bir açıklama için CopyToClipboard. İstemci `OnGetClipboardData` öğesi veya sunucu öğesi sınıfının üye işlevini geçersiz kılın ve bu aygıt `CopyToClipboard` veya `DoDragDrop` üye işlev için oluşturulan OLE veri kaynağındaki verilere ek Pano biçimleri ekleyin.
+Doğrudan OLE veri kaynakları oluşturabilirsiniz. Alternatif olarak, [Colet clientıtem](../../mfc/reference/coleclientitem-class.md) ve [Copaserveritem](../../mfc/reference/coleserveritem-class.md) sınıfları, `CopyToClipboard` ve üye işlevlerine yanıt olarak OLE veri kaynakları oluşturur `DoDragDrop` . Kısa bir açıklama için bkz. [Coelserverıtem:: CopyToClipboard](../../mfc/reference/coleserveritem-class.md#copytoclipboard) . `OnGetClipboardData` `CopyToClipboard` Veya üye işlevi IÇIN oluşturulan ole veri kaynağındaki verilere ek Pano biçimleri eklemek için istemci öğesi veya sunucu öğesi sınıfınızın üye işlevini geçersiz kılın `DoDragDrop` .
 
-Bir aktarım için veri hazırlamak istediğinizde, bu sınıfın bir nesnesini oluşturmalı ve verileriniz için en uygun yöntemi kullanarak verilerinizi doldurmalısınız. Bir veri kaynağına takılma şekli, verilerin hemen (anında işleme) veya isteğe bağlı olarak (gecikmeli işleme) sağlanıp sağlanmadığından doğrudan etkilenir. Kullanılacak Pano biçimini (ve isteğe bağlı [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısını) geçirerek veri sağladığınız her Pano biçimi için [DelayRenderData'yı](#delayrenderdata)arayın.
+Bir aktarım için veri hazırlamak istediğinizde, bu sınıfın bir nesnesini oluşturmanız ve verileriniz için en uygun yöntemi kullanarak verilerinize doldurmanız gerekir. Verilerin hemen (anında işleme) ya da isteğe bağlı (Gecikmeli işleme) olarak sağlanmasıyla, bir veri kaynağına eklenme şekli doğrudan etkilenir. Pano biçimini kullanılacak şekilde geçirerek (ve isteğe bağlı [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısı) veri sağlayan her Pano biçimi Için, [DelayRenderData](#delayrenderdata)' ı çağırın.
 
-Veri kaynakları ve veri aktarımı hakkında daha fazla bilgi için [Veri Nesneleri ve Veri Kaynakları (OLE) makalesine](../../mfc/data-objects-and-data-sources-ole.md)bakın. Buna ek olarak, makale [Pano Konular](../../mfc/clipboard.md) OLE Pano mekanizması açıklar.
+Veri kaynakları ve veri aktarımı hakkında daha fazla bilgi için bkz. [veri nesneleri ve veri kaynakları (OLE)](../../mfc/data-objects-and-data-sources-ole.md). Buna ek olarak, [Pano konuları](../../mfc/clipboard.md) başlıklı OLE panosu mekanizması açıklanmaktadır.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
 `COleDataSource`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxole.h
+**Üstbilgi:** afxole. h
 
-## <a name="coledatasourcecachedata"></a><a name="cachedata"></a>COleDataSource::Önbellek Verileri
+## <a name="coledatasourcecachedata"></a><a name="cachedata"></a>Cotadatasource:: CacheData
 
-Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
+Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi çağırın.
 
 ```cpp
 void CacheData(
@@ -114,31 +114,31 @@ void CacheData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin sunulabilmek için pano biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin sunulacağı Pano biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
-*lpStgMedium*<br/>
-Belirtilen biçimdeki verileri içeren bir [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
+*Lpstgorta*<br/>
+Verileri belirtilen biçimde içeren bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) yapısına işaret eder.
 
 *lpFormatEtc*<br/>
-Verilerin sunulabilmek için biçimini açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+Verilerin sunulacağı biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, hemen işleme kullanarak sağladığından, verileri sağlamanız gerekir. Veriler gerekli olana kadar önbelleğe alındı.
+Bu işlev, anında işleme kullanarak bunu sağladığından verileri sağlamalısınız. Veriler, gerekli olana kadar önbelleğe alınır.
 
-Verileri [bir STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısı kullanarak verin. Sağladığınız veri `CacheGlobalData` miktarı bir HGLOBAL kullanarak verimli bir şekilde aktarılabilmek için yeterince küçükse, üye işlevini de kullanabilirsiniz.
+Verileri bir [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) yapısı kullanarak sağlayın. Ayrıca, `CacheGlobalData` Aradığınız veri miktarı BIR HGLOBAL kullanılarak etkin bir şekilde aktarılmayacak kadar küçükse, üye işlevini de kullanabilirsiniz.
 
-Üyeye `CacheData` yapılan aramadan `lpFormatEtc` sonra ve *lpStgMedium'un* içeriği arayana değil, veri nesnesine aittir. `ptd`
+Üyesine yapılan çağrının `CacheData` `ptd` `lpFormatEtc` ve *lpStgMedium* içeriğinin, çağıran tarafından değil, veri nesnesine ait olması gerekir.
 
-Gecikmeli işlemeyi kullanmak için [DelayRenderData veya DelayRenderFileData](#delayrenderdata) üye işlevini arayın. [DelayRenderFileData](#delayrenderfiledata) MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Gecikmeli işleme kullanmak için [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevini çağırın. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-Daha fazla bilgi için Windows SDK'daki [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapılarına bakın.
+Daha fazla bilgi için Windows SDK bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledatasourcecacheglobaldata"></a><a name="cacheglobaldata"></a>COleDataSource::CacheGlobalData
+## <a name="coledatasourcecacheglobaldata"></a><a name="cacheglobaldata"></a>Cotadatasource:: CacheGlobalData
 
-Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
+Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi çağırın.
 
 ```cpp
 void CacheGlobalData(
@@ -150,35 +150,35 @@ void CacheGlobalData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin sunulabilmek için pano biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin sunulacağı Pano biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
-*Hglobal*<br/>
-Belirtilen biçimdeki verileri içeren genel bellek bloğuna işle.
+*hGlobal*<br/>
+Verileri belirtilen biçimde içeren genel bellek bloğunun tanıtıcısı.
 
 *lpFormatEtc*<br/>
-Verilerin sunulabilmek için biçimini açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+Verilerin sunulacağı biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, verileri anında işleme kullanarak sağlar, bu nedenle işlevi ararken verileri sağlamanız gerekir; veri gerekli olana kadar önbelleğe verilir. Büyük `CacheData` miktarda veri sağlıyorsanız veya yapılandırılmış bir depolama ortamına ihtiyaç duyuyorsanız üye işlevini kullanın.
+Bu işlev, verileri anında işleme kullanarak sağlar; bu nedenle, işlevi çağırırken verileri sağlamalısınız; veriler, gerekli olana kadar önbelleğe alınır. `CacheData`Büyük miktarda veri tedarik ediyorsanız veya yapılandırılmış bir depolama ortamı gerekiyorsa üye işlevini kullanın.
 
-Gecikmeli işlemeyi kullanmak için [DelayRenderData veya DelayRenderFileData](#delayrenderdata) üye işlevini arayın. [DelayRenderFileData](#delayrenderfiledata) MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Gecikmeli işleme kullanmak için [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevini çağırın. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-Daha fazla bilgi için Windows SDK'daki [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledatasourcecoledatasource"></a><a name="coledatasource"></a>COleDataSource::COleDataSource
+## <a name="coledatasourcecoledatasource"></a><a name="coledatasource"></a>Cotadatasource:: Cotadatasource
 
-Bir `COleDataSource` nesne inşa eder.
+Bir `COleDataSource` nesnesi oluşturur.
 
 ```
 COleDataSource();
 ```
 
-## <a name="coledatasourcedelayrenderdata"></a><a name="delayrenderdata"></a>COleDataSource::DelayRenderData
+## <a name="coledatasourcedelayrenderdata"></a><a name="delayrenderdata"></a>Cotadatasource::D elayRenderData
 
-Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
+Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi çağırın.
 
 ```cpp
 void DelayRenderData(
@@ -189,26 +189,26 @@ void DelayRenderData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin sunulabilmek için pano biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin sunulacağı Pano biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *lpFormatEtc*<br/>
-Verilerin sunulabilmek için biçimini açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+Verilerin sunulacağı biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, verileri gecikmeli işleme kullanarak sağlar, bu nedenle veriler hemen sağlanmaz. Verileri istemek için [OnRenderData](#onrenderdata) veya [OnRenderGlobalData](#onrenderglobaldata) üye işlevi çağrılır.
+Bu işlev gecikmeli işleme kullanarak verileri sağlar, bu nedenle veriler hemen sağlanmaz. Veri istemek için [OnRenderData](#onrenderdata) veya [OnRenderGlobalData](#onrenderglobaldata) üye işlevi çağırılır.
 
-Verilerinizi bir `CFile` nesne üzerinden sağlamayacaksanız bu işlevi kullanın. Verileri bir `CFile` nesne üzerinden tedarik edecekseniz, [DelayRenderFileData](#delayrenderfiledata) üye işlevini arayın. MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Verilerinizi bir nesne üzerinden sağlayacaksanız bu işlevi kullanın `CFile` . Verileri bir nesne üzerinden sağlayacaksanız `CFile` , [DelayRenderFileData](#delayrenderfiledata) üye işlevini çağırın. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-Hemen işleme kullanmak için [CacheData](#cachedata) veya [CacheGlobalData](#cacheglobaldata) üye işlevini arayın.
+Anında işlemeyi kullanmak için [CacheData](#cachedata) veya [CacheGlobalData](#cacheglobaldata) üye işlevini çağırın.
 
-Daha fazla bilgi için Windows SDK'daki [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledatasourcedelayrenderfiledata"></a><a name="delayrenderfiledata"></a>COleDataSource::DelayRenderFileData
+## <a name="coledatasourcedelayrenderfiledata"></a><a name="delayrenderfiledata"></a>Cotadatasource::D elayRenderFileData
 
-Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi arayın.
+Veri aktarım işlemleri sırasında verilerin sunulduğu bir biçim belirtmek için bu işlevi çağırın.
 
 ```cpp
 void DelayRenderFileData(
@@ -219,26 +219,26 @@ void DelayRenderFileData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin sunulabilmek için pano biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin sunulacağı Pano biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *lpFormatEtc*<br/>
-Verilerin sunulabilmek için biçimini açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+Verilerin sunulacağı biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, verileri gecikmeli işleme kullanarak sağlar, bu nedenle veriler hemen sağlanmaz. Verileri istemek için [OnRenderFileData](#onrenderfiledata) üye işlevi çağrılır.
+Bu işlev gecikmeli işleme kullanarak verileri sağlar, bu nedenle veriler hemen sağlanmaz. [OnRenderFileData](#onrenderfiledata) üye işlevi, verileri istemek için çağrılır.
 
-Verileri sağlamak için bir `CFile` nesne kullanacaksanız bu işlevi kullanın. Bir `CFile` nesne kullanmayacaksanız, [DelayRenderData](#delayrenderdata) üye işlevini arayın. MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Verileri sağlamak için bir nesnesi kullanacaksanız, bu işlevi kullanın `CFile` . Bir `CFile` nesne kullanacaksanız, [DelayRenderData](#delayrenderdata) üye işlevini çağırın. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-Hemen işleme kullanmak için [CacheData](#cachedata) veya [CacheGlobalData](#cacheglobaldata) üye işlevini arayın.
+Anında işlemeyi kullanmak için [CacheData](#cachedata) veya [CacheGlobalData](#cacheglobaldata) üye işlevini çağırın.
 
-Daha fazla bilgi için Windows SDK'daki [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledatasourcedelaysetdata"></a><a name="delaysetdata"></a>COleDataSource::DelaySetData
+## <a name="coledatasourcedelaysetdata"></a><a name="delaysetdata"></a>Cotadatasource::D elaySetData
 
-Veri kaynağının içeriğini değiştirmeyi desteklemek için bu işlevi arayın.
+Veri kaynağının içeriğini değiştirmeyi desteklemek için bu işlevi çağırın.
 
 ```cpp
 void DelaySetData(
@@ -249,22 +249,22 @@ void DelaySetData(
 ### <a name="parameters"></a>Parametreler
 
 *cfFormat*<br/>
-Verilerin yerleştirilmeye alındığı Pano biçimi. Bu parametre önceden tanımlanmış Pano biçimlerinden veya ana Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
+Verilerin yerleştirileceği Pano biçimi. Bu parametre, önceden tanımlanmış Pano biçimlerinden biri veya yerel Windows [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) işlevi tarafından döndürülen değerden biri olabilir.
 
 *lpFormatEtc*<br/>
-Verilerin değiştirilme biçimini açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *cfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgileri belirtmek istiyorsanız bu parametre için bir değer sağlayın. NULL ise, `FORMATETC` yapıdaki diğer alanlar için varsayılan değerler kullanılır.
+Verilerin değiştirildiği biçimi açıklayan bir [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder. *CfFormat*tarafından belirtilen Pano biçiminin ötesinde ek biçim bilgilerini belirtmek istiyorsanız bu parametre için bir değer girin. NULL ise, yapıdaki diğer alanlar için varsayılan değerler kullanılır `FORMATETC` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu durumda [OnSetData](#onsetdata) çerçeve tarafından çağrılacaktır. Bu yalnızca çerçeve COleServerItem veri kaynağını döndürdüğünde [kullanılır::GetDataSource.](../../mfc/reference/coleserveritem-class.md#getdatasource) `DelaySetData` Çağrılmazsa, işleviniz `OnSetData` asla çağrılmaz. `DelaySetData`desteklediğiniz her Pano veya `FORMATETC` biçim için çağrılmalıdır.
+Bu gerçekleştiğinde [OnSetData](#onsetdata) Framework tarafından çağırılır. Bu yalnızca Framework [Copaserverıtem:: GetDataSource](../../mfc/reference/coleserveritem-class.md#getdatasource)öğesinden veri kaynağını döndürdüğünde kullanılır. `DelaySetData`Çağrılmadıysa, `OnSetData` işleviniz hiçbir şekilde çağrılmaz. `DelaySetData`, destekettiğiniz her Pano veya biçim için çağrılmalıdır `FORMATETC` .
 
-Daha fazla bilgi için Windows SDK'daki [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına bakın.
 
-Daha fazla bilgi için Windows SDK'daki [RegisterClipboardFormat'a](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bakın.
+Daha fazla bilgi için Windows SDK [RegisterClipboardFormat](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) bölümüne bakın.
 
-## <a name="coledatasourcedodragdrop"></a><a name="dodragdrop"></a>COleDataSource::DoDragDrop
+## <a name="coledatasourcedodragdrop"></a><a name="dodragdrop"></a>Cotadatasource::D oDragDrop
 
-Bu `DoDragDrop` veri kaynağı için genellikle [cwnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) işleyicisi bir sürükle ve bırak işlemi gerçekleştirmek için üye işlevi arayın.
+`DoDragDrop`Genellikle bir [CWnd:: Onlbuttonaþaðý](../../mfc/reference/cwnd-class.md#onlbuttondown) Handler içinde bu veri kaynağı için sürükle ve bırak işlemi gerçekleştirmek üzere member işlevini çağırın.
 
 ```
 DROPEFFECT DoDragDrop(
@@ -275,46 +275,46 @@ DROPEFFECT DoDragDrop(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwEfektler*<br/>
-Bu veri kaynağında izin verilen sürükle ve bırak işlemleri. Aşağıdakilerden biri veya birkaçı olabilir:
+*dwEffects*<br/>
+Bu veri kaynağında izin verilen sürükle ve bırak işlemleri. Aşağıdakilerden biri veya daha fazlası olabilir:
 
-- DROPEFFECT_COPY Bir kopyalama işlemi gerçekleştirilebilir.
+- Kopyalama işlemi DROPEFFECT_COPY gerçekleştirilemiyor.
 
-- DROPEFFECT_MOVE Bir hareket işlemi gerçekleştirilebilir.
+- Taşıma işlemi DROPEFFECT_MOVE gerçekleştirilemiyor.
 
-- DROPEFFECT_LINK Bırakılan verilerden özgün verilere bir bağlantı kurulabilir.
+- Bırakılan verilerden özgün verilere bir bağlantı DROPEFFECT_LINK kurulacaktır.
 
-- DROPEFFECT_SCROLL Sürükle kaydırma işleminin oluşabileceğini gösterir.
+- DROPEFFECT_SCROLL, bir sürükleme kaydırma işleminin oluşabileceği anlamına gelir.
 
 *lpRectStartDrag*<br/>
-Sürüklemenin gerçekte nerede başladığını tanımlayan dikdörtgeni işaretle. Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.
+Sürüklediğiniz yerin gerçekten başladığı dikdörtgeni tanımlayan dikdörtgen işaretçisi. Daha fazla bilgi için aşağıdaki Açıklamalar bölümüne bakın.
 
 *pDropSource*<br/>
-Bir düşüş kaynağına işaret. NULL sonra [COleDropSource](../../mfc/reference/coledropsource-class.md) varsayılan bir uygulama kullanılacaktır.
+Bırakma kaynağını işaret eder. NULL ise [COleDropSource](../../mfc/reference/coledropsource-class.md) 'un varsayılan bir kopyası kullanılacaktır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sürükle ve bırak işlemi tarafından oluşturulan bırakma efekti; kullanıcı sağlanan dikdörtgenayrılmadan önce fare düğmesini yayımladı çünkü işlem hiç başlamazsa aksi DROPEFFECT_NONE.
+Sürükle ve bırak işlemi tarafından oluşturulan bırakma efekti; Aksi takdirde, Kullanıcı, sağlanan dikdörtgenden çıkmadan önce fare düğmesini yayımladığından, işlem hiçbir şekilde başlamadıysa DROPEFFECT_NONE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sürükle ve bırak işlemi hemen başlamaz. Fare *imleci, lpRectStartDrag* tarafından belirtilen dikdörtgeni bırakana veya belirli sayıda milisaniye geçene kadar bekler. *lpRectStartDrag* NULL ise, dikdörtgenin boyutu bir pikseldir.
+Sürükle ve bırak işlemi hemen başlamaz. Fare imleci, *lpRectStartDrag* tarafından belirtilen dikdörtgenden ayrılana veya belirtilen sayıda milisaniyeye geçene kadar bekler. *LpRectStartDrag* null ise, dikdörtgenin boyutu bir piksel olur.
 
-Gecikme süresi bir kayıt defteri anahtarı ayarı ile belirtilir. CWinApp'ı arayarak gecikme süresini [değiştirebilirsiniz::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) veya [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). Gecikme süresini belirtmezseniz, varsayılan değeri 200 milisaniye olarak kullanılır. Sürükleme gecikme süresi aşağıdaki gibi depolanır:
+Gecikme süresi bir kayıt defteri anahtarı ayarıyla belirtilir. , [CWinApp:: WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) veya [CWinApp:: writeprofileint](../../mfc/reference/cwinapp-class.md#writeprofileint)çağırarak gecikme süresini değiştirebilirsiniz. Gecikme süresini belirtmezseniz, varsayılan 200 milisaniyelik bir değer kullanılır. Sürükleme gecikmesi süresi şu şekilde depolanır:
 
-- Windows NT Sürükle gecikme süresi HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\NT\CurrentVersion\IniFileMapping\win.ini\Windows\DragDelay'da depolanır.
+- Windows NT sürükleme gecikmesi süresi HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\NT\CurrentVersion\IniFileMapping\win.ini \Windows\dragdelay' de depolanır.
 
-- Windows 3.x Sürükleme gecikme süresi WIN'de depolanır. INI dosyası, [Windows} bölümünün altında.
+- Windows 3. x sürükleme gecikmesi süresi, [Windows} bölümünün altındaki WIN.INI dosyasında depolanır.
 
-- Windows 95/98 Sürükleme gecikme süresi WIN'in önbelleğe alınmış sürümünde depolanır. ını.
+- Windows 95/98 sürükleme gecikmesi süresi, WIN.INI önbelleğe alınmış bir sürümünde depolanıyor.
 
-Sürükleme gecikmesi bilgilerinin kayıt defterinde veya .' de nasıl depolandırılabilen hakkında daha fazla bilgi için. INI dosyası, Windows SDK'daki [WriteProfileString'e](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) bakın.
+Sürükleme gecikmesi bilgilerinin kayıt defterinde veya ' de nasıl depolandığını hakkında daha fazla bilgi için. INı dosyası, Windows SDK bkz. [WriteProfileString](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) .
 
-Daha fazla bilgi için, makale [OLE sürükleyin ve bırakın](../../mfc/drag-and-drop-ole.md)bakın.
+Daha fazla bilgi için [OLE sürükle ve bırak](../../mfc/drag-and-drop-ole.md)makalesine bakın.
 
-## <a name="coledatasourceempty"></a><a name="empty"></a>COleDataSource::Boş
+## <a name="coledatasourceempty"></a><a name="empty"></a>Cotadatasource:: Empty
 
-Veri nesnesini `COleDataSource` boşaltmak için bu işlevi çağırın.
+Veri nesnesini boşaltmak için bu işlevi çağırın `COleDataSource` .
 
 ```cpp
 void Empty();
@@ -322,13 +322,13 @@ void Empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Önbelleğe alınmış ve gecikme li render biçimleri yeniden kullanılabilecek şekilde boşaltılır.
+Hem önbelleğe alınmış hem de gecikmeli işleme biçimleri yeniden kullanılabilmesi için boşaltılır.
 
-Daha fazla bilgi için Windows SDK'daki [ReleaseStgMedium'a](/windows/win32/api/ole2/nf-ole2-releasestgmedium) bakın.
+Daha fazla bilgi için Windows SDK [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) bölümüne bakın.
 
-## <a name="coledatasourceflushclipboard"></a><a name="flushclipboard"></a>COleDataSource::FlushClipboard
+## <a name="coledatasourceflushclipboard"></a><a name="flushclipboard"></a>Cotadatasource:: FlushClipboard
 
-Pano'daki verileri işler ve uygulamanız kapandıktan sonra Pano'dan veri yapıştırmamanızı sağlar.
+Panodaki verileri işler ve sonra uygulamanız kapandıktan sonra panodaki verileri yapıştırmanıza olanak tanır.
 
 ```
 static void PASCAL FlushClipboard();
@@ -336,11 +336,11 @@ static void PASCAL FlushClipboard();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Panoya veri koymak için [SetClipboard'u](#setclipboard) kullanın.
+Panodaki verileri yerleştirmek için [SetClipboard](#setclipboard) 'u kullanın.
 
-## <a name="coledatasourcegetclipboardowner"></a><a name="getclipboardowner"></a>COleDataSource::GetClipboardSahibi
+## <a name="coledatasourcegetclipboardowner"></a><a name="getclipboardowner"></a>Cotadatasource:: GetClipboardOwner
 
-[SetClipboard](#setclipboard) en son çağrıldığından beri Panodaki verilerin değişip değişmediğini belirler ve varsa geçerli sahibini tanımlar.
+[SetClipboard](#setclipboard) 'un son çağrılmasından bu yana panodaki verilerin değişip değişmediğini belirler ve varsa, geçerli sahibini tanımlar.
 
 ```
 static COleDataSource* PASCAL GetClipboardOwner();
@@ -348,11 +348,11 @@ static COleDataSource* PASCAL GetClipboardOwner();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pano'da şu anda bulunan veri kaynağı veya Pano'da hiçbir şey yoksa veya Pano arama uygulamasına ait değilse NULL.
+Panodaki veri kaynağı veya Pano üzerinde hiçbir şey yoksa ya da Pano çağıran uygulamaya ait değilse NULL.
 
-## <a name="coledatasourceonrenderdata"></a><a name="onrenderdata"></a>COleDataSource::OnRenderData
+## <a name="coledatasourceonrenderdata"></a><a name="onrenderdata"></a>Cotadatasource:: OnRenderData
 
-Belirtilen biçimde veri almak için çerçeve tarafından çağrılır.
+Verileri belirtilen biçimde almak için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnRenderData(
@@ -365,26 +365,26 @@ virtual BOOL OnRenderData(
 *lpFormatEtc*<br/>
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
-*lpStgMedium*<br/>
-Verilerin döndürülmek üzere olduğu bir [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder.
+*Lpstgorta*<br/>
+Verilerin döndürüleceği bir [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim, gecikmiş işleme için `COleDataSource` DelayRenderData veya [DelayRenderFileData](#delayrenderfiledata) üye işlevini kullanarak nesneye daha önce yerleştirilen biçimdir. [DelayRenderData](#delayrenderdata) Sağlanan depolama ortamı sırasıyla bir dosya veya bellek ise, bu işlevin varsayılan uygulaması [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata) çağırır. Bu biçimlerin hiçbiri sağlanmışsa, varsayılan uygulama 0 döndürecek ve hiçbir şey yapmaz. MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Belirtilen biçim, `COleDataSource` gecikmeli işleme Için [DelayRenderData](#delayrenderdata) veya [DelayRenderFileData](#delayrenderfiledata) üye işlevi kullanılarak nesnesine daha önce yerleştirilmiş bir biçimdir. Sağlanan depolama ortamı sırasıyla bir dosya veya bellek ise, bu işlevin varsayılan uygulanması [OnRenderFileData](#onrenderfiledata) veya [OnRenderGlobalData](#onrenderglobaldata) ' ı çağırır. Bu biçimlerin hiçbiri sağlanmazsa, varsayılan uygulama 0 döndürür ve hiçbir şey yapmaz. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-*lpStgMedium*-> *tymed* TYMED_NULL ise, `STGMEDIUM` *lpFormatEtc->tymed*tarafından belirtildiği şekilde tahsis edilmeli ve doldurulmalıdır. TYMED_NULL değilse, verilerle `STGMEDIUM` birlikte doldurulmalıdır.
+*LpStgMedium* ->  *TYMED* TYMED_NULL ise, `STGMEDIUM` *lpFormatEtc->TYMED*tarafından belirtilen şekilde ayrılmalı ve doldurulmalıdır. TYMED_NULL değilse, `STGMEDIUM` verilerle birlikte doldurulmalıdır.
 
-Bu gelişmiş bir geçersiz. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçükse ve boyutu sabitse, geçersiz kılın. `OnRenderGlobalData` Verileriniz bir dosyadaysa veya değişken boyuttaysa `OnRenderFileData`geçersiz kılın.
+Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçük ve boyut olarak düzeltildiğinde, geçersiz kılın `OnRenderGlobalData` . Verileriniz bir dosya içinde veya değişken boyutunda ise, geçersiz kılın `OnRenderFileData` .
 
-Daha fazla bilgi için [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları, [TYMED](/windows/win32/api/objidl/ne-objidl-tymed) numaralandırma türü ve [IDataObject::Windows](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) SDK'daki Verileri alın.
+Daha fazla bilgi için bkz. [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları, [tymed](/windows/win32/api/objidl/ne-objidl-tymed) numaralandırma [türü ve Windows SDK](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) .
 
-## <a name="coledatasourceonrenderfiledata"></a><a name="onrenderfiledata"></a>COleDataSource::OnRenderFileData
+## <a name="coledatasourceonrenderfiledata"></a><a name="onrenderfiledata"></a>Cotadatasource:: OnRenderFileData
 
-Belirtilen depolama ortamı bir dosya olduğunda belirtilen biçimde veri almak için çerçeve tarafından çağrılır.
+Belirtilen depolama ortamı bir dosya olduğunda, belirtilen biçimdeki verileri almak için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnRenderFileData(
@@ -398,23 +398,23 @@ virtual BOOL OnRenderFileData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *pFile*<br/>
-Verilerin oluşturulacak olduğu bir [CFile](../../mfc/reference/cfile-class.md) nesnesine işaret ediyor.
+Verilerin işlendiği bir [CFile](../../mfc/reference/cfile-class.md) nesnesine işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim, gecikmiş işleme için `COleDataSource` [DelayRenderData](#delayrenderdata) üye işlevini kullanarak nesneye daha önce yerleştirilen biçimdir. Bu işlevin varsayılan uygulaması sadece FALSE döndürür.
+Belirtilen biçim, `COleDataSource` gecikmeli işleme Için [DelayRenderData](#delayrenderdata) üye işlevi kullanılarak nesnesine daha önce yerleştirilmiş bir biçimdir. Bu işlevin varsayılan uygulanması yalnızca FALSE değerini döndürür.
 
-Bu gelişmiş bir geçersiz. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız, [OnRenderData'yı](#onrenderdata)geçersiz kılın. Verileriniz bir dosyadaysa veya değişken boyuttaysa `OnRenderFileData`geçersiz kılın. MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız [OnRenderData](#onrenderdata)öğesini geçersiz kılın. Verileriniz bir dosya içinde veya değişken boyutunda ise, geçersiz kılın `OnRenderFileData` . MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-Daha fazla bilgi için [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına ve [IDataObject::Windows](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) SDK'daki Verileri Alın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına ve [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) ' na bakın.
 
-## <a name="coledatasourceonrenderglobaldata"></a><a name="onrenderglobaldata"></a>COleDataSource::OnRenderGlobalData
+## <a name="coledatasourceonrenderglobaldata"></a><a name="onrenderglobaldata"></a>Cotadatasource:: OnRenderGlobalData
 
-Belirtilen depolama ortamı genel bellek olduğunda, belirtilen biçimde veri almak için çerçeve tarafından çağrılır.
+Belirtilen depolama ortamı genel bellek olduğunda, belirtilen biçimdeki verileri almak için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnRenderGlobalData(
@@ -428,25 +428,25 @@ virtual BOOL OnRenderGlobalData(
 Bilgilerin istendiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
 *phGlobal*<br/>
-Verilerin döndürülmek üzere olduğu genel belleğe işaret eder. Henüz tahsis edilmemişse, bu parametre NULL olabilir.
+Verilerin döndürüleceği genel belleğe yönelik bir tanıtıcıya işaret eder. Henüz ayrılmadıysa, bu parametre NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen biçim, gecikmiş işleme için `COleDataSource` [DelayRenderData](#delayrenderdata) üye işlevini kullanarak nesneye daha önce yerleştirilen biçimdir. Bu işlevin varsayılan uygulaması sadece FALSE döndürür.
+Belirtilen biçim, `COleDataSource` gecikmeli işleme Için [DelayRenderData](#delayrenderdata) üye işlevi kullanılarak nesnesine daha önce yerleştirilmiş bir biçimdir. Bu işlevin varsayılan uygulanması yalnızca FALSE değerini döndürür.
 
-*phGlobal* NULL ise, o zaman yeni bir HGLOBAL tahsis edilmeli ve *phGlobal*döndürülmelidir. Aksi takdirde, *phGlobal* tarafından belirtilen HGLOBAL verilerle doldurulmalıdır. HGLOBAL'a yerleştirilen veri miktarı bellek bloğunun geçerli boyutunu aşmamalıdır. Ayrıca, blok daha büyük bir boyuta yeniden tahsis edilemez.
+*PhGlobal* değeri null ise, yenı bır hglobalin ayrılmalı ve *phGlobal*'te döndürülmelidir. Aksi takdirde, *phGlobal* tarafından belirtilen HGLOBAL, verilerle doldurulmalıdır. HGLOBAL 'e yerleştirilmiş veri miktarı, bellek bloğunun geçerli boyutunu aşmamalıdır. Ayrıca, blok daha büyük bir boyuta yeniden ayrılamaz.
 
-Bu gelişmiş bir geçersiz. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız, [OnRenderData'yı](#onrenderdata)geçersiz kılın. Verileriniz bir dosyadaysa veya değişken boyutundaysa, [OnRenderFileData'yı](#onrenderfiledata)geçersiz kılın. MFC tarafından işlenen gecikmiş işleme hakkında daha fazla bilgi için [Bkz. Veri Nesneleri ve Veri Kaynakları: Manipülasyon.](../../mfc/data-objects-and-data-sources-manipulation.md)
+Bu gelişmiş bir geçersiz kılınabilir. Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamını işlemek istiyorsanız [OnRenderData](#onrenderdata)öğesini geçersiz kılın. Verileriniz bir dosya veya değişken boyutda ise, [OnRenderFileData](#onrenderfiledata)öğesini geçersiz kılın. MFC tarafından işlenmiş şekilde gecikmeli işleme hakkında daha fazla bilgi için [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md)makalesine bakın.
 
-Daha fazla bilgi için [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına ve [IDataObject::Windows](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) SDK'daki Verileri Alın.
+Daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına ve [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) ' na bakın.
 
-## <a name="coledatasourceonsetdata"></a><a name="onsetdata"></a>COleDataSource::OnSetData
+## <a name="coledatasourceonsetdata"></a><a name="onsetdata"></a>Cotadatasource:: OnSetData
 
-`COleDataSource` Belirtilen biçimde nesnedeki verileri ayarlamak veya değiştirmek için çerçeve tarafından çağrılır.
+Belirtilen biçimdeki nesne içindeki verileri ayarlamak veya değiştirmek için Framework tarafından çağırılır `COleDataSource` .
 
 ```
 virtual BOOL OnSetData(
@@ -460,27 +460,27 @@ virtual BOOL OnSetData(
 *lpFormatEtc*<br/>
 Verilerin değiştirildiği biçimi belirten [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapısına işaret eder.
 
-*lpStgMedium*<br/>
-Nesnenin geçerli içeriğini değiştirecek verileri içeren [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) yapısına işaret eder. `COleDataSource`
+*Lpstgorta*<br/>
+Nesnenin geçerli içeriğinin yerini alacak olan verileri içeren [Stgorta](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) yapısına işaret eder `COleDataSource` .
 
 *bRelease*<br/>
-İşlev çağrısını tamamladıktan sonra depolama ortamının sahipliğini kimde olduğunu gösterir. Arayan, depolama ortamı adına ayrılan kaynakların serbest bırakılmasından kimin sorumlu olduğuna karar verir. Arayan bunu *bRelease*ayarlayarak yapar. *bRelease* sıfır değilse, veri kaynağı sahipliğini alır ve kullanımı tamamlandığında ortamı serbest bırakarak. *bRelease* 0 olduğunda, arayan sahipliğini korur ve veri kaynağı depolama ortamını yalnızca arama süresince kullanabilir.
+İşlev çağrısını tamamladıktan sonra kimin depolama ortamının sahipliğini olduğunu gösterir. Çağıran, depolama ortamı adına ayrılan kaynakları serbest bırakmaktan sorumlu kişiye karar veriyor. Çağıran bunu *bRelease*'i ayarlayarak yapar. *BRelease* sıfırdan farklı ise, veri kaynağı sahiplik alır ve onu kullanmayı bitirdiğinde ortamı serbest bırakır. *BRelease* 0 olduğunda, çağıran sahipliği korur ve veri kaynağı depolama ortamını yalnızca çağrının süresi boyunca kullanabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı, verileri başarıyla elde edene kadar sahiplenmez. Diğer bir se, 0 `OnSetData` döndürürse sahiplenmez. Veri kaynağı sahipliği alırsa, [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) işlevini arayarak depolama ortamını serbest düşürür.
+Veri kaynağı, verileri başarıyla edinene kadar verilerin sahipliğini almaz. Yani, `OnSetData` 0 döndürürse sahiplik almaz. Veri kaynağı sahiplik alırsa, [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) işlevini çağırarak depolama ortamını serbest bırakır.
 
-Varsayılan uygulama hiçbir şey yapmaz. Belirtilen biçimdeki verileri değiştirmek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz.
+Varsayılan uygulama hiçbir şey yapmaz. Belirtilen biçimdeki verileri değiştirmek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium~r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) ve [IDataObject::Windows](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) SDK'daki GetData işlevlerine bakın.
+Daha fazla bilgi için Windows SDK [Stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) ve [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) yapıları ve [ReleaseStgMedium](/windows/win32/api/ole2/nf-ole2-releasestgmedium) ve [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) işlevlerine bakın.
 
-## <a name="coledatasourcesetclipboard"></a><a name="setclipboard"></a>COleDataSource::SetClipboard
+## <a name="coledatasourcesetclipboard"></a><a name="setclipboard"></a>Cotadatasource:: SetClipboard
 
-Aşağıdaki işlevlerden birini `COleDataSource` aradıktan sonra nesnede bulunan verileri Panoya koyar: [CacheData](#cachedata), [CacheGlobalData,](#cacheglobaldata) [DelayRenderData](#delayrenderdata)veya [DelayRenderFileData](#delayrenderfiledata).
+`COleDataSource`Aşağıdaki işlevlerden birini çağırdıktan sonra panodaki nesnenin içerdiği verileri yerleştirir: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata)veya [DelayRenderFileData](#delayrenderfiledata).
 
 ```cpp
 void SetClipboard();
@@ -488,8 +488,8 @@ void SetClipboard();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleDataObject Sınıfı](../../mfc/reference/coledataobject-class.md)
+[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Cotadataobject sınıfı](../../mfc/reference/coledataobject-class.md)
