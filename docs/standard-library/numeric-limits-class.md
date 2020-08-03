@@ -70,12 +70,12 @@ helpviewer_keywords:
 - std::numeric_limits [C++], tinyness_before
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
-ms.openlocfilehash: fbbeb2fe8d122cd3ca396900ee1b3806e2069b7b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0b33404f16df59e2cb73023f3539e87080734a1
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202889"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520609"
 ---
 # <a name="numeric_limits-class"></a>numeric_limits Sınıfı
 
@@ -125,7 +125,7 @@ Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlam
 |[max_digits10](#max_digits10)|Türün iki farklı değerinin farklı ondalık gösterimlerine sahip olduğundan emin olmak için gereken ondalık basamak sayısını döndürür.|
 |[max_exponent](#max_exponent)|Bu kuvvete bir taban tabanı oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en fazla pozitif integral üstel değeri döndürür.|
 |[max_exponent10](#max_exponent10)|Bir taban on bu kuvvete döndürüldüğünde kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük pozitif integral üstel değeri döndürür.|
-|[Min](#min)|Bir tür için en küçük normalleştirilmiş değeri döndürür.|
+|[dk](#min)|Bir tür için en küçük normalleştirilmiş değeri döndürür.|
 |[min_exponent](#min_exponent)|Bu kuvvete bir taban tabanı oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük negatif integral üstel değeri döndürür.|
 |[min_exponent10](#min_exponent10)|On 'un bir tabanı bu kuvvete oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük negatif integral üssün birini döndürür.|
 |[quiet_NaN](#quiet_nan)|Tür için sessiz sayı değil (NAN) gösterimini döndürür.|
@@ -345,7 +345,7 @@ static constexpr float_denorm_style has_denorm = denorm_absent;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Türün **`const`** `float_denorm_style` Normalleştirilmemiş değerlerin izin verip içermediğini gösteren bir numaralandırma değeri.
+Türün `const float_denorm_style` Normalleştirilmemiş değerlerin izin verip içermediğini gösteren bir numaralandırma değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 

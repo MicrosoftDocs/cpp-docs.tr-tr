@@ -11,18 +11,18 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 69a6b413ec6d9d6897e5f11a11aac8c75db2cf5f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 36861705acf0328af5c1207c3bf33a098fc3b348
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217213"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520557"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive- (Standartlara uyumluluk)
 
 Derleyiciye standartlar uygunluk modunu belirtin. Kodunuzda uyumluluk sorunlarını belirleyip düzeltmenize yardımcı olması için bu seçeneği kullanın. böylece, hem daha doğru hem de daha fazla taşınabilir hale getirebilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/permissive-`**
 
@@ -240,13 +240,13 @@ Derleyicinin Visual Studio 2017 sürüm 15,3 ' den önceki sürümlerinde, derle
 
 Bu değişikliğin neden olabileceği yaygın hatalar şunlardır:
 
-- **`error C2593`**`: 'operator ?' is ambiguous`
+- `error C2593: 'operator ?' is ambiguous`
 
-- **`error C2679`**`: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
+- `error C2679: binary '?': no operator found which takes a right-hand operand of type 'B' (or there is no acceptable conversion)`
 
-- **`error C2678`**`: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
+- `error C2678: binary '?': no operator found which takes a left-hand operand of type 'A' (or there is no acceptable conversion)`
 
-- **`error C2446`**`: ':': no conversion from 'B' to 'A'`
+- `error C2446: ':': no conversion from 'B' to 'A'`
 
 Bu soruna neden olabilecek tipik bir kod deseninin bir sınıf C, başka bir tür T 'den açık olmayan bir Oluşturucu ve tür T olarak açık olmayan bir dönüştürme işlecinden sunmaktır. Bu durumda, ikinci bağımsız değişkeni üçüncü bağımsız değişkenin türüne dönüştürme ve üçüncü bağımsız değişkeni ikinci bağımsız değişkenin türüne dönüştürme geçerli dönüştürmelerdir. Her ikisi de geçerli olduğundan, standart öğesine göre belirsizdir.
 

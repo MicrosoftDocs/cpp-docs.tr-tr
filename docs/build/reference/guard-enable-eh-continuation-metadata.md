@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - /guard:ehcont
 - /guard:ehcont compiler option
-ms.openlocfilehash: c1b960bf13a6a7b7ff67996c9fa5119075216dae
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0c5a49d578e626d052aa9d132afbaee5686cb7a7
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190526"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520531"
 ---
 # <a name="guardehcont-enable-eh-continuation-metadata"></a>/guard:ehcont (EH Devamlılık Meta Verilerini Etkinleştir)
 
 Derleyiciye göre EH devamlılık (EHCONT) meta verilerini oluşturmayı mümkün.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/guard:ehcont`**[**`-`**]
 
@@ -51,9 +51,9 @@ Comamats 'de bulunan ancak kullanılarak derlenmediği SEH bölüm bilgileri iç
 
 Bağlayıcı meta veriler üretemiyor, aşağıdaki hatalardan birini yayar:
 
-- **`LNK2046`**`: module contains _local_unwind but was not compiled with /guard:ehcont`
+- `LNK2046: module contains _local_unwind but was not compiled with /guard:ehcont`
 
-- **`LNK2047`**`: module contains C++ EH or complex EH metadata but was not compiled with /guard:ehcont.`
+- `LNK2047: module contains C++ EH or complex EH metadata but was not compiled with /guard:ehcont.`
 
 Bir ikilinin EHCONT verisi içerip içerbir şekilde olup olmadığını denetlemek için, ikilinin Yük config dosyasına göz atmak için aşağıdaki öğeleri inceleyin:
 

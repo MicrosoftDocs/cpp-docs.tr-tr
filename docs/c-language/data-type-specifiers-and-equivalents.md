@@ -12,12 +12,12 @@ helpviewer_keywords:
 - simple types, names
 - type names [C++], simple
 ms.assetid: 0d4b515a-4f68-4786-83cf-a5d43c7cb6f3
-ms.openlocfilehash: bfbca4ae87d84286b94120eaf24de928ae75f3c9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cc8ba746bea7f6ea885beb625de414d83367b53f
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87200328"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520687"
 ---
 # <a name="data-type-specifiers-and-equivalents"></a>Veri Türü Tanımlayıcıları ve Eşdeğerleri
 
@@ -25,22 +25,22 @@ Bu kitap genellikle, uzun formlar yerine aşağıdaki tabloda listelenen tür Be
 
 ## <a name="type-specifiers-and-equivalents"></a>Tür Tanımlayıcıları ve Eşdeğerleri
 
-|Tür Tanımlayıcısı|Eşdeğerleri|
-|--------------------|---------------------|
-|**`signed char`** 1|**`char`**|
-|**`signed int`**|**`signed`**, **`int`**|
-|**`signed short int`**|**`short`**, **`signed short`**|
-|**`signed long int`**|**`long`**, **`signed long`**|
-|**`unsigned char`**|—|
-|**`unsigned int`**|**`unsigned`**|
-|**`unsigned short int`**|**`unsigned short`**|
-|**`unsigned long int`**|**`unsigned long`**|
-|**`float`**|—|
-|**`long double`** iki|—|
+| Tür Tanımlayıcısı | Eşdeğerleri |
+|--|--|
+| **`signed char`**<sup>1</sup> | **`char`** |
+| **`signed int`** | **`signed`**, **`int`** |
+| **`signed short int`** | **`short`**, **`signed short`** |
+| **`signed long int`** | **`long`**, **`signed long`** |
+| **`unsigned char`** | — |
+| **`unsigned int`** | **`unsigned`** |
+| **`unsigned short int`** | **`unsigned short`** |
+| **`unsigned long int`** | **`unsigned long`** |
+| **`float`** | — |
+| **`long double`**<sup>iki</sup> | — |
 
-1 **`char`** türü varsayılan olarak imzasız yaptığınızda ( **`/J`** derleyici seçeneğini belirterek), **`signed char`** olarak kısaltabilirsiniz **`char`** .
+<sup>1</sup> **`char`** türü varsayılan olarak imzasız yaptığınızda ( **`/J`** derleyici seçeneğini belirterek), **`signed char`** olarak kısaltabilirsiniz **`char`** .
 
-2 32 bit ve 64 bit işletim sistemlerinde, Microsoft C derleyicisi **`long double`** türü ile eşlenir **`double`** .
+<sup>2</sup> 32 bit ve 64 bit işletim sistemlerinde, Microsoft C derleyicisi **`long double`** türü ile eşlenir **`double`** .
 
 **Microsoft'a Özgü**
 

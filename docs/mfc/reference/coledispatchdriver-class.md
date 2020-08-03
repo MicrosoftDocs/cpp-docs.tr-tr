@@ -26,18 +26,18 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: 265fca7288ca2aa760fb1faffa94f9d74896a975
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 27520f09506698833b1449552ce669223cc0c4c6
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214106"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520648"
 ---
 # <a name="coledispatchdriver-class"></a>Cotadispatchdriver sınıfı
 
 OLE otomasyonunun istemci tarafını uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleDispatchDriver
@@ -148,11 +148,11 @@ Varolan bir nesneye başvuru `COleDispatchDriver` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Form `COleDispatchDriver` ( `LPDISPATCH lpDispatch` , **bool** `bAutoRelease`  =  **true**) [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimini bağlar.
+Form `COleDispatchDriver( LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE )` , [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) arabirimini bağlar.
 
-Form `COleDispatchDriver` ( **`const`** `COleDispatchDriver` &  `dispatchSrc` ) varolan bir nesneyi kopyalar `COleDispatchDriver` ve başvuru sayısını artırır.
+Form, `COleDispatchDriver( const COleDispatchDriver& dispatchSrc )` var olan bir `COleDispatchDriver` nesneyi kopyalar ve başvuru sayısını artırır.
 
-Form `COleDispatchDriver` () bir nesne oluşturur `COleDispatchDriver` , ancak `IDispatch` arabirimi bağlanamaz. `COleDispatchDriver`Bağımsız değişkenler olmadan () kullanmadan önce, `IDispatch` [Cotadispatchdriver:: CreateDispatch](#createdispatch) veya [Cotadispatchdriver:: AttachDispatch](#attachdispatch)kullanarak bir öğesine bağlamanız gerekir. Daha fazla bilgi için bkz. [IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
+Form `COleDispatchDriver( )` bir nesne oluşturur `COleDispatchDriver` , ancak `IDispatch` arabirime bağlanamaz. `COleDispatchDriver( )`Bağımsız değişkenler olmadan kullanmadan önce `IDispatch` [Cotadispatchdriver:: CreateDispatch](#createdispatch) veya [Cotadispatchdriver:: AttachDispatch](#attachdispatch)kullanarak bir öğesine bağlamanız gerekir. Daha fazla bilgi için bkz. [IDispatch arabirimini uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
 ### <a name="example"></a>Örnek
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - redefining keywords
 - Microsoft-specific keywords
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: 081235f987d3f6f8dbfd3abb4af9d70688b7fd98
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92704572c40812141911e151faf1a8d331a1ed38
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87200718"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520441"
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 

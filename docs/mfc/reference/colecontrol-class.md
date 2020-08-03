@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 7d75ec6fa111c8c26b4390ac0ac62160d71c185b
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: c49e71a3e43f74e0e68228c313d3198d0abd4f91
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470925"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520700"
 ---
 # <a name="colecontrol-class"></a>Coelcontrol sınıfı
 
@@ -1204,7 +1204,7 @@ Genellikle bu işlev doğrudan çağrılmamalıdır. Bunun yerine, denetimin sı
 |VTS_YSIZE_HIMETRIC|OLE_XSIZE_HIMETRIC|
 
 > [!NOTE]
-> Değişken veri sabitine bir işaretçi sağlayan VTS_FONT ve VTS_PICTURE dışında tüm değişken türleri için ek değişken sabitleri tanımlanmıştır. Bu sabitler **VTS_P** kuralı kullanılarak adlandırılmaktadır `constantname` . Örneğin, VTS_PCOLOR VTS_COLOR sabiti için bir işaretçidir.
+> Değişken veri sabitine bir işaretçi sağlayan VTS_FONT ve VTS_PICTURE dışında tüm değişken türleri için ek değişken sabitleri tanımlanmıştır. Bu sabitler VTS_P kuralı kullanılarak adlandırılmaktadır \<CONSTANT-NAME> . Örneğin, VTS_PCOLOR VTS_COLOR sabiti için bir işaretçidir.
 
 ## <a name="colecontrolfirekeydown"></a><a name="firekeydown"></a>Coelcontrol:: FireKeyDown
 
@@ -1989,7 +1989,7 @@ Nesnenin arabirimine yönelik işaretçi `IDropTarget` . Bir penceresi olmadığ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlaması gerekir. Örnek:
+Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlaması gerekir. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]
 
@@ -2448,7 +2448,7 @@ Kapsayıcıda denetim tarafından kullanılan dikdörtgene yönelik bir işaret�
 
 Bu, denetimin OLEIVERB_UIACTIVATE fiilini çağırma ile aynı etkiye sahiptir.
 
-Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örnek:
+Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]
 

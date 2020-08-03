@@ -1,6 +1,6 @@
 ---
-title: /RTC (Çalışma Zamanı Hata Denetimleri)
-ms.date: 11/04/2016
+title: /RTC (Çalışma zamanı hata denetimleri)
+ms.date: 07/31/2020
 f1_keywords:
 - /rtc
 - VC.Project.VCCLCompilerTool.SmallerTypeCheck
@@ -25,40 +25,38 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-ms.openlocfilehash: 49f0e4bace5f3dd199b58854e838204bd2cd5f3b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eefec0956bebe9f72324f3cbc61fccbc5e2e24d7
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222023"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520544"
 ---
-# <a name="rtc-run-time-error-checks"></a>/RTC (Çalışma Zamanı Hata Denetimleri)
+# <a name="rtc-run-time-error-checks"></a>`/RTC`(Çalışma zamanı hata denetimleri)
 
 Çalışma zamanı hata denetimleri özelliğini [runtime_checks](../../preprocessor/runtime-checks.md) pragma ile birlikte etkinleştirmek ve devre dışı bırakmak için kullanılır.
 
 ## <a name="syntax"></a>Söz dizimi
 
-```
-/RTC1
-/RTCc
-/RTCs
-/RTCu
-```
+> **`/RTC1`**\
+> **`/RTCc`**\
+> **`/RTCs`**\
+> **`/RTCu`**
 
 ## <a name="arguments"></a>Bağımsız değişkenler
 
-**1**<br/>
-**/RTC**'nin eşdeğeri `su` .
+**`/RTC1`**<br/>
+İle eşdeğerdir **`/RTCsu`** .
 
-**,**<br/>
-Değer, daha küçük bir veri türüne atandığında ve veri kaybına neden olduğunda bildirir. Örneğin, türünün bir değeri `short 0x101` türünde bir değişkene atanırsa **`char`** .
+**`/RTCc`**<br/>
+Değer, daha küçük bir veri türüne atandığında ve veri kaybına neden olduğunda bildirir. Örneğin, türünde bir **`short`** değişkene atanmış bir tür değeri olup olmadığını bildirir `0x0101` **`char`** .
 
-Bu seçenek, örneğin ilk sekiz bitin bir olarak döndürüldüğünü istiyorsanız, kesmek istediğiniz durumları bildirir **`int`** **`char`** . **/RTC** `c` Atama sonucu olarak herhangi bir bilgi kaybedilmişse,/RTC bir çalışma zamanı hatasına neden olduğundan, **/RTC**'nin sonucu olarak bir çalışma zamanı hatasından kaçınmak için ihtiyacınız olan bilgileri maskeleyebilirsiniz `c` . Örneğin:
+Bu seçenek, kesilmesini planladığınız durumları rapor edebilir. Örneğin, bir olarak döndürülen ilk 8 bitini istediğiniz zaman **`int`** **`char`** . **`/RTCc`** Bir atama herhangi bir bilgi kaybına neden olursa, çalışma zamanı hatasına neden olur, ancak çalışma zamanı hatasından kaçınmak için ihtiyacınız olan bilgilerin ilk maskesini kaldırın. Örneğin:
 
-```
+```C
 #include <crtdbg.h>
 
-char get8bits(int value, int position) {
+char get8bits(unsigned value, int position) {
    _ASSERT(position < 32);
    return (char)(value >> position);
    // Try the following line instead:
@@ -70,17 +68,19 @@ int main() {
 }
 ```
 
-**malar**<br/>
+**`/RTCc`**, Standarda uygun kodu reddettiğinden, C++ standart kitaplığı tarafından desteklenmez. **`/RTCc`** Ve C++ standart kitaplığı kullanan kod derleyici hatası [C1189](../../error-messages/compiler-errors-1/fatal-error-c1189.md)neden olabilir. `_ALLOW_RTCc_IN_STL`Uyarıyı sessizlik için tanımlayabilir ve **`/RTCc`** seçeneğini kullanabilirsiniz.
+
+**`/RTCs`**<br/>
 Yığın çerçevesi çalışma zamanı hata denetimini aşağıdaki gibi sunar:
 
-- Yerel değişkenlerin sıfır dışında bir değere başlatılması. Bu, hata ayıklama modunda çalışırken görünmeyen hataların belirlenmesine yardımcı olur. Bir yayın derlemesi içindeki yığın değişkenlerinin derleyici iyileştirmeleri nedeniyle, yığın değişkenlerinin bir yayın derlemesi ile karşılaştırıldığında bir hata ayıklama derlemesinde sıfır olmaya devam etmesi daha büyük bir şansınız vardır. Bir program yığının bir alanını kullandıktan sonra, derleyici tarafından hiçbir şekilde 0 ' a sıfırlanmaz. Bu nedenle, daha sonra, aynı yığın alanını kullanmak için gerçekleşen başlatılmamış yığın değişkenleri, bu yığın belleğinin önceki kullanımdan itibaren kalan değerleri döndürebilir.
+- Yerel değişkenlerin sıfır dışında bir değere başlatılması. Bu seçenek, hata ayıklama modunda çalışırken görünmeyen hataların belirlenmesine yardımcı olur. Yığın değişkenlerinin bir yayın derlemesi ile karşılaştırıldığında hata ayıklama derlemesinde sıfır değeri olmaya devam etmesi daha büyük bir şansınız vardır. Bunun nedeni, bir yayın derlemesinde yığın değişkenlerinin derleyici iyileştirmelerinden kaynaklanır. Bir program yığının bir alanını kullandıktan sonra, derleyici tarafından hiçbir şekilde 0 ' a sıfırlanmaz. Diğer bir deyişle, daha sonra aynı yığın alanının kullanıldığı başlatılmamış yığın değişkenleri, bu yığın belleğinin önceki kullanımı üzerinden kalan değerleri döndürebilir.
 
-- Yer aşımları ve diziler gibi yerel değişkenlerin yetersiz çalıştırmaları tespit etme. **/RTC** `s` , bir yapı içinde derleyicinin doldurmasını elde eden belleğe erişirken taşmalarını algılamaz. Padding, [/Zp (struct üye hizalaması)](zp-struct-member-alignment.md)veya [Pack](../../preprocessor/pack.md)kullanılarak veya yapı öğelerini derleyicinin doldurma eklemesini gerektirecek şekilde sıraladıysanız [, doldurma](../../cpp/align-cpp.md)gerçekleşebilir.
+- Yer aşımları ve diziler gibi yerel değişkenlerin yetersiz çalıştırmaları tespit etme. **`/RTCs`**, bir yapıda derleyicinin doldurmasını elde eden belleğe erişirken taşmaları algılamaz. Doldurma [`align`](../../cpp/align-cpp.md) , [ `/Zp` (struct member hizalaması)](zp-struct-member-alignment.md)veya ya [`pack`](../../preprocessor/pack.md) da yapı öğelerini, derleyicinin doldurma eklemesi için gerekli olacak şekilde sıraladıysanız gerçekleşebilir.
 
-- Yığın işaretçisi doğrulamasını algılayan yığın işaretçisi doğrulaması. Yığın işaretçisi bozulması, çağırma kuralı uyumsuzluğu nedeniyle oluşabilir. Örneğin, bir işlev işaretçisi kullanarak, bir DLL 'de [__stdcall](../../cpp/stdcall.md) olarak dışarıya aktarılmış bir işlev çağırır ancak işaretçiyi [__cdecl](../../cpp/cdecl.md)işlevi olarak bildirirsiniz.
+- Yığın işaretçisi doğrulamasını algılayan yığın işaretçisi doğrulaması. Yığın işaretçisi bozulması, çağırma kuralı uyumsuzluğu nedeniyle oluşabilir. Örneğin, bir işlev işaretçisi kullanarak, olarak aktarılmış bir DLL içinde bir işlevi çağırır, [`__stdcall`](../../cpp/stdcall.md) ancak işaretçiyi işlevi olarak bildirirsiniz [`__cdecl`](../../cpp/cdecl.md) .
 
-**larınız**<br/>
-Bir değişken başlatılmadan kullanıldığında raporlar. Örneğin, üreten bir yönerge `C4701` **/RTC**altında de bir çalışma zamanı hatası oluşturabilir `u` . [Derleyici Uyarısı (düzey 1 ve düzey 4)](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md) üreten herhangi bir yönerge, **/RTC**altında bir çalışma zamanı hatası oluşturur `u` .
+**`/RTCu`**<br/>
+Bir değişken başlatılmadan kullanıldığında raporlar. Örneğin, uyarı C4701 üreten bir yönerge, altında bir çalışma zamanı hatası da oluşturabilir **`/RTCu`** . [Derleyici Uyarısı (düzey 1 ve düzey 4)](../../error-messages/compiler-warnings/compiler-warning-level-1-and-level-4-c4700.md) üreten tüm yönergeler, altında bir çalışma zamanı hatası oluşturur **`/RTCu`** .
 
 Ancak, aşağıdaki kod parçasını göz önünde bulundurun:
 
@@ -91,25 +91,25 @@ b = &a;
 c = a;  // No run-time error with /RTCu
 ```
 
-Bir değişken başlatılmışsa, çalışma zamanında **/RTC**tarafından bildirilmeyecektir `u` . Örneğin, bir değişken bir işaretçi aracılığıyla diğer ad olduktan sonra, derleyici değişkeni izlemez ve başlatılmamış kullanımları rapor etmez. Aslında bir değişkeni adresini alarak başlatabilirsiniz. & işleci bu durumda bir atama işleci gibi çalışmaktadır.
+Bir değişken başlatılmış olabilir, tarafından çalışma zamanında raporlanmaz **`/RTCu`** . Örneğin, bir değişken bir işaretçi üzerinden diğer ad olduktan sonra, derleyici değişkeni izlemez ve başlatılmamış kullanımları rapor etmez. Aslında bir değişkeni adresini alarak başlatabilirsiniz. **`&`** İşleci bu durumda bir atama işleci gibi çalışmaktadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Çalışma zamanı hata denetimleri, çalışan kodunuzda sorunları bulmanın bir yoludur; daha fazla bilgi için bkz. [nasıl yapılır: yerel çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks).
 
-Komut satırında **/RTC** derleyici seçeneklerinden herhangi birini kullanarak programınızı derlerseniz, kodunuzdaki tüm pragma [iyileştirme](../../preprocessor/optimize.md) yönergeleri sessizce başarısız olur. Bunun nedeni, sürüm (iyileştirilmiş) derlemesinde çalışma zamanı hata denetimleri geçerli değildir.
+Komut satırında birden çok seçenek belirtebilirsiniz **`/RTC`** . Seçenek bağımsız değişkenleri birleştirilebilir; Örneğin, **`/RTCcu`** ile aynıdır **`/RTCc /RTCu`** .
 
-Geliştirme yapıları için **/RTC** kullanmanız gerekir; Bir perakende derlemesi için **/RTC** kullanılmamalıdır. **/RTC** derleyici iyileştirmeleri ile kullanılamaz ([/O Seçenekler (kodu en iyi duruma getirme)](o-options-optimize-code.md)). **/RTC** ile derlenen bir program görüntüsü, **/od** ile oluşturulmuş bir görüntüden biraz daha büyük ve biraz daha yavaş olacaktır (bir **/od** derlemeden daha yavaş yüzde 5 ' e kadar).
+Komut satırında herhangi bir derleyici seçeneğini kullanarak programınızı derlerseniz **`/RTC`** , kodunuzda herhangi bir pragma [`optimize`](../../preprocessor/optimize.md) yönergesi sessizce başarısız olur. Bunun nedeni, sürüm (iyileştirilmiş) derlemede çalışma zamanı hata denetimleri geçerli değildir.
 
-Herhangi bir **/RTC** seçeneğini veya [/gz](gz-enable-stack-frame-run-time-error-checking.md)kullandığınızda __MSVC_RUNTIME_CHECKS Önişlemci yönergesi tanımlanacak.
+**`/RTC`** Geliştirme yapıları için kullanın; **`/RTC`** Yayın derlemesi için kullanmayın. **`/RTC`** Derleyici iyileştirmeleriyle kullanılamaz ([ `/O` Seçenekler (kod iyileştirin)](o-options-optimize-code.md)). İle oluşturulmuş bir program görüntüsü **`/RTC`** , ile oluşturulmuş bir görüntüden biraz daha büyük ve biraz daha yavaştır **`/Od`** (bir derlemeden daha yavaş yüzde 5 ' e kadar **`/Od`** ).
+
+`__MSVC_RUNTIME_CHECKS`Önişlemci yönergesi herhangi bir seçeneği veya herhangi bir seçeneği kullandığınızda tanımlanır **`/RTC`** [`/GZ`](gz-enable-stack-frame-run-time-error-checking.md) .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **C/C++** klasörünü tıklatın.
-
-1. **Kod oluşturma** Özellik sayfasına tıklayın.
+1. **Yapılandırma özellikleri**  >  **C/C++****kod oluşturma** özellik sayfasını seçin.  
 
 1. Aşağıdaki özelliklerden birini veya her ikisini birden değiştirin: **temel çalışma zamanı denetimleri** veya **daha küçük tür denetimi**.
 
@@ -119,6 +119,6 @@ Herhangi bir **/RTC** seçeneğini veya [/gz](gz-enable-stack-frame-run-time-err
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
-[Nasıl yapılır: yerel çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks)
+[MSVC derleyicisi seçenekleri](compiler-options.md)<br/>
+[MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)<br/>
+[Nasıl yapılır: Yerel çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/how-to-use-native-run-time-checks)

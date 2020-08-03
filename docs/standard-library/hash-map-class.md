@@ -88,12 +88,12 @@ helpviewer_keywords:
 - stdext::hash_map::upper_bound
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
-ms.openlocfilehash: 063b71100af536a249949a1084ab208b6266fd8d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5939e2b4b0f8054ae5f7db7babd01dbeffc7f359
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222478"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520622"
 ---
 # <a name="hash_map-class"></a>hash_map Sınıfı
 
@@ -1737,11 +1737,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="remarks"></a>Açıklamalar
 
-`iterator`Tarafından tanımlanan hash_map,, ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan tür **çiftinin \<const Key, Type> ** [value_type](#value_type)nesneleri olan öğeleri gösterir.
+`iterator`Tarafından tanımlanan hash_map, [value_type](#value_type) `pair<const Key, Type>` ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesneleri olan öğeleri gösterir.
 
-**iterator** `Iter` Çoklu haritadaki bir öğeye işaret eden bir yineleyici başvurusu için `->` işlecini kullanın.
+`Iter`Birden çok haritadaki bir öğeye işaret eden bir yineleyici başvurusu için `->` işlecini kullanın.
 
-Öğesinin anahtar değerine erişmek için, `Iter`  ->  () ile eşdeğer olan **ilk**öğesini kullanın \* `Iter` . **ilk**olarak. Öğesi için eşlenen veri değerine erişmek için, `Iter`  ->  () eşdeğeri olan **ikincisini**kullanın \* `Iter` . **ikinci**.
+Öğesinin anahtar değerine erişmek için, `Iter->first` ile eşdeğer olan öğesini kullanın `(*Iter).first` . Öğesi için eşlenen veri değerine erişmek için, `Iter->second` ile eşdeğer olan öğesini kullanın `(*Iter).second` .
 
 Bir türü `iterator` , bir öğenin değerini değiştirmek için kullanılabilir.
 
@@ -1768,7 +1768,7 @@ Hash_map öğelerini sıralamak için kullandığı işlev nesnesini döndürür
 
 Saklı nesne, üye işlevini tanımlar
 
-**bool işleci**( **const Key&** `left` **, const Key&** `right` );
+`bool operator( const Key& left, const Key&right );`
 
 Bu, **`true`** `left` önce olursa ve sıralama düzeninde eşit değilse döndürür `right` .
 

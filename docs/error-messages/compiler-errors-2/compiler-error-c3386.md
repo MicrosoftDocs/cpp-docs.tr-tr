@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3386
 ms.assetid: 93fa8c33-0f10-402b-8eec-b0a217a1f8dc
-ms.openlocfilehash: 0cb6235f1b6bc868655cc6a6ba301be1308402cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: efe882db447b9ebc69d02e3b10d9e484a3cfd8a8
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221087"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520454"
 ---
 # <a name="compiler-error-c3386"></a>Derleyici hatası C3386
 
-' Type ': __declspec (dllexport)/ \_ _declspec (dllimport) yönetilen veya Wınrttype öğesine uygulanamaz
+> '*tür-adı*': `__declspec(dllexport)` / `__declspec(dllimport)` yönetilen veya WinRT türüne uygulanamaz
 
-`dllimport`And [dllexport](../../cpp/dllexport-dllimport.md) **`__declspec`** c ' * * değiştiricileri yönetilen veya Windows çalışma zamanı türünde geçerli değildir.
+[`dllimport`](../../cpp/dllexport-dllimport.md)Ve [`dllexport`](../../cpp/dllexport-dllimport.md) **`__declspec`** değiştiricileri yönetilen veya Windows çalışma zamanı türünde geçerli değildir.
 
 Aşağıdaki örnek C3386 oluşturur ve nasıl düzeltileceğini gösterir:
 
