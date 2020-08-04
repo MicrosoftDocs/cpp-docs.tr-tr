@@ -494,7 +494,7 @@
                   href: ../build/reference/e-preprocess-to-stdout.md
                 - name: /EH (Özel durum işleme modeli)
                   href: ../build/reference/eh-exception-handling-model.md
-                - name: '/EP (#line yönergeleri olmadan stdout''ta önişle)'
+                - name: /EP (#line yönergeleri olmadan stdout'ta önişle)
                   href: ../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md
                 - name: /errorReport (Dahili derleme hatalarını raporla)
                   href: ../build/reference/errorreport-report-internal-compiler-errors.md
@@ -669,6 +669,8 @@
                   href: ../build/reference/showincludes-list-include-files.md
                 - name: /source-charset (Kaynak karakter kümesini ayarla)
                   href: ../build/reference/source-charset-set-source-character-set.md
+                - name: /sourceDependencies (Kaynak düzey bağımlılıkları raporla)
+                  href: ../build/reference/sourcedependencies.md
                 - name: /std (Dil standart sürümünü belirt)
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: '/Tc, /Tp, /TC, /TP (Kaynak dosya türünü belirt)'
