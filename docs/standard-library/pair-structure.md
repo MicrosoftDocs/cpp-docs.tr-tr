@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: 504bd4fad47d85b0f92603b2cf77a6fca1e9876b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e66ee5dd39628065e52eb95a89e1cd81272a6b86
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233021"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520933"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
@@ -80,7 +80,7 @@ Dördüncü Oluşturucu, çiftin ilk öğesini *val1* ve saniye ile *val2 & lt* 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapısı sırasıyla türünde nesne çifti depolar `T1` `T2` . Tür, `first_type` şablon parametresiyle aynıdır `T1` ve tür, `second_type` şablon parametresiyle aynıdır `T2` . `T1``T2`her gereksinimi yalnızca bir varsayılan Oluşturucu, tek bir bağımsız değişken Oluşturucusu ve yıkıcısı sağlar. Türü `pair` bir değil olarak bildirildiği için türün tüm üyeleri geneldir **`struct`** **`class`** . Bir çiftin en yaygın iki kullanımı, iki değer döndüren işlevler için dönüş [türleri ve hem](../standard-library/map-class.md) anahtar hem de her bir öğe ile ilişkili bir değer türü olan [multimap sınıfı](../standard-library/multimap-class.md) için bir öğe olarak bulunur. İkincisi, çift ilişkilendirilebilir bir kapsayıcının gereksinimlerini karşılar ve> bir değer türüne sahiptir `pair` <  **`const`** `key_type` `mapped_type` .
+Şablon yapısı sırasıyla türünde nesne çifti depolar `T1` `T2` . Tür, `first_type` şablon parametresiyle aynıdır `T1` ve tür, `second_type` şablon parametresiyle aynıdır `T2` . `T1``T2`her gereksinimi yalnızca bir varsayılan Oluşturucu, tek bir bağımsız değişken Oluşturucusu ve yıkıcısı sağlar. Türü `pair` bir değil olarak bildirildiği için türün tüm üyeleri geneldir **`struct`** **`class`** . Bir çiftin en yaygın iki kullanımı, iki değer döndüren işlevler için dönüş [türleri ve hem](../standard-library/map-class.md) anahtar hem de her bir öğe ile ilişkili bir değer türü olan [multimap sınıfı](../standard-library/multimap-class.md) için bir öğe olarak bulunur. İkincisi, bir çift ilişkilendirilebilir kapsayıcının gereksinimlerini karşılar ve formun değer türüne sahiptir `pair< const key_type, mapped_type >` .
 
 ## <a name="example"></a>Örnek
 

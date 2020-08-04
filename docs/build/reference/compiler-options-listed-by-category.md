@@ -1,16 +1,16 @@
 ---
 title: Kategorilere Göre Listelenen Derleyici Seçenekleri
 description: Microsoft C/C++ derleyicisi komut satırı seçeneklerinin kategorisine göre başvuru listesi.
-ms.date: 07/08/2020
+ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: e362119ed3c642e2fa07bddd570c2365252d3325
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: beb10404075d9541872ff4780a725e177356a3b8
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223882"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520959"
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere göre listelenen derleyici seçenekleri
 
@@ -171,6 +171,7 @@ Bu makale, derleyici seçeneklerinin kategorik bir listesini içerir. Alfabetik 
 | [`/nologo`](nologo-suppress-startup-banner-c-cpp.md) | Oturum açma başlığının görüntülenmesini önler. |
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Ek güvenlik özellikleri ve uyarılar sunar. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Derleme sırasında tüm içerme dosyalarının listesini görüntüler. |
+| [`/sourceDependencies`](sourcedependencies.md) | Üst bilgileri, modülleri ve diğer Kaynak bağımlılıklarını listeleyin. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | C kaynak dosyasını belirtir. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Tüm kaynak dosyalarının C olduğunu belirtir. |
 | [`/Tp`](tc-tp-tc-tp-specify-source-file-type.md) | Bir C++ kaynak dosyasını belirtir. |

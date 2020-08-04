@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - overflow_error class
 ms.assetid: bae7128d-e36b-4a45-84f1-2f89da441d20
-ms.openlocfilehash: b1faad62dc8e564d97170b5244b6406ae8e1dee6
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b0bc3fc01dced3daf68c0b25ef1b68ea3f624761
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450150"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87521232"
 ---
-# <a name="overflowerror-class"></a>overflow_error Sınıfı
+# <a name="overflow_error-class"></a>overflow_error Sınıfı
 
 Sınıfı, aritmetik taşma bildirmek üzere oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class overflow_error : public runtime_error {
@@ -31,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İleti**[](../standard-library/basic-string-class.md#data) [](../standard-library/exception-class.md) verilerininbirkopyasıolan`.`tarafından döndürülen değer.
+Tarafından döndürülen değer `what()` bir kopyasıdır `message.data()` . Daha fazla bilgi için bkz [`what`](../standard-library/exception-class.md) [`data`](../standard-library/basic-string-class.md#data) . ve.
 
 ## <a name="example"></a>Örnek
 
@@ -66,11 +66,11 @@ Type class std::overflow_error
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<stdexcept >
+**Üst bilgi:**\<stdexcept>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [runtime_error sınıfı](../standard-library/runtime-error-class.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

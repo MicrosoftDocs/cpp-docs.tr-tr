@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - domain_error class
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
-ms.openlocfilehash: 6eabb4ca8ed1c7b5259a8479e1a3e067de073b8e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 850615f07af022aff3ed209d9142823b0f038134
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454313"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87521245"
 ---
-# <a name="domainerror-class"></a>domain_error Sınıfı
+# <a name="domain_error-class"></a>domain_error Sınıfı
 
 Sınıfı, bir etki alanı hatasını raporlamak için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class domain_error : public logic_error {
@@ -31,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İleti**[](../standard-library/basic-string-class.md#data) [](../standard-library/exception-class.md) verilerininbirkopyasıolan`.`tarafından döndürülen değer.
+Tarafından döndürülen değer `what()` bir kopyasıdır `message.data()` . Daha fazla bilgi için bkz [`what`](../standard-library/exception-class.md) [`data`](../standard-library/basic-string-class.md#data) . ve.
 
 ## <a name="example"></a>Örnek
 
@@ -62,11 +62,11 @@ Type: class std::domain_error
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<stdexcept >
+**Üst bilgi:**\<stdexcept>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [logic_error sınıfı](../standard-library/logic-error-class.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

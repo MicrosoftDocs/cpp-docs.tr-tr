@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - Assign method [C++]
 ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
-ms.openlocfilehash: 80f687da75d0160a6955caa7469ac9cc55c2c257
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e11c7e6abd2d5832c57d0379473c6783128f63e3
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749717"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87521154"
 ---
 # <a name="_bstr_tassign"></a>_bstr_t::Assign
 
 **Microsoft'a Özgü**
 
-Kopyabir `BSTR` **_**`bstr_t` `BSTR` tarafından sarılmış içine .
+Bir `BSTR` `BSTR` ile sarmalanmış içine kopyalar `_bstr_t` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void Assign(
@@ -29,12 +29,12 @@ void Assign(
 
 #### <a name="parameters"></a>Parametreler
 
-*S*<br/>
-A `BSTR` tarafından `BSTR` sarılmış içine kopyalanacak `_bstr_t`.
+*malar*<br/>
+Bir `BSTR` `BSTR` tarafından Sarmalanan içine kopyalanacak `_bstr_t` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atama,** içerikten bağımsız olarak kopyalanan kopyanın `BSTR` tüm uzunluğu anlamına gelen ikili bir kopya yapar.
+**Atama** ikili bir kopya yapar, bu, içerikten bağımsız olarak tüm uzunluğunun `BSTR` kopyalandığı anlamına gelir.
 
 ## <a name="example"></a>Örnek
 
@@ -109,8 +109,8 @@ bstrWrapper = changing BSTR
 bstrWrapper2 = some text
 ```
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+[_bstr_t sınıfı](../cpp/bstr-t-class.md)

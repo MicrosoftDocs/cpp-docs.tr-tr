@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 547fdc83f0524c8bfd44754f26ca8c4d21f6a599
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 42d640ba456e8327df7a070cb12914b765c07bf5
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87204995"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520920"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
@@ -558,7 +558,7 @@ Yok edilecek nesnenin adresini atayarak bir işaretçi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, yok edicisi *ptr* `ptr->` **türü**::**~ tür**çağırarak PTR tarafından atanan nesneyi yok eder.
+Üye işlevi, yıkıcıyı çağırarak *PTR*tarafından atanan nesneyi yok eder `ptr->Type::~Type` .
 
 #### <a name="example"></a>Örnek
 

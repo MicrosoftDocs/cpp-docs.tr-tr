@@ -3,12 +3,12 @@ title: C++ tür sistemi
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: cbe0b4421d2e7727b919dfaf20218b8da03ea871
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b49dfccc7f815bb13a23f4a334066fa5a8ba5c00
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228992"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87521219"
 ---
 # <a name="c-type-system"></a>C++ tür sistemi
 
@@ -51,30 +51,32 @@ int maxValue;                // Not recommended! maxValue contains
 
 ## <a name="fundamental-built-in-types"></a>Temel (yerleşik) türler
 
-Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Dil, *Yerleşik türler*olarak da bilinen birçok *temel tür*içerir. Bu,,,, ve gibi sayısal türler **`int`** **`double`** **`long`** **`bool`** **`char`** ve **`wchar_t`** sırasıyla ASCII ve UNICODE karakterleri için türler içerir. 32 bit olarak da depolanan en temel türler (yani, **`bool`** **`double`** **WC `har_t** and related types) all have unsigned versions, which modify the range of values that the variable can store. For example, an **` int `**, which stores a 32-bit signed integer, can represent a value from -2,147,483,648 to 2,147,483,647. An **` işaretsiz int**), 0 ile 4.294.967.295 arasında bir değer depolayabilirler. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.
+Diğer dillerden farklı olarak, C++, diğer tüm türlerin türetildiği bir evrensel temel türe sahip değildir. Dil, *Yerleşik türler*olarak da bilinen birçok *temel tür*içerir. Bu,,,, ve gibi sayısal türler **`int`** **`double`** **`long`** **`bool`** **`char`** ve **`wchar_t`** sırasıyla ASCII ve UNICODE karakterleri için türler içerir. Çoğu integral temel tür ( **`bool`** ,, **`double`** **`wchar_t`** ve ilgili türler hariç), tüm sürümlere sahiptir ve bu da **`unsigned`** değişkenin depolayabileceği değer aralığını değiştirir. Örneğin, **`int`** 32 bitlik işaretli bir tamsayıyı depolayan bir,-2.147.483.648 ile 2.147.483.647 arasında bir değer temsil edebilir. **`unsigned int`** Ayrıca, 32 bit olarak depolanan bir değeri, 0 ile 4.294.967.295 arasında bir değer depolayabilirler. Her durumda olası değerlerin toplam sayısı aynıdır; yalnızca aralık farklıdır.
 
 Temel türler, üzerlerinde gerçekleştirebileceğiniz işlemleri ve bunların diğer temel türlere nasıl dönüştürülebileceğini yöneten yerleşik kurallara sahip derleyici tarafından tanınır. Yerleşik türlerin tam listesi ve bunların boyut ve sayısal sınırları için bkz. [Yerleşik türler](../cpp/fundamental-types-cpp.md).
 
-Aşağıdaki çizim, yerleşik türlerin göreli boyutlarını gösterir:
+Aşağıdaki çizimde, Microsoft C++ uygulamasındaki yerleşik türlerin göreli boyutları gösterilmektedir:
 
 ![Türlerde oluşturulan&#45;bayt cinsinden boyut](../cpp/media/built-intypesizes.png "Türlerde oluşturulan&#45;bayt cinsinden boyut")
 
-Aşağıdaki tablo en sık kullanılan temel türleri listeler:
+Aşağıdaki tabloda en sık kullanılan temel türler ve boyutları Microsoft C++ uygulamasında listelenmektedir:
 
-|Tür|Boyut|Yorum|
-|----------|----------|-------------|
-|int|4 bayt|Tamsayı değerler için varsayılan seçim.|
-|double|8 bayt|Kayan nokta değerleri için varsayılan seçim.|
-|bool|1 bayt|True veya false olabilen değerleri temsil eder.|
-|char|1 bayt|Daha eski C stili dizelerde veya std::string nesnelerde UNICODE'a dönüştürülmesi hiçbir zaman gerekmeyecek ASCII karakterler için kullanın.|
-|wchar_t|2 bayt|UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu, türü dizelerde kullanılan karakter türüdür `std::wstring` .|
-|işaretsiz &nbsp; karakter|1 bayt|C++ içinde yerleşik bir bayt türü yoktur.  **`unsigned char`** Bir bayt değerini temsil etmek için kullanın.|
-|unsigned int|4 bayt|Bit bayrakları için varsayılan seçimdir.|
-|long long|8 bayt|Çok büyük tamsayı değerlerini temsil eder.|
+| Tür | Boyut | Yorum |
+|--|--|--|
+| **`int`** | 4 bayt | Tamsayı değerler için varsayılan seçim. |
+| **`double`** | 8 bayt | Kayan nokta değerleri için varsayılan seçim. |
+| **`bool`** | 1 bayt | True veya false olabilen değerleri temsil eder. |
+| **`char`** | 1 bayt | Daha eski C stili dizelerde veya std::string nesnelerde UNICODE'a dönüştürülmesi hiçbir zaman gerekmeyecek ASCII karakterler için kullanın. |
+| **`wchar_t`** | 2 bayt | UNICODE biçiminde (Windows'ta UTF-16, diğer işletim sistemlerinde değişiklik gösterebilir) kodlanmış olabilecek "geniş" karakter değerlerini temsil eder. Bu, türü dizelerde kullanılan karakter türüdür `std::wstring` . |
+| **`unsigned char`** | 1 bayt | C++ içinde yerleşik bir bayt türü yoktur.  **`unsigned char`** Bir bayt değerini temsil etmek için kullanın. |
+| **`unsigned int`** | 4 bayt | Bit bayrakları için varsayılan seçimdir. |
+| **`long long`** | 8 bayt | Çok büyük tamsayı değerlerini temsil eder. |
+
+Diğer C++ uygulamaları, belirli sayısal türler için farklı boyutlar kullanabilir. C++ standardına gereken boyut ve boyut ilişkileri hakkında daha fazla bilgi için bkz. [Yerleşik türler](fundamental-types-cpp.md).
 
 ## <a name="the-void-type"></a>Void türü
 
-**`void`** Tür özel bir türdür; türünde bir değişken bildiremezsiniz **`void`** , ancak, __ \* __ **`void`** ham (türsüz) bellek ayrılırken bazen gerekli olan void (işaretçi) türünde bir değişken bildirebilirsiniz. Ancak, işaretçileri **`void`** tür açısından güvenli değildir ve genelde modern C++ ' ta kullanımı kesinlikle önerilmez. Bir işlev bildiriminde, bir **`void`** dönüş değeri işlevin bir değer döndürmeyeceği anlamına gelir; bu, ortak ve kabul edilebilir bir kullanımı **`void`** . C dili, parametre listesinde bildirmek için sıfır parametreye sahip işlevler gerektirirken, **`void`** Örneğin, `fou(void)` Bu yöntem modern C++ ' da önerilmez ve bildirilmelidir `fou()` . Daha fazla bilgi için bkz. [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).
+**`void`** Tür özel bir türdür; türünde bir değişken bildiremezsiniz **`void`** , ancak `void *` (işaretçiyle) türünde bir değişken bildirebilirsiniz **`void`** , bu, bazen ham (türsüz) bellek ayrılırken gerekli olabilir. Ancak, işaretçileri **`void`** tür açısından güvenli değildir ve genelde modern C++ ' ta kullanımı kesinlikle önerilmez. Bir işlev bildiriminde, bir **`void`** dönüş değeri işlevin bir değer döndürmeyeceği anlamına gelir; bu, ortak ve kabul edilebilir bir kullanımı **`void`** . C dili, parametre listesinde bildirmek için sıfır parametreye sahip işlevler gerektirirken, **`void`** Örneğin, `fou(void)` Bu yöntem modern C++ ' da önerilmez ve bildirilmelidir `fou()` . Daha fazla bilgi için bkz. [tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md).
 
 ## <a name="const-type-qualifier"></a>const türü niteleyici
 

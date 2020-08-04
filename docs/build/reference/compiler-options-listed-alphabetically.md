@@ -1,15 +1,15 @@
 ---
 title: Alfabetik listelenmiş derleyici seçenekleri
 description: Microsoft C/C++ derleyicisi komut satırı seçeneklerinin alfabetik düzeninde başvuru listesi.
-ms.date: 07/08/2020
+ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: 46c6f7009c840c83db2f945de2e504f08172fca2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 81f2fbfe385e8655193c5862455e6ffca3719c96
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223895"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520868"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik listelenmiş derleyici seçenekleri
 
@@ -124,6 +124,7 @@ Bu tablo, derleyici seçeneklerinin alfabetik bir listesini içerir. Kategoriye 
 | [`/sdl`](sdl-enable-additional-security-checks.md) | Ek güvenlik özellikleri ve uyarılar sunar. |
 | [`/showIncludes`](showincludes-list-include-files.md) | Derleme sırasında içerme dosyaları listesini görüntüler. |
 | [`/source-charset`](source-charset-set-source-character-set.md) | Kaynak karakter kümesini ayarla. |
+| [`/sourceDependencies`](sourcedependencies.md) | Üst bilgileri, modülleri ve diğer Kaynak bağımlılıklarını listeleyin. |
 | [`/std`](std-specify-language-standard-version.md) | C++ standart sürüm uyumluluk Seçicisi. |
 | [`/Tc`](tc-tp-tc-tp-specify-source-file-type.md) | C kaynak dosyasını belirtir. |
 | [`/TC`](tc-tp-tc-tp-specify-source-file-type.md) | Tüm kaynak dosyalarının C olduğunu belirtir. |

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 185517720af7e61f6a04068e8868d258a51f262f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a1d9bd64a28fa7c08477c6011dc0e8236b7bcf6
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215328"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87521258"
 ---
 # <a name="custom-c"></a>özel (C++)
 
@@ -44,12 +44,10 @@ Bir varyanta koyabileceğiniz bir değer.
 
 ### <a name="attribute-context"></a>Öznitelik bağlamı
 
-|||
-|-|-|
-|**Şunlara uygulanır**|COM olmayan **arabirim**, **`class`** , **`enum`** s, `idl_module` Yöntemler, arabirim üyeleri, arabirim parametreleri, **`typedef`** **`union`** **`struct`** s, s, s|
-|**Tekrarlanabilir**|Yes|
-|**Gerekli öznitelikler**|**coclass** (sınıfında kullanıldığında)|
-|**Geçersiz öznitelikler**|Hiçbiri|
+- **Uygulama hedefi**: com dışı `interface` , `idl_module` Yöntemler, arabirim üyeleri, arabirim parametreleri,,,, **`typedef`** **`class`** **`enum`** **`union`** ve **`struct`** türleri.
+- **Yinelenebilir**: Evet.
+- **Gerekli öznitelikler**: **coclass** (sınıfta kullanıldığında).
+- **Geçersiz öznitelikler**: yok.
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - logic_error class
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
-ms.openlocfilehash: 9b7c432a649b566b455109f6de1f7bcc0734ff9b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b94f7f4c2482f0317e37c6f4bf3618b91a175147
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68453798"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87521193"
 ---
-# <a name="logicerror-class"></a>logic_error Sınıfı
+# <a name="logic_error-class"></a>logic_error Sınıfı
 
 Sınıfı, program yürütmeden önce, mantıksal önkoşulların ihlalleri gibi, hataları bildirmek üzere oluşan tüm özel durumlar için temel sınıf görevi görür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class logic_error : public exception {
@@ -31,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İleti**[](../standard-library/basic-string-class.md#data) [](../standard-library/exception-class.md) verilerininbirkopyasıolan`.`tarafından döndürülen değer.
+Tarafından döndürülen değer `what()` bir kopyasıdır `message.data()` . Daha fazla bilgi için bkz [`what`](../standard-library/exception-class.md) [`data`](../standard-library/basic-string-class.md#data) . ve.
 
 ## <a name="example"></a>Örnek
 
@@ -62,11 +62,11 @@ Type: class std::logic_error
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<stdexcept >
+**Üst bilgi:**\<stdexcept>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [özel durum sınıfı](../standard-library/exception-class.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

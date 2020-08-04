@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - runtime_error class
 ms.assetid: 4d0227bf-847b-45a2-a320-2351ebf98368
-ms.openlocfilehash: c4c4436c32f5f23c6bea119e95b165631384f583
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a860e10994934ae0e97950fddb14e573f8752833
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451114"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520907"
 ---
-# <a name="runtimeerror-class"></a>runtime_error Sınıfı
+# <a name="runtime_error-class"></a>runtime_error Sınıfı
 
 Sınıfı, yalnızca program yürütüldüğünde oluşan hataları raporlamak için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class runtime_error : public exception {
@@ -31,7 +31,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Özel durum sınıfı](../standard-library/exception-class.md) tarafından döndürülen değer, **ileti**`.`[verilerinin](../standard-library/basic-string-class.md#data)bir kopyasıdır.
+Tarafından döndürülen değer `what()` bir kopyasıdır `message.data()` . Daha fazla bilgi için bkz [`what`](../standard-library/exception-class.md) [`data`](../standard-library/basic-string-class.md#data) . ve.
 
 ## <a name="example"></a>Örnek
 
@@ -63,11 +63,11 @@ Type class std::runtime_error
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<stdexcept >
+**Üst bilgi:**\<stdexcept>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [özel durum sınıfı](../standard-library/exception-class.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,6 +1,6 @@
 ---
-title: /cgthreads (Kod Oluşturma İş Parçacıkları)
-ms.date: 11/04/2016
+title: /cgthreads (Kod oluşturma iş parçacıkları)
+ms.date: 07/31/2020
 f1_keywords:
 - /cgthreads
 helpviewer_keywords:
@@ -9,43 +9,46 @@ helpviewer_keywords:
 - cgthreads compiler option (C++)
 - cgthreads
 ms.assetid: 64bc768c-6caa-4baf-9dea-7cfa1ffb01c2
-ms.openlocfilehash: df353eb255c731478863ed6088cafa1cc38053fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 319a42ab68f02df6019ff283f1039ef3d561c4a0
+ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294700"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87520882"
 ---
-# <a name="cgthreads-code-generation-threads"></a>/cgthreads (Kod Oluşturma İş Parçacıkları)
+# <a name="cgthreads-code-generation-threads"></a>`/cgthreads`(Kod oluşturma iş parçacıkları)
 
-En iyi duruma getirme ve kod oluşturma için kullanılacak cl.exe iş parçacığı sayısını ayarlar.
+İyileştirme ve kod oluşturma için kullanılacak cl.exe iş parçacığı sayısını ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
-```
-/cgthreads[1-8]
-```
+> **`/cgthreads1`**\
+> **`/cgthreads2`**\
+> **`/cgthreads3`**\
+> **`/cgthreads4`**\
+> **`/cgthreads5`**\
+> **`/cgthreads6`**\
+> **`/cgthreads7`**\
+> **`/cgthreads8`**
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Bağımsız değişkenler
 
-*Sayı*<br/>
-Cl.exe kullanılacak aralığı 1-8 iş parçacığı sayısı.
+**`cgthreadsN`**\
+cl.exe kullanılacak en fazla iş parçacığı sayısı ( *N* , 1 ile 8 arasında bir sayıdır).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Cgthreads** seçeneği, iş parçacıkları cl.exe sayısı kullanır paralel olarak kod ve iyileştirme için derleme aşamaları nesil belirtir. Arasında boşluk olabilir fark **/cgthreads** ve `number` bağımsız değişken. Varsayılan olarak, dört iş parçacığı cl.exe kullanır gibi **/cgthreads4** belirtildi. Daha fazla işlemci çekirdek varsa, daha büyük bir `number` değer oluşturma sürelerini geliştirebilir. İle birlikte kullanıldığında bu seçenek özellikle yararlıdır [/GL (bütün Program iyileştirmesi)](gl-whole-program-optimization.md).
+**`cgthreads`** Seçeneği, derlemenin iyileştirme ve kod oluşturma aşamaları için paralel olarak kullanılan cl.exe en fazla iş parçacığı sayısını belirtir. **`cgthreads`** Ve *sayı* bağımsız değişkeni arasında boşluk olmadığına dikkat edin. Varsayılan olarak, cl.exe belirtildiği gibi dört iş parçacığı kullanır **`/cgthreads4`** . Daha fazla işlemci çekirdeği varsa, daha büyük bir *sayı* değeri derleme sürelerini iyileştirebilir. Bu seçenek özellikle [ `/GL` (tüm program iyileştirmesi)](gl-whole-program-optimization.md)ile birleştirildiğinde kullanışlıdır.
 
-Paralellik derecesi birden çok düzeyi için bir derleme belirtilebilir. Msbuild.exe anahtar **/maxcpucount** paralel olarak çalıştırılabilir MSBuild işlem sayısını belirtir. [/MP (birden çok süreçle derleme)](mp-build-with-multiple-processes.md) derleyici bayrağı aynı anda kaynak dosyaları derleme cl.exe işlem sayısını belirtir. **/Cgthreads** seçeneği her cl.exe işlemi tarafından kullanılan iş parçacıklarının sayısını belirtir. İşlemci yalnızca işlemci çekirdeği olduğu gibi birçok iş parçacığı aynı anda çalıştırılabildiği için bu seçeneklerin tümü, daha büyük değerler aynı anda belirtmek kullanışlı değildir ve ters etki olabilir. Paralel olarak proje oluşturma hakkında daha fazla bilgi için bkz. [paralel birden çok proje oluşturma](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild).
+Yapı için birden çok paralellik düzeyi belirtilebilir. msbuild.exe anahtarı, **`/maxcpucount`** paralel olarak çalıştırılabilen MSBuild işlemlerinin sayısını belirtir. [ `/MP` (Birden çok işlemle derleme)](mp-build-with-multiple-processes.md) derleyici bayrağı, kaynak dosyaları aynı anda derleyen cl.exe işlem sayısını belirtir. **`cgthreads`** Seçeneği, her bir cl.exe işlemi tarafından kullanılan iş parçacığı sayısını belirtir. İşlemci, işlemci çekirdekleri ile aynı anda yalnızca çok sayıda iş parçacığı çalıştırabilir. Bu seçeneklerin tümü için aynı anda daha büyük değerler belirtmek yararlı değildir ve bu, onay açısından üretken olabilir. Projeleri paralel olarak oluşturma hakkında daha fazla bilgi için bkz. [paralel olarak birden çok proje oluşturma](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri**, **C/C++** klasör.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Seçin **komut satırı** özellik sayfası.
-
-1. Değiştirme **ek seçenekler** eklenecek özellik **/cgthreads**`N`burada `N` 8 ile 1 arasında bir değer olan ve ardından **Tamam**.
+1. **Ek seçenekler** özelliğini **`cgthreadsN`** , *`N`* 1 ile 8 arasında bir değer olan dahil edilecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -53,5 +56,5 @@ Paralellik derecesi birden çok düzeyi için bir derleme belirtilebilir. Msbuil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyicisi seçenekleri](compiler-options.md)<br/>
+[MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)
