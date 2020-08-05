@@ -1,18 +1,18 @@
 ---
 title: Visual C++ Yardım ve Topluluk
-ms.date: 11/30/2017
+ms.date: 08/03/2020
 ms.technology: cpp-ide
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-ms.openlocfilehash: 66ff4844e34d1d3c781791b5e250387d6ac2a0d1
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: e3dd475112f217e9d7891a18f7dc91972b221dd9
+ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405084"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87565936"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ Yardım ve Topluluk
 
-C++ kodu yazma ve Visual Studio geliştirme araçlarını kullanma hakkında bilgi almak için aşağıdaki adımları uygulayın.
+C++ kodu yazma ve Visual Studio geliştirme araçlarını kullanma hakkında yardım ve bilgilerin nereden alınacağı aşağıda açıklanmıştır.
 
 ## <a name="samples"></a>Örnekler
 
@@ -40,6 +40,6 @@ Belgelerin pek çok bölümü PDF biçiminde de kullanılabilir. Bu bölümlerde
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[C++ ekip blogu](https://devblogs.microsoft.com/cppblog/)|Microsoft 'un C++ ürün ekibinizdeki uzmanlar tarafından çeşitli konularla ilgili gönderiler içerir.|
-|[Kanal 9](https://channel9.msdn.com/)|Video görüşmeleri ve derslerinizi içerir. C++ içeriğini bulmak için Channel 9 giriş sayfasındaki arama kutusunu kullanın.|
+|[Channel 9](https://channel9.msdn.com/)|Video görüşmeleri ve derslerinizi içerir. C++ içeriğini bulmak için Channel 9 giriş sayfasındaki arama kutusunu kullanın.|
 |[Visual Studio](https://visualstudio.microsoft.com/)|Visual Studio ve ilgili geliştirme araçlarıyla ilgili makaleleri ve haberleri içerir.|
-|[MSDN forumları](https://social.msdn.microsoft.com/Forums/) ve Visual Studio [Geliştirici topluluğu](https://developercommunity.visualstudio.com)|C++ hakkında sorular oluşturabileceğiniz ve Microsoft 'tan ve topluluktaki uzmanlardan yanıt alabileceğiniz resmi Microsoft forumları.|
+|[Microsoft docs Q&A](https://docs.microsoft.com/answers/topics/c%2B%2B.html) ve Visual Studio C++ [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html)|C++ hakkında sorular oluşturabileceğiniz ve Microsoft 'tan ve topluluktaki uzmanlardan yanıt alabileceğiniz resmi Microsoft forumları.|

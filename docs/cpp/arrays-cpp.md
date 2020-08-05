@@ -1,25 +1,25 @@
 ---
 title: Diziler (C++)
-ms.date: 11/14/2019
+ms.date: 08/03/2020
 helpviewer_keywords:
 - declaring arrays [C++], about declaring arrays
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-ms.openlocfilehash: d4689162ea38f67b81c0f78bccba557cb40e78d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb949f9a17a6b751dae40202bf82e6cb321b526b
+ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226040"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87565969"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 
-Dizi, belleğin bitişik bir alanını kaplayan aynı türdeki nesnelerin bir dizisidir. Geleneksel C stili diziler birçok hatanın kaynağıdır, ancak özellikle de daha eski kod tabanlarında ortaktır. Modern C++ ' da, bu bölümde açıklanan C stili diziler yerine [std:: vector](../standard-library/vector-class.md) veya [std:: Array](../standard-library/array-class-stl.md) kullanımını önemle öneririz. Bu standart kitaplık türlerinin her ikisi de öğelerini bitişik bir bellek bloğu olarak depolar, ancak dizi içinde geçerli bir konuma işaret eden yineleyiciler ile çok daha yüksek tür güvenliği sağlar. Daha fazla bilgi için bkz. [kapsayıcılar (Modern C++)](containers-modern-cpp.md).
+Dizi, belleğin bitişik bir alanını kaplayan aynı türdeki nesnelerin bir dizisidir. Geleneksel C stili diziler birçok hatanın kaynağıdır, ancak özellikle de daha eski kod tabanlarında ortaktır. Modern C++ ' da, bu bölümde açıklanan C stili diziler yerine [std:: vector](../standard-library/vector-class.md) veya [std:: Array](../standard-library/array-class-stl.md) kullanımını önemle öneririz. Bu standart kitaplık türlerinin her ikisi de öğelerini bitişik bir bellek bloğu olarak depolar. Ancak, çok daha yüksek bir tür güvenliği sağlar ve dizi içinde geçerli bir konuma işaret eden garantili yineleyiciler destekler. Daha fazla bilgi için bkz. [kapsayıcılar (Modern C++)](containers-modern-cpp.md).
 
 ## <a name="stack-declarations"></a>Yığın bildirimleri
 
-C++ dizi bildiriminde, dizi boyutu diğer dillerdeki gibi tür adından sonra değil, değişken adından sonra belirtilir. Aşağıdaki örnek, yığın üzerinde ayrılacak bir 1000 Double dizisi bildirir. Derleyicinin ne kadar yığın alanı ayıracağından emin olması gerektiğinden, öğelerin sayısı bir tamsayı sabit değeri veya başka bir sabit ifade olarak sağlanmalıdır; çalışma zamanında hesaplanan bir değer kullanamaz. Dizideki her öğeye varsayılan değer olan 0 atanır. Varsayılan bir değer atamadıysanız, her bir öğe başlangıçta bu konumda olacak şekilde hangi rastgele değerlerin olacağını içerecektir.
+C++ dizi bildiriminde, dizi boyutu diğer dillerdeki gibi tür adından sonra değil, değişken adından sonra belirtilir. Aşağıdaki örnek, yığın üzerinde ayrılacak bir 1000 Double dizisi bildirir. Öğe sayısı bir tamsayı sabit değeri ya da başka bir sabit ifade olarak sağlanmalıdır. Bunun nedeni derleyicinin ne kadar yığın alanı ayıracağından emin olmak için. çalışma zamanında hesaplanan bir değer kullanamaz. Dizideki her öğeye varsayılan değer olan 0 atanır. Varsayılan değer atamadıysanız, başlangıçta her öğe, bu bellek konumunda olması gereken rastgele değerleri içerir.
 
 ```cpp
     constexpr size_t size = 1000;
@@ -44,20 +44,20 @@ C++ dizi bildiriminde, dizi boyutu diğer dillerdeki gibi tür adından sonra de
     }
 ```
 
-Dizideki ilk öğe 0TH öğesidir ve son öğe (*n*-1) öğesidir; burada *n* , dizinin içerebileceği öğelerin sayısıdır. Bildirimdeki öğe sayısı bir integral türünde olmalı ve 0 ' dan büyük olmalıdır. Programınızın bir değeri hiçbir şekilde öğesinden daha büyük bir alt simge işlecine geçirdiğinden emin olmak sizin sorumluluğunuzdadır `(size - 1)` .
+Dizideki ilk öğe, zerıse öğesidir. Son öğe (*n*-1) öğesidir; burada *n* , dizinin içerebileceği öğe sayısıdır. Bildirimdeki öğe sayısı bir integral türünde olmalı ve 0 ' dan büyük olmalıdır. Programınızın bir değeri hiçbir şekilde öğesinden daha büyük bir alt simge işlecine geçirdiğinden emin olmak sizin sorumluluğunuzdadır `(size - 1)` .
 
-Sıfır boyutlu bir dizi yalnızca, dizi en son alan **`struct`** veya **`union`** Microsoft uzantıları (/Ze) etkin olduğunda geçerlidir.
+Sıfır boyutlu bir dizi yalnızca, bir veya ' deki son alan olduğunda **`struct`** veya **`union`** Microsoft uzantıları etkinleştirildiğinde ( **`/Za`** veya **`/permissive-`** ayarlanmamışsa) geçerlidir.
 
-Yığın tabanlı diziler, yığın tabanlı dizilere göre ayrılmak ve erişim için daha hızlıdır, ancak öğe sayısı çok fazla yığın belleği kullandığından büyük bir sayı olamaz. Programınıza ne kadar çok şey bağlıdır. Bir dizinin çok büyük olup olmadığını anlamak için profil oluşturma araçlarını kullanabilirsiniz.
+Yığın tabanlı diziler, yığın tabanlı dizilerden ayırmak ve erişmek için daha hızlıdır. Ancak, yığın alanı sınırlı olur. Dizi öğelerinin sayısı çok fazla yığın belleği kullandığından büyük bir sayı olamaz. Programınıza ne kadar çok şey bağlıdır. Bir dizinin çok büyük olup olmadığını anlamak için profil oluşturma araçlarını kullanabilirsiniz.
 
 ## <a name="heap-declarations"></a>Yığın bildirimleri
 
-Yığında ayrılabilecek çok büyük bir dizi veya boyut derleme zamanında tanınamayacağı takdirde, bunu [Yeni \[ \] ](new-operator-cpp.md) bir ifadeyle yığın üzerinde ayırabilirsiniz. İşleci, ilk öğesine bir işaretçi döndürür. Yalnızca yığın tabanlı bir dizi gibi işaretçi değişkeni ile birlikte indis işlecini kullanabilirsiniz. İşaretçiyi dizideki herhangi bir rastgele öğeye taşımak için [işaretçi aritmetiğini](../c-language/pointer-arithmetic.md) de kullanabilirsiniz. Şunları sağlamak sizin sorumluluğunuzdadır:
+Yığına ayırmak için çok büyük bir dizi veya derleme zamanında bilinen boyut yok olabilir. Bir ifade kullanarak bu diziyi yığında ayırmak mümkündür [`new[]`](new-operator-cpp.md) . İşleci, ilk öğesine bir işaretçi döndürür. Alt simge işleci, yığın tabanlı bir dizide olduğu gibi işaretçi değişkeni üzerinde de kullanılabilir. İşaretçiyi dizideki herhangi bir rastgele öğeye taşımak için [işaretçi aritmetiğini](../c-language/pointer-arithmetic.md) de kullanabilirsiniz. Şunları sağlamak sizin sorumluluğunuzdadır:
 
 - Artık diziyi ihtiyaç kalmadığında belleği silebilmeniz için özgün işaretçi adresinin bir kopyasını her zaman saklayın.
-- dizi sınırlarının ötesinde işaretçi adresini artırmaz veya azalmayın.
+- işaretçi adresini dizi sınırlarının ötesinde artırmaz veya azalmayın.
 
-Aşağıdaki örnek, çalışma zamanında yığında bir dizinin nasıl tanımlanacağını ve indis işleci kullanılarak veya işaretçi aritmetiği kullanılarak dizi öğelerine nasıl erişecağınızı gösterir:
+Aşağıdaki örnek, çalışma zamanında yığında nasıl dizi tanımlanacağını gösterir. İndis işlecini kullanarak ve işaretçi aritmetiği kullanarak dizi öğelerine nasıl erişebileceğiniz gösterilmektedir:
 
 ```cpp
 
@@ -131,7 +131,7 @@ Bir dizide, tek seferde bir öğe veya tek bir ifadede bir diziyi başlatabilirs
 
 ## <a name="passing-arrays-to-functions"></a>Dizileri işlevlere geçirme
 
-Bir dizi bir işleve geçirildiğinde, ilk öğeye işaretçi olarak geçirilir. Bu, hem yığın tabanlı hem de yığın tabanlı diziler için geçerlidir. İşaretçi ek boyut veya tür bilgisi içermiyor. Bu davranışa *işaretçi kay*adı verilir. Bir diziyi bir işleve geçirdiğinizde, her zaman öğe sayısını ayrı bir parametrede belirtmeniz gerekir. Bu davranış, Array bir işleve geçirildiğinde dizi öğelerinin kopyalanmadığını da belirtir. İşlevin öğeleri değiştirmesini engellemek için, parametreyi öğe işaretçisi olarak belirtin **`const`** .
+Bir dizi bir işleve geçirildiğinde, yığın tabanlı veya yığın tabanlı bir dizi olup olmadığı sürece ilk öğeye işaretçi olarak geçirilir. İşaretçi ek boyut veya tür bilgisi içermiyor. Bu davranışa *işaretçi kay*adı verilir. Bir diziyi bir işleve geçirdiğinizde, her zaman öğe sayısını ayrı bir parametrede belirtmeniz gerekir. Bu davranış, Array bir işleve geçirildiğinde dizi öğelerinin kopyalanmadığını da belirtir. İşlevin öğeleri değiştirmesini engellemek için, parametreyi öğe işaretçisi olarak belirtin **`const`** .
 
 Aşağıdaki örnek bir diziyi ve uzunluğu kabul eden bir işlevi gösterir. İşaretçi, kopya değil, orijinal diziyi işaret eder. Parametresi olmadığından **`const`** , işlev dizi öğelerini değiştirebilir.
 
@@ -156,7 +156,7 @@ Aynı işlev, davranış değişikliği olmadan bu yollarla da bildirilemez. Diz
 
 ```cpp
 // Unsized array
-void process(const double p[] const size_t len);
+void process(const double p[], const size_t len);
 
 // Fixed-size array. Length must still be specified explicitly.
 void process(const double p[1000], const size_t len);
@@ -175,7 +175,7 @@ Bu **`int`** , aşağıdaki şekilde gösterildiği gibi, kavramsal olarak beş 
 ![Çoklu&#45;boyutlu bir dizinin kavramsal düzeni](../cpp/media/vc38rc1.gif "Çoklu&#45;boyutlu bir dizinin kavramsal düzeni") <br/>
 Çok boyutlu bir dizinin kavramsal düzeni
 
-Başlatıcı listesi olan çok boyutlu dizilerin bildirimlerinde ( [başlatıcılarda](../cpp/initializers.md)açıklandığı gibi), ilk boyutun sınırlarını belirten sabit ifade atlanabilir. Örnek:
+Başlatıcı listesi olan ( [başlatıcılar](../cpp/initializers.md)bölümünde açıklandığı gibi), çok boyutlu diziler bildirebilirsiniz. Bu bildirimlerde, ilk boyutun sınırlarını belirten sabit ifade atlanabilir. Örnek:
 
 ```cpp
 // arrays2.cpp
@@ -197,7 +197,7 @@ C++ dizileri satır birincil sırada depolanır. Satır ana sıra, son alt simge
 
 ## <a name="example"></a>Örnek
 
-Çok boyutlu bir dizinin ilk boyutu için sınır belirtimini atlama tekniği, işlev bildirimlerinde aşağıdaki gibi de kullanılabilir:
+Ayrıca, burada gösterildiği gibi, işlev bildirimlerinde çok boyutlu bir dizinin ilk boyutu için sınır belirtimini atlayabilirsiniz:
 
 ```cpp
 // multidimensional_arrays.cpp
@@ -250,11 +250,11 @@ double FindMinToMkt(int Mkt, double myTransportCosts[][cMkts], int mycFacts) {
 The minimum cost to Market 3 is: 17.29
 ```
 
-İşlev, `FindMinToMkt` Yeni fabrikaları eklemek için herhangi bir kod değişikliği gerektirmediğinden, yalnızca bir yeniden derleme gerektirirken yazılır.
+İşlev, `FindMinToMkt` Yeni fabrikaları eklemek için herhangi bir kod değişikliği gerektirmediğinden, yalnızca bir yeniden derleme gerektirmek üzere yazılır.
 
 ## <a name="initializing-arrays"></a>Dizileri Başlatma
 
-Bir sınıfın oluşturucusu varsa, bu sınıfın dizileri oluşturucu tarafından başlatılır. Başlatıcıda dizideki öğelerden daha az öğe varsa, kalan öğeler için varsayılan oluşturucu kullanılır. Sınıf için varsayılan oluşturucu tanımlanmamışsa, başlatıcı listesi eksiksiz olmalı, yani dizideki her öğe için bir başlatıcı olmalıdır.
+Sınıf oluşturucusuna sahip nesne dizileri Oluşturucu tarafından başlatılır. Başlatıcı listesinde dizideki öğelerden daha az öğe olduğunda, kalan öğeler için varsayılan oluşturucu kullanılır. Sınıfı için varsayılan Oluşturucu tanımlanmazsa, başlatıcı listesi *tamamlanmış*olmalıdır, diğer bir deyişle dizideki her öğe için bir başlatıcı olmalıdır.
 
 İki oluşturucu tanımlayan `Point` sınıfını göz önünde bulundurun:
 
@@ -303,7 +303,7 @@ int main()
 
 ## <a name="accessing-array-elements"></a>Dizi öğelerine erişme
 
-Dizi alt indis işlecini () kullanarak bir dizinin tek tek öğelerine erişebilirsiniz `[ ]` . Tek boyutlu bir dizi, alt simge içermeyen bir ifadede kullanılırsa, dizi adı dizideki ilk öğe için bir işaretçi olarak değerlendirilir.
+Dizi alt indis işlecini () kullanarak bir dizinin tek tek öğelerine erişebilirsiniz `[ ]` . Tek boyutlu bir dizinin adını alt simge olmadan kullanırsanız, dizinin ilk öğesine bir işaretçi olarak değerlendirilir.
 
 ```cpp
 // using_arrays.cpp
@@ -336,7 +336,7 @@ int main() {
 }
 ```
 
-Yukarıdaki kodda, `multi` türünde üç boyutlu bir dizidir **`double`** . `p2multi`İşaretçi, üç boyutlu bir dizi türüne işaret eder **`double`** . Bu örnekte, dizi bir, iki ve üç alt simge ile kullanılır. Deyimde olduğu gibi, tüm alt simgelerin belirtilmesi daha yaygın olsa da `cout` , izleyen deyimlerde gösterildiği gibi bazen dizi öğelerinin belirli bir alt kümesini seçmek faydalı olur `cout` .
+Yukarıdaki kodda, `multi` türünde üç boyutlu bir dizidir **`double`** . `p2multi`İşaretçi, üç boyutlu bir dizi türüne işaret eder **`double`** . Bu örnekte, dizi bir, iki ve üç alt simge ile kullanılır. Deyimde olduğu gibi tüm alt simgeleri belirtmek daha yaygın olsa da `cout` , bazen izleyen deyimlerde gösterildiği gibi dizi öğelerinin belirli bir alt kümesini seçmek faydalı olur `cout` .
 
 ## <a name="overloading-subscript-operator"></a>Alt simge işlecini aşırı yükleme
 
@@ -344,7 +344,7 @@ Diğer işleçler gibi, alt simge işleci ( `[]` ) Kullanıcı tarafından yenid
 
 `*((array_name) + (subscript))`
 
-İşaretçi türleri içeren tüm toplama işlemlerinde olduğu gibi; ölçeklendirme, tür boyutunu ayarlamak için otomatik olarak gerçekleştirilir. Bu nedenle, sonuç değeri dizi adı kaynağından *n* bayt değil; Bunun yerine, dizinin *n*. öğesidir. Bu dönüştürme hakkında daha fazla bilgi için bkz. [eklenebilir işleçler](additive-operators-plus-and.md).
+İşaretçi türlerini içeren tüm ek bir deyişle, ölçek, türün boyutunu ayarlamak için otomatik olarak yapılır. Sonuç değeri, kaynağından *n* bayt değil `array_name` ; bunun yerine dizinin *n*. öğesidir. Bu dönüştürme hakkında daha fazla bilgi için bkz. [eklenebilir işleçler](additive-operators-plus-and.md).
 
 Benzer şekilde, çok boyutlu diziler için aşağıdaki yöntem kullanılarak adres türetilir:
 
@@ -352,14 +352,14 @@ Benzer şekilde, çok boyutlu diziler için aşağıdaki yöntem kullanılarak a
 
 ## <a name="arrays-in-expressions"></a>İfadelerdeki Diziler
 
-Bir dizi türünün tanımlayıcısı **`sizeof`** ,, Address-of ( `&` ) veya bir başvurunun başlatılmasından farklı bir ifadede göründüğünde, ilk dizi öğesine bir işaretçiye dönüştürülür. Örnek:
+Dizi türünün bir tanımlayıcısı **`sizeof`** , bir başvurunun Address-of ( `&` ) veya bir başvurunun başlatılmasından farklı bir ifadede göründüğünde, ilk dizi öğesine bir işaretçiye dönüştürülür. Örnek:
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";
 char *psz = szError1;
 ```
 
-`psz` işaretçisi `szError1` dizisinin ilk öğesine işaret eder. İşaretçilerin aksine diziler, değiştirilebilir l-Values değildir. Bu nedenle aşağıdaki atama geçersizdir:
+`psz` işaretçisi `szError1` dizisinin ilk öğesine işaret eder. İşaretçilerden farklı olarak diziler, değiştirilebilir l-Values değildir. Bu nedenle şu atama geçersizdir:
 
 ```cpp
 szError1 = psz;

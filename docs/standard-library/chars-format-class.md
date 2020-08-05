@@ -1,22 +1,22 @@
 ---
 title: chars_format numaralandırması
-ms.date: 07/22/2020
+ms.date: 08/03/2020
 f1_keywords:
 - charconv/std::chars_format
 helpviewer_keywords:
 - std::chars_format
-ms.openlocfilehash: 4c1d495c943be02b66d52d1986a783b29a8009c5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d7f95d9bd1522fa0896ccdbac6c1dbc770f2b272
+ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230188"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87565947"
 ---
 # <a name="chars_format-enum"></a>chars_format numaralandırması
 
 [\<charconv>](charconv.md)Basit sayısal dönüşümler için kayan nokta biçimini belirtmek üzere kitaplığıyla birlikte kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum class chars_format {
@@ -31,15 +31,23 @@ enum class chars_format {
 
 |Öğe|Açıklama|
 |-|-|
-| `scientific` | `from_chars()`Bir üs beklenmesine ve ayrıştırmasına neden olur. Şöyle gösterimi gibi, `'e'` `printf()` bilimsel gösterim için Biçim belirleyicisi gibidir.`"1.729e+01"` |
-| `fixed` | `from_chars()`Bir üs beklenmez veya ayrıştırılamaz. Bu, gibi `'f'` `printf()` kayan nokta biçimlerini belirleyen Biçim belirleyicisi gibidir `"17.29"` .|
-| `hex` | `from_chars()`Önünde "0x" olmadan, onaltılık biçimde sayı beklenmesine neden olur. |
-| `general` | `from_chars()`Bir üs kabul edilmesine (ancak gerektirmez) neden olur. İçin `to_chars()` , `g` bilimsel gösterim veya sabit arasında geçiş yapmak için printf () Biçim belirleyicisi gibidir. Bu, üs 'un ne kadar etkili olacağını göz önünde bulundurarak, bu sayede makul bir küçük çıkış oluşturabilir. Örneğin: `1e-5` içindeki sonuçları `"1e-05"` , ancak `1e-4` Sonuç olarak sonuçlanır `"0.001"` . `1e5`içindeki sonuçlar `100000` , ile sonuçlanır `1e6` `1e+06` . `1e0`üretir `1` .|
+| `scientific` | `from_chars()`Bir üs beklenmesine ve ayrıştırmasına neden olur. Bu, `printf()` `'e'` gibi bilimsel gösterim için biçimlendirir Biçim belirleyicisi gibidir `"1.729e+01"` . |
+| `fixed` | `from_chars()`Bir üs beklenmez veya ayrıştırılamaz. Bu, `printf()` `'f'` gibi kayan nokta biçimlerini belirleyen Biçim belirleyicisi gibidir `"17.29"` .|
+| `hex` | `from_chars()`Sayıyı onaltılık biçimde, ancak önünde bir değer olmadan beklemesine neden olur `0x` . |
+| `general` | `from_chars()`Bir üs kabul edilmesine (ancak gerektirmez) neden olur. İçin `to_chars()` , `printf()` `'g'` bilimsel gösterim veya sabit arasında geçiş yapmak üzere Biçim belirleyicisi gibidir. Bu, üs 'un ne kadar etkili olacağını göz önünde bulundurarak, bu sayede makul bir küçük çıkış oluşturabilir. Örneğin: `1e-5` içindeki sonuçları `"1e-05"` , ancak `1e-4` Sonuç olarak sonuçlanır `"0.001"` . `1e5`içindeki sonuçlar `100000` , ile sonuçlanır `1e6` `1e+06` . `1e0`üretir `1` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
 [From_chars](charconv-functions.md#from_chars) işlevleri için, Bu Enum ne tür bir giriş beklendiğini açıklar.
 [To_chars](charconv-functions.md#to_chars) işlevleri için, hangi tür çıktının yayılacağını açıklar.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Üst bilgi:**\<charconv>
+
+**Ad alanı:** std
+
+/std: c++ 17 veya sonraki bir sürümü gereklidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

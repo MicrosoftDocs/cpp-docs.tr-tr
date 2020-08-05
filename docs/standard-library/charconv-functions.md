@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::charconv [C++], to_chars
 - std::charconv [C++], from_chars
-ms.openlocfilehash: 276ac2bce70ce5c4ebf8e22bb1da1ac9914db55e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92f838ededad3e2b8493e934ae2b614247f18458
+ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87246125"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87565956"
 ---
 # <a name="ltcharconvgt-functions"></a>&lt;charconv &gt; işlevleri
 
@@ -23,9 +23,9 @@ ms.locfileid: "87246125"
 |[to_chars](#to_chars) | Bir tamsayı veya kayan nokta değerini bir diziye dönüştürür **`char`** . |
 |[from_chars](#from_chars) | Bir dizisini bir **`char`** tamsayı veya kayan noktalı değere dönüştürür. |
 
-Bu dönüştürme işlevleri performans için ayarlanır ve ayrıca en kısa gidiş dönüş davranışını destekler. En kısa gidiş dönüş davranışı, bir sayının karakter olarak dönüştürülmesi durumunda yalnızca bu karakterleri Kayan noktaya dönüştürürken özgün sayının kurtarılmasını sağlamak için yeterli duyarlık yazıldığı anlamına gelir.
+Bu dönüştürme işlevleri performans için ayarlanır ve ayrıca en kısa gidiş dönüş davranışını destekler. En kısa gidiş dönüş davranışı bir sayının karakter olarak dönüştürülmesi durumunda, bu karakterleri bir kayan noktaya dönüştürürken özgün sayının kurtarılmasını sağlamak için yalnızca yeterli duyarlık yazıldığı anlamına gelir.
 
-- Karakter bir sayıya dönüştürülürken, sayısal değerin null ile sonlandırılmış olması gerekmez. Benzer şekilde, bir sayıyı karakter olarak dönüştürürken, sonuç null sonlandırmaz.
+- Karakter bir sayıya dönüştürülürken, sayısal değerin null ile sonlandırılmış olması gerekmez. Benzer şekilde, bir sayıyı karakter olarak dönüştürürken sonuç null ile Sonlandırılmamış değildir.
 - Dönüştürme işlevleri bellek ayırmaz. Her durumda arabelleğe sahip olursunuz.
 - Dönüştürme işlevleri throw değildir. Dönüştürmenin başarılı olup olmadığını belirleyebilmeniz için bir sonuç döndürülür.
 - Dönüştürme işlevleri çalışma zamanı yuvarlama moduna duyarlı değildir.
@@ -95,15 +95,15 @@ Dönüştürmenin sonucunu içeren bir [to_chars_result](to-chars-result-structu
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir [chars_format](chars-format-class.md) parametresi alan işlevler, dönüştürme belirticisini şu şekilde kullandıkları gibi tespit eder: ise, dönüştürme belirticisi ise, ise `printf()` `f` `fmt` `chars_format::fixed` `e` `fmt` `chars_format::scientific` `a` (sonuçta önünde "0x" olmadan) `fmt` ve ise `chars_format::hex` `g` `fmt` `chars_format::general` . En kısa sabit Gösterim belirtildiğinde, değer çok büyük veya çok küçük olduğunda mümkün olan en kısa Gösterim olabileceği için yine de uzun bir çıkışa neden olabilir.
+Bir [chars_format](chars-format-class.md) parametresi alan işlevler, dönüştürme belirticisini şu şekilde kullandıkları gibi tespit eder: ise, dönüştürme belirticisi ise, ise `printf()` `'f'` `fmt` `chars_format::fixed` `'e'` `fmt` `chars_format::scientific` `'a'` ( `0x` sonuç içinde önde gelen) ise ve ise `fmt` `chars_format::hex` `'g'` `fmt` `chars_format::general` . En kısa sabit Gösterim belirtildiğinde, değer çok büyük veya çok küçük olduğunda mümkün olan en kısa Gösterim olabileceği için yine de uzun bir çıkışa neden olabilir.
 
-Aşağıdaki tabloda, ve parametrelerinin farklı bileşimleri verilen dönüştürme davranışı açıklanmaktadır `fmt` `precision` . "En kısa gidiş dönüş" terimi, ilgili işlevi kullanarak bu gösterimi ayrıştırmanın `from_chars` değeri tam olarak kurtarabileceği için gereken en az basamak sayısını yazmak anlamına gelir.
+Aşağıdaki tabloda, ve parametrelerinin farklı bileşimleri verilen dönüştürme davranışı açıklanmaktadır `fmt` `precision` . "En kısa gidiş dönüş davranışı" terimi, ilgili işlevi kullanarak bu gösterimi ayrıştırmanın `from_chars` değeri tam olarak kurtarabileceği için gereken en az basamak sayısını yazmak anlamına gelir.
 
 | `fmt`ve `precision` birleşimi | Çıktı |
 |--|--|
 |  Hiçbiri | Sabit veya bilimsel gösterimden hangisi daha kısadır ve bir tiekesici olarak düzeltildi.</br>Bu davranış, parametreyi alan herhangi bir aşırı yükleme tarafından benzetimi yapılamıyor `fmt` . |
 | `fmt` | Belirtilen biçim için, en kısa bilimsel biçim gibi en kısa gidiş dönüş davranışı. |
-| `fmt` ve `precision` | `printf()`En kısa gidiş dönüş davranışı olmadan, aşağıdaki stili, belirtilen duyarlık kullanır. |
+| `fmt` ve `precision` | , `printf()` En kısa gidiş dönüş davranışı olmadan, aşağıdaki stili, belirtilen duyarlık kullanır. |
 
 ### <a name="return-value"></a>Döndürülen değer
 
@@ -237,7 +237,16 @@ int main()
 }
 ```
 
+## <a name="requirements"></a>Gereksinimler
+
+**Üst bilgi:**\<charconv>
+
+**Ad alanı:** std
+
+/std: c++ 17 veya sonraki bir sürümü gereklidir.
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<charconv>](charconv.md)  
-[Gidiş dönüşlerin en kısa ondalık dizesi](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/)
+[Gidiş dönüşlerin](https://www.exploringbinary.com/the-shortest-decimal-string-that-round-trips-examples/) 
+ en kısa ondalık dizesi [printf () biçim belirticileri](..\c-runtime-library\format-specification-syntax-printf-and-wprintf-functions.md)
