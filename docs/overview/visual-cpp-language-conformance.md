@@ -1,17 +1,17 @@
 ---
 title: Microsoft C++ dil uygunluğu tablosu
 description: Visual Studio sürümüne göre Microsoft C++ Uyumluluk güncelleştirmeleri tablosu.
-ms.date: 05/18/2020
+ms.date: 08/05/2020
 ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 56719f6919b9329e74c947bc74053562d7743215
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4467e9fa47ecdeb0b4c5c44ab4d366222369d994
+ms.sourcegitcommit: 68ae6f9ea17f32734b32bb06ffeec12d8d33f0fe
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213950"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87807816"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluğu tablosu
 
@@ -24,7 +24,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 
 ## <a name="compiler-features"></a>Derleyici özellikleri
 
-|  |  |
+| Özellik | Destek |
 |--|--|
 | __C++ 03/11 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;Diğer her şey | VS 2015 <sup> [A](#note_A)</sup> |
@@ -181,7 +181,9 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 
 ## <a name="standard-library-features"></a>Standart Kitaplık Özellikleri
 
-|  |  |
+Ürün sürümüne göre standart kitaplık özelliklerinin ve hata düzeltmelerinin daha ayrıntılı bir listesi [GitHub MICROSOFT STL wiki changelog](https://github.com/microsoft/STL/wiki/Changelog) sayfasında bulunabilir.
+
+| Özellik | Destek |
 |--|--|
 | __C++ 20 Standart Kitaplık Özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`P0809R0 Comparing Unordered Containers`](https://wg21.link/p0809r0) | VS 2010 <sup> [14](#note_14)</sup> |
@@ -238,20 +240,29 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1165R1 Consistently Propagating Stateful Allocators In basic_string's operator+()`](https://wg21.link/P1165R1) | VS 2019 16,6 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P1423R3 char8_t backward compatibility remediation`](https://wg21.link/P1423R3) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1645R1 constexpr for <numeric> algorithms`](https://wg21.link/P1645R1) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0415R1 constexpr For <complex> (Again)`](https://wg21.link/p0415r1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0476R2 <bit> bit_cast`](https://wg21.link/P0476R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0674R1 make_shared() For Arrays`](https://wg21.link/p0674r1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0718R2 atomic<shared_ptr<T>>, atomic<weak_ptr<T>>`](https://wg21.link/p0718r2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1023R0 constexpr For std::array Comparisons`](https://wg21.link/P1023R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1115R3 erase()/erase_if() Return size_type`](https://wg21.link/P1115R3) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1831R1 Deprecating volatile in the standard library`](https://wg21.link/P1831R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1956R1 <bit> has_single_bit(), bit_ceil(), bit_floor(), bit_width()`](https://wg21.link/P1956R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1964R2 Replacing boolean With boolean-testable`](https://wg21.link/P1964R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1976R2 Fixed-size span construction from dynamic range`](https://wg21.link/P1976R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P2091R0 Issues with range access CPOs`](https://wg21.link/P2091R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P2102R0 Make "implicit expression variations" more explicit`](https://wg21.link/P2102R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P2116R0 Remove tuple-like protocol support from fixed-extent span`](https://wg21.link/P2116R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0019R8 atomic_ref`](https://wg21.link/P0019R8) | Hayır |
 | &nbsp;&nbsp;[`P0053R7 <syncstream>`](https://wg21.link/p0053r7)<br/>&nbsp;&nbsp;[`P0753R2 osyncstream Manipulators`](https://wg21.link/p0753r2) | Hayır |
 | &nbsp;&nbsp;[`P0339R6 polymorphic_allocator<>`](https://wg21.link/P0339R6) | Hayır |
 | &nbsp;&nbsp;[`P0355R7 <chrono> Calendars And Time Zones`](https://wg21.link/p0355r7) | Hayır |
-| &nbsp;&nbsp;[`P0415R1 constexpr For <complex> (Again)`](https://wg21.link/p0415r1) | Hayır |
 | &nbsp;&nbsp;[`P0475R1 Guaranteed Copy Elision For Piecewise Construction`](https://wg21.link/P0475R1) | Hayır |
-| &nbsp;&nbsp;[`P0476R2 <bit> bit_cast`](https://wg21.link/P0476R2) | Hayır |
 | &nbsp;&nbsp;[`P0528R3 Atomic Compare-And-Exchange With Padding Bits`](https://wg21.link/P0528R3) | Hayır |
 | &nbsp;&nbsp;[`P0591R4 Utility Functions For Uses-Allocator Construction`](https://wg21.link/P0591R4) | Hayır |
 | &nbsp;&nbsp;[`P0608R3 Improving variant's Converting Constructor/Assignment`](https://wg21.link/P0608R3) | Hayır |
 | &nbsp;&nbsp;[`P0653R2 to_address()`](https://wg21.link/p0653r2) | Hayır |
 | &nbsp;&nbsp;[`P0655R1 visit<R>()`](https://wg21.link/P0655R1) | Hayır |
-| &nbsp;&nbsp;[`P0674R1 make_shared() For Arrays`](https://wg21.link/p0674r1) | Hayır |
-| &nbsp;&nbsp;[`P0718R2 atomic<shared_ptr<T>>, atomic<weak_ptr<T>>`](https://wg21.link/p0718r2) | Hayır |
 | &nbsp;&nbsp;[`P0768R1 Library Support For The Spaceship Comparison Operator <=>`](https://wg21.link/p0768r1) | Hayır |
 | &nbsp;&nbsp;[`P0811R3 midpoint(), lerp()`](https://wg21.link/P0811R3) | Hayır |
 | &nbsp;&nbsp;[`P0896R4 <ranges\>`](https://wg21.link/P0896R4) | Hayır |
@@ -260,7 +271,6 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1001R2 execution::unseq`](https://wg21.link/P1001R2) | Hayır |
 | &nbsp;&nbsp;[`P1007R3 assume_aligned()`](https://wg21.link/P1007R3) | Hayır |
 | &nbsp;&nbsp;[`P1020R1 Smart Pointer Creation With Default Initialization`](https://wg21.link/P1020R1) | Hayır |
-| &nbsp;&nbsp;[`P1023R0 constexpr For std::array Comparisons`](https://wg21.link/P1023R0) | Hayır |
 | &nbsp;&nbsp;[`P1032R1 Miscellaneous constexpr`](https://wg21.link/P1032R1) | Hayır |
 | &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | Hayır |
 | __C++ 17 standart kitaplığı özellikleri__ | __Desteklenir__ |
@@ -393,7 +403,8 @@ __VS 2019 16,2__ , Visual Studio 2019 sürüm 16,2 ' te desteklenen özellikleri
 __VS 2019 16,3__ , Visual Studio 2019 sürüm 16,3 ' te desteklenen özellikleri belirtir. \
 __VS 2019 16,4__ , Visual Studio 2019 sürüm 16,4 ' te desteklenen özellikleri belirtir. \
 __VS 2019 16,5__ , Visual Studio 2019 sürüm 16,5 ' te desteklenen özellikleri belirtir. \
-__VS 2019 16,6__ , Visual Studio 2019 sürüm 16,6 ' te desteklenen özellikleri gösterir.
+__VS 2019 16,6__ , Visual Studio 2019 sürüm 16,6 ' te desteklenen özellikleri belirtir. \
+__VS 2019 16,7__ , Visual Studio 2019 sürüm 16,7 ' te desteklenen özellikleri gösterir.
 
 ### <a name="notes"></a>Notlar
 
@@ -415,7 +426,7 @@ Derleyici seçeneği [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.m
 
 <a name="note_17"></a>__17__ bu özellikler [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) (veya [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) ) derleyici seçeneği tarafından etkinleştirilir.
 
-<a name="note_20"></a>__20__ bu özellikler derleyici seçeneği tarafından etkinleştirilir [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) . C++ 20 uygulama tamamlandığında, bu özelliklerin de kullanılabildiği yeni bir **/std: c++ 20** derleyici seçeneği eklenir.
+<a name="note_20"></a>__20__ bu özellikler derleyici seçeneği tarafından etkinleştirilir [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) . C++ 20 uygulama tamamlandığında, **`/std:c++20`** Bu özelliklerin de kullanılabilir olacağı yeni bir derleyici seçeneği eklenir.
 
 <a name="note_byte"></a>__bayt__ `std::byte` [`/std:c++17`](../build/reference/std-specify-language-standard-version.md), (veya) tarafından etkinleştirilir [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) , ancak bazı durumlarda Windows SDK üstbilgileri ile çakışabileceğinden, hassas bir geri alma makrosu vardır. , Olarak tanımlayarak devre dışı bırakılabilir `_HAS_STD_BYTE` `0` .
 
