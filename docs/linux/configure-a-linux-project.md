@@ -1,15 +1,16 @@
 ---
-title: Visual Studio 'da C++ Linux projesi yapılandırma
-ms.date: 06/22/2020
+title: Visual Studio 'da Linux MSBuild C++ projesi yapılandırma
+ms.date: 08/06/2020
+description: Visual Studio 'da MSBuild tabanlı bir Linux projesi yapılandırarak derleyebilirsiniz.
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 6bc38e925e366804c8fe37604066b7cc20e04f15
-ms.sourcegitcommit: f9344b09a734e8b05a7494415991a22b7aec5ae8
+ms.openlocfilehash: 7f4664dfc364cbd9a3b499e02de4cf0e7f44fe78
+ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85269747"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88043869"
 ---
-# <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
+# <a name="configure-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio 'da Linux MSBuild C++ projesi yapılandırma
 
 ::: moniker range="vs-2015"
 
@@ -17,7 +18,7 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-Bu konu başlığında [, Visual Studio 'da yeni bir C++ Linux projesi oluşturma](create-a-new-linux-project.md)bölümünde açıklandığı gibi bir c++ Linux projesinin nasıl yapılandırılacağı açıklanmaktadır. CMake Linux projeleri için bkz. [Linux CMake projesini yapılandırma](cmake-linux-project.md).
+Bu konu başlığında [, Visual Studio 'Da Linux MSBuild C++ projesi oluşturma](create-a-new-linux-project.md)bölümünde açıklandığı gibi MSBuild tabanlı bir Linux projesinin nasıl yapılandırılacağı açıklanmaktadır. Linux CMake projeleri için bkz. [Linux CMake projesini yapılandırma](cmake-linux-project.md).
 
 Bir Linux projesini fiziksel bir Linux makinesini, sanal makineyi veya [Linux Için Windows alt sistemini](/windows/wsl/about) (WSL) hedeflemek üzere yapılandırabilirsiniz.
 
