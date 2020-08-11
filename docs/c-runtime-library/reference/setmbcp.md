@@ -29,18 +29,18 @@ helpviewer_keywords:
 - _setmbcp function
 - multibyte code pages
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
-ms.openlocfilehash: 18712661b2bda1eaaf0c583b922ad73a781b4abc
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9a981c40b9e525ba1ffc1f2198f2b6a859fd9ac7
+ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918823"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88086974"
 ---
 # <a name="_setmbcp"></a>_setmbcp
 
 Yeni bir çok baytlı kod sayfası ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _setmbcp(
@@ -60,16 +60,6 @@ Kod sayfası başarıyla ayarlandıysa 0 döndürür. *Kod sayfası için geçer
 ## <a name="remarks"></a>Açıklamalar
 
 **_Setmbcp** işlevi yeni bir çok baytlı kod sayfasını belirtir. Varsayılan olarak, çalışma zamanı sistemi, çok baytlı kod sayfasını otomatik olarak sistem varsayılan ANSI kod sayfasına ayarlar. Çok baytlı kod sayfası ayarı, yerel ayara bağımlı olmayan tüm çok baytlı yordamları etkiler. Ancak, geçerli yerel ayar için tanımlanan kod sayfasını kullanmak üzere **_setmbcp** söylemek mümkündür (aşağıdaki bildirim sabitleri ve ilgili davranış sonuçları listesine bakın). Çok baytlı kod sayfası yerine yerel ayar kodu sayfasına bağımlı çok baytlı yordamların bir listesi için bkz. [çok baytlı karakter dizileri yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
-
-Çok baytlı kod sayfası, aşağıdaki çalışma zamanı kitaplığı yordamlarına göre çok baytlı karakter işlemeyi da etkiler:
-
-||||
-|-|-|-|
-|[_exec işlevleri](../../c-runtime-library/exec-wexec-functions.md)|[_mktemp](mktemp-wmktemp.md)|[_stat](stat-functions.md)|
-|[_fullpath](fullpath-wfullpath.md)|[_spawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
-|[_makepath](makepath-wmakepath.md)|[_splitpath](splitpath-wsplitpath.md)|[tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
-
-Ayrıca, ( **_exec** ve **_spawn** aileleri gibi) çok baytlı karakter *argv* veya *envp* program bağımsız değişkenlerini parametre olarak alan tüm çalışma zamanı kitaplığı yordamları, bu dizeleri çok baytlı kod sayfasına göre işler. Bu nedenle bu yordamlar, çok baytlı kod sayfasını değiştiren **_setmbcp** çağrısıyla de etkilenir.
 
 *CodePage* bağımsız değişkeni aşağıdaki değerlerden herhangi birine ayarlanabilir:
 
@@ -91,7 +81,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_setmbcp**|\<Mbctype. h>|
+|**_setmbcp**|\<mbctype.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

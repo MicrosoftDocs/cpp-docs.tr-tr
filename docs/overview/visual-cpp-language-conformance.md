@@ -6,12 +6,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: a26051d101c95ebbfcd8a112ba2e6208a9a34a61
-ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
+ms.openlocfilehash: 84572d44cd994da07d44e736983270a1e7acd1ec
+ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88043882"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88086987"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluğu tablosu
 
@@ -222,6 +222,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()`](https://wg21.link/P0556R3) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0595R2 is_constant_evaluated()`](https://wg21.link/P0595R2) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0631R8 <numbers> Math Constants`](https://wg21.link/P0631R8) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0655R1 visit<R>()`](https://wg21.link/P0655R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0738R2 istream_iterator Cleanup`](https://wg21.link/P0738R2) | VS 2019 16,5 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P0767R1 Deprecating is_pod`](https://wg21.link/P0767R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0966R1 string::reserve() Should Not Shrink`](https://wg21.link/P0966R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
@@ -262,21 +263,34 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0053R7 <syncstream>`](https://wg21.link/p0053r7)<br/>&nbsp;&nbsp;[`P0753R2 osyncstream Manipulators`](https://wg21.link/p0753r2) | Hayır |
 | &nbsp;&nbsp;[`P0339R6 polymorphic_allocator<>`](https://wg21.link/P0339R6) | Hayır |
 | &nbsp;&nbsp;[`P0355R7 <chrono> Calendars And Time Zones`](https://wg21.link/p0355r7) | Hayır |
+| &nbsp;&nbsp;[`P0408R7 Efficient access To basic_stringbuf's buffer`](https://wg21.link/p0408r7) | Hayır |
+| &nbsp;&nbsp;[`P0466R5 Library support for layout-compatibility and pointer-interconvertibility traits`](https://wg21.link/p0466r5) | Hayır |
 | &nbsp;&nbsp;[`P0475R1 Guaranteed Copy Elision For Piecewise Construction`](https://wg21.link/P0475R1) | Hayır |
+| &nbsp;&nbsp;[`P0528R3 Library support for atomic compare-and-exchange with padding bits`](https://wg21.link/P0528R3) | Hayır |
+| &nbsp;&nbsp;[`P0551R3 Thou Shalt Not Specialize std Function Templates!`](https://wg21.link/P0551R3) | Hayır |
+| &nbsp;&nbsp;[`P0586R2 Integer comparison functions`](https://wg21.link/P0586R2) | Hayır |
 | &nbsp;&nbsp;[`P0591R4 Utility Functions For Uses-Allocator Construction`](https://wg21.link/P0591R4) | Hayır |
 | &nbsp;&nbsp;[`P0608R3 Improving variant's Converting Constructor/Assignment`](https://wg21.link/P0608R3) | Hayır |
-| &nbsp;&nbsp;[`P0653R2 to_address()`](https://wg21.link/p0653r2) | Hayır |
-| &nbsp;&nbsp;[`P0655R1 visit<R>()`](https://wg21.link/P0655R1) | Hayır |
-| &nbsp;&nbsp;[`P0768R1 Library Support For The Spaceship Comparison Operator <=>`](https://wg21.link/p0768r1) | Hayır |
-| &nbsp;&nbsp;[`P0811R3 midpoint(), lerp()`](https://wg21.link/P0811R3) | Hayır |
-| &nbsp;&nbsp;[`P0896R4 <ranges\>`](https://wg21.link/P0896R4) | Hayır |
+| &nbsp;&nbsp;[`P0645R10 <format> Text Formatting`](https://wg21.link/p0645r10) | Hayır |
+| &nbsp;&nbsp;[`P0660R10 <stop_token> and jthread`](https://wg21.link/p0660r10) | Hayır |
+| &nbsp;&nbsp;[`P0768R1 Library Support For The Spaceship Comparison Operator <=>`](https://wg21.link/p0768r1) | Kısmi in VS 2019 16,0 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0784R7 Library support for more constexpr containers`](https://wg21.link/P0784R7) | No |
+| &nbsp;&nbsp;[`P0811R3 midpoint(), lerp()`](https://wg21.link/P0811R3) | Kısmi in VS 2019 16,3 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0896R4 <ranges>`](https://wg21.link/P0896R4) | Hayır |
 | &nbsp;&nbsp;[`P0912R5 Library Support For Coroutines`](https://wg21.link/P0912R5) | Hayır |
-| &nbsp;&nbsp;[`P0920R2 Precalculated Hash Value Lookup`](https://wg21.link/P0920R2) | Hayır |
+| &nbsp;&nbsp;[`P0980R1 constexpr std::string`](https://wg21.link/P0980R1) | Hayır |
 | &nbsp;&nbsp;[`P1001R2 execution::unseq`](https://wg21.link/P1001R2) | Hayır |
+| &nbsp;&nbsp;[`P1004R2 constexpr std::vector`](https://wg21.link/P1004R2) | Hayır |
 | &nbsp;&nbsp;[`P1007R3 assume_aligned()`](https://wg21.link/P1007R3) | Hayır |
 | &nbsp;&nbsp;[`P1020R1 Smart Pointer Creation With Default Initialization`](https://wg21.link/P1020R1) | Hayır |
 | &nbsp;&nbsp;[`P1032R1 Miscellaneous constexpr`](https://wg21.link/P1032R1) | Hayır |
+| &nbsp;&nbsp;[`P1065R2 constexpr INVOKE`](https://wg21.link/P1065R2) | Hayır |
+| &nbsp;&nbsp;[`P1135R6 The C++20 Synchronization Library`](https://wg21.link/P1135R6) | Hayır |
+| &nbsp;&nbsp;[`P1208R6 <source_location>`](https://wg21.link/P1208R6) | Hayır |
 | &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | Hayır |
+| &nbsp;&nbsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | Hayır |
+| &nbsp;&nbsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | Hayır |
+| &nbsp;&nbsp;[`P1771R1 Library support for [[nodiscard]] for constructors`](https://wg21.link/P1771R1) | Hayır |
 | __C++ 17 standart kitaplığı özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`LWG 2221 Formatted output operator for nullptr`](https://cplusplus.github.io/LWG/issue2221) | VS 2019 16,1 |
 | &nbsp;&nbsp;[`N3911 void_t`](https://wg21.link/n3911) | VS 2015 <sup> [14](#note_14)</sup> |
