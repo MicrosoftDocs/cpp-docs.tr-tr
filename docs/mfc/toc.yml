@@ -2706,6 +2706,8 @@
           href: reference/afx-messages.md
         - name: ToolBar denetim stilleri
           href: reference/toolbar-control-styles.md
+        - name: BufferCommand sabit listesi
+          href: reference/buffercommand-enumeration.md
         - name: 'CMFCImagePaintArea::IMAGE_EDIT_MODE numaralandırması'
           href: reference/cmfcimagepaintarea-image-edit-mode-enumeration.md
         - name: UICheckState numaralandırması
