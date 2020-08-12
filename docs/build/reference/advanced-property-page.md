@@ -1,86 +1,108 @@
 ---
-title: Gelişmiş Özellik Sayfası (Proje)
-ms.date: 07/19/2019
+title: Gelişmiş özellik sayfası (proje)
+ms.date: 08/10/2020
 f1_keywords:
 - VC.Project.VCConfiguration.VCToolsVersion
 ms.description: Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects.
-ms.openlocfilehash: 8ce62b768f5cda30501e791bcd040a40b18bfb23
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3d6694e44d3da4023998a0335cd06c85b353b2b1
+ms.sourcegitcommit: 8140647370017b885432349ce89f187c3068b46a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328420"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144171"
 ---
-# <a name="advanced-property-page"></a>Gelişmiş Özellik Sayfası
+# <a name="advanced-property-page"></a>Gelişmiş özellik sayfası
 
-Advanced özellik sayfası Visual Studio 2019 ve sonraki yıllarda kullanılabilir.
+::: moniker range="<=vs-2017"
+
+Gelişmiş özellik sayfası, Visual Studio 2019 ve üzeri sürümlerde kullanılabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 
+Gelişmiş özellik sayfası, Visual Studio 2019 ve üzeri sürümlerde kullanılabilir.
+
 ## <a name="advanced-properties"></a>Gelişmiş Özellikler
 
-- **Hedef Dosya Uzantısı**
+- **Hedef dosya uzantısı**
 
-   Yapı çıktısı için kullanılacak dosya uzantısını belirtir. Uygulamalar için **.exe,** statik kitaplıklar için **.lib** ve DL'ler için **.dll** varsayılanları.
+   Derleme çıkışı için kullanılacak dosya uzantısını belirtir. Uygulamalar için varsayılan olarak *`.exe`* , *`.lib`* statik kitaplıklar ve *`.dll`* DLL 'ler içindir.
 
-- **Temizle'de Silinecek Uzantılar**
+- **Temizlemede Silinecek Uzantılar**
 
-   **Temizle** seçeneği **(Ekle** menüsü) dosyaları projenin yapılandırmasının oluşturulduğu ara dizinden siler. Bu özellik ile belirtilen uzantıları olan dosyalar **Temiz** çalıştırıldığında veya yeniden oluşturma gerçekleştirdiğinizde silinir. Yapı sistemi, ara dizindeki bu uzantıların dosyalarına ek olarak, bulunduğu yere bakılmaksızın (.obj dosyaları gibi ara çıktılar dahil) yapının bilinen tüm çıktılarını da siler. Joker karakter belirtebileceğinizi unutmayın.
+   **Temizleme** seçeneği (**derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellikte belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden oluşturduğunuzda silinir. Yapı sistemi, bu uzantılara sahip tüm dosyaları ara dizinde siler. Ayrıca, nerede bulunduğuna bakılmaksızın, derleme bilinen tüm çıkışlarını da siler. (Dosyalar gibi ara çıkışları da içerir *`.obj`* .) Bu özellikte joker karakter belirtebilirsiniz.
 
-   Bu özelliğe programlı olarak <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>erişmek için bkz.
+   Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A> ..
 
-- **Günlük Dosyası Oluştur**
+- **Derleme günlüğü dosyası**
 
-   Bir proje oluşturduğunuzda oluşturulan günlük dosyası için varsayılan olmayan bir konum belirtmenizi sağlar. Varsayılan konum makrolar tarafından belirtilir $(IntDir)$(MSBuildProjectName).log.
+   Her proje oluşturduğunuzda oluşturulan günlük dosyası için varsayılan olmayan bir konum belirtmenizi sağlar. Varsayılan konum, makrolarla belirtilir `$(IntDir)$(MSBuildProjectName).log` .
 
-   Dizin konumunu değiştirmek için proje makrolarını kullanabilirsiniz. [Yapı komutları ve özellikleri için ortak makrolara](common-macros-for-build-commands-and-properties.md)bakın.
+   Dizin konumunu değiştirmek için proje makroları kullanabilirsiniz. Bkz. [derleme komutları ve özellikleri Için ortak makrolar](common-macros-for-build-commands-and-properties.md).
 
-- **Tercih Edilen Yapı Aracı Mimarisi**
+- **Tercih edilen derleme aracı mimarisi**
 
-   X86 veya x64 yapı araçlarının kullanılıp kullanılmayacağını belirtir.
+   X86 veya x64 derleme araçlarının kullanılıp kullanılmayacağını belirtir.
 
-- **Hata Ayıklama Kitaplıklarını Kullanma**
+- **Hata ayıklama kitaplıklarını kullan**
 
-   Bir HATA VEYA RELEASE yapı oluşturmak için olup olmadığını belirtir.
+   Bir hata ayıklama veya sürüm derlemesi oluşturulup oluşturulmayacağını belirtir.
 
-- **Birlik (JUMBO) oluşturmayı etkinleştirin**
+- **Unity (JUMBO) derlemesini etkinleştir**
 
-   Yapı performansını artırmak için derlemeden önce birçok C++ kaynak dosyasının bir veya daha fazla "birlik" dosyasında biraraya geldiği bir yapı işlemini sağlar. Unity oyun motoru ile ilgisi yok.
+   Birden çok C++ kaynak dosyasını derlemeden önce bir veya daha fazla dosyada birleştiren daha hızlı bir yapı işlemi sağlar. Bu Birleşik dosyalar *Unity* dosyaları olarak bilinir. Unity oyun altyapısıyla ilgisi yoktur.
+
+- **Içeriği OutDir öğesine Kopyala**
+
+   Projede *içerik* olarak işaretlenen öğeleri projenin çıkış dizinine ( `$(OutDir)` ) kopyalayın. Bu ayar, dağıtımı basitleştirecek. Bu özellik Visual Studio 2019 sürüm 16,7 ' den başlayarak kullanılabilir.
+
+- **Proje başvurularını OutDir öğesine Kopyala**
+
+   Yürütülebilir (DLL ve EXE dosyası) proje başvuru öğelerini projenin çıkış dizinine ( `$(OutDir)` ) kopyalayın. C++/CLı ( [`/clr`](clr-common-language-runtime-compilation.md) ) projelerinde, bu özellik yok sayılır. Bunun yerine, her bir proje başvurusunun yereli **Kopyala** özelliği, çıkış dizinine kopyalanıp kopyalanmadığını denetler. Bu ayar, yerel dağıtımı basitleştirecek. Visual Studio 2019 sürüm 16,7 ' den itibaren kullanılabilir.
+
+- **Proje başvurularını simgeleri OutDir öğesine Kopyala**
+
+   Proje başvuru öğeleri için PDB dosyalarını proje başvuru yürütülebilir öğeleri ve projenin çıkış dizinine ( `$(OutDir)` ) kopyalayın. Bu özellik her zaman C++/CLı projeleri için etkinleştirilir. Bu ayar, hata ayıklama dağıtımını basitleştirecek. Visual Studio 2019 sürüm 16,7 ' den itibaren kullanılabilir.
+
+- **C++ çalışma zamanını OutDir 'a Kopyala**
+
+   Çalışma zamanı dll 'Lerini projenin çıkış dizinine ( `$(OutDir)` ) kopyalayın. Bu ayar, yerel dağıtımı basitleştirecek. Visual Studio 2019 sürüm 16,7 ' den itibaren kullanılabilir.
 
 - **MFC kullanımı**
 
-   MFC projesinin MFC DLL'ye statik veya dinamik olarak bağlanıp bağlanmayacağını belirtir. MFC olmayan projeler, MFC'yi kullandığınızda dahil edilen çeşitli Win32 kitaplıklarına bağlanmak için **Standart Windows Kitaplıklarını Kullan'ı** seçebilir.
+   MFC projesinin MFC DLL 'ye statik veya dinamik olarak bağlı olup olmadığını belirtir. MFC olmayan projelerde, MFC 'nin içerdiği Win32 kitaplıklarını bağlamak için **Standart Windows kitaplıklarını kullan** ' ı seçin.
 
-   Bu özelliğe programlı olarak <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>erişmek için bkz.
+   Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A> ..
 
-- **Karakter Seti**
+- **Karakter kümesi**
 
-   _UNICODE veya _MBCS ayarlanıp ayarlanmayacağını tanımlar. Ayrıca, uygun olduğu durumlarda bağlayıcı giriş noktasını da etkiler.
+   Ayarlanmış olup olmadığını tanımlar `_UNICODE` `_MBCS` . Ayrıca uygun yerlerde bağlayıcı giriş noktasını da etkiler.
 
-   Bu özelliğe programlı olarak <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>erişmek için bkz.
+   Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A> ..
 
-- **Tüm Program Optimizasyonu**
+- **Tüm program Iyileştirmesi**
 
-   [/GL](gl-whole-program-optimization.md) derleyici seçeneğini ve [/LTCG](ltcg-link-time-code-generation.md) bağlayıcı seçeneğini belirtir. Varsayılan olarak, bu Hata Ayıklama yapılandırmaları için devre dışı bırakılır ve Perakende yapılandırmaları için etkinleştirilir.
+   [`/GL`](gl-whole-program-optimization.md)Derleyici seçeneğini ve [`/LTCG`](ltcg-link-time-code-generation.md) bağlayıcı seçeneğini belirtir. Varsayılan olarak, tüm program iyileştirmesi hata ayıklama yapılandırmalarında devre dışıdır ve yayın yapılandırmalarına yönelik olarak etkinleştirilir.
 
-- **MSVC Araç Seti Sürümü**
+- **MSVC araç takımı sürümü**
 
-   Projeyi oluşturmak için kullanılacak MSVC araç kümesinin tam sürümünü belirtir. Bir araç setinin çeşitli güncelleştirme ve önizleme sürümleri yüklüyse, burada hangisini kullanacağınızı belirtebilirsiniz.
+   Projeyi derlemek için kullanılan MSVC araç takımının tam sürümünü belirtir. Yüklü bir araç takımının çeşitli güncelleştirme ve önizleme sürümlerine sahip olabilirsiniz. Burada kullanmak istediğiniz birini belirtebilirsiniz.
 
-## <a name="ccli-properties"></a>C++/CLI Özellikleri
+## <a name="ccli-properties"></a>C++/CLı özellikleri
 
-- **Ortak Dil Runtime desteği**
+- **Ortak dil çalışma zamanı desteği**
 
-   [/clr](clr-common-language-runtime-compilation.md) derleyici seçeneğinin kullanılmasına neden olur.
+   [`/clr`](clr-common-language-runtime-compilation.md)Derleyici seçeneğinin kullanılmasına neden olur.
 
-   Bu özelliğe programlı olarak <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>erişmek için bkz.
+   Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A> ..
 
-- **.NET Hedef Çerçeve Sürümü**
+- **.NET hedef Framework sürümü**
 
-   Yönetilen projelerde, .NET çerçeve sürümünü hedeflemek için belirtir.
+   Yönetilen projelerde, hedeflenen .NET Framework sürümünü belirtir.
 
-- **Yönetilen Artımlı Yapıyı Etkinleştir**
+- **Yönetilen artımlı derlemeyi etkinleştir**
 
-   Yönetilen projeler için bu, derlemeler oluşturduğunuzda dış görünürlüğün algılanmasını sağlar. Yönetilen bir projede yapılan bir değişiklik diğer projeler tarafından görülemezse, bağımlı projeler yeniden oluşturulmaz. Bu, yönetilen projeleri içeren çözümlerde yapı sürelerini önemli ölçüde artırabilir.
+   Yönetilen projeler için bu seçenek, derlemeler oluştururken dış görünürlüğü algılamayı mümkün bir şekilde sunar. Yönetilen bir projede yapılan bir değişiklik diğer projelere görünür değilse, bağımlı projeler yeniden oluşturulamaz. Yönetilen artımlı derlemeler, yönetilen projeler içeren çözümlerde derleme sürelerini önemli ölçüde iyileştirebilir.
 
 ::: moniker-end

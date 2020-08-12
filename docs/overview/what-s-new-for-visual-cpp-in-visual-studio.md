@@ -3,12 +3,12 @@ title: Visual Studio 2017’deki C++ yenilikleri
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: 28b3708c8064623a364b7a60eb63c508808b0a0b
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: 509c9d458360c2ba8f46054b69de38aad8bbf56a
+ms.sourcegitcommit: 8140647370017b885432349ce89f187c3068b46a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87390006"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "88144184"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -636,7 +636,7 @@ Artık Evrensel Windows Platformu ve Windows Mağazası için C++ uygulamaları 
 
 Masaüstü ile masaüstü uygulamalarının paketlenmesi büyük ölçüde basitleşerek bir **Windows uygulaması paketleme projesi** proje şablonu eklenmiştir. Dosya | altında kullanılabilir ** Yeni | Proje | Yüklendi | Visual C++ | Evrensel Windows Platformu**. Daha fazla bilgi için bkz. [Visual Studio (Masaüstü Köprüsü) kullanarak bir uygulamayı paketleme](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
-Yeni kod yazarken artık yalnızca başlık dosyalarında uygulanan Windows Çalışma Zamanı için standart bir C++ dil projeksiyonu olan C++/Wınrt ' i kullanabilirsiniz. Standartlara uygun C++ derleyicisini kullanarak Windows Çalışma Zamanı API 'Leri kullanmanıza ve yazmanıza olanak sağlar. C++/Wınrt, C++ geliştiricilerine modern Windows API 'sine birinci sınıf erişim sağlayacak şekilde tasarlanmıştır. Daha fazla bilgi için bkz. [c++/Wınrt: Modern C++ Windows çalışma zamanı](https://moderncpp.com/).
+Yeni kod yazarken artık yalnızca başlık dosyalarında uygulanan Windows Çalışma Zamanı için standart bir C++ dil projeksiyonu olan C++/Wınrt ' i kullanabilirsiniz. Standartlara uygun C++ derleyicisini kullanarak Windows Çalışma Zamanı API 'Leri kullanmanıza ve yazmanıza olanak sağlar. C++/Wınrt, C++ geliştiricilerine modern Windows API 'sine birinci sınıf erişim sağlayacak şekilde tasarlanmıştır. Daha fazla bilgi için bkz. [C++/Wınrt](/windows/uwp/cpp-and-winrt-apis/).
 
 Windows SDK Insider Preview 'ın derleme 17025 ' den başlayarak, C++/Wınrt Windows SDK dahil edilmiştir. Daha fazla bilgi için bkz. [C++/Wınrt artık Windows SDK içeriyor](https://devblogs.microsoft.com/cppblog/cppwinrt-is-now-included-the-windows-sdk/).
 
@@ -696,7 +696,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
-  ![Arayın](media/search.png)
+  ![Arama](media/search.png)
 
 - **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklayın.
 
