@@ -12,11 +12,11 @@
       href: ../linux/connectionmanager-reference.md
 - name: Visual Studio'da MSBuild ile Linux projeleri derleme
   items:
-    - name: Yeni Linux projesi oluşturma
+    - name: Linux MSBuild projesi oluşturma
       href: ../linux/create-a-new-linux-project.md
-    - name: Linux projesi yapılandırma
+    - name: Linux MSBuild projesi yapılandırma
       href: ../linux/configure-a-linux-project.md
-    - name: 'Linux projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama'
+    - name: 'Linux MSBuild projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama'
       href: ../linux/deploy-run-and-debug-your-linux-project.md
     - name: Linux Projesi Özellik Sayfa Başvurusu
       items:
@@ -44,8 +44,10 @@
           href: ../linux/prop-pages/remote-ar-linux.md
 - name: Visual Studio'da CMake ile Linux projeleri derleme
   items:
-    - name: Linux CMake projesi oluşturma ve yapılandırma
+    - name: Linux CMake projesi oluşturma
       href: ../linux/cmake-linux-project.md
+    - name: Linux CMake projesi yapılandırma
+      href: ../linux/cmake-linux-configure.md
     - name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'
       href: ../build/get-started-linux-cmake.md
 - name: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
