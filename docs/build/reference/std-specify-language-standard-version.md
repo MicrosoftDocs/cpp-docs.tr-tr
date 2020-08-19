@@ -6,22 +6,22 @@ f1_keywords:
 - -std
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: eef44858064b89d4a836c80a48552599bceec242
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9755194d70774f27af4c5174151588cc03d5f97a
+ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223830"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88610965"
 ---
-# <a name="std-specify-language-standard-version"></a>`/std`(Dil standart sürümünü belirt)
+# <a name="std-specify-language-standard-version"></a>`/std` (Dil standart sürümünü belirt)
 
 Desteklenen c++ dil özelliklerini, C++ dil standardının belirtilen sürümünden etkinleştirin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/std:c++14`**\
 > **`/std:c++17`**\
-> **`/std:c++latest`**]
+> **`/std:c++latest`**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -31,7 +31,7 @@ Varsayılan **`/std:c++14`** seçenek, MSVC derleyicisi tarafından uygulanan c+
 
 - [`auto`Braced-init-Lists ile ilgili kurallar](https://wg21.link/n3922)
 
-- [`typename`şablon şablonu ' nda-Parametreler](https://wg21.link/n4051)
+- [`typename` şablon şablonu ' nda-Parametreler](https://wg21.link/n4051)
 
 - [Trigraf kaldırma](https://wg21.link/n4086)
 

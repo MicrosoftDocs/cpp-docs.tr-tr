@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: 6c50825cb3003c2b1b63a25419ca67742c92b52f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 693854499dafd23752337652ef298907fdecbcc2
+ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215003"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88610900"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform:: Collections:: MapView Sınıfı
 
@@ -38,7 +38,7 @@ ref class MapView sealed;
 *K*<br/>
 Anahtar-değer çiftindeki anahtar türü.
 
-*V*<br/>
+*Yönetim*<br/>
 Anahtar-değer çiftindeki değerin türü.
 
 *,*<br/>
@@ -76,11 +76,11 @@ MapView, uygulama ikili arabirimi (ABı) arasında geçirilen [Windows:: Foundat
 
 **Ad alanı:** Platform:: Collections
 
-## <a name="mapviewfirst-method"></a><a name="first"></a>MapView:: First yöntemi
+## <a name="mapviewfirst-method"></a><a name="first"></a> MapView:: First yöntemi
 
 Harita görünümündeki ilk öğeyi belirten bir yineleyici döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 virtual Windows::Foundation::Collections::IIterator<
@@ -95,7 +95,7 @@ Harita görünümündeki ilk öğeyi belirten bir yineleyici.
 
 Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **`auto`** tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myMapView->First();`.
 
-## <a name="mapviewhaskey-method"></a><a name="haskey"></a>MapView:: HasKey yöntemi
+## <a name="mapviewhaskey-method"></a><a name="haskey"></a> MapView:: HasKey yöntemi
 
 Geçerli MapView 'ın belirtilen anahtarı içerip içermediğini belirler.
 
@@ -115,7 +115,7 @@ MapView öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeName *K
 
 **`true`** anahtar bulunursa; Aksi takdirde, **`false`** .
 
-## <a name="mapviewlookup-method"></a><a name="lookup"></a>MapView:: Lookup yöntemi
+## <a name="mapviewlookup-method"></a><a name="lookup"></a> MapView:: Lookup yöntemi
 
 K türünde belirtilen anahtarla ilişkilendirilen V türü değerini alır.
 
@@ -134,7 +134,7 @@ MapView içindeki bir öğeyi bulmak için kullanılan anahtar. Türü `key` Typ
 
 İle eşleştirilmiş değer `key` . Dönüş değerinin türü, TypeName *V*.
 
-## <a name="mapviewmapview-constructor"></a><a name="ctor"></a>MapView:: MapView Oluşturucusu
+## <a name="mapviewmapview-constructor"></a><a name="ctor"></a> MapView:: MapView Oluşturucusu
 
 MapView sınıfının yeni bir örneğini başlatır.
 
@@ -175,13 +175,13 @@ Geçerli MapView 'ı başlatmak için kullanılan öğe aralığındaki ilk öğ
 Geçerli MapView 'ı başlatmak için kullanılan bir dizi öğeden sonra ilk öğenin giriş yineleyicisi.
 
 *Demiryolu*<br/>
-Bir [std:: initializer_list \<K,V> ><std:](../standard-library/initializer-list-class.md) öğeleri MapView içine eklenecek olan:p AIR.
+Öğeleri MapView içine eklenecek [std:: initializer_list \<std::pair\<K,V> > ](../standard-library/initializer-list-class.md) .
 
-## <a name="mapviewsize-method"></a><a name="size"></a>MapView:: size yöntemi
+## <a name="mapviewsize-method"></a><a name="size"></a> MapView:: size yöntemi
 
 Geçerli MapView nesnesindeki öğe sayısını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual property unsigned int Size;
@@ -191,7 +191,7 @@ virtual property unsigned int Size;
 
 Geçerli MapView içindeki öğe sayısı.
 
-## <a name="mapviewsplit-method"></a><a name="split"></a>MapView:: Split yöntemi
+## <a name="mapviewsplit-method"></a><a name="split"></a> MapView:: Split yöntemi
 
 Geçerli MapView nesnesini iki MapView nesnesine böler. Bu yöntem işlemsel değil.
 

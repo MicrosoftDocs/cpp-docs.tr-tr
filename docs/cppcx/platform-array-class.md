@@ -1,5 +1,5 @@
 ---
-title: Platform::Dizi Sınıfı
+title: 'Platform:: Array sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: d625d80df67a3c8207467ad629afd4c2bf88db18
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 23548df6718b9397db8521b2bebc6e8389859dcd
+ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318663"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88610705"
 ---
-# <a name="platformarray-class"></a>Platform::Dizi Sınıfı
+# <a name="platformarray-class"></a>Platform:: Array sınıfı
 
-Uygulama ikili arabirimi (ABI) üzerinden alınıp geçilebilen tek boyutlu, değiştirilebilir bir diziyi temsil eder.
+Uygulama ikili arabirimine (ABı) alınabilecek ve geçirilebilecek tek boyutlu, değiştirilebilir bir diziyi temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <typename T>
@@ -30,43 +30,43 @@ private ref class Array<TArg, 1> :
 
 ### <a name="members"></a>Üyeler
 
-Platform::Dizi tüm [yöntemlerini Platformdan devralır::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) `Value` Class ve Platformun özelliğini [uygular::IBoxArray Interface.](../cppcx/platform-iboxarray-interface.md)
+Platform:: Array, [Platform:: WriteOnlyArray sınıfından](../cppcx/platform-writeonlyarray-class.md) tüm yöntemlerini devralır ve `Value` [Platform:: ıboxarray arabiriminin](../cppcx/platform-iboxarray-interface.md)özelliğini uygular.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Dizi Oluşturucuları](#ctor)|Sınıf şablonu parametresi, *T*tarafından belirtilen türlerin tek boyutlu, değiştirilebilir bir dizi başharf.|
+|[Dizi oluşturucular](#ctor)|Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.|
 
 ### <a name="methods"></a>Yöntemler
 
-Bkz. [Platform::WriteOnlyArray Sınıfı](../cppcx/platform-writeonlyarray-class.md).
+Bkz. [Platform:: WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-class.md).
 
 ### <a name="properties"></a>Özellikler
 
 |||
 |-|-|
-|[Dizi::Değer](#value)|Geçerli diziye bir tanıtıcı alır.|
+|[Array:: Value](#value)|Geçerli diziye bir tanıtıcı alır.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizi sınıfı mühürlüdür ve devralınamaz.
+Dizi sınıfı mühürlü ve devralınamaz.
 
-Windows Runtime türü sistemi pürüzlü diziler kavramını desteklemez ve bu nedenle bir\<IVector<Platformu geçemez::Array T>> bir dönüş değeri veya yöntem parametresi olarak. Pürüzlü bir dizi veya ABI genelinde diziler `IVector<IVector<T>^>`dizisi geçmek için.
+Windows Çalışma Zamanı tür sistemi, pürüzlü Diziler kavramını desteklemez ve bu nedenle bir `IVector<Platform::Array<T>>` dönüş değeri veya yöntem parametresi olarak geçirilemez. ABı arasında pürüzlü bir diziyi veya dizi dizilerini geçirmek için kullanın `IVector<IVector<T>^>` .
 
-Platform::Array'in ne zaman ve nasıl kullanılacağı hakkında daha fazla bilgi için [Array ve WriteOnlyArray'e](../cppcx/array-and-writeonlyarray-c-cx.md)bakın.
+Platform:: Array öğesinin ne zaman ve nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [Array ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
-Bu sınıf vccorlib.h üstbilgisinde tanımlanır ve bu başlık derleyici tarafından otomatik olarak dahil edilir. Platform.winmd'de tanımlanan genel bir tür olmadığı için IntelliSense'de görünür, ancak Object Browser'da görünmez.
+Bu sınıf, derleyici tarafından otomatik olarak eklenen vccorlib. h üst bilgisinde tanımlanmıştır. Bu, IntelliSense 'de görünür ancak platform. winmd içinde tanımlı bir genel tür olmadığından Nesne Tarayıcısı değildir.
 
 ### <a name="requirements"></a>Gereksinimler
 
 Derleyici seçeneği: **/ZW**
 
-## <a name="array-constructors"></a><a name="ctor"></a>Dizi Oluşturucuları
+## <a name="array-constructors"></a><a name="ctor"></a> Dizi oluşturucular
 
-Sınıf şablonu parametresi, *T*tarafından belirtilen türlerin tek boyutlu, değiştirilebilir bir dizi başharf.
+Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 Array(unsigned int size);
@@ -78,21 +78,21 @@ Array(T* data, unsigned int size);
 *T*<br/>
 Sınıf şablonu parametresi.
 
-*Boyutu*<br/>
+*boyutla*<br/>
 Dizideki öğelerin sayısı
 
-*Veri*<br/>
-Bu Dizi nesnesini başlatmak `T` için kullanılan tür veri dizisine işaretçi.
+*data*<br/>
+`T`Bu dizi nesnesini başlatmak için kullanılan türdeki veri dizisine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Platform örnekleri nin nasıl oluşturulacağı hakkında daha fazla bilgi için:Dizi, [bkz.](../cppcx/array-and-writeonlyarray-c-cx.md)
+Platform:: Array örnekleri oluşturma hakkında daha fazla bilgi için bkz. [Array ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
-## <a name="arrayget-method"></a><a name="get"></a>Dizi::get Method
+## <a name="arrayget-method"></a><a name="get"></a> Array:: get yöntemi
 
 Belirtilen dizin konumundaki dizi öğesine bir başvuru alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 T& get(unsigned int index)  const;
@@ -100,18 +100,18 @@ T& get(unsigned int index)  const;
 
 #### <a name="parameters"></a>Parametreler
 
-*Dizin*<br/>
-Dizideki bir öğeyi tanımlayan sıfır tabanlı dizin. En küçük dizin 0'dır ve en `size` büyük dizin [Dizi oluşturucudaki](#ctor)parametre tarafından belirtilen değerdir.
+*indeks*<br/>
+Dizide bir öğe tanımlayan sıfır tabanlı dizin. En düşük dizin 0 ' dır ve en yüksek dizin, `size` [dizi oluşturucusunda](#ctor)parametresi tarafından belirtilen değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`index` Parametre tarafından belirtilen dizi öğesi.
+Parametresi tarafından belirtilen dizi öğesi `index` .
 
-## <a name="arrayvalue-property"></a><a name="value"></a>Dizi::Değer Özelliği
+## <a name="arrayvalue-property"></a><a name="value"></a> Array:: Value özelliği
 
 Geçerli diziye bir tanıtıcı alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 property Array^ Value;
@@ -119,7 +119,7 @@ property Array^ Value;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli diziiçin bir tutamaç.
+Geçerli diziye yönelik bir tanıtıcı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

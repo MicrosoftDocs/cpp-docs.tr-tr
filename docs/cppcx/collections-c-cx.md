@@ -2,12 +2,12 @@
 title: Koleksiyonlar (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: c8b844cd2500df7ab9069ac1586a352c639e17bd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 84c6ecad5ffb4920972faf5aa564103ec1f5b5df
+ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233515"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88610952"
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C++/CX)
 
@@ -30,7 +30,7 @@ Windows Çalışma Zamanı koleksiyonlar ve ilgili türlerin arabirimlerini tan�
 
 - C++/CX koleksiyon türleri, STL kapsayıcılarının desteklediği iş parçacığı güvenliği garantisi sağlar.
 
-- [Windows:: Foundation:: Collections:: IObservableVector](/uwp/api/windows.foundation.collections.iobservablevector-1) ve [Windows:: Foundation:: Collections:: ıobservablemap](/uwp/api/windows.foundation.collections.iobservablemap-2) , koleksiyon çeşitli şekillerde değiştiğinde harekete geçirilen olayları tanımlar. Bu arabirimleri uygulayarak [Platform:: Collections:: Map](../cppcx/platform-collections-map-class.md) ve [Platform:: Collections:: vector](../cppcx/platform-collections-vector-class.md) ' ı xaml koleksiyonlarıyla veri bağlamayı destekler. Örneğin, bir öğesine `Vector` veri bağlamış bir öğesi varsa, bir koleksiyona bir `Grid` öğe eklediğinizde, değişiklik kılavuz Kullanıcı arabirimine yansıtılır.
+- [Windows:: Foundation:: Collections:: IObservableVector](/uwp/api/windows.foundation.collections.iobservablevector-1) ve [Windows:: Foundation:: Collections:: ıobservablemap](/uwp/api/windows.foundation.collections.iobservablemap-2) , koleksiyon çeşitli şekillerde değiştiğinde harekete geçirilen olayları tanımlar. Bu arabirimleri uygulayarak  [Platform:: Collections:: Map](../cppcx/platform-collections-map-class.md) ve [Platform:: Collections:: vector](../cppcx/platform-collections-vector-class.md) ' ı xaml koleksiyonlarıyla veri bağlamayı destekler. Örneğin, bir öğesine `Vector` veri bağlamış bir öğesi varsa, bir koleksiyona bir `Grid` öğe eklediğinizde, değişiklik kılavuz Kullanıcı arabirimine yansıtılır.
 
 ## <a name="vector-usage"></a>Vektör kullanımı
 
@@ -39,9 +39,9 @@ Sınıfınızın bir dizi kapsayıcısını başka bir Windows Çalışma Zaman�
 > [!IMPORTANT]
 > Kendi programınız dahilinde bir sıra geçirçalışıyorsanız, `Vector` veya ' `std::vector` den daha verimli olduklarından, ya da kullanın `IVector` . `IVector`Yalnızca KAPSAYıCıYı ABI arasında geçirdiğinizde kullanın.
 >
-> Windows Çalışma Zamanı tür sistemi pürüzlü Diziler kavramını desteklemez ve bu nedenle bir IVector<Platform:: array \<T>> dönüş değeri veya yöntem parametresi olarak geçirilemez. ABı arasında pürüzlü bir diziyi veya dizi dizilerini geçirmek için kullanın `IVector<IVector<T>^>` .
+> Windows Çalışma Zamanı tür sistemi, pürüzlü Diziler kavramını desteklemez ve bu nedenle bir `IVector<Platform::Array<T>>` dönüş değeri veya yöntem parametresi olarak geçirilemez. ABı arasında pürüzlü bir diziyi veya dizi dizilerini geçirmek için kullanın `IVector<IVector<T>^>` .
 
-`Vector<T>`koleksiyondaki öğeleri eklemek, kaldırmak ve bunlara erişmek için gerekli olan ve örtülü olarak dönüştürülebilir olan yöntemleri sağlar `IVector<T>` . Ayrıca, örnekleri üzerinde STL algoritmaları da kullanabilirsiniz `Vector<T>` . Aşağıdaki örnekte, bazı temel kullanımlar gösterilmektedir. Burada [BEGIN Function](../cppcx/begin-function.md) ve [End işlevi](../cppcx/end-function.md) `Platform::Collections` ad alanından değil, ad alanı `std` .
+`Vector<T>` koleksiyondaki öğeleri eklemek, kaldırmak ve bunlara erişmek için gerekli olan ve örtülü olarak dönüştürülebilir olan yöntemleri sağlar `IVector<T>` . Ayrıca, örnekleri üzerinde STL algoritmaları da kullanabilirsiniz `Vector<T>` . Aşağıdaki örnekte, bazı temel kullanımlar gösterilmektedir. Burada [BEGIN Function](../cppcx/begin-function.md) ve [End işlevi](../cppcx/end-function.md) `Platform::Collections` ad alanından değil, ad alanı `std` .
 
 [!code-cpp[cx_collections#01](../cppcx/codesnippet/CPP/collections/class1.cpp#01)]
 
@@ -103,13 +103,13 @@ Değiştirilebilir bir koleksiyonun öğeleri değiştirilebilir, ancak *Görün
 [Platform:: Collections:: Map sınıfı](../cppcx/platform-collections-map-class.md)<br/>
 Değiştirilebilir, ilişkilendirilebilir bir koleksiyon. Eşleme öğeleri anahtar-değer çiftleridir. İlişkili değerini almak için bir anahtar aranıyor ve tüm anahtar-değer çiftlerine yineleme, her ikisi de desteklenir.
 
-`Map`ve `MapView` üzerinde şablonlanır `<K, V, C = std::less<K>>` ; Bu nedenle, karşılaştırıcısı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` davranışını özelleştirebilmeniz için üzerinde şablon oluşturulur `<T, E = std::equal_to<T>>` `IndexOf()` . Bu, çoğunlukla `Vector` değer yapılarında ve için önemlidir `VectorView` . Örneğin, bir vektör oluşturmak için \<Windows::Foundation::DateTime> , DateTime = = işlecini aşırı yükmediği için özel bir karşılaştırıcı sağlamanız gerekir.
+`Map` ve `MapView` üzerinde şablonlanır `<K, V, C = std::less<K>>` ; Bu nedenle, karşılaştırıcısı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` davranışını özelleştirebilmeniz için üzerinde şablon oluşturulur `<T, E = std::equal_to<T>>` `IndexOf()` . Bu, çoğunlukla `Vector` değer yapılarında ve için önemlidir `VectorView` . Örneğin, bir vektör oluşturmak için \<Windows::Foundation::DateTime> , DateTime = = işlecini aşırı yükmediği için özel bir karşılaştırıcı sağlamanız gerekir.
 
 [Platform:: Collections:: MapView Sınıfı](../cppcx/platform-collections-mapview-class.md)<br/>
 Bir öğesinin salt okunurdur sürümü `Map` .
 
 [Platform:: Collections:: vector Sınıfı](../cppcx/platform-collections-vector-class.md)<br/>
-Değiştirilebilir sıralı bir koleksiyon. `Vector<T>`Sabit zamanlı rasgele erişimi ve itfası sabit zamanlı [ekleme](../cppcx/platform-collections-vector-class.md#append) işlemlerini destekler.
+Değiştirilebilir sıralı bir koleksiyon. `Vector<T>` Sabit zamanlı rasgele erişimi ve itfası sabit zamanlı [ekleme](../cppcx/platform-collections-vector-class.md#append) işlemlerini destekler.
 
 [Platform:: Collections:: VectorView sınıfı](../cppcx/platform-collections-vectorview-class.md)<br/>
 Bir öğesinin salt okunurdur sürümü `Vector` .
@@ -121,7 +121,7 @@ STL giriş yineleyicisinin gereksinimlerini karşılayan bir STL Yineleyici.
 STL kesilebilir bir rastgele erişim Yineleyici gereksinimini karşılayan bir STL Yineleyici.
 
 [Platform:: Collections:: Vectorviewwiterator sınıfı](../cppcx/platform-collections-vectorviewiterator-class.md)<br/>
-STL rastgele erişim yineleyicisinin gereksinimlerini karşılayan bir STL Yineleyici **`const`** .
+STL rastgele erişim yineleyicisinin gereksinimlerini karşılayan bir STL Yineleyici  **`const`** .
 
 ### <a name="begin-and-end-functions"></a>Begin () ve End () işlevleri
 
@@ -139,7 +139,7 @@ Aşağıdaki tabloda, kullanılabilir yineleyiciler ve işlevler listelenmektedi
 
 ### <a name="collection-change-events"></a>Koleksiyon değişiklik olayları
 
-`Vector`ve `Map` bir koleksiyon nesnesi değiştirildiğinde veya sıfırlandığında ya da bir koleksiyonun herhangi bir öğesi eklendiğinde, kaldırıldığında veya değiştirildiğinde oluşan olayları uygulayarak xaml koleksiyonlarında veri bağlamayı destekler. Veri bağlamayı destekleyen kendi türlerinizi yazabilirsiniz, ancak `Map` ya da `Vector` Bu türlerin mühürlenmesi gerekir.
+`Vector` ve `Map` bir koleksiyon nesnesi değiştirildiğinde veya sıfırlandığında ya da bir koleksiyonun herhangi bir öğesi eklendiğinde, kaldırıldığında veya değiştirildiğinde oluşan olayları uygulayarak xaml koleksiyonlarında veri bağlamayı destekler. Veri bağlamayı destekleyen kendi türlerinizi yazabilirsiniz, ancak `Map` ya da `Vector` Bu türlerin mühürlenmesi gerekir.
 
 [Windows:: Foundation:: Collections:: VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1) ve [Windows:: Foundation:: Collections:: MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler-2) Delegates, koleksiyon değişiklik olayları için olay işleyicilerine yönelik imzaları belirler. [Windows:: Foundation:: Collections:: CollectionChange](/uwp/api/windows.foundation.collections.collectionchange) public enum class ve `Platform::Collection::Details::MapChangedEventArgs` ve `Platform::Collections::Details::VectorChangedEventArgs` ref sınıfları, olaya neyin neden olduğunu belirlemek için olay bağımsız değişkenlerini depolar. `*EventArgs`Ya da kullandığınızda, türleri `Details` açıkça oluşturmak veya kullanmak zorunda olmadığınızdan türler ad alanında tanımlanır `Map` `Vector` .
 

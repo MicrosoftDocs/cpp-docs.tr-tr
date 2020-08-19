@@ -4,12 +4,12 @@ ms.date: 02/26/2020
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-ms.openlocfilehash: e100913cf4f0d84eac0e5891edb053918aec67f4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c52434fa4b652d52baea70df705920db4ee68a5f
+ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190500"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "88610861"
 ---
 # <a name="msbuild-internals-for-c-projects"></a>C++ projeleri için MSBuild iç işlevleri
 
@@ -23,15 +23,15 @@ Varsayılan olarak, birincil Visual Studio destek dosyaları aşağıdaki dizinl
 
 ### <a name="visual-studio-2019"></a>Visual Studio 2019
 
-- % VSıNSTALLDIR% MSBuild \\ Microsoft \\ VC \\ *sürümü* \\ vctargets\\
+- % VSıNSTALLDIR% MSBuild \\ Microsoft \\ VC \\ *sürümü*\\
 
   Hedefler tarafından kullanılan birincil hedef dosyaları (. targets) ve özellik dosyalarını (. props) içerir. Varsayılan olarak, $ (VCTargetsPath) makrosu bu dizine başvurur. *Sürüm* yer tutucusu Visual Studio Sürüm: V160 for visual Studio 2019, V150 for visual Studio 2017 için geçerlidir.
 
-- % VSıNSTALLDIR% MSBuild \\ Microsoft \\ VC \\ *sürümü* \\ vctargets \\ platformları \\ *platformu*\\
+- % VSıNSTALLDIR% MSBuild \\ Microsoft \\ VC \\ *sürümü* \\ platformları \\ *platformu*\\
 
   Üst dizinindeki hedefleri ve özellikleri geçersiz kılan platforma özgü hedef ve özellik dosyalarını içerir. Bu dizin, bu dizindeki hedefler tarafından kullanılan görevleri tanımlayan bir DLL de içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder.
 
-- % VSıNSTALLDIR% MSBuild \\ Microsoft \\ VC \\ *sürümü* \\ vctargets \\ platformları \\ *Platform* \\ platformtoolsets \\ *araç takımı*\\
+- % VSıNSTALLDIR% MSBuild \\ Microsoft \\ VC \\ *Sürüm* \\ platformları \\ *Platform* \\ platformtoolsets \\ *araç takımı*\\
 
   Belirtilen *araç takımını*kullanarak, derlemeyi C++ uygulamaları oluşturmaya olanak sağlayan dizinleri içerir. *Platform* yer tutucusu ARM, Win32 veya x64 alt dizinini temsil eder. *Araç kümesi* yer tutucusu araç kümesi alt dizinini temsil eder.
 
@@ -71,7 +71,7 @@ Varsayılan olarak, birincil Visual Studio destek dosyaları aşağıdaki dizinl
 
 Destek dosya dizinleri, bu uzantılara sahip dosyaları içerir:
 
-| Uzantı | Açıklama |
+| Dahili numara | Açıklama |
 | --------- | ----------- |
 | . targets | `Target`Hedef tarafından yürütülen görevleri belirten xml öğeleri içerir. Ayrıca `PropertyGroup` , `ItemGroup` `ItemDefinitionGroup` `Item` görev parametrelerine dosya ve komut satırı seçenekleri atamak için kullanılan,, ve Kullanıcı tanımlı öğeleri içerebilir.<br /><br /> Daha fazla bilgi için bkz. [target öğesi (MSBuild)](/visualstudio/msbuild/target-element-msbuild). |
 | . props | `Property Group`, Ve `Property` derleme sırasında kullanılan dosya ve parametre ayarlarını belirten Kullanıcı tanımlı XML öğelerini içerir.<br /><br /> Ayrıca, `ItemDefinitionGroup` `Item` ek ayarları belirten Kullanıcı tanımlı xml öğeleri de içerebilir. Öğe tanımı grubunda tanımlanan öğeler özelliklere benzer ancak komut satırından erişilemez. Visual Studio proje dosyaları, ayarları temsil etmek için genellikle özellikler yerine öğeleri kullanır.<br /><br /> Daha fazla bilgi için bkz. [ItemGroup öğesi (MSBuild)](/visualstudio/msbuild/itemgroup-element-msbuild), [ItemDefinitionGroup öğesi (MSBuild)](/visualstudio/msbuild/itemdefinitiongroup-element-msbuild)ve [öğe öğesi (MSBuild)](/visualstudio/msbuild/item-element-msbuild). |
