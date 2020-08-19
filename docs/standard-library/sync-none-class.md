@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stdext::sync_none [C++], deallocate
 - stdext::sync_none [C++], equals
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
-ms.openlocfilehash: 4caf2cc2b6aa7494f343d10709f3190cb41631be
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dac4dc1182de32af485d37a00ff96370ea8d8943
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232917"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562122"
 ---
 # <a name="sync_none-class"></a>sync_none Sınıfı
 
@@ -32,9 +32,8 @@ class sync_none
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|`Cache`|Eşitleme filtresiyle ilişkili önbelleğin türü. Bu [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
+`Cache`\
+Eşitleme filtresiyle ilişkili önbelleğin türü. [`cache_chunklist`](../standard-library/cache-chunklist-class.md), [`cache_freelist`](../standard-library/cache-freelist-class.md) Veya olabilir [`cache_suballoc`](../standard-library/cache-suballoc-class.md) .
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -42,7 +41,7 @@ class sync_none
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
 |[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
-|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -50,7 +49,7 @@ class sync_none
 
 **Ad alanı:** stdext
 
-## <a name="sync_noneallocate"></a><a name="allocate"></a>sync_none:: ayır
+## <a name="sync_noneallocate"></a><a name="allocate"></a> sync_none:: ayır
 
 Bellek bloğunu ayırır.
 
@@ -60,15 +59,14 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
+*biriktirme*\
+Ayrılacak dizideki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi döner `cache.allocate(count)` , burada `cache` Cache nesnesidir.
 
-## <a name="sync_nonedeallocate"></a><a name="deallocate"></a>sync_none::d eallocate
+## <a name="sync_nonedeallocate"></a><a name="deallocate"></a> sync_none::d eallocate
 
 Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
@@ -78,16 +76,17 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
-|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
+*kaydetmeye*\
+Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.
+
+*biriktirme*\
+Depolamadan serbest bırakmak için nesne sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi çağırır `cache.deallocate(ptr, count)` , burada `cache` Cache nesnesini temsil eder.
 
-## <a name="sync_noneequals"></a><a name="equals"></a>sync_none:: Equals
+## <a name="sync_noneequals"></a><a name="equals"></a> sync_none:: Equals
 
 , Eşitlik için iki önbelleği karşılaştırır.
 
@@ -97,10 +96,11 @@ bool equals(const sync<Cache>& Other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Önbellek*|Eşitleme filtresinin önbellek nesnesi.|
-|*Diğer*|Eşitlik için Karşılaştırılacak önbellek nesnesi.|
+*Önbellek*\
+Eşitleme filtresinin önbellek nesnesi.
+
+*Farklı*\
+Eşitlik için Karşılaştırılacak önbellek nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

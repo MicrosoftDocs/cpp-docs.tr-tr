@@ -1,5 +1,5 @@
 ---
-title: CDrawingManager Sınıfı
+title: CDrawingManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDrawingManager
@@ -56,18 +56,18 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: 73c5775c2cb83dea79401615b31f2194094fac8e
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 1cc469b63e448e964dacc4d853905b22155dfe0e
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753231"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561641"
 ---
-# <a name="cdrawingmanager-class"></a>CDrawingManager Sınıfı
+# <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 
-Sınıf `CDrawingManager` karmaşık çizim algoritmaları uygular.
+`CDrawingManager`Sınıfı karmaşık çizim algoritmaları uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDrawingManager : public CObject
@@ -77,57 +77,57 @@ class CDrawingManager : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDrawingManager::CDrawingManager](#cdrawingmanager)|Bir `CDrawingManager` nesne inşa eder.|
+|[CDrawingManager:: CDrawingManager](#cdrawingmanager)|Bir `CDrawingManager` nesnesi oluşturur.|
 |`CDrawingManager::~CDrawingManager`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDrawingManager::CreateBitmap_32](#createbitmap_32)|Uygulamaların doğrudan yazabileceği 32 bit aygıtbağımsız bit eşlemi (DIB) oluşturur.|
-|[CDrawingManager::DrawAlpha](#drawalpha)|Saydam veya yarı saydam piksellere sahip bit eşlemleri görüntüler.|
-|[CDrawingManager::DrawRotated](#drawrotated)|Kaynak DC içeriğini verilen dikdörtgenin içinde +/- 90 derece döndürür|
-|[CDrawingManager::DrawEllipse](#drawellipse)|Verilen dolgu ve kenarlık renkleri ile bir elips çizer.|
-|[CDrawingManager::DrawGradientRing](#drawgradientring)|Bir halka çizer ve bir renk degradesi ile doldurur.|
-|[CDrawingManager::DrawLine, CDrawingManager::DrawLineA](#drawline_cdrawingmanager__drawlinea)|Bir çizgi çizer.|
-|[CDrawingManager::DrawRect](#drawrect)|Verilen dolgu ve kenarlık renkleriyle bir dikdörtgen çizer.|
-|[CDrawingManager::DrawShadow](#drawshadow)|Dikdörtgen bir alan için gölge çizer.|
-|[CDrawingManager::Fill4ColorsGradient](#fill4colorsgradient)|Dikdörtgen bir alanı iki renk degradesiyle doldurur.|
-|[CDrawingManager::FillGradient](#fillgradient)|Dikdörtgen bir alanı belirli bir renk degradesiyle doldurur.|
-|[CDrawingManager::FillGradient2](#fillgradient2)|Dikdörtgen bir alanı belirli bir renk degradesiyle doldurur. Degradenin renk değişiminin yönü de belirtilir.|
-|[CDrawingManager::GrayRect](#grayrect)|Dikdörtgeni belirtilen gri renkle doldurur.|
-|[CDrawingManager::HighlightRect](#highlightrect)|Dikdörtgen bir alanı vurgular.|
-|[CDrawingManager::HLStoRGB_ONE](#hlstorgb_one)|Bir rengi HLS gösteriminden RGB temsiline dönüştürür.|
-|[CDrawingManager::HLStoRGB_TWO](#hlstorgb_two)|Bir rengi HLS gösteriminden RGB temsiline dönüştürür.|
-|[CDrawingManager::HSVtoRGB](#hsvtorgb)|Bir rengi HSV gösteriminden RGB gösterimine dönüştürür.|
-|[CDrawingManager::HuetoRGB](#huetorgb)|Ton değerini kırmızı, yeşil veya mavi bileşene dönüştüren yardımcı yöntem.|
-|[CDrawingManager::MirrorRect](#mirrorrect)|Dikdörtgen bir alanı çevirir.|
-|[CDrawingManager::PixelAlpha](#pixelalpha)|Yarı saydam bir pikselin son rengini belirleyen yardımcı yöntem.|
-|[CDrawingManager::PrepareShadowMask](#prepareshadowmask)|Gölge olarak kullanılabilecek bir bit eşlemi oluşturur.|
-|[CDrawingManager::RGBtoHSL](#rgbtohsl)|Bir rengi RGB gösteriminden HSL gösterimine dönüştürür.|
-|[CDrawingManager::RGBtoHSV](#rgbtohsv)|Bir rengi RGB gösteriminden HSV temsiline dönüştürür.|
-|[CDrawingManager::SetAlphaPixel](#setalphapixel)|Bitmap'te kısmen saydam bir pikseli renklendiren yardımcı yöntem.|
-|[CDrawingManager::SetPixel](#setpixel)|Biteş'teki tek bir pikseli belirtilen renge değiştiren yardımcı yöntem.|
-|[CDrawingManager::SmartMixColors](#smartmixcolors)|Ağırlıklı orana göre iki rengi birleştirir.|
+|[CDrawingManager:: CreateBitmap_32](#createbitmap_32)|Uygulamaların doğrudan yazabilmesi için 32 bitlik bir cihazdan bağımsız bit eşlem (DIB) oluşturur.|
+|[CDrawingManager::D Rampapha](#drawalpha)|Saydam veya yarı saydam piksel olan bit eşlemleri görüntüler.|
+|[CDrawingManager::D Rawdöndürülmüş](#drawrotated)|Verilen dikdörtgenin içindeki kaynak DC içeriğini +/-90 derece döndürür|
+|[CDrawingManager::D rawEllipse](#drawellipse)|Sağlanan Fill ve Border renkleriyle bir elips çizer.|
+|[CDrawingManager::D Rawgradiing](#drawgradientring)|Bir halka çizer ve renk degradeyle doldurur.|
+|[CDrawingManager::D rawLine, CDrawingManager::D rawLineA](#drawline_cdrawingmanager__drawlinea)|Bir çizgi çizer.|
+|[CDrawingManager::D rawRect](#drawrect)|Sağlanan Fill ve Border renkleriyle bir dikdörtgen çizer.|
+|[CDrawingManager::D rawShadow](#drawshadow)|Dikdörtgen alan için bir gölge çizer.|
+|[CDrawingManager:: Fill4ColorsGradient](#fill4colorsgradient)|Dikdörtgen bir alanı iki renk degradelerine doldurur.|
+|[CDrawingManager:: FillGradient](#fillgradient)|Dikdörtgen bir alanı belirtilen renk degradeyle doldurur.|
+|[CDrawingManager:: FillGradient2](#fillgradient2)|Dikdörtgen bir alanı belirtilen renk degradeyle doldurur. Degradenin renk değişikliğinin yönü de belirtilir.|
+|[CDrawingManager:: Grirect](#grayrect)|Bir dikdörtgeni belirtilen gri renkle doldurur.|
+|[CDrawingManager:: HighlightRect](#highlightrect)|Dikdörtgen bir alanı vurgular.|
+|[CDrawingManager:: HLStoRGB_ONE](#hlstorgb_one)|Bir HLS gösteriminden bir rengi RGB gösterimine dönüştürür.|
+|[CDrawingManager:: HLStoRGB_TWO](#hlstorgb_two)|Bir HLS gösteriminden bir rengi RGB gösterimine dönüştürür.|
+|[CDrawingManager:: HSVtoRGB](#hsvtorgb)|Bir HSV gösteriminden bir rengi RGB gösterimine dönüştürür.|
+|[CDrawingManager:: HuetoRGB](#huetorgb)|Bir ton değerini kırmızı, yeşil veya mavi bileşene dönüştüren yardımcı yöntemi.|
+|[CDrawingManager:: MirrorRect](#mirrorrect)|Dikdörtgen bir alanı çevirir.|
+|[CDrawingManager::P ıxelalpha](#pixelalpha)|Bir yarı saydam piksel için son rengi belirleyen yardımcı yöntemi.|
+|[CDrawingManager::P repareShadowMask](#prepareshadowmask)|Gölge olarak kullanılabilecek bir bit eşlem oluşturur.|
+|[CDrawingManager:: RGBtoHSL](#rgbtohsl)|Bir RGB gösteriminden bir rengi HSL gösterimine dönüştürür.|
+|[CDrawingManager:: RGBtoHSV](#rgbtohsv)|Bir RGB gösteriminden bir HSV gösterimine bir renk dönüştürür.|
+|[CDrawingManager:: Setharfler piksel](#setalphapixel)|Bit eşlemdeki kısmen saydam pikseli gösteren yardımcı yöntemi.|
+|[CDrawingManager:: SetPixel](#setpixel)|Bit eşlemdeki tek bir pikseli belirtilen renge değiştiren yardımcı yöntemi.|
+|[CDrawingManager:: SmartMixColors](#smartmixcolors)|İki rengi ağırlıklı oranına göre birleştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf, `CDrawingManager` gölgeler, renk degradeleri ve vurgulanmış dikdörtgenler çizmek için işlevler sağlar. Ayrıca alfa karıştırma gerçekleştirir. Uygulamanızın Kullanıcı GKullanımını doğrudan değiştirmek için bu sınıfı kullanabilirsiniz.
+`CDrawingManager`Sınıfı, gölgeleri, renk degradelerini ve vurgulanan dikdörtgeni çizmek için işlevler sağlar. Ayrıca Alfa karışımı da gerçekleştirir. Bu sınıfı, uygulamanızın kullanıcı arabirimini doğrudan değiştirmek için kullanabilirsiniz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)<br/>
+[CObject](../../mfc/reference/cobject-class.md)<br/>
 `CDrawingManager`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdrawmanager.h
+**Üstbilgi:** afxdrawmanager. h
 
-## <a name="cdrawingmanagercdrawingmanager"></a><a name="cdrawingmanager"></a>CDrawingManager::CDrawingManager
+## <a name="cdrawingmanagercdrawingmanager"></a><a name="cdrawingmanager"></a> CDrawingManager:: CDrawingManager
 
-[CDrawingManager](../../mfc/reference/cdrawingmanager-class.md) nesnesi oluşturuyor.
+Bir [CDrawingManager](../../mfc/reference/cdrawingmanager-class.md) nesnesi oluşturur.
 
 ```
 CDrawingManager(CDC& dc);
@@ -135,12 +135,12 @@ CDrawingManager(CDC& dc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dc*<br/>
-[içinde] Aygıt bağlamına başvuru. Çizim `CDrawingManager` için bu bağlamı kullanır.
+*'ye*<br/>
+'ndaki Bir cihaz bağlamına başvuru. , `CDrawingManager` Çizim için bu bağlamı kullanır.
 
-## <a name="cdrawingmanagercreatebitmap_32"></a><a name="createbitmap_32"></a>CDrawingManager::CreateBitmap_32
+## <a name="cdrawingmanagercreatebitmap_32"></a><a name="createbitmap_32"></a> CDrawingManager:: CreateBitmap_32
 
-Uygulamaların doğrudan yazabileceği 32 bit aygıtbağımsız bit eşlemi (DIB) oluşturur.
+Uygulamaların doğrudan yazabilmesi için 32 bitlik bir cihazdan bağımsız bit eşlem (DIB) oluşturur.
 
 ```
 static HBITMAP __stdcall CreateBitmap_32(
@@ -154,25 +154,29 @@ static HBITMAP __stdcall CreateBitmap_32(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Boyutu*|[içinde] Bit eşboyutunu gösteren bir [CSize](../../atl-mfc-shared/reference/csize-class.md) parametresi.|
-|*pBits*|[çıkış] DIB bit değerlerinin konumunu alan bir veri işaretçisi için bir işaretçi.|
-|*Bitmap*|Özgün bit eşlemi için bir tutamaç|
-|*clrŞeffaf*|Özgün bit eşleminin saydam rengini belirten bir RGB değeri.|
+*boyutla*\
+'ndaki Bit eşlemin boyutunu gösteren bir [CSize](../../atl-mfc-shared/reference/csize-class.md) parametresi.
+
+*pBits 'ler*\
+dışı DIB 'nin bit değerlerinin konumunu alan bir veri işaretçisi işaretçisi.
+
+*biteş*\
+Özgün bit eşlem tanıtıcısı
+
+*clrTransparent*\
+Orijinal bit eşlemin saydam rengini belirten bir RGB değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa, yeni oluşturulan DIB bit eşlemi için bir tutamaç; aksi takdirde NULL.
+Bu yöntem başarılı olursa yeni oluşturulan DIB bit eşlemiyle bir tanıtıcı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-DIB bit eşlemi nasıl oluşturulacak hakkında daha fazla bilgi için [CreateDIBSection](/windows/win32/api/wingdi/nf-wingdi-createdibitmap)bölümüne bakın.
+DIB bit eşlemi oluşturma hakkında daha fazla bilgi için bkz. [CreateDIBSection](/windows/win32/api/wingdi/nf-wingdi-createdibitmap).
 
-## <a name="cdrawingmanagerdrawalpha"></a><a name="drawalpha"></a>CDrawingManager::DrawAlpha
+## <a name="cdrawingmanagerdrawalpha"></a><a name="drawalpha"></a> CDrawingManager::D Rampapha
 
-Saydam veya yarı saydam piksellere sahip bit eşlemleri görüntüler.
+Saydam veya yarı saydam piksel olan bit eşlemleri görüntüler.
 
 ```cpp
 void DrawAlpha(
@@ -185,24 +189,24 @@ void DrawAlpha(
 ### <a name="parameters"></a>Parametreler
 
 *pDstDC*<br/>
-[içinde] Hedef için aygıt bağlamına bir işaretçi.
+'ndaki Hedef için cihaz bağlamına yönelik bir işaretçi.
 
-*rektDst*<br/>
-[içinde] Hedef dikdörtgen.
+*rectDst*<br/>
+'ndaki Hedef dikdörtgen.
 
 *pSrcDC*<br/>
-[içinde] Kaynak için aygıt bağlamına bir işaretçi.
+'ndaki Kaynak için cihaz bağlamına yönelik bir işaretçi.
 
 *rectSrc*<br/>
-[içinde] Kaynak dikdörtgen.
+'ndaki Kaynak dikdörtgeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iki bit eşlem için alfa karıştırma gerçekleştirir. Alfa karıştırma hakkında daha fazla bilgi için Windows SDK'daki [AlphaBlend'e](/windows/win32/api/wingdi/nf-wingdi-alphablend) bakın.
+Bu yöntem, iki bit eşlem için alfa karışımı gerçekleştirir. Alfa Blend hakkında daha fazla bilgi için Windows SDK bkz. [harflerden Blend](/windows/win32/api/wingdi/nf-wingdi-alphablend) .
 
-## <a name="cdrawingmanagerdrawellipse"></a><a name="drawellipse"></a>CDrawingManager::DrawEllipse
+## <a name="cdrawingmanagerdrawellipse"></a><a name="drawellipse"></a> CDrawingManager::D rawEllipse
 
-Verilen dolgu ve kenarlık renkleri ile bir elips çizer.
+Sağlanan Fill ve Border renkleriyle bir elips çizer.
 
 ```cpp
 void DrawEllipse(
@@ -214,21 +218,21 @@ void DrawEllipse(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Elips için sınırlayıcı dikdörtgen.
+'ndaki Elips için sınırlayıcı dikdörtgen.
 
-*clrDoldur*<br/>
-[içinde] Bu yöntemin elipsi doldurmak için kullandığı renk.
+*clrFill*<br/>
+'ndaki Bu yöntemin elipsi dolduracak şekilde kullandığı renk.
 
 *clrLine*<br/>
-[içinde] Bu yöntemin elips kenarlığı olarak kullandığı renk.
+'ndaki Bu yöntemin elips kenarlığı olarak kullandığı renk.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, her iki renk -1 olarak ayarlanmışsa bir elips çizmeden döndürür. Ayrıca, sınırlayan dikdörtgenin her iki boyutu da 0 ise elips çizmeden geri döner.
+Bu yöntem, herhangi bir rengin-1 olarak ayarlanmış olması halinde bir elips çizmeksizin döndürür. Ayrıca, sınırlayıcı dikdörtgenin herhangi bir boyutu 0 ise, elips çizmeksizin de döndürür.
 
-## <a name="cdrawingmanagerdrawgradientring"></a><a name="drawgradientring"></a>CDrawingManager::DrawGradientRing
+## <a name="cdrawingmanagerdrawgradientring"></a><a name="drawgradientring"></a> CDrawingManager::D Rawgradiing
 
-Bir halka çizer ve bir renk degradesi ile doldurur.
+Bir halka çizer ve renk degradeyle doldurur.
 
 ```
 BOOL DrawGradientRing(
@@ -244,35 +248,35 @@ BOOL DrawGradientRing(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Degrade halkasının sınırını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) parametresi.
+'ndaki Gradyan halkasının sınırını belirten bir [CRect](../../atl-mfc-shared/reference/crect-class.md) parametresi.
 
 *colorStart*<br/>
-[içinde] Degrade için ilk renk.
+'ndaki Gradyanın ilk rengi.
 
-*colorFinish*<br/>
-[içinde] Degrade için son renk.
+*Colorson*<br/>
+'ndaki Degradenin son rengi.
 
 *colorBorder*<br/>
-[içinde] Sınırın rengi.
+'ndaki Kenarlığın rengi.
 
-*nAçı*<br/>
-[içinde] İlk degrade çizim açısını belirten bir parametre. Bu değer 0 ile 360 arasında olmalıdır.
+*Naçı*<br/>
+'ndaki İlk gradyan çizimi açısını belirten bir parametre. Bu değer 0 ile 360 arasında olmalıdır.
 
-*Nwidth*<br/>
-[içinde] Halka için kenarlık genişliği.
+*nWidth*<br/>
+'ndaki Halka için kenarlığın genişliği.
 
-*clrYüz*<br/>
-[içinde] Yüzüğün iç rengi.
+*clrFace*<br/>
+'ndaki Halka iç kısmının rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Dikdörtgen* tarafından tanımlanan dikdörtgen en az 5 piksel genişliğinde ve 5 piksel yüksekliğinde olmalıdır.
+*Rect* tarafından tanımlanan dikdörtgen en az 5 piksel genişliğinde ve 5 piksel yüksekliğinde olmalıdır.
 
-## <a name="cdrawingmanagerdrawline-cdrawingmanagerdrawlinea"></a><a name="drawline_cdrawingmanager__drawlinea"></a>CDrawingManager::DrawLine, CDrawingManager::DrawLineA
+## <a name="cdrawingmanagerdrawline-cdrawingmanagerdrawlinea"></a><a name="drawline_cdrawingmanager__drawlinea"></a> CDrawingManager::D rawLine, CDrawingManager::D rawLineA
 
 Bir çizgi çizer.
 
@@ -294,22 +298,28 @@ void DrawLineA(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*x1*|[içinde] X, çizginin başladığı yeri koordine edin.|
-|*y1*|[içinde] Çizginin başladığı y koordinatı.|
-|*x2*|[içinde] X, çizginin bittiği yerde koordinat ı.|
-|*y2*|[içinde] Çizginin bittiği yerin y koordinatı.|
-|*clrLine*|[içinde] Çizginin rengi.|
+*x1*\
+'ndaki Satırın başladığı x koordinatı.
+
+*Y1*\
+'ndaki Satırın başladığı y koordinatı.
+
+*x2*\
+'ndaki Çizginin bittiği x koordinatı.
+
+*Y2*\
+'ndaki Çizginin bittiği y koordinatı.
+
+*clrLine*\
+'ndaki Çizginin rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*ClrLine* -1'e eşitse bu yöntem başarısız olur.
+Bu yöntem, *clrLine* eşittir-1 olduğunda başarısız olur.
 
-## <a name="cdrawingmanagerdrawrect"></a><a name="drawrect"></a>CDrawingManager::DrawRect
+## <a name="cdrawingmanagerdrawrect"></a><a name="drawrect"></a> CDrawingManager::D rawRect
 
-Verilen dolgu ve kenarlık renkleriyle bir dikdörtgen çizer.
+Sağlanan Fill ve Border renkleriyle bir dikdörtgen çizer.
 
 ```cpp
 void DrawRect(
@@ -321,21 +331,21 @@ void DrawRect(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Dikdörtgenin sınırları.
+'ndaki Dikdörtgenin sınırları.
 
-*clrDoldur*<br/>
-[içinde] Bu yöntemin dikdörtgeni doldurmak için kullandığı renk.
+*clrFill*<br/>
+'ndaki Bu yöntemin dikdörtgeni dolduracak şekilde kullandığı renk.
 
 *clrLine*<br/>
-[içinde] Bu yöntemin dikdörtgenin kenarlığı için kullandığı renk.
+'ndaki Bu yöntemin dikdörtgenin kenarlığı için kullandığı renk.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki renk de -1 olarak ayarlanmışsa, bu yöntem dikdörtgen çizmeden döndürür. Dikdörtgenin her iki boyutu 0 ise de döndürür.
+Bu yöntem, Color-1 olarak ayarlandıysa bir dikdörtgen çizmeden geri döner. Dikdörtgenin herhangi bir boyutu 0 ise de döndürür.
 
-## <a name="cdrawingmanagerdrawshadow"></a><a name="drawshadow"></a>CDrawingManager::DrawShadow
+## <a name="cdrawingmanagerdrawshadow"></a><a name="drawshadow"></a> CDrawingManager::D rawShadow
 
-Dikdörtgen bir alan için gölge çizer.
+Dikdörtgen alan için bir gölge çizer.
 
 ```
 BOOL DrawShadow(
@@ -352,50 +362,50 @@ BOOL DrawShadow(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Uygulamanızda dikdörtgen bir alan. Çizim yöneticisi bu alanın altına bir gölge çizer.
+'ndaki Uygulamanızdaki dikdörtgen bir alan. Çizim Yöneticisi bu alanın altına bir gölge çizecek.
 
-*nDerinlik*<br/>
-[içinde] Gölgenin genişliği ve yüksekliği.
+*nDepth*<br/>
+'ndaki Gölgenin genişliği ve yüksekliği.
 
-*iMinParlaklık*<br/>
-[içinde] Gölgenin minimum parlaklığı.
+*ımınparlaklık*<br/>
+'ndaki Gölgenin minimum parlaklığı.
 
-*iMaxParlaklık*<br/>
-[içinde] Gölgenin maksimum parlaklığı.
+*ımaxparlaklık*<br/>
+'ndaki Gölgenin maksimum parlaklığı.
 
 *pBmpSaveBottom*<br/>
-[içinde] Gölgenin alt kısmının görüntüsünü içeren bir bit eşlemi için işaretçi.
+'ndaki Gölgenin alt bölümünün görüntüsünü içeren bir bit eşlem işaretçisi.
 
-*pBmpSaveRight*<br/>
-[içinde] Dikdörtgenin sağ tarafında çizilen gölge için görüntü içeren bir bit eşlemi işaretçisi.
+*Pbmpsaverisağ*<br/>
+'ndaki Dikdörtgenin sağ tarafında çizilen gölge görüntüsünü içeren bir bit eşlem işaretçisi.
 
 *clrBase*<br/>
-[içinde] Gölgenin rengi.
+'ndaki Gölgenin rengi.
 
-*bRightShadow*<br/>
-[içinde] Gölgenin nasıl çizildiğini gösteren bir Boolean parametresi. *bRightShadow* `TRUE`ise, `DrawShadow` dikdörtgenin sağ tarafına bir gölge çizer.
+*Parlak gölge*<br/>
+'ndaki Gölgenin nasıl çizildiğini gösteren bir Boolean parametresi. En *parlamsa* `TRUE` , `DrawShadow` dikdörtgenin sağ tarafında bir gölge çizer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PBmpSaveBottom* ve *pBmpSaveRight*parametrelerini kullanarak alt ve sağ gölgeler için iki geçerli bit eşlem sağlayabilirsiniz. Bu [CBitmap](../../mfc/reference/cbitmap-class.md) nesnelerinde ekli bir GDI `DrawShadow` nesnesi varsa, bu bit eşlemleri gölgeler olarak kullanır. Parametrelerekli `CBitmap` bir GDI nesnesi yoksa, `DrawShadow` gölgeçizer ve parametreye bit eşlemleri bağlar. Gelecekteki `DrawShadow`aramalarda, çizim işlemini hızlandırmak için bu bit eşlemlerini sağlayabilirsiniz. `CBitmap` Sınıf ve GDI nesneleri hakkında daha fazla bilgi için [Bkz. Grafik Nesneler.](../../mfc/graphic-objects.md)
+*PBmpSaveBottom* ve *Pbmpsaveriright*parametrelerini kullanarak aşağıdan ve sağ gölgelerdeki iki geçerli bit eşlem sağlayabilirsiniz. Bu [CBitmap](../../mfc/reference/cbitmap-class.md) nesnelerinde eklı bir GDI nesnesi varsa, `DrawShadow` Bu bit eşlemler gölgeler olarak kullanacaktır. `CBitmap`Parametrelerde eklenmiş BIR GDI nesnesi yoksa, `DrawShadow` Gölgeyi çizer ve bit eşlemleri parametrelere ekler. Sonraki çağrılarında `DrawShadow` , çizim işlemini hızlandırmak için bu bit eşlemleri sağlayabilirsiniz. Sınıf ve GDI nesneleri hakkında daha fazla bilgi için `CBitmap` bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
 
-Bu parametrelerden biri `NULL` `DrawShadow` varsa, otomatik olarak gölge çizecektir.
+Bu parametrelerden biri ise `NULL` `DrawShadow` otomatik olarak gölgeyi çizecek.
 
-*bRightShadow'u* FALSE olarak ayarlarsanız, gölge dikdörtgen alanın altına ve soluna çizilir.
+En *PARLAMSıNı* false olarak ayarlarsanız, gölge dikdörtgen alanının altına ve soluna çizilir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın yönteminin `DrawShadow` nasıl `CDrawingManager` kullanılacağını göstermektedir. Bu kod parçacığı Prop Levha [Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını gösterir `DrawShadow` `CDrawingManager` . Bu kod parçacığı, [Prop Sheet tanıtım örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_PropSheetDemo#1](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_1.cpp)]
 
-## <a name="cdrawingmanagerfill4colorsgradient"></a><a name="fill4colorsgradient"></a>CDrawingManager::Fill4ColorsGradient
+## <a name="cdrawingmanagerfill4colorsgradient"></a><a name="fill4colorsgradient"></a> CDrawingManager:: Fill4ColorsGradient
 
-Dikdörtgen bir alanı iki renk degradesiyle doldurur.
+Dikdörtgen bir alanı iki renk degradelerine doldurur.
 
 ```cpp
 void Fill4ColorsGradient(
@@ -411,35 +421,35 @@ void Fill4ColorsGradient(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Dolması gereken dikdörtgen.
+'ndaki Doldurulacak dikdörtgen.
 
-*colorBaşlangıç1*<br/>
-[içinde] İlk renk degradesi için ilk renk.
+*colorStart1*<br/>
+'ndaki İlk renk gradyanının başlangıç rengi.
 
 *colorFinish1*<br/>
-[içinde] İlk renk degradesi için son renk.
+'ndaki İlk renk gradyanının son rengi.
 
-*colorBaşlangıç2*<br/>
-[içinde] İkinci renk degradesinin başlangıç rengi.
+*colorStart2*<br/>
+'ndaki İkinci renk gradyanının başlangıç rengi.
 
 *colorFinish2*<br/>
-[içinde] İkinci renk degradesi için son renk.
+'ndaki İkinci renk gradyanının son rengi.
 
 *bHorz*<br/>
-[içinde] Yatay veya dikey degrade `Fill4ColorsGradient` renklendirilip renklendirmediğini gösteren boolean parametresi. TRUE yatay bir degradegösterir.
+'ndaki `Fill4ColorsGradient` Renklerin yatay veya dikey degradeyle ilgili olduğunu belirten bir Boole parametresi. TRUE, yatay degradeyi gösterir.
 
-*nYüzde*<br/>
-[içinde] 0-100 arası bir sonda. Bu değer, ilk renk degradesi ile doldurmak için dikdörtgenin yüzdesini gösterir.
+*Nyüzde*<br/>
+'ndaki 0-100 'den bir tamsayı. Bu değer, ilk renk degradesiyle doldurulacak dikdörtgenin yüzdesini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dikdörtgen iki renk degradesi ile doldurulduğunda, *bHorz*değerine bağlı olarak, ya birbiri ya da yan yana yer alır. Her renk degradesi [CDrawingManager::FillGradient](#fillgradient)yöntemi ile bağımsız olarak hesaplanır.
+Bir dikdörtgen iki renk gradyanına göre dolduğunda, *bHorz*değerine bağlı olarak, bunlar birbirlerinin üzerinde veya yanında bulunur. Her renk gradyanı, [CDrawingManager:: FillGradient](#fillgradient)yöntemiyle bağımsız olarak hesaplanır.
 
-Bu yöntem, *nYüzde* 0'dan az veya 100'den fazlaysa bir sedama hatası oluşturur.
+Bu yöntem, *nPercentage* 0 ' dan küçükse veya 100 ' den büyükse bir onaylama hatası oluşturur.
 
-## <a name="cdrawingmanagerfillgradient"></a><a name="fillgradient"></a>CDrawingManager::FillGradient
+## <a name="cdrawingmanagerfillgradient"></a><a name="fillgradient"></a> CDrawingManager:: FillGradient
 
-Dikdörtgen bir alanı belirtilen renk degradesiyle doldurur.
+Dikdörtgen bir alanı belirtilen renk degradeyle doldurur.
 
 ```cpp
 void FillGradient(
@@ -454,32 +464,32 @@ void FillGradient(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Doldurulacak dikdörtgen alan.
+'ndaki Doldurulacak dikdörtgen alan.
 
 *colorStart*<br/>
-[içinde] Degrade için ilk renk.
+'ndaki Gradyanın ilk rengi.
 
-*colorFinish*<br/>
-[içinde] Degrade için son renk.
+*Colorson*<br/>
+'ndaki Degradenin son rengi.
 
 *bHorz*<br/>
-[içinde] Yatay veya dikey degrade çizip `FillGradient` çizmemesi gerektiğini belirten bir Boolean parametresi.
+'ndaki `FillGradient` Yatay veya dikey gradyan çizip çizmeyeceğini belirten bir Boolean parametresi.
 
 *nStartFlatPercentage*<br/>
-[içinde] Degradeyi başlatmadan önce `FillGradient` *colorStart* ile dolan dikdörtgenyüzdesi.
+'ndaki `FillGradient` Degradenin *başlamasından önce colorStart* ile başlayan dikdörtgenin yüzdesi.
 
-*nEndFlatPercentage*<br/>
-[içinde] Degradeyi bitirdikten sonra `FillGradient` *colorFinish* ile dolan dikdörtgenyüzdesi.
+*Nendyatayyüzdesi*<br/>
+'ndaki `FillGradient` Degradeyi tamamladıktan sonra *colorbitle* birlikte dolduran dikdörtgenin yüzdesi.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın yönteminin `FillGradient` nasıl `CDrawingManager` kullanılacağını göstermektedir. Bu kod parçacığı MS Office [2007 Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını gösterir `FillGradient` `CDrawingManager` . Bu kod parçacığı, [MS Office 2007 demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#12](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_2.cpp)]
 
-## <a name="cdrawingmanagerfillgradient2"></a><a name="fillgradient2"></a>CDrawingManager::FillGradient2
+## <a name="cdrawingmanagerfillgradient2"></a><a name="fillgradient2"></a> CDrawingManager:: FillGradient2
 
-Dikdörtgen bir alanı belirli bir renk degradesiyle doldurur.
+Dikdörtgen bir alanı belirtilen renk degradeyle doldurur.
 
 ```cpp
 void FillGradient2 (
@@ -492,30 +502,30 @@ void FillGradient2 (
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Doldurulacak dikdörtgen alan.
+'ndaki Doldurulacak dikdörtgen alan.
 
 *colorStart*<br/>
-[içinde] Degradenin ilk rengi.
+'ndaki Gradyanın ilk rengi.
 
-*colorFinish*<br/>
-[içinde] Degradenin son rengi.
+*Colorson*<br/>
+'ndaki Degradenin son rengi.
 
-*nAçı*<br/>
-[içinde] 0 ile 360 arasında bir sonda. Bu parametre renk degradesinin yönünü belirtir.
+*Naçı*<br/>
+'ndaki 0 ile 360 arasında bir tamsayı. Bu parametre, renk gradyanının yönünü belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk degradesinin yönünü belirtmek için *nAngle'yi* kullanın. Renk degradesinin yönünü belirttiğiniz zaman, renk degradesinin nerede başlayacağını da belirtirsiniz. *nAngle* için 0 değeri, degradenin dikdörtgenin üstünden başladığını gösterir. *nAngle* arttıkça, degradenin başlangıç konumu açıya göre saat yönünün tersine hareket eder.
+Renk gradyanının yönünü belirtmek için *naçısını* kullanın. Renk gradyanının yönünü belirttiğinizde, renk gradyanının nerede başlayacağını de belirtirsiniz. *Naçılı* için 0 değeri, degradenin dikdörtgenin en üstünden başladığını gösterir. *Naçılı* arttıkça, degradenin başlangıç konumu, açıya göre saat yönünde bir yönde gider.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın yönteminin `FillGradient2` nasıl `CDrawingManager` kullanılacağını göstermektedir. Bu kod snippet [Yeni Denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını gösterir `FillGradient2` `CDrawingManager` . Bu kod parçacığı, [Yeni denetimler örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_NewControls#37](../../mfc/reference/codesnippet/cpp/cdrawingmanager-class_3.cpp)]
 
-## <a name="cdrawingmanagergrayrect"></a><a name="grayrect"></a>CDrawingManager::GrayRect
+## <a name="cdrawingmanagergrayrect"></a><a name="grayrect"></a> CDrawingManager:: Grirect
 
-Dikdörtgeni belirtilen gri renkle doldurur.
+Bir dikdörtgeni belirtilen gri renkle doldurur.
 
 ```
 BOOL GrayRect(
@@ -528,28 +538,28 @@ BOOL GrayRect(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Doldurulacak dikdörtgen alan.
+'ndaki Doldurulacak dikdörtgen alan.
 
-*nYüzde*<br/>
-[içinde] Dikdörtgende istediğiniz gri yüzdesi.
+*Nyüzde*<br/>
+'ndaki Dikdörtgende istediğiniz gri yüzdesi.
 
-*clrŞeffaf*<br/>
-[içinde] Saydam renk.
+*clrTransparent*<br/>
+'ndaki Saydam renk.
 
-*clrDevre dışı*<br/>
-[içinde] *nPercentage* -1 olarak ayarlanmışsa, bu yöntemin doygunluk için kullandığı renk.
+*clrDisabled*<br/>
+'ndaki *NPercentage* değeri-1 olarak ayarlandığında, bu yöntemin de serbest doyma için kullandığı renk.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olsaydı DOĞRU; aksi takdirde YANLIŞ.
+Yöntem başarılı olduysa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-parametre *nPercentage*için, daha düşük bir değer daha koyu bir rengi gösterir.
+*NPercentage*parametresi için, daha küçük bir değer daha koyu bir renk gösterir.
 
-*nPercentage* için maksimum değer 200'dür. 200'den büyük bir değer dikdörtgenin görünümünü değiştirmez. Değer -1 ise, bu yöntem dikdörtgenin doygunluğu sınırlamak için *clrDisabled* kullanır.
+*NPercentage* için maksimum değer 200 ' dir. 200 değerinden büyük bir değer dikdörtgenin görünümünü değiştirmez. Değer-1 ise, bu yöntem dikdörtgenin doygunluğunu sınırlamak için *clrDisabled* kullanır.
 
-## <a name="cdrawingmanagerhighlightrect"></a><a name="highlightrect"></a>CDrawingManager::HighlightRect
+## <a name="cdrawingmanagerhighlightrect"></a><a name="highlightrect"></a> CDrawingManager:: HighlightRect
 
 Dikdörtgen bir alanı vurgular.
 
@@ -565,33 +575,33 @@ BOOL HighlightRect(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Vurgulanması gereken dikdörtgen bir alan.
+'ndaki Vurgulanacak dikdörtgen bir alan.
 
-*nYüzde*<br/>
-[içinde] Vurgunun ne kadar saydam olması gerektiğini gösteren bir yüzde.
+*Nyüzde*<br/>
+'ndaki Vurgulamanın saydam olduğunu gösteren bir yüzde.
 
-*clrŞeffaf*<br/>
-[içinde] Saydam renk.
+*clrTransparent*<br/>
+'ndaki Saydam renk.
 
-*nHoşgörü*<br/>
-[içinde] Renk toleransını gösteren 0 ile 255 arasında bir arayış.
+*ntoleransı*<br/>
+'ndaki Renk toleransını gösteren 0 ile 255 arasında bir tamsayı.
 
 *clrBlend*<br/>
-[içinde] Karıştırma için temel renk.
+'ndaki Karıştırma için temel renk.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
+Yöntem başarılı olursa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nPercentage* 0 ile 99 `HighlightRect` arasındaysa, alfa karıştırma algoritmasını kullanır. Alfa karıştırma hakkında daha fazla bilgi için [Alfa Karıştırma Çizgileri ve Dolgular'a](/dotnet/framework/winforms/advanced/alpha-blending-lines-and-fills)bakın. *nPercentage* -1 ise, bu yöntem varsayılan vurgu düzeyini kullanır. *nPercentage* 100 ise, bu yöntem hiçbir şey yapmaz ve TRUE döndürür.
+*NPercentage* değeri 0 ile 99 arasında ise `HighlightRect` Alfa karıştırma algoritmasını kullanır. Alfa karıştırma hakkında daha fazla bilgi için bkz. [Alfa karıştırma çizgileri ve dolguları](/dotnet/framework/winforms/advanced/alpha-blending-lines-and-fills). Eğer *nPercentage* değeri-1 ise, bu yöntem varsayılan vurgulama düzeyini kullanır. Eğer *nPercentage* 100 ise, bu yöntem hiçbir şey yapmaz ve true değerini döndürür.
 
-Yöntem, dikdörtgen alanı vurgulamak için olup olmadığını belirlemek için parametre *nTolerance* kullanır. Dikdörtgeni vurgulamak için, uygulamanızın arka plan rengi ile *clrTransparent* arasındaki fark, her renk bileşenindeki (kırmızı, yeşil ve mavi) *nTolerance'dan* daha az olmalıdır.
+Yöntemi, dikdörtgen alanın vurgulanmasını öğrenmek için *ntoleransı* parametresini kullanır. Dikdörtgeni vurgulamak için, uygulamanızın arka plan rengi ile *clrTransparent* arasındaki fark her bir renk bileşeni (kırmızı, yeşil ve mavi) Için *ntoleranstan* az olmalıdır.
 
-## <a name="cdrawingmanagerhlstorgb_one"></a><a name="hlstorgb_one"></a>CDrawingManager::HLStoRGB_ONE
+## <a name="cdrawingmanagerhlstorgb_one"></a><a name="hlstorgb_one"></a> CDrawingManager:: HLStoRGB_ONE
 
-Bir rengi HLS gösteriminden RGB temsiline dönüştürür.
+Bir HLS gösteriminden bir rengi RGB gösterimine dönüştürür.
 
 ```
 static COLORREF __stdcall HLStoRGB_ONE(
@@ -603,27 +613,27 @@ static COLORREF __stdcall HLStoRGB_ONE(
 ### <a name="parameters"></a>Parametreler
 
 *H*<br/>
-[içinde] Rengin tonunu temsil eden 0 ile 1 arasındaki bir sayı.
+'ndaki Rengin tonunu temsil eden 0 ile 1 arasında bir sayı.
 
 *L*<br/>
-[içinde] 0 ile 1 arasındaki renk parlaklığını gösteren bir sayı.
+'ndaki Rengin parlaklığını gösteren 0 ile 1 arasında bir sayı.
 
 *S*<br/>
-[içinde] Renk doygunluğu gösteren 0 ve 1 arasındaki bir sayı.
+'ndaki Renge yönelik doygunluğu gösteren 0 ile 1 arasında bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HLS renginin RGB temsili sağlanmıştır.
+Belirtilen HLS renginin RGB temsili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için [Bkz. Renk.](/windows/win32/uxguide/vis-color)
+Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk, ve parlaklık) ya da RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için bkz. [Color](/windows/win32/uxguide/vis-color).
 
-Bu yöntem `CDrawingManager::HLStoRGB_TWO` ve yöntem aynı işlemi gerçekleştirmek, ancak *H* parametresi için farklı değerler gerektirir. Bu yöntemde, *H* dairenin bir yüzdesidir. `CDrawingManager::HLStoRGB_TWO` Yöntemde, *H* 0 ve 360 arasında bir derece değeri, her ikisi de kırmızı temsil ediyor. Örneğin, `HLStoRGB_ONE` *, H* için 0,25 değeri 90 ile 90 `HLStoRGB_TWO`değerine eşdeğerdir.
+Bu yöntem ve `CDrawingManager::HLStoRGB_TWO` yöntemi aynı işlemi gerçekleştirir, ancak *H* parametresi için farklı değerler gerektirir. Bu yöntemde *H* , dairenin bir yüzdesidir. `CDrawingManager::HLStoRGB_TWO`Yönteminde, *H* , her ikisi de Red temsil eden 0 ile 360 arasında bir derece değeridir. Örneğin, ile `HLStoRGB_ONE` *H* için 0,25 değeri, 90 değerine eşdeğerdir `HLStoRGB_TWO` .
 
-## <a name="cdrawingmanagerhlstorgb_two"></a><a name="hlstorgb_two"></a>CDrawingManager::HLStoRGB_TWO
+## <a name="cdrawingmanagerhlstorgb_two"></a><a name="hlstorgb_two"></a> CDrawingManager:: HLStoRGB_TWO
 
-Bir rengi HLS gösteriminden RGB temsiline dönüştürür.
+Bir HLS gösteriminden bir rengi RGB gösterimine dönüştürür.
 
 ```
 static COLORREF __stdcall HLStoRGB_TWO(
@@ -635,27 +645,27 @@ static COLORREF __stdcall HLStoRGB_TWO(
 ### <a name="parameters"></a>Parametreler
 
 *H*<br/>
-[içinde] Rengin tonunu temsil eden 0 ile 360 arasındaki bir sayı.
+'ndaki Renk için tonu temsil eden 0 ile 360 arasında bir sayı.
 
 *L*<br/>
-[içinde] 0 ile 1 arasındaki renk parlaklığını gösteren bir sayı.
+'ndaki Rengin parlaklığını gösteren 0 ile 1 arasında bir sayı.
 
 *S*<br/>
-[içinde] Renk doygunluğu gösteren 0 ve 1 arasındaki bir sayı.
+'ndaki Renge yönelik doygunluğu gösteren 0 ile 1 arasında bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HLS renginin RGB temsili sağlanmıştır.
+Belirtilen HLS renginin RGB temsili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için [Bkz. Renk.](/windows/win32/uxguide/vis-color)
+Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk, ve parlaklık) ya da RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için bkz. [Color](/windows/win32/uxguide/vis-color).
 
-Bu yöntem ve [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) yöntemi aynı işlemi gerçekleştirir, ancak *H* parametresi için farklı değerler gerektirir. Bu yöntemde, *H* 0 ve 360 arasında bir derece değeri, her ikisi de kırmızı temsil ediyor. [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) yönteminde, *H* dairenin yüzdesidir. Örneğin, `HLStoRGB_ONE` *, H* için 0,25 değeri 90 ile 90 `HLStoRGB_TWO`değerine eşdeğerdir.
+Bu yöntem ve [CDrawingManager:: HLStoRGB_ONE](#hlstorgb_one) yöntemi aynı işlemi gerçekleştirir, ancak *H* parametresi için farklı değerler gerektirir. Bu yöntemde *H* , her ikisi de Red temsil eden 0 ile 360 arasında bir derece değeridir. [CDrawingManager:: HLStoRGB_ONE](#hlstorgb_one) yönteminde *H* , dairenin bir yüzdesidir. Örneğin, ile `HLStoRGB_ONE` *H* için 0,25 değeri, 90 değerine eşdeğerdir `HLStoRGB_TWO` .
 
-## <a name="cdrawingmanagerhsvtorgb"></a><a name="hsvtorgb"></a>CDrawingManager::HSVtoRGB
+## <a name="cdrawingmanagerhsvtorgb"></a><a name="hsvtorgb"></a> CDrawingManager:: HSVtoRGB
 
-Bir rengi HSV gösteriminden RGB gösterimine dönüştürür.
+Bir HSV gösteriminden bir rengi RGB gösterimine dönüştürür.
 
 ```
 static COLORREF __stdcall HSVtoRGB(
@@ -666,24 +676,26 @@ static COLORREF __stdcall HSVtoRGB(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*H*|[içinde] Rengin tonunu gösteren 0 ile 360 arasındaki bir sayı.|
-|*S*|[içinde] Renk doygunluğu gösteren 0 ve 1 arasındaki bir sayı.|
-|*V*|[içinde] Rengin değerini gösteren 0 ile 1 arasındaki bir sayı.|
+*Olsun*\
+'ndaki Rengin tonunu gösteren 0 ile 360 arasında bir sayı.
+
+*Malar*\
+'ndaki Renge yönelik doygunluğu gösteren 0 ile 1 arasında bir sayı.
+
+*Yönetim*\
+'ndaki Rengin değerini gösteren 0 ile 1 arasında bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HSV renginin RGB gösterimi sağlanmıştır.
+Belirtilen HSV renginin RGB temsili.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için [Bkz. Renk.](/windows/win32/uxguide/vis-color)
+Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk, ve parlaklık) ya da RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için bkz. [Color](/windows/win32/uxguide/vis-color).
 
-## <a name="cdrawingmanagerhuetorgb"></a><a name="huetorgb"></a>CDrawingManager::HuetoRGB
+## <a name="cdrawingmanagerhuetorgb"></a><a name="huetorgb"></a> CDrawingManager:: HuetoRGB
 
-Ton değerini kırmızı, yeşil veya mavi bileşene dönüştürür.
+Bir ton değerini kırmızı, yeşil veya mavi bir bileşene dönüştürür.
 
 ```
 static double __stdcall HuetoRGB(
@@ -699,41 +711,41 @@ static BYTE __stdcall HueToRGB(
 
 ### <a name="parameters"></a>Parametreler
 
-*m1*<br/>
-[içinde] Bkz. Açıklamalar.
+*M1*<br/>
+'ndaki Bkz. açıklamalar.
 
 *m2*<br/>
-[içinde] Bkz. Açıklamalar.
+'ndaki Bkz. açıklamalar.
 
-*H*<br/>
-[içinde] Bkz. Açıklamalar.
+*olsun*<br/>
+'ndaki Bkz. açıklamalar.
 
 *rm1*<br/>
-[içinde] Bkz. Açıklamalar.
+'ndaki Bkz. açıklamalar.
 
 *rm2*<br/>
-[içinde] Bkz. Açıklamalar.
+'ndaki Bkz. açıklamalar.
 
-*Rh*<br/>
-[içinde] Bkz. Açıklamalar.
+*RH*<br/>
+'ndaki Bkz. açıklamalar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sağlanan ton için tek tek kırmızı, yeşil veya mavi bileşen.
+Belirtilen ton için tek bir kırmızı, yeşil veya mavi bileşen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CDrawingManager` sınıfın hsv veya HSL gösterimindeki bir rengin tek tek kırmızı, yeşil ve mavi bileşenlerini hesaplamak için kullandığı yardımcı yöntemdir. Bu yöntem, doğrudan programcı tarafından çağrılacak şekilde tasarlanmaz. Giriş parametreleri dönüştürme algoritması bağlı değerlerdir.
+Bu yöntem, `CDrawingManager` BIR HSV veya HSL gösteriminde bir rengin tek tek kırmızı, yeşil ve mavi bileşenlerini hesaplamak için sınıfın kullandığı yardımcı bir yöntemdir. Bu yöntem, programcı tarafından doğrudan çağrılacak şekilde tasarlanmamıştır. Giriş parametreleri, dönüştürme algoritmasına bağlı değerlerdir.
 
-HSV veya HSL rengini RGB gösterimine dönüştürmek için aşağıdaki yöntemlerden birini arayın:
+Bir HSV veya HSL rengini bir RGB gösterimine dönüştürmek için aşağıdaki yöntemlerden birini çağırın:
 
-- [CDrawingManager::HSVtoRGB](#hsvtorgb)
+- [CDrawingManager:: HSVtoRGB](#hsvtorgb)
 
-- [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one)
+- [CDrawingManager:: HLStoRGB_ONE](#hlstorgb_one)
 
-- [CDrawingManager::HLStoRGB_TWO](#hlstorgb_two)
+- [CDrawingManager:: HLStoRGB_TWO](#hlstorgb_two)
 
-## <a name="cdrawingmanagermirrorrect"></a><a name="mirrorrect"></a>CDrawingManager::MirrorRect
+## <a name="cdrawingmanagermirrorrect"></a><a name="mirrorrect"></a> CDrawingManager:: MirrorRect
 
 Dikdörtgen bir alanı çevirir.
 
@@ -746,18 +758,18 @@ void MirrorRect(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-[içinde] Çevirmek için alanın sınırlayıcı dikdörtgen.
+'ndaki Ters çevrilecek alanın sınırlayıcı dikdörtgeni.
 
 *bHorz*<br/>
-[içinde] Dikdörtgenin yatay veya dikey olarak mı takla attığını gösteren boolean parametresi.
+'ndaki Dikdörtgenin yatay mı yoksa dikey mi çevrileceğini belirten bir Boole parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CDrawingManager` sınıfın sahip olduğu aygıt bağlamının herhangi bir alanını çevirebilir. *bHorz* TRUE olarak ayarlanmışsa, bu yöntem alanı yatay olarak çevirir. Aksi takdirde, alanı dikey olarak çevirir.
+Bu yöntem, sınıf tarafından sahip olunan cihaz bağlamının herhangi bir alanını çevirebilir `CDrawingManager` . *BHorz* doğru olarak ayarlandıysa, bu yöntem alanı yatay olarak çevirir. Aksi takdirde, alanı dikey olarak çevirir.
 
-## <a name="cdrawingmanagerpixelalpha"></a><a name="pixelalpha"></a>CDrawingManager::PixelAlpha
+## <a name="cdrawingmanagerpixelalpha"></a><a name="pixelalpha"></a> CDrawingManager::P ıxelalpha
 
-Yarı saydam bir pikseliçin son rengi hesaplar.
+Yarı saydam piksel için son rengi hesaplar.
 
 ```
 static COLORREF __stdcall PixelAlpha(
@@ -779,22 +791,22 @@ static COLORREF __stdcall PixelAlpha(
 ### <a name="parameters"></a>Parametreler
 
 *srcPixel*<br/>
-[içinde] Pikselin ilk rengi.
+'ndaki Pikselin ilk rengi.
 
-*Yüzde*<br/>
-[içinde] Saydamlık yüzdesini temsil eden 0 ile 100 arasındaki bir sayı. 100 değeri, ilk rengin tamamen saydam olduğunu gösterir.
+*yüzdeyi*<br/>
+'ndaki Saydamlığın yüzdesini temsil eden 0 ile 100 arasında bir sayı. 100 değeri, ilk rengin tamamen saydam olduğunu gösterir.
 
-*yüzdeR*<br/>
-[içinde] Kırmızı bileşen için saydamlık yüzdesini temsil eden 0 ile 100 arasındaki bir sayı.
+*Yüztr*<br/>
+'ndaki Kırmızı bileşen için saydamlık yüzdesini temsil eden 0 ile 100 arasında bir sayı.
 
-*yüzdeG*<br/>
-[içinde] Yeşil bileşen için saydamlık yüzdesini temsil eden 0 ile 100 arasındaki bir sayı.
+*percentG*<br/>
+'ndaki Yeşil bileşen için saydamlık yüzdesini temsil eden 0 ile 100 arasında bir sayı.
 
-*yüzdeB*<br/>
-[içinde] Mavi bileşen için saydamlık yüzdesini temsil eden 0 ile 100 arasındaki bir sayı.
+*Yüztb*<br/>
+'ndaki Mavi bileşenin saydamlık yüzdesini temsil eden 0 ile 100 arasında bir sayı.
 
-*dstPiksel*<br/>
-[içinde] Pikselin temel rengi.
+*dstPixel*<br/>
+'ndaki Pikselin taban rengi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -802,13 +814,13 @@ Yarı saydam piksel için son renk.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, yarı saydam bit eşlemlerini boyamak için yardımcı bir sınıftır ve doğrudan programcı tarafından çağrılacak şekilde tasarlanmamıştır.
+Bu, yarı saydam bit eşlemler renklendirmesi için yardımcı sınıftır ve doğrudan programcı tarafından çağrılacak şekilde tasarlanmamıştır.
 
-*DstPixel*olan yöntemin sürümünü kullandığınızda, son renk *dstPixel* ve *srcPixel*bir arada . *SrcPixel* renk *dstPixel*temel renk üzerinde kısmen saydam renktir.
+*DstPixel*içeren yöntemin sürümünü kullandığınızda, son renk *dstPixel* ve *srcPixel*'in bir birleşimidir. *SrcPixel* rengi, *dstPixel*'in temel rengi üzerinde kısmen saydam bir renktir.
 
-## <a name="cdrawingmanagerprepareshadowmask"></a><a name="prepareshadowmask"></a>CDrawingManager::PrepareShadowMask
+## <a name="cdrawingmanagerprepareshadowmask"></a><a name="prepareshadowmask"></a> CDrawingManager::P repareShadowMask
 
-Gölge olarak kullanılabilecek bir bit eşlemi oluşturur.
+Gölge olarak kullanılabilecek bir bit eşlem oluşturur.
 
 ```
 static HBITMAP __stdcall PrepareShadowMask (
@@ -820,29 +832,29 @@ static HBITMAP __stdcall PrepareShadowMask (
 
 ### <a name="parameters"></a>Parametreler
 
-*nDerinlik*<br/>
-[içinde] Gölgenin genişliği ve yüksekliği.
+*nDepth*<br/>
+'ndaki Gölgenin genişliği ve yüksekliği.
 
 *clrBase*<br/>
-[içinde] Gölgenin rengi.
+'ndaki Gölgenin rengi.
 
-*iMinParlaklık*<br/>
-[içinde] Gölgenin minimum parlaklığı.
+*ımınparlaklık*<br/>
+'ndaki Gölgenin minimum parlaklığı.
 
-*iMaxParlaklık*<br/>
-[içinde] Gölgenin maksimum parlaklığı.
+*ımaxparlaklık*<br/>
+'ndaki Gölgenin maksimum parlaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa oluşturulan bit eşlemi için bir tutamaç; aksi takdirde NULL.
+Bu yöntem başarılı olursa oluşturulan bit eşlem için bir tanıtıcı; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nDepth* 0 olarak ayarlanırsa, bu yöntem çıkar ve NULL döndürür. *nDepth* 3'ten küçükse, gölgenin genişliği ve yüksekliği 3 piksel olarak ayarlanır.
+Eğer *nDepth* değeri 0 olarak ayarlandıysa, bu yöntem çıkar ve null döndürür. *NDepth* 3 ' ten küçükse, gölgenin genişliği ve yüksekliği 3 piksel olarak ayarlanır.
 
-## <a name="cdrawingmanagerrgbtohsl"></a><a name="rgbtohsl"></a>CDrawingManager::RGBtoHSL
+## <a name="cdrawingmanagerrgbtohsl"></a><a name="rgbtohsl"></a> CDrawingManager:: RGBtoHSL
 
-Kırmızı, yeşil ve mavi (RGB) gösteriminden rengi ton, doygunluk ve hafiflik (HSL) gösterimine dönüştürür.
+Kırmızı, yeşil ve mavi (RGB) gösteriminden bir rengi bir ton, doygunluk ve açıklık (HSL) gösterimine dönüştürür.
 
 ```
 static void __stdcall RGBtoHSL(
@@ -854,23 +866,27 @@ static void __stdcall RGBtoHSL(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Rgb*|[içinde] RGB değerlerindeki renk.|
-|*H*|[çıkış] Yöntemin rengin tonunu depoladığı bir çift işaretçi.|
-|*S*|[çıkış] Yöntemin renk doygunluğu depoladığı bir çift için işaretçi.|
-|*L*|[çıkış] Yöntemin renk için açıklığı depoladığı bir çift işaretçi.|
+*'ye*\
+'ndaki RGB değerlerinde renk.
+
+*Olsun*\
+dışı Yöntemin renk için tonu depoladığı bir Double için işaretçi.
+
+*Malar*\
+dışı Yöntemin, renk için doygunluğu depoladığı bir Double işaretçisi.
+
+*Girişindeki*\
+dışı Yöntemin rengin açıklık sakladığı bir Double için işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için [Bkz. Renk.](/windows/win32/uxguide/vis-color)
+Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk, ve parlaklık) ya da RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için bkz. [Color](/windows/win32/uxguide/vis-color).
 
-*H* için döndürülen değer, 0 ile 1 arasında bir kesir olarak temsil edilir ve hem 0 hem de 1 kırmızıyı temsil edilir. *S* ve *L* için döndürülen değerler 0 ile 1 arasındaki sayılardır.
+*H* için döndürülen değer 0 ile 1 arasında, her ikisi de 0 ve 1 arasında bir kesir olarak temsil edilir. *S* ve *L* için döndürülen değerler 0 ile 1 arasında sayılardır.
 
-## <a name="cdrawingmanagerrgbtohsv"></a><a name="rgbtohsv"></a>CDrawingManager::RGBtoHSV
+## <a name="cdrawingmanagerrgbtohsv"></a><a name="rgbtohsv"></a> CDrawingManager:: RGBtoHSV
 
-Bir rengi RGB gösteriminden HSV temsiline dönüştürür.
+Bir RGB gösteriminden bir HSV gösterimine bir renk dönüştürür.
 
 ```
 static void __stdcall RGBtoHSV(
@@ -882,27 +898,27 @@ static void __stdcall RGBtoHSV(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rgb*<br/>
-[içinde] RGB gösteriminde dönüştürülecek renk.
+*'ye*<br/>
+'ndaki Bir RGB gösteriminde dönüştürülecek renk.
 
 *H*<br/>
-[çıkış] Bu yöntemin renk için ortaya çıkan tonunu depoladığı bir çift işaretçi.
+dışı Bu yöntemin renk için elde edilen tonu depoladığı bir Double işaretçisi.
 
 *S*<br/>
-[çıkış] Bu yöntemin renk için ortaya çıkan doygunluğu depoladığı bir çift işaretçi.
+dışı Bu yöntemin, renk için elde edilen doygunluğu depoladığı bir Double işaretçisi.
 
-*V*<br/>
-[çıkış] Bu yöntemin renk için ortaya çıkan değeri depoladığı bir çift işaretçi.
+*Yönetim*<br/>
+dışı Bu yöntemin, renk için elde edilen değeri depoladığı bir Double işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk ve parlaklık) veya RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için [Bkz. Renk.](/windows/win32/uxguide/vis-color)
+Bir renk HSV (ton, doygunluk ve değer), HSL (ton, doygunluk, ve parlaklık) ya da RGB (kırmızı, yeşil ve mavi) olarak temsil edilebilir. Rengin farklı gösterimleri hakkında daha fazla bilgi için bkz. [Color](/windows/win32/uxguide/vis-color).
 
-*H* için döndürülen değer, 0 ve 360 arasında 0 ve 360 arasında bir sayıdır. *S* ve *V'nin* dönüş değerleri 0 ile 1 arasındaki sayılardır.
+*H* için döndürülen değer 0 ile 360 arasında her ikisi de 0 ve 360 ' nin kırmızı olduğunu belirten bir sayıdır. *S* ve *V* için dönüş değerleri 0 ile 1 arasında sayılardır.
 
-## <a name="cdrawingmanagersetalphapixel"></a><a name="setalphapixel"></a>CDrawingManager::SetAlphaPixel
+## <a name="cdrawingmanagersetalphapixel"></a><a name="setalphapixel"></a> CDrawingManager:: Setharfler piksel
 
-Saydam pikseli bit eşlemi renklendirin.
+Bit eşlemdeki saydam bir piksel renkler.
 
 ```
 static void __stdcall SetAlphaPixel(
@@ -918,39 +934,39 @@ static void __stdcall SetAlphaPixel(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBits*<br/>
-[içinde] Bit eşlemi için bit değerlerine işaretçi.
+*pBits 'ler*<br/>
+'ndaki Bit eşlem için bit değerlerine yönelik bir işaretçi.
 
 *Rect*<br/>
-[içinde] Uygulamanızda dikdörtgen bir alan. Çizim yöneticisi bu alanın altına ve sağına bir gölge çizer.
+'ndaki Uygulamanızdaki dikdörtgen bir alan. Çizim Yöneticisi bu alanın sağ altına ve sağına bir gölge çizer.
 
-*X*<br/>
-[içinde] Pikselin yatay koordinatı renk.
+*x*<br/>
+'ndaki Pikselin renge yatay koordinatı.
 
-*Y*<br/>
-[içinde] Pikselin renk dikey koordinatı.
+*Iz*<br/>
+'ndaki Pikselin renge göre dikey koordinatı.
 
-*Yüzde*<br/>
-[içinde] Şeffaflık yüzdesi.
+*yüzdeyi*<br/>
+'ndaki Saydamlığın yüzdesi.
 
 *iShadowSize*<br/>
-[içinde] Gölgenin genişliği ve yüksekliği.
+'ndaki Gölgenin genişliği ve yüksekliği.
 
 *clrBase*<br/>
-[içinde] Gölgenin rengi.
+'ndaki Gölgenin rengi.
 
 *bIsRight*<br/>
-[içinde] Hangi pikselin renklendirdiğini gösteren boolean parametresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+'ndaki Hangi pikselin renge işaret edildiğini belirten bir Boole parametresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [CDrawingManager::DrawShadow](#drawshadow) yöntemi tarafından kullanılan bir yardımcı yöntemdir. Bir gölge çizmek istiyorsanız, bunun yerine `CDrawingManager::DrawShadow` aramanızı öneririz.
+Bu yöntem, [CDrawingManager::D rawShadow](#drawshadow) yöntemi tarafından kullanılan bir yardımcı yöntemdir. Bunun yerine bir gölge çizmek istiyorsanız, çağrısı yapmanız önerilir `CDrawingManager::DrawShadow` .
 
-*bIsRight* TRUE olarak ayarlanmışsa, renk *pikseli rektsağ*kenarından *x* piksel ölçülür. FALSE ise, renk *pikseli rekt*sol kenarından *x* piksel ölçülür.
+*Bıright* doğru olarak ayarlandıysa, rengin piksel sağ kenarından *x* piksel olarak *ölçülür.* YANLıŞ ise, rengin piksel sol kenarından *x* piksel *ölçülür.*
 
-## <a name="cdrawingmanagersetpixel"></a><a name="setpixel"></a>CDrawingManager::SetPixel
+## <a name="cdrawingmanagersetpixel"></a><a name="setpixel"></a> CDrawingManager:: SetPixel
 
-Bit eşlemindeki tek bir pikseli belirtilen renge değiştirir.
+Bit eşlemdeki tek bir pikseli belirtilen renge dönüştürür.
 
 ```
 static void __stdcall SetPixel(
@@ -964,19 +980,27 @@ static void __stdcall SetPixel(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*pBits*|[içinde] Bit eşleminin bit değerlerine işaretçi.|
-|*Cx*|[içinde] Bit eşleminin toplam genişliği.|
-|*Cy*|[içinde] Bit haritasının toplam yüksekliği.|
-|*X*|[içinde] Değiştirmek için bit eşönündepikselin x-koordinatı.|
-|*Y*|[içinde] Değiştirmek için bit eşlemindeki pikselin y-koordinatı.|
-|*color*|[içinde] Sağlanan koordinatlar tarafından tanımlanan piksel için yeni renk.|
+*pBits 'ler*\
+'ndaki Bit eşlemin bit değerlerine yönelik bir işaretçi.
 
-## <a name="cdrawingmanagersmartmixcolors"></a><a name="smartmixcolors"></a>CDrawingManager::SmartMixColors
+*yazmaç*\
+'ndaki Bit eşlemin toplam genişliği.
 
-Ağırlıklı orana göre iki rengi birleştirir.
+*lı*\
+'ndaki Bit eşlemin toplam yüksekliği.
+
+*sayı*\
+'ndaki Bit eşlemdeki, değiştirilecek pikselin x koordinatı.
+
+*Iz*\
+'ndaki Bit eşlemdeki, değiştirilecek pikselin y koordinatı.
+
+*Renk*\
+'ndaki Sağlanan koordinatlar tarafından tanımlanan pikselin yeni rengi.
+
+## <a name="cdrawingmanagersmartmixcolors"></a><a name="smartmixcolors"></a> CDrawingManager:: SmartMixColors
+
+İki rengi ağırlıklı oranına göre birleştirir.
 
 ```
 static COLORREF __stdcall SmartMixColors(
@@ -989,28 +1013,34 @@ static COLORREF __stdcall SmartMixColors(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*renk1*|[içinde] İlk renk karışır.|
-|*renk2*|[içinde] Karıştırılacak ikinci renk.|
-|*dblLumRatio*|[içinde] Yeni rengin parlaklığı oranı. `SmartMixColors`son rengi belirlemeden önce karışık rengin parlaklığını bu oran ile çarpar.|
-|*k1*|[içinde] İlk renk için ağırlıklı oran.|
-|*k2*|[içinde] İkinci renk için ağırlıklı oran.|
+*color1*\
+'ndaki Karıştırılacak ilk renk.
+
+*color2*\
+'ndaki Karıştırılacak ikinci renk.
+
+*dblLumRatio*\
+'ndaki Yeni rengin parlaklık oranı. `SmartMixColors` son rengi belirlemekten önce, karışık rengin parlaklığını bu orandan çarpar.
+
+*K1*\
+'ndaki İlk rengin ağırlıklı oranı.
+
+*K2*\
+'ndaki İkinci rengin ağırlıklı oranı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen renklerin ağırlıklı bir karışımını temsil eden bir renk.
+Sağlanan renklerin ağırlıklı karışımını temsil eden bir renk.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*K1* veya *k2* sıfırdan küçükse bu yöntem bir hata ile başarısız olur. Bu parametrelerin her ikisi de 0 `RGB(0, 0, 0)`olarak ayarlanırsa, yöntem döndürür.
+*K1* veya *K2* sıfırdan küçükse bu yöntem hata ile başarısız olur. Bu parametrelerin her ikisi de 0 olarak ayarlandıysa, yöntemi döndürür `RGB(0, 0, 0)` .
 
-Ağırlıklı oran aşağıdaki formülle hesaplanır: (color1 \* k1 \* + color2 k2)/(k1 + k2). Ağırlıklı oran belirlendikten sonra, yöntem karışık renk için parlaklık hesaplar. Daha sonra *dblLumRatio*ile parlaklık çarpar. Değer 1,0'dan büyükse, yöntem karışık rengin parlaklığını yeni değere ayarlar. Aksi takdirde, parlaklık 1.0 olarak ayarlanır.
+Ağırlıklı oran şu formül ile hesaplanır: (color1 \* K1 + COLOR2 \* K2)/(K1 + K2). Ağırlıklı oran saptandıktan sonra yöntem, karışık rengin parlaklığını hesaplar. Daha sonra, parlaklığı *dblLumRatio*ile çarpar. Değer 1,0 ' den büyükse, yöntemi karışık rengin parlaklığını yeni değere ayarlar. Aksi takdirde, parlaklık 1,0 olarak ayarlanır.
 
-## <a name="cdrawingmanagerdrawrotated"></a><a name="drawrotated"></a>CDrawingManager::DrawRotated
+## <a name="cdrawingmanagerdrawrotated"></a><a name="drawrotated"></a> CDrawingManager::D Rawdöndürülmüş
 
-Verilen dikdörtgenin içindeki kaynak DC içeriğini 90 derece döndürür.
+Verilen dikdörtgen içindeki kaynak DC içeriğini 90 derece döndürür.
 
 ```cpp
 void DrawRotated(
@@ -1021,18 +1051,18 @@ void DrawRotated(
 
 ### <a name="parameters"></a>Parametreler
 
-*rektDest*<br/>
+*rectDest*<br/>
 Hedef dikdörtgen.
 
 *dcSrc*<br/>
-Kaynak aygıt bağlamı.
+Kaynak cihaz bağlamı.
 
 *bClockWise*<br/>
-TRUE +90 derece döndürdüğünü gösterir; FALSE -90 derece döndürdüğünü gösterir.
+TRUE, Döndür + 90 derece; FALSE, döndürme-90 derece gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

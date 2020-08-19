@@ -16,18 +16,18 @@ helpviewer_keywords:
 - stdext::max_variable_size [C++], released
 - stdext::max_variable_size [C++], saved
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
-ms.openlocfilehash: f98b5698ff14349abf9300799f00c6d9121bcf65
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 53d2603c82e94710ed687dce4caeec24aeb2f60a
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222270"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561654"
 ---
 # <a name="max_variable_size-class"></a>max_variable_size Sınıfı
 
 [Freelist](../standard-library/freelist-class.md) nesnesini ayrılan bellek bloklarının sayısıyla kabaca orantılı olan en büyük uzunluğa sınırlayan bir [Max Class](../standard-library/allocators-header.md) nesnesi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class max_variable_size
@@ -55,7 +55,7 @@ class max_variable_size
 
 **Ad alanı:** stdext
 
-## <a name="max_variable_sizeallocated"></a><a name="allocated"></a>max_variable_size:: ayrılmış
+## <a name="max_variable_sizeallocated"></a><a name="allocated"></a> max_variable_size:: ayrılmış
 
 Ayrılan bellek bloklarının sayısını artırır.
 
@@ -65,15 +65,14 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*_Nx*|Artış değeri.|
+*_Nx*\
+Artış değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu üye işlevi, depolanan değere *_Nx* ekler `_Nallocs` . Bu üye işlevi, her başarılı çağrıdan sonra işlecine çağrılır `cache_freelist::allocate` **`new`** . Bağımsız değişken *_Nx* , öbek işleci tarafından ayrılan bellek bloklarının sayısıdır **`new`** .
 
-## <a name="max_variable_sizedeallocated"></a><a name="deallocated"></a>max_variable_size::d eayrılmış
+## <a name="max_variable_sizedeallocated"></a><a name="deallocated"></a> max_variable_size::d eayrılmış
 
 Ayrılan bellek bloklarının sayısını azaltır.
 
@@ -83,15 +82,14 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*_Nx*|Artış değeri.|
+*_Nx*\
+Artış değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi *_Nx* depolanan değerden çıkartır `_Nallocs` . Bu üye işlevi, her çağrıdan sonra işlecine kadar çağrılır `cache_freelist::deallocate` **`delete`** . Bağımsız değişken *_Nx* , öbekte tarafından serbest bırakılmış bellek bloklarının sayısıdır **`delete`** .
 
-## <a name="max_variable_sizefull"></a><a name="full"></a>max_variable_size:: Full
+## <a name="max_variable_sizefull"></a><a name="full"></a> max_variable_size:: Full
 
 Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.
 
@@ -107,7 +105,7 @@ bool full();
 
 Bu üye işlevi tarafından çağrılır `cache_freelist::deallocate` . Çağrı döndürürse **`true`** , `deallocate` bellek bloğunu ücretsiz listeye koyar; false döndürürse `deallocate` **`delete`** blok serbest bırakmak için işleç çağırır.
 
-## <a name="max_variable_sizemax_variable_size"></a><a name="max_variable_size"></a>max_variable_size:: max_variable_size
+## <a name="max_variable_sizemax_variable_size"></a><a name="max_variable_size"></a> max_variable_size:: max_variable_size
 
 Türünde bir nesne oluşturur `max_variable_size` .
 
@@ -119,7 +117,7 @@ max_variable_size();
 
 Oluşturucu, depolanan değerleri `_Nblocks` ve sıfıra başlatır `_Nallocs` .
 
-## <a name="max_variable_sizereleased"></a><a name="released"></a>max_variable_size:: yayınlandı
+## <a name="max_variable_sizereleased"></a><a name="released"></a> max_variable_size:: yayınlandı
 
 , Ücretsiz listedeki bellek bloklarının sayısını azaltır.
 
@@ -131,7 +129,7 @@ void released();
 
 Bu üye işlevi, depolanan değeri azaltır `_Nblocks` . `released`Geçerli Max sınıfının üye işlevi, `cache_freelist::allocate` boş listeden bir bellek bloğunu her kaldırdığında tarafından çağrılır.
 
-## <a name="max_variable_sizesaved"></a><a name="saved"></a>max_variable_size:: kaydedildi
+## <a name="max_variable_sizesaved"></a><a name="saved"></a> max_variable_size:: kaydedildi
 
 Ücretsiz listedeki bellek bloklarının sayısını artırır.
 

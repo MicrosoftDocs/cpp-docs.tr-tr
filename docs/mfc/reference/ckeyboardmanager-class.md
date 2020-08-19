@@ -1,5 +1,5 @@
 ---
-title: CKeyboardManager Sınıfı
+title: CKeyboardManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CKeyboardManager
@@ -30,18 +30,18 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: a8053ab33a2b49eb2c447cdaa1cb2b9e356bc696
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a2d2ae8133310f3a93b6eefc30c67045a47cd94f
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754919"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561472"
 ---
-# <a name="ckeyboardmanager-class"></a>CKeyboardManager Sınıfı
+# <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 
-Ana çerçeve penceresi ve alt çerçeve pencereleri için kısayol anahtar tablolarını yönetir.
+Ana çerçeve penceresi ve alt çerçeve pencereleri için kısayol tuşu tablolarını yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CKeyboardManager : public CObject
@@ -53,51 +53,51 @@ class CKeyboardManager : public CObject
 
 |||
 |-|-|
-|Adı|Açıklama|
-|[CKeyboardManager::CKeyboardManager](#ckeyboardmanager)|Bir `CKeyboardManager` nesne inşa eder.|
+|Ad|Açıklama|
+|[CKeyboardManager:: CKeyboardManager](#ckeyboardmanager)|Bir `CKeyboardManager` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Adı|Açıklama|
-|[CKeyboardManager::Temizleme](#cleanup)|Kısayol anahtar tablolarını temizler.|
-|[CKeyboardManager::FindDefaultAccelerator](#finddefaultaccelerator)|Belirtilen komut ve pencere için varsayılan kısayol tuşunu alır.|
-|[CKeyboardManager::Anahtar Ele](#iskeyhandled)|Bir anahtarın hızlandırıcı tablosu tarafından işlenip işlenmediğini belirler.|
-|[CKeyboardManager::IsKeyPrintable](#iskeyprintable)|Bir karakterin yazdırılabilir olup olmadığını gösterir.|
-|[CKeyboardManager::IsShowAllAccelerators](#isshowallaccelerators)|Menülerin bir komut için tüm kısayol anahtarlarını mı yoksa yalnızca varsayılan kısayol anahtarını mı gösterdiğini gösterir.|
-|[CKeyboardManager::LoadState](#loadstate)|Kısayol anahtar tablolarını Windows kayıt defterinden yükler.|
-|[CKeyboardManager::Tümleri Sıfırla](#resetall)|Kısayol anahtar tablolarını uygulama kaynağından yeniden yükler.|
-|[CKeyboardManager::SaveState](#savestate)|Kısayol anahtar tablolarını Windows kayıt defterine kaydeder.|
-|[CKeyboardManager::ShowAllAccelerators](#showallaccelerators)|Çerçevenin tüm komutlar için tüm kısayol anahtarlarını mı yoksa her komut için tek bir kısayol tuşu mu görüntülediğini belirtir. Bu yöntem, yalnızca bir ilişkili kısayol anahtarı olan komutları etkilemez.|
-|[CKeyboardManager::Translatechartoupper](#translatechartoupper)|Bir karakteri üst kaydına dönüştürür.|
-|[CKeyboardManager::UpdateAccelTable](#updateacceltable)|Kısayol anahtar tablosunu yeni bir kısayol anahtar tablosuyla güncelleştirir.|
+|Ad|Açıklama|
+|[CKeyboardManager:: CleanUp](#cleanup)|Kısayol tuşu tablolarını temizler.|
+|[CKeyboardManager:: FindDefaultAccelerator](#finddefaultaccelerator)|Belirtilen komut ve pencere için varsayılan kısayol tuşunu alır.|
+|[CKeyboardManager:: ıskeyişlendi](#iskeyhandled)|Bir anahtarın Hızlandırıcı tablosu tarafından işlenip işlenmediğini belirler.|
+|[CKeyboardManager:: IsKeyPrintable](#iskeyprintable)|Bir karakterin yazdırılabilir olup olmadığını gösterir.|
+|[CKeyboardManager:: IsShowAllAccelerators](#isshowallaccelerators)|Menülerin bir komut için veya yalnızca varsayılan kısayol tuşu için tüm kısayol tuşlarını gösterip göstermediğini belirtir.|
+|[CKeyboardManager:: LoadState](#loadstate)|Windows kayıt defterinden kısayol tuşu tablolarını yükler.|
+|[CKeyboardManager:: ResetAll](#resetall)|Uygulama kaynağından kısayol tuşu tablolarını yeniden yükler.|
+|[CKeyboardManager:: Savemlak](#savestate)|Kısayol tuşu tablolarını Windows kayıt defterine kaydeder.|
+|[CKeyboardManager:: ShowAllAccelerators](#showallaccelerators)|Çerçevenin tüm komutlar için kısayol tuşlarını veya her komut için tek bir kısayol tuşunu görüntüleyip görüntülemediğini belirtir. Bu yöntem, yalnızca bir ilişkili kısayol tuşu olan komutları etkilemez.|
+|[CKeyboardManager:: TranslateCharToUpper](#translatechartoupper)|Bir karakteri üst kaydına dönüştürür.|
+|[CKeyboardManager:: UpdateAccelTable](#updateacceltable)|Kısayol tuşu tablosunu yeni bir kısayol tuşu tablosu ile güncelleştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıfın üyeleri, kısayol anahtar tablolarını Windows kayıt defterine kaydetmenize ve yüklemenize, kısa yol anahtar tablolarını güncelleştirmek için şablon kullanmanıza ve çerçeve penceresindeki komut için varsayılan kısayol anahtarını bulmanıza olanak tanır. Buna ek `CKeyboardManager` olarak, nesne kısayol tuşlarının kullanıcıya nasıl görüntüleneceğini denetlemenize olanak tanır.
+Bu sınıfın üyeleri, kısayol tuşu tablolarını Windows kayıt defterine kaydedip yükleme, kısa kesme anahtar tablolarını güncelleştirmek için şablon kullanma ve bir komut için bir çerçeve penceresinde varsayılan kısayol tuşunu bulma imkanı sağlar. Ayrıca, `CKeyboardManager` nesnesi kısayol tuşlarının kullanıcıya nasıl görüntülendiğini denetlemenize olanak tanır.
 
-Bir `CKeyboardManager` nesneyi el ile oluşturmamalısınız. Uygulamanızın çerçevesi tarafından otomatik olarak oluşturulur. Ancak, uygulamanızın başlatma işlemi sırasında [CWinAppEx::InitKeyboardManager'ı](../../mfc/reference/cwinappex-class.md#initkeyboardmanager) aramalısınız. Uygulamanız için klavye yöneticisine bir işaretçi almak için [CWinAppEx'i arayın::GetKeyboardManager.](../../mfc/reference/cwinappex-class.md#getkeyboardmanager)
+`CKeyboardManager`El ile bir nesne oluşturmamalıdır. Bu, uygulamanızın çerçevesi tarafından otomatik olarak oluşturulur. Ancak, uygulamanızın başlatma işlemi sırasında [CWinAppEx:: InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager) ' ı çağırmanız gerekir. Uygulamanıza yönelik klavye Yöneticisi işaretçisi almak için [CWinAppEx:: GetKeyboardManager](../../mfc/reference/cwinappex-class.md#getkeyboardmanager)çağırın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CKeyboardManager` `CWinAppEx` sınıftan bir nesneye işaretçi nasıl alındığını ve menü komutlarıyla ilişkili tüm kısayol tuşlarının nasıl gösterilebildiğini gösterir. Bu kod parçacığı Özel Sayfalar [örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, bir sınıftan bir nesnenin bir işaretçisinin nasıl alınacağını `CKeyboardManager` `CWinAppEx` ve menü komutlarıyla ilişkili tüm kısayol tuşlarının nasıl gösterileceğini gösterir. Bu kod parçacığı, [özel sayfalar örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ckeyboardmanager](../../mfc/reference/ckeyboardmanager-class.md)
+[CKeyboardManager](../../mfc/reference/ckeyboardmanager-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxkeyboardmanager.h
+**Üstbilgi:** afxkeyboardmanager. h
 
-## <a name="ckeyboardmanagerckeyboardmanager"></a><a name="ckeyboardmanager"></a>CKeyboardManager::CKeyboardManager
+## <a name="ckeyboardmanagerckeyboardmanager"></a><a name="ckeyboardmanager"></a> CKeyboardManager:: CKeyboardManager
 
-Bir `CKeyboardManager` nesne inşa eder.
+Bir `CKeyboardManager` nesnesi oluşturur.
 
 ```
 CKeyboardManager();
@@ -105,11 +105,11 @@ CKeyboardManager();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çoğu durumda, doğrudan bir `CKeyboardManager` oluşturmak zorunda değildir. Varsayılan olarak, çerçeve sizin için bir tane oluşturur. Bir işaretçi almak `CKeyboardManager` [için, CWinAppEx'i arayın::GetKeyboardManager](../../mfc/reference/cwinappex-class.md#getkeyboardmanager). Eğer el ile bir oluşturmak yoksa, yöntem CWinAppEx ile başlatılması [gerekir::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager).
+Çoğu durumda, doğrudan oluşturmanız gerekmez `CKeyboardManager` . Varsayılan olarak, çerçeve sizin için bir tane oluşturur. ' A bir işaretçi almak için `CKeyboardManager` , [CWinAppEx:: GetKeyboardManager](../../mfc/reference/cwinappex-class.md#getkeyboardmanager)çağırın. El ile bir tane oluşturursanız, [CWinAppEx:: InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)yöntemiyle onu başlatmalısınız.
 
-## <a name="ckeyboardmanagercleanup"></a><a name="cleanup"></a>CKeyboardManager::Temizleme
+## <a name="ckeyboardmanagercleanup"></a><a name="cleanup"></a> CKeyboardManager:: CleanUp
 
-`CKeyboardManager` Kaynakları boşaltTıran ve tüm kısayol anahtar eşlemelerini temizler.
+Kaynakları serbest bırakır `CKeyboardManager` ve tüm kısayol tuşu eşlemelerini temizler.
 
 ```
 static void CleanUp();
@@ -117,11 +117,11 @@ static void CleanUp();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kısayol tuşları hakkında daha fazla bilgi için [Klavye ve Fare Özelleştirme'ye](../../mfc/keyboard-and-mouse-customization.md)bakın.
+Kısayol tuşları hakkında daha fazla bilgi için bkz. [klavye ve fare özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md).
 
-Uygulama çıkışında çerçeve otomatik olarak aradığından, uygulamanız çıktığında bu işlevi aramanız gerekmez.
+Uygulama çıkış sırasında çerçeve tarafından otomatik olarak çağrılamadığından, uygulamanız çıkarken bu işlevi çağırmanız gerekmez.
 
-## <a name="ckeyboardmanagerfinddefaultaccelerator"></a><a name="finddefaultaccelerator"></a>CKeyboardManager::FindDefaultAccelerator
+## <a name="ckeyboardmanagerfinddefaultaccelerator"></a><a name="finddefaultaccelerator"></a> CKeyboardManager:: FindDefaultAccelerator
 
 Belirtilen komut ve pencere için varsayılan kısayol tuşunu alır.
 
@@ -135,29 +135,29 @@ static BOOL FindDefaultAccelerator(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[içinde] Komut kimliği.
+*Uımd*<br/>
+'ndaki Komut KIMLIĞI.
 
-*Str*<br/>
-[çıkış] Bir `CString` nesneye başvuru.
+*üstbilgisine*<br/>
+dışı Bir `CString` nesneye başvuru.
 
 *pWndFrame*<br/>
-[içinde] Çerçeve penceresiiçin bir işaretçi.
+'ndaki Çerçeve penceresi işaretçisi.
 
 *bIsDefaultFrame*<br/>
-[içinde] Çerçeve penceresinin varsayılan çerçeve penceresi olup olmadığını belirtir.
+'ndaki Çerçeve penceresinin varsayılan çerçeve penceresi olup olmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kısayol bulunursa sıfır olmayan; aksi takdirde 0.
+Kısayol bulunursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem *uiCmd* tarafından belirtilen komutu arar ve varsayılan kısayol anahtarını alır. Daha sonra yöntem bu kısayol tuşu ile ilişkili dize alır ve *str* parametre değeri yazar.
+Bu yöntem, *Uııcmd* tarafından belirtilen komutu arar ve varsayılan kısayol tuşunu alır. Sonra yöntemi bu kısayol tuşuyla ilişkili dizeyi alır ve değeri *Str* parametresine yazar.
 
-## <a name="ckeyboardmanageriskeyhandled"></a><a name="iskeyhandled"></a>CKeyboardManager::Anahtar Ele
+## <a name="ckeyboardmanageriskeyhandled"></a><a name="iskeyhandled"></a> CKeyboardManager:: ıskeyişlendi
 
-Belirtilen anahtarın [CKeyboardManager Sınıfı](../../mfc/reference/ckeyboardmanager-class.md)tarafından işlenip işlenmediğini belirler.
+Belirtilen anahtarın [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md)tarafından işlenip işlenmediğini belirler.
 
 ```
 static BOOL __stdcall IsKeyHandled(
@@ -169,23 +169,27 @@ static BOOL __stdcall IsKeyHandled(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*nAnahtar*|[içinde] Kontrol etmek için anahtar.|
-|*fVirt*|[içinde] Kısayol anahtarının davranışını belirtir. Olası değerlerin listesi için [ACCEL Yapısı'na](/windows/win32/api/winuser/ns-winuser-accel)bakın.|
-|*pWndFrame*|[içinde] Çerçeve penceresi. Bu yöntem, bu çerçevede bir kısayol anahtarının işlenip işlenmeyeceğini belirler.|
-|*bIsDefaultFrame*|[içinde] *pWndFrame* varsayılan çerçeve penceresi olup olmadığını gösteren bir Boolean parametresi.|
+*nAnahtar*\
+'ndaki Denetlenecek anahtar.
+
+*fVirt*\
+'ndaki Kısayol tuşunun davranışını belirtir. Olası değerler listesi için bkz. [Accel yapısı](/windows/win32/api/winuser/ns-winuser-accel).
+
+*pWndFrame*\
+'ndaki Bir çerçeve penceresi. Bu yöntem, bu çerçevede bir kısayol tuşunun işlenmiş olup olmadığını belirler.
+
+*bIsDefaultFrame*\
+'ndaki *PWndFrame* 'in varsayılan çerçeve penceresi olup olmadığını gösteren bir Boole parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kısayol tuşu işlenirse DOĞRU. Anahtar işlenmezse veya *pWndFrame* NULL ise YANLIŞ.
+Kısayol tuşu işlenirse TRUE. Anahtar işlenmezse veya *pWndFrame* null ise false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Giriş *parametreleri, pWndFrame'de*bir kısayol anahtarının işlenip işlenmediğini belirlemek için hem *nKey* hem de *fVirt* için hızlandırıcı tablosundaki girişle eşleşmelidir.
+Giriş parametrelerinin, *pWndFrame*'de bir kısayol tuşunun işlendiğini anlamak Için hem *nKey* hem de *fVirt* için Hızlandırıcı tablosundaki girişle eşleşmesi gerekir.
 
-## <a name="ckeyboardmanageriskeyprintable"></a><a name="iskeyprintable"></a>CKeyboardManager::IsKeyPrintable
+## <a name="ckeyboardmanageriskeyprintable"></a><a name="iskeyprintable"></a> CKeyboardManager:: IsKeyPrintable
 
 Bir karakterin yazdırılabilir olup olmadığını gösterir.
 
@@ -195,22 +199,20 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Nchar*|[içinde] Bu yöntemin denetledığı karakter.|
+*nChar*\
+'ndaki Bu yöntemin denetlediği karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karakter yazdırılabilirse sıfır, yazdırılamazsa sıfır.
+Karakter basışuysa sıfır dışında, değilse sıfırdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[GetKeyboardState](/windows/win32/api/winuser/nf-winuser-getkeyboardstate) için bir çağrı başarısız olursa bu yöntem başarısız olur.
+[GetKeyboardState](/windows/win32/api/winuser/nf-winuser-getkeyboardstate) çağrısı başarısız olursa bu yöntem başarısız olur.
 
-## <a name="ckeyboardmanagerisshowallaccelerators"></a><a name="isshowallaccelerators"></a>CKeyboardManager::IsShowAllAccelerators
+## <a name="ckeyboardmanagerisshowallaccelerators"></a><a name="isshowallaccelerators"></a> CKeyboardManager:: IsShowAllAccelerators
 
-Menülerin menü komutlarıyla ilişkili tüm kısayol tuşlarını mı yoksa yalnızca varsayılan kısayol tuşlarını mı gösterdiğini gösterir.
+Menülerin menü komutlarıyla veya yalnızca varsayılan kısayol tuşlarıyla ilişkili tüm kısayol tuşlarını gösterip göstermediğini belirtir.
 
 ```
 static BOOL IsShowAllAccelerators();
@@ -218,15 +220,15 @@ static BOOL IsShowAllAccelerators();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulama menü komutları için tüm kısayol tuşlarını listelerse sıfır olmayan; Uygulama yalnızca varsayılan kısayol tuşlarını görüntülerse 0.
+Uygulama menü komutlarının tüm kısayol tuşlarını listelemese sıfır dışında; uygulama yalnızca varsayılan kısayol tuşlarını görüntülerse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama, menü çubuğundaki menü komutları için kısayol tuşlarını listeler. Uygulamanın tüm kısayol tuşlarını mı yoksa yalnızca varsayılan kısayol tuşlarını mı listelediğini denetlemek için [CKeyboardManager::ShowAllAccelerators](#showallaccelerators) işlevini kullanın.
+Uygulama menü çubuğundaki menü komutlarının kısayol tuşlarını listeler. Uygulamanın tüm kısayol tuşlarını mı yoksa yalnızca varsayılan kısayol tuşlarını mı listeetmediğini denetlemek için [CKeyboardManager:: ShowAllAccelerators](#showallaccelerators) işlevini kullanın.
 
-## <a name="ckeyboardmanagerloadstate"></a><a name="loadstate"></a>CKeyboardManager::LoadState
+## <a name="ckeyboardmanagerloadstate"></a><a name="loadstate"></a> CKeyboardManager:: LoadState
 
-Kısayol anahtar tablolarını Windows kayıt defterinden yükler.
+Windows kayıt defterinden kısayol tuşu tablolarını yükler.
 
 ```
 BOOL LoadState(
@@ -237,24 +239,24 @@ BOOL LoadState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[içinde] Verilerin kaydedildiği `CKeyboardManager` kayıt defteri yolu.
+'ndaki Verilerin kaydedildiği kayıt defteri yolu `CKeyboardManager` .
 
 *pDefaultFrame*<br/>
-[içinde] Varsayılan pencere olarak kullanmak üzere çerçeve penceresine işaretçi.
+'ndaki Bir çerçeve penceresinin varsayılan pencere olarak kullanılacak bir işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nonzero devlet başarıyla yüklenmişse veya 0 aksi takdirde.
+Durum başarıyla yüklenmişse veya 0 değilse sıfır dışında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*lpszProfileName* parametresi NULL ise, bu yöntem veri `CKeyboardManager` için varsayılan kayıt defteri konumunu denetler. Varsayılan kayıt defteri konumu [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)tarafından belirtilir. Veriler daha önce CKeyboardManager yöntemi ile [yazılmalıdır::SaveState](#savestate).
+*LpszProfileName* parametresi null ise, bu yöntem veriler için varsayılan kayıt defteri konumunu denetler `CKeyboardManager` . Varsayılan kayıt defteri konumu [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)tarafından belirtilir. Verilerin daha önce [CKeyboardManager:: Savi](#savestate)yöntemiyle yazılması gerekir.
 
-Varsayılan pencere belirtmezseniz, uygulamanızın ana çerçeve penceresi kullanılır.
+Varsayılan bir pencere belirtmezseniz, uygulamanızın ana çerçeve penceresi kullanılacaktır.
 
-## <a name="ckeyboardmanagerresetall"></a><a name="resetall"></a>CKeyboardManager::Tümleri Sıfırla
+## <a name="ckeyboardmanagerresetall"></a><a name="resetall"></a> CKeyboardManager:: ResetAll
 
-Kısayol anahtar tablolarını uygulama kaynağından yeniden yükler.
+Uygulama kaynağından kısayol tuşu tablolarını yeniden yükler.
 
 ```cpp
 void ResetAll();
@@ -262,11 +264,11 @@ void ResetAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CKeyboardManager` işlev, örnekte depolanan kısayolları temizler. Daha sonra klavye yöneticisinin durumunu uygulama kaynağından yeniden yükler.
+Bu işlev, örnekte depolanan kısayolları temizler `CKeyboardManager` . Ardından, klavye yöneticisinin durumunu uygulama kaynağından yeniden yükler.
 
-## <a name="ckeyboardmanagersavestate"></a><a name="savestate"></a>CKeyboardManager::SaveState
+## <a name="ckeyboardmanagersavestate"></a><a name="savestate"></a> CKeyboardManager:: Savemlak
 
-Kısayol anahtar tablolarını Windows kayıt defterine kaydeder.
+Kısayol tuşu tablolarını Windows kayıt defterine kaydeder.
 
 ```
 BOOL SaveState(
@@ -277,22 +279,22 @@ BOOL SaveState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[içinde] `CKeyboardManager` Devleti kurtarmak için kayıt yolu.
+'ndaki Durumu kaydetmek için kayıt defteri yolu `CKeyboardManager` .
 
 *pDefaultFrame*<br/>
-[içinde] Varsayılan pencere haline gelen bir çerçeve penceresi için bir işaretçi.
+'ndaki Bir çerçeve penceresinin varsayılan pencere haline gelen bir işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Klavye yöneticisi durumu başarıyla kaydedildiyse sıfır veya 0 aksi takdirde.
+Klavye Yöneticisi durumu başarıyla kaydedildiyse veya 0 değilse sıfır dışında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*lpszProfileName* parametresi NULL ise, bu `CKeyboardManager` yöntem durumu [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)tarafından belirtilen varsayılan konuma yazar. Bir konum belirtirseniz, verileri daha sonra [CKeyboardManager::LoadState](#loadstate)yöntemini kullanarak yükleyebilirsiniz.
+*LpszProfileName* parametresi null ise, bu yöntem `CKeyboardManager` durumu [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)tarafından belirtilen varsayılan konuma yazar. Bir konum belirtirseniz, verileri daha sonra [CKeyboardManager:: LoadState](#loadstate)metodunu kullanarak yükleyebilirsiniz.
 
-Varsayılan pencere belirtmezseniz, ana çerçeve penceresi varsayılan pencere olarak kullanılır.
+Varsayılan bir pencere belirtmezseniz, ana çerçeve penceresi varsayılan pencere olarak kullanılacaktır.
 
-## <a name="ckeyboardmanagershowallaccelerators"></a><a name="showallaccelerators"></a>CKeyboardManager::ShowAllAccelerators
+## <a name="ckeyboardmanagershowallaccelerators"></a><a name="showallaccelerators"></a> CKeyboardManager:: ShowAllAccelerators
 
 Menü komutlarıyla ilişkili tüm kısayol tuşlarını gösterir.
 
@@ -305,18 +307,18 @@ static void ShowAllAccelerators(
 ### <a name="parameters"></a>Parametreler
 
 *bShowAll*<br/>
-[içinde] TRUE ise, tüm kısayol anahtarları görüntülenir. FALSE ise, yalnızca ilk kısayol tuşu görüntülenir.
+'ndaki TRUE ise, tüm kısayol tuşları görüntülenir. YANLıŞSA, yalnızca ilk kısayol tuşu görüntülenir.
 
 *lpszDelimiter*<br/>
-[içinde] Kısayol tuşları arasına eklenecek bir dize. Yalnızca bir kısayol tuşu görüntülenirse, bu sınır distiricinin hiçbir etkisi yoktur.
+'ndaki Kısayol tuşları arasına eklenecek dize. Yalnızca bir kısayol tuşu görüntüleniyorsa, bu sınırlayıcıda hiçbir etkisi yoktur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bir komutun ilişkili birden fazla kısayol anahtarı varsa, yalnızca ilk kısayol tuşu gösterilir. Bu işlev, tüm komutlarla ilişkili tüm kısayol tuşlarını listeletmenizi sağlar.
+Varsayılan olarak, bir komutta ilişkili birden fazla kısayol tuşu varsa, yalnızca ilk kısayol tuşu gösterilir. Bu işlev, tüm komutlarla ilişkili tüm kısayol tuşlarını listelemenize olanak sağlar.
 
-Kısayol tuşları menü çubuğundaki komutun yanında listelenir. Tüm kısayol tuşları *görüntülenirse, lpszDelimiter* tarafından sağlanan dize tek tek kısayol tuşlarını ayırır.
+Kısayol tuşları, menü çubuğundaki komutun yanında listelenecektir. Tüm kısayol tuşları görüntüleniyorsa, *lpszDelimiter* tarafından belirtilen dize ayrı kısayol tuşlarını ayırır.
 
-## <a name="ckeyboardmanagertranslatechartoupper"></a><a name="translatechartoupper"></a>CKeyboardManager::Translatechartoupper
+## <a name="ckeyboardmanagertranslatechartoupper"></a><a name="translatechartoupper"></a> CKeyboardManager:: TranslateCharToUpper
 
 Bir karakteri üst kaydına dönüştürür.
 
@@ -326,16 +328,16 @@ static UINT TranslateCharToUpper(const UINT nChar);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nchar*<br/>
-[içinde] Dönüştürülecek karakter.
+*nChar*<br/>
+'ndaki Dönüştürülecek karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş parametresinin üst kaydı olan karakter.
+Giriş parametresinin üst kayıt olan karakter.
 
-## <a name="ckeyboardmanagerupdateacceltable"></a><a name="updateacceltable"></a>CKeyboardManager::UpdateAccelTable
+## <a name="ckeyboardmanagerupdateacceltable"></a><a name="updateacceltable"></a> CKeyboardManager:: UpdateAccelTable
 
-Kısayol anahtar tablosunu yeni bir kısayol anahtar tablosuyla güncelleştirir.
+Kısayol tuşu tablosunu yeni bir kısayol tuşu tablosu ile güncelleştirir.
 
 ```
 BOOL UpdateAccelTable(
@@ -353,32 +355,32 @@ BOOL UpdateAccelTable(
 ### <a name="parameters"></a>Parametreler
 
 *pTemplate*<br/>
-[içinde] Belge şablonuna işaretçi.
+'ndaki Belge şablonuna yönelik bir işaretçi.
 
 *lpAccel*<br/>
-[içinde] Yeni kısayol anahtarıiçin bir işaretçi.
+'ndaki Yeni kısayol tuşuna yönelik bir işaretçi.
 
 *nSize*<br/>
-[içinde] Yeni kısayol tablosunun boyutu.
+'ndaki Yeni kısayol tablosunun boyutu.
 
 *pDefaultFrame*<br/>
-[içinde] Varsayılan çerçeve penceresi için bir işaretçi.
+'ndaki Varsayılan çerçeve penceresine yönelik bir işaretçi.
 
-*hAccelYeni*<br/>
-[içinde] Yeni kısayol tablosuna bir tutamaç.
+*Hacsenew*<br/>
+'ndaki Yeni kısayol tablosuna yönelik bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa sıfırsız; aksi takdirde 0.
+Yöntem başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varolan kısayol tablosunu birkaç çerçeve penceresi nesnesi için yeni kısayol anahtarlarıyla değiştirmek için bu işlevi kullanın. İşlev, verilen belge şablonuna bağlı tüm çerçeve penceresi nesnelerine erişmek için parametre olarak bir belge şablonu alır.
+Mevcut kısayol tablosunu çeşitli çerçeve penceresi nesneleri için yeni kısayol tuşlarıyla değiştirmek için bu işlevi kullanın. İşlevi, belirtilen belge şablonuna bağlı tüm çerçeve pencere nesnelerine erişim sağlamak için bir parametre olarak bir belge şablonu alır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
-[CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
-[Klavye ve Fare Özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)
+[CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
+[CWinAppEx:: InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
+[Klavye ve fare özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)

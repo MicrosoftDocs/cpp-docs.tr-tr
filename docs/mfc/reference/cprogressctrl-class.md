@@ -1,5 +1,5 @@
 ---
-title: CProgressCtrl Sınıfı
+title: CProgressCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CProgressCtrl
@@ -42,18 +42,18 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: c9e94e334318b32efcf8c9de681a78349ab12151
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: eda19ca2b94978201806e60d2ae8399e00e13f1f
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751128"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561524"
 ---
-# <a name="cprogressctrl-class"></a>CProgressCtrl Sınıfı
+# <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 
-Windows ortak ilerleme çubuğu denetiminin işlevselliğini sağlar.
+Windows ortak ilerleme çubuğu denetiminin işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CProgressCtrl : public CWnd
@@ -63,57 +63,57 @@ class CProgressCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CProgressCtrl::CProgressCtrl](#cprogressctrl)|Bir `CProgressCtrl` nesne inşa eder.|
+|[CProgressCtrl:: CProgressCtrl](#cprogressctrl)|Bir `CProgressCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CProgressCtrl::Oluştur](#create)|İlerleme çubuğu denetimi oluşturur ve nesneye `CProgressCtrl` bağlar.|
-|[CProgressCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleri ile bir ilerleme denetimi oluşturur `CProgressCtrl` ve bir nesneye bağlar.|
-|[CProgressCtrl::GetBarColor](#getbarcolor)|Geçerli ilerleme çubuğu denetimi için ilerleme göstergesi çubuğunun rengini alır.|
-|[CProgressCtrl::GetBkColor](#getbkcolor)|Geçerli ilerleme çubuğunun arka plan rengini alır.|
-|[CProgressCtrl::GetPos](#getpos)|İlerleme çubuğunun geçerli konumunu alır.|
-|[CProgressCtrl::GetRange](#getrange)|İlerleme çubuğu denetimi aralığının alt ve üst sınırlarını alır.|
-|[CProgressCtrl::GetState](#getstate)|Geçerli ilerleme çubuğu denetiminin durumunu alır.|
-|[CProgressCtrl::GetStep](#getstep)|Geçerli ilerleme çubuğu denetiminin ilerleme çubuğu için adım artışını alır.|
-|[CProgressCtrl::OfsetPos](#offsetpos)|İlerleme çubuğu denetiminin geçerli konumunu belirli bir artışla ilerletin ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.|
-|[CProgressCtrl::SetBarColor](#setbarcolor)|Geçerli ilerleme çubuğu denetiminde ilerleme göstergesi çubuğunun rengini ayarlar.|
-|[CProgressCtrl::SetBkColor](#setbkcolor)|İlerleme çubuğunun arka plan rengini ayarlar.|
-|[CProgressCtrl::SetMarquee](#setmarquee)|Geçerli ilerleme çubuğu denetimi için seçim çerçevesi modunu açar veya kapatır.|
-|[CProgressCtrl::SetPos](#setpos)|İlerleme çubuğu denetimi için geçerli konumu ayarlar ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.|
-|[CProgressCtrl::SetAralığı](#setrange)|İlerleme çubuğu denetimi için minimum ve maksimum aralıkları ayarlar ve çubuğu yeni aralıkları yansıtacak şekilde yeniden çizer.|
-|[CProgressCtrl::SetState](#setstate)|Geçerli ilerleme çubuğu denetiminin durumunu ayarlar.|
-|[CProgressCtrl::SetStep](#setstep)|İlerleme çubuğu denetimi için adım artışını belirtir.|
-|[CProgressCtrl::AdımIt](#stepit)|İlerleme çubuğu denetimi için geçerli konumu adım adım adımla ilerletin [(Bkz. SetStep)](#setstep)ve yeni konumu yansıtacak şekilde çubuğu yeniden çizer.|
+|[CProgressCtrl:: Create](#create)|İlerleme çubuğu denetimi oluşturur ve bir `CProgressCtrl` nesneye ekler.|
+|[CProgressCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir ilerleme denetimi oluşturur ve bunu bir `CProgressCtrl` nesneye ekler.|
+|[CProgressCtrl:: GetBarColor](#getbarcolor)|Geçerli ilerleme çubuğu denetimi için ilerleme göstergesi çubuğunun rengini alır.|
+|[CProgressCtrl:: GetBkColor](#getbkcolor)|Geçerli ilerleme çubuğunun arka plan rengini alır.|
+|[CProgressCtrl:: GetPos](#getpos)|İlerleme çubuğunun geçerli konumunu alır.|
+|[CProgressCtrl:: GetRange](#getrange)|İlerleme çubuğu denetimi aralığının alt ve üst sınırlarını alır.|
+|[CProgressCtrl:: GetState](#getstate)|Geçerli ilerleme çubuğu denetiminin durumunu alır.|
+|[CProgressCtrl:: GetStep](#getstep)|Geçerli ilerleme çubuğu denetiminin ilerleme çubuğu için adım artışı alır.|
+|[CProgressCtrl:: OffsetPos](#offsetpos)|İlerleme çubuğu denetiminin geçerli konumunu belirtilen artışla ilerletir ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.|
+|[CProgressCtrl:: SetBarColor](#setbarcolor)|Geçerli ilerleme çubuğu denetimindeki ilerleme göstergesi çubuğunun rengini ayarlar.|
+|[CProgressCtrl:: SetBkColor](#setbkcolor)|İlerleme çubuğu için arka plan rengini ayarlar.|
+|[CProgressCtrl:: Setafkümesi](#setmarquee)|Geçerli ilerleme çubuğu denetimi için seçim çerçevesi modunu açar veya kapatır.|
+|[CProgressCtrl:: SetPos](#setpos)|İlerleme çubuğu denetimi için geçerli konumu ayarlar ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.|
+|[CProgressCtrl:: SetRange](#setrange)|İlerleme çubuğu denetimi için minimum ve maksimum aralıkları ayarlar ve çubuğu yeni aralıkları yansıtacak şekilde yeniden çizer.|
+|[CProgressCtrl:: SetState](#setstate)|Geçerli ilerleme çubuğu denetiminin durumunu ayarlar.|
+|[CProgressCtrl:: SetStep](#setstep)|İlerleme çubuğu denetiminin adım artışını belirtir.|
+|[CProgressCtrl:: StepIt](#stepit)|, Adım artışı (bkz. [SetStep](#setstep)) ile bir ilerleme çubuğu denetiminin geçerli konumunu ilerletir ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlerleme çubuğu denetimi, bir uygulamanın uzun bir işlemin ilerlemesini belirtmek için kullanabileceği bir penceredir. Yavaş yavaş doldurulan bir dikdörtgen oluşur, soldan sağa, sistem bir işlem ilerledikçe renk vurgulamak ile.
+İlerleme çubuğu denetimi, uygulamanın uzun bir işlemin ilerlemesini göstermek için kullanabileceği bir penceredir. İşlem ilerledikçe sistem vurgu rengi ile soldan sağa, yavaş doldurulmuş bir dikdörtgenden oluşur.
 
-İlerleme çubuğu denetiminin bir aralığı ve geçerli konumu vardır. Aralık işlemin toplam süresini ve geçerli konum uygulamanın işlemi tamamlama yolunda kaydettiği ilerlemeyi temsil eder. Pencere yordamı, vurgu rengiyle doldurmak için ilerleme çubuğunun yüzdesini belirlemek için aralığı ve geçerli konumu kullanır. Aralık ve geçerli konum değerleri imzalı tümsavar olarak ifade edildiklerinden, geçerli konum değerlerinin olası aralığı -2,147,483,648 ile 2,147,483,647 dahil.
+İlerleme çubuğu denetimi bir aralığa ve geçerli konuma sahiptir. Aralık işlemin toplam süresini temsil eder ve geçerli konum uygulamanın işlemi tamamlamaya yönelik yaptığı ilerlemeyi temsil eder. Pencere yordamı, vurgu rengiyle doldurulacak ilerleme çubuğunun yüzdesini belirleyebilmek için aralığı ve geçerli konumu kullanır. Aralık ve geçerli konum değerleri işaretli tamsayılar olarak ifade edildiğinden, olası geçerli konum aralığı değeri-2.147.483.648 ile 2.147.483.647 arasında olur.
 
-Kullanma `CProgressCtrl`hakkında daha fazla bilgi [Using CProgressCtrl](../../mfc/using-cprogressctrl.md)için, [bkz.](../../mfc/controls-mfc.md)
+Kullanma hakkında daha fazla bilgi için `CProgressCtrl` bkz. [denetimler](../../mfc/controls-mfc.md) ve [CProgressCtrl kullanma](../../mfc/using-cprogressctrl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 `CProgressCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-## <a name="cprogressctrlcprogressctrl"></a><a name="cprogressctrl"></a>CProgressCtrl::CProgressCtrl
+## <a name="cprogressctrlcprogressctrl"></a><a name="cprogressctrl"></a> CProgressCtrl:: CProgressCtrl
 
-Bir `CProgressCtrl` nesne inşa eder.
+Bir `CProgressCtrl` nesnesi oluşturur.
 
 ```
 CProgressCtrl();
@@ -121,15 +121,15 @@ CProgressCtrl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneyi `CProgressCtrl` oluşturduktan sonra, ilerleme çubuğu denetimini oluşturmak için arayın. `CProgressCtrl::Create`
+Nesnesi oluşturulduktan sonra `CProgressCtrl` `CProgressCtrl::Create` ilerleme çubuğu denetimini oluşturmak için çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_1.cpp)]
 
-## <a name="cprogressctrlcreate"></a><a name="create"></a>CProgressCtrl::Oluştur
+## <a name="cprogressctrlcreate"></a><a name="create"></a> CProgressCtrl:: Create
 
-İlerleme çubuğu denetimi oluşturur ve nesneye `CProgressCtrl` bağlar.
+İlerleme çubuğu denetimi oluşturur ve bir `CProgressCtrl` nesneye ekler.
 
 ```
 virtual BOOL Create(
@@ -141,37 +141,37 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
-İlerleme çubuğu denetiminin stilini belirtir. Windows SDK'da [CreateWindow'da](/windows/win32/api/winuser/nf-winuser-createwindoww) açıklanan pencere stillerinin herhangi bir birleşimini, aşağıdaki ilerleme çubuğu denetim stillerine ek olarak denetime uygulayın:
+*dwStyle*<br/>
+İlerleme çubuğu denetiminin stilini belirtir. Aşağıdaki ilerleme çubuğu denetim stillerine ek olarak, Windows SDK [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) 'ta açıklanan Window stylesof birleşimini uygulayın:
 
-- PBS_VERTICAL İlerleme bilgilerini dikey olarak, yukarıdan aşağıya görüntüler. Bu bayrak olmadan, ilerleme çubuğu denetimi yatay olarak, soldan sağa görüntülenir.
+- PBS_VERTICAL ilerleme bilgilerini dikey ve yukarıdan aşağıya görüntüler. Bu bayrak olmadan, ilerleme çubuğu denetimi yatay olarak soldan sağa görüntülenir.
 
-- PBS_SMOOTH İlerleme çubuğu kontrolünde kademeli ve düzgün doldurma görüntüler. Bu bayrak olmadan, denetim bloklarla doldurulur.
+- PBS_SMOOTH, ilerleme çubuğu denetiminde aşamalı, düzgün doldurma gösterir. Bu bayrak olmadan denetim bloklarla doldurulur.
 
 *Rect*<br/>
-İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir. Denetim bir alt pencere olması gerektiğinden, belirtilen koordinatlar *pParentWnd*istemci alanına görelidir.
+İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir. Denetimin bir alt pencere olması gerektiğinden, belirtilen koordinatlar *pParentWnd*'nin istemci alanına göre belirlenir.
 
 *pParentWnd*<br/>
-İlerleme çubuğu denetiminin üst penceresini belirtir, `CDialog`genellikle bir . NULL olmamalıdır.
+İlerleme çubuğu denetiminin üst penceresini (genellikle a) belirtir `CDialog` . NULL olmaması gerekir.
 
-*Nıd*<br/>
-İlerleme çubuğu denetiminin kimliğini belirtir.
+*NID*<br/>
+İlerleme çubuğu denetiminin KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne başarıyla oluşturulursa `CProgressCtrl` DOĞRU; aksi takdirde YANLIŞ.
+`CProgressCtrl`Nesne başarıyla OLUŞTURULDUYSA true; aksi takdırde false.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesneyi `CProgressCtrl` iki adımda inşa ee. Önce, `CProgressCtrl` nesneyi oluşturan oluşturucuyu çağırın, `Create`sonra da ilerleme çubuğu denetimini oluşturan , çağırın.
+`CProgressCtrl`İki adımda bir nesne oluşturursunuz. İlk olarak, nesnesini oluşturan oluşturucuyu çağırın `CProgressCtrl` ve sonra `Create` ilerleme çubuğu denetimini oluşturan çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_2.cpp)]
 
-## <a name="cprogressctrlcreateex"></a><a name="createex"></a>CProgressCtrl::CreateEx
+## <a name="cprogressctrlcreateex"></a><a name="createex"></a> CProgressCtrl:: CreateEx
 
-Denetim (alt pencere) oluşturur ve `CProgressCtrl` nesneyle ilişkilendirir.
+Bir denetim (alt pencere) oluşturur ve `CProgressCtrl` nesneyle ilişkilendirir.
 
 ```
 virtual BOOL CreateEx(
@@ -185,29 +185,29 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerilistesi için Windows SDK'daki [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) için *dwExStyle* parametreye bakın.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
-*Dwstyle*<br/>
-İlerleme çubuğu denetiminin stilini belirtir. Windows SDK'da [CreateWindow'da](/windows/win32/api/winuser/nf-winuser-createwindoww) açıklanan pencere stillerinin herhangi bir birleşimini uygulayın.
+*dwStyle*<br/>
+İlerleme çubuğu denetiminin stilini belirtir. Windows SDK [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) 'ta açıklanan pencere stillerinin herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin üst öğesi olan pencereye işaretçi.
+Denetimin üst öğesi olan pencerenin işaretçisi.
 
-*Nıd*<br/>
-Denetimin alt pencere kimliği.
+*NID*<br/>
+Denetimin alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows `CreateEx` genişletilmiş stil önsöz **WS_EX_** tarafından belirtilen genişletilmiş Windows stilleri uygulamak için [Oluştur](#create) yerine kullanın.
+`CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-## <a name="cprogressctrlgetbarcolor"></a><a name="getbarcolor"></a>CProgressCtrl::GetBarColor
+## <a name="cprogressctrlgetbarcolor"></a><a name="getbarcolor"></a> CProgressCtrl:: GetBarColor
 
 Geçerli ilerleme çubuğu denetimi için ilerleme göstergesi çubuğunun rengini alır.
 
@@ -217,13 +217,13 @@ COLORREF GetBarColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[COLORREF](/windows/win32/gdi/colorref) değeri olarak temsil edilen geçerli ilerleme çubuğunun rengi veya ilerleme göstergesi çubuğu rengi varsayılan renkse CLR_DEFAULT.
+Geçerli ilerleme çubuğunun [colorref](/windows/win32/gdi/colorref) değeri olarak temsil edilen rengi veya ilerleme göstergesi çubuk rengi varsayılan renkse CLR_DEFAULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_GETBARCOLOR](/windows/win32/Controls/pbm-getbarcolor) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_GETBARCOLOR](/windows/win32/Controls/pbm-getbarcolor) iletisini gönderir.
 
-## <a name="cprogressctrlgetbkcolor"></a><a name="getbkcolor"></a>CProgressCtrl::GetBkColor
+## <a name="cprogressctrlgetbkcolor"></a><a name="getbkcolor"></a> CProgressCtrl:: GetBkColor
 
 Geçerli ilerleme çubuğunun arka plan rengini alır.
 
@@ -233,13 +233,13 @@ COLORREF GetBkColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[COLORREF](/windows/win32/gdi/colorref) değeri olarak temsil edilen geçerli ilerleme çubuğunun arka plan rengi.
+Geçerli ilerleme çubuğunun [colorref](/windows/win32/gdi/colorref) değeri olarak temsil edilen arka plan rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_GETBKCOLOR](/windows/win32/Controls/pbm-getbkcolor) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_GETBKCOLOR](/windows/win32/Controls/pbm-getbkcolor) iletisini gönderir.
 
-## <a name="cprogressctrlgetpos"></a><a name="getpos"></a>CProgressCtrl::GetPos
+## <a name="cprogressctrlgetpos"></a><a name="getpos"></a> CProgressCtrl:: GetPos
 
 İlerleme çubuğunun geçerli konumunu alır.
 
@@ -253,13 +253,13 @@ int GetPos();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlerleme çubuğu denetiminin konumu ekrandaki fiziksel konum değil, [SetRange'de](#setrange)belirtilen üst ve alt aralık arasındadır.
+İlerleme çubuğu denetiminin konumu ekranda fiziksel konum değildir, bunun yerine [SetRange](#setrange)içinde belirtilen üst ve alt Aralık arasında olur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_3.cpp)]
 
-## <a name="cprogressctrlgetrange"></a><a name="getrange"></a>CProgressCtrl::GetRange
+## <a name="cprogressctrlgetrange"></a><a name="getrange"></a> CProgressCtrl:: GetRange
 
 İlerleme çubuğu denetiminin geçerli alt ve üst sınırlarını veya aralığını alır.
 
@@ -272,20 +272,20 @@ void GetRange(
 ### <a name="parameters"></a>Parametreler
 
 *nLower*<br/>
-İlerleme çubuğu denetiminin alt sınırını alan bir tamsayıya başvuru.
+İlerleme çubuğu denetiminin alt sınırını alan bir tamsayıya yönelik başvuru.
 
 *nUpper*<br/>
-İlerleme çubuğu denetiminin üst sınırını alan bir tamsayıya başvuru.
+İlerleme çubuğu denetiminin üst sınırını alan bir tamsayıya yönelik başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, sırasıyla *nLower* ve *nUpper*tarafından başvurulan tamsayılara alt ve üst sınırların değerlerini kopyalar.
+Bu işlev, alt ve üst limitlerin değerlerini sırasıyla *nLower* ve *nUpper*tarafından başvurulan tamsayılara kopyalar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_4.cpp)]
 
-## <a name="cprogressctrlgetstate"></a><a name="getstate"></a>CProgressCtrl::GetState
+## <a name="cprogressctrlgetstate"></a><a name="getstate"></a> CProgressCtrl:: GetState
 
 Geçerli ilerleme çubuğu denetiminin durumunu alır.
 
@@ -295,21 +295,21 @@ int GetState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aşağıdaki değerlerden biri olan geçerli ilerleme çubuğu denetiminin durumu:
+Şu değerlerden biri olan geçerli ilerleme çubuğu denetiminin durumu:
 
 |Değer|Durum|
 |-----------|-----------|
-|PBST_NORMAL|Devam ediyor|
+|PBST_NORMAL|Sürüyor|
 |PBST_ERROR|Hata|
 |PBST_PAUSED|Duraklatıldı|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_GETSTATE](/windows/win32/Controls/pbm-getstate) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_GETSTATE](/windows/win32/Controls/pbm-getstate) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_progressCtrl`ilerleme çubuğu denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_progressCtrl` ilerleme çubuğu denetimine programlı bir şekilde erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
@@ -319,9 +319,9 @@ Aşağıdaki kod örneği, geçerli ilerleme çubuğu denetiminin durumunu alır
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_6.cpp)]
 
-## <a name="cprogressctrlgetstep"></a><a name="getstep"></a>CProgressCtrl::GetStep
+## <a name="cprogressctrlgetstep"></a><a name="getstep"></a> CProgressCtrl:: GetStep
 
-Geçerli ilerleme çubuğu denetiminin ilerleme çubuğu için adım artışını alır.
+Geçerli ilerleme çubuğu denetiminin ilerleme çubuğu için adım artışı alır.
 
 ```
 int GetStep() const;
@@ -329,17 +329,17 @@ int GetStep() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlerleme çubuğunun adım artış.
+İlerleme çubuğunun adım artışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Adım artış miktarı olan CProgressCtrl için bir [çağrı::StepIt](#stepit) ilerleme çubuğunun geçerli konumunu artırır.
+Adım artışı, [CProgressCtrl:: Stepa](#stepit) çağrısının ilerleme çubuğunun geçerli konumunu artırdığı tutardır.
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_GETSTEP](/windows/win32/Controls/pbm-getstep) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_GETSTEP](/windows/win32/Controls/pbm-getstep) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_progressCtrl`ilerleme çubuğu denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_progressCtrl` ilerleme çubuğu denetimine programlı bir şekilde erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
@@ -349,9 +349,9 @@ Aşağıdaki kod örneği, geçerli ilerleme çubuğu denetiminin adım artış�
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_7.cpp)]
 
-## <a name="cprogressctrloffsetpos"></a><a name="offsetpos"></a>CProgressCtrl::OfsetPos
+## <a name="cprogressctrloffsetpos"></a><a name="offsetpos"></a> CProgressCtrl:: OffsetPos
 
-İlerleme çubuğu denetiminin geçerli konumunu *nPos* tarafından belirtilen artışla ilerletin ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.
+İlerleme çubuğu denetiminin geçerli konumunu *nPos* tarafından belirtilen artışla ilerletir ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.
 
 ```
 int OffsetPos(int nPos);
@@ -360,7 +360,7 @@ int OffsetPos(int nPos);
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Pozisyon avans miktarı.
+Konumun ilerleme miktarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -370,9 +370,9 @@ Pozisyon avans miktarı.
 
 [!code-cpp[NVC_MFC_CProgressCtrl#5](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_8.cpp)]
 
-## <a name="cprogressctrlsetbarcolor"></a><a name="setbarcolor"></a>CProgressCtrl::SetBarColor
+## <a name="cprogressctrlsetbarcolor"></a><a name="setbarcolor"></a> CProgressCtrl:: SetBarColor
 
-Geçerli ilerleme çubuğu denetiminde ilerleme göstergesi çubuğunun rengini ayarlar.
+Geçerli ilerleme çubuğu denetimindeki ilerleme göstergesi çubuğunun rengini ayarlar.
 
 ```
 COLORREF SetBarColor(COLORREF clrBar);
@@ -380,23 +380,22 @@ COLORREF SetBarColor(COLORREF clrBar);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*clrBar*|[içinde] İlerleme göstergesi çubuğunun yeni rengini belirten bir [COLORREF](/windows/win32/gdi/colorref) değeri. İlerleme çubuğunun varsayılan rengini kullanmasına neden olacak CLR_DEFAULT belirtin.|
+*clrBar*\
+'ndaki İlerleme göstergesi çubuğunun yeni rengini belirten [colorref](/windows/win32/gdi/colorref) değeri. İlerleme çubuğunun varsayılan rengini kullanmasını sağlamak için CLR_DEFAULT belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-COLORREF değeri olarak temsil edilen ilerleme [COLORREF](/windows/win32/gdi/colorref) göstergesi çubuğunun önceki rengi veya ilerleme göstergesi çubuğunun rengi varsayılan renk sayılsa CLR_DEFAULT.
+İlerleme göstergesi çubuğunun, [colorref](/windows/win32/gdi/colorref) değeri olarak temsil edilen önceki rengi veya ilerleme göstergesi çubuğunun rengi varsayılan renk ise CLR_DEFAULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem, `SetBarColor` yalnızca Windows Vista [teması](/windows/win32/Controls/visual-styles-overview) etkin değilse ilerleme çubuğu rengini ayarlar.
+`SetBarColor`Yöntemi, yalnızca bir Windows Vista [teması](/windows/win32/Controls/visual-styles-overview) etkin değilse ilerleme çubuğu rengini ayarlar.
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_SETBARCOLOR](/windows/win32/Controls/pbm-setbarcolor) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_SETBARCOLOR](/windows/win32/Controls/pbm-setbarcolor) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_progressCtrl`ilerleme çubuğu denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_progressCtrl` ilerleme çubuğu denetimine programlı bir şekilde erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
@@ -406,9 +405,9 @@ Aşağıdaki kod örneği, ilerleme çubuğunun rengini kırmızı, yeşil, mavi
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_9.cpp)]
 
-## <a name="cprogressctrlsetbkcolor"></a><a name="setbkcolor"></a>CProgressCtrl::SetBkColor
+## <a name="cprogressctrlsetbkcolor"></a><a name="setbkcolor"></a> CProgressCtrl:: SetBkColor
 
-İlerleme çubuğunun arka plan rengini ayarlar.
+İlerleme çubuğu için arka plan rengini ayarlar.
 
 ```
 COLORREF SetBkColor(COLORREF clrNew);
@@ -416,18 +415,18 @@ COLORREF SetBkColor(COLORREF clrNew);
 
 ### <a name="parameters"></a>Parametreler
 
-*clrYeni*<br/>
-Yeni arka plan rengini belirten bir COLORREF değeri. İlerleme çubuğu için varsayılan arka plan rengini kullanmak için CLR_DEFAULT değerini belirtin.
+*clrNew*<br/>
+Yeni arka plan rengini belirten COLORREF değeri. İlerleme çubuğu için varsayılan arka plan rengini kullanmak üzere CLR_DEFAULT değerini belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki arka plan rengini gösteren [COLORREF](/windows/win32/gdi/colorref) değeri veya arka plan rengi varsayılan renk olup olmadığını CLR_DEFAULT.
+Önceki arka plan rengini gösteren [colorref](/windows/win32/gdi/colorref) değeri veya arka plan rengi varsayılan renk ise CLR_DEFAULT.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_10.cpp)]
 
-## <a name="cprogressctrlsetmarquee"></a><a name="setmarquee"></a>CProgressCtrl::SetMarquee
+## <a name="cprogressctrlsetmarquee"></a><a name="setmarquee"></a> CProgressCtrl:: Setafkümesi
 
 Geçerli ilerleme çubuğu denetimi için seçim çerçevesi modunu açar veya kapatır.
 
@@ -439,36 +438,37 @@ BOOL SetMarquee(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*fMarqueeMode*|[içinde] Seçim çerçevesi modunu açmak için TRUE veya seçim çerçevesi modunu kapatmak için FALSE.|
-|*nInterval*|[içinde] Seçim çerçevesi animasyongüncelleştirmeleri arasında milisaniye cinsinden zaman.|
+*fMarqueeMode*\
+'ndaki Kayan yazı modunu açmak için TRUE, kayan yazı modunu kapatmak için FALSE.
+
+*nAralık*\
+'ndaki Kayan yazı animasyonunun güncelleştirmeleri arasındaki milisaniye cinsinden süre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem her zaman TRUE döndürür.
+Bu yöntem her zaman TRUE değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Seçim çerçevesi modu açık olduğunda, ilerleme çubuğu animasyonlur ve bir tiyatro çerçevesi üzerinde bir işaret gibi kaydırılır.
+Kayan yazı modu açık olduğunda, ilerleme çubuğu canlandırılır ve bir sinemalı seçim çerçevesiyle bir oturum gibi kayar.
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_SETMARQUEE](/windows/win32/Controls/pbm-setmarquee) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_SETMARQUEE](/windows/win32/Controls/pbm-setmarquee) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_progressCtrl`ilerleme çubuğu denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_progressCtrl` ilerleme çubuğu denetimine programlı bir şekilde erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, seçim çerçevesi kaydırma animasyonuna başlar ve durur.
+Aşağıdaki kod örneği başlar ve kayan yazı animasyonunu sonlandırır.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_11.cpp)]
 
-## <a name="cprogressctrlsetpos"></a><a name="setpos"></a>CProgressCtrl::SetPos
+## <a name="cprogressctrlsetpos"></a><a name="setpos"></a> CProgressCtrl:: SetPos
 
-Progress çubuğu denetiminin geçerli konumunu *nPos* tarafından belirtildiği şekilde ayarlar ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.
+İlerleme çubuğu denetiminin geçerli konumunu *nPos* tarafından belirtilen şekilde ayarlar ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.
 
 ```
 int SetPos(int nPos);
@@ -485,13 +485,13 @@ int SetPos(int nPos);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlerleme çubuğu denetiminin konumu ekrandaki fiziksel konum değil, [SetRange'de](#setrange)belirtilen üst ve alt aralık arasındadır.
+İlerleme çubuğu denetiminin konumu ekranda fiziksel konum değildir, bunun yerine [SetRange](#setrange)içinde belirtilen üst ve alt Aralık arasında olur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#7](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_12.cpp)]
 
-## <a name="cprogressctrlsetrange"></a><a name="setrange"></a>CProgressCtrl::SetAralığı
+## <a name="cprogressctrlsetrange"></a><a name="setrange"></a> CProgressCtrl:: SetRange
 
 İlerleme çubuğu denetiminin aralığının üst ve alt sınırlarını ayarlar ve çubuğu yeni aralıkları yansıtacak şekilde yeniden çizer.
 
@@ -508,20 +508,20 @@ void SetRange32(
 ### <a name="parameters"></a>Parametreler
 
 *nLower*<br/>
-Aralığın alt sınırını belirtir (varsayılan değer sıfırdır).
+Aralığın alt sınırını belirtir (varsayılan sıfırdır).
 
 *nUpper*<br/>
-Aralığın üst sınırını belirtir (varsayılan değer 100'dür).
+Aralığın üst sınırını belirtir (varsayılan değer 100 ' dir).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlev, `SetRange32` ilerleme denetimi için 32 bit aralığını ayarlar.
+Üye işlevi, `SetRange32` ilerleme denetimi için 32 bitlik aralığı ayarlar.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#8](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_13.cpp)]
 
-## <a name="cprogressctrlsetstate"></a><a name="setstate"></a>CProgressCtrl::SetState
+## <a name="cprogressctrlsetstate"></a><a name="setstate"></a> CProgressCtrl:: SetState
 
 Geçerli ilerleme çubuğu denetiminin durumunu ayarlar.
 
@@ -531,9 +531,12 @@ int SetState(int iState);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*iDevlet*|[içinde] İlerleme çubuğunu belirleyecek eyalet. Aşağıdaki değerlerden birini kullanın:<br /><br /> - PBST_NORMAL - Devam Ediyor<br />- PBST_ERROR - Hata<br />- PBST_PAUSED - Duraklatıldı|
+*iState*\
+'ndaki İlerleme çubuğunu ayarlanacak durum. Aşağıdaki değerlerden birini kullanın:
+
+- `PBST_NORMAL` -Devam ediyor
+- `PBST_ERROR` -Hata
+- `PBST_PAUSED` -Duraklatıldı
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -541,23 +544,23 @@ Geçerli ilerleme çubuğu denetiminin önceki durumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK'da açıklanan [PBM_SETSTATE](/windows/win32/Controls/pbm-setstate) iletisini gönderir.
+Bu yöntem, Windows SDK açıklanan [PBM_SETSTATE](/windows/win32/Controls/pbm-setstate) iletisini gönderir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, `m_progressCtrl`ilerleme çubuğu denetimine programlı olarak erişmek için kullanılan değişkeni tanımlar. Bu değişken sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, `m_progressCtrl` ilerleme çubuğu denetimine programlı bir şekilde erişmek için kullanılan değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_5.h)]
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, geçerli ilerleme çubuğu denetiminin durumunu Duraklatılmış veya Devam Eden olarak ayarlar.
+Aşağıdaki kod örneği, geçerli ilerleme çubuğu denetiminin durumunu duraklatılmış veya devam ediyor olarak ayarlar.
 
 [!code-cpp[NVC_MFC_CProgressCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_14.cpp)]
 
-## <a name="cprogressctrlsetstep"></a><a name="setstep"></a>CProgressCtrl::SetStep
+## <a name="cprogressctrlsetstep"></a><a name="setstep"></a> CProgressCtrl:: SetStep
 
-İlerleme çubuğu denetimi için adım artışını belirtir.
+İlerleme çubuğu denetiminin adım artışını belirtir.
 
 ```
 int SetStep(int nStep);
@@ -565,26 +568,26 @@ int SetStep(int nStep);
 
 ### <a name="parameters"></a>Parametreler
 
-*nAdım*<br/>
-Yeni adım artış.
+*nStep*<br/>
+Yeni adım artışı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki adım artış.
+Önceki adım artışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Adım artış, ilerleme çubuğunun geçerli konumunu `CProgressCtrl::StepIt` artırma çağrısının miktarıdır.
+Adım artışı, bir çağrının `CProgressCtrl::StepIt` ilerleme çubuğunun geçerli konumunu arttığı tutardır.
 
-Varsayılan adım artış 10'dur.
+Varsayılan adım artışı 10 ' dur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFC_CProgressCtrl#9](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_15.cpp)]
 
-## <a name="cprogressctrlstepit"></a><a name="stepit"></a>CProgressCtrl::AdımIt
+## <a name="cprogressctrlstepit"></a><a name="stepit"></a> CProgressCtrl:: StepIt
 
-İlerleme çubuğu denetimi için geçerli konumu adım adım artışla ilerletin ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.
+Adım artışı tarafından ilerleme çubuğu denetiminin geçerli konumunu ilerletir ve çubuğu yeni konumu yansıtacak şekilde yeniden çizer.
 
 ```
 int StepIt();
@@ -596,7 +599,7 @@ int StepIt();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Adım artış `CProgressCtrl::SetStep` üye işlevi tarafından ayarlanır.
+Adım artışı `CProgressCtrl::SetStep` üye işlevi tarafından ayarlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -604,6 +607,6 @@ Adım artış `CProgressCtrl::SetStep` üye işlevi tarafından ayarlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Numune CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

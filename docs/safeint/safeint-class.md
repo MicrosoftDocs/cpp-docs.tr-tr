@@ -10,19 +10,19 @@ helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-ms.openlocfilehash: 97d81401cfd01d6d39457a9d63c39bc25901128e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d61ce20a8644ca64d37c0eca605d52fb308c0863
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219358"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88560971"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 
 Tamsayı taşmasını önlemeye yardımcı olmak için tamsayı temel öğelerini genişletir ve farklı tamsayılar türlerini karşılaştırmanızı sağlar.
 
 > [!NOTE]
-> SafeInt Kitaplığı 'nın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) . SafeInt kitaplığını kullanmak için depoyu kopyalayın ve`#include "SafeInt.hpp"`
+> SafeInt Kitaplığı 'nın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) . SafeInt kitaplığını kullanmak için depoyu kopyalayın ve `#include "SafeInt.hpp"`
 
 ## <a name="syntax"></a>Söz dizimi
 
@@ -33,17 +33,23 @@ class SafeInt;
 
 ### <a name="parameters"></a>Parametreler
 
-| Şablon  |  Açıklama |
-|--------|------------|
-| T         |  Değiştiren tamsayı veya Boole parametresinin türü `SafeInt` . |
-| E         |  Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü. |
-| U         |  İkincil işlenenin tamsayı veya Boole parametresinin türü. |
+*`T`*\
+Değiştiren tamsayı veya Boole parametresinin türü `SafeInt` .
 
-| Parametre  |  Açıklama |
-|---------|-----------------|
-| *sağ taraftan*      |  'ndaki Birkaç bağımsız işlevlerde işlecin sağ tarafındaki değeri temsil eden bir giriş parametresi. |
-| *i*        |  'ndaki Birkaç bağımsız işlevlerde işlecin sağ tarafındaki değeri temsil eden bir giriş parametresi. |
-| *bitlik*     |  'ndaki Birkaç bağımsız işlevlerde işlecin sağ tarafındaki değeri temsil eden bir giriş parametresi. |
+*`E`*\
+Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
+
+*`U`*\
+İkincil işlenenin tamsayı veya Boole parametresinin türü.
+
+*sağ taraftan*\
+'ndaki Birkaç bağımsız işlevlerde işlecin sağ tarafındaki değeri temsil eden bir giriş parametresi.
+
+*kaydedemiyorum*\
+'ndaki Birkaç bağımsız işlevlerde işlecin sağ tarafındaki değeri temsil eden bir giriş parametresi.
+
+*bitlik*\
+'ndaki Birkaç bağımsız işlevlerde işlecin sağ tarafındaki değeri temsil eden bir giriş parametresi.
 
 ## <a name="members"></a>Üyeler
 
@@ -55,7 +61,7 @@ class SafeInt;
 
 ### <a name="assignment-operators"></a>Atama İşleçleri
 
-| Ad  |  Sözdizimi |
+| Adı  |  Syntax |
 |----|---------|
 | =     |  `template<typename U>`<br />`SafeInt<T,E>& operator= (const U& rhs)` |
 | =     |  `SafeInt<T,E>& operator= (const T& rhs) throw()` |
@@ -64,7 +70,7 @@ class SafeInt;
 
 ### <a name="casting-operators"></a>Atama İşleçleri
 
-| Ad              |  Sözdizimi |
+| Adı              |  Syntax |
 |------|---------------------------------|
 | bool              |  `operator bool() throw()` |
 | char              |  `operator char() const` |
@@ -82,7 +88,7 @@ class SafeInt;
 
 ### <a name="comparison-operators"></a>Karşılaştırma İşleçleri
 
-| Ad  |  Sözdizimi |
+| Adı  |  Syntax |
 |----|----------------|
 | \<     |  `template<typename U>`<br /><br /> `bool operator< (U rhs) const throw()` |
 | \<     |  `bool operator< (SafeInt<T,E> rhs) const throw()` |
@@ -101,7 +107,7 @@ class SafeInt;
 
 ### <a name="arithmetic-operators"></a>Aritmetik İşleçler
 
-| Ad  |  Sözdizimi |
+| Adı  |  Syntax |
 |----|--------------|
 | +     |  `const SafeInt<T,E>& operator+ () const throw()` |
 | -     |  `SafeInt<T,E> operator- () const` |
@@ -134,7 +140,7 @@ class SafeInt;
 
 ### <a name="logical-operators"></a>Mantıksal İşleçler
 
-| Ad     |  Sözdizimi |
+| Adı     |  Syntax |
 |------|--------------|
 | !        |  `bool operator !() const throw()` |
 | ~        |  `SafeInt<T,E> operator~ () const throw()` |
@@ -174,7 +180,7 @@ Bu konudaki operatörler tablosunda, sınıfının desteklediği matematik ve ka
 
 `SafeInt`Ve integral türü arasındaki karşılaştırma işlemleri her iki yönde de gerçekleştirilebilir. Örneğin, `SafeInt<int>(x) < y` ve `y> SafeInt<int>(x)` geçerli olur ve aynı sonucu döndürür.
 
-Birçok ikili işleç iki farklı tür kullanmayı desteklemez `SafeInt` . Bu bir örneği `&` işleçtir. `SafeInt<T, E> & int`desteklenir, ancak `SafeInt<T, E> & SafeInt<U, E>` değil. İkinci örnekte, derleyici döndürülecek parametre türünü bilmez. Bu soruna yönelik bir çözüm ikinci parametreyi temel türe dönüştürmek olur. Aynı parametreleri kullanarak bu, ile yapılabilir `SafeInt<T, E> & (U)SafeInt<U, E>` .
+Birçok ikili işleç iki farklı tür kullanmayı desteklemez `SafeInt` . Bu bir örneği `&` işleçtir. `SafeInt<T, E> & int` desteklenir, ancak `SafeInt<T, E> & SafeInt<U, E>` değil. İkinci örnekte, derleyici döndürülecek parametre türünü bilmez. Bu soruna yönelik bir çözüm ikinci parametreyi temel türe dönüştürmek olur. Aynı parametreleri kullanarak bu, ile yapılabilir `SafeInt<T, E> & (U)SafeInt<U, E>` .
 
 > [!NOTE]
 > Bit düzeyinde işlemler için, iki farklı parametre aynı boyutta olmalıdır. Boyutlar farklıysa, derleyici bir [onaylama](../mfc/reference/diagnostic-services.md#assert) özel durumu oluşturur. Bu işlemin sonuçlarının doğru olması garanti edilemez. Bu sorunu çözmek için, daha küçük parametreyi, daha büyük parametreyle aynı boyuta gelene kadar dönüştürün.
@@ -207,12 +213,12 @@ Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);
 Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
 ```
 
-`T`ve `U` bir Boole türü, karakter türü veya tamsayı türü atanabilir. Tamsayı türleri imzalanabilir veya imzasız ve 8 bitten 64 bite kadar herhangi bir boyutta olabilir.
+`T` ve `U` bir Boole türü, karakter türü veya tamsayı türü atanabilir. Tamsayı türleri imzalanabilir veya imzasız ve 8 bitten 64 bite kadar herhangi bir boyutta olabilir.
 
 > [!NOTE]
 > `SafeInt`Sınıfı herhangi bir tür tamsayıyı kabul etse de, imzasız türler ile daha verimli bir şekilde çalışır.
 
-`E`, kullanan hata işleme mekanizmasıdır `SafeInt` . SafeInt Kitaplığı ile iki hata işleme mekanizması sağlanır. Varsayılan ilke `SafeIntErrorPolicy_SafeIntException` , bir hata oluştuğunda [Safeintexception sınıfı](safeintexception-class.md) özel durumu oluşturur. Diğer ilke, `SafeIntErrorPolicy_InvalidParameter` bir hata oluşursa programı durduran olur.
+`E` , kullanan hata işleme mekanizmasıdır `SafeInt` . SafeInt Kitaplığı ile iki hata işleme mekanizması sağlanır. Varsayılan ilke `SafeIntErrorPolicy_SafeIntException` , bir hata oluştuğunda [Safeintexception sınıfı](safeintexception-class.md) özel durumu oluşturur. Diğer ilke, `SafeIntErrorPolicy_InvalidParameter` bir hata oluşursa programı durduran olur.
 
 Hata ilkesini özelleştirmek için iki seçenek vardır. İlk seçenek, oluştururken parametresini ayarlamak olur `E` `SafeInt` . Yalnızca bir hata işleme ilkesini değiştirmek istediğinizde bu seçeneği kullanın `SafeInt` . Diğer seçenek, kitaplığı eklemeden önce özelleştirilmiş hata işleme sınıfınız olarak _SAFEINT_DEFAULT_ERROR_POLICY tanımlamaktır `SafeInt` . Kodunuzda sınıfın tüm örnekleri için varsayılan hata işleme ilkesini değiştirmek istediğinizde bu seçeneği kullanın `SafeInt` .
 
@@ -248,7 +254,7 @@ int main()
 
 **Ad alanı:** yok
 
-## <a name="safeintsafeint"></a><a name="safeint"></a>SafeInt:: SafeInt
+## <a name="safeintsafeint"></a><a name="safeint"></a> SafeInt:: SafeInt
 
 Bir `SafeInt` nesnesi oluşturur.
 
@@ -275,9 +281,9 @@ SafeInt (const U& i)
 'ndaki Yeni nesnenin Boole değeri `SafeInt` .
 
 `u`<br/>
-'ndaki `SafeInt`U türünde bir. Yeni `SafeInt` nesne *u*ile aynı değere sahip olacaktır, ancak T türünde olacaktır.
+'ndaki `SafeInt` U türünde bir. Yeni `SafeInt` nesne *u*ile aynı değere sahip olacaktır, ancak T türünde olacaktır.
 
-`U`İçinde depolanan verilerin türü `SafeInt` . Bu bir Boolean, karakter ya da tamsayı türü olabilir. Bir tamsayı türü ise, imzalanmış veya imzasız olabilir ve 8 ile 64 bit arasında olabilir.
+`U` İçinde depolanan verilerin türü `SafeInt` . Bu bir Boolean, karakter ya da tamsayı türü olabilir. Bir tamsayı türü ise, imzalanmış veya imzasız olabilir ve 8 ile 64 bit arasında olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 

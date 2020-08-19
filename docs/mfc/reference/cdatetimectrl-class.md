@@ -40,18 +40,18 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: 80b6177d788cfbe44388ec1e6a203b8037f834bc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f04cce93aa6a86d11c2d9ec953992a0f90f635c5
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223102"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561953"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
 Tarih ve saat seçici denetiminin işlevselliğini Kapsüller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDateTimeCtrl : public CWnd
@@ -108,7 +108,7 @@ Tarih ve saat seçici denetimi Ayrıca, [CDateTimeCtrl kullanma](../../mfc/using
 
 **Üstbilgi:** afxdtctl. h
 
-## <a name="cdatetimectrlcdatetimectrl"></a><a name="cdatetimectrl"></a>CDateTimeCtrl:: CDateTimeCtrl
+## <a name="cdatetimectrlcdatetimectrl"></a><a name="cdatetimectrl"></a> CDateTimeCtrl:: CDateTimeCtrl
 
 Bir `CDateTimeCtrl` nesnesi oluşturur.
 
@@ -116,7 +116,7 @@ Bir `CDateTimeCtrl` nesnesi oluşturur.
 CDateTimeCtrl();
 ```
 
-## <a name="cdatetimectrlclosemonthcal"></a><a name="closemonthcal"></a>CDateTimeCtrl:: CloseMonthCal
+## <a name="cdatetimectrlclosemonthcal"></a><a name="closemonthcal"></a> CDateTimeCtrl:: CloseMonthCal
 
 Geçerli tarih ve saat seçici denetimini kapatır.
 
@@ -140,7 +140,7 @@ Aşağıdaki kod örneği, geçerli tarih ve saat seçici denetiminin açılan t
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_2.cpp)]
 
-## <a name="cdatetimectrlcreate"></a><a name="create"></a>CDateTimeCtrl:: Create
+## <a name="cdatetimectrlcreate"></a><a name="create"></a> CDateTimeCtrl:: Create
 
 Tarih ve saat seçici denetimini oluşturur ve `CDateTimeCtrl` nesneye ekler.
 
@@ -184,7 +184,7 @@ Oluşturma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_3.cpp)]
 
-## <a name="cdatetimectrlgetdatetimepickerinfo"></a><a name="getdatetimepickerinfo"></a>CDateTimeCtrl:: Getdatetimepickerınfo
+## <a name="cdatetimectrlgetdatetimepickerinfo"></a><a name="getdatetimepickerinfo"></a> CDateTimeCtrl:: Getdatetimepickerınfo
 
 Geçerli tarih ve saat seçici denetimiyle ilgili bilgileri alır.
 
@@ -194,9 +194,8 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*pDateTimePickerInfo*|dışı Geçerli tarih ve saat seçici denetiminin açıklamasını alan [Datetimepickerınfo](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) yapısına yönelik bir işaretçi.<br /><br /> Çağıran, bu yapıyı ayırmaktan sorumludur. Ancak, bu yöntem yapının *cbSize* üyesini başlatır.|
+*pDateTimePickerInfo*\
+dışı Geçerli tarih ve saat seçici denetiminin açıklamasını alan [Datetimepickerınfo](/windows/win32/api/commctrl/ns-commctrl-datetimepickerinfo) yapısına yönelik bir işaretçi. Çağıran, bu yapıyı ayırmaktan sorumludur. Ancak, bu yöntem yapının *cbSize* üyesini başlatır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -218,7 +217,7 @@ Aşağıdaki kod örneği, geçerli tarih ve saat seçici denetimiyle ilgili bil
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_4.cpp)]
 
-## <a name="cdatetimectrlgetmonthcalcolor"></a><a name="getmonthcalcolor"></a>CDateTimeCtrl:: GetMonthCalColor
+## <a name="cdatetimectrlgetmonthcalcolor"></a><a name="getmonthcalcolor"></a> CDateTimeCtrl:: GetMonthCalColor
 
 Tarih ve saat seçici denetimindeki ay takviminin belirli bir kısmının rengini alır.
 
@@ -243,7 +242,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_GETMCCOLOR](
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_5.cpp)]
 
-## <a name="cdatetimectrlgetmonthcalctrl"></a><a name="getmonthcalctrl"></a>CDateTimeCtrl:: GetMonthCalCtrl
+## <a name="cdatetimectrlgetmonthcalctrl"></a><a name="getmonthcalctrl"></a> CDateTimeCtrl:: GetMonthCalCtrl
 
 `CMonthCalCtrl`Tarih ve saat seçici denetimiyle ilişkili nesneyi alır.
 
@@ -263,7 +262,7 @@ Tarih ve saat seçici denetimleri, Kullanıcı açılır oka tıkladığında bi
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_6.cpp)]
 
-## <a name="cdatetimectrlgetmonthcalfont"></a><a name="getmonthcalfont"></a>CDateTimeCtrl:: GetMonthCalFont
+## <a name="cdatetimectrlgetmonthcalfont"></a><a name="getmonthcalfont"></a> CDateTimeCtrl:: GetMonthCalFont
 
 Tarih ve saat seçici denetiminin aylık Takvim denetimi tarafından şu anda kullanılan yazı tipini alır.
 
@@ -279,7 +278,7 @@ CFont* GetMonthCalFont() const;
 
 `CFont`Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve bir sonraki boşta işleme süresi boyunca yok edilir.
 
-## <a name="cdatetimectrlgetmonthcalstyle"></a><a name="getmonthcalstyle"></a>CDateTimeCtrl:: GetMonthCalStyle
+## <a name="cdatetimectrlgetmonthcalstyle"></a><a name="getmonthcalstyle"></a> CDateTimeCtrl:: GetMonthCalStyle
 
 Geçerli tarih ve saat seçici denetimiyle ilişkili olan açılan ay takvimi denetiminin stilini alır.
 
@@ -295,7 +294,7 @@ Tarih ve saat Seçici denetim stillerinin bit tabanlı birleşimi (veya) olan a�
 
 Bu yöntem, Windows SDK açıklanan [DTM_GETMCSTYLE](/windows/win32/Controls/dtm-getmcstyle) iletisini gönderir.
 
-## <a name="cdatetimectrlgetrange"></a><a name="getrange"></a>CDateTimeCtrl:: GetRange
+## <a name="cdatetimectrlgetrange"></a><a name="getrange"></a> CDateTimeCtrl:: GetRange
 
 Tarih ve saat seçici denetimi için izin verilen en düşük sistem sürelerini alır.
 
@@ -321,11 +320,11 @@ Nesnede `COleDateTime` `CTime` izin verilen en son saati içeren bir nesne veya 
 
 Hangi aralıkların ayarlandığını belirten bayrakları içeren bir DWORD değeri. Eğer
 
-`return value & GDTR_MAX`= = 0
+`return value & GDTR_MAX` = = 0
 
 ikinci parametre geçerli olur. Benzer şekilde,
 
-`return value & GDTR_MIN`= = 0
+`return value & GDTR_MIN` = = 0
 
 ardından ilk parametre geçerli olur.
 
@@ -337,7 +336,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_GETRANGE](/w
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#4](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_7.cpp)]
 
-## <a name="cdatetimectrlgettime"></a><a name="gettime"></a>CDateTimeCtrl:: GetTime
+## <a name="cdatetimectrlgettime"></a><a name="gettime"></a> CDateTimeCtrl:: GetTime
 
 Tarih ve saat seçici denetiminden Şu anda seçili olan saati alır ve belirtilen `SYSTEMTIME` yapıya koyar.
 
@@ -369,7 +368,7 @@ Yukarıdaki ikinci ve üçüncü sürümlerde DWORD dönüş değeri, tarih ve s
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#5](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_8.cpp)]
 
-## <a name="cdatetimectrlgetidealsize"></a><a name="getidealsize"></a>CDateTimeCtrl:: Getısatıcıboyutu
+## <a name="cdatetimectrlgetidealsize"></a><a name="getidealsize"></a> CDateTimeCtrl:: Getısatıcıboyutu
 
 Geçerli tarih veya saati göstermek için gereken tarih ve saat seçici denetiminin ideal boyutunu döndürür.
 
@@ -379,9 +378,8 @@ BOOL GetIdealSize(LPSIZE psize) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*psıze*|dışı Denetim için ideal boyutu içeren bir [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi.|
+*psıze*\
+dışı Denetim için ideal boyutu içeren bir [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -403,7 +401,7 @@ Aşağıdaki kod örneği, tarih ve saat seçici denetimini göstermek için ide
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_9.cpp)]
 
-## <a name="cdatetimectrlsetformat"></a><a name="setformat"></a>CDateTimeCtrl:: SetFormat
+## <a name="cdatetimectrlsetformat"></a><a name="setformat"></a> CDateTimeCtrl:: SetFormat
 
 Tarih ve saat seçici denetiminin görüntüsünü, belirli bir biçim dizesine uygun olarak ayarlar.
 
@@ -431,7 +429,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_SETFORMAT](/
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl#6](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_10.cpp)]
 
-## <a name="cdatetimectrlsetmonthcalcolor"></a><a name="setmonthcalcolor"></a>CDateTimeCtrl:: SetMonthCalColor
+## <a name="cdatetimectrlsetmonthcalcolor"></a><a name="setmonthcalcolor"></a> CDateTimeCtrl:: SetMonthCalColor
 
 Tarih ve saat seçici denetimindeki ay takviminin belirli bir kısmının rengini ayarlar.
 
@@ -470,7 +468,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_SETMCCOLOR](
 
   [CDateTimeCtrl:: GetMonthCalColor](#getmonthcalcolor)örneğine bakın.
 
-## <a name="cdatetimectrlsetmonthcalfont"></a><a name="setmonthcalfont"></a>CDateTimeCtrl:: SetMonthCalFont
+## <a name="cdatetimectrlsetmonthcalfont"></a><a name="setmonthcalfont"></a> CDateTimeCtrl:: SetMonthCalFont
 
 Tarih ve saat seçici denetiminin alt ay Takvim denetiminin kullanacağı yazı tipini ayarlar.
 
@@ -499,7 +497,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_SETMCFONT](/
 > [!NOTE]
 > Bu kodu kullanırsanız, `CDialog` türü *m_MonthFont* adlı türetilmiş sınıfınızın bir üyesini yazın `CFont` .
 
-## <a name="cdatetimectrlsetmonthcalstyle"></a><a name="setmonthcalstyle"></a>CDateTimeCtrl:: SetMonthCalStyle
+## <a name="cdatetimectrlsetmonthcalstyle"></a><a name="setmonthcalstyle"></a> CDateTimeCtrl:: SetMonthCalStyle
 
 Geçerli tarih ve saat seçici denetimiyle ilişkili olan açılan ay takvimi denetiminin stilini ayarlar.
 
@@ -509,9 +507,8 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*dwStyle*|'ndaki Aylık Takvim denetim stillerinin bit tabanlı birleşimi (veya) olan yeni bir aylık Takvim denetimi stili. Daha fazla bilgi için bkz. [aylık Takvim denetimi stilleri](/windows/win32/Controls/month-calendar-control-styles).|
+*dwStyle*\
+'ndaki Aylık Takvim denetim stillerinin bit tabanlı birleşimi (veya) olan yeni bir aylık Takvim denetimi stili. Daha fazla bilgi için bkz. [aylık Takvim denetimi stilleri](/windows/win32/Controls/month-calendar-control-styles).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -533,7 +530,7 @@ Aşağıdaki kod örneği, tarih ve saat seçici denetimini, hafta numaraların�
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_12.cpp)]
 
-## <a name="cdatetimectrlsetrange"></a><a name="setrange"></a>CDateTimeCtrl:: SetRange
+## <a name="cdatetimectrlsetrange"></a><a name="setrange"></a> CDateTimeCtrl:: SetRange
 
 Tarih ve saat seçici denetimi için izin verilen en düşük ve en yüksek sistem sürelerini ayarlar.
 
@@ -567,7 +564,7 @@ Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_SETRANGE](/w
 
   [CDateTimeCtrl:: GetRange](#getrange)örneğine bakın.
 
-## <a name="cdatetimectrlsettime"></a><a name="settime"></a>CDateTimeCtrl:: SetTime
+## <a name="cdatetimectrlsettime"></a><a name="settime"></a> CDateTimeCtrl:: SetTime
 
 Tarih ve saat seçici denetimindeki saati ayarlar.
 

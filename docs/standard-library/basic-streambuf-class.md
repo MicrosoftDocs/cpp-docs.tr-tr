@@ -94,12 +94,12 @@ helpviewer_keywords:
 - std::basic_streambuf [C++], xsgetn
 - std::basic_streambuf [C++], xsputn
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
-ms.openlocfilehash: 594cec7d4898960cb78284dcbb5ad677027cd947
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6c9a44f56e89baf32ba49241822bc4ba018f0701
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219215"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561836"
 ---
 # <a name="basic_streambuf-class"></a>basic_streambuf Sınıfı
 
@@ -230,7 +230,7 @@ Herhangi bir arabellek için aşağıdaki protokol kullanılır:
 
 **Ad alanı:** std
 
-## <a name="basic_streambufbasic_streambuf"></a><a name="basic_streambuf"></a>basic_streambuf:: basic_streambuf
+## <a name="basic_streambufbasic_streambuf"></a><a name="basic_streambuf"></a> basic_streambuf:: basic_streambuf
 
 Türünde bir nesne oluşturur `basic_streambuf` .
 
@@ -251,7 +251,7 @@ basic_streambuf(const basic_streambuf& right);
 
 İkinci korumalı Oluşturucu işaretçileri ve yerel ayarı *sağdan*kopyalar.
 
-## <a name="basic_streambufchar_type"></a><a name="char_type"></a>basic_streambuf:: char_type
+## <a name="basic_streambufchar_type"></a><a name="char_type"></a> basic_streambuf:: char_type
 
 Bir tür adını **elemtemplate** parametresiyle ilişkilendirir.
 
@@ -259,7 +259,7 @@ Bir tür adını **elemtemplate** parametresiyle ilişkilendirir.
 typedef Elem char_type;
 ```
 
-## <a name="basic_streambufeback"></a><a name="eback"></a>basic_streambuf:: eback
+## <a name="basic_streambufeback"></a><a name="eback"></a> basic_streambuf:: eback
 
 Giriş arabelleğinin başlangıcına bir işaretçi döndüren korumalı bir işlev.
 
@@ -271,7 +271,7 @@ char_type *eback() const;
 
 Giriş arabelleğinin başlangıcına yönelik bir işaretçi.
 
-## <a name="basic_streambufegptr"></a><a name="egptr"></a>basic_streambuf:: egptr
+## <a name="basic_streambufegptr"></a><a name="egptr"></a> basic_streambuf:: egptr
 
 Giriş arabelleğinin sonunu geçen bir işaretçi döndüren korumalı bir işlev.
 
@@ -283,7 +283,7 @@ char_type *egptr() const;
 
 İşaretçi yalnızca giriş arabelleğinin sonunu geçti.
 
-## <a name="basic_streambufepptr"></a><a name="epptr"></a>basic_streambuf:: epptr
+## <a name="basic_streambufepptr"></a><a name="epptr"></a> basic_streambuf:: epptr
 
 Yalnızca çıkış arabelleğinin sonunu geçen bir işaretçi döndüren korumalı bir işlev.
 
@@ -295,7 +295,7 @@ char_type *epptr() const;
 
 Bir işaretçi yalnızca çıkış arabelleğinin sonunu geçti.
 
-## <a name="basic_streambufgbump"></a><a name="gbump"></a>basic_streambuf:: gbump
+## <a name="basic_streambufgbump"></a><a name="gbump"></a> basic_streambuf:: gbump
 
 Giriş arabelleğinin sonraki işaretçisine *sayı* ekleyen korumalı bir işlev.
 
@@ -308,7 +308,7 @@ void gbump(int count);
 *biriktirme*\
 İşaretçinin ilerleme miktarı.
 
-## <a name="basic_streambufgetloc"></a><a name="getloc"></a>basic_streambuf:: getloc
+## <a name="basic_streambufgetloc"></a><a name="getloc"></a> basic_streambuf:: getloc
 
 Basic_streambuf nesnenin yerel ayarını alır.
 
@@ -342,7 +342,7 @@ int main( )
 C
 ```
 
-## <a name="basic_streambufgptr"></a><a name="gptr"></a>basic_streambuf:: gptr
+## <a name="basic_streambufgptr"></a><a name="gptr"></a> basic_streambuf:: gptr
 
 Giriş arabelleğinin bir sonraki öğesine bir işaretçi döndüren korumalı bir işlev.
 
@@ -354,7 +354,7 @@ char_type *gptr() const;
 
 Giriş arabelleğinin bir sonraki öğesine yönelik bir işaretçi.
 
-## <a name="basic_streambufimbue"></a><a name="imbue"></a>basic_streambuf:: imbue
+## <a name="basic_streambufimbue"></a><a name="imbue"></a> basic_streambuf:: imbue
 
 [Pubimbue](#pubimbue)tarafından çağrılan korumalı bir sanal işlev.
 
@@ -371,7 +371,7 @@ Bir yerel ayara başvuru.
 
 Varsayılan davranış hiçbir şey yapmaz.
 
-## <a name="basic_streambufin_avail"></a><a name="in_avail"></a>basic_streambuf:: in_avail
+## <a name="basic_streambufin_avail"></a><a name="in_avail"></a> basic_streambuf:: in_avail
 
 Arabellekten okunmaya izin veren öğe sayısını döndürür.
 
@@ -405,7 +405,7 @@ int main( )
 }
 ```
 
-## <a name="basic_streambufint_type"></a><a name="int_type"></a>basic_streambuf:: int_type
+## <a name="basic_streambufint_type"></a><a name="int_type"></a> basic_streambuf:: int_type
 
 Basic_streambuf kapsam içindeki bir tür adını bir şablon parametresindeki türlerden biriyle ilişkilendirir.
 
@@ -413,7 +413,7 @@ Basic_streambuf kapsam içindeki bir tür adını bir şablon parametresindeki t
 typedef typename traits_type::int_type int_type;
 ```
 
-## <a name="basic_streambufoff_type"></a><a name="off_type"></a>basic_streambuf:: off_type
+## <a name="basic_streambufoff_type"></a><a name="off_type"></a> basic_streambuf:: off_type
 
 Basic_streambuf kapsam içindeki bir tür adını bir şablon parametresindeki türlerden biriyle ilişkilendirir.
 
@@ -421,7 +421,7 @@ Basic_streambuf kapsam içindeki bir tür adını bir şablon parametresindeki t
 typedef typename traits_type::off_type off_type;
 ```
 
-## <a name="basic_streambufoperator"></a><a name="op_eq"></a>basic_streambuf:: operator =
+## <a name="basic_streambufoperator"></a><a name="op_eq"></a> basic_streambuf:: operator =
 
 Bu nesnenin değerlerini başka bir `basic_streambuf` nesneden atar.
 
@@ -438,7 +438,7 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 Korumalı üye işleci, giriş arabelleğini ve çıkış arabelleğini denetleyen işaretçilerin *sağına* kopyalar. Ayrıca `right.` , içinde [getloc ()](#getloc) depolar `locale object` . Döndürür **`*this`** .
 
-## <a name="basic_streambufoverflow"></a><a name="overflow"></a>basic_streambuf:: overflow
+## <a name="basic_streambufoverflow"></a><a name="overflow"></a> basic_streambuf:: overflow
 
 Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.
 
@@ -473,7 +473,7 @@ Eğer * \_ meta* şuna eşit **traits_type:: EOF**, korumalı sanal üye işlevi
 
 Tüketme tanımı türetilmiş sınıflar arasında farklılık gösterir. Örneğin, `filebuf` sınıfı dosyalarını bir dosyaya yazar, ancak `strstreambuf` sınıf bu dosyaları arabellekte tutar ve (arabellek dinamik olarak belirlendiyse), taşmaya bir çağrıya yanıt olarak arabelleği genişletir. Bu genişleme, eski arabelleği serbest bırakarak ve yeni, daha büyük bir ile değiştirilerek elde edilir. İşaretçiler gerektiği şekilde ayarlanır.
 
-## <a name="basic_streambufpbackfail"></a><a name="pbackfail"></a>basic_streambuf::p geri başarısız
+## <a name="basic_streambufpbackfail"></a><a name="pbackfail"></a> basic_streambuf::p geri başarısız
 
 Giriş akışına bir öğe geri döndürmeye çalışan korumalı bir sanal üye işlevi, ardından bunu geçerli öğe yapın (sonraki işaretçi tarafından işaret edilen).
 
@@ -500,7 +500,7 @@ Eğer * \_ Meta* , **traits_type:: EOF**değerine eşitse, geri gönderme öğes
 
 - Ortak giriş ve Çıkış akışlarına sahip bir akış arabelleği için, bir geri alma konumunu, bazı dış hedeflere, bazı veya tüm öğeleri, çıkış arabelleğinin başlangıç ve sonraki işaretçileri arasında yazarak kullanılabilir hale getirebilirsiniz.
 
-## <a name="basic_streambufpbase"></a><a name="pbase"></a>basic_streambuf::p tabanı
+## <a name="basic_streambufpbase"></a><a name="pbase"></a> basic_streambuf::p tabanı
 
 Çıkış arabelleğinin başlangıcına bir işaretçi döndüren korumalı bir işlev.
 
@@ -512,7 +512,7 @@ char_type *pbase() const;
 
 Çıkış arabelleğinin başlangıcına yönelik bir işaretçi.
 
-## <a name="basic_streambufpbump"></a><a name="pbump"></a>basic_streambuf::p çarpın
+## <a name="basic_streambufpbump"></a><a name="pbump"></a> basic_streambuf::p çarpın
 
 Çıkış arabelleğinin sonraki işaretçisine *sayı* ekleyen korumalı bir işlev.
 
@@ -525,7 +525,7 @@ void pbump(int count);
 *biriktirme*\
 Yazma konumunun ileri doğru taşınacağı karakter sayısı.
 
-## <a name="basic_streambufpos_type"></a><a name="pos_type"></a>basic_streambuf::p os_type
+## <a name="basic_streambufpos_type"></a><a name="pos_type"></a> basic_streambuf::p os_type
 
 Basic_streambuf kapsam içindeki bir tür adını bir şablon parametresindeki türlerden biriyle ilişkilendirir.
 
@@ -533,7 +533,7 @@ Basic_streambuf kapsam içindeki bir tür adını bir şablon parametresindeki t
 typedef typename traits_type::pos_type pos_type;
 ```
 
-## <a name="basic_streambufpptr"></a><a name="pptr"></a>basic_streambuf::p PTR
+## <a name="basic_streambufpptr"></a><a name="pptr"></a> basic_streambuf::p PTR
 
 Çıkış arabelleğinin bir sonraki öğesine bir işaretçi döndüren korumalı bir işlev.
 
@@ -545,7 +545,7 @@ char_type *pptr() const;
 
 Çıkış arabelleğinin bir sonraki öğesine yönelik bir işaretçi.
 
-## <a name="basic_streambufpubimbue"></a><a name="pubimbue"></a>basic_streambuf::p ubimbue
+## <a name="basic_streambufpubimbue"></a><a name="pubimbue"></a> basic_streambuf::p ubimbue
 
 Basic_streambuf nesnenin yerel ayarını ayarlar.
 
@@ -570,7 +570,7 @@ Yerel ayar nesnesinde depolanan önceki değer.
 
 Tarafından kullanılan bir örnek için bkz. [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue) `pubimbue` .
 
-## <a name="basic_streambufpubseekoff"></a><a name="pubseekoff"></a>basic_streambuf::p ubseekoff
+## <a name="basic_streambufpubseekoff"></a><a name="pubseekoff"></a> basic_streambuf::p ubseekoff
 
 Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [seekoff](#seekoff)öğesini çağırır.
 
@@ -599,7 +599,7 @@ Yeni konumu veya geçersiz bir akış konumunu döndürür ( [seekoff](#seekoff)
 
 İşaretçiyi *_Way*göre kaydırır.
 
-## <a name="basic_streambufpubseekpos"></a><a name="pubseekpos"></a>basic_streambuf::p ubseekpos
+## <a name="basic_streambufpubseekpos"></a><a name="pubseekpos"></a> basic_streambuf::p ubseekpos
 
 Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [seekpos](#seekpos)'u çağırır ve geçerli işaretçi konumunu sıfırlar.
 
@@ -623,7 +623,7 @@ Yeni konum veya geçersiz akış konumu. Akış konumunun geçersiz olup olmadı
 
 Üye işlevi [seekpos](#seekpos)(_ *SP*,) döndürür `_Which` .
 
-## <a name="basic_streambufpubsetbuf"></a><a name="pubsetbuf"></a>basic_streambuf::p ubsetarabelleğe
+## <a name="basic_streambufpubsetbuf"></a><a name="pubsetbuf"></a> basic_streambuf::p ubsetarabelleğe
 
 Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [setarabelleğe](#setbuf)çağırır.
 
@@ -645,7 +645,7 @@ Arabelleğin boyutu.
 
 [Setarabelleğe](#setbuf)( `_Buffer` , `count` ) döndürür.
 
-## <a name="basic_streambufpubsync"></a><a name="pubsync"></a>basic_streambuf::p ubsync
+## <a name="basic_streambufpubsync"></a><a name="pubsync"></a> basic_streambuf::p ubsync
 
 Türetilmiş bir sınıfta geçersiz kılınan korumalı bir sanal işlev olan [eşitleme](#sync)çağırır ve bu arabellekle ilişkili dış akışı güncelleştirir.
 
@@ -657,7 +657,7 @@ int pubsync();
 
 [Eşitleme](#sync) veya hata durumunda-1 döndürür.
 
-## <a name="basic_streambufsbumpc"></a><a name="sbumpc"></a>basic_streambuf:: ssekmeli c
+## <a name="basic_streambufsbumpc"></a><a name="sbumpc"></a> basic_streambuf:: ssekmeli c
 
 Akış işaretçisini taşıyarak geçerli öğeyi okur ve döndürür.
 
@@ -698,7 +698,7 @@ int main( )
 51
 ```
 
-## <a name="basic_streambufseekoff"></a><a name="seekoff"></a>basic_streambuf:: seekoff
+## <a name="basic_streambufseekoff"></a><a name="seekoff"></a> basic_streambuf:: seekoff
 
 Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.
 
@@ -738,7 +738,7 @@ Genellikle, **& ios_base:: ın** sıfır değilse, giriş akışı etkilenir ve 
 
 İşlev, akış konumunu veya konumlarını değiştirmek için başarılı olursa, sonuçta elde edilen akış konumunu veya sonuç akış konumlarından birini döndürür. Aksi takdirde, geçersiz bir akış konumu döndürür. Varsayılan davranış, geçersiz bir akış konumu döndürmaktır.
 
-## <a name="basic_streambufseekpos"></a><a name="seekpos"></a>basic_streambuf:: seekpos
+## <a name="basic_streambufseekpos"></a><a name="seekpos"></a> basic_streambuf:: seekpos
 
 Denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışan korumalı bir sanal üye işlevi.
 
@@ -766,7 +766,7 @@ Genellikle, **& ios_base:: ın** sıfır değilse, giriş akışı etkilenir ve 
 
 İşlev, akış konumunu veya konumlarını değiştirmek için başarılı olursa, sonuçta elde edilen akış konumunu veya sonuç akış konumlarından birini döndürür. Aksi takdirde, geçersiz bir akış konumu döndürür (-1). Varsayılan davranış, geçersiz bir akış konumu döndürmaktır.
 
-## <a name="basic_streambufsetbuf"></a><a name="setbuf"></a>basic_streambuf:: setarabelleğe
+## <a name="basic_streambufsetbuf"></a><a name="setbuf"></a> basic_streambuf:: setarabelleğe
 
 Her türetilmiş akış arabelleğine özgü bir işlem gerçekleştiren korumalı bir sanal üye işlevi.
 
@@ -790,9 +790,9 @@ Varsayılan davranış döndürülür **`this`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. [basic_filebuf](../standard-library/basic-filebuf-class.md). `setbuf`nesnenin kullanacağı bir bellek alanı sağlar `streambuf` . Arabelleğin türetilmiş sınıflarda tanımlı olarak nasıl kullanıldığı.
+Bkz. [basic_filebuf](../standard-library/basic-filebuf-class.md). `setbuf` nesnenin kullanacağı bir bellek alanı sağlar `streambuf` . Arabelleğin türetilmiş sınıflarda tanımlı olarak nasıl kullanıldığı.
 
-## <a name="basic_streambufsetg"></a><a name="setg"></a>basic_streambuf:: setg
+## <a name="basic_streambufsetg"></a><a name="setg"></a> basic_streambuf:: setg
 
 _ *Gbeg* 'yi başlangıç işaretçisine, `_Gnext` sonraki işaretçiye ve `_Gend` giriş arabelleğinin bitiş işaretçisine depolayan korumalı bir işlev.
 
@@ -813,7 +813,7 @@ Arabelleğin ortasında bir yere işaretçi.
 *_Gend*\
 Arabelleğin sonuna yönelik bir işaretçi.
 
-## <a name="basic_streambufsetp"></a><a name="setp"></a>basic_streambuf:: setp
+## <a name="basic_streambufsetp"></a><a name="setp"></a> basic_streambuf:: setp
 
 Başlangıç İşaretçisinde *_Pbeg* depolayan ve çıkış arabelleğinin bitiş işaretçisindeki *_Pend* korunan bir işlev.
 
@@ -829,7 +829,7 @@ Arabelleğin başlangıcına yönelik bir işaretçi.
 *_Pend*\
 Arabelleğin sonuna yönelik bir işaretçi.
 
-## <a name="basic_streambufsgetc"></a><a name="sgetc"></a>basic_streambuf:: sgetc
+## <a name="basic_streambufsgetc"></a><a name="sgetc"></a> basic_streambuf:: sgetc
 
 Akışta konum değişikliği yapmadan geçerli öğeyi döndürür.
 
@@ -865,7 +865,7 @@ int main( )
 }
 ```
 
-## <a name="basic_streambufsgetn"></a><a name="sgetn"></a>basic_streambuf:: sgetn
+## <a name="basic_streambufsgetn"></a><a name="sgetn"></a> basic_streambuf:: sgetn
 
 Giriş arabelleğinden karakter *sayısına* kadar ayıklar ve bunları, belirtilen arabellek *PTR*içinde depolar.
 
@@ -920,7 +920,7 @@ int main()
 }
 ```
 
-## <a name="basic_streambufshowmanyc"></a><a name="showmanyc"></a>basic_streambuf:: showmanyc
+## <a name="basic_streambufshowmanyc"></a><a name="showmanyc"></a> basic_streambuf:: showmanyc
 
 Giriş akışından ayıklanabilen karakter sayısının sayısını döndüren ve programın sonsuz bir beklemeye tabi olmamasını sağlamak için korunan bir sanal üye işlevi.
 
@@ -932,7 +932,7 @@ virtual streamsize showmanyc();
 
 Varsayılan davranış sıfır değerini döndürmemelidir.
 
-## <a name="basic_streambufsnextc"></a><a name="snextc"></a>basic_streambuf:: snextc
+## <a name="basic_streambufsnextc"></a><a name="snextc"></a> basic_streambuf:: snextc
 
 Geçerli öğeyi okur ve aşağıdaki öğeyi döndürür.
 
@@ -972,7 +972,7 @@ aa
 aa97
 ```
 
-## <a name="basic_streambufsputbackc"></a><a name="sputbackc"></a>basic_streambuf:: sputbackc
+## <a name="basic_streambufsputbackc"></a><a name="sputbackc"></a> basic_streambuf:: sputbackc
 
 Akışa bir char_type koyar.
 
@@ -1020,7 +1020,7 @@ int main( )
 }
 ```
 
-## <a name="basic_streambufsputc"></a><a name="sputc"></a>basic_streambuf:: sputc
+## <a name="basic_streambufsputc"></a><a name="sputc"></a> basic_streambuf:: sputc
 
 Akışa bir karakter koyar.
 
@@ -1063,7 +1063,7 @@ a
 a
 ```
 
-## <a name="basic_streambufsputn"></a><a name="sputn"></a>basic_streambuf:: sputn
+## <a name="basic_streambufsputn"></a><a name="sputn"></a> basic_streambuf:: sputn
 
 Akışa bir karakter dizesi koyar.
 
@@ -1109,7 +1109,7 @@ test
 4
 ```
 
-## <a name="basic_streambufstossc"></a><a name="stossc"></a>basic_streambuf:: stossc
+## <a name="basic_streambufstossc"></a><a name="stossc"></a> basic_streambuf:: stossc
 
 Akıştaki geçerli öğeyi geçmiş olarak taşıyın.
 
@@ -1140,7 +1140,7 @@ int main( )
 }
 ```
 
-## <a name="basic_streambufsungetc"></a><a name="sungetc"></a>basic_streambuf:: sungetc
+## <a name="basic_streambufsungetc"></a><a name="sungetc"></a> basic_streambuf:: sungetc
 
 Akıştan bir karakter alır.
 
@@ -1190,7 +1190,7 @@ int main( )
 }
 ```
 
-## <a name="basic_streambufswap"></a><a name="swap"></a>basic_streambuf:: swap
+## <a name="basic_streambufswap"></a><a name="swap"></a> basic_streambuf:: swap
 
 Bu nesnedeki değerleri, belirtilen nesnedeki değerler için değiştirir `basic_streambuf` .
 
@@ -1200,15 +1200,14 @@ void swap(basic_streambuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Right*|`basic_streambuf`Değer değişimi için kullanılan nesneye bir lvalue başvurusu.|
+*Right*\
+`basic_streambuf`Değer değişimi için kullanılan nesneye bir lvalue başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Korumalı üye işlevi, ve ' i *denetleyen tüm* işaretçilerle birlikte değiş tokuş eder `input buffer` `output buffer` . Ayrıca `right.` , nesnesi ile [getloc ()](#getloc) öğesini de değiş tokuş eder `locale` .
 
-## <a name="basic_streambufsync"></a><a name="sync"></a>basic_streambuf:: Sync
+## <a name="basic_streambufsync"></a><a name="sync"></a> basic_streambuf:: Sync
 
 Denetlenen akışları ilişkili dış akışlarla eşitlemeye çalışan korumalı bir sanal işlev.
 
@@ -1222,9 +1221,9 @@ virtual int sync();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`sync`çıkış arabelleği için başlangıç ve sonraki işaretçiler arasındaki öğelerin yazılmasını içerir. Giriş arabelleğinin sonraki ve bitiş işaretçileri arasında herhangi bir öğenin geri yerleştirilmesi gerekmez.
+`sync` çıkış arabelleği için başlangıç ve sonraki işaretçiler arasındaki öğelerin yazılmasını içerir. Giriş arabelleğinin sonraki ve bitiş işaretçileri arasında herhangi bir öğenin geri yerleştirilmesi gerekmez.
 
-## <a name="basic_streambuftraits_type"></a><a name="traits_type"></a>basic_streambuf:: traits_type
+## <a name="basic_streambuftraits_type"></a><a name="traits_type"></a> basic_streambuf:: traits_type
 
 Bir tür adını **tr** şablon parametresiyle ilişkilendirir.
 
@@ -1232,7 +1231,7 @@ Bir tür adını **tr** şablon parametresiyle ilişkilendirir.
 typedef Tr traits_type;
 ```
 
-## <a name="basic_streambufuflow"></a><a name="uflow"></a>basic_streambuf:: uflow
+## <a name="basic_streambufuflow"></a><a name="uflow"></a> basic_streambuf:: uflow
 
 Giriş akışından geçerli öğeyi çıkaran korumalı bir sanal işlev.
 
@@ -1256,7 +1255,7 @@ Korumalı sanal üye işlevi, giriş akışından o geçerli öğeyi çıkarmaya
 
 İşlev başarılı olmazsa, **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)döndürür veya bir özel durum oluşturur. Aksi halde, `ch` yukarıda açıklandığı gibi dönüştürülmüş olarak çevrilmiş şekilde, giriş akışındaki geçerli öğeyi döndürür ve giriş arabelleği için sonraki işaretçiyi ilerletir. Varsayılan davranış, [yetersiz kalması](#underflow) ve bu işlev **traits_type::** eof ' u döndürürse **traits_type:: EOF**döndürmek için kullanılır. Aksi takdirde, işlev giriş akışında **ch** öğesini döndürür, daha önce açıklandığı gibi dönüştürülür ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
-## <a name="basic_streambufunderflow"></a><a name="underflow"></a>basic_streambuf:: yetersiz
+## <a name="basic_streambufunderflow"></a><a name="underflow"></a> basic_streambuf:: yetersiz
 
 Geçerli öğeyi giriş akışından ayıklamak için korumalı, sanal işlev.
 
@@ -1286,7 +1285,7 @@ Korumalı sanal üye işlevi, geçerli akış konumunu ilerlemeden ve **ch** bun
 
 `strstreambuf`Sınıfında, `underflow` bir çağrısıyla dinamik olarak ayrılan depolamaya erişmek için [egptr](#egptr) işaretçisini ayarlar `overflow` .
 
-## <a name="basic_streambufxsgetn"></a><a name="xsgetn"></a>basic_streambuf:: xsgetn
+## <a name="basic_streambufxsgetn"></a><a name="xsgetn"></a> basic_streambuf:: xsgetn
 
 Giriş akışından öğeleri ayıklamak için korumalı, sanal işlev.
 
@@ -1314,7 +1313,7 @@ Ayıklanan öğe sayısı.
 
 Korumalı sanal üye işlevi, giriş akışındaki öğeleri *saymak* için, yinelenen [ssekmeli c](#sbumpc)çağrıları tarafından olduğu gibi ayıklar ve bunları *PTR*'den başlayan dizide depolar. Aslında ayıklanan öğe sayısını döndürür.
 
-## <a name="basic_streambufxsputn"></a><a name="xsputn"></a>basic_streambuf:: xsputn
+## <a name="basic_streambufxsputn"></a><a name="xsputn"></a> basic_streambuf:: xsputn
 
 Çıkış akışına öğe eklemek için korumalı, sanal işlev.
 

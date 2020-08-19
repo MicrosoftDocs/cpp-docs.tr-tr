@@ -8,12 +8,12 @@ helpviewer_keywords:
 - stdext::allocator_chunklist
 - stdext::allocators [C++], allocator_chunklist
 ms.assetid: ea72ed0a-dfdb-4c8b-8096-e4baf567b80f
-ms.openlocfilehash: c2342d068293714871b3f79675dd0d0b9db83448
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 64b419b2565609d8f6018facdbe25d5dee9d94aa
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617538"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562629"
 ---
 # <a name="allocator_chunklist-class"></a>allocator_chunklist Sınıfı
 
@@ -28,9 +28,8 @@ class allocator_chunklist;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Tür*|Ayırıcı tarafından ayrılan öğelerin türü.|
+*Türüyle*\
+Ayırıcı tarafından ayrılan öğelerin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
