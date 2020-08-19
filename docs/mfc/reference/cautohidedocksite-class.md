@@ -1,5 +1,5 @@
 ---
-title: CAutoHideDockSite Sınıfı
+title: CAutoHideDockSite sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAutoHideDockSite
@@ -22,18 +22,18 @@ helpviewer_keywords:
 - CAutoHideDockSite [MFC], UnSetAutoHideMode
 - CAutoHideDockSite [MFC], m_nExtraSpace
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
-ms.openlocfilehash: 1f23729ced02a151c6186bdcc72cb8938416be46
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 2779e643b15179b0017535fbfbb144f94e1aedbe
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753005"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562018"
 ---
-# <a name="cautohidedocksite-class"></a>CAutoHideDockSite Sınıfı
+# <a name="cautohidedocksite-class"></a>CAutoHideDockSite sınıfı
 
-Otomatik `CAutoHideDockSite` gizleme dock bölmeleri uygulamak için [CDockSite Sınıf](../../mfc/reference/cdocksite-class.md) genişletir.
+, `CAutoHideDockSite` [CDockSite sınıfını](../../mfc/reference/cdocksite-class.md) genişleterek otomatik gizleme yerleştirme bölmelerini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAutoHideDockSite : public CDockSite
@@ -45,44 +45,44 @@ class CAutoHideDockSite : public CDockSite
 
 |||
 |-|-|
-|Adı|Açıklama|
-|`CAutoHideDockSite::CAutoHideDockSite`|Bir `CAutoHideDockSite` nesne inşa eder.|
+|Ad|Açıklama|
+|`CAutoHideDockSite::CAutoHideDockSite`|Bir `CAutoHideDockSite` nesnesi oluşturur.|
 |`CAutoHideDockSite::~CAutoHideDockSite`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Adı|Açıklama|
-|`CAutoHideDockSite::AllowShowOnPaneMenu`|Bölme menüsünde gösterip `CAutoHideDockSite` gösterilmediğini gösterir.|
-|[CAutoHideDockSite::CanAcceptPane](#canacceptpane)|[CmFCAutoHideBar Sınıfı'ndan](../../mfc/reference/cmfcautohidebar-class.md)bir temel bölme nesnesinin türetilip türetilmediğini belirler.|
-|[CAutoHideDockSite::DockPane](#dockpane)|Bu `CAuotHideDockSite` nesneye bir bölme yapıştırıyor.|
-|[CAutoHideDockSite::GetAlignRect](#getalignrect)|Ekran koordinatlarında dock alanının boyutunu alır.|
-|[CAutoHideDockSite::RepositionPanes](#repositionpanes)|Genel kenar boşlukları ve `CAutoHideDockSite` düğme aralığı yla bölmeyi yeniden çizer.|
-|[CautoHideDockSite::SetoffsetLeft](#setoffsetleft)|Yanaşma çubuğunun sol tarafındaki kenar boşluğunu ayarlar.|
-|[CautoHideDockSite::SetoffsetRight](#setoffsetright)|Kenar boşluğunu yanaşma çubuğunun sağ tarafında ayarlar.|
-|[CautoHideDockSite::unsetautohidemode](#unsetautohidemode)|Aramalar [CMFCAutoHideBar::UnSetAutoHideMode](../../mfc/reference/cmfcautohidebar-class.md#unsetautohidemode) üzerinde nesneler `CAutoHideDockSite`için .|
+|Ad|Açıklama|
+|`CAutoHideDockSite::AllowShowOnPaneMenu`|`CAutoHideDockSite`Bölmesinin bölme menüsünde gösterilip gösterilmeyeceğini gösterir.|
+|[Cautohidedocksıte:: CanAcceptPane](#canacceptpane)|Bir taban bölmesi nesnesinin [CMFCAutoHideBar sınıfından](../../mfc/reference/cmfcautohidebar-class.md)türetilip türetilmediğini belirler.|
+|[Cautohidedocksıte::D ockPane](#dockpane)|Bu nesneye bir bölme noktası oluşturma `CAuotHideDockSite` .|
+|[Cautohidedocksıte:: Gethizalaması Rect](#getalignrect)|Dock sitesinin boyutunu ekran koordinatlarına göre alır.|
+|[CAutoHideDockSite:: Depotionbölmeler](#repositionpanes)|İçindeki bölmesini, `CAutoHideDockSite` genel kenar boşlukları ve düğme aralığı ile yeniden çizer.|
+|[Cautohidedocksıte:: SetOffsetLeft](#setoffsetleft)|Yerleştirme çubuğunun sol tarafındaki boşluğu ayarlar.|
+|[Cautohidedocksıte:: SetOffsetRight](#setoffsetright)|Yerleştirme çubuğunun sağ tarafındaki boşluğu ayarlar.|
+|[Cautohidedocksıte:: UnSetAutoHideMode](#unsetautohidemode)|İçindeki nesneler için [CMFCAutoHideBar:: UnSetAutoHideMode](../../mfc/reference/cmfcautohidebar-class.md#unsetautohidemode) öğesini çağırır `CAutoHideDockSite` .|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
 |||
 |-|-|
-|Adı|Açıklama|
-|[CAutoHideDockSite::m_nExtraSpace](#m_nextraspace)|Araç çubukları ile yerleştirme çubuğunun kenarı arasındaki boşluğun boyutunu tanımlar. Bu boşluk, dock alanının hizalanmasına bağlı olarak sol kenardan veya üst kenardan ölçülür.|
+|Ad|Açıklama|
+|[CAutoHideDockSite:: m_nExtraSpace](#m_nextraspace)|Araç çubukları ve yerleştirme çubuğunun kenarı arasındaki alanın boyutunu tanımlar. Bu boşluk, yerleştirme alanının hizalamasına bağlı olarak, sol kenardan veya üst kenardan ölçülür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[CFrameWndEx::EnableAutoHidePanes'i](../../mfc/reference/cframewndex-class.md#enableautohidepanes)aradiğinizde, çerçeve otomatik `CAutoHideDockSite` olarak bir nesne oluşturur. Çoğu durumda, bu sınıfı doğrudan anlık olarak veya kullanmanız gerekmez.
+[CFrameWndEx:: Enableotomatik Hidebölmelerini](../../mfc/reference/cframewndex-class.md#enableautohidepanes)çağırdığınızda, çerçeve otomatik olarak bir `CAutoHideDockSite` nesne oluşturur. Çoğu durumda, bu sınıfı doğrudan örneği oluşturmak veya kullanmak zorunda değilsiniz.
 
-Yerleştirme çubuğu, dock bölmesinin sol tarafı ile [CMFCAutoHideButton Sınıfının](../../mfc/reference/cmfcautohidebutton-class.md)sol tarafı arasındaki boşluktur.
+Takma çubuğu, Dock bölmesinin sol tarafı ve [CMFCAutoHideButton sınıfının](../../mfc/reference/cmfcautohidebutton-class.md)sol tarafı arasındaki eksikdir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
@@ -90,17 +90,17 @@ Yerleştirme çubuğu, dock bölmesinin sol tarafı ile [CMFCAutoHideButton Sın
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CAutoHideDockSite` `CMFCAutoHideBar` nesnenin bir nesneden nasıl alındığını ve yerleştirme çubuğunun sol ve sağ kenar boşluklarını nasıl ayarlayabilirsiniz'ı gösterir.
+Aşağıdaki örnek, bir nesneden bir nesnenin nasıl alınacağını `CAutoHideDockSite` `CMFCAutoHideBar` ve yerleştirme çubuğunun sol ve sağ kenar boşluklarını nasıl ayarlayabileceğinizi gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#29](../../mfc/reference/codesnippet/cpp/cautohidedocksite-class_1.cpp)]
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxautohidedocksite.h
+**Üstbilgi:** afxoto hidedocksite. h
 
-## <a name="cautohidedocksitecanacceptpane"></a><a name="canacceptpane"></a>CAutoHideDockSite::CanAcceptPane
+## <a name="cautohidedocksitecanacceptpane"></a><a name="canacceptpane"></a> Cautohidedocksıte:: CanAcceptPane
 
-Bir temel bölmenin [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesnesi `CMFCAutoHideBar`mi yoksa türetilmiş mi olduğunu belirler.
+Bir temel bölmenin [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesnesi olup olmadığını veya öğesinden türetilip türetilmediğini belirler `CMFCAutoHideBar` .
 
 ```
 virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
@@ -108,22 +108,20 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*pBar*|[içinde] Çerçevenin test ettiği temel bölme.|
+*pBar*\
+'ndaki Framework 'ün test olduğu taban bölmesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*pBar* türetilmişse `CMFCAutoHideBar`DOĞRU; YANLIŞ aksi takdirde.
+*PBar* öğesinden TÜRETILDIYSE doğru `CMFCAutoHideBar` ; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir taban bölme nesnesi `CMFCAutoHideBar`türetilmişse, bir `CAutoHideDockSite`.
+Bir taban bölmesi nesnesi öğesinden türetildiyse `CMFCAutoHideBar` , bir içerir `CAutoHideDockSite` .
 
-## <a name="cautohidedocksitedockpane"></a><a name="dockpane"></a>CAutoHideDockSite::DockPane
+## <a name="cautohidedocksitedockpane"></a><a name="dockpane"></a> Cautohidedocksıte::D ockPane
 
-Bu [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) nesnesine bir bölme yapıştırıyor.
+Bu [CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) nesnesine bir bölme noktası oluşturma.
 
 ```
 virtual void DockPane(
@@ -134,22 +132,24 @@ virtual void DockPane(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Pwnd*|[içinde] Çerçevenin sabitolduğu bölme.|
-|*dockMethod*|[içinde] Bölme için yerleştirme seçenekleri.|
-|*Lprect*|[içinde] Kenetlenmiş bölmenin sınırlarını belirten bir dikdörtgen.|
+*pWnd*\
+'ndaki Framework 'ün noktalarını belirten pencere.
+
+*Dockyöntemi*\
+'ndaki Bölme için yerleştirme seçenekleri.
+
+*lpRect*\
+'ndaki Yerleşik bölme için sınırları belirten bir dikdörtgen.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, ileride kullanılmak üzere sağlanan *dockMethod*parametresini kullanmaz.
+Varsayılan uygulama, gelecekte kullanılmak üzere belirtilen *dockMethod*parametresini kullanmaz.
 
-*lpRect* NULL ise, çerçeve bölmeyi dock sitesinde varsayılan konuma yerletir. Dock sitesi yataysa, varsayılan konum dock alanının en solundadır. Aksi takdirde, varsayılan konum dock sitenin üst kısmındadır.
+*LpRect* null ise Framework, bölmeyi Dock sitesindeki varsayılan konuma koyar. Dock sitesi yataysa, varsayılan konum dock sitesinin en sol tarafında bulunur. Aksi takdirde, varsayılan konum dock sitesinin en üstünde bulunur.
 
-## <a name="cautohidedocksitegetalignrect"></a><a name="getalignrect"></a>CAutoHideDockSite::GetAlignRect
+## <a name="cautohidedocksitegetalignrect"></a><a name="getalignrect"></a> Cautohidedocksıte:: Gethizalaması Rect
 
-Ekran koordinatlarında dock alanının boyutunu alır.
+Dock sitesinin boyutunu ekran koordinatlarına göre alır.
 
 ```cpp
 void GetAlignRect(CRect& rect) const;
@@ -157,18 +157,16 @@ void GetAlignRect(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Rect*|[içinde] Dikdörtgen için bir başvuru. Yöntem, bu dikdörtgende dock sitenin boyutunu depolar.|
+*Rect*\
+'ndaki Bir dikdörtgene başvuru. Yöntemi, dock sitesinin boyutunu bu dikdörtgende depolar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgen, eklenmemesi için ofset kenar boşlukları için ayarlanır.
+Dikdörtgen, kenar boşlukları için, bu değerler dahil kalmayacak şekilde ayarlanır.
 
-## <a name="cautohidedocksitem_nextraspace"></a><a name="m_nextraspace"></a>CAutoHideDockSite::m_nExtraSpace
+## <a name="cautohidedocksitem_nextraspace"></a><a name="m_nextraspace"></a> CAutoHideDockSite:: m_nExtraSpace
 
-[CAutoHideDockSite Sınıfı'nın](../../mfc/reference/cautohidedocksite-class.md) kenarları ile [CMFCAutoHideBar Sınıfı](../../mfc/reference/cmfcautohidebar-class.md) nesneleri arasındaki boşluğun boyutu.
+[CAutoHideDockSite sınıfının](../../mfc/reference/cautohidedocksite-class.md) kenarları Ile [CMFCAutoHideBar sınıf](../../mfc/reference/cmfcautohidebar-class.md) nesnelerinin kenarları arasındaki alanın boyutu.
 
 ```
 static int m_nExtraSpace;
@@ -176,11 +174,11 @@ static int m_nExtraSpace;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CMFCAutoHideBar` deken, `CAutoHideDockSite`tüm dock site işgal etmemelidir. Bu genel değişken, ilgili `CMFCAutoHideBar` `CAutoHideDockSite` kenarın sol veya üst kenarı arasındaki ekstra boşluğu denetler. Üst veya sol kenarın kullanılıp kullanılmadığı geçerli hizalamaya bağlıdır.
+Bir bir öğesine `CMFCAutoHideBar` yerleştirildiğinde `CAutoHideDockSite` , tüm Dock sitesini kaplamamalıdır. Bu genel değişken, ve ilgili kenarın sol veya üst kenarlığı arasındaki ek boşluğu denetler `CMFCAutoHideBar` `CAutoHideDockSite` . Üst veya sol kenar kullanılıp kullanılmayacağını geçerli hizalamaya göre değişir.
 
-## <a name="cautohidedocksitesetoffsetleft"></a><a name="setoffsetleft"></a>CautoHideDockSite::SetoffsetLeft
+## <a name="cautohidedocksitesetoffsetleft"></a><a name="setoffsetleft"></a> Cautohidedocksıte:: SetOffsetLeft
 
-Yanaşma çubuğunun sol tarafındaki kenar boşluğunu ayarlar.
+Yerleştirme çubuğunun sol tarafındaki boşluğu ayarlar.
 
 ```cpp
 void SetOffsetLeft(int nOffset);
@@ -188,16 +186,16 @@ void SetOffsetLeft(int nOffset);
 
 ### <a name="parameters"></a>Parametreler
 
-*nOffset*<br/>
-[içinde] Yeni ofset.
+*nKonum*<br/>
+'ndaki Yeni fark.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesneleri `CAutoHideDockSite` statik olarak nesne üzerinde konumlandırılır. Bu, kullanıcının `CMFCAutoHideBar` nesnelerin konumunu el ile değiştiremeyeceği anlamına gelir. Yöntem, `SetOffsetLeft` sol-en `CMFCAutoHideBar` sol tarafı ve sol tarafı arasındaki aralığı `CAutoHideDockSite`denetler.
+[CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesneleri, nesne üzerinde statik olarak konumlandırılır `CAutoHideDockSite` . Bu, kullanıcının nesnelerin konumunu el ile değiştiremeyeceği anlamına gelir `CMFCAutoHideBar` . `SetOffsetLeft`Yöntemi, öğesinin sol ve sol tarafının sol tarafı arasındaki boşluğu denetler `CMFCAutoHideBar` `CAutoHideDockSite` .
 
-## <a name="cautohidedocksitesetoffsetright"></a><a name="setoffsetright"></a>CautoHideDockSite::SetoffsetRight
+## <a name="cautohidedocksitesetoffsetright"></a><a name="setoffsetright"></a> Cautohidedocksıte:: SetOffsetRight
 
-Kenar boşluğunu yanaşma çubuğunun sağ tarafında ayarlar.
+Yerleştirme çubuğunun sağ tarafındaki boşluğu ayarlar.
 
 ```cpp
 void SetOffsetRight(int nOffset);
@@ -205,16 +203,16 @@ void SetOffsetRight(int nOffset);
 
 ### <a name="parameters"></a>Parametreler
 
-*nOffset*<br/>
-[içinde] Yeni ofset.
+*nKonum*<br/>
+'ndaki Yeni fark.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesneleri `CAutoHideDockSite` statik olarak nesne üzerinde konumlandırılır. Bu, kullanıcının `CMFCAutoHideBar` nesnelerin konumunu el ile değiştiremeyeceği anlamına gelir. Yöntem, `SetOffsetRight` sağ-en `CMFCAutoHideBar` sağ tarafı ile sağ tarafı arasındaki aralığı `CAutoHideDockSite`denetler.
+[CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesneleri, nesne üzerinde statik olarak konumlandırılır `CAutoHideDockSite` . Bu, kullanıcının nesnelerin konumunu el ile değiştiremeyeceği anlamına gelir `CMFCAutoHideBar` . `SetOffsetRight`Yöntemi `CMFCAutoHideBar` , öğesinin sağ ve sağ tarafının sağ tarafı arasındaki boşluğu denetler `CAutoHideDockSite` .
 
-## <a name="cautohidedocksiterepositionpanes"></a><a name="repositionpanes"></a>CAutoHideDockSite::RepositionPanes
+## <a name="cautohidedocksiterepositionpanes"></a><a name="repositionpanes"></a> CAutoHideDockSite:: Depotionbölmeler
 
-[CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md)üzerinde bölmeleri redraws .
+[Cautohidedocksitesindeki](../../mfc/reference/cautohidedocksite-class.md)bölmeleri yeniden çizer.
 
 ```
 virtual void RepositionPanes(CRect& rectNewClientArea);
@@ -222,18 +220,16 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*rectNewClientArea*|[içinde] Ayrılmış bir değer.|
+*rectNewClientArea*\
+'ndaki Ayrılmış bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama *rectNewClientArea*kullanmaz. Bölmeleri genel araç çubuğu kenar boşlukları ve düğme aralığıyla yeniden çizer.
+Varsayılan uygulama *rectNewClientArea*kullanmaz. Bölmeleri genel araç çubuğu kenar boşlukları ve düğme aralığı ile yeniden çizer.
 
-## <a name="cautohidedocksiteunsetautohidemode"></a><a name="unsetautohidemode"></a>CautoHideDockSite::unsetautohidemode
+## <a name="cautohidedocksiteunsetautohidemode"></a><a name="unsetautohidemode"></a> Cautohidedocksıte:: UnSetAutoHideMode
 
-[CMFCAutoHideBar çağırır::UnSetAutoHideMode](../../mfc/reference/cmfcautohidebar-class.md#unsetautohidemode) dock sitesinde nesneler için.
+Dock sitesindeki nesneler için [CMFCAutoHideBar:: UnSetAutoHideMode](../../mfc/reference/cmfcautohidebar-class.md#unsetautohidemode) öğesini çağırır.
 
 ```cpp
 void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
@@ -241,17 +237,15 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*pAutoHideToolbar*|[içinde] Üzerinde bulunan [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesne bölmesine `CAutoHideDockSite`işaretçi.|
+*pAutoHideToolbar*\
+'ndaki Üzerinde bulunan [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesne bölmesine yönelik bir işaretçi `CAutoHideDockSite` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu *yöntem, pAutoHideToolbar*içeren satırı arar. O `CMFCAutoHideBar.UnSetAutoHideMode` satırdaki `CMFCAutoHideBar` tüm nesneleri çağırır. *pAutoHideToolbar* bulunamadı veya NULL ise, bu `CMFCAutoHideBar.UnSetAutoHideMode` yöntem tüm `CMFCAutoHideBar` nesneleri `CAutoHideDockSite`çağırır.
+Bu yöntem *pAutoHideToolbar*içeren satırı arar. `CMFCAutoHideBar.UnSetAutoHideMode` `CMFCAutoHideBar` Bu satırdaki tüm nesneleri çağırır. *PAutoHideToolbar* BULUNAMAZSA veya null ise, bu yöntem `CMFCAutoHideBar.UnSetAutoHideMode` `CMFCAutoHideBar` üzerindeki tüm nesneleri çağırır `CAutoHideDockSite` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CDockSite Sınıfı](../../mfc/reference/cdocksite-class.md)
+[CDockSite sınıfı](../../mfc/reference/cdocksite-class.md)

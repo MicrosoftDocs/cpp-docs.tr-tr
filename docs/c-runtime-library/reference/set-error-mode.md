@@ -26,21 +26,21 @@ helpviewer_keywords:
 - _set_error_mode function
 - set_error_mode function
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-ms.openlocfilehash: 15a6d72a79f0498fb7d81094ed3595dea1cf444f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c1bb617e0f3792f2ac41d59df13d184423d56a9e
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948554"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562044"
 ---
 # <a name="_set_error_mode"></a>_set_error_mode
 
-, C çalışma zamanının programı sona erdirmek için bir hata iletisi yazdığı varsayılan olmayan bir konum belirlemesi için **__error_mode** değerini değiştirir.
+C çalışma zamanının programı sona erdirmek için bir hata iletisi yazdığı varsayılan olmayan bir konumu belirlemesi için **__error_mode** değiştirir.
 
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _set_error_mode(
@@ -59,26 +59,26 @@ Eski ayarı döndürür veya bir hata oluşursa-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**__Error_mode**değerini ayarlayarak hata çıkış havuzunu denetler. Örneğin, çıktıyı standart bir hataya yönlendirebilir veya **MessageBox** API 'sini kullanabilirsiniz.
+**__Error_mode**değerini ayarlayarak hata çıktı havuzunu denetler. Örneğin, çıktıyı standart bir hataya yönlendirebilir veya **MessageBox** API 'sini kullanabilirsiniz.
 
 *Mode_val* parametresi aşağıdaki değerlerden birine ayarlanabilir.
 
-|Parametre|Açıklama|
+|Değer|Açıklama|
 |---------------|-----------------|
-|**_OUT_TO_DEFAULT**|Hata havuzu **__app_type**tarafından belirlendi.|
+|**_OUT_TO_DEFAULT**|Hata havuzu **__app_type**tarafından belirlenir.|
 |**_OUT_TO_STDERR**|Hata havuzu standart bir hatadır.|
 |**_OUT_TO_MSGBOX**|Hata havuzu bir ileti kutusudur.|
 |**_REPORT_ERRMODE**|Geçerli **__error_mode** değerini bildirin.|
 
-Listelenenlerin dışında bir değer geçirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_set_error_mode** **errno** ve **EINVAL** olarak ayarlar ve-1 döndürür.
+Listelenenlerin dışında bir değer geçirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_set_error_mode** **errno** 'u **EINVAL** olarak ayarlar ve-1 döndürür.
 
-**_Set_error_mode** , bir [onaylama](assert-macro-assert-wassert.md)ile kullanıldığında, iletişim kutusunda başarısız olan ifadeyi görüntüler ve ardından programı çalıştırmaya devam edebilmeniz için **yoksayma** düğmesini seçme seçeneğini sunar.
+Bir [onaylama](assert-macro-assert-wassert.md)ile birlikte kullanıldığında, **_set_error_mode** iletişim kutusunda başarısız olan ifadeyi görüntüler ve ardından programı çalıştırmaya devam edebilmeniz için **yoksayma** düğmesini seçme seçeneğini sunar.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_error_mode**|\<Stdlib. h >|
+|**_set_error_mode**|\<stdlib.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -104,4 +104,4 @@ Please contact the application's support team for more information.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[assert Makrosu, _assert, _wassert](assert-macro-assert-wassert.md)<br/>
+[onaylama makrosu, _assert _wassert](assert-macro-assert-wassert.md)<br/>

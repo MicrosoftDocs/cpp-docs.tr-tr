@@ -9,26 +9,25 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: abcc18ee29e2dcb09ca15ae77219ae5dd4d74c65
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 270500d2353c2d14a23ddad378521488cdec136f
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228940"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561394"
 ---
 # <a name="decltype--c"></a>decltype  (C++)
 
 **`decltype`** Tür belirleyicisi belirtilen ifadenin türünü verir. **`decltype`** [ `auto` Anahtar sözcüğü](../cpp/auto-cpp.md)ile birlikte tür Belirleyicisi, öncelikle şablon kitaplıklarını yazan geliştiriciler için yararlıdır. **`auto`** **`decltype`** Dönüş türü, şablon bağımsız değişkenlerinin türlerine bağlı olan bir şablon işlevi bildirmek için ve kullanın. Veya, **`auto`** başka bir **`decltype`** işleve yapılan çağrıyı sarmalayan bir şablon işlevi bildirmek için ve öğesini kullanın ve ardından Sarmalanan işlevin dönüş türünü döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`decltype(`***ifade***`)`**
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*ifadesini*|Bir ifade. Daha fazla bilgi için bkz. [ifadeler](../cpp/expressions-cpp.md).|
+*ifadesini*\
+Bir ifade. Daha fazla bilgi için bkz. [ifadeler](../cpp/expressions-cpp.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -36,7 +35,7 @@ ms.locfileid: "87228940"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**`decltype`** Tür belirleyicisi Visual Studio 2010 veya sonraki sürümlerde desteklenir ve yerel veya yönetilen kodla kullanılabilir. `decltype(auto)`(C++ 14), Visual Studio 2015 ve üzeri sürümlerde desteklenir.
+**`decltype`** Tür belirleyicisi Visual Studio 2010 veya sonraki sürümlerde desteklenir ve yerel veya yönetilen kodla kullanılabilir. `decltype(auto)` (C++ 14), Visual Studio 2015 ve üzeri sürümlerde desteklenir.
 
 Derleyici, *ifade* parametresinin türünü belirleyebilmek için aşağıdaki kuralları kullanır.
 
@@ -204,4 +203,4 @@ static_assert(test2, "PASS2");
 
 Visual Studio 2010 veya sonraki sürümleri.
 
-`decltype(auto)`Visual Studio 2015 veya üstünü gerektirir.
+`decltype(auto)` Visual Studio 2015 veya üstünü gerektirir.

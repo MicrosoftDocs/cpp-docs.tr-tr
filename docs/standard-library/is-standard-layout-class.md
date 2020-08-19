@@ -7,18 +7,18 @@ helpviewer_keywords:
 - is_standard_layout class
 - is_standard_layout
 ms.assetid: 15ccf111-f537-45ef-b552-59152a7ba312
-ms.openlocfilehash: 4f999eaa4a5c1ea7e9672a5efdc6000a4d3d9759
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: fba77be22796f3cb5495543d262dd270ac13d598
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457410"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88560601"
 ---
-# <a name="isstandardlayout-class"></a>is_standard_layout Sınıfı
+# <a name="is_standard_layout-class"></a>is_standard_layout Sınıfı
 
 Türün standart bir düzen olup olmadığını sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class Ty>
@@ -27,9 +27,8 @@ struct is_standard_layout;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Kalite*|Sorgulanacak tür|
+*Kalite*\
+Sorgulanacak tür
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -37,7 +36,7 @@ Tür *Ty* , bellekteki üye nesnelerinin standart düzenine sahip bir sınıfday
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

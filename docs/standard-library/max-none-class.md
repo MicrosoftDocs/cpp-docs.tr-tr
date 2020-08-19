@@ -16,12 +16,12 @@ helpviewer_keywords:
 - stdext::max_none [C++], released
 - stdext::max_none [C++], saved
 ms.assetid: 12ab5376-412e-479c-86dc-2c3d6a3559b6
-ms.openlocfilehash: a8eee77afebdc78ef7c5b3b9ecacb8762b354567
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 41ada338d9b8546202ecd49ff975f9642f190ba0
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222296"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88560549"
 ---
 # <a name="max_none-class"></a>max_none Sınıfı
 
@@ -36,9 +36,8 @@ class max_none
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Biçimlendir*|İçinde depolanacak en fazla öğe sayısını belirleyen Max sınıfı `freelist` .|
+*Biçimlendir*\
+İçinde depolanacak en fazla öğe sayısını belirleyen Max sınıfı `freelist` .
 
 ### <a name="member-functions"></a>Üye işlevleri
 
@@ -56,7 +55,7 @@ class max_none
 
 **Ad alanı:** stdext
 
-## <a name="max_noneallocated"></a><a name="allocated"></a>max_none:: ayrılmış
+## <a name="max_noneallocated"></a><a name="allocated"></a> max_none:: ayrılmış
 
 Ayrılan bellek bloklarının sayısını artırır.
 
@@ -66,15 +65,14 @@ void allocated(std::size_t _Nx = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*_Nx*|Artış değeri.|
+*_Nx*\
+Artış değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu üye işlevi hiçbir şey yapmaz. Her başarılı çağrıdan sonra `cache_freelist::allocate` işlecine çağrılır **`new`** . Bağımsız değişken *_Nx* , öbek işleci tarafından ayrılan bellek bloklarının sayısıdır **`new`** .
 
-## <a name="max_nonedeallocated"></a><a name="deallocated"></a>max_none::d eayrılmış
+## <a name="max_nonedeallocated"></a><a name="deallocated"></a> max_none::d eayrılmış
 
 Ayrılan bellek bloklarının sayısını azaltır.
 
@@ -84,15 +82,14 @@ void deallocated(std::size_t _Nx = 1);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*_Nx*|Artış değeri.|
+*_Nx*\
+Artış değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi hiçbir şey yapmaz. Bu üye işlevi, her çağrıdan sonra işlecine kadar çağrılır `cache_freelist::deallocate` **`delete`** . Bağımsız değişken *_Nx* , öbekte tarafından serbest bırakılmış bellek bloklarının sayısıdır **`delete`** .
 
-## <a name="max_nonefull"></a><a name="full"></a>max_none:: Full
+## <a name="max_nonefull"></a><a name="full"></a> max_none:: Full
 
 Boş listeye daha fazla bellek bloğu eklenip eklenmeyeceğini belirten bir değer döndürür.
 
@@ -108,7 +105,7 @@ Bu üye işlev her zaman döndürülür **`true`** .
 
 Bu üye işlevi tarafından çağrılır `cache_freelist::deallocate` . Çağrı döndürürse **`true`** , `deallocate` bellek bloğunu ücretsiz listeye koyar; döndürürse **`false`** , `deallocate` **`delete`** bloğu serbest bırakmak için işleç çağırır.
 
-## <a name="max_nonereleased"></a><a name="released"></a>max_none:: yayınlandı
+## <a name="max_nonereleased"></a><a name="released"></a> max_none:: yayınlandı
 
 , Ücretsiz listedeki bellek bloklarının sayısını azaltır.
 
@@ -120,7 +117,7 @@ void released();
 
 Bu üye işlevi hiçbir şey yapmaz. `released`Geçerli Max sınıfının üye işlevi, `cache_freelist::allocate` boş listeden bir bellek bloğunu her kaldırdığında tarafından çağrılır.
 
-## <a name="max_nonesaved"></a><a name="saved"></a>max_none:: kaydedildi
+## <a name="max_nonesaved"></a><a name="saved"></a> max_none:: kaydedildi
 
 Ücretsiz listedeki bellek bloklarının sayısını artırır.
 

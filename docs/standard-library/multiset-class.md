@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-ms.openlocfilehash: f481848228e1d93e457ce79948bacd5f3e6d4760
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 69a884a2b60e7838154586dd0dcc8c1d54681b53
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224727"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561173"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -211,7 +211,7 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 
 **Ad alanı:** std
 
-## <a name="multisetallocator_type"></a><a name="allocator_type"></a>Çoklu küme:: allocator_type
+## <a name="multisetallocator_type"></a><a name="allocator_type"></a> Çoklu küme:: allocator_type
 
 Çoklu küme nesnesinin ayırıcı sınıfını temsil eden tür
 
@@ -221,15 +221,15 @@ typedef Allocator allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type`, şablon parametresinin eşanlamlısıdır `Allocator` .
+`allocator_type` , şablon parametresinin eşanlamlısıdır `Allocator` .
 
 Hakkında daha fazla bilgi için `Allocator` , [Çoklu küme sınıfı](../standard-library/multiset-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
-Şunu kullanarak bir örnek için [get_allocator](#get_allocator) örneğine bakın`allocator_type`
+Şunu kullanarak bir örnek için [get_allocator](#get_allocator) örneğine bakın `allocator_type`
 
-## <a name="multisetbegin"></a><a name="begin"></a>Çoklu küme:: Begin
+## <a name="multisetbegin"></a><a name="begin"></a> Çoklu küme:: Begin
 
 Çoklu küme içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -282,7 +282,7 @@ The first element of ms1 is 1
 The first element of ms1 is now 2
 ```
 
-## <a name="multisetcbegin"></a><a name="cbegin"></a>Çoklu küme:: cbegin
+## <a name="multisetcbegin"></a><a name="cbegin"></a> Çoklu küme:: cbegin
 
 **`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -308,7 +308,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="multisetcend"></a><a name="cend"></a>Çoklu küme:: cend
+## <a name="multisetcend"></a><a name="cend"></a> Çoklu küme:: cend
 
 **`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
@@ -322,7 +322,7 @@ const_iterator cend() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 `end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
@@ -336,7 +336,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
-## <a name="multisetclear"></a><a name="clear"></a>Çoklu küme:: Clear
+## <a name="multisetclear"></a><a name="clear"></a> Çoklu küme:: Clear
 
 Çoklu kümeli öğelerin tümünü siler.
 
@@ -374,7 +374,7 @@ The size of the multiset is initially 2.
 The size of the multiset after clearing is 0.
 ```
 
-## <a name="multisetconst_iterator"></a><a name="const_iterator"></a>Çoklu küme:: const_iterator
+## <a name="multisetconst_iterator"></a><a name="const_iterator"></a> Çoklu küme:: const_iterator
 
 Çoklu kümeli bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
 
@@ -390,7 +390,7 @@ Bir tür `const_iterator` , bir öğenin değerini değiştirmek için kullanıl
 
 Kullanarak bir [örnek için bkz](#begin) `const_iterator` ..
 
-## <a name="multisetconst_pointer"></a><a name="const_pointer"></a>Çoklu küme:: const_pointer
+## <a name="multisetconst_pointer"></a><a name="const_pointer"></a> Çoklu küme:: const_pointer
 
 Çoklu kümeli bir öğeye işaretçi sağlayan bir tür **`const`** .
 
@@ -404,7 +404,7 @@ Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanıla
 
 Çoğu durumda, bir [Yineleyici](#iterator) bir çoklu küme nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="multisetconst_reference"></a><a name="const_reference"></a>Çoklu küme:: const_reference
+## <a name="multisetconst_reference"></a><a name="const_reference"></a> Çoklu küme:: const_reference
 
 **`const`** İşlemleri okumak ve gerçekleştirmek için bir çoklu kümeli depolanan bir öğeye başvuru sağlayan bir tür **`const`** .
 
@@ -445,7 +445,7 @@ int main( )
 The first element in the multiset is 10.
 ```
 
-## <a name="multisetconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>Çoklu küme:: const_reverse_iterator
+## <a name="multisetconst_reverse_iterator"></a><a name="const_reverse_iterator"></a> Çoklu küme:: const_reverse_iterator
 
 Çoklu kümeli bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
 
@@ -461,7 +461,7 @@ Bir tür, `const_reverse_iterator` bir öğenin değerini değiştiremez ve bu �
 
 ' In nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için bkz. [rend](#rend) için örneğe bakın `const_reverse_iterator` .
 
-## <a name="multisetcount"></a><a name="count"></a>Çoklu küme:: Count
+## <a name="multisetcount"></a><a name="count"></a> Çoklu küme:: Count
 
 Bir çoklu kümeli, anahtarı parametre belirtilen anahtarla eşleşen öğe sayısını döndürür.
 
@@ -482,7 +482,7 @@ Birden çok küme içindeki sıralama anahtarı parametre anahtarıyla eşleşen
 
 Üye işlevi aralıktaki *x* öğelerinin sayısını döndürür
 
-\[lower_bound (*anahtar*), upper_bound (*anahtar*))
+\[ lower_bound (*anahtar*), upper_bound (*anahtar*))
 
 ### <a name="example"></a>Örnek
 
@@ -526,7 +526,7 @@ The number of elements in ms1 with a sort key of 2 is: 1.
 The number of elements in ms1 with a sort key of 3 is: 0.
 ```
 
-## <a name="multisetcrbegin"></a><a name="crbegin"></a>Çoklu küme:: crbegin
+## <a name="multisetcrbegin"></a><a name="crbegin"></a> Çoklu küme:: crbegin
 
 Ters çevrilen bir çoklu küme içindeki ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -540,11 +540,11 @@ Ters çevrilen bir çoklu küme içindeki ilk öğeyi ele alarak veya geri çevr
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin`, başlangıç olarak bir çoklu küme ile kullanıldığı için, ters çevrilmiş bir çoklu küme ile kullanılır.
+`crbegin` , başlangıç olarak bir çoklu küme ile kullanıldığı için, ters çevrilmiş bir çoklu küme ile kullanılır.
 
 Dönüş değeri ile, çok `crbegin` kümeli nesne değiştirilemez.
 
-`crbegin`bir çoklu kümeli geri doğru yinelemek için kullanılabilir.
+`crbegin` bir çoklu kümeli geri doğru yinelemek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -574,7 +574,7 @@ int main( )
 The first element in the reversed multiset is 30.
 ```
 
-## <a name="multisetcrend"></a><a name="crend"></a>Çoklu küme:: crend
+## <a name="multisetcrend"></a><a name="crend"></a> Çoklu küme:: crend
 
 Ters çevrilen bir çoklu küme içindeki son öğeden sonra gelen konumu ele alan bir const yineleyici döndürür.
 
@@ -588,11 +588,11 @@ Ters çevrilen bir çoklu küme içindeki son öğeden sonra gelen konumu ele al
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`, [End](#end) bir çoklu küme ile kullanıldığı gibi, ters kullanılan bir çoklu küme ile kullanılır.
+`crend` , [End](#end) bir çoklu küme ile kullanıldığı gibi, ters kullanılan bir çoklu küme ile kullanılır.
 
 Dönüş değeri ile, çok `crend` kümeli nesne değiştirilemez.
 
-`crend`, bir ters yineleyicinin kendi çoklu küme sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`crend` , bir ters yineleyicinin kendi çoklu küme sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `crend` başvurulmamalıdır.
 
@@ -620,7 +620,7 @@ int main() {
 }
 ```
 
-## <a name="multisetdifference_type"></a><a name="difference_type"></a>Çoklu küme::d ifference_type
+## <a name="multisetdifference_type"></a><a name="difference_type"></a> Çoklu küme::d ifference_type
 
 Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki bir çoklu küme öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
@@ -692,7 +692,7 @@ The number '20' occurs 2 times in multiset ms1.
 The number of elements in the multiset ms1 is: 3.
 ```
 
-## <a name="multisetemplace"></a><a name="emplace"></a>Çoklu küme:: emplace
+## <a name="multisetemplace"></a><a name="emplace"></a> Çoklu küme:: emplace
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
@@ -703,9 +703,8 @@ iterator emplace(Args&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*args*|Çoklu kümeli içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+*args*\
+Çoklu kümeli içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -758,7 +757,7 @@ int main()
 }
 ```
 
-## <a name="multisetemplace_hint"></a><a name="emplace_hint"></a>Çoklu küme:: emplace_hint
+## <a name="multisetemplace_hint"></a><a name="emplace_hint"></a> Çoklu küme:: emplace_hint
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
@@ -771,10 +770,11 @@ iterator emplace_hint(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*args*|Çoklu kümeli içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
-|*olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)|
+*args*\
+Çoklu kümeli içine eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+
+*olmadığı*\
+Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -788,7 +788,7 @@ Emplamak sırasında, bir özel durum oluşturulursa kapsayıcının durumu değ
 
 Kod örneği için bkz. [set:: emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-## <a name="multisetempty"></a><a name="empty"></a>Çoklu küme:: boş
+## <a name="multisetempty"></a><a name="empty"></a> Çoklu küme:: boş
 
 Çoklu küme boş ise sınar.
 
@@ -831,7 +831,7 @@ The multiset ms1 is not empty.
 The multiset ms2 is empty.
 ```
 
-## <a name="multisetend"></a><a name="end"></a>Çoklu küme:: bitiş
+## <a name="multisetend"></a><a name="end"></a> Çoklu küme:: bitiş
 
 past-the-end yineleyici döndürür.
 
@@ -853,7 +853,7 @@ Son uca Yineleyici. Çoklu küme boşsa, `multiset::end() == multiset::begin()` 
 
 Kod örneği için bkz. [Çoklu küme:: bul](#find).
 
-## <a name="multisetequal_range"></a><a name="equal_range"></a>Çoklu küme:: equal_range
+## <a name="multisetequal_range"></a><a name="equal_range"></a> Çoklu küme:: equal_range
 
 Belirtilen anahtardan daha büyük bir anahtarla ve bu anahtarla eşit veya daha büyük olan bir anahtarla birlikte çoklu küme içindeki ilk öğeye sahip bir çoklu küme içindeki ilk öğeye, yineleyicilerin çiftini döndürür.
 
@@ -932,7 +932,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The multiset ms1 doesn't have an element with a key less than 40.
 ```
 
-## <a name="multiseterase"></a><a name="erase"></a>Çoklu küme:: Erase
+## <a name="multiseterase"></a><a name="erase"></a> Çoklu küme:: Erase
 
 Bir öğeyi veya öğe aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -972,7 +972,7 @@ Kaldırılacak öğelerin anahtar değeri.
 
 Kod örneği için bkz. [set:: Erase](../standard-library/set-class.md#erase).
 
-## <a name="multisetfind"></a><a name="find"></a>Çoklu küme:: bul
+## <a name="multisetfind"></a><a name="find"></a> Çoklu küme:: bul
 
 Belirtilen anahtara eşdeğer bir anahtara sahip bir çoklu küme içindeki bir öğenin konumuna başvuran bir yineleyici döndürür.
 
@@ -1058,7 +1058,7 @@ int main()
 }
 ```
 
-## <a name="multisetget_allocator"></a><a name="get_allocator"></a>Çoklu küme:: get_allocator
+## <a name="multisetget_allocator"></a><a name="get_allocator"></a> Çoklu küme:: get_allocator
 
 Çoklu küme oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1126,7 +1126,7 @@ int main( )
 }
 ```
 
-## <a name="multisetinsert"></a><a name="insert"></a>Çoklu küme:: INSERT
+## <a name="multisetinsert"></a><a name="insert"></a> Çoklu küme:: INSERT
 
 Çoklu kümeli bir öğe veya öğe aralığı ekler.
 
@@ -1166,15 +1166,26 @@ IList);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Acil*|Çoklu kümeli eklenecek öğenin değeri.|
-|*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)|
-|*ValTy*|Çoklu küme 'nın [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü ve bir bağımsız *değişken olarak kusursuz* iletme değerini belirten şablon parametresi.|
-|*Birinci*|Kopyalanacak ilk öğenin konumu.|
-|*Soyadına*|Kopyalanacak son öğenin hemen ötesinde konum.|
-|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
-|*IList*|Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .|
+*Acil*\
+Çoklu kümeli eklenecek öğenin değeri.
+
+*Olmadığı*\
+Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)
+
+*ValTy*\
+Çoklu küme 'nın [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü ve bir bağımsız *değişken olarak kusursuz* iletme değerini belirten şablon parametresi.
+
+*Adı*\
+Kopyalanacak ilk öğenin konumu.
+
+*Soyadına*\
+Kopyalanacak son öğenin hemen ötesinde konum.
+
+*InputIterator*\
+[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.
+
+*IList*\
+Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1286,7 +1297,7 @@ int main()
 }
 ```
 
-## <a name="multisetiterator"></a><a name="iterator"></a>Çoklu küme:: Yineleyici
+## <a name="multisetiterator"></a><a name="iterator"></a> Çoklu küme:: Yineleyici
 
 Çoklu kümeli bir öğeyi okuyabilen sabit [çift yönlü Yineleyici](../standard-library/bidirectional-iterator-tag-struct.md) sağlayan bir tür.
 
@@ -1298,7 +1309,7 @@ typedef implementation-defined iterator;
 
 ' In nasıl bildirilemeyeceğini ve [kullanılacağına ilişkin bir örnek için bkz](#begin) `iterator` ..
 
-## <a name="multisetkey_comp"></a><a name="key_comp"></a>Çoklu küme:: key_comp
+## <a name="multisetkey_comp"></a><a name="key_comp"></a> Çoklu küme:: key_comp
 
 Bir çoklu kümeli anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -1373,7 +1384,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of s1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of ms2.
 ```
 
-## <a name="multisetkey_compare"></a><a name="key_compare"></a>Çoklu küme:: key_compare
+## <a name="multisetkey_compare"></a><a name="key_compare"></a> Çoklu küme:: key_compare
 
 Çoklu küme içindeki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
@@ -1383,7 +1394,7 @@ typedef Compare key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare`, şablon parametresinin eşanlamlısıdır `Compare` .
+`key_compare` , şablon parametresinin eşanlamlısıdır `Compare` .
 
 Hakkında daha fazla bilgi için `Compare` , [Çoklu küme sınıfı](../standard-library/multiset-class.md) konusunun açıklamalar bölümüne bakın.
 
@@ -1391,7 +1402,7 @@ Hakkında daha fazla bilgi için `Compare` , [Çoklu küme sınıfı](../standar
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [key_comp](#key_comp) örneği `key_compare` .
 
-## <a name="multisetkey_type"></a><a name="key_type"></a>Çoklu küme:: key_type
+## <a name="multisetkey_type"></a><a name="key_type"></a> Çoklu küme:: key_type
 
 Çoklu küme içindeki iki öğenin göreli sırasını belirlemede sıralama anahtarlarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
@@ -1401,7 +1412,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type`, şablon parametresinin eşanlamlısıdır `Key` .
+`key_type` , şablon parametresinin eşanlamlısıdır `Key` .
 
 Hakkında daha fazla bilgi için `Key` , [Çoklu küme sınıfı](../standard-library/multiset-class.md) konusunun açıklamalar bölümüne bakın.
 
@@ -1409,7 +1420,7 @@ Hakkında daha fazla bilgi için `Key` , [Çoklu küme sınıfı](../standard-li
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği `key_type` .
 
-## <a name="multisetlower_bound"></a><a name="lower_bound"></a>Çoklu küme:: lower_bound
+## <a name="multisetlower_bound"></a><a name="lower_bound"></a> Çoklu küme:: lower_bound
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla bir çoklu küme içindeki ilk öğeye döndürür.
 
@@ -1477,7 +1488,7 @@ The multiset ms1 doesn't have an element with a key of 40.
 The element of ms1 with a key matching that of the last element is: 30.
 ```
 
-## <a name="multisetmax_size"></a><a name="max_size"></a>Çoklu küme:: max_size
+## <a name="multisetmax_size"></a><a name="max_size"></a> Çoklu küme:: max_size
 
 Çoklu küme en büyük uzunluğunu döndürür.
 
@@ -1509,7 +1520,7 @@ int main( )
 }
 ```
 
-## <a name="multisetmultiset"></a><a name="multiset"></a>Çoklu küme:: çoklu küme
+## <a name="multisetmultiset"></a><a name="multiset"></a> Çoklu küme:: çoklu küme
 
 Boş bir çoklu küme oluşturur veya başka bir çoklu kümeli birinin veya bir kısmının kopyasıdır.
 
@@ -1562,14 +1573,23 @@ multiset (
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Eşkenar*|Bu çok kümeli nesne için kullanılacak depolama ayırıcısı sınıfı, varsayılan olarak `Allocator` .|
-|*İnin*|`const Compare`Varsayılan olarak, olan çoklu küme içindeki öğeleri sıralamak için kullanılan tür karşılaştırma işlevi `Compare` .|
-|*Right*|Oluşturulmuş çoklu küme, bir kopya olacak çok kümeli.|
-|*Birinci*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
-|*Soyadına*|Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.|
-|*IList*|Öğelerin kopyalanacağı initializer_list.|
+*Eşkenar*\
+Bu çok kümeli nesne için kullanılacak depolama ayırıcısı sınıfı, varsayılan olarak `Allocator` .
+
+*İnin*\
+`const Compare`Varsayılan olarak, olan çoklu küme içindeki öğeleri sıralamak için kullanılan tür karşılaştırma işlevi `Compare` .
+
+*Right*\
+Oluşturulmuş çoklu küme, bir kopya olacak çok kümeli.
+
+*Adı*\
+Kopyalanacak öğe aralığındaki ilk öğenin konumu.
+
+*Soyadına*\
+Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
+
+*IList*\
+Öğelerin kopyalanacağı initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1690,7 +1710,7 @@ int main()
 }
 ```
 
-## <a name="multisetoperator"></a><a name="op_eq"></a>Çoklu küme:: operator =
+## <a name="multisetoperator"></a><a name="op_eq"></a> Çoklu küme:: operator =
 
 Bu öğe öğelerini `multiset` başka bir öğeden kullanarak değiştirir `multiset` .
 
@@ -1702,9 +1722,8 @@ multiset& operator=(multiset&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Right*|`multiset`Hangi öğelerin kopyalandığı veya taşındığı.|
+*Right*\
+`multiset`Hangi öğelerin kopyalandığı veya taşındığı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1747,7 +1766,7 @@ int main( )
    }
 ```
 
-## <a name="multisetpointer"></a><a name="pointer"></a>Çoklu küme::p oınter
+## <a name="multisetpointer"></a><a name="pointer"></a> Çoklu küme::p oınter
 
 Çoklu kümeli bir öğeye işaretçi sağlayan bir tür.
 
@@ -1761,7 +1780,7 @@ Bir tür **işaretçisi** bir öğenin değerini değiştirmek için kullanılab
 
 Çoğu durumda, bir [Yineleyici](#iterator) bir çoklu küme nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="multisetrbegin"></a><a name="rbegin"></a>Çoklu küme:: rbegin
+## <a name="multisetrbegin"></a><a name="rbegin"></a> Çoklu küme:: rbegin
 
 Ters çevrilen bir çoklu küme içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -1777,11 +1796,11 @@ Ters çevrilen bir çoklu küme içindeki ilk öğeyi adresleyen veya geri çevr
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin`, zaten bir çoklu küme ile olduğu gibi, ters kullanılan bir çoklu küme ile kullanılır.
+`rbegin` , zaten bir çoklu küme ile olduğu gibi, ters kullanılan bir çoklu küme ile kullanılır.
 
 Öğesinin dönüş değeri `rbegin` bir öğesine atanmışsa `const_reverse_iterator` , çok kümeli nesne değiştirilemez. Dönüş değeri `rbegin` bir öğesine atanırsa `reverse_iterator` , çok kümeli nesne değiştirilebilir.
 
-`rbegin`bir çoklu kümeli geri doğru yinelemek için kullanılabilir.
+`rbegin` bir çoklu kümeli geri doğru yinelemek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1838,7 +1857,7 @@ The reversed multiset is: 30 20 10
 After the erasure, the first element in the reversed multiset is 20.
 ```
 
-## <a name="multisetreference"></a><a name="reference"></a>Çoklu küme:: başvuru
+## <a name="multisetreference"></a><a name="reference"></a> Çoklu küme:: başvuru
 
 Çoklu kümeli depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -1874,7 +1893,7 @@ int main( )
 The first element in the multiset is 10.
 ```
 
-## <a name="multisetrend"></a><a name="rend"></a>Çoklu küme:: rend
+## <a name="multisetrend"></a><a name="rend"></a> Çoklu küme:: rend
 
 Ters çevrilen bir çoklu küme içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
@@ -1890,11 +1909,11 @@ Ters çevrilen bir çoklu küme içindeki son öğeden sonra gelen konumu ele al
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend`, [End](#end) bir çoklu küme ile kullanıldığı gibi, ters kullanılan bir çoklu küme ile kullanılır.
+`rend` , [End](#end) bir çoklu küme ile kullanıldığı gibi, ters kullanılan bir çoklu küme ile kullanılır.
 
 Öğesinin dönüş değeri `rend` bir öğesine atanmışsa `const_reverse_iterator` , çok kümeli nesne değiştirilemez. Dönüş değeri `rend` bir öğesine atanırsa `reverse_iterator` , çok kümeli nesne değiştirilebilir.
 
-`rend`, bir ters yineleyicinin kendi çoklu küme sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`rend` , bir ters yineleyicinin kendi çoklu küme sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `rend` başvurulmamalıdır.
 
@@ -1947,7 +1966,7 @@ int main() {
 }
 ```
 
-## <a name="multisetreverse_iterator"></a><a name="reverse_iterator"></a>Çoklu küme:: reverse_iterator
+## <a name="multisetreverse_iterator"></a><a name="reverse_iterator"></a> Çoklu küme:: reverse_iterator
 
 Ters çevrilen bir çoklu küme içindeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -1963,7 +1982,7 @@ Bir tür, `reverse_iterator` ters olarak çok küme üzerinde yinelemek için ku
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği `reverse_iterator` .
 
-## <a name="multisetsize"></a><a name="size"></a>Çoklu küme:: size
+## <a name="multisetsize"></a><a name="size"></a> Çoklu küme:: size
 
 Çoklu kümeli öğe sayısını döndürür.
 
@@ -2004,7 +2023,7 @@ The multiset length is 1.
 The multiset length is now 2.
 ```
 
-## <a name="multisetsize_type"></a><a name="size_type"></a>Çoklu küme:: size_type
+## <a name="multisetsize_type"></a><a name="size_type"></a> Çoklu küme:: size_type
 
 Çoklu kümeli öğe sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -2014,9 +2033,9 @@ typedef typename allocator_type::size_type size_type;
 
 ### <a name="example"></a>Örnek
 
-Bildirme ve kullanma hakkında bir [örnek için bkz](#size) . örnek`size_type`
+Bildirme ve kullanma hakkında bir [örnek için bkz](#size) . örnek `size_type`
 
-## <a name="multisetswap"></a><a name="swap"></a>Çoklu küme:: takas
+## <a name="multisetswap"></a><a name="swap"></a> Çoklu küme:: takas
 
 İki multiset 'in öğelerini değiş tokuş eder.
 
@@ -2084,7 +2103,7 @@ After swapping with ms2, list ms1 is: 100 200.
 After swapping with ms3, list ms1 is: 300.
 ```
 
-## <a name="multisetupper_bound"></a><a name="upper_bound"></a>Çoklu küme:: upper_bound
+## <a name="multisetupper_bound"></a><a name="upper_bound"></a> Çoklu küme:: upper_bound
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla bir çoklu küme içindeki ilk öğeye döndürür.
 
@@ -2152,7 +2171,7 @@ The first element of ms1 with a key greater than
 that of the initial element of ms1 is: 20.
 ```
 
-## <a name="multisetvalue_comp"></a><a name="value_comp"></a>Çoklu küme:: value_comp
+## <a name="multisetvalue_comp"></a><a name="value_comp"></a> Çoklu küme:: value_comp
 
 Çoklu kümeli öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -2227,7 +2246,7 @@ vc1( 2,3 ) returns value of true, where vc1 is the function object of ms1.
 vc2( 2,3 ) returns value of false, where vc2 is the function object of ms2.
 ```
 
-## <a name="multisetvalue_compare"></a><a name="value_compare"></a>Çoklu küme:: value_compare
+## <a name="multisetvalue_compare"></a><a name="value_compare"></a> Çoklu küme:: value_compare
 
 İki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan tür, birden çok küme üzerinde kendi göreli sıralarını tespit edebilir.
 
@@ -2237,7 +2256,7 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_compare`, şablon parametresinin eşanlamlısıdır `Compare` .
+`value_compare` , şablon parametresinin eşanlamlısıdır `Compare` .
 
 Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi için eş anlamlıların olduğunu unutmayın `Compare` . Her iki tür de, sınıfları ve çoklu küme için, her ikisi de birbirinden farklı oldukları sınıflar haritalarının ve multimap ile uyumluluk için sağlanır.
 
@@ -2247,7 +2266,7 @@ Hakkında daha fazla bilgi için `Compare` , [Çoklu küme sınıfı](../standar
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [value_comp](#value_comp) örneği `value_compare` .
 
-## <a name="multisetvalue_type"></a><a name="value_type"></a>Çoklu küme:: value_type
+## <a name="multisetvalue_type"></a><a name="value_type"></a> Çoklu küme:: value_type
 
 Bir nesne olarak, bir değer olarak kapasitesinde bir çoklu küme olarak depolanan bir nesneyi açıklayan bir tür.
 
@@ -2257,7 +2276,7 @@ typedef Key value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`, şablon parametresinin eşanlamlısıdır `Key` .
+`value_type` , şablon parametresinin eşanlamlısıdır `Key` .
 
 Hem [key_type](#key_type) hem de `value_type` şablon parametresi için eş anlamlıların olduğunu unutmayın `Key` . Her iki tür de, sınıfları ve çoklu küme için, her ikisi de birbirinden farklı oldukları sınıflar haritalarının ve multimap ile uyumluluk için sağlanır.
 

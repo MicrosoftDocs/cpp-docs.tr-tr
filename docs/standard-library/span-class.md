@@ -51,12 +51,12 @@ helpviewer_keywords:
 - std::span [C++], rend
 - std::span [C++], size
 - std::span [C++], size_bytes
-ms.openlocfilehash: 86ef4afcb5e6e7a9d244a8c2f2126bec7e1ace75
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4d5cf7f38d10814b3112a25a8da0e412f0d65093
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217460"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88560458"
 ---
 # <a name="span-class-c-standard-library"></a>Span sınıfı (C++ Standart Kitaplığı)
 
@@ -66,7 +66,7 @@ Genellikle bir işaretçi ve bir dizin kullanarak geri dönüş nesneleri dizisi
 
 Öğesinin boyutu, bir `span` şablon bağımsız değişkeni olarak veya belirterek çalışma zamanında belirtilerek derleme zamanında ayarlanabilir `dynamic_extent` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template<class T, size_t Extent = dynamic_extent>
@@ -75,10 +75,11 @@ class span;
 
 ### <a name="template-parameters"></a>Şablon parametreleri
 
-|Parametre|Açıklama|
-|-|-|
-|`T`| Yayılma alanındaki öğelerin türü. |
-|`Extent`| Derleme zamanında belirtilmişse, yayılma alanındaki öğelerin sayısı. Aksi takdirde `std::dynamic_extent` , çalışma zamanında öğe sayısı belirtilecektir. |
+`T`\
+ Yayılma alanındaki öğelerin türü.
+
+`Extent`\
+ Derleme zamanında belirtilmişse, yayılma alanındaki öğelerin sayısı. Aksi takdirde  `std::dynamic_extent` , çalışma zamanında öğe sayısı belirtilecektir.
 
 [Kesinti Kılavuzu](#deduction_guides)
 
@@ -107,7 +108,7 @@ class span;
 |[Geri](#back) | Yayılma alanındaki son öğeyi alır.|
 |[data](#data) | Yayılma alanındaki ilk öğenin adresini alın.|
 |[yapılan](#front) | Yayılma alanındaki ilk öğeyi alır.|
-|[işleç\[\]](#op_at) | Belirtilen konumdaki bir öğeye erişin.|
+|[işlecinde\[\]](#op_at) | Belirtilen konumdaki bir öğeye erişin.|
 | **Gözlemciler** | **Açıklama** |
 |[empty](#empty)| Yayılımın boş olup olmadığını test edin.|
 |[boyutla](#size) | Yayılma alanındaki öğelerin sayısını alır.|
@@ -338,7 +339,7 @@ Yayılımın sonunun sonuna işaret eden bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`end`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`end` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 Bu yineleyicinin döndürdüğü değere başvurmayın. Yineleyicinin, yayılma alanındaki son öğeden ötesine ulaşılmadığını belirlemek için kullanın.
 
@@ -890,7 +891,7 @@ int main()
 
 ## <a name="spanspan"></a><a name="span"></a> `span::span`
 
-`span`Kurucu.
+`span` Kurucu.
 
 ```cpp
 constexpr span() noexcept
@@ -962,7 +963,7 @@ Yayılma, içindeki nesneler üzerinde depolama alanı olmadığından, yayılma
 |---------|---------|
 |`span()` | Boş bir yayılma oluşturun. Yalnızca şablon parametresi veya olduğunda aşırı yükleme çözümlemesi sırasında göz önünde bulundurululur `Extent` `0` `dynamic_extent` .|
 |`span(It first, size_type count)` | `count`Yineleyiciden ilk öğeden bir span oluşturun `first` .  Yalnızca şablon parametresi olmadığında aşırı yükleme çözümlemesi sırasında kabul edilir `Extent` `dynamic_extent` . |
-|`span(It first, End last)` | `first`Sona ulaşılana kadar Yineleyici içindeki öğelerden bir Aralık oluşturun `last` . Yalnızca şablon parametresi olmadığında aşırı yükleme çözümlemesi sırasında kabul edilir `Extent` `dynamic_extent` . `It`bir olmalıdır `contiguous_iterator` .  |
+|`span(It first, End last)` | `first`Sona ulaşılana kadar Yineleyici içindeki öğelerden bir Aralık oluşturun `last` . Yalnızca şablon parametresi olmadığında aşırı yükleme çözümlemesi sırasında kabul edilir `Extent` `dynamic_extent` . `It` bir olmalıdır `contiguous_iterator` .  |
 |`span(array<T, N>& arr) noexcept;`<br /><br />`span(const array<T, N>& arr) noexcept;`<br /><br />`span(type_identity_t<element_type> (&arr)[N]) noexcept;` |  Belirtilen dizinin öğelerinden bir yayılma alanı oluşturun `N` . Yalnızca şablon parametresi veya eşitse aşırı yükleme çözümlemesi sırasında kabul edilir `Extent` `dynamic_extent` `N` . |
 |`span(R&& r)` |  Bir aralıktan yayılma oluşturun. Yalnızca şablon parametresi değilse aşırı yükleme çözümüne katılır `Extent` `dynamic_extent` .|
 |`span(const span& other)` |  Derleyici tarafından oluşturulan kopya Oluşturucu. Yayılma, öğeleri tutacak belleği ayırmadığından, veri işaretçisinin basit bir kopyası güvenlidir. |
@@ -1086,7 +1087,7 @@ int main()
 2
 ```
 
-## <a name="deduction-guides"></a><a name="deduction_guides"></a>Kesinti Kılavuzu
+## <a name="deduction-guides"></a><a name="deduction_guides"></a> Kesinti Kılavuzu
 
 Yayılma için aşağıdaki kesinti yönergeleri verilmiştir.
 

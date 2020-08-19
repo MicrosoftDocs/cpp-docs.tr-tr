@@ -1,5 +1,5 @@
 ---
-title: CMFCTabDropTarget Sınıfı
+title: CMFCTabDropTarget sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCTabDropTarget
@@ -16,18 +16,18 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-ms.openlocfilehash: 83432fdb90fe28214fb1faaf843556deb2f44750
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d1a521f8ac0a33dbc59d789e506ac1dd9c906e3e
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367352"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562057"
 ---
-# <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget Sınıfı
+# <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 
-Sekme denetimi ile OLE kitaplıkları arasındaki iletişim mekanizmasını sağlar.
+Sekme denetimi ve OLE kitaplıkları arasındaki iletişim mekanizmasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCTabDropTarget : public COleDropTarget
@@ -39,37 +39,37 @@ class CMFCTabDropTarget : public COleDropTarget
 
 |||
 |-|-|
-|Adı|Açıklama|
-|`CMFCTabDropTarget::CMFCTabDropTarget`|Varsayılan oluşturucu.|
+|Ad|Açıklama|
+|`CMFCTabDropTarget::CMFCTabDropTarget`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Adı|Açıklama|
-|[CMFCTabDropTarget::Ondragenter](#ondragenter)|Kullanıcı bir nesneyi sekme penceresine sürüklediğinde çerçeve tarafından çağrılır. (Geçersiz kılar [COleDropTarget::OnDragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).)|
-|[CMFCTabDropTarget::OndragLeave](#ondragleave)|Kullanıcı, odağı olan sekme penceresinin dışına bir nesne sürüklediğinde çerçeve tarafından çağrılır. [(Overrides COleDropTarget::OnDragLeave](../../mfc/reference/coledroptarget-class.md#ondragleave).)|
-|[CMFCTabDropTarget::Ondragover](#ondragover)|Kullanıcı bir nesneyi odağı olan sekme penceresine sürüklediğinde çerçeve tarafından çağrılır. (Geçersiz kılar [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover).)|
-|[CMFCTabDropTarget::Ondropex](#ondropex)|Kullanıcı sürükleme işleminin sonunda fare düğmesini serbest bıraktığunda çerçeve tarafından çağrılır. [(Overrides COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).)|
-|[CMFCTabDropTarget::Kayıt Ol](#register)|Denetimi, OLE sürükle ve bırak işleminin hedefi olabilecek bir denetim olarak kaydeder.|
+|Ad|Açıklama|
+|[CMFCTabDropTarget:: OnDragEnter](#ondragenter)|Kullanıcı bir nesneyi sekme penceresine sürüklediğinde Framework tarafından çağırılır. ( [COleDropTarget:: OnDragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter)geçersiz kılar.)|
+|[CMFCTabDropTarget:: OnDragLeave](#ondragleave)|Kullanıcı odağı olan sekme penceresinin dışına bir nesneyi sürüklediğinde Framework tarafından çağırılır. ( [COleDropTarget:: OnDragLeave](../../mfc/reference/coledroptarget-class.md#ondragleave)geçersiz kılar.)|
+|[CMFCTabDropTarget:: Ondragon](#ondragover)|Kullanıcı bir nesneyi odağı olan sekme penceresine sürüklediğinde Framework tarafından çağırılır. ( [COleDropTarget:: OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover)geçersiz kılar.)|
+|[CMFCTabDropTarget:: OnDropEx](#ondropex)|Kullanıcı bir sürükleme işleminin sonundaki fare düğmesini bıraktığında Framework tarafından çağırılır. ( [COleDropTarget:: OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex)geçersiz kılar.)|
+|[CMFCTabDropTarget:: yazmaç](#register)|Denetimi OLE sürükle ve bırak işleminin hedefi olabilecek bir tane olarak kaydeder.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CMFCBaseTabCtrl` sınıf, sınıfa sürükle ve bırak desteği sağlar. Uygulamanız [AfxOleInit](ole-initialization.md#afxoleinit) işlevini kullanarak OLE kitaplıklarını `CMFCBaseTabCtrl` başlatırsa, nesneler sürükle ve bırak işlemleri için kendilerini kaydeder.
+Bu sınıf, sınıfa sürükle ve bırak desteği sağlar `CMFCBaseTabCtrl` . Uygulamanız, [Afxoleinit](ole-initialization.md#afxoleinit) IŞLEVINI kullanarak OLE kitaplıklarını başlattığında, `CMFCBaseTabCtrl` nesneler sürükle ve bırak işlemleri için kendilerini kaydeder.
 
-Bir `CMFCTabDropTarget` sürükleme işlemi etkin olduğunda imlecin altındaki sekmeyi yaparak sınıf taban sınıfını genişletir. Sürükle ve bırak işlemleri hakkında daha fazla bilgi için [OLE sürükle ve bırak'a](../../mfc/drag-and-drop-ole.md)bakın.
+`CMFCTabDropTarget`Sınıf, bir sürükleme işlemi etkin olduğunda imlecin altında bulunan sekmeyi yaparak temel sınıfını genişletir. Sürükle ve bırak işlemleri hakkında daha fazla bilgi için bkz. [OLE sürükle ve bırak](../../mfc/drag-and-drop-ole.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CMFCTabDropTarget` nesnenin nasıl oluşturup yöntemini nasıl kullanılacağını `Register` gösterir.
+Aşağıdaki örnek, bir nesnesinin nasıl oluşturulduğunu `CMFCTabDropTarget` ve metodunu nasıl kullanacağınızı gösterir `Register` .
 
 [!code-cpp[NVC_MFC_RibbonApp#39](../../mfc/reference/codesnippet/cpp/cmfctabdroptarget-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
 [COleDropTarget](../../mfc/reference/coledroptarget-class.md)
 
@@ -77,11 +77,11 @@ Aşağıdaki örnek, bir `CMFCTabDropTarget` nesnenin nasıl oluşturup yöntemi
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxbasetabctrl.h
+**Üstbilgi:** afxbasetabctrl. h
 
-## <a name="cmfctabdroptargetondragenter"></a><a name="ondragenter"></a>CMFCTabDropTarget::Ondragenter
+## <a name="cmfctabdroptargetondragenter"></a><a name="ondragenter"></a> CMFCTabDropTarget:: OnDragEnter
 
-Kullanıcı bir nesneyi sekme penceresine sürüklediğinde çerçeve tarafından çağrılır.
+Kullanıcı bir nesneyi sekme penceresine sürüklediğinde Framework tarafından çağırılır.
 
 ```
 virtual DROPEFFECT OnDragEnter(
@@ -93,17 +93,21 @@ virtual DROPEFFECT OnDragEnter(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Pwnd*|[içinde] Kullanılma -yan.|
-|*pDataObject*|[içinde] Kullanıcının sürüklediği nesneye işaretçi.|
-|*dwKeyState*|[içinde] Değiştirici anahtarların durumunu içerir. Bu, aşağıdakilerden herhangi birinin birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|
-|*Nokta*|[içinde] İmlecin istemci koordinatlarında konumu.|
+*pWnd*\
+'ndaki Kullanılmayan.
+
+*pDataObject*\
+'ndaki Kullanıcının sürüklediği nesneye yönelik bir işaretçi.
+
+*dwKeyState*\
+'ndaki Değiştirici anahtarlarının durumunu içerir. Bu, aşağıdakilerden herhangi bir sayıda bir birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+
+*seçeneğinin*\
+'ndaki İmlecin istemci koordinatlarındaki konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Damla *noktası*tarafından belirtilen yerde oluşursa sonuçları etkisi. Aşağıdakilerden biri veya birkaçı olabilir:
+Bırakma, *işaret*tarafından belirtilen konumda gerçekleşirse oluşur. Aşağıdakilerden biri veya birkaçı olabilir:
 
 - DROPEFFECT_NONE
 
@@ -117,13 +121,13 @@ Damla *noktası*tarafından belirtilen yerde oluşursa sonuçları etkisi. Aşa�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubuğu çerçevesi özelleştirme modunda değilse veya Pano veri biçimi kullanılamıyorsa, bu yöntem DROPEFFECT_NONE döndürür. Aksi takdirde, sağlanan parametreleri ile arama `CMFCBaseTabCtrl::OnDragEnter` sonucu döndürür.
+Araç çubuğu çerçevesi özelleştirme modunda değilse veya Pano veri biçimi kullanılamıyorsa, bu yöntem DROPEFFECT_NONE döndürür. Aksi halde, belirtilen parametrelerle çağırmanın sonucunu döndürür `CMFCBaseTabCtrl::OnDragEnter` .
 
-Özelleştirme modu hakkında daha fazla bilgi için [CMFCToolBar::IsCustomizeMode'a](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)bakın. Pano veri biçimleri hakkında daha fazla bilgi için [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable)' a bakın.
+Özelleştirme modu hakkında daha fazla bilgi için bkz. [CMFCToolBar:: IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). Pano veri biçimleri hakkında daha fazla bilgi için bkz. [Copadataobject:: IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 
-## <a name="cmfctabdroptargetondragleave"></a><a name="ondragleave"></a>CMFCTabDropTarget::OndragLeave
+## <a name="cmfctabdroptargetondragleave"></a><a name="ondragleave"></a> CMFCTabDropTarget:: OnDragLeave
 
-Kullanıcı, odağı olan sekme penceresinin dışına bir nesne sürüklediğinde çerçeve tarafından çağrılır.
+Kullanıcı odağı olan sekme penceresinin dışına bir nesneyi sürüklediğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnDragLeave(CWnd* pWnd);
@@ -131,18 +135,16 @@ virtual void OnDragLeave(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Pwnd*|[içinde] Kullanılma -yan.|
+*pWnd*\
+'ndaki Kullanılmayan.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CMFCBaseTabCtrl::OnDragLeave` sürükleme işlemini gerçekleştirmek için yöntemi çağırır.
+Bu yöntem, `CMFCBaseTabCtrl::OnDragLeave` sürükleme işlemini gerçekleştirmek için yöntemini çağırır.
 
-## <a name="cmfctabdroptargetondragover"></a><a name="ondragover"></a>CMFCTabDropTarget::Ondragover
+## <a name="cmfctabdroptargetondragover"></a><a name="ondragover"></a> CMFCTabDropTarget:: Ondragon
 
-Kullanıcı bir nesneyi odağı olan sekme penceresine sürüklediğinde çerçeve tarafından çağrılır.
+Kullanıcı bir nesneyi odağı olan sekme penceresine sürüklediğinde Framework tarafından çağırılır.
 
 ```
 virtual DROPEFFECT OnDragOver(
@@ -154,17 +156,21 @@ virtual DROPEFFECT OnDragOver(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Pwnd*|[içinde] Kullanılma -yan.|
-|*pDataObject*|[içinde] Kullanıcının sürüklediği nesneye işaretçi.|
-|*dwKeyState*|[içinde] Değiştirici anahtarların durumunu içerir. Bu, aşağıdakilerden herhangi birinin birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|
-|*Nokta*|[içinde] İstemci koordinatlarında fare işaretçisinin konumu.|
+*pWnd*\
+'ndaki Kullanılmayan.
+
+*pDataObject*\
+'ndaki Kullanıcının sürüklediği nesneye yönelik bir işaretçi.
+
+*dwKeyState*\
+'ndaki Değiştirici anahtarlarının durumunu içerir. Bu, aşağıdakilerden herhangi bir sayıda bir birleşimidir: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.
+
+*seçeneğinin*\
+'ndaki İstemci koordinatlarındaki fare işaretçisinin konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Damla *noktası*tarafından belirtilen yerde oluşursa sonuçları etkisi. Aşağıdakilerden biri veya birkaçı olabilir:
+Bırakma, *işaret*tarafından belirtilen konumda gerçekleşirse oluşur. Aşağıdakilerden biri veya birkaçı olabilir:
 
 - DROPEFFECT_NONE
 
@@ -178,13 +184,13 @@ Damla *noktası*tarafından belirtilen yerde oluşursa sonuçları etkisi. Aşa�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir sürükleme işlemi etkin olduğunda imleç altında sekme yapar. Araç çubuğu çerçevesi özelleştirme modunda değilse veya Pano veri biçimi kullanılamıyorsa DROPEFFECT_NONE döndürür. Aksi takdirde, sağlanan parametreleri ile arama `CMFCBaseTabCtrl::OnDragOver` sonucu döndürür.
+Bu yöntem, bir sürükleme işlemi etkin olduğunda imlecin altında yer alan sekmeyi yapar. Araç çubuğu çerçevesi özelleştirme modunda değilse veya Pano veri biçimi kullanılamıyorsa DROPEFFECT_NONE döndürür. Aksi halde, belirtilen parametrelerle çağırmanın sonucunu döndürür `CMFCBaseTabCtrl::OnDragOver` .
 
-Özelleştirme modu hakkında daha fazla bilgi için [CMFCToolBar::IsCustomizeMode'a](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)bakın. Pano veri biçimleri hakkında daha fazla bilgi için [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable)' a bakın.
+Özelleştirme modu hakkında daha fazla bilgi için bkz. [CMFCToolBar:: IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). Pano veri biçimleri hakkında daha fazla bilgi için bkz. [Copadataobject:: IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 
-## <a name="cmfctabdroptargetondropex"></a><a name="ondropex"></a>CMFCTabDropTarget::Ondropex
+## <a name="cmfctabdroptargetondropex"></a><a name="ondropex"></a> CMFCTabDropTarget:: OnDropEx
 
-Kullanıcı sürükleme işleminin sonunda fare düğmesini serbest bıraktığunda çerçeve tarafından çağrılır.
+Kullanıcı bir sürükleme işleminin sonundaki fare düğmesini bıraktığında Framework tarafından çağırılır.
 
 ```
 virtual DROPEFFECT OnDropEx(
@@ -197,18 +203,24 @@ virtual DROPEFFECT OnDropEx(
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Pwnd*|[içinde] Kullanılma -yan.|
-|*pDataObject*|[içinde] Kullanıcının sürüklediği nesneye işaretçi.|
-|*dropEffect*|[içinde] Varsayılan bırakma işlemi.|
-|*dropList*|[içinde] Kullanılma -yan.|
-|*Nokta*|[içinde] İstemci koordinatlarında fare işaretçisinin konumu.|
+*pWnd*\
+'ndaki Kullanılmayan.
+
+*pDataObject*\
+'ndaki Kullanıcının sürüklediği nesneye yönelik bir işaretçi.
+
+*dropEffect*\
+'ndaki Varsayılan bırakma işlemi.
+
+*Açılan liste*\
+'ndaki Kullanılmayan.
+
+*seçeneğinin*\
+'ndaki İstemci koordinatlarındaki fare işaretçisinin konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ortaya çıkan bırakma etkisi. Aşağıdakilerden biri veya birkaçı olabilir:
+Ortaya çıkan bırakma efekti. Aşağıdakilerden biri veya birkaçı olabilir:
 
 - DROPEFFECT_NONE
 
@@ -222,13 +234,13 @@ Ortaya çıkan bırakma etkisi. Aşağıdakilerden biri veya birkaçı olabilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubuğu `CMFCBaseTabCtrl::OnDrop` çerçevesi özelleştirme modundaysa ve Pano veri biçimi kullanılabilirse, bu yöntem çağırır. Çağrı sıfır `CMFCBaseTabCtrl::OnDrop` olmayan bir değer döndürürse, bu yöntem dropEffect tarafından belirtilen varsayılan bırakma efektini *döndürür.* Aksi takdirde, bu yöntem DROPEFFECT_NONE döndürür. Damla efektleri hakkında daha fazla bilgi için [Bkz. COleDropTarget::OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).
+Bu yöntem `CMFCBaseTabCtrl::OnDrop` , araç çubuğu çerçevesi özelleştirme modundaysa ve Pano veri biçimi kullanılabilir olduğunda çağırır. Çağrısı `CMFCBaseTabCtrl::OnDrop` sıfır dışında bir değer döndürürse, bu yöntem *DROPEFFECT*tarafından belirtilen varsayılan bırakma efektini döndürür. Aksi takdirde, bu yöntem DROPEFFECT_NONE döndürür. Bırakma efektleri hakkında daha fazla bilgi için bkz. [COleDropTarget:: OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).
 
-Özelleştirme modu hakkında daha fazla bilgi için [CMFCToolBar::IsCustomizeMode'a](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)bakın. Pano veri biçimleri hakkında daha fazla bilgi için [COleDataObject::IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable)' a bakın.
+Özelleştirme modu hakkında daha fazla bilgi için bkz. [CMFCToolBar:: IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). Pano veri biçimleri hakkında daha fazla bilgi için bkz. [Copadataobject:: IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 
-## <a name="cmfctabdroptargetregister"></a><a name="register"></a>CMFCTabDropTarget::Kayıt Ol
+## <a name="cmfctabdroptargetregister"></a><a name="register"></a> CMFCTabDropTarget:: yazmaç
 
-Denetimi, OLE sürükle ve bırak işleminin hedefi olabilecek bir denetim olarak kaydeder.
+Denetimi OLE sürükle ve bırak işleminin hedefi olabilecek bir tane olarak kaydeder.
 
 ```
 BOOL Register(CMFCBaseTabCtrl *pOwner);
@@ -236,21 +248,19 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*pSahibi*|[içinde] Açılan hedef olarak kaydolmak için sekme denetimi.|
+*pOwner*\
+'ndaki Bırakma hedefi olarak kaydolmak için sekme denetimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt başarılı olduysa sıfırolmayan; aksi takdirde 0.
+Kayıt başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [COleDropTarget çağırır::Sürükle](../../mfc/reference/coledroptarget-class.md#register) ve bırak işlemleri için denetimi kaydetmek için kaydolun.
+Bu yöntem, sürükle ve bırak işlemleri için denetimi kaydetmek üzere [COleDropTarget:: Register](../../mfc/reference/coledroptarget-class.md#register) öğesini çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
 [OLE sürükle ve bırak](../../mfc/drag-and-drop-ole.md)

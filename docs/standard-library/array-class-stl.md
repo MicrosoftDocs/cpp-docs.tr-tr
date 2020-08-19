@@ -96,12 +96,12 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: 9cde21624e3a8d4cce6db9cdc054bad427340f31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f826bb679d3391855d0a0dbc7c4355a735b9c529
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203916"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562577"
 ---
 # <a name="array-class-c-standard-library"></a>Array sınıfı (C++ Standart Kitaplığı)
 
@@ -116,10 +116,11 @@ class array;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|`Ty`|Öğenin türü.|
-|`N`|Öğe sayısı.|
+`Ty`\
+Öğenin türü.
+
+`N`\
+Öğe sayısı.
 
 ## <a name="members"></a>Üyeler
 
@@ -180,7 +181,7 @@ array<int, 4> ai = { 1, 2, 3 };
 
 **Ad alanı:** std
 
-## <a name="arrayarray"></a><a name="array"></a>Array:: Array
+## <a name="arrayarray"></a><a name="array"></a> Array:: Array
 
 Bir dizi nesnesi oluşturur.
 
@@ -239,11 +240,11 @@ int main()
 0 1 2 3
 ```
 
-## <a name="arrayassign"></a><a name="assign"></a>Array:: Assign
+## <a name="arrayassign"></a><a name="assign"></a> Array:: Assign
 
 C++ 11 ' de kullanılmıyor, [Fill](#fill)ile değiştirilmiştir. Tüm öğeleri değiştirir.
 
-## <a name="arrayat"></a><a name="at"></a>Array:: at
+## <a name="arrayat"></a><a name="at"></a> Array:: at
 
 Belirtilen konumdaki bir öğeye erişir.
 
@@ -289,7 +290,7 @@ int main()
 }
 ```
 
-## <a name="arrayback"></a><a name="back"></a>Array:: Back
+## <a name="arrayback"></a><a name="back"></a> Array:: Back
 
 Son öğeye erişir.
 
@@ -334,7 +335,7 @@ int main()
 3
 ```
 
-## <a name="arraybegin"></a><a name="begin"></a>Array:: Begin
+## <a name="arraybegin"></a><a name="begin"></a> Array:: Begin
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -379,7 +380,7 @@ int main()
 0
 ```
 
-## <a name="arraycbegin"></a><a name="cbegin"></a>Array:: cbegin
+## <a name="arraycbegin"></a><a name="cbegin"></a> Array:: cbegin
 
 **`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -405,7 +406,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="arraycend"></a><a name="cend"></a>Array:: cend
+## <a name="arraycend"></a><a name="cend"></a> Array:: cend
 
 **`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
@@ -419,7 +420,7 @@ Aralığın hemen sonunu gösteren bir rastgele erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 `end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
@@ -433,7 +434,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
-## <a name="arrayconst_iterator"></a><a name="const_iterator"></a>dizi:: const_iterator
+## <a name="arrayconst_iterator"></a><a name="const_iterator"></a> dizi:: const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -481,7 +482,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="arrayconst_pointer"></a><a name="const_pointer"></a>dizi:: const_pointer
+## <a name="arrayconst_pointer"></a><a name="const_pointer"></a> dizi:: const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -525,7 +526,7 @@ int main()
 0
 ```
 
-## <a name="arrayconst_reference"></a><a name="const_reference"></a>dizi:: const_reference
+## <a name="arrayconst_reference"></a><a name="const_reference"></a> dizi:: const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -569,7 +570,7 @@ int main()
 0
 ```
 
-## <a name="arrayconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>dizi:: const_reverse_iterator
+## <a name="arrayconst_reverse_iterator"></a><a name="const_reverse_iterator"></a> dizi:: const_reverse_iterator
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü.
 
@@ -613,7 +614,7 @@ int main()
 3
 ```
 
-## <a name="arraycrbegin"></a><a name="crbegin"></a>Array:: crbegin
+## <a name="arraycrbegin"></a><a name="crbegin"></a> Array:: crbegin
 
 Ters çevrilen dizideki ilk öğeye bir const yineleyici döndürür.
 
@@ -657,7 +658,7 @@ The first element of array is 1.
 The first element of the reversed array is 2.
 ```
 
-## <a name="arraycrend"></a><a name="crend"></a>dizi:: crend
+## <a name="arraycrend"></a><a name="crend"></a> dizi:: crend
 
 Ters çevrilen dizideki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -675,7 +676,7 @@ Ters çevrilen bir dizideki son öğeden sonra gelen konumu ele alan bir sabit t
 
 Dönüş değeri `crend` (uygun şekilde azaltılır) ile dizi nesnesi değiştirilemez.
 
-`crend`, bir ters yineleyicinin dizisinin sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`crend` , bir ters yineleyicinin dizisinin sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `crend` başvurulmamalıdır.
 
@@ -701,7 +702,7 @@ int main( )
 1
 ```
 
-## <a name="arraydata"></a><a name="data"></a>dizi: ata:d
+## <a name="arraydata"></a><a name="data"></a> dizi: ata:d
 
 İlk öğenin adresini alır.
 
@@ -747,7 +748,7 @@ int main()
 0
 ```
 
-## <a name="arraydifference_type"></a><a name="difference_type"></a>dizi::d ifference_type
+## <a name="arraydifference_type"></a><a name="difference_type"></a> dizi::d ifference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -791,7 +792,7 @@ int main()
 -4
 ```
 
-## <a name="arrayempty"></a><a name="empty"></a>Array:: Empty
+## <a name="arrayempty"></a><a name="empty"></a> Array:: Empty
 
 Bir öğe olup olmadığını sınar.
 
@@ -841,7 +842,7 @@ false
 true
 ```
 
-## <a name="arrayend"></a><a name="end"></a>Array:: End
+## <a name="arrayend"></a><a name="end"></a> Array:: End
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -887,7 +888,7 @@ int main()
 3
 ```
 
-## <a name="arrayfill"></a><a name="fill"></a>Array:: Fill
+## <a name="arrayfill"></a><a name="fill"></a> Array:: Fill
 
 Bir diziyi siler ve belirtilen öğeleri boş diziye kopyalar.
 
@@ -897,13 +898,12 @@ void fill(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Acil*|Diziye eklenmekte olan öğenin değeri.|
+*Acil*\
+Diziye eklenmekte olan öğenin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fill`dizinin her öğesini belirtilen değerle değiştirir.
+`fill` dizinin her öğesini belirtilen değerle değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -933,7 +933,7 @@ int main()
 }
 ```
 
-## <a name="arrayfront"></a><a name="front"></a>Array:: Front
+## <a name="arrayfront"></a><a name="front"></a> Array:: Front
 
 İlk öğeye erişir.
 
@@ -978,7 +978,7 @@ int main()
 0
 ```
 
-## <a name="arrayiterator"></a><a name="iterator"></a>Array:: Yineleyici
+## <a name="arrayiterator"></a><a name="iterator"></a> Array:: Yineleyici
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1027,7 +1027,7 @@ it1: 0 1 2 3
 it2: 0
 ```
 
-## <a name="arraymax_size"></a><a name="max_size"></a>dizi:: max_size
+## <a name="arraymax_size"></a><a name="max_size"></a> dizi:: max_size
 
 Öğe sayısını sayar.
 
@@ -1070,7 +1070,7 @@ int main()
 4
 ```
 
-## <a name="arrayoperator"></a><a name="op_at"></a>Array:: operator []
+## <a name="arrayoperator"></a><a name="op_at"></a> Array:: operator []
 
 Belirtilen konumdaki bir öğeye erişir.
 
@@ -1123,7 +1123,7 @@ int main()
 1 3
 ```
 
-## <a name="arrayoperator"></a><a name="op_eq"></a>Array:: operator =
+## <a name="arrayoperator"></a><a name="op_eq"></a> Array:: operator =
 
 Denetlenen sırayı değiştirir.
 
@@ -1178,7 +1178,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="arraypointer"></a><a name="pointer"></a>dizi::p oınter
+## <a name="arraypointer"></a><a name="pointer"></a> dizi::p oınter
 
 Bir öğe için bir işaretçi türü.
 
@@ -1222,7 +1222,7 @@ int main()
 0
 ```
 
-## <a name="arrayrbegin"></a><a name="rbegin"></a>Array:: rbegin
+## <a name="arrayrbegin"></a><a name="rbegin"></a> Array:: rbegin
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
@@ -1267,7 +1267,7 @@ int main()
 3
 ```
 
-## <a name="arrayreference"></a><a name="reference"></a>Array:: Reference
+## <a name="arrayreference"></a><a name="reference"></a> Array:: Reference
 
 Bir öğe için bir başvuru türü.
 
@@ -1311,7 +1311,7 @@ int main()
 0
 ```
 
-## <a name="arrayrend"></a><a name="rend"></a>dizi:: rend
+## <a name="arrayrend"></a><a name="rend"></a> dizi:: rend
 
 Ters denetlenen sıranın sonunu belirtir.
 
@@ -1356,7 +1356,7 @@ int main()
 0
 ```
 
-## <a name="arrayreverse_iterator"></a><a name="reverse_iterator"></a>dizi:: reverse_iterator
+## <a name="arrayreverse_iterator"></a><a name="reverse_iterator"></a> dizi:: reverse_iterator
 
 Denetlenen sıra için ters yineleyicinin türü.
 
@@ -1400,7 +1400,7 @@ int main()
 3
 ```
 
-## <a name="arraysize"></a><a name="size"></a>Array:: size
+## <a name="arraysize"></a><a name="size"></a> Array:: size
 
 Öğe sayısını sayar.
 
@@ -1443,7 +1443,7 @@ int main()
 4
 ```
 
-## <a name="arraysize_type"></a><a name="size_type"></a>dizi:: size_type
+## <a name="arraysize_type"></a><a name="size_type"></a> dizi:: size_type
 
 İki öğe arasındaki işaretsiz mesafe türü.
 
@@ -1487,7 +1487,7 @@ int main()
 4
 ```
 
-## <a name="arrayswap"></a><a name="swap"></a>Array:: swap
+## <a name="arrayswap"></a><a name="swap"></a> Array:: swap
 
 Bu dizinin içeriğini başka bir dizi ile değiştirir.
 
@@ -1553,7 +1553,7 @@ int main()
 0 1 2 3
 ```
 
-## <a name="arrayvalue_type"></a><a name="value_type"></a>dizi:: value_type
+## <a name="arrayvalue_type"></a><a name="value_type"></a> dizi:: value_type
 
 Öğenin türü.
 

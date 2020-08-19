@@ -28,12 +28,12 @@ helpviewer_keywords:
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-ms.openlocfilehash: d5afc1b05f52d73228abc1a1e102c1578eb2d2dc
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0791fe6002b751906c6bc6f83dafe1ccf202bc8b
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912142"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562031"
 ---
 # <a name="_tzset"></a>_tzset
 
@@ -42,7 +42,7 @@ Saat ortam değişkenlerini ayarlar.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void _tzset( void );
@@ -52,15 +52,22 @@ void _tzset( void );
 
 **_Tzset** işlevi, üç genel değişkene değer atamak için **TZ** ortam değişkeninin geçerli ayarını kullanır: **_daylight**, **_timezone**ve **_tzname**. Bu değişkenler, Eşgüdümlü Evrensel Saat (UTC) ile yerel saate ve UTC 'yi sistem saatinden hesaplamak için [zaman](time-time32-time64.md) işlevine göre düzeltmeler yapmak üzere [_ftime](ftime-ftime32-ftime64.md) ve [localtime](localtime-localtime32-localtime64.md) işlevleri tarafından kullanılır. **TZ** ortam değişkenini ayarlamak için aşağıdaki sözdizimini kullanın:
 
-> **TZ =**_tzn_ \[ **+**&#124;**-**]*HH*\[**:**_mm_\[**:**_SS_]] [*dzn*] ayarla
+> **TZ =**_tzn_ \[ **+**&#124;**-** ]*HH* \[ **:**_mm_ \[ **:**_SS_]] [*dzn*] ayarla
 
-|Parametre|Açıklama|
-|-|-|
-| *tzn* | PST gibi üç harfli saat dilimi adı. Yerel saatten UTC olarak doğru sapmayı belirtmeniz gerekir. |
-| *ss* | UTC ve yerel saat arasındaki saat cinsinden fark. İşaret (+) pozitif değerler için isteğe bağlıdır. |
-| *d* | Dakika. İki nokta üst üste (**:**) ile *HH* ile ayrılır. |
-| *ss* | Saniyeden. Bir iki nokta (**:**) ile *mm* 'den ayrılır. |
-| *dzn* | PASIFIK saati gibi üç harfli Yaz Saati dilimi. Gün ışığından yararlanma saati hiçbir zaman konum içinde etkin değilse, bir *dzn*değeri olmadan **TZ** ayarlayın. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamak için Birleşik Devletler ' kurallarını varsayar. |
+ *tzn* \
+ PST gibi üç harfli saat dilimi adı. Yerel saatten UTC olarak doğru sapmayı belirtmeniz gerekir.
+
+ *ss* \
+ UTC ve yerel saat arasındaki saat cinsinden fark. İşaret (+) pozitif değerler için isteğe bağlıdır.
+
+ *d* \
+ Dakika. İki nokta üst üste (**:**) ile *HH* ile ayrılır.
+
+ *ss* \
+ Saniyeden. Bir iki nokta (**:**) ile *mm* 'den ayrılır.
+
+ *dzn* \
+ PASIFIK saati gibi üç harfli Yaz Saati dilimi. Gün ışığından yararlanma saati hiçbir zaman konum içinde etkin değilse, bir *dzn*değeri olmadan **TZ** ayarlayın. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamak için Birleşik Devletler ' kurallarını varsayar.
 
 > [!NOTE]
 > Zaman farkının işaretini hesaplarken dikkatli olmak. Saat farkı, yerel saatten UTC 'ye (tersi değil) göre farklılık yaptığından, işareti, ne kadar çok beklendiğini tahmin edebileceğinize karşı bir değer olabilir. UTC 'nin önünde geçen saat dilimleri için saat farkı negatif olur; UTC 'nin gerisinde, fark pozitif bir değer.
@@ -90,7 +97,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_tzset**|\<Time. h>|
+|**_tzset**|\<time.h>|
 
 **_Tzset** Işlevi, Microsoft 'a özgüdür. Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

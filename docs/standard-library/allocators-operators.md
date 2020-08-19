@@ -5,12 +5,12 @@ f1_keywords:
 - allocators/std::operator!=
 - allocators/std::operator==
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-ms.openlocfilehash: 7d22e550c7054c2197163f2edf829ec17a85a145
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2d2f928ab3773ed8e0b0afdc0113db2ef5b2a3dd
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87204566"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561224"
 ---
 # <a name="ltallocatorsgt-operators"></a>&lt;ayrıcılar &gt; işleçleri
 
@@ -20,7 +20,7 @@ Bunlar, ayrıcılar içinde tanımlanan genel şablon işleci işlevleridir &lt;
 |-|-|
 |[işleç! =](#op_neq)|[işleç = =](#op_eq_eq)|
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitsizliği sınar.
 
@@ -33,10 +33,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*tarafta*|Eşitsizlik için test edilecek ayırıcı nesnelerinden biri.|
-|*Right*|Eşitsizlik için test edilecek ayırıcı nesnelerinden biri.|
+*tarafta*\
+Eşitsizlik için test edilecek ayırıcı nesnelerinden biri.
+
+*Right*\
+Eşitsizlik için test edilecek ayırıcı nesnelerinden biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -46,7 +47,7 @@ bool operator!=(
 
 Şablon işleci döndürülür `!(left == right)` .
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.
 
@@ -59,10 +60,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*tarafta*|Eşitlik için test edilecek ayırıcı nesnelerinden biri.|
-|*Right*|Eşitlik için test edilecek ayırıcı nesnelerinden biri.|
+*tarafta*\
+Eşitlik için test edilecek ayırıcı nesnelerinden biri.
+
+*Right*\
+Eşitlik için test edilecek ayırıcı nesnelerinden biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -10,18 +10,18 @@ helpviewer_keywords:
 - stdext::cache_freelist [C++], allocate
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
-ms.openlocfilehash: d757909d3e54fed35bf42b943b9f9740dffee115
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bbe0ff0f2297afcec99bd162ebe6a6d3e10f9bce
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366745"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88560732"
 ---
 # <a name="cache_freelist-class"></a>cache_freelist Sınıfı
 
-Tek bir boyuttaki bellek bloklarını ayıran ve ayıran bir [blok ayırıcı](../standard-library/allocators-header.md) tanımlar.
+Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <std::size_t Sz, class Max>
@@ -30,37 +30,38 @@ class cache_freelist
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sz*|Dizideki ayrılacak öğe sayısı.|
-|*Max*|Serbest listenin en büyük boyutunu temsil eden maksimum sınıf. Bu [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
+*SZ*\
+Ayrılacak dizideki öğelerin sayısı.
+
+*Biçimlendir*\
+Ücretsiz listenin en büyük boyutunu temsil eden en büyük sınıf. Bu [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-cache_freelist sınıf şablonu boyutu *Sz*bellek blokları ücretsiz bir listesini tutar. Ücretsiz liste dolu olduğunda bellek blokları anlaşma operatör **silme** kullanır. Boş liste boş olduğunda, yeni bellek blokları ayırmak için **yeni işleç** kullanır. Serbest listenin maksimum boyutu Max parametresinde geçen *Max* sınıf max sınıfı tarafından belirlenir.
+Cache_freelist sınıf şablonu, *SZ*boyutundaki bellek bloklarının boş bir listesini tutar. Ücretsiz liste dolduğunda, bellek bloklarını serbest bırakmak için **işleç Delete** kullanır. Ücretsiz liste boş olduğunda yeni bellek blokları ayırmak için **New işlecini** kullanır. Ücretsiz listenin en büyük boyutu, *en* büyük parametrede geçirilen sınıf en büyük sınıfına göre belirlenir.
 
-Her bellek bloğu kullanılabilir bellek *Sz* bayt ve **operatör yeni** ve operatör **silmek** gerektiren veri tutar.
+Her bellek bloğunda, *Sz* kullanılabilir bellek ve **New işleci** ve **delete işleci** için gerekli bellek bulunur.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[Cache_freelist](#cache_freelist)|Türünde `cache_freelist`bir nesne oluşturuyor.|
+|[cache_freelist](#cache_freelist)|Türünde bir nesne oluşturur `cache_freelist` .|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
-|[Ayırması](#deallocate)|Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.|
+|[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<tahsisörler>
+**Üst bilgi:**\<allocators>
 
 **Ad alanı:** stdext
 
-## <a name="cache_freelistallocate"></a><a name="allocate"></a>cache_freelist::allocate
+## <a name="cache_freelistallocate"></a><a name="allocate"></a> cache_freelist:: ayır
 
 Bellek bloğunu ayırır.
 
@@ -70,19 +71,18 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Sayısı*|Dizideki ayrılacak öğe sayısı.|
+*biriktirme*\
+Ayrılacak dizideki öğelerin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılan nesneye işaretçi.
+Ayrılan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cache_freelistcache_freelist"></a><a name="cache_freelist"></a>cache_freelist:cache_freelist
+## <a name="cache_freelistcache_freelist"></a><a name="cache_freelist"></a> cache_freelist:: cache_freelist
 
-Türünde `cache_freelist`bir nesne oluşturuyor.
+Türünde bir nesne oluşturur `cache_freelist` .
 
 ```cpp
 cache_freelist();
@@ -90,9 +90,9 @@ cache_freelist();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cache_freelistdeallocate"></a><a name="deallocate"></a>cache_freelist::d
+## <a name="cache_freelistdeallocate"></a><a name="deallocate"></a> cache_freelist::d eallocate
 
-Belirli bir konumdan başlayarak belirli sayıda nesneyi depolamadan serbest sağlar.
+Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -100,13 +100,14 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Ptr*|Depolamadan ayrılacak ilk nesneye işaretçi.|
-|*Sayısı*|Depolamadan ayrılacak nesne sayısı.|
+*kaydetmeye*\
+Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.
+
+*biriktirme*\
+Depolamadan serbest bırakmak için nesne sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<tahsisat>](../standard-library/allocators-header.md)
+[\<allocators>](../standard-library/allocators-header.md)

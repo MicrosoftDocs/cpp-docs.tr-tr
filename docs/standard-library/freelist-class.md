@@ -10,12 +10,12 @@ helpviewer_keywords:
 - stdext::freelist [C++], pop
 - stdext::freelist [C++], push
 ms.assetid: 8ad7e35c-4c80-4479-8ede-1a2497b06d71
-ms.openlocfilehash: 7425f99f7966548bdb1f94d3007382eeb99863df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bf88e33f5d00b9b6b90d2712a0bbabaa3e571340
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193230"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88561225"
 ---
 # <a name="freelist-class"></a>freelist Sınıfı
 
@@ -30,10 +30,11 @@ class freelist : public Max
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*SZ*|Ayrılacak dizideki öğelerin sayısı.|
-|*Biçimlendir*|Ücretsiz listede depolanacak en fazla öğe sayısını temsil eden Max sınıfı. Max sınıfı [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.|
+*SZ*\
+Ayrılacak dizideki öğelerin sayısı.
+
+*Biçimlendir*\
+Ücretsiz listede depolanacak en fazla öğe sayısını temsil eden Max sınıfı. Max sınıfı [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md)veya [max_variable_size](../standard-library/max-variable-size-class.md)olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -58,7 +59,7 @@ Bu sınıf şablonu *, en fazla*değer olarak geçirilen maksimum sınıf taraf�
 
 **Ad alanı:** stdext
 
-## <a name="freelistfreelist"></a><a name="freelist"></a>freelist:: freelist
+## <a name="freelistfreelist"></a><a name="freelist"></a> freelist:: freelist
 
 Türünde bir nesne oluşturur `freelist` .
 
@@ -68,7 +69,7 @@ freelist();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="freelistpop"></a><a name="pop"></a>freelist::p op
+## <a name="freelistpop"></a><a name="pop"></a> freelist::p op
 
 İlk bellek bloğunu ücretsiz listeden kaldırır.
 
@@ -84,7 +85,7 @@ Listeden kaldırılan bellek bloğuna yönelik bir işaretçi döndürür.
 
 Üye işlevi, liste boşsa NULL değerini döndürür. Aksi takdirde, ilk bellek bloğunu listeden kaldırır.
 
-## <a name="freelistpush"></a><a name="push"></a>freelist::p USH
+## <a name="freelistpush"></a><a name="push"></a> freelist::p USH
 
 Listeye bir bellek bloğu ekler.
 
@@ -94,9 +95,8 @@ bool push(void* ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*ptr*|Boş listeye eklenecek bellek bloğunun işaretçisi.|
+*kaydetmeye*\
+Boş listeye eklenecek bellek bloğunun işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

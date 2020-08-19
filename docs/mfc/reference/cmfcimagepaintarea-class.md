@@ -1,5 +1,5 @@
 ---
-title: CMFCImagePaintArea Sınıfı
+title: CMFCImagePaintArea sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCImagePaintArea
@@ -16,18 +16,18 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetColor
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
-ms.openlocfilehash: cd74d2418bb874553fbbafa637f527a7b84b73bf
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 3d8bfc40c3c9e937ad5acd7228e49877af65204a
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754273"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562161"
 ---
-# <a name="cmfcimagepaintarea-class"></a>CMFCImagePaintArea Sınıfı
+# <a name="cmfcimagepaintarea-class"></a>CMFCImagePaintArea sınıfı
 
-Görüntü düzenleyicisi iletişim kutusundaki görüntüyü değiştirmek için kullandığınız resim alanını sağlar.
+Görüntü Düzenleyici iletişim kutusunda bir görüntüyü değiştirmek için kullandığınız resim alanını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCImagePaintArea : public CButton
@@ -39,51 +39,51 @@ class CMFCImagePaintArea : public CButton
 
 |||
 |-|-|
-|Adı|Açıklama|
-|[CMFCImagePaintArea::CMFCImagePaintArea](#cmfcimagepaintarea)|Bir `CMFCImagePaintArea` nesne inşa eder.|
+|Ad|Açıklama|
+|[CMFCImagePaintArea:: CMFCImagePaintArea](#cmfcimagepaintarea)|Bir `CMFCImagePaintArea` nesnesi oluşturur.|
 |`CMFCImagePaintArea::~CMFCImagePaintArea`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |||
 |-|-|
-|Adı|Açıklama|
-|[CMFCImagePaintArea::GetMode](#getmode)|Geçerli çizim modunu alır.|
-|[CMFCImagePaintArea::SetBitmap](#setbitmap)|Resim alanı için bit eşlem görüntüsünü ayarlar.|
-|[CMFCImagePaintArea::SetColor](#setcolor)|Geçerli çizim rengini ayarlar.|
-|[CMFCImagePaintArea::SetMode](#setmode)|Geçerli çizim modunu ayarlar.|
+|Ad|Açıklama|
+|[CMFCImagePaintArea:: GetMode](#getmode)|Geçerli çizim modunu alır.|
+|[CMFCImagePaintArea:: SetBit eşlem](#setbitmap)|Resim alanı için bit eşlem resmini ayarlar.|
+|[CMFCImagePaintArea:: SetColor](#setcolor)|Geçerli çizim rengini ayarlar.|
+|[CMFCImagePaintArea:: SetMode](#setmode)|Geçerli çizim modunu ayarlar.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf doğrudan kodunuzdan kullanılmak üzere tasarlanmamıştır.
+Bu sınıf doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-Çerçeve, resim düzenleyicisi iletişim kutusunda resim alanını görüntülemek için bu sınıfı kullanır. Görüntü düzenleyicisi iletişim kutusu hakkında daha fazla bilgi için [CMFCImageEditorDialog Class'a](../../mfc/reference/cmfcimageeditordialog-class.md)bakın.
+Çerçeve, resim alanını görüntü Düzenleyici iletişim kutusunda göstermek için bu sınıfı kullanır. Görüntü Düzenleyicisi iletişim kutusu hakkında daha fazla bilgi için bkz. [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCImagePaintArea` nasıl oluşturulabildiğini, geçerli çizim rengini nasıl ayarlayıp ayarlayamacını, geçerli çizim modunu nasıl ayarlayıp resim alanı için bit eşlemi görüntüsünü ayarlayışmayı gösterir.
+Aşağıdaki örnek, sınıfının bir nesnesinin nasıl oluşturulduğunu `CMFCImagePaintArea` , geçerli çizim rengini ayarlamayı, geçerli çizim modunu ayarlamayı ve resim alanı için bit eşlem görüntüsünü ayarlamayı gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#37](../../mfc/reference/codesnippet/cpp/cmfcimagepaintarea-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cbutton](../../mfc/reference/cbutton-class.md)
+[CButton](../../mfc/reference/cbutton-class.md)
 
-[Cmfcımagepaintarea](../../mfc/reference/cmfcimagepaintarea-class.md)
+[CMFCImagePaintArea](../../mfc/reference/cmfcimagepaintarea-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afximagepaintarea.h
+**Üstbilgi:** afximagepaintarea. h
 
-## <a name="cmfcimagepaintareacmfcimagepaintarea"></a><a name="cmfcimagepaintarea"></a>CMFCImagePaintArea::CMFCImagePaintArea
+## <a name="cmfcimagepaintareacmfcimagepaintarea"></a><a name="cmfcimagepaintarea"></a> CMFCImagePaintArea:: CMFCImagePaintArea
 
-Bir `CMFCImagePaintArea` nesne inşa eder.
+Bir `CMFCImagePaintArea` nesnesi oluşturur.
 
 ```
 CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
@@ -91,12 +91,10 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*pParentDlg*|[içinde] Görüntü düzenleyicisinin üst öğesi olan iletişim kutusuna işaretçi.|
+*pParentDlg*\
+'ndaki Görüntü düzenleyicisinin üst öğesi olan iletişim kutusu işaretçisi.
 
-## <a name="cmfcimagepaintareagetmode"></a><a name="getmode"></a>CMFCImagePaintArea::GetMode
+## <a name="cmfcimagepaintareagetmode"></a><a name="getmode"></a> CMFCImagePaintArea:: GetMode
 
 Geçerli çizim modunu alır.
 
@@ -106,11 +104,11 @@ IMAGE_EDIT_MODE GetMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli çizim modunu belirten [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) değeri.
+Geçerli çizim modunu belirten bir [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) değeri.
 
-## <a name="cmfcimagepaintareasetbitmap"></a><a name="setbitmap"></a>CMFCImagePaintArea::SetBitmap
+## <a name="cmfcimagepaintareasetbitmap"></a><a name="setbitmap"></a> CMFCImagePaintArea:: SetBit eşlem
 
-Resim alanı için bit eşlem görüntüsünü ayarlar.
+Resim alanı için bit eşlem resmini ayarlar.
 
 ```cpp
 void SetBitmap(CBitmap* pBitmap);
@@ -118,16 +116,14 @@ void SetBitmap(CBitmap* pBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*pBitmap*|[içinde] Görüntülenecek yeni bitmap görüntüsü.|
+*Pbımap*\
+'ndaki Görüntülenecek yeni bit eşlem resmi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pBitmap* NULL ise, bu yöntem değiştirilebilir boya alanının boyutunu sıfıra ayarlar. Aksi takdirde, değiştirilebilir boya alanının boyutunu sağlanan bit eşlem görüntüsünün boyutuna ayarlar.
+*Pbımap* null ise, bu yöntem değiştirilebilir boyama alanının boyutunu sıfıra ayarlar. Aksi takdirde, değiştirilebilir boyama alanının boyutunu, belirtilen bit eşlem görüntüsünün boyutuna ayarlar.
 
-## <a name="cmfcimagepaintareasetcolor"></a><a name="setcolor"></a>CMFCImagePaintArea::SetColor
+## <a name="cmfcimagepaintareasetcolor"></a><a name="setcolor"></a> CMFCImagePaintArea:: SetColor
 
 Geçerli çizim rengini ayarlar.
 
@@ -137,18 +133,16 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*color*|[içinde] Yeni çizim rengi.|
+*Renk*\
+'ndaki Yeni çizim rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görüntü düzenleyicisi palet çubuğundan veya renk seçiciden bir renk seçtiğinizde, çerçeve geçerli çizim rengini güncelleştirmek için bu yöntemi çağırır. İlk çizim rengi siyahtır (COLORREF değeri 0'dır).
+Görüntü Düzenleyicisi paleti çubuğundan veya renk seçicisinden bir renk seçtiğinizde, çerçeve geçerli çizim rengini güncelleştirmek için bu yöntemi çağırır. İlk çizim rengi siyah (COLORREF değeri 0).
 
-Çizim rengi, IMAGE_EDIT_MODE_COLOR hariç tüm çizim modları için görüntü düzenleyicisi iletişim kutusu tarafından kullanılır. Çizim modları hakkında daha fazla bilgi için [CMFCImagePaintArea::IMAGE_EDIT_MODE Numaralandırma'](cmfcimagepaintarea-image-edit-mode-enumeration.md)ya bakınız.
+Çizim rengi, IMAGE_EDIT_MODE_COLOR dışındaki tüm çizim modları için görüntü Düzenleyici iletişim kutusu tarafından kullanılır. Çizim modları hakkında daha fazla bilgi için bkz. [CMFCImagePaintArea:: IMAGE_EDIT_MODE sabit listesi](cmfcimagepaintarea-image-edit-mode-enumeration.md).
 
-## <a name="cmfcimagepaintareasetmode"></a><a name="setmode"></a>CMFCImagePaintArea::SetMode
+## <a name="cmfcimagepaintareasetmode"></a><a name="setmode"></a> CMFCImagePaintArea:: SetMode
 
 Geçerli çizim modunu ayarlar.
 
@@ -158,13 +152,11 @@ void SetMode(IMAGE_EDIT_MODE mode);
 
 ### <a name="parameters"></a>Parametreler
 
-|||
-|-|-|
-|Parametre|Açıklama|
-|*Modu*|[içinde] Geçerli çizim modunu belirten [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) değeri.|
+*modundaysa*\
+'ndaki Geçerli çizim modunu belirten bir [IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md) değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCImageEditorDialog Sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)
+[CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)

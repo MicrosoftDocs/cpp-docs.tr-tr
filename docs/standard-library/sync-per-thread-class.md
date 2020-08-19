@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stdext::sync_per_thread [C++], deallocate
 - stdext::sync_per_thread [C++], equals
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
-ms.openlocfilehash: e7f5fb403ef020135e3dd3b85a1ad67cd435b6e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 24c5463dc9fb80703361e374efb99fae9e103e7c
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224597"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88562096"
 ---
 # <a name="sync_per_thread-class"></a>sync_per_thread Sınıfı
 
@@ -32,9 +32,8 @@ class sync_per_thread
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Önbellek*|Eşitleme filtresiyle ilişkili önbelleğin türü. Bu [cache_chunklist](../standard-library/cache-chunklist-class.md), [cache_freelist](../standard-library/cache-freelist-class.md)veya [cache_suballoc](../standard-library/cache-suballoc-class.md)olabilir.|
+*Önbellek*\
+Eşitleme filtresiyle ilişkili önbelleğin türü. [`cache_chunklist`](../standard-library/cache-chunklist-class.md), [`cache_freelist`](../standard-library/cache-freelist-class.md) Veya olabilir [`cache_suballoc`](../standard-library/cache-suballoc-class.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -46,7 +45,7 @@ class sync_per_thread
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
 |[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
-|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -54,7 +53,7 @@ class sync_per_thread
 
 **Ad alanı:** stdext
 
-## <a name="sync_per_threadallocate"></a><a name="allocate"></a>sync_per_thread:: ayır
+## <a name="sync_per_threadallocate"></a><a name="allocate"></a> sync_per_thread:: ayır
 
 Bellek bloğunu ayırır.
 
@@ -64,15 +63,14 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*biriktirme*|Ayrılacak dizideki öğelerin sayısı.|
+*biriktirme*\
+Ayrılacak dizideki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi, `cache::allocate(count)` geçerli iş parçacığına ait olan Cache nesnesindeki bir çağrının sonucunu döndürür. Geçerli iş parçacığı için bir önbellek nesnesi ayrılmışsa, önce bir tane ayırır.
 
-## <a name="sync_per_threaddeallocate"></a><a name="deallocate"></a>sync_per_thread::d eallocate
+## <a name="sync_per_threaddeallocate"></a><a name="deallocate"></a> sync_per_thread::d eallocate
 
 Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
@@ -82,16 +80,17 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*ptr*|Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.|
-|*biriktirme*|Depolamadan serbest bırakmak için nesne sayısı.|
+*kaydetmeye*\
+Depolamadan serbest bırakmak için ilk nesneye yönelik bir işaretçi.
+
+*biriktirme*\
+Depolamadan serbest bırakmak için nesne sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi, `deallocate` geçerli iş parçacığına ait olan Cache nesnesi üzerinde çağırır. Geçerli iş parçacığı için bir önbellek nesnesi ayrılmışsa, önce bir tane ayırır.
 
-## <a name="sync_per_threadequals"></a><a name="equals"></a>sync_per_thread:: Equals
+## <a name="sync_per_threadequals"></a><a name="equals"></a> sync_per_thread:: Equals
 
 , Eşitlik için iki önbelleği karşılaştırır.
 
@@ -101,10 +100,11 @@ bool equals(const sync<Cache>& Other) const;
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|---------------|-----------------|
-|*Önbellek*|Eşitleme filtresinin önbellek nesnesi.|
-|*Diğer*|Eşitlik için Karşılaştırılacak önbellek nesnesi.|
+*Önbellek*\
+Eşitleme filtresinin önbellek nesnesi.
+
+*Farklı*\
+Eşitlik için Karşılaştırılacak önbellek nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: 95d72c00247396a860fae67cda55ec0f6647ed59
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 90da4e575d70fc3f551d75681d2563896a6647d7
+ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224740"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88560534"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -221,7 +221,7 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 
 ( **Anahtar**, **değer**) çiftleri türündeki nesneler olarak multimap içinde depolanır `pair` . Çift sınıfı, \<utility> tarafından otomatik olarak eklenen üstbilgiyi gerektirir \<map> .
 
-## <a name="multimapallocator_type"></a><a name="allocator_type"></a>multimap:: allocator_type
+## <a name="multimapallocator_type"></a><a name="allocator_type"></a> multimap:: allocator_type
 
 Multimap nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
@@ -233,7 +233,7 @@ typedef Allocator allocator_type;
 
 Kullanarak bir örnek için [get_allocator](#get_allocator) örneğe bakın `allocator_type` .
 
-## <a name="multimapbegin"></a><a name="begin"></a>multimap:: Begin
+## <a name="multimapbegin"></a><a name="begin"></a> multimap:: Begin
 
 Multimap içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -288,7 +288,7 @@ The first element of m1 is 0
 First element of m1 is now 1
 ```
 
-## <a name="multimapcbegin"></a><a name="cbegin"></a>multimap:: cbegın
+## <a name="multimapcbegin"></a><a name="cbegin"></a> multimap:: cbegın
 
 **`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -314,7 +314,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="multimapcend"></a><a name="cend"></a>multimap:: cend
+## <a name="multimapcend"></a><a name="cend"></a> multimap:: cend
 
 **`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
@@ -328,7 +328,7 @@ const_iterator cend() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 `end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
@@ -342,7 +342,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
-## <a name="multimapclear"></a><a name="clear"></a>multimap:: Clear
+## <a name="multimapclear"></a><a name="clear"></a> multimap:: Clear
 
 Multimap 'in tüm öğelerini siler.
 
@@ -386,7 +386,7 @@ The size of the multimap is initially 2.
 The size of the multimap after clearing is 0.
 ```
 
-## <a name="multimapconst_iterator"></a><a name="const_iterator"></a>multimap:: const_iterator
+## <a name="multimapconst_iterator"></a><a name="const_iterator"></a> multimap:: const_iterator
 
 Multimap içindeki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
 
@@ -408,7 +408,7 @@ Bir tür `const_iterator` , bir öğenin değerini değiştirmek için kullanıl
 
 Kullanarak bir [örnek için bkz](#begin) `const_iterator` ..
 
-## <a name="multimapconst_pointer"></a><a name="const_pointer"></a>multimap:: const_pointer
+## <a name="multimapconst_pointer"></a><a name="const_pointer"></a> multimap:: const_pointer
 
 Multimap içindeki bir öğeye işaretçi sağlayan bir tür **`const`** .
 
@@ -422,7 +422,7 @@ Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanıla
 
 Çoğu durumda, bir [Yineleyici](#iterator) multimap nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="multimapconst_reference"></a><a name="const_reference"></a>multimap:: const_reference
+## <a name="multimapconst_reference"></a><a name="const_reference"></a> multimap:: const_reference
 
 **`const`** İşlem okumak ve gerçekleştirmek için multimap içinde depolanan bir öğeye başvuru sağlayan bir tür **`const`** .
 
@@ -472,7 +472,7 @@ The key of the first element in the multimap is 1.
 The data value of the first element in the multimap is 10.
 ```
 
-## <a name="multimapconst_reverse_iterator"></a><a name="const_reverse_iterator"></a>multimap:: const_reverse_iterator
+## <a name="multimapconst_reverse_iterator"></a><a name="const_reverse_iterator"></a> multimap:: const_reverse_iterator
 
 Multimap içinde herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
 
@@ -494,7 +494,7 @@ Bir tür `const_reverse_iterator` , bir öğenin değerini değiştiremez ve bu 
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [rend](#rend) örneği `const_reverse_iterator` .
 
-## <a name="multimapcount"></a><a name="count"></a>multimap:: Count
+## <a name="multimapcount"></a><a name="count"></a> multimap:: Count
 
 Anahtarları parametre belirtilen anahtarla eşleşen bir multimap içindeki öğe sayısını döndürür.
 
@@ -515,7 +515,7 @@ Sıralama anahtarları parametre anahtarıyla eşleşen öğe sayısı; multimap
 
 Üye işlevi aralıktaki öğe sayısını döndürür
 
-\[lower_bound (*anahtar*), upper_bound (*anahtar*))
+\[ lower_bound (*anahtar*), upper_bound (*anahtar*))
 
 Bu, anahtar değer *anahtarına*sahiptir.
 
@@ -563,7 +563,7 @@ The number of elements in m1 with a sort key of 2 is: 2.
 The number of elements in m1 with a sort key of 3 is: 0.
 ```
 
-## <a name="multimapcrbegin"></a><a name="crbegin"></a>multimap:: crbegın
+## <a name="multimapcrbegin"></a><a name="crbegin"></a> multimap:: crbegın
 
 Ters çevrilen multimap içindeki ilk öğeyi adresleyen bir const yineleyici döndürür.
 
@@ -577,11 +577,11 @@ Ters çevrilen [multimap](../standard-library/multimap-class.md) içindeki ilk �
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crbegin`, `multimap` ile birlikte [Başlangıç](#begin) ile kullanılır `multimap` .
+`crbegin` , `multimap` ile birlikte [Başlangıç](#begin) ile kullanılır `multimap` .
 
 Dönüş değeri ile `crbegin` `multimap` nesne değiştirilemez.
 
-`crbegin`, geriye doğru yinelemek için kullanılabilir `multimap` .
+`crbegin` , geriye doğru yinelemek için kullanılabilir `multimap` .
 
 ### <a name="example"></a>Örnek
 
@@ -613,7 +613,7 @@ int main( )
 The first element of the reversed multimap m1 is 3.
 ```
 
-## <a name="multimapcrend"></a><a name="crend"></a>multimap:: crend
+## <a name="multimapcrend"></a><a name="crend"></a> multimap:: crend
 
 Ters çevrilen multimap içindeki son öğeden sonra gelen konumu ele alan bir const yineleyici döndürür.
 
@@ -627,11 +627,11 @@ Ters çevrilen [multimap](../standard-library/multimap-class.md) içindeki son �
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`, `multimap` ile birlikte kullanılan [multimap:: End](#end) ile birlikte kullanılır `multimap` .
+`crend` , `multimap` ile birlikte kullanılan [multimap:: End](#end) ile birlikte kullanılır `multimap` .
 
 Dönüş değeri ile `crend` `multimap` nesne değiştirilemez.
 
-`crend`, geriye doğru bir yineleyicinin sonuna ulaşılıp ulaşılmadığını test etmek için kullanılabilir `multimap` .
+`crend` , geriye doğru bir yineleyicinin sonuna ulaşılıp ulaşılmadığını test etmek için kullanılabilir `multimap` .
 
 Tarafından döndürülen değer `crend` başvurulmamalıdır.
 
@@ -666,7 +666,7 @@ int main( )
 The last element of the reversed multimap m1 is 1.
 ```
 
-## <a name="multimapdifference_type"></a><a name="difference_type"></a>multimap::d ifference_type
+## <a name="multimapdifference_type"></a><a name="difference_type"></a> multimap::d ifference_type
 
 Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki multimap 'in öğe sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.
 
@@ -724,7 +724,7 @@ int main( )
 The number of elements in the multimap m1 is: 4.
 ```
 
-## <a name="multimapemplace"></a><a name="emplace"></a>multimap:: emplace
+## <a name="multimapemplace"></a><a name="emplace"></a> multimap:: emplace
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz).
 
@@ -735,9 +735,8 @@ iterator emplace(Args&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*args*|Multimap 'e eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
+*args*\
+Multimap 'e eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -792,7 +791,7 @@ int main()
 }
 ```
 
-## <a name="multimapemplace_hint"></a><a name="emplace_hint"></a>multimap:: emplace_hint
+## <a name="multimapemplace_hint"></a><a name="emplace_hint"></a> multimap:: emplace_hint
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
@@ -805,10 +804,11 @@ iterator emplace_hint(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*args*|Multimap 'e eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.|
-|*olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)|
+*args*\
+Multimap 'e eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+
+*olmadığı*\
+Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -824,7 +824,7 @@ Bir öğe [value_type](../standard-library/map-class.md#value_type) bir çifdir,
 
 Kod örneği için bkz. [map:: emplace_hint](../standard-library/map-class.md#emplace_hint).
 
-## <a name="multimapempty"></a><a name="empty"></a>multimap:: Empty
+## <a name="multimapempty"></a><a name="empty"></a> multimap:: Empty
 
 Çoklu eşleme boşsa sınar.
 
@@ -869,7 +869,7 @@ The multimap m1 is not empty.
 The multimap m2 is empty.
 ```
 
-## <a name="multimapend"></a><a name="end"></a>multimap:: End
+## <a name="multimapend"></a><a name="end"></a> multimap:: End
 
 past-the-end yineleyici döndürür.
 
@@ -891,7 +891,7 @@ Son uca Yineleyici. Multimap boşsa, `multimap::end() == multimap::begin()` .
 
 Kod örneği için bkz. [multimap:: Find](#find).
 
-## <a name="multimapequal_range"></a><a name="equal_range"></a>multimap:: equal_range
+## <a name="multimapequal_range"></a><a name="equal_range"></a> multimap:: equal_range
 
 Öğenin anahtarının belirtilen değerle eşleştiği öğeler aralığını bulur.
 
@@ -972,7 +972,7 @@ matching the 2nd element of the pair returned by equal_range( 2 ).
 The multimap m1 doesn't have an element with a key less than 4.
 ```
 
-## <a name="multimaperase"></a><a name="erase"></a>multimap:: Erase
+## <a name="multimaperase"></a><a name="erase"></a> multimap:: Erase
 
 Çoklu haritadaki bir öğeyi veya öğe aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1012,7 +1012,7 @@ Kaldırılacak öğelerin anahtarı.
 
 Kod örneği için bkz. [map:: Erase](../standard-library/map-class.md#erase).
 
-## <a name="multimapfind"></a><a name="find"></a>multimap:: Find
+## <a name="multimapfind"></a><a name="find"></a> multimap:: Find
 
 Bir çok haritadaki, belirtilen anahtara eşdeğer bir anahtara sahip olan bir öğenin ilk konumuna başvuran bir yineleyici döndürür.
 
@@ -1099,7 +1099,7 @@ int main()
 }
 ```
 
-## <a name="multimapget_allocator"></a><a name="get_allocator"></a>multimap:: get_allocator
+## <a name="multimapget_allocator"></a><a name="get_allocator"></a> multimap:: get_allocator
 
 Multimap oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1171,7 +1171,7 @@ int main( )
 }
 ```
 
-## <a name="multimapinsert"></a><a name="insert"></a>multimap:: INSERT
+## <a name="multimapinsert"></a><a name="insert"></a> multimap:: INSERT
 
 Multimap içine bir öğe veya öğe aralığı ekler.
 
@@ -1211,15 +1211,26 @@ IList);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Acil*|Multimap 'e eklenecek bir öğenin değeri.|
-|*Olmadığı*|Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)|
-|*ValTy*|Eşlemenin [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız değişken olarak *kusursuz iletme değeri* .|
-|*Birinci*|Kopyalanacak ilk öğenin konumu.|
-|*Soyadına*|Kopyalanacak son öğenin hemen ötesinde konum.|
-|*InputIterator*|[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.|
-|*IList*|Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .|
+*Acil*\
+Multimap 'e eklenecek bir öğenin değeri.
+
+*Olmadığı*\
+Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)
+
+*ValTy*\
+Eşlemenin [value_type](../standard-library/map-class.md#value_type)bir öğesi oluşturmak için kullanabileceği bağımsız değişken türünü belirten şablon parametresi ve bağımsız değişken olarak *kusursuz iletme değeri* .
+
+*Adı*\
+Kopyalanacak ilk öğenin konumu.
+
+*Soyadına*\
+Kopyalanacak son öğenin hemen ötesinde konum.
+
+*InputIterator*\
+[Value_type](../standard-library/map-class.md#value_type) nesneleri oluşturmak için kullanılabilecek bir türün öğelerine işaret eden bir [giriş yineleyicisinin](../standard-library/input-iterator-tag-struct.md) gereksinimlerini karşılayan şablon işlevi bağımsız değişkeni.
+
+*IList*\
+Öğelerin kopyalanacağı [initializer_list](../standard-library/initializer-list.md) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1331,7 +1342,7 @@ int main()
 }
 ```
 
-## <a name="multimapiterator"></a><a name="iterator"></a>multimap:: Yineleyici
+## <a name="multimapiterator"></a><a name="iterator"></a> multimap:: Yineleyici
 
 Çoklu haritadaki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -1353,7 +1364,7 @@ Bir türü `iterator` , bir öğenin değerini değiştirmek için kullanılabil
 
 Bildirme ve kullanma hakkında bir [örnek için bkz](#begin) . örnek `iterator` .
 
-## <a name="multimapkey_comp"></a><a name="key_comp"></a>multimap:: key_comp
+## <a name="multimapkey_comp"></a><a name="key_comp"></a> multimap:: key_comp
 
 Birden çok haritadaki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.
 
@@ -1424,7 +1435,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of m1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of m2.
 ```
 
-## <a name="multimapkey_compare"></a><a name="key_compare"></a>multimap:: key_compare
+## <a name="multimapkey_compare"></a><a name="key_compare"></a> multimap:: key_compare
 
 Multimap içindeki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
@@ -1434,7 +1445,7 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare`, şablon parametresinin eşanlamlısıdır `Traits` .
+`key_compare` , şablon parametresinin eşanlamlısıdır `Traits` .
 
 Hakkında daha fazla bilgi için `Traits` bkz. [multimap sınıfı](../standard-library/multimap-class.md) konusu.
 
@@ -1442,7 +1453,7 @@ Hakkında daha fazla bilgi için `Traits` bkz. [multimap sınıfı](../standard-
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [key_comp](#key_comp) örneği `key_compare` .
 
-## <a name="multimapkey_type"></a><a name="key_type"></a>multimap:: key_type
+## <a name="multimapkey_type"></a><a name="key_type"></a> multimap:: key_type
 
 Multimap 'in her öğesini oluşturan sıralama anahtarı nesnesini açıklayan bir tür.
 
@@ -1452,7 +1463,7 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type`, şablon parametresinin eşanlamlısıdır `Key` .
+`key_type` , şablon parametresinin eşanlamlısıdır `Key` .
 
 Hakkında daha fazla bilgi için `Key` , [multimap sınıfı](../standard-library/multimap-class.md) konusunun açıklamalar bölümüne bakın.
 
@@ -1460,7 +1471,7 @@ Hakkında daha fazla bilgi için `Key` , [multimap sınıfı](../standard-librar
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği `key_type` .
 
-## <a name="multimaplower_bound"></a><a name="lower_bound"></a>multimap:: lower_bound
+## <a name="multimaplower_bound"></a><a name="lower_bound"></a> multimap:: lower_bound
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit olan bir çok haritadaki ilk öğeye döndürür.
 
@@ -1548,7 +1559,7 @@ that of the last element is: 20.
 This is not the last element of multimap m1.
 ```
 
-## <a name="multimapmapped_type"></a><a name="mapped_type"></a>multimap:: mapped_type
+## <a name="multimapmapped_type"></a><a name="mapped_type"></a> multimap:: mapped_type
 
 Multimap içinde depolanan veri türünü temsil eden bir tür.
 
@@ -1558,7 +1569,7 @@ typedef Type mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`mapped_type`, şablon parametresinin eşanlamlısıdır `Type` .
+`mapped_type` , şablon parametresinin eşanlamlısıdır `Type` .
 
 Hakkında daha fazla bilgi için `Type` bkz. [multimap sınıfı](../standard-library/multimap-class.md) konusu.
 
@@ -1566,7 +1577,7 @@ Hakkında daha fazla bilgi için `Type` bkz. [multimap sınıfı](../standard-li
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [value_type](#value_type) örneği `key_type` .
 
-## <a name="multimapmax_size"></a><a name="max_size"></a>multimap:: max_size
+## <a name="multimapmax_size"></a><a name="max_size"></a> multimap:: max_size
 
 Multimap 'in maksimum uzunluğunu döndürür.
 
@@ -1598,7 +1609,7 @@ int main( )
 }
 ```
 
-## <a name="multimapmultimap"></a><a name="multimap"></a>multimap:: multimap
+## <a name="multimapmultimap"></a><a name="multimap"></a> multimap:: multimap
 
 Boş veya başka bir çok eşlemenin tümünün veya bir kısmının kopyası olan bir multimap oluşturur.
 
@@ -1651,14 +1662,23 @@ multimap(
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Eşkenar*|Varsayılan ayırıcı olan bu multimap nesnesi için kullanılacak depolama ayırıcı sınıfı.|
-|*İnin*|`constTraits`Haritadaki öğeleri sıralamak için kullanılan türün karşılaştırma işlevi, varsayılan olarak `Traits` .|
-|*Right*|Oluşturulan kümesinin bir kopya olması gereken harita.|
-|*Birinci*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
-|*Soyadına*|Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.|
-|*IList*|Öğelerin kopyalanacağı initializer_list.|
+*Eşkenar*\
+Varsayılan ayırıcı olan bu multimap nesnesi için kullanılacak depolama ayırıcı sınıfı.
+
+*İnin*\
+`constTraits`Haritadaki öğeleri sıralamak için kullanılan türün karşılaştırma işlevi, varsayılan olarak `Traits` .
+
+*Right*\
+Oluşturulan kümesinin bir kopya olması gereken harita.
+
+*Adı*\
+Kopyalanacak öğe aralığındaki ilk öğenin konumu.
+
+*Soyadına*\
+Kopyalanacak öğe aralığının ötesinde ilk öğenin konumu.
+
+*IList*\
+Öğelerin kopyalanacağı initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1786,7 +1806,7 @@ int main()
 }
 ```
 
-## <a name="multimapoperator"></a><a name="op_eq"></a>multimap:: operator =
+## <a name="multimapoperator"></a><a name="op_eq"></a> multimap:: operator =
 
 Multimap 'in öğelerini başka bir multimap 'in kopyasıyla değiştirir.
 
@@ -1798,9 +1818,8 @@ multimap& operator=(multimap&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-|Parametre|Açıklama|
-|-|-|
-|*Right*|' A Kopyalanmakta olan [multimap](../standard-library/multimap-class.md) `multimap` .|
+*Right*\
+' A Kopyalanmakta olan [multimap](../standard-library/multimap-class.md) `multimap` .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1843,7 +1862,7 @@ int main( )
    }
 ```
 
-## <a name="multimappointer"></a><a name="pointer"></a>multimap::p oınter
+## <a name="multimappointer"></a><a name="pointer"></a> multimap::p oınter
 
 Multimap içindeki bir öğeye işaretçi sağlayan bir tür.
 
@@ -1857,7 +1876,7 @@ Bir türü `pointer` , bir öğenin değerini değiştirmek için kullanılabili
 
 Çoğu durumda, bir [Yineleyici](#iterator) multimap nesnesindeki öğelere erişmek için kullanılmalıdır.
 
-## <a name="multimaprbegin"></a><a name="rbegin"></a>multimap:: rbegin
+## <a name="multimaprbegin"></a><a name="rbegin"></a> multimap:: rbegin
 
 Ters çevrilen multimap içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -1873,11 +1892,11 @@ Ters çevrilen multimap içindeki ilk öğeyi ele almak veya geri çevrilmeyen m
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rbegin`, [BEGIN](#begin) as multimap ile birlikte kullanıldığında, ters çevrilmiş multimap ile birlikte kullanılır.
+`rbegin` , [BEGIN](#begin) as multimap ile birlikte kullanıldığında, ters çevrilmiş multimap ile birlikte kullanılır.
 
 Öğesinin dönüş değeri `rbegin` öğesine atanırsa `const_reverse_iterator` , multimap nesnesi değiştirilemez. Dönüş değeri `rbegin` bir öğesine atanırsa `reverse_iterator` , multimap nesnesi değiştirilebilir.
 
-`rbegin`, bir çoklu eşleme ile geriye doğru yinelemek için kullanılabilir.
+`rbegin` , bir çoklu eşleme ile geriye doğru yinelemek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1937,7 +1956,7 @@ The reversed multimap is: 3 2 1 .
 After the erasure, the first element in the reversed multimap is 2.
 ```
 
-## <a name="multimapreference"></a><a name="reference"></a>multimap:: Reference
+## <a name="multimapreference"></a><a name="reference"></a> multimap:: Reference
 
 Multimap içinde depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -1994,7 +2013,7 @@ The data value of first element in the multimap is 10.
 The modified data value of first element is 15.
 ```
 
-## <a name="multimaprend"></a><a name="rend"></a>multimap:: rend
+## <a name="multimaprend"></a><a name="rend"></a> multimap:: rend
 
 Ters çevrilen multimap içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.
 
@@ -2014,7 +2033,7 @@ Ters çevrilen multimap içindeki son öğeden sonra gelen konumu ele alan ters 
 
 Öğesinin dönüş değeri `rend` öğesine atanırsa `const_reverse_iterator` , multimap nesnesi değiştirilemez. Dönüş değeri `rend` bir öğesine atanırsa `reverse_iterator` , multimap nesnesi değiştirilebilir.
 
-`rend`, bir ters yineleyicinin multimap 'in sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`rend` , bir ters yineleyicinin multimap 'in sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `rend` başvurulmamalıdır.
 
@@ -2078,7 +2097,7 @@ The reversed multimap is: 3 2 1 .
 After the erasure, the last element in the reversed multimap is 2.
 ```
 
-## <a name="multimapreverse_iterator"></a><a name="reverse_iterator"></a>multimap:: reverse_iterator
+## <a name="multimapreverse_iterator"></a><a name="reverse_iterator"></a> multimap:: reverse_iterator
 
 Ters çevrilen multimap içindeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü bir yineleyici sağlayan bir tür.
 
@@ -2100,7 +2119,7 @@ Bir tür, `reverse_iterator` geriye doğru multimap üzerinden yinelemek için k
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği `reverse_iterator` .
 
-## <a name="multimapsize"></a><a name="size"></a>multimap:: size
+## <a name="multimapsize"></a><a name="size"></a> multimap:: size
 
 Multimap içindeki öğelerin sayısını döndürür.
 
@@ -2144,7 +2163,7 @@ The multimap length is 1.
 The multimap length is now 2.
 ```
 
-## <a name="multimapsize_type"></a><a name="size_type"></a>multimap:: size_type
+## <a name="multimapsize_type"></a><a name="size_type"></a> multimap:: size_type
 
 Çoklu haritadaki öğelerin sayısını sayan işaretsiz bir tamsayı türü.
 
@@ -2154,9 +2173,9 @@ typedef typename allocator_type::size_type size_type;
 
 ### <a name="example"></a>Örnek
 
-Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boyut](#size) örneğine bakın`size_type`
+Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boyut](#size) örneğine bakın `size_type`
 
-## <a name="multimapswap"></a><a name="swap"></a>multimap:: swap
+## <a name="multimapswap"></a><a name="swap"></a> multimap:: swap
 
 İki multimaps öğesinin öğelerini değiş tokuş eder.
 
@@ -2225,7 +2244,7 @@ After swapping with m2, multimap m1 is: 100 200.
 After swapping with m3, multimap m1 is: 300.
 ```
 
-## <a name="multimapupper_bound"></a><a name="upper_bound"></a>multimap:: upper_bound
+## <a name="multimapupper_bound"></a><a name="upper_bound"></a> multimap:: upper_bound
 
 Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtara sahip olan multimap içindeki ilk öğeye döndürür.
 
@@ -2304,7 +2323,7 @@ The first element of m1 with a key greater than
 that of the initial element of m1 is: 20.
 ```
 
-## <a name="multimapvalue_comp"></a><a name="value_comp"></a>multimap:: value_comp
+## <a name="multimapvalue_comp"></a><a name="value_comp"></a> multimap:: value_comp
 
 Üye işlevi, anahtar değerlerini karşılaştırarak multimap 'teki öğelerin sırasını belirleyen bir işlev nesnesi döndürür.
 
@@ -2370,7 +2389,7 @@ The element ( 1,10 ) precedes the element ( 2,5 ).
 The element ( 2,5 ) does not precede the element ( 1,10 ).
 ```
 
-## <a name="multimapvalue_type"></a><a name="value_type"></a>multimap:: value_type
+## <a name="multimapvalue_type"></a><a name="value_type"></a> multimap:: value_type
 
 Haritada bir öğe olarak depolanan nesne türünü temsil eden bir tür.
 
