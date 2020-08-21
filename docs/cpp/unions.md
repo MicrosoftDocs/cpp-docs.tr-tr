@@ -1,47 +1,50 @@
 ---
-title: Birleşimler
-ms.date: 05/06/2019
+title: union
+description: Standart C++ union class türü ve anahtar sözcüğünün açıklaması, kullanımı ve kısıtlamaları.
+ms.date: 08/18/2020
 f1_keywords:
 - union_cpp
 helpviewer_keywords:
-- class types [C++], unions as
+- class type [C++], union as
 - union keyword [C++]
 ms.assetid: 25c4e219-fcbb-4b7b-9b64-83f3252a92ca
-ms.openlocfilehash: 5010512b2c5f19a236d2f44bd3acf00097a3e168
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+no-loc:
+- union
+- struct
+- enum
+- class
+- static
+ms.openlocfilehash: a4dc07df5e7858dffe62478509ee1d8dc759ce96
+ms.sourcegitcommit: f1752bf90b4f869633a859ace85439ca19e208b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213144"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88722186"
 ---
-# <a name="unions"></a>Birleşimler
+# `union`
 
 > [!NOTE]
-> C++ 17 ve üzeri sürümlerde **std:: Variant** sınıfı birleşimler için tür açısından güvenli bir alternatiftir.
+> C++ 17 ve üzeri sürümlerde, `std::variant` class için tür açısından güvenli bir alternatiftir union .
 
-, **`union`** Tüm üyelerin aynı bellek konumunu paylaştığı Kullanıcı tanımlı bir türdür. Bu, bir birleşimin üye listesinden birden fazla nesne içerebileceği anlamına gelir. Ayrıca, bir birleşimin kaç üye olduğuna bakılmaksızın, her zaman en büyük üyeyi depolamak için yeterli bellek kullandığından da bu da anlamına gelir.
+, **`union`** Tüm üyelerin aynı bellek konumunu paylaştığı Kullanıcı tanımlı bir türdür. Bu tanım, belirli bir zamanda, union üyeleri listesinden birden fazla nesne içerebileceği anlamına gelir. Ayrıca, bir kaç üyenin ne olduğuna bakılmaksızın union , her zaman en büyük üyeyi depolamak için yeterli bellek kullandığını da gösterir.
 
-Birleşimler, çok sayıda nesneniz ve/veya sınırlı belleğiniz olduğunda belleğin tasarrufu için yararlı olabilir. Ancak, her zaman yazılan son üyeye erişiminizin sağlanmasından sorumlu olduğunuzdan, doğru şekilde kullanılması için daha fazla dikkatli gereksinim duyar. Herhangi bir üye türünün önemsiz olmayan bir Oluşturucusu varsa, bu üyeyi açıkça oluşturmak ve yok etmek için ek kod yazmalısınız. Bir UNION kullanmadan önce, çözmeye çalıştığınız sorunun temel sınıf ve türetilmiş sınıflar kullanılarak daha iyi ifade edilip edilmeyeceğini göz önünde bulundurun.
+, union Çok sayıda nesneniz ve sınırlı belleğiniz olduğunda belleğin tasarrufu için yararlı olabilir. Bununla birlikte, bir, union doğru şekilde kullanılması için ek bir değer gerektirir. Atadığınız aynı üyeye her zaman erişebildiğinizden emin olmanız sizin sorumluluğunuzdadır. Herhangi bir üye türü, önemsiz olmayan bir con struct veya varsa, bu üyeyi açıkça con ve yok etmek için ek kod yazmalısınız struct . Bir kullanmadan önce union , çözmeye çalıştığınız sorunun temel class ve türetilmiş türler kullanılarak daha iyi ifade edilip edilmeyeceğini göz önünde bulundurun class .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Syntax
 
-```cpp
-union [name]  { member-list };
-```
+> **`union`***`tag`* <sub>opt</sub> **`{`** opt *`member-list`***`};`**
 
 ### <a name="parameters"></a>Parametreler
 
-*ada*<br/>
-Birleşime verilen tür adı.
+*`tag`*<br/>
+Öğesine verilen tür adı union .
 
-*üye listesi*<br/>
-Birleşimin içerebileceği Üyeler. Bkz. açıklamalar.
+*`member-list`*<br/>
+unionİçerebilen Üyeler.
 
-## <a name="remarks"></a>Açıklamalar
+## <a name="declare-a-no-locunion"></a>Şunu bildirin union
 
-## <a name="declaring-a-union"></a>Bir Birleşimi Bildirme
-
-Anahtar sözcükle birleşim bildirimini başlatın **`union`** ve üye listesini küme ayraçları içine alın:
+unionAnahtar sözcüğünü kullanarak a bildirimini başlatın **`union`** ve üye listesini küme ayraçları içine alın:
 
 ```cpp
 // declaring_a_union.cpp
@@ -54,6 +57,7 @@ union RecordType    // Declare a simple union type
     double d;
     int *int_ptr;
 };
+
 int main()
 {
     RecordType t;
@@ -62,9 +66,9 @@ int main()
 }
 ```
 
-## <a name="using-unions"></a>Birleşimler kullanma
+## <a name="use-a-no-locunion"></a>Şunu kullanın union
 
-Önceki örnekte, birleşimle erişen tüm kodlar, verileri tutan üyenin öğrenilmesi gerekir. Bu sorunun en yaygın çözümü, UNION 'yi, birleşimde Şu anda depolanmakta olan verilerin türünü belirten ek bir numaralandırma üyesiyle birlikte bir yapıda çevrelemektir. Buna *ayrılmış birleşim* denir ve aşağıdaki örnekte temel desenler gösterilmektedir.
+Önceki örnekte, union hangi üyenin verileri bulundurduğunu bilmeleri için ihtiyaçlarına erişen tüm kodlar. Bu sorunun en yaygın çözümü *ayrılmış union *olarak adlandırılır. union' A öğesine barındırır struct ve ' enum de şu anda depolanan üye türünü gösteren bir üye içerir union . Aşağıdaki örnekte temel desenler gösterilmektedir:
 
 ```cpp
 #include <queue>
@@ -107,16 +111,27 @@ struct Input
 void Process_Temp(TempData t) {}
 void Process_Wind(WindData w) {}
 
-// Container for all the data records
-queue<Input> inputs;
-void Initialize();
+void Initialize(std::queue<Input>& inputs)
+{
+    Input first;
+    first.type = WeatherDataType::Temperature;
+    first.temp = { 101, 1418855664, 91.8, 108.5, 67.2 };
+    inputs.push(first);
+
+    Input second;
+    second.type = WeatherDataType::Wind;
+    second.wind = { 204, 1418859354, 14, 27 };
+    inputs.push(second);
+}
 
 int main(int argc, char* argv[])
 {
-    Initialize();
+    // Container for all the data records
+    queue<Input> inputs;
+    Initialize(inputs);
     while (!inputs.empty())
     {
-        Input i = inputs.front();
+        Input const i = inputs.front();
         switch (i.type)
         {
         case WeatherDataType::Temperature:
@@ -133,29 +148,17 @@ int main(int argc, char* argv[])
     }
     return 0;
 }
-
-void Initialize()
-{
-    Input first, second;
-    first.type = WeatherDataType::Temperature;
-    first.temp = { 101, 1418855664, 91.8, 108.5, 67.2 };
-    inputs.push(first);
-
-    second.type = WeatherDataType::Wind;
-    second.wind = { 204,1418859354, 14, 27 };
-    inputs.push(second);
-}
 ```
 
-Önceki örnekte, Input struct içindeki birleşimin bir adı olmadığını unutmayın. Bu anonim bir birleşimdir ve kendi üyelerine, yapısına doğrudan üye gibi erişilebilir. Anonim birleşimler hakkında daha fazla bilgi için aşağıdaki bölüme bakın.
+Önceki örnekte, union içindeki içinde `Input` struct adı yoktur, bu nedenle *anonim* olarak adlandırılır union . Üyelerine üyelerine üye oldukları gibi doğrudan erişilebilir struct . Anonim kullanım hakkında daha fazla bilgi için union bkz. [anonim union ](#anonymous_unions) bölüm.
 
-Tabii ki, önceki örnekte, ortak bir taban sınıftan türetilen sınıflar kullanılarak çözülebilmesine ve kodu kapsayıcıdaki her bir nesnenin çalışma zamanı türüne göre Dallandırmanın bir sorunu gösterilmektedir. Bu, bakımı ve anlaşılması daha kolay olan bir koda neden olabilir, ancak birleşimler kullanmaktan daha da yavaş olabilir. Ayrıca, bir birleşimle tamamen ilişkisiz türler saklayabilir ve birleşim değişkeninin türünü değiştirmeden depolanan değerin türünü dinamik olarak değiştirebilirsiniz. Bu nedenle, öğeleri farklı türlerdeki farklı değerleri depolayan MyUnionType öğesinin heterojen bir dizisini oluşturabilirsiniz.
+Önceki örnekte, class ortak bir tabandan türetilmiş türler kullanarak çözebileceğiniz bir sorun gösterilmektedir class . Kodunuzu, kapsayıcıdaki her nesnenin çalışma zamanı türüne göre Dallandırın. Kodunuzun bakımı ve anlaşılması daha kolay olabilir, ancak kullanmaktan de daha yavaş olabilir union . Ayrıca, ile union ilişkisiz türleri de saklayabilirsiniz. Bir, union değişkenin türünü değiştirmeden depolanan değerin türünü dinamik olarak değiştirmenize olanak sağlar union . Örneğin, `MyUnionType` öğeleri farklı türlerdeki farklı değerleri depolayan heterojen bir dizi oluşturabilirsiniz.
 
-`Input`Yukarıdaki örnekteki yapının kolay bir şekilde kötüye kullanılması gerekebileceğini unutmayın. Verileri tutan üyeye erişmek için Ayrıştırıcıyı doğru bir şekilde kullanmak tamamen kullanıcıya tamamıyla yapılır. UNION Private yaparak ve sonraki örnekte gösterildiği gibi özel erişim işlevleri sunarak kötüye kullanılmasına karşı koruma sağlayabilirsiniz.
+Örnekte ' nin kötüye kullanılması çok kolaydır `Input` struct . Verileri tutan üyeye erişmek için Ayrıştırıcıyı doğru bir şekilde kullanmak en iyisidir. Bir union **`private`** sonraki örnekte gösterildiği gibi özel erişim işlevleri sunarak ve sağlayarak kötüye kullanılmasına karşı koruma sağlayabilirsiniz.
 
-## <a name="unrestricted-unions-c11"></a>Kısıtlanmamış birleşimler (C++ 11)
+## <a name="unrestricted-no-locunion-c11"></a>Kısıtlamasız union (c++ 11)
 
-C++ 03 ' de ve önceki sürümlerde, türün Kullanıcı tarafından sunulan oluşturucular, Yıkıcılar veya atama işleçleri olmadığı sürece sınıf türünde statik olmayan veri üyeleri bulunabilir. C++ 11 ' de, bu kısıtlamalar kaldırılır. Bu tür bir üyeyi birleşiminize eklerseniz, derleyici Kullanıcı tarafından, silinen olarak sağlanmayan özel üye işlevleri otomatik olarak işaretleyecek. Birleşim, bir sınıf veya yapı içindeki anonim bir birleşimse, sınıfın veya yapının içinde kullanıcı olmayan özel üye işlevleri silindi olarak işaretlenir. Aşağıdaki örnek, birleşimin üyelerinden birinin bu özel işlemi gerektiren bir üyeye sahip olduğu durumu nasıl işleyeceğinizi göstermektedir:
+C++ 03 ve önceki sürümlerde, union static class türün hiçbir Kullanıcı tarafından sağlanmayan, struct struct tekörler veya atama işleçleri olmadığı sürece, bir türü olan veri olmayan üyeler içerebilir. C++ 11 ' de, bu kısıtlamalar kaldırılır. Bu tür bir üyeyi içine eklerseniz union , derleyici Kullanıcı tarafından sağlanmayan özel üye işlevlerini otomatik olarak işaretler **`deleted`** . , union Veya içinde anonim ise, union class struct ' ın veya Kullanıcı tarafından sağlanmayan tüm özel üye işlevleri class struct olarak işaretlenir **`deleted`** . Aşağıdaki örnek, bu durumun nasıl işleneceğini gösterir. Üyelerinden birinin union Bu özel işlemi gerektiren bir üyesi vardır:
 
 ```cpp
 // for MyVariant
@@ -513,99 +516,13 @@ int main()
     char c;
     cin >> c;
 }
-#include <queue>
-#include <iostream>
-using namespace std;
-
-enum class WeatherDataType
-{
-    Temperature, Wind
-};
-
-struct TempData
-{
-    TempData() : StationId(""), time(0), current(0), maxTemp(0), minTemp(0) {}
-    TempData(string id, time_t t, double cur, double max, double min)
-        : StationId(id), time(t), current(cur), maxTemp(max), minTemp(0) {}
-    string StationId;
-    time_t time = 0;
-    double current;
-    double maxTemp;
-    double minTemp;
-};
-
-struct WindData
-{
-    int StationId;
-    time_t time;
-    int speed;
-    short direction;
-};
-
-struct Input
-{
-    Input() {}
-    Input(const Input&) {}
-
-    ~Input()
-    {
-        if (type == WeatherDataType::Temperature)
-        {
-            temp.StationId.~string();
-        }
-    }
-
-    WeatherDataType type;
-    void SetTemp(const TempData& td)
-    {
-        type = WeatherDataType::Temperature;
-
-        // must use placement new because of string member!
-        new(&temp) TempData(td);
-    }
-
-    TempData GetTemp()
-    {
-        if (type == WeatherDataType::Temperature)
-            return temp;
-        else
-            throw logic_error("Can't return TempData when Input holds a WindData");
-    }
-    void SetWind(WindData wd)
-    {
-        // Explicitly delete struct member that has a
-        // non-trivial constructor
-        if (type == WeatherDataType::Temperature)
-        {
-            temp.StationId.~string();
-        }
-        wind = wd; //placement new not required.
-    }
-    WindData GetWind()
-    {
-        if (type == WeatherDataType::Wind)
-        {
-            return wind;
-        }
-        else
-            throw logic_error("Can't return WindData when Input holds a TempData");
-    }
-
-private:
-
-    union
-    {
-        TempData temp;
-        WindData wind;
-    };
-};
 ```
 
-Birleşimler başvuruları depoalamaz. Birleşimler devralmayı desteklemez, bu nedenle bir birleşim temel sınıf olarak kullanılamaz, ya da başka bir sınıftan devralınamaz veya sanal işlevlere sahip olamaz.
+Bir union başvuruyu depolayamıyorum. , union Devralmayı da desteklemez. Bu, bir union taban olarak kullanamıyoruz class veya başka birinden class veya sanal işlevlere sahip olamaz.
 
-## <a name="initializing-unions"></a>Birleşimler başlatılıyor
+## <a name="initialize-a-no-locunion"></a>Başlat union
 
-Küme ayraçları içine alınmış bir ifade atayarak aynı deyimde bir birleşimi bildirebilir ve başlatabilirsiniz. İfade değerlendirilir ve birleşimin ilk alanına atanır.
+unionKüme ayraçları içine alınmış bir ifade atayarak aynı deyimde bir bildirir ve başlatabilirsiniz. İfade değerlendirilir ve öğesinin ilk alanına atanır union .
 
 ```cpp
 #include <iostream>
@@ -623,7 +540,7 @@ int main()
     union NumericType Values = { 10 };   // iValue = 10
     cout << Values.iValue << endl;
     Values.dValue = 3.1416;
-    cout << Values.dValue) << endl;
+    cout << Values.dValue << endl;
 }
 /* Output:
 10
@@ -631,32 +548,30 @@ int main()
 */
 ```
 
-`NumericType` birleşimi, bellekte (kavramsal olarak) aşağıdaki şekilde gösterildiği gibi düzenlenir.
+, `NumericType` union Aşağıdaki şekilde gösterildiği gibi bellekte düzenlenir (kavramsal).
 
-![Sayısal tür birleşimde veri depolama](../cpp/media/vc38ul1.png "NumericType birleşimi içinde veri depolama") <br/>
-Verilerin NumericType Birleşiminde Depolanması
+![Verilerin sayısal bir türde depolanması::: No-Loc (UNION):::](../cpp/media/vc38ul1.png "Bir NumericType::: No-Loc (UNION) içinde veri depolama:::") <br/>
+Veri `NumericType` depolama alanı union
 
-## <a name="anonymous-unions"></a><a name="anonymous_unions"></a>Anonim birleşimler
+## <a name="anonymous-no-locunion"></a><a name="anonymous_unions"></a> Deðeri union
 
-Anonim birleşimler, bir *sınıf adı* veya *bildirimci listesi*olmadan belirtilen birleşimlerdir.
+Anonim union , veya olmadan tanımlanmış bir *`class-name`* *`declarator-list`* .
 
-```cpp
-union  {  member-list  }
-```
+> **`union  {`**  *`member-list`*  **`}`**
 
-Anonim bir birleşimde bildirilen adlar, üye olmayan değişkenlerde olduğu gibi doğrudan kullanılır. Bu nedenle, anonim bir birleşimde belirtilen adların, çevresindeki kapsamda benzersiz olması gerekir.
+Anonim olarak belirtilen adlar union , üye olmayan değişkenler gibi doğrudan kullanılır. Anonim olarak belirtilen adların, union çevresindeki kapsamda benzersiz olması gerektiğini belirtir.
 
-Adlandırılmış birleşimler için kısıtlamalara ek olarak, anonim birleşimler bu ek kısıtlamalara tabidir:
+Anonim union , bu ek kısıtlamalara tabidir:
 
-- Ayrıca **`static`** , dosya veya ad uzayı kapsamında bildirildiği gibi bildirilmelidir.
+- Dosya veya ad alanı kapsamında bildirilirse, aynı zamanda olarak bildirilmelidir **`static`** .
 
-- Bunlar yalnızca üyelere sahip olabilirler **`public`** **`private`** ve **`protected`** anonim Birleşimlerdeki Üyeler hata oluşturur.
+- Yalnızca üyelere sahip olabilir **`public`** ; **`private`** **`protected`** anonim olarak bulunan ve üyeleri bir union hata oluşturur.
 
 - Üye işlevleri olamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)<br/>
+[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[sınıfı](../cpp/class-cpp.md)<br/>
-[sýný](../cpp/struct-cpp.md)
+[`class`](../cpp/class-cpp.md)<br/>
+[`struct`](../cpp/struct-cpp.md)

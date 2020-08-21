@@ -1,18 +1,19 @@
 ---
 title: '&lt;charconv &gt; işlevleri'
-ms.date: 07/22/2020
+description: <charconv>Tamsayı veya kayan nokta değerlerini karakterlerden veya karakter başına dönüştüren kitaplık işlevlerini açıklar
+ms.date: 08/20/2020
 f1_keywords:
 - charconv/std::to_chars
 - charconv/std::from_chars
 helpviewer_keywords:
 - std::charconv [C++], to_chars
 - std::charconv [C++], from_chars
-ms.openlocfilehash: 92f838ededad3e2b8493e934ae2b614247f18458
-ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
+ms.openlocfilehash: b8117f2a272f33be2bb5fef6ba8fa53ec794b63b
+ms.sourcegitcommit: f1752bf90b4f869633a859ace85439ca19e208b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87565956"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88722160"
 ---
 # <a name="ltcharconvgt-functions"></a>&lt;charconv &gt; işlevleri
 
@@ -99,15 +100,11 @@ Bir [chars_format](chars-format-class.md) parametresi alan işlevler, dönüşt�
 
 Aşağıdaki tabloda, ve parametrelerinin farklı bileşimleri verilen dönüştürme davranışı açıklanmaktadır `fmt` `precision` . "En kısa gidiş dönüş davranışı" terimi, ilgili işlevi kullanarak bu gösterimi ayrıştırmanın `from_chars` değeri tam olarak kurtarabileceği için gereken en az basamak sayısını yazmak anlamına gelir.
 
-| `fmt`ve `precision` birleşimi | Çıktı |
+| `fmt` ve `precision` birleşimi | Çıktı |
 |--|--|
 |  Hiçbiri | Sabit veya bilimsel gösterimden hangisi daha kısadır ve bir tiekesici olarak düzeltildi.</br>Bu davranış, parametreyi alan herhangi bir aşırı yükleme tarafından benzetimi yapılamıyor `fmt` . |
 | `fmt` | Belirtilen biçim için, en kısa bilimsel biçim gibi en kısa gidiş dönüş davranışı. |
 | `fmt` ve `precision` | , `printf()` En kısa gidiş dönüş davranışı olmadan, aşağıdaki stili, belirtilen duyarlık kullanır. |
-
-### <a name="return-value"></a>Döndürülen değer
-
-Dönüştürmenin sonucunu tutan bir [to_chars_result](to-chars-result-structure.md) .
 
 ### <a name="example"></a>Örnek
 
