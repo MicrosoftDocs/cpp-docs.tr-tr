@@ -48,6 +48,8 @@
       href: ../linux/cmake-linux-project.md
     - name: Linux CMake projesi yapılandırma
       href: ../linux/cmake-linux-configure.md
+    - name: CMake hata ayıklama oturumlarını yapılandırma
+      href: ../build/configure-cmake-debugging-sessions.md?toc=/cpp/linux/toc.json&bc=/cpp/_breadcrumb/toc.json
     - name: 'Öğretici: Visual Studio’da platformlar arası C++ projeleri oluşturma'
       href: ../build/get-started-linux-cmake.md
 - name: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
