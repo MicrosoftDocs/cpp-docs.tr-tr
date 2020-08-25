@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: d328cd7bcfed257b423a440041b6806149736ed0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f17a4ea183a24f7bf4e88137f4536ca082efdf85
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215302"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831391"
 ---
 # <a name="db_source"></a>db_source
 
@@ -50,7 +50,7 @@ Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](htt
 
 ## <a name="example"></a>Örnek
 
-Bu örnek **db_source** `ds` , Northwind veritabanını kullanarak veri kaynağıyla bağlantı oluşturmak için bir sınıftaki db_source çağırır. `ds`, sınıfında dahili olarak kullanılabilecek veri kaynağı için bir tanıtıcıdır `CMyCommand` .
+Bu örnek **db_source** `ds` , Northwind veritabanını kullanarak veri kaynağıyla bağlantı oluşturmak için bir sınıftaki db_source çağırır. `ds` , sınıfında dahili olarak kullanılabilecek veri kaynağı için bir tanıtıcıdır `CMyCommand` .
 
 ```cpp
 // db_source_1.cpp
@@ -68,14 +68,12 @@ class CMyCommand {};
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

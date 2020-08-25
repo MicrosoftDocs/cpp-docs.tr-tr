@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-ms.openlocfilehash: 15026746f2af55b9cc153cce19cf00475e5c5d77
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 95dca548856510cd8b06914932cc46435c28399d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561108"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834283"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount sınıfı
 
@@ -41,17 +41,15 @@ class CMFCCmdUsageCount : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |`CMFCCmdUsageCount::CMFCCmdUsageCount`|Varsayılan Oluşturucu.|
 |`CMFCCmdUsageCount::~CMFCCmdUsageCount`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCCmdUsageCount:: AddCmd](#addcmd)|Verilen komutla ilişkili bir sayaca göre artar.|
 |[CMFCCmdUsageCount:: GetCount](#getcount)|Verilen komut KIMLIĞIYLE ilişkili kullanım sayısını alır.|
 |[CMFCCmdUsageCount:: HasEnoughInformation](#hasenoughinformation)|Bu nesnenin minimum izleme verisi miktarını topladığını belirler.|
@@ -62,9 +60,8 @@ class CMFCCmdUsageCount : public CObject
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |`m_CmdUsage`|`CMap`Komutları kullanım sayılarıyla eşleyen bir nesne.|
 |`m_nMinUsagePercentage`|Bir komut için sık kullanılan en düşük kullanım yüzdesi.|
 |`m_nStartCount`|Bu nesnenin en düşük izleme verisi miktarını topladığını belirlemede kullanılan başlangıç sayacı.|

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory
 - CMFCRibbonCustomizePropertyPage [MFC], OnOK
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
-ms.openlocfilehash: d36e3a301aa5b861c296b0bb4859e9442dbdb75e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 92408e91b41b474da3a2da6ad0646feb3a6b8fc2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560887"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831846"
 ---
 # <a name="cmfcribboncustomizepropertypage-class"></a>CMFCRibbonCustomizePropertyPage sınıfı
 
@@ -33,17 +33,15 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage](#cmfcribboncustomizepropertypage)|Bir `CMFCRibbonCustomizePropertyPage` nesnesi oluşturur.|
 |`CMFCRibbonCustomizePropertyPage::~CMFCRibbonCustomizePropertyPage`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCRibbonCustomizePropertyPage:: AddCustomCategory](#addcustomcategory)|**Komutlar** Birleşik giriş kutusuna özel bir kategori ekler.|
 |`CMFCRibbonCustomizePropertyPage::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
 |`CMFCRibbonCustomizePropertyPage::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|

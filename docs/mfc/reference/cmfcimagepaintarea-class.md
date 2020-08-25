@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetColor
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
-ms.openlocfilehash: 3d8bfc40c3c9e937ad5acd7228e49877af65204a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: ee960b27651489ac1c196789d41a6c5ee396b260
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562161"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831157"
 ---
 # <a name="cmfcimagepaintarea-class"></a>CMFCImagePaintArea sınıfı
 
@@ -37,17 +37,15 @@ class CMFCImagePaintArea : public CButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCImagePaintArea:: CMFCImagePaintArea](#cmfcimagepaintarea)|Bir `CMFCImagePaintArea` nesnesi oluşturur.|
 |`CMFCImagePaintArea::~CMFCImagePaintArea`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCImagePaintArea:: GetMode](#getmode)|Geçerli çizim modunu alır.|
 |[CMFCImagePaintArea:: SetBit eşlem](#setbitmap)|Resim alanı için bit eşlem resmini ayarlar.|
 |[CMFCImagePaintArea:: SetColor](#setcolor)|Geçerli çizim rengini ayarlar.|

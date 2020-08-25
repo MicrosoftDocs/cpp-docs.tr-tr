@@ -1,5 +1,5 @@
 ---
-title: CStringData Sınıfı
+title: CStringData sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CStringData
@@ -19,18 +19,18 @@ helpviewer_keywords:
 - CStringData class
 - shared classes, CStringData
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
-ms.openlocfilehash: f14f1d9c269f06099bd224f582de1f55da33ff0f
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 140836f45ed2f4088bc0baed67676f93cb268d01
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81746845"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832119"
 ---
-# <a name="cstringdata-class"></a>CStringData Sınıfı
+# <a name="cstringdata-class"></a>CStringData sınıfı
 
-Bu sınıf bir dize nesnesinin verilerini temsil eder.
+Bu sınıf, bir dize nesnesinin verilerini temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 struct CStringData
@@ -40,56 +40,56 @@ struct CStringData
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[Addref](#addref)|Dize veri nesnesinin başvuru sayısını artırımına eder.|
-|[Veri](#data)|Bir dize nesnesinin karakter verilerini alır.|
-|[ıslocked](#islocked)|İlişkili dize nesnesinin arabelleği kilitli olup olmadığını belirler.|
-|[ısshared](#isshared)|İlişkili dize nesnesinin arabelleği şu anda paylaşılır mı belirler.|
-|[Kilit](#lock)|İlişkili dize nesnesinin arabelleği kilitler.|
-|[Yayınla](#release)|Belirtilen dize nesnesini salar.|
-|[Kilidini](#unlock)|İlişkili dize nesnesinin arabelleği açılır.|
+|[AddRef](#addref)|Dize veri nesnesinin başvuru sayısını artırır.|
+|[data](#data)|Bir dize nesnesinin karakter verisini alır.|
+|[IsLocked](#islocked)|İlişkili dize nesnesinin arabelleğinin kilitli olup olmadığını belirler.|
+|[IsShared](#isshared)|İlişkili dize nesnesinin arabelleğinin Şu anda paylaşılıp paylaşılamayacağını belirler.|
+|[İne](#lock)|İlişkili dize nesnesinin arabelleğini kilitler.|
+|[Sürüm](#release)|Belirtilen dize nesnesini serbest bırakır.|
+|[Kaldırın](#unlock)|İlişkili dize nesnesinin arabelleğini kaldırır.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[nAllocLength](#nalloclength)|S'de `XCHAR`ayrılan verilerin uzunluğu (null sonlandırma dahil değildir)|
-|[nDataLength](#ndatalength)|Şu anda kullanılan `XCHAR`verilerin s'de uzunluğu (sonlandırma null dahil değildir)|
+|[nAllocLength](#nalloclength)|İçindeki ayrılmış verilerin uzunluğu `XCHAR` (Sonlandırıcı null değeri dahil değil)|
+|[nDataLength](#ndatalength)|Şu anda kullanılan verilerin uzunluğu `XCHAR` (Sonlandırıcı null değeri dahil değil)|
 |[nRefs](#nrefs)|Nesnenin geçerli başvuru sayısı.|
-|[pStringMgr](#pstringmgr)|Bu dize nesnesinin dize yöneticisine bir işaretçi.|
+|[pStringMgr](#pstringmgr)|Bu dize nesnesinin dize yöneticisine yönelik bir işaretçi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf yalnızca özel dize yöneticileri uygulayan geliştiriciler tarafından kullanılmalıdır. Özel dize yöneticileri hakkında daha fazla bilgi için Memory [Management ve CStringT'e](../../atl-mfc-shared/memory-management-with-cstringt.md) bakın
+Bu sınıf yalnızca özel dize yöneticileri uygulayan geliştiriciler tarafından kullanılmalıdır. Özel dize yöneticileri hakkında daha fazla bilgi için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md)
 
-Bu sınıf, [CStringT,](../../atl-mfc-shared/reference/cstringt-class.md) [CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)veya [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md) nesneleri gibi daha yüksek bir dize nesnesi ile ilişkili çeşitli bilgi ve veri türlerini kapsüller. Her yüksek dize nesnesi, birden çok dize nesnesinin aynı dize veri nesnesini işaret etmesine izin veren ilişkili `CStringData` nesneye bir işaretçi içerir. Bu ilişki`nRefs` `CStringData` nesnenin başvuru sayısı ( ) ile temsil edilir.
+Bu sınıf, [CStringT](../../atl-mfc-shared/reference/cstringt-class.md), [CSimpleStringT](../../atl-mfc-shared/reference/csimplestringt-class.md)veya [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md) nesneleri gibi daha yüksek bir dize nesnesiyle ilişkili çeşitli bilgi türlerini ve verileri kapsar. Her iki dize nesnesi, ilişkili nesnesine bir işaretçi içerir `CStringData` ve birden çok dize nesnesinin aynı dize veri nesnesine işaret kurmasına izin verir. Bu ilişki, nesnesinin başvuru sayısı () ile temsil edilir `nRefs` `CStringData` .
 
 > [!NOTE]
-> Bazı durumlarda, bir dize `CFixedString`türü (gibi) birden fazla yüksek dize nesnesi ile bir dize veri nesnesi paylaşmaz. Bu konuda daha fazla bilgi için [Bellek Yönetimi ve CStringT'e](../../atl-mfc-shared/memory-management-with-cstringt.md)bakın.
+> Belirli durumlarda, bir dize türü (gibi) birden `CFixedString` çok daha yüksek dize nesnesiyle bir dize veri nesnesi paylaşmaz. Bunun hakkında daha fazla bilgi için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-Bu veriler şu verilerden oluşur:
+Bu veriler şunlardan oluşur:
 
-- Dize bellek yöneticisi (tip [IAtlStringMgr).](../../atl-mfc-shared/reference/iatlstringmgr-class.md)
+- Dizenin bellek Yöneticisi ( [IAtlStringMgr](../../atl-mfc-shared/reference/iatlstringmgr-class.md)türü).
 
-- Dizenin geçerli uzunluğu [(nDataLength).](#ndatalength)
+- Dizenin geçerli uzunluğu ( [nDataLength](#ndatalength)).
 
-- Dize ayrılan uzunluk [(nAllocLength)](#nalloclength) Performans nedenleriyle, bu geçerli dize uzunluğundan farklı olabilir
+- Dizenin ayrılan uzunluğu ( [nAllocLength](#nalloclength)). Performans nedenleriyle bu, geçerli dize uzunluğundan farklı olabilir
 
-- Nesnenin `CStringData` geçerli başvuru sayısı [(nRefs).](#nrefs) Bu değer, aynı `CStringData` nesneyi paylaşan kaç dize nesnesinin olduğunu belirlemede kullanılır.
+- Nesnenin geçerli başvuru sayısı ( [nRefs](#nrefs)) `CStringData` . Bu değer, aynı nesneyi kaç tane dize nesnesinin paylaştığını belirlemek için kullanılır `CStringData` .
 
-- Dize gerçek karakter arabelleği ( [veri).](#data)
+- Dizenin gerçek karakter arabelleği ( [veri](#data)).
 
    > [!NOTE]
-   > Dize nesnesinin gerçek karakter arabelleği dize yöneticisi tarafından ayrılır `CStringData` ve nesneye eklenir.
+   > Dize nesnesinin gerçek karakter arabelleği, dize Yöneticisi tarafından ayrılır ve `CStringData` nesnesine eklenir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsimpstr.h
+**Üstbilgi:** atlsimpstr. h
 
-## <a name="cstringdataaddref"></a><a name="addref"></a>CStringData::Addref
+## <a name="cstringdataaddref"></a><a name="addref"></a> CStringData:: AddRef
 
-Dize nesnesinin başvuru sayısını artırımına eder.
+Dize nesnesinin başvuru sayısını artırır.
 
 ```cpp
 void AddRef() throw();
@@ -97,14 +97,14 @@ void AddRef() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize nesnesinin başvuru sayısını artırımına eder.
+Dize nesnesinin başvuru sayısını artırır.
 
 > [!NOTE]
-> Negatif bir sayı dize arabelleği kilitli olduğunu gösterir, çünkü negatif bir başvuru sayısı ile bir dize bu yöntemi aramayın.
+> Negatif bir sayı dize arabelleğinin kilitli olduğunu gösterdiği için, bu yöntemi negatif başvuru sayısı olan bir dize üzerinde çağırmayın.
 
-## <a name="cstringdatadata"></a><a name="data"></a>CStringData::data
+## <a name="cstringdatadata"></a><a name="data"></a> CStringData::d ata
 
-Bir dize nesnesinin karakter arabelleği için bir işaretçi döndürür.
+Dize nesnesinin karakter arabelleğine yönelik bir işaretçi döndürür.
 
 ```cpp
 void* data() throw();
@@ -112,18 +112,18 @@ void* data() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize nesnesinin karakter arabelleği için bir işaretçi.
+Dize nesnesinin karakter arabelleğine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili dize nesnesinin geçerli karakter arabelleği döndürmek için bu işlevi çağırın.
+İlişkili dize nesnesinin geçerli karakter arabelleğini döndürmek için bu işlevi çağırın.
 
 > [!NOTE]
-> Bu arabellek `CStringData` nesne tarafından değil, gerektiğinde dize yöneticisi tarafından tahsis edilir. Tahsis edildiğinde, arabellek dize veri nesnesine eklenir.
+> Bu arabellek nesne tarafından, `CStringData` ancak gerektiğinde dize Yöneticisi tarafından ayrılmaz. Ayrıldığınızda, arabellek dize veri nesnesine eklenir.
 
-## <a name="cstringdataislocked"></a><a name="islocked"></a>CStringData::Kilitli
+## <a name="cstringdataislocked"></a><a name="islocked"></a> CStringData:: ıskilitlendi
 
-Karakter arabelleği kilitli olup olmadığını belirler.
+Karakter arabelleğinin kilitlenip kilitlenmediğini belirler.
 
 ```
 bool IsLocked() const throw();
@@ -131,15 +131,15 @@ bool IsLocked() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arabellek kilitliyse TRUE döndürür; aksi takdirde YANLIŞ.
+Arabellek kilitliyse doğru döndürür; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize nesnesinin karakter arabelleği şu anda kilitli olup olmadığını belirlemek için bu işlevi arayın.
+Bir dize nesnesinin karakter arabelleğinin Şu anda kilitli olup olmadığını öğrenmek için bu işlevi çağırın.
 
-## <a name="cstringdataisshared"></a><a name="isshared"></a>CStringData::Paylaşılan
+## <a name="cstringdataisshared"></a><a name="isshared"></a> CStringData:: IsShared
 
-Karakter arabelleği paylaşılır mı belirler.
+Karakter arabelleğinin paylaşılıp paylaşılamayacağını belirler.
 
 ```
 bool IsShared() const throw();
@@ -147,15 +147,15 @@ bool IsShared() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arabellek paylaşılırsa TRUE döndürür; aksi takdirde YANLIŞ.
+Arabellek paylaşılmışsa, doğru döndürür; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dize veri nesnesinin karakter arabelleği şu anda birden çok dize nesneleri arasında paylaşılır olup olmadığını belirlemek için bu işlevi arayın.
+Bir dize veri nesnesinin karakter arabelleğinin, şu anda birden çok dize nesnesi arasında paylaşılıp paylaşılmadığını öğrenmek için bu işlevi çağırın.
 
-## <a name="cstringdatalock"></a><a name="lock"></a>CStringData::Kilitle
+## <a name="cstringdatalock"></a><a name="lock"></a> CStringData:: Lock
 
-İlişkili dize nesnesinin karakter arabelleği kilitler.
+İlişkili dize nesnesinin karakter arabelleğini kilitler.
 
 ```cpp
 void Lock() throw();
@@ -163,14 +163,14 @@ void Lock() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize veri nesnesinin karakter arabelleği kilitlemek için bu işlevi arayın. Karakter arabelleği doğrudan erişim geliştirici tarafından gerekli olduğunda kilitleme ve kilidini açma kullanılır. Kilitleme iyi bir örnek [LockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [UnlockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) yöntemleri `CSimpleStringT`ile gösterilmiştir.
+Dize veri nesnesinin karakter arabelleğini kilitlemek için bu işlevi çağırın. Geliştirici için karakter arabelleğine doğrudan erişim gerektiğinde kilitleme ve kilit açma kullanılır. Kilitleme için iyi bir örnek, [LockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [UnlockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) yöntemleri tarafından gösterilmiştir `CSimpleStringT` .
 
 > [!NOTE]
-> Bir karakter arabelleği yalnızca arabellek daha yüksek dize nesneleri arasında paylaşılmazken kilitlenebilir.
+> Bir karakter arabelleği yalnızca arabellek daha yüksek dize nesneleri arasında paylaşılmaması durumunda kilitlenebilir.
 
-## <a name="cstringdatanalloclength"></a><a name="nalloclength"></a>CStringData::nAllocLength
+## <a name="cstringdatanalloclength"></a><a name="nalloclength"></a> CStringData:: nAllocLength
 
-Ayrılan karakter arabelleği uzunluğu.
+Ayrılan karakter arabelleğinin uzunluğu.
 
 ```
 int nAllocLength;
@@ -178,9 +178,9 @@ int nAllocLength;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan veri arabelleği uzunluğunu `XCHAR`s'de depolar (null sonlandırma dahil değildir).
+Ayrılan veri arabelleğinin uzunluğunu `XCHAR` (Sonlandırıcı null değeri dahil değil) depolar.
 
-## <a name="cstringdatandatalength"></a><a name="ndatalength"></a>CStringData::nDataLength
+## <a name="cstringdatandatalength"></a><a name="ndatalength"></a> CStringData:: nDataLength
 
 Dize nesnesinin geçerli uzunluğu.
 
@@ -190,9 +190,9 @@ int nDataLength;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şu anda kullanılan verilerin `XCHAR`uzunluğunu s olarak depolar (null sonlandırma dahil değildir).
+Kullanılmakta olan verilerin uzunluğunu depolar `XCHAR` (Sonlandırıcı null dahil değil).
 
-## <a name="cstringdatanrefs"></a><a name="nrefs"></a>CStringData::nRefs
+## <a name="cstringdatanrefs"></a><a name="nrefs"></a> CStringData:: nRefs
 
 Dize veri nesnesinin başvuru sayısı.
 
@@ -202,11 +202,11 @@ long nRefs;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize veri nesnesinin başvuru sayısını depolar. Bu sayı, dize veri nesnesi ile ilişkili daha yüksek dize nesnelerinin sayısını gösterir. Negatif değer, dize veri nesnesinin şu anda kilitli olduğunu gösterir.
+Dize veri nesnesinin başvuru sayısını depolar. Bu sayı, dize veri nesnesiyle ilişkili daha yüksek dize nesnelerinin sayısını gösterir. Negatif bir değer, dize veri nesnesinin Şu anda kilitli olduğunu gösterir.
 
-## <a name="cstringdatapstringmgr"></a><a name="pstringmgr"></a>CStringData::pStringMgr
+## <a name="cstringdatapstringmgr"></a><a name="pstringmgr"></a> CStringData::p StringMgr
 
-İlişkili dize nesnesinin bellek yöneticisi.
+İlişkili dize nesnesinin bellek Yöneticisi.
 
 ```
 IAtlStringMgr* pStringMgr;
@@ -214,11 +214,11 @@ IAtlStringMgr* pStringMgr;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişkili dize nesnesinin bellek yöneticisini depolar. Bellek yöneticileri ve dizeleri hakkında daha fazla bilgi için Bellek [Yönetimi ve CStringT'e](../../atl-mfc-shared/memory-management-with-cstringt.md)bakın.
+İlişkili dize nesnesi için bellek yöneticisini depolar. Bellek yöneticileri ve dizeler hakkında daha fazla bilgi için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-## <a name="cstringdatarelease"></a><a name="release"></a>CStringData::Sürüm
+## <a name="cstringdatarelease"></a><a name="release"></a> CStringData:: Release
 
-Dize veri nesnesinin başvuru sayısını eriter.
+Dize veri nesnesinin başvuru sayısını azaltır.
 
 ```cpp
 void Release() throw();
@@ -226,15 +226,15 @@ void Release() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başvuru sayısını azalmak için bu işlevi çağırın ve başvuru sayısı sıfıra ulaştığında yapıyı `CStringData` serbest çeştirin. Bu genellikle bir dize nesnesi silindiğinde yapılır ve bu nedenle artık dize veri nesnesine başvurması gerekmez.
+Başvuru sayısını azaltmak için bu işlevi çağırın, `CStringData` başvuru sayısı sıfır olursa yapıyı serbest bırakır. Bu genellikle bir dize nesnesi silindiğinde ve bu nedenle dize veri nesnesine başvurulması gerekmiyorsa yapılır.
 
-Örneğin, aşağıdaki kod ile `CStringData::Release` `str1`ilişkili dize veri nesnesi için çağırır:
+Örneğin, aşağıdaki kod `CStringData::Release` ile ilişkili dize veri nesnesi için çağrı yapılır `str1` :
 
 [!code-cpp[NVC_ATLMFC_Utilities#104](../../atl-mfc-shared/codesnippet/cpp/cstringdata-class_1.cpp)]
 
-## <a name="cstringdataunlock"></a><a name="unlock"></a>CStringData::Kilidini Aç
+## <a name="cstringdataunlock"></a><a name="unlock"></a> CStringData:: unlock
 
-İlişkili dize nesnesinin karakter arabelleği kilidini açar.
+İlişkili dize nesnesinin karakter arabelleğini kaldırır.
 
 ```cpp
 void Unlock() throw();
@@ -242,14 +242,14 @@ void Unlock() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize veri nesnesinin karakter arabelleği kilidini açmak için bu işlevi arayın. Bir arabellek kilidi açıldıktan sonra, paylaşılabilir ve referans sayılır olabilir.
+Dize veri nesnesinin karakter arabelleğinin kilidini açmak için bu işlevi çağırın. Bir arabelleğin kilidi açıldıktan sonra paylaşılabilir ve başvuru sayılabilir.
 
 > [!NOTE]
-> Yapılacak `Lock` her çağrı, `Unlock`''ye karşılık gelen bir çağrıyla eşlenmelidir.
+> Her çağrısının `Lock` öğesine karşılık gelen çağrısıyla eşleşmesi gerekir `Unlock` .
 
-Geliştirici dize verilerinin paylaşılmamasını sağlaması gerektiğinde kilitleme ve kilit açma kullanılır. Kilitleme iyi bir örnek [LockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [UnlockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) yöntemleri `CSimpleStringT`ile gösterilmiştir.
+Geliştirici dize verilerinin paylaşılmadığından emin olması gerektiğinde kilitleme ve kilit açma kullanılır. Kilitleme için iyi bir örnek, [LockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [UnlockBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) yöntemleri tarafından gösterilmiştir `CSimpleStringT` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[ATL/MFC Paylaşılan Sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

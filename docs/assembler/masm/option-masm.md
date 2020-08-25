@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - OPTION directive
 ms.assetid: 8e10dabd-e36f-4586-ab01-ada96736b0bd
-ms.openlocfilehash: a614697a9d633628b02b59a7b810fa261887f859
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: 3d5bef52106b38487d1a2be248cff274f39e009c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446443"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830846"
 ---
 # <a name="option"></a>OPTION
 
@@ -27,16 +27,40 @@ Mevcut seçenekler şunlardır:
 
 :::row:::
    :::column span="":::
-      **`CASEMAP`**<br/>**`DOTNAME`**<br/>**`NODOTNAME`**<br/>**`EMULATOR`**<br/>**`NOEMULATOR`**<br/>**`EPILOGUE`**<br/>**`EXPR16`**
+      **`CASEMAP`**\
+      **`DOTNAME`**\
+      **`NODOTNAME`**\
+      **`EMULATOR`**\
+      **`NOEMULATOR`**\
+      **`EPILOGUE`**\
+      **`EXPR16`**
    :::column-end:::
    :::column span="":::
-      **`EXPR32`**<br/>**`LANGUAGE`**<br/>**`LJMP`**<br/>**`NOLJMP`**<br/>**`M510`**<br/>**`NOM510`**<br/>**`NOKEYWORD`**
+      **`EXPR32`**\
+      **`LANGUAGE`**\
+      **`LJMP`**\
+      **`NOLJMP`**\
+      **`M510`**\
+      **`NOM510`**\
+      **`NOKEYWORD`**
    :::column-end:::
    :::column span="":::
-      **`NOSIGNEXTEND`**<br/>**`OFFSET`**<br/>**`OLDMACROS`**<br/>**`NOOLDMACROS`**<br/>**`OLDSTRUCTS`**<br/>**`NOOLDSTRUCTS`**<br/>**`PROC`**
+      **`NOSIGNEXTEND`**\
+      **`OFFSET`**\
+      **`OLDMACROS`**\
+      **`NOOLDMACROS`**\
+      **`OLDSTRUCTS`**\
+      **`NOOLDSTRUCTS`**\
+      **`PROC`**
    :::column-end:::
    :::column span="":::
-      **`PROLOGUE`**<br/>**`READONLY`**<br/>**`NOREADONLY`**<br/>**`SCOPED`**<br/>**`NOSCOPED`**<br/>**`SEGMENT`**<br/>**`SETIF2`**
+      **`PROLOGUE`**\
+      **`READONLY`**\
+      **`NOREADONLY`**\
+      **`SCOPED`**\
+      **`NOSCOPED`**\
+      **`SEGMENT`**\
+      **`SETIF2`**
    :::column-end:::
 :::row-end:::
 

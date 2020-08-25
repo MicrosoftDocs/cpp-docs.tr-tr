@@ -5,12 +5,12 @@ f1_keywords:
 - atlbase/ATL::AtlWinModuleAddCreateWndData
 - atlbase/ATL::AtlWinModuleExtractCreateWndData
 ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2
-ms.openlocfilehash: 1a929fd0f583150e84ce5b1efa7e896bc16e4247
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1f1dcb325f8844a74b3dd831a51050083e7ea552
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229941"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834407"
 ---
 # <a name="winmodule-global-functions"></a>WinModule genel Işlevleri
 
@@ -19,7 +19,7 @@ Bu işlevler, yapı işlemleri için destek sağlar `_AtlCreateWndData` .
 > [!IMPORTANT]
 > Aşağıdaki tabloda listelenen işlevler, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[AtlWinModuleAddCreateWndData](#atlwinmoduleaddcreatewnddata)|Bu işlev, bir yapıyı başlatmak ve eklemek için kullanılır `_AtlCreateWndData` .|
 |[Atlwınmoduleextractcreatewnddata](#atlwinmoduleextractcreatewnddata)|Var olan bir yapıyı ayıklamak için bu işlevi çağırın `_AtlCreateWndData` .|
@@ -28,7 +28,7 @@ Bu işlevler, yapı işlemleri için destek sağlar `_AtlCreateWndData` .
 
 **Üstbilgi:** atlbase. h
 
-## <a name="atlwinmoduleaddcreatewnddata"></a><a name="atlwinmoduleaddcreatewnddata"></a>AtlWinModuleAddCreateWndData
+## <a name="atlwinmoduleaddcreatewnddata"></a><a name="atlwinmoduleaddcreatewnddata"></a> AtlWinModuleAddCreateWndData
 
 Bu işlev, bir yapıyı başlatmak ve eklemek için kullanılır `_AtlCreateWndData` .
 
@@ -54,7 +54,7 @@ Nesne **`this`** işaretçisinin işaretçisi.
 
 `_AtlCreateWndData` **`this`** Sınıf örneklerine başvurmak için kullanılan işaretçiyi depolamak için kullanılan bir yapıyı başlatır ve bir modülün yapısı tarafından başvurulan listeye ekler `_ATL_WIN_MODULE70` . [CAtlWinModule:: AddCreateWndData](catlwinmodule-class.md#addcreatewnddata)tarafından çağırılır.
 
-## <a name="atlwinmoduleextractcreatewnddata"></a><a name="atlwinmoduleextractcreatewnddata"></a>Atlwınmoduleextractcreatewnddata
+## <a name="atlwinmoduleextractcreatewnddata"></a><a name="atlwinmoduleextractcreatewnddata"></a> Atlwınmoduleextractcreatewnddata
 
 Var olan bir yapıyı ayıklamak için bu işlevi çağırın `_AtlCreateWndData` .
 

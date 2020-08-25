@@ -42,12 +42,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 9c1596b66f4387ea1f7ce309a5012ecd0f63d5de
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 90e4eb659de6d1d5ed1488365f6637de2d537e57
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623456"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831690"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: denetimleri ekleme, düzenleme veya silme (C++)
 
@@ -166,20 +166,38 @@ Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önced
 
 Şu anda, iletişim kutusunda aşağıdaki ortak denetimleri veya zengin düzenleme denetimlerini sürükleyip bıraktığınızda, **iletişim kutusu Düzenleyicisi** projenize otomatik olarak kod eklemez. Visual Studio, bu sorun oluştuğunda bir hata veya uyarı sağlar. Onarmak için, denetimin kodunu el ile ekleyin.
 
-||||
-|-|-|-|
-|Kaydırıcı denetimi|Ağaç denetimi|Tarih saat seçici|
-|Döndürme denetimi|Sekme denetimi|Aylık takvim|
-|İlerleme denetimi|Animasyon denetimi|IP adresi denetimi|
-|Kısayol tuşu|Zengin düzenleme denetimi|Genişletilmiş Birleşik giriş kutusu|
-|Liste denetimi|Zengin düzenleme 2,0 denetimi|Özel Denetim|
+:::row:::
+   :::column span="":::
+      Animasyon denetimi \
+      Özel denetim \
+      Tarih saat seçici \
+      Genişletilmiş Birleşik giriş kutusu
+   :::column-end:::
+   :::column span="":::
+      Sık erişimli anahtar \
+      IP adresi denetimi \
+      Liste denetimi \
+      Aylık takvim
+   :::column-end:::
+   :::column span="":::
+      İlerleme denetimi \
+      Zengin düzenleme 2,0 denetimi \
+      Zengin düzenleme denetimi \
+      Kaydırıcı denetimi
+   :::column-end:::
+   :::column span="":::
+      Döndürme denetimi \
+      Sekme denetimi \
+      Ağaç denetimi
+   :::column-end:::
+:::row-end:::
 
 İletişim kutusu üzerinde ortak denetimleri kullanmak için, [InitCommonControlsEx](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) ' ı çağırmanız veya iletişim kutusunu oluşturmadan önce bunu yapmanız gerekir `AFXInitCommonControls` .
 
 RichEdit denetimlerini kullanmak için çağrısı yapmanız gerekir `LoadLibrary` . Daha fazla bilgi için bkz. Windows SDK [zengin düzenleme denetimleri](/windows/win32/Controls/about-rich-edit-controls) ve [zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md).
 
 > [!NOTE]
-> Bir RichEdit denetimini MFC ile birlikte kullanmak için, öncelikle [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) öğesini çağırıp RichEdit 2,0 DENETIMINI (RICHED20) yüklemeniz gerekir. DLL) veya eski RichEdit 1,0 denetimini (RICHED32) yüklemek için [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) 'i çağırın. DLL).
+> MFC ile bir RichEdit denetimi kullanmak için, önce 2,0 [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) 'i çağırmanız gerekir (RICHED20.DLL) veya eski RichEdit 1,0 denetimini yüklemek Için [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) 'i çağırın (RICHED32.DLL).
 >
 > Geçerli [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) sınıfını eski RichEdit 1,0 denetimiyle kullanabilirsiniz, ancak `CRichEditCtrl` yalnızca RichEdit 2,0 denetimini destekleyecek şekilde tasarlanmıştır. RichEdit 1,0 ve RichEdit 2,0 benzer olduğundan çoğu Yöntem çalışacaktır. Ancak, 1,0 ve 2,0 denetimleri arasında bazı farklılıklar vardır. bu nedenle bazı yöntemler yanlış çalışabilir veya hiç çalışmayabilir.
 

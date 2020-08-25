@@ -17,18 +17,18 @@ helpviewer_keywords:
 - std::error_condition::clear
 - std::error_condition::message
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
-ms.openlocfilehash: c63676e7bdf5ce1547b4feae16c7899ace545ad2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1708a3f560f60fe3933406a904d95b4d29890a7f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203370"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830780"
 ---
 # <a name="error_condition-class"></a>error_condition Sınıfı
 
 Kullanıcı tanımlı hata kodlarını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class error_condition;
@@ -42,19 +42,19 @@ Türünde bir nesne `error_condition` , bir hata kodu değerini ve bir nesne iş
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[error_condition](#error_condition)|Türünde bir nesne oluşturur `error_condition` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[value_type](#value_type)|Depolanan hata kodu değerini temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[assign (atamak)](#assign) |Bir hata koşuluna bir hata kodu değeri ve kategorisi atar.|
 |[alan](#category)|Hata kategorisini döndürür.|
@@ -63,7 +63,7 @@ Türünde bir nesne `error_condition` , bir hata kodu değerini ve bir nesne iş
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç = =](#op_eq_eq)|Nesneler arasındaki eşitlik için testler `error_condition` .|
 |[işleç! =](#op_neq)|Nesneler arasında eşitsizlik için testler `error_condition` .|
@@ -71,7 +71,7 @@ Türünde bir nesne `error_condition` , bir hata kodu değerini ve bir nesne iş
 |[işleç =](#op_eq)|Nesnesine yeni bir numaralandırma değeri atar `error_condition` .|
 |[işleç bool](#op_bool)|Türünde bir değişken yayınlar `error_condition` .|
 
-### <a name="assign"></a><a name="assign"></a>ata
+### <a name="assign"></a><a name="assign"></a> ata
 
 Bir hata koşuluna bir hata kodu değeri ve kategorisi atar.
 
@@ -91,7 +91,7 @@ void assign(value_type val, const error_category& _Cat);
 
 Üye işlevi, değer olarak *Val* 'yi hata kodu değeri ve *_Cat*bir işaretçi olarak depolar.
 
-### <a name="category"></a><a name="category"></a>alan
+### <a name="category"></a><a name="category"></a> alan
 
 Hata kategorisini döndürür.
 
@@ -105,7 +105,7 @@ Depolanan hata kategorisine yönelik bir başvuru
 
 #### <a name="remarks"></a>Açıklamalar
 
-### <a name="clear"></a><a name="clear"></a>lediğiniz
+### <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Hata kodu değerini ve kategorisini temizler.
 
@@ -117,7 +117,7 @@ clear();
 
 Üye işlevi sıfır hata kodu değerini ve [generic_category](../standard-library/system-error-functions.md#generic_category) nesnesine bir işaretçi depolar.
 
-### <a name="error_condition"></a><a name="error_condition"></a>error_condition
+### <a name="error_condition"></a><a name="error_condition"></a> error_condition
 
 Türünde bir nesne oluşturur `error_condition` .
 
@@ -151,7 +151,7 @@ error_condition(_Enum _Errcode,
 
 Üçüncü Oluşturucu, `(value_type)_Errcode` hata kodu değeri olarak depolar ve [generic_category](../standard-library/system-error-functions.md#generic_category)bir işaretçisi.
 
-### <a name="message"></a><a name="message"></a>İleti
+### <a name="message"></a><a name="message"></a> İleti
 
 Hata kodunun adını döndürür.
 
@@ -167,7 +167,7 @@ string message() const;
 
 Bu üye işlev döndürür `category().message(value())` .
 
-### <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+### <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Nesneler arasındaki eşitlik için testler `error_condition` .
 
@@ -188,7 +188,7 @@ Eşitlik için test edilecek Ojbect.
 
 Üye işleci döndürür `category() == right.category() && value == right.value()` .
 
-### <a name="operator"></a><a name="op_neq"></a>işleç! =
+### <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Nesneler arasında eşitsizlik için testler `error_condition` .
 
@@ -209,7 +209,7 @@ Eşitsizlik için test edilecek nesne.
 
 Üye işleci döndürür `!(*this == right)` .
 
-### <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+### <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 `error_condition`Nesnenin `error_code` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.
 
@@ -230,7 +230,7 @@ bool operator<(const error_condition& right) const;
 
 Üye işleci döndürür `category() < right.category() || category() == right.category() && value < right.value()` .
 
-### <a name="operator"></a><a name="op_eq"></a>işleç =
+### <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Nesnesine yeni bir numaralandırma değeri atar `error_condition` .
 
@@ -255,7 +255,7 @@ Nesneye atanacak numaralandırma değeri `error_condition` .
 
 Üye işleci, `(value_type)error` hata kodu değeri ve [generic_category](../standard-library/system-error-functions.md#generic_category)işaretçisi olarak depolar. Döndürür **`*this`** .
 
-### <a name="operator-bool"></a><a name="op_bool"></a>işleç bool
+### <a name="operator-bool"></a><a name="op_bool"></a> işleç bool
 
 Türünde bir değişken yayınlar `error_condition` .
 
@@ -271,7 +271,7 @@ Nesnenin Boolean değeri `error_condition` .
 
 İşleci **`true`** yalnızca [değeri](#value) sıfıra eşit değilse, dönüştürülebilir bir değer döndürür. Dönüş türü, türüne **`bool`** değil, `void *` veya diğer bilinen skalar türlere dönüştürülebilir.
 
-### <a name="value"></a><a name="value"></a>deeri
+### <a name="value"></a><a name="value"></a> deeri
 
 Depolanan hata kodu değerini döndürür.
 
@@ -285,7 +285,7 @@ value_type value() const;
 
 #### <a name="remarks"></a>Açıklamalar
 
-### <a name="value_type"></a><a name="value_type"></a>value_type
+### <a name="value_type"></a><a name="value_type"></a> value_type
 
 Depolanan hata kodu değerini temsil eden bir tür.
 

@@ -36,12 +36,12 @@ helpviewer_keywords:
 - _wspawnv function
 - spawnv function
 ms.assetid: 72360ef4-dfa9-44c1-88c1-b3ecb660aa7d
-ms.openlocfilehash: b29b1739f4511cd8f600d051aa0d754dbc8be224
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ffed211fffc7b994fa04fde7210339b9355197fe
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909240"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830819"
 ---
 # <a name="_spawnv-_wspawnv"></a>_spawnv, _wspawnv
 
@@ -50,7 +50,7 @@ Yeni bir işlem oluşturur ve yürütür.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 intptr_t _spawnv(
@@ -80,7 +80,7 @@ Bağımsız değişkenlere işaretçiler dizisi. *Argv*[0] bağımsız değişke
 
 Zaman uyumlu bir **_spawnv** veya **_wspawnv** ( *mod*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Zaman uyumsuz bir **_spawnv** veya **_wspawnv** (**_P_NOWAIT** veya *mod*için belirtilen **_P_NOWAITO** ) dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını sıfır dışında bir bağımsız değişkenle çağırırsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme ile olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
 
-|||
+| Değer | Açıklama |
 |-|-|
 | **E2BIG** | Bağımsız değişken listesi 1024 baytı aşıyor. |
 | **EıNVAL** | *Mode* bağımsız değişkeni geçersiz. |
@@ -102,8 +102,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_spawnv**|\<stdio. h> veya \<Process. h>|
-|**_wspawnv**|\<stdio. h> veya \<wchar. h>|
+|**_spawnv**|\<stdio.h> veya \<process.h>|
+|**_wspawnv**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -113,9 +113,9 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[durdurulmaya](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[durdur](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>

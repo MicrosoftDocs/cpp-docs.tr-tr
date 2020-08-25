@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: 2c6487370bfa4d3af6c9c7c40b7f83a252c2e01d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f63fe99238450b8dffbf459ab078a8ecf6623b77
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222582"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831508"
 ---
 # <a name="ltcomplexgt"></a>&lt;ş&gt;
 
@@ -20,7 +20,7 @@ Kapsayıcı sınıfı şablonunu `complex` ve destekleyici şablonlarını tanı
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<complex>
+**Üst bilgi**: \<complex>
 
 **Ad alanı:** std
 
@@ -72,7 +72,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[mutlak](../standard-library/complex-functions.md#abs)|Karmaşık bir sayının mod sayısını hesaplar.|
 |[acos](../standard-library/complex-functions.md#acos)||
@@ -93,7 +93,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 |[çizgili](../standard-library/complex-functions.md#polar)|Kartezyen biçiminde, belirtilen mod ve bağımsız değişkene karşılık gelen karmaşık sayıyı döndürür.|
 |[POW](../standard-library/complex-functions.md#pow)|Karmaşık bir sayı olan bir tabanı başka bir karmaşık sayının gücüne yükselterek elde edilen karmaşık sayıyı değerlendirir.|
 |[PROJ](../standard-library/complex-functions.md#proj)||
-|[gerçek](../standard-library/complex-functions.md#real)|Karmaşık bir sayının gerçek bileşenini ayıklar.|
+|[real](../standard-library/complex-functions.md#real)|Karmaşık bir sayının gerçek bileşenini ayıklar.|
 |[sin](../standard-library/complex-functions.md#sin)|Karmaşık bir sayının sinüsünü döndürür.|
 |[sinh](../standard-library/complex-functions.md#sinh)|Karmaşık bir sayının hiperbolik sinüsünü döndürür.|
 |[k](../standard-library/complex-functions.md#sqrt)|Karmaşık bir sayının kare kökünü döndürür.|
@@ -102,7 +102,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç! =](../standard-library/complex-operators.md#op_neq)|İki karmaşık sayı arasında eşitsizlik için, biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.|
 |[işlecinde](../standard-library/complex-operators.md#op_star)|, Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çarpar.|
@@ -115,7 +115,7 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[ş\<double>](../standard-library/complex-double.md)|Açıkça özelleştirilmiş sınıf şablonu, her ikisi de türünde, her ikisi de **`double`** karmaşık bir sayının gerçek bölümünü temsil eden ve ikincisi sanal parçayı temsil eden, sıralı bir nesne çifti depolayan bir nesneyi tanımlar.|
 |[ş\<float>](../standard-library/complex-float.md)|Açıkça özelleştirilmiş sınıf şablonu, her ikisi de türünde, her ikisi de **`float`** karmaşık bir sayının gerçek bölümünü temsil eden ve ikincisi sanal parçayı temsil eden, sıralı bir nesne çifti depolayan bir nesneyi tanımlar.|
@@ -126,9 +126,9 @@ Aksi belirtilmediği takdirde, birden çok değer döndürebilmesine olanak vere
 
 \<complex>Üst bilgi, gerçek bölüm sıfır ve sanal bölüm giriş parametresinin değeri olan karmaşık bir sayı oluşturan [Kullanıcı tanımlı aşağıdaki sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar.
 
-|||
+|Bildirim|Açıklama|
 |-|-|
-|`constexpr complex<long double> operator""il(long double d)`<br />`constexpr complex<long double> operator""il(unsigned long long d)`|Döndürdüğü`complex<long double>{0.0L, static_cast<long double>(d)}`|
+|`constexpr complex<long double> operator""il(long double d)`<br />`constexpr complex<long double> operator""il(unsigned long long d)`|Döndürdüğü `complex<long double>{0.0L, static_cast<long double>(d)}`|
 |`constexpr complex<double> operator""i(long double d)`<br />`constexpr complex<double> operator""i(unsigned long long d)`|Döndürür: `complex<double>{0.0, static_cast<double>(d)}` .|
 |`constexpr complex<float> operator""if(long double d)`<br />`constexpr complex<float> operator""if(unsigned long long d)`|Döndürür: `complex<float>{0.0f, static_cast<float>(d)}` .|
 

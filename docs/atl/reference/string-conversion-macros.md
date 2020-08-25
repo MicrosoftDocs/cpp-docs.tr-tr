@@ -1,5 +1,5 @@
 ---
-title: Dize Dönüşüm Makroları
+title: Dize dönüştürme makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlconv/ATL::DEVMODEA2W
@@ -11,24 +11,24 @@ f1_keywords:
 - atlconv/ATL::DEVMODEW2A
 - atlconv/ATL::TEXTMETRICW2A
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-ms.openlocfilehash: 8df496b78334d26e7d3664642b2e9d93d6149843
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 60cccebf4e1db8369ea5a88f04a37b96838ff49f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325849"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835161"
 ---
-# <a name="string-conversion-macros"></a>Dize Dönüşüm Makroları
+# <a name="string-conversion-macros"></a>Dize dönüştürme makroları
 
 Bu makrolar dize dönüştürme özellikleri sağlar.
 
-## <a name="atl-and-mfc-string-conversion-macros"></a><a name="atl_and_mfc_string_conversion_macros"></a>ATL ve MFC String Dönüşüm Makroları
+## <a name="atl-and-mfc-string-conversion-macros"></a><a name="atl_and_mfc_string_conversion_macros"></a> ATL ve MFC dize dönüştürme makroları
 
-Burada tartışılan dize dönüştürme makroları hem ATL hem de MFC için geçerlidir. MFC dize dönüştürme hakkında daha fazla bilgi için [bkz: TN059: MFC MBCS/Unicode Dönüşüm Makroları](../../mfc/tn059-using-mfc-mbcs-unicode-conversion-macros.md) ve [MFC Makroları ve Globaller](../../mfc/reference/mfc-macros-and-globals.md)kullanma.
+Burada ele alınan dize dönüştürme makroları hem ATL hem de MFC için geçerlidir. MFC dize dönüştürmesi hakkında daha fazla bilgi için bkz. [TN059: MFC MBCS/Unicode dönüştürme makroları](../../mfc/tn059-using-mfc-mbcs-unicode-conversion-macros.md) ve [MFC makroları ve genel](../../mfc/reference/mfc-macros-and-globals.md)kullanım.
 
-## <a name="devmode-and-textmetric-string-conversion-macros"></a><a name="devmode_and_textmetric_string_conversion_macros"></a>DEVMODE ve TEXTMETRIC String Dönüşüm Makroları
+## <a name="devmode-and-textmetric-string-conversion-macros"></a><a name="devmode_and_textmetric_string_conversion_macros"></a> DEVMODE ve TEXTMETRIC dize dönüştürme makroları
 
-Bu [makrolar, DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) veya [TEXTMETRIC](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısının bir kopyasını oluşturur ve yeni yapıdaki dizeleri yeni bir dize türüne dönüştürür. Makrolar yeni yapı için yığında bellek ayırır ve yeni yapıya bir işaretçi döndürün.
+Bu makrolar, [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) veya [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısının bir kopyasını oluşturur ve yeni yapıdaki dizeleri yeni bir dize türüne dönüştürür. Makrolar yeni yapı için yığında bellek ayırır ve yeni yapıya bir işaretçi döndürür.
 
 ```cpp
 MACRONAME( address_of_structure )
@@ -36,7 +36,7 @@ MACRONAME( address_of_structure )
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin:
+Örnek:
 
 [!code-cpp[NVC_ATL_Utilities#128](../../atl/codesnippet/cpp/string-conversion-macros_1.cpp)]
 
@@ -44,31 +44,31 @@ ve:
 
 [!code-cpp[NVC_ATL_Utilities#129](../../atl/codesnippet/cpp/string-conversion-macros_2.cpp)]
 
-Makro adlarında, kaynak yapıdaki dize türü soldadır (örneğin, **A)** ve hedef yapıdaki dize türü sağdadır (örneğin, **W).** **LPSTR,** **OLE** LPOLESTR, **T** LPTSTR ve **W** LPWSTR anlamına gelir anlamına gelir.
+Makro adlarında, kaynak yapıdaki dize türü solda (örneğin, **bir**) ve hedef yapıdaki dize türü sağda (örneğin, **W**). , LPSTR 'yi temsil eder **, OLE** LPOPASTR **'yi temsil eder** , **T** , LPTSTR için ve **W** , LPWStr için temsil eder.
 
-Böylece, DEVMODEA2W LPWSTR dizeleri ile bir yapı içine LPSTR dizeleri ile `DEVMODE` bir `DEVMODE` yapı `TEXTMETRIC` kopyalar, TEXTMETRICOLE2T LPTSTR dizeleri ile bir `TEXTMETRIC` yapı içine LPOLESTR dizeleri ile bir yapı kopyalar, ve benzeri.
+Bu nedenle DEVMODEA2W, bir yapıyı LPWSTR dizeleri olan bir yapıya kopyalar `DEVMODE` `DEVMODE` , TEXTMETRICOLE2T `TEXTMETRIC` lpopastr dizelerine sahıp bir yapıyı LPTSTR dizeleri olan bir yapıya kopyalar `TEXTMETRIC` ve bu şekilde devam eder.
 
-`DEVMODE` Yapıda dönüştürülen iki dize aygıt adı`dmDeviceName`( ) ve`dmFormName`form adı ( ). Dize `DEVMODE` dönüştürme makroları da yapı`dmSize`boyutunu güncelleştirin ( ).
+Yapıda dönüştürülen iki dize `DEVMODE` Cihaz adı ( `dmDeviceName` ) ve form adı ( `dmFormName` ). `DEVMODE`Dize dönüştürme makroları Ayrıca yapı boyutunu ( `dmSize` ) güncelleştirir.
 
-`TEXTMETRIC` Yapıda dönüştürülen dört dize ilk karakter`tmFirstChar`( ),`tmLastChar`son karakter (`tmDefaultChar`), varsayılan karakter`tmBreakChar`( ), ve kesme karakteridir .
+Yapıda dönüştürülen dört dize `TEXTMETRIC` ilk karakterdir ( `tmFirstChar` ), son karakter ( `tmLastChar` ), varsayılan karakter ( `tmDefaultChar` ) ve kesme karakteri ( `tmBreakChar` ).
 
-Ve `TEXTMETRIC` dize `DEVMODE` dönüştürme makrolarının davranışı, varsa, etkin olan derleyici yönergesi bağlıdır. Kaynak ve hedef türleri aynıysa, dönüşüm gerçekleşmez. Derleyici yönergeleri **T** ve **OLE'yi** aşağıdaki gibi değiştirir:
+`DEVMODE`Ve `TEXTMETRIC` dize dönüştürme makrolarının davranışı, varsa derleyici yönergesinin etkin olduğunu gösterir. Kaynak ve hedef türleri aynıysa, herhangi bir dönüştürme gerçekleşmez. Derleyici yönergeleri **T** ve **OLE** 'yi aşağıdaki şekilde değiştirir:
 
-|Derleyici yönergesi yürürlükte|T olur|OLE olur|
+|Derleyici yönergesi etkin|T olur|OLE şu şekilde olur|
 |----------------------------------|---------------|-----------------|
-|yok|**A**|**W**|
-|**\_Unicode**|**W**|**W**|
+|yok|**A**|**Anlatımı**|
+|**\_KODLAMALARı**|**Anlatımı**|**Anlatımı**|
 |**OLE2ANSI**|**A**|**A**|
-|UNICODE ve **OLE2ANSI** ** \_**|**W**|**A**|
+|** \_ UNICODE** ve **OLE2ANSI**|**Anlatımı**|**A**|
 
-Aşağıdaki tabloda `DEVMODE` ve `TEXTMETRIC` dize dönüştürme makroları listelenir.
+Aşağıdaki tabloda `DEVMODE` ve `TEXTMETRIC` dize dönüştürme makroları listelenmektedir.
 
-|||
+|`DEVMODE` makroya|`TEXTMETRIC` makroya|
 |-|-|
-|DEVMODEA2W|TEKSTİlMETRICA2W|
-|DEVMODEOLE2T|TEKSTİlMETRICOLE2T|
-|DEVMODET2OLE|TEKSTİlMETRICT2OLE|
-|DEVMODEW2A|TEKSTİlMEW2A|
+|DEVMODEA2W|TEXTMETRICA2W|
+|DEVMODEOLE2T|TEXTMETRICOLE2T|
+|DEVMODET2OLE|TEXTMETRICT2OLE|
+|DEVMODEW2A|TEXTMETRICW2A|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

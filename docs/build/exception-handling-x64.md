@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ exception handling, x64
 - exception handling, x64
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
-ms.openlocfilehash: 75658e2c86ffb1a75d5f66e873e0648a8ebae29e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3d973354f94ca8c9f2e0901e60f2a8009ac08cd6
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224051"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835057"
 ---
 # <a name="x64-exception-handling"></a>x64 özel durum işleme
 
@@ -24,7 +24,7 @@ Yapılandırılmış özel durum işleme ve C++ özel durum işleme kodlama kura
 
 Tablo tabanlı özel durum işleme, yığın alanı ayıran veya başka bir işlev çağıran (örneğin yaprak olmayan işlevler) tüm işlevler için tablo girişi gerektirir. İşlev tablosu girdileri şu biçimdedir:
 
-|||
+|Boyut|Değer|
 |-|-|
 |'TUR|İşlev başlangıç adresi|
 |'TUR|İşlev bitiş adresi|
@@ -36,7 +36,7 @@ RUNTIME_FUNCTION yapısı, bellekte DWORD hizalı olmalıdır. Tüm adresler gö
 
 Bırakma verileri bilgi yapısı, bir işlevin yığın işaretçisine sahip olduğu etkileri kaydetmek için kullanılır ve kalıcı kayıtların yığına kaydedildiği yerdir:
 
-|||
+|Boyut|Değer|
 |-|-|
 |UBDE: 3|Sürüm|
 |UBYELERI: 5|Bayraklar|
@@ -49,14 +49,14 @@ Bırakma verileri bilgi yapısı, bir işlevin yığın işaretçisine sahip old
 
 (1) özel durum Işleyicisi
 
-|||
+|Boyut|Değer|
 |-|-|
 |'TUR|Özel durum işleyicisinin adresi|
 |değişken|Dile özgü işleyici verileri (isteğe bağlı)|
 
 (2) zincirleme bırakma bilgileri
 
-|||
+|Boyut|Değer|
 |-|-|
 |'TUR|İşlev başlangıç adresi|
 |'TUR|İşlev bitiş adresi|
@@ -114,7 +114,7 @@ UNWIND_INFO yapısı, bellekte DWORD hizalı olmalıdır. Her alanın anlamı a�
 
 Açılım kodu dizisi, kalıcı yazmaçları ve RSP 'yi etkileyen giriş bölümündeki işlem dizisini kaydetmek için kullanılır. Her kod öğesi şu biçimdedir:
 
-|||
+|Boyut|Değer|
 |-|-|
 |UBDE|Giriş bölümündeki konum|
 |UBDE: 4|Geriye doğru işlem kodu|
@@ -136,15 +136,15 @@ Ve dışındaki tüm opkodlara `UWOP_SAVE_XMM128` yönelik `UWOP_SAVE_XMM128_FAR
 
 Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
-- `UWOP_PUSH_NONVOL`(0) 1 düğüm
+- `UWOP_PUSH_NONVOL` (0) 1 düğüm
 
   Kalıcı tamsayı kaydını göndererek RSP 'yi 8 ' den azaltarak. İşlem bilgisi kayıt sayısıdır. Epıng 'lerdeki kısıtlamalar nedeniyle, açılım `UWOP_PUSH_NONVOL` kodları giriş ve geri doğru, en son bırakma kodu dizisinde yer almalıdır. Bu göreli sıralama, hariç olmak üzere diğer tüm bırakma kodları için geçerlidir `UWOP_PUSH_MACHFRAME` .
 
-- `UWOP_ALLOC_LARGE`(1) 2 veya 3 düğümleri
+- `UWOP_ALLOC_LARGE` (1) 2 veya 3 düğümleri
 
   Yığında büyük ölçekli bir alan ayırın. İki biçim vardır. İşlem bilgileri 0 ' a eşitse, ayırmanın boyutu 8 ' e bölünür bir sonraki yuvaya kaydedilir ve 512K-8 ' e kadar bir ayırmaya izin verilir. İşlem bilgileri 1 eşitse, ayırmaların ölçeklendirilmemiş boyutu, küçük endian biçiminde bir sonraki iki yuvaya kaydedilir ve bu da 4 GB-8 ' e kadar ayırmaya izin verir.
 
-- `UWOP_ALLOC_SMALL`(2) 1 düğüm
+- `UWOP_ALLOC_SMALL` (2) 1 düğüm
 
   Yığında küçük ölçekli bir alan ayırın. Ayırma boyutu, 8 + 8 olan işlem bilgileri alanıdır \* ve 8 ile 128 bayta ayırmaya izin verir.
 
@@ -156,31 +156,31 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
   |136 512K-8 bayt|`UWOP_ALLOC_LARGE`, işlem bilgisi = 0|
   |512K-4G-8 bayt|`UWOP_ALLOC_LARGE`, işlem bilgisi = 1|
 
-- `UWOP_SET_FPREG`(3) 1 düğüm
+- `UWOP_SET_FPREG` (3) 1 düğüm
 
   Kaydı geçerli RSP 'nin bir uzaklığa ayarlayarak çerçeve işaretçisi kaydını oluşturun. Uzaklık, \* 0 ile 240 arasında uzaklıklara izin veren UNWIND_INFO 16 ' daki çerçeve kayıt boşluğu (ölçeklendirilmiş) alanına eşittir. Bir konum kullanımı, sabit yığın ayırmanın ortasına işaret eden bir çerçeve işaretçisinin oluşturulmasına izin verir ve daha fazla erişimin kısa yönerge formlarını kullanmasına izin vererek kod yoğunluğuna yardımcı olur. İşlem bilgisi alanı ayrılmıştır ve kullanılmamalıdır.
 
-- `UWOP_SAVE_NONVOL`(4) 2 düğüm
+- `UWOP_SAVE_NONVOL` (4) 2 düğüm
 
   Kalıcı tamsayı kaydını, PUSH yerine MOV kullanarak yığına kaydedin. Bu kod öncelikle, kalıcı kaydın daha önce ayrılmış bir konumda yığına kaydedildiği, *küçültme kaydırması*için kullanılır. İşlem bilgisi kayıt sayısıdır. Ölçeği, yukarıdaki notta açıklandığı gibi sonraki geriye doğru izleme işlemi kod yuvasına kaydedilir.
 
-- `UWOP_SAVE_NONVOL_FAR`(5) 3 düğüm
+- `UWOP_SAVE_NONVOL_FAR` (5) 3 düğüm
 
   Bir kalıcı tamsayı kaydını, bir PUSH yerine MOV kullanarak uzun bir uzaklığa sahip yığına kaydedin. Bu kod öncelikle, kalıcı kaydın daha önce ayrılmış bir konumda yığına kaydedildiği, *küçültme kaydırması*için kullanılır. İşlem bilgisi kayıt sayısıdır. Ölçeklendirilmemiş yığın boşluğu, yukarıdaki notta açıklandığı gibi sonraki iki geriye doğru izleme işlem kodu yuvalarında kaydedilir.
 
-- `UWOP_SAVE_XMM128`(8) 2 düğüm
+- `UWOP_SAVE_XMM128` (8) 2 düğüm
 
   Yığında kalıcı bir XMM kaydının tüm 128 bitlerini kaydedin. İşlem bilgisi kayıt sayısıdır. Ölçeklenmiş 16 yığın boşluğu bir sonraki yuvaya kaydedilir.
 
-- `UWOP_SAVE_XMM128_FAR`(9) 3 düğümleri
+- `UWOP_SAVE_XMM128_FAR` (9) 3 düğümleri
 
   Kalıcı bir XMM kaydının tüm 128 bitlerini yığın üzerinde uzun bir uzaklığa sahip olacak şekilde kaydedin. İşlem bilgisi kayıt sayısıdır. Ölçeklendirilmemiş yığın boşluğu sonraki iki yuvaya kaydedilir.
 
-- `UWOP_PUSH_MACHFRAME`(10) 1 düğüm
+- `UWOP_PUSH_MACHFRAME` (10) 1 düğüm
 
   Bir makine çerçevesini gönderin.  Bu bırakma kodu, bir donanım kesmesi veya özel durumunun etkisini kaydetmek için kullanılır. İki biçim vardır. İşlem bilgileri 0 eşitse, bu çerçevelerden biri yığına itildi:
 
-  |||
+  |Konum|Değer|
   |-|-|
   |RSP + 32|SS|
   |RSP + 24|Eski RSP|
@@ -190,7 +190,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
   İşlem bilgisi 1 eşitse, bu çerçevelerden biri itildi:
 
-  |||
+  |Konum|Değer|
   |-|-|
   |RSP + 40|SS|
   |RSP + 32|Eski RSP|
@@ -199,7 +199,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
   |RSP + 8|'TE|
   |RSP|Hata kodu|
 
-  Bu bırakma kodu, hiçbir zaman aslında Yürütülmeyen, ancak bunun yerine bir kesme yordamının gerçek giriş noktasına ait olan ve yalnızca bir makine çerçevesinin göndermesinin benzetimini yapmak için mevcut olan bir kukla giriş içinde görüntülenir. `UWOP_PUSH_MACHFRAME`makinenin bu işlemi kavramsal olarak yaptığını belirten simülasyonu kaydeder:
+  Bu bırakma kodu, hiçbir zaman aslında Yürütülmeyen, ancak bunun yerine bir kesme yordamının gerçek giriş noktasına ait olan ve yalnızca bir makine çerçevesinin göndermesinin benzetimini yapmak için mevcut olan bir kukla giriş içinde görüntülenir. `UWOP_PUSH_MACHFRAME` makinenin bu işlemi kavramsal olarak yaptığını belirten simülasyonu kaydeder:
 
   1. Yığının üstünden *Temp* 'e açılan RIP dönüş adresi
   
@@ -221,7 +221,7 @@ Geriye doğru izleme işlemi kodu şu değerlerden biridir:
 
 İşlem bilgisi bitlerinin anlamı işlem koduna bağlıdır. Genel amaçlı (tamsayı) kayıt kodlamak için bu eşleme kullanılır:
 
-|||
+|Sürümleri|Kaydol|
 |-|-|
 |0|RAX|
 |1|RCX|

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-ms.openlocfilehash: 7ea9967bb3b617a798e7c573e93266faff5fb9a4
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: e3e4fa7fbf18fbb18096593042873106897c70ca
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446456"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830754"
 ---
 # <a name="directives-reference"></a>Yönergeler Başvurusu
 
@@ -19,13 +19,18 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.ALLOCSTACK`](dot-allocstack.md)<br/>[`.ENDPROLOG`](dot-endprolog.md)<br/>[`PROC`](proc.md)
+      [`.ALLOCSTACK`](dot-allocstack.md)\
+      [`.ENDPROLOG`](dot-endprolog.md)\
+      [`PROC`](proc.md)
    :::column-end:::
    :::column span="":::
-      [`.PUSHFRAME`](dot-pushframe.md)<br/>[`.PUSHREG`](dot-pushreg.md)<br/>[`.SAVEREG`](dot-savereg.md)
+      [`.PUSHFRAME`](dot-pushframe.md)\
+      [`.PUSHREG`](dot-pushreg.md)\
+      [`.SAVEREG`](dot-savereg.md)
    :::column-end:::
    :::column span="":::
-      [`.SAVEXMM128`](dot-savexmm128.md)<br/>[`.SETFRAME`](dot-setframe.md)
+      [`.SAVEXMM128`](dot-savexmm128.md)\
+      [`.SETFRAME`](dot-setframe.md)
    :::column-end:::
 :::row-end:::
 
@@ -33,7 +38,8 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ALIGN`](align-masm.md)<br/>[`EVEN`](even.md)
+      [`ALIGN`](align-masm.md)\
+      [`EVEN`](even.md)
    :::column-end:::
    :::column span="":::
       [`LABEL`](label-masm.md)
@@ -47,13 +53,24 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ELSE`](else-masm.md)<br/>[`ELSEIF`](elseif-masm.md)<br/>[`ELSEIF2`](elseif2.md)<br/>[`IF`](if-masm.md)<br/>[`IF2`](if2.md)
+      [`ELSE`](else-masm.md)\
+      [`ELSEIF`](elseif-masm.md)\
+      [`ELSEIF2`](elseif2.md)\
+      [`IF`](if-masm.md)\
+      [`IF2`](if2.md)
    :::column-end:::
    :::column span="":::
-      [`IFB`](ifb.md)<br/>[`IFNB`](ifnb.md)<br/>[`IFDEF`](ifdef.md)<br/>[`IFNDEF`](ifndef.md)<br/>[`IFDIF`](ifdif.md)
+      [`IFB`](ifb.md)\
+      [`IFNB`](ifnb.md)\
+      [`IFDEF`](ifdef.md)\
+      [`IFNDEF`](ifndef.md)\
+      [`IFDIF`](ifdif.md)
    :::column-end:::
    :::column span="":::
-      [`IFDIFI`](ifdif.md)<br/>[`IFE`](ife.md)<br/>[`IFIDN`](ifidn.md)<br/>[`IFIDNI`](ifidn.md)
+      [`IFDIFI`](ifdif.md)\
+      [`IFE`](ife.md)\
+      [`IFIDN`](ifidn.md)\
+      [`IFIDNI`](ifidn.md)
    :::column-end:::
 :::row-end:::
 
@@ -61,13 +78,21 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.BREAK`](dot-break.md)<br/>[`.CONTINUE`](dot-continue.md)<br/>[`.ELSE`](dot-else.md)<br/>[`.ELSEIF`](dot-if.md)
+      [`.BREAK`](dot-break.md)\
+      [`.CONTINUE`](dot-continue.md)\
+      [`.ELSE`](dot-else.md)\
+      [`.ELSEIF`](dot-if.md)
    :::column-end:::
    :::column span="":::
-      [`.ENDIF`](dot-endif.md)<br/>[`.ENDW`](dot-endw.md)<br/>[`.IF`](dot-if.md)<br/>[`.REPEAT`](dot-repeat.md)
+      [`.ENDIF`](dot-endif.md)\
+      [`.ENDW`](dot-endw.md)\
+      [`.IF`](dot-if.md)\
+      [`.REPEAT`](dot-repeat.md)
    :::column-end:::
    :::column span="":::
-      [`.UNTIL`](dot-until.md)<br/>[`.UNTILCXZ`](dot-untilcxz.md)<br/>[`.WHILE`](dot-while.md)
+      [`.UNTIL`](dot-until.md)\
+      [`.UNTILCXZ`](dot-untilcxz.md)\
+      [`.WHILE`](dot-while.md)
    :::column-end:::
 :::row-end:::
 
@@ -75,13 +100,22 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.ERR`](dot-err.md)<br/>[`.ERR2`](dot-err2.md)<br/>[`.ERRB`](dot-errb.md)<br/>[`.ERRDEF`](dot-errdef.md)
+      [`.ERR`](dot-err.md)\
+      [`.ERR2`](dot-err2.md)\
+      [`.ERRB`](dot-errb.md)\
+      [`.ERRDEF`](dot-errdef.md)
    :::column-end:::
    :::column span="":::
-      [`.ERRDIF`](dot-errdif.md)<br/>[`.ERRDIFI`](dot-errdif.md)<br/>[`.ERRE`](dot-erre.md)<br/>[`.ERRIDN`](dot-erridn.md)
+      [`.ERRDIF`](dot-errdif.md)\
+      [`.ERRDIFI`](dot-errdif.md)\
+      [`.ERRE`](dot-erre.md)\
+      [`.ERRIDN`](dot-erridn.md)
    :::column-end:::
    :::column span="":::
-      [`.ERRIDNI`](dot-erridn.md)<br/>[`.ERRNB`](dot-errnb.md)<br/>[`.ERRNDEF`](dot-errndef.md)<br/>[`.ERRNZ`](dot-errnz.md)
+      [`.ERRIDNI`](dot-erridn.md)\
+      [`.ERRNB`](dot-errnb.md)\
+      [`.ERRNDEF`](dot-errndef.md)\
+      [`.ERRNZ`](dot-errnz.md)
    :::column-end:::
 :::row-end:::
 
@@ -89,13 +123,26 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ALIGN`](align-masm.md)<br/>[`BYTE`](byte-masm.md)<br/>[`SBYTE`](sbyte-masm.md)<br/>[`DWORD`](dword.md)<br/>[`SDWORD`](sdword.md)<br/>[`EVEN`](even.md)
+      [`ALIGN`](align-masm.md)\
+      [`BYTE`](byte-masm.md)\
+      [`SBYTE`](sbyte-masm.md)\
+      [`DWORD`](dword.md)\
+      [`SDWORD`](sdword.md)\
+      [`EVEN`](even.md)
    :::column-end:::
    :::column span="":::
-      [`FWORD`](fword.md)<br/>[`LABEL`](label-masm.md)<br/>[`ORG`](org.md)<br/>[`QWORD`](qword.md)<br/>[`REAL4`](real4.md)
+      [`FWORD`](fword.md)\
+      [`LABEL`](label-masm.md)\
+      [`ORG`](org.md)\
+      [`QWORD`](qword.md)\
+      [`REAL4`](real4.md)
    :::column-end:::
    :::column span="":::
-      [`REAL8`](real8.md)<br/>[`REAL10`](real10.md)<br/>[`TBYTE`](tbyte.md)<br/>[`WORD`](word.md)<br/>[`SWORD`](sword.md)
+      [`REAL8`](real8.md)\
+      [`REAL10`](real10.md)\
+      [`TBYTE`](tbyte.md)\
+      [`WORD`](word.md)\
+      [`SWORD`](sword.md)
    :::column-end:::
 :::row-end:::
 
@@ -117,13 +164,24 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.CREF`](dot-cref.md)<br/>[`.LIST`](dot-list.md)<br/>[`.LISTALL`](dot-listall.md)<br/>[`.LISTIF`](dot-listif.md)<br/>[`.LISTMACRO`](dot-listmacro.md)
+      [`.CREF`](dot-cref.md)\
+      [`.LIST`](dot-list.md)\
+      [`.LISTALL`](dot-listall.md)\
+      [`.LISTIF`](dot-listif.md)\
+      [`.LISTMACRO`](dot-listmacro.md)
    :::column-end:::
    :::column span="":::
-      [`.LISTMACROALL`](dot-listmacroall.md)<br/>[`.NOCREF`](dot-nocref.md)<br/>[`.NOLIST`](dot-nolist.md)<br/>[`.NOLISTIF`](dot-nolistif.md)<br/>[`.NOLISTMACRO`](dot-nolistmacro.md)
+      [`.LISTMACROALL`](dot-listmacroall.md)\
+      [`.NOCREF`](dot-nocref.md)\
+      [`.NOLIST`](dot-nolist.md)\
+      [`.NOLISTIF`](dot-nolistif.md)\
+      [`.NOLISTMACRO`](dot-nolistmacro.md)
    :::column-end:::
    :::column span="":::
-      [`PAGE`](page.md)<br/>[`SUBTITLE`](subtitle.md)<br/>[`.TFCOND`](dot-tfcond.md)<br/>[`TITLE`](title.md)
+      [`PAGE`](page.md)\
+      [`SUBTITLE`](subtitle.md)\
+      [`.TFCOND`](dot-tfcond.md)\
+      [`TITLE`](title.md)
    :::column-end:::
 :::row-end:::
 
@@ -131,29 +189,43 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ENDM`](endm.md)<br/>[`EXITM`](exitm.md)
+      [`ENDM`](endm.md)\
+      [`EXITM`](exitm.md)
    :::column-end:::
    :::column span="":::
-      [`GOTO`](goto-masm.md)<br/>[`LOCAL`](local-masm.md)
+      [`GOTO`](goto-masm.md)\
+      [`LOCAL`](local-masm.md)
    :::column-end:::
    :::column span="":::
-      [`MACRO`](macro.md)<br/>[`PURGE`](purge.md)
+      [`MACRO`](macro.md)\
+      [`PURGE`](purge.md)
    :::column-end:::
 :::row-end:::
-
-<br/><br/>
 
 ## <a name="miscellaneous"></a>Çeşitli
 
 :::row:::
    :::column span="":::
-      [`ALIAS`](alias-masm.md)<br/>[`ASSUME`](assume.md)<br/>[`COMMENT`](comment-masm.md)<br/>[`ECHO`](echo.md)<br/>[`END`](end-masm.md)<br/>[`.FPO`](dot-fpo.md)
+      [`ALIAS`](alias-masm.md)\
+      [`ASSUME`](assume.md)\
+      [`COMMENT`](comment-masm.md)\
+      [`ECHO`](echo.md)\
+      [`END`](end-masm.md)\
+      [`.FPO`](dot-fpo.md)
    :::column-end:::
    :::column span="":::
-      [`INCLUDE`](include-masm.md)<br/>[`INCLUDELIB`](includelib-masm.md)<br/>[`MMWORD`](mmword.md)<br/>[`OPTION`](option-masm.md)<br/>[`POPCONTEXT`](popcontext.md)
+      [`INCLUDE`](include-masm.md)\
+      [`INCLUDELIB`](includelib-masm.md)\
+      [`MMWORD`](mmword.md)\
+      [`OPTION`](option-masm.md)\
+      [`POPCONTEXT`](popcontext.md)
    :::column-end:::
    :::column span="":::
-      [`PUSHCONTEXT`](pushcontext.md)<br/>[`.RADIX`](dot-radix.md)<br/>[`.SAFESEH`](dot-safeseh.md)<br/>[`XMMWORD`](xmmword.md)<br/>[`YMMWORD`](ymmword.md)
+      [`PUSHCONTEXT`](pushcontext.md)\
+      [`.RADIX`](dot-radix.md)\
+      [`.SAFESEH`](dot-safeseh.md)\
+      [`XMMWORD`](xmmword.md)\
+      [`YMMWORD`](ymmword.md)
    :::column-end:::
 :::row-end:::
 
@@ -161,7 +233,8 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ENDP`](endp.md)<br/>[`INVOKE`](invoke.md)
+      [`ENDP`](endp.md)\
+      [`INVOKE`](invoke.md)
    :::column-end:::
    :::column span="":::
       [`PROC`](proc.md)
@@ -175,13 +248,22 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.386`](dot-386.md)<br/>[`.386P`](dot-386p.md)<br/>[`.387`](dot-387.md)<br/>[`.486`](dot-486.md)
+      [`.386`](dot-386.md)\
+      [`.386P`](dot-386p.md)\
+      [`.387`](dot-387.md)\
+      [`.486`](dot-486.md)
    :::column-end:::
    :::column span="":::
-      [`.486P`](dot-486p.md)<br/>[`.586`](dot-586.md)<br/>[`.586P`](dot-586p.md)<br/>[`.686`](dot-686.md)
+      [`.486P`](dot-486p.md)\
+      [`.586`](dot-586.md)\
+      [`.586P`](dot-586p.md)\
+      [`.686`](dot-686.md)
    :::column-end:::
    :::column span="":::
-      [`.686P`](dot-686p.md)<br/>[`.K3D`](dot-k3d.md)<br/>[`.MMX`](dot-mmx.md)<br/>[`.XMM`](dot-xmm.md)
+      [`.686P`](dot-686p.md)\
+      [`.K3D`](dot-k3d.md)\
+      [`.MMX`](dot-mmx.md)\
+      [`.XMM`](dot-xmm.md)
    :::column-end:::
 :::row-end:::
 
@@ -189,13 +271,16 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ENDM`](endm.md)<br/>[`FOR`](for-masm.md)
+      [`ENDM`](endm.md)\
+      [`FOR`](for-masm.md)
    :::column-end:::
    :::column span="":::
-      [`FORC`](forc.md)<br/>[`GOTO`](goto-masm.md)
+      [`FORC`](forc.md)\
+      [`GOTO`](goto-masm.md)
    :::column-end:::
    :::column span="":::
-      [`REPEAT`](repeat.md)<br/>[`WHILE`](while-masm.md)
+      [`REPEAT`](repeat.md)\
+      [`WHILE`](while-masm.md)
    :::column-end:::
 :::row-end:::
 
@@ -203,10 +288,12 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`COMM`](comm.md)<br/>[`EXTERN`](extern-masm.md)
+      [`COMM`](comm.md)\
+      [`EXTERN`](extern-masm.md)
    :::column-end:::
    :::column span="":::
-      [`EXTERNDEF`](externdef.md)<br/>[`INCLUDELIB`](includelib-masm.md)
+      [`EXTERNDEF`](externdef.md)\
+      [`INCLUDELIB`](includelib-masm.md)
    :::column-end:::
    :::column span="":::
       [`PUBLIC`](public-masm.md)
@@ -217,13 +304,18 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.ALPHA`](dot-alpha.md)<br/>[`ASSUME`](assume.md)<br/>[`.DOSSEG`](dot-dosseg.md)
+      [`.ALPHA`](dot-alpha.md)\
+      [`ASSUME`](assume.md)\
+      [`.DOSSEG`](dot-dosseg.md)
    :::column-end:::
    :::column span="":::
-      [`END`](end-masm.md)<br/>[`ENDS`](ends-masm.md)<br/>[`GROUP`](group.md)
+      [`END`](end-masm.md)\
+      [`ENDS`](ends-masm.md)\
+      [`GROUP`](group.md)
    :::column-end:::
    :::column span="":::
-      [`SEGMENT`](segment.md)<br/>[`.SEQ`](dot-seq.md)
+      [`SEGMENT`](segment.md)\
+      [`.SEQ`](dot-seq.md)
    :::column-end:::
 :::row-end:::
 
@@ -231,13 +323,21 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`.CODE`](dot-code.md)<br/>[`.CONST`](dot-const.md)<br/>[`.DATA`](dot-data.md)<br/>[`.DATA?`](dot-data-q.md)
+      [`.CODE`](dot-code.md)\
+      [`.CONST`](dot-const.md)\
+      [`.DATA`](dot-data.md)\
+      [`.DATA?`](dot-data-q.md)
    :::column-end:::
    :::column span="":::
-      [`.DOSSEG`](dot-dosseg.md)<br/>[`.EXIT`](dot-exit.md)<br/>[`.FARDATA`](dot-fardata.md)<br/>[`.FARDATA?`](dot-fardata-q.md)
+      [`.DOSSEG`](dot-dosseg.md)\
+      [`.EXIT`](dot-exit.md)\
+      [`.FARDATA`](dot-fardata.md)\
+      [`.FARDATA?`](dot-fardata-q.md)
    :::column-end:::
    :::column span="":::
-      [`.MODEL`](dot-model.md)<br/>[`.STACK`](dot-stack.md)<br/>[`.STARTUP`](dot-startup.md)
+      [`.MODEL`](dot-model.md)\
+      [`.STACK`](dot-stack.md)\
+      [`.STARTUP`](dot-startup.md)
    :::column-end:::
 :::row-end:::
 
@@ -245,7 +345,8 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`CATSTR`](catstr.md)<br/>[`INSTR`](instr.md)
+      [`CATSTR`](catstr.md)\
+      [`INSTR`](instr.md)
    :::column-end:::
    :::column span="":::
       [`SIZESTR`](sizestr.md)
@@ -259,10 +360,12 @@ ms.locfileid: "86446456"
 
 :::row:::
    :::column span="":::
-      [`ENDS`](ends-masm.md)<br/>[`RECORD`](record-masm.md)
+      [`ENDS`](ends-masm.md)\
+      [`RECORD`](record-masm.md)
    :::column-end:::
    :::column span="":::
-      [`STRUCT`](struct-masm.md)<br/>[`TYPEDEF`](typedef-masm.md)
+      [`STRUCT`](struct-masm.md)\
+      [`TYPEDEF`](typedef-masm.md)
    :::column-end:::
    :::column span="":::
       [`UNION`](union.md)

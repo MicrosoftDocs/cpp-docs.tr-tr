@@ -1,23 +1,23 @@
 ---
-title: uısesgetlasterror (C++ com özniteliği)
+title: uısesgetlasterror (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.usesgetlasterror
 helpviewer_keywords:
 - usesgetlasterror attribute
 ms.assetid: d149e33d-35a7-46cb-9137-ae6883d86122
-ms.openlocfilehash: f58929db01a1710e811a973c0559ad29b242b4eb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e3d3c292554350d85296971a9bd3620909ef47c7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166139"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831638"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 
-Çağrıyı yapana, bu işlevi çağırırken bir hata oluşursa, çağıran daha sonra hata kodunu almak için `GetLastError` çağırabilir.
+Çağrıyı yapana, bu işlevi çağırırken bir hata oluşursa, çağıran daha sonra `GetLastError` hata kodunu almak için çağırabilirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [usesgetlasterror]
@@ -33,14 +33,12 @@ ms.locfileid: "80166139"
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|**module** özniteliği|
+|**Şunlara uygulanır**|**module** özniteliği|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

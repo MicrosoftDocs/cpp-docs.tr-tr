@@ -70,12 +70,12 @@ helpviewer_keywords:
 - std::numeric_limits [C++], tinyness_before
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
-ms.openlocfilehash: f0b33404f16df59e2cb73023f3539e87080734a1
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: eb2ee9bc6bc887ff6739c3da1bf2566dbdcbc016
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520609"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830689"
 ---
 # <a name="numeric_limits-class"></a>numeric_limits Sınıfı
 
@@ -101,7 +101,7 @@ Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlam
 
 ## <a name="static-functions-and-constants"></a>Statik Işlevler ve sabitler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[denorm_min](#denorm_min)|Sıfır dışında Normalleştirilmemiş değeri döndürür.|
 |[rakamlar](#digits)|Türün duyarlık kaybı olmadan temsil etmesi için kullanılan sayı sayısını döndürür.|
@@ -136,7 +136,7 @@ Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlam
 |[tinyness_before](#tinyness_before)|Bir türün, yuvarlama yapmadan önce normalleştirilmiş bir değer olarak temsil edilebilmesi için çok küçük olup olmadığını test eder.|
 |[tuzak](#traps)|Aritmetik özel durumlarla rapor veren yakalamaya bir tür için uygulanıp uygulanmadığını sınar.|
 
-### <a name="denorm_min"></a><a name="denorm_min"></a>denorm_min
+### <a name="denorm_min"></a><a name="denorm_min"></a> denorm_min
 
 Sıfır dışında Normalleştirilmemiş değeri döndürür.
 
@@ -150,7 +150,7 @@ Sıfırdan büyük olmayan en küçük değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-**`long double`**, **`double`** C++ derleyicisi ile aynıdır.
+**`long double`** , **`double`** C++ derleyicisi ile aynıdır.
 
 İşlevi, türü için en küçük değeri döndürür, bu, [has_denorm](#has_denorm) şuna eşit değilse [Min](#min) ile aynıdır `denorm_present` .
 
@@ -195,7 +195,7 @@ for long double objects is: 4.94066e-324
 0
 ```
 
-### <a name="digits"></a><a name="digits"></a>54
+### <a name="digits"></a><a name="digits"></a> 54
 
 Türün duyarlık kaybı olmadan temsil etmesi için kullanılan sayı sayısını döndürür.
 
@@ -239,7 +239,7 @@ int main( )
 63
 ```
 
-### <a name="digits10"></a><a name="digits10"></a>digits10
+### <a name="digits10"></a><a name="digits10"></a> digits10
 
 Türün duyarlık kaybı olmadan temsil edilebilmesi için ondalık basamakların sayısını döndürür.
 
@@ -283,7 +283,7 @@ int main( )
 The float is; 100000000
 ```
 
-### <a name="epsilon"></a><a name="epsilon"></a>Upsilon
+### <a name="epsilon"></a><a name="epsilon"></a> Upsilon
 
 İşlevi, 1 ile veri türü için gösterilebilir olan 1 ' den büyük en küçük değer arasındaki farkı döndürür.
 
@@ -335,7 +335,7 @@ The difference between 1 and the smallest value greater than 1
 for long double objects is: 2.22045e-016
 ```
 
-### <a name="has_denorm"></a><a name="has_denorm"></a>has_denorm
+### <a name="has_denorm"></a><a name="has_denorm"></a> has_denorm
 
 Bir türün Normalleştirilmemiş değerlerin izin verip içermediğini sınar.
 
@@ -381,7 +381,7 @@ Whether double objects allow denormalized values: 1
 Whether long int objects allow denormalized values: 0
 ```
 
-### <a name="has_denorm_loss"></a><a name="has_denorm_loss"></a>has_denorm_loss
+### <a name="has_denorm_loss"></a><a name="has_denorm_loss"></a> has_denorm_loss
 
 Doğruluk kaybı olup olmadığını test etmek yerine kesin olmayan bir kayıp olarak algılanıp algılanmadığını sınar.
 
@@ -427,7 +427,7 @@ Whether double objects can detect denormalized loss: 1
 Whether long int objects can detect denormalized loss: 0
 ```
 
-### <a name="has_infinity"></a><a name="has_infinity"></a>has_infinity
+### <a name="has_infinity"></a><a name="has_infinity"></a> has_infinity
 
 Bir türün pozitif sonsuzluk gösterimine sahip olup olmadığını sınar.
 
@@ -473,7 +473,7 @@ Whether double objects have infinity: 1
 Whether long int objects have infinity: 0
 ```
 
-### <a name="has_quiet_nan"></a><a name="has_quiet_nan"></a>has_quiet_NaN
+### <a name="has_quiet_nan"></a><a name="has_quiet_nan"></a> has_quiet_NaN
 
 Bir türün, sessiz olmayan bir sayı (NAN) için bir gösterimine sahip olup olmadığını test eder ve sinyal vermez.
 
@@ -519,7 +519,7 @@ Whether double objects have quiet_NaN: 1
 Whether long int objects have quiet_NaN: 0
 ```
 
-### <a name="has_signaling_nan"></a><a name="has_signaling_nan"></a>has_signaling_NaN
+### <a name="has_signaling_nan"></a><a name="has_signaling_nan"></a> has_signaling_NaN
 
 Bir türün sinyal için bir sayı değil (NAN) bir gösterimine sahip olup olmadığını sınar.
 
@@ -565,7 +565,7 @@ Whether double objects have a signaling_NaN: 1
 Whether long int objects have a signaling_NaN: 0
 ```
 
-### <a name="infinity"></a><a name="infinity"></a>sonsuz
+### <a name="infinity"></a><a name="infinity"></a> sonsuz
 
 Varsa, bir tür için pozitif sonsuzluk temsili.
 
@@ -619,7 +619,7 @@ The representation of infinity for type double is: inf
 The representation of infinity for type long double is: inf
 ```
 
-### <a name="is_bounded"></a><a name="is_bounded"></a>is_bounded
+### <a name="is_bounded"></a><a name="is_bounded"></a> is_bounded
 
 Bir türün temsil edilebilmesi için değer kümesinin sınırlı olup olmadığını test eder.
 
@@ -673,7 +673,7 @@ Whether long int objects have bounded set of representable values: 1
 Whether unsigned char objects have bounded set of representable values: 1
 ```
 
-### <a name="is_exact"></a><a name="is_exact"></a>is_exact
+### <a name="is_exact"></a><a name="is_exact"></a> is_exact
 
 Bir tür üzerinde yapılan hesaplamaların yuvarlama hatalarının boş olup olmadığını sınar.
 
@@ -727,7 +727,7 @@ Whether long int objects have calculations free of rounding errors: 1
 Whether unsigned char objects have calculations free of rounding errors: 1
 ```
 
-### <a name="is_iec559"></a><a name="is_iec559"></a>is_iec559
+### <a name="is_iec559"></a><a name="is_iec559"></a> is_iec559
 
 Bir türün ıEC 559 standartlarına uygun olup olmadığını sınar.
 
@@ -777,7 +777,7 @@ Whether int objects conform to iec559 standards: 0
 Whether unsigned char objects conform to iec559 standards: 0
 ```
 
-### <a name="is_integer"></a><a name="is_integer"></a>is_integer
+### <a name="is_integer"></a><a name="is_integer"></a> is_integer
 
 Bir türün tamsayı gösterimine sahip olup olmadığını sınar.
 
@@ -827,7 +827,7 @@ Whether int objects have an integral representation: 1
 Whether unsigned char objects have an integral representation: 1
 ```
 
-### <a name="is_modulo"></a><a name="is_modulo"></a>is_modulo
+### <a name="is_modulo"></a><a name="is_modulo"></a> is_modulo
 
 Bir **türün** bir modül gösterimine sahip olup olmadığını sınar.
 
@@ -877,7 +877,7 @@ Whether signed char objects have a modulo representation: 1
 Whether unsigned char objects have a modulo representation: 1
 ```
 
-### <a name="is_signed"></a><a name="is_signed"></a>is_signed
+### <a name="is_signed"></a><a name="is_signed"></a> is_signed
 
 Bir türün işaretli bir temsili olup olmadığını sınar.
 
@@ -927,7 +927,7 @@ Whether signed char objects have a signed representation: 1
 Whether unsigned char objects have a signed representation: 0
 ```
 
-### <a name="is_specialized"></a><a name="is_specialized"></a>is_specialized
+### <a name="is_specialized"></a><a name="is_specialized"></a> is_specialized
 
 Bir türün, Sınıf şablonunda tanımlanmış bir açık özelleşme sahip olup olmadığını sınar `numeric_limits` .
 
@@ -981,7 +981,7 @@ Whether int objects have an explicit specialization in the class: 1
 Whether int* objects have an explicit specialization in the class: 0
 ```
 
-### <a name="lowest"></a><a name="lowest"></a>Minimum
+### <a name="lowest"></a><a name="lowest"></a> Minimum
 
 En negatif sonlu değeri döndürür.
 
@@ -997,7 +997,7 @@ En negatif sonlu değeri döndürür.
 
 Tür için en negatif sonlu değeri döndürür (genellikle `min()` tamsayı türleri ve `-max()` kayan nokta türleri için). İse, dönüş değeri anlamlı olur `is_bounded` **`true`** .
 
-### <a name="max"></a><a name="max"></a>Biçimlendir
+### <a name="max"></a><a name="max"></a> Biçimlendir
 
 Bir tür için en fazla sonlu değeri döndürür.
 
@@ -1039,7 +1039,7 @@ int main() {
 }
 ```
 
-### <a name="max_digits10"></a><a name="max_digits10"></a>max_digits10
+### <a name="max_digits10"></a><a name="max_digits10"></a> max_digits10
 
 Türün iki farklı değerinin farklı ondalık gösterimlerine sahip olduğundan emin olmak için gereken ondalık basamak sayısını döndürür.
 
@@ -1055,7 +1055,7 @@ Türün iki farklı değerinin farklı ondalık gösterimlerine sahip olduğunda
 
 Üye, türün iki farklı değerinin farklı ondalık gösterimlerine sahip olduğundan emin olmak için gereken ondalık basamak sayısını depolar.
 
-### <a name="max_exponent"></a><a name="max_exponent"></a>max_exponent
+### <a name="max_exponent"></a><a name="max_exponent"></a> max_exponent
 
 Bu kuvvete bir taban tabanı oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en fazla pozitif integral üstel değeri döndürür.
 
@@ -1101,7 +1101,7 @@ The maximum radix-based exponent for type double is:  1024
 The maximum radix-based exponent for type long double is:  1024
 ```
 
-### <a name="max_exponent10"></a><a name="max_exponent10"></a>max_exponent10
+### <a name="max_exponent10"></a><a name="max_exponent10"></a> max_exponent10
 
 Bir taban on bu kuvvete döndürüldüğünde kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük pozitif integral üstel değeri döndürür.
 
@@ -1197,7 +1197,7 @@ The minimum value for type int is:  -2147483648
 The minimum value for type short int is:  -32768
 ```
 
-### <a name="min_exponent"></a><a name="min_exponent"></a>min_exponent
+### <a name="min_exponent"></a><a name="min_exponent"></a> min_exponent
 
 Bu kuvvete bir taban tabanı oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük negatif integral üstel değeri döndürür.
 
@@ -1243,7 +1243,7 @@ The minimum radix-based exponent for type double is:  -1021
 The minimum radix-based exponent for type long double is:  -1021
 ```
 
-### <a name="min_exponent10"></a><a name="min_exponent10"></a>min_exponent10
+### <a name="min_exponent10"></a><a name="min_exponent10"></a> min_exponent10
 
 On 'un bir tabanı bu kuvvete oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük negatif integral üssün birini döndürür.
 
@@ -1289,7 +1289,7 @@ The minimum base 10 exponent for type double is:  -307
 The minimum base 10 exponent for type long double is:  -307
 ```
 
-### <a name="quiet_nan"></a><a name="quiet_nan"></a>quiet_NaN
+### <a name="quiet_nan"></a><a name="quiet_nan"></a> quiet_NaN
 
 Tür için sessiz sayı değil (NAN) gösterimini döndürür.
 
@@ -1335,7 +1335,7 @@ The quiet NaN for type int is:  0
 The quiet NaN for type long double is:  1.#QNAN
 ```
 
-### <a name="radix"></a><a name="radix"></a>taban
+### <a name="radix"></a><a name="radix"></a> taban
 
 Bir türün temsili için kullanılan, Radix olarak adlandırılan integral tabanını döndürür.
 
@@ -1381,7 +1381,7 @@ The base for type int is:  2
 The base for type long double is:  2
 ```
 
-### <a name="round_error"></a><a name="round_error"></a>round_error
+### <a name="round_error"></a><a name="round_error"></a> round_error
 
 Tür için en fazla yuvarlama hatası döndürür.
 
@@ -1423,7 +1423,7 @@ The maximum rounding error for type int is:  0
 The maximum rounding error for type long double is:  0.5
 ```
 
-### <a name="round_style"></a><a name="round_style"></a>round_style
+### <a name="round_style"></a><a name="round_style"></a> round_style
 
 Bir uygulamanın kayan nokta değerini bir tamsayı değerine yuvarlamak için seçebileceği çeşitli yöntemleri açıklayan bir değer döndürür.
 
@@ -1470,7 +1470,7 @@ The rounding style for a double type is now: 1
 The rounding style for an int type is: 0
 ```
 
-### <a name="signaling_nan"></a><a name="signaling_nan"></a>signaling_NaN
+### <a name="signaling_nan"></a><a name="signaling_nan"></a> signaling_NaN
 
 Tür için bir sinyal (NAN) olarak bir sinyal gösterimini döndürür.
 
@@ -1510,7 +1510,7 @@ int main( )
 }
 ```
 
-### <a name="tinyness_before"></a><a name="tinyness_before"></a>tinyness_before
+### <a name="tinyness_before"></a><a name="tinyness_before"></a> tinyness_before
 
 Bir türün, yuvarlama yapmadan önce normalleştirilmiş bir değer olarak temsil edilebilmesi için çok küçük olup olmadığını test eder.
 
@@ -1520,7 +1520,7 @@ static constexpr bool tinyness_before = false;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** tür, yuvarlamadan önce küçük değerleri algılayabiliyorsa; **`false`**.
+**`true`** tür, yuvarlamadan önce küçük değerleri algılayabiliyorsa; **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -1560,7 +1560,7 @@ Whether long int types can detect tinyness before rounding: 0
 Whether unsigned char types can detect tinyness before rounding: 0
 ```
 
-### <a name="traps"></a><a name="traps"></a>tuzak
+### <a name="traps"></a><a name="traps"></a> tuzak
 
 Aritmetik özel durumlarla rapor veren yakalamaya bir tür için uygulanıp uygulanmadığını sınar.
 

@@ -1,5 +1,5 @@
 ---
-title: Hizmet Eşleme Makroları
+title: Hizmet Eşlemesi makrolar
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::BEGIN_SERVICE_MAP
@@ -7,29 +7,29 @@ f1_keywords:
 - atlcom/ATL::SERVICE_ENTRY
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-ms.openlocfilehash: eb2fe41c79135a7ac2ced9bc3242b070170716b9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1fa163098d89dd949c17ee7cd5e4ddc46cd2a091
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325937"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835213"
 ---
-# <a name="service-map-macros"></a>Hizmet Eşleme Makroları
+# <a name="service-map-macros"></a>Hizmet Eşlemesi makrolar
 
-Bu makrolar hizmet eşlemlerini ve girişleri tanımlar.
+Bu makrolar hizmet haritaları ve girdilerini tanımlar.
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[BEGIN_SERVICE_MAP](#begin_service_map)|Bir ATL hizmet haritasının başlangıcını işaretler.|
-|[END_SERVICE_MAP](#end_service_map)|ATL hizmet haritasının sonunu işaretler.|
-|[SERVICE_ENTRY](#service_entry)|Nesnenin belirli bir hizmet kimliğini desteklediğini gösterir.|
-|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|[IServiceProviderImpl::QueryService'i](#queryservice) belirtilen nesneye zincirleme olarak bildirir.|
+|[BEGIN_SERVICE_MAP](#begin_service_map)|ATL hizmeti eşlemesinin başlangıcını işaretler.|
+|[END_SERVICE_MAP](#end_service_map)|ATL hizmeti eşlemesinin sonunu işaretler.|
+|[SERVICE_ENTRY](#service_entry)|Nesnenin belirli bir hizmet KIMLIĞINI desteklediğini gösterir.|
+|[SERVICE_ENTRY_CHAIN](#service_entry_chain)|[IServiceProviderImpl:: QueryService](#queryservice) ' i belirtilen nesneye zincirye yönlendirir.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="begin_service_map"></a><a name="begin_service_map"></a>BEGIN_SERVICE_MAP
+## <a name="begin_service_map"></a><a name="begin_service_map"></a> BEGIN_SERVICE_MAP
 
 Hizmet haritasının başlangıcını işaretler.
 
@@ -39,22 +39,22 @@ BEGIN_SERVICE_MAP(theClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*theClass*<br/>
-[içinde] Hizmet eşlemi içeren sınıfı belirtir.
+*Sınıf*<br/>
+'ndaki Hizmet eşlemesini içeren sınıfı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-COM nesnenizde servis sağlayıcı işlevini uygulamak için hizmet eşlemi'ni kullanın. İlk olarak, [iServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md)sınıf türetmek gerekir. İki tür giriş vardır:
+COM nesneniz üzerinde hizmet sağlayıcısı işlevselliği uygulamak için hizmet haritasını kullanın. İlk olarak, sınıfınızı [IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md)konumundan türemelisiniz. İki tür giriş vardır:
 
-- [SERVICE_ENTRY](#service_entry)   Belirtilen hizmet kimliği (SID) desteğini gösterir.
+- [SERVICE_ENTRY](#service_entry)   Belirtilen hizmet KIMLIĞI (SID) için desteği belirtir.
 
-- [SERVICE_ENTRY_CHAIN](#service_entry_chain)   [IServiceProviderImpl'e bildirir::QueryService'i](#queryservice) başka bir nesneye zincirlemek için.
+- [SERVICE_ENTRY_CHAIN](#service_entry_chain)   [IServiceProviderImpl:: QueryService](#queryservice) ' i başka, belirtilen bir nesneye zincirine yönlendirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_COM#57](../../atl/codesnippet/cpp/service-map-macros_1.h)]
 
-## <a name="end_service_map"></a><a name="end_service_map"></a>END_SERVICE_MAP
+## <a name="end_service_map"></a><a name="end_service_map"></a> END_SERVICE_MAP
 
 Hizmet haritasının sonunu işaretler.
 
@@ -66,9 +66,9 @@ END_SERVICE_MAP()
 
 [BEGIN_SERVICE_MAP](#begin_service_map)için örneğe bakın.
 
-## <a name="service_entry"></a><a name="service_entry"></a>SERVICE_ENTRY
+## <a name="service_entry"></a><a name="service_entry"></a> SERVICE_ENTRY
 
-Nesnenin *SID*tarafından belirtilen hizmet id'ini desteklediğini gösterir.
+Nesnenin *SID*tarafından belirtilen hizmet kimliğini desteklediğini belirtir.
 
 ```
 SERVICE_ENTRY( SID )
@@ -77,15 +77,15 @@ SERVICE_ENTRY( SID )
 ### <a name="parameters"></a>Parametreler
 
 *SID*<br/>
-Servis kimliği.
+Hizmet KIMLIĞI.
 
 ### <a name="example"></a>Örnek
 
 [BEGIN_SERVICE_MAP](#begin_service_map)için örneğe bakın.
 
-## <a name="service_entry_chain"></a><a name="service_entry_chain"></a>SERVICE_ENTRY_CHAIN
+## <a name="service_entry_chain"></a><a name="service_entry_chain"></a> SERVICE_ENTRY_CHAIN
 
-[IServiceProviderImpl talimatlar::QueryService](#queryservice) *punk*tarafından belirtilen nesneye zincir .
+[Ivıceproviderımpl:: QueryService](#queryservice) , *punk*tarafından belirtilen nesneye zincirde yönlendirir.
 
 ```
 SERVICE_ENTRY_CHAIN( punk )
@@ -93,16 +93,16 @@ SERVICE_ENTRY_CHAIN( punk )
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-Zincirleme için **IUnknown** arabirimi için bir işaretçi.
+*punk dili*<br/>
+Zincirlenen **IUnknown** arabirimine yönelik bir işaretçi.
 
 ### <a name="example"></a>Örnek
 
 [BEGIN_SERVICE_MAP](#begin_service_map)için örneğe bakın.
 
-## <a name="iserviceproviderimplqueryservice"></a><a name="queryservice"></a>IServiceProviderImpl::QueryService
+## <a name="iserviceproviderimplqueryservice"></a><a name="queryservice"></a> IServiceProviderImpl:: QueryService
 
-Belirtilen hizmeti oluşturur veya erişir ve bir arabirim işaretçisini hizmet için belirtilen arabirime döndürür.
+Belirtilen hizmeti oluşturur veya erişir ve hizmet için belirtilen arabirime bir arabirim işaretçisi döndürür.
 
 ```
 STDMETHOD(QueryService)(
@@ -114,13 +114,13 @@ STDMETHOD(QueryService)(
 ### <a name="parameters"></a>Parametreler
 
 *guidService*<br/>
-[içinde] Bir hizmet tanımlayıcısı (SID) için işaretçi.
+'ndaki Hizmet tanımlayıcısına (SID) yönelik işaretçi.
 
-*Riid*<br/>
-[içinde] Arayanın erişilen arabirimin tanımlayıcısı.
+*riıd*<br/>
+'ndaki Çağıranın erişim kazanabileceği arabirimin tanımlayıcısı.
 
 *ppvObj*<br/>
-[çıkış] İstenen arabirime dolaylı işaretçi.
+dışı İstenen arabirime dolaylı işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -129,26 +129,26 @@ Döndürülen HRESULT değeri aşağıdakilerden biridir:
 |Döndürülen değer|Anlamı|
 |------------------|-------------|
 |S_OK|Hizmet başarıyla oluşturuldu veya alındı.|
-|E_ınvalıdarg|Bağımsız değişkenlerden biri veya birkaçı geçersizdir.|
-|E_outofmemory|Bellek hizmeti oluşturmak için yetersizdir.|
-|E_unexpected|Bilinmeyen bir hata oluştu.|
-|E_noınterface|İstenen arabirim bu hizmetin bir parçası değildir veya hizmet bilinmiyor.|
+|E_INVALIDARG|Bağımsız değişkenlerden biri veya birkaçı geçersiz.|
+|E_OUTOFMEMORY|Bellek, hizmeti oluşturmak için yeterli değil.|
+|E_UNEXPECTED|Bilinmeyen bir hata oluştu.|
+|E_NOINTERFACE|İstenen arabirim bu hizmetin bir parçası değil veya hizmet bilinmiyor.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`QueryService`belirtilen hizmette istenen arabirime dolaylı bir işaretçi döndürür. Arayan, artık gerekli olmadığında bu işaretçiyi serbest bırakmakla yükümlüdür.
+`QueryService` belirtilen hizmette istenen arabirime dolaylı bir işaretçi döndürür. Çağıran, Bu işaretçinin artık gerekli olmadığı durumlarda serbest bırakılmasından sorumludur.
 
-`QueryService`Aradığınızda, hem bir hizmet tanımlayıcısı *(guidService)* hem de bir arayüz tanımlayıcısını *(riid)* geçersiniz. *GuidService,* erişmek istediğiniz hizmeti belirtir ve *riid* hizmetin bir parçası olan bir arabirimi tanımlar. Karşılığında, arabirime dolaylı bir işaretçi alırsınız.
+`QueryService`' İ çağırdığınızda, hem bir hizmet tanımlayıcısı (*guidService*) hem de arabirim tanımlayıcısı (*riıd*) iletirsiniz. *GuidService* , erişmek istediğiniz hizmeti belirtir ve *riıd* hizmetin bir parçası olan bir arabirimi tanımlar. Sonuç olarak, arabirime dolaylı bir işaretçi alırsınız.
 
 Arabirimi uygulayan nesne, diğer hizmetlerin parçası olan arabirimleri de uygulayabilir. Aşağıdaki topluluklara bir göz atın:
 
-- Bu arabirimlerden bazıları isteğe bağlı olabilir. Hizmet açıklamasında tanımlanan tüm arabirimler, hizmetin her uygulamasında veya döndürülen her nesnede mutlaka bulunmaz.
+- Bu arabirimlerin bazıları isteğe bağlı olabilir. Hizmet açıklamasında tanımlanmış arabirimlerin hepsi hizmetin her uygulamasında veya döndürülen tüm nesneler üzerinde bulunmalıdır.
 
-- Farklı bir `QueryInterface`hizmet tanımlayıcısı geçen aramalar aksine mutlaka farklı bir Bileşen Nesne Modeli (COM) nesne döndürülür anlamına gelmez.
+- ' A yapılan çağrıların aksine `QueryInterface` , farklı bir hizmet tanımlayıcısının geçirilmesi farklı bir bileşen nesne modeli (com) nesnesinin döndürüldüğü anlamına gelmez.
 
 - Döndürülen nesne, hizmet tanımının bir parçası olmayan ek arabirimlere sahip olabilir.
 
-arabirimin uygulanması iki hizmet arasında ortak bir şey olmayabilir olsa da, SID_SMyService ve SID_SYourService gibi iki farklı hizmet, her ikisi de aynı arabirimin kullanımını belirtebilir. (SID_SMyService, IID_IDispatch) `QueryService` için yapılan bir çağrı (SID_SYourService, `QueryService` IID_IDispatch) farklı bir nesne döndürebileceğinden, bu işe yarar. Farklı bir hizmet tanımlayıcısı belirttiğinizde nesne kimliği kabul edilmez.
+SID_SMyService ve SID_SYourService gibi iki farklı hizmet, her ikisi de aynı arabirimin kullanımını belirtebilir, ancak bu, arabirimin uygulanması iki hizmet arasında ortak hiçbir şey yapmayabilir. Bu, `QueryService` (SID_SMyService, IID_IDispatch) öğesine yapılan bir çağrı ( `QueryService` SID_SYourService, IID_IDispatch) öğesinden farklı bir nesne döndürebileceğinden, bu işe yarar. Farklı bir hizmet tanımlayıcısı belirttiğinizde nesne kimliği kabul edilmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

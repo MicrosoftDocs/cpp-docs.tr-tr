@@ -1,23 +1,23 @@
 ---
-title: iid_is (C++ com özniteliği)
+title: iid_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.iid_is
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: 627ecff4835386dc70a9f3dfac0500404a84eefe
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a8fe8c7481cd251baff65293607733573f46ea6
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167998"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832223"
 ---
 # <a name="iid_is"></a>iid_is
 
 Bir arabirim işaretçisi tarafından işaret edilen COM arabiriminin IID 'sini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ iid_is("expression") ]
@@ -30,7 +30,7 @@ Bir arabirim işaretçisi tarafından işaret edilen bir COM arabiriminin IID ö
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İid_is** C++ özniteliği [iid_is](/windows/win32/Midl/iid-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**İid_is** C++ özniteliği, [iid_is](/windows/win32/Midl/iid-is) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -53,18 +53,16 @@ __interface IFireTabCtrl : IDispatch
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Arabirim parametresi, veri üyesi|
+|**Şunlara uygulanır**|Arabirim parametresi, veri üyesi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)
+[Parametre öznitelikleri](parameter-attributes.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - std::raw_storage_iterator [C++], element_type
 - std::raw_storage_iterator [C++], iter_type
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
-ms.openlocfilehash: 062a3db5c28bc463d6346a26cf1385adecd41183
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e5423d3b0801570167e1e0424aad18b9e8f74e7c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217642"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831430"
 ---
 # <a name="raw_storage_iterator-class"></a>raw_storage_iterator Sınıfı
 
@@ -46,26 +46,26 @@ Bu bağdaştırıcı sınıfı, bellek ayırmayı ve nesne oluşturmayı ayırma
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[raw_storage_iterator](#raw_storage_iterator)|Belirtilen temel alınan çıkış yineleyicisini içeren bir ham depolama yineleyici oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[element_type](#element_type)|Ham depolama yineleyici depolanacak bir öğeyi açıklayan bir tür sağlar.|
 |[iter_type](#iter_type)|Ham depolama yineleyici içeren bir yineleyiciyi açıklayan bir tür sağlar.|
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işlecinde](#op_star)|Çıkış Yineleyici ifadesini uygulamak için kullanılan bir başvuru kaldırma işleci \* `ii`  =  `x` .|
 |[işleç =](#op_eq)|\* `i`  =  `x` Bellekte depolamaya yönelik ham depolama yineleyici ifadesini uygulamak için kullanılan atama işleci.|
 |[işleç + +](#op_add_add)|Ham depolama yineleyiciler için preıncrement ve postıncrement işleçleri.|
 
-### <a name="element_type"></a><a name="element_type"></a>element_type
+### <a name="element_type"></a><a name="element_type"></a> element_type
 
 Ham depolama yineleyici depolanacak bir öğeyi açıklayan bir tür sağlar.
 
@@ -77,7 +77,7 @@ typedef Type element_type;
 
 Tür, raw_storage_iterator sınıfı şablon parametresi için bir eş anlamlı `Type` .
 
-### <a name="iter_type"></a><a name="iter_type"></a>iter_type
+### <a name="iter_type"></a><a name="iter_type"></a> iter_type
 
 Ham depolama yineleyici içeren bir yineleyiciyi açıklayan bir tür sağlar.
 
@@ -89,7 +89,7 @@ typedef ForwardIterator iter_type;
 
 Tür, şablon parametresi için bir eş anlamlı `ForwardIterator` .
 
-### <a name="operator"></a><a name="op_star"></a>işlecinde\*
+### <a name="operator"></a><a name="op_star"></a> işlecinde\*
 
 Ham depolama yineleyici ifadesi \* *II*  =  *x*'i uygulamak için kullanılan bir başvuru kaldırma işleci.
 
@@ -157,7 +157,7 @@ Copying 5
 Constructing 5
 ```
 
-### <a name="operator"></a><a name="op_eq"></a>işleç =
+### <a name="operator"></a><a name="op_eq"></a> işleç =
 
 \* *i*  =  Bellekte depolamaya yönelik ham depolama yineleyici ifadesi ı*x* 'i uygulamak için kullanılan atama işleci.
 
@@ -231,7 +231,7 @@ Copying 5
 Constructing 5
 ```
 
-### <a name="operator"></a><a name="op_add_add"></a>işleç + +
+### <a name="operator"></a><a name="op_add_add"></a> işleç + +
 
 Ham depolama yineleyiciler için preıncrement ve postıncrement işleçleri.
 
@@ -288,7 +288,7 @@ array 3 = 6
 array 4 = 8
 ```
 
-### <a name="raw_storage_iterator"></a><a name="raw_storage_iterator"></a>raw_storage_iterator
+### <a name="raw_storage_iterator"></a><a name="raw_storage_iterator"></a> raw_storage_iterator
 
 Belirtilen temel alınan çıkış yineleyicisini içeren bir ham depolama yineleyici oluşturur.
 

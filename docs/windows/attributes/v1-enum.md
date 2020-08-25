@@ -1,23 +1,23 @@
 ---
-title: v1_enum (C++ com özniteliği)
+title: v1_enum (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.v1_enum
 helpviewer_keywords:
 - v1_enum attribute
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
-ms.openlocfilehash: 1a189f6f1c5ef9d4ae77df9f1eda3f3671ddaf52
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6529a32b0bfe2de09191e9cced8f6bd98e7ffdcc
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166113"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832990"
 ---
 # <a name="v1_enum"></a>v1_enum
 
 Belirtilen numaralandırılmış türün 16 bit varsayılan yerine 32 bitlik bir varlık olarak aktarılacağını yönlendirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [v1_enum]
@@ -25,7 +25,7 @@ Belirtilen numaralandırılmış türün 16 bit varsayılan yerine 32 bitlik bir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**V1_enum** C++ özniteliği [v1_enum](/windows/win32/Midl/v1-enum) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**V1_enum** C++ özniteliği, [v1_enum](/windows/win32/Midl/v1-enum) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -44,18 +44,16 @@ enum eList {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Numaralandırılmış tür|
+|**Şunlara uygulanır**|Numaralandırılmış tür|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: ed00d8e3a94b03a5d44194b880218ded7a6dc0e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 052cbba69aa99d33de963a3e360e6951a6006bec
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182505"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831469"
 ---
 # <a name="function-class"></a>function Sınıfı
 
@@ -91,13 +91,13 @@ Sınıf şablonu, çağrı imzası olan bir çağrı sarmalayıcısıdır `Ret(T
 
 Bazı üye işlevleri, istenen hedef nesneyi isimeden bir işlenen alır. Böyle bir işleneni birkaç şekilde belirtebilirsiniz:
 
-`fn`--çağrılabilir nesne `fn` ; çağrısından sonra `function` nesne bir kopyasını tutar`fn`
+`fn` --çağrılabilir nesne `fn` ; çağrısından sonra `function` nesne bir kopyasını tutar `fn`
 
-`fnref`--tarafından adlandırılan çağrılabilir nesne, `fnref.get()` çağrısından sonra `function` nesne için bir başvuru tutar`fnref.get()`
+`fnref` --tarafından adlandırılan çağrılabilir nesne, `fnref.get()` çağrısından sonra `function` nesne için bir başvuru tutar `fnref.get()`
 
 `right`--varsa, nesne tarafından tutulan çağrılabilir nesne `function``right`
 
-`npc`--boş bir işaretçi; çağrıdan sonra `function` nesnesi boş olur
+`npc` --boş bir işaretçi; çağrıdan sonra `function` nesnesi boş olur
 
 Her durumda, `INVOKE(f, t1, t2, ..., tN)` , `f` çağrılabilir nesne olduğu ve `t1, t2, ..., tN` değerleri sırasıyla lvalues olduğunda, `T1, T2, ..., TN` doğru biçimlendirilmiş ve void olmayan, ile dönüştürülebilir olması gerekir `Ret` `Ret` .
 
@@ -107,19 +107,19 @@ Boş bir `function` nesne çağrılabilir bir nesne veya çağrılabilir bir nes
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[çalışmayacaktır](#function)|Boş olan veya sabit imzaya sahip bir rastgele türdeki çağrılabilir nesneyi depolayan bir sarmalayıcı oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[result_type](#result_type)|Depolanan çağrılabilir nesnenin dönüş türü.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[assign (atamak)](#assign) |Bu işlev nesnesine çağrılabilir bir nesne atar.|
 |[Kur](#swap)|İki çağrılabilir nesne takas et.|
@@ -128,13 +128,13 @@ Boş bir `function` nesne çağrılabilir bir nesne veya çağrılabilir bir nes
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç belirtilmemiş](#op_unspecified)|Depolanan çağrılabilir nesne varsa sınar.|
 |[operator ()](#op_call)|Çağrılabilir bir nesne çağırır.|
 |[işleç =](#op_eq)|Depolanan çağrılabilir nesneyi değiştirir.|
 
-## <a name="assign"></a><a name="assign"></a>ata
+## <a name="assign"></a><a name="assign"></a> ata
 
 Bu işlev nesnesine çağrılabilir bir nesne atar.
 
@@ -282,7 +282,7 @@ f is non-empty (correct).
 g is empty (correct).
 ```
 
-## <a name="operator-unspecified"></a><a name="op_unspecified"></a>işleç belirtilmemiş
+## <a name="operator-unspecified"></a><a name="op_unspecified"></a> işleç belirtilmemiş
 
 Depolanan çağrılabilir nesne varsa sınar.
 
@@ -324,7 +324,7 @@ not empty == false
 not empty == true
 ```
 
-## <a name="operator"></a><a name="op_call"></a>operator ()
+## <a name="operator"></a><a name="op_call"></a> operator ()
 
 Çağrılabilir bir nesne çağırır.
 
@@ -375,7 +375,7 @@ empty == false
 val == -3
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Depolanan çağrılabilir nesneyi değiştirir.
 
@@ -457,7 +457,7 @@ empty == false
 val == -3
 ```
 
-## <a name="result_type"></a><a name="result_type"></a>result_type
+## <a name="result_type"></a><a name="result_type"></a> result_type
 
 Depolanan çağrılabilir nesnenin dönüş türü.
 
@@ -499,7 +499,7 @@ empty == false
 val == -3
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki çağrılabilir nesne takas et.
 
@@ -558,7 +558,7 @@ empty == false
 val == -3
 ```
 
-## <a name="target"></a><a name="target"></a>hedef
+## <a name="target"></a><a name="target"></a> hedef
 
 Depolanan çağrılabilir nesne belirtilen şekilde çağrılabilir ise sınar.
 
@@ -619,7 +619,7 @@ empty == true
 no target == true
 ```
 
-## <a name="target_type"></a><a name="target_type"></a>target_type
+## <a name="target_type"></a><a name="target_type"></a> target_type
 
 Çağrılabilir nesne üzerindeki tür bilgilerini alır.
 

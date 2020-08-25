@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-ms.openlocfilehash: f76682b14e49e5f699144674da33b0826975e2d6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5a4989b9ac29e6a35e50479343d6bcf5a39ae1b0
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217343"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831742"
 ---
 # <a name="weak_ptr-class"></a>weak_ptr Sınıfı
 
@@ -62,7 +62,7 @@ Nesneler tarafından denetlenen iki veya daha fazla kaynak, `shared_ptr` karşı
 
 ## <a name="members"></a>Üyeler
 
-|||
+|Ad|Açıklama|
 |-|-|
 | **Oluşturucular** | |
 |[weak_ptr](#weak_ptr)|Bir oluşturur `weak_ptr` .|
@@ -80,7 +80,7 @@ Nesneler tarafından denetlenen iki veya daha fazla kaynak, `shared_ptr` karşı
 | **İşleçler** | |
 |[işleç =](#op_eq)|Sahip olunan kaynağı değiştirir.|
 
-## <a name="element_type"></a><a name="element_type"></a>element_type
+## <a name="element_type"></a><a name="element_type"></a> element_type
 
 Öğenin türü.
 
@@ -117,7 +117,7 @@ int main()
 *wp0.lock() == 5
 ```
 
-## <a name="expired"></a><a name="expired"></a>aşıldığı
+## <a name="expired"></a><a name="expired"></a> aşıldığı
 
 Sahipliğin süresi dolmuşsa, yani başvurulan nesnenin silindiğini sınar.
 
@@ -166,7 +166,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="lock"></a><a name="lock"></a>ine
+## <a name="lock"></a><a name="lock"></a> ine
 
 Bir `shared_ptr` kaynağın sahipliğini paylaşan bir alır.
 
@@ -215,7 +215,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Sahip olunan kaynağı değiştirir.
 
@@ -273,7 +273,7 @@ int main()
 *wp1.lock() == 10
 ```
 
-## <a name="owner_before"></a><a name="owner_before"></a>owner_before
+## <a name="owner_before"></a><a name="owner_before"></a> owner_before
 
 **`true`** Bu, `weak_ptr` belirtilen işaretçiden önce (veya ondan küçük) sıralanmış ise döndürür.
 
@@ -294,7 +294,7 @@ Bir veya öğesine lvalue başvurusu `shared_ptr` `weak_ptr` .
 
 Şablon üye işlevi, **`true`** **`*this`** *PTR*'den önce Sıralansa, döndürür.
 
-## <a name="reset"></a><a name="reset"></a>döndürmek
+## <a name="reset"></a><a name="reset"></a> döndürmek
 
 Sahip olunan kaynağı serbest bırakır.
 
@@ -336,7 +336,7 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki `weak_ptr` nesneyi değiştirir.
 
@@ -405,7 +405,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="use_count"></a><a name="use_count"></a>use_count
+## <a name="use_count"></a><a name="use_count"></a> use_count
 
 `shared_ptr`Paylaşılan kaynağa sahip olan nesne sayısını sayar.
 
@@ -445,7 +445,7 @@ wp.use_count() == 1
 wp.use_count() == 2
 ```
 
-## <a name="weak_ptr"></a><a name="weak_ptr"></a>weak_ptr
+## <a name="weak_ptr"></a><a name="weak_ptr"></a> weak_ptr
 
 Bir oluşturur `weak_ptr` .
 
@@ -514,7 +514,7 @@ wp0.expired() == true
 *wp2.lock() == 5
 ```
 
-## <a name="weak_ptr"></a><a name="tilde-weak_ptr"></a>~ weak_ptr
+## <a name="weak_ptr"></a><a name="tilde-weak_ptr"></a> ~ weak_ptr
 
 Yok eder `weak_ptr` .
 

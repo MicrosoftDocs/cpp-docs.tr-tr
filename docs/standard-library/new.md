@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-ms.openlocfilehash: 2a35a7b4d9581a11d889f3e66d0179c553c4fc25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0fe2d0e57c0746f25187028b85157d66ee736ca4
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212169"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836432"
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 
@@ -31,13 +31,13 @@ Bu üst bilgide belirtilen işlevlerden bazıları değiştirilebilir. Uygulama,
 
 ### <a name="objects"></a>Nesneler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[nothrow](../standard-library/new-functions.md#nothrow)|Ve sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar **`nothrow`** **`new`** **`delete`** .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[new_handler](../standard-library/new-typedefs.md#new_handler)|Yeni işleyici olarak kullanım için uygun bir işleve işaret eden bir tür.|
 |[hardware_constructive_interference_size](../standard-library/new-typedefs.md#hardware_destructive_interference_size)||
@@ -45,7 +45,7 @@ Bu üst bilgide belirtilen işlevlerden bazıları değiştirilebilir. Uygulama,
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[get_new_handler](../standard-library/new-functions.md#get_new_handler)||
 |[eksik](../standard-library/new-functions.md#launder)||
@@ -53,22 +53,22 @@ Bu üst bilgide belirtilen işlevlerden bazıları değiştirilebilir. Uygulama,
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[delete işleci](../standard-library/new-operators.md#op_delete)|Nesnelerin ayrı olarak depolanmasını serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.|
-|[Delete&#91;&#93;işleci](../standard-library/new-operators.md#op_delete_arr)|Bir nesne dizisi için depolamayı serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.|
+|[Delete&#91;&#93;işleci ](../standard-library/new-operators.md#op_delete_arr)|Bir nesne dizisi için depolamayı serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.|
 |[New işleci](../standard-library/new-operators.md#op_new)|Ayrı nesneler için depolama alanı ayırmak üzere yeni bir ifade tarafından çağrılan işlev.|
 |[New işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|Bir nesne dizisi için depolama alanı ayırmak üzere yeni bir ifade tarafından çağrılan işlev.|
 
 ### <a name="enums"></a>Numaralandırmalar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[align_val_t](../standard-library/new-operators.md#op_align_val_t)||
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[bad_alloc sınıfı](../standard-library/bad-alloc-class.md)|Sınıfı, bir ayırma isteğinin başarılı olmadığını göstermek için oluşturulan bir özel durum tanımlar.|
 |[bad_array_new_length sınıfı](../standard-library/bad-array-new-length.md)||

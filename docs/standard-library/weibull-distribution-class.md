@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::weibull_distribution [C++], param_type
 - std::weibull_distribution [C++], param_type
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-ms.openlocfilehash: 73b307fe0231b549a41accd48bba2a6f017486e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d16c1f7f864d52222a7fd4e1e2a5e543b8c21809
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224519"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831703"
 ---
 # <a name="weibull_distribution-class"></a>weibull_distribution Sınıfı
 
@@ -77,10 +77,8 @@ Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiç sağlanmazsa, Weibull dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[weibull_distribution](#weibull_distribution)|`weibull_distribution::a`|`weibull_distribution::param`|
-|`weibull_distribution::operator()`|`weibull_distribution::b`|[param_type](#param_type)|
+[weibull_distribution](#weibull_distribution)\
+[param_type](#param_type)|
 
 Özelliği işlevleri `a()` ve `b()` depolanan dağıtım parametreleri *a* ve *b*için ilgili değerlerini döndürür.
 
@@ -155,7 +153,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıktı
+## <a name="output"></a>Çıkış
 
 İlk çalıştırma:
 
@@ -213,7 +211,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="weibull_distributionweibull_distribution"></a><a name="weibull_distribution"></a>weibull_distribution:: weibull_distribution
+## <a name="weibull_distributionweibull_distribution"></a><a name="weibull_distribution"></a> weibull_distribution:: weibull_distribution
 
 ```cpp
 explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
@@ -233,13 +231,13 @@ explicit weibull_distribution(const param_type& parm);
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < a` '`0.0 < b`
+**Önkoşul:** `0.0 < a` ' `0.0 < b`
 
 İlk Oluşturucu, saklı değeri `a` *a* değerini tutan ve saklı `b` değeri *b*değerini tutan bir nesne oluşturur.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="weibull_distributionparam_type"></a><a name="param_type"></a>weibull_distribution::p aram_type
+## <a name="weibull_distributionparam_type"></a><a name="param_type"></a> weibull_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 
@@ -268,7 +266,7 @@ struct param_type {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < a` '`0.0 < b`
+**Önkoşul:** `0.0 < a` ' `0.0 < b`
 
 Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 

@@ -1,23 +1,23 @@
 ---
-title: LCID (C++ com özniteliği)
+title: LCID (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.lcid
 helpviewer_keywords:
 - LCID attribute
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
-ms.openlocfilehash: bb9e44d34c675e4f5d955c5f422a6dd35259ec8d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7533cd9b269a879c5c2f061dcdfc632b1b27c871
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214805"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834186"
 ---
 # <a name="lcid"></a>lcid
 
 Bir işleve yerel ayar tanımlayıcıyı geçirmenize olanak sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [lcid]
@@ -25,7 +25,7 @@ Bir işleve yerel ayar tanımlayıcıyı geçirmenize olanak sağlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**LCID** C++ özniteliği, [LCID](/windows/win32/Midl/lcid) MIDL özniteliğinin işlevlerini uygular. Bir kitaplık bloğu için yerel ayar uygulamak istiyorsanız, [Modül](module-cpp.md) özniteliğinde **LCID =** `lcid` parametresini kullanın.
+**LCID** C++ özniteliği, [LCID](/windows/win32/Midl/lcid) MIDL özniteliğinin işlevlerini uygular. Bir kitaplık bloğu için yerel ayar uygulamak istiyorsanız, modül özniteliğinde **LCID =** `lcid` parametresini kullanın [module](module-cpp.md) .
 
 ## <a name="example"></a>Örnek
 
@@ -44,18 +44,16 @@ __interface IStatic {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Arabirim parametresi|
+|**Şunlara uygulanır**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)
+[Parametre öznitelikleri](parameter-attributes.md)

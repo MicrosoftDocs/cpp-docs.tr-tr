@@ -18,18 +18,18 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.openlocfilehash: 9187bddef456f131982d39fd64dacea5953b959b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9dc73de515aa8e321dbb28ca4a859b256613fbfe
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222569"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831483"
 ---
 # <a name="condition_variable_any-class"></a>condition_variable_any Sınıfı
 
 `condition_variable_any`Herhangi bir türe sahip bir olay beklemek için sınıfını kullanın `mutex` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class condition_variable_any;
@@ -39,13 +39,13 @@ class condition_variable_any;
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[condition_variable_any](#condition_variable_any)|Bir `condition_variable_any` nesnesi oluşturur.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[notify_all](#notify_all)|Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır `condition_variable_any` .|
 |[notify_one](#notify_one)|Nesne için bekleyen iş parçacıklarından birinin engellemesini kaldırır `condition_variable_any` .|
@@ -53,7 +53,7 @@ class condition_variable_any;
 |[wait_for](#wait_for)|Bir iş parçacığını engeller ve sonra iş parçacığı bloklarından sonra bir zaman aralığı ayarlar.|
 |[wait_until](#wait_until)|Bir iş parçacığını engeller ve iş parçacığı bloklarından en fazla bir zaman noktası ayarlar.|
 
-## <a name="condition_variable_any"></a><a name="condition_variable_any"></a>condition_variable_any
+## <a name="condition_variable_any"></a><a name="condition_variable_any"></a> condition_variable_any
 
 Bir `condition_variable_any` nesnesi oluşturur.
 
@@ -65,7 +65,7 @@ condition_variable_any();
 
 Yeterli kullanılabilir bellek yoksa, Oluşturucu hata koduna sahip bir [system_error](../standard-library/system-error-class.md) nesnesi oluşturur `not_enough_memory` . Başka bir kaynak kullanılabilir olmadığından nesne oluşturulamıyor, Oluşturucu `system_error` hata koduna sahip bir nesne oluşturur `resource_unavailable_try_again` .
 
-## <a name="notify_all"></a><a name="notify_all"></a>notify_all
+## <a name="notify_all"></a><a name="notify_all"></a> notify_all
 
 Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır `condition_variable_any` .
 
@@ -73,7 +73,7 @@ Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır `condi
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a><a name="notify_one"></a>notify_one
+## <a name="notify_one"></a><a name="notify_one"></a> notify_one
 
 Nesne üzerinde bekleyen iş parçacıklarından birinin engellemesini kaldırır `condition_variable_any` .
 
@@ -81,7 +81,7 @@ Nesne üzerinde bekleyen iş parçacıklarından birinin engellemesini kaldırı
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a><a name="wait"></a>bekleneceğini
+## <a name="wait"></a><a name="wait"></a> bekleneceğini
 
 Bir iş parçacığını engeller.
 
@@ -112,7 +112,7 @@ while (!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a><a name="wait_for"></a>wait_for
+## <a name="wait_for"></a><a name="wait_for"></a> wait_for
 
 Bir iş parçacığını engeller ve sonra iş parçacığı bloklarından sonra bir zaman aralığı ayarlar.
 
@@ -155,7 +155,7 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a><a name="wait_until"></a>wait_until
+## <a name="wait_until"></a><a name="wait_until"></a> wait_until
 
 Bir iş parçacığını engeller ve iş parçacığı bloklarından en fazla bir zaman noktası ayarlar.
 

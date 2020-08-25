@@ -1,19 +1,19 @@
 ---
-title: ATL HTTP Yardımcı İşlevleri
+title: ATL HTTP yardımcı program Işlevleri
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: c95681503da0d661382e6da33bd33e8f2004838b
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: d2e30f940ded0bf355000cd42ff46a67662b54f5
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168611"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833991"
 ---
-# <a name="atl-http-utility-functions"></a>ATL HTTP Yardımcı İşlevleri
+# <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı program Işlevleri
 
 Bu işlevler, URL 'Lerin işlenmesini destekler.
 
-|||
+|İşlev|Açıklama|
 |-|-|
 |[AtlCanonicalizeUrl](#atlcanonicalizeurl)|Güvenli olmayan karakterleri ve boşlukları kaçış dizilerine dönüştürmeyi içeren bir URL canonicalizes.|
 |[AtlCombineUrl](#atlcombineurl)|Temel URL 'yi ve göreli URL 'YI tek ve kurallı bir URL ile birleştirir.|
@@ -28,7 +28,7 @@ Bu işlevler, URL 'Lerin işlenmesini destekler.
 
 **Üstbilgi:** atlutil. h
 
-## <a name="atlcanonicalizeurl"></a><a name="atlcanonicalizeurl"></a>AtlCanonicalizeUrl
+## <a name="atlcanonicalizeurl"></a><a name="atlcanonicalizeurl"></a> AtlCanonicalizeUrl
 
 Güvenli olmayan karakterleri ve boşlukları kaçış sıralarına dönüştürme içeren bir URL'yi kurallı hale getirmek için bu işlevi çağırın.
 
@@ -76,7 +76,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 Geçerli [InternetCanonicalizeUrl](/windows/win32/api/wininet/nf-wininet-internetcanonicalizeurlw) sürümü gibi davranır ancak WinInet veya Internet Explorer 'ın yüklenmesini gerektirmez.
 
-## <a name="atlcombineurl"></a><a name="atlcombineurl"></a>AtlCombineUrl
+## <a name="atlcombineurl"></a><a name="atlcombineurl"></a> AtlCombineUrl
 
 Temel URL ile göreli bir URL'yi, kurallı tek bir URL'de birleştirmek için bu işlevi çağırın.
 
@@ -114,7 +114,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 Geçerli [InternetCombineUrl](/windows/win32/api/wininet/nf-wininet-internetcombineurlw) sürümü gibi davranır ancak WinInet veya Internet Explorer 'ın yüklenmesini gerektirmez.
 
-## <a name="atlescapeurl"></a><a name="atlescapeurl"></a>Attascapeurl 'Si
+## <a name="atlescapeurl"></a><a name="atlescapeurl"></a> Attascapeurl 'Si
 
 Tüm güvenli olmayan karakterleri kaçış sıralarına dönüştürmek için bu işlevi çağırın.
 
@@ -155,7 +155,7 @@ Bu işlevin davranışını denetleyen bayraklar ATL_URL. Olası değerler için
 
 Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-## <a name="atlgetdefaulturlport"></a><a name="atlgetdefaulturlport"></a>AtlGetDefaultUrlPort
+## <a name="atlgetdefaulturlport"></a><a name="atlgetdefaulturlport"></a> AtlGetDefaultUrlPort
 
 Belirli bir Internet protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını almak için bu işlevi çağırın.
 
@@ -172,7 +172,7 @@ Bağlantı noktası numarasını almak istediğiniz düzeni tanımlayan [ATL_URL
 
 Düzen tanınmazsa, belirtilen düzen veya ATL_URL_INVALID_PORT_NUMBER ilişkili [ATL_URL_PORT](atl-typedefs.md#atl_url_port) .
 
-## <a name="atlisunsafeurlchar"></a><a name="atlisunsafeurlchar"></a>AtlIsUnsafeUrlChar
+## <a name="atlisunsafeurlchar"></a><a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
 
 Bir karakterin URL'de kullanılmak üzere güvenli olup olmadığını öğrenmek için bu işlevi çağırın.
 
@@ -193,7 +193,7 @@ Giriş karakteri güvenli değilse TRUE, aksi takdirde FALSE döndürür.
 
 URL 'lerde kullanılması gereken karakterler, bu işlev kullanılarak test edilebilir ve [AtlCanonicalizeUrl](#atlcanonicalizeurl)kullanılarak dönüştürülür.
 
-## <a name="atlunescapeurl"></a><a name="atlunescapeurl"></a>AtlUnescapeUrl 'Si
+## <a name="atlunescapeurl"></a><a name="atlunescapeurl"></a> AtlUnescapeUrl 'Si
 
 Kaçış karakterlerini orijinal değerlerine döndürmek için bu işlevi çağırın.
 
@@ -233,7 +233,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 [Atelscapeurl](#atlescapeurl)tarafından uygulanan dönüştürme işlemini tersine çevirir.
 
-## <a name="rgbtohtml"></a><a name="rgbtohtml"></a>RGBToHtml
+## <a name="rgbtohtml"></a><a name="rgbtohtml"></a> RGBToHtml
 
 [Colorref](/windows/win32/gdi/colorref) değerini, bu renk değerine KARŞıLıK gelen HTML metnine dönüştürür.
 
@@ -246,7 +246,7 @@ bool inline RGBToHtml(
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
+*Renk*<br/>
 Bir RGB renk değeri.
 
 *Phakkında*<br/>
@@ -263,7 +263,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 Bir HTML renk değeri, rengin kırmızı, yeşil ve mavi bileşenlerinin her biri için 2 basamaklı olan 6 basamaklı onaltılık bir değer ve sonra da (örneğin, #FFFFFF beyazdır).
 
-## <a name="systemtimetohttpdate"></a><a name="systemtimetohttpdate"></a>SystemTimeToHttpDate
+## <a name="systemtimetohttpdate"></a><a name="systemtimetohttpdate"></a> SystemTimeToHttpDate
 
 Sistem saatini HTTP üstbilgileri kullanmak için uygun bir biçimde bir dizeye dönüştürmek için bu işlevi çağırın.
 
@@ -279,7 +279,7 @@ inline void SystemTimeToHttpDate(
 HTTP biçim dizesi olarak elde edilecek sistem süresi.
 
 *strTime*<br/>
-RFC 2616 ([https://www.ietf.org/rfc/rfc2616.txt](https://www.ietf.org/rfc/rfc2616.txt)) ve RFC 1123 ([https://www.ietf.org/rfc/rfc1123.txt](https://www.ietf.org/rfc/rfc1123.txt)) ' de tanımlanan http Tarih saatini almak için bir dize değişkenine başvuru.
+RFC 2616 ( [https://www.ietf.org/rfc/rfc2616.txt](https://www.ietf.org/rfc/rfc2616.txt) ) ve rfc 1123 () ' de tanımlanan http Tarih saatini almak için bir dize değişkenine başvuru [https://www.ietf.org/rfc/rfc1123.txt](https://www.ietf.org/rfc/rfc1123.txt) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

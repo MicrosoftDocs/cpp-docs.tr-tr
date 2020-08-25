@@ -5,44 +5,44 @@ helpviewer_keywords:
 - encoding
 - encoding, functions
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
-ms.openlocfilehash: a9c7689e49efce0d65e945f1a032a680e2277594
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: a284645030b5bcdb30b72d7df92231680efb36b4
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375872"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831898"
 ---
 # <a name="atl-encoding-reference"></a>ATL Kodlama Başvurusu
 
-UUENCODE, onaltılı ve UTF8 gibi yaygın Internet standartları aralığında kodlama, atlenc. h içinde bulunan kod tarafından desteklenir.
+UUENCODE, onaltılı ve UTF8 gibi yaygın Internet standartları aralığında kodlama, içinde bulunan kod tarafından desteklenir *`atlenc.h`* .
 
 ### <a name="functions"></a>İşlevler
 
-|||
-|-|-|
-|[AtlGetHexValue](reference/atl-text-encoding-functions.md#atlgethexvalue)|Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.|
-|[Atlonaltık kodu çözme](reference/atl-text-encoding-functions.md#atlhexdecode)|Bir önceki [Atlonaltıl kodlaması](reference/atl-text-encoding-functions.md#atlhexencode)çağrısıyla gibi onaltılık metin olarak kodlanmış bir veri dizesinin kodunu çözer.|
-|[Atlonaltıdecodegetrequiredlength](reference/atl-text-encoding-functions.md#atlhexdecodegetrequiredlength)|Belirtilen uzunlukta onaltılık kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
-|[Atlonaltıl kodlama](reference/atl-text-encoding-functions.md#atlhexencode)|Herhangi bir veriyi onaltılık bir metin dizesi olarak kodlamak için bu işlevi çağırın.|
-|[Atlonaltıencodegetrequiredlength](reference/atl-text-encoding-functions.md#atlhexencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[AtlUnicodeToUTF8](reference/atl-text-encoding-functions.md#atlunicodetoutf8)|Unicode dizesini UTF-8'e dönüştürmek için bu işlevi çağırın.|
-|[BEncode](reference/atl-text-encoding-functions.md#bencode)|Bazı verileri "B" kodlama kullanarak dönüştürmek için bu işlevi çağırın.|
-|[BEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#bencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[Çıkar Exml](reference/atl-text-encoding-functions.md#escapexml)|XML'de kullanılması güvenli olmayan karakterleri güvenli eşdeğerlerine dönüştürmek için bu işlevi çağırın.|
-|[Gebir Dedchars](reference/atl-text-encoding-functions.md#getextendedchars)|Bir dizede genişletilmiş karakter sayısını almak için bu işlevi çağırın.|
-|[IsExtendedChar](reference/atl-text-encoding-functions.md#isextendedchar)|Belirli bir karakterin genişletilmiş bir karakter olup olmadığını bulmak için bu işlevi çağırın (32 ' dan az, 126 ' den büyük olan ve sekme, satır besleme veya satır başı değil)|
-|[QEncode](reference/atl-text-encoding-functions.md#qencode)|Bazı verileri "Q" kodlama kullanarak dönüştürmek için bu işlevi çağırın.|
-|[QEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#qencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[Qpkodunu çöz](reference/atl-text-encoding-functions.md#qpdecode)|Daha önceki bir [QPEncode](reference/atl-text-encoding-functions.md#qpencode)çağrısıyla gibi tırnaklı yazdırılabilir biçimde kodlanmış bir veri dizesinin kodunu çözer.|
-|[QPDecodeGetRequiredLength](reference/atl-text-encoding-functions.md#qpdecodegetrequiredlength)|Belirtilen uzunlukta sınırlandırılmış yazdırılabilir biçimde kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
-|[QPEncode](reference/atl-text-encoding-functions.md#qpencode)|Bazı verileri sınırlandırılmış yazdırılabilir biçimde kodlamak için bu işlevi çağırın.|
-|[QPEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#qpencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
-|[UUDecode](reference/atl-text-encoding-functions.md#uudecode)|Daha önceki [uuencode](reference/atl-text-encoding-functions.md#uuencode)çağrısıyla gibi uuencoded bir veri dizesinin kodunu çözer.|
-|[UUDecodeGetRequiredLength](reference/atl-text-encoding-functions.md#uudecodegetrequiredlength)|Belirtilen uzunlukta uuencoded olarak kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın.|
-|[UUEncode](reference/atl-text-encoding-functions.md#uuencode)|Bazı verileri uuencode olarak kodlamak için bu işlevi çağırın.|
-|[UUEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#uuencodegetrequiredlength)|Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın.|
+| İşlev | Kullanım örneği |
+|--|--|
+| [AtlGetHexValue](reference/atl-text-encoding-functions.md#atlgethexvalue) | Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın. |
+| [Atlonaltık kodu çözme](reference/atl-text-encoding-functions.md#atlhexdecode) | Bir önceki [Atlonaltıl kodlaması](reference/atl-text-encoding-functions.md#atlhexencode)çağrısıyla gibi onaltılık metin olarak kodlanmış bir veri dizesinin kodunu çözer. |
+| [Atlonaltıdecodegetrequiredlength](reference/atl-text-encoding-functions.md#atlhexdecodegetrequiredlength) | Belirtilen uzunlukta onaltılık kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın. |
+| [Atlonaltıl kodlama](reference/atl-text-encoding-functions.md#atlhexencode) | Herhangi bir veriyi onaltılık bir metin dizesi olarak kodlamak için bu işlevi çağırın. |
+| [Atlonaltıencodegetrequiredlength](reference/atl-text-encoding-functions.md#atlhexencodegetrequiredlength) | Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın. |
+| [AtlUnicodeToUTF8](reference/atl-text-encoding-functions.md#atlunicodetoutf8) | Unicode dizesini UTF-8'e dönüştürmek için bu işlevi çağırın. |
+| [BEncode](reference/atl-text-encoding-functions.md#bencode) | Bazı verileri "B" kodlama kullanarak dönüştürmek için bu işlevi çağırın. |
+| [BEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#bencodegetrequiredlength) | Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın. |
+| [Çıkar Exml](reference/atl-text-encoding-functions.md#escapexml) | XML'de kullanılması güvenli olmayan karakterleri güvenli eşdeğerlerine dönüştürmek için bu işlevi çağırın. |
+| [Gebir Dedchars](reference/atl-text-encoding-functions.md#getextendedchars) | Bir dizede genişletilmiş karakter sayısını almak için bu işlevi çağırın. |
+| [IsExtendedChar](reference/atl-text-encoding-functions.md#isextendedchar) | Belirli bir karakterin genişletilmiş bir karakter olup olmadığını bulmak için bu işlevi çağırın (32 ' dan az, 126 ' den büyük olan ve sekme, satır besleme veya satır başı değil) |
+| [QEncode](reference/atl-text-encoding-functions.md#qencode) | Bazı verileri "Q" kodlama kullanarak dönüştürmek için bu işlevi çağırın. |
+| [QEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#qencodegetrequiredlength) | Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın. |
+| [Qpkodunu çöz](reference/atl-text-encoding-functions.md#qpdecode) | Daha önceki bir [QPEncode](reference/atl-text-encoding-functions.md#qpencode)çağrısıyla gibi tırnaklı yazdırılabilir biçimde kodlanmış bir veri dizesinin kodunu çözer. |
+| [QPDecodeGetRequiredLength](reference/atl-text-encoding-functions.md#qpdecodegetrequiredlength) | Belirtilen uzunlukta sınırlandırılmış yazdırılabilir biçimde kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın. |
+| [QPEncode](reference/atl-text-encoding-functions.md#qpencode) | Bazı verileri sınırlandırılmış yazdırılabilir biçimde kodlamak için bu işlevi çağırın. |
+| [QPEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#qpencodegetrequiredlength) | Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın. |
+| [UUDecode](reference/atl-text-encoding-functions.md#uudecode) | Daha önceki [uuencode](reference/atl-text-encoding-functions.md#uuencode)çağrısıyla gibi uuencoded bir veri dizesinin kodunu çözer. |
+| [UUDecodeGetRequiredLength](reference/atl-text-encoding-functions.md#uudecodegetrequiredlength) | Belirtilen uzunlukta uuencoded olarak kodlanmış bir dizeden çözülmüş verileri içerebilen bir arabelleğin bayt cinsinden boyutunu almak için bu işlevi çağırın. |
+| [UUEncode](reference/atl-text-encoding-functions.md#uuencode) | Bazı verileri uuencode olarak kodlamak için bu işlevi çağırın. |
+| [UUEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#uuencodegetrequiredlength) | Belirtilen boyutta veriyle kodlanmış bir dizeyi içerebilen bir arabelleğin karakter cinsinden boyutunu almak için bu işlevi çağırın. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tiren](../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)<br/>
+[ATL COM Masaüstü bileşenleri](../atl/atl-com-desktop-components.md)

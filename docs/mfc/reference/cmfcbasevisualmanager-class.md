@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCBaseVisualManager [MFC], CleanUpThemes
 - CMFCBaseVisualManager [MFC], UpdateSystemColors
 ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
-ms.openlocfilehash: 28efe75c3c825c04c88f9f2263a3db2d83d4f3af
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 79a3c0945fdd0df04e9ee52d7bad97dc0847fa91
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561329"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834303"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager sınıfı
 
@@ -53,17 +53,15 @@ class CMFCBaseVisualManager: public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCBaseVisualManager:: CMFCBaseVisualManager](#cmfcbasevisualmanager)|Bir nesnesi oluşturur ve başlatır `CMFCBaseVisualManager` .|
 |`CMFCBaseVisualManager::~CMFCBaseVisualManager`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCBaseVisualManager::D rawCheckBox](#drawcheckbox)|Geçerli Windows temasını kullanarak bir onay kutusu denetimi çizer.|
 |[CMFCBaseVisualManager::D rawComboBorder](#drawcomboborder)|Geçerli Windows temasını kullanarak bir Birleşik giriş kutusu kenarlığı çizer.|
 |[CMFCBaseVisualManager::D rawComboDropButton](#drawcombodropbutton)|Geçerli Windows temasını kullanarak bir açılan kutu açılır düğmesi çizer.|
@@ -75,9 +73,8 @@ class CMFCBaseVisualManager: public CObject
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCBaseVisualManager:: CleanUpThemes](#cleanupthemes)|`CloseThemeData`İçinde edinilen tüm işleyiciler için çağrılar `UpdateSystemColors` .|
 |[CMFCBaseVisualManager:: UpdateSystemColors](#updatesystemcolors)|`OpenThemeData`Çeşitli denetimleri çizme tutamaçları elde etmek için çağrılar: pencereler, araç çubukları, düğmeler ve benzeri.|
 

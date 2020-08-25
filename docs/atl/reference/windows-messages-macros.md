@@ -1,31 +1,31 @@
 ---
-title: Windows İletisi Makroları
+title: Windows Iletileri makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::WM_FORWARDMSG
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
-ms.openlocfilehash: a5a6d45c64d6123128ae362c1ef5643392439f41
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b4cd3c2eea24449eb17050b147d9c59560d8358f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329405"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834446"
 ---
-# <a name="windows-messages-macros"></a>Windows İletisi Makroları
+# <a name="windows-messages-macros"></a>Windows Iletileri makroları
 
-Bu makro pencere iletilerini iletin.
+Bu makro pencere iletilerini iletir.
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[WM_FORWARDMSG](#wm_forwardmsg)|Bir pencere tarafından alınan bir iletiyi işlenmek üzere başka bir pencereye iletmek için kullanın.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="wm_forwardmsg"></a><a name="wm_forwardmsg"></a>WM_FORWARDMSG
+## <a name="wm_forwardmsg"></a><a name="wm_forwardmsg"></a> WM_FORWARDMSG
 
-Bu makro, bir pencere tarafından alınan bir iletiyi işlenmek üzere başka bir pencereye iletilir.
+Bu makro, bir pencere tarafından alınan bir iletiyi işlenmek üzere başka bir pencereye iletir.
 
 ```
 WM_FORWARDMSG
@@ -33,7 +33,7 @@ WM_FORWARDMSG
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti işlenirse sıfır değil, değilse sıfır.
+İleti işlendiyse sıfır dışında, değilse sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -41,12 +41,12 @@ Bir pencere tarafından alınan bir iletiyi işlenmek üzere başka bir pencerey
 
 |Parametre|Kullanım|
 |---------------|-----------|
-|Wparam|Kullanıcı tarafından tanımlanan veriler|
-|Lparam|İleti hakkında `MSG` bilgi içeren bir yapıya işaretçi|
+|WPARAM|Kullanıcı tarafından tanımlanan veriler|
+|LPARAM|`MSG`İleti hakkında bilgi içeren bir yapıya yönelik işaretçi|
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `m_hWndOther` bu iletiyi alan diğer pencereyi temsil eder.
+Aşağıdaki örnekte, `m_hWndOther` Bu iletiyi alan diğer pencereyi temsil eder.
 
 [!code-cpp[NVC_ATL_Windowing#137](../../atl/codesnippet/cpp/windows-messages-macros_1.cpp)]
 

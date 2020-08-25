@@ -21,34 +21,59 @@ f1_keywords:
 - amp/Concurrency::direct3d::step
 - amp/Concurrency::direct3d::umin
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-ms.openlocfilehash: e21b1f2869ab81973b341abc5371714fbf8580e2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bf98249001c2b8227581fbbbcceeebd085e5d820
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375927"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831118"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>Concurrency::direct3d ad alanı işlevleri (AMP)
 
-||||
-|-|-|-|
-|[Abs](#abs)|[Kelepçe](#clamp)|[countbits](#countbits)|
-|[create_accelerator_view](#create_accelerator_view)|[d3d_access_lock](#d3d_access_lock)||
-|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|[firstbithigh](#firstbithigh)|
-|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|[get_device](#get_device)|
-|[imax](#imax)|[imin](#imin)|[is_timeout_disabled](#is_timeout_disabled)|
-|[Mad](#mad)|[make_array](#make_array)|[Gürültü](#noise)|
-|[Radyan](#radians)|[Rcp](#rcp)|[ters bitler](#reversebits)|
-|[Doymuş](#saturate)|[Işareti](#sign)|[smoothstep](#smoothstep)|
-|[Adım](#step)|[Umax](#umax)|[umin](#umin)|
+:::row:::
+   :::column span="":::
+      [mutlak](#abs)\
+      [Clamp](#clamp)\
+      [countbits](#countbits)\
+      [create_accelerator_view](#create_accelerator_view)\
+      [d3d_access_lock](#d3d_access_lock)\
+      [d3d_access_try_lock](#d3d_access_try_lock)\
+      [d3d_access_unlock](#d3d_access_unlock)
+   :::column-end:::
+   :::column span="":::
+      [firstbithigh](#firstbithigh)\
+      [firstbitlow](#firstbitlow)\
+      [get_buffer](#get_buffer)\
+      [get_device](#get_device)\
+      [IMAX](#imax)\
+      [imin](#imin)\
+      [is_timeout_disabled](#is_timeout_disabled)
+   :::column-end:::
+   :::column span="":::
+      [Mad](#mad)\
+      [make_array](#make_array)\
+      [gürültü](#noise)\
+      [radyan](#radians)\
+      [rcp](#rcp)\
+      [reversebits](#reversebits)
+   :::column-end:::
+   :::column span="":::
+      [saturate](#saturate)\
+      [imzalayabilirsiniz](#sign)\
+      [smoothstep](#smoothstep)\
+      [ından](#step)\
+      ['ın](#umax)\
+      [umın](#umin)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amp.h **Namespace:** Eşzamanlılık
+**Üstbilgi:** amp. h **ad alanı:** eşzamanlılık
 
-## <a name="abs"></a><a name="abs"></a>Abs
+## <a name="abs"></a><a name="abs"></a> mutlak
 
-Bağımsız değişkenin mutlak değerini verir
+Bağımsız değişkenin mutlak değerini döndürür
 
 ```cpp
 inline int abs(int _X) restrict(amp);
@@ -56,16 +81,16 @@ inline int abs(int _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişkenin mutlak değerini verir.
+Bağımsız değişkenin mutlak değerini döndürür.
 
-## <a name="clamp"></a><a name="clamp"></a>Kelepçe
+## <a name="clamp"></a><a name="clamp"></a> Clamp
 
-İkinci ve üçüncü belirtilen bağımsız değişkenler tarafından tanımlanan bir arayla kenetlenmiş ilk belirtilen bağımsız değişkenin değerini hesaplar.
+İkinci ve üçüncü belirtilen bağımsız değişkenlerle tanımlanan bir aralığa çakışılan ilk belirtilen bağımsız değişkenin değerini hesaplar.
 
 ```cpp
 inline float clamp(
@@ -81,22 +106,22 @@ inline int clamp(
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
-Kenetlenecek değer
+*_X*<br/>
+Çakışılan değer
 
 *_Min*<br/>
-Bağlama aralığının alt sınırı.
+Clamping aralığının alt sınırı.
 
 *_Max*<br/>
-Bağlama aralığının üst sınırı.
+Clamping aralığının üst sınırı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıkıştırılmış `_X`değeri.
+Öğesinin çakışan değeri `_X` .
 
-## <a name="countbits"></a><a name="countbits"></a>countbits
+## <a name="countbits"></a><a name="countbits"></a> countbits
 
-_X'daki ayarlı bit sayısını sayar
+_X içindeki küme bitlerinin sayısını sayar
 
 ```cpp
 inline unsigned int countbits(unsigned int _X) restrict(amp);
@@ -104,18 +129,18 @@ inline unsigned int countbits(unsigned int _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
-İmzasız tümseci değeri
+*_X*<br/>
+İşaretsiz tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-_X'daki ayarlı bit sayısını verir
+_X içindeki küme bitlerinin sayısını döndürür
 
-## <a name="create_accelerator_view"></a><a name="create_accelerator_view"></a>create_accelerator_view
+## <a name="create_accelerator_view"></a><a name="create_accelerator_view"></a> create_accelerator_view
 
-Bir [işaretçiden](accelerator-view-class.md) Direct3D aygıt arabirimine accelerator_view nesnesi oluşturur.
+Direct3D cihaz arabirimine yönelik bir işaretçiden [accelerator_view](accelerator-view-class.md) nesnesi oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 accelerator_view create_accelerator_view(
@@ -131,32 +156,32 @@ accelerator_view create_accelerator_view(
 ### <a name="parameters"></a>Parametreler
 
 *_Accelerator*<br/>
-Yeni accelerator_view oluşturulacak hızlandırıcı.
+Yeni accelerator_view oluşturulacağı hızlandırıcı.
 
 *_D3D_device*<br/>
-Direct3D aygıt arabiriminin işaretçisi.
+Direct3D cihaz arabirimine yönelik işaretçi.
 
 *_Disable_timeout*<br/>
-Yeni oluşturulan accelerator_view için zaman anındevre dışı bırakılıp atılmayacağını belirten bir Boolean parametresi. Bu, Direct3D aygıt oluşturma için D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT bayrağına karşılık gelir ve işletim sisteminin aygıtı Windows zaman aşım algılama ve kurtarma mekanizmasına göre sıfırlamadan yürütmesi 2 saniyeden fazla süren iş yüklerinin izin verilip vermediğini belirtmek için kullanılır. accelerator_view zaman alıcı görevleri gerçekleştirmeniz gerekiyorsa bu bayrağın kullanılması önerilir.
+Yeni oluşturulan accelerator_view için zaman aşımının devre dışı bırakılıp bırakılmadığını belirten bir Boole parametresi. Bu, Direct3D cihaz oluşturma için D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT bayrağına karşılık gelir ve işletim sisteminin, Windows zaman aşımı algılama ve kurtarma mekanizmasına göre cihazı sıfırlamadan 2 saniyeden uzun sürme iş yüklerinin yürütülmesi gerekip gerekmediğini belirtmek için kullanılır. Accelerator_view üzerinde zaman alan görevler gerçekleştirmeniz gerekirse bu bayrağın kullanılması önerilir.
 
 *_Qmode*<br/>
-Yeni oluşturulan accelerator_view için kullanılacak [queuing_mode.](concurrency-namespace-enums-amp.md#queuing_mode) Bu parametrenin varsayılan `queuing_mode_automatic`değeri .
+Yeni oluşturulan accelerator_view için kullanılacak [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) . Bu parametrenin varsayılan değeri vardır `queuing_mode_automatic` .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçen `accelerator_view` Direct3D aygıt arabiriminden oluşturulan nesne.
+`accelerator_view`Geçirilen Direct3D cihaz arabiriminden oluşturulan nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, varolan bir işaretçiden Direct3D aygıt arabirimine yeni `accelerator_view` bir nesne oluşturur. İşlev çağrısı başarılı olursa, parametrenin başvuru sayısı arabirime yapılan `AddRef` bir çağrı ile artımlanır. DirectX kodunuzda artık gerekkalmadığında nesneyi güvenle serbest bırakabilirsiniz. Yöntem çağrısı başarısız olursa, [bir runtime_exception](runtime-exception-class.md) atılır.
+Bu işlev, varolan bir `accelerator_view` Işaretçiden Direct3D cihaz arabirimine yeni bir nesne oluşturur. İşlev çağrısı başarılı olursa, parametrenin başvuru sayısı, arabirime yapılan çağrı yoluyla artırılır `AddRef` . DirectX kodunuzda artık gerekli olmadığında nesneyi güvenle serbest bırakabilirsiniz. Yöntem çağrısı başarısız olursa, bir [runtime_exception](runtime-exception-class.md) oluşturulur.
 
-Bu `accelerator_view` işlevi kullanarak oluşturduğunuz nesne iş parçacığı güvenlidir. Nesnenin `accelerator_view` eşzamanlı kullanımını eşitlemeniz gerekir. Nesnenin ve ham ID3D11Device arabiriminin `accelerator_view` senkronize edilmemiş eşzamanlı kullanımı tanımlanmamış davranışlara neden olur.
+`accelerator_view`Bu işlevi kullanarak oluşturduğunuz nesne, iş parçacığı güvenlidir. Nesnenin eşzamanlı kullanımını eşitlemeniz gerekir `accelerator_view` . `accelerator_view`Nesne ve ham ID3D11Device arabiriminin eşitlenmemiş eşzamanlı kullanımı tanımsız davranışa neden olur.
 
-C++ AMP çalışma süresi, `D3D11_CREATE_DEVICE_DEBUG` bayrağı kullanırsanız D3D Hata Ayıklama katmanını kullanarak hata ayıklama modunda ayrıntılı hata bilgileri sağlar.
+C++ AMP Runtime, bayrağını kullanırsanız D3D hata ayıklama katmanını kullanarak hata ayıklama modunda ayrıntılı hata bilgileri sağlar `D3D11_CREATE_DEVICE_DEBUG` .
 
-## <a name="d3d_access_lock"></a><a name="d3d_access_lock"></a>d3d_access_lock
+## <a name="d3d_access_lock"></a><a name="d3d_access_lock"></a> d3d_access_lock
 
-accelerator_view paylaşılan kaynaklarda D3D işlemlerini güvenli bir şekilde gerçekleştirmek amacıyla bir accelerator_view kilitleyin. Bu accelerator_view ilişkili accelerator_view ve tüm C++ AMP kaynakları işlemleri gerçekleştirirken bu kilidi dahili olarak alır ve başka bir iş parçacığı D3D erişim kilidi tutarken engeller. Bu kilit özyinelemeli değildir: Bu işlevi kilidi zaten tutan bir iş parçacığından çağırmak tanımlanmamış davranıştır. D3D erişim kilidi tutan iş parçacığı ndan accelerator_view veya accelerator_view ilişkili herhangi bir veri kapsayıcısı üzerinde işlem gerçekleştirmek için tanımlanmamış davranıştır. Ayrıca, kapsam tabanlı D3D erişim kilidi için RAII tarzı bir sınıf olan scoped_d3d_access_lock da bakın.
+Accelerator_view paylaşılan kaynaklarda D3D işlemlerini güvenle gerçekleştirmek amacıyla accelerator_view bir kilit elde edin. Accelerator_view ve bu accelerator_view ilişkili tüm C++ AMP kaynakları, işlem gerçekleştirirken bu kilidi dahili olarak alır ve başka bir iş parçacığında D3D erişim kilidi tutulduğu zaman engellenir. Bu kilit özyinelemeli değil: Bu işlevi kilidi zaten tutan bir iş parçacığından çağırmak tanımsız bir davranıştır. Accelerator_view veya D3D erişim kilidini tutan iş parçacığından accelerator_view ilişkili herhangi bir veri kapsayıcısı üzerinde işlem gerçekleştirmek için tanımsız bir davranıştır. Ayrıca bkz. scoped_d3d_access_lock, kapsam tabanlı D3D erişim kilidi için bir ÇII stili sınıf.
 
 ```cpp
 void __cdecl d3d_access_lock(accelerator_view& _Av);
@@ -165,11 +190,11 @@ void __cdecl d3d_access_lock(accelerator_view& _Av);
 ### <a name="parameters"></a>Parametreler
 
 *_Av*<br/>
-Kilitleme accelerator_view.
+Kilitlenecek accelerator_view.
 
-## <a name="d3d_access_try_lock"></a><a name="d3d_access_try_lock"></a>d3d_access_try_lock
+## <a name="d3d_access_try_lock"></a><a name="d3d_access_try_lock"></a> d3d_access_try_lock
 
-Engellemeden bir accelerator_view D3D erişim kilidi elde etmeye çalış.
+Blok olmadan bir accelerator_view D3D erişim kilidi alma girişimi.
 
 ```cpp
 bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
@@ -178,15 +203,15 @@ bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
 ### <a name="parameters"></a>Parametreler
 
 *_Av*<br/>
-Kilitleme accelerator_view.
+Kilitlenecek accelerator_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-kilit elde edildiyse doğru veya şu anda başka bir iş parçacığı tarafından tutuluyorsa yanlış.
+kilit alınırsa doğru veya şu anda başka bir iş parçacığı tarafından tutuluyorsa yanlış olur.
 
-## <a name="d3d_access_unlock"></a><a name="d3d_access_unlock"></a>d3d_access_unlock
+## <a name="d3d_access_unlock"></a><a name="d3d_access_unlock"></a> d3d_access_unlock
 
-Verilen accelerator_view D3D erişim kilidini bırakın. Arama iş parçacığı kilidi kilit tutmazsa accelerator_view sonuçlar tanımsız.
+Belirtilen accelerator_view D3D erişim kilidini serbest bırakın. Çağıran iş parçacığı accelerator_view kilidi tutamaz, sonuçlar tanımsız olur.
 
 ```cpp
 void __cdecl d3d_access_unlock(accelerator_view& _Av);
@@ -195,11 +220,11 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
 ### <a name="parameters"></a>Parametreler
 
 *_Av*<br/>
-Kilidin serbest bırakılabilmek için accelerator_view.
+Kilit yayımlanacak accelerator_view.
 
-## <a name="firstbithigh"></a><a name="firstbithigh"></a>firstbithigh
+## <a name="firstbithigh"></a><a name="firstbithigh"></a> firstbithigh
 
-En yüksek sıralı bitle başlayıp en düşük sıralı bite doğru hareket eden ilk ayar bitinin _X'daki yerini alır.
+En yüksek sıralı bitten başlayarak ve en düşük sıra bitine geçerek _X ilk küme bitinin konumunu alır.
 
 ```cpp
 inline int firstbithigh(int _X) restrict(amp);
@@ -207,16 +232,16 @@ inline int firstbithigh(int _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk ayar bitinin konumu
+İlk küme bitinin konumu
 
-## <a name="firstbitlow"></a><a name="firstbitlow"></a>firstbitlow
+## <a name="firstbitlow"></a><a name="firstbitlow"></a> firstbitlow
 
-en düşük sıralı bitle başlayıp en yüksek sıralı bitdoğru çalışarak _X ilk ayar bitinin konumunu alır.
+En düşük sıralı bitden başlayarak ve en yüksek sıralı bit 'e doğru çalışarak, _X ilk küme bitinin konumunu alır.
 
 ```cpp
 inline int firstbitlow(int _X) restrict(amp);
@@ -224,16 +249,16 @@ inline int firstbitlow(int _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk ayar bitinin konumunu döndürür
+İlk küme bitinin konumunu döndürür
 
-## <a name="get_buffer"></a><a name="get_buffer"></a>get_buffer
+## <a name="get_buffer"></a><a name="get_buffer"></a> get_buffer
 
-Belirtilen dizinin altında yatan Direct3D arabellek arabirimini alın.
+Belirtilen diziyi temel alan Direct3D arabellek arabirimini alın.
 
 ```cpp
 template<
@@ -250,18 +275,18 @@ IUnknown *get_buffer(
 Dizideki öğelerin türü.
 
 *_Rank*<br/>
-Dizinin sıralaması.
+Dizinin derecesi.
 
 *_Array*<br/>
-Direct3D accelerator_view'nde temel Direct3D arabellek arabiriminin döndürüldildiği bir dizi.
+Temel alınan Direct3D arabellek arabiriminin döndürüldüğü Direct3D accelerator_view bir dizi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizinin altında yatan Direct3D arabelleğine karşılık gelen IUnknown arabirim işaretçisi.
+Dizinin temelindeki Direct3D arabelleğine karşılık gelen IUnknown arabirim işaretçisi.
 
-## <a name="a-nameget_device-get_device"></a><a name="get_device">get_device
+## <a name="a-nameget_device-get_device"></a><a name="get_device"> get_device
 
-bir accelerator_view altında yatan D3D aygıt arabirimini alın.
+Accelerator_view temel alan D3D cihaz arabirimini alın.
 
 ```cpp
 IUnknown* get_device(const accelerator_view Av);
@@ -269,16 +294,16 @@ IUnknown* get_device(const accelerator_view Av);
 
 ### <a name="parameters"></a>Parametreler
 
-*Av*<br/>
-Altta yatan D3D aygıt arabiriminin döndürüldeği D3D accelerator_view.
+*Virüsten*<br/>
+Temel alınan D3D cihaz arabiriminin döndürüldüğü D3D accelerator_view.
 
 ### <a name="return-value"></a>Döndürülen değer
 
-accelerator_view `IUnknown` altında yatan D3D aygıtının arabirim işaretçisi.
+`IUnknown`Accelerator_view temel alan D3D cihazının arabirim işaretçisi.
 
-## <a name="imax"></a><a name="imax"></a>ımax
+## <a name="imax"></a><a name="imax"></a> IMAX
 
-Bağımsız değişkenlerin maksimum sayısal değerini belirleme
+Bağımsız değişkenlerin en büyük sayısal değerini belirleme
 
 ```cpp
 inline int imax(
@@ -288,7 +313,7 @@ inline int imax(
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 *_Y*<br/>
@@ -296,11 +321,11 @@ Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişkenlerin maksimum sayısal değerini döndürme
+Bağımsız değişkenlerin en büyük sayısal değerini döndürür
 
-## <a name="imin"></a><a name="imin"></a>imin
+## <a name="imin"></a><a name="imin"></a> imin
 
-Bağımsız değişkenlerin minimum sayısal değerini belirleme
+Bağımsız değişkenlerin en küçük sayısal değerini belirleme
 
 ```cpp
 inline int imin(
@@ -310,7 +335,7 @@ inline int imin(
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 *_Y*<br/>
@@ -318,11 +343,11 @@ Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişkenlerin minimum sayısal değerini döndürme
+Bağımsız değişkenlerin en küçük sayısal değerini döndürür
 
-## <a name="is_timeout_disabled"></a><a name="is_timeout_disabled"></a>is_timeout_disabled
+## <a name="is_timeout_disabled"></a><a name="is_timeout_disabled"></a> is_timeout_disabled
 
-Belirtilen accelerator_view için zaman adedinin devre dışı bırakıldığını belirten bir boolean bayrağı döndürür. Bu, Direct3D aygıt oluşturma için D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT bayrağına karşılık gelir.
+Belirtilen accelerator_view için zaman aşımının devre dışı bırakılıp bırakılmadığını belirten bir Boole bayrağı döndürür. Bu, Direct3D cihaz oluşturma için D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT bayrağına karşılık gelir.
 
 ```cpp
 bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
@@ -331,15 +356,15 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ### <a name="parameters"></a>Parametreler
 
 *_Accelerator_view*<br/>
-Zaman ayarı devre dışı bırakılan accelerator_view sorgulanacak.
+Zaman aşımı devre dışı ayarının sorgulanacağı accelerator_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen accelerator_view için zaman anına mı devre dışı bırakıldığını belirten bir boolean bayrağı.
+Belirtilen accelerator_view için zaman aşımının devre dışı bırakılıp bırakılmadığını belirten bir Boole bayrağı.
 
-## <a name="mad"></a><a name="mad"></a>Mad
+## <a name="mad"></a><a name="mad"></a> Mad
 
-Birinci ve ikinci belirtilen bağımsız değişkenin ürünlerini hesaplar, ardından üçüncü belirtilen bağımsız değişkeni ekler.
+Birinci ve ikinci belirtilen bağımsız değişkenin ürününü hesaplar ve ardından üçüncü belirtilen bağımsız değişkeni ekler.
 
 ```cpp
 inline float mad(
@@ -365,22 +390,22 @@ inline unsigned int mad(
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
-İlk belirtilen bağımsız değişken.
+*_X*<br/>
+Belirtilen ilk bağımsız değişken.
 
 *_Y*<br/>
-İkinci belirtilen bağımsız değişken.
+Belirtilen ikinci bağımsız değişken.
 
 *_Z*<br/>
-Üçüncü belirtilen bağımsız değişken.
+Belirtilen üçüncü bağımsız değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`_X` \* `_Y`  + Bunun `_Z`sonucu.
+Sonucu `_X` \* `_Y`  +  `_Z` .
 
-## <a name="make_array"></a><a name="make_array"></a>make_array
+## <a name="make_array"></a><a name="make_array"></a> make_array
 
-Direct3D arabellek arabirimi işaretçisinden bir dizi oluşturun.
+Direct3D arabellek arabirim işaretçisinden bir dizi oluşturun.
 
 ```cpp
 template<
@@ -399,24 +424,24 @@ array<value_type, _Rank> make_array(
 Oluşturulacak dizinin öğe türü.
 
 *_Rank*<br/>
-Oluşturulacak dizinin sıralaması.
+Oluşturulacak dizinin derecesi.
 
 *_Extent*<br/>
-Dizi toplamının şeklini açıklayan bir boyut.
+Dizi toplamanın şeklini açıklayan bir uzantı.
 
 *_Rv*<br/>
-Dizinin oluşturulacak olduğu Bir D3D hızlandırıcı görünümü.
+Dizinin oluşturulacağı D3D Hızlandırıcısı görünümü.
 
 *_D3D_buffer*<br/>
-D3D arabelleği IUnknown arabirim işaretçisi dizi oluşturmak için.
+Dizi oluşturmak için D3D arabelleğinin IUnknown arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sağlanan Direct3D arabelleği kullanılarak oluşturulan bir dizi.
+Belirtilen Direct3D arabelleği kullanılarak oluşturulan dizi.
 
-## <a name="noise"></a><a name="noise"></a>Gürültü
+## <a name="noise"></a><a name="noise"></a> gürültü
 
-Perlin gürültü algoritmasını kullanarak rasgele bir değer oluşturur
+Perlin gürültü algoritmasını kullanarak rastgele bir değer üretir
 
 ```cpp
 inline float noise(float _X) restrict(amp);
@@ -424,16 +449,16 @@ inline float noise(float _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
-Perlin gürültüsü oluşturmak için kayan nokta değeri
+*_X*<br/>
+Perlin gürültüsü oluşturulacak kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
--1 ve 1 arasındaki bir aralıkta Perlin gürültü değerini verir
+-1 ile 1 arasında bir Aralık içindeki perlin gürültü değerini döndürür
 
-## <a name="radians"></a><a name="radians"></a>Radyan
+## <a name="radians"></a><a name="radians"></a> radyan
 
-_X derecelerden radyanlara dönüştürür
+_X dereceden radyana dönüştürür
 
 ```cpp
 inline float radians(float _X) restrict(amp);
@@ -441,16 +466,16 @@ inline float radians(float _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Derecelerden radyanlara dönüştürülen _X döndürür
+Dereceden radyana dönüştürülecek _X döndürür
 
-## <a name="rcp"></a><a name="rcp"></a>Rcp
+## <a name="rcp"></a><a name="rcp"></a> rcp
 
-Hızlı bir yaklaşım kullanarak belirtilen bağımsız değişkenin karşıtlıklarını hesaplar.
+Hızlı bir yaklaşık kullanarak belirtilen bağımsız değişkenin tersini hesaplar.
 
 ```cpp
 inline float rcp(float _X) restrict(amp);
@@ -460,16 +485,16 @@ inline double rcp(double _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
-Karşılığı hesaplayabilmek için gereken değer.
+*_X*<br/>
+Devrik değerin hesaplanması için değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen bağımsız değişkenin karşılığı.
+Belirtilen bağımsız değişkenin tersi.
 
-## <a name="reversebits"></a><a name="reversebits"></a>ters bitler
+## <a name="reversebits"></a><a name="reversebits"></a> reversebits
 
-_X'daki bitsırasını tersine çevirir
+_X içindeki bitlerin sırasını tersine çevirir
 
 ```cpp
 inline unsigned int reversebits(unsigned int _X) restrict(amp);
@@ -477,16 +502,16 @@ inline unsigned int reversebits(unsigned int _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
-İmzasız tümseci değeri
+*_X*<br/>
+İşaretsiz tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-_X ters çevrilmiş bit sırası ile değeri verir
+Bit sırası ters çevrilen değeri _X döndürür
 
-## <a name="saturate"></a><a name="saturate"></a>Doymuş
+## <a name="saturate"></a><a name="saturate"></a> saturate
 
-Kelepçeler 0 -1 aralığında _X
+Clamps, 0 ile 1 arasında _X
 
 ```cpp
 inline float saturate(float _X) restrict(amp);
@@ -494,14 +519,14 @@ inline float saturate(float _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-0 ile 1 arasında kenetlenmiş _X döndürür
+0 ile 1 arasında bir _X çakışıyor döndürür
 
-## <a name="sign"></a><a name="sign"></a>Işareti
+## <a name="sign"></a><a name="sign"></a> imzalayabilirsiniz
 
 Belirtilen bağımsız değişkenin işaretini belirler.
 
@@ -511,16 +536,16 @@ inline int sign(int _X) restrict(amp);
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tartışmanın işareti.
+Bağımsız değişkenin işareti.
 
-## <a name="smoothstep"></a><a name="smoothstep"></a>smoothstep
+## <a name="smoothstep"></a><a name="smoothstep"></a> smoothstep
 
-_X aralığındaysa 0 ile 1 arasında düzgün bir Hermite enterpolasyonu verir [_Min, _Max].
+_X [_Min, _Max] aralığalıyorsa, 0 ile 1 arasında yumuşak bir Hermite ilişkilendirmeyi döndürür.
 
 ```cpp
 inline float smoothstep(
@@ -537,16 +562,16 @@ Kayan nokta değeri
 *_Max*<br/>
 Kayan nokta değeri
 
-*_x*<br/>
+*_X*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-_X _Min'den azsa 0 döndürür; _X _Max büyükse 1; aksi takdirde, _X aralığındaysa 0 ile 1 arasındaki bir değer [_Min, _Max]
+_X _Min daha küçükse 0 döndürür; _X _Max daha büyükse 1; Aksi takdirde, _X Aralık içinde ise 0 ile 1 arasında bir değer [_Min, _Max]
 
-## <a name="step"></a><a name="step"></a>Adım
+## <a name="step"></a><a name="step"></a> ından
 
-Değeri daha büyük olan 0 veya 1 döndürerek iki değeri karşılaştırır
+İki değeri karşılaştırır; 0 veya 1 döndüren değerin daha büyük olması gerekir
 
 ```cpp
 inline float step(
@@ -559,16 +584,16 @@ inline float step(
 *_Y*<br/>
 Kayan nokta değeri
 
-*_x*<br/>
+*_X*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-_X _Y'den büyük veya eşitse 1 döndürür; aksi takdirde, 0
+_X _Y eşit veya daha büyükse 1 döndürür; Aksi takdirde, 0
 
-## <a name="umax"></a><a name="umax"></a>Umax
+## <a name="umax"></a><a name="umax"></a> 'ın
 
-Bağımsız değişkenlerin maksimum sayısal değerini belirleme
+Bağımsız değişkenlerin en büyük sayısal değerini belirleme
 
 ```cpp
 inline unsigned int umax(
@@ -578,7 +603,7 @@ inline unsigned int umax(
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 *_Y*<br/>
@@ -586,11 +611,11 @@ Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişkenlerin maksimum sayısal değerini döndürme
+Bağımsız değişkenlerin en büyük sayısal değerini döndürür
 
-## <a name="umin"></a><a name="umin"></a>umin
+## <a name="umin"></a><a name="umin"></a> umın
 
-Bağımsız değişkenlerin minimum sayısal değerini belirleme
+Bağımsız değişkenlerin en küçük sayısal değerini belirleme
 
 ```cpp
 inline unsigned int umin(
@@ -600,7 +625,7 @@ inline unsigned int umin(
 
 ### <a name="parameters"></a>Parametreler
 
-*_x*<br/>
+*_X*<br/>
 Tamsayı değeri
 
 *_Y*<br/>
@@ -608,7 +633,7 @@ Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağımsız değişkenlerin minimum sayısal değerini döndürme
+Bağımsız değişkenlerin en küçük sayısal değerini döndürür
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

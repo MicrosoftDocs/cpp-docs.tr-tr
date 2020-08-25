@@ -1,5 +1,5 @@
 ---
-title: Olay İşleme Genel İşlevleri
+title: Olay Işleme genel Işlevler
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::AtlWaitWithMessageLoop
@@ -7,34 +7,34 @@ helpviewer_keywords:
 - event handling, global functions
 - global functions, event handling
 ms.assetid: fd674470-3def-47c3-be1c-894fa85f13e8
-ms.openlocfilehash: f2f8269dcf0f59a5d0794d3f16d4c4f85d8841ac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: fde93415640ef7fa460bb363af4c3cb14b356061
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330144"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833458"
 ---
-# <a name="event-handling-global-functions"></a>Olay İşleme Genel İşlevleri
+# <a name="event-handling-global-functions"></a>Olay Işleme genel Işlevler
 
 Bu işlev bir olay işleyicisi sağlar.
 
 > [!IMPORTANT]
-> Aşağıdaki tabloda listelenen işlev, Windows Runtime'da çalışan uygulamalarda kullanılamaz.
+> Aşağıdaki tabloda listelenen işlev, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Bir nesnenin sinyal gelmesini bekler, bu arada gerektiğinde pencere iletileri gönderir.|
+|[AtlWaitWithMessageLoop](#atlwaitwithmessageloop)|Bir nesne için sinyal gelmesini bekler, bu da gerektiğinde pencere iletileri gönderiyor.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="atlwaitwithmessageloop"></a><a name="atlwaitwithmessageloop"></a>AtlWaitWithMessageLoop
+## <a name="atlwaitwithmessageloop"></a><a name="atlwaitwithmessageloop"></a> AtlWaitWithMessageLoop
 
 Nesne için sinyal gönderilmesini bekler, bu arada pencere iletilerini gerektiği şekilde dağıtır.
 
 > [!IMPORTANT]
-> Bu işlev, Windows Runtime'da çalışan uygulamalarda kullanılamaz.
+> Bu işlev, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ```
 BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
@@ -42,16 +42,16 @@ BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 
 ### <a name="parameters"></a>Parametreler
 
-*hOlay*<br/>
-[içinde] Bekleyecek nesnenin tutamacı.
+*hEvent*<br/>
+'ndaki Beklenecek nesnenin tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne sinyal verilmişse TRUE döndürür.
+Nesne sinyalliyse, doğru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, bir nesnenin olayının gerçekleşmesini beklemek ve bunun gerçekleştiğinin bildirilmesini istiyorsanız, ancak beklerken pencere iletilerinin gönderilmesine izin vermek için yararlıdır.
+Bu, bir nesnenin olayının gerçekleşmesini beklemek ve bunun gerçekleşmekte olduğunun bildirilmesi, ancak bekleme sırasında pencere iletilerinin gönderilmesini sağlamak istiyorsanız yararlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

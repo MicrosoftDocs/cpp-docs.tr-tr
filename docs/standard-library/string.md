@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: 68b1865fd9c45c3782917edba273083dac086548
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb7d869d36bea6854e3eacbacb6dfad0c32a816f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212130"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833186"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
@@ -20,7 +20,7 @@ Kapsayıcı sınıfı şablonunu `basic_string` ve çeşitli destekleyici şablo
 
 Hakkında daha fazla bilgi için `basic_string` bkz. [basic_string sınıfı](../standard-library/basic-string-class.md)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <string>
@@ -59,9 +59,9 @@ C++ dili ve C++ standart kitaplığı, iki tür dizeyi destekler:
 
 ### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
-|hash|Bir dizenin karmasını üretir.|
+|`hash`|Bir dizenin karmasını üretir.|
 |[Kur](../standard-library/string-functions.md#swap)|İki dizenin karakter dizilerini değiş tokuş eder.|
 |[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisini öğesine dönüştürür **`double`** .|
 |[stof](../standard-library/string-functions.md#stof)|Bir karakter dizisini öğesine dönüştürür **`float`** .|
@@ -88,7 +88,7 @@ C++ dili ve C++ standart kitaplığı, iki tür dizeyi destekler:
 
 ### <a name="specializations"></a>Uzmanlıklar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[char_traits \<char> yapısı](../standard-library/char-traits-char-struct.md)|Şablon yapısının bir öğesi türünde bir özelleştirmesi olan yapı `char_traits` \<CharType> **`char`** .|
 |[char_traits<wchar_t> Yapısı](../standard-library/char-traits-wchar-t-struct.md)|Şablon yapısının bir öğesi türünde bir özelleştirmesi olan yapı `char_traits` \<CharType> **`wchar_t`** .|

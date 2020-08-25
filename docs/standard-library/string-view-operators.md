@@ -17,24 +17,27 @@ helpviewer_keywords:
 - std::basic_string_view::operator&lt;
 - std::basic_string_view::operator&lt;&lt;
 - std::basic_string_view::operator&lt;=, std::basic_string_view::operator==
-ms.openlocfilehash: 39727177ff0fe88e2fcc105a6cee49711b36de6e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b0761c1af7b2ed9f34917d2e4165561b357f0a30
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222244"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833224"
 ---
 # <a name="ltstring_viewgt-operators"></a>&lt;string_view &gt; işleçleri
 
 İki string_view nesnesini veya bir string_view ve başka bir dize nesnesini (örneğin, [std:: String](basic-string-class.md)veya **char \* **), örtük bir dönüştürmenin sağlandığı bir şekilde karşılaştırmak için bu işleçleri kullanın.
 
-||||
-|-|-|-|
-|[işleç! =](#op_neq)|[işleç&gt;](#op_gt)|[işleç&gt;=](#op_gt_eq)|
-|[işleç&lt;](#op_lt)|[işleç&lt;&lt;](#op_lt_lt)|[işleç&lt;=](#op_lt_eq)|
-|[işleç = =](#op_eq_eq)|["" SV işleci](#op_sv)|
+[işleç! =](#op_neq)\
+[işlecinde&gt;](#op_gt)\
+[işlecinde&gt;=](#op_gt_eq)\
+[işlecinde&lt;](#op_lt)\
+[işlecinde&lt;&lt;](#op_lt_lt)\
+[işlecinde&lt;=](#op_lt_eq)\
+[işleç = =](#op_eq_eq)\
+["" SV işleci](#op_sv)
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -73,7 +76,7 @@ Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_vie
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir. Aksi takdirde, bunlar eşit değildir.
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -112,7 +115,7 @@ Kapalı bir dönüştürme *convertible_string_type* diğer taraftaki string_vie
 
 Karşılaştırma, karakter sıralarının ikili bir lexıgraf karşılaştırmasını temel alır. Aynı sayıda öğe varsa ve öğelerin tümü eşitse, iki nesne eşittir.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 İşlecin sol tarafındaki nesnenin sağdaki nesneden daha az olup olmadığını sınar sidestring_view
 
@@ -173,7 +176,7 @@ int main()
 }
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden küçük veya ona eşit olup olmadığını sınar.
 
@@ -210,7 +213,7 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 Bkz [. &lt; işleci](#op_lt).
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
 
 Çıkış akışına bir string_view yazar.
 
@@ -236,7 +239,7 @@ yazılan çıkış akışı.
 
 Bir string_view içeriğini bir çıkış akışına eklemek için, örneğin [std:: cout](iostream.md#cout)kullanarak bu işleci kullanın.
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden daha büyük olup olmadığını sınar.
 
@@ -273,7 +276,7 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 Bkz [. &lt; işleci](#op_lt).
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneden büyük veya ona eşit olup olmadığını sınar.
 
@@ -310,7 +313,7 @@ Herhangi bir dönüştürülebilir dize türü veya Karşılaştırılacak tür�
 
 Bkz [. &lt; işleci](#op_lt).
 
-## <a name="operator-sv-string_view-literal"></a><a name="op_sv"></a>"" SV işleci (string_view Sabit)
+## <a name="operator-sv-string_view-literal"></a><a name="op_sv"></a> "" SV işleci (string_view Sabit)
 
 Bir dize sabit değerinden string_view oluşturur. Ad alanı gerektirir `std::literals::string_view_literals` .
 

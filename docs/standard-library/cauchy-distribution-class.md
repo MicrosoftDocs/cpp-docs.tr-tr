@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::cauchy_distribution [C++], param_type
 - std::cauchy_distribution [C++], param_type
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
-ms.openlocfilehash: 965ad6751938c07a0a62fedc8f65d53f9f6d2b04
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f8e35815a702878fde702e772edb21899608e7f7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217837"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830806"
 ---
 # <a name="cauchy_distribution-class"></a>cauchy_distribution Sınıfı
 
@@ -80,10 +80,8 @@ Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<ra
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, Cauşy dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[cauchy_distribution](#cauchy_distribution)|`cauchy_distribution::a`|`cauchy_distribution::param`|
-|`cauchy_distribution::operator()`|`cauchy_distribution::b`|[param_type](#param_type)|
+[cauchy_distribution](#cauchy_distribution)\
+[param_type](#param_type)
 
 Özelliği, ve `a()` `b()` depolanan dağıtım parametreleri ve için ilgili değerlerini döndürür `a` `b` .
 
@@ -240,7 +238,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="cauchy_distributioncauchy_distribution"></a><a name="cauchy_distribution"></a>cauchy_distribution:: cauchy_distribution
+## <a name="cauchy_distributioncauchy_distribution"></a><a name="cauchy_distribution"></a> cauchy_distribution:: cauchy_distribution
 
 Dağıtımı oluşturur.
 
@@ -268,7 +266,7 @@ explicit cauchy_distribution(const param_type& parm);
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="cauchy_distributionparam_type"></a><a name="param_type"></a>cauchy_distribution::p aram_type
+## <a name="cauchy_distributionparam_type"></a><a name="param_type"></a> cauchy_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 
