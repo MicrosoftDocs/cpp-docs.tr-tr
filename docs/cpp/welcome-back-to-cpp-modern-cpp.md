@@ -5,10 +5,10 @@ ms.date: 05/17/2020
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
 ms.openlocfilehash: f2b9159e74ba7ce37c7eab1513826da939a3be49
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.sourcegitcommit: f1752bf90b4f869633a859ace85439ca19e208b2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 08/24/2020
 ms.locfileid: "87232202"
 ---
 # <a name="welcome-back-to-c---modern-c"></a>C++ ' a geri hoş geldiniz-modern C++
@@ -52,7 +52,7 @@ Mümkün olduğunda, yığın belleği ayrılırken akıllı bir işaretçi kull
 
 C stili dizeler, başka bir büyük hata kaynağıdır. [ `std::string` Ve `std::wstring` ](../standard-library/basic-string-class.md)kullanarak, C stili dizeleriyle ilişkili tüm hataları ortadan kaldırabilirsiniz. Ayrıca, arama, ekleme, ön bekleyen gibi üye işlevlerinin avantajına sahip olursunuz. Her ikisi de hız için en iyi duruma getirilmiştir. Bir dizeyi yalnızca salt okuma erişimi gerektiren bir işleve geçirirken, C++ 17 ' de [`std::string_view`](../standard-library/basic-string-view-class.md) daha fazla performans avantajı için kullanabilirsiniz.
 
-## <a name="stdvector-and-other-standard-library-containers"></a>`std::vector`ve diğer standart kitaplık kapsayıcıları
+## <a name="stdvector-and-other-standard-library-containers"></a>`std::vector` ve diğer standart kitaplık kapsayıcıları
 
 Standart Kitaplık kapsayıcıları tüm Rat ilkesini izler. Bunlar, öğelerin güvenli çapraz geçişi için yineleyiciler sağlar. Ayrıca, performans için yüksek oranda iyileştirilmiştir ve doğruluk açısından tamamen test edilmiştir. Bu kapsayıcıları kullanarak, özel veri yapılarında ortaya çıkabilecek hatalara veya verimsizlikleri potansiyelini ortadan kaldırabilirsiniz. Ham diziler yerine [`vector`](../standard-library/vector-class.md) C++ ' da sıralı kapsayıcı olarak kullanın.
 
@@ -104,9 +104,9 @@ sort( v.begin(), v.end(), comp );
 auto i = lower_bound( v.begin(), v.end(), comp );
 ```
 
-## <a name="auto-instead-of-explicit-type-names"></a>`auto`Açık tür adları yerine
+## <a name="auto-instead-of-explicit-type-names"></a>`auto` Açık tür adları yerine
 
-C++ 11, [`auto`](auto-cpp.md) değişken, işlev ve şablon bildirimlerinde kullanım için anahtar sözcüğünü kullanıma sunmuştur. **`auto`** derleyiciye nesne türünü vermesini söyler, böylece açıkça yazmanız gerekmez. **`auto`**, çıkarılan tür iç içe geçmiş bir şablon olduğunda özellikle yararlıdır:
+C++ 11, [`auto`](auto-cpp.md) değişken, işlev ve şablon bildirimlerinde kullanım için anahtar sözcüğünü kullanıma sunmuştur. **`auto`** derleyiciye nesne türünü vermesini söyler, böylece açıkça yazmanız gerekmez. **`auto`** , çıkarılan tür iç içe geçmiş bir şablon olduğunda özellikle yararlıdır:
 
 ```cpp
 map<int,list<string>>::iterator i = m.begin(); // C-style
@@ -139,7 +139,7 @@ int main()
 }
 ```
 
-## <a name="constexpr-expressions-instead-of-macros"></a>`constexpr`makrolar yerine ifadeler
+## <a name="constexpr-expressions-instead-of-macros"></a>`constexpr` makrolar yerine ifadeler
 
 C ve C++ ' daki makrolar, derlemeden önce Önişlemci tarafından işlenen belirteçlerdir. Bir makro belirtecinin her örneği, dosya derlenmesinden önce tanımlı değeri veya ifadesiyle değiştirilmiştir. Makrolar, derleme zamanı sabit değerlerini tanımlamak için genellikle C stili programlamada kullanılır. Ancak, makrolar hata verebilir ve hata ayıklaması zor bir hatadır. Modern C++ ' da, [`constexpr`](constexpr-cpp.md) derleme zamanı sabitleri için değişkenleri tercih etmelisiniz:
 
@@ -150,7 +150,7 @@ constexpr int size = 10; // modern C++
 
 ### <a name="uniform-initialization"></a>Tekdüzen başlatma
 
-Modern C++ ' da, herhangi bir tür için küme ayracı başlatma kullanabilirsiniz. Bu başlatma biçimi, diziler, vektörler veya diğer kapsayıcıları başlatırken özellikle kullanışlıdır. Aşağıdaki örnekte, `v2` üç örneği ile başlatılır `S` . `v3`, `S` küme ayraçları kullanılarak başlatılan üç örneğiyle başlatılır. Derleyici, her öğenin türünü, belirtilen türüne göre alır `v3` .
+Modern C++ ' da, herhangi bir tür için küme ayracı başlatma kullanabilirsiniz. Bu başlatma biçimi, diziler, vektörler veya diğer kapsayıcıları başlatırken özellikle kullanışlıdır. Aşağıdaki örnekte, `v2` üç örneği ile başlatılır `S` . `v3` , `S` küme ayraçları kullanılarak başlatılan üç örneğiyle başlatılır. Derleyici, her öğenin türünü, belirtilen türüne göre alır `v3` .
 
 ```cpp
 #include <vector>
@@ -210,7 +210,7 @@ Modern C++, hata koşullarını raporlamak ve işlemek için en iyi yol olarak h
 
 C++ Standart Kitaplığı [`std::atomic`](../standard-library/atomic-structure.md) yapısını ve iş parçacıkları arası iletişim mekanizmaları için ilgili türleri kullanın.
 
-## <a name="stdvariant-c17"></a>`std::variant`(C++ 17)
+## <a name="stdvariant-c17"></a>`std::variant` (C++ 17)
 
 Birleşimler, farklı türlerin üyelerinin aynı bellek konumunu kaplamasına olanak tanıyarak belleği korumak için genellikle C stili programlamada kullanılır. Ancak, birleşimler tür açısından güvenli değildir ve programlama hatalarına açıktır. C++ 17, [`std::variant`](../standard-library/variant-class.md) sendikaya daha sağlam ve güvenli bir alternatif olarak sınıfı tanıtır. İşlevi bir tür [`std::visit`](../standard-library/variant-functions.md#visit) üyelerine `variant` tür açısından güvenli bir şekilde erişmek için kullanılabilir.
 
