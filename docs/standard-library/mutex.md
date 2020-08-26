@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-ms.openlocfilehash: e17488023d8de6eb5d341c719be8f1b36c14ffcd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d5ff6f2a81a5caa564792e2c0cb43b7722c3e1dd
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228186"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838561"
 ---
 # <a name="ltmutexgt"></a>&lt;mutex&gt;
 
@@ -51,7 +51,7 @@ Mutex türü, *kilitlenebilir tür*olarak da bilinir. Üye işlevi sağlamıyors
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[lock_guard sınıfı](../standard-library/lock-guard-class.md)|Yıkıcıya kilidi olan bir nesne oluşturmak için örneklenebilir bir şablonu temsil eder `mutex` .|
 |[Mutex sınıfı (C++ Standart Kitaplığı)](../standard-library/mutex-class-stl.md)|Bir mutex türünü temsil eder. Bir programda karşılıklı dışlamayı zorlamak için bu türdeki nesneleri kullanın.|
@@ -63,7 +63,7 @@ Mutex türü, *kilitlenebilir tür*olarak da bilinir. Üye işlevi sağlamıyors
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[call_once](../standard-library/mutex-functions.md#call_once)|Belirtilen çağrılabilir nesneyi yürütme sırasında tam olarak bir kez çağırmak için bir mekanizma sağlar.|
 |[ine](../standard-library/mutex-functions.md#lock)|Tüm bağımsız değişkenleri kilitlenme olmadan kilitlemeye çalışır.|
@@ -72,7 +72,7 @@ Mutex türü, *kilitlenebilir tür*olarak da bilinir. Üye işlevi sağlamıyors
 
 ### <a name="structs"></a>Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[adopt_lock_t Yapısı](../standard-library/adopt-lock-t-structure.md)|Tanımlamak için kullanılan bir türü temsil eder `adopt_lock` .|
 |[defer_lock_t Yapısı](../standard-library/defer-lock-t-structure.md)|`defer_lock`Aşırı yüklenmiş oluşturucularından birini seçmek için kullanılan bir nesneyi tanımlayan bir türü temsil eder `unique_lock` .|
@@ -81,7 +81,7 @@ Mutex türü, *kilitlenebilir tür*olarak da bilinir. Üye işlevi sağlamıyors
 
 ### <a name="variables"></a>Değişkenler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[adopt_lock](../standard-library/mutex-functions.md#adopt_lock)|`lock_guard` `unique_lock` Oluşturucuya geçirilen mutex nesnesinin kilitli olduğunu göstermek için ve yapıcısına geçirilebilecek bir nesneyi temsil eder.|
 |[defer_lock](../standard-library/mutex-functions.md#defer_lock)|`unique_lock`Oluşturucunun kendisine geçirilen Mutex nesnesini kilitleyemeyeceğini göstermek için, için oluşturucusuna geçirilebilecek bir nesneyi temsil eder.|

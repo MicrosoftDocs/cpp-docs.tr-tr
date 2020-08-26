@@ -1,6 +1,6 @@
 ---
 title: CompilerPass sınıfı
-description: C++ Build Insights SDK CompilerPass sınıf başvurusu.
+description: C++ Build Insights SDK 'Sı CompilerPass sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 11af981b647d5183f88dad024d90c0ef4f8a28bc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 054bdf75dcfca42b8c202565fb44df671f17f912
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325036"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831625"
 ---
 # <a name="compilerpass-class"></a>CompilerPass sınıfı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Sınıf `CompilerPass` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. bir [BACK_END_PASS](../event-table.md#back-end-pass) veya [FRONT_END_PASS](../event-table.md#front-end-pass) olayı eşleştirmek için kullanın.
+`CompilerPass`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [BACK_END_PASS](../event-table.md#back-end-pass) veya [FRONT_END_PASS](../event-table.md#front-end-pass) olayı ile eşleştirmek için kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CompilerPass : public Activity
@@ -49,28 +49,28 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `CompilerPass` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte, `CompilerPass` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[DerleyiciPass](#compiler-pass)
+[CompilerPass](#compiler-pass)
 
 ### <a name="enums"></a>Numaralandırmalar
 
-#### <a name="passcode"></a>Şifre
+#### <a name="passcode"></a>Geçiş
 
-|||
+|Değer|Açıklama|
 |-|-|
-|FRONT_END|Ön uç pası.|
-|BACK_END|Arka uç pası.|
+|FRONT_END|Ön uç geçişi.|
+|BACK_END|Arka uç geçişi.|
 
 ### <a name="functions"></a>İşlevler
 
-[InputSourcePath](#input-source-path)\
+[Inputsourcepath](#input-source-path)\
 [OutputObjectPath](#output-object-path)\
-[Şifre](#pass-code)\
+[Geçiş](#pass-code)\
 
-## <a name="compilerpass"></a><a name="compiler-pass"></a>DerleyiciPass
+## <a name="compilerpass"></a><a name="compiler-pass"></a> CompilerPass
 
 ```cpp
 CompilerPass(const RawEvent& event);
@@ -78,10 +78,10 @@ CompilerPass(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
-[BACK_END_PASS](../event-table.md#back-end-pass) veya [FRONT_END_PASS](../event-table.md#front-end-pass) bir olay.
+*olay*\
+Bir [BACK_END_PASS](../event-table.md#back-end-pass) veya [FRONT_END_PASS](../event-table.md#front-end-pass) olayı.
 
-## <a name="inputsourcepath"></a><a name="input-source-path"></a>InputSourcePath
+## <a name="inputsourcepath"></a><a name="input-source-path"></a> Inputsourcepath
 
 ```cpp
 const wchar_t* InputSourcePath() const;
@@ -89,9 +89,9 @@ const wchar_t* InputSourcePath() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu derleyici geçişi tarafından işlenen giriş kaynağı dosyasına mutlak yol.
+Bu derleyici geçişi tarafından işlenen giriş kaynak dosyasının mutlak yolu.
 
-## <a name="outputobjectpath"></a><a name="output-object-path"></a>OutputObjectPath
+## <a name="outputobjectpath"></a><a name="output-object-path"></a> OutputObjectPath
 
 ```cpp
 const wchar_t* OutputObjectPath() const;
@@ -99,9 +99,9 @@ const wchar_t* OutputObjectPath() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu derleyici geçişi tarafından üretilen çıktı nesnesi dosyasına mutlak yol.
+Bu derleyici geçişi tarafından üretilen çıkış nesnesi dosyasının mutlak yolu.
 
-## <a name="passcode"></a><a name="pass-code"></a>Şifre
+## <a name="passcode"></a><a name="pass-code"></a> Geçiş
 
 ```cpp
 PassCode PassCode() const;
@@ -109,6 +109,6 @@ PassCode PassCode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Derleyici geçişinin bu CompilerPass nesnesi tarafından temsil edildiğini belirten bir kod.
+Bu CompilerPass nesnesi tarafından hangi derleyici geçişinin temsil edileceğini belirten bir kod.
 
 ::: moniker-end

@@ -2,12 +2,12 @@
 title: Anahtar Sözcüklerin Özeti
 ms.date: 11/04/2016
 ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
-ms.openlocfilehash: e297615c5acc6d39c81e6d2c01edc2d699d33f63
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e2304dc8fe70d2b3e9a0f7dca700d56799904ee9
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220827"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845984"
 ---
 # <a name="summary-of-keywords"></a>Anahtar Sözcüklerin Özeti
 
@@ -15,44 +15,44 @@ ms.locfileid: "87220827"
 
 :::row:::
     :::column:::
-        **`auto`**<br/>
-        **`double`**<br/>
-        **`int`**<br/>
-        **`struct`**<br/>
-        **`break`**<br/>
-        **`else`**<br/>
-        **`long`**<br/>
-        **`switch`**<br/>
+        **`auto`**\
+        **`double`**\
+        **`int`**\
+        **`struct`**\
+        **`break`**\
+        **`else`**\
+        **`long`**\
+        **`switch`**
     :::column-end:::
     :::column:::
-        **`case`**<br/>
-        **`enum`**<br/>
-        **`register`**<br/>
-        **`typedef`**<br/>
-        **`char`**<br/>
-        **`extern`**<br/>
-        **`return`**<br/>
-        **`union`**<br/>
+        **`case`**\
+        **`enum`**\
+        **`register`**\
+        **`typedef`**\
+        **`char`**\
+        **`extern`**\
+        **`return`**\
+        **`union`**
     :::column-end:::
     :::column:::
-        **`const`**<br/>
-        **`float`**<br/>
-        **`short`**<br/>
-        **`unsigned`**<br/>
-        **`continue`**<br/>
-        **`for`**<br/>
-        **`signed`**<br/>
-        **`void`**<br/>
+        **`const`**\
+        **`float`**\
+        **`short`**\
+        **`unsigned`**\
+        **`continue`**\
+        **`for`**\
+        **`signed`**\
+        **`void`**
     :::column-end:::
     :::column:::
-        **`default`**<br/>
-        **`goto`**<br/>
-        **`sizeof`**<br/>
-        **`volatile`**<br/>
-        **`do`**<br/>
-        **`if`**<br/>
-        **`static`**<br/>
-        **`while`**<br/>
+        **`default`**\
+        **`goto`**\
+        **`sizeof`**\
+        **`volatile`**\
+        **`do`**\
+        **`if`**\
+        **`static`**\
+        **`while`**
     :::column-end:::
 :::row-end:::
 

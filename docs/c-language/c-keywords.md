@@ -6,12 +6,12 @@ helpviewer_keywords:
 - redefining keywords
 - Microsoft-specific keywords
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: 92704572c40812141911e151faf1a8d331a1ed38
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 1b49da349a6552022dfd9e8e66e85634f4694645
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520441"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838782"
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 
@@ -19,44 +19,44 @@ ms.locfileid: "87520441"
 
 :::row:::
     :::column:::
-        **`auto`**<br/>
-        **`double`**<br/>
-        **`int`**<br/>
-        **`struct`**<br/>
-        **`break`**<br/>
-        **`else`**<br/>
-        **`long`**<br/>
-        **`switch`**<br/>
+        **`auto`**\
+        **`double`**\
+        **`int`**\
+        **`struct`**\
+        **`break`**\
+        **`else`**\
+        **`long`**\
+        **`switch`**
     :::column-end:::
     :::column:::
-        **`case`**<br/>
-        **`enum`**<br/>
-        **`register`**<br/>
-        **`typedef`**<br/>
-        **`char`**<br/>
-        **`extern`**<br/>
-        **`return`**<br/>
-        **`union`**<br/>
+        **`case`**\
+        **`enum`**\
+        **`register`**\
+        **`typedef`**\
+        **`char`**\
+        **`extern`**\
+        **`return`**\
+        **`union`**
     :::column-end:::
     :::column:::
-        **`const`**<br/>
-        **`float`**<br/>
-        **`short`**<br/>
-        **`unsigned`**<br/>
-        **`continue`**<br/>
-        **`for`**<br/>
-        **`signed`**<br/>
-        **`void`**<br/>
+        **`const`**\
+        **`float`**\
+        **`short`**\
+        **`unsigned`**\
+        **`continue`**\
+        **`for`**\
+        **`signed`**\
+        **`void`**
     :::column-end:::
     :::column:::
-        **`default`**<br/>
-        **`goto`**<br/>
-        **`sizeof`**<br/>
-        **`volatile`**<br/>
-        **`do`**<br/>
-        **`if`**<br/>
-        **`static`**<br/>
-        **`while`**<br/>
+        **`default`**\
+        **`goto`**\
+        **`sizeof`**\
+        **`volatile`**\
+        **`do`**\
+        **`if`**\
+        **`static`**\
+        **`while`**
     :::column-end:::
 :::row-end:::
 
@@ -70,31 +70,31 @@ Aşağıdaki anahtar sözcükler ve özel tanımlayıcılar, Microsoft C derleyi
 
 :::row:::
     :::column:::
-        **`__asm`**<sup>03</sup><br/>
-        **`dllimport`**<sup>iki</sup><br/>
-        **`__int8`**<sup>03</sup><br/>
-        **`naked`**<sup>iki</sup><br/>
-        **`__based`**<sup>1, 3</sup><br/>
+        **`__asm`**<sup>03</sup>\
+        **`dllimport`**<sup>iki</sup>\
+        **`__int8`**<sup>03</sup>\
+        **`naked`**<sup>iki</sup>\
+        **`__based`**<sup>1, 3</sup>
     :::column-end:::
     :::column:::
-        **`__except`**<sup>03</sup><br/>
-        **`__int16`**<sup>03</sup><br/>
-        **`__stdcall`**<sup>03</sup><br/>
-        **`__cdecl`**<sup>03</sup><br/>
-        **`__fastcall`**<br/>
+        **`__except`**<sup>03</sup>\
+        **`__int16`**<sup>03</sup>\
+        **`__stdcall`**<sup>03</sup>\
+        **`__cdecl`**<sup>03</sup>\
+        **`__fastcall`**
     :::column-end:::
     :::column:::
-        **`__int32`**<sup>03</sup><br/>
-        **`thread`**<sup>iki</sup><br/>
-        **`__declspec`**<sup>03</sup><br/>
-        **`__finally`**<sup>03</sup><br/>
-        **`__int64`**<sup>03</sup><br/>
+        **`__int32`**<sup>03</sup>\
+        **`thread`**<sup>iki</sup>\
+        **`__declspec`**<sup>03</sup>\
+        **`__finally`**<sup>03</sup>\
+        **`__int64`**<sup>03</sup>
     :::column-end:::
     :::column:::
-        **`__try`**<sup>03</sup><br/>
-        **`dllexport`**<sup>iki</sup><br/>
-        **`__inline`**<sup>03</sup><br/>
-        **`__leave`**<sup>03</sup><br/>
+        **`__try`**<sup>03</sup>\
+        **`dllexport`**<sup>iki</sup>\
+        **`__inline`**<sup>03</sup>\
+        **`__leave`**<sup>03</sup>
     :::column-end:::
 :::row-end:::
 

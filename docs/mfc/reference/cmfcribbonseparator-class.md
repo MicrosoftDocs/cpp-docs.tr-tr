@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], OnDraw
 - CMFCRibbonSeparator [MFC], OnDrawOnList
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-ms.openlocfilehash: de2c6c45e4a91aa4efa0ebacba4019be74e03c72
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f435dc5ae8821a6d5626af2f93710a1672fd374c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560874"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831807"
 ---
 # <a name="cmfcribbonseparator-class"></a>CMFCRibbonSeparator sınıfı
 
@@ -43,25 +43,22 @@ class CMFCRibbonSeparator : public CMFCRibbonBaseElement
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCRibbonSeparator:: Cmfcribbonayırıcısı](#cmfcribbonseparator)|Bir `CMFCRibbonSeparator` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCRibbonSeparator:: AddToListBox](#addtolistbox)|**Özelleştir** Iletişim kutusundaki **Komutlar** listesine bir ayırıcı ekler. ( [CMFCRibbonBaseElement:: Addtolıst'](../../mfc/reference/cmfcribbonbaseelement-class.md#addtolistbox)i geçersiz kılar.)|
 |`CMFCRibbonSeparator::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
 |`CMFCRibbonSeparator::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCRibbonSeparator:: CopyFrom](#copyfrom)|Bir ayırıcının üye değişkenlerini başka bir nesneden ayarlayan bir Copy yöntemi.|
 |[CMFCRibbonSeparator:: GetRegularSize](#getregularsize)|Bir ayırıcısının boyutunu döndürür.|
 |[CMFCRibbonSeparator:: IsSeparator](#isseparator)|Bu bir ayırıcı olup olmadığını gösterir.|

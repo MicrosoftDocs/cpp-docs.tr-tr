@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: 217690e09ed595bb9fa9572693bf774259c42412
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: efa90acd169aeb8739b0bf97a5ab27026cc80cc6
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219033"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831989"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 
@@ -33,17 +33,38 @@ Tüm MFC sınıf kitaplığı, UTF-16 olarak geniş karakterlerle depolanan Unic
 
 Bu kitaplık, hata ayıklayıcı ve DLL dosyaları MFC 'de Unicode 'U desteklemek için kullanılır:
 
-|||||
-|-|-|-|-|
-|UıAFXFA. LıB|UıAFXFA. PDB|UıAFXCWD. LıB|UıAFXCWD. PDB|
-|MFC*Sürüm*U. LIB|MFC*Sürüm*U. pdb|MFC*sürüm*U.DLL|MFC*Sürüm*ud 'si. LıB|
-|MFC*Sürüm*ud 'si. PDB|MFC*sürüm*UD.DLL|MFCS*Sürüm*U. LIB|MFCS*Sürüm*U. pdb|
-|MFCS*Sürüm*ud. LıB|MFCS*Sürüm*ud. PDB|MFCM*Sürüm*U. LIB|MFCM*Sürüm*U. pdb|
-|MFCM*sürüm*U.DLL|MFCM*Sürüm*ud. LıB|MFCM*Sürüm*ud. PDB|MFCM*sürüm*UD.DLL|
+:::row:::
+   :::column span="":::
+      MFC*Sürüm*U. LIB \
+      MFC*Sürüm*ud 'si. LIB
+      MFCM*Sürüm*U. LIB \
+      MFCM*Sürüm*ud. LIB
+      MFCS*Sürüm*U. LIB \
+      MFCS*Sürüm*ud. LIB
+      UıAFXFA. LIB
+      UıAFXCWD. LıB
+   :::column-end:::
+   :::column span="":::
+      MFC*Sürüm*U. pdb \
+      MFC*Sürüm*ud 'si. PDB
+      MFCM*Sürüm*U. pdb \
+      MFCM*Sürüm*ud. PDB
+      MFCS*Sürüm*U. pdb \
+      MFCS*Sürüm*ud. PDB
+      UıAFXFA. PDB
+      UıAFXCWD. PDB
+   :::column-end:::
+   :::column span="":::
+      MFC*sürüm*U.DLL \
+      MFC*sürüm*UD.DLL \
+      MFCM*sürüm*U.DLL \
+      MFCM*sürüm*UD.DLL
+   :::column-end:::
+:::row-end:::
 
 (*Sürüm* , dosyanın sürüm numarasını temsil eder; örneğin, ' 140 ', sürüm 14,0 anlamına gelir.)
 
-`CString`, TCHAR veri türünü temel alır. Sembol _UNICODE programınızın bir derlemesi için tanımlandıysa, TCHAR türü **`wchar_t`** , 16 bitlik bir karakter kodlama türü olarak tanımlanır. Aksi halde, TCHAR, **`char`** normal 8 bit karakter kodlaması olarak tanımlanır. Bu nedenle, Unicode altında a `CString` 16 bit karakterden oluşur. Unicode olmadan, türündeki karakterlerden oluşur **`char`** .
+`CString` , TCHAR veri türünü temel alır. Sembol _UNICODE programınızın bir derlemesi için tanımlandıysa, TCHAR türü **`wchar_t`** , 16 bitlik bir karakter kodlama türü olarak tanımlanır. Aksi halde, TCHAR, **`char`** normal 8 bit karakter kodlaması olarak tanımlanır. Bu nedenle, Unicode altında a `CString` 16 bit karakterden oluşur. Unicode olmadan, türündeki karakterlerden oluşur **`char`** .
 
 Uygulamanızın Unicode programlamayı tamamlamaya yönelik olarak, şunları da yapmanız gerekir:
 
@@ -59,9 +80,9 @@ Uygulamanızın Unicode programlamayı tamamlamaya yönelik olarak, şunları da
 
   - Kullanacağınız LPTSTR kullanın **`char`** <strong>\*</strong> .
 
-  - **Const char**'ı kullanacağınız LPCTSTR kullanın <strong>\*</strong> . `CString`ve LPCTSTR arasında dönüştürme yapmak için LPCTSTR işlecini sağlar `CString` .
+  - Kullandığınız LPCTSTR ' i kullanın **`const char`** <strong>\*</strong> . `CString` ve LPCTSTR arasında dönüştürme yapmak için LPCTSTR işlecini sağlar `CString` .
 
-`CString`Ayrıca Unicode kullanan oluşturucular, atama işleçleri ve karşılaştırma işleçleri sağlar.
+`CString` Ayrıca Unicode kullanan oluşturucular, atama işleçleri ve karşılaştırma işleçleri sağlar.
 
 [Çalışma zamanı kitaplık başvurusu](../c-runtime-library/c-run-time-library-reference.md) , tüm dize işleme işlevlerinin taşınabilir sürümlerini tanımlar. Daha fazla bilgi için bkz. Kategori [Uluslararası duruma getirme](../c-runtime-library/internationalization.md).
 
@@ -78,9 +99,9 @@ DBCS altında, belirli bir dize tüm tek baytlı ANSI karakterlerini, tüm çift
 > [!NOTE]
 > MFC 'de Unicode dize serileştirme, çalıştırdığınız uygulamanın hangi sürümünden bağımsız olarak hem Unicode hem de MBCS dizelerini okuyabilir. Veri dosyalarınız, programınızın Unicode ve MBCS sürümleri arasında taşınabilir.
 
-`CString`üye işlevleri, çağırdıkları C çalışma zamanı işlevlerinin özel "genel metin" sürümlerini kullanır veya Unicode kullanan işlevleri kullanır. Bu nedenle, örneğin, bir `CString` işlev genellikle çağrıyorsa, `strcmp` bunun yerine karşılık gelen genel metin işlevini çağırır `_tcscmp` . Simgelerin _MBCS ve _UNICODE nasıl tanımlandığına bağlı olarak, `_tcscmp` aşağıdaki gibi haritalar:
+`CString` üye işlevleri, çağırdıkları C çalışma zamanı işlevlerinin özel "genel metin" sürümlerini kullanır veya Unicode kullanan işlevleri kullanır. Bu nedenle, örneğin, bir `CString` işlev genellikle çağrıyorsa, `strcmp` bunun yerine karşılık gelen genel metin işlevini çağırır `_tcscmp` . Simgelerin _MBCS ve _UNICODE nasıl tanımlandığına bağlı olarak, `_tcscmp` aşağıdaki gibi haritalar:
 
-|||
+|Simgeleri|İşlev|
 |-|-|
 |_MBCS tanımlanmış|`_mbscmp`|
 |_UNICODE tanımlanmış|`wcscmp`|

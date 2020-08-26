@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-ms.openlocfilehash: b9da0de64bbb0ef48a6a9741ff941e6abda0e705
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f3f6c4886d22c7cd12b29950c114fbcde8905c28
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449203"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845750"
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 
-Her birinin tek bir \<bağımsız değişken aldığı birkaç işlem tanımlamak için iomanıp > Standartüstbilgisiniekleyin.`iostreams`
+`iostreams` \<iomanip> Her birinin tek bir bağımsız değişken aldığı birkaç işlem tanımlamak için standart üstbilgiyi ekleyin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <iomanip>
@@ -26,11 +26,11 @@ Her birinin tek bir \<bağımsız değişken aldığı birkaç işlem tanımlama
 
 ## <a name="remarks"></a>Açıklamalar
 
-`T1` Bu işleçlerden her biri, ile `T10`çağrılan belirtilmemiş bir tür döndürür ve hem **elee**, **tr**> `basic_istream``::`[işleci > >](../standard-library/istream-operators.md#op_gt_gt) hem de \< `basic_ostream` **Eled**, trişleci><[<](../standard-library/ostream-operators.md#op_lt_lt).`::` \<
+Bu işleçlerden her biri `T1` `T10` , hem `basic_istream` \<**Elem**, **Tr**> `::` [işleç>>](../standard-library/istream-operators.md#op_gt_gt) hem de `basic_ostream` \<**Elem**, **Tr**> `::` [işleç<<](../standard-library/ostream-operators.md#op_lt_lt)aşırı yükleyen, ile çağrılan belirtilmemiş bir tür döndürür.
 
 ### <a name="manipulators"></a>Manipülatörleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[get_money](../standard-library/iomanip-functions.md#iomanip_get_money)|İsteğe bağlı olarak uluslararası biçimde parasal bir miktar alır.|
 |[get_time](../standard-library/iomanip-functions.md#iomanip_get_time)|Belirtilen biçimi kullanarak zaman yapısında bir zaman alır.|
@@ -47,6 +47,6 @@ Her birinin tek bir \<bağımsız değişken aldığı birkaç işlem tanımlama
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart kitaplıkta Iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [iostream programlama](../standard-library/iostream-programming.md)\
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)
+[iostreams kuralları](../standard-library/iostreams-conventions.md)

@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: 3c95f4a982e23d757b330ecadcae5cfbfd6fd531
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec458f5d4a47b6eced939c4fe346d5d0414ea7c2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213079"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839133"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -32,7 +32,7 @@ ref class Map sealed;
 *K*<br/>
 Anahtar-değer çiftindeki anahtar türü.
 
-*V*<br/>
+*Yönetim*<br/>
 Anahtar-değer çiftindeki değerin türü.
 
 *,*<br/>
@@ -77,12 +77,11 @@ Daha fazla bilgi için bkz. [koleksiyonlar](../cppcx/collections-c-cx.md).
 |[UnorderedMap:: Remove](#remove)|Belirtilen anahtar-değer çiftini geçerli harita nesnesinden siler.|
 |[UnorderedMap:: size](#size)|Geçerli harita nesnesindeki öğe sayısını döndürür.|
 
-### <a name="events"></a>Olaylar
+### <a name="events"></a>Ekinlikler
 
-|||
-|-|-|
-|Ad|Açıklama|
-|[Map:: MapChanged](#mapchanged) olayı|Eşleme değiştiğinde gerçekleşir.|
+| Ad | Açıklama |
+|--|--|
+| [Map:: MapChanged](#mapchanged) olayı | Eşleme değiştiğinde gerçekleşir. |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -94,21 +93,21 @@ Daha fazla bilgi için bkz. [koleksiyonlar](../cppcx/collections-c-cx.md).
 
 **Ad alanı:** Platform:: Collections
 
-## <a name="unorderedmapclear-method"></a><a name="clear"></a>UnorderedMap:: Clear yöntemi
+## <a name="unorderedmapclear-method"></a><a name="clear"></a> UnorderedMap:: Clear yöntemi
 
 Geçerli UnorderedMap nesnesinden tüm anahtar-değer çiftlerini kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual void Clear();
 ```
 
-## <a name="unorderedmapfirst-method"></a><a name="first"></a>UnorderedMap:: First yöntemi
+## <a name="unorderedmapfirst-method"></a><a name="first"></a> UnorderedMap:: First yöntemi
 
 Sıralanmamış eşlemede ilk [Windows:: Foundation:: Collections:: IKeyValuePair \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğesini belirten bir yineleyici döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual Windows::Foundation::Collections::IIterator<
@@ -124,11 +123,11 @@ Eşlemedeki ilk öğeyi belirten bir yineleyici.
 
 Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **`auto`** tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myUnorderedMap->First();`.
 
-## <a name="unorderedmapgetview-method"></a><a name="getview"></a>UnorderedMap:: GetView yöntemi
+## <a name="unorderedmapgetview-method"></a><a name="getview"></a> UnorderedMap:: GetView yöntemi
 
 Geçerli UnorderedMap 'in salt okunurdur görünümünü döndürür; diğer bir deyişle, [Windows:: Foundation:: Collections:: ımapview:: ımapview](/uwp/api/windows.foundation.collections.imapview-2) arabirimini uygulayan bir [Platform:: Collections:: Unorderedmapview sınıfı](../cppcx/platform-collections-unorderedmapview-class.md) .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Windows::Foundation::Collections::IMapView<K, V>^ GetView();
@@ -138,7 +137,7 @@ Windows::Foundation::Collections::IMapView<K, V>^ GetView();
 
 Bir `UnorderedMapView` nesnesi.
 
-## <a name="unorderedmaphaskey-method"></a><a name="haskey"></a>UnorderedMap:: HasKey yöntemi
+## <a name="unorderedmaphaskey-method"></a><a name="haskey"></a> UnorderedMap:: HasKey yöntemi
 
 Geçerli UnorderedMap 'in belirtilen anahtarı içerip içermediğini belirler.
 
@@ -159,7 +158,7 @@ UnorderedMap öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeNa
 
 **`true`** anahtar bulunursa; Aksi takdirde, **`false`** .
 
-## <a name="unorderedmapinsert-method"></a><a name="insert"></a>UnorderedMap:: Insert yöntemi
+## <a name="unorderedmapinsert-method"></a><a name="insert"></a> UnorderedMap:: Insert yöntemi
 
 Belirtilen anahtar-değer çiftini geçerli UnorderedMap nesnesine ekler.
 
@@ -184,7 +183,7 @@ Anahtar-değer çiftinin değer kısmı. *Değer* türü, TypeName *V*' dir.
 
 **`true`** geçerli haritadaki var olan bir *öğenin anahtarı ile eşleşiyorsa ve* bu öğenin değer kısmı *değer*olarak ayarlanmışsa. **`false`** geçerli Haritadaki mevcut bir öğe *anahtarla* eşleşmez ve anahtar ve *değer* *parametreleri anahtar-* değer çiftinde yapılır ve sonra geçerli unorderedmap 'e eklenir.
 
-## <a name="unorderedmaplookup-method"></a><a name="lookup"></a>UnorderedMap:: Lookup yöntemi
+## <a name="unorderedmaplookup-method"></a><a name="lookup"></a> UnorderedMap:: Lookup yöntemi
 
 K türünde belirtilen anahtarla ilişkilendirilen V türü değerini alır.
 
@@ -205,11 +204,11 @@ UnorderedMap içindeki bir öğeyi bulmak için kullanılan anahtar. *Anahtar* t
 
 *Anahtarla*eşleştirilmiş değer. Dönüş değerinin türü, TypeName *V*.
 
-## <a name="unorderedmapmapchanged"></a><a name="mapchanged"></a>UnorderedMap:: MapChanged
+## <a name="unorderedmapmapchanged"></a><a name="mapchanged"></a> UnorderedMap:: MapChanged
 
 Haritaya bir öğe eklendiğinde veya haritada kaldırıldığında oluşturulur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
@@ -223,7 +222,7 @@ Olayı tetikleyen nesne ve gerçekleşen değişiklik türü hakkında bilgi iç
 
 C# ABD veya proje IMAP 'yi \<K,V> IDictionary olarak Visual Basic Windows çalışma zamanı uygulamalar \<K,V> .
 
-## <a name="unorderedmapremove-method"></a><a name="remove"></a>UnorderedMap:: Remove yöntemi
+## <a name="unorderedmapremove-method"></a><a name="remove"></a> UnorderedMap:: Remove yöntemi
 
 Belirtilen anahtar-değer çiftini UnorderedMap nesnesinden siler.
 
@@ -239,11 +238,11 @@ virtual void Remove(
 *anahtar*<br/>
 Anahtar-değer çiftinin anahtar bölümü. *Anahtar* türü TypeName *K*.
 
-## <a name="unorderedmapsize-method"></a><a name="size"></a>UnorderedMap:: size yöntemi
+## <a name="unorderedmapsize-method"></a><a name="size"></a> UnorderedMap:: size yöntemi
 
 UnorderedMap içindeki [Windows:: Foundation:: Collections:: IKeyValuePair \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) öğelerinin sayısını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 virtual property unsigned int Size;
@@ -253,7 +252,7 @@ virtual property unsigned int Size;
 
 Sıralanmamış haritadaki öğelerin sayısı.
 
-## <a name="unorderedmapunorderedmap-constructor"></a><a name="ctor"></a>UnorderedMap:: UnorderedMap Oluşturucusu
+## <a name="unorderedmapunorderedmap-constructor"></a><a name="ctor"></a> UnorderedMap:: UnorderedMap Oluşturucusu
 
 UnorderedMap sınıfının yeni bir örneğini başlatır.
 

@@ -36,18 +36,18 @@ helpviewer_keywords:
 - file names [C++], temporary
 - wtmpnam_s function
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
-ms.openlocfilehash: 4839cb6baae8f163ac5e5efd8fecfab43f599d19
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2168a1bef5b8eb20a1f59460146559f4fa9f2645
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917483"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88831586"
 ---
 # <a name="tmpnam_s-_wtmpnam_s"></a>tmpnam_s, _wtmpnam_s
 
 Geçici dosyalar oluşturmak için kullanabileceğiniz adlar oluşturun. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [tmpnam ve _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) sürümleridir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 errno_t tmpnam_s(
@@ -82,11 +82,10 @@ Bu işlevlerin her ikisi de başarılı olursa 0 veya hata durumunda bir hata nu
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|||||
-|-|-|-|-|
-|*üstbilgisine*|*Sizeınchars*|**Dönüş Değeri**|**Contents of***Str* içeriği  |
-|**DEĞER**|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|**null** değil (geçerli belleğe işaret eder)|çok kısa|**ERANGE**|değiştirilmedi|
+| *üstbilgisine* | *Sizeınchars* | **Dönüş Değeri** | **Contents of** *Str* içeriği |
+|--|--|--|--|
+| **DEĞER** | herhangi biri | **EıNVAL** | değiştirilmedi |
+| **null** değil (geçerli belleğe işaret eder) | çok kısa | **ERANGE** | değiştirilmedi |
 
 *Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
 
@@ -112,8 +111,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**tmpnam_s**|\<stdio. h>|
-|**_wtmpnam_s**|\<stdio. h> veya \<wchar. h>|
+|**tmpnam_s**|\<stdio.h>|
+|**_wtmpnam_s**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -170,7 +169,7 @@ C:\Users\LocalUser\AppData\Local\Temp\u19q8.e is safe to use as a temporary file
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_getmbcp](getmbcp.md)<br/>
 [malloc](malloc.md)<br/>
 [_setmbcp](setmbcp.md)<br/>

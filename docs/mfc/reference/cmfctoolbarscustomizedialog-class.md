@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: fc313a5cb6e9ce6ebd06ed0432f99203a0f1ff4d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a61cefa7f844062fcca42711ce6515180066b919
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182921"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839107"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 
@@ -37,7 +37,7 @@ Kullanıcının araç çubuklarını, menüleri, klavye kısayollarını, Kullan
 
 **Özelleştir** iletişim kutusunda altı sekme vardır: **Komutlar**, **araç çubukları**, **Araçlar**, **klavye**, **menü**ve **Seçenekler**.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCToolBarsCustomizeDialog : public CPropertySheet
@@ -116,7 +116,7 @@ Aşağıdaki örnek, sınıfında çeşitli yöntemlerin nasıl kullanıldığı
 
 **Üstbilgi:** afxToolBarsCustomizeDialog. h
 
-## <a name="cmfctoolbarscustomizedialogaddbutton"></a><a name="addbutton"></a>CMFCToolBarsCustomizeDialog:: AddButton
+## <a name="cmfctoolbarscustomizedialogaddbutton"></a><a name="addbutton"></a> CMFCToolBarsCustomizeDialog:: AddButton
 
 **Komutlar** sayfasındaki komutlar listesine bir araç çubuğu düğmesi ekler.
 
@@ -162,7 +162,7 @@ Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını göste
 
 [!code-cpp[NVC_MFC_Slider#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_2.cpp)]
 
-## <a name="cmfctoolbarscustomizedialogaddmenu"></a><a name="addmenu"></a>CMFCToolBarsCustomizeDialog:: MenüEkle
+## <a name="cmfctoolbarscustomizedialogaddmenu"></a><a name="addmenu"></a> CMFCToolBarsCustomizeDialog:: MenüEkle
 
 Kaynaklardan bir menü yükler ve **Komutlar** sayfasındaki komutlar listesine eklemek için [CMFCToolBarsCustomizeDialog:: AddMenuCommands](#addmenucommands) ' i çağırır.
 
@@ -183,7 +183,7 @@ Bir menü başarıyla eklendiyse doğru; Aksi halde yanlış.
 
 Çağrısında `AddMenuCommands` *BPOPUP* false şeklindedir. Sonuç olarak, bu yöntem alt menüler içeren menü öğelerini komut listesine eklemez. Bu yöntem, alt menülerde menü öğelerini komut listesine ekler.
 
-## <a name="cmfctoolbarscustomizedialogaddmenucommands"></a><a name="addmenucommands"></a>CMFCToolBarsCustomizeDialog:: AddMenuCommands
+## <a name="cmfctoolbarscustomizedialogaddmenucommands"></a><a name="addmenucommands"></a> CMFCToolBarsCustomizeDialog:: AddMenuCommands
 
 Belirtilen menüdeki tüm öğeleri göstermek için **Komutlar** sayfasındaki komutlar listesine öğe ekler.
 
@@ -215,7 +215,7 @@ void AddMenuCommands(
 
 *BPopup* true ise, bir alt menü içeren her bir menü öğesi için, bu yöntem bir [Cmfctoolbarmenubtan Class](../../mfc/reference/cmfctoolbarmenubutton-class.md) nesnesi oluşturur ve çağırarak komutları listesine ekler `AddButton` . Aksi halde alt menüler içeren menü öğeleri komut listesinde gösterilmez. Her iki durumda da, alt menüye `AddMenuCommands` sahip bir menü öğesiyle karşılaştığında, bir Işaretçiyi *pMenu* parametresi olarak alt menüye bir işaretçi geçirerek ve alt menünün etiketini *lpszMenuPath*' ye ekleyerek kendisini yinelemeli olarak çağırır.
 
-## <a name="cmfctoolbarscustomizedialogaddtoolbar"></a><a name="addtoolbar"></a>CMFCToolBarsCustomizeDialog:: AddToolBar
+## <a name="cmfctoolbarscustomizedialogaddtoolbar"></a><a name="addtoolbar"></a> CMFCToolBarsCustomizeDialog:: AddToolBar
 
 Kaynaklardan bir araç çubuğu yükler. Ardından, menüdeki her komut için, belirtilen kategori altındaki **Komutlar** sayfasında komutlar listesine bir düğme eklemek için [CMFCToolBarsCustomizeDialog:: AddButton](#addbutton) yöntemini çağırır.
 
@@ -254,7 +254,7 @@ Aşağıdaki örnek, sınıfında yönteminin nasıl kullanılacağını göster
 
 Her bir komutu temsil etmek için kullanılan denetim bir [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) nesnesidir. Araç çubuğunu ekledikten sonra, [CMFCToolBarsCustomizeDialog:: ReplaceButton](#replacebutton)öğesini çağırarak düğme türetilmiş bir tür denetimiyle değiştirebilirsiniz.
 
-## <a name="cmfctoolbarscustomizedialogchecktoolsvalidity"></a><a name="checktoolsvalidity"></a>CMFCToolBarsCustomizeDialog:: Checkaraçları geçerliliği
+## <a name="cmfctoolbarscustomizedialogchecktoolsvalidity"></a><a name="checktoolsvalidity"></a> CMFCToolBarsCustomizeDialog:: Checkaraçları geçerliliği
 
 Kullanıcı araçları listesinin geçerliliğini doğrular.
 
@@ -277,7 +277,7 @@ Framework, [CMFCToolBarsCustomizeDialog:: Checkaraçları geçerliliği](#checkt
 
 `CheckToolsValidity` `CMFCToolBarsCustomizeDialog` Kullanıcı iletişim kutusunu kapatmadan önce kullanıcı araçlarını doğrulamak istiyorsanız, öğesinden türetilmiş bir sınıftaki yöntemi geçersiz kılın. Kullanıcı iletişim kutusunun sağ üst köşesindeki **Kapat** düğmesine veya iletişim kutusunun sağ alt köşesinde **Kapat** etiketli düğmeye tıkladığında bu yöntem false döndürürse, Iletişim kutusunda kapatma yerine **Araçlar** sekmesi görüntülenir. Bu yöntem, Kullanıcı **Araçlar** sekmesinden uzaklaşmak üzere bir SEKMEYE tıkladığında false döndürürse, gezinti gerçekleşmez. Kullanıcıya doğrulamanın başarısız olmasına neden olan sorunu bilgilendirmek için uygun bir ileti kutusu görüntülenmelidir.
 
-## <a name="cmfctoolbarscustomizedialogcmfctoolbarscustomizedialog"></a><a name="cmfctoolbarscustomizedialog"></a>CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog
+## <a name="cmfctoolbarscustomizedialogcmfctoolbarscustomizedialog"></a><a name="cmfctoolbarscustomizedialog"></a> CMFCToolBarsCustomizeDialog::CMFCToolBarsCustomizeDialog
 
 Bir `CMFCToolBarsCustomizeDialog` nesnesi oluşturur.
 
@@ -317,7 +317,7 @@ CMFCToolBarsCustomizeDialog(
 - AFX_CUSTOMIZE_NO_LARGE_ICONS
 
 *plistCustomPages*<br/>
-'ndaki `CRuntimeClass`Ek özel sayfalar belirten nesne listesi için bir işaretçi.
+'ndaki `CRuntimeClass` Ek özel sayfalar belirten nesne listesi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -331,7 +331,7 @@ Aşağıdaki örnek, sınıfının bir nesnesinin nasıl oluşturulduğunu göst
 
 [!code-cpp[NVC_MFC_CustomPages#3](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_4.cpp)]
 
-## <a name="cmfctoolbarscustomizedialogcreate"></a><a name="create"></a>CMFCToolBarsCustomizeDialog:: Create
+## <a name="cmfctoolbarscustomizedialogcreate"></a><a name="create"></a> CMFCToolBarsCustomizeDialog:: Create
 
 **Özelleştirme** iletişim kutusunu görüntüler.
 
@@ -347,7 +347,7 @@ virtual BOOL Create();
 
 `Create`Yalnızca sınıfı tam olarak başlattıktan sonra yöntemi çağırın.
 
-## <a name="cmfctoolbarscustomizedialogenableuserdefinedtoolbars"></a><a name="enableuserdefinedtoolbars"></a>CMFCToolBarsCustomizeDialog:: EnableUserDefinedToolbars
+## <a name="cmfctoolbarscustomizedialogenableuserdefinedtoolbars"></a><a name="enableuserdefinedtoolbars"></a> CMFCToolBarsCustomizeDialog:: EnableUserDefinedToolbars
 
 **Özelleştir** iletişim kutusunu kullanarak yeni araç çubuklarını oluşturmayı mümkün veya devre dışı bırakır.
 
@@ -366,7 +366,7 @@ void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
 
 Varsayılan olarak veya *bEnable* false ise, bu düğmeler görüntülenmez ve Kullanıcı yeni araç çubuklarını tanımlayamazlar.
 
-## <a name="cmfctoolbarscustomizedialogfillallcommandslist"></a><a name="fillallcommandslist"></a>CMFCToolBarsCustomizeDialog::FillAllCommandsList
+## <a name="cmfctoolbarscustomizedialogfillallcommandslist"></a><a name="fillallcommandslist"></a> CMFCToolBarsCustomizeDialog::FillAllCommandsList
 
 `CListBox` **Tüm komutlar** kategorisindeki komutlarla, belirtilen nesneyi doldurur.
 
@@ -377,7 +377,7 @@ virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ### <a name="parameters"></a>Parametreler
 
 *Wndlıfcommands*<br/>
-dışı `CListBox`Doldurulması için nesneye bir başvuru.
+dışı `CListBox` Doldurulması için nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -387,7 +387,7 @@ Bu yöntem, `CListBox` **tüm komutlar** kategorisindeki komutlarla doldurulmada
 
 `CMFCMousePropertyPage`Sınıfı, Çift tıklama olay listesi kutusunu doldurmak için bu yöntemi kullanır.
 
-## <a name="cmfctoolbarscustomizedialogfillcategoriescombobox"></a><a name="fillcategoriescombobox"></a>CMFCToolBarsCustomizeDialog:: FillCategoriesComboBox
+## <a name="cmfctoolbarscustomizedialogfillcategoriescombobox"></a><a name="fillcategoriescombobox"></a> CMFCToolBarsCustomizeDialog:: FillCategoriesComboBox
 
 Belirtilen `CComboBox` nesneyi **Özelleştir** iletişim kutusundaki her komut kategorisinin adıyla doldurur.
 
@@ -400,7 +400,7 @@ void FillCategoriesComboBox(
 ### <a name="parameters"></a>Parametreler
 
 *wndCategory*<br/>
-dışı `CComboBox`Doldurulması için nesneye bir başvuru.
+dışı `CComboBox` Doldurulması için nesneye bir başvuru.
 
 *bAddEmpty*<br/>
 'ndaki Birleşik giriş kutusuna komutlarına sahip olmayan kategoriler eklenip eklenmeyeceğini belirten bir Boole değeri. Bu parametre TRUE ise, açılan kutuya boş kategoriler eklenir. Aksi takdirde boş kategoriler eklenmez.
@@ -415,7 +415,7 @@ Bu yöntem, nesnenin içeriğini doldurmadan önce temizlemez `CComboBox` . **T�
 
 `CMFCToolBarsKeyboardPropertyPage`Ve `CMFCKeyMapDialog` sınıfları, klavye eşlemelerini sınıflandırmak için bu yöntemi kullanır.
 
-## <a name="cmfctoolbarscustomizedialogfillcategorieslistbox"></a><a name="fillcategorieslistbox"></a>CMFCToolBarsCustomizeDialog:: FillCategoriesListBox
+## <a name="cmfctoolbarscustomizedialogfillcategorieslistbox"></a><a name="fillcategorieslistbox"></a> CMFCToolBarsCustomizeDialog:: FillCategoriesListBox
 
 Belirtilen `CListBox` nesneyi **Özelleştir** iletişim kutusundaki her komut kategorisinin adıyla doldurur.
 
@@ -428,7 +428,7 @@ void FillCategoriesListBox(
 ### <a name="parameters"></a>Parametreler
 
 *wndCategory*<br/>
-dışı `CListBox`Doldurulması için nesneye bir başvuru.
+dışı `CListBox` Doldurulması için nesneye bir başvuru.
 
 *bAddEmpty*<br/>
 'ndaki Liste kutusuna komutlarına sahip olmayan kategoriler eklenip eklenmeyeceğini belirten bir Boole değeri. Bu parametre TRUE ise, liste kutusuna boş kategoriler eklenir. Aksi takdirde boş kategoriler eklenmez.
@@ -443,7 +443,7 @@ Bu yöntem, nesnenin içeriğini doldurmadan önce temizlemez `CListBox` . **Tü
 
 `CMFCToolBarsCommandsPropertyPage`Sınıfı, her komut kategorisiyle ilişkili komutların listesini göstermek için bu yöntemi kullanır.
 
-## <a name="cmfctoolbarscustomizedialoggetcommandname"></a><a name="getcommandname"></a>CMFCToolBarsCustomizeDialog:: GetCommandName
+## <a name="cmfctoolbarscustomizedialoggetcommandname"></a><a name="getcommandname"></a> CMFCToolBarsCustomizeDialog:: GetCommandName
 
 Verilen komut KIMLIĞIYLE ilişkili olan adı alır.
 
@@ -460,7 +460,7 @@ LPCTSTR GetCommandName(UINT uiCmd) const;
 
 Verilen komut KIMLIĞIYLE ilişkili ad veya komut yoksa NULL.
 
-## <a name="cmfctoolbarscustomizedialoggetcountincategory"></a><a name="getcountincategory"></a>CMFCToolBarsCustomizeDialog:: Getcounıncategory
+## <a name="cmfctoolbarscustomizedialoggetcountincategory"></a><a name="getcountincategory"></a> CMFCToolBarsCustomizeDialog:: Getcounıncategory
 
 Sağlanan listede verilen metin etiketine sahip öğelerin sayısını alır.
 
@@ -486,7 +486,7 @@ Belirtilen listedeki metin etiketini *lpszItemName*eşit olan öğelerin sayıs�
 
 Belirtilen nesne listesindeki her öğe türünde olmalıdır `CMFCToolBarButton` . Bu yöntem, *lpszItemName* Ile [CMFCToolBarButton:: m_strText](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext) veri üyesiyle karşılaştırılır.
 
-## <a name="cmfctoolbarscustomizedialoggetflags"></a><a name="getflags"></a>CMFCToolBarsCustomizeDialog:: GetFlags
+## <a name="cmfctoolbarscustomizedialoggetflags"></a><a name="getflags"></a> CMFCToolBarsCustomizeDialog:: GetFlags
 
 İletişim kutusunun davranışını etkileyen bayrak kümesini alır.
 
@@ -502,7 +502,7 @@ UINT GetFlags() const;
 
 Bu yöntem, oluşturucuya geçirilen *Uıiflags* parametresinin değerini alır. Dönüş değeri aşağıdaki değerlerden biri veya daha fazlası olabilir:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |AFX_CUSTOMIZE_MENU_SHADOWS|Kullanıcının menünün gölge görünümünü belirlemesine izin verir.  |
 |AFX_CUSTOMIZE_TEXT_LABELS|Kullanıcının araç çubuğu düğmesi görüntülerinin altında metin etiketlerinin gösterilip gösterilmeyeceğini belirlemesine izin verir.  |
@@ -515,7 +515,7 @@ Bu yöntem, oluşturucuya geçirilen *Uıiflags* parametresinin değerini alır.
 
 WS_EX_CONTEXTHELP görsel stili hakkında daha fazla bilgi için bkz. [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles).
 
-## <a name="cmfctoolbarscustomizedialogonafterchangetool"></a><a name="onafterchangetool"></a>CMFCToolBarsCustomizeDialog:: OnAfterChangeTool
+## <a name="cmfctoolbarscustomizedialogonafterchangetool"></a><a name="onafterchangetool"></a> CMFCToolBarsCustomizeDialog:: OnAfterChangeTool
 
 Bir kullanıcı aracında bir değişikliği oluştuktan hemen sonra yanıtlar.
 
@@ -530,9 +530,9 @@ virtual void OnAfterChangeTool(CUserTool* pSelTool);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Kullanıcı tanımlı bir aracın özelliklerini değiştirdiğinde Framework tarafından çağrılır. Varsayılan uygulama hiçbir şey yapmaz. Bir `CMFCToolBarsCustomizeDialog` Kullanıcı aracında değişiklik yapıldıktan sonra işlemeyi gerçekleştirmek için öğesinden türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
+Bu yöntem, Kullanıcı tanımlı bir aracın özelliklerini değiştirdiğinde Framework tarafından çağrılır. Varsayılan uygulama hiçbir şey yapmaz. Bir `CMFCToolBarsCustomizeDialog`  Kullanıcı aracında değişiklik yapıldıktan sonra işlemeyi gerçekleştirmek için öğesinden türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-## <a name="cmfctoolbarscustomizedialogonassignkey"></a><a name="onassignkey"></a>CMFCToolBarsCustomizeDialog:: Onatamaanahtarı
+## <a name="cmfctoolbarscustomizedialogonassignkey"></a><a name="onassignkey"></a> CMFCToolBarsCustomizeDialog:: Onatamaanahtarı
 
 Klavye kısayollarını kullanıcı tarafından tanımladığı şekilde doğrular.
 
@@ -553,7 +553,7 @@ Anahtar atanabiliyorsa TRUE, anahtar atanacaksa FALSE. Varsayılan uygulama her 
 
 Bir Kullanıcı yeni bir klavye kısayolu atarken veya Kullanıcı tarafından tanımlandığında klavye kısayollarını doğrulayacağından, daha fazla işlem gerçekleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın. Bir kısayolun atanmasını engellemek için FALSE döndürün. Ayrıca, bir ileti kutusu görüntülemelidir veya kullanıcıya klavye kısayolunun reddedilme nedenini bildirmeniz gerekir.
 
-## <a name="cmfctoolbarscustomizedialogonbeforechangetool"></a><a name="onbeforechangetool"></a>CMFCToolBarsCustomizeDialog:: OnBeforeChangeTool
+## <a name="cmfctoolbarscustomizedialogonbeforechangetool"></a><a name="onbeforechangetool"></a> CMFCToolBarsCustomizeDialog:: OnBeforeChangeTool
 
 Kullanıcı bir değişiklik uygulamak üzere olduğunda kullanıcı aracında değişiklik yapıldığında özel işleme gerçekleştirir.
 
@@ -570,7 +570,7 @@ virtual void OnBeforeChangeTool(CUserTool* pSelTool);
 
 Bu yöntem, Kullanıcı tanımlı bir aracın özellikleri değiştirmek üzereyken Framework tarafından çağırılır. Varsayılan uygulama hiçbir şey yapmaz. `OnBeforeChangeTool` `CMFCToolBarsCustomizeDialog` , *PSelTool* 'un kullandığı kaynakları serbest bırakma gibi bir kullanıcı aracında değişiklik yapmadan önce işleme gerçekleştirmek istiyorsanız, öğesinden türetilmiş bir sınıftaki yöntemi geçersiz kılın.
 
-## <a name="cmfctoolbarscustomizedialogonedittoolbarmenuimage"></a><a name="onedittoolbarmenuimage"></a>CMFCToolBarsCustomizeDialog:: OnEditToolbarMenuImage
+## <a name="cmfctoolbarscustomizedialogonedittoolbarmenuimage"></a><a name="onedittoolbarmenuimage"></a> CMFCToolBarsCustomizeDialog:: OnEditToolbarMenuImage
 
 Kullanıcının bir araç çubuğu düğmesini veya menü öğesi simgesini özelleştirebilmesi için bir görüntü Düzenleyicisi başlatır.
 
@@ -600,7 +600,7 @@ Bir değişiklik yürütüliyorsa TRUE; Aksi halde yanlış. Varsayılan uygulam
 
 Bu yöntem, Kullanıcı görüntü düzenleyicisini çalıştırdığında Framework tarafından çağırılır. Varsayılan uygulama [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md) iletişim kutusunu görüntüler. `OnEditToolbarMenuImage`Özel bir görüntü Düzenleyicisi kullanmak için türetilmiş bir sınıfta geçersiz kılın.
 
-## <a name="cmfctoolbarscustomizedialogoninitdialog"></a><a name="oninitdialog"></a>CMFCToolBarsCustomizeDialog:: OnInitDialog
+## <a name="cmfctoolbarscustomizedialogoninitdialog"></a><a name="oninitdialog"></a> CMFCToolBarsCustomizeDialog:: OnInitDialog
 
 Özellik sayfası başlatmasını artırmak için geçersiz kılar.
 
@@ -616,7 +616,7 @@ virtual BOOL OnInitDialog();
 
 Bu yöntem, iletişim kutusunun geçerli ekran boyutuna uygun olduğundan emin olarak ve **Yardım** düğmesini iletişim kutusunun sol alt köşesine **Close** taşıyarak, [CPropertySheet:: OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog)temel sınıf uygulamasını genişletir.
 
-## <a name="cmfctoolbarscustomizedialogoninittoolspage"></a><a name="oninittoolspage"></a>CMFCToolBarsCustomizeDialog:: Onınitaraçları sayfası
+## <a name="cmfctoolbarscustomizedialogoninittoolspage"></a><a name="oninittoolspage"></a> CMFCToolBarsCustomizeDialog:: Onınitaraçları sayfası
 
 **Araçlar** sayfasının başlatılması için olduğu çerçeveden gelen bildirimi işler.
 
@@ -628,7 +628,7 @@ virtual void OnInitToolsPage();
 
 Varsayılan uygulama hiçbir şey yapmaz. Bu bildirimi işlemek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-## <a name="cmfctoolbarscustomizedialogpostncdestroy"></a><a name="postncdestroy"></a>CMFCToolBarsCustomizeDialog::P ostNcDestroy
+## <a name="cmfctoolbarscustomizedialogpostncdestroy"></a><a name="postncdestroy"></a> CMFCToolBarsCustomizeDialog::P ostNcDestroy
 
 Pencere yok edildikten sonra Framework tarafından çağırılır.
 
@@ -642,7 +642,7 @@ Bu yöntem, `CPropertySheet::PostNcDestroy` uygulamayı önceki moda geri yükle
 
 [CMFCToolBarsCustomizeDialog:: Create](#create) yöntemi, uygulamayı özelleştirme görevlerini sınırlayan özel bir moda koyar.
 
-## <a name="cmfctoolbarscustomizedialogremovebutton"></a><a name="removebutton"></a>CMFCToolBarsCustomizeDialog:: RemoveButton
+## <a name="cmfctoolbarscustomizedialogremovebutton"></a><a name="removebutton"></a> CMFCToolBarsCustomizeDialog:: RemoveButton
 
 Belirtilen kategoriden veya tüm kategorilerden belirtilen komut KIMLIĞIYLE düğmeyi kaldırır.
 
@@ -675,7 +675,7 @@ Kaldırılan düğmenin sıfır tabanlı dizini veya belirtilen komut KIMLIĞI b
 
 Tüm kategorilerden bir düğmeyi kaldırmak için, bu yöntemin ilk tekrar yüklemesini çağırın ve *uiCategoryId* öğesini-1 olarak ayarlayın.
 
-## <a name="cmfctoolbarscustomizedialogrenamecategory"></a><a name="renamecategory"></a>CMFCToolBarsCustomizeDialog:: RenameCategory
+## <a name="cmfctoolbarscustomizedialogrenamecategory"></a><a name="renamecategory"></a> CMFCToolBarsCustomizeDialog:: RenameCategory
 
 **Komutlar** sayfasındaki kategorilerin liste kutusunda bir kategoriyi yeniden adlandırır.
 
@@ -701,7 +701,7 @@ Yöntem başarılı olduysa doğru; Aksi halde yanlış.
 
 Kategori adı benzersiz olmalıdır.
 
-## <a name="cmfctoolbarscustomizedialogreplacebutton"></a><a name="replacebutton"></a>CMFCToolBarsCustomizeDialog:: ReplaceButton
+## <a name="cmfctoolbarscustomizedialogreplacebutton"></a><a name="replacebutton"></a> CMFCToolBarsCustomizeDialog:: ReplaceButton
 
 **Komutlar** sayfasındaki komutların liste kutusunda bir araç çubuğu düğmesini değiştirir.
 
@@ -729,7 +729,7 @@ Aşağıdaki örnek, sınıfında yönteminin nasıl kullanılacağını göster
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#34](../../mfc/codesnippet/cpp/cmfctoolbarscustomizedialog-class_5.cpp)]
 
-## <a name="cmfctoolbarscustomizedialogsetusercategory"></a><a name="setusercategory"></a>CMFCToolBarsCustomizeDialog:: SetUserCategory
+## <a name="cmfctoolbarscustomizedialogsetusercategory"></a><a name="setusercategory"></a> CMFCToolBarsCustomizeDialog:: SetUserCategory
 
 **Komutlar** sayfasında kategori listesindeki hangi kategorinin Kullanıcı kategorisi olduğunu belirtir. [CMFCToolBarsCustomizeDialog:: Create](#create)çağrısını yapmadan önce bu işlevi çağırmanız gerekir.
 

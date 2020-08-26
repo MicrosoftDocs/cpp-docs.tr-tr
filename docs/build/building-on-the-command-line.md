@@ -10,12 +10,12 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-ms.openlocfilehash: f729947e4d798e5817ff8d4e5abe09eaca090e01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1fe8e59c85e0c6b00bff4de639267a44c6ae369e
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229902"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838808"
 ---
 # <a name="use-the-microsoft-c-toolset-from-the-command-line"></a>Komut satırından Microsoft C++ araç takımını kullanın
 
@@ -38,7 +38,7 @@ Gerekli ortam değişkenleri, yüklemenize ve seçtiğiniz yapı mimarisine özg
 
 Araç kümeleri, komut dosyaları ve kısayollar, bilgisayar işlemcinize ve yükleme sırasında seçtiğiniz seçeneklere bağlıdır. X86 ve x64 kod oluşturan x86 barındırılan araçlar ve çapraz Araçlar her zaman yüklenir. 64 bit Windows sürümü varsa, x86 ve x64 kodu oluşturan x64 tarafından barındırılan araçlar ve çapraz araçlar da yüklenir. İsteğe bağlı C++ Evrensel Windows Platformu Araçları ' nı seçerseniz, ARM ve ARM64 kodu oluşturan x86 ve x64 araçları da yüklenir. Diğer iş yükleri ek araçlar yükleyebiliriz.
 
-## <a name="developer-command-prompt-shortcuts"></a><a name="developer_command_prompt_shortcuts"></a>Geliştirici komut istemi kısayolları
+## <a name="developer-command-prompt-shortcuts"></a><a name="developer_command_prompt_shortcuts"></a> Geliştirici komut istemi kısayolları
 
 Komut istemi kısayolları, başlangıç menünüzde sürüme özgü bir Visual Studio klasörüne yüklenir. Temel komut istemi kısayollarının ve destekledikleri yapı mimarilerinin listesi aşağıda verilmiştir:
 
@@ -64,7 +64,7 @@ Başlat menüsü klasörü ve kısayol adları, Visual Studio 'nun yüklü sür�
 
 ::: moniker-end
 
-### <a name="to-open-a-developer-command-prompt-window"></a><a name="developer_command_prompt"></a>Bir geliştirici komut istemi penceresi açmak için
+### <a name="to-open-a-developer-command-prompt-window"></a><a name="developer_command_prompt"></a> Bir geliştirici komut istemi penceresi açmak için
 
 1. Masaüstünde, Windows **Başlat** menüsünü açın ve ardından Visual Studio sürümünüz için klasörü bulun ve açın. Örneğin, **Visual Studio 2019**.
 
@@ -72,7 +72,7 @@ Başlat menüsü klasörü ve kısayol adları, Visual Studio 'nun yüklü sür�
 
 Bir geliştirici komut istemi açmak için daha hızlı bir yol için, masaüstü arama kutusuna *Geliştirici komut istemi* ' ni girin. Ardından istediğiniz sonucu seçin.
 
-## <a name="developer-command-file-locations"></a><a name="developer_command_file_locations"></a>Geliştirici komut dosyası konumları
+## <a name="developer-command-file-locations"></a><a name="developer_command_file_locations"></a> Geliştirici komut dosyası konumları
 
 Yapı ortamını varolan bir komut istemi penceresinde ayarlamayı tercih ediyorsanız, yükleyici tarafından oluşturulan komut dosyalarından birini kullanabilirsiniz. Yeni bir komut istemi penceresinde ortamı ayarlamanızı öneririz. Aynı komut penceresindeki ortamları daha sonra geçmeniz önerilmez.
 
@@ -172,7 +172,7 @@ Visual Studio 2017 derleyici araç takımının belirli bir sürümünü belirtm
 
 Visual Studio 2015 derleyici araç takımını belirtmek için **-vcvars_ver = 14.0** kullanın.
 
-#### <a name="to-set-up-the-build-environment-in-an-existing-command-prompt-window"></a><a name="vcvarsall"></a>Derleme ortamını varolan bir komut istemi penceresinde ayarlamak için
+#### <a name="to-set-up-the-build-environment-in-an-existing-command-prompt-window"></a><a name="vcvarsall"></a> Derleme ortamını varolan bir komut istemi penceresinde ayarlamak için
 
 1. Komut isteminde, Visual Studio yükleme dizinine geçmek için CD komutunu kullanın. Ardından, yapılandırmaya özgü komut dosyalarını içeren alt dizine geçmek için CD 'yi yeniden kullanın. Visual Studio 2019 ve Visual Studio 2017 için, *VC \\ yardımcı \\ derleme* alt dizinini kullanın. Visual Studio 2015 için *VC* alt dizinini kullanın.
 
@@ -231,19 +231,19 @@ Bir komut isteminde C/C++ projesi oluşturmak için, Visual Studio şu komut sat
 [CL](reference/compiling-a-c-cpp-program.md)<br/>
 Kaynak kodu dosyalarını derlemek ve uygulamalar, kitaplıklar ve DLL 'Lerde bağlamak için derleyicisini (cl.exe) kullanın.
 
-[Bağlantı](reference/linking.md)<br/>
+[Bağlantısının](reference/linking.md)<br/>
 Derlenen nesne dosyalarını ve kitaplıklarını uygulamalar ve DLL 'Lere bağlamak için bağlayıcı (link.exe) kullanın.
 
 [NMAKE](reference/nmake-reference.md)<br/>
 Geleneksel derleme görevleri dosyasını temel alan C++ projeleri oluşturmak için Windows 'ta NMAKE (nmake.exe) kullanın.
 
-Komut satırında oluşturduğunuzda F1 komutu anında yardım için kullanılamaz. Bunun yerine, uyarılar, hatalar ve iletilerle ilgili bilgi almak için bir arama motoru kullanabilirsiniz. Ayrıca çevrimdışı Yardım dosyalarını indirebilir ve kullanabilirsiniz. Arama 'yı [docs.Microsoft.com](https://docs.microsoft.com/cpp/)içinde kullanmak için, herhangi bir makalenin üst kısmındaki arama kutusuna sorgunuzu girin.
+Komut satırında oluşturduğunuzda F1 komutu anında yardım için kullanılamaz. Bunun yerine, uyarılar, hatalar ve iletilerle ilgili bilgi almak için bir arama motoru kullanabilirsiniz. Ayrıca çevrimdışı Yardım dosyalarını indirebilir ve kullanabilirsiniz. Arama 'yı docs.microsoft.com içinde kullanmak için, herhangi bir makalenin üst kısmındaki arama kutusuna sorgunuzu girin.
 
 ## <a name="command-line-project-management-tools"></a>Komut satırı proje yönetimi araçları
 
 Visual Studio IDE, MSBuild 'e göre yerel bir proje yapı sistemi kullanır. Doğrudan MSBuild 'i çağırabilir veya IDE 'yi kullanmadan yerel proje sistemini kullanabilirsiniz:
 
-[MSBuild](msbuild-visual-cpp.md)<br/>
+[MSBUILD](msbuild-visual-cpp.md)<br/>
 Bir derlemeyi yapılandırmak ve araç takımını dolaylı olarak çağırmak için MSBuild (msbuild.exe) ve proje dosyası (. vcxproj) kullanın. Visual Studio IDE 'de **Build** Project veya **Build Solution** komutunu çalıştırmaya eşdeğerdir. Komut satırından MSBuild çalıştırmak, gelişmiş bir senaryodur ve sık önerilmez. Visual Studio sürüm 16,5 ' den başlayarak MSBuild, kullanılan araç takımını ve kitaplıkları denetlemek için komut satırı ortamını kullanmaz.
 
 [DEVENV](/visualstudio/ide/reference/devenv-command-line-switches)<br/>

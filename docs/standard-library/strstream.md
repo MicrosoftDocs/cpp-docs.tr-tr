@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - strstream header
 ms.assetid: eaa9d0d4-d217-4f28-8a68-9b9ad7b1c0f5
-ms.openlocfilehash: a7df541049aafd191e969eaa392ab3706f171926
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 13eea1101abca0f79f0d7c15405ceb3118707b67
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224610"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845659"
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 
@@ -34,7 +34,7 @@ Türündeki nesneler `strstream` **`char`** , C dizeleri olan * ile çalışır.
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[strstreamarabelleğe sınıfı](../standard-library/strstreambuf-class.md)|Sınıfı, bir dizi nesnesinde depolanan bir öğe dizisine ve öğesinden öğelerin aktarılmasını denetleyen bir akış arabelleği tanımlar **`char`** .|
 |[istrstream sınıfı](../standard-library/istrstream-class.md)|Sınıfı, [strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının Akış arabelleğindeki öğelerin ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesneyi tanımlar.|

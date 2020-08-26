@@ -95,18 +95,18 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: e66a183c7bbafa16b3aefea8da1472255b507468
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5c1c7bc381d30f701bad123807689b08ea47f65d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212129"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838470"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 
 Tek bir çağrıda birden çok satır tanıtıcısı alarak verileri toplu olarak çalışmak için satırları getirir ve yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class TAccessor>
@@ -126,7 +126,7 @@ Erişimci sınıfı.
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[AddRefRows](#addrefrows)|Başvuru sayısını artırır.|
 |[CBulkRowset](#cbulkrowset)|Oluşturucu.|
@@ -136,20 +136,20 @@ Erişimci sınıfı.
 |[MovePrev](#moveprev)|Önceki satıra gider.|
 |[MoveToBookmark](#movetobookmark)|Bir yer işareti tarafından işaretlenen satırı veya bu yer işaretinin belirtilen uzaklığında satırı getirir.|
 |[MoveToRatio](#movetoratio)|Satır kümesindeki kesirli konumdan başlayarak satırları getirir.|
-|[ReleaseRows](#releaserows)|Geçerli satırı (`m_nCurrentRow`) sıfıra ayarlar ve tüm satırları serbest bırakır.|
+|[ReleaseRows](#releaserows)|Geçerli satırı ( `m_nCurrentRow` ) sıfıra ayarlar ve tüm satırları serbest bırakır.|
 |[SetRows](#setrows)|Tek bir çağrı tarafından alınacak satır tanıtıcılarının sayısını ayarlar.|
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek `CBulkRowset` sınıfının kullanımını gösterir.
+Aşağıdaki örnek sınıfının kullanımını gösterir `CBulkRowset` .
 
 [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]
 
-## <a name="cbulkrowsetaddrefrows"></a><a name="addrefrows"></a>CBulkRowset:: AddRefRows
+## <a name="cbulkrowsetaddrefrows"></a><a name="addrefrows"></a> CBulkRowset:: AddRefRows
 
 Toplu satır kümesinden alınmış olan tüm satırların başvuru sayısını artırmak için [IRowset:: AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT AddRefRows() throw();
@@ -159,21 +159,21 @@ HRESULT AddRefRows() throw();
 
 Standart HRESULT.
 
-## <a name="cbulkrowsetcbulkrowset"></a><a name="cbulkrowset"></a>CBulkRowset:: CBulkRowset
+## <a name="cbulkrowsetcbulkrowset"></a><a name="cbulkrowset"></a> CBulkRowset:: CBulkRowset
 
-Yeni bir `CBulkRowset` nesnesi oluşturur ve varsayılan satır sayısını 10 olarak ayarlar.
+Yeni bir `CBulkRowset` nesne oluşturur ve varsayılan satır sayısını 10 olarak ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CBulkRowset();
 ```
 
-## <a name="cbulkrowsetmovefirst"></a><a name="movefirst"></a>CBulkRowset:: MoveFirst
+## <a name="cbulkrowsetmovefirst"></a><a name="movefirst"></a> CBulkRowset:: MoveFirst
 
 İlk veri satırını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MoveFirst() throw();
@@ -183,11 +183,11 @@ HRESULT MoveFirst() throw();
 
 Standart HRESULT.
 
-## <a name="cbulkrowsetmovelast"></a><a name="movelast"></a>CBulkRowset:: MoveLast
+## <a name="cbulkrowsetmovelast"></a><a name="movelast"></a> CBulkRowset:: MoveLast
 
 Son satıra gider.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MoveLast() throw();
@@ -197,11 +197,11 @@ HRESULT MoveLast() throw();
 
 Standart HRESULT.
 
-## <a name="cbulkrowsetmovenext"></a><a name="movenext"></a>CBulkRowset:: MoveNext
+## <a name="cbulkrowsetmovenext"></a><a name="movenext"></a> CBulkRowset:: MoveNext
 
 Sonraki veri satırını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MoveNext() throw();
@@ -211,11 +211,11 @@ HRESULT MoveNext() throw();
 
 Standart HRESULT. Satır kümesinin sonuna ulaşıldığında DB_S_ENDOFROWSET döndürür.
 
-## <a name="cbulkrowsetmoveprev"></a><a name="moveprev"></a>CBulkRowset:: Moveöncekini
+## <a name="cbulkrowsetmoveprev"></a><a name="moveprev"></a> CBulkRowset:: Moveöncekini
 
 Önceki satıra gider.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MovePrev() throw();
@@ -225,11 +225,11 @@ HRESULT MovePrev() throw();
 
 Standart HRESULT.
 
-## <a name="cbulkrowsetmovetobookmark"></a><a name="movetobookmark"></a>CBulkRowset:: MoveToBookmark
+## <a name="cbulkrowsetmovetobookmark"></a><a name="movetobookmark"></a> CBulkRowset:: MoveToBookmark
 
 Yer işaretiyle işaretlenmiş satırı veya belirtilen bir uzaklığında (*lSkip*) satırı bu yer işaretinden getirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
@@ -238,7 +238,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 #### <a name="parameters"></a>Parametreler
 
-*Yer işareti*<br/>
+*bookmark*<br/>
 'ndaki Veri getirmek istediğiniz konuma işaret eden bir yer işareti.
 
 *lSkip*<br/>
@@ -248,11 +248,11 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 *OLE DB Programcı başvurusunda* [IRowset:: GetData](/previous-versions/windows/desktop/ms716988(v=vs.85)) ' na bakın.
 
-## <a name="cbulkrowsetmovetoratio"></a><a name="movetoratio"></a>CBulkRowset:: MoveToRatio
+## <a name="cbulkrowsetmovetoratio"></a><a name="movetoratio"></a> CBulkRowset:: MoveToRatio
 
 Satır kümesindeki kesirli konumdan başlayarak satırları getirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
@@ -277,13 +277,13 @@ Standart HRESULT.
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-Burada `RowsetSize`, satır içinde ölçülen satır kümesinin boyutudur. Bu formülün doğruluğu, belirli sağlayıcıya bağlıdır. Ayrıntılar için *OLE DB Programcı başvurusunda* [IRowsetScroll:: GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) bölümüne bakın.
+Burada satır `RowsetSize` kümesinin, satırlarda ölçülen boyutudur. Bu formülün doğruluğu, belirli sağlayıcıya bağlıdır. Ayrıntılar için *OLE DB Programcı başvurusunda* [IRowsetScroll:: GetRowsAtRatio](/previous-versions/windows/desktop/ms709602(v=vs.85)) bölümüne bakın.
 
-## <a name="cbulkrowsetreleaserows"></a><a name="releaserows"></a>CBulkRowset:: ReleaseRows
+## <a name="cbulkrowsetreleaserows"></a><a name="releaserows"></a> CBulkRowset:: ReleaseRows
 
 Toplu satır kümesinden alınmış olan tüm satırların başvuru sayısını azaltmak için [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT ReleaseRows() throw();
@@ -293,11 +293,11 @@ HRESULT ReleaseRows() throw();
 
 Standart HRESULT.
 
-## <a name="cbulkrowsetsetrows"></a><a name="setrows"></a>CBulkRowset:: SetRows
+## <a name="cbulkrowsetsetrows"></a><a name="setrows"></a> CBulkRowset:: SetRows
 
 Her çağrının aldığı satır tanıtıcılarının sayısını ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void SetRows(DBROWCOUNT nRows) throw();
@@ -315,4 +315,4 @@ Bu işlevi çağırırsanız, satır kümesi açılmadan önce gelmelidir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

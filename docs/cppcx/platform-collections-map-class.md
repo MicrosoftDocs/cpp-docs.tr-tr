@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: 0ddb15507c97c0dfff48575e476b57fe91359239
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 40b7d653b21cdc2b0fab4c852c9809ab1db46a12
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610913"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839146"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform:: Collections:: Map sınıfı
 
@@ -90,10 +90,9 @@ Daha fazla bilgi için bkz. [koleksiyonlar](../cppcx/collections-c-cx.md).
 
 ### <a name="events"></a>Ekinlikler
 
-|||
-|-|-|
-|Ad|Açıklama|
-|[Map:: MapChanged](#mapchanged) olayı|Eşleme değiştiğinde gerçekleşir.|
+| Ad | Açıklama |
+|--|--|
+| [Map:: MapChanged](#mapchanged) olayı | Eşleme değiştiğinde gerçekleşir. |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 

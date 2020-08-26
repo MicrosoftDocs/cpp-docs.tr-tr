@@ -10,12 +10,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: f5a31843386d2246f5d74eae1f40b93f0ae35c90
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4918cd9df34e5c728c4aa2d90d4eb7f55784e4c2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452132"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845698"
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 
@@ -23,14 +23,14 @@ ms.locfileid: "68452132"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Denetlenen yineleyiciler tarafından oluşturulan uyarıların nasıl devre dışı bırakılacağı hakkında bilgi için, bkz. [_Scl_secure_no_uyarılar](../standard-library/scl-secure-no-warnings.md).
+Denetlenen yineleyiciler tarafından oluşturulan uyarıların nasıl devre dışı bırakılacağı hakkında bilgi için bkz. [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).
 
-Denetlenen yineleyiciler özelliğini etkinleştirmek veya devre dışı bırakmak için [ \_Yineleyici\_hata ayıklama\_düzeyi](../standard-library/iterator-debug-level.md) önişlemci makrosunu kullanabilirsiniz. _ITERATOR_DEBUG_LEVEL, 1 veya 2 olarak tanımlandıysa, yineleyicilerin güvenli olmayan kullanımı bir çalışma zamanı hatasına neden olur ve program sonlandırılır. 0 olarak tanımlanmışsa, işaretli yineleyiciler devre dışı bırakılır. Varsayılan olarak, _ıTERATOR_DEBUG_LEVEL değeri yayın yapıları için 0 ve hata ayıklama derlemeleri için 2 ' dir.
+Denetlenen yineleyiciler özelliğini etkinleştirmek veya devre dışı bırakmak için [ \_ Yineleyici \_ hata ayıklama \_ düzeyi](../standard-library/iterator-debug-level.md) önişlemci makrosunu kullanabilirsiniz. _ITERATOR_DEBUG_LEVEL 1 veya 2 olarak tanımlanırsa, yineleyicilerin güvenli olmayan kullanımı bir çalışma zamanı hatasına neden olur ve program sonlandırılır. 0 olarak tanımlanmışsa, işaretli yineleyiciler devre dışı bırakılır. Varsayılan olarak, _ITERATOR_DEBUG_LEVEL değeri yayın yapıları için 0 ve hata ayıklama yapıları için 2 ' dir.
 
 > [!IMPORTANT]
-> Eski belgeler ve kaynak kodu [_Secure_scl](../standard-library/secure-scl.md) makrosunu ifade edebilir. _SECURE_SCL denetimini denetlemek için _ıTERATOR_DEBUG_LEVEL kullanın. Daha fazla bilgi için bkz. [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
+> Daha eski belgeler ve kaynak kodu [_SECURE_SCL](../standard-library/secure-scl.md) makroya başvurabilir. _SECURE_SCL denetlemek için _ITERATOR_DEBUG_LEVEL kullanın. Daha fazla bilgi için bkz. [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
 
-_ITERATOR_DEBUG_LEVEL, 1 veya 2 olarak tanımlandığında, bu yineleyici denetimleri gerçekleştirilir:
+_ITERATOR_DEBUG_LEVEL 1 veya 2 olarak tanımlandığında, bu yineleyici denetimleri gerçekleştirilir:
 
 - Tüm standart yineleyiciler (örneğin, [vector:: Yineleyici](../standard-library/vector-class.md#iterator)) denetlenir.
 
@@ -40,27 +40,42 @@ _ITERATOR_DEBUG_LEVEL, 1 veya 2 olarak tanımlandığında, bu yineleyici deneti
 
 - Aşağıdaki işlevler, kapsayıcının sınırları dışında bir erişim varsa bir çalışma zamanı hatası oluşturur:
 
-|||||
-|-|-|-|-|
-|[basic_string:: işleci\[\]](../standard-library/basic-string-class.md#op_at)|[bitset:: işleci\[\]](../standard-library/bitset-class.md#op_at)|[Geri](../standard-library/deque-class.md#back)|[yapılan](../standard-library/deque-class.md#front)|
-|[deque:: işleci\[\]](../standard-library/deque-class.md#op_at)|[Geri](../standard-library/list-class.md#back)|[yapılan](../standard-library/list-class.md#front)|[Geri](../standard-library/queue-class.md#back)|
-|[yapılan](../standard-library/queue-class.md#front)|[vector:: operator\[\]](../standard-library/vector-class.md#op_at)|[Geri](../standard-library/vector-class.md#back)|[yapılan](../standard-library/vector-class.md#front)|
+:::row:::
+   :::column span="":::
+      &emsp;&emsp;[`basic_string::operator[]`](../standard-library/basic-string-class.md#op_at)\
+      &emsp;&emsp;[`bitset::operator[]`](../standard-library/bitset-class.md#op_at)\
+      &emsp;&emsp;[`deque::back`](../standard-library/deque-class.md#back)\
+      &emsp;&emsp;[`deque::front`](../standard-library/deque-class.md#front)
+   :::column-end:::
+   :::column span="":::
+      [`deque::operator[]`](../standard-library/deque-class.md#op_at)\
+      [`list::back`](../standard-library/list-class.md#back)\
+      [`list::front`](../standard-library/list-class.md#front)\
+      [`queue::back`](../standard-library/queue-class.md#back)
+   :::column-end:::
+   :::column span="":::
+      [`queue::front`](../standard-library/queue-class.md#front)\
+      [`vector::back`](../standard-library/vector-class.md#back)\
+      [`vector::front`](../standard-library/vector-class.md#front)\
+      [`vector::operator[]`](../standard-library/vector-class.md#op_at)
+   :::column-end:::
+:::row-end:::
 
 _ITERATOR_DEBUG_LEVEL 0 olarak tanımlandığında:
 
 - Tüm standart yineleyiciler işaretlenmemiştir. Yineleyiciler kapsayıcı sınırlarının ötesine geçebilir, bu da tanımsız davranışa yol açar.
 
-- Çıkış Yineleyici, denetlenen bir yineleyici ise, işaretli davranış gibi `std::copy` standart kitaplık işlevlerine çağrı yapılır.
+- Çıkış Yineleyici, denetlenen bir yineleyici ise, işaretli davranış gibi standart kitaplık işlevlerine çağrı yapılır `std::copy` .
 
 - Çıkış yineleyici işaretsiz bir yineleyiciyse, standart kitaplık işlevlerine yapılan çağrılar Denetlenmemiş davranışı alır.
 
-Denetlenen bir yineleyici, kapsayıcının sınırları dışına taşımaya çalışırsanız `invalid_parameter_handler` çağıran bir yineleyici anlamına gelir. Hakkında `invalid_parameter_handler`daha fazla bilgi için bkz. [parametre doğrulama](../c-runtime-library/parameter-validation.md).
+Denetlenen bir yineleyici, kapsayıcının sınırları dışına taşımaya çalışırsanız çağıran bir yineleyici anlamına gelir `invalid_parameter_handler` . Hakkında daha fazla bilgi için `invalid_parameter_handler` bkz. [parametre doğrulama](../c-runtime-library/parameter-validation.md).
 
-Denetlenen yineleyiciler destekleyen Yineleyici bağdaştırıcılar [Checked_array_iterator Class](../standard-library/checked-array-iterator-class.md) and [unchecked_array_iterator Class](../standard-library/unchecked-array-iterator-class.md).
+Denetlenen yineleyiciler destekleyen Yineleyici bağdaştırıcılar [Checked_array_iterator sınıfı](../standard-library/checked-array-iterator-class.md) ve [unchecked_array_iterator sınıfıdır](../standard-library/unchecked-array-iterator-class.md).
 
 ## <a name="example"></a>Örnek
 
-_ITERATOR_DEBUG_LEVEL ' ı 1 veya 2 ' ye ayarlayarak derlerken, belirli sınıfların dizin oluşturma işlecini kullanarak kapsayıcının sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
+' I 1 veya 2 ' ye ayarlanmış _ITERATOR_DEBUG_LEVEL kullanarak derlerken, belirli sınıfların dizin oluşturma işlecini kullanarak kapsayıcının sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
 
 ```cpp
 // checked_iterators_1.cpp
@@ -89,7 +104,7 @@ Bu program "67" yazdırır ve hata hakkında ek bilgi içeren bir onaylama işle
 
 ## <a name="example"></a>Örnek
 
-Benzer şekilde, _ITERATOR_DEBUG_LEVEL ' ı 1 veya 2 ' ye ayarlayarak derlerken, kapsayıcı boş olduğunda kapsayıcı sınıflarında veya `front` `back` kullanarak bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
+Benzer şekilde, 1 veya 2 ' ye ayarlanmış _ITERATOR_DEBUG_LEVEL kullanarak derlerken, `front` `back` kapsayıcı boş olduğunda kapsayıcı sınıflarında veya kullanarak bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
 
 ```cpp
 // checked_iterators_2.cpp
@@ -113,7 +128,7 @@ Bu program hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişi
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, her biriyle ilgili yorumlar içeren çeşitli yineleyici kullanım örneği senaryolarını gösterir. Varsayılan olarak, _ıTERATOR_DEBUG_LEVEL, hata ayıklama yapılarında 2 olarak, perakende yapılarında 0 olarak ayarlanır.
+Aşağıdaki kod, her biriyle ilgili yorumlar içeren çeşitli yineleyici kullanım örneği senaryolarını gösterir. Varsayılan olarak, _ITERATOR_DEBUG_LEVEL hata ayıklama yapılarında 2 ' ye ve perakende yapılarda 0 ' a ayarlanır.
 
 ```cpp
 // checked_iterators_3.cpp
@@ -195,7 +210,7 @@ int main()
 }
 ```
 
-Derleyici kullanarak `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` bu kodu derlerken bir uyarı yayar, ancak bir çalıştırılabilire hata olmadan derlenir:
+Derleyici kullanarak bu kodu derlerken `cl.exe /EHsc /W4 /MTd checked_iterators_3.cpp` bir uyarı yayar, ancak bir çalıştırılabilire hata olmadan derlenir:
 
 ```Output
 algorithm(1026) : warning C4996: 'std::_Transform1': Function call with parameters
@@ -219,5 +234,5 @@ a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
-[Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[Hata ayıklama Yineleyici desteği](../standard-library/debug-iterator-support.md)

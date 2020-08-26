@@ -88,12 +88,12 @@ helpviewer_keywords:
 - std::deque [C++], size
 - std::deque [C++], swap
 ms.assetid: 64842ee5-057a-4063-8c16-4267a0332584
-ms.openlocfilehash: ae2ea172b331472e6ea28c175ad2c7a10ae621a0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1edcabf526d0f3aa2ba52ba3fd0fc656c5ae6b9c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220957"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838560"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 
@@ -136,13 +136,13 @@ Aksi takdirde, bir öğe eklemek veya silmek tüm yineleyiciler ve başvuruları
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[deque](#deque)|Bir oluşturur `deque` . Yeni ' nin içeriğini farklı yollarla ayarlamak için çeşitli oluşturucular verilmiştir `deque` : Empty; belirtilen sayıda boş öğe ile yüklendi; içerik taşınmış ya da kopyalanmış; bir `deque` Yineleyici kullanılarak kopyalanmış ya da taşınmış içerikler ve saatlere kopyalanmış bir öğe `deque` `count` . Kuruculardan bazıları, `allocator` öğeleri oluşturmak için özel kullanımı etkinleştirir.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Nesnenin sınıfını temsil eden bir tür `allocator` `deque` .|
 |[const_iterator](#const_iterator)|As içindeki öğelere erişebilen ve okuyabilen bir rastgele erişim yineleyici sağlayan bir tür `deque`**`const`**|
@@ -159,7 +159,7 @@ Aksi takdirde, bir öğe eklemek veya silmek tüm yineleyiciler ve başvuruları
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[assign (atamak)](#assign) |Öğelerinden öğeleri siler `deque` ve yeni bir öğe dizisini hedefe kopyalar `deque` .|
 |[hızı](#at)|İçinde belirtilen konumdaki öğesine bir başvuru döndürür `deque` .|
@@ -193,12 +193,12 @@ Aksi takdirde, bir öğe eklemek veya silmek tüm yineleyiciler ve başvuruları
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç&#91;&#93;](#op_at)|`deque`Belirtilen konumdaki öğeye bir başvuru döndürür.|
 |[işleç =](#op_eq)|Öğesinin öğelerini `deque` başka bir kopyasıyla değiştirir `deque` .|
 
-## <a name="allocator_type"></a><a name="allocator_type"></a>allocator_type
+## <a name="allocator_type"></a><a name="allocator_type"></a> allocator_type
 
 Deque nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
@@ -208,13 +208,13 @@ typedef Allocator allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type`, şablon parametresinin eşanlamlısıdır `Allocator` .
+`allocator_type` , şablon parametresinin eşanlamlısıdır `Allocator` .
 
 ### <a name="example"></a>Örnek
 
 [Get_allocator](#get_allocator)için örneğe bakın.
 
-## <a name="assign"></a><a name="assign"></a>ata
+## <a name="assign"></a><a name="assign"></a> ata
 
 Bir deque öğelerini siler ve yeni bir öğe kümesini hedef Deke kopyalar.
 
@@ -306,7 +306,7 @@ int main()
 d1 = 5678c1 =102030c1 =5060c1 =4444444
 ```
 
-## <a name="at"></a><a name="at"></a>hızı
+## <a name="at"></a><a name="at"></a> hızı
 
 Deque 'da belirtilen konumdaki öğeye bir başvuru döndürür.
 
@@ -357,7 +357,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="back"></a><a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a> Geri
 
 Deque 'in son öğesine bir başvuru döndürür.
 
@@ -406,7 +406,7 @@ The last integer of c1 is 11
 The next-to-last integer of c1 is 10
 ```
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 Deque içindeki ilk öğeyi adresleyen bir yineleyici döndürür.
 
@@ -458,7 +458,7 @@ The first element of c1 is 1
 The first element of c1 is now 20
 ```
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 **`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -484,7 +484,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 **`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
@@ -498,7 +498,7 @@ Aralığın hemen sonunu gösteren bir rastgele erişim yineleyicisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 `end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
@@ -512,7 +512,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
-## <a name="clear"></a><a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Bir deque öğesinin tüm öğelerini siler.
 
@@ -548,7 +548,7 @@ The size of the deque is initially 3
 The size of the deque after clearing is 0
 ```
 
-## <a name="const_iterator"></a><a name="const_iterator"></a>const_iterator
+## <a name="const_iterator"></a><a name="const_iterator"></a> const_iterator
 
 Deque içindeki bir öğeye erişebilen ve okuyabilen bir rastgele erişim yineleyici sağlayan bir tür **`const`** .
 
@@ -564,7 +564,7 @@ Bir tür `const_iterator` , bir öğenin değerini değiştirmek için kullanıl
 
 [Geri](#back)örneğe bakın.
 
-## <a name="const_pointer"></a><a name="const_pointer"></a>const_pointer
+## <a name="const_pointer"></a><a name="const_pointer"></a> const_pointer
 
 Bir deque içindeki bir öğe için bir işaretçi sağlar **`const`** .
 
@@ -576,7 +576,7 @@ typedef typename Allocator::const_pointer const_pointer;
 
 Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanılamaz. Bir [Yineleyici](#iterator) , bir deque öğesine erişmek için daha yaygın olarak kullanılır.
 
-## <a name="const_reference"></a><a name="const_reference"></a>const_reference
+## <a name="const_reference"></a><a name="const_reference"></a> const_reference
 
 **`const`** İşlem okumak ve gerçekleştirmek için bir deque içinde depolanan bir öğeye başvuru sağlayan bir tür **`const`** .
 
@@ -620,7 +620,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="const_reverse_iterator"></a><a name="const_reverse_iterator"></a>const_reverse_iterator
+## <a name="const_reverse_iterator"></a><a name="const_reverse_iterator"></a> const_reverse_iterator
 
 Deque içindeki herhangi bir öğeyi okuyabilen bir rastgele erişim yineleyici sağlayan bir tür **`const`** .
 
@@ -636,7 +636,7 @@ Bir tür, `const_reverse_iterator` bir öğenin değerini değiştiremez ve ters
 
 Yineleyici bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği.
 
-## <a name="crbegin"></a><a name="crbegin"></a>crbegin
+## <a name="crbegin"></a><a name="crbegin"></a> crbegin
 
 Ters çevrilen bir deque içindeki ilk öğeye bir const yineleyici döndürür.
 
@@ -685,7 +685,7 @@ The first element of deque is 1.
 The first element of the reversed deque is 2.
 ```
 
-## <a name="crend"></a><a name="crend"></a>crend
+## <a name="crend"></a><a name="crend"></a> crend
 
 Ters çevrilen bir deque içindeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -703,7 +703,7 @@ Ters çevrilen bir [deque](../standard-library/deque-class.md) içindeki son ö�
 
 Dönüş değeri `crend` (uygun şekilde azaltılır) ile `deque` nesne değiştirilemez.
 
-`crend`ters bir yineleyicinin kendisinin sonuna kadar ulaştığı konusunda test etmek için kullanılabilir.
+`crend` ters bir yineleyicinin kendisinin sonuna kadar ulaştığı konusunda test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `crend` başvurulmamalıdır.
 
@@ -734,7 +734,7 @@ int main( )
 1
 ```
 
-## <a name="deque"></a><a name="deque"></a>deque
+## <a name="deque"></a><a name="deque"></a> deque
 
 Belirli bir boyutun veya belirli bir değere sahip olan ya da belirli bir ayırıcıya ya da başka bir kısmının bir kopyası olarak ya da bir kopyasının bir kopyasını oluşturur.
 
@@ -1011,7 +1011,7 @@ int main( )
 }
 ```
 
-## <a name="difference_type"></a><a name="difference_type"></a>difference_type
+## <a name="difference_type"></a><a name="difference_type"></a> difference_type
 
 Aynı deque içindeki öğelere başvuran iki yineleyiciler arasındaki farkı sağlayan bir tür.
 
@@ -1066,7 +1066,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.
 ```
 
-## <a name="emplace"></a><a name="emplace"></a>Emplace
+## <a name="emplace"></a><a name="emplace"></a> Emplace
 
 Belirtilen konumdaki deque içine yerinde oluşturulmuş bir öğe ekler.
 
@@ -1134,7 +1134,7 @@ v1 = 10 20 30
 vv1[0] = 10 20 30
 ```
 
-## <a name="emplace_back"></a><a name="emplace_back"></a>emplace_back
+## <a name="emplace_back"></a><a name="emplace_back"></a> emplace_back
 
 Deque 'in sonuna yerinde oluşturulmuş bir öğe ekler.
 
@@ -1183,7 +1183,7 @@ New last element: 2
 Moved last element: 2
 ```
 
-## <a name="emplace_front"></a><a name="emplace_front"></a>emplace_front
+## <a name="emplace_front"></a><a name="emplace_front"></a> emplace_front
 
 Deque 'in sonuna yerinde oluşturulmuş bir öğe ekler.
 
@@ -1232,7 +1232,7 @@ New last element: 2
 Moved last element: 2
 ```
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Bir deque boş ise sınar.
 
@@ -1269,7 +1269,7 @@ int main( )
 The deque is not empty.
 ```
 
-## <a name="end"></a><a name="end"></a>erer
+## <a name="end"></a><a name="end"></a> erer
 
 Bir deque içindeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -1285,7 +1285,7 @@ Bir deque içindeki son öğeden sonra gelen konumu ele alan bir rastgele erişi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`end`bir yineleyicinin kendisinin sonuna kadar ulaştığı bir yineleyici olup olmadığını test etmek için kullanılır.
+`end` bir yineleyicinin kendisinin sonuna kadar ulaştığı bir yineleyici olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1329,7 +1329,7 @@ The new next-to-last integer of c1 is 400
 The deque is now: 10 400 30
 ```
 
-## <a name="erase"></a><a name="erase"></a>silme
+## <a name="erase"></a><a name="erase"></a> silme
 
 Bir öğeyi veya öğe aralığını belirtilen konumlardan kaldırır.
 
@@ -1356,7 +1356,7 @@ Kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe y
 
 ### <a name="remarks"></a>Açıklamalar
 
-`erase`hiçbir koşulda özel durum oluşturmaz.
+`erase` hiçbir koşulda özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1402,7 +1402,7 @@ After erasing the first element, the deque becomes:  20 30 40 50
 After erasing all elements but the first, deque becomes: 20
 ```
 
-## <a name="front"></a><a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a> yapılan
 
 Bir deque içindeki ilk öğeye bir başvuru döndürür.
 
@@ -1452,7 +1452,7 @@ The first integer of c1 is 10
 The second integer of c1 is 11
 ```
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a> get_allocator
 
 Deque oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1491,7 +1491,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a><a name="insert"></a>ekleyin
+## <a name="insert"></a><a name="insert"></a> ekleyin
 
 Belirli bir konumda bir öğe veya dizi öğe ya da bir dizi öğe ekler.
 
@@ -1548,7 +1548,7 @@ Eklenecek öğelerin initializer_list.
 
 Herhangi bir ekleme işlemi pahalı olabilir.
 
-## <a name="iterator"></a><a name="iterator"></a>iden
+## <a name="iterator"></a><a name="iterator"></a> iden
 
 Bir deque içinde herhangi bir öğeyi okuyabilen veya değiştirebilen bir rastgele erişim yineleyici sağlayan bir tür.
 
@@ -1564,7 +1564,7 @@ Bir türü `iterator` , bir öğenin değerini değiştirmek için kullanılabil
 
 [Begin](#begin)örneğine bakın.
 
-## <a name="max_size"></a><a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a> max_size
 
 Deque 'ın en büyük uzunluğunu döndürür.
 
@@ -1595,7 +1595,7 @@ int main( )
 }
 ```
 
-## <a name="operator"></a><a name="op_at"></a>operator []
+## <a name="operator"></a><a name="op_at"></a> operator []
 
 Belirtilen konumdaki deque öğesine bir başvuru döndürür.
 
@@ -1646,7 +1646,7 @@ The first integer of c1 is 10
 The second integer of c1 is 20
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Diğer bir deque öğelerini kullanarak bu deque öğelerinin yerini alır.
 
@@ -1720,7 +1720,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a><a name="pointer"></a>çağrısı
+## <a name="pointer"></a><a name="pointer"></a> çağrısı
 
 [Deque](../standard-library/deque-class.md)içindeki bir öğe için bir işaretçi sağlar.
 
@@ -1732,7 +1732,7 @@ typedef typename Allocator::pointer pointer;
 
 Bir türü `pointer` , bir öğenin değerini değiştirmek için kullanılabilir. Bir [Yineleyici](#iterator) , bir deque öğesine erişmek için daha yaygın olarak kullanılır.
 
-## <a name="pop_back"></a><a name="pop_back"></a>pop_back
+## <a name="pop_back"></a><a name="pop_back"></a> pop_back
 
 Deque 'ın sonundaki öğeyi siler.
 
@@ -1742,7 +1742,7 @@ void pop_back();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Son öğe boş olmamalıdır. `pop_back`hiçbir koşulda özel durum oluşturmaz.
+Son öğe boş olmamalıdır. `pop_back` hiçbir koşulda özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1774,7 +1774,7 @@ The last element is: 2
 After deleting the element at the end of the deque, the last element is: 1
 ```
 
-## <a name="pop_front"></a><a name="pop_front"></a>pop_front
+## <a name="pop_front"></a><a name="pop_front"></a> pop_front
 
 Deque 'ın başındaki öğeyi siler.
 
@@ -1784,7 +1784,7 @@ void pop_front();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk öğe boş olmamalıdır. `pop_front`hiçbir koşulda özel durum oluşturmaz.
+İlk öğe boş olmamalıdır. `pop_front` hiçbir koşulda özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
@@ -1816,7 +1816,7 @@ The second element is: 2
 After deleting the element at the beginning of the deque, the first element is: 2
 ```
 
-## <a name="push_back"></a><a name="push_back"></a>push_back
+## <a name="push_back"></a><a name="push_back"></a> push_back
 
 Deque 'un sonuna bir öğesi ekler.
 
@@ -1835,7 +1835,7 @@ Deque 'un sonuna eklenen öğe.
 
 Bir özel durum oluşursa, deque değiştirilmemiş olarak kalır ve özel durum yeniden oluşturulur.
 
-## <a name="push_front"></a><a name="push_front"></a>push_front
+## <a name="push_front"></a><a name="push_front"></a> push_front
 
 Deque 'ın başlangıcına bir öğesi ekler.
 
@@ -1890,7 +1890,7 @@ New first element: 2
 Moved first element: a
 ```
 
-## <a name="rbegin"></a><a name="rbegin"></a>rbegin
+## <a name="rbegin"></a><a name="rbegin"></a> rbegin
 
 Tersine çevrilmiş bir deque içindeki ilk öğeye bir yineleyici döndürür.
 
@@ -1910,7 +1910,7 @@ Ters bir rastgele erişim Yineleyici, ters çevrilen bir deque içindeki ilk ö�
 
 Dönüş değeri `rbegin` öğesine atanırsa `const_reverse_iterator` , deque nesnesi değiştirilemez. Dönüş değeri `rbegin` öğesine atanırsa `reverse_iterator` , deque nesnesi değiştirilebilir.
 
-`rbegin`, geriye doğru yinelemek için kullanılabilir.
+`rbegin` , geriye doğru yinelemek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1966,7 +1966,7 @@ The reversed deque is: 30 20 10
 Last element in deque is now 40.
 ```
 
-## <a name="reference"></a><a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a> başvurunun
 
 Bir deque içinde depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -2002,7 +2002,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="rend"></a><a name="rend"></a>rend
+## <a name="rend"></a><a name="rend"></a> rend
 
 Ters çevrilen bir deque içindeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -2018,11 +2018,11 @@ Ters çevrilen bir deque içindeki son öğeden sonra gelen konumu ele alan ters
 
 ### <a name="remarks"></a>Açıklamalar
 
-`rend`, [End](#end) bir deque ile kullanıldığı gibi ters bir deque ile kullanılır.
+`rend` , [End](#end) bir deque ile kullanıldığı gibi ters bir deque ile kullanılır.
 
 Dönüş değeri `rend` öğesine atanırsa `const_reverse_iterator` , deque nesnesi değiştirilemez. Dönüş değeri `rend` öğesine atanırsa `reverse_iterator` , deque nesnesi değiştirilebilir.
 
-`rend`geriye doğru bir yineleyicinin kendisinin sonuna kadar ulaştığı bir işlem olup olmadığını test etmek için kullanılabilir.
+`rend` geriye doğru bir yineleyicinin kendisinin sonuna kadar ulaştığı bir işlem olup olmadığını test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `rend` başvurulmamalıdır.
 
@@ -2087,7 +2087,7 @@ The reversed deque is: 30 20 10
 The modified reversed deque is: 30 20 40
 ```
 
-## <a name="resize"></a><a name="resize"></a>yeniden boyutlandırma
+## <a name="resize"></a><a name="resize"></a> yeniden boyutlandırma
 
 Bir deque için yeni bir boyut belirtir.
 
@@ -2155,7 +2155,7 @@ The reduced size of c1 is: 2
 The value of the last element is now 20
 ```
 
-## <a name="reverse_iterator"></a><a name="reverse_iterator"></a>reverse_iterator
+## <a name="reverse_iterator"></a><a name="reverse_iterator"></a> reverse_iterator
 
 Ters çevrilen bir öğeyi okuyabilen veya değiştirebilen bir rasgele erişim yineleyicisi sağlayan bir tür.
 
@@ -2171,7 +2171,7 @@ Bir tür `reverse_iterator` , deque ile yinelemek için kullanılır.
 
 Rbegin örneğine bakın.
 
-## <a name="shrink_to_fit"></a><a name="shrink_to_fit"></a>shrink_to_fit
+## <a name="shrink_to_fit"></a><a name="shrink_to_fit"></a> shrink_to_fit
 
 Fazla kapasiteyi atar.
 
@@ -2212,7 +2212,7 @@ Current size of v1 = 1
 Current size of v1 = 1
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Deque içindeki öğelerin sayısını döndürür.
 
@@ -2253,7 +2253,7 @@ The deque length is 1.
 The deque length is now 2.
 ```
 
-## <a name="size_type"></a><a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a> size_type
 
 Bir deque içindeki öğe sayısını sayan bir tür.
 
@@ -2265,7 +2265,7 @@ typedef typename Allocator::size_type size_type;
 
 [Boyut](#size)örneğine bakın.
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki deques öğelerini değiş tokuş eder.
 
@@ -2339,7 +2339,7 @@ After swapping with c3, deque c1 is: 100
 After swapping with c2, deque c1 is: 1 2 3
 ```
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Bir deque içinde depolanan veri türünü temsil eden bir tür.
 
@@ -2349,7 +2349,7 @@ typedef typename Allocator::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`, şablon parametresinin eşanlamlısıdır `Type` .
+`value_type` , şablon parametresinin eşanlamlısıdır `Type` .
 
 ### <a name="example"></a>Örnek
 

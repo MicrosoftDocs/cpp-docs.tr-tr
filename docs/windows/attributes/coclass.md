@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-ms.openlocfilehash: 0a47f4f503541f9dee67dd8c6cf10297de724a19
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 12f7af195f2282955cb16c1f38d4e512ca0f86cb
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232800"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838886"
 ---
 # <a name="coclass"></a>coclass
 
 COM arabirimini uygulayabilen bir COM nesnesi oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [coclass]
@@ -53,15 +53,15 @@ Son olarak, katıştırılmış IDL kullanılarak tanımlanmayan herhangi bir ik
 
 **Coclass** özniteliği Ayrıca aşağıdaki işlevleri, eklenen kod ile veya durumunda `GetObjectCLSID` temel sınıfta statik bir yöntem olarak kullanılabilir hale getirir `CComCoClass` :
 
-- `UpdateRegistry`Hedef sınıfın sınıf fabrikalarını kaydeder.
+- `UpdateRegistry` Hedef sınıfın sınıf fabrikalarını kaydeder.
 
 - `GetObjectCLSID`kaydıyla ilgili olan, hedef sınıfın CLSID 'sini elde etmek için de kullanılabilir.
 
-- `GetObjectFriendlyName`Varsayılan olarak "" biçiminde bir dize döndürür \<*target class name*> `Object` . Bu işlev zaten mevcutsa, eklenmez. Otomatik olarak üretilenden daha kolay bir ad döndürmek için bu işlevi Target sınıfına ekleyin.
+- `GetObjectFriendlyName` Varsayılan olarak "" biçiminde bir dize döndürür \<*target class name*> `Object` . Bu işlev zaten mevcutsa, eklenmez. Otomatik olarak üretilenden daha kolay bir ad döndürmek için bu işlevi Target sınıfına ekleyin.
 
 - `GetProgID`kaydıyla ilgili olan, [ProgID](progid.md) özniteliğiyle belirtilen dizeyi döndürür.
 
-- `GetVersionIndependentProgID`, ile aynı işlevselliğe sahiptir `GetProgID` , ancak [vi_progid](vi-progid.md)belirtilen dizeyi döndürür.
+- `GetVersionIndependentProgID` , ile aynı işlevselliğe sahiptir `GetProgID` , ancak [vi_progid](vi-progid.md)belirtilen dizeyi döndürür.
 
 COM eşlemesiyle ilgili olan aşağıdaki değişiklikler hedef sınıfa yapılır:
 
@@ -127,14 +127,12 @@ public:
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

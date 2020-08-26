@@ -5,12 +5,12 @@ helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-ms.openlocfilehash: 4755cfcf98c9eadbd944e06a56f86ca89a33b0a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7c47ec86e80b50bb2b313a2c84a3f375681e2870
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223778"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838834"
 ---
 # <a name="x64-software-conventions"></a>x64 yazılım kuralları
 
@@ -44,22 +44,21 @@ Herhangi bir hizalama ile verilere erişmek mümkün olsa da, performans kaybın
 
 - Octaword-128 bit
 
-|||||
-|-|-|-|-|
 |Skaler tür|C veri türü|Depolama boyutu (bayt)|Önerilen hizalama|
-|**INT8**|**`char`**|1|Bayt|
-|**UINT8**|**`unsigned char`**|1|Bayt|
-|**INT16**|**`short`**|2|Word|
-|**INT16**|**`unsigned short`**|2|Word|
-|**INT32**|**`int`**, **`long`**|4|Doubleword|
-|**INT32**|**işaretsiz int, imzasız Long**|4|Doubleword|
-|**INT64**|**`__int64`**|8|Dört kelime|
-|**INT64**|**imzasız __int64**|8|Dört kelime|
-|**FP32 (tek duyarlık)**|**`float`**|4|Doubleword|
-|**FP64 (çift duyarlık)**|**`double`**|8|Dört kelime|
-|**ÇAĞRıSı**|__\*__|8|Dört kelime|
-|**`__m64`**|**struct __m64**|8|Dört kelime|
-|**`__m128`**|**struct __m128**|16|Octaword|
+|-|-|-|-|
+|**`INT8`**|**`char`**|1|Bayt|
+|**`UINT8`**|**`unsigned char`**|1|Bayt|
+|**`INT16`**|**`short`**|2|Word|
+|**`UINT16`**|**`unsigned short`**|2|Word|
+|**`INT32`**|**`int`**, **`long`**|4|Doubleword|
+|**`UINT32`**|**`unsigned int`**, **`unsigned long`**|4|Doubleword|
+|**`INT64`**|**`__int64`**|8|Dört kelime|
+|**`UINT64`**|**`unsigned __int64`**|8|Dört kelime|
+|**`FP32`** (tek duyarlık)|**`float`**|4|Doubleword|
+|**`FP64`** (çift duyarlık)|**`double`**|8|Dört kelime|
+|**`POINTER`**|__\*__|8|Dört kelime|
+|**`__m64`**|**`struct __m64`**|8|Dört kelime|
+|**`__m128`**|**`struct __m128`**|16|Octaword|
 
 ### <a name="aggregates-and-unions"></a>Toplamalar ve birleşimler
 
@@ -79,22 +78,21 @@ Diziler, yapılar ve birleşimler gibi diğer türler, tutarlı toplam ve birle�
 
 Aşağıdaki tabloda, birleşimlerin ve yapıların skaler üyeleri için önerilen önerilen hizalama gösterilmektedir.
 
-||||
-|-|-|-|
 |Skaler tür|C veri türü|Gerekli hizalama|
-|**INT8**|**`char`**|Bayt|
-|**UINT8**|**`unsigned char`**|Bayt|
-|**INT16**|**`short`**|Word|
-|**INT16**|**`unsigned short`**|Word|
-|**INT32**|**`int`**, **`long`**|Doubleword|
-|**INT32**|**işaretsiz int, imzasız Long**|Doubleword|
-|**INT64**|**`__int64`**|Dört kelime|
-|**INT64**|**imzasız __int64**|Dört kelime|
-|**FP32 (tek duyarlık)**|**`float`**|Doubleword|
-|**FP64 (çift duyarlık)**|**`double`**|Dört kelime|
-|**ÇAĞRıSı**|<strong>\*</strong>|Dört kelime|
-|**`__m64`**|**struct __m64**|Dört kelime|
-|**`__m128`**|**struct __m128**|Octaword|
+|-|-|-|
+|**`INT8`**|**`char`**|Bayt|
+|**`UINT8`**|**`unsigned char`**|Bayt|
+|**`INT16`**|**`short`**|Word|
+|**`UINT16`**|**`unsigned short`**|Word|
+|**`INT32`**|**`int`**, **`long`**|Doubleword|
+|**`UINT32`**|**`unsigned int`**, **`unsigned long`**|Doubleword|
+|**`INT64`**|**`__int64`**|Dört kelime|
+|**`UINT64`**|**`unsigned __int64`**|Dört kelime|
+|**`FP32`** (tek duyarlık)|**`float`**|Doubleword|
+|**`FP64`** (çift duyarlık)|**`double`**|Dört kelime|
+|**`POINTER`**|<strong>\*</strong>|Dört kelime|
+|**`__m64`**|**`struct __m64`**|Dört kelime|
+|**`__m128`**|**`struct __m128`**|Octaword|
 
 Aşağıdaki toplam hizalama kuralları geçerlidir:
 
@@ -191,9 +189,8 @@ X64 mimarisi, 16 genel amaçlı kayıt (bundan sonra tamsayı Yazmaçları olara
 
 Aşağıdaki tabloda, her kaydın işlev çağrıları genelinde nasıl kullanıldığı açıklanmaktadır:
 
-||||
+|Kaydol|Durum|Kullanın|
 |-|-|-|
-|Kaydettir|Durum|Kullanın|
 |RAX|Katılımcıdan|Dönüş değeri kaydı|
 |RCX|Katılımcıdan|İlk tamsayı bağımsız değişkeni|
 |RDX|Katılımcıdan|İkinci tamsayı bağımsız değişkeni|

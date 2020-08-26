@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-ms.openlocfilehash: f18614f7b156a1757df9dfaac9e4a0ad4f8209eb
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: baa2bca8b2e06fd55591c3a4fa2a9752abbb5355
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404312"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88830793"
 ---
 # <a name="ole-background"></a>OLE Arka Planı
 
@@ -58,15 +58,15 @@ OLE, uygulamalar arasında sorunsuz etkileşim amacını karşılayan birçok fa
 
 Daha önemli OLE konularından bazıları aşağıdaki makalelerde ele alınmıştır:
 
-- [OLE Arka Planı: Bağlama ve Katıştırma](ole-background-linking-and-embedding.md)
+- [OLE arka planı: bağlama ve katıştırma](ole-background-linking-and-embedding.md)
 
-- [OLE Arka Planı: Kapsayıcılar ve Sunucular](ole-background-containers-and-servers.md)
+- [OLE arka planı: kapsayıcılar ve sunucular](ole-background-containers-and-servers.md)
 
-- [OLE Arka Planı: Uygulama Stratejileri](ole-background-implementation-strategies.md)
+- [OLE arka planı: uygulama stratejileri](ole-background-implementation-strategies.md)
 
-- [OLE Arka Planı: MFC Uygulaması](ole-background-mfc-implementation.md)
+- [OLE arka planı: MFC Uygulama](ole-background-mfc-implementation.md)
 
-Yukarıdaki makalelerde yer aldığı genel OLE bilgileri için Microsoft Docs içinde [OLE araması](https://docs.microsoft.com/search/?terms=ole) yapın.
+Yukarıdaki makalelerde yer aldığı genel OLE bilgileri için Microsoft Docs içinde [OLE araması](/search/?terms=ole) yapın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

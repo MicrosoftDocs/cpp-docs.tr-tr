@@ -1,23 +1,23 @@
 ---
-title: bağlanabilir (C++ com özniteliği)
+title: bağlanabilir (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.bindable
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-ms.openlocfilehash: 9e476183374ad2a70864fd46aaa19c616cd3ce91
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 27f44259401a42dcef7e2add370d95091d10879d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167361"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838977"
 ---
 # <a name="bindable"></a>bağlanabilir
 
 Özelliğin veri bağlamayı desteklediğini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [bindable]
@@ -25,7 +25,7 @@ ms.locfileid: "80167361"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Bağlanabilir** C++ öznitelik, [bağlanabilir](/windows/win32/Midl/bindable) MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bunu [propget](propget.md), [propput](propput.md)veya [propputref](propputref.md) öznitelikleriyle tanımlanan özelliklerde kullanabilir ya da bağlanabilir bir yöntemi el ile tanımlayabilirsiniz.
+**Bağlanabilir** C++ özniteliği, [bağlanabilir](/windows/win32/Midl/bindable) MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bunu [propget](propget.md), [propput](propput.md)veya [propputref](propputref.md) öznitelikleriyle tanımlanan özelliklerde kullanabilir ya da bağlanabilir bir yöntemi el ile tanımlayabilirsiniz.
 
 Aşağıdaki MFC örnekleri, **bağlanabilir**kullanımını gösterir:
 
@@ -60,21 +60,19 @@ __interface IPropDemo : IDispatch {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Interface yöntemi|
+|**Şunlara uygulanır**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
+[Yöntem öznitelikleri](method-attributes.md)<br/>
 [defaultbind](defaultbind.md)<br/>
 [displaybind](displaybind.md)<br/>
 [immediatebind](immediatebind.md)<br/>

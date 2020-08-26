@@ -1,23 +1,23 @@
 ---
-title: ms_union (C++ com özniteliği)
+title: ms_union (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.ms_union
 helpviewer_keywords:
 - ms_union attribute
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
-ms.openlocfilehash: 3e89facf48bd4f0f9d6200657b0e0a66fe95455a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ae99a996cd7969da27f38ad3532f0472f389ee3d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166646"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838847"
 ---
 # <a name="ms_union"></a>ms_union
 
 Kapsüllenolmayan birleşimlerin ağ verisi gösterimi hizalamasını denetler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [ms_union]
@@ -25,7 +25,7 @@ Kapsüllenolmayan birleşimlerin ağ verisi gösterimi hizalamasını denetler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ms_union** C++ özniteliği [ms_union](/windows/win32/Midl/ms-union-attrib) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Ms_union** C++ özniteliği, [ms_union](/windows/win32/Midl/ms-union-attrib) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -56,13 +56,11 @@ __interface IFireTabCtrl {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Kapsüllenmiş olmayan birleşimler|
+|**Şunlara uygulanır**|Kapsüllenmiş olmayan birleşimler|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`dispinterface`|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -70,4 +68,4 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)
+[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)

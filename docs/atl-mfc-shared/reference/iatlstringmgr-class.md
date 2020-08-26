@@ -14,18 +14,18 @@ helpviewer_keywords:
 - memory, managing
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-ms.openlocfilehash: bee9c3d27ea05a40d6835d69079fc3e0a56efb86
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a617ba829999e9e5778bd7f0091cfb0d624dce71
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219059"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832015"
 ---
 # <a name="iatlstringmgr-class"></a>IAtlStringMgr sınıfı
 
 Bu sınıf, bir bellek yöneticisinin arabirimini temsil eder `CStringT` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __interface IAtlStringMgr
@@ -35,7 +35,7 @@ __interface IAtlStringMgr
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Allocate](#allocate)|Yeni bir dize veri yapısı ayırmak için bu yöntemi çağırın.|
 |[Kopyalama](#clone)|Başka bir örneğiyle kullanmak üzere yeni bir dize yöneticisine bir işaretçi döndürmek için bu yöntemi çağırın `CSimpleStringT` .|
@@ -53,7 +53,7 @@ Bu sınıfı, özel dize sınıfınız için özel bir bellek Yöneticisi uygula
 
 **Üstbilgi:** atlsimpstr. h
 
-## <a name="iatlstringmgrallocate"></a><a name="allocate"></a>IAtlStringMgr:: allocate
+## <a name="iatlstringmgrallocate"></a><a name="allocate"></a> IAtlStringMgr:: allocate
 
 Yeni bir dize veri yapısı ayırır.
 
@@ -83,7 +83,7 @@ Bu yöntem tarafından ayrılan belleği serbest bırakmak için [IAtlStringMgr:
 > [!NOTE]
 > Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-## <a name="iatlstringmgrclone"></a><a name="clone"></a>IAtlStringMgr:: Clone
+## <a name="iatlstringmgrclone"></a><a name="clone"></a> IAtlStringMgr:: Clone
 
 Yeni bir dize yöneticisinin başka bir örneğiyle kullanılmak üzere bir işaretçi döndürür `CSimpleStringT` .
 
@@ -104,7 +104,7 @@ Ancak, bellek Yöneticisi birden çok örneği tarafından kullanılmasını des
 > [!NOTE]
 > Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-## <a name="iatlstringmgrfree"></a><a name="free"></a>IAtlStringMgr:: ücretsiz
+## <a name="iatlstringmgrfree"></a><a name="free"></a> IAtlStringMgr:: ücretsiz
 
 Bir dize veri yapısını serbest bırakır.
 
@@ -124,7 +124,7 @@ Ayrılmış veya yeniden [tahsis](../../atl/reference/iatlmemmgr-class.md#reallo
 > [!NOTE]
 > Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-## <a name="iatlstringmgrgetnilstring"></a><a name="getnilstring"></a>IAtlStringMgr:: GetNilString
+## <a name="iatlstringmgrgetnilstring"></a><a name="getnilstring"></a> IAtlStringMgr:: GetNilString
 
 Boş bir dize için dize veri yapısına yönelik bir işaretçi döndürür.
 
@@ -146,7 +146,7 @@ Boş bir dizenin gösterimini döndürmek için bu işlevi çağırın.
 > [!NOTE]
 > Kullanım örnekleri için bkz. [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-## <a name="iatlstringmgrreallocate"></a><a name="reallocate"></a>IAtlStringMgr:: yeniden tahsis
+## <a name="iatlstringmgrreallocate"></a><a name="reallocate"></a> IAtlStringMgr:: yeniden tahsis
 
 Bir dize veri yapısını yeniden konumlandırır.
 

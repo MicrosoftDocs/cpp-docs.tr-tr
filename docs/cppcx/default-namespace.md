@@ -2,18 +2,18 @@
 title: varsayılan ad alanı
 ms.date: 12/30/2016
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
-ms.openlocfilehash: b67aedc791ed41e93268d9e9f44492781940d55e
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 5696730bcef08ad11be4a2b689e95eb3c13e11eb
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740509"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845711"
 ---
 # <a name="default-namespace"></a>varsayılan ad alanı
 
-Ad `default` alanı,/cxtarafından C++desteklenen yerleşik türleri kapsamlar.
+`default`Ad alanı kapsamları C++/cxtarafından desteklenen yerleşik türleri destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 namespace default;
@@ -23,12 +23,12 @@ namespace default;
 
 Tüm yerleşik türler aşağıdaki üyeleri devralınır.
 
-|||
-|-|-|
-|[default::(type_name)::Equals](../cppcx/default-type-name-equals-method.md)|Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.|
-|[default::(type_name)::GetHashCode](../cppcx/default-type-name-gethashcode-method.md)|Bu örneğin karma kodunu döndürür.|
-|[default::(type_name)::GetType](../cppcx/default-type-name-gettype-method.md)|Geçerli türü temsil eden bir dize döndürür.|
-|[default::(type_name)::ToString](../cppcx/default-type-name-tostring-method.md)|Geçerli türü temsil eden bir dize döndürür.|
+| Ad | Açıklama |
+|--|--|
+| [default::(type_name)::Equals](../cppcx/default-type-name-equals-method.md) | Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler. |
+| [default::(type_name)::GetHashCode](../cppcx/default-type-name-gethashcode-method.md) | Bu örneğe ilişkin karma kodu döndürür. |
+| [default::(type_name)::GetType](../cppcx/default-type-name-gettype-method.md) | Geçerli türü temsil eden bir dize döndürür. |
+| [default::(type_name)::ToString](../cppcx/default-type-name-tostring-method.md) | Geçerli türü temsil eden bir dize döndürür. |
 
 ### <a name="built-in-types"></a>Yerleşik türler
 
@@ -52,4 +52,4 @@ Tüm yerleşik türler aşağıdaki üyeleri devralınır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)
+[C++/CX dil başvurusu](../cppcx/visual-c-language-reference-c-cx.md)

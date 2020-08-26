@@ -7,172 +7,172 @@ helpviewer_keywords:
 - messages [MFC], MFC
 - TN024
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
-ms.openlocfilehash: 24bcacd46b839babe9c9c89facb1cc56d18c0ee5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9ad6827e4a46bb9f2ff3b02986a01737772e0858
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370360"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839224"
 ---
 # <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC Tanımlı İletiler ve Kaynaklar
 
 > [!NOTE]
-> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu not, MFC tarafından kullanılan dahili Windows iletilerini ve kaynak biçimlerini açıklar. Bu bilgiler çerçevenin uygulanmasını açıklar ve uygulamanızın hata ayıklamasında size yardımcı olur. Maceracı için, tüm bu bilgiler resmi olarak desteklenmese de, bu bilgilerin bazılarını gelişmiş uygulamalar için kullanabilirsiniz.
+Bu notta, MFC tarafından kullanılan iç Windows iletileri ve kaynak biçimleri açıklanmaktadır. Bu bilgiler Framework 'ün uygulamasını açıklar ve uygulamanızda hata ayıklamanıza yardımcı olur. Adventurous için, tüm bu bilgiler resmi olarak desteklenmese de, bu bilgilerin bazılarını gelişmiş uygulamalar için kullanabilirsiniz.
 
-Bu not, MFC özel uygulama ayrıntılarını içerir; tüm içerikler gelecekte değişebilir. MFC özel Windows iletileri yalnızca tek bir uygulama kapsamında bir anlam vardır, ancak gelecekte sistem genelinde iletiler içerecek şekilde değişecektir.
+Bu notta MFC özel uygulama ayrıntıları vardır; tüm içerikler gelecekte değişikliğe tabidir. MFC özel Windows iletilerinin anlamı yalnızca bir uygulama kapsamındadır, ancak gelecekte sistem genelinde iletileri içerecek şekilde değişecektir.
 
-MFC özel Windows iletileri ve kaynak türleri aralığı, Microsoft Windows tarafından ayrılmış ayrılmış "sistem" aralığındadır. Şu anda aralıklarda tüm sayılar kullanılmaz ve gelecekte, aralıktaki yeni sayılar kullanılabilir. Şu anda kullanılan numaralar değiştirilebilir.
+MFC özel Windows iletileri ve kaynak türleri aralığı, Microsoft Windows tarafından ayrılan ayrılmış "sistem" aralığıdır. Şu anda aralıklardaki sayıların hepsi kullanılmaz ve gelecekte aralıktaki yeni sayılar kullanılabilir. Şu anda kullanılan sayılar değiştirilebilir.
 
 MFC özel Windows iletileri 0x360->0x37F aralığındadır.
 
 MFC özel kaynak türleri 0xF0->0xFF aralığındadır.
 
-**MFC Özel Windows İletileri**
+**MFC özel Windows Iletileri**
 
-Bu Windows iletileri, pencere nesneleri arasında göreceli olarak gevşek bağlantı gerektiren ve C++ sanal işlevinin uygun olmadığı C++ sanal işlevleriyerine kullanılır.
+Bu Windows iletileri, bir C++ sanal işlevinin uygun olmadığı ve pencere nesneleri arasında görece gevşek bir kuponun olması gereken C++ sanal işlevlerinin yerine kullanılır.
 
-Bu özel Windows iletileri ve ilişkili parametre yapıları MFC özel üstbilgi 'AFXPRIV'de beyan edilir. H'. Bu üstbilgiyi içeren kodunuzdan herhangi birinin belgesiz davranışa güvenebileceği ve büyük olasılıkla MFC'nin gelecekteki sürümlerinde kırılacağı konusunda uyarılır.
+Bu özel Windows iletileri ve ilişkili parametre yapıları, ' AFXPRIV ' MFC özel üstbilgisinde bildirilmiştir. H '. Bu üstbilgiyi içeren kodunuzun herhangi birinin belgelenmemiş davranışa bağlı olabileceğini ve büyük olasılıkla MFC 'nin gelecek sürümlerinde kesintiye uğraamayacaklarını unutmayın.
 
-Bu iletilerden birini işlemek için gereken nadir durumda, ON_MESSAGE ileti haritası nı kullanmalı ve iletiyi genel LRESULT/WPARAM/LPARAM biçiminde işlemelisiniz.
+Bu iletilerden birini işlemeye ihtiyaç duyan nadir durumlarda, ON_MESSAGE ileti eşleme makrosunu kullanmanız ve iletiyi genel LRESULT/WPARAM/LPARAM biçiminde işlemeniz gerekir.
 
 **WM_QUERYAFXWNDPROC**
 
-Bu ileti oluşturulan bir pencereye gönderilir. Bu wndProc AfxWndProc olup olmadığını belirleme yöntemi olarak oluşturma sürecinde çok erken **gönderilir. AfxWndProc** 1 döndürür.
+Bu ileti oluşturulmakta olan bir pencereye gönderilir. Bu, WndProc 'ın AfxWndProc olup olmadığını belirleme yöntemi olarak oluşturma sürecinde çok erken gönderilir **. AfxWndProc** 1 döndürür.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmıyor|
-|Lparam|Kullanılmıyor|
-|dizisi|**AfxWndProc** tarafından işlenirse 1|
+|wParam|Kullanılmıyor|
+|lParam|Kullanılmıyor|
+|dizisi|**AfxWndProc** tarafından işlendiğinde 1|
 
 **WM_SIZEPARENT**
 
-Bu ileti, çerçevenin yan tarafındaki denetim çubuklarını`CFrameWnd::OnSize` yeniden `CFrameWnd::RecalcLayout` konumlandırmak için yeniden boyutlandırma sırasında (çağrıları çağıran `CWnd::RepositionBars`çağrılar) yakın çocuklarına bir çerçeve penceresi tarafından gönderilir. AFX_SIZEPARENTPARAMS yapısı, yeniden boyamayı en aza indirmek için çağrılacak `DeferWindowPos` bir ÜST öğenin geçerli istemci dikdörtgenini ve bir HDWP'yi (NULL olabilir) içerir.
+Bu ileti, bir çerçeve penceresi tarafından, yeniden boyutlandırma sırasında ( `CFrameWnd::OnSize` `CFrameWnd::RecalcLayout` hangi çağrıları çağırır `CWnd::RepositionBars` ), çerçevenin yanındaki denetim çubuklarının konumunu yeniden konumlandırmak için bir çerçeve penceresi tarafından gönderilir. AFX_SIZEPARENTPARAMS yapısı, üst öğenin kullanılabilir geçerli istemci dikdörtgenini ve bir HDWP (NULL olabilir) ve yeniden `DeferWindowPos` boyanmanın en aza indirilmesine yönelik çağrı içerir.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmıyor|
-|Lparam|AFX_SIZEPARENTPARAMS bir yapının adresi|
-|dizisi|Kullanılmaz (0)|
+|wParam|Kullanılmıyor|
+|lParam|AFX_SIZEPARENTPARAMS yapısının adresi|
+|dizisi|Kullanılmıyor (0)|
 
-İletiyi yok saymak, pencerenin düzende yer almadığını gösterir.
+İletiyi yoksaymak pencerenin mizanpajda bir parçası olmayacağını gösterir.
 
 **WM_SETMESSAGESTRING**
 
-Bu ileti, durum çubuğundaki ileti satırını güncelleştirmesini istemek için bir çerçeve penceresine gönderilir. Dize kimliği veya LPCSTR belirtilebilir (ancak her ikisi birden belirtilmez).
+Bu ileti, durum çubuğundaki ileti satırını güncelleştirmesini istemek için bir çerçeve penceresine gönderilir. Dize KIMLIĞI veya bir LPCSTR belirtilebilir (her ikisi birden değil).
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|String ID (veya sıfır)|
-|Lparam|Dize için LPCSTR (veya NULL)|
-|dizisi|Kullanılmaz (0)|
+|wParam|Dize KIMLIĞI (veya sıfır)|
+|lParam|Dize için LPCSTR (veya NULL)|
+|dizisi|Kullanılmıyor (0)|
 
 **WM_IDLEUPDATECMDUI**
 
-Bu ileti, güncelleştirme komutu Kullanıcı Arabirimi işleyicilerinin boşta zaman güncelleştirmesini uygulamak için boşta zamanda gönderilir. Pencere (genellikle bir denetim çubuğu) iletiyi işlerse, bir `CCmdUI` nesne (veya türetilmiş bir sınıfın nesnesi) oluşturur ve penceredeki "öğelerin" her biri için çağrıda bulundu. `CCmdUI::DoUpdate` Bu sırayla komut işleyicisi zincirindeki nesneler için bir ON_UPDATE_COMMAND_UI işleyicisi için kontrol edecektir.
+Bu ileti, Update-Command UI işleyicilerinin boşta kalma süresi güncelleştirmesini uygulamak için boşta zamanlı olarak gönderilir. Pencere (genellikle bir denetim çubuğu) iletiyi işlediğinde, bu, `CCmdUI` penceredeki bir nesne (ya da türetilmiş bir sınıfın nesnesi) ve `CCmdUI::DoUpdate` her bir "öğe" için çağrı oluşturur. Bu, komut işleyici zincirindeki nesneler için bir ON_UPDATE_COMMAND_UI işleyicisini denetler.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|BOOL bDisableIfNoHandler|
-|Lparam|Kullanılmaz (0)|
-|dizisi|Kullanılmaz (0)|
+|wParam|BOOL bDisableIfNoHandler|
+|lParam|Kullanılmıyor (0)|
+|dizisi|Kullanılmıyor (0)|
 
-*bDisableIfNoHandler,* ON_UPDATE_COMMAND_UI veya ON_COMMAND işleyicisi yoksa UI nesnesini devre dışı etmek için sıfır değildir.
+ON_UPDATE_COMMAND_UI veya ON_COMMAND işleyicisi yoksa, UI nesnesini devre dışı bırakmak için *Bdisableifnohandler* sıfır dışında bir değer.
 
 **WM_EXITHELPMODE**
 
-Bu ileti, içeriğe duyarlı yardım modundan çıkmak için bir `CFrameWnd` iletiye nakledilir. Bu iletinin alınması tarafından başlatılan modal `CFrameWnd::OnContextHelp`döngü sona erer.
+Bu ileti, `CFrameWnd` bağlama duyarlı yardım modundan çıkmak için bir öğesine gönderilir. Bu iletinin alınması, tarafından başlatılan kalıcı döngüyü sonlandırır `CFrameWnd::OnContextHelp` .
 
-|||
+| Parametre ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmaz (0)|
-|Lparam|Kullanılmaz (0)|
+|wParam|Kullanılmıyor (0)|
+|lParam|Kullanılmıyor (0)|
 |dizisi|Kullanılmıyor|
 
 **WM_INITIALUPDATE**
 
-Bu ileti, belge şablonu tarafından, ilk güncelleştirmelerini yapmaları güvenli olduğunda, bir çerçeve penceresinin tüm torunlarına gönderilir. Bir çağrıyla `CView::OnInitialUpdate` eşler, ancak diğer `CWnd`tek çekim güncelleştirme için diğer türetilmiş sınıflarda kullanılabilir.
+Bu ileti, belge şablonu tarafından, ilk güncelleştirmesini yapmak için güvenli olduğunda bir çerçeve penceresinin tüm alt öğeleri tarafından gönderilir. Bir çağrısıyla eşleşir `CView::OnInitialUpdate` , ancak başka `CWnd` bir görüntü güncelleştirme için diğer türetilmiş sınıflarda kullanılabilir.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmaz (0)|
-|Lparam|Kullanılmaz (0)|
-|dizisi|Kullanılmaz (0)|
+|wParam|Kullanılmıyor (0)|
+|lParam|Kullanılmıyor (0)|
+|dizisi|Kullanılmıyor (0)|
 
 **WM_RECALCPARENT**
 
-Bu ileti, bir düzen yeniden hesaplamasını `GetParent`zorlamak için (genellikle üst öğe çağırır) `RecalcLayout`üst penceresine (üzerinden elde edilen) bir görünüm tarafından gönderilir. Bu, görünümün toplam boyutu büyüdükçe çerçevenin boyutunun büyümesi için gerekli olan OLE sunucu uygulamalarında kullanılır.
+Bu ileti, `GetParent` bir düzen yeniden hesaplamasının (genellikle üst öğe çağrılır) zorlamak için üst penceresine (aracılığıyla elde edilen) bir görünüm tarafından gönderilir `RecalcLayout` . Bu, görünümün toplam boyutu büyüdükçe Çerçevenin boyutunu büyüdüğü, OLE sunucu uygulamalarında kullanılır.
 
-Üst pencere bu iletiyi işlerse TRUE döndürmelidir ve lParam'da geçen RECT'yi istemci alanının yeni boyutuyla doldurmalıdır. Bu, bir `CScrollView` sunucu nesnesi yerinde etkinleştirildiğinde kaydırma çubuklarını düzgün bir şekilde işlemek için (eklendiğinde pencerenin dışına yerleştirin) kullanılır.
+Üst pencere bu iletiyi işliyorsa, doğru döndürmelidir ve lParam içinde geçirilen RECT öğesini istemci alanının yeni boyutuyla doldurmanız gerekir. Bu, `CScrollView` bir sunucu nesnesi yerinde etkinleştirildiğinde kaydırma çubuklarını doğru bir şekilde işlemek için (eklendiğinde pencerenin dışına yerleştir) kullanılır.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmaz (0)|
-|Lparam|LPRECT rectClient, NULL olabilir|
-|dizisi|Yeni istemci dikdörtgeni döndürülürse DOĞRU, FALSE aksi takdirde|
+|wParam|Kullanılmıyor (0)|
+|lParam|LPRECT rectClient, NULL olabilir|
+|dizisi|Yeni istemci dikdörtgeni döndürülürse TRUE, aksi takdirde FALSE|
 
 **WM_SIZECHILD**
 
-Bu ileti, `COleResizeBar` kullanıcı yeniden boyutlandırma `GetOwner`tutamaçlarıyla yeniden boyutlandırma çubuğunu yeniden boyutlandırdığında sahibi nin penceresine (üzerinden) gönderilir. `COleIPFrameWnd`çerçeve penceresini kullanıcının istediği gibi yeniden konumlandırmaya çalışarak bu iletiyi yanıtlar.
+Bu ileti, `COleResizeBar` `GetOwner` Kullanıcı yeniden boyutlandırma tutamaçlarını yeniden boyutlandırma tutamaçlarıyla yeniden boyutlandırdığında, sahibi penceresine (aracılığıyla) gönderilir. `COleIPFrameWnd` Kullanıcı istediği için çerçeve penceresini yeniden konumlandırmaya çalışırken bu iletiye yanıt verir.
 
-Yeniden boyutlandırma çubuğunu içeren çerçeve penceresine göre istemci koordinatlarında verilen yeni dikdörtgen, lParam tarafından işaret edilir.
+Yeniden boyutlandırma çubuğunu içeren çerçeve penceresine göre istemci koordinatlarıyla verilen yeni dikdörtgen, lParam tarafından belirlenir.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmaz (0)|
-|Lparam|LPRECT rectYeni|
-|dizisi|Kullanılmaz (0)|
+|wParam|Kullanılmıyor (0)|
+|lParam|LPRECT rectNew|
+|dizisi|Kullanılmıyor (0)|
 
 **WM_DISABLEMODAL**
 
-Bu ileti, devre dışı bırakılan bir çerçeve penceresine ait tüm açılır pencerelere gönderilir. Çerçeve penceresi, açılır pencereyi devre dışı bilip devre dışı bilip devre dışı bilip değiştirmeyeceğini belirlemek için sonucu kullanır.
+Bu ileti, devre dışı bırakılmakta olan bir çerçeve penceresi tarafından sahip olunan tüm açılır pencerelere gönderilir. Çerçeve penceresi, açılır pencerenin devre dışı bırakılıp başlatılmayacağını belirleme sonucunu kullanır.
 
-Çerçeve modal durumuna girdiğinde açılır pencerenizde özel işleme gerçekleştirmek veya belirli açılır pencerelerin devre dışı kalmasını sağlamak için bunu kullanabilirsiniz. Araç ipuçları, çerçeve penceresi bir modal durumuna girdiğinde, örneğin kendilerini yok etmek için bu iletiyi kullanır.
+Bu, çerçeve kalıcı bir duruma girdiğinde veya belirli açılır pencerelerin devre dışı bırakılmasına izin vermek için açılır pencerenize özel işlem yapmak için kullanabilirsiniz. Araç ipuçları bu iletiyi, çerçeve penceresi örneğin bir kalıcı duruma geçtiğinde yok etmek için kullanır.
 
-|||
+| Parametreler ve dönüş değeri | Açıklama |
 |-|-|
-|Wparam|Kullanılmaz (0)|
-|Lparam|Kullanılmaz (0)|
-|dizisi|Sıfır olmayan **not** penceresi devre dışı, 0 pencere devre dışı olacağını gösterir|
+|wParam|Kullanılmıyor (0)|
+|lParam|Kullanılmıyor (0)|
+|dizisi|Sıfır olmayan pencere devre dışı **bırakılmayacak** , 0 pencerenin devre dışı bırakılacağını gösterir|
 
 **WM_FLOATSTATUS**
 
-Bu ileti, çerçeve başka bir üst düzey çerçeve penceresi tarafından etkinleştirildiğinde veya devre dışı bırakıldığında, çerçeve penceresine ait tüm açılır pencerelere gönderilir. Bu, bu açılır pencerelerin `CMiniFrameWnd`etkinleştirme üst düzey çerçeve penceresinin aktivasyonu ile senkronize tutmak için MFS_SYNCACTIVE uygulaması tarafından kullanılır.
+Bu ileti, çerçeve bir başka üst düzey çerçeve penceresi tarafından etkinleştirildiğinde veya devre dışı bırakıldığında bir çerçeve penceresi tarafından sahip olunan tüm açılır pencerelere gönderilir. Bu `CMiniFrameWnd` açılır pencerelerin etkinleştirilmesini, en üst düzey çerçeve penceresinin etkinleştirilmesiyle eşitlenmiş halde tutmak için, ' de MFS_SYNCACTIVE uygulanması tarafından kullanılır.
 
-|||
+| Parametreler | Açıklama |
 |-|-|
-|Wparam|Aşağıdaki değerlerden biridir:<br /><br /> FS_SHOW<br /><br /> FS_HIDE<br /><br /> FS_ACTIVATE<br /><br /> FS_DEACTIVATE<br /><br /> FS_ENABLEFS_DISABLE<br /><br /> FS_SYNCACTIVE|
-|Lparam|Kullanılmaz (0)|
+|wParam|Aşağıdaki değerlerden biridir:<br /><br /> FS_SHOW<br /><br /> FS_HIDE<br /><br /> FS_ACTIVATE<br /><br /> FS_DEACTIVATE<br /><br /> FS_ENABLEFS_DISABLE<br /><br /> FS_SYNCACTIVE|
+|lParam|Kullanılmıyor (0)|
 
-FS_SYNCACTIVE ayarlanmışsa ve pencere etkinleştirmesini ana çerçeveyle eşitlerse, iade değeri sıfırsız olmalıdır. `CMiniFrameWnd`stil MFS_SYNCACTIVE ayarlandığında sıfır sızzı döndürür.
+FS_SYNCACTIVE ayarlandıysa ve pencere etkinleştirmeyi üst kareyle eşitler, dönüş değeri sıfır dışında bir değer olmalıdır. `CMiniFrameWnd` Stil MFS_SYNCACTIVE olarak ayarlandığında sıfır dışında bir değer döndürür.
 
-Daha fazla bilgi için, `CMiniFrameWnd`uygulama bakın.
+Daha fazla bilgi için uygulamasının uygulamasına bakın `CMiniFrameWnd` .
 
 ## <a name="wm_activatetoplevel"></a>WM_ACTIVATETOPLEVEL
 
-Bu ileti, "üst düzey grubu" içinde bir pencere etkinleştirildiğinde veya devre dışı bırakıldığında üst düzey bir pencereye gönderilir. Pencere, üst düzey bir pencere (üst veya sahip yoksa) veya böyle bir pencereye aitse, üst düzey bir grubun parçasıdır. Bu ileti WM_ACTIVATEAPP için kullanılan benzer, ancak farklı işlemlere ait pencerelertek bir pencere hiyerarşisinde karışık olduğu durumlarda çalışır (OLE uygulamalarında yaygın).
+Bu ileti, "üst düzey grubundaki" bir pencere etkinleştirildiğinde veya devre dışı bırakıldığında en üst düzey pencereye gönderilir. Bir pencere, üst düzey bir pencere (üst veya sahip olmadan) veya böyle bir pencereye ait olan üst düzey grubun bir parçasıdır. Bu ileti WM_ACTIVATEAPP için kullanımda benzerdir, ancak farklı işlemlere ait pencerelerin tek bir pencere hiyerarşisinde (OLE uygulamalarında ortak) karışmakta olduğu durumlarda çalışıyor.
 
 ## <a name="wm_commandhelp-wm_helphittest-wm_exithelpmode"></a>WM_COMMANDHELP, WM_HELPHITTEST, WM_EXITHELPMODE
 
-Bu iletiler, içeriğe duyarlı Yardım'ın uygulanmasında kullanılır. Daha fazla bilgi için lütfen [Teknik Not 28'e](../mfc/tn028-context-sensitive-help-support.md) bakın.
+Bu iletiler, bağlama duyarlı Yardım uygulamasında kullanılır. Daha fazla bilgi için lütfen [Teknik notun 28](../mfc/tn028-context-sensitive-help-support.md) bölümüne bakın.
 
-## <a name="mfc-private-resource-formats"></a>MFC Özel Kaynak Biçimleri
+## <a name="mfc-private-resource-formats"></a>MFC özel kaynak biçimleri
 
-Şu anda, MFC iki özel kaynak biçimi tanımlar: RT_TOOLBAR ve RT_DLGINIT.
+Şu anda MFC iki özel kaynak biçimi tanımlıyor: RT_TOOLBAR ve RT_DLGINIT.
 
-## <a name="rt_toolbar-resource-format"></a>RT_TOOLBAR Kaynak Biçimi
+## <a name="rt_toolbar-resource-format"></a>RT_TOOLBAR kaynak biçimi
 
-AppWizard tarafından sağlanan varsayılan araç çubuğu, MFC 4.0'da tanıtılan RT_TOOLBAR özel bir kaynağa dayanır. Bu kaynağı Araç Çubuğu düzenleyicisini kullanarak edinebilirsiniz.
+AppWizard tarafından sağlanan varsayılan araç çubuğu MFC 4,0 ' de tanıtılan RT_TOOLBAR özel bir kaynağı temel alır. Bu kaynağı araç çubuğu düzenleyicisini kullanarak düzenleyebilirsiniz.
 
-## <a name="rt_dlginit-resource-format"></a>RT_DLGINIT Kaynak Biçimi
+## <a name="rt_dlginit-resource-format"></a>RT_DLGINIT kaynak biçimi
 
-Bir MFC özel kaynak biçimi, ek iletişim başlatma bilgilerini depolamak için kullanılır. Bu, açılan bir kutuda depolanan ilk dizeleri içerir. Bu kaynağın biçimi el ile düzenlenecek şekilde tasarlanmaz, ancak Visual C++ tarafından işlenir.
+Bir MFC özel kaynak biçimi, ek iletişim kutusu başlatma bilgilerini depolamak için kullanılır. Bu, Birleşik giriş kutusunda depolanan ilk dizeleri içerir. Bu kaynağın biçimi el ile düzenlenecek şekilde tasarlanmamıştır, ancak Visual C++ tarafından işlenir.
 
-Kaynaktaki bilgileri kullanmak için API alternatifi olduğundan, Visual C++ ve bu RT_DLGINIT kaynağının MFC'nin ilgili özelliklerini kullanması gerekmez. Visual C++ kullanmak, uzun vadede uygulamanızı yazmayı, bakımını ve çevirisini çok daha kolay hale getirir.
+Visual C++ ve kaynaktaki bilgileri kullanmanın API alternatifi olduğundan, bu RT_DLGINIT kaynak MFC 'nin ilgili özelliklerini kullanmak için gerekli değildir. Visual C++ kullanmak, uzun çalıştırmada uygulamanızı yazmayı, bakımını ve çevirmenizi çok daha kolay hale getirir.
 
-RT_DLGINIT kaynağının temel yapısı aşağıdaki gibidir:
+RT_DLGINIT kaynağın temel yapısı aşağıdaki gibidir:
 
 ```
 +---------------+    \
@@ -189,15 +189,15 @@ RT_DLGINIT kaynağının temel yapısı aşağıdaki gibidir:
 +---------------+
 ```
 
-Yinelenen bir bölüm, iletiyi göndermek için denetim kimliği, gönderilecek İleti # (normal bir Windows iletisi) ve değişken bir veri uzunluğunu içerir. Windows iletisi bir biçimde gönderilir:
+Yinelenen bir bölümde iletinin gönderileceği denetim KIMLIĞI, gönderme Iletisi (normal bir Windows iletisi) ve değişken veri uzunluğu bulunur. Windows iletisi bir biçimde gönderilir:
 
 ```
 SendDlgItemMessage(<Control ID>, <Message #>, 0, &<Data>);
 ```
 
-Bu, windows iletilerine ve veri içeriğine izin veren çok genel bir biçimdir. Visual C++ kaynak düzenleyicisi ve MFC yalnızca sınırlı bir Windows ileti alt kümesini destekler: açılan kutular için ilk liste seçenekleri için CB_ADDSTRING (veriler bir metin dizesidir).
+Bu, tüm Windows iletilerine ve veri içeriğine izin veren çok genel bir biçimdir. Visual C++ kaynak Düzenleyicisi ve MFC yalnızca sınırlı bir Windows iletileri alt kümesini destekler: Birleşik giriş kutuları için CB_ADDSTRING (veriler bir metin dizesidir).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

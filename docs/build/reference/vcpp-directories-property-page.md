@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: 06e9508ae09f9c7581648b45098f497fda785013
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: 39362deaa770b39eea964f1e4e58186dd5923b7f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470803"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846036"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC + + dizinleri Özellik sayfası (Windows)
 
@@ -74,7 +74,7 @@ Kendi makrolarınızı iki şekilde tanımlayabilirsiniz:
 
 - Kullanıcı makrolarını bir. props dosyasında tanımlayın. Daha fazla bilgi için bkz. [özellik sayfası makroları](../working-with-project-properties.md).
 
-Daha fazla bilgi için şu blog gönderilerine bakın: [VC + + dizinleri](https://docs.microsoft.com/archive/blogs/vsproject/vc-directories), [devralınan özellikler ve özellik sayfaları](https://docs.microsoft.com/cpp/build/project-property-inheritance)ve [Visual Studio 2010 C++ proje yükseltme Kılavuzu](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/).
+Daha fazla bilgi için bkz. [Visual Studio projelerinde Özellik devralma](../project-property-inheritance.md)ve bu blog gönderileri: [VC + + dizinleri](/archive/blogs/vsproject/vc-directories), [Visual Studio 2010 C++ proje yükseltme Kılavuzu](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/).
 
 ## <a name="directory-types"></a>Dizin Türleri
 

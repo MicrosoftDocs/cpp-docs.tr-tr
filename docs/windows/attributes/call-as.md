@@ -1,23 +1,23 @@
 ---
-title: call_as (C++ com özniteliği)
+title: call_as (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.call_as
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: 755741faec6c0ba702d372ca8dee486edcb72ef3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9ae620ed6f2b01cc52e4a9c76217f044db925f11
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167347"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838926"
 ---
 # <a name="call_as"></a>call_as
 
 Uzak işlev çağrıldığında yerel işlev çağrıldığında [Yerel](local-cpp.md) bir işlevin uzak bir işlevle eşleştirilmesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ call_as(function) ]
@@ -30,11 +30,11 @@ Uzak bir işlev çağrıldığında çağrılmasını istediğiniz yerel işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Call_as** C++ özniteliği [call_as](/windows/win32/Midl/call-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Call_as** C++ özniteliği, [call_as](/windows/win32/Midl/call-as) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, Uzaktan erişilebilir olmayan bir işlevi (`f1`) uzaktan erişilebilen bir işleve (`Remf1`) eşlemek için **call_as** nasıl kullanabileceğinizi gösterir:
+Aşağıdaki kod, Uzaktan erişilebilir olmayan bir işlevi () uzaktan erişilebilen bir işleve () eşlemek için **call_as** nasıl kullanabileceğinizi gösterir `f1` `Remf1` :
 
 ```cpp
 // cpp_attr_ref_call_as.cpp
@@ -50,19 +50,17 @@ __interface IMInterface {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Interface yöntemi|
+|**Şunlara uygulanır**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
-[local](local-cpp.md)
+[Yöntem öznitelikleri](method-attributes.md)<br/>
+[Yerel](local-cpp.md)
