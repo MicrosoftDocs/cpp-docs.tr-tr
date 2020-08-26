@@ -6,18 +6,18 @@ helpviewer_keywords:
 - symbols [C++], Win32 predefined
 - Windows API [C++], predefined symbols
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
-ms.openlocfilehash: ae79b4c1a4021b32f631c694b376d2202b345415
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f69dddcb8b6a9a390f80ab4d0112e19c4e8d32e1
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165931"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835655"
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 
 Bu semboller Win32 üst bilgi dosyalarında tanımlanmıştır ve standart Windows uygulama işlevlerini ve eylemlerini destekler. Bu semboller genellikle ortak kullanıcı arabirimi öğeleriyle kullanılır. Kaynak düzenleyicilerde denetimlerle çalışırken, bu semboller ortak denetimlerle ilişkili [Özellikler penceresi](/visualstudio/ide/reference/properties-window) görüntülenir. Örneğin, araç çubuğun uygulama simgesini görüntülemesi gerekiyorsa, simge **özellik** penceresindeki sembol IDI_SMALL ilişkilendirilir.
 
-|||
+|Ad|Açıklama|
 |-|-|
 |IDABORT|denetimle İletişim kutusu, durdur düğmesi|
 |IDC_STATIC|denetimle İletişim kutusunda statik metin|
@@ -40,6 +40,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)<br/>
-[MFC Önceden Tanımlanmış Semboller](../windows/mfc-predefined-symbols.md)<br/>
-[ATL Önceden Tanımlanmış Semboller](../windows/atl-predefined-symbols.md)<br/>
+[Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)<br/>
+[MFC önceden tanımlanmış semboller](../windows/mfc-predefined-symbols.md)<br/>
+[ATL önceden tanımlanmış semboller](../windows/atl-predefined-symbols.md)<br/>

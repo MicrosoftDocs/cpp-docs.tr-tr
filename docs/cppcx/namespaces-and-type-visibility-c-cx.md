@@ -2,12 +2,12 @@
 title: Ad alanları ve tür görünürlüğü (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: cbfbd8c27065121eb176d9a62662eab7e1f4271b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 78d5f5af761cef985ec43cf448251b4dc3c70bc2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230980"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837807"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C++/CX)
 
@@ -28,15 +28,14 @@ Bir ad alanında, Windows Çalışma Zamanı türler — standart C++ türlerind
 
 Hem meta veri görünürlüğünü hem de kaynak kodu erişilebilirliğini denetlemek için aşağıdaki erişim değiştiricilerini kullanın.
 
-||||
-|-|-|-|
-|Değiştirici|Anlamı|Meta verilere mi yayılsın?|
-|private|Varsayılan erişilebilirlik. Standart C++ ile aynı anlamı.|Hayır|
-|protected|Standart C++ ile aynı anlamı, hem uygulama hem de bileşen içinde ve meta verilerde.|Yes|
-|public|Standart C++ ile aynı anlamı.|Yes|
-|`public protected`veya`protected public`|Meta verilerde korunan erişilebilirlik, uygulama veya bileşen içinde ortak.|Yes|
-|`protected private` veya `private protected`|Meta verilerde görünmez; uygulama veya bileşen içinde korunan erişilebilirlik.||
-|`internal` veya `private public`|Üye Uygulama veya bileşen içinde ortaktır, ancak meta verilerde görünür değildir.|Hayır|
+| Değiştirici | Anlamı | Meta verilere mi yayılsın? |
+|--|--|--|
+| **`private`** | Varsayılan erişilebilirlik. Standart C++ ile aynı anlamı. | Hayır |
+| **`protected`** | Standart C++ ile aynı anlamı, hem uygulama hem de bileşen içinde ve meta verilerde. | Yes |
+| **`public`** | Standart C++ ile aynı anlamı. | Yes |
+| **`public protected`** veya **`protected public`** | Meta verilerde korunan erişilebilirlik, uygulama veya bileşen içinde ortak. | Yes |
+| **`protected private`** veya **`private protected`** | Meta verilerde görünmez; uygulama veya bileşen içinde korunan erişilebilirlik. |  |
+| **`internal`** veya **`private public`** | Üye Uygulama veya bileşen içinde ortaktır, ancak meta verilerde görünür değildir. | Hayır |
 
 ## <a name="windows-runtime-namespaces"></a>Windows Çalışma Zamanı ad alanları
 
@@ -46,13 +45,12 @@ Windows API, Windows:: Namespaces içinde belirtilen türlerden oluşur \* . Bu 
 
 C++/CX, Windows Çalışma Zamanı türü sisteminin projeksiyonunun bir parçası olarak bu ad alanlarında belirli türleri tanımlar.
 
-|||
-|-|-|
-|**Ad Alanı**|**Açıklama**|
-|default|Yerleşik sayısal ve Char16 türlerini içerir. Bu türler her ad alanındaki kapsamdadır ve bir **`using`** ifade hiçbir şekilde gerekli değildir.|
-|Platform|,, Ve gibi Windows çalışma zamanı türlerine karşılık gelen öncelikle genel türler `Array<T>` içerir `String` `Guid` `Boolean` . Ayrıca, ve gibi özelleştirilmiş yardımcı türler `Platform::Agile<T>` içerir `Platform::Box<T>` .|
-|Platform:: Collections|Windows Çalışma Zamanı koleksiyonu arabirimlerini uygulayan somut koleksiyon sınıflarını içerir `IVector` `IMap` . Bu türler, platform. winmd içinde değil, Collection. h üstbilgi dosyasında tanımlanmıştır.|
-|Platform::D euçlar|Derleyici tarafından kullanılan ve genel tüketim için amaçlanmış türler içerir.|
+| Ad Alanı | Açıklama |
+|--|--|
+| default | Yerleşik sayısal ve Char16 türlerini içerir. Bu türler her ad alanındaki kapsamdadır ve bir **`using`** ifade hiçbir şekilde gerekli değildir. |
+| `Platform` | ,, Ve gibi Windows çalışma zamanı türlerine karşılık gelen öncelikle genel türler `Array<T>` içerir `String` `Guid` `Boolean` . Ayrıca, ve gibi özelleştirilmiş yardımcı türler `Platform::Agile<T>` içerir `Platform::Box<T>` . |
+| `Platform::Collections` | Windows Çalışma Zamanı koleksiyonu arabirimlerini uygulayan somut koleksiyon sınıflarını içerir `IVector` `IMap` . Bu türler, platform. winmd içinde değil, Collection. h üstbilgi dosyasında tanımlanmıştır. |
+| `Platform::Details` | Derleyici tarafından kullanılan ve genel tüketim için amaçlanmış türler içerir. |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

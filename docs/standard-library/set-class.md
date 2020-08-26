@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-ms.openlocfilehash: 80e7c2258fc1fbeabeb8174df18d5cb46aa682bb
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e879e7ffd9f674769e32548195f5017e27e64576
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560536"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846244"
 ---
 # <a name="set-class"></a>set Sınıfı
 
@@ -145,13 +145,13 @@ Küme sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, 
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[kurmak](#set)|Boş veya küme öğesinin tümünün veya diğer bir kısmının kopyası olan bir küme oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Küme nesnesinin sınıfını temsil eden bir tür `allocator` .|
 |[const_iterator](#const_iterator)|Küme içindeki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .|
@@ -171,13 +171,13 @@ Küme sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, 
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[başladı](#begin)|Küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|
 |[cbegin](#cbegin)|Küme içindeki ilk öğeyi ele alan sabit bir yineleyici döndürür.|
 |[cend](#cend)|Küme içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür.|
 |[lediğiniz](#clear)|Bir kümenin tüm öğelerini siler.|
-|[biriktirme](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen küme içindeki öğelerin sayısını döndürür.|
+|[count](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen küme içindeki öğelerin sayısını döndürür.|
 |[crbegin](#rbegin)|Ters çevrilen kümedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.|
 |[crend](#rend)|Ters çevrilen kümedeki son öğeden sonra gelen konumu ele alan bir sabit yineleyici döndürür.|
 |[Emplace](#emplace)|Bir küme içine yerinde oluşturulmuş bir öğe ekler.|
@@ -201,7 +201,7 @@ Küme sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, 
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç =](#op_eq)|Bir kümenin öğelerini başka bir küme kopyasıyla değiştirir.|
 

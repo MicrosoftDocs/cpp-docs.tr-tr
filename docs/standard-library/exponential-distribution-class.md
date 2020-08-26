@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-ms.openlocfilehash: db176bef55455c0553e5865e268c4e4e8fed089d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dbb8425047d9076343922dfbcf5c6162b6054c3b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212364"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835915"
 ---
 # <a name="exponential_distribution-class"></a>exponential_distribution Sınıfı
 
@@ -77,10 +77,8 @@ Rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa üstel dağıtıma göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[exponential_distribution](#exponential_distribution)|`exponential_distribution::lambda`|`exponential_distribution::param`|
-|`exponential_distribution::operator()`||[param_type](#param_type)|
+[exponential_distribution](#exponential_distribution)\
+[param_type](#param_type)
 
 Özellik üye işlevi, `lambda()` depolanan dağıtım parametresinin değerini döndürür `lambda` .
 
@@ -171,7 +169,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="exponential_distributionexponential_distribution"></a><a name="exponential_distribution"></a>exponential_distribution:: exponential_distribution
+## <a name="exponential_distributionexponential_distribution"></a><a name="exponential_distribution"></a> exponential_distribution:: exponential_distribution
 
 Dağıtımı oluşturur.
 
@@ -196,7 +194,7 @@ Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="exponential_distributionparam_type"></a><a name="param_type"></a>exponential_distribution::p aram_type
+## <a name="exponential_distributionparam_type"></a><a name="param_type"></a> exponential_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 

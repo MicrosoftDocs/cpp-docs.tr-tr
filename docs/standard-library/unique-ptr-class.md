@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::unique_ptr [C++], reset
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
-ms.openlocfilehash: 694ea94ac0e9dcd31d89a3a83bd3400bac3e8e4f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e6c7d8dd9835545c4aaa677a39f5e3149743d14
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222192"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835681"
 ---
 # <a name="unique_ptr-class"></a>unique_ptr Sınıfı
 
@@ -115,7 +115,7 @@ Tarafından hiçbir özel durum oluşturulmaz `unique_ptr` .
 
 Yeni örneklerini etkin bir şekilde oluşturmak için [make_unique](../standard-library/memory-functions.md#make_unique) yardımcı işlevini kullanın `unique_ptr` .
 
-`unique_ptr`bir kaynağı benzersiz bir şekilde yönetir. Her `unique_ptr` nesne, sahip olduğu veya bir null işaretçiyi depolayan nesnesine bir işaretçi depolar. Bir kaynak, birden fazla nesneye sahip olamaz `unique_ptr` ;  `unique_ptr`belirli bir kaynağa sahip bir nesne yok edildiğinde, kaynak serbest bırakılır. Bir `unique_ptr` nesne taşınabilir, ancak kopyalanmayabilir;  daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+`unique_ptr` bir kaynağı benzersiz bir şekilde yönetir. Her `unique_ptr` nesne, sahip olduğu veya bir null işaretçiyi depolayan nesnesine bir işaretçi depolar. Bir kaynak, birden fazla nesneye sahip olamaz `unique_ptr` ;  `unique_ptr` belirli bir kaynağa sahip bir nesne yok edildiğinde, kaynak serbest bırakılır. Bir `unique_ptr` nesne taşınabilir, ancak kopyalanmayabilir;  daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 Kaynak, `deleter` `Del` kaynakların belirli bir için nasıl ayrıldığını bilen bir depolanmış nesne çağırarak serbest bırakılır `unique_ptr` . Varsayılan değer, `deleter` `default_delete<T>` tarafından işaret `ptr` edilen kaynağın ile ayrıldığı **`new`** ve çağırarak boşaltılabileceği varsayılmaktadır `delete _Ptr` . (Kısmi bir özelleşme `unique_ptr<T[]>` , ile ayrılmış dizi nesnelerini yönetir `new[]` ve varsayılan olan `deleter` `default_delete<T[]>` , delete [] çağrısı için özelleşmiş bir değer içerir `ptr` .)
 
@@ -125,13 +125,13 @@ Sahip olunan bir kaynağa ait saklı işaretçi `stored_ptr` türü `pointer` . 
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[unique_ptr](#unique_ptr)|İçin yedi Oluşturucu vardır `unique_ptr` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[deleter_type](#deleter_type)|Şablon parametresi için bir eş anlamlı `Del` .|
 |[element_type](#element_type)|Şablon parametresi için bir eş anlamlı `T` .|
@@ -139,7 +139,7 @@ Sahip olunan bir kaynağa ait saklı işaretçi `stored_ptr` türü `pointer` . 
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Al](#get)|`stored_ptr` döndürür.|
 |[get_deleter](#get_deleter)|Öğesine bir başvuru döndürür `stored_deleter` .|
@@ -149,14 +149,14 @@ Sahip olunan bir kaynağa ait saklı işaretçi `stored_ptr` türü `pointer` . 
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |**işleç bool**|İşleci, dönüştürülebilir bir türün değerini döndürür **`bool`** . Dönüştürmenin sonucu **`bool`** **`true`** `get() != pointer()` , aksi durumda olur **`false`** .|
 |`operator->`|Üye işlevi döndürür `stored_ptr` .|
 |`operator*`|Üye işlevi döndürür `*stored_ptr` .|
 |[işleç =](#unique_ptr_operator_eq)|`unique_ptr`Geçerli bir (veya a `pointer-type` ) değerini geçerli olacak şekilde atar `unique_ptr` .|
 
-### <a name="deleter_type"></a><a name="deleter_type"></a>deleter_type
+### <a name="deleter_type"></a><a name="deleter_type"></a> deleter_type
 
 Tür, şablon parametresi için bir eş anlamlı `Del` .
 
@@ -168,7 +168,7 @@ typedef Del deleter_type;
 
 Tür, şablon parametresi için bir eş anlamlı `Del` .
 
-### <a name="element_type"></a><a name="element_type"></a>element_type
+### <a name="element_type"></a><a name="element_type"></a> element_type
 
 Tür, şablon parametresi için bir eş anlamlı `Type` .
 
@@ -180,7 +180,7 @@ typedef Type element_type;
 
 Tür, şablon parametresi için bir eş anlamlı `Ty` .
 
-### <a name="get"></a><a name="get"></a>Al
+### <a name="get"></a><a name="get"></a> Al
 
 `stored_ptr` döndürür.
 
@@ -192,7 +192,7 @@ pointer get() const;
 
 Üye işlevi döndürür `stored_ptr` .
 
-### <a name="get_deleter"></a><a name="get_deleter"></a>get_deleter
+### <a name="get_deleter"></a><a name="get_deleter"></a> get_deleter
 
 Öğesine bir başvuru döndürür `stored_deleter` .
 
@@ -206,7 +206,7 @@ const Del& get_deleter() const;
 
 Üye işlevi öğesine bir başvuru döndürür `stored_deleter` .
 
-### <a name="operator"></a><a name="unique_ptr_operator_eq"></a>işleç =
+### <a name="operator"></a><a name="unique_ptr_operator_eq"></a> işleç =
 
 Belirtilen adresini geçerli bir adrese atar `unique_ptr` .
 
@@ -225,7 +225,7 @@ unique_ptr& operator=(pointer-type);
 
 Üye işlevleri çağırır `reset(right.release())` ve öğesine taşınır `right.stored_deleter` `stored_deleter` , ardından döndürülür **`*this`** .
 
-### <a name="pointer"></a><a name="pointer"></a>çağrısı
+### <a name="pointer"></a><a name="pointer"></a> çağrısı
 
 Tanımlanmışsa için bir eş anlamlı `Del::pointer` , aksi durumda `Type *` .
 
@@ -237,7 +237,7 @@ typedef T1 pointer;
 
 Tür tanımlandıysa için bir eş anlamlı `Del::pointer` , aksi durumda `Type *` .
 
-### <a name="release"></a><a name="release"></a>Yayın
+### <a name="release"></a><a name="release"></a> Yayın
 
 Döndürülen saklı işaretçinin sahipliğini çağırana yayınlar ve saklı işaretçi değerini olarak ayarlar **`nullptr`** .
 
@@ -297,7 +297,7 @@ Deleting Sample(42)
 Deleting Sample(3)
 ```
 
-### <a name="reset"></a><a name="reset"></a>döndürmek
+### <a name="reset"></a><a name="reset"></a> döndürmek
 
 İşaretçi parametresinin sahipliğini alır ve ardından özgün saklı işaretçiyi siler. Yeni işaretçi özgün saklı işaretçiyle aynıysa, `reset` işaretçiyi siler ve saklı işaretçiyi olarak ayarlar **`nullptr`** .
 
@@ -317,7 +317,7 @@ Sahipliğini alacak kaynağa yönelik bir işaretçi.
 
 `reset`İlk olarak yeni işaretçiyi *PTR*'yi sakladığı ve özgün saklı işaretçiyi sildiği için, `reset` özgün saklı işaretçiyle aynı ise *PTR* 'yi hemen silmek mümkündür.
 
-### <a name="swap"></a><a name="swap"></a>Kur
+### <a name="swap"></a><a name="swap"></a> Kur
 
 İki nesne arasında işaretçiler değiş tokuş eder `unique_ptr` .
 
@@ -334,7 +334,7 @@ void swap(unique_ptr& right);
 
 Üye işlevi ile `stored_ptr` `right.stored_ptr` ve ile değiştirir `stored_deleter` `right.stored_deleter` .
 
-### <a name="unique_ptr"></a><a name="unique_ptr"></a>unique_ptr
+### <a name="unique_ptr"></a><a name="unique_ptr"></a> unique_ptr
 
 İçin yedi Oluşturucu vardır `unique_ptr` .
 
@@ -374,7 +374,7 @@ Bir `deleter` öğesine atanacak bir `unique_ptr` .
 
 Beşinci Oluşturucu içinde *PTR* depolar `stored_ptr` ve içine gider `deleter` `stored_deleter` . ' Deki altıncı ve yedinci oluşturucular ' `right.release()` de depolar `stored_ptr` ve ' a gider `right.get_deleter()` `stored_deleter` .
 
-### <a name="unique_ptr"></a><a name="dtorunique_ptr"></a>~ unique_ptr
+### <a name="unique_ptr"></a><a name="dtorunique_ptr"></a> ~ unique_ptr
 
 Yok edicisi, `unique_ptr` bir nesneyi yok eder `unique_ptr` .
 

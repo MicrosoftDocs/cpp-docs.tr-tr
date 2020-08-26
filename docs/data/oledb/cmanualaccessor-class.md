@@ -30,18 +30,18 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: 4d9fb79bbf5203fa959672faec8c3b076c17f1ca
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 32ab31734b8c6e3f72053e1e4f2a8a9233b73995
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211854"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838106"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor Sınıfı
 
 Gelişmiş kullanım için tasarlanan bir erişimci türünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CManualAccessor : public CAccessorBase
@@ -55,7 +55,7 @@ class CManualAccessor : public CAccessorBase
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[AddBindEntry](#addbindentry)|Çıkış sütunlarına bir bağlama girişi ekler.|
 |[AddParameterEntry](#addparameterentry)|Parametre erişimcisine bir parametre girişi ekler.|
@@ -64,13 +64,13 @@ class CManualAccessor : public CAccessorBase
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CManualAccessor`kullanarak, çalışma zamanı işlev çağrılarının parametresini ve çıkış sütunu bağlamayı belirtebilirsiniz.
+Kullanarak `CManualAccessor` , çalışma zamanı işlev çağrılarının parametresini ve çıkış sütunu bağlamayı belirtebilirsiniz.
 
-## <a name="cmanualaccessoraddbindentry"></a><a name="addbindentry"></a>CManualAccessor:: AddBindEntry
+## <a name="cmanualaccessoraddbindentry"></a><a name="addbindentry"></a> CManualAccessor:: AddBindEntry
 
 Çıkış sütunlarına bir bağlama girişi ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void AddBindEntry(DBORDINAL nOrdinal,
@@ -104,13 +104,13 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi kullanmak için, önce [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md)öğesini çağırmanız gerekir. `CreateAccessor`belirtilen sütun sayısından daha fazla giriş ekleyemezsiniz.
+Bu işlevi kullanmak için, önce [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md)öğesini çağırmanız gerekir. İçinde belirtilen sütun sayısından daha fazla giriş ekleyemezsiniz `CreateAccessor` .
 
-## <a name="cmanualaccessoraddparameterentry"></a><a name="addparameterentry"></a>CManualAccessor:: AddParameterEntry
+## <a name="cmanualaccessoraddparameterentry"></a><a name="addparameterentry"></a> CManualAccessor:: AddParameterEntry
 
 Parametre girişi yapılarına bir parametre girişi ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void AddParameterEntry(DBORDINAL nOrdinal,
@@ -150,11 +150,11 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 Bu işlevi kullanmak için, ilk olarak [CreateParameterAccessor yöntemini](../../data/oledb/cmanualaccessor-createparameteraccessor.md)çağırmanız gerekir.
 
-## <a name="cmanualaccessorcreateaccessor"></a><a name="createaccessor"></a>CManualAccessor:: CreateAccessor
+## <a name="cmanualaccessorcreateaccessor"></a><a name="createaccessor"></a> CManualAccessor:: CreateAccessor
 
 Sütun bağlama yapıları için bellek ayırır ve sütun veri üyelerini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT CreateAccessor(int nBindEntries,
@@ -179,13 +179,13 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CManualAccessor::AddBindEntry` işlevini çağırmadan önce bu işlevi çağırın.
+İşlevi çağırabilmeniz için önce bu işlevi çağırın `CManualAccessor::AddBindEntry` .
 
-## <a name="cmanualaccessorcreateparameteraccessor"></a><a name="createparameteraccessor"></a>CManualAccessor:: CreateParameterAccessor
+## <a name="cmanualaccessorcreateparameteraccessor"></a><a name="createparameteraccessor"></a> CManualAccessor:: CreateParameterAccessor
 
 Parametre bağlama yapıları için bellek ayırır ve parametre veri üyelerini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT CreateParameterAccessor(int nBindEntries,
@@ -216,7 +216,7 @@ Standart HRESULT değerlerinden biri.
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
-[CAccessor Sınıfı](../../data/oledb/caccessor-class.md)<br/>
-[CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)<br/>
-[CDynamicParameterAccessor Sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
+[CAccessor sınıfı](../../data/oledb/caccessor-class.md)<br/>
+[CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)<br/>
+[CDynamicParameterAccessor sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)

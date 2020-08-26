@@ -90,18 +90,18 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: b7125390013e417123f09a5cc7f58be9ea87db56
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: de9aafe5b04b949112c44be09ac36bede7e7f660
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216472"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838184"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 
 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 'a benzer ancak [ICommandText](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) arabirimini çağırarak parametre bilgilerini ayarlanacak şekilde edinir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDynamicParameterAccessor : public CDynamicAccessor
@@ -115,7 +115,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[CDynamicParameterAccessor](#cdynamicparameteraccessor)|Oluşturucu.|
 |[GetParam](#getparam)|Arabellekteki parametre verilerini alır.|
@@ -139,7 +139,7 @@ Parametre bilgileri, bu sınıf tarafından oluşturulan ve yönetilen bir arabe
 
 Bu sınıfın bir SQL Server saklı yordamı yürütmek ve çıkış parametre değerlerini almak için nasıl kullanılacağını gösteren bir örnek için GitHub 'daki [Microsoft VCSamples](https://github.com/Microsoft/VCSamples) deposundaki [DynamicConsumer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) örnek koduna bakın.
 
-## <a name="cdynamicparameteraccessorcdynamicparameteraccessor"></a><a name="cdynamicparameteraccessor"></a>CDynamicParameterAccessor:: CDynamicParameterAccessor
+## <a name="cdynamicparameteraccessorcdynamicparameteraccessor"></a><a name="cdynamicparameteraccessor"></a> CDynamicParameterAccessor:: CDynamicParameterAccessor
 
 Oluşturucu.
 
@@ -165,7 +165,7 @@ En büyük BLOB boyutu bayt cinsinden; Bu değer üzerindeki sütun verileri bir
 
 BLOB işlemesi hakkında daha fazla bilgi için [CDynamicAccessor:: CDynamicAccessor](../../data/oledb/cdynamicaccessor-cdynamicaccessor.md) oluşturucusuna bakın.
 
-## <a name="cdynamicparameteraccessorgetparam"></a><a name="getparam"></a>CDynamicParameterAccessor:: GetParam
+## <a name="cdynamicparameteraccessorgetparam"></a><a name="getparam"></a> CDynamicParameterAccessor:: GetParam
 
 Parametre arabelleğindeki belirtilen parametreye ait dize olmayan verileri alır.
 
@@ -203,11 +203,11 @@ dışı Arabellekten alınan verileri içeren bellek işaretçisi.
 
 `GetParam`Arabelleğinden dize olmayan parametre verilerini almak için kullanın. Arabellekteki dize parametresi verilerini almak için [GetParamString](../../data/oledb/cdynamicparameteraccessor-getparamstring.md) kullanın.
 
-## <a name="cdynamicparameteraccessorgetparamcount"></a><a name="getparamcount"></a>CDynamicParameterAccessor:: GetParamCount
+## <a name="cdynamicparameteraccessorgetparamcount"></a><a name="getparamcount"></a> CDynamicParameterAccessor:: GetParamCount
 
 Arabellekte depolanan parametrelerin sayısını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DB_UPARAMS GetParamCount() const throw();
@@ -217,7 +217,7 @@ DB_UPARAMS GetParamCount() const throw();
 
 Parametre sayısı.
 
-## <a name="cdynamicparameteraccessorgetparamio"></a><a name="getparamio"></a>CDynamicParameterAccessor:: Getparaıo
+## <a name="cdynamicparameteraccessorgetparamio"></a><a name="getparamio"></a> CDynamicParameterAccessor:: Getparaıo
 
 Belirtilen parametrenin bir giriş veya çıkış parametresi olup olmadığını belirler.
 
@@ -250,7 +250,7 @@ enum DBPARAMIOENUM {
 
 **`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-## <a name="cdynamicparameteraccessorgetparamlength"></a><a name="getparamlength"></a>CDynamicParameterAccessor:: GetParamLength
+## <a name="cdynamicparameteraccessorgetparamlength"></a><a name="getparamlength"></a> CDynamicParameterAccessor:: GetParamLength
 
 Arabellekte depolanan belirtilen parametrenin uzunluğunu alır.
 
@@ -275,7 +275,7 @@ dışı Belirtilen parametrenin bayt cinsinden uzunluğunu içeren değişkene y
 
 İlk geçersiz kılma **`true`** başarı veya başarısızlık durumunda geri döner **`false`** . İkinci geçersiz kılma, parametrenin uzunluğunu içeren belleğe işaret eder.
 
-## <a name="cdynamicparameteraccessorgetparamname"></a><a name="getparamname"></a>CDynamicParameterAccessor:: GetParamName
+## <a name="cdynamicparameteraccessorgetparamname"></a><a name="getparamname"></a> CDynamicParameterAccessor:: GetParamName
 
 Belirtilen parametrenin adını alır.
 
@@ -294,7 +294,7 @@ LPOLESTR GetParamName(DBORDINAL nParam) const throw();
 
 Belirtilen parametrenin adı.
 
-## <a name="cdynamicparameteraccessorgetparamstatus"></a><a name="getparamstatus"></a>CDynamicParameterAccessor:: GetParamStatus
+## <a name="cdynamicparameteraccessorgetparamstatus"></a><a name="getparamstatus"></a> CDynamicParameterAccessor:: GetParamStatus
 
 Arabellekte depolanan belirtilen parametrenin durumunu alır.
 
@@ -319,7 +319,7 @@ dışı Belirtilen parametrenin DBSTATUS durumunu içeren değişkene yönelik b
 
 İlk geçersiz kılma **`true`** başarı veya başarısızlık durumunda geri döner **`false`** . İkinci geçersiz kılma, belirtilen parametrenin durumunu içeren belleğe işaret eder.
 
-## <a name="cdynamicparameteraccessorgetparamstring"></a><a name="getparamstring"></a>CDynamicParameterAccessor:: GetParamString
+## <a name="cdynamicparameteraccessorgetparamstring"></a><a name="getparamstring"></a> CDynamicParameterAccessor:: GetParamString
 
 Arabellekte depolanan belirtilen parametrenin dize verilerini alır.
 
@@ -367,7 +367,7 @@ Arabellek *pBuffer* tüm dizeyi içerecek kadar büyük değilse bu yöntem baş
 
 `GetParamString`Arabellekteki dize parametresi verilerini almak için kullanın. Arabellekteki dize olmayan parametre verilerini almak için [GetParam](../../data/oledb/cdynamicparameteraccessor-getparam.md) kullanın.
 
-## <a name="cdynamicparameteraccessorgetparamtype"></a><a name="getparamtype"></a>CDynamicParameterAccessor:: GetParamType
+## <a name="cdynamicparameteraccessorgetparamtype"></a><a name="getparamtype"></a> CDynamicParameterAccessor:: GetParamType
 
 Belirtilen parametrenin veri türünü alır.
 
@@ -390,7 +390,7 @@ dışı Belirtilen parametrenin veri türünü içeren değişkene yönelik bir 
 
 **`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-## <a name="cdynamicparameteraccessorsetparam"></a><a name="setparam"></a>CDynamicParameterAccessor:: SetParam
+## <a name="cdynamicparameteraccessorsetparam"></a><a name="setparam"></a> CDynamicParameterAccessor:: SetParam
 
 Belirtilen (dize olmayan) verileri kullanarak parametre arabelleğini ayarlar.
 
@@ -433,7 +433,7 @@ Veri türü olan şablonlu bir parametre.
 
 `SetParam`Arabellekte dize olmayan parametre verilerini ayarlamak için kullanın. Arabellekte dize parametresi verilerini ayarlamak için [SetParamString](../../data/oledb/cdynamicparameteraccessor-setparamstring.md) kullanın.
 
-## <a name="cdynamicparameteraccessorsetparamlength"></a><a name="setparamlength"></a>CDynamicParameterAccessor:: SetParamLength
+## <a name="cdynamicparameteraccessorsetparamlength"></a><a name="setparamlength"></a> CDynamicParameterAccessor:: SetParamLength
 
 Arabellekte depolanan belirtilen parametrenin uzunluğunu ayarlar.
 
@@ -456,7 +456,7 @@ bool SetParamLength(DBORDINAL nParam,
 
 **`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-## <a name="cdynamicparameteraccessorsetparamstatus"></a><a name="setparamstatus"></a>CDynamicParameterAccessor:: SetParamStatus
+## <a name="cdynamicparameteraccessorsetparamstatus"></a><a name="setparamstatus"></a> CDynamicParameterAccessor:: SetParamStatus
 
 Arabellekte depolanan belirtilen parametrenin durumunu ayarlar.
 
@@ -479,7 +479,7 @@ bool SetParamStatus(DBORDINAL nParam,
 
 **`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-## <a name="cdynamicparameteraccessorsetparamstring"></a><a name="setparamstring"></a>CDynamicParameterAccessor:: SetParamString
+## <a name="cdynamicparameteraccessorsetparamstring"></a><a name="setparamstring"></a> CDynamicParameterAccessor:: SetParamString
 
 Arabellekte depolanan belirtilen parametrenin dize verilerini ayarlar.
 

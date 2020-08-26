@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 0401d2e9b5849bdd9f00628107a142606f5f6933
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6f8c60b5f4523caf19e432ff853d49ad57fd277a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219137"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835811"
 ---
 # <a name="fisher_f_distribution-class"></a>fisher_f_distribution Sınıfı
 
@@ -79,10 +79,8 @@ Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<ra
 
 Sınıf şablonu, kullanıcının belirttiği kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, Fisher 'Nin F dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[fisher_f_distribution](#fisher_f_distribution)|`fisher_f_distribution::m`|`fisher_f_distribution::param`|
-|`fisher_f_distribution::operator()`|`fisher_f_distribution::n`|[param_type](#param_type)|
+[fisher_f_distribution](#fisher_f_distribution)\
+[param_type](#param_type)
 
 Özelliği, `m()` `n()` depolanan dağıtım parametrelerinin `m` ve sırasıyla değerlerini döndürür `n` .
 
@@ -157,7 +155,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıktı
+## <a name="output"></a>Çıkış
 
 İlk çalıştırma:
 
@@ -237,7 +235,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="fisher_f_distributionfisher_f_distribution"></a><a name="fisher_f_distribution"></a>fisher_f_distribution:: fisher_f_distribution
+## <a name="fisher_f_distributionfisher_f_distribution"></a><a name="fisher_f_distribution"></a> fisher_f_distribution:: fisher_f_distribution
 
 Dağıtımı oluşturur.
 
@@ -259,13 +257,13 @@ explicit fisher_f_distribution(const param_type& parm);
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < m` '`0.0 < n`
+**Önkoşul:** `0.0 < m` ' `0.0 < n`
 
 İlk Oluşturucu, saklı `m` değeri *k* değerini tutan ve saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="fisher_f_distributionparam_type"></a><a name="param_type"></a>fisher_f_distribution::p aram_type
+## <a name="fisher_f_distributionparam_type"></a><a name="param_type"></a> fisher_f_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 
@@ -294,7 +292,7 @@ struct param_type {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < m` '`0.0 < n`
+**Önkoşul:** `0.0 < m` ' `0.0 < n`
 
 Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 

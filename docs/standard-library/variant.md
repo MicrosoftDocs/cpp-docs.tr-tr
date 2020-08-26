@@ -5,12 +5,12 @@ f1_keywords:
 - <variant>
 helpviewer_keywords:
 - <variant>
-ms.openlocfilehash: 6074c80b20ae0c69d34768bc16d7aaae16c99579
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1a3c861c96fedb7ef95eec66f95888ddc092bed4
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232826"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835668"
 ---
 # <a name="ltvariantgt"></a>&lt;varyantı&gt;
 
@@ -26,7 +26,7 @@ Bir değişken nesnesi bir değeri tutar ve yönetir. Değişken bir değer tutu
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç = =](../standard-library/forward-list-operators.md#op_eq_eq)|İşlecin sol tarafındaki VARIANT nesnesinin, sağ taraftaki VARIANT nesnesine eşit olup olmadığını sınar.|
 |[işleç! =](../standard-library/forward-list-operators.md#op_neq)|İşlecin sol tarafındaki VARIANT nesnesinin, sağ taraftaki VARIANT nesnesine eşit olup olmadığını sınar.|
@@ -37,7 +37,7 @@ Bir değişken nesnesi bir değeri tutar ve yönetir. Değişken bir değer tutu
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Al](../standard-library/variant-functions.md#get)|Bir nesnenin türevini alır.|
 |[get_if](../standard-library/variant-functions.md#get_if)|Varsa, bir nesnenin türevini alır.|
@@ -47,14 +47,14 @@ Bir değişken nesnesi bir değeri tutar ve yönetir. Değişken bir değer tutu
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[bad_variant_access](../standard-library/bad-variant-access-class.md)|Bir değişken nesnesinin değerine geçersiz erişimi bildirmek için oluşturulan nesneler.|
 |[varyantı](../standard-library/variant.md)|Bir nesne alternatif türlerinden birinin değerini tutacak veya hiçbir değer içermeyecek.|
 
 ### <a name="structs"></a>Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[yla](../standard-library/hash-structure.md)||
 |[monostate](../standard-library/monostate-structure.md)|Değişken türü varsayılan oluşturulabilir hale getirmek için bir varyant için alternatif tür.|
@@ -64,7 +64,7 @@ Bir değişken nesnesi bir değeri tutar ve yönetir. Değişken bir değer tutu
 
 ### <a name="objects"></a>Nesneler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[variant_npos](../standard-library/variant-functions.md#variant_npos)||
 

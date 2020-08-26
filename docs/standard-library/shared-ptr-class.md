@@ -31,18 +31,18 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-ms.openlocfilehash: 5488b7d63565bfcca22be3de522615db5aa822e3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e41c76e7bd3e77b34ad38d3998ee1d38cdc2fee4
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217473"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846218"
 ---
 # <a name="shared_ptr-class"></a>shared_ptr sınıfı
 
 Dinamik olarak tahsis edilen bir nesnenin çevresine bir başvuru sayılan akıllı işaretçi sarar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class T>
@@ -107,17 +107,17 @@ Bazı işlevler, sonuçta elde edilen veya nesnesinin özelliklerini tanımlayan
 
 bağımsız değişken yok--elde edilen nesne boş bir `shared_ptr` nesne veya boş bir nesne `weak_ptr` .
 
-`ptr`--yönetilecek kaynağa bir tür işaretçisi `Other*` . `T`tamamen bir tür olmalıdır. İşlev başarısız olursa (denetim bloğu ayrılamadığından), ifadeyi değerlendirir `delete ptr` .
+`ptr` --yönetilecek kaynağa bir tür işaretçisi `Other*` . `T` tamamen bir tür olmalıdır. İşlev başarısız olursa (denetim bloğu ayrılamadığından), ifadeyi değerlendirir `delete ptr` .
 
-`ptr, deleter`--yönetilecek kaynağa bir tür işaretçisi `Other*` ve bu kaynak için bir silici. İşlev başarısız olursa (denetim bloğu ayrılamadığından), `deleter(ptr)` iyi tanımlanmış olması gereken, çağırır.
+`ptr, deleter` --yönetilecek kaynağa bir tür işaretçisi `Other*` ve bu kaynak için bir silici. İşlev başarısız olursa (denetim bloğu ayrılamadığından), `deleter(ptr)` iyi tanımlanmış olması gereken, çağırır.
 
-`ptr, deleter, alloc`--yönetilecek kaynağa bir tür işaretçisi `Other*` , bu kaynak için bir silici ve ayrılması ve serbest olması gereken herhangi bir depolamayı yönetmek için bir ayırıcı. İşlev başarısız olursa (denetim bloğu ayrılamadığından), `deleter(ptr)` iyi tanımlanmış olması gereken, çağırır.
+`ptr, deleter, alloc` --yönetilecek kaynağa bir tür işaretçisi `Other*` , bu kaynak için bir silici ve ayrılması ve serbest olması gereken herhangi bir depolamayı yönetmek için bir ayırıcı. İşlev başarısız olursa (denetim bloğu ayrılamadığından), `deleter(ptr)` iyi tanımlanmış olması gereken, çağırır.
 
-`sp`-- `shared_ptr<Other>` Yönetilecek kaynağın sahibi olan bir nesne.
+`sp` -- `shared_ptr<Other>` Yönetilecek kaynağın sahibi olan bir nesne.
 
-`wp`-- `weak_ptr<Other>` Yönetilecek kaynağı işaret eden bir nesnesi.
+`wp` -- `weak_ptr<Other>` Yönetilecek kaynağı işaret eden bir nesnesi.
 
-`ap`-- `auto_ptr<Other>` Yönetilecek kaynak için bir işaretçi tutan nesne. İşlev başarılı olursa, çağırır `ap.release()` ; Aksi takdirde, `ap` değiştirilmez.
+`ap` -- `auto_ptr<Other>` Yönetilecek kaynak için bir işaretçi tutan nesne. İşlev başarılı olursa, çağırır `ap.release()` ; Aksi takdirde, `ap` değiştirilmez.
 
 Her durumda, işaretçi türü `Other*` öğesine dönüştürülebilir olmalıdır `T*` .
 
@@ -127,7 +127,7 @@ Birden çok iş parçacığı, aynı anda farklı nesneleri okuyabilir ve yazabi
 
 ## <a name="members"></a>Üyeler
 
-|||
+|Ad|Açıklama|
 |-|-|
 | **Oluşturucular** | |
 |[shared_ptr](#shared_ptr)|Bir oluşturur `shared_ptr` .|
@@ -136,7 +136,7 @@ Birden çok iş parçacığı, aynı anda farklı nesneleri okuyabilir ve yazabi
 |[element_type](#element_type)|Öğenin türü.|
 |[weak_type](#weak_type)|Bir öğeye zayıf işaretçinin türü.|
 | **Üye işlevleri** | |
-|[Al](#get)|Sahip olunan kaynağın adresini alır.|
+|[get](#get)|Sahip olunan kaynağın adresini alır.|
 |[owner_before](#owner_before)|Bu, `shared_ptr` belirtilen işaretçiden önce (veya ondan küçük) daha önce sipariş alıyorsa true değerini döndürür.|
 |[döndürmek](#reset)|Sahip olunan kaynağı değiştirin.|
 |[Kur](#swap)|İki `shared_ptr` nesneyi değiştirir.|
@@ -148,7 +148,7 @@ Birden çok iş parçacığı, aynı anda farklı nesneleri okuyabilir ve yazabi
 |[işleç =](#op_eq)|Sahip olunan kaynağı değiştirir.|
 |[işlecinde&gt;](#op_arrow)|Belirlenen değere bir işaretçi alır.|
 
-## <a name="element_type"></a><a name="element_type"></a>element_type
+## <a name="element_type"></a><a name="element_type"></a> element_type
 
 Öğenin türü.
 
@@ -184,7 +184,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="get"></a><a name="get"></a>Al
+## <a name="get"></a><a name="get"></a> Al
 
 Sahip olunan kaynağın adresini alır.
 
@@ -222,7 +222,7 @@ sp0.get() == 0 == true
 *sp1.get() == 5
 ```
 
-## <a name="operator-bool"></a><a name="op_bool"></a>işleç bool
+## <a name="operator-bool"></a><a name="op_bool"></a> işleç bool
 
 Sahip olunan bir kaynağın mevcut olup olmadığını sınar.
 
@@ -261,7 +261,7 @@ int main()
 (bool)sp1 == true
 ```
 
-## <a name="operator"></a><a name="op_star"></a>işlecinde
+## <a name="operator"></a><a name="op_star"></a> işlecinde
 
 Belirlenen değeri alır.
 
@@ -295,7 +295,7 @@ int main()
 *sp0 == 5
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Sahip olunan kaynağı değiştirir.
 
@@ -367,7 +367,7 @@ int main()
 *sp0 == 10
 ```
 
-## <a name="operator-"></a><a name="op_arrow"></a>operator->
+## <a name="operator-"></a><a name="op_arrow"></a> operator->
 
 Belirlenen değere bir işaretçi alır.
 
@@ -404,7 +404,7 @@ sp0->first == 1
 sp0->second == 2
 ```
 
-## <a name="owner_before"></a><a name="owner_before"></a>owner_before
+## <a name="owner_before"></a><a name="owner_before"></a> owner_before
 
 Bu, `shared_ptr` belirtilen işaretçiden önce (veya ondan küçük) daha önce sipariş alıyorsa true değerini döndürür.
 
@@ -425,7 +425,7 @@ Bir veya öğesine lvalue başvurusu `shared_ptr` `weak_ptr` .
 
 Şablon üye işlevi, daha **`*this`** önce sıralandıysanız true değerini döndürür `ptr` .
 
-## <a name="reset"></a><a name="reset"></a>döndürmek
+## <a name="reset"></a><a name="reset"></a> döndürmek
 
 Sahip olunan kaynağı değiştirin.
 
@@ -517,7 +517,7 @@ int main()
 *sp == 15
 ```
 
-## <a name="shared_ptr"></a><a name="shared_ptr"></a>shared_ptr
+## <a name="shared_ptr"></a><a name="shared_ptr"></a> shared_ptr
 
 Bir oluşturur `shared_ptr` .
 
@@ -675,7 +675,7 @@ int main()
 *sp5 == 15
 ```
 
-## <a name="shared_ptr"></a><a name="dtorshared_ptr"></a>~ shared_ptr
+## <a name="shared_ptr"></a><a name="dtorshared_ptr"></a> ~ shared_ptr
 
 Yok eder `shared_ptr` .
 
@@ -722,7 +722,7 @@ use count == 2
 use count == 1
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki `shared_ptr` nesneyi değiştirir.
 
@@ -783,7 +783,7 @@ int main()
 *wp1 == 5
 ```
 
-## <a name="unique"></a><a name="unique"></a>eşi
+## <a name="unique"></a><a name="unique"></a> eşi
 
 Sahip olunan kaynak benzersiz ise sınar. Bu işlev C++ 17 ' de kullanımdan kaldırılmıştır ve C++ 20 ' de kaldırılmıştır.
 
@@ -822,7 +822,7 @@ sp1.unique() == true
 sp1.unique() == false
 ```
 
-## <a name="use_count"></a><a name="use_count"></a>use_count
+## <a name="use_count"></a><a name="use_count"></a> use_count
 
 Kaynak sahiplerinin numaralarını sayar.
 
@@ -861,7 +861,7 @@ sp1.use_count() == 1
 sp1.use_count() == 2
 ```
 
-## <a name="weak_type"></a><a name="weak_type"></a>weak_type
+## <a name="weak_type"></a><a name="weak_type"></a> weak_type
 
 Bir öğeye zayıf işaretçinin türü.
 

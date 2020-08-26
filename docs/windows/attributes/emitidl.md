@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 4ddf71c385414a28c2b616b359a93a637abc24aa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 32362f287320e69d1680cbe07ca050143b507514
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222140"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846335"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -36,7 +36,7 @@ Sonraki tüm IDL özniteliklerinin işlenip işlenmeyeceğini ve oluşturulan. I
 
 - İse `forced` , `restricted` dosyada IDL öznitelikleri varsa dosyanın bir özniteliğe sahip olmasını gerektiren sonraki bir özniteliği geçersiz kılar `module` .
 
-- `push`geçerli **emitidl** ayarlarını bir iç **emitidl** yığınına kaydetmenizi sağlar ve `pop` **emitidl** , iç **emitidl** yığınının en üstünde olan herhangi bir değere ayarlamanıza olanak sağlar.
+- `push` geçerli **emitidl** ayarlarını bir iç **emitidl** yığınına kaydetmenizi sağlar ve `pop` **emitidl** , iç **emitidl** yığınının en üstünde olan herhangi bir değere ayarlamanıza olanak sağlar.
 
 `defaultimports=`*Boole değeri* \( seçim
 
@@ -54,14 +54,12 @@ Derleyici yeni bir dosya ile karşılaştığında, **emitidl** örtülü olarak
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

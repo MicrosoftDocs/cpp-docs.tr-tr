@@ -38,18 +38,18 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-ms.openlocfilehash: 8c91beb2a305604f663d5e81b4a534a1699705cf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5c26a3f1e8b5589afebd72c7b722ab9ed9e4229d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212049"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838314"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 
 OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimini kullanarak OLE DB hata işleme için destek sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBErrorInfo
@@ -63,12 +63,12 @@ class CDBErrorInfo
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[GetAllErrorInfo](#getallerrorinfo)|Bir hata kaydında bulunan tüm hata bilgilerini döndürür.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Belirtilen hatayla ilgili temel bilgileri döndürmek için [IErrorRecords:: GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) öğesini çağırır.|
 |[GetCustomErrorObject](#getcustomerrorobject)|Özel bir hata nesnesindeki bir arabirime bir işaretçi döndürmek için [IErrorRecords:: GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) öğesini çağırır.|
-|[GetErrorInfo](#geterrorinfo)|Belirtilen kayda bir `IErrorInfo` arabirimi işaretçisi döndürmek için [IErrorRecords:: GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) çağırır.|
+|[GetErrorInfo](#geterrorinfo)|Belirtilen kayda bir arabirim işaretçisi döndürmek için [IErrorRecords:: GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) çağırır `IErrorInfo` .|
 |[GetErrorParameters](#geterrorparameters)|Hata parametrelerini döndürmek için [IErrorInfo:: GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) ' i çağırır.|
 |[GetErrorRecords](#geterrorrecords)|Belirtilen nesne için hata kayıtlarını alır.|
 
@@ -76,11 +76,11 @@ class CDBErrorInfo
 
 Bu arabirim kullanıcıya bir veya daha fazla hata kaydı döndürür. Hata kayıtlarının sayımını almak için önce [CDBErrorInfo:: GetErrorRecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) öğesini çağırın. Ardından, her bir kayıtla ilgili hata bilgilerini almak için [CDBErrorInfo:: GetAllErrorInfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md)gibi erişim işlevlerinden birini çağırın.
 
-## <a name="cdberrorinfogetallerrorinfo"></a><a name="getallerrorinfo"></a>CDBErrorInfo:: GetAllErrorInfo
+## <a name="cdberrorinfogetallerrorinfo"></a><a name="getallerrorinfo"></a> CDBErrorInfo:: GetAllErrorInfo
 
 Bir hata kaydında bulunan tüm hata bilgisi türlerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetAllErrorInfo(ULONG ulRecordNum,
@@ -120,17 +120,17 @@ Başarılı olursa S_OK. *OLE DB Programcı 'nin* diğer dönüş değerleri iç
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PbstrDescription* çıkış değeri, yerel ayar DESTEKLENMIYORSA değeri null olarak ayarlayan veya aşağıdaki koşulların her ikisi de doğru olduğunda `IErrorInfo::GetDescription`çağırarak dahili olarak elde edilir:
+*PbstrDescription* 'ın çıkış değeri, `IErrorInfo::GetDescription` yerel ayar desteklenmiyorsa değeri null olarak ayarlayan veya aşağıdaki koşulların her ikisi de doğru olduğunda, çağırarak dahili olarak elde edilir:
 
 1. *LCID* değeri ABD İngilizcesi değil ve
 
 1. *LCID* değeri, GetUserDefaultLCID tarafından döndürülen değere eşit değil.
 
-## <a name="cdberrorinfogetbasicerrorinfo"></a><a name="getbasicerrorinfo"></a>CDBErrorInfo:: GetBasicErrorInfo
+## <a name="cdberrorinfogetbasicerrorinfo"></a><a name="getbasicerrorinfo"></a> CDBErrorInfo:: GetBasicErrorInfo
 
 Hata hakkında dönüş kodu ve sağlayıcıya özgü hata numarası gibi temel bilgileri döndürmek için [IErrorRecords:: GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) öğesini çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
@@ -145,11 +145,11 @@ HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
 
 Standart HRESULT.
 
-## <a name="cdberrorinfogetcustomerrorobject"></a><a name="getcustomerrorobject"></a>CDBErrorInfo:: GetCustomErrorObject
+## <a name="cdberrorinfogetcustomerrorobject"></a><a name="getcustomerrorobject"></a> CDBErrorInfo:: GetCustomErrorObject
 
 Özel bir hata nesnesindeki bir arabirime bir işaretçi döndürmek için [IErrorRecords:: GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) öğesini çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetCustomErrorObject(ULONG ulRecordNum,
@@ -164,11 +164,11 @@ HRESULT GetCustomErrorObject(ULONG ulRecordNum,
 
 Standart HRESULT.
 
-## <a name="cdberrorinfogeterrorinfo"></a><a name="geterrorinfo"></a>CDBErrorInfo:: GetErrorInfo
+## <a name="cdberrorinfogeterrorinfo"></a><a name="geterrorinfo"></a> CDBErrorInfo:: GetErrorInfo
 
 Belirtilen kayda bir [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimi işaretçisi döndürmek Için [IErrorRecords:: GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetErrorInfo(ULONG ulRecordNum,
@@ -183,11 +183,11 @@ HRESULT GetErrorInfo(ULONG ulRecordNum,
 
 Standart HRESULT.
 
-## <a name="cdberrorinfogeterrorparameters"></a><a name="geterrorparameters"></a>CDBErrorInfo:: GetErrorParameters
+## <a name="cdberrorinfogeterrorparameters"></a><a name="geterrorparameters"></a> CDBErrorInfo:: GetErrorParameters
 
 Hata parametrelerini döndürmek için [IErrorInfo:: GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) ' i çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetErrorParameters(ULONG ulRecordNum,
@@ -202,11 +202,11 @@ HRESULT GetErrorParameters(ULONG ulRecordNum,
 
 Standart HRESULT.
 
-## <a name="cdberrorinfogeterrorrecords"></a><a name="geterrorrecords"></a>CDBErrorInfo:: GetErrorRecords
+## <a name="cdberrorinfogeterrorrecords"></a><a name="geterrorrecords"></a> CDBErrorInfo:: GetErrorRecords
 
 Belirtilen nesne için hata kayıtlarını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetErrorRecords(IUnknown* pUnk,
@@ -239,4 +239,4 @@ Hangi arabirimin hata bilgisinin alınacağını denetlemek istiyorsanız, işle
 
 [DBViewer](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

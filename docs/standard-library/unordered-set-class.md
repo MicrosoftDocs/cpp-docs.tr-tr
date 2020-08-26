@@ -134,12 +134,12 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 9a19567b5878853d1fdfa86948ff1eeb37794089
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5eb8a6902324ee069ff275e77b97703ba6ba3356
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215510"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839523"
 ---
 # <a name="unordered_set-class"></a>unordered_set Sınıfı
 
@@ -174,7 +174,7 @@ Ayırıcı sınıf.
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -194,7 +194,7 @@ Ayırıcı sınıf.
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
 |[demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|
@@ -203,7 +203,7 @@ Ayırıcı sınıf.
 |[cbegin](#cbegin)|Denetlenen dizinin başlangıcını belirtir.|
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
 |[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
-|[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
+|[count](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
 |[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
 |[empty](#empty)|Bir öğe olup olmadığını sınar.|
@@ -226,7 +226,7 @@ Ayırıcı sınıf.
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[unordered_set:: operator =](#op_eq)|Bir karma tabloya kopyalar.|
 
@@ -240,7 +240,7 @@ Denetlenen dizideki öğelerin gerçek sırası karma işleve, karşılaştırma
 
 Nesnesi, [unordered_set:: allocator_type](#allocator_type)türünde depolanan bir ayırıcı nesne aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır. Böyle bir ayırıcı nesne, türünde bir nesne ile aynı dış arabirime sahip olmalıdır `allocator` . Depolanan ayırıcı nesnenin kapsayıcı nesne atandığında kopyalanmayacağını unutmayın.
 
-## <a name="unordered_setallocator_type"></a><a name="allocator_type"></a>unordered_set:: allocator_type
+## <a name="unordered_setallocator_type"></a><a name="allocator_type"></a> unordered_set:: allocator_type
 
 Depolamayı yönetmek için bir ayırıcı türü.
 
@@ -278,7 +278,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 Denetlenen sıranın veya bir demetini başlangıcını belirtir.
 
@@ -357,7 +357,7 @@ int main()
 [a]
 ```
 
-## <a name="bucket"></a><a name="bucket"></a>demet
+## <a name="bucket"></a><a name="bucket"></a> demet
 
 Bir anahtar değeri için demet numarasını alır.
 
@@ -412,7 +412,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="bucket_count"></a><a name="bucket_count"></a>bucket_count
+## <a name="bucket_count"></a><a name="bucket_count"></a> bucket_count
 
 Demet sayısını alır.
 
@@ -497,7 +497,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="bucket_size"></a><a name="bucket_size"></a>bucket_size
+## <a name="bucket_size"></a><a name="bucket_size"></a> bucket_size
 
 Bir demet boyutunu alır
 
@@ -552,7 +552,7 @@ bucket('a') == 7
 bucket_size(7) == 1
 ```
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 **`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -578,7 +578,7 @@ auto i2 = Container.cbegin();
 // i2 isContainer<T>::const_iterator
 ```
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 **`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
@@ -592,7 +592,7 @@ const_iterator cend() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 `end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
@@ -606,7 +606,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` başvurulmamalıdır.
 
-## <a name="clear"></a><a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Tüm öğeleri kaldırır.
 
@@ -670,7 +670,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="const_iterator"></a><a name="const_iterator"></a>const_iterator
+## <a name="const_iterator"></a><a name="const_iterator"></a> const_iterator
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -712,7 +712,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_local_iterator"></a><a name="const_local_iterator"></a>const_local_iterator
+## <a name="const_local_iterator"></a><a name="const_local_iterator"></a> const_local_iterator
 
 Denetlenen dizi için bir sabit demet yineleyici türü.
 
@@ -759,7 +759,7 @@ int main()
 [a]
 ```
 
-## <a name="const_pointer"></a><a name="const_pointer"></a>const_pointer
+## <a name="const_pointer"></a><a name="const_pointer"></a> const_pointer
 
 Bir öğe için sabit bir işaretçi türü.
 
@@ -804,7 +804,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="const_reference"></a><a name="const_reference"></a>const_reference
+## <a name="const_reference"></a><a name="const_reference"></a> const_reference
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -849,7 +849,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="count"></a><a name="count"></a>biriktirme
+## <a name="count"></a><a name="count"></a> biriktirme
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
@@ -903,7 +903,7 @@ count('b') == 1
 count('C') == 0
 ```
 
-## <a name="difference_type"></a><a name="difference_type"></a>difference_type
+## <a name="difference_type"></a><a name="difference_type"></a> difference_type
 
 İki öğe arasındaki işaretli mesafenin türü.
 
@@ -959,7 +959,7 @@ end()-begin() == 3
 begin()-end() == -3
 ```
 
-## <a name="emplace"></a><a name="emplace"></a>Emplace
+## <a name="emplace"></a><a name="emplace"></a> Emplace
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz).
 
@@ -989,7 +989,7 @@ Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma 
 
 Kod örneği için bkz. [set:: emplace](../standard-library/set-class.md#emplace).
 
-## <a name="emplace_hint"></a><a name="emplace_hint"></a>emplace_hint
+## <a name="emplace_hint"></a><a name="emplace_hint"></a> emplace_hint
 
 Yerinde oluşturulmuş bir öğe ekler (kopyalama veya taşıma işlemleri yapılmaz), yerleştirme ipucuyla birlikte.
 
@@ -1022,7 +1022,7 @@ Ekleme sırasında, bir özel durum oluşturulursa, ancak kapsayıcının karma 
 
 Kod örneği için bkz. [set:: emplace_hint](../standard-library/set-class.md#emplace_hint).
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Bir öğe olup olmadığını sınar.
 
@@ -1086,7 +1086,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="end"></a><a name="end"></a>erer
+## <a name="end"></a><a name="end"></a> erer
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -1154,7 +1154,7 @@ int main()
 [a]
 ```
 
-## <a name="equal_range"></a><a name="equal_range"></a>equal_range
+## <a name="equal_range"></a><a name="equal_range"></a> equal_range
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
@@ -1222,7 +1222,7 @@ equal_range('x'):
 equal_range('b'): [b]
 ```
 
-## <a name="erase"></a><a name="erase"></a>silme
+## <a name="erase"></a><a name="erase"></a> silme
 
 Belirtilen konumlardan bir unordered_set öğeyi veya öğe aralığını kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.
 
@@ -1258,7 +1258,7 @@ Kaldırılacak öğelerin anahtar değeri.
 
 Kod örneği için bkz. [set:: Erase](../standard-library/set-class.md#erase).
 
-## <a name="find"></a><a name="find"></a>bilgi
+## <a name="find"></a><a name="find"></a> bilgi
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -1317,7 +1317,7 @@ find('A') == false
 find('b') == true: [b]
 ```
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a> get_allocator
 
 Depolanan ayırıcı nesnesini alır.
 
@@ -1355,7 +1355,7 @@ int main()
 al == std::allocator() is true
 ```
 
-## <a name="hash_function"></a><a name="hash"></a>hash_function
+## <a name="hash_function"></a><a name="hash"></a> hash_function
 
 Depolanan karma işlevi nesnesini alır.
 
@@ -1393,7 +1393,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="hasher"></a><a name="hasher"></a>karma değeri Oluşturucusu
+## <a name="hasher"></a><a name="hasher"></a> karma değeri Oluşturucusu
 
 Karma işlevin türü.
 
@@ -1431,7 +1431,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086
 ```
 
-## <a name="insert"></a><a name="insert"></a>ekleyin
+## <a name="insert"></a><a name="insert"></a> ekleyin
 
 Bir unordered_set öğe veya öğe aralığı ekler.
 
@@ -1505,7 +1505,7 @@ Yerinde oluşturulmuş bir öğenin eklenmesi için — diğer bir deyişle, kop
 
 Kod örneği için bkz. [set:: insert](../standard-library/set-class.md#insert).
 
-## <a name="iterator"></a><a name="iterator"></a>iden
+## <a name="iterator"></a><a name="iterator"></a> iden
 
 Bir unordered_set öğeleri okuyabilen sabit bir [İleri Yineleyici](../standard-library/forward-iterator-tag-struct.md) sağlayan bir tür.
 
@@ -1517,7 +1517,7 @@ typedef implementation-defined iterator;
 
 **Yineleyici**bildirme ve kullanma [begin](../standard-library/set-class.md#begin) örneğine örnek olarak bkz..
 
-## <a name="key_eq"></a><a name="key_eq"></a>key_eq
+## <a name="key_eq"></a><a name="key_eq"></a> key_eq
 
 Depolanan karşılaştırma işlevi nesnesini alır.
 
@@ -1557,7 +1557,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_equal"></a><a name="key_equal"></a>key_equal
+## <a name="key_equal"></a><a name="key_equal"></a> key_equal
 
 Karşılaştırma işlevinin türü.
 
@@ -1597,7 +1597,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false
 ```
 
-## <a name="key_type"></a><a name="key_type"></a>key_type
+## <a name="key_type"></a><a name="key_type"></a> key_type
 
 Bir sıralama anahtarının türü.
 
@@ -1649,7 +1649,7 @@ int main()
 [d] [c] [b] [a]
 ```
 
-## <a name="load_factor"></a><a name="load_factor"></a>load_factor
+## <a name="load_factor"></a><a name="load_factor"></a> load_factor
 
 Demet başına ortalama öğeyi sayar.
 
@@ -1734,7 +1734,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="local_iterator"></a><a name="local_iterator"></a>local_iterator
+## <a name="local_iterator"></a><a name="local_iterator"></a> local_iterator
 
 Demet yineleyicisinin türü.
 
@@ -1781,7 +1781,7 @@ int main()
 [a]
 ```
 
-## <a name="max_bucket_count"></a><a name="max_bucket_count"></a>max_bucket_count
+## <a name="max_bucket_count"></a><a name="max_bucket_count"></a> max_bucket_count
 
 En yüksek demet sayısını alır.
 
@@ -1866,7 +1866,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_load_factor"></a><a name="max_load_factor"></a>max_load_factor
+## <a name="max_load_factor"></a><a name="max_load_factor"></a> max_load_factor
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
@@ -1958,7 +1958,7 @@ max_bucket_count() == 128
 max_load_factor() == 0.1
 ```
 
-## <a name="max_size"></a><a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a> max_size
 
 Denetlenen dizinin en büyük boyutunu alır.
 
@@ -1993,7 +1993,7 @@ int main()
 max_size() == 4294967295
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Bir karma tabloya kopyalar.
 
@@ -2049,7 +2049,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a><a name="pointer"></a>çağrısı
+## <a name="pointer"></a><a name="pointer"></a> çağrısı
 
 Bir öğe için bir işaretçi türü.
 
@@ -2095,7 +2095,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="reference"></a><a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a> başvurunun
 
 Bir öğe için bir başvuru türü.
 
@@ -2141,7 +2141,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="rehash"></a><a name="rehash"></a>rehash
+## <a name="rehash"></a><a name="rehash"></a> rehash
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2218,7 +2218,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Öğe sayısını sayar.
 
@@ -2283,7 +2283,7 @@ size == 2
 empty() == false
 ```
 
-## <a name="size_type"></a><a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a> size_type
 
 İki öğe arasındaki işaretsiz bir mesafenin türü.
 
@@ -2319,7 +2319,7 @@ int main()
 size == 0
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -2388,7 +2388,7 @@ int main()
 [c] [b] [a]
 ```
 
-## <a name="unordered_set"></a><a name="unordered_set"></a>unordered_set
+## <a name="unordered_set"></a><a name="unordered_set"></a> unordered_set
 
 Bir kapsayıcı nesnesi oluşturur.
 
@@ -2472,7 +2472,7 @@ Karşılaştırma işlevi nesnesi, varsa, *comp*bağımsız değişkenidir; Aksi
 
 Ayırıcı nesne varsa *Al*bağımsız değişkenidir; Aksi takdirde, `Alloc()` .
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Öğenin türü.
 

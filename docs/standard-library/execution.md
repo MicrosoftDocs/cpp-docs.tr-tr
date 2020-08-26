@@ -6,18 +6,18 @@ f1_keywords:
 - std::<execution>
 helpviewer_keywords:
 - execution header
-ms.openlocfilehash: 81e9aa63265c367412fda709aacd5ca3953e9fdf
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f37458fdc0b58968e095a7c59de797eac295bde7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445034"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835942"
 ---
 # <a name="ltexecutiongt"></a>&lt;yürütme&gt;
 
 Paralel algoritmaların yürütme ilkelerini açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 namespace std {
@@ -32,7 +32,7 @@ namespace std::execution {
 
 ### <a name="classes-and-structs"></a>Sınıflar ve Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[is_execution_policy yapısı](is-execution-policy-struct.md)|Aksi takdirde belirsiz aşırı yükleme çözümlemesi katılımında işlev imzalarını dışlamamak amacıyla yürütme ilkelerini algılar.|
 |[parallel_policy sınıfı](parallel-policy-class.md)|Paralel algoritma aşırı yüklemesini belirsizliği ortadan kaldırmak için benzersiz bir tür olarak kullanılır ve paralel algoritma yürütmenin paralelleştirilmesine işaret edilebilir.|
@@ -41,12 +41,12 @@ namespace std::execution {
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<yürütme >
+**Üst bilgi:**\<execution>
 
 **Ad alanı:** stdext
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
-[Standart kitaplıkta Iş parçacığı güvenliği\ C++ ](thread-safety-in-the-cpp-standard-library.md)
-[C++ Standart Kitaplığı Başvurusu](cpp-standard-library-reference.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](cpp-standard-library-reference.md)

@@ -3,12 +3,12 @@ title: Başvuruya CppProperties.js
 ms.date: 08/09/2019
 helpviewer_keywords:
 - CppProperties.json file [C++]
-ms.openlocfilehash: 2409c1d93d4e9d814407dbd4334daa73ae630775
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 31b4e7901bf35986e553a9e280da0243d61982a2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224064"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837911"
 ---
 # <a name="cpppropertiesjson-reference"></a>Başvuruya CppProperties.js
 
@@ -18,7 +18,7 @@ CMake kullanmayan açık klasör projeleri, IntelliSense için proje yapılandı
 
 Bir yapılandırma aşağıdaki özelliklerden herhangi birine sahip olabilir:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |`inheritEnvironments`| Bu yapılandırma için hangi ortamların uygulanacağını belirtir.|
 |`name`|C++ yapılandırma açılan menüsünde görünecek yapılandırma adı|
@@ -83,11 +83,11 @@ Linux iş yükü yüklendiğinde, Linux ve WSL 'yi uzaktan hedeflemek için aşa
 |linux_x64|X64 Linux 'u uzaktan hedefleyin|
 |linux_arm|ARM Linux 'u uzaktan hedefleyin|
 
-## <a name="user-defined-environments"></a><a name="user_defined_environments"></a>Kullanıcı tanımlı ortamlar
+## <a name="user-defined-environments"></a><a name="user_defined_environments"></a> Kullanıcı tanımlı ortamlar
 
 İsteğe bağlı olarak `environments` veya yapılandırma başına *CppProperties.js* değişkenlerin kümelerini tanımlamak için özelliğini kullanabilirsiniz. Bu değişkenler, açık bir klasör projesi bağlamında ortam değişkenleri gibi davranır ve $ {env.} ile erişilebilir \<VARIABLE> *üzerindetasks.vs.js* ve *launch.vs.js* bir sözdizimi burada tanımlandıktan sonra. Ancak, Visual Studio 'Nun dahili olarak kullandığı herhangi bir komut isteminde gerçek ortam değişkenleri olarak ayarlanmaları gerekmez.
 
-**Visual Studio 2019 sürüm 16,4 ve üzeri:** *CppProperties.jsüzerinde* tanımlanan yapılandırmaya özgü değişkenler, hata ayıklama hedefleri ve görevleri tarafından ayarlanması gerekmeden otomatik olarak alınır `inheritEnvironments` . Hata ayıklama hedefleri, *üzerindeCppProperties.js*belirttiğiniz ortam ile otomatik olarak başlatılır.
+**Visual Studio 2019 sürüm 16,4 ve üzeri:** *CppProperties.jsüzerinde* tanımlanan yapılandırmaya özgü değişkenler, hata ayıklama hedefleri ve görevleri tarafından ayarlanması gerekmeden otomatik olarak alınır `inheritEnvironments` . Hata ayıklama hedefleri, * üzerindeCppProperties.js*belirttiğiniz ortam ile otomatik olarak başlatılır.
 
 **Visual Studio 2019 sürüm 16,3 ve öncesi:** Bir ortamı tükettiğinizde, `inheritsEnvironments` ortam aynı yapılandırmanın bir parçası olarak tanımlansa bile özelliği özelliğinde belirtmeniz gerekir; `environment` özelliği ortamın adını belirtir. Aşağıdaki örnekte, MSYS2 yüklemesinde GCC için IntelliSense 'i etkinleştirmek üzere örnek bir yapılandırma gösterilmektedir. Yapılandırmanın ortamı nasıl tanımlayıp devraldığını `mingw_64` ve `includePath` özelliğin değişkene nasıl erişebileceğini aklınızda bulabilirsiniz `INCLUDE` .
 
@@ -125,7 +125,7 @@ Bir yapılandırma içinde bir **ortamlar** özelliği tanımladığınızda, ay
 
 *CppProperties.js*içinde aşağıdaki yerleşik makrolara erişebilirsiniz:
 
-|||
+|Makroya|Açıklama|
 |-|-|
 |`${workspaceRoot}`| Çalışma alanı klasörünün tam yolu|
 |`${projectRoot}`| *CppProperties.jsüzerinde yer alan* klasörün tam yolu|
@@ -156,7 +156,7 @@ Projenizde bir içerme klasörü varsa ve ayrıca Windows SDK *Windows. h* ve di
 ```
 
 > [!Note]
-> `%WindowsSdkDir%`ve `%VCToolsInstallDir%` genel ortam değişkenleri olarak ayarlanmamışsa, bu değişkenleri tanımlayan bir Geliştirici Komut İstemi devenv.exe başlattığınızdan emin olun. (Windows Başlat menüsünde "Geliştirici" yazın.)
+> `%WindowsSdkDir%` ve `%VCToolsInstallDir%` genel ortam değişkenleri olarak ayarlanmamışsa, bu değişkenleri tanımlayan bir Geliştirici Komut İstemi devenv.exe başlattığınızdan emin olun. (Windows Başlat menüsünde "Geliştirici" yazın.)
 
 ## <a name="troubleshoot-intellisense-errors"></a>IntelliSense hatalarında sorun giderme
 

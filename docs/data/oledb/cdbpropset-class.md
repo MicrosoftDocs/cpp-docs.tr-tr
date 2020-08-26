@@ -32,18 +32,18 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: 182db37a2a42ec91066b58903c873d3e9c8289f1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 48aa2e3e26bed7c9306ca3005231e464d7b7555b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216498"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838263"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
 `DBPROPSET`Yapıdan devralır ve ayrıca, anahtar alanlarını ve erişim yöntemini Başlatan bir Oluşturucu ekler `AddProperty` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBPropSet : public tagDBPROPSET
@@ -57,7 +57,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[AddProperty](#addproperty)|Özellik kümesine bir özellik ekler.|
 |[CDBPropSet](#cdbpropset)|Oluşturucu.|
@@ -65,7 +65,7 @@ class CDBPropSet : public tagDBPROPSET
 
 ### <a name="operators"></a>İşleçler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[işleç =](#op_equal)|Bir özelliğin içeriğini başka bir özellik kümesine atar.|
 
@@ -73,7 +73,7 @@ class CDBPropSet : public tagDBPROPSET
 
 OLE DB sağlayıcıları ve tüketiciler yapıların `DBPROPSET` dizilerini geçirmek için yapıları kullanır `DBPROP` . Her `DBPROP` Yapı, ayarlanabilir tek bir özelliği temsil eder.
 
-## <a name="cdbpropsetaddproperty"></a><a name="addproperty"></a>CDBPropSet:: AddProperty
+## <a name="cdbpropsetaddproperty"></a><a name="addproperty"></a> CDBPropSet:: AddProperty
 
 Özellik kümesine bir özellik ekler.
 
@@ -106,7 +106,7 @@ bool AddProperty(DWORD dwPropertyID,
 'ndaki Özellik kümesine eklenen yapının özellik değerini başlatmak için kullanılan dize `DBPROP` .
 
 *bDeğer*<br/>
-'ndaki `BYTE`Özellik kümesine eklenen yapının özellik değerini başlatmak için kullanılan veya Boole değeri `DBPROP` .
+'ndaki `BYTE` Özellik kümesine eklenen yapının özellik değerini başlatmak için kullanılan veya Boole değeri `DBPROP` .
 
 *nDeğer*<br/>
 'ndaki Özellik kümesine eklenen yapının özellik değerini başlatmak için kullanılan bir tamsayı değeri `DBPROP` .
@@ -124,7 +124,7 @@ bool AddProperty(DWORD dwPropertyID,
 
 **`true`** Özellik başarıyla eklendiyse. Aksi takdirde, **`false`** .
 
-## <a name="cdbpropsetcdbpropset"></a><a name="cdbpropset"></a>CDBPropSet:: CDBPropSet
+## <a name="cdbpropsetcdbpropset"></a><a name="cdbpropset"></a> CDBPropSet:: CDBPropSet
 
 Oluşturucu. `rgProperties` `cProperties` `guidPropertySet` [Dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısının, ve alanlarını başlatır.
 
@@ -140,13 +140,13 @@ CDBPropSet();
 
 #### <a name="parameters"></a>Parametreler
 
-*'ini*<br/>
+*guid*<br/>
 'ndaki Alanı başlatmak için kullanılan bir GUID `guidPropertySet` .
 
 *PropSet*<br/>
-'ndaki `CDBPropSet`Kopya oluşturma için başka bir nesne.
+'ndaki `CDBPropSet` Kopya oluşturma için başka bir nesne.
 
-## <a name="cdbpropsetsetguid"></a><a name="setguid"></a>CDBPropSet:: Setguıd
+## <a name="cdbpropsetsetguid"></a><a name="setguid"></a> CDBPropSet:: Setguıd
 
 `guidPropertySet`Yapıdaki alanı ayarlar `DBPROPSET` .
 
@@ -158,18 +158,18 @@ void SetGUID(const GUID& guid) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*'ini*<br/>
+*guid*<br/>
 'ndaki `guidPropertySet` [Dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısının alanını ayarlamak için kullanılan GUID.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu alan, [Oluşturucu](../../data/oledb/cdbpropset-cdbpropset.md) tarafından da ayarlanabilir.
 
-## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a>CDBPropSet:: operator =
+## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a> CDBPropSet:: operator =
 
 Bir özellik kümesinin içeriğini başka bir özellik kümesine atar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CDBPropSet& operator =(CDBPropSet& propset) throw();

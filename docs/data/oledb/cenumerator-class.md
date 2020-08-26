@@ -22,18 +22,18 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: 2a48acb8a961d76c34d2ba85ede5c827c880f400
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f3e3a61028768144cbef17912952622f19ad0242
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214925"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838158"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
 
 Tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) arabirimini kullanıma sunan OLE DB Numaralandırıcı nesnesini kullanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CEnumerator :
@@ -48,7 +48,7 @@ class CEnumerator :
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[Bilgi](#find)|Belirtilen ada sahip bir tane arayan kullanılabilir sağlayıcılarda (veri kaynakları) arar.|
 |[GetMoniker](#getmoniker)|`IMoniker`Geçerli kayıt için arabirimi alır.|
@@ -58,7 +58,7 @@ class CEnumerator :
 
 `ISourcesRowset`Bu sınıftan verileri dolaylı olarak alabilirsiniz.
 
-## <a name="cenumeratorfind"></a><a name="find"></a>CEnumerator:: Find
+## <a name="cenumeratorfind"></a><a name="find"></a> CEnumerator:: Find
 
 Kullanılabilir sağlayıcılar arasında belirtilen adı arar.
 
@@ -81,7 +81,7 @@ bool Find(TCHAR* szSearchName) throw();
 
 Bu ad `SOURCES_NAME` , [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) arabiriminin üyesine eşlenir.
 
-## <a name="cenumeratorgetmoniker"></a><a name="getmoniker"></a>CEnumerator:: Getbilinen ad
+## <a name="cenumeratorgetmoniker"></a><a name="getmoniker"></a> CEnumerator:: Getbilinen ad
 
 Bir ada dönüştürülebileceği dizenin bileşenini ayıklamak için görünen adı ayrıştırır.
 
@@ -106,7 +106,7 @@ dışı Bilinen ad, geçerli satırın görünen adından ([CEnumeratorAccessor:
 
 Standart HRESULT.
 
-## <a name="cenumeratoropen"></a><a name="open"></a>CEnumerator:: Open
+## <a name="cenumeratoropen"></a><a name="open"></a> CEnumerator:: Open
 
 , Bir tane belirtilmişse, Numaralandırıcı için bilinen adı bağlar, ardından [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85))öğesini çağırarak Numaralandırıcı için satır kümesini alır.
 

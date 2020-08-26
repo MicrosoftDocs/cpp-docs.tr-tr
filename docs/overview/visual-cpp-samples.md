@@ -4,18 +4,18 @@ description: GitHub 'daki arşivlenmiş Visual Studio C++ örnekleri deposunda b
 ms.date: 03/23/2020
 ms.technology: cpp-language
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
-ms.openlocfilehash: cb8d2aa8322cb3e9bfc30dc9ad041e7c70662049
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 56e9cfe72e58a12fb381c88616496820908006c8
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226769"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846374"
 ---
 # <a name="visual-studio-c-samples"></a>Visual Studio C++ örnekleri
 
 Visual Studio C++ örnekleri Web 'de bulunabilir. Microsoft, birden çok teknolojiden farklı işlevleri gösteren birçok C++ örneği hazırladı. Ek örnekleri bulmak için şu yerlerden bazıları aşağıda verilmiştir:
 
-- [Microsoft Docs örnekleri-C++](https://docs.microsoft.com/samples/browse/?term=c%2B%2B)
+- [Microsoft Docs örnekleri-C++](/samples/browse/?term=c%2B%2B)
 
 - [GitHub 'da Windows örnekleri](https://microsoft.github.io/windows/)
 
@@ -25,7 +25,7 @@ Visual Studio C++ örnekleri Web 'de bulunabilir. Microsoft, birden çok teknolo
 
 - [ADO kod örnekleri](/office/client-developer/access/desktop-database-reference/ado-code-examples-in-microsoft-visual-c)
 
-- [Windows donanım geliştirme örnekleri](https://docs.microsoft.com/samples/browse/?products=windows-wdk)
+- [Windows donanım geliştirme örnekleri](/samples/browse/?products=windows-wdk)
 
 ## <a name="archived-c-samples-on-github"></a>GitHub 'da arşivlenmiş C++ örnekleri
 
@@ -217,7 +217,7 @@ Visual Studio önceki sürümlerde C++ örnek kodunu içeriyordu. Örnek kod, Vi
 | [Başlat](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Yerelleştirme için ayrı tür kitaplıkları ve kaynak dinamik bağlantı kitaplıkları (dll 'Ler) kullanımını gösteren yerelleştirilmiş bir kullanıcı arabirimine sahip bir denetim. |
 | [Netadresi](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Windows Vista "net Adres doğrulayıcısı" denetiminin kullanımını gösterir. |
 | [PAL](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Bir paletin renklerini görüntüleyen denetim. Salt okuma özelliklerini, kalıcı get/set özelliklerini, kalıcı Parametreli özellikleri ve resim özelliklerini gösterir. |
-| [Gönder](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Windows sahibi tarafından çizilen düğme denetiminden alt sınıflandırılacak denetim. Hisse senedi özelliklerini, özel olayları ve resim sahiplerini gösterir. |
+| [Hareketle](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Windows sahibi tarafından çizilen düğme denetiminden alt sınıflandırılacak denetim. Hisse senedi özelliklerini, özel olayları ve resim sahiplerini gösterir. |
 | [RegSvr](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Kendi kendine kayıt kodu çağrısını gösterir. |
 | [Spındial](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Özellik sayfası veri doğrulamasını gösteren bir döndürme-arama görsel görünümüyle bir denetim. |
 | [TestHelp](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls) | Kendi yardım dosyasına ve araç ipuçlarına sahip bir ActiveX denetimi. |
@@ -321,7 +321,7 @@ Visual Studio önceki sürümlerde C++ örnek kodunu içeriyordu. Örnek kod, Vi
 | [Ribbonmdı](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Çoklu belge arabirimiyle şerit denetiminin kullanımını gösterir. |
 | [RollupPane](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Otomatik olarak toplanan kayan "bilgi" bölmesini gösterir. Açık ve kapalı ' yı açmak için kayan bölmenin başlık sayfasında sabitle düğmesine basabilirsiniz. |
 | [SetPaneSize](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Yerleştirme bölmesi boyutunun programlı olarak nasıl ayarlanacağını gösterir. |
-| [Slider](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Dış denetim barındıran bir araç çubuğu düğmesinin nasıl uygulanacağını gösterir. |
+| [Kaydırıcı](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Dış denetim barındıran bir araç çubuğu düğmesinin nasıl uygulanacağını gösterir. |
 | [StateCollection](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Menü çubuğu, araç çubukları ve yerleştirme pencereleri için farklı durumları kaydeden ve yükleyen bir uygulamanın nasıl uygulanacağını gösterir. |
 | [StatusBarDemo](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Bir durum çubuğuna çeşitli gelişmiş denetimlerin nasıl ekleneceğini gösterir. |
 | [TabbedView](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/Visual%20C%2B%2B%202008%20Feature%20Pack) | Excel çalışma kitabındaki sekmeler gibi birden çok sekmeli Görünüm içeren bir görünümün nasıl oluşturulacağını gösterir. |

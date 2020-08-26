@@ -35,18 +35,18 @@ helpviewer_keywords:
 - m_szName
 - m_szParseName
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
-ms.openlocfilehash: f238c0b5b2a3988f08d910f605415bbe6403ea3d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0b4baa4671a013699e51a9ab28c002a680dfcd61
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211841"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838145"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor Sınıfı
 
 Bir Numaralandırıcı satır kümesinden veriye erişmek için [CEnumerator](../../data/oledb/cenumerator-class.md) tarafından kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CEnumeratorAccessor
@@ -60,7 +60,7 @@ class CEnumeratorAccessor
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[m_bIsParent](#bisparent)|Satır bir Numaralandırıcı ise, Numaralandırıcının bir üst Numaralandırıcı olup olmadığını gösteren bir değişken.|
 |[m_nType](#ntype)|Satırın bir veri kaynağını mı yoksa bir Numaralandırıcı mi olduğunu gösteren bir değişken.|
@@ -72,11 +72,11 @@ class CEnumeratorAccessor
 
 Bu satır kümesi, geçerli Numaralandırıcı tarafından görünen veri kaynaklarından ve numaralandırıcılardan oluşur.
 
-## <a name="cenumeratoraccessorm_bisparent"></a><a name="bisparent"></a>CEnumeratorAccessor:: m_bIsParent
+## <a name="cenumeratoraccessorm_bisparent"></a><a name="bisparent"></a> CEnumeratorAccessor:: m_bIsParent
 
 Satır bir Numaralandırıcı ise, Numaralandırıcının bir üst Numaralandırıcı olup olmadığını gösteren bir değişken.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 VARIANT_BOOL m_bIsParent;
@@ -86,11 +86,11 @@ VARIANT_BOOL m_bIsParent;
 
 Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="cenumeratoraccessorm_ntype"></a><a name="ntype"></a>CEnumeratorAccessor:: m_nType
+## <a name="cenumeratoraccessorm_ntype"></a><a name="ntype"></a> CEnumeratorAccessor:: m_nType
 
 Satırın bir veri kaynağını mı yoksa bir Numaralandırıcı mi olduğunu gösteren bir değişken.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 USHORT m_nType;
@@ -100,11 +100,11 @@ USHORT m_nType;
 
 Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="cenumeratoraccessorm_szdescription"></a><a name="szdescription"></a>CEnumeratorAccessor:: m_szDescription
+## <a name="cenumeratoraccessorm_szdescription"></a><a name="szdescription"></a> CEnumeratorAccessor:: m_szDescription
 
 Veri kaynağının veya Numaralandırıcının açıklaması.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 WCHAR m_szDescription[129];
@@ -114,11 +114,11 @@ WCHAR m_szDescription[129];
 
 Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="cenumeratoraccessorm_szname"></a><a name="szname"></a>CEnumeratorAccessor:: m_szName
+## <a name="cenumeratoraccessorm_szname"></a><a name="szname"></a> CEnumeratorAccessor:: m_szName
 
 Veri kaynağının veya Numaralandırıcının adı.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 WCHAR m_szName[129];
@@ -128,11 +128,11 @@ WCHAR m_szName[129];
 
 Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) bölümüne bakın.
 
-## <a name="cenumeratoraccessorm_szparsename"></a><a name="szparsename"></a>CEnumeratorAccessor:: m_szParseName
+## <a name="cenumeratoraccessorm_szparsename"></a><a name="szparsename"></a> CEnumeratorAccessor:: m_szParseName
 
 Veri kaynağı veya Numaralandırıcı için bir bilinen ad almak üzere [IParseDisplayName](/windows/win32/api/oleidl/nn-oleidl-iparsedisplayname) 'e geçirilecek dize.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 WCHAR m_szParseName[129];
@@ -145,4 +145,4 @@ Daha fazla bilgi için *OLE DB Programcının başvurusunda* bulunan [ISourcesRo
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

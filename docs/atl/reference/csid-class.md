@@ -1,5 +1,5 @@
 ---
-title: CSid Sınıfı
+title: CSID sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CSid
@@ -21,21 +21,21 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: 414cf428cebe8105d90b3add93cc7f1e76927c2a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b6787c0e3f075935f19d51aa73bbd66da9cc0fcb
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330924"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835603"
 ---
-# <a name="csid-class"></a>CSid Sınıfı
+# <a name="csid-class"></a>CSID sınıfı
 
-Bu sınıf, bir `SID` (güvenlik tanımlayıcısı) yapısı için bir sarmalayıcıdır.
+Bu sınıf `SID` (güvenlik tanımlayıcısı) yapısına yönelik bir sarmalayıcı.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSid
@@ -43,69 +43,69 @@ class CSid
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSid::CsidArray](#csidarray)|Bir dizi `CSid` nesne.|
+|[CSID:: Csıdarray](#csidarray)|`CSid`Nesne dizisi.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSid::csid](#csid)|Oluşturucu.|
-|[CSid::~CSid](#dtor)|Yıkıcı.|
+|[CSID:: CSID](#csid)|Oluşturucu.|
+|[CSID:: ~ CSID](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSid::Hesap Adı](#accountname)|`CSid` Nesneyle ilişkili hesabın adını verir.|
-|[CSid::Domain](#domain)|Nesneyle ilişkili etki alanının `CSid` adını döndürür.|
-|[CSid::EqualPrefix](#equalprefix)|Eşitlik `SID` için testler (güvenlik tanımlayıcısı) önekleri.|
-|[CSid::GetLength](#getlength)|`CSid` Nesnenin uzunluğunu döndürür.|
-|[CSid::GetPSID](#getpsid)|Bir işaretçiyi `SID` bir yapıya döndürür.|
-|[CSid::GetPSID_IDENTIFIER_AUTHORITY](#getpsid_identifier_authority)|Yapıya bir `SID_IDENTIFIER_AUTHORITY` işaretçi döndürür.|
-|[CSid::GetSubAuthority](#getsubauthority)|Bir `SID` yapıda belirli bir alt yetkisini döndürür.|
-|[CSid::GetSubAuthorityCount](#getsubauthoritycount)|Alt yetki sayısını döndürür.|
-|[CSid::Geçersiz](#isvalid)|Geçerlilik `CSid` için nesneyi sınar.|
-|[CSid::LoadAccount](#loadaccount)|Hesap `CSid` adı ve etki alanı veya varolan `SID` bir yapı verilen nesneyi güncelleştirir.|
-|[CSid::Sid](#sid)|Kimlik dizesini döndürür.|
-|[CSid::SidnameUse](#sidnameuse)|`CSid` Nesnenin durumunun açıklamasını döndürür.|
+|[CSID:: AccountName](#accountname)|Nesneyle ilişkili hesabın adını döndürür `CSid` .|
+|[CSID::D omain](#domain)|Nesneyle ilişkili etki alanının adını döndürür `CSid` .|
+|[CSID:: EqualPrefix](#equalprefix)|`SID`Eşitlik için testler (güvenlik tanımlayıcısı) ön ekleri.|
+|[CSID:: GetLength](#getlength)|Nesnenin uzunluğunu döndürür `CSid` .|
+|[CSID:: Getpsıd](#getpsid)|Yapıya bir işaretçi döndürür `SID` .|
+|[CSID:: GetPSID_IDENTIFIER_AUTHORITY](#getpsid_identifier_authority)|Yapıya bir işaretçi döndürür `SID_IDENTIFIER_AUTHORITY` .|
+|[CSID:: Getalt yetki miktarı](#getsubauthority)|Bir yapıda belirtilen bir alt yetki değerini döndürür `SID` .|
+|[CSID:: Getalt Uthoritycount](#getsubauthoritycount)|Alt yetki sayısını döndürür.|
+|[CSID:: IsValid](#isvalid)|`CSid`Nesneyi geçerliliğini test eder.|
+|[CSID:: LoadAccount](#loadaccount)|`CSid`Hesap adı ve etki alanı ya da var olan bir yapıyla belirtilen nesneyi güncelleştirir `SID` .|
+|[CSID:: Sid](#sid)|KIMLIK dizesini döndürür.|
+|[CSID:: SidNameUse](#sidnameuse)|Nesnenin durumunun açıklamasını döndürür `CSid` .|
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç =](#operator_eq)|Atama işleci.|
-|[operatör const SID *](#operator_const_sid__star)|Bir `CSid` nesneyi bir `SID` yapıya işaretçiatar.|
+|[işleç const SID *](#operator_const_sid__star)|Bir `CSid` nesneyi bir yapıya işaretçiye yayınlar `SID` .|
 
-### <a name="global-operators"></a>Küresel Operatörler
+### <a name="global-operators"></a>Genel Işleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[işleç ==](#operator_eq_eq)|Eşitlik için iki güvenlik tanımlayıcı nesnesi sınar|
-|[işleç !=](#operator_neq)|Eşitsizlik için iki güvenlik tanımlayıcı nesnesi sınar|
-|[Işleç\<](#operator_lt)|İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.|
-|[operatör >](#operator_gt)|İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.|
-|[Işleç\<=](#operator_lt__eq)|İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.|
-|[operatör >=](#operator_gt__eq)|İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.|
+|[işleç = =](#operator_eq_eq)|Eşitlik için iki güvenlik tanımlayıcısı nesnesini sınar|
+|[işleç! =](#operator_neq)|Eşitsizlik için iki güvenlik tanımlayıcısı nesnesini sınar|
+|[işlecinde \<](#operator_lt)|İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.|
+|[işleç >](#operator_gt)|İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.|
+|[işlecinde \<=](#operator_lt__eq)|İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.|
+|[işleç >=](#operator_gt__eq)|İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yapı, `SID` kullanıcıları veya grupları benzersiz olarak tanımlamak için kullanılan değişken uzunlukta bir yapıdır.
+`SID`Yapı, kullanıcıları veya grupları benzersiz şekilde tanımlamak için kullanılan değişken uzunluklu bir yapıdır.
 
-Uygulamalar yapıyı `SID` doğrudan değiştirmemeli, bunun yerine bu sarıcı sınıfında sağlanan yöntemleri kullanmalıdır. Ayrıca bakınız [AtlGetOwnerSid](security-global-functions.md#atlgetownersid), [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid), [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), ve [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).
+Uygulamalar yapıyı doğrudan değiştirmemelidir `SID` , bunun yerine bu sarmalayıcı sınıfında sunulan yöntemleri kullanır. Ayrıca bkz. [Atlgetownersıd](security-global-functions.md#atlgetownersid), [atlsetgroupsıd](security-global-functions.md#atlsetgroupsid), [Atlgetgroupsıd](security-global-functions.md#atlgetgroupsid)ve [atlsetownersıd](security-global-functions.md#atlsetownersid).
 
-Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity.h
+**Üstbilgi:** atlsecurity. h
 
-## <a name="csidaccountname"></a><a name="accountname"></a>CSid::Hesap Adı
+## <a name="csidaccountname"></a><a name="accountname"></a> CSID:: AccountName
 
-`CSid` Nesneyle ilişkili hesabın adını verir.
+Nesneyle ilişkili hesabın adını döndürür `CSid` .
 
 ```
 LPCTSTR AccountName() const throw(...);
@@ -113,15 +113,15 @@ LPCTSTR AccountName() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-LpCTSTR'yi hesabın adını gösteren döndürür.
+Hesabın adına işaret eden LPCTSTR değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için [Bkz. LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
+Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için bkz. [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
-Hesap adı `SID` bulunamazsa, `AccountName` boş bir dize döndürür. Bir ağ zaman aşımı bu yöntemin adı bulmasını engellerse bu oluşabilir. Oturum açma oturumu gibi `SID` karşılık gelen hesap adı olmayan güvenlik tanımlayıcıları için de oluşur.
+İçin bir hesap adı `SID` bulunamazsa `AccountName` boş bir dize döndürür. Bir ağ zaman aşımı bu yöntemin adı bulmasını engelliyorsa bu durum oluşabilir. Aynı zamanda, `SID` oturum açma oturumunu tanımlayan bir gibi, karşılık gelen hesap adı olmayan güvenlik tanımlayıcıları için de gerçekleşir.
 
-## <a name="csidcsid"></a><a name="csid"></a>CSid::csid
+## <a name="csidcsid"></a><a name="csid"></a> CSID:: CSID
 
 Oluşturucu.
 
@@ -146,33 +146,33 @@ explicit CSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rhs*<br/>
-Varolan `CSid` bir `SID` nesne veya (güvenlik tanımlayıcısı) yapısı.
+*sağ taraftan*<br/>
+Varolan bir `CSid` nesne veya `SID` (güvenlik tanımlayıcısı) yapısı.
 
-*IdentifierAuthority*<br/>
-Otorite.
+*Identifierauthority*<br/>
+Yetkili.
 
-*nSubAuthorityCount*<br/>
+*NALT yetki sayısı*<br/>
 Alt yetki sayısı.
 
 *pszAccountName*<br/>
 Hesap adı.
 
 *pszSystem*<br/>
-Sistem adı. Bu dize uzak bir bilgisayarın adı olabilir. Bu dize NULL ise, bunun yerine yerel sistem kullanılır.
+Sistem adı. Bu dize, uzak bir bilgisayarın adı olabilir. Bu dize NULL ise, bunun yerine yerel sistem kullanılır.
 
-*pSid*<br/>
-Bir yapıiçin `SID` bir işaretçi.
+*PSID*<br/>
+Bir yapıya yönelik işaretçi `SID` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kurucu, *sidtypeInvalid*için bir iç veri üyesi ayarlayarak veya varolan bir , `CSid` `SID`veya varolan hesaptan ayarları kopyalayarak `CSid` nesneyi başlatılmasını sağlar.
+Oluşturucu `CSid` nesneyi başlatır, bir iç veri üyesini *Sıdtypegeçersiz*olarak ayarlar veya ayarları mevcut `CSid` , ya da `SID` var olan bir hesaptan kopyalayarak.
 
-Başlatma başarısız olursa, oluşturucu bir [CAtlException Sınıfı](../../atl/reference/catlexception-class.md)atar.
+Başlatma başarısız olursa, Oluşturucu bir [CAtlException Sınıfı](../../atl/reference/catlexception-class.md)oluşturur.
 
-## <a name="csidcsid"></a><a name="dtor"></a>CSid::~CSid
+## <a name="csidcsid"></a><a name="dtor"></a> CSID:: ~ CSID
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 virtual ~CSid() throw();
@@ -180,11 +180,11 @@ virtual ~CSid() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı nesne tarafından edinilen tüm kaynakları serbest sağlar.
+Yıkıcı, nesne tarafından alınan tüm kaynakları serbest bırakır.
 
-## <a name="csidcsidarray"></a><a name="csidarray"></a>CSid::CsidArray
+## <a name="csidcsidarray"></a><a name="csidarray"></a> CSID:: Csıdarray
 
-CSid [CSid](../../atl/reference/csid-class.md) nesnelerin bir dizi.
+Bir [CSID](../../atl/reference/csid-class.md) nesneleri dizisi.
 
 ```
 typedef CAtlArray<CSid> CSidArray;
@@ -192,11 +192,11 @@ typedef CAtlArray<CSid> CSidArray;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu typedef, güvenlik tanımlayıcılarını bir ACL'den (erişim denetim listesi) almak için kullanılabilecek dizi türünü belirtir. [Bkz. CAcl::GetAclEntries](../../atl/reference/cacl-class.md#getaclentries).
+Bu typedef, bir ACL 'den (erişim denetimi listesi) güvenlik tanımlayıcılarını almak için kullanılabilecek dizi türünü belirtir. Bkz. [CAcl:: Getaclendenemeler](../../atl/reference/cacl-class.md#getaclentries).
 
-## <a name="csiddomain"></a><a name="domain"></a>CSid::Domain
+## <a name="csiddomain"></a><a name="domain"></a> CSID::D omain
 
-Nesneyle ilişkili etki alanının `CSid` adını döndürür.
+Nesneyle ilişkili etki alanının adını döndürür `CSid` .
 
 ```
 LPCTSTR Domain() const throw(...);
@@ -204,17 +204,17 @@ LPCTSTR Domain() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretlemayı `LPCTSTR` etki alanına döndürür.
+`LPCTSTR`Etki alanına işaret eden bir değer döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için [Bkz. LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
+Bu yöntem, belirtilen `SID` (güvenlik tanımlayıcısı) için bir ad bulmaya çalışır. Tüm ayrıntılar için bkz. [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
-Hesap adı `SID` bulunamazsa, `Domain` etki alanını boş bir dize olarak döndürür. Bir ağ zaman aşımı bu yöntemin adı bulmasını engellerse bu oluşabilir. Oturum açma oturumu gibi `SID` karşılık gelen hesap adı olmayan güvenlik tanımlayıcıları için de oluşur.
+İçin bir hesap adı `SID` bulunamazsa, `Domain` etki alanını boş bir dize olarak döndürür. Bir ağ zaman aşımı bu yöntemin adı bulmasını engelliyorsa bu durum oluşabilir. Aynı zamanda, `SID` oturum açma oturumunu tanımlayan bir gibi, karşılık gelen hesap adı olmayan güvenlik tanımlayıcıları için de gerçekleşir.
 
-## <a name="csidequalprefix"></a><a name="equalprefix"></a>CSid::EqualPrefix
+## <a name="csidequalprefix"></a><a name="equalprefix"></a> CSID:: EqualPrefix
 
-Eşitlik `SID` için testler (güvenlik tanımlayıcısı) önekleri.
+`SID`Eşitlik için testler (güvenlik tanımlayıcısı) ön ekleri.
 
 ```
 bool EqualPrefix(const SID& rhs) const throw();
@@ -223,20 +223,20 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Rhs*<br/>
-Karşılaştırılacak `SID` (güvenlik tanımlayıcısı) yapısı `CSid` veya nesnesi.
+*sağ taraftan*<br/>
+`SID`Karşılaştırılacak (güvenlik tanımlayıcısı) yapısı veya `CSid` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [EqualPrefixSid'e](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) bakın.
+Daha fazla bilgi için bkz. [EqualPrefixSid](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) Windows SDK.
 
-## <a name="csidgetlength"></a><a name="getlength"></a>CSid::GetLength
+## <a name="csidgetlength"></a><a name="getlength"></a> CSID:: GetLength
 
-`CSid` Nesnenin uzunluğunu döndürür.
+Nesnenin uzunluğunu döndürür `CSid` .
 
 ```
 UINT GetLength() const throw();
@@ -244,18 +244,18 @@ UINT GetLength() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSid` Nesnenin baytlarındaki uzunluğu döndürür.
+Nesnenin bayt cinsinden uzunluğunu döndürür `CSid` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSid` Yapı geçerli değilse, iade değeri tanımsız. Aramadan `GetLength`önce, geçerli olduğunu `CSid` doğrulamak için [CSid::IsValid](#isvalid) üye işlevini kullanın.
+`CSid`Yapı geçerli değilse, dönüş değeri tanımsızdır. Çağrılmadan önce `GetLength` , geçerli olduğunu doğrulamak Için [CSID:: IsValid](#isvalid) üye işlevini kullanın `CSid` .
 
 > [!NOTE]
-> Hata ayıklama altında `CSid` işlev nesne geçerli değilse bir ASSERT neden olur oluşturur.
+> Hata ayıklama Derlemeleriyle, nesne geçerli değilse işlev bir onaylama oluşmasına neden olur `CSid` .
 
-## <a name="csidgetpsid"></a><a name="getpsid"></a>CSid::GetPSID
+## <a name="csidgetpsid"></a><a name="getpsid"></a> CSID:: Getpsıd
 
-İşaretçiyi (güvenlik tanımlayıcısı) yapısına `SID` döndürür.
+Bir `SID` (güvenlik tanımlayıcısı) yapısına yönelik bir işaretçi döndürür.
 
 ```
 const SID* GetPSID() const throw(...);
@@ -263,11 +263,11 @@ const SID* GetPSID() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSid` Nesnenin alt yapısının `SID` adresini döndürür.
+`CSid`Nesnenin temel yapısının adresini döndürür `SID` .
 
-## <a name="csidgetpsid_identifier_authority"></a><a name="getpsid_identifier_authority"></a>CSid::GetPSID_IDENTIFIER_AUTHORITY
+## <a name="csidgetpsid_identifier_authority"></a><a name="getpsid_identifier_authority"></a> CSID:: GetPSID_IDENTIFIER_AUTHORITY
 
-Yapıya bir `SID_IDENTIFIER_AUTHORITY` işaretçi döndürür.
+Yapıya bir işaretçi döndürür `SID_IDENTIFIER_AUTHORITY` .
 
 ```
 const SID_IDENTIFIER_AUTHORITY* GetPSID_IDENTIFIER_AUTHORITY() const throw();
@@ -275,14 +275,14 @@ const SID_IDENTIFIER_AUTHORITY* GetPSID_IDENTIFIER_AUTHORITY() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, `SID_IDENTIFIER_AUTHORITY` yapının adresini döndürür. Başarısız olursa, iade değeri tanımsız. `CSid` Nesne geçerli değilse hata oluşabilir, bu durumda [CSid::IsValid](#isvalid) yöntemi FALSE döndürür. İşlev `GetLastError` genişletilmiş hata bilgileri için çağrılabilir.
+Yöntem başarılı olursa yapının adresini döndürür `SID_IDENTIFIER_AUTHORITY` . Başarısız olursa, dönüş değeri tanımsızdır. `CSid`Nesne geçerli değilse hata oluşabilir. Bu durumda, [CSID:: IsValid](#isvalid) yöntemi false değerini döndürür. İşlev, `GetLastError` genişletilmiş hata bilgileri için çağrılabilir.
 
 > [!NOTE]
-> Hata ayıklama altında `CSid` işlev nesne geçerli değilse bir ASSERT neden olur oluşturur.
+> Hata ayıklama Derlemeleriyle, nesne geçerli değilse işlev bir onaylama oluşmasına neden olur `CSid` .
 
-## <a name="csidgetsubauthority"></a><a name="getsubauthority"></a>CSid::GetSubAuthority
+## <a name="csidgetsubauthority"></a><a name="getsubauthority"></a> CSID:: Getalt yetki miktarı
 
-(Güvenlik tanımlayıcısı) `SID` yapısında belirtilen bir alt yetkisini döndürür.
+(Güvenlik tanımlayıcısı) yapısında belirtilen bir alt yetki değerini döndürür `SID` .
 
 ```
 DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
@@ -290,21 +290,21 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nSubAuthority*<br/>
-Alt otorite.
+*NALT yetki miktarı*<br/>
+Alt yetki miktarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*nSubAuthority* tarafından başvurulan alt yetkisini verir. Alt yetkİ değeri göreli bir tanımlayıcıdır (RID).
+*NALT yetki* sahibi tarafından başvurulan alt yetki değerini döndürür. Alt yetki değeri, bir göreli tanımlayıcı (RID) değeridir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nSubAuthority* parametresi, yöntemin döndüreceği alt yetki dizisi öğesini tanımlayan bir dizin değeri belirtir. Yöntem, bu değer üzerinde hiçbir doğrulama sınaması gerçekleştirmez. Bir uygulama [CSid arayabilirsiniz::GetSubAuthorityCount](#getsubauthoritycount) kabul edilebilir değerlerin aralığını keşfetmek için.
+*NALT* kimlik belirleme parametresi, yöntemin döndürdüğü alt yetki dizisi öğesini tanımlayan bir dizin değeri belirtir. Yöntemi bu değerde doğrulama testi gerçekleştirmesiz. Bir uygulama, kabul edilebilir değerlerin aralığını saptamak için [CSID:: Getalt Uthoritycount](#getsubauthoritycount) ' i çağırabilir.
 
 > [!NOTE]
-> Hata ayıklama altında `CSid` işlev nesne geçerli değilse bir ASSERT neden olur oluşturur.
+> Hata ayıklama Derlemeleriyle, nesne geçerli değilse işlev bir onaylama oluşmasına neden olur `CSid` .
 
-## <a name="csidgetsubauthoritycount"></a><a name="getsubauthoritycount"></a>CSid::GetSubAuthorityCount
+## <a name="csidgetsubauthoritycount"></a><a name="getsubauthoritycount"></a> CSID:: Getalt Uthoritycount
 
 Alt yetki sayısını döndürür.
 
@@ -314,16 +314,16 @@ UCHAR GetSubAuthorityCount() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, iade değeri alt yetkisini saymaktır.
+Yöntem başarılı olursa, dönüş değeri alt yetki sayısıdır.
 
-Yöntem başarısız olursa, iade değeri tanımsız. Nesne geçersizse `CSid` yöntem başarısız olur. Genişletilmiş hata bilgilerini almak `GetLastError`için .
+Yöntem başarısız olursa, dönüş değeri tanımsızdır. Nesne geçersiz ise yöntem başarısız olur `CSid` . Genişletilmiş hata bilgilerini almak için çağrısı yapın `GetLastError` .
 
 > [!NOTE]
-> Hata ayıklama altında `CSid` işlev nesne geçerli değilse bir ASSERT neden olur oluşturur.
+> Hata ayıklama Derlemeleriyle, nesne geçerli değilse işlev bir onaylama oluşmasına neden olur `CSid` .
 
-## <a name="csidisvalid"></a><a name="isvalid"></a>CSid::Geçersiz
+## <a name="csidisvalid"></a><a name="isvalid"></a> CSID:: IsValid
 
-Geçerlilik `CSid` için nesneyi sınar.
+`CSid`Nesneyi geçerliliğini test eder.
 
 ```
 bool IsValid() const throw();
@@ -331,15 +331,15 @@ bool IsValid() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSid` Nesne geçerliyse TRUE'yu döndürür, değilse FALSE. Bu yöntem için genişletilmiş hata bilgisi yoktur; aramayın. `GetLastError`
+`CSid`Nesne GEÇERLIYSE true, DEĞILSE false döndürür. Bu yöntem için genişletilmiş hata bilgisi yok; ' i çağırmayın `GetLastError` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem, `IsValid` düzeltme `CSid` numarasının bilinen bir aralıkiçinde olduğunu ve alt otorite sayısının en fazla olduğunu doğrulayarak nesneyi doğrular.
+`IsValid`Yöntemi, `CSid` Düzeltme numarasının bilinen bir Aralık içinde olduğunu ve alt uthoriler sayısının en büyük değerden küçük olduğunu doğrulayarak nesneyi doğrular.
 
-## <a name="csidloadaccount"></a><a name="loadaccount"></a>CSid::LoadAccount
+## <a name="csidloadaccount"></a><a name="loadaccount"></a> CSID:: LoadAccount
 
-Hesap `CSid` adı ve etki alanı verilen nesneyi veya varolan bir SID (güvenlik tanımlayıcısı) yapısını güncelleştirir.
+`CSid`Hesap adı ve etki alanı veya var olan SID (güvenlik tanımlayıcısı) yapısı verilen nesneyi güncelleştirir.
 
 ```
 bool LoadAccount(
@@ -357,20 +357,20 @@ bool LoadAccount(
 Hesap adı.
 
 *pszSystem*<br/>
-Sistem adı. Bu dize uzak bir bilgisayarın adı olabilir. Bu dize NULL ise, bunun yerine yerel sistem kullanılır.
+Sistem adı. Bu dize, uzak bir bilgisayarın adı olabilir. Bu dize NULL ise, bunun yerine yerel sistem kullanılır.
 
-*pSid*<br/>
-[SID](/windows/win32/api/winnt/ns-winnt-sid) yapısına işaretçi.
+*PSID*<br/>
+[SID](/windows/win32/api/winnt/ns-winnt-sid) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false. Genişletilmiş hata bilgilerini almak `GetLastError`için .
+Başarılı olduğunda TRUE, hatada FALSE döndürür. Genişletilmiş hata bilgilerini almak için çağrısı yapın `GetLastError` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`LoadAccount`belirtilen ad için bir güvenlik tanımlayıcısı bulmaya çalışır. Daha fazla bilgi için [LookupAccountSid'e](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw) bakın.
+`LoadAccount` Belirtilen ad için bir güvenlik tanımlayıcısı bulmaya çalışır. Daha fazla ayrıntı için [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw) bölümüne bakın.
 
-## <a name="csidoperator-"></a><a name="operator_eq"></a>CSid::operatör =
+## <a name="csidoperator-"></a><a name="operator_eq"></a> CSID:: operator =
 
 Atama işleci.
 
@@ -381,16 +381,16 @@ CSid& operator= (const SID& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rhs*<br/>
-(güvenlik `SID` tanımlayıcısı) veya `CSid` nesneye atamak `CSid` için.
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` `CSid` nesnesine atama.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş `CSid` nesneye bir başvuru verir.
+Güncelleştirilmiş nesneye bir başvuru döndürür `CSid` .
 
-## <a name="csidoperator-"></a><a name="operator_eq_eq"></a>CSid::işleç ==
+## <a name="csidoperator-"></a><a name="operator_eq_eq"></a> CSID:: operator = =
 
-Eşitlik için iki güvenlik tanımlayıcı nesnesi sınar.
+, Eşitlik için iki güvenlik tanımlayıcısı nesnesini sınar.
 
 ```
 bool operator==(
@@ -400,19 +400,19 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lhs*<br/>
-`SID` == işlecinin sol tarafında `CSid` görünen (güvenlik tanımlayıcısı) veya.
+*Point*<br/>
+`SID`(Güvenlik tanımlayıcısı) ya da `CSid` = = işlecinin sol tarafında görünür.
 
-*Rhs*<br/>
-`SID` == işlecinin sağ tarafında `CSid` görünen (güvenlik tanımlayıcısı) veya.
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` = = işlecinin sağ tarafında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Doğru güvenlik tanımlayıcıları eşit, aksi takdirde FALSE.
+Güvenlik tanımlayıcıları eşitse TRUE, aksi takdirde FALSE.
 
-## <a name="csidoperator-"></a><a name="operator_neq"></a>CSid::operatör !=
+## <a name="csidoperator-"></a><a name="operator_neq"></a> CSID:: operator! =
 
-Eşitsizlik için iki güvenlik tanımlayıcı nesnesi sınar.
+Eşitsizlik için iki güvenlik tanımlayıcısı nesnesini sınar.
 
 ```
 bool operator!=(
@@ -422,19 +422,19 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lhs*<br/>
-!= işlecinin sol tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*Point*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sol tarafında görünen.
 
-*Rhs*<br/>
-!= işlecinin sağ tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sağ tarafında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Doğru güvenlik tanımlayıcıları eşit değilse, aksi takdirde FALSE.
+Güvenlik tanımlayıcıları eşitse TRUE, aksi takdirde FALSE.
 
-## <a name="csidoperator-lt"></a><a name="operator_lt"></a>CSid::operatör&lt;
+## <a name="csidoperator-lt"></a><a name="operator_lt"></a> CSID:: operator &lt;
 
-İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.
+İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.
 
 ```
 bool operator<(
@@ -444,19 +444,19 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lhs*<br/>
-!= işlecinin sol tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*Point*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sol tarafında görünen.
 
-*Rhs*<br/>
-!= işlecinin sağ tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sağ tarafında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU *lhs* *rhs*daha az ise , aksi takdirde FALSE.
+*LHS* , *RHS*'den küçükse true, aksi takdirde false.
 
-## <a name="csidoperator-lt"></a><a name="operator_lt__eq"></a>CSid::operatör&lt;=
+## <a name="csidoperator-lt"></a><a name="operator_lt__eq"></a> CSID:: operator &lt;=
 
-İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.
+İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.
 
 ```
 bool operator<=(
@@ -466,19 +466,19 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lhs*<br/>
-!= işlecinin sol tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*Point*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sol tarafında görünen.
 
-*Rhs*<br/>
-!= işlecinin sağ tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sağ tarafında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU *lhs* daha az veya *rhs*eşit ise , aksi takdirde FALSE.
+*LHS* , *RHS*'den küçükse veya eşitse true, aksi takdirde false.
 
-## <a name="csidoperator-gt"></a><a name="operator_gt"></a>CSid::operatör&gt;
+## <a name="csidoperator-gt"></a><a name="operator_gt"></a> CSID:: operator &gt;
 
-İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.
+İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.
 
 ```
 bool operator>(
@@ -488,19 +488,19 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lhs*<br/>
-!= işlecinin sol tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*Point*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sol tarafında görünen.
 
-*Rhs*<br/>
-!= işlecinin sağ tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sağ tarafında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU *lhs* *rhs*daha büyükise , aksi takdirde FALSE.
+*LHS* , *RHS*'den büyükse true, aksi takdirde false.
 
-## <a name="csidoperator-gt"></a><a name="operator_gt__eq"></a>CSid::operatör&gt;=
+## <a name="csidoperator-gt"></a><a name="operator_gt__eq"></a> CSID:: operator &gt;=
 
-İki güvenlik tanımlayıcı nesnesinin göreli değerini karşılaştırır.
+İki güvenlik tanımlayıcısı nesnesinin göreli değerini karşılaştırır.
 
 ```
 bool operator>=(
@@ -510,19 +510,19 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lhs*<br/>
-!= işlecinin sol tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*Point*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sol tarafında görünen.
 
-*Rhs*<br/>
-!= işlecinin sağ tarafında görünen `SID` (güvenlik tanımlayıcısı) veya. `CSid`
+*sağ taraftan*<br/>
+`SID`(Güvenlik tanımlayıcısı) veya `CSid` ! = işlecinin sağ tarafında görünür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU *lhs* daha büyük veya *rhs*eşitise , aksi takdirde FALSE.
+*LHS* , *RHS*'den büyükse veya eşitse true, aksi takdirde false.
 
-## <a name="csidoperator-const-sid-"></a><a name="operator_const_sid__star"></a>CSid::operatör const SID\*
+## <a name="csidoperator-const-sid-"></a><a name="operator_const_sid__star"></a> CSID:: operator const SID \*
 
-Bir `CSid` nesneyi işaretçiye `SID` (güvenlik tanımlayıcısı) bir yapıya atar.
+Bir `CSid` nesneyi `SID` (güvenlik tanımlayıcısı) yapısına bir işaretçiye yayınlar.
 
 ```
 operator const SID *() const throw(...);
@@ -530,11 +530,11 @@ operator const SID *() const throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SID` Yapının adresini döndürür.
+Yapının adresini döndürür `SID` .
 
-## <a name="csidsid"></a><a name="sid"></a>CSid::Sid
+## <a name="csidsid"></a><a name="sid"></a> CSID:: Sid
 
-`SID` (Güvenlik tanımlayıcısı) yapısını dize olarak döndürür.
+`SID`(Güvenlik tanımlayıcısı) yapısını bir dize olarak döndürür.
 
 ```
 LPCTSTR Sid() const throw(...);
@@ -542,11 +542,11 @@ LPCTSTR Sid() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yapıyı `SID` görüntü, depolama veya iletim için uygun biçimde dize olarak döndürür. [ConvertSidToStringSid'e](/windows/win32/api/sddl/nf-sddl-convertsidtostringsidw)eşdeğerdir.
+`SID`Yapıyı, görüntü, depolama veya iletim için uygun bir biçimde bir dize olarak döndürür. [ConvertSidToStringSid](/windows/win32/api/sddl/nf-sddl-convertsidtostringsidw)ile eşdeğerdir.
 
-## <a name="csidsidnameuse"></a><a name="sidnameuse"></a>CSid::SidnameUse
+## <a name="csidsidnameuse"></a><a name="sidnameuse"></a> CSID:: SidNameUse
 
-`CSid` Nesnenin durumunun açıklamasını döndürür.
+Nesnenin durumunun açıklamasını döndürür `CSid` .
 
 ```
 SID_NAME_USE SidNameUse() const throw();
@@ -554,27 +554,27 @@ SID_NAME_USE SidNameUse() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CSid` Nesnenin durumunu açıklayan bir değer depolayan veri üyesinin değerini döndürür.
+Nesnenin durumunu açıklayan bir değer depolayan veri üyesinin değerini döndürür `CSid` .
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|SidTypeUser|Kullanıcıyı `SID` (güvenlik tanımlayıcısı) gösterir.|
-|SidTypeGroup|Bir grubu `SID`gösterir.|
-|SidTypeDomain|Etki alanını `SID`gösterir.|
-|SidTypeAlias|Takma ad `SID`gösterir.|
-|SidTypeWellKnownGroup|Tanınmış `SID` bir grup için a gösterir.|
-|SidTypeDeletedAccount|Silinen `SID` bir hesap için a gösterir.|
-|SidTypeGeçersiz|Geçersiz `SID`bir durumu gösterir.|
-|SidTypeUnknown|Bilinmeyen `SID` bir türü gösterir.|
-|SidTypeComputer|Bir `SID` bilgisayar için a gösterir.|
+|Sıdtypeuser|Bir kullanıcıyı `SID` (güvenlik tanımlayıcısı) gösterir.|
+|Sıdtypegroup|Bir grubu gösterir `SID` .|
+|Sıdtypedomain|Bir etki alanını belirtir `SID` .|
+|Sıdtypealias|Diğer adı gösterir `SID` .|
+|Sıdtypewellknowngroup|`SID`İyi bilinen bir grup için bir belirtir.|
+|Sıdtypedeletedaccount|Silinen bir `SID` hesap için bir belirtir.|
+|Sıdtypegeçersiz|Geçersiz olduğunu gösterir `SID` .|
+|Sıdtypeunknown|Bilinmeyen bir `SID` türü gösterir.|
+|Sıdtypecomputer|Bir `SID` bilgisayar için belirtir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CSid'i arayın::Yükleme](#loadaccount) `CSid` Hesabı'nı `SidNameUse` arayamadan önce nesneyi güncelleştirmek için durumunu döndürün. `SidNameUse`nesnenin durumunu değiştirmez (çağırarak `LookupAccountName` veya `LookupAccountSid`), yalnızca geçerli durumu döndürür.
+Durumunu döndürmek için çağrılmadan önce nesneyi güncelleştirmek üzere [CSID:: LoadAccount](#loadaccount) ' i çağırın `CSid` `SidNameUse` . `SidNameUse` nesnenin durumunu değiştirmez ( `LookupAccountName` veya ' a çağırarak `LookupAccountSid` ), ancak yalnızca geçerli durumu döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenlik Örneği](../../overview/visual-cpp-samples.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
-[Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)<br/>
+[Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Güvenlik Genel Işlevleri](../../atl/reference/security-global-functions.md)<br/>
 [İşleçler](../../atl/reference/atl-operators.md)

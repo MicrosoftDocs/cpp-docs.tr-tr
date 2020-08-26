@@ -1,5 +1,5 @@
 ---
-title: IWorkerThreadClient Sınıfı
+title: IWorkerThreadClient arabirimi
 ms.date: 11/04/2016
 f1_keywords:
 - IWorkerThreadClient
@@ -9,21 +9,21 @@ f1_keywords:
 helpviewer_keywords:
 - IWorkerThreadClient interface
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
-ms.openlocfilehash: 6a68f25f153a0ad2cf42ebfaa374ff63c5746fcd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: aa72f090a006d6936339582a919b0faf5cab6b03
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326308"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835356"
 ---
-# <a name="iworkerthreadclient-interface"></a>IWorkerThreadClient Sınıfı
+# <a name="iworkerthreadclient-interface"></a>IWorkerThreadClient arabirimi
 
-`IWorkerThreadClient`[CWorkerThread](../../atl/reference/cworkerthread-class.md) sınıfının istemcileri tarafından uygulanan arabirimdir.
+`IWorkerThreadClient` , [CWorkerThread](../../atl/reference/cworkerthread-class.md) sınıfının istemcileri tarafından uygulanan arabirimdir.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __interface IWorkerThreadClient
@@ -33,20 +33,20 @@ __interface IWorkerThreadClient
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[Closehandle](#closehandle)|Bu nesneyle ilişkili tanıtıcıyı kapatmak için bu yöntemi uygulayın.|
-|[Yürütmek](#execute)|Bu nesneyle ilişkili tanıtıcı sinyal olduğunda kodu yürütmek için bu yöntemi uygulayın.|
+|[CloseHandle](#closehandle)|Bu nesneyle ilişkili tanıtıcıyı kapatmak için bu yöntemi uygulayın.|
+|[Yürütme](#execute)|Bu nesneyle ilişkili tanıtıcı sinyal geldiğinde kodu yürütmek için bu yöntemi uygulayın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sinyal verilen bir tanıtıcıya yanıt olarak bir alt iş parçacığı üzerinde yürütülmesi gereken bir kod varsa bu arabirimi uygulayın.
+Bir tanıtıcıya yanıt olarak bir çalışan iş parçacığında yürütülmesi gereken kodunuz olduğunda bu arabirimi uygulayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
-## <a name="iworkerthreadclientclosehandle"></a><a name="closehandle"></a>IWorkerThreadClient::CloseHandle
+## <a name="iworkerthreadclientclosehandle"></a><a name="closehandle"></a> IWorkerThreadClient:: CloseHandle
 
 Bu nesneyle ilişkili tanıtıcıyı kapatmak için bu yöntemi uygulayın.
 
@@ -57,25 +57,25 @@ HRESULT CloseHandle(HANDLE  hHandle);
 ### <a name="parameters"></a>Parametreler
 
 *hHandle*<br/>
-Tutamacı kapatılmalı.
+Kapatılacak tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada bir hata HRESULT'ı döndürün.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yönteme geçirilen tutamaç daha önce CWorkerThread bir çağrı ile bu nesne ile [ilişkili::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).
+Bu yönteme geçirilen tanıtıcı daha önce bu nesneyle bir [CWorkerThread:: AddHandle](../../atl/reference/cworkerthread-class.md#addhandle)çağrısıyla ilişkilendirildi.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod basit bir `IWorkerThreadClient::CloseHandle`uygulama gösterir.
+Aşağıdaki kod, ' nin basit bir uygulamasını gösterir `IWorkerThreadClient::CloseHandle` .
 
 [!code-cpp[NVC_ATL_Utilities#135](../../atl/codesnippet/cpp/iworkerthreadclient-interface_1.cpp)]
 
-## <a name="iworkerthreadclientexecute"></a><a name="execute"></a>IWorkerThreadClient::Çalıştır
+## <a name="iworkerthreadclientexecute"></a><a name="execute"></a> IWorkerThreadClient:: Execute
 
-Bu nesneyle ilişkili tanıtıcı sinyal olduğunda kodu yürütmek için bu yöntemi uygulayın.
+Bu nesneyle ilişkili tanıtıcı sinyal geldiğinde kodu yürütmek için bu yöntemi uygulayın.
 
 ```
 HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
@@ -87,23 +87,23 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 Kullanıcı parametresi.
 
 *hObject*<br/>
-Sinyal verilen kulp.
+Sinyali verilmiş olan tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada bir hata HRESULT'ı döndürün.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yönteme geçirilen tutamaç ve DWORD/işaretçisi daha önce Bu nesneyle [CWorkerThread:AddHandle'a](../../atl/reference/cworkerthread-class.md#addhandle)yapılan bir çağrıyla ilişkilendirildi.
+Bu yönteme geçirilen tanıtıcı ve DWORD/işaretçi, daha önce bu nesneyle bir [CWorkerThread:: AddHandle](../../atl/reference/cworkerthread-class.md#addhandle)çağrısıyla ilişkilendirildi.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod basit bir `IWorkerThreadClient::Execute`uygulama gösterir.
+Aşağıdaki kod, ' nin basit bir uygulamasını gösterir `IWorkerThreadClient::Execute` .
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iworkerthreadclient-interface_2.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>
-[CWorkerThread Sınıfı](../../atl/reference/cworkerthread-class.md)
+[CWorkerThread sınıfı](../../atl/reference/cworkerthread-class.md)

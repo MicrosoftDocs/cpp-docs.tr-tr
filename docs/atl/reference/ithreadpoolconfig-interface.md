@@ -1,5 +1,5 @@
 ---
-title: IThreadPoolConfig Arabirimi
+title: IThreadPoolConfig arabirimi
 ms.date: 11/04/2016
 f1_keywords:
 - IThreadPoolConfig
@@ -11,21 +11,21 @@ f1_keywords:
 helpviewer_keywords:
 - IThreadPoolConfig interface
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
-ms.openlocfilehash: e4b90534fa89ef2aeffe4cd682d92efc16452487
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cba82055c292fc966dc2328773cce4aa64d45a64
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326351"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835434"
 ---
-# <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig Arabirimi
+# <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig arabirimi
 
-Bu arabirim, iş parçacığı havuzuyapılandırma yöntemleri sağlar.
+Bu arabirim, bir iş parçacığı havuzu yapılandırmak için yöntemler sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __interface
@@ -36,24 +36,24 @@ __interface
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[GetSize](#getsize)|Havuzdaki iş parçacığı sayısını almak için bu yöntemi arayın.|
-|[GetTimeout](#gettimeout)|İş parçacığı havuzunun iş parçacığının kapanmasını bekleyeceği milisaniyecinsinden en fazla zamanı almak için bu yöntemi arayın.|
-|[SetSize](#setsize)|Havuzdaki iş parçacığı sayısını ayarlamak için bu yöntemi arayın.|
-|[Settimeout](#settimeout)|İş parçacığı havuzunun iş parçacığının kapanmasını bekleyeceği milisaniye cinsinden maksimum süreyi ayarlamak için bu yöntemi arayın.|
+|[GetSize](#getsize)|Havuzdaki iş parçacığı sayısını almak için bu yöntemi çağırın.|
+|[GetTimeout](#gettimeout)|İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye olarak almak için bu yöntemi çağırın.|
+|[Çalışma](#setsize)|Havuzdaki iş parçacığı sayısını ayarlamak için bu yöntemi çağırın.|
+|[SetTimeout](#settimeout)|İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye cinsinden ayarlamak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arayüz [CThreadPool](../../atl/reference/cthreadpool-class.md)tarafından uygulanmaktadır.
+Bu arabirim, [CThreadPool](../../atl/reference/cthreadpool-class.md)tarafından uygulanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
-## <a name="ithreadpoolconfiggetsize"></a><a name="getsize"></a>IThreadPoolConfig::GetSize
+## <a name="ithreadpoolconfiggetsize"></a><a name="getsize"></a> IThreadPoolConfig:: GetSize
 
-Havuzdaki iş parçacığı sayısını almak için bu yöntemi arayın.
+Havuzdaki iş parçacığı sayısını almak için bu yöntemi çağırın.
 
 ```
 STDMETHOD(GetSize)(int* pnNumThreads);
@@ -62,19 +62,19 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 ### <a name="parameters"></a>Parametreler
 
 *pnNumThreads*<br/>
-[çıkış] Başarı üzerine, havuzdaki iş parçacığı sayısını alan değişkenin adresi.
+dışı Başarılı olan değişkenin, havuzdaki iş parçacığı sayısını aldığı değişken adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada Bir hata HRESULT verir.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#134](../../atl/codesnippet/cpp/ithreadpoolconfig-interface_1.cpp)]
 
-## <a name="ithreadpoolconfiggettimeout"></a><a name="gettimeout"></a>IThreadPoolConfig::GetTimeout
+## <a name="ithreadpoolconfiggettimeout"></a><a name="gettimeout"></a> IThreadPoolConfig:: GetTimeout
 
-İş parçacığı havuzunun iş parçacığının kapanmasını bekleyeceği milisaniyecinsinden en fazla zamanı almak için bu yöntemi arayın.
+İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye olarak almak için bu yöntemi çağırın.
 
 ```
 STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
@@ -83,19 +83,19 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 ### <a name="parameters"></a>Parametreler
 
 *pdwMaxWait*<br/>
-[çıkış] Başarı da, iş parçacığı havuzunun iş parçacığının kapanmasını bekleyeceği milisaniye cinsinden en fazla süreyi alan değişkenin adresi.
+dışı Başarılı olan değişkenin, iş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye olarak alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada Bir hata HRESULT verir.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [IThreadPoolConfig::GetSize](#getsize).
+Bkz. [IThreadPoolConfig:: GetSize](#getsize).
 
-## <a name="ithreadpoolconfigsetsize"></a><a name="setsize"></a>IThreadPoolConfig::SetSize
+## <a name="ithreadpoolconfigsetsize"></a><a name="setsize"></a> IThreadPoolConfig:: SetSize
 
-Havuzdaki iş parçacığı sayısını ayarlamak için bu yöntemi arayın.
+Havuzdaki iş parçacığı sayısını ayarlamak için bu yöntemi çağırın.
 
 ```
 STDMETHOD(SetSize)int nNumThreads);
@@ -104,23 +104,23 @@ STDMETHOD(SetSize)int nNumThreads);
 ### <a name="parameters"></a>Parametreler
 
 *nNumThreads*<br/>
-Havuzda istenen iş parçacığı sayısı.
+Havuzdaki istenen iş parçacığı sayısı.
 
-*NNumThreads* negatif ise, mutlak değeri makinedeki işlemci sayısı ile çarpımır ve toplam iş parçacığı sayısını elde eder.
+*NNumThreads* negatifse, toplam iş parçacığı sayısını almak için, mutlak değeri makinedeki işlemci sayısıyla çarpılacak.
 
-*nNumThreads* sıfır ise, ATLS_DEFAULT_THREADSPERPROC makinedeki işlemci sayısı ile çarpımır ve toplam iş parçacığı sayısını elde edecektir.
+*NNumThreads* sıfırsa, ATLS_DEFAULT_THREADSPERPROC toplam iş parçacığı sayısını almak için makinedeki işlemci sayısıyla çarpılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada Bir hata HRESULT verir.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [IThreadPoolConfig::GetSize](#getsize).
+Bkz. [IThreadPoolConfig:: GetSize](#getsize).
 
-## <a name="ithreadpoolconfigsettimeout"></a><a name="settimeout"></a>IThreadPoolConfig::SetTimeout
+## <a name="ithreadpoolconfigsettimeout"></a><a name="settimeout"></a> IThreadPoolConfig:: SetTimeout
 
-İş parçacığı havuzunun iş parçacığının kapanmasını bekleyeceği milisaniye cinsinden maksimum süreyi ayarlamak için bu yöntemi arayın.
+İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye cinsinden ayarlamak için bu yöntemi çağırın.
 
 ```
 STDMETHOD(SetTimeout)(DWORD dwMaxWait);
@@ -129,17 +129,17 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 ### <a name="parameters"></a>Parametreler
 
 *dwMaxWait*<br/>
-İş parçacığı havuzunun iş parçacığının kapanmasını bekleyeceği milisaniye cinsinden istenen maksimum süre.
+İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleneceği milisaniye cinsinden istenen en uzun süre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada Bir hata HRESULT verir.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="example"></a>Örnek
 
-Bkz. [IThreadPoolConfig::GetSize](#getsize).
+Bkz. [IThreadPoolConfig:: GetSize](#getsize).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../atl/reference/atl-classes.md)<br/>
-[CThreadPool Sınıfı](../../atl/reference/cthreadpool-class.md)
+[CThreadPool sınıfı](../../atl/reference/cthreadpool-class.md)

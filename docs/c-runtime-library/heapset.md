@@ -25,21 +25,21 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 2a0aea37237f04939579eb059a42dd33771339ad
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5bf27ac8287e785b1c799565781842db54edee4d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351267"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837833"
 ---
 # <a name="_heapset"></a>_heapset
 
-Yığınları en az tutarlılık için denetler ve boş girişleri belirli bir değere ayarlar.
+Yığınlarını en düşük tutarlılık açısından denetler ve ücretsiz girdileri belirtilen bir değere ayarlar.
 
 > [!IMPORTANT]
-> Bu işlev geçersizdir. Visual Studio 2015'ten itibaren CRT'de kullanılamaz.
+> Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 int _heapset(
@@ -49,35 +49,35 @@ int _heapset(
 
 #### <a name="parameters"></a>Parametreler
 
-*fill*<br/>
-Karakteri doldurun.
+*doldurması*<br/>
+Karakteri doldur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_heapset`Malloc.h'de tanımlanan aşağıdaki sondalı bildirim sabitlerinden birini döndürür.
+`_heapset` Malloc. h içinde tanımlanan aşağıdaki tamsayı bildirimi sabitlerinden birini döndürür.
 
-|||
+|Değer|Açıklama|
 |-|-|
-| `_HEAPBADBEGIN`  | İlk üstbilgi bilgileri geçersiz veya bulunamadı.  |
-| `_HEAPBADNODE`  | Yığın hasarlı veya kötü düğüm bulundu.  |
-| `_HEAPEMPTY`  | Yığın başharfe bünyede değil.  |
+| `_HEAPBADBEGIN`  | İlk üstbilgi bilgisi geçersiz veya bulunamadı.  |
+| `_HEAPBADNODE`  | Yığın hasarlı veya hatalı düğüm bulundu.  |
+| `_HEAPEMPTY`  | Yığın başlatılmadı.  |
 | `_HEAPOK`  | Yığın tutarlı görünüyor.  |
 
-Buna ek olarak, bir `_heapset` hata `errno` `ENOSYS`oluşursa, ayarlar.
+Ayrıca, bir hata oluşursa, `_heapset` `errno` olarak ayarlanır `ENOSYS` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `_heapset` istemeden üzerine yazılmış boş bellek konumlarını veya düğümlerini gösterir.
+`_heapset`İşlevi, yanlışlıkla üzerine yazılmış boş bellek konumlarını veya düğümlerini gösterir.
 
-`_heapset`yığında en az tutarlılığı denetler ve sonra yığının boş girişlerinin `fill` her bir baytını değere ayarlar. Bu bilinen değer, yığının hangi bellek konumlarının boş düğümler içerdiğini ve serbest bırakılan belleğe istemeden yazılmış verileri içeren verileri gösterir. İşletim sistemi `_heapset`desteklemiyorsa (örneğin, Windows 98), işlev döndürür `_HEAPOK` ve `errno` . `ENOSYS`
+`_heapset` yığında en az tutarlılığı denetler ve sonra yığının boş girişlerinin her baytını `fill` değere ayarlar. Bu bilinen değer, yığında serbest düğüm ve yanlışlıkla serbest bırakılmış belleğe yazılan verileri içeren hangi bellek konumlarının olduğunu gösterir. İşletim sistemi desteklemiyorsa `_heapset` (örneğin, Windows 98), işlev öğesini döndürür `_HEAPOK` ve öğesini `errno` olarak ayarlar `ENOSYS` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |`_heapset`|\<malloc.h>|\<errno.h>|
 
-Daha fazla uyumluluk bilgisi için Giriş'te [Uyumluluk'a](../c-runtime-library/compatibility.md) bakın.
+Daha fazla uyumluluk bilgisi için bkz. karşılama 'da [Uyumluluk](../c-runtime-library/compatibility.md) .
 
 ## <a name="example"></a>Örnek
 
@@ -123,7 +123,7 @@ OK - heap is fine
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../c-runtime-library/heapadd.md)<br/>
 [_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
 [_heapmin](../c-runtime-library/reference/heapmin.md)<br/>

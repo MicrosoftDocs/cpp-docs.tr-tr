@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-ms.openlocfilehash: 865fac1f1452e30b64a0ada9b115186916ff491c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b086638d02afb929d18daad76716a12704585108
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212351"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835902"
 ---
 # <a name="extreme_value_distribution-class"></a>extreme_value_distribution Sınıfı
 
@@ -81,10 +81,8 @@ Rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<random>](../
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiç sağlanmazsa, aşırı değer dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[extreme_value_distribution](#extreme_value_distribution)|`extreme_value_distribution::a`|`extreme_value_distribution::param`|
-|`extreme_value_distribution::operator()`|`extreme_value_distribution::b`|[param_type](#param_type)|
+[extreme_value_distribution](#extreme_value_distribution)\
+[param_type](#param_type)
 
 Özelliği, ve `a()` `b()` depolanan dağıtım parametreleri ve için ilgili değerlerini döndürür `a` `b` .
 
@@ -181,7 +179,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="extreme_value_distributionextreme_value_distribution"></a><a name="extreme_value_distribution"></a>extreme_value_distribution:: extreme_value_distribution
+## <a name="extreme_value_distributionextreme_value_distribution"></a><a name="extreme_value_distribution"></a> extreme_value_distribution:: extreme_value_distribution
 
 Dağıtımı oluşturur.
 
@@ -209,7 +207,7 @@ explicit extreme_value_distribution(const param_type& parm);
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="extreme_value_distributionparam_type"></a><a name="param_type"></a>extreme_value_distribution::p aram_type
+## <a name="extreme_value_distributionparam_type"></a><a name="param_type"></a> extreme_value_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 

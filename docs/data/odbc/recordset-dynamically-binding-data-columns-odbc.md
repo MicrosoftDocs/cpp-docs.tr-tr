@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: f00fb92726cc37fe2bb0e95dc36e5fc1b6df201d
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 8bc9ba8a143234bec7927c9578a69a95a511bb9f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403874"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837794"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)
 
@@ -28,7 +28,7 @@ Kayıt kümeleri tasarım zamanında belirttiğiniz bağlama tablosu sütunları
 > [!NOTE]
 > Bu konu, `CRecordset` toplu satır yakalamanın uygulanmadığı, öğesinden türetilmiş nesneler için geçerlidir. Toplu satır getirme kullanıyorsanız, genel olarak açıklanan tekniklerin kullanılması önerilmez. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-## <a name="when-you-might-bind-columns-dynamically"></a><a name="_core_when_you_might_bind_columns_dynamically"></a>Sütunları dinamik olarak bağladığınızda
+## <a name="when-you-might-bind-columns-dynamically"></a><a name="_core_when_you_might_bind_columns_dynamically"></a> Sütunları dinamik olarak bağladığınızda
 
 > [!NOTE]
 > MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
@@ -47,13 +47,13 @@ Kayıt kümeniz, tasarım zamanında bildiğimiz sütunların veri üyelerini ha
 
 Bu konu, bırakılan tablolar veya sütunlar gibi diğer dinamik bağlama durumlarını kapsamaz. Bu gibi durumlarda, ODBC API çağrılarını doğrudan kullanmanız gerekir. Daha fazla bilgi için bkz. [ODBC Programcı başvurusu](/sql/odbc/reference/odbc-programmer-s-reference).
 
-## <a name="how-to-bind-columns-dynamically"></a><a name="_core_how_to_bind_columns_dynamically"></a>Sütunları dinamik olarak bağlama
+## <a name="how-to-bind-columns-dynamically"></a><a name="_core_how_to_bind_columns_dynamically"></a> Sütunları dinamik olarak bağlama
 
 Sütunları dinamik olarak bağlamak için ek sütunların adlarını bilmeniz (veya belirleyebilmelisiniz) gerekir. Ayrıca ek alan veri üyeleri için depolama alanı ayırmanız, adlarını ve türlerini belirtmeniz ve eklediğiniz sütun sayısını belirtmeniz gerekir.
 
 Aşağıdaki tartışmada iki farklı kayıt kümesi bahsetmektedir. Birincisi, hedef tablodan kayıtları seçen ana kayıt kümesidir. İkincisi, hedef tablonuzun sütunları hakkında bilgi almak için kullanılan özel bir sütun kayıt kümesidir.
 
-### <a name="general-process"></a><a name="_core_the_general_process"></a>Genel Işlem
+### <a name="general-process"></a><a name="_core_the_general_process"></a> Genel Işlem
 
 En genel düzeyde şu adımları izleyin:
 
@@ -69,7 +69,7 @@ En genel düzeyde şu adımları izleyin:
 
    Kayıt kümesi kayıtları seçer ve hem statik sütunları (kayıt kümesi alan veri üyelerine eşlenmiş) hem de dinamik sütunları (tahsis ettiğiniz ek depolamaya eşlenmiş) bağlamak için kayıt alanı değişimi (RFX) kullanır.
 
-### <a name="adding-the-columns"></a><a name="_core_adding_the_columns"></a>Sütunları ekleme
+### <a name="adding-the-columns"></a><a name="_core_adding_the_columns"></a> Sütunları ekleme
 
 Çalışma zamanında eklenen sütunları dinamik olarak bağlama, aşağıdaki adımları gerektirir:
 
@@ -88,18 +88,18 @@ En genel düzeyde şu adımları izleyin:
 
    Tek yaklaşımda, ana kayıt kümenizin, `DoFieldExchange` Yeni sütunlarınızın listesinden geçen ve listedeki her bir sütun için uygun RFX işlevini çağıran işlevinizin işlevine döngü eklemesi gerekir. Her RFX çağrısında, sütun adı listesinden bir sütun adı ve sonuç değeri listesinin karşılık gelen üyesinde bir depolama konumu geçirin.
 
-### <a name="lists-of-columns"></a><a name="_core_lists_of_columns"></a>Sütun listeleri
+### <a name="lists-of-columns"></a><a name="_core_lists_of_columns"></a> Sütun listeleri
 
 Birlikte çalışmanız gereken dört liste aşağıdaki tabloda gösterilmiştir.
 
-|||
-|-|-|
-|**Geçerli tablo sütunları**| (Çizimde liste 1) Veri kaynağındaki tabloda bulunan sütunların bir listesi. Bu liste, kayıt kümenizde Şu anda bağlı olan sütunların listesiyle eşleşmeyebilir.|
-|**Bağlantılı-kayıt kümesi sütunları**| (Çizimde liste 2) Kayıt kümenizde bağlantılı olan sütunların listesi. Bu sütunlarda, işlevinizde RFX deyimleri zaten var `DoFieldExchange` .|
-|**----Bağlama sütunları**| (Çizimde liste 3) Tablodaki sütunların listesi, ancak kayıt kümenizde değil. Bunlar dinamik olarak bağlamak istediğiniz sütunlardır.|
-|**Dinamik-sütun-değerleri**| (Çizimde 4. liste) Dinamik olarak bağlanan sütunlardan alınan değerler için depolamayı içeren bir liste. Bu listenin öğeleri-----arasında--arasında-tek-bağlanacak sütunlara karşılık gelir.|
+| Liste | Açıklama |
+|--|--|
+| **Geçerli tablo sütunları** | (Çizimde liste 1) Veri kaynağındaki tabloda bulunan sütunların bir listesi. Bu liste, kayıt kümenizde Şu anda bağlı olan sütunların listesiyle eşleşmeyebilir. |
+| **Bağlantılı-kayıt kümesi sütunları** | (Çizimde liste 2) Kayıt kümenizde bağlantılı olan sütunların listesi. Bu sütunlarda, işlevinizde RFX deyimleri zaten var `DoFieldExchange` . |
+| **----Bağlama sütunları** | (Çizimde liste 3) Tablodaki sütunların listesi, ancak kayıt kümenizde değil. Bunlar dinamik olarak bağlamak istediğiniz sütunlardır. |
+| **Dinamik-sütun-değerleri** | (Çizimde 4. liste) Dinamik olarak bağlanan sütunlardan alınan değerler için depolamayı içeren bir liste. Bu listenin öğeleri-----arasında--arasında-tek-bağlanacak sütunlara karşılık gelir. |
 
-### <a name="building-your-lists"></a><a name="_core_building_your_lists"></a>Listelerinizi oluşturma
+### <a name="building-your-lists"></a><a name="_core_building_your_lists"></a> Listelerinizi oluşturma
 
 Göz önünde bulundurmanız gereken genel bir strateji ile ayrıntılara erişebilirsiniz. Bu konunun geri kalanında bulunan yordamlar, [sütun listelerinde](#_core_lists_of_columns)gösterilen listelerin nasıl oluşturulacağını gösterir. Yordamlar şu işlemleri yönlendirecektir:
 
@@ -109,7 +109,7 @@ Göz önünde bulundurmanız gereken genel bir strateji ile ayrıntılara erişe
 
 - [Yeni sütunlar IÇIN RFX çağrılarını dinamik olarak ekleme](#_core_adding_rfx_calls_to_bind_the_columns).
 
-### <a name="determining-which-table-columns-are-not-in-your-recordset"></a><a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a>Hangi tablo sütunlarının kayıt kümenizde olmadığını belirleme
+### <a name="determining-which-table-columns-are-not-in-your-recordset"></a><a name="_core_determining_which_table_columns_are_not_in_your_recordset"></a> Hangi tablo sütunlarının kayıt kümenizde olmadığını belirleme
 
 Ana kayıt kümenizde zaten bağlantılı olan sütunların bir listesini içeren bir liste (örneğin, bağlantılı kayıt kümesi sütunları) oluşturun. Ardından, veri kaynağındaki tabloda olmayan ancak ana kayıt kümenizde bulunmayan sütun adlarını içeren bir liste oluşturun (geçerli tablo sütunlarından ve bağlı-kayıt kümesi sütunlarından türetilmiş).
 
@@ -131,7 +131,7 @@ Ana kayıt kümenizde zaten bağlantılı olan sütunların bir listesini içere
 
    Bu listenin öğeleri yeni kayıt kümesi alanı veri üyelerinin rolünü oynar. Bunlar, dinamik sütunların bağlandığı depolama konumlarıdır. Listelerin açıklamaları için bkz. [sütun listeleri](#_core_lists_of_columns).
 
-### <a name="providing-storage-for-the-new-columns"></a><a name="_core_providing_storage_for_the_new_columns"></a>Yeni sütunlar için depolama sağlama
+### <a name="providing-storage-for-the-new-columns"></a><a name="_core_providing_storage_for_the_new_columns"></a> Yeni sütunlar için depolama sağlama
 
 Sonra, dinamik olarak bağlanacak sütunlar için depolama konumları ayarlayın. Fikir, her sütunun değerini depolamak için bir liste öğesi sağlamaktır. Bu depolama konumları, normalde bağlantılı sütunları depolayan kayıt kümesi üye değişkenlerini paralel olarak alır.
 
@@ -148,7 +148,7 @@ Yukarıdaki yordamların sonucu iki ana listedir: sütunlar ve geçerli kayıt i
 > [!TIP]
 > Yeni sütunlar aynı veri türünde değilse, sütun listesinde her bir karşılık gelen öğenin türünü bir şekilde tanımlayan öğeleri içeren ek bir paralel liste isteyebilirsiniz. (İsterseniz AFX_RFX_BOOL, AFX_RFX_BYTE vb. değerlerini kullanabilirsiniz. Bu sabitler, AFXDB 'de tanımlanmıştır. H.) sütun veri türlerini nasıl temsil ettiğini temel alan bir liste türü seçin.
 
-### <a name="adding-rfx-calls-to-bind-the-columns"></a><a name="_core_adding_rfx_calls_to_bind_the_columns"></a>Sütunları bağlamak için RFX çağrıları ekleme
+### <a name="adding-rfx-calls-to-bind-the-columns"></a><a name="_core_adding_rfx_calls_to_bind_the_columns"></a> Sütunları bağlamak için RFX çağrıları ekleme
 
 Son olarak, işlevinizdeki yeni sütunlara yönelik RFX çağrılarını yerleştirerek dinamik bağlamanın gerçekleşmesi için düzenleme yapın `DoFieldExchange` .
 

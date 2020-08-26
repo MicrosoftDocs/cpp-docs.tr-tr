@@ -1,23 +1,23 @@
 ---
-title: Aralık (C++ com özniteliği)
+title: Aralık (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.range
 helpviewer_keywords:
 - range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-ms.openlocfilehash: 380f7c9e15a3682b486217c842f00c944251e631
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8ed0ba2c53992dd19d1c4491f8085e955146224c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214623"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839484"
 ---
 # <a name="range-c"></a>aralık (C++)
 
 Değerleri çalışma zamanında ayarlanmış olan bağımsız değişkenler veya alanlar için izin verilen değerler aralığını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ range(low, high) ]
@@ -53,20 +53,18 @@ __interface ICustom {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Arabirim yöntemi, arabirim parametresi|
+|**Şunlara uygulanır**|Arabirim yöntemi, arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)<br/>
-[Veri Üyesi Öznitelikleri](data-member-attributes.md)
+[Yöntem öznitelikleri](method-attributes.md)<br/>
+[Parametre öznitelikleri](parameter-attributes.md)<br/>
+[Veri üyesi öznitelikleri](data-member-attributes.md)

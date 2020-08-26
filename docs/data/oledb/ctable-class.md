@@ -13,18 +13,18 @@ helpviewer_keywords:
 - CTable class
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-ms.openlocfilehash: 47c9899889bbbf9b09300779691085786db0e088
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a967ef8fa2832afd56442ae4f988ba080d0b2872
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211152"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845646"
 ---
 # <a name="ctable-class"></a>CTable Sınıfı
 
 Basit bir satır kümesine (parametresi olmayan) doğrudan erişmek için bir yol sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class TAccessor = CNoAccessor,
@@ -49,19 +49,19 @@ Satır kümesi sınıfı.
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[Açın](#open)|Tabloyu açar.|
+|[Aç](#open)|Tabloyu açar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bir satır kümesine erişmek için bir komutun nasıl yürütüleceği hakkında bilgi için bkz. [CCommand](../../data/oledb/ccommand-class.md) .
 
-## <a name="ctableopen"></a><a name="open"></a>CTable:: Open
+## <a name="ctableopen"></a><a name="open"></a> CTable:: Open
 
 Tabloyu açar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Open(const CSession& session,
@@ -92,7 +92,7 @@ HRESULT Open(const CSession& session,
 'ndaki Açılacak tablonun adı, ANSI dizesi olarak geçirilir.
 
 *DBID*<br/>
-'ndaki Açılacak tablonun `DBID`.
+'ndaki `DBID` Açılacak tablo.
 
 *pPropSet*<br/>
 'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın. Varsayılan NULL değeri, özellik olmadığını belirtir.
@@ -111,4 +111,4 @@ Daha fazla ayrıntı için *OLE DB Programcı başvurusunda* [IOpenRowset:: OPEN
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

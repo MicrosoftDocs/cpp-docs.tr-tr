@@ -31,18 +31,18 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: a52d7443ab335e8546a4bcce03cf68c3b1d60e3d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 24cc621e522ed1939fe3127d97e8d54b75fa1618
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212047"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88838301"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 
-`DBPROPIDSET` yapısından devralır ve [Addpropertyıd](../../data/oledb/cdbpropidset-addpropertyid.md) erişim yöntemi ile birlikte anahtar alanlarını Başlatan bir Oluşturucu ekler.
+`DBPROPIDSET`Yapıdan devralır ve [Addpropertyıd](../../data/oledb/cdbpropidset-addpropertyid.md) erişim yöntemi ile birlikte Key alanlarını Başlatan bir Oluşturucu ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBPropIDSet : public tagDBPROPIDSET
@@ -56,7 +56,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[Addpropertyıd](#addpropertyid)|Özellik KIMLIĞI kümesine bir özellik ekler.|
 |[CDBPropIDSet](#cdbpropidset)|Oluşturucu.|
@@ -64,19 +64,19 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### <a name="operators"></a>İşleçler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[işleç =](#op_equal)|Bir özellik KIMLIĞI kümesinin içeriğini diğerine atar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-OLE DB tüketicileri, tüketicinin Özellik bilgilerini almak istediği özellik kimliklerinin bir dizisini iletmek için `DBPROPIDSET` yapılarını kullanır. Tek bir [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısında tanımlanan özellikler bir özellik kümesine aittir.
+OLE DB tüketicileri `DBPROPIDSET` , tüketicinin Özellik bilgilerini almak istediği Özellik kimlikleri dizisini geçirmek için yapıları kullanır. Tek bir [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısında tanımlanan özellikler bir özellik kümesine aittir.
 
-## <a name="cdbpropidsetaddpropertyid"></a><a name="addpropertyid"></a>CDBPropIDSet:: Addpropertyıd
+## <a name="cdbpropidsetaddpropertyid"></a><a name="addpropertyid"></a> CDBPropIDSet:: Addpropertyıd
 
 Özellik KIMLIĞI kümesine özellik KIMLIĞI ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 bool AddPropertyID(DBPROPID propid) throw();
@@ -87,11 +87,11 @@ bool AddPropertyID(DBPROPID propid) throw();
 *PROPID*<br/>
 'ndaki Özellik KIMLIĞI kümesine eklenecek özellik KIMLIĞI.
 
-## <a name="cdbpropidsetcdbpropidset"></a><a name="cdbpropidset"></a>CDBPropIDSet:: CDBPropIDSet
+## <a name="cdbpropidsetcdbpropidset"></a><a name="cdbpropidset"></a> CDBPropIDSet:: CDBPropIDSet
 
-Oluşturucu. [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısının `rgProperties`, `cProperties`ve (isteğe bağlı) `guidPropertySet` alanlarını başlatır.
+Oluşturucu. `rgProperties` `cProperties` DBPROPIDSET yapısının, ve (isteğe bağlı) `guidPropertySet` alanlarını başlatır. [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85))
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 CDBPropIDSet(const GUID& guid);
@@ -103,17 +103,17 @@ CDBPropIDSet();
 
 #### <a name="parameters"></a>Parametreler
 
-*'ini*<br/>
-'ndaki `guidPropertySet` alanı başlatmak için kullanılan bir GUID.
+*guid*<br/>
+'ndaki Alanı başlatmak için kullanılan bir GUID `guidPropertySet` .
 
 *propidset*<br/>
-'ndaki Kopya oluşturma için başka bir `CDBPropIDSet` nesnesi.
+'ndaki `CDBPropIDSet` Kopya oluşturma için başka bir nesne.
 
-## <a name="cdbpropidsetsetguid"></a><a name="setguid"></a>CDBPropIDSet:: Setguıd
+## <a name="cdbpropidsetsetguid"></a><a name="setguid"></a> CDBPropIDSet:: Setguıd
 
-`DBPROPIDSET` yapısındaki GUID alanını ayarlar.
+Yapıda GUID alanını ayarlar `DBPROPIDSET` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 void SetGUID(const GUID& guid) throw();
@@ -121,18 +121,18 @@ void SetGUID(const GUID& guid) throw();
 
 #### <a name="parameters"></a>Parametreler
 
-*'ini*<br/>
-'ndaki [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısının `guidPropertySet` alanını ayarlamak IÇIN kullanılan GUID.
+*guid*<br/>
+'ndaki `guidPropertySet` [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85)) yapısının alanını ayarlamak için kullanılan GUID.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu alan, [Oluşturucu](../../data/oledb/cdbpropidset-cdbpropidset.md) tarafından da ayarlanabilir. Bu sınıf için varsayılan oluşturucuyu kullanıyorsanız bu işlevi çağırın.
 
-## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a>CDBPropIDSet:: operator =
+## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a> CDBPropIDSet:: operator =
 
 Bir özellik KIMLIĞI kümesinin içeriğini başka bir ID özellik kümesine atar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
@@ -141,4 +141,4 @@ CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

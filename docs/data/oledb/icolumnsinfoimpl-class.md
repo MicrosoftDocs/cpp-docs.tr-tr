@@ -26,18 +26,18 @@ helpviewer_keywords:
 - GetColumnInfo method
 - MapColumnIDs method
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
-ms.openlocfilehash: 39aa3f5e89746d48057e0e8efe6fe62b1c2d8921
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 05e902e09c51012bd456751fb701ce2508a2fc16
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210879"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845607"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl Sınıfı
 
 [IColumnsInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -48,8 +48,8 @@ class ATL_NO_VTABLE IColumnsInfoImpl :
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `IColumnsInfoImpl`türetilir.
+*T*<br/>
+Sınıfınız, öğesinden türetilir `IColumnsInfoImpl` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -59,20 +59,20 @@ Sınıfınız `IColumnsInfoImpl`türetilir.
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|Çoğu tüketiciden gereken sütun meta verilerini döndürür.|
 |[MapColumnIDs](#mapcolumnids)|Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayılarını dizisini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Satır kümelerinde ve komutlarda zorunlu arabirim. Sağlayıcınızın `IColumnsInfo` uygulamasının davranışını değiştirmek için sağlayıcı sütun haritasını değiştirmeniz gerekir.
+Satır kümelerinde ve komutlarda zorunlu arabirim. Sağlayıcınızın uygulamasının davranışını değiştirmek için `IColumnsInfo` sağlayıcı sütun haritasını değiştirmeniz gerekir.
 
-## <a name="icolumnsinfoimplgetcolumninfo"></a><a name="getcolumninfo"></a>IColumnsInfoImpl:: GetColumnInfo
+## <a name="icolumnsinfoimplgetcolumninfo"></a><a name="getcolumninfo"></a> IColumnsInfoImpl:: GetColumnInfo
 
 Çoğu tüketiciden gereken sütun meta verilerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
@@ -84,11 +84,11 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 
 *OLE DB Programcı başvurusunda* [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) bölümüne bakın.
 
-## <a name="icolumnsinfoimplmapcolumnids"></a><a name="mapcolumnids"></a>IColumnsInfoImpl:: MapColumnIDs
+## <a name="icolumnsinfoimplmapcolumnids"></a><a name="mapcolumnids"></a> IColumnsInfoImpl:: MapColumnIDs
 
 Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayılarını dizisini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
@@ -103,4 +103,4 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

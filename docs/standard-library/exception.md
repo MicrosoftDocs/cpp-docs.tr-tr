@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - exception header
 ms.assetid: 28900768-5dd7-4834-b907-5e37ab3407db
-ms.openlocfilehash: 1627ba411fd201c84daee534ea134be2dba73376
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1533e8238b40f6ca5dc6faaef35a65db9020defd
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193659"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88835975"
 ---
 # <a name="ltexceptiongt"></a>&lt;duruma&gt;
 
@@ -27,7 +27,7 @@ ms.locfileid: "87193659"
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)|Bir özel duruma bir işaretçi tanımlayan tür.|
 |[terminate_handler](../standard-library/exception-typedefs.md#terminate_handler)|Olarak kullanılmak üzere uygun bir işleve yönelik bir işaretçi tanımlayan tür `terminate_handler` .|
@@ -35,7 +35,7 @@ ms.locfileid: "87193659"
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[current_exception](../standard-library/exception-functions.md#current_exception)|Geçerli özel durum için bir işaretçi alır.|
 |[get_terminate](../standard-library/exception-functions.md#get_terminate)|Geçerli işlevi alır `terminate_handler` .|
@@ -52,7 +52,7 @@ ms.locfileid: "87193659"
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[bad_exception sınıfı](../standard-library/bad-exception-class.md)|Sınıfı, bir öğesinden oluşturulabilecek bir özel durumu açıklar `unexpected_handler` .|
 |[özel durum sınıfı](../standard-library/exception-class.md)|Sınıfı, belirli ifadeler ve C++ standart kitaplığı tarafından oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.|

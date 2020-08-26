@@ -2,12 +2,12 @@
 title: /Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
-ms.openlocfilehash: ea3e430dec61d35b8540792773b5519e64cedaef
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: 3a154bdf50e951ee932173cdb65f9e1514011245
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373794"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839419"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)
 
@@ -46,4 +46,4 @@ Paralelleştirilmiş döngüler için, bir neden kodu ile birlikte paralelleşti
 [/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
 [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
-[Visual Studio 'da yerel kod vektörleştirme](https://docs.microsoft.com/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)
+[Visual Studio 'da yerel kod vektörleştirme](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

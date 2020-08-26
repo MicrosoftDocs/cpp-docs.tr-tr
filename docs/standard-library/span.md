@@ -5,12 +5,12 @@ f1_keywords:
 - <span>
 helpviewer_keywords:
 - span header
-ms.openlocfilehash: 27f27acfa84a3ccc42586593747e4657146cbe39
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 7d21023c90472e5c2e1b28d9fa85e517da4a21ae
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813541"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846192"
 ---
 # <a name="ltspangt"></a>&lt;kapsamı&gt;
 
@@ -56,27 +56,27 @@ int main()
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|:-|
 |[kapsamı](span-class.md)| Bitişik nesne dizisi üzerinde bir görünüm sağlar. |
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|:-|
 |[işleç =](span-class.md#op_eq)| Span ataması |
 |[işlecinde\[\]](span-class.md#op_at)| Öğe erişimi |
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|:-|
 | [as_bytes](span-functions.md#as_bytes)| Yayılma alanının temeldeki salt okunan baytlarını alın. |
 | [as_writable_bytes](span-functions.md#as_writable_bytes) | Yayılma alanının temelindeki baytları alın. |
 
 ### <a name="constants"></a>Sabitler
 
-|||
+|Ad|Açıklama|
 |-|:-|
 | **dynamic_extent** | Yayılma boyutunun derleme zamanı yerine çalışma zamanında belirlendiğini gösterir. Yayılma alanındaki öğe sayısı derleme zamanında bilindiğinde, `Extent` şablon parametresi olarak belirtilir. Sayı, çalışma zamanına kadar bilinmiyorsa, `dynamic_extent` bunun yerine belirtin. |
 

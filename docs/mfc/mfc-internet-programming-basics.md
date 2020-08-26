@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: c9825cdcb5cb0963a4e0d3acdeb36dfee54b70fc
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: b41ce97a9b5efe6ad84c543f5c49dd091557b3a8
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405032"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846322"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 
@@ -42,11 +42,11 @@ MFC, Internet programlamayı destekleyen sınıflar sağlar. ActiveX denetimleri
 
 - [Göreve göre Internet bilgileri](internet-information-by-task.md)
 
-- [Internet'te Etkin Teknoloji](active-technology-on-the-internet.md)
+- [Internet 'te etkin teknoloji](active-technology-on-the-internet.md)
 
 - [Winınet temelleri](wininet-basics.md)
 
-- [HTML Temelleri](html-basics.md)
+- [HTML temelleri](html-basics.md)
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
@@ -56,24 +56,24 @@ MFC, Internet programlamayı destekleyen sınıflar sağlar. ActiveX denetimleri
 
 - [Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)
 
-- [MFC Internet Programlama Görevleri](mfc-internet-programming-tasks.md)
+- [MFC Internet programlama görevleri](mfc-internet-programming-tasks.md)
 
-- [Uygulama Tasarımı Seçimleri](application-design-choices.md)
+- [Uygulama tasarımı seçimleri](application-design-choices.md)
 
-- [MFC Uygulamaları Yazma](writing-mfc-applications.md)
+- [MFC uygulamaları yazma](writing-mfc-applications.md)
 
-- [Internet Uygulamalarını Test Etme](testing-internet-applications.md)
+- [Internet uygulamalarını test etme](testing-internet-applications.md)
 
 - [Internet güvenliği](internet-security-cpp.md)
 
-- [DHTML Denetimleri İçin ATL Desteği](../atl/atl-support-for-dhtml-controls.md)
+- [DHTML denetimleri için ATL desteği](../atl/atl-support-for-dhtml-controls.md)
 
-## <a name="websites-for-more-information"></a><a name="_core_web_sites_for_more_information"></a>Daha fazla bilgi için Web siteleri
+## <a name="websites-for-more-information"></a><a name="_core_web_sites_for_more_information"></a> Daha fazla bilgi için Web siteleri
 
-Microsoft Internet teknolojisi hakkında daha fazla bilgi için bkz. [Microsoft docs](https://docs.microsoft.com/).
+Microsoft Internet teknolojisi hakkında daha fazla bilgi için bkz. [Ağ ve Internet](/windows/win32/networking).
 
 [World Wide Web Konsorsiyumu (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) , HTML, http, CGI ve diğer World Wide Web teknolojileri için belirtimleri yayımlar.
 
-## <a name="more-internet-help"></a><a name="_core_more_internet_help"></a>Daha fazla internet yardımı
+## <a name="more-internet-help"></a><a name="_core_more_internet_help"></a> Daha fazla internet yardımı
 
 Windows SDK OLE bölümü OLE programlama hakkında ek bilgiler içerir. Bu bilgiler, MFC sınıfları yerine doğrudan Win32 WinInet işlevlerini kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca Internet teknolojileriyle ilgili genel bilgiler içerir.

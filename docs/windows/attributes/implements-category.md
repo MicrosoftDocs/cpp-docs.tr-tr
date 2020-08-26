@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: 067a3a183820b09112217647e20d12b592540613
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd9a4de8834bc22368393e9ea4639884785af0f2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224428"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846127"
 ---
 # <a name="implements_category"></a>implements_category
 
@@ -53,14 +53,12 @@ class CMyClass {};
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Yes|
-|**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass` , `progid` veya`vi_progid`|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass` , `progid` veya `vi_progid`|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

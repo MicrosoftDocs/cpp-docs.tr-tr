@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: 1ddef32c1ef2d3eb83c8a8a560914dc1f0ec3d1d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 37b4661cf14fe4302d50557472ce03c120eb2741
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220918"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837934"
 ---
 # <a name="gamma_distribution-class"></a>gamma_distribution Sınıfı
 
@@ -80,10 +80,8 @@ Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<ra
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, gama dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[gamma_distribution](#gamma_distribution)|`gamma_distribution::alpha`|`gamma_distribution::param`|
-|`gamma_distribution::operator()`|`gamma_distribution::beta`|[param_type](#param_type)|
+[gamma_distribution](#gamma_distribution)\
+[param_type](#param_type)
 
 Özelliği, `alpha()` `beta()` saklı dağıtım parametreleri *Alpha* ve *Beta*için ilgili değerlerini işlevler ve döndürür.
 
@@ -188,7 +186,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="gamma_distributiongamma_distribution"></a><a name="gamma_distribution"></a>gamma_distribution:: gamma_distribution
+## <a name="gamma_distributiongamma_distribution"></a><a name="gamma_distribution"></a> gamma_distribution:: gamma_distribution
 
 Dağıtımı oluşturur.
 
@@ -210,13 +208,13 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < alpha` '`0.0 < beta`
+**Önkoşul:** `0.0 < alpha` ' `0.0 < beta`
 
 İlk Oluşturucu, saklı değeri `alpha` *Alpha* değerini tutan ve depolanan `beta` değeri *Beta*değeri olan bir nesne oluşturur.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="gamma_distributionparam_type"></a><a name="param_type"></a>gamma_distribution::p aram_type
+## <a name="gamma_distributionparam_type"></a><a name="param_type"></a> gamma_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 
@@ -245,7 +243,7 @@ struct param_type {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < alpha` '`0.0 < beta`
+**Önkoşul:** `0.0 < alpha` ' `0.0 < beta`
 
 Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 

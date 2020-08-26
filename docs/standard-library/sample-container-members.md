@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - container classes
 ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
-ms.openlocfilehash: 21d3660661e3987d1b9477bb6298373033946c06
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea30810177d936248f836e7e4462739d8b5f393a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228121"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846270"
 ---
 # <a name="sample-container-members"></a>Örnek Kapsayıcı Üyeleri
 
@@ -20,7 +20,7 @@ ms.locfileid: "87228121"
 
 ## <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[const_iterator](../standard-library/container-class-const-iterator.md)|Denetlenen sıra için bir sabit Yineleyici işlevi görebilecek bir nesne tanımlar.|
 |[const_reference](../standard-library/container-class-const-reference.md)|Denetlenen dizinin bir öğesine sabit başvuru olarak görev yapabilecek bir nesne açıklar.|
@@ -34,7 +34,7 @@ ms.locfileid: "87228121"
 
 ## <a name="member-functions"></a>Üye İşlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[başladı](../standard-library/container-class-begin.md)|Dizinin ilk öğesini işaret eden bir yineleyici döndürür (veya bir boş dizinin sonunun ötesinde).|
 |[lediğiniz](../standard-library/container-class-clear.md)|Çağrı [silme](../standard-library/container-class-erase.md)( [Başlangıç](../standard-library/container-class-begin.md), [bitiş](../standard-library/container-class-end.md)).|

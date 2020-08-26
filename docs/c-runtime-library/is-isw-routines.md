@@ -19,25 +19,37 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 8292f04fb8771b8270b6f8e2be3ca2f044f6c9b7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 632bd371f8a6da4b57eeb1ce88e2a37eb6923355
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189785"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839393"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 
-|||
-|-|-|
-|[isalnum, iswalnum, _isalnum_l, _iswalnum_l](../c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md)|[isgraph, iswgraph, _isgraph_l, _iswgraph_l](../c-runtime-library/reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md)|
-|[isalpha, iswalpha, _isalpha_l, _iswalpha_l](../c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md)|[isleadbyte, _isleadbyte_l](../c-runtime-library/reference/isleadbyte-isleadbyte-l.md)|
-|[isascii, __isascii, iswascii](../c-runtime-library/reference/isascii-isascii-iswascii.md)|[islower, iswlower, _islower_l, _iswlower_l](../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md)|
-|[isblank, iswblank, _isblank_l, _iswblank_l](../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)|[isprint, iswprint, _isprint_l, _iswprint_l](../c-runtime-library/reference/isprint-iswprint-isprint-l-iswprint-l.md)|
-|[iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l](../c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)|[ispunct, iswpunct, _ispunct_l, _iswpunct_l](../c-runtime-library/reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md)|
-|[SCC, SCC, __iscsym, \_ _iswcsym, \_ _iscsymf, \_ _iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l](../c-runtime-library/reference/iscsym-functions.md)|[isspace, iswspace, _isspace_l, _iswspace_l](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)|
-|[_isctype, iswctype, _isctype_l, _iswctype_l](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|[isupper, _isupper_l, iswupper, _iswupper_l](../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md)|
-|[isdigit, iswdigit, _isdigit_l, _iswdigit_l](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)|[isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|
+:::row:::
+   :::column span="":::
+      [isalnum, iswalnum, _isalnum_l _iswalnum_l](../c-runtime-library/reference/isalnum-iswalnum-isalnum-l-iswalnum-l.md)\
+      [IAlpha, iswalpha, _isalpha_l _iswalpha_l](../c-runtime-library/reference/isalpha-iswalpha-isalpha-l-iswalpha-l.md)\
+      [isascıı, __isascii, iswascıı](../c-runtime-library/reference/isascii-isascii-iswascii.md)\
+      [ıboşsa, ıswblank, _isblank_l _iswblank_l](../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)\
+      [SCC, iswcnu, _iscntrl_l _iswcntrl_l](../c-runtime-library/reference/iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)\
+      [SCC, SCC, __iscsym, \_ _iswcsym, \_ _iscsymf, \_ _iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l](../c-runtime-library/reference/iscsym-functions.md)\
+      [_isctype, ıswctype, _isctype_l, _iswctype_l](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)\
+      [isdigit, iswdigit, _isdigit_l, _iswdigit_l](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)
+   :::column-end:::
+   :::column span="":::
+      [isgraf, iswgraf, _isgraph_l _iswgraph_l](../c-runtime-library/reference/isgraph-iswgraph-isgraph-l-iswgraph-l.md)\
+      [ıleadbyte, _isleadbyte_l](../c-runtime-library/reference/isleadbyte-isleadbyte-l.md)\
+      [ılower, ıswlower, _islower_l _iswlower_l](../c-runtime-library/reference/islower-iswlower-islower-l-iswlower-l.md)\
+      [isprınt, iswprınt, _isprint_l _iswprint_l](../c-runtime-library/reference/isprint-iswprint-isprint-l-iswprint-l.md)\
+      [ispunct, ıswpunct, _ispunct_l _iswpunct_l](../c-runtime-library/reference/ispunct-iswpunct-ispunct-l-iswpunct-l.md)\
+      [ıspace, ıswspace, _isspace_l _iswspace_l](../c-runtime-library/reference/isspace-iswspace-isspace-l-iswspace-l.md)\
+      [ıupper, _isupper_l, ıswupper, _iswupper_l](../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md)\
+      [isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -105,7 +117,7 @@ Onaltılık basamak (A-F, A-f veya 0-9).
 `iswalpha` veya `iswdigit`.
 
 `iswalpha`<br/>
-`iswcntrl`,, `iswdigit` `iswpunct` , Veya hiçbiri sıfır dışında olmayan, uygulama tanımlı bir küme olan herhangi bir geniş karakter `iswspace` . `iswalpha`yalnızca `iswupper` veya sıfır dışında bir geniş karakter için sıfır dışında bir değer döndürür `iswlower` .
+`iswcntrl`,, `iswdigit` `iswpunct` , Veya hiçbiri sıfır dışında olmayan, uygulama tanımlı bir küme olan herhangi bir geniş karakter `iswspace` . `iswalpha` yalnızca `iswupper` veya sıfır dışında bir geniş karakter için sıfır dışında bir değer döndürür `iswlower` .
 
 `iswascii`<br/>
 ASCII karakterinin geniş karakterli temsili (0x0000-0x007F).
@@ -150,7 +162,7 @@ Ondalık basamaklı bir karaktere karşılık gelen geniş karakter.
 Boşluk geniş karakteri (L ' ') dışında yazdırılabilir geniş karakter.
 
 `iswlower`<br/>
-Küçük harf veya,,, `iswcntrl` veya olmayan,,, `iswdigit` ya da `iswpunct` `iswspace` sıfırdan farklı bir uygulama tanımlı geniş karakter kümesi. `iswlower`yalnızca küçük harflere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
+Küçük harf veya,,, `iswcntrl` veya olmayan,,, `iswdigit` ya da `iswpunct` `iswspace` sıfırdan farklı bir uygulama tanımlı geniş karakter kümesi. `iswlower` yalnızca küçük harflere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
 
 `iswprint`<br/>
 Boşluk geniş karakteri (L ' ') içeren yazdırılabilir geniş karakter.
@@ -162,7 +174,7 @@ Boşluk geniş karakteri (L ' ') veya geniş karakter olmayan, yazdırılabilir 
 Standart boşluk karakterine karşılık gelen veya yanlış olan uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter `iswalnum` . Standart boşluk karakterleri şunlardır: boşluk (L ' '), form akışı (L ' \f '), yeni satır (L ' \n '), satır başı (l ' \r '), yatay sekme (L ' \t ') ve dikey sekme (L ' \v ').
 
 `iswupper`<br/>
-Büyük harf olan veya,, `iswcntrl` `iswdigit` `iswpunct` , ya da `iswspace` sıfırdan farklı olmayan, uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. `iswupper`yalnızca büyük harfli karakterlere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
+Büyük harf olan veya,, `iswcntrl` `iswdigit` `iswpunct` , ya da `iswspace` sıfırdan farklı olmayan, uygulama tanımlı geniş karakter kümesinden biri olan geniş karakter. `iswupper` yalnızca büyük harfli karakterlere karşılık gelen geniş karakterler için sıfır dışında bir değer döndürür.
 
 `iswxdigit`<br/>
 Onaltılık basamaklı bir karaktere karşılık gelen geniş karakter.
@@ -205,7 +217,7 @@ int main( void )
 }
 ```
 
-## <a name="output"></a>Çıktı
+## <a name="output"></a>Çıkış
 
 ```Output
 00            AS  C                              .

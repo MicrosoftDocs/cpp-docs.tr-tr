@@ -36,18 +36,18 @@ helpviewer_keywords:
 - GetBindings method
 - ReleaseAccessor method
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-ms.openlocfilehash: 6b9830ac2b6f1eacedd1b59184292f2148087093
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 356278b316912bdb81f1c43bbf2034f00ec3d785
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210875"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845620"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
 
 [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T,
@@ -58,14 +58,14 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Satır kümesi veya komut nesne sınıfınız.
 
 *BindType*<br/>
-Bağlama bilgileri için depolama birimi. Varsayılan değer `ATLBINDINGS` yapısıdır (bkz. Atldb. h).
+Bağlama bilgileri için depolama birimi. Varsayılan, `ATLBINDINGS` yapısıdır (bkz. Atldb. h).
 
 *BindingVector*<br/>
-Sütun bilgileri için depolama birimi. Varsayılan değer, anahtar öğesinin bir HACCESSOR değeri olduğu ve value öğesinin bir `BindType` yapısına yönelik bir işaretçi olduğu [CAtlMap](../../atl/reference/catlmap-class.md) 'dir.
+Sütun bilgileri için depolama birimi. Varsayılan değer, anahtar öğesinin bir HACCESSOR değeri olduğu ve value öğesinin bir yapı işaretçisi olduğu [CAtlMap](../../atl/reference/catlmap-class.md) 'dir `BindType` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -75,13 +75,13 @@ Sütun bilgileri için depolama birimi. Varsayılan değer, anahtar öğesinin b
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[IAccessorImpl](#iaccessorimpl)|Oluşturucu.|
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[AddRefAccessor](#addrefaccessor)|Varolan bir erişimciye bir başvuru sayısı ekler.|
 |[CreateAccessor](#createaccessor)|Bir bağlama kümesinden erişimci oluşturur.|
@@ -90,23 +90,23 @@ Sütun bilgileri için depolama birimi. Varsayılan değer, anahtar öğesinin b
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, satır kümelerinde ve komutlarda zorunludur. OLE DB, sağlayıcıların bir [Dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) yapıları dizisine bir etiket olan BIR HACCESSOR uygulaması olmasını gerektirir. `IAccessorImpl` tarafından sunulan Herişimcileri `BindType` yapıların adresleridir. Varsayılan olarak `BindType`, `IAccessorImpl`şablon tanımında bir `ATLBINDINGS` olarak tanımlanır. `BindType`, `DBBINDING` dizisindeki öğelerin sayısını ve bir başvuru sayısı ve erişimci bayraklarını izlemek için `IAccessorImpl` tarafından kullanılan bir mekanizma sağlar.
+Bu, satır kümelerinde ve komutlarda zorunludur. OLE DB, sağlayıcıların bir [Dbbinding](/previous-versions/windows/desktop/ms716845(v=vs.85)) yapıları dizisine bir etiket olan BIR HACCESSOR uygulaması olmasını gerektirir. Tarafından sunulan Herişimcileri `IAccessorImpl` yapıların adresleridir `BindType` . Varsayılan olarak, `BindType` `ATLBINDINGS` `IAccessorImpl` uygulamasının şablon tanımı olarak tanımlanmıştır. `BindType``IAccessorImpl`, dizi içindeki öğe sayısını `DBBINDING` ve başvuru sayısını ve erişimci bayraklarını izlemek için tarafından kullanılan bir mekanizma sağlar.
 
-## <a name="iaccessorimpliaccessorimpl"></a><a name="iaccessorimpl"></a>IAccessorImpl:: IAccessorImpl
+## <a name="iaccessorimpliaccessorimpl"></a><a name="iaccessorimpl"></a> IAccessorImpl:: IAccessorImpl
 
 Oluşturucu.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 IAccessorImpl();
 ```
 
-## <a name="iaccessorimpladdrefaccessor"></a><a name="addrefaccessor"></a>IAccessorImpl:: AddRefAccessor
+## <a name="iaccessorimpladdrefaccessor"></a><a name="addrefaccessor"></a> IAccessorImpl:: AddRefAccessor
 
 Varolan bir erişimciye bir başvuru sayısı ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
@@ -117,11 +117,11 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 
 *OLE DB Programcı başvurusunda* [IAccessor:: AddRefAccessor](/previous-versions/windows/desktop/ms714978(v=vs.85)) öğesine bakın.
 
-## <a name="iaccessorimplcreateaccessor"></a><a name="createaccessor"></a>IAccessorImpl:: CreateAccessor
+## <a name="iaccessorimplcreateaccessor"></a><a name="createaccessor"></a> IAccessorImpl:: CreateAccessor
 
 Bir bağlama kümesinden erişimci oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
@@ -136,11 +136,11 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 
 *OLE DB Programcı başvurusunda* [IAccessor:: CreateAccessor](/previous-versions/windows/desktop/ms720969(v=vs.85)) öğesine bakın.
 
-## <a name="iaccessorimplgetbindings"></a><a name="getbindings"></a>IAccessorImpl:: GetBindings
+## <a name="iaccessorimplgetbindings"></a><a name="getbindings"></a> IAccessorImpl:: GetBindings
 
 Bir erişimcideki tüketiciden temel sütun bağlamalarını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(GetBindings)(HACCESSOR hAccessor,
@@ -153,11 +153,11 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 
 *OLE DB Programcı başvurusunda* [IAccessor:: GetBindings](/previous-versions/windows/desktop/ms721253(v=vs.85)) öğesine bakın.
 
-## <a name="iaccessorimplreleaseaccessor"></a><a name="releaseaccessor"></a>IAccessorImpl:: ReleaseAccessor
+## <a name="iaccessorimplreleaseaccessor"></a><a name="releaseaccessor"></a> IAccessorImpl:: ReleaseAccessor
 
 Bir erişimci yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
@@ -171,4 +171,4 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

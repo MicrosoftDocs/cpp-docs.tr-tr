@@ -23,59 +23,58 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: df8f59088cd402503fe31f768557e3ed936b31ec
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: a54f20d6ae4dead5ba7c606fd28d456e96ff31d6
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301697"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836084"
 ---
 # <a name="to-functions"></a>to İşlevleri
 
 Her biri ve ilişkili makrosu **varsa, tek** bir karakteri başka bir karaktere dönüştürür.
 
-|||
-|-|-|
-|[__toascii](../c-runtime-library/reference/toascii-toascii.md)|[ToUpper, _toupper, kasaüstü](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|
-|[ToLower, _tolower, kasada daha düşük](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)||
+[__toascii](../c-runtime-library/reference/toascii-toascii.md)\
+[ToLower, _tolower, kasada daha düşük](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)\
+[ToUpper, _toupper, kasaüstü](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)
 
 ## <a name="remarks"></a>Açıklamalar
 
 **To** işlevleri ve makro dönüştürmeleri aşağıdaki gibidir.
 
-|Yordam|Makrosu|Açıklama|
+|Yordam|Makroya|Açıklama|
 |-------------|-----------|-----------------|
-|`__toascii`|`__toascii`|`c` ASCII karakterine dönüştürür|
-|`tolower`|`tolower`|Uygunsa `c` küçük harfe dönüştürür|
-|`_tolower`|`_tolower`|`c` küçük harfe dönüştürür|
-|`towlower`|Yok.|`c`, karşılık gelen geniş karakterli küçük harfe dönüştürür|
-|`toupper`|`toupper`|Uygunsa `c` büyük harfe dönüştürür|
-|`_toupper`|`_toupper`|`c` büyük harfe dönüştürür|
-|`towupper`|Yok.|C 'yi karşılık gelen geniş karakterli büyük harfe dönüştürür|
+|`__toascii`|`__toascii`|`c`ASCII karakterine dönüştürür|
+|`tolower`|`tolower`|`c`Uygunsa küçük harfe dönüştürür|
+|`_tolower`|`_tolower`|`c`Küçük harfe dönüştürür|
+|`towlower`|Yok|`c`Karşılık gelen geniş karakterli küçük harfe dönüştürür|
+|`toupper`|`toupper`|`c`Uygunsa büyük harfe dönüştürür|
+|`_toupper`|`_toupper`|`c`Büyük harfe dönüştürür|
+|`towupper`|Yok|C 'yi karşılık gelen geniş karakterli büyük harfe dönüştürür|
 
-Aynı zamanda makrolar olarak da tanımlanan, **ve '** nin işlev sürümlerini kullanmak için, makro tanımlarını `#undef` yönergeleriyle kaldırın ya da CType eklemeyin. Olsun. /Za derleyici seçeneğini kullanırsanız, derleyici `toupper` veya `tolower`işlev sürümünü kullanır. `toupper` ve `tolower` işlevlerinin bildirimleri STDLIB ' dir. Olsun.
+Aynı zamanda makrolar olarak tanımlanan, ve ' nin işlev sürümlerini kullanmak **için, makro** tanımlarını yönergelerle kaldırın ya da `#undef` CType dahil edin. Olsun. /Za derleyici seçeneğini kullanırsanız, derleyici veya ' nin işlev sürümünü kullanır `toupper` `tolower` . `toupper`Ve `tolower` işlevlerinin bildirimleri Stdlib ' dir. Olsun.
 
-`__toascii` yordamı,, dönüştürülen değerin ASCII karakter kümesindeki bir karakteri temsil edebilmesi için, düşük sıralı 7 bit `c` hariç tümünü 0 olarak ayarlar. `c` zaten bir ASCII karakterini temsil ediyorsa, `c` değiştirilmez.
+`__toascii`Bu yordam, `c` dönüştürülmüş değer ASCII karakter kümesindeki bir karakteri temsil ettiğinden, 0 ' ın düşük sıra 7 biti hariç tümünü ayarlar. `c`Zaten BIR ASCII karakterini temsil ediyorsa, `c` değiştirilmez.
 
-`tolower` ve `toupper` yordamları:
+`tolower`Ve `toupper` yordamları:
 
-- Geçerli yerel ayarın `LC_CTYPE` kategorisine bağımlıdır (`tolower` çağrılar `isupper` ve `toupper` çağrıları `islower`).
+- `LC_CTYPE`Geçerli yerel ayarın kategorisine bağımlıdır ( `tolower` çağrılar `isupper` ve `toupper` çağrılar `islower` ).
 
-- `c` geçerli yerel ayarda uygun durumun dönüştürülebilir bir harfini temsil ediyorsa ve bu yerel ayar için ters durum varsa `c` Dönüştür. Aksi takdirde, `c` değiştirilmez.
+- Dönüştür `c` `c` geçerli yerel ayarda uygun durumun dönüştürülebilir bir harfini temsil ediyorsa ve bu yerel ayar için ters durum varsa. Aksi takdirde, `c` değiştirilmez.
 
-`_tolower` ve `_toupper` yordamları:
+`_tolower`Ve `_toupper` yordamları:
 
-- , `tolower` ve **ToUpper** 'nin yerel ayara bağımsız, çok daha hızlı sürümleridir.
+- Yerel ayar bağımsız, çok daha hızlı `tolower` ve **ToUpper sürümleridir.**
 
-- Yalnızca **ısascıı (** `c` **)** ve **ıupper** (`c` **)** ya da **ılower (** `c` **)** sıfır dışında olduğunda kullanılabilir.
+- Yalnızca **ısascıı (** `c` **)** ve **ıupper** `c` **()** ya da **ılower (** `c` **)**, sırasıyla sıfır olmadığında kullanılabilir.
 
-- `c`, dönüştürme için uygun durumun ASCII harfi değilse tanımsız sonuçlara sahip olur.
+- `c`Dönüştürme için uygun durumun ASCII harfi değilse tanımsız sonuçlara sahip olur.
 
-`towlower` ve `towupper` işlevleri, yalnızca aşağıdaki koşulların her ikisi de sıfır değilse `c` dönüştürülmüş bir kopyasını döndürür. Aksi takdirde, `c` değiştirilmez.
+`towlower`Ve `towupper` işlevleri, `c` yalnızca aşağıdaki koşullardan her ikisi de sıfır değilse, dönüştürülmüş bir kopyasını döndürür. Aksi takdirde, `c` değiştirilmez.
 
-- `c`, uygun durumun geniş bir karakteridir (yani, sırasıyla, `iswupper` veya **ıswlower** , sıfır dışında).
+- `c`, uygun durumda olan geniş bir karakterdir (yani, sırasıyla, ve ' `iswupper` nin **iswlower,** sıfır dışında).
 
-- Hedef durumunun karşılık gelen geniş bir karakteri vardır (yani, sırasıyla `iswlower` veya **ıswupper** , sıfır dışında).
+- Hedef durumunun karşılık gelen geniş bir karakteri vardır (yani, `iswlower` sırasıyla, veya **ıswupper** , sıfır dışında).
 
 ## <a name="example"></a>Örnek
 
@@ -117,6 +116,6 @@ sOME OF these LETTERS ARE cAPITALS.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../c-runtime-library/data-conversion.md)<br/>
-[locale](../c-runtime-library/locale.md)<br/>
-[is, isw Yordamları](../c-runtime-library/is-isw-routines.md)
+[Veri dönüştürme](../c-runtime-library/data-conversion.md)<br/>
+[Yerel Ayar](../c-runtime-library/locale.md)<br/>
+[, isw yordamları](../c-runtime-library/is-isw-routines.md)

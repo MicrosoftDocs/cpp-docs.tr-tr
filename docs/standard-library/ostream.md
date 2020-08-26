@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - ostream header
 ms.assetid: 90c3b6fb-57cd-4ae7-99b8-8512f24a67d2
-ms.openlocfilehash: 37642cbcbe57fba54f071a8fc94af53c97684a36
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ffcb6c7b2f95b0b62659f6080c9ed0d1f111237c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228147"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846400"
 ---
 # <a name="ltostreamgt"></a>&lt;ostream&gt;
 
 İostreams için eklemeleri gösteren [basic_ostream](../standard-library/basic-ostream-class.md)sınıf şablonunu tanımlar. Üst bilgi ayrıca birkaç ilgili işleyici tanımlar. (Bu üst bilgi genellikle sizin için iostreams başlıklarınızdan biri tarafından eklenir. Genellikle bunu doğrudan eklemeniz gerekir.)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <ostream>
@@ -34,7 +34,7 @@ ms.locfileid: "87228147"
 
 ### <a name="manipulators"></a>Manipülatörleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[endl](../standard-library/ostream-functions.md#endl)|Bir satırı sonlandırır ve arabelleği boşaltır.|
 |[ucundaki](../standard-library/ostream-functions.md#ends)|Bir dizeyi sonlandırır.|
