@@ -45,12 +45,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-ms.openlocfilehash: f4f1b12795252b91a2c14877822e221ca86ab39e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9bb1b7bcbce16bba8029fcfbbeea7552b1d4a0ba
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214041"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843605"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 
@@ -70,7 +70,7 @@ Ve işlevlerinde göründükleri gibi RFX ve toplu RFX işlevlerinin bir örneğ
 
 ### <a name="rfx-functions-odbc"></a>RFX Işlevleri (ODBC)
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[RFX_Binary](#rfx_binary)|[CByteArray](cbytearray-class.md)türünde bayt dizilerini aktarır.|
 |[RFX_Bool](#rfx_bool)|Boole verilerini aktarır.|
@@ -85,7 +85,7 @@ Ve işlevlerinde göründükleri gibi RFX ve toplu RFX işlevlerinin bir örneğ
 
 ### <a name="bulk-rfx-functions-odbc"></a>Toplu RFX Işlevleri (ODBC)
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[RFX_Binary_Bulk](#rfx_binary_bulk)|Bayt veri dizilerini aktarır.|
 |[RFX_Bool_Bulk](#rfx_bool_bulk)|Boole verileri dizilerini aktarır.|
@@ -99,7 +99,7 @@ Ve işlevlerinde göründükleri gibi RFX ve toplu RFX işlevlerinin bir örneğ
 
 ### <a name="dfx-functions-dao"></a>DFX Işlevleri (DAO)
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[DFX_Binary](#dfx_binary)|[CByteArray](cbytearray-class.md)türünde bayt dizilerini aktarır.|
 |[DFX_Bool](#dfx_bool)|Boole verilerini aktarır.|
@@ -115,7 +115,7 @@ Ve işlevlerinde göründükleri gibi RFX ve toplu RFX işlevlerinin bir örneğ
 
 =============================================
 
-## <a name="rfx_binary"></a><a name="rfx_binary"></a>RFX_Binary
+## <a name="rfx_binary"></a><a name="rfx_binary"></a> RFX_Binary
 
 Bir nesnenin alan veri üyeleri arasında bayt dizilerini `CRecordset` ve ODBC türü SQL_BINARY, SQL_VARBINARY veya SQL_LONGVARBINARY veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -155,7 +155,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_bool"></a><a name="rfx_bool"></a>RFX_Bool
+## <a name="rfx_bool"></a><a name="rfx_bool"></a> RFX_Bool
 
 Bir nesnenin alan veri üyeleri arasında Boole verileri `CRecordset` ve ODBC türü SQL_BIT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -187,7 +187,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_byte"></a><a name="rfx_byte"></a>RFX_Byte
+## <a name="rfx_byte"></a><a name="rfx_byte"></a> RFX_Byte
 
 Bir nesnenin alan veri üyeleri arasında tek `CRecordset` bir bayt ve ODBC türü SQL_TINYINT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -219,7 +219,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_date"></a><a name="rfx_date"></a>RFX_Date
+## <a name="rfx_date"></a><a name="rfx_date"></a> RFX_Date
 
 `CTime`Bir nesnenin alan veri üyeleri arasında verileri `CRecordset` ve ODBC türü SQL_DATE, SQL_TIME veya SQL_TIMESTAMP veri kaynağındaki bir kaydın sütunlarını aktarır veya TIMESTAMP_STRUCT.
 
@@ -269,7 +269,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_double"></a><a name="rfx_double"></a>RFX_Double
+## <a name="rfx_double"></a><a name="rfx_double"></a> RFX_Double
 
 Bir nesnenin alan veri üyeleri arasında **çift kayan** VERILERI `CRecordset` ve ODBC türü SQL_DOUBLE veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -301,7 +301,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_int"></a><a name="rfx_int"></a>RFX_Int
+## <a name="rfx_int"></a><a name="rfx_int"></a> RFX_Int
 
 Bir nesnenin alan veri üyeleri arasında tamsayı verilerini `CRecordset` ve ODBC türü SQL_SMALLINT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -333,7 +333,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_long"></a><a name="rfx_long"></a>RFX_Long
+## <a name="rfx_long"></a><a name="rfx_long"></a> RFX_Long
 
 Bir nesnenin alan veri üyeleri arasında uzun tamsayı verilerini `CRecordset` ve ODBC türü SQL_INTEGER veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -366,7 +366,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_longbinary"></a><a name="rfx_longbinary"></a>RFX_LongBinary
+## <a name="rfx_longbinary"></a><a name="rfx_longbinary"></a> RFX_LongBinary
 
 Bir nesnenin alan veri üyeleri [CLongBinary](clongbinary-class.md) `CRecordset` ile bir KAYDıN sütunları ve ODBC türü SQL_LONGVARBINARY ya da sql_longvarchar veri kaynağındaki bir kaydın sütunlarını kullanarak, ikili büyük nesne (blob) verilerini aktarır.
 
@@ -398,7 +398,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_single"></a><a name="rfx_single"></a>RFX_Single
+## <a name="rfx_single"></a><a name="rfx_single"></a> RFX_Single
 
 Kayan nokta verilerini nesnenin alan veri üyeleri arasında `CRecordset` ve ODBC türü SQL_REAL veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -430,7 +430,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_text"></a><a name="rfx_text"></a>RFX_Text
+## <a name="rfx_text"></a><a name="rfx_text"></a> RFX_Text
 
 `CString` `CRecordset` ODBC türü SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL veya SQL_NUMERIC veri kaynağındaki bir nesnenin alan veri üyeleri ve bir kayıt sütunlarının arasına veri aktarır.
 
@@ -496,7 +496,7 @@ void CCustomer::DoFieldExchange(CFieldExchange* pFX)
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_binary_bulk"></a><a name="rfx_binary_bulk"></a>RFX_Binary_Bulk
+## <a name="rfx_binary_bulk"></a><a name="rfx_binary_bulk"></a> RFX_Binary_Bulk
 
 Bir ODBC veri kaynağından alınan bir sütundan birden çok satır baytlık verileri, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -547,7 +547,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_bool_bulk"></a><a name="rfx_bool_bulk"></a>RFX_Bool_Bulk
+## <a name="rfx_bool_bulk"></a><a name="rfx_bool_bulk"></a> RFX_Bool_Bulk
 
 ODBC veri kaynağı sütunundaki birden çok satırı, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -594,7 +594,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_byte_bulk"></a><a name="rfx_byte_bulk"></a>RFX_Byte_Bulk
+## <a name="rfx_byte_bulk"></a><a name="rfx_byte_bulk"></a> RFX_Byte_Bulk
 
 ODBC veri kaynağındaki bir sütundan birden çok satırı, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -641,7 +641,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_date_bulk"></a><a name="rfx_date_bulk"></a>RFX_Date_Bulk
+## <a name="rfx_date_bulk"></a><a name="rfx_date_bulk"></a> RFX_Date_Bulk
 
 TIMESTAMP_STRUCT verilerinin birden çok satırını, ODBC veri kaynağı sütunundan türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -688,7 +688,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_double_bulk"></a><a name="rfx_double_bulk"></a>RFX_Double_Bulk
+## <a name="rfx_double_bulk"></a><a name="rfx_double_bulk"></a> RFX_Double_Bulk
 
 Çift duyarlıklı, kayan noktalı verilerin birden çok satırını, ODBC veri kaynağı sütunundan, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -735,7 +735,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_int_bulk"></a><a name="rfx_int_bulk"></a>RFX_Int_Bulk
+## <a name="rfx_int_bulk"></a><a name="rfx_int_bulk"></a> RFX_Int_Bulk
 
 Bir nesnenin alan veri üyeleri arasında tamsayı verilerini `CRecordset` ve ODBC türü SQL_SMALLINT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
@@ -767,7 +767,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_long_bulk"></a><a name="rfx_long_bulk"></a>RFX_Long_Bulk
+## <a name="rfx_long_bulk"></a><a name="rfx_long_bulk"></a> RFX_Long_Bulk
 
 ODBC veri kaynağı sütunundaki birden çok satırı, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -814,7 +814,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_single_bulk"></a><a name="rfx_single_bulk"></a>RFX_Single_Bulk
+## <a name="rfx_single_bulk"></a><a name="rfx_single_bulk"></a> RFX_Single_Bulk
 
 Kayan nokta verilerinin birden çok satırını, ODBC veri kaynağı sütunundan türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -861,7 +861,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="rfx_text_bulk"></a><a name="rfx_text_bulk"></a>RFX_Text_Bulk
+## <a name="rfx_text_bulk"></a><a name="rfx_text_bulk"></a> RFX_Text_Bulk
 
 ODBC veri kaynağındaki bir sütundan birden fazla karakter verisi satırını türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
@@ -927,7 +927,7 @@ void CMultiCustomer::DoBulkFieldExchange(CFieldExchange* pFX)
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="dfx_binary"></a><a name="dfx_binary"></a>DFX_Binary
+## <a name="dfx_binary"></a><a name="dfx_binary"></a> DFX_Binary
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasındaki bayt dizilerini aktarır.
 
@@ -974,7 +974,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_bool"></a><a name="dfx_bool"></a>DFX_Bool
+## <a name="dfx_bool"></a><a name="dfx_bool"></a> DFX_Bool
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında Boole verileri aktarır.
 
@@ -1017,7 +1017,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_byte"></a><a name="dfx_byte"></a>DFX_Byte
+## <a name="dfx_byte"></a><a name="dfx_byte"></a> DFX_Byte
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında tek bayt aktarır.
 
@@ -1060,7 +1060,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_currency"></a><a name="dfx_currency"></a>DFX_Currency
+## <a name="dfx_currency"></a><a name="dfx_currency"></a> DFX_Currency
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında para birimi verilerini aktarır.
 
@@ -1103,7 +1103,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_datetime"></a><a name="dfx_datetime"></a>DFX_DateTime
+## <a name="dfx_datetime"></a><a name="dfx_datetime"></a> DFX_DateTime
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında saat ve Tarih verilerini aktarır.
 
@@ -1139,7 +1139,7 @@ Değiştirilen kayıt kümesi alanlarını saptamak için MFC 'nin çift arabell
 Veriler, DAO içindeki tür DAO_DATE ve kayıt kümesinde [Copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md) türü arasında eşlenir.
 
 > [!NOTE]
-> `COleDateTime`DAO sınıflarında bu amaçla [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve TIMESTAMP_STRUCT değiştirir. `CTime`ve TIMESTAMP_STRUCT, ODBC tabanlı veri erişim sınıfları için hala kullanılmaktadır.
+> `COleDateTime` DAO sınıflarında bu amaçla [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve TIMESTAMP_STRUCT değiştirir. `CTime` ve TIMESTAMP_STRUCT, ODBC tabanlı veri erişim sınıfları için hala kullanılmaktadır.
 
 ### <a name="example"></a>Örnek
 
@@ -1149,7 +1149,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_double"></a><a name="dfx_double"></a>DFX_Double
+## <a name="dfx_double"></a><a name="dfx_double"></a> DFX_Double
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında **çift kayan** veri aktarır.
 
@@ -1192,7 +1192,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_long"></a><a name="dfx_long"></a>DFX_Long
+## <a name="dfx_long"></a><a name="dfx_long"></a> DFX_Long
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında uzun tamsayı verilerini aktarır.
 
@@ -1235,7 +1235,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_longbinary"></a><a name="dfx_longbinary"></a>DFX_LongBinary
+## <a name="dfx_longbinary"></a><a name="dfx_longbinary"></a> DFX_LongBinary
 
 **Önemli** Bu işlev yerine [DFX_Binary](#dfx_binary) kullanmanız önerilir.
 
@@ -1272,7 +1272,7 @@ Değiştirilen kayıt kümesi alanlarını saptamak için MFC 'nin çift arabell
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DFX_LongBinary`MFC ODBC sınıflarıyla uyumluluk için sağlanır. `DFX_LongBinary`İşlevi, `CLongBinary` bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında sınıfı kullanarak IKILI büyük nesne (blob) verilerini aktarır. Veriler, DAO içindeki tür DAO_BYTES ve kayıt kümesinde [CLongBinary](clongbinary-class.md) türü arasında eşlenir.
+`DFX_LongBinary` MFC ODBC sınıflarıyla uyumluluk için sağlanır. `DFX_LongBinary`İşlevi, `CLongBinary` bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında sınıfı kullanarak IKILI büyük nesne (blob) verilerini aktarır. Veriler, DAO içindeki tür DAO_BYTES ve kayıt kümesinde [CLongBinary](clongbinary-class.md) türü arasında eşlenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1282,7 +1282,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_short"></a><a name="dfx_short"></a>DFX_Short
+## <a name="dfx_short"></a><a name="dfx_short"></a> DFX_Short
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında kısa tamsayı verilerini aktarır.
 
@@ -1318,7 +1318,7 @@ Değiştirilen kayıt kümesi alanlarını saptamak için MFC 'nin çift arabell
 Veriler, DAO içindeki tür DAO_I2 ve kayıt kümesine tür arasında eşlenir **`short`** .
 
 > [!NOTE]
-> `DFX_Short`, ODBC tabanlı sınıflar için [RFX_Int](#rfx_int) eşdeğerdir.
+> `DFX_Short` , ODBC tabanlı sınıflar için [RFX_Int](#rfx_int) eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -1328,7 +1328,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_single"></a><a name="dfx_single"></a>DFX_Single
+## <a name="dfx_single"></a><a name="dfx_single"></a> DFX_Single
 
 Kayan nokta verilerini bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında aktarır.
 
@@ -1371,7 +1371,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Üstbilgi:** afxdao. h
 
-## <a name="dfx_text"></a><a name="dfx_text"></a>DFX_Text
+## <a name="dfx_text"></a><a name="dfx_text"></a> DFX_Text
 
 Verileri `CString` bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ve veri kaynağındaki bir kaydın sütunları arasında aktarır.
 

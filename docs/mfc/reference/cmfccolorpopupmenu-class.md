@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-ms.openlocfilehash: d668a7bd2b5226de906ca146c7b7e882b97f4640
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 2964f250b25ad6c77c70e8f10cd92cca0c7d11da
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560991"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844567"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
 
@@ -35,17 +35,15 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCColorPopupMenu:: CMFCColorPopupMenu](#cmfccolorpopupmenu)|Bir `CMFCColorPopupMenu` nesnesi oluşturur.|
 |`CMFCColorPopupMenu::~CMFCColorPopupMenu`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |[CMFCColorPopupMenu:: CreateTearOffBar](#createtearoffbar)|Yerleştirilebilir bir renk çubuğu oluşturur. ( [CMFCPopupMenu:: Createtearoff çubuğunu](../../mfc/reference/cmfcpopupmenu-class.md#createtearoffbar)geçersiz kılar.)|
 |[CMFCColorPopupMenu:: GetMenuBar](#getmenubar)|Açılan menünün içine katıştırılmış [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) öğesini döndürür. ( [CMFCPopupMenu:: GetMenuBar](../../mfc/reference/cmfcpopupmenu-class.md#getmenubar).) öğesini geçersiz kılar|
 |`CMFCColorPopupMenu::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
@@ -53,9 +51,8 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |`m_bEnabledInCustomizeMode`|Renk çubuğunu gösterip göstermeyeceğinizi belirleyen bir Boolean değer.|
 |`m_wndColorBar`|`CMFCColorBar`Renk seçimi sağlayan nesne.|
 

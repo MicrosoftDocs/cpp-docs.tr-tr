@@ -8,12 +8,12 @@ helpviewer_keywords:
 - setlocale function
 - language strings
 ms.assetid: a0e5a0c5-5602-4da0-b65f-de3d6c8530a2
-ms.openlocfilehash: 95557c824aafb1092cc7711f19708cd7782683a9
-ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
+ms.openlocfilehash: 704da410ee6386027a7528c0c73a89ef31557a77
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88087013"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842967"
 ---
 # <a name="ucrt-locale-names-languages-and-countryregion-strings"></a>UCRT yerel ayar adları, diller ve ülke/bölge dizeleri
 
@@ -22,11 +22,11 @@ ms.locfileid: "88087013"
 > *yerel ayar* :: "*yerel ayar-adı*"<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;\|"*dil* \[ **\_** _Ülke Bölgesi_ \[ __.__ *kod sayfası*]] "<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;\|"__.__ *kod sayfası*"<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;\|,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;\| ,<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;\| ""<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;\|DEĞER
+&nbsp;&nbsp;&nbsp;&nbsp;\| DEĞER
 
-*Locale-Name* formu, bir Short, IETF-standartlaştırılmış dizedir; Örneğin, `en-US` İngilizce (Birleşik Devletler) veya `bs-Cyrl-BA` Boşnakça (Kiril, Bosna-Hersek) için. Bu formlar tercih edilir. Windows işletim sistemi sürümü tarafından desteklenen yerel ayar adlarının bir listesi için, [ek a](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) 'Daki tablonun **Dil etiketi** sütununa BAKıN: MS-LCID 'de ürün davranışı \[ ]: WINDOWS dil kodu tanımlayıcısı (LCID) başvurusu. Bu kaynak yerel ayar adlarının desteklenen dilini, betiğini ve bölge bölümlerini listeler. Varsayılan olmayan sıralama düzenlerine sahip desteklenen yerel ayar adları hakkında daha fazla bilgi için [sıralama düzeni tanımlayıcılarında](/windows/win32/Intl/sort-order-identifiers) **yerel ayar adı** sütununa bakın. Windows 10 veya üzeri sürümlerinde, geçerli [bcp-47](https://tools.ietf.org/html/bcp47) dil etiketlerine karşılık gelen yerel ayar adlarına izin verilir. Örneğin, `jp-US` geçerli BIR bcp-47 etikettir, ancak yalnızca `US` yerel ayar işlevselliği için etkin değildir.
+*Locale-Name* formu, bir Short, IETF-standartlaştırılmış dizedir; Örneğin, `en-US` İngilizce (Birleşik Devletler) veya `bs-Cyrl-BA` Boşnakça (Kiril, Bosna-Hersek) için. Bu formlar tercih edilir. Windows işletim sistemi sürümü tarafından desteklenen yerel ayar adlarının bir listesi için, [ek a](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c) 'Daki tablonun **Dil etiketi** sütununa BAKıN: MS-LCID 'de ürün davranışı \[ ]: WINDOWS dil kodu tanımlayıcısı (LCID) başvurusu. Bu kaynak yerel ayar adlarının desteklenen dilini, betiğini ve bölge bölümlerini listeler. Varsayılan olmayan sıralama düzenlerine sahip desteklenen yerel ayar adları hakkında daha fazla bilgi için [sıralama düzeni tanımlayıcılarında](/windows/win32/Intl/sort-order-identifiers) **yerel ayar adı** sütununa bakın. Windows 10 veya üzeri sürümlerinde, geçerli [bcp-47](https://tools.ietf.org/html/bcp47) dil etiketlerine karşılık gelen yerel ayar adlarına izin verilir. Örneğin, `jp-US` geçerli BIR bcp-47 etikettir, ancak yalnızca `US` yerel ayar işlevselliği için etkin değildir.
 
 *language* \[ **\_** _Ülke Bölgesi_dili \[ __.__ *kod sayfası*]] Form, yerel ayarı oluşturmak için bir dil dizesi veya dil dizesi ve ülke veya bölge dizesi kullanıldığında bir kategori için yerel ayar ayarında depolanır. Desteklenen dil dizeleri kümesi, [dil dizeleri](../c-runtime-library/language-strings.md)bölümünde açıklanmış ve desteklenen ülke ve bölge dizelerinin listesi [ülke/bölge dizelerinde](../c-runtime-library/country-region-strings.md)listelenmiştir. Belirtilen dil belirtilen ülke veya bölge ile ilişkili değilse, belirtilen ülkenin veya bölgenin varsayılan dili yerel ayar ayarında saklanır. Bu dizelerin bir yerel ayar adı formundansa bir işletim sistemi güncelleştirmesi tarafından değiştirilmesi daha olası olduğundan, kod içinde gömülü veya depolama için seri hale getirilmiş yerel ayar dizeleri için bu biçim önerilmez.
 

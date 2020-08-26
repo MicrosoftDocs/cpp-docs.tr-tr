@@ -2,12 +2,12 @@
 title: Atama (C++/CX)
 ms.date: 06/19/2018
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-ms.openlocfilehash: a51e02b59b2f7229193987f993edbccfb56b779d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5e51f9e100be2096494e10aca38232dbd1576f40
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233528"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843488"
 ---
 # <a name="casting-ccx"></a>Atama (C++/CX)
 
@@ -55,7 +55,7 @@ Kod ilişkiyi bildirmiyorsa ancak dönüştürmenin çalışması gerektiği iç
 
 ## <a name="dynamic_cast"></a>dynamic_cast
 
-Bir **`dynamic_cast`** nesneyi daha fazla türetilmiş bir türe (özellikle de daha özel olarak, bir hat **^** ) aktardığınızda, hedef nesnenin bazen bazı durumlarda **`nullptr`** veya dönüştürmenin başarısız olabileceğinden ya da bu koşulu bir özel durum yerine normal bir kod yolu olarak işlemek istiyorsanız kullanın. Örneğin, **boş uygulama (Evrensel Windows)** proje şablonunda `OnLaunched` app. XAMP. cpp yöntemi **`dynamic_cast`** uygulama penceresinde içerik olup olmadığını test etmek için kullanır. İçerik yoksa bir hata değildir; beklenen bir durumdur. `Windows::Current::Content`, bir `Windows::UI::XAML::UIElement` ve dönüştürme `Windows::UI.XAML::Controls::Frame` , devralma hiyerarşisinde daha fazla türetilmiş bir tür olan öğesine.
+Bir **`dynamic_cast`** nesneyi daha fazla türetilmiş bir türe (özellikle de daha özel olarak, bir hat **^** ) aktardığınızda, hedef nesnenin bazen bazı durumlarda **`nullptr`** veya dönüştürmenin başarısız olabileceğinden ya da bu koşulu bir özel durum yerine normal bir kod yolu olarak işlemek istiyorsanız kullanın. Örneğin, **boş uygulama (Evrensel Windows)** proje şablonunda `OnLaunched` app. XAMP. cpp yöntemi **`dynamic_cast`** uygulama penceresinde içerik olup olmadığını test etmek için kullanır. İçerik yoksa bir hata değildir; beklenen bir durumdur. `Windows::Current::Content` , bir `Windows::UI::XAML::UIElement` ve dönüştürme `Windows::UI.XAML::Controls::Frame` , devralma hiyerarşisinde daha fazla türetilmiş bir tür olan öğesine.
 
 ```cpp
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)
@@ -108,16 +108,16 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 
 Aşağıdaki tabloda, kullanımı güvenli olan durumlar özetlenmektedir **`reinterpret_cast`** . Her durumda, her iki yönde de atama güvenlidir.
 
-|||
-|-|-|
-|`HSTRING`|`String^`|
-|`HSTRING*`|`String^*`|
-|`IInspectable*`|`Object^`|
-|`IInspectable**`|`Object^*`|
-|`IInspectable-derived-type*`|`same-interface-from-winmd^`|
-|`IInspectable-derived-type**`|`same-interface-from-winmd^*`|
-|`IDefault-interface-of-RuntimeClass*`|`same-RefClass-from-winmd^`|
-|`IDefault-interface-of-RuntimeClass**`|`same-RefClass-from-winmd^*`|
+| Atama, atama | Atama, dönüştürme |
+|--|--|
+| `HSTRING` | `String^` |
+| `HSTRING*` | `String^*` |
+| `IInspectable*` | `Object^` |
+| `IInspectable**` | `Object^*` |
+| `IInspectable-derived-type*` | `same-interface-from-winmd^` |
+| `IInspectable-derived-type**` | `same-interface-from-winmd^*` |
+| `IDefault-interface-of-RuntimeClass*` | `same-RefClass-from-winmd^` |
+| `IDefault-interface-of-RuntimeClass**` | `same-RefClass-from-winmd^*` |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

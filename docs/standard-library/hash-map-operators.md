@@ -5,21 +5,21 @@ f1_keywords:
 - hash_map/std::operator!=
 - hash_map/std::operator==
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: 6c0ec796265f462fe386962c0b2e8288f41da628
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b0884cacb11299f96d539c8c83a1fc9fa2840d16
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222439"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844398"
 ---
 # <a name="lthash_mapgt-operators"></a>&lt;hash_map &gt; işleçleri
 
-|||
-|-|-|
-|[işleç! =](#op_neq)|[işleç! = (multimap)](#op_neq_mm)|
-|[işleç = =](#op_eq_eq)|[işleç = = (multimap)](#op_eq_eq_mm)|
+[işleç! =](#op_neq)\
+[işleç! = (multimap)](#op_neq_mm)\
+[işleç = =](#op_eq_eq)\
+[işleç = = (multimap)](#op_eq_eq_mm)
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
@@ -88,7 +88,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfıdır](unordered-map-class.md).
@@ -155,7 +155,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.
 ```
 
-## <a name="operator-hash_multimap"></a><a name="op_neq_mm"></a>işleç! = (hash_multimap)
+## <a name="operator-hash_multimap"></a><a name="op_neq_mm"></a> işleç! = (hash_multimap)
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).
@@ -222,7 +222,7 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.
 ```
 
-## <a name="operator--hash_multimap"></a><a name="op_eq_eq_mm"></a>işleç = = (hash_multimap)
+## <a name="operator--hash_multimap"></a><a name="op_eq_eq_mm"></a> işleç = = (hash_multimap)
 
 > [!NOTE]
 > Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfıdır](unordered-multimap-class.md).

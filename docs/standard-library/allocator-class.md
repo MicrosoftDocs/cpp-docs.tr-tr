@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 42d640ba456e8327df7a070cb12914b765c07bf5
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 4857de0b77d69a0d256da2200e5f4d0eb9d51c51
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520920"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844827"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
@@ -83,13 +83,13 @@ Bu `Type` s, işaretçiler ve başvuruların ayrılan öğeler için uygulanmas�
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[allocator](#allocator)|Nesneleri oluşturmak için kullanılan oluşturucular `allocator` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[const_pointer](#const_pointer)|Ayırıcı tarafından yönetilen nesne türüne sabit bir işaretçi sağlayan bir tür.|
 |[const_reference](#const_reference)|Ayırıcı tarafından yönetilen nesne türüne sabit bir başvuru sağlayan bir tür.|
@@ -101,7 +101,7 @@ Bu `Type` s, işaretçiler ve başvuruların ayrılan öğeler için uygulanmas�
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[adrestir](#address)|Değeri belirtilen bir nesnenin adresini bulur.|
 |[allocate](#allocate)|En az bazı sayıda öğe depolamak için yeterince büyük bir bellek bloğu ayırır.|
@@ -113,11 +113,11 @@ Bu `Type` s, işaretçiler ve başvuruların ayrılan öğeler için uygulanmas�
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç =](#op_eq)|Bir `allocator` nesneyi başka bir `allocator` nesneye atar.|
 
-### <a name="address"></a><a name="address"></a>adrestir
+### <a name="address"></a><a name="address"></a> adrestir
 
 Değeri belirtilen bir nesnenin adresini bulur.
 
@@ -183,7 +183,7 @@ The original vector v1 is:
 The integer addressed by v1Ptr has a value of: *v1Ptr = 8.
 ```
 
-### <a name="allocate"></a><a name="allocate"></a>allocate
+### <a name="allocate"></a><a name="allocate"></a> allocate
 
 En az bazı sayıda öğe depolamak için yeterince büyük bir bellek bloğu ayırır.
 
@@ -243,7 +243,7 @@ int main( )
 0 1 2 3 4 5 6 7 8 9
 ```
 
-### <a name="allocator"></a><a name="allocator"></a>öğe
+### <a name="allocator"></a><a name="allocator"></a> öğe
 
 Ayırıcı nesneleri oluşturmak için kullanılan oluşturucular.
 
@@ -326,7 +326,7 @@ The allocator objects cv1Alloc & v1Alloc are equal.
 The allocator objects cAlloc & Alloc are equal.
 ```
 
-### <a name="const_pointer"></a><a name="const_pointer"></a>const_pointer
+### <a name="const_pointer"></a><a name="const_pointer"></a> const_pointer
 
 Ayırıcı tarafından yönetilen nesne türüne sabit bir işaretçi sağlayan bir tür.
 
@@ -381,7 +381,7 @@ The original vector v1 is:
 The integer's address found has a value of: 10.
 ```
 
-### <a name="const_reference"></a><a name="const_reference"></a>const_reference
+### <a name="const_reference"></a><a name="const_reference"></a> const_reference
 
 Ayırıcı tarafından yönetilen nesne türüne sabit bir başvuru sağlayan bir tür.
 
@@ -447,7 +447,7 @@ The value of the element referred to by vcref,
 after nofication through its nonconst iterator, is: 175.
 ```
 
-### <a name="construct"></a><a name="construct"></a>oluşturma
+### <a name="construct"></a><a name="construct"></a> oluşturma
 
 Belirtilen bir değer ile başlatılan belirli bir adreste belirli bir nesne türü oluşturur.
 
@@ -519,7 +519,7 @@ The modified vector v1 is:
 ( 3 7 9 12 15 18 21 ).
 ```
 
-### <a name="deallocate"></a><a name="deallocate"></a>kaldırmak
+### <a name="deallocate"></a><a name="deallocate"></a> kaldırmak
 
 Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.
 
@@ -537,13 +537,13 @@ Depolamadan serbest bırakmak için nesne sayısı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `Type` ' ı çağırarak, *PTR*ile başlayan türdeki Count nesnelerinin dizisi için depolamayı boşaltır `operator delete(ptr)` . İşaretçi *PTR* , aynı boyut ve türden bir dizi nesnesi ayırarak, ** \* Bu**değere eşit olarak karşılaştırıldığı bir ayırıcı nesnesini [ayırmak](#allocate) için bir çağrı tarafından daha önce döndürüldü. `deallocate`hiçbir koşulda özel durum oluşturmaz.
+Üye işlevi, `Type` ' ı çağırarak, *PTR*ile başlayan türdeki Count nesnelerinin dizisi için depolamayı boşaltır `operator delete(ptr)` . İşaretçi *PTR* , aynı boyut ve türden bir dizi nesnesi ayırarak, ** \* Bu**değere eşit olarak karşılaştırıldığı bir ayırıcı nesnesini [ayırmak](#allocate) için bir çağrı tarafından daha önce döndürüldü. `deallocate` hiçbir koşulda özel durum oluşturmaz.
 
 #### <a name="example"></a>Örnek
 
 Üye işlevini kullanan bir örnek için bkz. [ayırıcı:: allocate](#allocate).
 
-### <a name="destroy"></a><a name="destroy"></a>kaldırılır
+### <a name="destroy"></a><a name="destroy"></a> kaldırılır
 
 Nesnenin depolandığı belleği ayırmayı kaldırmadan bir nesne yıkıcısı çağırır.
 
@@ -609,7 +609,7 @@ The modified vector v1 is:
 ( 2 4 6 8 10 -99 14 ).
 ```
 
-### <a name="difference_type"></a><a name="difference_type"></a>difference_type
+### <a name="difference_type"></a><a name="difference_type"></a> difference_type
 
 Ayırıcı tarafından yönetilen nesne türüne yönelik işaretçilerin değerleri arasındaki farkı temsil eden, işaretli bir tamsayı türü.
 
@@ -670,7 +670,7 @@ Pointer v1PtrB addresses 12.
 The difference between the integer's addresses is: 8.
 ```
 
-### <a name="max_size"></a><a name="max_size"></a>max_size
+### <a name="max_size"></a><a name="max_size"></a> max_size
 
 `Type`Boş bellek kullanılmadan önce sınıf ayırıcı nesnesi tarafından ayrılabilecek türdeki öğe sayısını döndürür.
 
@@ -739,7 +739,7 @@ int main( )
 }
 ```
 
-### <a name="operator"></a><a name="op_eq"></a>işleç =
+### <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Başka bir ayırıcı nesnesine bir ayırıcı nesnesi atar.
 
@@ -802,7 +802,7 @@ int main( )
 }
 ```
 
-### <a name="pointer"></a><a name="pointer"></a>çağrısı
+### <a name="pointer"></a><a name="pointer"></a> çağrısı
 
 Ayırıcı tarafından yönetilen nesne türüne işaretçi sağlayan bir tür.
 
@@ -857,7 +857,7 @@ The original vector v1 is:
 The integer addressed by v1Ptr has a value of: *v1Ptr = 12.
 ```
 
-### <a name="rebind"></a><a name="rebind"></a>Rebind
+### <a name="rebind"></a><a name="rebind"></a> Rebind
 
 Bir tür nesneler için bir ayırıcı, başka bir türdeki nesneler için depolama alanı ayırmasına olanak tanıyan bir yapı.
 
@@ -913,7 +913,7 @@ int main( )
 }
 ```
 
-### <a name="reference"></a><a name="reference"></a>başvurunun
+### <a name="reference"></a><a name="reference"></a> başvurunun
 
 Ayırıcı tarafından yönetilen nesne türüne başvuru sağlayan bir tür.
 
@@ -973,7 +973,7 @@ the first element in the vector.
 The element referred to by vref after being modified is: 150.
 ```
 
-### <a name="size_type"></a><a name="size_type"></a>size_type
+### <a name="size_type"></a><a name="size_type"></a> size_type
 
 Türünde bir nesnenin ayırabilecek herhangi bir dizinin uzunluğunu temsil eden işaretsiz bir tamsayı türü `allocator` .
 
@@ -1018,7 +1018,7 @@ int main( )
 }
 ```
 
-### <a name="value_type"></a><a name="value_type"></a>value_type
+### <a name="value_type"></a><a name="value_type"></a> value_type
 
 Ayırıcı tarafından yönetilen bir tür.
 
@@ -1081,14 +1081,14 @@ The modified vector v is:
 
 ## <a name="helpers"></a>Yardımcı
 
-### <a name="allocator_arg_t"></a><a name="allocator_arg_t"></a>allocator_arg_t
+### <a name="allocator_arg_t"></a><a name="allocator_arg_t"></a> allocator_arg_t
 
 ```cpp
 struct allocator_arg_t { explicit allocator_arg_t() = default; };
 inline constexpr allocator_arg_t allocator_arg{};
 ```
 
-### <a name="uses_allocator"></a><a name="uses_allocator"></a>uses_allocator
+### <a name="uses_allocator"></a><a name="uses_allocator"></a> uses_allocator
 
 ```cpp
 template <class T, class Alloc> struct uses_allocator;

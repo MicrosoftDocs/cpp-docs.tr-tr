@@ -5,12 +5,12 @@ helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: 9689d511760752903b83b34199fb035c0e7a8d37
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9a04395aec8c2eb968e5cefaf410643a1ce03e32
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214054"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843592"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 
@@ -20,7 +20,7 @@ Bu veri eşleme mekanizması, özellik sayfası denetimlerini OLE denetiminin bi
 
 ### <a name="property-page-data-transfer"></a>Özellik sayfası Veri Aktarımı
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[DDP_CBIndex](#ddp_cbindex)|Bir açılan kutuda seçilen dizenin dizinini denetimin özelliği ile bağlantılandırır.|
 |[DDP_CBString](#ddp_cbstring)|Bir açılan kutudaki Seçili dizeyi denetimin özelliği ile bağlar. Seçilen dize, özelliğin değeri ile aynı harfle başlayabilir, ancak tamamen eşleşmesi gerekmez.|
@@ -39,13 +39,13 @@ Bir OLE denetimi için özellik sayfaları oluşturmak ve yönetmek için kullan
 
 ### <a name="property-pages"></a>Özellik Sayfaları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[BEGIN_PROPPAGEIDS](#begin_proppageids)|Özellik sayfası kimliklerinin listesini başlatır.|
 |[END_PROPPAGEIDS](#end_proppageids)|Özellik sayfası kimliklerinin listesini sonlandırır.|
 |[PROPPAGEıD](#proppageid)|Denetim sınıfının özellik sayfasını bildirir.|
 
-## <a name="ddp_cbindex"></a><a name="ddp_cbindex"></a>DDP_CBIndex
+## <a name="ddp_cbindex"></a><a name="ddp_cbindex"></a> DDP_CBIndex
 
 `DoDataExchange`Bir Integer özelliğinin değerini, özellik sayfasındaki Birleşik giriş kutusunda bulunan geçerli seçimin diziniyle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -79,7 +79,7 @@ Bu işlev, karşılık gelen `DDX_CBIndex` işlev çağrısından önce çağrı
 
   **Başlık** afxctl. h
 
-## <a name="ddp_cbstring"></a><a name="ddp_cbstring"></a>DDP_CBString
+## <a name="ddp_cbstring"></a><a name="ddp_cbstring"></a> DDP_CBString
 
 `DoDataExchange`Bir dize özelliğinin değerini özellik sayfasındaki Birleşik giriş kutusunda bulunan geçerli seçimle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -113,7 +113,7 @@ Bu işlev, karşılık gelen `DDX_CBString` işlev çağrısından önce çağr�
 
   **Başlık** afxctl. h
 
-## <a name="ddp_cbstringexact"></a><a name="ddp_cbstringexact"></a>DDP_CBStringExact
+## <a name="ddp_cbstringexact"></a><a name="ddp_cbstringexact"></a> DDP_CBStringExact
 
 `DoDataExchange`Özellik sayfasındaki Birleşik giriş kutusunda bulunan geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -147,7 +147,7 @@ Bu işlev, karşılık gelen `DDX_CBStringExact` işlev çağrısından önce ç
 
   **Başlık** afxctl. h
 
-## <a name="ddp_check"></a><a name="ddp_check"></a>DDP_Check
+## <a name="ddp_check"></a><a name="ddp_check"></a> DDP_Check
 
 `DoDataExchange`Özelliğin değerini ilişkili özellik sayfası onay kutusu denetimiyle senkronize etmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -181,7 +181,7 @@ Bu işlev, karşılık gelen `DDX_Check` işlev çağrısından önce çağrılm
 
   **Başlık** afxctl. h
 
-## <a name="ddp_lbindex"></a><a name="ddp_lbindex"></a>DDP_LBIndex
+## <a name="ddp_lbindex"></a><a name="ddp_lbindex"></a> DDP_LBIndex
 
 `DoDataExchange`Bir Integer özelliğinin değerini, özellik sayfasındaki bir liste kutusunda geçerli seçimin diziniyle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -215,7 +215,7 @@ Bu işlev, karşılık gelen `DDX_LBIndex` işlev çağrısından önce çağrı
 
   **Başlık** afxctl. h
 
-## <a name="ddp_lbstring"></a><a name="ddp_lbstring"></a>DDP_LBString
+## <a name="ddp_lbstring"></a><a name="ddp_lbstring"></a> DDP_LBString
 
 `DoDataExchange`Bir dize özelliğinin değerini, özellik sayfasındaki bir liste kutusunda bulunan geçerli seçimle eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -249,7 +249,7 @@ Bu işlev, karşılık gelen `DDX_LBString` işlev çağrısından önce çağr�
 
   **Başlık** afxctl. h
 
-## <a name="ddp_lbstringexact"></a><a name="ddp_lbstringexact"></a>DDP_LBStringExact
+## <a name="ddp_lbstringexact"></a><a name="ddp_lbstringexact"></a> DDP_LBStringExact
 
 `DoDataExchange`Özellik sayfasındaki bir liste kutusunda bulunan geçerli seçimle tam olarak eşleşen bir dize özelliğinin değerini eşleştirmek için özellik sayfanızın işlevinde bu işlevi çağırın.
 
@@ -283,7 +283,7 @@ Bu işlev, karşılık gelen `DDX_LBStringExact` işlev çağrısından önce ç
 
   **Başlık** afxctl. h
 
-## <a name="ddp_postprocessing"></a><a name="ddp_postprocessing"></a>DDP_PostProcessing
+## <a name="ddp_postprocessing"></a><a name="ddp_postprocessing"></a> DDP_PostProcessing
 
 Özellik değerleri, özellik değerleri `DoDataExchange` kaydedilirken denetim sayfasından denetimi aktarmak için özellik sayfasının işlevinde bu işlevi çağırın.
 
@@ -306,7 +306,7 @@ Bu işlev, tüm veri değişimi işlevleri tamamlandıktan sonra çağrılmalıd
 
   **Başlık** afxctl. h
 
-## <a name="ddp_radio"></a><a name="ddp_radio"></a>DDP_Radio
+## <a name="ddp_radio"></a><a name="ddp_radio"></a> DDP_Radio
 
 `DoPropExchange`Özelliğin değerini ilişkili özellik sayfası radyo düğmesi denetimiyle eşleştirmek için, denetimin işlevinde bu işlevi çağırın.
 
@@ -340,7 +340,7 @@ Bu işlev, karşılık gelen `DDX_Radio` işlev çağrısından önce çağrılm
 
   **Başlık** afxctl. h
 
-## <a name="ddp_text"></a><a name="ddp_text"></a>DDP_Text
+## <a name="ddp_text"></a><a name="ddp_text"></a> DDP_Text
 
 `DoDataExchange`Özelliğin değerini ilişkili özellik sayfası denetimiyle eşleştirmek için denetiminizin işlevinde bu işlevi çağırın.
 
@@ -416,7 +416,7 @@ Bu işlev, karşılık gelen `DDX_Text` işlev çağrısından önce çağrılma
 
   **Başlık** afxctl. h
 
-## <a name="begin_proppageids"></a><a name="begin_proppageids"></a>BEGIN_PROPPAGEIDS
+## <a name="begin_proppageids"></a><a name="begin_proppageids"></a> BEGIN_PROPPAGEIDS
 
 Denetimin özellik sayfası kimlikleri listesinin tanımını başlatır.
 
@@ -429,7 +429,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 *class_name*<br/>
 Özellik sayfaları belirtime denetim sınıfının adı.
 
-*biriktirme*<br/>
+*count*<br/>
 Denetim sınıfı tarafından kullanılan özellik sayfası sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -442,7 +442,7 @@ Sınıfınız için üye işlevleri tanımlayan uygulama (. cpp) dosyasında, ö
 
   **Başlık** afxctl. h
 
-## <a name="end_proppageids"></a><a name="end_proppageids"></a>END_PROPPAGEIDS
+## <a name="end_proppageids"></a><a name="end_proppageids"></a> END_PROPPAGEIDS
 
 Özellik sayfası KIMLIK listenizin tanımını sonlandırır.
 
@@ -459,7 +459,7 @@ END_PROPPAGEIDS(class_name)
 
   **Başlık** afxctl. h
 
-## <a name="proppageid"></a><a name="proppageid"></a>PROPPAGEıD
+## <a name="proppageid"></a><a name="proppageid"></a> PROPPAGEıD
 
 OLE denetiminiz tarafından kullanılmak üzere bir özellik sayfası ekler.
 

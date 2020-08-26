@@ -1,23 +1,23 @@
 ---
-title: uıdefault (C++ com özniteliği)
+title: uıdefault (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.uidefault
 helpviewer_keywords:
 - uidefault attribute
 ms.assetid: 200de0e0-2e34-40a2-bae4-8d485a62264d
-ms.openlocfilehash: 55e88ab4dfaaa4157a99c4dc523f205370f78c46
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 70f54c9d3e6aaa46aef08d109e8682989e382120
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214467"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843072"
 ---
 # <a name="uidefault"></a>uidefault
 
 Tür bilgisi üyesinin Kullanıcı arabiriminde görüntülenmek üzere varsayılan üye olduğunu gösterir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [uidefault]
@@ -50,18 +50,16 @@ __interface ICustom{
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Interface yöntemi|
+|**Şunlara uygulanır**|Interface yöntemi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)
+[Yöntem öznitelikleri](method-attributes.md)

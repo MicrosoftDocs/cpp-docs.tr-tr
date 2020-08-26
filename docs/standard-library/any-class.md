@@ -15,12 +15,12 @@ helpviewer_keywords:
 - any/std::any::reset
 - any/std::any::swap
 - any/std::any::type
-ms.openlocfilehash: 66e74a7fa7f35aae9ac9e1f3ba7520e8d3f9b3f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: defec0f6ab8f59219afddcefc67ea93435347978
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203968"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844749"
 ---
 # <a name="any-class"></a>herhangi bir sınıf
 
@@ -28,7 +28,7 @@ Oluşturucu gereksinimlerini karşılayan herhangi bir türün bir örneğini de
 
 Saklı örneğe içerilen değer denir. İki durum, her ikisi de bir değere sahip değilse ya da her ikisinde de bir değer varsa ve içerilen değerler aynıysa aynıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class any
@@ -38,13 +38,13 @@ class any
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[kaydedilmemiş](#any)|Türünde bir nesne oluşturur `any` .|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Emplace](#emplace)|Herhangi bir değer ayarlar.|
 |[has_value](#has_value)|**`true`** Herhangi birinin bir değere sahip olup olmadığını döndürür.|
@@ -54,11 +54,11 @@ class any
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç =](#op_eq)|Herhangi birinin bir kopyasını diğerinin kopyasıyla değiştirir.|
 
-## <a name="any"></a><a name="any"></a>kaydedilmemiş
+## <a name="any"></a><a name="any"></a> kaydedilmemiş
 
 Türünde bir nesne oluşturur `any` . Ayrıca bir yıkıcı içerir.
 
@@ -76,7 +76,7 @@ template <class T, class U, class... Args>
 ~any();
 ```
 
-## <a name="emplace"></a><a name="emplace"></a>Emplace
+## <a name="emplace"></a><a name="emplace"></a> Emplace
 
 Herhangi bir değer ayarlar.
 
@@ -87,7 +87,7 @@ template <class T, class U, class... Args>
     decay_t<T>& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="has_value"></a><a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a> has_value
 
 **`true`** Herhangi birinin bir değere sahip olup olmadığını döndürür.
 
@@ -95,7 +95,7 @@ template <class T, class U, class... Args>
 bool has_value() const noexcept;
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Herhangi birinin bir kopyasını diğerinin kopyasıyla değiştirir.
 
@@ -111,7 +111,7 @@ template <class T>
 *Right*\
 Herhangi birine kopyalanırlar.
 
-## <a name="reset"></a><a name="reset"></a>döndürmek
+## <a name="reset"></a><a name="reset"></a> döndürmek
 
 Herhangi birini sıfırlar.
 
@@ -119,7 +119,7 @@ Herhangi birini sıfırlar.
 void reset() noexcept;
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki nesneyi değiştirir.
 
@@ -127,7 +127,7 @@ void reset() noexcept;
 void swap(any& rhs) noexcept;
 ```
 
-## <a name="type"></a><a name="type"></a>türüyle
+## <a name="type"></a><a name="type"></a> türüyle
 
 Herhangi bir türü döndürür.
 

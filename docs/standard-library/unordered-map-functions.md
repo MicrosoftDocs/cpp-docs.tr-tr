@@ -1,5 +1,5 @@
 ---
-title: '&lt;unordered_map&gt; işlevleri'
+title: '&lt;unordered_map &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - unordered_map/std::swap
@@ -8,20 +8,19 @@ f1_keywords:
 ms.assetid: cf2e4115-f205-4a0e-90be-a143ffcc1f44
 helpviewer_keywords:
 - std::swap (unordered_map/multimap)
-ms.openlocfilehash: 759957028b74f984385f47647275cf22d561f59c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9e572e4ba8cb4c6cb15329342a7947c35ece7270
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373132"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844268"
 ---
-# <a name="ltunordered_mapgt-functions"></a>&lt;unordered_map&gt; işlevleri
+# <a name="ltunordered_mapgt-functions"></a>&lt;unordered_map &gt; işlevleri
 
-|||
-|-|-|
-|[takas (unordered_map)](#swap)|[takas (unordered_multimap)](#swap_function_multimap)|
+[takas (unordered_map)](#swap) 
+ [takas (unordered_multimap)](#swap_function_multimap)
 
-## <a name="swap-unordered_map"></a><a name="swap"></a>takas (unordered_map)
+## <a name="swap-unordered_map"></a><a name="swap"></a> takas (unordered_map)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -37,27 +36,27 @@ void swap(
 *Anahtar*\
 Anahtar türü.
 
-*Ty*\
+*Kalite*\
 Eşlenen tür.
 
-*Karma*\
+*Yla*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*\
+*Tahsis*\
 Ayırıcı sınıf.
 
-*Sol*\
-Takas için ilk konteyner.
+*tarafta*\
+Takas edilecek ilk kapsayıcı.
 
-*Doğru*\
-Takas için ikinci konteyner.
+*Right*\
+Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi unordered_map `left.`yürütür::swap [unordered_map::swap](../standard-library/unordered-map-class.md#swap)`(right)`.
+Şablon işlevi `left.` [unordered_map:: Swap](../standard-library/unordered-map-class.md#swap)yürütür `(right)` .
 
 ### <a name="example"></a>Örnek
 
@@ -114,7 +113,7 @@ int main()
 [c, 3] [b, 2] [a, 1]
 ```
 
-## <a name="swap-unordered_multimap"></a><a name="swap_function_multimap"></a>takas (unordered_multimap)
+## <a name="swap-unordered_multimap"></a><a name="swap_function_multimap"></a> takas (unordered_multimap)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -130,27 +129,27 @@ void swap(
 *Anahtar*\
 Anahtar türü.
 
-*Ty*\
+*Kalite*\
 Eşlenen tür.
 
-*Karma*\
+*Yla*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*\
+*Tahsis*\
 Ayırıcı sınıf.
 
-*Sol*\
-Takas için ilk konteyner.
+*tarafta*\
+Takas edilecek ilk kapsayıcı.
 
-*Doğru*\
-Takas için ikinci konteyner.
+*Right*\
+Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi unordered_multimap `left.`yürütür::swap [unordered_multimap::swap](../standard-library/unordered-multimap-class.md#swap)`(right)`.
+Şablon işlevi `left.` [unordered_multimap:: Swap](../standard-library/unordered-multimap-class.md#swap)yürütür `(right)` .
 
 ### <a name="example"></a>Örnek
 

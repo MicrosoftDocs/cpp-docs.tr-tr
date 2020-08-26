@@ -19,18 +19,18 @@ helpviewer_keywords:
 - std::error_code::default_error_condition
 - std::error_code::message
 ms.assetid: c09b4a96-cb14-4281-a319-63543f9b2b4a
-ms.openlocfilehash: 3f272c25572ebebd95e5a59b50094d8e1872c90a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5bbd67d2967a1a6d070ece54ea464a2a5a2deac9
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228290"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844463"
 ---
 # <a name="error_code-class"></a>error_code Sınıfı
 
 Uygulamaya özgü olan alt düzey sistem hatalarını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class error_code;
@@ -44,19 +44,19 @@ Sınıf türündeki bir nesne bir `error_code` hata kodu değerini ve rapor alt 
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[error_code](#error_code)|Türünde bir nesne oluşturur `error_code` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[value_type](#value_type)|Depolanan hata kodu değerini temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[assign (atamak)](#assign) |Hata koduna bir hata kodu değeri ve kategorisi atar.|
 |[alan](#category)|Hata kategorisini döndürür.|
@@ -66,7 +66,7 @@ Sınıf türündeki bir nesne bir `error_code` hata kodu değerini ve rapor alt 
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç = =](#op_eq_eq)|Nesneler arasındaki eşitlik için testler `error_code` .|
 |[işleç! =](#op_neq)|Nesneler arasında eşitsizlik için testler `error_code` .|
@@ -74,7 +74,7 @@ Sınıf türündeki bir nesne bir `error_code` hata kodu değerini ve rapor alt 
 |[işleç =](#op_eq)|Nesnesine yeni bir numaralandırma değeri atar `error_code` .|
 |[işleç bool](#op_bool)|Türünde bir değişken yayınlar `error_code` .|
 
-### <a name="assign"></a><a name="assign"></a>ata
+### <a name="assign"></a><a name="assign"></a> ata
 
 Hata koduna bir hata kodu değeri ve kategorisi atar.
 
@@ -94,7 +94,7 @@ void assign(value_type val, const error_category& _Cat);
 
 Üye işlevi, değer olarak *Val* 'yi hata kodu değeri ve *_Cat*bir işaretçi olarak depolar.
 
-### <a name="category"></a><a name="category"></a>alan
+### <a name="category"></a><a name="category"></a> alan
 
 Hata kategorisini döndürür.
 
@@ -104,7 +104,7 @@ const error_category& category() const;
 
 #### <a name="remarks"></a>Açıklamalar
 
-### <a name="clear"></a><a name="clear"></a>lediğiniz
+### <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Hata kodu değerini ve kategorisini temizler.
 
@@ -116,7 +116,7 @@ clear();
 
 Üye işlevi sıfır hata kodu değerini ve [generic_category](../standard-library/system-error-functions.md#generic_category) nesnesine bir işaretçi depolar.
 
-### <a name="default_error_condition"></a><a name="default_error_condition"></a>default_error_condition
+### <a name="default_error_condition"></a><a name="default_error_condition"></a> default_error_condition
 
 Varsayılan hata koşulunu döndürür.
 
@@ -132,7 +132,7 @@ error_condition default_error_condition() const;
 
 Bu üye işlev döndürür `category().default_error_condition(value())` .
 
-### <a name="error_code"></a><a name="error_code"></a>error_code
+### <a name="error_code"></a><a name="error_code"></a> error_code
 
 Türünde bir nesne oluşturur `error_code` .
 
@@ -166,7 +166,7 @@ error_code(_Enum _Errcode,
 
 Üçüncü Oluşturucu, `(value_type)_Errcode` hata kodu değeri olarak depolar ve [generic_category](../standard-library/system-error-functions.md#generic_category)bir işaretçisi.
 
-### <a name="message"></a><a name="message"></a>İleti
+### <a name="message"></a><a name="message"></a> İleti
 
 Hata kodunun adını döndürür.
 
@@ -182,7 +182,7 @@ string message() const;
 
 Bu üye işlev döndürür `category().message(value())` .
 
-### <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+### <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Nesneler arasındaki eşitlik için testler `error_code` .
 
@@ -203,7 +203,7 @@ Eşitlik için sınanacak nesne.
 
 Üye işleci döndürür `category() == right.category() && value == right.value()` .
 
-### <a name="operator"></a><a name="op_neq"></a>işleç! =
+### <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Nesneler arasında eşitsizlik için testler `error_code` .
 
@@ -224,7 +224,7 @@ Eşitsizlik için test edilecek nesne.
 
 Üye işleci döndürür `!(*this == right)` .
 
-### <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+### <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 `error_code`Nesnenin `error_code` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.
 
@@ -245,7 +245,7 @@ Karşılaştırılacak error_code nesnesi.
 
 Üye işleci döndürür `category() < right.category() || category() == right.category() && value < right.value()` .
 
-### <a name="operator"></a><a name="op_eq"></a>işleç =
+### <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Nesnesine yeni bir numaralandırma değeri atar `error_code` .
 
@@ -268,7 +268,7 @@ Nesneye atanacak numaralandırma değeri `error_code` .
 
 Üye işleci, `(value_type)_Errcode` hata kodu değeri ve [generic_category](../standard-library/system-error-functions.md#generic_category)işaretçisi olarak depolar. Döndürür **`*this`** .
 
-### <a name="operator-bool"></a><a name="op_bool"></a>işleç bool
+### <a name="operator-bool"></a><a name="op_bool"></a> işleç bool
 
 Türünde bir değişken yayınlar `error_code` .
 
@@ -284,7 +284,7 @@ Nesnenin Boolean değeri `error_code` .
 
 İşleci **`true`** yalnızca [değeri](#value) sıfıra eşit değilse, dönüştürülebilir bir değer döndürür. Dönüş türü, türüne **`bool`** değil, `void *` veya diğer bilinen skalar türlere dönüştürülebilir.
 
-### <a name="value"></a><a name="value"></a>deeri
+### <a name="value"></a><a name="value"></a> deeri
 
 Depolanan hata kodu değerini döndürür.
 
@@ -296,7 +296,7 @@ value_type value() const;
 
 [Value_type](#value_type)türünde depolanan hata kodu değeri.
 
-### <a name="value_type"></a><a name="value_type"></a>value_type
+### <a name="value_type"></a><a name="value_type"></a> value_type
 
 Depolanan hata kodu değerini temsil eden bir tür.
 

@@ -49,18 +49,18 @@ helpviewer_keywords:
 - IsUpdateAllowed method
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-ms.openlocfilehash: 6347a42b9065239f768c6b50c430946393358df1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7a63062a02ebcc6c8a89fadceb36dc81bc9af88c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370743"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844931"
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl Sınıfı
 
-[IRowsetUpdate](/previous-versions/windows/desktop/ms714401(v=vs.85)) arabiriminin OLE DB Şablonları uygulaması.
+[IRowsetUpdate](/previous-versions/windows/desktop/ms714401(v=vs.85)) arabiriminin OLE DB Şablonları uygulamasıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -82,74 +82,74 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-'den `IRowsetUpdateImpl`türetilen bir sınıf.
+Sınıfından türetilmiş bir sınıf `IRowsetUpdateImpl` .
 
 *Depolama*<br/>
 Kullanıcı kaydı.
 
 *UpdateArray*<br/>
-Rowset'i güncelleştirmek için önbelleğe alınmış verileri içeren bir dizi.
+Satır kümesini güncelleştirmek için önbelleğe alınmış verileri içeren bir dizi.
 
-*Rowclass*<br/>
-Depolama `HROW`birimi.
+*RowClass*<br/>
+İçin depolama birimi `HROW` .
 
 *MapClass*<br/>
 Sağlayıcı tarafından tutulan tüm satır tutamaçları için depolama birimi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
-### <a name="interface-methods-used-with-irowsetchange"></a>Arayüz Yöntemleri (IRowsetChange ile birlikte kullanılır)
+### <a name="interface-methods-used-with-irowsetchange"></a>Arabirim yöntemleri (IRowsetChange ile kullanılır)
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[Setdata](#setdata)|Veri değerlerini bir veya daha fazla sütunda ayarlar.|
+|[SetData](#setdata)|Veri değerlerini bir veya daha fazla sütunda ayarlar.|
 
-### <a name="interface-methods-used-with-irowsetupdate"></a>Arayüz Yöntemleri (IRowsetUpdate ile birlikte kullanılır)
+### <a name="interface-methods-used-with-irowsetupdate"></a>Arabirim yöntemleri (IRowsetUpdate ile kullanılır)
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[Orijinal Verileri Alın](#getoriginaldata)|Bekleyen değişiklikleri yoksayarak, en son veri kaynağına aktarılan veya veri kaynağından elde edilen verileri alır.|
-|[GetPendingRows](#getpendingrows)|Bekleyen değişikliklerle birlikte satırların listesini döndürür.|
-|[GetRowStatus](#getrowstatus)|Belirtilen satırların durumunu verir.|
-|[Geri al](#undo)|Son getirme veya güncelleştirmeden bu yana satırda yapılan değişiklikleri geri alır.|
-|[Güncelleştir](#update)|Son getirme veya güncelleştirmeden bu yana satırda yapılan değişiklikleri iletir.|
+|[GetOriginalData](#getoriginaldata)|Bekleyen değişiklikleri yoksayarak veri kaynağından en son iletilen veya alınan verileri alır.|
+|[GetPendingRows](#getpendingrows)|Bekleyen değişiklikleri olan satırların bir listesini döndürür.|
+|[GetRowStatus](#getrowstatus)|Belirtilen satırların durumunu döndürür.|
+|[Geri Al](#undo)|Son getirme veya güncelleştirmeden sonra satırdaki değişiklikleri geri alır.|
+|[Güncelleştirme](#update)|Son getirme veya güncelleştirmeden bu yana satırda yapılan değişiklikleri iletir.|
 
-### <a name="implementation-methods-callback"></a>Uygulama Yöntemleri (Geri Arama)
+### <a name="implementation-methods-callback"></a>Uygulama yöntemleri (geri çağırma)
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[IsUpdateAllowed](#isupdateallowed)|Güncelleştirmelere izin vermeden önce güvenlik, bütünlük ve benzeri denetimleri denetlemek için kullanılır.|
+|[Isupdateallowed](#isupdateallowed)|Güncelleştirmelere izin vermeden önce güvenlik, bütünlük ve benzerlerini denetlemek için kullanılır.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[m_mapCachedData](#mapcacheddata)|Ertelenmiş işlemin özgün verilerini içerir.|
+|[m_mapCachedData](#mapcacheddata)|Ertelenmiş işlem için özgün verileri içerir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk okumalı ve [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85))için belgeleri anlamak , orada açıklanan her şey de burada geçerlidir çünkü. Ayrıca, veri ayarı konusunda *OLE DB Programcı Başvurusu'nun* 6.
+Burada açıklanan her şey burada da geçerli olduğundan, [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85))belgelerini okumanız ve anlamanız gerekir. Ayrıca, ayar verilerinde *OLE DB Programcı başvurusunun* Bölüm 6 ' yı da okumalısınız.
 
-`IRowsetUpdateImpl`tüketicilerin veri kaynağına `IRowsetUpdate` yapılan `IRowsetChange` değişikliklerin iletimini geciktirmesini ve iletimden önce değişiklikleri geri almalarını sağlayan OLE DB arabirimini uygular.
+`IRowsetUpdateImpl``IRowsetUpdate`, tüketicilerin veri kaynağına yapılan değişikliklerin aktarımını geciktirmesini `IRowsetChange` ve iletimden önce değişiklikleri geri almasını sağlayan OLE DB arabirimini uygular.
 
 > [!IMPORTANT]
-> Sağlayıcınızı uygulamaya çalışmadan önce aşağıdaki belgeleri okumanız önerilir:
+> Sağlayıcınızı uygulamayı denemeden önce aşağıdaki belgeleri okumanız kesinlikle önerilir:
 
-- [Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)
+- [Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)
 
-- *OLE DB Programcı Referans* Bölüm 6
+- *OLE DB Programcı başvurusunun* 6. bölümü
 
-- Ayrıca, [Sınıfın UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örneğinde nasıl kullanıldığını da görün `RUpdateRowset`
+- Ayrıca, `RUpdateRowset` sınıfının [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örneğinde nasıl kullanıldığını görün
 
-## <a name="irowsetupdateimplsetdata"></a><a name="setdata"></a>IRowsetUpdateImpl::SetData
+## <a name="irowsetupdateimplsetdata"></a><a name="setdata"></a> IRowsetUpdateImpl:: SetData
 
 Veri değerlerini bir veya daha fazla sütunda ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (SetData )(HROW hRow,
@@ -159,17 +159,17 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz. [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) *OLE DB Programcı'nın Referans*.
+*OLE DB Programcı başvurusunda*bkz. [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [IRowsetChangeImpl geçersiz kılar::SetData](../../data/oledb/irowsetchangeimpl-setdata.md) yöntemi, işlemin hemen veya ertelenmiş işleme izin vermek için orijinal verilerin önbelleğe alma içerir.
+Bu yöntem, [IRowsetChangeImpl:: SetData](../../data/oledb/irowsetchangeimpl-setdata.md) metodunu geçersiz kılar, ancak işlemin anında veya ertelenmiş işlemesini sağlamak için özgün verilerin önbelleğe alınmasını içerir.
 
-## <a name="irowsetupdateimplgetoriginaldata"></a><a name="getoriginaldata"></a>IRowsetUpdateImpl::GetOriginalData
+## <a name="irowsetupdateimplgetoriginaldata"></a><a name="getoriginaldata"></a> IRowsetUpdateImpl:: GetOriginalData
 
-Bekleyen değişiklikleri yoksayarak, en son veri kaynağına aktarılan veya veri kaynağından elde edilen verileri alır.
+Bekleyen değişiklikleri yoksayarak veri kaynağından en son iletilen veya alınan verileri alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetOriginalData )(HROW hRow,
@@ -179,13 +179,13 @@ STDMETHOD (GetOriginalData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz. [IRowsetUpdate::GetOriginalData](/previous-versions/windows/desktop/ms709947(v=vs.85)) in the *OLE DB Programcı'nın Referansı*.
+*OLE DB Programcı başvurusunda*bkz. [IRowsetUpdate:: GetOriginalData](/previous-versions/windows/desktop/ms709947(v=vs.85)) .
 
-## <a name="irowsetupdateimplgetpendingrows"></a><a name="getpendingrows"></a>IRowsetUpdateImpl::GetPendingRows
+## <a name="irowsetupdateimplgetpendingrows"></a><a name="getpendingrows"></a> IRowsetUpdateImpl:: GetPendingRows
 
-Bekleyen değişikliklerle birlikte satırların listesini döndürür.
+Bekleyen değişiklikleri olan satırların bir listesini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,
@@ -197,20 +197,20 @@ STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-*hAyrılmış*<br/>
-[içinde] IRowsetUpdate *hChapter* parametre karşılık [gelir::GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85)).
+*Hayrılmış*<br/>
+'ndaki [IRowsetUpdate:: GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85))Içindeki *hbölüm* parametresine karşılık gelir.
 
-Diğer parametreler için, [Bkz. IRowsetUpdate::GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85)) in the *OLE DB Programcı'nın Referansı.*
+Diğer parametreler için *OLE DB Programcı başvurusunda* [IRowsetUpdate:: GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85)) bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için, [IRowsetUpdate bakın:: GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85)) *OLE DB Programcı's Referans*.
+Daha fazla bilgi için *OLE DB Programcı başvurusunda* [IRowsetUpdate:: GetPendingRows](/previous-versions/windows/desktop/ms719626(v=vs.85)) bölümüne bakın.
 
-## <a name="irowsetupdateimplgetrowstatus"></a><a name="getrowstatus"></a>IRowsetUpdateImpl::GetRowStatus
+## <a name="irowsetupdateimplgetrowstatus"></a><a name="getrowstatus"></a> IRowsetUpdateImpl:: GetRowStatus
 
-Belirtilen satırların durumunu verir.
+Belirtilen satırların durumunu döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,
@@ -221,16 +221,16 @@ STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-*hAyrılmış*<br/>
-[içinde] IRowsetUpdate *hChapter* parametre karşılık [gelir::GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85)).
+*Hayrılmış*<br/>
+'ndaki [IRowsetUpdate:: GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85))Içindeki *hbölüm* parametresine karşılık gelir.
 
-Diğer parametreler için, [bkz: IRowsetUpdate::GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85)) *OLE DB Programcı's Reference*.
+Diğer parametreler için *OLE DB Programcı başvurusunda*bkz. [IRowsetUpdate:: GetRowStatus](/previous-versions/windows/desktop/ms724377(v=vs.85)) .
 
-## <a name="irowsetupdateimplundo"></a><a name="undo"></a>IRowsetUpdateImpl::Geri
+## <a name="irowsetupdateimplundo"></a><a name="undo"></a> IRowsetUpdateImpl:: Undo
 
-Son getirme veya güncelleştirmeden bu yana satırda yapılan değişiklikleri geri alır.
+Son getirme veya güncelleştirmeden sonra satırdaki değişiklikleri geri alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (Undo )(HCHAPTER /* hReserved */,
@@ -243,22 +243,22 @@ STDMETHOD (Undo )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-*hAyrılmış*<br/>
-[içinde] IRowsetUpdate *hChapter* parametre karşılık [gelir::Geri .](/previous-versions/windows/desktop/ms719655(v=vs.85))
+*Hayrılmış*<br/>
+'ndaki [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85))Içindeki *hbölüm* parametresine karşılık gelir.
 
-*pcRowsUndone*<br/>
-[çıkış] IRowsetUpdate *pcRows* parametre karşılık [gelir::Geri .](/previous-versions/windows/desktop/ms719655(v=vs.85))
+*Pcrowsunbitti*<br/>
+dışı [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85))Içindeki *pcRows* parametresine karşılık gelir.
 
 *prgRowsUndone*<br/>
-[içinde] IRowsetUpdate *prgRows* parametre karşılık [gelir::Geri .](/previous-versions/windows/desktop/ms719655(v=vs.85))
+'ndaki [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85))Içindeki *prbüyüdükçe* parametresine karşılık gelir.
 
-Diğer parametreler için, [bkz: IRowsetUpdate::OLE](/previous-versions/windows/desktop/ms719655(v=vs.85)) *DB Programcı'nın Referansını*Geri Al.
+Diğer parametreler için *OLE DB Programcı başvurusunda*bkz. [IRowsetUpdate:: Undo](/previous-versions/windows/desktop/ms719655(v=vs.85)) .
 
-## <a name="irowsetupdateimplupdate"></a><a name="update"></a>IRowsetUpdateImpl::Güncelleme
+## <a name="irowsetupdateimplupdate"></a><a name="update"></a> IRowsetUpdateImpl:: Update
 
 Son getirme veya güncelleştirmeden bu yana satırda yapılan değişiklikleri iletir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (Update )(HCHAPTER /* hReserved */,
@@ -271,20 +271,20 @@ STDMETHOD (Update )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-*hAyrılmış*<br/>
-[içinde] IRowsetUpdate *hChapter* parametre karşılık [gelir::Güncelleme](/previous-versions/windows/desktop/ms719709(v=vs.85)).
+*Hayrılmış*<br/>
+'ndaki [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85))Içindeki *hbölüm* parametresine karşılık gelir.
 
-Diğer parametreler için, [Bkz. IRowsetUpdate::OLE](/previous-versions/windows/desktop/ms719709(v=vs.85)) *DB Programcısının Referansında*güncelleştirme.
+Diğer parametreler için *OLE DB Programcı başvurusunda* [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85)) bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değişiklikler [IRowsetChangeImpl::FlushData](../../data/oledb/irowsetchangeimpl-flushdata.md)çağırarak iletilir. TüketicicRowset aramak [gerekir::Değişikliklerin](../../data/oledb/crowset-update.md) etkili olması için güncelleştirme. *PrgRowstatus'u,* *OLE DB Programcısının Referansında* [Satır Durumlarında](/previous-versions/windows/desktop/ms722752(v=vs.85)) açıklandığı gibi uygun bir değere ayarlayın.
+Değişiklikler [IRowsetChangeImpl:: FlushData](../../data/oledb/irowsetchangeimpl-flushdata.md)çağırarak iletilir. Değişikliklerin etkili olması için tüketiciden [CRowset:: Update](../../data/oledb/crowset-update.md) çağrısı yapılmalıdır. *PrgRowstatus* *programcı başvurusunda satır ole db* [durumları](/previous-versions/windows/desktop/ms722752(v=vs.85)) bölümünde açıklandığı gibi uygun bir değere ayarlayın.
 
-## <a name="irowsetupdateimplisupdateallowed"></a><a name="isupdateallowed"></a>IRowsetUpdateImpl::IsUpdateAllowed
+## <a name="irowsetupdateimplisupdateallowed"></a><a name="isupdateallowed"></a> IRowsetUpdateImpl:: ısupdateallowed
 
-Güncelleştirmeden önce güvenlik, bütünlük ve benzeri denetler için bu yöntemi geçersiz kılın.
+Güncelleştirmelerden önce güvenlik, bütünlük ve benzerlerini denetlemek için bu yöntemi geçersiz kılın.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
@@ -294,24 +294,24 @@ HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
 
 #### <a name="parameters"></a>Parametreler
 
-*Durum*<br/>
-[içinde] Satırlarda bekleyen işlemlerin durumu.
+*durumlarına*<br/>
+'ndaki Satırlarda bekleyen işlemlerin durumu.
 
 *hRowUpdate*<br/>
-[içinde] Kullanıcının güncelleştirmek istediği satırları işleme.
+'ndaki Kullanıcının güncelleştirmek istediği satırlara yönelik tanıtıcı.
 
 *pRowStatus*<br/>
-[çıkış] Durum kullanıcıya döndürülür.
+dışı Kullanıcıya döndürülen durum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir güncelleştirmeye izin verilmesi gerektiğini belirlerseniz, S_OK döndürür; aksi takdirde E_FAIL döndürür. Bir güncelleştirmeye izin verirseniz, `DBROWSTATUS` [iRowsetUpdateImpl'de](../../data/oledb/irowsetupdateimpl-update.md) de ayarlamanız gerekir::Uygun bir [satır durumuna](/previous-versions/windows/desktop/ms722752(v=vs.85))güncelleme.
+Bir güncelleştirmenin izin verileceğini belirlerseniz, S_OK döndürür; Aksi takdirde E_FAIL döndürür. Bir güncelleştirmeye izin verirseniz, Ayrıca, `DBROWSTATUS` [IRowsetUpdateImpl:: Update](../../data/oledb/irowsetupdateimpl-update.md) içindeki öğesini uygun bir [satır durumuna](/previous-versions/windows/desktop/ms722752(v=vs.85))ayarlamanız gerekir.
 
-## <a name="irowsetupdateimplm_mapcacheddata"></a><a name="mapcacheddata"></a>IRowsetUpdateImpl::m_mapCachedData
+## <a name="irowsetupdateimplm_mapcacheddata"></a><a name="mapcacheddata"></a> IRowsetUpdateImpl:: m_mapCachedData
 
-Ertelenmiş işlemin özgün verilerini içeren bir harita.
+Ertelenmiş işlem için özgün verileri içeren bir harita.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 CAtlMap<
@@ -323,14 +323,14 @@ m_mapCachedData;
 
 #### <a name="parameters"></a>Parametreler
 
-*Hrow*<br/>
-Veriler için satırları işle.
+*hRow*<br/>
+Verilerin satırları için tanıtıcı.
 
-*Pdata*<br/>
-Önbelleğe alınacak verilere işaretçi. Veriler tür *Depolama* (kullanıcı kayıt sınıfı) olduğunu. [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md) *Sınıfındadepolama* şablonu bağımsız değişkenine bakın.
+*pData*<br/>
+Önbelleğe alınacak verilere yönelik bir işaretçi. Veri *depolama* türüdür (Kullanıcı kayıt sınıfı). [IRowsetUpdateImpl sınıfında](../../data/oledb/irowsetupdateimpl-class.md) *depolama* şablonu bağımsız değişkenine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablon Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)

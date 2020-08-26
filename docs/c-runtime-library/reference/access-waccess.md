@@ -37,18 +37,18 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-ms.openlocfilehash: ae213768e30fa8120a80aaa30b3fe1b53e802d78
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fdada7f02115f44aa6a7e3c5e9bdfdf5e65f8b2f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920263"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846595"
 ---
 # <a name="_access-_waccess"></a>_access, _waccess
 
 Bir dosyanın salt okunurdur olup olmadığını belirler. Daha güvenli sürümler kullanılabilir; bkz. [_access_s, _waccess_s](access-s-waccess-s.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _access(
@@ -71,13 +71,13 @@ Okuma/yazma özniteliği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen moda sahip değilse, işlev-1 değerini döndürür; Bu durumda, `errno` aşağıdaki tabloda gösterildiği gibi ayarlanır.
+Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen moda sahip değilse, işlev-1 değerini döndürür; Bu durumda, `errno` Aşağıdaki tabloda gösterildiği gibi ayarlanır.
 
-|||
-|-|-|
-`EACCES`|Erişim reddedildi: dosyanın izin ayarı belirtilen erişime izin vermiyor.
-`ENOENT`|Dosya adı veya yolu bulunamadı.
-`EINVAL`|Geçersiz parametre.
+| Değer | Açıklama |
+|--|--|
+| `EACCES` | Erişim reddedildi: dosyanın izin ayarı belirtilen erişime izin vermiyor. |
+| `ENOENT` | Dosya adı veya yolu bulunamadı. |
+| `EINVAL` | Geçersiz parametre. |
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -96,7 +96,7 @@ Bu işlev yalnızca dosya ve dizinin salt okunurdur olup olmadığını denetler
 
 **_waccess** , **_access**geniş karakterli bir sürümüdür; _waccess *yol* bağımsız değişkeni **_waccess** , geniş karakterli bir dizedir. **_waccess** ve **_access** aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev öğesini olarak `errno` `EINVAL` ayarlar ve-1 döndürür.
+Bu işlev, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev öğesini `errno` olarak ayarlar `EINVAL` ve-1 döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -110,8 +110,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_access**|\<GÇ. h>|\<errno. h>|
-|**_waccess**|\<wchar. h> veya \<GÇ. h>|\<errno. h>|
+|**_access**|\<io.h>|\<errno.h>|
+|**_waccess**|\<wchar.h> veya \<io.h>|\<errno.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -149,7 +149,7 @@ File crt_ACCESS.C does not have write permission.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

@@ -40,18 +40,18 @@ helpviewer_keywords:
 - std::allocator_traits [C++], destroy
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
-ms.openlocfilehash: c9c03eb688a71e0587ca4faa14d89d8487d4ec59
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8ab46ebf85531af052bc19bc5f0088f0f564793b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617408"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844814"
 ---
 # <a name="allocator_traits-class"></a>allocator_traits Sınıfı
 
 Sınıf şablonu, *ayırıcı türünü*tamamlayan bir nesneyi tanımlar. Ayırıcı türü, ayrılmış depolamayı yönetmek için kullanılan bir ayırıcı nesnesini tanımlayan herhangi bir türdür. Özellikle, her ayırıcı türü için `Alloc` , `allocator_traits<Alloc>` ayırıcı özellikli bir kapsayıcı tarafından ihtiyaç duyulan tüm bilgileri belirtmek için kullanabilirsiniz. Daha fazla bilgi için bkz. varsayılan [ayırıcı sınıfı](allocator-class.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Alloc>
@@ -62,7 +62,7 @@ template <class Alloc>
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |`allocator_type`|Bu tür, şablon parametresi için bir eş anlamlı `Alloc` .|
 |`const_pointer`|Bu tür `Alloc::const_pointer` , doğru biçimlendirilmişse, aksi durumda bu tür olur `pointer_traits<pointer>::rebind<const value_type>` .|
@@ -80,7 +80,7 @@ template <class Alloc>
 
 Aşağıdaki statik yöntemler, belirtilen bir ayırıcı parametresinde karşılık gelen yöntemi çağırır.
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[allocate](#allocate)|Belirtilen ayırıcı parametresini kullanarak belleği ayıran statik yöntem.|
 |[oluşturma](#construct)|Bir nesne oluşturmak için belirtilen ayırıcıyı kullanan statik yöntem.|
@@ -89,7 +89,7 @@ Aşağıdaki statik yöntemler, belirtilen bir ayırıcı parametresinde karşı
 |[max_size](#max_size)|Ayrılabilen en fazla nesne sayısını belirleyebilmek için belirtilen ayırıcıyı kullanan statik yöntem.|
 |[select_on_container_copy_construction](#select_on_container_copy_construction)|`select_on_container_copy_construction`Belirtilen ayırıcı üzerinde çağıran statik yöntem.|
 
-### <a name="allocate"></a><a name="allocate"></a>allocate
+### <a name="allocate"></a><a name="allocate"></a> allocate
 
 Belirtilen ayırıcı parametresini kullanarak belleği ayıran statik yöntem.
 
@@ -119,7 +119,7 @@ Her yöntem, ayrılan nesneye bir işaretçi döndürür.
 
 İkinci yöntem `al.allocate(count, hint)` , bu ifade doğru biçimlendirilmişse, aksi takdirde döndürülür `al.allocate(count)` .
 
-### <a name="construct"></a><a name="construct"></a>oluşturma
+### <a name="construct"></a><a name="construct"></a> oluşturma
 
 Bir nesne oluşturmak için belirtilen ayırıcıyı kullanan statik yöntem.
 
@@ -143,7 +143,7 @@ Nesne oluşturucusuna geçirilen bağımsız değişkenlerin listesi.
 
 Statik üye işlevi çağırır `al.construct(ptr, args...)` , bu ifade iyi biçimlendirilmişse, aksi takdirde değerlendirilir `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)` .
 
-### <a name="deallocate"></a><a name="deallocate"></a>kaldırmak
+### <a name="deallocate"></a><a name="deallocate"></a> kaldırmak
 
 Belirtilen sayıda nesneyi serbest bırakmak için belirtilen ayırıcıyı kullanan statik yöntem.
 
@@ -170,7 +170,7 @@ Bu yöntem çağırır `al.deallocate(ptr, count)` .
 
 Bu yöntem hiçbir şey yapmaz.
 
-### <a name="destroy"></a><a name="destroy"></a>kaldırılır
+### <a name="destroy"></a><a name="destroy"></a> kaldırılır
 
 Bir nesne üzerinde yıkıcıyı çağırmak için bellek ayırmayı kaldırmadan belirtilen ayırıcıyı kullanan statik yöntem.
 
@@ -191,7 +191,7 @@ Nesnenin konumuna yönelik bir işaretçi.
 
 Bu yöntem `al.destroy(ptr)` , bu ifade düzgün biçimlendirilmişse, aksi takdirde değerlendirilir `ptr->~Uty()` .
 
-### <a name="max_size"></a><a name="max_size"></a>max_size
+### <a name="max_size"></a><a name="max_size"></a> max_size
 
 Ayrılabilen en fazla nesne sayısını belirleyebilmek için belirtilen ayırıcıyı kullanan statik yöntem.
 
@@ -208,7 +208,7 @@ Ayırıcı nesne.
 
 Bu yöntem `al.max_size()` , bu ifade düzgün biçimlendirilmişse, aksi takdirde döndürür `numeric_limits<size_type>::max()` .
 
-### <a name="select_on_container_copy_construction"></a><a name="select_on_container_copy_construction"></a>select_on_container_copy_construction
+### <a name="select_on_container_copy_construction"></a><a name="select_on_container_copy_construction"></a> select_on_container_copy_construction
 
 `select_on_container_copy_construction`Belirtilen ayırıcı üzerinde çağıran statik yöntem.
 

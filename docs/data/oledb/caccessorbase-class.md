@@ -25,18 +25,18 @@ helpviewer_keywords:
 - IsAutoAccessor method
 - ReleaseAccessors method
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
-ms.openlocfilehash: e29883b2a42010daee19f915c49c31686b232cf6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eff7eff855bcccefee7e051c67d583d28e488293
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233463"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843306"
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase Sınıfı
 
-OLE DB şablonlarındaki tüm erişimciler bu sınıftan türetilir. `CAccessorBase`bir satır kümesinin birden çok erişimciyi yönetmesine izin verir. Ayrıca, hem parametreler hem de çıkış sütunları için bağlama sağlar.
+OLE DB şablonlarındaki tüm erişimciler bu sınıftan türetilir. `CAccessorBase` bir satır kümesinin birden çok erişimciyi yönetmesine izin verir. Ayrıca, hem parametreler hem de çıkış sütunları için bağlama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 // Replace with syntax
@@ -46,23 +46,23 @@ OLE DB şablonlarındaki tüm erişimciler bu sınıftan türetilir. `CAccessorB
 
 ### <a name="methods"></a>Yöntemler
 
-|||
-|-|-|
-|[Kapat](#close)|Erişimcileri kapatır.|
-|[GetHAccessor](#geth)|Erişimci tanıtıcısını alır.|
-|[GetNumAccessors](#getnum)|Sınıfı tarafından oluşturulan erişimcilerinin sayısını alır.|
-|[IsAutoAccessor](#isauto)|Belirtilen erişimcinin bir oto erişimcisi olup olmadığını sınar.|
-|[Releaseerişimcileri](#release)|Erişimcileri yayınlar.|
+| Ad | Açıklama |
+|--|--|
+| [Kapat](#close) | Erişimcileri kapatır. |
+| [GetHAccessor](#geth) | Erişimci tanıtıcısını alır. |
+| [GetNumAccessors](#getnum) | Sınıfı tarafından oluşturulan erişimcilerinin sayısını alır. |
+| [IsAutoAccessor](#isauto) | Belirtilen erişimcinin bir oto erişimcisi olup olmadığını sınar. |
+| [Releaseerişimcileri](#release) | Erişimcileri yayınlar. |
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atldbclı. h
 
-## <a name="caccessorbaseclose"></a><a name="close"></a>CAccessorBase:: Close
+## <a name="caccessorbaseclose"></a><a name="close"></a> CAccessorBase:: Close
 
 Erişimcileri kapatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close();
@@ -72,7 +72,7 @@ void Close();
 
 Önce [Releaseerişimcileri](../../data/oledb/caccessorbase-releaseaccessors.md) 'i çağırmanız gerekir.
 
-## <a name="caccessorbasegethaccessor"></a><a name="geth"></a>CAccessorBase:: GetHAccessor
+## <a name="caccessorbasegethaccessor"></a><a name="geth"></a> CAccessorBase:: GetHAccessor
 
 Belirtilen erişimcinin erişimci tanıtıcısını alır.
 
@@ -91,11 +91,11 @@ HACCESSOR GetHAccessor(ULONG nAccessor) const;
 
 Erişimci tanıtıcısı.
 
-## <a name="caccessorbasegetnumaccessors"></a><a name="getnum"></a>CAccessorBase:: GetNumAccessors
+## <a name="caccessorbasegetnumaccessors"></a><a name="getnum"></a> CAccessorBase:: GetNumAccessors
 
 Sınıfı tarafından oluşturulan erişimcilerinin sayısını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ULONG GetNumAccessors() const;
@@ -105,7 +105,7 @@ ULONG GetNumAccessors() const;
 
 Sınıfı tarafından oluşturulan erişimcilerinin sayısı.
 
-## <a name="caccessorbaseisautoaccessor"></a><a name="isauto"></a>CAccessorBase:: ısoto erişimcisi
+## <a name="caccessorbaseisautoaccessor"></a><a name="isauto"></a> CAccessorBase:: ısoto erişimcisi
 
 Taşıma işlemi sırasında erişimci için veriler otomatik olarak alınırsa true döndürür.
 
@@ -124,7 +124,7 @@ bool IsAutoAccessor(ULONG nAccessor) const;
 
 **`true`** Erişimci bir oto erişimcisi ise döndürür. Aksi takdirde, döndürür **`false`** .
 
-## <a name="caccessorbasereleaseaccessors"></a><a name="release"></a>CAccessorBase:: Releaseerişimcileri
+## <a name="caccessorbasereleaseaccessors"></a><a name="release"></a> CAccessorBase:: Releaseerişimcileri
 
 Sınıfı tarafından oluşturulan erişimcileri yayınlar.
 
@@ -137,7 +137,7 @@ HRESULT ReleaseAccessors(IUnknown* pUnk);
 #### <a name="parameters"></a>Parametreler
 
 *pUnk dili*<br/>
-'ndaki `IUnknown`Erişimcilerinin OLUŞTURULDUĞU com nesnesi için bir arabirim işaretçisi.
+'ndaki `IUnknown` Erişimcilerinin OLUŞTURULDUĞU com nesnesi için bir arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CMFCStandardColorsPropertyPage class [MFC]
 ms.assetid: b84b7cfb-bb24-4c65-804a-5b642cb64400
-ms.openlocfilehash: 91cfa609c31e83c02cce8b2a474a9b66ec3ba56f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c57715171816e83cd1e04872d88b452b51b39388
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388637"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843956"
 ---
 # <a name="cmfcstandardcolorspropertypage-class"></a>CMFCStandardColorsPropertyPage sınıfı
 
-Renk iletişim kutusu içinde standart renk seçmek için kullanıcıların bir özellik sayfasını temsil eder.
+Kullanıcıların renk iletişim kutusunda standart renkleri seçmek için kullandığı bir özellik sayfasını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCStandardColorsPropertyPage : public CPropertyPage
@@ -25,22 +25,20 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
-|-|-|
 |Ad|Açıklama|
+|-|-|
 |`CMFCStandardColorsPropertyPage::CMFCStandardColorsPropertyPage`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
-|-|-|
 |Ad|Açıklama|
-|`CMFCStandardColorsPropertyPage::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|
-|`CMFCStandardColorsPropertyPage::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|
+|-|-|
+|`CMFCStandardColorsPropertyPage::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|`CMFCStandardColorsPropertyPage::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMFCColorDialog` Sınıfı standart renk özellik sayfasını görüntülemek için bu sınıfı kullanır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).
+`CMFCColorDialog`Sınıfı, standart renk özellik sayfasını göstermek için bu sınıfı kullanır. Hakkında daha fazla bilgi için `CMFCColorDialog` bkz. [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -58,11 +56,11 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxstandardcolorspropertypage.h
+**Üstbilgi:** afxstandardcolorspropertypage. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCColorDialog Sınıfı](../../mfc/reference/cmfccolordialog-class.md)<br/>
-[CMFCCustomColorsPropertyPage Sınıfı](../../mfc/reference/cmfccustomcolorspropertypage-class.md)
+[CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md)<br/>
+[CMFCCustomColorsPropertyPage sınıfı](../../mfc/reference/cmfccustomcolorspropertypage-class.md)

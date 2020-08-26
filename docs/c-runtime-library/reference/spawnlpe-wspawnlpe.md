@@ -33,12 +33,12 @@ helpviewer_keywords:
 - processes, executing new
 - process creation
 ms.assetid: e171ebfa-70e7-4c44-8331-2a291fc17bd6
-ms.openlocfilehash: 4fd7275969120b35253bbc12098f8dc8f69a1fed
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8e5e20827ef67d83b008a055505ec95abbde7d49
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442505"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844177"
 ---
 # <a name="_spawnlpe-_wspawnlpe"></a>_spawnlpe, _wspawnlpe
 
@@ -47,7 +47,7 @@ Yeni bir işlem oluşturur ve yürütür.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 intptr_t _spawnlpe(
@@ -86,9 +86,9 @@ Ortam ayarlarına işaretçiler dizisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Zaman uyumlu bir **_spawnlpe** veya **_wspawnlpe** ( *mod*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Zaman uyumsuz bir **_spawnlpe** veya **_wspawnlpe** ( **_P_NOWAIT** veya *mod*için belirtilen **_P_NOWAITO** ) dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını çağırmak için sıfır dışında bir bağımsız değişken kullanıyorsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme nedeniyle oluşan olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
+Zaman uyumlu bir **_spawnlpe** veya **_wspawnlpe** ( *mod*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Zaman uyumsuz bir **_spawnlpe** veya **_wspawnlpe** (**_P_NOWAIT** veya *mod*için belirtilen **_P_NOWAITO** ) dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını çağırmak için sıfır dışında bir bağımsız değişken kullanıyorsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme nedeniyle oluşan olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
 
-|||
+| Değer | Açıklama |
 |-|-|
 | **E2BIG** | Bağımsız değişken listesi 1024 baytı aşıyor. |
 | **EıNVAL** | *Mode* bağımsız değişkeni geçersiz. |
@@ -108,8 +108,8 @@ Bu işlevler, parametrelerini doğrular. Herhangi bir *cmdname* veya *arg0* boş
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_spawnlpe**|\<Process. h >|
-|**_wspawnlpe**|\<stdio. h > veya \<wchar. h >|
+|**_spawnlpe**|\<process.h>|
+|**_wspawnlpe**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -119,11 +119,11 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
-[abort](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[durdur](abort.md)<br/>
 [atexit](atexit.md)<br/>
-[_exec, _wexec İşlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_flushall](flushall.md)<br/>
 [_getmbcp](getmbcp.md)<br/>

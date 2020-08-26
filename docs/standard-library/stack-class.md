@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::stack [C++], size
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
-ms.openlocfilehash: 8c1da5d45acd68838174d02305a246ba2d2c169b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f1d44a4242542ac6856fd7208fe423c43ae79997
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224636"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844307"
 ---
 # <a name="stack-class"></a>stack Sınıfı
 
@@ -64,13 +64,13 @@ Yığın nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf öğel
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[yığın](#stack)|`stack`Boş veya temel kapsayıcı nesnesinin bir kopyası olan oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[container_type](#container_type)|Tarafından uyarlanabilen temel kapsayıcıyı sağlayan bir tür `stack` .|
 |[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `stack` .|
@@ -78,7 +78,7 @@ Yığın nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf öğel
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[empty](#empty)|`stack`Boşsa sınar.|
 |[cağımız](#pop)|Öğesini öğesinin üst öğesinden kaldırır `stack` .|
@@ -86,7 +86,7 @@ Yığın nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf öğel
 |[boyutla](#size)|İçindeki öğelerin sayısını döndürür `stack` .|
 |[top](#top)|Öğesinin en üstündeki öğesine bir başvuru döndürür `stack` .|
 
-## <a name="container_type"></a><a name="container_type"></a>container_type
+## <a name="container_type"></a><a name="container_type"></a> container_type
 
 Uyarlanabilen temel kapsayıcıyı sağlayan bir tür.
 
@@ -104,7 +104,7 @@ Hakkında daha fazla bilgi için `Container` [Stack Class](../standard-library/s
 
 Bildirme ve kullanma hakkında bir örnek için [Stack:: Stack](#stack) örneğine bakın `container_type` .
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Bir yığının boş olup olmadığını sınar.
 
@@ -149,7 +149,7 @@ The stack s1 is not empty.
 The stack s2 is empty.
 ```
 
-## <a name="pop"></a><a name="pop"></a>cağımız
+## <a name="pop"></a><a name="pop"></a> cağımız
 
 Öğeyi yığının en üstünden kaldırır.
 
@@ -205,7 +205,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.
 ```
 
-## <a name="push"></a><a name="push"></a>hareketle
+## <a name="push"></a><a name="push"></a> hareketle
 
 Yığının en üstüne bir öğe ekler.
 
@@ -254,7 +254,7 @@ The stack length is 3.
 The element at the top of the stack is 30.
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Yığındaki öğe sayısını döndürür.
 
@@ -295,7 +295,7 @@ The stack length is 1.
 The stack length is now 2.
 ```
 
-## <a name="size_type"></a><a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a> size_type
 
 Bir yığındaki öğelerin sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -311,7 +311,7 @@ Tür, `size_type` yığın tarafından uyarlanan taban kapsayıcının eşanlaml
 
 Nasıl bildirilemeyeceğini ve kullanılacağına ilişkin bir örnek için [Boyut](#size) örneğine bakın `size_type` .
 
-## <a name="stack"></a><a name="stack"></a>yığın
+## <a name="stack"></a><a name="stack"></a> yığın
 
 Boş olan veya temel kapsayıcı sınıfının kopyası olan bir yığın oluşturur.
 
@@ -365,7 +365,7 @@ int main( )
 The element at the top of stack vsi2 is 1.
 ```
 
-## <a name="top"></a><a name="top"></a>Sayfanın Üstü
+## <a name="top"></a><a name="top"></a> Sayfanın Üstü
 
 Yığının en üstünde bir öğeye bir başvuru döndürür.
 
@@ -416,7 +416,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.
 ```
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Bir yığında bir öğe olarak depolanan nesne türünü temsil eden bir tür.
 

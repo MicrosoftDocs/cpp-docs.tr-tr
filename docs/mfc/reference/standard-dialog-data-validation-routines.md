@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-ms.openlocfilehash: 2511e2ec6dbd4e27c0e12e35bdc1cd671bf72eaa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 19d1858d67802a7c464a9be783e4c1fb96fe3fae
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213989"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844489"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 
@@ -20,7 +20,7 @@ Bu konu başlığı altında, genel MFC iletişim denetimleri için kullanılan 
 
 ### <a name="ddv-functions"></a>DDV Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[DDV_MaxChars](#ddv_maxchars)|Belirli bir denetim değerindeki karakterlerin sayısını, verilen en fazla sayıyı aşmadığını doğrular.|
 |[DDV_MinMaxByte](#ddv_minmaxbyte)|Verilen bir denetim değerinin belirtilen bir **bayt** aralığını aşmadığını doğrular.|
@@ -38,7 +38,7 @@ Bu konu başlığı altında, genel MFC iletişim denetimleri için kullanılan 
 |[DDV_MinMaxUnsigned](#ddv_minmaxuint)|Verilen bir denetim değerinin belirtilen iki değer arasında olduğunu doğrular.|
 |[DDV_MinMaxULongLong](#ddv_minmaxulonglong)|Verilen bir denetim değerinin belirtilen bir **ULONGLONG** aralığını aşmadığını doğrular.|
 
-## <a name="ddv_maxchars"></a><a name="ddv_maxchars"></a>DDV_MaxChars
+## <a name="ddv_maxchars"></a><a name="ddv_maxchars"></a> DDV_MaxChars
 
 `DDV_MaxChars`Denetimdeki metinle ilişkili karakter miktarının *nchar*değerlerini aşmadığını doğrulamak için çağırın *value* .
 
@@ -68,7 +68,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxbyte"></a><a name="ddv_minmaxbyte"></a>DDV_MinMaxByte
+## <a name="ddv_minmaxbyte"></a><a name="ddv_minmaxbyte"></a> DDV_MinMaxByte
 
 `DDV_MinMaxByte` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -102,7 +102,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxdatetime"></a><a name="ddv_minmaxdatetime"></a>DDV_MinMaxDateTime
+## <a name="ddv_minmaxdatetime"></a><a name="ddv_minmaxdatetime"></a> DDV_MinMaxDateTime
 
 `DDV_MinMaxDateTime` *Refvalue* ile ilişkili tarih ve saat seçici denetimindeki ( [CDateTimeCtrl](../../mfc/reference/cdatetimectrl-class.md)) zaman/tarih değerinin *refMinRange* ve *refMaxRange*arasında olduğunu doğrulamak için çağırın.
 
@@ -142,7 +142,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxdouble"></a><a name="ddv_minmaxdouble"></a>DDV_MinMaxDouble
+## <a name="ddv_minmaxdouble"></a><a name="ddv_minmaxdouble"></a> DDV_MinMaxDouble
 
 `DDV_MinMaxDouble` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -176,7 +176,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxdword"></a><a name="ddv_minmaxdword"></a>DDV_MinMaxDWord
+## <a name="ddv_minmaxdword"></a><a name="ddv_minmaxdword"></a> DDV_MinMaxDWord
 
 `DDV_MinMaxDWord` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -210,7 +210,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxfloat"></a><a name="ddv_minmaxfloat"></a>DDV_MinMaxFloat
+## <a name="ddv_minmaxfloat"></a><a name="ddv_minmaxfloat"></a> DDV_MinMaxFloat
 
 `DDV_MinMaxFloat` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -244,7 +244,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxint"></a><a name="ddv_minmaxint"></a>DDV_MinMaxInt
+## <a name="ddv_minmaxint"></a><a name="ddv_minmaxint"></a> DDV_MinMaxInt
 
 `DDV_MinMaxInt` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -278,7 +278,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxlong"></a><a name="ddv_minmaxlong"></a>DDV_MinMaxLong
+## <a name="ddv_minmaxlong"></a><a name="ddv_minmaxlong"></a> DDV_MinMaxLong
 
 `DDV_MinMaxLong` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -312,7 +312,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxlonglong"></a><a name="ddv_minmaxlonglong"></a>DDV_MinMaxLongLong
+## <a name="ddv_minmaxlonglong"></a><a name="ddv_minmaxlonglong"></a> DDV_MinMaxLongLong
 
 `DDV_MinMaxLongLong` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -346,7 +346,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxmonth"></a><a name="ddv_minmaxmonth"></a>DDV_MinMaxMonth
+## <a name="ddv_minmaxmonth"></a><a name="ddv_minmaxmonth"></a> DDV_MinMaxMonth
 
 `DDV_MinMaxMonth` *Refvalue* ile ilişkili aylık takvim denetimindeki ( [CMonthCalCtrl](../../mfc/reference/cmonthcalctrl-class.md)) saat/tarih değerinin *refMinRange* ve *refMaxRange*arasında olduğunu doğrulamak için çağırın.
 
@@ -386,7 +386,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxshort"></a><a name="ddv_minmaxshort"></a>DDV_MinMaxShort
+## <a name="ddv_minmaxshort"></a><a name="ddv_minmaxshort"></a> DDV_MinMaxShort
 
 `DDV_MinMaxShort` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -420,7 +420,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxslider"></a><a name="ddv_minmaxslider"></a>DDV_MinMaxSlider
+## <a name="ddv_minmaxslider"></a><a name="ddv_minmaxslider"></a> DDV_MinMaxSlider
 
 `DDV_MinMaxSlider` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -454,7 +454,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxuint"></a><a name="ddv_minmaxuint"></a>DDV_MinMaxUInt
+## <a name="ddv_minmaxuint"></a><a name="ddv_minmaxuint"></a> DDV_MinMaxUInt
 
 `DDV_MinMaxUInt` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 
@@ -488,7 +488,7 @@ DDV hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** afxdd_. h
 
-## <a name="ddv_minmaxulonglong"></a><a name="ddv_minmaxulonglong"></a>DDV_MinMaxULongLong
+## <a name="ddv_minmaxulonglong"></a><a name="ddv_minmaxulonglong"></a> DDV_MinMaxULongLong
 
 `DDV_MinMaxULongLong` *Değer* ile Ilişkili denetimdeki değerin *minval* ve *maxVal*arasında olduğunu doğrulamak için çağırın.
 

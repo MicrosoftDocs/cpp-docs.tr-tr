@@ -5,12 +5,12 @@ helpviewer_keywords:
 - registering OLE controls
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-ms.openlocfilehash: 0471bad0793779d0bc13a2bee41957381f56389f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5468f3d4b730cc0b81a6ab814d495b061d292f20
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214028"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843579"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 
@@ -20,7 +20,7 @@ Aşağıdaki işlevler, Windows kayıt veritabanına denetimin sınıfını, öz
 
 ### <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[AfxOleRegisterControlClass](#afxoleregistercontrolclass)|Kayıt veritabanına denetimin sınıfını ekler.|
 |[AfxOleRegisterPropertyPageClass](#afxoleregisterpropertypageclass)|Kayıt veritabanına bir denetim özelliği sayfası ekler.|
@@ -28,9 +28,9 @@ Aşağıdaki işlevler, Windows kayıt veritabanına denetimin sınıfını, öz
 |[AfxOleUnregisterClass](#afxoleunregisterclass)|Kayıt veritabanından bir denetim sınıfını veya özellik sayfası sınıfını kaldırır.|
 |[AfxOleUnregisterTypeLib](#afxoleunregistertypelib)|Kayıt veritabanından denetimin tür kitaplığını kaldırır.|
 
-`AfxOleRegisterTypeLib`genellikle bir denetim DLL 'inin uygulamasında çağırılır `DllRegisterServer` . Benzer şekilde, `AfxOleUnregisterTypeLib` tarafından çağrılır `DllUnregisterServer` . `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass` ve `AfxOleUnregisterClass` genellikle `UpdateRegistry` bir denetimin sınıf fabrikası veya özellik sayfasının üye işlevi tarafından çağırılır.
+`AfxOleRegisterTypeLib` genellikle bir denetim DLL 'inin uygulamasında çağırılır `DllRegisterServer` . Benzer şekilde, `AfxOleUnregisterTypeLib` tarafından çağrılır `DllUnregisterServer` . `AfxOleRegisterControlClass`, `AfxOleRegisterPropertyPageClass` ve `AfxOleUnregisterClass` genellikle `UpdateRegistry` bir denetimin sınıf fabrikası veya özellik sayfasının üye işlevi tarafından çağırılır.
 
-## <a name="afxoleregistercontrolclass"></a><a name="afxoleregistercontrolclass"></a>AfxOleRegisterControlClass
+## <a name="afxoleregistercontrolclass"></a><a name="afxoleregistercontrolclass"></a> AfxOleRegisterControlClass
 
 Denetim sınıfını Windows kayıt veritabanına kaydeder.
 
@@ -68,11 +68,11 @@ Bir araç çubuğunda veya paletteki OLE denetimini temsil etmek için kullanıl
 *nRegFlags*<br/>
 Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
-- `afxRegInsertable`OLE nesneleri için nesne Ekle iletişim kutusunda denetimin görünmesine izin verir.
+- `afxRegInsertable` OLE nesneleri için nesne Ekle iletişim kutusunda denetimin görünmesine izin verir.
 
-- `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading` Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
-- `afxRegFreeThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
+- `afxRegFreeThreading` Kayıt defterindeki iş parçacığı modelini ThreadingModel = ücretsiz olarak ayarlar.
 
    İki bayrağı birleştirebilir `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel = both olarak ayarlayabilirsiniz. İş parçacığı modeli kaydı hakkında daha fazla bilgi için Windows SDK [ınprocserver32](/windows/win32/com/inprocserver32) bakın.
 
@@ -135,7 +135,7 @@ Denetim sınıfı kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, denetimin OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterControlClass`kayıt defterini sistemdeki denetim adı ve konumuyla güncelleştirir ve ayrıca, denetimin desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
+Bu, denetimin OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterControlClass` kayıt defterini sistemdeki denetim adı ve konumuyla güncelleştirir ve ayrıca, denetimin desteklediği iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
 
 ### <a name="example"></a>Örnek
 
@@ -151,7 +151,7 @@ Denetim, etkin kapsayıcılar için nesne Ekle iletişim kutusunda görünür ve
 
   **Başlık** afxctl. h
 
-## <a name="afxoleregisterpropertypageclass"></a><a name="afxoleregisterpropertypageclass"></a>AfxOleRegisterPropertyPageClass
+## <a name="afxoleregisterpropertypageclass"></a><a name="afxoleregisterpropertypageclass"></a> AfxOleRegisterPropertyPageClass
 
 Özellik sayfası sınıfını Windows kayıt veritabanına kaydeder.
 
@@ -177,7 +177,7 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
 *nRegFlags*<br/>
 Şu bayrağı içerebilir:
 
-- `afxRegApartmentThreading`Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
+- `afxRegApartmentThreading` Kayıt defterindeki iş parçacığı modelini ThreadingModel = Apartment olarak ayarlar.
 
 > [!NOTE]
 > MFC 4,2 ' den önceki MFC sürümlerinde **`int`** *nregflags* parametresi yoktu. Ayrıca, `afxRegInsertable` bayrağın Özellik sayfaları için geçerli bir seçenek olmadığını ve AYARLANDıYSA MFC 'de BIR onaylama yapılmasına neden olacağını unutmayın.
@@ -188,13 +188,13 @@ Denetim sınıfı kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özellik sayfasının OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterPropertyPageClass`kayıt defterini, özellik sayfası adı ve sistemdeki konumu ile güncelleştirir ve ayrıca denetim kayıt defterinde denetim tarafından desteklenen iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
+Bu özellik sayfasının OLE denetimi kullanan kapsayıcılar tarafından kullanılmasını sağlar. `AfxOleRegisterPropertyPageClass` kayıt defterini, özellik sayfası adı ve sistemdeki konumu ile güncelleştirir ve ayrıca denetim kayıt defterinde denetim tarafından desteklenen iş parçacığı modelini ayarlar. Daha fazla bilgi için, bkz. [Teknik not64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "OLE denetimlerinde apartman modeli iş parçacığı" ve Windows SDK [süreçler ve iş parçacıkları hakkında](/windows/win32/ProcThread/about-processes-and-threads) .
 
 ### <a name="requirements"></a>Gereksinimler
 
   **Başlık** afxctl. h
 
-## <a name="afxoleregistertypelib"></a><a name="afxoleregistertypelib"></a>AfxOleRegisterTypeLib
+## <a name="afxoleregistertypelib"></a><a name="afxoleregistertypelib"></a> AfxOleRegisterTypeLib
 
 Tür kitaplığını Windows kayıt veritabanına kaydeder ve tür kitaplığının OLE denetimi kullanan diğer kapsayıcılar tarafından kullanılmasına izin verir.
 
@@ -238,7 +238,7 @@ Bu işlev, kayıt defterini tür kitaplığı adı ve sistemdeki konumu ile gün
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="afxoleunregisterclass"></a><a name="afxoleunregisterclass"></a>AfxOleUnregisterClass
+## <a name="afxoleunregisterclass"></a><a name="afxoleunregisterclass"></a> AfxOleUnregisterClass
 
 Windows kayıt veritabanından denetim veya özellik sayfası sınıfı girdisini kaldırır.
 
@@ -262,7 +262,7 @@ Denetim veya özellik sayfası sınıfının kaydı başarıyla silindi ise sıf
 
   **Başlık** afxctl. h
 
-## <a name="afxoleunregistertypelib"></a><a name="afxoleunregistertypelib"></a>AfxOleUnregisterTypeLib
+## <a name="afxoleunregistertypelib"></a><a name="afxoleunregistertypelib"></a> AfxOleUnregisterTypeLib
 
 Windows kayıt veritabanından tür kitaplığı girişini kaldırmak için bu işlevi çağırın.
 

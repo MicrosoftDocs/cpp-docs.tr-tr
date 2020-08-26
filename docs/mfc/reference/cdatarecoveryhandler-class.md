@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: c796f24ad37b3bae11314e2885bf25e25f85aba6
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 4bb4d4ddf291cb1efc01b887c54a6573c52df8dc
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561979"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842929"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
 
@@ -83,13 +83,13 @@ class CDataRecoveryHandler : public CObject
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[CDataRecoveryHandler::CDataRecoveryHandler](#cdatarecoveryhandler)|Bir `CDataRecoveryHandler` nesnesi oluşturur.|
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[CDataRecoveryHandler:: oto Savealldocumentınfo](#autosavealldocumentinfo)|Sınıfına kayıtlı her dosyayı oto olarak kaydeder `CDataRecoveryHandler` .|
 |[CDataRecoveryHandler:: oto Savedocumentınfo](#autosavedocumentinfo)|Belirtilen belgeyi oto kaydeder.|
@@ -121,7 +121,7 @@ class CDataRecoveryHandler : public CObject
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |m_bRestoringPreviousOpenDocs|Veri kurtarma işleyicisinin önceden açık belgelerin yeniden açılıp açılmadığını gösterir.|
 |m_bSaveDocumentInfoOnIdle|Veri kurtarma işleyicisinin bir sonraki boşta döngülü belgeleri oto olarak kaydedip kaydetmediğini belirtir.|

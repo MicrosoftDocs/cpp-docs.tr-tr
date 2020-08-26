@@ -1,23 +1,23 @@
 ---
-title: idl_quote (C++ com özniteliği)
+title: idl_quote (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.idl_quote
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: 4b05da6d237d71e0cc645ad0f626f75ecd85c827
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1d0aa80f64593ed347720b84e4059a0c32dce4be
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168035"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844242"
 ---
 # <a name="idl_quote"></a>idl_quote
 
 Geçerli Visual C++ sürümünde desteklenmeyen IDL yapılarını kullanmanıza ve bunların oluşturulan. IDL dosyasına geçmesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ idl_quote(text) ]
@@ -26,7 +26,7 @@ Geçerli Visual C++ sürümünde desteklenmeyen IDL yapılarını kullanmanıza 
 ### <a name="parameters"></a>Parametreler
 
 *metinleri*<br/>
-Microsoft C++ derleyicisini bir derleyici hatası döndürmeden oluşturulan. IDL dosyasına geçireplanladığınız öznitelik adı.
+Microsoft C++ derleyicisini bir derleyici hatası döndürmeden oluşturulan. IDL dosyasına geçirmek için planladığınız öznitelik adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -73,18 +73,16 @@ Bu kod, `MYFLOT` ve `MYDUB` ve *metin* girişinin oluşturulan. IDL dosyasına y
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)
+[Tek başına öznitelikler](stand-alone-attributes.md)

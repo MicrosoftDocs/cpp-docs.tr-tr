@@ -25,12 +25,12 @@ helpviewer_keywords:
 - Microsoft::WRL::FtmBase::ReleaseMarshalData method
 - Microsoft::WRL::FtmBase::UnmarshalInterface method
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-ms.openlocfilehash: f28a850c365bc9a75d8e5b100e5e5cc0a1c5dc10
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: b28b7ee0038e4f828f43fcc3f0d49a2d9e092315
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404570"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844047"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 
@@ -86,7 +86,7 @@ Daha fazla bilgi için bkz. [RuntimeClass Sınıfı](runtimeclass-class.md).
 
 **Ad alanı:** Microsoft:: WRL
 
-## <a name="ftmbasecreateglobalinterfacetable"></a><a name="createglobalinterfacetable"></a>FtmBase:: CreateGlobalInterfaceTable
+## <a name="ftmbasecreateglobalinterfacetable"></a><a name="createglobalinterfacetable"></a> FtmBase:: CreateGlobalInterfaceTable
 
 Genel arabirim tablosu (GIT) oluşturur.
 
@@ -107,9 +107,9 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. [`IGlobalInterfaceTable`](https://docs.microsoft.com/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
+Daha fazla bilgi için bkz. [`IGlobalInterfaceTable`](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
 
-## <a name="ftmbasedisconnectobject"></a><a name="disconnectobject"></a>FtmBase::D isconnectObject
+## <a name="ftmbasedisconnectobject"></a><a name="disconnectobject"></a> FtmBase::D isconnectObject
 
 Tüm dış bağlantıları bir nesneye zorla yayınlar. Nesnenin sunucusu, kapanmadan önce nesnenin bu yöntemin uygulamasını çağırır.
 
@@ -128,7 +128,7 @@ Gelecekte kullanılmak üzere ayrılmıştır; sıfır olmalıdır.
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="ftmbaseftmbase"></a><a name="ftmbase"></a>FtmBase:: FtmBase
+## <a name="ftmbaseftmbase"></a><a name="ftmbase"></a> FtmBase:: FtmBase
 
 `FtmBase` sınıfının yeni bir örneğini başlatır.
 
@@ -136,7 +136,7 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 FtmBase();
 ```
 
-## <a name="ftmbasegetmarshalsizemax"></a><a name="getmarshalsizemax"></a>FtmBase:: GetMarshalSizeMax
+## <a name="ftmbasegetmarshalsizemax"></a><a name="getmarshalsizemax"></a> FtmBase:: GetMarshalSizeMax
 
 Belirtilen nesne üzerinde belirtilen arabirim işaretçisini sıralamak için gereken bayt sayısıyla üst sınırı alın.
 
@@ -179,7 +179,7 @@ Bu işlem tamamlandığında, hazırlama akışına yazılacak veri miktarına �
 
 Başarılı olursa S_OK; Aksi takdirde, E_FAIL veya E_NOINTERFACE.
 
-## <a name="ftmbasegetunmarshalclass"></a><a name="getunmarshalclass"></a>FtmBase:: GetUnmarshalClass
+## <a name="ftmbasegetunmarshalclass"></a><a name="getunmarshalclass"></a> FtmBase:: GetUnmarshalClass
 
 Karşılık gelen ara sunucu için kodu içeren DLL 'yi bulmak için COM tarafından kullanılan CLSID 'yi alır. COM, başlatılmamış bir proxy örneğini oluşturmak için bu DLL 'yi yükler.
 
@@ -221,7 +221,7 @@ Bu işlem tamamlandığında, istemci işleminde bir ara sunucu oluşturmak içi
 
 Başarılı olursa S_OK; Aksi takdirde, S_FALSE.
 
-## <a name="ftmbasemarshalinterface"></a><a name="marshalinterface"></a>FtmBase:: MarshalInterface
+## <a name="ftmbasemarshalinterface"></a><a name="marshalinterface"></a> FtmBase:: MarshalInterface
 
 Bazı istemci işlemlerinde bir proxy nesnesini başlatmak için gereken verileri akışa yazar.
 
@@ -270,7 +270,7 @@ Akış dolu STG_E_MEDIUMFULL.
 
 İşlem başarısız E_FAIL.
 
-## <a name="ftmbasemarshaller_"></a><a name="marshaller"></a>FtmBase:: marshaller_
+## <a name="ftmbasemarshaller_"></a><a name="marshaller"></a> FtmBase:: marshaller_
 
 , Ücretsiz iş parçacıklı Sıralayıcı başvurusunu tutar.
 
@@ -278,7 +278,7 @@ Akış dolu STG_E_MEDIUMFULL.
 Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;
 ```
 
-## <a name="ftmbasereleasemarshaldata"></a><a name="releasemarshaldata"></a>FtmBase:: ReleaseMarshalData
+## <a name="ftmbasereleasemarshaldata"></a><a name="releasemarshaldata"></a> FtmBase:: ReleaseMarshalData
 
 Sıralanmış bir veri paketini yok eder.
 
@@ -297,7 +297,7 @@ Yok edilecek veri paketini içeren bir akışa yönelik işaretçi.
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="ftmbaseunmarshalinterface"></a><a name="unmarshalinterface"></a>FtmBase:: UnmarshalInterface
+## <a name="ftmbaseunmarshalinterface"></a><a name="unmarshalinterface"></a> FtmBase:: UnmarshalInterface
 
 Yeni oluşturulan bir proxy başlatır ve bu ara sunucuya bir arabirim işaretçisi döndürür.
 

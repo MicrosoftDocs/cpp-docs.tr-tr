@@ -14,18 +14,18 @@ helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-ms.openlocfilehash: 596dd2ea7f65040ae526662974d210c1f99a0cf2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4c8af66f41724c5a99dfe271a7dd8babc3a993a5
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210619"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843969"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
 
 [IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) nesnesinin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -34,8 +34,8 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `IGetDataSourceImpl`türetilir.
+*T*<br/>
+Sınıfınız, öğesinden türetilir `IGetDataSourceImpl` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -45,7 +45,7 @@ Sınıfınız `IGetDataSourceImpl`türetilir.
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[GetDataSource](#getdatasource)|Oturumu oluşturan veri kaynağı nesnesinde bir arabirim işaretçisi döndürür.|
 
@@ -53,11 +53,11 @@ Sınıfınız `IGetDataSourceImpl`türetilir.
 
 Bu, veri kaynağı nesnesine bir arabirim işaretçisi almak için oturumdaki zorunlu bir arabirimdir.
 
-## <a name="igetdatasourceimplgetdatasource"></a><a name="getdatasource"></a>IGetDataSourceImpl:: GetDataSource
+## <a name="igetdatasourceimplgetdatasource"></a><a name="getdatasource"></a> IGetDataSourceImpl:: GetDataSource
 
 Oturumu oluşturan veri kaynağı nesnesinde bir arabirim işaretçisi döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(GetDataSource)(REFIID riid,
@@ -75,4 +75,4 @@ Veri kaynağı nesnesindeki özelliklere erişmeniz gerekiyorsa yararlıdır.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

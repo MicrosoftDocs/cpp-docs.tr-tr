@@ -1,5 +1,5 @@
 ---
-title: '&lt;dize&gt; fonksiyonları'
+title: '&lt;dize &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - string/std::getline
@@ -28,25 +28,31 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::to_string [C++]
 - std::to_wstring [C++]
-ms.openlocfilehash: 3f1dca71a6bb9d5461150378191b9373f907ecd1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 350a66481c7061322f08a768ec1628598f4af68e
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376655"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843189"
 ---
-# <a name="ltstringgt-functions"></a>&lt;dize&gt; fonksiyonları
+# <a name="ltstringgt-functions"></a>&lt;dize &gt; işlevleri
 
-||||
-|-|-|-|
-|[getline](#getline)|[stod](#stod)|[stof](#stof)|
-|[Stoi](#stoi)|[stol](#stol)|[stold](#stold)|
-|[Stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|
-|[Takas](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|
+[getline](#getline)\
+[stod](#stod)\
+[stof](#stof)\
+[Stoi](#stoi)\
+[STOL](#stol)\
+[stold](#stold)\
+[Stoll](#stoll)\
+[stoul](#stoul)\
+[stoull](#stoull)\
+[Kur](#swap)\
+[to_string](#to_string)\
+[to_wstring](#to_wstring)
 
-## <a name="getline"></a><a name="getline"></a>getline
+## <a name="getline"></a><a name="getline"></a> getline
 
-Giriş akışı satır satır dizeleri ayıklayın.
+Giriş akışı satır satırından dizeleri ayıkla.
 
 ```cpp
 // (1) delimiter as parameter
@@ -77,45 +83,45 @@ basic_istream<Allocator, Traits>& getline(
 ### <a name="parameters"></a>Parametreler
 
 *in_stream*\
-Bir dize ayıklanacak giriş akışı.
+Bir dizenin ayıklanabileceği giriş akışı.
 
-*Str*\
-Giriş akışındaki karakterleri okunan dize.
+*üstbilgisine*\
+Giriş akışındaki karakterleri okuyan dize.
 
-*Sınırlayıcı*\
-Çizgi delimiter.
+*ayırıcı*\
+Satır sınırlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Giriş akışı *in_stream.*
+Giriş akışı *in_stream*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `(1)` imzaları *çifti, in_stream* gelen eserin *delimiter* bulunana kadar ayıklama karakterlerini işaretleyerek *str'de*depolanır.
+`(1)` *Ayırıcı* bulunana kadar *in_stream* ayıklama karakterlerini işaretlenen işlev imzası çifti, bunları *Str*içinde depolar.
 
-İşaretli `(2)` işlev imzaçifti varsayılan satır delimiter olarak yeni satır `getline(in_stream, str, in_stream. widen('\n'))`kullanın ve .
+İşaretlenen işlev imzası çifti, `(2)` varsayılan satır sınırlayıcısı olarak yeni satırı kullanır ve gibi davranır `getline(in_stream, str, in_stream. widen('\n'))` .
 
-Her çiftin ikinci [işlevi, rvalue başvurularını](../cpp/lvalues-and-rvalues-visual-cpp.md)destekleyen ilk intörüne analogdur.
+Her bir çiftin ikinci işlevi, [Rvalue başvurularını](../cpp/lvalues-and-rvalues-visual-cpp.md)desteklemeye yönelik bir analog ' dur.
 
-Aşağıdakilerden biri oluştuğunda çıkarma durur:
+Aşağıdakilerden biri gerçekleştiğinde ayıklama işlemi duraklar:
 
-- Dosyanın sonunda, bu durumda *in_stream* iç durum bayrağı `ios_base::eofbit`ayarlanır.
+- Dosyanın sonunda, *in_stream* iç durum bayrağı olarak ayarlanır `ios_base::eofbit` .
 
-- Fonksiyon *delimiter*eşit bir öğe ayıklar sonra . Öğe geri konulmaz veya kontrollü sıraya eklenmiyor.
+- İşlev, eşit *sınırlayıcıyla*karşılaştırılmış bir öğeyi ayıkladıktan sonra. Öğe, denetimli diziye geri yerleştirmez veya eklenmez.
 
-- Fonksiyon sonra `str.` [max_size](../standard-library/basic-string-class.md#max_size) elemanları ayıklar. *in_stream* iç durum bayrağı `ios_base::failbit`ayarlanır.
+- İşlev `str.` [max_size](../standard-library/basic-string-class.md#max_size) öğeleri ayıkladıktan sonra. *İn_stream* iç durum bayrağı olarak ayarlanır `ios_base::failbit` .
 
-- Daha önce listelenenler dışında başka bir hata; *in_stream* iç devlet bayrağı `ios_base::badbit`ayarlanır.
+- Daha önce listelenenlerden farklı başka bir hata; *in_stream* iç durum bayrağı olarak ayarlanır `ios_base::badbit` .
 
-İç durum bayrakları hakkında bilgi için [bkz: ios_base:iostate](../standard-library/ios-base-class.md#iostate).
+İç durum bayrakları hakkında daha fazla bilgi için bkz. [ios_base:: ıostate](../standard-library/ios-base-class.md#iostate).
 
-İşlev hiçbir öğeyi ayıklamazsa, *in_stream* iç `ios_base::failbit`durum bayrağı . Her durumda, `getline` *in_stream*döndürür.
+İşlev hiçbir öğe ayıkladıysanız, *in_stream* iç durum bayrağı olarak ayarlanır `ios_base::failbit` . Herhangi bir durumda `getline` *in_stream*döndürür.
 
-Bir özel durum atılırsa, *in_stream* ve *str* geçerli bir durumda bırakılır.
+Bir özel durum oluşturulursa, *in_stream* ve *Str* geçerli bir durumda bırakılır.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod iki `getline()` modda gösterir: ilk varsayılan delimiter (newline) ve delimiter olarak bir beyaz boşluk ile ikinci. Dosya sonu karakteri (klavyedeki CTRL-Z) while döngülerinin sonlandırılmasını denetlemek için kullanılır. Bu `eofbit`değer, döngü düzgün `cin` çalışırken ikinciden önce [basic_ios::clear()](../standard-library/basic-ios-class.md#clear) ile temizlenmesi gereken iç durum bayrağını ayarlar.
+Aşağıdaki kod `getline()` iki modda göstermektedir: ilk olarak varsayılan sınırlayıcıyla (yeni satır) ve ikincisi sınırlayıcı olarak boşluk ile. While döngülerinin sonlandırılmasını denetlemek için dosya sonu karakteri (klavyede CTRL-Z) kullanılır. Bu değer, ' ın iç durum bayrağını `cin` `eofbit` , ikinci while döngüsünün düzgün şekilde çalışması için, [basic_ios:: Clear ()](../standard-library/basic-ios-class.md#clear) ile temizlenmelidir.
 
 ```cpp
 // compile with: /EHsc /W4
@@ -156,9 +162,9 @@ int main()
 }
 ```
 
-## <a name="stod"></a><a name="stod"></a>stod
+## <a name="stod"></a><a name="stod"></a> stod
 
-Karakter dizisini bir **`double`**.
+Bir karakter dizisini öğesine dönüştürür **`double`** .
 
 ```cpp
 double stod(
@@ -173,23 +179,23 @@ double stod(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değeri. **`double`**
+**`double`** Değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`double`** işlevin iç `strtod( str.c_str(), _Eptr)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`double`** çağırarak `strtod( str.c_str(), _Eptr)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="stof"></a><a name="stof"></a>stof
+## <a name="stof"></a><a name="stof"></a> stof
 
-Karakter dizisini float'a dönüştürür.
+Bir karakter dizisini float öğesine dönüştürür.
 
 ```cpp
 float stof(
@@ -203,23 +209,23 @@ float stof(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değeri. **`float`**
+**`float`** Değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`float`** işlevin iç `strtof( str.c_str(), _Eptr)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`float`** çağırarak `strtof( str.c_str(), _Eptr)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="stoi"></a><a name="stoi"></a>Stoi
+## <a name="stoi"></a><a name="stoi"></a> Stoi
 
-Karakter dizisini tamsayıya dönüştürür.
+Bir karakter dizisini tamsayıya dönüştürür.
 
 ```cpp
 int stoi(
@@ -235,30 +241,30 @@ int stoi(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sonda değeri.
+Tamsayı değeri.
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
-*Temel*\
-Kullanılacak sayı tabanı.
+*temel*\
+Kullanılacak sayı temeli.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `stoi` *str'deki* karakter dizisini bir tür **`int`** değerine dönüştürür ve değeri döndürür. Örneğin, bir karakter dizisi "10" geçirildiğinde, `stoi` döndürülen değer tamsayı 10'dur.
+İşlevi `stoi` *Str* içindeki karakter dizisini türünde bir değere dönüştürür **`int`** ve değeri döndürür. Örneğin, "10" karakter sırası geçirildiğinde, tarafından döndürülen değer `stoi` 10 ' dur.
 
-`stoi`şekilde `strtol` `strtol( str.c_str(), _Eptr, idx)`çağrıldığında tek bayt karakterler için işleve benzer şekilde çalışır , `_Eptr` işlevi için bir nesne iç olduğu; ya `wcstol` da geniş karakterler için, benzer şekilde `wcstol(Str.c_str(), _Eptr, idx)`çağrıldığında, . Daha fazla bilgi için [strtol, wcstol, _strtol_l, _wcstol_l.](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)
+`stoi` , `strtol` işlev içinde çağrıldığında tek baytlık karakterlerin işlevine benzer şekilde davranır `strtol( str.c_str(), _Eptr, idx)` `_Eptr` ; Bu, işlevin iç bir nesnesidir; ya da `wcstol` benzer biçimde çağrıldığında çok sayıda karakter için `wcstol(Str.c_str(), _Eptr, idx)` . Daha fazla bilgi için bkz. [strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md).
 
-`str.c_str() == *_Eptr`Eğer, `stoi` türünde `invalid_argument`bir nesne atar. Böyle bir çağrı `errno`ayarlanırsa veya döndürülen değer bir tür **`int`** nesnesi olarak temsil edilenemezse, bir tür `out_of_range`nesnesi atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr - str.c_str()` `*idx`işlev .
+İse `str.c_str() == *_Eptr` , `stoi` türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanır `errno` veya döndürülen değer türünde bir nesne olarak temsil edimiyorsa **`int`** , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi `*_Eptr - str.c_str()` ' de depolar `*idx` .
 
-## <a name="stol"></a><a name="stol"></a>stol
+## <a name="stol"></a><a name="stol"></a> STOL
 
-Karakter dizisini bir **`long`**.
+Bir karakter dizisini öğesine dönüştürür **`long`** .
 
 ```cpp
 long stol(
@@ -274,26 +280,26 @@ long stol(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
-*Temel*\
-Kullanılacak sayı tabanı.
+*temel*\
+Kullanılacak sayı temeli.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzun sonda değeri.
+Uzun tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`long`** işlevin iç `strtol( str.c_str(), _Eptr, idx)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`long`** çağırarak `strtol( str.c_str(), _Eptr, idx)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="stold"></a><a name="stold"></a>stold
+## <a name="stold"></a><a name="stold"></a> stold
 
-Karakter dizisini bir **`long double`**.
+Bir karakter dizisini öğesine dönüştürür **`long double`** .
 
 ```cpp
 double stold(
@@ -307,23 +313,23 @@ double stold(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değeri. **`long double`**
+**`long double`** Değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`long double`** işlevin iç `strtold( str.c_str(), _Eptr)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`long double`** çağırarak `strtold( str.c_str(), _Eptr)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="stoll"></a><a name="stoll"></a>Stoll
+## <a name="stoll"></a><a name="stoll"></a> Stoll
 
-Karakter dizisini bir **`long long`**.
+Bir karakter dizisini öğesine dönüştürür **`long long`** .
 
 ```cpp
 long long stoll(
@@ -339,26 +345,26 @@ long long stoll(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
-*Temel*\
-Kullanılacak sayı tabanı.
+*temel*\
+Kullanılacak sayı temeli.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değeri. **`long long`**
+**`long long`** Değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`long long`** işlevin iç `strtoll( str.c_str(), _Eptr, idx)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`long long`** çağırarak `strtoll( str.c_str(), _Eptr, idx)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="stoul"></a><a name="stoul"></a>stoul
+## <a name="stoul"></a><a name="stoul"></a> stoul
 
-Karakter dizisini imzasız uzuna dönüştürür.
+Bir karakter dizisini işaretsiz bir Long değerine dönüştürür.
 
 ```cpp
 unsigned long stoul(
@@ -374,26 +380,26 @@ unsigned long stoul(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
-*Temel*\
-Kullanılacak sayı tabanı.
+*temel*\
+Kullanılacak sayı temeli.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İmzalanmamış uzun tümseci değeri.
+İşaretsiz uzun tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`unsigned long`** işlevin iç `strtoul( str.c_str(), _Eptr, idx)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`unsigned long`** çağırarak `strtoul( str.c_str(), _Eptr, idx)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="stoull"></a><a name="stoull"></a>stoull
+## <a name="stoull"></a><a name="stoull"></a> stoull
 
-Karakter dizisini bir **`unsigned long long`**.'e dönüştürür
+Bir karakter dizisini bir öğesine dönüştürür **`unsigned long long`** .
 
 ```cpp
 unsigned long long stoull(
@@ -409,26 +415,26 @@ unsigned long long stoull(
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*\
-Dönüştürülecek karakter dizisi.
+*üstbilgisine*\
+Dönüştürülecek karakter sırası.
 
-*ıdx*\
-Dönüştürülmemiş ilk karakterin dizin değeri.
+*idx*\
+İlk dönüştürülmemiş karakterin dizin değeri.
 
-*Temel*\
-Kullanılacak sayı tabanı.
+*temel*\
+Kullanılacak sayı temeli.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değeri. **`unsigned long long`**
+**`unsigned long long`** Değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *str'deki* öğelerin dizisini, **`unsigned long long`** işlevin iç `strtoull( str.c_str(), _Eptr, idx)`sel `_Eptr` olduğu bir nesne nin bulunduğu yeri çağırarak sanki bir tür değerine dönüştürür. Eğer, `str.c_str() == *_Eptr`bir tür `invalid_argument`nesne atar. Böyle bir çağrı `errno`ayarlanırsa, bir tür `out_of_range`nesne atar. Aksi takdirde, *idx* null işaretçi değilse, `*_Eptr -  str.c_str()` `*idx` işlev depolar ve değeri döndürür.
+İşlevi, *Str* içindeki öğe dizisini, **`unsigned long long`** çağırarak `strtoull( str.c_str(), _Eptr, idx)` , `_Eptr` işlevinin iç bir nesnesi olduğu gibi, öğesini çağırarak bir değere dönüştürür. İse `str.c_str() == *_Eptr` , türünde bir nesne oluşturur `invalid_argument` . Böyle bir çağrı ayarlanacaksa `errno` , türünde bir nesne oluşturur `out_of_range` . Aksi halde, *idx* null bir işaretçi değilse, işlevi ' `*_Eptr -  str.c_str()` de depolar `*idx` ve değeri döndürür.
 
-## <a name="swap"></a><a name="swap"></a>Takas
+## <a name="swap"></a><a name="swap"></a> Kur
 
-İki dizekarakter dizilerini değiştirir.
+İki dizenin karakter dizilerini değiş tokuş eder.
 
 ```cpp
 template <class Traits, class Allocator>
@@ -437,15 +443,15 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Öğeleri başka bir dize öğeleri ile takas edilecek olan bir dize.
+*tarafta*\
+Öğeleri başka bir dizenin öğeleriyle birlikte takas edilecek bir dize.
 
-*Doğru*\
-Öğeleri ilk dize ile değiştirilecek olan diğer dize.
+*Right*\
+Öğeleri ilk dizeyle takas edilecek diğer dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon *işlevi, soldaki*özel üye işlevini yürütür. [sabit](../standard-library/basic-string-class.md#swap)karmaşıklığı garanti eden dizeleri için takas (*sağ).*
+Şablon işlevi, *sol taraftaki*özelleştirilmiş üye işlevini yürütür. Sabit karmaşıklığı garanti eden dizeler için [takas](../standard-library/basic-string-class.md#swap)(*sağ*).
 
 ### <a name="example"></a>Örnek
 
@@ -482,9 +488,9 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.
 ```
 
-## <a name="to_string"></a><a name="to_string"></a>to_string
+## <a name="to_string"></a><a name="to_string"></a> to_string
 
-Bir değeri bir `string`.
+Bir değeri öğesine dönüştürür `string` .
 
 ```cpp
 string to_string(int value);
@@ -500,36 +506,36 @@ string to_string(long double value);
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*\
+*deeri*\
 Dönüştürülecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Değeri `string` temsil eden değer.
+`string`Değeri temsil eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *değeri,* bir dizi nesnesi `Buf` içinde depolanan bir öğe `sprintf(Buf, Fmt, value)`dizisine, işlevi arayarak , nerede olduğunu `Fmt`
+İşlevi, öğesini *value* çağırarak bir Array nesnesinde depolanan bir öğe dizisine `Buf` `sprintf(Buf, Fmt, value)` , `Fmt`
 
-- `"%d"`*değer* türde ise**`int`**
+- `"%d"`*değer* tür ise**`int`**
 
-- `"%u"`*değer* türde ise**`unsigned int`**
+- `"%u"`*değer* tür ise**`unsigned int`**
 
-- `"%ld"`*değer* türde ise**`long`**
+- `"%ld"`*değer* tür ise**`long`**
 
-- `"%lu"`*değer* türde ise**`unsigned long`**
+- `"%lu"`*değer* tür ise**`unsigned long`**
 
-- `"%lld"`*değer* türde ise**`long long`**
+- `"%lld"`*değer* tür ise**`long long`**
 
-- `"%llu"`*değer* türde ise**`unsigned long long`**
+- `"%llu"`*değer* tür ise**`unsigned long long`**
 
-- `"%f"`*değer* türünde **`float`** ise veya**`double`**
+- `"%f"`*değer* tür ise **`float`** veya**`double`**
 
-- `"%Lf"`*değer* türde ise**`long double`**
+- `"%Lf"`*değer* tür ise**`long double`**
 
-İşlev `string(Buf)`döndürür.
+İşlev döndürür `string(Buf)` .
 
-## <a name="to_wstring"></a><a name="to_wstring"></a>to_wstring
+## <a name="to_wstring"></a><a name="to_wstring"></a> to_wstring
 
 Bir değeri geniş dizeye dönüştürür.
 
@@ -547,7 +553,7 @@ wstring to_wstring(long double value);
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*\
+*deeri*\
 Dönüştürülecek değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -556,26 +562,26 @@ Değeri temsil eden geniş dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, *değeri,* bir dizi nesnesi `Buf` içinde depolanan bir öğe `swprintf(Buf, Len, Fmt, value)`dizisine, işlevi arayarak , nerede olduğunu `Fmt`
+İşlevi, öğesini *value* çağırarak bir Array nesnesinde depolanan bir öğe dizisine `Buf` `swprintf(Buf, Len, Fmt, value)` , `Fmt`
 
-- `L"%d"`*değer* türde ise**`int`**
+- `L"%d"`*değer* tür ise**`int`**
 
-- `L"%u"`*değer* türde ise**`unsigned int`**
+- `L"%u"`*değer* tür ise**`unsigned int`**
 
-- `L"%ld"`*değer* türde ise**`long`**
+- `L"%ld"`*değer* tür ise**`long`**
 
-- `L"%lu"`*değer* türde ise**`unsigned long`**
+- `L"%lu"`*değer* tür ise**`unsigned long`**
 
-- `L"%lld"`*değer* türde ise**`long long`**
+- `L"%lld"`*değer* tür ise**`long long`**
 
-- `L"%llu"`*değer* türde ise**`unsigned long long`**
+- `L"%llu"`*değer* tür ise**`unsigned long long`**
 
-- `L"%f"`*değer* türünde **`float`** ise veya**`double`**
+- `L"%f"`*değer* tür ise **`float`** veya**`double`**
 
-- `L"%Lf"`*değer* türde ise**`long double`**
+- `L"%Lf"`*değer* tür ise**`long double`**
 
-İşlev `wstring(Buf)`döndürür.
+İşlev döndürür `wstring(Buf)` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dize>](../standard-library/string.md)
+[\<string>](../standard-library/string.md)

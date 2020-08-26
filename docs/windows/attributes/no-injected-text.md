@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - no_injected_text attribute
 ms.assetid: 5256f808-e41e-4f4a-9ea5-e447919f5696
-ms.openlocfilehash: 7e5c822c45888f41e8dd849f25658d0139e6fda0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ab718376d5da7214813d5ab2e0caaa7bbccd077b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87201251"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844086"
 ---
 # <a name="no_injected_text"></a>no_injected_text
 
@@ -34,14 +34,12 @@ ms.locfileid: "87201251"
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -5,18 +5,18 @@ ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::FactoryCacheFlags
 ms.assetid: 6f54258f-0144-4264-9608-414e5905f6fb
-ms.openlocfilehash: 250c8c8e7ade72bd1a9cd63f0b515774058f0723
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3381b2bcfcbf298270b547199ae614291855a2f7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214012"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843280"
 ---
 # <a name="factorycacheflags-enumeration"></a>FactoryCacheFlags Numaralandırması
 
 Fabrika nesnelerinin önbelleğe alınıp alınmayacağını belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum FactoryCacheFlags;
@@ -26,11 +26,11 @@ enum FactoryCacheFlags;
 
 Varsayılan olarak, bir [Modül](module-class.md) nesnesi oluşturduğunuzda, fabrika önbelleğe alma Ilkesi, [ModuleType](moduletype-enumeration.md) şablonu parametresi olarak belirtilir. Bu ilkeyi geçersiz kılmak için, bir Factory nesnesi oluştururken bir **FactoryCacheFlags** değeri belirtin.
 
-|||
+| İlke | Açıklama |
 |-|-|
-|`FactoryCacheDefault`|`Module` nesnesinin önbelleğe alma ilkesi kullanılır.|
-|`FactoryCacheEnabled`|Bir `Module` nesnesi oluşturmak için kullanılan `ModuleType` şablonu parametresinden bağımsız olarak fabrika önbelleğe almayı sağlar.|
-|`FactoryCacheDisabled`|Bir `Module` nesnesi oluşturmak için kullanılan `ModuleType` şablonu parametresinden bağımsız olarak fabrika önbelleğini devre dışı bırakır.|
+|`FactoryCacheDefault`|Nesnesinin önbelleğe alma ilkesi `Module` kullanılır.|
+|`FactoryCacheEnabled`|`ModuleType`Bir nesne oluşturmak için kullanılan şablon parametresinden bağımsız olarak fabrika önbelleğe almayı sağlar `Module` .|
+|`FactoryCacheDisabled`|`ModuleType`Bir nesne oluşturmak için kullanılan şablon parametresi ne olursa olsun, fabrika önbelleğini devre dışı bırakır `Module` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -40,4 +40,4 @@ Varsayılan olarak, bir [Modül](module-class.md) nesnesi oluşturduğunuzda, fa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

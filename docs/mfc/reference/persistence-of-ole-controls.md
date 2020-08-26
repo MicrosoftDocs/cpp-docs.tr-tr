@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-ms.openlocfilehash: a99757854e23708f86822906c7ef9023701ea06b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f3ef5a1f465cc478b429b9fa41d6478f22030a8a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214067"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843618"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 
@@ -18,7 +18,7 @@ OLE denetimlerinin bir özelliği, OLE denetiminin bir dosya veya akışa ait ö
 
 ### <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[PX_Blob](#px_blob)|İkili büyük nesne (BLOB) verilerini depolayan bir denetim özelliğini değiş tokuş eder.|
 |[PX_Bool](#px_bool)|**Bool**türünde bir denetim özelliği değiş tokuş eder.|
@@ -39,7 +39,7 @@ OLE denetimlerinin bir özelliği, OLE denetiminin bir dosya veya akışa ait ö
 
 Ayrıca, `AfxOleTypeMatchGuid` genel Işlev TYPEDESC ve verilen BIR GUID arasındaki eşleşmeyi test etmek için sağlanır.
 
-## <a name="px_blob"></a><a name="px_blob"></a>PX_Blob
+## <a name="px_blob"></a><a name="px_blob"></a> PX_Blob
 
 `DoPropExchange`İkili büyük nesne (blob) verilerini depolayan bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
 
@@ -81,7 +81,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 `PX_Blob`BLOB türü özellikleri yüklenirken Windows [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) API 'sini kullanarak bellek ayıracağına unutmayın. Bu belleği boşaltmaktan siz sorumlusunuz. Bu nedenle, denetiminizin yıkıcısında herhangi bir BLOB türü özellik tanıtıcısında [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree) çağrısı yapmanız gerekir.
 
-## <a name="px_bool"></a><a name="px_bool"></a>PX_Bool
+## <a name="px_bool"></a><a name="px_bool"></a> PX_Bool
 
 `DoPropExchange`Bool türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -120,7 +120,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, doğru şekilde *bValue*tarafından başvurulan değişkene okunacak veya yazılacak. *BDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_color"></a><a name="px_color"></a>PX_Color
+## <a name="px_color"></a><a name="px_color"></a> PX_Color
 
 `DoPropExchange`OLE_COLOR türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -159,7 +159,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde, *clrvalue*tarafından başvurulan değişkene göre okunacak veya bu değişkene yazılacak. Eğer *clrDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_currency"></a><a name="px_currency"></a>PX_Currency
+## <a name="px_currency"></a><a name="px_currency"></a> PX_Currency
 
 `DoPropExchange` **Currency**türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
 
@@ -198,7 +198,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde, *cyvalue*tarafından başvurulan değişkene okunacak veya bu değişkene yazılacak. *CyDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_datapath"></a><a name="px_datapath"></a>PX_DataPath
+## <a name="px_datapath"></a><a name="px_datapath"></a> PX_DataPath
 
 `DoPropExchange` [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md)türünde bir veri yolu özelliğini seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -232,7 +232,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Veri yolu özellikleri zaman uyumsuz denetim özellikleri uygular. Özelliğin değeri, uygun şekilde *Datapathproperty*tarafından başvurulan değişkene okunacak veya bu değişkene yazılacak.
 
-## <a name="px_double"></a><a name="px_double"></a>PX_Double
+## <a name="px_double"></a><a name="px_double"></a> PX_Double
 
 `DoPropExchange`Türü bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın **`double`** .
 
@@ -271,7 +271,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde *DoubleValue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *DoubleDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_font"></a><a name="px_font"></a>PX_Font
+## <a name="px_font"></a><a name="px_font"></a> PX_Font
 
 `DoPropExchange`Yazı tipi türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -309,7 +309,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, `font` uygun olduğunda bir başvuruya göre okunurdur veya yazılır `CFontHolder` . *PFontDesc* ve *Pfontdispambköpek* belirtilmişse, gerektiğinde özelliğin varsayılan değerini başlatmak için kullanılır. Bu değerler, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır. Genellikle, *pFontDesc* için null ve `COleControl::AmbientFont` *Pfontdispambun*tarafından döndürülen çevresel değer ile geçiş yapabilirsiniz. Tarafından döndürülen yazı tipi nesnesinin, `COleControl::AmbientFont` üye işlevine yapılan bir çağrı tarafından yayımlanması gerektiğini unutmayın `IFontDisp::Release` .
 
-## <a name="px_float"></a><a name="px_float"></a>PX_Float
+## <a name="px_float"></a><a name="px_float"></a> PX_Float
 
 `DoPropExchange`Türü bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın **`float`** .
 
@@ -348,7 +348,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde, *Floatvalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *FloatDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_iunknown"></a><a name="px_iunknown"></a>PX_IUnknown
+## <a name="px_iunknown"></a><a name="px_iunknown"></a> PX_IUnknown
 
 `DoPropExchange`Türetilmiş arabirime sahip bir nesne tarafından temsil edilen bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın `IUnknown` .
 
@@ -386,7 +386,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde, *punk*tarafından başvurulan değişkene göre okunurdur veya yazılır. *PUnkDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_long"></a><a name="px_long"></a>PX_Long
+## <a name="px_long"></a><a name="px_long"></a> PX_Long
 
 `DoPropExchange`Türü bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın **`long`** .
 
@@ -425,7 +425,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde *lValue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *LDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_picture"></a><a name="px_picture"></a>PX_Picture
+## <a name="px_picture"></a><a name="px_picture"></a> PX_Picture
 
 `DoPropExchange`Denetiminizin bir resim özelliğini seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -464,7 +464,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde, *PICT*tarafından başvurulan değişkene göre okunurdur veya yazılır. *PictDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_short"></a><a name="px_short"></a>PX_Short
+## <a name="px_short"></a><a name="px_short"></a> PX_Short
 
 `DoPropExchange`Türü bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın **`short`** .
 
@@ -503,7 +503,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde *Svalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. Eğer *sDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_ulong"></a><a name="px_ulong"></a>PX_ULong
+## <a name="px_ulong"></a><a name="px_ulong"></a> PX_ULong
 
 `DoPropExchange` **Ulong**türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -542,7 +542,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde *Ulvalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *UlDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_ushort"></a><a name="px_ushort"></a>PX_UShort
+## <a name="px_ushort"></a><a name="px_ushort"></a> PX_UShort
 
 `DoPropExchange`Türü bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın **`unsigned short`** .
 
@@ -581,7 +581,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde *Usvalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *UsDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="pxstring"></a><a name="px_string"></a>PXstring
+## <a name="pxstring"></a><a name="px_string"></a> PXstring
 
 `DoPropExchange`Bir karakter dizesi özelliğini seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
@@ -620,7 +620,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Özelliğin değeri, uygun şekilde *strValue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *StrDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
-## <a name="px_vbxfontconvert"></a><a name="px_vbxfontconvert"></a>PX_VBXFontConvert
+## <a name="px_vbxfontconvert"></a><a name="px_vbxfontconvert"></a> PX_VBXFontConvert
 
 Bir `DoPropExchange` VBX denetiminin yazı tipine ilişkin özellikleri dönüştürerek bir yazı tipi özelliğini başlatmak için bu işlevi denetiminizin member işlevinde çağırın.
 
@@ -644,9 +644,9 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yalnızca bir VBX denetimi için doğrudan değiştirme olarak tasarlanan bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamı, bir VBX denetimi içeren bir formu karşılık gelen değiştirme OLE denetimini kullanacak şekilde dönüştürdüğünde, `IDataObject::SetData` VBX denetiminin özellik verilerini içeren bir özellik kümesini geçirerek denetimin işlevini çağırır. Bu işlem, sırasıyla denetimin `DoPropExchange` işlevinin çağrılmasına neden olur. `DoPropExchange`, `PX_VBXFontConvert` VBX denetiminin yazı tipi ile ilgili özelliklerini (örneğin, "FontName," "FontSize" vb.) OLE denetiminin yazı tipi özelliğinin karşılık gelen bileşenlerine dönüştürmek için çağrı yapabilir.
+Bu işlev yalnızca bir VBX denetimi için doğrudan değiştirme olarak tasarlanan bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamı, bir VBX denetimi içeren bir formu karşılık gelen değiştirme OLE denetimini kullanacak şekilde dönüştürdüğünde, `IDataObject::SetData` VBX denetiminin özellik verilerini içeren bir özellik kümesini geçirerek denetimin işlevini çağırır. Bu işlem, sırasıyla denetimin `DoPropExchange` işlevinin çağrılmasına neden olur. `DoPropExchange` , `PX_VBXFontConvert` VBX denetiminin yazı tipi ile ilgili özelliklerini (örneğin, "FontName," "FontSize" vb.) OLE denetiminin yazı tipi özelliğinin karşılık gelen bileşenlerine dönüştürmek için çağrı yapabilir.
 
-`PX_VBXFontConvert`yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürüldüğünde çağrılmalıdır. Örnek:
+`PX_VBXFontConvert` yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürüldüğünde çağrılmalıdır. Örnek:
 
 [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]

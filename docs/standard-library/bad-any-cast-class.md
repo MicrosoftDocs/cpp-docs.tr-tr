@@ -7,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - any/std::bad_any_cast
 - any/std::bad_any_cast::what
-ms.openlocfilehash: 5172281d1918a8b4ac33bcf412bf4be82b04ef56
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b47ca4f615c6f317f17ce64e8388ae5d698185ea
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267960"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844593"
 ---
-# <a name="badanycast-class"></a>bad_any_cast sınıfı
+# <a name="bad_any_cast-class"></a>bad_any_cast sınıfı
 
-Başarısız tarafından oluşturulan nesneleri `any_cast`.
+Bir tarafından oluşturulan nesneler başarısız oldu `any_cast` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class bad_any_cast
@@ -26,13 +26,13 @@ class bad_any_cast
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[ne](#what)|Türünü döndürür.|
+|[Yazdırılacak](#what)|Türü döndürür.|
 
-## <a name="what"></a> ne
+## <a name="what"></a><a name="what"></a> Yazdırılacak
 
-Türünü döndürür.
+Türü döndürür.
 
 ```cpp
 const char* what() const noexcept override;

@@ -1,5 +1,5 @@
 ---
-title: '&lt;dizi&gt; işleçleri'
+title: '&lt;dizi &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - array/std::array::operator!=
@@ -9,25 +9,27 @@ f1_keywords:
 - array/std::array::operator>=
 - array/std::array::operator==
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-ms.openlocfilehash: 531ad2936322f90a38631a9450e0ad8a210fdd87
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3d799bd584f45e93668c1ac2a753c82f41220773
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364906"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844671"
 ---
-# <a name="ltarraygt-operators"></a>&lt;dizi&gt; işleçleri
+# <a name="ltarraygt-operators"></a>&lt;dizi &gt; işleçleri
 
-Dizi \<> üstbilgi bu **dizi** üye olmayan karşılaştırma şablonu işlevlerini içerir.
+\<array>Üst bilgi bu **dizi** üye olmayan karşılaştırma şablonu işlevlerini içerir.
 
-||||
-|-|-|-|
-|[işleç!=](#op_neq)|[Işleç&gt;](#op_gt)|[Işleç&gt;=](#op_gt_eq)|
-|[Işleç&lt;](#op_lt)|[Işleç&lt;=](#op_lt_eq)|[işleç==](#op_eq_eq)|
+[işleç! =](#op_neq)\
+[işlecinde&gt;](#op_gt)\
+[işlecinde&gt;=](#op_gt_eq)\
+[işlecinde&lt;](#op_lt)\
+[işlecinde&lt;=](#op_lt_eq)\
+[işleç = =](#op_eq_eq)
 
-## <a name="operator"></a><a name="op_neq"></a>işleç!=
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
-Dizi karşılaştırması, eşit değil.
+Dizi karşılaştırması, eşit değildir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -38,21 +40,21 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
+*Kalite*\
 Öğenin türü.
 
-*N*\
+*No*\
 Dizinin boyutu.
 
-*Sol*\
-Karşılaştırmak için sol konteyner.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*\
-Karşılaştırmak için doğru konteyner.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `!(left == right)`döndürür.
+Şablon işlevi döndürür `!(left == right)` .
 
 ### <a name="example"></a>Örnek
 
@@ -98,9 +100,9 @@ false
 true
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>Işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
-Dizi karşılaştırması, daha az.
+Dizi karşılaştırması, küçüktür.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -111,21 +113,21 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
+*Kalite*\
 Öğenin türü.
 
-*N*\
+*No*\
 Dizinin boyutu.
 
-*Sol*\
-Karşılaştırmak için sol konteyner.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*\
-Karşılaştırmak için doğru konteyner.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi sınıf `operator<` şablon [dizisi Sınıf](../standard-library/array-class-stl.md)iki nesnekarşılaştırmak için overloads . İşlev `lexicographical_compare(left.begin(), left.end(), right.begin())`döndürür.
+Şablon işlevi, `operator<` sınıf şablonu [dizi sınıfının](../standard-library/array-class-stl.md)iki nesnesini karşılaştırmak için aşırı yükler. İşlev döndürür `lexicographical_compare(left.begin(), left.end(), right.begin())` .
 
 ### <a name="example"></a>Örnek
 
@@ -171,9 +173,9 @@ false
 true
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>Işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
-Dizi karşılaştırması, daha az veya eşit.
+Dizi karşılaştırması, küçüktür veya eşittir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -184,21 +186,21 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
+*Kalite*\
 Öğenin türü.
 
-*N*\
+*No*\
 Dizinin boyutu.
 
-*Sol*\
-Karşılaştırmak için sol konteyner.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*\
-Karşılaştırmak için doğru konteyner.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `!(right < left)`döndürür.
+Şablon işlevi döndürür `!(right < left)` .
 
 ### <a name="example"></a>Örnek
 
@@ -244,9 +246,9 @@ true
 false
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç==
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
-Dizi karşılaştırması, eşit.
+Dizi karşılaştırması, eşittir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -257,21 +259,21 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
+*Kalite*\
 Öğenin türü.
 
-*N*\
+*No*\
 Dizinin boyutu.
 
-*Sol*\
-Karşılaştırmak için sol konteyner.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*\
-Karşılaştırmak için doğru konteyner.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi sınıf `operator==` şablon [dizisi Sınıf](../standard-library/array-class-stl.md)iki nesnekarşılaştırmak için overloads . İşlev `equal(left.begin(), left.end(), right.begin())`döndürür.
+Şablon işlevi, `operator==` sınıf şablonu [dizi sınıfının](../standard-library/array-class-stl.md)iki nesnesini karşılaştırmak için aşırı yükler. İşlev döndürür `equal(left.begin(), left.end(), right.begin())` .
 
 ### <a name="example"></a>Örnek
 
@@ -317,9 +319,9 @@ true
 false
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>Işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
-Dizi karşılaştırması, daha büyük.
+Dizi karşılaştırması, büyüktür.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -330,21 +332,21 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
+*Kalite*\
 Öğenin türü.
 
-*N*\
+*No*\
 Dizinin boyutu.
 
-*Sol*\
-Karşılaştırmak için sol konteyner.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*\
-Karşılaştırmak için doğru konteyner.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `(right < left)`döndürür.
+Şablon işlevi döndürür `(right < left)` .
 
 ### <a name="example"></a>Örnek
 
@@ -390,9 +392,9 @@ false
 true
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>Işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
-Dizi karşılaştırması, büyük veya eşit.
+Dizi karşılaştırması, büyüktür veya eşittir.
 
 ```cpp
 template <Ty, std::size_t N>
@@ -403,21 +405,21 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
+*Kalite*\
 Öğenin türü.
 
-*N*\
+*No*\
 Dizinin boyutu.
 
-*Sol*\
-Karşılaştırmak için sol konteyner.
+*tarafta*\
+Karşılaştırılacak sol kapsayıcı.
 
-*Doğru*\
-Karşılaştırmak için doğru konteyner.
+*Right*\
+Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `!(left < right)`döndürür.
+Şablon işlevi döndürür `!(left < right)` .
 
 ### <a name="example"></a>Örnek
 
@@ -465,4 +467,4 @@ false
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi>](../standard-library/array.md)
+[\<array>](../standard-library/array.md)

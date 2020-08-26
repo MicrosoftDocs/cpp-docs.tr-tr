@@ -1,24 +1,24 @@
 ---
-title: '&lt;kaydedilmemiş&gt;'
+title: '&lt;tümü&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <any>
 helpviewer_keywords:
 - <any>
-ms.openlocfilehash: 19e30b1ab0a9b0f30c1a4f3d4b614643cb8b50ac
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 5039c1499e423af6eedbe26b0b20f57b316648b6
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456278"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844736"
 ---
-# <a name="ltanygt"></a>&lt;kaydedilmemiş&gt;
+# <a name="ltanygt"></a>&lt;tümü&gt;
 
 Herhangi bir ve birkaç destekleyici işlev ve sınıf sınıfını tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<herhangi bir >
+**Üst bilgi:**\<any>
 
 **Ad alanı:** std
 
@@ -26,7 +26,7 @@ Herhangi bir ve birkaç destekleyici işlev ve sınıf sınıfını tanımlar.
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[any_cast](../standard-library/any-functions.md#any_cast)|Nesnesine bir nesnesi oluşturur.|
 |[make_any](../standard-library/any-functions.md#make_any)|Değerleri alır ve herhangi bir nesne oluşturur.|
@@ -34,10 +34,10 @@ Herhangi bir ve birkaç destekleyici işlev ve sınıf sınıfını tanımlar.
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[kaydedilmemiş](../standard-library/any-class.md)|Oluşturucu gereksinimlerini karşılayan veya hiçbir değere sahip olmayan her türlü türü depolar.|
-|[bad_any_cast](../standard-library/bad-any-cast-class.md)|Bir tarafından oluşturulan nesneler başarısız `any_cast`oldu.|
+|[bad_any_cast](../standard-library/bad-any-cast-class.md)|Bir tarafından oluşturulan nesneler başarısız oldu `any_cast` .|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

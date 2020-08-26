@@ -1,23 +1,23 @@
 ---
-title: nesne (C++ com özniteliği)
+title: nesne (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.object
 helpviewer_keywords:
 - object attribute
 ms.assetid: f2d3c231-630d-4b4c-bd15-b1c30df362dd
-ms.openlocfilehash: 4545d899c13a1eabf8ea5fb6fe3918fb5f05b626
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c0c0ff552d8a33ebe70f56b9b186e963cc8e9b3d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214715"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843111"
 ---
 # <a name="object-c"></a>nesne (C++)
 
 Özel bir arabirim tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [object]
@@ -27,7 +27,7 @@ ms.locfileid: "80214715"
 
 Bir arabirim tanımından önce, **nesne** C++ özniteliği arabirimin. IDL dosyasına özel bir arabirim olarak yerleştirilmesine neden olur.
 
-Nesne ile işaretlenen herhangi bir arabirim `IUnknown`devralması gerekir. Temel arabirimlerin herhangi biri `IUnknown`devraldığı takdirde bu durum karşılanır. `IUnknown`hiçbir temel arabirim devralmadıysanız, derleyici **nesne** ile işaretlenen arabirimin `IUnknown`türetmesine neden olur.
+Nesne ile işaretlenen herhangi bir arabirim öğesinden devralması gerekir `IUnknown` . Taban arabirimlerinden herhangi biri öğesinden devraldığı takdirde bu durum karşılanır `IUnknown` . Öğesinden hiçbir temel arabirim devralmadıysanız `IUnknown` , derleyici **nesne** ile işaretlenmiş arabirimin türetmesine neden olur `IUnknown` .
 
 ## <a name="example"></a>Örnek
 
@@ -35,22 +35,20 @@ Nesne ile işaretlenen herhangi bir arabirim `IUnknown`devralması gerekir. Teme
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|**interface**|
+|**Şunlara uygulanır**|**arayüz**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Arabirim Öznitelikleri](interface-attributes.md)<br/>
-[dual](dual.md)<br/>
+[Arabirim öznitelikleri](interface-attributes.md)<br/>
+[çift](dual.md)<br/>
 [dispinterface](dispinterface.md)<br/>
-[custom](custom-cpp.md)<br/>
+[özel](custom-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

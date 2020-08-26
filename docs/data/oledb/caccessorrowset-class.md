@@ -27,12 +27,12 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: 42b7d385877d68db22ccaf6665e8043dbfe2ee44
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9ad4292b69d0219aa1732638ae250758e4456f4b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233489"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88843293"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 
@@ -62,23 +62,23 @@ Satır kümesi sınıfı.
 
 ### <a name="methods"></a>Yöntemler
 
-|||
-|-|-|
-|[Bağladığınızda](#bind)|Bağlamalar oluşturur ( `bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtildiğinde kullanılır).|
-|[CAccessorRowset](#caccessorrowset)|Oluşturucu.|
-|[Kapat](#close)|Satır kümesini ve tüm erişimcileri kapatır.|
-|[FreeRecordMemory](#freerecordmemory)|Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır.|
-|[GetColumnInfo](#getcolumninfo)|[IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\))uygular.|
+| Ad | Açıklama |
+|--|--|
+| [Bağladığınızda](#bind) | Bağlamalar oluşturur ( `bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtildiğinde kullanılır). |
+| [CAccessorRowset](#caccessorrowset) | Oluşturucu. |
+| [Kapat](#close) | Satır kümesini ve tüm erişimcileri kapatır. |
+| [FreeRecordMemory](#freerecordmemory) | Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır. |
+| [GetColumnInfo](#getcolumninfo) | [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\))uygular. |
 
 ## <a name="remarks"></a>Açıklamalar
 
 Sınıf `TAccessor` , erişimciyi yönetir. *TRowset* sınıfı satır kümesini yönetir.
 
-## <a name="caccessorrowsetbind"></a><a name="bind"></a>CAccessorRowset:: bind
+## <a name="caccessorrowsetbind"></a><a name="bind"></a> CAccessorRowset:: bind
 
 `bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtilmişse bağlamaları oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT Bind();
@@ -88,21 +88,21 @@ HRESULT Bind();
 
 Standart HRESULT.
 
-## <a name="caccessorrowsetcaccessorrowset"></a><a name="caccessorrowset"></a>CAccessorRowset:: CAccessorRowset
+## <a name="caccessorrowsetcaccessorrowset"></a><a name="caccessorrowset"></a> CAccessorRowset:: CAccessorRowset
 
 Nesnesini başlatır `CAccessorRowset` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CAccessorRowset();
 ```
 
-## <a name="caccessorrowsetclose"></a><a name="close"></a>CAccessorRowset:: Close
+## <a name="caccessorrowsetclose"></a><a name="close"></a> CAccessorRowset:: Close
 
 Tüm etkin erişimcileri ve satır kümesini yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close();
@@ -112,17 +112,17 @@ void Close();
 
 İlişkili tüm belleği serbest bırakır.
 
-## <a name="caccessorrowsetfreerecordmemory"></a><a name="freerecordmemory"></a>CAccessorRowset:: FreeRecordMemory
+## <a name="caccessorrowsetfreerecordmemory"></a><a name="freerecordmemory"></a> CAccessorRowset:: FreeRecordMemory
 
 Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void FreeRecordMemory();
 ```
 
-## <a name="caccessorrowsetgetcolumninfo"></a><a name="getcolumninfo"></a>CAccessorRowset:: GetColumnInfo
+## <a name="caccessorrowsetgetcolumninfo"></a><a name="getcolumninfo"></a> CAccessorRowset:: GetColumnInfo
 
 Açılan satır kümesinden sütun bilgilerini alır.
 

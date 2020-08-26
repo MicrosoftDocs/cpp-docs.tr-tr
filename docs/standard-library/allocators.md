@@ -5,12 +5,12 @@ helpviewer_keywords:
 - allocators
 - C++ Standard Library, allocators
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746
-ms.openlocfilehash: 5aee23f72c5b0fb955b4dcc76a3f8c51eca7be70
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fdad5cc8417740f7736bcf34cbc941a4e66de87d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87204241"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844762"
 ---
 # <a name="allocators"></a>Ayırıcılar
 
@@ -101,23 +101,48 @@ void Mallocator<T>::deallocate(T * const p, size_t) const noexcept
 
 C++ 03 ' de, C++ standart kitaplığı kapsayıcıları ile kullanılan herhangi bir ayırıcı aşağıdaki tür tanımlarını gerçekleştirmelidir:
 
-|||
-|-|-|
-|`const_pointer`|`rebind`|
-|`const_reference`|`reference`|
-|`difference_type`|`size_type`|
-|`pointer`|`value_type`|
+:::row:::
+   :::column:::
+      `const_pointer`\
+      `const_reference`
+   :::column-end:::
+   :::column:::
+      `difference_type`\
+      `pointer`
+   :::column-end:::
+   :::column:::
+      `rebind`\
+      `reference`
+   :::column-end:::
+   :::column:::
+      `size_type`\
+      `value_type`
+   :::column-end:::
+:::row-end:::
 
 Buna ek olarak, C++ standart kitaplığı kapsayıcıları ile kullanılan herhangi bir ayırıcı aşağıdaki yöntemleri gerçekleştirmelidir:
 
-|||
-|-|-|
-|Oluşturucu|`deallocate`|
-|Kopya oluşturucu|`destroy`|
-|Yok edici|`max_size`|
-|`address`|`operator==`|
-|`allocate`|`operator!=`|
-|`construct`||
+:::row:::
+   :::column:::
+      Constructor
+      Oluşturucuyu Kopyala \
+      Yok edici
+   :::column-end:::
+   :::column:::
+      `address`\
+      `allocate`\
+      `construct`
+   :::column-end:::
+   :::column:::
+      `deallocate`\
+      `destroy`\
+      `max_size`
+   :::column-end:::
+   :::column:::
+      `operator!=`\
+      `operator==`
+   :::column-end:::
+:::row-end:::
 
 Bu tür tanımları ve yöntemleri hakkında daha fazla bilgi için bkz. [ayırıcı sınıfı](allocator-class.md).
 
