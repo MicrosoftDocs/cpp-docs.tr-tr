@@ -7,21 +7,21 @@ f1_keywords:
 - string/std::u32string
 - string/std::wstring
 ms.assetid: fdca01e9-f2f1-4b59-abda-0093d760b3cc
-ms.openlocfilehash: 8e662e4c13012f31014817489b61ee3ed6bc36e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 083209f0121ac38d8adf81975577257e4e23a393
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202304"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845438"
 ---
 # <a name="ltstringgt-typedefs"></a>&lt;dize &gt; türü tanımları
 
-||||
-|-|-|-|
-|[dizisinde](#string)|[u16string](#u16string)|[u32string](#u32string)|
-|[wstring](#wstring)|
+[dizisinde](#string)\
+[u16string](#u16string)\
+[u32string](#u32string)\
+[wstring](#wstring)
 
-## <a name="string"></a><a name="string"></a>dizisinde
+## <a name="string"></a><a name="string"></a> dizisinde
 
 Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`char`** .
 
@@ -43,7 +43,7 @@ basic_string<char> str("");
 
 Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
-## <a name="u16string"></a><a name="u16string"></a>u16string
+## <a name="u16string"></a><a name="u16string"></a> u16string
 
 Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`char16_t`** .
 
@@ -57,7 +57,7 @@ typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16st
 
 Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
-## <a name="u32string"></a><a name="u32string"></a>u32string
+## <a name="u32string"></a><a name="u32string"></a> u32string
 
 Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`char32_t`** .
 
@@ -71,7 +71,7 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
 
 Dize oluşturucularının bir listesi için bkz. [basic_string:: basic_string](../standard-library/basic-string-class.md#basic_string).
 
-## <a name="wstring"></a><a name="wstring"></a>wstring
+## <a name="wstring"></a><a name="wstring"></a> wstring
 
 Sınıf şablonunun bir özelleştirmesi tanımlayan tür öğeleri [basic_string](../standard-library/basic-string-class.md) **`wchar_t`** .
 

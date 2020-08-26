@@ -1,58 +1,58 @@
 ---
-title: CRT'de küresel durum
+title: CRT'deki genel durum
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CRT global state
-ms.openlocfilehash: 1b32e8d4f23d2361a52a9b81150ef7c5c7422761
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a794f201184c10c11611138d30d14b36b00405a7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745350"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845191"
 ---
-# <a name="global-state-in-the-crt"></a>CRT'de küresel durum
+# <a name="global-state-in-the-crt"></a>CRT'deki genel durum
 
-Evrensel C Runtime (UCRT) bazı işlevleri genel durumu kullanır. Örneğin, `setlocale()` basamak ayırıcılarını, metin kodu sayfasını ve benzeri sayıları etkileyen tüm programın yerel ayarını ayarlar.
+Evrensel C çalışma zamanı (UCRT) içindeki bazı işlevler genel durumu kullanır. Örneğin, `setlocale()` tüm program için yerel ayarı belirler, bu, rakam ayırıcıları, metin kodu sayfası vb. etkiler.
 
-UCRT'nin küresel durumu uygulamalar ve işletim sistemi arasında paylaşılmaz. Örneğin, uygulamanız ararsa, `setlocale()`C çalışma süresini kullanan işletim sistemi bileşenlerinin yerel ayarı etkilemez veya bunun tersi de olmaz.
+UıCRT 'ın genel durumu uygulamalar ve işletim sistemi arasında paylaşılmaz. Örneğin, uygulamanız çağırırsa `setlocale()` , C çalışma zamanı veya tam tersi kullanan herhangi bir işletim sistemi bileşeni için yerel ayarı etkilemez.
 
-## <a name="os-specific-versions-of-crt-functions"></a>CRT fonksiyonlarının işletim sistemi için özel sürümleri
+## <a name="os-specific-versions-of-crt-functions"></a>CRT işlevlerinin işletim sistemine özgü sürümleri
 
-UCRT'de, küresel durumla etkileşimedebilen işlevler, önceden belirlenmiş `_o_`bir "ikiz" işlevine sahiptir. Örneğin:
+UıCRT 'da, genel durumla etkileşime geçen işlevlerde bir "ikizi" işlevi vardır ve önekli `_o_` . Örnek:
 
-- `setlocale()`uygulamaya özgü genel durumu etkiler.
-- `_o_setlocale()`tüm işletim sistemi bileşenleri tarafından paylaşılan genel durumu etkiler, ancak uygulamaları etkilemez.
+- `setlocale()` uygulamaya özgü genel durumu etkiler.
+- `_o_setlocale()` tüm işletim sistemi bileşenleri tarafından paylaşılan genel durumu etkiler, ancak uygulamalar değildir.
 
-Bu "ikiz" işlevler arasındaki tek fark, genel CRT durumunu okuduklarında/yazdıklarında, işletim egörere `_o_`özgü sürümlerin (diğer bir şekilde başlayan sürümler) uygulamanın küresel durum kopyası yerine küresel devletin işletim sistemi kopyasını kullanmasıdır.
+Bu "ikizi" işlevleri arasındaki tek fark, genel CRT durumunu okuduklarında/yazarken, işletim sistemine özgü sürümlerin (yani, ile başlayan sürümler `_o_` ), uygulamanın genel durum kopyası yerine genel durum işletim sistemi kopyasını kullanır.
 
-Bu işlevlerin işletim sistemi özgü `ucrt.osmode.lib`sürümleri. Örneğin, işletim sistemi özel `setlocale()` sürümü`_o_setlocale()`
+Bu işlevlerin işletim sistemine özgü sürümleri içinde bulunur `ucrt.osmode.lib` . Örneğin, işletim sistemine özgü sürümü `setlocale()``_o_setlocale()`
 
-Bileşeninizin CRT durumunu bir uygulamanın CRT durumundan yalıtmanın iki yolu vardır:
+Bileşenin CRT durumunu uygulamanın CRT durumundan yalıtmak için iki yol vardır:
 
-- Derleyici seçenekleri /MT (sürüm) veya MTd (hata ayıklama) kullanarak bileşeninizi statik olarak bağla. Ayrıntılar için bkz: [/MD, /MT, /LD](https://docs.microsoft.com/cpp/build/reference/md-mt-ld-use-run-time-library?view=vs-2019). Statik bağlantının ikili boyutu büyük ölçüde artırabileceğini unutmayın.
-- Windows 10 20H2 ile başlayarak, CRT'ye dinamik olarak bağlanarak CRT durum yalıtımı alın, ancak IŞLETIM sistemi moddışlamalarını _(o_ile başlayan işlevler) arayın. OS modu dışa aktarımlarını aramak için, daha önce olduğu gibi statik `/NODEFAULTLIB:libucrt.lib` bağlantı, `/NODEFAULTLIB:libucrtd.lib` ancak ayrıntılar için bağlantı seçeneği (sürüm) veya (hata ayıklama) Bkz. [/NODEFAULTLIB (Kitaplıkları Yoksay)](https://docs.microsoft.com/cpp/build/reference/nodefaultlib-ignore-libraries?view=vs-2019) kullanarak statik UCRT'yi yoksay. Ve `ucrt.osmode.lib` bağlayıcı girişi ekleyin.
+- /MT (Release) veya MTd (hata ayıklama) derleyici seçeneklerini kullanarak bileşeninizi statik olarak bağlayın. Ayrıntılar için bkz. [/MD,/MT,/LD](../build/reference/md-mt-ld-use-run-time-library.md). Statik bağlama 'nın ikili boyutu büyük ölçüde artırabileceğini unutmayın.
+- Windows 10 20 H2 ' den itibaren, CRT 'ye dinamik olarak bağlanarak ve işletim sistemi modu dışarı aktarmaları ( _o_ile başlayan işlevler) çağırarak CRT durum yalıtımı alın. İşletim sistemi modu dışarı aktarmaları çağırmak için, daha önce olduğu gibi statik UCRT 'yı kullanın, ancak bağlayıcı seçeneğini `/NODEFAULTLIB:libucrt.lib` (yayın) veya (hata ayıklama) kullanarak statik UCRT 'yi yoksayın `/NODEFAULTLIB:libucrtd.lib` . Ayrıntılar için bkz. [/nodefaultlib (kitaplıkları Yoksay](../build/reference/nodefaultlib-ignore-libraries.md) Ve `ucrt.osmode.lib` bağlayıcı girişine ekleyin.
 
 > [!Note]
-> Kaynak kodunda, `setlocale()`yazmak `_o_setlocale()`, değil . Bağlantı `ucrt.osmode.lib`yaptığınızda, bağlayıcı otomatik olarak işlevin işletim sistemi özel sürümünü yerine geçer. Yani, `setlocale()` ile değiştirilecektir `_o_setlocale()`.
+> Kaynak kodunda, yazma `setlocale()` , değil `_o_setlocale()` . Bağlama yaptığınızda bağlayıcı, `ucrt.osmode.lib` işlevin işletim sistemine özgü sürümünü otomatik olarak yerine geçecek. Diğer bir deyişle, `setlocale()` ile değiştirilecektir `_o_setlocale()` .
 
-Yalnızca `ucrt.osmode.lib` uygulama modunda kullanılabilen bazı UCRT çağrıları devre dışı kalır. Bunları çağırmaya çalışmak bir bağlantı hatasına neden olur.
+İle bağlama `ucrt.osmode.lib` , yalnızca uygulama modunda kullanılabilen bazı UCRT çağrılarını devre dışı bırakır. Bu, çağırma girişimi bir bağlantı hatasına neden olur.
 
-## <a name="global-state-affected-by-appos-separation"></a>Uygulama/işletim sistemi ayrımından etkilenen küresel durum
+## <a name="global-state-affected-by-appos-separation"></a>Uygulama/işletim sistemi ayrımı tarafından etkilenen küresel durum
 
-Uygulama ve işletim sistemi durumunun ayrılmasından etkilenen küresel durum şunları içerir:
+Uygulamanın ve işletim sistemi durumunun ayrılarak etkilenen küresel durum şunları içerir:
 
-- [Yerel veri](locale.md)
-- Sinyal tarafından ayarlanan [sinyal](reference/signal.md) işleyicileri
-- Sonlandırma yordamları [sonlandırma](reference/set-terminate-crt.md) tarafından ayarlanmış
+- [Yerel ayar verileri](locale.md)
+- Sinyal işleyicileri [sinyaltarafından](reference/signal.md) ayarlanan
+- [Sonlandır](reference/set-terminate-crt.md) tarafından ayarlanan sonlandırma yordamları
 - [errno ve _doserrno](errno-doserrno-sys-errlist-and-sys-nerr.md)
-- [Rand](reference/rand.md) and [srand](reference/srand.md) tarafından kullanılan rasgele sayı oluşturma durumu
-- [Strtok, wcstok, _mbstok](reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) [Tmpnam, _wtmpnam](reference/tempnam-wtempnam-tmpnam-wtmpnam.md) [asctime, _wasctime](reference/asctime-wasctime.md) [gmtime, _gmtime32, _gmtime64](reference/gmtime-gmtime32-gmtime64.md) [_fcvt](reference/fcvt.md) [_ecvt](reference/ecvt.md) [strerror, _strerror, _wcserror, __wcserror](reference/strerror-strerror-wcserror-wcserror.md)
-- _putch tarafından kullanılan [arabellek, _putwch](reference/putch-putwch.md)
+- [S_SAYI_ÜRET](reference/rand.md) ve [srand](reference/srand.md) tarafından kullanılan rastgele sayı oluşturma durumu
+- Kullanıcının serbest bırakılması gerekmeyen bir arabellek döndüren işlevler:   [strtok, wcstok, _mbstok](reference/strtok-strtok-l-wcstok-wcstok-l-mbstok-mbstok-l.md) [tmpnam, _wtmpnam](reference/tempnam-wtempnam-tmpnam-wtmpnam.md) [asctime, _wasctime](reference/asctime-wasctime.md) [gmsaati, _gmtime32, _gmtime64](reference/gmtime-gmtime32-gmtime64.md) [_fcvt](reference/fcvt.md) [_ecvt](reference/ecvt.md) [strerror, _strerror, _wcserror, __wcserror](reference/strerror-strerror-wcserror-wcserror.md)
+- [_Putch, _putwch](reference/putch-putwch.md) tarafından kullanılan arabellek
 - [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)
 - [_set_new_handler](reference/set-new-handler.md) ve [_set_new_mode](reference/set-new-mode.md)
-- [fmode] (text-and-binary-mode-file-i-o.md)
+- [fMode] (text-and-binary-mode-file-i-o.md)
 - [Saat dilimi bilgileri](time-management.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Run-Time kitaplığı başvurusu](c-run-time-library-reference.md)
+[C çalışma zamanı kitaplığı başvurusu](c-run-time-library-reference.md)

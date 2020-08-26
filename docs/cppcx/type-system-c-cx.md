@@ -2,12 +2,12 @@
 title: Tür Sistemi (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-ms.openlocfilehash: b9d26f0fc79b2dc5000be6e6a06f51efd3f0b53f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 242fbde1774ef4537eedce26cafff6b8625ac2a5
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221555"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845152"
 ---
 # <a name="type-system-ccx"></a>Tür Sistemi (C++/CX)
 
@@ -35,12 +35,11 @@ C++ dilinde yazılmış bir Evrensel Windows Platformu uygulamasını derlerken,
 
 Meta verilerde bir tür veya yöntemin görünür olup olmadığı, hangi erişilebilirlik değiştiricilerine uygulanacağını gösterir. Görünür olması için, bir tür ad alanında bildirilmelidir ve public olarak bildirilmelidir. Kodunuzda iç yardımcı türü olarak ortak olmayan bir başvuru sınıfına izin verilir; yalnızca meta verilerde görünmez. Ortak bir başvuru sınıfında bile, tüm üyelerin görünür olması gerekmez. Aşağıdaki tablo, genel bir başvuru sınıfındaki C++ erişim belirticileri arasındaki ilişkiyi ve meta veri görünürlüğünü Windows Çalışma Zamanı listeler:
 
-|||
-|-|-|
-|**Meta verilerde yayımlandı**|**Meta verilerde yayımlanmadı**|
-|public|private|
-|protected|internal|
-|ortak korumalı|private protected|
+| Meta verilerde yayımlandı | Meta verilerde yayımlanmadı |
+|--|--|
+| public | private |
+| protected | internal |
+| ortak korumalı | private protected |
 
 . Winmd dosyalarının içeriğini görüntülemek için **nesne tarayıcısı** kullanabilirsiniz. Windows ile birlikte gelen Windows Çalışma Zamanı bileşenleri Windows. winmd dosyasında bulunur. Varsayılan. winmd dosyası C++/CX ' te kullanılan temel türleri içerir ve platform. winmd Platform ad alanından ek türler içerir. Varsayılan olarak, bu üç. winmd dosyası Evrensel Windows Platformu uygulamalar için her C++ projesine dahil edilmiştir.
 
@@ -151,7 +150,7 @@ C++/CX ' te özel özel durum türlerini, [std:: Exception](../standard-library/
 
 Daha fazla bilgi için bkz. [özel durumlar](../cppcx/exceptions-c-cx.md).
 
-### <a name="events"></a>Olaylar
+### <a name="events"></a>Ekinlikler
 
 Bir olay, bir başvuru sınıfında veya tür bir temsilci türü olan ref yapısına ortak bir üyedir. Bir olay yalnızca sahip olan sınıf tarafından çağrılabilir — yani harekete geçirilir. Ancak, istemci kodu, olay işleyicileri olarak bilinen ve sahip olan sınıf olayı tetiklendiğinde çağrılan kendi işlevlerini sağlayabilir.
 

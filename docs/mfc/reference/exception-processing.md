@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: 08be9bd03b20c4bc6fc8f7b0ea63d628b34d033e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d6a1c30ca0811085124a5fb5994c5f35d412ae7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222790"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837196"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
@@ -36,7 +36,7 @@ Microsoft Foundation Class Kitaplığı eklenen birkaç makro özel durum işley
 
 ### <a name="exception-macros"></a>Özel durum makroları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[ALMAYA](#try)|Özel durum işleme için bir kod bloğu belirler.|
 |[YAKALAYA](#catch)|Önceki **TRY** bloğundan özel durum yakalamak için bir kod bloğu belirler.|
@@ -50,7 +50,7 @@ Microsoft Foundation Class Kitaplığı eklenen birkaç makro özel durum işley
 
 ### <a name="exception-throwing-functions"></a>Özel durum atma Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[AfxThrowArchiveException](#afxthrowarchiveexception)|Bir arşiv özel durumu oluşturur.|
 |[AfxThrowFileException](#afxthrowfileexception)|Bir dosya özel durumu oluşturur.|
@@ -64,7 +64,7 @@ MFC özellikle OLE özel durumları için iki özel durum atma işlevi sağlar:
 
 ### <a name="ole-exception-functions"></a>OLE özel durum Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[AfxThrowOleDispatchException](#afxthrowoledispatchexception)|OLE Otomasyonu işlevi içinde bir özel durum oluşturur.|
 |[AfxThrowOleException](#afxthrowoleexception)|OLE özel durumu oluşturur.|
@@ -73,7 +73,7 @@ Veritabanı sınıfları, veritabanı özel durumlarını desteklemek için, `CD
 
 ### <a name="dao-exception-functions"></a>DAO özel durum Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[AfxThrowDAOException](#afxthrowdaoexception)|Kendi kodunuzda bir [Cdaoözel durumu](../../mfc/reference/cdaoexception-class.md) oluşturur.|
 |[AfxThrowDBException](#afxthrowdbexception)|Kendi kodınızdan bir [CDBException](../../mfc/reference/cdbexception-class.md) oluşturur.|
@@ -82,11 +82,11 @@ MFC aşağıdaki sonlandırma işlevini sağlar:
 
 ### <a name="termination-functions"></a>Sonlandırma Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[AfxAbort](#afxabort)|Önemli bir hata oluştuğunda bir uygulamayı sonlandırmak için çağırılır.|
 
-## <a name="try"></a><a name="try"></a>ALMAYA
+## <a name="try"></a><a name="try"></a> ALMAYA
 
 Bir **TRY** bloğu ayarlar.
 
@@ -108,7 +108,7 @@ Daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handli
 
 Üstbilgi: AFX. h
 
-## <a name="catch"></a><a name="catch"></a>YAKALAYA
+## <a name="catch"></a><a name="catch"></a> YAKALAYA
 
 Önceki **TRY** bloğunda oluşturulan ilk özel durum türünü yakalayan bir kod bloğunu tanımlar.
 
@@ -141,7 +141,7 @@ Sınıfı *Exception_class* `CException` , tüm özel durum türleri yakalanacak
 
 [!code-cpp[NVC_MFCExceptions#26](../../mfc/codesnippet/cpp/exception-processing_1.cpp)]
 
-## <a name="catch_all"></a><a name="catch_all"></a>CATCH_ALL
+## <a name="catch_all"></a><a name="catch_all"></a> CATCH_ALL
 
 Önceki **TRY** bloğunda oluşan tüm özel durum türlerini yakalayan bir kod bloğunu tanımlar.
 
@@ -171,7 +171,7 @@ Makro tarafından oluşturulacak özel durum nesnesi işaretçisi için bir ad b
 
   **Üst bilgi** AFX. h
 
-## <a name="and_catch"></a><a name="and_catch"></a>AND_CATCH
+## <a name="and_catch"></a><a name="and_catch"></a> AND_CATCH
 
 Önceki **TRY** bloğunda oluşturulan ek özel durum türlerini yakalamak için bir kod bloğu tanımlar.
 
@@ -204,7 +204,7 @@ Bir özel durum türünü yakalamak için CATCH makrosunu, sonra da her bir sonr
 
   **Üst bilgi** AFX. h
 
-## <a name="and_catch_all"></a><a name="and_catch_all"></a>AND_CATCH_ALL
+## <a name="and_catch_all"></a><a name="and_catch_all"></a> AND_CATCH_ALL
 
 Önceki **TRY** bloğunda oluşturulan ek özel durum türlerini yakalamak için bir kod bloğu tanımlar.
 
@@ -230,7 +230,7 @@ Bir özel durum türü yakalamak için **catch** makrosunu kullanın, sonra diğ
 
   **Üst bilgi** AFX. h
 
-## <a name="end_catch"></a><a name="end_catch"></a>END_CATCH
+## <a name="end_catch"></a><a name="end_catch"></a> END_CATCH
 
 Son **catch** veya **AND_CATCH** bloğunun sonunu işaretler.
 
@@ -246,7 +246,7 @@ END_CATCH makrosu hakkında daha fazla bilgi için, bkz. [özel durumlar](../../
 
   **Üst bilgi** AFX. h
 
-## <a name="end_catch_all"></a><a name="end_catch_all"></a>END_CATCH_ALL
+## <a name="end_catch_all"></a><a name="end_catch_all"></a> END_CATCH_ALL
 
 Son **CATCH_ALL88** veya **AND_CATCH_ALL** bloğunun sonunu işaretler.
 
@@ -258,7 +258,7 @@ END_CATCH_ALL
 
   **Üst bilgi** AFX. h
 
-## <a name="throw-mfc"></a><a name="throw"></a>THROW (MFC)
+## <a name="throw-mfc"></a><a name="throw"></a> THROW (MFC)
 
 Belirtilen özel durumu oluşturur.
 
@@ -281,7 +281,7 @@ Daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handli
 
   **Üst bilgi** AFX. h
 
-## <a name="throw_last"></a><a name="throw_last"></a>THROW_LAST
+## <a name="throw_last"></a><a name="throw_last"></a> THROW_LAST
 
 Bir sonraki dış **catch** bloğuna geri dönüş özel durumunu oluşturur.
 
@@ -303,7 +303,7 @@ Daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handli
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowarchiveexception"></a><a name="afxthrowarchiveexception"></a>AfxThrowArchiveException
+## <a name="afxthrowarchiveexception"></a><a name="afxthrowarchiveexception"></a> AfxThrowArchiveException
 
 Bir arşiv özel durumu oluşturur.
 
@@ -323,7 +323,7 @@ void  AfxThrowArchiveException(int cause, LPCTSTR lpszArchiveName);
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowfileexception"></a><a name="afxthrowfileexception"></a>AfxThrowFileException
+## <a name="afxthrowfileexception"></a><a name="afxthrowfileexception"></a> AfxThrowFileException
 
 Bir dosya özel durumu oluşturur.
 
@@ -353,11 +353,11 @@ void AfxThrowFileException(
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowinvalidargexception"></a><a name="afxthrowinvalidargexception"></a>AfxThrowInvalidArgException
+## <a name="afxthrowinvalidargexception"></a><a name="afxthrowinvalidargexception"></a> AfxThrowInvalidArgException
 
 Geçersiz bir bağımsız değişken özel durumu oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void AfxThrowInvalidArgException( );
@@ -371,7 +371,7 @@ Geçersiz bağımsız değişkenler kullanıldığında bu işlev çağrılır.
 
 **Üstbilgi:** AFX. h
 
-## <a name="afxthrowmemoryexception"></a><a name="afxthrowmemoryexception"></a>AfxThrowMemoryException
+## <a name="afxthrowmemoryexception"></a><a name="afxthrowmemoryexception"></a> AfxThrowMemoryException
 
 Bir bellek özel durumu oluşturur.
 
@@ -387,7 +387,7 @@ Temeldeki sistem bellek ayırıcıları ( **malloc** ve [GlobalAlloc](/windows/w
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrownotsupportedexception"></a><a name="afxthrownotsupportedexception"></a>AfxThrowNotSupportedException
+## <a name="afxthrownotsupportedexception"></a><a name="afxthrownotsupportedexception"></a> AfxThrowNotSupportedException
 
 Desteklenmeyen bir özellik için isteğin sonucu olan bir özel durum oluşturur.
 
@@ -399,7 +399,7 @@ void AfxThrowNotSupportedException();
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowresourceexception"></a><a name="afxthrowresourceexception"></a>AfxThrowResourceException
+## <a name="afxthrowresourceexception"></a><a name="afxthrowresourceexception"></a> AfxThrowResourceException
 
 Bir kaynak özel durumu oluşturur.
 
@@ -415,7 +415,7 @@ Bu işlev, normalde bir Windows kaynağı yüklenemediğinde çağrılır.
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowuserexception"></a><a name="afxthrowuserexception"></a>AfxThrowUserException
+## <a name="afxthrowuserexception"></a><a name="afxthrowuserexception"></a> AfxThrowUserException
 
 Son Kullanıcı işlemini durdurmak için bir özel durum oluşturur.
 
@@ -431,7 +431,7 @@ Bu işlev genellikle `AfxMessageBox` kullanıcıya bir hata bildirdikten hemen s
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowoledispatchexception"></a><a name="afxthrowoledispatchexception"></a>AfxThrowOleDispatchException
+## <a name="afxthrowoledispatchexception"></a><a name="afxthrowoledispatchexception"></a> AfxThrowOleDispatchException
 
 OLE Otomasyonu işlevi içinde bir özel durum oluşturmak için bu işlevi kullanın.
 
@@ -473,7 +473,7 @@ Bu işleve sunulan bilgiler, itici uygulama (Microsoft Visual Basic veya başka 
 
   **Üst bilgi** AFX. h
 
-## <a name="afxthrowoleexception"></a><a name="afxthrowoleexception"></a>AfxThrowOleException
+## <a name="afxthrowoleexception"></a><a name="afxthrowoleexception"></a> AfxThrowOleException
 
 Türünde bir nesne oluşturur `COleException` ve özel durum oluşturur.
 
@@ -498,7 +498,7 @@ Bir HRESULT bağımsız değişkeni olarak alan sürüm, bu sonuç kodunu ilgili
 
   **Header** afxdao. h
 
-## <a name="afxthrowdaoexception"></a><a name="afxthrowdaoexception"></a>AfxThrowDaoException
+## <a name="afxthrowdaoexception"></a><a name="afxthrowdaoexception"></a> AfxThrowDaoException
 
 Kendi kodunuzda [CDaoException](../../mfc/reference/cdaoexception-class.md) türünde bir özel durum oluşturmak için bu işlevi çağırın.
 
@@ -526,7 +526,7 @@ MFC DAO sınıflarıyla ilgili özel durumlar hakkında daha fazla bilgi için, 
 
   **Başlık** Afxdb. h
 
-## <a name="afxthrowdbexception"></a><a name="afxthrowdbexception"></a>AfxThrowDBException
+## <a name="afxthrowdbexception"></a><a name="afxthrowdbexception"></a> AfxThrowDBException
 
 Kendi kodunuzda türünde bir özel durum oluşturmak için bu işlevi çağırın `CDBException` .
 
@@ -558,7 +558,7 @@ ODBC tarafından tanımlanan EKCODE değerleri hakkında daha fazla bilgi için,
 
   **Üst bilgi** AFX. h
 
-## <a name="afxabort"></a><a name="afxabort"></a>AfxAbort
+## <a name="afxabort"></a><a name="afxabort"></a> AfxAbort
 
 MFC tarafından sağlanan varsayılan sonlandırma işlevi.
 
@@ -568,7 +568,7 @@ void  AfxAbort();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`AfxAbort`, işlenmeyen bir yakalanamayan özel durum gibi önemli bir hata olduğunda MFC üye işlevleri tarafından dahili olarak çağrılır. `AfxAbort`Kurtulamadığında çok zararlı bir hatayla karşılaştığınızda, nadir bir hata durumunda çağırabilirsiniz.
+`AfxAbort` , işlenmeyen bir yakalanamayan özel durum gibi önemli bir hata olduğunda MFC üye işlevleri tarafından dahili olarak çağrılır. `AfxAbort`Kurtulamadığında çok zararlı bir hatayla karşılaştığınızda, nadir bir hata durumunda çağırabilirsiniz.
 
 ### <a name="example"></a>Örnek
 

@@ -4,12 +4,12 @@ ms.date: 11/11/2019
 helpviewer_keywords:
 - pragmas, about pragmas
 ms.assetid: 3ce8aced-53ee-4524-87d0-f998d6977ff5
-ms.openlocfilehash: ffe57c7cacc47c971f8a9d415f1d3416564f253d
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: 0fe875742bb5ca8749e588413e13be63337c83ab
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965462"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845204"
 ---
 # <a name="pragmas"></a>Pragmalar
 
@@ -17,14 +17,34 @@ ms.locfileid: "73965462"
 
 Aşağıdaki [c pragmaları](../c-language/c-pragmas.md) , Microsoft c derleyicisi için tanımlanmıştır:
 
-|||||
-|-|-|-|-|
-|[alloc_text](../preprocessor/alloc-text.md)|[data_seg](../preprocessor/data-seg.md)|[include_alias](../preprocessor/include-alias.md)|[setlocale](../preprocessor/setlocale.md)|
-|[auto_inline](../preprocessor/auto-inline.md)|[çalışmayacaktır](../preprocessor/function-c-cpp.md)|[ içi](../preprocessor/intrinsic.md)|[warning](../preprocessor/warning.md)|
-|[check_stack](../preprocessor/check-stack.md)|[hdrstop](../preprocessor/hdrstop.md)|[İleti](../preprocessor/message.md)||
-|[code_seg](../preprocessor/code-seg.md)|[inline_depth](../preprocessor/inline-depth.md)|[getirileceğini](../preprocessor/optimize.md)||
-|[açıklamanın](../preprocessor/comment-c-cpp.md)|[inline_recursion](../preprocessor/inline-recursion.md)|[paketi](../preprocessor/pack.md)||
+:::row:::
+   :::column span="":::
+      [alloc_text](../preprocessor/alloc-text.md)\
+      [auto_inline](../preprocessor/auto-inline.md)\
+      [check_stack](../preprocessor/check-stack.md)\
+      [code_seg](../preprocessor/code-seg.md)\
+      [açıklamanın](../preprocessor/comment-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [data_seg](../preprocessor/data-seg.md)\
+      [çalışmayacaktır](../preprocessor/function-c-cpp.md)\
+      [hdrstop](../preprocessor/hdrstop.md)\
+      [include_alias](../preprocessor/include-alias.md)
+   :::column-end:::
+   :::column span="":::
+      [inline_depth](../preprocessor/inline-depth.md)\
+      [inline_recursion](../preprocessor/inline-recursion.md)\
+      [alanlarla](../preprocessor/intrinsic.md)\
+      [İleti](../preprocessor/message.md)
+   :::column-end:::
+   :::column span="":::
+      [getirileceğini](../preprocessor/optimize.md)\
+      [paketi](../preprocessor/pack.md)\
+      [setlocale](../preprocessor/setlocale.md)\
+      [Warning](../preprocessor/warning.md)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+[Ön işleme yönergeleri](../c-language/preprocessing-directives.md)

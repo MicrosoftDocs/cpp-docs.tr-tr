@@ -51,12 +51,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: b235a85ccab4fd3d3377e656b53276928b425d94
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c88554d717888719ad6d805a2871489ce4b0df32
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232163"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845594"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
@@ -85,7 +85,7 @@ Bir komut arabirimi. Varsayılan değer: `ICommand`.
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[İptal](#cancel)|Geçerli komut yürütmesini iptal eder.|
 |[CancelExecution](#cancelexecution)|Geçerli komut yürütmesini iptal eder.|
@@ -96,7 +96,7 @@ Bir komut arabirimi. Varsayılan değer: `ICommand`.
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[m_bCancel](#bcancel)|Komutun iptal edilip edilmeyeceğini gösterir.|
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Yürütme sırasında komutun iptal edilip edilmeyeceğini gösterir.|
@@ -106,11 +106,11 @@ Bir komut arabirimi. Varsayılan değer: `ICommand`.
 
 Komut nesnesinde zorunlu arabirim.
 
-## <a name="icommandimplcancel"></a><a name="cancel"></a>Iommandimpl:: Cancel
+## <a name="icommandimplcancel"></a><a name="cancel"></a> Iommandimpl:: Cancel
 
 Geçerli komut yürütmesini iptal eder.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 STDMETHOD(Cancel)();
@@ -120,17 +120,17 @@ STDMETHOD(Cancel)();
 
 *OLE DB Programcı başvurusunda*bkz. [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) .
 
-## <a name="icommandimplcancelexecution"></a><a name="cancelexecution"></a>Iommandimpl:: iptal Lexecution
+## <a name="icommandimplcancelexecution"></a><a name="cancelexecution"></a> Iommandimpl:: iptal Lexecution
 
 Geçerli komut yürütmesini iptal eder.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT CancelExecution();
 ```
 
-## <a name="icommandimplcreaterowset"></a><a name="createrowset"></a>Iommandimpl:: CreateRowset
+## <a name="icommandimplcreaterowset"></a><a name="createrowset"></a> Iommandimpl:: CreateRowset
 
 Tek bir satır kümesi oluşturmak için [Execute](../../data/oledb/icommandimpl-execute.md) tarafından çağırılır.
 
@@ -152,7 +152,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 Kullanıcının satır kümesi sınıfını temsil eden bir şablon sınıfı üyesi. Genellikle sihirbaz tarafından oluşturulur.
 
 *pUnkOuter*<br/>
-'ndaki `IUnknown`Satır kümesi toplama kapsamında oluşturulduysa denetim arabirimine yönelik bir işaretçi; Aksi takdirde, null olur.
+'ndaki `IUnknown` Satır kümesi toplama kapsamında oluşturulduysa denetim arabirimine yönelik bir işaretçi; Aksi takdirde, null olur.
 
 *riıd*<br/>
 'ndaki İçindeki *riid* öğesine karşılık gelir `ICommand::Execute` .
@@ -179,7 +179,7 @@ Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturma
 
 *OLE DB Programcı başvurusunda bkz.* [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
 
-## <a name="icommandimplexecute"></a><a name="execute"></a>Icommandimpl:: Execute
+## <a name="icommandimplexecute"></a><a name="execute"></a> Icommandimpl:: Execute
 
 Komutunu yürütür.
 
@@ -203,7 +203,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 `Execute`[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)çağırır. Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak üzere varsayılan uygulamayı geçersiz kılın.
 
-## <a name="icommandimplgetdbsession"></a><a name="getdbsession"></a>Iommandimpl:: GetDBSession
+## <a name="icommandimplgetdbsession"></a><a name="getdbsession"></a> Iommandimpl:: GetDBSession
 
 Komutu oluşturan oturuma bir arabirim işaretçisi döndürür.
 
@@ -222,21 +222,21 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 Oturumdan özellikleri almak için faydalıdır.
 
-## <a name="icommandimplicommandimpl"></a><a name="icommandimpl"></a>Iommandimpl:: ıommandimpl
+## <a name="icommandimplicommandimpl"></a><a name="icommandimpl"></a> Iommandimpl:: ıommandimpl
 
 Oluşturucu.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ICommandImpl();
 ```
 
-## <a name="icommandimplm_bcancel"></a><a name="bcancel"></a>Iommandimpl:: m_bCancel
+## <a name="icommandimplm_bcancel"></a><a name="bcancel"></a> Iommandimpl:: m_bCancel
 
 Komutun iptal edilip edilmeyeceğini gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bCancel:1;
@@ -246,11 +246,11 @@ unsigned m_bCancel:1;
 
 Bu değişkeni `Execute` komut sınıfınızın yönteminde alabilir ve uygun şekilde iptal edebilirsiniz.
 
-## <a name="icommandimplm_bcancelwhenexecuting"></a><a name="bcancelwhenexecuting"></a>Iommandimpl:: m_bCancelWhenExecuting
+## <a name="icommandimplm_bcancelwhenexecuting"></a><a name="bcancelwhenexecuting"></a> Iommandimpl:: m_bCancelWhenExecuting
 
 Yürütme sırasında komutun iptal edilip edilmeyeceğini gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bCancelWhenExecuting:1;
@@ -260,11 +260,11 @@ unsigned m_bCancelWhenExecuting:1;
 
 Varsayılan olarak **`true`** (iptal edilebilir).
 
-## <a name="icommandimplm_bisexecuting"></a><a name="bisexecuting"></a>Iommandimpl:: m_bIsExecuting
+## <a name="icommandimplm_bisexecuting"></a><a name="bisexecuting"></a> Iommandimpl:: m_bIsExecuting
 
 Komutun Şu anda yürütülmekte olup olmadığını gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bIsExecuting:1;

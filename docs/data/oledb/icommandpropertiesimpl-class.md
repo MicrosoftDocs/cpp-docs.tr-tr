@@ -14,18 +14,18 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: cbf2e6d7241d019a00132c10638993d60d78beac
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f71ca7f5fb675916c9db7e5720e6c148f2131351
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210814"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845581"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 
 [Iomtionproperties](/previous-versions/windows/desktop/ms723044(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, class PropClass = T>
@@ -35,7 +35,7 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Sınıfından türetilmiş
 
 *PropClass*<br/>
@@ -49,7 +49,7 @@ Sınıfından türetilmiş
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[GetProperties](#getproperties)|Satır kümesi için şu anda istenen satır kümesi özellik grubundaki özelliklerin listesini döndürür.|
 |[SetProperties](#setproperties)|Satır kümesi özellik grubundaki özellikleri ayarlar.|
@@ -58,11 +58,11 @@ Sınıfından türetilmiş
 
 Bu, komutlarda zorunludur. Uygulama, [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) makrosu tarafından tanımlanan statik bir işlev tarafından sağlanır.
 
-## <a name="icommandpropertiesimplgetproperties"></a><a name="getproperties"></a>ICommandPropertiesImpl:: GetProperties
+## <a name="icommandpropertiesimplgetproperties"></a><a name="getproperties"></a> ICommandPropertiesImpl:: GetProperties
 
 Komutun Özellik eşlemesini kullanarak istenen tüm özellik kümelerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
@@ -79,11 +79,11 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 
-## <a name="icommandpropertiesimplsetproperties"></a><a name="setproperties"></a>ICommandPropertiesImpl:: SetProperties
+## <a name="icommandpropertiesimplsetproperties"></a><a name="setproperties"></a> ICommandPropertiesImpl:: SetProperties
 
 Komut nesnesi için özellikleri ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(SetProperties)(ULONG cPropertySets,
@@ -97,4 +97,4 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

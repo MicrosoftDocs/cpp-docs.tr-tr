@@ -1,23 +1,23 @@
 ---
-title: Giriş (C++ com özniteliği)
+title: Giriş (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.entry
 helpviewer_keywords:
 - entry attribute
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
-ms.openlocfilehash: 9bdfc64506f26ee4e9876920821883a0fa12bc7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 63e5ccebb1d3844af8dd11b4b094abe96e3e257c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167101"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845321"
 ---
 # <a name="entry"></a>giriş
 
 DLL 'deki giriş noktasını tanımlayarak bir modülde, bir içe aktarılmış işlevi veya sabiti belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ entry(id) ]
@@ -30,7 +30,7 @@ Giriş noktasının KIMLIĞI.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Entry** C++ özniteliği [, MIDL](/windows/win32/Midl/entry) özniteliğiyle aynı işlevselliğe sahiptir.
+**Giriş** C++ özniteliği, [giriş](/windows/win32/Midl/entry) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -38,14 +38,12 @@ Giriş noktasının KIMLIĞI.
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|`idl_module` özniteliği|
+|**Şunlara uygulanır**|`idl_module` özniteliği|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

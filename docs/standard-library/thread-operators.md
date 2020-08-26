@@ -18,22 +18,24 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: e7321831b9356fdb9ae5ce147319726def69efc7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 26ed8157685502618fe6fb82fbf9c9ad4c47cba3
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215575"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845035"
 ---
 # <a name="ltthreadgt-operators"></a>&lt;iş parçacığı &gt; işleçleri
 
-||||
-|-|-|-|
-|[işleç! =](#op_neq)|[işleç&gt;](#op_gt)|[işleç&gt;=](#op_gt_eq)|
-|[işleç&lt;](#op_lt)|[işleç&lt;&lt;](#op_lt_lt)|[işleç&lt;=](#op_lt_eq)|
-|[işleç = =](#op_eq_eq)|
+[işleç! =](#op_neq)\
+[işlecinde&gt;](#op_gt)\
+[işlecinde&gt;=](#op_gt_eq)\
+[işlecinde&lt;](#op_lt)\
+[işlecinde&lt;&lt;](#op_lt_lt)\
+[işlecinde&lt;=](#op_lt_eq)\
+[işleç = =](#op_eq_eq)
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 Bir `thread::id` nesnenin diğerinden büyük veya ona eşit olup olmadığını belirler.
 
@@ -59,7 +61,7 @@ Doğru `thread::id` nesne.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 Bir `thread::id` nesnenin diğerinden daha büyük olup olmadığını belirler.
 
@@ -85,7 +87,7 @@ Doğru `thread::id` nesne.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 Bir `thread::id` nesnenin diğerine eşit veya ondan küçük olup olmadığını belirler.
 
@@ -111,7 +113,7 @@ Doğru `thread::id` nesne.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 Bir `thread::id` nesnenin diğerinden daha küçük olup olmadığını belirler.
 
@@ -139,7 +141,7 @@ Doğru `thread::id` nesne.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 `thread::id`Eşitsizlik için iki nesneyi karşılaştırır.
 
@@ -165,7 +167,7 @@ Doğru `thread::id` nesne.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 , `thread::id` Eşitlik için iki nesneyi karşılaştırır.
 
@@ -191,7 +193,7 @@ Doğru `thread::id` nesne.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
 
 Bir nesnenin bir akışa metin temsilini ekler `thread::id` .
 

@@ -1,23 +1,23 @@
 ---
-title: Out (C++ com özniteliği)
+title: Out (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.out
 helpviewer_keywords:
 - out attribute
 ms.assetid: 5051b1bf-4949-4bf1-b82f-35e14f0f244b
-ms.openlocfilehash: 6ab8fdf691e2220087f5c5d64bb70c5deb27675c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b99e520a11c2e8110d2e63fa85ddb1dd444e56e6
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214716"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837105"
 ---
 # <a name="out-c"></a>out (C++)
 
 Çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürülen işaretçi parametrelerini tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [out]
@@ -33,20 +33,18 @@ ms.locfileid: "80214716"
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Arabirim parametresi|
+|**Şunlara uygulanır**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)<br/>
+[Parametre öznitelikleri](parameter-attributes.md)<br/>
 [defaultvalue](defaultvalue.md)<br/>
 [id](id.md)

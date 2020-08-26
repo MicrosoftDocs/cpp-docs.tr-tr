@@ -38,12 +38,12 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: 511d67586a7adc2b26cc6acbdf39beff78f9c38a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aff02e812d2806201a08164aeb4a8ef290550725
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218331"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845542"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 
@@ -69,20 +69,20 @@ Sınıfınız, öğesinden türetilir `IDBInitializeImpl` .
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[IDBInitializeImpl](#idbinitializeimpl)|Oluşturucu.|
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[Initialize](#initialize)|Sağlayıcıyı başlatır.|
 |[Uninitialize](#uninitialize)|Sağlayıcıyı sonlandırır.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[m_dwStatus](#dwstatus)|Veri kaynağı bayrakları.|
 |[m_pCUtlPropInfo](#pcutlpropinfo)|DB özellikleri bilgilerini uygulamaya yönelik bir işaretçi.|
@@ -91,11 +91,11 @@ Sınıfınız, öğesinden türetilir `IDBInitializeImpl` .
 
 Veri kaynağı nesnelerinde zorunlu arabirim ve numaralandırıcılara yönelik isteğe bağlı arabirim.
 
-## <a name="idbinitializeimplidbinitializeimpl"></a><a name="idbinitializeimpl"></a>IDBInitializeImpl:: IDBInitializeImpl
+## <a name="idbinitializeimplidbinitializeimpl"></a><a name="idbinitializeimpl"></a> IDBInitializeImpl:: IDBInitializeImpl
 
 Oluşturucu.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 IDBInitializeImpl();
@@ -105,11 +105,11 @@ IDBInitializeImpl();
 
 Tüm veri üyelerini başlatır.
 
-## <a name="idbinitializeimplinitialize"></a><a name="initialize"></a>Idbinitializeımpl:: Initialize
+## <a name="idbinitializeimplinitialize"></a><a name="initialize"></a> Idbinitializeımpl:: Initialize
 
 Özellik desteğini hazırlarken veri kaynağı nesnesini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 STDMETHOD(Initialize)(void);
@@ -119,11 +119,11 @@ STDMETHOD(Initialize)(void);
 
 *OLE DB Programcı başvurusunda* [ıdbınitiınitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) öğesine bakın.
 
-## <a name="idbinitializeimpluninitialize"></a><a name="uninitialize"></a>IDBInitializeImpl:: Uninitialize
+## <a name="idbinitializeimpluninitialize"></a><a name="uninitialize"></a> IDBInitializeImpl:: Uninitialize
 
 Özellik desteği gibi iç kaynakları boşaltarak veri kaynağı nesnesini başlatılmamış bir duruma koyar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 STDMETHOD(Uninitialize)(void);
@@ -133,11 +133,11 @@ STDMETHOD(Uninitialize)(void);
 
 *OLE DB Programcı başvurusunda* [ıdbınitiınitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648(v=vs.85)) konusuna bakın.
 
-## <a name="idbinitializeimplm_dwstatus"></a><a name="dwstatus"></a>IDBInitializeImpl:: m_dwStatus
+## <a name="idbinitializeimplm_dwstatus"></a><a name="dwstatus"></a> IDBInitializeImpl:: m_dwStatus
 
 Veri kaynağı bayrakları.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD m_dwStatus;
@@ -155,17 +155,17 @@ enum DATASOURCE_FLAGS {
 };
 ```
 
-|||
+| Değer | Açıklama |
 |-|-|
 |`DSF_MASK_INIT`|Başlatılmamış durumun geri yüklenmesini sağlayan bir maske.|
 |`DSF_PERSIST_DIRTY`|Veri kaynağı nesnesi kalıcılığı gerektiriyorsa (yani değişiklikler varsa) ayarlayın.|
 |`DSF_INITIALIZED`|Veri kaynağı başlatılmışsa ayarlanır.|
 
-## <a name="idbinitializeimplm_pcutlpropinfo"></a><a name="pcutlpropinfo"></a>IDBInitializeImpl:: m_pCUtlPropInfo
+## <a name="idbinitializeimplm_pcutlpropinfo"></a><a name="pcutlpropinfo"></a> IDBInitializeImpl:: m_pCUtlPropInfo
 
 DB özellikleri bilgileri için uygulama nesnesi işaretçisi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CUtlPropInfo< T >* m_pCUtlPropInfo;

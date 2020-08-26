@@ -11,12 +11,12 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-ms.openlocfilehash: b91167a331423ccd43ba2158c1a9d8bfce666361
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 24a18197c6b335172b88d2db37e8ac7ed57f58b8
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562460"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845425"
 ---
 # <a name="vectorltboolgt-class"></a>Vector &lt; bool &gt; sınıfı
 
@@ -56,7 +56,7 @@ Türle ilgilenen işlemler, **`bool`** kapsayıcı depolamadaki değerlere karş
 
 ### <a name="proxy-class"></a>Proxy Sınıfı
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[vektör \<bool> başvuru sınıfı](#reference_class)|Davranışın benzetimini yapmak için proxy görevi gören `bool&` ve nesneleri bir nesne içindeki öğelere (tek bit) başvuru sağlayabilen bir sınıf `vector<bool>` .|
 

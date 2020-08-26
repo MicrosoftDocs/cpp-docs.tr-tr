@@ -12,12 +12,12 @@ helpviewer_keywords:
 - event sinks, creating
 - event sinks
 ms.assetid: bf8fe770-3ea2-4128-b46b-166222ee4097
-ms.openlocfilehash: fb17eaa5d94636cedd650eb1bfb393d7c09e4fcc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7280729a9ae3a054468e1f11bdcc4a563b32effe
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217278"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845295"
 ---
 # <a name="event_receiver"></a>event_receiver
 
@@ -35,9 +35,9 @@ Bir olay alıcısı (havuz) oluşturur.
 *türüyle*<br/>
 Aşağıdaki değerlerden birini numaralandırma:
 
-- `native`yönetilmeyen C/C++ kodu için (yerel sınıflar için varsayılan).
+- `native` yönetilmeyen C/C++ kodu için (yerel sınıflar için varsayılan).
 
-- `com`COM kodu için. Bu değer, aşağıdaki üst bilgi dosyalarını dahil etmeniz gerekir:
+- `com` COM kodu için. Bu değer, aşağıdaki üst bilgi dosyalarını dahil etmeniz gerekir:
 
     ```cpp
     #define _ATL_ATTRIBUTES
@@ -50,7 +50,7 @@ Yalnızca com için *layout_dependent* belirtin `type` = **com**. *layout_depend
 
 - **`true`** olay alıcısındaki temsilcilerin imzasının, olay kaynağında takıldıkları olanlarla tam olarak eşleşmesi gerektiği anlamına gelir. Olay alıcısı işleyici adları, ilgili olay kaynağı arabiriminde belirtilen adlarla eşleşmelidir. `coclass` *Layout_dependent* olduğunda kullanmanız gerekir **`true`** . Belirtmek biraz daha etkilidir **`true`** .
 
-- **`false`**(varsayılan) çağrı kuralının ve depolama sınıfının (sanal, statik ve diğer) olay yöntemiyle ve işleyicilerle eşleşmesi gerekmediği anlamına gelir; ya da işleyici adlarının olay kaynağı arabirim yöntemi adlarıyla eşleşmesi gerekir.
+- **`false`** (varsayılan) çağrı kuralının ve depolama sınıfının (sanal, statik ve diğer) olay yöntemiyle ve işleyicilerle eşleşmesi gerekmediği anlamına gelir; ya da işleyici adlarının olay kaynağı arabirim yöntemi adlarıyla eşleşmesi gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -65,14 +65,12 @@ Yalnızca com için *layout_dependent* belirtin `type` = **com**. *layout_depend
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|`coclass`*layout_dependent* olduğunda=**`true`**|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

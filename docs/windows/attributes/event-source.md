@@ -11,12 +11,12 @@ helpviewer_keywords:
 - event sources
 - event handling, creating event source
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
-ms.openlocfilehash: a7231b01cd341bbc04bcccd3c2198d1a76dd5e39
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bea90020c3ec570149e11db95ff6d6f8fd0a5507
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232774"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845308"
 ---
 # <a name="event_source"></a>event_source
 
@@ -33,9 +33,9 @@ Bir olay kaynağı oluşturur.
 *türüyle*<br/>
 Aşağıdaki değerlerden birini numaralandırma:
 
-- `native`yönetilmeyen C/C++ kodu için (yönetilmeyen sınıflar için varsayılan).
+- `native` yönetilmeyen C/C++ kodu için (yönetilmeyen sınıflar için varsayılan).
 
-- `com`COM kodu için. `coclass`Ne zaman kullanmanız gerekir `type` = `com` . Bu değer, aşağıdaki üst bilgi dosyalarını dahil etmeniz gerekir:
+- `com` COM kodu için. `coclass`Ne zaman kullanmanız gerekir `type` = `com` . Bu değer, aşağıdaki üst bilgi dosyalarını dahil etmeniz gerekir:
 
     ```cpp
     #define _ATL_ATTRIBUTES
@@ -60,14 +60,12 @@ Aşağıdaki değerlerden birini numaralandırma:
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**`type`=`com`|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

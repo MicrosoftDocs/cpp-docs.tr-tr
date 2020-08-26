@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: aaeee501ef9c05fb19ac7561f7ff7567bae18793
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 62298872def1a6e0e262c5339d323b83ad9bbc3d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562564"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837651"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -5680,7 +5680,7 @@ Uygulamanızda bir ileti kutusu uygulamak için bu üye işlevi yerine [AfxMessa
 
 Aşağıda bir ileti kutusunda kullanılabilecek çeşitli sistem simgeleri gösterilmektedir:
 
-|||
+|Simge|Makroya|
 |-|-|
 |![&#40;x&#41; simgesini durdur](../../mfc/reference/media/vc364f1.gif "&#40;x&#41; simgesini durdur")|MB_ICONHAND, MB_ICONSTOP ve MB_ICONERROR|
 |![Yardım &#40;? &#41; simgesi](../../mfc/reference/media/vc364f2.gif "Yardım &#40;? &#41; simgesi")|MB_ICONQUESTION|

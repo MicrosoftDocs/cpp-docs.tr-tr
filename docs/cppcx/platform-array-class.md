@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 23548df6718b9397db8521b2bebc6e8389859dcd
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 00b73b9fb113066c6948c49ec7d2039748284800
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610705"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837768"
 ---
 # <a name="platformarray-class"></a>Platform:: Array sınıfı
 
@@ -44,9 +44,9 @@ Bkz. [Platform:: WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-clas
 
 ### <a name="properties"></a>Özellikler
 
-|||
-|-|-|
-|[Array:: Value](#value)|Geçerli diziye bir tanıtıcı alır.|
+| Ad | Açıklama |
+|--|--|
+| [Array:: Value](#value) | Geçerli diziye bir tanıtıcı alır. |
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -100,7 +100,7 @@ T& get(unsigned int index)  const;
 
 #### <a name="parameters"></a>Parametreler
 
-*indeks*<br/>
+*dizin*<br/>
 Dizide bir öğe tanımlayan sıfır tabanlı dizin. En düşük dizin 0 ' dır ve en yüksek dizin, `size` [dizi oluşturucusunda](#ctor)parametresi tarafından belirtilen değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri

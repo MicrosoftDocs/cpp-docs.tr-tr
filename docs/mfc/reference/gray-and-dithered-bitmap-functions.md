@@ -9,40 +9,40 @@ f1_keywords:
 helpviewer_keywords:
 - gray and dithered bitmap functions [MFC]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-ms.openlocfilehash: a220596b880ee74d5f9ebf683d087156224ee7c5
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 57f163fd36c0f25508d94a84495fcaf1956e277d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751479"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837209"
 ---
 # <a name="gray-and-dithered-bitmap-functions"></a>Gri ve Titremeli Bit Eşlem İşlevleri
 
-**Gri Bitmap Fonksiyonları**
+**Gri bit eşlem Işlevleri**
 
-MFC, bir bitmap'e devre dışı bırakma denetimi görünümünü vermek için iki işlev sağlar.
+MFC devre dışı bir denetimin görüntüsünü bir bit eşlem vermek için iki işlev sağlar.
 
-![Gri ve orijinal simge sürümlerinin karşılaştırılması](../../mfc/reference/media/vcgraybitmap.gif "Gri ve orijinal simge sürümlerinin karşılaştırılması")
+![Gri ve özgün simge sürümlerinin karşılaştırması](../../mfc/reference/media/vcgraybitmap.gif "Gri ve özgün simge sürümlerinin karşılaştırması")
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[AfxDrawGrayBitmap](#afxdrawgraybitmap)|Biteşin gri bir sürümünü çizer.|
-|[AfxGetGrayBitmap](#afxgetgraybitmap)|Bit eşlenin gri bir sürümünü kopyalar.|
+|[Afxdrawgribit eşlem](#afxdrawgraybitmap)|Bit eşlemin gri sürümünü çizer.|
+|[Afxgetgribit eşlem](#afxgetgraybitmap)|Bit eşlemin gri sürümünü kopyalar.|
 
-**Dithered Bitmap Fonksiyonları**
+**Titremeli bit eşlem Işlevleri**
 
-MFC ayrıca, bitmap'in arka planını dithered desenle değiştirmek için iki işlev de sağlar.
+MFC, bir bit eşlemin arka planını bir titremeli düzeniyle değiştirmek için iki işlev de sağlar.
 
-![Dithered ve orijinal simge sürümlerinin karşılaştırılması](../../mfc/reference/media/vcditheredbitmap.gif "Dithered ve orijinal simge sürümlerinin karşılaştırılması")
+![Titremeli ve özgün simge sürümlerinin karşılaştırması](../../mfc/reference/media/vcditheredbitmap.gif "Titremeli ve özgün simge sürümlerinin karşılaştırması")
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[AfxDrawDitheredBitmap](#afxdrawditheredbitmap)|Dithered arka plan ile bir bit eşlemi çizer.|
-|[AfxGetDitheredBitmap](#afxgetditheredbitmap)|Dithered arka plan ile bir bit eşlemi kopyalar.|
+|[Afxdrawdıtheredbitmap](#afxdrawditheredbitmap)|Titremeli arka planına sahip bir bit eşlem çizer.|
+|[AfxGetDitheredBitmap](#afxgetditheredbitmap)|Bir bit eşlemi titremeli arka planıyla kopyalar.|
 
-## <a name="afxdrawgraybitmap"></a><a name="afxdrawgraybitmap"></a>AfxDrawGrayBitmap
+## <a name="afxdrawgraybitmap"></a><a name="afxdrawgraybitmap"></a> Afxdrawgribit eşlem
 
-Biteşin gri bir sürümünü çizer.
+Bit eşlemin gri sürümünü çizer.
 
 ```cpp
 void AFXAPI AfxDrawGrayBitmap(
@@ -55,26 +55,26 @@ void AFXAPI AfxDrawGrayBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Hedef DC'yi işaret edin.
+*Kökündeki*<br/>
+Hedef DC 'ye işaret eder.
 
-*X*<br/>
-Hedef x-koordinat.
+*x*<br/>
+Hedef x koordinatı.
 
-*Y*<br/>
-Hedef y-koordinat.
+*Iz*<br/>
+Hedef y koordinatı.
 
 *rSrc*<br/>
-Kaynak bit haritası.
+Kaynak bit eşlemi.
 
-*crArka plan*<br/>
+*crBackground*<br/>
 Yeni arka plan rengi (genellikle COLOR_MENU gibi gri).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bitmap `AfxDrawGrayBitmap` ile çizilmiş bir devre dışı denetim görünümüne sahip olacaktır.
+İle çizilen bir bit eşlem `AfxDrawGrayBitmap` , devre dışı bir denetimin görünümüne sahip olur.
 
-![Gri ve orijinal simge sürümlerinin karşılaştırılması](../../mfc/reference/media/vcgraybitmap.gif "Gri ve orijinal simge sürümlerinin karşılaştırılması")
+![Gri ve özgün simge sürümlerinin karşılaştırması](../../mfc/reference/media/vcgraybitmap.gif "Gri ve özgün simge sürümlerinin karşılaştırması")
 
 ### <a name="example"></a>Örnek
 
@@ -82,11 +82,11 @@ Bir bitmap `AfxDrawGrayBitmap` ile çizilmiş bir devre dışı denetim görün�
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="afxgetgraybitmap"></a><a name="afxgetgraybitmap"></a>AfxGetGrayBitmap
+## <a name="afxgetgraybitmap"></a><a name="afxgetgraybitmap"></a> Afxgetgribit eşlem
 
-Bit eşlenin gri bir sürümünü kopyalar.
+Bit eşlemin gri sürümünü kopyalar.
 
 ```cpp
 void AFXAPI AfxGetGrayBitmap(
@@ -98,19 +98,19 @@ void AFXAPI AfxGetGrayBitmap(
 ### <a name="parameters"></a>Parametreler
 
 *rSrc*<br/>
-Kaynak bit haritası.
+Kaynak bit eşlemi.
 
 *pDest*<br/>
-Hedef bit haritası.
+Hedef bit eşlem.
 
-*crArka plan*<br/>
+*crBackground*<br/>
 Yeni arka plan rengi (genellikle COLOR_MENU gibi gri).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kopyalanan bir biteş, devre dışı bırakma denetimi görünümüne sahip `AfxGetGrayBitmap` olacaktır.
+İle kopyalanmış bir bit eşlem `AfxGetGrayBitmap` , devre dışı bir denetimin görünümüne sahip olur.
 
-![Gri ve orijinal simge sürümlerinin karşılaştırılması](../../mfc/reference/media/vcgraybitmap.gif "Gri ve orijinal simge sürümlerinin karşılaştırılması")
+![Gri ve özgün simge sürümlerinin karşılaştırması](../../mfc/reference/media/vcgraybitmap.gif "Gri ve özgün simge sürümlerinin karşılaştırması")
 
 ### <a name="example"></a>Örnek
 
@@ -118,11 +118,11 @@ Kopyalanan bir biteş, devre dışı bırakma denetimi görünümüne sahip `Afx
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="afxdrawditheredbitmap"></a><a name="afxdrawditheredbitmap"></a>AfxDrawDitheredBitmap
+## <a name="afxdrawditheredbitmap"></a><a name="afxdrawditheredbitmap"></a> Afxdrawdıtheredbitmap
 
-Arka planını bir dithered (denetleyici) desenle değiştirerek bir bit eşlemi çizer.
+Arka planını bir titremeli (Checker) düzeniyle değiştirerek bir bit eşlem çizer.
 
 ```cpp
 void AFXAPI AfxDrawDitheredBitmap(
@@ -136,29 +136,29 @@ void AFXAPI AfxDrawDitheredBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Hedef DC'yi işaret edin.
+*Kökündeki*<br/>
+Hedef DC 'ye işaret eder.
 
-*X*<br/>
-Hedef x-koordinat.
+*x*<br/>
+Hedef x koordinatı.
 
-*Y*<br/>
-Hedef y-koordinat.
+*Iz*<br/>
+Hedef y koordinatı.
 
 *rSrc*<br/>
-Kaynak bit haritası.
+Kaynak bit eşlemi.
 
 *cr1*<br/>
-İki renk renkten biri, genellikle beyaz.
+İki renk taklidi renginden biri genellikle beyaz.
 
 *cr2*<br/>
-Diğer renk tesnivar rengi, genellikle açık gri (COLOR_MENU).
+Diğer titreme rengi, genellikle açık gri (COLOR_MENU).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak bit eşlemi, biteşin arka planının yerine iki renkli *(cr1* ve *cr2)* damalı desenle hedef DC'ye çizilir. Kaynak bit eşleminin arka planı, beyaz pikselleri ve bit eşleminin sol üst köşesindeki pikselin rengiyle eşleşen tüm pikseller olarak tanımlanır.
+Kaynak bit eşlem, hedef DC 'de, bit eşlemin arka planını değiştiren iki renkli (*cr1* ve *CR2*) damalı düzeniyle çizilir. Kaynak bit eşlemin arka planı, beyaz piksel ve bit eşlemin sol üst köşesindeki pikselin rengi ile eşleşen tüm pikseller olarak tanımlanır.
 
-![Dithered ve orijinal simge sürümlerinin karşılaştırılması](../../mfc/reference/media/vcditheredbitmap.gif "Dithered ve orijinal simge sürümlerinin karşılaştırılması")
+![Titremeli ve özgün simge sürümlerinin karşılaştırması](../../mfc/reference/media/vcditheredbitmap.gif "Titremeli ve özgün simge sürümlerinin karşılaştırması")
 
 ### <a name="example"></a>Örnek
 
@@ -166,11 +166,11 @@ Kaynak bit eşlemi, biteşin arka planının yerine iki renkli *(cr1* ve *cr2)* 
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="afxgetditheredbitmap"></a><a name="afxgetditheredbitmap"></a>AfxGetDitheredBitmap
+## <a name="afxgetditheredbitmap"></a><a name="afxgetditheredbitmap"></a> AfxGetDitheredBitmap
 
-Bir bit eşlemi kopyalayarak arka planını dithered (denetleyici) desenle değiştirir.
+Arka planını bir titremeli (Checker) düzeniyle değiştirerek bir bit eşlemi kopyalar.
 
 ```cpp
 void AFXAPI AfxGetDitheredBitmap(
@@ -183,22 +183,22 @@ void AFXAPI AfxGetDitheredBitmap(
 ### <a name="parameters"></a>Parametreler
 
 *rSrc*<br/>
-Kaynak bit haritası.
+Kaynak bit eşlemi.
 
 *pDest*<br/>
-Hedef bit haritası.
+Hedef bit eşlem.
 
 *cr1*<br/>
-İki renk renkten biri, genellikle beyaz.
+İki renk taklidi renginden biri genellikle beyaz.
 
 *cr2*<br/>
-Diğer renk tesnivar rengi, genellikle açık gri (COLOR_MENU).
+Diğer titreme rengi, genellikle açık gri (COLOR_MENU).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak bit eşlemi, kaynak bit eşlemesinin arka planının yerine iki renkli *(cr1* ve *cr2)* damalı desenle hedef bit eşlemekopyalanır. Kaynak bit eşleminin arka planı, beyaz pikselleri ve bit eşleminin sol üst köşesindeki pikselin rengiyle eşleşen tüm pikseller olarak tanımlanır.
+Kaynak bit eşlem, kaynak bit eşlemin arka planını değiştiren iki renkli (*cr1* ve *CR2*) damalı düzenine sahip hedef bit eşlemine kopyalanır. Kaynak bit eşlemin arka planı, beyaz piksel ve bit eşlemin sol üst köşesindeki pikselin rengi ile eşleşen tüm pikseller olarak tanımlanır.
 
-![Dithered ve orijinal simge sürümlerinin karşılaştırılması](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
+![Titremeli ve özgün simge sürümlerinin karşılaştırması](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")
 
 ### <a name="example"></a>Örnek
 
@@ -206,8 +206,8 @@ Kaynak bit eşlemi, kaynak bit eşlemesinin arka planının yerine iki renkli *(
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

@@ -14,18 +14,18 @@ helpviewer_keywords:
 - IConvertTypeImpl class
 - CanConvert method
 ms.assetid: 7f81e79e-7d3f-4cbe-b93c-d632a94b15f6
-ms.openlocfilehash: e3b76be2a1f1edfcdc1139a3dd396835923c2b4a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b4309e794a83e6c13dcf0051791cd1762a6d5012
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210697"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845568"
 ---
 # <a name="iconverttypeimpl-class"></a>IConvertTypeImpl Sınıfı
 
 [Iverttype](/previous-versions/windows/desktop/ms715926(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T>
@@ -35,8 +35,8 @@ class ATL_NO_VTABLE IConvertTypeImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-Sınıfınız `IConvertTypeImpl`türetilir.
+*T*<br/>
+Sınıfınız, öğesinden türetilir `IConvertTypeImpl` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -46,19 +46,19 @@ Sınıfınız `IConvertTypeImpl`türetilir.
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[CanConvert](#canconvert)|Bir komutta veya bir satır kümesinde tür dönüştürmelerinden oluşan kullanılabilirlik hakkında bilgi verir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim komutlarda, satır kümelerinde ve Dizin satır kümelerinde zorunludur. `IConvertTypeImpl`, OLE DB tarafından sağlanan dönüştürme nesnesine temsilci seçerek arabirimi uygular.
+Bu arabirim komutlarda, satır kümelerinde ve Dizin satır kümelerinde zorunludur. `IConvertTypeImpl` OLE DB tarafından sağlanan dönüştürme nesnesine temsilci seçerek arabirimi uygular.
 
-## <a name="iconverttypeimplcanconvert"></a><a name="canconvert"></a>Iverttypeımpl:: CanConvert
+## <a name="iconverttypeimplcanconvert"></a><a name="canconvert"></a> Iverttypeımpl:: CanConvert
 
 Bir komutta veya bir satır kümesinde tür dönüştürmelerinden oluşan kullanılabilirlik hakkında bilgi verir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(CanConvert)(DBTYPE wFromType,
@@ -72,9 +72,9 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 
 ### <a name="remarks"></a>Açıklamalar
 
-`MSADC.DLL`OLE DB veri dönüştürmeyi kullanır.
+İçinde OLE DB veri dönüştürmeyi kullanır `MSADC.DLL` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

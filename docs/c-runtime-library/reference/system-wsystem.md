@@ -35,12 +35,12 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: 09353c9cda2bc85d91f57806bc3497e49a19f803
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 15e4637d709fdf4600ecb4c66c7d4a75c4fa07eb
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912388"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88844983"
 ---
 # <a name="system-_wsystem"></a>system, _wsystem
 
@@ -49,7 +49,7 @@ Bir komutu yürütür.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int system(
@@ -69,7 +69,7 @@ Yürütülecek komut.
 
 *Komut* **null** ise ve komut yorumlayıcı bulunursa, sıfır dışında bir değer döndürür. Komut yorumlayıcı bulunamazsa, 0 döndürür ve **errno** değerini **ENOENT**olarak ayarlar. *Komut* **null**değilse, **sistem** komut yorumlayıcı tarafından döndürülen değeri döndürür. Yalnızca komut yorumlayıcı 0 değerini döndürürse 0 değerini döndürür. -1 ' in dönüş değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
 
-|||
+| Değer | Açıklama |
 |-|-|
 | **E2BIG** | Bağımsız değişken listesi (sisteme bağımlı) çok büyük. |
 | **ENOENT** | Komut yorumlayıcı bulunamıyor. |
@@ -80,7 +80,7 @@ Bu dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _s
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sistem** işlevi, dizeyi bir işletim sistemi komutu olarak *yürüten komut yorumlayıcıya geçirir.* **sistem** , cmd. exe komut yorumlayıcı dosyasını bulmak Için **ComSpec** ve **Path** ortam değişkenlerini kullanır. *Komut* **null**ise, işlev yalnızca komut yorumlayıcısının var olup olmadığını denetler.
+**Sistem** işlevi, dizeyi bir işletim sistemi komutu olarak *yürüten komut yorumlayıcıya geçirir.* **sistem** , CMD.exe komut yorumlayıcı dosyasını bulmak Için **ComSpec** ve **Path** ortam değişkenlerini kullanır. *Komut* **null**ise, işlev yalnızca komut yorumlayıcısının var olup olmadığını denetler.
 
 **System**çağrısından önce [fflush](fflush.md) veya [_flushall](flushall.md)kullanarak veya herhangi bir akışı kapatarak açıkça temizlenmesi gerekir.
 
@@ -98,8 +98,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**sistem**|\<Process. h> veya \<Stdlib. h>|
-|**_wsystem**|\<Process. h> veya \<Stdlib. h> ya \<da wchar. h>|
+|**sistem**|\<process.h> veya \<stdlib.h>|
+|**_wsystem**|\<process.h> or \<stdlib.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -118,14 +118,14 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_systemtxt"></a>Giriş: crt_system. txt
+### <a name="input-crt_systemtxt"></a>Giriş: crt_system.txt
 
 ```Input
 Line one.
 Line two.
 ```
 
-### <a name="output"></a>Çıktı
+### <a name="output"></a>Çıkış
 
 ```Output
 Line one.
@@ -134,8 +134,8 @@ Line two.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_flushall](flushall.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>

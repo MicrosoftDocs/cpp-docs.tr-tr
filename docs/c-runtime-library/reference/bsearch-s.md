@@ -28,18 +28,18 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 91b015eb9005a9b447cdd9d74a38d7169bd90a73
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 20b4c482210f480730f7da4c89549d207ea6ca7d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913390"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845178"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 
 Sıralanmış bir dizide ikili bir arama gerçekleştirir. Bu işlev, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [bsearch](bsearch.md) 'ün bir sürümüdür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 void *bsearch_s(
@@ -80,13 +80,12 @@ Karşılaştırma işlevinde erişilebilen nesneye yönelik bir işaretçi.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|||||||
+|*anahtar*|*base*|*Karşılaştır*|*sayı*|*Genişlik*|**`errno`**|
 |-|-|-|-|-|-|
-|*anahtar*|*base*|*Karşılaştır*|*number*|*genişlik*|**errno**|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|**DEĞER**|kaydedilmemiş|! = 0|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|= 0|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|a|kaydedilmemiş|**EıNVAL**|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|
+|herhangi biri|**DEĞER**|herhangi biri|! = 0|herhangi biri|**EıNVAL**|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|= 0|**EıNVAL**|
+|herhangi biri|herhangi biri|**DEĞER**|a|herhangi biri|**EıNVAL**|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -94,7 +93,7 @@ Karşılaştırma işlevinde erişilebilen nesneye yönelik bir işaretçi.
 
 |*Compare* yordamının döndürdüğü değer|Açıklama|
 |-----------------------------------------|-----------------|
-|\<0|Anahtar, Array öğesinden küçüktür.|
+|\< 0|Anahtar, Array öğesinden küçüktür.|
 |0|Anahtar, dizi öğesine eşittir.|
 |> 0|Anahtar, dizi öğesinden daha büyük.|
 
@@ -106,7 +105,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**bsearch_s**|\<Stdlib. h> ve \<Search. h>|
+|**bsearch_s**|\<stdlib.h> ve \<search.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

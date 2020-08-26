@@ -18,12 +18,12 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-ms.openlocfilehash: b5a7263ae5cac81508ab2450a530132879ed45b2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9133c30dd1ac069145862d4bf61ba0bc0d504838
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222829"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837365"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -31,7 +31,7 @@ Bu konu başlığı altında, bir iletişim kutusu, form görünümü veya denet
 
 ### <a name="ddx_oc-functions"></a>DDX_OC Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[DDX_OCBool](#ddx_ocbool)|Bir OLE denetiminin ve **bool** veri üyesinin bir özelliği arasında **bool** verilerinin aktarılmasını yönetir.|
 |[DDX_OCBoolRO](#ddx_ocboolro)|Bir OLE denetiminin salt okunurdur özelliği ve **bool** veri üyesi arasında **bool** verilerinin aktarılmasını yönetir.|
@@ -46,7 +46,7 @@ Bu konu başlığı altında, bir iletişim kutusu, form görünümü veya denet
 |[DDX_OCText](#ddx_octext)|OLE denetiminin ve **CString** veri üyesinin bir özelliği arasında **CString** verilerinin aktarımını yönetir.|
 |[DDX_OCTextRO](#ddx_octextro)|Bir OLE denetiminin salt okunurdur özelliği ve **CString** veri üyesi arasında **CString** verilerinin aktarımını yönetir.|
 
-## <a name="ddx_ocbool"></a><a name="ddx_ocbool"></a>DDX_OCBool
+## <a name="ddx_ocbool"></a><a name="ddx_ocbool"></a> DDX_OCBool
 
 `DDX_OCBool`İşlevi, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **bool** veri ÜYESI içindeki bir OLE denetimi özelliği arasında **bool** verilerinin aktarılmasını yönetir.
 
@@ -80,7 +80,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üstbilgi:** AfxDisp. h
 
-## <a name="ddx_ocboolro"></a><a name="ddx_ocboolro"></a>DDX_OCBoolRO
+## <a name="ddx_ocboolro"></a><a name="ddx_ocboolro"></a> DDX_OCBoolRO
 
 `DDX_OCBoolRO`İşlevi, bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin **bool** veri ÜYESI içindeki bir OLE denetiminin salt okunurdur özelliği arasında **bool** verilerinin aktarılmasını yönetir.
 
@@ -114,7 +114,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_occolor"></a><a name="ddx_occolor"></a>DDX_OCColor
+## <a name="ddx_occolor"></a><a name="ddx_occolor"></a> DDX_OCColor
 
 `DDX_OCColor`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir OLE_COLOR veri üyesi içindeki BIR OLE denetimi özelliği arasında OLE_COLOR verilerinin aktarılmasını yönetir.
 
@@ -148,7 +148,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_occolorro"></a><a name="ddx_occolorro"></a>DDX_OCColorRO
+## <a name="ddx_occolorro"></a><a name="ddx_occolorro"></a> DDX_OCColorRO
 
 `DDX_OCColorRO`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir OLE_COLOR veri üyesi içindeki BIR OLE denetiminin salt okunurdur özelliği arasında OLE_COLOR verilerinin aktarımını yönetir.
 
@@ -182,7 +182,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_ocfloat"></a><a name="ddx_ocfloat"></a>DDX_OCFloat
+## <a name="ddx_ocfloat"></a><a name="ddx_ocfloat"></a> DDX_OCFloat
 
 `DDX_OCFloat`İşlevi, **`float`** **`double`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`float`** **`double`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetimi özelliği arasında veri aktarımını (veya) yönetir.
 
@@ -222,7 +222,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_ocfloatro"></a><a name="ddx_ocfloatro"></a>DDX_OCFloatRO
+## <a name="ddx_ocfloatro"></a><a name="ddx_ocfloatro"></a> DDX_OCFloatRO
 
 `DDX_OCFloatRO`İşlevi, **`float`** **`double`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`float`** **`double`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetiminin salt okunurdur özelliği arasında veri aktarımını yönetir.
 
@@ -262,7 +262,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_ocint"></a><a name="ddx_ocint"></a>DDX_OCInt
+## <a name="ddx_ocint"></a><a name="ddx_ocint"></a> DDX_OCInt
 
 `DDX_OCInt`İşlevi, **`int`** **`long`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`int`** **`long`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetimi özelliği arasında veri aktarımını (veya) yönetir.
 
@@ -302,7 +302,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_ocintro"></a><a name="ddx_ocintro"></a>DDX_OCIntRO
+## <a name="ddx_ocintro"></a><a name="ddx_ocintro"></a> DDX_OCIntRO
 
 `DDX_OCIntRO`İşlevi, **`int`** **`long`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`int`** **`long`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir (veya) veri üyesi içindeki bir OLE denetiminin salt okunurdur özelliği arasında veri aktarımını yönetir.
 
@@ -342,7 +342,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_ocshort"></a><a name="ddx_ocshort"></a>DDX_OCShort
+## <a name="ddx_ocshort"></a><a name="ddx_ocshort"></a> DDX_OCShort
 
 `DDX_OCShort`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin kısa veri üyesi içindeki BIR OLE denetimi özelliği arasında kısa verilerin aktarılmasını yönetir.
 
@@ -376,7 +376,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_ocshortro"></a><a name="ddx_ocshortro"></a>DDX_OCShortRO
+## <a name="ddx_ocshortro"></a><a name="ddx_ocshortro"></a> DDX_OCShortRO
 
 `DDX_OCShortRO`İşlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin kısa bir veri üyesi olan BIR OLE denetiminin salt okunurdur özelliği arasında kısa verilerin aktarılmasını yönetir.
 
@@ -410,7 +410,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_octext"></a><a name="ddx_octext"></a>DDX_OCText
+## <a name="ddx_octext"></a><a name="ddx_octext"></a> DDX_OCText
 
 **DDX_OCText** işlevi bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir **CString** VERI üyesi içindeki bir OLE denetimi özelliği arasında **CString** verilerinin aktarılmasını yönetir.
 
@@ -444,7 +444,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Üst bilgi** AfxDisp. h
 
-## <a name="ddx_octextro"></a><a name="ddx_octextro"></a>DDX_OCTextRO
+## <a name="ddx_octextro"></a><a name="ddx_octextro"></a> DDX_OCTextRO
 
 `DDX_OCTextRO`İşlevi `CString` bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve `CString` iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir veri ÜYESI olan bir OLE denetiminin salt okunurdur özelliği arasında veri aktarımını yönetir.
 

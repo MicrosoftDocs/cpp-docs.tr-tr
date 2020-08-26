@@ -22,18 +22,18 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: d91221dd509122ebbd6490c2de7fab1ce51eb2f8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8d435cd8c5c8723d008be98482631f081c967058
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210736"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845126"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 
 [ICommandText](/previous-versions/windows/desktop/ms714914(v=vs.85)) arabirimi için bir uygulama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T >
@@ -43,8 +43,8 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-`ICommandTextImpl`türetilen komut sınıfı.
+*T*<br/>
+Öğesinden türetilmiş komut sınıfı `ICommandTextImpl` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -54,14 +54,14 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[GetCommandText](#getcommandtext)|[SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.|
 |[SetCommandText](#setcommandtext)|Komut metnini ayarlar ve varolan komut metnini değiştirir.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[m_strCommandText](#strcommandtext)|Komut metnini depolar.|
 
@@ -69,11 +69,11 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 Komutlarda zorunlu arabirim.
 
-## <a name="icommandtextimplgetcommandtext"></a><a name="getcommandtext"></a>ICommandTextImpl:: GetCommandText
+## <a name="icommandtextimplgetcommandtext"></a><a name="getcommandtext"></a> ICommandTextImpl:: GetCommandText
 
 [SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(GetCommandText)(GUID * pguidDialect,
@@ -84,11 +84,11 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect,
 
 *OLE DB Programcı başvurusunda* [ICommandText:: GetCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) ' i inceleyin. *PguidDialect* parametresi varsayılan olarak yok sayılır.
 
-## <a name="icommandtextimplsetcommandtext"></a><a name="setcommandtext"></a>ICommandTextImpl:: SetCommandText
+## <a name="icommandtextimplsetcommandtext"></a><a name="setcommandtext"></a> ICommandTextImpl:: SetCommandText
 
 Komut metnini ayarlar ve varolan komut metnini değiştirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(SetCommandText)(REFGUID rguidDialect,
@@ -99,11 +99,11 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect,
 
 *OLE DB Programcı başvurusunda* [ICommandText:: setCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) ' i inceleyin.
 
-## <a name="icommandtextimplm_strcommandtext"></a><a name="strcommandtext"></a>ICommandTextImpl:: m_strCommandText
+## <a name="icommandtextimplm_strcommandtext"></a><a name="strcommandtext"></a> ICommandTextImpl:: m_strCommandText
 
 Komut metni dizesini depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CComBSTR m_strCommandText;
@@ -112,4 +112,4 @@ CComBSTR m_strCommandText;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

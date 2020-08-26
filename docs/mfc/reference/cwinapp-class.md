@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 515307bd79059c22b5b40cd8b47ce8809ede8f04
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f8ca4ad2023902d40a1f63c881a8dd2fd38a9ae9
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560861"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837612"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -1303,9 +1303,8 @@ DWORD m_dwRestartManagerSupportFlags;
 
 Yeniden başlatma Yöneticisi 'ni etkinleştirmek için istediğiniz `m_dwRestartManagerSupportFlags` davranışa ayarlayın. Aşağıdaki tabloda kullanılabilen bayraklar gösterilmektedir.
 
-|||
-|-|-|
 |Bayrak|Açıklama|
+|-|-|
 |AFX_RESTART_MANAGER_SUPPORT_RESTART|Uygulama, [CWinApp:: RegisterWithRestartManager](#registerwithrestartmanager)kullanılarak kaydedilir. Yeniden başlatma Yöneticisi, beklenmedik şekilde çıkılırken uygulamayı yeniden başlatmaktan sorumludur.|
 |-AFX_RESTART_MANAGER_SUPPORT_RECOVERY|Uygulama yeniden başlatma yöneticisiyle kaydedilir ve yeniden başlatma Yöneticisi, uygulamayı yeniden başlattığında kurtarma geri çağırma işlevini çağırır. Varsayılan kurtarma geri çağırma işlevi [CWinApp:: ApplicationRecoveryCallback](#applicationrecoverycallback).|
 |-AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|Otomatik kaydetme etkin ve yeniden başlatma Yöneticisi, uygulama yeniden başlatıldığında açık olan tüm belgeleri otomatik olarak kaydeder.|
@@ -1437,7 +1436,7 @@ Uygulama adı, [CWinApp](#cwinapp) oluşturucusuna geçirilen parametreden veya 
 [AfxGetAppName](application-information-and-management.md#afxgetappname)genel işlevi tarafından döndürüldü. `m_pszAppName`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszAppName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
+> ' A bir değer atarsanız `m_pszAppName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
 
 [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]
 
@@ -1458,7 +1457,7 @@ LPCTSTR m_pszExeName;
 [M_pszAppName](#m_pszappname)aksine, bu ad boşluk içeremez. `m_pszExeName`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszExeName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
+> ' A bir değer atarsanız `m_pszExeName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
 
 [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]
 
@@ -1475,7 +1474,7 @@ LPCTSTR m_pszHelpFilePath;
 Varsayılan olarak Framework, `m_pszHelpFilePath` "ile uygulamanın adı ile başlatılır. HLP "eklendi. Yardım dosyasının adını değiştirmek için, `m_pszHelpFilePath` istenen yardım dosyasının tüm adını içeren bir dizeye işaret olarak ayarlayın. Bunu yapmak için uygun bir yer, uygulamanın [InitInstance](#initinstance) işlevidir. `m_pszHelpFilePath`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszHelpFilePath` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
+> ' A bir değer atarsanız `m_pszHelpFilePath` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
 
 [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]
 
@@ -1492,7 +1491,7 @@ LPCTSTR m_pszProfileName;
 `m_pszProfileName`**const char**türünde ortak bir değişkendir <strong>\*</strong> .
 
 > [!NOTE]
-> ' A bir değer atarsanız `m_pszProfileName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
+> ' A bir değer atarsanız `m_pszProfileName` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
 
 [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]
 
@@ -1510,7 +1509,7 @@ Normalde, bu veri üyesi salt okunurdur.
 
 - Değer bir kayıt defteri anahtarında depolanır. Uygulama profili ayarının adı şu kayıt defteri anahtarına eklenir: HKEY_CURRENT_USER/Software/LocalAppWizard-Generated/.
 
-' A bir değer atarsanız `m_pszRegistryKey` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örneğin:
+' A bir değer atarsanız `m_pszRegistryKey` , yığın üzerinde dinamik olarak ayrılmalıdır. `CWinApp`Yıkıcı, bu işaretçiyle **Free**() öğesini çağırır. `_tcsdup`Ayırma işlemi için () çalışma zamanı kitaplığı işlevini kullanmak istersiniz. Ayrıca, yeni bir değer atamadan önce geçerli işaretçiyle ilişkili belleği boşaltın. Örnek:
 
 [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/cpp/cwinapp-class_23.cpp)]
 

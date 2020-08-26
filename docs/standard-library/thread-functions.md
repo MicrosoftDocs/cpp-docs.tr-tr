@@ -14,21 +14,22 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: 130328ca07de28e14eedd7fdc99fb8946f26c5cb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 64a62180243d77f361c243b2a89de56b0a14920e
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232865"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845048"
 ---
 # <a name="ltthreadgt-functions"></a>&lt;iş parçacığı &gt; işlevleri
 
-||||
-|-|-|-|
-|[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|
-|[Kur](#swap)|[yield](#yield)|
+[get_id](#get_id)\
+[sleep_for](#sleep_for)\
+[sleep_until](#sleep_until)\
+[Kur](#swap)\
+[yield](#yield)
 
-## <a name="get_id"></a><a name="get_id"></a>get_id
+## <a name="get_id"></a><a name="get_id"></a> get_id
 
 Yürütmenin geçerli iş parçacığını benzersiz şekilde tanımlar.
 
@@ -40,7 +41,7 @@ thread::id this_thread::get_id() noexcept;
 
 Yürütmenin geçerli iş parçacığını benzersiz bir şekilde tanımlayan [thread:: ID](../standard-library/thread-class.md) türünde bir nesne.
 
-## <a name="sleep_for"></a><a name="sleep_for"></a>sleep_for
+## <a name="sleep_for"></a><a name="sleep_for"></a> sleep_for
 
 Çağıran iş parçacığını engeller.
 
@@ -59,7 +60,7 @@ Bir zaman aralığı belirten [Duration](../standard-library/duration-class.md) 
 
 İşlevi çağıran iş parçacığını en az *Rel_time*tarafından belirtilen zaman için engeller. Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="sleep_until"></a><a name="sleep_until"></a>sleep_until
+## <a name="sleep_until"></a><a name="sleep_until"></a> sleep_until
 
 Çağıran iş parçacığını, belirtilen saate kadar en az kadar engeller.
 
@@ -79,7 +80,7 @@ Zaman içinde bir noktayı temsil eder.
 
 Bu işlev hiçbir özel durum oluşturmaz.
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki nesnenin durumunu değiştirir `thread` .
 
@@ -99,7 +100,7 @@ Doğru `thread` nesne.
 
 İşlev çağırır `Left.swap(Right)` .
 
-## <a name="yield"></a><a name="yield"></a>yield
+## <a name="yield"></a><a name="yield"></a> yield
 
 Geçerli iş parçacığı normalde çalışmaya devam edebilse bile, işletim sistemine diğer iş parçacıklarını çalıştırmasını bildirir.
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 8eef2f3dc7880f9b2a937a26db1b74687fa00f1d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 06d0511317c21f6b132349d7d6cd6c2d6f20bc1b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222842"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837378"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -36,7 +36,7 @@ Bu konuda, bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecord
 
 ### <a name="ddx_field-functions"></a>DDX_Field Işlevleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[DDX_FieldCBIndex](#ddx_fieldcbindex)|Bir kayıt kümesi alanı veri üyesi ve geçerli seçimin dizini ile bir [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md)içindeki Birleşik giriş kutusunda bulunan tamsayı verilerini aktarır.|
 |[DDX_FieldCBString](#ddx_fieldcbstring)|Bir `CString` kayıt kümesi alanı veri üyesi ve bir veya içindeki Birleşik giriş kutusunun düzenleme denetimi arasında veri aktarır `CRecordView` `CDaoRecordView` . Kayıt kümesinden denetime veri taşırken, bu işlev belirtilen dizedeki karakterlerle başlayan açılan kutudaki öğeyi seçer.|
@@ -50,7 +50,7 @@ Bu konuda, bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecord
 |[DDX_FieldSlider](#ddx_fieldslider)|Bir kayıt görünümündeki kaydırıcı denetiminin Thumb konumunu ve bir kayıt **`int`** kümesinin alan veri üyesini eşitler. |
 |[DDX_FieldText](#ddx_fieldtext)|**`int`** **UINT** **`long`** `DWORD` [CString](../../atl-mfc-shared/reference/cstringt-class.md) **`float`** **`double`** **`short`** Bir kayıt kümesi alanı veri üyesi ve bir veya içindeki bir düzenleme kutusu arasında bir Recordset [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md)alan veri üyesi ve [copacurrency](../../mfc/reference/colecurrency-class.md) verileri `CRecordView` `CDaoRecordView` aktarmak için aşırı yüklenmiş sürümler mevcuttur.|
 
-## <a name="ddx_fieldcbindex"></a><a name="ddx_fieldcbindex"></a>DDX_FieldCBIndex
+## <a name="ddx_fieldcbindex"></a><a name="ddx_fieldcbindex"></a> DDX_FieldCBIndex
 
 `DDX_FieldCBIndex`İşlevi bir kayıt görünümündeki Birleşik giriş kutusu denetiminin liste kutusu denetimindeki seçili öğenin dizinini ve **`int`** kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesini eşitler.
 
@@ -76,7 +76,7 @@ void AFXAPI DDX_FieldCBIndex(
 *Nıdc*<br/>
 [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
-*indeks*<br/>
+*dizin*<br/>
 İlişkili veya nesne içindeki bir alan veri üyesine başvuru `CRecordset` `CDaoRecordset` .
 
 *pRecordset*<br/>
@@ -98,7 +98,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . Örnek, 
 
 **Üstbilgi:** afxdao. h
 
-## <a name="ddx_fieldcbstring"></a><a name="ddx_fieldcbstring"></a>DDX_FieldCBString
+## <a name="ddx_fieldcbstring"></a><a name="ddx_fieldcbstring"></a> DDX_FieldCBString
 
 `DDX_FieldCBString`İşlevi bir kayıt görünümündeki Birleşik giriş [CString](../../atl-mfc-shared/reference/cstringt-class.md) kutusu denetiminin düzenleme denetimi ve `CString` kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesi arasında CString verilerinin aktarımını yönetir.
 
@@ -146,7 +146,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . Örnek, 
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldcbstringexact"></a><a name="ddx_fieldcbstringexact"></a>DDX_FieldCBStringExact
+## <a name="ddx_fieldcbstringexact"></a><a name="ddx_fieldcbstringexact"></a> DDX_FieldCBStringExact
 
 `DDX_FieldCBStringExact`İşlevi bir kayıt görünümündeki Birleşik giriş [CString](../../atl-mfc-shared/reference/cstringt-class.md) kutusu denetiminin düzenleme denetimi ve `CString` kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesi arasında CString verilerinin aktarımını yönetir.
 
@@ -194,7 +194,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin y
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldcheck"></a><a name="ddx_fieldcheck"></a>DDX_FieldCheck
+## <a name="ddx_fieldcheck"></a><a name="ddx_fieldcheck"></a> DDX_FieldCheck
 
 `DDX_FieldCheck`İşlevi **`int`** bir iletişim kutusu, form görünümü veya denetim görünümü nesnesi ve **`int`** iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir veri üyesi içindeki bir onay kutusu denetimi arasında veri aktarımını yönetir.
 
@@ -236,7 +236,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldlbindex"></a><a name="ddx_fieldlbindex"></a>DDX_FieldLBIndex
+## <a name="ddx_fieldlbindex"></a><a name="ddx_fieldlbindex"></a> DDX_FieldLBIndex
 
 `DDX_FieldLBIndex`İşlevi bir kayıt görünümündeki liste kutusu denetimindeki seçili öğenin dizinini ve **`int`** kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesini eşitler.
 
@@ -262,7 +262,7 @@ void AFXAPI DDX_FieldLBIndex(
 *Nıdc*<br/>
 [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesindeki bir denetimin kimliği.
 
-*indeks*<br/>
+*dizin*<br/>
 İlişkili veya nesne içindeki bir alan veri üyesine başvuru `CRecordset` `CDaoRecordset` .
 
 *pRecordset*<br/>
@@ -284,7 +284,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) .
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldlbstring"></a><a name="ddx_fieldlbstring"></a>DDX_FieldLBString
+## <a name="ddx_fieldlbstring"></a><a name="ddx_fieldlbstring"></a> DDX_FieldLBString
 
 , `DDX_FieldLBString` Bir kayıt görünümündeki liste kutusu denetiminin geçerli seçimini, kayıt görünümüyle ilişkili bir kayıt kümesinin [CString](../../atl-mfc-shared/reference/cstringt-class.md) alan veri üyesine kopyalar.
 
@@ -332,7 +332,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin y
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldlbstringexact"></a><a name="ddx_fieldlbstringexact"></a>DDX_FieldLBStringExact
+## <a name="ddx_fieldlbstringexact"></a><a name="ddx_fieldlbstringexact"></a> DDX_FieldLBStringExact
 
 `DDX_FieldLBStringExact`İşlevi bir kayıt görünümündeki liste kutusu denetiminin geçerli seçimini, kayıt görünümüyle ilişkili bir kayıt kümesinin [CString](../../atl-mfc-shared/reference/cstringt-class.md) alan veri üyesine kopyalar.
 
@@ -380,7 +380,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin y
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldradio"></a><a name="ddx_fieldradio"></a>DDX_FieldRadio
+## <a name="ddx_fieldradio"></a><a name="ddx_fieldradio"></a> DDX_FieldRadio
 
 `DDX_FieldRadio`İşlevi bir kayıt görünümü kayıt kümesinin sıfır tabanlı bir **`int`** üye değişkenini, kayıt görünümündeki radyo düğmeleri grubundaki seçili radyo düğmesiyle ilişkilendirir.
 
@@ -428,7 +428,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin y
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldscroll"></a><a name="ddx_fieldscroll"></a>DDX_FieldScroll
+## <a name="ddx_fieldscroll"></a><a name="ddx_fieldscroll"></a> DDX_FieldScroll
 
 `DDX_FieldScroll`İşlevi bir kayıt görünümündeki bir kaydırma çubuğu denetiminin kaydırma konumunu ve **`int`** kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesini (veya eşlemeyi seçtiğiniz tamsayı değişkeni ile) eşitler.
 
@@ -476,7 +476,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin y
 
   **Header** afxdao. h
 
-## <a name="ddx_fieldslider"></a><a name="ddx_fieldslider"></a>DDX_FieldSlider
+## <a name="ddx_fieldslider"></a><a name="ddx_fieldslider"></a> DDX_FieldSlider
 
 `DDX_FieldSlider`İşlevi bir kayıt görünümündeki kaydırıcı denetiminin Thumb konumunu ve **`int`** kayıt görünümüyle ilişkili bir kayıt kümesinin alan veri üyesini (veya eşlemeyi seçtiğiniz tamsayı değişkeni ile) eşitler.
 
@@ -514,7 +514,7 @@ Değiş tokuş edilecek değere bir başvuru. Bu parametre, kaydırıcı denetim
 
 Kayıt kümesindeki verileri kaydırıcıya taşırken, bu işlev kaydırıcının konumunu *değer*'de belirtilen değere ayarlar. Kayıt kümesinden denetime olan bir aktarım üzerinde, kayıt kümesi alanı null ise kaydırıcı denetiminin konumu 0 olarak ayarlanır. Denetimden kayıt kümesine bir aktarımdan, denetim boşsa, kayıt kümesi alanının değeri 0 ' dır.
 
-`DDX_FieldSlider`, yalnızca bir konum yerine bir Aralık ayarlamatabilen kaydırıcı denetimleriyle birlikte Aralık bilgilerini değiş tokuş etmez.
+`DDX_FieldSlider` , yalnızca bir konum yerine bir Aralık ayarlamatabilen kaydırıcı denetimleriyle birlikte Aralık bilgilerini değiş tokuş etmez.
 
 ODBC tabanlı sınıflarla çalışıyorsanız, işlevin ilk geçersiz kılmasını kullanın. İkinci geçersiz kılmayı DAO tabanlı sınıflarla kullanın.
 
@@ -528,7 +528,7 @@ Genel DDX_Field bir örnek için bkz. [DDX_FieldText](#ddx_fieldtext) . İçin y
 
 **Üstbilgi:** afxdao. h
 
-## <a name="ddx_fieldtext"></a><a name="ddx_fieldtext"></a>DDX_FieldText
+## <a name="ddx_fieldtext"></a><a name="ddx_fieldtext"></a> DDX_FieldText
 
 `DDX_FieldText`İşlevi **`int`** , bir **`short`** **`long`** [CString](../../atl-mfc-shared/reference/cstringt-class.md) **`float`** **`double`** düzenleme kutusu denetimi ve bir kayıt kümesinin alan veri üyeleri arasında,,, DWORD, CString,,, **bool**veya **byte** verilerinin aktarımını yönetir.
 

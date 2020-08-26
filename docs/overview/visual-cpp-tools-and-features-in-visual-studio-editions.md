@@ -4,18 +4,18 @@ ms.date: 05/21/2019
 helpviewer_keywords:
 - tools and platforms [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: 88eb66440df023254cb806c03a00aa2d71980305
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 00c096203ae056c96c87d67a491d3c84b3d1fb3a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366790"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845360"
 ---
 # <a name="c-tools-and-features-in-visual-studio-editions"></a>Visual Studio Sürümlerinde C++ Araçları ve Özellikleri
 
 ::: moniker range=">=vs-2019"
 
-Aşağıdaki C++ özellikleri Visual Studio 2019'da mevcuttur. Aksi belirtilmedikçe, tüm özellikler tüm sürümlerde mevcuttur: Visual Studio Community, Visual Studio Professional ve Visual Studio Enterprise. Bazı özellikler, Visual Studio Yükleyiciile yükleyebileceğiniz belirli iş yükleri veya isteğe bağlı bileşenler gerektirir.
+Aşağıdaki C++ özellikleri Visual Studio 2019 ' de mevcuttur. Aksi belirtilmedikçe tüm özellikler tüm sürümlerde kullanılabilir: Visual Studio Community, Visual Studio Professional ve Visual Studio Enterprise. Bazı özellikler, Visual Studio Yükleyicisi ile yükleyebileceğiniz belirli iş yükleri veya isteğe bağlı bileşenler gerektirir.
 
 ## <a name="platforms"></a>Platformlar
 
@@ -25,454 +25,452 @@ Aşağıdaki C++ özellikleri Visual Studio 2019'da mevcuttur. Aksi belirtilmedi
 - Android
 - iOS
 
-## <a name="compilers"></a>Derleyiciler
+## <a name="compilers"></a>Derleyicileri
 
-- X86, x64, ARM ve ARM64 için MSVC 32 bit derleyici
-- X86, x64, ARM ve ARM64 için MSVC 64 bit derleyici
+- X86, x64, ARM ve ARM64 için MSVC 32 bit derleyicisi
+- X86, x64, ARM ve ARM64 için MSVC 64 bit derleyicisi
 - ARM için GCC çapraz derleyicisi
 - Clang/LLVM
-  - Windows'da, Clang/LLVM 7.0, x86 veya x64 (yalnızca CMake desteği) hedefleme. Diğer Clang sürümleri işe yarayabilir, ancak resmi olarak desteklenmez.
-  - Linux'ta, dağıtım tarafından desteklenen herhangi bir Clang/LLVM kurulumu.
+  - Windows, Clang/LLVM 7,0, x86 veya x64 'u hedefliyor (yalnızca CMake desteği). Diğer Clang sürümleri çalışabilir ancak resmi olarak desteklenmeyebilir.
+  - Linux 'ta, disin tarafından desteklenen tüm Clang/LLVM yüklemeleri.
 
-## <a name="c-workloads"></a>C++ İş Yükleri
+## <a name="c-workloads"></a>C++ Iş yükleri
 
-Visual Studio, C++ geliştirme için aşağıdaki iş yüklerini içerir. .NET Masaüstü Geliştirme, Python Geliştirme, Azure Geliştirme, Visual Studio Uzantısı Geliştirme ve diğerleri gibi diğer iş yükleriyle birlikte bunların herhangi birini veya tümünü yükleyebilirsiniz.
+Visual Studio, C++ geliştirmesi için aşağıdaki iş yüklerini içerir. Bunlardan herhangi birini veya tümünü, .NET masaüstü geliştirme, Python geliştirme, Azure geliştirme, Visual Studio uzantısı geliştirme ve diğer iş yükleriyle birlikte yükleyebilirsiniz.
 
 ### <a name="desktop-development-with-c"></a>C++ ile masaüstü geliştirme
 
-Dahil:
+Verilen
 
-- C++ çekirdek masaüstü özellikleri
+- C++ temel masaüstü özellikleri
 
-İsteğe Bağlı Bileşenler:
+İsteğe bağlı bileşenler:
 
-- MSVC v142 - VS 2019 C++ x64/x86 yapı araçları (v14.21)
+- MSVC v142-VS 2019 C++ x64/x86 derleme araçları (v 14.21)
 - Windows 10 SDK (10.0.17763.0)
-- Tam Zamanında hata ayıklama
+- Tam zamanında hata ayıklayıcı
 - C++ profil oluşturma araçları
-- C++ CWindows için araçlar yapın
-- V142 yapı araçları için C++ ATL (x86 & x64)
-- Boost.Test için Test Adaptörü
-- Google Test için Test Adaptörü
+- Windows için C++ CMake araçları
+- V142 derleme araçları için C++ ATL (x86 & x64)
+- Boost. test için test bağdaştırıcısı
+- Google Test için Test Bağdaştırıcısı
 - Live Share
 - IntelliCode
-- IntelliTrace (Yalnızca Kurumsal)
-- V142 yapı araçları için C++ MFC (x86 & x64)
-- V142 yapı araçları için C++/CLI desteği (14,21)
-- V142 yapı araçları için C++ Modülleri (x64/x86 – deneysel)
+- IntelliTrace (yalnızca Kurumsal)
+- V142 derleme araçları için C++ MFC (x86 & x64)
+- V142 derleme araçları için C++/CLı desteği (14,21)
+- V142 derleme araçları için C++ modülleri (x64/x86 – deneysel)
 - Windows için Clang derleyicisi
-- IncrediBuild - Yapı İvme
+- IncrediBuild-derleme hızlandırma
 - Windows 10 SDK (10.0.17134.0)
 - Windows 10 SDK (10.0.16299.0)
-- MSVC v141 - VS 2017 C++ x64/x86 yapı araçları (v14.16)
-- MSVC v140 - VS 2015 C++ yapı araçları (v14.00)
+- MSVC v141-VS 2017 C++ x64/x86 derleme araçları (v 14.16)
+- MSVC v140-VS 2015 C++ derleme araçları (v 14.00)
 
 ### <a name="linux-development-with-c"></a>C++ ile Linux geliştirme
 
-Dahil:
+Verilen
 
 - C++ temel özellikleri
-- Windows Universal C Çalışma Zamanı
-- Linux Geliştirme için C++
+- Windows Universal C çalışma zamanı
+- Linux geliştirme için C++
 
-İsteğe Bağlı Bileşenler:
+İsteğe bağlı bileşenler:
 
 - Linux için C++ CMake araçları
-- Gömülü ve IoT geliştirme araçları
+- Katıştırılmış ve IoT geliştirme araçları
 
 ### <a name="universal-windows-platform-development"></a>Evrensel Windows Platformu geliştirme
 
-Dahil:
+Verilen
 
 - Visual Studio için Blend
-- .NET Yerli ve .NET Standardı
-- NuGet paket yöneticisi
+- .NET Native ve .NET Standard
+- NuGet Paket Yöneticisi
 - Evrensel Windows Platformu araçları
 - Windows 10 SDK (10.0.17763.0)
 
-İsteğe Bağlı Bileşenler:
+İsteğe bağlı bileşenler:
 
 - IntelliCode
-- IntelliTrace (Yalnızca Kurumsal)
-- USB Aygıt Bağlantısı
+- IntelliTrace (yalnızca Kurumsal)
+- USB cihaz bağlantısı
 - C++ (v142) Evrensel Windows Platformu araçları
 - C++ (v141) Evrensel Windows Platformu araçları
-- DirectX için grafik hata ayıklayıcı ve GPU profil oluşturucu
+- DirectX için grafik hata ayıklayıcı ve GPU Profiler
 - Windows 10 SDK (10.0.18362.0)
 - Windows 10 SDK (10.0.17134.0)
 - Windows 10 SDK (10.0.16299.0)
-- Mimarlık ve analiz araçları
+- Mimari ve analiz araçları
 
-### <a name="c-game-development"></a>C++ Oyun Geliştirme
+### <a name="c-game-development"></a>C++ oyun geliştirme
 
-Dahil:
+Verilen
 
 - C++ temel özellikleri
-- Windows Universal C Çalışma Zamanı
-- C++ 2019 Yeniden Dağıtılabilir Güncelleştirme
-- MSVC v142 - VS 2019 C++ x64/x86 yapı araçları (v14.21)
+- Windows Universal C çalışma zamanı
+- C++ 2019 yeniden dağıtılabilir güncelleştirmesi
+- MSVC v142-VS 2019 C++ x64/x86 derleme araçları (v 14.21)
 
-İsteğe Bağlı Bileşenler:
+İsteğe bağlı bileşenler:
 
 - C++ profil oluşturma araçları
 - Windows 10 SDK (10.0.17763.0)
 - IntelliCode
-- IntelliTrace (Yalnızca Kurumsal)
+- IntelliTrace (yalnızca Kurumsal)
 - Windows 10 SDK (10.0.17134.0)
 - Windows 10 SDK (10.0.16299.0)
-- IncrediBuild - Yapı İvme
+- IncrediBuild-derleme hızlandırma
 - Cocos
-- Unreal Motor yükleyici
-- Unreal motoru için Android IDE desteği
+- Unreal Engine yükleyicisi
+- Unreal Engine için Android IDE desteği
 
 ### <a name="mobile-development-with-c"></a>C++ ile mobil geliştirme
 
-Dahil:
+Verilen
 
 - C++ temel özellikleri
-- Android SDK kurulumu (API level 25) (C++ile Mobil geliştirme için yerel yükleme)
+- Android SDK kurulumu (API düzeyi 25) (C++ ile mobil geliştirme için yerel yükleme)
 
-İsteğe Bağlı Bileşenler:
+İsteğe bağlı bileşenler:
 
 - Android NDK (R16B)
-- Apaçi Karınca (1.9.3)
+- Apache Ant (1.9.3)
 - C++ Android geliştirme araçları
 - IntelliCode
-- Google Android Emülatörü (API Level 25) (yerel yükleme)
-- Intel Donanım Hızlandırılmış Yürütme Yöneticisi (HAXM) (yerel yükleme)
-- Android NDK (R16B) (32bit)
+- Google Android Emulator (API düzeyi 25) (yerel yüklemesi)
+- Intel Hardware Accelerated Execution Manager (HAXM) (yerel yüklemesi)
+- Android NDK (R16B) (32 bit)
 - C++ iOS geliştirme araçları
-- IncrediBuild - Yapı İvme
+- IncrediBuild-derleme hızlandırma
 
-## <a name="individual-components"></a>Tek tek bileşenler
+## <a name="individual-components"></a>Bireysel bileşenler
 
-Bu bileşenleri herhangi bir iş yükünden bağımsız olarak yükleyebilirsiniz.
+Bu bileşenleri herhangi bir iş yüküyle bağımsız olarak yükleyebilirsiniz.
 
 - JavaScript tanılama
 - Live Share
-- V142 yapı araçları için C++ Evrensel Windows Platformu çalışma süresi
-- ClickOnce Yayıncılık
-- Microsoft Visual Studio Yükleyici Projeleri
+- V142 derleme araçları için C++ Evrensel Windows Platformu çalışma zamanı
+- ClickOnce yayımlama
+- Microsoft Visual Studio Installer projeleri
 
-## <a name="libraries-and-headers"></a>Kütüphaneler ve Üstbilgi
+## <a name="libraries-and-headers"></a>Kitaplıklar ve üstbilgiler
 
-- Windows üstbilgi ve kitaplıklar
-- Windows Evrensel C Çalışma Süresi (CRT)
+- Windows üstbilgileri ve kitaplıkları
+- Windows Universal C çalışma zamanı (CRT)
 - C++ Standart Kitaplığı
 - ATL
 - MFC
 - .NET Framework sınıf kitaplığı
-- C++ Destek Kitaplığı için .NET
-- OpenMP 2.0
-- vcpkg kataloğu ile 900'den fazla açık kaynak kitaplık
+- .NET için C++ destek kitaplığı
+- OpenMP 2,0
+- Vcpkg Kataloğu aracılığıyla 900 üzerinde açık kaynak kitaplığı
 
-## <a name="build-and-project-systems"></a>Yapı ve Proje Sistemleri
+## <a name="build-and-project-systems"></a>Derleme ve proje sistemleri
 
 - CMake
-- Open Folder üzerinden herhangi bir yapı sistemi
-- Komut satırı oluşturur (msbuild.exe)
-- Yerel Çoklu hedefleme
-- Yönetilen Çoklu hedefleme
-- Paralel Yapılar
-- Özelleştirmeler Oluşturun
-- Özellik Sayfaları Genişletilebilirlik
+- Açık klasör aracılığıyla tüm derleme sistemleri
+- Komut satırı derlemeleri (msbuild.exe)
+- Yerel çoklu hedefleme
+- Yönetilen çoklu sürüm
+- Paralel derlemeler
+- Yapı özelleştirmeleri
+- Özellik sayfaları genişletilebilirliği
 
-## <a name="project-templates"></a>Proje Şablonları
+## <a name="project-templates"></a>Proje şablonları
 
 Aşağıdaki proje şablonları, yüklediğiniz iş yüklerine bağlı olarak kullanılabilir.
 
 Windows Masaüstü:
 
 - Boş Proje
-- Konsol Uygulaması
+- Konsol uygulaması
 - Windows Masaüstü Sihirbazı
-- Windows Masaüstü Uygulaması
-- Paylaşılan Öğeler Projesi
-- MFC Uygulaması
-- Dinamik Bağlantı Kitaplığı
-- CLR Boş Proje
-- CLR Konsol Uygulaması
-- Statik Kitaplık
-- CMake Projesi
-- ATL Projesi
-- MFC Dinamik Bağlantı Kitaplığı
-- CLR Sınıf Kütüphanesi
-- Makefile Projesi (Windows)
+- Windows masaüstü uygulaması
+- Paylaşılan öğeler projesi
+- MFC uygulaması
+- Dinamik bağlantı kitaplığı
+- CLR boş proje
+- CLR Konsol uygulaması
+- Statik kitaplık
+- CMake projesi
+- ATL projesi
+- MFC dinamik bağlantı kitaplığı
+- CLR sınıf kitaplığı
+- Makefile projesi (Windows)
 - MFC ActiveXControl
-- Yerli Birim Test Projesi
-- Google Testi
+- Yerel birim testi projesi
+- Google Test
 
 Evrensel Windows Platformu (C++/CX):
 
 - Boş Uygulama
-- DirectX 11 ve XAML Uygulaması
-- DirectX 11 Uygulaması
-- DirectX 12 Uygulaması
-- Ünite Test Uygulaması
+- DirectX 11 ve XAML uygulaması
+- DirectX 11 uygulaması
+- DirectX 12 uygulaması
+- Birim test uygulaması
 - DLL
 - Windows Çalışma Zamanı Bileşeni
-- Statik Kitaplık
-- Windows Uygulaması Paketleme Projesi
+- Statik kitaplık
+-  Windows Uygulaması Paketleme Projesi
 
 Linux:
 
-- Konsol Uygulaması (Linux)
-- Boş Proje (Linux)
-- Ahududu Pi Blink
-- Makefile Projesi (Linux)
+- Konsol uygulaması (Linux)
+- Boş proje (Linux)
+- Raspberry Pi yanıp sönme
+- Makefile projesi (Linux)
 
 ## <a name="tools"></a>Araçlar
 
-- Artımlı Bağlayıcı (Link.exe)
-- Microsoft Makefile Utility (Nmake.exe)
-- Lib Jeneratör (Lib.exe)
-- Windows Kaynak Derleyicisi (Rc.exe)
-- Windows Kaynak Nesne Dönüştürücü (CvtRes.exe)
-- Gözat Bilgi Bakım Programı (BscMake.exe)
-- C++ İsim Dekoratör (Undname.exe)
-- COFF/PE Damperli (Dumpbin.exe)
-- COFF/PE Editörü (Editbin.exe)
-- MASM (Ml.exe)
+- Artımlı bağlayıcı (Link.exe)
+- Microsoft makefile yardımcı programı (Nmake.exe)
+- LIB Generator (Lib.exe)
+- Windows Kaynak derleyicisi (Rc.exe)
+- Windows kaynaktan nesne dönüştürücüsüne (CvtRes.exe)
+- Tarama bilgileri bakım yardımcı programı (BscMake.exe)
+- C++ ad dekoratör (Undname.exe)
+- COFF/PE Dumper (Dumpbin.exe)
+- COFF/PE Düzenleyicisi (Editbin.exe)
+- MASA (Ml.exe)
 - Spy++
 - ErrLook
 - AtlTrace
 - Çıkarsama Kuralları
-- Profil Güdümlü Optimizasyonlar
+- Profil temelli Iyileştirmeler
 
-## <a name="debugging-features"></a>Hata Ayıklama Özellikleri
+## <a name="debugging-features"></a>Hata ayıklama özellikleri
 
-- Yerel Hata Ayıklama
-- natvis (yerli tip görselleştirme)
-- Grafik Hata Ayıklama
-- Yönetilen Hata Ayıklama
+- Yerel hata ayıklama
+- Natvis (yerel tür görselleştirme)
+- Grafik hata ayıklaması
+- Yönetilen hata ayıklama
 - GPU kullanımı
 - Bellek kullanımı
 - Uzaktan Hata Ayıklama
-- SQL Hata Ayıklama
-- Statik Kod Analizi
+- SQL hata ayıklaması
+- Statik kod analizi
 
-## <a name="designers-and-editors"></a>Tasarımcılar ve Editörler
+## <a name="designers-and-editors"></a>Tasarımcılar ve düzenleyiciler
 
 - XAML Tasarımcısı
-- CSS Stil Tasarımcısı / Editör
-- HTML Tasarımcısı/Editörü
+- CSS stil Tasarımcısı/Düzenleyicisi
+- HTML Tasarımcısı/Düzenleyicisi
 - XML Düzenleyicisi
 -  Kaynak Kod Düzenleyici
-- Verimlilik Özellikleri: Refactoring, EDG IntelliSense motoru, C++ Kod Biçimlendirme
+- Üretkenlik özellikleri: yeniden düzenleme, EDG IntelliSense altyapısı, C++ kod biçimlendirme
 - Windows Form Tasarımcısı
 - Veri Tasarımcısı
-- Yerel Kaynak Düzenleyicisi (.rc dosyaları)
+- Yerel kaynak Düzenleyicisi (. RC dosyaları)
 - Kaynak Düzenleyicileri
 - Model düzenleyicisi
 - Gölgelendirici tasarımcısı
-- Canlı Bağımlılık Doğrulama (Yalnızca Kurumsal)
-- Mimari Katman Diyagramları (Yalnızca Kurumsal)
-- Mimari Doğrulama (Yalnızca Kurumsal)
-- Kod Klon (Yalnızca Kurumsal)
+- Canlı bağımlılık doğrulaması (yalnızca Kurumsal)
+- Mimari katman diyagramları (yalnızca Kurumsal)
+- Mimari doğrulaması (yalnızca Kurumsal)
+- Kod kopyası (yalnızca Kurumsal)
 
-## <a name="data-features"></a>Veri Özellikleri
+## <a name="data-features"></a>Veri özellikleri
 
 - Veri Tasarımcısı
-- Veri Nesneleri
+- Veri nesneleri
 - Web Hizmetleri
 - Sunucu Gezgini
 
-## <a name="automation-and-extensibility"></a>Otomasyon ve Genişletilebilirlik
+## <a name="automation-and-extensibility"></a>Otomasyon ve genişletilebilirlik
 
-- Genişletilebilirlik Nesne Modelleri
-- Kod Modeli
+- Genişletilebilirlik nesne modelleri
+- Kod modeli
 - Proje Modeli
-- Kaynak Düzenleyici Modeli
-- Sihirbaz Modeli
-- Hata Ayıklama Nesne Modeli
+- Kaynak Düzenleyicisi modeli
+- Sihirbaz modeli
+- Hata ayıklayıcı nesne modeli
 
-## <a name="application-lifecycle-management-tools"></a>Uygulama Yaşam Döngüsü Yönetim Araçları
+## <a name="application-lifecycle-management-tools"></a>Uygulama yaşam döngüsü yönetimi araçları
 
-- Birim Testi (Microsoft Native C++, Boost.Test, Google Test, CTest)
-- Kod eşlemi ve bağımlılık grafikleri (Profesyonel ve Kurumsal)
-- Kod kapsamı (Yalnızca Kurumsal)
-- Manuel test (Yalnızca Kurumsal)
-- Araştırmacı test (Yalnızca Kurumsal)
-- Test case yönetimi (Yalnızca Kurumsal)
-- Kod eşlemi hata ayıklama tümleştirmesi (Yalnızca Kurumsal)
-- Canlı Birim Testi (Yalnızca Kurumsal)
-- IntelliTrace (Yalnızca Kurumsal)
-- IntelliTest (Yalnızca Kurumsal)
-- Microsoft Fakes (Unit Test Yalıtımı) (Yalnızca Kurumsal)
-- Kod Kapsamı (Yalnızca Kurumsal)
+- Birim testi (Microsoft yerel C++, Boost. test, Google Test, CTest)
+- Kod Haritası ve bağımlılık grafikleri (Professional ve Enterprise)
+- Kod kapsamı (yalnızca Kurumsal)
+- El ile test (yalnızca Kurumsal)
+- Keşif testi (yalnızca Kurumsal)
+- Test çalışması yönetimi (yalnızca Kurumsal)
+- Kod Haritası hata ayıklayıcısı tümleştirmesi (yalnızca Kurumsal)
+- Live Unit Testing (yalnızca Kurumsal)
+- IntelliTrace (yalnızca Kurumsal)
+- IntelliTest (yalnızca Kurumsal)
+- Microsoft Fakes (birim testi yalıtımı) (yalnızca Kurumsal)
+- Kod kapsamı (yalnızca Kurumsal)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'yu yükleme](/visualstudio/install/install-visual-studio)<br/>
-[Visual Studio'da Yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual Studio'da C++ proje türleri](../build/reference/visual-cpp-project-types.md)
+[Visual Studio 'daki yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>
+[Visual Studio 'da C++ proje türleri](../build/reference/visual-cpp-project-types.md)
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Aşağıdaki tablolar Visual Studio 2017'de kullanılabilen Visual C++ özelliklerini göstermektedir. Hücredeki X özelliğinin kullanılabilir olduğunu gösterir; boş bir hücre özelliğinin kullanılmadığını gösterir. Parantez içinde notlar bir özelliğin kullanılabilir olduğunu, ancak kısıtlandığını gösterir.
+Aşağıdaki tablolarda, Visual Studio 2017 ' de bulunan Visual C++ özellikleri gösterilmektedir. Hücredeki bir X, özelliğin kullanılabildiğini belirtir; boş bir hücre, özelliğin kullanılabilir olmadığını gösterir. Parantez içindeki notlar bir özelliğin kullanılabildiğini, ancak kısıtlı olduğunu gösterir.
 
 ## <a name="platforms"></a>Platformlar
 
-||||||
+|Platform|Windows 10 için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Community/Professional|Visual Studio Enterprise|
 |-|-|-|-|-|
-|Platform|Windows 10 için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Görsel Stüdyo Topluluğu/Profesyonel|Visual Studio Enterprise|
 |Windows Masaüstü||X|X|X|
-|Evrensel Windows Platformu ((telefon, tablet, PC, Xbox, IoT ve HoloLens))|X||X|X|
+|Evrensel Windows Platformu ((Phone, tablet, PC, Xbox, IoT ve HoloLens))|X||X|X|
 |Linux|X|X|
-|Microsoft Mağazası 8.1|||X|X|
+|Microsoft Store 8,1|||X|X|
 |Windows Phone 8.0|||X|X|
 |Android|||X|X|
 |iOS|||X|X|
 
-## <a name="compilers"></a>Derleyiciler
+## <a name="compilers"></a>Derleyicileri
 
-|Derleyici|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Derleyici|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|MSVC 32-bit X86 derleyicisi|X|X|X|X|
+|MSVC 32-bit x86 derleyicisi|X|X|X|X|
 |X86_arm çapraz derleyici|X||X|X|
-|MSVC 64-bit x64 derleyici|||X|X|
-|X86_ x64 çapraz derleyici|X|X|X|X|
+|MSVC 64-bit x64 derleyicisi|||X|X|
+|X86_ x64 çapraz derleyicisi|X|X|X|X|
 
-## <a name="libraries-and-headers"></a>Kütüphaneler ve Üstbilgi
+## <a name="libraries-and-headers"></a>Kitaplıklar ve üstbilgiler
 
-|Kitaplık veya Üstbilgi|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Kitaplık veya üst bilgi|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |-----------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|Windows üstbilgi ve kitaplıklar ve CRT kitaplığı|(X)|X|X|X|
+|Windows üstbilgileri ve kitaplıkları ve CRT kitaplığı|Sayı|X|X|X|
 |C++ Standart Kitaplığı|X|X|X|X|
 |ATL|||X|X|
 |MFC|||X|X|
 |.NET Framework sınıf kitaplığı||X|X|X|
-|C++ Destek Kitaplığı için .NET||X|X|X|
-|OpenMP 2.0|X|X|X|X|
+|.NET için C++ destek kitaplığı||X|X|X|
+|OpenMP 2,0|X|X|X|X|
 
-## <a name="project-templates"></a>Proje Şablonları
+## <a name="project-templates"></a>Proje şablonları
 
-|Şablon|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Şablon|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|UWP, Windows 8.1, Windows Phone 8.0 için XAML Şablonları|X||X|X|
+|UWP, Windows 8.1 Windows Phone 8,0 için XAML şablonları|X||X|X|
 |Direct3D Uygulaması|X||X|X|
-|DLL (Evrensel Pencereler)|X||X|X|
-|Statik Kitaplık (Evrensel Windows)|X||X|X|
+|DLL (Evrensel Windows)|X||X|X|
+|Statik kitaplık (Evrensel Windows)|X||X|X|
 |Windows Çalışma Zamanı Bileşeni|X||X|X|
-|Ünite Test Uygulaması (Evrensel Windows)|X||X|X|
-|ATL Projesi|||X|X|
-|Sınıf Kitaplığı (CLR)||X|X|X|
-|CLR Konsol Uygulaması||X|X|X|
-|CLR Boş Proje||X|X|X|
+|Birim testi uygulaması (Evrensel Windows)|X||X|X|
+|ATL projesi|||X|X|
+|Sınıf kitaplığı (CLR)||X|X|X|
+|CLR Konsol uygulaması||X|X|X|
+|CLR boş proje||X|X|X|
 |Özel Sihirbaz|||X|X|
 |Boş Proje||X|X|X|
-|Makefile Projesi||X|X|X|
-|MFC ActiveX Kontrolü|||X|X|
-|MFC Uygulaması|||X|X|
+|Makefile projesi||X|X|X|
+|MFC ActiveX denetimi|||X|X|
+|MFC uygulaması|||X|X|
 |MFC DLL|||X|X|
-|Test Projesi|X|X|X|X|
-|Win32 Konsol Uygulaması||X|X|X|
-|Win32 Projesi||X|X|X|
+|Test projesi|X|X|X|X|
+|Win32 konsol uygulaması||X|X|X|
+|Win32 projesi||X|X|X|
 
 ## <a name="tools"></a>Araçlar
 
-|Araç|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Araç|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |----------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|Artımlı Bağlayıcı (Link.exe)|X|X|X|X|
-|Program Bakım Programı (Nmake.exe)||X|X|X|
-|Lib Jeneratör (Lib.exe)|X|X|X|X|
-|Windows Kaynak Derleyicisi (Rc.exe)|X|X|X|X|
-|Windows Kaynak Nesne Dönüştürücü (CvtRes.exe)||X|X|X|
-|Gözat Bilgi Bakım Programı (BscMake.exe)|X|X|X|X|
-|C++ İsim Dekoratör (Undname.exe)|X|X|X|X|
-|COFF/PE Damperli (Dumpbin.exe)|X|X|X|X|
-|COFF/PE Editörü (Editbin.exe)|X|X|X|X|
-|MASM (Ml.exe)|||X|X|
+|Artımlı bağlayıcı (Link.exe)|X|X|X|X|
+|Program bakım yardımcı programı (Nmake.exe)||X|X|X|
+|LIB Generator (Lib.exe)|X|X|X|X|
+|Windows Kaynak derleyicisi (Rc.exe)|X|X|X|X|
+|Windows kaynaktan nesne dönüştürücüsüne (CvtRes.exe)||X|X|X|
+|Tarama bilgileri bakım yardımcı programı (BscMake.exe)|X|X|X|X|
+|C++ ad dekoratör (Undname.exe)|X|X|X|X|
+|COFF/PE Dumper (Dumpbin.exe)|X|X|X|X|
+|COFF/PE Düzenleyicisi (Editbin.exe)|X|X|X|X|
+|MASA (Ml.exe)|||X|X|
 |Spy++|||X|X|
 |ErrLook|||X|X|
 |AtlTrace|||X|X|
 |Devenv.com|||X|X|
 |Çıkarsama Kuralları|||X|X|
-|VCBuild .vcproj projelerini MSBuild'e yükseltin (VCUpgrade.exe)|X|X|X|X|
-|Profil Güdümlü Optimizasyonlar|||X|X|
+|VCBuild. vcproj projelerini MSBuild 'e yükselt (VCUpgrade.exe)|X|X|X|X|
+|Profil temelli Iyileştirmeler|||X|X|
 
-## <a name="debugging-features"></a>Hata Ayıklama Özellikleri
+## <a name="debugging-features"></a>Hata ayıklama özellikleri
 
-|Hata Ayıklama Özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Hata ayıklama özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |-----------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|Yerel Hata Ayıklama|X|X|X|X|
-|natvis (yerli tip görselleştirme)|X|X|X|X|
-|Grafik Hata Ayıklama|X||X|X|
-|Yönetilen Hata Ayıklama||X|X|X|
+|Yerel hata ayıklama|X|X|X|X|
+|Natvis (yerel tür görselleştirme)|X|X|X|X|
+|Grafik hata ayıklaması|X||X|X|
+|Yönetilen hata ayıklama||X|X|X|
 |GPU kullanımı|X||X|X|
 |Bellek kullanımı|X||X|X|
 |Uzaktan Hata Ayıklama|X|X|X|X|
-|SQL Hata Ayıklama|||X|X|
-|Statik Kod Analizi|Sınırlı|Sınırlı|X|X|
+|SQL hata ayıklaması|||X|X|
+|Statik kod analizi|Sınırlı|Sınırlı|X|X|
 
-## <a name="designers-and-editors"></a>Tasarımcılar ve Editörler
+## <a name="designers-and-editors"></a>Tasarımcılar ve düzenleyiciler
 
-|Tasarımcı veya Editör|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Tasarımcı veya düzenleyici|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |------------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
 |XAML Tasarımcısı|X||X|X|
-|CSS Stil Tasarımcısı / Editör|X|X|X|X|
-|HTML Tasarımcısı/Editörü|X|X|X|X|
+|CSS stil Tasarımcısı/Düzenleyicisi|X|X|X|X|
+|HTML Tasarımcısı/Düzenleyicisi|X|X|X|X|
 |XML Düzenleyicisi|X|X|X|X|
 | Kaynak Kod Düzenleyici|X|X|X|X|
-|Verimlilik Özellikleri: Refactoring, IntelliSense, C++ Kod Biçimlendirme|X|X|X|X|
+|Üretkenlik özellikleri: yeniden düzenleme, IntelliSense, C++ kod biçimlendirme|X|X|X|X|
 |Windows Form Tasarımcısı||X|X|X|
 |Veri Tasarımcısı|||X|X|
-|Yerel Kaynak Düzenleyicisi (.rc dosyaları)|||X|X|
+|Yerel kaynak Düzenleyicisi (. RC dosyaları)|||X|X|
 |Kaynak Düzenleyicileri|X|X|X|X|
 |Model düzenleyicisi|X||X|X|
 |Gölgelendirici tasarımcısı|X||X|X|
 
-## <a name="data-features"></a>Veri Özellikleri
+## <a name="data-features"></a>Veri özellikleri
 
-|Veri Özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Veri özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
 |Veri Tasarımcısı|||X|X|
-|Veri Nesneleri|||X|X|
+|Veri nesneleri|||X|X|
 |Web Hizmetleri|||X|X|
 |Sunucu Gezgini|||X|X|
 
-## <a name="build-and-project-systems"></a>Yapı ve Proje Sistemleri
+## <a name="build-and-project-systems"></a>Derleme ve proje sistemleri
 
-|Yapı veya Proje Özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Yapı veya proje özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |------------------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|Komut satırı oluşturur (msbuild.exe)|X|X|X|X|
-|Yerel Çoklu hedefleme||X|X|X|
-|Yönetilen Çoklu hedefleme||X|X|X|
-|Paralel Yapılar|X|X|X|X|
-|Özelleştirmeler Oluşturun|X|X|X|X|
-|Özellik Sayfaları Genişletilebilirlik|X|X|X|X|
+|Komut satırı derlemeleri (msbuild.exe)|X|X|X|X|
+|Yerel çoklu hedefleme||X|X|X|
+|Yönetilen çoklu sürüm||X|X|X|
+|Paralel derlemeler|X|X|X|X|
+|Yapı özelleştirmeleri|X|X|X|X|
+|Özellik sayfaları genişletilebilirliği|X|X|X|X|
 
-## <a name="automation-and-extensibility"></a>Otomasyon ve Genişletilebilirlik
+## <a name="automation-and-extensibility"></a>Otomasyon ve genişletilebilirlik
 
-|Otomasyon ve Genişletilebilirlik|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
+|Otomasyon ve genişletilebilirlik|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |----------------------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
-|Genişletilebilirlik Nesne Modelleri|||X|X|
-|Kod Modeli|||X|X|
+|Genişletilebilirlik nesne modelleri|||X|X|
+|Kod modeli|||X|X|
 |Proje Modeli|||X|X|
-|Kaynak Düzenleyici Modeli|||X|X|
-|Sihirbaz Modeli|||X|X|
-|Hata Ayıklama Nesne Modeli|||X|X|
+|Kaynak Düzenleyicisi modeli|||X|X|
+|Sihirbaz modeli|||X|X|
+|Hata ayıklayıcı nesne modeli|||X|X|
 
-## <a name="application-lifecycle-management-tools"></a>Uygulama Yaşam Döngüsü Yönetim Araçları
+## <a name="application-lifecycle-management-tools"></a>Uygulama yaşam döngüsü yönetimi araçları
 
-||||||
+|Araç|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional/topluluk|Visual Studio Enterprise|
 |-|-|-|-|-|
-|Araç|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Topluluk|Visual Studio Enterprise|
-|Ünite Testi (yerel çerçeve)|X|X|X|X|
-|Birim Testi (yönetilen çerçeve)||X|X|X|
+|Birim testi (yerel çerçeve)|X|X|X|X|
+|Birim testi (yönetilen çerçeve)||X|X|X|
 |Kod kapsamı||||X|
-|Manuel test||||X|
+|El ile test||||X|
 |Keşif testi||||X|
 |Test çalıştırması yönetimi||||X|
-|Kod eşlemi ve bağımlılık grafikleri|||salt okunur|X|
-|Kod eşlemi hata ayıklama||||X|
+|Kod Haritası ve bağımlılık grafikleri|||salt okunur|X|
+|Kod Haritası hata ayıklaması||||X|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Visual Studio'yu yükleme](/visualstudio/install/install-visual-studio)<br/>
-[Visual Studio'da Yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual Studio'da C++ proje türleri](../build/reference/visual-cpp-project-types.md)
+[Visual Studio 'daki yenilikler](/visualstudio/ide/whats-new-in-visual-studio)<br/>
+[Visual Studio 'da C++ proje türleri](../build/reference/visual-cpp-project-types.md)
 
 ::: moniker-end

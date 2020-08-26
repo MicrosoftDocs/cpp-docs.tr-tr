@@ -12,12 +12,12 @@ helpviewer_keywords:
 - dialog box controls, variable types
 - variables, dialog box control member variables
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
-ms.openlocfilehash: a8f693345fcb265cf8e97af342c6e0cd539c9001
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e7fd5bd93198c494f18fe18755d13d40fe7fbf96
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216004"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845139"
 ---
 # <a name="add-a-member-variable"></a>Üye değişkeni ekleme
 
@@ -70,7 +70,7 @@ Bu sihirbaz başlık dosyasına bir üye değişkeni bildirimi ekler. Seçenekle
 
   - [genel](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
-  - [özelleştirme](../cpp/private-cpp.md)
+  - [private](../cpp/private-cpp.md)
 
 - **Değişken türü**
 
@@ -80,13 +80,15 @@ Bu sihirbaz başlık dosyasına bir üye değişkeni bildirimi ekler. Seçenekle
 
     Türler hakkında daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
 
-    |||
-    |-|-|
-    |**`char`**|**`short`**|
-    |**`double`**|**`unsigned char`**|
-    |**`float`**|**`unsigned int`**|
-    |**`int`**|**`unsigned long`**|
-    |**`long`**||
+    - **`char`**
+    - **`double`**
+    - **`float`**
+    - **`int`**
+    - **`long`**
+    - **`short`**
+    - **`unsigned char`**
+    - **`unsigned int`**
+    - **`unsigned long`**
 
   - İletişim kutusu denetimi için bir üye değişkeni ekliyorsanız, bu kutu bir denetim veya değer için döndürülen nesne türü ile doldurulur. **Denetim**' i seçerseniz, **DEĞIŞKEN türü** **denetim kimliği** kutusunda seçtiğiniz denetimin temel sınıfını belirtir. İletişim kutusu denetimi bir değer tutabilir ve **değer**' i seçerseniz, **değişken türü** , denetimin tutatabilecek değer için uygun türü belirtir. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
 
@@ -149,21 +151,21 @@ Aşağıdaki tabloda, MFC ve [iletişim kutusu düzenleyicisinde](../windows/dia
 
 |Denetim|Denetim türü|Denetim değişkeni türü|Değer değişken türü|Min/Max değerleri (yalnızca değer türü)|
 |-------------|------------------|---------------------------|-------------------------|-----------------------------------------|
-|Animasyon denetimi|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Seçim yalnızca denetim|Yok|
-|Düğme|Bu|[CButton](../mfc/reference/cbutton-class.md)|Seçim yalnızca denetim|Yok|
+|Animasyon denetimi|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Seçim yalnızca denetim|YOK|
+|Düğme|Bu|[CButton](../mfc/reference/cbutton-class.md)|Seçim yalnızca denetim|YOK|
 |Onay kutusu|DENETLEMEZ|[CButton](../mfc/reference/cbutton-class.md)|`BOOL`|En düşük değer/en büyük değer|
 |Açılır kutu|Öğesı|[CComboBox](../mfc/reference/ccombobox-class.md)|[CString](../atl-mfc-shared/reference/cstringt-class.md)|En fazla karakter|
 |Tarih saat seçici denetimi|SysDateTimePick32|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|[CTime](../atl-mfc-shared/reference/ctime-class.md)|En düşük değer/en büyük değer|
-|Düzenleme kutusu|DÜZENLE|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, Long, DWORD, float, Double, BYTE, Short, BOOL, `COleDateTime` veya`COleCurrency`|En küçük değer/en büyük değer; bazı destek en fazla karakter|
-|Kısayol denetimi|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Düzenleme kutusu|DÜZENLE|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, Long, DWORD, float, Double, BYTE, Short, BOOL, `COleDateTime` veya `COleCurrency`|En küçük değer/en büyük değer; bazı destek en fazla karakter|
+|Kısayol denetimi|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|Seçim yalnızca denetim|YOK|
 |Liste kutusu|KUTUSUNA|[CListBox](../mfc/reference/clistbox-class.md)|`CString`|En fazla karakter|
-|Liste denetimi|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Liste denetimi|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|Seçim yalnızca denetim|YOK|
 |Aylık Takvim denetimi|SysMonthCal32|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|`CTime`|En düşük değer/en büyük değer|
-|İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Seçim yalnızca denetim|Yok|
+|İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Seçim yalnızca denetim|YOK|
 |Zengin düzenleme 2 denetimi|RichEdit20A|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|`CString`|En fazla karakter|
 |Zengin düzenleme denetimi|RICHEDIT|`CRichEditCtrl`|`CString`|En fazla karakter|
 |Kaydırma çubuğu (dikey veya yatay|KAYDıRMA çubuğu|[CScrollBar](../mfc/reference/cscrollbar-class.md)|**`int`**|En düşük değer/en büyük değer|
 |Kaydırıcı denetimi|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|**`int`**|En düşük değer/en büyük değer|
-|Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|Seçim yalnızca denetim|Yok|
-|Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Seçim yalnızca denetim|Yok|
-|Ağaç denetimi|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|Seçim yalnızca denetim|Yok|
+|Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|Seçim yalnızca denetim|YOK|
+|Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Seçim yalnızca denetim|YOK|
+|Ağaç denetimi|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|Seçim yalnızca denetim|YOK|

@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - string attribute
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
-ms.openlocfilehash: 68708cce2e167c6f40b461d52861fe4ed82be867
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 119e0aa60d123324c60825a9418e0b8c93696c5f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213820"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845386"
 ---
 # <a name="string-c"></a>string (C++)
 
 Tek boyutlu **`char`** , **`wchar_t`** , `byte` (veya eşdeğer) dizinin ya da bu tür bir dizi işaretçisinin bir dize olarak değerlendirilmesinin gerektiği anlamına gelir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [string]
@@ -46,14 +46,12 @@ __interface IFireTabCtrl
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Array, Interface parametresi, Interface yöntemi için dizi veya işaretçi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

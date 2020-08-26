@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: 59ff0d1a9538bd43cc2164306e6a37a3b307067d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8ba03e5ab5dd90a6f29e08b01576803a00f0bd24
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212273"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845490"
 ---
 # <a name="ltiosgt"></a>&lt;işlemine&gt;
 
@@ -20,7 +20,7 @@ Birden çok tür ve temel olarak Iostreams işleminin işlevlerini tanımlar. Bu
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<ios>
+**Üst bilgi**: \<ios>
 
 **Ad alanı:** std
 
@@ -43,7 +43,7 @@ istr>> noskipws;
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işlemine](../standard-library/ios-typedefs.md#ios)|Eski ıostream kitaplığından iOS sınıfını destekler.|
 |[streamoff](../standard-library/ios-typedefs.md#streamoff)|İç işlemleri destekler.|
@@ -54,7 +54,7 @@ istr>> noskipws;
 
 ### <a name="manipulators"></a>Manipülatörleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[boolalpha](../standard-library/ios-functions.md#boolalpha)|[Bool](../cpp/bool-cpp.md) türündeki değişkenlerin **`true`** akışta veya akışta göründüğünü belirtir **`false`** .|
 |[dec](../standard-library/ios-functions.md#dec)|Tamsayı değişkenlerinin taban 10 gösteriminde göründüğünü belirtir.|
@@ -83,7 +83,7 @@ istr>> noskipws;
 
 ### <a name="error-reporting"></a>Hata Raporlama
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[io_errc](../standard-library/ios-functions.md#io_errc)||
 |[is_error_code_enum](../standard-library/ios-functions.md#is_error_code_enum)||
@@ -93,7 +93,7 @@ istr>> noskipws;
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|Sınıf şablonu, şablon parametrelerine bağlı olan giriş akışları (sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (sınıf şablonu [basic_ostream](../standard-library/basic-ostream-class.md)) için ortak depolama ve üye işlevlerini açıklar.|
 |[fpos](../standard-library/fpos-class.md)|Sınıf şablonu, herhangi bir akışta rastgele bir dosya konumu göstergesini geri yüklemek için gereken tüm bilgileri depolayabilen bir nesneyi tanımlar.|

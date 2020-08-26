@@ -4,12 +4,12 @@ ms.date: 09/07/2019
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: ef8ee6b87bdeb9d5da9f34d303e0c0fda89443c5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aa11dbe1a0a3dc45893d1a05cda0ef1addb9e665
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222803"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837352"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -29,7 +29,7 @@ MFC, olay eşlemelerini desteklemek için aşağıdaki makroları sağlar:
 
 ### <a name="event-map-declaration-and-demarcation"></a>Olay eşleme bildirimi ve demarcation
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[DECLARE_EVENT_MAP](#declare_event_map)|Olay eşlemesinin olayları olay tetikleme işlevlerine eşlemek için bir sınıfta kullanılacağını bildirir (sınıf bildiriminde kullanılması gerekir).|
 |[BEGIN_EVENT_MAP](#begin_event_map)|Bir olay eşlemesinin tanımını başlatır (sınıf uygulamasında kullanılması gerekir).|
@@ -37,19 +37,19 @@ MFC, olay eşlemelerini desteklemek için aşağıdaki makroları sağlar:
 
 ### <a name="event-mapping-macros"></a>Olay eşleme makroları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[EVENT_CUSTOM](#event_custom)|Hangi olay tetikleme işlevinin belirtilen olayı tetikleyemedi belirtir.|
 |[EVENT_CUSTOM_ID](#event_custom_id)|Belirtilen bir dağıtım KIMLIĞIYLE, belirtilen olayı hangi olay tetikleme işlevinin tetiklendirilecektir.|
 
 ### <a name="message-mapping-macros"></a>İleti eşleme makroları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[ON_OLEVERB](#on_oleverb)|OLE denetimi tarafından işlenen özel bir fiil gösterir.|
 |[ON_STDOLEVERB](#on_stdoleverb)|OLE denetiminin standart bir fiil eşlemesini geçersiz kılar.|
 
-## <a name="declare_event_map"></a><a name="declare_event_map"></a>DECLARE_EVENT_MAP
+## <a name="declare_event_map"></a><a name="declare_event_map"></a> DECLARE_EVENT_MAP
 
 `COleControl`Programınızdaki her türetilmiş sınıf, denetiminizin tetikleneceği olayları belirtmek için bir olay eşlemesi sağlayabilir.
 
@@ -67,7 +67,7 @@ Olay haritaları hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: ola
 
 **Başlık** afxctl. h
 
-## <a name="begin_event_map"></a><a name="begin_event_map"></a>BEGIN_EVENT_MAP
+## <a name="begin_event_map"></a><a name="begin_event_map"></a> BEGIN_EVENT_MAP
 
 Olay haritaınızın tanımını başlatır.
 
@@ -93,7 +93,7 @@ Olay haritaları ve BEGIN_EVENT_MAP makrosu hakkında daha fazla bilgi için, [A
 
 **Başlık** afxctl. h
 
-## <a name="end_event_map"></a><a name="end_event_map"></a>END_EVENT_MAP
+## <a name="end_event_map"></a><a name="end_event_map"></a> END_EVENT_MAP
 
 Olay haritaınızın tanımını sonlandırmak için END_EVENT_MAP makrosunu kullanın.
 
@@ -105,7 +105,7 @@ END_EVENT_MAP()
 
 **Başlık** afxctl. h
 
-## <a name="event_custom"></a><a name="event_custom"></a>EVENT_CUSTOM
+## <a name="event_custom"></a><a name="event_custom"></a> EVENT_CUSTOM
 
 Özel bir olay için bir olay eşleme girişi tanımlar.
 
@@ -171,7 +171,7 @@ bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından `IFontDis
 
 **Başlık** afxctl. h
 
-## <a name="event_custom_id"></a><a name="event_custom_id"></a>EVENT_CUSTOM_ID
+## <a name="event_custom_id"></a><a name="event_custom_id"></a> EVENT_CUSTOM_ID
 
 *DISPID*tarafından BELIRTILEN dağıtım kimliğine ait özel bir olay için olay tetikleme işlevini tanımlar.
 
@@ -211,7 +211,7 @@ Sabitlerin listesi için `VTS_` bkz. [event_custom](#event_custom).
 
 **Başlık** afxctl. h
 
-## <a name="on_oleverb"></a><a name="on_oleverb"></a>ON_OLEVERB
+## <a name="on_oleverb"></a><a name="on_oleverb"></a> ON_OLEVERB
 
 Bu makro özel bir fiili, denetiminizin belirli bir üye işlevine eşleyen bir ileti eşleme girişi tanımlar.
 
@@ -246,7 +246,7 @@ BOOL memberFxn(
 
 **Başlık** afxole. h
 
-## <a name="on_stdoleverb"></a><a name="on_stdoleverb"></a>ON_STDOLEVERB
+## <a name="on_stdoleverb"></a><a name="on_stdoleverb"></a> ON_STDOLEVERB
 
 Standart fiilin varsayılan davranışını geçersiz kılmak için bu makroyu kullanın.
 

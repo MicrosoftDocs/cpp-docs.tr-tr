@@ -18,18 +18,18 @@ helpviewer_keywords:
 - std::reference_wrapper [C++], type
 - std::reference_wrapper [C++], get
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
-ms.openlocfilehash: 83b68d1fdf89519df0a26acd478467fddec8b662
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 623e1480bdec85120e504c8dc71b28d017c8872a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240269"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845074"
 ---
-# <a name="referencewrapper-class"></a>reference_wrapper Sınıfı
+# <a name="reference_wrapper-class"></a>reference_wrapper Sınıfı
 
-Bir başvuru sarmalar.
+Bir başvuruyu sarmalanmış.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Ty>
@@ -49,43 +49,43 @@ class reference_wrapper
 
 ## <a name="remarks"></a>Açıklamalar
 
-A `reference_wrapper<Ty>` atmamalıdır kopyalama ve kopyalama atanabilir sarmalayıcı geçici bir nesne veya bir işlev türü başvuru `Ty`ve bu türdeki bir nesneye işaret eden bir işaretçi tutar. A `reference_wrapper` depolama başvurularının standart kapsayıcıları ve nesneleri geçirmek için başvuru tarafından kullanılabilir `std::bind`.
+, Bir `reference_wrapper<Ty>` kopya oluşturulabilir ve bir nesne ya da türü bir işlev başvurusu etrafında atanabilir sarmalayıcı kopyalayabilir ve `Ty` Bu türün bir nesnesine işaret eden bir işaretçi tutar. Bir `reference_wrapper` , başvuruları standart kapsayıcılarda depolamak ve başvuruya göre nesneleri geçirmek için kullanılabilir `std::bind` .
 
-Türü `Ty` bir nesne türü veya bir işlev türü veya derleme zamanında bir statik onay başarısız olması gerekir.
+Tür, `Ty` bir nesne türü veya işlev türü olmalıdır ya da derleme zamanında statik bir onaylama başarısız olur.
 
-Yardımcı işlevleri [std::ref](functional-functions.md#ref) ve [std::cref](functional-functions.md#cref) oluşturmak için kullanılan `reference_wrapper` nesneleri.
+[Std:: ref](functional-functions.md#ref) ve [std:: cref](functional-functions.md#cref) yardımcı işlevleri nesne oluşturmak için kullanılabilir `reference_wrapper` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[reference_wrapper](#reference_wrapper)|Oluşturur bir `reference_wrapper`.|
+|[reference_wrapper](#reference_wrapper)|Bir oluşturur `reference_wrapper` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[result_type](#result_type)|Sarmalanan başvuru zayıf sonuç türü.|
-|[type](#type)|Sarmalanan bir başvuru türü.|
+|[result_type](#result_type)|Sarmalanmış başvurunun zayıf sonuç türü.|
+|[türüyle](#type)|Sarmalanan başvurunun türü.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[get](#get)|Sarmalanan bir başvuru edinir.|
+|[Al](#get)|Sarmalanan başvuruyu edinir.|
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[operator Ty&amp;](#op_ty_amp)|Sarmalanan başvurusu bir işaretçi alır.|
-|[operator()](#op_call)|Sarmalanan başvuru çağırır.|
+|[işleç Ty&amp;](#op_ty_amp)|Kaydırılan başvuruya yönelik bir işaretçi alır.|
+|[operator ()](#op_call)|Sarmalanan başvuruyu çağırır.|
 
-## <a name="get"></a> Al
+## <a name="get"></a><a name="get"></a> Al
 
-Sarmalanan bir başvuru edinir.
+Sarmalanan başvuruyu edinir.
 
 ```cpp
 Ty& get() const noexcept;
@@ -93,7 +93,7 @@ Ty& get() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sarmalanmış bir başvuru döndürür.
+Üye işlevi Sarmalanan başvuruyu döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -122,9 +122,9 @@ rwi = 1
 i = -1
 ```
 
-## <a name="op_ty_amp"></a> operator Ty&amp;
+## <a name="operator-tyamp"></a><a name="op_ty_amp"></a> işleç Ty&amp;
 
-Sarmalanan referansını alır.
+Sarmalanan başvuruyu alır.
 
 ```cpp
 operator Ty&() const noexcept;
@@ -132,7 +132,7 @@ operator Ty&() const noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci döndürür `*ptr`.
+Üye işleci döndürür `*ptr` .
 
 ### <a name="example"></a>Örnek
 
@@ -158,9 +158,9 @@ i = 1
 (int)rwi = 1
 ```
 
-## <a name="op_call"></a> operator()
+## <a name="operator"></a><a name="op_call"></a> operator ()
 
-Sarmalanan başvuru çağırır.
+Sarmalanan başvuruyu çağırır.
 
 ```cpp
 template <class... Types>
@@ -169,15 +169,15 @@ auto operator()(Types&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-*Türleri*\
-Bağımsız değişken listesi türleri.
+*Türü*\
+Bağımsız değişken liste türleri.
 
-*bağımsız değişken*\
+*args*\
 Bağımsız değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon üye `operator()` döndürür `std::invoke(get(), std::forward<Types>(args)...)`.
+Şablon üyesi `operator()` döndürür `std::invoke(get(), std::forward<Types>(args)...)` .
 
 ### <a name="example"></a>Örnek
 
@@ -204,9 +204,9 @@ int main() {
 rwi(3) = -3
 ```
 
-## <a name="reference_wrapper"></a> reference_wrapper
+## <a name="reference_wrapper"></a><a name="reference_wrapper"></a> reference_wrapper
 
-Oluşturur bir `reference_wrapper`.
+Bir oluşturur `reference_wrapper` .
 
 ```cpp
 reference_wrapper(Ty& val) noexcept;
@@ -214,15 +214,15 @@ reference_wrapper(Ty& val) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*\
-Kaydırmak için türü.
+*Kalite*\
+Sarılacağı tür.
 
-*VAL*\
-Sarım değeri.
+*Acil*\
+Sarılacağı değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu depolanan değeri ayarlar `ptr` için `&val`.
+Oluşturucu, saklı değerini olarak ayarlar `ptr` `&val` .
 
 ### <a name="example"></a>Örnek
 
@@ -255,9 +255,9 @@ rwi = 1
 i = -1
 ```
 
-## <a name="result_type"></a> result_type
+## <a name="result_type"></a><a name="result_type"></a> result_type
 
-Sarmalanan başvuru zayıf sonuç türü.
+Sarmalanmış başvurunun zayıf sonuç türü.
 
 ```cpp
 typedef R result_type;
@@ -265,7 +265,7 @@ typedef R result_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`result_type` Typedef olan Sarmalanan işlevinin zayıf sonucu türe ilişkin bir eşanlam. Bu tür tanımı, yalnızca işlev türleri için anlamlıdır.
+`result_type`Typedef, Sarmalanan bir işlevin zayıf sonuç türü için bir eş anladır. Bu typedef yalnızca işlev türleri için anlamlıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -294,9 +294,9 @@ int main() {
 val = -3
 ```
 
-## <a name="type"></a> Türü
+## <a name="type"></a><a name="type"></a> türüyle
 
-Sarmalanan bir başvuru türü.
+Sarmalanan başvurunun türü.
 
 ```cpp
 typedef Ty type;
@@ -304,7 +304,7 @@ typedef Ty type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Typedef şablon bağımsız değişkeni eşanlamlıdır `Ty`.
+TypeDef, şablon bağımsız değişkeninin eşanlamlısıdır `Ty` .
 
 ### <a name="example"></a>Örnek
 

@@ -4,12 +4,12 @@ ms.date: 07/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: b132400485c041b96e81736bcda04922b2cda88c
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: 2f2b11d060b2f02c5fc5874ef135e1ee3550b840
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389824"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845165"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 
@@ -33,7 +33,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
    - Özelleştirmek istediğiniz kural kümesini seçin.
 
-     \-veya
+     \- veya
 
    - **\<Browse...>** Listede olmayan var olan bir kural kümesini belirtmeyi seçin.
 
@@ -50,7 +50,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
    - Özelleştirmek istediğiniz kural kümesini seçin.
 
-     \-veya
+     \- veya
 
    - **\<Browse...>** Listede olmayan var olan bir kural kümesini belirtmeyi seçin.
 
@@ -114,7 +114,7 @@ Aşağıdaki örnek, başlangıç noktası olarak kullanabileceğiniz temel bir 
 
 ## <a name="ruleset-schema"></a>RuleSet şeması
 
-Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar. RuleSet şeması içinde depolanır *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`* . Kendi kural kümelerinizi programlama yoluyla yazmak veya özel RuleSets 'in doğru biçime bağlı olup olmadığını doğrulamak için bunu kullanabilirsiniz. Daha fazla bilgi için bkz. [nasıl yapılır: xsd şemasını temel alan XML belgesi oluşturma](https://docs.microsoft.com/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema?view=vs-2019).
+Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar. RuleSet şeması içinde depolanır *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Schemas\RuleSet.xsd`* . Kendi kural kümelerinizi programlama yoluyla yazmak veya özel RuleSets 'in doğru biçime bağlı olup olmadığını doğrulamak için bunu kullanabilirsiniz. Daha fazla bilgi için bkz. [nasıl yapılır: xsd şemasını temel alan XML belgesi oluşturma](/visualstudio/xml-tools/how-to-create-an-xml-document-based-on-an-xsd-schema).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -239,7 +239,7 @@ Aşağıdaki RuleSet şeması bir RuleSet dosyasının XML şemasını açıklar
 
 Şema öğesi ayrıntıları:
 
-| Şema öğesi | Description |
+| Şema öğesi | Açıklama |
 |--------------------|--------------|
 | `TLocalization` | RuleSet dosyasının adı, RuleSet dosyasının açıklaması, yerelleştirilmiş kaynağı içeren kaynak derlemesinin adı ve yerelleştirilmiş kaynağın temel adı dahil olmak üzere yerelleştirme bilgileri |
 | `TRuleHintPaths` | Kural kümesi dosyalarını aramak için ipuçları olarak kullanılan dosya yolları |

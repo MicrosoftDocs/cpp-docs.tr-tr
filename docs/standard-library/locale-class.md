@@ -21,18 +21,18 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 771a2973e0254194d99ddfd46ca7df7d6cc8e5a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 94063b2c66d201da3b0e822a7118b3e48020ed3c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224831"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833263"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
 Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class locale;
@@ -159,7 +159,7 @@ Sonraki eklemeler için sayısal biçimlendirme kuralları, `cout` genel yerel a
 
 ### <a name="static-functions"></a>Statik işlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[klasik](#classic)|Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.|
 |[Genel](#global)|Varsayılan programın yerel ayarını sıfırlar.|
@@ -186,7 +186,7 @@ Sonraki eklemeler için sayısal biçimlendirme kuralları, `cout` genel yerel a
 
 **Ad alanı:** std
 
-## <a name="localecategory"></a><a name="category"></a>locale:: category
+## <a name="localecategory"></a><a name="category"></a> locale:: category
 
 Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.
 
@@ -226,7 +226,7 @@ Diğer iki yararlı değer şunlardır:
 
 `OR`&#124; gibi, Bu sabitler ile kullanarak rastgele bir kategori grubunu temsil edebilirsiniz `monetary` `time` .
 
-## <a name="localeclassic"></a><a name="classic"></a>Yerel ayar:: klasik
+## <a name="localeclassic"></a><a name="classic"></a> Yerel ayar:: klasik
 
 Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.
 
@@ -281,7 +281,7 @@ The previous locale was classic.
 The current locale is not classic.
 ```
 
-## <a name="localecombine"></a><a name="combine"></a>locale:: birleştirin
+## <a name="localecombine"></a><a name="combine"></a> locale:: birleştirin
 
 Belirtilen yerel ayardaki bir modeli hedef yerel ayara ekler.
 
@@ -329,7 +329,7 @@ int main() {
 }
 ```
 
-## <a name="facet-class"></a><a name="facet_class"></a>model sınıfı
+## <a name="facet-class"></a><a name="facet_class"></a> model sınıfı
 
 Tüm yerel ayar modelleri için temel sınıf görevi gören sınıf.
 
@@ -346,11 +346,11 @@ private:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfının bir nesnesini kopyalayamaz veya atayamazsınız `facet` . `locale::facet`Temel sınıfın doğru nesnelerinden türemeyen ancak sınıftan türetilmiş nesneleri oluşturabilir ve yok edebilirsiniz. Genellikle, ' `_Myfac` `facet` `locale` de olduğu gibi, oluştururken türetilmiş bir nesne oluşturursunuz`locale loc(locale::classic(), new _Myfac);`
+Sınıfının bir nesnesini kopyalayamaz veya atayamazsınız `facet` . `locale::facet`Temel sınıfın doğru nesnelerinden türemeyen ancak sınıftan türetilmiş nesneleri oluşturabilir ve yok edebilirsiniz. Genellikle, ' `_Myfac` `facet` `locale` de olduğu gibi, oluştururken türetilmiş bir nesne oluşturursunuz `locale loc(locale::classic(), new _Myfac);`
 
 Bu gibi durumlarda, temel sınıf için Oluşturucu `facet` sıfır *başvuruları* bağımsız değişkenine sahip olmalıdır. Nesne artık gerekli olmadığında silinir, bu nedenle yalnızca nesne ömrü boyunca sorumluluk verdiğiniz nadir durumlarda sıfır olmayan *Başvurular* bağımsız değişkeni sağlarsınız.
 
-## <a name="localeglobal"></a><a name="global"></a>Yerel ayar:: genel
+## <a name="localeglobal"></a><a name="global"></a> Yerel ayar:: genel
 
 Programın varsayılan yerel ayarını sıfırlar. Bu çağrı hem C hem de C++ için genel yerel ayarı etkiler.
 
@@ -399,7 +399,7 @@ The current locale is: German_Germany.1252
 The previous locale was: C
 ```
 
-## <a name="id-class"></a><a name="id_class"></a>ID sınıfı
+## <a name="id-class"></a><a name="id_class"></a> ID sınıfı
 
 Üye sınıfı özellikleri, bir yerel ayardaki arama modelleri için bir dizin olarak kullanılan benzersiz bir kimlik sağlar.
 
@@ -416,7 +416,7 @@ class id
 
 Üye sınıfı, benzersiz bir yerel ayar modeli için gereken statik üye nesnesini açıklar. Sınıfının bir nesnesini kopyalayamaz veya atayamazsınız `id` .
 
-## <a name="localelocale"></a><a name="locale"></a>Yerel ayar:: locale
+## <a name="localelocale"></a><a name="locale"></a> Yerel ayar:: locale
 
 Bir yerel ayar veya yerel ayar kopyası ya da modelin veya kategorinin başka bir yerel ayardaki bir model veya kategori tarafından değiştirilen bir kopyasını oluşturur. Ayrıca bir yıkıcı içerir.
 
@@ -512,7 +512,7 @@ int main( ) {
 }
 ```
 
-## <a name="localename"></a><a name="name"></a>Yerel ayar:: ad
+## <a name="localename"></a><a name="name"></a> Yerel ayar:: ad
 
 Depolanan yerel ayar adını döndürür.
 
@@ -551,7 +551,7 @@ The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
 ```
 
-## <a name="localeoperator"></a><a name="op_eq"></a>locale:: operator =
+## <a name="localeoperator"></a><a name="op_eq"></a> locale:: operator =
 
 Bir yerel ayar atar.
 
@@ -559,7 +559,7 @@ Bir yerel ayar atar.
 const locale& operator=(const locale& other) noexcept;
 ```
 
-## <a name="localeoperator"></a><a name="op_neq"></a>locale:: operator! =
+## <a name="localeoperator"></a><a name="op_neq"></a> locale:: operator! =
 
 İki yerel ayarın farklı olup olmadığını sınar.
 
@@ -620,7 +620,7 @@ locales loc1 (German_Germany.1252) and
 loc3 (English_United States.1252) are not equal.
 ```
 
-## <a name="localeoperator"></a><a name="op_call"></a>locale:: operator ()
+## <a name="localeoperator"></a><a name="op_call"></a> locale:: operator ()
 
 `basic_string`Bu yerel ayarın std:: COLLATE modeli tarafından tanımlanan lexicographic karşılaştırma kurallarına göre iki nesneyi karşılaştırır <charT> .
 
@@ -686,7 +686,7 @@ int main( )
 0
 ```
 
-## <a name="localeoperator"></a><a name="op_eq_eq"></a>locale:: operator = =
+## <a name="localeoperator"></a><a name="op_eq_eq"></a> locale:: operator = =
 
 İki yerel ayarın farksız olup olmadığını sınar.
 

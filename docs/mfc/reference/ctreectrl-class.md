@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: e193af8cb5c92f4a3f1ca7381783d90102e0764f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 6a824aceae39d5aa6685176354c48a9457a40e9e
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561823"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837625"
 ---
 # <a name="ctreectrl-class"></a>Ctreeckclass sınıfı
 
@@ -398,7 +398,7 @@ Başarılı olursa sürükle bit eşlemin eklendiği görüntü listesine yönel
 
 Bir uygulama, öğe sürüklenirken görüntüyü göstermek için görüntü listesi işlevlerini kullanır.
 
-`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örneğin:
+`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örnek:
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
@@ -1364,9 +1364,8 @@ Belirtilen noktayı kaplayan ağaç görünümü öğesinin tanıtıcısı veya 
 
 Bu işlev çağrıldığında, *PT* parametresi test edilecek noktanın koordinatlarını belirtir. İşlev, bir öğe, noktayı kapladıysanız, belirtilen noktadaki veya NULL değeri için öğenin tanıtıcısını döndürür. Ayrıca, *pFlags* parametresi belirtilen noktanın konumunu gösteren bir değer içerir. Olası değerler şunlardır:
 
-|||
+|Değer|Açıklama|
 |-|-|
-|Değer|Anlamı|
 |TVHT_ABOVE|İstemci alanının üzerinde.|
 |TVHT_BELOW|İstemci alanının altında.|
 |TVHT_NOWHERE|İstemci alanında, ancak son öğenin altında.|
@@ -1379,7 +1378,6 @@ Bu işlev çağrıldığında, *PT* parametresi test edilecek noktanın koordina
 |TVHT_ONITEMSTATEICON|Kullanıcı tanımlı durumdaki bir ağaç görünümü öğesinin durum simgesi.|
 |TVHT_TOLEFT|İstemci alanının solunda.|
 |TVHT_TORIGHT|İstemci alanının sağında.|
-|||
 
 ### <a name="example"></a>Örnek
 

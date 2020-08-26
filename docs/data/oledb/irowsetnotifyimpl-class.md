@@ -20,18 +20,18 @@ helpviewer_keywords:
 - OnRowChange method
 - OnRowsetChange method
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
-ms.openlocfilehash: 4e6b4c3298c063038e7365496f26f50d3789be86
-ms.sourcegitcommit: 0e3da5cea44437c132b5c2ea522bd229ea000a10
+ms.openlocfilehash: f938d9e92bc2f447ecfa82f2bfb27c8fda7652ab
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67861098"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845113"
 ---
 # <a name="irowsetnotifyimpl-class"></a>IRowsetNotifyImpl Sınıfı
 
-Uygular ve kayıtları [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)) Tüketici (diğer adıyla "havuz") bildirimleri işleyebilmeniz.
+, Bildirimleri işleyebilmesi için tüketiciden ("havuz" olarak da bilinir) bir [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)) uygular ve kaydettirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
@@ -39,29 +39,29 @@ class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldbcli.h
+**Üstbilgi:** atldbclı. h
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[OnFieldChange](#onfieldchange)|Bir sütunun değeri herhangi bir değişiklik tüketicisinin bildirir.|
-|[OnRowChange](#onrowchange)|İlk değişiklik bir satır veya satırın tamamını etkileyen herhangi bir değişiklik tüketici bildirir.|
-|[OnRowsetChange](#onrowsetchange)|Tüm satır kümesini etkileyen herhangi bir değişiklik tüketicisinin bildirir.|
+|[OnFieldChange](#onfieldchange)|Bir sütunun değerindeki herhangi bir değişikliği tüketiciye bildirir.|
+|[OnRowChange](#onrowchange)|İlk değişikliğin tüketicisini bir satıra veya tüm satırı etkileyen herhangi bir değişikliğe bildirir.|
+|[OnRowsetChange](#onrowsetchange)|Tüm satır kümesini etkileyen herhangi bir değişikliğin tüketicisini bilgilendirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bkz: [bildirimleri alma](../../data/oledb/receiving-notifications.md) tüketici üzerinde bağlantı noktası arabirimini uygulayan hakkında.
+Bkz. tüketici üzerinde bağlantı noktası arabirimini uygulamayla ilgili [Bildirimler alma](../../data/oledb/receiving-notifications.md) .
 
-`IRowsetNotifyImpl` işlevsiz bir uygulamasını sağlar `IRowsetNotify`, için boş işlevlerle `IRowsetNotify` yöntemleri [OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)), [OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)), ve [OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)). Varsa, uyguladığınızda bu sınıftan devralınan bir `IRowsetNotify` arabirimi, yalnızca gereksinim duyduğunuz yöntemleri uygulayabilirsiniz. Ayrıca diğer yöntemler için boş uygulamaları kendiniz vermeniz gerekir.
+`IRowsetNotifyImpl``IRowsetNotify` `IRowsetNotify` [OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)), [OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85))ve [OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85))yöntemleri için boş işlevlerle birlikte için kukla bir uygulama sağlar. Bir arabirim uygularken bu sınıftan devralma yaparsanız `IRowsetNotify` , yalnızca ihtiyacınız olan yöntemleri uygulayabilirsiniz. Ayrıca, diğer yöntemler için de boş uygulamalar sağlamanız gerekir.
 
-## <a name="onfieldchange"></a> IRowsetNotifyImpl::onfieldchange
+## <a name="irowsetnotifyimplonfieldchange"></a><a name="onfieldchange"></a> IRowsetNotifyImpl:: OnFieldChange
 
-Bir sütunun değeri herhangi bir değişiklik tüketicisinin bildirir.
+Bir sütunun değerindeki herhangi bir değişikliği tüketiciye bildirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(OnFieldChange)(
@@ -76,21 +76,21 @@ STDMETHOD(OnFieldChange)(
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) parametre açıklamaları.
+Bkz: parametre açıklamaları için [IRowsetNotify:: OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) dönüş değeri açıklamaları.
+Dönüş değeri açıklamaları için bkz. [IRowsetNotify:: OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem sarmalar [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) yöntemi. Ayrıntılar için OLE DB Programcı Başvurusu bu yöntemin tanımı bakın.
+Bu yöntem, [ırowsetnotıfy:: OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) metodunu sarmalanmış. Ayrıntılar için OLE DB Programcı başvurusu içindeki yöntemin açıklamasına bakın.
 
-## <a name="onrowchange"></a> IRowsetNotifyImpl::onrowchange
+## <a name="irowsetnotifyimplonrowchange"></a><a name="onrowchange"></a> IRowsetNotifyImpl:: OnRowChange
 
-İlk değişiklik bir satır veya satırın tamamını etkileyen herhangi bir değişiklik tüketici bildirir.
+İlk değişikliğin tüketicisini bir satıra veya tüm satırı etkileyen herhangi bir değişikliğe bildirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(OnRowChange)(
@@ -104,21 +104,21 @@ STDMETHOD(OnRowChange)(
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) parametre açıklamaları.
+Bkz: parametre açıklamaları için [IRowsetNotify:: OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) dönüş değeri açıklamaları.
+Dönüş değeri açıklamaları için bkz. [IRowsetNotify:: OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem sarmalar [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) yöntemi. Ayrıntılar için OLE DB Programcı Başvurusu bu yöntemin tanımı bakın.
+Bu yöntem, [ırowsetnotıfy:: OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) metodunu sarmalanmış. Ayrıntılar için OLE DB Programcı başvurusu içindeki yöntemin açıklamasına bakın.
 
-## <a name="onrowsetchange"></a> IRowsetNotifyImpl::onrowsetchange
+## <a name="irowsetnotifyimplonrowsetchange"></a><a name="onrowsetchange"></a> IRowsetNotifyImpl:: OnRowsetChange
 
-Tüm satır kümesini etkileyen herhangi bir değişiklik tüketicisinin bildirir.
+Tüm satır kümesini etkileyen herhangi bir değişikliğin tüketicisini bilgilendirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(OnRowsetChange)(
@@ -130,18 +130,18 @@ STDMETHOD(OnRowsetChange)(
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz: [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) parametre açıklamaları.
+Bkz: parametre açıklamaları için [IRowsetNotify:: OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bkz: [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) dönüş değeri açıklamaları.
+Dönüş değeri açıklamaları için bkz. [IRowsetNotify:: OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem sarmalar [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) yöntemi. Ayrıntılar için OLE DB Programcı Başvurusu bu yöntemin tanımı bakın.
+Bu yöntem, [IRowsetNotify:: OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) metodunu sarmalanmış. Ayrıntılar için OLE DB Programcı başvurusu içindeki yöntemin açıklamasına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85))
-[IRowsetNotifyCP sınıfı](../../data/oledb/irowsetnotifycp-class.md)
+[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85)) 
+ [IRowsetNotifyCP sınıfı](../../data/oledb/irowsetnotifycp-class.md)

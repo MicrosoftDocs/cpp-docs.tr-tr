@@ -108,12 +108,12 @@ helpviewer_keywords:
 - std::ios_base [C++], width
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
-ms.openlocfilehash: e66b3bd9f5e8058a4724746ba9ec5abd14cdae3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da7c8eee2653a34035f39fe272378ae63165bfc2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222477"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845503"
 ---
 # <a name="ios_base-class"></a>ios_base Sınıfı
 
@@ -139,13 +139,13 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[ios_base](#ios_base)|`ios_base`Nesneler oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[event_callback](#event_callback)|[Register_call](#register_callback)geçirilen bir işlevi açıklar.|
 |[`fmtflags`](#fmtflags)|Çıktının görünümünü belirtmek için sabitler.|
@@ -155,13 +155,13 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 
 ### <a name="enums"></a>Numaralandırmalar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[olay](#event)|Olay türlerini belirtir.|
 
 ### <a name="constants"></a>Sabitler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[adjustfield](#fmtflags)|&#124; &#124; olarak tanımlanan bir bit maskesi `internal` `left` `right` .|
 |[uygulamanızda](#openmode)|Her ekleme işleminden önce akışın sonuna kadar aramayı belirtir.|
@@ -180,7 +180,7 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 |[floatfield](#fmtflags)|&#124; olarak tanımlanan bir bit maskesi `fixed``scientific`|
 |[goodbit](#iostate)|Tüm durum bitleri net.|
 |[eşlenecek](#fmtflags)|Tamsayı değerlerinin onaltılık biçimde eklenmesini veya ayıklanmasını belirtir.|
-|[in](#openmode)|Akıştan ayıklama belirtir.|
+|['ndaki](#openmode)|Akıştan ayıklama belirtir.|
 |[internal](#fmtflags)|Oluşturulan bir sayısal alana yönelik bir noktada Fill karakterleri ekleyerek alan genişliğine göre doldurur.|
 |[tarafta](#fmtflags)|Sola yaslama belirtir.|
 |[Oct](#fmtflags)|Tamsayı değerlerinin sekizli biçimde eklenmesini veya ayıklanmasını belirtir.|
@@ -197,13 +197,13 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[hataları](#failure)|Üye sınıfı, Sınıf şablonunda [basic_ios](../standard-library/basic-ios-class.md) [üye işlevi tarafından](../standard-library/basic-ios-class.md#clear) oluşturulan tüm özel durumlar için temel sınıf işlevi görür.|
 |[bayraklar](#flags)|Geçerli bayrak ayarlarını ayarlar veya döndürür.|
 |[getloc](#getloc)|Depolanan yerel ayar nesnesini döndürür.|
 |[imbue](#imbue)|Yerel ayarı değiştirir.|
-|[Init](#init)|`iostream`Oluşturulduğunda Standart nesneleri oluşturur.|
+|[Dengeleyici](#init)|`iostream`Oluşturulduğunda Standart nesneleri oluşturur.|
 |[iword](#iword)|Olarak depolanacak bir değer atar `iword` .|
 |[duyarlılık](#precision)|Kayan noktalı bir sayı içinde görüntülenecek basamakların sayısını belirtir.|
 |[pword](#pword)|Olarak depolanacak bir değer atar `pword` .|
@@ -216,7 +216,7 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç =](#op_eq)|Nesneler için atama işleci `ios_base` .|
 
@@ -226,7 +226,7 @@ Sınıfının bir nesnesi, ' den oluşan biçimlendirme bilgilerini depolar ios_
 
 **Ad alanı:** std
 
-## <a name="event"></a><a name="event"></a>olay
+## <a name="event"></a><a name="event"></a> olay
 
 Olay türlerini belirtir.
 
@@ -251,7 +251,7 @@ Tür, [register_callback](#register_callback)ile kaydedilmiş bir işleve bağı
 
 Bir örnek için bkz. [register_callback](#register_callback) .
 
-## <a name="event_callback"></a><a name="event_callback"></a>event_callback
+## <a name="event_callback"></a><a name="event_callback"></a> event_callback
 
 [Register_call](#register_callback)geçirilen bir işlevi açıklar.
 
@@ -281,7 +281,7 @@ Türü, [register_callback](#register_callback)kayıtlı olabilecek bir işleve 
 
 Tarafından kullanılan bir örnek için bkz. [register_call](#register_callback) `event_callback` .
 
-## <a name="failure"></a><a name="failure"></a>hataları
+## <a name="failure"></a><a name="failure"></a> hataları
 
 Sınıfı, `failure` `iostreams` akış arabelleği işlemleri sırasında algılanan hataları raporlamak için, kitaplıktaki işlevlere göre özel durum olarak oluşturulan tüm nesnelerin türleri için temel sınıfı tanımlar.
 
@@ -333,7 +333,7 @@ int main ( )
 Caught an exception: ios_base::failbit set
 ```
 
-## <a name="flags"></a><a name="flags"></a>larına
+## <a name="flags"></a><a name="flags"></a> larına
 
 Geçerli bayrak ayarlarını ayarlar veya döndürür.
 
@@ -379,7 +379,7 @@ int main ( )
 16896
 ```
 
-## <a name="fmtflags"></a><a name="fmtflags"></a>fmıtflags
+## <a name="fmtflags"></a><a name="fmtflags"></a> fmıtflags
 
 Çıktının görünümünü belirtmek için sabitler.
 
@@ -447,7 +447,7 @@ Tür, biçim bayraklarını depolayabilen bir nesneyi açıklayan bir bit maskes
 
 Ayrıca, birkaç yararlı değer şunlardır:
 
-- `adjustfield`, &#124; olarak tanımlanan bir bit maskesi `internal` `left` &#124;`right`
+- `adjustfield`, &#124; olarak tanımlanan bir bit maskesi `internal` `left` &#124; `right`
 
 - `basefield``dec`&#124; &#124; olarak tanımlanır `hex``oct`
 
@@ -455,7 +455,7 @@ Ayrıca, birkaç yararlı değer şunlardır:
 
 Bu biçim bayraklarını değiştiren işlevlerin örnekleri için bkz [\<iomanip>](../standard-library/iomanip.md) ..
 
-## <a name="getloc"></a><a name="getloc"></a>getloc
+## <a name="getloc"></a><a name="getloc"></a> getloc
 
 Depolanan yerel ayar nesnesini döndürür.
 
@@ -485,7 +485,7 @@ int main( )
 C
 ```
 
-## <a name="imbue"></a><a name="imbue"></a>imbue
+## <a name="imbue"></a><a name="imbue"></a> imbue
 
 Yerel ayarı değiştirir.
 
@@ -510,7 +510,7 @@ Yeni yerel ayar ayarı.
 
 Bkz. [basic_ios:: imbue](../standard-library/basic-ios-class.md#imbue) bir örnek için.
 
-## <a name="init"></a><a name="init"></a>Dengeleyici
+## <a name="init"></a><a name="init"></a> Dengeleyici
 
 `iostream`Oluşturulduğunda Standart nesneleri oluşturur.
 
@@ -522,7 +522,7 @@ class Init { };
 
 İç içe yerleştirilmiş sınıf, bir `iostream` oluşturucunun rastgele bir statik nesne için yürütülmesinden önce bile standart nesnelerin düzgün şekilde oluşturulmasını sağlayan bir nesneyi açıklar.
 
-## <a name="ios_base"></a><a name="ios_base"></a>ios_base
+## <a name="ios_base"></a><a name="ios_base"></a> ios_base
 
 İos_base nesneleri oluşturur.
 
@@ -534,7 +534,7 @@ ios_base();
 
 (Korumalı) Oluşturucu hiçbir şey yapmaz. Daha sonraki bir `basic_ios::` [Init](../standard-library/basic-ios-class.md#init) çağrısı, güvenli bir şekilde yok edilebilmesi için nesneyi başlatmalıdır. Bu nedenle, ios_base sınıfı için tek güvenli kullanım sınıfı şablon [basic_ios](../standard-library/basic-ios-class.md)temel bir sınıf olarak bulunur.
 
-## <a name="iostate"></a><a name="iostate"></a>iostate
+## <a name="iostate"></a><a name="iostate"></a> iostate
 
 Akışın durumunu tanımlayan sabitlerin türü.
 
@@ -562,7 +562,7 @@ Türü, Stream durum bilgilerini depolayabilen bir nesneyi açıklayan bir bit m
 
 Buna ek olarak, `goodbit` daha önce bahsedilen bitlerin hiçbirinin ayarlandığı, yararlı bir değer ( `goodbit` sıfır olduğu garanti edilir).
 
-## <a name="iword"></a><a name="iword"></a>iword
+## <a name="iword"></a><a name="iword"></a> iword
 
 Olarak depolanacak bir değer atar `iword` .
 
@@ -587,7 +587,7 @@ Tüm nesneler genelinde kullanılmak üzere benzersiz bir dizin almak için, `io
 
 [`xalloc`](#xalloc)Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz `iword` ..
 
-## <a name="openmode"></a><a name="openmode"></a>OpenMode
+## <a name="openmode"></a><a name="openmode"></a> OpenMode
 
 Bir Stream ile nasıl etkileşim kuracağınızı açıklar.
 
@@ -637,7 +637,7 @@ int main ( )
 }
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 İos_base nesneler için atama işleci.
 
@@ -660,7 +660,7 @@ Atanmakta olan nesne.
 
 Bu işleç yalnızca öğesinden türetilmiş sınıflar tarafından kullanılır `ios_base` .
 
-## <a name="precision"></a><a name="precision"></a>duyarlılık
+## <a name="precision"></a><a name="precision"></a> duyarlılık
 
 Kayan noktalı bir sayı içinde görüntülenecek basamakların sayısını belirtir.
 
@@ -706,7 +706,7 @@ int main( )
 31.312
 ```
 
-## <a name="pword"></a><a name="pword"></a>pword
+## <a name="pword"></a><a name="pword"></a> pword
 
 Olarak depolanacak bir değer atar `pword` .
 
@@ -731,7 +731,7 @@ Tüm nesneler genelinde kullanılmak üzere benzersiz bir dizin almak için, `io
 
 [`xalloc`](#xalloc)Hakkında bir örnek için bkz `pword` ..
 
-## <a name="register_callback"></a><a name="register_callback"></a>register_callback
+## <a name="register_callback"></a><a name="register_callback"></a> register_callback
 
 Bir geri çağırma işlevi belirtir.
 
@@ -839,7 +839,7 @@ in callback2
 an erase event
 ```
 
-## <a name="seekdir"></a><a name="seekdir"></a>seekdir
+## <a name="seekdir"></a><a name="seekdir"></a> seekdir
 
 Dengeleme işlemleri için başlangıç noktasını belirtir.
 
@@ -888,7 +888,7 @@ int main ( )
 }
 ```
 
-## <a name="setf"></a><a name="setf"></a>setf
+## <a name="setf"></a><a name="setf"></a> setf
 
 Belirtilen bayrakları ayarlar.
 
@@ -942,7 +942,7 @@ int main( )
 }
 ```
 
-## <a name="sync_with_stdio"></a><a name="sync_with_stdio"></a>sync_with_stdio
+## <a name="sync_with_stdio"></a><a name="sync_with_stdio"></a> sync_with_stdio
 
 `iostream`Ve C çalışma zamanı kitaplığı işlemlerinin, kaynak kodda göründükleri sırada gerçekleşmesini sağlar.
 
@@ -965,7 +965,7 @@ Bu işlev için önceki ayar.
 
 Statik üye işlevi `stdio` , başlangıçta olan bir eşitleme bayrağını depolar **`true`** . Ne zaman **`true`** Bu bayrak, [`iostreams`](../standard-library/iostreams-conventions.md) C++ standart kitaplığı 'nda tanımlanmış işlevler ile aynı dosyadaki işlemlerin düzgün şekilde eşitlenmesini sağlar. Aksi takdirde, eşitleme garanti edilebilir veya olmayabilir, ancak performans artırılabilir. İşlevi, *_Sync* `stdio` eşitleme bayrağında _Sync depolar ve önceki depolanmış değerini döndürür. Standart akışlarda herhangi bir işlem gerçekleştirmeden önce güvenilir bir şekilde çağrı yapabilirsiniz.
 
-## <a name="unsetf"></a><a name="unsetf"></a>unsetf
+## <a name="unsetf"></a><a name="unsetf"></a> unsetf
 
 Belirtilen bayrakların kapalı olmasına neden olur.
 
@@ -988,7 +988,7 @@ void unsetf(
 
 Bir örneği için bkz. [ios_base:: setf](#setf) `unsetf` .
 
-## <a name="width"></a><a name="width"></a>Genişlik
+## <a name="width"></a><a name="width"></a> Genişlik
 
 Çıkış akışının uzunluğunu ayarlar.
 
@@ -1033,7 +1033,7 @@ int main( ) {
 0
 ```
 
-## <a name="xalloc"></a><a name="xalloc"></a>xalloc
+## <a name="xalloc"></a><a name="xalloc"></a> xalloc
 
 Bir değişkenin akışın bir parçası olduğunu belirtir.
 

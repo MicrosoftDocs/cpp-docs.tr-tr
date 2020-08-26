@@ -12,18 +12,18 @@ helpviewer_keywords:
 - IDBCreateSessionImpl class
 - CreateSession method
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-ms.openlocfilehash: cff1ca374c9489cb9c5df0dad153c4bf7a4cbc9e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: aeeca008499ca43cdcebd008390e5cb6c5a9e63c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210788"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88845529"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
 
 [IDBCreateSession](/previous-versions/windows/desktop/ms724076(v=vs.85)) arabirimi için bir uygulama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, class SessionClass>
@@ -33,7 +33,7 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 SıNıFıNDAN TÜRETILMIŞ
 
 *SessionClass*<br/>
@@ -47,7 +47,7 @@ Oturum nesnesi.
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[CreateSession](#createsession)|Veri kaynağı nesnesinden yeni bir oturum oluşturur ve yeni oluşturulan oturumdaki istenen arabirimi döndürür.|
 
@@ -55,11 +55,11 @@ Oturum nesnesi.
 
 Veri kaynağı nesnelerinde zorunlu arabirim.
 
-## <a name="idbcreatesessionimplcreatesession"></a><a name="createsession"></a>IDBCreateSessionImpl:: CreateSession
+## <a name="idbcreatesessionimplcreatesession"></a><a name="createsession"></a> IDBCreateSessionImpl:: CreateSession
 
 Veri kaynağı nesnesinden yeni bir oturum oluşturur ve yeni oluşturulan oturumdaki istenen arabirimi döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
@@ -74,4 +74,4 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

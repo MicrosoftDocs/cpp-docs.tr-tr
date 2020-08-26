@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: 2e30595a549eefc6a5eecc27be98ded5221dcc16
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 409211bc59d9df8a82a9f452efeff6b6db0fde39
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87201316"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88837118"
 ---
 # <a name="max_is"></a>max_is
 
@@ -34,13 +34,11 @@ Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin 
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`struct`** Or **`union`** , Interface parametresi, Interface yöntemi içindeki alan|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|**size_is**|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
