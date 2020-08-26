@@ -42,12 +42,12 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-ms.openlocfilehash: c59e8297013e02592e623859621bb1ff11474733
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 36a84c5de41f3358adbcba42010ed8e6f3c83939
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215146"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846582"
 ---
 # <a name="strftime-wcsftime-_strftime_l-_wcsftime_l"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 
@@ -127,9 +127,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 **Strftime** işlevleri şu biçimlendirme kodlarını destekler:
 
-|||
-|-|-|
 |Kod|Değiştirme dizesi|
+|-|-|
 |**% a**|Yerel ayarda kısaltılmış iş günü adı|
 |**% A**|Yerel ayarda tam hafta içi ad|
 |**% b**|Yerel ayarda kısaltılmış ay adı|
@@ -172,7 +171,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Kodu biçimlendirme|Anlamı|
 |-----------------|-------------|
-|**% #a**, **% #A**, **% #b**, **% #B**, **% #g**, **% #G**, **% #h**, **% #n**, **%**#p, **% #t**, **% #u,%** **#w**, **% #X**, **% #z**, **%**#Z,**%#%**|**#** bayrak yoksayıldı.|
+|**% #a**, **% #A**, **% #b**, **% #B**, **% #g**, **% #G**, **% #h**, **% #n**, **%**#p, **% #t**, **% #u,%** **#w**, **% #X**, **% #z**, **%**#Z, **%#%**|**#** bayrak yoksayıldı.|
 |**% #c**|Yerel ayar için uygun olan uzun tarih ve saat gösterimi. Örneğin: "Salı, 12 Mart 1995, 12:41:29".|
 |**% #x**|Yerel ayara uygun uzun tarih gösterimi. Örneğin: "Salı, 12 Mart 1995".|
 |**% #d**, **% #D**, **% #e**, **% #F**, **% #H**, **% #I**, **% #j**, **% #m**, **%**#M, **% #r**, **% #R,%**#S, **% #T**,% **#U,%** **#V**, **% #W**, **% #y**, **%** #Y **%#S**|Baştaki sıfırları veya boşlukları (varsa) kaldırın.|

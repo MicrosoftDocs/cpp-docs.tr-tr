@@ -124,12 +124,12 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-ms.openlocfilehash: 4d0325fbab2f27da2556e2c252e35711d9b42789
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b1831a2a504bb12473f564cd914340bc429fab8d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231266"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836680"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>İşlev parametrelerine ve dönüş değerlerine açıklama ekleme
 
@@ -188,7 +188,7 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
      void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
      ```
 
-     Bu örnekte, çağıran öğesi için bir arabellek sağlar `size` `p1` . `MyStringCopy`Bu öğelerin bazılarını geçerli hale getirir. Daha da önemlisi, `_Null_terminated_` üzerindeki ek açıklama, `PWSTR` `p1` durum sonrası için null olarak sonlandırılmış anlamına gelir. Bu şekilde, geçerli öğe sayısı hala iyi tanımlanmış, ancak belirli bir öğe sayısı gerekli değildir.
+     Bu örnekte, çağıran öğesi için bir arabellek sağlar `size` `p1` . `MyStringCopy` Bu öğelerin bazılarını geçerli hale getirir. Daha da önemlisi, `_Null_terminated_` üzerindeki ek açıklama, `PWSTR` `p1` durum sonrası için null olarak sonlandırılmış anlamına gelir. Bu şekilde, geçerli öğe sayısı hala iyi tanımlanmış, ancak belirli bir öğe sayısı gerekli değildir.
 
      `_bytes_`Değişken, boyutu öğeler yerine bayt olarak verir. Bu değişkeni yalnızca boyut öğe olarak ifade edilebilmesi kullanın. Örneğin, **`char`** dizeler `_bytes_` yalnızca kullanan benzer bir işlev ise değişkeni kullanır **`wchar_t`** .
 
@@ -272,15 +272,37 @@ Aşağıdaki tablodaki ek açıklamalar için, işaretçi parametresi açıklama
 Bir işaretçi parametresi ek açıklaması içerdiğinde `_opt_` , parametrenin null olabileceğini gösterir. Aksi takdirde, ek açıklama dahil olmayan sürümle aynı şekilde davranır `_opt_` . Bu, `_opt_` işaretçi parametresi ek açıklamaların türevlerini listeler:
 
 :::row:::
-    :::column:::
-        `_In_opt_`<br /><br /> `_Out_opt_`<br /><br /> `_Inout_opt_`<br /><br /> `_In_opt_z_`<br /><br /> `_Inout_opt_z_`<br /><br /> `_In_reads_opt_`<br /><br /> `_In_reads_bytes_opt_`<br /><br /> `_In_reads_opt_z_`
-    :::column-end:::
-    :::column:::
-        `_Out_writes_opt_`<br /><br /> `_Out_writes_opt_z_`<br /><br /> `_Inout_updates_opt_`<br /><br /> `_Inout_updates_bytes_opt_`<br /><br /> `_Inout_updates_opt_z_`<br /><br /> `_Out_writes_to_opt_`<br /><br /> `_Out_writes_bytes_to_opt_`<br /><br /> `_Out_writes_all_opt_`<br /><br /> `_Out_writes_bytes_all_opt_`
-    :::column-end:::
-    :::column:::
-        `_Inout_updates_to_opt_`<br /><br /> `_Inout_updates_bytes_to_opt_`<br /><br /> `_Inout_updates_all_opt_`<br /><br /> `_Inout_updates_bytes_all_opt_`<br /><br /> `_In_reads_to_ptr_opt_`<br /><br /> `_In_reads_to_ptr_opt_z_`<br /><br /> `_Out_writes_to_ptr_opt_`<br /><br /> `_Out_writes_to_ptr_opt_z_`
-    :::column-end:::
+   :::column:::
+      `_In_opt_`\
+      `_Out_opt_`\
+      `_Inout_opt_`\
+      `_In_opt_z_`\
+      `_Inout_opt_z_`\
+      `_In_reads_opt_`\
+      `_In_reads_bytes_opt_`\
+      `_In_reads_opt_z_`
+   :::column-end:::
+   :::column:::
+      `_Out_writes_opt_`\
+      `_Out_writes_opt_z_`\
+      `_Inout_updates_opt_`\
+      `_Inout_updates_bytes_opt_`\
+      `_Inout_updates_opt_z_`\
+      `_Out_writes_to_opt_`\
+      `_Out_writes_bytes_to_opt_`\
+      `_Out_writes_all_opt_`\
+      `_Out_writes_bytes_all_opt_`
+   :::column-end:::
+   :::column:::
+      `_Inout_updates_to_opt_`\
+      `_Inout_updates_bytes_to_opt_`\
+      `_Inout_updates_all_opt_`\
+      `_Inout_updates_bytes_all_opt_`\
+      `_In_reads_to_ptr_opt_`\
+      `_In_reads_to_ptr_opt_z_`\
+      `_Out_writes_to_ptr_opt_`\
+      `_Out_writes_to_ptr_opt_z_`
+   :::column-end:::
 :::row-end:::
 
 ## <a name="output-pointer-parameters"></a>Çıkış işaretçisi parametreleri
@@ -439,17 +461,30 @@ Başvuru parametresinin ortak kullanımı çıkış parametrelerine yöneliktir.
 Bir işlevin dönüş değeri `_Out_` parametreye benzer, ancak farklı bir de başvuru düzeyindedir ve işaretçi kavramını sonuca düşünmek zorunda kalmazsınız. Aşağıdaki ek açıklamalar için, dönüş değeri, bir skalar, bir struct işaretçisi veya bir arabelleğin işaretçisi olan açıklamalı nesnedir. Bu ek açıklamalar, ilgili ek açıklamayla aynı semantiğe sahiptir `_Out_` .
 
 :::row:::
-    :::column:::
-        `_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`
-    :::column-end:::
-    :::column:::
-        `_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`
-    :::column-end:::
+   :::column:::
+      `_Ret_z_`\
+      `_Ret_writes_(s)`\
+      `_Ret_writes_bytes_(s)`\
+      `_Ret_writes_z_(s)`\
+      `_Ret_writes_to_(s,c)`\
+      `_Ret_writes_maybenull_(s)`\
+      `_Ret_writes_to_maybenull_(s)`\
+      `_Ret_writes_maybenull_z_(s)`
+   :::column-end:::
+   :::column:::
+      `_Ret_maybenull_`\
+      `_Ret_maybenull_z_`\
+      `_Ret_null_`\
+      `_Ret_notnull_`\
+      `_Ret_writes_bytes_to_`\
+      `_Ret_writes_bytes_maybenull_`\
+      `_Ret_writes_bytes_to_maybenull_`
+   :::column-end:::
 :::row-end:::
 
 ## <a name="format-string-parameters"></a>Biçim dizesi parametreleri
 
-- `_Printf_format_string_`Parametrenin bir ifadede kullanılmak üzere bir biçim dizesi olduğunu gösterir `printf` .
+- `_Printf_format_string_` Parametrenin bir ifadede kullanılmak üzere bir biçim dizesi olduğunu gösterir `printf` .
 
      **Örnek**
 
@@ -464,7 +499,7 @@ Bir işlevin dönüş değeri `_Out_` parametreye benzer, ancak farklı bir de b
     }
     ```
 
-- `_Scanf_format_string_`Parametrenin bir ifadede kullanılmak üzere bir biçim dizesi olduğunu gösterir `scanf` .
+- `_Scanf_format_string_` Parametrenin bir ifadede kullanılmak üzere bir biçim dizesi olduğunu gösterir `scanf` .
 
      **Örnek**
 
@@ -479,7 +514,7 @@ Bir işlevin dönüş değeri `_Out_` parametreye benzer, ancak farklı bir de b
     }
     ```
 
-- `_Scanf_s_format_string_`Parametrenin bir ifadede kullanılmak üzere bir biçim dizesi olduğunu gösterir `scanf_s` .
+- `_Scanf_s_format_string_` Parametrenin bir ifadede kullanılmak üzere bir biçim dizesi olduğunu gösterir `scanf_s` .
 
      **Örnek**
 

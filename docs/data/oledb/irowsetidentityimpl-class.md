@@ -13,18 +13,18 @@ helpviewer_keywords:
 - IRowsetIdentityImpl class
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-ms.openlocfilehash: 20f558099c02d7de8a20b3cf631812b44a742a48
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 48ed687ff67208109b5a2acf400d98491b4c769a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210413"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836149"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl Sınıfı
 
 Satır kimliği için test sağlayan OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913(v=vs.85)) arabirimini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <class T, class RowClass = CSimpleRow>
@@ -34,11 +34,11 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-`IRowsetIdentityImpl`türetilen bir sınıf.
+*T*<br/>
+Sınıfından türetilmiş bir sınıf `IRowsetIdentityImpl` .
 
 *RowClass*<br/>
-`HROW`için depolama birimi.
+İçin depolama birimi `HROW` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -48,15 +48,15 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[IsSameRow](#issamerow)|Aynı satıra başvurduklarında, bunları görmek için iki satır tutamaçlarını karşılaştırır.|
 
-## <a name="irowsetidentityimplissamerow"></a><a name="issamerow"></a>IRowsetIdentityImpl:: IsSameRow
+## <a name="irowsetidentityimplissamerow"></a><a name="issamerow"></a> IRowsetIdentityImpl:: IsSameRow
 
 Aynı satıra başvurduklarında, bunları görmek için iki satır tutamaçlarını karşılaştırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD(IsSameRow )(HROW hThisRow,
@@ -69,9 +69,9 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satır tutamaçlarını karşılaştırmak için, bu yöntem `HROW` tutamaçlarını `RowClass` üyelerine yayınlar ve işaretçiler üzerinde `memcmp` çağırır.
+Satır tutamaçlarını karşılaştırmak için, bu yöntem `HROW` tutamaçları `RowClass` işaretçilerin üyelerine ve çağrılarına yayınlar `memcmp` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

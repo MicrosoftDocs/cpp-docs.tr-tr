@@ -1,5 +1,5 @@
 ---
-title: CDaoWorkspace Sınıf
+title: CDaoWorkspace sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDaoWorkspace
@@ -62,18 +62,18 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-ms.openlocfilehash: c492c806d64b1cfe0e4f73b3bb880ec7bd0a7e80
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: eea3fb29f219890ebe596c5d8109257e9d422054
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754667"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839796"
 ---
-# <a name="cdaoworkspace-class"></a>CDaoWorkspace Sınıf
+# <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 
-Adlandırılmış, parola korumalı bir veritabanı oturumunu oturum açmadan girişe kadar tek bir kullanıcı tarafından yönetir. DAO, Office 2013 aracılığıyla desteklenir. DAO 3.6 son sürümüdür ve eski miş olarak kabul edilir.
+Bir adlandırılmış, parola korumalı veritabanı oturumunu, oturum açmak için, tek bir kullanıcı tarafından yönetir. DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDaoWorkspace : public CObject
@@ -83,119 +83,119 @@ class CDaoWorkspace : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDaoÇalışma Alanı::CDaoÇalışma Alanı](#cdaoworkspace)|Bir çalışma alanı nesnesi oluşturuyor. Daha sonra, arama `Create` veya `Open`.|
+|[CDaoWorkspace:: Cdaoçalışma alanı](#cdaoworkspace)|Bir çalışma alanı nesnesi oluşturur. Daha sonra, `Create` veya öğesini çağırın `Open` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDaoWorkspace::Ek](#append)|Veritabanı altyapısının Çalışma Alanları koleksiyonuna yeni oluşturulan bir çalışma alanı ekler.|
-|[CDaoWorkspace::BeginTrans](#begintrans)|Çalışma alanında açık olan tüm veritabanları için geçerli olan yeni bir işlem başlatır.|
-|[CDaoWorkspace::Kapat](#close)|Çalışma alanını ve içerdiği tüm nesneleri kapatır. Bekleyen hareketler geri alınır.|
-|[CDaoWorkspace::CommitTrans](#committrans)|Geçerli hareketi tamamlar ve değişiklikleri kaydeder.|
-|[CDaoWorkspace::CompactDatabase](#compactdatabase)|Bir veritabanını sıkıştırır (veya yineler).|
-|[CDaoWorkspace::Oluştur](#create)|Yeni bir DAO çalışma alanı nesnesi oluşturur.|
-|[CDaoWorkspace::GetDatabaseCount](#getdatabasecount)|Çalışma alanının Veritabanları koleksiyonundaki DAO veritabanı nesnelerinin sayısını verir.|
-|[CDaoWorkspace::GetDatabaseInfo](#getdatabaseinfo)|Çalışma alanının Veritabanları koleksiyonunda tanımlanan belirli bir DAO veritabanı hakkındaki bilgileri verir.|
-|[CDaoWorkspace::GetIniPath](#getinipath)|Windows kayıt defterinde Microsoft Jet veritabanı altyapısının başlatma ayarlarının konumunu döndürür.|
-|[CDaoWorkspace::GetIsolateODBCTrans](#getisolateodbctrans)|Aynı ODBC veri kaynağını içeren birden çok işlemin veri kaynağına zorunlu birden çok bağlantı yoluyla izole edilip edilmediğini gösteren bir değer verir.|
-|[CDaoWorkspace::GetLoginTimeout](#getlogintimeout)|Kullanıcı bir ODBC veritabanında oturum açmaya çalıştığında hata oluşmadan önceki saniye sayısını döndürür.|
-|[CDaoWorkspace::GetName](#getname)|Çalışma alanı nesnesi için kullanıcı tanımlı adı döndürür.|
-|[CDaoWorkspace::GetUserName](#getusername)|Çalışma alanı oluşturulduğunda belirtilen kullanıcı adını döndürür. Bu, çalışma alanı sahibinin adıdır.|
-|[CDaoWorkspace::GetVersion](#getversion)|Çalışma alanıyla ilişkili veritabanı altyapısının sürümünü içeren bir dize döndürür.|
-|[CDaoWorkspace::GetWorkspaceCount](#getworkspacecount)|Veritabanı altyapısının Çalışma Alanları koleksiyonundaki DAO çalışma alanı nesnelerinin sayısını verir.|
-|[CDaoWorkspace::GetWorkspaceInfo](#getworkspaceinfo)|Veritabanı altyapısının Çalışma Alanları koleksiyonunda tanımlanan belirli bir DAO çalışma alanı hakkındaki bilgileri verir.|
-|[CDaoWorkspace::Boşta](#idle)|Veritabanı altyapısının arka plan görevlerini gerçekleştirmesine olanak tanır.|
-|[CDaoWorkspace::Açık](#isopen)|Çalışma alanı açıksa sıfırsız döndürür.|
-|[CDaoWorkspace::Aç](#open)|DAO'nun varsayılan çalışma alanıyla ilişkili bir çalışma alanı nesnesi açıkça açılır.|
-|[CDaoWorkspace::RepairDatabase](#repairdatabase)|Hasarlı bir veritabanını onarmaya çalışır.|
-|[CDaoWorkspace::Geri alma](#rollback)|Geçerli hareketi sona erdirir ve değişiklikleri kaydetmez.|
-|[CDaoWorkspace::SetDefaultPassword](#setdefaultpassword)|Belirli bir parola olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı parolayı ayarlar.|
-|[CDaoWorkspace::SetDefaultUser](#setdefaultuser)|Belirli bir kullanıcı adı olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı kullanıcı adını ayarlar.|
-|[CDaoÇalışma Alanı::SetIniPath](#setinipath)|Microsoft Jet veritabanı altyapısının Windows kayıt defterindeki başlatma ayarlarının konumunu ayarlar.|
-|[CDaoWorkspace::SetIsolateODBCTrans](#setisolateodbctrans)|Aynı ODBC veri kaynağını içeren birden çok işlemin veri kaynağına birden çok bağlantı zorlayarak yalıtılıp yalıtılmayacağını belirtir.|
-|[CDaoWorkspace::SetLoginTimeout](#setlogintimeout)|Kullanıcı bir ODBC veri kaynağında oturum açmaya çalıştığında hata oluşmadan saniye sayısını ayarlar.|
+|[CDaoWorkspace:: Append](#append)|Yeni oluşturulan bir çalışma alanını veritabanı altyapısının çalışma alanları koleksiyonuna ekler.|
+|[CDaoWorkspace:: BeginTrans](#begintrans)|Çalışma alanında açık olan tüm veritabanları için geçerli olan yeni bir işlem başlatır.|
+|[CDaoWorkspace:: Close](#close)|Çalışma alanını ve içerdiği tüm nesneleri kapatır. Bekleyen işlemler geri alınır.|
+|[CDaoWorkspace:: CommitTrans](#committrans)|Geçerli işlemi tamamlar ve değişiklikleri kaydeder.|
+|[CDaoWorkspace:: CompactDatabase](#compactdatabase)|Bir veritabanını sıkıştırır (veya çoğaltır).|
+|[CDaoWorkspace:: Create](#create)|Yeni bir DAO çalışma alanı nesnesi oluşturur.|
+|[CDaoWorkspace:: GetDatabaseCount](#getdatabasecount)|Çalışma alanının veritabanları koleksiyonundaki DAO veritabanı nesnelerinin sayısını döndürür.|
+|[CDaoWorkspace:: GetDatabaseInfo](#getdatabaseinfo)|Çalışma alanının veritabanları koleksiyonunda tanımlanan, belirtilen bir DAO veritabanı hakkındaki bilgileri döndürür.|
+|[CDaoWorkspace:: Getınıpath](#getinipath)|Windows kayıt defterindeki Microsoft Jet veritabanı altyapısının başlatma ayarlarının konumunu döndürür.|
+|[CDaoWorkspace:: Getısolateodbctrans](#getisolateodbctrans)|Aynı ODBC veri kaynağını içeren birden çok işlemin, veri kaynağına zorlanan birden çok bağlantı aracılığıyla yalıtılmış olup olmadığını gösteren bir değer döndürür.|
+|[CDaoWorkspace:: GetLoginTimeout](#getlogintimeout)|Kullanıcı bir ODBC veritabanında oturum açmaya çalıştığında bir hata oluştuktan önceki saniye sayısını döndürür.|
+|[CDaoWorkspace:: GetName](#getname)|Çalışma alanı nesnesi için Kullanıcı tanımlı adı döndürür.|
+|[CDaoWorkspace:: GetUserName](#getusername)|Çalışma alanı oluşturulduğunda belirtilen kullanıcı adını döndürür. Bu, çalışma alanı sahibinin adıdır.|
+|[CDaoWorkspace:: GetVersion](#getversion)|Çalışma alanıyla ilişkili veritabanı altyapısının sürümünü içeren bir dize döndürür.|
+|[CDaoWorkspace:: Getıworkspace sayısı](#getworkspacecount)|Veritabanı altyapısının çalışma alanları koleksiyonundaki DAO çalışma alanı nesnelerinin sayısını döndürür.|
+|[CDaoWorkspace:: Getıworkspace bilgileri](#getworkspaceinfo)|Veritabanı altyapısının çalışma alanları koleksiyonunda tanımlanan, belirtilen bir DAO çalışma alanıyla ilgili bilgileri döndürür.|
+|[CDaoWorkspace:: Idle](#idle)|Veritabanı altyapısının arka plan görevleri gerçekleştirmesini sağlar.|
+|[CDaoWorkspace:: IsOpen](#isopen)|Çalışma alanı açıksa sıfır olmayan bir değer döndürür.|
+|[CDaoWorkspace:: Open](#open)|DAO 'nun varsayılan çalışma alanıyla ilişkili bir çalışma alanı nesnesini açık olarak açar.|
+|[CDaoWorkspace:: RepairDatabase](#repairdatabase)|Hasarlı bir veritabanını onarmaya çalışır.|
+|[CDaoWorkspace:: Rollback](#rollback)|Geçerli işlemi sonlandırır ve değişiklikleri kaydetmez.|
+|[CDaoWorkspace:: SetDefaultPassword](#setdefaultpassword)|Belirli bir parola olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı parolayı ayarlar.|
+|[CDaoWorkspace:: SetDefaultUser](#setdefaultuser)|Belirli bir Kullanıcı adı olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı kullanıcı adını ayarlar.|
+|[CDaoWorkspace:: Setınpath](#setinipath)|Windows kayıt defterindeki Microsoft Jet veritabanı altyapısının başlatma ayarlarının konumunu ayarlar.|
+|[CDaoWorkspace:: SetIsolateODBCTrans](#setisolateodbctrans)|Aynı ODBC veri kaynağını içeren birden çok işlemin, veri kaynağına birden çok bağlantı zorlanarak yalıtılıp yalıtımadığını belirtir.|
+|[CDaoWorkspace:: SetLoginTimeout](#setlogintimeout)|Kullanıcı bir ODBC veri kaynağında oturum açmaya çalıştığında bir hata oluştuktan önceki saniye sayısını ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDaoÇalışma Alanı::m_pDAOWorkspace](#m_pdaoworkspace)|Altta yatan DAO çalışma alanı nesnesine işaret edin.|
+|[CDaoWorkspace:: m_pDAOWorkspace](#m_pdaoworkspace)|Temel alınan DAO çalışma alanı nesnesine işaret eder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çoğu durumda, birden çok çalışma alanına ihtiyacınız olmaz ve açık çalışma alanı nesneleri oluşturmanız gerekmez; veritabanını açtığınızda ve nesneleri kaydettiğinizde, DAO'nun varsayılan çalışma alanını kullanırlar. Ancak, gerekirse, ek çalışma alanı nesneleri oluşturarak aynı anda birden çok oturum çalıştırabilirsiniz. Her çalışma alanı nesnesi, kendi Veritabanları koleksiyonunda birden çok açık veritabanı nesnesi içerebilir. MFC'de, çalışma alanı öncelikle aynı "işlem alanında" açık veritabanları kümesini belirten bir işlem yöneticisidir.
+Çoğu durumda, birden fazla çalışma alanına ihtiyacınız olmayacaktır ve açık çalışma alanı nesneleri oluşturmanız gerekmez; veritabanı ve kayıt kümesi nesnelerini açtığınızda, DAO 'nun varsayılan çalışma alanını kullanır. Ancak, gerekirse, ek çalışma alanı nesneleri oluşturarak tek seferde birden çok oturum çalıştırabilirsiniz. Her çalışma alanı nesnesi, kendi veritabanı koleksiyonunda birden çok açık veritabanı nesnesi içerebilir. MFC 'de, bir çalışma alanı birincil olarak bir işlem yöneticisidir ve aynı "işlem alanında" bir açık veritabanı kümesi belirtilerek.
 
 > [!NOTE]
-> DAO veritabanı sınıfları Açık Veritabanı Bağlantısı (ODBC) dayalı MFC veritabanı sınıfları farklıdır. Tüm DAO veritabanı sınıf adlarının bir "CDao" öneki vardır. Genel olarak, DAO'ya dayalı MFC sınıfları ODBC'ye dayalı MFC sınıflardan daha yeteneklidir. DAO tabanlı sınıflar, ODBC sürücüleri de dahil olmak üzere Microsoft Jet veritabanı altyapısı üzerinden verilere erişir. Ayrıca, DOĞRUDAN DAO'yu aramak zorunda kalmadan veritabanları oluşturma ve sınıflar üzerinden tablo ve alan ekleme gibi Veri Tanım Dili (DDL) işlemlerini de desteklerler.
+> DAO veritabanı sınıfları, açık veritabanı bağlantısı (ODBC) tabanlı MFC veritabanı sınıflarından farklıdır. Tüm DAO veritabanı sınıf adlarında bir "CDao" öneki vardır. Genel olarak, DAO tabanlı MFC sınıfları ODBC tabanlı MFC sınıflarından daha yetenekli değildir. DAO tabanlı sınıflar, ODBC sürücüleri dahil olmak üzere Microsoft Jet veritabanı altyapısı aracılığıyla verilere erişir. Ayrıca, DAO 'YU doğrudan çağırmaya gerek kalmadan veritabanları oluşturma ve sınıflar aracılığıyla tablo ve alan ekleme gibi veri tanımlama dili (DDL) işlemlerini de destekler.
 
 ## <a name="capabilities"></a>Özellikler
 
-Sınıf `CDaoWorkspace` aşağıdakileri sağlar:
+Sınıfı `CDaoWorkspace` aşağıdakileri sağlar:
 
-- Veritabanı altyapısının başlatılmasıyla oluşturulan varsayılan çalışma alanına açık erişim. Genellikle veritabanı ve kayıt kümesi nesneleri oluşturarak örtülü OLARAK DAO varsayılan çalışma alanı kullanın.
+- Gerekirse, varsayılan bir çalışma alanına, veritabanı altyapısı başlatılarak bir açık erişim. Genellikle, veritabanı ve kayıt kümesi nesneleri oluşturarak DAO 'nun varsayılan çalışma alanını örtülü olarak kullanırsınız.
 
-- Çalışma alanında açık olan tüm veritabanları için hareketlerin uygulandığı bir hareket alanı. Ayrı işlem alanlarını yönetmek için ek çalışma alanları oluşturabilirsiniz.
+- Çalışma alanında açık olan tüm veritabanları için hareketlerin uygulandığı bir işlem alanı. Ayrı işlem alanlarını yönetmek için ek çalışma alanları oluşturabilirsiniz.
 
-- Altta yatan Microsoft Jet veritabanı altyapısının birçok özelliğinin arabirimi (statik üye işlevlere bakın). Çalışma alanını açmak veya oluşturmak veya açmadan veya oluşturmadan önce statik bir üye işlevi çağırmak veritabanı altyapısını açar.
+- Temel alınan Microsoft Jet veritabanı altyapısının birçok özelliklerine yönelik arabirim (bkz. statik üye işlevleri). Bir çalışma alanı açmak veya oluşturmak ya da açılmadan veya oluşturmadan önce statik üye işlevini çağırmak, veritabanı altyapısını başlatır.
 
-- Veritabanı altyapısının, eklenen tüm etkin çalışma alanlarını depolayan Çalışma Alanları koleksiyonuna erişim. Ayrıca, koleksiyona ekolmadan çalışma alanları oluşturabilir ve bunlarla çalışabilirsiniz.
+- Kendisine eklenmiş olan tüm etkin çalışma alanlarını depolayan veritabanı altyapısının çalışma alanları koleksiyonuna erişim. Ayrıca, çalışma alanlarını koleksiyona eklemeden de oluşturabilir ve bunlarla çalışabilirsiniz.
 
 ## <a name="security"></a>Güvenlik
 
-MFC, DAO'da güvenlik denetimi için kullanılan Kullanıcı ve Gruplar koleksiyonlarını uygulamaz. DAO bu yönlerini gerekiyorsa, DAO arayüzleri doğrudan aramalar yoluyla kendiniz programlamak gerekir. Daha fazla bilgi için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın.
+MFC, güvenlik denetimi için kullanılan, DAO 'daki kullanıcılar ve gruplar koleksiyonlarını uygulamaz. DAO 'nun bu yönlerine ihtiyaç duyuyorsanız, DAO arabirimlerine doğrudan çağrılar aracılığıyla bunları kendiniz programlayabilirsiniz. Bilgi için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
 
 ## <a name="usage"></a>Kullanım
 
-Sınıfı `CDaoWorkspace` şu şekilde kullanabilirsiniz:
+Sınıfını kullanarak şunları yapabilirsiniz `CDaoWorkspace` :
 
-- Varsayılan çalışma alanını açıkça açın.
+- Varsayılan çalışma alanını açık olarak açın.
 
-   Genellikle varsayılan çalışma alanını kullanımınız örtülüdür — yeni [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesneleri açtığınızda. Ancak veritabanı altyapısı özelliklerine veya Çalışma Alanları koleksiyonuna erişmek için açıkça erişmeniz gerekebilir. Aşağıdaki "Varsayılan Çalışma Alanının Örtülü Kullanımı" bölümüne bakın.
+   Yeni [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesneleri açtığınızda, genellikle varsayılan çalışma alanı kullanımı açıktır. Ancak, veritabanına doğrudan erişmeniz gerekebilir — Örneğin, veritabanı motoru özelliklerine veya çalışma alanları koleksiyonuna erişim için. Aşağıdaki "varsayılan çalışma alanının örtük kullanımı" bölümüne bakın.
 
-- Yeni çalışma alanları oluşturun. Çalışma Alanları koleksiyonuna eklemek istiyorsanız [Append'i](#append) arayın.
+- Yeni çalışma alanları oluşturun. Çalışma alanları koleksiyonuna eklemek istiyorsanız [append](#append) öğesini çağırın.
 
-- Çalışma Alanları koleksiyonunda varolan bir çalışma alanı açın.
+- Çalışma alanları koleksiyonunda var olan bir çalışma alanını açın.
 
-Çalışma Alanları koleksiyonunda zaten bulunmayan yeni bir çalışma alanı oluşturma, [Üye Oluştur](#create) işlevi altında açıklanır. Çalışma alanı nesneleri datababase altyapı oturumları arasında hiçbir şekilde devam etmez. Uygulamanız MFC'yi statik olarak bağlıyorsa, uygulamayı sonlandırmak veritabanı altyapısını başlatır. Uygulamanız MFC ile dinamik olarak bağlantı kursa, MFC DLL kaldırıldığında veritabanı altyapısı nın başlatılması nı sağlar.
+Çalışma alanları koleksiyonunda zaten bulunmayan yeni bir çalışma alanı oluşturmak, üye [Oluştur](#create) işlevi altında açıklanmıştır. Datababase Engine oturumları arasında herhangi bir şekilde çalışma alanı nesneleri kalıcı olmaz. Uygulamanız MFC 'yi statik olarak bağlantılarsa, uygulamayı sonlandırmak veritabanı altyapısını geri başlatır. Uygulamanız MFC ile dinamik olarak bağlanıyorsa, MFC DLL kaldırıldığında veritabanı altyapısı başlatılmamış olur.
 
-Varsayılan çalışma alanını açıkça açmak veya Çalışma Alanları koleksiyonunda varolan bir çalışma alanını [açmak, Açık](#open) üye işlevi altında açıklanmıştır.
+Varsayılan çalışma alanını açıkça açmak veya çalışma alanları koleksiyonunda var olan bir çalışma alanını açmak, [Open](#open) member işlevinin altında açıklanmıştır.
 
-Çalışma alanını [Kapat](#close) üye işleviyle kapatarak çalışma alanı oturumunu sonlandırın. `Close`daha önce kapatmadığınız veritabanlarını kapatır ve kaydedilmemiş hareketleri geri alar.
+[Kapalı](#close) üye işleviyle çalışma alanını kapatarak bir çalışma alanı oturumunu sonlandırın. `Close` daha önce kapatılmayan veritabanlarını kapatır ve kaydedilmemiş işlemleri geri alabilirsiniz.
 
 ## <a name="transactions"></a>İşlemler
 
-DAO, çalışma alanı düzeyinde ki işlemleri yönetir; bu nedenle, birden çok açık veritabanları ile bir çalışma alanında hareketler tüm veritabanları için geçerlidir. Örneğin, iki veritabanında işlenmemiş güncelleştirmeler varsa ve [CommitTrans'ı](#committrans)ararsanız, güncelleştirmelerin tümü işlenir. Hareketleri tek bir veritabanıyla sınırlamak istiyorsanız, bunun için ayrı bir çalışma alanı nesnesi gerekir.
+DAO çalışma alanı düzeyindeki işlemleri yönetir; Bu nedenle, birden çok açık veritabanına sahip çalışma alanındaki işlemler tüm veritabanlarına uygulanır. Örneğin, iki veritabanında işlenmemiş güncelleştirmeler varsa ve [CommitTrans](#committrans)' ı çağırırsanız, tüm güncelleştirmeler işlenir. İşlemleri tek bir veritabanıyla sınırlandırmak istiyorsanız, için ayrı bir çalışma alanı nesnesi gerekir.
 
-## <a name="implicit-use-of-the-default-workspace"></a>Varsayılan Çalışma Alanının Örtülü Kullanımı
+## <a name="implicit-use-of-the-default-workspace"></a>Varsayılan çalışma alanının örtük kullanımı
 
-MFC, DAO'nun varsayılan çalışma alanını aşağıdaki koşullar altında dolaylı olarak kullanır:
+MFC, DAO 'nun varsayılan çalışma alanını aşağıdaki koşullarda örtülü olarak kullanır:
 
-- Yeni `CDaoDatabase` bir nesne oluşturur, ancak varolan `CDaoWorkspace` bir nesne aracılığıyla bunu yapmazsanız, MFC sizin için DAO'nun varsayılan çalışma alanına karşılık gelen geçici bir çalışma alanı nesnesi oluşturur. Bunu birden çok veritabanı için yaparsanız, tüm veritabanı nesneleri varsayılan çalışma alanıyla ilişkilidir. Bir veritabanının çalışma alanına bir `CDaoDatabase` veri üyesi aracılığıyla erişebilirsiniz.
+- Yeni bir `CDaoDatabase` nesne oluşturur ancak bunu mevcut bir nesne aracılığıyla yapmazsanız `CDaoWorkspace` , MFC sizin IÇIN, DAO 'nun varsayılan çalışma alanına karşılık gelen geçici bir çalışma alanı nesnesi oluşturur. Bunu birden çok veritabanı için yaparsanız, tüm veritabanı nesneleri varsayılan çalışma alanıyla ilişkilendirilir. Bir veri üyesi aracılığıyla bir veritabanının çalışma alanına erişebilirsiniz `CDaoDatabase` .
 
-- Benzer şekilde, bir `CDaoRecordset` `CDaoDatabase` nesneye işaretçi sağlamadan bir nesne oluşturursanız, MFC geçici bir veritabanı nesnesi ve uzantısı olarak geçici bir çalışma alanı nesnesi oluşturur. Bir kayıt kümesinin veritabanına ve dolaylı olarak çalışma alanına `CDaoRecordset` bir veri üyesi aracılığıyla erişebilirsiniz.
+- Benzer şekilde, bir nesneye `CDaoRecordset` işaretçi sağlamadan bir nesne oluşturursanız `CDaoDatabase` , MFC geçici bir veritabanı nesnesi ve uzantıya göre geçici bir çalışma alanı nesnesi oluşturur. Bir veri üyesi aracılığıyla bir kayıt kümesinin veritabanına ve dolaylı olarak çalışma alanına erişebilirsiniz `CDaoRecordset` .
 
-## <a name="other-operations"></a>Diğer İşlemler
+## <a name="other-operations"></a>Diğer Işlemler
 
-Bozuk bir veritabanını onarmak veya veritabanını sıkıştırmak gibi diğer veritabanı işlemleri de sağlanır.
+Bozuk bir veritabanını onarma veya bir veritabanını düzenleme gibi diğer veritabanı işlemleri de sağlanır.
 
-DAO'ya doğrudan ve DAO güvenliği hakkında arama hakkında bilgi için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın.
+DAO 'YU doğrudan çağırma ve DAO güvenliği hakkında daha fazla bilgi için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CDaoWorkspace`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdao.h
+**Üstbilgi:** afxdao. h
 
-## <a name="cdaoworkspaceappend"></a><a name="append"></a>CDaoWorkspace::Ek
+## <a name="cdaoworkspaceappend"></a><a name="append"></a> CDaoWorkspace:: Append
 
-Oluştur'u aradıktan sonra bu üye işlevini [çağırın.](#create)
+[Oluşturma](#create)çağrısından sonra bu üye işlevini çağırın.
 
 ```
 virtual void Append();
@@ -203,15 +203,15 @@ virtual void Append();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Append`veritabanı altyapısının Çalışma Alanları koleksiyonuna yeni oluşturulan çalışma alanı nesnesini ekler. Çalışma alanları veritabanı altyapısı oturumları arasında kalıcı değildir; diskte değil, yalnızca bellekte depolanırlar. Bir çalışma alanı eklemek zorunda değilsin; yoksa, yine de kullanabilirsiniz.
+`Append` Yeni oluşturulan bir çalışma alanı nesnesini veritabanı altyapısının çalışma alanları koleksiyonuna ekler. Çalışma alanları, veritabanı altyapısı oturumları arasında devam etmez; diskler diskte değil yalnızca bellekte depolanır. Çalışma alanı eklemeniz gerekmez; Bunu yapmazsanız, kullanmaya devam edebilirsiniz.
 
-Eklenen bir çalışma alanı, [siz Onun Yakın](#close) üye işlevini arayana kadar Çalışma Alanları koleksiyonunda etkin ve açık bir durumda kalır.
+Eklenmiş bir çalışma alanı, [Close](#close) üye işlevini çağırana kadar, etkin ve açık durumda olan çalışma alanları koleksiyonunda kalır.
 
-İlgili bilgiler için DAO Yardım'daki "Uygulama Yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ekleme yöntemi" konusuna bakın.
 
-## <a name="cdaoworkspacebegintrans"></a><a name="begintrans"></a>CDaoWorkspace::BeginTrans
+## <a name="cdaoworkspacebegintrans"></a><a name="begintrans"></a> CDaoWorkspace:: BeginTrans
 
-Bir işlem başlatmak için bu üye işlevi arayın.
+Bir işlem başlatmak için bu üye işlevini çağırın.
 
 ```cpp
 void BeginTrans();
@@ -219,19 +219,19 @@ void BeginTrans();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aramadan `BeginTrans`sonra, işlemi yaptığınızda verilerinizde veya veritabanı yapınızda yaptığınız güncelleştirmeler etkili olur. Çalışma alanı tek bir işlem alanı tanımladığından, hareket çalışma alanındaki tüm açık veritabanları için geçerlidir. İşlemi tamamlamanın iki yolu vardır:
+' İ çağırdıktan sonra `BeginTrans` , veri veya veritabanı yapınıza yaptığınız güncelleştirmeler işlemi gerçekleştirdiğinizde etkili olur. Çalışma alanı tek bir işlem alanını tanımladığından, işlem çalışma alanındaki tüm açık veritabanlarına uygulanır. İşlemi tamamlamaya yönelik iki yol vardır:
 
-- İşlemi gerçekleştirmek ve verileri kaynağına kaydetmek için [CommitTrans](#committrans) üye işlevini arayın.
+- İşlemi yürütmek ve veri kaynağına değişiklikleri kaydetmek için [CommitTrans](#committrans) üye işlevini çağırın.
 
-- Veya işlemi iptal etmek için [Rollback](#rollback) üye işlevini arayın.
+- Veya işlemi iptal etmek için [Rollback](#rollback) üye işlevini çağırın.
 
-İşlem beklerken çalışma alanı nesnesini veya veritabanı nesnesini kapatma bekleyen tüm hareketleri geri alır.
+Çalışma alanı nesnesini veya bir veritabanı nesnesini kapatmak, bir işlem beklerken bekleyen tüm işlemleri geri kaydeder.
 
-Bir ODBC veri kaynağındaki hareketleri başka bir ODBC veri kaynağındakilerden yalıtmanız gerekiyorsa, [SetIsolateODBCTrans](#setisolateodbctrans) üye işlevine bakın.
+Bir ODBC veri kaynağındaki işlemleri başka bir ODBC veri kaynağından yalıtmanız gerekiyorsa, bkz. [Setisolateodbctrans](#setisolateodbctrans) üye işlevi.
 
-## <a name="cdaoworkspacecdaoworkspace"></a><a name="cdaoworkspace"></a>CDaoÇalışma Alanı::CDaoÇalışma Alanı
+## <a name="cdaoworkspacecdaoworkspace"></a><a name="cdaoworkspace"></a> CDaoWorkspace:: Cdaoçalışma alanı
 
-Bir `CDaoWorkspace` nesne inşa eder.
+Bir `CDaoWorkspace` nesnesi oluşturur.
 
 ```
 CDaoWorkspace();
@@ -239,19 +239,19 @@ CDaoWorkspace();
 
 ### <a name="remarks"></a>Açıklamalar
 
-C++ nesnesini yaptıktan sonra iki seçeneğiniz vardır:
+C++ nesnesi oluşturulduktan sonra iki seçeneğiniz vardır:
 
-- Varsayılan çalışma alanını açmak veya Çalışma Alanları koleksiyonunda varolan bir nesneyi açmak için nesnenin [Açık](#open) üye işlevini çağırın.
+- Varsayılan çalışma alanını açmak veya çalışma alanları koleksiyonunda var olan bir nesneyi açmak için nesnenin [Açık](#open) üye işlevini çağırın.
 
-- Veya yeni bir DAO çalışma alanı nesnesi oluşturmak için nesnenin [Oluştur](#create) üye işlevini çağırın. Bu, `CDaoWorkspace` nesne üzerinden başvurabileceğiniz yeni bir çalışma alanı oturumu başlatır. Aradıktan `Create`sonra, çalışma alanını veritabanı altyapısının Çalışma Alanları koleksiyonuna eklemek istiyorsanız [Append'i](#append) arayabilirsiniz.
+- Veya yeni bir DAO çalışma alanı nesnesi oluşturmak için nesnenin üye [Oluştur](#create) işlevini çağırın. Bu, açıkça bir nesne aracılığıyla başvurabileceğiniz yeni bir çalışma alanı oturumu başlatır `CDaoWorkspace` . Öğesini çağırdıktan sonra `Create` , çalışma alanını veritabanı altyapısının çalışma alanları koleksiyonuna eklemek Istiyorsanız [append](#append) ' i çağırabilirsiniz.
 
-Bir `CDaoWorkspace` nesneyi açıkça oluşturmanız gereken zaman hakkında bilgi almak için [CDaoWorkspace'e](../../mfc/reference/cdaoworkspace-class.md) sınıf genel bakışına bakın. Genellikle, bir çalışma alanı belirtmeden bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi açtığınızda veya bir veritabanı nesnesi belirtmeden bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesi açtığınızda örtülü olarak oluşturulan çalışma alanlarını kullanırsınız. Bu şekilde oluşturulan MFC DAO nesneleri, bir kez oluşturulan ve yeniden kullanılan DAO varsayılan çalışma alanı kullanır.
+Açıkça bir nesne oluşturmanız gerektiğinde ilgili bilgi için, [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) için sınıfa genel bakış bölümüne bakın `CDaoWorkspace` . Genellikle, bir çalışma alanı belirtmeden bir [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) nesnesi açtığınızda veya bir veritabanı nesnesi belirtmeden bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesi açtığınızda örtük olarak oluşturulan çalışma alanlarını kullanırsınız. Bu şekilde oluşturulan MFC DAO nesneleri, bir kez oluşturulan ve yeniden kullanılan, DAO 'nun varsayılan çalışma alanını kullanır.
 
-Çalışma alanını ve içerdiği nesneleri serbest bırakmak için çalışma alanı nesnesinin [Yakın](#close) üye işlevini arayın.
+Bir çalışma alanını ve içerdiği nesneleri serbest bırakmak için, Workspace nesnesinin [Close](#close) üye işlevini çağırın.
 
-## <a name="cdaoworkspaceclose"></a><a name="close"></a>CDaoWorkspace::Kapat
+## <a name="cdaoworkspaceclose"></a><a name="close"></a> CDaoWorkspace:: Close
 
-Çalışma alanı nesnesini kapatmak için bu üye işlevi arayın.
+Çalışma alanı nesnesini kapatmak için bu üye işlevini çağırın.
 
 ```
 virtual void Close();
@@ -259,18 +259,18 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açık bir çalışma alanı nesnesini kapatmak, temel DAO nesnesini serbest bırakır ve çalışma alanı Çalışma Alanları koleksiyonunun bir üyesiyse, onu koleksiyondan kaldırır. Arama `Close` iyi programlama uygulamasıdır.
+Açık çalışma alanı nesnesini kapatmak, temel alınan DAO nesnesini serbest bırakır ve çalışma alanı bir çalışma alanları koleksiyonunun üyesiyse, onu koleksiyondan kaldırır. Çağırma `Close` işlemi iyi bir programlama uygulamasıdır.
 
 > [!CAUTION]
-> Çalışma alanı nesnesini kapatmak, çalışma alanındaki tüm açık veritabanlarını kapatır. Bu, veritabanlarında da açık olan kayıt kümelerinin açılmasına ve bekleyen tüm güncelleştirmelerin veya güncelleştirmelerin geri aldansın. İlgili bilgiler için [CDaoDatabase::Close,](../../mfc/reference/cdaodatabase-class.md#close) [CDaoRecordset::Close](../../mfc/reference/cdaorecordset-class.md#close), [CDaoTableDef::Close](../../mfc/reference/cdaotabledef-class.md#close)ve [CDaoQueryDef::Close](../../mfc/reference/cdaoquerydef-class.md#close) üye işlevlerini kapatın.
+> Çalışma alanı nesnesini kapatmak çalışma alanındaki açık veritabanlarını kapatır. Bu, tüm kayıt kümelerinin kapanmakta olan veritabanlarında açık olması ve bekleyen tüm düzenlemeler ya da güncelleştirmelerin geri alınması sonucunu verir. İlgili bilgiler için, bkz. [CDaoDatabase:: Close](../../mfc/reference/cdaodatabase-class.md#close), [CDaoRecordset:: Close](../../mfc/reference/cdaorecordset-class.md#close), [CDaoTableDef:: Close](../../mfc/reference/cdaotabledef-class.md#close)ve [CDaoQueryDef:: Close](../../mfc/reference/cdaoquerydef-class.md#close) üye işlevleri.
 
-Çalışma alanı nesneleri kalıcı değildir; onlar sadece onlara referanslar var iken var. Bu, veritabanı altyapısı oturumu sona erdiğinde, çalışma alanı ve Veritabanları koleksiyonunun devam edilemeyeceğini anlamına gelir. Çalışma alanınızı ve veritabanı(lar)ınızı yeniden açarak bir sonraki oturum için bunları yeniden oluşturmanız gerekir.
+Çalışma alanı nesneleri kalıcı değil; Bunlar yalnızca başvuruları vardır. Bu, veritabanı motoru oturumu sona erdiğinde, çalışma alanının ve veritabanları koleksiyonunun kalıcı olmayacağı anlamına gelir. Çalışma alanınızı ve veritabanınızı yeniden açarak bir sonraki oturum için bunları yeniden oluşturmanız gerekir.
 
-İlgili bilgiler için DAO Yardım'daki "Yöntemi Kapat" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "Yöntem kapatma" konusuna bakın.
 
-## <a name="cdaoworkspacecommittrans"></a><a name="committrans"></a>CDaoWorkspace::CommitTrans
+## <a name="cdaoworkspacecommittrans"></a><a name="committrans"></a> CDaoWorkspace:: CommitTrans
 
-Bir işlem gerçekleştirmek için bu üye işlevini çağırın — çalışma alanındaki bir veya daha fazla veritabanına bir dizi düzenlemeye ve güncelleştirmeye kaydedin.
+Bir işlemi yürütmek için bu üye işlevini çağırın — çalışma alanındaki bir veya daha fazla veritabanında düzenleme ve güncelleştirme grubunu kaydedin.
 
 ```cpp
 void CommitTrans();
@@ -278,19 +278,19 @@ void CommitTrans();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hareket, [BeginTrans'a](#begintrans)yapılan bir çağrıyla başlayan veritabanının verilerinde veya yapısında yapılan bir dizi değişiklikten oluşur. İşlemi tamamladığınızda, [rollback](#rollback)ile ya gerçekleştirin ya da geri alabilirsiniz (değişiklikleri iptal edin). Varsayılan olarak, işlemler olmadan, kayıtlara güncelleştirmeler hemen işlenir. Arama, `BeginTrans` güncelleştirmelerin siz arayınana `CommitTrans`kadar geciktirilmesine neden olur.
+Bir işlem, bir [BeginTrans](#begintrans)çağrısıyla başlayan veritabanının verilerinde veya yapısında bir dizi değişiklikle oluşur. İşlemi tamamladığınızda, uygulamayı yürütün veya geri [alma](#rollback)ile geri alın (değişiklikleri iptal edin). Varsayılan olarak, işlem olmadan kayıt güncelleştirmeleri hemen kaydedilir. Çağırma `BeginTrans` , çağrı yapana kadar güncelleştirmelerin gecikmesine neden olur `CommitTrans` .
 
 > [!CAUTION]
-> Bir çalışma alanı içinde, hareketler her zaman çalışma alanı için geneldir ve yalnızca bir veritabanı veya kayıt kümesiyle sınırlı değildir. Bir çalışma alanı hareketi içinde birden fazla veritabanı veya `CommitTrans` kayıt kümesinde işlem `Rollback` yaparsanız, bekleyen tüm güncelleştirmeleri işler ve bu veritabanları ve kayıt kümeleri üzerindeki tüm işlemleri geri yükler.
+> Bir çalışma alanı içinde, işlemler her zaman çalışma alanına geneldir ve yalnızca bir veritabanı ya da kayıt kümesiyle sınırlı değildir. Bir çalışma alanı işlemi içinde birden fazla veritabanı veya kayıt kümesi üzerinde işlem gerçekleştirirseniz, `CommitTrans` bekleyen tüm güncelleştirmeleri kaydeder ve `Rollback` bu veritabanlarına ve kayıt kümelerine tüm işlemleri geri yükler.
 
-Bekleyen hareketlerle bir veritabanını veya çalışma alanını kapattığınızda, hareketlerin tümü geri alınır.
+Bekleyen işlemleri olan bir veritabanını veya çalışma alanını kapattığınızda, işlemler geri alınır.
 
 > [!NOTE]
-> Bu iki aşamalı bir işleme mekanizması değildir. Bir güncelleştirme nin işlememesi durumunda, diğerleri yine de işlemeye devam eder.
+> Bu, iki aşamalı bir tamamlama mekanizması değildir. Bir güncelleştirme işlemezse, diğerleri yine de devam edecektir.
 
-## <a name="cdaoworkspacecompactdatabase"></a><a name="compactdatabase"></a>CDaoWorkspace::CompactDatabase
+## <a name="cdaoworkspacecompactdatabase"></a><a name="compactdatabase"></a> CDaoWorkspace:: CompactDatabase
 
-Belirli bir Microsoft Jet'i sıkıştırmak için bu üye işlevini arayın (. MDB) veritabanı.
+Belirtilen bir Microsoft Jet 'i sıkıştırmak için bu üye işlevi çağırın (. MDB) veritabanı.
 
 ```
 static void PASCAL CompactDatabase(
@@ -310,82 +310,82 @@ static void PASCAL CompactDatabase(
 ### <a name="parameters"></a>Parametreler
 
 *lpszSrcName*<br/>
-Varolan, kapalı bir veritabanının adı. "C:\\\MYDB" gibi tam bir yol ve dosya adı olabilir. MDB". Dosya adının bir uzantısı varsa, belirtmeniz gerekir. Ağınız tek düzen adlandırma kuralını (UNC) destekliyorsa, "\\\\\\\MYSERVER \MYSHARE\\\\\\\MYDIR \MYDB gibi bir ağ yolu da belirtebilirsiniz. MDB". (" " C++\\kaçış karakteri olduğu için yol dizelerinde çift eğik çizgi gereklidir.)
+Mevcut, kapalı bir veritabanının adı. "C: \Mydb" gibi tam bir yol ve dosya adı olabilir \\ . MDB ". Dosya adının bir uzantısı varsa, onu belirtmeniz gerekir. Ağınız Tekdüzen adlandırma kuralını (UNC) destekliyorsa, " \\ \\ \\ \sunucum \\ \ myshare \\ \ mydizinim \\ \ mydbgibi bir ağ yolu da belirtebilirsiniz. MDB ". ("" C++ kaçış karakteri olduğundan, yol dizelerinde çift ters eğik çizgiler gereklidir \\ .)
 
 *lpszDestName*<br/>
-Oluşturduğunuz sıkıştırılmış veritabanının tam yolu. Ayrıca *lpszSrcName'de*olduğu gibi bir ağ yolu da belirtebilirsiniz. *LpszSrcName*ile aynı veritabanı dosyasını belirtmek için *lpszDestName* bağımsız değişkenini kullanamazsınız.
+Oluşturmakta olduğunuz sıkıştırılan veritabanının tam yolu. Ayrıca, *lpszSrcName*ile olduğu gibi bir ağ yolu da belirtebilirsiniz. *LpszDestName* bağımsız değişkenini, *lpszSrcName*ile aynı veritabanı dosyasını belirtmek için kullanamazsınız.
 
 *lpszPassword*<br/>
-Parola korumalı bir veritabanını sıkıştırmak istediğinizde kullanılan parola. `CompactDatabase` Bunun bir parola alır sürümünü kullanırsanız, tüm parametreleri sağlamanız gerektiğini unutmayın. Ayrıca, bu bir bağlantı parametresi olduğundan, aşağıdaki gibi özel biçimlendirme gerektirir: ; PWD= *lpszPassword*. Örneğin: ; PWD="Mutlu". (Önde gelen yarı kolon gereklidir.)
+Parola korumalı bir veritabanını sıkıştırmak istediğinizde kullanılan parola. `CompactDatabase`Bir parola alan sürümünü kullanıyorsanız, tüm parametreleri sağlamanız gerektiğini unutmayın. Ayrıca, bu bir Connect parametresi olduğundan şu şekilde özel biçimlendirme gerektirir:; PWD = *lpszPassword*. Örneğin:; PWD = "mutlu". (Baştaki noktalı virgül gereklidir.)
 
-*lpszYerele*<br/>
-*lpszDestName*oluşturmak için harmanlama sırasını belirtmek için kullanılan bir dize ifadesi. Bu bağımsız değişkeni varsayılan değerini kabul `dbLangGeneral` ederek atlarsanız (aşağıya bakın), yeni veritabanının yerel değeri eski veritabanınınkiyle aynıdır. Olası değerler şunlardır:
+*lpszLocale*<br/>
+*LpszDestName*oluşturmak için harmanlama sırasını belirtmek için kullanılan bir dize ifadesi. Varsayılan değerini (aşağıya bakın) kabul ederek bu bağımsız değişkeni atlarsanız `dbLangGeneral` , yeni veritabanının yerel ayarı eski veritabanıyla aynı olur. Olası değerler şunlardır:
 
-- `dbLangGeneral`İngilizce, Almanca, Fransızca, Portekizce, İtalyanca ve Modern İspanyolca
+- `dbLangGeneral` İngilizce, Almanca, Fransızca, Portekizce, Italyanca ve modern Ispanyolca
 
-- `dbLangArabic`Arapça
+- `dbLangArabic` Arapça
 
-- `dbLangCyrillic`Rusça
+- `dbLangCyrillic` Rusça
 
-- `dbLangCzech`Çekçe
+- `dbLangCzech` Çekçe
 
-- `dbLangDutch`Hollanda dili
+- `dbLangDutch` Hollanda dili
 
-- `dbLangGreek`Yunanca
+- `dbLangGreek` Yunanca
 
-- `dbLangHebrew`İbranice
+- `dbLangHebrew` İbranice
 
-- `dbLangHungarian`Macarca
+- `dbLangHungarian` Macarca
 
-- `dbLangIcelandic`İzlanda dili
+- `dbLangIcelandic` İzlanda dili
 
-- `dbLangNordic`İskandinav dilleri (yalnızca Microsoft Jet veritabanı altyapısı sürümü 1.0)
+- `dbLangNordic` İskandinav dilleri (yalnızca Microsoft Jet veritabanı altyapısı sürüm 1,0)
 
-- `dbLangNorwdan`Norveççe ve Danimarkaca
+- `dbLangNorwdan` Norveççe ve Danca
 
-- `dbLangPolish`Lehçe
+- `dbLangPolish` Lehçe
 
-- `dbLangSpanish`Geleneksel İspanyolca
+- `dbLangSpanish` Geleneksel Ispanyolca
 
-- `dbLangSwedfin`İsveççe ve Fince
+- `dbLangSwedfin` İsveççe ve Fince
 
-- `dbLangTurkish`Türkçe
+- `dbLangTurkish` Türkçe
 
-*nSeçenekler*<br/>
-Hedef veritabanı için bir veya daha fazla seçenek gösterir, *lpszDestName*. Varsayılan değeri kabul ederek bu bağımsız değişkeni atlarsanız, *lpszDestName* aynı şifrelemeye ve *lpszSrcName*ile aynı sürüme sahip olacaktır. `dbEncrypt` Bitwise-OR `dbDecrypt` işleci kullanarak sürüm seçeneklerinden biriyle veya seçeneği birleştirebilirsiniz. Veritabanı altyapısı sürümü değil, veritabanı biçimi belirten olası değerler şunlardır:
+*Önemli seçenekler*<br/>
+Hedef veritabanı için bir veya daha fazla seçeneği gösterir, *lpszDestName*. Bu bağımsız değişkeni varsayılan değeri kabul ederek atlarsanız, *lpszDestName* aynı şifrelemeye ve *lpszSrcName*ile aynı sürüme sahip olur. Ya da seçeneğini, `dbEncrypt` `dbDecrypt` BIT düzeyinde OR işlecini kullanarak sürüm seçeneklerinden biriyle birleştirebilirsiniz. Veritabanı biçimi olarak değil, veritabanı biçimini belirten olası değerler şunlardır:
 
-- `dbEncrypt`Sıkıştırma sırasında veritabanını şifreleyin.
+- `dbEncrypt` Sıkıştırma sırasında veritabanını şifreleyin.
 
-- `dbDecrypt`Sıkıştırma sırasında veritabanının şifresini çöz.
+- `dbDecrypt` Sıkıştırma sırasında veritabanının şifresini çözün.
 
-- `dbVersion10`Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı sürüm 1.0 kullanan bir veritabanı oluşturun.
+- `dbVersion10` Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı 1,0 sürümünü kullanan bir veritabanı oluşturun.
 
-- `dbVersion11`Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı sürüm 1.1'i kullanan bir veritabanı oluşturun.
+- `dbVersion11` Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı 1,1 sürümünü kullanan bir veritabanı oluşturun.
 
-- `dbVersion20`Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı sürüm 2.0 kullanan bir veritabanı oluşturun.
+- `dbVersion20` Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı 2,0 sürümünü kullanan bir veritabanı oluşturun.
 
-- `dbVersion30`Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı sürüm 3.0 kullanan bir veritabanı oluşturun.
+- `dbVersion30` Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı 3,0 sürümünü kullanan bir veritabanı oluşturun.
 
-Sıkıştırılmış `dbEncrypt` olarak `dbDecrypt` veritabanını şifreleyip şifrelemeyeceğiniz veya şifresini çözüp çözmeyin ilerler belirlemek için seçenekler bağımsız değişkenini kullanabilirsiniz. Bir şifreleme sabitini atlarsanız veya `dbDecrypt` `dbEncrypt`her ikisini de eklerseniz, *lpszDestName* *lpszSrcName*ile aynı şifrelemeye sahip olacaktır. Sıkıştırılmış veritabanı için veri biçiminin sürümünü belirtmek için seçenekler argümanındaki sürüm sabitlerinden birini kullanabilirsiniz. Bu sabit *lpszDestName*veri biçiminin yalnızca sürümünü etkiler. Yalnızca bir sürüm sabiti belirtebilirsiniz. Eğer bir sürüm sabiti atlarsanız, *lpszDestName* *lpszSrcName*ile aynı sürüme sahip olacaktır. *LpszDestName'yi* yalnızca *lpszSrcName*ile aynı veya daha sonra olan bir sürüme sıkıştırabilirsiniz.
+`dbEncrypt` `dbDecrypt` Sıkıştırılmış veritabanının şifrelenip şifrelenmeyeceğini veya şifresinin çözülmesi gerekip gerekmediğini belirtmek için seçenekler bağımsız değişkeninde veya kullanabilirsiniz. Bir şifreleme sabitini atlarsanız veya hem hem de eklerseniz `dbDecrypt` `dbEncrypt` , *lpszDestName* aynı şifrelemeye sahip olur. *lpszSrcName* Sıkıştırılan veritabanının veri biçiminin sürümünü belirtmek için, Seçenekler bağımsız değişkenindeki sürüm sabitlerinden birini kullanabilirsiniz. Bu sabit yalnızca *lpszDestName*veri biçiminin sürümünü etkiler. Yalnızca bir sürüm sabiti belirtebilirsiniz. Bir sürüm sabitini atlarsanız, *lpszDestName* aynı sürüme sahip olacaktır *lpszSrcName*. *LpszDestName* yalnızca *lpszSrcName*ile aynı veya sonraki bir sürüme sıkıştırabilirsiniz.
 
 > [!CAUTION]
-> Bir veritabanı şifrelenmemişse, kullanıcı/parola güvenliğini uygulasanız bile veritabanını oluşturan ikili disk dosyasını doğrudan okumak mümkündür.
+> Bir veritabanı şifrelenmemişse, veritabanını oluşturan ikili disk dosyasını doğrudan okumak için Kullanıcı/parola güvenliği uygulasanız bile mümkündür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veritabanındaki verileri değiştirin, veritabanı dosyası parçalanmış olabilir ve gerekenden daha fazla disk alanı kullanabilir. Düzenli aralıklarla, veritabanı dosyanızı parçalamak için veritabanınızı sıkıştırmanız gerekir. Sıkıştırılmış veritabanı genellikle daha küçüktür. Veritabanını kopyalayıp sıkıştırırken, harmanlama sırasını, şifrelemeyi veya veri biçiminin sürümünü değiştirmeyi de seçebilirsiniz.
+Veritabanındaki verileri değiştirirken veritabanı dosyası parçalanabilir ve gerekenden daha fazla disk alanı kullanabilir. Veritabanı dosyasını birleştirmek için düzenli aralıklarla veritabanınızı sıkıştırmanız gerekir. Sıkıştırılan veritabanı genellikle küçüktür. Ayrıca veritabanını kopyalayıp sıkıştırırken harmanlama sırasını, şifrelemeyi veya veri biçiminin sürümünü değiştirmeyi de seçebilirsiniz.
 
 > [!CAUTION]
-> Üye `CompactDatabase` işlev, tam bir Microsoft Access veritabanını bir sürümden diğerine doğru şekilde dönüştürmez. Yalnızca veri biçimi dönüştürülür. Formlar ve raporlar gibi Microsoft Access tanımlı nesneler dönüştürülmez. Ancak, veriler doğru dönüştürülür.
+> `CompactDatabase`Üye işlevi, tüm Microsoft Access veritabanını bir sürümden diğerine doğru dönüştürmeyecektir. Yalnızca veri biçimi dönüştürülür. Form ve raporlar gibi Microsoft Access tarafından tanımlanan nesneler dönüştürülmez. Ancak, veriler doğru şekilde dönüştürülür.
 
 > [!TIP]
-> Veritabanı dosyasını `CompactDatabase` kopyalamak için de kullanabilirsiniz.
+> Ayrıca, `CompactDatabase` bir veritabanı dosyasını kopyalamak için kullanabilirsiniz.
 
-Sıkıştırma veritabanları hakkında daha fazla bilgi için DAO Yardım'da "CompactDatabase Method" konusuna bakın.
+Veritabanları sıkıştırılıyor hakkında daha fazla bilgi için, DAO yardımı 'nda "CompactDatabase yöntemi" konusuna bakın.
 
-## <a name="cdaoworkspacecreate"></a><a name="create"></a>CDaoWorkspace::Oluştur
+## <a name="cdaoworkspacecreate"></a><a name="create"></a> CDaoWorkspace:: Create
 
-Yeni bir DAO çalışma alanı nesnesi oluşturmak ve MFC `CDaoWorkspace` nesnesi ile ilişkilendirmek için bu üye işlevi arayın.
+Yeni bir DAO çalışma alanı nesnesi oluşturmak ve bunu MFC nesnesiyle ilişkilendirmek için bu üye işlevini çağırın `CDaoWorkspace` .
 
 ```
 virtual void Create(
@@ -396,30 +396,30 @@ virtual void Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Yeni çalışma alanı nesnesini benzersiz olarak isimleyen en fazla 14 karaktere sahip bir dize. Bir isim vermelisin. İlgili bilgiler için DAO Yardım'daki "Ad Özelliği" konusuna bakın.
+*lpszName*<br/>
+Yeni çalışma alanı nesnesini benzersiz şekilde adlandıran en fazla 14 karakter içeren bir dize. Bir ad belirtmeniz gerekir. İlgili bilgiler için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
 *lpszUserName*<br/>
-Çalışma alanısahibinin kullanıcı adı. Gereksinimler için [SetDefaultUser](#setdefaultuser) üye işlevinin *lpszDefaultUser* parametresine bakın. İlgili bilgiler için DAO Help'deki "Kullanıcı Adı Özelliği" konusuna bakın.
+Çalışma alanının sahibinin Kullanıcı adı. Gereksinimler için bkz. [SetDefaultUser](#setdefaultuser) üye işlevine *lpszDefaultUser* parametresi. İlgili bilgiler için, DAO yardımı 'nda "Kullanıcı adı özelliği" konusuna bakın.
 
 *lpszPassword*<br/>
-Yeni çalışma alanı nesnesinin parolası. Parola en fazla 14 karakter uzunluğunda olabilir ve ASCII 0 (null) dışında herhangi bir karakter içerebilir. Parolalar büyük/küçük harf duyarlıdır. İlgili bilgiler için DAO Yardım'daki "Parola Özelliği" konusuna bakın.
+Yeni çalışma alanı nesnesinin parolası. Parola, en fazla 14 karakter uzunluğunda olabilir ve ASCII 0 (null) dışında herhangi bir karakter içerebilir. Parolalar büyük/küçük harfe duyarlıdır. İlgili bilgiler için, DAO yardımı 'nda "parola özelliği" konusuna bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genel oluşturma işlemi:
+Genel oluşturma işlemi şu şekilde yapılır:
 
-1. Bir [CDaoWorkspace nesnesi](#cdaoworkspace) oluştur.
+1. Bir [CDaoWorkspace](#cdaoworkspace) nesnesi oluşturun.
 
-1. Altta yatan DAO çalışma alanını oluşturmak için nesnenin `Create` üye işlevini çağırın. Bir çalışma alanı adı belirtmeniz gerekir.
+1. `Create`Temel ALıNAN DAO çalışma alanını oluşturmak için nesnenin üye işlevini çağırın. Bir çalışma alanı adı belirtmelisiniz.
 
-1. Çalışma alanını veritabanı altyapısının Çalışma Alanları koleksiyonuna eklemek istiyorsanız isteğe bağlı olarak [Append'i](#append) arayın. Çalışma alanıyla ek olmadan çalışabilirsiniz.
+1. Çalışma alanını veritabanı altyapısının çalışma alanları koleksiyonuna eklemek istiyorsanız, isteğe bağlı olarak [append](#append) çağrısı yapın. Çalışma alanıyla birlikte eklemeden çalışabilirsiniz.
 
-Aramadan `Create` sonra, çalışma alanı nesnesi kullanıma hazır, açık bir durumdadır. Sonra `Open` `Create`aramayın. Çalışma alanı `Create` Çalışma Alanları koleksiyonunda zaten varsa aramazsınız. `Create`uygulamanız için daha önce başlatmışsa veritabanı altyapısını başlatir.
+Çağrıdan sonra `Create` çalışma alanı nesnesi açık durumda ve kullanıma hazırdır. Öğesinden sonra çağırmayın `Open` `Create` . `Create`Çalışma alanı koleksiyonunda zaten varsa, ' i çağırmayın. `Create` , uygulamanız için zaten başlatılmamış olan veritabanı altyapısını başlatır.
 
-## <a name="cdaoworkspacegetdatabasecount"></a><a name="getdatabasecount"></a>CDaoWorkspace::GetDatabaseCount
+## <a name="cdaoworkspacegetdatabasecount"></a><a name="getdatabasecount"></a> CDaoWorkspace:: GetDatabaseCount
 
-Çalışma alanının Veritabanları koleksiyonundaki DAO veritabanı nesnelerinin sayısını almak için bu üye işlevi arayın - çalışma alanındaki açık veritabanlarının sayısı.
+Çalışma alanının veritabanları koleksiyonundaki DAO veritabanı nesnelerinin sayısını (çalışma alanındaki açık veritabanlarının sayısı) almak için bu üye işlevini çağırın.
 
 ```
 short GetDatabaseCount();
@@ -431,11 +431,11 @@ short GetDatabaseCount();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetDatabaseCount`çalışma alanının Veritabanları koleksiyonundaki tüm tanımlı veritabanlarıarasında döngü oluşturmanız gerekiyorsa yararlıdır. Koleksiyondaki belirli bir veritabanı hakkında bilgi edinmek için [GetDatabaseInfo'ya](#getdatabaseinfo)bakın. Tipik kullanım, `GetDatabaseCount` açık veritabanlarının sayısını aramak, ardından bu sayıyı yinelenen aramalar `GetDatabaseInfo`için döngü dizini olarak kullanmaktır.
+`GetDatabaseCount` çalışma alanının veritabanları koleksiyonundaki tüm tanımlı veritabanları arasında döngü uygulamanız gerekiyorsa yararlıdır. Koleksiyonda belirli bir veritabanı hakkında bilgi edinmek için bkz. [GetDatabaseInfo](#getdatabaseinfo). Tipik kullanım, `GetDatabaseCount` Açık veritabanlarının sayısını çağırmak ve ardından bu numarayı, yinelenen çağrılar için bir döngü dizini olarak kullanmaktır `GetDatabaseInfo` .
 
-## <a name="cdaoworkspacegetdatabaseinfo"></a><a name="getdatabaseinfo"></a>CDaoWorkspace::GetDatabaseInfo
+## <a name="cdaoworkspacegetdatabaseinfo"></a><a name="getdatabaseinfo"></a> CDaoWorkspace:: GetDatabaseInfo
 
-Çalışma alanında açık bir veritabanı hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
+Çalışma alanında açık bir veritabanı hakkında çeşitli bilgileri almak için bu üye işlevi çağırın.
 
 ```cpp
 void GetDatabaseInfo(
@@ -451,33 +451,33 @@ void GetDatabaseInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-Çalışma alanının Veritabanları koleksiyonundaki veritabanı nesnesinin dizin le arama için sıfır tabanlı dizin.
+*nDizin*<br/>
+Dizine göre arama için, çalışma alanının veritabanları koleksiyonundaki veritabanı nesnesinin sıfır tabanlı dizini.
 
-*dbinfo*<br/>
+*dınfo 'lar*<br/>
 İstenen bilgileri döndüren bir [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) nesnesine başvuru.
 
 *dwInfoOptions*<br/>
-Veritabanı hakkında hangi bilgilerin alınaaçık olduğunu belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürülmesine neden oldukları yla birlikte burada listelenir:
+Alınacak veritabanı ile ilgili hangi bilgilerin alındığını belirleyen seçenekler. Kullanılabilir seçenekler, işlevin döndürmesine neden olan özellikler ile birlikte aşağıda listelenmiştir:
 
-- AFX_DAO_PRIMARY_INFO (Varsayılan) Adı, Güncel, İşlemler
+- AFX_DAO_PRIMARY_INFO (varsayılan) ad, güncelleştirilebilir, Işlemler
 
-- AFX_DAO_SECONDARY_INFO Birincil bilgi artı: Sürüm, Collating Order, Sorgu Zaman
+- AFX_DAO_SECONDARY_INFO birincil bilgileri Plus: sürüm, harmanlama sırası, sorgu zaman aşımı
 
-- AFX_DAO_ALL_INFO Birincil ve ikincil bilgi artı: Bağlan
+- Birincil ve ikincil bilgileri AFX_DAO_ALL_INFO ve: Bağlan
 
-*Lpszname*<br/>
-Veritabanı nesnesinin adı, ada göre arama için. Ad, yeni çalışma alanı nesnesini benzersiz olarak adlandıran en fazla 14 karaktere sahip bir dizedir.
+*lpszName*<br/>
+Ada göre arama için veritabanı nesnesinin adı. Ad, yeni çalışma alanı nesnesini benzersiz şekilde adlandıran en fazla 14 karakter içeren bir dizedir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin bir sürümü, bir veritabanını dizin olarak aramanızı sağlar. Diğer sürüm, bir veritabanını ada göre aramanızı sağlar.
+İşlevin bir sürümü, dizine göre bir veritabanını arama olanağı sağlar. Diğer sürüm, bir veritabanını adına göre arama yapmanızı sağlar.
 
-*DBinfo'da*döndürülen bilgilerin açıklaması için [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
+*Dınfo*'da döndürülen bilgilerin açıklaması Için, [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
 
-## <a name="cdaoworkspacegetinipath"></a><a name="getinipath"></a>CDaoWorkspace::GetIniPath
+## <a name="cdaoworkspacegetinipath"></a><a name="getinipath"></a> CDaoWorkspace:: Getınıpath
 
-Windows kayıt defterinde Microsoft Jet veritabanı altyapısının başlatma ayarlarının konumunu edinmek için bu üye işlevini arayın.
+Windows kayıt defterinde Microsoft Jet veritabanı altyapısının başlatma ayarlarının konumunu almak için bu üye işlevi çağırın.
 
 ```
 static CString PASCAL GetIniPath();
@@ -485,17 +485,17 @@ static CString PASCAL GetIniPath();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kayıt defteri konumunu içeren bir [CString.](../../atl-mfc-shared/reference/cstringt-class.md)
+Kayıt defteri konumunu içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veritabanı altyapısının ayarları hakkında bilgi almak için konumu kullanabilirsiniz. Döndürülen bilgiler aslında bir kayıt defteri alt anahtarının adıdır.
+Veritabanı altyapısının ayarları hakkında bilgi edinmek için konumunu kullanabilirsiniz. Döndürülen bilgiler aslında bir kayıt defteri alt anahtarının adıdır.
 
-İlgili bilgiler için DAO Help'de "IniPath Property" ve "Veri Erişimi için Windows Kayıt Defteri Ayarlarını Özelleştirme" konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "INIPath özelliği" ve "veri erişimi için Windows kayıt defteri ayarlarını özelleştirme" konularına bakın.
 
-## <a name="cdaoworkspacegetisolateodbctrans"></a><a name="getisolateodbctrans"></a>CDaoWorkspace::GetIsolateODBCTrans
+## <a name="cdaoworkspacegetisolateodbctrans"></a><a name="getisolateodbctrans"></a> CDaoWorkspace:: Getısolateodbctrans
 
-Çalışma alanı için DAO IsolateODBCTrans özelliğinin geçerli değerini almak için bu üye işlevi arayın.
+Çalışma alanının DAO ısoteodbctrans özelliğinin geçerli değerini almak için bu üye işlevi çağırın.
 
 ```
 BOOL GetIsolateODBCTrans();
@@ -503,19 +503,19 @@ BOOL GetIsolateODBCTrans();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ODBC hareketleri yalıtılmışsa sıfır olmayan; aksi takdirde 0.
+ODBC işlemleri yalıtılmışsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı durumlarda, aynı ODBC veritabanında bekleyen birden çok eşzamanlı işlem olması gerekebilir. Bunu yapmak için, her işlem için ayrı bir çalışma alanı açmanız gerekir. Her çalışma alanının veritabanına kendi ODBC bağlantısına sahip olmasına rağmen, bunun sistem performansını yavaşlattığını unutmayın. İşlem yalıtımı normalde gerekli olmadığından, aynı kullanıcı tarafından açılan birden çok çalışma alanı nesnesinden ODBC bağlantıları varsayılan olarak paylaşılır.
+Bazı durumlarda, aynı ODBC veritabanında bekleyen birden çok eşzamanlı işlem olması gerekebilir. Bunu yapmak için her işlem için ayrı bir çalışma alanı açmanız gerekir. Her çalışma alanının veritabanına kendi ODBC bağlantısı olmasına rağmen bu, sistem performansını yavaşlatır. İşlem yalıtımı normalde gerekli olmadığı için, aynı kullanıcı tarafından açılan birden çok çalışma alanı nesnesinden ODBC bağlantıları varsayılan olarak paylaşılır.
 
-Microsoft SQL Server gibi bazı ODBC sunucuları, tek bir bağlantıda eşzamanlı işlemlere izin vermez. Böyle bir veritabanına karşı bekleyen bir anda birden fazla işlemin olması gerekiyorsa, açar açmaz her çalışma alanında IsolateODBCTrans özelliğini TRUE olarak ayarlayın. Bu, her çalışma alanı için ayrı bir ODBC bağlantısı zorlar.
+Microsoft SQL Server gibi bazı ODBC sunucuları, tek bir bağlantıda eşzamanlı işlemlere izin vermez. Bu tür bir veritabanına karşı bekleyen bir zamanda birden fazla işlem olması gerekiyorsa, her bir çalışma alanında onu açtığınızda ısoteodbctrans özelliğini TRUE olarak ayarlayın. Bu, her çalışma alanı için ayrı bir ODBC bağlantısını zorlar.
 
-İlgili bilgiler için DAO Yardım'daki "IsolateODBCTrans Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ısoteodbctrans özelliği" konusuna bakın.
 
-## <a name="cdaoworkspacegetlogintimeout"></a><a name="getlogintimeout"></a>CDaoWorkspace::GetLoginTimeout
+## <a name="cdaoworkspacegetlogintimeout"></a><a name="getlogintimeout"></a> CDaoWorkspace:: GetLoginTimeout
 
-Çalışma alanı için DAO Giriş Zaman Dışarı özelliğinin geçerli değerini almak için bu üye işlevi arayın.
+Çalışma alanının DAO LoginTimeout özelliğinin geçerli değerini almak için bu üye işlevi çağırın.
 
 ```
 static short PASCAL GetLoginTimeout();
@@ -523,19 +523,19 @@ static short PASCAL GetLoginTimeout();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-ODBC veritabanında oturum açmaya çalıştığınızda hata oluşmadan önceki saniye sayısı.
+Bir ODBC veritabanında oturum açmaya çalıştığınızda hata oluşması gereken saniye sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer, bir ODBC veritabanında oturum açmaya çalıştığınızda bir hata oluşmadan önceki saniye sayısını gösterir. Varsayılan Giriş Zaman Çıkış ayarı 20 saniyedir. Giriş Zaman Dışarısı 0 olarak ayarlandığında, zaman ekme oluşmaz ve veri kaynağıyla iletişim yanıt vermeyi durdurabilir.
+Bu değer, bir ODBC veritabanında oturum açmaya çalıştığınızda hata oluşması gereken saniye sayısını temsil eder. Varsayılan LoginTimeout ayarı 20 saniyedir. LoginTimeout 0 olarak ayarlandığında zaman aşımı oluşmaz ve veri kaynağıyla iletişim yanıt vermeyi durdurabilir.
 
-Microsoft SQL Server gibi bir ODBC veritabanında oturum açmaya çalışırken, ağ hataları veya sunucu çalışmadığı için bağlantı başarısız olabilir. Varsayılan 20 saniyenin bağlanmasını beklemek yerine, veritabanı altyapısının hata oluşturmadan önce ne kadar bekleyeceğini belirtebilirsiniz. Sunucuya giriş yapmak, dış sunucu veritabanında sorgu çalıştırmak gibi bir dizi farklı olayın parçası olarak örtülü olarak gerçekleşir.
+Microsoft SQL Server gibi bir ODBC veritabanında oturum açmaya çalışırken, ağ hatalarının sonucu olarak veya sunucu çalışmadığından bağlantı başarısız olabilir. Bağlanmak için varsayılan 20 saniye beklemek yerine, veritabanı altyapısının bir hata üretmeden önce ne kadar bekleyeceğini belirtebilirsiniz. Sunucuda oturum açmak, bir dış sunucu veritabanında sorgu çalıştırma gibi bir dizi farklı olayın parçası olarak örtük olarak gerçekleşir.
 
-İlgili bilgiler için DAO Yardım'daki "Giriş Zaman Çıkış Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "LoginTimeout Özelliği" konusuna bakın.
 
-## <a name="cdaoworkspacegetname"></a><a name="getname"></a>CDaoWorkspace::GetName
+## <a name="cdaoworkspacegetname"></a><a name="getname"></a> CDaoWorkspace:: GetName
 
-`CDaoWorkspace` Nesnenin altında yatan DAO çalışma alanı nesnesinin kullanıcı tanımlı adını almak için bu üye işlevi arayın.
+Nesneyi temel alan DAO çalışma alanı nesnesinin kullanıcı tanımlı adını almak için bu üye işlevini çağırın `CDaoWorkspace` .
 
 ```
 CString GetName();
@@ -543,17 +543,17 @@ CString GetName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DAO çalışma alanı nesnesinin kullanıcı tanımlı adını içeren bir [CString.](../../atl-mfc-shared/reference/cstringt-class.md)
+DAO çalışma alanı nesnesinin kullanıcı tanımlı adını içeren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ad, veritabanı altyapısının Çalışma Alanları koleksiyonundaki DAO çalışma alanı nesnesini ada göre erişmek için yararlıdır.
+Ad, veritabanı altyapısının çalışma alanları koleksiyonundaki ada göre DAO çalışma alanı nesnesine erişmek için yararlıdır.
 
-İlgili bilgiler için DAO Yardım'daki "Ad Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
-## <a name="cdaoworkspacegetusername"></a><a name="getusername"></a>CDaoWorkspace::GetUserName
+## <a name="cdaoworkspacegetusername"></a><a name="getusername"></a> CDaoWorkspace:: GetUserName
 
-Çalışma alanının sahibinin adını almak için bu üye işlevi arayın.
+Çalışma alanının sahibinin adını almak için bu üye işlevi çağırın.
 
 ```
 CString GetUserName();
@@ -561,17 +561,17 @@ CString GetUserName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışma alanı nesnesinin sahibini temsil eden bir [CString.](../../atl-mfc-shared/reference/cstringt-class.md)
+Çalışma alanı nesnesinin sahibini temsil eden bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma alanı sahibinin izinlerini almak veya ayarlamak için, İzinler özellik ayarını denetlemek için doğrudan DAO'yu arayın; bu, kullanıcının hangi izinlere sahip olduğunu belirler. İzinlerle çalışmak için bir SİsteM gerekir. MDA dosyası.
+Çalışma alanı sahibine ilişkin izinleri almak veya ayarlamak için, Izinler özellik ayarını denetlemek üzere DAO 'YU doğrudan çağırın; Bu, kullanıcının hangi izinleri olduğunu belirler. İzinlerle çalışmak için bir SISTEME ihtiyacınız vardır. MDA dosyası.
 
-DOĞRUDAN DAO'u arama hakkında bilgi için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın. İlgili bilgiler için DAO Help'deki "Kullanıcı Adı Özelliği" konusuna bakın.
+DAO 'YU doğrudan çağırma hakkında daha fazla bilgi için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md). İlgili bilgiler için, DAO yardımı 'nda "Kullanıcı adı özelliği" konusuna bakın.
 
-## <a name="cdaoworkspacegetversion"></a><a name="getversion"></a>CDaoWorkspace::GetVersion
+## <a name="cdaoworkspacegetversion"></a><a name="getversion"></a> CDaoWorkspace:: GetVersion
 
-Microsoft Jet veritabanı altyapısının sürümünü belirlemek için bu üye işlevini arayın.
+Kullanımdaki Microsoft Jet veritabanı altyapısının sürümünü öğrenmek için bu üye işlevi çağırın.
 
 ```
 static CString PASCAL GetVersion();
@@ -579,17 +579,17 @@ static CString PASCAL GetVersion();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesneyle ilişkili veritabanı altyapısının sürümünü gösteren bir [CString.](../../atl-mfc-shared/reference/cstringt-class.md)
+Nesnesiyle ilişkili veritabanı altyapısının sürümünü gösteren bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen değer"major.minor" şeklindeki sürüm numarasını temsil eder; örneğin, "3.0". Ürün sürüm numarası (örneğin, 3.0) sürüm numarası (3), bir dönem ve sürüm numarasından (0) oluşur.
+Döndürülen değer "ana. ikincil" biçiminde sürüm numarasını temsil eder; Örneğin, "3,0". Ürün sürüm numarası (örneğin, 3,0) sürüm numarasından (3), bir noktayla ve yayın numarasından (0) oluşur.
 
-İlgili bilgiler için DAO Yardım'daki "Sürüm Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "sürüm özelliği" konusuna bakın.
 
-## <a name="cdaoworkspacegetworkspacecount"></a><a name="getworkspacecount"></a>CDaoWorkspace::GetWorkspaceCount
+## <a name="cdaoworkspacegetworkspacecount"></a><a name="getworkspacecount"></a> CDaoWorkspace:: Getıworkspace sayısı
 
-Veritabanı altyapısının Çalışma Alanları koleksiyonundaki DAO çalışma alanı nesnelerinin sayısını almak için bu üye işlevi arayın.
+Veritabanı altyapısının çalışma alanları koleksiyonundaki DAO çalışma alanı nesnelerinin sayısını almak için bu üye işlevi çağırın.
 
 ```
 short GetWorkspaceCount();
@@ -597,15 +597,15 @@ short GetWorkspaceCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışma Alanları koleksiyonundaki açık çalışma alanlarının sayısı.
+Çalışma alanları koleksiyonundaki açık çalışma alanlarının sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sayım, koleksiyona eklenmiş açık çalışma alanlarını içermez. `GetWorkspaceCount`Çalışma Alanları koleksiyonundaki tüm tanımlı çalışma alanlarını döngüye almanız gerekiyorsa yararlıdır. Koleksiyondaki belirli bir çalışma alanı hakkında bilgi edinmek için [GetWorkspaceInfo'ya](#getworkspaceinfo)bakın. Tipik kullanım, `GetWorkspaceCount` açık çalışma alanlarının sayısını aramak, ardından bu sayıyı yinelenen `GetWorkspaceInfo`aramalar için döngü dizini olarak kullanmaktır.
+Bu sayı, koleksiyona eklenmemiş açık çalışma alanlarını içermez. `GetWorkspaceCount` Çalışma alanları koleksiyonundaki tüm tanımlı çalışma alanlarını döngüye almanız gerekiyorsa yararlıdır. Koleksiyonda belirli bir çalışma alanı hakkında bilgi edinmek için bkz. [Getıın Info](#getworkspaceinfo). Tipik kullanım, `GetWorkspaceCount` Açık çalışma alanlarının sayısını çağırmak ve sonra bu numarayı, yinelenen çağrılar için bir döngü dizini olarak kullanmaktır `GetWorkspaceInfo` .
 
-## <a name="cdaoworkspacegetworkspaceinfo"></a><a name="getworkspaceinfo"></a>CDaoWorkspace::GetWorkspaceInfo
+## <a name="cdaoworkspacegetworkspaceinfo"></a><a name="getworkspaceinfo"></a> CDaoWorkspace:: Getıworkspace bilgileri
 
-Oturumda açık bir çalışma alanı hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
+Oturumunda açık olan bir çalışma alanı hakkında çeşitli bilgiler almak için bu üye işlevini çağırın.
 
 ```cpp
 void GetWorkspaceInfo(
@@ -621,31 +621,31 @@ void GetWorkspaceInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-Dizin tarafından arama için Çalışma Alanları koleksiyonundaki veritabanı nesnesinin sıfır tabanlı dizin.
+*nDizin*<br/>
+Dizine göre arama için, çalışma alanları koleksiyonundaki veritabanı nesnesinin sıfır tabanlı dizini.
 
 *wkspcinfo*<br/>
-İstenen bilgileri döndüren bir [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) nesnesine başvuru.
+İstenen bilgileri döndüren bir [CDaoWorkspace Info](../../mfc/reference/cdaoworkspaceinfo-structure.md) nesnesine başvuru.
 
 *dwInfoOptions*<br/>
-Çalışma alanı hakkında hangi bilgilerin alınaaçık olduğunu belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürülmesine neden oldukları yla birlikte burada listelenir:
+Alınacak çalışma alanıyla ilgili hangi bilgilerin bulunduğunu belirten seçenekler. Kullanılabilir seçenekler, işlevin döndürmesine neden olan özellikler ile birlikte aşağıda listelenmiştir:
 
-- AFX_DAO_PRIMARY_INFO (Varsayılan) Adı
+- AFX_DAO_PRIMARY_INFO (varsayılan) ad
 
-- AFX_DAO_SECONDARY_INFO Temel bilgi artı: Kullanıcı Adı
+- AFX_DAO_SECONDARY_INFO birincil bilgileri Plus: Kullanıcı adı
 
-- AFX_DAO_ALL_INFO Birincil ve ikincil bilgi artı: ODBCTrans izole
+- Birincil ve ikincil bilgileri AFX_DAO_ALL_INFO ve: ODBCTrans 'ı yalıtma
 
-*Lpszname*<br/>
-Ada göre arama için çalışma alanı nesnesinin adı. Ad, yeni çalışma alanı nesnesini benzersiz olarak adlandıran en fazla 14 karaktere sahip bir dizedir.
+*lpszName*<br/>
+Ada göre arama için çalışma alanı nesnesinin adı. Ad, yeni çalışma alanı nesnesini benzersiz şekilde adlandıran en fazla 14 karakter içeren bir dizedir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Wkspcinfo*döndürülen bilgilerin açıklaması için [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
+*Wkspcinfo*' de döndürülen bilgilerin açıklaması Için, [Cdaoıgntionınfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
 
-## <a name="cdaoworkspaceidle"></a><a name="idle"></a>CDaoWorkspace::Boşta
+## <a name="cdaoworkspaceidle"></a><a name="idle"></a> CDaoWorkspace:: Idle
 
-Yoğun `Idle` veri işleme nedeniyle güncel olmayan arka plan görevlerini gerçekleştirme fırsatı yla veritabanı altyapısına ödeme yapın.
+`Idle`Veritabanı altyapısını, yoğun veri işleme nedeniyle güncel olmayan arka plan görevleri gerçekleştirme fırsatına sağlamak için çağırın.
 
 ```
 static void PASCAL Idle(int nAction = dbFreeLocks);
@@ -654,24 +654,24 @@ static void PASCAL Idle(int nAction = dbFreeLocks);
 ### <a name="parameters"></a>Parametreler
 
 *nEylem*<br/>
-Boşta işleme sırasında yapılacak bir eylem. Şu anda tek `dbFreeLocks`geçerli eylem .
+Boşta işleme sırasında gerçekleştirilecek bir eylem. Şu anda tek geçerli eylem `dbFreeLocks` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu genellikle, tüm kayıtları kayıt kümesi nde tutmak için yeterli arka plan işleme süresinin olmadığı çok kullanıcılı, çoklu görev ortamlarında geçerlidir.
+Bu, genellikle bir kayıt kümesindeki tüm kayıtları tutmak için yeterli arka plan işleme süresi olmayan çok kullanıcılı, çoklu görev ortamlarında geçerlidir.
 
 > [!NOTE]
-> Microsoft `Idle` Jet veritabanı altyapısının sürüm 3.0 ile oluşturulan veritabanları ile arama gerekli değildir. Yalnızca `Idle` önceki sürümlerle oluşturulan veritabanları için kullanın.
+> Çağırma `Idle` , Microsoft Jet veritabanı altyapısının 3,0 sürümü ile oluşturulan veritabanlarında gerekli değildir. `Idle`Yalnızca önceki sürümlerle oluşturulan veritabanları için kullanın.
 
-Genellikle, okuma kilitleri kaldırılır ve yerel dynaset türü kayıt kümesi nesnelerindeki veriler yalnızca başka bir eylem (fare hareketleri dahil) oluşmadığında güncelleştirilir. Düzenli olarak ararsanız, `Idle`gereksiz okuma kilitleri bırakarak arka plan işleme görevlerini yakalamak için veritabanı altyapısına zaman sağlarsınız. Bağımsız değişken `dbFreeLocks` olarak sabiti belirtme, tüm okuma kilitleri serbest bırakılıncaya kadar işlemeyi geciktirir.
+Genellikle, okuma kilitleri kaldırılır ve yerel dinamik küme türü kayıt kümesi nesnelerindeki veriler yalnızca başka hiçbir eylem (fare hareketleri dahil) gerçekleşmemişse güncelleştirilir. Düzenli aralıklarla bir kez çağrı yaparsanız `Idle` , gereksiz okuma kilitlerini serbest bırakarak arka plan işleme görevlerini yakalamak için veritabanı altyapısı 'nı sağlarsınız. `dbFreeLocks`Sabit bir bağımsız değişken olarak belirtilmesi, tüm okuma kilitleri serbest bırakılana kadar işleme gecikmelidir.
 
-Bir uygulamanın birden çok örneği çalışmadığı sürece, bu üye işlev tek kullanıcılı ortamlarda gerekli değildir. Üye `Idle` işlev, veritabanı altyapısını verileri diske yıkamaya zorladığı ve bellekte kilitler bırakması nedeniyle çok kullanıcılı bir ortamda performansı artırabilir. İşlemleri bir işlemin parçası haline getirerek okuma kilitlerini de serbest bırakabilirsiniz.
+Bu üye işlevi, bir uygulamanın birden çok örneği çalışmadığı müddetçe tek kullanıcı ortamlarında gerekli değildir. `Idle`Üye işlevi, veritabanı motorunu verileri diske boşaltmaya zorlediği ve bellekte kilitleri serbest bırakan bir çok kullanıcılı ortamda performansı artırabilir. Ayrıca işlemleri bir işlemin parçası yaparak okuma kilitlerini serbest bırakabilirsiniz.
 
-İlgili bilgiler için DAO Yardım'daki "Boşta Yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "boşta yöntemi" konusuna bakın.
 
-## <a name="cdaoworkspaceisopen"></a><a name="isopen"></a>CDaoWorkspace::Açık
+## <a name="cdaoworkspaceisopen"></a><a name="isopen"></a> CDaoWorkspace:: IsOpen
 
-Nesnenin `CDaoWorkspace` açık olup olmadığını belirlemek için bu üye işlevi arayın - yani MFC nesnesinin [Aç'a](#open) yapılan bir çağrı yla mı yoksa [Oluşturma](#create)çağrısıyla mı baş harfe çevrilip açılmadığını.
+Nesnenin açık olup olmadığını öğrenmek için bu üye işlevi çağırın `CDaoWorkspace` — diğer bir deyişle, MFC nesnesinin [Açık](#open) veya [oluşturulacak](#create)bir çağrı ile başlatılmış olup olmadığı.
 
 ```
 BOOL IsOpen() const;
@@ -679,25 +679,25 @@ BOOL IsOpen() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çalışma alanı nesnesi açıksa sıfırsız; aksi takdirde 0.
+Çalışma alanı nesnesi açıksa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açık durumda olan bir çalışma alanının üye işlevlerinden herhangi birini arayabilirsiniz.
+Açık durumda olan bir çalışma alanının üye işlevlerinden herhangi birini çağırabilirsiniz.
 
-## <a name="cdaoworkspacem_pdaoworkspace"></a><a name="m_pdaoworkspace"></a>CDaoÇalışma Alanı::m_pDAOWorkspace
+## <a name="cdaoworkspacem_pdaoworkspace"></a><a name="m_pdaoworkspace"></a> CDaoWorkspace:: m_pDAOWorkspace
 
-Altta yatan DAO çalışma alanı nesnesine işaretçi.
+Temel alınan DAO çalışma alanı nesnesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Altta yatan DAO nesnesine doğrudan erişmeniz gerekiyorsa bu veri üyesini kullanın. Dao nesnesinin arabirimlerini bu işaretçi aracılığıyla arayabilirsiniz.
+Temel alınan DAO nesnesine doğrudan erişmeniz gerekiyorsa bu veri üyesini kullanın. Bu işaretçi aracılığıyla DAO nesnesinin arabirimlerini çağırabilirsiniz.
 
-DAO nesnelerine doğrudan erişim hakkında bilgi için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın.
+DAO nesnelerine doğrudan erişme hakkında daha fazla bilgi için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
 
-## <a name="cdaoworkspaceopen"></a><a name="open"></a>CDaoWorkspace::Aç
+## <a name="cdaoworkspaceopen"></a><a name="open"></a> CDaoWorkspace:: Open
 
-DAO'nun varsayılan çalışma alanıyla ilişkili bir çalışma alanı nesnesi açıkça açılır.
+DAO 'nun varsayılan çalışma alanıyla ilişkili bir çalışma alanı nesnesini açık olarak açar.
 
 ```
 virtual void Open(LPCTSTR lpszName = NULL);
@@ -705,30 +705,44 @@ virtual void Open(LPCTSTR lpszName = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Açılacak DAO çalışma alanı nesnesinin adı — çalışma alanını benzersiz olarak adlandıran en fazla 14 karaktere sahip bir dize. Varsayılan çalışma alanını açıkça açmak için varsayılan değer NULL'u kabul edin. Adlandırma gereksinimleri [için, Oluştur](#create)için *lpszName* parametreye bakın. İlgili bilgiler için DAO Yardım'daki "Ad Özelliği" konusuna bakın.
+*lpszName*<br/>
+Açılacak DAO çalışma alanı nesnesinin adı — en fazla 14 karakter içeren bir dize, çalışma alanını benzersiz olarak adlandırır. Varsayılan çalışma alanını açık olarak açmak için NULL varsayılan değerini kabul edin. Adlandırma gereksinimleri için, bkz. [Create](#create) *lpszName* parametresi. İlgili bilgiler için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CDaoWorkspace` nesne yaptıktan sonra, aşağıdakilerden birini yapmak için bu üye işlevi arayın:
+Bir nesne oluşturduktan sonra `CDaoWorkspace` , aşağıdakilerden birini yapmak için bu üye işlevi çağırın:
 
-- Varsayılan çalışma alanını açıkça açın. *LpszName*için NULL'u geç.
+- Varsayılan çalışma alanını açık olarak açın. *LpszName*için null geçirin.
 
-- Varolan `CDaoWorkspace` bir nesneyi, Çalışma Alanları koleksiyonunun bir üyesini ada göre açın. Varolan bir çalışma alanı nesnesi için geçerli bir ad geçirin.
+- `CDaoWorkspace`Çalışma alanları koleksiyonunun bir üyesi olan varolan bir nesneyi ada göre açın. Mevcut bir çalışma alanı nesnesi için geçerli bir ad geçirin.
 
-`Open`çalışma alanı nesnesini açık bir duruma getirir ve uygulamanız için zaten başharfe çevrilmediyse veritabanı altyapısını başlatır.
+`Open` çalışma alanı nesnesini açık duruma geçirir ve ayrıca, uygulamanız için zaten başlatılmamışsa, veritabanı altyapısını başlatır.
 
-Birçok `CDaoWorkspace` üye işlev yalnızca çalışma alanı açıldıktan sonra çağrılabilse de, veritabanı altyapısında çalışan aşağıdaki üye işlevler C++ nesnesinin yapımından sonra ancak çağrıdan önce `Open`kullanılabilir:
+Birçok `CDaoWorkspace` üye işlevi yalnızca çalışma alanı açıldıktan sonra çağrılabilir ancak, veritabanı altyapısında çalışan aşağıdaki üye işlevleri, C++ nesnesi oluşturulduktan sonra ancak öğesine yapılan çağrıdan sonra kullanılabilir `Open` .
 
-||||
-|-|-|-|
-|[Oluştur](#create)|[GetVersion](#getversion)|[SetDefaultUser](#setdefaultuser)|
-|[GetIniPath](#getinipath)|[Boş](#idle)|[SetIniPath](#setinipath)|
-|[GetLoginTimeout](#getlogintimeout)|[Varsayılan Şifreyi Ayarla](#setdefaultpassword)|[SetLoginTimeout](#setlogintimeout)|
+:::row:::
+   :::column span="":::
+      [Oluşturma](#create)\
+      [Getınıpath](#getinipath)\
+      [GetLoginTimeout](#getlogintimeout)
+   :::column-end:::
+   :::column span="":::
+      [GetVersion](#getversion)\
+      [Boş](#idle)
+   :::column-end:::
+   :::column span="":::
+      [SetDefaultPassword](#setdefaultpassword)\
+      [SetDefaultUser](#setdefaultuser)
+   :::column-end:::
+   :::column span="":::
+      [Setınıpath](#setinipath)\
+      [SetLoginTimeout](#setlogintimeout)
+   :::column-end:::
+:::row-end:::
 
-## <a name="cdaoworkspacerepairdatabase"></a><a name="repairdatabase"></a>CDaoWorkspace::RepairDatabase
+## <a name="cdaoworkspacerepairdatabase"></a><a name="repairdatabase"></a> CDaoWorkspace:: RepairDatabase
 
-Microsoft Jet veritabanı altyapısına erişen bozuk bir veritabanını onarmaya çalışmanız gerekiyorsa bu üye işlevi arayın.
+Microsoft Jet veritabanı altyapısına erişen bozuk bir veritabanını onarmayı denemeniz gerekiyorsa bu üye işlevi çağırın.
 
 ```
 static void PASCAL RepairDatabase(LPCTSTR lpszName);
@@ -736,23 +750,23 @@ static void PASCAL RepairDatabase(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Varolan bir Microsoft Jet altyapısı veritabanı dosyasının yolu ve dosya adı. Yolu atlarsanız, yalnızca geçerli dizin aranır. Sisteminiz tek düzen adlandırma\\\\\\kuralını (UNC) destekliyorsa, "\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB" gibi bir ağ yolu da belirtebilirsiniz. MDB". (" " C++\\kaçış karakteri olduğu için yol dizesinde çift eğik çizgi gereklidir.)
+*lpszName*<br/>
+Mevcut bir Microsoft Jet Engine veritabanı dosyası için yol ve dosya adı. Yolu atlarsanız, yalnızca geçerli dizin aranır. Sisteminiz Tekdüzen adlandırma kuralını (UNC) destekliyorsa, şöyle bir ağ yolu belirtebilirsiniz: " \\ \\ \\ \sunucum \\ \ myshare \\ \mydizinim \\ \ MyDB. MDB ". ("" C++ kaçış karakteri olduğundan, yol dizesinde çift ters eğik çizgi gereklidir \\ .)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Onarmadan önce *lpszName* tarafından belirtilen veritabanını kapatmanız gerekir. Çok kullanıcılı bir ortamda, siz onu onarırken diğer kullanıcılar *lpszName'yi* açık layamaz. *LPSzName* kapalı değilse veya özel kullanım için kullanılamıyorsa bir hata oluşur.
+*LpszName* tarafından belirtilen veritabanını onarmadan önce kapatmanız gerekir. Çok kullanıcılı bir ortamda, diğer kullanıcıların *lpszName* açık olması gerekir. *LpszName* kapanmamış veya özel kullanım için kullanılabilir değilse bir hata oluşur.
 
-Bu üye işlev, tamamlanmamış bir yazma işlemi tarafından bozuk olarak işaretlenmiş bir veritabanını onarmaya çalışır. Bu, Microsoft Jet veritabanı altyapısını kullanan bir uygulama, elektrik kesintisi veya bilgisayar donanımı sorunu nedeniyle beklenmedik şekilde kapatılırsa oluşabilir. İşlemi tamamlar ve [Kapat](../../mfc/reference/cdaodatabase-class.md#close) üye işlevini ararsanız veya uygulamayı olağan bir şekilde bırakırsanız, veritabanı bozuk olarak işaretlenmeyecek.
+Bu üye işlevi, tamamlanmamış bir yazma işlemi tarafından bozuk olarak işaretlenmiş bir veritabanını onarmaya çalışır. Bu durum, bir güç kesintisi veya bilgisayar donanımı sorunu nedeniyle Microsoft Jet veritabanı altyapısını kullanan bir uygulama beklenmedik şekilde kapatılırsa oluşabilir. İşlemi tamamlayıp [kapatma](../../mfc/reference/cdaodatabase-class.md#close) üye işlevini çağırırsanız veya uygulamadan her zamanki şekilde çıkarsanız, veritabanı muhtemelen bozuk olarak işaretlenmeyecektir.
 
 > [!NOTE]
-> Bir veritabanını onardıktan sonra, dosyayı parçalamak ve disk alanını kurtarmak için [CompactDatabase](#compactdatabase) üye işlevini kullanarak sıkıştırmak da iyi bir fikirdir.
+> Bir veritabanını onardıktan sonra, dosyayı birleştirmek ve disk alanını kurtarmak için [CompactDatabase](#compactdatabase) üye işlevini kullanarak bunu sıkıştırmak de iyi bir fikirdir.
 
-Veritabanlarını onarma hakkında daha fazla bilgi için DAO Help'deki "RepairDatabase Method" konusuna bakın.
+Veritabanlarını onarma hakkında daha fazla bilgi için, DAO yardımı 'nda "RepairDatabase yöntemi" konusuna bakın.
 
-## <a name="cdaoworkspacerollback"></a><a name="rollback"></a>CDaoWorkspace::Geri alma
+## <a name="cdaoworkspacerollback"></a><a name="rollback"></a> CDaoWorkspace:: Rollback
 
-Geçerli hareketi sona erdirmek ve çalışma alanındaki tüm veritabanlarını işlem başlamadan önce durumlarına geri yüklemek için bu üye işlevi arayın.
+Geçerli işlemi sonlandırmak ve çalışma alanındaki tüm veritabanlarını, işlem başlamadan önce durumuna geri yüklemek için bu üye işlevi çağırın.
 
 ```cpp
 void Rollback();
@@ -761,16 +775,16 @@ void Rollback();
 ### <a name="remarks"></a>Açıklamalar
 
 > [!CAUTION]
-> Bir çalışma alanı nesnesi içinde, hareketler her zaman çalışma alanı için geneldir ve yalnızca bir veritabanı veya kayıt kümesiyle sınırlı değildir. Bir çalışma alanı hareketi içinde birden fazla veritabanı veya `Rollback` kayıt kümesinde işlem yaparsanız, bu veritabanları ve kayıt kümelerinin tümünün tüm işlemlerini geri yükler.
+> Bir çalışma alanı nesnesi içinde, işlemler her zaman çalışma alanına geneldir ve yalnızca bir veritabanı ya da kayıt kümesiyle sınırlı değildir. Bir çalışma alanı işlemi içinde birden fazla veritabanı veya kayıt kümesi üzerinde işlem gerçekleştirirseniz, `Rollback` Bu veritabanlarının ve kayıt kümelerinin tümünde tüm işlemleri geri yükler.
 
-Bekleyen hareketleri kaydetmeden veya geri almadan bir çalışma alanı nesnesini kapatırsanız, hareketler otomatik olarak geri alınır. [CommitTrans'ı](#committrans) ararsanız veya `Rollback` [BeginTrans'ı](#begintrans)ilk aramadan bir hata oluşur.
+Bekleyen işlemleri kaydetmeden veya geri almadan bir çalışma alanı nesnesini kapatırsanız, işlemler otomatik olarak geri alınır. [CommitTrans](#committrans) 'yi çağırdıysanız veya `Rollback` ilk olarak [BeginTrans](#begintrans)'yi çağırmadan bir hata oluşur.
 
 > [!NOTE]
-> Bir hareketi başladığınızda, veritabanı altyapısı işlemlerini iş istasyonundaTEMP ortamı değişkeni tarafından belirtilen dizinde tutulan bir dosyada kaydeder. İşlem günlüğü dosyası TEMP sürücünüzdeki kullanılabilir depolama yıkılırsa, veritabanı altyapısı `CDaoException` MFC'nin (DAO hatası 2004) atmasını sağlar. Bu noktada, ararsanız, `CommitTrans`belirsiz sayıda işlem yapılır, ancak kalan tamamlanmamış işlemler kaybolur ve işlemin yeniden başlatılması gerekir. Arama, `Rollback` hareket günlüğünü serbest bırakır ve işlemdeki tüm işlemleri geri alır.
+> Bir işlem başlattığınızda, veritabanı altyapısı işlemlerini iş istasyonundaki TEMP ortam değişkeni tarafından belirtilen dizinde tutulan bir dosyaya kaydeder. İşlem günlüğü dosyası, GEÇICI sürücünüzdeki kullanılabilir depolamayı tükettarsa, veritabanı altyapısı MFC 'nin `CDaoException` (DAO hatası 2004) oluşturmasına neden olur. Bu noktada, öğesini çağırırsanız `CommitTrans` , belirsiz sayıda işlem gerçekleştirilir, ancak kalan tamamlanmamış işlemler kaybolur ve işlemin yeniden başlatılması gerekir. Çağırma `Rollback` işlemi, işlem günlüğünü yayınlar ve işlemdeki tüm işlemleri geri kaydeder.
 
-## <a name="cdaoworkspacesetdefaultpassword"></a><a name="setdefaultpassword"></a>CDaoWorkspace::SetDefaultPassword
+## <a name="cdaoworkspacesetdefaultpassword"></a><a name="setdefaultpassword"></a> CDaoWorkspace:: SetDefaultPassword
 
-Belirli bir parola olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı varsayılan parolayı ayarlamak için bu üye işlevi arayın.
+Belirli bir parola olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı varsayılan parolayı ayarlamak için bu üye işlevini çağırın.
 
 ```
 static void PASCAL SetDefaultPassword(LPCTSTR lpszPassword);
@@ -779,27 +793,27 @@ static void PASCAL SetDefaultPassword(LPCTSTR lpszPassword);
 ### <a name="parameters"></a>Parametreler
 
 *lpszPassword*<br/>
-Varsayılan parola. Parola en fazla 14 karakter uzunluğunda olabilir ve ASCII 0 (null) dışında herhangi bir karakter içerebilir. Parolalar büyük/küçük harf duyarlıdır.
+Varsayılan parola. Parola, en fazla 14 karakter uzunluğunda olabilir ve ASCII 0 (null) dışında herhangi bir karakter içerebilir. Parolalar büyük/küçük harfe duyarlıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayarladığınız varsayılan parola, aramadan sonra oluşturduğunuz yeni çalışma alanları için geçerlidir. Sonraki çalışma alanları oluşturduğunuzda, [Create](#create) çağrısında parola belirtmeniz gerekmez.
+Ayarladığınız varsayılan parola, çağrıdan sonra oluşturduğunuz yeni çalışma alanları için geçerlidir. Sonraki çalışma alanlarını oluştururken [Create](#create) çağrısında bir parola belirtmeniz gerekmez.
 
-Bu üye işlevini kullanmak için:
+Bu üye işlevi kullanmak için:
 
-1. Bir `CDaoWorkspace` nesne oluştur, `Create`ancak aramayın.
+1. Bir `CDaoWorkspace` nesne oluşturun ancak çağırmayın `Create` .
 
-1. Arayın `SetDefaultPassword` ve isterseniz, [SetDefaultUser](#setdefaultuser).
+1. ' İ `SetDefaultPassword` ve Isterseniz [SetDefaultUser](#setdefaultuser)öğesini çağırın.
 
-1. Parola `Create` belirtmeden bu çalışma alanı nesnesi veya sonraki leri arayın.
+1. `Create`Bu çalışma alanı nesnesi veya sonraki bir parolayı, bir parola belirtmeden çağırın.
 
-Varsayılan olarak, DefaultUser özelliği "yönetici" olarak ayarlanır ve DefaultPassword özelliği boş bir dize ("") olarak ayarlanır.
+Varsayılan olarak, DefaultUser özelliği "admin" olarak ayarlanır ve DefaultPassword özelliği boş bir dize ("") olarak ayarlanır.
 
-Güvenlik hakkında daha fazla şey için DAO Yardım'daki "İzinler Özelliği" konusuna bakın. İlgili bilgiler için DAO Yardım'daki "DefaultPassword Property" ve "DefaultUser Property" konularına bakın.
+Güvenlik hakkında daha fazla bilgi için, DAO yardımı 'nda "Izinler özelliği" konusuna bakın. İlgili bilgiler için, DAO yardımı 'nda "DefaultPassword özelliği" ve "DefaultUser özelliği" konularına bakın.
 
-## <a name="cdaoworkspacesetdefaultuser"></a><a name="setdefaultuser"></a>CDaoWorkspace::SetDefaultUser
+## <a name="cdaoworkspacesetdefaultuser"></a><a name="setdefaultuser"></a> CDaoWorkspace:: SetDefaultUser
 
-Belirli bir kullanıcı adı olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı varsayılan kullanıcı adını ayarlamak için bu üye işlevi arayın.
+Belirli bir Kullanıcı adı olmadan bir çalışma alanı nesnesi oluşturulduğunda veritabanı altyapısının kullandığı varsayılan kullanıcı adını ayarlamak için bu üye işlevini çağırın.
 
 ```
 static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
@@ -808,27 +822,27 @@ static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
 ### <a name="parameters"></a>Parametreler
 
 *lpszDefaultUser*<br/>
-Varsayılan kullanıcı adı. Bir kullanıcı adı 1 - 20 karakter uzunluğunda olabilir ve alfabetik karakterler, aksanlı karakterler, sayılar, boşluklar ve semboller hariç: " \[ \] (tırnak işaretleri), / (ileri eğik çizgi), \ (ters eğik çizgi), (parantez), : (kolon), &#124; (boru), \< (daha az işaret), > (büyük işareti), + (artı işareti), = (eşit işaret), ; (semicolon), , (virgül), (soru işareti), \* (yıldız işareti), boşluk ve kontrol karakterleri (ASCII 00 - ASCII 31). İlgili bilgiler için DAO Help'deki "Kullanıcı Adı Özelliği" konusuna bakın.
+Varsayılan Kullanıcı adı. Bir Kullanıcı adı 1-20 karakter uzunluğunda olabilir ve alfasayısal karakterler, aksanlı karakterler, sayılar, boşluklar ve simgeler içerebilir: "(tırnak işaretleri),/(eğik çizgi), \ (ters eğik çizgi), \[ \] (köşeli ayraç),: (iki nokta üst üste), &#124; (dikey çizgi), \< (less-than sign), > (büyüktür işareti), + (artı işareti), = (eşittir işareti),; (noktalı virgül),, (virgül), (soru işareti), \* (yıldız işareti), baştaki boşluklar ve denetim karakterleri (ASCII 00-ASCII 31). İlgili bilgiler için, DAO yardımı 'nda "Kullanıcı adı özelliği" konusuna bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayarladığınız varsayılan kullanıcı adı, aramadan sonra oluşturduğunuz yeni çalışma alanları için geçerlidir. Sonraki çalışma alanları oluşturduğunuzda, [Create](#create) çağrısında bir kullanıcı adı belirtmeniz gerekmez.
+Ayarladığınız varsayılan Kullanıcı adı, çağrıdan sonra oluşturduğunuz yeni çalışma alanları için geçerlidir. Sonraki çalışma alanlarını oluştururken [Create](#create) çağrısında bir Kullanıcı adı belirtmeniz gerekmez.
 
-Bu üye işlevini kullanmak için:
+Bu üye işlevi kullanmak için:
 
-1. Bir `CDaoWorkspace` nesne oluştur, `Create`ancak aramayın.
+1. Bir `CDaoWorkspace` nesne oluşturun ancak çağırmayın `Create` .
 
-1. Arama `SetDefaultUser` ve isterseniz, [SetDefaultPassword](#setdefaultpassword).
+1. , `SetDefaultUser` Ve istiyorsanız, [SetDefaultPassword](#setdefaultpassword)öğesini çağırın.
 
-1. Bir `Create` kullanıcı adı belirtmeden bu çalışma alanı nesnesi veya sonraki nesneler için çağrıda deyin.
+1. `Create`Bu çalışma alanı nesnesi veya sonraki bir Kullanıcı adı belirtmeden çağrı yapın.
 
-Varsayılan olarak, DefaultUser özelliği "yönetici" olarak ayarlanır ve DefaultPassword özelliği boş bir dize ("") olarak ayarlanır.
+Varsayılan olarak, DefaultUser özelliği "admin" olarak ayarlanır ve DefaultPassword özelliği boş bir dize ("") olarak ayarlanır.
 
-İlgili bilgiler için DAO Yardım'daki "DefaultUser Property" ve "DefaultPassword Property" konularına bakın.
+İlgili bilgiler için, DAO yardımı 'nda "DefaultUser özelliği" ve "DefaultPassword özelliği" konularına bakın.
 
-## <a name="cdaoworkspacesetinipath"></a><a name="setinipath"></a>CDaoÇalışma Alanı::SetIniPath
+## <a name="cdaoworkspacesetinipath"></a><a name="setinipath"></a> CDaoWorkspace:: Setınpath
 
-Microsoft Jet veritabanı altyapısının Windows kayıt defteri ayarlarının konumunu belirtmek için bu üye işlevini arayın.
+Microsoft Jet veritabanı altyapısı için Windows kayıt defteri ayarlarının konumunu belirtmek için bu üye işlevini çağırın.
 
 ```
 static void PASCAL SetIniPath(LPCTSTR lpszRegistrySubKey);
@@ -837,20 +851,20 @@ static void PASCAL SetIniPath(LPCTSTR lpszRegistrySubKey);
 ### <a name="parameters"></a>Parametreler
 
 *lpszRegistrySubkey*<br/>
-Microsoft Jet veritabanı altyapısı ayarlarının veya yüklenebilir ISAM veritabanları için gereken parametrelerin konumu için Windows kayıt defteri alt anahtarının adını içeren dize.
+Microsoft Jet veritabanı altyapısı ayarları veya yüklenebilir ISAM veritabanları için gereken parametrelerin konumu için Windows kayıt defteri alt anahtarının adını içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca `SetIniPath` özel ayarlar belirtmeniz gerekiyorsa arayın. Daha fazla bilgi için DAO Yardım'daki "IniPath Property" konusuna bakın.
+`SetIniPath`Yalnızca özel ayarları belirtmeniz gerekiyorsa çağırın. Daha fazla bilgi için, DAO yardımı 'nda "INIPath özelliği" konusuna bakın.
 
 > [!NOTE]
-> Uygulama `SetIniPath` nın çalıştırılması sırasında değil, uygulama yükleme sırasında arayın. `SetIniPath`çalışma alanlarını, veritabanlarını veya kayıt kümelerini açmadan önce çağrılmalıdır; aksi takdirde, MFC bir özel durum atar.
+> Uygulama `SetIniPath` çalıştırıldığında değil, uygulama yükleme sırasında çağrı. `SetIniPath` herhangi bir çalışma alanını, veritabanlarını veya kayıt kümelerini açmadan önce çağrılmalıdır; Aksi halde MFC bir özel durum oluşturur.
 
-Veritabanı altyapısını kullanıcı tarafından sağlanan kayıt defteri ayarlarıyla yapılandırmak için bu mekanizmayı kullanabilirsiniz. Bu özniteliğin kapsamı uygulamanızla sınırlıdır ve uygulamanızı yeniden başlatmadan değiştirilemez.
+Bu mekanizmayı, veritabanı altyapısını Kullanıcı tarafından sağlanmış kayıt defteri ayarlarıyla yapılandırmak için kullanabilirsiniz. Bu özniteliğin kapsamı uygulamanızla sınırlı olduğundan, uygulamanız yeniden başlatılmadan değiştirilemez.
 
-## <a name="cdaoworkspacesetisolateodbctrans"></a><a name="setisolateodbctrans"></a>CDaoWorkspace::SetIsolateODBCTrans
+## <a name="cdaoworkspacesetisolateodbctrans"></a><a name="setisolateodbctrans"></a> CDaoWorkspace:: SetIsolateODBCTrans
 
-Çalışma alanı için DAO IsolateODBCTrans özelliğinin değerini ayarlamak için bu üye işlevi arayın.
+Çalışma alanının DAO ısoteodbctrans özelliğinin değerini ayarlamak için bu üye işlevini çağırın.
 
 ```cpp
 void SetIsolateODBCTrans(BOOL bIsolateODBCTrans);
@@ -858,18 +872,18 @@ void SetIsolateODBCTrans(BOOL bIsolateODBCTrans);
 
 ### <a name="parameters"></a>Parametreler
 
-*bIsolateODBCTrans*<br/>
-ODBC hareketlerini izole etmeye başlamak istiyorsanız TRUE'dan geçirin. ODBC hareketlerini yalıtmayı durdurmak istiyorsanız FALSE'u geçirin.
+*Bısoteodbctrans*<br/>
+ODBC işlemlerini yalıtmaya başlamak istiyorsanız TRUE geçirin. ODBC işlemlerini yalıtmayı durdurmak istiyorsanız FALSE geçirin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bazı durumlarda, aynı ODBC veritabanında bekleyen birden çok eşzamanlı işlem olması gerekebilir. Bunu yapmak için, her işlem için ayrı bir çalışma alanı açmanız gerekir. Her çalışma alanı veritabanına kendi ODBC bağlantısına sahip olsa da, bu sistem performansını yavaşlatUr. İşlem yalıtımı normalde gerekli olmadığından, aynı kullanıcı tarafından açılan birden çok çalışma alanı nesnesinden ODBC bağlantıları varsayılan olarak paylaşılır.
+Bazı durumlarda, aynı ODBC veritabanında bekleyen birden çok eşzamanlı işlem olması gerekebilir. Bunu yapmak için her işlem için ayrı bir çalışma alanı açmanız gerekir. Her çalışma alanının veritabanına kendi ODBC bağlantısı olabilir, ancak bu sistem performansını yavaşlatır. İşlem yalıtımı normalde gerekli olmadığı için, aynı kullanıcı tarafından açılan birden çok çalışma alanı nesnesinden ODBC bağlantıları varsayılan olarak paylaşılır.
 
-Microsoft SQL Server gibi bazı ODBC sunucuları, tek bir bağlantıda eşzamanlı işlemlere izin vermez. Böyle bir veritabanına karşı bekleyen bir anda birden fazla işlemin olması gerekiyorsa, açar açmaz her çalışma alanında IsolateODBCTrans özelliğini TRUE olarak ayarlayın. Bu, her çalışma alanı için ayrı bir ODBC bağlantısı zorlar.
+Microsoft SQL Server gibi bazı ODBC sunucuları, tek bir bağlantıda eşzamanlı işlemlere izin vermez. Bu tür bir veritabanına karşı bekleyen bir zamanda birden fazla işlem olması gerekiyorsa, her bir çalışma alanında onu açtığınızda ısoteodbctrans özelliğini TRUE olarak ayarlayın. Bu, her çalışma alanı için ayrı bir ODBC bağlantısını zorlar.
 
-## <a name="cdaoworkspacesetlogintimeout"></a><a name="setlogintimeout"></a>CDaoWorkspace::SetLoginTimeout
+## <a name="cdaoworkspacesetlogintimeout"></a><a name="setlogintimeout"></a> CDaoWorkspace:: SetLoginTimeout
 
-Çalışma alanı için DAO Giriş Timeout özelliğinin değerini ayarlamak için bu üye işlevi arayın.
+Çalışma alanının DAO LoginTimeout özelliğinin değerini ayarlamak için bu üye işlevini çağırın.
 
 ```
 static void PASCAL SetLoginTimeout(short nSeconds);
@@ -877,23 +891,23 @@ static void PASCAL SetLoginTimeout(short nSeconds);
 
 ### <a name="parameters"></a>Parametreler
 
-*nSeconds*<br/>
-ODBC veritabanında oturum açmaya çalıştığınızda hata oluşmadan önceki saniye sayısı.
+*nSaniye*<br/>
+Bir ODBC veritabanında oturum açmaya çalıştığınızda hata oluşması gereken saniye sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer, bir ODBC veritabanında oturum açmaya çalıştığınızda bir hata oluşmadan önceki saniye sayısını gösterir. Varsayılan Giriş Zaman Çıkış ayarı 20 saniyedir. Giriş Zaman Dışarısı 0 olarak ayarlandığında, zaman ekme oluşmaz ve veri kaynağıyla iletişim yanıt vermeyi durdurabilir.
+Bu değer, bir ODBC veritabanında oturum açmaya çalıştığınızda hata oluşması gereken saniye sayısını temsil eder. Varsayılan LoginTimeout ayarı 20 saniyedir. LoginTimeout 0 olarak ayarlandığında zaman aşımı oluşmaz ve veri kaynağıyla iletişim yanıt vermeyi durdurabilir.
 
-Microsoft SQL Server gibi bir ODBC veritabanında oturum açmaya çalışırken, ağ hataları veya sunucu çalışmadığı için bağlantı başarısız olabilir. Varsayılan 20 saniyenin bağlanmasını beklemek yerine, veritabanı altyapısının hata oluşturmadan önce ne kadar bekleyeceğini belirtebilirsiniz. Sunucuda oturum açmak, dış sunucu veritabanında sorgu çalıştırmak gibi bir dizi farklı olayın parçası olarak örtülü olarak gerçekleşir. Zaman ayarı değeri, LoginTimeout özelliğinin geçerli ayarına göre belirlenir.
+Microsoft SQL Server gibi bir ODBC veritabanında oturum açmaya çalışırken, ağ hatalarının sonucu olarak veya sunucu çalışmadığından bağlantı başarısız olabilir. Bağlanmak için varsayılan 20 saniye beklemek yerine, veritabanı altyapısının bir hata üretmeden önce ne kadar bekleyeceğini belirtebilirsiniz. Sunucuda oturum açmak, bir dış sunucu veritabanında sorgu çalıştırma gibi bir dizi farklı olayın parçası olarak örtük olarak gerçekleşir. Zaman aşımı değeri, LoginTimeout özelliğinin geçerli ayarıyla belirlenir.
 
-İlgili bilgiler için DAO Yardım'daki "Giriş Zaman Çıkış Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "LoginTimeout Özelliği" konusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDaoDatabase Sınıfı](../../mfc/reference/cdaodatabase-class.md)<br/>
-[CDaoRecordset Sınıfı](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoTableDef Sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoQueryDef Sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>
-[CDaoException Sınıfı](../../mfc/reference/cdaoexception-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDaoDatabase sınıfı](../../mfc/reference/cdaodatabase-class.md)<br/>
+[CDaoRecordset sınıfı](../../mfc/reference/cdaorecordset-class.md)<br/>
+[CDaoTableDef sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
+[CDaoQueryDef sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>
+[CDaoException sınıfı](../../mfc/reference/cdaoexception-class.md)

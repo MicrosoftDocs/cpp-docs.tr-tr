@@ -2,19 +2,19 @@
 title: 'İzlenecek Yol: Komut Satırında C++/CX Programı Derleme'
 ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 456373fc9009920b734243f6a6c1af3d2c0301d4
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: 8dcd27ca8fff826f33ee8bd752cd32f2d44d3691
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373690"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836718"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
 
 > [!NOTE]
 > Yeni UWP uygulamaları ve bileşenleri için, Windows Çalışma Zamanı API 'Leri için standart bir C++ 17 dil projeksiyonu olan [c++/Wınrt](/windows/uwp/cpp-and-winrt-apis/)kullanmanızı öneririz. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlamak için tasarlanmıştır.
 
-Microsoft C++ derleyicisi (MSVC), Windows Çalışma Zamanı programlama modelini hedeflemek için ek tür ve işleçlere sahip C++ Bileşen Uzantıları 'nı (C++/CX) destekler. C++/CX kullanarak Evrensel Windows Platformu (UWP) ve Windows Masaüstü için uygulamalar oluşturabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için](../extensions/component-extensions-for-runtime-platforms.md) [C++/CX](https://docs.microsoft.com/archive/msdn-magazine/2013/april/component-extensions-a-tour-of-c-cx) ve bileşen uzantıları turu.
+Microsoft C++ derleyicisi (MSVC), Windows Çalışma Zamanı programlama modelini hedeflemek için ek tür ve işleçlere sahip C++ Bileşen Uzantıları 'nı (C++/CX) destekler. C++/CX kullanarak Evrensel Windows Platformu (UWP) ve Windows Masaüstü için uygulamalar oluşturabilirsiniz. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için](../extensions/component-extensions-for-runtime-platforms.md) [C++/CX](/archive/msdn-magazine/2013/april/component-extensions-a-tour-of-c-cx) ve bileşen uzantıları turu.
 
 Bu kılavuzda, temel bir C++/CX programı oluşturmak ve ardından komut satırında derlemek için bir metin düzenleyicisi kullanın. (Gösterilen birini yazmak yerine kendi C++/CX programınızı kullanabilir ya da başka bir yardım makalesindeki C++/CX kod örneğini kullanabilirsiniz. Bu teknik, Kullanıcı arabirimi öğeleri olmayan küçük modüller oluşturmak ve test etmek için kullanışlıdır.)
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - symbols [C++], ATL predefined
 - ATL symbols
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
-ms.openlocfilehash: 4ce2d8060c7218226340a591c6295a573f99dad8
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8134f334b0143a360fd3e02c04bca7a65ce67ce0
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619761"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836393"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
 
@@ -18,7 +18,7 @@ Bu semboller, ATL üstbilgi dosyalarında tanımlanmıştır, ancak standart Win
 
 [Iletişim kutusu düzenleyicisinde iletişim](dialog-editor.md)kutuları ve denetimlerle çalışırken, bu semboller ortak denetimlerle ilişkili [Özellikler penceresi](/visualstudio/ide/reference/properties-window) görüntülenir. Örneğin, iletişim kutusunda bir **iptal** düğmesi varsa, bu komut **ÖZELLIKLER** penceresinde IDCANCEL simgesiyle ilişkilendirilir.
 
-|||
+|Ad|Açıklama|
 |-|-|
 |IDABORT|denetimle İletişim kutusu, durdur düğmesi|
 |IDC_STATIC|denetimle Statik denetim|

@@ -1,23 +1,23 @@
 ---
-title: pragma (C++ com özniteliği)
+title: pragma (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.pragma
 helpviewer_keywords:
 - pragma attribute
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
-ms.openlocfilehash: 56b1aa4bf445095b86a1ea6792bfc78f45266e9a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e5683a6f52eccf9eae7c29010849a148e506b286
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166490"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836175"
 ---
-# <a name="pragma"></a>pragması
+# <a name="pragma"></a>pragma
 
 Belirtilen dizeyi, tırnak işaretlerinin kullanımı olmadan oluşturulan. IDL dosyasına yayar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ pragma(pragma_statement) ];
@@ -50,19 +50,17 @@ __interface A
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
+[Tek başına öznitelikler](stand-alone-attributes.md)<br/>
 [pack](../../preprocessor/pack.md)

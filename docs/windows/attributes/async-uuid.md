@@ -1,23 +1,23 @@
 ---
-title: async_uuid (C++ com özniteliği)
+title: async_uuid (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.async_uuid
 helpviewer_keywords:
 - async_uuid attribute
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
-ms.openlocfilehash: 537bd6d645532d9d5d20b740125c66f3953239bc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cb0abdcedc26c5ffe197e52d5da4fbad1ec516d2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168466"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836250"
 ---
 # <a name="async_uuid"></a>async_uuid
 
 Bir COM arabiriminin hem zaman uyumlu hem de zaman uyumsuz sürümlerini tanımlamak için MıDL derleyicisini yönlendiren UUID 'yi belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [async_uuid (uuid)]
@@ -30,7 +30,7 @@ Arabirimin sürümünü tanımlayan bir UUID.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Async_uuid** C++ özniteliği [async_uuid](/windows/win32/Midl/async-uuid) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**Async_uuid** C++ özniteliği, [async_uuid](/windows/win32/Midl/async-uuid) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -48,13 +48,11 @@ __interface ICustom {
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|`interface`|
+|**Şunlara uygulanır**|`interface`|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|**Dual**, **dispınterface**|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -62,4 +60,4 @@ __interface ICustom {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Arabirim Öznitelikleri](interface-attributes.md)
+[Arabirim öznitelikleri](interface-attributes.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: eb782b0d16c4bc826da4ea9291756f34ca0eaf29
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d2f3097637b3708c16f3048a34dd32b7f6fd80b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215419"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840147"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -34,7 +34,7 @@ Bu sınıf şablonları ve işlevleri, gelişmiş performans ile ilgili olarak o
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[mutlak](../standard-library/valarray-functions.md#abs)|, Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin mutlak değerine eşit olan bir valarray döndürür.|
 |[acos](../standard-library/valarray-functions.md#acos)|, Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin Arkkosinüs değerine eşit olan bir valarray döndürür.|
@@ -58,7 +58,7 @@ Bu sınıf şablonları ve işlevleri, gelişmiş performans ile ilgili olarak o
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç! =](../standard-library/valarray-operators.md#op_neq)|Eşit olarak boyutlandırılmış iki valarışın öğesine karşılık gelen öğelerin eşit olup olmadığını veya bir valarray öğesinin tüm öğelerinin valarray öğesi türünün belirtilen bir değeri ile eşit olup olmadığını sınar.|
 |[işlecinde](../standard-library/valarray-operators.md#op_mod)|İki eşit ölçekli valarışın karşılık gelen öğelerin bölünmesinin veya bir valarray 'in belirtilen bir değeri valarray öğesinin bir valarray tarafından bölünmesinin geri kalanını edinir.|
@@ -81,7 +81,7 @@ Bu sınıf şablonları ve işlevleri, gelişmiş performans ile ilgili olarak o
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[gslice sınıfı](../standard-library/gslice-class.md)|Bir valarray 'ın çok boyutlu dilimlerini tanımlamak için kullanılan valarray için yardımcı program sınıfı.|
 |[gslice_array sınıfı](../standard-library/gslice-array-class.md)|Bir valarray genel dilimi tarafından tanımlanan alt küme dizileri arasında işlemler sağlayarak genel dilim nesnelerini destekleyen iç, yardımcı sınıf şablonu.|
@@ -93,7 +93,7 @@ Bu sınıf şablonları ve işlevleri, gelişmiş performans ile ilgili olarak o
 
 ### <a name="specializations"></a>Uzmanlıklar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[valarray \<bool> sınıfı](../standard-library/valarray-bool-class.md)|Tür öğelerine valarray sınıf şablonunun özelleşmiş bir sürümü \<**Type**> **`bool`** .|
 

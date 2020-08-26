@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: d0bba986889dfbd17fddcd0c6985c082f6f74c29
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3054a29bd1bc82861461851d4403a7095ac1fcbd
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230252"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846517"
 ---
 # <a name="binomial_distribution-class"></a>binomial_distribution Sınıfı
 
@@ -81,10 +81,8 @@ Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<ra
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı veya **`int`** hiçbir değer sağlanmazsa, binom dağılımı ayrık olasılık işlevine göre dağıtılan bir dağılımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[binomial_distribution](#binomial_distribution)|`binomial_distribution::t`|`binomial_distribution::param`|
-|`binomial_distribution::operator()`|`binomial_distribution::p`|[param_type](#param_type)|
+[binomial_distribution](#binomial_distribution)\
+[param_type](#param_type)
 
 Özellik üyeleri `t()` ve `p()` Şu anda depolanmış olan dağıtım parametre değerlerini sırasıyla *t* ve *p* döndürür.
 
@@ -231,7 +229,7 @@ Histogram for 100 samples:
 
 **Ad alanı:** std
 
-## <a name="binomial_distributionbinomial_distribution"></a><a name="binomial_distribution"></a>binomial_distribution:: binomial_distribution
+## <a name="binomial_distributionbinomial_distribution"></a><a name="binomial_distribution"></a> binomial_distribution:: binomial_distribution
 
 Dağıtımı oluşturur.
 
@@ -253,13 +251,13 @@ explicit binomial_distribution(const param_type& parm);
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0 ≤ t` '`0.0 ≤ p ≤ 1.0`
+**Önkoşul:** `0 ≤ t` ' `0.0 ≤ p ≤ 1.0`
 
 İlk Oluşturucu, saklı *p* değeri *p* değerini tutan ve depolanan *t* değeri *t*değerini tutan bir nesne oluşturur.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="binomial_distributionparam_type"></a><a name="param_type"></a>binomial_distribution::p aram_type
+## <a name="binomial_distributionparam_type"></a><a name="param_type"></a> binomial_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 
@@ -288,7 +286,7 @@ struct param_type {
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0 ≤ t` '`0.0 ≤ p ≤ 1.0`
+**Önkoşul:** `0 ≤ t` ' `0.0 ≤ p ≤ 1.0`
 
 Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 

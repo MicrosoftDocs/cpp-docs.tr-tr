@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 9fc2903180a055c18c6f3779b1da55ee347d2535
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a9eda80fbabf939b9e3a5f8a0ef5b76e46656740
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230434"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840264"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını güncelleştirme (Bölüm 1)
 
@@ -26,7 +26,7 @@ Bu izlenecek yol, fareyi kullanarak çizgi çizimleri oluşturmayı sağlayan Kl
 
 [Karalama 1,0 MFC örneği](https://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe). Visual Studio 2017 veya sonraki bir sürüme dönüştürme hakkında yardım için bkz. [taşıma Kılavuzu: MFC karalama](../porting/porting-guide-mfc-scribble.md).
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 İzlenecek yolun bu bölümü aşağıdaki bölümlere sahiptir:
 
@@ -42,7 +42,7 @@ Bu izlenecek yol, fareyi kullanarak çizgi çizimleri oluşturmayı sağlayan Kl
 
 - [Uygulamanın görünümünü ayarlama](#setlook)
 
-## <a name="replacing-the-base-classes"></a><a name="replaceclass"></a>Taban sınıfları değiştirme
+## <a name="replacing-the-base-classes"></a><a name="replaceclass"></a> Taban sınıfları değiştirme
 
 Bir menüyü destekleyen bir uygulamayı bir şeridi destekleyen bir uygulamaya dönüştürmek için, güncelleştirilmiş temel sınıflardan uygulamayı, çerçeve penceresini ve araç çubuğu sınıflarını türetmeniz gerekir. (Orijinal karalama örneğinizi değiştirmemenizi öneririz. Bunun yerine, karalama projesini temizleyin, başka bir dizine kopyalayın ve sonra kopyayı değiştirin.)
 
@@ -103,11 +103,11 @@ Bir menüyü destekleyen bir uygulamayı bir şeridi destekleyen bir uygulamaya 
 
 1. Değişiklikleri kaydedin ve uygulamayı derleyin ve çalıştırın.
 
-## <a name="adding-bitmaps-to-the-project"></a><a name="addbitmap"></a>Projeye bit eşlemler ekleme
+## <a name="adding-bitmaps-to-the-project"></a><a name="addbitmap"></a> Projeye bit eşlemler ekleme
 
 Bu izlenecek yolun sonraki dört adımı için bit eşlem kaynakları gerekir. Uygun bit eşlemleri çeşitli yollarla edinebilirsiniz:
 
-- Kendi bit eşlemlerinizi stok için [kaynak düzenleyicilerini](../windows/resource-editors.md) kullanın. Ya da Visual Studio 'da bulunan Taşınabilir Ağ Grafikleri (. png) görüntülerinden bitmapleri birleştirmek için kaynak düzenleyicilerini kullanın ve [Visual Studio görüntü kitaplığından](https://docs.microsoft.com/visualstudio/designers/the-visual-studio-image-library)indirebilirsiniz.
+- Kendi bit eşlemlerinizi stok için [kaynak düzenleyicilerini](../windows/resource-editors.md) kullanın. Ya da Visual Studio 'da bulunan Taşınabilir Ağ Grafikleri (. png) görüntülerinden bitmapleri birleştirmek için kaynak düzenleyicilerini kullanın ve [Visual Studio görüntü kitaplığından](/visualstudio/designers/the-visual-studio-image-library)indirebilirsiniz.
 
     Ancak, **Şerit** Kullanıcı arabirimi belirli Bit eşlemlerin saydam görüntüleri desteklemesini gerektirir. Saydam bit eşlemler 32 bitlik pikselleri kullanır; burada 24 bit rengin kırmızı, yeşil ve mavi bileşenlerini belirtir ve 8 bit rengin saydamlığını belirten bir *Alfa kanalını* tanımlar. Geçerli kaynak düzenleyicileri, 32 bit pikselle bit eşlemleri görüntüleyebilir, ancak değiştiremez. Sonuç olarak, saydam bit eşlemleri işlemek için kaynak düzenleyicileri yerine bir dış görüntü düzenleyicisi kullanın.
 
@@ -153,7 +153,7 @@ Bu izlenecek yol, kaynak dosyalarını [Izlenecek yol: MFC kullanarak şerit uyg
    > [!NOTE]
    > Yalnızca ilk dört 16x16 görüntüsünü (16x64) ihtiyacımız olduğundan, bu bit eşlemin sağ tarafındaki genişliğini 128 ' dan 64 ' e kırpabilirsiniz.
 
-## <a name="adding-a-ribbon-resource-to-the-project"></a><a name="addribbon"></a>Projeye şerit kaynağı ekleme
+## <a name="adding-a-ribbon-resource-to-the-project"></a><a name="addribbon"></a> Projeye şerit kaynağı ekleme
 
 Menüler kullanan bir uygulamayı şerit kullanan bir uygulamaya dönüştürdüğünüzde, var olan menüleri kaldırmanız veya devre dışı bırakmanız gerekmez. Yalnızca bir şerit kaynağı oluşturun, Şerit düğmeleri ekleyin ve ardından yeni düğmeleri mevcut menü öğeleriyle ilişkilendirin. Menüler artık görünmeyebilir, ancak Şerit çubuğundaki iletiler, menüler ve menü kısayolları aracılığıyla yönlendirilir.
 
@@ -206,7 +206,7 @@ Menüler kullanan bir uygulamayı şerit kullanan bir uygulamaya dönüştürdü
 
    1. **Düğmeleri**değiştirdiniz. **Öğe düzenleyicisinden**çıkmak için **Kapat** ' a tıklayın.
 
-## <a name="creating-an-instance-of-the-ribbon-bar"></a><a name="createinstance"></a>Şerit çubuğunun bir örneğini oluşturma
+## <a name="creating-an-instance-of-the-ribbon-bar"></a><a name="createinstance"></a> Şerit çubuğunun bir örneğini oluşturma
 
 Aşağıdaki adımlarda, uygulamanız başlatıldığında şerit çubuğunun bir örneğinin nasıl oluşturulacağı gösterilmektedir. Bir uygulamaya şerit çubuğu eklemek için MainFrm. h dosyasında Şerit çubuğunu bildirin. Ardından, MainFrm. cpp dosyasında, şerit kaynağını yüklemek için kod yazın.
 
@@ -230,7 +230,7 @@ Aşağıdaki adımlarda, uygulamanız başlatıldığında şerit çubuğunun bi
     m_wndRibbonBar.LoadFromResource(IDR_RIBBON1);
     ```
 
-## <a name="customizing-the-ribbon-resource"></a><a name="addcategory"></a>Şerit kaynağını özelleştirme
+## <a name="customizing-the-ribbon-resource"></a><a name="addcategory"></a> Şerit kaynağını özelleştirme
 
 Artık **uygulama** düğmesini oluşturduğunuza göre, şerit 'e öğe ekleyebilirsiniz.
 
@@ -247,7 +247,7 @@ Artık **uygulama** düğmesini oluşturduğunuza göre, şerit 'e öğe ekleyeb
 
 1. Değişiklikleri kaydedin ve uygulamayı derleyin ve çalıştırın. Karalama uygulamasının görüntülenmesi gerekir ve bir menü çubuğu yerine pencerenin üst kısmında bir şerit çubuğu olmalıdır. Şerit çubuğunda bir kategori, **giriş**ve **giriş** bir panel, **düzenleme**olmalıdır. Eklediğiniz Şerit düğmelerinin mevcut olay işleyicileriyle ilişkilendirilmesi gerekir ve **Açık**, **kapalı**, **Kaydet**, **Yazdır**ve **Tümünü Temizle** düğmeleri beklendiği gibi çalışmalıdır.
 
-## <a name="setting-the-look-of-the-application"></a><a name="setlook"></a>Uygulamanın görünümünü ayarlama
+## <a name="setting-the-look-of-the-application"></a><a name="setlook"></a> Uygulamanın görünümünü ayarlama
 
 *Görsel yönetici* , bir uygulamanın tüm çizimini denetleyen genel bir nesnedir. Özgün karalama uygulaması Office 2000 kullanıcı arabirimi (UI) stilini kullandığından, uygulama eski-Fashioned görünebilir. Office 2007 uygulamasına benzer şekilde uygulamayı Office 2007 Visual Manager 'ı kullanacak şekilde sıfırlayabilirsiniz.
 

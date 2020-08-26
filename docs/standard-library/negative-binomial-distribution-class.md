@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: 5168bd054d045f624a970b177113203179e1fb8a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd5153a8eb0652aed7d963fb1dbdb1277e4f6718
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212208"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836458"
 ---
 # <a name="negative_binomial_distribution-class"></a>negative_binomial_distribution Sınıfı
 
@@ -78,10 +78,8 @@ Tamsayı sonuç türü, varsayılan olarak olur **`int`** . Olası türler için
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağılımı veya **`int`** hiçbir değer sağlanmazsa negatif binom dağıtımı ayrık olasılık işlevine göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[negative_binomial_distribution](#negative_binomial_distribution)|`negative_binomial_distribution::k`|`negative_binomial_distribution::param`|
-|`negative_binomial_distribution::operator()`|`negative_binomial_distribution::p`|[param_type](#param_type)|
+[negative_binomial_distribution](#negative_binomial_distribution)\
+[param_type](#param_type)
 
 Özellik üyeleri `k()` ve `p()` Şu anda depolanmış olan dağıtım parametre değerlerini sırasıyla *k* ve *p* döndürür.
 
@@ -221,7 +219,7 @@ Histogram for 100 samples:
 
 **Ad alanı:** std
 
-## <a name="negative_binomial_distributionnegative_binomial_distribution"></a><a name="negative_binomial_distribution"></a>negative_binomial_distribution:: negative_binomial_distribution
+## <a name="negative_binomial_distributionnegative_binomial_distribution"></a><a name="negative_binomial_distribution"></a> negative_binomial_distribution:: negative_binomial_distribution
 
 Dağıtımı oluşturur.
 
@@ -243,13 +241,13 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < k` '`0.0 < p ≤ 1.0`
+**Önkoşul:** `0.0 < k` ' `0.0 < p ≤ 1.0`
 
 İlk Oluşturucu, saklı `p` değeri *p* değerini tutan ve saklanan `k` değeri *k*değerini tutan bir nesne oluşturur.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="negative_binomial_distributionparam_type"></a><a name="param_type"></a>negative_binomial_distribution::p aram_type
+## <a name="negative_binomial_distributionparam_type"></a><a name="param_type"></a> negative_binomial_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 
@@ -270,7 +268,7 @@ struct param_type {typedef negative_binomial_distribution `<` result_type> distr
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Önkoşul:** `0.0 < k` '`0.0 < p ≤ 1.0`
+**Önkoşul:** `0.0 < k` ' `0.0 < p ≤ 1.0`
 
 Bu yapı, örnek oluşturma sırasında dağıtımın sınıf oluşturucusuna, `param()` var olan bir dağıtımın saklı parametrelerini ayarlamak için üye işlevine ve `operator()` depolanan parametrelerin yerine kullanılmak üzere geçirilebilir.
 

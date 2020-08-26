@@ -32,18 +32,18 @@ helpviewer_keywords:
 - Hash method
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-ms.openlocfilehash: 06e860425215d9fde268b780c001301b14a1caa1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a45b7ef1a31c3ecf34b15ee35bce48559465a905
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210437"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840316"
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl Sınıfı
 
 Bir satır kümesinden rastgele satırlar getiren OLE DB [IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85)) arabirimini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -63,20 +63,20 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-`IRowsetLocateImpl`türetilen bir sınıf.
+*T*<br/>
+Sınıfından türetilmiş bir sınıf `IRowsetLocateImpl` .
 
 *RowsetInterface*<br/>
-`IRowsetImpl`türetilen bir sınıf.
+Sınıfından türetilmiş bir sınıf `IRowsetImpl` .
 
 *RowClass*<br/>
-`HROW`için depolama birimi.
+İçin depolama birimi `HROW` .
 
 *MapClass*<br/>
 Sağlayıcı tarafından tutulan tüm satır tutamaçları için depolama birimi.
 
 *BookmarkKeyType*<br/>
-Yer işaretinin, uzun veya bir dize gibi türü. Sıradan yer işaretleri en az iki bayt uzunluğunda olmalıdır. (Tek baytlık uzunluk, OLE DB [Standart yer işaretleri](/previous-versions/windows/desktop/ms712954(v=vs.85))`DBBMK_FIRST`, `DBBMK_LAST`ve `DBBMK_INVALID`için ayrılmıştır.)
+Yer işaretinin, uzun veya bir dize gibi türü. Sıradan yer işaretleri en az iki bayt uzunluğunda olmalıdır. (Tek baytlık uzunluk, OLE DB [Standart yer işaretleri](/previous-versions/windows/desktop/ms712954(v=vs.85)) `DBBMK_FIRST` , `DBBMK_LAST` , ve için ayrılmıştır `DBBMK_INVALID` .)
 
 *BookmarkType*<br/>
 Yer işareti-veri ilişkilerini sürdürmek için eşleme mekanizması.
@@ -92,34 +92,34 @@ Yer işareti tarafından tutulan tüm satır tutamaçları için depolama birimi
 
 ### <a name="interface-methods"></a>Arabirim yöntemleri
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[Compare](#compare)|İki yer işaretini karşılaştırır.|
+|[Karşılaştır](#compare)|İki yer işaretini karşılaştırır.|
 |[GetRowsAt](#getrowsat)|Bir yer işaretinin içindeki bir uzaklığa göre belirtilen satırdan başlayarak satırları getirir.|
 |[GetRowsByBookmark](#getrowsbybookmark)|Belirtilen yer işaretleriyle eşleşen satırları getirir.|
-|[Yla](#hash)|Belirtilen yer işaretleri için karma değerleri döndürür.|
+|[Karma](#hash)|Belirtilen yer işaretleri için karma değerleri döndürür.|
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |[m_rgBookmarks](#rgbookmarks)|Yer işareti dizisi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IRowsetLocateImpl`, [IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85)) arabiriminin OLE DB Şablonları uygulamasıdır. `IRowsetLocate`, bir satır kümesinden rastgele satırları getirmek için kullanılır. Bu arabirimi uygulamayan bir satır kümesi `sequential` satır kümesidir. Satır kümesinde `IRowsetLocate` bulunduğunda, sütun 0 satır için yer işaretidir; Bu sütunu okumak, aynı satıra yeniden konumlandırmak için kullanılabilecek bir yer işareti değeri elde eder.
+`IRowsetLocateImpl` , [IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85)) arabiriminin OLE DB Şablonları uygulamasıdır. `IRowsetLocate` satır kümesinden rastgele satırları getirmek için kullanılır. Bu arabirimi uygulamayan bir satır `sequential` kümesi bir satır kümesidir. `IRowsetLocate`Bir satır kümesinde olduğunda, sütun 0 satırlar için yer işaretidir. bu sütunu okumak, aynı satıra yeniden konumlandırmak için kullanılabilecek bir yer işareti değeri alır.
 
-`IRowsetLocateImpl`, sağlayıcılarda yer işareti desteğini uygulamak için kullanılır. Yer işaretleri, tüketicinin bir satıra hızla dönmesini sağlayan yer tutuculardır (bir satır kümesinde dizinler) ve verilere yüksek hızlı erişim sağlar. Sağlayıcı, hangi yer işaretlerinin bir satırı benzersiz bir şekilde tanımlayabileceğini belirler. `IRowsetLocateImpl` yöntemleri kullanarak, yer işaretlerini karşılaştırabilir, satırları uzaklığa göre alabilir, satırları yer işaretine göre alabilir ve yer işaretleri için karma değerleri döndürebilir.
+`IRowsetLocateImpl` , sağlayıcılarda yer işareti desteğini uygulamak için kullanılır. Yer işaretleri, tüketicinin bir satıra hızla dönmesini sağlayan yer tutuculardır (bir satır kümesinde dizinler) ve verilere yüksek hızlı erişim sağlar. Sağlayıcı, hangi yer işaretlerinin bir satırı benzersiz bir şekilde tanımlayabileceğini belirler. `IRowsetLocateImpl`Yöntemleri kullanarak yer işaretlerini karşılaştırabilir, satırları uzaklığa göre alabilir, satırları yer işaretine göre alabilir ve yer işaretleri için karma değerleri döndürebilirsiniz.
 
 Bir satır kümesinde OLE DB yer işaretlerini desteklemek için, satır kümesinin bu sınıftan devralmasını sağlayın.
 
-Yer işareti desteğini uygulama hakkında daha fazla bilgi için bkz. *Visual C++ Programcı Kılavuzu* 'Nda [yer işaretleri Için sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md) [ve](/previous-versions/windows/desktop/ms709728(v=vs.85)) *OLE DB Programcı 'nın* , Platform SDK 'daki başvurusu.
+Yer işareti desteğini uygulama hakkında daha fazla bilgi için bkz. *Visual C++ Programcı Kılavuzu* 'Ndaki [yer Işaretleri için sağlayıcı DESTEĞI](../../data/oledb/provider-support-for-bookmarks.md) ve Platform SDK 'daki *OLE DB Programcı başvurusu* içindeki [yer işaretleri](/previous-versions/windows/desktop/ms709728(v=vs.85)) .
 
-## <a name="irowsetlocateimplcompare"></a><a name="compare"></a>IRowsetLocateImpl:: Compare
+## <a name="irowsetlocateimplcompare"></a><a name="compare"></a> IRowsetLocateImpl:: Compare
 
 İki yer işaretini karşılaştırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (Compare )(HCHAPTER /* hReserved */,
@@ -136,23 +136,23 @@ STDMETHOD (Compare )(HCHAPTER /* hReserved */,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yer işaretlerinin ikisi de standart OLE DB tanımlı [Standart yer işareti](/previous-versions/windows/desktop/ms712954(v=vs.85)) (`DBBMK_FIRST`, `DBBMK_LAST`veya `DBBMK_INVALID`) olabilir. `pComparison` döndürülen değer iki yer işareti arasındaki ilişkiyi gösterir:
+Yer işaretlerinin ikisi de standart ole db tanımlı [Standart yer işareti](/previous-versions/windows/desktop/ms712954(v=vs.85)) ( `DBBMK_FIRST` , `DBBMK_LAST` veya `DBBMK_INVALID` ) olabilir. İçinde döndürülen değer, `pComparison` iki yer işareti arasındaki ilişkiyi gösterir:
 
-- DBCOMPARE_LT (`cbBookmark1` `cbBookmark2`öncedir.)
+- DBCOMPARE_LT ( `cbBookmark1` öncedir `cbBookmark2` .)
 
-- DBCOMPARE_EQ (`cbBookmark1` `cbBookmark2`eşittir.)
+- DBCOMPARE_EQ ( `cbBookmark1` eşittir `cbBookmark2` .)
 
-- DBCOMPARE_GT (`cbBookmark1` `cbBookmark2`.)
+- DBCOMPARE_GT ( `cbBookmark1` öğesinden sonra `cbBookmark2` .)
 
 - DBCOMPARE_NE (yer işaretleri eşit ve sıralı değildir.)
 
 - DBCOMPARE_NOTCOMPARABLE (yer işaretleri karşılaştırılamıyor.)
 
-## <a name="irowsetlocateimplgetrowsat"></a><a name="getrowsat"></a>IRowsetLocateImpl:: GetRowsAt
+## <a name="irowsetlocateimplgetrowsat"></a><a name="getrowsat"></a> IRowsetLocateImpl:: GetRowsAt
 
 Bir yer işaretinin içindeki bir uzaklığa göre belirtilen satırdan başlayarak satırları getirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,
@@ -173,13 +173,13 @@ STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,
 
 Bunun yerine imleç konumundan getirmek için [IRowset:: GetRowsAt](/previous-versions/windows/desktop/ms723031(v=vs.85))kullanın.
 
-`IRowsetLocateImpl::GetRowsAt`, imleç konumunu değiştirmez.
+`IRowsetLocateImpl::GetRowsAt` imleç konumunu değiştirmez.
 
-## <a name="irowsetlocateimplgetrowsbybookmark"></a><a name="getrowsbybookmark"></a>IRowsetLocateImpl:: GetRowsByBookmark
+## <a name="irowsetlocateimplgetrowsbybookmark"></a><a name="getrowsbybookmark"></a> IRowsetLocateImpl:: GetRowsByBookmark
 
 Belirtilen yer işaretleriyle eşleşen bir veya daha fazla satırı getirir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,
@@ -199,13 +199,13 @@ Diğer parametreler için *OLE DB Programcı başvurusunda* [IRowsetLocate:: Get
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yer işareti, tanımladığınız bir değer veya OLE DB [Standart yer işaretleri](/previous-versions/windows/desktop/ms712954(v=vs.85)) (`DBBMK_FIRST` veya `DBBMK_LAST`) olabilir. İmleç konumunu değiştirmez.
+Yer işareti, tanımladığınız bir değer veya OLE DB [Standart yer işaretleri](/previous-versions/windows/desktop/ms712954(v=vs.85)) ( `DBBMK_FIRST` veya) olabilir `DBBMK_LAST` . İmleç konumunu değiştirmez.
 
-## <a name="irowsetlocateimplhash"></a><a name="hash"></a>IRowsetLocateImpl:: Hash
+## <a name="irowsetlocateimplhash"></a><a name="hash"></a> IRowsetLocateImpl:: Hash
 
 Belirtilen yer işaretleri için karma değerleri döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (Hash )(HCHAPTER /* hReserved */,
@@ -223,11 +223,11 @@ STDMETHOD (Hash )(HCHAPTER /* hReserved */,
 
 Diğer parametreler için *OLE DB Programcı başvurusunda* [IRowsetLocate:: Hash](/previous-versions/windows/desktop/ms709697(v=vs.85)) ' a bakın.
 
-## <a name="irowsetlocateimplm_rgbookmarks"></a><a name="rgbookmarks"></a>IRowsetLocateImpl:: m_rgBookmarks
+## <a name="irowsetlocateimplm_rgbookmarks"></a><a name="rgbookmarks"></a> IRowsetLocateImpl:: m_rgBookmarks
 
 Yer işareti dizisi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CAtlArray<DBROWCOUNT> m_rgBookmarks;
@@ -236,7 +236,7 @@ CAtlArray<DBROWCOUNT> m_rgBookmarks;
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
-[IRowsetLocate: IRowset](/previous-versions/windows/desktop/ms721190(v=vs.85))
-[yer Işaretleri için sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md)<br/>
-[Yer İşaretleri](/previous-versions/windows/desktop/ms709728(v=vs.85))
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[IRowsetLocate: IRowset](/previous-versions/windows/desktop/ms721190(v=vs.85)) 
+ [Yer işaretleri Için sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md)<br/>
+[Bookmarks](/previous-versions/windows/desktop/ms709728(v=vs.85))

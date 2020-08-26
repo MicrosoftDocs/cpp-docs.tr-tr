@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-ms.openlocfilehash: fc003ebe9301c3648b47c796910d20096e7ef23d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ba2ec419e524ca571120fe82c7cbf63c1a97eaaa
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217369"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839601"
 ---
 # <a name="uniform_real_distribution-class"></a>uniform_real_distribution Sınıfı
 
@@ -78,10 +78,8 @@ Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler
 
 Sınıf şablonu, bir kullanıcı tarafından belirtilen integral kayan nokta türünün değerlerini üreten ve her değerin eşit olması için bir dağıtımı olan, kapsamlı bir dağıtım tanımlar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[uniform_real_distribution](#uniform_real_distribution)|`uniform_real_distribution::a`|`uniform_real_distribution::param`|
-|`uniform_real_distribution::operator()`|`uniform_real_distribution::b`|[param_type](#param_type)|
+[uniform_real_distribution](#uniform_real_distribution)\
+[param_type](#param_type)|
 
 Özellik üyesi, `a()` dağıtımın Şu anda depolanmış en düşük ilişkisini döndürür, ancak `b()` Şu anda depolanan en yüksek sınırı döndürür. Bu dağıtım sınıfı için, bu en küçük ve en büyük değerler ortak özellik işlevleri tarafından döndürülen `min()` ve konusunda açıklanan olanlarla aynıdır `max()` [\<random>](../standard-library/random.md) .
 
@@ -178,7 +176,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="uniform_real_distributionuniform_real_distribution"></a><a name="uniform_real_distribution"></a>uniform_real_distribution:: uniform_real_distribution
+## <a name="uniform_real_distributionuniform_real_distribution"></a><a name="uniform_real_distribution"></a> uniform_real_distribution:: uniform_real_distribution
 
 Dağıtımı oluşturur.
 
@@ -206,7 +204,7 @@ Rastgele değerler için üst sınır (dışlamalı).
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="uniform_real_distributionparam_type"></a><a name="param_type"></a>uniform_real_distribution::p aram_type
+## <a name="uniform_real_distributionparam_type"></a><a name="param_type"></a> uniform_real_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 

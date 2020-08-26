@@ -5,20 +5,19 @@ f1_keywords:
 - iosfwd/std::ostream
 - iosfwd/std::wostream
 ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
-ms.openlocfilehash: a61eeb98dfd275b10749e86043a3f7042be84ab9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff9f19f56c8d8fdb9e469e6361a5419468fe7e67
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224662"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846413"
 ---
 # <a name="ltostreamgt-typedefs"></a>&lt;ostream &gt; tür tanımları
 
-|||
-|-|-|
-|[ostream](#ostream)|[wostream](#wostream)|
+[ostream](#ostream)\
+[wostream](#wostream)
 
-## <a name="ostream"></a><a name="ostream"></a>ostream
+## <a name="ostream"></a><a name="ostream"></a> ostream
 
 Üzerinde özelleştirilmiş ve özelleştirilmiş basic_ostream bir tür oluşturur **`char`** `char_traits` **`char`** .
 
@@ -30,7 +29,7 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 
 Tür, [basic_ostream](../standard-library/basic-ostream-class.md) **`char`** varsayılan karakter nitelikleri olan türdeki öğeler için özelleştirilmiş basic_ostream sınıf şablonu için bir eş anlamlıdır.
 
-## <a name="wostream"></a><a name="wostream"></a>wostream
+## <a name="wostream"></a><a name="wostream"></a> wostream
 
 Üzerinde özelleştirilmiş ve özelleştirilmiş basic_ostream bir tür oluşturur **`wchar_t`** `char_traits` **`wchar_t`** .
 

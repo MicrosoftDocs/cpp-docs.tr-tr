@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: 138011ec4ccf6c010f002d61cdb8ae8b0bac1796
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0fed268b6c3f318b3e308f90e94862fdf969e3fa
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212156"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836406"
 ---
 # <a name="normal_distribution-class"></a>normal_distribution Sınıfı
 
@@ -78,10 +78,8 @@ Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa normal dağıtıma göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[normal_distribution](#normal_distribution)|`normal_distribution::mean`|`normal_distribution::param`|
-|`normal_distribution::operator()`|`normal_distribution::stddev`|[param_type](#param_type)|
+[normal_distribution](#normal_distribution)\
+[param_type](#param_type)
 
 Özelliği, `mean()` ve `stddev()` sırasıyla depolanan dağıtım parametrelerinin değerlerini döndürür. *mean* *stddev*
 
@@ -187,7 +185,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="normal_distributionnormal_distribution"></a><a name="normal_distribution"></a>normal_distribution:: normal_distribution
+## <a name="normal_distributionnormal_distribution"></a><a name="normal_distribution"></a> normal_distribution:: normal_distribution
 
 Dağıtımı oluşturur.
 
@@ -215,7 +213,7 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="normal_distributionparam_type"></a><a name="param_type"></a>normal_distribution::p aram_type
+## <a name="normal_distributionparam_type"></a><a name="param_type"></a> normal_distribution::p aram_type
 
 Dağıtımın parametrelerini depolar.
 

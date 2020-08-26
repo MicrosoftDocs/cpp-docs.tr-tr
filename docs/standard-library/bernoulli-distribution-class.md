@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::bernoulli_distribution [C++], param_type
 - std::bernoulli_distribution [C++], param_type
 ms.assetid: 586bcde1-95ca-411a-bf17-4aaf19482f34
-ms.openlocfilehash: 8b8e433b5ea1283fb60273a2fd21106c65867c0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bfb63451c8789f7d390e2387ed8fadae23d1c7a5
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230265"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846530"
 ---
 # <a name="bernoulli_distribution-class"></a>bernoulli_distribution Sınıfı
 
@@ -73,10 +73,8 @@ Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<ra
 
 Sınıfı, **`bool`** Bernoulli Distribution ayrık olasılık işlevine göre dağıtılan türünde değerler üreten bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[bernoulli_distribution](#bernoulli_distribution)|`bernoulli_distribution::p`|`bernoulli_distribution::param`|
-|`bernoulli_distribution::operator()`||[param_type](#param_type)|
+[bernoulli_distribution](#bernoulli_distribution)\
+[param_type](#param_type)
 
 Özellik üyesi, `p()` depolanmış olan dağıtım parametresi değerini döndürür `p` .
 
@@ -158,7 +156,7 @@ true :::::::::::::::::::::::::::::::::::::::::
 
 **Ad alanı:** std
 
-## <a name="bernoulli_distributionbernoulli_distribution"></a><a name="bernoulli_distribution"></a>bernoulli_distribution:: bernoulli_distribution
+## <a name="bernoulli_distributionbernoulli_distribution"></a><a name="bernoulli_distribution"></a> bernoulli_distribution:: bernoulli_distribution
 
 Dağıtımı oluşturur.
 
@@ -183,7 +181,7 @@ Depolanan `p` dağıtım parametresi.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="bernoulli_distributionparam_type"></a><a name="param_type"></a>bernoulli_distribution::p aram_type
+## <a name="bernoulli_distributionparam_type"></a><a name="param_type"></a> bernoulli_distribution::p aram_type
 
 Dağıtımın parametrelerini içerir.
 

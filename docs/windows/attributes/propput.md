@@ -1,23 +1,23 @@
 ---
-title: propput (C++ com özniteliği)
+title: propput (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.propput
 helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-ms.openlocfilehash: 8817d0042c3055b5bbf9b111e6f02b9d9a4c152c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 11f216dd183f3977aee9af90c6579d01cad45fdf
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166451"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839952"
 ---
 # <a name="propput"></a>propput
 
 Bir özellik ayarı işlevi belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [propput]
@@ -33,13 +33,11 @@ Bir özellik ayarı işlevi belirtir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Yöntem|
+|**Şunlara uygulanır**|Yöntem|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`propget`, `propputref`|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
@@ -47,6 +45,6 @@ Bir özellik ayarı işlevi belirtir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Yöntem Öznitelikleri](method-attributes.md)<br/>
+[Yöntem öznitelikleri](method-attributes.md)<br/>
 [propget](propget.md)<br/>
 [propputref](propputref.md)

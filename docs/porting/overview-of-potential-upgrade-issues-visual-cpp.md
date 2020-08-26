@@ -2,12 +2,12 @@
 title: Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: fcfa8e8ea334cf7c2486513ae162b04014e7f24b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d62bccfb3e508145773c01b26976f46dbcb6490f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231643"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839679"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 
@@ -98,9 +98,8 @@ Bu seçeneği kullanan projeler, bazı varsayılan kitaplıkların içerikleri y
 
 Aşağıdaki tabloda, içeriği Visual Studio 2015 ile başlayarak değiştirilen kitaplıklar gösterilmektedir. Yükseltmek için, ikinci sütundaki yeni kitaplık adlarını ilk sütundaki kitaplıklara eklemeniz gerekir. Bu kitaplıkların bazıları içeri aktarma kitaplıklarıdır, ancak böyle bir önemi yoktur.
 
-|||
-|-|-|
 |Şunu kullanıyorsanız:|Şu kitaplıkları kullanmanız gerekir:|
+|-|-|
 |Libcmt. lib|Libcmt. lib, libucrt. lib, libvcruntime. lib|
 |libcmtd. lib|libcmtd. lib, libucrtd. lib, libvcruntimed. lib|
 |Msvcrt. lib|Msvcrt. lib, UCRT. lib, vcruntime. lib|

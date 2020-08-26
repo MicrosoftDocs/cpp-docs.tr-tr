@@ -10,18 +10,18 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-ms.openlocfilehash: db2f8b2f889d9454db737cf5b2a39b414f1d67f1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c7e2ca2c14ed0ac5f561fab446f6cd2dcc19649d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230097"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836550"
 ---
 # <a name="complex-class"></a>complex Sınıfı
 
 Sınıf şablonu `Type` , bir karmaşık sayının gerçek bölümünü temsil eden bir, diğeri de sanal parçayı temsil eden, türünde iki nesneyi depolayan bir nesneyi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Type>
@@ -46,26 +46,26 @@ Sınıfının bir nesnesi `Type` :
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[ş](#complex)|Belirtilen gerçek ve sanal parçalar ile karmaşık bir sayı ya da başka bir karmaşık sayının kopyası olarak oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[value_type](#value_type)|Karmaşık bir sayının gerçek ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[imag](#imag)|Karmaşık bir sayının sanal bileşenini ayıklar.|
-|[gerçek](#real)|Karmaşık bir sayının gerçek bileşenini ayıklar.|
+|[real](#real)|Karmaşık bir sayının gerçek bileşenini ayıklar.|
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç * =](#op_star_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan bir faktörle bir hedef karmaşık sayıyı çarparak çarpar.|
 |[işleç + =](#op_add_eq)|Eklenmiş sayının, eklendiği karmaşık sayının gerçek ve sanal kısımlarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı ekler.|
@@ -73,7 +73,7 @@ Sınıfının bir nesnesi `Type` :
 |[işleç/=](#op_div_eq)|Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan ve karmaşık olabilecek bir hedef karmaşık sayıyı bölen tarafından böler.|
 |[işleç =](#op_eq)|Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.|
 
-## <a name="complex"></a><a name="complex"></a>ş
+## <a name="complex"></a><a name="complex"></a> ş
 
 Belirtilen gerçek ve sanal parçalar ile karmaşık bir sayı ya da başka bir karmaşık sayının kopyası olarak oluşturur.
 
@@ -157,7 +157,7 @@ int main( )
 }
 ```
 
-## <a name="imag"></a><a name="imag"></a>imag
+## <a name="imag"></a><a name="imag"></a> imag
 
 Karmaşık bir sayının sanal bileşenini ayıklar.
 
@@ -211,7 +211,7 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="operator"></a><a name="op_star_eq"></a>işleç * =
+## <a name="operator"></a><a name="op_star_eq"></a> işleç * =
 
 Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan bir faktörle bir hedef karmaşık sayıyı çarparak çarpar.
 
@@ -296,7 +296,7 @@ int main()
 }
 ```
 
-## <a name="operator"></a><a name="op_add_eq"></a>işleç + =
+## <a name="operator"></a><a name="op_add_eq"></a> işleç + =
 
 Eklenmiş sayının, eklendiği karmaşık sayının gerçek ve sanal kısımlarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı ekler.
 
@@ -399,7 +399,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a><a name="operator-_eq"></a>işleç-=
+## <a name="operator-"></a><a name="operator-_eq"></a> işleç-=
 
 Bir sayıyı hedef karmaşık sayıdan çıkartır, burada çıkarılan sayı, eklendiği karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabilir.
 
@@ -507,7 +507,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.
 ```
 
-## <a name="operator"></a><a name="op_div_eq"></a>işleç/=
+## <a name="operator"></a><a name="op_div_eq"></a> işleç/=
 
 Karmaşık bir sayının gerçek ve sanal parçalarıyla aynı türde olan ve karmaşık olabilecek bir hedef karmaşık sayıyı bölen tarafından böler.
 
@@ -611,7 +611,7 @@ The modulus of cl2 is: 0.6
 The argument of cl2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Atanan sayının, atanmakta olduğu karmaşık sayının gerçek ve sanal parçalarıyla aynı türde olabileceği hedef karmaşık sayıya bir sayı atar.
 
@@ -689,7 +689,7 @@ The complex number (3, 4) assigned to the complex number cl2 is:
 cl2 = (3,4)
 ```
 
-## <a name="real"></a><a name="real"></a>gerçek
+## <a name="real"></a><a name="real"></a> gerçek
 
 Karmaşık bir sayının gerçek bileşenini alır veya ayarlar.
 
@@ -743,7 +743,7 @@ The real part of c1 is c1.real() = 4.
 The imaginary part of c1 is c1.imag() = 3.
 ```
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Karmaşık bir sayının gerçek ve sanal parçalarını temsil etmek için kullanılan veri türünü temsil eden bir tür.
 
@@ -753,7 +753,7 @@ typedef Type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`, sınıf karmaşık şablon parametresinin eşanlamlısıdır `Type` .
+`value_type` , sınıf karmaşık şablon parametresinin eşanlamlısıdır `Type` .
 
 ### <a name="example"></a>Örnek
 

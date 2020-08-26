@@ -13,26 +13,48 @@ f1_keywords:
 - amp/Concurrency::global_memory_fence
 - amp/Concurrency::tile_static_memory_fence
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
-ms.openlocfilehash: 5bf3c1f8a1de4d61b849bd56363ce3f0c7437348
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b03a6189d2205dff62d94f07bc597ca2e1013a28
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222751"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840212"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 
-||||
-|-|-|-|
-|[all_memory_fence](#all_memory_fence)|[amp_uninitialize](#amp_uninitialize)|[atomic_compare_exchange](#atomic_compare_exchange)|
-|[atomic_exchange Işlevi (C++ AMP)](#atomic_exchange)|[atomic_fetch_add Işlevi (C++ AMP)](#atomic_fetch_add)|[atomic_fetch_and Işlevi (C++ AMP)](#atomic_fetch_and)|
-|[atomic_fetch_dec](#atomic_fetch_dec)|[atomic_fetch_inc](#atomic_fetch_inc)|[atomic_fetch_max](#atomic_fetch_max)|
-|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or Işlevi (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub Işlevi (C++ AMP)](#atomic_fetch_sub)|
-|[atomic_fetch_xor Işlevi (C++ AMP)](#atomic_fetch_xor)|[kopya](#copy)|[copy_async](#copy_async)|
-|[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|
-|[global_memory_fence](#global_memory_fence)|[parallel_for_each Işlevi (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|
+:::row:::
+   :::column span="":::
+      [`all_memory_fence`](#all_memory_fence)\
+      [`amp_uninitialize`](#amp_uninitialize)\
+      [`atomic_compare_exchange`](#atomic_compare_exchange)\
+      [`atomic_exchange`](#atomic_exchange)\
+      [`atomic_fetch_add`](#atomic_fetch_add)\
+      [`atomic_fetch_and`](#atomic_fetch_and)
+   :::column-end:::
+   :::column span="":::
+      [`atomic_fetch_dec`](#atomic_fetch_dec)\
+      [`atomic_fetch_inc`](#atomic_fetch_inc)\
+      [`atomic_fetch_max`](#atomic_fetch_max)\
+      [`atomic_fetch_min`](#atomic_fetch_min)\
+      [`atomic_fetch_or`](#atomic_fetch_or)
+   :::column-end:::
+   :::column span="":::
+      [`atomic_fetch_sub`](#atomic_fetch_sub)\
+      [`atomic_fetch_xor`](#atomic_fetch_xor)\
+      [`copy`](#copy)\
+      [`copy_async`](#copy_async)\
+      [`direct3d_abort`](#direct3d_abort)
+   :::column-end:::
+   :::column span="":::
+      [`direct3d_errorf`](#direct3d_errorf)\
+      [`direct3d_printf`](#direct3d_printf)\
+      [`global_memory_fence`](#global_memory_fence)\
+      [`parallel_for_each`](#parallel_for_each)\
+      [`tile_static_memory_fence`](#tile_static_memory_fence)
+   :::column-end:::
+:::row-end:::
 
-## <a name="all_memory_fence"></a><a name="all_memory_fence"></a>all_memory_fence
+## <a name="all_memory_fence"></a><a name="all_memory_fence"></a> all_memory_fence
 
 Tüm bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, tüm bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını sağlar ve Program sırasıyla yürütülür.
 
@@ -45,7 +67,7 @@ inline void all_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 *_Barrier*<br/>
 Bir `tile_barrier` nesnesi.
 
-## <a name="amp_uninitialize"></a><a name="amp_uninitialize"></a>amp_uninitialize
+## <a name="amp_uninitialize"></a><a name="amp_uninitialize"></a> amp_uninitialize
 
 C++ AMP çalışma zamanının kaydını geri alır. Bu işlevi bir uygulama ömrü boyunca birden çok kez çağırmak geçerlidir. Bu işlevi çağırdıktan sonra herhangi bir C++ AMP API çağrısı C++ AMP çalışma zamanını yeniden başlatılır. Bu işleve yapılan çağrılar genelinde C++ AMP nesnelerinin kullanılması geçersizdir ve bunu yapmak tanımsız davranışa neden olur. Ayrıca, bu işlevi ve diğer tüm AMP API 'Leri aynı anda çağırmak geçersizdir ve tanımsız davranışa neden olur.
 
@@ -53,7 +75,7 @@ C++ AMP çalışma zamanının kaydını geri alır. Bu işlevi bir uygulama öm
 void __cdecl amp_uninitialize();
 ```
 
-## <a name="atomic_compare_exchange"></a><a name="atomic_compare_exchange"></a>atomic_compare_exchange
+## <a name="atomic_compare_exchange"></a><a name="atomic_compare_exchange"></a> atomic_compare_exchange
 
 , İlk bağımsız değişkende belirtilen bellek konumunda depolanan değeri ikinci belirtilen bağımsız değişkenin değeriyle eşit olarak karşılaştırır ve değerler aynıysa, bellek konumundaki değer üçüncü belirtilen bağımsız değişkenin değeriyle değiştirilir.
 
@@ -86,7 +108,7 @@ Karşılaştırılacak değerlerden birinin okunduğu ve yeni değerin (varsa) d
 
 **`true`** işlem başarılı olursa, Aksi takdirde, **`false`** .
 
-## <a name="atomic_exchange-function-c-amp"></a><a name="atomic_exchange"></a>atomic_exchange Işlevi (C++ AMP)
+## <a name="atomic_exchange-function-c-amp"></a><a name="atomic_exchange"></a> atomic_exchange Işlevi (C++ AMP)
 
 Hedef konumun değerini atomik bir işlem olarak ayarlar.
 
@@ -119,7 +141,7 @@ Yeni değer.
 
 Hedef konumun özgün değeri.
 
-## <a name="atomic_fetch_add-function-c-amp"></a><a name="atomic_fetch_add"></a>atomic_fetch_add Işlevi (C++ AMP)
+## <a name="atomic_fetch_add-function-c-amp"></a><a name="atomic_fetch_add"></a> atomic_fetch_add Işlevi (C++ AMP)
 
 Bir bellek konumunun değerine bir değer ekler.
 
@@ -147,7 +169,7 @@ Eklenecek değer.
 
 Bellek konumunun özgün değeri.
 
-## <a name="atomic_fetch_and-function-c-amp"></a><a name="atomic_fetch_and"></a>atomic_fetch_and Işlevi (C++ AMP)
+## <a name="atomic_fetch_and-function-c-amp"></a><a name="atomic_fetch_and"></a> atomic_fetch_and Işlevi (C++ AMP)
 
 , Bir değer ve bir bellek konumunun değeri için bir bit düzeyinde ve çalışır.
 
@@ -175,7 +197,7 @@ Bit düzeyinde AND hesaplamasında kullanılacak değer.
 
 Bellek konumunun özgün değeri.
 
-## <a name="atomic_fetch_dec"></a><a name="atomic_fetch_dec"></a>atomic_fetch_dec
+## <a name="atomic_fetch_dec"></a><a name="atomic_fetch_dec"></a> atomic_fetch_dec
 
 , Belirtilen bellek konumunda depolanan değeri bir ölçüde azaltır.
 
@@ -195,7 +217,7 @@ Azaltılangirecek değerin bellekteki konumu.
 
 Bellek konumunda depolanan özgün değer.
 
-## <a name="atomic_fetch_inc"></a><a name="atomic_fetch_inc"></a>atomic_fetch_inc
+## <a name="atomic_fetch_inc"></a><a name="atomic_fetch_inc"></a> atomic_fetch_inc
 
 Belirtilen bellek konumunda depolanan değeri otomatik olarak artırır.
 
@@ -214,7 +236,7 @@ Artılacak değerin bellekteki konumu.
 
 Bellek konumunda depolanan özgün değer.
 
-## <a name="atomic_fetch_max"></a><a name="atomic_fetch_max"></a>atomic_fetch_max
+## <a name="atomic_fetch_max"></a><a name="atomic_fetch_max"></a> atomic_fetch_max
 
 , İlk bağımsız değişkende belirtilen bellek konumunda depolanan değer ve ikinci bağımsız değişkende belirtilen değer arasındaki maksimum değeri otomatik olarak hesaplar ve aynı bellek konumunda depolar.
 
@@ -242,7 +264,7 @@ Belirtilen konumdaki değerle karşılaştırılacak değer.
 
 Belirtilen konum konumunda depolanan özgün değer.
 
-## <a name="atomic_fetch_min"></a><a name="atomic_fetch_min"></a>atomic_fetch_min
+## <a name="atomic_fetch_min"></a><a name="atomic_fetch_min"></a> atomic_fetch_min
 
 , İlk bağımsız değişkende belirtilen bellek konumunda depolanan değer ve ikinci bağımsız değişkende belirtilen değer arasındaki minimum değeri otomatik olarak hesaplar ve aynı bellek konumunda depolar.
 
@@ -270,7 +292,7 @@ Belirtilen konumdaki değerle karşılaştırılacak değer.
 
 Belirtilen konum konumunda depolanan özgün değer.
 
-## <a name="atomic_fetch_or-function-c-amp"></a><a name="atomic_fetch_or"></a>atomic_fetch_or Işlevi (C++ AMP)
+## <a name="atomic_fetch_or-function-c-amp"></a><a name="atomic_fetch_or"></a> atomic_fetch_or Işlevi (C++ AMP)
 
 , Bir değer ve bir bellek konumunun değeri ile bir bit düzeyinde veya işlem gerçekleştirir.
 
@@ -298,7 +320,7 @@ Bit düzeyinde veya hesaplamada kullanılacak değer.
 
 Bellek konumunun özgün değeri.
 
-## <a name="atomic_fetch_sub-function-c-amp"></a><a name="atomic_fetch_sub"></a>atomic_fetch_sub Işlevi (C++ AMP)
+## <a name="atomic_fetch_sub-function-c-amp"></a><a name="atomic_fetch_sub"></a> atomic_fetch_sub Işlevi (C++ AMP)
 
 Bir bellek konumundan bir değeri atomicbir şekilde çıkarır.
 
@@ -326,7 +348,7 @@ Hedef konuma yönelik işaretçi.
 
 Bellek konumunun özgün değeri.
 
-## <a name="atomic_fetch_xor-function-c-amp"></a><a name="atomic_fetch_xor"></a>atomic_fetch_xor Işlevi (C++ AMP)
+## <a name="atomic_fetch_xor-function-c-amp"></a><a name="atomic_fetch_xor"></a> atomic_fetch_xor Işlevi (C++ AMP)
 
 , Bir değerin ve bir bellek konumunun bit düzeyinde XOR işlemi uygular.
 
@@ -354,7 +376,7 @@ XOR hesaplamasında kullanılacak değer.
 
 Bellek konumunun özgün değeri.
 
-## <a name="copy"></a><a name="copy"></a>kopya
+## <a name="copy"></a><a name="copy"></a> kopya
 
 C++ AMP nesnesini kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılandı. Hızlandırıcı üzerinde kod çalıştırırken veri kopyalayamazsınız. Bu işlevin genel formu `copy(src, dest)` .
 
@@ -451,7 +473,7 @@ Kaynak kapsayıcıya bir bitiş yineleyicisi.
 *value_type*<br/>
 Kopyalanmış öğelerin veri türü.
 
-## <a name="copy_async"></a><a name="copy_async"></a>copy_async
+## <a name="copy_async"></a><a name="copy_async"></a> copy_async
 
 C++ AMP nesnesini kopyalar ve beklemiş olabilecek bir [completion_future](completion-future-class.md) nesnesi döndürür. Hızlandırıcı üzerinde kod çalıştırırken veri kopyalayamazsınız.  Bu işlevin genel formu `copy(src, dest)` .
 
@@ -544,7 +566,7 @@ Kopyalanmış öğelerin veri türü.
 
 `future<void>`Bu, beklemiş olabilecek bir.
 
-## <a name="direct3d_abort"></a><a name="direct3d_abort"></a>direct3d_abort
+## <a name="direct3d_abort"></a><a name="direct3d_abort"></a> direct3d_abort
 
 Kısıtlama yan tümcesiyle bir işlevin yürütülmesini iptal eder `restrict(amp)` . AMP çalışma zamanı çağrıyı algıladığında, "Başvuru tarayıcısı: gölgelendirici iptal yönergesi isabet" hata iletisiyle [runtime_exception](runtime-exception-class.md) bir özel durum oluşturur.
 
@@ -552,7 +574,7 @@ Kısıtlama yan tümcesiyle bir işlevin yürütülmesini iptal eder `restrict(a
 void direct3d_abort() restrict(amp);
 ```
 
-## <a name="direct3d_errorf"></a><a name="direct3d_errorf"></a>direct3d_errorf
+## <a name="direct3d_errorf"></a><a name="direct3d_errorf"></a> direct3d_errorf
 
 Visual Studio çıktı penceresine biçimli bir dize yazdırır. Kısıtlama yan tümcesine sahip bir işlevden çağrılır `restrict(amp)` . AMP çalışma zamanı çağrıyı algıladığında, aynı biçimlendirme dizesiyle [runtime_exception](runtime-exception-class.md) bir özel durum başlatır.
 
@@ -562,7 +584,7 @@ void direct3d_errorf(
 ...) restrict(amp);
 ```
 
-## <a name="direct3d_printf"></a><a name="direct3d_printf"></a>direct3d_printf
+## <a name="direct3d_printf"></a><a name="direct3d_printf"></a> direct3d_printf
 
 Visual Studio çıktı penceresine biçimli bir dize yazdırır. Kısıtlama yan tümcesine sahip bir işlevden çağrılır `restrict(amp)` .
 
@@ -572,7 +594,7 @@ void direct3d_printf(
 ...) restrict(amp);
 ```
 
-## <a name="global_memory_fence"></a><a name="global_memory_fence"></a>global_memory_fence
+## <a name="global_memory_fence"></a><a name="global_memory_fence"></a> global_memory_fence
 
 Tüm genel bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller. Bu, genel bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını sağlar ve Program sırasıyla yürütülür.
 
@@ -585,7 +607,7 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
 *_Barrier*<br/>
 Tile_barrier nesnesi
 
-## <a name="parallel_for_each-function-c-amp"></a><a name="parallel_for_each"></a>parallel_for_each Işlevi (C++ AMP)
+## <a name="parallel_for_each-function-c-amp"></a><a name="parallel_for_each"></a> parallel_for_each Işlevi (C++ AMP)
 
 İşlem etki alanı genelinde bir işlev çalıştırır. Daha fazla bilgi için bkz. [C++ amp genel bakış](../../../parallel/amp/cpp-amp-overview.md).
 
@@ -661,7 +683,7 @@ Lambda veya functor.
 *_Rank*<br/>
 Kapsamın derecesi.
 
-## <a name="tile_static_memory_fence"></a><a name="tile_static_memory_fence"></a>tile_static_memory_fence
+## <a name="tile_static_memory_fence"></a><a name="tile_static_memory_fence"></a> tile_static_memory_fence
 
 Tüm bekleyen bellek erişimleri tamamlanana kadar döşemedeki tüm iş parçacıklarının yürütülmesini engeller `tile_static` . Bu `tile_static` , bellek erişimlerinin iş parçacığı döşemesindeki diğer iş parçacıkları tarafından görülebilir olmasını ve erişimin Program sırasıyla çalıştırılmasını sağlar.
 

@@ -16,18 +16,18 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-ms.openlocfilehash: ced6046b93a8d5140118e1e9de848df13a8c29c4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 218596ff5b81e99f4787efe2582fdc2752533cec
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224883"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840173"
 ---
 # <a name="error_category-class"></a>error_category Sınıfı
 
 Bir hata kodları kategorisini açıklayan nesneler için soyut, ortak temeli temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class error_category;
@@ -45,13 +45,13 @@ error_category(const error_category&) = delete
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[value_type](#value_type)|Depolanan hata kodu değerini temsil eden bir tür.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[default_error_condition](#default_error_condition)|Hata durumu nesnesi için hata kodu değerini depolar.|
 |[değerinin](#equivalent)|Hata nesnelerinin eşdeğer olup olmadığını belirten bir değer döndürür.|
@@ -62,14 +62,14 @@ error_category(const error_category&) = delete
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[işleç =](#op_as)||
+|[işleç =](#op_as)|Atama işleci.|
 |[işleç = =](#op_eq_eq)|Nesneler arasındaki eşitlik için testler `error_category` .|
 |[işleç! =](#op_neq)|Nesneler arasında eşitsizlik için testler `error_category` .|
 |[işleç<](#op_lt)|[Error_category](../standard-library/error-category-class.md) nesnenin `error_category` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.|
 
-## <a name="default_error_condition"></a><a name="default_error_condition"></a>default_error_condition
+## <a name="default_error_condition"></a><a name="default_error_condition"></a> default_error_condition
 
 Hata durumu nesnesi için hata kodu değerini depolar.
 
@@ -88,7 +88,7 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-### <a name="equivalent"></a><a name="equivalent"></a>değerinin
+### <a name="equivalent"></a><a name="equivalent"></a> değerinin
 
 Hata nesnelerinin eşdeğer olup olmadığını belirten bir değer döndürür.
 
@@ -121,13 +121,13 @@ Karşılaştırılacak [error_code](../standard-library/error-code-class.md) nes
 
 İkinci üye işlevi döndürür `*this == _Code.category() && _Code.value() == _Errval` .
 
-### <a name="generic_category"></a><a name="generic"></a>generic_category
+### <a name="generic_category"></a><a name="generic"></a> generic_category
 
 ```cpp
 const error_category& generic_category();
 ```
 
-### <a name="message"></a><a name="message"></a>İleti
+### <a name="message"></a><a name="message"></a> İleti
 
 Belirtilen hata kodunun adını döndürür.
 
@@ -146,7 +146,7 @@ Kategorinin hata kodu *Val* ' nin açıklayıcı bir adını döndürür. Hata k
 
 #### <a name="remarks"></a>Açıklamalar
 
-### <a name="name"></a><a name="name"></a>ada
+### <a name="name"></a><a name="name"></a> ada
 
 Kategorinin adını döndürür.
 
@@ -158,13 +158,13 @@ virtual const char *name() const = 0;
 
 Kategorinin adını null sonlandırılmış bir bayt dizesi olarak döndürür.
 
-### <a name="operator"></a><a name="op_as"></a>işleç =
+### <a name="operator"></a><a name="op_as"></a> işleç =
 
 ```cpp
 error_category& operator=(const error_category&) = delete;
 ```
 
-### <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+### <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Nesneler arasındaki eşitlik için testler `error_category` .
 
@@ -185,7 +185,7 @@ Eşitlik için sınanacak nesne.
 
 Bu üye işleci döndürür `this == &right` .
 
-### <a name="operator"></a><a name="op_neq"></a>işleç! =
+### <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Nesneler arasında eşitsizlik için testler `error_category` .
 
@@ -206,7 +206,7 @@ Eşitsizlik için test edilecek nesne.
 
 Üye işleci döndürür `(!*this == right)` .
 
-### <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+### <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 [Error_category](../standard-library/error-category-class.md) nesnenin `error_category` karşılaştırma için geçirilen nesneden daha az olup olmadığını sınar.
 
@@ -227,13 +227,13 @@ bool operator<(const error_category& right) const;
 
 Üye işleci döndürür `this < &right` .
 
-### <a name="system_category"></a><a name="system"></a>system_category
+### <a name="system_category"></a><a name="system"></a> system_category
 
 ```cpp
 const error_category& system_category();
 ```
 
-### <a name="value_type"></a><a name="value_type"></a>value_type
+### <a name="value_type"></a><a name="value_type"></a> value_type
 
 Depolanan hata kodu değerini temsil eden bir tür.
 

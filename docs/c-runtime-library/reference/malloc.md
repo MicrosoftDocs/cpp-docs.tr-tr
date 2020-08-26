@@ -27,12 +27,12 @@ helpviewer_keywords:
 - malloc function
 - memory allocation
 ms.assetid: 144fcee2-be34-4a03-bb7e-ed6d4b99eea0
-ms.openlocfilehash: 30d92975d1a3971d29b1758dc23d3a84372288c9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a093dbdbc4849b1c2f3d86e85a5e2b25a7b988e2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232514"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836666"
 ---
 # <a name="malloc"></a>malloc
 
@@ -63,18 +63,54 @@ bellek ayırma **başarısız olursa veya** istenen bellek miktarı **_HEAP_MAXR
 
 Başlangıç kodu **_environ**, *envp*ve *argv* değişkenleri için depolama alanı ayırmak üzere **malloc** kullanır. Aşağıdaki işlevler ve geniş karakter karşılıkları de **malloc**öğesini çağırır.
 
-|||||
-|-|-|-|-|
-|[calloc](calloc.md)|[fscanf](fscanf-fscanf-l-fwscanf-fwscanf-l.md)|[_getw](getw.md)|[setvbuf](setvbuf.md)|
-|[_exec işlevleri](../../c-runtime-library/exec-wexec-functions.md)|[fseek](fseek-fseeki64.md)|[_popen](popen-wpopen.md)|[_spawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)|
-|[fgetc](fgetc-fgetwc.md)|[fsetpos](fsetpos.md)|[printf](printf-printf-l-wprintf-wprintf-l.md)|[_strdup](strdup-wcsdup-mbsdup.md)|
-|[_fgetchar](fgetc-fgetwc.md)|[_fullpath](fullpath-wfullpath.md)|[putc](putc-putwc.md)|[sistem](system-wsystem.md)|
-|[fal](fgets-fgetws.md)|[fwrite](fwrite.md)|[putchar](putc-putwc.md)|[_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)|
-|[fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)|[getc](getc-getwc.md)|[_putenv](putenv-wputenv.md)|[ungetc](ungetc-ungetwc.md)|
-|[fputc](fputc-fputwc.md)|[GetChar](getc-getwc.md)|[kontrolünü](puts-putws.md)|[vfprintf](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)|
-|[_fputchar](fputc-fputwc.md)|[_getcwd](getcwd-wgetcwd.md)|[_putw](putw.md)|[vprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)|
-|[fkoyar](fputs-fputws.md)|[_getdcwd](getcwd-wgetcwd.md)|[scanf](scanf-scanf-l-wscanf-wscanf-l.md)||
-|[fread](fread.md)|[iyorsa](../../c-runtime-library/gets-getws.md)|[_searchenv](searchenv-wsearchenv.md)||
+:::row:::
+   :::column span="":::
+      [calloc](calloc.md)\
+      [_exec işlevleri](../../c-runtime-library/exec-wexec-functions.md)\
+      [fgetc](fgetc-fgetwc.md)\
+      [_fgetchar](fgetc-fgetwc.md)\
+      [fal](fgets-fgetws.md)\
+      [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
+      [fputc](fputc-fputwc.md)\
+      [_fputchar](fputc-fputwc.md)\
+      [fkoyar](fputs-fputws.md)\
+      [fread](fread.md)
+   :::column-end:::
+   :::column span="":::
+      [fscanf](fscanf-fscanf-l-fwscanf-fwscanf-l.md)\
+      [fseek](fseek-fseeki64.md)\
+      [fsetpos](fsetpos.md)\
+      [_fullpath](fullpath-wfullpath.md)\
+      [fwrite](fwrite.md)\
+      [getc](getc-getwc.md)\
+      [GetChar](getc-getwc.md)\
+      [_getcwd](getcwd-wgetcwd.md)\
+      [_getdcwd](getcwd-wgetcwd.md)\
+      [iyorsa](../../c-runtime-library/gets-getws.md)
+   :::column-end:::
+   :::column span="":::
+      [_getw](getw.md)\
+      [_popen](popen-wpopen.md)\
+      [printf](printf-printf-l-wprintf-wprintf-l.md)\
+      [putc](putc-putwc.md)\
+      [putchar](putc-putwc.md)\
+      [_putenv](putenv-wputenv.md)\
+      [kontrolünü](puts-putws.md)\
+      [_putw](putw.md)\
+      [scanf](scanf-scanf-l-wscanf-wscanf-l.md)
+   :::column-end:::
+   :::column span="":::
+      [_searchenv](searchenv-wsearchenv.md)\
+      [setvbuf](setvbuf.md)\
+      [_spawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)\
+      [_strdup](strdup-wcsdup-mbsdup.md)\
+      [sistemin](system-wsystem.md)\
+      [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)\
+      [ungetc](ungetc-ungetwc.md)\
+      [vfprintf](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)\
+      [vprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
+   :::column-end:::
+:::row-end:::
 
 C++ [_set_new_mode](set-new-mode.md) işlevi, **malloc**için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılan değeri geçersiz kılmak için, `_set_new_mode(1)` programınızda erken çağırın veya NEWMODE ile bağlayın. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 

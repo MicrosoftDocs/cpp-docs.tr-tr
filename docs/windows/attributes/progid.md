@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-ms.openlocfilehash: 3092111236afe1e1360a2814c3091ab0de4ff6ea
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 136c651ec92c78339c2f701804a6a409523dd30f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213859"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840004"
 ---
 # <a name="progid"></a>progid
 
@@ -36,7 +36,7 @@ ProgID 'ler, COM/ActiveX nesnelerini tanımlamak için kullanılan sınıf tanı
 
 Kullanan bir öznitelik bloğu `progid` da kullanmıyorsa `uuid` , derleyici, `uuid` belirtilen için mevcut olup olmadığını görmek için kayıt defterini kontrol eder `progid` . `progid`Belirtilmezse, bir oluşturmak için sürüm (ve bir coclass oluşturma kullanılıyorsa coclass adı) kullanılır `progid` .
 
-`progid`özniteliğini belirtir `coclass` , yani belirtirseniz, `progid` ve özniteliklerini belirterek aynı şey olur `coclass` `progid` .
+`progid` özniteliğini belirtir `coclass` , yani belirtirseniz, `progid` ve özniteliklerini belirterek aynı şey olur `coclass` `progid` .
 
 `progid`Öznitelik, bir sınıfın belirtilen ad altında otomatik olarak kaydedilmesine neden olur. Oluşturulan. IDL dosyası bu `progid` değeri görüntülemez.
 
@@ -48,14 +48,12 @@ Bu öznitelik, ATL kullanan bir proje içinde kullanıldığında, öznitelik da
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|`class`, `struct`|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

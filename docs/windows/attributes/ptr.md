@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - ptr attribute
 ms.assetid: 95eaea57-a5be-45f6-a612-ba2c9bc4645a
-ms.openlocfilehash: 9e45cd529562fe238f96f98cf7f91e15df34270a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c01fe93d8c4092b3a4754b0c70ff161d66dfe49f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224389"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88839874"
 ---
 # <a name="ptr"></a>ptr
 
 Bir işaretçiyi tam bir işaretçi olarak belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [ptr]
@@ -33,14 +33,12 @@ Bir işaretçiyi tam bir işaretçi olarak belirler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Şunlara uygulanır**|Arabirim parametresi, arabirim yöntemi,**`typedef`**|
+|**Şunlara uygulanır**|Arabirim parametresi, arabirim yöntemi, **`typedef`**|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

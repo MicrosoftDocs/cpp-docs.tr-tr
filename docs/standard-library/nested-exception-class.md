@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - nested_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-ms.openlocfilehash: 6ae95880f0bc18928ed9bd4f6b6da14722f6ec60
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4ab48f714e8b4de1a47674f1af8fe25467279f94
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212195"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836445"
 ---
 # <a name="nested_exception-class"></a>nested_exception sınıfı
 
 Sınıfı, birden çok Devralmada kullanılmak üzere bir özel durum tanımlar. Şu anda işlenmiş özel durumu yakalar ve daha sonra kullanmak üzere depolar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class nested_exception {
@@ -32,24 +32,24 @@ class nested_exception {
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[işleç =](#op_as)||
+|[işleç =](#op_as)|Atama işleci.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[rethrow_nested](#rethrow_nested)|Saklı özel durumu oluşturur.|
 |[nested_ptr](#nested_ptr)|Depolanan özel durumu döndürür.|
 
-### <a name="operator"></a><a name="op_as"></a>işleç =
+### <a name="operator"></a><a name="op_as"></a> işleç =
 
 ```cpp
 nested_exception& operator=(const nested_exception&) = default;
 ```
 
-### <a name="nested_ptr"></a><a name="nested_ptr"></a>nested_ptr
+### <a name="nested_ptr"></a><a name="nested_ptr"></a> nested_ptr
 
 ```cpp
 exception_ptr nested_ptr() const;
@@ -59,7 +59,7 @@ exception_ptr nested_ptr() const;
 
 Bu nesne tarafından yakalanan saklı özel durum `nested_exception` .
 
-### <a name="rethrow_nested"></a><a name="rethrow_nested"></a>rethrow_nested
+### <a name="rethrow_nested"></a><a name="rethrow_nested"></a> rethrow_nested
 
 ```cpp
 [[noreturn]] void rethrow_nested() const;

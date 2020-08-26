@@ -3,12 +3,12 @@ title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: b03dc98212bbc822ddc44871632fda73d1be8740
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 10e2303fa5498079fc1f9bb6f82aa909c9a6c3ee
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404918"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840549"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -17,9 +17,9 @@ Windows Çalışma Zamanı C++ Şablon kitaplığı (WRL), Windows Çalışma Za
 > [!NOTE]
 > WRL 'nin artık Windows Çalışma Zamanı API 'Leri için standart bir C++ 17 dil projeksiyonu olan C++/Wınrt tarafından değiştirildi. C++/Wınrt, sürüm 1803 ' den Windows 10 SDK ' da kullanılabilir. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlamak için tasarlanmıştır.
 >
-> C++/Wınrt ile, standartlara uyumlu C++ 17 derleyicisini kullanarak Windows Çalışma Zamanı API 'Leri hem tüketin hem de yazabilirsiniz. C++/Wınrt genellikle daha iyi çalışır ve Windows Çalışma Zamanı için diğer dil seçeneklerinden daha küçük ikili dosyalar üretir. C++/CX ve WRL 'yi desteklemeye devam edeceğiz, ancak yeni uygulamaların C++/Wınrtrtı kullanmasını önemle öneririz. Daha fazla bilgi için bkz. [C++/Wınrt](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
+> C++/Wınrt ile, standartlara uyumlu C++ 17 derleyicisini kullanarak Windows Çalışma Zamanı API 'Leri hem tüketin hem de yazabilirsiniz. C++/Wınrt genellikle daha iyi çalışır ve Windows Çalışma Zamanı için diğer dil seçeneklerinden daha küçük ikili dosyalar üretir. C++/CX ve WRL 'yi desteklemeye devam edeceğiz, ancak yeni uygulamaların C++/Wınrtrtı kullanmasını önemle öneririz. Daha fazla bilgi için bkz. [C++/Wınrt](/windows/uwp/cpp-and-winrt-apis/index).
 
-## <a name="benefits"></a>Avantajlar
+## <a name="benefits"></a>Yararları
 
 Windows Çalışma Zamanı C++ Şablon kitaplığı, bileşen nesne modeli (COM) bileşenlerini daha kolay bir şekilde uygulamanıza ve kullanmanıza olanak sağlar. Bu, nesnelerin ömrünü yönetmek ve bir işlemin başarılı veya başarısız olup olmadığını anlamak üzere HRESULT değerlerini test etmek için başvuru sayımı gibi temizlik tekniklerini sağlar. Windows Çalışma Zamanı C++ şablon kitaplığını başarıyla kullanmak için bu kuralları ve teknikleri dikkatle izlemeniz gerekir.
 
@@ -73,7 +73,7 @@ UWP uygulamasındaki bir Web hizmetine HTTP GET ve POST istekleri göndermek iç
 [C++ örneği ile Windows Çalışma Zamanı DLL bileşeni oluşturma](https://github.com/Microsoft/VCSamples/tree/master/VC2012Samples/Windows%208%20samples/C%2B%2B/Windows%208%20app%20samples)<br/>
 İşlem içi DLL bileşeni oluşturmak ve C++/CX, JavaScript ve C# ' den kullanmak için Windows Çalışma Zamanı C++ Şablon kitaplığı 'nın nasıl kullanılacağını gösterir.
 
-[DirectX mermer Maze oyun örneği](https://docs.microsoft.com/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
+[DirectX mermer Maze oyun örneği](/samples/microsoft/windows-appsample-marble-maze/directx-marble-maze-game-sample/)<br/>
 DirectX ve tam 3-b oyun bağlamında Medya Altyapısı COM bileşenlerinin ömrünü yönetmek için Windows Çalışma Zamanı C++ Şablon kitaplığı 'nın nasıl kullanılacağını gösterir.
 
 [Masaüstü uygulamalarından bildirim bildirimleri](/windows/uwp/design/shell/tiles-and-notifications/toast-desktop-apps)<br/>
@@ -109,7 +109,7 @@ Windows Çalışma Zamanı C++ Şablon kitaplığı, birkaç temel kavramı tems
 
 ### <a name="comptr"></a>ComPtr
 
-[ComPtr](comptr-class.md) , şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türüdür. `ComPtr`Arabiriminden türetilmiş bir nesnenin üyelerine erişebilen bir değişken bildirmek için kullanın. `ComPtr`, temel alınan arabirim işaretçisi için bir başvuru sayısını otomatik olarak tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
+[ComPtr](comptr-class.md) , şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türüdür. `ComPtr`Arabiriminden türetilmiş bir nesnenin üyelerine erişebilen bir değişken bildirmek için kullanın. `ComPtr` , temel alınan arabirim işaretçisi için bir başvuru sayısını otomatik olarak tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
 
 ### <a name="runtimeclass"></a>RuntimeClass
 
@@ -133,7 +133,7 @@ Windows Çalışma Zamanı C++ Şablon kitaplığı, birkaç temel kavramı tems
 
 ### <a name="ftmbase"></a>FtmBase
 
-[FtmBase](ftmbase-class.md) , serbest iş parçacıklı Sıralayıcı nesnesini temsil eder. `FtmBase`genel bir arabirim tablosu (GIT) oluşturur ve sıralama ve proxy nesnelerinin yönetilmesine yardımcı olur.
+[FtmBase](ftmbase-class.md) , serbest iş parçacıklı Sıralayıcı nesnesini temsil eder. `FtmBase` genel bir arabirim tablosu (GIT) oluşturur ve sıralama ve proxy nesnelerinin yönetilmesine yardımcı olur.
 
 ### <a name="weakref"></a>WeakRef
 
@@ -143,9 +143,14 @@ Bir `WeakRef` nesne, genellikle varlığı bir dış iş parçacığı veya uygu
 
 ## <a name="related-topics"></a>İlgili Konular
 
-|||
-|-|-|
-|[Kategoriye göre anahtar API 'Leri](key-wrl-apis-by-category.md)|Birincil Windows Çalışma Zamanı C++ şablon kitaplık türlerini, işlevleri ve makroları vurgular.|
-|[Başvuru](wrl-reference.md)|Windows Çalışma Zamanı C++ Şablon kitaplığı için başvuru bilgilerini içerir.|
-|[Hızlı Başvuru (C++/CX)](../../cppcx/quick-reference-c-cx.md)|Windows Çalışma Zamanı destekleyen C++/CX özelliklerini kısaca açıklar.|
-|[Visual C++ Windows Çalışma Zamanı bileşenleri kullanma](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|C++/CX 'in temel bir Windows Çalışma Zamanı bileşeni oluşturmak için nasıl kullanılacağını gösterir.|
+[Kategoriye göre anahtar API 'Leri](key-wrl-apis-by-category.md)\
+Birincil Windows Çalışma Zamanı C++ şablon kitaplık türlerini, işlevleri ve makroları vurgular.
+
+[Başvurunun](wrl-reference.md)\
+Windows Çalışma Zamanı C++ Şablon kitaplığı için başvuru bilgilerini içerir.
+
+[Hızlı başvuru (C++/CX)](../../cppcx/quick-reference-c-cx.md)\
+Windows Çalışma Zamanı destekleyen C++/CX özelliklerini kısaca açıklar.
+
+[Visual C++ Windows Çalışma Zamanı bileşenleri kullanma](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)\
+C++/CX 'in temel bir Windows Çalışma Zamanı bileşeni oluşturmak için nasıl kullanılacağını gösterir.

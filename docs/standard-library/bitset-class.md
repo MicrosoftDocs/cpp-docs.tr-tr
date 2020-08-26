@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::bitset [C++], to_ulong
 - std::bitset [C++], reference
 ms.assetid: 28b86964-87b4-429c-8124-b6c251b6c50b
-ms.openlocfilehash: 9a822e635ea3a1fd035a6a4b1d2b38250c96158a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 623593e723b26244cc82e9eeed3e32657cca0b94
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217850"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88846491"
 ---
 # <a name="bitset-class"></a>bitset Sınıfı
 
@@ -67,42 +67,42 @@ Değeri 1 ise ve değeri 0 ise sıfırlandığında bir bit ayarlanır. Bir biti
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[bitset](#bitset)|Sınıfının bir nesnesini oluşturur `bitset\<N>` ve bitleri sıfıra, belirli bir değere veya bir dizedeki karakterlerden elde edilen değerlere başlatır.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[element_type](#element_type)|Veri türü için eş anlamlı bir tür **`bool`** ve içindeki öğe bitlerini başvurmak için kullanılabilir `bitset` .|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Bütün](#all)|`bitset`Bunların tümünün olarak ayarlanmış olup olmadığını anlamak için bu tüm bitleri sınar **`true`** .|
 |[kaydedilmemiş](#any)|Üye işlevi, dizideki herhangi bir bitin 1 olarak ayarlanmış olup olmadığını sınar.|
-|[biriktirme](#count)|Üye işlevi, bit dizisinde ayarlanan bit sayısını döndürür.|
+|[count](#count)|Üye işlevi, bit dizisinde ayarlanan bit sayısını döndürür.|
 |[yazmayı](#flip)|' Deki tüm bitlerin değerini tersine çevirir `bitset` veya belirtilen konumda tek bir bit 'e ters çevirir.|
 |[yok](#none)|Bir nesne içinde 1 olarak ayarlanmış bir bit yoksa sınar `bitset` .|
 |[döndürmek](#reset)|A içindeki tüm bitleri 0 ' a sıfırlar `bitset` veya belirtilen konumdaki bir biti 0 olarak sıfırlar.|
 |[kurmak](#set)|A 'daki tüm bitleri 1 ' `bitset` e ayarlar veya belirtilen konumdaki bir bit ' i 1 olarak ayarlar.|
 |[boyutla](#size)|Bir nesnedeki bit sayısını döndürür `bitset` .|
-|[sınamanız](#test)|İçindeki belirtilen konumdaki bitin 1 olarak ayarlanmış olup olmadığını sınar `bitset` .|
+|[test](#test)|İçindeki belirtilen konumdaki bitin 1 olarak ayarlanmış olup olmadığını sınar `bitset` .|
 |[to_string](#to_string)|Bir `bitset` nesneyi dize gösterimine dönüştürür.|
 |[to_ullong](#to_ullong)|İçindeki bit değerlerinin toplamını döndürür `bitset` **`unsigned long long`** .|
 |[to_ulong](#to_ulong)|' A bir `bitset` nesnesi, **`unsigned long`** başlatmak için kullanılmışsa içerilen bit dizisini üretecek öğesine dönüştürür `bitset` .|
 
 ### <a name="classes"></a>Sınıflar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[başvurunun](#reference)|`bitset`Sınıfı için bir yardımcı sınıf olarak tek tek bitleri erişmek ve işlemek için kullanılan, içinde bulunan bit sayısına başvurular sağlayan bir proxy sınıfı `operator[]` `bitset` .|
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç! =](#op_neq)|`bitset`Belirtilen ile eşitsizlik için hedefi sınar `bitset` .|
 |[işleç&=](#op_and_eq)|Mantıksal bir işlemle Bitsets 'in bit düzeyinde birleşimini uygular `AND` .|
@@ -118,11 +118,11 @@ Değeri 1 ise ve değeri 0 ise sıfırlandığında bir bit ayarlanır. Bir biti
 
 ### <a name="structures"></a>Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[yla](#hash)||
 
-### <a name="all"></a><a name="all"></a>Bütün
+### <a name="all"></a><a name="all"></a> Bütün
 
 Bu bit kümesindeki tüm bitleri, tümünün true olarak ayarlandığını belirleyecek şekilde sınar.
 
@@ -134,7 +134,7 @@ bool all() const;
 
 Bu küme içindeki tüm bitler true ise true döndürür. **`false`** Bir veya daha fazla bitlerin yanlış olduğunu döndürür.
 
-### <a name="any"></a><a name="any"></a>kaydedilmemiş
+### <a name="any"></a><a name="any"></a> kaydedilmemiş
 
 Dizideki herhangi bir bitin 1 olarak ayarlanmış olup olmadığını sınar.
 
@@ -197,7 +197,7 @@ The reset bitset is: ( 00000 )
 None of the bits in bitset b1 are set to 1.
 ```
 
-### <a name="bitset"></a><a name="bitset"></a>bitset
+### <a name="bitset"></a><a name="bitset"></a> bitset
 
 Sınıfının bir nesnesini oluşturur `bitset\<N>` ve bitleri sıfıra veya belirli bir değere ya da bir dizedeki karakterlerden elde edilen değerlere başlatır.
 
@@ -259,7 +259,7 @@ Sınıfının obects 'leri oluşturmak için üç Oluşturucu kullanılabilir `b
 
 - İkinci Oluşturucu, sınıfının bir nesnesini oluşturur `bitset\<N>` ve tek parametresini kullanarak bitleri başlatır **`unsigned long long`** .
 
-- Üçüncü Oluşturucu, `bitset\<N>` N bitini, sıfırlardan oluşan c stili karakter dizesinde belirtilen karakterlere karşılık gelen değerlere başlatarak, bir sınıfının nesnesini oluşturur. Oluşturucuyu dizeyi bir dize türüne atamadan çağırın:`bitset<5> b5("01011");`
+- Üçüncü Oluşturucu, `bitset\<N>` N bitini, sıfırlardan oluşan c stili karakter dizesinde belirtilen karakterlere karşılık gelen değerlere başlatarak, bir sınıfının nesnesini oluşturur. Oluşturucuyu dizeyi bir dize türüne atamadan çağırın: `bitset<5> b5("01011");`
 
 Ayrıca, iki Oluşturucu şablonu sağlanır:
 
@@ -342,7 +342,7 @@ The set of bits in bitset<11> b6( bitval5, 3, 5 ) is ( 00000010011 ).
 The set of bits in bitset<9> b7( bitval, 2 ) is ( 110011011 ).
 ```
 
-### <a name="count"></a><a name="count"></a>biriktirme
+### <a name="count"></a><a name="count"></a> biriktirme
 
 Bit dizisinde ayarlanan bit sayısını döndürür.
 
@@ -396,7 +396,7 @@ The collection of flipped bits in the modified bitset is: ( 11011 )
 The number of bits in the bitset set to 1 is: 4.
 ```
 
-### <a name="element_type"></a><a name="element_type"></a>element_type
+### <a name="element_type"></a><a name="element_type"></a> element_type
 
 Veri türü için bir eş anlamlı olan **`bool`** ve bir bitset içindeki öğe bitlerini başvurmak için kullanılabilen bir tür.
 
@@ -452,7 +452,7 @@ Bitset b1 modified by b1[2] = 1 is: ( 110 )
 The bit at position 2 of bitset b1has a value of 1.
 ```
 
-### <a name="flip"></a><a name="flip"></a>yazmayı
+### <a name="flip"></a><a name="flip"></a> yazmayı
 
 Bit kümesindeki tüm bitlerin değerini tersine çevirir veya belirtilen konumda tek bir bit 'e ters çevirir.
 
@@ -525,14 +525,14 @@ After flipping the fourth bit, the bitset becomes: ( 10001 )
 11111  The bit flipped is in position 4.
 ```
 
-### <a name="hash"></a><a name="hash"></a>yla
+### <a name="hash"></a><a name="hash"></a> yla
 
 ```cpp
 template <class T> struct hash;
 template <size_t N> struct hash<bitset<N>>;
 ```
 
-### <a name="none"></a><a name="none"></a>seçim
+### <a name="none"></a><a name="none"></a> seçim
 
 Bitset nesnesinde hiçbir bit 1 olarak ayarlanmamışsa sınar.
 
@@ -589,7 +589,7 @@ At least one of the bits in bitset b1 is set to 1.
 None of the bits in bitset b1 are set to 1.
 ```
 
-### <a name="operator"></a><a name="op_neq"></a>işleç! =
+### <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Belirtilen bit kümesiyle eşitsizlik için bir hedef bit kümesini sınar.
 
@@ -651,7 +651,7 @@ Bitset b1 is the same as bitset b2.
 Bitset b1 is different from bitset b3.
 ```
 
-### <a name="operatoramp"></a><a name="op_and_eq"></a>işlecinde&amp;=
+### <a name="operatoramp"></a><a name="op_and_eq"></a> işlecinde&amp;=
 
 Mantıksal bir işlemle Bitsets 'in bit düzeyinde birleşimini uygular `AND` .
 
@@ -718,7 +718,7 @@ the target bitset b1 becomes:   ( 00011 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-### <a name="operator"></a><a name="op_lshift"></a>işlecinde\<\<
+### <a name="operator"></a><a name="op_lshift"></a> işlecinde\<\<
 
 Bit kümesindeki bitleri belirtilen sayıda konum sola kaydırır ve sonucu yeni bir bit kümesine döndürür.
 
@@ -770,7 +770,7 @@ int main( )
 }
 ```
 
-### <a name="operatorltlt"></a><a name="op_lshift_eq"></a>işlecinde&lt;&lt;=
+### <a name="operatorltlt"></a><a name="op_lshift_eq"></a> işlecinde&lt;&lt;=
 
 Bit kümesindeki bitleri belirtilen sayıda konum sola kaydırır ve sonucu hedeflenen bitset 'e döndürür.
 
@@ -817,7 +817,7 @@ After shifting the bits 2 positions to the left,
 the target bitset b1 becomes: ( 11100 ).
 ```
 
-### <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+### <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Belirtilen bit kümesiyle eşitlik için bir hedef bit kümesini sınar.
 
@@ -878,7 +878,7 @@ Bitset b1 is the same as bitset b2.
 Bitset b1 is different from bitset b3.
 ```
 
-### <a name="operatorgtgt"></a><a name="op_rshift"></a>işlecinde&gt;&gt;
+### <a name="operatorgtgt"></a><a name="op_rshift"></a> işlecinde&gt;&gt;
 
 Bit kümesindeki bitleri belirtilen sayıda konum sağına kaydırır ve sonucu yeni bir bit kümesine döndürür.
 
@@ -931,7 +931,7 @@ After shifting the bits 1 position to the right,
 the bitset b3 is: ( 01110 ).
 ```
 
-### <a name="operatorgtgt"></a><a name="op_rshift_eq"></a>işlecinde&gt;&gt;=
+### <a name="operatorgtgt"></a><a name="op_rshift_eq"></a> işlecinde&gt;&gt;=
 
 Bit kümesindeki bitleri belirtilen sayıda konum sağına kaydırır ve sonucu hedeflenen bitset 'e döndürür.
 
@@ -979,7 +979,7 @@ After shifting the bits 2 positions to the right,
 the target bitset b1 becomes: ( 00111 ).
 ```
 
-### <a name="operator"></a><a name="op_at"></a>operator []
+### <a name="operator"></a><a name="op_at"></a> operator []
 
 Bitset değiştirilebilir ise, bit kümesinde belirtilen konumdaki bir bite bir başvuru döndürür; Aksi takdirde, bu konumdaki bit değerini döndürür.
 
@@ -1023,7 +1023,7 @@ int main( )
 }
 ```
 
-### <a name="operator"></a><a name="op_xor_eq"></a>işleç ^ =
+### <a name="operator"></a><a name="op_xor_eq"></a> işleç ^ =
 
 Özel işlemle Bitsets 'in bit düzeyinde birleşimini uygular `OR` .
 
@@ -1089,7 +1089,7 @@ the target bitset b1 becomes:   ( 01100 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-### <a name="operator124"></a><a name="op_or_eq"></a>işleç&#124;=
+### <a name="operator124"></a><a name="op_or_eq"></a> işleç&#124;=
 
 Kapsamlı işlemle Bitsets 'in bit düzeyinde birleşimini uygular `OR` .
 
@@ -1156,7 +1156,7 @@ the target bitset b1 becomes:   ( 01111 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
-### <a name="operator"></a><a name="op_not"></a>işleç ~
+### <a name="operator"></a><a name="op_not"></a> işleç ~
 
 Bir hedef bit kümesindeki tüm bitleri ters çevirir ve sonucu döndürür.
 
@@ -1201,7 +1201,7 @@ Bitset b2 = ~b1 is: ( 11000 ).
 Bitset b3 = b1.flip( ) is: ( 11000 ).
 ```
 
-### <a name="reference"></a><a name="reference"></a>başvurunun
+### <a name="reference"></a><a name="reference"></a> başvurunun
 
 Bit kümesinde bulunan bitlerin bir bit kümesinde bulunan ve bit kümesi için bir yardımcı sınıf olarak tek tek bitleri erişmek ve işlemek için kullanılan bitler için başvurular sağlayan bir proxy sınıfı `operator[]` .
 
@@ -1323,7 +1323,7 @@ it becomes ( 00110 ).
 After a second flip, the value of the position 4 bit in b2 is now: 1.
 ```
 
-### <a name="reset"></a><a name="reset"></a>döndürmek
+### <a name="reset"></a><a name="reset"></a> döndürmek
 
 Bit kümesindeki tüm bitleri 0 olarak sıfırlar veya belirtilen konumdaki bir biti 0 olarak sıfırlar.
 
@@ -1383,7 +1383,7 @@ The collecion of bits obtained from resetting all
 the elements of the bitset b1 is: ( 00000 )
 ```
 
-### <a name="set"></a><a name="set"></a>kurmak
+### <a name="set"></a><a name="set"></a> kurmak
 
 Bit kümesindeki tüm bitleri 1 olarak ayarlar veya belirtilen konumdaki bit ' i 1 olarak ayarlar.
 
@@ -1449,7 +1449,7 @@ The collecion of bits obtained from setting all the
 elements of the bitset b1 is: ( 11111 )
 ```
 
-### <a name="size"></a><a name="size"></a>boyutla
+### <a name="size"></a><a name="size"></a> boyutla
 
 Bitset nesnesindeki bit sayısını döndürür.
 
@@ -1491,7 +1491,7 @@ The set of bits in bitset<5> b1( 6 ) is: ( 00110 )
 The number of bits in bitset b1 is: 5.
 ```
 
-### <a name="test"></a><a name="test"></a>sınamanız
+### <a name="test"></a><a name="test"></a> sınamanız
 
 Bit kümesinde belirtilen konumdaki bitin 1 olarak ayarlanmış olup olmadığını sınar.
 
@@ -1512,7 +1512,7 @@ Bit kümesindeki bitin değeri için test edilecek konumu.
 
 Üye işlevi bir [out_of_range](../standard-library/out-of-range-class.md) oluşturur
 
-### <a name="to_string"></a><a name="to_string"></a>to_string
+### <a name="to_string"></a><a name="to_string"></a> to_string
 
 Bit kümesi nesnesini dize gösterimine dönüştürür.
 
@@ -1560,7 +1560,7 @@ The string returned from the bitset b1
   by the member function to_string( ) is: 00111.
 ```
 
-### <a name="to_ullong"></a><a name="to_ullong"></a>to_ullong
+### <a name="to_ullong"></a><a name="to_ullong"></a> to_ullong
 
 **`unsigned long long`** Bitset nesnesinin içeriğiyle aynı bit kümesini içeren bir değer döndürür.
 
@@ -1580,7 +1580,7 @@ Bit dizisindeki herhangi bir bit, türünde bir değer olarak temsil edilemeyece
 
 Bit dizisindeki bit değerlerinin toplamını olarak döndürür **`unsigned long long`** .
 
-### <a name="to_ulong"></a><a name="to_ulong"></a>to_ulong
+### <a name="to_ulong"></a><a name="to_ulong"></a> to_ulong
 
 Bit kümesini başlatmak için kullanılmışsa, bir bitset nesnesini, içerilen bit dizisini üreten tamsayıya dönüştürür.
 

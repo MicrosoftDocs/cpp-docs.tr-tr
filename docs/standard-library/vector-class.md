@@ -87,12 +87,12 @@ helpviewer_keywords:
 - std::vector [C++], size
 - std::vector [C++], swap
 ms.assetid: a3e0a8f8-7565-4fe0-93e4-e4d74ae1b70d
-ms.openlocfilehash: 71b55b4af44a641846ca7b8706bee420887950c5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6cc8378fee72304bb909c3baacc305d446474bfa
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224571"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840043"
 ---
 # <a name="vector-class"></a>vector sınıfı
 
@@ -127,13 +127,13 @@ Vektör yeniden ayırma, bir üye işlevi, vektör nesnesinde bulunan sırayı g
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[vektör](#vector)|Belirli bir boyutun veya belirli bir değere sahip veya belirli bir vektör kopyası olan öğelerle bir vektör oluşturur `allocator` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Vektör nesnesinin sınıfını temsil eden bir tür `allocator` .|
 |[const_iterator](#const_iterator)|Vektördeki bir öğeyi okuyabilen bir rastgele erişim yineleyici sağlayan bir tür **`const`** .|
@@ -150,7 +150,7 @@ Vektör yeniden ayırma, bir üye işlevi, vektör nesnesinde bulunan sırayı g
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[assign (atamak)](#assign) |Bir vektörü siler ve belirtilen öğeleri boş vektöre kopyalar.|
 |[hızı](#at)|Vektörde belirtilen konumdaki öğeye bir başvuru döndürür.|
@@ -184,12 +184,12 @@ Vektör yeniden ayırma, bir üye işlevi, vektör nesnesinde bulunan sırayı g
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç&#91;&#93;](#op_at)|Vektör öğesine belirtilen konumda bir başvuru döndürür.|
 |[işleç =](#op_eq)|Vektör öğelerini başka bir Vector kopyasıyla değiştirir.|
 
-## <a name="allocator_type"></a><a name="allocator_type"></a>allocator_type
+## <a name="allocator_type"></a><a name="allocator_type"></a> allocator_type
 
 Vektör nesnesinin ayırıcı sınıfını temsil eden bir tür.
 
@@ -199,13 +199,13 @@ typedef Allocator allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type`, şablon parametresinin eşanlamlısıdır `Allocator` .
+`allocator_type` , şablon parametresinin eşanlamlısıdır `Allocator` .
 
 ### <a name="example"></a>Örnek
 
 Tarafından kullanılan bir örnek için [get_allocator](#get_allocator) örneğe bakın `allocator_type` .
 
-## <a name="assign"></a><a name="assign"></a>ata
+## <a name="assign"></a><a name="assign"></a> ata
 
 Bir vektörü siler ve belirtilen öğeleri boş vektöre kopyalar.
 
@@ -285,7 +285,7 @@ int main()
 }
 ```
 
-## <a name="at"></a><a name="at"></a>hızı
+## <a name="at"></a><a name="at"></a> hızı
 
 Vektörde belirtilen konumdaki öğeye bir başvuru döndürür.
 
@@ -336,7 +336,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="back"></a><a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a> Geri
 
 Vector öğesinin son öğesine bir başvuru döndürür.
 
@@ -380,7 +380,7 @@ int main() {
 }
 ```
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 Vektördeki ilk öğeye Rastgele erişimli bir yineleyici döndürür.
 
@@ -443,7 +443,7 @@ The vector c1 contains elements: 1 2
 The vector c1 now contains elements: 20 2
 ```
 
-## <a name="capacity"></a><a name="capacity"></a>kü
+## <a name="capacity"></a><a name="capacity"></a> kü
 
 Daha fazla depolama alanı ayırmadan vektör içerebilen öğe sayısını döndürür.
 
@@ -487,7 +487,7 @@ The length of storage allocated is 1.
 The length of storage allocated is now 2.
 ```
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 **`const`** Aralıktaki ilk öğeyi ele alan bir yineleyici döndürür.
 
@@ -513,7 +513,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 **`const`** Bir aralıktaki son öğenin ötesinde konumu ele alan bir yineleyici döndürür.
 
@@ -527,7 +527,7 @@ const_iterator cend() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`cend`, bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
+`cend` , bir yineleyicinin aralığın sonunu geçtiğini test etmek için kullanılır.
 
 `end()`Dönüş değerinin olduğunu garantilemek için üye işlevin yerine bu üye işlevi kullanabilirsiniz `const_iterator` . Genellikle, aşağıdaki örnekte gösterildiği gibi [Otomatik](../cpp/auto-cpp.md) tür kesintisi anahtar sözcüğüyle birlikte kullanılır. Örnekte, ve ' ı `Container` destekleyen herhangi bir türde değiştirilebilir (olmayan) bir kapsayıcı olarak göz önünde bulundurun **`const`** `end()` `cend()` .
 
@@ -541,7 +541,7 @@ auto i2 = Container.cend();
 
 Tarafından döndürülen değer `cend` başvurulmamalıdır. Yalnızca karşılaştırma için kullanın.
 
-## <a name="clear"></a><a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Vektör öğelerini siler.
 
@@ -577,7 +577,7 @@ The size of v1 is 3
 The size of v1 after clearing is 0
 ```
 
-## <a name="const_iterator"></a><a name="const_iterator"></a>const_iterator
+## <a name="const_iterator"></a><a name="const_iterator"></a> const_iterator
 
 Vektördeki bir öğeyi okuyabilen bir rastgele erişim yineleyici sağlayan bir tür **`const`** .
 
@@ -593,7 +593,7 @@ Bir tür `const_iterator` , bir öğenin değerini değiştirmek için kullanıl
 
 Kullanan bir [örnek için örneğe](#back) bakın `const_iterator` .
 
-## <a name="const_pointer"></a><a name="const_pointer"></a>const_pointer
+## <a name="const_pointer"></a><a name="const_pointer"></a> const_pointer
 
 Vektörde bir öğeye işaretçi sağlayan bir tür **`const`** .
 
@@ -607,7 +607,7 @@ Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanıla
 
 [Yineleyici](#iterator) bir vektör öğesine erişmek için daha yaygın olarak kullanılır.
 
-## <a name="const_reference"></a><a name="const_reference"></a>const_reference
+## <a name="const_reference"></a><a name="const_reference"></a> const_reference
 
 Vektörde depolanan bir öğeye başvuru sağlayan bir tür **`const`** . İşlem okumak ve gerçekleştirmek için kullanılır **`const`** .
 
@@ -651,7 +651,7 @@ The first element is 10
 The second element is 20
 ```
 
-## <a name="const_reverse_iterator"></a><a name="const_reverse_iterator"></a>const_reverse_iterator
+## <a name="const_reverse_iterator"></a><a name="const_reverse_iterator"></a> const_reverse_iterator
 
 Vektördeki herhangi bir öğeyi okuyabilen bir rastgele erişim yineleyici sağlayan bir tür **`const`** .
 
@@ -667,7 +667,7 @@ Bir tür `const_reverse_iterator` , bir öğenin değerini değiştiremiyor ve v
 
 Yineleyici bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) .
 
-## <a name="crbegin"></a><a name="crbegin"></a>crbegin
+## <a name="crbegin"></a><a name="crbegin"></a> crbegin
 
 Ters çevrilen Vektördeki ilk öğeye bir const yineleyici döndürür.
 
@@ -716,7 +716,7 @@ The first element of vector is 1.
 The first element of the reversed vector is 2.
 ```
 
-## <a name="crend"></a><a name="crend"></a>crend
+## <a name="crend"></a><a name="crend"></a> crend
 
 Ters çevrilen Vektördeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.
 
@@ -730,11 +730,11 @@ Ters çevrilen bir [vektör](../standard-library/vector-class.md) içindeki son 
 
 ### <a name="remarks"></a>Açıklamalar
 
-`crend`, bir ters ile birlikte kullanıldığında, `vector` [vector:: cend](#cend) ile birlikte kullanılır `vector` .
+`crend` , bir ters ile birlikte kullanıldığında, `vector` [vector:: cend](#cend) ile birlikte kullanılır `vector` .
 
 Dönüş değeri `crend` (uygun şekilde azaltılır) ile `vector` nesne değiştirilemez.
 
-`crend`, geriye doğru bir yineleyicinin sonuna ulaşılıp ulaşılmadığını test etmek için kullanılabilir `vector` .
+`crend` , geriye doğru bir yineleyicinin sonuna ulaşılıp ulaşılmadığını test etmek için kullanılabilir `vector` .
 
 Tarafından döndürülen değer `crend` başvurulmamalıdır. Yalnızca karşılaştırma için kullanın.
 
@@ -765,7 +765,7 @@ int main( )
 1
 ```
 
-## <a name="data"></a><a name="data"></a>verileri
+## <a name="data"></a><a name="data"></a> verileri
 
 Vektördeki ilk öğeye bir işaretçi döndürür.
 
@@ -821,7 +821,7 @@ The vector c1 contains elements: 1 2
 The vector c1 now contains elements: 20 2
 ```
 
-## <a name="difference_type"></a><a name="difference_type"></a>difference_type
+## <a name="difference_type"></a><a name="difference_type"></a> difference_type
 
 Aynı vektör içindeki öğelere başvuran iki yineleyiciler arasındaki farkı sağlayan bir tür.
 
@@ -878,7 +878,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.
 ```
 
-## <a name="emplace"></a><a name="emplace"></a>Emplace
+## <a name="emplace"></a><a name="emplace"></a> Emplace
 
 Belirli bir konumdaki vector öğesine yerinde oluşturulmuş bir öğe ekler.
 
@@ -947,7 +947,7 @@ v1 = 10 20 30
 vv1[0] = 10 20 30
 ```
 
-## <a name="emplace_back"></a><a name="emplace_back"></a>emplace_back
+## <a name="emplace_back"></a><a name="emplace_back"></a> emplace_back
 
 Vector öğesinin sonuna yerinde oluşturulmuş bir öğe ekler.
 
@@ -977,7 +977,7 @@ int main()
 }
 ```
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Vektör boş ise sınar.
 
@@ -1015,7 +1015,7 @@ int main( )
 The vector is not empty.
 ```
 
-## <a name="end"></a><a name="end"></a>erer
+## <a name="end"></a><a name="end"></a> erer
 
 past-the-end yineleyici döndürür.
 
@@ -1059,7 +1059,7 @@ int main( )
 2
 ```
 
-## <a name="erase"></a><a name="erase"></a>silme
+## <a name="erase"></a><a name="erase"></a> silme
 
 Belirtilen konumlardan bir vektör içindeki öğe veya öğe aralığını kaldırır.
 
@@ -1132,7 +1132,7 @@ v1 = 20 30 40 50
 v1 = 20 50
 ```
 
-## <a name="front"></a><a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a> yapılan
 
 Vektördeki ilk öğeye bir başvuru döndürür.
 
@@ -1178,7 +1178,7 @@ int main( )
 }
 ```
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a> get_allocator
 
 Vektörü oluşturmak için kullanılan ayırıcı nesnesinin bir kopyasını döndürür.
 
@@ -1217,7 +1217,7 @@ int main( )
 }
 ```
 
-## <a name="insert"></a><a name="insert"></a>ekleyin
+## <a name="insert"></a><a name="insert"></a> ekleyin
 
 Belirli bir konumda vektör içine bir öğe, dizi öğe veya öğe aralığı ekler.
 
@@ -1331,7 +1331,7 @@ v1 = 10 50 50 40 50 50 50 50 20 30
 vv1[0] = 10 50 50 40 50 50 50 50 20 30
 ```
 
-## <a name="iterator"></a><a name="iterator"></a>iden
+## <a name="iterator"></a><a name="iterator"></a> iden
 
 Vektördeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir rasgele erişim yineleyicisi sağlayan bir tür.
 
@@ -1347,7 +1347,7 @@ Bir tür **yineleyicisi** , bir öğenin değerini değiştirmek için kullanıl
 
 [Begin](#begin)örneğine bakın.
 
-## <a name="max_size"></a><a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a> max_size
 
 Vektörün maksimum uzunluğunu döndürür.
 
@@ -1378,7 +1378,7 @@ int main( )
 }
 ```
 
-## <a name="operator"></a><a name="op_at"></a>operator []
+## <a name="operator"></a><a name="op_at"></a> operator []
 
 Vektör öğesine belirtilen konumda bir başvuru döndürür.
 
@@ -1424,7 +1424,7 @@ int main( )
 }
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Vektör öğelerini başka bir Vector kopyasıyla değiştirir.
 
@@ -1484,7 +1484,7 @@ int main( )
 }
 ```
 
-## <a name="pointer"></a><a name="pointer"></a>çağrısı
+## <a name="pointer"></a><a name="pointer"></a> çağrısı
 
 Vektörde bir öğeye işaretçi sağlayan bir tür.
 
@@ -1526,7 +1526,7 @@ int main( )
 44
 ```
 
-## <a name="pop_back"></a><a name="pop_back"></a>pop_back
+## <a name="pop_back"></a><a name="pop_back"></a> pop_back
 
 Vektör sonundaki öğeyi siler.
 
@@ -1538,7 +1538,7 @@ void pop_back();
 
 Kod örneği için bkz. [vector::p ush_back ()](#push_back).
 
-## <a name="push_back"></a><a name="push_back"></a>push_back
+## <a name="push_back"></a><a name="push_back"></a> push_back
 
 Vector öğesinin sonuna bir öğesi ekler.
 
@@ -1593,7 +1593,7 @@ int main()
 }
 ```
 
-## <a name="rbegin"></a><a name="rbegin"></a>rbegin
+## <a name="rbegin"></a><a name="rbegin"></a> rbegin
 
 Tersine çevrilmiş Vektördeki ilk öğeye bir yineleyici döndürür.
 
@@ -1643,7 +1643,7 @@ The first element of vector is 1.
 The first element of the reversed vector is 2.
 ```
 
-## <a name="reference"></a><a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a> başvurunun
 
 Vektörde depolanan bir öğeye başvuru sağlayan bir tür.
 
@@ -1655,7 +1655,7 @@ typedef typename Allocator::reference reference;
 
 Vector sınıfında **başvurunun** nasıl [kullanılacağına ilişkin bir örnek için bkz](#at) ..
 
-## <a name="rend"></a><a name="rend"></a>rend
+## <a name="rend"></a><a name="rend"></a> rend
 
 Ters çevrilen Vektördeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.
 
@@ -1674,7 +1674,7 @@ Ters çevrilen bir vektör içindeki son öğeden sonra gelen konumu ele alan te
 
 Öğesinin dönüş değeri `rend` öğesine atanmışsa `const_reverse_iterator` , vektör nesnesi değiştirilemez. Dönüş değeri `rend` bir öğesine atanırsa `reverse_iterator` , vektör nesnesi değiştirilebilir.
 
-`rend`, bir ters yineleyicinin vektörünün sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
+`rend` , bir ters yineleyicinin vektörünün sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
 Tarafından döndürülen değer `rend` başvurulmamalıdır. Yalnızca karşılaştırma için kullanın.
 
@@ -1705,7 +1705,7 @@ int main( )
 1
 ```
 
-## <a name="reserve"></a><a name="reserve"></a>ayırmaya
+## <a name="reserve"></a><a name="reserve"></a> ayırmaya
 
 Bir vektör nesnesi için en az bir depolama uzunluğu ayırır ve gerekirse boşluk ayırır.
 
@@ -1746,7 +1746,7 @@ Current capacity of v1 = 1
 Current capacity of v1 = 20
 ```
 
-## <a name="resize"></a><a name="resize"></a>yeniden boyutlandırma
+## <a name="resize"></a><a name="resize"></a> yeniden boyutlandırma
 
 Bir vektör için yeni bir boyut belirtir.
 
@@ -1875,7 +1875,7 @@ int main()
 }
 ```
 
-## <a name="reverse_iterator"></a><a name="reverse_iterator"></a>reverse_iterator
+## <a name="reverse_iterator"></a><a name="reverse_iterator"></a> reverse_iterator
 
 Tersine çevrilmiş Vektördeki herhangi bir öğeyi okuyabilen veya değiştirebilen bir rasgele erişim yineleyicisi sağlayan bir tür.
 
@@ -1891,7 +1891,7 @@ Bir tür `reverse_iterator` , geriye doğru vektör üzerinden yinelemek için k
 
 [Rbegin](#rbegin)örneğine bakın.
 
-## <a name="shrink_to_fit"></a><a name="shrink_to_fit"></a>shrink_to_fit
+## <a name="shrink_to_fit"></a><a name="shrink_to_fit"></a> shrink_to_fit
 
 Fazla kapasiteyi atar.
 
@@ -1931,7 +1931,7 @@ Current capacity of v1 = 20
 Current capacity of v1 = 1
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Vektördeki öğe sayısını döndürür.
 
@@ -1972,7 +1972,7 @@ Vector length is 1.
 Vector length is now 2.
 ```
 
-## <a name="size_type"></a><a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a> size_type
 
 Vektördeki öğelerin sayısını sayan bir tür.
 
@@ -1984,7 +1984,7 @@ typedef typename Allocator::size_type size_type;
 
 [Kapasite](#capacity)örneğine bakın.
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki vektörün öğelerini değiş tokuş eder.
 
@@ -2044,7 +2044,7 @@ The number of elements in v1 = 2
 The number of elements in v2 = 3
 ```
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Vektörde depolanan veri türünü temsil eden bir tür.
 
@@ -2054,7 +2054,7 @@ typedef typename Allocator::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type`, şablon parametresinin eşanlamlısıdır `Type` .
+`value_type` , şablon parametresinin eşanlamlısıdır `Type` .
 
 ### <a name="example"></a>Örnek
 
@@ -2077,7 +2077,7 @@ int main( )
 44
 ```
 
-## <a name="vector"></a><a name="vector"></a>vektör
+## <a name="vector"></a><a name="vector"></a> vektör
 
 Bir vektör oluşturur. Aşırı yüklemeler belirli bir boyut veya belirli bir değer öğeleriyle bir vektör oluşturur. Ya da başka bir vektörün tümünün veya bir kısmının kopyası olarak. Bazı aşırı yüklemeler, kullanılacak ayırıcıyı belirtmenize de olanak tanır.
 

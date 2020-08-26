@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - noncreatable attribute
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
-ms.openlocfilehash: c5d51d7c5628a875f036b4e48b03b317490b37ff
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b645d6d6cbcaeff346437d6457360ecdef8d3190
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224402"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840563"
 ---
 # <a name="noncreatable"></a>noncreatable
 
 Kendisi tarafından örneklenemez bir nesne tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [noncreatable]
@@ -51,14 +51,12 @@ class CMyClass : public A
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

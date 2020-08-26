@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-ms.openlocfilehash: 883094c85418c15455a020cfe73538a6576eddd0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6782b1ca28eb07b3f726bd85cd7fffa9b1f1bad2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224493"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88836380"
 ---
 # <a name="aggregatable"></a>toplanabilir
 
@@ -28,11 +28,11 @@ Sınıfın toplamayı desteklediğini gösterir.
 *deeri*<br/>
 Seçim COM nesnesinin toplanabileceği zaman gösteren bir parametre:
 
-- `never`COM nesnesi toplanamıyor.
+- `never` COM nesnesi toplanamıyor.
 
-- `allowed`COM nesnesi doğrudan oluşturulabilir veya toplanabilir. Bu varsayılan seçenektir.
+- `allowed` COM nesnesi doğrudan oluşturulabilir veya toplanabilir. Bu varsayılan seçenektir.
 
-- `always`COM nesnesi doğrudan oluşturulamaz ve yalnızca toplanabilir. `CoCreateInstance`Bu nesne için çağırdığınızda, toplanan nesnenin `IUnknown` arabirimini (denetim) belirtmeniz gerekir `IUnknown` .
+- `always` COM nesnesi doğrudan oluşturulamaz ve yalnızca toplanabilir. `CoCreateInstance`Bu nesne için çağırdığınızda, toplanan nesnenin `IUnknown` arabirimini (denetim) belirtmeniz gerekir `IUnknown` .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -68,14 +68,12 @@ class CMyClass {};
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -4,12 +4,12 @@ ms.date: 05/16/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: integrate custom tools'
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-ms.openlocfilehash: 5a96ffd15bb28022b3000252307c75b3383ac59c
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: 821fb1637306c70d850f12fc1b954860557f47f7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373755"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840446"
 ---
 # <a name="how-to-integrate-custom-tools-into-the-project-properties"></a>Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme
 
@@ -17,7 +17,7 @@ Temel alınan bir XML şema dosyası oluşturarak Visual Studio **Özellik sayfa
 
 **Özellik sayfaları** penceresinin **yapılandırma özellikleri** bölümü, *kural*olarak bilinen ayar gruplarını görüntüler. Her kural bir araç veya bir özellik grubu için ayarları içerir. Örneğin, **bağlayıcı** kuralı bağlayıcı aracının ayarlarını içerir. Kuraldaki ayarlar alt *kategorilere*ayrılabilir.
 
-Bu belgede, Visual Studio başlatıldığında özelliklerin yüklenebilmesi için özel araclarınızın özelliklerini içeren bir küme dizininde bir dosyanın nasıl oluşturulacağı açıklanmaktadır. Dosyanın nasıl değiştirileceği hakkında bilgi için bkz. Visual Studio proje ekibi blogu üzerinde [Platform Extensibilty Part 2](https://docs.microsoft.com/archive/blogs/vsproject/platform-extensibility-part-2) .
+Bu belgede, Visual Studio başlatıldığında özelliklerin yüklenebilmesi için özel araclarınızın özelliklerini içeren bir küme dizininde bir dosyanın nasıl oluşturulacağı açıklanmaktadır. Dosyanın nasıl değiştirileceği hakkında bilgi için bkz. Visual Studio proje ekibi blogu üzerinde [Platform Extensibilty Part 2](/archive/blogs/vsproject/platform-extensibility-part-2) .
 
 ### <a name="to-add-or-change-project-properties"></a>Proje özellikleri eklemek veya değiştirmek için
 
