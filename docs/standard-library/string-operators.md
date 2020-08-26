@@ -20,22 +20,26 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: 0e63054365f4b29cf474a46dbf7c730f54759792
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e031eb4421906e35a96a862855a140218f233778
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217395"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832548"
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize &gt; işleçleri
 
-||||
-|-|-|-|
-|[işleç! =](#op_neq)|[işleç&gt;](#op_gt)|[işleç&gt;&gt;](#op_gt_gt)|
-|[işleç&gt;=](#op_gt_eq)|[işleç&lt;](#op_lt)|[işleç&lt;&lt;](#op_lt_lt)|
-|[işleç&lt;=](#op_lt_eq)|[işleç +](#op_add)|[işleç = =](#op_eq_eq)|
+[işleç! =](#op_neq)\
+[işlecinde&gt;](#op_gt)\
+[işlecinde&gt;&gt;](#op_gt_gt)\
+[işlecinde&gt;=](#op_gt_eq)\
+[işlecinde&lt;](#op_lt)\
+[işlecinde&lt;&lt;](#op_lt_lt)\
+[işlecinde&lt;=](#op_lt_eq)\
+[işleç +](#op_add)\
+[işleç = =](#op_eq_eq)
 
-## <a name="operator"></a><a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a> işleç +
 
 İki dize nesnesini birleştirir.
 
@@ -169,7 +173,7 @@ The string concatenating s1 & s3 is: antiheroine
 The string concatenating s1 & s3 is: antiheroine!
 ```
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki dize nesnesinin sağ taraftaki dize nesnesine eşit olup olmadığını sınar.
 
@@ -260,7 +264,7 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesine eşit olup olmadığını sınar.
 
@@ -351,7 +355,7 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden küçük olup olmadığını sınar.
 
@@ -447,7 +451,7 @@ The string s1 is not less than the string s3.
 The string s3 is less than the string s2.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -550,7 +554,7 @@ The string s1 is less than or equal to the string s3.
 The string s2 is greater than the string s3.
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
 
 Çıkış akışına bir dize yazan bir şablon işlevi.
 
@@ -577,7 +581,7 @@ Belirtilen dizenin değerini, çıkış akışına *_Ostr*yazar.
 
 Şablon işlevi, sınıf şablonu [basic_string](../standard-library/basic-string-class.md) bir nesne *Str* eklemek için **işleç<<** aşırı * \_ yükler.* İşlevi etkin bir şekilde döndürür `_Ostr.write( str.c_str, str.size )` .
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden büyük olup olmadığını sınar.
 
@@ -680,7 +684,7 @@ The string s3 is greater than the string s1.
 The string s2 is greater than the string s3.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 İşlecin sol tarafındaki dize nesnesinin, sağ taraftaki dize nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -783,7 +787,7 @@ The string s3 is greater than or equal to the string s1.
 The string s2 is greater than or equal to the string s3.
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>işlecinde&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> işlecinde&gt;&gt;
 
 Giriş akışından bir dizeyi okuyan bir şablon işlevi.
 

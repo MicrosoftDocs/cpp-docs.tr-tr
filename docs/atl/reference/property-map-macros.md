@@ -1,5 +1,5 @@
 ---
-title: Özellik Eşleme Makroları
+title: Özellik eşleme makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::BEGIN_PROP_MAP
@@ -11,33 +11,33 @@ f1_keywords:
 helpviewer_keywords:
 - property maps
 ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
-ms.openlocfilehash: 56fdb02939a99e396b9000705753e2475b80f6dc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5e14c3cb82b9b7527ed8af42e181581097218360
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326100"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834657"
 ---
-# <a name="property-map-macros"></a>Özellik Eşleme Makroları
+# <a name="property-map-macros"></a>Özellik eşleme makroları
 
-Bu makrolar özellik eşlemlerini ve girişleri tanımlar.
+Bu makrolar Özellik haritaları ve girdileri tanımlar.
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[BEGIN_PROP_MAP](#begin_prop_map)|ATL özellik haritasının başlangıcını işaretler.|
-|[PROP_DATA_ENTRY](#prop_data_entry)|ActiveX denetiminin kapsamını veya boyutlarını gösterir.|
-|[PROP_ENTRY_TYPE](#prop_entry_type)|Özellik eşlemine bir özellik açıklaması, özellik DISPID ve özellik sayfası CLSID girer.|
-|[PROP_ENTRY_TYPE_EX](#prop_entry_type_ex)|Özellik açıklamasına, özellik DISPID'e, özellik `IDispatch` sayfası CLSID'ye ve IID'yi özellik haritasına girer.|
-|[PROP_PAGE](#prop_page)|Özellik haritasına bir özellik sayfası CLSID girer.|
-|[END_PROP_MAP](#end_prop_map)|ATL özellik haritasının sonunu işaretler.|
+|[BEGIN_PROP_MAP](#begin_prop_map)|ATL Özellik eşlemesinin başlangıcını işaretler.|
+|[PROP_DATA_ENTRY](#prop_data_entry)|Bir ActiveX denetiminin kapsamını veya boyutlarını gösterir.|
+|[PROP_ENTRY_TYPE](#prop_entry_type)|Özellik eşlemesine Özellik açıklaması, özellik DISPID ve özellik sayfası CLSID 'SI girer.|
+|[PROP_ENTRY_TYPE_EX](#prop_entry_type_ex)|Özellik eşlemesine Özellik açıklaması, özellik DISPID, özellik sayfası CLSID ve `IDispatch` IID 'yi girer.|
+|[PROP_PAGE](#prop_page)|Özellik eşlemesine bir özellik sayfası CLSID 'SI girer.|
+|[END_PROP_MAP](#end_prop_map)|ATL Özellik eşlemesinin sonunu işaretler.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="begin_prop_map"></a><a name="begin_prop_map"></a>BEGIN_PROP_MAP
+## <a name="begin_prop_map"></a><a name="begin_prop_map"></a> BEGIN_PROP_MAP
 
-Nesnenin özellik haritasının başlangıcını işaretler.
+Nesnenin özellik eşlemesinin başlangıcını işaretler.
 
 ```
 BEGIN_PROP_MAP(theClass)
@@ -45,24 +45,24 @@ BEGIN_PROP_MAP(theClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*theClass*<br/>
-[içinde] Özellik eşlemi içeren sınıfı belirtir.
+*Sınıf*<br/>
+'ndaki Özellik eşlemesini içeren sınıfı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik haritası, özellik tanımlarını, özellik DISPID'lerini, özellik sayfası `IDispatch` CLSID'leri ve IID'leri depolar. Sınıflar [IPerPropertyBrowsingImpl](../../atl/reference/iperpropertybrowsingimpl-class.md), [IPersistPropertyBagImpl](../../atl/reference/ipersistpropertybagimpl-class.md), [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), ve [ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md) almak ve bu bilgileri ayarlamak için özellik haritası kullanın.
+Özellik eşlemesi, özellik açıklamalarını, özellik dispID 'leri, özellik sayfası CLSID 'Lerini ve `IDispatch` IIDS 'yi depolar. [Iperpropertybrowsingimpl](../../atl/reference/iperpropertybrowsingimpl-class.md), [ıpersistpropertybagimpl](../../atl/reference/ipersistpropertybagimpl-class.md), [ıpersiststreaminimpl](../../atl/reference/ipersiststreaminitimpl-class.md)ve [ıdiifyıpropertypagesimpl](../../atl/reference/ispecifypropertypagesimpl-class.md) sınıfları bu bilgileri almak ve ayarlamak için özellik eşlemesini kullanır.
 
-ATL Project Sihirbazı ile bir nesne oluşturduğunuzda, sihirbaz [END_PROP_MAP](#end_prop_map)tarafından izlenen BEGIN_PROP_MAP belirterek boş bir özellik eşlemi oluşturur.
+ATL Proje sihirbazıyla bir nesne oluşturduğunuzda, sihirbaz BEGIN_PROP_MAP ve ardından [END_PROP_MAP](#end_prop_map)' i belirterek boş bir özellik eşlemesi oluşturacaktır.
 
-BEGIN_PROP_MAP özellik eşlemi kullanan bir nesnenin kullanıcı arabirimi olmayabilir, bu nedenle hiçbir ölçüde olurdu, çünkü bir özellik haritası (yani, boyutları) ölçüde kaydetmez. Nesne kullanıcı arabirimi ile activex denetimi ise, bir ölçüde vardır. Bu durumda, kapsamı sağlamak için mülkiyet haritanızda [PROP_DATA_ENTRY](#prop_data_entry) belirtmeniz gerekir.
+BEGIN_PROP_MAP, özellik eşlemesi kullanan bir nesne Kullanıcı arabirimine sahip olmadığından, bir özellik eşlemesinin kapsamını (yani, boyutlar) kaydetmez. Nesne bir kullanıcı arabirimine sahip bir ActiveX denetimi ise, bir uzantısı vardır. Bu durumda, kapsamı sağlamak için özellik haritanızda [PROP_DATA_ENTRY](#prop_data_entry) belirtmeniz gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#103](../../atl/codesnippet/cpp/property-map-macros_1.h)]
 
-## <a name="prop_data_entry"></a><a name="prop_data_entry"></a>PROP_DATA_ENTRY
+## <a name="prop_data_entry"></a><a name="prop_data_entry"></a> PROP_DATA_ENTRY
 
-ActiveX denetiminin kapsamını veya boyutlarını gösterir.
+Bir ActiveX denetiminin kapsamını veya boyutlarını gösterir.
 
 ```
 PROP_DATA_ENTRY( szDesc, member, vt)
@@ -71,31 +71,31 @@ PROP_DATA_ENTRY( szDesc, member, vt)
 ### <a name="parameters"></a>Parametreler
 
 *szDesc*<br/>
-[içinde] Mülk tanımı.
+'ndaki Özellik açıklaması.
 
-*Üye*<br/>
-[içinde] Kapsamını içeren veri üyesi; örneğin, `m_sizeExtent`.
+*üyesidir*<br/>
+'ndaki Kapsamı içeren veri üyesi; Örneğin, `m_sizeExtent` .
 
-*Vt*<br/>
-[içinde] Özelliğin VARYANT türünü belirtir.
+*z*<br/>
+'ndaki Özelliğin DEĞIŞKEN türünü belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, belirtilen veri üyesinin kalıcı olarak süreverilmesine neden olur.
+Bu makro, belirtilen veri üyesinin kalıcı hale gelmesine neden olur.
 
-ActiveX denetimi oluşturduğunuzda, sihirbaz bu makroyu özellik haritası makro [BEGIN_PROP_MAP](#begin_prop_map) sonra ve özellik haritası makro [END_PROP_MAP](#end_prop_map)önce ekler.
+Bir ActiveX denetimi oluşturduğunuzda, sihirbaz bu makroyu, özellik Haritası makrosu [BEGIN_PROP_MAP](#begin_prop_map) sonra ve özellik haritası makrosu [END_PROP_MAP](#end_prop_map)önce ekler.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, nesnenin kapsamı`m_sizeExtent`( ) devam ediyor.
+Aşağıdaki örnekte, nesnesinin () kapsamı kalıcı hale getirildi `m_sizeExtent` .
 
 [!code-cpp[NVC_ATL_Windowing#131](../../atl/codesnippet/cpp/property-map-macros_2.h)]
 
 [!code-cpp[NVC_ATL_Windowing#132](../../atl/codesnippet/cpp/property-map-macros_3.h)]
 
-## <a name="prop_entry_type"></a><a name="prop_entry_type"></a>PROP_ENTRY_TYPE
+## <a name="prop_entry_type"></a><a name="prop_entry_type"></a> PROP_ENTRY_TYPE
 
-Nesnenin özellik haritasına özellik açıklaması, özellik DISPID ve özellik sayfası CLSID girmek için bu makroyu kullanın.
+Nesnenin özellik eşlemesine bir özellik açıklaması, özellik DISPID ve özellik sayfası CLSID 'SI girmek için bu makroyu kullanın.
 
 ```
 PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
@@ -104,30 +104,30 @@ PROP_ENTRY_TYPE( szDesc, dispid, clsid, vt)
 ### <a name="parameters"></a>Parametreler
 
 *szDesc*<br/>
-[içinde] Mülk tanımı.
+'ndaki Özellik açıklaması.
 
-*Dıspıd*<br/>
-[içinde] Tesis DISPID.
+*dı*<br/>
+'ndaki Özelliğin DISPID 'i.
 
-*Clsıd*<br/>
-[içinde] İlişkili özellik sayfasının CLSID'si. İlişkili bir özellik sayfası olmayan bir özellik için özel değeri CLSID_NULL kullanın.
+*in*<br/>
+'ndaki İlişkili özellik sayfasının CLSID 'SI. İlişkili özellik sayfasına sahip olmayan bir özellik için CLSID_NULL özel değeri kullanın.
 
-*Vt*<br/>
-[içinde] Mülkün türü.
+*z*<br/>
+'ndaki Özelliğin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-PROP_ENTRY makro güvensiz ve amortismana uğradı. PROP_ENTRY_TYPE ile değiştirildi.
+PROP_ENTRY makrosu güvensiz ve kullanım dışı bırakıldı. PROP_ENTRY_TYPE ile değiştirilmiştir.
 
-[BEGIN_PROP_MAP](#begin_prop_map) makrosu özellik haritasının başlangıcını işaretler; [END_PROP_MAP](#end_prop_map) makro sonunu işaretler.
+[BEGIN_PROP_MAP](#begin_prop_map) makro, özellik eşlemesinin başlangıcını işaretler; [END_PROP_MAP](#end_prop_map) makro bitişi işaretler.
 
 ### <a name="example"></a>Örnek
 
 [BEGIN_PROP_MAP](#begin_prop_map)için örneğe bakın.
 
-## <a name="prop_entry_type_ex"></a><a name="prop_entry_type_ex"></a>PROP_ENTRY_TYPE_EX
+## <a name="prop_entry_type_ex"></a><a name="prop_entry_type_ex"></a> PROP_ENTRY_TYPE_EX
 
-[PROP_ENTRY_TYPE](#prop_entry_type)benzer, ancak nesneniz birden çok çift arabirimi destekliyorsa belirli bir IID belirtmenizi sağlar.
+[Prop_entry_type](#prop_entry_type)benzer, ancak nesneniz birden çok çift arabirimi destekliyorsa belırlı bir IID belirtmenize olanak tanır.
 
 ```
 PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
@@ -136,35 +136,35 @@ PROP_ENTRY_TYPE_EX( szDesc, dispid, clsid, iidDispatch, vt)
 ### <a name="parameters"></a>Parametreler
 
 *szDesc*<br/>
-[içinde] Mülk tanımı.
+'ndaki Özellik açıklaması.
 
-*Dıspıd*<br/>
-[içinde] Tesis DISPID.
+*dı*<br/>
+'ndaki Özelliğin DISPID 'i.
 
-*Clsıd*<br/>
-[içinde] İlişkili özellik sayfasının CLSID'si. İlişkili bir özellik sayfası olmayan bir özellik için özel değeri CLSID_NULL kullanın.
+*in*<br/>
+'ndaki İlişkili özellik sayfasının CLSID 'SI. İlişkili özellik sayfasına sahip olmayan bir özellik için CLSID_NULL özel değeri kullanın.
 
-*iidDispatch*<br/>
-[içinde] Özelliği tanımlayan çift arabirimin IID'si.
+*ııddispatch*<br/>
+'ndaki Özelliği tanımlayan çift arabirimin IID 'si.
 
-*Vt*<br/>
-[içinde] Mülkün türü.
+*z*<br/>
+'ndaki Özelliğin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-PROP_ENTRY_EX makrosu güvensiz ve amortismana lıydı. PROP_ENTRY_TYPE_EX ile değiştirildi.
+PROP_ENTRY_EX makrosu güvensiz ve kullanım dışı bırakıldı. PROP_ENTRY_TYPE_EX ile değiştirilmiştir.
 
-[BEGIN_PROP_MAP](#begin_prop_map) makrosu özellik haritasının başlangıcını işaretler; [END_PROP_MAP](#end_prop_map) makro sonunu işaretler.
+[BEGIN_PROP_MAP](#begin_prop_map) makro, özellik eşlemesinin başlangıcını işaretler; [END_PROP_MAP](#end_prop_map) makro bitişi işaretler.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek gruplar `IMyDual1` girişleri için bir `IMyDual2`giriş takip . Çift arabirime göre gruplandırma performansı artırır.
+Aşağıdaki örnek, için `IMyDual1` bir girişi tarafından izlenen girdilerini gruplandırır `IMyDual2` . Dual Interface 'e göre gruplandırma performansı iyileştirir.
 
 [!code-cpp[NVC_ATL_Windowing#133](../../atl/codesnippet/cpp/property-map-macros_4.h)]
 
-## <a name="prop_page"></a><a name="prop_page"></a>PROP_PAGE
+## <a name="prop_page"></a><a name="prop_page"></a> PROP_PAGE
 
-Nesnenin özellik haritasına bir özellik sayfası CLSID girmek için bu makroyu kullanın.
+Nesnenin özellik eşlemesine bir özellik sayfası CLSID 'SI girmek için bu makroyu kullanın.
 
 ```
 PROP_PAGE(clsid)
@@ -172,25 +172,25 @@ PROP_PAGE(clsid)
 
 ### <a name="parameters"></a>Parametreler
 
-*Clsıd*<br/>
-[içinde] Özellik sayfasının CLSID'si.
+*in*<br/>
+'ndaki Özellik sayfasının CLSID 'SI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-PROP_PAGE [PROP_ENTRY_TYPE](#prop_entry_type)benzer, ancak bir özellik açıklaması veya DISPID gerektirmez.
+PROP_PAGE, [prop_entry_type](#prop_entry_type)benzerdir, ancak bir özellik açıklaması ya da DISPID gerektirmez.
 
 > [!NOTE]
-> zaten PROP_ENTRY_TYPE veya [PROP_ENTRY_TYPE_EX](#prop_entry_type_ex)ile bir CLSID girdiyseniz, PROP_PAGE ile ek bir giriş yapmanız gerekmez.
+> PROP_ENTRY_TYPE veya [PROP_ENTRY_TYPE_EX](#prop_entry_type_ex)sahıp bir CLSID zaten girdiyseniz PROP_PAGE ile ek bir giriş yapmanız gerekmez.
 
-[BEGIN_PROP_MAP](#begin_prop_map) makrosu özellik haritasının başlangıcını işaretler; [END_PROP_MAP](#end_prop_map) makro sonunu işaretler.
+[BEGIN_PROP_MAP](#begin_prop_map) makro, özellik eşlemesinin başlangıcını işaretler; [END_PROP_MAP](#end_prop_map) makro bitişi işaretler.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Windowing#134](../../atl/codesnippet/cpp/property-map-macros_5.h)]
 
-## <a name="end_prop_map"></a><a name="end_prop_map"></a>END_PROP_MAP
+## <a name="end_prop_map"></a><a name="end_prop_map"></a> END_PROP_MAP
 
-Nesnenin özellik haritasının sonunu işaretler.
+Nesnenin özellik eşlemesinin sonunu işaretler.
 
 ```
 END_PROP_MAP()
@@ -198,7 +198,7 @@ END_PROP_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL Project Sihirbazı ile bir nesne oluşturduğunuzda, sihirbaz END_PROP_MAP ardından [BEGIN_PROP_MAP](#begin_prop_map) belirterek boş bir özellik eşlemi oluşturur.
+ATL Proje sihirbazıyla bir nesne oluşturduğunuzda, sihirbaz [BEGIN_PROP_MAP](#begin_prop_map) ve ardından END_PROP_MAP ' i belirterek boş bir özellik eşlemesi oluşturacaktır.
 
 ### <a name="example"></a>Örnek
 

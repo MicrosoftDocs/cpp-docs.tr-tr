@@ -19,18 +19,18 @@ f1_keywords:
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-ms.openlocfilehash: 46a6b3548526f0917c4e022a12bf859242e70b20
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9d295093031eaee0a2d4dd83aa931060e6eebc07
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375475"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832276"
 ---
 # <a name="tiled_index-class"></a>tiled_index Sınıfı
 
-[tiled_extent](tiled-extent-class.md) bir nesneye dizin sağlar. Bu sınıfın, yerel döşeme kökenine ve genel kökene göre öğelere erişecek özellikleri vardır. Döşenmiş alanlar hakkında daha fazla bilgi için, [bkz.](../../../parallel/amp/using-tiles.md)
+[Tiled_extent](tiled-extent-class.md) nesnesine bir dizin sağlar. Bu sınıfın, yerel kutucuk kaynağına göre ve genel kaynağa göreli öğelere erişim özellikleri vardır. Döşeli boşluklar hakkında daha fazla bilgi için bkz. [kutucukları kullanma](../../../parallel/amp/using-tiles.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -58,7 +58,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 En önemli boyutun uzunluğu.
 
 *_Dim1*<br/>
-Bir sonraki en önemli boyutun uzunluğu.
+Sonraki-en önemli boyutun uzunluğu.
 
 *_Dim2*<br/>
 En az önemli boyutun uzunluğu.
@@ -67,36 +67,35 @@ En az önemli boyutun uzunluğu.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[tiled_index Yapıcı](#ctor)|`tile_index` sınıfının yeni bir örneğini başlatır.|
+|[tiled_index Oluşturucusu](#ctor)|`tile_index` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[get_tile_extent](#tiled_index__get_tile_extent)|Şablon bağımsız değişkenlerinin `_Dim0` `_Dim1`değerlerine `tiled_index` sahip bir [kapsam](extent-class.md) nesnesi verir ve `_Dim2`.|
+|[get_tile_extent](#tiled_index__get_tile_extent)|, [extent](extent-class.md) `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerini içeren bir kapsam nesnesi döndürür `_Dim0` `_Dim1` `_Dim2` .|
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[bariyer Sabiti](#tiled_index__barrier)|İş parçacıklarının geçerli döşemesinde bir engeli temsil eden [tile_barrier](tile-barrier-class.md) bir nesne depolar.|
-|||
-|[küresel Sabit](#tiled_index__global)|Bir ızgara nesnesinde genel dizini temsil eden sıralama 1, 2 veya 3 [dizin](index-class.md) nesnesini depolar.|
-|[yerel Sabit](#tiled_index__local)|Bir `index` [tiled_extent](tiled-extent-class.md) nesnesinin geçerli döşemesinde göreli dizini temsil eden 1, 2 veya 3 rank nesnesini depolar.|
-|[sıralama Sabit](#tiled_index__rank)|Nesnenin sıralamasını `tiled_index` depolar.|
-|[kiremit Sabiti](#tiled_index__tile)|Bir `index` `tiled_extent` nesnenin geçerli döşemesinin koordinatlarını temsil eden 1, 2 veya 3 numaralı bir nesneyi depolar.|
-|[tile_dim0 Sabiti](#tiled_index__tile_dim0)|En önemli boyutun uzunluğunu saklar.|
-|[tile_dim1 Sabiti](#tiled_index__tile_dim1)|Bir sonrakien en önemli boyutun uzunluğunu depolar.|
-|[tile_dim2 Sabiti](#tiled_index__tile_dim2)|En az önem eken boyutun uzunluğunu saklar.|
-|[tile_origin Sabiti](#tiled_index__tile_origin)|Bir `index` nesnedeki geçerli döşemenin kaynağının genel koordinatlarını temsil eden 1, 2 `tiled_extent` veya 3 numaralı sıralamadaki bir nesneyi depolar.|
+|[bariyer sabiti](#tiled_index__barrier)|Geçerli iş parçacığı kutucuğunda bir engel temsil eden [tile_barrier](tile-barrier-class.md) nesnesini depolar.|
+|[Küresel sabit](#tiled_index__global)|Bir kılavuz nesnesindeki genel dizini temsil eden 1, 2 veya 3. derece bir [Dizin](index-class.md) nesnesi depolar.|
+|[Yerel sabit](#tiled_index__local)|`index`Bir [tiled_extent](tiled-extent-class.md) nesnesinin geçerli kutucuğunda göreli dizini temsil eden 1, 2 veya 3 dereceli bir nesneyi depolar.|
+|[sıralama sabiti](#tiled_index__rank)|Nesnenin derecesini depolar `tiled_index` .|
+|[kutucuk sabiti](#tiled_index__tile)|`index`Bir nesnenin geçerli kutucuğunun koordinatlarını temsil eden 1, 2 veya 3 dereceli bir nesneyi depolar `tiled_extent` .|
+|[tile_dim0 sabiti](#tiled_index__tile_dim0)|En önemli boyutun uzunluğunu depolar.|
+|[tile_dim1 sabiti](#tiled_index__tile_dim1)|Sonraki-en önemli boyutun uzunluğunu depolar.|
+|[tile_dim2 sabiti](#tiled_index__tile_dim2)|En az önemli boyutun uzunluğunu depolar.|
+|[tile_origin sabiti](#tiled_index__tile_origin)|`index`Bir nesne içindeki geçerli kutucuğun kaynağının genel koordinatlarını temsil eden 1, 2 veya 3 dereceli bir nesneyi depolar `tiled_extent` .|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[tile_extent](#tile_extent)|Şablon bağımsız değişkenleri `tiled_index` `_Dim0`şablon bağımsız değişkenlerinin `_Dim1`değerlerine `_Dim2`sahip bir [kapsam](extent-class.md) nesnesi `tiled_index` alır ve .|
+|[tile_extent](#tile_extent)|[extent](extent-class.md) `tiled_index` Şablon bağımsız değişkenleri `tiled_index` şablon bağımsız değişkenlerinin, ve değerlerini içeren bir kapsam nesnesi alır `_Dim0` `_Dim1` `_Dim2` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -106,15 +105,15 @@ En az önemli boyutun uzunluğu.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amp.h
+**Üst bilgi:** amp. h
 
-**Ad alanı:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
-## <a name="tiled_index-constructor"></a><a name="ctor"></a>tiled_index Yapıcı
+## <a name="tiled_index-constructor"></a><a name="ctor"></a> tiled_index Oluşturucusu
 
 `tiled_index` sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 tiled_index(
@@ -131,36 +130,35 @@ tiled_index(
 ### <a name="parameters"></a>Parametreler
 
 *_Global*<br/>
-Yapılandırılan `tiled_index`küresel [indeks](index-class.md) .
+Oluşturulan genel [Dizin](index-class.md) `tiled_index` .
 
 *_Local*<br/>
-İnşa edilenin yerel [indeksi](index-class.md)`tiled_index`
+Oluşturulan [index](index-class.md)`tiled_index`
 
 *_Tile*<br/>
-Yapılandırılan çini [dizini](index-class.md)`tiled_index`
+Oluşturulan öğesinin döşeme [dizini](index-class.md)`tiled_index`
 
 *_Tile_origin*<br/>
-Yapılandırılan çini menşe [indeksi](index-class.md)`tiled_index`
+Oluşturulan öğesinin kutucuk kaynak [dizini](index-class.md)`tiled_index`
 
 *_Barrier*<br/>
-Yapılandırılan `tiled_index` [tile_barrier](tile-barrier-class.md) nesnesi.
+Oluşturulan [tile_barrier](tile-barrier-class.md) nesnesi `tiled_index` .
 
 *_Other*<br/>
-Yapılandırılan `tile_index` `tiled_index`nesne kopyalanacak.
+`tile_index`Oluşturulan öğesine kopyalanacak nesne `tiled_index` .
 
 ### <a name="overloads"></a>Aşırı Yüklemeler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|Adı|Açıklama|
-|`tiled_index(const index<rank>& _Global, const index<rank>& _Local, const index<rank>& _Tile, const index<rank>& _Tile_origin, const tile_barrier& _Barrier restrict(amp,cpu);`|Genel koordinatlarda kiremit dizini ve yerel koordinatlarda döşemedeki göreli konumundan `tile_index` sınıfın yeni bir örneğini başolarak karşılar. Ve `_Global` `_Tile_origin` parametreler hesaplanır.|
-|`tiled_index(    const tiled_index& _Other) restrict(amp,cpu);`|Belirtilen `tiled_index` nesneyi kopyalayarak `tile_index` sınıfın yeni bir örneğini başolarak adlandırır.|
+|`tiled_index(const index<rank>& _Global, const index<rank>& _Local, const index<rank>& _Tile, const index<rank>& _Tile_origin, const tile_barrier& _Barrier restrict(amp,cpu);`|`tile_index`Genel koordinatlardaki kutucuğun dizininden ve yerel koordinatlardaki kutucukta bulunan göreli konumda sınıfının yeni bir örneğini başlatır. `_Global`Ve `_Tile_origin` parametreleri hesaplanır.|
+|`tiled_index(    const tiled_index& _Other) restrict(amp,cpu);`|`tile_index`Belirtilen nesneyi kopyalayarak sınıfın yeni bir örneğini başlatır `tiled_index` .|
 
-## <a name="get_tile_extent"></a><a name="tiled_index__get_tile_extent"></a>get_tile_extent
+## <a name="get_tile_extent"></a><a name="tiled_index__get_tile_extent"></a> get_tile_extent
 
-Şablon bağımsız değişkenlerinin `_Dim0` `_Dim1`değerlerine `tiled_index` sahip bir [kapsam](extent-class.md) nesnesi verir ve `_Dim2`.
+, [extent](extent-class.md) `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerini içeren bir kapsam nesnesi döndürür `_Dim0` `_Dim1` `_Dim2` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 extent<rank> get_tile_extent()restrict(amp,cpu);
@@ -168,103 +166,103 @@ extent<rank> get_tile_extent()restrict(amp,cpu);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon `extent` bağımsız değişkenlerinin `tiled_index` `_Dim0`değerlerine sahip `_Dim1`bir `_Dim2`nesne , ve .
+, `extent` `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerine sahip bir nesne `_Dim0` `_Dim1` `_Dim2` .
 
-## <a name="barrier"></a><a name="tiled_index__barrier"></a>Bariyer
+## <a name="barrier"></a><a name="tiled_index__barrier"></a> engeli
 
-İş parçacıklarının geçerli döşemesinde bir engeli temsil eden [tile_barrier](tile-barrier-class.md) bir nesne depolar.
+Geçerli iş parçacığı kutucuğunda bir engel temsil eden [tile_barrier](tile-barrier-class.md) nesnesini depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const tile_barrier barrier;
 ```
 
-## <a name="global"></a><a name="tiled_index__global"></a>Küresel
+## <a name="global"></a><a name="tiled_index__global"></a> Genel
 
-Bir nesnenin genel dizinini temsil eden sıralama 1, 2 veya 3 [dizin](index-class.md) nesnesini depolar.
+Bir nesnenin genel dizinini temsil eden 1, 2 veya 3. sırada bir [Dizin](index-class.md) nesnesi depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> global;
 ```
 
-## <a name="local"></a><a name="tiled_index__local"></a>Yerel
+## <a name="local"></a><a name="tiled_index__local"></a> Yerel
 
-[Bir tiled_extent](tiled-extent-class.md) nesnesinin geçerli döşemesinde göreli dizini temsil eden sıralama 1, 2 veya 3 [dizin](index-class.md) nesnesini depolar.
+Bir [tiled_extent](tiled-extent-class.md) nesnesinin geçerli kutucuğunda göreli dizini temsil eden 1, 2 veya 3. derece bir [Dizin](index-class.md) nesnesi depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> local;
 ```
 
-## <a name="rank"></a><a name="tiled_index__rank"></a>Rütbe
+## <a name="rank"></a><a name="tiled_index__rank"></a> sırası
 
-Nesnenin sıralamasını `tiled_index` depolar.
+Nesnenin derecesini depolar `tiled_index` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int rank = _Rank;
 ```
 
-## <a name="tile"></a><a name="tiled_index__tile"></a>Karo
+## <a name="tile"></a><a name="tiled_index__tile"></a> Kaldır
 
-[bir tiled_extent](tiled-extent-class.md) nesnesinin geçerli döşemesinin koordinatlarını temsil eden sıralama 1, 2 veya 3'teki bir [dizin](index-class.md) nesnesini depolar.
+Bir [tiled_extent](tiled-extent-class.md) nesnesinin geçerli kutucuğunun koordinatlarını temsil eden 1, 2 veya 3. derece bir [Dizin](index-class.md) nesnesi depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> tile;
 ```
 
-## <a name="tile_dim0"></a><a name="tiled_index__tile_dim0"></a>tile_dim0
+## <a name="tile_dim0"></a><a name="tiled_index__tile_dim0"></a> tile_dim0
 
-En önemli boyutun uzunluğunu saklar.
+En önemli boyutun uzunluğunu depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int tile_dim0 = _Dim0;
 ```
 
-## <a name="tile_dim1"></a><a name="tiled_index__tile_dim1"></a>tile_dim1
+## <a name="tile_dim1"></a><a name="tiled_index__tile_dim1"></a> tile_dim1
 
-Bir sonrakien en önemli boyutun uzunluğunu depolar.
+Sonraki-en önemli boyutun uzunluğunu depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int tile_dim1 = _Dim1;
 ```
 
-## <a name="tile_dim2"></a><a name="tiled_index__tile_dim2"></a>tile_dim2
+## <a name="tile_dim2"></a><a name="tiled_index__tile_dim2"></a> tile_dim2
 
-En az önem eken boyutun uzunluğunu saklar.
+En az önemli boyutun uzunluğunu depolar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 static const int tile_dim2 = _Dim2;
 ```
 
-## <a name="tile_origin"></a><a name="tiled_index__tile_origin"></a>tile_origin
+## <a name="tile_origin"></a><a name="tiled_index__tile_origin"></a> tile_origin
 
-Geçerli döşemenin kaynağının küresel koordinatlarını temsil eden sıralama 1, 2 veya [3'teki](index-class.md) bir dizin nesnesini [tiled_extent](tiled-extent-class.md) bir nesne içinde saklar.
+1, 2 veya 3 ' ün bir [Dizin](index-class.md) nesnesini, bir [tiled_extent](tiled-extent-class.md) nesnesi içindeki geçerli kutucuğun kaynağının genel koordinatlarını temsil eder.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const index<rank> tile_origin
 ```
 
-## <a name="tile_extent"></a><a name="tile_extent"></a>tile_extent
+## <a name="tile_extent"></a><a name="tile_extent"></a> tile_extent
 
-Şablon bağımsız değişkenleri `tiled_index` `_Dim0`şablon bağımsız değişkenlerinin `_Dim1`değerlerine `_Dim2`sahip bir [kapsam](extent-class.md) nesnesi `tiled_index` alır ve .
+[extent](extent-class.md) `tiled_index` Şablon bağımsız değişkenleri `tiled_index` şablon bağımsız değişkenlerinin, ve değerlerini içeren bir kapsam nesnesi alır `_Dim0` `_Dim1` `_Dim2` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
@@ -272,4 +270,4 @@ __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

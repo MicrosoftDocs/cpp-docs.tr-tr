@@ -1,27 +1,27 @@
 ---
-title: Cihaz Bağlamı Genel İşlevleri
+title: Cihaz bağlamı genel Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlwin/ATL::AtlCreateTargetDC
 ms.assetid: 08ec28f6-daff-4882-9544-e8a4639d05c4
-ms.openlocfilehash: e640f310a1976c29a39f0ab7c2575dfd1073c889
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d2d25660083f074683a3f42f878497ce14a008b8
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330148"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833471"
 ---
-# <a name="device-context-global-functions"></a>Cihaz Bağlamı Genel İşlevleri
+# <a name="device-context-global-functions"></a>Cihaz bağlamı genel Işlevleri
 
-Bu işlev, belirli bir aygıt için bir aygıt bağlamı oluşturur.
+Bu işlev, belirli bir cihaz için bir cihaz bağlamı oluşturur.
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[AtlCreateTargetDC](#atlcreatetargetdc)|Aygıt bağlamı oluşturur.|
+|[AtlCreateTargetDC](#atlcreatetargetdc)|Bir cihaz bağlamı oluşturur.|
 
-## <a name="atlcreatetargetdc"></a><a name="atlcreatetargetdc"></a>AtlCreateTargetDC
+## <a name="atlcreatetargetdc"></a><a name="atlcreatetargetdc"></a> AtlCreateTargetDC
 
-[DVTARGETDEVICE](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) yapısında belirtilen aygıt için bir aygıt bağlamı oluşturur.
+[Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) yapısında belirtilen cihaz için bir cihaz bağlamı oluşturur.
 
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
@@ -29,25 +29,25 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hdc*<br/>
-[içinde] Aygıt bağlamının varolan tutamacı veya NULL.
+*HDC*<br/>
+'ndaki Bir cihaz bağlamının var olan tanıtıcısı veya NULL.
 
-*ptd*<br/>
-[içinde] Hedef aygıt `DVTARGETDEVICE` hakkında bilgi içeren yapının işaretçisi.
+*PTD*<br/>
+'ndaki `DVTARGETDEVICE` Hedef cihazla ilgili bilgileri içeren yapıya yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tanıtıcıyı, 'de belirtilen aygıt için `DVTARGETDEVICE`aygıt bağlamına döndürür. Aygıt belirtilmemişse, tutamacı varsayılan görüntü aygıtına döndürür.
+İçinde belirtilen cihazın bir cihaz bağlamına tanıtıcıyı döndürür `DVTARGETDEVICE` . Hiçbir cihaz belirtilmemişse, varsayılan görüntüleme cihazına olan tanıtıcıyı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapı NULL ve *HDC* NULL ise, varsayılan görüntü aygıtı için bir aygıt bağlamı oluşturur.
+Yapı NULL ise ve *HDC* null ise, varsayılan görüntü cihazı için bir cihaz bağlamı oluşturur.
 
-*HDC* NULL değilse ve *ptd* NULL ise, işlev varolan *hdc*döndürür.
+*HDC* null değilse ve *PTD* null ise, işlev var olan *HDC*'yi döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin.h
+**Üstbilgi:** atlwin. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

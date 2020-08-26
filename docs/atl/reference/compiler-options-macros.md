@@ -16,18 +16,18 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-ms.openlocfilehash: d8c9538c9f3d889360c0527ba538e9e091df0755
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 90b80aaa34456677f2d7c2dd5717ae6837f4523f
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229967"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833575"
 ---
 # <a name="compiler-options-macros"></a>Derleyici seçenekleri makroları
 
 Bu makrolar belirli derleyici özelliklerini denetler.
 
-|||
+|Makroya|Açıklama|
 |-|-|
 |[_ATL_ALL_WARNINGS](#_atl_all_warnings)|ATL 'nin önceki sürümlerinden dönüştürülen projelerde hata veren bir sembol.|
 |[_ATL_APARTMENT_THREADED](#_atl_apartment_threaded)|Nesnelerinizin bir veya daha fazla apartman iş parçacığı kullanıp kullanmıyorsa tanımlayın.|
@@ -41,7 +41,7 @@ Bu makrolar belirli derleyici özelliklerini denetler.
 |[ATL_NOINLINE](#atl_noinline)|Bir işlevin satır içine alınmayacak olması gerektiğini belirten bir simge.|
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Tüm nesnelerinizin tek iş parçacığı modelini kullanıp kullan, tanımlayın.|
 
-## <a name="_atl_all_warnings"></a><a name="_atl_all_warnings"></a>_ATL_ALL_WARNINGS
+## <a name="_atl_all_warnings"></a><a name="_atl_all_warnings"></a> _ATL_ALL_WARNINGS
 
 ATL 'nin önceki sürümlerinden dönüştürülen projelerde hata veren bir sembol.
 
@@ -77,7 +77,7 @@ Bu `#define` eklenirse, ATL üstbilgileri, genel olarak devre dışı bırakılm
 
 Yeni projeler bu, `#define` Varsayılan olarak *pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) ' de ayarlanır.
 
-## <a name="_atl_apartment_threaded"></a><a name="_atl_apartment_threaded"></a>_ATL_APARTMENT_THREADED
+## <a name="_atl_apartment_threaded"></a><a name="_atl_apartment_threaded"></a> _ATL_APARTMENT_THREADED
 
 Nesnelerinizin bir veya daha fazla apartman iş parçacığı kullanıp kullanmıyorsa tanımlayın.
 
@@ -89,7 +89,7 @@ _ATL_APARTMENT_THREADED
 
 Apartman iş parçacığı belirtir. Bir ATL nesnesi için kullanılabilir iş parçacığı modellerinin bir açıklaması için diğer iş parçacığı seçenekleri ve [Seçenekler, atl basit nesne Sihirbazı](../../atl/reference/options-atl-simple-object-wizard.md) Için [projenin Iş parçacığı modelini belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) bölümüne bakın.
 
-## <a name="_atl_cstring_explicit_constructors"></a><a name="_atl_cstring_explicit_constructors"></a>_ATL_CSTRING_EXPLICIT_CONSTRUCTORS
+## <a name="_atl_cstring_explicit_constructors"></a><a name="_atl_cstring_explicit_constructors"></a> _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 
 Belirli `CString` oluşturucuları açık hale getirir, istenmeden dönüştürmeleri önler.
 
@@ -103,7 +103,7 @@ Bu Oluşturucu tanımlandığında, tek bir parametre alan tüm CString oluştur
 
 Tüm Oluşturucu dize bağımsız değişkenlerinde _T makrosunu kullanarak _ATL_CSTRING_EXPLICIT_CONSTRUCTORS tanımlayabilir ve _UNICODE tanımlanıp tanımlanmadığına bakılmaksızın derleme hatalarından kaçınabilirsiniz.
 
-## <a name="_atl_enable_ptm_warning"></a><a name="_atl_enable_ptm_warning"></a>_ATL_ENABLE_PTM_WARNING
+## <a name="_atl_enable_ptm_warning"></a><a name="_atl_enable_ptm_warning"></a> _ATL_ENABLE_PTM_WARNING
 
 Üye işlevlerine işaretçi için ANSI C++ standart uyumlu sözdizimi kullanımını zorlamak üzere bu makroyu tanımlayın. Bu makronun kullanılması, bir üye işlevine bir işaretçi başlatmak için standart olmayan bir sözdizimi kullanıldığında C4867 derleyici hatasının oluşturulmasına neden olur.
 
@@ -127,7 +127,7 @@ Ancak standart olmayan form kullanım dışı bırakılmıştır. Mevcut kodu C+
 
 Harita makroları için ve ' & ' karakterini ekleyin. Kodunuzda karakteri tekrar eklememelisiniz.
 
-## <a name="_atl_free_threaded"></a><a name="_atl_free_threaded"></a>_ATL_FREE_THREADED
+## <a name="_atl_free_threaded"></a><a name="_atl_free_threaded"></a> _ATL_FREE_THREADED
 
 Nesnelerinizin bir veya daha fazla serbest iş parçacığı kullanıp kullanmıyorsa tanımlayın.
 
@@ -139,7 +139,7 @@ _ATL_FREE_THREADED
 
 Serbest iş parçacığı belirtir. Ücretsiz iş parçacığı, bir çoklu iş parçacığı grubu modeliyle eşdeğerdir. Bir ATL nesnesi için kullanılabilir iş parçacığı modellerinin bir açıklaması için diğer iş parçacığı seçenekleri ve [Seçenekler, atl basit nesne Sihirbazı](../../atl/reference/options-atl-simple-object-wizard.md) Için [projenin Iş parçacığı modelini belirtme](../../atl/specifying-the-threading-model-for-a-project-atl.md) bölümüne bakın.
 
-## <a name="_atl_multi_threaded"></a><a name="_atl_multi_threaded"></a>_ATL_MULTI_THREADED
+## <a name="_atl_multi_threaded"></a><a name="_atl_multi_threaded"></a> _ATL_MULTI_THREADED
 
 Projenin hem, serbest veya nötr olarak işaretlenen nesneleri olacağını gösteren bir simge.
 
@@ -151,7 +151,7 @@ _ATL_MULTI_THREADED
 
 Bu sembol tanımlanmışsa, ATL genel verilere erişimi doğru bir şekilde eşitleyecek kodu çeker. Yeni kod, bunun yerine eşdeğer makro [_ATL_FREE_THREADED](#_atl_free_threaded) kullanmalıdır.
 
-## <a name="_atl_no_automatic_namespace"></a><a name="_atl_no_automatic_namespace"></a>_ATL_NO_AUTOMATIC_NAMESPACE
+## <a name="_atl_no_automatic_namespace"></a><a name="_atl_no_automatic_namespace"></a> _ATL_NO_AUTOMATIC_NAMESPACE
 
 Ad alanının ATL olarak varsayılan kullanımını önleyen bir simge.
 
@@ -163,7 +163,7 @@ _ATL_NO_AUTOMATIC_NAMESPACE
 
 Bu simge tanımlı değilse, atlbase. h dahil olmak üzere varsayılan olarak **ad alanı ATL kullanılarak** yapılır, bu da adlandırma çakışmalarına neden olabilir. Bunu engellemek için bu simgeyi tanımlayın.
 
-## <a name="_atl_no_com_support"></a><a name="_atl_no_com_support"></a>_ATL_NO_COM_SUPPORT
+## <a name="_atl_no_com_support"></a><a name="_atl_no_com_support"></a> _ATL_NO_COM_SUPPORT
 
 COM ile ilgili kodun projenizle derlenmelerini engelleyen bir simge.
 
@@ -171,7 +171,7 @@ COM ile ilgili kodun projenizle derlenmelerini engelleyen bir simge.
 _ATL_NO_COM_SUPPORT
 ```
 
-## <a name="atl_no_vtable"></a><a name="atl_no_vtable"></a>ATL_NO_VTABLE
+## <a name="atl_no_vtable"></a><a name="atl_no_vtable"></a> ATL_NO_VTABLE
 
 Vtable işaretçisinin sınıfın oluşturucusunda ve yıkıcısında başlatılmasını engelleyen bir simge.
 
@@ -187,7 +187,7 @@ Vtable işaretçisinin, sınıfın oluşturucusunda ve yıkıcısında başlatı
 
 [!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/cpp/compiler-options-macros_4.h)]
 
-## <a name="atl_noinline"></a><a name="atl_noinline"></a>ATL_NOINLINE
+## <a name="atl_noinline"></a><a name="atl_noinline"></a> ATL_NOINLINE
 
 Bir işlevin satır içine alınmayacak olduğunu gösteren bir simge.
 
@@ -208,7 +208,7 @@ Satır içine alınmayacak olması gereken işlev.
 
 Bir işlevin, bir üst bilgi dosyasına yerleştirilebilecek şekilde, satır içi olarak bildirilmesini gerektirse de, bu simgeyi kullanın. Öğesini olarak genişletir **`__declspec(noinline)`** .
 
-## <a name="_atl_single_threaded"></a><a name="_atl_single_threaded"></a>_ATL_SINGLE_THREADED
+## <a name="_atl_single_threaded"></a><a name="_atl_single_threaded"></a> _ATL_SINGLE_THREADED
 
 Tüm nesnelerinizin tek iş parçacığı modelini kullanıp kullanmıyorsa tanımlayın
 

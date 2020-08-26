@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: 7b1cea29a782f291f1e85f7a143730825958d91b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 425fa0bb6b7aab502ce493ced8b587fad8ce59a8
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229785"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833354"
 ---
 # <a name="optimization-best-practices"></a>En iyi uygulamaları iyileştirme
 
@@ -40,7 +40,7 @@ En iyi duruma getirilmiş yayın yapılarla bile hata ayıklama sembolleri oluş
 
 **`/Op`** Derleyici seçeneği kaldırılmıştır ve kayan nokta iyileştirmeleriyle ilgili aşağıdaki dört derleyici seçeneği eklenmiştir:
 
-|||
+|Seçenek|Açıklama|
 |-|-|
 |**`/fp:precise`**|Bu, varsayılan öneriden ve çoğu durumda kullanılmalıdır.|
 |**`/fp:fast`**|Örneğin, oyunlarda, en önemli öneme sahip olması önerilir. Bu, en yüksek performansa neden olur.|
@@ -87,7 +87,7 @@ Daha fazla bilgi için bkz. [`optimize`](../preprocessor/optimize.md).
 
 Satır içi, derleyicinin gerçekleştirdiği en önemli iyileştirmelerin yanı sıra bu davranışı değiştirmeye yardımcı olan pragmaların her biri hakkında konuşur.
 
-`#pragma inline_recursion`uygulamanın bir özyinelemeli çağrıyı satır içine almak isteyip istemediğinizi belirtmek için yararlıdır. Varsayılan olarak kapalıdır. Küçük işlevlerin basit özyineleme için bunu açabilirsiniz. Daha fazla bilgi için bkz. [`inline_recursion`](../preprocessor/inline-recursion.md).
+`#pragma inline_recursion` uygulamanın bir özyinelemeli çağrıyı satır içine almak isteyip istemediğinizi belirtmek için yararlıdır. Varsayılan olarak kapalıdır. Küçük işlevlerin basit özyineleme için bunu açabilirsiniz. Daha fazla bilgi için bkz. [`inline_recursion`](../preprocessor/inline-recursion.md).
 
 Intıl derinliğini kısıtlamak için başka bir faydalı pragma `#pragma inline_depth` . Bu, genellikle bir program veya işlevin boyutunu sınırlandırmaya çalıştığınız durumlarda faydalıdır. Daha fazla bilgi için bkz. [`inline_depth`](../preprocessor/inline-depth.md).
 
@@ -95,17 +95,17 @@ Intıl derinliğini kısıtlamak için başka bir faydalı pragma `#pragma inlin
 
 Visual Studio 'da performansa yardımcı olabilecek birkaç anahtar sözcük vardır: [__restrict](../cpp/extension-restrict.md) ve [__assume](../intrinsics/assume.md).
 
-İlk olarak, bunun aksi belirtilmedikçe **`__restrict`** `__declspec(restrict)` iki farklı işlem olmalıdır. Bunlar biraz ilişkili olsa da, anlamları farklıdır. **`__restrict`**, veya gibi bir tür niteleyicisi **`const`** , **`volatile`** ancak yalnızca işaretçi türleri için.
+İlk olarak, bunun aksi belirtilmedikçe **`__restrict`** `__declspec(restrict)` iki farklı işlem olmalıdır. Bunlar biraz ilişkili olsa da, anlamları farklıdır. **`__restrict`** , veya gibi bir tür niteleyicisi **`const`** , **`volatile`** ancak yalnızca işaretçi türleri için.
 
 İle değiştirilen bir işaretçi **`__restrict`** *__restrict işaretçisi*olarak adlandırılır. __Restrict işaretçi yalnızca _restrict işaretçisi üzerinden erişilebilen bir işaretçisidir \_ . Diğer bir deyişle, _restrict işaretçisi tarafından işaret edilen verilere erişmek için başka bir işaretçi kullanılamaz \_ .
 
-**`__restrict`**, Microsoft C++ iyileştirici için güçlü bir araç olabilir, ancak bunu harika bir şekilde kullanabilirsiniz. Yanlış kullanılırsa, iyileştirici uygulamanızı kesen bir iyileştirme gerçekleştirebilir.
+**`__restrict`** , Microsoft C++ iyileştirici için güçlü bir araç olabilir, ancak bunu harika bir şekilde kullanabilirsiniz. Yanlış kullanılırsa, iyileştirici uygulamanızı kesen bir iyileştirme gerçekleştirebilir.
 
 **`__restrict`** Anahtar sözcüğü, **/OA** anahtarının önceki sürümlerden yerini alır.
 
 İle **`__assume`** bir geliştirici, derleyiciye bazı değişkenlerin değeri hakkında varsayımlar yapma konusunda bilgi verebilir.
 
-Örneğin, `__assume(a < 5);` Bu kod satırının değişkenin 5 ' ten küçük olduğunu belirten iyileştiriciye söyler `a` . Bu, derleyicinin taahhüdüne bir değer. `a`Artık programın bu noktasında 6 ' dır, derleyici iyileştirildikten sonra programın davranışı beklemiş olabilir. **`__assume`**, Switch deyimleri ve/veya Koşullu ifadeler öncesinde en yararlı seçenektir.
+Örneğin, `__assume(a < 5);` Bu kod satırının değişkenin 5 ' ten küçük olduğunu belirten iyileştiriciye söyler `a` . Bu, derleyicinin taahhüdüne bir değer. `a`Artık programın bu noktasında 6 ' dır, derleyici iyileştirildikten sonra programın davranışı beklemiş olabilir. **`__assume`** , Switch deyimleri ve/veya Koşullu ifadeler öncesinde en yararlı seçenektir.
 
 İçin bazı sınırlamalar vardır **`__assume`** . İlk olarak, gibi **`__restrict`** yalnızca bir öneridir, bu nedenle derleyicinin yok saymaya ücretsizdir. Ayrıca, **`__assume`** Şu anda yalnızca sabitlere göre değişken nitelikleri olan değişkenlerle birlikte çalışıyor. Sembolik nitelikleri (örneğin, bir < b) yaymaz.
 

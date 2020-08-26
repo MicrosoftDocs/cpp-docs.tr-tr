@@ -1,5 +1,5 @@
 ---
-title: CBitmap Sınıfı
+title: CBitmap sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CBitmap
@@ -34,18 +34,18 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 9a33a6e1bea601422e043d7f2a80029c72d97e50
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: adb2a461de5e82fa76ce0ed9961d970f46dbe26a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352740"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834992"
 ---
-# <a name="cbitmap-class"></a>CBitmap Sınıfı
+# <a name="cbitmap-class"></a>CBitmap sınıfı
 
-Bir Windows grafik aygıtı arabirimini (GDI) biteşe saklar ve bit eşlemi işlemek için üye işlevler sağlar.
+Bir Windows grafik cihaz arabirimi (GDI) bit eşlemini kapsüller ve bit eşlemi işlemek için üye işlevleri sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CBitmap : public CGdiObject
@@ -55,55 +55,55 @@ class CBitmap : public CGdiObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CBitmap::CBitmap](#cbitmap)|Bir `CBitmap` nesne inşa eder.|
+|[CBitmap:: CBitmap](#cbitmap)|Bir `CBitmap` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CBitmap::CreateBitmap](#createbitmap)|Nesneyi, belirli bir genişliğe, yüksekliğe ve bit desenine sahip aygıta bağımlı bellek bit eşlemi yle başolarak adlandırır.|
-|[CBitmap::CreateBitmapIndirect](#createbitmapindirect)|Nesneyi, bir `BITMAP` yapıda verilen genişlik, yükseklik ve bit deseni (belirtilmişse) ile bir bit eşlemi ile başolarak karşılar.|
-|[CBitmap::CreateCompatibleBitmap](#createcompatiblebitmap)|Nesneyi bir bit eşlemi ile başharfe, böylece belirli bir aygıtla uyumlu hale getirin.|
-|[CBitmap::CreateDiscardableBitmap](#creatediscardablebitmap)|Nesneyi, belirli bir aygıtla uyumlu bir bit eşlemi ile başolarak adlandırır.|
-|[CBitmap::FromHandle](#fromhandle)|Bir Windows `HBITMAP` bit `CBitmap` eşlemi için bir tanıtıcı verildiğinde bir nesneye bir işaretçi döndürür.|
-|[CBitmap::GetBitmap](#getbitmap)|Bir `BITMAP` yapıyı bit eşlemi hakkında bilgiyle doldurur.|
-|[CBitmap::GetBitmapBits](#getbitmapbits)|Belirtilen bit eşleminin bitlerini belirtilen arabelleğe kopyalar.|
-|[CBitmap::GetBitmapDimension](#getbitmapdimension)|Bit eşleminin genişliğini ve yüksekliğini verir. Yükseklik ve genişlik [SetBitmapDimension](#setbitmapdimension) üye işlevi tarafından daha önce ayarlanmış olduğu varsayılır.|
-|[CBitmap::LoadBitmap](#loadbitmap)|Uygulamanın yürütülebilir dosyasından adlandırılmış bir bitmap kaynağı yükleyerek ve bit eşlemini nesneye ekleyerek nesneyi başlatır.|
-|[CBitmap::LoadMappedBitmap](#loadmappedbitmap)|Bir biteşme yükler ve renkleri geçerli sistem renkleriyle eşler.|
-|[CBitmap::LoadOEMBitmap](#loadoembitmap)|Önceden tanımlanmış bir Windows bit eşlemi yükleyerek ve bit eşlemi nesneye ekleyerek nesneyi başolarak algılar.|
-|[CBitmap::SetBitmapBits](#setbitmapbits)|Bit eşlemi bitlerini belirtilen bit değerlerine ayarlar.|
-|[CBitmap::SetBitmapDimension](#setbitmapdimension)|0,1 milimetrelik birimlerde bir bit eşleneğine bir genislik ve yükseklik atar.|
+|[CBitmap:: CreateBitmap](#createbitmap)|Nesneyi, belirtilen genişlik, yükseklik ve bit düzenine sahip bir cihaza bağımlı bellek bit eşlemi ile başlatır.|
+|[CBitmap:: Createbitmapdolaylı](#createbitmapindirect)|Bir yapıda verilen genişlik, yükseklik ve bit düzeniyle (belirtilmişse) bir bit eşlem ile nesneyi başlatır `BITMAP` .|
+|[CBitmap:: CreateCompatibleBitmap](#createcompatiblebitmap)|Belirtilen bir cihazla uyumlu olması için nesneyi bir bit eşlem ile başlatır.|
+|[CBitmap:: CreateDiscardableBitmap](#creatediscardablebitmap)|Nesneyi belirtilen bir cihazla uyumlu bir discardable bit eşlem ile başlatır.|
+|[CBitmap:: FromHandle](#fromhandle)|`CBitmap`Windows bit eşlemiyle bir tanıtıcı verildiğinde, nesne için bir işaretçi döndürür `HBITMAP` .|
+|[CBitmap:: GetBitmap](#getbitmap)|Bir `BITMAP` yapıyı bit eşlem hakkındaki bilgilerle doldurur.|
+|[CBitmap:: GetBitmapBits](#getbitmapbits)|Belirtilen bit eşlemin bitlerini belirtilen arabelleğe kopyalar.|
+|[CBitmap:: GetBitmapDimension](#getbitmapdimension)|Bit eşlemin genişliğini ve yüksekliğini döndürür. Yükseklik ve genişlik, daha önce [SetBitmapDimension](#setbitmapdimension) üye işlevi tarafından ayarlanmış olarak kabul edilir.|
+|[CBitmap:: LoadBitmap](#loadbitmap)|Uygulamanın yürütülebilir dosyasından adlandırılmış bir bit eşlem kaynağı yükleyerek ve bit eşlemi nesnesine ekleyerek nesneyi başlatır.|
+|[CBitmap:: LoadMappedBitmap](#loadmappedbitmap)|Bir bit eşlem yükler ve renkleri geçerli sistem renklerine eşler.|
+|[CBitmap:: LoadOEMBitmap](#loadoembitmap)|Önceden tanımlanmış bir Windows bit eşlemi yükleyerek ve bit eşlemi nesnesine ekleyerek nesneyi başlatır.|
+|[CBitmap:: Setbitmapbitleri](#setbitmapbits)|Bit eşlemin bitlerini belirtilen bit değerlerine ayarlar.|
+|[CBitmap:: SetBitmapDimension](#setbitmapdimension)|0,1-milimetre ölçüm birimlerindeki bir bit eşleme genişlik ve Yükseklik atar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CBitmap::operatör HBITMAP](#operator_hbitmap)|Nesneye bağlı Windows tutamacını `CBitmap` döndürür.|
+|[CBitmap:: operator HBıX](#operator_hbitmap)|Nesnesine eklenen Windows işleyicisini döndürür `CBitmap` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `CBitmap` nesneyi kullanmak için nesneyi oluştur, başlangıç üye işlevlerinden biriyle ona bir bit eşlemi tutamacı ekle ve sonra nesnenin üye işlevlerini çağırın.
+Bir nesne kullanmak için, `CBitmap` nesneyi oluşturun, başlatma üye işlevlerinden biriyle bir bit eşlem tutamacı ekleyin ve ardından nesnenin üye işlevlerini çağırın.
 
-Gibi `CBitmap`grafik nesneleri kullanma hakkında daha fazla bilgi için [bkz.](../../mfc/graphic-objects.md)
+Gibi grafik nesnelerini kullanma hakkında daha fazla bilgi için `CBitmap` bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cgdiobject](../../mfc/reference/cgdiobject-class.md)
+[CGdiObject](../../mfc/reference/cgdiobject-class.md)
 
 `CBitmap`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cbitmapcbitmap"></a><a name="cbitmap"></a>CBitmap::CBitmap
+## <a name="cbitmapcbitmap"></a><a name="cbitmap"></a> CBitmap:: CBitmap
 
-Bir `CBitmap` nesne inşa eder.
+Bir `CBitmap` nesnesi oluşturur.
 
 ```
 CBitmap();
@@ -111,11 +111,11 @@ CBitmap();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ortaya çıkan nesne, başlatma üye işlevlerinden biriyle başharfe bilmelidir.
+Ortaya çıkan nesne, başlatma üyesi işlevlerinden biri ile başlatılmalıdır.
 
-## <a name="cbitmapcreatebitmap"></a><a name="createbitmap"></a>CBitmap::CreateBitmap
+## <a name="cbitmapcreatebitmap"></a><a name="createbitmap"></a> CBitmap:: CreateBitmap
 
-Belirtilen genişliğe, yüksekliğe ve bit desenine sahip aygıta bağımlı bellek bit eşlemi başolarak karşılar.
+Belirtilen genişlik, yükseklik ve bit düzenine sahip bir cihaza bağımlı bellek bit eşlemi başlatır.
 
 ```
 BOOL CreateBitmap(
@@ -128,38 +128,38 @@ BOOL CreateBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nwidth*<br/>
-Bit eşleninin genişliğini (piksel olarak) belirtir.
+*nWidth*<br/>
+Bit eşlemin genişliğini (piksel cinsinden) belirtir.
 
-*Nheight*<br/>
-Bit eşleninin yüksekliğini (piksel olarak) belirtir.
+*nHeight*<br/>
+Bit eşlemin yüksekliğini (piksel cinsinden) belirtir.
 
-*nUçaklar*<br/>
-Bit haritasındaki renk düzlemlerinin sayısını belirtir.
+*Ndüzlemler*<br/>
+Bit eşlemdeki renk düzlemleri sayısını belirtir.
 
-*nBitsayısı*<br/>
-Görüntü pikseli başına renk biti sayısını belirtir.
+*nBitcount*<br/>
+Ekran pikseli başına renk bitlerinin sayısını belirtir.
 
 *lpBits*<br/>
-İlk bit eşlemi bit değerlerini içeren bir bayt dizisini gösterir. NULL ise, yeni bit eşlemi baş harfe bağlı olarak bırakılır.
+İlk bit eşlem bit değerlerini içeren bir bayt dizisine işaret eder. NULL ise, yeni bit eşlem başlatılmamış olarak bırakılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renkli bitmap için *nPlanes* veya *nBitcount* parametresi 1 olarak ayarlanmalıdır. Bu parametrelerin her ikisi de `CreateBitmap` 1 olarak ayarlanırsa, tek renkli bit eşlemi oluşturur.
+Color bit eşlem için, *Ndüzlemler* ya da *nBitcount* parametresi 1 olarak ayarlanmalıdır. Bu parametrelerin her ikisi de 1 olarak ayarlanırsa, `CreateBitmap` tek renkli bir bit eşlem oluşturur.
 
-Bir ekran aygıtı için doğrudan bir bit eşlemi seçilemese de, [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) kullanarak bir "bellek aygıtı bağlamı" için geçerli bit eşlemi olarak seçilebilir ve [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) işlevini kullanarak herhangi bir uyumlu aygıt bağlamına kopyalanabilir.
+Bir ekran cihazı için bir bit eşlem doğrudan seçilemese de, CDC:: [NesneSeç](../../mfc/reference/cdc-class.md#selectobject) kullanılarak "bellek cihaz bağlamı" için geçerli bit eşlem olarak seçilebilir ve [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) işlevi kullanılarak uyumlu herhangi bir cihaz bağlamına kopyalanabilir.
 
-İşlev tarafından `CBitmap` oluşturulan nesneyle bitirdiğinizde, önce aygıt bağlamının bit eşlesini seçin, ardından nesneyi `CBitmap` silin. `CreateBitmap`
+`CBitmap`İşlev tarafından oluşturulan nesneyle bitirdiğinizde `CreateBitmap` , önce cihaz bağlamından bit eşlemini seçin, sonra `CBitmap` nesneyi silin.
 
-Daha fazla bilgi için, `bmBits` yapıdaki `BITMAP` alanın açıklamasına bakın. [BITMAP](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısı [CBitmap altında açıklanmıştır::CreateBitmapIndirect](#createbitmapindirect) üye fonksiyonu.
+Daha fazla bilgi için, yapıdaki alanın açıklamasına bakın `bmBits` `BITMAP` . [Bit eşlem](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısı, [CBitmap:: createbitmapdolaylı](#createbitmapindirect) üye işlevi altında açıklanmaktadır.
 
-## <a name="cbitmapcreatebitmapindirect"></a><a name="createbitmapindirect"></a>CBitmap::CreateBitmapIndirect
+## <a name="cbitmapcreatebitmapindirect"></a><a name="createbitmapindirect"></a> CBitmap:: Createbitmapdolaylı
 
-LPBitmap tarafından işaret edilen yapıda verilen genişlik, yükseklik ve bit deseni (belirtilmişse) olan bir *bit eşlemi*başlatifleştirir.
+*Lpbit eşlem*tarafından işaret edilen yapıda belirtilen genişlik, yükseklik ve bit düzenine (belirtilmişse) sahip bir bit eşlem başlatır.
 
 ```
 BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
@@ -167,24 +167,24 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpBitmap*<br/>
-Bitmap hakkında bilgi içeren bir [BITMAP](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısına işaret edin.
+*Lpbit eşlem*<br/>
+Bit eşlem hakkında bilgi içeren bir [bit eşlem](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısına işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir ekran aygıtı için doğrudan bir bit eşlemi seçilemese de, [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) kullanarak bellek aygıtı bağlamı için geçerli bit eşlemi olarak seçilebilir ve [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya [CDC:StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) işlevi kullanılarak herhangi bir uyumlu aygıt bağlamına kopyalanabilir. [(CDC::PatBlt](../../mfc/reference/cdc-class.md#patblt) işlevi geçerli fırçanın bit eşlesini doğrudan görüntü aygıtı bağlamına kopyalayabilir.)
+Bir ekran cihazı için bir bit eşlem doğrudan seçilemese de, CDC:: [NesneSeç](../../mfc/reference/cdc-class.md#selectobject) kullanılarak bir bellek cihaz bağlamı için geçerli bit eşlem olarak seçilebilir ve [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya CDC::, CDC:: [ırblt](../../mfc/reference/cdc-class.md#stretchblt) işlevi kullanılarak uyumlu herhangi bir cihaz bağlamına kopyalanabilir. ( [CDC::P atBlt](../../mfc/reference/cdc-class.md#patblt) işlevi, geçerli fırça için bit eşlemi doğrudan görüntüleme cihazı bağlamına kopyalayabilir.)
 
-*LPBitmap* parametresi tarafından işaret edilen `GetObject` `BITMAP` yapı işlevi kullanılarak doldurulmuşsa, bit eşlemenin bitleri belirtilmemiş ve bit eşlemi baş harfize edilmemiştir. Bit eşlemi nin başlatılması için, bir uygulama [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya [SetDIBits](/windows/win32/api/wingdi/nf-wingdi-setdibits) gibi bir işlevi kullanarak bit haritasının ilk parametresi tarafından `CGdiObject::GetObject` `CreateBitmapIndirect`tanımlanan bit eşleminden oluşturulan bit eşleminin bit eşleminden kopyalanabilir.
+`BITMAP` *Lpbıx* parametresi tarafından işaret edilen yapı işlevi kullanılarak doldurulduysa `GetObject` , bit eşlemin bitleri belirtilmez ve bit eşlem başlatılmamış olur. Bir uygulama, bit eşlemi başlatmak için, ilk parametresi tarafından tanımlanan bit eşlemden tarafından oluşturulan bit eşlemden bitleri kopyalamak üzere [CDC:: BitBlt](../../mfc/reference/cdc-class.md#bitblt) veya [SetDIBits](/windows/win32/api/wingdi/nf-wingdi-setdibits) gibi bir işlevi kullanabilir `CGdiObject::GetObject` `CreateBitmapIndirect` .
 
-İşlevle `CBitmap` `CreateBitmapIndirect` oluşturulan nesneyle bitirdiğinizde, önce aygıt bağlamının bit eşlesini seçin, ardından nesneyi `CBitmap` silin.
+`CBitmap`İşlev ile oluşturulan nesneyle bitirdiğinizde `CreateBitmapIndirect` , önce cihaz bağlamından bit eşlemini seçin, sonra `CBitmap` nesneyi silin.
 
-## <a name="cbitmapcreatecompatiblebitmap"></a><a name="createcompatiblebitmap"></a>CBitmap::CreateCompatibleBitmap
+## <a name="cbitmapcreatecompatiblebitmap"></a><a name="createcompatiblebitmap"></a> CBitmap:: CreateCompatibleBitmap
 
-*pDC*tarafından belirtilen aygıtla uyumlu bir bit eşlemi başlatma.
+*PDC*tarafından belirtilen cihazla uyumlu bir bit eşlem başlatır.
 
 ```
 BOOL CreateCompatibleBitmap(
@@ -195,34 +195,34 @@ BOOL CreateCompatibleBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Aygıt bağlamını belirtir.
+*Kökündeki*<br/>
+Cihaz bağlamını belirtir.
 
-*Nwidth*<br/>
-Bit eşleninin genişliğini (piksel olarak) belirtir.
+*nWidth*<br/>
+Bit eşlemin genişliğini (piksel cinsinden) belirtir.
 
-*Nheight*<br/>
-Bit eşleninin yüksekliğini (piksel olarak) belirtir.
+*nHeight*<br/>
+Bit eşlemin yüksekliğini (piksel cinsinden) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlemi, belirtilen aygıt bağlamıyla aynı sayıda renk düzlemine veya piksel başına aynı bit biçimine sahiptir. *PDC*tarafından belirtilen bellek aygıtı ile uyumlu herhangi bir bellek aygıtı için geçerli bit map olarak seçilebilir.
+Bit eşlem, belirtilen cihaz bağlamı ile aynı sayıda renk düzlemleri veya piksel başına aynı bit biçimine sahiptir. *PDC*tarafından belirtile uyumlu herhangi bir bellek aygıtı için geçerli bit eşlem olarak seçilebilir.
 
-*pDC* bir bellek aygıtı bağlamıysa, döndürülen bit eşlemi, bu aygıt bağlamında şu anda seçili bit eşlemiyle aynı biçime sahiptir. "Bellek aygıtı bağlamı", görüntü yüzeyini temsil eden bir bellek bloğudur. Görüntüleri uyumlu cihazın gerçek ekran yüzeyine kopyalamadan önce bellekte hazırlamak için kullanılabilir.
+*PDC* bir bellek cihaz bağlamıdır, döndürülen bit eşlem o cihaz bağlamındaki Şu anda seçili olan bit eşlemle aynı biçimde olur. "Bellek cihaz bağlamı", bir görüntü yüzeyini temsil eden bir bellek bloğudur. Uyumlu cihazın gerçek görüntü yüzeyine kopyalamadan önce bellekte görüntü hazırlamak için kullanılabilir.
 
-Bir bellek aygıtı bağlamı oluşturulduğunda, GDI bunun için otomatik olarak tek renkli bir stok bit eşlemi seçer.
+Bir bellek cihaz bağlamı oluşturulduğunda, GDI otomatik olarak kendisi için bir tek renkli hisse senedi bit eşlemi seçer.
 
-Renkli bellek aygıtı bağlamı renk veya tek renkli bit eşlemleri seçilebildiği `CreateCompatibleBitmap` için, işlev tarafından döndürülen bit eşlemi biçimi her zaman aynı değildir; ancak, bellek olmayan aygıt bağlamı için uyumlu bir biteşin biçimi her zaman aygıtın biçimindedir.
+Renk belleği cihaz bağlamında renk veya tek renkli bit eşlemler seçili olduğundan, işlev tarafından döndürülen bit eşlemin biçimi `CreateCompatibleBitmap` her zaman aynı değildir; ancak, bellek dışı bir cihaz bağlamı için uyumlu bir bit eşlem biçimi her zaman cihazın biçimindedir.
 
-İşlevle oluşturulan `CBitmap` nesneyle bitirdiğinizde, önce aygıt bağlamının bit eşlesini `CBitmap` seçin, ardından nesneyi silin. `CreateCompatibleBitmap`
+`CBitmap`İşlevle oluşturduğunuz nesneyle bitirdiğinizde `CreateCompatibleBitmap` , önce cihaz bağlamından bit eşlemini seçin, sonra `CBitmap` nesneyi silin.
 
-## <a name="cbitmapcreatediscardablebitmap"></a><a name="creatediscardablebitmap"></a>CBitmap::CreateDiscardableBitmap
+## <a name="cbitmapcreatediscardablebitmap"></a><a name="creatediscardablebitmap"></a> CBitmap:: CreateDiscardableBitmap
 
-*pDC*tarafından tanımlanan aygıt bağlamıyla uyumlu bir atılabilir bit eşlemi başlatılır.
+*PDC*tarafından tanımlanan cihaz bağlamı ile uyumlu bir discardable bit eşlemi başlatır.
 
 ```
 BOOL CreateDiscardableBitmap(
@@ -233,30 +233,30 @@ BOOL CreateDiscardableBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Aygıt bağlamı belirtir.
+*Kökündeki*<br/>
+Bir cihaz bağlamını belirtir.
 
-*Nwidth*<br/>
-Bit eşleminin genişliğini (bit olarak) belirtir.
+*nWidth*<br/>
+Bit eşlemin genişliğini (bit cinsinden) belirtir.
 
-*Nheight*<br/>
-Bit haritasının yüksekliğini (bit olarak) belirtir.
+*nHeight*<br/>
+Bit eşlemin yüksekliğini (bit cinsinden) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlemi, belirtilen aygıt bağlamıyla aynı sayıda renk düzlemine veya piksel başına aynı bit biçimine sahiptir. Bir uygulama *pDC*tarafından belirtilen ile uyumlu bir bellek aygıtı için geçerli bitmap olarak bu bitmap seçebilirsiniz.
+Bit eşlem, belirtilen cihaz bağlamı ile aynı sayıda renk düzlemleri veya piksel başına aynı bit biçimine sahiptir. Bir uygulama, *PDC*tarafından belirtilen bir bellek cihazının geçerli bit eşlemi olarak bu bit eşlemi seçebilir.
 
-Windows, bu işlev tarafından oluşturulan bir bit eşlemi yalnızca bir uygulama görüntü bağlamına seçmemişse atabilir. Windows seçilmediğinde bit eşlemi atar ve uygulama daha sonra onu seçmeye çalışırsa, [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) işlevi NULL döndürür.
+Windows, bu işlev tarafından oluşturulan bir bit eşlemi atabilir, ancak bir uygulama onu bir görüntüleme bağlamına seçmez. Pencere seçili olmadığında ve uygulama daha sonra bunu açmaya çalıştığında, bu bit eşlemi atar. [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject)
 
-İşlevle oluşturulan `CBitmap` nesneyle bitirdiğinizde, önce aygıt bağlamının bit eşlesini `CBitmap` seçin, ardından nesneyi silin. `CreateDiscardableBitmap`
+`CBitmap`İşlevle oluşturduğunuz nesneyle bitirdiğinizde `CreateDiscardableBitmap` , önce cihaz bağlamından bit eşlemini seçin, sonra `CBitmap` nesneyi silin.
 
-## <a name="cbitmapfromhandle"></a><a name="fromhandle"></a>CBitmap::FromHandle
+## <a name="cbitmapfromhandle"></a><a name="fromhandle"></a> CBitmap:: FromHandle
 
-Bir Windows GDI bit eşlemi için bir tanıtıcı verildiğinde bir `CBitmap` nesneye bir işaretçi döndürür.
+Bir `CBitmap` WINDOWS GDI bit eşlemiyle bir tanıtıcı verildiğinde nesnesine bir işaretçi döndürür.
 
 ```
 static CBitmap* PASCAL FromHandle(HBITMAP hBitmap);
@@ -264,20 +264,20 @@ static CBitmap* PASCAL FromHandle(HBITMAP hBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hbıtmap*<br/>
-Windows GDI bit eşlemi belirtir.
+*HBITMAP*<br/>
+Bir Windows GDI bit eşlemini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CBitmap` nesneye işaretçi; aksi takdirde NULL.
+`CBitmap`Başarılı olursa nesne için bir işaretçi; aksi takdırde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CBitmap` nesne tutamacına zaten eklenmiş değilse, geçici `CBitmap` bir nesne oluşturulur ve eklenir. Bu `CBitmap` geçici nesne yalnızca, uygulamanın olay döngüsünde boşta kalma süresine sahip olduğu ve tüm geçici grafik nesnelerinin silindiği bir sonraki zamana kadar geçerlidir. Bunu söylemenin başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olmasıdır.
+Bir `CBitmap` nesne zaten tanıtıcıya iliştirilmişse, geçici bir `CBitmap` nesne oluşturulur ve eklenir. Bu geçici `CBitmap` nesne yalnızca uygulamanın olay döngüsünde bir sonraki kez boşta kalması durumunda geçerlidir. bu süre, tüm geçici grafik nesneleri silinir. Bunun başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olduğu durumdur.
 
-## <a name="cbitmapgetbitmap"></a><a name="getbitmap"></a>CBitmap::GetBitmap
+## <a name="cbitmapgetbitmap"></a><a name="getbitmap"></a> CBitmap:: GetBitmap
 
-Ekli bit eşlemi için görüntü özelliklerini alır.
+Ekli bit eşlem için görüntü özelliklerini alır.
 
 ```
 int GetBitmap(BITMAP* pBitMap);
@@ -285,18 +285,18 @@ int GetBitmap(BITMAP* pBitMap);
 
 ### <a name="parameters"></a>Parametreler
 
-*pBitMap*<br/>
-Görüntü özelliklerini alacak bir [BITMAP](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısıiçin işaretçi. Bu parametre NULL olmamalıdır.
+*Pbımap*<br/>
+Görüntü özelliklerini alacak bir [bit eşlem](/windows/win32/api/wingdi/ns-wingdi-bitmap) yapısına yönelik işaretçi. Bu parametre NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olduysa sıfırolmayan; aksi takdirde 0.
+Yöntem başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cbitmapgetbitmapbits"></a><a name="getbitmapbits"></a>CBitmap::GetBitmapBits
+## <a name="cbitmapgetbitmapbits"></a><a name="getbitmapbits"></a> CBitmap:: GetBitmapBits
 
-Ekli bit eşleminin bit desenini belirtilen arabelleğe kopyalar.
+Ekli bit eşlemin bit modelini belirtilen arabelleğe kopyalar.
 
 ```
 DWORD GetBitmapBits(
@@ -306,23 +306,23 @@ DWORD GetBitmapBits(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwSay*<br/>
-Arabelleğe kopyalanması için bayt sayısı.
+*dwCount*<br/>
+Arabelleğe kopyalanacak bayt sayısı.
 
 *lpBits*<br/>
-Bit eşlemi alacak arabelleğe işaretçi.
+Bit eşlemi alacak olan arabelleğin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa arabelleğe kopyalanan bayt sayısı; aksi takdirde 0.
+Yöntem başarılı olursa arabelleğe kopyalanmış bayt sayısı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Gerekli arabellek boyutunu belirlemek için [CBitmap::GetBitmap'i](#getbitmap) kullanın.
+Gerekli arabellek boyutunu öğrenmek için [CBitmap:: GetBitmap](#getbitmap) kullanın.
 
-## <a name="cbitmapgetbitmapdimension"></a><a name="getbitmapdimension"></a>CBitmap::GetBitmapDimension
+## <a name="cbitmapgetbitmapdimension"></a><a name="getbitmapdimension"></a> CBitmap:: GetBitmapDimension
 
-Bit eşleminin genişliğini ve yüksekliğini verir.
+Bit eşlemin genişliğini ve yüksekliğini döndürür.
 
 ```
 CSize GetBitmapDimension() const;
@@ -330,15 +330,15 @@ CSize GetBitmapDimension() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-0,1 milimetrelik birimler olarak ölçülen bit haritasının genişliği ve yüksekliği. Yükseklik `cy` `CSize` nesnenin üyesinde, genişlik ise `cx` üyededir. Biteş genişliği ve yüksekliği kullanılarak `SetBitmapDimension`ayarlanmadıysa, iade değeri 0'dır.
+Bit eşlemin 0,1 milimetre ölçüm birimlerinde ölçülen genişliği ve yüksekliği. Yükseklik `cy` `CSize` nesnenin üyesidir ve Genişlik `cx` üyede olur. Bit eşlem genişliği ve yüksekliği kullanılarak ayarlanmamışsa `SetBitmapDimension` , dönüş değeri 0 ' dır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yükseklik ve genişlik [SetBitmapDimension](#setbitmapdimension) üye işlevi kullanılarak daha önce ayarlanmış olduğu varsayılır.
+Height ve Width 'in daha önce [SetBitmapDimension](#setbitmapdimension) üye işlevi kullanılarak ayarlandığı varsayılır.
 
-## <a name="cbitmaploadbitmap"></a><a name="loadbitmap"></a>CBitmap::LoadBitmap
+## <a name="cbitmaploadbitmap"></a><a name="loadbitmap"></a> CBitmap:: LoadBitmap
 
-*lpszResourceName* tarafından adlandırılmış veya *nIDResource'daki* kimlik numarasıyla tanımlanan biteşe kaynağını uygulamanın yürütülebilir dosyasından yükler.
+*LpszResourceName* tarafından adlandırılan ya da uygulamanın yürütülebilir dosyasındaki *nidresource* içindeki kimlik numarası tarafından tanımlanan bit eşlem kaynağını yükler.
 
 ```
 BOOL LoadBitmap(LPCTSTR lpszResourceName);
@@ -348,35 +348,35 @@ BOOL LoadBitmap(UINT nIDResource);
 ### <a name="parameters"></a>Parametreler
 
 *lpszResourceName*<br/>
-Bitmap kaynağının adını içeren null-sonlandırılan dizeyi işaret edin.
+Bit eşlem kaynağının adını içeren, null ile sonlandırılmış bir dizeye işaret eder.
 
-*nIDKaynak*<br/>
-Bitmap kaynağının kaynak kimlik numarasını belirtir.
+*nIDResource*<br/>
+Bit eşlem kaynağının kaynak KIMLIĞI numarasını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yüklenen bit eşlemi `CBitmap` nesneye eklenir.
+Yüklenen bit eşlem `CBitmap` nesnesine eklenir.
 
-*lpszResourceName* tarafından tanımlanan bit eşlemi yoksa veya bit eşlemini yüklemek için yeterli bellek yoksa, işlev 0 döndürür.
+*LpszResourceName* tarafından tanımlanan bit eşlem yoksa veya bit eşlemi yüklemek için yeterli bellek yoksa, işlev 0 döndürür.
 
-`LoadBitmap` [CGdiObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) işlevini kullanarak işlev tarafından yüklenen bit eşlemi `CBitmap` silebilir veya yıkıcı nesneyi sizin için siler.
+İşlev tarafından yüklenen bit eşlemi silmek için [CGdiObject::D eleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) işlevini kullanabilirsiniz `LoadBitmap` veya `CBitmap` yıkıcı nesneyi sizin için siler.
 
 > [!CAUTION]
-> Nesneyi silmeden önce, aygıtın aygıt bağlamına seçilmediğinden emin olun.
+> Nesneyi silmeden önce, bir cihaz bağlamına seçili olmadığından emin olun.
 
-Aşağıdaki bit eşlemler Windows sürümleri 3.1 ve sonraki sürümlere eklendi:
+Aşağıdaki bit eşlemler Windows 3,1 ve üzeri sürümlere eklenmiştir:
 
 OBM_UPARRROWIOBM_DNARROWIOBM_RGARROWIOBM_LFARROWI
 
-Bu bit eşlemleri Windows sürümleri 3.0 ve daha önceki aygıt sürücülerinde bulunmaz. Bit eşlemlerin tam listesi ve görünümlerinin bir göstergesi için Windows SDK'ya bakın.
+Bu bit eşlemler Windows 3,0 ve önceki sürümleri için aygıt sürücülerinde bulunamadı. Bit eşlemlerin ve görünüşlerinin tamamı bir listesi için Windows SDK bakın.
 
-## <a name="cbitmaploadmappedbitmap"></a><a name="loadmappedbitmap"></a>CBitmap::LoadMappedBitmap
+## <a name="cbitmaploadmappedbitmap"></a><a name="loadmappedbitmap"></a> CBitmap:: LoadMappedBitmap
 
-Bitmap yüklemek ve renkleri geçerli sistem renkleriyle eşlemek için bu üye işlevi arayın.
+Bir bit eşlem yüklemek ve renkleri geçerli sistem renkleriyle eşlemek için bu üye işlevini çağırın.
 
 ```
 BOOL LoadMappedBitmap(
@@ -388,29 +388,29 @@ BOOL LoadMappedBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDBitmap*<br/>
-Bitmap kaynağının kimliği.
+*Nıdbit eşlem*<br/>
+Bit eşlem kaynağının KIMLIĞI.
 
-*Nflags*<br/>
-Bit map için bir bayrak. Sıfır veya CMB_MASKED olabilir.
+*nFlags*<br/>
+Bit eşlem için bayrak. Sıfır veya CMB_MASKED olabilir.
 
 *lpColorMap*<br/>
-Bit eşlemlerini eşlemek için gereken renk bilgilerini içeren bir `COLORMAP` yapıya işaretçi. Bu parametre NULL ise, işlev varsayılan renk eşlemi kullanır.
+`COLORMAP`Bit eşlemler eşlemek için gereken renk bilgilerini içeren bir yapıya yönelik işaretçi. Bu parametre NULL ise, işlev varsayılan renk eşlemesini kullanır.
 
 *nMapSize*<br/>
-*lpColorMap*tarafından işaret edilen renk haritaları nın sayısı.
+*LpColorMap*tarafından işaret edilen renk haritaları sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `LoadMappedBitmap` düğme glifleri yaygın olarak kullanılan renkleri eşler.
+Varsayılan olarak, `LoadMappedBitmap` düğme glifleri içinde yaygın olarak kullanılan renkleri eşler.
 
-Eşlenen bit eşlemi oluşturma hakkında daha fazla bilgi için [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) ve Windows SDK'daki [COLORMAP](/windows/win32/api/commctrl/ns-commctrl-colormap) yapısına bakın.
+Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için, Windows SDK Windows işlevi [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) ve [ColorMap](/windows/win32/api/commctrl/ns-commctrl-colormap) yapısına bakın.
 
-## <a name="cbitmaploadoembitmap"></a><a name="loadoembitmap"></a>CBitmap::LoadOEMBitmap
+## <a name="cbitmaploadoembitmap"></a><a name="loadoembitmap"></a> CBitmap:: LoadOEMBitmap
 
 Windows tarafından kullanılan önceden tanımlanmış bir bit eşlemi yükler.
 
@@ -420,42 +420,65 @@ BOOL LoadOEMBitmap(UINT nIDBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDBitmap*<br/>
-Önceden tanımlanmış Windows bit haritasının kimlik numarası. Olası değerler windows aşağıda listelenmiştir. H:
+*Nıdbit eşlem*<br/>
+Önceden tanımlanmış Windows bit eşlemin KIMLIK numarası. Olası değerler WINDOWS 'dan aşağıda listelenmiştir. Olsun
 
-|||
-|-|-|
-|OBM_BTNCORNERS|OBM_OLD_RESTORE|
-|OBM_BTSIZE|OBM_OLD_RGARROW|
-|OBM_CHECK|OBM_OLD_UPARROW|
-|OBM_CHECKBOXES|OBM_OLD_ZOOM|
-|OBM_CLOSE|OBM_REDUCE|
-|OBM_COMBO|OBM_REDUCED|
-|OBM_DNARROW|OBM_RESTORE|
-|OBM_DNARROWD|OBM_RESTORED|
-|OBM_DNARROWI|OBM_RGARROW|
-|OBM_LFARROW|OBM_RGARROWD|
-|OBM_LFARROWD|OBM_RGARROWI|
-|OBM_LFARROWI|OBM_SIZE|
-|OBM_MNARROW|OBM_UPARROW|
-|OBM_OLD_CLOSE|OBM_UPARROWD|
-|OBM_OLD_DNARROW|OBM_UPARROW|
-|OBM_OLD_LFARROW|OBM_ZOOM|
-|OBM_OLD_REDUCE|OBM_ZOOMD|
+:::row:::
+   :::column span="":::
+      OBM_BTNCORNERS \
+      OBM_BTSIZE \
+      OBM_CHECK \
+      OBM_CHECKBOXES \
+      OBM_CLOSE \
+      OBM_COMBO \
+      OBM_DNARROW \
+      OBM_DNARROWD \
+      OBM_DNARROWI \
+      OBM_LFARROW \
+      OBM_LFARROWD \
+      OBM_LFARROWI
+   :::column-end:::
+   :::column span="":::
+      OBM_MNARROW \
+      OBM_OLD_CLOSE \
+      OBM_OLD_DNARROW \
+      OBM_OLD_LFARROW \
+      OBM_OLD_REDUCE \
+      OBM_OLD_RESTORE \
+      OBM_OLD_RGARROW \
+      OBM_OLD_UPARROW \
+      OBM_OLD_ZOOM \
+      OBM_REDUCE \
+      OBM_REDUCED
+   :::column-end:::
+   :::column span="":::
+      OBM_RESTORE \
+      OBM_RESTORED \
+      OBM_RGARROW \
+      OBM_RGARROWD \
+      OBM_RGARROWI \
+      OBM_SIZE \
+      OBM_UPARROW \
+      OBM_UPARROW \
+      OBM_UPARROWD \
+      OBM_ZOOM \
+      OBM_ZOOMD
+   :::column-end:::
+:::row-end:::
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-OBM_OLD ile başlayan Bitmap adları, Windows sürümleri tarafından 3.0'dan önce kullanılan bit eşlemlerini temsil etmektedir.
+OBM_OLD ile başlayan bit eşlem adları 3,0 ' den önceki Windows sürümleri tarafından kullanılan bit eşlemleri temsil eder.
 
-Windows dahil edilmeden önce sabit OEMRESOURCE tanımlanması gerektiğini unutmayın. **OBM_** sabitlerinden herhangi birini kullanmak için H.
+WINDOWS dahil etmeden önce sabit OEMRESOURCE 'in tanımlanması gerektiğini unutmayın. **OBM_** sabitlerinden herhangi birini kullanmak için H.
 
-## <a name="cbitmapoperator-hbitmap"></a><a name="operator_hbitmap"></a>CBitmap::operatör HBITMAP
+## <a name="cbitmapoperator-hbitmap"></a><a name="operator_hbitmap"></a> CBitmap:: operator HBıX
 
-`CBitmap` Nesnenin ekli Windows GDI tutamacını almak için bu işleci kullanın.
+Nesnenin ekli Windows GDI işleyicisini almak için bu işleci kullanın `CBitmap` .
 
 ```
 operator HBITMAP() const;
@@ -463,17 +486,17 @@ operator HBITMAP() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, nesne tarafından temsil edilen Windows `CBitmap` GDI nesnesine bir tanıtıcı; aksi takdirde NULL.
+Başarılı olursa, nesne tarafından temsil edilen Windows GDI nesnesine yönelik bir tanıtıcı `CBitmap` ; aksi takdırde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, bir nesnenin doğrudan `HBITMAP` kullanımını destekleyen bir döküm işlecidir.
+Bu işleç, bir nesnenin doğrudan kullanımını destekleyen bir atama işleçtir `HBITMAP` .
 
-Grafik nesneleri kullanma hakkında daha fazla bilgi için Windows SDK'daki [Grafik Nesneler'e](/windows/win32/gdi/graphic-objects) bakın.
+Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/win32/gdi/graphic-objects) bölümüne bakın.
 
-## <a name="cbitmapsetbitmapbits"></a><a name="setbitmapbits"></a>CBitmap::SetBitmapBits
+## <a name="cbitmapsetbitmapbits"></a><a name="setbitmapbits"></a> CBitmap:: Setbitmapbitleri
 
-Bit eşlemi bitlerini *lpBits*tarafından verilen bit değerlerine ayarlar.
+Bit eşlemin bitlerini *lpBits*tarafından verilen bit değerlerine ayarlar.
 
 ```
 DWORD SetBitmapBits(
@@ -483,19 +506,19 @@ DWORD SetBitmapBits(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwSay*<br/>
-*LPBits*tarafından işaret edilen bayt sayısını belirtir.
+*dwCount*<br/>
+*LpBits*tarafından işaret edilen bayt sayısını belirtir.
 
 *lpBits*<br/>
-Nesneye kopyalanacak piksel değerlerini içeren BYTE dizisini `CBitmap` gösterir. Bit eşleminin görüntüsünü doğru bir şekilde işleyebilmesi için, değerlerin CBitmap örneği oluşturulduğunda belirtilen yükseklik, genişlik ve renk derinliği değerlerine uyacak şekilde biçimlendirilmesi gerekir. Daha fazla bilgi için [Bkz. CBitmap::CreateBitmap](#createbitmap).
+Nesneye kopyalanacak piksel değerlerini içeren bayt dizisine işaret eder `CBitmap` . Bit eşlemin görüntüsünü doğru bir şekilde işleyebilmesi için değerler, CBitmap örneği oluşturulduğunda belirtilen yükseklik, genişlik ve renk derinliği değerlerine uyacak şekilde biçimlendirilmelidir. Daha fazla bilgi için bkz. [CBitmap:: Createbit eşlem](#createbitmap).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bitmap bitlerini ayarlamada kullanılan bayt sayısı; Fonksiyon başarısız olursa 0.
+Bit eşlem bitlerini ayarlamak için kullanılan bayt sayısı; işlev başarısız olursa 0.
 
-## <a name="cbitmapsetbitmapdimension"></a><a name="setbitmapdimension"></a>CBitmap::SetBitmapDimension
+## <a name="cbitmapsetbitmapdimension"></a><a name="setbitmapdimension"></a> CBitmap:: SetBitmapDimension
 
-0,1 milimetrelik birimlerde bir bit eşleneğine bir genislik ve yükseklik atar.
+0,1-milimetre ölçüm birimlerindeki bir bit eşleme genişlik ve Yükseklik atar.
 
 ```
 CSize SetBitmapDimension(
@@ -505,22 +528,22 @@ CSize SetBitmapDimension(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nwidth*<br/>
-Bit eşleminin genişliğini (0,1 milimetrelik birimler halinde) belirtir.
+*nWidth*<br/>
+Bit eşlemin genişliğini belirtir (0,1-milimetre ölçüm birimi).
 
-*Nheight*<br/>
-Bit eşleminin yüksekliğini (0,1 milimetrelik birimler halinde) belirtir.
+*nHeight*<br/>
+Bit eşlemin yüksekliğini belirtir (0,1-milimetre ölçüm birimi).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki biteş boyutu. Yükseklik `cy` `CSize` nesnenin üye değişkeninde, genişlik `cx` ise üye değişkendedir.
+Önceki bit eşlem boyutları. Yükseklik `cy` nesnenin üye değişkeninde `CSize` , Width ise `cx` üye değişkenidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-GDI, bir uygulama [GetBitmapDimension](#getbitmapdimension) üye işlevini aradığında bu değerleri döndürmek dışında kullanmaz.
+GDI, bir uygulama [GetBitmapDimension](#getbitmapdimension) üye işlevini çağırdığında bu değerleri döndürmeleri dışında kullanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek MDI](../../overview/visual-cpp-samples.md)<br/>
-[CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[CGdiObject sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

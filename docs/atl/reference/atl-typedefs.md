@@ -23,18 +23,18 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: a6b1ce33fe201338a0cc9356f2ef86e598629fd6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10d11b2b6e78220c1c562d100ee7886026a94b22
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228043"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833874"
 ---
 # <a name="atl-typedefs"></a>ATL Tür tanımları
 
 Etkin Şablon kitaplığı aşağıdaki tür tanımlarını içerir.
 
-|||
+|Genişletiyor|Açıklama|
 |-|-|
 |[_ATL_BASE_MODULE](#_atl_base_module)|[_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md)temel alan bir typedef olarak tanımlanır.|
 |[_ATL_COM_MODULE](#_atl_com_module)|[_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md)temel alan bir typedef olarak tanımlanır.|
@@ -53,7 +53,7 @@ Etkin Şablon kitaplığı aşağıdaki tür tanımlarını içerir.
 |[LPKıVRıK](#lpcurl)|Sabit [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.|
 |[LPURL](#lpurl)|Bir [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.|
 
-## <a name="_atl_base_module"></a><a name="_atl_base_module"></a>_ATL_BASE_MODULE
+## <a name="_atl_base_module"></a><a name="_atl_base_module"></a> _ATL_BASE_MODULE
 
 _ATL_BASE_MODULE70 temel alan bir typedef olarak tanımlanır.
 
@@ -71,7 +71,7 @@ ATL 7,0 modül sınıflarının parçası olan sınıflar _ATL_BASE_MODULE yapı
 
 **Üstbilgi:** atlcore. h
 
-## <a name="_atl_com_module"></a><a name="_atl_com_module"></a>_ATL_COM_MODULE
+## <a name="_atl_com_module"></a><a name="_atl_com_module"></a> _ATL_COM_MODULE
 
 _ATL_COM_MODULE70 temel alan bir typedef olarak tanımlanır.
 
@@ -87,7 +87,7 @@ COM özellikleri kullanan ATL projeleri tarafından kullanılır. [_ATL_COM_MODU
 
 **Üstbilgi:** atlbase. h
 
-## <a name="_atl_module"></a><a name="_atl_module"></a>_ATL_MODULE
+## <a name="_atl_module"></a><a name="_atl_module"></a> _ATL_MODULE
 
 _ATL_MODULE70 temel alan bir typedef olarak tanımlanır.
 
@@ -103,7 +103,7 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 
 [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md)temel alır.
 
-## <a name="_atl_win_module"></a><a name="_atl_win_module"></a>_ATL_WIN_MODULE
+## <a name="_atl_win_module"></a><a name="_atl_win_module"></a> _ATL_WIN_MODULE
 
 _ATL_WIN_MODULE70 temel alan bir typedef olarak tanımlanır.
 
@@ -119,7 +119,7 @@ Pencereleme özellikleri kullanan tüm ATL projeleri tarafından kullanılır. [
 
 **Üstbilgi:** atlbase. h
 
-## <a name="atl_url_port"></a><a name="atl_url_port"></a>ATL_URL_PORT
+## <a name="atl_url_port"></a><a name="atl_url_port"></a> ATL_URL_PORT
 
 Bir bağlantı noktası numarası belirtmek için [kıvrımlı](curl-class.md) tarafından kullanılan tür.
 
@@ -131,7 +131,7 @@ typedef WORD ATL_URL_PORT;
 
 **Üstbilgi:** atlutil. h
 
-## <a name="ccomdispatchdriver"></a><a name="ccomdispatchdriver"></a>CComDispatchDriver
+## <a name="ccomdispatchdriver"></a><a name="ccomdispatchdriver"></a> CComDispatchDriver
 
 Bu sınıf, COM arabirimi işaretçilerini yönetir.
 
@@ -143,7 +143,7 @@ typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;
 
 **Üstbilgi:** atlbase. h
 
-## <a name="ccomglobalsthreadmodel"></a><a name="ccomglobalsthreadmodel"></a>CComGlobalsThreadModel
+## <a name="ccomglobalsthreadmodel"></a><a name="ccomglobalsthreadmodel"></a> CComGlobalsThreadModel
 
 Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.
 
@@ -175,7 +175,7 @@ Buna ek olarak `CComGlobalsThreadModel` , ATL **`typedef`** [CComObjectThreadMod
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
+S = `CComSingleThreadModel` ; D = `CComMultiThreadModel`
 
 `CComObjectThreadModel`Tek bir nesne sınıfı içinde kullanın. `CComGlobalsThreadModel`Programınız için genel olarak kullanılabilen bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
 
@@ -183,7 +183,7 @@ S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
 
 **Üstbilgi:** atlbase. h
 
-## <a name="ccomobjectthreadmodel"></a><a name="ccomobjectthreadmodel"></a>CComObjectThreadModel
+## <a name="ccomobjectthreadmodel"></a><a name="ccomobjectthreadmodel"></a> CComObjectThreadModel
 
 Kullanılan iş parçacığı modelinden bağımsız olarak uygun iş parçacığı modeli yöntemlerini çağırır.
 
@@ -215,7 +215,7 @@ Buna ek olarak `CComObjectThreadModel` , ATL **`typedef`** [CComGlobalsThreadMod
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
+S = `CComSingleThreadModel` ; D = `CComMultiThreadModel`
 
 `CComObjectThreadModel`Tek bir nesne sınıfı içinde kullanın. `CComGlobalsThreadModel`Programınızın genel olarak kullanabildiği bir nesne veya birden çok iş parçacığı arasında modül kaynaklarını korumak istediğinizde kullanın.
 
@@ -223,7 +223,7 @@ S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
 
 **Üstbilgi:** atlbase. h
 
-## <a name="ccontainedwindow"></a><a name="ccontainedwindow"></a>CContainedWindow
+## <a name="ccontainedwindow"></a><a name="ccontainedwindow"></a> CContainedWindow
 
 Bu sınıf, öğesinin bir özelleştirmesi `CContainedWindowT` .
 
@@ -237,9 +237,9 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CContainedWindow`, [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)'in bir özelleştirmesi. Temel sınıf veya nitelikleri değiştirmek istiyorsanız, `CContainedWindowT` doğrudan kullanın.
+`CContainedWindow` , [CContainedWindowT](../../atl/reference/ccontainedwindowt-class.md)'in bir özelleştirmesi. Temel sınıf veya nitelikleri değiştirmek istiyorsanız, `CContainedWindowT` doğrudan kullanın.
 
-## <a name="cpath"></a><a name="cpath"></a>CPath
+## <a name="cpath"></a><a name="cpath"></a> CPath
 
 Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CString` .
 
@@ -251,7 +251,7 @@ typedef CPathT<CString> CPath;
 
 **Üstbilgi:** atlpath. h
 
-## <a name="cpatha"></a><a name="cpatha"></a>CPathA
+## <a name="cpatha"></a><a name="cpatha"></a> CPathA
 
 Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CStringA` .
 
@@ -263,7 +263,7 @@ typedef CPathT<CStringA> CPathA;
 
 **Üstbilgi:** atlpath. h
 
-## <a name="cpathw"></a><a name="cpathw"></a>CPathW
+## <a name="cpathw"></a><a name="cpathw"></a> CPathW
 
 Kullanarak [CPathT](../../atl/reference/cpatht-class.md) özelleştirmesi `CStringW` .
 
@@ -275,7 +275,7 @@ typedef ATL::CPathT<CStringW> CPathW;
 
 **Üstbilgi:** atlpath. h
 
-## <a name="csimplevalarray"></a><a name="csimplevalarray"></a>CSimpleValArray
+## <a name="csimplevalarray"></a><a name="csimplevalarray"></a> CSimpleValArray
 
 Basit türleri depolamak için bir diziyi temsil eder.
 
@@ -285,13 +285,13 @@ Basit türleri depolamak için bir diziyi temsil eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CSimpleValArray`basit veri türleri içeren diziler oluşturmak ve yönetmek için sağlanır. [CSimpleArray](../../atl/reference/csimplearray-class.md)basit bir #define.
+`CSimpleValArray` basit veri türleri içeren diziler oluşturmak ve yönetmek için sağlanır. [CSimpleArray](../../atl/reference/csimplearray-class.md)basit bir #define.
 
 ### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atlsimpcoll. h
 
-## <a name="lpcurl"></a><a name="lpcurl"></a>LPKıVRıK
+## <a name="lpcurl"></a><a name="lpcurl"></a> LPKıVRıK
 
 Sabit [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.
 
@@ -303,11 +303,11 @@ typedef const CUrl* LPCURL;
 
 **Üstbilgi:** atlutil. h
 
-## <a name="defaultthreadtraits"></a><a name="defaultthreadtraits"></a>Defaultthreadnitelikler
+## <a name="defaultthreadtraits"></a><a name="defaultthreadtraits"></a> Defaultthreadnitelikler
 
 Varsayılan iş parçacığı nitelikleri sınıfı.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 #if defined(_MT)
@@ -325,7 +325,7 @@ Geçerli proje çok iş parçacıklı CRT kullanıyorsa, Defaultthreadnitelikler
 
 **Üstbilgi:** atlbase. h
 
-## <a name="lpurl"></a><a name="lpurl"></a>LPURL
+## <a name="lpurl"></a><a name="lpurl"></a> LPURL
 
 Bir [kıvrımlı](../../atl/reference/curl-class.md) nesne işaretçisi.
 

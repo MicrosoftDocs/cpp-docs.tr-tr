@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-ms.openlocfilehash: 331ca298507e0ebecac0376f660feefdafd9d99d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e0bfa4ab037b52b237bd674d5f705de4e9699383
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232943"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832613"
 ---
 # <a name="queue-class"></a>queue Sınıfı
 
@@ -68,13 +68,13 @@ C++ standart kitaplığı tarafından tanımlanan üç tür kapsayıcı bağdaş
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Sıradaki](#queue)|`queue`Boş veya temel kapsayıcı nesnesinin bir kopyası olan oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[container_type](#container_type)|Tarafından uyarlanabilen temel kapsayıcıyı sağlayan bir tür `queue` .|
 |[size_type](#size_type)|İçindeki öğe sayısını temsil eden işaretsiz bir tamsayı türü `queue` .|
@@ -82,7 +82,7 @@ C++ standart kitaplığı tarafından tanımlanan üç tür kapsayıcı bağdaş
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Geri](#back)|Öğesinin arkasında son ve en son eklenen öğeye bir başvuru döndürür `queue` .|
 |[empty](#empty)|`queue`Boşsa sınar.|
@@ -91,7 +91,7 @@ C++ standart kitaplığı tarafından tanımlanan üç tür kapsayıcı bağdaş
 |[push](#push)|Öğesinin arkasına bir öğesi ekler `queue` .|
 |[boyutla](#size)|İçindeki öğelerin sayısını döndürür `queue` .|
 
-## <a name="back"></a><a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a> Geri
 
 Sıranın arkasında son ve en son eklenen öğeye bir başvuru döndürür.
 
@@ -137,7 +137,7 @@ int main( )
 }
 ```
 
-## <a name="container_type"></a><a name="container_type"></a>container_type
+## <a name="container_type"></a><a name="container_type"></a> container_type
 
 Uyarlanabilen temel kapsayıcıyı sağlayan bir tür.
 
@@ -155,7 +155,7 @@ Hakkında daha fazla bilgi için `Container` [Queue Class](../standard-library/q
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [kuyruk](#queue) örneği `container_type` .
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Bir kuyruğun boş olup olmadığını sınar.
 
@@ -201,7 +201,7 @@ The queue q1 is not empty.
 The queue q2 is empty.
 ```
 
-## <a name="front"></a><a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a> yapılan
 
 Kuyruğun önündeki ilk öğeye bir başvuru döndürür.
 
@@ -253,7 +253,7 @@ int main() {
 }
 ```
 
-## <a name="pop"></a><a name="pop"></a>cağımız
+## <a name="pop"></a><a name="pop"></a> cağımız
 
 Bir öğeyi kuyruğun önünden kaldırır.
 
@@ -309,7 +309,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.
 ```
 
-## <a name="push"></a><a name="push"></a>hareketle
+## <a name="push"></a><a name="push"></a> hareketle
 
 Kuyruğun arkasına bir öğe ekler.
 
@@ -358,7 +358,7 @@ The queue length is 3.
 The element at the front of the queue is 10.
 ```
 
-## <a name="queue"></a><a name="queue"></a>Sıradaki
+## <a name="queue"></a><a name="queue"></a> Sıradaki
 
 Boş olan veya temel kapsayıcı nesnesinin bir kopyası olan bir kuyruk oluşturur.
 
@@ -425,7 +425,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Kuyruktaki öğe sayısını döndürür.
 
@@ -466,7 +466,7 @@ The queue length is 1.
 The queue length is now 2.
 ```
 
-## <a name="size_type"></a><a name="size_type"></a>size_type
+## <a name="size_type"></a><a name="size_type"></a> size_type
 
 Bir kuyruktaki öğelerin sayısını temsil eden işaretsiz bir tamsayı türü.
 
@@ -482,7 +482,7 @@ Tür, `size_type` kuyruğa göre uyarlanan taban kapsayıcının eşanlamlısıd
 
 Bildirme ve kullanma hakkında bir örnek için [Queue:: Front](#front) örneğine bakın `size_type` .
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Bir kuyrukta öğe olarak depolanan nesne türünü temsil eden bir tür.
 

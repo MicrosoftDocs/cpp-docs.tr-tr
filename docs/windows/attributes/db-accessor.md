@@ -1,23 +1,23 @@
 ---
-title: db_accessor (C++ com özniteliği)
+title: db_accessor (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.db_accessor
 helpviewer_keywords:
 - db_accessor attribute
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-ms.openlocfilehash: 1e9725dad39974b828d87bd8b4cdeac623f4e12f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 559838201e3d1c425b6b1bf7f3650d9635c44c97
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214870"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833146"
 ---
 # <a name="db_accessor"></a>db_accessor
 
-Gruplar, `IAccessor`tabanlı bağlamaya katılan öznitelikleri `db_column`.
+`db_column`Tabanlı bağlamaya katılan öznitelikleri gruplandırır `IAccessor` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ db_accessor(num, auto) ]
@@ -25,7 +25,7 @@ Gruplar, `IAccessor`tabanlı bağlamaya katılan öznitelikleri `db_column`.
 
 #### <a name="parameters"></a>Parametreler
 
-*numaraları*<br/>
+*sayı*<br/>
 Erişimci numarasını belirtir (sıfır tabanlı bir tamsayı dizini). Erişimci numaralarını, tamsayılar veya tanımlanmış değerler kullanarak artan sırada belirtmeniz gerekir.
 
 *auto*<br/>
@@ -33,13 +33,13 @@ Erişimcinin otomatik olarak alınıp alınmayacağını (TRUE) veya alınmadı�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_accessor** , sonraki `db_column` ve `db_param` öznitelikleri için temel OLE DB erişimcisini aynı sınıf veya işlev içinde tanımlar. **db_accessor** , üye düzeyinde kullanılabilir ve OLE DB `IAccessor`tabanlı bağlamaya katılan `db_column` özniteliklerini gruplandırmak için kullanılır. `db_table` ya da `db_command` öznitelikleriyle birlikte kullanılır. Bu özniteliği çağırmak, [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makrolarını çağırmaya benzerdir.
+**db_accessor** `db_column` `db_param` , aynı sınıf veya işlev içindeki sonraki ve özniteliklerin temel alınan OLE DB erişimcisini tanımlar. **db_accessor** , üye düzeyinde kullanılabilir ve `db_column` OLE DB tabanlı bağlamaya katılan öznitelikleri gruplandırmak için kullanılır `IAccessor` . Ya da öznitelikleriyle birlikte kullanılır `db_table` `db_command` . Bu özniteliği çağırmak, [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makrolarını çağırmaya benzerdir.
 
 **db_accessor** bir satır kümesi oluşturur ve ilgili erişimci haritalarını bağlar. **Db_accessor**çağırmayın, erişimci 0 otomatik olarak oluşturulur ve tüm sütun bağlamaları bu erişimci bloğuna eşlenir.
 
 **db_accessor** veritabanı sütun bağlamalarını bir veya daha fazla erişimcilere gruplandırır. Birden çok erişimci kullanmanız gereken senaryolara ilişkin bir tartışma için bkz. [bir satır kümesinde birden çok erişimci kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md). Ayrıca, [Kullanıcı kayıtlarında](../../data/oledb/user-records.md)"birden çok erişimci Için Kullanıcı kaydı desteği" bölümüne bakın.
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı verdiğiniz ad *olan ClassName ' ın adını \_olarak*yeniden adlandırır ve derleyici *YourClassName* Ayrıca, \_*YourClassName*erişimcisinden türetilen, *YourClassName*adlı bir sınıf oluşturur.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="example"></a>Örnek
 
@@ -67,17 +67,15 @@ public:
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Öznitelik blokları|
+|**Şunlara uygulanır**|Öznitelik blokları|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Öznitelikleri](ole-db-consumer-attributes.md)
+[OLE DB tüketici öznitelikleri](ole-db-consumer-attributes.md)

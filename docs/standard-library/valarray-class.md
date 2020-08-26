@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-ms.openlocfilehash: da7a1a8ca4aca88cda4eb3153c169629b76843da
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 177840ffea711395b7cace6e47426d979f8fe329
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212028"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840134"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -59,25 +59,25 @@ Sınıfının bir nesnesi `Type` :
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[valarray](#valarray)|Belirli bir `valarray` boyut veya belirli bir değerin öğeleri ya da başka bir alt kümesinin bir kopyası olarak oluşturur `valarray` `valarray` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[value_type](#value_type)|İçinde depolanan öğe türünü temsil eden bir tür `valarray` .|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[uygulayabilirsiniz](#apply)|Her öğesine belirtilen bir işlevi uygular `valarray` .|
 |[cshift](#cshift)|Periyodik, içindeki tüm öğeleri `valarray` belirtilen sayıda konum ile kaydırır.|
 |[Süz](#free)|Tarafından kullanılan belleği serbest bırakır `valarray` .|
 |[Biçimlendir](#max)|İçindeki en büyük öğeyi bulur `valarray` .|
-|[Min](#min)|İçindeki en küçük öğeyi bulur `valarray` .|
+|[dk](#min)|İçindeki en küçük öğeyi bulur `valarray` .|
 |[yeniden boyutlandırma](#resize)|İçindeki öğe sayısını belirtilen sayı olarak değiştirir `valarray` , gerekli olarak öğeleri ekler veya kaldırır.|
 |[karakter](#shift)|İçindeki tüm öğeleri `valarray` belirtilen sayıda konum ile kaydırır.|
 |[boyutla](#size)|İçindeki öğe sayısını bulur `valarray` .|
@@ -86,7 +86,7 @@ Sınıfının bir nesnesi `Type` :
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işlecinde!](#op_not)|İçindeki her öğenin mantıksal değerlerini elde eden birli işleç `NOT` `valarray` .|
 |[işleç% =](#op_mod_eq)|Bir dizi öğesinin öğelerinin, belirtilen veya öğe türünün bir değeri tarafından bölünmesinin kalan kısmını alır `valarray` .|
@@ -105,7 +105,7 @@ Sınıfının bir nesnesi `Type` :
 |[işleç&#124;=](#op_or_eq)|Bir dizide, `OR` belirtilen `valarray` veya öğe türünün bir değeri ile birlikte karşılık gelen öğelerle birlikte, öğelerin bit düzeyinde öğelerini alır.|
 |[işleç ~](#op_dtor)|İçindeki her öğenin bit düzeyinde değerlerini elde eden birli işleç `NOT` `valarray` .|
 
-## <a name="apply"></a><a name="apply"></a>uygulayabilirsiniz
+## <a name="apply"></a><a name="apply"></a> uygulayabilirsiniz
 
 Bir valarray öğesinin her öğesine belirtilen bir işlev uygular.
 
@@ -181,7 +181,7 @@ The element-by-element result of applying MyApplyFunc to vaR is the
 valarray: (  0 0 -4 6 0 -10 12 0 -16 18 )
 ```
 
-## <a name="cshift"></a><a name="cshift"></a>cshift
+## <a name="cshift"></a><a name="cshift"></a> cshift
 
 Periyodik, bir valarray içindeki tüm öğeleri belirtilen sayıda konum ile kaydırır.
 
@@ -259,7 +259,7 @@ The cyclically shifted valarray va2 is:
 va2.shift (-4) = ( 4 3 2 1 10 9 8 7 6 5)
 ```
 
-## <a name="free"></a><a name="free"></a>Süz
+## <a name="free"></a><a name="free"></a> Süz
 
 Valarray tarafından kullanılan belleği serbest bırakır.
 
@@ -278,7 +278,7 @@ v = valarray<T>();
 // equivalent to v.free()
 ```
 
-## <a name="max"></a><a name="max"></a>Biçimlendir
+## <a name="max"></a><a name="max"></a> Biçimlendir
 
 Bir valarray içinde en büyük öğeyi bulur.
 
@@ -383,7 +383,7 @@ The smallest element in the valarray is: -9.
 */
 ```
 
-## <a name="operator"></a><a name="op_not"></a>işlecinde!
+## <a name="operator"></a><a name="op_not"></a> işlecinde!
 
 Bir valarray içindeki her öğenin mantıksal **Not** değerlerini elde eden birli işleç.
 
@@ -442,7 +442,7 @@ The element-by-element result of the logical NOT operator! is the
 valarray: ( 1 1 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operator"></a><a name="op_mod_eq"></a>işleç% =
+## <a name="operator"></a><a name="op_mod_eq"></a> işleç% =
 
 Bir dizi öğesinin öğelerini belirtilen bir valarray veya öğe türünün bir değeri ile bölmenin geri kalanını edinir.
 
@@ -509,7 +509,7 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="operatoramp"></a><a name="op_and_eq"></a>işlecinde&amp;=
+## <a name="operatoramp"></a><a name="op_and_eq"></a> işlecinde&amp;=
 
 Bir dizideki bit düzeyinde **ve** öğelerin, belirtilen bir valarray karşılık gelen öğelerle ya da öğe türü değeri ile elde ettiği öğeleri alır.
 
@@ -582,7 +582,7 @@ The element-by-element result of the logical AND operator&= is the
 valarray: ( 0 0 0 2 0 4 0 6 0 8 ).
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt_eq"></a>işlecinde&gt;&gt;=
+## <a name="operatorgtgt"></a><a name="op_gt_gt_eq"></a> işlecinde&gt;&gt;=
 
 Bir valarray işleneninin her öğesi için bitleri, belirtilen sayıda konum veya bir ikinci valarray tarafından belirtilen öğe temelinde bir miktar ile sağa kaydırır.
 
@@ -653,7 +653,7 @@ The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt_eq"></a>işlecinde&lt;&lt;=
+## <a name="operatorltlt"></a><a name="op_lt_lt_eq"></a> işlecinde&lt;&lt;=
 
 Sol-bir valarray işleneninin her öğesi için bitleri, belirtilen sayıda konum veya bir ikinci valarray tarafından belirtilen öğe temelinde bir miktar ile kaydırır.
 
@@ -726,7 +726,7 @@ on the operand array is the valarray:
 ( 1 -2 4 -8 16 -32 64 -128 ).
 ```
 
-## <a name="operator"></a><a name="op_star_eq"></a>işleç * =
+## <a name="operator"></a><a name="op_star_eq"></a> işleç * =
 
 Belirtilen bir valarray öğelerini veya öğe türü bir değeri olan öğe türünü bir işlenen valarray ile çarpar.
 
@@ -792,7 +792,7 @@ valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 */
 ```
 
-## <a name="operator"></a><a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a> işleç +
 
 Bir valarray içindeki her öğeye Plus uygulayan birli işleç.
 
@@ -845,7 +845,7 @@ The element-by-element result of the operator+ is the
 valarray: ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
 ```
 
-## <a name="operator"></a><a name="op_add_eq"></a>işleç + =
+## <a name="operator"></a><a name="op_add_eq"></a> işleç + =
 
 Belirtilen bir valarray öğelerini ya da öğe türü, öğe temelinde bir değeri valarray bir işlenene ekler.
 
@@ -912,7 +912,7 @@ The element-by-element result of the sum is the
 valarray: ( 2 0 4 2 6 4 8 6 ).
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>işlecinde
+## <a name="operator-"></a><a name="operator-"></a> işlecinde
 
 Bir valarray içindeki her öğeye eksi işareti uygulayan birli işleç.
 
@@ -965,7 +965,7 @@ The element-by-element result of the operator+ is the
 valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
 ```
 
-## <a name="operator-"></a><a name="operator-_eq"></a>işleç-=
+## <a name="operator-"></a><a name="operator-_eq"></a> işleç-=
 
 Belirtilen bir valarray öğelerini ya da öğe türü bir değeri olan öğe türünü bir işlenenden çıkartır valarray.
 
@@ -1032,7 +1032,7 @@ The element-by-element result of the difference is the
 valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
 ```
 
-## <a name="operator"></a><a name="op_div_eq"></a>işleç/=
+## <a name="operator"></a><a name="op_div_eq"></a> işleç/=
 
 Bir işleneni, belirtilen bir valarray öğelerinin veya öğe türünün bir değerinin valarray öğe temelinde böler.
 
@@ -1099,7 +1099,7 @@ The element-by-element result of the quotient is the
 valarray: ( inf -50 25 -16.6667 12.5 -10 ).
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Değerleri doğrudan veya başka bir valarray parçası olarak ya da bir slice_array, gslice_array, mask_array veya indirect_array tarafından belirtilen bir valarray öğesine atar.
 
@@ -1209,7 +1209,7 @@ The reassigned valarray va is: 10 10 10 10 10 10 10 10 10 10
 
 ```
 
-## <a name="operator"></a><a name="op_at"></a>operator []
+## <a name="operator"></a><a name="op_at"></a> operator []
 
 Belirtilen dizindeki veya belirtilen bir alt kümedeki bir öğeye veya değerine bir başvuru döndürür.
 
@@ -1266,7 +1266,7 @@ Belirtilen dizinde veya belirtilen bir alt kümede bulunan bir öğeye veya değ
 
 İşlecinin nasıl bildirileledilinin ve kullanılacağı bir örnek için [Slice:: Slice](../standard-library/slice-class.md#slice) ve [gslice:: gslice](../standard-library/gslice-class.md#gslice) örneklerine bakın.
 
-## <a name="operator"></a><a name="op_xor_eq"></a>işleç ^ =
+## <a name="operator"></a><a name="op_xor_eq"></a> işleç ^ =
 
 Belirtilen bir valarray veya öğe türünde bir değere sahip olan bir dizinin öğe temelinde özel mantıksal veya işlecini ( **Xor**) alır.
 
@@ -1341,7 +1341,7 @@ The element-by-element result of the bitwise XOR operator^= is the
 valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 ```
 
-## <a name="operator124"></a><a name="op_or_eq"></a>işleç&#124;=
+## <a name="operator124"></a><a name="op_or_eq"></a> işleç&#124;=
 
 `OR`Belirtilen bir valarray veya öğe türünde bir değer ile karşılık gelen öğelerle bir dizideki bit düzeyinde öğeleri alır.
 
@@ -1424,7 +1424,7 @@ operator|= is the valarray:
 ( 1 0 1 3 3 4 7 6 7 9 ).
 ```
 
-## <a name="operator"></a><a name="op_dtor"></a>işleç ~
+## <a name="operator"></a><a name="op_dtor"></a> işleç ~
 
 `NOT`Bir valarray içindeki her öğenin bit düzeyinde değerlerini elde eden birli işleç.
 
@@ -1523,7 +1523,7 @@ is the negative of the original elements the
 valarray: ( 0 2 -2 6 -4 10 -6 14 -8 18 ).
 ```
 
-## <a name="resize"></a><a name="resize"></a>yeniden boyutlandırma
+## <a name="resize"></a><a name="resize"></a> yeniden boyutlandırma
 
 Bir valarray içindeki öğe sayısını belirtilen sayı olarak değiştirir.
 
@@ -1599,7 +1599,7 @@ The valarray contains ( 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 ).
 The number of elements in the resized valarray is: 15.
 ```
 
-## <a name="shift"></a><a name="shift"></a>karakter
+## <a name="shift"></a><a name="shift"></a> karakter
 
 Bir valarray içindeki tüm öğeleri belirtilen sayıda yere kaydırır.
 
@@ -1674,7 +1674,7 @@ The operand valarray va2(10) is: ( 10 9 8 7 6 5 4 3 2 1 ).
 The shifted valarray va2 is: va2.shift (-4) = ( 0 0 0 0 10 9 8 7 6 5 ).
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Bir valarray içindeki öğe sayısını bulur.
 
@@ -1751,7 +1751,7 @@ the operand valarray va2(12) is now: ( 0 1 2 3 4 5 6 7 8 9 10 11 ).
 The number of elements in the valarray va2 is still: 12.
 ```
 
-## <a name="sum"></a><a name="sum"></a>toplamlarını
+## <a name="sum"></a><a name="sum"></a> toplamlarını
 
 Valarray sıfır olmayan uzunlukta tüm öğelerin toplamını belirler.
 
@@ -1801,7 +1801,7 @@ The operand valarray va (10) is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The sum of elements in the valarray is: 45.
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki öğenin öğelerini değiş tokuş eder `valarray` .
 
@@ -1818,7 +1818,7 @@ void swap(valarray& right);
 
 Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bu, sabit bir zamanda özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar.
 
-## <a name="valarray"></a><a name="valarray"></a>valarray
+## <a name="valarray"></a><a name="valarray"></a> valarray
 
 Belirli bir boyutun bir valarray veya belirli bir değerin öğeleriyle ya da başka bir valarray ya da başka bir valarray alt kümesinin kopyası olarak oluşturur.
 
@@ -1954,7 +1954,7 @@ va[slice( 2, 4, 3)] = ( 0 0 0 )
 1 2 3 4
 ```
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Bir valarray içinde depolanan öğe türünü temsil eden bir tür.
 

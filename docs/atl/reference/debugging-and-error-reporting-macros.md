@@ -11,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 14c9298758e9d55445affaf5a65c81910a9ab151
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2bcdfb474ee852e55bd54f1b125716e7785f28be
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224233"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833484"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 
 Bu makrolar yararlı hata ayıklama ve izleme olanakları sağlar.
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[_ATL_DEBUG_INTERFACES](#_atl_debug_interfaces)|Çıkış penceresine, çağrıldığında algılanan tüm arabirim sızıntılarına yazar `_Module.Term` .|
 |[_ATL_DEBUG_QI](#_atl_debug_qi)|Tüm çağrıları `QueryInterface` Çıkış penceresine yazar.|
@@ -32,7 +32,7 @@ Bu makrolar yararlı hata ayıklama ve izleme olanakları sağlar.
 |[ATLTRACE](#atltrace)|Belirtilen bayraklara ve düzeylere göre hata ayıklayıcı penceresi gibi bir çıktı cihazına uyarı bildirir. Geriye dönük uyumluluk için eklenmiştir.|
 |[ATLTRACE2](#atltrace2)|Belirtilen bayraklara ve düzeylere göre hata ayıklayıcı penceresi gibi bir çıktı cihazına uyarı bildirir.|
 
-## <a name="_atl_debug_interfaces"></a><a name="_atl_debug_interfaces"></a>_ATL_DEBUG_INTERFACES
+## <a name="_atl_debug_interfaces"></a><a name="_atl_debug_interfaces"></a> _ATL_DEBUG_INTERFACES
 
 Tüm ATL üstbilgi dosyalarını, tümünü izlemek için `AddRef` ve `Release` bileşenlerinizde yer alan tüm çağrıların çıkış penceresine çağrı eklemeden önce bu makroyu tanımlayın.
 
@@ -63,7 +63,7 @@ Burada belirtilen bilgiler doğrudan önceki izleme deyimlerinde belirtilen bilg
 > [!NOTE]
 > _ATL_DEBUG_INTERFACES, perakende yapılarında kullanılabilir.
 
-## <a name="_atl_debug_qi"></a><a name="_atl_debug_qi"></a>_ATL_DEBUG_QI
+## <a name="_atl_debug_qi"></a><a name="_atl_debug_qi"></a> _ATL_DEBUG_QI
 
 Tüm çağrıları `QueryInterface` Çıkış penceresine yazar.
 
@@ -77,7 +77,7 @@ Tüm çağrıları `QueryInterface` Çıkış penceresine yazar.
 
 *Arabirim adı* - `failed`
 
-## <a name="atlassert"></a><a name="atlassert"></a>ATLASSERT
+## <a name="atlassert"></a><a name="atlassert"></a> ATLASSERT
 
 ATLASSERT makrosu, C çalışma zamanı kitaplığı 'nda bulunan [_ASSERTE](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makroyla aynı işlevselliği gerçekleştirir.
 
@@ -98,7 +98,7 @@ Hata ayıklama yapılarında, ATLASSERT, *Boolean* değerlendirir ve sonuç fals
 
 **Üstbilgi:** atldef. h
 
-## <a name="atlensure"></a><a name="atlensure"></a>ATLENEMIN
+## <a name="atlensure"></a><a name="atlensure"></a> ATLENEMIN
 
 Bu makro, bir işleve geçirilen parametreleri doğrulamak için kullanılır.
 
@@ -135,7 +135,7 @@ ATLENRELEN ve ATLASSERT arasındaki fark, ATLENEMIN 'in sürüm yapılarında ve
 
 **Üstbilgi:** AFX. h
 
-## <a name="atltracenotimpl"></a><a name="atltracenotimpl"></a>ATLTRACENOTIMPL
+## <a name="atltracenotimpl"></a><a name="atltracenotimpl"></a> ATLTRACENOTIMPL
 
 ATL hata ayıklama Derlemeleriyle, " *funcname* uygulanmadı" dizesini döküm cihazına gönderir ve E_NOTIMPL döndürür.
 
@@ -160,7 +160,7 @@ Yayın yapıları ' nda, yalnızca E_NOTIMPL döndürür.
 
 **Üstbilgi:** atltrace. h
 
-## <a name="atltrace"></a><a name="atltrace"></a>ATLTRACE
+## <a name="atltrace"></a><a name="atltrace"></a> ATLTRACE
 
 Belirtilen bayraklara ve düzeylere göre hata ayıklayıcı penceresi gibi bir çıktı cihazına uyarı bildirir. Geriye dönük uyumluluk için eklenmiştir.
 
@@ -191,7 +191,7 @@ ATLTRACE(
 
 ATLTRACE açıklaması için bkz. [ATLTRACE2](#atltrace2) . ATLTRACE ve ATLTRACE2 aynı davranışa sahiptir ve geriye dönük uyumluluk için ATLTRACE dahil edilmiştir.
 
-## <a name="atltrace2"></a><a name="atltrace2"></a>ATLTRACE2
+## <a name="atltrace2"></a><a name="atltrace2"></a> ATLTRACE2
 
 Belirtilen bayraklara ve düzeylere göre hata ayıklayıcı penceresi gibi bir çıktı cihazına uyarı bildirir.
 

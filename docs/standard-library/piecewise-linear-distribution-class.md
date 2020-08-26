@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-ms.openlocfilehash: 085ab8eda0a07decf69d139382a272700bebac7b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 57c6e19bc56068c98f6c85978c7af68e56cb4f2a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232982"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832691"
 ---
 # <a name="piecewise_linear_distribution-class"></a>piecewise_linear_distribution Sınıfı
 
@@ -89,10 +89,8 @@ Bu örnekleme dağıtımında, her aralıkta doğrusal olarak değişen olasıl�
 
 Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar:
 
-||||
-|-|-|-|
-|[piecewise_linear_distribution](#piecewise_linear_distribution)|`piecewise_linear_distribution::intervals`|`piecewise_linear_distribution::param`|
-|`piecewise_linear_distribution::operator()`|`piecewise_linear_distribution::densities`|[param_type](#param_type)|
+[piecewise_linear_distribution](#piecewise_linear_distribution)\
+[param_type](#param_type)
 
 Özellik işlevi, `intervals()` `vector<result_type>` dağıtımın saklı aralıkları kümesiyle bir döndürür.
 
@@ -219,7 +217,7 @@ Distribution for 100 samples:
 
 **Ad alanı:** std
 
-## <a name="piecewise_linear_distributionpiecewise_linear_distribution"></a><a name="piecewise_linear_distribution"></a>piecewise_linear_distribution::p iecewise_linear_distribution
+## <a name="piecewise_linear_distributionpiecewise_linear_distribution"></a><a name="piecewise_linear_distribution"></a> piecewise_linear_distribution::p iecewise_linear_distribution
 
 Dağıtımı oluşturur.
 
@@ -324,7 +322,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 
 saklı parametre yapısı olarak *Pard* 'yi kullanarak bir dağıtım nesnesi oluşturur.
 
-## <a name="piecewise_linear_distributionparam_type"></a><a name="param_type"></a>piecewise_linear_distribution::p aram_type
+## <a name="piecewise_linear_distributionparam_type"></a><a name="param_type"></a> piecewise_linear_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 

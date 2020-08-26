@@ -1,5 +1,5 @@
 ---
-title: Kategori Makroları
+title: Kategori makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::BEGIN_CATEGORY_MAP
@@ -7,18 +7,18 @@ f1_keywords:
 - atlcom/ATL::IMPLEMENTED_CATEGORY
 - atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-ms.openlocfilehash: 2b677ac6e7dac4eed5fc920ece064d94119ceb97
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 0db32c9550cd76fbc8e1f6776b8ecf4cceffebd7
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168442"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88833900"
 ---
-# <a name="category-macros"></a>Kategori Makroları
+# <a name="category-macros"></a>Kategori makroları
 
 Bu makrolar kategori eşlemelerini tanımlar.
 
-|||
+|Makroya|Açıklama|
 |-|-|
 |[BEGIN_CATEGORY_MAP](#begin_category_map)|Kategori eşlemesinin başlangıcını işaretler.|
 |[END_CATEGORY_MAP](#end_category_map)|Kategori eşlemesinin sonunu işaretler.|
@@ -29,7 +29,7 @@ Bu makrolar kategori eşlemelerini tanımlar.
 
 **Üstbilgi:** atlcom. h
 
-## <a name="begin_category_map"></a><a name="begin_category_map"></a>BEGIN_CATEGORY_MAP
+## <a name="begin_category_map"></a><a name="begin_category_map"></a> BEGIN_CATEGORY_MAP
 
 Kategori eşlemesinin başlangıcını işaretler.
 
@@ -59,7 +59,7 @@ Bileşen kategorileri hakkında daha fazla bilgi için bkz. [Bileşen kategorile
 
 [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]
 
-## <a name="end_category_map"></a><a name="end_category_map"></a>END_CATEGORY_MAP
+## <a name="end_category_map"></a><a name="end_category_map"></a> END_CATEGORY_MAP
 
 Kategori eşlemesinin sonunu işaretler.
 
@@ -71,7 +71,7 @@ END_CATEGORY_MAP()
 
 [BEGIN_CATEGORY_MAP](#begin_category_map)için örneğe bakın.
 
-## <a name="implemented_category"></a><a name="implemented_category"></a>IMPLEMENTED_CATEGORY
+## <a name="implemented_category"></a><a name="implemented_category"></a> IMPLEMENTED_CATEGORY
 
 Bir IMPLEMENTED_CATEGORY makrosunu, *catID* parametresi tarafından tanımlanan kategoriyi uygulayarak kaydedilmesi gerektiğini belirtmek için bileşeninizin [Kategori haritasına](#begin_category_map) ekleyin.
 
@@ -108,7 +108,7 @@ Bileşen kategorileri hakkında daha fazla bilgi için bkz. [Bileşen kategorile
 
 [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]
 
-## <a name="required_category"></a><a name="required_category"></a>REQUIRED_CATEGORY
+## <a name="required_category"></a><a name="required_category"></a> REQUIRED_CATEGORY
 
 Bir REQUIRED_CATEGORY makrosunu, *catID* parametresi tarafından tanımlanan kategorinin gerektirdiği şekilde kaydedilmesi gerektiğini belirtmek için bileşeninizin [Kategori haritasına](#begin_category_map) ekleyin.
 

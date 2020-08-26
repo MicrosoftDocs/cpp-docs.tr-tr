@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: 1f2c8cce234910fbf69a35c8f8ef2fb0fe2a41c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7e652b18b723e2a58c1f4673baf180a14db93477
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203889"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834784"
 ---
 # <a name="auto_ptr-class"></a>auto_ptr Sınıfı
 
@@ -71,19 +71,19 @@ Bir `auto_ptr<Type>` nesneyi değere göre bir işlev çağrısına bağımsız 
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[auto_ptr](#auto_ptr)|Türündeki nesneler için Oluşturucu `auto_ptr` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[element_type](#element_type)|Tür, şablon parametresi için bir eş anlamlı `Type` .|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[Al](#get)|Üye işlevi, saklı işaretçiyi döndürür `myptr` .|
 |[Yayın](#release)|Üye, saklı işaretçiyi `myptr` null işaretçiyle değiştirir ve daha önce depolanmış işaretçiyi döndürür.|
@@ -91,7 +91,7 @@ Bir `auto_ptr<Type>` nesneyi değere göre bir işlev çağrısına bağımsız 
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç =](#op_eq)|Bir nesneden diğerine sahiplik aktaran atama işleci `auto_ptr` .|
 |[işlecinde](#op_star)|Türündeki nesneler için başvuru kaldırma işleci `auto_ptr` .|
@@ -99,7 +99,7 @@ Bir `auto_ptr<Type>` nesneyi değere göre bir işlev çağrısına bağımsız 
 |[işleç auto_ptr\<Other>](#op_auto_ptr_lt_other_gt)|Bir türden `auto_ptr` başka bir türe yayınlar `auto_ptr` .|
 |[işleç auto_ptr_ref\<Other>](#op_auto_ptr_ref_lt_other_gt)|Bir ' dan ' a yayınlar `auto_ptr` `auto_ptr_ref` .|
 
-### <a name="auto_ptr"></a><a name="auto_ptr"></a>auto_ptr
+### <a name="auto_ptr"></a><a name="auto_ptr"></a> auto_ptr
 
 Türündeki nesneler için Oluşturucu `auto_ptr` .
 
@@ -189,7 +189,7 @@ Constructing 00311AF8
 Destructing 00311AF8
 ```
 
-### <a name="element_type"></a><a name="element_type"></a>element_type
+### <a name="element_type"></a><a name="element_type"></a> element_type
 
 Tür, şablon parametresi için bir eş anlamlı `Type` .
 
@@ -197,7 +197,7 @@ Tür, şablon parametresi için bir eş anlamlı `Type` .
 typedef Type element  _type;
 ```
 
-### <a name="get"></a><a name="get"></a>Al
+### <a name="get"></a><a name="get"></a> Al
 
 Üye işlevi, saklı işaretçiyi döndürür `myptr` .
 
@@ -256,7 +256,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-### <a name="operator"></a><a name="op_eq"></a>işleç =
+### <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Bir nesneden diğerine sahiplik aktaran atama işleci `auto_ptr` .
 
@@ -284,7 +284,7 @@ Atama, `delete myptr` ancak yalnızca saklı işaretçi `myptr` atamanın sonucu
 
 Üye işlecinin kullanımına bir örnek için bkz. [auto_ptr](#auto_ptr).
 
-### <a name="operator"></a><a name="op_star"></a>işlecinde
+### <a name="operator"></a><a name="op_star"></a> işlecinde
 
 Türündeki nesneler için başvuru kaldırma işleci `auto_ptr` .
 
@@ -304,7 +304,7 @@ Yöneltme işleci `*` [Get](#get)döndürüyor. Bu nedenle, saklı işaretçi nu
 
 Üye işlevini nasıl kullanacağınızı gösteren bir örnek için bkz. [auto_ptr](#auto_ptr).
 
-### <a name="operator-gt"></a><a name="op_arrow"></a>işlecinde&gt;
+### <a name="operator-gt"></a><a name="op_arrow"></a> işlecinde&gt;
 
 Üye erişimine izin vermek için işleç.
 
@@ -324,7 +324,7 @@ Seçim işleci [Get](#get)değerini döndürür `( )` , böylece ifade *AP* ->  
 
 Üye işlevini nasıl kullanacağınızı gösteren bir örnek için bkz. [auto_ptr](#auto_ptr).
 
-### <a name="operator-auto_ptrltothergt"></a><a name="op_auto_ptr_lt_other_gt"></a>işleç auto_ptr &lt; diğer&gt;
+### <a name="operator-auto_ptrltothergt"></a><a name="op_auto_ptr_lt_other_gt"></a> işleç auto_ptr &lt; diğer&gt;
 
 Bir türden `auto_ptr` başka bir türe yayınlar `auto_ptr` .
 
@@ -354,7 +354,7 @@ int main()
 }
 ```
 
-### <a name="operator-auto_ptr_refltothergt"></a><a name="op_auto_ptr_ref_lt_other_gt"></a>işleç auto_ptr_ref &lt; diğer&gt;
+### <a name="operator-auto_ptr_refltothergt"></a><a name="op_auto_ptr_ref_lt_other_gt"></a> işleç auto_ptr_ref &lt; diğer&gt;
 
 Bir ' dan ' a yayınlar `auto_ptr` `auto_ptr_ref` .
 
@@ -415,7 +415,7 @@ main exiting
 ~C:  1
 ```
 
-### <a name="release"></a><a name="release"></a>Yayın
+### <a name="release"></a><a name="release"></a> Yayın
 
 Üye, saklı işaretçiyi `myptr` null işaretçiyle değiştirir ve daha önce depolanmış işaretçiyi döndürür.
 
@@ -477,7 +477,7 @@ pi2 == pi3
 Destructing 00311B88 Value: 6
 ```
 
-### <a name="reset"></a><a name="reset"></a>döndürmek
+### <a name="reset"></a><a name="reset"></a> döndürmek
 
 Üye işlevi, `delete myptr` yalnızca saklı işaretçi değeri `myptr` bir işlev çağrısının sonucu olarak değişirse ifadeyi değerlendirir. Ardından, saklı işaretçinin ile değiştirir `ptr` .
 

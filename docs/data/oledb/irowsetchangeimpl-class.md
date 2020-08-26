@@ -31,18 +31,18 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: ae4ceea53ec91cc3f9593dd3789fcf61e0702274
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 66e7b758752a46fffff177323fe83eecc0b2fa55
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376940"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88832785"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
 
-OLE DB belirtiminde [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) arabiriminin OLE DB Şablonları uygulaması.
+OLE DB belirtiminde [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) arabiriminin OLE DB Şablonları uygulamasıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template <
@@ -57,62 +57,62 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-'den `IRowsetChangeImpl`türetilen bir sınıf.
+Sınıfından türetilmiş bir sınıf `IRowsetChangeImpl` .
 
 *Depolama*<br/>
 Kullanıcı kaydı.
 
 *BaseInterface*<br/>
-Arabirim için taban sınıf, `IRowsetChange`örneğin.
+Arabirim için temel sınıf (gibi) `IRowsetChange` .
 
-*Rowclass*<br/>
-Satır tutamacı için depolama birimi.
+*RowClass*<br/>
+Satır tanıtıcısı için depolama birimi.
 
 *MapClass*<br/>
 Sağlayıcı tarafından tutulan tüm satır tutamaçları için depolama birimi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atldb.h
+**Üstbilgi:** Atldb. h
 
 ## <a name="members"></a>Üyeler
 
-### <a name="interface-methods-used-with-irowsetchange"></a>Arayüz Yöntemleri (IRowsetChange ile birlikte kullanılır)
+### <a name="interface-methods-used-with-irowsetchange"></a>Arabirim yöntemleri (IRowsetChange ile kullanılır)
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[Deleterows](#deleterows)|Satır kümesinden satırları siler.|
-|[ınsertrow](#insertrow)|Satır kümesine bir satır ekler.|
-|[Setdata](#setdata)|Veri değerlerini bir veya daha fazla sütunda ayarlar.|
+|[DeleteRows](#deleterows)|Satır kümesinden satır siler.|
+|[InsertRow](#insertrow)|Satır kümesine bir satır ekler.|
+|[SetData](#setdata)|Veri değerlerini bir veya daha fazla sütunda ayarlar.|
 
-### <a name="implementation-method-callback"></a>Uygulama Yöntemi (Geri Arama)
+### <a name="implementation-method-callback"></a>Uygulama yöntemi (geri çağırma)
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[FlushData](#flushdata)|Sağlayıcı tarafından depoya veri işlemek için geçersiz kılınmış.|
+|[FlushData](#flushdata)|Veri deposuna verileri yürütmek için sağlayıcı tarafından geçersiz kılındı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, bir veri deposuna anında yazma işlemişlemlerini sorumludur. "Hemen", son kullanıcı (tüketiciyi kullanan kişi) herhangi bir değişiklik yaptığında, bu değişikliklerin hemen veri deposuna iletildiği (ve geri alınamayacağı) anlamına gelir.
+Bu arabirim, bir veri deposuna anında yazma işlemlerinden sorumludur. "Hemen", Son Kullanıcı (tüketiciyi kullanan kişi) herhangi bir değişiklik yaptığında, bu değişikliklerin hemen veri deposuna aktarılmasıdır (ve geri alınamaz).
 
-`IRowsetChangeImpl`varolan satırlarda sütun `IRowsetChange` değerlerinin güncelleştirilmesini, satırları silmesini ve yeni satırlar eklenmesini sağlayan OLE DB arabirimini uygular.
+`IRowsetChangeImpl``IRowsetChange`mevcut satırlardaki sütunların değerlerinin güncelleştirilmesini sağlayan OLE DB arabirimini uygular, satırları silebilir ve yeni satırlar ekliyor.
 
-OLE DB Şablonları uygulaması tüm temel`SetData` `InsertRow`yöntemleri `DeleteRows`destekler ( , , ve).
+OLE DB şablonları uygulanması tüm temel yöntemleri ( `SetData` , `InsertRow` , ve `DeleteRows` ) destekler.
 
 > [!IMPORTANT]
-> Sağlayıcınızı uygulamaya çalışmadan önce aşağıdaki belgeleri okumanız önerilir:
+> Sağlayıcınızı uygulamayı denemeden önce aşağıdaki belgeleri okumanız kesinlikle önerilir:
 
-- [Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)
+- [Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)
 
-- *OLE DB Programcı Referans* Bölüm 6
+- *OLE DB Programcı başvurusunun* 6. bölümü
 
-- Ayrıca, [Sınıfın UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örneğinde nasıl kullanıldığını da görün. `RUpdateRowset`
+- Ayrıca, `RUpdateRowset` sınıfının [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örneğinde nasıl kullanıldığını görün.
 
-## <a name="irowsetchangeimpldeleterows"></a><a name="deleterows"></a>IRowsetChangeImpl::DeleteRows
+## <a name="irowsetchangeimpldeleterows"></a><a name="deleterows"></a> IRowsetChangeImpl::D eleteRows
 
-Satır kümesinden satırları siler.
+Satır kümesinden satır siler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
@@ -123,13 +123,13 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz. [IRowsetChange::DOLE](/previous-versions/windows/desktop/ms724362(v=vs.85)) *DB Programcı Referansında*eleler.
+*OLE DB Programcı başvurusunda*bkz. [ırowsetchange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) .
 
-## <a name="irowsetchangeimplinsertrow"></a><a name="insertrow"></a>IRowsetChangeImpl::InsertRow
+## <a name="irowsetchangeimplinsertrow"></a><a name="insertrow"></a> IRowsetChangeImpl:: InsertRow
 
-Satır kümesinde yeni bir satır oluşturur ve başharfe başlar.
+Satır kümesinde yeni bir satır oluşturur ve başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
@@ -140,13 +140,13 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz. [IRowsetChange::OLE](/previous-versions/windows/desktop/ms716921(v=vs.85)) *DB Programcısının Referansında*Ekleme Satırını .
+*OLE DB Programcı başvurusunda*bkz. [IRowsetChange:: InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) .
 
-## <a name="irowsetchangeimplsetdata"></a><a name="setdata"></a>IRowsetChangeImpl::SetData
+## <a name="irowsetchangeimplsetdata"></a><a name="setdata"></a> IRowsetChangeImpl:: SetData
 
 Veri değerlerini bir veya daha fazla sütunda ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 STDMETHOD (SetData )(HROW hRow,
@@ -156,13 +156,13 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-Bkz. [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) *OLE DB Programcı'nın Referans*.
+*OLE DB Programcı başvurusunda*bkz. [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) .
 
-## <a name="irowsetchangeimplflushdata"></a><a name="flushdata"></a>IRowsetChangeImpl::FlushData
+## <a name="irowsetchangeimplflushdata"></a><a name="flushdata"></a> IRowsetChangeImpl:: FlushData
 
-Sağlayıcı tarafından depoya veri işlemek için geçersiz kılınmış.
+Veri deposuna verileri yürütmek için sağlayıcı tarafından geçersiz kılındı.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT FlushData(HROW hRowToFlush,
@@ -172,16 +172,16 @@ HRESULT FlushData(HROW hRowToFlush,
 #### <a name="parameters"></a>Parametreler
 
 *hRowToFlush*<br/>
-[içinde] Veriler için satırları işle. Bu satırın türü `IRowsetImpl` sınıfın *RowClass* şablon uyşundan (varsayılan`CSimpleRow` olarak) belirlenir.
+'ndaki Verilerin satırları için tanıtıcı. Bu satırın türü, sınıfın *RowClass* şablon bağımsız değişkeninden belirlenir `IRowsetImpl` ( `CSimpleRow` Varsayılan olarak).
 
 *hAccessorToFlush*<br/>
-[içinde] Bağlayıcı bilgiler ve tür bilgileri `PROVIDER_MAP` içeren erişimciye işle (bkz. [IAccessorImpl).](../../data/oledb/iaccessorimpl-class.md)
+'ndaki Bağlama bilgilerini ve tür bilgilerini içeren erişimcinin tanıtıcısı `PROVIDER_MAP` (bkz. [IAccessorImpl](../../data/oledb/iaccessorimpl-class.md)).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart bir HRESULT.
+Standart HRESULT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Sağlayıcı Şablon Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

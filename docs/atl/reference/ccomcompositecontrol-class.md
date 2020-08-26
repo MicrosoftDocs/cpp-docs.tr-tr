@@ -1,5 +1,5 @@
 ---
-title: CComCompositeControl Sınıfı
+title: CComCompositeControl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComCompositeControl
@@ -16,21 +16,21 @@ helpviewer_keywords:
 - CComCompositeControl class
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-ms.openlocfilehash: 700a8047ab1fa9df85c8e6530eb3eed5f29bd3d3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a37386c40f119c855dcb8584a72ce85c48a66381
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320800"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88834745"
 ---
-# <a name="ccomcompositecontrol-class"></a>CComCompositeControl Sınıfı
+# <a name="ccomcompositecontrol-class"></a>CComCompositeControl sınıfı
 
 Bu sınıf, bileşik denetim uygulamak için gereken yöntemleri sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 template <class T>
@@ -40,49 +40,49 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-CComObjectRoot veya [CComObjectRootEx'ten](../../atl/reference/ccomobjectrootex-class.md)türetilen sınıfınızın yanı sıra bileşik denetiminiz için desteklemek istediğiniz diğer arabirimlerden de. [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)
+Sınıfınız, [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)'den türetilir ve bileşik denetiminiz için desteklemek istediğiniz diğer arabirimlerden de elde edersiniz.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CcomCompositeControl::ccomcompositecontrol](#ccomcompositecontrol)|Oluşturucu.|
-|[CcomCompositeControl::~CcomcompositeControl](#dtor)|Yıkıcı.|
+|[CComCompositeControl:: CComCompositeControl](#ccomcompositecontrol)|Oluşturucu.|
+|[CComCompositeControl:: ~ CComCompositeControl](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CcomCompositeControl::AdvisesinkMap](#advisesinkmap)|Kompozit denetim tarafından barındırılan tüm denetimleri tavsiye etmek veya tavsiye etmemek için bu yöntemi arayın.|
-|[CComCompositeControl::CalcExtent](#calcextent)|Bileşik denetimi barındırmak için kullanılan iletişim kaynağının HIMETRIC birimlerindeki boyutunu hesaplamak için bu yöntemi arayın.|
-|[CcomCompositeControl::Oluştur](#create)|Bu yöntem, bileşik denetim için denetim penceresi oluşturmak için denir.|
-|[CcomCompositeControl::CreateControl Window](#createcontrolwindow)|Denetim penceresini oluşturmak için bu yöntemi arayın ve barındırılan denetimleri bildirin.|
-|[CComCompositeControl::SetBackgroundColorFromAmbient](#setbackgroundcolorfromambient)|Kapsayıcının arka plan rengini kullanarak bileşik denetimin arka plan rengini ayarlamak için bu yöntemi arayın.|
+|[CComCompositeControl:: Advisesınkmap](#advisesinkmap)|Bileşik denetim tarafından barındırılan tüm denetimleri bildirmek veya çağırmak için bu yöntemi çağırın.|
+|[CComCompositeControl:: Calckapsam](#calcextent)|Bileşik denetimi barındırmak için kullanılan iletişim kaynağının HIMETRIK birimlerindeki boyutu hesaplamak için bu yöntemi çağırın.|
+|[CComCompositeControl:: Create](#create)|Bu yöntem, bileşik denetim için Denetim penceresini oluşturmak üzere çağırılır.|
+|[CComCompositeControl:: CreateControlWindow](#createcontrolwindow)|Denetim penceresini oluşturmak ve tüm barındırılan denetimleri bildirmek için bu yöntemi çağırın.|
+|[CComCompositeControl:: SetBackgroundColorFromAmbient](#setbackgroundcolorfromambient)|Kapsayıcının arka plan rengini kullanarak bileşik denetimin arka plan rengini ayarlamak için bu yöntemi çağırın.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CComCompositeControl::m_hbrBackground](#m_hbrbackground)|Arka plan fırçası.|
-|[CComCompositeControl::m_hWndFocus](#m_hwndfocus)|Şu anda odaklanmış olan pencerenin tutamacı.|
+|[CComCompositeControl:: m_hbrBackground](#m_hbrbackground)|Arka plan Fırçası.|
+|[CComCompositeControl:: m_hWndFocus](#m_hwndfocus)|Şu anda odaklanmış pencerenin tutamacı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıftan `CComCompositeControl` türetilen sınıflar activex bileşik denetiminin işlevselliğini devralır. Türeyen `CComCompositeControl` ActiveX denetimleri standart bir iletişim kutusu tarafından barındırılır. Diğer denetimleri (yerel Windows denetimleri ve ActiveX denetimleri) barındırabildiklerinden bu tür denetimlere bileşik denetimler denir.
+Sınıfından türetilmiş sınıflar `CComCompositeControl` bir ActiveX bileşik denetiminin işlevselliğini miras alır. İçinden türetilmiş ActiveX denetimleri `CComCompositeControl` , standart iletişim kutusuyla barındırılır. Bu tür denetimler, diğer denetimleri barındırabildiğinden (yerel Windows denetimleri ve ActiveX denetimleri) bileşik denetimler olarak adlandırılır.
 
-`CComCompositeControl`alt sınıfta numaralandırılmış bir veri üyesi arayarak bileşik denetim oluştururken kullanılacak iletişim kaynağını tanımlar. Bu alt sınıfın üye IDD'si, denetim penceresi olarak kullanılacak iletişim kaynağının kaynak kimliğine ayarlanır. Denetim penceresi için kullanılacak iletişim kaynağını tanımlamak `CComCompositeControl` için sınıfın içermesi gereken veri üyesinin bir örneği aşağıda verilmiştir:
+`CComCompositeControl` alt sınıfta bir numaralandırılmış veri üyesini arayarak bileşik denetim oluşturma bölümünde kullanılacak iletişim kutusunu tanımlar. Bu alt sınıfın üye kimliği, denetimin penceresi olarak kullanılacak iletişim kaynağı kaynak kimliğine ayarlanır. Aşağıda, öğesinden türetilen sınıfın, `CComCompositeControl` denetimin penceresi için kullanılacak iletişim kaynağını belirlemek için içermesi gereken veri üyesine yönelik bir örnek verilmiştir:
 
 [!code-cpp[NVC_ATL_COM#13](../../atl/codesnippet/cpp/ccomcompositecontrol-class_1.h)]
 
 > [!NOTE]
-> Bileşik denetimler her zaman pencereli denetimlerdir, ancak penceresiz denetimler içerebilirler.
+> Bileşik denetimler her zaman pencereli denetimlerdir, ancak Penceresiz denetimler içerebilirler.
 
-Türetilmiş bir `CComCompositeControl`sınıf tarafından uygulanan bir denetim, yerleşik varsayılan sekme davranışı vardır. Denetim, içeren bir uygulamada sekmeli olarak netlik aldığında, TAB tuşuna art arda basıldığında, odağın bileşik denetimin içerdiği tüm denetim denetimleri üzerinden, daha sonra bileşik denetimin dışına ve kapsayıcının sekme sırasına göre bir sonraki öğeye geçmesine neden olur. Barındırılan denetimlerin sekme sırası iletişim kaynağı tarafından belirlenir ve sekmelerin oluşacağı sırayı belirler.
+Türetilmiş bir sınıf tarafından uygulanan bir denetim `CComCompositeControl` , içinde yerleşik olarak bulunan varsayılan sekme davranışına sahiptir. Denetim odağı içeren bir uygulamada sekmeli olarak aldığında, sekme tuşuna büyük ölçüde basmak, odağın bileşik denetimin içerdiği denetimler ve sonra bileşik denetimin dışında ve kapsayıcının sekme düzeninde bir sonraki öğeye açılıp dağıtılmamasına neden olur. Barındırılan denetimlerin sekme sıralaması iletişim kaynağı tarafından belirlenir ve sekme 'nin gerçekleşeceği sırayı belirler.
 
 > [!NOTE]
-> Hızlandırıcıların bir `CComCompositeControl`ile düzgün çalışabilmesi için, kontrol oluşturulduğunda bir hızlandırıcı tablosuyüklemek, kolu ve hızlandırıcı sayısını [IOleControlImpl::GetControlInfo'ya](../../atl/reference/iolecontrolimpl-class.md#getcontrolinfo)geri geçirmek ve kontrol serbest bırakıldığında nihayet tabloyu yok etmek gerekir.
+> Hızlandırıcının ile düzgün çalışması için `CComCompositeControl` , denetim oluşturulduğu için bir Hızlandırıcı tablosu yüklenmesi, hızlandırıcının tanıtıcısını ve sayısını [IOleControlImpl:: Getcontrolinınfo](../../atl/reference/iolecontrolimpl-class.md#getcontrolinfo)içine geçirin ve son olarak denetim serbest bırakıldığında tabloyu yok edin.
 
 ## <a name="example"></a>Örnek
 
@@ -92,19 +92,19 @@ Türetilmiş bir `CComCompositeControl`sınıf tarafından uygulanan bir denetim
 
 `WinBase`
 
-[CcomControlBase](../../atl/reference/ccomcontrolbase-class.md)
+[CComControlBase](../../atl/reference/ccomcontrolbase-class.md)
 
-[CcomControl](../../atl/reference/ccomcontrol-class.md)
+[CComControl](../../atl/reference/ccomcontrol-class.md)
 
 `CComCompositeControl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl.h
+**Üstbilgi:** atlctl. h
 
-## <a name="ccomcompositecontroladvisesinkmap"></a><a name="advisesinkmap"></a>CcomCompositeControl::AdvisesinkMap
+## <a name="ccomcompositecontroladvisesinkmap"></a><a name="advisesinkmap"></a> CComCompositeControl:: Advisesınkmap
 
-Kompozit denetim tarafından barındırılan tüm denetimleri tavsiye etmek veya tavsiye etmemek için bu yöntemi arayın.
+Bileşik denetim tarafından barındırılan tüm denetimleri bildirmek veya çağırmak için bu yöntemi çağırın.
 
 ```
 HRESULT AdviseSinkMap(bool bAdvise);
@@ -112,27 +112,27 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAdvise*<br/>
-Tüm kontroller tavsiye edilecekse doğrudur; aksi takdirde yanlış.
+*Rozzden*<br/>
+Tüm denetimler önermeliyse doğru; Aksi halde yanlış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-|||
-|-|-|
-|S_OK  |Olay lavabo haritasındaki tüm denetimler olay kaynağından başarıyla bağlandı veya bağlantıkesildi.|
-|E_faıl  |Olay lavabo haritasındaki tüm denetimler olay kaynağından başarıyla bağlanamayabilir veya bağlantıkesilemedi.|
-|E_POINTER  |Bu hata genellikle denetimin olay lavabo haritasındaki bir girişle veya bir `IDispEventImpl` veya `IDispEventSimpleImpl` taban sınıfta kullanılan şablon bağımsız değişkeniyle ilgili bir sorunu gösterir.|
-|CONNECT_E_ADVISELIMIT  |Bağlantı noktası zaten bağlantı sınırına ulaştı ve daha fazlasını kabul edemiyor.|
-|CONNECT_E_CANNOTCONNECT  |Lavabo, bu bağlantı noktasının gerektirdiği arabirimi desteklemez.|
-|CONNECT_E_NOCONNECTION  |Çerez değeri geçerli bir bağlantıyı temsil etmez. Bu hata genellikle denetimin olay lavabo haritasındaki bir girişle veya bir `IDispEventImpl` veya `IDispEventSimpleImpl` taban sınıfta kullanılan şablon bağımsız değişkeniyle ilgili bir sorunu gösterir.|
+| Değer | Açıklama |
+|--|--|
+| `S_OK` | Olay havuzu haritadaki tüm denetimler, Olay kaynağıyla başarıyla bağlandı veya bağlantısı kesildi. |
+| `E_FAIL` | Olay havuzu haritadaki tüm denetimler, Olay kaynağıyla başarıyla bağlanmayabilir veya bağlantısı kesilemiyor. |
+| `E_POINTER` | Bu hata genellikle, denetimin olay havuzu eşlemesindeki bir girdiyle veya bir `IDispEventImpl` veya temel sınıfta kullanılan şablon bağımsız değişkeniyle ilgili bir sorun olduğunu gösterir `IDispEventSimpleImpl` . |
+| `CONNECT_E_ADVISELIMIT` | Bağlantı noktası zaten bağlantı sınırına ulaştı ve daha fazlasını kabul edemez. |
+| `CONNECT_E_CANNOTCONNECT` | Havuz, bu bağlantı noktası için gereken arabirimi desteklemiyor. |
+| `CONNECT_E_NOCONNECTION` | Tanımlama bilgisi değeri geçerli bir bağlantıyı temsil etmiyor. Bu hata genellikle, denetimin olay havuzu eşlemesindeki bir girdiyle veya bir `IDispEventImpl` veya temel sınıfta kullanılan şablon bağımsız değişkeniyle ilgili bir sorun olduğunu gösterir `IDispEventSimpleImpl` . |
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin temel uygulaması, olay lavabo haritasındaki girişler aracılığıyla arama lar. Daha sonra, olay lavabo haritasının lavabo girişleri tarafından açıklanan COM nesnelerine bağlantı noktalarını önerir veya tavsiye etmeyiz. Bu üye yöntemi aynı zamanda, türetilen sınıfın, bilgi `IDispEventImpl` verilmesi veya tavsiye edilmemesi gereken lavabo haritasındaki her denetim için bir örnekten devralınmasına da dayanır.
+Bu yöntemin temel uygulanması, olay havuzu haritalarındaki girdileri arar. Daha sonra, olay havuzu haritasının havuz girişleri tarafından tanımlanan COM nesnelerine bağlantı noktalarını önerir veya bunun üzerinde bir açıklama vermez. Bu üye yöntemi Ayrıca, türetilmiş sınıfın, bir `IDispEventImpl` veya tavsiye edilecek havuz eşlemesindeki her denetim için bir örneğinden devraldığından emin olur.
 
-## <a name="ccomcompositecontrolcalcextent"></a><a name="calcextent"></a>CComCompositeControl::CalcExtent
+## <a name="ccomcompositecontrolcalcextent"></a><a name="calcextent"></a> CComCompositeControl:: Calckapsam
 
-Bileşik denetimi barındırmak için kullanılan iletişim kaynağının HIMETRIC birimlerindeki boyutunu hesaplamak için bu yöntemi arayın.
+Bileşik denetimi barındırmak için kullanılan iletişim kaynağının HIMETRIK birimlerindeki boyutu hesaplamak için bu yöntemi çağırın.
 
 ```
 BOOL CalcExtent(SIZE& size);
@@ -140,20 +140,20 @@ BOOL CalcExtent(SIZE& size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-Bu yöntemle `SIZE` doldurulacak bir yapıya başvuru.
+*boyutla*<br/>
+`SIZE`Bu yöntemle doldurulacak bir yapıya başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim bir iletişim kutusu tarafından barındırılan varsa TRUE; aksi takdirde YANLIŞ.
+Denetim bir iletişim kutusu tarafından barındırılıyorsa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyut parametresinde *size* döndürülür.
+Boyut, *Boyut* parametresinde döndürülür.
 
-## <a name="ccomcompositecontrolcreate"></a><a name="create"></a>CcomCompositeControl::Oluştur
+## <a name="ccomcompositecontrolcreate"></a><a name="create"></a> CComCompositeControl:: Create
 
-Bu yöntem, bileşik denetim için denetim penceresi oluşturmak için denir.
+Bu yöntem, bileşik denetim için Denetim penceresini oluşturmak üzere çağırılır.
 
 ```
 HWND Create(
@@ -165,23 +165,23 @@ HWND Create(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-Denetimin üst penceresine bir tutamaç.
+Denetimin üst penceresine yönelik bir tanıtıcı.
 
 *rcPos*<br/>
 Ayrılmış.
 
 *dwInitParam*<br/>
-Denetim oluşturma sırasında denetime aktaredilecek veriler. *dwInitParam* olarak geçirilen veriler, [oluşturulduğunda](/windows/win32/dlgbox/wm-initdialog) bileşik denetime gönderilecek olan WM_INITDIALOG iletisinin LPARAM parametresi olarak gösterecektir.
+Denetim oluşturma sırasında denetime geçirilecek veriler. *Dwinitparam* olarak geçirilen veriler, oluşturulduğunda bileşik denetime gönderilecek [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) iletisinin lParam parametresi olarak gösterilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan bileşik denetim iletişim kutusuna bir tutamaç.
+Yeni oluşturulan bileşik denetim iletişim kutusu için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem genellikle denetimin yerinde aktivasyonu sırasında çağrılır.
+Bu yöntem genellikle denetimin yerinde etkinleştirilmesi sırasında çağrılır.
 
-## <a name="ccomcompositecontrolccomcompositecontrol"></a><a name="ccomcompositecontrol"></a>CcomCompositeControl::ccomcompositecontrol
+## <a name="ccomcompositecontrolccomcompositecontrol"></a><a name="ccomcompositecontrol"></a> CComCompositeControl:: CComCompositeControl
 
 Oluşturucu.
 
@@ -191,11 +191,11 @@ CComCompositeControl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CComCompositeControl::m_hbrBackground](#m_hbrbackground) ve [CComCompositeControl::m_hWndFocus](#m_hwndfocus) veri üyelerini NULL'a karşı başharfe aktarın.
+[CComCompositeControl:: m_hbrBackground](#m_hbrbackground) ve [ccomcompositecontrol:: M_HWNDFOCUS](#m_hwndfocus) veri üyelerini null olarak başlatır.
 
-## <a name="ccomcompositecontrolccomcompositecontrol"></a><a name="dtor"></a>CcomCompositeControl::~CcomcompositeControl
+## <a name="ccomcompositecontrolccomcompositecontrol"></a><a name="dtor"></a> CComCompositeControl:: ~ CComCompositeControl
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CComCompositeControl();
@@ -203,11 +203,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsa arka plan nesnesini siler.
+Varsa, arka plan nesnesini siler.
 
-## <a name="ccomcompositecontrolcreatecontrolwindow"></a><a name="createcontrolwindow"></a>CcomCompositeControl::CreateControl Window
+## <a name="ccomcompositecontrolcreatecontrolwindow"></a><a name="createcontrolwindow"></a> CComCompositeControl:: CreateControlWindow
 
-Denetim penceresini oluşturmak ve barındırılan denetimleri bildirmek için bu yöntemi arayın.
+Denetim penceresini oluşturmak için bu yöntemi çağırın ve tüm barındırılan denetimlere tavsiye edin.
 
 ```
 virtual HWND CreateControlWindow(
@@ -218,10 +218,10 @@ virtual HWND CreateControlWindow(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-Denetimin üst penceresine bir tutamaç.
+Denetimin üst penceresine yönelik bir tanıtıcı.
 
 *rcPos*<br/>
-Istemci koordinatlarında bileşik denetimin konum dikdörtgeni *hWndParent*göreli .
+İstemci koordinatlarındaki bileşik denetimin konum dikdörtgeni *hwndParent*göre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -229,27 +229,27 @@ Yeni oluşturulan bileşik denetim iletişim kutusuna bir tanıtıcı döndürü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [ccomCompositeControl çağırır::Oluştur](#create) ve [CComCompositeControl::AdviseSinkMap](#advisesinkmap).
+Bu yöntem [CComCompositeControl:: Create](#create) ve [CComCompositeControl:: Advisesınkmap](#advisesinkmap)öğesini çağırır.
 
-## <a name="ccomcompositecontrolm_hbrbackground"></a><a name="m_hbrbackground"></a>CComCompositeControl::m_hbrBackground
+## <a name="ccomcompositecontrolm_hbrbackground"></a><a name="m_hbrbackground"></a> CComCompositeControl:: m_hbrBackground
 
-Arka plan fırçası.
+Arka plan Fırçası.
 
 ```
 HBRUSH m_hbrBackground;
 ```
 
-## <a name="ccomcompositecontrolm_hwndfocus"></a><a name="m_hwndfocus"></a>CComCompositeControl::m_hWndFocus
+## <a name="ccomcompositecontrolm_hwndfocus"></a><a name="m_hwndfocus"></a> CComCompositeControl:: m_hWndFocus
 
-Şu anda odaklanmış olan pencerenin tutamacı.
+Şu anda odaklanmış pencerenin tutamacı.
 
 ```
 HWND m_hWndFocus;
 ```
 
-## <a name="ccomcompositecontrolsetbackgroundcolorfromambient"></a><a name="setbackgroundcolorfromambient"></a>CComCompositeControl::SetBackgroundColorFromAmbient
+## <a name="ccomcompositecontrolsetbackgroundcolorfromambient"></a><a name="setbackgroundcolorfromambient"></a> CComCompositeControl:: SetBackgroundColorFromAmbient
 
-Kapsayıcının arka plan rengini kullanarak bileşik denetimin arka plan rengini ayarlamak için bu yöntemi arayın.
+Kapsayıcının arka plan rengini kullanarak bileşik denetimin arka plan rengini ayarlamak için bu yöntemi çağırın.
 
 ```
 HRESULT SetBackgroundColorFromAmbient();
@@ -257,10 +257,10 @@ HRESULT SetBackgroundColorFromAmbient();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı S_OK veya hatada Bir hata HRESULT verir.
+Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
-[Kompozit Kontrol Esasları](../../atl/atl-composite-control-fundamentals.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
+[Bileşik denetim temelleri](../../atl/atl-composite-control-fundamentals.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)
