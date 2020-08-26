@@ -40,18 +40,18 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: 72797411b100480a06e27b71b000264070e57e32
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6858c26df5f5ee364717d089704117e650282278
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211139"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841109"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 
 Tek bir veritabanı erişim oturumunu temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CSession
@@ -65,24 +65,24 @@ class CSession
 
 ### <a name="methods"></a>Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
-|[Abort](#abort)|İşlemi iptal eder (sonlandırır).|
-|[~Eksik](#close)|Oturumu kapatır.|
+|[Durdurulmaya](#abort)|İşlemi iptal eder (sonlandırır).|
+|[Kapat](#close)|Oturumu kapatır.|
 |[Uygulayın](#commit)|İşlemi kaydeder.|
 |[GetTransactionInfo](#gettransactioninfo)|Bir işlemle ilgili bilgileri döndürür.|
-|[Açın](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
+|[Aç](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
 |[StartTransaction](#starttransaction)|Bu oturum için yeni bir işlem başlatır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazla oturum, bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi tarafından temsil edilen her bir sağlayıcı bağlantısıyla (veri kaynağı) ilişkilendirilebilir. Bir `CDataSource`için yeni bir `CSession` oluşturmak için [CSession:: Open](../../data/oledb/csession-open.md)çağırın. Bir veritabanı işlemine başlamak için `CSession` `StartTransaction` yöntemi sağlar. Bir işlem başlatıldıktan sonra, `Commit` metodunu kullanarak bu işleme veya `Abort` metodunu kullanarak iptal edebilirsiniz.
+Bir veya daha fazla oturum, bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi tarafından temsil edilen her bir sağlayıcı bağlantısıyla (veri kaynağı) ilişkilendirilebilir. Bir için yeni bir oluşturmak için `CSession` `CDataSource` [CSession:: Open](../../data/oledb/csession-open.md)çağırın. Bir veritabanı işlemine başlamak için `CSession` `StartTransaction` yöntemini sağlar. Bir işlem başlatıldıktan sonra, yöntemini kullanarak bu işleme `Commit` veya yöntemini kullanarak iptal edebilirsiniz `Abort` .
 
-## <a name="csessionabort"></a><a name="abort"></a>CSession:: Abort
+## <a name="csessionabort"></a><a name="abort"></a> CSession:: Abort
 
 İşlemi sonlandırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Abort(BOID* pboidReason = NULL,
@@ -98,11 +98,11 @@ HRESULT Abort(BOID* pboidReason = NULL,
 
 Standart HRESULT.
 
-## <a name="csessionclose"></a><a name="close"></a>CSession:: Close
+## <a name="csessionclose"></a><a name="close"></a> CSession:: Close
 
 [CSession:: Open](../../data/oledb/csession-open.md)tarafından açılan oturumu kapatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close() throw();
@@ -110,13 +110,13 @@ void Close() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_spOpenRowset` işaretçisini serbest bırakır.
+İşaretçiyi serbest bırakır `m_spOpenRowset` .
 
-## <a name="csessioncommit"></a><a name="commit"></a>CSession:: COMMIT
+## <a name="csessioncommit"></a><a name="commit"></a> CSession:: COMMIT
 
 İşlemi kaydeder.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Commit(BOOL bRetaining = FALSE,
@@ -136,11 +136,11 @@ Standart HRESULT.
 
 Daha fazla bilgi için bkz. [ITransaction:: COMMIT](/previous-versions/windows/desktop/ms713008(v=vs.85)).
 
-## <a name="csessiongettransactioninfo"></a><a name="gettransactioninfo"></a>CSession:: GetTransactionInfo
+## <a name="csessiongettransactioninfo"></a><a name="gettransactioninfo"></a> CSession:: GetTransactionInfo
 
 Bir işlemle ilgili bilgileri döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
@@ -158,11 +158,11 @@ Standart HRESULT.
 
 Daha fazla bilgi için *OLE DB Programcı başvurusunda* [ITransaction:: GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) bölümüne bakın.
 
-## <a name="csessionopen"></a><a name="open"></a>CSession:: Open
+## <a name="csessionopen"></a><a name="open"></a> CSession:: Open
 
 Veri kaynağı nesnesi için yeni bir oturum açar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT Open(const CDataSource& ds,
@@ -187,13 +187,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesnesini `CSession::Open`geçirmeden önce [CDataSource:: Open](../../data/oledb/cdatasource-open.md) kullanarak açmanız gerekir.
+Veri kaynağı nesnesini öğesine geçirmeden önce [CDataSource:: Open](../../data/oledb/cdatasource-open.md) kullanarak açmanız gerekir `CSession::Open` .
 
-## <a name="csessionstarttransaction"></a><a name="starttransaction"></a>CSession:: StartTransaction
+## <a name="csessionstarttransaction"></a><a name="starttransaction"></a> CSession:: StartTransaction
 
 Bu oturum için yeni bir işlem başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
@@ -218,4 +218,4 @@ Daha fazla bilgi için, *OLE DB Programcı başvurusunda* [ıctionlocal:: StartT
 
 [CatDB](../../overview/visual-cpp-samples.md)<br/>
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

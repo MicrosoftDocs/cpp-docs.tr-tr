@@ -7,18 +7,18 @@ helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: 94178d2efd1942a7475fa7987526b021b1c6fb68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 42c94daf331fd9a17e050067e4c4e495af180b0c
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87201970"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841707"
 ---
 # <a name="lttype_traitsgt"></a>&lt;type_traits&gt;
 
 Tür bağımsız değişkenlerinin özellikleri hakkında bilgi veren derleme zamanı sabitlerinin şablonlarını tanımlar veya dönüştürülmüş türler üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <type_traits>
@@ -43,22 +43,44 @@ using add_const_t = typename add_const<T>::type;
 
 Üyeler için belirtilen diğer adlar şunlardır `type` :
 
-||||
-|-|-|-|
-| add_const_t | add_cv_t | add_lvalue_reference_t |
-| add_pointer_t | add_rvalue_reference_t | add_volatile_t |
-| aligned_storage_t | aligned_union_t | common_type_t |
-| conditional_t | decay_t | enable_if_t |
-| invoke_result_t | make_signed_t | make_unsigned_t |
-| remove_all_extents_t | remove_const_t | remove_cv_t |
-| remove_extent_t | remove_pointer_t | remove_reference_t |
-| remove_volatile_t | result_of_t | underlying_type_t |
+:::row:::
+   :::column:::
+      `add_const_t`\
+      `add_cv_t`\
+      `add_lvalue_reference_t`\
+      `add_pointer_t`\
+      `add_rvalue_reference_t`\
+      `add_volatile_t`\
+      `aligned_storage_t`\
+      `aligned_union_t`\
+   :::column-end:::
+   :::column:::
+      `common_type_t`\
+      `conditional_t`\
+      `decay_t`\
+      `enable_if_t`\
+      `invoke_result_t`\
+      `make_signed_t`\
+      `make_unsigned_t`\
+      `remove_all_extents_t`\
+   :::column-end:::
+   :::column:::
+      `remove_const_t`\
+      `remove_cv_t`\
+      `remove_extent_t`\
+      `remove_pointer_t`\
+      `remove_reference_t`\
+      `remove_volatile_t`\
+      `result_of_t`\
+      `underlying_type_t`\
+   :::column-end:::
+:::row-end:::
 
 ### <a name="classes"></a>Sınıflar
 
 Yardımcı sınıfı ve tür tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[integral_constant](../standard-library/integral-constant-class-bool-constant-class.md)|Bir tür ve değerden integral sabiti oluşturur.|
 |[true_type](../standard-library/type-traits-typedefs.md#true_type)|Gerçek değer ile integral sabiti barındırır.|
@@ -66,7 +88,7 @@ Yardımcı sınıfı ve tür tanımları
 
 Birincil tür kategorileri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[is_void](../standard-library/is-void-class.md)|Türün olup olmadığını test eder **`void`** .|
 |[is_null_pointer](../standard-library/is-null-pointer-class.md)|Türün olup olmadığını test eder `std::nullptr_t` .|
@@ -85,7 +107,7 @@ Birincil tür kategorileri
 
 Bileşik tür kategorileri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[is_reference](../standard-library/is-reference-class.md)|Türün bir başvuru olup olmadığını test eder.|
 |[is_arithmetic](../standard-library/is-arithmetic-class.md)|Türün aritmetik olup olmadığını test eder.|
@@ -97,7 +119,7 @@ Bileşik tür kategorileri
 
 Tür özellikleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[is_const](../standard-library/is-const-class.md)|Türün olup olmadığını test eder **`const`** .|
 |[is_volatile](../standard-library/is-volatile-class.md)|Türün olup olmadığını test eder **`volatile`** .|
@@ -150,7 +172,7 @@ Tür özellikleri
 
 Tür özelliği sorguları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[alignment_of](../standard-library/alignment-of-class.md)|Bir türün hizalamasını alır.|
 |[sırası](../standard-library/rank-class.md)|Dizi boyutlarının sayısını alır.|
@@ -158,7 +180,7 @@ Tür özelliği sorguları
 
 Tür ilişkileri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[is_same](../standard-library/is-same-class.md)|İki türün aynı olup olmadığını sınar.|
 |[is_base_of](../standard-library/is-base-of-class.md)|Bir türün diğerinin temeli olup olmadığını sınar.|
@@ -166,7 +188,7 @@ Tür ilişkileri
 
 Const geçici değişiklikler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[add_const](../standard-library/add-const-class.md)|Türden bir **`const`** tür üretir.|
 |[add_volatile](../standard-library/add-volatile-class.md)|Türden bir **`volatile`** tür üretir.|
@@ -177,7 +199,7 @@ Const geçici değişiklikler
 
 Başvuru değişiklikleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[add_lvalue_reference](../standard-library/add-lvalue-reference-class.md)|Türünden türe bir başvuru üretir.|
 |[add_rvalue_reference](../standard-library/add-rvalue-reference-class.md)|Türünden türe yazmak için bir rvalue başvurusu üretir|
@@ -185,28 +207,28 @@ Başvuru değişiklikleri
 
 Değişiklikleri imzala
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[make_signed](../standard-library/make-signed-class.md)|İmzalanmışsa türü ya da türüne eşit veya daha büyük olan en küçük türü üretir.|
 |[make_unsigned](../standard-library/make-unsigned-class.md)|İmzasız türü ya da türüne eşit veya daha büyük olan en küçük işaretsiz türü üretir.|
 
 Dizi değişiklikleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[remove_all_extents](../standard-library/remove-all-extents-class.md)|Dizi türünden dizi olmayan bir tür üretir.|
 |[remove_extent](../standard-library/remove-extent-class.md)|Dizi türünden öğe türü üretir.|
 
 İşaretçi değişiklikleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[add_pointer](../standard-library/add-pointer-class.md)|Türünden türe bir işaretçi üretir.|
 |[remove_pointer](../standard-library/remove-pointer-class.md)|Türe işaretçiden bir tür üretir.|
 
 Diğer dönüşümler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[aligned_storage](../standard-library/aligned-storage-class.md)|Hizalanmış bir tür için başlatılmamış belleği ayırır.|
 |[aligned_union](../standard-library/aligned-union-class.md)|Önemsiz olmayan bir oluşturucuya veya yıkıcıya sahip hizalanmış bir birleşim için başlatılmamış belleği ayırır.|
@@ -220,7 +242,7 @@ Diğer dönüşümler
 
 Mantıksal işleç nitelikleri
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[ýn](../standard-library/conjunction-class.md)||
 |[veya işlecini uygular](../standard-library/disjunction-class.md)||

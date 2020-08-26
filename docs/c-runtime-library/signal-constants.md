@@ -17,16 +17,16 @@ helpviewer_keywords:
 - signal constants
 - SIGILL constant
 ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
-ms.openlocfilehash: e9953e967d1c94ae56dfc1063fb0deafa342631c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d26671b8c3d983e7f1c3fd559d8aa2029e3162fe
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268008"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841148"
 ---
 # <a name="signal-constants"></a>sinyal Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <signal.h>
@@ -34,21 +34,21 @@ ms.locfileid: "62268008"
 
 ## <a name="remarks"></a>Açıklamalar
 
-`sig` Bağımsız değişken bildirim Sabitleri (tanımlandığı SİNYAL. listelenen biri olması gerekir H).
+`sig`Bağımsız değişken aşağıda listelenen bildirim sabitlerinden biri olmalıdır (sinyal içinde tanımlanmıştır). H).
 
-|||
+|Sabit|Açıklama|
 |-|-|
-|SIGABRT|Olağan dışı sonlandırma. Varsayılan eylem çağıran programı çıkış kodu 3 ile sonlandırır.  |
-|SIGABRT_COMPAT|SIGABRT ile aynıdır. Diğer platformlar ile uyumluluk için.  |
-|SIGFPE|Taşma, sıfır veya geçersiz işlem bölme gibi kayan nokta hatası. Varsayılan eylem çağırma programını sonlandırır.  |
-|SIGILL|Geçersiz yönerge. Varsayılan eylem çağırma programını sonlandırır.  |
-|SIGINT|CTRL + C kesme. Varsayılan eylem çağıran programı çıkış kodu 3 ile sonlandırır.  |
-|SIGSEGV|Geçersiz depo erişimi. Varsayılan eylem çağırma programını sonlandırır.  |
-|SIGTERM|Programa gönderilen sonlandırma isteği. Varsayılan eylem çağıran programı çıkış kodu 3 ile sonlandırır.  |
-|SIG_ERR|Bir dönüş türü sinyalinden belirten bir hata oluştu.  |
+|SıGABRT|Olağan dışı sonlandırma. Varsayılan eylem, çağıran programı çıkış kodu 3 ile sonlandırır.  |
+|SIGABRT_COMPAT|SIGABRT ile aynı. Diğer platformlarla uyumluluk için.  |
+|SıGFPE|Taşma, sıfıra bölme veya geçersiz işlem gibi kayan nokta hatası. Varsayılan eylem, çağıran programı sonlandırır.  |
+|SıGıLL|Geçersiz yönerge. Varsayılan eylem, çağıran programı sonlandırır.  |
+|SıGıNT|CTRL + C kesme. Varsayılan eylem, çağıran programı çıkış kodu 3 ile sonlandırır.  |
+|SıGSEGV|Geçersiz depolama erişimi. Varsayılan eylem, çağıran programı sonlandırır.  |
+|SıGTERM|Programa sonlandırma isteği gönderildi. Varsayılan eylem, çağıran programı çıkış kodu 3 ile sonlandırır.  |
+|SIG_ERR|Bir hatayı gösteren bir sinyalin dönüş türü oluştu.  |
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[signal](../c-runtime-library/reference/signal.md)<br/>
-[raise](../c-runtime-library/reference/raise.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[sinyal](../c-runtime-library/reference/signal.md)<br/>
+[yükseltmek](../c-runtime-library/reference/raise.md)<br/>
+[Global sabitler](../c-runtime-library/global-constants.md)

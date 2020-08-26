@@ -1,23 +1,23 @@
 ---
-title: dahil etC++ (com özniteliği)
+title: dahil et (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.include
 helpviewer_keywords:
 - include attribute
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-ms.openlocfilehash: 39f991bb036dce1c50a9d2ee800d3fec65af7c55
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6b75df74ee69ee4f89eb7bf18fb6bcd77d8a6284
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166789"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842201"
 ---
 # <a name="include-c"></a>include (C++)
 
 Oluşturulan. IDL dosyasına dahil edilecek bir veya daha fazla üst bilgi dosyasını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ include(header_file) ];
@@ -30,13 +30,13 @@ Oluşturulan. IDL dosyasına dahil etmek istediğiniz dosyanın adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Include** C++ özniteliği, bir `#include` deyimin, oluşturulan. IDL dosyasındaki `import "docobj.idl"` deyimin altına yerleştirilmesine neden olur.
+C++ **dahil etme** özniteliği, bir `#include` deyimin `import "docobj.idl"` oluşturulan. IDL dosyasındaki deyimin altına yerleştirilmesine neden olur.
 
-**Include** C++ özniteliği [Include](/windows/win32/Midl/include) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+C++ **dahil etme** özniteliği [Include](/windows/win32/Midl/include) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **Include**öğesinin kullanımına ilişkin bir örnek gösterir. Bu örnekte, INCLUDE. h dosyası yalnızca bir `#include` ifadesini içerir.
+Aşağıdaki kod, **Include**öğesinin kullanımına ilişkin bir örnek gösterir. Bu örnekte, INCLUDE. h dosyası yalnızca bir `#include` ifade içerir.
 
 ```cpp
 // cpp_attr_ref_include.cpp
@@ -47,22 +47,20 @@ Aşağıdaki kod, **Include**öğesinin kullanımına ilişkin bir örnek göste
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[import](import.md)<br/>
+[Tek başına öznitelikler](stand-alone-attributes.md)<br/>
+[aktarmaya](import.md)<br/>
 [importidl](importidl.md)<br/>
-[includelib](includelib-cpp.md)<br/>
+[INCLUDELIB](includelib-cpp.md)<br/>
 [importlib](importlib.md)

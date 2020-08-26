@@ -3,12 +3,12 @@ title: Evrensel Windows Uygulamaları (C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.topic: overview
-ms.openlocfilehash: 25b89d2d9cb99e05145e60f9c9b1a6324fbbeb39
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 45d02a5ab923ee46da97d78a1e5ceb2f4313352a
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404606"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841681"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 
@@ -22,13 +22,20 @@ Mevcut masaüstü uygulamanızı Microsoft Store aracılığıyla dağıtım iç
 
 ## <a name="uwp-apps-that-use-ccx"></a>C++/CX kullanan UWP uygulamaları
 
-|||
-|-|-|
-|[C++/CX dil başvurusu](visual-c-language-reference-c-cx.md)|Windows Çalışma Zamanı API 'lerin C++ tüketimini basitleştiren ve özel durumlara dayalı hata işlemeyi etkinleştiren uzantıların kümesini açıklar.|
-|[Uygulama ve Kitaplık Oluşturma (C++/CX)](building-apps-and-libraries-c-cx.md)|C++/CX uygulamasından veya bileşeninden erişilebilen dll 'Lerin ve statik kitaplıkların nasıl oluşturulacağını açıklar.|
-|[Öğretici: C++/CX ' te UWP "Merhaba, Dünya" uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|C++/CX'DE UWP uygulama geliştirmenin temel kavramlarını tanıtan bir anlatım. |
-|[C++/CX içinde Windows Çalışma Zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Diğer UWP uygulamalarının ve bileşenlerinin tüketebileceği dll 'Lerin nasıl oluşturulacağını açıklar.|
-|[UWP oyun programlama](/windows/uwp/gaming/)|Oyunları oluşturmak için DirectX ve C++/CX ' nın nasıl kullanılacağını açıklar.|
+[C++/CX dil başvurusu](visual-c-language-reference-c-cx.md)\
+Windows Çalışma Zamanı API 'lerin C++ tüketimini basitleştiren ve özel durumlara dayalı hata işlemeyi etkinleştiren uzantıların kümesini açıklar.
+
+[Uygulama ve kitaplıklar oluşturma (C++/CX)](building-apps-and-libraries-c-cx.md)\
+C++/CX uygulamasından veya bileşeninden erişilebilen dll 'Lerin ve statik kitaplıkların nasıl oluşturulacağını açıklar.
+
+[Öğretici: C++/CX ' te UWP "Merhaba, Dünya" uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)\
+C++/CX'DE UWP uygulama geliştirmenin temel kavramlarını tanıtan bir anlatım.
+
+[C++/CX içinde Windows Çalışma Zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)\
+Diğer UWP uygulamalarının ve bileşenlerinin tüketebileceği dll 'Lerin nasıl oluşturulacağını açıklar.
+
+[UWP oyun programlama](/windows/uwp/gaming/)\
+Oyunları oluşturmak için DirectX ve C++/CX ' nın nasıl kullanılacağını açıklar.
 
 ## <a name="uwp-apps-that-use-the-windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon kitaplığı (WRL) kullanan UWP uygulamaları
 

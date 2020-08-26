@@ -1,23 +1,23 @@
 ---
-title: isteğe bağlıC++ (com özniteliği)
+title: isteğe bağlı (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.optional
 helpviewer_keywords:
 - optional attribute
 ms.assetid: 86656a66-8e11-4589-8e30-9b0f34eeed03
-ms.openlocfilehash: 6a4fdcd0b8466d2dbf2c034fc4a3ee9ae2df8d0a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 31e2dbac988cdbac8aca2d01a70177825d764a5b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214710"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842175"
 ---
 # <a name="optional-c"></a>isteğe bağlı (C++)
 
 Bir üye işlevi için isteğe bağlı bir parametre belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [optional]
@@ -25,7 +25,7 @@ Bir üye işlevi için isteğe bağlı bir parametre belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İsteğe bağlı** C++ öznitelik, [isteğe bağlı](/windows/win32/Midl/optional) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
+**İsteğe bağlı** C++ özniteliği, [isteğe bağlı](/windows/win32/Midl/optional) MIDL özniteliğiyle aynı işlevselliğe sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -46,18 +46,16 @@ __interface IFireTabCtrl : IDispatch
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Arabirim parametresi|
+|**Şunlara uygulanır**|Arabirim parametresi|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
-[Parametre Öznitelikleri](parameter-attributes.md)
+[Parametre öznitelikleri](parameter-attributes.md)

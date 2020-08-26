@@ -13,24 +13,31 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: d330a1dcd819dd48713887db789371ed4a8fee35
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 11defadff0b1785f6e4c5aba6356f7b68a78b9fc
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215536"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841785"
 ---
 # <a name="lttype_traitsgt-functions"></a>&lt;type_traits &gt; işlevleri
 
-||||
-|-|-|-|
-|[is_assignable](#is_assignable)|[is_copy_assignable](#is_copy_assignable)|[is_copy_constructible](#is_copy_constructible)|
-|[is_default_constructible](#is_default_constructible)|[is_move_assignable](#is_move_assignable)|[is_move_constructible](#is_move_constructible)|
-|[is_nothrow_move_assignable](#is_nothrow_move_assignable)|[is_nothrow_swappable](#is_nothrow_swappable)|[is_nothrow_swappable_with](#is_nothrow_swappable_with)|
-|[is_swappable](#is_swappable)|[is_swappable_with](#is_swappable_with)|[is_trivially_copy_assignable](#is_trivially_copy_assignable)|
-|[is_trivially_move_assignable](#is_trivially_move_assignable)|[is_trivially_move_constructible](#is_trivially_move_constructible)|
+[is_assignable](#is_assignable)\
+[is_copy_assignable](#is_copy_assignable)\
+[is_copy_constructible](#is_copy_constructible)\
+[is_default_constructible](#is_default_constructible)\
+[is_move_assignable](#is_move_assignable)\
+[is_move_constructible](#is_move_constructible)\
+[is_nothrow_move_assignable](#is_nothrow_move_assignable)\
+[is_nothrow_swappable](#is_nothrow_swappable)\
+[is_nothrow_swappable_with](#is_nothrow_swappable_with)\
+[is_swappable](#is_swappable)\
+[is_swappable_with](#is_swappable_with)\
+[is_trivially_copy_assignable](#is_trivially_copy_assignable)\
+[is_trivially_move_assignable](#is_trivially_move_assignable)\
+[is_trivially_move_constructible](#is_trivially_move_constructible)
 
-## <a name="is_assignable"></a><a name="is_assignable"></a>is_assignable
+## <a name="is_assignable"></a><a name="is_assignable"></a> is_assignable
 
 Türden bir değerin bir *to* *türüne atanıp* atanamayacağını sınar.
 
@@ -51,7 +58,7 @@ Değer sağlayan nesnenin türü.
 
 Değerlendirilmeyecek ifade `declval<To>() = declval<From>()` düzgün biçimlendirilmiş olmalıdır. Hem *öğesinden* hem *de* ' nin, bilinmeyen bir tür, **`void`** veya dizileri olması gerekir.
 
-## <a name="is_copy_assignable"></a><a name="is_copy_assignable"></a>is_copy_assignable
+## <a name="is_copy_assignable"></a><a name="is_copy_assignable"></a> is_copy_assignable
 
 Tür, atamaya kopyalanıp kopyalanamayacağını sınar.
 
@@ -69,7 +76,7 @@ Sorgulanacak tür.
 
 *Tür değeri* , kopya atama operatörü olan bir sınıfdaysa, tür koşulunun bir örneği true, aksi takdirde false değerini taşır. İs_assignable eşdeğerdir \<Ty&, const Ty&> .
 
-## <a name="is_copy_constructible"></a><a name="is_copy_constructible"></a>is_copy_constructible
+## <a name="is_copy_constructible"></a><a name="is_copy_constructible"></a> is_copy_constructible
 
 Türün bir kopya Oluşturucusu varsa sınar.
 
@@ -121,7 +128,7 @@ is_copy_constructible<Copyable> == true
 is_copy_constructible<NotCopyable > == false
 ```
 
-## <a name="is_default_constructible"></a><a name="is_default_constructible"></a>is_default_constructible
+## <a name="is_default_constructible"></a><a name="is_default_constructible"></a> is_default_constructible
 
 Bir türün varsayılan Oluşturucusu olup olmadığını sınar.
 
@@ -173,7 +180,7 @@ is_default_constructible<Simple> == true
 is_default_constructible<Simple2> == false
 ```
 
-## <a name="is_move_assignable"></a><a name="is_move_assignable"></a>is_move_assignable
+## <a name="is_move_assignable"></a><a name="is_move_assignable"></a> is_move_assignable
 
 Tür atanmış olarak taşınabileceği test eder.
 
@@ -191,7 +198,7 @@ Sorgulanacak tür.
 
 Türe bir rvalue başvurusu, türe bir başvuruya atanabileceği takdirde tür atanabilir. Tür koşulu ile eşdeğerdir `is_assignable<T&, T&&>` . Atanabilir türleri, derleyici tarafından oluşturulan veya Kullanıcı tanımlı taşıma atama işleçleri olan başvurulabilir skaler türlerini ve sınıf türlerini içerir.
 
-## <a name="is_move_constructible"></a><a name="is_move_constructible"></a>is_move_constructible
+## <a name="is_move_constructible"></a><a name="is_move_constructible"></a> is_move_constructible
 
 Türün bir taşıma oluşturucusuna sahip olup olmadığını sınar.
 
@@ -209,7 +216,7 @@ Değerlendirilecek tür
 
 Tür *T* bir taşıma işlemi kullanılarak oluşturulabiliyorsa true olarak değerlendirilen bir tür koşulu. Bu koşul ile eşdeğerdir `is_constructible<T, T&&>` .
 
-## <a name="is_nothrow_move_assignable"></a><a name="is_nothrow_move_assignable"></a>is_nothrow_move_assignable
+## <a name="is_nothrow_move_assignable"></a><a name="is_nothrow_move_assignable"></a> is_nothrow_move_assignable
 
 Türün bir **`nothrow`** taşıma ataması operatörüne sahip olup olmadığını sınar.
 
@@ -227,31 +234,31 @@ Sorgulanacak tür.
 
 *Tür olarak* bir nothrow taşıma atama işleci varsa, tür koşulunda bir örnek true, aksi takdirde false barındırır.
 
-## <a name="is_nothrow_swappable"></a><a name="is_nothrow_swappable"></a>is_nothrow_swappable
+## <a name="is_nothrow_swappable"></a><a name="is_nothrow_swappable"></a> is_nothrow_swappable
 
 ```cpp
 template <class T> struct is_nothrow_swappable;
 ```
 
-## <a name="is_nothrow_swappable_with"></a><a name="is_nothrow_swappable_with"></a>is_nothrow_swappable_with
+## <a name="is_nothrow_swappable_with"></a><a name="is_nothrow_swappable_with"></a> is_nothrow_swappable_with
 
 ```cpp
 template <class T, class U> struct is_nothrow_swappable_with;
 ```
 
-## <a name="is_swappable"></a><a name="is_swappable"></a>is_swappable
+## <a name="is_swappable"></a><a name="is_swappable"></a> is_swappable
 
 ```cpp
 template <class T> struct is_swappable;
 ```
 
-## <a name="is_swappable_with"></a><a name="is_swappable_with"></a>is_swappable_with
+## <a name="is_swappable_with"></a><a name="is_swappable_with"></a> is_swappable_with
 
 ```cpp
 template <class T, class U> struct is_swappable_with;
 ```
 
-## <a name="is_trivially_copy_assignable"></a><a name="is_trivially_copy_assignable"></a>is_trivially_copy_assignable
+## <a name="is_trivially_copy_assignable"></a><a name="is_trivially_copy_assignable"></a> is_trivially_copy_assignable
 
 Türün bir Önemsiz kopya atama işlecine sahip olup olmadığını sınar.
 
@@ -271,7 +278,7 @@ Tür *T* , Önemsiz kopya atama operatörü olan bir sınıf ise true, aksi takd
 
 Sınıf t için atama Oluşturucusu, örtük olarak sağlanmışsa, *t* sınıfı sanal bir işleve *sahip değildir,* *t* sınıfının sanal bir tabanı yoktur, sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz atama işleçlerine sahiptir ve sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz atama işleçleridir.
 
-## <a name="is_trivially_move_assignable"></a><a name="is_trivially_move_assignable"></a>is_trivially_move_assignable
+## <a name="is_trivially_move_assignable"></a><a name="is_trivially_move_assignable"></a> is_trivially_move_assignable
 
 Türün bir önemsiz taşıma atama işlecine sahip olup olmadığını sınar.
 
@@ -301,7 +308,7 @@ sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz 
 
 Sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz taşıma atama işleçlerine sahiptir
 
-## <a name="is_trivially_move_constructible"></a><a name="is_trivially_move_constructible"></a>is_trivially_move_constructible
+## <a name="is_trivially_move_constructible"></a><a name="is_trivially_move_constructible"></a> is_trivially_move_constructible
 
 Türün önemsiz taşıma Oluşturucusu varsa sınar.
 

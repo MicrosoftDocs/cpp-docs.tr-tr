@@ -20,18 +20,18 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: a737b122e8fd9b782b0ddbe599ac8959f1929aab
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eef0e7ef013b4faeb6393cade67258a09eda5551
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222556"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842435"
 ---
 # <a name="condition_variable-class"></a>condition_variable Sınıfı
 
 `condition_variable`Bir türe sahip olduğunuzda bir olayı beklemek için sınıfını kullanın `mutex` `unique_lock<mutex>` . Bu türün nesneleri [condition_variable_any<unique_lock \<mutex> > ](../standard-library/condition-variable-any-class.md)türündeki nesnelerden daha iyi performansa sahip olabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class condition_variable;
@@ -41,13 +41,13 @@ class condition_variable;
 
 ### <a name="constructors"></a>Oluşturucular
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[condition_variable](#condition_variable)|Bir `condition_variable` nesnesi oluşturur.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[native_handle](#native_handle)|Condition_variable tanıtıcıyı temsil eden uygulamaya özel türü döndürür.|
 |[notify_all](#notify_all)|Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır `condition_variable` .|
@@ -56,7 +56,7 @@ class condition_variable;
 |[wait_for](#wait_for)|Bir iş parçacığını engeller ve sonra iş parçacığı bloklarından sonra bir zaman aralığı ayarlar.|
 |[wait_until](#wait_until)|Bir iş parçacığını engeller ve iş parçacığı bloklarından en fazla bir zaman noktası ayarlar.|
 
-## <a name="condition_variable"></a><a name="condition_variable"></a>condition_variable
+## <a name="condition_variable"></a><a name="condition_variable"></a> condition_variable
 
 Bir `condition_variable` nesnesi oluşturur.
 
@@ -68,7 +68,7 @@ condition_variable();
 
 Yeterli kullanılabilir bellek yoksa, Oluşturucu hata koduna sahip bir [system_error](../standard-library/system-error-class.md) nesnesi oluşturur `not_enough_memory` . Başka bir kaynak kullanılabilir olmadığından nesne oluşturulamıyor, Oluşturucu `system_error` hata koduna sahip bir nesne oluşturur `resource_unavailable_try_again` .
 
-## <a name="native_handle"></a><a name="native_handle"></a>native_handle
+## <a name="native_handle"></a><a name="native_handle"></a> native_handle
 
 Condition_variable tanıtıcısını temsil eden uygulamaya özel türü döndürür.
 
@@ -78,9 +78,9 @@ native_handle_type native_handle();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`native_handle_type`Eşzamanlılık Çalışma Zamanı iç veri yapıları için bir işaretçi olarak tanımlanır.
+`native_handle_type` Eşzamanlılık Çalışma Zamanı iç veri yapıları için bir işaretçi olarak tanımlanır.
 
-## <a name="notify_all"></a><a name="notify_all"></a>notify_all
+## <a name="notify_all"></a><a name="notify_all"></a> notify_all
 
 Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır `condition_variable` .
 
@@ -88,7 +88,7 @@ Nesne için bekleyen tüm iş parçacıklarının bloklarını kaldırır `condi
 void notify_all() noexcept;
 ```
 
-## <a name="notify_one"></a><a name="notify_one"></a>notify_one
+## <a name="notify_one"></a><a name="notify_one"></a> notify_one
 
 Nesne üzerinde bekleyen iş parçacıklarından birinin engellemesini kaldırır `condition_variable` .
 
@@ -96,7 +96,7 @@ Nesne üzerinde bekleyen iş parçacıklarından birinin engellemesini kaldırı
 void notify_one() noexcept;
 ```
 
-## <a name="wait"></a><a name="wait"></a>bekleneceğini
+## <a name="wait"></a><a name="wait"></a> bekleneceğini
 
 Bir iş parçacığını engeller.
 
@@ -126,7 +126,7 @@ while(!Pred())
     wait(Lck);
 ```
 
-## <a name="wait_for"></a><a name="wait_for"></a>wait_for
+## <a name="wait_for"></a><a name="wait_for"></a> wait_for
 
 Bir iş parçacığını engeller ve sonra iş parçacığı bloklarından sonra bir zaman aralığı ayarlar.
 
@@ -174,7 +174,7 @@ while(!Pred())
 return true;
 ```
 
-## <a name="wait_until"></a><a name="wait_until"></a>wait_until
+## <a name="wait_until"></a><a name="wait_until"></a> wait_until
 
 Bir iş parçacığını engeller ve iş parçacığı bloklarından en fazla bir zaman noktası ayarlar.
 

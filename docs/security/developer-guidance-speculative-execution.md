@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-ms.openlocfilehash: d0b9faf0bd11892c05e25e981e8cd729cb623dd4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 72dffd25eef847d1bdffe61c4a18a27d9cb33644
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219332"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842461"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme tarafı kanalları için C++ Geliştirici Kılavuzu
 
@@ -21,7 +21,7 @@ Bu makale, geliştiricilerin C++ yazılımlarında yansımalı yürütme tarafı
 
 Bu makale tarafından sunulan kılavuz, tarafından temsil edilen güvenlik açıklarına yönelik sınıflarla ilgilidir:
 
-1. CVE-2017-5753, Spectre Variant 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı, koşullu bir dalın yanlış tahmin sonucu olarak oluşan yansımalı yürütme nedeniyle ortaya çıkabilecek yan kanallar ile ilgilidir. Visual Studio 2017 ' de Microsoft C++ derleyicisi (Version 15.5.5 ile başlayarak), `/Qspectre` CVE-2017-5753 ile ilgili sınırlı olabilecek güvenlik açıklarına yönelik kodlama desenlerine yönelik derleme zamanı azaltma sağlayan anahtar için destek içerir. Bu `/Qspectre` anahtar, Visual Studio 2015 güncelleştirme 3 Ile [KB 4338871](https://support.microsoft.com/help/4338871)arasında da kullanılabilir. [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağının belgeleri, etkileri ve kullanımı hakkında daha fazla bilgi sağlar.
+1. CVE-2017-5753, Spectre Variant 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı, koşullu bir dalın yanlış tahmin sonucu olarak oluşan yansımalı yürütme nedeniyle ortaya çıkabilecek yan kanallar ile ilgilidir. Visual Studio 2017 ' de Microsoft C++ derleyicisi (Version 15.5.5 ile başlayarak), `/Qspectre` CVE-2017-5753 ile ilgili sınırlı olabilecek güvenlik açıklarına yönelik kodlama desenlerine yönelik derleme zamanı azaltma sağlayan anahtar için destek içerir. Bu `/Qspectre` anahtar, Visual Studio 2015 güncelleştirme 3 Ile [KB 4338871](https://support.microsoft.com/help/4338871)arasında da kullanılabilir. Bayrağa yönelik belgeler, [`/Qspectre`](../build/reference/qspectre.md) etkileri ve kullanımı hakkında daha fazla bilgi sağlar.
 
 2. CVE-2018-3639, Ayrıca, [Specutive deposu atlama (SSB)](https://aka.ms/sescsrdssb)olarak da bilinir. Bu donanım güvenlik açığı sınıfı, bellek erişiminin yanlış tahmin sonucu olarak bağımlı bir deponun önünde oluşan bir yükün önünde yürütülebileceği için ortaya çıkabilecek yan kanallar ile ilgilidir.
 
@@ -174,7 +174,7 @@ unsigned char WriteSlot(unsigned int untrusted_index, void *ptr) {
 }
 ```
 
-Bu örneklerin her ikisinde de yığın tarafından ayrılan dolaylı dal işaretçilerinin yansımalı değişikliğini içeren Not edilmelidir. Genel değişkenler, yığın olarak ayrılan bellek ve hatta bazı CPU 'Larda salt okuma belleği için de yansımalı değişiklik yapılabilir. Yığın tarafından ayrılan bellek için, Microsoft C++ derleyicisi zaten, ara değerli dolaylı dal hedeflerini daha zor hale getirmek için, örneğin, arabelleklerin bir güvenlik tanımlama bilgisine bir, [/GS](https://docs.microsoft.com/cpp/build/reference/gs-buffer-security-check) derleyici güvenlik özelliğinin bir parçası olarak yerleştirilmesini sağlar.
+Bu örneklerin her ikisinde de yığın tarafından ayrılan dolaylı dal işaretçilerinin yansımalı değişikliğini içeren Not edilmelidir. Genel değişkenler, yığın olarak ayrılan bellek ve hatta bazı CPU 'Larda salt okuma belleği için de yansımalı değişiklik yapılabilir. Yığın tarafından ayrılan bellek için, Microsoft C++ derleyicisi zaten, ara değerli dolaylı dal hedeflerini, örneğin, arabelleklerin derleyici güvenlik özelliğinin bir parçası olarak bir güvenlik tanımlama bilgisine yerleştirilmesi gibi yerel değişkenleri yeniden sıralayarak daha zor hale getirmek için bir adım sürer [`/GS`](../build/reference/gs-buffer-security-check.md) .
 
 ## <a name="speculative-type-confusion"></a>Spectıcı tür karışıklığı
 
@@ -331,7 +331,7 @@ unsigned char ReadByte(unsigned char *buffer, unsigned int buffer_size, unsigned
 
 ### <a name="speculation-barrier-via-compiler-time-instrumentation"></a>Derleyici zamanı izleme aracılığıyla yansımalı engel
 
-Visual Studio 2017 ' de Microsoft C++ derleyicisi (sürüm 15.5.5 ile başlayan), `/Qspectre` CVE-2017-5753 ile ilgili sınırlı olabilecek çok sayıda kodlama desenlerine yönelik bir otomatik olarak bir otomatik olarak bir otomatik olarak bir otomatik olarak belirtilen engel ekler. [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağının belgeleri, etkileri ve kullanımı hakkında daha fazla bilgi sağlar. Bu bayrağın, güvenlik açığı bulunan tüm kodlama düzenlerini kapsamadığını ve bu tür geliştiricilerin bu güvenlik açığına yönelik kapsamlı bir azaltma olarak bu şekilde güvenmediğine dikkat edin.
+Visual Studio 2017 ' de Microsoft C++ derleyicisi (sürüm 15.5.5 ile başlayan), `/Qspectre` CVE-2017-5753 ile ilgili sınırlı olabilecek çok sayıda kodlama desenlerine yönelik bir otomatik olarak bir otomatik olarak bir otomatik olarak bir otomatik olarak belirtilen engel ekler. Bayrağa yönelik belgeler, [`/Qspectre`](../build/reference/qspectre.md) etkileri ve kullanımı hakkında daha fazla bilgi sağlar. Bu bayrağın, güvenlik açığı bulunan tüm kodlama düzenlerini kapsamadığını ve bu tür geliştiricilerin bu güvenlik açığına yönelik kapsamlı bir azaltma olarak bu şekilde güvenmediğine dikkat edin.
 
 ### <a name="masking-array-indices"></a>Dizi dizinlerini maskeleme
 

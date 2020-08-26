@@ -26,18 +26,18 @@ f1_keywords:
 helpviewer_keywords:
 - mbrlen function
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
-ms.openlocfilehash: dd903aaf8b1c5772f2caaf58bda5d6c23bb59687
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2e0e0ec9d92744fc904bae5ac7f91db8049de4cd
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920311"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842123"
 ---
 # <a name="mbrlen"></a>mbrlen
 
 Çok baytlı bir karakterin ortasında yeniden başlatma özelliği ile geçerli yerel ayarda çok baytlı bir karakteri tamamlamaya yönelik gereken bayt sayısını belirleme.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 size_t mbrlen(
@@ -52,7 +52,7 @@ size_t mbrlen(
 *üstbilgisine*<br/>
 Çok baytlı bir karakter dizesinde incelemek için sonraki bayta yönelik işaretçi.
 
-*biriktirme*<br/>
+*count*<br/>
 İncelenecek en fazla bayt sayısı.
 
 *mbstate*<br/>
@@ -62,16 +62,16 @@ size_t mbrlen(
 
 Aşağıdaki değerlerden biri:
 
-|||
-|-|-|
-0|Sonraki *sayı* veya daha az bayt, geniş boş karakteri temsil eden çok baytlı karakteri tamamlar.
-1- *Count*, dahil|Sonraki *sayı* veya daha az bayt geçerli bir çok baytlı karakteri tamamlar. Döndürülen değer, çok baytlı karakteri Tamamlanan bayt sayısıdır.
-(size_t) (-2)|*Sıradaki bayt sayısı,* tamamlanmamış ancak büyük olasılıkla geçerli çok baytlı bir karaktere katkıda bulunur ve tüm *sayım* baytları işlenir.
-(size_t) (-1)|Bir kodlama hatası oluştu. Sonraki *sayı* veya daha az bayt, bir bütün ve geçerli çok baytlı karaktere katkıda bulunmuyor. Bu durumda, **errno** EILSEQ olarak ayarlanır ve *mbstate* 'teki dönüştürme durumu belirtilmemiş olur.
+| Değer | Açıklama |
+|--|--|
+| 0 | Sonraki *sayı* veya daha az bayt, geniş boş karakteri temsil eden çok baytlı karakteri tamamlar. |
+| 1- *Count*, dahil | Sonraki *sayı* veya daha az bayt geçerli bir çok baytlı karakteri tamamlar. Döndürülen değer, çok baytlı karakteri Tamamlanan bayt sayısıdır. |
+| (size_t) (-2) | *Sıradaki bayt sayısı,* tamamlanmamış ancak büyük olasılıkla geçerli çok baytlı bir karaktere katkıda bulunur ve tüm *sayım* baytları işlenir. |
+| (size_t) (-1) | Bir kodlama hatası oluştu. Sonraki *sayı* veya daha az bayt, bir bütün ve geçerli çok baytlı karaktere katkıda bulunmuyor. Bu durumda, **errno** EILSEQ olarak ayarlanır ve *mbstate* 'teki dönüştürme durumu belirtilmemiş olur. |
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbrlen** işlevi, tüm kaydırma dizileri dahil olmak üzere bir sonraki çok baytlı karakteri tamamlaması gereken bayt sayısını öğrenmek için *Str* tarafından işaret edilen bayt ile başlayan en fazla *sayıda* baytı inceler. *Mbstate* 'in Kullanıcı tarafından sağlanmış `mbrtowc(NULL, str, count, &mbstate)` **mbstate_t** nesne veya kitaplık tarafından sunulan statik bir dahili nesne olduğu çağrıya eşdeğerdir.
+**Mbrlen** işlevi, tüm kaydırma dizileri dahil olmak üzere bir sonraki çok baytlı karakteri tamamlaması gereken bayt sayısını öğrenmek için *Str* tarafından işaret edilen bayt ile başlayan en fazla *sayıda* baytı inceler. `mbrtowc(NULL, str, count, &mbstate)` *Mbstate* 'in kullanıcı tarafından sağlanmış **mbstate_t** nesne veya kitaplık tarafından sunulan statik bir dahili nesne olduğu çağrıya eşdeğerdir.
 
 **Mbrlen** işlevi, *mbstate* parametresinde tamamlanmamış bir çok baytlı karakterin vardiya durumunu kaydeder ve kullanır. Bu, daha çok baytlı bir karakterin ortasında yeniden başlatma yeteneğini, gerekirse en fazla *sayıda* baytı inceleyerek **mbrlen** özelliğini sağlar. *Mbstate* null işaretçisiyse **mbrlen** , SHIFT durumunu depolamak için bir iç, statik **mbstate_t** nesnesi kullanır. İç **mbstate_t** nesnesi iş parçacığı açısından güvenli olmadığından, her zaman kendi *mbstate* parametresini ayırmanız ve geçirmeniz önerilir.
 
@@ -89,7 +89,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**mbrlen**|\<wchar. h>|
+|**mbrlen**|\<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -158,4 +158,4 @@ Character count: 25
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Yerel Ayar](../../c-runtime-library/locale.md)<br/>

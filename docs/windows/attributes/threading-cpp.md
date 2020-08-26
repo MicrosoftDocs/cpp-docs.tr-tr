@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: e08d25df07ad881c8843953d01d9074c815ddb85
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6f83dca442b6508207a4123fa918fc5078bdf664
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193074"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840823"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 
@@ -28,15 +28,15 @@ COM nesnesi için iş parçacığı modelini belirtir.
 *modelinizi*<br/>
 Seçim Aşağıdaki iş parçacığı modellerden biri:
 
-- `apartment`(Apartman iş parçacığı)
+- `apartment` (Apartman iş parçacığı)
 
-- `neutral`(Kullanıcı arabirimi olmayan .NET Framework bileşenleri)
+- `neutral` (Kullanıcı arabirimi olmayan .NET Framework bileşenleri)
 
-- `single`(basit iş parçacığı)
+- `single` (basit iş parçacığı)
 
-- `free`(serbest iş parçacığı)
+- `free` (serbest iş parçacığı)
 
-- `both`(Apartman ve serbest iş parçacığı)
+- `both` (Apartman ve serbest iş parçacığı)
 
 Varsayılan değer: `apartment`.
 
@@ -54,14 +54,12 @@ ATL projelerinde, [coclass](coclass.md) özniteliği de varsa, *model* tarafınd
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
 |**Tekrarlanabilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

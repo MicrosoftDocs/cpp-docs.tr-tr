@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: c49e71a3e43f74e0e68228c313d3198d0abd4f91
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 074b0e1df5a8d70c8b32ee03dcb073c26c13be9b
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520700"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841005"
 ---
 # <a name="colecontrol-class"></a>Coelcontrol sınıfı
 
@@ -572,7 +572,7 @@ OLE denetim çerçevesi geliştirme hakkında daha fazla bilgi için bkz. [MFC A
 
 **Üst bilgi:** afxctl. h
 
-## <a name="colecontrolambientbackcolor"></a><a name="ambientbackcolor"></a>Coelcontrol:: AmbientBackColor
+## <a name="colecontrolambientbackcolor"></a><a name="ambientbackcolor"></a> Coelcontrol:: AmbientBackColor
 
 Çevresel BackColor özelliğinin değerini döndürür.
 
@@ -588,7 +588,7 @@ Kapsayıcının çevresel BackColor özelliğinin geçerli değeri (varsa). Öze
 
 Çevresel BackColor özelliği tüm denetimlerde kullanılabilir ve kapsayıcı tarafından tanımlanır. Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientdisplayname"></a><a name="ambientdisplayname"></a>Coelcontrol:: AmbientDisplayName
+## <a name="colecontrolambientdisplayname"></a><a name="ambientdisplayname"></a> Coelcontrol:: AmbientDisplayName
 
 Kapsayıcının denetime atandığı ad, kullanıcıya görüntülenecek hata iletilerinde kullanılabilir.
 
@@ -604,7 +604,7 @@ OLE denetiminin adı. Varsayılan değer sıfır uzunluklu bir dizedir.
 
 Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientfont"></a><a name="ambientfont"></a>Coelcontrol:: AmbientFont
+## <a name="colecontrolambientfont"></a><a name="ambientfont"></a> Coelcontrol:: AmbientFont
 
 Çevresel yazı tipi özelliğinin değerini döndürür.
 
@@ -620,7 +620,7 @@ Kapsayıcının çevresel yazı tipi gönderme arabirimine yönelik bir işaret�
 
 Çevresel yazı tipi özelliği kapsayıcı tarafından tanımlanır ve tüm denetimler için kullanılabilir. Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientforecolor"></a><a name="ambientforecolor"></a>Coelcontrol:: AmbientForeColor
+## <a name="colecontrolambientforecolor"></a><a name="ambientforecolor"></a> Coelcontrol:: AmbientForeColor
 
 Çevresel ForeColor özelliğinin değerini döndürür.
 
@@ -636,7 +636,7 @@ Kapsayıcının çevresel ForeColor özelliğinin geçerli değeri (varsa). Dest
 
 Çevresel ForeColor özelliği tüm denetimler için kullanılabilir ve kapsayıcı tarafından tanımlanır. Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientlocaleid"></a><a name="ambientlocaleid"></a>Coelcontrol:: AmbientLocaleID
+## <a name="colecontrolambientlocaleid"></a><a name="ambientlocaleid"></a> Coelcontrol:: AmbientLocaleID
 
 Kapsayıcının yerel ayar KIMLIĞINI döndürür.
 
@@ -652,7 +652,7 @@ Varsa, kapsayıcının LocaleID özelliğinin değeri. Bu özellik desteklenmiyo
 
 Denetim LocaleID 'yi kullanarak Kullanıcı arabirimini belirli yerel ayarlara göre uyarlayabilir. Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientappearance"></a><a name="ambientappearance"></a>Coelcontrol:: AmbientAppearance
+## <a name="colecontrolambientappearance"></a><a name="ambientappearance"></a> Coelcontrol:: AmbientAppearance
 
 Denetim nesnesi için geçerli görünüm ayarını alır.
 
@@ -672,7 +672,7 @@ Denetimin görünümü:
 
 Denetimin DISPID_AMBIENT_APPEARANCE özelliğinin geçerli değerini almak için bu işlevi çağırın.
 
-## <a name="colecontrolambientscaleunits"></a><a name="ambientscaleunits"></a>Coelcontrol:: AmbientScaleUnits
+## <a name="colecontrolambientscaleunits"></a><a name="ambientscaleunits"></a> Coelcontrol:: AmbientScaleUnits
 
 Kapsayıcı tarafından kullanılan birim türünü döndürür.
 
@@ -688,7 +688,7 @@ Kapsayıcının çevresel ölçek birimleri içeren bir dize. Bu özellik destek
 
 Kapsayıcının çevresel ScaleUnits özelliği, seçili birimle etiketlenmiş olan (twip veya santimetre gibi) konumları veya boyutları göstermek için kullanılabilir. Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientshowgrabhandles"></a><a name="ambientshowgrabhandles"></a>Coelcontrol:: AmbientShowGrabHandles
+## <a name="colecontrolambientshowgrabhandles"></a><a name="ambientshowgrabhandles"></a> Coelcontrol:: AmbientShowGrabHandles
 
 Kapsayıcının, denetimin etkin olduğunda kendine yönelik tutamaçları görüntülemesine izin verip içermediğini belirler.
 
@@ -704,7 +704,7 @@ Alma tutamaçlarının görüntülenmesi gerekiyorsa sıfır dışı; Aksi takdi
 
 Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientshowhatching"></a><a name="ambientshowhatching"></a>Coelcontrol:: AmbientShowHatching
+## <a name="colecontrolambientshowhatching"></a><a name="ambientshowhatching"></a> Coelcontrol:: AmbientShowHatching
 
 Kapsayıcının, Kullanıcı arabirimi etkinken denetimin kendisini taranmış bir Düzenle görüntülemesine izin verip içermediğini belirler.
 
@@ -720,7 +720,7 @@ Taranmış düzenin gösterilmesi gerekiyorsa sıfır dışı; Aksi takdirde 0. 
 
 Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambienttextalign"></a><a name="ambienttextalign"></a>Coelcontrol:: AmbientTextAlign
+## <a name="colecontrolambienttextalign"></a><a name="ambienttextalign"></a> Coelcontrol:: AmbientTextAlign
 
 Denetim kapsayıcısının tercih ettiği çevresel metin hizalamasını belirler.
 
@@ -745,7 +745,7 @@ Geçerli dönüş değerlerinin listesi aşağıda verilmiştir:
 
 Bu özellik tüm katıştırılmış denetimler için kullanılabilir ve kapsayıcı tarafından tanımlanır. Kapsayıcının bu özelliği desteklemesi gerekmediğini unutmayın.
 
-## <a name="colecontrolambientuidead"></a><a name="ambientuidead"></a>Coelcontrol:: AmbientUIDead
+## <a name="colecontrolambientuidead"></a><a name="ambientuidead"></a> Coelcontrol:: AmbientUIDead
 
 Kapsayıcının denetimin kullanıcı arabirimi eylemlerine yanıt vermesini isteyip istemediğini belirler.
 
@@ -761,7 +761,7 @@ Denetimin kullanıcı arabirimi eylemlerine yanıt vermesi gerekiyorsa sıfır d
 
 Örneğin, bir kapsayıcı bunu tasarım modunda TRUE olarak ayarlayabilir.
 
-## <a name="colecontrolambientusermode"></a><a name="ambientusermode"></a>Coelcontrol:: AmbientUserMode
+## <a name="colecontrolambientusermode"></a><a name="ambientusermode"></a> Coelcontrol:: AmbientUserMode
 
 Kapsayıcının tasarım modunda mı yoksa kullanıcı modunda mı olduğunu belirler.
 
@@ -777,7 +777,7 @@ Kapsayıcı Kullanıcı modundaysa sıfır dışında; Aksi takdirde 0 (Tasarım
 
 Örneğin, bir kapsayıcı bunu tasarım modunda FALSE olarak ayarlayabilir.
 
-## <a name="colecontrolboundpropertychanged"></a><a name="boundpropertychanged"></a>Coelcontrol:: BoundPropertyChanged
+## <a name="colecontrolboundpropertychanged"></a><a name="boundpropertychanged"></a> Coelcontrol:: BoundPropertyChanged
 
 Bağlanan Özellik değerinin değiştiğini bildirir.
 
@@ -794,7 +794,7 @@ Denetimin bağlantılı özelliğinin dağıtım KIMLIĞI.
 
 Bu, değişikliğin özellik kümesi yöntemiyle yapılmaması durumunda bile, özelliğin değeri her değiştiğinde çağrılmalıdır. Üye değişkenleriyle eşlenen bağlantılı özelliklerin özellikle farkında olun. Bu tür bir üye değişkeni değiştiği zaman `BoundPropertyChanged` çağrılmalıdır.
 
-## <a name="colecontrolboundpropertyrequestedit"></a><a name="boundpropertyrequestedit"></a>COleControl:: Boundpropertyrequestedıt
+## <a name="colecontrolboundpropertyrequestedit"></a><a name="boundpropertyrequestedit"></a> COleControl:: Boundpropertyrequestedıt
 
 `IPropertyNotifySink`Denetim tarafından sunulan bir bağlantılı özellik değerini değiştirmek için arabiriminden izin ister.
 
@@ -815,7 +815,7 @@ Değişikliğe izin verildiğinde sıfır dışı; Aksi takdirde 0. Varsayılan 
 
 İzin reddedilirse, denetimin özelliğin değeri değişikliğine izin vermemelidir. Bu, özellik değerini değiştirmeye çalıştı eylemi yok sayarak veya hata vererek yapılabilir.
 
-## <a name="colecontrolclienttoparent"></a><a name="clienttoparent"></a>Coelcontrol:: ClientToParent
+## <a name="colecontrolclienttoparent"></a><a name="clienttoparent"></a> Coelcontrol:: ClientToParent
 
 *PPoint* koordinatlarını üst koordinatlara çevirir.
 
@@ -837,7 +837,7 @@ Kapsayıcı içindeki OLE denetiminin sınırlarına yönelik işaretçi. İstem
 
 Giriş *pPoint* üzerinde OLE denetiminin (denetimin istemci alanının sol üst köşesi) istemci alanının kaynağına göre belirlenir. Çıkış *pPoint* üzerinde, üst öğenin (kapsayıcının sol üst köşesi) kaynağına göre belirlenir.
 
-## <a name="colecontrolclipcaretrect"></a><a name="clipcaretrect"></a>Coelcontrol:: ClipCaretRect
+## <a name="colecontrolclipcaretrect"></a><a name="clipcaretrect"></a> Coelcontrol:: ClipCaretRect
 
 Tamamen veya kısmen çakışan, opak nesneler tarafından kapsanacak bir giriş işareti dikdörtgeni ayarlar.
 
@@ -862,7 +862,7 @@ Penceresiz bir nesne, bir giriş işaretinin, örtüşen nesneler tarafından k�
 
 Giriş işareti oluşturan nesneler, giriş işareti dikdörtgenini öğesine göndermesi `ClipCaretRect` ve giriş işareti için ayarlanmış dikdörtgeni kullanması gerekir. Giriş işareti tamamen gizliyse, bu yöntem FALSE döndürür ve bu durumda giriş işaretinin hiç gösterilmemelidir.
 
-## <a name="colecontrolcolecontrol"></a><a name="colecontrol"></a>Coelcontrol:: Coelcontrol
+## <a name="colecontrolcolecontrol"></a><a name="colecontrol"></a> Coelcontrol:: Coelcontrol
 
 Bir `COleControl` nesnesi oluşturur.
 
@@ -874,7 +874,7 @@ COleControl();
 
 Bu işlev normalde doğrudan çağrılmaz. Bunun yerine OLE denetimi genellikle kendi sınıf fabrikası tarafından oluşturulur.
 
-## <a name="colecontrolcontrolinfochanged"></a><a name="controlinfochanged"></a>Coelcontrol:: ControlInfoChanged
+## <a name="colecontrolcontrolinfochanged"></a><a name="controlinfochanged"></a> Coelcontrol:: ControlInfoChanged
 
 Denetim tarafından desteklenen bir anımsatıcı kümesi değiştiğinde bu işlevi çağırın.
 
@@ -886,7 +886,7 @@ void ControlInfoChanged();
 
 Bu bildirimin alınması sırasında, denetimin kapsayıcısı bir [IOleControl:: Getcontrolinınfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo)çağrısı yaparak yeni bir anımsatıcı kümesini edinir. Kapsayıcının bu bildirime yanıt vermek için gerekli olmadığına unutmayın.
 
-## <a name="colecontroldisplayerror"></a><a name="displayerror"></a>Coelcontrol::D isplayError
+## <a name="colecontroldisplayerror"></a><a name="displayerror"></a> Coelcontrol::D isplayError
 
 Stok hatası olayı işlendikten sonra Framework tarafından çağırılır (olay işleyicisi hatanın görüntülenmesini gizlemedikçe).
 
@@ -922,7 +922,7 @@ Varsayılan davranış, *lpszDescription*içinde yer alan hatanın açıklaması
 
 Hataların nasıl görüntülendiğini özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="colecontroldoclick"></a><a name="doclick"></a>Coelcontrol::D Otıkla
+## <a name="colecontroldoclick"></a><a name="doclick"></a> Coelcontrol::D Otıkla
 
 Denetimde fare tıklaması eyleminin benzetimini yapar.
 
@@ -936,7 +936,7 @@ Geçersiz kılınabilir `COleControl::OnClick` üye işlevi çağrılır ve dene
 
 Bu işlev, `COleControl` DoClick adlı bir stok yöntemi olarak temel sınıf tarafından desteklenir. Daha fazla bilgi için bkz. [ActiveX denetimleri: Yöntemler](../../mfc/mfc-activex-controls-methods.md).
 
-## <a name="colecontroldopropexchange"></a><a name="dopropexchange"></a>Coelcontrol::D oPropExchange
+## <a name="colecontroldopropexchange"></a><a name="dopropexchange"></a> Coelcontrol::D oPropExchange
 
 Bir akış veya özellik kümesi gibi kalıcı bir depolama gösteriminden bir denetim yüklenirken veya bir denetim depolarken, Framework tarafından çağırılır.
 
@@ -955,7 +955,7 @@ Bu işlev normalde, bir OLE denetiminin belirli kullanıcı tanımlı özellikle
 
 OLE denetim projesini oluşturmak için Denetim Sihirbazı kullanılmışsa, bu işlevin geçersiz kılınan sürümü tarafından desteklenen stok özellikleri `COleControl` , temel sınıf işlevine yapılan bir çağrı ile serileştirilir `COleControl::DoPropExchange` . OLE denetiinizde Kullanıcı tanımlı özellikler eklerken, yeni özelliklerinizi seri hale getirmek için bu işlevi değiştirmeniz gerekir. Serileştirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: serileştirme](../../mfc/mfc-activex-controls-serializing.md).
 
-## <a name="colecontroldosuperclasspaint"></a><a name="dosuperclasspaint"></a>Coelcontrol::D oSuperclassPaint
+## <a name="colecontroldosuperclasspaint"></a><a name="dosuperclasspaint"></a> Coelcontrol::D oSuperclassPaint
 
 Bir Windows denetiminden alt sınıflanmış bir OLE denetimini yeniden çizer.
 
@@ -979,7 +979,7 @@ Etkin olmayan bir OLE denetiminin boyamayı düzgün şekilde işlemek için bu 
 
 Bu işlev hakkında daha fazla bilgi ve bir Windows denetimini altsınıflama için bkz. [ActiveX denetimleri: altsınıflama a Windows Control](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
-## <a name="colecontroldrawcontent"></a><a name="drawcontent"></a>Coelcontrol::D rawContent
+## <a name="colecontroldrawcontent"></a><a name="drawcontent"></a> Coelcontrol::D rawContent
 
 Denetimin görünümünün güncelleştirilmesi gerektiğinde Framework tarafından çağırılır.
 
@@ -1001,7 +1001,7 @@ Cihaz bağlamı işaretçisi.
 
 Bu işlev doğrudan geçersiz kılınabilir `OnDraw` işlevini çağırır.
 
-## <a name="colecontroldrawmetafile"></a><a name="drawmetafile"></a>Coelcontrol::D rawMetafile
+## <a name="colecontroldrawmetafile"></a><a name="drawmetafile"></a> Coelcontrol::D rawMetafile
 
 Meta dosyası cihaz bağlamı kullanılırken Framework tarafından çağırılır.
 
@@ -1019,7 +1019,7 @@ Meta dosyası cihaz bağlamına yönelik işaretçi.
 *RC*<br/>
 Çizilecek dikdörtgen alan.
 
-## <a name="colecontrolenablesimpleframe"></a><a name="enablesimpleframe"></a>Coelcontrol:: EnableSimpleFrame
+## <a name="colecontrolenablesimpleframe"></a><a name="enablesimpleframe"></a> Coelcontrol:: EnableSimpleFrame
 
 OLE denetimi için basit çerçeve özelliğini sunar.
 
@@ -1031,7 +1031,7 @@ void EnableSimpleFrame();
 
 Bu özellik, bir denetimin diğer denetimlerin görsel kapsamayı desteklemesini sağlar, ancak gerçek OLE kapsamaz. Bir örnek, içinde birkaç denetim içeren bir grup kutusudur. Bu denetimler OLE içermez, ancak aynı grup kutusunda yer alır.
 
-## <a name="colecontrolexchangeextent"></a><a name="exchangeextent"></a>Coelcontrol:: Exchangeınfo
+## <a name="colecontrolexchangeextent"></a><a name="exchangeextent"></a> Coelcontrol:: Exchangeınfo
 
 Denetimin kapsamının durumunu seri hale getirir veya başlatır (kendi boyutları HIMETRIK birimlerde).
 
@@ -1052,7 +1052,7 @@ BOOL ExchangeExtent(CPropExchange* pPX);
 
 Bu işlev, normalde öğesinin varsayılan uygulamasıyla çağrılır `COleControl::DoPropExchange` .
 
-## <a name="colecontrolexchangestockprops"></a><a name="exchangestockprops"></a>Cotacontrol:: ExchangeStockProps
+## <a name="colecontrolexchangestockprops"></a><a name="exchangestockprops"></a> Cotacontrol:: ExchangeStockProps
 
 Denetimin stok özelliklerinin durumunu seri hale getirir veya başlatır.
 
@@ -1069,7 +1069,7 @@ void ExchangeStockProps(CPropExchange* pPX);
 
 Bu işlev, normalde öğesinin varsayılan uygulamasıyla çağrılır `COleControl::DoPropExchange` .
 
-## <a name="colecontrolexchangeversion"></a><a name="exchangeversion"></a>Coelcontrol:: ExchangeVersion
+## <a name="colecontrolexchangeversion"></a><a name="exchangeversion"></a> Coelcontrol:: ExchangeVersion
 
 Bir denetimin sürüm bilgilerinin durumunu seri hale getirir veya başlatır.
 
@@ -1101,7 +1101,7 @@ Genellikle, bu, denetimin geçersiz kılması tarafından çağrılan ilk işlev
 
 Kalıcılık ve sürüm oluşturma hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: serileştirme](../../mfc/mfc-activex-controls-serializing.md).
 
-## <a name="colecontrolfireclick"></a><a name="fireclick"></a>Coelcontrol:: Firetıklama
+## <a name="colecontrolfireclick"></a><a name="fireclick"></a> Coelcontrol:: Firetıklama
 
 Fare etkin bir denetimin üzerinde tıklandığında Framework tarafından çağırılır.
 
@@ -1115,7 +1115,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 Bir tıklama olayının gerçekleşmesini sağlamak için, denetimin olay haritasında bir stok tıklama olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfiredblclick"></a><a name="firedblclick"></a>Coelcontrol:: FireDblClick
+## <a name="colecontrolfiredblclick"></a><a name="firedblclick"></a> Coelcontrol:: FireDblClick
 
 Fare etkin bir denetimin üzerine çift tıklandığında Framework tarafından çağırılır.
 
@@ -1129,7 +1129,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 Bir DblClick olayının otomatik olarak tetikleyeceği için, denetimin olay eşlemesinde bir Stock DblClick olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfireerror"></a><a name="fireerror"></a>Coelcontrol:: FireError
+## <a name="colecontrolfireerror"></a><a name="fireerror"></a> Coelcontrol:: FireError
 
 Stok hatası olayı ateşlenir.
 
@@ -1161,7 +1161,7 @@ OLE denetiminin stok hatası olayının uygulanması bir SCODE değeri kullanır
 
 Bunu onarmak için, denetimdeki SCODE parametresini el ile değiştirin. ODL dosyasını bir **`long`** . Ayrıca, bir SCODE parametresi kullanan herhangi bir özel olay, yöntem veya özellik aynı soruna neden olur.
 
-## <a name="colecontrolfireevent"></a><a name="fireevent"></a>Coelcontrol:: FireEvent
+## <a name="colecontrolfireevent"></a><a name="fireevent"></a> Coelcontrol:: FireEvent
 
 Herhangi bir sayıda isteğe bağlı bağımsız değişkenle, denetiinizden Kullanıcı tanımlı bir olay harekete geçirilir.
 
@@ -1206,7 +1206,7 @@ Genellikle bu işlev doğrudan çağrılmamalıdır. Bunun yerine, denetimin sı
 > [!NOTE]
 > Değişken veri sabitine bir işaretçi sağlayan VTS_FONT ve VTS_PICTURE dışında tüm değişken türleri için ek değişken sabitleri tanımlanmıştır. Bu sabitler VTS_P kuralı kullanılarak adlandırılmaktadır \<CONSTANT-NAME> . Örneğin, VTS_PCOLOR VTS_COLOR sabiti için bir işaretçidir.
 
-## <a name="colecontrolfirekeydown"></a><a name="firekeydown"></a>Coelcontrol:: FireKeyDown
+## <a name="colecontrolfirekeydown"></a><a name="firekeydown"></a> Coelcontrol:: FireKeyDown
 
 Denetim UI etkinken bir anahtara basıldığında Framework tarafından çağırılır.
 
@@ -1236,7 +1236,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 Bir KeyDown olayının otomatik olarak tetikleneceğini denetlemek için, denetimin olay haritasında bir stok KeyDown olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfirekeypress"></a><a name="firekeypress"></a>Coelcontrol:: FireKeyPress
+## <a name="colecontrolfirekeypress"></a><a name="firekeypress"></a> Coelcontrol:: FireKeyPress
 
 Özel denetim kapsayıcı içinde kullanıcı arabirimi etkinken bir tuşa basıldığında ve serbest bırakıldığında Framework tarafından çağırılır.
 
@@ -1257,7 +1257,7 @@ Olayın alıcısı *pnChar*'ı değiştirebilir, örneğin tüm küçük harfli 
 
 Bir KeyPress olayının otomatik olarak tetikleneceğini denetlemek için, denetimin olay haritasında bir stok KeyPress olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfirekeyup"></a><a name="firekeyup"></a>Coelcontrol:: FireKeyUp
+## <a name="colecontrolfirekeyup"></a><a name="firekeyup"></a> Coelcontrol:: FireKeyUp
 
 Özel denetim kapsayıcı içinde kullanıcı arabirimi etkinken bir anahtar serbest bırakıldığında Framework tarafından çağırılır.
 
@@ -1287,7 +1287,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 Bir KeyUp olayının otomatik olarak tetikleyeceği için, denetimin olay eşlemesinde bir stok KeyUp olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfiremousedown"></a><a name="firemousedown"></a>Coelcontrol:: Firemouseın
+## <a name="colecontrolfiremousedown"></a><a name="firemousedown"></a> Coelcontrol:: Firemouseın
 
 Bir fare düğmesine etkin bir özel denetimin üzerinde basıldığında Framework tarafından çağırılır.
 
@@ -1331,7 +1331,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 MouseDown olayının otomatik olarak tetikleyeceği için, denetimin olay haritasında bir stok MouseDown olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfiremousemove"></a><a name="firemousemove"></a>Coelcontrol:: FireMouseMove
+## <a name="colecontrolfiremousemove"></a><a name="firemousemove"></a> Coelcontrol:: FireMouseMove
 
 İmleç etkin bir özel denetimin üzerine taşındığında Framework tarafından çağırılır.
 
@@ -1375,7 +1375,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 Bir MouseMove olayının oluşmasına yönelik otomatik olarak tetikleyeceği için, denetimin olay haritasında bir hisse senedi MouseMove olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfiremouseup"></a><a name="firemouseup"></a>Coelcontrol:: FireMouseUp
+## <a name="colecontrolfiremouseup"></a><a name="firemouseup"></a> Coelcontrol:: FireMouseUp
 
 Etkin bir özel denetim üzerinde fare düğmesi bırakıldığında Framework tarafından çağırılır.
 
@@ -1419,7 +1419,7 @@ Bu olay özel bir olay olarak tanımlanmışsa, olayın ne zaman harekete geçir
 
 Bir MouseUp olayının otomatik olarak tetikleyeceği için, denetimin olay haritasında bir hisse senedi MouseUp olayı tanımlanmış olmalıdır.
 
-## <a name="colecontrolfirereadystatechange"></a><a name="firereadystatechange"></a>Coelcontrol:: FireReadyStateChange
+## <a name="colecontrolfirereadystatechange"></a><a name="firereadystatechange"></a> Coelcontrol:: FireReadyStateChange
 
 Denetimin geçerli değeri olan bir olay harekete geçirilir.
 
@@ -1431,7 +1431,7 @@ void FireReadyStateChange();
 
 Ready durumu aşağıdaki değerlerden biri olabilir:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |READYSTATE_UNINITIALIZED|Varsayılan başlatma durumu|
 |READYSTATE_LOADING|Denetim şu anda özelliklerini yüklüyor|
@@ -1443,7 +1443,7 @@ Denetimin geçerli hazır olma durumunu öğrenmek için [GetReadyState](#getrea
 
 [InternalSetReadyState](#internalsetreadystate) , hazırlama durumunu sağlanan değere değiştirir ve ardından çağırır `FireReadyStateChange` .
 
-## <a name="colecontrolgetactivationpolicy"></a><a name="getactivationpolicy"></a>Coelcontrol:: GetActivationPolicy
+## <a name="colecontrolgetactivationpolicy"></a><a name="getactivationpolicy"></a> Coelcontrol:: GetActivationPolicy
 
 Arabirimi destekleyen bir denetimin varsayılan etkinleştirme davranışını değiştirir `IPointerInactive` .
 
@@ -1455,7 +1455,7 @@ virtual DWORD GetActivationPolicy();
 
 POINTERıNACTıVE Numaralandırmadaki bayrakların birleşimi. Olası bayraklar şunlardır:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |POINTERINACTIVE_ACTIVATEONENTRY|Fare fare taşıma işlemi sırasında girildiğinde nesne yerinde etkinleştirilmelidir.|
 |POINTERINACTIVE_DEACTIVATEONLEAVE|Fare, fare taşıma işlemi sırasında nesneyi terk ettiğinde, nesne devre dışı bırakılmalıdır.|
@@ -1485,7 +1485,7 @@ Arabirimin etkinleştirilmesi `IPointerInactive` genellikle denetimin, fare ilet
 
 [!code-cpp[NVC_MFCAxCtl#10](../../mfc/reference/codesnippet/cpp/colecontrol-class_2.cpp)]
 
-## <a name="colecontrolgetambientproperty"></a><a name="getambientproperty"></a>Coelcontrol:: Getambentproperty
+## <a name="colecontrolgetambientproperty"></a><a name="getambientproperty"></a> Coelcontrol:: Getambentproperty
 
 Kapsayıcının çevresel özelliğinin değerini alır.
 
@@ -1530,7 +1530,7 @@ BOOL GetAmbientProperty(
 
 İşlevlerin [AmbientBackColor](#ambientbackcolor) ve [AmbientFont](#ambientfont)gibi ortak çevresel özellikler için zaten sağlandığını unutmayın.
 
-## <a name="colecontrolgetappearance"></a><a name="getappearance"></a>Coelcontrol:: GetAppearance
+## <a name="colecontrolgetappearance"></a><a name="getappearance"></a> Coelcontrol:: GetAppearance
 
 Denetiminizin hisse senedi görünümü özelliğinin get işlevini uygular.
 
@@ -1542,7 +1542,7 @@ short GetAppearance ();
 
 Dönüş değeri **`short`** , başarılı olursa geçerli görünüm ayarını (VT_I2) değeri olarak belirtir. Denetimin görünümü düz ise ve denetimin görünümü 3B ise, bu değer sıfırdır.
 
-## <a name="colecontrolgetbackcolor"></a><a name="getbackcolor"></a>Coelcontrol:: GetBackColor
+## <a name="colecontrolgetbackcolor"></a><a name="getbackcolor"></a> Coelcontrol:: GetBackColor
 
 Denetiminizin Stock BackColor özelliğinin get işlevini uygular.
 
@@ -1554,7 +1554,7 @@ OLE_COLOR GetBackColor();
 
 Dönüş değeri, başarılı olursa OLE_COLOR değeri olarak geçerli arka plan rengini belirtir. Bu değer, çağrısı olan bir COLORREF değerine çevrilebilir `TranslateColor` .
 
-## <a name="colecontrolgetborderstyle"></a><a name="getborderstyle"></a>Coelcontrol:: GetBorderStyle
+## <a name="colecontrolgetborderstyle"></a><a name="getborderstyle"></a> Coelcontrol:: GetBorderStyle
 
 Denetiminizin Stock BorderStyle özelliğinin get işlevini uygular.
 
@@ -1566,7 +1566,7 @@ short GetBorderStyle();
 
 denetimin normal bir kenarlığı varsa 1. Denetimin kenarlığı yoksa 0.
 
-## <a name="colecontrolgetcapture"></a><a name="getcapture"></a>Coelcontrol:: GetCapture
+## <a name="colecontrolgetcapture"></a><a name="getcapture"></a> Coelcontrol:: GetCapture
 
 `COleControl`Nesnenin fare yakalamasına sahip olup olmadığını belirler.
 
@@ -1584,7 +1584,7 @@ Aksi takdirde, `CWnd` fare yakalama (ile aynı) nesnesini döndürür `CWnd::Get
 
 Etkinleştirilmiş bir penceresiz denetim, [SetCapture](#setcapture) çağrıldığında fare yakalamayı alır.
 
-## <a name="colecontrolgetclassid"></a><a name="getclassid"></a>Coelcontrol:: GetClassID
+## <a name="colecontrolgetclassid"></a><a name="getclassid"></a> Coelcontrol:: GetClassID
 
 Denetimin OLE sınıf KIMLIĞINI almak için Framework tarafından çağırılır.
 
@@ -1605,7 +1605,7 @@ Sınıf KIMLIĞININ konumu işaretçisi.
 
 Genellikle [IMPLEMENT_OLECREATE_EX](class-factories-and-licensing.md#implement_olecreate_ex)tarafından uygulanır.
 
-## <a name="colecontrolgetclientoffset"></a><a name="getclientoffset"></a>Coelcontrol:: GetClientOffset
+## <a name="colecontrolgetclientoffset"></a><a name="getclientoffset"></a> Coelcontrol:: GetClientOffset
 
 Denetimin dikdörtgen alanının sol üst köşesi ile istemci alanının sol üst köşesi arasındaki farkı alır.
 
@@ -1625,7 +1625,7 @@ OLE denetiminin istemci alanının dikey uzaklığa yönelik işaretçi.
 
 OLE denetiminin kapsayıcısı içinde dikdörtgen bir alanı vardır. Denetimin istemci alanı, kenarlıkları ve kaydırma çubuklarını dışlayarak denetim alanıdır. Tarafından alınan fark, `GetClientOffset` denetimin dikdörtgen alanının sol üst köşesi ile istemci alanının sol üst köşesi arasındaki farktır. Denetiminizin standart Kenarlıklar ve kaydırma çubukları dışında istemci olmayan öğeleri varsa, sapmayı belirtmek için bu üye işlevini geçersiz kılın.
 
-## <a name="colecontrolgetclientrect"></a><a name="getclientrect"></a>Coelcontrol:: GetClientRect
+## <a name="colecontrolgetclientrect"></a><a name="getclientrect"></a> Coelcontrol:: GetClientRect
 
 Denetimin istemci alanının boyutunu alır.
 
@@ -1638,7 +1638,7 @@ virtual void GetClientRect(LPRECT lpRect) const;
 *lpRect*<br/>
 `RECT`Penceresiz denetimin istemci alanının boyutlarını içeren bir yapıya yönelik işaretçi; diğer bir deyişle, denetimin boyutu eksi Pencere kenarlıkları, çerçeveler, kaydırma çubukları vb. *LpRect* parametresi, konumunu değil, denetimin istemci dikdörtgeninin boyutunu gösterir.
 
-## <a name="colecontrolgetclientsite"></a><a name="getclientsite"></a>Coelcontrol:: GetClientSite
+## <a name="colecontrolgetclientsite"></a><a name="getclientsite"></a> Coelcontrol:: GetClientSite
 
 Kapsayıcısı içindeki geçerli istemci sitesine yönelik bir nesneyi sorgular.
 
@@ -1654,7 +1654,7 @@ Kendi kapsayıcısında denetimin geçerli istemci sitesine yönelik bir işaret
 
 Döndürülen işaretçi bir örneğine işaret eder `IOleClientSite` . `IOleClientSite`Kapsayıcılarla uygulanan arabirim, nesnenin bağlamı görünümüdür: belge, depolama alanı, Kullanıcı arabirimi ve diğer kaynakları alır.
 
-## <a name="colecontrolgetcontrolflags"></a><a name="getcontrolflags"></a>Coelcontrol:: GetControlFlags
+## <a name="colecontrolgetcontrolflags"></a><a name="getcontrolflags"></a> Coelcontrol:: GetControlFlags
 
 Denetim bayrağı ayarlarını alır.
 
@@ -1681,7 +1681,7 @@ enum ControlFlags {
 
 Varsayılan olarak, `GetControlFlags` döndürür `fastBeginPaint | clipPaintDC` .
 
-|||
+|Ad|Açıklama|
 |-|-|
 |`fastBeginPaint`|Ayarlanırsa, [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) API 'SI yerine OLE denetimleri için uyarlanmış bir BEGIN-Paint işlevi kullanır (varsayılan olarak ayarlanır).|
 |`clipPaintDC`|Ayarlanmamışsa, tarafından yapılan çağrıyı devre dışı bırakır `IntersectClipRect` `COleControl` ve küçük bir avantaj avantajı elde edin. Penceresiz etkinleştirme kullanıyorsanız, bayrağın hiçbir etkisi yoktur.|
@@ -1692,7 +1692,7 @@ Varsayılan olarak, `GetControlFlags` döndürür `fastBeginPaint | clipPaintDC`
 
 `GetControlFlags`OLE denetimlerinin ve diğer iyileştirmeler hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
 
-## <a name="colecontrolgetcontrolsize"></a><a name="getcontrolsize"></a>Coelcontrol:: GetControlSize
+## <a name="colecontrolgetcontrolsize"></a><a name="getcontrolsize"></a> Coelcontrol:: GetControlSize
 
 OLE denetim penceresinin boyutunu alır.
 
@@ -1714,7 +1714,7 @@ Denetimin yüksekliğini piksel cinsinden belirtir.
 
 Denetim pencereleri için tüm koordinatların denetimin sol üst köşesine göre olduğunu unutmayın.
 
-## <a name="colecontrolgetdc"></a><a name="getdc"></a>Coelcontrol:: GetDC
+## <a name="colecontrolgetdc"></a><a name="getdc"></a> Coelcontrol:: GetDC
 
 Kendi kapsayıcısından ekran (veya uyumlu) cihaz bağlamı almak için penceresiz bir nesne sağlar.
 
@@ -1744,9 +1744,9 @@ Başarılı olursa kapsayıcı istemci alanı için görüntü aygıtı bağlam�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyadıktan sonra bağlamı serbest bırakmak için [ReleaseDC](#releasedc) üye işlevinin çağrılması gerekir. Çağrılırken `GetDC` nesneler, kendi istemci koordinatlarına eklemek istedikleri dikdörtgenden geçer. `GetDC`Bunları kapsayıcı istemci alanının koordinatlarına dönüştürür. Nesne, kendi istemci alanı dikdörtgeninden daha büyük olan ve [GetClientRect](#getclientrect)ile alınabilecek istenen bir çizim dikdörtgeni istememelidir. Bu, nesnelerin, beklenen yerde yanlışlıkla çizimini önler.
+Boyadıktan sonra bağlamı serbest bırakmak için [ReleaseDC](#releasedc) üye işlevinin çağrılması gerekir. Çağrılırken `GetDC` nesneler, kendi istemci koordinatlarına eklemek istedikleri dikdörtgenden geçer. `GetDC` Bunları kapsayıcı istemci alanının koordinatlarına dönüştürür. Nesne, kendi istemci alanı dikdörtgeninden daha büyük olan ve [GetClientRect](#getclientrect)ile alınabilecek istenen bir çizim dikdörtgeni istememelidir. Bu, nesnelerin, beklenen yerde yanlışlıkla çizimini önler.
 
-## <a name="colecontrolgetenabled"></a><a name="getenabled"></a>Coelcontrol:: GetEnabled
+## <a name="colecontrolgetenabled"></a><a name="getenabled"></a> Coelcontrol:: GetEnabled
 
 Denetimin stok etkin özelliğinin get işlevini uygular.
 
@@ -1758,7 +1758,7 @@ BOOL GetEnabled();
 
 Denetim etkinse sıfır dışı; Aksi takdirde 0.
 
-## <a name="colecontrolgetextendedcontrol"></a><a name="getextendedcontrol"></a>Coelcontrol:: Getbdedcontrol
+## <a name="colecontrolgetextendedcontrol"></a><a name="getextendedcontrol"></a> Coelcontrol:: Getbdedcontrol
 
 Genişletilmiş bir özellikler kümesiyle denetimi temsil eden kapsayıcı tarafından tutulan bir nesneye yönelik bir işaretçi alır.
 
@@ -1776,7 +1776,7 @@ Bu nesne, arabirimi aracılığıyla yönetilebilir `IDispatch` . Ayrıca `Query
 
 Bu işlevi çağıran işlev, nesne ile işiniz bittiğinde işaretçiyi serbest bırakmaktan sorumludur. Kapsayıcının bu nesneyi desteklemek için gerekli olmadığına unutmayın.
 
-## <a name="colecontrolgetfocus"></a><a name="getfocus"></a>Coelcontrol:: GetFocus
+## <a name="colecontrolgetfocus"></a><a name="getfocus"></a> Coelcontrol:: GetFocus
 
 `COleControl`Nesnenin odağa sahip olup olmadığını belirler.
 
@@ -1794,7 +1794,7 @@ Aksi takdirde, `CWnd` odağa sahip olan nesneyi döndürür (ile aynı `CWnd::Ge
 
 Etkin bir penceresiz denetim, [SetFocus](#setfocus) çağrıldığında odağı alır.
 
-## <a name="colecontrolgetfont"></a><a name="getfont"></a>Coelcontrol:: GetFont
+## <a name="colecontrolgetfont"></a><a name="getfont"></a> Coelcontrol:: GetFont
 
 Hisse senedi yazı tipi özelliğinin get işlevini uygular.
 
@@ -1810,7 +1810,7 @@ Denetimin stok yazı tipi özelliğinin yazı tipi gönderme arabirimine yöneli
 
 Çağıranın, tamamlandığında nesneyi serbest bırakmasını unutmayın. Denetim uygulamasının içinde, `InternalGetFont` denetimin stok yazı tipi nesnesine erişmek için kullanın. Denetiminizdeki yazı tiplerini kullanma hakkında daha fazla bilgi için [ActiveX denetimleri: ActiveX denetiminde yazı tiplerini kullanma](../../mfc/mfc-activex-controls-using-fonts.md)makalesine bakın.
 
-## <a name="colecontrolgetfonttextmetrics"></a><a name="getfonttextmetrics"></a>Coelcontrol:: Getfonttextölçümleri
+## <a name="colecontrolgetfonttextmetrics"></a><a name="getfonttextmetrics"></a> Coelcontrol:: Getfonttextölçümleri
 
 Denetimin sahip olduğu herhangi bir nesne için metin ölçümlerini ölçer `CFontHolder` .
 
@@ -1834,7 +1834,7 @@ Bu tür bir yazı tipi [Coelcontrol:: SelectFontObject](#selectfontobject) işle
 
 `TEXTMETRIC` [SelectFontObject](#selectfontobject) işlevi çağrıldığında varsayılan yazı tipinin yapısı yenilenir. `GetFontTextMetrics`Yalnızca, sağladığı bilgilerin geçerli olduğundan emin olmak için stok yazı tipi özelliğini seçtikten sonra çağrı yapmalısınız.
 
-## <a name="colecontrolgetforecolor"></a><a name="getforecolor"></a>Coelcontrol:: GetForeColor
+## <a name="colecontrolgetforecolor"></a><a name="getforecolor"></a> Coelcontrol:: GetForeColor
 
 Hisse senedi ForeColor özelliğinin get işlevini uygular.
 
@@ -1846,7 +1846,7 @@ OLE_COLOR GetForeColor();
 
 Dönüş değeri, başarılı olursa OLE_COLOR değeri olarak geçerli ön plan rengini belirtir. Bu değer, çağrısı olan bir [colorref](/windows/win32/gdi/colorref) değerine çevrilebilir `TranslateColor` .
 
-## <a name="colecontrolgethwnd"></a><a name="gethwnd"></a>Coelcontrol:: GetHwnd
+## <a name="colecontrolgethwnd"></a><a name="gethwnd"></a> Coelcontrol:: GetHwnd
 
 Stock hWnd özelliğinin get işlevini uygular.
 
@@ -1858,7 +1858,7 @@ OLE_HANDLE GetHwnd();
 
 OLE denetiminin pencere tutamacı varsa; Aksi takdirde NULL.
 
-## <a name="colecontrolgetmessagestring"></a><a name="getmessagestring"></a>Coelcontrol:: GetMessageString
+## <a name="colecontrolgetmessagestring"></a><a name="getmessagestring"></a> Coelcontrol:: GetMessageString
 
 *NID*tarafından tanımlanan menü öğesinin amacını açıklayan kısa bir dize almak için Framework tarafından çağırılır.
 
@@ -1880,7 +1880,7 @@ Bir dizenin döndürüleceği bir [CString](../../atl-mfc-shared/reference/cstri
 
 Bu, menü öğesi vurgulandığında durum çubuğunda görüntülenmek üzere bir ileti almak için kullanılabilir. Varsayılan uygulama *NID*tarafından tanımlanan bir dize kaynağını yüklemeye çalışır.
 
-## <a name="colecontrolgetnotsupported"></a><a name="getnotsupported"></a>Coelcontrol:: GetNotSupported
+## <a name="colecontrolgetnotsupported"></a><a name="getnotsupported"></a> Coelcontrol:: GetNotSupported
 
 Kullanıcının Kullanıcı tarafından bir denetimin özellik değerine erişimini engeller.
 
@@ -1892,7 +1892,7 @@ void GetNotSupported();
 
 Bu işlevi, denetimin kullanıcı tarafından özelliğin alımı desteklenmediği herhangi bir özelliğin get işlevinin yerine çağırın. Bir örnek, salt yazılır bir özelliktir.
 
-## <a name="colecontrolgetreadystate"></a><a name="getreadystate"></a>Coelcontrol:: GetReadyState
+## <a name="colecontrolgetreadystate"></a><a name="getreadystate"></a> Coelcontrol:: GetReadyState
 
 Denetimin hazırlık durumunu döndürür.
 
@@ -1904,7 +1904,7 @@ long GetReadyState();
 
 Aşağıdaki değerlerden biri olan denetimin hazır olma durumu:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |READYSTATE_UNINITIALIZED|Varsayılan başlatma durumu|
 |READYSTATE_LOADING|Denetim şu anda özelliklerini yüklüyor|
@@ -1916,7 +1916,7 @@ Aşağıdaki değerlerden biri olan denetimin hazır olma durumu:
 
 Çoğu basit denetim, YÜKLENMIŞ ve ETKILEŞIMLI arasında ayrım yapmak zorunda değildir. Ancak, veri yolu özelliklerini destekleyen denetimler, zaman uyumsuz olarak en az bir veri alınana kadar etkileşimli olmaya hazırlanmayabilir. Denetim, mümkün olan en kısa sürede etkileşimli olmaya çalışır.
 
-## <a name="colecontrolgetrectincontainer"></a><a name="getrectincontainer"></a>Coelcontrol:: Getrecıncontainer
+## <a name="colecontrolgetrectincontainer"></a><a name="getrectincontainer"></a> Coelcontrol:: Getrecıncontainer
 
 , Cihaz birimlerinde ifade edilen, kapsayıcıya göre denetim dikdörtgeninin koordinatlarını edinir.
 
@@ -1937,7 +1937,7 @@ Denetim yerinde etkin ise sıfır dışı; Aksi takdirde 0.
 
 Dikdörtgen yalnızca denetimin yerinde etkin olması durumunda geçerlidir.
 
-## <a name="colecontrolgetstocktextmetrics"></a><a name="getstocktextmetrics"></a>Coelcontrol:: GetStockTextMetrics
+## <a name="colecontrolgetstocktextmetrics"></a><a name="getstocktextmetrics"></a> Coelcontrol:: GetStockTextMetrics
 
 [SelectStockFont](#selectstockfont) işleviyle seçilebilen denetimin hisse senedi yazı tipi özelliği için metin ölçümlerini ölçer.
 
@@ -1956,7 +1956,7 @@ void GetStockTextMetrics(LPTEXTMETRIC lptm);
 
 `TEXTMETRIC`Varsayılan yazı tipinin yapısı, `SelectStockFont` işlev çağrıldığında yenilenir. Bu işlevi yalnızca, sağladığı bilgilerin geçerli olduğu güvence altına almak için stok yazı tipini seçtikten sonra çağırmanız gerekir.
 
-## <a name="colecontrolgettext"></a><a name="gettext"></a>Coelcontrol:: GetText
+## <a name="colecontrolgettext"></a><a name="gettext"></a> Coelcontrol:: GetText
 
 Hisse senedi metninin veya açıklamalı alt yazı özelliğinin get işlevini uygular.
 
@@ -1975,7 +1975,7 @@ Denetim metni dizesinin geçerli değeri veya hiçbir dize yoksa sıfır uzunluk
 
 Bu işlevin çağıranın, `SysFreeString` kaynağı serbest bırakmak için döndürülen dizeyi çağırması gerektiğini unutmayın. Denetim uygulamasının içinde, `InternalGetText` denetimin hisse senedi metnine veya açıklamalı alt yazı özelliğine erişmek için kullanın.
 
-## <a name="colecontrolgetwindowlessdroptarget"></a><a name="getwindowlessdroptarget"></a>Coelcontrol:: GetWindowlessDropTarget
+## <a name="colecontrolgetwindowlessdroptarget"></a><a name="getwindowlessdroptarget"></a> Coelcontrol:: GetWindowlessDropTarget
 
 `GetWindowlessDropTarget`BIR OLE sürükle ve bırak işleminin hedefi olması için penceresiz bir denetim istediğinizde geçersiz kılın.
 
@@ -1989,11 +1989,11 @@ Nesnenin arabirimine yönelik işaretçi `IDropTarget` . Bir penceresi olmadığ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlaması gerekir. Örneğin:
+Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlaması gerekir. Örnek:
 
 [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]
 
-## <a name="colecontrolinitializeiids"></a><a name="initializeiids"></a>Coelcontrol:: ınitialdııds
+## <a name="colecontrolinitializeiids"></a><a name="initializeiids"></a> Coelcontrol:: ınitialdııds
 
 Denetimin kullanacağı IIDS 'in temel sınıfına bildirir.
 
@@ -2015,7 +2015,7 @@ Denetimin olay arabiriminin arabirim KIMLIĞINE yönelik işaretçi.
 
 Denetiminizin kullanacağı arabirim kimliklerinin temel sınıfını bilgilendirmek için denetimin oluşturucusunda bu işlevi çağırın.
 
-## <a name="colecontrolinternalgetfont"></a><a name="internalgetfont"></a>Coelcontrol:: InternalGetFont
+## <a name="colecontrolinternalgetfont"></a><a name="internalgetfont"></a> Coelcontrol:: InternalGetFont
 
 Denetiminizin hisse senedi yazı tipi özelliğine erişir
 
@@ -2027,7 +2027,7 @@ CFontHolder& InternalGetFont();
 
 Hisse senedi yazı tipi nesnesini içeren bir [Cfontheski](../../mfc/reference/cfontholder-class.md) nesnesine başvuru.
 
-## <a name="colecontrolinternalgettext"></a><a name="internalgettext"></a>Coelcontrol:: InternalGetText
+## <a name="colecontrolinternalgettext"></a><a name="internalgettext"></a> Coelcontrol:: InternalGetText
 
 Denetiminizin hisse senedi metnine veya açıklamalı alt yazı özelliğine erişir.
 
@@ -2039,7 +2039,7 @@ const CString& InternalGetText();
 
 Denetim metni dizesine bir başvuru.
 
-## <a name="colecontrolinternalsetreadystate"></a><a name="internalsetreadystate"></a>Coelcontrol:: InternalSetReadyState
+## <a name="colecontrolinternalsetreadystate"></a><a name="internalsetreadystate"></a> Coelcontrol:: InternalSetReadyState
 
 Denetimin hazırlık durumunu ayarlar.
 
@@ -2052,7 +2052,7 @@ void InternalSetReadyState(long lNewReadyState);
 *lNewReadyState*<br/>
 Denetim için ayarlanacak hazırlık durumu, aşağıdaki değerlerden biri:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |READYSTATE_UNINITIALIZED|Varsayılan başlatma durumu|
 |READYSTATE_LOADING|Denetim şu anda özelliklerini yüklüyor|
@@ -2064,7 +2064,7 @@ Denetim için ayarlanacak hazırlık durumu, aşağıdaki değerlerden biri:
 
 Çoğu basit denetim, YÜKLENMIŞ ve ETKILEŞIMLI arasında ayrım yapmak zorunda değildir. Ancak, veri yolu özelliklerini destekleyen denetimler, zaman uyumsuz olarak en az bir veri alınana kadar etkileşimli olmaya hazırlanmayabilir. Denetim, mümkün olan en kısa sürede etkileşimli olmaya çalışır.
 
-## <a name="colecontrolinvalidatecontrol"></a><a name="invalidatecontrol"></a>Coelcontrol:: InvalidateControl
+## <a name="colecontrolinvalidatecontrol"></a><a name="invalidatecontrol"></a> Coelcontrol:: InvalidateControl
 
 Denetimi kendisini yeniden çizmeye zorlar.
 
@@ -2086,7 +2086,7 @@ Güncelleştirme bölgesi işlendiğinde güncelleştirme bölgesi içindeki ark
 
 *LpRect* null değere sahipse tüm denetim yeniden çizilir. *LpRect* null değilse, denetimin geçersiz kılınmadığını kontrol dikdörtgeninin bölümünü gösterir. Denetimin pencere olmadığı veya şu anda etkin olmadığı durumlarda, dikdörtgen yok sayılır ve İstemci sitesinin [ıvısesink:: OnViewChange](/windows/win32/api/objidl/nf-objidl-iadvisesink-onviewchange) üye işlevine bir çağrı yapılır. Veya yerine bu işlevi kullanın `CWnd::InvalidateRect` `InvalidateRect` .
 
-## <a name="colecontrolinvalidatergn"></a><a name="invalidatergn"></a>Cotacontrol:: InvalidateRgn
+## <a name="colecontrolinvalidatergn"></a><a name="invalidatergn"></a> Cotacontrol:: InvalidateRgn
 
 Kapsayıcı penceresinin istemci alanını belirtilen bölge içinde geçersiz kılar.
 
@@ -2108,7 +2108,7 @@ Kapsayıcı içindeki Penceresiz denetimleri yeniden çizmek için bu kullanıla
 
 *Maase* , güncelleştirme bölgesinin herhangi bir bölümü için doğru ise, yalnızca verilen bölümde değil, tüm bölgedeki arka plan silinir.
 
-## <a name="colecontrolisconvertingvbx"></a><a name="isconvertingvbx"></a>Coelcontrol:: IsConvertingVBX
+## <a name="colecontrolisconvertingvbx"></a><a name="isconvertingvbx"></a> Coelcontrol:: IsConvertingVBX
 
 OLE denetiminin özelleşmiş yüklenmesine izin verir.
 
@@ -2134,7 +2134,7 @@ Başka bir durum ise, VBX denetiminizin özel ikili verileri (VBM_SAVEPROPERTY i
 
 Denetim `DoPropExchange` işlevinizde bu koşulu denetleyebilir ve true ise, bu dönüştürmeye özgü yükleme kodunu (örneğin, önceki örnekler) çalıştırabilirsiniz. Denetim dönüştürülemiyorsa, normal yükleme kodunu çalıştırabilirsiniz. Bu özellik yalnızca, VBX karşılıklarından dönüştürülmekte olan denetimler için geçerlidir.
 
-## <a name="colecontrolisinvokeallowed"></a><a name="isinvokeallowed"></a>Coelcontrol:: IsInvokeAllowed
+## <a name="colecontrolisinvokeallowed"></a><a name="isinvokeallowed"></a> Coelcontrol:: IsInvokeAllowed
 
 Otomasyon yöntemi çağrısını mümkün.
 
@@ -2150,7 +2150,7 @@ Denetim başlatılmışsa sıfır dışı; Aksi takdirde 0.
 
 Framework 'ün `IDispatch::Invoke` `IsInvokeAllowed` belirli bir işlevin (tarafından tanımlanan) çağrılabilir olup olmadığını belirleme çağrılarının uygulanması `dispid` . OLE denetimi için varsayılan davranış, Otomasyon yöntemlerinin yalnızca denetimin başlatılmış olması durumunda çağrılmasına izin vermelidir; Ancak, `IsInvokeAllowed` sanal bir işlevdir ve gerekirse (örneğin, denetim bir Otomasyon sunucusu olarak kullanıldığında) geçersiz kılınabilir.
 
-## <a name="colecontrolismodified"></a><a name="ismodified"></a>Coelcontrol:: IsModified
+## <a name="colecontrolismodified"></a><a name="ismodified"></a> Coelcontrol:: IsModified
 
 Denetimin durumunun değiştirilip değiştirilmediğini belirler.
 
@@ -2166,7 +2166,7 @@ Son kaydedildiği tarihten sonra denetimin durumu değiştirilmişse sıfır dı
 
 Bir özellik değeri değiştiğinde bir denetimin durumu değiştirilir.
 
-## <a name="colecontrolisoptimizeddraw"></a><a name="isoptimizeddraw"></a>Coelcontrol:: IsOptimizedDraw
+## <a name="colecontrolisoptimizeddraw"></a><a name="isoptimizeddraw"></a> Coelcontrol:: IsOptimizedDraw
 
 Kapsayıcının geçerli çizim işlemi için iyileştirilmiş çizimi destekleyip desteklemediğini belirler.
 
@@ -2182,7 +2182,7 @@ Kapsayıcı, geçerli çizim işlemi için iyileştirilmiş çizimi destekliyors
 
 İyileştirilmiş çizim destekleniyorsa, çizim tamamlandığında denetim, cihaz bağlamına eski nesneleri (kalemler, fırçalar, yazı tipleri, vb.) seçmemelidir.
 
-## <a name="colecontrolissubclassedcontrol"></a><a name="issubclassedcontrol"></a>Copacontrol:: ısbıo denetimi
+## <a name="colecontrolissubclassedcontrol"></a><a name="issubclassedcontrol"></a> Copacontrol:: ısbıo denetimi
 
 Denetimin bir Windows denetiminin alt sınıfları olup olmadığını anlamak için Framework tarafından çağırılır.
 
@@ -2198,7 +2198,7 @@ Denetim alt sınıflı ise sıfır dışı; Aksi takdirde 0.
 
 Bu işlevi geçersiz kılmalısınız ve OLE denetiminiz bir Windows denetimini alt sınıflara alıyorsa TRUE değerini döndürür.
 
-## <a name="colecontrolload"></a><a name="load"></a>Coelcontrol:: Load
+## <a name="colecontrolload"></a><a name="load"></a> Coelcontrol:: Load
 
 Zaman uyumsuz olarak yüklenen tüm önceki verileri sıfırlar ve denetimin zaman uyumsuz özelliğinin yeni bir yüklemesini başlatır.
 
@@ -2214,7 +2214,7 @@ Zaman uyumsuz denetim özelliğinin mutlak konumuna başvuran yolu içeren bir d
 *Prop*<br/>
 Zaman uyumsuz denetim özelliği uygulayan bir [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) nesnesi.
 
-## <a name="colecontrollockinplaceactive"></a><a name="lockinplaceactive"></a>Cotacontrol:: Lockinplaceactıve
+## <a name="colecontrollockinplaceactive"></a><a name="lockinplaceactive"></a> Cotacontrol:: Lockinplaceactıve
 
 Kapsayıcının denetiminizi devre dışı bırakmasına engel olur.
 
@@ -2235,7 +2235,7 @@ Kilit başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Denetimin her kilitlendiğine, tamamlandığında denetimin bir kilit açma ile eşleştirilmelidir. Yalnızca bir olayı tetiklarken olduğu gibi kısa süreler için denetiminizi kilitlemeniz gerekir.
 
-## <a name="colecontrolonambientpropertychange"></a><a name="onambientpropertychange"></a>Coelcontrol:: OnAmbientPropertyChange
+## <a name="colecontrolonambientpropertychange"></a><a name="onambientpropertychange"></a> Coelcontrol:: OnAmbientPropertyChange
 
 Kapsayıcının çevresel özelliği değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2248,7 +2248,7 @@ virtual void OnAmbientPropertyChange(DISPID dispid);
 *Dı*<br/>
 Değiştirilen çevresel özelliğin gönderim KIMLIĞI veya birden çok özellik değiştiyse DISPID_UNKNOWN.
 
-## <a name="colecontrolonappearancechanged"></a><a name="onappearancechanged"></a>Coelcontrol:: OnAppearanceChanged
+## <a name="colecontrolonappearancechanged"></a><a name="onappearancechanged"></a> Coelcontrol:: OnAppearanceChanged
 
 Hisse senedi görünümü Özellik değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2260,7 +2260,7 @@ virtual void OnAppearanceChanged ();
 
 Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz kılın. Varsayılan uygulama çağrıları `InvalidateControl` .
 
-## <a name="colecontrolonbackcolorchanged"></a><a name="onbackcolorchanged"></a>Coelcontrol:: OnBackColorChanged
+## <a name="colecontrolonbackcolorchanged"></a><a name="onbackcolorchanged"></a> Coelcontrol:: OnBackColorChanged
 
 Hisse senedi BackColor özelliğinin değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2272,7 +2272,7 @@ virtual void OnBackColorChanged();
 
 Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz kılın. Varsayılan uygulama çağrıları `InvalidateControl` .
 
-## <a name="colecontrolonborderstylechanged"></a><a name="onborderstylechanged"></a>Cotacontrol:: OnBorderStyleChanged
+## <a name="colecontrolonborderstylechanged"></a><a name="onborderstylechanged"></a> Cotacontrol:: OnBorderStyleChanged
 
 Stock BorderStyle özelliği değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2286,7 +2286,7 @@ Varsayılan uygulama çağrıları `InvalidateControl` .
 
 Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonclick"></a><a name="onclick"></a>Coelcontrol:: OnClick
+## <a name="colecontrolonclick"></a><a name="onclick"></a> Coelcontrol:: OnClick
 
 Bir fare düğmesine tıklandığında veya DoClick stok yöntemi çağrıldığında Framework tarafından çağırılır.
 
@@ -2311,7 +2311,7 @@ Varsayılan uygulama çağrıları `COleControl::FireClick` .
 
 Varsayılan işlemeyi değiştirmek veya genişletmek için bu üye işlevi geçersiz kılın.
 
-## <a name="colecontrolonclose"></a><a name="onclose"></a>Coelcontrol:: OnClose
+## <a name="colecontrolonclose"></a><a name="onclose"></a> Coelcontrol:: OnClose
 
 Kapsayıcı denetimin işlevini çağırmışsa Framework tarafından çağırılır `IOleControl::Close` .
 
@@ -2334,7 +2334,7 @@ Nesnenin yüklemeden önce kaydedilip kaydedilmeyeceğini belirten bayrak. Geçe
 
 Varsayılan olarak, bir `OnClose` Denetim nesnesini değiştirildiyse ve *dwSaveOption* OLECLOSE_SAVEIFDIRTY ya da OLECLOSE_PROMPTSAVE ise kaydeder.
 
-## <a name="colecontrolondoverb"></a><a name="ondoverb"></a>Coelcontrol:: OnDoVerb
+## <a name="colecontrolondoverb"></a><a name="ondoverb"></a> Coelcontrol:: OnDoVerb
 
 Kapsayıcı üye işlevini çağırdığında Framework tarafından çağırılır `IOleObject::DoVerb` .
 
@@ -2370,7 +2370,7 @@ Varsayılan uygulama ON_OLEVERB ve ON_STDOLEVERB ileti eşleme girdilerini kulla
 
 Fiilin varsayılan işlemesini değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="colecontrolondraw"></a><a name="ondraw"></a>Coelcontrol:: OnDraw
+## <a name="colecontrolondraw"></a><a name="ondraw"></a> Coelcontrol:: OnDraw
 
 Belirtilen sınırlama dikdörtgeninde belirtilen cihaz bağlamı kullanılarak OLE denetimi çizmek için Framework tarafından çağırılır.
 
@@ -2394,9 +2394,9 @@ Denetimin dikdörtgen alanı geçersiz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnDraw`genellikle ekran görüntüleme için çağrılır, ekran cihazı bağlamını *PDC*olarak geçirme. *Rclimitler* parametresi, hedef cihaz bağlamındaki dikdörtgeni tanımlar (geçerli eşleme moduna göre). *Rcgeçersiz* parametresi, geçersiz olan gerçek dikdörtgendir. Bazı durumlarda bu, *Rclimitlerinden*daha küçük bir alan olacaktır.
+`OnDraw` genellikle ekran görüntüleme için çağrılır, ekran cihazı bağlamını *PDC*olarak geçirme. *Rclimitler* parametresi, hedef cihaz bağlamındaki dikdörtgeni tanımlar (geçerli eşleme moduna göre). *Rcgeçersiz* parametresi, geçersiz olan gerçek dikdörtgendir. Bazı durumlarda bu, *Rclimitlerinden*daha küçük bir alan olacaktır.
 
-## <a name="colecontrolondrawmetafile"></a><a name="ondrawmetafile"></a>Coelcontrol:: OnDrawMetafile
+## <a name="colecontrolondrawmetafile"></a><a name="ondrawmetafile"></a> Coelcontrol:: OnDrawMetafile
 
 Belirtilen dosya cihazı bağlamını kullanarak belirtilen sınırlayıcı dikdörtgende OLE denetimi çizmek için Framework tarafından çağırılır.
 
@@ -2418,7 +2418,7 @@ Denetimin dikdörtgen alanı (kenarlık dahil).
 
 Varsayılan uygulama [OnDraw](#ondraw) işlevini çağırır.
 
-## <a name="colecontrolonedit"></a><a name="onedit"></a>Coelcontrol:: OnEdit
+## <a name="colecontrolonedit"></a><a name="onedit"></a> Coelcontrol:: OnEdit
 
 Denetimin UI etkin olmasına neden olur.
 
@@ -2448,11 +2448,11 @@ Kapsayıcıda denetim tarafından kullanılan dikdörtgene yönelik bir işaret�
 
 Bu, denetimin OLEIVERB_UIACTIVATE fiilini çağırma ile aynı etkiye sahiptir.
 
-Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örneğin:
+Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örnek:
 
 [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]
 
-## <a name="colecontrolonenabledchanged"></a><a name="onenabledchanged"></a>Coelcontrol:: Onetkinchanged
+## <a name="colecontrolonenabledchanged"></a><a name="onenabledchanged"></a> Coelcontrol:: Onetkinchanged
 
 Hisse senedi etkin özellik değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2464,7 +2464,7 @@ virtual void OnEnabledChanged();
 
 Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz kılın. Varsayılan uygulama [InvalidateControl](#invalidatecontrol)' i çağırır.
 
-## <a name="colecontrolonenumverbs"></a><a name="onenumverbs"></a>Coelcontrol:: OnEnumVerbs
+## <a name="colecontrolonenumverbs"></a><a name="onenumverbs"></a> Coelcontrol:: OnEnumVerbs
 
 Kapsayıcı üye işlevini çağırdığında Framework tarafından çağırılır `IOleObject::EnumVerbs` .
 
@@ -2487,7 +2487,7 @@ Varsayılan uygulama, ileti eşlemesindeki ON_OLEVERB girdilerini sıralar.
 
 Fiillerin listesinin varsayılan yolunu değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="colecontroloneventadvise"></a><a name="oneventadvise"></a>Coelcontrol:: Oneventadmenlik
+## <a name="colecontroloneventadvise"></a><a name="oneventadvise"></a> Coelcontrol:: Oneventadmenlik
 
 Bir olay işleyicisi OLE denetimine bağlandığında veya bağlantısı kesildiğinde Framework tarafından çağırılır.
 
@@ -2500,7 +2500,7 @@ virtual void OnEventAdvise(BOOL bAdvise);
 *Rozzden*<br/>
 TRUE, bir olay işleyicisinin denetime bağlandığını gösterir. FALSE, bir olay işleyicisinin denetimle bağlantısının kesileceğini gösterir.
 
-## <a name="colecontrolonfontchanged"></a><a name="onfontchanged"></a>Coelcontrol:: OnFontChanged
+## <a name="colecontrolonfontchanged"></a><a name="onfontchanged"></a> Coelcontrol:: OnFontChanged
 
 Hisse senedi yazı tipi özelliği değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2518,7 +2518,7 @@ Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz
 
 [!code-cpp[NVC_MFCAxCtl#6](../../mfc/reference/codesnippet/cpp/colecontrol-class_7.cpp)]
 
-## <a name="colecontrolonforecolorchanged"></a><a name="onforecolorchanged"></a>Cotacontrol:: OnForeColorChanged
+## <a name="colecontrolonforecolorchanged"></a><a name="onforecolorchanged"></a> Cotacontrol:: OnForeColorChanged
 
 Hisse senedi ForeColor özelliği değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -2532,7 +2532,7 @@ Varsayılan uygulama çağrıları `InvalidateControl` .
 
 Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonfreezeevents"></a><a name="onfreezeevents"></a>Coelcontrol:: OnFreezeEvents
+## <a name="colecontrolonfreezeevents"></a><a name="onfreezeevents"></a> Coelcontrol:: OnFreezeEvents
 
 Kapsayıcı çağrılarından sonra Framework tarafından çağırılır `IOleControl::FreezeEvents` .
 
@@ -2551,7 +2551,7 @@ Varsayılan uygulama hiçbir şey yapmaz.
 
 Olay işleme dondurulmuş veya dondurulmamış olduğunda ek davranış istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="colecontrolongetcolorset"></a><a name="ongetcolorset"></a>Coelcontrol:: OnGetColorSet
+## <a name="colecontrolongetcolorset"></a><a name="ongetcolorset"></a> Coelcontrol:: OnGetColorSet
 
 Kapsayıcı üye işlevini çağırdığında Framework tarafından çağırılır `IViewObject::GetColorSet` .
 
@@ -2583,7 +2583,7 @@ Kapsayıcı, OLE denetimi çizmek için gereken tüm renkleri elde etmek için b
 
 Bu isteğin herhangi bir özel işlemini yapmak için bu işlevi geçersiz kılın.
 
-## <a name="colecontrolongetcontrolinfo"></a><a name="ongetcontrolinfo"></a>Coelcontrol:: Ongetcontrolinınfo
+## <a name="colecontrolongetcontrolinfo"></a><a name="ongetcontrolinfo"></a> Coelcontrol:: Ongetcontrolinınfo
 
 Denetimin kapsayıcısı denetim hakkında bilgi talep edildiğinde Framework tarafından çağırılır.
 
@@ -2602,7 +2602,7 @@ Bu bilgiler, birincil olarak denetimin anımsatıcı anahtarlarının bir açık
 
 Denetiminizin anımsatıcı anahtarlarını işlemesi gerekiyorsa bu işlevi geçersiz kılın.
 
-## <a name="colecontrolongetdisplaystring"></a><a name="ongetdisplaystring"></a>Coelcontrol:: OnGetDisplayString
+## <a name="colecontrolongetdisplaystring"></a><a name="ongetdisplaystring"></a> Coelcontrol:: OnGetDisplayString
 
 *DISPID*tarafından tanımlanan özelliğin geçerli değerini temsil eden bir dize almak için Framework tarafından çağırılır.
 
@@ -2628,7 +2628,7 @@ Bir dizenin döndürüleceği bir [CString](../../atl-mfc-shared/reference/cstri
 
 Denetiminizin değeri doğrudan bir dizeye dönüştürülemediği ve özelliğin değerinin kapsayıcı tarafından sağlanan bir özellik tarayıcısında görüntülenmesini istediğiniz bir özelliği varsa, bu işlevi geçersiz kılın.
 
-## <a name="colecontrolongetinplacemenu"></a><a name="ongetinplacemenu"></a>Coelcontrol:: Ongetınplacemenu
+## <a name="colecontrolongetinplacemenu"></a><a name="ongetinplacemenu"></a> Coelcontrol:: Ongetınplacemenu
 
 Denetim, kapsayıcının var olan menüsüyle birleştirilecek menüyü almak için Kullanıcı arabirimi etkinleştirildiğinde Framework tarafından çağırılır.
 
@@ -2644,7 +2644,7 @@ Denetimin menünün tutamacı veya denetim None ise NULL. Varsayılan uygulama N
 
 OLE kaynaklarını birleştirme hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar (OLE)](../../mfc/menus-and-resources-ole.md).
 
-## <a name="colecontrolongetnaturalextent"></a><a name="ongetnaturalextent"></a>Coelcontrol:: OnGetNaturalExtent
+## <a name="colecontrolongetnaturalextent"></a><a name="ongetnaturalextent"></a> Coelcontrol:: OnGetNaturalExtent
 
 Bir kapsayıcının isteğine yanıt olarak Framework tarafından çağırılır `IViewObjectEx::GetNaturalExtent` .
 
@@ -2701,7 +2701,7 @@ Boyutunu başarıyla döndürürse veya ayarladıysanız sıfır dışı; Aksi t
 
 Nesnenin görüntü boyutunu yapıdaki önerilen boyut ve uzatma moduna en yakın şekilde döndürmek için bu işlevi geçersiz kılın `DVEXTENTINFO` . Varsayılan uygulama yanlış döndürür ve boyut üzerinde hiçbir ayarlama yapmaz.
 
-## <a name="colecontrolongetpredefinedstrings"></a><a name="ongetpredefinedstrings"></a>Coelcontrol:: OnGetPredefinedStrings
+## <a name="colecontrolongetpredefinedstrings"></a><a name="ongetpredefinedstrings"></a> Coelcontrol:: OnGetPredefinedStrings
 
 Bir özellik için olası değerleri temsil eden önceden tanımlanmış dizeler kümesini almak için Framework tarafından çağırılır.
 
@@ -2731,7 +2731,7 @@ Dönüş değerleriyle doldurulacak bir DWORD dizisi.
 
 Denetiminizin, dizeler tarafından gösterilebilen olası değerler kümesine sahip bir özelliği varsa, bu işlevi geçersiz kılın. *PStringArray*öğesine eklenen her öğe Için, *Pcookie earray* öğesine karşılık gelen "Cookie" öğesini eklemeniz gerekir. Bu "tanımlama bilgisi" değerleri daha sonra Framework tarafından işleve geçirilemeyebilir `COleControl::OnGetPredefinedValue` .
 
-## <a name="colecontrolongetpredefinedvalue"></a><a name="ongetpredefinedvalue"></a>Cotacontrol:: Ongetpredefineddeğeri
+## <a name="colecontrolongetpredefinedvalue"></a><a name="ongetpredefinedvalue"></a> Cotacontrol:: Ongetpredefineddeğeri
 
 Daha önce bir geçersiz kılma tarafından döndürülen önceden tanımlanmış dizelerin birine karşılık gelen değeri almak için Framework tarafından çağırılır `COleControl::OnGetPredefinedStrings` .
 
@@ -2757,7 +2757,7 @@ Daha önce bir geçersiz kılma tarafından döndürülen bir tanımlama bilgisi
 
 *LpvarOut*içinde bir değer döndürülürse sıfır dışı. Aksi takdirde 0.
 
-## <a name="colecontrolongetviewextent"></a><a name="ongetviewextent"></a>Coelcontrol:: Ongetviewınfo
+## <a name="colecontrolongetviewextent"></a><a name="ongetviewextent"></a> Coelcontrol:: Ongetviewınfo
 
 Bir kapsayıcının [IViewObject2:: GetExtent](/windows/win32/api/oleidl/nf-oleidl-iviewobject2-getextent) isteğine yanıt olarak Framework tarafından çağırılır.
 
@@ -2791,7 +2791,7 @@ Kapsam bilgisi başarıyla döndürülürse sıfır dışı; Aksi takdirde 0.
 
 Denetiminiz iki taramalı çizim kullanıyorsa ve donuk ve saydam bölümlerinin farklı boyutları varsa, bu işlevi geçersiz kılın.
 
-## <a name="colecontrolongetviewrect"></a><a name="ongetviewrect"></a>Coelcontrol:: OnGetViewRect
+## <a name="colecontrolongetviewrect"></a><a name="ongetviewrect"></a> Coelcontrol:: OnGetViewRect
 
 Bir kapsayıcının isteğine yanıt olarak Framework tarafından çağırılır `IViewObjectEx::GetRect` .
 
@@ -2821,7 +2821,7 @@ Nesneye boyutlandırılmış dikdörtgen başarıyla döndürülürse sıfır d�
 
 Nesnenin boyutu, `OnGetViewRect` belirli bir konumdan başlayarak bir dikdörtgene dönüştürülür (varsayılan, ekranın sol üst köşesidir). Denetiminiz iki taramalı çizim kullanıyorsa ve donuk ve saydam bölümlerinin farklı boyutları varsa, bu işlevi geçersiz kılın.
 
-## <a name="colecontrolongetviewstatus"></a><a name="ongetviewstatus"></a>Coelcontrol:: OnGetViewStatus
+## <a name="colecontrolongetviewstatus"></a><a name="ongetviewstatus"></a> Coelcontrol:: OnGetViewStatus
 
 Bir kapsayıcının isteğine yanıt olarak Framework tarafından çağırılır `IViewObjectEx::GetViewStatus` .
 
@@ -2833,7 +2833,7 @@ virtual DWORD OnGetViewStatus();
 
 Başarılı olursa VIEWSTATUS numaralandırması değerlerinden biri; Aksi takdirde 0. Olası değerler aşağıdakilerin herhangi bir birleşimidir:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |VIEWSTATUS_OPAQUE|Nesne tamamen donuk. Bu bit ayarlanmamışsa, nesne saydam parçalar içerir. Bu bit yalnızca içerikle ilgili yönlere uygulanır, DVASPECT_ICON veya DVASPECT_DOCPRINT.|
 |VIEWSTATUS_SOLIDBKGND|Nesne, düz bir arka plana sahiptir (bir fırça düzeniyle değil, düz bir renkte bulunur). Bu bit yalnızca VIEWSTATUS_OPAQUE ayarlandıysa ve yalnızca içerikle ilgili yönlere geçerliyse anlamlı olur ve DVASPECT_ICON veya DVASPECT_DOCPRINT için geçerlidir.|
@@ -2844,7 +2844,7 @@ Başarılı olursa VIEWSTATUS numaralandırması değerlerinden biri; Aksi takdi
 
 Denetiminiz iki taramalı çizim kullanıyorsa bu işlevi geçersiz kılın. Varsayılan uygulama VIEWSTATUS_OPAQUE döndürür.
 
-## <a name="colecontrolonhidetoolbars"></a><a name="onhidetoolbars"></a>Coelcontrol:: OnHideToolBars
+## <a name="colecontrolonhidetoolbars"></a><a name="onhidetoolbars"></a> Coelcontrol:: OnHideToolBars
 
 Denetim UI devre dışı bırakıldığında Framework tarafından çağırılır.
 
@@ -2856,7 +2856,7 @@ virtual void OnHideToolBars();
 
 Uygulamanın, tarafından görünen tüm araç çubuklarını gizlemeniz gerekir `OnShowToolbars` .
 
-## <a name="colecontroloninactivemousemove"></a><a name="oninactivemousemove"></a>Coelcontrol:: OnInactiveMouseMove
+## <a name="colecontroloninactivemousemove"></a><a name="oninactivemousemove"></a> Coelcontrol:: OnInactiveMouseMove
 
 Bir WM_MOUSEMOVE iletisinin alınması sırasında fare işaretçisi altında etkin olmayan nesne için kapsayıcı tarafından çağırılır.
 
@@ -2886,7 +2886,7 @@ Klavyede klavye değiştirici tuşlarının geçerli durumunu tanımlar. Geçerl
 
 Fare imleç konumunu geçirmek için pencere istemci koordinatlarının (piksel) kullanıldığını unutmayın. Bu, aynı koordinat sistemindeki nesnenin sınırlayıcı dikdörtgenini da geçirerek mümkündür.
 
-## <a name="colecontroloninactivesetcursor"></a><a name="oninactivesetcursor"></a>COleControl:: OnInactiveSetCursor
+## <a name="colecontroloninactivesetcursor"></a><a name="oninactivesetcursor"></a> COleControl:: OnInactiveSetCursor
 
 Bir WM_SETCURSOR iletisinin alınması sırasında fare işaretçisi altında etkin olmayan nesne için kapsayıcı tarafından çağırılır.
 
@@ -2924,7 +2924,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Fare imleç konumunu geçirmek için pencere istemci koordinatlarının (piksel) kullanıldığını unutmayın. Bu, aynı koordinat sistemindeki nesnenin sınırlayıcı dikdörtgenini da geçirerek mümkündür.
 
-## <a name="colecontrolonkeydownevent"></a><a name="onkeydownevent"></a>Coelcontrol:: OnKeyDownEvent
+## <a name="colecontrolonkeydownevent"></a><a name="onkeydownevent"></a> Coelcontrol:: OnKeyDownEvent
 
 Bir stok KeyDown olayı işlendikten sonra Framework tarafından çağırılır.
 
@@ -2952,7 +2952,7 @@ Aşağıdaki bayrakların birleşimini içerir:
 
 Denetim, olay tetiklendikten sonra anahtar bilgilerine erişmesi gerekiyorsa bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonkeypressevent"></a><a name="onkeypressevent"></a>Coelcontrol:: OnKeyPressEvent
+## <a name="colecontrolonkeypressevent"></a><a name="onkeypressevent"></a> Coelcontrol:: OnKeyPressEvent
 
 Hisse senedi KeyPress olayı tetiklendikten sonra Framework tarafından çağırılır.
 
@@ -2971,7 +2971,7 @@ Basılan anahtarın sanal anahtar kodu değerini içerir. Standart sanal anahtar
 
 Bu olay oluştuktan sonra bildirim istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonkeyupevent"></a><a name="onkeyupevent"></a>Coelcontrol:: OnKeyUpEvent
+## <a name="colecontrolonkeyupevent"></a><a name="onkeyupevent"></a> Coelcontrol:: OnKeyUpEvent
 
 Bir stok KeyDown olayı işlendikten sonra Framework tarafından çağırılır.
 
@@ -2999,7 +2999,7 @@ Aşağıdaki bayrakların birleşimini içerir:
 
 Denetim, olay tetiklendikten sonra anahtar bilgilerine erişmesi gerekiyorsa bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonmappropertytopage"></a><a name="onmappropertytopage"></a>COleControl:: OnMapPropertyToPage
+## <a name="colecontrolonmappropertytopage"></a><a name="onmappropertytopage"></a> COleControl:: OnMapPropertyToPage
 
 Belirtilen özelliğin düzenlemesini uygulayan bir özellik sayfasının sınıf KIMLIĞINI almak için Framework tarafından çağırılır.
 
@@ -3029,7 +3029,7 @@ Belirtilen özellik sayfasının kullanılması gerekip gerekmediğini belirtmek
 
 Denetimin özellik sayfalarını kapsayıcının Özellik tarayıcısından çağırmak için bir yol sağlamak üzere bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonmnemonic"></a><a name="onmnemonic"></a>Coelcontrol:: Onanımsatıcı
+## <a name="colecontrolonmnemonic"></a><a name="onmnemonic"></a> Coelcontrol:: Onanımsatıcı
 
 Kapsayıcı, OLE denetiminin bir anımsatıcı anahtarına basıldığında Framework tarafından çağırılır.
 
@@ -3042,7 +3042,7 @@ virtual void OnMnemonic(LPMSG pMsg);
 *pMsg*<br/>
 Bir anımsatıcı tuşuna basarak oluşturulan Windows iletisine yönelik işaretçi.
 
-## <a name="colecontrolonproperties"></a><a name="onproperties"></a>Coelcontrol:: OnProperties
+## <a name="colecontrolonproperties"></a><a name="onproperties"></a> Coelcontrol:: OnProperties
 
 Denetimin Özellikler fiili kapsayıcı tarafından çağrıldığında Framework tarafından çağırılır.
 
@@ -3074,7 +3074,7 @@ Varsayılan uygulama, kalıcı bir özellik iletişim kutusu görüntüler.
 
 Ayrıca, denetimin özellik sayfalarının görüntülenmesine neden olmak için bu işlevi kullanabilirsiniz. `OnProperties` *HwndParent* parametresindeki denetim üst öğesinin tanıtıcısını geçirerek işleve bir çağrı yapın. Bu durumda, *lpMsg* ve *lpRect* parametrelerinin değerleri yoksayılır.
 
-## <a name="colecontrolonqueryhitpoint"></a><a name="onqueryhitpoint"></a>Coelcontrol:: OnQueryHitPoint
+## <a name="colecontrolonqueryhitpoint"></a><a name="onqueryhitpoint"></a> Coelcontrol:: OnQueryHitPoint
 
 Bir kapsayıcının isteğine yanıt olarak Framework tarafından çağırılır `IViewObjectEx::QueryHitPoint` .
 
@@ -3118,9 +3118,9 @@ Bir isabet sonucu başarıyla döndürülürse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesnenin görüntüleme dikdörtgeninin verilen nokta ile mi (nokta isabetiyle) örtüştüğünü sorgular. `QueryHitPoint`dikdörtgen olmayan nesneler için test isabetlerinin geçersiz kılınması.
+Bir nesnenin görüntüleme dikdörtgeninin verilen nokta ile mi (nokta isabetiyle) örtüştüğünü sorgular. `QueryHitPoint` dikdörtgen olmayan nesneler için test isabetlerinin geçersiz kılınması.
 
-## <a name="colecontrolonqueryhitrect"></a><a name="onqueryhitrect"></a>Coelcontrol:: OnQueryHitRect
+## <a name="colecontrolonqueryhitrect"></a><a name="onqueryhitrect"></a> Coelcontrol:: OnQueryHitRect
 
 Bir kapsayıcının isteğine yanıt olarak Framework tarafından çağırılır `IViewObjectEx::QueryHitRect` .
 
@@ -3160,9 +3160,9 @@ Bir isabet sonucu başarıyla döndürülürse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesnenin görüntüleme dikdörtgeninin verilen dikdörtgendeki herhangi bir nokta ile mi (dikdörtgen) örtüştüğünü sorgular. `QueryHitRect`dikdörtgen olmayan nesneler için test isabetlerinin geçersiz kılınması.
+Bir nesnenin görüntüleme dikdörtgeninin verilen dikdörtgendeki herhangi bir nokta ile mi (dikdörtgen) örtüştüğünü sorgular. `QueryHitRect` dikdörtgen olmayan nesneler için test isabetlerinin geçersiz kılınması.
 
-## <a name="colecontrolonrenderdata"></a><a name="onrenderdata"></a>Coelcontrol:: OnRenderData
+## <a name="colecontrolonrenderdata"></a><a name="onrenderdata"></a> Coelcontrol:: OnRenderData
 
 Verileri belirtilen biçimde almak için Framework tarafından çağırılır.
 
@@ -3194,7 +3194,7 @@ Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz k�
 
 Daha fazla bilgi için `FORMATETC` `STGMEDIUM` Windows SDK ve yapılarına bakın.
 
-## <a name="colecontrolonrenderfiledata"></a><a name="onrenderfiledata"></a>Coelcontrol:: OnRenderFileData
+## <a name="colecontrolonrenderfiledata"></a><a name="onrenderfiledata"></a> Coelcontrol:: OnRenderFileData
 
 Depolama ortamı bir dosya olduğunda, belirtilen biçimdeki verileri almak için Framework tarafından çağırılır.
 
@@ -3224,7 +3224,7 @@ Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz k�
 
 Daha fazla bilgi için `FORMATETC` Windows SDK yapıya bakın.
 
-## <a name="colecontrolonrenderglobaldata"></a><a name="onrenderglobaldata"></a>Coelcontrol:: OnRenderGlobalData
+## <a name="colecontrolonrenderglobaldata"></a><a name="onrenderglobaldata"></a> Coelcontrol:: OnRenderGlobalData
 
 Belirtilen depolama ortamı genel bellek olduğunda, belirtilen biçimdeki verileri almak için Framework tarafından çağırılır.
 
@@ -3256,7 +3256,7 @@ Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz k�
 
 Daha fazla bilgi için `FORMATETC` Windows SDK yapıya bakın.
 
-## <a name="colecontrolonresetstate"></a><a name="onresetstate"></a>Coelcontrol:: OnResetState
+## <a name="colecontrolonresetstate"></a><a name="onresetstate"></a> Coelcontrol:: OnResetState
 
 Denetimin özellikleri varsayılan değerlerine ayarlandığında Framework tarafından çağırılır.
 
@@ -3270,7 +3270,7 @@ Varsayılan uygulama [DoPropExchange](#dopropexchange)'i çağırır ve `CPropEx
 
 Denetim yazıcısı, bu geçersiz kılınabilir içindeki OLE denetimi için başlatma kodunu ekleyebilir. Bu işlev, [IPersistStream:: Load](/windows/win32/api/objidl/nf-objidl-ipersiststream-load) veya [IPersistStorage:: Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) başarısız olduğunda veya [ıpersiststreaminit:: InitNew](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-initnew) ya da [IPersistStorage:: InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) çağrıldığında, önce veya ' ı çağrılmadan çağrılır `IPersistStream::Load` `IPersistStorage::Load` .
 
-## <a name="colecontrolonsetclientsite"></a><a name="onsetclientsite"></a>Coelcontrol:: OnSetClientSite
+## <a name="colecontrolonsetclientsite"></a><a name="onsetclientsite"></a> Coelcontrol:: OnSetClientSite
 
 Kapsayıcı denetimin işlevini çağırmışsa Framework tarafından çağırılır `IOleControl::SetClientSite` .
 
@@ -3284,7 +3284,7 @@ Varsayılan olarak, `OnSetClientSite` veri yolu özelliklerinin yüklenip yükle
 
 Bu bildirimin herhangi bir özel işlemini yapmak için bu işlevi geçersiz kılın. Özellikle, bu işlevin geçersiz kılmaları temel sınıfı çağırmalıdır.
 
-## <a name="colecontrolonsetdata"></a><a name="onsetdata"></a>Coelcontrol:: OnSetData
+## <a name="colecontrolonsetdata"></a><a name="onsetdata"></a> Coelcontrol:: OnSetData
 
 Denetimin verilerini belirtilen verilerle değiştirmek için Framework tarafından çağırılır.
 
@@ -3318,7 +3318,7 @@ Denetimin verilerini belirtilen verilerle değiştirmek için bu işlevi geçers
 
 Daha fazla bilgi için `FORMATETC` `STGMEDIUM` Windows SDK ve yapılarına bakın.
 
-## <a name="colecontrolonsetextent"></a><a name="onsetextent"></a>Coelcontrol:: OnSetExtent
+## <a name="colecontrolonsetextent"></a><a name="onsetextent"></a> Coelcontrol:: OnSetExtent
 
 Bir [IOleObject:: SetExtent](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setextent)çağrısının bir sonucu olarak denetimin uzmanın değiştirilmesi gerektiğinde Framework tarafından çağırılır.
 
@@ -3341,7 +3341,7 @@ Varsayılan uygulama, denetimin kapsamını yeniden boyutlandırmayı işler. De
 
 Denetiminizin varsayılan yeniden boyutlandırılmasını değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonsetobjectrects"></a><a name="onsetobjectrects"></a>Coelcontrol:: OnSetObjectRects
+## <a name="colecontrolonsetobjectrects"></a><a name="onsetobjectrects"></a> Coelcontrol:: OnSetObjectRects
 
 Bir [IOleInPlaceObject:: SetObjectRects](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects)çağrısı uygulamak için Framework tarafından çağırılır.
 
@@ -3369,7 +3369,7 @@ Varsayılan uygulama, denetim penceresinin yeniden konumlandırılmasına ve boy
 
 Bu işlevin varsayılan davranışını değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonshowtoolbars"></a><a name="onshowtoolbars"></a>Coelcontrol:: OnShowToolBars
+## <a name="colecontrolonshowtoolbars"></a><a name="onshowtoolbars"></a> Coelcontrol:: OnShowToolBars
 
 Denetim UI etkinleştirildiğinde Framework tarafından çağırılır.
 
@@ -3381,7 +3381,7 @@ virtual void OnShowToolBars();
 
 Varsayılan uygulama hiçbir şey yapmaz.
 
-## <a name="colecontrolontextchanged"></a><a name="ontextchanged"></a>Coelcontrol:: OnTextChanged
+## <a name="colecontrolontextchanged"></a><a name="ontextchanged"></a> Coelcontrol:: OnTextChanged
 
 Hisse senedi başlığı veya metin özelliği değeri değiştiğinde Framework tarafından çağırılır.
 
@@ -3395,7 +3395,7 @@ Varsayılan uygulama çağrıları `InvalidateControl` .
 
 Bu özellik değiştirildikten sonra bildirim istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="colecontrolonwindowlessmessage"></a><a name="onwindowlessmessage"></a>Coelcontrol:: OnWindowlessMessage
+## <a name="colecontrolonwindowlessmessage"></a><a name="onwindowlessmessage"></a> Coelcontrol:: OnWindowlessMessage
 
 Bir kapsayıcının isteğine yanıt olarak Framework tarafından çağırılır `IOleInPlaceObjectWindowless::OnWindowMessage` .
 
@@ -3427,11 +3427,11 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Penceresiz denetimler için pencere iletilerini işler. `COleControl``OnWindowlessMessage`, fare iletileri ve klavye iletileri dışındaki pencere iletileri için kullanılmalıdır. `COleControl`Penceresiz OLE nesneleri için fare yakalama ve klavye odağını almak üzere özel olarak [SetCapture](#setcapture) ve [SetFocus](#setfocus) sağlar.
+Penceresiz denetimler için pencere iletilerini işler. `COleControl``OnWindowlessMessage`, fare iletileri ve klavye iletileri dışındaki pencere iletileri için kullanılmalıdır. `COleControl` Penceresiz OLE nesneleri için fare yakalama ve klavye odağını almak üzere özel olarak [SetCapture](#setcapture) ve [SetFocus](#setfocus) sağlar.
 
-Penceresiz nesnelerde bir pencere bulunmadığından, kapsayıcının ileti almasına izin vermek için bir mekanizmaya ihtiyacı vardır. Penceresiz bir OLE nesnesi, `OnWindowMessage` `IOleInPlaceObjectWindowless` arabirimindeki yöntemi (Penceresiz destek Için bir [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) uzantısı) aracılığıyla kapsayıcısından iletileri alır. `OnWindowMessage`bir `HWND` parametre almaz.
+Penceresiz nesnelerde bir pencere bulunmadığından, kapsayıcının ileti almasına izin vermek için bir mekanizmaya ihtiyacı vardır. Penceresiz bir OLE nesnesi, `OnWindowMessage` `IOleInPlaceObjectWindowless` arabirimindeki yöntemi (Penceresiz destek Için bir [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) uzantısı) aracılığıyla kapsayıcısından iletileri alır. `OnWindowMessage` bir `HWND` parametre almaz.
 
-## <a name="colecontrolparenttoclient"></a><a name="parenttoclient"></a>Coelcontrol: arentToClient:P
+## <a name="colecontrolparenttoclient"></a><a name="parenttoclient"></a> Coelcontrol: arentToClient:P
 
 *PPoint* koordinatlarını istemci koordinatlarıyla çevirir.
 
@@ -3509,7 +3509,7 @@ Noktada isabet testi yapılıp yapılmayacağını belirtir.
 
 Giriş *pPoint* üzerinde, üst öğenin (kapsayıcının sol üst köşesinin) kaynağına göre belirlenir. Çıkış *pPoint* üzerinde OLE denetiminin (denetimin istemci alanının sol üst köşesi) istemci alanının kaynağına göre belirlenir.
 
-## <a name="colecontrolpostmodaldialog"></a><a name="postmodaldialog"></a>Coelcontrol::P ostModalDialog
+## <a name="colecontrolpostmodaldialog"></a><a name="postmodaldialog"></a> Coelcontrol::P ostModalDialog
 
 Kapsayıcıyı kalıcı iletişim kutusu kapalı olduğunu bildirir.
 
@@ -3526,7 +3526,7 @@ Kalıcı iletişim kutusunun üst penceresine işleyin.
 
 Herhangi bir kalıcı iletişim kutusunu görüntüleyerek bu işlevi çağırın. Kapsayıcının tarafından devre dışı bırakılmış herhangi bir üst düzey pencereleri etkinleştirebilmesi için bu işlevi çağırmanız gerekir `PreModalDialog` . Bu işlev bir çağrısıyla eşleştirilmelidir `PreModalDialog` .
 
-## <a name="colecontrolpremodaldialog"></a><a name="premodaldialog"></a>Coelcontrol::P reModalDialog
+## <a name="colecontrolpremodaldialog"></a><a name="premodaldialog"></a> Coelcontrol::P reModalDialog
 
 Kapsayıcıyı bir kalıcı iletişim kutusu görüntülenmek üzere olduğunu bildirir.
 
@@ -3543,7 +3543,7 @@ Kalıcı iletişim kutusunun üst penceresine işleyin.
 
 Herhangi bir kalıcı iletişim kutusunu görüntülemeden önce bu işlevi çağırın. Kapsayıcının tüm üst düzey pencerelerini devre dışı bırakabilmesi için bu işlevi çağırmanız gerekir. Kalıcı iletişim kutusu görüntülendikten sonra, öğesini çağırmanız gerekir `PostModalDialog` .
 
-## <a name="colecontrolrecreatecontrolwindow"></a><a name="recreatecontrolwindow"></a>Coelcontrol:: RecreateControlWindow
+## <a name="colecontrolrecreatecontrolwindow"></a><a name="recreatecontrolwindow"></a> Coelcontrol:: RecreateControlWindow
 
 Denetimin penceresini yok eder ve yeniden oluşturur.
 
@@ -3555,7 +3555,7 @@ void RecreateControlWindow();
 
 Pencerenin stil bitlerini değiştirmeniz gerekiyorsa, bu gerekli olabilir.
 
-## <a name="colecontrolrefresh"></a><a name="refresh"></a>Coelcontrol:: Refresh
+## <a name="colecontrolrefresh"></a><a name="refresh"></a> Coelcontrol:: Refresh
 
 OLE denetiminin yeniden bir yeniden çizmeyi zorlar.
 
@@ -3567,7 +3567,7 @@ void Refresh();
 
 Bu işlev, `COleControl` Yenile adlı bir stok yöntemi olarak temel sınıf tarafından desteklenir. Bu, OLE denetiminizin kullanıcılarının denetimi belirli bir zamanda yeniden görüntülemesine olanak tanır. Bu yöntem hakkında daha fazla bilgi için, [ActiveX denetimleri: Yöntemler](../../mfc/mfc-activex-controls-methods.md)makalesine bakın.
 
-## <a name="colecontrolreleasecapture"></a><a name="releasecapture"></a>Coelcontrol:: ReleaseCapture
+## <a name="colecontrolreleasecapture"></a><a name="releasecapture"></a> Coelcontrol:: ReleaseCapture
 
 Fare yakalamayı yayınlar.
 
@@ -3583,7 +3583,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Denetimde Şu anda fare yakalama varsa, yakalama serbest bırakılır. Aksi takdirde, bu işlevin etkisi yoktur.
 
-## <a name="colecontrolreleasedc"></a><a name="releasedc"></a>Coelcontrol:: ReleaseDC
+## <a name="colecontrolreleasedc"></a><a name="releasedc"></a> Coelcontrol:: ReleaseDC
 
 Penceresiz bir denetimin kapsayıcısının ekran cihazı bağlamını serbest bırakarak, diğer uygulamalar tarafından kullanılmak üzere cihaz bağlamını serbest bırakır.
 
@@ -3604,7 +3604,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Uygulamanın `ReleaseDC` her [GetDC](#getdc)çağrısını çağırması gerekir.
 
-## <a name="colecontrolreparentcontrolwindow"></a><a name="reparentcontrolwindow"></a>Coelcontrol:: ReparentControlWindow
+## <a name="colecontrolreparentcontrolwindow"></a><a name="reparentcontrolwindow"></a> Coelcontrol:: ReparentControlWindow
 
 Denetimin üst öğesini ayarlar.
 
@@ -3626,7 +3626,7 @@ Yeni ana pencerenin tutamacı.
 
 Denetim penceresinin üst öğesini sıfırlamak için bu işlevi çağırın.
 
-## <a name="colecontrolresetstockprops"></a><a name="resetstockprops"></a>Coelcontrol:: ResetStockProps
+## <a name="colecontrolresetstockprops"></a><a name="resetstockprops"></a> Coelcontrol:: ResetStockProps
 
 `COleControl`Hisse senedi özelliklerinin durumunu varsayılan değerlerine başlatır.
 
@@ -3644,7 +3644,7 @@ void ResetStockProps();
 
 [!code-cpp[NVC_MFCAxCtl#7](../../mfc/reference/codesnippet/cpp/colecontrol-class_8.cpp)]
 
-## <a name="colecontrolresetversion"></a><a name="resetversion"></a>Coelcontrol:: ResetVersion
+## <a name="colecontrolresetversion"></a><a name="resetversion"></a> Coelcontrol:: ResetVersion
 
 Sürüm numarasını belirtilen değere başlatır.
 
@@ -3661,7 +3661,7 @@ Denetime atanacak sürüm numarası.
 
 `ResetVersion`Geçersiz kılmak için ve kullanarak bir denetimin ikili başlatma performansını geliştirebilirsiniz `ResetStockProps` `COleControl::OnResetState` . [ResetStockProps](#resetstockprops)adresindeki örneğe bakın. Başlatmayı iyileştirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
 
-## <a name="colecontrolscrollwindow"></a><a name="scrollwindow"></a>Coelcontrol:: ScrollWindow
+## <a name="colecontrolscrollwindow"></a><a name="scrollwindow"></a> Coelcontrol:: ScrollWindow
 
 Penceresiz bir OLE nesnesinin, ekrandaki yerinde etkin görüntü içindeki bir alanı kaydıralmasına izin verir.
 
@@ -3687,7 +3687,7 @@ Dikey kaydırmanın cihaz birimlerinde miktarı belirtir. Bu parametre, yukarı 
 *lpClipRect*<br/>
 `CRect`Kırpmak için dikdörtgeni belirten bir nesne veya yapıya işaret eder `RECT` . Yalnızca dikdörtgenin içindeki pikseller kaydırıldı. Dikdörtgen dışındaki bitler, *lpRect* dikdörtgende olsalar bile etkilenmez. *LpClipRect* null ise, kaydırma dikdörtgeni üzerinde kırpma yapılmaz.
 
-## <a name="colecontrolselectfontobject"></a><a name="selectfontobject"></a>Coelcontrol:: SelectFontObject
+## <a name="colecontrolselectfontobject"></a><a name="selectfontobject"></a> Coelcontrol:: SelectFontObject
 
 Bir cihaz bağlamında bir yazı tipi seçer.
 
@@ -3709,7 +3709,7 @@ Seçilecek yazı tipini temsil eden [Cfontheski](../../mfc/reference/cfontholder
 
 Daha önce seçilen yazı tipine yönelik bir işaretçi. Çağıran, *Fonthdaha eski* olan tüm çizim işlemlerini bitirdiğinde, bu fontu [CDC:: NesneSeç](../../mfc/reference/cdc-class.md#selectobject)öğesine bir parametre olarak geçirerek, daha önce seçilen yazı tipini yeniden seçmeniz gerekir.
 
-## <a name="colecontrolselectstockfont"></a><a name="selectstockfont"></a>Coelcontrol:: SelectStockFont
+## <a name="colecontrolselectstockfont"></a><a name="selectstockfont"></a> Coelcontrol:: SelectStockFont
 
 Hisse senedi yazı tipi özelliğini bir cihaz bağlamına seçer.
 
@@ -3726,7 +3726,7 @@ Yazı tipinin seçildiği cihaz bağlamı.
 
 Daha önce seçilen nesneye yönelik bir işaretçi `CFont` . İşiniz bittiğinde bu yazı tipini cihaz bağlamına geri seçmek için [CDC:: NesneSeç](../../mfc/reference/cdc-class.md#selectobject) kullanmanız gerekir.
 
-## <a name="colecontrolserializeextent"></a><a name="serializeextent"></a>Coelcontrol:: Serializeınfo
+## <a name="colecontrolserializeextent"></a><a name="serializeextent"></a> Coelcontrol:: Serializeınfo
 
 Denetime ayrılan görüntüleme alanının durumunu seri hale getirir veya başlatır.
 
@@ -3747,7 +3747,7 @@ void SerializeExtent(CArchive& ar);
 
 [!code-cpp[NVC_MFCAxCtl#8](../../mfc/reference/codesnippet/cpp/colecontrol-class_9.cpp)]
 
-## <a name="colecontrolserializestockprops"></a><a name="serializestockprops"></a>Cotacontrol:: SerializeStockProps
+## <a name="colecontrolserializestockprops"></a><a name="serializestockprops"></a> Cotacontrol:: SerializeStockProps
 
 Hisse senedi özelliklerinin durumunu seri hale getirir veya başlatır `COleControl` : görünüm, BackColor, BorderStyle, açıklamalı altyazı, etkin, yazı tipi, ForeColor ve metin.
 
@@ -3766,7 +3766,7 @@ Hisse senedi özelliklerinin açıklaması için bkz. [ActiveX denetimleri: stok
 
 `SerializeStockProps` `SerializeExtent` Geçersiz kılmak için,, ve kullanarak bir denetimin ikili Kalıcılık performansını geliştirebilirsiniz `SerializeVersion` `COleControl::Serialize` . Bir örnek için, [Serializeuzatma](#serializeextent)konumundaki koda bakın. Başlatmayı iyileştirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
 
-## <a name="colecontrolserializeversion"></a><a name="serializeversion"></a>Coelcontrol:: SerializeVersion
+## <a name="colecontrolserializeversion"></a><a name="serializeversion"></a> Coelcontrol:: SerializeVersion
 
 Bir denetimin sürüm bilgilerinin durumunu seri hale getirir veya başlatır.
 
@@ -3796,7 +3796,7 @@ Denetimin sürüm numarası. Belirtilen Arşiv yüklense, `SerializeVersion` Bu 
 
 `SerializeVersion` `SerializeExtent` Geçersiz kılmak için,, ve kullanarak bir denetimin ikili Kalıcılık performansını geliştirebilirsiniz `SerializeStockProps` `COleControl::Serialize` . Bir örnek için, [Serializeuzatma](#serializeextent)konumundaki koda bakın. Başlatmayı iyileştirme hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
 
-## <a name="colecontrolsetappearance"></a><a name="setappearance"></a>Coelcontrol:: SetAppearance
+## <a name="colecontrolsetappearance"></a><a name="setappearance"></a> Coelcontrol:: SetAppearance
 
 Denetiminizin hisse senedi görünümü özellik değerini ayarlar.
 
@@ -3813,7 +3813,7 @@ void SetAppearance (short sAppearance);
 
 Stok özellikleri hakkında daha fazla bilgi için bkz. [ActiveX denetimleri: Özellikler](../../mfc/mfc-activex-controls-properties.md).
 
-## <a name="colecontrolsetbackcolor"></a><a name="setbackcolor"></a>Coelcontrol:: SetBackColor
+## <a name="colecontrolsetbackcolor"></a><a name="setbackcolor"></a> Coelcontrol:: SetBackColor
 
 Denetiminizin hisse senedi BackColor Özellik değerini ayarlar.
 
@@ -3830,7 +3830,7 @@ Denetiminizin arka plan çizimi için kullanılacak bir OLE_COLOR değeri.
 
 Bu özelliği ve diğer ilgili özellikleri kullanma hakkında daha fazla bilgi için, [ActiveX denetimleri: Özellikler](../../mfc/mfc-activex-controls-properties.md)makalesine bakın.
 
-## <a name="colecontrolsetborderstyle"></a><a name="setborderstyle"></a>Coelcontrol:: SetBorderStyle
+## <a name="colecontrolsetborderstyle"></a><a name="setborderstyle"></a> Coelcontrol:: SetBorderStyle
 
 Denetiminizin hisse senedi stili özellik değerini ayarlar.
 
@@ -3847,7 +3847,7 @@ Denetimin yeni kenarlık stili; 0 sınır olmadığını ve 1 ' in normal bir ke
 
 Denetim penceresi daha sonra yeniden oluşturulup `OnBorderStyleChanged` çağırılır.
 
-## <a name="colecontrolsetcapture"></a><a name="setcapture"></a>Coelcontrol:: SetCapture
+## <a name="colecontrolsetcapture"></a><a name="setcapture"></a> Coelcontrol:: SetCapture
 
 Denetimin kapsayıcı penceresinin, denetimin adına fare yakalamanın sahipliğini almasına neden olur.
 
@@ -3863,7 +3863,7 @@ CWnd* SetCapture();
 
 Denetim etkinleştirilir ve penceresiz ise, bu işlev denetimin kapsayıcı penceresinin, denetimin adına fare yakalamasına sahip olmasına neden olur. Aksi takdirde, bu işlev denetimin kendisinin, fare yakalamasına (ile aynı) sahip olmasına neden olur `CWnd::SetCapture` .
 
-## <a name="colecontrolsetcontrolsize"></a><a name="setcontrolsize"></a>Coelcontrol:: SetControlSize
+## <a name="colecontrolsetcontrolsize"></a><a name="setcontrolsize"></a> Coelcontrol:: SetControlSize
 
 OLE denetim penceresinin boyutunu ayarlar ve kapsayıcıya denetim sitesinin değiştiğini bildirir.
 
@@ -3889,7 +3889,7 @@ Bu işlev, denetiminizin oluşturucusunda kullanılmamalıdır.
 
 Denetim pencereleri için tüm koordinatların denetimin sol üst köşesine göre olduğunu unutmayın.
 
-## <a name="colecontrolsetenabled"></a><a name="setenabled"></a>Coelcontrol:: SetEnabled
+## <a name="colecontrolsetenabled"></a><a name="setenabled"></a> Coelcontrol:: SetEnabled
 
 Denetiminizin stok etkin özellik değerini ayarlar.
 
@@ -3906,7 +3906,7 @@ Denetimin etkinleştirilmesi durumunda doğru; Aksi halde yanlış.
 
 Bu özelliği ayarladıktan sonra `OnEnabledChange` çağrılır.
 
-## <a name="colecontrolsetfocus"></a><a name="setfocus"></a>Coelcontrol:: SetFocus
+## <a name="colecontrolsetfocus"></a><a name="setfocus"></a> Coelcontrol:: SetFocus
 
 Denetimin kapsayıcı penceresinin, denetimin adına giriş odasından faydalanmasına neden olur.
 
@@ -3924,7 +3924,7 @@ Denetim etkinleştirilir ve penceresiz ise, bu işlev denetimin kapsayıcı penc
 
 Denetim penceresiz değilse, bu işlev denetimin kendisinin giriş odasına (ile aynı) sahip olmasına neden olur `CWnd::SetFocus` .
 
-## <a name="colecontrolsetfont"></a><a name="setfont"></a>Coelcontrol:: SetFont
+## <a name="colecontrolsetfont"></a><a name="setfont"></a> Coelcontrol:: SetFont
 
 Denetiminizin hisse senedi yazı tipi özelliğini ayarlar.
 
@@ -3937,7 +3937,7 @@ void SetFont(LPFONTDISP pFontDisp);
 *pFontDisp*<br/>
 Yazı tipi gönderme arabirimine yönelik bir işaretçi.
 
-## <a name="colecontrolsetforecolor"></a><a name="setforecolor"></a>Coelcontrol:: SetForeColor
+## <a name="colecontrolsetforecolor"></a><a name="setforecolor"></a> Coelcontrol:: SetForeColor
 
 Denetiminizin Stock ForeColor Özellik değerini ayarlar.
 
@@ -3954,7 +3954,7 @@ Denetiminizin ön plan çizimi için kullanılacak bir OLE_COLOR değeri.
 
 Bu özelliği ve diğer ilgili özellikleri kullanma hakkında daha fazla bilgi için, [ActiveX denetimleri: Özellikler](../../mfc/mfc-activex-controls-properties.md)makalesine bakın.
 
-## <a name="colecontrolsetinitialdataformats"></a><a name="setinitialdataformats"></a>Coelcontrol:: Setınitialdataformats
+## <a name="colecontrolsetinitialdataformats"></a><a name="setinitialdataformats"></a> Coelcontrol:: Setınitialdataformats
 
 Denetim tarafından desteklenen veri biçimlerinin listesini başlatmak için Framework tarafından çağırılır.
 
@@ -3966,7 +3966,7 @@ virtual void SetInitialDataFormats();
 
 Varsayılan uygulama iki biçim belirtir: CF_METAFILEPICT ve kalıcı özellik kümesi.
 
-## <a name="colecontrolsetinitialsize"></a><a name="setinitialsize"></a>Coelcontrol:: Setınitialsize
+## <a name="colecontrolsetinitialsize"></a><a name="setinitialsize"></a> Coelcontrol:: Setınitialsize
 
 Bir kapsayıcıda ilk kez görüntülendiğinde OLE denetiminin boyutunu ayarlar.
 
@@ -3988,7 +3988,7 @@ OLE denetiminin piksel cinsinden başlangıç yüksekliği.
 
 Denetiminizin başlangıç boyutunu ayarlamak için bu işlevi oluşturucuda çağırın. Başlangıç boyutu, cihaz birimleri veya piksel cinsinden ölçülür. Bu çağrının denetimin oluşturucusunda yapılması önerilir.
 
-## <a name="colecontrolsetmodifiedflag"></a><a name="setmodifiedflag"></a>Coelcontrol:: SetModifiedFlag
+## <a name="colecontrolsetmodifiedflag"></a><a name="setmodifiedflag"></a> Coelcontrol:: SetModifiedFlag
 
 Bir denetimin değiştirilme durumunu değiştirir.
 
@@ -4005,7 +4005,7 @@ Denetimin değiştirilmiş bayrağının yeni değeri. DOĞRU, denetimin durumun
 
 Denetiminizin kalıcı durumunu etkileyebilecek bir değişiklik olduğunda bu işlevi çağırın. Örneğin, kalıcı bir özelliğin değeri değişirse, *bModified* **true**ile bu işlevi çağırın.
 
-## <a name="colecontrolsetnotpermitted"></a><a name="setnotpermitted"></a>Coelcontrol:: Setnotizin verildi
+## <a name="colecontrolsetnotpermitted"></a><a name="setnotpermitted"></a> Coelcontrol:: Setnotizin verildi
 
 Bir düzenleme isteğinin başarısız olduğunu gösterir.
 
@@ -4017,7 +4017,7 @@ void SetNotPermitted();
 
 Başarısız olduğunda bu işlevi çağırın `BoundPropertyRequestEdit` . Bu işlev `COleDispScodeException` , set işlemine izin verilmediğini göstermek için türünde bir özel durum oluşturur.
 
-## <a name="colecontrolsetnotsupported"></a><a name="setnotsupported"></a>Coelcontrol:: SetNotSupported
+## <a name="colecontrolsetnotsupported"></a><a name="setnotsupported"></a> Coelcontrol:: SetNotSupported
 
 Kullanıcının Kullanıcı tarafından bir denetimin özellik değerinde değiştirilmesini önler.
 
@@ -4029,7 +4029,7 @@ void SetNotSupported();
 
 Bu işlevi, denetimin kullanıcısı tarafından Özellik değerinin değiştirilmesinin desteklenmediği herhangi bir özelliğin set işlevinin yerine çağırın. Bir örnek, salt okunan bir özelliktir.
 
-## <a name="colecontrolsetrectincontainer"></a><a name="setrectincontainer"></a>Coelcontrol:: Setrecıncontainer
+## <a name="colecontrolsetrectincontainer"></a><a name="setrectincontainer"></a> Coelcontrol:: Setrecıncontainer
 
 Denetim dikdörtgeninin koordinatlarını kapsayıcıya göre, cihaz birimlerinde ifade edilen koordinatları belirler.
 
@@ -4050,7 +4050,7 @@ Kapsayıcının kapsayıcısına göre denetimin yeni koordinatlarını içeren 
 
 Denetim açıksa yeniden boyutlandırılır; Aksi takdirde kapsayıcının `OnPosRectChanged` işlevi çağırılır.
 
-## <a name="colecontrolsettext"></a><a name="settext"></a>Coelcontrol:: SetText
+## <a name="colecontrolsettext"></a><a name="settext"></a> Coelcontrol:: SetText
 
 Denetiminizin hisse senedi başlık veya metin özelliğinin değerini ayarlar.
 
@@ -4067,7 +4067,7 @@ Karakter dizesinin işaretçisi.
 
 Hisse senedi başlığı ve metin özelliklerinin ikisi de aynı değere eşlendiğine unutmayın. Bu, iki özelliğe de yapılan tüm değişikliklerin her iki özelliği de otomatik olarak değiştirdiği anlamına gelir. Genel olarak, bir denetim hisse senedi başlığını veya metin özelliğini desteklemelidir, her ikisini de desteklemez.
 
-## <a name="colecontrolthrowerror"></a><a name="throwerror"></a>Coelcontrol:: ThrowError
+## <a name="colecontrolthrowerror"></a><a name="throwerror"></a> Coelcontrol:: ThrowError
 
 Denetiminizin bir hata oluşumuna işaret eder.
 
@@ -4101,7 +4101,7 @@ Raporlanacak özel durumun açıklamasını içeren bir dize.
 
 Bu işlev yalnızca OLE özelliği için Get veya set işlevi içinden veya OLE Automation yönteminin uygulanması için çağrılmalıdır. Başka zamanlarda oluşan hatalara işaret etmeniz gerekiyorsa, stok hata olayını tetiklemelidir.
 
-## <a name="colecontroltransformcoords"></a><a name="transformcoords"></a>Cotacontrol:: TransformCoords
+## <a name="colecontroltransformcoords"></a><a name="transformcoords"></a> Cotacontrol:: TransformCoords
 
 Değerleri, HIMETRIK birimler ve kapsayıcının yerel birimleri arasındaki koordinat değerlerini dönüştürür.
 
@@ -4135,7 +4135,7 @@ Aşağıdaki değerlerin bir birleşimi:
 
 İlk iki bayrak, XFORMCOORDS_POSITION ve XFORMCOORDS_SIZE, koordinatların konum veya boyut olarak değerlendirilip değerlendirilmeyeceğini gösterir. Kalan iki bayrak dönüştürmenin yönünü gösterir.
 
-## <a name="colecontroltranslatecolor"></a><a name="translatecolor"></a>Coelcontrol:: TranslateColor
+## <a name="colecontroltranslatecolor"></a><a name="translatecolor"></a> Coelcontrol:: TranslateColor
 
 OLE_COLOR veri türünden [colorref](/windows/win32/gdi/colorref) veri türüne bir renk değeri dönüştürür.
 
@@ -4161,7 +4161,7 @@ Cihazın temsil ettiği *clrColor* değerine en yakın düz rengi TANıMLAYAN bi
 
 Bu işlev, hisse senedi ForeColor ve BackColor özelliklerinin [CDC](../../mfc/reference/cdc-class.md) üye işlevleri tarafından kullanılan colorref türlerine çevrilmesi için yararlıdır.
 
-## <a name="colecontrolwillambientsbevalidduringload"></a><a name="willambientsbevalidduringload"></a>Coelcontrol:: Willambentsbevalidduringload
+## <a name="colecontrolwillambientsbevalidduringload"></a><a name="willambientsbevalidduringload"></a> Coelcontrol:: Willambentsbevalidduringload
 
 Denetiminizin, daha sonra kalıcı durumundan yüklendiği zaman, varsayılan değer olarak çevresel özellikler değerlerini kullanması gerekip gerekmediğini belirler.
 
@@ -4177,7 +4177,7 @@ Sıfır olmayan ortam özelliklerinin geçerli olacağını gösterir; Aksi hald
 
 Bazı kapsayıcılarda denetiminizin, geçersiz kılma için ilk çağrı sırasında çevresel özelliklerine erişimi olmayabilir `COleControl::DoPropExchange` . Bu, kapsayıcı [ıpersiststreaminit:: Load](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-load) veya [IPersistStorage:: Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) öğesini çağırmadan önce [IOleObject:: SetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setclientsite) (OLEMISC_SETCLIENTSITEFIRST durum bitini kabul etmez) çağrısı yapmadan bu durumdur.
 
-## <a name="colecontrolwindowproc"></a><a name="windowproc"></a>Coelcontrol:: WindowProc
+## <a name="colecontrolwindowproc"></a><a name="windowproc"></a> Coelcontrol:: WindowProc
 
 Bir nesne için bir Windows yordamı sağlar `COleControl` .
 

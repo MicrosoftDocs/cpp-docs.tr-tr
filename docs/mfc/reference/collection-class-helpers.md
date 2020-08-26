@@ -8,12 +8,12 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-ms.openlocfilehash: 02bc5c5a7c1766c97d9a834c8b6b4dfb2a26ae82
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 04b142cde12a9795f217559f875eef7fcec3b0f2
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231799"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841434"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
@@ -23,7 +23,7 @@ Microsoft Foundation Class Kitaplığı, topluluk sınıflarınızı özelleşti
 
 ### <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[CompareElements](#compareelements)|Öğelerin aynı olup olmadığını gösterir.|
 |[CopyElements](#copyelements)|Öğeleri bir diziden diğerine kopyalar.|
@@ -31,7 +31,7 @@ Microsoft Foundation Class Kitaplığı, topluluk sınıflarınızı özelleşti
 |[HashKey](#hashkey)|Bir karma anahtarı hesaplar.|
 |[SerializeElements](#serializeelements)|Bir arşive veya bir arşivden öğeleri depolar veya alır.|
 
-## <a name="compareelements"></a><a name="compareelements"></a>CompareElements
+## <a name="compareelements"></a><a name="compareelements"></a> CompareElements
 
 Doğrudan [CList:: Find] (CList-Class. MD # not_found. MD # clist__find ve dolaylı olarak [cmap__lookup](cmap-class.md#lookup) ve [cmap__operator &#91;&#93;](cmap-class.md#operator_at)tarafından çağırılır.
 
@@ -73,7 +73,7 @@ C++ dili `==` basit türler (,, vb.) için karşılaştırma işlecini () tanım
 
    **Üstbilgi:** afxtempl. h
 
-## <a name="copyelements"></a><a name="copyelements"></a>CopyElements
+## <a name="copyelements"></a><a name="copyelements"></a> CopyElements
 
 Bu işlev doğrudan [CArray:: Append](carray-class.md#append) ve [CArray:: Copy](carray-class.md#copy)tarafından çağrılır.
 
@@ -109,7 +109,7 @@ Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz
 
   **Başlık** afxtempl. h
 
-## <a name="dumpelements"></a><a name="dumpelements"></a>DumpElements
+## <a name="dumpelements"></a><a name="dumpelements"></a> DumpElements
 
 Geçersiz kılınırsa, koleksiyonunuzdaki öğeler için akışa yönelik tanılama çıkışı metin biçiminde sağlar.
 
@@ -145,7 +145,7 @@ Varsayılan uygulama hiçbir şey yapmaz. Koleksiyonunuzun öğeleri öğesinden
 
   **Başlık** afxtempl. h
 
-## <a name="hashkey"></a><a name="hashkey"></a>HashKey
+## <a name="hashkey"></a><a name="hashkey"></a> HashKey
 
 Verilen anahtar için bir karma değeri hesaplar.
 
@@ -187,7 +187,7 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
 
   **Başlık** afxtempl. h
 
-## <a name="serializeelements"></a><a name="serializeelements"></a>SerializeElements
+## <a name="serializeelements"></a><a name="serializeelements"></a> SerializeElements
 
 [CArray](carray-class.md), [CList](clist-class.md)ve [CMap](cmap-class.md) öğeleri seri hale getirmek için bu işlevi çağırır.
 

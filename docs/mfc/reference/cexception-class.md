@@ -12,18 +12,18 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-ms.openlocfilehash: a24f324576c872e7fe509b742aa58d6c230ec24a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e27802e05c832d28d848d9eb1235d6ef5980b306
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212494"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841564"
 ---
 # <a name="cexception-class"></a>CException sınıfı
 
 Microsoft Foundation Class Kitaplığı tüm özel durumlar için temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class AFX_NOVTABLE CException : public CObject
@@ -50,7 +50,7 @@ class AFX_NOVTABLE CException : public CObject
 
 Türetilmiş sınıflar ve açıklamaları aşağıda listelenmiştir:
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[CSimpleException](../../mfc/reference/csimpleexception-class.md)|Kaynak açısından kritik MFC özel durumları için temel sınıf|
 |[CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken özel durum koşulu|
@@ -84,7 +84,7 @@ Makrolardan biri tarafından bir özel durum yakalanmışsa, `CException` nesne 
 
 **Üstbilgi:** AFX. h
 
-## <a name="cexceptioncexception"></a><a name="cexception"></a>CException:: CException
+## <a name="cexceptioncexception"></a><a name="cexception"></a> CException:: CException
 
 Bu üye işlevi bir `CException` nesnesi oluşturur.
 
@@ -101,7 +101,7 @@ explicit CException(BOOL bAutoDelete);
 
 Normalde bu oluşturucuyu doğrudan çağırmanız gerekmez. Özel durum oluşturan bir işlev `CException` , türetilmiş bir sınıfın örneğini oluşturmalı ve oluşturucusunu çağırmalıdır ya da önceden tanımlanmış bir tür oluşturmak Için [AFXTHROWFILEEXCEPTION](exception-processing.md#afxthrowfileexception)gibi MFC throw işlevlerinden birini kullanmalıdır. Bu belge yalnızca tamamlayıcı için sağlanır.
 
-## <a name="cexceptiondelete"></a><a name="delete"></a>CException::D Sil
+## <a name="cexceptiondelete"></a><a name="delete"></a> CException::D Sil
 
 Bu işlev, `CException` nesnenin yığında oluşturulup oluşturulmadığını denetler ve varsa, **`delete`** nesne üzerindeki işlecini çağırır.
 
@@ -168,7 +168,7 @@ if (pFile != NULL)
 }
 ```
 
-## <a name="cexceptionreporterror"></a><a name="reporterror"></a>CException:: ReportError
+## <a name="cexceptionreporterror"></a><a name="reporterror"></a> CException:: ReportError
 
 Kullanıcıya bir ileti kutusunda hata metnini raporlamak için bu üye işlevi çağırın.
 

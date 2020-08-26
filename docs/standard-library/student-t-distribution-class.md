@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-ms.openlocfilehash: c23298b931e751a8020883bfb3cf687e35ba3276
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 23ded8704e1e29dabddadfdc0a1ced3644374ad9
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202018"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88840966"
 ---
 # <a name="student_t_distribution-class"></a>student_t_distribution Sınıfı
 
@@ -71,10 +71,8 @@ Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler
 
 Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar veya **`double`** hiçbir değer sağlanmazsa öğrencinin *t*dağıtımına göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
-||||
-|-|-|-|
-|[student_t_distribution](#student_t_distribution)|`student_t_distribution::n`|`student_t_distribution::param`|
-|`student_t_distribution::operator()`||[param_type](#param_type)|
+[student_t_distribution](#student_t_distribution)\
+[param_type](#param_type)
 
 Property işlevi, `n()` depolanan dağıtım parametresi için değeri döndürür `n` .
 
@@ -163,7 +161,7 @@ Distribution for 10 samples:
 
 **Ad alanı:** std
 
-## <a name="student_t_distributionstudent_t_distribution"></a><a name="student_t_distribution"></a>student_t_distribution:: student_t_distribution
+## <a name="student_t_distributionstudent_t_distribution"></a><a name="student_t_distribution"></a> student_t_distribution:: student_t_distribution
 
 Dağıtımı oluşturur.
 
@@ -188,7 +186,7 @@ Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
-## <a name="student_t_distributionparam_type"></a><a name="param_type"></a>student_t_distribution::p aram_type
+## <a name="student_t_distributionparam_type"></a><a name="param_type"></a> student_t_distribution::p aram_type
 
 Dağıtımın tüm parametrelerini depolar.
 

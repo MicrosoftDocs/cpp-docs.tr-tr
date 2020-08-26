@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-ms.openlocfilehash: b9ddb3117afe37060b8013be235bdb11a2a031ac
-ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
+ms.openlocfilehash: 18df18379fbee8271ba5cf851b04210f1dfddf57
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74898848"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841889"
 ---
 # <a name="ltsystem_errorgt"></a>&lt;system_error&gt;
 
-Özel durum sınıfı `system_error` ve alt düzey sistem hatalarını işlemeye yönelik ilgili şablonları tanımlamak için \<system_error > başlığını ekleyin.
+\<system_error> `system_error` Alt düzey sistem hatalarını işlemek için özel durum sınıfını ve ilgili şablonları tanımlayan üstbilgiyi ekleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<system_error >
+**Üst bilgi:**\<system_error>
 
 **Ad alanı:** std
 
@@ -28,7 +28,7 @@ ms.locfileid: "74898848"
 
 ### <a name="objects"></a>Nesneler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[generic_category](../standard-library/system-error-functions.md#generic_category)|Genel hataların kategorisini temsil eder.|
 |[is_error_code_enum_v](../standard-library/system-error-functions.md#is_error_code_enum_v)||
@@ -37,29 +37,29 @@ ms.locfileid: "74898848"
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[make_error_code](../standard-library/system-error-functions.md#make_error_code)|Oluşturur bir `error_code` nesne.|
-|[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|Oluşturur bir `error_condition` nesne.|
+|[make_error_code](../standard-library/system-error-functions.md#make_error_code)|Bir `error_code` nesnesi oluşturur.|
+|[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|Bir `error_condition` nesnesi oluşturur.|
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
-|[operator!=](../standard-library/system-error-operators.md#op_neq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
-|[işleç <](../standard-library/system-error-operators.md#op_lt)|Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.|
-|[işleç < <](../standard-library/system-error-operators.md#op_ostream)||
+|[işleç = =](../standard-library/system-error-operators.md#op_eq_eq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
+|[işleç! =](../standard-library/system-error-operators.md#op_neq)|İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.|
+|[işleç<](../standard-library/system-error-operators.md#op_lt)|Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.|
+|[işleç<<](../standard-library/system-error-operators.md#op_ostream)||
 
 ### <a name="enums"></a>Numaralandırmalar
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[ERRC](../standard-library/system-error-enums.md#errc)|`<errno.h>`içinde POSIX tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar.|
+|[ERRC](../standard-library/system-error-enums.md#errc)|İçinde POSIX tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar `<errno.h>` .|
 
 ### <a name="classes-and-structs"></a>Sınıflar ve Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[error_category](../standard-library/error-category-class.md)|Bir hata kodları kategorisini açıklayan nesneler için soyut, ortak temeli temsil eder.|
 |[error_code](../standard-library/error-code-class.md)|Uygulamaya özgü olan alt düzey sistem hatalarını temsil eder.|

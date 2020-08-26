@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - regex header
 ms.assetid: 5dd4ef74-6063-4dbc-b692-1960bb736f0b
-ms.openlocfilehash: 9d7f84ac47979cf398ae1f94e4d01ba0915da299
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 60548e96e0922fdcff00456b03bf9fa15bb7e3b3
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217538"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841486"
 ---
 # <a name="ltregexgt"></a>&lt;Regex&gt;
 
 Normal [ifadeleri (C++)](../standard-library/regular-expressions-cpp.md)ayrıştırmak için bir sınıf şablonu ve bir normal ifade nesnesiyle eşleşen metinleri aramak için çeşitli sınıf şablonları ve işlevleri tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <regex>
@@ -52,7 +52,7 @@ Normal ifadelerin dilbilgisinin ayrıntılarını değiştirmek için normal ifa
 
 ### <a name="type-definitions"></a>Tür Tanımları
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[cmatch](../standard-library/regex-typedefs.md#cmatch)|İçin tür tanımı **`char`** `match_results` .|
 |[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|İçin tür tanımı **`char`** `regex_iterator` .|
@@ -89,7 +89,7 @@ Normal ifadelerin dilbilgisinin ayrıntılarını değiştirmek için normal ifa
 |[işleç = =](../standard-library/regex-operators.md#op_eq_eq)|Farklı nesnelerin karşılaştırması, eşittir.|
 |[işleç! =](../standard-library/regex-operators.md#op_neq)|Eşit değil, çeşitli nesnelerin karşılaştırması.|
 |[işleç<](../standard-library/regex-operators.md#op_lt)|Farklı nesnelerin karşılaştırması, küçüktür.|
-|[işleç\<=](../standard-library/regex-operators.md#op_gt_eq)|Çeşitli nesnelerin karşılaştırması, küçüktür veya eşittir.|
+|[işlecinde\<=](../standard-library/regex-operators.md#op_gt_eq)|Çeşitli nesnelerin karşılaştırması, küçüktür veya eşittir.|
 |[işleç>](../standard-library/regex-operators.md#op_gt)|Çeşitli nesnelerin karşılaştırması, büyüktür.|
 |[işleç>=](../standard-library/regex-operators.md#op_gt_eq)|Daha büyük veya eşit birçok nesne karşılaştırması.|
 |[işleç<<](../standard-library/regex-operators.md#op_lt_lt)|Bir akışa bir ekler `sub_match` .|
@@ -99,9 +99,9 @@ Normal ifadelerin dilbilgisinin ayrıntılarını değiştirmek için normal ifa
 [Normal Ifadeler (C++)](../standard-library/regular-expressions-cpp.md)\
 [regex_constants sınıfı](../standard-library/regex-constants-class.md)\
 [regex_error sınıfı](../standard-library/regex-error-class.md)\
-[\<regex>lerdir](../standard-library/regex-functions.md)\
+[\<regex> lerdir](../standard-library/regex-functions.md)\
 [regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<regex>işletmenlerinin](../standard-library/regex-operators.md)\
+[\<regex> işletmenlerinin](../standard-library/regex-operators.md)\
 [regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<regex>tür tanımları](../standard-library/regex-typedefs.md)
+[\<regex> tür tanımları](../standard-library/regex-typedefs.md)

@@ -2,12 +2,12 @@
 title: 2. Yönergeler
 ms.date: 01/18/2019
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
-ms.openlocfilehash: c3aadcf34e013c66dec81ca4b09dce4144294ac3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5b2649a65efd3368cf8a4d2649a424b1a539f1ef
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228407"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841980"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 
@@ -21,7 +21,7 @@ Bir OpenMP yönergesinin sözdizimi, [Ek C](c-openmp-c-and-cpp-grammar.md)'de di
 #pragma omp directive-name  [clause[ [,] clause]...] new-line
 ```
 
-Her yönerge `#pragma omp` , aynı ada sahip diğer (OpenMP veya satıcı uzantıları olarak OpenMP) pragma yönergeleriyle çakışma olasılığını azaltmak için ile başlar. Yönergesinin geri kalanı, derleyici yönergeleri için C ve C++ standartları kurallarını izler. Özellikle, beyaz boşluk, ve sonrasında kullanılabilir `#` ve bazen bir yönergedeki sözcükleri ayırmak için boşluk kullanılması gerekir. Sonrasında ön işleme belirteçleri `#pragma omp` makro değiştirme 'ye tabidir.
+Her yönerge  `#pragma omp` , aynı ada sahip diğer (OpenMP veya satıcı uzantıları olarak OpenMP) pragma yönergeleriyle çakışma olasılığını azaltmak için ile başlar. Yönergesinin geri kalanı, derleyici yönergeleri için C ve C++ standartları kurallarını izler. Özellikle, beyaz boşluk, ve sonrasında kullanılabilir `#` ve bazen bir yönergedeki sözcükleri ayırmak için boşluk kullanılması gerekir. Sonrasında ön işleme belirteçleri `#pragma omp` makro değiştirme 'ye tabidir.
 
 Yönergeler büyük/küçük harfe duyarlıdır. Yan tümcelerin yönergeler bölümünde görünme sırası önemli değildir. Yönergelerden yan tümceler gerektiğinde tekrarlanabilir ve her bir yan tümcenin açıklamasında listelenen kısıtlamalara tabidir. Bir yan tümcesinde *değişken listesi* görünürse, yalnızca değişkenleri belirtmelidir. Her yönerge için yalnızca bir *Yönerge adı* belirtilebilir.  Örneğin, aşağıdaki yönergeye izin verilmez:
 
@@ -191,12 +191,12 @@ Kurallı form, döngü yineleme sayısının döngüye girişte hesaplanmasını
 
 Tablo 2-1: `schedule` yan tümce *türü* değerleri
 
-|||
+|Değer|Açıklama|
 |-|-|
 |static|`schedule(static,` *Chunk_size* `)` belirtildiğinde, yinelemeler *chunk_size*belirtilen boyut öbeklerine bölünür. Parçalar, iş parçacığı numarası sırasına göre bir kez, takım iş parçacığına bir hepsini bir kez daha kez atanır. *Chunk_size* belirtilmediğinde, yineleme alanı her iş parçacığına bir öbek atandığında, boyutu yaklaşık olarak eşit olan parçalara bölünür.|
-|dinamik|`schedule(dynamic,` *Chunk_size* `)` belirtildiğinde, yinelemeler, her biri *chunk_size* yineleme içeren bir dizi yığından ayrılır. Her bir öbek, bir atamayı bekleyen bir iş parçacığına atanır. İş parçacığı, yineleme öbekini yürütür ve sonra bir öbek atanıncaya kadar bir sonraki atamaya bekler. Atanacak son öbekte daha az sayıda yineleme olabilir. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
+|dynamic|`schedule(dynamic,` *Chunk_size* `)` belirtildiğinde, yinelemeler, her biri *chunk_size* yineleme içeren bir dizi yığından ayrılır. Her bir öbek, bir atamayı bekleyen bir iş parçacığına atanır. İş parçacığı, yineleme öbekini yürütür ve sonra bir öbek atanıncaya kadar bir sonraki atamaya bekler. Atanacak son öbekte daha az sayıda yineleme olabilir. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
 |temelli|`schedule(guided,` *Chunk_size* `)` belirtildiğinde, yinelemeler, azalan boyutlarla öbeklerdeki iş parçacıklarına atanır. Bir iş parçacığı atanmış yineleme öbeğini bitirdiğinde, hiçbiri ayrılana kadar dinamik olarak başka bir öbek atanır. 1 *chunk_size* için, her öbekin boyutu, iş parçacığı sayısına bölünen atanmamış yineleme sayısının yaklaşık olarak sayısıdır. Bu boyutlar neredeyse üstel olarak 1 ' i azaltır. *K* değeri 1 ' den büyük olan bir *chunk_size* için, en son öbekin *k* yinelemeden daha az yineleme olması dışında, Boyutlar neredeyse katlanarak *k*olarak azalır. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
-|çalışma zamanı|`schedule(runtime)`Belirtildiğinde, zamanlama ile ilgili karar, çalışma zamanına kadar ertelenir. Öbeklerin zamanlama *türü* ve boyutu, ortam değişkeni ayarlanarak çalışma zamanında seçilebilir `OMP_SCHEDULE` . Bu ortam değişkeni ayarlanmamışsa, sonuçta elde edilen zamanlama uygulama tanımlı olur. Belirtildiğinde `schedule(runtime)` *chunk_size* belirtilmemelidir.|
+|çalışma zamanı|`schedule(runtime)`Belirtildiğinde, zamanlama ile ilgili karar, çalışma zamanına kadar ertelenir. Öbeklerin zamanlama *türü* ve boyutu, ortam değişkeni ayarlanarak çalışma zamanında seçilebilir `OMP_SCHEDULE` . Bu ortam değişkeni ayarlanmamışsa, sonuçta elde edilen zamanlama uygulama tanımlı olur. Belirtildiğinde  `schedule(runtime)` *chunk_size* belirtilmemelidir.|
 
 Açıkça tanımlanmış bir yan tümce yokluğunda `schedule` , varsayılan değer `schedule` uygulama tanımlı ' dır.
 
@@ -462,21 +462,21 @@ Eşitleme gerektiren nesneler değişkenlere göre atananlardan sonra, bu deği�
 `flush` *Değişken listesi* olmayan bir yönerge, erişilemeyen nesneler hariç tüm paylaşılan nesneleri otomatik depolama süresiyle eşitler. (Bu, bir `flush` *değişken listesi*ile öğesinden daha fazla yüke neden olabilir.) `flush` *Değişken listesi* olmayan bir yönerge aşağıdaki yönergeler için kapsanır:
 
 - `barrier`
-- Giriş ve çıkış`critical`
-- Giriş ve çıkış`ordered`
-- Giriş ve çıkış`parallel`
-- Çıkışta`for`
-- Çıkışta`sections`
-- Çıkışta`single`
-- Giriş ve çıkış`parallel for`
-- Giriş ve çıkış`parallel sections`
+- Giriş ve çıkış `critical`
+- Giriş ve çıkış `ordered`
+- Giriş ve çıkış `parallel`
+- Çıkışta `for`
+- Çıkışta `sections`
+- Çıkışta `single`
+- Giriş ve çıkış `parallel for`
+- Giriş ve çıkış `parallel sections`
 
 Bir yan tümce varsa yönerge örtük değildir `nowait` . `flush`Yönergenin aşağıdakilerden herhangi biri için açık olmadığından not edilmelidir:
 
-- Girişi sırasında`for`
-- Giriş veya çıkış`master`
-- Girişi sırasında`sections`
-- Girişi sırasında`single`
+- Girişi sırasında `for`
+- Giriş veya çıkış `master`
+- Girişi sırasında `sections`
+- Girişi sırasında `single`
 
 Geçici nitelenmiş tür içeren bir nesnenin değerine erişen bir başvuru, `flush` Bu nesneyi önceki sıra noktasında belirten bir yönerge gibi davranır. Bir nesnenin değerini geçici nitelenmiş tür ile değiştiren bir başvuru, `flush` sonraki sıra noktasında bu nesneyi belirten bir yönerge gibi davranır.
 
@@ -597,11 +597,11 @@ Yönerge yan tümceleri içinde görünen tüm değişkenler görünür olmalıd
 
 Aşağıdaki bölümlerde veri paylaşımı özniteliği yan tümceleri açıklanır:
 
-- [özelleştirme](#2721-private)
+- [private](#2721-private)
 - [firstprivate](#2722-firstprivate)
 - [lastprivate](#2723-lastprivate)
 - [Paylaşılan](#2724-shared)
-- [default](#2725-default)
+- [varsayılanını](#2725-default)
 - [reduction](#2726-reduction)
 - [copyin](#2727-copyin)
 - [copyprivate](#2728-copyprivate)
@@ -717,7 +717,7 @@ Aşağıdaki formlardan birine sahip bir ifade için genellikle bir azaltma beli
 
 - *x* `=` *x* *op* *Expr*
 - *x* *binop* `=` *Expr*
-- *x* `=` *Expr* *op* *x* (çıkarma hariç)
+- *x* `=` *Expr* *op* *x*  (çıkarma hariç)
 - *x*`++`
 - `++` *x*
 - *x*`--`
@@ -765,7 +765,7 @@ for (i=0; i<n; i++) {
 
 Aşağıdaki tabloda, geçerli olan işleçler ve bunların kurallı başlatma değerleri listelenmektedir. Gerçek başlatma değeri, azaltma değişkeninin veri türüyle tutarlı olacak.
 
-|İşleç|Başlatma|
+|Operatör|Başlatma|
 |--------------|--------------------|
 |`+`|0|
 |`*`|1|
@@ -860,7 +860,7 @@ Yönergelerin dinamik iç içe geçirilmesi aşağıdaki kurallara uymalıdır:
 
 - `for`, `sections` ve `single` aynı şekilde bağlanan yönergelerin birbirini `parallel` iç içe olmasına izin verilmez.
 
-- `critical`aynı ada sahip yönergelerin birbirini iç içe olmasına izin verilmez. Bu kısıtlamanın kilitlenmeyi engellemek için yeterli olmadığını unutmayın.
+- `critical` aynı ada sahip yönergelerin birbirini iç içe olmasına izin verilmez. Bu kısıtlamanın kilitlenmeyi engellemek için yeterli olmadığını unutmayın.
 
 - `for`, ve yönergeleri,, ve alanları `sections` `single` `critical` `ordered` `master` bölgelere aynı şekilde bağlansa,, ve bölgelerine dinamik kapsam içinde izin verilmez `parallel` .
 

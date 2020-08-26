@@ -1,5 +1,5 @@
 ---
-title: '&lt;ostream&gt; işlevleri'
+title: '&lt;ostream &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - ostream/std::swap
@@ -12,21 +12,21 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: 8d93e46b0323058d93c6d0bd8c1ee566998aef61
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 4db966797202b16911aa67b6fda7c81785d98166
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419709"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842643"
 ---
-# <a name="ltostreamgt-functions"></a>&lt;ostream&gt; işlevleri
+# <a name="ltostreamgt-functions"></a>&lt;ostream &gt; işlevleri
 
-Bunlar, &lt;ostream&gt;tanımlanan genel şablon işlevleridir. Üye işlevleri için [basic_ostream sınıfı](basic-ostream-class.md) belgelerine bakın.
+Bunlar, ostream 'de tanımlanan genel şablon işlevleridir &lt; &gt; . Üye işlevleri için [basic_ostream sınıfı](basic-ostream-class.md) belgelerine bakın.
 
-||||
-|-|-|-|
-|[endl](#endl)|[ucundaki](#ends)|[temizlenemiyor](#flush)|
-|[Kur](#swap)|
+[endl](#endl)\
+[ucundaki](#ends)\
+[temizlenemiyor](#flush)\
+[Kur](#swap)
 
 ## <a name="endl"></a>endl
 
@@ -40,7 +40,7 @@ basic_ostream<Elem, Tr>& endl(
 
 ### <a name="parameters"></a>Parametreler
 
-*Eled*\
+*Elem*\
 Öğe türü.
 
 *OSTR*\
@@ -87,7 +87,7 @@ basic_ostream<Elem, Tr>& ends(
 
 ### <a name="parameters"></a>Parametreler
 
-*Eled*\
+*Elem*\
 Öğe türü.
 
 *OSTR*\
@@ -136,7 +136,7 @@ basic_ostream<Elem, Tr>& flush(
 
 ### <a name="parameters"></a>Parametreler
 
-*Eled*\
+*Elem*\
 Öğe türü.
 
 *OSTR*\
@@ -173,7 +173,7 @@ testing
 
 ## <a name="swap"></a>swap
 
-İki `basic_ostream` nesnesinin değerlerini değiş tokuş eder.
+İki nesnenin değerlerini değiş tokuş eder `basic_ostream` .
 
 ```cpp
 template <class Elem, class Tr>
@@ -184,22 +184,22 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Eled*\
+*Elem*\
 Öğe türü.
 
 *Tr*\
 Karakter nitelikleri.
 
-*sol*\
-`basic_ostream` nesnesine bir lvalue başvurusu.
+*tarafta*\
+Bir nesneye lvalue başvurusu `basic_ostream` .
 
-*sağ*\
-`basic_ostream` nesnesine bir lvalue başvurusu.
+*Right*\
+Bir nesneye lvalue başvurusu `basic_ostream` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.swap(right)`yürütür `swap`.
+Şablon işlevi `swap` yürütülür `left.swap(right)` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ostream > \<](../standard-library/ostream.md)
+[\<ostream>](../standard-library/ostream.md)

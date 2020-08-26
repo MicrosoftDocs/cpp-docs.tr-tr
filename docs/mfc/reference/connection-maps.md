@@ -4,45 +4,45 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-ms.openlocfilehash: 947cd09023ef4028a32db8e2e4e8b33f7e04e0dd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 517017e9e60b86e96daa24f7822538e91c609fb4
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374799"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841421"
 ---
 # <a name="connection-maps"></a>Bağlantı Eşlemeleri
 
-OLE denetimleri arabirimleri diğer uygulamalara maruz bırakabilir. Bu arabirimler yalnızca bir kapsayıcıdan bu denetime erişime izin verir. Bir OLE denetimi diğer OLE nesnelerinin dış arabirimlerine erişmek istiyorsa, bir bağlantı noktası oluşturulmalıdır. Bu bağlantı noktası, olay haritaları veya bildirim işlevleri gibi dış gönderme haritalarına denetim giden erişim sağlar.
+OLE denetimleri, arabirimleri diğer uygulamalar için kullanıma sunabilebiliyor. Bu arabirimler yalnızca bir kapsayıcıdan bu denetime erişim izni verir. OLE denetimi diğer OLE nesnelerinin dış arabirimlerine erişmek istiyorsa bir bağlantı noktası oluşturulmalıdır. Bu bağlantı noktası, olay haritaları veya bildirim işlevleri gibi dış dağıtım haritalarına giden erişim denetimi sağlar.
 
-Microsoft Hazırlık Sınıf Kitaplığı, bağlantı noktalarını destekleyen bir programlama modeli sunar. Bu modelde, OLE denetimi için arabirimleri veya bağlantı noktalarını belirlemek için "bağlantı eşlemleri" kullanılır. Bağlantı eşlemleri her bağlantı noktası için bir makro içerir. Bağlantı haritaları hakkında daha fazla bilgi için [CConnectionPoint](../../mfc/reference/cconnectionpoint-class.md) sınıfına bakın.
+Microsoft Foundation Class Kitaplığı bağlantı noktalarını destekleyen bir programlama modeli sunar. Bu modelde, OLE denetimine yönelik arabirimleri veya bağlantı noktalarını belirlemek için "bağlantı haritaları" kullanılır. Bağlantı haritaları her bağlantı noktası için bir makro içerir. Bağlantı eşlemeleri hakkında daha fazla bilgi için bkz. [CConnectionPoint](../../mfc/reference/cconnectionpoint-class.md) sınıfı.
 
-Genellikle, denetim yalnızca iki bağlantı noktasını destekler: biri olaylar için, diğeri özellik bildirimleri için. Bunlar `COleControl` taban sınıf tarafından uygulanır ve denetim yazarı tarafından ek bir çalışma gerektirmez. Sınıfınızda uygulamak istediğiniz ek bağlantı noktaları el ile eklenmelidir. Bağlantı eşlemlerini ve noktalarını desteklemek için MFC aşağıdaki makroları sağlar:
+Genellikle, bir denetim yalnızca iki bağlantı noktasını destekler: bir olay ve biri özellik bildirimleri için. Bunlar temel sınıf tarafından uygulanır `COleControl` ve denetim yazıcısı tarafından ek iş gerektirmez. Sınıfınıza uygulamak istediğiniz ek bağlantı noktalarının el ile eklenmesi gerekir. MFC bağlantı eşlemelerini ve noktalarını desteklemek için aşağıdaki makroları sağlar:
 
-### <a name="connection-map-declaration-and-demarcation"></a>Bağlantı Haritası Bildirimi ve Çizimi
+### <a name="connection-map-declaration-and-demarcation"></a>Bağlantı eşleme bildirimi ve demarcation
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[BEGIN_CONNECTION_PART](#begin_connection_part)|Ek bir bağlantı noktası uygulayan katıştırılmış bir sınıf bildirir (sınıf bildiriminde kullanılması gerekir).|
-|[END_CONNECTION_PART](#end_connection_part)|Bağlantı noktası bildirimini sona erdirin (sınıf bildiriminde kullanılmalıdır).|
-|[CONNECTION_IID](#connection_iid)|Denetimin bağlantı noktasının arabirim kimliğini belirtir.|
-|[DECLARE_CONNECTION_MAP](#declare_connection_map)|Bir bağlantı eşleminin bir sınıfta kullanılacağını bildirir (sınıf bildiriminde kullanılması gerekir).|
-|[BEGIN_CONNECTION_MAP](#begin_connection_map)|Bağlantı eşlemi tanımını başla (sınıf uygulamasında kullanılmalıdır).|
-|[END_CONNECTION_MAP](#end_connection_map)|Bağlantı eşlemi tanımını sona erdirin (sınıf uygulamasında kullanılmalıdır).|
-|[CONNECTION_PART](#connection_part)|Denetimin bağlantı haritasında bir bağlantı noktası belirtir.|
+|[BEGIN_CONNECTION_PART](#begin_connection_part)|Ek bağlantı noktası uygulayan gömülü bir sınıf bildirir (sınıf bildiriminde kullanılması gerekir).|
+|[END_CONNECTION_PART](#end_connection_part)|Bir bağlantı noktasının bildirimini sonlandırır (sınıf bildiriminde kullanılması gerekir).|
+|[CONNECTION_IID](#connection_iid)|Denetimin bağlantı noktasının arabirim KIMLIĞINI belirtir.|
+|[DECLARE_CONNECTION_MAP](#declare_connection_map)|Bir bağlantı eşlemesinin bir sınıfta kullanılacağını bildirir (sınıf bildiriminde kullanılması gerekir).|
+|[BEGIN_CONNECTION_MAP](#begin_connection_map)|Bir bağlantı eşlemesinin tanımını başlatır (sınıf uygulamasında kullanılması gerekir).|
+|[END_CONNECTION_MAP](#end_connection_map)|Bir bağlantı eşlemesinin tanımını sonlandırır (sınıf uygulamasında kullanılması gerekir).|
+|[CONNECTION_PART](#connection_part)|Denetimin bağlantı eşlemesindeki bir bağlantı noktasını belirtir.|
 
-Aşağıdaki işlevler, bağlantı noktalarını kullanarak bir bağlantı nın kurulmasına ve kesilmesine yardımcı olur:
+Aşağıdaki işlevler bağlantı noktalarını kullanarak bağlantı oluşturma ve bağlantının kesilmesi konusunda bir havuza yardımcı olur:
 
-### <a name="initializationtermination-of-connection-points"></a>Bağlantı Noktalarının Başlatılması/Sonlandırılması
+### <a name="initializationtermination-of-connection-points"></a>Bağlantı noktalarının başlatılması/sonlandırılması
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[AfxConnectionAdvise](#afxconnectionadvise)|Kaynak ve lavabo arasında bir bağlantı kurar.|
-|[AfxConnectionTavsiye](#afxconnectionunadvise)|Kaynak ve lavabo arasındaki bağlantıyı koparır.|
+|[AfxConnectionAdvise](#afxconnectionadvise)|Kaynak ve havuz arasında bir bağlantı kurar.|
+|[AfxConnectionUnadvise](#afxconnectionunadvise)|Kaynak ve havuz arasındaki bağlantıyı keser.|
 
-## <a name="begin_connection_part"></a><a name="begin_connection_part"></a>BEGIN_CONNECTION_PART
+## <a name="begin_connection_part"></a><a name="begin_connection_part"></a> BEGIN_CONNECTION_PART
 
-Olay ve özellik bildirim bağlantı noktalarının ötesindeki ek bağlantı noktalarının tanımını başlatmak için BEGIN_CONNECTION_PART makroyu kullanın.
+Olay ve Özellik bildirim bağlantı noktalarının ötesinde ek bağlantı noktalarının tanımına başlamak için BEGIN_CONNECTION_PART makrosunu kullanın.
 
 ```
 BEGIN_CONNECTION_PART(theClass, localClass)
@@ -50,7 +50,7 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*theClass*<br/>
+*Sınıf*<br/>
 Bağlantı noktası bu olan denetim sınıfının adını belirtir.
 
 *localClass*<br/>
@@ -58,15 +58,15 @@ Bağlantı noktasını uygulayan yerel sınıfın adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfınızın üye işlevlerini tanımlayan bildirim (.h) dosyasında, BEGIN_CONNECTION_PART makrosuyla bağlantı noktasını başlatın, ardından CONNECTION_IID makroyu ve uygulamak istediğiniz diğer üye işlevleri ekleyin ve END_CONNECTION_PART makrosuyla bağlantı noktası eşlemi tamamlayın.
+Sınıfınız için üye işlevlerini tanımlayan bildirim (. h) dosyasında, bağlantı noktasını BEGIN_CONNECTION_PART makroyla başlatın, sonra CONNECTION_IID makrosunu ve uygulamak istediğiniz diğer tüm üye işlevleri ekleyin ve bağlantı noktası haritasını END_CONNECTION_PART makroyla doldurun.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="end_connection_part"></a><a name="end_connection_part"></a>END_CONNECTION_PART
+## <a name="end_connection_part"></a><a name="end_connection_part"></a> END_CONNECTION_PART
 
-Bağlantı noktanızın bildirimini sona erdirin.
+Bağlantı noktanlarınızın bildirimini sonlandırır.
 
 ```
 END_CONNECTION_PART(localClass)
@@ -79,11 +79,11 @@ Bağlantı noktasını uygulayan yerel sınıfın adını belirtir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="connection_iid"></a><a name="connection_iid"></a>CONNECTION_IID
+## <a name="connection_iid"></a><a name="connection_iid"></a> CONNECTION_IID
 
-OLE denetiminiz tarafından desteklenen bir bağlantı noktası için arabirim kimliği tanımlamak için BEGIN_CONNECTION_PART ve END_CONNECTION_PART makroları arasında kullanın.
+OLE denetiminiz tarafından desteklenen bir bağlantı noktası için arabirim KIMLIĞI tanımlamak üzere BEGIN_CONNECTION_PART ve END_CONNECTION_PART makroları arasında kullanın.
 
 ```
 CONNECTION_IID(iid)
@@ -91,24 +91,24 @@ CONNECTION_IID(iid)
 
 ### <a name="parameters"></a>Parametreler
 
-*ııd*<br/>
-Bağlantı noktası tarafından çağrılan arabirimin arabirim kimliği.
+*'si*<br/>
+Bağlantı noktası tarafından çağrılan arabirimin arabirim KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*iid* bağımsız değişkeni, bağlantı noktasının bağlı lavabolarında çağıracağı arabirimi tanımlamak için kullanılan bir arabirim kimliğidir. Örneğin:
+*IID* bağımsız değişkeni, bağlantı noktasının bağlı olan havuzları üzerinde çağıracaksınız arabirimi tanımlamak için kullanılan BIR arabirim kimliğidir. Örnek:
 
 [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/cpp/connection-maps_1.h)]
 
-`ISinkInterface` arabirimi çağıran bir bağlantı noktası belirtir.
+arabirimi çağıran bir bağlantı noktasını belirtir `ISinkInterface` .
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="declare_connection_map"></a><a name="declare_connection_map"></a>DECLARE_CONNECTION_MAP
+## <a name="declare_connection_map"></a><a name="declare_connection_map"></a> DECLARE_CONNECTION_MAP
 
-Programınızdaki türetilmiş her `COleControl`sınıf, denetiminizin desteklediği ek bağlantı noktalarını belirtmek için bir bağlantı eşlemi sağlayabilir.
+`COleControl`Programınızdaki her türetilmiş sınıf, denetiminizin desteklediği ek bağlantı noktalarını belirtmek için bir bağlantı eşlemesi sağlayabilir.
 
 ```
 DECLARE_CONNECTION_MAP()
@@ -116,15 +116,15 @@ DECLARE_CONNECTION_MAP()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminiz ek noktaları destekliyorsa, sınıf bildirgenizin sonundaki DECLARE_CONNECTION_MAP makroyu kullanın. Daha sonra, sınıfın üye işlevlerini tanımlayan .cpp dosyasında, BEGIN_CONNECTION_MAP makroyu, denetimin bağlantı noktalarının her biri için makroCONNECTION_PART ve bağlantı haritasının sonunu bildirmek için makro END_CONNECTION_MAP kullanın.
+Denetiminiz ek noktaları destekliyorsa, sınıf bildirimin sonundaki DECLARE_CONNECTION_MAP makrosunu kullanın. Ardından, sınıfının üye işlevlerini tanımlayan. cpp dosyasında, denetimin bağlantı noktalarının her biri için BEGIN_CONNECTION_MAP makrosunu, CONNECTION_PART makrolarını ve bağlantı eşlemesinin sonunu bildirmek için END_CONNECTION_MAP makrosunu kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="begin_connection_map"></a><a name="begin_connection_map"></a>BEGIN_CONNECTION_MAP
+## <a name="begin_connection_map"></a><a name="begin_connection_map"></a> BEGIN_CONNECTION_MAP
 
-Programınızdaki türetilmiş her `COleControl`sınıf, denetiminizin destekleyeceği bağlantı noktalarını belirtmek için bir bağlantı eşlemi sağlayabilir.
+`COleControl`Programınızdaki her türetilmiş sınıf, denetiminizin destekleyeceği bağlantı noktalarını belirtmek için bir bağlantı haritası sağlayabilir.
 
 ```
 BEGIN_CONNECTION_MAP(theClass, theBase)
@@ -132,23 +132,23 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 
 ### <a name="parameters"></a>Parametreler
 
-*theClass*<br/>
-Bağlantı haritası bu olan denetim sınıfının adını belirtir.
+*Sınıf*<br/>
+Bağlantı eşlemesi bu olan denetim sınıfının adını belirtir.
 
 *theBase*<br/>
-*Sınıfın*taban sınıfının adını belirtir.
+Sınıfın temel sınıfının adını *belirtir.*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamada (. CPP) sınıfınızın üye işlevlerini tanımlayan dosya, BEGIN_CONNECTION_MAP makroile bağlantı eşlemi başlatın, ardından [CONNECTION_PART](#connection_part) makroyu kullanarak bağlantı noktalarınızın her biri için makro girişleri ekleyin. Son olarak, [END_CONNECTION_MAP](#end_connection_map) makrosuyla bağlantı haritasını tamamlayın.
+Uygulamada (. CPP) sınıfınız için üye işlevleri tanımlayan dosya, bağlantı haritasını BEGIN_CONNECTION_MAP makrosu ile başlatın ve [CONNECTION_PART](#connection_part) makrosunu kullanarak bağlantı noktalarınızın her biri için makro girişleri ekleyin. Son olarak, bağlantı haritasını [END_CONNECTION_MAP](#end_connection_map) makrosu ile doldurun.
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="end_connection_map"></a><a name="end_connection_map"></a>END_CONNECTION_MAP
+## <a name="end_connection_map"></a><a name="end_connection_map"></a> END_CONNECTION_MAP
 
-Bağlantı haritanızın tanımını sona erdirer.
+Bağlantı haritaınızın tanımını sonlandırır.
 
 ```
 END_CONNECTION_MAP()
@@ -156,11 +156,11 @@ END_CONNECTION_MAP()
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="connection_part"></a><a name="connection_part"></a>CONNECTION_PART
+## <a name="connection_part"></a><a name="connection_part"></a> CONNECTION_PART
 
-OLE denetiminiz için bir bağlantı noktasını belirli bir arabirim kimliğiyle eşler.
+OLE denetiminiz için bir bağlantı noktasını belirli bir arabirim KIMLIĞIYLE eşler.
 
 ```
 CONNECTION_PART(theClass, iid, localClass)
@@ -168,30 +168,30 @@ CONNECTION_PART(theClass, iid, localClass)
 
 ### <a name="parameters"></a>Parametreler
 
-*theClass*<br/>
+*Sınıf*<br/>
 Bağlantı noktası bu olan denetim sınıfının adını belirtir.
 
-*ııd*<br/>
-Bağlantı noktası tarafından çağrılan arabirimin arabirim kimliği.
+*'si*<br/>
+Bağlantı noktası tarafından çağrılan arabirimin arabirim KIMLIĞI.
 
 *localClass*<br/>
 Bağlantı noktasını uygulayan yerel sınıfın adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin:
+Örnek:
 
 [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/connection-maps_2.cpp)]
 
-arabirimi çağıran bir bağlantı noktası olan bir `IID_ISinkInterface` bağlantı eşlemi uygular.
+arabirimi çağıran bir bağlantı noktası ile bağlantı haritası uygular `IID_ISinkInterface` .
 
 ### <a name="requirements"></a>Gereksinimler
 
-  **Üstbilgi** afxdisp.h
+  **Üst bilgi** AfxDisp. h
 
-## <a name="afxconnectionadvise"></a><a name="afxconnectionadvise"></a>AfxConnectionAdvise
+## <a name="afxconnectionadvise"></a><a name="afxconnectionadvise"></a> AfxConnectionAdvise
 
-*PUnkSrc*tarafından belirtilen bir kaynak arasında bağlantı kurmak için bu işlevi arayın ve *pUnkSink*tarafından belirtilen bir lavabo.
+*Punksrc*tarafından belirtilen bir kaynak ve *pUnkSink*tarafından belirtilen bir havuz arasında bağlantı kurmak için bu işlevi çağırın.
 
 ```
 BOOL AFXAPI AfxConnectionAdvise(
@@ -205,23 +205,23 @@ BOOL AFXAPI AfxConnectionAdvise(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkSrc*<br/>
-Arabirimi çağıran nesneye işaretçi.
+Arabirimi çağıran nesneye yönelik bir işaretçi.
 
 *pUnkSink*<br/>
-Arabirimi uygulayan nesneye işaretçi.
+Arabirimini uygulayan nesneye yönelik bir işaretçi.
 
-*ııd*<br/>
-Bağlantının arabirim kimliği.
+*'si*<br/>
+Bağlantının arabirim KIMLIĞI.
 
 *bRefCount*<br/>
-TRUE, bağlantıyı oluşturmanın *pUnkSink'in* başvuru sayısının artışa neden olması gerektiğini gösterir. FALSE, başvuru sayısının artmaması gerektiğini gösterir.
+DOĞRU, bağlantı oluşturmanın *pUnkSink* başvuru sayısının artmasına neden olması gerektiğini gösterir. FALSE, başvuru sayısının arttırılmayacağını gösterir.
 
 *pdwCookie*<br/>
-Bağlantı tanımlayıcısı döndürülen bir DWORD işaretçisi. Bu değer, bağlantı `AfxConnectionUnadvise` kesilirken *dwCookie* parametresi olarak geçirilmelidir.
+Bir bağlantı tanımlayıcısının döndürüldüğü DWORD için bir işaretçi. Bağlantının bağlantısı kesilirken bu değerin *dwCookie* parametresi olarak geçirilmesi gerekir `AfxConnectionUnadvise` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir bağlantı kurulmuşsa sıfır olmayan; aksi takdirde 0.
+Bağlantı kurulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
@@ -229,11 +229,11 @@ Bir bağlantı kurulmuşsa sıfır olmayan; aksi takdirde 0.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxctl.h
+**Üst bilgi:** afxctl. h
 
-## <a name="afxconnectionunadvise"></a><a name="afxconnectionunadvise"></a>AfxConnectionTavsiye
+## <a name="afxconnectionunadvise"></a><a name="afxconnectionunadvise"></a> AfxConnectionUnadvise
 
-*PUnkSrc*tarafından belirtilen bir kaynak arasındaki bağlantıyı kesmek için bu işlevi arayın ve *pUnkSink*tarafından belirtilen bir lavabo.
+*Punksrc*tarafından belirtilen bir kaynak ve *pUnkSink*tarafından belirtilen bir havuz arasındaki bağlantının bağlantısını kesmek için bu işlevi çağırın.
 
 ```
 BOOL AFXAPI AfxConnectionUnadvise(
@@ -247,23 +247,23 @@ BOOL AFXAPI AfxConnectionUnadvise(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkSrc*<br/>
-Arabirimi çağıran nesneye işaretçi.
+Arabirimi çağıran nesneye yönelik bir işaretçi.
 
 *pUnkSink*<br/>
-Arabirimi uygulayan nesneye işaretçi.
+Arabirimini uygulayan nesneye yönelik bir işaretçi.
 
-*ııd*<br/>
-Bağlantı noktası arabiriminin arabirim kimliği.
+*'si*<br/>
+Bağlantı noktası arabiriminin arabirim KIMLIĞI.
 
 *bRefCount*<br/>
-TRUE, bağlantının kesilmesinin *pUnkSink'in* başvuru sayısının kesilmesine neden olması gerektiğini gösterir. FALSE, başvuru sayısının belirtilmemesi gerektiğini gösterir.
+DOĞRU, bağlantı bağlantısının kesilmesi, *pUnkSink* başvuru sayısının azaltımına neden olması gerektiğini gösterir. FALSE, başvuru sayısının küçültülemeyeceği anlamına gelir.
 
 *dwCookie*<br/>
-Bağlantı tanımlayıcısı tarafından `AfxConnectionAdvise`döndürülür.
+Tarafından döndürülen bağlantı tanımlayıcısı `AfxConnectionAdvise` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlantı kesildiyse sıfırsız; aksi takdirde 0.
+Bağlantının bağlantısı kesildiyse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
@@ -271,8 +271,8 @@ Bağlantı kesildiyse sıfırsız; aksi takdirde 0.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxctl.h
+**Üst bilgi:** afxctl. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Makrolar ve Küreseller](../../mfc/reference/mfc-macros-and-globals.md)
+[Makrolar ve genel öğeler](../../mfc/reference/mfc-macros-and-globals.md)

@@ -5,20 +5,20 @@ f1_keywords:
 - <optional>
 helpviewer_keywords:
 - <optional>
-ms.openlocfilehash: bce31811c98d351f3c561b3136d41f7ed23d13e0
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 31a3d9aad539e45bb835331a4ef63690d0e16f49
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687252"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842682"
 ---
 # <a name="ltoptionalgt"></a>&lt;optional&gt;
 
-@No__t_0 kapsayıcı sınıfı şablonunu ve çeşitli destekleyici şablonları tanımlar.
+Kapsayıcı sınıfı şablonunu `optional` ve çeşitli destekleyici şablonları tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<optional >
+**Üst bilgi:**\<optional>
 
 **Ad alanı:** std
 
@@ -26,28 +26,28 @@ ms.locfileid: "72687252"
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[işleç = =](../standard-library/optional-operators.md#op_eq_eq)|Bir nesnenin başka bir nesneye eşit olup olmadığını sınar.|
-|[operator!=](../standard-library/optional-operators.md#op_neq)|Bir nesnenin başka bir nesneye eşit olup olmadığını sınar.|
-|[işleç <](../standard-library/optional-operators.md#op_lt)|Soldaki nesne sağdaki nesneden küçükse sınar.|
-|[işleç < =](../standard-library/optional-operators.md#op_lt_eq)|Soldaki nesnenin sağdaki nesneden küçük veya ona eşit olup olmadığını sınar.|
-|[işleç >](../standard-library/optional-operators.md#op_gt)|Soldaki nesnenin sağdaki nesneden daha büyük olup olmadığını sınar.|
-|[operator>=](../standard-library/optional-operators.md#op_lt_eq)|Soldaki nesnenin sağdaki nesneden büyük veya ona eşit olup olmadığını sınar.|
+|[işleç! =](../standard-library/optional-operators.md#op_neq)|Bir nesnenin başka bir nesneye eşit olup olmadığını sınar.|
+|[işleç<](../standard-library/optional-operators.md#op_lt)|Soldaki nesne sağdaki nesneden küçükse sınar.|
+|[işleç<=](../standard-library/optional-operators.md#op_lt_eq)|Soldaki nesnenin sağdaki nesneden küçük veya ona eşit olup olmadığını sınar.|
+|[işleç>](../standard-library/optional-operators.md#op_gt)|Soldaki nesnenin sağdaki nesneden daha büyük olup olmadığını sınar.|
+|[işleç>=](../standard-library/optional-operators.md#op_lt_eq)|Soldaki nesnenin sağdaki nesneden büyük veya ona eşit olup olmadığını sınar.|
 
 > [!NOTE]
-> İlişkisel karşılaştırmaların yanı sıra, \<optional > işleçleri de **nullopt** ve `T` ile karşılaştırmayı destekler.
+> İlişkisel \<optional> karşılaştırmaların yanı sıra operatörler de **nullopt** ve ile karşılaştırmayı destekler `T` .
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[make_optional](../standard-library/optional-functions.md#make_optional)|Bir nesneyi isteğe bağlı hale getirir.|
-|[Kur](../standard-library/optional-functions.md#swap)|İki `optional` nesnesinin içerilen değerlerini değiştirir.|
+|[Kur](../standard-library/optional-functions.md#swap)|İki nesnenin içerilen değerlerini değiştirir `optional` .|
 
 ### <a name="classes-and-structs"></a>Sınıflar ve Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
 |hash|İçerilen nesnenin karmasını döndürür.|
 |[isteğe bağlı sınıf](../standard-library/optional-class.md)|Bir değeri tutan veya tutabilecek bir nesneyi açıklar.|
@@ -56,9 +56,9 @@ ms.locfileid: "72687252"
 
 ### <a name="objects"></a>Nesneler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[nullopt](../standard-library/optional-functions.md#nullopt)|Karşılaştırmalar için `nullopt_t` örneği.|
+|[nullopt](../standard-library/optional-functions.md#nullopt)|`nullopt_t`Karşılaştırma için bir örnek.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

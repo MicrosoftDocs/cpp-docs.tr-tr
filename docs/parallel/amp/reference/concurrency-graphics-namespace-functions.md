@@ -5,22 +5,21 @@ f1_keywords:
 - amp_graphics/Concurrency::fast_math::copy_async
 - amp_graphics/Concurrency::fast_math::copy
 ms.assetid: ace01cd5-29d3-4356-930e-c81a61c5f934
-ms.openlocfilehash: 776f715f72d2e3b6b3841856323a52953e9c5344
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e767c6b3e02564d89be48f47e8bf7718600af961
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376336"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841252"
 ---
 # <a name="concurrencygraphics-namespace-functions"></a>Concurrency::graphics ad alanı işlevleri
 
-|||
-|-|-|
-|[Kopya](#copy)|[copy_async](#copy_async)|
+[kopya](#copy)\
+[copy_async](#copy_async)
 
-## <a name="copy-function-concurrencygraphics-namespace"></a><a name="copy"></a>kopyalama Fonksiyonu (Eşzamanlılık::grafik Namespace)
+## <a name="copy-function-concurrencygraphics-namespace"></a><a name="copy"></a> Copy Işlevi (concurrency:: Graphics ad alanı)
 
-Kaynak dokusunu hedef arabelleğe kopyalar veya kaynak arabelleği hedef arabelleği olarak kopyalar. Bu fonksiyonun genel `copy(src, dest)`biçimi .
+Bir kaynak dokusunu hedef arabelleğe kopyalar veya bir kaynak arabelleğini hedef arabelleğe kopyalar. Bu işlevin genel formu `copy(src, dest)` .
 
 ```cpp
 template <
@@ -122,25 +121,25 @@ void copy (
 Kopyalanacak doku bölümünün kapsamı.
 
 *_Dst*<br/>
-Kopyalanması gereken nesne.
+Kopyalanacak nesne.
 
 *_Dst_byte_size*<br/>
-Hedefteki bayt sayısı.
+Hedefteki baytların sayısı.
 
 *_Dst_type*<br/>
 Hedef nesnenin türü.
 
 *_Dst_offset*<br/>
-Kopyalamaya başlanacak hedefe mahsup.
+Kopyalamanın başlayacağı hedefe olan fark.
 
-*GirişIterator*<br/>
+*InputIterator*<br/>
 Giriş yineleyicisinin türü.
 
 *OutputIterator*<br/>
-Çıktı yineleyicisinin türü.
+Çıkış yineleyicisinin türü.
 
 *_Src*<br/>
-Kopyalamaya itiraz etmek için.
+Kopyalanacak nesneye.
 
 *_Src_byte_size*<br/>
 Kaynaktaki bayt sayısı.
@@ -149,17 +148,17 @@ Kaynaktaki bayt sayısı.
 Kaynak nesnenin türü.
 
 *_Src_offset*<br/>
-Kopyalamaya başlamak için kaynak içine ofset.
+Kopyalamanın başlayacağı kaynağa olan Aralık.
 
-*Ilk*<br/>
+*adı*<br/>
 Kaynak kapsayıcıya bir başlangıç yineleyicisi.
 
-*Son*<br/>
-Kaynak kapsayıcıya sonlandırıcı bir yineleyici.
+*soyadına*<br/>
+Kaynak kapsayıcıya bir bitiş yineleyicisi.
 
-## <a name="copy_async-function-concurrencygraphics-namespace"></a><a name="copy_async"></a>copy_async Fonksiyonu (Eşzamanlılık::grafik Namespace)
+## <a name="copy_async-function-concurrencygraphics-namespace"></a><a name="copy_async"></a> copy_async Işlevi (concurrency:: Graphics ad alanı)
 
-Bir kaynak dokusunu bir hedef arabelleğe kopyalar veya kaynak arabelleği bir hedef arabelleğe kopyalar ve sonra üzerinde beklenebilecek [completion_future](completion-future-class.md) bir nesne döndürür. Kod hızlandırıcı üzerinde çalışırken veriler kopyalanamıyor. Bu fonksiyonun genel `copy(src, dest)`biçimi .
+Zaman uyumsuz olarak bir kaynak dokusunu bir hedef arabelleğe kopyalar veya bir kaynak arabelleği hedef arabelleğe kopyalar ve ardından beklemiş olabilecek bir [completion_future](completion-future-class.md) nesnesi döndürür. Bir hızlandırıcı üzerinde kod çalışırken veri kopyalanamıyor. Bu işlevin genel formu `copy(src, dest)` .
 
 ```cpp
 template<
@@ -257,25 +256,25 @@ concurrency::completion_future copy_async(_Src_type& _Src,
 Kopyalanacak doku bölümünün kapsamı.
 
 *_Dst*<br/>
-Kopyalanması gereken nesne.
+Kopyalanacak nesne.
 
 *_Dst_byte_size*<br/>
-Hedefteki bayt sayısı.
+Hedefteki baytların sayısı.
 
 *_Dst_type*<br/>
 Hedef nesnenin türü.
 
 *_Dst_offset*<br/>
-Kopyalamaya başlanacak hedefe mahsup.
+Kopyalamanın başlayacağı hedefe olan fark.
 
-*GirişIterator*<br/>
+*InputIterator*<br/>
 Giriş yineleyicisinin türü.
 
 *OutputIterator*<br/>
-Çıktı yineleyicisinin türü.
+Çıkış yineleyicisinin türü.
 
 *_Src*<br/>
-Kopyalamaya itiraz etmek için.
+Kopyalanacak nesneye.
 
 *_Src_byte_size*<br/>
 Kaynaktaki bayt sayısı.
@@ -284,19 +283,19 @@ Kaynaktaki bayt sayısı.
 Kaynak nesnenin türü.
 
 *_Src_offset*<br/>
-Kopyalamaya başlamak için kaynak içine ofset.
+Kopyalamanın başlayacağı kaynağa olan Aralık.
 
-*Ilk*<br/>
+*adı*<br/>
 Kaynak kapsayıcıya bir başlangıç yineleyicisi.
 
-*Son*<br/>
-Kaynak kapsayıcıya sonlandırıcı bir yineleyici.
+*soyadına*<br/>
+Kaynak kapsayıcıya bir bitiş yineleyicisi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amp_graphics.h
+**Üst bilgi:** amp_graphics. h
 
-**Ad alanı:** Eşzamanlılık::grafikler
+**Ad alanı:** Eşzamanlılık:: grafik
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

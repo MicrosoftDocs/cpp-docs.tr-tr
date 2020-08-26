@@ -1,23 +1,23 @@
 ---
-title: Rvalue başvuru bildirimci:&amp;&amp;
+title: 'Rvalue başvuru bildirimci: &amp;&amp;'
 ms.date: 11/04/2016
 f1_keywords:
 - '&&'
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-ms.openlocfilehash: 65eec84447043b89ff94b77b7aed22b1b06f58e3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 953aafe79115ad32a172c878eb910dd06b81e3f4
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227107"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842045"
 ---
-# <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru bildirimci:&amp;&amp;
+# <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru bildirimci: &amp;&amp;
 
 Bir rvalue ifadesine bir başvuru tutar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 type-id && cast-expression
@@ -391,13 +391,12 @@ print_type_and_value<string&>(string& t)
 
 Aşağıdaki tabloda, şablon bağımsız değişkeni tür kesintisi için başvuru daraltma kuralları özetlenmektedir:
 
-|||
-|-|-|
-|Genişletilmiş tür|Daraltılmış tür|
-|`T& &`|`T&`|
-|`T& &&`|`T&`|
-|`T&& &`|`T&`|
-|`T&& &&`|`T&&`|
+| Genişletilmiş tür | Daraltılmış tür |
+|--|--|
+| `T& &` | `T&` |
+| `T& &&` | `T&` |
+| `T&& &` | `T&` |
+| `T&& &&` | `T&&` |
 
 Şablon bağımsız değişkeni kesintisi, kusursuz iletme uygulayan önemli bir öğedir. Bu konuda daha önce sunulan, kusursuz iletme başlıklı Bölüm, daha ayrıntılı bir şekilde iletme işlemini açıklar.
 

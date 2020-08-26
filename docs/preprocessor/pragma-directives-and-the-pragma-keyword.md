@@ -13,52 +13,87 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: 6cfbcd325dc895719bad5dccc9c19bcda90cdaa0
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 786f76d9f7fd2eee73c6b1d009186bf93ea0c667
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74858080"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842695"
 ---
 # <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma yönergeleri ve __pragma anahtar sözcüğü
 
 Pragma yönergeleri makine veya işletim sistemine özgü derleyici özelliklerini belirtir. Microsoft derleyicisine özgü **__pragma** anahtar sözcüğü, makro tanımları içinde pragma yönergelerini kodlamanıza olanak sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma** *belirteci-dize*\
 > **__pragma (** *belirteç-dize* **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her bir C ve C++ uygulaması, kendi ana makinesine veya işletim sistemine özgü benzersiz bazı özellikler destekler. Örneğin, bazı programlar, bellekteki verilerin konumu üzerinde tam denetim sağlamalıdır veya belirli işlevlerin parametreleri alma şeklini denetmelidir. **#Pragma** yönergeleri, her bir derleyicinin makine ve işletim sistemine özgü özellikler sunmasına, C ve C++ dillerle genel uyumluluğu sürdürmesinin bir yolunu sunar.
+Her C ve C++ uygulamasının, ana makinesi veya işletim sistemine özgü bazı özellikleri destekler. Örneğin, bazı programlar, bellekteki verilerin konumu üzerinde tam denetim sağlamalıdır veya belirli işlevlerin parametreleri alma şeklini denetmelidir. **#Pragma** yönergeler, her derleyicinin makine ve işletim sistemine özgü özellikler sunmasına, C ve C++ dilleriyle genel uyumluluğu sürdürmesinin bir yolunu sunar.
 
 Pragmalar, tanıma göre makine veya işletim sistemine özgüdür ve genellikle her derleyicide farklıdır. Pragmalar, yeni Önişlemci işlevselliği sağlamak ya da derleyiciye uygulama tanımlı bilgiler sağlamak için koşullu yönergeler içinde kullanılabilir.
 
-*Token-string* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri veren bir karakter dizisidir. Numara işareti ( **#** ), pragma 'ı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma**, çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
+*Token-string* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri veren bir karakter dizisidir. Numara işareti ( **#** ), pragmayı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma**, çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
 
 Derleyici, tanımadığı bir pragma bulduğunda bir uyarı verir ve derlemeyi sürdürür.
 
 Microsoft C ve C++ derleyicileri aşağıdaki pragmaları tanır:
 
-||||
-|-|-|-|
-|[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|
-|[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[açıklamanın](../preprocessor/comment-c-cpp.md)|
-|[component](../preprocessor/component.md)|[uyumlu](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|
-|[data_seg](../preprocessor/data-seg.md)|[deprecated](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|
-|[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|
-|[çalışmayacaktır](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|
-|[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|
-|[intrinsic](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|
-|[lebilmesi](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)|[omp](../preprocessor/omp.md)|
-|[once](../preprocessor/once.md)|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|
-|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|
-|[region, endregion](../preprocessor/region-endregion.md)|[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|
-|[setlocale](../preprocessor/setlocale.md)|[strict_gs_check](../preprocessor/strict-gs-check.md)|[yönetilmeyen](../preprocessor/managed-unmanaged.md)|
-|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|[warning](../preprocessor/warning.md)||
+:::row:::
+   :::column span="":::
+      [`alloc_text`](../preprocessor/alloc-text.md)\
+      [`auto_inline`](../preprocessor/auto-inline.md)\
+      [`bss_seg`](../preprocessor/bss-seg.md)\
+      [`check_stack`](../preprocessor/check-stack.md)\
+      [`code_seg`](../preprocessor/code-seg.md)\
+      [`comment`](../preprocessor/comment-c-cpp.md)\
+      [`component`](../preprocessor/component.md)\
+      [`conform`](../preprocessor/conform.md)<sup>1</sup>\
+      [`const_seg`](../preprocessor/const-seg.md)\
+      [`data_seg`](../preprocessor/data-seg.md)\
+      [`deprecated`](../preprocessor/deprecated-c-cpp.md)
+   :::column-end:::
+   :::column span="":::
+      [`detect_mismatch`](../preprocessor/detect-mismatch.md)\
+      [`fenv_access`](../preprocessor/fenv-access.md)\
+      [`float_control`](../preprocessor/float-control.md)\
+      [`fp_contract`](../preprocessor/fp-contract.md)\
+      [`function`](../preprocessor/function-c-cpp.md)\
+      [`hdrstop`](../preprocessor/hdrstop.md)\
+      [`include_alias`](../preprocessor/include-alias.md)\
+      [`init_seg`](../preprocessor/init-seg.md)<sup>1</sup>\
+      [`inline_depth`](../preprocessor/inline-depth.md)\
+      [`inline_recursion`](../preprocessor/inline-recursion.md)
+   :::column-end:::
+   :::column span="":::
+      [`intrinsic`](../preprocessor/intrinsic.md)\
+      [`loop`](../preprocessor/loop.md)<sup>1</sup>\
+      [`make_public`](../preprocessor/make-public.md)\
+      [`managed`](../preprocessor/managed-unmanaged.md)\
+      [`message`](../preprocessor/message.md)\
+      [`omp`](../preprocessor/omp.md)\
+      [`once`](../preprocessor/once.md)\
+      [`optimize`](../preprocessor/optimize.md)\
+      [`pack`](../preprocessor/pack.md)\
+      [`pointers_to_members`](../preprocessor/pointers-to-members.md)<sup>1</sup>
+   :::column-end:::
+   :::column span="":::
+      [`pop_macro`](../preprocessor/pop-macro.md)\
+      [`push_macro`](../preprocessor/push-macro.md)\
+      [`region`, endregion](../preprocessor/region-endregion.md)\
+      [`runtime_checks`](../preprocessor/runtime-checks.md)\
+      [`section`](../preprocessor/section.md)\
+      [`setlocale`](../preprocessor/setlocale.md)\
+      [`strict_gs_check`](../preprocessor/strict-gs-check.md)\
+      [`unmanaged`](../preprocessor/managed-unmanaged.md)\
+      [`vtordisp`](../preprocessor/vtordisp.md)<sup>1</sup>\
+      [`warning`](../preprocessor/warning.md)
+   :::column-end:::
+:::row-end:::
 
-<sup>1</sup> yalnızca C++ derleyici tarafından desteklenir.
+<sup>1</sup> yalnızca C++ derleyicisi tarafından desteklenir.
 
 ## <a name="pragmas-and-compiler-options"></a>Pragmalar ve derleyici seçenekleri
 
@@ -81,7 +116,7 @@ cl /Zp8 some_file.cpp
 
 Derleyici Ayrıca, **#pragma** yönergesiyle aynı işlevselliğe sahip olan Microsoft 'a özgü **__pragma** anahtar sözcüğünü de destekler. Farkı, **__pragma** anahtar sözcüğünün bir makro tanımında satır içi kullanılabilir. **#Pragma** yönergesi, bir makro tanımında kullanılamaz, çünkü derleyici yönergede işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
 
-Aşağıdaki kod örneği, **__pragma** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "Derleyici COM Destek Örnekleri" içindeki ACDUAL örneğinde bulunan mfcdual.h başlığından alınmıştır:
+Aşağıdaki kod örneği, **__pragma** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "derleyici COM desteği örnekleri" içinde ACDUAL örneğindeki mfcdual. h üst bilgisinden ayıklanalınmıştır:
 
 ```cpp
 #define CATCH_ALL_DUAL \
@@ -105,4 +140,4 @@ return _hr; \
 
 [C/C++ Önişlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)\
 [C pragmaları](../c-language/c-pragmas.md)\
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

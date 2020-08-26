@@ -1,23 +1,23 @@
 ---
-title: ımportıdl (C++ com özniteliği)
+title: ımportıdl (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importidl
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-ms.openlocfilehash: 6e41a98bef079c92b6df6e7eff203301aa9ceae4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8f3c2c5c67ac216d096d1082814c561698f3f732
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166828"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842253"
 ---
 # <a name="importidl"></a>importidl
 
 Belirtilen. IDL dosyasını oluşturulan. IDL dosyasına ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ importidl(idl_file) ];
@@ -45,22 +45,20 @@ Uygulamanız için oluşturulacak. IDL dosyası ile birleştirmek istediğiniz. 
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Öznitelikleri](compiler-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[import](import.md)<br/>
+[Derleyici öznitelikleri](compiler-attributes.md)<br/>
+[Tek başına öznitelikler](stand-alone-attributes.md)<br/>
+[aktarmaya](import.md)<br/>
 [importlib](importlib.md)<br/>
-[include](include-cpp.md)<br/>
-[includelib](includelib-cpp.md)
+[içeriyor](include-cpp.md)<br/>
+[INCLUDELIB](includelib-cpp.md)

@@ -1,23 +1,23 @@
 ---
-title: ımportlib (C++ com özniteliği)
+title: ımportlib (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
 - vc-attr.importlib
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-ms.openlocfilehash: 451204aae52d884b9cbc81d7e589028f5cfefae5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 004533282ca089a076df6b110d52701abc16f71d
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80166815"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88842227"
 ---
 # <a name="importlib"></a>importlib
 
 Oluşturulan tür kitaplığı için kullanılabilir başka bir tür kitaplığına derlenmiş olan türleri oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 [ importlib("tlb_file") ];
@@ -45,22 +45,20 @@ Aşağıdaki kod, **ımportlib**kullanımına ilişkin bir örnek gösterir:
 
 ## <a name="requirements"></a>Gereksinimler
 
-### <a name="attribute-context"></a>Öznitelik bağlamı
-
-|||
+| Öznitelik bağlamı | Değer |
 |-|-|
-|**Uygulama hedefi**|Yerdeki|
+|**Şunlara uygulanır**|Her yer|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Öznitelikleri](compiler-attributes.md)<br/>
-[Tek Başına Öznitelikler](stand-alone-attributes.md)<br/>
-[import](import.md)<br/>
+[Derleyici öznitelikleri](compiler-attributes.md)<br/>
+[Tek başına öznitelikler](stand-alone-attributes.md)<br/>
+[aktarmaya](import.md)<br/>
 [importidl](importidl.md)<br/>
-[include](include-cpp.md)<br/>
-[includelib](includelib-cpp.md)
+[içeriyor](include-cpp.md)<br/>
+[INCLUDELIB](includelib-cpp.md)

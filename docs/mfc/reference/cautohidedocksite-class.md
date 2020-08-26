@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CAutoHideDockSite [MFC], UnSetAutoHideMode
 - CAutoHideDockSite [MFC], m_nExtraSpace
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
-ms.openlocfilehash: 2779e643b15179b0017535fbfbb144f94e1aedbe
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 14db8d93ea7706b3a4daad2ba751f8410974f6cb
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562018"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841642"
 ---
 # <a name="cautohidedocksite-class"></a>CAutoHideDockSite sınıfı
 
@@ -43,7 +43,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|||
+| Ad | Açıklama |
 |-|-|
 |Ad|Açıklama|
 |`CAutoHideDockSite::CAutoHideDockSite`|Bir `CAutoHideDockSite` nesnesi oluşturur.|
@@ -51,7 +51,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|||
+| Ad | Açıklama |
 |-|-|
 |Ad|Açıklama|
 |`CAutoHideDockSite::AllowShowOnPaneMenu`|`CAutoHideDockSite`Bölmesinin bölme menüsünde gösterilip gösterilmeyeceğini gösterir.|
@@ -65,7 +65,7 @@ class CAutoHideDockSite : public CDockSite
 
 ### <a name="data-members"></a>Veri üyeleri
 
-|||
+| Ad | Açıklama |
 |-|-|
 |Ad|Açıklama|
 |[CAutoHideDockSite:: m_nExtraSpace](#m_nextraspace)|Araç çubukları ve yerleştirme çubuğunun kenarı arasındaki alanın boyutunu tanımlar. Bu boşluk, yerleştirme alanının hizalamasına bağlı olarak, sol kenardan veya üst kenardan ölçülür.|

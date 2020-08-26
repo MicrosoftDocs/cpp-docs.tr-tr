@@ -1,25 +1,25 @@
 ---
-title: '&lt;Le&gt;'
+title: '&lt;tuple&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <tuple>
 helpviewer_keywords:
 - tuple header
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
-ms.openlocfilehash: a391a77ea65a203a7eddde12046c5df89a77194a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b1eeba2fced21f5a38799db7fc4af259e03bc266
+ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447155"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88841850"
 ---
-# <a name="lttuplegt"></a>&lt;Le&gt;
+# <a name="lttuplegt"></a>&lt;tuple&gt;
 
-Örnekleri değişen türdeki `tuple` nesneleri tutan bir şablonu tanımlar.
+`tuple`Örnekleri değişen türdeki nesneleri tutan bir şablonu tanımlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<tanımlama grubu >
+**Üst bilgi:**\<tuple>
 
 **Ad alanı:** std
 
@@ -27,39 +27,39 @@ ms.locfileid: "68447155"
 
 ### <a name="classes-and-structs"></a>Sınıflar ve Yapılar
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[tuple Sınıfı](../standard-library/tuple-class.md)|Sabit uzunluklu bir öğe dizisini sarmalanmış.|
-|[tuple_element sınıfı](../standard-library/tuple-element-class-tuple.md)|Bir `tuple` öğenin türünü sarmalanmış olarak kaydırır.|
-|[tuple_size Sınıfı](../standard-library/tuple-size-class-tuple.md)|Öğe `tuple` sayısını kaydırır.|
+|[demet sınıfı](../standard-library/tuple-class.md)|Sabit uzunluklu bir öğe dizisini sarmalanmış.|
+|[tuple_element sınıfı](../standard-library/tuple-element-class-tuple.md)|Bir öğenin türünü sarmalanmış olarak kaydırır `tuple` .|
+|[tuple_size Sınıfı](../standard-library/tuple-size-class-tuple.md)|`tuple`Öğe sayısını kaydırır.|
 |[uses_allocator](../standard-library/uses-allocator-structure.md)||
 
 ### <a name="objects"></a>Nesneler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[tuple_element_t](../standard-library/tuple-functions.md#tuple_element_t)||
 |[tuple_size_v](../standard-library/tuple-functions.md#tuple_size_v)||
 
 ### <a name="operators"></a>İşleçler
 
-|||
+|Ad|Açıklama|
 |-|-|
-|[operator==](../standard-library/tuple-operators.md#op_eq_eq)|`tuple` Nesnelerin karşılaştırması, eşittir.|
-|[operator!=](../standard-library/tuple-operators.md#op_neq)|Eşit değil `tuple` nesnelerin karşılaştırması.|
-|[işleç <](../standard-library/tuple-operators.md#op_lt)|`tuple` Nesnelerin karşılaştırması, küçüktür.|
-|[işleç < =](../standard-library/tuple-operators.md#op_lt_eq)|`tuple` Nesnelerin karşılaştırılması, küçük veya eşittir.|
-|[işleç >](../standard-library/tuple-operators.md#op_gt)|Daha büyük `tuple` nesnelerin karşılaştırması.|
-|[operator>=](../standard-library/tuple-operators.md#op_gt_eq)|`tuple` Nesnelerin, büyük veya eşit karşılaştırması.|
+|[işleç = =](../standard-library/tuple-operators.md#op_eq_eq)|Nesnelerin karşılaştırması `tuple` , eşittir.|
+|[işleç! =](../standard-library/tuple-operators.md#op_neq)|`tuple`Eşit değil nesnelerin karşılaştırması.|
+|[işleç<](../standard-library/tuple-operators.md#op_lt)|Nesnelerin karşılaştırması `tuple` , küçüktür.|
+|[işleç<=](../standard-library/tuple-operators.md#op_lt_eq)|Nesnelerin karşılaştırılması `tuple` , küçük veya eşittir.|
+|[işleç>](../standard-library/tuple-operators.md#op_gt)|`tuple`Daha büyük nesnelerin karşılaştırması.|
+|[işleç>=](../standard-library/tuple-operators.md#op_gt_eq)|`tuple`Nesnelerin, büyük veya eşit karşılaştırması.|
 
 ### <a name="functions"></a>İşlevler
 
-|||
+|Ad|Açıklama|
 |-|-|
 |[uygulayabilirsiniz](../standard-library/tuple-functions.md#apply)|Bir kayıt düzeni içeren bir işlev çağırır.|
 |[forward_as_tuple](../standard-library/tuple-functions.md#forward)|Bir başvuru grubu oluşturur.|
-|[get](../standard-library/tuple-functions.md#get)|`tuple` Nesnesinden bir öğe alır.|
-|[make_from_tuple](../standard-library/tuple-functions.md#make_from_tuple)|Oluşturmak için toplu değer `tuple`.|
+|[get](../standard-library/tuple-functions.md#get)|Nesnesinden bir öğe alır `tuple` .|
+|[make_from_tuple](../standard-library/tuple-functions.md#make_from_tuple)|Oluşturmak için toplu değer `tuple` .|
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Öğesinden bir `tuple` öğesi değerleri yapar.|
 |[Kur](../standard-library/tuple-functions.md#swap)||
 |[formlarınızı](../standard-library/tuple-functions.md#tie)|Öğesinden bir `tuple` öğesi başvurusu yapar.|
@@ -67,4 +67,4 @@ ms.locfileid: "68447155"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<dizi >](../standard-library/array.md)
+[\<array>](../standard-library/array.md)
