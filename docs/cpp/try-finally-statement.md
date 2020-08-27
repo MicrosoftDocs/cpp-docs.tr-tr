@@ -1,6 +1,7 @@
 ---
-title: try-finally Deyimi
-ms.date: 11/19/2018
+title: try-finally deyimi
+description: __Try ve yapılandırılmış özel durum işleme deyimlerinin __finally Microsoft C++ başvurusu.
+ms.date: 08/25/2020
 f1_keywords:
 - __try
 - _try
@@ -20,51 +21,55 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-ms.openlocfilehash: 6234e8a2d2c18177a1e66475fff850c76f7ef73e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: edabbbe35c86f0305e31f36584c4dfe01f2f88cd
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227081"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898639"
 ---
-# <a name="try-finally-statement"></a>try-finally Deyimi
+# <a name="try-finally-statement"></a>`try-finally` Ekstre
 
-**Microsoft'a Özgü**
+`try-finally`Bu ifade, C ve C++ dillerinde yapılandırılmış özel durum işlemeyi destekleyen, **Microsoft 'a özgü** bir uzantıdır.
 
-Aşağıdaki sözdizimi, **try-finally** ifadesini açıklar:
+## <a name="syntax"></a>Syntax
 
-> **\_\_almaya**<br/>
-> {\
-> &nbsp;&nbsp;&nbsp;&nbsp;korunan kod \
-> }\
-> **\_\_son olarak**\
-> {\
-> &nbsp;&nbsp;&nbsp;&nbsp;sonlandırma kodu \
-> }
+Aşağıdaki sözdizimi, ifadesini açıklar `try-finally` :
+
+```cpp
+    // . . .
+    __try {
+        // guarded code
+    }
+    __finally {
+        // termination code
+    }
+    // . . .
+```
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*try-finally-deyimin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bileşik-deyimin* ** \_ \_ son** *Birleşik ifadesini* ** \_ \_ deneyin**
+> *`try-finally-statement`*:\
+> &emsp;**`__try`** *`compound-statement`* **`__finally`** *`compound-statement`*
 
-**Try-finally** , C ve C++ dillerinin bir kod bloğunun yürütülmesi kesintiye uğradığında temizleme kodunun yürütülmesini Garantilemesini sağlayan bir Microsoft uzantısıdır. Temizleme, bellek ayırmayı, dosyaları kapatmayı ve dosya tutamaçlarını serbest bırakmayı, bu görevlerden oluşur. **Try-finally** ekstresi, özellikle de zamanından önce geri dönebileceği bir hata için bir denetim yapıldığı birkaç yere sahip yordamlar için yararlıdır.
+`try-finally`Bu ifade, bir kod bloğunun yürütülmesi kesintiye uğradığında, hedef uygulamaların Temizleme kodunun yürütülmesini garanti etmesini sağlayan C ve C++ dillerinin Microsoft uzantısıdır. Temizleme, bellek ayırmayı, dosyaları kapatmayı ve dosya tutamaçlarını serbest bırakmayı, bu görevlerden oluşur. Bu `try-finally` ifade özellikle, bir hatanın, zamanından önce geri dönememesine neden olabilecek birkaç yere sahip yordamlar için yararlıdır.
 
-İlgili bilgi ve kod örneği için bkz. [try-except deyimleri](../cpp/try-except-statement.md). Genel olarak yapılandırılmış özel durum işleme hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). C++/CLı ile yönetilen uygulamalarda özel durumları işleme hakkında daha fazla bilgi için bkz. [/clr altında özel durum işleme](../extensions/exception-handling-cpp-component-extensions.md).
+İlgili bilgi ve kod örneği için [ `try-except` bkz..](../cpp/try-except-statement.md) Genel olarak yapılandırılmış özel durum işleme hakkında daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme](../cpp/structured-exception-handling-c-cpp.md). C++/CLı ile yönetilen uygulamalarda özel durumları işleme hakkında daha fazla bilgi için, bkz. [özel `/clr` durum işleme ](../extensions/exception-handling-cpp-component-extensions.md).
 
 > [!NOTE]
-> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için, C++ özel durum işleme mekanizmasını ([try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimlerini) kullanmanız önerilir.
+> Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için, c++ özel durum işleme mekanizmasını ([ `try` , `catch` ve `throw` ](../cpp/try-throw-and-catch-statements-cpp.md) deyimlerini) kullanmanız önerilir.
 
-**__Try** yan tümcesinden sonraki bileşik ifade, korunan bölümdür. Yan tümcesinden sonraki bileşik ifade **`__finally`** sonlandırma işleyicisidir. İşleyici, korunan bölüm bir özel durum (olağan dışı sonlandırma) veya standart Fall (normal sonlandırma) tarafından çıkış yapılıp olmamasından bağımsız olarak, korunan bölüme çıkıldığında yürütülen bir eylem kümesini belirtir.
+Yan tümcesinden sonraki bileşik ifade, **`__try`** korunan bölümdür. Yan tümcesinden sonraki bileşik ifade **`__finally`** sonlandırma işleyicisidir. İşleyici, korunan bölüm çıkıldığında, korunan bölümü bir özel durum (olağan dışı sonlandırma) veya standart Fall (normal sonlandırma) ile sonlandırıp sonlandırdığı zaman yürütülen bir eylem kümesini belirtir.
 
-Denetim, basit sıralı yürütme (karşı) ile bir **__try** ifadesine ulaşır. Denetim **__try**girdiğinde, ilişkili işleyicisi etkin hale gelir. Denetim akışı try bloğunun sonuna ulaşırsa, yürütme aşağıdaki gibi devam eder:
+Denetim, **`__try`** basit sıralı yürütme (geçiş) ile bir ifadeye ulaşır. Denetim öğesine girdiğinde **`__try`** , ilişkili işleyicisi etkin hale gelir. Denetim akışı try bloğunun sonuna ulaşırsa, yürütme aşağıdaki gibi devam eder:
 
 1. Sonlandırma işleyicisi çağrılır.
 
-1. Sonlandırma işleyicisi tamamlandığında, yürütme deyimden sonra devam eder **`__finally`** . Korunan bölümün bitiş şeklinden bağımsız olarak (örneğin, **`goto`** korumalı **`return`** gövdeden veya bir deyimin dışında), denetim akışı korunan bölümden ayrılmadan *önce* sonlandırma işleyicisi yürütülür.
+1. Sonlandırma işleyicisi tamamlandığında, yürütme deyimden sonra devam eder **`__finally`** . Ancak, korunan bölüm sonlanır (örneğin, **`goto`** korunan **`return`** gövdeden veya bir deyimin dışında), sonlandırma işleyicisi denetim akışı korunan bölümden *geçmeden önce* yürütülür.
 
    Bir **`__finally`** ifade uygun özel durum işleyicisini aramayı engellemez.
 
-**__Try** bloğunda bir özel durum oluşursa, işletim sistemi özel durum için bir işleyici bulmalıdır veya program başarısız olur. Bir işleyici bulunursa, hiçbir ve tüm **`__finally`** blokları yürütülür ve yürütme işleyicide sürdürülür.
+Blokta bir özel durum oluşursa **`__try`** , işletim sistemi özel durum için bir işleyici bulmalıdır veya program başarısız olur. Bir işleyici bulunursa, hiçbir ve tüm **`__finally`** blokları yürütülür ve yürütme işleyicide sürdürülür.
 
 Örneğin, aşağıdaki şekilde gösterildiği gibi bir dizi işlevin, A işlevini D işlevine çağırdığı hakkında düşünün. Her işlevde bir sonlandırma işleyicisi vardır. Bir özel durum D işlevinde ve içinde işlenirse, Sistem yığını kaldırmasından sonra sonlandırma işleyicileri bu sırada çağrılır: D, C, B.
 
@@ -72,23 +77,23 @@ Denetim, basit sıralı yürütme (karşı) ile bir **__try** ifadesine ulaşır
 Sonlandırma Işleyicisi yürütme sırası
 
 > [!NOTE]
-> Try-finally davranışı, C# gibi **son olarak**kullanılması desteklenen diğer dillerden farklıdır.  Tek bir **__try** , ve öğelerinin her ikisine de sahip olabilir **`__finally`** **`__except`** .  Her ikisi birlikte kullanılacaksa, bir dış try-except ifadesinin INNER try-finally ifadesini içermesi gerekir.  Her bir bloğun ne zaman yürütüldüğünü belirten kurallar da farklıdır.
+> Try-finally davranışı, C# gibi kullanımını destekleyen diğer dillerden farklıdır **`finally`** .  Tek biri **`__try`** , ve öğelerinin her ikisine de sahip olabilir **`__finally`** **`__except`** .  Her ikisi birlikte kullanılacaksa, bir dış try-except ifadesinin INNER try-finally ifadesini içermesi gerekir.  Her bir bloğun ne zaman yürütüldüğünü belirten kurallar da farklıdır.
 
-Önceki sürümlerle uyumluluk için, **_try**, **_finally**ve **_leave** **__try**için eş anlamlılardır ve bu, **`__finally`** **`__leave`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtilmediyse.
+,, Ve önceki sürümleriyle uyumluluk için,, ve, **`_try`** **`_finally`** **`_leave`** **`__try`** **`__finally`** **`__leave`** derleyici seçeneği [ `/Za` (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md) belirtilmediyse, ve için eş anlamlılardır.
 
 ## <a name="the-__leave-keyword"></a>__leave Anahtar Sözcüğü
 
-**`__leave`** Anahtar sözcüğü yalnızca **try-finally** ifadesinin korunan bölümünde geçerlidir ve etkisi, korunan bölümün sonuna atlamanız için geçerlidir. Yürütme, sonlandırma işleyicisindeki ilk ifadede devam eder.
+**`__leave`** Anahtar sözcüğü, yalnızca bir deyimin korunan bölümünde geçerlidir `try-finally` ve etkisi, korunan bölümün sonuna atlamanız olur. Yürütme, sonlandırma işleyicisindeki ilk ifadede devam eder.
 
 Bir **`goto`** deyim ayrıca korunan bölümden de geçebilir, ancak yığın geri sarma 'yı çağırdığı için performansı düşürür. **`__leave`** İfade, yığın geri sarma nedeniyle daha etkilidir.
 
 ## <a name="abnormal-termination"></a>Olağan dışı sonlandırma
 
-[Longjmp](../c-runtime-library/reference/longjmp.md) çalışma zamanı işlevini kullanarak bir **try-finally** ifadesinden çıkmak olağan dışı sonlandırma olarak değerlendirilir. **__Try** ifadeye geçmek geçersizdir, ancak bunlardan biri atlanmak için geçerli değildir. **`__finally`** Ayrılma noktası ( **__try** bloğunun normal sonlandırması) ve hedef ( **`__except`** özel durumu işleyen blok) arasında etkin olan tüm deyimler çalıştırılmalıdır. Buna yerel geriye doğru izleme denir.
+`try-finally` [Longjmp](../c-runtime-library/reference/longjmp.md) çalışma zamanı işlevini kullanarak bir deyimden çıkmak olağan dışı sonlandırma olarak değerlendirilir. Bir deyime geçmek yasal değildir **`__try`** , ancak bir ifadeye geçmek yasal değildir. **`__finally`** Ayrılma noktası (bloğun normal sonlandırması **`__try`** ) ve hedef ( **`__except`** özel durumu işleyen blok) arasında etkin olan tüm deyimler çalıştırılmalıdır. Bu, yerel bir *geriye doğru izleme*olarak adlandırılır.
 
-Bir **`try`** blok, bloğa bir geç dahil olmak üzere herhangi bir nedenle erken sonlandırıldıysa, sistem, yığını geriye doğru izleme işleminin bir parçası olarak ilişkili **finally** bloğunu yürütür. Bu gibi durumlarda, [Nnormalsonlandırma](/windows/win32/Debug/abnormaltermination) işlevi **`true`** **finally** bloğunun içinden çağrıldığında döndürür; Aksi takdirde, döndürür **`false`** .
+Bir **`__try`** blok, bloğa bir geç dahil olmak üzere herhangi bir nedenle erken sonlandırıldıysa, sistem, **`__finally`** yığını geriye doğru izleme işleminin bir parçası olarak ilişkili bloğu yürütür. Bu gibi durumlarda, [`AbnormalTermination`](/windows/win32/Debug/abnormaltermination) işlev **`true`** bloğunun içinden çağrıldığında döndürür **`__finally`** ; Aksi takdirde, döndürür **`false`** .
 
-Bir işlem bir **try-finally** ifadesinin ortasında sonlandırılabilmesi için sonlandırma işleyicisi çağrılmaz.
+Sonlandırma işleyicisi, bir işlem bir deyimin yürütülmesi ortasında sonlandırılabilecek şekilde çağrılmaz `try-finally` .
 
 **SON Microsoft 'a özgü**
 
@@ -97,4 +102,4 @@ Bir işlem bir **try-finally** ifadesinin ortasında sonlandırılabilmesi için
 [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[Sonlandırma-Işleyici sözdizimi](/windows/win32/Debug/termination-handler-syntax)
+[Sonlandırma-işleyici sözdizimi](/windows/win32/Debug/termination-handler-syntax)

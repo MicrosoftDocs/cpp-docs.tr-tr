@@ -1,66 +1,70 @@
 ---
-title: Deyimler Özeti
-ms.date: 11/04/2016
+title: C deyimlerinin Özeti
+description: Microsoft C uygulamasında açıklama dilbilgisinin Özeti.
+ms.date: 08/24/2020
 ms.assetid: ce45d2fe-ec0e-459f-afb1-80ab6a7f0239
-ms.openlocfilehash: 122c79b53a8af8a384097dec51a14746a090b1cf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 448aa7ccb8c78e20ef09f47f4a3c77f447c76f60
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220801"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898403"
 ---
-# <a name="summary-of-statements"></a>Deyimler Özeti
+# <a name="summary-of-c-statements"></a>C deyimlerinin Özeti
 
-*ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Etiketli ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bileşik ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade ifadesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*seçim-ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*yineleme-ekstresi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sıçrama-deyim*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*try-except-deyimleri*  / \* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*try-finally-deyimin*  / \* Microsoft 'a özgü\*/
+*`statement`*:<br/>
+&emsp;*`labeled-statement`*<br/>
+&emsp;*`compound-statement`*<br/>
+&emsp;*`expression-statement`*<br/>
+&emsp;*`selection-statement`*<br/>
+&emsp;*`iteration-statement`*<br/>
+&emsp;*`jump-statement`*<br/>
+&emsp;*`try-except-statement`* /\* Microsoft 'a özgü \*/<br/>
+&emsp;*`try-finally-statement`* /\* Microsoft 'a özgü \*/
 
-*sıçrama-deyim*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`goto`**  *tanımlayıcı*  **;**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**devam**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**sonundan**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`return`***ifade*<sub>katılımı</sub> **;**
+*`jump-statement`*:<br/>
+&emsp;**`goto`** *`identifier`* **`;`**<br/>
+&emsp;**`continue ;`**<br/>
+&emsp;**`break ;`**<br/>
+&emsp;**`return`***`expression`* <sub>opt</sub>**`;`**<br/>
+&emsp;**`__leave ;`** /\*Microsoft 'a özgü<sup>1</sup>\*/
 
-*bileşik ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-List*<sub>opt</sub> *bildirimini-List*<sub>opt</sub> **}**
+*`compound-statement`*:<br/>
+&emsp;**`{`***`declaration-list`* <sub>opt</sub> *`statement-list`* <sub>kabul</sub>**`}`**
 
-*bildirim-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirim-liste* *bildirimi*
+*`declaration-list`*:<br/>
+&emsp;*`declaration`*<br/>
+&emsp;*`declaration-list`* *`declaration`*
 
-*Ekstre-liste*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre-List* *ekstresi*
+*`statement-list`*:<br/>
+&emsp;*`statement`*<br/>
+&emsp;*`statement-list`* *`statement`*
 
-*ifade ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade*<sub>katılımı</sub> **;**
+*`expression-statement`*:<br/>
+&emsp;*`expression`*<sub>opt</sub>**`;`**
 
-*yineleme-ekstresi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**while (**  *ifade*  **)**  *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`do`**  *deyim*  **while (**  *ifade*  **);**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**for (**  *Expression*<sub>opt</sub> **;** *Expression*<sub>opt</sub> **;** *Expression*<sub>opt</sub> **)** *deyimi*
+*`iteration-statement`*:<br/>
+&emsp;**`while (`** *`expression`* **`)`** *`statement`*<br/>
+&emsp;**`do`** *`statement`* **`while (`** *`expression`* **`) ;`**<br/>
+&emsp;**`for (`***`expression`* <sub>opt</sub> **`;`** opt *`expression`* <sub>opt</sub> **`;`** *`expression`* <sub>opt</sub> opt **`)`***`statement`*
 
-*seçim-ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**if (**  *ifade*  **)**  *deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**if (***ifade***)***deyim* **`else`** *deyimi*          <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Switch (**  *ifade*  **)**  *deyimi*
+*`selection-statement`*:<br/>
+&emsp;**`if (`** *`expression`* **`)`** *`statement`*<br/>
+&emsp;**`if (`** *`expression`* **`)`** *`statement`* **`else`** *`statement`*<br/>
+&emsp;**`switch (`** *`expression`* **`)`** *`statement`*
 
-*etiketli ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*  **:**  *ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`case`**  *sabit ifade*  **:**  *deyim*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:**  *ifade*
+*`labeled-statement`*:<br/>
+&emsp;*`identifier`* **`:`** *`statement`*<br/>
+&emsp;**`case`** *`constant-expression`* **`:`** *`statement`*<br/>
+&emsp;**`default :`** *`statement`*
 
-*try-except-deyimin*:/ \* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try**  *bileşik deyim* **__except (**  *ifade*  **)**  *bileşik deyim*
+*`try-except-statement`*:/ \* Microsoft 'a özgü \*/<br/>
+&emsp;**`__try`** *`compound-statement`* **`__except (`** *`expression`* **`)`** *`compound-statement`*
 
-*try-finally-deyimin*:/ \* Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__try***bileşik ifade* **`__finally`** *bileşik-ekstresi*    
+*`try-finally-statement`*:/ \* Microsoft 'a özgü \*/<br/>
+&emsp;**`__try`** *`compound-statement`* **`__finally`** *`compound-statement`*
+
+1 **`__leave`** anahtar sözcüğü yalnızca **`__try`** bir veya a bloğu içinde geçerlidir *`try-except-statement`* *`try-finally-statement`* .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

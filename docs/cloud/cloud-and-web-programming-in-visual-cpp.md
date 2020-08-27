@@ -3,22 +3,22 @@ title: Visual C++'da Bulut ve Web Programlama
 ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
 ms.topic: overview
-ms.openlocfilehash: 4e50557733d474d68b8e503d00b28b2ae8cb7f09
-ms.sourcegitcommit: 7750e4c291d56221c8893120c56a1fe6c9af60d6
+ms.openlocfilehash: 675502e9ae50c9e69ad4555502000d128d5d4cbe
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274639"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898664"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 
-' C++De, Web ve buluta bağlanmak için çeşitli seçenekleriniz vardır.
+C++ ' da, Web ve buluta bağlanmak için çeşitli seçenekleriniz vardır.
 
 ## <a name="microsoft-azure-sdks-and-rest-services"></a>SDK 'Ları ve REST hizmetlerini Microsoft Azure
 
-- [İçin Microsoft Azure Depolama Istemci kitaplığıC++](https://azure.github.io/azure-storage-cpp/)
+- [C++ için Microsoft Azure Depolama Istemci kitaplığı](https://azure.github.io/azure-storage-cpp/)
 
-  İçin C++ Azure Storage istemci kitaplığı, aşağıdaki yetenekler dahil ancak bunlarla sınırlı olmamak üzere Azure Storage ile çalışmaya yönelik KAPSAMLı bir API sağlar:
+  C++ için Azure Storage Istemci kitaplığı, aşağıdaki yetenekler dahil ancak bunlarla sınırlı olmamak üzere Azure Storage ile çalışmaya yönelik kapsamlı bir API sağlar:
 
   - Blob kapsayıcıları, tabloları ve kuyrukları oluşturun, okuyun, silin ve listeleyin.
   - Blob oluşturma, okuma, silme, listeleme ve kopyalama ile blob aralıklarını okuma ve yazma.
@@ -30,11 +30,11 @@ ms.locfileid: "71274639"
 
 - [OneDrive ve SharePoint Microsoft Graph](https://dev.onedrive.com/README.htm)
 
-  OneDrive API, uygulamanızı Office 365 ve SharePoint Server 2016 ' deki dosya ve klasörlere bağlamak için bir dizi HTTP hizmeti sağlar.
+  OneDrive API, uygulamanızı Microsoft 365 ve SharePoint Server 2016 ' deki dosyalara ve klasörlere bağlamak için bir dizi HTTP hizmeti sağlar.
 
 ## <a name="windows-and-cross-platform-networking-apis"></a>Windows ve platformlar arası ağ API 'Leri
 
-- [C++REST SDK (kod adı "Casablanca")](https://github.com/Microsoft/cpprestsdk)
+- [C++ REST SDK (kod adı "Casablanca")](https://github.com/Microsoft/cpprestsdk)
 
   REST hizmetleriyle etkileşim kurmak için modern, platformlar arası, zaman uyumsuz bir API sağlar.
 
@@ -47,11 +47,11 @@ ms.locfileid: "71274639"
 
 - [Windows:: Web:: http:: HttpClient](/uwp/api/windows.web.http.httpclient)
 
-  System. Web ad alanındaki aynı ada sahip .NET Framework sınıfında modellenen bir Windows Çalışma Zamanı HTTP istemci sınıfı. `HttpClient`, HTTP üzerinden zaman uyumsuz karşıya yükleme ve indirmeyi ve özel HTTP işleyicilerinin ardışık düzene eklenmesini sağlayan işlem hattı filtrelerini tam olarak destekler. Windows SDK tarifeli ağlar, OAuth kimlik doğrulaması ve daha fazlası için örnek filtreler içerir. Yalnızca Evrensel Windows platformu hedefleyen uygulamalar için `Windows::Web:HttpClient` sınıfını kullanmanızı öneririz.
+  System. Web ad alanındaki aynı ada sahip .NET Framework sınıfında modellenen bir Windows Çalışma Zamanı HTTP istemci sınıfı. `HttpClient` , HTTP üzerinden zaman uyumsuz karşıya yükleme ve indirmeyi ve özel HTTP işleyicilerinin ardışık düzene eklenmesini sağlayan işlem hattı filtrelerini tam olarak destekler. Windows SDK tarifeli ağlar, OAuth kimlik doğrulaması ve daha fazlası için örnek filtreler içerir. Yalnızca Evrensel Windows Platformu hedefleyen uygulamalar için sınıfını kullanmanızı öneririz `Windows::Web:HttpClient` .
 
 - [IXMLHTTPRequest2 arabirimi](/windows/win32/api/msxml6/nn-msxml6-ixmlhttprequest2)
 
-  HTTP üzerinden Internet 'e bağlanmak ve GET, PUT ve diğer HTTP komutlarını vermek için Windows Çalışma Zamanı uygulamalarında veya Windows masaüstü uygulamalarında kullanabileceğiniz yerel bir COM arabirimi sağlar. Daha fazla bilgi için bkz [. İzlenecek yol: Görevleri ve XML HTTP Isteklerini](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)kullanarak bağlanma.
+  HTTP üzerinden Internet 'e bağlanmak ve GET, PUT ve diğer HTTP komutlarını vermek için Windows Çalışma Zamanı uygulamalarında veya Windows masaüstü uygulamalarında kullanabileceğiniz yerel bir COM arabirimi sağlar. Daha fazla bilgi için bkz. [Izlenecek yol: görevleri ve XML http Isteklerini kullanarak bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).
 
 - [Windows Internet (WinInet)](/windows/win32/WinInet/portal)
 

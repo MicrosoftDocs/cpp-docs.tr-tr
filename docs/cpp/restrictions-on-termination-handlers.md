@@ -1,25 +1,26 @@
 ---
-title: Sonlandırma İşleyicileri Kısıtlamaları
-ms.date: 11/04/2016
+title: Sonlandırma işleyicileri kısıtlamaları
+description: Yapılandırılmış özel durum işleme sonlandırma işleyicileriyle ilgili kısıtlamalar.
+ms.date: 08/24/2020
 helpviewer_keywords:
 - termination handlers [C++], limitations
 - restrictions, termination handlers
 - try-catch keyword [C++], termination handlers
 ms.assetid: 8b1cb481-303f-4e79-b409-57a002a9fa9e
-ms.openlocfilehash: d53792afbc3d25fb21edafa7817919b63b79ab65
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 60fdb4c2a105f2fce4a32f475563a04f8e7bfaf9
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225897"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898266"
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 
-Bir **`goto`** **__try** deyim bloğuna veya deyim bloğuna geçmek için deyim kullanamazsınız **`__finally`** . Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Ancak, **__try** deyim bloğundan atlayabilirsiniz.) Ayrıca, bir özel durum işleyicisini veya sonlandırma işleyicisini bir blok içinde iç içe geçirilemez **`__finally`** .
+Deyim **`goto`** **`__try`** bloğunu veya deyim bloğunu atlayabilmeniz için bir deyim kullanamazsınız **`__finally`** . Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Ancak, bir **`__try`** deyim bloğunun dışına atlayabilirsiniz.) Ayrıca, bir özel durum işleyicisini veya sonlandırma işleyicisini bir blok içinde iç içe geçirilemez **`__finally`** .
 
-Ayrıca, sonlandırma işleyicisinde izin verilen bazı kod türleri şüpheli sonuçlar üretir. bu nedenle, hepsi de varsa dikkatli bir şekilde kullanmalısınız. Bunlardan biri, **`goto`** bir ekstre bloğunun dışına atlayan bir ifadedir **`__finally`** . Blok, normal sonlandırmanın bir parçası olarak yürütülerek hiçbir şey olağan dışı olur. Ancak sistem, yığını geri taşırsa, geriye doğru izleme işlemi geri alınmaz ve geçerli işlev olağan dışı sonlandırma olmasa da denetimi kazanır.
+Sonlandırma işleyicisinde izin verilen bazı kod türleri şüpheli sonuçlar üretir, bu nedenle bunları, varsa dikkatli bir şekilde kullanmalısınız. Bunlardan biri, **`goto`** bir ekstre bloğunun dışına atlayan bir ifadedir **`__finally`** . Blok, normal sonlandırmanın bir parçası olarak yürütülüyorsa hiçbir şey olağan dışı olur. Ancak sistem, yığını geri taşıdıysanız, geriye doğru izleme durdu. Ardından, geçerli işlev olağan dışı sonlandırma olmadığından denetim kazanır.
 
-**`return`** Bir ifade bloğu içindeki bir ifade **`__finally`** kabaca aynı durumu gösterir. Denetim, sonlandırma işleyicisini içeren işlevin hemen çağırana döner. Sistem yığını geri taşıdıysa, bu işlem durdurulur ve program bir özel durum oluşmamış gibi devam eder.
+**`return`** Bir ifade bloğu içindeki bir ifade **`__finally`** kabaca aynı durumu gösterir. Denetim, sonlandırma işleyicisini içeren işlevin hemen çağırana döner. Sistem yığını geri alıyorsa, bu işlem durdurulur. Ardından, program bir özel durum ortaya çıkarılmıştı gibi devam eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,23 +1,28 @@
 ---
 title: Derleyici hatası C2703
-ms.date: 11/04/2016
+description: Microsoft C/C++ derleyicisi hata C2703 açıklar.
+ms.date: 08/24/2020
 f1_keywords:
 - C2703
 helpviewer_keywords:
 - C2703
 ms.assetid: 384295c3-643d-47ae-a9a6-865b3036aa84
-ms.openlocfilehash: 62e03d1edc5806a9babc44eaf2dc388e3ed81de9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4d5b5ccad1cd15c1a107c81423e2372e14165776
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221113"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898606"
 ---
 # <a name="compiler-error-c2703"></a>Derleyici hatası C2703
 
-geçersiz __leave ekstresi
+> Geçersiz `__leave` ifade
 
-Bir * * `__leave** statement must be inside a ` __try ' bloğu.
+## <a name="remarks"></a>Açıklamalar
+
+Bir **`__leave`** deyimin bir blok içinde olması gerekir **`__try`** .
+
+## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C2703 oluşturur:
 
@@ -32,3 +37,9 @@ int main() {
    __finally {}
 }
 ```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[`__leave`Anahtar sözcüğü](../../cpp/try-except-statement.md#__leave)\
+[`try-except` Ekstre](../../cpp/try-except-statement.md)\
+[`try-finally` Ekstre](../../cpp/try-finally-statement.md)

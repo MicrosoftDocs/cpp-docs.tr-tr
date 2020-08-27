@@ -1,37 +1,38 @@
 ---
 title: Derleyici Uyarısı (düzey 4) C4571
-ms.date: 11/04/2016
+description: Microsoft C++ derleyicisi uyarı C4571 belgelerini belgeler.
+ms.date: 08/24/2020
 f1_keywords:
 - C4571
 helpviewer_keywords:
 - C4571
 ms.assetid: 07aa17bd-b15c-4266-824c-57cc445e8edd
-ms.openlocfilehash: 4fe99e12c5d2dfb725e1e4aa0ac2fb0b1ccb4f28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 35f2b30a8ab7cfcc27ed7aae3aedd9bc81efacc8
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219891"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898558"
 ---
 # <a name="compiler-warning-level-4-c4571"></a>Derleyici Uyarısı (düzey 4) C4571
 
-Bilgi: catch (...) semantiği Visual C++ 7,1 ' den sonra değişti; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor
+> Bilgilendirici: `catch(...)` Visual C++ 7,1 ' den bu yana sözdizimi değişti; yapılandırılmış özel durumlar (SEH) artık yakalanmıyor
 
-C4571, **/EHS**ile derlerken her catch (...) bloğu için oluşturulur.
+`catch(...)`Derleyici seçeneğini belirttiğinizde her blok için C4571 oluşturulur **`/EHs`** .
 
-**/EHS**ile derlerken, bir catch (...) bloğu yapılandırılmış bir özel durumu yakalayamaz (örneğin sıfıra bölme, null işaretçi); catch (...) bloğu yalnızca açıkça oluşturulan, C++ özel durumlarını yakalar.  Daha fazla bilgi için bkz. [özel durum işleme](../../cpp/exception-handling-in-visual-cpp.md).
+## <a name="remarks"></a>Açıklamalar
 
-Bu uyarı varsayılan olarak kapalıdır.  **/EHS** ile derleme yaparken, catch (...) bloklarınızın yapılandırılmış özel durumları yakalamayın emin olmak için bu uyarıyı açın.  Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md) .
+**`/EHs`** Derleyici seçeneğini belirttiğinizde, `catch(...)` bloklar yapılandırılmış özel durumları yakalayamaz. (Örneğin, sıfıra bölme veya null işaretçi özel durumları.) Bir `catch(...)` blok yalnızca açıkça oluşturulan C++ özel durumlarını yakalar. Daha fazla bilgi için bkz. [özel durum işleme](../../cpp/exception-handling-in-visual-cpp.md).
 
-Aşağıdaki yollarla C4571 ' yi çözebilirsiniz,
+Bu uyarı varsayılan olarak kapalıdır.  Bloklarınız ile derleme yaptığınızda **`/EHs`** `catch (...)` yapılandırılmış özel durumları yakalamayın emin olmak için bu uyarıyı açın. Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md).
 
-- Hala catch (...) bloklarınızın yapılandırılmış özel durumları yakalayabilmek istiyorsanız **/EHa** ile derleyin.
+Aşağıdaki yollarla C4571 ' yi çözebilirsiniz:
 
-- Catch (...) bloklarınızın yapılandırılmış özel durumları yakalemelerini istemiyorsanız, ancak yine de catch (...) blokları kullanmak istiyorsanız C4571 ' ı etkinleştirmeyin.  Yapılandırılmış özel durum işleme anahtar sözcüklerini (**__try**, **`__except`** , ve) kullanarak yine de yapılandırılmış özel durumları yakalayabilirsiniz **`__finally`** .  Ancak, bir SEH özel durumu oluştuğunda değil, derlenmiş **/EHS** yıkıcıları yalnızca C++ özel durumu oluşturulduğunda çağrılacaktır.
+- **`/EHa`** Hala `catch(...)` bloklarınızın yapılandırılmış özel durumları yakalenmesini istiyorsanız ile derleyin.
 
-- Catch (...) bloğunu belirli C++ özel durumları için catch bloklarıyla değiştirin ve isteğe bağlı olarak, C++ özel durum işleme (**__try**, ve) çevresine yapılandırılmış özel durum işleme ekleyin **`__except`** **`__finally`** .  Daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md) .
+- `catch(...)`Bloklarınızın yapılandırılmış özel durumları yakalemelerini Istemiyorsanız C4571 etkinleştirmeyin, ancak hala blokları kullanmak istiyorsanız `catch(...)` .  Yapılandırılmış özel durum işleme anahtar sözcüklerini ( **`__try`** , **`__except`** , ve) kullanarak yine de yapılandırılmış özel durumları yakalayabilirsiniz **`__finally`** .  Ancak, kullanılarak derlendikten sonra, bir **`/EHs`** SEH özel durumu oluştuğunda değil, yalnızca C++ özel durumu oluşturulduğunda yok ediciler çağrılır.
 
-Daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](../../build/reference/eh-exception-handling-model.md) .
+- `catch(...)`Blokları belirli c++ özel durumları için catch bloklarıyla değiştirin ve isteğe bağlı olarak, C++ özel durum işleme ( **`__try`** , **`__except`** , ve) çevresine yapılandırılmış özel durum işleme ekleyin **`__finally`** .   daha fazla bilgi için bkz. [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md) ve [ `/EH` (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md).
 
 ## <a name="example"></a>Örnek
 

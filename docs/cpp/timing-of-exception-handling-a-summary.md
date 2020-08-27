@@ -1,6 +1,7 @@
 ---
 title: 'Özel durum işleme zamanlaması: Özet'
-ms.date: 05/07/2019
+description: Microsoft C++ ' da özel durum işlemenin zaman ve yürütme sırası.
+ms.date: 08/24/2020
 helpviewer_keywords:
 - sequence [C++]
 - sequence, of handlers
@@ -11,19 +12,19 @@ helpviewer_keywords:
 - handlers [C++], order of exception
 - structured exception handling [C++], timing
 ms.assetid: 5d1da546-73fd-4673-aa1a-7ac0f776c420
-ms.openlocfilehash: 17d1c250a98afc2b86c198735602df7d80118bd4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2ce501d8d74b6f0f7ca92e193c39f8ce58a66053
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81316605"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898354"
 ---
 # <a name="timing-of-exception-handling-a-summary"></a>Özel durum işleme zamanlaması: Özet
 
-**__try** deyimi bloğu nasıl sonlandırılırsa __try bir sonlandırma işleyicisi yürütülür. Bunun nedenleri arasında **__try** bloğundan `longjmp` atlama, denetimi blok dışına aktaran bir ifade ve özel durum işleme nedeniyle yığının gevşemesi yer alıyor.
+Sonlandırma işleyicisi, **`__try`** Ekstre bloğunun nasıl sonlandırıldığı bağımsız olarak yürütülür. **`__try`**, Blok dışına atlama, `longjmp` denetimin blok dışına aktarımı yapan ve özel durum işleme nedeniyle yığının geri sarılı olmasına neden olur.
 
 > [!NOTE]
-> Microsoft C++ derleyicisi iki `setjmp` `longjmp` form ve deyimleri destekler. Hızlı sürüm sonlandırma işlemeyi atlar, ancak daha etkilidir. Bu sürümü kullanmak için, \<dosya setjmp.h> ekleyin. Diğer sürüm, sonlandırma işlemeyi önceki paragrafta açıklandığı gibi destekler. Bu sürümü kullanmak için, \<dosya setjmpex.h> ekleyin. Hızlı sürümün performansında artış, donanım yapılandırmasına bağlıdır.
+> Microsoft C++ derleyicisi, ve deyimlerinin iki biçimini destekler `setjmp` `longjmp` . Hızlı sürüm sonlandırma işlemeyi atlar, ancak daha etkilidir. Bu sürümü kullanmak için dosyasını dahil edin \<setjmp.h> . Diğer sürüm, sonlandırma işlemeyi önceki paragrafta açıklandığı gibi destekler. Bu sürümü kullanmak için dosyasını dahil edin \<setjmpex.h> . Hızlı sürümün performansında artış, donanım yapılandırmasına bağlıdır.
 
 İşletim sistemi, özel durum işleyicisinin gövdesi de dahil olmak üzere başka bir kod yürütülmeden önce tüm sonlandırma işleyicilerini uygun sırada yürütür.
 
@@ -31,15 +32,15 @@ Kesintinin nedeni bir özel durum olduğunda, sistem neyi sonlandıracağına ka
 
 1. Bir özel durum oluşturulur.
 
-1. Sistem etkin özel durum işleyicilerinin hiyerarşisini inceler ve en yüksek önceliğe sahip işleyicinin filtresini yürütür; bu, bloklar ve işlev çağrıları bakımından en son yüklenen ve en ayrıntılı olarak iç içe geçmiş olan özel durum işleyicisidir.
+1. Sistem etkin özel durum işleyicilerinin hiyerarşisine bakar ve işleyicinin filtresini en yüksek önceliğe sahip olarak yürütür. En son yüklenen ve en derin iç içe geçmiş olan özel durum işleyicisi, bloklar ve işlev çağrılarına göre yapılır.
 
-1. Bu filtre denetimi (0 döndürür) geçerse, işlem denetimi geçirmeyen bir filtre bulunana dek devam eder.
+1. Bu filtre denetimi geçerse (0 döndürürse) işlem, denetimi geçirmeyen bir filtre bulunana kadar devam eder.
 
-1. Bu filtre -1 döndürürse, özel durum yükseltildiği yerde yürütme devam ediyor ve sonlandırma gerçekleşmez.
+1. Bu filtre-1 döndürürse, yürütme özel durumun oluşturulduğu yerde devam eder ve sonlandırma gerçekleşmez.
 
 1. Filtre 1 değerini döndürürse, aşağıdaki olaylar gerçekleşir:
 
-   - Sistem yürütülmekte olan kod (özel durumun oluşturulduğu) ve denetimi alan özel durum işleyicisini içeren yığın çerçevesi arasındaki tüm yığın çerçevelerini temizleyerek yığını geriye doğru izler.
+   - Sistem yığını kaldırır: özel durumun oluşturulduğu ve özel durum işleyicisini içeren yığın çerçevesinin arasındaki tüm yığın çerçevelerini temizler.
 
    - Yığın geriye doğru izlenirken, yığındaki her sonlandırma işleyicisi yürütülür.
 

@@ -1,7 +1,7 @@
 ---
 title: try-except deyimi
 description: __Try ve yapılandırılmış özel durum işleme deyimlerinin __except Microsoft C++ başvurusu.
-ms.date: 04/03/2020
+ms.date: 08/25/2020
 f1_keywords:
 - _abnormal_termination_cpp
 - _exception_code_cpp
@@ -23,31 +23,36 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-ms.openlocfilehash: 6d0ed9cfa290ab83693ee248da5bebae6f91de57
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 226c3a3df39f284d9c1267051114fc39db358f55
+ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185703"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88898617"
 ---
-# <a name="try-except-statement"></a>try-except deyimi
+# <a name="try-except-statement"></a>`try-except` Ekstre
 
-**Try-except** deyimleri, C ve C++ dillerinde yapılandırılmış özel durum işlemeyi destekleyen bir Microsoft uzantısıdır. Bu uzantı, **Microsoft 'a özgüdür**.
+`try-except`Bu ifade, C ve C++ dillerinde yapılandırılmış özel durum işlemeyi destekleyen, **Microsoft 'a özgü** bir uzantıdır.
 
-## <a name="syntax"></a>Sözdizimi
+```cpp
+    // . . .
+    __try {
+        // guarded code
+    }
+    __except ( /* filter expression */ ) {
+        // termination code
+    }
+    // . . .
+```
 
-> **\_\_almaya**\
-> {\
-> &nbsp;&nbsp;&nbsp;&nbsp;korunan kod \
-> }\
-> ** \_ \_ except** ( *ifade* ) \
-> {\
-> &nbsp;&nbsp;&nbsp;&nbsp;özel durum işleyici kodu \
-> }
+## <a name="grammar"></a>Dilbilgisi
+
+> *`try-except-statement`*:\
+> &emsp;**`__try`** *`compound-statement`* **`__except (`**  *`expression`*  **`)`** *`compound-statement`*
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Try-except** deyimleri, C ve C++ dillerinin Microsoft uzantısıdır. Bu, normalde program yürütmesini sonlandıran olaylar gerçekleştiğinde hedef uygulamaların denetim kazanmasını sağlar. Bu olaylar *yapılandırılmış özel durumlar*veya kısa için *özel durumlar* olarak adlandırılır. Bu özel durumlarla ilgilenen mekanizmaya *yapılandırılmış özel durum işleme* (SEH) denir.
+`try-except`İfade, C ve C++ dillerinin Microsoft uzantısıdır. Bu, normalde program yürütmesini sonlandıran olaylar gerçekleştiğinde hedef uygulamaların denetim kazanmasını sağlar. Bu olaylar *yapılandırılmış özel durumlar*veya kısa için *özel durumlar* olarak adlandırılır. Bu özel durumlarla ilgilenen mekanizmaya *yapılandırılmış özel durum işleme* (SEH) denir.
 
 İlgili bilgiler için, [try-finally ifadesine](../cpp/try-finally-statement.md)bakın.
 
@@ -56,7 +61,7 @@ ms.locfileid: "87185703"
 > [!NOTE]
 > Yapılandırılmış özel durum işlemi, hem C hem de C++ kaynak dosyaları için Win32 ile çalışır. Ancak, C++ için özel olarak tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme her türden özel durumu işleyebildiği için daha esnektir. C++ programları için yerel C++ özel durum işleme: [try, catch ve throw](../cpp/try-throw-and-catch-statements-cpp.md) deyimlerini kullanmanızı öneririz.
 
-**__Try** yan tümcesinden sonraki bileşik ifade *gövde* veya *korumalı* bölümdür. **`__except`** İfade, *filtre* ifadesi olarak da bilinir. Değeri, özel durumun nasıl işlendiğini belirler. Yan tümcesinden sonraki bileşik ifade **`__except`** özel durum işleyicisidir. İşleyici, gövde bölümünün yürütülmesi sırasında bir özel durum ortaya çıktığında gerçekleştirilecek eylemleri belirtir. Yürütme aşağıdaki gibi devam eder:
+Yan tümcesinden sonraki bileşik ifade **`__try`** *gövde* veya *korumalı* bölümdür. **`__except`** İfade, *filtre* ifadesi olarak da bilinir. Değeri, özel durumun nasıl işlendiğini belirler. Yan tümcesinden sonraki bileşik ifade **`__except`** özel durum işleyicisidir. İşleyici, gövde bölümünün yürütülmesi sırasında bir özel durum ortaya çıktığında gerçekleştirilecek eylemleri belirtir. Yürütme aşağıdaki gibi devam eder:
 
 1. Korunan bölüm yürütülür.
 
@@ -64,31 +69,31 @@ ms.locfileid: "87185703"
 
 1. Korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamında bir özel durum oluşursa, **`__except`** ifade değerlendirilir. Üç olası değer vardır:
 
-   - `EXCEPTION_CONTINUE_EXECUTION`(-1) Özel durum kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
+   - `EXCEPTION_CONTINUE_EXECUTION` (-1) Özel durum kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
 
-   - `EXCEPTION_CONTINUE_SEARCH`(0) özel durum tanınmıyor. İlk olarak **try-except** deyimlerini içeren işleyiciler için bir işleyici için yığın aramaya devam edin, ardından bir sonraki en yüksek önceliğe sahip işleyiciler için.
+   - `EXCEPTION_CONTINUE_SEARCH` (0) özel durum tanınmıyor. Bir işleyicinin yığın için, önce kapsayan `try-except` deyimler için, sonra da sonraki en yüksek önceliğe sahip işleyiciler için arama yapmaya devam edin.
 
-   - `EXCEPTION_EXECUTE_HANDLER`(1) özel durum tanınmıyor. Bileşik ifadeyi yürüterek denetimi özel durum işleyicisine aktarın **`__except`** , sonra bloktan sonra yürütmeye devam edin **`__except`** .
+   - `EXCEPTION_EXECUTE_HANDLER` (1) özel durum tanınmıyor. Bileşik ifadeyi yürüterek denetimi özel durum işleyicisine aktarın **`__except`** , sonra bloktan sonra yürütmeye devam edin **`__except`** .
 
 **`__except`** İfade bir C ifadesi olarak değerlendirilir. Tek bir değer, koşullu ifade işleci veya virgül işleciyle sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
 
 Her uygulamanın kendi özel durum işleyicisi olabilir.
 
-**__Try** ifadeye geçmek geçersizdir, ancak bunlardan birine geçmek için geçerli değildir. Özel durum işleyicisi, bir işlem bir **try-except** ifadesini yürütmenin ortasında sonlandırılırsa çağrılmaz.
+Bir ifadeye geçmek için geçerli değildir **`__try`** , ancak bunlardan birine geçmek için geçerli değildir. Özel durum işleyicisi, bir işlem bir deyimin yürütülmesi ortasında sonlandırılırsa çağrılmaz `try-except` .
 
-Önceki sürümlerle uyumluluk için, **_try**, **_except**ve **_leave** **__try**için eş anlamlılardır ve bu, **`__except`** **`__leave`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtilmediyse.
+Önceki sürümlerle uyumluluk için, **_try**, **_Except**ve **_leave** **`__try`** ,, **`__except`** ve **`__leave`** [< za \( dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, ve için eş anlamlılardır.
 
-### <a name="the-__leave-keyword"></a>__leave Anahtar Sözcüğü
+### <a name="the-__leave-keyword"></a><a name="__leave"></a>`__leave`Anahtar sözcüğü
 
-**`__leave`** Anahtar sözcüğü yalnızca **try-except** ifadesinin korunan bölümünde geçerlidir ve etkisi, korunan bölümün sonuna atlanmak olur. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
+**`__leave`** Anahtar sözcüğü, yalnızca bir deyimin korunan bölümünde geçerlidir `try-except` ve etkisi, korunan bölümün sonuna atlamanız olur. Yürütme, özel durum işleyicisinden sonra ilk deyimde devam eder.
 
 Bir **`goto`** deyim ayrıca korunan bölümden de geçebilir ve bir **try-finally** ifadesinde olduğu gibi performansı düşürür. Bunun nedeni yığın geri sarma gerçekleşmiyor. Ancak, **`__leave`** bir deyimleri yerine anahtar sözcüğünü kullanmanızı öneririz **`goto`** . Bunun nedeni, korunan bölüm büyük veya karmaşık olduğunda bir programlama hatası yapma olasılığınız düşüktür.
 
-### <a name="structured-exception-handling-intrinsic-functions"></a>Yapılandırılmış Özel Durum İşleme İç İşlevleri
+### <a name="structured-exception-handling-intrinsic-functions"></a>Yapılandırılmış özel durum işleme iç işlevleri
 
-Yapılandırılmış özel durum işleme: [GetExceptionCode](/windows/win32/Debug/getexceptioncode) ve [GetExceptionInformation](/windows/win32/Debug/getexceptioninformation)ile birlikte kullanılabilecek iki iç işlev sağlar. **try-except**
+Yapılandırılmış özel durum işleme `try-except` : [GetExceptionCode](/windows/win32/Debug/getexceptioncode) ve [GetExceptionInformation](/windows/win32/Debug/getexceptioninformation)ifadesiyle birlikte kullanılabilecek iki iç işlev sağlar.
 
-`GetExceptionCode`özel durumun kodunu (32 bitlik bir tamsayı) döndürür.
+`GetExceptionCode` özel durumun kodunu (32 bitlik bir tamsayı) döndürür.
 
 İç işlev `GetExceptionInformation` , özel durum hakkında ek bilgi içeren [EXCEPTION_POINTERS](/windows/win32/api/winnt/ns-winnt-exception_pointers) yapısına bir işaretçi döndürür. Bu işaretçiyle, donanım özel durumu sırasında var olan makine durumuna erişebilirsiniz. Yapı aşağıdaki gibidir:
 
@@ -99,19 +104,19 @@ typedef struct _EXCEPTION_POINTERS {
 } EXCEPTION_POINTERS, *PEXCEPTION_POINTERS;
 ```
 
-İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` içerme dosyasında tanımlanır ve \<winnt.h> `_EXCEPTION_RECORD` `_CONTEXT` içerme dosyasında tanımlanır\<excpt.h>
+İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` içerme dosyasında tanımlanır ve \<winnt.h> `_EXCEPTION_RECORD` `_CONTEXT` içerme dosyasında tanımlanır \<excpt.h>
 
 `GetExceptionCode`Özel durum işleyicisi içinde kullanabilirsiniz. Ancak, `GetExceptionInformation` yalnızca özel durum filtresi ifadesi içinde kullanabilirsiniz. İşaret ettiği bilgiler genellikle yığında olur ve denetim özel durum işleyicisine aktarıldığında artık kullanılamaz.
 
 İç işlev olan [Abnormalsonlandırmayı](/windows/win32/Debug/abnormaltermination) sonlandırma işleyicisinde kullanılabilir. **Try-finally** ifadesinin gövdesi sıralı olarak sonlandığında 0 döndürür. Diğer tüm durumlarda, 1 döndürür.
 
-\<excpt.h>Bu iç bilgiler için bazı alternatif adları tanımlar:
+\<excpt.h> Bu iç bilgiler için bazı alternatif adları tanımlar:
 
-`GetExceptionCode`eşdeğerdir`_exception_code`
+`GetExceptionCode` eşdeğerdir `_exception_code`
 
-`GetExceptionInformation`eşdeğerdir`_exception_info`
+`GetExceptionInformation` eşdeğerdir `_exception_info`
 
-`AbnormalTermination`eşdeğerdir`_abnormal_termination`
+`AbnormalTermination` eşdeğerdir `_abnormal_termination`
 
 ## <a name="example"></a>Örnek
 
