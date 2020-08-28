@@ -1,12 +1,12 @@
 ---
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
-ms.openlocfilehash: 07d58bbd64795235ad63a7b26b6f18fcffdcd1d2
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: bfe55513ffd24175dbe62efc6d5afcfd82f71e4c
+ms.sourcegitcommit: 7f378314c5692d897ead10b7f6c96d4cb2abd266
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303265"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88972679"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -71,7 +71,7 @@ Genel ve statikler için varsayılan düzen hizalaması:
 
 AArch64 mimarisi 32 tamsayı yazmaçlarını destekler:
 
-| Kaydettir | Katılımcıdan? | Rol |
+| Kaydol | Katılımcıdan? | Rol |
 | - | - | - |
 | x0 | Katılımcıdan | Parametre/karalama kayıt 1, sonuç kaydı |
 | x1-x7 | Katılımcıdan | Parametre/karalama kaydı 2-8 |
@@ -94,7 +94,7 @@ AArch32 aksine, program sayacı (PC) ve yığın işaretçisi (SP), dizinli Yazm
 
 AArch64 mimarisi, aşağıda özetlenen 32 kayan nokta/SıMD kayıtlarını da destekler:
 
-| Kaydettir | Katılımcıdan? | Rol |
+| Kaydol | Katılımcıdan? | Rol |
 | - | - | - |
 | v0 | Katılımcıdan | Parametre/karalama kayıt 1, sonuç kaydı |
 | V1-v7 | Katılımcıdan | Parametre/karalama Yazmaçları 2-8 |
@@ -117,7 +117,7 @@ Kayan nokta denetim kaydı (fpcr), içindeki çeşitli bit alanları üzerinde b
 
 AArch32 gibi, AArch64 belirtimi, sistem tarafından denetlenen üç "iş parçacığı KIMLIĞI" kaydı sağlar:
 
-| Kaydettir | Rol |
+| Kaydol | Rol |
 | - | - |
 | TPIDR_EL0 | Ayrılmış. |
 | TPIDRRO_EL0 | Geçerli işlemcinin CPU numarasını içerir. |
@@ -157,7 +157,7 @@ Listedeki her bağımsız değişken için, aşağıdaki listeden ilk eşleştir
 
 Listedeki her bağımsız değişken için, bağımsız değişken ayrılana kadar aşağıdaki kurallar sırayla uygulanır. Bir kaydına bir bağımsız değişken atandığında, kayıttaki kullanılmayan bitlerin değeri belirtilmemiş olur. Bir bağımsız değişken bir yığın yuvasına atanırsa, kullanılmamış doldurma baytlarının değeri belirtilmemiş olur.
 
-1. Bağımsız değişken bir yarı, tek, çift veya dört duyarlıklı kayan noktalı veya kısa bir vektör türüdür ve NSRN 8 ' den küçükse, bağımsız değişken en az önemli bit kayıt v\[nsrn] ' a ayrılır. NSRN, bir artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir yarı, tek, çift veya dört duyarlıklı kayan noktalı veya kısa bir vektör türüdür ve NSRN 8 ' den küçükse, bağımsız değişken en az önemli bit kayıt v \[ nsrn] ' a ayrılır. NSRN, bir artırılır. Bağımsız değişken artık ayrıldı.
 
 1. Bağımsız değişken bir HFA veya bir HVA ise ve yeterli ayrılmamış SıMD ve kayan nokta Yazmaçları varsa (NSRN + üye sayısı ≤ 8), bağımsız değişken, HFA veya HVA üyesi başına tek bir kayıt olmak üzere SıMD ve kayan nokta Yazmaçları için ayrılır. NSRN, kullanılan kayıt sayısı kadar artırılır. Bağımsız değişken artık ayrıldı.
 
@@ -169,13 +169,13 @@ Listedeki her bağımsız değişken için, bağımsız değişken ayrılana kad
 
 1. Bağımsız değişken bir HFA, bir HVA, bir yarı, tek, çift veya dört duyarlıklı kayan noktalı veya kısa vektör türünde ise, bağımsız değişken ayarlanmış NSAA 'da belleğe kopyalanır. NSAA, bağımsız değişkenin boyutuyla artırılır. Bağımsız değişken artık ayrıldı.
 
-1. Bağımsız değişken bir Integral veya Işaretçi türü ise, bağımsız değişkenin boyutu 8 bayttan küçük veya buna eşit ve NGRN 8 ' den küçükse, bağımsız değişken x\[ngrn] içindeki en az önemli bit olarak kopyalanır. NGRN, bir artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir Integral veya Işaretçi türü ise, bağımsız değişkenin boyutu 8 bayttan küçük veya buna eşit ve NGRN 8 ' den küçükse, bağımsız değişken x ngrn] içindeki en az önemli bit olarak kopyalanır \[ . NGRN, bir artırılır. Bağımsız değişken artık ayrıldı.
 
 1. Bağımsız değişkenin 16 hizalaması varsa, NGRN bir sonraki çift sayıya yuvarlanır.
 
-1. Bağımsız değişken bir Integral türüdür, bağımsız değişkenin boyutu 16 ' dır ve NGRN 7 ' den küçükse, bağımsız değişken x\[ngrn] ve x\[ngrn + 1] ' e kopyalanır. x\[ngrn], bağımsız değişkenin bellek gösteriminin daha düşük olan bir çift sözcüğünü içermelidir. NGRN iki ile artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir Integral türüdür, bağımsız değişkenin boyutu 16 ' dır ve NGRN 7 ' den küçükse, bağımsız değişken x \[ ngrn] ve x \[ ngrn + 1] ' e kopyalanır. x \[ ngrn], bağımsız değişkenin bellek gösteriminin daha düşük olan bir çift sözcüğünü içermelidir. NGRN iki ile artırılır. Bağımsız değişken artık ayrıldı.
 
-1. Bağımsız değişken bir bileşik tür ise ve bağımsız değişkenin çift sözcüklerdeki boyutu 8 eksi NGRN 'den fazla değilse, bağımsız değişken x\[ngrn] ile başlayarak ardışık genel amaçlı kayıtlara kopyalanır. Bağımsız değişken, bellekten ardışık kayıtları yükleyen uygun bir LDR yönergeleri dizisiyle birlikte çift sözcüklü hizalanmış bir adresten kayıtlara yüklenmiş gibi geçirilir. Yazmaçların kullanılmayan bölümlerinin içerikleri bu standart tarafından belirlenmeyen bir tür. NGRN, kullanılan kayıt sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
+1. Bağımsız değişken bir bileşik tür ise ve bağımsız değişkenin çift sözcüklerdeki boyutu 8 eksi NGRN 'den fazla değilse, bağımsız değişken x ngrn] ile başlayarak ardışık genel amaçlı kayıtlara kopyalanır \[ . Bağımsız değişken, bellekten ardışık kayıtları yükleyen uygun bir LDR yönergeleri dizisiyle birlikte çift sözcüklü hizalanmış bir adresten kayıtlara yüklenmiş gibi geçirilir. Yazmaçların kullanılmayan bölümlerinin içerikleri bu standart tarafından belirlenmeyen bir tür. NGRN, kullanılan kayıt sayısına göre artırılır. Bağımsız değişken artık ayrıldı.
 
 1. NGRN, 8 olarak ayarlanır.
 
@@ -197,7 +197,7 @@ Değişken sayıda bağımsız değişken alan işlevler, aşağıdaki şekilde 
 
 Etkin olarak, bir sanal yığına bağımsız değişkenler ayırmak için C. 12 – C. 15 kurallarla aynı olur. Bu, yığının ilk 64 baytlarının x0-x7 ' ye yüklendiği ve kalan yığın bağımsız değişkenlerinin normal şekilde yerleştirildiği yerdir.
 
-## <a name="return-values"></a>Döndürülen değerler
+## <a name="return-values"></a>Dönüş değerleri
 
 Integral değerleri x0 içinde döndürülür.
 
@@ -205,13 +205,13 @@ Kayan nokta değerleri, uygun şekilde S0, D0 veya V0 ' de döndürülür.
 
 HFA ve HVA değerleri, uygun şekilde S0-S3, D0-D3 veya v0-v3 ' de döndürülür.
 
-Değere göre döndürülen türler, belirli özelliklere sahip olup olmadığına bağlı olarak farklı şekilde işlenir. Bu özelliklere sahip olan türler,
+Değere göre döndürülen türler, belirli özelliklere sahip olup olmadığına ve işlevin statik olmayan bir üye işlevi olup olmadığına bağlı olarak farklı şekilde işlenir. Bu özelliklere sahip olan türler,
 
 - Bunlar, C++ 14 standart tanımına göre *toplamakta* , diğer bir deyişle, hiç Kullanıcı tarafından sağlanmayan bir Oluşturucu yoktur, özel veya korumalı olmayan veri üyeleri yoktur, temel sınıf içermez ve sanal işlevler yoktur ve
 - Bunlar, önemsiz bir kopya atama işlecine sahiptir ve
 - Bu, basit bir yıkıcıya sahiptir,
 
-aşağıdaki dönüş stilini kullanın:
+ve üye olmayan işlevler veya statik üye işlevleri tarafından döndürülür, aşağıdaki dönüş stilini kullanın:
 
 - X0 içinde 8 bayttan küçük veya buna eşit türler döndürülür.
 - 16 bayttan küçük veya buna eşit türler, x0 ve x1 içinde, alt sıra 8 bayt içeren x0 ile döndürülür.
@@ -225,7 +225,7 @@ Diğer tüm türler bu kuralı kullanır:
 
 ARM tarafından ABı 'in sonunda, yığın her zaman 16 baytlık hizalı olmalıdır. AArch64, SP 16 bayt hizalı olduğunda ve SP göreli yük veya mağaza yapıldığında yığın hizalama hataları üreten bir donanım özelliği içerir. Windows, bu özellik her zaman etkin olarak çalışır.
 
-En fazla 4k veya daha fazla yığın ayıran işlevler, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu eylem, hiçbir kodun Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık üzerinde" olmamasını sağlar. Genellikle dokunma, X15 içinde 16 ile `__chkstk` bölünen toplam yığın ayırmayı geçiren özel bir çağırma kuralına sahip olan yardımcı tarafından yapılır.
+En fazla 4k veya daha fazla yığın ayıran işlevler, son sayfadan önceki her sayfanın sırayla dokunulmamasını sağlamalıdır. Bu eylem, hiçbir kodun Windows 'un yığını genişletmek için kullandığı koruma sayfalarını "artık üzerinde" olmamasını sağlar. Genellikle dokunma, `__chkstk` X15 içinde 16 ile bölünen toplam yığın ayırmayı geçiren özel bir çağırma kuralına sahip olan yardımcı tarafından yapılır.
 
 ## <a name="red-zone"></a>Kırmızı bölge
 
@@ -245,13 +245,13 @@ Windows içindeki kod, hızlı yığın yürümesini etkinleştirmek için çer�
 
 ARM EABI, geriye doğru izleme kodları kullanan bir özel durum izleme modeli de belirtir. Ancak, sunulan belirtim Windows 'da geri sarma için yetersiz, bu da BILGISAYARıN bir işlev prolog veya epıg 'nin ortasında olduğu durumları ele almalıdır.
 
-Dinamik olarak oluşturulan kod, ve ilişkili işlevler aracılığıyla `RtlAddFunctionTable` dinamik işlev tabloları ile açıklanmalıdır, böylece oluşturulan kodun özel durum işleme katılmasını sağlayabilirsiniz.
+Dinamik olarak oluşturulan kod, ve ilişkili işlevler aracılığıyla dinamik işlev tabloları ile açıklanmalıdır `RtlAddFunctionTable` , böylece oluşturulan kodun özel durum işleme katılmasını sağlayabilirsiniz.
 
 ## <a name="cycle-counter"></a>Bisiklet sayacı
 
-Tüm ARMv8 CPU 'Ları, Windows 'un Kullanıcı modu da dahil olmak üzere herhangi bir özel durum düzeyinde okunabilir olması için Windows 'un yapılandırdığı 64 bitlik bir kayıt olan bir bisiklet sayacı kaydını desteklemesi için gereklidir. Derleme kodundaki MSR Opcode veya C/C++ kodunda `_ReadStatusReg` iç öğe kullanılarak özel PMCCNTR_EL0 kaydı aracılığıyla erişilebilir.
+Tüm ARMv8 CPU 'Ları, Windows 'un Kullanıcı modu da dahil olmak üzere herhangi bir özel durum düzeyinde okunabilir olması için Windows 'un yapılandırdığı 64 bitlik bir kayıt olan bir bisiklet sayacı kaydını desteklemesi için gereklidir. Derleme kodundaki MSR Opcode veya `_ReadStatusReg` C/C++ kodunda iç öğe kullanılarak özel PMCCNTR_EL0 kaydı aracılığıyla erişilebilir.
 
-Buradaki Cycle sayacı, bir duvar saati değil, doğru bir geçiş sayacıdır. Sayım sıklığı işlemci sıklığıyla farklılık gösterecektir. Zaman aralığı sayacının sıklığını bilmeniz gerektiğini düşünüyorsanız, zaman aralığı sayacını kullanmamanız gerekir. Bunun yerine, kullanmanız `QueryPerformanceCounter`gereken duvar saati saatini ölçmek istiyorsunuz.
+Buradaki Cycle sayacı, bir duvar saati değil, doğru bir geçiş sayacıdır. Sayım sıklığı işlemci sıklığıyla farklılık gösterecektir. Zaman aralığı sayacının sıklığını bilmeniz gerektiğini düşünüyorsanız, zaman aralığı sayacını kullanmamanız gerekir. Bunun yerine, kullanmanız gereken duvar saati saatini ölçmek istiyorsunuz `QueryPerformanceCounter` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
