@@ -1,6 +1,7 @@
 ---
 title: Cotadatetime sınıfı
-ms.date: 03/27/2019
+description: "`DATE`OLE Otomasyonu 'nda kullanılan veri türünü KAPSÜLLEYEN MFC Cotatarihsaat sınıfı IÇIN API başvurusu."
+ms.date: 08/27/2020
 f1_keywords:
 - COleDateTime
 - ATLCOMTIME/ATL::COleDateTime
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 5cbc131a81afef1ee94069f39e79f22ce7addfcb
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9ebbab02860daaeb57c24d3e0901666861adfc2b
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562473"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062165"
 ---
 # <a name="coledatetime-class"></a>Cotadatetime sınıfı
 
@@ -112,8 +113,8 @@ OLE otomasyonunun [değişken](/windows/win32/api/oaidl/ns-oaidl-variant) veri t
 |----------|-----------|
 |29 Aralık 1899, gece yarısı|-1,0|
 |29 Aralık 1899, 6 A. d|-1,25|
-|30 Aralık 1899, gece yarısı|0,0|
-|31 Aralık 1899, gece yarısı|1,0|
+|30 Aralık 1899, gece yarısı|0.0|
+|31 Aralık 1899, gece yarısı|1.0|
 |1 Ocak 1900, 11:00|2.25|
 
 > [!CAUTION]
@@ -455,7 +456,7 @@ Bu nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bil
 
 ## <a name="coledatetimegetdayofweek"></a><a name="getdayofweek"></a> Cotadatetime:: GetDayOfWeek
 
-Bu tarih/saat değeri ile temsil edilen ayın gününü alır.
+Bu tarih/saat değeri ile temsil edilen haftanın gününü alır.
 
 ```
 int GetDayOfWeek() const throw();

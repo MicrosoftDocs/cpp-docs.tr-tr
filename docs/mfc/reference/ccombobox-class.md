@@ -1,6 +1,7 @@
 ---
 title: CComboBox sınıfı
-ms.date: 11/04/2016
+description: MFC Windows Birleşik giriş kutusu sınıfı CComboBox için API başvurusu
+ms.date: 08/27/2020
 f1_keywords:
 - CComboBox
 - AFXWIN/CComboBox
@@ -108,12 +109,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: 79bcb973046c418f0bea148084da239075414790
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 515a079ca4f6c3896733bbebec424f63455fb979
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561680"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062191"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 
@@ -920,7 +921,8 @@ Dizenin sonlandırılıyor null karakteri hariç uzunluğu (bayt cinsinden). *NI
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevin ikinci formu, bir `CString` nesneyi öğenin metniyle doldurur.
+Bu üye işlevin ikinci formu, bir `CString` nesneyi öğenin metniyle doldurur. \
+*NIndex* geçersiz ise, bu işlev bir `E_INVALIDARG` özel durum oluşturur (hata kodu: `-2147024809` , `0x80070057` ).
 
 ### <a name="example"></a>Örnek
 

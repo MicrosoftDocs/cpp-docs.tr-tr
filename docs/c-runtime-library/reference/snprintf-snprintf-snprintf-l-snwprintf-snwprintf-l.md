@@ -1,6 +1,7 @@
 ---
 title: snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
-ms.date: 11/04/2016
+description: Bir dizeye biçimlendirilen verileri yazan snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_için API başvurusu.
+ms.date: 08/27/2020
 api_name:
 - _snwprintf
 - _snprintf
@@ -51,18 +52,18 @@ helpviewer_keywords:
 - sntprintf function
 - formatted text [C++]
 ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
-ms.openlocfilehash: a1d11efebad57bdcf44ca959384f449640dad701
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4d8865d5297afe3d48f2bb48cc85a0d10535dfd
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947999"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062204"
 ---
 # <a name="snprintf-_snprintf-_snprintf_l-_snwprintf-_snwprintf_l"></a>snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
 
 Biçimlendirilmiş verileri bir dizeye yazar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l](snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int snprintf(
@@ -137,7 +138,7 @@ int _snwprintf_l(
 *biriktirme*<br/>
 Depolanacak maksimum karakter sayısı.
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
@@ -150,13 +151,13 @@ Daha fazla bilgi için bkz. [Biçim belirtimi sözdizimi: printf ve wprintf işl
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dizenin, Sonlandırıcı null değeri dahil değil, biçimlendirilen veri dizesinin uzunluğu **olmasına izin verin** . Hem **len** hem de *Count* , **snprintf** ve **_snprintf**için bayt, **_snwprintf**için geniş karakterler.
+Dizenin, Sonlandırıcı null değeri dahil değil, biçimlendirilen veri dizesinin uzunluğu **olmasına izin verin** . Hem **len** hem de **Count** , **snprintf** ve **_snprintf**için karakter sayısı ve **_snwprintf**geniş karakter sayısıdır.
 
-Tüm işlevler için, **uzunluk** < *sayısı*, Len karakterler *arabellekte* **depolanıyorsa, null** Sonlandırıcı eklenir ve **len** döndürülür.
+Tüm işlevler için, **uzunluk**  <  *sayısı*, Len **len** karakterler *arabellekte*depolanıyorsa, null Sonlandırıcı eklenir ve **len** döndürülür.
 
-**Snprintf** `buffer[count-1]`işlevi, **uzunluk** *' a*eşit veya daha büyük olduğunda çıktıyı keser. Döndürülen değer **uzunluk**, *sayı* yeterince büyükse çıktı olan karakter sayısı. **Snprintf** işlevi, bir kodlama hatası oluşursa negatif bir değer döndürür.
+**Snprintf** işlevi, **uzunluk** *' a*eşit veya daha büyük olduğunda çıktıyı keser `buffer[count-1]` . Döndürülen değer **uzunluk**, *sayı* yeterince büyükse çıktı olan karakter sayısı. **Snprintf** işlevi, bir kodlama hatası oluşursa negatif bir değer döndürür.
 
-**Snprintf**dışındaki tüm işlevler için, **uzunluk** = *sayısı*, Len karakterler *arabellekte* **depolanıyorsa, hiçbir** null-Sonlandırıcı eklenmez ve **len** değeri döndürülür. Len > *sayı*ise, *sayı* karakterleri *arabellekte*depolanıyorsa, null-Sonlandırıcı eklenmez ve negatif bir değer döndürülür.
+**Snprintf**dışındaki tüm işlevler için, **uzunluk**  =  *sayısı*, Len karakterler **len** *arabellekte*depolanıyorsa, hiçbir null-Sonlandırıcı eklenmez ve **len** değeri döndürülür. **Len**  >  *sayı*ise, *sayı* karakterleri *arabellekte*depolanıyorsa, null-Sonlandırıcı eklenmez ve negatif bir değer döndürülür.
 
 *Arabellek* null işaretçisiyse ve *sayı* sıfırsa, Len null değeri dahil değil, çıktıyı biçimlendirmek için gereken karakter sayısı olarak **len** döndürülür. Aynı *bağımsız değişkenle* ve *yerel ayar* parametreleriyle başarılı bir çağrı yapmak için en az **len** + 1 karakter tutan bir arabellek ayırın.
 
@@ -166,14 +167,14 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_er
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Snprintf** işlevi ve **_snprintf** işlevleri, *arabelleğe*göre biçim ve depolama *sayısı* veya daha az karakter. **Snprintf** işlevi her zaman bir Sonlandırıcı null karakteri depolar, gerekirse çıktıyı kesiliyor. **_Snprintf** ailesi işlevleri yalnızca, biçimlendirilen dize uzunluğu *sayı* karakterlerinden kesinlikle daha küçükse, bir Sonlandırıcı null karakteri ekler. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık *gelen biçim belirtimine*göre çıkış olur. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**Snprintf** işlevi ve **_snprintf** ailesi işlevleri, *arabelleğe*göre *sayı* veya daha az karakter olarak biçimlendirilir. **Snprintf** işlevi her zaman bir Sonlandırıcı null karakteri depolar, gerekirse çıktıyı kesiliyor. **_Snprintf** ailesi işlevleri yalnızca, biçimlendirilen dize uzunluğu *sayı* karakterlerinden kesinlikle daha küçükse, bir Sonlandırıcı null karakteri ekler. Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık *gelen biçim belirtimine*göre çıkış olur. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
 > [!IMPORTANT]
-> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. **_Snprintf** işlevleri, null sonlandırmayı garanti etmez — özellikle, dönüş değeri *sayı*olduğunda —, bunun ardından null Sonlandırıcı ekleyen kod geldiğinden emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. **_Snprintf** işlevleri, null sonlandırmayı garanti etmez — özellikle, dönüş değeri *sayımla*olduğunda, bunun ardından null Sonlandırıcı ekleyen kod geldiğinden emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 Visual Studio 2015 ve Windows 10 ' da UıCRT ile başlayarak, **snprintf** artık **_snprintf**ile aynı değildir. **Snprintf** işlev davranışı artık C99 standart uyumludur.
 
-**_snwprintf** , **_snprintf**; öğesinin geniş karakterli bir sürümüdür. **_snwprintf** için işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Snwprintf** içindeki kodlama hatalarının algılanması **_snprintf**içinde farklılık gösterebilir. **_snwprintf**, **swprintf**gibi, çıktıyı **Dosya**türünde bir hedef yerine bir dizeye yazar.
+**_snwprintf** , **_snprintf**geniş karakterli bir sürümüdür; **_snwprintf** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Snwprintf** kodlama hatalarının algılanması **_snprintf**' de farklılık gösterebilir. **_snwprintf**, **swprintf**gibi, çıktıyı **Dosya**türünde bir hedef yerine bir dizeye yazar.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -190,8 +191,8 @@ C++ dilinde, daha yeni ve daha güvenli karşıtları başlatan şablon aşırı
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**snprintf**, **_snprintf**, **_snprintf_l**|\<stdio. h >|
-|**_snwprintf**, **_snwprintf_l**|\<stdio. h > veya \<wchar. h >|
+|**snprintf**, **_snprintf**,  **_snprintf_l**|\<stdio.h>|
+|**_snwprintf**, **_snwprintf_l**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -310,10 +311,10 @@ character count = 69
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>

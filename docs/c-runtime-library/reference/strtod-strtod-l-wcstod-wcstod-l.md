@@ -1,6 +1,7 @@
 ---
 title: strtod, _strtod_l, wcstod, _wcstod_l
-ms.date: 4/2/2020
+description: Dizeleri çift duyarlıklı bir değere dönüştüren strtod, _strtod_l, wcstod, _wcstod_l için API başvurusu.
+ms.date: 08/27/2020
 api_name:
 - wcstod
 - _wcstod_l
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-ms.openlocfilehash: 58cb9e72fc11f0120ed4d99fd5086a195244ac31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5a9c7fd36b28b0a709c2e21a5e23d8a71d5f8a15
+ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233983"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "89062179"
 ---
 # <a name="strtod-_strtod_l-wcstod-_wcstod_l"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
@@ -125,9 +126,24 @@ Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*içindeki taba
 
 **strtod** , *strSource* 'un aşağıdaki formlardan birine işaret olmasını bekler:
 
-[*boşluk*] [*imzala*] {*digits* [*taban* *rakamları*] &#124; *taban* *rakamları*} [{**e** &#124; **e**} [*oturum açma*] *basamaklar*] [*boşluk*] [*imzala*] {**0x** &#124; **0x**} {*onaltıbasamaklar* [*taban* *onaltıbasamaklar*] &#124; *taban* *onaltıbasamaklar*} [{**p** &#124; **p**} [*işareti*] *onaltılık basamaklar*] **NAN** *sequence***[&#124;** boşluk *] [**oturum]**whitespace* **INFINITY***sign*
+[*boşluk*] [*imzala*] {*digits* [*taban* *rakamları*] &#124; *taban* *rakamları*} [{**e** &#124; **e**} [*oturum açma*] *basamaklar*] [*boşluk*]*[imzala*]**{0x** &#124; **0x**} {*onaltıbasamaklar* [*taban* *onaltıbasamaklar*] &#124; *taban* *onaltıbasamaklar*} [{**p** &#124; **p**} [*oturum açma*] *basamaklar*] [*boşluk*] [imzala] {**INF** &#124; **Infinity**} [*boşluk*] [*imzala*] **Nan** [*Sequence*]*sign*
 
-İsteğe bağlı öndeki *boşluk* , yoksayılan boşluk ve sekme karakterlerinden oluşabilir; *imza* artı (+) veya eksi (-); *rakamlar* bir veya daha fazla ondalık basamaklıdır; *onaltılıbasamaklar* bir veya daha fazla onaltılı basamaktan oluşur; *taban* , varsayılan "C" yerel ayarında nokta (.) veya geçerli yerel ayar farklıysa ya da *Yerel* ayar belirtildiğinde yerel ayara özgü değeri olan taban nokta karakterdir; *dizi* , alfasayısal veya alt çizgi karakterlerinden oluşan bir dizidir. Hem ondalık hem de onaltılık sayı formlarında, taban nokta karakterinden önce bir basamak görünmezse, en az bir sayı, taban nokta karakterinden sonra görünmelidir. Ondalık biçimde, ondalık basamakların ardından, bir giriş harfinden (**e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Onaltılık biçimde, onaltılık basamakların ardından, bir giriş harfinden (**p** veya **p**) oluşan bir üs ve 2 ' nin üssü olarak üs değeri temsil eden isteğe bağlı olarak imzalanmış bir onaltılık tamsayı gelebilir. Herhangi bir biçimde, bir üs bölümü veya bir taban nokta karakteri yoksa, bir sayı karakteri, dizedeki son basamağı izleyecek şekilde kabul edilir. Hem **INF** hem de **Nan** formlarında durum yoksayılır. Bu formlardan birine uymayan ilk karakter taramayı durduruyor.
+İsteğe bağlı öndeki *boşluk* , yoksayılan boşluk ve sekme karakterlerinden oluşabilir. \
+*imza* artı (+) veya eksi (-). \
+*rakamlar* bir veya daha fazla ondalık basamaklıdır. \
+*onaltılıbasamaklar* bir veya daha fazla onaltılık rakamdan oluşur. \
+*taban* , varsayılan "C" yerel ayarında nokta (.) veya geçerli yerel ayar farklıysa ya da *Yerel* ayar belirtildiğinde yerel ayara özgü değeri olan taban nokta karakterdir. \
+ *Dizi* , alfasayısal veya alt çizgi karakterlerinden oluşan bir dizidir.
+
+Hem ondalık hem de onaltılık sayı formlarında, taban nokta karakterinden önce bir basamak görünmezse, en az bir sayı, taban nokta karakterinden sonra görünmelidir. 
+
+Ondalık biçimde, ondalık basamakların ardından, bir giriş harfinden (**e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. 
+
+Onaltılık biçimde, onaltılık basamakların ardından, bir giriş harfinden (**p** veya **p**) oluşan bir üs ve 2 ' nin üssü olarak üs değeri temsil eden isteğe bağlı olarak imzalanmış bir ondalık tamsayı ile izlenebilir.
+
+Herhangi bir biçimde, bir üs bölümü veya bir taban nokta karakteri yoksa, bir sayı karakteri, dizedeki son basamağı izleyecek şekilde kabul edilir.
+
+Hem **INF** hem de **Nan** formlarında durum yoksayılır. Bu formlardan birine uymayan ilk karakter taramayı durduruyor.
 
 Bu işlevlerin UCRT sürümleri, FORTRAN-Style (**d** veya **d**) üs harflerinin dönüştürülmesini desteklemez. Standart olmayan bu uzantı, CRT 'nin önceki sürümleri tarafından desteklenmiş ve kodunuz için bir ön değişiklik olabilir. UıCRT sürümleri, önceki sürümlerde desteklenmeyen, INF ve NAN değerlerinin onaltılık dizelerini ve gidiş dönüşü destekler. Bu ayrıca kodunuzda önemli değişikliklere neden olabilir. Örneğin, "0x1A" dizesi önceki sürümlerde 0,0 olarak **strtod** ve UCRT sürümünde 26,0 olarak yorumlanır.
 
