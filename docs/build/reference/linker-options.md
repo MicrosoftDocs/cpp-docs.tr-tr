@@ -1,7 +1,7 @@
 ---
 title: MSVC bağlayıcı seçenekleri
 description: Microsoft bağlantı Bağlayıcısı tarafından desteklenen seçeneklerin bir listesi.
-ms.date: 02/09/2020
+ms.date: 09/01/2020
 f1_keywords:
 - link
 helpviewer_keywords:
@@ -10,26 +10,26 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 12710aff1cf833e277e48ab2f13abc702c7d6c14
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 0d85361b8d4b5896d9ed7beae0d310fe28dc98e9
+ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257552"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89281802"
 ---
 # <a name="linker-options"></a>Bağlayıcı seçenekleri
 
-LINK. exe, yürütülebilir (. exe) dosya veya dinamik bağlantı kitaplığı (DLL) oluşturmak için ortak nesne dosyası biçimi (COFF) nesne dosyalarını ve kitaplıklarını bağlar.
+LINK.exe yürütülebilir (. exe) dosya veya dinamik bağlantı kitaplığı (DLL) oluşturmak için ortak nesne dosyası biçimi (COFF) nesne dosyalarını ve kitaplıklarını bağlar.
 
-Aşağıdaki tabloda LINK. exe seçenekleri listelenmektedir. BAĞLANTı hakkında daha fazla bilgi için bkz.
+Aşağıdaki tabloda LINK.exe seçenekleri listelenmektedir. BAĞLANTı hakkında daha fazla bilgi için bkz.
 
-- [Derleyici Denetimindeki LINK Seçenekleri](compiler-controlled-link-options.md)
+- [Derleyici denetimli bağlantı seçenekleri](compiler-controlled-link-options.md)
 
-- [LINK Giriş Dosyaları](link-input-files.md)
+- [Giriş dosyalarını bağlama](link-input-files.md)
 
-- [LINK Çıktısı](link-output.md)
+- [BAĞLANTı çıkışı](link-output.md)
 
-- [Ayrılmış Sözcükler](reserved-words.md)
+- [Ayrılmış sözcükler](reserved-words.md)
 
 Komut satırında bağlayıcı seçenekleri büyük/küçük harfe duyarlı değildir; Örneğin, `/base` ve `/BASE` aynı şeyi ifade ederler. Her bir seçeneğin komut satırında veya Visual Studio 'da nasıl belirtilme hakkındaki ayrıntılar için bu seçeneğe yönelik belgelere bakın.
 
@@ -44,12 +44,13 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/ALLOWBIND](allowbind-prevent-dll-binding.md)|DLL 'nin bağlanolamayacağını belirtir.|
 |[/ALLOWISOLATION](allowisolation-manifest-lookup.md)|Bildirim arama için davranışı belirtir.|
 |[/APPCONTAINER](appcontainer-windows-store-app.md)|Uygulamanın bir AppContainer işlem ortamı içinde çalıştırılması gerekip gerekmediğini belirtir.|
-|[/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)|Yönetilen bir görüntüye <xref:System.Diagnostics.DebuggableAttribute> ekler.|
+|[/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)|' İ <xref:System.Diagnostics.DebuggableAttribute> yönetilen bir görüntüye ekler.|
 |[/ASSEMBLYLıNKRESOURCE](assemblylinkresource-link-to-dotnet-framework-resource.md)|Yönetilen bir kaynağa bir bağlantı oluşturur.|
 |[/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)|Bir Microsoft ara dili (MSIL) modülünün derlemeye içeri aktarılması gerektiğini belirtir.|
 |[/ASSEMBLYRESOURCE](assemblyresource-embed-a-managed-resource.md)|Bir derlemede yönetilen bir kaynak dosyası katıştırır.|
 |[/BASE](base-base-address.md)|Program için bir temel adres ayarlar.|
-|[/CGTHREADS](cgthreads-compiler-threads.md)|Bağlama zamanı kod üretimi belirtildiğinde iyileştirme ve kod oluşturma için kullanılacak CL. exe iş parçacığı sayısını ayarlar.|
+|[/CETCOMPAT](cetcompat.md)|İkiliyi, CET gölge yığını uyumlu olarak işaretler.|
+|[/CGTHREADS](cgthreads-compiler-threads.md)|Bağlama zamanı kod üretimi belirtildiğinde iyileştirme ve kod oluşturma için kullanılacak cl.exe iş parçacığı sayısını belirler.|
 |[/CLRıMAGETYPE](clrimagetype-specify-type-of-clr-image.md)|CLR görüntüsünün türünü (ıJW, saf veya güvenli) ayarlar.|
 |[/CLRSUPPORTLASTERROR](clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls.md)|P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur.|
 |[/CLRTHREADATTRıBUTE](clrthreadattribute-set-clr-thread-attribute.md)|CLR programınızın giriş noktasına uygulanacak iş parçacığı oluşturma özniteliğini belirtir.|
@@ -72,13 +73,13 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/FıXED](fixed-fixed-base-address.md)|Yalnızca tercih edilen temel adresinde yüklenebilen bir program oluşturur.|
 |[/FORCE](force-force-file-output.md)|Çözülmemiş semboller veya bir defadan fazla tanımlanmış semboller içeren bir bağlantıyı tamamlamaya zorlar.|
 |[/FUNCTıONPADMıN](functionpadmin-create-hotpatchable-image.md)|Etkin düzeltme eki uygulanabilir bir görüntü oluşturur.|
-|[/GENPROFILE,/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Bu seçeneklerin her ikisi de profil temelli iyileştirme 'yi (PGO) desteklemek için bağlayıcı tarafından bir *`.pgd`* dosyası oluşturmayı belirtir. /GENPROFILE ve/FASTGENPROFILE farklı varsayılan parametreler kullanır.|
+|[/GENPROFILE,/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)|Bu seçeneklerin her ikisi de *`.pgd`* Profil temelli iyileştirme 'yi (PGO) desteklemek için bağlayıcı tarafından bir dosyanın oluşturulmasını belirtir. /GENPROFILE ve/FASTGENPROFILE farklı varsayılan parametreler kullanır.|
 |[/GUARD](guard-enable-guard-checks.md)|Denetim akışı koruyucusu korumasını etkinleştir.|
 |[/HEAP](heap-set-heap-size.md)|Yığının boyutunu bayt cinsinden ayarlar.|
-|[/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64 bit adres alanı düzeni rastgele seçme (ASLR) için desteği belirtir.|
-|[/IDLOUT](idlout-name-midl-output-files.md)|*`.idl`* dosyasının ve DIĞER MIDL çıktı dosyalarının adını belirtir.|
+|[/HıGHENTROPYVA](highentropyva-support-64-bit-aslr.md)|Yüksek entropi 64 bit adres alanı düzeni rastgele seçme (ASLR) için desteği belirtir.|
+|[/IDLOUT](idlout-name-midl-output-files.md)|*`.idl`* Dosya ve diğer MIDL çıktı dosyalarının adını belirtir.|
 |[/IGNORE](ignore-ignore-specific-warnings.md)|Belirtilen bağlayıcı uyarılarının çıkışını bastırır.|
-|[/IGNOREıDL](ignoreidl-don-t-process-attributes-into-midl.md)|Öznitelik bilgilerinin *`.idl`* dosyasına işlenmesini önler.|
+|[/IGNOREıDL](ignoreidl-don-t-process-attributes-into-midl.md)|Öznitelik bilgilerinin bir dosyaya işlenmesini önler *`.idl`* .|
 |[/IMPLıB](implib-name-import-library.md)|Varsayılan içeri aktarma kitaplığı adını geçersiz kılar.|
 |[/INCLUDE](include-force-symbol-references.md)|Sembol başvurularını zorlar.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|Artımlı bağlamayı denetler.|
@@ -92,7 +93,7 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/LTCG](ltcg-link-time-code-generation.md)|Bağlantı zamanı kod oluşturmayı belirtir.|
 |[/MACHıNE](machine-specify-target-platform.md)|Hedef platformu belirtir.|
 |[/MANIFEST](manifest-create-side-by-side-assembly-manifest.md)|Yan yana bildirim dosyası oluşturur ve isteğe bağlı olarak ikiliye katıştırır.|
-|[/MANıFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md)|Bildirim dosyasında \<dependentAssembly > bölümünü belirtir.|
+|[/MANıFESTDEPENDENCY](manifestdependency-specify-manifest-dependencies.md)|\<dependentAssembly>Bildirim dosyasındaki bir bölümü belirtir.|
 |[/MANıFESTFıLE](manifestfile-name-manifest-file.md)|Bildirim dosyasının varsayılan adını değiştirir.|
 |[/MANıFESTıNPUT](manifestinput-specify-manifest-input.md)|Bağlayıcının işleme ve ikiliye katıştırılması için bir bildirim giriş dosyasını belirtir. Birden fazla bildirim giriş dosyası belirtmek için bu seçeneği birden çok kez kullanabilirsiniz.|
 |[/MANıFESTUAC](manifestuac-embeds-uac-information-in-manifest.md)|Kullanıcı hesabı denetimi (UAC) bilgisinin program bildirimine katıştırılmadığını belirtir.|
@@ -112,19 +113,19 @@ Bazı bağlayıcı seçeneklerini belirtmek için, pragma [açıklamasını](../
 |[/PDB](pdb-use-program-database.md)|Bir PDB dosyası oluşturur.|
 |[/PDBALTPATH](pdbaltpath-use-alternate-pdb-path.md)|Bir PDB dosyasını kaydetmek için alternatif bir konum kullanır.|
 |[/PDBSTRıPPED](pdbstripped-strip-private-symbols.md)|Özel sembolleri olmayan bir PDB dosyası oluşturur.|
-|[/PGD](pgd-specify-database-for-profile-guided-optimizations.md)|Profil temelli iyileştirmeler için bir *`.pgd`* dosyası belirtir.|
+|[/PGD](pgd-specify-database-for-profile-guided-optimizations.md)|Profil temelli *`.pgd`* iyileştirmeler için bir dosya belirtir.|
 |[/POGOSAFEMODE](pogosafemode-linker-option.md)|**Kullanımdan kalktı** İş parçacığı güvenli PGO tarafından izlenen derleme oluşturur.|
 |[PROFILE](profile-performance-tools-profiler.md)|Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası üretir.|
-|[/RELEASE](release-set-the-checksum.md)|*`.exe`* üstbilgisindeki sağlama toplamını ayarlar.|
+|[/RELEASE](release-set-the-checksum.md)|Başlıktaki sağlama toplamını ayarlar *`.exe`* .|
 |[/SAFESEH](safeseh-image-has-safe-exception-handlers.md)|Görüntünün bir güvenli özel durum işleyicileri tablosu içerdiğini belirtir.|
 |[/SECTıON](section-specify-section-attributes.md)|Bir bölümün özniteliklerini geçersiz kılar.|
 |[/SOURCELINK](sourcelink.md)|PDB 'ye eklenecek bir SourceLink dosyası belirtir.|
 |[/STACK](stack-stack-allocations.md)|Yığının boyutunu bayt cinsinden ayarlar.|
 |[/STUB](stub-ms-dos-stub-file-name.md)|Bir Win32 programına bir MS-DOS saplama programı ekler.|
-|[/SUBSYSTEM](subsystem-specify-subsystem.md)|İşletim sistemine *`.exe`* dosyasının nasıl çalıştırılacağını söyler.|
+|[/SUBSYSTEM](subsystem-specify-subsystem.md)|İşletim sistemine dosyanın nasıl çalıştırılacağını söyler *`.exe`* .|
 |[/SWAPRUN](swaprun-load-linker-output-to-swap-file.md)|İşletim sistemine, çalıştırmadan önce bağlayıcı çıkışını bir takas dosyasına kopyalamasını söyler.|
 |[/TLBıD](tlbid-specify-resource-id-for-typelib.md)|Bağlayıcı tarafından oluşturulan tür kitaplığının kaynak KIMLIĞINI belirtir.|
-|[/TLBOUT](tlbout-name-dot-tlb-file.md)|*`.tlb`* dosyasının ve DIĞER MIDL çıktı dosyalarının adını belirtir.|
+|[/TLBOUT](tlbout-name-dot-tlb-file.md)|*`.tlb`* Dosya ve diğer MIDL çıktı dosyalarının adını belirtir.|
 |[/TSAWARE](tsaware-create-terminal-server-aware-application.md)|Özellikle Terminal Server altında çalışacak şekilde tasarlanan bir uygulama oluşturur.|
 |[/USEPROFILE](useprofile.md)|İyileştirilmiş bir görüntü oluşturmak için profil temelli iyileştirme eğitimi verilerini kullanır.|
 |[/VERBOSE](verbose-print-progress-messages.md)|Bağlayıcı ilerleme iletilerini yazdırır.|

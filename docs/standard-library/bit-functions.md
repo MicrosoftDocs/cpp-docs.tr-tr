@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::bit [C++], countr_zero
 - std::bit [C++], countr_one
 - std::bit [C++], popcount
-ms.openlocfilehash: 44ec7c4fb2f3fc303b9a96b2b6d5273279fcac12
-ms.sourcegitcommit: 3628707bc17c99aac7aac27eb126cc2eaa4d07b4
+ms.openlocfilehash: f06e181a4fe6683adb0cc63c016cbd879f2fc574
+ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89194565"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89281815"
 ---
 # <a name="ltbitgt-functions"></a>&lt;bit &gt; işlevleri
 
@@ -150,7 +150,7 @@ int main()
     {
         auto nextClosestPowerOf2 = std::bit_ceil(i);
         std::cout << "\nbit_ceil(0b" << std::bitset<4>(i) << ") = "
-            << "0b" << std::bitset<4>(nextClosestPowerOf2);
+                  << "0b" << std::bitset<4>(nextClosestPowerOf2);
     }
     return 0;
 }
@@ -201,7 +201,7 @@ int main()
     {
         auto previousPowerOf2 = std::bit_floor(i);
         std::cout << "\nbit_floor(0b" << std::bitset<4>(i) << ") = 0b"
-            << std::bitset<4>(previousPowerOf2);
+                  << std::bitset<4>(previousPowerOf2);
     }
     return 0;
 }
@@ -252,7 +252,7 @@ int main()
     for (unsigned i=0u; i <= 8u; ++i)
     {
         std::cout << "\nbit_width(" << i << ") = "
-                      << std::bit_width(i);
+                  << std::bit_width(i);
     }
     return 0;
 }
@@ -355,11 +355,11 @@ En önemli bitden başlayarak, tek bir olarak ayarlanan ardışık bitlerin say�
 int main()
 {
     unsigned char value = 0;
-        for (unsigned char bit = 128; bit > 0; bit /= 2)
+    for (unsigned char bit = 128; bit > 0; bit /= 2)
     {
         value |= bit;
         std::cout << "\ncountl_one(0b" << std::bitset<8>(value) << ") = "
-            << std::countl_one(value);
+                  << std::countl_one(value);
     }
     return 0;
 }
@@ -411,7 +411,7 @@ int main()
     for (unsigned char result = 0, i = 0; i < 9; i++)
     {
         std::cout << "\ncountr_zero(0b" << std::bitset<8>(result) << ") = "
-            << std::countr_zero(result);
+                  << std::countr_zero(result);
         result = result == 0 ? 1 : result * 2;
     }
     return 0;
@@ -466,7 +466,7 @@ int main()
     {
         value |= bit;
         std::cout << "\ncountr_one(0b" << std::bitset<8>(value) << ") = "
-                      << std::countr_one(value);
+                  << std::countr_one(value);
     }
     return 0;
 }
@@ -518,7 +518,7 @@ int main()
     for (auto i = 0u; i < 10u; ++i)
     {
         std::cout << "has_single_bit(0b" << std::bitset<4>(i) << ") = "
-            << std::boolalpha << std::has_single_bit(i) << '\n';
+                  << std::boolalpha << std::has_single_bit(i) << '\n';
     }
     return 0;
 }
@@ -571,7 +571,7 @@ int main()
    for (unsigned char value = 0; value < 16; value++)
     {
         std::cout << "\npopcount(0b" << std::bitset<4>(value) << ") = "
-                      << std::popcount(value);
+                  << std::popcount(value);
     }
     return 0;
 }
