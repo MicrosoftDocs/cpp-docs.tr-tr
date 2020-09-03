@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ AMP (see C++ Accelerated Massive Parallelism)
 - C++ Accelerated Massive Parallelism, getting started
 ms.assetid: e27824cb-3167-409b-8c3f-a0e476d8f349
-ms.openlocfilehash: 516b69a0371ceb9365e79d5465879711289076c0
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 243c476b6536278eb09b26b24becb65276d6e48a
+ms.sourcegitcommit: 093f49b8b69daf86661adc125b1d2d7b1f0e0650
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404866"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427640"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP (C++ Accelerated Massive Parallelism)
 
@@ -37,6 +37,6 @@ C++ AMP (C++ Accelerated Massive Parallelism), ayrı bir grafik kartında grafik
 
 ## <a name="other-resources"></a>Diğer Kaynaklar
 
-[Yerel kod blogu 'nda paralel programlama](https://go.microsoft.com/fwlink/p/?linkid=238472)<br/>
-[İndirme için örnek projeleri C++ AMP](https://go.microsoft.com/fwlink/p/?linkid=248508)<br/>
+[Yerel kod blogu 'nda paralel programlama](/archive/blogs/nativeconcurrency/)<br/>
+[İndirme için örnek projeleri C++ AMP](/archive/blogs/nativeconcurrency/c-amp-sample-projects-for-download)<br/>
 [Eşzamanlılık görselleştiricisi ile C++ AMP kodu analiz etme](/archive/blogs/nativeconcurrency/analyzing-c-amp-code-with-the-concurrency-visualizer)
