@@ -1,5 +1,6 @@
 ---
 title: _getch_nolock, _getwch_nolock
+description: _Getch_nolock için API başvurusu ve _getwch_nolock; Bu, yankısız ve iş parçacığını kilitlemeden konsoldan bir karakter alır.
 ms.date: 4/2/2020
 api_name:
 - _getwch_nolock
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - getch_nolock function
 - gettch_nolock function
 ms.assetid: 9d248546-26ca-482c-b0c6-55812a987e83
-ms.openlocfilehash: 81a3b49287902ac0aaa4d635553cbbaac81ac356
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 36a50f215a9250b23d4dc25db2e1f1c764a085ce
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920344"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555039"
 ---
 # <a name="_getch_nolock-_getwch_nolock"></a>_getch_nolock, _getwch_nolock
 
@@ -54,7 +55,7 @@ ms.locfileid: "82920344"
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _getch_nolock( void );
@@ -81,8 +82,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getch_nolock**|\<conio. h>|
-|**_getwch_nolock**|\<conio. h> veya \<wchar. h>|
+|**_getch_nolock**|\<conio.h>|
+|**_getwch_nolock**|\<conio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -124,7 +125,7 @@ Type 'Y' when finished typing keys: Y
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getche, _getwche](getche-getwche.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

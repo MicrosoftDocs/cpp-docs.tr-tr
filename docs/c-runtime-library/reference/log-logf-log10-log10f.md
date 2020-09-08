@@ -1,6 +1,7 @@
 ---
 title: log, logf, logl, log10, log10f, log10l
-ms.date: 6/5/2020
+description: Log, logf, logl, log10, log10f ve log10l; için API başvurusu logaritmaları hesaplayabilirsiniz.
+ms.date: 9/1/2020
 api_name:
 - log10f
 - logf
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - logf function
 - logarithms
 ms.assetid: 7adc77c2-04f7-4245-a980-21215563cfae
-ms.openlocfilehash: ddfe0198ab83f72868f383d6c35f040415893ad4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f308281705170308ec83e4a5efd9c7825ba47591
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218604"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556288"
 ---
 # <a name="log-logf-logl-log10-log10f-log10l"></a>log, logf, logl, log10, log10f, log10l
 
@@ -62,31 +63,31 @@ Logaritmaları hesaplar.
 ## <a name="syntax"></a>Söz dizimi
 
 ```C
-double log( double x );
-float logf( float x );
-long double logl( double x );
-double log10( double x );
-float log10f ( float x );
-long double log10l( double x );
-```
+double log(double x);
+float logf(float x);
+long double logl(double x);
+double log10(double x);
+float log10f (float x);
+long double log10l(double x);
+#define log(X) // Requires C11 or higher
+#define log10(X) // Requires C11 or higher
 
-```cpp
-float log( float x );  // C++ only
-long double log( long double x );  // C++ only
-float log10( float x );  // C++ only
-long double log10( long double x );  // C++ only
+float log(float x);  // C++ only
+long double log(long double x);  // C++ only
+float log10(float x);  // C++ only
+long double log10(long double x);  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Logaritmanın bulunduğu değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Günlük** işlevleri, başarılı olursa *x* 'in doğal logaritmasını ( *e*tabanı) döndürür. **Log10** işlevleri, 10 tabanında logaritmasını döndürür. *X* negatifse, bu işlevler varsayılan olarak sonsuz (IND) döndürür. *X* 0 ise sonsuz (INF) döndürür.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|_DOMAIN|
 |± 0|SıFıR bölme|_SING|
@@ -96,7 +97,9 @@ Logaritmanın bulunduğu değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, bir veya değerleri alıp döndüren **günlük** ve **log10** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **log** ve **log10** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, bir veya değerleri alıp döndüren **günlük** ve **log10** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **log** ve **log10** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `log()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -105,6 +108,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
 |**log**, **logf**, **logl**, **log10**, **log10f**, **log10l**|\<math.h>|
+|**günlük** makrosu | \<tgmath.h> |
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

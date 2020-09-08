@@ -1,6 +1,7 @@
 ---
 title: tgamma, tgammaf, tgammal
-ms.date: 4/2/2020
+description: Tgama, tgamaf ve tgammal; için API başvurusu belirtilen değerin gama işlevini belirleyen.
+ms.date: 9/1/2020
 api_name:
 - tgamma
 - tgammaf
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-ms.openlocfilehash: f38ae3f3ad38eeb9806803fd8dad1b8297393168
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b49020ca0697e920dccf188df4ad024820966571
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218526"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555182"
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
 
@@ -55,14 +56,6 @@ double tgamma(
    double x
 );
 
-float tgamma(
-   float x
-); //C++ only
-
-long double tgamma(
-   long double x
-); //C++ only
-
 float tgammaf(
    float x
 );
@@ -70,11 +63,21 @@ float tgammaf(
 long double tgammal(
    long double x
 );
+
+#define tgamma(X) // Requires C11 or higher
+
+float tgamma(
+   float x
+); //C++ only
+
+long double tgamma(
+   long double x
+); //C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Gamasını bulmak için değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -99,7 +102,9 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türündeki **tgama** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **tgama** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türündeki **tgama** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **tgama** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `tgamma()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 X doğal bir sayı ise, bu işlev (x-1) faktöriyelini döndürür.
 
@@ -109,7 +114,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**tgama**, **tgamaf**, **tgammal**|\<math.h>|\<cmath>|
+|**tgama**, **tgamaf**,  **tgammal**|\<math.h>|\<cmath>|
+|**tgama** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

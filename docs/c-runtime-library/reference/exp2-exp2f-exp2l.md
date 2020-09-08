@@ -1,6 +1,7 @@
 ---
 title: exp2, exp2f, exp2l
-ms.date: 4/2/2020
+description: Exp2 (), exp2f () ve exp2l () için API ref, belirtilen değere oluşturulan 2.
+ms.date: 9/1/2020
 api_name:
 - exp2
 - exp2f
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-ms.openlocfilehash: d2eb3f6d27e943110c5e82968d4fee949644601f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 518525a38ef575583fde3b7732561f2fa553dd18
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234165"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556625"
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 
@@ -70,11 +71,12 @@ float exp2f(
 long double exp2l(
    long double x
 );
+#define exp2(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Üs değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -94,7 +96,9 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **exp2** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **exp2** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **exp2** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız **müddetçe,** **`double`** makroyu <tgmath. h> kullanmadığınız durumlar dışında her zaman alır ve döndürür.
+
+\<tgmath.h> `exp2()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -102,7 +106,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**Exp**, **expf**, **expl**|\<math.h>|\<cmath>|
+|**exp2**, **expf2**, **expl2**|\<math.h>|\<cmath>|
+|**exp2** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

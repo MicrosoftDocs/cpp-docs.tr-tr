@@ -1,6 +1,7 @@
 ---
 title: frexp, frexpf, frexpl
-ms.date: 4/2/2020
+description: Frexp, frexpf ve frexpl için API başvurusu; bir kayan noktalı sayının Mantis ve üstürünü alır.
+ms.date: 9/1/2020
 api_name:
 - frexp
 - _o_frexp
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - frexp function
 - floating-point functions, mantissa and exponent
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
-ms.openlocfilehash: 34d8877d4b8372a33fb5f0f6095a7027cae50555
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a23de4160abcfab2518125bfa0fd35a389901674
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220710"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555754"
 ---
 # <a name="frexp-frexpf-frexpl"></a>frexp, frexpf, frexpl
 
@@ -58,6 +59,10 @@ long double frexpl(
    long double x,
    int * expptr
 );
+#define frexpl(X, INT_PTR) // Requires C11 or higher
+```
+
+```cpp
 float frexp(
    float x,
    int * expptr
@@ -70,10 +75,10 @@ long double frexp(
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kayan nokta değeri.
 
-*expptr*<br/>
+*expptr*\
 Depolanan tamsayı üs işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -84,7 +89,9 @@ Depolanan tamsayı üs işaretçisi.
 
 **Frexp** işlevi kayan nokta değerini (*x*) bir Mantis (*e*) ve üs (*n*) olarak ayırır; Örneğin, sıfırdan büyük değer *0,5, 1,0* ' den küçük ve *x*  =  *e* * 2<sup>*n*</sup>. Tamsayı üssü *n* , *expptr*tarafından işaret edilen konumda depolanır.
 
-C++ aşırı yüklemeye izin verdiğinden, **frexp**aşırı yüklerini çağırabilirsiniz. C programında, **frexp** her zaman bir ve bir **`double`** işaretçi alır **`int`** ve bir döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **frexp**aşırı yüklerini çağırabilirsiniz. C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **frexp** her zaman bir **`double`** ve bir işaretçi alır **`int`** ve döndürür **`double`** .
+
+\<tgmath.h> `frexp()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -93,6 +100,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
 |**frexp**, **frexpf**, **frexpl**|\<math.h>|
+|**frexp** makrosu | \<tgmath.h> |
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

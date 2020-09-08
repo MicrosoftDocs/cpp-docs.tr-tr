@@ -1,5 +1,6 @@
 ---
 title: _rotl, _rotl64, _rotr, _rotr64
+description: _Rotl, _rotl64, _rotr ve _rotr64 için API başvurusu; bitleri sola (_rotl) veya sağa (_rotr) döndürün.
 ms.date: 04/05/2018
 api_name:
 - _rotr64
@@ -43,18 +44,18 @@ helpviewer_keywords:
 - _rotr64 function
 - bits, rotating
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
-ms.openlocfilehash: 0ae2df7d80778cd4c573192a13b1fd91fb358eef
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d2fb6b2674ed7d50cff63ae45f22af63b0120597
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949145"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556599"
 ---
 # <a name="_rotl-_rotl64-_rotr-_rotr64"></a>_rotl, _rotl64, _rotr, _rotr64
 
-Bitleri sola ( **_rotl**) veya sağa ( **_rotr**) döndürür.
+Bitleri sola (**_rotl**) veya sağa (**_rotr**) döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 
@@ -78,7 +79,7 @@ unsigned __int64 _rotr64(
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
+*deeri*<br/>
 Döndürülecektir değer.
 
 *karakter*<br/>
@@ -90,14 +91,14 @@ Döndürülen değer. Hata döndürme yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Rotl** ve **_rotr** işlevleri, işaretsiz *değeri* *kaydırma* bitleriyle döndürür. **_rotl** değeri sola döndürür. **_rotr** değeri sağa döndürür. Her iki işlev de bir *değerin* sonundaki bitleri diğer bir uca kaydırır.
+**_Rotl** ve **_rotr** işlevleri, işaretsiz *değeri* *kaydırma* bitleriyle döndürür. **_rotl** , soldaki değeri döndürür. **_rotr** doğru değeri döndürür. Her iki işlev de bir *değerin* sonundaki bitleri diğer bir uca kaydırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_rotl**, **_rotl64**|\<Stdlib. h >|
-|**_rotr**, **_rotr64**|\<Stdlib. h >|
+|**_rotl**, **_rotl64**|\<stdlib.h>|
+|**_rotr**, **_rotr64**|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -143,5 +144,5 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [_lrotl, _lrotr](lrotl-lrotr.md)<br/>

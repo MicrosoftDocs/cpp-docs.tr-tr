@@ -1,6 +1,7 @@
 ---
 title: cosh, coshf, coshl
-ms.date: 4/2/2020
+description: Cosh, coshf ve coshl; için API başvurusu bir kayan nokta değerinin hiperbolik kosinüsünü hesaplar.
+ms.date: 08/31/2020
 api_name:
 - cosh
 - coshf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - coshl function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: fb171d622d5bc187342054a74e8aa19f83c3c560
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0ea4a5b77850e196c29519ac49b589a0c2b6c9a7
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213612"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555533"
 ---
 # <a name="cosh-coshf-coshl"></a>cosh, coshf, coshl
 
@@ -50,16 +51,15 @@ Hiperbolik kosinüsü hesaplar.
 double cosh( double x );
 float coshf( float x );
 long double coshl( long double x );
-```
+#define cosh(X) // Requires C11 or higher
 
-```cpp
 float cosh( float x );  // C++ only
 long double cosh( long double x );  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,14 +68,16 @@ Radyan cinsinden açı.
 
 Varsayılan olarak, sonuç bir **cosh**, **coshf**veya **coshl** çağrısında çok büyükse, işlev **HUGE_VAL** döndürür ve **errno** ' ı **ERANGE**olarak ayarlar.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 |*x* ≥ 7.104760 e + 002|**Tam** + değil **Taşma**|**TAŞMA**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **cosh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **cosh** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **cosh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **cosh** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `cosh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -84,6 +86,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
 |**coshf**, **COSL**, **coshl**|\<math.h>|\<cmath> veya \<math.h>|
+|**coshf ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

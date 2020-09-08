@@ -1,6 +1,7 @@
 ---
 title: FMOD, fmodf, fmodl
-ms.date: 4/2/2020
+description: FMOD, fmodf ve fmodl için API başvurusu; kayan nokta kalanını hesaplar.
+ms.date: 9/1/2020
 api_name:
 - fmod
 - fmodf
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - fmod function
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-ms.openlocfilehash: 4fa3df46358932b8a62a6b8529baed4a5c9e5c49
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2b610dec79c98b973af09f8efb147ad6797f7946
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216979"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556092"
 ---
 # <a name="fmod-fmodf-fmodl"></a>FMOD, fmodf, fmodl
 
@@ -68,11 +69,13 @@ long double fmodl(
    long double x,
    long double y
 );
+
+#define fmod(X, Y) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*, *y*<br/>
+*x*, *y*\
 Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -83,7 +86,9 @@ Kayan nokta değerleri.
 
 **Fmod** işlevi *, x*i y f 'nin kayan *nokta geri kalanını* hesaplar  /  *y* *x*  =  *i* \* *y*  +  *f*, burada bir tamsayı *,* *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür.
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alıp döndüren **fmod** 'un aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **fmod** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alıp döndüren **fmod** 'un aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **fmod** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
+
+\<tgmath.h> `fmod()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -92,6 +97,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
 |**fmod**, **fmodf**, **fmodl**|\<math.h>|
+|**fmod** makrosu | \<tgmath.h> |
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,6 +1,7 @@
 ---
 title: carg, cargf, cargl
-ms.date: 11/04/2016
+description: Carg, cargf ve cargl; için API başvurusu karmaşık bir sayının bağımsız değişkenini elde eden bir dal, negatif gerçek eksen üzerinde kesilir.
+ms.date: 9/2/2020
 api_name:
 - carg
 - cargf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cargf function
 - cargl function
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
-ms.openlocfilehash: 883710ad4538fb9081ad0c8cfaa169380ddbaf55
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 907694904b260c44dde84724c739c62dfe46dbde
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213625"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555819"
 ---
 # <a name="carg-cargf-cargl"></a>carg, cargf, cargl
 
@@ -62,11 +63,12 @@ float cargf(
 long double cargl(
    _Lcomplex z
 );
+#define carg(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kadar*<br/>
+*kadar*\
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -75,13 +77,16 @@ Karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** veya **_Lcomplex** değerlerini alan ve döndüren **Carg** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **Carg** her zaman bir **_Dcomplex** değeri alır ve bir değer döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** veya **_Lcomplex** değerlerini alan ve döndüren **Carg** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **Carg** her zaman bir **_Dcomplex** değeri alır ve bir **`double`** değer döndürür.
+
+\<tgmath.h> `carg()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
 |**Carg**, **cargf**, **cargl**|\<complex.h>|\<ccomplex>|
+|**Carg** makrosu | \<tgmath.h> ||
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

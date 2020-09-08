@@ -1,6 +1,7 @@
 ---
 title: remquo, remquof, remquol
-ms.date: 4/2/2020
+description: Remquo, remquof ve remquol; için API başvurusu iki tamsayı değerinin kalanını hesaplar ve bir tamsayı değerini bir parametre içinde belirtilen bir konumda ve alanın yaklaşık büyüklüğü ile depolar.
+ms.date: 9/1/2020
 api_name:
 - remquof
 - remquo
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-ms.openlocfilehash: d1b5c60e2e6bd8ba4d5f3b4297dff4bd57c650f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d99204ad9a80c6320869cbb72aee905981a5224d
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216797"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554974"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
@@ -51,22 +52,21 @@ ms.locfileid: "87216797"
 double remquo( double numer, double denom, int* quo );
 float remquof( float numer, float denom, int* quo );
 long double remquol( long double numer, long double denom, int* quo );
-```
+#define remquo(X, Y, INT_PTR) // Requires C11 or higher
 
-```cpp
 float remquo( float numer, float denom, int* quo ); /* C++ only */
 long double remquo( long double numer, long double denom, int* quo ); /* C++ only */
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*numer*<br/>
+*numer*\
 Pay.
 
-*denom*<br/>
+*denom*\
 Payda.
 
-*göster*<br/>
+*göster*\
 İşaretine ve bölümün yaklaşık büyüklüğüne sahip bir değeri depolamak için bir tamsayıya yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -77,7 +77,9 @@ Payda.
 
 **Remquo** işlevi *, x*i y f 'nin kayan *nokta geri kalanını* hesaplar  /  *y* *x*  =  *i* \* *y*  +  *f*, burada bir tamsayıdır, *f* ise *x*ile aynı işarete sahiptir ve *f* 'nin mutlak değeri *y*'nin mutlak değerinden küçüktür. *i*
 
-C++ aşırı yüklemeye izin verdiğinden, bir veya değerlerini alan ve döndüren **remquo** aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **remquo** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, bir veya değerlerini alan ve döndüren **remquo** aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **remquo** her zaman iki **`double`** bağımsız değişken alır ve döndürür **`double`** .
+
+\<tgmath.h> `remquo()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,6 +88,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |--------------|---------------------|-|
 |**remquo**, **remquof**, **remquol**|\<math.h>|\<cmath> veya \<math.h>|
+|**remquo** makrosu | \<tgmath.h> ||
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

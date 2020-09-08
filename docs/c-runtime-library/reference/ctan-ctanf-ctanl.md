@@ -1,5 +1,6 @@
 ---
 title: ctan, ctanf, ctanl
+description: Ctan, ctanf ve ctanl; için API başvurusu karmaşık bir sayının tanjantını alma.
 ms.date: 11/04/2016
 api_name:
 - ctan
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - ctanf function
 - ctanl function
 ms.assetid: d3cbd25c-1e93-4a6d-8154-da42921f7223
-ms.openlocfilehash: 3d1275f795ae68777515e833a19f2b90f4fedf93
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 74fa33a6bf6b99e8606094aff3845fdfd79d48a2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938452"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555910"
 ---
 # <a name="ctan-ctanf-ctanl"></a>ctan, ctanf, ctanl
 
 Karmaşık bir sayının tanjantını alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _Dcomplex ctan(
@@ -66,7 +67,7 @@ _Lcomplex ctanl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*\
 Radyan cinsinden açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -76,17 +77,17 @@ Radyan cinsinden açıyı temsil eden karmaşık bir sayı.
 |Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|_DOMAIN|
-|± ∞ (**tan**, **tanf**)|GEÇERSİZ|_DOMAIN|
+|± ∞ (**tan**, **tanf**)|Geçersiz|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **Ctan** 'ın **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren aşırı yüklerini çağırabilirsiniz. C programında **ctan** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **ctan** 'ın aşırı yüklerini çağırabilirsiniz. C programında **ctan** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**ctan**, **ctanf**, **ctanl**|\<karmaşık. h >|\<ccomplex >|
+|**ctan**,  **ctanf**, **ctanl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

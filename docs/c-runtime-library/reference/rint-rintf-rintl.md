@@ -1,6 +1,7 @@
 ---
 title: rint, rintf, rintl
-ms.date: 4/2/2020
+description: Rint, rintf ve rintl için API başvurusu; kayan nokta biçimindeki değeri en yakın tamsayıya yuvarlar.
+ms.date: 9/1/2020
 api_name:
 - rintf
 - rintl
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-ms.openlocfilehash: 009f56de506b50f81502a2aad7632244b069d09a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1ed1fa279694d3df75db5963e5a571d58299e415
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216771"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555351"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
@@ -51,30 +52,31 @@ Kayan noktalı bir değeri kayan nokta biçimindeki en yakın tamsayıya yuvarla
 double rint( double x );
 float rintf( float x );
 long double rintl( long double x );
-```
+#define rint(X) // Requires C11 or higher
 
-```cpp
 float rint( float x );  // C++ only
 long double rint( long double x );  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Rint** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Yarı çift değerler kayan nokta yuvarlama modunun geçerli ayarına göre yuvarlanır ve bu da, bir değer olarak, daha önce, bir **tamsayı** işlevleriyle aynıdır. Bir sonuç, bağımsız değişkenden değerde farklıysa,,,,, bir **FE_INEXACT** kayan **nokta işlevlerinin aksine** , **rint** işlevleri kayan nokta özel durumunu oluşturabilir. Hata döndürme yok.
 
-|Girdi|SEH özel durumu|**_matherr** Duruma|
+|Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|yok|
 |Denormals|EXCEPTION_FLT_UNDERFLOW|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **rint** 'nin aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **rint** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **rint** 'nin aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **rint** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `rint()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -83,6 +85,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**rint**, **rintf**, **rintl**|\<math.h>|\<cmath>|
+|**rint** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

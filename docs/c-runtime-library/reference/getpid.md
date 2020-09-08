@@ -1,5 +1,6 @@
 ---
 title: _getpid
+description: _Getpid için API başvurusu, işlem kimliğini alır.
 ms.date: 11/04/2016
 api_name:
 - _getpid
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _getpid function
 - process identification numbers
 ms.assetid: d3e13bae-9a0c-4f33-86d3-ec9df9519285
-ms.openlocfilehash: b0848e5eb01f39c009fcdc650ea551f18e23c6fb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fc2de8e0b6e87d04bd9ae29ce3a945c048af00e2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954993"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556495"
 ---
 # <a name="_getpid"></a>_getpid
 
@@ -40,7 +41,7 @@ ms.locfileid: "70954993"
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _getpid( void );
@@ -58,7 +59,7 @@ Sistemden alınan işlem KIMLIĞINI döndürür. Hata döndürme yok.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getpid**|\<Process. h >|
+|**_getpid**|\<process.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -87,5 +88,5 @@ Process id: 3584
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_mktemp, _wmktemp](mktemp-wmktemp.md)<br/>

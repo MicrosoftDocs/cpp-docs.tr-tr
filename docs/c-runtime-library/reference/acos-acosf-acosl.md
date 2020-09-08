@@ -1,6 +1,7 @@
 ---
 title: acos, acosf, acosl
-ms.date: 4/2/2020
+description: '`acos`, `acosf` Ve için `acosl` bir kayan nokta değerinin arkkosinüsünü hesaplayan, ve için API başvurusu.'
+ms.date: 08/31/2020
 api_name:
 - acosf
 - acos
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - trigonometric functions
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: b6188c585d2f3b7f2bce1a50569e6bae60ee4942
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eeee51cea2a81882ee1ed8b014312ee9f9095dc6
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220775"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555104"
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 
@@ -53,16 +54,15 @@ Arkkosinüsünü hesaplar.
 double acos( double x );
 float acosf( float x );
 long double acosl( long double x );
-```
+#define acos(X) // Requires C11 or higher
 
-```cpp
 float acos( float x );   // C++ only
 long double acos( long double x );   // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 -1 ile 1 arasında olan ve Arkkosinüs (ters kosinüs) hesaplanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -71,7 +71,7 @@ long double acos( long double x );   // C++ only
 
 Varsayılan olarak, *x* 1 ' den küçük veya 1 ' den büyükse **Acos** sonsuz döndürür.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± ∞|Geçersiz|_DOMAIN|
 |± QNAN, IND|yok|_DOMAIN|
@@ -79,7 +79,9 @@ Varsayılan olarak, *x* 1 ' den küçük veya 1 ' den büyükse **Acos** sonsuz 
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türündeki **Acos** 'ın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **Acos** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türündeki **Acos** 'ın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe **Acos** her zaman bir alır ve döndürür **`double`** .
+
+\<tgmath.h> `acos()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,6 +90,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
 |**Acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
+|**acos ()** makrosu | \<tgmath.h> ||
 
 ## <a name="example"></a>Örnek
 

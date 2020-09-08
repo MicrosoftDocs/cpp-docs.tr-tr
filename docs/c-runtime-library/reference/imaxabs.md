@@ -1,5 +1,6 @@
 ---
 title: imaxabs
+description: Her boyuttaki tamsayının mutlak değerini hesaplayan ımaxabs için API başvurusu.
 ms.date: 04/05/2018
 api_name:
 - imaxabs
@@ -24,18 +25,18 @@ f1_keywords:
 helpviewer_keywords:
 - imaxabs function
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-ms.openlocfilehash: c1f20c4de2ff9070bae3bfaeb8ba2d97d87d2d4d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 599e8a0cb20f24bda24201be40fa1acc0ade993c
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954686"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555507"
 ---
 # <a name="imaxabs"></a>imaxabs
 
 Her boyuttaki tamsayının mutlak değerini hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 intmax_t imaxabs(
@@ -45,7 +46,7 @@ intmax_t imaxabs(
 
 ### <a name="parameters"></a>Parametreler
 
-*n*<br/>
+*No*<br/>
 Tamsayı değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -53,13 +54,13 @@ Tamsayı değeri.
 **Imaxabs** işlevi bağımsız değişkenin mutlak değerini döndürür. Hata döndürme yok.
 
 > [!NOTE]
-> **İntmax_t** kullanılarak gösterilebilen negatif tamsayılar aralığı, gösterilebilen pozitif tamsayılar aralığından daha büyük olduğundan, **ımakabs** 'in dönüştürülemeyeceği bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ımaxabs** davranışı tanımsızdır.
+> **İntmax_t** kullanılarak gösterilebilen negatif tamsayılar aralığı, gösterilebilen pozitif tamsayılar aralığından daha büyük olduğundan, **ımakabs** 'e dönüştürülemeyen bir bağımsız değişken sağlamak mümkündür. Bağımsız değişkenin mutlak değeri, dönüş türü tarafından temsil edilemez, **ımaxabs** davranışı tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**imaxabs**|\<inttypes. h >|
+|**imaxabs**|\<inttypes.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -93,8 +94,8 @@ The absolute value of -9223372036854775806 is 9223372036854775806
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [abs, labs, llabs, _abs64](abs-labs-llabs-abs64.md)<br/>
 [_cabs](cabs.md)<br/>
 [fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>

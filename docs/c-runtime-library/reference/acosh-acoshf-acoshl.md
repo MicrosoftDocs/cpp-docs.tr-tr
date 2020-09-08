@@ -1,6 +1,7 @@
 ---
 title: acosh, acoshf, acoshl
-ms.date: 4/2/2020
+description: Acosh, acoshf ve acoshl; için API başvurusu bir kayan noktalı değerin ters hiperbolik kosinüsünü hesaplar.
+ms.date: 08/31/2020
 api_name:
 - acoshf
 - acosh
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - acosh function
 - acoshl function
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
-ms.openlocfilehash: a6883c23d06115c8775dd919123671feac380b99
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ef6d47ca07f96be84962303c13162b154086e5f2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220762"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555117"
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
 
@@ -54,30 +55,31 @@ Ters hiperbolik kosinüsü hesaplar.
 double acosh( double x );
 float acoshf( float x );
 long double acoshl( long double x );
-```
+#define acosh(X) // Requires C11 or higher
 
-```cpp
 float acosh( float x );  // C++ only
 long double acosh( long double x );  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **ACOSH** işlevleri, *x*'in ters hyberbolik kosinüsünü (Ark hiperbolik kosinüs) döndürür. Bu işlevler, *x* ≥ 1 etki alanı üzerinde geçerlidir. *X* 1 ' den küçükse, `errno` olarak ayarlanır `EDOM` ve sonuç bir sessiz NaN olur. *X* sessiz bir NaN, sonsuz veya sonsuz ise, aynı değer döndürülür.
 
-|Girdi|SEH özel durumu|`_matherr`Duruma|
+|Giriş|SEH özel durumu|`_matherr` Duruma|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, ıNF|yok|yok|
 |*x* < 1|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ kullandığınızda, ve değerlerini alan ve döndüren **ACOSH** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **ACOSH** her zaman alır ve döndürür **`double`** .
+C++ kullandığınızda, ve değerlerini alan ve döndüren **ACOSH** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **ACOSH** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `acosh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,6 +88,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**ACOSH**, **acoshf**, **acoshl**|\<math.h>|\<cmath>|
+|**ACOSH ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,5 +1,6 @@
 ---
 title: cexp, cexpf, cexpl
+description: Cexp, cexpf ve cexpl; için API başvurusu karmaşık bir sayının taban-e üssünü hesaplama.
 ms.date: 11/04/2016
 api_name:
 - cexp
@@ -33,33 +34,31 @@ helpviewer_keywords:
 - cexpl function
 - cexpf function
 ms.assetid: f27fd5a9-70c7-4957-a7ee-5256d19bd1da
-ms.openlocfilehash: 0dd6c9deddfe93cf044985f93b2129695d0770f0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 66f7b687e8da12473abef4dbc44831e175956ac0
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943164"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555221"
 ---
 # <a name="cexp-cexpf-cexpl"></a>cexp, cexpf, cexpl
 
 Karmaşık bir sayının taban-e üssünü hesaplama.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _Dcomplex cexp( _Dcomplex z );
 _Fcomplex cexpf( _Fcomplex z );
 _Lcomplex cexpl( _Lcomplex z );
-```
 
-```cpp
 _Fcomplex cexp( _Fcomplex z );  // C++ only
 _Lcomplex cexp( _Lcomplex z );  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*\
 Üssü temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,19 +67,19 @@ _Lcomplex cexp( _Lcomplex z );  // C++ only
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cexp** aşırı yüklerini çağırabilirsiniz. C programında **cexp** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **cexp** aşırı yüklerini çağırabilirsiniz. C programında **cexp** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**cexp**, **cexpf**, **cexpl**|\<karmaşık. h >|\<karmaşık. h >|
+|**cexp**, **cexpf**, **cexpl**|\<complex.h>|\<complex.h>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
-[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
-[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
-[clog, clogf, clogl](clog-clogf-clogl.md)<br/>
+[Alfabetik Işlev Başvurusu](crt-alphabetical-function-reference.md)\
+[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)\
+[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)\
+[clog, clogf, clogl](clog-clogf-clogl.md)

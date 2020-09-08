@@ -1,6 +1,7 @@
 ---
 title: trunc, truncf, truncl
-ms.date: 04/05/2018
+description: TRUNC, truncf, truncl; için API başvurusu belirtilen kayan nokta değerinden küçük veya buna eşit en yakın tamsayıyı belirleyen.
+ms.date: 9/1/2020
 api_name:
 - trunc
 - truncf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - truncf function
 - truncl function
 ms.assetid: de2038ac-ac0b-483e-870c-e8992dcd4fd0
-ms.openlocfilehash: b47d07cbe1e86e3f53d3a562cd5e1b3dca7f4814
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f1f2fde95bb944aa461bb95a9ad30fac204552b9
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232397"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556638"
 ---
 # <a name="trunc-truncf-truncl"></a>trunc, truncf, truncl
 
@@ -48,18 +49,16 @@ Belirtilen kayan noktalı değerden küçük veya buna eşit en yakın tamsayıy
 
 ```C
 double trunc( double x );
-float trunc( float x ); //C++ only
 long double truncl( long double x );
-```
+#define trunc(X) // Requires C11 or higher
 
-```cpp
 long double trunc( long double x ); //C++ only
 float trunc( float x ); //C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kesyapılacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -78,7 +77,9 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **TRUNC** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **TRUNC** her zaman bir alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **TRUNC** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **TRUNC** her zaman bir alır ve döndürür **`double`** .
+
+\<tgmath.h> `trunc()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 En büyük kayan nokta değerleri tam tamsayılar olduğundan, bu işlev kendi kendine taşmaz. Ancak, bir değeri tamsayı türüne döndürerek işlevin taşmasına neden olabilirsiniz.
 
@@ -89,6 +90,7 @@ Kayan noktadan tam sayıya örtülü olarak dönüştürme ile de aşağı doğr
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**TRUNC**, **truncf**, **truncl**|\<math.h>|\<cmath>|
+|**TRUNC** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

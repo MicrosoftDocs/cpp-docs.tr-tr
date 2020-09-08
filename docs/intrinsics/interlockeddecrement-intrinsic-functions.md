@@ -1,6 +1,7 @@
 ---
 title: _InterlockedDecrement iç işlevler
-ms.date: 09/02/2019
+description: Microsoft C/C++ derleyicisi iç kilitleme için iç işlevler.
+ms.date: 09/03/2020
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -44,88 +45,86 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-ms.openlocfilehash: f6b256ff1551eea4d0b362e78c9780fce29a8513
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: b3ca624ba54f70750ecc303fb44f4fa242b4edc2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857924"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556340"
 ---
-# <a name="_interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement iç işlevler
+# <a name="_interlockeddecrement-intrinsic-functions"></a>`_InterlockedDecrement` iç işlevler
 
-**Microsoft 'a özgü**
+Win32 Windows SDK [ınterlockedazaltma](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) işlevi için derleyicinin iç desteğini sağlar. `_InterlockedDecrement`İç işlevler, **Microsoft 'a özgüdür**.
 
-Win32 Windows SDK [ınterlockedazaltma](/windows/win32/api/winnt/nf-winnt-interlockeddecrement) işlevi için derleyicinin iç desteğini sağlar.
-
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long _InterlockedDecrement(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedDecrement_acq(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedDecrement_rel(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedDecrement_nf(
-   long * lpAddend
+   long volatile * lpAddend
 );
 short _InterlockedDecrement16(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedDecrement16_acq(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedDecrement16_rel(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedDecrement16_nf(
-   short * lpAddend
+   short volatile * lpAddend
 );
 __int64 _InterlockedDecrement64(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedDecrement64_acq(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedDecrement64_rel(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedDecrement64_nf(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpaddend*\
-[in, out] Azaltılangirecek değişkene yönelik işaretçi.
+*lpAddend*\
+[in, out] Azaltılangirecek değişkene geçici işaretçi.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Dönüş değeri, ortaya çıkan, azaltma değeridir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`_InterlockedDecrement`, `_InterlockedDecrement16`|x86, ARM, x64, ARM64|
 |`_InterlockedDecrement64`|ARM, x64, ARM64|
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_InterlockedDecrement` üzerinde, içerdikleri veri türlerine göre farklılık gösteren ve işlemciye özgü alma veya yayınlama semantiğinin kullanılıp kullanılmadığını gösteren çeşitli çeşitlemeler vardır.
+Üzerinde bulunan `_InterlockedDecrement` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-`_InterlockedDecrement` işlevi 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedDecrement16` 16 bit tam sayı değerlerinde çalışır ve 64 bit tamsayı değerlerinde çalışır `_InterlockedDecrement64`.
+`_InterlockedDecrement`İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedDecrement16` 16 bit tamsayı değerlerinde çalışır ve `_InterlockedDecrement64` 64 bit tamsayı değerlerinde çalışır.
 
-ARM platformlarında, önemli bir bölümün başlangıcında ve sonunda olduğu gibi alma ve yayınlama semantiklerine ihtiyacınız varsa `_acq` ve `_rel` sonekleri ile iç bilgileri kullanın. `_nf` ("sınır yok") son ek olan iç bilgiler bellek engeli olarak davranmaz.
+ARM platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf`("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
 
-`lpAddend` parametresi tarafından işaret edilen değişken 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
+Parametresi tarafından işaret edilen değişken `lpAddend` 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
 
 Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
@@ -197,10 +196,8 @@ void __cdecl SimpleThread(void* pParam) {
 }
 ```
 
-**SON Microsoft 'a özgü**
-
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici iç](../intrinsics/compiler-intrinsics.md) bilgileri\
-[Anahtar sözcükler](../cpp/keywords-cpp.md)\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

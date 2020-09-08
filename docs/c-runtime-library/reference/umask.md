@@ -1,5 +1,6 @@
 ---
 title: _umask
+description: _Umask için API başvurusu; Varsayılan dosya izni maskesini ayarlar.
 ms.date: 4/2/2020
 api_name:
 - _umask
@@ -31,18 +32,18 @@ helpviewer_keywords:
 - file permissions [C++]
 - files [C++], permission settings for
 ms.assetid: 5e9a13ba-5321-4536-8721-6afb6f4c8483
-ms.openlocfilehash: 84735374a936e47691df82247f0202ecfcd86d9d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3735ecd7ba194009945d3717982d7828ecee3c1e
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913841"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554935"
 ---
 # <a name="_umask"></a>_umask
 
-Varsayılan dosya izni maskesini ayarlar. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [_umask_s](umask-s.md).
+Varsayılan dosya izni maskesini ayarlar. Bu işlevin daha güvenli bir sürümü için bkz. [_umask_s](umask-s.md) . "
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _umask( int pmode );
@@ -79,7 +80,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_umask**|\<GÇ. h>, \<sys/stat. h>, \<sys/Types. h>|
+|**_umask**|\<io.h>, \<sys/stat.h>, \<sys/types.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -118,7 +119,7 @@ Oldmask = 0x0000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>

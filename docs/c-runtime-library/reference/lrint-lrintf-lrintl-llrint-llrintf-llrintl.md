@@ -1,6 +1,7 @@
 ---
 title: lrint, lrintf, lrintl, llrint, llrintf, llrintl
-ms.date: 4/2/2020
+description: Lrint (), lrintf (), lrintl (), llrint (), llrintf () ve llrintl () için API başvurusu geçerli yuvarlama modunu ve yönünü kullanarak belirtilen kayan nokta değerini en yakın integral değere yuvarlar.
+ms.date: 9/1/2020
 api_name:
 - lrint
 - lrintl
@@ -52,12 +53,12 @@ helpviewer_keywords:
 - llrintf function
 - llrintl function
 ms.assetid: 28ccd5b3-5e6f-434f-997d-a21d51b8ce7f
-ms.openlocfilehash: c692b97598e2342628c3171fc22aeead9c864d60
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f208c183400aac7a110bb6fd87398d4377fe8f06
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216914"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555026"
 ---
 # <a name="lrint-lrintf-lrintl-llrint-llrintf-llrintl"></a>lrint, lrintf, lrintl, llrint, llrintf, llrintl
 
@@ -105,12 +106,14 @@ long long int llrintf(
 long long int llrintl(
    long double x
 );
+
+#define lrint(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
-yuvarlanacak değer.
+*sayı*\
+Yuvarlanacak değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -122,7 +125,9 @@ Başarılı olursa *x*'in yuvarlatılmış tamsayı değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türündeki **lrint** ve **llrint** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **lrint** ve **llrint** her zaman bir alır **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türündeki **lrint** ve **llrint** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **lrint** ve **llrint** her zaman bir alır **`double`** .
+
+\<tgmath.h> `llrint()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 *X* , bir integral değerin kayan nokta eşdeğerini temsil ediyorsa, bu işlevler **FE_INEXACT**yükseltir.
 
@@ -135,9 +140,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**lrint**, **lrintf**, **lrintl**, **llrint**, **llrintf**, **llrintl**|\<math.h>|\<cmath>|
+|**lrint** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)

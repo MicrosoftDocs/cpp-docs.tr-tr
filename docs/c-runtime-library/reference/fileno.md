@@ -1,5 +1,6 @@
 ---
 title: _fileno
+description: _Fileno için API başvurusu; bir akışıyla ilişkili dosya tanımlayıcısını alır.
 ms.date: 4/2/2020
 api_name:
 - _fileno
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - _fileno function
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-ms.openlocfilehash: 0ac0a8d2cf4185dab0aa3d335c16cf89da58c7a6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c07f446cc3c5c29fb102a74b2b095957589eab46
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919472"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554857"
 ---
 # <a name="_fileno"></a>_fileno
 
 Bir akışla ilişkili dosya tanımlayıcısını alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 int _fileno(
@@ -72,7 +73,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fileno**|\<stdio. h>|
+|**_fileno**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -102,7 +103,7 @@ The file descriptor for stderr is 2
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [_filelength, _filelengthi64](filelength-filelengthi64.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

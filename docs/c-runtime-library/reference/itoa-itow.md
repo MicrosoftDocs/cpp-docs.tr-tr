@@ -1,5 +1,6 @@
 ---
 title: _itoa, _itow işlevleri
+description: _İtoa için API başvurusu ve _itow; bir tamsayıyı bir dizeye dönüştürür.
 ms.date: 4/2/2020
 api_name:
 - itoa
@@ -113,16 +114,16 @@ helpviewer_keywords:
 - converting numbers, to strings
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-ms.openlocfilehash: 7fd776c860e8f3ba071d7fad10c99dfb7b3bf2d7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c8d64dcc1efdb9371feb98d8674a7a2c41c7ab3a
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843501"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555469"
 ---
 # <a name="itoa-_itoa-ltoa-_ltoa-ultoa-_ultoa-_i64toa-_ui64toa-_itow-_ltow-_ultow-_i64tow-_ui64tow"></a>itoa, _itoa, ltoa, _ltoa, ultoa, _ultoa, _i64toa, _ui64toa, _itow, _ltow, _ultow, _i64tow, _ui64tow
 
-Bir tamsayıyı bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_itoa_s, _itow_s işlevleri](itoa-s-itow-s.md).
+Bir tamsayıyı bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur, [_itoa_s _itow_s işlevleri](itoa-s-itow-s.md)bölümüne bakın.
 
 ## <a name="syntax"></a>Söz dizimi
 

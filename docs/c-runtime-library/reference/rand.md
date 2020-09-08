@@ -1,5 +1,6 @@
 ---
 title: rand
+description: İyi bilinen ve tamamen tekrarlanabilir bir algoritma kullanarak pseudportadom numarası üreten S_SAYI_ÜRET için API başvurusu.
 ms.date: 4/2/2020
 api_name:
 - rand
@@ -31,18 +32,18 @@ helpviewer_keywords:
 - rand function
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: 8f2a4d00310671e8ba80055e38e479e348562ac2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 50c4f921c81ecad00abb19e6ce50158d450b170e
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919521"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555338"
 ---
 # <a name="rand"></a>rand
 
-İyi bilinen ve tamamen tekrarlanabilir bir algoritma kullanarak bir pseudportaıdom numarası üretir. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz. [rand_s](rand-s.md). **S_SAYI_ÜRET** tarafından oluşturulan sayılar şifreli olarak güvenli değildir. Daha fazla şifreli rastgele sayı oluşturma için [rand_s](rand-s.md) veya C++ standart kitaplığı 'nda belirtilen işlevleri [ \<rastgele>](../../standard-library/random.md)kullanın.
+İyi bilinen ve tamamen tekrarlanabilir bir algoritma kullanarak bir pseudportaıdom numarası üretir. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz. [rand_s](rand-s.md). **S_SAYI_ÜRET** tarafından oluşturulan sayılar şifreli olarak güvenli değildir. Daha fazla şifreli rastgele sayı oluşturma için [rand_s](rand-s.md) veya Içindeki C++ standart kitaplığında belirtilen işlevleri kullanın [\<random>](../../standard-library/random.md) .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int rand( void );
@@ -56,7 +57,7 @@ int rand( void );
 
 **S_SAYI_ÜRET** işlevi, 0 ile **RAND_MAX** (32767) aralığında bir pseudportaıdom tamsayı döndürür. **S_SAYI_ÜRET**çağrılmadan önce pseudportadom-Number üreticisini temel almak için [srand](srand.md) işlevini kullanın.
 
-**S_SAYI_ÜRET** işlevi iyi bilinen bir dizi oluşturur ve şifreleme işlevi olarak kullanım için uygun değildir. Daha fazla şifreli rastgele sayı oluşturma için [rand_s](rand-s.md) veya C++ standart kitaplığı 'nda belirtilen işlevleri [ \<rastgele>](../../standard-library/random.md)kullanın. **S_SAYI_ÜRET** ile ilgili nelerin yanlış olduğu ve rastgele> bu \<eksiklikleri nasıl ele aldığı hakkında bilgi için bkz. [S_sayı_üret 'in zararlı olduğu kabul edilen](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)bu video.
+**S_SAYI_ÜRET** işlevi iyi bilinen bir dizi oluşturur ve şifreleme işlevi olarak kullanım için uygun değildir. Daha fazla şifreli rastgele sayı oluşturma için [rand_s](rand-s.md) veya Içindeki C++ standart kitaplığında belirtilen işlevleri kullanın [\<random>](../../standard-library/random.md) . **S_SAYI_ÜRET** ile ilgili bilgiler ve bu eksiklikleri ele alma hakkında daha fazla bilgi için \<random> bkz. [S_sayı_üret 'In zararlı olduğu kabul edilen](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful)bu video.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -64,7 +65,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ran**|\<Stdlib. h>|
+|**ran**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -140,6 +141,6 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [srand](srand.md)<br/>
 [rand_s](rand-s.md)<br/>

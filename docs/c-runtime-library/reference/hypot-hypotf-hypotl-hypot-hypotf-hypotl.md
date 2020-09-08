@@ -1,6 +1,7 @@
 ---
 title: hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
-ms.date: 4/2/2020
+description: Hypot, hypotf, hypotl, _hypot, _hypotf ve _hypotl için API başvurusu; hipotenüsü.
+ms.date: 9/1/2020
 api_name:
 - _hypotf
 - hypot
@@ -44,18 +45,18 @@ helpviewer_keywords:
 - calculating hypotenuses
 - _hypot function
 ms.assetid: 6a13887f-bd53-43fc-9d77-5b42d6e49925
-ms.openlocfilehash: 16db920d6e7d3836eb4a395b2029e2f9329f2681
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 199e330dcd78c372a0279cac9f0e96cb47c561e8
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919840"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556456"
 ---
 # <a name="hypot-hypotf-hypotl-_hypot-_hypotf-_hypotl"></a>hypot, hypotf, hypotl, _hypot, _hypotf, _hypotl
 
 Hipotenüsü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double hypot(
@@ -82,11 +83,12 @@ long double _hypotl(
    long double x,
    long double y
 );
+#define hypotf(X, Y) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*, *y*<br/>
+*x*, *y*\
 Kayan nokta değerleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -97,9 +99,11 @@ Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Hypot** işlevleri, iki tarafının *x* ve *y* uzunluğu (diğer bir deyişle, *x*<sup>2</sup> + *y*<sup>2</sup>' nin kare kökünü) verildiğinde, sağ üçgenin hipotenüsü uzunluğunu hesaplar.
+**Hypot** işlevleri, iki tarafının *x* ve *y* uzunluğu (diğer bir deyişle, *x*<sup>2</sup>  +  *y*<sup>2</sup>' nin kare kökünü) verildiğinde, sağ üçgenin hipotenüsü uzunluğunu hesaplar.
 
 Önde gelen alt çizgileri olan işlevlerin sürümleri, önceki standartlarla uyumluluk için sağlanır. Davranışları, önde gelen alt çizgileri olmayan sürümlerle aynıdır. Yeni kod için önde gelen alt çizgiler olmadan sürümlerin kullanılması önerilir.
+
+\<tgmath.h> `hypot()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -107,7 +111,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf** **_hypotl**|\<Math. h>|
+|**hypot**, **hypotf**, **hypotl**, **_hypot**, **_hypotf** **_hypotl**|\<math.h>|
+|**hypot** makrosu | \<tgmath.h> |
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -135,6 +140,6 @@ If a right triangle has sides 3.0 and 4.0, its hypotenuse is 5.0
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [_cabs](cabs.md)<br/>
 [_matherr](matherr.md)<br/>

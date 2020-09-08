@@ -1,5 +1,6 @@
 ---
 title: _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
+description: _Set_invalid_parameter_handler için API başvurusu ve _set_thread_local_invalid_parameter_handler; CRT geçersiz bir bağımsız değişken algıladığında çağrılan bir işlev ayarlar.
 ms.date: 4/2/2020
 api_name:
 - _set_invalid_parameter_handler
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - _set_invalid_parameter_handler function
 - _set_thread_local_invalid_parameter_handler function
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11
-ms.openlocfilehash: 404a865cceb5e4014969b15e9877761187af777b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a965bd71af18a57c31d3cfef927be02005c407c0
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914002"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555626"
 ---
 # <a name="_set_invalid_parameter_handler-_set_thread_local_invalid_parameter_handler"></a>_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 
 CRT geçersiz bir bağımsız değişken algıladığında çağrılacak işlevi ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _invalid_parameter_handler _set_invalid_parameter_handler(
@@ -90,7 +91,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_invalid_parameter_handler**, **_set_thread_local_invalid_parameter_handler**|C: \<Stdlib. h><br /><br /> C++: \<cstdlib> veya \<stdlib. h>|
+|**_set_invalid_parameter_handler**, **_set_thread_local_invalid_parameter_handler**|, \<stdlib.h><br /><br /> C++: \<cstdlib> veya \<stdlib.h>|
 
 **_Set_invalid_parameter_handler** ve **_set_thread_local_invalid_parameter_handler** işlevleri Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

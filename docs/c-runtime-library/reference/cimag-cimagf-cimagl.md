@@ -1,6 +1,7 @@
 ---
 title: cimag, cimagf, cimagl
-ms.date: 11/04/2016
+description: Cımag, cımıknatıf ve cımagl; için API başvurusu karmaşık bir sayının sanal bölümünü alır.
+ms.date: 9/2/2020
 api_name:
 - cimag
 - cimagf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cimagf function
 - cimagl function
 ms.assetid: 0d8836f5-d61d-44cd-8731-6f75cb776def
-ms.openlocfilehash: af7d15ee1b5dfd863025565bf8827199f7492841
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 41631a161a47e247b12a39e312a3f40084c8f22f
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232553"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555846"
 ---
 # <a name="cimag-cimagf-cimagl"></a>cimag, cimagf, cimagl
 
@@ -50,16 +51,15 @@ Karmaşık bir sayının sanal kısmını alır.
 double cimag( _Dcomplex z );
 float cimagf( _Fcomplex z );
 long double cimagl( _Lcomplex z );
-```
+#define cimag(X) // Requires C11 or higher
 
-```cpp
-float cimag( _Fcomplex z );  // C++
-long double cimag( _Lcomplex z );  // C++
+float cimag( _Fcomplex z );  // C++ only
+long double cimag( _Lcomplex z );  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*kadar*<br/>
+*kadar*\
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,13 +68,16 @@ Karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, **cimag** 'nin **_Fcomplex** veya **_Lcomplex** değerlerini alan ve döndüren veya değer döndüren aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **cımag** her zaman bir **_Dcomplex** değeri alır ve bir değer döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **cimag** 'nin **_Fcomplex** veya **_Lcomplex** değerlerini alan ve döndüren veya değer döndüren aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **cımag** her zaman bir **_Dcomplex** değeri alır ve bir **`double`** değer döndürür.
+
+\<tgmath.h> `cimag()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
 |**cımag**, **cımıknatıf**, **cımagl**|\<complex.h>|\<ccomplex>|
+|**cımag** makrosu | \<tgmath.h> ||
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

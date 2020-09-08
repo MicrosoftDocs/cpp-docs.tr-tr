@@ -1,6 +1,7 @@
 ---
 title: log2, log2f, log2l
-ms.date: 4/2/2020
+description: Log2, log2f ve log2l için API başvurusu belirtilen değerin ikilisini (Base-2) logaritmayı belirleyen.
+ms.date: 9/1/2020
 api_name:
 - log2
 - log2l
@@ -26,18 +27,18 @@ api_type:
 topic_type:
 - apiref
 ms.assetid: 94d11b38-70b7-4d3a-94ac-523153c92b2e
-ms.openlocfilehash: 58da7790e6fbce915c16a02a1b0d972a6fe1049e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 37319560891dbd64030495750aaf347d9dedd7e7
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911412"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555364"
 ---
 # <a name="log2-log2f-log2l"></a>log2, log2f, log2l
 
 Belirtilen değerin ikili (taban 2) logaritmasını belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double log2(
@@ -59,11 +60,13 @@ float log2f(
 long double log2l(
    long double x
 );
+
+#define log2(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*sayı*\
 Taban-2 logaritmasını belirleme değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -76,7 +79,7 @@ Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 |-----------|------------|
 |*x* < 0|NaN|
 |*x* = ± 0|-SONSUZLUK|
-|*x* = 1|+ 0|
+|*x* = 1|+0|
 |+ SONSUZLUK|+ SONSUZLUK|
 |NaN|NaN|
 |etki alanı hatası|NaN|
@@ -86,7 +89,7 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-X bir tamsayıdır, bu işlev temelde *x*'in en önemli 1 bitin sıfır tabanlı dizinini döndürür.
+*X* bir tamsayıdır, bu işlev temelde *x*'in en önemli 1 bitin sıfır tabanlı dizinini döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -94,7 +97,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**log2**, **log2f**, **log2l**|\<Math. h>|\<cmath>|
+|**log2**, **log2f**, **log2l**|\<math.h>|\<cmath>|
+|**log2** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

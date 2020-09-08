@@ -1,6 +1,7 @@
 ---
 title: fabs, fabsf, fabsl
-ms.date: 4/2/2020
+description: Fabs, fabsf ve fabsl; için API başvurusu bir kayan nokta değerinin mutlak değerini hesaplar.
+ms.date: 08/31/2020
 api_name:
 - fabsf
 - fabs
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - fabs function
 - fabsl function
 ms.assetid: 23bca210-f408-4f5e-b46b-0ccaaec31e36
-ms.openlocfilehash: 52ec65e744cd0ee04068ddc6cfd537ea1ae2b9f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a819172fc94224ff4c51c8fc342b142ffbe05ae7
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234126"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554844"
 ---
 # <a name="fabs-fabsf-fabsl"></a>fabs, fabsf, fabsl
 
@@ -66,24 +67,28 @@ float fabsf(
 long double fabsl(
    long double x
 );
+
+#define fabs(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Fabs** işlevleri *x*bağımsız değişkeninin mutlak değerini döndürür. Hata döndürme yok.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± QNAN, IND|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, üstbilgiyi dahil ediyorsanız **fabs** aşırı yüklerini çağırabilirsiniz \<cmath> . C programında **fabs** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, üstbilgiyi dahil ediyorsanız **fabs** aşırı yüklerini çağırabilirsiniz \<cmath> . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **fabs** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `fabs()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -92,6 +97,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |--------------|-----------------------|---------------------------|
 |**fabs**, **fabsf**, **fabsl**|\<math.h>|\<cmath> veya \<math.h>|
+|**fabs** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

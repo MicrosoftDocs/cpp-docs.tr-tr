@@ -1,6 +1,7 @@
 ---
 title: round, roundf, roundl
-ms.date: 4/2/2020
+description: Round, roundf ve roundl için API başvurusu; kayan nokta değerini en yakın tamsayıya yuvarlar.
+ms.date: 9/1/2020
 api_name:
 - round
 - roundl
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-ms.openlocfilehash: ed7f8457373466e442d7998cee0a14389de4321e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0a7e47dd3a528e45abc8247a64bf5c4d81164e95
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226183"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556651"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
@@ -63,24 +64,27 @@ float roundf(
 long double roundl(
    long double x
 );
+#define round(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Yuvarlanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Round** işlevleri, *x*için en yakın tamsayıyı temsil eden bir kayan nokta değeri döndürür. Kayan nokta yuvarlama modunun ayarı ne olursa olsun, yarı çift değerler sıfırdan uzağa yuvarlanır. Hata döndürme yok.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **yuvarlak** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **hepsini** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **yuvarlak** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **round** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `round()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -89,6 +93,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
 |**round**, **roundf**, **roundl**|\<math.h>|
+|**yuvarlak** makro | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

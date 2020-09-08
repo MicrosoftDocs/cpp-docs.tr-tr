@@ -1,6 +1,7 @@
 ---
 title: sinh, sinhf, sinhl
-ms.date: 4/2/2020
+description: Kayan nokta değerinin hiperbolik sinüsünü hesaplamak için API başvurusu.
+ms.date: 08/31/2020
 api_name:
 - sinh
 - sinhl
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: ea7051fc086a254dabcf7fcd59f6a70e8fa0c0cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a8c9c4195eab66a46230e7a3baf6194e17c4519
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229421"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556183"
 ---
 # <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
@@ -54,32 +55,33 @@ Hiperbolik sinüsü hesaplar.
 double sinh(double x);
 float sinhf(float x);
 long double sinhl(long double x);
-```
+#define sinh(x) // Requires C11 or higher
 
-```cpp
 float sinh(float x);  // C++ only
 long double sinh(long double x);  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 **Sinh** işlevleri *x*' in hiperbolik sinüsünü döndürür. Varsayılan olarak, sonuç çok büyükse, **errno** ' ı **ERANGE** **olarak ayarlar ve** ±**HUGE_VAL**döndürür.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Hiçbiri|_DOMAIN|
+|± QNAN, IND|Yok|_DOMAIN|
 |&#124;x&#124; ≥ 7.104760 e + 002|TAŞMA + tam değil|TAŞMA|
 
 Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, veya değerlerini alan ve döndüren **sinh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **sinh** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, veya değerlerini alan ve döndüren **sinh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **sinh** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `sinh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,6 +90,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
 |**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> veya \<math.h>|
+|**sinh ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

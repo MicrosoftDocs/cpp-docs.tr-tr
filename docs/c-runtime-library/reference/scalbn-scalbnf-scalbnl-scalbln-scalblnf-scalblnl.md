@@ -1,6 +1,7 @@
 ---
 title: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
-ms.date: 4/2/2020
+description: Scalbümn, scalbümnf, scalbümnl, scalbln, scalblnf ve scalblnl için API başvurusu bir kayan noktalı sayıyı tam sayı gücüyle çarpar `FLT_RADIX` .
+ms.date: 9/1/2020
 api_name:
 - scalblnl
 - scalbnl
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - scalbnf function
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-ms.openlocfilehash: 351f56629435754f74565d9674874d5a73915773
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1a01811e5fcfb28c0557e0232d76649c867748b1
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231383"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556677"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
@@ -80,18 +81,14 @@ long double scalbnl(
    long double x,
    int exp
 );
+
+#define scalbn(X, INT) // Requires C11 or higher
+
 double scalbln(
    double x,
    long exp
 );
-float scalbln(
-   float x,
-   long exp
-);  // C++ only
-long double scalbln(
-   long double x,
-   long exp
-);  // C++ only
+
 float scalblnf(
    float x,
    long exp
@@ -100,14 +97,25 @@ long double scalblnl(
    long double x,
    long exp
 );
+
+#define scalbln(X, LONG) // Requires C11 or higher
+
+float scalbln(
+   float x,
+   long exp
+);  // C++ only
+long double scalbln(
+   long double x,
+   long exp
+);  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kayan nokta değeri.
 
-*exp*<br/>
+*exp*\
 Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -120,7 +128,9 @@ Tamsayı üs.
 
 **FLT_RADIX** , \<float.h> ikili sistemlerde yerel kayan nokta Radix olarak tanımlanır; 2 değerine sahiptir ve **scalbümn** , [ldexp](ldexp.md)ile eşdeğerdir.
 
-C++ aşırı yüklemeye izin verdiğinden, ' nin ve döndüren **scalbümn** ve **scalbln** yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **scalbümn** her zaman bir ve bir alır ve **`double`** **`int`** bir döndürür ve **`double`** **scalbln** her zaman bir **`double`** ve bir alır **`long`** ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ' nin ve döndüren **scalbümn** ve **scalbln** yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız durumlar dışında, **scalbümn** her zaman bir ve bir alır ve **`double`** bir ve **`int`** döndürür ve **`double`** **scalbln** **`double`** **`long`** bir ve döndürür **`double`** .
+
+\<tgmath.h> `scalbn()` Veya `scalbln` makrolarını kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -129,6 +139,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**scalbümn**, **scalbümnf**, **scalbümnl**, **scalbln**, **scalblnf**, **scalblnl**|\<math.h>|\<cmath>|
+|**scalbümn () veya scalbln** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -150,7 +161,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıktı
+### <a name="output"></a>Çıkış
 
 ```Output
 6.4 times FLT_RADIX to the power of 3 is 51.2

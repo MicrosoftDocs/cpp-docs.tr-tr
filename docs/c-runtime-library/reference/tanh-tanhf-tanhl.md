@@ -1,6 +1,7 @@
 ---
 title: tanh, tanhf, tanhl
-ms.date: 4/2/2020
+description: Tanh, tanhf ve tanhl için API başvurusu bir kayan nokta değerinin hiperbolik tanjantını hesaplayan.
+ms.date: 08/31/2020
 api_name:
 - tanh
 - tanhf
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 9e280e489d5da5d66a48b72b38fe22a6943b7318
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5fa93f56ebec5e8aa06c7317534adb12ae9e68e2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215120"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556586"
 ---
 # <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
 
@@ -52,6 +53,7 @@ Hiperbolik tanjantı hesaplar.
 double tanh( double x );
 float tanhf( float x );
 long double tanhl( long double x );
+#define tanh(x) // Requires C11 or higher
 ```
 
 ```cpp
@@ -61,20 +63,22 @@ long double tanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
 **Tanh** işlevleri *x*'in hiperbolik tanjantını döndürür. Hata döndürme yok.
 
-|Girdi|SEH özel durumu|**Matherr** Duruma|
+|Giriş|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
 |± QNAN, IND|yok|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **tanh** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tanjanh** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **tanh** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `tanh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -83,6 +87,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C)|
 |-------------|---------------------|-|
 |**tanh**, **tanhf**, **tanhl**|\<math.h>|\<cmath> veya \<math.h>|
+|**tanh ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,6 +1,6 @@
 ---
 title: strtod, _strtod_l, wcstod, _wcstod_l
-description: Dizeleri çift duyarlıklı bir değere dönüştüren strtod, _strtod_l, wcstod, _wcstod_l için API başvurusu.
+description: Strtod, _strtod_l, wcstod ve _wcstod_l için API başvurusu dizeleri çift duyarlıklı bir değere dönüştürür.
 ms.date: 08/27/2020
 api_name:
 - wcstod
@@ -51,12 +51,12 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-ms.openlocfilehash: 5a9c7fd36b28b0a709c2e21a5e23d8a71d5f8a15
-ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
+ms.openlocfilehash: aa6f40c91f9be906e3f51df5788483410f6077a3
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89062179"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554961"
 ---
 # <a name="strtod-_strtod_l-wcstod-_wcstod_l"></a>strtod, _strtod_l, wcstod, _wcstod_l
 

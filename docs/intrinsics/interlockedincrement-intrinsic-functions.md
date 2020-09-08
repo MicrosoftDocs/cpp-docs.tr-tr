@@ -1,6 +1,7 @@
 ---
-title: _InterlockedIncrement iç işlevleri
-ms.date: 09/02/2019
+title: _InterlockedIncrement iç işlevler
+description: Birbirine kenetlenmiş artış için Microsoft C/C++ derleyicisi iç işlevleri.
+ms.date: 09/03/2020
 f1_keywords:
 - _InterlockedIncrement_acq
 - _InterlockedIncrement16_rel_cpp
@@ -44,57 +45,55 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-ms.openlocfilehash: 4dd9ae9ba5454b0afefa332689d94fa3619a07a6
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2148ae31f3eb03e398372db3bf15fc64e4857dd1
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221987"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556327"
 ---
-# <a name="_interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement iç işlevleri
+# <a name="_interlockedincrement-intrinsic-functions"></a>`_InterlockedIncrement` iç işlevler
 
-**Microsoft 'a özgü**
+Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) işlevi için derleyicinin iç desteğini sağlayın. `_InterlockedIncrement`İç işlevler, **Microsoft 'a özgüdür**.
 
-Win32 Windows SDK [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement) işlevi için derleyicinin iç desteğini sağlayın.
-
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long _InterlockedIncrement(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_acq(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_rel(
-   long * lpAddend
+   long volatile * lpAddend
 );
 long _InterlockedIncrement_nf(
-   long * lpAddend
+   long volatile * lpAddend
 );
 short _InterlockedIncrement16(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_acq(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_rel(
-   short * lpAddend
+   short volatile * lpAddend
 );
 short _InterlockedIncrement16_nf (
-   short * lpAddend
+   short volatile * lpAddend
 );
 __int64 _InterlockedIncrement64(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_acq(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_rel(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 __int64 _InterlockedIncrement64_nf(
-   __int64 * lpAddend
+   __int64 volatile * lpAddend
 );
 ```
 
@@ -103,37 +102,35 @@ __int64 _InterlockedIncrement64_nf(
 *lpAddend*\
 [in, out] Arttırılacak değişken işaretçisi.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Dönüş değeri, elde edilen artılan değerdir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_InterlockedIncrement`, `_InterlockedIncrement16`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedIncrement64`|ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM, ARM64|\<Intrin. h >|
+|`_InterlockedIncrement`, `_InterlockedIncrement16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedIncrement64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM, ARM64|\<intrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Üzerinde bulunan `_InterlockedIncrement` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedIncrement16` 16 bit tamsayı değerlerinde çalışır ve `_InterlockedIncrement64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedIncrement`
+`_InterlockedIncrement`İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedIncrement16` 16 bit tamsayı değerlerinde çalışır ve `_InterlockedIncrement64` 64 bit tamsayı değerlerinde çalışır.
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır olmayan") son eki olan iç öğe, bellek engeli olarak hareket etmez.
+ARM platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf`("Sınır olmayan") son eki olan iç öğe, bellek engeli olarak hareket etmez.
 
-`lpAddend` Parametresi tarafından işaret edilen değişken 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
+Parametresi tarafından işaret edilen değişken `lpAddend` 32 bitlik bir sınıra hizalanmalıdır; Aksi takdirde, bu işlev çok işlemcili x86 sistemlerinde ve x86 olmayan sistemlerde başarısız olur. Daha fazla bilgi için bkz. [ALIGN](../cpp/align-cpp.md).
 
-Win32 işlevi veya `Wdm.h` `Ntddk.h`içinde bildirilmiştir.
+Win32 işlevi veya içinde bildirilmiştir `Wdm.h` `Ntddk.h` .
 
 Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Öğesinin nasıl kullanılacağına `_InterlockedIncrement`ilişkin bir örnek için bkz. [_ınterlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md).
-
-**SON Microsoft 'a özgü**
+Öğesinin nasıl kullanılacağına ilişkin bir örnek için `_InterlockedIncrement` bkz. [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

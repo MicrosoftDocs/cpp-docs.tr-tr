@@ -1,5 +1,6 @@
 ---
 title: gmtime, _gmtime32, _gmtime64
+description: Gmtime, _gmtime32 ve _gmtime64 için API başvurusu; time_t bir değeri bir TM yapısına dönüştürür.
 ms.date: 4/2/2020
 api_name:
 - _gmtime32
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - gmtime64 function
 - time structure conversion
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
-ms.openlocfilehash: 86919e2ba6f5e301f1dffd87dfb4ecd22ce416e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b3dd09e828b972f05a4c45c30ebc3e5edb68f551
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234113"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556469"
 ---
 # <a name="gmtime-_gmtime32-_gmtime64"></a>gmtime, _gmtime32, _gmtime64
 
@@ -87,7 +88,7 @@ Bu işlevler, parametrelerini doğrular. *Sourcetime* null bir işaretçisiyse v
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gmtime32** Işlevi *sourcetime* DEĞERINI ayırır ve, zaman içinde tanımlanan **TM**türünde bir statik olarak ayrılmış yapıda depolar. Olsun. *Sourcetime* değeri genellikle [Time](time-time32-time64.md) işlevine yapılan çağrıdan alınır.
+**_Gmtime32** Işlevi *sourcetime* değerini ayırır ve TIME. H içinde tanımlanan **TM**türünde statik olarak ayrılmış bir yapıda depolar. *Sourcetime* değeri genellikle [Time](time-time32-time64.md) işlevine yapılan çağrıdan alınır.
 
 > [!NOTE]
 > Çoğu durumda, hedef ortam gün ışığından yararlanma saatinin etkin olup olmadığını belirlemeyi dener. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamaya yönelik Birleşik Devletler kuralların kullanıldığını varsayar.

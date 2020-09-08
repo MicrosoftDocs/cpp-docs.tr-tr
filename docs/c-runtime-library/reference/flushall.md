@@ -1,5 +1,6 @@
 ---
 title: _flushall
+description: _Flushall için API başvurusu; Tüm akışları boşaltır ve tüm arabellekleri temizler.
 ms.date: 4/2/2020
 api_name:
 - _flushall
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - streams, flushing
 - _flushall function
 ms.assetid: 2cd73562-6d00-4ca2-b13c-80d0ae7870b5
-ms.openlocfilehash: 1a53eeedd5dfa0f9c01fa5883a9db33e26e3ea17
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c93dddea50c182b86bd4d09ae9f214e87491e830
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911618"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556729"
 ---
 # <a name="_flushall"></a>_flushall
 
 Tüm akışları temizler; Tüm arabellekleri temizler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _flushall( void );
@@ -66,7 +67,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_flushall**|\<stdio. h>|
+|**_flushall**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -94,7 +95,7 @@ There were 3 streams flushed
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_commit](commit.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>

@@ -1,6 +1,7 @@
 ---
 title: pow, powf, powl
-ms.date: 4/2/2020
+description: Pow, powf ve ptıl için API başvurusu; bir güce göre hesaplamayı hesaplayabilirsiniz.
+ms.date: 08/31/2020
 api_name:
 - powl
 - pow
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - powf function
 - pow function
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
-ms.openlocfilehash: 16038cbb2c572575a9424065825697eb4115e43f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 58d23f53de8dc5323fe0818611bccb647984fd9b
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232449"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555767"
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 
@@ -56,9 +57,8 @@ ms.locfileid: "87232449"
 double pow( double x, double y );
 float powf( float x, float y );
 long double powl( long double x, long double y );
-```
+define pow(X, Y) // Requires C11 or higher 
 
-```cpp
 double pow( double x, int y );  // C++ only
 float pow( float x, float y );  // C++ only
 float pow( float x, int y );  // C++ only
@@ -68,10 +68,10 @@ long double pow( long double x, int y );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Temel.
 
-*Iz*<br/>
+*Iz*\
 S.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -90,7 +90,9 @@ S.
 
 **POW** , Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulamaya sahiptir. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-C++ aşırı yüklemeye izin verdiğinden, **POW**'ın çeşitli aşırı yüklerini çağırabilirsiniz. C programında **POW** her zaman iki **`double`** değer alır ve bir **`double`** değer döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **POW**'ın çeşitli aşırı yüklerini çağırabilirsiniz. C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **POW** her zaman iki **`double`** değer alır ve bir **`double`** değer döndürür.
+
+\<tgmath.h> `pow()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 `pow(int, int)`Aşırı yükleme artık kullanılamıyor. Bu aşırı yüklemeyi kullanırsanız, derleyici [C2668](../../error-messages/compiler-errors-2/compiler-error-c2668.md)yayabilir. Bu sorundan kaçınmak için, ilk parametreyi **`double`** , veya olarak atayın **`float`** **`long double`** .
 
@@ -101,6 +103,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
 |**POW**, **powf**, **ptıl**|\<math.h>|\<math.h> veya \<cmath>|
+|**POW** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

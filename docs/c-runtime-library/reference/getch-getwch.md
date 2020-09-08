@@ -1,5 +1,6 @@
 ---
 title: _getch, _getwch
+description: _Getch ve _getwch için API başvurusu; Bu, yankıyı yankısız bir karakter alır.
 ms.date: 4/2/2020
 api_name:
 - _getch
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _getch function
 - getwch function
 ms.assetid: cc116be7-cff2-4274-970f-5e7b18ccc05c
-ms.openlocfilehash: 1c62bd0793fef0683007fe21df0fc0c2acdf1357
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 39954cdbe507baad05055770df5db8859737b9d1
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919627"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555859"
 ---
 # <a name="_getch-_getwch"></a>_getch, _getwch
 
@@ -49,7 +50,7 @@ Konsolundan yankı olmadan bir karakter alır.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _getch( void );
@@ -78,8 +79,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getch**|\<conio. h>|
-|**_getwch**|\<conio. h> veya \<wchar. h>|
+|**_getch**|\<conio.h>|
+|**_getwch**|\<conio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -121,7 +122,7 @@ Type 'Y' when finished typing keys: Y
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getche, _getwche](getche-getwche.md)<br/>
 [_cgets, _cgetws](../../c-runtime-library/cgets-cgetws.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

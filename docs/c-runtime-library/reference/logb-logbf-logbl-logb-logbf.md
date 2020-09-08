@@ -1,6 +1,7 @@
 ---
 title: logb, logbf, logbl, _logb, _logbf
-ms.date: 4/2/2020
+description: Logb, logbf, logbl, _logb ve _logbf için API başvurusu bir kayan nokta bağımsız değişkeninin üs değerini çıkaran.
+ms.date: 9/1/2020
 api_name:
 - logb
 - _logb
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-ms.openlocfilehash: d923fe3a8c23c1c5e983d8766835af2c266b17d2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1131fda94e4748d2fb2f2197f68966aaacc11d05
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218578"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556220"
 ---
 # <a name="logb-logbf-logbl-_logb-_logbf"></a>logb, logbf, logbl, _logb, _logbf
 
@@ -82,11 +83,12 @@ double _logb(
 float _logbf(
    float x
 );
+#define logb(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -97,11 +99,13 @@ Kayan nokta değeri.
 
 **Logb** işlevleri, *x* sonsuz aralıkla gösterilse de kayan *nokta bağımsız değişkeninin*üstel değerini ayıklar. *X* bağımsız değişkeninin Normalleştirilmemiş olması halinde normalleştirilmiş gibi davranır.
 
-C++ aşırı yüklemeye izin verdiğinden, alan veya değer döndüren **logb** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **logb** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, alan veya değer döndüren **logb** 'nin aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe **logb** her zaman alır ve döndürür **`double`** .
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+\<tgmath.h> `logb()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Hiçbiri|_DOMAIN|
+|± QNAN, IND|Yok|_DOMAIN|
 |± 0|SıFıR bölme|_SING|
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
@@ -112,6 +116,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |-------------|---------------------|
 |**_logb**|\<float.h>|
 |**logb**, **logbf**, **logbl**, **_logbf**|\<math.h>|
+|**logb** makrosu | \<tgmath.h> |
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

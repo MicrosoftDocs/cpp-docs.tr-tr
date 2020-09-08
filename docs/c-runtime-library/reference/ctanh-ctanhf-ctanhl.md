@@ -1,5 +1,6 @@
 ---
 title: ctanh, ctanhf, ctanhl
+description: Ctanh, ctanhf, ctanhl; için API başvurusu karmaşık bir sayının karmaşık hiperbolik tanjantını hesaplayan.
 ms.date: 11/04/2016
 api_name:
 - ctanh
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - ctanhl function
 - ctanhf function
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-ms.openlocfilehash: dae59dcd4a71045b27c6ba9501580bf981b9828f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 959d48853e3edac707a7daea615270b20dad37e7
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941959"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555872"
 ---
 # <a name="ctanh-ctanhf-ctanhl"></a>ctanh, ctanhf, ctanhl
 
 Karmaşık bir sayının karmaşık hiperbolik tanjantını hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _Dcomplex ctanh(
@@ -66,7 +67,7 @@ _Lcomplex ctanhl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*\
 Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -76,17 +77,17 @@ Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 |Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± ∞, QNAN, IND|yok|_DOMAIN|
-|± ∞ (tan, tanf)|GEÇERSİZ|_DOMAIN|
+|± ∞ (tan, tanf)|Geçersiz|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alan ve döndüren **ctanh** 'nin aşırı yüklerini çağırabilirsiniz. C programında **ctanh** her zaman bir **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **ctanh** 'nin aşırı yüklerini çağırabilirsiniz. C programında **ctanh** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**ctanh**, **ctanhf**, **ctanhl**|\<karmaşık. h >|\<ccomplex >|
+|**ctanh**,               **ctanhf**, **ctanhl**|\<complex.h>|\<ccomplex>|
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

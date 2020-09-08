@@ -1,6 +1,7 @@
 ---
 title: atan, atanf, atanl, atan2, atan2f, atan2l
-ms.date: 6/5/2020
+description: Atan, atanf, atanl, atan2, atan2f ve atan2l için API başvurusu; bir kayan nokta değerinin arktanjantını hesaplayan.
+ms.date: 08/31/2020
 api_name:
 - atan2f
 - atan2l
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - trigonometric functions
 - atan2f function
 ms.assetid: 7a87a18e-c94d-4727-9cb1-1bb5c2725ae4
-ms.openlocfilehash: ad6bed621a0f1b5dd686909e4bf579e915662079
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1f1d33aac86d94ab3731dd5cf5b124af99ccb3f2
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232618"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555637"
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 
@@ -62,15 +63,15 @@ ms.locfileid: "87232618"
 double atan( double x );
 float atanf( float x );
 long double atanl( long double x );
+#define atan(X) // Requires C11 or higher
+
+float atan( float x );  // C++ only
+long double atan( long double x );  // C++ only
 
 double atan2( double y, double x );
 float atan2f( float y, float x );
 long double atan2l( long double y, long double x );
-```
-
-```cpp
-float atan( float x );  // C++ only
-long double atan( long double x );  // C++ only
+#define atan2(Y, X) // Requires C11 or higher
 
 float atan2( float y, float x );  // C++ only
 long double atan2( long double y, long double x );  // C++ only
@@ -78,7 +79,7 @@ long double atan2( long double y, long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*, *y*<br/>
+*x*, *y*\
 Herhangi bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -87,7 +88,7 @@ Herhangi bir sayı.
 
 **atan2** , dönüş değerinin çeyreğine ilişkin her iki parametrenin işaretlerini kullanır.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|yok|**_DOMAIN**|
 
@@ -95,9 +96,11 @@ Herhangi bir sayı.
 
 **Atan** işlevi, *x*'in arktanjantını (ters tanjant işlevi) hesaplar. **atan2** *y*x 'in ark tanjantını hesaplar / *x* ( *x* eşitse 0, **atan2** *, y* pozitifse,-π/2 ise y negatifse 0 veya *y* 0 *y* ise 0 olur.)
 
+\<tgmath.h> `atan()` Veya `atan2()` makrosunu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+
 **atan** 'de Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. SSE2 uygulamasını kullanma hakkında bilgi ve sınırlamalar için bkz. [_set_SSE2_enable](set-sse2-enable.md).
 
-C++ aşırı yüklemeye izin verdiğinden, **atan** veya **atan2** **`float`** **`long double`** bağımsız değişken alan atan ve atan2 aşırı yüklerini çağırabilirsiniz. C programında, **atan** ve **atan2** her zaman **`double`** bağımsız değişken alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, **atan** veya **atan2** **`float`** **`long double`** bağımsız değişken alan atan ve atan2 aşırı yüklerini çağırabilirsiniz. C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **atan** ve **atan2** her zaman **`double`** bağımsız değişken alır ve döndürür **`double`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -106,6 +109,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
 |**atan**, **atan2**, **atanf**, **atan2f**, **atanl**, **atan2l**|\<math.h>|\<cmath> veya \<math.h>|
+|**atan ()**, **atan2** makroları | \<tgmath.h> ||
 
 ## <a name="example"></a>Örnek
 

@@ -1,6 +1,7 @@
 ---
 title: fmax, fmaxf, fmaxl
-ms.date: 04/05/2018
+description: Fmax, fmaxf ve fmaxl; için API başvurusu iki sayısal değerin daha büyük olduğunu belirler.
+ms.date: 9/1/2020
 api_name:
 - fmax
 - fmaxf
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - fmaxf function
 - fmaxl function
 ms.assetid: a773ccf7-495e-4a9a-8c6d-dfb53e341e35
-ms.openlocfilehash: 27b495e9344ca7e2e3e061b19fee696ce2bdceb2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 4f38db64b30598e7cfb4eb4d0f57dccf257dabc5
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957110"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556690"
 ---
 # <a name="fmax-fmaxf-fmaxl"></a>fmax, fmaxf, fmaxl
 
 Belirtilen iki sayısal değerin daha büyük olduğunu belirleme.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 double fmax(
@@ -71,14 +72,16 @@ long double fmaxl(
    long double x,
    long double y
 );
+
+#define fmax(X, Y) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Karşılaştırılacak ilk değer.
 
-*Iz*<br/>
+*Iz*\
 Karşılaştırılacak ikinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -87,23 +90,26 @@ Başarılı olursa, *x* veya *y*'nin büyük bir kısmını döndürür. Döndü
 
 Aksi takdirde, aşağıdaki değerlerden birini döndürebilir:
 
-|Sorun|döndürülmesini|
+|Sorun|Döndürülmesini|
 |-----------|------------|
 |*x* = Nan|*Iz*|
 |*y* = Nan|*x*|
 |*x* ve *y* = Nan|NaN|
 
-Bu işlev, [_matherr](matherr.md)içinde belirtilen hataları kullanmaz.
+Bu işlev,  [_matherr](matherr.md)belirtilen hataları kullanmaz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, float ve Long Double türlerini alıp döndüren Fmax aşırı yüklerini çağırabilirsiniz. C programında Fmax her zaman bir Double alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren Fmax aşırı yüklerini çağırabilirsiniz `float` `long double` . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, `fmax` her zaman bir Double döndürür.
+
+\<tgmath.h> `fmax()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**Fmax**, **fmaxf**, **fmaxl**|\<Math. h >|\<cmath > veya \<Math. h >|
+|**Fmax**, **fmaxf**, **fmaxl**|\<math.h>|\<cmath> veya \<math.h>|
+|**Fmax** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

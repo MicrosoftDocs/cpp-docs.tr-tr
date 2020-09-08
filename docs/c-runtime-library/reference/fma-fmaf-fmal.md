@@ -1,6 +1,7 @@
 ---
 title: fma, fmaf, fmal
-ms.date: 4/2/2020
+description: FMA, fmaf ve FISMA için API başvurusu iki değeri birlikte çarpar, üçüncü bir değer ekler ve sonra ara yuvarlama nedeniyle herhangi bir duyarlık kaybı olmadan sonucu yuvarlar.
+ms.date: 9/1/2020
 api_name:
 - fma
 - fmaf
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - fmaf function
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-ms.openlocfilehash: d82565ed53f311ef1b2cf5942d207bf96090bd13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e9ae92c28f24b6281d73450c7cabaad775a84d42
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217005"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556703"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
@@ -80,17 +81,19 @@ long double fmal(
    long double  y,
    long double z
 );
+
+#define fma(X, Y, Z) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Çarpılacak ilk değer.
 
-*Iz*<br/>
+*Iz*\
 Çarpılacak ikinci değer.
 
-*kadar*<br/>
+*kadar*\
 Eklenecek değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -112,7 +115,9 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **FMA** 'nın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **FMA** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **FMA** 'nın aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **FMA** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `fma()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Bu işlev değeri sonsuz duyarlığa alınmış gibi hesaplar ve sonra nihai sonucu yuvarlar.
 
@@ -123,6 +128,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**FMA**, **fmaf**, **Fmal**|\<math.h>|\<cmath>|
+|**FMA** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

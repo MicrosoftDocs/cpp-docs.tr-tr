@@ -1,6 +1,7 @@
 ---
 title: fdim, fdimf, fdiml
-ms.date: 04/05/2018
+description: Fdim, fdimf ve fdiml; için API başvurusu iki değer arasındaki pozitif farkı belirler.
+ms.date: 9/1/2020
 api_name:
 - fdim
 - fdimf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-ms.openlocfilehash: 1a7bbeaf77c94f620a82f77fb1aad3c71c34f2ef
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 406fc5cfe543aa0865760df9ff780c62e78510fc
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221919"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89554792"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
@@ -71,14 +72,16 @@ long double fdiml(
    long double x,
    long double y
 );
+
+#define fdim(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 İlk değer.
 
-*Iz*<br/>
+*Iz*\
 İkinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -102,7 +105,9 @@ Hatalar [_matherr](matherr.md)belirtilen şekilde bildirilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **fdim** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **fdim** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **fdim** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **fdim** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `fdim()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 NaN işleme hariç, bu işlev ile eşdeğerdir `fmax(x - y, 0)` .
 
@@ -111,6 +116,7 @@ NaN işleme hariç, bu işlev ile eşdeğerdir `fmax(x - y, 0)` .
 |İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
 |**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
+|**fdim** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

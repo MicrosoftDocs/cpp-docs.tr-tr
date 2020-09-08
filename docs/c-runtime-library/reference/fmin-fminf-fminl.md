@@ -1,6 +1,7 @@
 ---
 title: fmin, fminf, fminl
-ms.date: 04/05/2018
+description: Fmin, fminf ve fminl; için API başvurusu iki değerden daha küçük olduğunu belirler.
+ms.date: 9/1/2020
 api_name:
 - fmin
 - fminf
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - fminf function
 - fminl function
 ms.assetid: 1916dfb5-99c1-4b0d-aefb-513525c3f2ac
-ms.openlocfilehash: d6cd16c298c3f4bedb8064d66efd2d4bbe20c22b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a070835d809c6adcb5b7bfd57b5373886b348ca
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216992"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556716"
 ---
 # <a name="fmin-fminf-fminl"></a>fmin, fminf, fminl
 
@@ -71,21 +72,23 @@ long double fminl(
    long double x,
    long double y
 );
+
+#define fmin(x) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Karşılaştırılacak ilk değer.
 
-*Iz*<br/>
+*Iz*\
 Karşılaştırılacak ikinci değer.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa *x* veya *y değerinden*küçük bir değer döndürür.
 
-|Girdi|Sonuç|
+|Giriş|Sonuç|
 |-----------|------------|
 |*x* Nan|*Iz*|
 |*y* Nan|*x*|
@@ -95,13 +98,16 @@ Başarılı olursa *x* veya *y değerinden*küçük bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **fmin** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **fmin** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve türlerini alıp döndüren **fmin** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde **fmin** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `fmin()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**fmin**, **fminf**, **fminl**|,\<math.h><br />C++: \<math.h> veya\<cmath>|
+|**fmin**, **fminf**, **fminl**|, \<math.h><br />C++: \<math.h> veya \<cmath>|
+|**fmin** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

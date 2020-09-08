@@ -1,5 +1,6 @@
 ---
 title: clog, clogf, clogl
+description: CLOG, clogf ve clogl; için API başvurusu karmaşık bir sayının doğal logaritmasını elde eden bir dalı negatif gerçek eksen üzerinde keser.
 ms.date: 11/04/2016
 api_name:
 - clog
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - clogf function
 - clogl function
 ms.assetid: 870b9b0b-6618-46f3-bfcf-da595cbd5e18
-ms.openlocfilehash: 76ee6e4e81c275c8cbed0f74914521c0b44499bb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 255f83a93c5c7a0c724fad143f028c2832be3173
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942916"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555078"
 ---
 # <a name="clog-clogf-clogl"></a>clog, clogf, clogl
 
 Karmaşık bir sayının doğal logaritmasını alır ve bir dal negatif gerçek eksen üzerinde kesilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _Dcomplex clog(
@@ -66,8 +67,8 @@ _Lcomplex clogl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
-Logaritmanın tabanı.
+*kadar*\
+Logaritmanın tabanıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -75,23 +76,23 @@ Logaritmanın tabanı.
 
 Olası dönüş değerleri şunlardır:
 
-|z parametresi|Dönüş değeri|
+|z parametresi|Döndürülen değer|
 |-----------------|------------------|
 |Pozitif|Z 'nin 10 tabanında logaritmasını|
-|Sıfırlama|- ∞|
+|Sıfır|- ∞|
 |Negatif|NaN|
 |NaN|NaN|
 |+ ∞|+ ∞|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **CLOG** aşırı yüklerini çağırabilirsiniz. C programında **CLOG** her zaman bir **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **CLOG** aşırı yüklerini çağırabilirsiniz. C programında **CLOG** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**CLOG**, **clogf**, **clogl**|\<karmaşık. h >|\<ccomplex >|
+|**CLOG**,               **clogf**, **clogl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

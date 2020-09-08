@@ -1,6 +1,7 @@
 ---
 title: tan, tanf, tanl
-ms.date: 4/2/2020
+description: Tan, tanf ve tanl için API başvurusu; bir kayan nokta değerinin tanjantını hesaplayan.
+ms.date: 08/31/2020
 api_name:
 - tan
 - tanf
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - tanf function
 - trigonometric functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-ms.openlocfilehash: ada853087cb0c6c127873e2929a73e4d3c92035c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8137bf4cbce59083e8e7c09557400fbff4f6b1df
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215133"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556547"
 ---
 # <a name="tan-tanf-tanl"></a>tan, tanf, tanl
 
@@ -54,6 +55,7 @@ Tanjantı hesaplar.
 double tan( double x );
 float tanf( float x );
 long double tanl( long double x );
+#define tan(x) // Requires C11 or higher
 ```
 
 ```cpp
@@ -63,21 +65,23 @@ long double tan( long double x );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
 **Tan** işlevleri *x*tanjantını döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Girdi|SEH özel durumu|**Matherr** Duruma|
+|Giriş|SEH özel durumu|**Matherr** Duruma|
 |-----------|-------------------|-------------------------|
 |± QNAN, IND|yok|_DOMAIN|
 |± INF|**Geçersiz**|_DOMAIN|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tan** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **tan** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **tan** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **tan** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `tan()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,6 +90,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------|-|
 |**tan**, **tanf**, **tanl**|\<math.h>|\<cmath> veya \<math.h>|
+|**tan ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

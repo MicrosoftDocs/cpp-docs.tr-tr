@@ -1,6 +1,7 @@
 ---
 title: cproj, cprojf, cprojl
-ms.date: 11/04/2016
+description: Cproj, cprojf ve cprojl için API başvurusu; Reimann Sphere üzerinde karmaşık bir sayının projeksiyonunu alır.
+ms.date: 9/2/2020
 api_name:
 - cproj
 - cprojf
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - cprojf function
 - cprojl function
 ms.assetid: 32b49623-13bf-4cae-802e-7912d75030fe
-ms.openlocfilehash: fdeefe10814b887af04d6f4adbb01300785e8b46
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fcc3c0a42c8c6392130ad58ed12c4985e7ad4907
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938959"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555949"
 ---
 # <a name="cproj-cprojf-cprojl"></a>cproj, cprojf, cprojl
 
 Reimann Sphere üzerinde karmaşık bir sayının projeksiyonunu alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 _Dcomplex cproj(
@@ -62,11 +63,12 @@ _Fcomplex cprojf(
 _Lcomplex cprojl(
    _Lcomplex z
 );
+#define cproj(X) // Requires C11 or higher
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*\
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -75,13 +77,16 @@ Reimann Sphere üzerinde *z* 'nin projeksiyonu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cproj** aşırı yüklerini çağırabilirsiniz. C programında, **cproj** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **cproj** aşırı yüklerini çağırabilirsiniz. C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **cproj** her zaman bir **_Dcomplex** değeri alır ve döndürür.
+
+\<tgmath.h> `cproj()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**cproj**, **cprojf**, **cprojl**|\<karmaşık. h >|\<ccomplex >|
+|**cproj**, **cprojf**, **cprojl**|\<complex.h>|\<ccomplex>|
+|**cproj** makrosu | \<tgmath.h> ||
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,6 +1,7 @@
 ---
 title: ldexp, ldexpf, ldexpl
-ms.date: 4/2/2020
+description: Ldexp, ldexpf ve ldexpl; için API başvurusu bir kayan noktalı sayıyı iki tam sayı gücüyle çarpar.
+ms.date: 9/1/2020
 api_name:
 - ldexp
 - ldexpf
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - exponent, floating-point numbers
 - floating-point functions, mantissa and exponent
 ms.assetid: aa7f5310-3879-4f63-ae74-86a39fbdedfa
-ms.openlocfilehash: bbd1742cdace30d5bc3bd5e9d592bb24a86f917f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ce6bcbc8adbc62e8d8598b97a6f77e04fee1511
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216927"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89555455"
 ---
 # <a name="ldexp-ldexpf-ldexpl"></a>ldexp, ldexpf, ldexpl
 
@@ -57,14 +58,6 @@ double ldexp(
    double x,
    int exp
 );
-float ldexp(
-   float x,
-   int exp
-);  // C++ only
-long double ldexp(
-   long double x,
-   int exp
-);  // C++ only
 float ldexpf(
    float x,
    int exp
@@ -73,14 +66,24 @@ long double ldexpl(
    long double x,
    int exp
 );
+#define ldexp(X, INT) // Requires C11 or higher
+
+float ldexp(
+   float x,
+   int exp
+);  // C++ only
+long double ldexp(
+   long double x,
+   int exp
+);  // C++ only
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Kayan nokta değeri.
 
-*exp*<br/>
+*exp*\
 Tamsayı üs.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -91,7 +94,9 @@ Tamsayı üs.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, veya türündeki **ldexp** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, **ldexp** her zaman bir ve alır **`double`** **`int`** ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, veya türündeki **ldexp** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **ldexp** her zaman bir **`double`** ve alır **`int`** ve döndürür **`double`** .
+
+\<tgmath.h> `ldexp()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -100,6 +105,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
 |**ldexp**, **ldexpf**, **ldexpl**|\<math.h>|\<cmath>|
+|**ldexp** makrosu | \<tgmath.h> ||
 
 Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -121,7 +127,7 @@ int main( void )
 }
 ```
 
-## <a name="output"></a>Çıktı
+## <a name="output"></a>Çıkış
 
 ```Output
 4.0 times two to the power of 3 is 32.0

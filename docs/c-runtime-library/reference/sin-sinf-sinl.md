@@ -1,6 +1,7 @@
 ---
 title: sin, sinf, sinl
-ms.date: 6/5/2020
+description: Sin, sinf ve sinl için API başvurusu; bir kayan nokta değerinin sinüsünü hesaplar.
+ms.date: 08/31/2020
 api_name:
 - sinl
 - sinf
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - trigonometric functions
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-ms.openlocfilehash: 7e6e4d9fee0df20ab81f15483cd5f7f4de16d751
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7d1921dd4537c9dcc955c264a36992d86defada8
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216732"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556202"
 ---
 # <a name="sin-sinf-sinl"></a>sin, sinf, sinl
 
@@ -54,6 +55,7 @@ Kayan nokta değerinin sinüsünü hesaplar.
 double sin(double x);
 float sinf(float x);
 long double sinl(long double x);
+#define sin(x) // Requires C11 or higher
 ```
 
 ```cpp
@@ -63,23 +65,25 @@ long double sin(long double x);  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*x*<br/>
+*sayı*\
 Radyan cinsinden açı.
 
 ## <a name="return-value"></a>Döndürülen değer
 
 **Sin** işlevleri *x*sinüsünü döndürür. *X* , 263 veya daha büyük ya da-263 ' den büyükse veya eşitse, sonuçta anlam kaybı meydana gelir.
 
-|Girdi|SEH özel durumu|Matherr özel durumu|
+|Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|Hiçbiri|_DOMAIN|
+|± QNAN, IND|Yok|_DOMAIN|
 |± ∞ (sin, sinf, sinl)|Geçersiz|_DOMAIN|
 
 Dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **Sin** 'in aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, **Sin** her zaman alır ve döndürür **`double`** .
+C++ aşırı yüklemeye izin verdiğinden, ve değerlerini alan ve döndüren **Sin** 'in aşırı yüklerini **`float`** çağırabilirsiniz **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız takdirde, **Sin** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `sin()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,6 +92,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-|-|-|
 |**Sin**, **sinf**, **sinl**|\<math.h>|\<cmath> veya \<math.h>|
+|**sin ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
