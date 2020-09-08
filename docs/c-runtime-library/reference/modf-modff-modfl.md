@@ -1,5 +1,6 @@
 ---
 title: modf, modff, modfl
+description: Modf, modff ve modfl için API başvurusu; kayan nokta değerini kesirli ve tamsayı parçalara ayırır.
 ms.date: 4/2/2020
 api_name:
 - modff
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - modff function
 - modfl function
 ms.assetid: b1c7abf5-d476-43ca-a03c-02072a86e32d
-ms.openlocfilehash: 644e50564f1b433921a6a0d8099ea5229db7ed93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0d3522079acc8a9d2c8409b1cad78e7f50a7f788
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216875"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556768"
 ---
 # <a name="modf-modff-modfl"></a>modf, modff, modfl
 
@@ -86,7 +87,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**modf**, **modff**, **modfl**|,\<math.h><br /><br /> C++:, \<cmath> veya\<math.h>|
+|**modf**, **modff**, **modfl**|, \<math.h><br /><br /> C++:, \<cmath> veya \<math.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

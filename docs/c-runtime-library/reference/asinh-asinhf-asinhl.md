@@ -1,6 +1,7 @@
 ---
 title: asinh, asinhf, asinhl
-ms.date: 4/2/2020
+description: ASİNH, asınhf ve asınhl; için API başvurusu bir kayan nokta değerinin ters hiperbolik sinüsünü hesaplar.
+ms.date: 08/31/2020
 api_name:
 - asinh
 - asinhf
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-ms.openlocfilehash: 0443648d33929082042881c14562b34356cb6063
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 332e6bfc95bd297d703d879cdd468b450cfdc763
+ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232657"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89556794"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -51,9 +52,8 @@ Ters hiperbolik sinüsü hesaplar.
 double asinh( double x );
 float asinhf( float x );
 long double asinhl( long double x );
-```
+#define asinh(X) // Requires C11 or higher
 
-```cpp
 float asinh( float x );  // C++ only
 long double asinh( long double x );  // C++ only
 ```
@@ -67,13 +67,16 @@ Kayan nokta değeri.
 
 **ASİNH** işlevleri, *x*'in ters hyberbolik sinüsü (Ark hiperbolik sinüs) döndürür. Bu işlev, kayan nokta etki alanı üzerinde geçerlidir. *X* sessiz bir NaN, sonsuz veya sonsuz ise, aynı değer döndürülür.
 
-|Girdi|SEH özel durumu|**_matherr** Duruma|
+|Giriş|SEH özel durumu|**_matherr** Duruma|
 |-----------|-------------------|--------------------------|
 |± QNAN, IND, ıNF|yok|yok|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ kullanırken, veya değerlerini alan ve döndüren **ASİNH** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında **ASİNH** her zaman alır ve döndürür **`double`** .
+C++ kullanırken, veya değerlerini alan ve döndüren **ASİNH** aşırı yüklerini çağırabilirsiniz **`float`** **`long double`** . C programında, \<tgmath.h> Bu işlevi çağırmak için makroyu kullanmadığınız müddetçe, **ASİNH** her zaman alır ve döndürür **`double`** .
+
+\<tgmath.h> `asinh()` Makroyu kullanırsanız, bağımsız değişkenin türü, işlevin hangi sürümünün seçili olduğunu belirler. Ayrıntılar için bkz. [tür-genel matematik](../../c-runtime-library/tgmath.md) .
+
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -81,7 +84,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**ASİNH**, **asınhf**, **asinhl**|\<math.h>|\<cmath>veya \< Math. h<|
+|**ASİNH**, **asınhf**, **asinhl**|\<math.h>|\<cmath> veya \<math.h>|
+|**ASİNH ()** makrosu | \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
