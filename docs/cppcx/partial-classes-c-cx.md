@@ -1,31 +1,32 @@
 ---
 title: Kısmi Sınıflar (C++/CX)
+description: C++/CX'DE kısmi sınıfları bildirme ve kullanma.
 ms.date: 12/30/2016
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-ms.openlocfilehash: 1f5583354481248e8df201be200fe99da61791dd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70225069c948a50b38ac3642113cf940c86cf8da
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185469"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609064"
 ---
 # <a name="partial-classes-ccx"></a>Kısmi Sınıflar (C++/CX)
 
-Kısmi bir sınıf, bir sınıf tanımının bir bölümünü değiştirmekte olduğunuz senaryoları destekleyen bir yapıdır ve örneğin XAML Tasarımcısı, aynı sınıftaki kodu de değiştiriyor. Kısmi bir sınıf kullanarak, tasarımcının kodunuzun üzerine yazmasını engelleyebilirsiniz. Visual Studio projesinde, `partial` değiştirici oluşturulan dosyaya otomatik olarak uygulanır.
+Kısmi bir sınıf, bir sınıf tanımının bir bölümünü değiştirmekte olduğunuz senaryoları destekleyen bir yapıdır ve örneğin XAML Tasarımcısı, aynı sınıftaki kodu de değiştiriyor. Kısmi bir sınıf kullanarak, tasarımcının kodunuzun üzerine yazmasını engelleyebilirsiniz. Visual Studio projesinde, **`partial`** değiştirici oluşturulan dosyaya otomatik olarak uygulanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-Kısmi bir sınıf tanımlamak için `partial` anahtar sözcüğünü, diğer bir deyişle normal sınıf tanımı olacak şekilde sınıf anahtarından hemen önce kullanın. Gibi bir anahtar sözcük `partial ref class` , boşluk karakterleri içeren bir bağlamsal anahtar sözcüktür. Kısmi tanımlar aşağıdaki yapılar için desteklenir.
+Kısmi bir sınıf tanımlamak için **`partial`** anahtar sözcüğünü, diğer bir deyişle normal sınıf tanımı olacak şekilde sınıf anahtarından hemen önce kullanın. Gibi bir anahtar sözcük **`partial ref class`** , boşluk karakterleri içeren bir bağlamsal anahtar sözcüktür. Kısmi tanımlar aşağıdaki yapılar için desteklenir.
 
-- **`class`** veya**`struct`**
+- **`class`** veya **`struct`**
 
-- **`ref class`** veya**`ref struct`**
+- **`ref class`** veya **`ref struct`**
 
-- **`value class`** veya**`value struct`**
+- **`value class`** veya **`value struct`**
 
-- **`enum`** veya**`enum class`**
+- **`enum`** veya **`enum class`**
 
-- `ref interface`, **`interface class`** , **`interface struct`** , veya **' __interface**
+- **`ref interface`**, **`interface class`** , **`interface struct`** veya **`__interface`**
 
 - **`union`**
 
@@ -35,7 +36,7 @@ Bu örnekte kısmi gösterilmektedir **`ref class`** :
 
 ## <a name="contents"></a>İçindekiler
 
-Bir kısmi sınıf tanımı, `partial` anahtar sözcüğü atlanmışsa tam sınıf tanımının içerebileceği her şeyi içerebilir. Tek bir özel durumla, bu, temel sınıflar, veri üyeleri, üye işlevleri, numaralandırmalar, arkadaş bildirimleri ve öznitelikler gibi geçerli bir yapıyı içerir. Statik veri üyelerinin satır içi tanımlarına izin verilir.
+Bir kısmi sınıf tanımı, **`partial`** anahtar sözcüğü atlanmışsa tam sınıf tanımının içerebileceği her şeyi içerebilir. Tek bir özel durumla, bu, temel sınıflar, veri üyeleri, üye işlevleri, numaralandırmalar, arkadaş bildirimleri ve öznitelikler gibi geçerli bir yapıyı içerir. Statik veri üyelerinin satır içi tanımlarına izin verilir.
 
 Bir özel durum sınıf erişilebilirliğine sahiptir. Örneğin, ifade `public partial class MyInvalidClass {/* ... */};` bir hatadır. Myınvalidclass için kısmi sınıf tanımında kullanılan erişim belirticileri, Myınvalidclass için sonraki kısmi veya tam sınıf tanımında varsayılan erişilebilirliği etkilemez.
 
@@ -45,13 +46,13 @@ Aşağıdaki kod parçası erişilebilirliği gösterir. İlk kısmi sınıfta, 
 
 ## <a name="declaration"></a>Bildirim
 
-*MyClass* gibi bir sınıfın kısmi tanımı yalnızca MyClass bildirimi olur. Diğer bir deyişle, yalnızca *MyClass*adını tanıtır. *MyClass* , bir sınıf tanımı gerektiren bir şekilde kullanılamaz, örneğin, *MyClass* boyutunu bilmek veya *MyClass*bir temelini ya da üyesini kullanmak. *MyClass* yalnızca derleyici, *MyClass*'ın kısmi olmayan tanımıyla karşılaştığında tanımlanması kabul edilir.
+Bir sınıfının kısmi tanımı `MyClass` yalnızca MyClass bildirimi olur. Diğer bir deyişle, yalnızca adı tanıtır `MyClass` . `MyClass` , bir sınıf tanımı gerektiren bir şekilde kullanılamaz, örneğin, ya da ' nin boyutunu `MyClass` veya bir üyesini kullanmayı bilmektir `MyClass` . `MyClass` yalnızca derleyicinin kısmi olmayan bir tanımına rastlaması durumunda tanımlandıkları kabul edilir `MyClass` .
 
-Aşağıdaki örnek, kısmi bir sınıfın bildirim davranışını gösterir. Bildirim #1 sonra *MyClass* , iletme bildirimi olarak yazılmış gibi kullanılabilir `ref class MyClass;` . Bildirim #2, bildirim #1 eşdeğerdir. bildirim #3, bir sınıfa yönelik bir iletme bildirimi olduğundan geçerlidir. Ancak bildirim #4 geçersiz çünkü
+Aşağıdaki örnek, kısmi bir sınıfın bildirim davranışını gösterir. Bildirim #1 sonra, `MyClass` iletme bildirimi olarak yazılmış gibi kullanılabilir `ref class MyClass;` . Bildirim #2, bildirim #1 eşdeğerdir. bildirim #3, bir sınıfa yönelik bir iletme bildirimi olduğundan geçerlidir. Ancak bildirim #4 geçersiz çünkü
 
-*MyClass* tam olarak tanımlı değil.
+`MyClass` tam olarak tanımlı değil.
 
-Bildirim #5 `partial` anahtar sözcüğünü kullanmaz ve bildirim tam olarak *MyClass*'yi tanımlar. Sonuç olarak, bildirim #6 geçerlidir.
+Bildirim #5 **`partial`** anahtar sözcüğünü kullanmaz ve bildirim tam olarak tanımlar `MyClass` . Sonuç olarak, bildirim #6 geçerlidir.
 
 [!code-cpp[Cx_partial#03](../cppcx/codesnippet/CPP/partialclassexample/class1.h#03)]
 
@@ -85,11 +86,11 @@ Kısmi bir sınıf şablon olamaz.
 
 Kısmi bir sınıf, bir çeviri biriminin ötesine yayılamaz.
 
-`partial`Anahtar sözcüğü yalnızca **`ref class`** anahtar sözcüğü veya anahtar sözcüğü ile birlikte desteklenir **`value class`** .
+**`partial`** Anahtar sözcüğü yalnızca **`ref class`** anahtar sözcüğü veya anahtar sözcüğü ile birlikte desteklenir **`value class`** .
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, `Address` sınıfını iki kod dosyası genelinde tanımlar. Tasarımcı `Address.details.h` değiştirilir ve değiştirirsiniz `Address.h` . Yalnızca ilk dosyadaki sınıf tanımı `partial` anahtar sözcüğünü kullanır.
+Aşağıdaki örnek, `Address` sınıfını iki kod dosyası genelinde tanımlar. Tasarımcı `Address.details.h` değiştirilir ve değiştirirsiniz `Address.h` . Yalnızca ilk dosyadaki sınıf tanımı **`partial`** anahtar sözcüğünü kullanır.
 
 [!code-cpp[cx_partial#07](../cppcx/codesnippet/CPP/partialclassexample/address.details.h#07)]
 

@@ -6,12 +6,12 @@ ms.date: 07/25/2020
 helpviewer_keywords:
 - keywords [C++]
 ms.assetid: d7ca94a8-f785-41ce-9f73-d3c4fd508489
-ms.openlocfilehash: 13b174a40621b8aeeae58d4ccae8e4e51c8fdd44
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 96fb4e6a51630f3b5297c6428297980b5c51ca36
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843332"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609149"
 ---
 # <a name="keywords-c"></a>Anahtar Sözcükler (C++)
 
@@ -288,7 +288,7 @@ Bu tanımlayıcılar, değiştiricinin genişletilmiş öznitelikleridir **`__de
 
 <sup>f</sup> yalnızca C++ için yönetilen uzantılar için geçerlidir. Bu sözdizimi artık kullanım dışıdır. Daha fazla bilgi için bkz. [çalışma zamanı platformları Için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
-<sup>f</sup> C++/cliiçin uygulanabilir.
+C++/Clia <sup>uygulanabilir.</sup>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

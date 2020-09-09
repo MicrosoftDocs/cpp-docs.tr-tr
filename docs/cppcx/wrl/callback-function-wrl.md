@@ -5,18 +5,18 @@ ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Callback
 ms.assetid: afb15d25-3230-44f7-b321-e17c54872943
-ms.openlocfilehash: 138ad9d5d3bd4cf9e5263845f950dbbe7971fde6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8615b92f9b46dcfc6e36867c51eeefdb7a5f5e81
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214142"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609087"
 ---
 # <a name="callback-function-wrl"></a>Callback Işlevi (WRL)
 
 Üye işlevi bir geri çağırma yöntemi olan bir nesne oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 template<
@@ -24,7 +24,7 @@ template<
    typename TCallback
 >
 ComPtr<TDelegateInterface> Callback(
-   TCallbackcallback
+   TCallback callback
 );
 template<
    typename TDelegateInterface,
@@ -242,7 +242,7 @@ Bir olay gerçekleştiğinde çağrılacak üye işlevi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Temsilci nesnesinin temeli, `IInspectable`değil `IUnknown`olmalıdır.
+Temsilci nesnesinin temeli `IUnknown` değil olmalıdır `IInspectable` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -252,4 +252,4 @@ Temsilci nesnesinin temeli, `IInspectable`değil `IUnknown`olmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

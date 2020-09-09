@@ -1,6 +1,7 @@
 ---
 title: /U, /u (Simge tanımlarını kaldır)
-ms.date: 06/08/2020
+description: Ön işlemci simgelerini kaldırmak için Microsoft C/C++ derleyicisi/U ve/u seçeneklerini kullanın.
+ms.date: 09/03/2020
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UndefinePreprocessorDefinitions
 - VC.Project.VCCLWCECompilerTool.UndefinePreprocessorDefinitions
@@ -13,20 +14,20 @@ helpviewer_keywords:
 - /U compiler option [C++]
 - U compiler option [C++]
 ms.assetid: 7bc0474f-6d1f-419b-807d-0d8816763b2a
-ms.openlocfilehash: 4d7a2b3d5df2b22dc53eb7b58bfb78cdb1824b26
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 78effabba2fa72e5ab7f2dfc6ef91f22383b063f
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616657"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609195"
 ---
 # <a name="u-u-undefine-symbols"></a>/U, /u (Simge tanımlarını kaldır)
 
 **`/U`** Derleyici seçeneği, belirtilen Önişlemci sembolünü geri tanımlamıyor. **`/u`** Derleyici seçeneği, derleyicinin tanımladığı Microsoft 'a özgü sembolleri geri tanımlamıyor.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Syntax
 
-> **`/U`**\[]*simgesi*\
+> **`/U`**\[ ]*simgesi*\
 > **`/u`**
 
 ## <a name="arguments"></a>Arguments
@@ -44,14 +45,14 @@ Varsayılan olarak, derleyici, Microsoft 'a özgü çok sayıda sembol tanımlay
 
 | Sembol | İşlev |
 |--|--|
-| `_CHAR_UNSIGNED` | Varsayılan karakter türü imzasız. [**`/J`**](j-default-char-type-is-unsigned.md)Seçenek belirtildiğinde tanımlanır. |
-| `_CPPRTTI` | Seçeneğiyle derlenen kod için tanımlanır [**`/GR`**](gr-enable-run-time-type-information.md) . |
-| `_CPPUNWIND` | Seçeneğiyle derlenen kod için tanımlanır [**`/EHsc`**](eh-exception-handling-model.md) . |
-| `_DLL` | [**`/MD`**](md-mt-ld-use-run-time-library.md)Seçenek belirtildiğinde tanımlanır. |
+| `_CHAR_UNSIGNED` | Varsayılan karakter türü imzasız. [`/J`](j-default-char-type-is-unsigned.md)Seçenek belirtildiğinde tanımlanır. |
+| `_CPPRTTI` | Seçeneğiyle derlenen kod için tanımlanır [`/GR`](gr-enable-run-time-type-information.md) . |
+| `_CPPUNWIND` | Seçeneğiyle derlenen kod için tanımlanır [`/EHsc`](eh-exception-handling-model.md) . |
+| `_DLL` | [`/MD`](md-mt-ld-use-run-time-library.md)Seçenek belirtildiğinde tanımlanır. |
 | `_M_IX86` | Varsayılan olarak, x86 hedefleri için 600 olarak tanımlanmıştır. |
 | `_MSC_VER` | Her derleyici sürümü için benzersiz bir tamsayı değeri olarak tanımlanır. Daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md). |
 | `_WIN32` | WIN32 uygulamaları için tanımlanır. Her zaman tanımlı. |
-| `_MT` | [ **`/MD`** Veya **`/MT`** ](md-mt-ld-use-run-time-library.md) seçeneği belirtildiğinde tanımlanır. |
+| `_MT` | [`/MD`](md-mt-ld-use-run-time-library.md)Veya [`/MT`](md-mt-ld-use-run-time-library.md) seçeneği belirtildiğinde tanımlanır. |
 
 Microsoft 'a özgü önceden tanımlanmış makroların tam listesi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
 
@@ -71,7 +72,7 @@ Microsoft 'a özgü önceden tanımlanmış makroların tam listesi için bkz. [
 
 [MSVC derleyicisi seçenekleri](compiler-options.md)<br/>
 [MSVC derleyicisi komut satırı söz dizimi](compiler-command-line-syntax.md)<br/>
-[**`/J`**(Varsayılan karakter türü imzasız)](j-default-char-type-is-unsigned.md)<br/>
-[**`/GR`**(Çalışma zamanı türü bilgilerini etkinleştir)](gr-enable-run-time-type-information.md)<br/>
-[**`/EH`**(Özel durum işleme modeli)](eh-exception-handling-model.md)<br/>
+[**`/J`** (Varsayılan karakter türü imzasız)](j-default-char-type-is-unsigned.md)<br/>
+[**`/GR`** (Çalışma zamanı türü bilgilerini etkinleştir)](gr-enable-run-time-type-information.md)<br/>
+[**`/EH`** (Özel durum işleme modeli)](eh-exception-handling-model.md)<br/>
 [**`/MD`**, **`/MT`** , **`/LD`** (Çalışma zamanı kitaplığını kullan)](md-mt-ld-use-run-time-library.md)

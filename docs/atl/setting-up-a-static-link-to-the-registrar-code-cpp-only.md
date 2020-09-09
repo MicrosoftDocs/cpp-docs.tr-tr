@@ -1,29 +1,30 @@
 ---
-title: (Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama
-ms.date: 11/04/2016
+title: Kayıt Şirketi koduna statik bağlantı ayarlama (yalnızca C++)
+description: C++ kodunu ATL kaydedici koduna statik olarak bağlama.
+ms.date: 09/03/2020
 helpviewer_keywords:
 - statically linking to ATL Registrar code
 - linking [C++], to ATL Registrar code
 ms.assetid: 835f5885-87a6-48fa-91e6-60988ee65538
-ms.openlocfilehash: b95bd17abca3237710956f3a1bf1b1d6fa9df51e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f08f7d9433ae1344c7a98a5c52502d03bad21e91
+ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196672"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89609160"
 ---
-# <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>(Yalnızca C++) Kaydedici koduna statik bağlantı ayarlama
+# <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>Kaydedici koduna statik bağlantı ayarlama (yalnızca C++)
 
-C++ istemciler şirketinin kod statik bir bağlantı oluşturabilirsiniz. Statik bağlama şirketinin ayrıştırıcı bir yayın yapısı için yaklaşık 5 K ekler.
+C++ istemcileri, Kaydediconun koduna statik bir bağlantı oluşturabilir. Kaydedicisinin ayrıştırıcının statik bağlanması, yayın derlemesine yaklaşık 5 k ekler.
 
-Statik bağlama ayarlamak için en basit yolu, belirttiğiniz varsayar [DECLARE_REGISTRY_RESOURCEID](reference/registry-macros.md#declare_registry_resourceid) nesnenizin bildirimi. (Bu, ATL tarafından kullanılan varsayılan belirtimi)
+Statik bağlantı kurmanın en kolay yolu, nesnenizin bildiriminde belirttiğinizi varsayar [`DECLARE_REGISTRY_RESOURCEID`](reference/registry-macros.md#declare_registry_resourceid) . (ATL tarafından kullanılan varsayılan belirtimdir.)
 
-## <a name="to-create-a-static-link-using-declareregistryresourceid"></a>DECLARE_REGISTRY_RESOURCEID kullanarak statik bir bağlantı oluşturmak için
+## <a name="to-create-a-static-link-using-declare_registry_resourceid"></a>Kullanarak statik bağlantı oluşturmak için `DECLARE_REGISTRY_RESOURCEID`
 
-1. Belirtin [/D](../build/reference/d-preprocessor-definitions.md)  **\_ATL\_statik\_kayıt defteri** yerine **/D \_ATL\_DLL**.
+1. Öğesini **`/D _ATL_STATIC_REGISTRY`** **`/D _ATL_DLL`** CL komut satırı yerine belirtin. Daha fazla bilgi için bkz. [`/D`](../build/reference/d-preprocessor-definitions.md).
 
-1. Yeniden derleyin.
+1. Kodu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayıt defteri bileşeni (Kaydedici)](../atl/atl-registry-component-registrar.md)
+[Kayıt defteri bileşeni (kaydedici)](../atl/atl-registry-component-registrar.md)
