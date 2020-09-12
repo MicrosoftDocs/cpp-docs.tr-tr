@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler policies
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-ms.openlocfilehash: d074646a333090138c916bc4d3b7a2e072731b3d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a962c00d23c41d97087e705d395b601afc7b1910
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228420"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042049"
 ---
 # <a name="scheduler-policies"></a>Zamanlayıcı İlkeleri
 
@@ -26,17 +26,17 @@ Bir zamanlayıcı örneği oluşturmak için [concurrency:: CurrentScheduler:: C
 
 [Eşzamanlılık::P olicyElementKey](reference/concurrency-namespace-enums.md#policyelementkey) numaralandırması, Görev Zamanlayıcı ilişkili ilke anahtarlarını tanımlar. Aşağıdaki tabloda, ilke anahtarları ve çalışma zamanının her biri için kullandığı varsayılan değer açıklanmaktadır.
 
-|İlke anahtarı|Açıklama|Varsayılan değer|
-|----------------|-----------------|-------------------|
-|`SchedulerKind`|Görevleri zamanlamak için kullanılacak iş parçacıklarının türünü belirten bir [concurrency:: SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) değeri.|`ThreadScheduler`(normal iş parçacıklarını kullanın). Bu anahtar için geçerli tek değer budur.|
-|`MaxConcurrency`|**`unsigned int`** Scheduler 'ın kullandığı en fazla eşzamanlılık kaynağı sayısını belirten bir değer.|[Eşzamanlılık:: MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources)|
-|`MinConcurrency`|**`unsigned int`** Scheduler 'ın kullandığı en az eşzamanlılık kaynağı sayısını belirten bir değer.|`1`|
-|`TargetOversubscriptionFactor`|**`unsigned int`** Her bir işleme kaynağına ayrılacak iş parçacığı sayısını belirten bir değer.|`1`|
-|`LocalContextCacheSize`|**`unsigned int`** Her sanal işlemcinin yerel sırasında Önbelleğe alınabilecek en fazla bağlam sayısını belirten bir değer.|`8`|
-|`ContextStackSize`|**`unsigned int`** Her bağlam için ayrılacak yığın boyutunu kilobayt cinsinden belirten bir değer.|`0`(varsayılan yığın boyutunu kullanın)|
-|`ContextPriority`|**`int`** Her bağlamın iş parçacığı önceliğini belirten bir değer. Bu, [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) veya ' a geçirebilmeniz gereken herhangi bir değer olabilir `INHERIT_THREAD_PRIORITY` .|`THREAD_PRIORITY_NORMAL`|
-
-|`SchedulingProtocol`| Kullanılacak zamanlama algoritmasını belirten bir [concurrency:: SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype) değeri. | `EnhanceScheduleGroupLocality` | |`DynamicProgressFeedback`| [Tutarlılık::D ynamicprogressfeedbacktype](reference/concurrency-namespace-enums.md#dynamicprogressfeedbacktype) değeri, kaynakların istatistik tabanlı ilerleme bilgilerine göre yeniden dengelenmesi gerektiğini belirtir.<br /><br /> **Göz önünde** `ProgressFeedbackDisabled`Çalışma zamanı tarafından kullanılmak üzere ayrıldığından, bu ilkeyi öğesine ayarlamayın. |`ProgressFeedbackEnabled`|
+| İlke anahtarı | Description | Varsayılan değer |
+|--|--|--|
+| `SchedulerKind` | Görevleri zamanlamak için kullanılacak iş parçacıklarının türünü belirten bir [concurrency:: SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) değeri. | `ThreadScheduler` (normal iş parçacıklarını kullanın). Bu anahtar için geçerli tek değer budur. |
+| `MaxConcurrency` | **`unsigned int`** Scheduler 'ın kullandığı en fazla eşzamanlılık kaynağı sayısını belirten bir değer. | [Eşzamanlılık:: MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources) |
+| `MinConcurrency` | **`unsigned int`** Scheduler 'ın kullandığı en az eşzamanlılık kaynağı sayısını belirten bir değer. | `1` |
+| `TargetOversubscriptionFactor` | **`unsigned int`** Her bir işleme kaynağına ayrılacak iş parçacığı sayısını belirten bir değer. | `1` |
+| `LocalContextCacheSize` | **`unsigned int`** Her sanal işlemcinin yerel sırasında Önbelleğe alınabilecek en fazla bağlam sayısını belirten bir değer. | `8` |
+| `ContextStackSize` | **`unsigned int`** Her bağlam için ayrılacak yığın boyutunu kilobayt cinsinden belirten bir değer. | `0` (varsayılan yığın boyutunu kullanın) |
+| `ContextPriority` | **`int`** Her bağlamın iş parçacığı önceliğini belirten bir değer. Bu, [SetThreadPriority](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) veya ' a geçirebilmeniz gereken herhangi bir değer olabilir `INHERIT_THREAD_PRIORITY` . | `THREAD_PRIORITY_NORMAL` |
+| `SchedulingProtocol` | Kullanılacak zamanlama algoritmasını belirten bir [concurrency:: SchedulingProtocolType](reference/concurrency-namespace-enums.md#schedulingprotocoltype) değeri. | `EnhanceScheduleGroupLocality` |
+| `DynamicProgressFeedback` | [Tutarlılık::D ynamicprogressfeedbacktype](reference/concurrency-namespace-enums.md#dynamicprogressfeedbacktype) değeri, kaynakların istatistik tabanlı ilerleme bilgilerine göre yeniden dengelenmesi gerektiğini belirtir.<br /><br /> **Göz önünde** `ProgressFeedbackDisabled` Çalışma zamanı tarafından kullanılmak üzere ayrıldığından, bu ilkeyi öğesine ayarlamayın. | `ProgressFeedbackEnabled` |
 
 Her Zamanlayıcı, görevleri zamanlarken kendi ilkesini kullanır. Bir zamanlayıcı ile ilişkili ilkeler, başka bir Scheduler 'ın davranışını etkilemez. Ayrıca, nesnesini oluşturduktan sonra zamanlayıcı ilkesini değiştiremezsiniz `Scheduler` .
 

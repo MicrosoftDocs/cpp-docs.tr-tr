@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: e66ee5dd39628065e52eb95a89e1cd81272a6b86
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 6ccbea23835326d1e1840d8454f86c0eb72a5a7d
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520933"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042062"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
@@ -70,13 +70,14 @@ Farklı bir çiftin öğelerini başlatmak için değerleri kullanılacak olan b
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İlk (varsayılan) Oluşturucu, çiftin ilk öğesini varsayılan türüne `T1` ve ikinci öğesine varsayılan türünden varsayılan olarak başlatır `T2` .
+İlk (varsayılan) Oluşturucu, çiftin ilk öğesini varsayılan türüne `T1` ve ikinci öğe türüne varsayılan olarak başlatır `T2` .  Her iki tür de varsayılan olarak oluşturulabilir ise tanımlanmıştır.
 
-İkinci Oluşturucu, çiftin ilk öğesini *val1* ve ikincisi val2 & lt olarak başlatır *.*
+İkinci Oluşturucu, çiftin ilk öğesini *val1* ve Ikincisini val2 & lt olarak başlatır *.*  Her iki tür de kopya oluşturulabilir ise tanımlanmıştır.
 
-Üçüncü (şablon) Oluşturucu, çiftin ilk öğesini öğesine başlatır `Right` . **ilk** ve ikinci `Right` . **ikinci**.
+Üçüncü (şablon) Oluşturucu, çiftin ilk öğesini olarak başlatır `Right` . **ilk** ve ikincisini `Right` . **ikinci**.  Çiftin her iki türü de belirtilen değer türlerinden oluşturulabilir ise tanımlanmıştır.
 
-Dördüncü Oluşturucu, çiftin ilk öğesini *val1* ve saniye ile *val2 & lt* , [Rvalue Başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md)kullanarak başlatır.
+
+Dördüncü Oluşturucu, çiftin ilk öğesini *val1* , Ikincisi Ise [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md) *kullanarak başlatır* .  Çiftin her iki türü de belirtilen değer türlerinden oluşturulabilir ise tanımlanmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 

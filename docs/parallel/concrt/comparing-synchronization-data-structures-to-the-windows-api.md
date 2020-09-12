@@ -5,12 +5,12 @@ helpviewer_keywords:
 - synchronization data structures, compared to Windows API
 - event class, example
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
-ms.openlocfilehash: 16d58431ae3f9859677302010f15a75b37ebedbf
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b889570935b3a94e0cb8717c8af1783e2ce31c42
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69510596"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040347"
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>Eşitleme Veri Yapılarını Windows API ile Karşılaştırma
 
@@ -20,37 +20,37 @@ Eşzamanlılık Çalışma Zamanı tarafından belirtilen eşitleme verileri yap
 
 ## <a name="critical_section"></a>critical_section
 
-[Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı, yalnızca bir işlemin `CRITICAL_SECTION` iş parçacıkları tarafından kullanılabilmesi için Windows yapısına benzer. Windows API 'sindeki kritik bölümler hakkında daha fazla bilgi için bkz. [kritik bölüm nesneleri](/windows/win32/Sync/critical-section-objects).
+[Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı, `CRITICAL_SECTION` yalnızca bir işlemin iş parçacıkları tarafından kullanılabilmesi için Windows yapısına benzer. Windows API 'sindeki kritik bölümler hakkında daha fazla bilgi için bkz. [kritik bölüm nesneleri](/windows/win32/Sync/critical-section-objects).
 
 ## <a name="reader_writer_lock"></a>reader_writer_lock
 
 [Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) sınıfı Windows ince okuyucu/yazıcı (SRW) kilitlerine benzer. Aşağıdaki tabloda benzerlikler ve farklar açıklanmaktadır.
 
-|Özellik|`reader_writer_lock`|SRW kilidi|
-|-------------|--------------------------|--------------|
-|Yer yok|Evet|Evet|
-|Bir okuyucuyu bir yazıcıya yükseltebilir (yükseltme desteği)|Hayır|Hayır|
-|Bir yazıcıyı bir okuyucuya indirgeyebilirler (desteği düşürme)|Hayır|Hayır|
-|Yazma tercihi kilidi|Evet|Hayır|
-|Yazıcılara FıFO erişimi|Evet|Hayır|
+| Öne çıkan özelliği | `reader_writer_lock` sınıfı | SRW kilidi |
+|--|--|--|
+| Yer yok | Yes | Yes |
+| Bir okuyucuyu bir yazıcıya yükseltebilir (yükseltme desteği) | Hayır | Hayır |
+| Bir yazıcıyı bir okuyucuya indirgeyebilirler (desteği düşürme) | Hayır | Hayır |
+| Yazma tercihi kilidi | Yes | Hayır |
+| Yazıcılara FıFO erişimi | Yes | Hayır |
 
 SRW kilitleri hakkında daha fazla bilgi için bkz. Platform SDK 'sında [Ince okuyucu/yazıcı (SRW) kilitleri](/windows/win32/sync/slim-reader-writer--srw--locks) .
 
-## <a name="event"></a>olay
+## <a name="event"></a>event
 
-[Concurrency:: Event](../../parallel/concrt/reference/event-class.md) sınıfı adlandırılmamış, Windows el ile sıfırlama olayına benzer. Ancak, `event` bir nesnesi birlikte çalışır, ancak bir Windows olayı preemptively olarak davranır. Windows olayları hakkında daha fazla bilgi için bkz. [olay nesneleri](/windows/win32/Sync/event-objects).
+[Concurrency:: Event](../../parallel/concrt/reference/event-class.md) sınıfı adlandırılmamış, Windows el ile sıfırlama olayına benzer. Ancak, bir `event` nesnesi birlikte çalışır, ancak bir Windows olayı preemptively olarak davranır. Windows olayları hakkında daha fazla bilgi için bkz. [olay nesneleri](/windows/win32/Sync/event-objects).
 
 ## <a name="example"></a>Örnek
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
-`event` Sınıf ve Windows olayları arasındaki farkı daha iyi anlamak için aşağıdaki örneği göz önünde bulundurun. Bu örnek, Scheduler 'ın en fazla iki eş zamanlı görevi oluşturmasını ve sonra `event` sınıfını ve Windows el ile sıfırlama olayını kullanan iki benzer işlevi çağırmalarını sağlar. Her bir işlev önce, paylaşılan bir olayın sinyal vermesini bekleyen birkaç görev oluşturur. Sonra her işlev çalışan görevlere bildirir ve sonra olaya bildirir. Her işlev, sinyal verdi olayı bekler.
+Sınıf ve Windows olayları arasındaki farkı daha iyi anlamak için `event` aşağıdaki örneği göz önünde bulundurun. Bu örnek, Scheduler 'ın en fazla iki eş zamanlı görevi oluşturmasını ve sonra `event` sınıfını ve Windows el ile sıfırlama olayını kullanan iki benzer işlevi çağırmalarını sağlar. Her bir işlev önce, paylaşılan bir olayın sinyal vermesini bekleyen birkaç görev oluşturur. Sonra her işlev çalışan görevlere bildirir ve sonra olaya bildirir. Her işlev, sinyal verdi olayı bekler.
 
 ### <a name="code"></a>Kod
 
 [!code-cpp[concrt-event-comparison#1](../../parallel/concrt/codesnippet/cpp/comparing-synchronization-data-structures-to-the-windows-api_1.cpp)]
 
-### <a name="comments"></a>Açıklamalar
+### <a name="comments"></a>Yorumlar
 
 Bu örnek aşağıdaki örnek çıktıyı üretir:
 
@@ -81,10 +81,10 @@ Windows event:
     Context 13: received the event.
 ```
 
-`event` Sınıfı birlikte davrandığı için Zamanlayıcı, bir olay, sinyal durumunun girilmesi beklenirken, işlem kaynaklarını başka bir içeriğe yeniden tahsis edebilir. Bu nedenle, `event` sınıfını kullanan sürüm tarafından daha fazla iş gerçekleştirilir. Windows olaylarını kullanan sürümde, bekleyen her görevin bir sonraki görev başlatılmadan önce sinyal durumuna girmesi gerekir.
+`event`Sınıfı birlikte davrandığı için Zamanlayıcı, bir olay, sinyal durumunun girilmesi beklenirken, işlem kaynaklarını başka bir içeriğe yeniden tahsis edebilir. Bu nedenle, sınıfını kullanan sürüm tarafından daha fazla iş gerçekleştirilir `event` . Windows olaylarını kullanan sürümde, bekleyen her görevin bir sonraki görev başlatılmadan önce sinyal durumuna girmesi gerekir.
 
 Görevler hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)
+[Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)

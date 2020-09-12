@@ -3,12 +3,12 @@ title: Visual Studio 'da C++ Linux iş yükünü yükler
 description: Visual Studio 'da C++ için Linux iş yükünü indirme, yükleme ve ayarlama.
 ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: bc75610aaefe2a3bdd919cbc4dd81413202794c6
-ms.sourcegitcommit: 8a01ae145bc65f5bc90d6e47b4a1bdf47b073ee7
+ms.openlocfilehash: 3f8e6eb8285652078e5f26ca58601bc6ccfa80d1
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82765753"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040984"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
@@ -36,7 +36,7 @@ Bu senaryolardan herhangi biri için, C++ iş yüküyle **Linux geliştirme** ge
 
    ![Windows arama kutusu](media/visual-studio-installer-search.png)
 
-1. **Uygulama** sonuçları altında yükleyiciyi bulun ve çift tıklatın. Yükleyici açıldığında, **Değiştir**' i seçin ve sonra **iş yükleri** sekmesine tıklayın. **diğer araç kümelerine** gidin ve C++ iş yüküyle **Linux geliştirmeyi** seçin.
+1. **Uygulama** sonuçları altında yükleyiciyi bulun ve çift tıklatın. Yükleyici açıldığında, **Değiştir**' i seçin ve sonra **iş yükleri** sekmesine tıklayın. **Diğer araç kümelerine** Ilerleyin ve C++ iş yüküyle **Linux geliştirmeyi** seçin.
 
    ![Linux'ta Geliştirme için Visual C++ iş yükü](media/linuxworkload.png)
 
@@ -56,10 +56,10 @@ Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Li
 
 Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
 
-- **Derleyici** -Visual Studio 2019, GCC ve [Clang](/cpp/build/clang-support-cmake?view=vs-2019)için tam desteğe sahiptir.
+- **Derleyici** -Visual Studio 2019, GCC ve [Clang](../build/clang-support-cmake.md)için tam desteğe sahiptir.
 - **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcının ön sonunu kullanır.
 - **rsync** ve **ZIP** -rsync ve zip dahil, Visual Studio 'nun IntelliSense tarafından kullanılmak üzere Linux sisteminizden Windows dosya sistemine üst bilgi dosyalarını ayıklamasına olanak tanır.
-- **yapabilir**
+- **make**
 - **OpenSSH-Server** (yalnızca uzak Linux sistemleri)-Visual Studio, GÜVENLI bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
 - **CMake** (yalnızca CMake projeleri)- [Linux için Microsoft 'un statik bağlantılı CMake İkililerini](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
 - **dokja-Build** (yalnızca CMake projeleri)- [Dokja](https://ninja-build.org/) , Visual Studio 2019 sürüm 16,6 veya sonraki sürümlerinde Linux ve WSL yapılandırmalarına yönelik varsayılan oluşturucu olur.
@@ -75,7 +75,7 @@ Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıd
 - **GCC** -Visual Studio 2017, gcc için tam desteğe sahiptir.
 - **gdb** -Visual Studio, Linux sisteminde otomatik olarak gdb 'yi başlatır ve Linux üzerinde tam uygunlukta hata ayıklama deneyimi sağlamak Için Visual Studio hata ayıklayıcının ön sonunu kullanır.
 - **rsync** ve **ZIP** -rsync ve zip dahil, Visual Studio 'Nun IntelliSense için kullanılacak Windows dosya sistemine Linux sisteminizden başlık dosyalarını ayıklamasına olanak tanır.
-- **yapabilir**
+- **make**
 - **OpenSSH-Server** -Visual Studio, GÜVENLI bir SSH bağlantısı üzerinden uzak Linux sistemlerine bağlanır.
 - **CMake** (yalnızca CMake projeleri)- [Linux için Microsoft 'un statik bağlantılı CMake İkililerini](https://github.com/microsoft/CMake/releases)yükleyebilirsiniz.
 
@@ -157,7 +157,7 @@ Fedora çalıştıran hedef makine **DNF** paket yükleyicisini kullanır. **Ope
 
 Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.
 
-- [Yeni bir Linux projesi oluştur](create-a-new-linux-project.md)
+- [Yeni Linux projesi oluşturma](create-a-new-linux-project.md)
 - [Linux CMake projesi yapılandırma](cmake-linux-project.md)
 
 ::: moniker-end

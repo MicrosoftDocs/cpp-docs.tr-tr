@@ -1,35 +1,34 @@
 ---
-title: MSVC deneysel önişlemciye genel bakış
-description: MSVC önişlemcisi C/C++ standartlarına uygunluk için güncellenmektedir.
-ms.date: 02/09/2020
+title: MSVC yeni Önişlemci genel bakış
+description: MSVC Önişlemci, C/C++ standartları ile uyumluluk açısından güncelleştiriliyor.
+ms.date: 09/10/2020
 helpviewer_keywords:
 - preprocessor, experimental
-ms.openlocfilehash: 00c34ef75270e505d3781cf7eedf4d8aba95ee6e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+- preprocessor, new
+ms.openlocfilehash: c95f923d8c38250958e26431b61a71a1e6a7fdda
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337477"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041373"
 ---
-# <a name="msvc-experimental-preprocessor-overview"></a>MSVC deneysel önişlemciye genel bakış
+# <a name="msvc-new-preprocessor-overview"></a>MSVC yeni Önişlemci genel bakış
 
 ::: moniker range="vs-2015"
 
-Visual Studio 2015, Standart C++'a uymayan geleneksel önişlemciyi kullanır. Visual Studio 2017 ve Visual Studio 2019'da [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) derleyici anahtarı kullanılarak deneysel bir önişlemci mevcuttur. Visual Studio 2017 ve Visual Studio 2019'da yeni ön işlemcikullanımı hakkında daha fazla bilgi edinilebilir. Visual Studio'nun tercih ettiğiniz sürümüiçin belgeleri görmek için **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+Visual Studio 2015, standart C++ veya C99 uyumlu olmayan geleneksel Önişlemci 'yi kullanır. Visual Studio 2019 sürüm 16,5 ' den başlayarak, C++ 20 Standard için yeni Önişlemci desteği Özellik tamamlanmıştır. Bu değişiklikler [/Zc: Önişlemci](../build/reference/zc-preprocessor.md) derleyici anahtarı kullanılarak kullanılabilir. Yeni Önişlemci 'nin deneysel sürümü, Visual Studio 2017 sürüm 15,8 ve sonrasında [/deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici anahtarı kullanılarak kullanılabilir. Visual Studio 2017 ve Visual Studio 2019 ' de yeni Önişlemci kullanımı hakkında daha fazla bilgi mevcuttur. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
 
-Standartlara uygunluğu iyileştirmek, uzun süredir devam eden hataları düzeltmek ve resmi olarak tanımlanmamış bazı davranışları değiştirmek için Microsoft C++ ön işlemcisini güncelliyoruz. Makro tanımlarında hatalar konusunda uyarmak için yeni tanılamalar da ekledik.
+Standart uyumluluğu artırmak, uzunları onarmak ve resmi olarak tanımsız bazı davranışları değiştirmek için Microsoft C++ Önişlemci 'yi güncelleştiriyoruz. Ayrıca makro tanımlarındaki hatalarda uyarı almak için yeni Tanılamalar ekledik.
 
-Bu değişiklikler Visual Studio 2017 veya Visual Studio 2019'daki [/experimental:preprocessor](../build/reference/experimental-preprocessor.md) derleyici anahtarı kullanılarak kullanılabilir. Varsayılan önişlemci davranışı önceki sürümlerde olduğu gibi kalır.
-
-Visual Studio 2019 sürüm 16.5'ten başlayarak, C++20 standardı için deneysel önişlemci desteği özellik tamlamasıdır.
+Visual Studio 2019 sürüm 16,5 ' den başlayarak, C++ 20 standardı için Önişlemci desteği Özellik tamamlanmıştır. Bu değişiklikler [/Zc: Önişlemci](../build/reference/zc-preprocessor.md) derleyici anahtarı kullanılarak kullanılabilir. Yeni Önişlemci 'nin deneysel sürümü, Visual Studio 2017 sürüm 15,8 ' den başlayarak daha önceki sürümlerde kullanılabilir. [/Deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici anahtarını kullanarak etkinleştirebilirsiniz. Varsayılan ön işlemci davranışı önceki sürümlerde olduğu gibi kalır.
 
 ## <a name="new-predefined-macro"></a>Yeni önceden tanımlanmış makro
 
-Derleme zamanında hangi ön işlemcinin kullanıldığını algılayabilirsiniz. Geleneksel önişlemcinin kullanımda olup olmadığını söylemek için önceden tanımlanmış [ \_msvc\_TRADITIONAL](predefined-macros.md) makrounun değerini kontrol edin. Bu makro, önişlemcinin çağrıldığı bağımsız olarak, onu destekleyen derleyicinin sürümleri tarafından koşulsuz olarak ayarlanır. Değeri geleneksel önişlemci için 1'dir. Uygun önişlemci için 0.
+Hangi Önişlemci 'nin derleme zamanında kullanımda olduğunu tespit edebilirsiniz. [`_MSVC_TRADITIONAL`](predefined-macros.md)Geleneksel Önişlemci 'nin kullanımda olup olmadığını söylemek için önceden tanımlanmış makronun değerini denetleyin. Bu makro, kendisini destekleyen derleyicinin, Önişlemci 'nin çağrıldığı bağımsız sürümleriyle koşulsuz olarak ayarlanır. Geleneksel Önişlemci için değeri 1 ' dir. Bu, uyumlu Önişlemci için 0 ' dır.
 
 ```cpp
 #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL
@@ -39,13 +38,13 @@ Derleme zamanında hangi ön işlemcinin kullanıldığını algılayabilirsiniz
 #endif
 ```
 
-## <a name="behavior-changes-in-the-experimental-preprocessor"></a>Deneysel önişlemcideki davranış değişiklikleri
+## <a name="behavior-changes-in-the-new-preprocessor"></a>Yeni Önişlemci 'de davranış değişiklikleri
 
-Deneysel önişlemci üzerinde yapılan ilk çalışma, tüm makro genişletmelerinin standarda uygun hale getirilmesine odaklanmıştır. MsVC derleyicisini, şu anda geleneksel davranışlar tarafından engellenen kitaplıklarla kullanmanıza olanak tanır. Güncellenmiş önişlemciyi gerçek dünya projelerinde test ettik. Bulduğumuz daha yaygın kırılma değişikliklerinden bazıları şunlardır:
+Yeni Önişlemci üzerindeki ilk iş, tüm makro genişleimleri standart ile uyumlu hale getirilmesi üzerine odaklanılmıştır. Bu, MSVC derleyicisini geleneksel davranışlar tarafından şu anda engellenen kitaplıklarla kullanmanıza olanak sağlar. Güncelleştirilmiş Önişlemci 'yi gerçek dünyada projeler üzerinde test ettik. Bulduğumuz daha yaygın önemli değişikliklerden bazıları aşağıda verilmiştir:
 
-### <a name="macro-comments"></a>Makro yorumları
+### <a name="macro-comments"></a>Makro açıklamaları
 
-Geleneksel önişlemci, önişlemci belirteçleri yerine karakter arabelleklerini temel adatır. Uygun önişlemci altında çalışmayan aşağıdaki önişlemci yorumu hilesi gibi olağandışı davranışlara izin verir:
+Geleneksel Önişlemci, Önişlemci belirteçleri yerine karakter arabelleklerine dayalıdır. Aşağıdaki önişlemci yorumu eli gibi olağan dışı davranışlara izin verir ve bu, uyumlu Önişlemci altında çalışmaz:
 
 ```cpp
 #if DISAPPEAR
@@ -58,7 +57,7 @@ Geleneksel önişlemci, önişlemci belirteçleri yerine karakter arabelleklerin
 DISAPPEARING_TYPE myVal;
 ```
 
-Standartlara uygun düzeltme, uygun `int myVal` `#ifdef/#endif` direktifler içinde beyan etmektir:
+Standartlarla uyumlu düzeltmeler, `int myVal` uygun yönergelerin içinde bildirilmelidir `#ifdef/#endif` :
 
 ```cpp
 #define MYVAL 1
@@ -68,9 +67,9 @@ int myVal;
 #endif
 ```
 
-### <a name="lval"></a>L#val
+### <a name="lval"></a>L # Val
 
-Geleneksel önişlemci, [stringizing işleci (#) işlecinin](stringizing-operator-hash.md) sonucuna bir dize önekini yanlış birleştirir:
+Geleneksel Önişlemci, dize önekini yanlış bir şekilde dize öneki ile birleştirir [işleç (#)](stringizing-operator-hash.md) işlecinin sonucu:
 
 ```cpp
  #define DEBUG_INFO(val) L"debug prefix:" L#val
@@ -80,7 +79,7 @@ Geleneksel önişlemci, [stringizing işleci (#) işlecinin](stringizing-operato
 const wchar_t *info = DEBUG_INFO(hello world);
 ```
 
-Bu durumda, `L` önek gereksizdir, çünkü bitişik dize literalleri makro genişletmeden sonra yine de birleştirilir. Geriye uyumlu düzeltme tanımı değiştirmektir:
+Bu durumda, `L` bitişik dize değişmez değerleri yine de makro genişletmesinden sonra birleştirildiğinden, ön ek gereksizdir. Geriye dönük olarak uyumlu düzeltmeler, tanımı değiştirmemize sahiptir:
 
 ```cpp
 #define DEBUG_INFO(val) L"debug prefix:" #val
@@ -88,37 +87,37 @@ Bu durumda, `L` önek gereksizdir, çünkü bitişik dize literalleri makro geni
 //                                       no prefix
 ```
 
-Aynı sorun, bağımsız değişkeni geniş bir dize edebi olarak "dizeleyen" kolaylık makrolarında da bulunur:
+Aynı sorun, bağımsız değişkeni geniş bir dize değişmez değeri olarak "stringize" olan kolay makrolar içinde de bulunur:
 
 ```cpp
  // The traditional preprocessor creates a single wide string literal token
 #define STRING(str) L#str
 ```
 
-Sorunu çeşitli şekillerde çözebilirsiniz:
+Sorunu çeşitli yollarla giderebilirsiniz:
 
-- Dize concatenation `L""` `#str` ve önek eklemek için kullanın. Bitişik dize literals makro genişletme sonra birleştirilir:
+- `L""`Ön ek eklemek için ve ' nin dize birleştirmesini kullanın `#str` . Bitişik dize değişmez değerleri, makro genişletmesinden sonra birleştirilir:
 
    ```cpp
    #define STRING1(str) L""#str
    ```
 
-- Ek makro genişletme `#str` ile dize edildikten sonra önek ekleme
+- Daha sonra `#str` ek makro genişletme ile dize oluşturulduktan sonra öneki ekleyin
 
    ```cpp
    #define WIDE(str) L##str
    #define STRING2(str) WIDE(#str)
    ```
 
-- Belirteçleri birleştirmek `##` için birleştirme işleci kullanın. Tüm derleyiciler `##` `#` bu durumda daha önce `#` `##` işleci değerlendirmek gibi görünse de, için ve belirtilmemiş işlemler sırası.
+- `##`Belirteçleri birleştirmek için birleştirme işlecini kullanın. Ve için işlem sırası `##` `#` belirtilmemiş, ancak tüm derleyiciler `#` Bu durumda önceki işleci değerlendirse gibi görünüyor `##` .
 
    ```cpp
    #define STRING3(str) L## #str
    ```
 
-### <a name="warning-on-invalid-"></a>Geçersiz uyarı\#\#
+### <a name="warning-on-invalid-"></a>Uyarı geçersiz \#\#
 
-[Belirteç yapıştırma işleci (##)](token-pasting-operator-hash-hash.md) tek bir geçerli ön işleme belirteci yle sonuçlanmadığında, davranış tanımsız dır. Geleneksel önişlemci sessizce belirteçleri birleştirmek için başarısız olur. Yeni önişlemci, diğer derleyicilerin çoğu yla eşleşir ve tanılama yayır.
+[Belirteç yapıştırma işleci (# #)](token-pasting-operator-hash-hash.md) , tek bir geçerli ön işleme belirteci ile sonuçlanmazsa, davranış tanımsızdır. Geleneksel Önişlemci sessizce bu belirteçleri birleştiremez. Yeni Önişlemci, diğer derleyicilerin büyük bir davranışıyla eşleşir ve bir tanılama yayar.
 
 ```cpp
 // The ## is unnecessary and does not result in a single preprocessing token.
@@ -127,9 +126,9 @@ Sorunu çeşitli şekillerde çözebilirsiniz:
 ADD_STD(string) s;
 ```
 
-### <a name="comma-elision-in-variadic-macros"></a>Variadik makrolarda virgül elision
+### <a name="comma-elision-in-variadic-macros"></a>Değişken bağımsız değişken makrolarda virgül
 
-Geleneksel MSVC önişlemcisi boş `__VA_ARGS__` değiştirmelerden önce her zaman virgülleri kaldırır. Deneysel önişlemci diğer popüler çapraz platform derleyicilerinin davranışını daha yakından izler. Virgül kaldırılabilir için, variadic bağımsız değişken (sadece boş değil) eksik olması `##` gerekir ve bir işleç ile işaretlenmiş olmalıdır. Aşağıdaki örneği inceleyin:
+Geleneksel MSVC Önişlemci her zaman boş değiştirmeler öncesinde virgülleri kaldırır `__VA_ARGS__` . Yeni Önişlemci, diğer popüler platformlar arası derleyicilerin davranışını daha yakından izler. Virgülün kaldırılması için, değişen sayıda bağımsız değişken eksik olmalıdır (yalnızca boş olmamalıdır) ve bir `##` işleçle işaretlenmelidir. Aşağıdaki örneği inceleyin:
 
 ```cpp
 void func(int, int = 2, int = 3);
@@ -149,7 +148,7 @@ int main()
 }
 ```
 
-Aşağıdaki örnekte, `FUNC2(1)` çağrıda variadik bağımsız değişken çağrılan makroda eksiktir. Variadic `FUNC2(1, )` bağımsız değişkene yapılan çağrıda boş, ancak eksik değil (bağımsız değişken listesindeki virgüle dikkat edin).
+Aşağıdaki örnekte, `FUNC2(1)` çağrılan makroda, değişen sayıda bağımsız değişken çağrısında yok. `FUNC2(1, )`Değişen sayıda bağımsız değişken çağrısında boş, ancak yok (bağımsız değişken listesinde virgül olduğuna dikkat edin).
 
 ```cpp
 #define FUNC2(a, ...) func(a , ## __VA_ARGS__)
@@ -163,11 +162,11 @@ int main()
 }
 ```
 
-Yaklaşan C++20 standardında, bu sorun eklenerek `__VA_OPT__`ele alınmıştır. Visual Studio 2019 sürüm 16.5'ten başlayarak deneysel önişlemci desteği `__VA_OPT__` mevcuttur.
+Yakında düzenlenecek C++ 20 standardında, bu sorun eklenerek giderilmiştir `__VA_OPT__` . İçin yeni Önişlemci desteği  `__VA_OPT__` Visual Studio 2019 sürüm 16,5 ' den başlayarak kullanılabilir.
 
-### <a name="c20-variadic-macro-extension"></a>C++20 variadik makro uzantısı
+### <a name="c20-variadic-macro-extension"></a>C++ 20 variadıc Macro uzantısı
 
-Deney önişlemcisi C++20 variadik makro bağımsız değişken iyetini destekler:
+Yeni Önişlemci C++ 20 değişen ADIC Macro bağımsız değişkenini destekler:
 
 ```cpp
 #define FUNC(a, ...) __VA_ARGS__ + a
@@ -178,11 +177,11 @@ int main()
   }
 ```
 
-Bu kod C++20 standardından önce uygun değildir. MSVC'de, deney öncesi işlemci bu C++20 davranışını daha**`/std:c++14`** **`/std:c++17`** düşük dil standart modlarına (, ) genişletir. Bu uzantı, diğer büyük çapraz platform C++ derleyicilerinin davranışıyla eşleşir.
+Bu kod, C++ 20 standardına göre uyumlu değildir. MSVC ' de, yeni Önişlemci bu C++ 20 davranışını daha düşük dil standart modlarına ( **`/std:c++14`** ,) göre genişletir **`/std:c++17`** . Bu uzantı, diğer ana platformlar arası C++ derleyicilerinin davranışıyla eşleşir.
 
-### <a name="macro-arguments-are-unpacked"></a>Makro bağımsız değişkenleri "ambalajsız"
+### <a name="macro-arguments-are-unpacked"></a>Makro bağımsız değişkenleri "paketten çıkarılan"
 
-Geleneksel önişlemcide, bir makro bağımsız değişkenlerinden birini başka bir bağımlı makroya ilediyorsa, bağımsız değişken eklendiğinde "açılmaz". Genellikle bu optimizasyon fark edilmeden gider, ancak olağandışı davranışa yol açabilir:
+Geleneksel Önişlemci 'de, bir makro bağımsız değişkenlerinden birini başka bir bağımlı makroya ilettiğinde, bu, eklendiği zaman değişkeni "paketten çıkarılan" almaz. Genellikle bu iyileştirme fark edilmemiş olur, ancak olağan dışı davranışa yol açabilir:
 
 ```cpp
 // Create a string out of the first argument, and the rest of the arguments.
@@ -197,11 +196,11 @@ const char* c[2] = { A(1, 2) };
 // const char c[2] = { "1, 2", };
 ```
 
-Genişletirken, `A()`geleneksel önişlemci, TWO_STRINGS ilk bağımsız `__VA_ARGS__` değişkenine paketlenmiş tüm bağımsız değişkenleri ileterek `TWO_STRINGS` boş değişkeni bırakır. Bu da sonucun `#first` sadece "1" yerine "1, 2" olması neden olur. Eğer yakından takip ediyorsanız, o zaman geleneksel önişlemci genişleme `#__VA_ARGS__` sonucu ne oldu merak ediyor olabilirsiniz: variadik parametre boş ise `""`boş bir dize literal neden olmalıdır. Ayrı bir sorun, boş dize gerçek belirteci oluşturulmasını engelledi.
+Genişletildiğinde `A()` , geleneksel Önişlemci ' de paketlenmiş tüm bağımsız değişkenleri `__VA_ARGS__` TWO_STRINGS ilk bağımsız değişkenine iletir. Bu, değişen sayıda bağımsız değişken boş olarak bırakır `TWO_STRINGS` . Bu, sonucunun `#first` yalnızca "1" yerine "1, 2" olmasına neden olur. Daha yakından takip ediyorsanız, geleneksel ön işlemci genişletmesinin sonucuna ne olduğunu merak ediyor olabilirsiniz `#__VA_ARGS__` : değişen bağımsız değişken parametresi boşsa boş bir dize sabit değeri ile sonuçlanır `""` . Ayrı bir sorun, boş dize sabit değerinin oluşturulmasını bir şekilde tutmaktadır.
 
 ### <a name="rescanning-replacement-list-for-macros"></a>Makrolar için değiştirme listesini yeniden tarama
 
-Makro değiştirildikten sonra, ortaya çıkan belirteçler değiştirilecek ek makro tanımlayıcıları için yeniden taranmaktadır. Rescan yapmak için geleneksel önişlemci tarafından kullanılan algoritma, gerçek koda dayalı bu örnekte gösterildiği gibi, uyumlu değildir:
+Bir makro değiştirildikten sonra, değiştirilecek ek makro tanımlayıcıları için ortaya çıkan belirteçler yeniden taranıp. Bu örnekte gösterildiği gibi, yeniden taramayı gerçekleştirmek için geleneksel ön işlemci tarafından kullanılan algoritma, gerçek koda bağlı olarak uygun değildir:
 
 ```cpp
 #define CAT(a,b) a ## b
@@ -220,16 +219,18 @@ DO_THING(1, "World");
 // IMPL1 ( "Hello","World");
 ```
 
-Bu örnek biraz yapışık gibi görünse de, bunu gerçek dünya kodunda gördük. Neler olduğunu görmek için, aşağıdakilerden başlayarak genişlemeyi `DO_THING`bozabiliriz:
+Bu örnekte bir bit contrived görünebilir, ancak bunu gerçek dünyada kodda gördük.
 
-1. `DO_THING(1, "World")`genişletir`CAT(IMPL, 1) ECHO(("Hello", "World"))`
-1. `CAT(IMPL, 1)`genişletir `IMPL ## 1`, hangi genişletir`IMPL1`
-1. Şimdi belirteçleri bu durumda:`IMPL1 ECHO(("Hello", "World"))`
-1. Önişlemci işlev benzeri makro tanımlayıcısını `IMPL1`bulur. Bir tarafından takip edilmediä `(`i için, iþlev gibi makro çağırması olarak kabul edilmez.
-1. Önişlemci aşağıdaki belirteçlere geçer. Bu işlev gibi makro `ECHO` çağrılabilir `ECHO(("Hello", "World"))`bulur: , hangi genişletir`("Hello", "World")`
-1. `IMPL1`genişleme için tekrar kabul asla, bu nedenle genişlemelerin tam sonucu:`IMPL1("Hello", "World");`
+Neler olduğunu görmek için genişletmeyi şu şekilde kesebilirsiniz `DO_THING` :
 
-Makroyu hem deneysel önişlemci hem de geleneksel önişlemci altında aynı şekilde olacak şekilde değiştirmek için başka bir yönlendirme katmanı ekleyin:
+1. `DO_THING(1, "World")` Şunu genişletir `CAT(IMPL, 1) ECHO(("Hello", "World"))`
+1. `CAT(IMPL, 1)`öğesini genişleterek `IMPL ## 1``IMPL1`
+1. Artık belirteçler bu durumda: `IMPL1 ECHO(("Hello", "World"))`
+1. Önişlemci, işlev benzeri makro tanımlayıcısını bulur `IMPL1` . Bir tarafından izlenmediğinden `(` , bir işlev benzeri makro çağrısı kabul edilmez.
+1. Ön işlemci aşağıdaki belirteçlere gider. İşlev benzeri makroyu bulur `ECHO` : `ECHO(("Hello", "World"))` , öğesine genişleyen `("Hello", "World")`
+1. `IMPL1` genişletmesi için hiçbir daha kabul edilmez, bu nedenle genişletmeleri 'in tam sonucu şu şekilde olur: `IMPL1("Hello", "World");`
+
+Makroyu hem yeni Önişlemci hem de geleneksel Önişlemci altında aynı şekilde davranacak şekilde değiştirmek için, başka bir yöneltme katmanı ekleyin:
 
 ```cpp
 #define CAT(a,b) a##b
@@ -245,12 +246,12 @@ DO_THING_FIXED(1, "World");
 // do_thing_one( "Hello", "World");
 ```
 
-## <a name="incomplete-features"></a>Eksik özellikler
+## <a name="incomplete-features-before-165"></a>16,5 öncesi eksik Özellikler
 
-Visual Studio 2019 sürüm 16.5'ten başlayarak, deneysel ön işlemci C++20 için özellik tamlamasıdır. Visual Studio'nun önceki sürümlerinde, bazı önişlemci yönergeleri mantığı hala geleneksel davranışa geri dönse de, deneysel önişlemci çoğunlukla tamamlanmıştır. Visual Studio sürümlerindeki eksik özelliklerin kısmi bir listesi 16.5'tir:
+Visual Studio 2019 sürüm 16,5 ' den başlayarak yeni Önişlemci, C++ 20 için özellik tamamlanmıştır. Visual Studio 'nun önceki sürümlerinde, bazı Önişlemci yönergesi mantığı yine de geleneksel davranışa geri düşerse, yeni Önişlemci genellikle tamamlanmıştır. Aşağıda 16,5 öncesi Visual Studio sürümlerindeki eksik özelliklerin kısmi bir listesi verilmiştir:
 
-- Destek için`_Pragma`
-- C++20 özellikleri
-- Engelleme hatasını öne çıkarma: Önişlemci sabit ifadelerindeki mantıksal işleçler sürüm 16.5'ten önce yeni önişlemcide tam olarak uygulanmaz. Bazı `#if` yönergelerde, yeni önişlemci geleneksel önişlemciye geri dönebilir. Bu etki yalnızca geleneksel önişlemciyle uyumsuz makrolar genişletildiğinde fark edilir. Boost önişlemci yuvalarını kurarken gerçekleşebilir.
+- İçin destek `_Pragma`
+- C++ 20 özellikleri
+- Hata engellemeyi arttırma: Önişlemci sabit ifadelerindeki mantıksal işleçler, 16,5 sürümünden önceki yeni Önişlemci içinde tam olarak uygulanmaz. Bazı `#if` yönergelerden yeni Önişlemci, geleneksel ön işlemci 'ye geri dönebilir. Bu efekt yalnızca geleneksel Önişlemci ile uyumsuz makrolar genişletilmiş olduğunda görülür. Boost Önişlemci yuvaları oluşturulurken bu durum oluşabilir.
 
 ::: moniker-end

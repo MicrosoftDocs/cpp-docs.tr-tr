@@ -1,6 +1,6 @@
 ---
-title: SYMBOL_NAME_DATA yapı
-description: C++ Build Insights SDK yapı referansı SYMBOL_NAME_DATA.
+title: SYMBOL_NAME_DATA yapısı
+description: C++ derleme öngörüleri SDK SYMBOL_NAME_DATA yapısı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 1217572f20a772fde629533d6ab170c14dc5b5e0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d234c6c225eff87a0eecd98fa5ff60bf92db97f5
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325346"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041919"
 ---
-# <a name="symbol_name_data-structure"></a>SYMBOL_NAME_DATA yapı
+# <a name="symbol_name_data-structure"></a>SYMBOL_NAME_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Yapı `SYMBOL_NAME_DATA` derleyici ön uç simgesini açıklar.
+`SYMBOL_NAME_DATA`Yapı bir derleyici ön uç sembolünü açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct SYMBOL_NAME_DATA_TAG
@@ -40,13 +40,13 @@ typedef struct SYMBOL_NAME_DATA_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
-| `Key` | Sembolün anahtarı. Bu değer, analiz edilen izleme içinde benzersizdir. |
-| `Name` | Sembolün adı. |
+| `Key` | Simgenin anahtarı. Bu değer, çözümlenmekte olan izleme içinde benzersizdir. |
+| `Name` | Simgenin adı. |
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki farklı derleyici ön uç geçişinden gelen semboller aynı ada ama farklı bir anahtara sahip olabilir. Bu durumda, iki tür aynı olup olmadığını belirlemek için sembol adlarını kullanın.
+İki farklı derleyici ön uç geçişlerinden gelen semboller aynı ada ancak farklı bir anahtara sahip olabilir. Bu durumda, iki türün aynı olup olmadığını anlamak için sembol adlarını kullanın.
 
 ::: moniker-end

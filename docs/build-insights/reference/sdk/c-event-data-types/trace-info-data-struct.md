@@ -1,6 +1,6 @@
 ---
 title: TRACE_INFO_DATA yapısı
-description: C++ Yapı Öngörüleri SDK yapı referansı TRACE_INFO_DATA.
+description: C++ derleme öngörüleri SDK TRACE_INFO_DATA yapısı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 70ae17a376f79cad7a669d81e482f551afd0ec62
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 38683ff2c5c5165b5fe2a1969ccf80fbfca3693f
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325274"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040463"
 ---
 # <a name="trace_info_data-structure"></a>TRACE_INFO_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Yapı, `TRACE_INFO_DATA` analiz edilen veya yeniden kaydedilen bir izlemeyi açıklar.
+`TRACE_INFO_DATA`Yapı, analiz edilen veya yeniden günlüğe kaydedilen bir izlemeyi açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct TRACE_INFO_DATA_TAG
@@ -42,15 +42,15 @@ typedef struct TRACE_INFO_DATA_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
-| `LogicalProcessorCount` | İzlemenin toplandığı makinedeki mantıksal işlemci sayısı. |
-| `TickFrequency` | Kenecinsinden ölçülen bir süreyi değerlendirirken kullanılacak saniye başına keneler sayısı. |
-| `StartTimestamp` | Bu alan, izlemenin başlatıldıkı sırada yakalanan bir kene değerine ayarlanır. |
-| `StopTimestamp` | Bu alan, izleme durdurulduğu sırada yakalanan bir kene değerine ayarlanır. |
+| `LogicalProcessorCount` | , İzlemenin toplandığı makinedeki mantıksal işlemcilerin sayısı. |
+| `TickFrequency` | Zaman işaretleri cinsinden ölçülen bir süre değerlendirilirken kullanılacak saniye başına düşen saat sayısı. |
+| `StartTimestamp` | Bu alan, izleme başlatıldığı sırada yakalanan bir değer değere ayarlanır. |
+| `StopTimestamp` | Bu alan, izleme durdurulduğu sırada yakalanan bir değer değere ayarlanır. |
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tüm `StartTimestamp` izleme `StopTimestamp` sırasında geçen kene sayısını elde etmek için çıkarma. Elde `TickFrequency` edilen değeri bir zaman birimine dönüştürmek için kullanın. Keneleri zaman birimlerine dönüştüren bir örnek [EVENT_DATA](event-data-struct.md)için bkz.
+`StartTimestamp` `StopTimestamp` Tüm izleme sırasında geçen onay işareti sayısını almak için öğesinden çıkarın. `TickFrequency`Elde edilen değeri bir zaman birimine dönüştürmek için kullanın. Ticks sayısını zaman birimlerine dönüştüren bir örnek için bkz. [EVENT_DATA](event-data-struct.md).
 
 ::: moniker-end

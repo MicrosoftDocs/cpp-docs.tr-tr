@@ -2,12 +2,12 @@
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: e0ea4de44f5215f47fe8c1a5e018bd91a82708ac
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f68766c2c38b74df6e57aaa52419baf5d1151a3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182817"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041464"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
@@ -27,7 +27,7 @@ C++ AMP, bir [concurrency:: Graphics](../../parallel/amp/reference/concurrency-g
 
 Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](https://go.microsoft.com/fwlink/p/?linkid=248500) bazı işlevlerini sağlar ve genellikle dokcası tanımlamak için kullanılır. Kısa bir vektör, aynı türde bir ile dört arasında değer tutan bir veri yapısıdır. Desteklenen türler,,,, ve ' dir **`double`** **`float`** **`int`** `norm` `uint` `unorm` . Tür adları aşağıdaki tabloda gösterilmiştir. Her tür için, adında alt çizgi olmayan karşılık gelen bir de vardır **`typedef`** . Alt çizgileri olan türler [concurrency:: Graphics ad uzayında](../../parallel/amp/reference/concurrency-graphics-namespace.md)bulunur. Alt çizgilere sahip olmayan türler, ve gibi benzer adlandırılmış temel türlerden açıkça ayrılmaları için [concurrency:: Graphics::d Irect3d ad alanında](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) yer alırlar **`__int8`** **`__int16`** .
 
-||Uzunluk 2|Uzunluk 3|Uzunluk 4|
+|Tür|Uzunluk 2|Uzunluk 3|Uzunluk 4|
 |-|--------------|--------------|--------------|
 |double|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
 |float|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|
@@ -402,7 +402,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 });
 ```
 
-## <a name="interoperability"></a>Birlikte çalışabilirlik
+## <a name="interoperability"></a>Birlikte Çalışabilirlik
 
 C++ AMP çalışma zamanı `texture<T,1>` Ile [ID3D11Texture1D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=248503)arasında birlikte çalışabilirliği destekler, `texture<T,2>` ile [ID3D11Texture2D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255317)arasında ve ile `texture<T,3>` [ID3D11Texture3D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255377)arasında. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir nesnesi alır `texture` ve bir arabirim döndürür `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirim ve bir nesnesi alır `accelerator_view` ve bir nesne döndürür `texture` .
 

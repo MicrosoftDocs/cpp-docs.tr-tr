@@ -1,5 +1,6 @@
 ---
 title: Span sınıfı (C++ Standart Kitaplığı) | Microsoft Docs
+description: Bitişik nesneler dizisi üzerinde hafif bir görünüm sağlayan standart Şablon kitaplığı (STL) Span sınıfı için API başvurusu.
 ms.date: 05/28/2020
 f1_keywords:
 - span/std::span
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - std::span [C++], rend
 - std::span [C++], size
 - std::span [C++], size_bytes
-ms.openlocfilehash: 4d5cf7f38d10814b3112a25a8da0e412f0d65093
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 297104820f5498e59397db9025aed1675984a060
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560458"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039970"
 ---
 # <a name="span-class-c-standard-library"></a>Span sınıfı (C++ Standart Kitaplığı)
 
@@ -133,7 +134,7 @@ Ya da aksine `array` `vector` , bir yayılımın içindeki öğeleri "sahip" olm
 
 **Ad alanı:** std
 
-**Derleyici seçeneği:** /std: c + + en son
+**Derleyici seçeneği:** [/std: c + + en son](../build/reference/std-specify-language-standard-version.md)
 
 ## <a name="spanback"></a><a name="back"></a> `span::back`
 
@@ -959,7 +960,7 @@ Bu aralıktan bir span oluşturun.
 
 Yayılma, içindeki nesneler üzerinde depolama alanı olmadığından, yayılma alanındaki öğeler için depolama alanı serbest vermez.
 
-|Oluşturucu  | Açıklama  |
+|Oluşturucu  | Description  |
 |---------|---------|
 |`span()` | Boş bir yayılma oluşturun. Yalnızca şablon parametresi veya olduğunda aşırı yükleme çözümlemesi sırasında göz önünde bulundurululur `Extent` `0` `dynamic_extent` .|
 |`span(It first, size_type count)` | `count`Yineleyiciden ilk öğeden bir span oluşturun `first` .  Yalnızca şablon parametresi olmadığında aşırı yükleme çözümlemesi sırasında kabul edilir `Extent` `dynamic_extent` . |

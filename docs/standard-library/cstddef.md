@@ -1,26 +1,27 @@
 ---
 title: '&lt;cstddef&gt;'
-ms.date: 11/04/2016
+description: C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların ad alanında bildirilmesini sağlayan <stddef. h> açıklanmaktadır `std` .
+ms.date: 9/4/2020
 f1_keywords:
 - <cstddef>
 helpviewer_keywords:
 - cstddef header
 ms.assetid: be8d1e39-5974-41ee-b41d-eafa6c82ffce
-ms.openlocfilehash: f1582a4af1c26e1ef85cf0dce8406a4046a8fe8b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 186de0e893c413a25d31d4f1431c280d749e9541
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222530"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040034"
 ---
 # <a name="ltcstddefgt"></a>&lt;cstddef&gt;
 
 C standart kitaplığı üst bilgisini içerir \<stddef.h> ve ad alanına ilişkili adlar ekler `std` . Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 > [!NOTE]
-> \<cstddef>tür **baytı** içerir ve türü içermez **`wchar_t`** .
+> \<cstddef> tür **baytı** içerir ve türü içermez **`wchar_t`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cstddef>

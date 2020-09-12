@@ -1,6 +1,7 @@
 ---
 title: map Sınıfı
-ms.date: 10/18/2018
+description: '`map`Her bir öğenin hem veri değerine hem de sıralama anahtarına sahip olduğu bir çift olan bir koleksiyondaki verilerin depolanması ve alınması için kullanılan C++ Standart Şablon kitaplığı (STL) sınıfı IÇIN API başvurusu.'
+ms.date: 9/10/2020
 f1_keywords:
 - map/std::map
 - map/std::map::allocator_type
@@ -24,6 +25,7 @@ f1_keywords:
 - map/std::map::cend
 - map/std::map::clear
 - map/std::map::count
+- map/std::map::contains
 - map/std::map::crbegin
 - map/std::map::crend
 - map/std::map::emplace
@@ -67,6 +69,7 @@ helpviewer_keywords:
 - std::map [C++], cend
 - std::map [C++], clear
 - std::map [C++], count
+- std::map [C++], contains
 - std::map [C++], crbegin
 - std::map [C++], crend
 - std::map [C++], emplace
@@ -88,18 +91,18 @@ helpviewer_keywords:
 - std::map [C++], upper_bound
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
-ms.openlocfilehash: eba66debca3d866dadaba41a54549757ee05b861
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7ebbccb688ffcd6f2354e5f3ec243cf56303c124
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846452"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040515"
 ---
 # <a name="map-class"></a>map Sınıfı
 
 Her bir öğenin hem veri değerine hem de sıralama anahtarına sahip olduğu bir çift olan bir koleksiyondaki verileri alma ve depolama için kullanılır. Anahtarın değeri benzersizdir ve verileri otomatik olarak sıralamak için kullanılır.
 
-Bir eşlemdeki bir öğenin değeri doğrudan değiştirilemez. Anahtar değeri sabittir ve değiştirilemez. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve yeni öğeler için yeni anahtar değerleri eklenmelidir.
+Bir eşlemdeki bir öğenin değeri doğrudan değiştirilemez. Anahtar değeri bir sabittir ve değiştirilemez. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve yeni öğeler için yeni anahtar değerleri eklenmelidir.
 
 ## <a name="syntax"></a>Söz dizimi
 
@@ -114,15 +117,15 @@ class map;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtar*\
-Eşlemde depolanacak anahtar veri türü.
+İçinde depolanacak anahtar veri türü `map` .
 
 *Türüyle*\
-Eşlemde depolanacak öğe veri türü.
+İçinde depolanacak öğe veri türü `map` .
 
 *Lerdir*\
-İki öğenin değerlerini eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
+İki öğe değerini, içindeki göreli sıralarını belirleyebilmek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür `map` . Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
 
-C++ 14 ' te, tür parametreleri olmayan std:: less<> koşulunu belirterek heterojen aramayı etkinleştirebilirsiniz. Daha fazla bilgi için bkz. [Ilişkilendirilebilir kapsayıcılarda heterojen arama](../standard-library/stl-containers.md#sequence_containers)
+C++ 14 ' te, tür parametreleri olmayan std:: less<> koşulunu belirterek heterojen aramayı etkinleştirebilirsiniz. Daha fazla bilgi için bkz. [Ilişkilendirilebilir kapsayıcılarda heterojen arama](../standard-library/stl-containers.md#sequence_containers) .
 
 *Öğe*\
 Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değerdir `allocator<pair<const Key, Type> >` .
@@ -145,16 +148,16 @@ C++ standart kitaplık eşleme sınıfı:
 
 Map sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, ancak [Insert](#insert) ve [map](#map) sınıf üyesi işlevleri, şablon parametresi olarak daha zayıf bir giriş yineleyicisini alan, işlevsellik gereksinimleri çift yönlü yineleyicilerin sınıfının garantiden daha az olan sürümlere sahiptir. Farklı yineleyici kavramları, işlevselliklerindeki iyileştirmelerle ilgilidir. Her yineleyici kavramı kendi gereksinimler kümesine sahiptir ve onunla çalışan algoritmalar bu gereksinimler ile sınırlı olmalıdır. Bir giriş yineleyicinin bazı nesnelere başvurusu kaldırılabilir ve dizideki sonraki yineleyiciye artırılabilir.
 
-Kapsayıcı türünün seçimini uygulamanın gerektirdiği arama ve ekleme türüne dayalı yapmanız önerilir. İlişkilendirilebilir kapsayıcılar, arama, ekleme ve kaldırma işlemleri için en iyi duruma getirilir. Bu işlemleri açıkça destekleyen üye işlevleri, işlevlerini kapsayıcıdaki öğelerin sayısının logaritmasına ortalama orantılı en kötü sürede gerçekleştirir. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
+Kapsayıcı türünün seçimini uygulamanın gerektirdiği arama ve ekleme türüne dayalı yapmanız önerilir. İlişkilendirilebilir kapsayıcılar, arama, ekleme ve kaldırma işlemleri için en iyi duruma getirilir. Bu işlemleri açıkça destekleyen üye işlevleri, kapsayıcıdaki öğelerin sayısının logaritmasına orantılı bir en kötü durum süresi içinde yapılır. Öğelerin eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; öğelerin kaldırılması yalnızca özellikle kaldırılan öğeleri gösteren yineleyicileri geçersiz kılar.
 
-Eşlemi, değerleri anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında seçimin ilişkili kapsayıcısı yapmanız önerilir. Bu tür bir yapı modeli, tanımlar sağlayan ilişkilendirmiş dize değerlerine sahip benzersiz oluşan anahtar sözcüklerin sıralı bir listesidir. Bir sözcüğün birden fazla doğru tanımı varsa, anahtar benzersiz olmadığından, çoklu eşlem kapsayıcı seçimi olacaktır. Yalnızca sözcüklerin listesi depolanmaktaysa, uygun kapsayıcı bir küme olacaktır. Sözcüklerin birden çok defa geçmelerine izin verilirse, bir çoklu küme uygun olacaktır.
+Eşlemi, değerleri anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında seçimin ilişkili kapsayıcısı yapmanız önerilir. Bu tür bir yapı modeli, tanımlar sağlayan ilişkilendirmiş dize değerlerine sahip benzersiz oluşan anahtar sözcüklerin sıralı bir listesidir. Bir sözcüğün birden fazla doğru tanımı varsa, anahtar benzersiz değilse, multimap tercih edilen kapsayıcı olur. Yalnızca sözcüklerin listesi depolanmaktaysa, uygun kapsayıcı bir küme olacaktır. Sözcüklerin birden çok defa geçmelerine izin verilirse, bir çoklu küme uygun olacaktır.
 
-Map, [key_compare](#key_compare)türünde bir saklı işlev nesnesi çağırarak denetlediği öğeleri sıralar. Bu saklı nesne, [key_comp](#key_comp) metodu çağırarak erişilen bir karşılaştırma işlevidir. Genelde, verilen herhangi iki öğe, birinin diğerinden daha küçük olup olmadığının veya denk olup olmadıklarının belirlenmesi için karşılaştırılır. Tüm öğeler karşılaştırıldığında, denk olmayan öğelerin sıralı bir dizisi oluşturulur.
+Map, [key_compare](#key_compare)türünde bir saklı işlev nesnesi çağırarak denetlediği öğeleri sıralar. Bu saklı nesne, [key_comp](#key_comp) metodu çağırarak erişilen bir karşılaştırma işlevidir. Genel olarak, belirtilen iki öğe, birinin diğer değerden küçük olup olmadığını veya eşdeğer olup olmadığını belirlemede karşılaştırılır. Tüm öğeler karşılaştırıldığında, denk olmayan öğelerin sıralı bir dizisi oluşturulur.
 
 > [!NOTE]
 > Karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşul f (x, y) iki bağımsız değişken nesnesi olan x ve y ve dönüş değeri olan bir işlev nesnesidir **`true`** **`false`** . İkili koşul geri dönüşsüz, antisimetrik ve geçişli ise ve denklik geçişli ise, küme üzerinde yer alan bir sıralama katı zayıf bir sıradır. burada iki nesne x ve y, her ikisi de f (x, y) ve f (y, x) olduğunda eşdeğer olarak tanımlanmıştır **`false`** . Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 >
-> C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belirterek heterojen aramayı etkinleştirebilirsiniz `std::greater<>` . Daha fazla bilgi için bkz. [Ilişkilendirilebilir kapsayıcılarda heterojen arama](../standard-library/stl-containers.md#sequence_containers)
+> C++ 14 ' te, `std::less<>` tür parametreleri olmayan veya koşulunu belirterek heterojen aramayı etkinleştirebilirsiniz `std::greater<>` . Daha fazla bilgi için bkz. [Ilişkilendirilebilir kapsayıcılarda heterojen arama](../standard-library/stl-containers.md#sequence_containers) .
 
 ## <a name="members"></a>Üyeler
 
@@ -169,13 +172,13 @@ Map, [key_compare](#key_compare)türünde bir saklı işlev nesnesi çağırarak
 |Ad|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|`allocator`Map nesnesinin sınıfı için bir typedef.|
-|[const_iterator](#const_iterator)|Eşlemedeki bir öğeyi okuyabilen çift yönlü Yineleyici için bir typedef **`const`** .|
+|[const_iterator](#const_iterator)|İçindeki bir öğeyi okuyabilen çift yönlü Yineleyici için bir typedef **`const`** `map` .|
 |[const_pointer](#const_pointer)|Haritada bir öğe işaretçisi için bir typedef **`const`** .|
-|[const_reference](#const_reference)|**`const`** İşlemleri okumak ve gerçekleştirmek için bir haritada depolanan öğeye başvuru için bir typedef **`const`** .|
-|[const_reverse_iterator](#const_reverse_iterator)|Haritadaki herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .|
+|[const_reference](#const_reference)|**`const`** İşlem okumak ve gerçekleştirmek için bir haritada depolanan öğeye başvuru için bir typedef **`const`** .|
+|[const_reverse_iterator](#const_reverse_iterator)|İçindeki herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `map` .|
 |[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki eşlemin öğelerinin işaretli bir tamsayı typedef'i.|
 |[iden](#iterator)|Eşlem içindeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü yineleyiciler için typedef.|
-|[key_compare](#key_compare)|Eşlem içindeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran işlev nesnesi için bir typedef.|
+|[key_compare](#key_compare)|İki sıralama anahtarını karşılaştıran bir işlev nesnesi için bir typedef, içindeki iki öğenin göreli sırasını tespit edebilir `map` .|
 |[key_type](#key_type)|Eşlemin her öğesinde depolanan sıralama anahtarı için bir typedef.|
 |[mapped_type](#mapped_type)|Bir eşlemin her öğesinde depolanan veriler için bir typedef.|
 |[pointer](#pointer)|Haritada bir öğe işaretçisi için bir typedef **`const`** .|
@@ -186,34 +189,35 @@ Map, [key_compare](#key_compare)türünde bir saklı işlev nesnesi çağırarak
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Açıklama|
+|Üye işlevi|Description|
 |-|-|
-|[hızı](#at)|Belirtilen anahtar değere sahip bir öğe bulur.|
-|[başladı](#begin)|Eşlem içindeki ilk öğeyi gösteren bir yineleyici döndürür.|
-|[cbegin](#cbegin)|Eşlem içindeki ilk öğeyi gösteren sabit bir yineleyici döndürür.|
+|[hızı](#at)|Belirtilen anahtar değerine sahip bir öğe bulur.|
+|[başladı](#begin)|İçindeki ilk öğeyi gösteren bir yineleyici döndürür `map` .|
+|[cbegin](#cbegin)|İçindeki ilk öğeye işaret eden bir const yineleyici döndürür `map` .|
 |[cend](#cend)|Bir sabit past-the-end yineleyici döndürür.|
-|[lediğiniz](#clear)|Eşlemin tüm öğelerini siler.|
-|[count](#count)|Anahtarı bir parametre içinde belirtilen anahtarla eşleşen eşlem içindeki öğelerin sayısını döndürür.|
-|[crbegin](#crbegin)|Ters döndürülmüş bir eşlem içindeki ilk öğeyi gösteren sabit bir yineleyici döndürür.|
-|[crend](#crend)|Ters döndürülmüş bir eşlem içindeki son öğenin ardındaki konumu gösteren sabit bir yineleyici döndürür.|
-|[Emplace](#emplace)|Eşlem içine yerinde oluşturulmuş bir öğe ekler.|
-|[emplace_hint](#emplace_hint)|Eşlem içine, bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.|
-|[empty](#empty)|**`true`** Bir haritanın boş olup olmadığını döndürür.|
+|[lediğiniz](#clear)|Tüm öğelerini siler `map` .|
+|[contains](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını kontrol edin `map` .|
+|[biriktirme](#count)|Anahtarı bir parametre içinde belirtilen anahtarla eşleşen eşlem içindeki öğelerin sayısını döndürür.|
+|[crbegin](#crbegin)|Ters çevrilen ilk öğeyi gösteren bir const yineleyici döndürür `map` .|
+|[crend](#crend)|Ters çevrilen son öğeden sonraki konuma işaret eden bir const yineleyici döndürür `map` .|
+|[Emplace](#emplace)|İçinde oluşturulan bir öğesi ekler `map` .|
+|[emplace_hint](#emplace_hint)|İçine bir yerleştirme ipucuyla birlikte, içine oluşturulmuş bir öğesi ekler `map` .|
+|[empty](#empty)|**`true`** `map` Boşsa, döndürür.|
 |[erer](#end)|past-the-end yineleyici döndürür.|
 |[equal_range](#equal_range)|Yineleyicilerin bir çiftini döndürür. Çiftin ilk yineleyicisi, belirtilen anahtardan daha büyük olan bir anahtarla ilk öğesine işaret eder `map` . Çiftin ikinci yineleyicisi, `map` anahtarına eşit veya ondan daha büyük olan bir anahtarla ilk öğesine işaret eder.|
 |[silme](#erase)|Bir eşlemdeki bir öğe veya öğe aralığını belirtilen konumdan kaldırır.|
-|[find](#find)|Belirtilen anahtara eşit bir anahtara sahip bir eşlem içindeki bir öğenin konumunu gösteren bir yineleyici döndürür.|
-|[get_allocator](#get_allocator)|`allocator`Haritayı oluşturmak için kullanılan nesnenin bir kopyasını döndürür.|
-|[ekleyin](#insert)|Bir eşlemdeki bir öğeyi veya öğe aralığını belirtilen konumda ekler.|
-|[key_comp](#key_comp)|Bir eşlem içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını döndürür.|
-|[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip bir eşlem içindeki ilk öğeye döndürür.|
-|[max_size](#max_size)|Eşlem öğesinin maksimum uzunluğunu döndürür.|
-|[rbegin](#rbegin)|Ters döndürülmüş eşlem içindeki ilk öğeyi gösteren bir yineleyici döndürür.|
-|[rend](#rend)|Ters döndürülmüş bir eşlem içindeki son öğenin ardındaki konumu gösteren bir yineleyici döndürür.|
-|[boyutla](#size)|Eşlem içindeki öğelerin sayısını döndürür.|
+|[find](#find)|İçindeki, `map` belirtilen anahtara eşit bir anahtara sahip bir öğenin konumunu gösteren bir yineleyici döndürür.|
+|[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnesinin bir kopyasını döndürür `map` .|
+|[ekleyin](#insert)|Belirtilen konuma bir öğe veya öğe aralığı ekler `map` .|
+|[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını döndürür `map` .|
+|[lower_bound](#lower_bound)|Bir yineleyiciyi `map` belirtilen anahtardan daha büyük veya ona eşit bir anahtar değere sahip olan ilk öğesine döndürür.|
+|[max_size](#max_size)|Maksimum uzunluğunu döndürür `map` .|
+|[rbegin](#rbegin)|Ters çevrilen ilk öğeyi gösteren bir yineleyici döndürür `map` .|
+|[rend](#rend)|Ters çevrilen son öğeden sonraki konuma işaret eden bir yineleyici döndürür `map` .|
+|[boyutla](#size)|İçindeki öğelerin sayısını döndürür `map` .|
 |[Kur](#swap)|İki eşlemin öğelerini birbiriyle değiştirir.|
-|[upper_bound](#upper_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyükse bir anahtar değere sahip bir eşlem içindeki ilk öğeye döndürür.|
-|[value_comp](#value_comp)|Bir eşlem içindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|
+|[upper_bound](#upper_bound)|Bir yineleyiciyi, `map` belirtilen anahtardan daha büyük bir anahtar değere sahip olan içindeki ilk öğeye döndürür.|
+|[value_comp](#value_comp)|İçindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `map` .|
 
 ### <a name="operators"></a>İşleçler
 
@@ -285,7 +289,7 @@ int main()
 
 ## <a name="begin"></a><a name="begin"></a> başladı
 
-Eşlemedeki ilk öğeyi adresleyen bir yineleyici döndürür.
+İçindeki ilk öğeyi adresleyen bir yineleyici döndürür `map` .
 
 ```cpp
 const_iterator begin() const;
@@ -295,7 +299,7 @@ iterator begin();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Haritadaki ilk öğeyi ele alarak çift yönlü bir yineleyici veya boş bir eşlemeyi izleyen konum.
+İçindeki ilk öğeyi adresleyen çift yönlü bir yineleyici `map` veya bir boş eşlemeyi izleyen konumda.
 
 ### <a name="example"></a>Örnek
 
@@ -438,7 +442,7 @@ The size of the map after clearing is 0.
 
 ## <a name="const_iterator"></a><a name="const_iterator"></a> const_iterator
 
-Haritadaki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
+İçindeki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `map` .
 
 ```cpp
 typedef implementation-defined const_iterator;
@@ -476,7 +480,7 @@ Bir tür `const_pointer` , bir öğenin değerini değiştirmek için kullanıla
 
 ## <a name="const_reference"></a><a name="const_reference"></a> const_reference
 
-**`const`** İşlemleri okumak ve gerçekleştirmek için bir haritada depolanan öğeye başvuru sağlayan bir tür **`const`** .
+**`const`** İşlem okumak ve gerçekleştirmek için bir haritada depolanan öğeye başvuru sağlayan bir tür **`const`** .
 
 ```cpp
 typedef typename allocator_type::const_reference const_reference;
@@ -504,7 +508,7 @@ int main( )
    const int &Ref1 = ( m1.begin( ) -> first );
 
    // The following line would cause an error as the
-   // non-const_reference cannot be used to access the key
+   // non-const_reference can't be used to access the key
    // int &Ref1 = ( m1.begin( ) -> first );
 
    cout << "The key of first element in the map is "
@@ -526,7 +530,7 @@ The data value of first element in the map is 10.
 
 ## <a name="const_reverse_iterator"></a><a name="const_reverse_iterator"></a> const_reverse_iterator
 
-Haritadaki herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** .
+İçindeki herhangi bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `map` .
 
 ```cpp
 typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
@@ -614,6 +618,64 @@ int main()
 The number of elements in m1 with a sort key of 1 is: 1.
 The number of elements in m1 with a sort key of 2 is: 1.
 The number of elements in m1 with a sort key of 3 is: 0.
+```
+
+## <a name="contains"></a><a name="contains"></a> vardır
+
+İçinde belirtilen anahtara sahip bir öğe olup olmadığını denetler `map` .
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Ek*\
+Anahtarın türü.
+
+*anahtar*\
+Aranacak öğenin anahtar değeri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` öğe kapsayıcıda bulunursa; `false` Aksi takdirde.
+
+### <a name="remarks"></a>Açıklamalar
+
+`contains()` C++ 20 ' de yenidir. Bunu kullanmak için [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirtin.
+
+`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) .
+
+### <a name="example"></a>Örnek
+
+```cpp
+// Requires /std:c++latest
+#include <map>
+#include <string>
+#include <iostream>
+#include <functional>
+
+int main()
+{
+    std::map<int, bool> m = {{0, true},{1, false}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << m.contains(1) << '\n';
+    std::cout << m.contains(2) << '\n';
+
+    // call template function
+    std::map<std::string, int, std::less<>> m2 = {{"ten", 10}, {"twenty", 20}, {"thirty", 30}};
+    std::cout << m2.contains("ten");
+    
+    return 0;
+}
+```
+
+```Output
+true
+false
+true
 ```
 
 ## <a name="crbegin"></a><a name="crbegin"></a> crbegin
@@ -731,7 +793,7 @@ typedef allocator_type::difference_type difference_type;
 
 `difference_type`Kapsayıcının yineleyiciler aracılığıyla çıkartılacak veya artırılarak döndürülen türdür. `difference_type`Genellikle yineleyiciler arasındaki *[ilk, son)* aralıktaki öğelerin sayısını temsil etmek için kullanılır ve tarafından işaret edilen öğe `first` `last` `first` ve dahil olmak üzere öğe aralığı ile işaret eder `last` .
 
-`difference_type`Küme gibi ters çevrilebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyicilerin sınıfını içeren bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir olsa da, yineleyiciler arasında çıkarma yalnızca vektör gibi bir rastgele erişim kapsayıcısı tarafından sağlanan rastgele erişim yineleyiciler tarafından desteklenir.
+, `difference_type` Küme gibi tersine çevrilebilir kapsayıcılar tarafından desteklenen çift yönlü yineleyicilerin sınıfını içeren bir giriş yineleyicisinin gereksinimlerini karşılayan tüm yineleyiciler için kullanılabilir olsa da, yineleyiciler arasında çıkarma yalnızca vektör gibi bir rastgele erişim kapsayıcısı tarafından sağlanan rastgele erişim yineleyiciler tarafından desteklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -789,7 +851,7 @@ emplace(
 ### <a name="parameters"></a>Parametreler
 
 *args*\
-Değeri equivalently sıralı olan bir öğe içermiyorsa, haritaya eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+Değeri equivalently olarak sıralanmış bir öğe içermiyorsa, haritaya eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -801,7 +863,7 @@ Değeri equivalently sıralı olan bir öğe içermiyorsa, haritaya eklenecek bi
 
 Bu işlev tarafından hiçbir yineleyiciler veya başvuru geçersiz kılınmamıştır.
 
-Emplamak sırasında, bir özel durum oluşturulursa kapsayıcının durumu değiştirilmez.
+Emplaka sırasında, bir özel durum oluşturulursa, kapsayıcının durumu değiştirilmez.
 
 Bir öğe [value_type](#value_type) bir çifdir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
@@ -875,7 +937,7 @@ iterator emplace_hint(
 ### <a name="parameters"></a>Parametreler
 
 *args*\
-Zaten anahtar equivalently sıralı bir öğe içermiyorsa, eşleme zaten bu öğeyi veya daha genel olarak içermiyorsa, haritaya eklenecek bir öğe oluşturmak için iletilen bağımsız değişkenler.
+Zaten anahtarı equivalently sıralı bir öğe içermediği müddetçe haritaya eklemek için bir öğe oluşturmak için iletilen bağımsız değişkenler.
 
 *olmadığı*\
 Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)
@@ -890,7 +952,7 @@ Yeni eklenmekte olan öğe için bir yineleyici.
 
 Bu işlev tarafından hiçbir yineleyiciler veya başvuru geçersiz kılınmamıştır.
 
-Emplamak sırasında, bir özel durum oluşturulursa kapsayıcının durumu değiştirilmez.
+Emplaka sırasında, bir özel durum oluşturulursa, kapsayıcının durumu değiştirilmez.
 
 Bir öğe [value_type](#value_type) bir çifdir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
@@ -1217,11 +1279,11 @@ Aranmakta olan eşlemdeki bir öğenin sıralama anahtarıyla eşleştirilecek a
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen anahtara sahip bir öğenin konumuna başvuran veya anahtar için eşleşme yoksa eşlemedeki son öğeden sonraki konumda bulunan bir yineleyici `map::end()` .
+`map` `map::end()` Anahtar için hiçbir eşleşme bulunmazsa, belirtilen anahtara sahip bir öğenin konumunu veya () içindeki son öğeden geçen konumu ifade eden bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sıralama anahtarı, karşılaştırmasından daha az bir ilişkiye göre bir sıralamayı karşılayan bir ikili koşul altındaki bağımsız değişken anahtarına denk gelen bir öğe olan bir yineleyici döndürür.
+Üye işlevi, `map` sıralama anahtarı, karşılaştırıdan daha az bir ilişkiye göre bir sıralamayı ifade eden bir ikili koşul altındaki bağımsız değişken anahtarına eşdeğer olan bir yineleyici döndürür.
 
 Dönüş değeri `find` bir öğesine atanırsa `const_iterator` , Map nesnesi değiştirilemez. Dönüş değeri `find` bir öğesine atanırsa `iterator` , Map nesnesi değiştirilebilir
 
@@ -1398,7 +1460,7 @@ IList);
 ### <a name="parameters"></a>Parametreler
 
 *Acil*\
-Anahtarı equivalently olarak sıralanmış bir öğe içermiyorsa, haritaya eklenecek öğenin değeri.
+Anahtarı equivalently sıralı bir öğe içermiyorsa, haritaya eklenecek öğenin değeri.
 
 *Olmadığı*\
 Doğru ekleme noktasını aramaya başlamak için yer. (Bu nokta hemen bundan önce geliyorsa, ekleme, logaritmik bir süre yerine, sabit *zamanlı olarak gerçekleşebilir*.)
@@ -1576,7 +1638,7 @@ Saklı nesne, üye işlevini tanımlar
 
 `bool operator(const Key& left, const Key& right);`
 
-Bu, **`true`** `left` önceki ve sıralama düzeninde eşit değilse döndürür `right` .
+Bu **`true`** , ne olursa `left` gelir ve sıralama düzeninde eşit değilse döndürür `right` .
 
 ### <a name="example"></a>Örnek
 
@@ -1631,7 +1693,7 @@ kc2( 2,3 ) returns value of false, where kc2 is the function object of m2.
 
 ## <a name="key_compare"></a><a name="key_compare"></a> key_compare
 
-Haritadaki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
+İçindeki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlayan bir tür `map` .
 
 ```cpp
 typedef Traits key_compare;
@@ -1641,7 +1703,7 @@ typedef Traits key_compare;
 
 `key_compare` , şablon parametresi *nitelikleri*için bir eş anlamlı.
 
-*Nitelikler* hakkında daha fazla bilgi Için [Map Class](../standard-library/map-class.md) konusuna bakın.
+*Nitelikler*hakkında daha fazla bilgi Için [Map Class](../standard-library/map-class.md) konusuna bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1682,7 +1744,7 @@ Aranmakta olan eşlemdeki bir öğenin sıralama anahtarıyla Karşılaştırıl
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `iterator` veya `const_iterator` bağımsız değişken anahtarına eşit veya ondan daha büyük bir anahtarla bir öğenin konumunu ele alan veya anahtar için eşleşme bulunmazsa, eşlemenin içindeki son öğeden sonra gelen konumu ele alan bir öğe.
+Bir `iterator` veya `const_iterator` bağımsız değişken anahtarına eşit veya ondan daha büyük bir anahtara sahip olan veya `map` anahtar için hiçbir eşleşme bulunmazsa içindeki son öğeden sonra gelen konumu ele alan bir haritadaki bir öğenin konumunu ele alan veya.
 
 Dönüş değeri `lower_bound` bir öğesine atanırsa `const_iterator` , Map nesnesi değiştirilemez. Dönüş değeri `lower_bound` bir öğesine atanırsa `iterator` , Map nesnesi değiştirilebilir.
 
@@ -1793,7 +1855,7 @@ map(
 Varsayılan olan bu Map nesnesi için kullanılacak depolama ayırıcısı sınıfı `Allocator` .
 
 *İnin*\
-`const Traits`Haritadaki öğeleri sıralamak için kullanılan türün karşılaştırma işlevi, varsayılan olarak `hash_compare` .
+`const Traits`' Deki öğeleri sıralamak için kullanılan tür karşılaştırma işlevi, `map` Varsayılan olarak `hash_compare` .
 
 *Right*\
 Oluşturulan kümesinin bir kopya olması gereken harita.
@@ -1821,7 +1883,7 @@ Dördüncü Oluşturucu haritanın *sağ*bir kopyasını belirtir.
 
 Beşinci Oluşturucu *sağ*taşıyarak haritanın bir kopyasını belirtir.
 
-Altıncı, yedinci ve sekizinci oluşturucular, üyelerin kopyalanacağı bir initializer_list kullanır.
+6 TH, 7. ve 8. oluşturucular, üyelerin kopyalanacağı bir initializer_list kullanır.
 
 Sonraki üç Oluşturucu, `[First, Last)` bir haritanın aralığını, sınıfın ve ayırıcının karşılaştırma işlevinin türünü belirtirken açıkça artarak kopyalar `Traits` .
 
@@ -1953,7 +2015,7 @@ typedef Type mapped_type;
 
 Tür, `mapped_type` sınıfın *tür* şablonu parametresinin bir eş anlamlısıdır.
 
-*Tür* hakkında daha fazla bilgi Için [Map Class](../standard-library/map-class.md) konusuna bakın.
+*Tür*hakkında daha fazla bilgi Için [Map Class](../standard-library/map-class.md) konusuna bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -2013,7 +2075,7 @@ Eklenen öğenin veri değerine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağımsız değişken anahtar değeri bulunamazsa, değer veri türünün varsayılan değeriyle birlikte eklenir.
+Bağımsız değişken anahtar değeri bulunamazsa, veri türünün varsayılan değeri ile birlikte eklenir.
 
 `operator[]`, anahtarın anahtar `m` `m[key] = DataValue;` `DataValue` `mapped_type` değerine sahip öğenin değeri olan *key*' i kullanarak bir haritaya öğe eklemek için kullanılabilir.
 
@@ -2177,7 +2239,7 @@ Ters çevrilen bir haritadaki ilk öğeyi ele alarak ters çevrilen bir yineleyi
 
 `rbegin` , [Begin](#begin) ile birlikte kullanıldığı gibi tersine çevrilmiş bir eşleme ile kullanılır.
 
-Öğesinin dönüş değeri `rbegin` öğesine atanmışsa `const_reverse_iterator` , eşleme nesnesi değiştirilemez. Dönüş değeri `rbegin` bir öğesine atanırsa `reverse_iterator` , eşleme nesnesi değiştirilebilir.
+Dönüş değeri `rbegin` bir öğesine atanırsa `const_reverse_iterator` , eşleme nesnesi değiştirilemez. Dönüş değeri `rbegin` bir öğesine atanırsa `reverse_iterator` , eşleme nesnesi değiştirilebilir.
 
 `rbegin` bir haritada geriye doğru yinelemek için kullanılabilir.
 
@@ -2269,7 +2331,7 @@ int main( )
    const int &Ref1 = ( m1.begin( ) -> first );
 
    // The following line would cause an error because the
-   // non-const_reference cannot be used to access the key
+   // non-const_reference can't be used to access the key
    // int &Ref1 = ( m1.begin( ) -> first );
 
    cout << "The key of first element in the map is "
@@ -2314,7 +2376,7 @@ Ters çevrilen bir haritadaki son öğeden sonra gelen konumu ele alan ters çif
 
 `rend`[End](#end) , bir eşleme ile birlikte kullanıldığı gibi, bir ters eşleme ile kullanılır.
 
-Öğesinin dönüş değeri `rend` öğesine atanmışsa `const_reverse_iterator` , eşleme nesnesi değiştirilemez. Dönüş değeri `rend` bir öğesine atanırsa `reverse_iterator` , eşleme nesnesi değiştirilebilir.
+Dönüş değeri `rend` bir öğesine atanırsa `const_reverse_iterator` , eşleme nesnesi değiştirilemez. Dönüş değeri `rend` bir öğesine atanırsa `reverse_iterator` , eşleme nesnesi değiştirilebilir.
 
 `rend` , bir ters yineleyicinin haritanın sonuna ulaşıp ulaşılmadığını test etmek için kullanılabilir.
 
@@ -2404,7 +2466,7 @@ Bildirme ve kullanma hakkında bir örnek için bkz. [rbegin](#rbegin) örneği 
 
 ## <a name="size"></a><a name="size"></a> boyutla
 
-Eşlem içindeki öğelerin sayısını döndürür.
+İçindeki öğelerin sayısını döndürür `map` .
 
 ```cpp
 size_type size() const;
@@ -2545,7 +2607,7 @@ Aranmakta olan eşlemdeki bir öğenin sıralama anahtarı değeriyle Karşıla�
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `iterator` veya `const_iterator` bağımsız değişken anahtarından daha büyük bir anahtara sahip olan bir haritadaki bir öğenin konumunu ele alan veya anahtar için eşleşme bulunmazsa haritanın son öğeden sonra gelen konumu ele alan bir öğe.
+Bir `iterator` veya `const_iterator` bağımsız değişken anahtarından daha büyük bir anahtara sahip bir haritadaki bir öğenin konumunu ele alan veya `map` anahtar için hiçbir eşleşme bulunmazsa içindeki son öğeden sonra gelen konumu ele alan bir öğe.
 
 Dönüş değeri bir öğesine atanırsa `const_iterator` , Map nesnesi değiştirilemez. Dönüş değeri bir öğesine atanırsa `iterator` , Map nesnesi değiştirilebilir.
 
@@ -2618,7 +2680,7 @@ Bir harita *d*için, iki öğe *E1*(*K1*, *D1*) ve *E2*(*K2*, *D2*) türündeki 
 
 `bool operator( value_type& left, value_type& right);`
 
-Bu **`true`** , anahtar değerinin `left` önce ve ' nin sıralama düzeninde anahtar değerine eşit olmaması halinde döndürür `right` .
+Bu **`true`** , anahtar değerinin `left` önünde ve sıralama düzeninde anahtar değerine eşit olmaması halinde döndürür `right` .
 
 ### <a name="example"></a>Örnek
 
@@ -2713,7 +2775,7 @@ int main( )
         << mapped1 << "." << endl;
 
    // The following line would cause an error because
-   // the value_type is not assignable
+   // the value_type isn't assignable
    // value1 = cInt2Int ( 4, 40 );
 
    cout  << "The keys of the mapped elements are:";

@@ -1,6 +1,7 @@
 ---
 title: unordered_multiset Sınıfı
-ms.date: 11/04/2016
+description: '`unordered_multiset`İçinde bulunan öğelerin değerlerinin benzersiz olmaması ve anahtar değerleri olarak kullandıkları bir koleksiyondan verilerin depolanması ve alınması için kullanılan bir nesneyi tanımlayan C++ standart kitaplık kapsayıcı sınıfı IÇIN API başvurusu. Veriler otomatik olarak sıralı değildir.'
+ms.date: 9/10/2020
 f1_keywords:
 - unordered_set/std::unordered_multiset
 - unordered_set/std::unordered_multiset::allocator_type
@@ -25,6 +26,7 @@ f1_keywords:
 - unordered_set/std::unordered_multiset::cbegin
 - unordered_set/std::unordered_multiset::cend
 - unordered_set/std::unordered_multiset::clear
+- unordered_set/std::unordered_multiset::contains
 - unordered_set/std::unordered_multiset::count
 - unordered_set/std::unordered_multiset::emplace
 - unordered_set/std::unordered_multiset::emplace_hint
@@ -71,6 +73,7 @@ helpviewer_keywords:
 - std::unordered_multiset::cbegin
 - std::unordered_multiset::cend
 - std::unordered_multiset::clear
+- std::unordered_multiset::contains
 - std::unordered_multiset::count
 - std::unordered_multiset::emplace
 - std::unordered_multiset::emplace_hint
@@ -134,12 +137,12 @@ helpviewer_keywords:
 - std::unordered_multiset::size
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
-ms.openlocfilehash: 83b2b1a97972fa63f7cf7d2b9a6a48b49dbeda8d
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8252ecc7051c1bad2ca1e7683ea32206dd0f10f4
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562525"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042036"
 ---
 # <a name="unordered_multiset-class"></a>unordered_multiset Sınıfı
 
@@ -171,7 +174,7 @@ Ayırıcı sınıf.
 
 ## <a name="members"></a>Üyeler
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |-|-|
 |[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -189,7 +192,7 @@ Ayırıcı sınıf.
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
-|Üye İşlevi|Açıklama|
+|Üye İşlevi|Description|
 |-|-|
 |[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
 |[demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|
@@ -198,6 +201,7 @@ Ayırıcı sınıf.
 |[cbegin](#cbegin)|Denetlenen dizinin başlangıcını belirtir.|
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
 |[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
+|[contains](#contains)<sup>c++ 20</sup> içerir|Belirtilen anahtara sahip bir öğe olup olmadığını denetler.|
 |[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
 |[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
@@ -843,6 +847,57 @@ int main()
 
 ```Output
 [c] [b] [a]
+```
+
+## <a name="unordered_multisetcontains"></a><a name="contains"></a> unordered_multiset:: Contains
+
+İçinde belirtilen anahtara sahip bir öğe olup olmadığını denetler `unordered_multiset` .
+
+```cpp
+bool contains(const Key& key) const;
+template<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Ek*\
+Anahtarın türü.
+
+*anahtar*\
+Aranacak öğenin anahtar değeri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` öğe kapsayıcıda bulunursa; `false` Aksi takdirde.
+
+### <a name="remarks"></a>Açıklamalar
+
+`contains()` C++ 20 ' de yenidir. Bunu kullanmak için [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirtin.
+
+`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` .
+
+### <a name="example"></a>Örnek
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_set>
+#include <iostream>
+
+int main()
+{
+    std::unordered_multiset<int> theUnorderedMultiset = { 1, 2, 3 };
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMultiset.contains(1) << '\n';
+    std::cout << theUnorderedMultiset.contains(4) << '\n';
+
+    return 0;
+}
+```
+
+```Output
+true
+false
 ```
 
 ## <a name="unordered_multisetcount"></a><a name="count"></a> unordered_multiset:: Count

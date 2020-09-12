@@ -3,12 +3,12 @@ title: Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri
 description: Evrensel Windows Platformu uygulamalarında desteklenen CRT işlevlerine yönelik başvuru kılavuzu.
 ms.date: 04/16/2020
 ms.assetid: cbfc957d-6c60-48f4-97e3-1ed8526743b4
-ms.openlocfilehash: cfe5fbc1ce505c255e074dda2c3a240b46754eee
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 793283a5c20f04e58de22fcfca5ede1926de369c
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845724"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041841"
 ---
 # <a name="crt-functions-not-supported-in-universal-windows-platform-apps"></a>Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri
 
@@ -18,7 +18,7 @@ Aşağıdaki tabloda, UWP uygulamaları oluştururken kullanılamayan CRT işlev
 
 ## <a name="unsupported-crt-functions"></a>Desteklenmeyen CRT Işlevleri
 
-|İşlev|Açıklama|Geçici çözüm|
+| İşlev | Açıklama | Geçici çözüm |
 |-|-|-|
 |`_beep` `_sleep` `_seterrormode`|Bu işlevler, önceki CRT sürümlerinde kullanılmıyor. Ayrıca, ilgili Win32 API 'Leri UWP uygulamaları için kullanılamaz.|Geçici çözüm yok.|
 |`chdir` `_chdrive` `getcwd`|Bu işlevler artık kullanılmıyor veya iş parçacığı açısından güvenli değildir.|Kullanın `_chdir` `_getcwd` ve ilgili işlevleri.|
@@ -33,12 +33,12 @@ Aşağıdaki tabloda, UWP uygulamaları oluştururken kullanılamayan CRT işlev
 |`_getsystime` `_setsystime`|Önceki CRT sürümlerindeki bu kullanılmayan API 'Ler vardı. Ayrıca, bir Kullanıcı, izin eksikliği nedeniyle UWP uygulamasında sistem saatini ayarlayaamaz.|Yalnızca sistem saatini almak için Win32 API kullanın `GetSystemTime` . Sistem saati ayarlanamıyor.|
 |`_environ``_putenv` `_putenv_s` `_searchenv` `_searchenv_s` `_dupenv_s` `_wputenv` `_wputenv_s` `_wsearchenv` getenv getenv_s `_wdupenv_s` `_wenviron` `_wgetenv` `_wgetenv_s` putenv `_wsearchenv_s``tzset`|Ortam değişkenleri UWP uygulamaları için kullanılamaz.|Geçici çözüm yok. Saat dilimini ayarlamak için kullanın `_tzset` .|
 |`_loaddll` `_getdllprocaddr` `_unloaddll`|Bunlar önceki CRT sürümlerindeki eski işlevlerdi. Ayrıca, bir kullanıcı aynı uygulama paketinden olanlar hariç dll 'Leri yükleyemez.|`LoadPackagedLibrary` `GetProcAddress` `FreeLibrary` Paketlenmiş DLL 'leri yüklemek ve kullanmak Için Win32 API 'leri kullanın.|
-|`_wexecl``_wexecle` `_wexeclp` `_wexeclpe` `_wexecv` `_wexecve` `_wexecvp` `_wexecvpe` `_execl` `_execle` `_execlp` `_execlpe` `_execv` `_execve` `_execvp` `_execvpe` `_spawnl` `_spawnle` `_spawnlp` `_spawnlpe` `_spawnv` `_spawnve` `_spawnvp` `_spawnvpe` `_wspawnl` `_wspawnle` `_wspawnlp` `_wspawnlpe` `_wspawnv` `_wspawnve` `_wspawnvp` `_wspawnvpe` `_wsystem` `execl` `execle` `execlp` `execlpe` `execv` `execve` `execvp` `execvpe`' ', ' ', ' ', ' ' ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `|İşlevler UWP uygulamalarında kullanılamaz. UWP uygulaması başka bir UWP uygulaması veya masaüstü uygulaması çağrılamaz.|Geçici çözüm yok.|
+|`_wexecl` `_wexecle` `_wexeclp` `_wexeclpe` `_wexecv` `_wexecve` `_wexecvp` `_wexecvpe` `_execl` `_execle` `_execlp` `_execlpe` `_execv` `_execve` `_execvp` `_execvpe` `_spawnl` `_spawnle` `_spawnlp` `_spawnlpe` `_spawnv` `_spawnve` `_spawnvp` `_spawnvpe` `_wspawnl` `_wspawnle` `_wspawnlp` `_wspawnlpe` `_wspawnv` `_wspawnve` `_wspawnvp` `_wspawnvpe` `_wsystem` `execl` `execle` `execlp` `execlpe` `execv` `execve` `execvp` `execvpe` `spawnl` `spawnle` `spawnlp` `spawnlpe` `spawnv` `spawnve` `spawnvp` `spawnvpe` `system`|İşlevler UWP uygulamalarında kullanılamaz. UWP uygulaması başka bir UWP uygulaması veya masaüstü uygulaması çağrılamaz.|Geçici çözüm yok.|
 |`_heapwalk` `_heapadd` `_heapchk` `_heapset` `_heapused`|Bu işlevler genellikle yığın ile çalışmak için kullanılır. Ancak, UWP uygulamalarında ilgili Win32 API 'Leri desteklenmez. Uygulamalar artık özel Heap 'ler oluşturamaz veya kullanamaz.|Geçici çözüm yok. Ancak, hata ayıklama `_heapwalk` CRT ' de yalnızca hata ayıklama amacıyla kullanılabilir. Bu işlevler Microsoft Store yüklenen uygulamalarda kullanılamaz.|
 
 UWP uygulamalarında CRT ' de aşağıdaki işlevler bulunur. Ancak, bunları yalnızca, büyük kod tabanlarında olduğu gibi, karşılık gelen Win32 veya Windows Çalışma Zamanı API 'Lerini kullanamıyoruz kullanın:
 
-|İşlevler|Geçici çözüm|
+| İşlevler | Geçici çözüm |
 |-|-|
 |Tek baytlık dize işlevleri — Örneğin,,, `strcat` vb `strcpy` `strlwr` .|Tüm Win32 API 'Leri ve sunulan Windows Çalışma Zamanı API 'Leri yalnızca Unicode karakter kümelerini kullandığından, UWP uygulamalarınızı tamamen Unicode yapın.  Büyük kod temellerine yönelik tek baytlı işlevler kalmadı, ancak Aksi takdirde bu işlemler kaçınılmalıdır. Karşılık gelen geniş char işlevleri mümkünse bunun yerine kullanılmalıdır.|
 |Stream ıO ve alt düzey dosya GÇ işlevleri — Örneğin,,, `fopen` vb `open` .|Bu işlevler, UWP uygulamaları için önerilmeyen zaman uyumludur. UWP uygulamalarınızda, UI iş parçacığının kilitlenmesini engellemek için dosyaları açmak, okumak ve yazmak üzere zaman uyumsuz API 'Ler kullanın. Bu tür API örnekleri `Windows::Storage::FileIO` sınıfınlardır.|
@@ -47,7 +47,7 @@ UWP uygulamalarında CRT ' de aşağıdaki işlevler bulunur. Ancak, bunları ya
 
 Hem önceden bahsedilen API 'Ler hem de aşağıdaki API 'Ler Windows 8. x Mağazası uygulamaları ve Windows Phone 8. x uygulamalarında kullanılamaz.
 
-|İşlevler|Açıklama|Geçici çözüm|
+| İşlevler | Description | Geçici çözüm |
 |-|-|-|
 |`_beginthread` `_beginthreadex` `_endthread` `_endthreadex`|Windows 8. x Mağaza uygulamalarında iş parçacığı Win32 API 'Leri kullanılamaz.|`Windows Runtime Windows::System::Threading::ThreadPool` `concurrency::task` Bunun yerine veya kullanın.|
 |`_chdir` `_wchdir` `_getcwd` `_getdcwd` `_wgetcwd` `_wgetdcwd`|Çalışma dizini kavramı, Windows 8. x Mağazası uygulamaları için geçerlidir.|Bunun yerine tam yolları kullanın.|

@@ -1,6 +1,6 @@
 ---
 title: FILE_DATA yapısı
-description: C++ Build Insights SDK FILE_DATA yapı referansı.
+description: C++ derleme öngörüleri SDK FILE_DATA yapısı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 6b7b0129c54fa4b1d5285bafb38761da45bab4e5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b5f793df0340005665a8f4ab42e9793f51f3aa0c
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325583"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041815"
 ---
 # <a name="file_data-structure"></a>FILE_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Yapı, `FILE_DATA` bir dosya girişini veya çıktısını açıklar.
+`FILE_DATA`Yapı bir dosya girişi veya çıkışı tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct FILE_DATA_TAG
@@ -40,9 +40,9 @@ typedef struct FILE_DATA_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
 | `Path` | Dosyanın mutlak yolu |
-| `TypeCode` | Dosyanın türünü açıklayan bir kod. Daha fazla bilgi için [FILE_TYPE_CODE.](file-type-code-enum.md) |
+| `TypeCode` | Dosyanın türünü tanımlayan bir kod. Daha fazla bilgi için bkz. [FILE_TYPE_CODE](file-type-code-enum.md). |
 
 ::: moniker-end

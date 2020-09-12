@@ -1,5 +1,5 @@
 ---
-title: '&lt;listesi > (C++ belge açıklamaları)'
+title: '&lt;liste> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - list
@@ -7,20 +7,20 @@ helpviewer_keywords:
 - list C++ XML tag
 - <list> C++ XML tag
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
-ms.openlocfilehash: 102cf9f7b1b867a012f662ce786d97012826abd1
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 24f9b17c67b8f951743fd51c04266b05dad235c7
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439307"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041971"
 ---
-# <a name="ltlistgt"></a>&lt;list&gt;
+# <a name="ltlistgt-and-ltlistheadergt"></a>&lt;liste &gt; ve &lt; listheader&gt;
 
-\<listheader > bloğu, bir tablo ya da tanım listesinin başlık satırını tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca başlıktaki terim için bir giriş sağlamanız gerekir.
+\<listheader>Blok, bir tablo ya da tanım listesinin başlık satırını tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca başlıktaki terim için bir giriş sağlamanız gerekir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
-```
+```xml
 <list type="bullet" | "number" | "table">
    <listheader>
       <term>term</term>
@@ -36,16 +36,16 @@ ms.locfileid: "79439307"
 #### <a name="parameters"></a>Parametreler
 
 *terimli*<br/>
-`description`tanımlanacak bir terim.
+' De tanımlanacak bir terim `description` .
 
 *açıklaması*<br/>
-Bir madde işareti veya numaralandırılmış listedeki bir öğe ya da bir `term`tanımı.
+Bir madde işareti veya numaralandırılmış listedeki bir öğe ya da bir tanımı `term` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Listedeki her öğe, bir \<öğesi > bloğu ile belirtilir. Tanım listesi oluştururken hem `term` hem de `description`belirtmeniz gerekir. Ancak, bir tablo, madde işaretli liste veya numaralandırılmış liste için yalnızca `description`için bir giriş sağlamanız gerekir.
+Listedeki her öğe bir \<item> blokla belirtilir. Bir tanım listesi oluştururken, hem hem de belirtmeniz gerekecektir `term` `description` . Ancak, bir tablo, madde işaretli liste veya numaralandırılmış liste için yalnızca bir giriş sağlamanız gerekir `description` .
 
-Bir liste veya tablo, gereken sayıda \<öğe > bloğunu içerebilir.
+Bir liste veya tablo gerektiği kadar çok \<item> blok içerebilir.
 
 Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
@@ -70,4 +70,4 @@ class MyClass {};
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[XML Belgeleri](xml-documentation-visual-cpp.md)
+[XML belgeleri](xml-documentation-visual-cpp.md)

@@ -11,18 +11,18 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: f85f9b397ef3ab5bd070be1f4c81845405b14020
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a8ae885bbbf00ae916505bf5df646b32268a17a
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234386"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040918"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (Kayan nokta davranışını belirt)
 
 Derleyicinin kayan nokta ifadelerini, iyileştirmeleri ve özel durumları nasıl ele aldığını belirtir. **/FP** seçenekleri, üretilen kodun, kayan nokta ortam değişikliklerine, yuvarlama moduna, özel durum maskelerine ve alt normal davranışa izin verip etmediğini ve kayan nokta durum denetimlerinin geçerli, doğru sonuçları döndürmeyeceğini belirtir. Derleyicinin kaynak işlemini ve ifade sıralamasını tutan ve Nan yayılması için standart olan kodu oluşturup üretmediğini veya bunun yerine, işlemleri yeniden sıralayıp birleştirebilen ve standart tarafından izin verilmeyen cebirsel dönüştürmelerini destekleyen daha verimli bir kod oluşturuyor olup olmadığını denetler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/FP:**[**precise**  |  **strict**  |  **fast**  |  **except**[ **-** ]] haricinde kesin kesin hızlı
 
@@ -43,11 +43,11 @@ Kayan nokta kodunuz, kayan nokta deyimlerindeki işlemler ve ifadeler sırasına
 
 #### <a name="strict"></a>sert
 
-`/fp:strict`Şuna benzer bir davranış içerir `/fp:precise` , yani derleyici, hedef makine için nesne kodu oluştururken ve iyileştirdiği sırada kayan nokta kodunun kaynak sıralamasını ve yuvarlama özelliklerini korur ve özel değerleri işlerken standart hale getirir. Ayrıca, program, çalışma zamanında kayan nokta ortamına güvenle erişebilir veya değiştirebilir.
+`/fp:strict` Şuna benzer bir davranış içerir `/fp:precise` , yani derleyici, hedef makine için nesne kodu oluştururken ve iyileştirdiği sırada kayan nokta kodunun kaynak sıralamasını ve yuvarlama özelliklerini korur ve özel değerleri işlerken standart hale getirir. Ayrıca, program, çalışma zamanında kayan nokta ortamına güvenle erişebilir veya değiştirebilir.
 
 `/fp:strict`Derleyici, programın kayan nokta özel durumlarının maskesini güvenli bir şekilde kaldırmak, kayan nokta durum yazmaçlarını okumak veya yazmak ya da yuvarlama modlarını değiştirmek için kod üretir. İfade değerlendirmesi sırasında dört özel noktaya göre kaynak kodu duyarlığına yuvarlar: atama sırasında, bir işlev çağrısına bir kayan nokta bağımsız değişkeni geçirildiğinde ve bir işlev çağrısından bir kayan nokta değeri döndürüldüğünde. Ara hesaplamalar makine duyarlığına göre gerçekleştirilebilir. Tür atamaları, ara hesaplamaları açıkça yuvarlamak için kullanılabilir. Derleyici, bir bit düzeyinde özdeş sonuç üretme garantisi olmadığı sürece yeniden ilişkilendirme veya dağıtım gibi kayan nokta ifadelerinde cebirsel dönüştürmeleri gerçekleştirmez. Özel değerleri (NaN, + Infinity,-Infinity-0,0) içeren ifadeler, IEEE-754 belirtimlerine göre işlenir. Örneğin, `x != x` x NaN ise olarak değerlendirilir **`true`** . Kayan nokta aykırlıkları altında oluşturulmaz `/fp:strict` .
 
-`/fp:strict`, `/fp:precise` derleyicinin özel durumları yakalamak ve programların çalışma zamanında kayan nokta ortamına erişmesine veya değiştirmesine izin vermek için ek yönergeler eklemesi gerektiğinden, hesaplama daha yüksektir. Kodunuz bu yeteneği kullanmıyorsa, ancak kaynak kodu sıralama ve yuvarlama gerektirir ya da özel değerleri kullanır, kullanın `/fp:precise` . Aksi takdirde, `/fp:fast` daha hızlı ve daha küçük kod üretebilen kullanmayı düşünün.
+`/fp:strict` , `/fp:precise` derleyicinin özel durumları yakalamak ve programların çalışma zamanında kayan nokta ortamına erişmesine veya değiştirmesine izin vermek için ek yönergeler eklemesi gerektiğinden, hesaplama daha yüksektir. Kodunuz bu yeteneği kullanmıyorsa, ancak kaynak kodu sıralama ve yuvarlama gerektirir ya da özel değerleri kullanır, kullanın `/fp:precise` . Aksi takdirde, `/fp:fast` daha hızlı ve daha küçük kod üretebilen kullanmayı düşünün.
 
 #### <a name="fast"></a>Hızlı
 
@@ -55,7 +55,7 @@ Seçeneği, derleyicinin kayan nokta `/fp:fast` işlemlerini hız ve boşluk iç
 
 `/fp:fast`, Derleyici, varsayılan kayan nokta ortamında çalışacak şekilde tasarlanan kodu oluşturur ve kayan nokta ortamının çalışma zamanında erişilmediğini veya değiştirilmediğini varsayar. Yani, kodun kayan nokta özel durumlarının maskesini kaldırma, kayan nokta durum yazmaçlarını okuma veya yazma ya da yuvarlama modlarını değiştirme olduğunu varsayar.
 
-`/fp:fast`, katı kaynak kodu sıralaması gerektirmeyen ve kayan nokta ifadelerinin yuvarlanması gerektirmeyen ve NaN gibi özel değerleri işlemek için Standart kurallara dayanmayan programlar için tasarlanmıştır. Kayan nokta kodunuz kaynak kodu sıralama ve yuvarlama için koruma gerektiriyorsa veya özel değerlerin standart davranışına dayanıyorsa, [/FP: net](#precise)kullanın. Kodunuz, yuvarlama modlarını değiştirmek, kayan nokta özel durumlarının maskesini kaldırmak veya kayan nokta durumunu denetlemek için kayan nokta ortamına eriştiğinde veya değişiklik yaparsa, [/FP: Strict](#strict)kullanın.
+`/fp:fast` , katı kaynak kodu sıralaması gerektirmeyen ve kayan nokta ifadelerinin yuvarlanması gerektirmeyen ve NaN gibi özel değerleri işlemek için Standart kurallara dayanmayan programlar için tasarlanmıştır. Kayan nokta kodunuz kaynak kodu sıralama ve yuvarlama için koruma gerektiriyorsa veya özel değerlerin standart davranışına dayanıyorsa, [/FP: net](#precise)kullanın. Kodunuz, yuvarlama modlarını değiştirmek, kayan nokta özel durumlarının maskesini kaldırmak veya kayan nokta durumunu denetlemek için kayan nokta ortamına eriştiğinde veya değişiklik yaparsa, [/FP: Strict](#strict)kullanın.
 
 #### <a name="except"></a>kullanıldıkları
 
@@ -73,7 +73,7 @@ Seçeneği, derleyicinin kayan nokta `/fp:fast` işlemlerini hız ve boşluk iç
 
 Derleyici, komut satırında belirtilen kayan nokta davranışını geçersiz kılmak için üç pragma yönergesi sağlar: [float_control](../../preprocessor/float-control.md), [fenv_access](../../preprocessor/fenv-access.md)ve [fp_contract](../../preprocessor/fp-contract.md). Bu yönergeleri, bir işlev içinde değil, işlev düzeyinde kayan nokta davranışını denetlemek için kullanabilirsiniz. Bu yönergelerin doğrudan seçeneklere karşılık gelmediğini unutmayın `/fp` . Bu tabloda, `/fp` seçeneklerin ve pragma yönergelerinin birbirleriyle nasıl eşlenme gösterilmektedir. Daha fazla bilgi için, tek tek seçenekler ve pragma yönergeleri için belgelere bakın.
 
-||float_control (kesin)|float_control (hariç)|fenv_access|fp_contract|
+| Seçenek | float_control (kesin) | float_control (hariç) | fenv_access | fp_contract |
 |-|-|-|-|-|
 |`/fp:fast`|Kapalı|Kapalı|Kapalı|on|
 |`/fp:precise`|on|Kapalı|Kapalı|on|

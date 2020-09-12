@@ -9,12 +9,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ccba320a8bb9279b874fae2484c71af913253148
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 468fc30d337e5cfc5ab90f7558904fc90588c3df
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229928"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041828"
 ---
 # <a name="event_data-structure"></a>EVENT_DATA yapısı
 
@@ -27,7 +27,7 @@ C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sür
 
 `EVENT_DATA`Yapı, bir analiz veya yeniden günlüğe kaydetme oturumundan alınan bir olayı açıklar. Bu oturumlar, [Çözümle](../functions/analyze.md), analiz [Zea](../functions/analyze-a.md), analiz [ZEW](../functions/analyze-w.md), [relog](../functions/relog.md), [reloga](../functions/relog-a.md)veya [relogw](../functions/relog-w.md) işlevleri çağırarak başlatılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct EVENT_DATA_TAG
@@ -58,7 +58,7 @@ typedef struct EVENT_DATA_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
 | `EventId` | Olayı tanımlayan bir sayı. Olay tanımlayıcılarının listesi için bkz. [EVENT_ID](event-id-enum.md). |
 | `EventInstanceId` | Bir izleme içinde geçerli olayı benzersiz bir şekilde tanımlayan bir sayı. Bu değer, aynı izlemeyi birden çok kez analiz veya yeniden günlüğe kaydetme sırasında değişmez. Aynı olayı birden çok çözümlemede veya yeniden günlüğe kaydetmenin aynı izleme üzerinden tanımlamak için bu alanı kullanın. |
@@ -79,11 +79,11 @@ typedef struct EVENT_DATA_TAG
 
 ## <a name="remarks"></a>Açıklamalar
 
-İçindeki birçok alan, `EVENT_DATA` değer sayısını içerir. C++ derleme öngörüleri, pencerenin sayaç kaynağı olarak performans sayacını kullanır. Bir Tick sayısı, `TickFrequency` Bu alanı saniye gibi uygun bir zaman birimine dönüştürmek için birlikte kullanılmalıdır. Bu dönüştürmeyi gerçekleştirmek için aşağıdaki örneğe bakın. `EVENT_DATA`etkinliğin normal değer sayısı için bir alan içermez. Bu değeri elde etmek için, `StartTimestamp` öğesinden çıkarın `StopTimestamp` . `EVENT_DATA`, C API kullanıcıları tarafından kullanılması amaçlanan bir yapıdır. C++ API kullanıcıları için [olay](../cpp-event-data-types/event.md) gibi sınıflar, zaman dönüştürmeleri otomatik olarak yapılır.
+İçindeki birçok alan, `EVENT_DATA` değer sayısını içerir. C++ derleme öngörüleri, pencerenin sayaç kaynağı olarak performans sayacını kullanır. Bir Tick sayısı, `TickFrequency` Bu alanı saniye gibi uygun bir zaman birimine dönüştürmek için birlikte kullanılmalıdır. Bu dönüştürmeyi gerçekleştirmek için aşağıdaki örneğe bakın. `EVENT_DATA` etkinliğin normal değer sayısı için bir alan içermez. Bu değeri elde etmek için, `StartTimestamp` öğesinden çıkarın `StopTimestamp` . `EVENT_DATA` , C API kullanıcıları tarafından kullanılması amaçlanan bir yapıdır. C++ API kullanıcıları için [olay](../cpp-event-data-types/event.md) gibi sınıflar, zaman dönüştürmeleri otomatik olarak yapılır.
 
 Alanın değeri, `EVENT_DATA` `Data` alanının değerine bağlıdır `EventId` . Değeri `Data` Aşağıdaki tabloda açıklanmıştır. Aşağıdaki tabloda bazı varlık tanımlayıcıları eksik olabilir. Bu durumda, `Data` alan **`nullptr`** veya sıfır olarak ayarlanır.
 
-| `EventId`deeri | İşaret eden tür`Data` |
+| `EventId` deeri | İşaret eden tür `Data` |
 |--|--|
 | `EVENT_ID_BACK_END_PASS` | [CL_PASS_DATA](cl-pass-data-struct.md) |
 | `EVENT_ID_COMMAND_LINE` | `const wchar_t` |

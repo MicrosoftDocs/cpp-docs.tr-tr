@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 94063b2c66d201da3b0e822a7118b3e48020ed3c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 55aeaf27b1c31ef0dba68d0ead3633590777cbdf
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833263"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040607"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -140,19 +140,19 @@ Sonraki eklemeler için sayısal biçimlendirme kuralları, `cout` genel yerel a
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Açıklama|
+|Oluşturucu|Description|
 |-|-|
 |[ayarlar](#locale)|Bir yerel ayar veya yerel ayar kopyası ya da modelin veya kategorinin başka bir yerel ayardaki bir model veya kategori tarafından değiştirilen bir kopyasını oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|Tür adı|Description|
 |-|-|
 |[alan](#category)|Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Açıklama|
+|Üye işlevi|Description|
 |-|-|
 |[combine](#combine)|Belirtilen yerel ayardaki bir modeli hedef yerel ayara ekler.|
 |[ada](#name)|Depolanan yerel ayar adını döndürür.|
@@ -622,7 +622,7 @@ loc3 (English_United States.1252) are not equal.
 
 ## <a name="localeoperator"></a><a name="op_call"></a> locale:: operator ()
 
-`basic_string`Bu yerel ayarın std:: COLLATE modeli tarafından tanımlanan lexicographic karşılaştırma kurallarına göre iki nesneyi karşılaştırır <charT> .
+`basic_string`Bu yerel ayarın modeli tarafından tanımlanan lexicographic karşılaştırma kurallarına göre iki nesneyi karşılaştırır `std::collate<charT>` .
 
 ```cpp
 template <class CharType, class Traits, class Allocator>

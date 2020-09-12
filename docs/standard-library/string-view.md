@@ -1,21 +1,22 @@
 ---
 title: '&lt;string_view&gt;'
-ms.date: 04/18/2019
+description: Öğesinin, `basic_string_view` char benzeri nesnelerin sabit bir ardışık dizisine başvurduğu genel bakış.
+ms.date: 9/4/2020
 helpviewer_keywords:
 - string_view header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-ms.openlocfilehash: 13b6f5c63b9426fc4c31527f0d1ae8291d07807f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f74f6c5855f71b0df46f585e874002cdb4308e42
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222218"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039917"
 ---
 # <a name="ltstring_viewgt"></a>&lt;string_view&gt;
 
 Sınıf şablonunu `basic_string_view` ve ilgili türleri ve işleçleri tanımlar. (Bir derleyici seçeneği [std: c++ 17](../build/reference/std-specify-language-standard-version.md) veya sonraki bir sürümü gerektirir.)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <string_view>
@@ -23,11 +24,11 @@ Sınıf şablonunu `basic_string_view` ve ilgili türleri ve işleçleri tanıml
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon Uzmanlıkları string_view Aile, salt okunurdur, özel durum güvenli, sahip olmayan bir tutamacı, dizinin ilk öğesi olan herhangi bir dize benzeri nesnenin karakter verilerine geçirmek için etkili bir yol sağlar. Türünde bir işlev parametresi `string_view` (için bir typedef `basic_string_view<char>` ) `std::string` , bir örtük dönüştürmenin tanımlandığı, **char \* **veya dar karakterlerin diğer dize benzeri bir sınıfı gibi bağımsız değişkenleri kabul edebilir `string_view` . Benzer şekilde, veya parametresi `wstring_view` `u16string_view` örtük bir `u32string_view` dönüştürme tanımlanmış herhangi bir dize türünü kabul edebilir. Daha fazla bilgi için bkz. [Basic_string_view sınıfı](../standard-library/basic-string-view-class.md).
+`string_view`Şablon Uzmanlıkları ailesi, salt okunurdur, özel durum güvenli, sahip olmayan bir tutamacı, dizinin ilk öğesi olan herhangi bir dize benzeri nesnenin karakter verilerine geçirmek için etkili bir yol sağlar. Türünde bir işlev parametresi `string_view` (için bir typedef `basic_string_view<char>` ) `std::string` , `char*` veya örtük bir dönüştürmenin tanımlandığı, herhangi bir dize benzeri dar karakter sınıfı gibi bağımsız değişkenleri kabul edebilir `string_view` . Benzer şekilde, veya parametresi `wstring_view` `u16string_view` örtük bir `u32string_view` dönüştürme tanımlanmış herhangi bir dize türünü kabul edebilir. Daha fazla bilgi için bkz. [Basic_string_view sınıfı](../standard-library/basic-string-view-class.md).
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Açıklama|
+|Tür adı|Description|
 |-|-|
 |[string_view](../standard-library/string-view-typedefs.md#string_view)|Türünde öğeler içeren sınıf şablonunun özelleştirmesi `basic_string_view` **`char`** .|
 |[wstring_view](../standard-library/string-view-typedefs.md#wstring_view)|Türünde öğeler içeren sınıf şablonunun özelleştirmesi `basic_string_view` **`wchar_t`** .|
@@ -67,7 +68,7 @@ Sınıf şablonunu `basic_string_view` ve ilgili türleri ve işleçleri tanıml
 
 - **Ad alanı:** std
 
-- **Derleyici seçeneği:** std: c++ 17 (veya üzeri)
+- **Derleyici seçeneği:** [std: c++ 17](../build/reference/std-specify-language-standard-version.md) veya üzeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

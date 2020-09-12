@@ -1,24 +1,25 @@
 ---
 title: /Zc (Uyumluluk)
-ms.date: 03/06/2018
+description: /ZC uyumluluk derleyicisi seçenekleri, uyumlu veya geriye dönük bir davranış için desteği etkinleştirir veya devre dışı bırakır.
+ms.date: 09/10/2020
 helpviewer_keywords:
 - /Zc compiler options [C++]
 - -Zc compiler options [C++]
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 6d6d3b7736fd1775372a3b2093c53e177db5099e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 13e06cd75f1ee684c2ee1ad6239aeb77b805675e
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234360"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041529"
 ---
-# <a name="zc-conformance"></a>`/Zc`Uyumsuzlu
+# <a name="zc-conformance"></a>`/Zc` Uyumsuzlu
 
 **`/Zc`** Standart veya Microsoft 'a özgü derleyici davranışını belirtmek için derleyici seçeneklerini kullanabilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:`**_seçenek_{,_seçenek_}
 
@@ -38,6 +39,7 @@ Visual Studio C veya C++ ' a bir uzantısı standart ile uyumlu olmayan bir şek
 | [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Gerekli işlevlerde örtük ' i etkinleştirin **`noexcept`** (varsayılan olarak açık). |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | Başvurulmayan işlevi veya verileri COMDAT ise veya yalnızca iç bağlantısı varsa kaldırın (varsayılan olarak kapalıdır). |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | C++ 17 **`noexcept`** kurallarını (varsayılan olarak c++ 17 veya üzeri) uygulayın. |
+| [`/Zc:preprocessor`](zc-preprocessor.md) | Yeni uygun Önişlemci 'yi kullanın (C11/C17 dışında varsayılan olarak kapalıdır). |
 | [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) | Bir UDT geçici değeri, const olmayan bir lvalue başvurusuna bağlanamaz (varsayılan olarak kapalıdır). |
 | [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) | Standart C++ açık tür dönüştürme kurallarını zorla (varsayılan olarak kapalıdır). |
 | [`/Zc:sizedDealloc`](zc-sizeddealloc-enable-global-sized-dealloc-functions.md) | C++ 14 genel boyutlu ayırmayı kaldırma işlevlerini etkinleştirin (varsayılan olarak açık). |
@@ -47,7 +49,7 @@ Visual Studio C veya C++ ' a bir uzantısı standart ile uyumlu olmayan bir şek
 | [`/Zc:throwingNew`](zc-throwingnew-assume-operator-new-throws.md) | Hata durumunda olduğunu varsayar **`operator new`** (varsayılan olarak kapalıdır). |
 | [`/Zc:trigraphs`](zc-trigraphs-trigraphs-substitution.md) | Trigraf 'yi etkinleştirin (varsayılan olarak kapalı, devre dışı). |
 | [`/Zc:twoPhase`](zc-twophase.md) | Uyumsuz şablon ayrıştırma davranışını kullanın (varsayılan olarak uyumlu). |
-| [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`**, bir typedef değil, yerel bir türdür (varsayılan olarak açık). |
+| [`/Zc:wchar_t`](zc-wchar-t-wchar-t-is-native-type.md) | **`wchar_t`** , bir typedef değil, yerel bir türdür (varsayılan olarak açık). |
 
 Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 

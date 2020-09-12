@@ -8,22 +8,22 @@ helpviewer_keywords:
 - component pragma
 - pragmas, component
 ms.assetid: 7b66355e-3201-4c14-8190-f4a2a81a604a
-ms.openlocfilehash: 578c590bdb4223f173e0249c18d0eea4e78a18db
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 73b308fdc426be9b403b808d4e638b4f5c1e9149
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220471"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040736"
 ---
 # <a name="component-pragma"></a>bileşen pragması
 
 Kaynak dosyalardan gelen tarayıcı bilgileri veya bağımlılık bilgileri koleksiyonunu denetler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma bileşeni (tarayıcı,** { **on** | **off** } [ **,** **Başvurular** [ **,** *Name* ]] **)**  \
-> **#pragma bileşeni (mini yeniden oluşturma,** { **on** | **off** } **)**  \
-> **#pragma bileşeni (mintypeınfo,** { **on** | **off** } **)**
+> **#pragma bileşeni (tarayıcı,** { **on** \| **off** } \[ **,** **Başvurular** \[ **,** *ad* ]] **)** \
+> **#pragma bileşeni (mini yeniden oluşturma,** { **on** \| **off** } **)** \
+> **#pragma bileşeni (mintypeınfo,** { **on** \| **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -72,17 +72,17 @@ Bu, *ad*ile başvuruları toplamayı sürdürmenin tek yoludur; kapattığınız
 
 ### <a name="minimal-rebuild"></a>En az yeniden derleme
 
-Kullanım dışı bırakılan [/GD (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) özelliği, derleyicinin, disk C++ alanı alan sınıf bağımlılığı bilgilerini oluşturmasını ve depolamasını gerektirir. Disk alanından tasarruf etmek için, örneğin değişiklik `#pragma component( minrebuild, off )` olmayan başlık dosyalarında bağımlılık bilgilerini toplamanız gerektiğinde ' yi kullanabilirsiniz. Bağımlılık `#pragma component( minrebuild, on )` toplamayı yeniden açmak için sınıfların değiştirilmesini kaldırdıktan sonra Ekle.
+Kullanım dışı bırakılan [/GI (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) özelliği, derleyicinin, disk alanı alan C++ sınıf bağımlılığı bilgilerini oluşturmasını ve depolamasını gerektirir. Disk alanından tasarruf etmek için, örneğin `#pragma component( minrebuild, off )` değişiklik olmayan başlık dosyalarında bağımlılık bilgilerini toplamanız gerektiğinde ' yi kullanabilirsiniz. `#pragma component( minrebuild, on )`Bağımlılık toplamayı yeniden açmak için sınıfların değiştirilmesini kaldırdıktan sonra Ekle.
 
 ### <a name="reduce-type-information"></a>Tür bilgilerini azaltma
 
-`mintypeinfo` Seçeneği belirtilen bölge için hata ayıklama bilgilerini azaltır. Bu bilgilerin hacmi epey büyüktür; .pdb ve .obj dosyalarını etkiler. mintypeinfo bölgesindeki sınıflarda ve yapılarda hata ayıklaması yapamazsınız. mintypeinfo seçeneğini kullanmak aşağıdaki uyarıyı önlemeye yardımcı olabilir:
+`mintypeinfo`Seçeneği belirtilen bölge için hata ayıklama bilgilerini azaltır. Bu bilgilerin hacmi epey büyüktür; .pdb ve .obj dosyalarını etkiler. mintypeinfo bölgesindeki sınıflarda ve yapılarda hata ayıklaması yapamazsınız. mintypeinfo seçeneğini kullanmak aşağıdaki uyarıyı önlemeye yardımcı olabilir:
 
 ```cmd
 LINK : warning LNK4018: too many type indexes in PDB "filename", discarding subsequent type information
 ```
 
-Daha fazla bilgi için bkz. [/GD (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md) derleyici seçeneği.
+Daha fazla bilgi için bkz. [/GD (en az yeniden derlemeyi etkinleştir)](../build/reference/gm-enable-minimal-rebuild.md)  derleyici seçeneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

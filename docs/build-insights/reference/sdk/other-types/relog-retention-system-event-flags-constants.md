@@ -1,6 +1,6 @@
 ---
 title: RELOG_RETENTION_SYSTEM_EVENT_FLAGS sabitleri
-description: C++ Build Insights SDK sabitler referansı RELOG_RETENTION_SYSTEM_EVENT_FLAGS.
+description: C++ derleme öngörüleri SDK RELOG_RETENTION_SYSTEM_EVENT_FLAGS sabitler başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 7110f809a819357b31951c203c1fa6ac9fb9f42e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5444c1a6b8799b1de8eea228211a5f2d6de638f8
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323467"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041412"
 ---
 # <a name="relog_retention_system_event_flags-constants"></a>RELOG_RETENTION_SYSTEM_EVENT_FLAGS sabitleri
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Sabitler, `RELOG_RETENTION_SYSTEM_EVENT_FLAGS` hangi sistem olaylarının yeniden kaydedilmiş bir izde tutulmasıgerektiğini açıklamak için kullanılır. [RELOG_DESCRIPTOR](relog-descriptor-struct.md) yapının `SystemEventsRetentionFlags` alanını başlatmak için bunları kullanın.
+`RELOG_RETENTION_SYSTEM_EVENT_FLAGS`Sabitler, yeniden günlüğe kaydedilen bir izlemede tutulacak sistem olaylarını tanımlamakta kullanılır. [RELOG_DESCRIPTOR](relog-descriptor-struct.md) yapısının alanını başlatmak için bunları kullanın `SystemEventsRetentionFlags` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 static const unsigned long long
@@ -39,10 +39,10 @@ static const unsigned long long
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
-| `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | CPU örnek sistem olaylarını yeniden kaydedilmiş bir izlemede tutun. |
-| `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_ALL` | Tüm sistem olaylarını yeniden kaydedilmiş bir izlemede tutun. |
+| `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | CPU örnek sistem olaylarını yeniden günlüğe kaydedilmiş bir izlemede saklayın. |
+| `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_ALL` | Tüm sistem olaylarını yeniden günlüğe kaydedilmiş bir izlemede saklayın. |
 
 ## <a name="remarks"></a>Açıklamalar
 

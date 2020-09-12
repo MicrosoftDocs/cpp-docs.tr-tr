@@ -1,6 +1,6 @@
 ---
 title: RELOG_DESCRIPTOR yapısı
-description: C++ Yapı Öngörüleri SDK yapı referansı RELOG_DESCRIPTOR.
+description: C++ derleme öngörüleri SDK RELOG_DESCRIPTOR yapısı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c3aee49fe9f609ca37082693ddcfd5e838cc96a1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 802e51ec4246f5ee95e3d204290743ffbd03be69
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328945"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041399"
 ---
 # <a name="relog_descriptor-structure"></a>RELOG_DESCRIPTOR yapısı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Yapı `RELOG_DESCRIPTOR` [RelogA](../functions/relog-a.md) ve [RelogW](../functions/relog-w.md) işlevleri ile kullanılır. Windows için Olay İzleme (ETW) izlemenin nasıl yeniden günlüğe kaydedilmesi gerektiğini açıklar.
+`RELOG_DESCRIPTOR`Yapı, [reloga](../functions/relog-a.md) ve [relogw](../functions/relog-w.md) işlevleriyle birlikte kullanılır. Windows için olay Izleme (ETW) izlemenin nasıl yeniden günlüğe kaydedileceğini açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct RELOG_DESCRIPTOR_TAG
@@ -43,21 +43,21 @@ typedef struct RELOG_DESCRIPTOR_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
-| `NumberOfAnalysisPasses` | Yeniden kaydetme oturumunun analiz aşamasında ETW izleme üzerinden yapılması gereken analiz geçişlerinin sayısı. |
-| `AnalysisCallbacks` | Yeniden günleme oturumunun çözümleme aşamasında hangi işlevlerin çağrılmasını belirten [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) bir nesnedir. |
-| `RelogCallbacks` | Yeniden günlüğe kaydetme oturumunun yeniden günlüğe kaydetme aşamasında hangi işlevlerin arayacağını belirten [RELOG_CALLBACKS](relog-callbacks-struct.md) bir nesnedir. |
-| `SystemEventsRetentionFlags` | Hangi sistem ETW olayları relogged izleme tutmak için belirtir [RELOG_RETENTION_SYSTEM_EVENT_FLAGS](relog-retention-system-event-flags-constants.md) bir bitmask. |
-| `AnalysisContext` | Belirtilen tüm geri arama işlevlerine bağımsız değişken olarak geçirilen kullanıcı tarafından sağlanan bağlam`AnalysisCallbacks` |
-| `RelogContext` | Belirtilen tüm geri arama işlevlerine bağımsız değişken olarak geçirilen kullanıcı tarafından sağlanan bağlam`RelogCallbacks` |
+| `NumberOfAnalysisPasses` | Yeniden günlüğe kaydetme oturumunun çözümleme aşamasında ETW izlemesi üzerinden gerçekleştirilmesi gereken analiz geçişlerinin sayısı. |
+| `AnalysisCallbacks` | Yeniden günlüğe kaydetme oturumunun çözümleme aşamasında hangi işlevlerin çağrılacağını belirten [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) nesne. |
+| `RelogCallbacks` | Yeniden günlüğe kaydetme oturumunun yeniden günlüğe kaydetme aşamasında hangi işlevlerin çağrılacağını belirten [RELOG_CALLBACKS](relog-callbacks-struct.md) nesne. |
+| `SystemEventsRetentionFlags` | Yeniden günlüğe kaydedilen izlemede hangi sistem ETW olaylarını tutacağız belirten [RELOG_RETENTION_SYSTEM_EVENT_FLAGS](relog-retention-system-event-flags-constants.md) bir bit maskesi. |
+| `AnalysisContext` | İçinde belirtilen tüm geri çağırma işlevlerine bağımsız değişken olarak geçirilen kullanıcı tarafından sağlanmış bir bağlam `AnalysisCallbacks` |
+| `RelogContext` | İçinde belirtilen tüm geri çağırma işlevlerine bağımsız değişken olarak geçirilen kullanıcı tarafından sağlanmış bir bağlam `RelogCallbacks` |
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir yeniden günlük oturumu sırasında ETW olaylarının yeniden günlüğe kaydedilmesini, `RelogCallbacks`kullanıcı tarafından . Ancak, CPU örnekleri gibi sistem ETW olayları bu geri arama işlevlerine iletilir değildir. Sistem `SystemEventsRetentionFlags` ETW olaylarının yeniden günlüğe kaydedilmesini denetlemek için alanı kullanın.
+Yeniden günlüğe kaydetme sırasında ETW olaylarının yeniden günlüğe kaydedilmesi, ' de belirtilen geri çağırma işlevleri aracılığıyla Kullanıcı tarafından denetlenir `RelogCallbacks` . Ancak, CPU örnekleri gibi sistem ETW olayları bu geri arama işlevlerine iletilmez. `SystemEventsRetentionFlags`SISTEM ETW olaylarının yeniden günlüğe kaydedilmesini denetlemek için alanını kullanın.
 
-Ve `AnalysisCallbacks` `RelogCallbacks` yapıları yalnızca üye olmayan işlevler için işaretçileri kabul eder. Bu sınırlamayı bir nesne işaretçisine ayarlayarak atlatabilirsiniz. Bu nesne işaretçisi, üye olmayan tüm geri arama işlevlerinize bağımsız değişken olarak geçirilir. Üye olmayan geri arama işlevleriniz içinden üye işlevleri çağırmak için bu işaretçiyi kullanın.
+`AnalysisCallbacks`Ve `RelogCallbacks` yapıları yalnızca üye olmayan işlevlere yönelik işaretçileri kabul eder. Bir nesne işaretçisine ayarlayarak bu sınırlamayı çözebilirsiniz. Bu nesne işaretçisi, tüm üye olmayan geri çağırma işlevleriniz için bir bağımsız değişken olarak geçirilir. Üye olmayan geri çağırma işlevlerinizin içinden üye işlevleri çağırmak için bu işaretçiyi kullanın.
 
-Yeniden günleme oturumunun çözümleme aşaması her zaman yeniden kaydetme aşamasından önce yürütülür.
+Yeniden günlüğe kaydetme oturumunun analiz aşaması her zaman yeniden günlüğe kaydetme aşamasından önce yürütülür.
 
 ::: moniker-end

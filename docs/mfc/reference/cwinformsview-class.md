@@ -1,5 +1,5 @@
 ---
-title: CWinFormsView Sınıfı
+title: CWinFormsView sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWinFormsView
@@ -10,18 +10,18 @@ helpviewer_keywords:
 - CWinFormsView [MFC], CWinFormsView
 - CWinFormsView [MFC], GetControl
 ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895
-ms.openlocfilehash: 6eb6b9e385e9dbc96eb3b62ffb80909e54569e97
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3c247babd2ec1057f1e24b8132ed81727a0fd402
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369601"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040658"
 ---
-# <a name="cwinformsview-class"></a>CWinFormsView Sınıfı
+# <a name="cwinformsview-class"></a>CWinFormsView sınıfı
 
-MFC görünümü olarak Windows Forms denetiminin barındırılamıiçin genel işlevsellik sağlar.
+Bir Windows Forms denetimini MFC görünümü olarak barındırmak için genel işlevsellik sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CWinFormsView : public CView;
@@ -31,41 +31,41 @@ class CWinFormsView : public CView;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CWinFormsView::CWinFormsView](#cwinformsview)|Bir `CWinFormsView` nesne inşa eder.|
+|[CWinFormsView:: CWinFormsView](#cwinformsview)|Bir `CWinFormsView` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CWinFormsView::GetControl](#getcontrol)|Windows Forms denetimi için bir işaretçi alır.|
+|[CWinFormsView:: GetControl](#getcontrol)|Windows Forms denetimine bir işaretçi alır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı||
+|Ad|Açıklama|
 |----------|-|
-|[CWinFormsView::operatör Kontrolü^](#operator_control)|Bir türü Windows Forms denetimine işaretçi olarak atar.|
+|[CWinFormsView:: operator denetimi ^](#operator_control)|Bir türü Windows Forms denetimine işaretçi olarak yayınlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-MFC, `CWinFormsView` bir MFC görünümünde bir .NET Framework Windows Forms denetimini barındırmak için sınıfı kullanır. Denetim, yerel görünümün bir alt alanıdır ve MFC görünümünün tüm istemci alanını kaplar. Sonuç, Windows Forms `CFormView` tasarımcısından yararlanmanızı ve zengin form tabanlı görünümler oluşturmak için zamanı çalıştırmanızı sağlayan bir görünüme benzer.
+MFC, bir `CWinFormsView` MFC görünümü içinde .NET Framework Windows Forms denetimini barındırmak için sınıfını kullanır. Denetim, yerel görünümün bir alt öğesidir ve MFC görünümündeki istemci alanının tamamını kaplar. Sonuç bir görünüme benzer ve `CFormView` zengin form tabanlı görünümler oluşturmak için Windows Forms Tasarımcısı ve çalışma zamanı avantajlarından yararlanmanıza olanak tanır.
 
-Windows Formlarını kullanma hakkında daha fazla bilgi [için](../../dotnet/using-a-windows-form-user-control-in-mfc.md)bkz.
-
-> [!NOTE]
-> MFC Windows Forms tümleştirmesi yalnızca MFC ile dinamik olarak bağlantı sağlayan projelerde çalışır (AFXDLL'nin tanımlandığı projeler).
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
 > [!NOTE]
-> CWinFormsView MFC ayırıcı penceresini desteklemez ( [CSplitterWnd Class).](../../mfc/reference/csplitterwnd-class.md) Şu anda yalnızca Windows Forms Splitter denetimi desteklenir.
+> MFC Windows Forms tümleştirmesi yalnızca MFC ile (AFXDLL tanımlı olan projeler) dinamik olarak bağlanan projelerde işe yarar.
+
+> [!NOTE]
+> CWinFormsView, MFC bölücü penceresini ( [CSplitterWnd sınıfı](../../mfc/reference/csplitterwnd-class.md)) desteklemez. Şu anda yalnızca Windows Forms Bölümlendirici denetimi desteklenir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwinforms.h
+**Üstbilgi:** afxwinforms. h
 
-## <a name="cwinformsviewcwinformsview"></a><a name="cwinformsview"></a>CWinFormsView::CWinFormsView
+## <a name="cwinformsviewcwinformsview"></a><a name="cwinformsview"></a> CWinFormsView:: CWinFormsView
 
-Bir `CWinFormsView` nesne inşa eder.
+Bir `CWinFormsView` nesnesi oluşturur.
 
 ```
 CWinFormsView(System::Type^ pManagedViewType);
@@ -74,19 +74,19 @@ CWinFormsView(System::Type^ pManagedViewType);
 ### <a name="parameters"></a>Parametreler
 
 *pManagedViewType*<br/>
-Windows Forms kullanıcı denetiminin veri türüne işaretçi.
+Windows Forms Kullanıcı denetiminin veri türüne yönelik bir işaretçi.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, `CUserView` sınıf `CWinFormsView` devralır `CWinFormsView` ve yapı `UserControl1` oluşturucuya türü geçer. `UserControl1`ControlLibrary1.dll'de özel olarak oluşturulmuş bir denetimdir.
+Aşağıdaki örnekte, `CUserView` sınıfı öğesinden devralır `CWinFormsView` ve türü `UserControl1` oluşturucuya geçirir `CWinFormsView` . `UserControl1` , ControlLibrary1.dll içinde özel olarak oluşturulmuş bir denetimdir.
 
 [!code-cpp[NVC_MFC_Managed#1](../../mfc/reference/codesnippet/cpp/cwinformsview-class_1.h)]
 
 [!code-cpp[NVC_MFC_Managed#2](../../mfc/reference/codesnippet/cpp/cwinformsview-class_2.cpp)]
 
-## <a name="cwinformsviewgetcontrol"></a><a name="getcontrol"></a>CWinFormsView::GetControl
+## <a name="cwinformsviewgetcontrol"></a><a name="getcontrol"></a> CWinFormsView:: GetControl
 
-Windows Forms denetimi için bir işaretçi alır.
+Windows Forms denetimine bir işaretçi alır.
 
 ```
 System::Windows::Forms::Control^ GetControl() const;
@@ -94,15 +94,15 @@ System::Windows::Forms::Control^ GetControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `System.Windows.Forms.Control` nesneye işaretçi.
+Bir `System.Windows.Forms.Control` nesne işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows Formlarının nasıl kullanılacağına bir örnek [için](../../dotnet/using-a-windows-form-user-control-in-mfc.md)bkz.
+Windows Forms nasıl kullanılacağına ilişkin bir örnek için, bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-## <a name="cwinformsviewoperator-control"></a><a name="operator_control"></a>CWinFormsView::operatör Kontrolü^
+## <a name="cwinformsviewoperator-control"></a><a name="operator_control"></a> CWinFormsView:: operator denetimi ^
 
-Bir türü Windows Forms denetimine işaretçi olarak atar.
+Bir türü Windows Forms denetimine işaretçi olarak yayınlar.
 
 ```
 operator System::Windows::Forms::Control^() const;
@@ -110,15 +110,15 @@ operator System::Windows::Forms::Control^() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, windows `CWinFormsView` forms türü <xref:System.Windows.Forms.Control>denetimine işaretçi kabul eden işlevlere bir görünüm geçirmenize olanak tanır.
+Bu işleç, `CWinFormsView` türünde Windows Forms denetimine yönelik bir işaretçi kabul eden işlevlere bir görünüm geçirmenize olanak sağlar <xref:System.Windows.Forms.Control> .
 
 ### <a name="example"></a>Örnek
 
-  Bkz. [CWinFormsView::GetControl](#getcontrol).
+  Bkz. [CWinFormsView:: GetControl](#getcontrol).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CWinFormsControl Sınıfı](../../mfc/reference/cwinformscontrol-class.md)<br/>
-[CWinFormsDialog Sınıfı](../../mfc/reference/cwinformsdialog-class.md)<br/>
-[CFormView Sınıfı](../../mfc/reference/cformview-class.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CWinFormsControl sınıfı](../../mfc/reference/cwinformscontrol-class.md)<br/>
+[CWinFormsDialog sınıfı](../../mfc/reference/cwinformsdialog-class.md)<br/>
+[CFormView sınıfı](../../mfc/reference/cformview-class.md)

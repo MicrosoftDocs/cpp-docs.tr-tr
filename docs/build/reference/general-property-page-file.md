@@ -5,12 +5,12 @@ f1_keywords:
 - VC.Project.VCFileConfiguration.ExcludedFromBuild
 - VC.Project.VCFileConfiguration.Tool
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
-ms.openlocfilehash: a9281a0ea02bd9b1fd529453cb9a67e54e4ddda7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7626e161e6f59de32d426b558827c423a0bb050d
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168986"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041386"
 ---
 # <a name="general-property-page-file"></a>Genel Özellik Sayfası (Dosya)
 
@@ -22,48 +22,48 @@ Bu konu, Windows projeleri için geçerlidir. Windows dışı projeler için bkz
 
    Dosyanın geçerli yapılandırma için yapıda olması gerekip gerekmediğini belirtir.
 
-   Bu özelliğe programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A>.
+   Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.ExcludedFromBuild%2A> ..
 
 - **İçerik** (yalnızca UWP uygulamaları için geçerlidir.) Dosyanın uygulama paketine dahil edilecek içerik içerip içermediğini belirtir.
 
 - **Öğe türü**
 
-   **Öğe türü** , derleme işlemi sırasında dosyayı işlemek için kullanılacak aracı belirtir. [Uzantısı Visual Studio tarafından bilinen dosyaların](/visualstudio/extensibility/visual-cpp-project-extensibility?view=vs-2019#project-items) bu özellikte varsayılan bir değeri vardır. Özel bir dosya türüne sahipseniz veya bilinen bir dosya türü için varsayılan aracı geçersiz kılmak istiyorsanız burada özel bir araç belirtebilirsiniz. Daha fazla bilgi için bkz. [özel derleme araçları belirtme](../specifying-custom-build-tools.md) . Bu özellik sayfasını, bir dosyanın yapı sürecinin bir parçası olmadığı belirtmek için de kullanabilirsiniz.
+   **Öğe türü** , derleme işlemi sırasında dosyayı işlemek için kullanılacak aracı belirtir. [Uzantısı Visual Studio tarafından bilinen dosyaların](/visualstudio/extensibility/visual-cpp-project-extensibility#project-items) bu özellikte varsayılan bir değeri vardır. Özel bir dosya türüne sahipseniz veya bilinen bir dosya türü için varsayılan aracı geçersiz kılmak istiyorsanız burada özel bir araç belirtebilirsiniz. Daha fazla bilgi için bkz. [özel derleme araçları belirtme](../specifying-custom-build-tools.md) . Bu özellik sayfasını, bir dosyanın yapı sürecinin bir parçası olmadığı belirtmek için de kullanabilirsiniz.
 
-   Aşağıdaki çizimde bir *. cpp* dosyası için özellik sayfası gösterilmektedir. Bu dosya türü için varsayılan **öğe türü** **CC++ /derleyicidir** (*CL. exe*) ve özellik sayfası yalnızca bu dosyaya uygulanabilen çeşitli derleyici ayarlarını gösterir.
+   Aşağıdaki çizimde bir *. cpp* dosyası için özellik sayfası gösterilmektedir. Bu dosya türü için varsayılan **öğe türü** **C/C++ derleyicisidir** (*cl.exe*) ve özellik sayfası yalnızca bu dosyaya uygulanabilen çeşitli derleyici ayarlarını gösterir.
 
    ![Proje öğesi için genel özellik sayfası](media/file-general-item-type.png "Öğe türü seçenekleri")
 
     Aşağıdaki tabloda varsayılan öğe türleri listelenmektedir:
 
-    |Dosya Uzantısı|Öğe türü|Varsayılan araç|
+    |Dosya uzantısı|Öğe türü|Varsayılan araç|
     |-|-|-|
-    |. appx|XAML uygulama tanımı|[Uygulama paketleyicisi](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
-    |. HLSL,. cso|HLSL derleyicisi|[fxc. exe](/windows/win32/direct3dtools/fxc)|
-    |. h|C/C++ üst bilgi|[C/C++ Ön İşlemcisi](../../preprocessor/c-cpp-preprocessor-reference.md)|
+    |.appx|XAML uygulama tanımı|[Uygulama paketleyicisi](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
+    |. HLSL,. cso|HLSL derleyicisi|[fxc.exe](/windows/win32/direct3dtools/fxc)|
+    |. h|C/C++ üst bilgisi|[C/C++ ön Işlemcisi](../../preprocessor/c-cpp-preprocessor-reference.md)|
     |yok|Derlemede yer almaz|yok|
     |. xml,. XSLT,. Xsl|Xml|[XML Düzenleyicisi](/visualstudio/xml-tools/xml-editor)|
-    |. resw,. resjson|PRı kaynağı (UWP uygulamaları)|[MakePri. exe](/windows/uwp/app-resources/compile-resources-manually-with-makepri)|
+    |. resw,. resjson|PRı kaynağı (UWP uygulamaları)|[MakePri.exe](/windows/uwp/app-resources/compile-resources-manually-with-makepri)|
     ||Medya (UWP)|[Uygulama paketleyicisi](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
-    |. xsd|XML veri Oluşturucu aracı|[XML şema tanımı Aracı (xsd. exe)](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) (.NET iş yükü gerektirir. MSVC 'e dahil değildir.)|
-    ||Bildirim Aracı|[mt. exe](/windows/win32/sbscs/mt-exe)|
-    |. RC|Kaynak|[Windows Kaynak derleyicisi (RC. exe)](/windows/win32/menurc/resource-compiler)|
+    |. xsd|XML veri Oluşturucu aracı|[XML şema tanımı Aracı (Xsd.exe)](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) (.NET iş yükü gerektirir. MSVC 'e dahil değildir.)|
+    ||Bildirim Aracı|[mt.exe](/windows/win32/sbscs/mt-exe)|
+    |. RC|Kaynak|[Windows Kaynak derleyicisi (rc.exe)](/windows/win32/menurc/resource-compiler)|
     |. appxmanifest|Uygulama paketi bildirimi|[Uygulama paketleyicisi](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
-    |.obj|Nesne|[C/C++ bağlayıcı (LINK. exe)](cl-invokes-the-linker.md)|
-    |. ttf|Yazý|yok|
-    |c|Metin|yok|
+    |.obj|Nesne|[C/C++ Bağlayıcısı (link.exe)](cl-invokes-the-linker.md)|
+    |. ttf|Yazı tipi|yok|
+    |.txt|Metin|yok|
     |yok|Özel yapı aracı|Kullanıcı tanımlı|
     |yok|Dosyayı Kopyala|yok|
     |. packagelayout|Uygulama paketi düzeni|[Uygulama paketleyicisi](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
-    |.resx|Derleyici tarafından yönetilen kaynak|[Resgen.exe (Kaynak Dosya Oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator)|
-    |. natvis|C++Hata ayıklayıcı görselleştirme dosyası|[Natvis çerçevesi](/visualstudio/debugger/create-custom-views-of-native-objects)|
+    |.resx|Derleyici tarafından yönetilen kaynak|[Resgen.exe (kaynak dosya Oluşturucu)](/dotnet/framework/tools/resgen-exe-resource-file-generator)|
+    |. natvis|C++ hata ayıklayıcısı görselleştirme dosyası|[Natvis çerçevesi](/visualstudio/debugger/create-custom-views-of-native-objects)|
     |. jpg,. bmp,. ico, vb.|Görüntü|Uygulama türünü temel alan kaynak derleyicisi.|
-    |. cpp|C/C++ derleyici|CL. exe|
+    |. cpp|C/C++ derleyicisi|cl.exe|
 
-   Bu özelliğe programlı bir şekilde erişmek için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.
+   Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A> ..
 
-**Yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfasına erişme hakkında daha fazla bilgi Için bkz. [Visual Studio 'Da C++ derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+**Yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfasına erişme hakkında daha fazla bilgi Için bkz. [Visual Studio 'da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Proje özellik sayfası başvurusu](property-pages-visual-cpp.md)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

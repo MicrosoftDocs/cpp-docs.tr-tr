@@ -1,31 +1,31 @@
 ---
-title: Derleyici Uyarısı (düzey 1) C4052
+title: Derleyici Uyarısı (düzey 1) C4055
 ms.date: 11/04/2016
 f1_keywords:
 - C4055
 helpviewer_keywords:
 - C4055
 ms.assetid: f9955421-16ab-46e5-8f9d-bf1639a519ef
-ms.openlocfilehash: e9fcb4356d993d86b622fd49c4a75d587554f7c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 47883f60c3205125a8ee88b804c1d622b3ba0b41
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388611"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041035"
 ---
 # <a name="compiler-warning-level-1-c4055"></a>Derleyici Uyarısı (düzey 1) C4055
 
-> '*dönüştürme*':'veri işaretçisinden '*type1*'için işlev işaretçisi'*type2*'
+> '*dönüştürme*': '*Type1*' veri işaretçisinden '*type2*' işlev işaretçisine
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Eski:** Bu uyarı, Visual Studio 2017 ve sonraki sürümler tarafından oluşturulmaz.
+**Kullanımdan kalktı:** Bu uyarı, Visual Studio 2017 ve sonraki sürümleri tarafından oluşturulmaz.
 
-Veri işaretçisine (büyük olasılıkla hatalı) bir işlev işaretçisi türüne dönüştürülür. Düzey 1 uyarısı /Za altında ve düzey 4 uyarısı /Ze altındaki budur.
+Bir veri işaretçisi, bir işlev işaretçisine (büyük olasılıkla yanlış) dönüştürüldü. Bu,/za altında bir düzey 1 uyarıdır ve/Zein altında düzey 4 uyarısı olur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4055 oluşturur:
+Aşağıdaki örnek C4055 oluşturur:
 
 ```C
 // C4055.c
@@ -37,7 +37,7 @@ PFUNC f() {
 }
 ```
 
-/Ze düzey 4 uyarısı budur.
+/Ze altında bu 4. düzey bir uyarıdır.
 
 ```C
 // C4055b.c

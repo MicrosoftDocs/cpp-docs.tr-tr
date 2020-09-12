@@ -4,12 +4,12 @@ ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 73d6ff9fb9411b146082989d581ed35298b911ad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d9f59817a499f4d529363c88adc57154268c0bc
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229811"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039592"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio 'da C++ derleme sistemleri için açık klasör desteği
 
@@ -31,7 +31,7 @@ CMake, C++ masaüstü iş yükünün bir bileşeni olarak Visual Studio IDE 'de 
 
 Visual Studio IDE 'yi, ana menüden doğrudan desteklenmeyen bir yapı sistemi veya derleyici araç takımı ile kullanmak için **Dosya Seç | Açık | Veya** **CTRL + SHIFT + alt + O**tuşlarına basın. Kaynak kodu dosyalarınızı içeren klasöre gidin. Projeyi derlemek, IntelliSense 'i yapılandırmak ve hata ayıklama parametrelerini ayarlamak için üç JSON dosyası eklersiniz:
 
-| | |
+| Dosya | Description |
 |-|-|
 |Üzerinde CppProperties.js|Göz atmak için özel yapılandırma bilgilerini belirtin. Gerekirse, kök proje klasörünüzde bu dosyayı oluşturun. (CMake projelerinde kullanılmaz.)|
 |Üzerinde tasks.vs.js|Özel derleme komutlarını belirtin. **Çözüm Gezgini** bağlam menüsü öğesi aracılığıyla erişilen **görevleri yapılandırın**.|
@@ -156,7 +156,7 @@ Bu, Visual Studio 'Nun kök proje klasörünüzde oluşturduğu. vs klasöründe
 
 JSON dosyası *. vs* alt klasörüne yerleştirilir. Bu klasörü görmek için **Çözüm Gezgini**üstündeki **tüm dosyaları göster** düğmesine tıklayın. Bu görevi, **Çözüm Gezgini** kök düğümüne sağ tıklayıp **Merhaba Build**' i seçerek çalıştırabilirsiniz. Görev tamamlandığında, **Çözüm Gezgini** *hello.exe* yeni bir dosya görmeniz gerekir.
 
-Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnekte, tek bir görevi tanımlayan bir *dosyatasks.vs.js* gösterilmektedir. `taskLabel`bağlam menüsünde görünen adı tanımlar. `appliesTo`komutun hangi dosyalara uygulanabilir olduğunu tanımlar. `command`Özelliği, konsol yolunu (Windows üzerinde*cmd.exe* ) tanımlayan ComSpec ortam değişkenine başvurur. Ayrıca, üzerinde veya CMakeSettings.jsüzerinde CppProperties.jsolarak belirtilen ortam değişkenlerine de başvurabilirsiniz. `args`Özelliği çağrılacak komut satırını belirtir. `${file}`Makro seçili dosyayı **Çözüm Gezgini**alır. Aşağıdaki örnek, seçili olan. cpp dosyasının dosya adını görüntüler.
+Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnekte, tek bir görevi tanımlayan bir * dosyatasks.vs.js* gösterilmektedir. `taskLabel` bağlam menüsünde görünen adı tanımlar. `appliesTo` komutun hangi dosyalara uygulanabilir olduğunu tanımlar. `command`Özelliği, konsol yolunu (Windows üzerinde*cmd.exe* ) tanımlayan ComSpec ortam değişkenine başvurur. Ayrıca, üzerinde veya CMakeSettings.jsüzerinde CppProperties.jsolarak belirtilen ortam değişkenlerine de başvurabilirsiniz. `args`Özelliği çağrılacak komut satırını belirtir. `${file}`Makro seçili dosyayı **Çözüm Gezgini**alır. Aşağıdaki örnek, seçili olan. cpp dosyasının dosya adını görüntüler.
 
 ```json
 {
@@ -175,11 +175,11 @@ Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnekte, tek bir göre
 
 *tasks.vs.js*kaydettikten sonra, klasördeki herhangi bir *. cpp* dosyasına sağ tıklayabilir, bağlam menüsünden **echo filename** ' i seçebilir ve çıkış penceresinde dosya adının görüntülenmesini sağlayabilirsiniz.
 
-Daha fazla bilgi için bkz. [şema başvurusundaTasks.vs.js](tasks-vs-json-schema-reference-cpp.md).
+Daha fazla bilgi için bkz. [ şema başvurusundaTasks.vs.js](tasks-vs-json-schema-reference-cpp.md).
 
 ### <a name="configure-debugging-parameters-with-launchvsjson"></a>launch.vs.jshata ayıklama parametrelerini yapılandırma
 
-Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Bu, dosya üzerinde var olan bir *launch.vs.js* açar veya yoksa, bir dizi minimum başlatma ayarı olan yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGw-W64 projesinde hata ayıklamak için, **MinGW/Cygwin (GDB) için C/C++ başlatma**' yı seçiyoruz. Bu, varsayılan değerler hakkında bazı eğitimleri tahmin etmek için *gdb.exe* kullanmaya yönelik bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden biri `MINGW_PREFIX` . Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya `MINGW_PREFIX` *üzerindeCppProperties.js*bir özellik tanımlayabilirsiniz:
+Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Bu, dosya üzerinde var olan bir *launch.vs.js* açar veya yoksa, bir dizi minimum başlatma ayarı olan yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGw-W64 projesinde hata ayıklamak için, **MinGW/Cygwin (GDB) için C/C++ başlatma**' yı seçiyoruz. Bu, varsayılan değerler hakkında bazı eğitimleri tahmin etmek için *gdb.exe* kullanmaya yönelik bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden biri `MINGW_PREFIX` . Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya `MINGW_PREFIX` * üzerindeCppProperties.js*bir özellik tanımlayabilirsiniz:
 
 ```json
 {
@@ -207,7 +207,7 @@ Hata ayıklamayı başlatmak için, hata ayıklama açılan menüsünde yürüt�
 
 **Hata ayıklayıcıyı başlatma** iletişim kutusunu ve ardından programınızı çalıştıran bir dış konsol penceresini görmeniz gerekir.
 
-Daha fazla bilgi için bkz. [şema başvurusundalaunch.vs.js](launch-vs-schema-reference-cpp.md).
+Daha fazla bilgi için bkz. [ şema başvurusundalaunch.vs.js](launch-vs-schema-reference-cpp.md).
 
 ## <a name="launching-other-executables"></a>Diğer yürütülebilir dosyalar başlatılıyor
 

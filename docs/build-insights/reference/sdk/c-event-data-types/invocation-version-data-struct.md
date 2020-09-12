@@ -1,6 +1,6 @@
 ---
 title: INVOCATION_VERSION_DATA yapısı
-description: C++ Yapı Öngörüleri SDK yapı referansı INVOCATION_VERSION_DATA.
+description: C++ derleme öngörüleri SDK INVOCATION_VERSION_DATA yapısı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 1211b4eb999fd63767af71c6884d7d20d6920df0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ec54c560dd408dc3beecbc20eaac69d389c7ec37
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325466"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041571"
 ---
 # <a name="invocation_version_data-structure"></a>INVOCATION_VERSION_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Yapı, `INVOCATION_VERSION_DATA` bir sürüm numarasını integral değerler grubu olarak tanımlar.
+Yapı, bir `INVOCATION_VERSION_DATA` sürüm numarasını bir integral değerleri grubu olarak tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct INVOCATION_VERSION_DATA_TAG
@@ -42,11 +42,11 @@ typedef struct INVOCATION_VERSION_DATA_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
 | `VersionMajor` | Sürümün ana numarası. |
-| `VersionMinor` | Sürümün küçük numarası. |
-| `BuildNumberMajor` | Yapının en büyük numarası. |
-| `BuildNumberMinor` | Yapının küçük numarası. |
+| `VersionMinor` | Sürümün küçük sayısı. |
+| `BuildNumberMajor` | Yapılandırmanın ana numarası. |
+| `BuildNumberMinor` | Derleme küçük numarası. |
 
 ::: moniker-end

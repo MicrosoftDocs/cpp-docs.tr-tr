@@ -1,5 +1,5 @@
 ---
-title: ATL Koleksiyon Sınıfları
+title: ATL koleksiyon sınıfına genel bakış
 ms.date: 11/19/2018
 helpviewer_keywords:
 - DestructElements function
@@ -11,92 +11,92 @@ helpviewer_keywords:
 - CTraits classes
 - collection classes
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
-ms.openlocfilehash: 70ca283468a51b4214273698a532ce2a85d52b44
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 039af388a3713540c6ba7d39e8b639cf83d291ff
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223442"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040866"
 ---
 # <a name="atl-collection-classes"></a>ATL Koleksiyon Sınıfları
 
-ATL depolamak ve verilere erişmek için birçok sınıflar sağlar. Kullanmaya karar hangi sınıfı dahil olmak üzere çeşitli etkenlere bağlıdır:
+ATL, verileri depolamak ve bunlara erişmek için birçok sınıf sağlar. Kullanmaya karar vereceğiniz sınıf, aşağıdakiler dahil olmak üzere çeşitli faktörlere bağlıdır:
 
-- Depolanacak veri miktarını
+- Depolanacak veri miktarı
 
-- Kıyasla performans verilerine erişme
+- Verilere erişirken verimlilik ve performans karşılaştırması
 
-- Dizine göre veya anahtara göre veri erişim olanağı
+- Dizine veya anahtara göre verilere erişme özelliği
 
-- Verilerin nasıl düzenlenir
+- Verilerin sıralanma biçimi
 
-- Kişisel tercihi
+- Kişisel tercih
 
 ## <a name="small-collection-classes"></a>Küçük koleksiyon sınıfları
 
-ATL, küçük sayılar nesnelerin başa çıkmak için aşağıdaki dizi sınıfları sağlar. Bu sınıfların ancak sınırlı ve ATL tarafından dahili olarak kullanmak üzere tasarlanan Bunlar programlarınızda kullanmayı önerilmez.
+ATL, az sayıda nesne ile uğraşmakta aşağıdaki dizi sınıflarını sağlar. Ancak, bu sınıflar sınırlı ve ATL tarafından dahili olarak kullanılmak üzere tasarlanmıştır. Bunları programlarınızda kullanmanız önerilmez.
 
-|örneği|Veri depolama türü|
+|Sınıf|Veri depolama türü|
 |-----------|--------------------------|
-|[CSimpleArray](../atl/reference/csimplearray-class.md)|Küçük sayıda nesne içeren başa çıkmak için bir dizi sınıf uygular.|
-|[CSimpleMap](../atl/reference/csimplemap-class.md)|Küçük sayıda nesne içeren başa çıkmak için bir eşleme sınıf uygular.|
+|[CSimpleArray](../atl/reference/csimplearray-class.md)|Az sayıda nesne ile ilgilenirken bir dizi sınıfı uygular.|
+|[CSimpleMap](../atl/reference/csimplemap-class.md)|Az sayıda nesne ile ilgilenirken bir eşleme sınıfı uygular.|
 
-## <a name="general-purpose-collection-classes"></a>Genel amaçlı koleksiyon sınıfları
+## <a name="general-purpose-collection-classes"></a>Genel Amaçlı koleksiyonu sınıfları
 
-Aşağıdaki sınıflar, diziler, listeler ve eşlemeler uygulamak ve genel amaçlı koleksiyon sınıfları sağlanır:
+Takip sınıfları diziler, listeler ve haritalar uygular ve genel amaçlı toplama sınıfları olarak sağlanır:
 
-|örneği|Veri depolama türü|
+|Sınıf|Veri depolama türü|
 |-----------|--------------------------|
 |[CAtlArray](../atl/reference/catlarray-class.md)|Bir dizi uygular.|
-|[CAtlList](../atl/reference/catllist-class.md)|Listesini uygular.|
-|[CAtlMap](../atl/reference/catlmap-class.md)|Anahtar veya değer tarafından veri yapabildiği başvurulabilen bir eşleme yapısı uygular.|
-|[CRBMap](../atl/reference/crbmap-class.md)|Kırmızı-siyah algoritmasını kullanarak bir eşleme yapısı uygular.|
-|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|Kırmızı-siyah multimapping yapısı uygular.|
+|[CAtlList](../atl/reference/catllist-class.md)|Bir liste uygular.|
+|[CAtlMap](../atl/reference/catlmap-class.md)|Veriye anahtar veya değer tarafından başvurulabilen bir eşleme yapısı uygular.|
+|[CRBMap](../atl/reference/crbmap-class.md)|Kırmızı siyah algoritmayı kullanarak bir eşleme yapısı uygular.|
+|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|Kırmızı-siyah çok eşleme yapısı uygular.|
 
-Bu sınıfların hata ayıklama yapılarında kullanılan pek çok programlama hatalarını yakalar, ancak performans for sake of perakende sürümlerde bu denetimleri gerçekleştirilmez.
+Bu sınıflar hata ayıklama yapılarında kullanıldığında birçok programlama hatasını yakalar, ancak performans için bu denetimler, perakende yapılarında gerçekleştirilmeyecektir.
 
 ## <a name="specialized-collection-classes"></a>Özel koleksiyon sınıfları
 
-Daha özel koleksiyon sınıfları, bellek işaretçiler ve arabirim işaretçilerini yönetmek için de sağlanır:
+Bellek işaretçilerini ve arabirim işaretçilerini yönetmek için de daha özelleştirilmiş koleksiyon sınıfları sağlanır:
 
-|örneği|Amaç|
+|Sınıf|Amaç|
 |-----------|-------------|
-|[CAutoPtrArray](../atl/reference/cautoptrarray-class.md)|Akıllı işaretçiler dizisi oluştururken kullanışlı yöntemler sağlar.|
-|[CAutoPtrList](../atl/reference/cautoptrlist-class.md)|Akıllı işaretçiler listesini oluştururken kullanışlı yöntemler sağlar.|
-|[CComUnkArray](../atl/reference/ccomunkarray-class.md)|Depoları `IUnknown` işaretçileri ve parametre olarak kullanılmak üzere tasarlanmış [Iconnectionpointımpl](../atl/reference/iconnectionpointimpl-class.md) Şablon sınıfı.|
-|[CHeapPtrList](../atl/reference/cheapptrlist-class.md)|Yığın işaretçileri listesini oluştururken kullanışlı yöntemler sağlar.|
-|[Cınterfacearray](../atl/reference/cinterfacearray-class.md)|Bir COM arabirimi işaretçiler dizisi oluştururken kullanışlı yöntemler sağlar.|
-|[Cınterfacelist](../atl/reference/cinterfacelist-class.md)|COM arabirim işaretçilerini listesini oluştururken kullanışlı yöntemler sağlar.|
+|[CAutoPtrArray](../atl/reference/cautoptrarray-class.md)|Akıllı işaretçiler dizisi oluştururken yararlı yöntemler sağlar.|
+|[CAutoPtrList](../atl/reference/cautoptrlist-class.md)|Akıllı işaretçiler listesi oluştururken yararlı yöntemler sağlar.|
+|[CComUnkArray](../atl/reference/ccomunkarray-class.md)|`IUnknown`İşaretçileri depolar ve [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) şablon sınıfına parametre olarak kullanılmak üzere tasarlanmıştır.|
+|[CHeapPtrList](../atl/reference/cheapptrlist-class.md)|Yığın işaretçileri listesi oluştururken yararlı yöntemler sağlar.|
+|[CInterfaceArray](../atl/reference/cinterfacearray-class.md)|Bir COM arabirim işaretçileri dizisi oluştururken yararlı yöntemler sağlar.|
+|[CInterfaceList](../atl/reference/cinterfacelist-class.md)|COM arabirim işaretçilerinin listesini oluştururken yararlı yöntemler sağlar.|
 
 ## <a name="choosing-a-collection-class"></a>Koleksiyon sınıfı seçme
 
-Aşağıdaki tabloda gösterildiği gibi mevcut koleksiyon sınıflarının her biri farklı performans özellikleri sunar.
+Kullanılabilir koleksiyon sınıflarının her biri, aşağıdaki tabloda gösterildiği gibi farklı performans özellikleri sağlar.
 
-- Sütun 2 ve 3 her sınıfın sıralama açıklamak ve özelliklere erişim. Tabloda, bunların sırası koleksiyondaki belirleyen öğeleri eklenen ve Silinen sırası "sıralı" terimi anlamına gelir; öğeler içeriklerine göre sıralanır gelmez. "Dizin" terimi, koleksiyondaki öğelerin tipik bir dizi öğelerinde gibi bir tamsayı dizini tarafından alınabilen anlamına gelir.
+- 2 ve 3. sütunlar her sınıfın sıralama ve erişim özelliklerini anlatmaktadır. Tabloda, "siparişli" terimi, öğelerin eklendiği ve silineceği sıranın koleksiyondaki sıralarını belirler; öğelerin içeriklerinin sıralandığı anlamına gelmez. "Dizinli" terimi, koleksiyondaki öğelerin tipik bir dizideki öğeler gibi bir tamsayı dizin tarafından alınamayacağını gösterir.
 
-- 4. ve 5 sütunları her sınıfın performans açıklanmaktadır. Koleksiyona birçok eklemeler gerektiren uygulamalarda ekleme hızının özellikle önemli olabilir; diğer uygulamalar için hızlı arama daha önemli olabilir.
+- 4 ve 5. sütunlar her sınıfın performansını anlatmaktadır. Koleksiyonda çok sayıda eklemeler gerektiren uygulamalarda, ekleme hızı özellikle önemli olabilir; diğer uygulamalar için, arama hızı daha önemli olabilir.
 
-- Her bir şeklin yinelenen öğeler izin verip vermediğini sütun 6 açıklar.
+- Sütun 6 her şeklin yinelenen öğelere izin verip içermediğini açıklar.
 
-- Bir koleksiyon sınıfı işleminin performansı bakımından işlemi ve koleksiyondaki öğe sayısını tamamlamak için gereken süreyi arasındaki ilişki gösterilir. Zaman alan bir işlem sayısı arttıkça öğeleri O(n) algoritma açıklandığı gibi doğrusal olarak artırır. Daha sayısı arttıkça öğeleri olarak artıran bir süre alma işleminin aksine, bir O (log n) algoritması açıklanmaktadır. Bu nedenle, performans açısından, O (log n) algoritmaları O(n) algoritmaları daha sayısı arttıkça öğeleri olarak daha iyi performans gösterir.
+- Belirli bir koleksiyon sınıfı işleminin performansı, işlemi tamamlaması için gereken süre ve koleksiyondaki öğe sayısı arasındaki ilişki açısından ifade edilir. Öğe sayısı arttıkça, bir O (n) algoritması olarak açıklanarak doğrusal bir süre artan bir işlem. Bunun aksine, öğe sayısı arttıkça daha az ve daha az bir zaman alan bir işlem, O (log n) algoritması olarak açıklanmaktadır. Bu nedenle, performans, O (log n) algoritmalarının, öğe sayısı arttıkça O (n) algoritmaların daha fazla ve daha fazlasını gerçekleştirmesini.
 
-### <a name="collection-shape-features"></a>Koleksiyonu şekli özellikleri
+### <a name="collection-shape-features"></a>Koleksiyon şekli özellikleri
 
-|Şekil|Sıralı|Dizin|INSERT bir<br /><br /> öğesi|Aranan:<br /><br /> Belirtilen öğe|Yinelenen<br /><br /> öğeler|
+|Şekil|Sipariş edildi|Oluşturulmayacak|Ekle<br /><br /> öğesi|Aranan:<br /><br /> Belirtilen öğe|Yinele<br /><br /> öğeler|
 |-----------|--------------|--------------|---------------------------|--------------------------------------|-----------------------------|
-|List|Evet|Hayır|Hızlı (sabit zaman)|Yavaş O(n)|Evet|
-|Dizi|Evet|İnt tarafından (sabit zaman)|Sonunda, büyük/küçük harf hangi Sabit sürede ekleme, dışında O(n) yavaş|Yavaş O(n)|Evet|
-|Eşleme|Hayır|Anahtara göre (sabit zaman)|Hızlı (sabit zaman)|Hızlı (sabit zaman)|Evet (değerler) (anahtar)|
-|Kırmızı-siyah eşleme|Evet (anahtar)|Anahtara göre O (log n)|Hızlı O (log n)|Hızlı O (log n)|Hayır|
-|Kırmızı-siyah Multimap|Evet (anahtar)|Anahtara göre O(log n) (birden çok değer anahtarı başına)|Hızlı O (log n)|Hızlı O (log n)|Evet (birden çok değer anahtarı başına)|
+|Liste|Yes|Hayır|Hızlı (sabit zaman)|Yavaş O (n)|Yes|
+|Dizi|Yes|By int (sabit zaman)|Son olarak, bu durumda sabit zaman ekleme haricinde yavaş O (n)|Yavaş O (n)|Yes|
+|Harita|No|Anahtara göre (sabit zaman)|Hızlı (sabit zaman)|Hızlı (sabit zaman)|Hayır (anahtar) Evet (değerler)|
+|Kırmızı-siyah harita|Evet (anahtara göre)|Anahtar O 'a göre (log n)|Hızlı O (log n)|Hızlı O (log n)|No|
+|Kırmızı-siyah multimap|Evet (anahtara göre)|Anahtara (log n) göre (anahtar başına birden çok değer)|Hızlı O (log n)|Hızlı O (log n)|Evet (anahtar başına birden çok değer)|
 
-## <a name="using-ctraits-objects"></a>CTraits nesnelerini kullanma
+## <a name="using-ctraits-objects"></a>Cnitelikler nesnelerini kullanma
 
-ATL koleksiyon sınıfları çeşitli kullanıcı tanımlı veri türleri depolamak için kullanılan karşılaştırma gibi önemli işlevleri geçersiz kılma yararlı olabilir. CTraits sınıfları kullanılarak elde edilir.
+ATL koleksiyon sınıfları çok çeşitli Kullanıcı tanımlı veri türlerini depolamak için kullanılabilir, karşılaştırmalar gibi önemli işlevleri geçersiz kılabilmek yararlı olabilir. Bu, Cnitelikler sınıfları kullanılarak elde edilir.
 
-CTraits sınıfları benzer, ancak daha esnektir, MFC koleksiyon sınıfı yardımcı işlevleri; bkz: [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md) daha fazla bilgi için.
+Cnitelikler sınıfları, MFC koleksiyon sınıfı yardımcı işlevleri ile benzerdir, ancak daha esnektir. daha fazla bilgi için bkz. [koleksiyon sınıfı Yardımcıları](../mfc/reference/collection-class-helpers.md) .
 
-Koleksiyon sınıfınıza oluştururken CTraits sınıf belirtme seçeneğiniz vardır. Bu sınıf koleksiyon sınıfı oluşturan diğer yöntemlerle çağrıldığında karşılaştırmalar gibi işlemleri gerçekleştiren kod içerir. Örneğin, liste nesnesi kendi kullanıcı tarafından tanımlanan yapıları içeriyorsa, yalnızca belirli üye değişkenleri karşılaştırmak için eşitlik testi yeniden tanımlamak isteyebilirsiniz. Liste nesne bulma yöntemi, bu şekilde, daha kullanışlı bir şekilde çalışır.
+Koleksiyon sınıfınızı oluştururken, Cnitelikler sınıfı belirtme seçeneğiniz vardır. Bu sınıf, koleksiyon sınıfını oluşturan diğer yöntemler tarafından çağrıldığında karşılaştırmalar gibi işlemleri gerçekleştirecek kodu içerir. Örneğin, liste nesneniz kendi Kullanıcı tanımlı yapılarınızı içeriyorsa, yalnızca belirli üye değişkenlerini karşılaştırmak için eşitlik testini yeniden tanımlamak isteyebilirsiniz. Bu şekilde, list nesnesinin Find yöntemi daha kullanışlı bir şekilde çalışır.
 
 ## <a name="example"></a>Örnek
 
@@ -104,27 +104,27 @@ Koleksiyon sınıfınıza oluştururken CTraits sınıf belirtme seçeneğiniz v
 
 [!code-cpp[NVC_ATL_Utilities#112](../atl/codesnippet/cpp/atl-collection-classes_1.cpp)]
 
-## <a name="comments"></a>Açıklamalar
+## <a name="comments"></a>Yorumlar
 
-CTraits sınıfları listesi için bkz. [koleksiyon sınıfları](../atl/collection-classes.md).
+Cnitelikler sınıflarının bir listesi için bkz. [koleksiyon sınıfları](../atl/collection-classes.md).
 
-Aşağıdaki diyagramda CTraits sınıfları için sınıf hiyerarşisini gösterir.
+Aşağıdaki diyagramda Cnitelikler sınıfları için sınıf hiyerarşisi gösterilmektedir.
 
-![Koleksiyon sınıfları için karakter hiyerarşisi](../atl/media/vctraitscollectionclasseshierarchy.gif "nitelikler hiyerarşi için koleksiyon sınıfları")
+![Koleksiyon sınıfları için nitelikler hiyerarşisi](../atl/media/vctraitscollectionclasseshierarchy.gif "Koleksiyon sınıfları için nitelikler hiyerarşisi")
 
-## <a name="collection-classes-samples"></a>Örnekleri koleksiyon sınıfları
+## <a name="collection-classes-samples"></a>Koleksiyon sınıfları örnekleri
 
-Aşağıdaki örnekler, koleksiyon sınıfları göstermektedir:
+Aşağıdaki örnekler koleksiyon sınıflarını gösterir:
 
-- [MMXSwarm örnek](../overview/visual-cpp-samples.md)
+- [Mmxsısınma örneği](../overview/visual-cpp-samples.md)
 
-- [DynamicConsumer örnek](../overview/visual-cpp-samples.md)
+- [DynamicConsumer örneği](../overview/visual-cpp-samples.md)
 
-- [Oluşturma](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)
+- [UpdatePV örneği](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)
 
-- [Kayan örnek](../overview/visual-cpp-samples.md)
+- [Kayan yazı örneği](../overview/visual-cpp-samples.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)<br/>
-[Koleksiyon Sınıfları](../atl/collection-classes.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)<br/>
+[Koleksiyon sınıfları](../atl/collection-classes.md)

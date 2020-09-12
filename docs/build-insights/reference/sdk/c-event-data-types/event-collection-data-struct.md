@@ -1,6 +1,6 @@
 ---
 title: EVENT_COLLECTION_DATA yapısı
-description: C++ Build Insights SDK yapı referansı EVENT_COLLECTION_DATA.
+description: C++ derleme öngörüleri SDK EVENT_COLLECTION_DATA yapısı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 88ba39ede8c86f47c2e6458332ae005eddc06fda
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 58be46d31af154bfe7ecef5c440092eaafdcbb0f
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325688"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039605"
 ---
 # <a name="event_collection_data-structure"></a>EVENT_COLLECTION_DATA yapısı
 
 ::: moniker range="<=vs-2015"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 ::: moniker range=">=vs-2017"
 
-Yapı, `EVENT_COLLECTION_DATA` bir dizi [EVENT_DATA](event-data-struct.md) öğeyi açıklar.
+`EVENT_COLLECTION_DATA`Yapı, bir dizi [EVENT_DATA](event-data-struct.md) öğesi tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct EVENT_COLLECTION_DATA_TAG
@@ -40,9 +40,9 @@ typedef struct EVENT_COLLECTION_DATA_TAG
 
 ## <a name="members"></a>Üyeler
 
-|  |  |
+| Ad | Açıklama |
 |--|--|
-| `Count` | Dizideki `EVENT_DATA` öğelerin sayısı. |
-| `Elements` | Dizideki ilk `EVENT_DATA` öğeyi işaretle. |
+| `Count` | `EVENT_DATA`Dizideki öğelerin sayısı. |
+| `Elements` | Dizideki ilk öğeye yönelik işaretçi `EVENT_DATA` . |
 
 ::: moniker-end

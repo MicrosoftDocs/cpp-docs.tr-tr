@@ -60,18 +60,18 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: 1f12e15c89d14be8936e6414ea82ce5a6e7e1d10
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5be6a578fdd1d4e329c5b55d307d924a6c539e3d
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212468"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042088"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 
 Microsoft Foundation Class dosya sınıfları için temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CFile : public CObject
@@ -134,7 +134,7 @@ class CFile : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, doğrudan arabelleğe alınmamış, ikili disk giriş/çıkış hizmetleri sağlar ve türetilmiş sınıflar aracılığıyla metin dosyalarını ve bellek dosyalarını dolaylı olarak destekler. `CFile`, `CArchive` Microsoft Foundation Class nesnelerinin serileştirmesini desteklemek için sınıfıyla birlikte çalışarak.
+Bu, doğrudan arabelleğe alınmamış, ikili disk giriş/çıkış hizmetleri sağlar ve türetilmiş sınıflar aracılığıyla metin dosyalarını ve bellek dosyalarını dolaylı olarak destekler. `CFile` , `CArchive` Microsoft Foundation Class nesnelerinin serileştirmesini desteklemek için sınıfıyla birlikte çalışarak.
 
 Bu sınıf ve türetilmiş sınıfları arasındaki hiyerarşik ilişki, programınızın tüm dosya nesnelerinde polimorfik arabirim aracılığıyla çalışmasını sağlar `CFile` . Bir bellek dosyası, örneğin bir disk dosyası gibi davranır.
 
@@ -154,7 +154,7 @@ Kullanma hakkında daha fazla bilgi için `CFile` bkz. [MFC 'Deki makale dosyala
 
 **Üstbilgi:** AFX. h
 
-## <a name="cfileabort"></a><a name="abort"></a>CFile:: Abort
+## <a name="cfileabort"></a><a name="abort"></a> CFile:: Abort
 
 Bu nesneyle ilişkili dosyayı kapatır ve dosyayı okuma veya yazma için kullanılamaz hale getirir.
 
@@ -174,7 +174,7 @@ Nesneyi yok etmeden önce dosyayı kapatmadıysanız, yıkıcı sizin için kapa
 
 [!code-cpp[NVC_MFCFiles#5](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_1.cpp)]
 
-## <a name="cfilecfile"></a><a name="cfile"></a>CFile:: CFile
+## <a name="cfilecfile"></a><a name="cfile"></a> CFile:: CFile
 
 Bir nesnesi oluşturur ve başlatır `CFile` .
 
@@ -272,7 +272,7 @@ Aşağıdaki kod, ' nin nasıl kullanılacağını göstermektedir `CFile` .
 
 [!code-cpp[NVC_MFCFiles#4](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_2.cpp)]
 
-## <a name="cfileclose"></a><a name="close"></a>CFile:: Close
+## <a name="cfileclose"></a><a name="close"></a> CFile:: Close
 
 Bu nesneyle ilişkili dosyayı kapatır ve dosyayı okuma veya yazma için kullanılamaz hale getirir.
 
@@ -290,7 +290,7 @@ Nesneyi yok etmeden önce dosyayı kapatmadıysanız, yıkıcı sizin için kapa
 
 [CFile:: CFile](#cfile)örneğine bakın.
 
-## <a name="cfileduplicate"></a><a name="duplicate"></a>CFile::D yukarı
+## <a name="cfileduplicate"></a><a name="duplicate"></a> CFile::D yukarı
 
 `CFile`Belirli bir dosya için yinelenen bir nesne oluşturur.
 
@@ -306,7 +306,7 @@ Yinelenen nesneye yönelik bir işaretçi `CFile` .
 
 Bu işlev, C çalışma zamanı işlevine eşdeğerdir `_dup` .
 
-## <a name="cfileflush"></a><a name="flush"></a>CFile:: Flush
+## <a name="cfileflush"></a><a name="flush"></a> CFile:: Flush
 
 Dosya arabelleğinde kalan tüm verileri dosyaya yazılmasına zorlar.
 
@@ -322,7 +322,7 @@ Kullanımı, `Flush` arabelleklerin temizlenme garantisi vermez `CArchive` . Bir
 
 [CFile:: SetFilePath](#setfilepath)örneğine bakın.
 
-## <a name="cfilegetfilename"></a><a name="getfilename"></a>CFile:: GetFileName
+## <a name="cfilegetfilename"></a><a name="getfilename"></a> CFile:: GetFileName
 
 Belirtilen bir dosyanın adını almak için bu üye işlevini çağırın.
 
@@ -346,7 +346,7 @@ Bu kod parçası, WINDOWS dizininizde SYSTEM.INI dosyasını açar. Bulunursa ö
 
 [!code-cpp[NVC_MFCFiles#6](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_3.cpp)]
 
-## <a name="cfilegetfilepath"></a><a name="getfilepath"></a>CFile:: GetFilePath
+## <a name="cfilegetfilepath"></a><a name="getfilepath"></a> CFile:: GetFilePath
 
 Belirtilen bir dosyanın tam yolunu almak için bu üye işlevi çağırın.
 
@@ -368,7 +368,7 @@ Yalnızca dosyanın adını () döndürmek için `myfile.wri` [GetFileName](#get
 
 [GetFileName](#getfilename)örneğine bakın.
 
-## <a name="cfilegetfiletitle"></a><a name="getfiletitle"></a>CFile:: GetFileTitle
+## <a name="cfilegetfiletitle"></a><a name="getfiletitle"></a> CFile:: GetFileTitle
 
 Dosya için dosya başlığını (görünen ad) almak için bu üye işlevi çağırın.
 
@@ -390,7 +390,7 @@ Adı da dahil olmak üzere dosyanın tüm yolunu döndürmek için [GetFilePath]
 
 [GetFileName](#getfilename)örneğine bakın.
 
-## <a name="cfilegetlength"></a><a name="getlength"></a>CFile:: GetLength
+## <a name="cfilegetlength"></a><a name="getlength"></a> CFile:: GetLength
 
 Dosyanın geçerli mantıksal uzunluğunu bayt cinsinden edinir.
 
@@ -406,7 +406,7 @@ Dosyanın uzunluğu.
 
 [!code-cpp[NVC_MFCFiles#7](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_4.cpp)]
 
-## <a name="cfilegetposition"></a><a name="getposition"></a>CFile:: GetPosition
+## <a name="cfilegetposition"></a><a name="getposition"></a> CFile:: GetPosition
 
 Daha sonraki çağrılarında kullanılabilen dosya işaretçisinin geçerli değerini alır `Seek` .
 
@@ -422,7 +422,7 @@ Dosya işaretçisi.
 
 [!code-cpp[NVC_MFCFiles#8](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_5.cpp)]
 
-## <a name="cfilegetstatus"></a><a name="getstatus"></a>CFile:: GetStatus
+## <a name="cfilegetstatus"></a><a name="getstatus"></a> CFile:: GetStatus
 
 Bu yöntem, belirli bir nesne örneğiyle ilgili durum bilgilerini `CFile` veya belirli bir dosya yolunu alır.
 
@@ -440,17 +440,17 @@ static BOOL PASCAL GetStatus(
 *rStatus*<br/>
 `CFileStatus`Durum bilgilerini alacak Kullanıcı tarafından sağlanan yapıya başvuru. `CFileStatus`Yapı aşağıdaki alanlara sahiptir:
 
-- `CTime m_ctime`Dosyanın oluşturulduğu tarih ve saat.
+- `CTime m_ctime` Dosyanın oluşturulduğu tarih ve saat.
 
-- `CTime m_mtime`Dosyanın son değiştirildiği tarih ve saat.
+- `CTime m_mtime` Dosyanın son değiştirildiği tarih ve saat.
 
-- `CTime m_atime`Dosyanın okuma için son erişildiği tarih ve saat.
+- `CTime m_atime` Dosyanın okuma için son erişildiği tarih ve saat.
 
-- `ULONGLONG m_size`DIZIN komutu tarafından raporlanarak dosyanın bayt cinsinden mantıksal boyutu.
+- `ULONGLONG m_size` DIZIN komutu tarafından raporlanarak dosyanın bayt cinsinden mantıksal boyutu.
 
-- `BYTE m_attribute`Dosyanın öznitelik baytı.
+- `BYTE m_attribute` Dosyanın öznitelik baytı.
 
-- `char m_szFullName[_MAX_PATH]`Windows karakter kümesindeki mutlak dosya adı.
+- `char m_szFullName[_MAX_PATH]` Windows karakter kümesindeki mutlak dosya adı.
 
 *lpszFileName*<br/>
 Windows karakter kümesindeki, istenen dosyanın yolu olan bir dize. Yol göreli veya mutlak olabilir ya da bir ağ yolu adı içerebilir.
@@ -484,7 +484,7 @@ enum Attribute {
 
 [!code-cpp[NVC_MFCFiles#10](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_6.cpp)]
 
-## <a name="cfilehfilenull"></a><a name="hfilenull"></a>CFile:: hFileNull
+## <a name="cfilehfilenull"></a><a name="hfilenull"></a> CFile:: hFileNull
 
 Nesne için geçerli bir dosya tanıtıcısının varlığını belirler `CFile` .
 
@@ -500,7 +500,7 @@ Aşağıdaki örnekte bu işlem gösterilmektedir:
 
 [!code-cpp[NVC_MFCFiles#22](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_7.cpp)]
 
-## <a name="cfilelockrange"></a><a name="lockrange"></a>CFile:: LockRange
+## <a name="cfilelockrange"></a><a name="lockrange"></a> CFile:: LockRange
 
 Dosya zaten kilitliyse bir özel durum oluşturan bir açık dosyadaki bayt aralığını kilitler.
 
@@ -531,7 +531,7 @@ Bir dosyadaki kilitleme baytları diğer işlemlere göre bu baytlara erişimi e
 
 [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]
 
-## <a name="cfilem_hfile"></a><a name="m_hfile"></a>CFile:: m_hFile
+## <a name="cfilem_hfile"></a><a name="m_hfile"></a> CFile:: m_hFile
 
 Açık bir dosya için işletim sistemi dosya tanıtıcısını içerir.
 
@@ -541,11 +541,11 @@ HANDLE m_hFile;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_hFile`, UINT türünde genel bir değişkendir. `CFile::hFileNull`Tanıtıcı atanmamışsa, işletim sisteminin bağımsız boş bir dosya göstergesi içerir.
+`m_hFile` , UINT türünde genel bir değişkendir. `CFile::hFileNull`Tanıtıcı atanmamışsa, işletim sisteminin bağımsız boş bir dosya göstergesi içerir.
 
-`m_hFile`Üyenin anlamı türetilmiş sınıfa bağlı olduğundan, kullanılması önerilmez. `m_hFile`, sınıfının polimorfik olmayan kullanımını destekleme konusunda kolaylık sağlaması için genel bir üye yapılır.
+`m_hFile`Üyenin anlamı türetilmiş sınıfa bağlı olduğundan, kullanılması önerilmez. `m_hFile` , sınıfının polimorfik olmayan kullanımını destekleme konusunda kolaylık sağlaması için genel bir üye yapılır.
 
-## <a name="cfilem_ptm"></a><a name="m_ptm"></a>CFile:: m_pTM
+## <a name="cfilem_ptm"></a><a name="m_ptm"></a> CFile:: m_pTM
 
 Bir nesne işaretçisi `CAtlTransactionManager` .
 
@@ -555,9 +555,9 @@ CAtlTransactionManager* m_pTM;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cfileopen"></a><a name="open"></a>CFile:: Open
+## <a name="cfileopen"></a><a name="open"></a> CFile:: Open
 
-Fazla Yüklendi. `Open`Varsayılan Oluşturucu ile kullanılmak üzere tasarlanmıştır `CFile` .
+Fazla Yüklendi. `Open` Varsayılan Oluşturucu ile kullanılmak üzere tasarlanmıştır `CFile` .
 
 ```
 virtual BOOL Open(
@@ -578,7 +578,7 @@ virtual BOOL Open(
 İstenen dosyanın yolunu içeren bir dize. Yol göreli, mutlak veya ağ adı (UNC) olabilir.
 
 *nOpenFlags*<br/>
-Dosyanın paylaşım ve erişim modunu tanımlayan bir UINT. Dosya açılırken gerçekleştirilecek eylemi belirtir. Bit düzeyinde OR ( **&#124;** ) işlecini kullanarak seçenekleri birleştirebilirsiniz. Bir erişim izni ve bir paylaşma seçeneği gereklidir; `modeCreate`ve `modeNoInherit` modları isteğe bağlıdır. Mod seçeneklerinin bir listesi için bkz. [CFile](#cfile) Oluşturucusu.
+Dosyanın paylaşım ve erişim modunu tanımlayan bir UINT. Dosya açılırken gerçekleştirilecek eylemi belirtir. Bit düzeyinde OR ( **&#124;** ) işlecini kullanarak seçenekleri birleştirebilirsiniz. Bir erişim izni ve bir paylaşma seçeneği gereklidir; `modeCreate` ve `modeNoInherit` modları isteğe bağlıdır. Mod seçeneklerinin bir listesi için bkz. [CFile](#cfile) Oluşturucusu.
 
 *pError*<br/>
 Hatalı bir işlemin durumunu alacak olan, var olan bir dosya özel durum nesnesine yönelik bir işaretçi.
@@ -594,16 +594,16 @@ Açma başarılı olursa sıfır dışı; Aksi takdirde 0. *PError* parametresi 
 
 İki `Open` işlev, bir hatanın normal, beklenen bir koşul olduğu bir dosyayı açmaya yönelik "güvenli" yöntemlerdir.
 
-`CFile`Oluşturucu bir hata koşulunda özel durum oluşturduğunda, `Open` hata koşulları için false döndürür. `Open`, hatayı anlatmak için yine de bir [CFileException](../../mfc/reference/cfileexception-class.md) nesnesi başlatabilir. *PError* parametresini sağlamadıysanız veya *PERROR*için null değeri geçirirseniz, `Open` false değerini döndürür ve oluşturmaz `CFileException` . Var olan bir işaretçi varsa `CFileException` ve bir `Open` hatayla karşılaşırsa, işlev bu hatayı açıklayan bilgilerle doldurulur. `Open`Her iki durumda da bir özel durum oluşturmaz.
+`CFile`Oluşturucu bir hata koşulunda özel durum oluşturduğunda, `Open` hata koşulları için false döndürür. `Open` , hatayı anlatmak için yine de bir [CFileException](../../mfc/reference/cfileexception-class.md) nesnesi başlatabilir. *PError* parametresini sağlamadıysanız veya *PERROR*için null değeri geçirirseniz, `Open` false değerini döndürür ve oluşturmaz `CFileException` . Var olan bir işaretçi varsa `CFileException` ve bir `Open` hatayla karşılaşırsa, işlev bu hatayı açıklayan bilgilerle doldurulur. `Open` Her iki durumda da bir özel durum oluşturmaz.
 
 Aşağıdaki tabloda, olası sonuçları açıklanmaktadır `Open` .
 
-|`pError`|Hatayla karşılaşıldı|Döndürülen değer|CFileException içeriği|
-|--------------|------------------------|------------------|----------------------------|
-|NULL|Hayır|TRUE|yok|
-|için PTR`CFileException`|Hayır|TRUE|değiştirilmediği|
-|NULL|Yes|FALSE|yok|
-|için PTR`CFileException`|Yes|FALSE|hatayı tanımlayacak şekilde başlatıldı|
+| `pError` | Hatayla karşılaşıldı | Döndürülen değer | CFileException içeriği |
+|--|--|--|--|
+| NULL | No | TRUE | yok |
+| için PTR `CFileException` | No | TRUE | değiştirilmediği |
+| NULL | Yes | FALSE | yok |
+| için PTR `CFileException` | Yes | FALSE | hatayı tanımlayacak şekilde başlatıldı |
 
 ### <a name="example"></a>Örnek
 
@@ -611,7 +611,7 @@ Aşağıdaki tabloda, olası sonuçları açıklanmaktadır `Open` .
 
 [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]
 
-## <a name="cfileoperator-handle"></a><a name="operator_handle"></a>CFile:: operator işleci
+## <a name="cfileoperator-handle"></a><a name="operator_handle"></a> CFile:: operator işleci
 
 `CFile` [ReadFileEx](/windows/win32/api/fileapi/nf-fileapi-readfileex) ve [GetFileTime](/windows/win32/api/fileapi/nf-fileapi-getfiletime) gibi işlevlere bir nesneye bir tanıtıcı geçirmek için bu işleci kullanın `HANDLE` .
 
@@ -619,7 +619,7 @@ Aşağıdaki tabloda, olası sonuçları açıklanmaktadır `Open` .
 operator HANDLE() const;
 ```
 
-## <a name="cfileread"></a><a name="read"></a>CFile:: Read
+## <a name="cfileread"></a><a name="read"></a> CFile:: Read
 
 Nesneyle ilişkili dosyadaki verileri arabelleğe okur `CFile` .
 
@@ -647,7 +647,7 @@ Arabelleğe aktarılan baytların sayısı. Tüm `CFile` sınıflar için, dosya
 
 Diğer bir örnek için bkz. [CFile:: Open](#open).
 
-## <a name="cfileremove"></a><a name="remove"></a>CFile:: Remove
+## <a name="cfileremove"></a><a name="remove"></a> CFile:: Remove
 
 Bu statik işlev, yol tarafından belirtilen dosyayı siler.
 
@@ -667,7 +667,7 @@ CAtlTransactionManager nesnesine yönelik işaretçi
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Remove`bir dizin kaldırılmaz.
+`Remove` bir dizin kaldırılmaz.
 
 `Remove`Üye işlevi, bağlı dosya açıksa veya dosya kaldırılamadığı takdirde bir özel durum oluşturur. Bu işlev DEL komutuna eşdeğerdir.
 
@@ -675,7 +675,7 @@ CAtlTransactionManager nesnesine yönelik işaretçi
 
 [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_12.cpp)]
 
-## <a name="cfilerename"></a><a name="rename"></a>CFile:: Rename
+## <a name="cfilerename"></a><a name="rename"></a> CFile:: Rename
 
 Bu statik işlev belirtilen dosyayı yeniden adlandırır.
 
@@ -705,7 +705,7 @@ Dizinler yeniden adlandırılamaz. Bu işlev, REN komutuna eşdeğerdir.
 
 [!code-cpp[NVC_MFCFiles#18](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_13.cpp)]
 
-## <a name="cfileseek"></a><a name="seek"></a>CFile:: Seek
+## <a name="cfileseek"></a><a name="seek"></a> CFile:: Seek
 
 Dosya işaretçisini açık bir dosyada konumlandırır.
 
@@ -747,7 +747,7 @@ Bu yöntem için özel durum işleyicisi, özel durum işlendikten sonra özel d
 
 [!code-cpp[NVC_MFCFiles#9](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_14.cpp)]
 
-## <a name="cfileseektobegin"></a><a name="seektobegin"></a>CFile:: Seektobegın
+## <a name="cfileseektobegin"></a><a name="seektobegin"></a> CFile:: Seektobegın
 
 Dosya işaretçisinin değerini dosyanın başlangıcına ayarlar.
 
@@ -757,13 +757,13 @@ void SeekToBegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SeekToBegin()`değerine eşdeğerdir `Seek( 0L, CFile::begin )` .
+`SeekToBegin()` değerine eşdeğerdir `Seek( 0L, CFile::begin )` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]
 
-## <a name="cfileseektoend"></a><a name="seektoend"></a>CFile:: SeekToEnd
+## <a name="cfileseektoend"></a><a name="seektoend"></a> CFile:: SeekToEnd
 
 Dosya işaretçisinin değerini dosyanın mantıksal sonuna ayarlar.
 
@@ -777,13 +777,13 @@ Dosyanın bayt cinsinden uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SeekToEnd()`değerine eşdeğerdir `CFile::Seek( 0L, CFile::end )` .
+`SeekToEnd()` değerine eşdeğerdir `CFile::Seek( 0L, CFile::end )` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#19](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_15.cpp)]
 
-## <a name="cfilesetfilepath"></a><a name="setfilepath"></a>CFile:: SetFilePath
+## <a name="cfilesetfilepath"></a><a name="setfilepath"></a> CFile:: SetFilePath
 
 Dosyanın yolunu belirtmek için bu işlevi çağırın. Örneğin, bir [CFile](../../mfc/reference/cfile-class.md) nesnesi oluşturulduğunda bir dosyanın yolu kullanılabilir değilse, `SetFilePath` bunu sağlamak için çağırın.
 
@@ -799,13 +799,13 @@ Yeni yolu belirten bir dize işaretçisi.
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> `SetFilePath`dosyayı açmaz veya dosyayı oluşturmaz; `CFile`nesneyi, daha sonra kullanılabilecek bir yol adıyla ilişkilendirir.
+> `SetFilePath` dosyayı açmaz veya dosyayı oluşturmaz; `CFile` nesneyi, daha sonra kullanılabilecek bir yol adıyla ilişkilendirir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCFiles#20](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_16.cpp)]
 
-## <a name="cfilesetlength"></a><a name="setlength"></a>CFile:: SetLength
+## <a name="cfilesetlength"></a><a name="setlength"></a> CFile:: SetLength
 
 Dosyanın uzunluğunu değiştirmek için bu işlevi çağırın.
 
@@ -827,7 +827,7 @@ Dosyanın bayt cinsinden istenen uzunluğu. Bu değer, dosyanın geçerli uzunlu
 
 [!code-cpp[NVC_MFCFiles#11](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_17.cpp)]
 
-## <a name="cfilesetstatus"></a><a name="setstatus"></a>CFile:: SetStatus
+## <a name="cfilesetstatus"></a><a name="setstatus"></a> CFile:: SetStatus
 
 Bu dosya konumuyla ilişkili dosyanın durumunu ayarlar.
 
@@ -859,7 +859,7 @@ Saati ayarlamak için, `m_mtime` *durum*alanını değiştirin.
 
 [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_18.cpp)]
 
-## <a name="cfileunlockrange"></a><a name="unlockrange"></a>CFile:: UnlockRange
+## <a name="cfileunlockrange"></a><a name="unlockrange"></a> CFile:: UnlockRange
 
 Açık bir dosyadaki bir bayt aralığının kilidini açar.
 
@@ -888,7 +888,7 @@ Ayrıntılar için [LockRange](#lockrange) üye işlevinin açıklamasına bakı
 
 [!code-cpp[NVC_MFCFiles#12](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_8.cpp)]
 
-## <a name="cfilewrite"></a><a name="write"></a>CFile:: Write
+## <a name="cfilewrite"></a><a name="write"></a> CFile:: Write
 
 Bir arabellekteki verileri nesneyle ilişkili dosyaya yazar `CFile` .
 
@@ -908,7 +908,7 @@ Arabellekten aktarılacak bayt sayısı. Metin modu dosyaları için satır baş
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Write`disk tam koşulu da dahil olmak üzere çeşitli koşullara yanıt olarak bir özel durum oluşturur.
+`Write` disk tam koşulu da dahil olmak üzere çeşitli koşullara yanıt olarak bir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 

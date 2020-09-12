@@ -7,28 +7,26 @@ helpviewer_keywords:
 - functions [MFC], callback
 - callback functions [MFC]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-ms.openlocfilehash: 19c0bd3a0685abe36c020a5dda930f5683a4baa9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 553e87320828590c9e1e9204b54622f2f1ca6d80
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183441"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040892"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 
 Microsoft Foundation Class Kitaplığı üç geri çağırma işlevi görüntülenir. Bu geri çağırma işlevleri [CDC:: EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC:: Gristring](../../mfc/reference/cdc-class.md#graystring)ve [CDC:: SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc)' a geçirilir. Tüm geri çağrı işlevlerinin, geri çağırma sınırları genelinde özel durumlar gerçekleştirilemediğinden, Windows 'a döndürmeden önce MFC özel durumlarını yakalamasını gerektiğini unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
-|Ad||
-|----------|-----------------|
-|[CDC::EnumObjects için Geri Çağırma İşlevi](#enum_objects)||
-|[CDC::GrayString için Geri Çağırma İşlevi](#graystring)||
-|[CDC::SetAbortProc için Geri Çağırma İşlevi](#setabortproc)||
+[CDC:: EnumObjects için geri çağırma Işlevi](#enum_objects)\
+[CDC:: gri dize için geri çağırma Işlevi](#graystring)\
+[CDC::SetAbortProc için Geri Çağırma İşlevi](#setabortproc)
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="callback-function-for-cdcenumobjects"></a><a name="enum_objects"></a>CDC:: EnumObjects için geri çağırma Işlevi
+## <a name="callback-function-for-cdcenumobjects"></a><a name="enum_objects"></a> CDC:: EnumObjects için geri çağırma Işlevi
 
 *Objectfunc* adı, uygulama tarafından sağlanan işlev adı için bir yer tutucudur.
 
@@ -56,7 +54,7 @@ Geri çağırma işlevi bir döndürür **`int`** . Bu döndürün değeri Kulla
 
 Asıl ad verilmelidir.
 
-## <a name="callback-function-for-cdcgraystring"></a><a name="graystring"></a>CDC:: gri dize için geri çağırma Işlevi
+## <a name="callback-function-for-cdcgraystring"></a><a name="graystring"></a> CDC:: gri dize için geri çağırma Işlevi
 
 *OutputFunc* , uygulama tarafından sağlanan geri çağırma işlev adı için bir yer tutucudur.
 
@@ -88,7 +86,7 @@ Geri çağırma işlevinin dönüş değeri başarıyı göstermek için TRUE ol
 
 Geri çağırma işlevi (*OutputFunc*), (*x*, *y*) yerine koordinatlara (0, 0) göre bir resim çizmelidir.
 
-## <a name="callback-function-for-cdcsetabortproc"></a><a name="setabortproc"></a>CDC:: SetAbortProc için geri çağırma Işlevi
+## <a name="callback-function-for-cdcsetabortproc"></a><a name="setabortproc"></a> CDC:: SetAbortProc için geri çağırma Işlevi
 
 *Abortfunc* adı, uygulama tarafından sağlanan işlev adı için bir yer tutucudur.
 

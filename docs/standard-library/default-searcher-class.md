@@ -5,18 +5,18 @@ f1_keywords:
 - functional/std::default_searcher
 helpviewer_keywords:
 - std::default_searcher [C++]
-ms.openlocfilehash: 3b5b05dfa2613f9eeaaa18fa8066bcd44f57d1be
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 307fc6da3b383690e0b65bff2a72f386a37d6711
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203734"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039696"
 ---
 # <a name="default_searcher-class"></a>default_searcher sınıfı
 
 , `default_searcher` Nesne oluşturucusunda belirtilen bir diziyi Arayıcı işlemler için bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrısı işlecine belirtilen başka bir sıra içinde yapılır. `default_searcher`Aramayı gerçekleştirmek için [std:: Search](algorithm-functions.md#search) çağırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class ForwardIterator, class BinaryPredicate = equal_to<>>
@@ -36,14 +36,14 @@ class default_searcher
 
 ## <a name="members"></a>Üyeler
 
-| | |
+| Üye | Description |
 | - | - |
 | **Oluşturucu** | |
-| [default_searcher](#default-searcher-constructor) | |
+| [default_searcher](#default-searcher-constructor) | Bir Arayıcının örneği oluşturur. |
 | **İşleçler** | |
-| [operator ()](#operator-call) | |
+| [operator ()](#operator-call) | İşlemi sırayla çağırır. |
 
-## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a>default_searcher Oluşturucusu
+## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a> default_searcher Oluşturucusu
 
 `default_searcher`Aranacak diziyi ve bir eşitlik koşulunu kullanarak bir işlev nesnesi oluşturur.
 
@@ -76,7 +76,7 @@ Dizi öğeleri için isteğe bağlı eşitlik karşılaştırma koşulu. Bir eş
 
 Bu sınıf C++ 17 ' de yenidir. C++ 20 Oluşturucu yaptı **`constexpr`** .
 
-## <a name="operator"></a><a name="operator-call"></a>operator ()
+## <a name="operator"></a><a name="operator-call"></a> operator ()
 
 İşlev işlecinin Call işleci. Oluşturucuya belirtilen dizi için bağımsız değişken sırası içinde arar `[first, last)` .
 

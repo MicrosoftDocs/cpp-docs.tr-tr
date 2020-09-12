@@ -9,12 +9,12 @@ helpviewer_keywords:
 - classes [C++], adding members
 - add member function wizard [C++]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-ms.openlocfilehash: c5423cfb8e2ea1b39001ec512c9c7f460d6a1a19
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0e63771e3e01c3829e20d2fe62fa2caf0f8b26f5
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228693"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040788"
 ---
 # <a name="add-a-member-function"></a>Üye işlevi ekleme
 
@@ -44,12 +44,25 @@ Sihirbazı kullanarak üye işlevini ekledikten sonra, geliştirme ortamındaki 
 
   Eklemekte olduğunuz üye işlev için dönüş türünü ayarlar. Kendi dönüş türünü sağlayabilir veya kullanılabilir türler listesinden seçim yapabilirsiniz. Türler hakkında daha fazla bilgi için bkz. [temel türler](../cpp/fundamental-types-cpp.md).
 
-  | | | |
-  |---|---|---|
-  | **`char`** | **`int`** | **`unsigned int`** |
-  | **`double`** | **`long`** | **`unsigned long`** |
-  | **`float`** | **`short`** | **`void`** |
-  | `HRESULT` | **`unsigned char`** | |
+:::row:::
+   :::column span="":::
+      **`char`**\
+      **`double`**\
+      **`float`**\
+      **`int`**
+   :::column-end:::
+   :::column span="":::
+      **`long`**\
+      **`short`**\
+      **`unsigned char`**\
+      **`unsigned int`**
+   :::column-end:::
+   :::column span="":::
+      **`unsigned long`**\
+      **`void`**\
+      `HRESULT`
+   :::column-end:::
+:::row-end:::
 
 - **İşlev adı**
 
@@ -59,11 +72,23 @@ Sihirbazı kullanarak üye işlevini ekledikten sonra, geliştirme ortamındaki 
 
   Üye işlevin parametreleri varsa, üye işlevi için eklemekte olduğunuz parametrenin türünü ayarlar. Kendi parametre türlerinizi sağlayabilir veya kullanılabilir türler listesinden seçim yapabilirsiniz.
 
-  | | | |
-  |---|---|---|
-  | **`char`** | **`int`** | **`unsigned char`** |
-  | **`double`** | **`long`** | **`unsigned int`** |
-  | **`float`** | **`short`** | **`unsigned long`** |
+:::row:::
+   :::column span="":::
+      **`char`**\
+      **`double`**\
+      **`float`**
+   :::column-end:::
+   :::column span="":::
+      **`int`**\
+      **`long`**\
+      **`short`**
+   :::column-end:::
+   :::column span="":::
+      **`unsigned char`**\
+      **`unsigned int`**\
+      **`unsigned long`**
+   :::column-end:::
+:::row-end:::
 
 - **Parametre adı**
 
@@ -79,7 +104,7 @@ Sihirbazı kullanarak üye işlevini ekledikten sonra, geliştirme ortamındaki 
 
   - [genel](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
-  - [özelleştirme](../cpp/private-cpp.md)
+  - [private](../cpp/private-cpp.md)
 
   Yeni üye işlevinin statik mi, sanal mi olduğunu ve satır içi veya saf olduğunu kontrol edin. Üye işlevini saf olacak şekilde ayarlarsanız, **sanal** onay kutusu seçilidir ve **satır içi** onay kutusu kullanılamaz hale gelir. Varsayılan değer statik olmayan, sanal olmayan bir üye işlevdir.
 

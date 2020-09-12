@@ -1,16 +1,16 @@
 ---
-title: ATL Koleksiyon Sınıfları
+title: ATL 'de koleksiyon sınıfları
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: 09c0a64ff34a86c5581fe552ce2dbf0d12ea8e96
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: a93810b91cefd897b55cae4760ade32374900eb3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739521"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041425"
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 
@@ -78,7 +78,7 @@ Aşağıdaki sınıflar, karşılaştırmalar ve öğe erişimiyle ilgili yardı
 
 - [CSimpleMapEqualHelperFalse](../atl/reference/csimplemapequalhelperfalse-class.md) Bu sınıf, [CSimpleMap](../atl/reference/csimplemap-class.md) sınıfı için bir yardımcıdır.
 
-- [Cstrıngelementnitelikler](../atl/reference/cstringelementtraits-class.md) Bu sınıf, nesneleri depolayan `CString` koleksiyon sınıfları tarafından kullanılan statik işlevler sağlar.
+- [Cstrıngelementnitelikler](../atl/reference/cstringelementtraits-class.md) Bu sınıf, nesneleri depolayan koleksiyon sınıfları tarafından kullanılan statik işlevler sağlar `CString` .
 
 - [Cstrıngelementtraitsı](../atl/reference/cstringelementtraitsi-class.md) Bu sınıf, koleksiyon sınıfı nesnelerinde depolanan dizelerle ilişkili statik işlevler sağlar. [Cstrıngelementnitelikler](../atl/reference/cstringelementtraits-class.md)'e benzerdir, ancak büyük/küçük harfe duyarsız karşılaştırmalar gerçekleştirir.
 
@@ -86,9 +86,9 @@ Aşağıdaki sınıflar, karşılaştırmalar ve öğe erişimiyle ilgili yardı
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
-[ATL Koleksiyon Sınıfları](../atl/atl-collection-classes.md)
+[ATL koleksiyon sınıfına genel bakış](../atl/atl-collection-classes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfa genel bakış](../atl/atl-class-overview.md)<br/>
-[Koleksiyon Sınıfları](../atl/atl-collection-classes.md)
+[Koleksiyon sınıfları](../atl/atl-collection-classes.md)

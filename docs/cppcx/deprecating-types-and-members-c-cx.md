@@ -1,20 +1,20 @@
 ---
-title: Türleri ve üyeleri kullanımdan kaldırma (C++/CX)
+title: Türleri ve Üyeleri Geçersiz Kılma (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-ms.openlocfilehash: 6cd880af7e206b4c7338e53615594ec2c65c59fc
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
+ms.openlocfilehash: 6d61b00690cc087c3baced6d96d0b6c8d73b5850
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740495"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040333"
 ---
-# <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri kullanımdan kaldırma (C++/CX)
+# <a name="deprecating-types-and-members-ccx"></a>Türleri ve Üyeleri Geçersiz Kılma (C++/CX)
 
-/CX C++'de, [kullanım dışı bırakılmış](/uwp/api/windows.foundation.metadata.deprecatedattribute) özniteliği kullanarak üreticileri ve tüketiciler için Windows çalışma zamanı türlerini ve üyelerini kullanımdan kaldırma desteklenir. Bu özniteliğin uygulandığı bir API kullanıyorsanız, API 'nin kullanım dışı olduğunu ve ayrıca kullanılacak alternatif bir API 'yi öneren bir derleme zamanı uyarı iletisi alırsınız. Kendi ortak türleriniz ve yöntemlerinde bu özniteliği uygulayabilir ve kendi özel iletinizi sağlayabilirsiniz.
+C++/CX ' te, [kullanım dışı bırakılmış](/uwp/api/windows.foundation.metadata.deprecatedattribute) özniteliği kullanarak üreticileri ve tüketiciler için Windows çalışma zamanı türlerini ve üyelerini kullanımdan kaldırma desteklenir. Bu özniteliğin uygulandığı bir API kullanıyorsanız, API 'nin kullanım dışı olduğunu ve ayrıca kullanılacak alternatif bir API 'yi öneren bir derleme zamanı uyarı iletisi alırsınız. Kendi ortak türleriniz ve yöntemlerinde bu özniteliği uygulayabilir ve kendi özel iletinizi sağlayabilirsiniz.
 
 > [!CAUTION]
-> [Kullanım dışı bırakılan](/uwp/api/windows.foundation.metadata.deprecatedattribute) öznitelik yalnızca Windows çalışma zamanı türleriyle kullanım içindir. Standart C++ sınıflar ve Üyeler için [__declspec (kullanım dışı)](../cpp/deprecated-cpp.md)kullanın.
+> [Kullanım dışı bırakılan](/uwp/api/windows.foundation.metadata.deprecatedattribute) öznitelik yalnızca Windows çalışma zamanı türleriyle kullanım içindir. Standart C++ sınıfları ve üyeleri için [__declspec (kullanım dışı)](../cpp/deprecated-cpp.md)öğesini kullanın.
 
 ### <a name="example"></a>Örnek
 
@@ -39,23 +39,27 @@ public:
 
 Aşağıdaki tabloda, kullanım dışı bırakılan özniteliğin uygulanabileceğini listeleyen yapılar listelenmektedir:
 
-| |
-|-|
-|XAML denetimi|
-|temsilci|
-|olay|
-|sabit listesi alanı|
-|enum|
-|struct|
-|yöntemi|
-|sınıf|
-|arabirim|
-|özellik|
-|struct alanı|
-|Parametreli Oluşturucu|
+:::row:::
+   :::column span="":::
+      sınıfı
+      ğini
+      yardımının
+      Enum alanı \
+      olay
+      arabirim
+   :::column-end:::
+   :::column span="":::
+      yöntemidir
+      Parametreli Oluşturucu \
+      özelliði
+      sýný
+      struct alanı \
+      XAML denetimi
+   :::column-end:::
+:::row-end:::
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tür Sistemi](../cppcx/type-system-c-cx.md)<br/>
-[C++/CX Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
-[Ad Alanları Başvurusu](../cppcx/namespaces-reference-c-cx.md)
+[Tür sistemi](../cppcx/type-system-c-cx.md)<br/>
+[C++/CX dil başvurusu](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Ad alanı başvurusu](../cppcx/namespaces-reference-c-cx.md)
