@@ -1,5 +1,5 @@
 ---
-title: C/C++ Overview için kod analizi
+title: C/C++ için kod analizi genel bakış
 ms.date: 04/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,16 +16,16 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-ms.openlocfilehash: 26168e66fcb2809bc1eab68d3c8fa1ccf7495568
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: e5f5b75057985dc769c8f1ab84765d628dc42fcc
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418874"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040319"
 ---
-# <a name="code-analysis-for-cc-overview"></a>C/C++ Overview için kod analizi
+# <a name="code-analysis-for-cc-overview"></a>C/C++ için kod analizi genel bakış
 
-C/C++ Code çözümleme aracı, c/C++ kaynak kodunuzda olası arızaların bilgilerini sağlar. Araç tarafından bildirilen yaygın kodlama hataları, arabellek taşmaları, Başlatılmamış bellek, null işaretçi başvurusu ve bellek ve kaynak sızıntılarını içerir. Araç ayrıca [ C++ temel yönergelere](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)karşı denetimleri de çalıştırabilir.
+C/C++ Kod Analizi Aracı, C/C++ kaynak kodunuzda olası arızaların bilgilerini sağlar. Araç tarafından bildirilen yaygın kodlama hataları, arabellek taşmaları, Başlatılmamış bellek, null işaretçi başvurusu ve bellek ve kaynak sızıntılarını içerir. Araç, [C++ temel yönergeleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)karşı denetimleri de çalıştırabilir.
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (tümleşik geliştirme ortamı) Tümleştirmesi
 
@@ -45,11 +45,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma desteği
 
-Uyarıları hata olarak değerlendirmek için `#pragma` yönergesini kullanabilirsiniz; uyarıları etkinleştirin veya devre dışı bırakın ve tek satırlık kod satırları için uyarıları gizleyin. Daha fazla bilgi için bkz. [pragma yönergeleri ve __pragma anahtar sözcüğü](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+`#pragma`Uyarıları hata olarak değerlendirmek, uyarıları etkinleştirmek veya devre dışı bırakmak ve tek kod satırları için uyarıları gizlemek için yönergesini kullanabilirsiniz. Daha fazla bilgi için bkz. [pragma yönergeleri ve __pragma anahtar sözcüğü](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Ek açıklama desteği
 
-Ek açıklamalar, kod analizinin doğruluğunu geliştirir. Ek açıklamalar, işlev parametreleri ve dönüş türlerinde ön ve son koşullar hakkında ek bilgiler sağlar. Daha fazla bilgi için, bkz. [CC++ /kod HATALARıNı azaltmak Için sal ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
+Ek açıklamalar, kod analizinin doğruluğunu geliştirir. Ek açıklamalar, işlev parametreleri ve dönüş türlerinde ön ve son koşullar hakkında ek bilgiler sağlar. Daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>İade ilkesinin bir parçası olarak analiz aracını Çalıştır
 
@@ -57,15 +57,15 @@ Tüm kaynak kodu iadelerinin belirli ilkeleri karşıladıklarından emin olmak 
 
 ## <a name="team-build-integration"></a>Takım derlemesi tümleştirmesi
 
-Azure DevOps derleme işleminin bir adımı olarak kod analizi aracını çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Azure DevOps derleme işleminin bir adımı olarak kod analizi aracını çalıştırmak için derleme sisteminin tümleşik özelliklerini kullanabilirsiniz. Daha fazla bilgi için bkz. [Azure Pipelines](/azure/devops/pipelines/index).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Hızlı başlangıç: C/için kod analiziC++](quick-start-code-analysis-for-c-cpp.md)
-- [İzlenecek yol: hatalar içinC++ C/kod çözümleme](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Hızlı başlangıç: C/C++ için kod analizi](quick-start-code-analysis-for-c-cpp.md)
+- [İzlenecek yol: hatalar için C/C++ kodunu analiz etme](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ İçin Kod Analizi Uyarıları](code-analysis-for-c-cpp-warnings.md)
 - [C++ Temel Yönergeleri denetleyicilerini kullanma](using-the-cpp-core-guidelines-checkers.md)
-- [C++Temel kılavuz denetleyicisi başvurusu](code-analysis-for-cpp-corecheck.md)
-- [Çalıştırılacak C++ kuralları belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
+- [C++ Temel Yönergeleri denetleyicisi başvurusu](code-analysis-for-cpp-corecheck.md)
+- [Çalıştırılacak C++ kurallarını belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [Kod analizi araçlarını kullanarak sürücü kalitesini analiz etme](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
 - [Sürücüler için kod analizi uyarıları](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

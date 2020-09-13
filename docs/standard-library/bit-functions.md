@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::bit [C++], countr_zero
 - std::bit [C++], countr_one
 - std::bit [C++], popcount
-ms.openlocfilehash: f06e181a4fe6683adb0cc63c016cbd879f2fc574
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: a2408df9aa13c6e714f615561871397be17fc4a3
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281815"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039825"
 ---
 # <a name="ltbitgt-functions"></a>&lt;bit &gt; işlevleri
 
@@ -111,7 +111,7 @@ Veya kullanmak yerine, `reinterpret_cast` `memcpy()` `bit_cast()` bu dönüşüm
 
 Bu aşırı yükleme yalnızca şu durumlarda aşırı yükleme çözümüne katılır:
 -  `sizeof(To) == sizeof(From)`
-- `To` ve `From` [is_trivially_copyable](https://docs.microsoft.com/cpp/standard-library/is-trivially-copyable-class?view=vs-2019`).
+- `To` ve `From` [is_trivially_copyable](is-trivially-copyable-class.md).
 
 Bu işlev şablonu `constexpr` ve yalnızca `To` ,, `From` ve kendi alt nesnelerin türleri ise:
 - birleşim veya işaretçi türü değil
@@ -730,7 +730,7 @@ Bu şablon işlevi yalnızca `T` , işaretsiz bir tamsayı türü ise aşırı y
 
 **Ad alanı:** std
 
-`/std:c++latest` gereklidir
+[/std: c + + en son](../build/reference/std-specify-language-standard-version.md) gereklidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
