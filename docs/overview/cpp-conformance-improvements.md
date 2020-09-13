@@ -3,12 +3,12 @@ title: C++ uygunluk iyileştirmeleri
 ms.date: 08/04/2020
 description: Visual Studio 'da Microsoft C++, C++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
-ms.openlocfilehash: a28281eb7b47dcfc633467c96e520c7e97e26777
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3a0e21bf08fcf7861feedd3fd43666bd3768deee
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841395"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042127"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -744,7 +744,7 @@ int main() {
 
 ### <a name="preprocessor-output-preserves-newlines"></a>Önişlemci çıktısı newlines 'ı korur
 
-Deneysel ön işlemci artık veya ile kullanılırken newlines ve Whitespace 'i korur **`/P`** **`/E`** **`/experimental:preprocessor`** . Bu değişiklik kullanılarak devre dışı bırakılabilir **`/d1experimental:preprocessor:oldWhitespace`** .
+Deneysel ön işlemci artık veya ile kullanılırken newlines ve Whitespace 'i korur **`/P`** **`/E`** **`/experimental:preprocessor`** .
 
 Bu örnek kaynak verildiğinde,
 
@@ -972,7 +972,7 @@ Birçok olası düzeltme vardır:
 
 Visual Studio 2019 sürüm 16,6 ' den başlayarak, derleyici C olarak derlenen kod için önceden varolan C++ uyarılarını uygular. Şu uyarılar artık farklı düzeylerde etkinleştirilmiştir: C4060, C4061, C4062, C4063, C4064, C4065, C4808 ve C4809. Uyarılar C4065 ve C4060, C 'de varsayılan olarak devre dışıdır.
 
-Eksik **`case`** deyimler, tanımsız **`enum`** ve hatalı **`bool`** anahtarlar (yani çok fazla durum içeren) üzerinde uyarılar tetiklenir. Örnek:
+Eksik **`case`** deyimler, tanımsız **`enum`** ve hatalı **`bool`** anahtarlar (yani çok fazla durum içeren) üzerinde uyarılar tetiklenir. Örneğin:
 
 ```c
 #include <stdbool.h>

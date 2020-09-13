@@ -1,6 +1,7 @@
 ---
 title: unordered_map Sınıfı
-ms.date: 11/04/2016
+description: Farklı bir öğe dizisini denetleyen C++ standart kitaplık kapsayıcı sınıfı için API başvurusu `unordered_map` .
+ms.date: 9/9/2020
 f1_keywords:
 - unordered_map/std::unordered_map
 - unordered_map/std::unordered_map::allocator_type
@@ -27,6 +28,7 @@ f1_keywords:
 - unordered_map/std::unordered_map::cbegin
 - unordered_map/std::unordered_map::cend
 - unordered_map/std::unordered_map::clear
+- unordered_map/std::unordered_map::contains
 - unordered_map/std::unordered_map::count
 - unordered_map/std::unordered_map::emplace
 - unordered_map/std::unordered_map::emplace_hint
@@ -74,6 +76,7 @@ helpviewer_keywords:
 - std::unordered_map::cbegin
 - std::unordered_map::cend
 - std::unordered_map::clear
+- std::unordered_map::contains
 - std::unordered_map::count
 - std::unordered_map::emplace
 - std::unordered_map::emplace_hint
@@ -138,12 +141,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: bde29e2d6148dd5aa5c39ac6a923048694e3a32d
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8fe2e153e3a7483d9c4698ef4a87e281ace653fc
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562459"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042152"
 ---
 # <a name="unordered_map-class"></a>unordered_map Sınıfı
 
@@ -179,7 +182,7 @@ Ayırıcı sınıf.
 
 ## <a name="members"></a>Üyeler
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |-|-|
 |[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -198,7 +201,7 @@ Ayırıcı sınıf.
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
-|Üye İşlevi|Açıklama|
+|Üye İşlevi|Description|
 |-|-|
 |[hızı](#at)|Belirtilen anahtarı içeren bir öğe bulur.|
 |[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
@@ -209,6 +212,7 @@ Ayırıcı sınıf.
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|
 |[lediğiniz](#clear)|Tüm öğeleri kaldırır.|
 |[biriktirme](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|
+|[contains](#contains)<sup>c++ 20</sup> içerir|İçinde belirtilen anahtara sahip bir öğe olup olmadığını kontrol edin `unordered_map` .|
 |[Emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|
 |[empty](#empty)|Bir öğe olup olmadığını sınar.|
@@ -900,6 +904,58 @@ int main()
 
 ```Output
 [c, 3] [b, 2] [a, 1]
+```
+
+## <a name="unordered_mapcontains"></a><a name="contains"></a> unordered_map:: Contains
+
+Öğesinde belirtilen anahtarla bir öğe olup olmadığını denetler `unordered_map` .
+C++ 20 ' de tanıtılmıştır.
+
+```cpp
+bool contains(const Key& key) const;
+<class K> bool contains(const K& key) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Ek*\
+Anahtarın türü.
+
+*anahtar*\
+Aranacak öğenin anahtar değeri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+`true` öğe kapsayıcıda bulunursa; `false` Aksi takdirde. 
+
+### <a name="remarks"></a>Açıklamalar
+
+`contains()` C++ 20 ' de yenidir. Bunu kullanmak için [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirtin.
+
+`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` .
+
+### <a name="example"></a>Örnek
+
+```cpp
+// Requires /std:c++latest
+#include <unordered_map>
+#include <iostream>
+
+int main()
+{
+    std::unordered_map<int, bool> theUnorderedMap = {{0, false}, {1,true}};
+
+    std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
+    std::cout << theUnorderedMap.contains(1) << '\n';
+    std::cout << theUnorderedMap.contains(2) << '\n';
+    
+    return 0;
+}
+```
+
+```Output
+true
+false
 ```
 
 ## <a name="unordered_mapcount"></a><a name="count"></a> unordered_map:: Count
