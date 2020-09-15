@@ -1,114 +1,137 @@
 ---
 title: C Anahtar Sözcükleri
-ms.date: 10/09/2018
+description: Standart C ve Microsoft C derleyicisi uzantılarında anahtar sözcükler.
+ms.date: 09/12/2020
 helpviewer_keywords:
 - keywords [C]
 - redefining keywords
 - Microsoft-specific keywords
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: 1b49da349a6552022dfd9e8e66e85634f4694645
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f459b81c2b3f314218108f3f367eec0c1bf17f26
+ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838782"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075756"
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 
-"Anahtar sözcükler" C derleyicisi için özel anlamı olan sözcüklerdir. 7 ve 8. çeviri aşamalarında, tanımlayıcının yazımı ve büyük/küçük harf kullanımı C anahtar sözcüğüyle aynı olamaz. (Ön *Işlemci başvurusunda* [Çeviri aşamaları](../preprocessor/phases-of-translation.md) açıklamasına bakın; tanımlayıcılar hakkında bilgi için bkz. [tanımlayıcılar](../c-language/c-identifiers.md).) C dili aşağıdaki anahtar sözcükleri kullanır:
+*Anahtar sözcükler* C derleyicisi için özel anlamı olan sözcüklerdir. Çeviri aşamaları 7 ve 8 ' de bir tanımlayıcı, C anahtar sözcüğüyle aynı yazım ve büyük/küçük harfe sahip olamaz. Daha fazla bilgi için bkz. *Önişlemci başvurusundaki* [Çeviri aşamaları](../preprocessor/phases-of-translation.md) . Tanımlayıcılar hakkında daha fazla bilgi için bkz. [tanımlayıcılar](../c-language/c-identifiers.md).
+
+## <a name="standard-c-keywords"></a>Standart C anahtar sözcükleri
+
+C dili aşağıdaki anahtar sözcükleri kullanır:
 
 :::row:::
     :::column:::
         **`auto`**\
-        **`double`**\
-        **`int`**\
-        **`struct`**\
         **`break`**\
-        **`else`**\
-        **`long`**\
-        **`switch`**
-    :::column-end:::
-    :::column:::
         **`case`**\
-        **`enum`**\
-        **`register`**\
-        **`typedef`**\
         **`char`**\
-        **`extern`**\
-        **`return`**\
-        **`union`**
-    :::column-end:::
-    :::column:::
         **`const`**\
-        **`float`**\
-        **`short`**\
-        **`unsigned`**\
         **`continue`**\
-        **`for`**\
-        **`signed`**\
-        **`void`**
+        **`default`**\
+        **`do`**\
+        **`double`**\
+        **`else`**\
+        **`enum`**
     :::column-end:::
     :::column:::
-        **`default`**\
+        **`extern`**\
+        **`float`**\
+        **`for`**\
         **`goto`**\
-        **`sizeof`**\
-        **`volatile`**\
-        **`do`**\
         **`if`**\
+        **`inline`**<sup>1, a</sup>\
+        **`int`**\
+        **`long`**\
+        **`register`**\
+        **`restrict`**<sup>1, a</sup>\
+        **`return`**
+    :::column-end:::
+    :::column:::
+        **`short`**\
+        **`signed`**\
+        **`sizeof`**\
         **`static`**\
-        **`while`**
+        **`struct`**\
+        **`switch`**\
+        **`typedef`**\
+        **`union`**\
+        **`unsigned`**\
+        **`void`**\
+        **`volatile`**
+    :::column-end:::
+    :::column:::
+        **`while`**\
+        **`_Alignas`**<sup>2, a</sup>\
+        **`_Alignof`**<sup>2, a</sup>\
+        **`_Atomic`**<sup>2, b</sup>\
+        **`_Bool`**<sup>1, a</sup>\
+        **`_Complex`**<sup>1, b</sup>\
+        **`_Generic`**<sup>2, a</sup>\
+        **`_Imaginary`**<sup>1, b</sup>\
+        **`_Noreturn`**<sup>2, a</sup>\
+        **`_Static_assert`**<sup>2, a</sup>\
+        **`_Thread_local`**<sup>2, b</sup>
     :::column-end:::
 :::row-end:::
 
-Anahtar sözcükleri yeniden tanımlayamazsınız. Ancak, C [önişlemci yönergelerini](../preprocessor/preprocessor-directives.md)kullanarak derlemeden önce anahtar sözcüklerin yerine kullanılacak metni belirtebilirsiniz.
+<sup>1</sup>  ISO C99 içinde tanıtılan anahtar sözcükler.
 
-**Microsoft'a Özgü**
+<sup>2</sup>   ISO C11 içinde tanıtılan anahtar sözcükler.
 
-ANSI C standardı, derleyici uygulamaları için başında iki alt çizgi olan tanımlayıcıların ayrılmasını sağlar. Bu nedenle, Microsoft kuralı Microsoft'a özgü anahtar sözcük adlarından önce iki alt çizgi koymaktır. Bu sözcükler tanımlayıcı adı olarak kullanılamaz. Çift alt çizgilerin kullanımı dahil olmak üzere, adlandırma tanımlayıcıları için ANSI kurallarının açıklaması için bkz. [tanımlayıcılar](../c-language/c-identifiers.md).
+Visual Studio 2019 sürüm 16,8 ' <sup>den başlayarak bu</sup> anahtar sözcükler, **`/std:c11`** veya derleyici seçenekleri belirtildiğinde C olarak derlenen kodda desteklenir **`/std:c17`** .
+
+<sup>b</sup>  Visual Studio 2019 sürüm 16,8 ' den başlayarak, bu anahtar sözcükler tanınıyorsa, **`/std:c11`** veya **`/std:c17`** derleyici seçenekleri belirtildiğinde C olarak derlenen kodda derleyici tarafından desteklenmez.
+
+Anahtar sözcükleri yeniden tanımlayamazsınız. Ancak, C [önişlemci yönergelerini](../preprocessor/preprocessor-directives.md)kullanarak derlemeden önce anahtar sözcüklerin yerine geçecek metni belirtebilirsiniz.
+
+## <a name="microsoft-specific-c-keywords"></a>Microsoft 'a özgü C anahtar sözcükleri
+
+ANSI ve ISO C standartları, iki önde gelen alt çizgi içeren tanımlayıcılara derleyici uygulamaları için ayrılmış olarak izin verir. Microsoft kuralı, Microsoft 'a özgü anahtar sözcük adlarından önce iki alt çizgi ile önce gelmelidir. Bu sözcükler tanımlayıcı adı olarak kullanılamaz. Çift alt çizgilerin kullanımı dahil olmak üzere adlandırma tanımlayıcıları için kuralların açıklaması için bkz. [tanımlayıcılar](../c-language/c-identifiers.md).
 
 Aşağıdaki anahtar sözcükler ve özel tanımlayıcılar, Microsoft C derleyicisi tarafından tanınmaktadır:
 
 :::row:::
     :::column:::
-        **`__asm`**<sup>03</sup>\
-        **`dllimport`**<sup>iki</sup>\
-        **`__int8`**<sup>03</sup>\
-        **`naked`**<sup>iki</sup>\
-        **`__based`**<sup>1, 3</sup>
+        **`__asm`**<sup>e</sup>\
+        **`dllimport`**<sup>4</sup>\
+        **`__int8`**<sup>e</sup>\
+        **`naked`**<sup>4</sup>\
+        **`__based`**<sup>3, 5</sup>
     :::column-end:::
     :::column:::
-        **`__except`**<sup>03</sup>\
-        **`__int16`**<sup>03</sup>\
-        **`__stdcall`**<sup>03</sup>\
-        **`__cdecl`**<sup>03</sup>\
+        **`__except`**<sup>e</sup>\
+        **`__int16`**<sup>e</sup>\
+        **`__stdcall`**<sup>e</sup>\
+        **`__cdecl`**<sup>e</sup>\
         **`__fastcall`**
     :::column-end:::
     :::column:::
-        **`__int32`**<sup>03</sup>\
-        **`thread`**<sup>iki</sup>\
-        **`__declspec`**<sup>03</sup>\
-        **`__finally`**<sup>03</sup>\
-        **`__int64`**<sup>03</sup>
+        **`__int32`**<sup>e</sup>\
+        **`thread`**<sup>4</sup>\
+        **`__declspec`**<sup>e</sup>\
+        **`__finally`**<sup>e</sup>\
+        **`__int64`**<sup>e</sup>
     :::column-end:::
     :::column:::
-        **`__try`**<sup>03</sup>\
-        **`dllexport`**<sup>iki</sup>\
-        **`__inline`**<sup>03</sup>\
-        **`__leave`**<sup>03</sup>
+        **`__try`**<sup>e</sup>\
+        **`dllexport`**<sup>4</sup>\
+        **`__inline`**<sup>e</sup>\
+        **`__leave`**<sup>e</sup>
     :::column-end:::
 :::row-end:::
 
-<sup>1</sup> **`__based`** anahtar sözcüğü 32-bit ve 64 bit hedef derlemeler için sınırlı kullanımları vardır.
+<sup>3</sup> **`__based`** anahtar sözcüğü 32-bit ve 64 bit hedef derlemeler için sınırlı kullanımları vardır.
 
-<sup>2</sup> , ile kullanıldığında özel tanımlayıcılardır **`__declspec`** ; diğer bağlamlarda kullanımları sınırlı değildir.
+<sup>4</sup> bunlar ile kullanıldığında özel tanımlayıcılardır **`__declspec`** ; diğer bağlamlarda kullanımları Kısıtlanmamış olur.
 
-<sup>3</sup> önceki sürümlerle uyumluluk için, bu anahtar sözcükler hem iki önde gelen alt çizgi ile hem de Microsoft uzantıları etkinleştirildiğinde tek başına bir alt çizgi ile kullanılabilir.
+<sup>5</sup> önceki sürümlerle uyumluluk için, bu anahtar sözcükler hem iki önde gelen alt çizgi ile hem de Microsoft uzantıları etkinleştirildiğinde tek başına bir alt çizgi ile kullanılabilir.
 
-Microsoft uzantıları varsayılan olarak etkinleştirilmiştir. Programlarınızın tamamen taşınabilir olduğundan emin olmak için, derleme sırasında [/za \( Disable Language Extensions](../build/reference/za-ze-disable-language-extensions.md) seçeneğini belirterek Microsoft uzantılarını devre dışı bırakabilirsiniz. Bunu yaptığınızda, Microsoft 'a özgü bazı anahtar sözcükler devre dışı bırakılır.
+Microsoft uzantıları varsayılan olarak etkinleştirilmiştir. Taşınabilir kod oluşturmaya yardımcı olmak için, derleme sırasında [/za \( Disable Language Extensions](../build/reference/za-ze-disable-language-extensions.md) seçeneğini belirterek Microsoft uzantılarını devre dışı bırakabilirsiniz. Bu seçeneği kullandığınızda, Microsoft 'a özgü bazı anahtar sözcükler devre dışı bırakılır.
 
-Microsoft uzantıları etkinleştirildiğinde, programlarınızda yukarıda listelenen anahtar sözcükleri kullanabilirsiniz. ANSI uyumluluğu için bu anahtar sözcüklerin çoğu çift alt çizgi ile başlar. Dört özel durum, **`dllexport`** , **`dllimport`** **`naked`** ve, **`thread`** yalnızca ile kullanılır **`__declspec`** ve bu nedenle, önde gelen çift alt çizgi gerektirmez. Geriye dönük uyumluluk için geriye kalan anahtar sözcüklerin tek alt çizgili biçimleri desteklenir.
-
-**SON Microsoft 'a özgü**
+Microsoft uzantıları etkinleştirildiğinde, programlarınızda yukarıda listelenen anahtar sözcükleri kullanabilirsiniz. Standartlar uyumluluğu için, bu anahtar sözcüklerin çoğu bir çift alt çizgi ile önceden başlar. Dört özel durum, **`dllexport`** , **`dllimport`** **`naked`** ve, **`thread`** yalnızca ile kullanılır **`__declspec`** ve önünde çift alt çizgi gerektirmez. Geriye dönük uyumluluk için geriye kalan anahtar sözcüklerin tek alt çizgili biçimleri desteklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

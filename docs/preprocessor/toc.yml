@@ -5,7 +5,7 @@
   items:
     - name: Ön işlemci
       href: ../preprocessor/preprocessor.md
-    - name: Deneysel ön işlemciye genel bakış
+    - name: Yeni ön işlemciye genel bakış
       href: ../preprocessor/preprocessor-experimental-overview.md
     - name: Çeviri aşamaları
       href: ../preprocessor/phases-of-translation.md
@@ -35,7 +35,7 @@
               href: ../preprocessor/auto-search.md
             - name: embedded_idl
               href: ../preprocessor/embedded-idl.md
-            - name: 'exclude (#import)'
+            - name: exclude (#import)
               href: ../preprocessor/exclude-hash-import.md
             - name: high_method_prefix
               href: ../preprocessor/high-method-prefix.md
@@ -73,7 +73,7 @@
               href: ../preprocessor/raw-native-types.md
             - name: raw_property_prefixes
               href: ../preprocessor/raw-property-prefixes.md
-            - name: 'rename (#import)'
+            - name: rename (#import)
               href: ../preprocessor/rename-hash-import.md
             - name: rename_namespace
               href: ../preprocessor/rename-namespace.md
@@ -96,11 +96,11 @@
       items:
         - name: Ön işlemci işleçleri
           href: ../preprocessor/preprocessor-operators.md
-        - name: 'Dizeleyen işleç (#)'
+        - name: Dizeleyen işleç (#)
           href: ../preprocessor/stringizing-operator-hash.md
-        - name: 'Karakter haline getirme işleci (#@)'
+        - name: Karakter haline getirme işleci (#@)
           href: ../preprocessor/charizing-operator-hash-at.md
-        - name: 'Belirteç yapıştıran işleç (##)'
+        - name: Belirteç yapıştıran işleç (##)
           href: ../preprocessor/token-pasting-operator-hash-hash.md
     - name: Önişlemci makroları (C/C++)
       expanded: false

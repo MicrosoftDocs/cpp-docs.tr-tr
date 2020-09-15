@@ -6,12 +6,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 84572d44cd994da07d44e736983270a1e7acd1ec
-ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
+ms.openlocfilehash: d9fbbc4f0eddba0ae6a7dbc3250a26d36155506e
+ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88086987"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075796"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluğu tablosu
 
@@ -24,7 +24,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 
 ## <a name="compiler-features"></a>Derleyici özellikleri
 
-| Özellik | Desteklenir |
+| Öne çıkan özelliği | Desteklenir |
 |--|--|
 | __C++ 03/11 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;Diğer her şey | VS 2015 <sup> [A](#note_A)</sup> |
@@ -187,7 +187,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 
 Ürün sürümüne göre standart kitaplık özelliklerinin ve hata düzeltmelerinin daha ayrıntılı bir listesi [GitHub MICROSOFT STL wiki changelog](https://github.com/microsoft/STL/wiki/Changelog) sayfasında bulunabilir.
 
-| Özellik | Desteklenir |
+| Öne çıkan özelliği | Desteklenir |
 |--|--|
 | __C++ 20 Standart Kitaplık Özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`P0809R0 Comparing Unordered Containers`](https://wg21.link/p0809r0) | VS 2010 <sup> [14](#note_14)</sup> |
@@ -274,7 +274,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0645R10 <format> Text Formatting`](https://wg21.link/p0645r10) | Hayır |
 | &nbsp;&nbsp;[`P0660R10 <stop_token> and jthread`](https://wg21.link/p0660r10) | Hayır |
 | &nbsp;&nbsp;[`P0768R1 Library Support For The Spaceship Comparison Operator <=>`](https://wg21.link/p0768r1) | Kısmi in VS 2019 16,0 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P0784R7 Library support for more constexpr containers`](https://wg21.link/P0784R7) | No |
+| &nbsp;&nbsp;[`P0784R7 Library support for more constexpr containers`](https://wg21.link/P0784R7) | Hayır |
 | &nbsp;&nbsp;[`P0811R3 midpoint(), lerp()`](https://wg21.link/P0811R3) | Kısmi in VS 2019 16,3 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0896R4 <ranges>`](https://wg21.link/P0896R4) | Hayır |
 | &nbsp;&nbsp;[`P0912R5 Library Support For Coroutines`](https://wg21.link/P0912R5) | Hayır |
@@ -432,7 +432,7 @@ Derleyici seçeneği [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.m
 
 <a name="note_B"></a>__B__ , [`/permissive-`](../build/reference/permissive-standards-conformance.md) Visual Studio 2017 sürüm 15,7 ' de modda desteklenir. Daha fazla bilgi için bkz. [iki aşamalı ad arama DESTEĞI MSVC](https://devblogs.microsoft.com/cppblog/two-phase-name-lookup-support-comes-to-msvc/).
 
-<a name="note_C"></a>__C__ derleyicinin C99 Önişlemci kuralları için destek, Visual Studio 2017 içinde eksik. Ön işlemci overhauling ve bu değişiklikleri Visual Studio 2017 sürüm 15,8 ' de [/deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici anahtarıyla sevk eteceğiz.
+<a name="note_C"></a>__C__ Visual Studio 2017 sürüm 15,8 ' den başlayarak, derleyici [/deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici anahtarı aracılığıyla C99 ön işlemcisi için destek sağlar. Visual Studio 2019 sürüm 16,6 ' den başlayarak, derleyici C99 Önişlemci 'yi anahtar aracılığıyla tamamen uygular [`/Zc:preprocessor`](../build/reference/zc-conformance.md) . Derleyici anahtarı veya belirtildiğinde varsayılan olarak açık olur `/std:c11` `/std:c17` .
 
 <a name="note_D"></a>__D__ , gizlenecek [`/std:c++14`](../build/reference/std-specify-language-standard-version.md) bir uyarı ile altında desteklenir [`C4984`](../error-messages/compiler-warnings/compiler-warning-c4984.md) .
 
@@ -450,7 +450,7 @@ Derleyici seçeneği [`/Zc:noexceptTypes`](../build/reference/zc-noexcepttypes.m
 
 <a name="note_byte"></a>__bayt__ `std::byte` [`/std:c++17`](../build/reference/std-specify-language-standard-version.md), (veya) tarafından etkinleştirilir [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) , ancak bazı durumlarda Windows SDK üstbilgileri ile çakışabileceğinden, hassas bir geri alma makrosu vardır. , Olarak tanımlayarak devre dışı bırakılabilir `_HAS_STD_BYTE` `0` .
 
-<a name="note_C11"></a>__C11__ Evrensel CRT, C99 `strftime()` E/O alternatif Dönüştürme belirticileri, C11 `fopen()` dışlamalı mod ve C11 dışında c++ 17 için gerekli olan C11 standart kitaplığının parçalarını uyguladık `aligned_alloc()` . İkinci olarak, C11, `aligned_alloc()` `free()` `free()` yüksek oranda hizalanmış ayırmaları işleyebilmelidir: Yani, ' nin Microsoft uygulamasıyla uyumsuz bir şekilde belirtildiği için uygulanması çok düşüktür.
+<a name="note_C11"></a>__C11__ C11 için derleyici desteği, Visual Studio sürüm 16,8 veya üstünü gerektirir. C11 kitaplığı desteği Windows SDK sürüm 20211 veya üstünü gerektirir. Universal CRT, C99 `strftime()` E/O alternatif Dönüştürme belirticileri ve C11 dışında c++ 17 için gerekli olan C11 standart kitaplığının parçalarını uygular `aligned_alloc()` . Windows işletim sistemi hizalı ayırmaları desteklemediğinden ikinci değer uygulanmamalıdır.
 
 <a name="note_rem"></a>__REM__ [`/std:c++17`](../build/reference/std-specify-language-standard-version.md)(Veya [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) ) derleyici seçeneği belirtildiğinde kaldırılan özellikler. Bu özellikler, bu makroları kullanarak daha yeni dil modlarına geçişi kolaylaştırmak için yeniden etkinleştirilebilir: `_HAS_AUTO_PTR_ETC` , `_HAS_FUNCTION_ALLOCATOR_SUPPORT` , `_HAS_OLD_IOSTREAMS_MEMBERS` ve `_HAS_UNEXPECTED` .
 

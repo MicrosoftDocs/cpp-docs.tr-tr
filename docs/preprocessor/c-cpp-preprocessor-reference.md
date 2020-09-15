@@ -6,18 +6,18 @@ helpviewer_keywords:
 - preprocessor
 - preprocessor, reference overview
 ms.assetid: e4a52843-7016-4f6d-8b40-cb1ace18f805
-ms.openlocfilehash: e53f7270a71e5e7c3f456be7d55d49eaf352aecb
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: e72146d8b88f5a4bffcaaa121f6851d740ec948b
+ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040749"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075640"
 ---
 # <a name="cc-preprocessor-reference"></a>C/C++ ön işlemci başvurusu
 
 *C/C++ Önişlemci Başvurusu* , Microsoft c/c++ ' da uygulandığı için Önişlemci 'yi açıklar. Önişlemci, derleyiciye geçirilmeden önce C ve C++ dosyalarında ön işlemleri gerçekleştirir. Kodu koşullu olarak derlemek, dosya eklemek, derleme zamanı hata iletileri belirtmek ve kod bölümlerine makineye özel kurallar uygulamak için Önişlemci 'yi kullanabilirsiniz.
 
-Visual Studio 2019 ' de [/deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici seçeneği, Önişlemci 'nin yeni bir uygulamasını sunar. Yeni uygulama hala devam etmektedir ve bu nedenle deneysel olarak kabul edilir. Bu, sonunda C99, C11 ve C++ 20 ile uyumlu hale hazırlanmalıdır. Daha fazla bilgi için bkz. [MSVC New Önişlemci Overview](preprocessor-experimental-overview.md).
+Visual Studio 2019 ' de [/Zc: Önişlemci](../build/reference/zc-preprocessor.md) derleyici seçeneği tam uyumlu bir C11 ve C17 Önişlemci sağlar. Derleyici bayrağını veya ' ı kullandığınızda bu varsayılandır `/std:c11` `/std:c17` .
 
 ## <a name="in-this-section"></a>Bu bölümde
 

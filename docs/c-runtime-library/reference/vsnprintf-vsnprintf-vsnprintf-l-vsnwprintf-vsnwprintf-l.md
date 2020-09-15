@@ -1,5 +1,6 @@
 ---
 title: vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
+description: Vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf ve _vsnwprintf_l için API başvurusu; bağımsız değişken listesi için bir işaretçi kullanarak biçimlendirilen çıktıyı yazma.
 ms.date: 06/24/2020
 api_name:
 - _vsnprintf
@@ -55,12 +56,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vsnwprintf function
 ms.assetid: a97f92df-c2f8-4ea0-9269-76920d2d566a
-ms.openlocfilehash: 1cbb41d63669644f51b4d951d5b5507f64cf3da1
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 63a2cd2e6287f9fe960cd60d799f4518b47572ae
+ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737585"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075770"
 ---
 # <a name="vsnprintf-_vsnprintf-_vsnprintf_l-_vsnwprintf-_vsnwprintf_l"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 
@@ -154,7 +155,7 @@ Biçim belirtimi.
 *argptr*<br/>
 Bağımsız değişken listesi işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
@@ -201,7 +202,7 @@ C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde ça�
 |Yordam|Gerekli üst bilgi (C)|Gerekli üst bilgi (C++)|
 |-------------|---------------------------|-------------------------------|
 |**vsnprintf**, **_vsnprintf** **_vsnprintf_l**|\<stdio.h>|\<stdio.h> veya \<cstdio>|
-|**_vsnwprintf**, **_vsnwprintf_l**|\<stdio.h> veya \<wchar.h>|\<stdio.h>, \<wchar.h> , \<cstdio> veya\<cwchar>|
+|**_vsnwprintf**, **_vsnwprintf_l**|\<stdio.h> veya \<wchar.h>|\<stdio.h>, \<wchar.h> , \<cstdio> veya \<cwchar>|
 
 **_Vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** ve **_vsnwprintf_l** işlevleri Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
