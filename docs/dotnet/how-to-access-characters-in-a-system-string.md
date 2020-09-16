@@ -7,18 +7,18 @@ helpviewer_keywords:
 - examples [C++], strings
 - strings [C++], accessing characters
 ms.assetid: cfc89756-aef3-4988-907e-fb236dcb7087
-ms.openlocfilehash: a91f82d0377b9065c2927e61e9f2a558a49985f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb62eb0fecbee202e4d01635a60da565241822ee
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221373"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686801"
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
 
 <xref:System.String>Dizelerin bulunduğu yönetilmeyen işlevlere yönelik yüksek performanslı çağrılar için bir nesnenin karakterlerine erişebilirsiniz `wchar_t*` . Yöntemi, nesnenin ilk karakterine iç işaretçi verir <xref:System.String> . Bu işaretçi doğrudan veya sabitlenebilir ve normal bir dize bekleyen bir işleve geçirilebilir **`wchar_t`** .
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 `PtrToStringChars`<xref:System.Char>iç işaretçi (de olarak da bilinir) olan bir döndürür `byref` . Bu nedenle, atık toplamaya tabidir. Yerel bir işleve geçemediğiniz takdirde bu işaretçiyi sabitlemek zorunda kalmazsınız.
 
@@ -46,8 +46,6 @@ int main() {
 abcdefg
 ```
 
-## <a name="example"></a>Örnek
-
 Bu örnek, sabitlemenin nerede gerekli olduğunu gösterir.
 
 ```cpp
@@ -74,8 +72,6 @@ int main() {
 ```Output
 7
 ```
-
-## <a name="example"></a>Örnek
 
 İç işaretçinin tüm özelliklerine sahip bir yerel C++ işaretçisi vardır. Örneğin, bir bağlı veri yapısına yol göstermek ve yalnızca bir işaretçiyi kullanarak eklemeler ve silmeler yapmak için kullanabilirsiniz:
 

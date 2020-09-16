@@ -3,12 +3,12 @@ title: Visual Studio 'da Linux MSBuild C++ projesi oluşturma
 ms.date: 08/04/2020
 description: Visual Studio 'da yeni bir MSBuild tabanlı Linux projesi oluşturun.
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-ms.openlocfilehash: 86d8b8fd2abe8970b5146d4ab08dc4251b5562d5
-ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
+ms.openlocfilehash: 559a868ebdea7e3b835a82c31849d0e2fdeaa6c9
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88043856"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686697"
 ---
 # <a name="create-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio 'da Linux MSBuild C++ projesi oluşturma
 
@@ -31,7 +31,7 @@ Visual Studio 2017 ' de yeni bir Linux projesi oluşturmak için aşağıdaki ad
 1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın.
 1. **Visual C++ > platformlar arası > Linux** düğümünü seçin ve ardından oluşturulacak proje türünü seçin. Bir **ad** ve **konum**girin ve **Tamam**' ı seçin.
 
-   ![Yeni Linux projesi](media/newproject.png)
+   ![Visual C Plus ile yeni proje iletişim kutusunu gösteren ekran görüntüsü ve > platformlar arası > Linux seçili, tüm proje türleri dışarı ve adı ve konum metin kutuları de çağrılır.](media/newproject.png)
 
    | Proje türü | Description |
    | ------------ | --- |
@@ -61,7 +61,7 @@ Visual Studio 2019 ' de yeni bir Linux projesi oluşturmak için aşağıdaki ad
 1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın.
 1. **Dili** **C++** olarak ayarlayın ve "Linux" araması yapın. Oluşturulacak proje türünü seçin ve ardından **İleri**' yi seçin. Bir **ad** ve **konum**girin ve **Oluştur**' u seçin.
 
-   ![Yeni Linux projesi](media/newproject-vs2019.png)
+   ![Arama metin kutusuna, Linux ile yazılan yeni proje Ekle iletişim kutusunun ekran görüntüsü.](media/newproject-vs2019.png)
 
    | Proje türü | Description |
    | ------------ | --- |

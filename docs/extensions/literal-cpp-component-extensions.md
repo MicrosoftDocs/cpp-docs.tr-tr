@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - literal keyword [C++]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
-ms.openlocfilehash: 2470d5680f7538af2db7bda3611abad11b827970
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2687352c02bed609ffaa60ee8b1df40b51126d21
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214262"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686736"
 ---
 # <a name="literal-ccli-and-ccx"></a>literal (C++/CLI ve C++/CX)
 
@@ -33,7 +33,7 @@ ms.locfileid: "87214262"
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -49,7 +49,7 @@ Daha fazla bilgi için bkz. [static](../cpp/storage-classes-cpp.md) ve [const](.
 
 **değişmez değer** , bağlama duyarlı bir anahtar sözcüktür. Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md) .
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bu örnekte, bir **sabit** değişkeninin gösterdiği gösterilmektedir **`static`** .
 
@@ -64,8 +64,6 @@ int main() {
    int value = X::i;
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek meta verilerde sabit değerin etkisini gösterir:
 
@@ -87,8 +85,6 @@ Ve için meta verilerde farklılık olduğunu fark `sc` edin `lit` : `modopt` y�
 ```
 .field public static literal int32 lit = int32(0x0000000A)
 ```
-
-## <a name="example"></a>Örnek
 
 C# dilinde yazılan aşağıdaki örnek, önceki örnekte oluşturulan meta verilere başvurur ve **değişmez değer** ve **statik const** değişkenlerinin etkisini gösterir:
 
@@ -123,7 +119,7 @@ class B {
 
 ## <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

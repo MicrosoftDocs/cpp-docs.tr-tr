@@ -4,12 +4,12 @@ description: Kodunuzu biçimlendirmek, gezinmek, anlamak ve yeniden düzenleyin 
 ms.date: 05/31/2019
 ms.assetid: 56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6
 ms.topic: overview
-ms.openlocfilehash: 43c4529ae0c5ac5a8c4fae2ae402ed3c6e222c37
-ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
+ms.openlocfilehash: bf34bf39bc41841be72c9400ec63c501d7aa56a3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84206225"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686338"
 ---
 # <a name="edit-and-refactor-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodunu düzenleme ve yeniden düzenleme
 
@@ -64,7 +64,7 @@ Tahmine **dayalı IntelliSense** 'i geçersiz kılmak ve uzun listesini gösterm
 - Türler
 - Makrolar
 - Numaralandırmalar
-- Ad Alanları
+- Ad alanları
 
 Bir düğme yalnızca geçerli IntelliSense oturumunuzla ilgiliyse görüntülenir. Genellikle tüm düğmeleri aynı anda görmezsiniz.
 
@@ -98,11 +98,11 @@ Yaygın kodlama desenlerinin yanı sıra bazı hatalar için, düzenleyici, dalg
 
 Aşağıdaki örnekte, bir `vector` tanımı bildirildi ancak tanım bulunamadı, bu nedenle düzenleyici gerekli üst bilgi dosyasını dahil etmek için:
 
-![C&#43;&#43; hızlı düzelme](../ide/media/quick-fix-for-header-cpp.png "C++ hızlı düzeltilmesi")
+![Hata dalgalı çizgiler ve düzenleyicinin sunduğu hızlı düzelme gösteren ekran görüntüsü.](../ide/media/quick-fix-for-header-cpp.png "C++ hızlı düzeltilmesi")
 
 Düzenleyici, bazı yeniden düzenleme fırsatları için de hızlı düzeltmeler sağlar. Örneğin, bir başlık dosyasında bir sınıf bildirirseniz, Visual Studio buna ayrı bir. cpp dosyasında bir tanım oluşturmayı sağlar.
 
-![C&#43;&#43; hızlı düzelme](../ide/media/quick-fix.png "C++ hızlı düzeltilmesi")
+![Kanallar nokta C p P 'de kanal yolu yineleyicisinin oluşturma tanımı ile hızlı düzeltilmesi gösteren ekran görüntüsü.](../ide/media/quick-fix.png "C++ hızlı düzeltilmesi")
 
 ## <a name="change-tracking"></a>Change tracking
 
@@ -124,7 +124,7 @@ Kod parçacığı, kaynak kodu önceden tanımlanmış bir parçasıdır. Bir ko
 
 **Proje** menüsünden veya **Çözüm Gezgini**bağlam menüsünden Yeni bir sınıf ekleyin:
 
-![C&#43;&#43;yeni sınıf Ekle](../ide/media/vs2017-add-class.png "vs2015_cpp_add_class")
+![C&#43;&#43;yeni sınıf Ekle ](../ide/media/vs2017-add-class.png "vs2015_cpp_add_class")
 
 Ayrıca, varolan bir sınıfı değiştirmek veya incelemek için sınıf Sihirbazı 'Nı kullanabilirsiniz.
 
@@ -134,7 +134,7 @@ Daha fazla bilgi için bkz. [kod sihirbazları Ile Işlevsellik ekleme (C++)](..
 
 ## <a name="refactoring"></a>Yeniden Düzenle
 
-Yeniden düzenlemeler, hızlı eylem bağlam menüsü altında veya [düzenleyicide bir](/visualstudio/ide/perform-quick-actions-with-light-bulbs) ampulye tıklayarak kullanılabilir.  Bazıları Ayrıca **düzenle > yeniden düzenleme** menüsünde de bulunur.  Bu özellikler şunlardır:
+Yeniden düzenlemeler, hızlı eylem bağlam menüsü altında veya [düzenleyicide bir](/visualstudio/ide/perform-quick-actions-with-light-bulbs) ampulye tıklayarak kullanılabilir.  Bazıları Ayrıca **düzenle > yeniden düzenleme** menüsünde de bulunur.  Bu özellikler şunları içerir:
 
 - [Yeniden Adlandır](refactoring/rename.md)
 - [Extract Işlevi](refactoring/extract-function.md)

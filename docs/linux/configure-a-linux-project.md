@@ -3,12 +3,12 @@ title: Visual Studio 'da Linux MSBuild C++ projesi yapılandırma
 ms.date: 08/06/2020
 description: Visual Studio 'da MSBuild tabanlı bir Linux projesi yapılandırarak derleyebilirsiniz.
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 7f4664dfc364cbd9a3b499e02de4cf0e7f44fe78
-ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
+ms.openlocfilehash: 4e99645eea89682b4beac5452da01755ea555ec4
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88043869"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685962"
 ---
 # <a name="configure-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio 'da Linux MSBuild C++ projesi yapılandırma
 
@@ -93,7 +93,7 @@ Tüm derleme uzak bir bilgisayarda (veya WSL) bulunduğundan, proje özellikleri
 
 ![Derleme olayları](media/settings_buildevents.png)
 
-## <a name="intellisense-for-headers-on-remote-systems"></a><a name="remote_intellisense"></a>Uzak sistemlerde üst bilgiler için IntelliSense
+## <a name="intellisense-for-headers-on-remote-systems"></a><a name="remote_intellisense"></a> Uzak sistemlerde üst bilgiler için IntelliSense
 
 **Bağlantı Yöneticisi**'nde yeni bir bağlantı eklediğinizde, Visual Studio, uzak sistemdeki derleyicinin ekleme dizinlerini otomatik olarak algılar. Daha sonra Visual Studio, bu dosyaları yerel Windows makinenizde bir dizine kopyalar. Bundan sonra, bu bağlantıyı bir Visual Studio veya CMake projesinde kullandığınızda, bu dizinteki üstbilgiler IntelliSense sağlamak için kullanılır.
 
@@ -110,13 +110,13 @@ sudo apt install zip
 
 ::: moniker range="vs-2017"
 
-![Uzak üst bilgi IntelliSense](media/remote-header-intellisense.png)
+![Platformlar arası > bağlantı Yöneticisi > uzak üstbilgiler IntelliSense Yöneticisi seçiliyken Seçenekler iletişim kutusunu gösteren ekran görüntüsü.](media/remote-header-intellisense.png)
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-![Uzak üst bilgi IntelliSense](media/connection-manager-vs2019.png)
+![Platformlar arası > bağlantı Yöneticisi seçiliyken Seçenekler iletişim kutusunu gösteren ekran görüntüsü.](media/connection-manager-vs2019.png)
 
 Sorunları gidermeye yardımcı olmak için günlüğü etkinleştirebilirsiniz:
 
@@ -124,7 +124,7 @@ Sorunları gidermeye yardımcı olmak için günlüğü etkinleştirebilirsiniz:
 
 ::: moniker-end
 
-## <a name="linux-target-locale"></a><a name="locale"></a>Linux hedef yerel ayarı
+## <a name="linux-target-locale"></a><a name="locale"></a> Linux hedef yerel ayarı
 
 Visual Studio yüklü paketleri yönetmediğinden veya yapılandırmadığından, Visual Studio dil ayarları Linux hedeflerine yayılmaz. Derleme hataları gibi **Çıkış** penceresinde gösterilen Iletiler, Linux hedefinin dili ve yerel ayarı kullanılarak gösterilir. Linux hedeflerinizi istenen yerel ayar için yapılandırmanız gerekir.
 

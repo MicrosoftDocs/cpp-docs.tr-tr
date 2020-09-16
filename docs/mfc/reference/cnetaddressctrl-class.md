@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 30fc510272afc90ae37b583e807d10c3374df052
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e92ea79727248afd84dd08058ea8f23cc8d14f44
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562135"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686593"
 ---
 # <a name="cnetaddressctrl-class"></a>Cnetaddressc$sınıfı
 
@@ -66,13 +66,11 @@ Aşağıdaki şekilde, bir ağ adresi denetimi içeren bir iletişim kutusu gös
 
 ![Ağ adresi denetimi ve bilgi ipucu ile iletişim kutusu.](../../mfc/reference/media/cnetaddctrl.png "Ağ adresi denetimi ve bilgi ipucu ile iletişim kutusu.")
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki kod örneği, bir ağ adresini doğrulayan bir iletişim kutusunun bölümüdür. Üç radyo düğmesi için olay işleyicileri, ağ adresinin üç adres türünden biri olabilir. Kullanıcı ağ denetiminin metin kutusuna bir adres girer ve sonra adresi doğrulamak için bir düğmeye basar. Adres geçerliyse, bir başarı iletisi görüntülenir; Aksi takdirde, önceden tanımlanmış Bilgi İpucu hata iletisi görüntülenir.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_1.cpp)]
-
-## <a name="example"></a>Örnek
 
 İletişim kutusu üstbilgi dosyasındaki aşağıdaki kod örneği, [Cnetaddressc$:: GetAddress](#getaddress) yöntemi için gereken [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) ve [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) değişkenlerini tanımlar.
 

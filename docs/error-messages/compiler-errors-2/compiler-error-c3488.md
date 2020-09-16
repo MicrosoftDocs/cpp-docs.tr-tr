@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3488
 ms.assetid: 0a6fcd76-dd3b-48d7-abb3-22eccda96034
-ms.openlocfilehash: 2b69ed4ac8b7e706096d107e9dfaa4447ca1bc79
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a39c625e63936700661790023a983fa39eeda369
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738433"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685798"
 ---
 # <a name="compiler-error-c3488"></a>Derleyici hatası C3488
 
@@ -29,9 +29,9 @@ Bir lambda ifadesinin varsayılan yakalama modunun başvuruya göre olduğunu be
 
 - Değişkeni değere göre yakalama yan tümcesine geçirin. (Bu durum lambda ifadesinin davranışını değiştirebilir.)
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, varsayılan modu başvuruya göre olan bir lambda ifadesinin Capture yan tümcesinde `n` değişkenine bir başvuru göründüğünden C3488 oluşturur:
+Aşağıdaki örnek, `n` varsayılan modu başvuruya göre olan bir lambda ifadesinin Capture yan tümcesinde bir değişkene bir başvuru göründüğünden C3488 oluşturur:
 
 ```cpp
 // C3488a.cpp
@@ -42,8 +42,6 @@ int main()
    [&, &n]() { return n; } (); // C3488
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, C3488 için dört olası çözüm gösterilmektedir:
 
@@ -74,4 +72,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)

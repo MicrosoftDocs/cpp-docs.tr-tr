@@ -5,18 +5,18 @@ helpviewer_keywords:
 - cast operators [C++]
 - () cast operator
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
-ms.openlocfilehash: 491e8ea3bc3ff81e88825700de6a549324a0d5af
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6b1abfc4e2798f973951a24ea27f35b2dcf6cca7
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190163"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686325"
 ---
 # <a name="cast-operator-"></a>Atama İşleci: ()
 
 Bir tür ataması, belirli bir durumda bir nesne türünün açık dönüştürmesine ilişkin bir yöntem sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 unary-expression ( type-name ) cast-expression
@@ -28,7 +28,7 @@ Herhangi bir birli ifade, atama ifadesi olarak değerlendirilir.
 
 Derleyici, tür atama yapıldıktan sonra tür *türü adı* olarak *atama ifadesi* olarak davranır. Atamalar, herhangi bir skaler türdeki nesneleri başka bir skaler türe veya skaler türden dönüştürmek için kullanılabilir. Açık tür atamaları, örtük dönüştürmelerin etkilerini tespit eden kurallara göre kısıtlanıyor. Gerçek boyutlar veya belirli türlerin gösterimi, atamalara ilişkin ek kısıtlamalara neden olabilir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 ```cpp
 // expre_CastOperator.cpp
@@ -47,8 +47,6 @@ int main()
     cout << "i = " << i << endl;
 }
 ```
-
-## <a name="example"></a>Örnek
 
 ```cpp
 // expre_CastOperator2.cpp
@@ -122,6 +120,6 @@ Raw Bytes after cast:   Exciting
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Açık Tür Dönüştürme İşleci: ()](../cpp/explicit-type-conversion-operator-parens.md)<br/>
-[Atama İşleçleri](../cpp/casting-operators.md)<br/>
-[Atama İşleçleri](../c-language/cast-operators.md)
+[Açık tür dönüştürme Işleci: ()](../cpp/explicit-type-conversion-operator-parens.md)<br/>
+[Atama Işleçleri](../cpp/casting-operators.md)<br/>
+[Atama Işleçleri](../c-language/cast-operators.md)

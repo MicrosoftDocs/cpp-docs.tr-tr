@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 98f546a243016fa85f6d71159ab2fc0a7963bae3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2828a33a31d806c04cfce76a3156674778efbe6e
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833121"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686489"
 ---
 # <a name="db_column"></a>db_column
 
@@ -45,7 +45,7 @@ Seçim Sütun girişi için kullanılacak ölçek. Ayrıntılar için bkz `bScal
 *durumlarına*<br/>
 Seçim Bu sütunun durumunu tutmak için kullanılan bir üye değişkeni. Durum, sütun değerinin bir veri değeri mi yoksa NULL gibi başka bir değer mi olduğunu gösterir. Olası değerler için *OLE DB Programcı başvurusunda* [durum](/previous-versions/windows/desktop/ms722617(v=vs.85)) ' a bakın.
 
-*uzunluklu*<br/>
+*length*<br/>
 Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -58,7 +58,7 @@ Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, der
 
 Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bu örnek, bir tablodaki bir sütunu **`long`** veri üyesine bağlar ve durum ve uzunluk alanlarını belirtir.
 
@@ -77,8 +77,6 @@ class CProducts {
    [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Bu örnek dört sütunu bir, bir **`long`** karakter dizesi, bir zaman damgası ve bir tamsayı ile `DB_NUMERIC` Bu sırayla bağlar.
 
@@ -103,7 +101,7 @@ class CProducts {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Tekrarlanabilir**|No|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

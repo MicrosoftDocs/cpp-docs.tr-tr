@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: e18e874473925c0198b8645162546c9abe13b3ef
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 946972a9a7c3041c75e82865acb35feb4a97254a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842357"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686749"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 
@@ -47,7 +47,7 @@ Varsayılan olarak, IDL coclass 'a yalnızca temel sınıfları olan COM arabiri
 
 Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek üç bölümden oluşur:. IDL dosyası ve onunla ilişkili. h dosyası ve bir C++ dosyası.
 
@@ -96,8 +96,6 @@ library odod
    };
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Ve ayrıca derleyici tarafından kullanılabilir olması gereken aşağıdaki. h dosyası.
 
@@ -376,8 +374,6 @@ CBar;
 #endif
 #endif
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki programda,,, ve,,,, `IBar1` `IBar2` ve, `ISna` `coclass` üretilen IDL içinde yer olmayacaktır.
 

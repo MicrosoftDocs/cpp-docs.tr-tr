@@ -4,12 +4,12 @@ ms.date: 06/02/2020
 ms.description: Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ MSBuild projects
-ms.openlocfilehash: 1a1dfef033bffd3d7f1d24233752d7beae11af8e
-ms.sourcegitcommit: d695bb727bd2b081af4d50127b0242a9a5bdce61
+ms.openlocfilehash: a34b8931fa344071d319770ef1c55fc46d27e1e2
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84332285"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686351"
 ---
 # <a name="clangllvm-support-in-visual-studio-projects"></a>Visual Studio projelerinde Clang/LLVM desteği
 
@@ -27,15 +27,15 @@ Windows veya Linux 'u hedefleyen C++ Visual Studio projelerini (MSBuild) düzenl
 
 Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyicisi araçlarını kullanmanızı öneririz. Henüz yoksa, Visual Studio Yükleyicisi açarak ve C++ isteğe bağlı bileşenleriyle **masaüstü geliştirme** altında **Windows Için c++ Clang araçları** ' nı seçerek yükleyebilirsiniz. Makinenizde var olan bir Clang yüklemesini kullanmayı tercih ediyorsanız, **v142 derleme araçları için C++ Clang-CL** ' yi seçin. isteğe bağlı bileşen. Microsoft C++ standart kitaplığı şu anda en az Clang 8.0.0 gerektirir. Standart kitaplığın Microsoft uygulamasındaki güncelleştirmelerle güncel kalmak için Clang 'nin paketlenmiş sürümü otomatik olarak güncelleştirilir.
 
-![Clang bileşeni yüklemesi](media/clang-install-vs2019.png)
+![Visual Studio yükleyicisi 'nin ayrı bileşenler sekmesi seçili ve C Plus Plus Clang bileşenleri görünür ekran görüntüsü.](media/clang-install-vs2019.png)
 
 ## <a name="configure-a-windows-project-to-use-clang-tools"></a>Clang araçlarını kullanmak için bir Windows projesi yapılandırma
 
 Bir Visual Studio projesini Clang kullanacak şekilde yapılandırmak için, **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. Genellikle, ilk olarak iletişim kutusunun en üstündeki **tüm yapılandırma** ' yı seçmeniz gerekir. Ardından, **genel**  >  **platform araç takımı**altında **LLVM (Clang-CL)** öğesini ve ardından **Tamam**' ı seçin.
 
-![Clang bileşeni yüklemesi](media/clang-msbuild-prop-page.png)
+![Yapılandırma özellikleri > genel seçili ve platform araç kümesi ve L L V M (Clang c l) seçenekleri vurgulanmış şekilde Özellik sayfaları iletişim kutusunun ekran görüntüsü.](media/clang-msbuild-prop-page.png)
 
-Visual Studio ile paketlenmiş Clang araçlarını kullanıyorsanız ek bir adım gerekmez. Windows projeleri için, Visual Studio varsayılan olarak Clang [-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasını içeren bağlantıları çağırır. Varsayılan olarak, **Clang-CL. exe** , *% VCInstallDir% \\ Tools \\ LLVM \\ \\ bin* ve *% VCInstallDir% \\ Tools \\ LLVM \\ x64 \\ bin \\ *konumunda bulunur.
+Visual Studio ile paketlenmiş Clang araçlarını kullanıyorsanız ek bir adım gerekmez. Windows projeleri için, Visual Studio varsayılan olarak Clang [-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasını içeren bağlantıları çağırır. Varsayılan olarak, **clang-cl.exe** *% VCInstallDir% \\ araçları \\ LLVM \\ \\ bin* ve *% VCInstallDir% \\ Tools \\ LLVM \\ x64 \\ bin \\ *konumunda bulunur.
 
 Özel bir Clang yüklemesi kullanıyorsanız, **Project**  >  **Properties**  >  ilk dizin olarak özel Clang yükleme kökünü ekleyerek veya özelliğin değerini değiştirerek Proje özellikleri**VC + + dizinlerin**  >  **yapılandırma özellikleri**  >  **yürütülebilir dizinlerini** değiştirebilirsiniz `LLVMInstallDir` . Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
 
@@ -50,11 +50,11 @@ Bir Visual Studio Linux projesini Clang kullanacak şekilde yapılandırmak içi
 1. **Genel** > **platform araç takımı**altında, Linux için Windows alt sistemi kullanıyorsanız **WSL_Clang_1_0** ' yi veya uzak bir makine ya da VM kullanıyorsanız **Remote_Clang_1_0** ' ı seçin.
 1. **Tamam**'a basın.
 
-![Clang bileşeni yüklemesi](media/clang-msbuild-prop-page.png)
+![Konsol uygulaması Clang Visual Studio 2019 Özellik sayfaları iletişim kutusunun yapılandırma özellikleri > genel seçili ve platform araç takımı ve L L V M (Clang c l) seçenekleri vurgulanmış ekran görüntüsü.](media/clang-msbuild-prop-page.png)
 
 Linux 'ta, Visual Studio varsayılan olarak PATH Environment özelliğinde karşılaştığı ilk Clang konumunu kullanır. Özel bir Clang yüklemesi kullanıyorsanız, özelliğin değerini değiştirmeniz `LLVMInstallDir` veya **Proje**  >  **özellikleri**  >  **VC + + dizinleri**  >  **yapılandırma özellikleri**  >  **çalıştırılabilir dizinleri**altında bir yol yerine konacak olması gerekir. Daha fazla bilgi için bkz. [özel LLVM konumu ayarlama](#custom_llvm_location) .
 
-## <a name="set-a-custom-llvm-location"></a><a name="custom_llvm_location"></a>Özel bir LLVM konumu ayarlama
+## <a name="set-a-custom-llvm-location"></a><a name="custom_llvm_location"></a> Özel bir LLVM konumu ayarlama
 
 Bir veya daha fazla proje için, bir *Dizin. Build. props* dosyası oluşturarak ve bu dosyayı herhangi bir projenin kök klasörüne ekleyerek LLVM için özel bir yol ayarlayabilirsiniz. Bunu Çözümdeki tüm projelere uygulamak için kök çözüm klasörüne ekleyebilirsiniz. Dosya şuna benzemelidir (ancak gerçek yolunu yerine koyun):
 

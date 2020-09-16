@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
-ms.openlocfilehash: 26fdcd3b7989d9030249133e6dc1d277aa1a9f44
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d83a837a24fe36b61d3f0fccae4dbe4e93cd3261
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756285"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686057"
 ---
 # <a name="compiler-error-c3915"></a>Derleyici hatası C3915
 
@@ -21,7 +21,7 @@ Bir türün varsayılan, dizinli bir özelliği yok.
 
 Daha fazla bilgi için bkz. [özellik](../../extensions/property-cpp-component-extensions.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3915 oluşturur.
 
@@ -46,9 +46,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
-C3915, aynı compiland içinde <xref:System.Reflection.DefaultMemberAttribute>ile tanımlandığı yerde varsayılan bir dizin oluşturucuyu kullanmaya çalışırsanız da oluşabilir.
+C3915, bir varsayılan dizin oluşturucuyu ile tanımlandıkları yerde aynı compiland kullanılmasına çalışırsanız da oluşabilir <xref:System.Reflection.DefaultMemberAttribute> .
 
 Aşağıdaki örnek C3915 oluşturur.
 

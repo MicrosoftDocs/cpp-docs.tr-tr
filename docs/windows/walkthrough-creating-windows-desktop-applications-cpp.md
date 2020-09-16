@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: c29178c9640aa9f9eb70e03f624bcd54ab96b42c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 01b1f4a1d021dee6d1d7afbf55bbd13211af247d
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231578"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686606"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması oluşturma (C++)
 
@@ -55,11 +55,11 @@ Windows API (Win32 API, Windows Masaüstü API 'SI ve Windows Classic API olarak
 
 1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
-   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
+   ![Visual Studio 2019 ' de DesktopApp projesine yeni bir öğe ekleyen kısa bir video.](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
 1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
 
-   ![. Cpp dosyasını DesktopApp projesine ekleyin](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
+   ![Visual Studio 2019 ' de yüklü yeni öğe Ekle iletişim kutusunun ekran görüntüsü ve Visual C Plus Plus >, ve C Plus Plus dosya seçeneği vurgulanmış.](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
 Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam etmek için, [kodu oluşturma](#create-the-code)bölümüne atlayın.
 
@@ -75,17 +75,17 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
    **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
 
-   ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
+   ![Visual Studio 2017 ' deki yeni proje iletişim kutusunun ekran görüntüsü, Visual C Plus > yüklü olan Windows Masaüstü >, Windows Masaüstü Sihirbazı seçeneği vurgulanmış ve ad metin kutusuna yazılan DesktopApp.](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
 1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü**altında **Windows uygulaması (. exe)** öğesini seçin. **Ek seçenekler**altında **boş proje**' yi seçin. **Önceden derlenmiş üstbilginin** seçili olmadığından emin olun. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
 1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
-   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
+   ![Visual Studio 2017 ' de DesktopApp projesine yeni bir öğe ekleyen kısa bir video.](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
 1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
 
-   ![. Cpp dosyasını DesktopApp projesine ekleyin](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
+   ![Visual Studio 2017 ' de yüklü yeni öğe Ekle iletişim kutusunun ekran görüntüsü ve Visual C Plus Plus >, ve C Plus Plus dosya seçeneği vurgulanmış.](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
 Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam etmek için, [kodu oluşturma](#create-the-code)bölümüne atlayın.
 
@@ -101,7 +101,7 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
    **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
 
-   ![DesktopApp projesini adlandırın](../build/media/desktop-app-new-project-name-150.png "DesktopApp projesini adlandırın")
+   ![Visual Studio 2015 ' deki yeni proje iletişim kutusunun ekran görüntüsü, yüklü > şablonlar > Visual C Plus Plus > Win32 seçili, Win32 projesi seçeneği vurgulanmış ve ad metin kutusuna yazılan DesktopApp.](../build/media/desktop-app-new-project-name-150.png "DesktopApp projesini adlandırın")
 
 1. **Win32 uygulama Sihirbazı**' nın **genel bakış** sayfasında **İleri**' yi seçin.
 
@@ -111,11 +111,11 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
 1. **Çözüm Gezgini**, DesktopApp projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
 
-   ![DesktopApp projesine yeni öğe Ekle](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp projesine yeni öğe Ekle")
+   ![Visual Studio 2015 ' de DesktopApp projesine yeni bir öğe ekleyen kısa bir video.](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp projesine yeni öğe Ekle")
 
 1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
 
-   ![. Cpp dosyasını DesktopApp projesine ekleyin](../build/media/desktop-app-add-cpp-file-150.png ". Cpp dosyasını DesktopApp projesine ekleyin")
+   ![Visual Studio 2015 ' de yüklü yeni öğe Ekle iletişim kutusunun ekran görüntüsü ve Visual C Plus Plus >, ve C Plus Plus dosya seçeneği vurgulanmış.](../build/media/desktop-app-add-cpp-file-150.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
 Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır.
 
@@ -127,7 +127,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
 
 ### <a name="to-start-a-windows-desktop-application"></a>Bir Windows masaüstü uygulamasını başlatmak için
 
-1. Her C uygulamasının ve C++ uygulamasının `main` Başlangıç noktası olarak bir işlevi olması gerektiği gibi, her Windows masaüstü uygulamasında bir işlev olması gerekir `WinMain` . `WinMain`aşağıdaki sözdizimine sahiptir.
+1. Her C uygulamasının ve C++ uygulamasının `main` Başlangıç noktası olarak bir işlevi olması gerektiği gibi, her Windows masaüstü uygulamasında bir işlev olması gerekir `WinMain` . `WinMain` aşağıdaki sözdizimine sahiptir.
 
    ```cpp
    int CALLBACK WinMain(
@@ -150,7 +150,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    #include <tchar.h>
    ```
 
-1. İşlevin yanı sıra `WinMain` , her Windows masaüstü uygulaması da bir pencere yordamı işlevine sahip olmalıdır. Bu işlev genellikle adlandırılır `WndProc` , ancak istediğiniz gibi adlandırabilirsiniz. `WndProc`aşağıdaki sözdizimine sahiptir.
+1. İşlevin yanı sıra `WinMain` , her Windows masaüstü uygulaması da bir pencere yordamı işlevine sahip olmalıdır. Bu işlev genellikle adlandırılır `WndProc` , ancak istediğiniz gibi adlandırabilirsiniz. `WndProc` aşağıdaki sözdizimine sahiptir.
 
    ```cpp
    LRESULT CALLBACK WndProc(
@@ -388,7 +388,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    }
    ```
 
-   `HDC`kodda, pencerenin istemci alanında çizmek için kullanılan bir cihaz bağlamı tanıtıcıdır. `BeginPaint`Ve işlevlerini kullanarak, `EndPaint` istemci alanında çizimi hazırlayın ve doldurun. `BeginPaint`istemci alanında çizim için kullanılan görüntüleme cihazı bağlamına yönelik bir tanıtıcı döndürür; `EndPaint`boyama isteğini sonlandırır ve cihaz bağlamını yayınlar.
+   `HDC` kodda, pencerenin istemci alanında çizmek için kullanılan bir cihaz bağlamı tanıtıcıdır. `BeginPaint`Ve işlevlerini kullanarak, `EndPaint` istemci alanında çizimi hazırlayın ve doldurun. `BeginPaint` istemci alanında çizim için kullanılan görüntüleme cihazı bağlamına yönelik bir tanıtıcı döndürür; `EndPaint` boyama isteğini sonlandırır ve cihaz bağlamını yayınlar.
 
 1. Bir uygulama genellikle diğer birçok iletiyi işler. Örneğin, bir pencere ilk oluşturulduğunda [WM_CREATE](/windows/win32/winmsg/wm-create) ve pencere kapatıldığında [WM_DESTROY](/windows/win32/winmsg/wm-destroy) . Aşağıdaki kod, temel ancak tamamlanmış bir `WndProc` işlevi gösterir.
 

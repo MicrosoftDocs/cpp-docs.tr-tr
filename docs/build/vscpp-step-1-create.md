@@ -5,18 +5,18 @@ ms.custom: mvc
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 07e88da9a8a3712e1d37e319c29fd25aebce8ea7
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 333bb6ce1f3ea0db6b07d70ddd60d4a4be337abd
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749312"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686515"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
 C++ Programcı için olağan başlangıç noktası "Merhaba, Dünya!" komut satırında çalışan uygulama. Bu, Visual Studio 'da Bu adımda oluşturacağınız şeydir.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Visual Studio 'Yu, C++ iş yükünün bilgisayarınızda yüklü ve çalışır şekilde masaüstü geliştirme ile birlikte çalıştırın. Henüz yüklenmemişse, bkz. [Visual Studio 'Da C++ desteğini yükleme](vscpp-step-0-installation.md).
 
@@ -32,7 +32,7 @@ Visual Studio, bir uygulamanın kodunu düzenlemek için *projeleri* ve projeler
 
 1. **Yeni projenizi yapılandırın** Iletişim kutusunda **Proje adı** düzenleme kutusuna *HelloWorld* yazın. Projeyi oluşturmak için **Oluştur** ' a tıklayın.
 
-   ![Yeni projeyi adlandırın ve oluşturun](media/vs2019-configure-new-project-hello-world.png "Yeni projeyi adlandırın ve oluşturun")
+   ![Yeni projenizi yapılandırma iletişim kutusunun, proje adı metin alanına yazılan Merhaba Dünya ekran görüntüsü.](media/vs2019-configure-new-project-hello-world.png "Yeni projeyi adlandırın ve oluşturun")
 
    Visual Studio yeni bir proje oluşturur. Kaynak kodunuzu ekleme ve düzenleme için hazırız. Varsayılan olarak, konsol uygulama şablonu kaynak kodunuzu bir "Merhaba Dünya" uygulamasıyla doldurur:
 
@@ -52,7 +52,7 @@ Visual Studio, bir uygulamanın kodunu düzenlemek için *projeleri* ve projeler
 
 1. **Yeni proje** iletişim kutusunda, zaten seçili değilse **Visual C++ >** seçin ve **boş proje** şablonunu seçin. **Ad** alanına *HelloWorld*yazın. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
-   ![Yeni projeyi adlandırın ve oluşturun](media/vscpp-concierge-project-name-callouts.png "Yeni projeyi adlandırın ve oluşturun")
+   ![Yeni proje iletişim kutusunun yüklü > Visual C Plus Plus ile seçili ve çağrıldı, dışarı çağrılan boş proje seçeneği ve ad metin kutusuna yazılan Hellow dünya ekran görüntüsü.](media/vscpp-concierge-project-name-callouts.png "Yeni projeyi adlandırın ve oluşturun")
 
 Visual Studio yeni, boş bir proje oluşturur. Oluşturmak istediğiniz uygulama türü için özelleştirme ve kaynak kod dosyalarınızı eklemek için size hazırlanın. Bundan sonra o işlemi yapacaksınız.
 

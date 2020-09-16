@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-ms.openlocfilehash: 527f2837f0c29299727a22df8d4f3d807be0e25b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 980beb21325e78baa9c6f3691f7b814c5266b79a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228719"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686619"
 ---
 # <a name="generic-delegates-ccli"></a>Genel Temsilciler (C++/CLI)
 
@@ -50,7 +50,7 @@ Temsilcinin adı.
 *biçimsel-parametreler*<br/>
 Seçim Temsilcinin parametre listesi.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Temsilci türü parametreleri, temsilci nesnesinin oluşturulduğu noktada belirtilir. Hem temsilci hem de ile ilişkili Yöntem aynı imzaya sahip olmalıdır. Aşağıda genel temsilci bildirimine bir örnek verilmiştir.
 
@@ -60,8 +60,6 @@ Temsilci türü parametreleri, temsilci nesnesinin oluşturulduğu noktada belir
 generic <class ItemType>
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek şunu gösterir
 
@@ -104,8 +102,6 @@ int main() {
       gcnew GenDelegate<int>(&MyClass::MyStaticMethod<int>);
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, genel bir temsilci bildirir `GenDelegate<ItemType>` ve ardından onu tür parametresini kullanan yönteme ilişkilendirerek onu başlatır `MyMethod` `ItemType` . Temsilcinin iki örneği (tamsayı ve çift) oluşturulup çağrılır.
 

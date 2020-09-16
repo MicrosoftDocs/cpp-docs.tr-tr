@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - __clrcall keyword [C++]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
-ms.openlocfilehash: 6eb1a05eaf6669daa4cb7142ff16a57f7caf39cd
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 85e9025c26cc821cdbd8e5218e184f05e2b96b24
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857612"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685837"
 ---
 # <a name="__clrcall"></a>__clrcall
 
@@ -23,15 +23,15 @@ Giriş noktaları ayrı, derleyici tarafından oluşturulan işlevlerdir. Bir i�
 
 **__Clrcall** belirtilmemişse, yerel bir işlevin adresini alırken, derleyici yerel giriş noktasını kullanır. **__clrcall** , işlevin yönetildiğini ve yönetilen ' dan Native ' e geçiş işlemi yapmanız gerekmediğini gösterir. Bu durumda, derleyici yönetilen giriş noktasını kullanır.
 
-`/clr` (`/clr:pure` veya `/clr:safe`) kullanıldığında ve **__clrcall** kullanılmazsa, bir işlevin adresini almak her zaman yerel giriş noktası işlevinin adresini döndürür. **__Clrcall** kullanıldığında, yerel giriş noktası işlevi oluşturulmaz, bu nedenle bir giriş noktası dönüştürücü işlevi değil, yönetilen işlevin adresini alırsınız. Daha fazla bilgi için bkz. [Double thunking](../dotnet/double-thunking-cpp.md). **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
+`/clr`(Not `/clr:pure` veya) kullanıldığında `/clr:safe` ve **__clrcall** kullanılmazsa, bir işlevin adresini almak her zaman yerel giriş noktası işlevinin adresini döndürür. **__Clrcall** kullanıldığında, yerel giriş noktası işlevi oluşturulmaz, bu nedenle bir giriş noktası dönüştürücü işlevi değil, yönetilen işlevin adresini alırsınız. Daha fazla bilgi için bkz. [Double thunking](../dotnet/double-thunking-cpp.md). **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
 [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) , tüm işlevlerin ve işlev işaretçilerinin **__clrcall** olduğunu ve derleyicinin compiland içindeki bir işlevin **__clrcall**dışında bir şey işaretlenmesini sağlar. **/Clr: Pure** kullanıldığında, **__clrcall** yalnızca işlev işaretçilerinde ve dış bildirimlerde belirtilebilir.
 
-İşlevin MSIL uygulamasına sahip olduğu sürece **/clr** kullanılarak C++ derlenen mevcut koddan doğrudan **__clrcall** işlevlerini çağırabilirsiniz. **__clrcall** işlevler, satır içi asm içeren işlevlerden doğrudan çağrılamaz ve örneğin, bu işlevler `/clr`ile derlense bıle, CPU 'ya özgü ıntrinıics 'ı çağırır.
+Bu işlevin MSIL uygulamasına sahip olduğu sürece **/clr** kullanılarak derlenen mevcut C++ kodundan **__clrcall** işlevleri doğrudan çağırabilirsiniz. **__clrcall** işlevler, satır içi asm içeren işlevlerden doğrudan çağrılamaz ve örneğin, bu işlevler ile derlense bıle, CPU 'ya özgü ıntrinıcs 'yi çağırır `/clr` .
 
-**__clrcall** işlev işaretçilerinin yalnızca oluşturuldukları uygulama etki alanında kullanılması amaçlanmıştır.  Uygulama etki alanları arasında **__clrcall** işlev işaretçileri geçirmek yerine <xref:System.CrossAppDomainDelegate>kullanın. Daha fazla bilgi için bkz. [uygulama etki alanları C++ve görsel ](../dotnet/application-domains-and-visual-cpp.md).
+**__clrcall** işlev işaretçilerinin yalnızca oluşturuldukları uygulama etki alanında kullanılması amaçlanmıştır.  Uygulama etki alanları arasında **__clrcall** işlev işaretçileri geçirmek yerine kullanın <xref:System.CrossAppDomainDelegate> . Daha fazla bilgi için bkz. [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bir işlev **__clrcall**ile bildirildiğinde, gerektiğinde kod oluşturulacaktır; Örneğin, işlev çağrıldığında.
 
@@ -70,8 +70,6 @@ in Func1
 in Func1
 ```
 
-## <a name="example"></a>Örnek
-
 Aşağıdaki örnek, işlev işaretçisinin yalnızca yönetilen koddan çağrılacağını bildiren bir işlev işaretçisi tanımlayabileceğiniz gösterilmektedir. Bu, derleyicinin yönetilen işlevi doğrudan çağırması ve yerel giriş noktasını (çift dönüştürücü sorunu) önlemek için izin verir.
 
 ```cpp
@@ -92,5 +90,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Bağımsız değişken geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

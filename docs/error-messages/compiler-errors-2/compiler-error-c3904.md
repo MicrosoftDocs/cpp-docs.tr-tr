@@ -6,26 +6,26 @@ f1_keywords:
 helpviewer_keywords:
 - C3904
 ms.assetid: 08297605-e4f2-4c6c-b637-011f1fd40631
-ms.openlocfilehash: 1861810f4598fa81d1b7662a57651b1648de1317
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b2c5737a4442761cbaa84b532907e579eddb423d
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749054"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686071"
 ---
 # <a name="compiler-error-c3904"></a>Derleyici hatası C3904
 
 ' property_accessor ': sayı parametreleri belirtilmelidir
 
-`get` parametrelerin sayısını ve `set` yöntemleri Özellik boyutlarına göre denetleyin.
+İçindeki parametre sayısını `get` ve `set` yöntemlerinizi Özellik boyutlarına göre denetleyin.
 
-- `get` yöntemi için parametrelerin sayısı, özelliğin boyut sayısına eşit veya dizinlenmemiş özellikler için sıfır olmalıdır.
+- Yöntem için parametrelerin sayısı, `get` özelliğin boyut sayısına eşit veya dizinlenmemiş özellikler için sıfır olmalıdır.
 
-- `set` yönteminin parametre sayısı, özelliğin boyut sayısından bir daha büyük olmalıdır.
+- Metodun parametre sayısı, `set` özelliğin boyut sayısından bir daha büyük olmalıdır.
 
 Daha fazla bilgi için bkz. [özellik](../../extensions/property-cpp-component-extensions.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3904 oluşturur.
 
@@ -46,8 +46,6 @@ ref class X {
    };
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3904 oluşturur.
 

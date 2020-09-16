@@ -5,16 +5,16 @@ helpviewer_keywords:
 - STL/CLR, converting from .NET collections
 - STL/CLR Containers [STL/CLR]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-ms.openlocfilehash: 156b4162f742915939ebdfaec6a84d77afaad8cd
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: a7b2ee94f02e663690287ecfa6bc8a7230830a95
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988282"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686463"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
 
-Bu konu başlığında, .NET koleksiyonlarının eşdeğer STL/CLR kapsayıcılarına nasıl dönüştürüleceği gösterilmektedir. Örnek olarak, bir .NET <xref:System.Collections.Generic.List%601> STL/CLR [vektörüne](../dotnet/vector-stl-clr.md) nasıl dönüştüreceğiniz ve bir .net <xref:System.Collections.Generic.Dictionary%602> STL/CLR [eşlemesine](../dotnet/map-stl-clr.md)nasıl dönüştürüleceği gösterilmektedir, ancak yordam tüm koleksiyonlar ve kapsayıcılar için benzerdir.
+Bu konu başlığında, .NET koleksiyonlarının eşdeğer STL/CLR kapsayıcılarına nasıl dönüştürüleceği gösterilmektedir. Örnek olarak, bir .NET <xref:System.Collections.Generic.List%601> ' i STL/CLR [vektörüne](../dotnet/vector-stl-clr.md) nasıl dönüştürebileceğiniz ve bir .net <xref:System.Collections.Generic.Dictionary%602> STL/CLR [eşlemesine](../dotnet/map-stl-clr.md)nasıl dönüştüreceğiniz, ancak yordam tüm koleksiyonlar ve kapsayıcılar için benzerdir.
 
 ### <a name="to-create-a-container-from-a-collection"></a>Bir koleksiyondan kapsayıcı oluşturmak için
 
@@ -22,7 +22,7 @@ Bu konu başlığında, .NET koleksiyonlarının eşdeğer STL/CLR kapsayıcıla
 
    İlk örnekte bu yordam gösterilmektedir.
 
-\- VEYA -
+-VEYA-
 
 1. [Collection_adapter](../dotnet/collection-adapter-stl-clr.md) nesnesi oluşturarak genel bir STL/CLR kapsayıcısı oluşturun. Bu şablon sınıfı bir .NET koleksiyon arabirimini bağımsız değişken olarak alır. Desteklenen arabirimlerin doğrulanması için bkz. [collection_adapter (STL/CLR)](../dotnet/collection-adapter-stl-clr.md).
 
@@ -30,9 +30,9 @@ Bu konu başlığında, .NET koleksiyonlarının eşdeğer STL/CLR kapsayıcıla
 
    İkinci örnekte bu yordam gösterilmektedir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
-Bu örnekte, genel <xref:System.Collections.Generic.List%601> oluşturacağız ve buna 5 öğe ekleyeceğiz. Sonra, bir <xref:System.Collections.Generic.IEnumerable%601> bağımsız değişken olarak alan oluşturucuyu kullanarak bir `vector` oluşturacağız.
+Bu örnekte, bir genel oluşturacağız <xref:System.Collections.Generic.List%601> ve buna 5 öğe ekleyeceğiz. Sonra, bir `vector` bağımsız değişken olarak bir olarak alan oluşturucuyu kullanarak oluşturuyoruz <xref:System.Collections.Generic.IEnumerable%601> .
 
 ```cpp
 // cliext_convert_list_to_vector.cpp
@@ -76,9 +76,7 @@ The contents of the cliext::vector are:
 11
 ```
 
-## <a name="example"></a>Örnek
-
-Bu örnekte, genel <xref:System.Collections.Generic.Dictionary%602> oluşturacağız ve buna 5 öğe ekleyeceğiz. Daha sonra, <xref:System.Collections.Generic.Dictionary%602> basit bir STL/CLR kapsayıcısı olarak kaydırmak için bir `collection_adapter` oluşturacağız. Son olarak, bir `map` oluşturup <xref:System.Collections.Generic.Dictionary%602> içeriğini `map` `collection_adapter`üzerinde yineletireceğiz. Bu işlem sırasında, `make_pair` işlevini kullanarak yeni bir çift oluşturur ve yeni çifti doğrudan `map`içine ekler.
+Bu örnekte, bir genel oluşturacağız <xref:System.Collections.Generic.Dictionary%602> ve buna 5 öğe ekleyeceğiz. Ardından, öğesini basit bir `collection_adapter` <xref:System.Collections.Generic.Dictionary%602> STL/CLR kapsayıcısı olarak kaydırmak için bir oluşturacağız. Son olarak, ' a bir oluşturur ve ' a ' `map` <xref:System.Collections.Generic.Dictionary%602> ye `map` yineleme yaparak içeriğini içine kopyalayın `collection_adapter` . Bu işlem sırasında, işlevini kullanarak yeni bir çift oluşturur `make_pair` ve yeni çifti doğrudan içine ekler `map` .
 
 ```cpp
 // cliext_convert_dictionary_to_map.cpp
@@ -130,6 +128,6 @@ Key: 74.00 Value: 74
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
+[STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
 [bağdaştırıcı (STL/CLR)](../dotnet/adapter-stl-clr.md)<br/>
-[Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme](../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md)
+[Nasıl yapılır: STL/CLR Kapsayıcısından .NET koleksiyonuna dönüştürme](../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md)

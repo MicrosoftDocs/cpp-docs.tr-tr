@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3499
 ms.assetid: 6717de5c-ae0f-4024-bdf2-b5598009e7b6
-ms.openlocfilehash: 21d7424e727dab54ff507a8ec9a38db44df1806f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b49c868b696df75a5b5148d32fb286019c6293e4
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228849"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686145"
 ---
 # <a name="compiler-error-c3499"></a>Derleyici hatası C3499
 
@@ -27,7 +27,7 @@ Derleyici, dönüş türü olarak belirten bir lambda ifadesi **`void`** bir de�
 
 - Lambda ifadesinin gövdesini oluşturan deyimleri tek bir ifadeye birleştirin.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek, C3499 oluşturur çünkü bir lambda ifadesinin gövdesi birden çok deyim içeriyor ve bir değer döndürüyor, ancak lambda ifadesi dönüş türünü belirtmiyor:
 
@@ -39,8 +39,6 @@ int main()
    [](int x) { int n = x * 2; return n; } (5); // C3499
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, C3499 için iki olası çözüm gösterilmektedir. İlk çözüm, lambda ifadesinin dönüş türünü sağlar. İkinci çözüm, lambda ifadesinin gövdesini oluşturan deyimleri tek bir ifadeye birleştirir.
 

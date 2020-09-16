@@ -8,12 +8,12 @@ helpviewer_keywords:
 - where keyword [C++]
 - constraints, C++
 ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
-ms.openlocfilehash: d001cab897323d86d284958f322d155120a726a5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 829f11c9f0c3935f9a415cae381cfc12d88df18a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219761"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686762"
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 
@@ -113,7 +113,7 @@ ref class Dictionary {};
     ref class G2{};
     ```
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek, tür parametrelerinde örnek yöntemleri çağırmak için kısıtlamaları kullanmayı gösterir.
 
@@ -174,8 +174,6 @@ int main() {
 "parent" is not a senior
 "grandfather" is a senior
 ```
-
-## <a name="example"></a>Örnek
 
 Bir genel tür parametresi kısıtlama olarak kullanıldığında, naked tür kısıtlaması olarak adlandırılır. Çıplak tür kısıtlamaları, kendi tür parametresine sahip bir üye işlevin bu parametreyi kapsayan türün tür parametresiyle kısıtması gerektiğinde faydalıdır.
 

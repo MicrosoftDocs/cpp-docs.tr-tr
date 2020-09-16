@@ -4,12 +4,12 @@ ms.date: 07/01/2019
 ms.description: Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ CMake projects
-ms.openlocfilehash: 46bfe788c13df3a37dd9cba654d16cfe4c3fe177
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a23526cf5216e4cc37c3131a0d1ba94a6e923f56
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323187"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686437"
 ---
 # <a name="clangllvm-support-in-visual-studio-cmake-projects"></a>Visual Studio CMake projelerinde Clang/LLVM desteği
 
@@ -25,7 +25,7 @@ Windows veya Linux 'u hedefleyen C++ CMake projelerini düzenlemek ve hataların
 
 **Windows**: Visual Studio 2019 sürüm 16,1, Windows 'U hedefleyen CMake projelerinde Clang/LLVM ile ekleme, oluşturma ve hata ayıklama desteği içerir.
 
-**Linux**: Linux CMake projeleri Için özel Visual Studio desteği gerekli değildir. Clang 'yi, kendi paket yöneticisini kullanarak yükleyebilir ve CMakeLists. txt dosyasına uygun komutları ekleyebilirsiniz.
+**Linux**: Linux CMake projeleri Için özel Visual Studio desteği gerekli değildir. Clang 'yi, kendi paket yöneticisini kullanarak yükleyebilir ve CMakeLists.txt dosyasına uygun komutları ekleyebilirsiniz.
 
 ## <a name="install"></a>Yükleme
 
@@ -37,7 +37,7 @@ Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyic
 
 CMake projesine yeni bir Clang yapılandırması eklemek için:
 
-1. **Çözüm Gezgini** Içinde CMakeLists. txt dosyasına sağ tıklayın ve **CMake ayarlarını proje için**seçin.
+1. **Çözüm Gezgini** CMakeLists.txt sağ tıklayın ve **proje için CMake ayarları**' nı seçin.
 
 1. **Yapılandırmalar**' ın altında, **yapılandırma Ekle** düğmesine basın:
 
@@ -53,11 +53,11 @@ CMake projesine yeni bir Clang yapılandırması eklemek için:
 
 Varolan bir yapılandırmayı Clang kullanacak şekilde değiştirmek için şu adımları izleyin:
 
-1. **Çözüm Gezgini** Içinde CMakeLists. txt dosyasına sağ tıklayın ve **CMake ayarlarını proje için**seçin.
+1. **Çözüm Gezgini** CMakeLists.txt sağ tıklayın ve **proje için CMake ayarları**' nı seçin.
 
 1. **Genel** altında **araç kümesi** açılan listesini seçin ve istenen Clang araç takımını seçin:
 
-   ![CMake Clang araç takımı](media/cmake-clang-toolset.png)
+   ![Araç takımının seçili olduğunu ve Clang CL x 86 ' nin vurgulandığını gösteren genel iletişim kutusunun ekran görüntüsü.](media/cmake-clang-toolset.png)
 
 ## <a name="custom-clang-locations"></a>Özel Clang konumları
 
@@ -68,11 +68,11 @@ Varsayılan olarak, Visual Studio iki yerde Clang 'yi arar:
 
 **CMake ayarlarında** **CMAKE_C_COMPILER** ve **CMAKE_CXX_COMPILER** CMake değişkenlerini ayarlayarak başka bir konum belirtebilirsiniz:
 
-![CMake Clang araç takımı](media/clang-location-cmake.png)
+![C Make C X X derleyicisi vurgulanmış olan C ayarı ayarları iletişim kutusunun ekran görüntüsü.](media/clang-location-cmake.png)
 
 ## <a name="clang-compatibility-modes"></a>Clang uyumluluk modları
 
-Windows yapılandırmalarında CMake, [Clang-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasıyla bağlantıları çağırır. Varsayılan olarak, **Clang-CL. exe** ' de `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin`bulunur.
+Windows yapılandırmalarında CMake, [Clang-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasıyla bağlantıları çağırır. Varsayılan olarak, **clang-cl.exe** ' de bulunur `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin` .
 
 CMake **değişkenleri ve önbelleği**altındaki **CMake ayarlarında** bu değerleri değiştirebilirsiniz. **Gelişmiş değişkenleri göster**' e tıklayın. **CMAKE_CXX_COMPILER**bulmak için aşağı kaydırın ve ardından farklı bir derleyici yolu belirtmek Için, **Gözden** geçirme düğmesine tıklayın.
 

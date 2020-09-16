@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3480
 ms.assetid: 7b2e055a-9604-4d13-861b-b38bda1a6940
-ms.openlocfilehash: 255fb12d587a94aac798814736f0b26770f608b0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a2fa1a8b02cf05d332210f359ae3ff33ed7d6e35
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760484"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686312"
 ---
 # <a name="compiler-error-c3480"></a>Derleyici hatası C3480
 
@@ -23,9 +23,9 @@ Lambda yakalama değişkeni kapsayan bir işlev kapsamından değil.
 
 - Değişkeni lambda ifadesinin yakalama listesinden kaldırın.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, `global` değişken bir kapsayan işlev kapsamından olmadığından C3480 oluşturuyor:
+Aşağıdaki örnek C3480 oluşturuyor çünkü değişken `global` kapsayan bir işlev kapsamından değil:
 
 ```cpp
 // C3480a.cpp
@@ -37,9 +37,7 @@ int main()
 }
 ```
 
-## <a name="example"></a>Örnek
-
-Aşağıdaki örnek, `global` değişkenini lambda ifadesinin yakalama listesinden kaldırarak C3480 çözer:
+Aşağıdaki örnek, `global` lambda ifadesinin yakalama listesinden değişkeni kaldırarak C3480 'i çözer:
 
 ```cpp
 // C3480b.cpp
@@ -53,4 +51,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)

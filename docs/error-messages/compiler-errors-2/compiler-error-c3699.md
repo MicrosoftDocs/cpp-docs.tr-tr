@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C3699
 ms.assetid: 47c29afc-ab8b-4238-adfe-788dd6e00b3b
-ms.openlocfilehash: ec902266550e591623894823e6336bd2436bfbd5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d313168e8033395da1749e000e52421939f77af4
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758040"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686658"
 ---
 # <a name="compiler-error-c3699"></a>Derleyici hatası C3699
 
 ' operator ': Bu yöneltme ' Type ' türü üzerinde kullanılamaz
 
-`type`izin verilmeyen yöneltme kullanma girişiminde bulunuldu.
+Üzerinde izin verilmeyen bir yöneltme kullanma girişiminde bulunuldu `type` .
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3699 oluşturur.
 
@@ -34,8 +34,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Önemsiz bir özellik başvuru türüne sahip olamaz. Daha fazla bilgi için bkz. [özelliği](../../extensions/property-cpp-component-extensions.md) . Aşağıdaki örnek C3699 oluşturur.
 
 ```cpp
@@ -46,8 +44,6 @@ ref struct C {
    property System::String ^ y;   // OK
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Bir "işaretçi işaretçisinin" söz dizimi, izleme başvurusunun bir tanıtıcıdır. Aşağıdaki örnek C3699 oluşturur.
 

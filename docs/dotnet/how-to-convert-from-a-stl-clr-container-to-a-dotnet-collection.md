@@ -5,16 +5,16 @@ helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, converting to .NET collections
 ms.assetid: 70b2dfd9-869c-4e0f-9a29-b1ee0cb0d107
-ms.openlocfilehash: f7539b10ca6c503aede61d19de3d14fb9dcee8be
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: f5e289c330c83ac0c630a5b1f8f97b8c65fc7efb
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988518"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686450"
 ---
 # <a name="how-to-convert-from-a-stlclr-container-to-a-net-collection"></a>Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme
 
-Bu konuda, STL/CLR kapsayıcılarının eşdeğer .NET koleksiyonlarına nasıl dönüştürüleceği gösterilmektedir. Örnek olarak, bir STL/CLR [vektörünü](../dotnet/vector-stl-clr.md) .net <xref:System.Collections.Generic.ICollection%601> nasıl dönüştürebileceğiniz ve STL/CLR [eşlemesinin](../dotnet/map-stl-clr.md) bir .net <xref:System.Collections.Generic.IDictionary%602>nasıl dönüştürüleceği gösterilmektedir, ancak yordam tüm koleksiyonlar ve kapsayıcılar için benzerdir.
+Bu konuda, STL/CLR kapsayıcılarının eşdeğer .NET koleksiyonlarına nasıl dönüştürüleceği gösterilmektedir. Örnek olarak, bir STL/CLR [vektörünü](../dotnet/vector-stl-clr.md) .net 'a nasıl dönüştüreceğiniz <xref:System.Collections.Generic.ICollection%601> ve STL/CLR [eşlemesinin](../dotnet/map-stl-clr.md) bir .net 'a nasıl dönüştürüleceği gösterilmektedir <xref:System.Collections.Generic.IDictionary%602> , ancak yordam tüm koleksiyonlar ve kapsayıcılar için benzerdir.
 
 ### <a name="to-create-a-collection-from-a-container"></a>Bir kapsayıcıdan koleksiyon oluşturmak için
 
@@ -24,9 +24,9 @@ Bu konuda, STL/CLR kapsayıcılarının eşdeğer .NET koleksiyonlarına nasıl 
 
    - Kapsayıcının tamamını dönüştürmek için kapsayıcıyı uygun bir .NET koleksiyonu arabirimine veya arabirim koleksiyonuna atayın. İkinci örnek bu yöntemi gösterir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
-Bu örnekte, bir STL/CLR `vector` oluşturup buna 5 öğe ekleyeceğiz. Daha sonra, `make_collection` işlevini çağırarak bir .NET koleksiyonu oluşturacağız. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüyoruz.
+Bu örnekte, bir STL/CLR oluşturacağız `vector` ve buna 5 öğe ekleyeceğiz. Ardından, işlevini çağırarak bir .NET koleksiyonu oluşturacağız `make_collection` . Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüyoruz.
 
 ```cpp
 // cliext_convert_vector_to_icollection.cpp
@@ -68,9 +68,7 @@ The contents of the System::Collections::Generic::ICollection are:
 7
 ```
 
-## <a name="example"></a>Örnek
-
-Bu örnekte, bir STL/CLR `map` oluşturup buna 5 öğe ekleyeceğiz. Daha sonra, bir .NET <xref:System.Collections.Generic.IDictionary%602> oluşturacağız ve `map` doğrudan buna atayacağız. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüyoruz.
+Bu örnekte, bir STL/CLR oluşturacağız `map` ve buna 5 öğe ekleyeceğiz. Daha sonra bir .NET oluşturacağız <xref:System.Collections.Generic.IDictionary%602> ve `map` doğrudan buna atarız. Son olarak, yeni oluşturulan koleksiyonun içeriğini görüntüyoruz.
 
 ```cpp
 // cliext_convert_map_to_idictionary.cpp
@@ -113,6 +111,6 @@ Key: 74.00 Value: 74
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
-[Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
+[STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md)<br/>
+[Nasıl yapılır: bir .NET koleksiyonundan STL/CLR kapsayıcısına dönüştürme](../dotnet/how-to-convert-from-a-dotnet-collection-to-a-stl-clr-container.md)<br/>
 [range_adapter (STL/CLR)](../dotnet/range-adapter-stl-clr.md)

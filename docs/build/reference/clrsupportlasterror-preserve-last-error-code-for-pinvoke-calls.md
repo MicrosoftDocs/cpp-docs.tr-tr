@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /CLRSUPPORTLASTERROR linker option
 - -CLRSUPPORTLASTERROR linker option
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-ms.openlocfilehash: 071846e18dfef6cad0b7c5fb983dac3f6c85a689
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ccf13971bf77fb8e960b781e4a1aa2a0e06a5d61
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839172"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686109"
 ---
 # <a name="clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls"></a>/CLRSUPPORTLASTERROR (PInvoke Çağrıları için Son Hata Kodunu Koru)
 
@@ -49,7 +49,7 @@ Yalnızca sistem dll 'Lerinde işlevlere yönelik son hata kodunu koruyan **/CLR
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek, son hatayı değiştiren bir içe aktarılmış işlevle yerel bir DLL tanımlar.
 
@@ -65,8 +65,6 @@ __declspec(dllexport) double MySqrt(__int64 n) {
    return sqrt(double(n));
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, **/CLRSUPPORTLASTERROR**'in nasıl KULLANıLACAĞıNı gösteren dll 'yi kullanır.
 

@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3867
 ms.assetid: bc5de03f-e01a-4407-88c3-2c63f0016a1e
-ms.openlocfilehash: 7e3f52b2b69058549cb8aa3e14d2a4b4048fc4e4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 40825bf92a892917f815c955ee4ba1fb6fa906c3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756857"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686424"
 ---
 # <a name="compiler-error-c3867"></a>Derleyici hatası C3867
 
-' Func ': işlev çağrısında bağımsız değişken listesi eksik; üyeye işaretçi oluşturmak için ' & Func ' kullanın
+' Func ': işlev çağrısında bağımsız değişken listesi eksik; üyeye işaretçi oluşturmak için ' &Func ' kullanın
 
 Üye işlevini sınıf adı ve adres işleci ile nitelemeden bir üye işlevin adresini almaya çalıştınız.
 
 Bu hata, Visual Studio 2005: Gelişmiş üye işaretçisi uygunluğu için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir. Visual Studio 2005 ' den önce derlenen kod artık C3867 oluşturacak.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 C3867, yanlış bir önerilen çözüm ile derleyicisinden verilebilir. Mümkün olan her durumda, en türetilmiş sınıfı kullanın.
 
@@ -44,8 +44,6 @@ void Derived::Bar() {
    &Derived::Test;   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3867 oluşturur ve nasıl düzeltileceğini gösterir.
 
@@ -77,8 +75,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Aşağıdaki örnek C3867 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
@@ -95,8 +91,6 @@ int main() {
    void (X::*pmf2)() = &X::mf;
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3867 oluşturur.
 
@@ -119,8 +113,6 @@ public:
    }
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3867 oluşturur.
 

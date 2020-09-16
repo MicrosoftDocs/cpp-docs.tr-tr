@@ -6,22 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4250
 ms.assetid: d47f7249-6b5a-414b-b2d4-56e5d246a782
-ms.openlocfilehash: e0feb1cb7131b4388c87213a85ff1c921f636e1b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 10064784e1124ac365475f00b3577d22f5e7f3f1
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162042"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686528"
 ---
 # <a name="compiler-warning-level-2-c4250"></a>Derleyici Uyarısı (düzey 2) C4250
 
 ' Class1 ': ' Class2:: Member ' öğesini baskınlık aracılığıyla devralır
 
-İki veya daha fazla üye aynı ada sahip. `class2`, bu üyeyi içeren diğer sınıfların temel sınıfı olduğundan devralınır.
+İki veya daha fazla üye aynı ada sahip. İçindeki biri, `class2` Bu üyeyi içeren diğer sınıfların temel sınıfı olduğundan devralınır.
 
 C4250 bastırmak için, [Uyarı](../../preprocessor/warning.md) pragmasını kullanın.
 
 Bir sanal temel sınıf birden çok türetilmiş sınıf arasında paylaşıldığından, türetilmiş sınıftaki bir ad temel sınıftaki bir adı ayırır. Örneğin, aşağıdaki sınıf hiyerarşisi söz konusu olduğunda, elmas içinde devralınan iki işlev tanımı vardır: zayıf sınıf aracılığıyla vbc:: Func () örneği ve baskın sınıf ile baskın:: Func (). Bir Diamond Class nesnesi aracılığıyla () nitelenmemiş çağrısı, her zaman Dominate:: Func () örneğini çağırır.  Zayıf sınıf Func () öğesinin bir örneğini tanıtmak olsaydı, hiçbir tanım neden olmaz ve çağrı belirsiz olarak işaretlenir.
+
+## <a name="examples"></a>Örnekler
 
 ```cpp
 // C4250.cpp
@@ -44,8 +46,6 @@ int main() {
    d.func();   // C4250
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C4250 oluşturur.
 
@@ -77,8 +77,6 @@ int main() {
    cout << eObject.operator int() << endl;
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Bu örnekte daha karmaşık bir durum gösterilmektedir. Aşağıdaki örnek C4250 oluşturur.
 

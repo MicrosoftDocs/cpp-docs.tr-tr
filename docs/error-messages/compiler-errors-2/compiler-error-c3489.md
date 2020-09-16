@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3489
 ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
-ms.openlocfilehash: 67eaa9806dff96783f391c46c890b34e1ceef5a3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3b192a14a39b7c0c9d264bda8073c54f0f395924
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738420"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685772"
 ---
 # <a name="compiler-error-c3489"></a>Derleyici hatası C3489
 
@@ -29,9 +29,9 @@ Bir lambda ifadesinin varsayılan yakalama modunun değere göre olduğunu belir
 
 - Değişkeni yakalama yan tümcesine başvuruya göre geçirin. (Bu durum lambda ifadesinin davranışını değiştirebilir.)
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnek, varsayılan modu değere göre olan bir lambda ifadesinin yakalama yan tümcesinde değere göre görünen C3489 değişken `n` üretir:
+Aşağıdaki örnek, `n` varsayılan modu değere göre olan bir lambda ifadesinin yakalama yan tümcesinde değere göre görünen C3489 değişken oluşturur:
 
 ```cpp
 // C3489a.cpp
@@ -42,8 +42,6 @@ int main()
    [=, n]() { return n; } (); // C3489
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, C3489 için dört olası çözüm gösterilmektedir:
 
@@ -74,4 +72,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)

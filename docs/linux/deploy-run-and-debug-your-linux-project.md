@@ -3,14 +3,14 @@ title: Visual Studio 'da Linux MSBuild C++ projenizi dağıtma, çalıştırma v
 description: Visual Studio 'da MSBuild tabanlı bir Linux C++ projesinin içinden uzak hedef üzerinde kod derlemeyi, yürütmeyi ve hata ayıklamanın nasıl yapılacağını açıklar.
 ms.date: 08/08/2020
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-ms.openlocfilehash: 55e066201e99245db4c63902c51223047e40e687
-ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
+ms.openlocfilehash: 4200e30b445f4a09fc60083db0067996c96ea953
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88043895"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686710"
 ---
-# <a name="deploy-run-and-debug-your-linux-msbuild-project"></a>Linux MSBuild projenizi dağıtın, çalıştırın ve hatalarını ayıklayın
+# <a name="deploy-run-and-debug-your-linux-msbuild-project"></a>Linux MSBuild projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama
 
 ::: moniker range="vs-2015"
 Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. Bu sürümlerin belgelerini görmek için, içindekiler tablosunun üstünde bulunan **Sürüm** açılan listesini **Visual Studio 2017** veya **Visual Studio 2019**olarak ayarlayın.
@@ -38,7 +38,7 @@ Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç
 
    GDB, Linux üzerinde çalışan uygulamalarda hata ayıklamak için kullanılır. Uzak sistemde hata ayıklama yapıldığında (WSL değil) GDB, projenin **hata ayıklama** özellik sayfasındaki **hata ayıklama modu** seçeneğinden seçilebilen iki farklı modda çalışabilir:
 
-   ![GDB seçenekleri](media/vs2019-debugger-settings.png)
+   ![Yapılandırma özellikleriyle Visual Studio 2019 Linux konsol uygulaması Özellik sayfaları iletişim kutusunun ekran görüntüsü seçili ve G B D seçili ve hata ayıklama modu seçili ve aşağı açılan listeden vurgulanmış şekilde >.](media/vs2019-debugger-settings.png)
 
    ::: moniker-end
 
@@ -46,7 +46,7 @@ Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç
 
    GDB, Linux üzerinde çalışan uygulamalarda hata ayıklamak için kullanılır. GDB, projenin **hata ayıklama** özellik sayfasındaki **hata ayıklama modu** seçeneğinden seçilebilen iki farklı modda çalışabilir:
 
-   ![GDB seçenekleri](media/vs2017-debugger-settings.png)
+   ![Yapılandırma özellikleriyle Visual Studio 2017 Linux konsol uygulaması Özellik sayfaları iletişim kutusunun ekran görüntüsü seçili ve G B D seçili ve hata ayıklama modu seçili ve aşağı açılan listeden vurgulanmış şekilde >.](media/vs2017-debugger-settings.png)
 
    ::: moniker-end
 
@@ -123,7 +123,7 @@ ExePath="C:\temp\ConsoleApplication17\ConsoleApplication17\bin\x64\Debug\Console
 
 ::: moniker range="vs-2019"
 
-## <a name="specify-different-machines-for-building-and-debugging-in-msbuild-based-linux-projects"></a><a name="separate_build_debug"></a>MSBuild tabanlı Linux projelerinde derleme ve hata ayıklama için farklı makineler belirtin
+## <a name="specify-different-machines-for-building-and-debugging-in-msbuild-based-linux-projects"></a><a name="separate_build_debug"></a> MSBuild tabanlı Linux projelerinde derleme ve hata ayıklama için farklı makineler belirtin
 
 Visual Studio 2019 sürüm 16,1 ' de uzak derleme makinenizi hem MSBuild tabanlı Linux projeleri hem de uzak bir Linux makinesini hedefleyen CMake projeleri için uzaktan hata ayıklama makinenizden ayırabilirsiniz. Örneğin, artık x64 üzerinde çapraz derleme yapabilir ve IoT senaryolarını hedeflerken ARM cihazına dağıtabilirsiniz.
 

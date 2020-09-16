@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3484
 ms.assetid: 2fe847fa-f6ee-4978-bc1d-b6dc6ae906ac
-ms.openlocfilehash: c9895a3e5a8ae7e941fccde2da85fedfb3d2c6dd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ded4a183f69e4903afb4c9dfeae22f7751ef76ad
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743126"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686286"
 ---
 # <a name="compiler-error-c3484"></a>Derleyici hatası C3484
 
 dönüş türünden önce '-> ' bekleniyor
 
-Lambda ifadesinin dönüş türünden önce `->` sağlamanız gerekir.
+`->`Lambda ifadesinin dönüş türünden önce sağlamanız gerekir.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Dönüş türünden önce `->` sağlayın.
+- `->`Dönüş türünden önce sağlayın.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3484 oluşturur:
 
@@ -36,9 +36,7 @@ int main()
 }
 ```
 
-## <a name="example"></a>Örnek
-
-Aşağıdaki örnek, lambda ifadesinin dönüş türünden önce `->` sağlayarak C3484 çözer:
+Aşağıdaki örnek, `->` lambda ifadesinin dönüş türünden önce sağlayarak C3484 'i çözer:
 
 ```cpp
 // C3484b.cpp
@@ -51,4 +49,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+[Lambda Ifadeleri](../../cpp/lambda-expressions-in-cpp.md)
