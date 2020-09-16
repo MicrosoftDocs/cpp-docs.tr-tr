@@ -1,6 +1,7 @@
 ---
 title: Matematik ve kayan nokta desteği
-ms.date: 01/31/2019
+description: Microsoft Universal C çalışma zamanı kitaplığı 'nda (UCRT) kayan nokta desteğini açıklar
+ms.date: 9/14/2020
 f1_keywords:
 - c.math
 helpviewer_keywords:
@@ -8,16 +9,18 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: ca1648719a4a98efc56ea3f543336b803c81c40f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99a5de3ce816e64d4b477c8c1d3226da5f8f292e
+ms.sourcegitcommit: a6b97f5d78299ad93675de2fe0f0561f528d26c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226235"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90569593"
 ---
 # <a name="math-and-floating-point-support"></a>Matematik ve kayan nokta desteği
 
 Evrensel C çalışma zamanı kitaplığı (UCRT), ISO C99 tarafından gerekenlerden bazıları dahil olmak üzere çok sayıda integral ve kayan nokta matematik kitaplığı işlevi sağlar. Kayan nokta işlevleri, performansı doğruluk altına alacak şekilde uygulanır. Doğru şekilde yuvarlanmış sonucun üretilmesi, canlı olarak elde edilebilir hale gelebilir, ancak bu işlevler doğru bir şekilde yuvarlanmış sonuca yakın bir şekilde bir kapatma sağlamak üzere tasarlanmıştır. Çoğu durumda, üretilen sonuç doğru bir şekilde yuvarlanmış sonucu +/-1 ULP içinde, ancak daha fazla doğruluk olduğu durumlar olabilir.
+
+ISO C standart 11 (C11) ve üzeri için \<tgmath.h> üst bilgi, ve dahil olmak üzere ek olarak, \<math.h> \<complex.h> parametrelerinin türlerine göre ilgili matematik işlevini çağıran makrolar sağlar. Ayrıntılar için bkz. [tür-genel matematik](tgmath.md) .
 
 Kayan nokta matematik kitaplığı işlevlerinin birçoğu, farklı CPU mimarileri için farklı uygulamalara sahiptir. Örneğin, 32 bit x86 CRT, 64 bit x64 CRT 'den farklı bir uygulamaya sahip olabilir. Ayrıca, bazı işlevlerden belirli bir CPU mimarisi için birden çok uygulama olabilir. En verimli uygulama, CPU tarafından desteklenen yönerge kümelerine bağlı olarak çalışma zamanında dinamik olarak seçilir. Örneğin, 32 bit x86 CRT 'de, bazı işlevlerde hem x87 uygulama hem de bir SSE2 uygulama vardır. SSE2 destekleyen bir CPU üzerinde çalışırken, daha hızlı SSE2 uygulama kullanılır. SSE2 desteklemeyen bir CPU üzerinde çalışırken, daha yavaş x87 uygulama kullanılır. Matematik kitaplığı işlevlerinin farklı uygulamaları, sonuçlarını oluşturmak için farklı CPU yönergeleri ve farklı algoritmalar kullanabileceğinden, işlevler CPU 'larda farklı sonuçlar üretebilir. Çoğu durumda, sonuçlar doğru bir şekilde yuvarlanmış sonucu +/-1 ULP içinde, ancak gerçek sonuçlar CPU 'larda farklılık gösterebilir.
 
@@ -34,8 +37,8 @@ Microsoft C/C++ ' ın önceki 16 bit sürümleri ve Microsoft Visual C++ **`long
 [asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)|Hiperbolik yay sinüsünü hesaplar
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Yay tanjantını hesaplar
 [atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)|Hiperbolik yay tanjantını hesaplar
-[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü bir dizeyi öğesine dönüştürür**`double`**
-[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Bir dizeyi öğesine dönüştürür**`double`**
+[_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü bir dizeyi öğesine dönüştürür **`double`**
+[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Bir dizeyi öğesine dönüştürür **`double`**
 [_atoflt, _atoflt_l, _atoldbl, _atoldbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)|Yerel ayara özgü dizeyi bir veya öğesine dönüştürür **`float`****`long double`**
 [cbrt, cbrtf, cbrtl](../c-runtime-library/reference/cbrt-cbrtf-cbrtl.md)|Küp kökünü hesaplar
 [ceil, ceilf, ceill](../c-runtime-library/reference/ceil-ceilf-ceill.md)|Tavan hesaplar
@@ -126,16 +129,16 @@ Microsoft C/C++ ' ın önceki 16 bit sürümleri ve Microsoft Visual C++ **`long
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|Hiperbolik sinüsü hesaplar
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Kare kökünü hesaplar
 [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|Kayan nokta durum sözcüğünü alır
-[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Bir dizeyi öğesine dönüştürür**`float`**
-[strsöyle, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeyi öğesine dönüştürür**`long double`**
+[strtof, _strtof_l](../c-runtime-library/reference/strtof-strtof-l-wcstof-wcstof-l.md)|Bir dizeyi öğesine dönüştürür **`float`**
+[strsöyle, _strtold_l](../c-runtime-library/reference/strtold-strtold-l-wcstold-wcstold-l.md)|Bir dizeyi öğesine dönüştürür **`long double`**
 [tan, tanf, tanl](../c-runtime-library/reference/tan-tanf-tanl.md)|Tanjantı hesaplar
 [tanh, tanhf, tanhl](../c-runtime-library/reference/tanh-tanhf-tanhl.md)|Hiperbolik tanjantı hesaplar
 [tgamma, tgammaf, tgammal](../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)|Gama işlevini hesaplar
 [trunc, truncf, truncl](../c-runtime-library/reference/trunc-truncf-truncl.md)|Kesirli kısmını keser
-[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeyi öğesine dönüştürür**`double`**
+[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Geniş bir dizeyi öğesine dönüştürür **`double`**
 [_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel işlevini hesaplar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Kayan nokta temel elemanları](../c-runtime-library/reference/floating-point-primitives.md)<br/>
+[Kategoriye göre evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)\
+[Kayan nokta temel elemanları](../c-runtime-library/reference/floating-point-primitives.md)

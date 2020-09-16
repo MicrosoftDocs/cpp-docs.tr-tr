@@ -1,5 +1,6 @@
 ---
 title: C karmaşık matematik desteği
+description: Microsoft C çalışma zamanı kitaplığı 'nda (CRT) C dili karmaşık matematik desteğini açıklar
 ms.date: 05/14/2019
 f1_keywords:
 - c.complex
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - complex numbers, math routines
 - math routines
 - complex numbers
-ms.openlocfilehash: dac032940ed9d96764b64809c5f8901ac273898b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0616f846030e5d5260b5d781884387614e12051d
+ms.sourcegitcommit: a6b97f5d78299ad93675de2fe0f0561f528d26c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215185"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90569543"
 ---
 # <a name="c-complex-math-support"></a>C karmaşık matematik desteği
 
@@ -28,9 +29,9 @@ Complex. h üstbilgisinin Microsoft uygulamasında, bu türler C99 standart yere
 
 |Standart tür|Microsoft türü|
 |-|-|
-|**`float complex`** veya**`float _Complex`**|**_Fcomplex**|
-|**`double complex`** veya**`double _Complex`**|**_Dcomplex**|
-|**`long double complex`** veya**`long double _Complex`**|**_Lcomplex**|
+|**`float complex`** veya **`float _Complex`**|**_Fcomplex**|
+|**`double complex`** veya **`double _Complex`**|**_Dcomplex**|
+|**`long double complex`** veya **`long double _Complex`**|**_Lcomplex**|
 
 Math. h üst bilgisi, [_cabs](../c-runtime-library/reference/cabs.md) işlevi için kullanılan ayrı bir tür, **struct _complex**tanımlar. **Struct _complex** türü, benzer karmaşık matematik işlevleri [CAB, cabsf, cabsl](../c-runtime-library/reference/cabs-cabsf-cabsl.md)tarafından kullanılmaz.
 
@@ -99,4 +100,5 @@ Karmaşık numaralar Microsoft derleyicisinde yerel bir tür olmadığından, st
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Tür-genel matematik](tgmath.md)\
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

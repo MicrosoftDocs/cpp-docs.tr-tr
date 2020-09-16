@@ -1,5 +1,6 @@
 ---
 title: İşlevlerle Makrolar Arasında Seçim Önerileri
+description: Microsoft C çalışma zamanı kitaplığı 'nda (CRT) makro vs işlevleri kullanma arasındaki farklılıkları açıklar.
 ms.date: 11/04/2016
 f1_keywords:
 - c.functions
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - functions [CRT], vs. macros
 - macros, vs. functions
 ms.assetid: 18a633d6-cf1c-470c-a649-fa7677473e2b
-ms.openlocfilehash: 234fcd8a0439240bc7585414254c5687dcb8f21b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8c47bf1924aeb94e2e4c9ee9358627cafcf90cba
+ms.sourcegitcommit: a6b97f5d78299ad93675de2fe0f0561f528d26c7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62335736"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90569538"
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>İşlevlerle Makrolar Arasında Seçim Önerileri
 
-Çoğu Microsoft çalışma zamanı kitaplık yordamları derlenmiş veya işlevleri bir araya getirilen, ancak bazı yordamları makroları olarak uygulanır. Bir üstbilgi dosyası hem işlev hem de bir yordam makrosu sürümünü bildirir, işlev bildiriminden sonra her zaman görünür olduğundan Makro tanımında, önceliklidir. Bir işlev ve makro uygulanan bir yordamı çağırdığınızda, derleyicinin iki yolla işlev sürümünü kullanmasını zorunlu kılabilirsiniz:
+Microsoft çalışma zamanı kitaplığı yordamlarının çoğu derlenmiş veya birleştirilmiş işlevlerdir, ancak bazı yordamlar makro olarak uygulanır. Bir üst bilgi dosyası bir yordamın bir işlevini ve makro sürümünü bildiriyorsa, her zaman işlev bildiriminden sonra göründüğünden, makro tanımı öncelik kazanır. Hem bir işlev hem de makro olarak uygulanan bir yordamı çağırdığınızda, derleyicinin işlev sürümünü kullanmak için iki şekilde zorlayabilirsiniz:
 
-- Rutin adı ayraç içine alın.
+- Yordamın adını parantez içine alın.
 
     ```C
     #include <ctype.h>
@@ -27,21 +28,22 @@ ms.locfileid: "62335736"
                         // function version of toupper.
     ```
 
-- "İle Makro tanımında Kaldır" `#undef` yönergesi:
+- Şu yönergeyle makro tanımını "tanımlayın" `#undef` :
 
     ```C
     #include <ctype.h>
     #undef _toupper
     ```
 
-Bir yordamı makrosu uygulamasıdır ve bir işlev arasında seçim yapmanız gerekiyorsa, aşağıdaki stillerden göz önünde bulundurun:
+Bir kitaplık yordamının bir işlevi ve makro uygulamasıyla arasında seçim yapmanız gerekirse, aşağıdaki ticareti göz önünde bulundurun:
 
-- **Boyutu ve hızlı** makroları kullanmanın ana avantajı daha hızlı yürütme süresi kısadır. Ön işleme sırasında bir makro (tanımı tarafından değiştirilen) genişletilir satır içi kullanıldığı her zaman. Bir işlev tanımı, kaç kez bağımsız olarak yalnızca bir kez çağrılır gerçekleşir. Makrolar kod boyutunu artırabilir, ancak işlev çağrıları ile ilgili ek yükü izniniz yok.
+- **Hız ve boyut karşılaştırması** Makroları kullanmanın ana avantajı daha hızlı yürütme süresi olur. Ön işleme sırasında, bir makro her kullanıldığında (tanımına göre değiştirilmiştir) satır içi genişletilir. İşlev tanımı, kaç kez çağrıldığına bakılmaksızın yalnızca bir kez gerçekleşir. Makrolar kod boyutunu artırabilir, ancak işlev çağrılarıyla ilişkili ek yüke sahip değildir.
 
-- **İşlev değerlendirmesi** bir işlev bir adres olarak değerlendirilen; bir makro desteklemez. Bu nedenle, bir işaretçi gerektiren bağlamlarda makro adı kullanamazsınız. Örneğin, bir işlev işaretçisi, ancak bir makro işaretçisi değil bildirebilirsiniz.
+- **İşlev değerlendirmesi** Bir işlev bir adresi değerlendirir; makro değildir. Bu nedenle, bir işaretçi gerektiren bağlamlarda makro adı kullanamazsınız. Örneğin, bir işlev için bir işaretçi bildirebilirsiniz, ancak bir işaretçiye işaretçi ekleyebilirsiniz.
 
-- **Tür denetleme** bir işlev bildirdiğinizde, derleyici bağımsız değişken türlerini kontrol edebilirsiniz. Derleyici, makro bağımsız değişken türleri iade edilemedi, bir makro bildiremezsiniz çünkü değil; bağımsız değişken sayısı kontrol edebilirsiniz ancak bir makro geçirin.
+- **Tür denetimi** Bir işlevi bildirdiğinizde, derleyici bağımsız değişken türlerini denetleyebilir. Bir makro bildiremediği için, derleyici makro bağımsız değişken türlerini denetlemez; bir makroya geçirdiğiniz bağımsız değişkenlerin sayısını denetleyebilir ancak
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[Tür-genel matematik](tgmath.md)\
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
