@@ -8,18 +8,18 @@ helpviewer_keywords:
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-ms.openlocfilehash: 2f2471e36d7551cab9edb68d7babeb1419e8e20c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 13d5bd37a0f5e0b065aecb8c5b264fb70685363f
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988212"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684514"
 ---
 # <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma
 
-Yönetilmeyen bellekte CLR nesne başvurusunu tutmak için <xref:System.Runtime.InteropServices.GCHandle>sarmalayan gcroot. h ' yi kullanabilirsiniz. Alternatif olarak, `GCHandle` doğrudan de kullanabilirsiniz.
+<xref:System.Runtime.InteropServices.GCHandle>Yönetilmeyen bellekte BIR CLR nesne başvurusunu tutmak için, sarmalanmış olan gcroot. h ' yi kullanabilirsiniz. Alternatif olarak, doğrudan kullanabilirsiniz `GCHandle` .
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 ```cpp
 // hold_object_reference.cpp
@@ -55,9 +55,7 @@ int main() {
 StringWrapper::x == ManagedString
 ```
 
-## <a name="example"></a>Örnek
-
-`GCHandle`, yönetilmeyen bellekte yönetilen bir nesne başvurusunu tutmak için bir yol sağlar.  Yönetilen bir nesne için donuk bir tanıtıcı oluşturmak için <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> yöntemini kullanın ve onu serbest bırakmak için <xref:System.Runtime.InteropServices.GCHandle.Free%2A>. Ayrıca <xref:System.Runtime.InteropServices.GCHandle.Target%2A> yöntemi, nesne başvurusunu Yönetilen koddaki tanıtıcıdan geri elde etmenizi sağlar.
+`GCHandle` yönetilmeyen bellekte yönetilen bir nesne başvurusunu tutmak için bir yol sağlar.  <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A>Yöntemi, yönetilen bir nesne için donuk bir tanıtıcı oluşturmak ve onu serbest bırakmak için kullanın <xref:System.Runtime.InteropServices.GCHandle.Free%2A> . Ayrıca, <xref:System.Runtime.InteropServices.GCHandle.Target%2A> yöntemi Yönetilen koddaki işleyicinizden nesne başvurusunu elde etmenizi sağlar.
 
 ```cpp
 // hold_object_reference_2.cpp
@@ -96,4 +94,4 @@ StringWrapper::m_handle == ManagedString
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

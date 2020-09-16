@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4488
 ms.assetid: 55625e46-ddb5-4c7c-99c7-cd4aa9f879bd
-ms.openlocfilehash: b83845f0ed0efeee6485780c7e4f828e40473e9e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6db814e405c0b13cdf40fc81a1f23c6d59fd5f00
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186705"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684670"
 ---
 # <a name="compiler-warning-level-1-c4488"></a>Derleyici Uyarısı (düzey 1) C4488
 
@@ -19,7 +19,7 @@ ms.locfileid: "80186705"
 
 Bir sınıfın, doğrudan devraldığı bir arabirimin tüm üyelerini uygulaması gerekir. Uygulanan bir üyenin genel erişilebilirliği olması ve sanal olarak işaretlenmesi gerekir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 C4488, uygulanan bir üyenin ortak olmaması durumunda gerçekleşebilir. Aşağıdaki örnek C4488 oluşturur.
 
@@ -39,8 +39,6 @@ public:
    virtual void f1() {}
 };
 ```
-
-## <a name="example"></a>Örnek
 
 C4488, uygulanan bir üyenin sanal olarak işaretlenmemiş olması durumunda gerçekleşebilir. Aşağıdaki örnek C4488 oluşturur.
 

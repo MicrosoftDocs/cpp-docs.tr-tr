@@ -4,12 +4,12 @@ description: Visual Studio 'daki Microsoft C/C++ derleyicisinde ve araçlarında
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: 1a0fc228b6c91b1e529db6676c1a1193f5db99e1
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a21bb8f8c629b3d9c8c765958d6a52891c90898a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041685"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684754"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
@@ -649,7 +649,7 @@ Visual Studio 2017 ile birlikte gelen Clang/C2 araç takımı artık **`/bigobj`
 
 [C++ Temel Yönergeleri](https://github.com/isocpp/CppCoreGuidelines)’nin uygulanmasını sağlayan C++ Temel Denetleyicileri artık Visual Studio ile dağıtılmaktadır. Projenin özellik sayfalarındaki **Kod Analizi uzantıları** sayfasında bulunan denetleyicileri etkinleştirin. Uzantılar daha sonra kod analizini çalıştırdığınızda dahil edilir. Daha fazla bilgi için bkz. [C++ temel yönergeleri denetleyicileri kullanma](/cpp/code-quality/using-the-cpp-core-guidelines-checkers).
 
-![C++ Temel Denetimi RuleSets ' i seçmek için kod analizi Özellik sayfasının nasıl kullanılacağını gösterir.](media/CppCoreCheck.png "CppCoreCheck özellikleri sayfası")
+![Yapılandırma özelliklerini gösteren özellik sayfaları iletişim kutusunun ekran görüntüsü > kod analizi > genel seçili ve bu kural kümesini çalıştır bölümünde listelenen birtakım çekirdek denetimleri.](media/CppCoreCheck.png "CppCoreCheck özellikleri sayfası")
 
 ##### <a name="visual-studio-2017-version-153"></a>Visual Studio 2017 sürüm 15.3
 
@@ -697,7 +697,7 @@ Visual Studio Grafik Tanılama araçları: bunları, Direct3D uygulamalarında i
 
 - **Nesne tablosunda arama ve filtreleme:** Aradığınız kaynakları bulmanın hızlı ve kolay bir yolunu sağlar.
 
-  ![Nesne tablosu penceresinde filtre ve arama denetimlerinin konumunu gösterir.](media/search.png)
+  ![Tür açılan listesi ve arama metin kutusu olarak adlandırılan nesne tablosu bölümünün ekran görüntüsü.](media/search.png)
 
 - **Kaynak geçmişi:** Bu yeni görünüm, yakalanan bir çerçevenin işlenmesi sırasında kullanılan bir kaynağın tüm değişiklik geçmişini görmenin kolaylaştırılmış bir yolunu sunar. Herhangi bir kaynak için geçmişi çağırmak üzere herhangi bir kaynak köprüsü yanındaki saat simgesine tıklayın.
 

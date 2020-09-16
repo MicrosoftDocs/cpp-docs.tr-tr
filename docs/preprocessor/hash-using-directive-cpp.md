@@ -12,18 +12,18 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-ms.openlocfilehash: 0da255957e92a570750da2687bf1444df2e6ab13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0245eb15219585421be83def0258415ab4b573b6
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219436"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684267"
 ---
 # <a name="using-directive-ccli"></a>#using yönergesi (C++/CLı)
 
 Meta verileri [/clr](../build/reference/clr-common-language-runtime-compilation.md)ile derlenen bir programa içeri aktarır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`#using`***Dosya* [ **`as_friend`** ]
 
@@ -72,7 +72,7 @@ Derleyici, aşağıdaki yol boyunca başvuruları arar:
 
 - LIBPATH ortam değişkenindeki dizinler.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bir üçüncü derlemeye başvuran ikinci bir derlemeye başvuran bir derleme derleyebilirsiniz. Yalnızca kendi türlerinden birini açık olarak kullanırsanız, yalnızca birinci derlemeden üçüncü derlemeye başvuru yapmanız gerekir.
 
@@ -81,8 +81,6 @@ Bir üçüncü derlemeye başvuran ikinci bir derlemeye başvuran bir derleme de
 // compile with: /clr /LD
 public ref class A {};
 ```
-
-## <a name="example"></a>Örnek
 
 ```cpp
 // using_assembly_B.cpp
@@ -94,8 +92,6 @@ public:
    void Test() {}
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, derleyici *using_assembly_A.dll*başvuru hakkında bir hata bildirmez çünkü program *using_assembly_A. cpp*içinde tanımlı türlerden hiçbirini kullanmaz.
 

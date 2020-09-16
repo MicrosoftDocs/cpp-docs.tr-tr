@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4248
 ms.assetid: e40523ff-e3cb-4ba6-ab79-23f0f339f6cf
-ms.openlocfilehash: 4ba05ef067c539dc9c0aca6dc2a395748fd217a2
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 81f3c2abc41673e6e4c9e3f59ff1dd515e1cf365
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988105"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685431"
 ---
 # <a name="linker-tools-warning-lnk4248"></a>Bağlayıcı Araçları Uyarısı LNK4248
 
@@ -31,7 +31,7 @@ Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../.
 
 1. MSIL modülünde tür tanımını belirtin.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek LNK4248 oluşturur. Çözümlemek için A yapısını tanımlayın.
 
@@ -47,8 +47,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Aşağıdaki örnek bir türün ileri tanımına sahiptir.
 
 ```cpp
@@ -63,8 +61,6 @@ int main() {
    return valueA(a);
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek LNK4248 oluşturur.
 

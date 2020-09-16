@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3491
 ms.assetid: 7f0e71b2-46a0-4d25-bd09-6158a280f509
-ms.openlocfilehash: f6f20d9af424fdd4254fc15e0580d62b9dfba144
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8e59dd44b81846d48dc5bf7172ce17444f75e6ef
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184481"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685716"
 ---
 # <a name="compiler-error-c3491"></a>Derleyici hatası C3491
 
@@ -25,7 +25,7 @@ Kesilebilir olmayan bir lambda ifadesi, değere göre yakalanan bir değişkenin
 
 - Değişkeni lambda ifadesinin yakalama listesine başvuruya göre geçirin.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek, kesilebilir olmayan bir lambda ifadesinin gövdesi yakalama değişkenini değiştirdiği için C3491 oluşturur `m` :
 
@@ -38,8 +38,6 @@ int main()
    [m](int n) { m = n; }(99); // C3491
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, lambda ifadesini anahtar sözcüğüyle bildirerek C3491 çözer **`mutable`** :
 

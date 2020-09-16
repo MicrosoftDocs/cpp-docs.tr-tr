@@ -35,12 +35,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: 29458f2d752f1fe59778b752480e268f8243f15e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5060c4b34005c1cc066e002d20ca70cbfea0fbef
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234282"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684826"
 ---
 # <a name="_beginthread-_beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -157,7 +157,7 @@ Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-
 
 **_Beginthread** veya **_beginthreadex**kullanmak için, uygulama çok iş parçacıklı C çalışma zamanı kitaplıklarından birine bağlanmalıdır.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnekte **_beginthread** ve **_endthread**kullanılmaktadır.
 
@@ -276,8 +276,6 @@ void Bounce( void * parg )
 ```
 
 Örnek uygulamayı sonlandırmak için herhangi bir tuşa basın.
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek kod, eşitleme API [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)ile **_beginthreadex** tarafından döndürülen iş parçacığı işleyicisini nasıl kullanabileceğinizi gösterir. Ana iş parçacığı, devam etmeden önce ikinci iş parçacığının sonlanmasını bekler. İkinci iş parçacığı **_endthreadex**çağırdığında, iş parçacığı nesnesinin sinyal durumuna geçmesine neden olur. Bu, birincil iş parçacığının çalışmaya devam etmesine olanak tanır. Bu, **_beginthread** ve **_endthread**ile **yapılamaz, çünkü** **_endthread** , iş parçacığı nesnesini, sinyal veren bir duruma ayarlayabilmesi için yok eder.
 

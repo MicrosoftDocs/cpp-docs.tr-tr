@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3764
 ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
-ms.openlocfilehash: 657cb6598eedf8abd050b47c124c78c3a028509f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8cfcae544d0948c21e093ba6457159b0214a583
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214509"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685625"
 ---
 # <a name="compiler-error-c3764"></a>Derleyici hatası C3764
 
@@ -19,7 +19,7 @@ ms.locfileid: "87214509"
 
 Derleyici hatalı oluşturulmuş bir geçersiz kılma algıladı. Örneğin, temel sınıf işlevi değildi **`virtual`** . Daha fazla bilgi için bkz. [geçersiz kılma](../../extensions/override-cpp-component-extensions.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3764 oluşturur.
 
@@ -36,8 +36,6 @@ public ref struct B : A {
    virtual void h(int) override {}   // OK
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Ayrıca, bir temel sınıf yöntemi açık bir şekilde ve geçersiz kılınırsa C3764 de oluşabilir. Aşağıdaki örnek C3764 oluşturur.
 

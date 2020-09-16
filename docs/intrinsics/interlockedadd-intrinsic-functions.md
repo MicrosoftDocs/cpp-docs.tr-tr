@@ -1,5 +1,5 @@
 ---
-title: _InterlockedAdd iç işlevleri
+title: _InterlockedAdd iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedAdd64_acq_cpp
@@ -26,20 +26,20 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: c540cfe6abd8ae6dc2933e7fb21e2a331c21ea71
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: efe1444273f17c8f0544d2c51b98923169032e61
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217731"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683903"
 ---
-# <a name="_interlockedadd-intrinsic-functions"></a>_InterlockedAdd iç işlevleri
+# <a name="_interlockedadd-intrinsic-functions"></a>_InterlockedAdd iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Bu işlevler, birden fazla iş parçacığının paylaşılan bir değişkene erişimi olduğunda işlemin başarılı bir şekilde tamamlanmasını sağlayan atomik bir ekleme yapar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```C
 long _InterlockedAdd(
@@ -84,7 +84,7 @@ __int64 _InterlockedAdd64_rel(
 *Deeri*\
 'ndaki Eklenecek değer.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Her iki işlev de eklemenin sonucunu döndürür.
 
@@ -101,15 +101,15 @@ Her iki işlev de eklemenin sonucunu döndürür.
 |`_InterlockedAdd64_nf`|ARM, ARM64|
 |`_InterlockedAdd64_rel`|ARM, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_acq` Veya sonekleri olan bu işlevlerin sürümleri, bir `_rel` veya daha fazla alma ve yayınlama semantiğini elde eden bir toplama işlemi gerçekleştirir. *Alma semantiği* , işlemin sonucunun sonraki bellek okuma ve yazma işlemleri öncesinde tüm iş parçacıkları ve işlemciler için görünür hale getirilme anlamına gelir. Alma, kritik bir bölüm girerken faydalıdır. *Sürüm semantiği* , tüm bellek okuma ve yazma işlemlerinin, işlemin sonucu görünür hale gelmeden önce tüm iş parçacıkları ve işlemcilere görünür hale getirilmesidir. Yayın, kritik bir bölümden ayrıldığınızda yararlıdır. `_nf` ("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
+Veya sonekleri olan bu işlevlerin sürümleri, `_acq` bir veya daha fazla `_rel` alma ve yayınlama semantiğini elde eden bir toplama işlemi gerçekleştirir. *Alma semantiği* , işlemin sonucunun sonraki bellek okuma ve yazma işlemleri öncesinde tüm iş parçacıkları ve işlemciler için görünür hale getirilme anlamına gelir. Alma, kritik bir bölüm girerken faydalıdır. *Sürüm semantiği* , tüm bellek okuma ve yazma işlemlerinin, işlemin sonucu görünür hale gelmeden önce tüm iş parçacıkları ve işlemcilere görünür hale getirilmesidir. Yayın, kritik bir bölümden ayrıldığınızda yararlıdır. `_nf`("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
 
 Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 ```cpp
 // interlockedadd.cpp
@@ -135,8 +135,6 @@ int main()
 ```Output
 0xffffff00 0xff0000 0xffffff00
 ```
-
-## <a name="example"></a>Örnek
 
 ```cpp
 // interlockedadd64.cpp

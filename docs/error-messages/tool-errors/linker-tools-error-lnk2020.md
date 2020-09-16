@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2020
 ms.assetid: 4dd017d0-5e83-471b-ac8a-538ac1ed6870
-ms.openlocfilehash: 9c6be2548e277af08f1069a70b26cd761db835bc
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 6fd4859e4f8cad657de57e8039bd647e5e2b99a9
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988766"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684644"
 ---
 # <a name="linker-tools-error-lnk2020"></a>Bağlayıcı Araçları Hatası LNK2020
 
@@ -25,7 +25,7 @@ Bunu çözmek için:
 
 - Eksik işlevin veya verilerin zaten tanımlandığı nesne dosyasını veya kitaplığını dahil edin.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek LNK2020 oluşturur.
 
@@ -43,8 +43,6 @@ ref struct B {
    static int f() { return 0; }
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Ayrıca, yönetilen şablon türünde bir değişken oluşturursanız, ancak türünü de örneklemeyin, LNK2020 de gerçekleşir.
 

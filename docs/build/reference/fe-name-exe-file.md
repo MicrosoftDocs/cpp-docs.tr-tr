@@ -10,23 +10,23 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-ms.openlocfilehash: f0bd8f3a96555cc29d06f74fb44a73bbed32889b
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: 72eada34c6a64a8b4591afbee03b686f3da3ee11
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825584"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685417"
 ---
 # <a name="fe-name-exe-file"></a>/Fe (EXE Dosyasını Adlandır)
 
 Derleyici tarafından oluşturulan. exe dosyası veya DLL için bir ad ve dizin belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/Fe**[_yol adı_] \
 > **/Fe:** _yol adı_
 
-### <a name="arguments"></a>Bağımsız Değişkenler
+### <a name="arguments"></a>Arguments
 
 *PathName*<br/>
 Göreli veya mutlak yol ve temel dosya adı ya da bir dizinin göreli ya da mutlak yolu ya da oluşturulan yürütülebilir dosya için kullanılacak taban dosya adı.
@@ -43,7 +43,7 @@ Göreli veya mutlak yol ve temel dosya adı ya da bir dizinin göreli ya da mutl
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **Bağlayıcısı** > **genel** özellik sayfasını açın.
+1. **Yapılandırma özellikleri**  >  **Bağlayıcısı**  >  **genel** özellik sayfasını açın.
 
 1. **Çıkış dosyası** özelliğini değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
@@ -51,17 +51,15 @@ Göreli veya mutlak yol ve temel dosya adı ya da bir dizinin göreli ya da mutl
 
 - Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
-Aşağıdaki komut satırı, geçerli dizindeki tüm C kaynak dosyalarını derler ve bağlar. Elde edilen yürütülebilir dosya, PROCESS. exe olarak adlandırılır ve "C:\Users\User \ Kullanıcı adı" dizininde oluşturulur.
+Aşağıdaki komut satırı, geçerli dizindeki tüm C kaynak dosyalarını derler ve bağlar. Elde edilen yürütülebilir dosya PROCESS.exe olarak adlandırılır ve "C:\Users\User \ Repos\project\bin" dizininde oluşturulur.
 
 ```
 CL /Fe"C:\Users\User Name\repos\My Project\bin\PROCESS" *.C
 ```
 
-## <a name="example"></a>Örnek
-
-Aşağıdaki komut satırı, geçerli dizindeki ilk kaynak dosyayla `C:\BIN` aynı temel adı taşıyan bir yürütülebilir dosya oluşturur:
+Aşağıdaki komut satırı, `C:\BIN` geçerli dizindeki ilk kaynak dosyayla aynı temel adı taşıyan bir yürütülebilir dosya oluşturur:
 
 ```
 CL /FeC:\BIN\ *.C
@@ -69,7 +67,7 @@ CL /FeC:\BIN\ *.C
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[Çıktı dosyası (/F) seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
 [Yol adını belirtme](specifying-the-pathname.md)<br/>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 270500d2353c2d14a23ddad378521488cdec136f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9e769bbef66bd1b55b9d445874f00d37a736025e
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561394"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683487"
 ---
 # <a name="decltype--c"></a>decltype  (C++)
 
@@ -100,7 +100,7 @@ decltype(auto) myFunc(T&& t, U&& u)
 
 Bu senaryoda, tür belirleyicisi olmadan uygun bir tür ifadesi yazılamaz **`decltype`** . **`decltype`** Tür Belirleyicisi, bir işlevin bir başvuru türü döndürüp döndürmediği hakkında gerekli bilgileri kaybetmediğinden, genel iletme işlevlerine izin verir. Bir iletme işlevine ait kod örneği için, önceki `myFunc` şablon işlevi örneğine bakın.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki kod örneği, `Plus()` şablon işlevinin sonradan belirtilen dönüş türünü bildirir. `Plus`İşlevi iki işlenenini aşırı yükleme ile işler **`operator+`** . Sonuç olarak, artı işlecinin ( **`+`** ) ve işlevin dönüş türünün yorumu, `Plus` işlev bağımsız değişkenlerinin türlerine bağlıdır.
 
@@ -173,8 +173,6 @@ Plus(dx, dy) = 13.5
 Hello, world!
 x3.Dump() = 42
 ```
-
-## <a name="example"></a>Örnek
 
 **Visual Studio 2017 ve üzeri:** Derleyici, **`decltype`** şablon örneği oluşturulması yerine bildirildiği zaman bağımsız değişkenleri ayrıştırır. Sonuç olarak, bağımsız değişkende bağımlı olmayan bir özelleştirme bulunursa **`decltype`** , örnek oluşturma süresine ertelenir ve anında işlenir ve sonuçta ortaya çıkan hatalar bu sırada tanılanabilir.
 

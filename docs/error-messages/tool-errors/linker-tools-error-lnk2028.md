@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2028
 ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
-ms.openlocfilehash: ef9e3eae655a4fbee1c3da74f6036e5fb22434b1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 29aaed167f750186d956589e9daa0d21c441149e
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194622"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684203"
 ---
 # <a name="linker-tools-error-lnk2028"></a>Bağlayıcı Araçları Hatası LNK2028
 
@@ -23,7 +23,7 @@ Yerel bir işlevi saf bir görüntüye aktarmaya çalışırken, örtük çağı
 
 **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bu kod örneği,, çağıran kuralı örtük olarak [__cdecl](../../cpp/cdecl.md), dışarıya aktarılmış, yerel, işlevi olan bir bileşen oluşturur.
 
@@ -34,8 +34,6 @@ __declspec(dllexport) int func() {
    return 3;
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, yerel işlevi tüketen bir saf istemci oluşturur. Ancak, **/clr: Pure** altındaki çağırma kuralı [__clrcall](../../cpp/clrcall.md). Aşağıdaki örnek LNK2028 oluşturur.
 

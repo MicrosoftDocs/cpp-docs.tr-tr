@@ -7,12 +7,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: adca441a1b1b4e5e7b7efa44c4a292a8f1ddec35
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 6639165856f09db25a2b96c41db2bb94ab93aa99
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042205"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683630"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma (C++)
 
@@ -40,7 +40,7 @@ Bu izlenecek yol bazı yaygın durumları kapsamaz. Kod, C++ dll 'lerinin diğer
 
 Dll 'Ler hakkında daha fazla bilgi için bkz. [Visual Studio 'Da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md). Örtük bağlama ve açık bağlama hakkında daha fazla bilgi için, [Hangi bağlama yönteminin kullanılacağını belirleme](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)konusuna bakın. C dili bağlantı kurallarını kullanan programlama dilleri ile kullanmak üzere C++ dll 'Leri oluşturma hakkında bilgi için bkz. [c dili Çalıştırılabilirlerinde kullanmak Için c++ Işlevlerini dışarı aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md). .NET dilleri ile kullanmak üzere dll oluşturma hakkında daha fazla bilgi için, bkz. [Visual Basic UYGULAMALARıNDAN dll Işlevleri çağırma](calling-dll-functions-from-visual-basic-applications.md).
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir.
 
@@ -91,7 +91,7 @@ Bu görev kümesinde, DLL 'niz için bir proje oluşturur, kod ekler ve derler. 
 
 Çözüm oluşturulduğunda, Visual Studio 'da **Çözüm Gezgini** penceresinde oluşturulan proje ve kaynak dosyalarını görebilirsiniz.
 
-![Visual Studio 'da oluşturulan çözüm](media/mathlibrary-solution-explorer-162.png "Visual Studio 'da oluşturulan çözüm")
+![Math kitaplığı vurgulanmış şekilde Visual Studio 2019 Çözüm Gezgini penceresinin ekran görüntüsü.](media/mathlibrary-solution-explorer-162.png "Visual Studio 'da oluşturulan çözüm")
 
 ::: moniker-end
 
@@ -103,13 +103,13 @@ Bu görev kümesinde, DLL 'niz için bir proje oluşturur, kod ekler ve derler. 
 
 1. **Yeni proje** iletişim kutusunun sol bölmesinde, **Installed**  >  **Visual C++**  >  **Windows Masaüstü**Visual C++ yüklü ' i seçin. Orta bölmede, **dinamik bağlantı kitaplığı (dll)** öğesini seçin. Proje için bir ad belirtmek üzere **ad** kutusuna *MathLibrary* girin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak**için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
-   ![MathLibrary projesini adlandırın](media/mathlibrary-new-project-name-159.png "MathLibrary projesini adlandırın")
+   ![Ad metin kutusunda matematik kitaplığını gösteren Visual Studio 2017 yeni proje iletişim kutusunun ekran görüntüsü.](media/mathlibrary-new-project-name-159.png "MathLibrary projesini adlandırın")
 
 1. Projeyi oluşturmak için **Tamam** düğmesini seçin.
 
 Çözüm oluşturulduğunda, Visual Studio 'da **Çözüm Gezgini** penceresinde oluşturulan proje ve kaynak dosyalarını görebilirsiniz.
 
-![Visual Studio 'da oluşturulan çözüm](media/mathlibrary-solution-explorer-159.png "Visual Studio 'da oluşturulan çözüm")
+![Math kitaplığı vurgulanmış şekilde Visual Studio 2017 Çözüm Gezgini penceresinin ekran görüntüsü.](media/mathlibrary-solution-explorer-159.png "Visual Studio 'da oluşturulan çözüm")
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ Bu görev kümesinde, DLL 'niz için bir proje oluşturur, kod ekler ve derler. 
 
 1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü**  >  **Şablonlar**' ı genişletin ve **Visual C++**' ı seçin ve ardından orta bölmedeki **Win32 konsol uygulaması**' nı seçin. Proje için bir ad belirtmek için **ad** düzenleme kutusuna *MathLibrary* girin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak**için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
-   ![MathLibrary projesini adlandırın](media/mathlibrary-project-name.png "MathLibrary projesini adlandırın")
+   ![Ad metin kutusunda matematik kitaplığını gösteren Visual Studio 2015 yeni proje iletişim kutusunun ekran görüntüsü.](media/mathlibrary-project-name.png "MathLibrary projesini adlandırın")
 
 1. **Yeni proje** iletişim kutusunu kapatmak ve **Win32 uygulama Sihirbazı**' nı başlatmak için **Tamam** düğmesini seçin.
 
@@ -135,7 +135,7 @@ Bu görev kümesinde, DLL 'niz için bir proje oluşturur, kod ekler ve derler. 
 
 Sihirbaz çözümü tamamladığında, oluşturulan proje ve kaynak dosyaları Visual Studio 'da **Çözüm Gezgini** penceresinde görebilirsiniz.
 
-![Visual Studio 'da oluşturulan çözüm](media/mathlibrary-solution-explorer-153.png "Visual Studio 'da oluşturulan çözüm")
+![Math kitaplığı vurgulanmış şekilde Visual Studio 2015 Çözüm Gezgini penceresinin ekran görüntüsü.](media/mathlibrary-solution-explorer-153.png "Visual Studio 'da oluşturulan çözüm")
 
 ::: moniker-end
 
@@ -405,7 +405,7 @@ Eşitleme dışı koddan kaçınmak için, istemci projenizdeki ekleme yolunu dl
 
 1. **Yeni projenizi yapılandırın** sayfasında, proje için bir ad belirtmek üzere **Proje adı** kutusuna *MathClient* girin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak**için **çözüm** ayarlayın. Eğer işaretliyse **, çözümü ve projeyi aynı dizine yerleştir** seçeneğinin işaretini kaldırın.
 
-   ![İstemci projesini adlandırın](media/mathclient-project-name-2019.png "İstemci projesini adlandırın")
+   ![Konsol uygulaması seçeneği vurgulanmış şekilde yeni proje oluştur iletişim kutusunun ekran görüntüsü.](media/mathclient-project-name-2019.png "İstemci projesini adlandırın")
 
 1. İstemci projesini oluşturmak için **Oluştur** düğmesini seçin.
 
@@ -421,7 +421,7 @@ Sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyanın
 
 1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü**Visual C++ altında **Windows Masaüstü** ' nü seçin  >  **Visual C++**. Orta bölmede **Windows konsol uygulaması**' nı seçin. *MathClient*adlı projenin adını **ad** düzenleme kutusunda belirtin.  Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak**için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
-   ![İstemci projesini adlandırın](media/mathclient-new-project-name-159.png "İstemci projesini adlandırın")
+   ![Yeni proje iletişim kutusunun yüklü > Visual C Plus ve > Windows Masaüstü seçili, Windows konsol uygulaması vurgulanmış ve ad metin kutusuna yazılan matematik Istemcisi ekran görüntüsü.](media/mathclient-new-project-name-159.png "İstemci projesini adlandırın")
 
 1. İstemci uygulama projesini oluşturmak için **Tamam ' ı** seçin.
 
@@ -437,7 +437,7 @@ Sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyanın
 
 1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü**Şablonlar ' ın altında **Win32** ' ı seçin  >  **Templates**  >  **Visual C++**. Orta bölmede **Win32 konsol uygulaması**' nı seçin. *MathClient*adlı projenin adını **ad** düzenleme kutusunda belirtin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak**için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
-   ![İstemci projesini adlandırın](media/mathclient-project-name.png "İstemci projesini adlandırın")
+   ![Yüklü > şablonları olan yeni proje iletişim kutusunun ekran görüntüsü > Visual C Plus Plus > Win32 seçili, Win32 konsol uygulaması Visual C Plus Plus ve ad metin kutusuna yazılan matematik Istemcisi.](media/mathclient-project-name.png "İstemci projesini adlandırın")
 
 1. **Yeni proje** iletişim kutusunu kapatmak ve **Win32 uygulama Sihirbazı**' nı başlatmak için **Tamam** düğmesini seçin. **Win32 uygulama Sihirbazı** Iletişim kutusunun **genel bakış** sayfasında **İleri** düğmesini seçin.
 

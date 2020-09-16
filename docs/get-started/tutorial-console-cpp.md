@@ -6,12 +6,12 @@ ms.date: 08/19/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 5f448e68878e211969c89f7c4c750e3231d3a9b7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 14e1e18da5cdabae5366d4ba97a2260d5e99f076
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230590"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685327"
 ---
 # <a name="create-a-console-calculator-in-c"></a>C++ içinde konsol hesaplayıcı oluşturma
 
@@ -75,11 +75,11 @@ Yeni bir Windows konsol uygulaması şablonu basit bir C++ "Merhaba Dünya" uygu
 
 1. Projenizi derlemek için **derleme** menüsünden **çözüm oluştur** ' u seçin. **Çıkış** penceresi, derleme işleminin sonuçlarını gösterir.
 
-   ![Projeyi derleme](./media/calc-vs2019-build-your-project.png "Projeyi derleme")
+   ![Visual Studio 2019 ' in, derleme işleminin sonucunu gösteren çıkış penceresi ile ekran görüntüsü.](./media/calc-vs2019-build-your-project.png "Projeyi derleme")
 
 1. Kodu çalıştırmak için, menü çubuğunda **Hata Ayıkla**, **hata ayıklama olmadan Başlat**' ı seçin.
 
-   ![Projeyi başlatma](./media/calc-vs2019-hello-world-console.png "Projeyi başlatma")
+   ![Visual Studio 2019 Microsoft Visual Studio hata ayıklama konsolunun, kodun başarıyla çalıştığını gösteren ekran görüntüsü.](./media/calc-vs2019-hello-world-console.png "Projeyi başlatma")
 
    Konsol penceresi açılır ve uygulamanızı çalıştırır. Visual Studio 'da bir konsol uygulaması başlattığınızda, kodunuzu çalıştırır ve ardından bu pencereyi kapatmak için herhangi bir tuşa basın. . ." çıktıyı görmeniz için bir şans sağlamak üzere. Tebrikler! İlk "Hello, World!" dosyanızı oluşturdunuz Visual Studio 'da konsol uygulaması!
 
@@ -142,11 +142,11 @@ Biraz matematik mantığı ekleme zamanı.
 
 1. **Proje** menüsüne gidin ve **Sınıf Ekle**' yi seçin. **Sınıf adı** düzenleme kutusuna *Hesaplayıcı*yazın. **Tamam ' ı**seçin. Projenize iki yeni dosya eklenir. Değiştirdiğiniz tüm dosyaları aynı anda kaydetmek için **CTRL + SHIFT + S**tuşlarına basın. Bu, **Dosya**kaydetme için bir klavye kısayoludur  >  **Save All**. Ayrıca **, Kaydet düğmesinin yanında** bulunan iki disket simgesi olan **Tümünü Kaydet**için bir araç çubuğu düğmesi de vardır. Genel olarak, kaydetme sırasında herhangi bir dosyayı kaçırmamak için sık sık **kaydedilmesi** iyi bir uygulamadır.
 
-   ![Hesaplayıcı sınıfını oluşturma](./media/calc-vs2019-create-calculator-class.png "Hesaplayıcı sınıfını oluşturma")
+   ![Sınıf adı metin kutusuna yazılan hesaplayıcı ile sınıf Ekle iletişim kutusunun ekran görüntüsü.](./media/calc-vs2019-create-calculator-class.png "Hesaplayıcı sınıfını oluşturma")
 
    Bir sınıf, bir şeyi yapan bir nesne için şema gibidir. Bu durumda, bir Hesaplayıcı ve nasıl çalışması gerektiğini tanımladık. Yukarıda kullandığınız **sınıf ekleme** Sihirbazı, sınıf ile aynı ada sahip. h ve. cpp dosyalarını oluşturdu. Proje dosyalarınızın tam listesini, IDE 'nin yanında görünen **Çözüm Gezgini** penceresinde görebilirsiniz. Pencere görünmüyorsa, menü çubuğundan açabilirsiniz: **Görünüm**  >  **Çözüm Gezgini**' yi seçin.
 
-   ![Çözüm Gezgini](./media/calc-vs2019-solution-explorer.png "Çözüm Gezgini")
+   ![Hesaplayıcı öğreticisi projesini görüntüleyen Visual Studio 2019 Çözüm Gezgini penceresinin ekran görüntüsü.](./media/calc-vs2019-solution-explorer.png "Çözüm Gezgini")
 
    Düzenleyicide Şu anda üç sekme açık olmalıdır: *Hesaplayıöğreticisi. cpp*, *Hesaplayıcı. h*ve *Hesaplayıcı. cpp*. Yanlışlıkla bunlardan birini kapatırsanız, **Çözüm Gezgini** penceresinde onu çift tıklayarak yeniden açabilirsiniz.
 
@@ -170,7 +170,7 @@ Biraz matematik mantığı ekleme zamanı.
 
 1. Altında yeşil renkli bir çizgi görünür `Calculate` . Bunun nedeni, `Calculate` . cpp dosyasında işlevi tanımlamadık. Sözcüğün üzerine gelin, açılan ampule (Bu durumda, bir screwsürücü) tıklayın ve **Hesaplayıcı. cpp ' de ' Calculate ' tanımı oluştur**' u seçin.
 
-   ![Hesaplama tanımı oluştur](./media/calc-vs2019-create-definition.png "Hesaplama tanımı oluştur")
+   ![Hesaplayıcı C/ç 'de hesaplama tanımı seçeneği vurgulanmış şekilde Visual Studio 2019 ekran görüntüsü.](./media/calc-vs2019-create-definition.png "Hesaplama tanımı oluştur")
 
    Diğer dosyada yapılan kod değişikliğinin bir özetini sunan bir açılır pencere görünür. Kod, *Hesaplayıcı. cpp*öğesine eklendi.
 
@@ -264,7 +264,7 @@ Artık, her şeyin düzgün çalıştığından emin olmak için programı yenid
 
 1. Yazın `5 + 5` ve ENTER tuşuna **Enter**basın. Sonucun 10 olduğunu doğrulayın.
 
-   ![5 + 5 sonucu](./media/calc-vs2019-five-plus-five.png "5 + 5 sonucu")
+   ![Visual Studio 2019 Microsoft Visual Studio hata ayıklama konsolunun, doğru 5 + 5 sonucunu gösteren ekran görüntüsü.](./media/calc-vs2019-five-plus-five.png "5 + 5 sonucu")
 
 ## <a name="debug-the-app"></a>Uygulamada hata ayıklama
 
@@ -274,29 +274,29 @@ Kullanıcı konsol penceresine herhangi bir şey yazmadığından ücretsiz oldu
 
 1. `result = c.Calculate(x, oper, y);`Yalnızca kullanıcıdan giriş sorulduktan sonra, satırda bir kesme noktası ayarlayın. Kesme noktasını ayarlamak için, düzenleyici penceresinin sol kenarındaki gri dikey çubukta bulunan çizgiye tıklayın. Kırmızı bir nokta görünür.
 
-   ![Kesme noktası ayarlama](./media/calc-vs2019-set-breakpoint.png "Kesme noktası ayarlama")
+   ![Bir kesme noktasını temsil eden kırmızı noktayı gösteren Visual Studio 2019 ekran görüntüsü.](./media/calc-vs2019-set-breakpoint.png "Kesme noktası ayarlama")
 
    Artık programda hata ayıklaması yaptığımız zaman, bu satırdaki yürütmeyi her zaman duraklatır. Programın basit durumlar için çalışmasına yönelik kaba bir fikrimiz zaten var. Yürütmeyi her seferinde duraklatmak istemediğimiz için, kesme noktasını koşullu hale getirir.
 
 1. Kesme noktasını temsil eden kırmızı noktaya sağ tıklayın ve **koşullar**' ı seçin. Koşulun düzenleme kutusunda, girin `(y == 0) && (oper == '/')` . İşiniz bittiğinde **Kapat** düğmesini seçin. Koşul otomatik olarak kaydedilir.
 
-   ![Koşullu kesme noktası ayarlama](./media/calc-vs2019-conditional-breakpoint.png "Koşullu kesme noktası ayarlama")
+   ![Kesme noktası ayarları bölümünü gösteren Visual Studio 2019 ekran görüntüsü ve true değerine eklenen bir koşul.](./media/calc-vs2019-conditional-breakpoint.png "Koşullu kesme noktası ayarlama")
 
    Artık 0 olarak bölme denendiğinde yürütme kesme noktasında yürütmeyi durakladık.
 
 1. Programda hata ayıklamak için **F5**'e basın veya yeşil ok simgesine sahip olan **yerel Windows hata ayıklayıcısı** araç çubuğu düğmesini seçin. Konsol uygulamanızda, "5-0" gibi bir şey girerseniz, program normal şekilde davranır ve çalışır durumda kalır. Ancak, "10/0" yazarsanız, kesme noktasında duraklatılır. Operatör ve rakamlar arasında da herhangi bir sayıda boşluk koyabilirsiniz: `cin` girişi uygun şekilde ayrıştırmaya yetecek kadar akıllı bir değer.
 
-   ![Koşullu kesme noktasında Duraklat](./media/calc-vs2019-debug-breakpoint.png "Koşullu kesme noktasında Duraklat")
+   ![Programın koşullu kesme noktasında duraklatıldığını gösteren Visual Studios 2019 ekran görüntüsü.](./media/calc-vs2019-debug-breakpoint.png "Koşullu kesme noktasında Duraklat")
 
 ### <a name="useful-windows-in-the-debugger"></a>Hata ayıklayıcıda yararlı pencereler
 
 Kodunuzda hata ayıkladığınızda, bazı yeni pencerelerin göründüğünü fark edebilirsiniz. Bu pencereler hata ayıklama deneyiminize yardımcı olabilir. **Oto** penceresine göz atın. **Oto** penceresinde, geçerli satıra en az üç satır önce kullanılan değişkenlerin geçerli değerlerini gösterir. Bu işlevden tüm değişkenleri görmek için **Yereller** penceresine geçin. Bu değişkenlerin değerlerini hata ayıklama sırasında değiştirebilir ve programda neler olacağını görebilirsiniz. Bu durumda, bunları tek başına bırakacağız.
 
-   ![Yereller penceresi](./media/calc-vs2019-debug-locals.png "Yereller penceresi")
+   ![Visual Studio 2019 ' de Yereller penceresinin ekran görüntüsü.](./media/calc-vs2019-debug-locals.png "Yereller penceresi")
 
 Ayrıca, yürütmenin Şu anda duraklatıldığı geçerli değerlerini görmek için yalnızca kodun kendisindeki değişkenlerin üzerine gelebilmeniz gerekir. Önce üzerine tıklayarak düzenleyici penceresinin odaklandığından emin olun.
 
-   ![Geçerli değişken değerlerini görüntülemek için üzerine gelin](./media/calc-vs2019-hover-tooltip.png "Geçerli değişken değerlerini görüntülemek için üzerine gelin")
+   ![Değişkenin değerini görüntüleyen Araç ipucunu gösteren Visual Studio 2019 ekran görüntüsü.](./media/calc-vs2019-hover-tooltip.png "Geçerli değişken değerlerini görüntülemek için üzerine gelin")
 
 ### <a name="to-continue-debugging"></a>Hata ayıklamaya devam etmek için
 
@@ -308,7 +308,7 @@ Ayrıca, yürütmenin Şu anda duraklatıldığı geçerli değerlerini görmek 
 
    Program beklenildiği gibi görünüyor: ilk sayıyı alır ve ikinciden böler. `cout`Satırda, değişkenin üzerine gelin `result` veya `result` **oto** penceresinde bir göz atın. Değerin "INF" olarak listelendiğini görürsünüz ve bu, doğru görünmüyor ve bunu çözeceğiz. `cout`Satır, ' de hangi değerin depolandığını `result` gösterir. bu nedenle, **F10**kullanarak ileri bir satır daha ilerlememeniz halinde konsol penceresi şunu görüntüler:
 
-   ![Sıfıra bölme sonucu](./media/calc-vs2019-divide-by-zero-fail.png "Sıfıra bölme sonucu")
+   ![Visual Studio 2019 Microsoft Visual Studio hata ayıklama konsolunun sıfıra bölme sonucunu gösteren ekran görüntüsü.](./media/calc-vs2019-divide-by-zero-fail.png "Sıfıra bölme sonucu")
 
    Bu sonuç, sıfıra bölme tanımsız olduğundan, programın istenen işleme bir sayısal yanıtı olmadığından meydana gelir.
 
@@ -359,7 +359,7 @@ Daha düzgün bir şekilde bölme yaparak, bir Kullanıcı sorunu anlayabiliyor.
 
 1. Şimdi **F5** tuşuna basın. Program yürütme, Kullanıcı girişi istemek için duraklamaya kadar tüm şekilde devam eder. `10 / 0`Yeniden girin. Şimdi, daha yararlı bir ileti yazdırılır. Kullanıcıdan daha fazla giriş istenir ve program normal yürütülmeye devam eder.
 
-   ![Değişikliklerden sonraki nihai sonuç](./media/calc-vs2019-final-verification.png "Değişikliklerden sonraki nihai sonuç")
+   ![Visual Studio 2019 Microsoft Visual Studio hata ayıklama konsolunun, değişikliklerden sonraki nihai sonucu gösteren ekran görüntüsü.](./media/calc-vs2019-final-verification.png "Değişikliklerden sonraki nihai sonuç")
 
    > [!Note]
    > Hata ayıklama modundayken kodu düzenlerken, kodun eskimiş olma riski vardır. Bu durum, hata ayıklayıcı eski kodunuzu çalıştırmakta olduğunda ve henüz değişikliklerinizi güncelleştirmemişse oluşur. Hata ayıklayıcı, bu gerçekleştiğinde sizi bilgilendirmek için bir iletişim kutusu açılır. Bazen, yürütülen kodu yenilemek için **F5** tuşuna basmanız gerekebilir. Özellikle, bir işlev içinde bir değişiklik yaparsanız, yürütme noktası bu işlevin içindeyse, işlevin dışına dönerek güncelleştirilmiş kodu almak için yeniden tekrar açmanız gerekir. Bu bir nedenle işe yaramazsa ve bir hata iletisi görürseniz, IDE 'nin en üstündeki menülerin altında bulunan araç çubuğunda kırmızı kareye tıklayarak hata ayıklamayı durdurabilirsiniz, ardından **F5** tuşuna basarak veya araç çubuğundaki Durdur düğmesinin yanındaki yeşil "Oynat" okunu seçerek yeniden hata ayıklamayı başlatabilirsiniz.
@@ -437,11 +437,11 @@ Yeni bir Windows konsol uygulaması şablonu basit bir C++ "Merhaba Dünya" uygu
 
 1. Projenizi derlemek için **derleme** menüsünden **çözüm oluştur** ' u seçin. **Çıkış** penceresi, derleme işleminin sonuçlarını gösterir.
 
-   ![Projeyi derleme](./media/calculator-initial-build-output.png "Projeyi derleme")
+   ![Derleme işleminin sonucunu gösteren çıkış penceresi ile Visual Studio 'Nun ekran görüntüsü.](./media/calculator-initial-build-output.png "Projeyi derleme")
 
 1. Kodu çalıştırmak için, menü çubuğunda **Hata Ayıkla**, **hata ayıklama olmadan Başlat**' ı seçin.
 
-   ![Projeyi başlatma](./media/calculator-hello-world-console.png "Projeyi başlatma")
+   ![Kodu gösteren hata ayıklama konsolunun Microsoft Visual Studio ekran görüntüsü başarıyla çalıştırıldı.](./media/calculator-hello-world-console.png "Projeyi başlatma")
 
    Konsol penceresi açılır ve uygulamanızı çalıştırır. Visual Studio 'da bir konsol uygulaması başlattığınızda, kodunuzu çalıştırır ve ardından devam etmek için herhangi bir tuşa basın. . ." çıktıyı görmeniz için bir şans sağlamak üzere. Tebrikler! İlk "Hello, World!" dosyanızı oluşturdunuz Visual Studio 'da konsol uygulaması!
 
@@ -508,11 +508,11 @@ Biraz matematik mantığı ekleme zamanı.
 
 1. **Proje** menüsüne gidin ve **Sınıf Ekle**' yi seçin. **Sınıf adı** düzenleme kutusuna *Hesaplayıcı*yazın. **Tamam ' ı**seçin. Projenize iki yeni dosya eklenir. Değiştirdiğiniz tüm dosyaları aynı anda kaydetmek için **CTRL + SHIFT + S**tuşlarına basın. Bu, **Dosya**kaydetme için bir klavye kısayoludur  >  **Save All**. Ayrıca **, Kaydet düğmesinin yanında** bulunan iki disket simgesi olan **Tümünü Kaydet**için bir araç çubuğu düğmesi de vardır. Genel olarak, kaydetme sırasında herhangi bir dosyayı kaçırmamak için sık sık **kaydedilmesi** iyi bir uygulamadır.
 
-   ![Hesaplayıcı sınıfını oluşturma](./media/calculator-create-class.gif "Hesaplayıcı sınıfını oluşturma")
+   ![Sınıf Ekle iletişim kutusunu açan kullanıcıyı gösteren kısa bir video, sınıf adı alanına Hesaplayıcı yazın ve O K öğesini seçin.](./media/calculator-create-class.gif "Hesaplayıcı sınıfını oluşturma")
 
    Bir sınıf, bir şeyi yapan bir nesne için şema gibidir. Bu durumda, bir Hesaplayıcı ve nasıl çalışması gerektiğini tanımladık. Yukarıda kullandığınız **sınıf ekleme** Sihirbazı, sınıf ile aynı ada sahip. h ve. cpp dosyalarını oluşturdu. Proje dosyalarınızın tam listesini, IDE 'nin yanında görünen **Çözüm Gezgini** penceresinde görebilirsiniz. Pencere görünmüyorsa, menü çubuğundan açabilirsiniz: **Görünüm**  >  **Çözüm Gezgini**' yi seçin.
 
-   ![Çözüm Gezgini](./media/calculator-solution-explorer.png "Çözüm Gezgini")
+   ![Hesap makinesi öğreticisi projesini görüntüleyen Çözüm Gezgini penceresinin ekran görüntüsü.](./media/calculator-solution-explorer.png "Çözüm Gezgini")
 
    Düzenleyicide Şu anda üç sekme açık olmalıdır: *Hesaplayıöğreticisi. cpp*, *Hesaplayıcı. h*ve *Hesaplayıcı. cpp*. Yanlışlıkla bunlardan birini kapatırsanız, **Çözüm Gezgini** penceresinde onu çift tıklayarak yeniden açabilirsiniz.
 
@@ -536,7 +536,7 @@ Biraz matematik mantığı ekleme zamanı.
 
 1. Altında yeşil renkli bir çizgi görünür `Calculate` . Bunun nedeni, `Calculate` . cpp dosyasında işlevi tanımlamadık. Sözcüğün üzerine gelin, açılan açık ampul ' e tıklayın ve **Hesaplayıcı. cpp ' de ' Calculate ' tanımı oluştur**' u seçin. Diğer dosyada yapılan kod değişikliğinin bir özetini sunan bir açılır pencere görünür. Kod, *Hesaplayıcı. cpp*öğesine eklendi.
 
-   ![Hesaplama tanımı oluştur](./media/calculator-create-definition.gif "Hesaplama tanımı oluştur")
+   ![Hesaplayıcı C 'de hesaplama tanımı oluştur seçeneğini belirleyerek kullanıcıyı gösteren kısa bir video.](./media/calculator-create-definition.gif "Hesaplama tanımı oluştur")
 
    Şu anda yalnızca 0,0 döndürüyor. Şimdi bunu değiştirelim. Açılır pencereyi kapatmak için **ESC** tuşuna basın.
 
@@ -628,7 +628,7 @@ Artık, her şeyin düzgün çalıştığından emin olmak için programı yenid
 
 1. Yazın `5 + 5` ve ENTER tuşuna **Enter**basın. Sonucun 10 olduğunu doğrulayın.
 
-   ![5 + 5 sonucu](./media/calculator-five-plus-five.png "5 + 5 sonucu")
+   ![Microsoft Visual Studio hata ayıklama konsolunun, doğru 5 + 5 sonucunu gösteren ekran görüntüsü.](./media/calculator-five-plus-five.png "5 + 5 sonucu")
 
 ## <a name="debug-the-app"></a>Uygulamada hata ayıklama
 
@@ -638,19 +638,19 @@ Kullanıcı konsol penceresine herhangi bir şey yazmadığından ücretsiz oldu
 
 1. `result = c.Calculate(x, oper, y);`Yalnızca kullanıcıdan giriş sorulduktan sonra, satırda bir kesme noktası ayarlayın. Kesme noktasını ayarlamak için, düzenleyici penceresinin sol kenarındaki gri dikey çubukta bulunan çizgiye tıklayın. Kırmızı bir nokta görünür.
 
-   ![Kesme noktası ayarlama](./media/calculator-set-breakpoint.gif "Kesme noktası ayarlama")
+   ![Bir kesme noktasını temsil eden kırmızı noktayı oluşturan kullanıcıyı gösteren kısa bir görsel Studios videosu.](./media/calculator-set-breakpoint.gif "Kesme noktası ayarlama")
 
    Artık programda hata ayıklaması yaptığımız zaman, bu satırdaki yürütmeyi her zaman duraklatır. Programın basit durumlar için çalışmasına yönelik kaba bir fikrimiz zaten var. Yürütmeyi her seferinde duraklatmak istemediğimiz için, kesme noktasını koşullu hale getirir.
 
 1. Kesme noktasını temsil eden kırmızı noktaya sağ tıklayın ve **koşullar**' ı seçin. Koşulun düzenleme kutusunda, girin `(y == 0) && (oper == '/')` . İşiniz bittiğinde **Kapat** düğmesini seçin. Koşul otomatik olarak kaydedilir.
 
-   ![Koşullu kesme noktası ayarlama](./media/calculator-conditional-breakpoint.gif "Koşullu kesme noktası ayarlama")
+   ![Kesme noktası ayarları bölümünü açan ve koşullu bir kesme noktası ayarlayarak, Visual Studio 2019 ' in kısa videosu.](./media/calculator-conditional-breakpoint.gif "Koşullu kesme noktası ayarlama")
 
    Artık 0 olarak bölme denendiğinde yürütme kesme noktasında yürütmeyi durakladık.
 
-1. Programda hata ayıklamak için **F5**'e basın veya yeşil ok simgesine sahip olan **yerel Windows hata ayıklayıcısı** araç çubuğu düğmesini seçin. Konsol uygulamanızda, "5-0" gibi bir şey girerseniz, program normal şekilde davranır ve çalışır durumda kalır. Ancak, "10/0" yazarsanız, kesme noktasında duraklatılır. İşleç ve sayı arasında istediğiniz sayıda boşluk da koyabilirsiniz; `cin`girişi uygun şekilde ayrıştırmaya yetecek kadar akıllı bir değer.
+1. Programda hata ayıklamak için **F5**'e basın veya yeşil ok simgesine sahip olan **yerel Windows hata ayıklayıcısı** araç çubuğu düğmesini seçin. Konsol uygulamanızda, "5-0" gibi bir şey girerseniz, program normal şekilde davranır ve çalışır durumda kalır. Ancak, "10/0" yazarsanız, kesme noktasında duraklatılır. İşleç ve sayı arasında istediğiniz sayıda boşluk da koyabilirsiniz; `cin` girişi uygun şekilde ayrıştırmaya yetecek kadar akıllı bir değer.
 
-   ![Koşullu kesme noktasında Duraklat](./media/calculator-debug-conditional.gif "Koşullu kesme noktasında Duraklat")
+   ![Programın koşullu kesme noktasında durakladığını gösteren, Visual Studios 'ın kısa videosu.](./media/calculator-debug-conditional.gif "Koşullu kesme noktasında Duraklat")
 
 ### <a name="useful-windows-in-the-debugger"></a>Hata ayıklayıcıda yararlı pencereler
 
@@ -660,11 +660,11 @@ Kodunuzda hata ayıkladığınızda, bazı yeni pencerelerin göründüğünü f
 
 Bu işlevden tüm değişkenleri görmek için **Yereller** penceresine geçin. Bu değişkenlerin değerlerini hata ayıklama sırasında değiştirebilir ve programda neler olacağını görebilirsiniz. Bu durumda, bunları tek başına bırakacağız.
 
-   ![Yereller penceresi](./media/calculator-locals.png "Yereller penceresi")
+   ![Yereller penceresinin ekran görüntüsü.](./media/calculator-locals.png "Yereller penceresi")
 
 Ayrıca, yürütmenin Şu anda duraklatıldığı geçerli değerlerini görmek için yalnızca kodun kendisindeki değişkenlerin üzerine gelebilmeniz gerekir. Önce üzerine tıklayarak düzenleyici penceresinin odaklandığından emin olun.
 
-   ![Geçerli değişken değerlerini görüntülemek için üzerine gelin](./media/calculator-hover-tooltip.gif "Geçerli değişken değerlerini görüntülemek için üzerine gelin")
+   ![Değişkenin değerini görüntüleyen Araç ipucunu gösteren kısa bir video.](./media/calculator-hover-tooltip.gif "Geçerli değişken değerlerini görüntülemek için üzerine gelin")
 
 ### <a name="to-continue-debugging"></a>Hata ayıklamaya devam etmek için
 
@@ -678,7 +678,7 @@ Ayrıca, yürütmenin Şu anda duraklatıldığı geçerli değerlerini görmek 
 
    Program beklenildiği gibi görünüyor: ilk sayıyı alır ve ikinciden böler. `cout`Satırda, değişkenin üzerine gelin `result` veya `result` **oto** penceresinde bir göz atın. Değerin "INF" olarak listelendiğini görürsünüz ve bu, doğru görünmüyor ve bunu çözeceğiz. `cout`Satır, ' de hangi değerin depolandığını `result` gösterir. bu nedenle, **F10**kullanarak ileri bir satır daha ilerlememeniz halinde konsol penceresi şunu görüntüler:
 
-   ![Sıfıra bölme sonucu](./media/calculator-divide-by-zero-fail.png "Sıfıra bölme sonucu")
+   ![Microsoft Visual Studio hata ayıklama konsolunun sıfıra bölme sonucunu gösteren ekran görüntüsü.](./media/calculator-divide-by-zero-fail.png "Sıfıra bölme sonucu")
 
    Bu sonuç, sıfıra bölme tanımsız olduğundan, programın istenen işleme bir sayısal yanıtı olmadığından meydana gelir.
 
@@ -730,7 +730,7 @@ Daha düzgün bir şekilde bölme yaparak, bir Kullanıcı sorunu anlayabiliyor.
 
 1. Şimdi **F5** tuşuna basın. Program yürütme, Kullanıcı girişi istemek için duraklamaya kadar tüm şekilde devam eder. `10 / 0`Yeniden girin. Şimdi, daha yararlı bir ileti yazdırılır. Kullanıcıdan daha fazla giriş istenir ve program normal yürütülmeye devam eder.
 
-   ![Değişikliklerden sonraki nihai sonuç](./media/calculator-final-verification.gif "Değişikliklerden sonraki nihai sonuç")
+   ![Microsoft Visual Studio hata ayıklama konsolunun, değişikliklerden sonraki nihai sonucu gösteren kısa bir video.](./media/calculator-final-verification.gif "Değişikliklerden sonraki nihai sonuç")
 
    > [!Note]
    > Hata ayıklama modundayken kodu düzenlerken, kodun eskimiş olma riski vardır. Bu durum, hata ayıklayıcı eski kodunuzu çalıştırmakta olduğunda ve henüz değişikliklerinizi güncelleştirmemişse oluşur. Hata ayıklayıcı, bu gerçekleştiğinde sizi bilgilendirmek için bir iletişim kutusu açılır. Bazen, yürütülen kodu yenilemek için **F5** tuşuna basmanız gerekebilir. Özellikle, bir işlev içinde bir değişiklik yaparsanız, yürütme noktası bu işlevin içindeyse, işlevin dışına dönerek güncelleştirilmiş kodu almak için yeniden tekrar açmanız gerekir. Bu bir nedenle işe yaramazsa ve bir hata iletisi görürseniz, IDE 'nin en üstündeki menülerin altında bulunan araç çubuğunda kırmızı kareye tıklayarak hata ayıklamayı durdurabilirsiniz, ardından **F5** tuşuna basarak veya araç çubuğundaki Durdur düğmesinin yanındaki yeşil "Oynat" okunu seçerek yeniden hata ayıklamayı başlatabilirsiniz.

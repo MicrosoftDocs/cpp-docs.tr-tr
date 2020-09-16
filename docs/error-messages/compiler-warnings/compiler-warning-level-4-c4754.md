@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: f55d40044fef58275ad0e1fbd281b5f1af43c243
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85c99feee72d94f50ec19394cf8aec7a3c9811bc
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198139"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684986"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>Derleyici Uyarısı (düzey 4) C4754
 
@@ -21,7 +21,7 @@ Karşılaştırma sonucu her zaman aynı olduğundan C4754 uyarısı verilir. Bu
 
 Tamsayı dönüştürme kuralları karmaşıktır ve çok sayıda hafif ekde vardır. Her C4754 uyarısını düzeltmeye alternatif olarak, kodu [SafeInt kitaplığını](../../safeint/safeint-library.md)kullanacak şekilde güncelleştirebilirsiniz.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bu örnek C4754 oluşturur:
 
@@ -43,7 +43,7 @@ int sum_overflow(unsigned long a, unsigned long b)
 }
 ```
 
-Ek `a + b`, sonuç 64 bitlik bir değere dönüştürülmesinden ve `x`64 bit değişkenine atanmadan önce aritmetik taşmaya neden olabilir. Bu, `x` üzerinde denetim gereksiz ve hiçbir şekilde bir taşma yakalayacak anlamına gelir. Bu durumda, derleyici şu uyarıyı yayar:
+`a + b`Bunun nedeni, sonuç 64 bitlik bir değere dönüştürme ve 64 bit değişkenine atanmasından önce aritmetik taşmaya neden olabilir `x` . Bu, onay açık `x` olduğu ve hiçbir şekilde bir taşma yakalayamayacağı anlamına gelir. Bu durumda, derleyici şu uyarıyı yayar:
 
 ```Output
 Warning C4754: Conversion rules for arithmetic operations in the comparison at C4754a.cpp (7) mean that one branch cannot be executed. Cast '(a + ...)' to 'ULONG64' (or similar type of 8 bytes).
@@ -58,8 +58,6 @@ Uyarıyı ortadan kaldırmak için, atama ifadesini, işlenenleri 8 baytlık de�
 unsigned long long x =
    (unsigned long long)a + (unsigned long long)b;
 ```
-
-## <a name="example"></a>Örnek
 
 Sonraki örnek ayrıca C4754 oluşturur.
 
@@ -79,13 +77,13 @@ int wrap_overflow(unsigned long a)
 }
 ```
 
-`sizeof()` işleci, boyutu mimariye bağlı olan bir `size_t`döndürür. Örnek kod, bir `size_t` 32 bit tür olan 32-bit mimarilerde çalışmaktadır. Ancak, 64 bit mimarilerde `size_t`, 64 bitlik bir türdür. Tamsayılar için dönüştürme kuralları `a`, `(size_t)a + (size_t)b < (size_t)a`yazılmış gibi `a + b < a` ifadedeki 64 bitlik bir değere saçıldığı anlamına gelir. `a` ve `b` 32 bitlik tamsayılar olduğunda, 64 bit toplama işlemi hiçbir zaman taşmamalıdır ve kısıtlama hiçbir zaman tutmamalıdır. Sonuç olarak, kod 64-bit mimarilerinde hiçbir bir tamsayı taşma koşulunu hiçbir şekilde algılamıyor. Bu örnek, derleyicinin bu uyarıyı yaymasına neden olur:
+`sizeof()`İşleci, `size_t` boyutu mimariye bağlı olan bir döndürür. Örnek kod, bir `size_t` 32 bit tür olan 32 bitlik mimarilerde çalışmaktadır. Ancak, 64 bit mimarilerde `size_t` 64 bit bir türdür. Tamsayılar için dönüştürme kuralları, `a` yazılmış gibi ifadede 64 bitlik bir değere yukarı dönüştürme anlamına gelir `a + b < a` `(size_t)a + (size_t)b < (size_t)a` . `a`Ve `b` 32 bitlik tamsayılar olduğunda, 64 bit toplama işlemi hiçbir zaman taşmamalıdır ve kısıtlama hiçbir zaman tutmamalıdır. Sonuç olarak, kod 64-bit mimarilerinde hiçbir bir tamsayı taşma koşulunu hiçbir şekilde algılamıyor. Bu örnek, derleyicinin bu uyarıyı yaymasına neden olur:
 
 ```Output
 Warning C4754: Conversion rules for arithmetic operations in the comparison at C4754b.cpp (7) mean that one branch cannot be executed. Cast '4' to 'ULONG' (or similar type of 4 bytes).
 ```
 
-Uyarı iletisinin özgün kaynak dize yerine 4 sabit değerini açıkça listelediğine dikkat edin. uyarı analizinin sorunlu kodla karşılaştığı zamana göre `sizeof(unsigned long)` zaten bir sabite dönüştürüldü. Bu nedenle, kaynak kodundaki hangi ifadenin Uyarı iletisindeki sabit değerle ilişkili olduğunu izlemeniz gerekebilir. C4754 uyarı iletilerinde sabitlere çözümlenen en yaygın kod kaynakları `sizeof(TYPE)` ve `strlen(szConstantString)`gibi ifadelerdir.
+Uyarı iletisinin özgün kaynak dize yerine 4 sabit değerini açıkça listelediğine ve uyarı analizinin, sorunlu kodla karşılaştığı zamana göre, `sizeof(unsigned long)` zaten bir sabite dönüştürüldüğüne dikkat edin. Bu nedenle, kaynak kodundaki hangi ifadenin Uyarı iletisindeki sabit değerle ilişkili olduğunu izlemeniz gerekebilir. C4754 uyarı iletilerinde sabitlere çözümlenen en yaygın kod kaynakları, ve gibi ifadelerdir `sizeof(TYPE)` `strlen(szConstantString)` .
 
 Bu durumda, sabit kod şuna benzer:
 
@@ -96,7 +94,7 @@ Bu durumda, sabit kod şuna benzer:
 if (a + (unsigned long)sizeof(unsigned long) < a)
 ```
 
-**Göz önünde** Derleyici uyarılarında başvurulan satır numarası, bir deyimin son satırındır. Birden çok satıra yayılan karmaşık koşullu bir ifade hakkında uyarı iletisinde, kod hatası içeren satır, bildirilen satırdan önce birkaç satır olabilir. Örneğin:
+**Göz önünde** Derleyici uyarılarında başvurulan satır numarası, bir deyimin son satırındır. Birden çok satıra yayılan karmaşık koşullu bir ifade hakkında uyarı iletisinde, kod hatası içeren satır, bildirilen satırdan önce birkaç satır olabilir. Örnek:
 
 ```cpp
 unsigned long a;

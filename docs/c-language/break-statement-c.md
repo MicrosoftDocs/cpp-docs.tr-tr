@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - break keyword [C]
 ms.assetid: 015627c7-0924-49b2-a4d1-c77edf5eae6a
-ms.openlocfilehash: c46173ceebd7291336c18d36203d1e4dc59ce46d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5322f8cb5218882d891e2cd66704f9dbfd1bc149
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222010"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683474"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C)
 
 **`break`** İfadesi, göründüğü en yakın kapsayan **`do`** , **`for`** , **`switch`** , ya da **`while`** deyimin yürütmesini sonlandırır. Denetim, sonlandırılmış deyimi takip eden deyime geçer.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *sıçrama-deyim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**sonundan**
@@ -28,7 +28,7 @@ ms.locfileid: "87222010"
 
 Bu örnek, **`break`** ifadesini göstermektedir:
 
-```
+```C
 #include <stdio.h>
 int main() {
    char c;

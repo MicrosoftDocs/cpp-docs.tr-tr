@@ -11,18 +11,18 @@ helpviewer_keywords:
 - if keyword [C], if statement syntax
 - nested statements
 ms.assetid: d7fc16a0-fdbc-4f39-b596-76e1ca4ad4a5
-ms.openlocfilehash: 67cdae033c3c8669c8bc7ae1d2e3584ef68498f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6fe92d3f2927cd6c5b3df16850e2925fc42055d0
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227848"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684150"
 ---
 # <a name="if-statement-c"></a>if Deyimi (C)
 
 **`if`** İfade, koşullu dallanmayı denetler. **`if`** İfadenin değeri sıfır değilse deyimin gövdesi yürütülür. **`if`** Deyimin sözdiziminin iki formu vardır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *Selection-deyimi*: **if (**  *ifade*  **)**  *deyimi*
 
@@ -34,7 +34,7 @@ Sözdiziminin ilk biçiminde, *ifade* true (sıfır dışında) ise *deyim* yür
 
 Aşağıda deyimin örnekleri verilmiştir **`if`** :
 
-```
+```C
 if ( i > 0 )
     y = x / i;
 else
@@ -48,7 +48,7 @@ Bu örnekte, ifadenin 0 ' `y = x/i;` `i` dan büyük olması durumunda yürütü
 
 **`if`** Deyimleri ve yan tümceleri iç içe geçirerek **`else`** , deyimleri ve yan tümceleri, amacınızı açıklığa kavuşturacak bileşik deyimlerde gruplamak için ayraçları kullanın. Hiçbir küme ayracı yoksa, derleyici, her biri olmayan en yakın ile ilişkilendirerek belirsizlikleri öğesini çözer **`else`** **`if`** **`else`** .
 
-```
+```C
 if ( i > 0 )           /* Without braces */
     if ( j > i )
         x = j;
@@ -58,7 +58,7 @@ if ( i > 0 )           /* Without braces */
 
 **`else`** Yan tümcesi, **`if`** Bu örnekteki Inner ifadesiyle ilişkilendirilir. `i`0 ' dan küçükse veya eşitse, hiçbir değer atanmaz `x` .
 
-```
+```C
 if ( i > 0 )
 {                      /* With braces */
     if ( j > i )

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 4918cd9df34e5c728c4aa2d90d4eb7f55784e4c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2327638208f30908cd3429ae656ce569f5821195
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845698"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684909"
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 
@@ -73,7 +73,7 @@ Denetlenen bir yineleyici, kapsayıcının sınırları dışına taşımaya ça
 
 Denetlenen yineleyiciler destekleyen Yineleyici bağdaştırıcılar [Checked_array_iterator sınıfı](../standard-library/checked-array-iterator-class.md) ve [unchecked_array_iterator sınıfıdır](../standard-library/unchecked-array-iterator-class.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 ' I 1 veya 2 ' ye ayarlanmış _ITERATOR_DEBUG_LEVEL kullanarak derlerken, belirli sınıfların dizin oluşturma işlecini kullanarak kapsayıcının sınırları dışında bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
 
@@ -102,8 +102,6 @@ int main()
 
 Bu program "67" yazdırır ve hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişim kutusu açılır.
 
-## <a name="example"></a>Örnek
-
 Benzer şekilde, 1 veya 2 ' ye ayarlanmış _ITERATOR_DEBUG_LEVEL kullanarak derlerken, `front` `back` kapsayıcı boş olduğunda kapsayıcı sınıflarında veya kullanarak bir öğeye erişmeyi denerseniz bir çalışma zamanı hatası oluşur.
 
 ```cpp
@@ -125,8 +123,6 @@ int main()
 ```
 
 Bu program hata hakkında ek bilgi içeren bir onaylama işlemi hatası iletişim kutusu açılır.
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki kod, her biriyle ilgili yorumlar içeren çeşitli yineleyici kullanım örneği senaryolarını gösterir. Varsayılan olarak, _ITERATOR_DEBUG_LEVEL hata ayıklama yapılarında 2 ' ye ve perakende yapılarda 0 ' a ayarlanır.
 

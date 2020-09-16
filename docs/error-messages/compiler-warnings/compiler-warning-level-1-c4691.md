@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4691
 ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
-ms.openlocfilehash: 8065129e20b627eb387421455527f6aaec3fdc2f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a4d1de621983794acfae4de7707ba127df9a1b7
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175382"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685573"
 ---
 # <a name="compiler-warning-level-1-c4691"></a>Derleyici Uyarısı (düzey 1) C4691
 
@@ -21,9 +21,9 @@ ms.locfileid: "80175382"
 
 *Dosyayı*yeniden oluşturduğunuz durumda, C4691, pragma [Warning](../../preprocessor/warning.md)ile yoksayılabilir veya kapatılabilir.  Diğer bir deyişle, oluşturmakta olduğunuz dosya derleyicinin tür tanımını bulmayı beklediği dosyayla aynıysa, C4691 'yi yoksayabilirsiniz.
 
-Ancak, derleyici meta verilerde başvurulan derlemeden aynı derlemeden olmayan bir tanım kullanıyorsa beklenmeyen bir davranış meydana gelebilir; CLR türleri yalnızca türün adı ile değil, derleme tarafından da yazılır.  Diğer bir deyişle, z. dll derlemesinden z türü, y. dll ' den Z 'den farklı.
+Ancak, derleyici meta verilerde başvurulan derlemeden aynı derlemeden olmayan bir tanım kullanıyorsa beklenmeyen bir davranış meydana gelebilir; CLR türleri yalnızca türün adı ile değil, derleme tarafından da yazılır.  Diğer bir deyişle, bütünleştirilmiş koddan Z türü z.dll, derleme y.dll tür Z 'den farklıdır.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bu örnek, özgün tür tanımını içerir.
 
@@ -33,9 +33,7 @@ Bu örnek, özgün tür tanımını içerir.
 public ref class Original_Type {};
 ```
 
-## <a name="example"></a>Örnek
-
-Bu örnek C4691_a. dll ' ye başvurur ve Original_Type türünde bir alan bildirir.
+Bu örnek, C4691_a.dll ve Original_Type türünde bir alan bildirir.
 
 ```cpp
 // C4691_b.cpp
@@ -47,9 +45,7 @@ public:
 };
 ```
 
-## <a name="example"></a>Örnek
-
-Aşağıdaki örnek C4691 oluşturur.  Bu örnekte Original_Type için bir tanım ve C4691a. dll ' nin başvurmadığından dikkat edin.
+Aşağıdaki örnek C4691 oluşturur.  Bu örnek, Original_Type için bir tanım içerir ve C4691a.dll başvurmuyor.
 
 Çözümlemek için, özgün tür tanımını içeren meta veri dosyasına başvurun ve yerel bildirimi ve tanımı kaldırın.
 

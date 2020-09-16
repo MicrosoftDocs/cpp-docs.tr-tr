@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4227
 ms.assetid: 941a0414-9964-4e02-8487-f9daa42ef7f9
-ms.openlocfilehash: 7b75cff4f03370951245bde1b485d538ffdb4007
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7ac3ef2b6ad8f05a454dafe5e6a7ea0abc07a066
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182948"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685495"
 ---
 # <a name="linker-tools-warning-lnk4227"></a>Bağlayıcı Araçları Uyarısı LNK4227
 
@@ -23,13 +23,13 @@ Bağlayıcı birleştirilirken meta veri farklılıkları algıladı:
 
 - Bir derlemedeki bir veya daha fazla kaynak kodu dosyası.
 
-Örneğin, LNK4227 aynı ada sahip iki genel işlevleriniz varsa, ancak parametre bilgileri farklı şekilde bildirilirse (yani, bildirimler tüm uygulamalarda tutarlı değildir) olabilir. Türlerin nasıl farklı olduğunu görmek için her. obj dosyasında ıldadsm. exe/TEXT/METADATA *object_file* kullanın.
+Örneğin, LNK4227 aynı ada sahip iki genel işlevleriniz varsa, ancak parametre bilgileri farklı şekilde bildirilirse (yani, bildirimler tüm uygulamalarda tutarlı değildir) olabilir. Türlerin nasıl farklı olduğunu görmek için her. obj dosyasında ildasm.exe/TEXT/METADATA *object_file* kullanın.
 
 LNK4227, başka bir araçla kaynaklanan sorunları raporlamak için de kullanılır. Daha fazla bilgi için uyarı iletisini arayın.
 
 Uyarı çözümlemek için meta veri sorunları düzeltilmelidir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Başvurulan bir derleme kendisine başvuran derlemeden farklı şekilde imzalanmışsa, LNK4227 oluşturulur.
 
@@ -62,9 +62,7 @@ ref class MyClass
 };
 ```
 
-## <a name="example"></a>Örnek
-
-Ayrıca, yanlış biçimdeki sürüm numaraları derleme özniteliklerine geçirildiğinde de LNK4227 oluşturulabilir.  ' * ' Gösterimi `AssemblyVersionAttribute`özeldir.  Bu uyarıyı çözmek için yalnızca sürüm özniteliklerinde `AssemblyVersionAttribute`dışındaki sayıları kullanın.
+Ayrıca, yanlış biçimdeki sürüm numaraları derleme özniteliklerine geçirildiğinde de LNK4227 oluşturulabilir.  ' * ' Gösterimi öğesine özeldir `AssemblyVersionAttribute` .  Bu uyarıyı çözmek için yalnızca sürüm özniteliklerinde dışındaki sayıları kullanın `AssemblyVersionAttribute` .
 
 Aşağıdaki örnek LNK4227 oluşturur:
 

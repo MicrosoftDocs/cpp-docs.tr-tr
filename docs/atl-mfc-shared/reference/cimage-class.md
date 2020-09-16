@@ -1,5 +1,5 @@
 ---
-title: CImage Sınıfı
+title: CImage sınıfı
 ms.date: 08/19/2019
 f1_keywords:
 - CImage
@@ -54,21 +54,21 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: a79012e7f2750a4eab12318ffcd52e5e15c30c83
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: 6e7197648fd91b2280d406c19c1019ca23f6a470
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825611"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684306"
 ---
-# <a name="cimage-class"></a>CImage Sınıfı
+# <a name="cimage-class"></a>CImage sınıfı
 
-`CImage`JPEG, GIF, BMP ve Taşınabilir Ağ Grafikleri (PNG) biçimlerinde görüntü yükleme ve kaydetme özelliği de dahil olmak üzere gelişmiş bit eşlem desteği sağlar.
+`CImage` JPEG, GIF, BMP ve Taşınabilir Ağ Grafikleri (PNG) biçimlerinde görüntü yükleme ve kaydetme özelliği de dahil olmak üzere gelişmiş bit eşlem desteği sağlar.
 
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CImage
@@ -78,22 +78,22 @@ class CImage
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CImage:: CImage](#cimage)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CImage:: harfler Blend](#alphablend)|Saydam veya yarı saydam piksel olan bit eşlemleri görüntüler.|
-|[CImage:: Attach](#attach)|`CImage` NESNESINE BIR hbit eşlem ekler. , DIB olmayan bölüm bit eşlemler veya DIB bölümü bit eşlemleriyle kullanılabilir.|
+|[CImage:: Attach](#attach)|Nesnesine bir HBIT eşlem ekler `CImage` . , DIB olmayan bölüm bit eşlemler veya DIB bölümü bit eşlemleriyle kullanılabilir.|
 |[CImage:: BitBlt](#bitblt)|Kaynak cihaz bağlamından bir bit eşlemi Bu geçerli cihaz bağlamına kopyalar.|
-|[CImage:: Create](#create)|Bir DIB bölüm bit eşlemi oluşturur ve daha önce oluşturulmuş `CImage` nesneye ekler.|
-|[CImage:: CreateEx](#createex)|Bir DIB bölümü bit eşlemi oluşturur (ek parametrelerle birlikte) ve daha önce oluşturulmuş `CImage` nesneye iliştirir.|
+|[CImage:: Create](#create)|Bir DIB bölüm bit eşlemi oluşturur ve daha önce oluşturulmuş nesneye ekler `CImage` .|
+|[CImage:: CreateEx](#createex)|Bir DIB bölümü bit eşlemi oluşturur (ek parametrelerle birlikte) ve daha önce oluşturulmuş nesneye iliştirir `CImage` .|
 |[CImage::D estroy](#destroy)|Bit eşlemi `CImage` nesneden ayırır ve bit eşlemi yok eder.|
-|[CImage::D etach](#detach)|Bir `CImage` nesneden bit eşlemi ayırır.|
-|[CImage::D RAW](#draw)|Bir kaynak dikdörtgenden bir bit eşlemi hedef dikdörtgene kopyalar. `Draw`gerekirse, hedef dikdörtgenin boyutlarına uyacak şekilde bit eşlemi uzatır veya sıkıştırır ve Alfa karışım ve saydam renkleri işler.|
+|[CImage::D etach](#detach)|Bir nesneden bit eşlemi ayırır `CImage` .|
+|[CImage::D RAW](#draw)|Bir kaynak dikdörtgenden bir bit eşlemi hedef dikdörtgene kopyalar. `Draw` gerekirse, hedef dikdörtgenin boyutlarına uyacak şekilde bit eşlemi uzatır veya sıkıştırır ve Alfa karışım ve saydam renkleri işler.|
 |[CImage:: GetBits](#getbits)|Bit eşlemin gerçek piksel değerlerine bir işaretçi alır.|
 |[CImage:: GetBPP](#getbpp)|Piksel başına bitleri alır.|
 |[CImage:: GetColorTable](#getcolortable)|Renk tablosundaki bir dizi girişi kırmızı, yeşil, mavi (RGB) renk değerleri alır.|
@@ -116,8 +116,8 @@ class CImage
 |[CImage:: MaskBlt](#maskblt)|Belirtilen maske ve raster işlemini kullanarak kaynak ve hedef bit eşlemlerin renk verilerini birleştirir.|
 |[CImage::P lgBlt](#plgblt)|Kaynak cihaz bağlamındaki bir dikdörtgenden bir hedef cihaz bağlamında paralelkenar içine bir bit blok aktarımı gerçekleştirir.|
 |[CImage:: ReleaseDC](#releasedc)|[CImage:: GetDC](#getdc)ile alınan cihaz bağlamını serbest bırakır.|
-|[CImage:: ReleaseGDIPlus](#releasegdiplus)|GDI+ tarafından kullanılan kaynakları serbest bırakır. Genel `CImage` bir nesne tarafından oluşturulan kaynakların serbest olması için çağrılmalıdır.|
-|[CImage:: Save](#save)|Bir görüntüyü belirtilen tür olarak kaydeder. `Save`görüntü seçenekleri belirtilemiyor.|
+|[CImage:: ReleaseGDIPlus](#releasegdiplus)|GDI+ tarafından kullanılan kaynakları serbest bırakır. Genel bir nesne tarafından oluşturulan kaynakların serbest olması için çağrılmalıdır `CImage` .|
+|[CImage:: Save](#save)|Bir görüntüyü belirtilen tür olarak kaydeder. `Save` görüntü seçenekleri belirtilemiyor.|
 |[CImage:: SetColorTable](#setcolortable)|DIB bölümünün renk tablosundaki bir giriş aralığındaki kırmızı, yeşil, mavi RGB) renk değerlerini ayarlar.|
 |[CImage:: SetPixel](#setpixel)|Belirtilen koordinatlardaki pikseli belirtilen renge ayarlar.|
 |[CImage:: Setpixelındexed](#setpixelindexed)|Belirtilen koordinatlardaki pikseli, paletin belirtilen dizinindeki renge ayarlar.|
@@ -128,13 +128,13 @@ class CImage
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CImage:: operator HBıX](#operator_hbitmap)|`CImage` Nesnesine eklenen Windows işleyicisini döndürür.|
+|[CImage:: operator HBıX](#operator_hbitmap)|Nesnesine eklenen Windows işleyicisini döndürür `CImage` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CImage`cihazdan bağımsız bit eşlem (DIB) bölümleri olan bit eşlemler alır; Ancak [Create](#create) veya [CImage:: Load](#load) 'u yalnızca DIB bölümleri ile kullanabilirsiniz. `CImage` [Attach](#attach)kullanarak bir nesneye DIB olmayan bölüm bit eşlemi ekleyebilirsiniz, ancak bu durumda yalnızca DIB bölümü bit eşlemlerini destekleyen aşağıdaki `CImage` yöntemleri kullanamazsınız:
+`CImage` cihazdan bağımsız bit eşlem (DIB) bölümleri olan bit eşlemler alır; Ancak [Create](#create) veya [CImage:: Load](#load) 'u yalnızca DIB bölümleri ile kullanabilirsiniz. Attach kullanarak bir nesneye DIB olmayan bölüm bit eşlemi ekleyebilirsiniz `CImage` , ancak bu [Attach](#attach)durumda `CImage` yalnızca DIB bölümü bit eşlemlerini destekleyen aşağıdaki yöntemleri kullanamazsınız:
 
 - [GetBits](#getbits)
 
@@ -153,14 +153,14 @@ class CImage
 Eklenen bir bit eşlemin bir DIB bölümü olup olmadığını anlamak için, [IsDibSection](#isdibsection)çağırın.
 
 > [!NOTE]
-> Visual Studio .NET 2003 ' de, bu sınıf oluşturulan `CImage` nesne sayısının sayısını tutar. Sayı 0 ' a `GdiplusShutdown` her gittiğinde,, GDI+ tarafından kullanılan kaynakları serbest bırakmak için otomatik olarak çağrılır. Bu sayede, dll `CImage` 'ler tarafından doğrudan veya dolaylı olarak oluşturulan tüm nesnelerin her zaman düzgün şekilde `GdiplusShutdown` yok edileceği ve öğesinden `DllMain`çağrılmamasını sağlar.
+> Visual Studio .NET 2003 ' de, bu sınıf oluşturulan nesne sayısının sayısını tutar `CImage` . Sayı 0 ' a her gittiğinde,, `GdiplusShutdown` GDI+ tarafından kullanılan kaynakları serbest bırakmak için otomatik olarak çağrılır. Bu sayede `CImage` , dll 'ler tarafından doğrudan veya dolaylı olarak oluşturulan tüm nesnelerin her zaman düzgün şekilde yok edileceği ve `GdiplusShutdown` öğesinden çağrılmamasını sağlar `DllMain` .
 
 > [!NOTE]
-> Bir DLL `CImage` içinde genel nesnelerin kullanılması önerilmez. Bir DLL içinde genel `CImage` bir nesne kullanmanız GEREKIYORSA, GDI+ tarafından kullanılan kaynakları açıkça serbest bırakmak Için [CImage:: ReleaseGDIPlus](#releasegdiplus) ' ı çağırın.
+> `CImage`BIR DLL içinde genel nesnelerin kullanılması önerilmez. `CImage`BIR DLL içinde genel bir nesne kullanmanız gerekiyorsa, GDI+ tarafından kullanılan kaynakları açıkça serbest bırakmak Için [CImage:: ReleaseGDIPlus](#releasegdiplus) ' ı çağırın.
 
-`CImage`Yeni bir [CDC](../../mfc/reference/cdc-class.md)olarak seçilemez. `CImage`görüntü için kendi HDC 'sini oluşturur. Bir HBıX tek seferde yalnızca bir HDC 'de seçilebildiğinden, ile `CImage` ILIŞKILI hbit eşlem başka bir HDC 'de seçilemez. CDC gerekiyorsa, `CImage` ' dan HDC 'yi alın ve bunu [CDC:: FromHandle](../../mfc/reference/cdc-class.md#fromhandle)' a verin.
+`CImage` Yeni bir [CDC](../../mfc/reference/cdc-class.md)olarak seçilemez. `CImage` görüntü için kendi HDC 'sini oluşturur. Bir HBıX tek seferde yalnızca bir HDC 'de seçilebildiğinden, ile ilişkili HBIT eşlem `CImage` başka BIR HDC 'de seçilemez. CDC gerekiyorsa, ' dan HDC 'yi alın `CImage` ve bunu [CDC:: FromHandle](../../mfc/reference/cdc-class.md#fromhandle)' a verin.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 ```cpp
 // Get a CDC for the image
@@ -171,9 +171,7 @@ pDC->Rectangle(0, 40, 100, 50);
 m_myImage.ReleaseDC();
 ```
 
-MFC projesinde kullandığınızda `CImage` , projenizdeki üye Işlevleri [CBitmap](../../mfc/reference/cbitmap-class.md) nesnesine bir işaretçi beklediğini unutmayın. Bu tür bir işlevle kullanmak `CImage` Istiyorsanız, [CMenu:: AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu)gibi, [CBitmap:: FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle)kullanın, hbımap inizi `CImage` geçirin ve döndürülen `CBitmap*`öğesini kullanın.
-
-## <a name="example"></a>Örnek
+`CImage`MFC projesinde kullandığınızda, projenizdeki üye Işlevleri [CBitmap](../../mfc/reference/cbitmap-class.md) nesnesine bir işaretçi beklediğini unutmayın. `CImage`Bu tür bir işlevle kullanmak istiyorsanız, [CMenu:: AppendMenu](../../mfc/reference/cmenu-class.md#appendmenu)gibi, [CBitmap:: FromHandle](../../mfc/reference/cbitmap-class.md#fromhandle)kullanın, `CImage` hbımap inizi geçirin ve döndürülen öğesini kullanın `CBitmap*` .
 
 ```cpp
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
@@ -188,12 +186,12 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 }
 ```
 
-Aracılığıyla `CImage`, bir DIB 'nin gerçek bit bitlerini erişiminiz vardır. Bir `CImage` nesneyi, daha önce BIR WIN32 hbit veya DIB bölümünü kullandığınız her yerde kullanabilirsiniz.
+Aracılığıyla `CImage` , BIR DIB 'nin gerçek bit bitlerini erişiminiz vardır. Bir `CImage` nesneyi, daha önce bir WIN32 HBIT veya DIB bölümünü kullandığınız her yerde kullanabilirsiniz.
 
-MFC veya ATL `CImage` 'den kullanabilirsiniz.
+`CImage`MFC veya ATL 'den kullanabilirsiniz.
 
 > [!NOTE]
-> Kullanarak `CImage`bir proje oluşturduğunuzda, `CString` *atlımage. h*dahil etmeden önce tanımlamanız gerekir. Projeniz MFC olmadan ATL kullanıyorsa, *atlımage. h*dahil etmeden önce *atlstr. h* ekleyin. Projeniz MFC kullanıyorsa (veya MFC desteği olan bir ATL projem ise), *atlımage. h*eklemeden önce *afxstr. h* 'yi dahil edin.
+> Kullanarak bir proje oluşturduğunuzda `CImage` , `CString` *atlımage. h*dahil etmeden önce tanımlamanız gerekir. Projeniz MFC olmadan ATL kullanıyorsa, *atlımage. h*dahil etmeden önce *atlstr. h* ekleyin. Projeniz MFC kullanıyorsa (veya MFC desteği olan bir ATL projem ise), *atlımage. h*eklemeden önce *afxstr. h* 'yi dahil edin.
 >
 > Benzer şekilde, *atlımpl. cpp*dahil etmeden önce *atlımage. h* dahil etmeniz gerekir. Bunu kolayca başarmak için, *pch. h* 'Nize (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) *atlımage.* h ' yi ekleyin.
 
@@ -201,7 +199,7 @@ MFC veya ATL `CImage` 'den kullanabilirsiniz.
 
 **Üstbilgi:** atlımage. h
 
-## <a name="cimagealphablend"></a><a name="alphablend"></a>CImage:: harfler Blend
+## <a name="cimagealphablend"></a><a name="alphablend"></a> CImage:: harfler Blend
 
 Saydam veya yarı saydam piksel olan bit eşlemleri görüntüler.
 
@@ -282,7 +280,7 @@ Kaynak dikdörtgenin mantıksal birimleri cinsinden yüksekliği.
 Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına bir başvuru, hedefi tanımlar.
 
 *rectSrc*<br/>
-Kaynağı tanımlayarak bir `RECT` yapıya başvuru.
+`RECT`Kaynağı tanımlayarak bir yapıya başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -294,9 +292,9 @@ Alfa Blend bit eşlemler piksel başına renk karıştırmasını destekler.
 
 *BBlendOp* , AC_SRC_OVER varsayılana ayarlandığında kaynak bit eşlem, kaynak piksellerin Alfa değerlerine göre hedef bit eşlem üzerinden yerleştirilir.
 
-## <a name="cimageattach"></a><a name="attach"></a>CImage:: Attach
+## <a name="cimageattach"></a><a name="attach"></a> CImage:: Attach
 
-Bir `CImage` nesneye *hbit eşlem* ekler.
+Bir nesneye *Hbit eşlem* ekler `CImage` .
 
 ```cpp
 void Attach(HBITMAP hBitmap, DIBOrientation eOrientation = DIBOR_DEFAULT) throw();
@@ -320,7 +318,7 @@ Bit eşlemin yönünü belirtir. Aşağıdakilerden biri olabilir:
 
 Bit eşlem, DIB olmayan bir bölüm bit eşlemi veya bir DIB bölümü bit eşlemi olabilir. Yalnızca DIB bölümü bit eşlemleriyle kullanabileceğiniz yöntemlerin listesi için [IsDibSection](#isdibsection) bölümüne bakın.
 
-## <a name="cimagebitblt"></a><a name="bitblt"></a>CImage:: BitBlt
+## <a name="cimagebitblt"></a><a name="bitblt"></a> CImage:: BitBlt
 
 Kaynak cihaz bağlamından bir bit eşlemi Bu geçerli cihaz bağlamına kopyalar.
 
@@ -386,7 +384,7 @@ Kaynak dikdörtgenin sol üst köşesinin mantıksal y koordinatı.
 Hedef dikdörtgeni gösteren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı.
 
 *pointSrc*<br/>
-Kaynak `POINT` dikdörtgenin sol üst köşesini belirten bir yapı.
+`POINT`Kaynak dikdörtgenin sol üst köşesini belirten bir yapı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -396,7 +394,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 Daha fazla bilgi için Windows SDK [BitBlt](/windows/win32/api/wingdi/nf-wingdi-bitblt) bölümüne bakın.
 
-## <a name="cimagecimage"></a><a name="cimage"></a>CImage:: CImage
+## <a name="cimagecimage"></a><a name="cimage"></a> CImage:: CImage
 
 Bir `CImage` nesnesi oluşturur.
 
@@ -408,11 +406,11 @@ CImage() throw();
 
 Nesneyi oluşturduktan sonra, nesnesine bir bit eşlem iliştirmek için [Create](#create), [Load](#load), [LoadFromResource](#loadfromresource)veya [Attach](#attach) komutunu çağırın.
 
-**Göz önünde** Visual Studio 'da, bu sınıf oluşturulan `CImage` nesne sayısının sayısını tutar. Sayı 0 ' a `GdiplusShutdown` her gittiğinde,, GDI+ tarafından kullanılan kaynakları serbest bırakmak için otomatik olarak çağrılır. Böylece, dll 'Ler `CImage` tarafından doğrudan veya dolaylı olarak oluşturulan tüm nesnelerin her zaman düzgün şekilde yok `GdiplusShutdown` edileceği ve DllMain 'den çağrılmamasını sağlar.
+**Göz önünde** Visual Studio 'da, bu sınıf oluşturulan nesne sayısının sayısını tutar `CImage` . Sayı 0 ' a her gittiğinde,, `GdiplusShutdown` GDI+ tarafından kullanılan kaynakları serbest bırakmak için otomatik olarak çağrılır. Böylece `CImage` , dll 'ler tarafından doğrudan veya dolaylı olarak oluşturulan tüm nesnelerin her zaman düzgün şekilde yok edileceği ve `GdiplusShutdown` DllMain 'den çağrılmamasını sağlar.
 
-Bir DLL `CImage` içinde genel nesnelerin kullanılması önerilmez. Bir DLL içinde genel `CImage` bir nesne kullanmanız GEREKIYORSA, GDI+ tarafından kullanılan kaynakları açıkça serbest bırakmak Için [CImage:: ReleaseGDIPlus](#releasegdiplus) ' ı çağırın.
+`CImage`BIR DLL içinde genel nesnelerin kullanılması önerilmez. `CImage`BIR DLL içinde genel bir nesne kullanmanız gerekiyorsa, GDI+ tarafından kullanılan kaynakları açıkça serbest bırakmak Için [CImage:: ReleaseGDIPlus](#releasegdiplus) ' ı çağırın.
 
-## <a name="cimagecreate"></a><a name="create"></a>CImage:: Create
+## <a name="cimagecreate"></a><a name="create"></a> CImage:: Create
 
 Bir `CImage` bit eşlem oluşturur ve önceden oluşturulmuş `CImage` nesneye ekler.
 
@@ -427,10 +425,10 @@ BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *nWidth*<br/>
-`CImage` Bit eşlemin piksel cinsinden genişliği.
+`CImage`Bit eşlemin piksel cinsinden genişliği.
 
 *nHeight*<br/>
-`CImage` Bit eşlemin piksel cinsinden yüksekliği. *NHeight* değeri pozitifse, bit eşlem BIR alt DIB olur ve bu, sol alt köşenin kökenidir. *NHeight* değeri negatifse, bit eşlem bir üst-aşağı DIB olur ve kaynak sol üst köşesindedir.
+`CImage`Bit eşlemin piksel cinsinden yüksekliği. *NHeight* değeri pozitifse, bit eşlem BIR alt DIB olur ve bu, sol alt köşenin kökenidir. *NHeight* değeri negatifse, bit eşlem bir üst-aşağı DIB olur ve kaynak sol üst köşesindedir.
 
 *nBPP*<br/>
 Bit eşlemdeki piksel başına bit sayısı. Genellikle 4, 8, 16, 24 veya 32. Tek renkli bit eşlemler veya maskeler için 1 olabilir.
@@ -447,7 +445,7 @@ Bit eşlem nesnesinin bir alfa kanalına sahip olup olmadığını belirtir. Aş
 
 Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cimagecreateex"></a><a name="createex"></a>CImage:: CreateEx
+## <a name="cimagecreateex"></a><a name="createex"></a> CImage:: CreateEx
 
 Bir `CImage` bit eşlem oluşturur ve önceden oluşturulmuş `CImage` nesneye ekler.
 
@@ -464,10 +462,10 @@ BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *nWidth*<br/>
-`CImage` Bit eşlemin piksel cinsinden genişliği.
+`CImage`Bit eşlemin piksel cinsinden genişliği.
 
 *nHeight*<br/>
-`CImage` Bit eşlemin piksel cinsinden yüksekliği. *NHeight* değeri pozitifse, bit eşlem BIR alt DIB olur ve bu, sol alt köşenin kökenidir. *NHeight* değeri negatifse, bit eşlem bir üst-aşağı DIB olur ve kaynak sol üst köşesindedir.
+`CImage`Bit eşlemin piksel cinsinden yüksekliği. *NHeight* değeri pozitifse, bit eşlem BIR alt DIB olur ve bu, sol alt köşenin kökenidir. *NHeight* değeri negatifse, bit eşlem bir üst-aşağı DIB olur ve kaynak sol üst köşesindedir.
 
 *nBPP*<br/>
 Bit eşlemdeki piksel başına bit sayısı. Genellikle 4, 8, 16, 24 veya 32. Tek renkli bit eşlemler veya maskeler için 1 olabilir.
@@ -475,7 +473,7 @@ Bit eşlemdeki piksel başına bit sayısı. Genellikle 4, 8, 16, 24 veya 32. Te
 *eCompression*<br/>
 Sıkıştırılmış bir alt bit eşlem için sıkıştırmanın türünü belirtir (yukarıdan aşağıya doğru sıkıştırma yapılamaz). Aşağıdaki değerlerden biri olabilir:
 
-- Biçimin sıkıştırması BI_RGB. Çağrılırken `CImage::CreateEx` bu değerin belirtilmesi, çağırma `CImage::Create`ile eşdeğerdir.
+- Biçimin sıkıştırması BI_RGB. Çağrılırken bu değerin belirtilmesi `CImage::CreateEx` , çağırma ile eşdeğerdir `CImage::Create` .
 
 - BI_BITFIELDS biçim sıkıştırılmamış ve renk tablosu, her bir pikselin sırasıyla kırmızı, yeşil ve mavi bileşenleri belirten üç DWORD renk maskelerinden oluşur. Bu, 16 ve 32-BPP bit eşlemleriyle kullanıldığında geçerlidir.
 
@@ -503,7 +501,7 @@ DWORD adwBitmasks[3] = { 0x0000000f, 0x000000f0, 0x00000f00 };
 m_myImage.CreateEx(100, 100, 16, BI_BITFIELDS, adwBitmasks, 0);
 ```
 
-## <a name="cimagedestroy"></a><a name="destroy"></a>CImage::D estroy
+## <a name="cimagedestroy"></a><a name="destroy"></a> CImage::D estroy
 
 Bit eşlemi `CImage` nesneden ayırır ve bit eşlemi yok eder.
 
@@ -511,9 +509,9 @@ Bit eşlemi `CImage` nesneden ayırır ve bit eşlemi yok eder.
 void Destroy() throw();
 ```
 
-## <a name="cimagedetach"></a><a name="detach"></a>CImage::D etach
+## <a name="cimagedetach"></a><a name="detach"></a> CImage::D etach
 
-Bir `CImage` nesneden bir bit eşlemi ayırır.
+Bir nesneden bir bit eşlemi ayırır `CImage` .
 
 ```
 HBITMAP Detach() throw();
@@ -523,7 +521,7 @@ HBITMAP Detach() throw();
 
 Bit eşlem için bir tanıtıcı ayrılır veya hiçbir bit eşlem iliştirilmişse NULL olur.
 
-## <a name="cimagedraw"></a><a name="draw"></a>CImage::D RAW
+## <a name="cimagedraw"></a><a name="draw"></a> CImage::D RAW
 
 Kaynak cihaz bağlamından bir bit eşlemi geçerli cihaz bağlamına kopyalar.
 
@@ -598,7 +596,7 @@ Kaynak dikdörtgenin mantıksal birimleri cinsinden yüksekliği.
 Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına bir başvuru, hedefi tanımlar.
 
 *rectSrc*<br/>
-Kaynağı tanımlayarak bir `RECT` yapıya başvuru.
+`RECT`Kaynağı tanımlayarak bir yapıya başvuru.
 
 *pointDest*<br/>
 Mantıksal birimlerde hedef dikdörtgenin sol üst köşesini tanımlayan bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısına başvuru.
@@ -609,11 +607,11 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Draw`görüntüde saydam bir renk veya alfa kanalı [yoksa, aynı işlemi, aynı](#stretchblt)işlemi Bu durumda, `Draw` gereken [TransparentBlt](#transparentblt) veya [harflerden Blend](#alphablend) ile aynı işlemi gerçekleştirir.
+`Draw` görüntüde saydam bir renk veya alfa kanalı [yoksa, aynı işlemi, aynı](#stretchblt)işlemi Bu durumda, `Draw` gereken [TransparentBlt](#transparentblt) veya [harflerden Blend](#alphablend) ile aynı işlemi gerçekleştirir.
 
-Kaynak dikdörtgeni belirtmeyen `Draw` sürümleri için, kaynak görüntünün tamamı varsayılandır. Hedef dikdörtgen için bir `Draw` boyut belirtmeyen sürümü için, kaynak görüntünün boyutu varsayılandır ve bir uzatma ya da küçültme gerçekleşmez.
+`Draw`Kaynak dikdörtgeni belirtmeyen sürümleri için, kaynak görüntünün tamamı varsayılandır. `Draw`Hedef dikdörtgen için bir boyut belirtmeyen sürümü için, kaynak görüntünün boyutu varsayılandır ve bir uzatma ya da küçültme gerçekleşmez.
 
-## <a name="cimagegetbits"></a><a name="getbits"></a>CImage:: GetBits
+## <a name="cimagegetbits"></a><a name="getbits"></a> CImage:: GetBits
 
 Bit eşlemdeki belirli bir pikselin gerçek bit değerlerine yönelik bir işaretçi alır.
 
@@ -630,9 +628,9 @@ Bit eşlem arabelleği işaretçisi. Bit eşlem, aşağıdan yukarıya bir DIB i
 Bu işaretçiyi, [Getsıklık](#getpitch)tarafından döndürülen değerle birlikte kullanarak bir görüntüdeki tek tek pikselleri bulabilir ve değiştirebilirsiniz.
 
 > [!NOTE]
-> Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler; Sonuç olarak, bir `CImage` nesnenin PIKSELLERE bir DIB bölümünün pikselleriyle aynı şekilde erişirsiniz. Döndürülen işaretçi, (0, 0) konumundaki pikseli işaret eder.
+> Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler; Sonuç olarak, bir `CImage` nesnenin piksellere BIR DIB bölümünün pikselleriyle aynı şekilde erişirsiniz. Döndürülen işaretçi, (0, 0) konumundaki pikseli işaret eder.
 
-## <a name="cimagegetbpp"></a><a name="getbpp"></a>CImage:: GetBPP
+## <a name="cimagegetbpp"></a><a name="getbpp"></a> CImage:: GetBPP
 
 Piksel başına bit değerini alır.
 
@@ -648,9 +646,9 @@ Piksel başına bit sayısı.
 
 Bu değer, bit eşlemdeki en fazla renk sayısını ve her pikseli tanımlayan bitlerin sayısını belirler.
 
-Piksel başına bit sayısı genellikle 1, 4, 8, 16, 24 veya 32 ' dir. Bu değer `biBitCount` hakkında daha fazla bilgi Için Windows SDK [bitmapınfoheader](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) üyesine bakın.
+Piksel başına bit sayısı genellikle 1, 4, 8, 16, 24 veya 32 ' dir. `biBitCount`Bu değer hakkında daha fazla bilgi için Windows SDK [Bitmapınfoheader](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) üyesine bakın.
 
-## <a name="cimagegetcolortable"></a><a name="getcolortable"></a>CImage:: GetColorTable
+## <a name="cimagegetcolortable"></a><a name="getcolortable"></a> CImage:: GetColorTable
 
 DIB bölümünün paletindeki bir giriş aralığından kırmızı, yeşil, mavi (RGB) renk değerleri alır.
 
@@ -672,7 +670,7 @@ Alınacak renk tablosu girdilerinin sayısı.
 *Prgbrenkler*<br/>
 Renk tablosu girdilerini almak için [Rgbdörtlü](/windows/win32/api/wingdi/ns-wingdi-rgbquad) yapıların dizisine yönelik bir işaretçi.
 
-## <a name="cimagegetdc"></a><a name="getdc"></a>CImage:: GetDC
+## <a name="cimagegetdc"></a><a name="getdc"></a> CImage:: GetDC
 
 Şu anda seçili olan görüntünün bulunduğu cihaz bağlamını alır.
 
@@ -686,9 +684,9 @@ Cihaz bağlamına yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her çağrısı için `GetDC`, [ReleaseDC](#releasedc)'ye yönelik sonraki bir çağrın olması gerekir.
+Her çağrısı için `GetDC` , [ReleaseDC](#releasedc)'ye yönelik sonraki bir çağrın olması gerekir.
 
-## <a name="cimagegetexporterfilterstring"></a><a name="getexporterfilterstring"></a>CImage:: GetExporterFilterString
+## <a name="cimagegetexporterfilterstring"></a><a name="getexporterfilterstring"></a> CImage:: GetExporterFilterString
 
 Görüntüleri kaydetmek için kullanılabilecek görüntü biçimlerini bulur.
 
@@ -728,27 +726,27 @@ _T("All Image Files"));
 *dwExclude*<br/>
 Listeden dışlanacak dosya türlerini belirten bit bayrakları kümesi. İzin verilen bayraklar şunlardır:
 
-- `excludeGIF`= 0x01, GIF dosyalarını dışlar.
+- `excludeGIF` = 0x01, GIF dosyalarını dışlar.
 
-- `excludeBMP`= 0x02, BMP (Windows bit eşlem) dosyalarını dışlar.
+- `excludeBMP` = 0x02, BMP (Windows bit eşlem) dosyalarını dışlar.
 
-- `excludeEMF`= 0x04, EMF (Gelişmiş Meta dosyası) dosyalarını dışlar.
+- `excludeEMF` = 0x04, EMF (Gelişmiş Meta dosyası) dosyalarını dışlar.
 
-- `excludeWMF`= 0x08 WMF (Windows meta dosyası) dosyalarını dışlar.
+- `excludeWMF` = 0x08 WMF (Windows meta dosyası) dosyalarını dışlar.
 
-- `excludeJPEG`= 0x10 JPEG dosyalarını dışlar.
+- `excludeJPEG` = 0x10 JPEG dosyalarını dışlar.
 
-- `excludePNG`= 0x20 PNG dosyalarını dışlar.
+- `excludePNG` = 0x20 PNG dosyalarını dışlar.
 
-- `excludeTIFF`= 0x40 TIFF dosyalarını dışlar.
+- `excludeTIFF` = 0x40 TIFF dosyalarını dışlar.
 
-- `excludeIcon`= 0x80 ICO (Windows simge) dosyalarını dışlar.
+- `excludeIcon` = 0x80 ICO (Windows simge) dosyalarını dışlar.
 
-- `excludeOther`= 0x80000000 Yukarıda listelenmeyen diğer dosya türlerini dışlar.
+- `excludeOther` = 0x80000000 Yukarıda listelenmeyen diğer dosya türlerini dışlar.
 
-- `excludeDefaultLoad`= 0 yükleme için tüm dosya türleri varsayılan olarak dahil edilir
+- `excludeDefaultLoad` = 0 yükleme için tüm dosya türleri varsayılan olarak dahil edilir
 
-- `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF`Kaydetmek için, bu dosyalar genellikle özel gereksinimlere sahip oldukları için varsayılan olarak dışlanır.
+- `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` Kaydetmek için, bu dosyalar genellikle özel gereksinimlere sahip oldukları için varsayılan olarak dışlanır.
 
 *chSeparator*<br/>
 Resim biçimleri arasında kullanılan ayırıcı. Daha fazla bilgi için bkz. **açıklamalar** .
@@ -763,15 +761,15 @@ Dosya farklı Kaydet iletişim kutusunda kullanılabilir görüntü biçimlerini
 
 *StrExporter* parametresi şu biçimdedir:
 
-dosya description0&#124;\*. EXT0&#124;filedescription1&#124;\*. EXT1&#124;... Dosya Açıklaması *n*&#124;\*. ext *n*&#124;&#124;
+dosya description0&#124;\* . ext0&#124;filedescription1&#124;\* . EXT1&#124;... Dosya Açıklaması *n*&#124;\* . ext *n*&#124;&#124;
 
-Burada ' &#124; ' tarafından `chSeparator`belirtilen ayırıcı karakterdir. Örneğin:
+Burada ' &#124; ' tarafından belirtilen ayırıcı karakterdir `chSeparator` . Örneğin:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
-Bu dizeyi bir MFC `CFileDialog` nesnesine geçirirseniz, ' &#124; ' varsayılan ayırıcısını kullanın. Bu dizeyi ortak bir dosya Kaydet iletişim kutusuna geçirirseniz ' \ 0 ' null ayırıcısını kullanın.
+Bu dizeyi bir MFC nesnesine geçirirseniz, ' &#124; ' varsayılan ayırıcısını kullanın `CFileDialog` . Bu dizeyi ortak bir dosya Kaydet iletişim kutusuna geçirirseniz ' \ 0 ' null ayırıcısını kullanın.
 
-## <a name="cimagegetheight"></a><a name="getheight"></a>CImage:: GetHeight
+## <a name="cimagegetheight"></a><a name="getheight"></a> CImage:: GetHeight
 
 Resmin piksel cinsinden yüksekliğini alır.
 
@@ -783,7 +781,7 @@ int GetHeight() const throw();
 
 Resmin piksel cinsinden yüksekliği.
 
-## <a name="cimagegetimporterfilterstring"></a><a name="getimporterfilterstring"></a>CImage:: Getımporterfilterstring
+## <a name="cimagegetimporterfilterstring"></a><a name="getimporterfilterstring"></a> CImage:: Getımporterfilterstring
 
 Görüntüleri yüklemek için kullanılabilen görüntü biçimlerini bulur.
 
@@ -823,27 +821,27 @@ _T("All Image Files"));
 *dwExclude*<br/>
 Listeden dışlanacak dosya türlerini belirten bit bayrakları kümesi. İzin verilen bayraklar şunlardır:
 
-- `excludeGIF`= 0x01, GIF dosyalarını dışlar.
+- `excludeGIF` = 0x01, GIF dosyalarını dışlar.
 
-- `excludeBMP`= 0x02, BMP (Windows bit eşlem) dosyalarını dışlar.
+- `excludeBMP` = 0x02, BMP (Windows bit eşlem) dosyalarını dışlar.
 
-- `excludeEMF`= 0x04, EMF (Gelişmiş Meta dosyası) dosyalarını dışlar.
+- `excludeEMF` = 0x04, EMF (Gelişmiş Meta dosyası) dosyalarını dışlar.
 
-- `excludeWMF`= 0x08 WMF (Windows meta dosyası) dosyalarını dışlar.
+- `excludeWMF` = 0x08 WMF (Windows meta dosyası) dosyalarını dışlar.
 
-- `excludeJPEG`= 0x10 JPEG dosyalarını dışlar.
+- `excludeJPEG` = 0x10 JPEG dosyalarını dışlar.
 
-- `excludePNG`= 0x20 PNG dosyalarını dışlar.
+- `excludePNG` = 0x20 PNG dosyalarını dışlar.
 
-- `excludeTIFF`= 0x40 TIFF dosyalarını dışlar.
+- `excludeTIFF` = 0x40 TIFF dosyalarını dışlar.
 
-- `excludeIcon`= 0x80 ICO (Windows simge) dosyalarını dışlar.
+- `excludeIcon` = 0x80 ICO (Windows simge) dosyalarını dışlar.
 
-- `excludeOther`= 0x80000000 Yukarıda listelenmeyen diğer dosya türlerini dışlar.
+- `excludeOther` = 0x80000000 Yukarıda listelenmeyen diğer dosya türlerini dışlar.
 
-- `excludeDefaultLoad`= 0 yükleme için tüm dosya türleri varsayılan olarak dahil edilir
+- `excludeDefaultLoad` = 0 yükleme için tüm dosya türleri varsayılan olarak dahil edilir
 
-- `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF`Kaydetmek için, bu dosyalar genellikle özel gereksinimlere sahip oldukları için varsayılan olarak dışlanır.
+- `excludeDefaultSave` = `excludeIcon &#124; excludeEMF &#124; excludeWMF` Kaydetmek için, bu dosyalar genellikle özel gereksinimlere sahip oldukları için varsayılan olarak dışlanır.
 
 *chSeparator*<br/>
 Resim biçimleri arasında kullanılan ayırıcı. Daha fazla bilgi için bkz. **açıklamalar** .
@@ -854,15 +852,15 @@ Resim biçimleri arasında kullanılan ayırıcı. Daha fazla bilgi için bkz. *
 
 Bu parametre *Şu* biçimdedir:
 
-dosya description0&#124;\*. EXT0&#124;filedescription1&#124;\*. EXT1&#124;... Dosya Açıklaması *n*&#124;\*. ext *n*&#124;&#124;
+dosya description0&#124;\* . ext0&#124;filedescription1&#124;\* . EXT1&#124;... Dosya Açıklaması *n*&#124;\* . ext *n*&#124;&#124;
 
 Burada ' &#124; ', *chSeparator*tarafından belirtilen ayırıcı karakterdir. Örneğin:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
-Bu dizeyi bir MFC `CFileDialog` nesnesine geçirirseniz, ' &#124; ' varsayılan ayırıcısını kullanın. Bu dizeyi ortak bir **Dosya Aç** iletişim kutusuna geçirirseniz ' \ 0 ' null ayırıcısını kullanın.
+Bu dizeyi bir MFC nesnesine geçirirseniz, ' &#124; ' varsayılan ayırıcısını kullanın `CFileDialog` . Bu dizeyi ortak bir **Dosya Aç** iletişim kutusuna geçirirseniz ' \ 0 ' null ayırıcısını kullanın.
 
-## <a name="cimagegetmaxcolortableentries"></a><a name="getmaxcolortableentries"></a>CImage:: GetMaxColorTableEntries
+## <a name="cimagegetmaxcolortableentries"></a><a name="getmaxcolortableentries"></a> CImage:: GetMaxColorTableEntries
 
 Renk tablosundaki en fazla girdi sayısını alır.
 
@@ -878,7 +876,7 @@ Renk tablosundaki girdi sayısı.
 
 Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler.
 
-## <a name="cimagegetpitch"></a><a name="getpitch"></a>CImage:: Getsıklık
+## <a name="cimagegetpitch"></a><a name="getpitch"></a> CImage:: Getsıklık
 
 Bir görüntünün perdesini alır.
 
@@ -894,12 +892,12 @@ Görüntünün sıklığı. Dönüş değeri negatifse, bit eşlem bir alt DIB v
 
 Sıklık, bir bit eşlem çizgisinin başlangıcını ve sonraki bit eşlem çizgisinin başlangıcını temsil eden iki bellek adresi arasındaki uzaklığın bayt cinsinden uzaklığı. Sıklık bayt cinsinden ölçüldüğü için bir görüntünün sıklığı piksel biçimini belirlemenize yardımcı olur. Sıklık, bit eşlem için ayrılan ek belleği da içerebilir.
 
-Bir `GetPitch` görüntünün tek tek piksellerini bulmak Için [GetBits](#getbits) ile kullanın.
+`GetPitch`Bir görüntünün tek tek piksellerini bulmak Için [GetBits](#getbits) ile kullanın.
 
 > [!NOTE]
 > Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler.
 
-## <a name="cimagegetpixel"></a><a name="getpixel"></a>CImage:: GetPixel
+## <a name="cimagegetpixel"></a><a name="getpixel"></a> CImage:: GetPixel
 
 *X* ve *y*tarafından belirtilen konumdaki pikselin rengini alır.
 
@@ -909,7 +907,7 @@ COLORREF GetPixel(int x, int y) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Pikselin x koordinatı.
 
 *Iz*<br/>
@@ -919,7 +917,7 @@ Pikselin y koordinatı.
 
 Pikselin kırmızı, yeşil, mavi (RGB) değeri. Piksel geçerli kırpma bölgesinin dışındaysa, dönüş değeri CLR_INVALID.
 
-## <a name="cimagegetpixeladdress"></a><a name="getpixeladdress"></a>CImage:: Getpikseleladdress
+## <a name="cimagegetpixeladdress"></a><a name="getpixeladdress"></a> CImage:: Getpikseleladdress
 
 Bir pikselin tam adresini alır.
 
@@ -929,7 +927,7 @@ void* GetPixelAddress(int x, int y) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Pikselin x koordinatı.
 
 *Iz*<br/>
@@ -944,7 +942,7 @@ Piksel başına 8 bitten az olan biçimler için, bu yöntem, pikseli içeren ba
 > [!NOTE]
 > Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler.
 
-## <a name="cimagegettransparentcolor"></a><a name="gettransparentcolor"></a>CImage:: GetTransparentColor
+## <a name="cimagegettransparentcolor"></a><a name="gettransparentcolor"></a> CImage:: GetTransparentColor
 
 Renk paletindeki saydam rengin dizinli konumunu alır.
 
@@ -956,7 +954,7 @@ LONG GetTransparentColor() const throw();
 
 Saydam rengin dizini.
 
-## <a name="cimagegetwidth"></a><a name="getwidth"></a>CImage:: GetWidth
+## <a name="cimagegetwidth"></a><a name="getwidth"></a> CImage:: GetWidth
 
 Resmin piksel cinsinden genişliğini alır.
 
@@ -968,7 +966,7 @@ int GetWidth() const throw();
 
 Bit eşlemin piksel cinsinden genişliği.
 
-## <a name="cimageisdibsection"></a><a name="isdibsection"></a>CImage:: IsDibSection
+## <a name="cimageisdibsection"></a><a name="isdibsection"></a> CImage:: IsDibSection
 
 Eklenen bit eşlemin bir DIB bölümü olup olmadığını belirler.
 
@@ -982,7 +980,7 @@ Ekli bit eşlem bir DIB bölümse, doğru. Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem bir DIB bölümü değilse, yalnızca DIB bölümü bit eşlemlerini destekleyen aşağıdaki `CImage` yöntemleri kullanamazsınız:
+Bit eşlem bir DIB bölümü değilse, `CImage` yalnızca DIB bölümü bit eşlemlerini destekleyen aşağıdaki yöntemleri kullanamazsınız:
 
 - [GetBits](#getbits)
 
@@ -998,7 +996,7 @@ Bit eşlem bir DIB bölümü değilse, yalnızca DIB bölümü bit eşlemlerini 
 
 - [SetColorTable](#setcolortable)
 
-## <a name="cimageisindexed"></a><a name="isindexed"></a>CImage:: IsIndexed
+## <a name="cimageisindexed"></a><a name="isindexed"></a> CImage:: IsIndexed
 
 Bit eşlemin piksel bir renk paletine eşlenip eşlenmeyeceğini belirler.
 
@@ -1017,7 +1015,7 @@ Bu yöntem, yalnızca bit eşlem 8 bit (256 renk) veya daha az olduğunda TRUE d
 > [!NOTE]
 > Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler.
 
-## <a name="cimageisnull"></a><a name="isnull"></a>CImage:: IsNull
+## <a name="cimageisnull"></a><a name="isnull"></a> CImage:: IsNull
 
 Bir bit eşlemin Şu anda yüklü olup olmadığını belirler.
 
@@ -1029,7 +1027,7 @@ bool IsNull() const throw();
 
 Bu yöntem, bir bit eşlem Şu anda yüklü değilse TRUE değerini döndürür; Aksi halde yanlış.
 
-## <a name="cimageistransparencysupported"></a><a name="istransparencysupported"></a>CImage:: IsTransparencySupported
+## <a name="cimageistransparencysupported"></a><a name="istransparencysupported"></a> CImage:: IsTransparencySupported
 
 Uygulamanın saydam bit eşlemleri destekleyip desteklemediğini gösterir.
 
@@ -1045,7 +1043,7 @@ Geçerli platform saydamlığı destekliyorsa sıfır dışı. Aksi takdirde 0.
 
 Dönüş değeri sıfır değilse ve saydamlık destekleniyorsa, bir [Alfablend](#alphablend), [TransparentBlt](#transparentblt)veya [Draw](#draw) çağrısı saydam renkleri işleymeyecektir.
 
-## <a name="cimageload"></a><a name="load"></a>CImage:: Load
+## <a name="cimageload"></a><a name="load"></a> CImage:: Load
 
 Bir görüntü yükler.
 
@@ -1072,7 +1070,7 @@ Standart HRESULT.
 
 Geçerli görüntü türleri BMP, GIF, JPEG, PNG ve TIFF ' dir.
 
-## <a name="cimageloadfromresource"></a><a name="loadfromresource"></a>CImage:: LoadFromResource
+## <a name="cimageloadfromresource"></a><a name="loadfromresource"></a> CImage:: LoadFromResource
 
 Bir BITMAP kaynağından bir görüntü yükler.
 
@@ -1101,7 +1099,7 @@ Yüklenecek kaynağın KIMLIĞI.
 
 Kaynak BIT eşlem türünde olmalıdır.
 
-## <a name="cimagemaskblt"></a><a name="maskblt"></a>CImage:: MaskBlt
+## <a name="cimagemaskblt"></a><a name="maskblt"></a> CImage:: MaskBlt
 
 Belirtilen maske ve raster işlemini kullanarak kaynak ve hedef bit eşlemlerin renk verilerini birleştirir.
 
@@ -1174,19 +1172,19 @@ Kaynak cihaz bağlamındaki renk bit eşlemiyle birlikte bulunan tek renkli mask
 *HbmMask* parametresi tarafından belirtilen maske bit eşlemi için dikey piksel boşluğu.
 
 *dwROP*<br/>
-Yöntemin kaynak ve hedef verilerin birleşimini denetlemek için kullandığı ön plan ve arka plan Üçlü tarama işlem kodlarını belirtir. Arka plan tarama işlem kodu, bu değerin yüksek sıralı sözcüğünün üst sıra baytında depolanır; ön plan tarama işlem kodu, bu değerin üst-sıra sözcüğünün alt sıra baytında depolanır; Bu değerin düşük sıralı sözcüğü yok sayılır ve sıfır olmalıdır. Bu yöntemin bağlamındaki ön plan ve arka plan hakkında bir tartışma için Windows SDK bakın `MaskBlt` . Ortak tarama işlemi kodlarının listesi için Windows SDK bakın `BitBlt` .
+Yöntemin kaynak ve hedef verilerin birleşimini denetlemek için kullandığı ön plan ve arka plan Üçlü tarama işlem kodlarını belirtir. Arka plan tarama işlem kodu, bu değerin yüksek sıralı sözcüğünün üst sıra baytında depolanır; ön plan tarama işlem kodu, bu değerin üst-sıra sözcüğünün alt sıra baytında depolanır; Bu değerin düşük sıralı sözcüğü yok sayılır ve sıfır olmalıdır. Bu yöntemin bağlamındaki ön plan ve arka plan hakkında bir tartışma için `MaskBlt` Windows SDK bakın. Ortak tarama işlemi kodlarının listesi için `BitBlt` Windows SDK bakın.
 
 *rectDest*<br/>
-Hedefi tanımlayan bir `RECT` yapıya başvuru.
+`RECT`Hedefi tanımlayan bir yapıya başvuru.
 
 *pointSrc*<br/>
-Kaynak `POINT` dikdörtgenin sol üst köşesini belirten bir yapı.
+`POINT`Kaynak dikdörtgenin sol üst köşesini belirten bir yapı.
 
 *pointMask*<br/>
-Maske `POINT` bit eşlemin sol üst köşesine işaret eden bir yapı.
+`POINT`Maske bit eşlemin sol üst köşesine işaret eden bir yapı.
 
 *pointDest*<br/>
-Mantıksal birimlerde hedef dikdörtgenin `POINT` sol üst köşesini tanımlayan bir yapıya başvuru.
+`POINT`Mantıksal birimlerde hedef dikdörtgenin sol üst köşesini tanımlayan bir yapıya başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1196,11 +1194,11 @@ Başarılı olursa sıfır dışı, aksi durumda 0.
 
 Bu yöntem yalnızca Windows NT, sürüm 4,0 ve üzeri için geçerlidir.
 
-## <a name="cimageoperator-hbitmap"></a><a name="operator_hbitmap"></a>CImage:: operator HBıX
+## <a name="cimageoperator-hbitmap"></a><a name="operator_hbitmap"></a> CImage:: operator HBıX
 
-`CImage` Nesnenin eklı Windows GDI işleyicisini almak için bu işleci kullanın. Bu işleç, bir HBITMAP nesnesinin doğrudan kullanımını destekleyen bir atama işleçtir.
+Nesnenin ekli Windows GDI işleyicisini almak için bu işleci kullanın `CImage` . Bu işleç, bir HBITMAP nesnesinin doğrudan kullanımını destekleyen bir atama işleçtir.
 
-## <a name="cimageplgblt"></a><a name="plgblt"></a>CImage::P lgBlt
+## <a name="cimageplgblt"></a><a name="plgblt"></a> CImage::P lgBlt
 
 Kaynak cihaz bağlamındaki bir dikdörtgenden bir hedef cihaz bağlamında paralelkenar içine bir bit blok aktarımı gerçekleştirir.
 
@@ -1274,7 +1272,7 @@ Başarılı olursa sıfır dışı, aksi durumda 0.
 
 Bu yöntem yalnızca Windows NT, sürüm 4,0 ve üzeri için geçerlidir. Daha ayrıntılı bilgi için Windows SDK [PlgBlt](/windows/win32/api/wingdi/nf-wingdi-plgblt) bölümüne bakın.
 
-## <a name="cimagereleasedc"></a><a name="releasedc"></a>CImage:: ReleaseDC
+## <a name="cimagereleasedc"></a><a name="releasedc"></a> CImage:: ReleaseDC
 
 Cihaz bağlamını serbest bırakır.
 
@@ -1284,9 +1282,9 @@ void ReleaseDC() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tek seferde bir cihaz bağlamına yalnızca bir bit eşlem seçilebildiğinden, her `ReleaseDC` [GetDC](#getdc)çağrısını çağırmanız gerekir.
+Tek seferde bir cihaz bağlamına yalnızca bir bit eşlem seçilebildiğinden, `ReleaseDC` her [GetDC](#getdc)çağrısını çağırmanız gerekir.
 
-## <a name="cimagereleasegdiplus"></a><a name="releasegdiplus"></a>CImage:: ReleaseGDIPlus
+## <a name="cimagereleasegdiplus"></a><a name="releasegdiplus"></a> CImage:: ReleaseGDIPlus
 
 GDI+ tarafından kullanılan kaynakları serbest bırakır.
 
@@ -1296,9 +1294,9 @@ void ReleaseGDIPlus() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, genel `CImage` bir nesne tarafından ayrılan kaynakları serbest bırakmak için çağrılmalıdır. Bkz. [CImage:: CImage](#cimage).
+Bu yöntem, genel bir nesne tarafından ayrılan kaynakları serbest bırakmak için çağrılmalıdır `CImage` . Bkz. [CImage:: CImage](#cimage).
 
-## <a name="cimagesave"></a><a name="save"></a>CImage:: Save
+## <a name="cimagesave"></a><a name="save"></a> CImage:: Save
 
 Bir görüntüyü diskte belirtilen akışa veya dosyaya kaydeder.
 
@@ -1323,13 +1321,13 @@ Görüntü için dosya adı işaretçisi.
 *guidFileType*<br/>
 Görüntünün kaydedileceği dosya türü. Aşağıdakilerden biri olabilir:
 
-- `ImageFormatBMP`Sıkıştırılmamış bir bit eşlem resmi.
+- `ImageFormatBMP` Sıkıştırılmamış bir bit eşlem resmi.
 
-- `ImageFormatPNG`Taşınabilir Ağ Grafiği (PNG) sıkıştırılmış görüntü.
+- `ImageFormatPNG` Taşınabilir Ağ Grafiği (PNG) sıkıştırılmış görüntü.
 
-- `ImageFormatJPEG`JPEG sıkıştırılmış görüntü.
+- `ImageFormatJPEG` JPEG sıkıştırılmış görüntü.
 
-- `ImageFormatGIF`GIF sıkıştırılmış görüntü.
+- `ImageFormatGIF` GIF sıkıştırılmış görüntü.
 
 > [!NOTE]
 > Sabitlerin tamamen listesi için, bkz. Windows SDK **görüntü dosyası biçimi sabitleri** .
@@ -1342,7 +1340,7 @@ Standart HRESULT.
 
 Görüntüyü belirtilen bir ad ve tür kullanarak kaydetmek için bu işlevi çağırın. *GuidFileType* parametresi dahil edilmediğinden, görüntü biçimini belirlemekte dosya adının dosya uzantısı kullanılacaktır. Uzantı sağlanmazsa, görüntü BMP biçiminde kaydedilir.
 
-## <a name="cimagesetcolortable"></a><a name="setcolortable"></a>CImage:: SetColorTable
+## <a name="cimagesetcolortable"></a><a name="setcolortable"></a> CImage:: SetColorTable
 
 DIB bölümünün paletindeki bir dizi giriş için kırmızı, yeşil, mavi (RGB) renk değerlerini ayarlar.
 
@@ -1368,7 +1366,7 @@ Renk tablosu girdilerini ayarlamak için [RGBQUAD](/windows/win32/api/wingdi/ns-
 
 Bu yöntem yalnızca DIB bölümü bit eşlemlerini destekler.
 
-## <a name="cimagesetpixel"></a><a name="setpixel"></a>CImage:: SetPixel
+## <a name="cimagesetpixel"></a><a name="setpixel"></a> CImage:: SetPixel
 
 Bit eşlemdeki belirli bir konumdaki bir pikselin rengini ayarlar.
 
@@ -1378,20 +1376,20 @@ void SetPixel(int x, int y, COLORREF color) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Ayarlanacak pikselin yatay konumu.
 
 *Iz*<br/>
 Ayarlanacak pikselin dikey konumu.
 
-*color*<br/>
+*Renk*<br/>
 Pikselin ayarlandığı renk.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu yöntem, piksel koordinatları seçili kırpma bölgesinin dışında olursa başarısız olur.
 
-## <a name="cimagesetpixelindexed"></a><a name="setpixelindexed"></a>CImage:: Setpixelındexed
+## <a name="cimagesetpixelindexed"></a><a name="setpixelindexed"></a> CImage:: Setpixelındexed
 
 Piksel rengini renk paletindeki *ıindex* konumunda bulunan renge ayarlar.
 
@@ -1401,7 +1399,7 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Ayarlanacak pikselin yatay konumu.
 
 *Iz*<br/>
@@ -1410,7 +1408,7 @@ Ayarlanacak pikselin dikey konumu.
 *IIndex*<br/>
 Renk paletindeki bir rengin dizini.
 
-## <a name="cimagesetpixelrgb"></a><a name="setpixelrgb"></a>CImage:: SetPixelRGB
+## <a name="cimagesetpixelrgb"></a><a name="setpixelrgb"></a> CImage:: SetPixelRGB
 
 *X* ve *y* ile belirtilen konumlardaki piksel, kırmızı, YEŞIL, mavi (RGB) görüntüde *r*, *g*ve *b*tarafından gösterilen renklerle ayarlanır.
 
@@ -1425,7 +1423,7 @@ void SetPixelRGB(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Ayarlanacak pikselin yatay konumu.
 
 *Iz*<br/>
@@ -1444,7 +1442,7 @@ Mavi rengin yoğunluğu.
 
 Kırmızı, yeşil ve mavi parametrelerinin her biri 0 ile 255 arasında bir sayı ile temsil edilir. Üç parametreyi de sıfıra ayarlarsanız, elde edilen sonuç rengi siyah olur. Üç parametreyi de 255 olarak ayarlarsanız, birleştirilmiş sonuç rengi beyazdır.
 
-## <a name="cimagesettransparentcolor"></a><a name="settransparentcolor"></a>CImage:: SetTransparentColor
+## <a name="cimagesettransparentcolor"></a><a name="settransparentcolor"></a> CImage:: SetTransparentColor
 
 Belirli bir dizinli konumdaki rengi saydam olarak ayarlar.
 
@@ -1461,7 +1459,7 @@ Renk paletindeki, saydam olarak ayarlanacak olan dizin. -1 ise, hiçbir renk say
 
 Daha önce saydam olarak ayarlanmış rengin dizini.
 
-## <a name="cimagestretchblt"></a><a name="stretchblt"></a>CImage:: uzatılabilir blt
+## <a name="cimagestretchblt"></a><a name="stretchblt"></a> CImage:: uzatılabilir blt
 
 Kaynak cihaz bağlamından bir bit eşlemi Bu geçerli cihaz bağlamına kopyalar.
 
@@ -1534,7 +1532,7 @@ Kaynak dikdörtgenin mantıksal birimlerindeki genişliği.
 Kaynak dikdörtgenin mantıksal birimleri cinsinden yüksekliği.
 
 *rectSrc*<br/>
-Kaynağı tanımlayarak bir `RECT` yapıya başvuru.
+`RECT`Kaynağı tanımlayarak bir yapıya başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1544,7 +1542,7 @@ Başarılı olursa sıfır dışı, aksi durumda 0.
 
 Daha fazla bilgi için Windows SDK [için bkz.](/windows/win32/api/wingdi/nf-wingdi-stretchblt) .
 
-## <a name="cimagetransparentblt"></a><a name="transparentblt"></a>CImage:: TransparentBlt
+## <a name="cimagetransparentblt"></a><a name="transparentblt"></a> CImage:: TransparentBlt
 
 Kaynak cihaz bağlamından bir bit eşlemi Bu geçerli cihaz bağlamına kopyalar.
 
@@ -1617,7 +1615,7 @@ Kaynak dikdörtgenin mantıksal birimlerindeki genişliği.
 Kaynak dikdörtgenin mantıksal birimleri cinsinden yüksekliği.
 
 *rectSrc*<br/>
-Kaynağı tanımlayarak bir `RECT` yapıya başvuru.
+`RECT`Kaynağı tanımlayarak bir yapıya başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1625,7 +1623,7 @@ Başarılı olursa TRUE, aksi durumda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`TransparentBlt`piksel başına 4 bit ve piksel başına 8 bit olan kaynak bit eşlemler için desteklenir. Saydamlığı olan 32 bitlik bit eşlemler belirtmek için [CImage:: harflerden Blend](#alphablend) kullanın.
+`TransparentBlt` piksel başına 4 bit ve piksel başına 8 bit olan kaynak bit eşlemler için desteklenir. Saydamlığı olan 32 bitlik bit eşlemler belirtmek için [CImage:: harflerden Blend](#alphablend) kullanın.
 
 ### <a name="example"></a>Örnek
 

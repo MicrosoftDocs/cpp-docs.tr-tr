@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], deprecated
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-ms.openlocfilehash: 243c75f4726927c54989c33c1738e38938aa5f64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 44cb33bae43b32b12dda95423aec5484f61aa596
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221685"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683422"
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
 
@@ -28,7 +28,7 @@ Aşağıda belirtilen özel durumlarla birlikte, **`deprecated`** bildirim [kull
 
 Derleyici kullanım dışı bir tanımlayıcının veya standart özniteliğin kullanımıyla karşılaşırsa [`[[deprecated]]`](attributes.md) , bir [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) uyarısı oluşturulur.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek, işlevlerin kullanım dışı olarak işaretlenme ve kullanım dışı işlevin kullanıldığı zaman derleme zamanında görüntülenecek bir iletinin nasıl belirtilmeyeceği gösterilmektedir.
 
@@ -48,8 +48,6 @@ int main() {
    func3(1);   // C4996
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnekte, sınıfların kullanım dışı olarak işaretlenme ve kullanım dışı bırakılan sınıf kullanıldığında derleme zamanında görüntülenecek bir iletinin nasıl belirtilmeyeceği gösterilmektedir.
 

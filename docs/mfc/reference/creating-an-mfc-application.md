@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: 115ca6b4ab32482707cffd08ef575c93b2f3bfa9
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7e7435a8538c04867a810e525e053109a7abc04d
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040099"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683462"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 
@@ -42,7 +42,7 @@ MFC uygulaması oluşturmanın en kolay yolu MFC Uygulama Sihirbazı 'Nı kullan
 
 Daha fazla bilgi için bkz. [form tabanlı MFC uygulaması oluşturma](creating-a-forms-based-mfc-application.md).
 
-![Visual Studio 2019 MFC Uygulama Sihirbazı](media/mfc-app-wizard.png)
+![Visual Studios 2019 ' de MFC Uygulama Sihirbazı ekran görüntüsü.](media/mfc-app-wizard.png)
 
 ## <a name="to-create-an-mfc-console-application"></a>MFC konsol uygulaması oluşturmak için
 
@@ -53,7 +53,7 @@ MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde 
 1. Proje adını gereken şekilde değiştirin ve ardından **İleri** ' ye basarak **Windows Masaüstü Sihirbazı 'nı**açın.
 1. **MFC üstbilgileri** kutusunu işaretleyin ve diğer değerleri gerektiği gibi ayarlayıp **son**' a basın.
 
-![Visual Studio 2019 Windows Masaüstü projesi iletişim kutusu](media/windows-desktop-wizard.png)
+![Visual Studios 2019 ' de Windows Masaüstü Sihirbazı ekran görüntüsü.](media/windows-desktop-wizard.png)
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde 
 
 Daha fazla bilgi için bkz. [form tabanlı MFC uygulaması oluşturma](creating-a-forms-based-mfc-application.md).
 
-![Visual Studio 2017 MFC Uygulama Sihirbazı](media/mfc-app-wizard.png)
+![Visual Studios 2017 ' de MFC Uygulama Sihirbazı ekran görüntüsü.](media/mfc-app-wizard.png)
 
 ## <a name="to-create-an-mfc-console-application"></a>MFC konsol uygulaması oluşturmak için
 
@@ -80,7 +80,7 @@ MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde 
 1. Proje adını gereken şekilde değiştirin ve sonra **Windows Masaüstü Sihirbazı 'nı**açmak için **Tamam** ' a basın.
 1. **MFC üstbilgileri** kutusunu işaretleyin ve diğer değerleri gerektiği gibi ayarlayıp **son**' a basın.
 
-![Visual Studio 2017 Windows Masaüstü projesi iletişim kutusu](media/windows-desktop-wizard-2017.png)
+![Visual Studios 2017 ' de Windows Masaüstü Sihirbazı ekran görüntüsü.](media/windows-desktop-wizard-2017.png)
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ MFC konsol uygulaması MFC kitaplıklarını kullanan ancak konsol penceresinde 
 
 Daha fazla bilgi için bkz. [form tabanlı MFC uygulaması oluşturma](creating-a-forms-based-mfc-application.md).
 
-![Visual Studio 2015 MFC Uygulama Sihirbazı](media/mfc-app-wizard-2015.png)
+![Visual Studios 2015 ' de MFC Uygulama Sihirbazı ekran görüntüsü.](media/mfc-app-wizard-2015.png)
 
 ## <a name="to-create-an-mfc-console-application"></a>MFC konsol uygulaması oluşturmak için
 

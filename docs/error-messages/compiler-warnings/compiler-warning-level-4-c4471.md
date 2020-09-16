@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4471
 ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
-ms.openlocfilehash: b107b25714dd3333c3adcb8c83bf56775bf91823
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5b8c3ef419a4c6eaf9a674827cd5545a1f1b2bfe
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228758"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685508"
 ---
 # <a name="compiler-warning-level-4-c4471"></a>Derleyici Uyarısı (düzey 4) C4471
 
@@ -20,6 +20,8 @@ ms.locfileid: "87228758"
 Temel alınan tür için tanımlayıcı olmadan kapsamlı olmayan numaralandırmanın ileri bir bildirimi bulundu. Varsayılan olarak Visual C++, **`int`** bir numaralandırma için temeldeki tür olarak varsayılır. Bu, sabit listesi tanımında farklı bir tür kullanılırsa, örneğin, farklı bir açık tür belirtilmişse veya farklı bir tür bir başlatıcı tarafından örtük olarak ayarlandıysa soruna neden olabilir. Ayrıca taşınabilirlik sorunlarınız da olabilir; diğer derleyiciler, **`int`** numaralandırmanın temel alınan türüdür.
 
 Bu uyarı varsayılan olarak kapalıdır; komut satırında etkinleştirmek için/Duvarveya/w*N*4471 kullanabilirsiniz veya kaynak dosyanızda #pragma [Uyarı](../../preprocessor/warning.md) kullanabilirsiniz.
+
+## <a name="examples"></a>Örnekler
 
 Bazı durumlarda bu uyarı, smerak ediyor. Bir numaralandırma için ileri bildirim, tanımdan sonra görünürse, bu uyarı harekete çıkabilir. Örneğin, bu kod C4471 neden olabilir, ancak şu şekilde geçerlidir:
 
@@ -31,8 +33,6 @@ enum Example;    // Spurious C4471
 // ...
 ```
 
-## <a name="example"></a>Örnek
-
 Genel olarak, ileri bildirim yerine kapsamlı olmayan numaralandırma için tam tanımı kullanmak güvenlidir. Tanımı bir başlık dosyasına yerleştirebilir ve buna başvuran kaynak dosyalara dahil edebilirsiniz. Bu, C++ 98 ve üzeri için yazılmış kodda kullanılır. Bu çözümü taşınabilirlik ve bakım kolaylığı için öneririz.
 
 ```cpp
@@ -43,8 +43,6 @@ enum Example;    // C4471
 // enum Example { item = 0x80000000UL };
 // ...
 ```
-
-## <a name="example"></a>Örnek
 
 C++ 11 ' de, kapsamlı olmayan bir numaralandırmaya ve ileri bildirimine açık bir tür ekleyebilirsiniz. Bu çözümü yalnızca karmaşık üstbilgi ekleme mantığı, bir iletme bildirimi yerine tanımın kullanılmasını engelliyorsa önerilir. Bu çözüm bir bakım sorununa yol açabilir: sabit listesi tanımı için kullanılan temel türü değiştirirseniz, aynı zamanda tüm ileriye doğru bildirimleri de değiştirmeniz gerekir veya kodunuzda sessiz hatalara sahip olabilirsiniz. Bu sorunu en aza indirmek için ileri bildirimini bir üstbilgi dosyasına koyabilirsiniz.
 
@@ -67,8 +65,6 @@ enum Example : unsigned { item = 0x80000000 }; // explicit type
 ```
 
 Bir numaralandırma için açık bir tür belirtirseniz, varsayılan olarak açık olan uyarı [C4369](compiler-warning-level-1-C4369.md)de etkinleştirmenizi öneririz. Bu, bir numaralandırma öğesinin açıkça belirtilen türden farklı türde olması gereken durumları tanımlar.
-
-## <a name="example"></a>Örnek
 
 C++ 11 ' deki yeni bir özellik olan kapsamlı bir sabit listesi kullanmak için kodunuzu değiştirebilirsiniz. Hem tanım hem de numaralandırma türünü kullanan istemci kodları kapsamlı bir sabit listesi kullanacak şekilde değiştirilmelidir. Tanımlı numaralandırma öğelerinin adları, numaralandırmanın kapsamıyla sınırlı olduğu için, ad alanı kirliliğine sahip sorunlarınız varsa kapsamlı bir sabit listesi kullanmanızı öneririz. Kapsamlı bir numaralandırmanın başka bir özelliği, üyelerinin örtük olarak başka bir integral veya numaralandırma türüne dönüştürülemeymesidir ve bu da hafif hataların kaynağı olabilir.
 

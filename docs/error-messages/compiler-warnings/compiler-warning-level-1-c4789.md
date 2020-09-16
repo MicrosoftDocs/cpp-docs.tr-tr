@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4789
 ms.assetid: 5800c301-5afb-4af0-85c1-ceb54d775234
-ms.openlocfilehash: 36278615631d017db1d1c2fc4eecf8c1612892de
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 1e089c45598a53ff337e389feb2a6983a2997041
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518406"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684631"
 ---
 # <a name="compiler-warning-level-1-c4789"></a>Derleyici Uyarısı (düzey 1) C4789
 
@@ -33,7 +33,7 @@ Kopya, bu CRT işlevlerinden birinin iç biçimini kullanıyorsa uyarı oluşur:
 
 Ayrıca, bir parametreyi daha büyük bir veri türüne aktardığınızda ve sonra lvalue başvurusundan bir kopya ataması yaptığınızda da uyarı görüntülenir.
 
-Visual C++ , hiçbir şekilde çalıştırılmamış bir kod yolu için bu uyarıyı oluşturabilir. Aşağıdaki örnekte gösterildiği gibi `#pragma`kullanarak uyarıyı geçici olarak devre dışı bırakabilirsiniz:
+Visual C++, hiçbir şekilde çalıştırılmamış bir kod yolu için bu uyarıyı oluşturabilir. Aşağıdaki örnekte gösterildiği gibi, kullanarak uyarıyı geçici olarak devre dışı bırakabilirsiniz `#pragma` :
 
 ```cpp
 #pragma warning( push )
@@ -42,9 +42,9 @@ Visual C++ , hiçbir şekilde çalıştırılmamış bir kod yolu için bu uyar�
 #pragma warning( pop )
 ```
 
-Bu deyim, görselin C++ belirli bir kod bloğu için uyarı oluşturulmasını önler. `#pragma warning(push)`, `#pragma warning(disable: 4789)` değiştirmeden önce mevcut durumu korur. `#pragma warning(pop)`, gönderilen durumu geri yükler ve `#pragma warning(disable:4789)`etkilerini ortadan kaldırır. C++ Önişlemci yönergesi `#pragma`hakkında daha fazla bilgi için bkz. [Warning](../../preprocessor/warning.md) and [pragma yönergeleri ve __pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+Bu deyim, bu kodun belirli bir kod bloğu için uyarı oluşturulmasını Visual C++ korur. , `#pragma warning(push)` Değişiklikleri değiştirmeden önce mevcut durumu korur `#pragma warning(disable: 4789)` . , `#pragma warning(pop)` Gönderilen durumu geri yükler ve etkilerini ortadan kaldırır `#pragma warning(disable:4789)` . C++ Önişlemci yönergesi hakkında daha fazla bilgi için `#pragma` bkz. [Warning](../../preprocessor/warning.md) and [pragma yönergeleri ve __pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C4789 oluşturur.
 
@@ -67,8 +67,6 @@ int main()
     memcpy(&c, &w, sizeof(wchar_t));
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek ayrıca C4789 oluşturur.
 

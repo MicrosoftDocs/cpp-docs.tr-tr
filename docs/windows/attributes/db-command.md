@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-ms.openlocfilehash: d9ee1ed1bede6a5deaeae0be3783d6abbd05a0d9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 868ff862cc41543c8ebc7880a5d1a9a7e6b103f3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831378"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684592"
 ---
 # <a name="db_command"></a>db_command
 
@@ -123,7 +123,7 @@ Varsayılan değer 1 ' dir ve tek satır getirmeyi belirtir (satır kümesi [CRo
 
 Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Bu örnek, durum sütununun ' CA ' ile eşleştiği bir tablonun ilk ve son adlarını seçen bir komutu tanımlar. **db_command** , üzerinde [OpenAll ve CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)gibi sihirbaz tarafından üretilen işlevleri ve MoveNext gibi üye işlevlerini çağırabilmeniz için bir satır kümesi oluşturup okur `CRowset` . [MoveNext](../../data/oledb/crowset-movenext.md)
 
@@ -163,8 +163,6 @@ struct CAuthors {
 };
 ```
 
-## <a name="example"></a>Örnek
-
 ```cpp
 // db_command.cpp
 // compile with: /c
@@ -192,8 +190,6 @@ int main(int argc, _TCHAR* argv[]) {
    CoUninitialize();
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Bu örnek `db_source` , bir veri kaynağı sınıfında `CMySource` ve `db_command` komut sınıflarında `CCommand1` ve `CCommand2` ' de kullanılır.
 
@@ -241,7 +237,7 @@ int main() {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
-|**Tekrarlanabilir**|Hayır|
+|**Tekrarlanabilir**|No|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 
