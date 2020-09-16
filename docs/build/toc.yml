@@ -583,6 +583,8 @@
                   href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
                 - name: /H (Dış adların uzunluğunu kısıtla)
                   href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /headerUnit (Üst bilgi birimi IFC’yi kullan)
+                  href: ../build/reference/headerunit.md
                 - name: /HELP (Derleyici komut satırı yardımı)
                   href: ../build/reference/help-compiler-command-line-help.md
                 - name: /homeparams (Kayıt parametrelerini yığına kopyala)
@@ -603,6 +605,10 @@
                   href: ../build/reference/ln-create-msil-module.md
                 - name: '/MD, /MT, /LD (Çalışma zamanı kitaplığını kullan)'
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
+                - name: '/module:exportHeader (Üst bilgi birimleri oluştur)'
+                  href: ../build/reference/module-exportheader.md
+                - name: '/module:reference (Adlandırılmış modül IFC’yi kullan)'
+                  href: ../build/reference/module-reference.md
                 - name: /MP (Birden çok süreçle derleme)
                   href: ../build/reference/mp-build-with-multiple-processes.md
                 - name: /nologo (Başlangıç başlığını gösterme) (C/C++)
@@ -675,6 +681,8 @@
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: '/Tc, /Tp, /TC, /TP (Kaynak dosya türünü belirt)'
                   href: ../build/reference/tc-tp-tc-tp-specify-source-file-type.md
+                - name: /translateInclude (Dahil etme yönergelerini içeri aktarma yönergelerine çevir)
+                  href: ../build/reference/translateinclude.md
                 - name: '/U, /u (Simge tanımlarını kaldır)'
                   href: ../build/reference/u-u-undefine-symbols.md
                 - name: /utf-8 (Kaynak ve yürütülebilir karakter kümelerini UTF-8 olarak ayarla)
