@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2440
 ms.assetid: 36e6676c-f04f-4715-8ba1-f096c4bf3b44
-ms.openlocfilehash: 75b2ba62182a33137b433c836b4acf7c9e1fc231
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 74c5032338b3f4cf30bdb75bdf070cee7b67ce58
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87207985"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742118"
 ---
 # <a name="compiler-error-c2440"></a>Derleyici hatası C2440
 
@@ -19,9 +19,11 @@ ms.locfileid: "87207985"
 
 Derleyici öğesinden `type1` öğesine atanamaz `type2` .
 
-## <a name="example"></a>Örnek
+C2440 **`char*`** `wchar_t*` , derleyici uyumluluk seçeneği [/Zc: strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) ayarlandığında, C++ kodunda bir dize sabiti kullanarak const olmayan bir (veya) başlatmaya çalıştığınızda olabilir. C 'de, dize sabit değerinin türü dizidir **`char`** , ancak C++ ' da dizidir `const char` .
 
-C2440 **`char*`** `wchar_t*` , derleyici uyumluluk seçeneği [/Zc: strictStrings](../../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) ayarlandığında, C++ kodunda bir dize sabiti kullanarak const olmayan bir (veya) başlatmaya çalıştığınızda olabilir. C 'de, dize sabit değerinin türü dizidir **`char`** , ancak C++ ' da dizidir `const char` . Bu örnek C2440 oluşturur:
+## <a name="examples"></a>Örnekler
+
+Bu örnek C2440 oluşturur:
 
 ```cpp
 // C2440s.cpp
@@ -37,8 +39,6 @@ int main() {
    const char* s2 = "tests"; // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 C2440, bir işaretçiyi bir üyeye void * öğesine dönüştürmeye çalıştığınızda da oluşabilir. Sonraki örnek C2440 oluşturur:
 
@@ -61,8 +61,6 @@ public:
 };
 ```
 
-## <a name="example"></a>Örnek
-
 C2440, yalnızca iletme yapılmış ancak tanımlanmamış bir türden atama yapmaya çalıştığınızda da oluşabilir. Bu örnek C2440 oluşturur:
 
 ```cpp
@@ -75,8 +73,6 @@ Base * func(Derived * d) {
     return static_cast<Base *>(d); // error C2440: 'static_cast' : cannot convert from 'Derived *' to 'Base *'
 }
 ```
-
-## <a name="example"></a>Örnek
 
 15. satırlardaki C2440 hataları ve sonraki örnek 16, iletiyle nitelenir `Incompatible calling conventions for UDT return value` . *Udt* , sınıf, yapı veya birleşim gibi Kullanıcı tanımlı bir türdür. Bu tür uyumsuzluk hataları, bir iletme bildiriminin dönüş türünde belirtilen bir UDT çağırma kuralı, UDT 'nin gerçek çağırma kuralıyla ve bir işlev işaretçisi dahil edildiğinde çakışırsa oluşur.
 
@@ -126,8 +122,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 C2440, iç işaretçiye sıfır atarsanız da gerçekleşebilir:
 
 ```cpp
@@ -140,8 +134,6 @@ int main() {
    ipi = nullptr;   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 C2440, Kullanıcı tanımlı dönüştürmenin yanlış kullanımı için de oluşabilir. Örneğin, bir dönüştürme işleci olarak tanımlandığında **`explicit`** , derleyici onu örtük bir dönüşümde kullanamaz. Kullanıcı tanımlı dönüştürmeler hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı dönüşümler (C++/CLI)](../../dotnet/user-defined-conversions-cpp-cli.md)). Bu örnek C2440 oluşturur:
 
@@ -165,8 +157,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 C2440, türü bir olan Visual C++ dizisinin bir örneğini oluşturmayı denerseniz da oluşabilir <xref:System.Array> .  Daha fazla bilgi için bkz. [diziler](../../extensions/arrays-cpp-component-extensions.md).  Sonraki örnek C2440 oluşturur:
 
 ```cpp
@@ -180,8 +170,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 C2440, öznitelikler özelliğindeki değişiklikler nedeniyle de oluşabilir.  Aşağıdaki örnek C2440 oluşturur.
 
 ```cpp
@@ -191,8 +179,6 @@ C2440, öznitelikler özelliğindeki değişiklikler nedeniyle de oluşabilir.  
 // try the following line instead
 // [ module(name="PropDemoLib", version="1.0") ];
 ```
-
-## <a name="example"></a>Örnek
 
 Microsoft C++ derleyicisi artık **/clr** programlama kullanan kaynak kodu derlendiğinde [const_cast işlecinin](../../cpp/const-cast-operator.md) , dönüştürmeyi açmasına izin vermez.
 
@@ -212,8 +198,6 @@ int main() {
    d = dynamic_cast<Derived^>(b);   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 C2440, Visual Studio 2015 güncelleştirme 3 ' te derleyicinin uyumluluk değişiklikleri nedeniyle oluşabilir. Daha önce, derleyici bir işlem için bir şablon eşleşmesi tanımlarken aynı tür olarak belirli farklı ifadeleri yanlış olarak ele ıyordu **`static_cast`** . Artık derleyici, türleri doğru şekilde ayırır ve önceki davranışa bağlı olan kod **`static_cast`** bozulur. Bu sorunu onarmak için, şablon bağımsız değişkenini şablon parametre türüyle eşleşecek şekilde değiştirin ya da **`reinterpret_cast`** ya da C stili bir tür dönüştürme kullanın.
 
@@ -239,8 +223,6 @@ int main()
 
 This error can appear in ATL code that uses the SINK_ENTRY_INFO macro defined in <atlcom.h>.
 ```
-
-## <a name="example"></a>Örnek
 
 ### <a name="copy-list-initialization"></a>Kopya listesini başlatma
 
@@ -278,8 +260,6 @@ int main()
     const A& a2{ 1 };
 }
 ```
-
-## <a name="example"></a>Örnek
 
 ### <a name="cv-qualifiers-in-class-construction"></a>sınıf yapııncv niteleyicileri
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-ms.openlocfilehash: 6158bffceda7ac83b79b6ff8bd7fce0378759819
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eeea85872422edcf421ba2fe254c8f03c093fe3c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837469"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743457"
 ---
 # <a name="ddx_dhtml-helper-macros"></a>DDX_DHtml Yardımcısı makroları
 
@@ -64,10 +64,10 @@ DDX_DHtml_Anchor_Href(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro, DISPID_IHTMLANCHORELEMENT_HREF dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
@@ -90,10 +90,10 @@ DDX_DHtml_Anchor_Target(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro, DISPID_IHTMLANCHORELEMENT_TARGET dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
@@ -116,10 +116,10 @@ DDX_DHtml_ElementInnerHtml(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro, DISPID_IHTMLELEMENT_INNERHTML dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
@@ -142,10 +142,10 @@ DDX_DHtml_ElementInnerText(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro, DISPID_IHTMLELEMENT_INNERTEXT dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
@@ -168,10 +168,10 @@ DDX_DHtml_ElementValue(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer. CDHtmlDialog içindeki *değeri* gör [::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro yalnızca değer özelliği olan denetimlerde çalıştırıldığında başarılı olur. Değer özelliğine sahip denetimler, düzenleme kutuları, liste kutuları ve Birleşik giriş kutuları içerir.
 
@@ -196,10 +196,10 @@ DDX_DHtml_Frame_Src(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro, DISPID_IHTMLFRAMEBASE_SRC dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
@@ -222,10 +222,10 @@ DDX_DHtml_IFrame_Src(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bu makro, DISPID_IHTMLFRAMEBASE_SRC dağıtım KIMLIĞINI kullanarak [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) işlevini çağırır.
 
@@ -248,10 +248,10 @@ DDX_DHtml_Img_Src(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*l*<br/>
+*var*<br/>
 Takas edilmekte olan değer.
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
 Bir görüntü öğesi için SRC özelliğini almak üzere DDX_DHtml_Img_Src makrosunu kullanırken, Internet Explorer görüntü nesnesi görüntü kaynağı için tam kaçan URL 'YI döndürür. Örneğin, bir görüntü öğesinin SRC özelliğini "ilginç resim" dizesine ayarlamak için DDX_DHtml_Img_Src makrosunu kullanırsanız, Internet Explorer "res://d:\myapplication\myapp.exe/some%20ıntersting%20picture" dizesini döndürür.
 

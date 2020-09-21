@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2099
 ms.assetid: 30e151ee-d458-4901-b0c0-d45054a913f5
-ms.openlocfilehash: e9fb7739111d13a585579455ed97cecaca3266e4
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 84070b36506a657dde5d2e7bd5594c2b7434d81d
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301944"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743418"
 ---
 # <a name="compiler-error-c2099"></a>Derleyici hatası C2099
 
@@ -19,7 +19,7 @@ Başlatıcı bir sabit değil
 
 Bu hata yalnızca C derleyicisi tarafından verilir ve yalnızca otomatik olmayan değişkenler için gerçekleşir.  Derleyici, programın başlangıcında otomatik olmayan değişkenleri başlatır ve birlikte başlatıldığı değerler sabit olmalıdır.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2099 oluşturur.
 
@@ -29,8 +29,6 @@ int j;
 int *p;
 j = *p;   // C2099 *p is not a constant
 ```
-
-## <a name="example"></a>Örnek
 
 C2099, kayan nokta duyarlık ortam ayarları (daha fazla bilgi için [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md) bakın), çalışma zamanına göre derlemeden farklı olabileceğinden, derleyici **/FP: Strict** altındaki bir ifadede sabit katlama gerçekleştiremediği için de oluşabilir.
 

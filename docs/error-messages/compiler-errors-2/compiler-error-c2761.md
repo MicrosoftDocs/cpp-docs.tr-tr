@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2761
 ms.assetid: 38c79a05-b56d-485b-820f-95e8c0cb926f
-ms.openlocfilehash: fbe2b3089d387d356073febf2b27bbb44b6be7e3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7493934879068109c582a85592f485c1d391e2de
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759509"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743392"
 ---
 # <a name="compiler-error-c2761"></a>Derleyici hatası C2761
 
@@ -19,7 +19,7 @@ ms.locfileid: "74759509"
 
 Bir üye işlevini yeniden bildiremezsiniz. Bunu tanımlayabilir ancak yeniden bildiremezsiniz.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2761 oluşturur.
 
@@ -33,8 +33,6 @@ class a {
 void a::a;     // C2761
 void a::test;  // C2761
 ```
-
-## <a name="example"></a>Örnek
 
 Bir sınıfın veya yapının statik olmayan üyeleri tanımlanamıyor.  Aşağıdaki örnek C2761 oluşturur.
 

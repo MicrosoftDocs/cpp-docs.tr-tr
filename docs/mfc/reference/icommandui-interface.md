@@ -1,5 +1,5 @@
 ---
-title: ICommandUI Arabirimi
+title: Iommanduı arabirimi
 ms.date: 09/07/2019
 f1_keywords:
 - ICommandUI
@@ -14,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: b75509beb7287fad5e51dc9d15fc3e47cacf6854
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0c185e873f526403e86cb5a80f6e0631f8654284
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751314"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743444"
 ---
-# <a name="icommandui-interface"></a>ICommandUI Arabirimi
+# <a name="icommandui-interface"></a>Iommanduı arabirimi
 
 Kullanıcı arabirimi komutlarını yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 interface class ICommandUI
@@ -35,120 +35,120 @@ interface class ICommandUI
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[icommandui__Check](#check)|Bu komutiçin kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
-|[ICommandUI::DevamROuting](#continuerouting)|Komut yönlendirme mekanizmasını, geçerli iletiyi işleyiciler zincirinden yönlendirmeye devam etmesini söyler.|
-|[ICommandUI::Etkin](#enabled)|Bu komut için kullanıcı arabirimi öğesini etkinleştirir veya devre dışı kılabilir.|
-|[ICommandUI::ID](#id)|`ICommandUI` Nesne tarafından temsil edilen kullanıcı arabirimi nesnesinin kimliğini alır.|
-|[ICommandUI::Dizin](#index)|Nesne tarafından temsil edilen kullanıcı arabirimi `ICommandUI` nesnesinin dizinini alır.|
-|[ICommandUI::Radyo](#radio)|Bu komutiçin kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
-|[ICommandUI::Metin](#text)|Bu komut için kullanıcı arabirim öğesinin metnini ayarlar.|
+|[icommandui__Check](#check)|Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
+|[Iommanduı:: Devamsallama](#continuerouting)|Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.|
+|[Iommanduı:: etkin](#enabled)|Bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır.|
+|[Iommanduı:: ID](#id)|Nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin KIMLIĞINI alır `ICommandUI` .|
+|[Iommanduı:: Index](#index)|Nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır `ICommandUI` .|
+|[Iommanduı:: Radio](#radio)|Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.|
+|[ICommandUI:: metin](#text)|Bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar.|
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu arabirim, kullanıcı arabirimi komutlarını yöneten yöntemler ve özellikler sağlar. `ICommandUI`.NET bileşenleriyle birlikte çalışan MFC `ICommandUI` uygulamaları için kullanılanlar dışında [CCmdUI Sınıfına](../../mfc/reference/ccmdui-class.md)benzer.
+Bu arabirim, Kullanıcı arabirimi komutlarını yöneten Yöntemler ve özellikler sağlar. `ICommandUI` , [CCmdUI sınıfına](../../mfc/reference/ccmdui-class.md)benzerdir, ancak `ICommandUI` .net BILEŞENLERIYLE birlikte çalışan MFC uygulamaları için kullanılır.
 
-`ICommandUI`[iCommandTarget](../../mfc/reference/icommandtarget-interface.md)türetilmiş sınıfta ON_UPDATE_COMMAND_UI bir işleyici içinde kullanılır. Bir uygulamanın kullanıcısı bir menüyü etkinleştirdiğinde (seçer veya tıklattığında), her menü öğesi etkin veya devre dışı bırakılmış olarak görüntülenir. Her menü komutunun hedefi, bir ON_UPDATE_COMMAND_UI işleyicisi uygulayarak bu bilgileri sağlar. Uygulamanızdaki komut kullanıcı arabirimi nesnelerinin her biri için, her işleyici için bir ileti eşlemi girişi ve işlev prototipi oluşturmak için [Sınıf Sihirbazı'nı](mfc-class-wizard.md) kullanın.
+`ICommandUI` , bir [ICommandText](../../mfc/reference/icommandtarget-interface.md)içinde türetilmiş bir sınıfta ON_UPDATE_COMMAND_UI işleyicisi içinde kullanılır. Bir uygulamanın kullanıcısı bir menüyü etkinleştirir (seçer veya tıklatır), her menü öğesi etkin veya devre dışı olarak görüntülenir. Her menü komutunun hedefi, bir ON_UPDATE_COMMAND_UI işleyicisi uygulayarak bu bilgileri sağlar. Uygulamanızdaki her bir komut Kullanıcı arabirimi nesnesi için, her işleyici için bir ileti eşleme girişi ve işlev prototipi oluşturmak üzere [sınıf Sihirbazı](mfc-class-wizard.md) ' nı kullanın.
 
-`ICommandUI` Arabirimin komut yönlendirmesinde nasıl kullanıldığı hakkında daha fazla bilgi için [bkz.](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
+Arabirimin komut yönlendirmesinde nasıl kullanıldığı hakkında daha fazla bilgi için `ICommandUI` bkz. [nasıl yapılır: komut yönlendirmesi ekleme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md).
 
-Windows Formlarını kullanma hakkında daha fazla bilgi [için](../../dotnet/using-a-windows-form-user-control-in-mfc.md)bkz.
+Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows formu Kullanıcı denetimi kullanma](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-Kullanıcı arabirimi komutlarının MFC'de nasıl yönetildiği hakkında daha fazla bilgi için [Bkz.](../../mfc/reference/ccmdui-class.md)
+Kullanıcı arabirimi komutlarının MFC 'de nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CCmdUI sınıfı](../../mfc/reference/ccmdui-class.md).
 
-## <a name="icommanduicheck"></a><a name="check"></a>ICommandUI::Kontrol Et
+## <a name="icommanduicheck"></a><a name="check"></a> ICommandUI:: Check
 
-Bu komutiçin kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
+Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
 
 ```
 property UICheckState Check;
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirim öğesini uygun denetim durumuna ayarlar. Denetimi aşağıdaki değerlere ayarlama:
+Bu özellik, bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar. Denetimi aşağıdaki değerlere ayarlayın:
 
-- 0 Çeki
-- 1 Kontrol edin
-- 2 Belirsiz ayarlayın
+- 0 işaretini kaldır
+- 1 denetim
+- 2 belirsiz ayarla
 
-## <a name="icommanduicontinuerouting"></a><a name="continuerouting"></a>ICommandUI::DevamROuting
+## <a name="icommanduicontinuerouting"></a><a name="continuerouting"></a> Iommanduı:: Devamsallama
 
-Geçerli iletiyi işleyiciler zincirinden yönlendirmeye devam etmesi için komut yönlendirme mekanizmasını söyler.
+Komut yönlendirme mekanizmasına, geçerli iletiyi işleyiciler zincirinin altına yönlendirmeye devam etmeyi söyler.
 
 ```cpp
 void ContinueRouting();
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu, FALSE döndüren bir ON_COMMAND_EX işleyicisi ile birlikte kullanılması gereken gelişmiş bir üye işlevdir. Daha fazla bilgi için Teknik Not TN006: İleti Haritaları'na bakın.
+Bu, FALSE döndüren bir ON_COMMAND_EX işleyicisiyle birlikte kullanılması gereken gelişmiş bir üye işlevdir. Daha fazla bilgi için bkz. Teknik NotTN006: Ileti haritaları.
 
-## <a name="icommanduienabled"></a><a name="enabled"></a>ICommandUI::Etkin
+## <a name="icommanduienabled"></a><a name="enabled"></a> Iommanduı:: etkin
 
-Bu komut için kullanıcı arabirimi öğesini etkinleştirir veya devre dışı kılabilir.
+Bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır.
 
 ```
 property bool Enabled;
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirimi öğesini etkinleştirer veya devre dışı kılabilir. Öğeyi etkinleştirmek için TRUE'ya, FALSE'nin devre dışı bırakmasını ayarlayın.
+Bu özellik, bu komut için Kullanıcı arabirimi öğesini etkinleştirilir veya devre dışı bırakır. Öğeyi etkinleştirmek için TRUE olarak ayarlayın, devre dışı bırakmak için FALSE.
 
-## <a name="icommanduiid"></a><a name="id"></a>ICommandUI::ID
+## <a name="icommanduiid"></a><a name="id"></a> Iommanduı:: ID
 
-ICommandUI nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin kimliğini alır.
+Iommandui nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin KIMLIĞINI alır.
 
 ```
 property unsigned int ID;
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, menü öğesinin, araç çubuğu düğmesinin veya ICommandUI nesnesi tarafından temsil edilen diğer kullanıcı arabirimi nesnesinin kimliğini (tutamacını) alır.
+Bu özellik, bir menü öğesi, araç çubuğu düğmesi veya ıcommandui nesnesi tarafından temsil edilen diğer kullanıcı arabirimi nesnesinin KIMLIĞINI (bir tanıtıcı) alır.
 
-## <a name="icommanduiindex"></a><a name="index"></a>ICommandUI::Dizin
+## <a name="icommanduiindex"></a><a name="index"></a> Iommanduı:: Index
 
-ICommandUI nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır.
+Iommandui nesnesi tarafından temsil edilen kullanıcı arabirimi nesnesinin dizinini alır.
 
 ```
 property unsigned int Index;
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, menü öğesinin, araç çubuğu düğmesinin veya ICommandUI nesnesi tarafından temsil edilen diğer kullanıcı arabirimi nesnesinin dizinin (tutamacını) alır.
+Bu özellik, bir menü öğesi, araç çubuğu düğmesi veya ıcommandui nesnesi tarafından temsil edilen diğer kullanıcı arabirimi nesnesinin dizinini (bir tanıtıcı) alır.
 
-## <a name="icommanduiradio"></a><a name="radio"></a>ICommandUI::Radyo
+## <a name="icommanduiradio"></a><a name="radio"></a> Iommanduı:: Radio
 
-Bu komutiçin kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
+Bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar.
 
 ```
 property bool Radio;
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirim öğesini uygun denetim durumuna ayarlar. Öğeyi etkinleştirmek için Radyo'yu TRUE olarak ayarlayın; aksi takdirde YANLIŞ.
+Bu özellik, bu komut için Kullanıcı arabirimi öğesini uygun denetim durumuna ayarlar. Öğeyi etkinleştirmek için radyoyu TRUE olarak ayarlayın; Aksi halde yanlış.
 
-## <a name="icommanduitext"></a><a name="text"></a>ICommandUI::Metin
+## <a name="icommanduitext"></a><a name="text"></a> ICommandUI:: metin
 
-Bu komut için kullanıcı arabirim öğesinin metnini ayarlar.
+Bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar.
 
 ```
 property String^ Text;
 ```
 
-## <a name="remarks"></a>Açıklamalar
+### <a name="remarks"></a>Açıklamalar
 
-Bu özellik, bu komut için kullanıcı arabirim öğesinin metnini ayarlar. Metin'i metin dize koluna ayarlayın.
+Bu özellik, bu komut için Kullanıcı arabirimi öğesinin metnini ayarlar. Metni bir metin dizesi tutamacı olarak ayarlayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxwinforms.h (montaj atlmfc\lib\mfcmifc80.dll tanımlanır)
+**Üstbilgi:** afxwinforms. h (derlemede tanımlanan atlmfc\lib\mfcmifc80.dll)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)
+[CCmdUI sınıfı](../../mfc/reference/ccmdui-class.md)

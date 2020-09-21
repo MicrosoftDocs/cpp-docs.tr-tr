@@ -1,9 +1,10 @@
 ---
 title: 'Bit düzeyinde özel OR işleci: ^'
 description: C++ standart dil özel veya işleç sözdizimi ve kullanımı.
-ms.date: 07/23/2020
+ms.date: 09/21/2020
 f1_keywords:
 - xor_cpp
+- ^
 helpviewer_keywords:
 - operators [C++], bitwise
 - exclusive OR operator
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - OR operator [C++], bitwise exclusive
 - operators [C++], logical
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
-ms.openlocfilehash: b76c3d84d9548a73084b254a4179d1f679c33626
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 4823c245ffca7032347e37c0c25c2963407733a7
+ms.sourcegitcommit: f656092eebbcb148ca4d3b7a6a8508eff8f7e85f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521167"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90836634"
 ---
 # <a name="bitwise-exclusive-or-operator-"></a>Bit düzeyinde özel OR işleci: ^
 
@@ -32,10 +33,11 @@ Bit düzeyinde dışlamalı OR işleci ( **`^`** ), ilk işleneninin her bir bit
 
 İşlecin her iki işleneni de İntegral türlerine sahip olmalıdır. [Standart dönüştürmelerde](standard-conversions.md) ele alınan Olağan aritmetik dönüştürmeler işlenenlere uygulanır.
 
+**`^`** C++/CLI ve c++/cx içindeki karakterin diğer kullanımı hakkında daha fazla bilgi için bkz. [Handle to Object işleci (^) (c++/CLI ve c++/cx)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md).
+
 ## <a name="operator-keyword-for-"></a>^ İçin işleç anahtar sözcüğü
 
-C++, **`xor`** için alternatif bir yazım biçimi belirler **`^`** . C 'de alternatif yazım, üst bilgide bir makro olarak sağlanır \<iso646.h> . C++ ' da, alternatif yazım bir anahtar sözcüktür; \<iso646.h>C++ eşdeğeri veya kullanımı \<ciso646> kullanım dışıdır. Microsoft C++ ' da, [`/permissive-`](../build/reference/permissive-standards-conformance.md) [`/Za`](../build/reference/za-ze-disable-language-extensions.md) alternatif yazımı etkinleştirmek için veya derleyici seçeneği gereklidir.
-
+C++, **`xor`** için alternatif bir yazım biçimi belirler **`^`** . C 'de alternatif yazım, üst bilgide bir makro olarak sağlanır \<iso646.h> . C++ ' da, alternatif yazım bir anahtar sözcüktür; \<iso646.h> C++ eşdeğeri veya kullanımı \<ciso646> kullanım dışıdır. Microsoft C++ ' da, [`/permissive-`](../build/reference/permissive-standards-conformance.md) [`/Za`](../build/reference/za-ze-disable-language-extensions.md) alternatif yazımı etkinleştirmek için veya derleyici seçeneği gereklidir.
 
 ## <a name="example"></a>Örnek
 

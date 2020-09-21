@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3104
 ms.assetid: b5648d47-e5d3-4b45-a3c0-f46e04eae731
-ms.openlocfilehash: b92a6eade137a1d319ec286afa08f8477ff029d8
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5f72af3d7149db7362df9fa23ac5ad6c058c552b
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755882"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743470"
 ---
 # <a name="compiler-error-c3104"></a>Derleyici hatası C3104
 
@@ -23,7 +23,7 @@ Daha fazla bilgi için bkz. [öznitelik parametre türleri](../../extensions/att
 
 Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir: yönetilen dizileri özel özniteliklere geçirirken, dizinin türü artık toplu başlatma listesinden anlaşılamaz. Derleyici artık, dizi türünün yanı sıra Başlatıcı listesini belirtmenizi gerektirir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3104 oluşturur.
 
@@ -43,8 +43,6 @@ public ref struct ABC : public Attribute {
 // [ABC( gcnew array<int> {1,2,3}, param = gcnew array<double>{2.71, 3.14})]
 ref struct AStruct{};
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3104 oluşturur.
 
