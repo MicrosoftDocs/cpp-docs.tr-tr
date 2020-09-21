@@ -6,20 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2036
 ms.assetid: 895821a9-65d1-44b5-bde1-dae827f3e486
-ms.openlocfilehash: df36dc5d6e399a0fc35b71e6d3a82ea77aeb5105
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 06d292224108434065dfdca2a75d38fd3bb0243c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302087"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742703"
 ---
 # <a name="compiler-error-c2036"></a>Derleyici hatası C2036
 
 ' tanımlayıcı ': Bilinmeyen boyut
 
-`identifier` bir işlemin belirlenmesi için veri nesnesinin boyutu gerekir.
+Üzerinde bir işlem, `identifier` belirlenemediği veri nesnesinin boyutunu gerektirir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2036 oluşturur.
 
@@ -35,8 +35,6 @@ int main() {
    pB++;   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C2036 oluşturur.
 

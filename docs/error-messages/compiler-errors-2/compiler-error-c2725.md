@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2725
 ms.assetid: 13cd5b1b-e906-4cd8-9b2b-510d587c665a
-ms.openlocfilehash: 5df5a94e32e3cb365166fc38c5df10c248138277
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b2e8c6a2d3368e2f7fc1277e3bf727848da50881
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756415"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90741406"
 ---
 # <a name="compiler-error-c2725"></a>Derleyici hatası C2725
 
@@ -19,7 +19,7 @@ ms.locfileid: "74756415"
 
 Yönetilen veya WinRT özel durumunun türü doğru değil.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2725 oluşturur ve nasıl düzeltileceğini gösterir.
 
@@ -39,8 +39,6 @@ int main() {
    throw r2;   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C2725 oluşturur ve nasıl düzeltileceğini gösterir.
 

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 00b73b9fb113066c6948c49ec7d2039748284800
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4903c18f981c87c418a6ab08595816ce22a7413c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837768"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742950"
 ---
 # <a name="platformarray-class"></a>Platform:: Array sınıfı
 
@@ -66,7 +66,7 @@ Derleyici seçeneği: **/ZW**
 
 Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 Array(unsigned int size);
@@ -92,7 +92,7 @@ Platform:: Array örnekleri oluşturma hakkında daha fazla bilgi için bkz. [Ar
 
 Belirtilen dizin konumundaki dizi öğesine bir başvuru alır.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 T& get(unsigned int index)  const;
@@ -100,7 +100,7 @@ T& get(unsigned int index)  const;
 
 #### <a name="parameters"></a>Parametreler
 
-*dizin*<br/>
+*indeks*<br/>
 Dizide bir öğe tanımlayan sıfır tabanlı dizin. En düşük dizin 0 ' dır ve en yüksek dizin, `size` [dizi oluşturucusunda](#ctor)parametresi tarafından belirtilen değerdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -111,7 +111,7 @@ Parametresi tarafından belirtilen dizi öğesi `index` .
 
 Geçerli diziye bir tanıtıcı alır.
 
-## <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property Array^ Value;

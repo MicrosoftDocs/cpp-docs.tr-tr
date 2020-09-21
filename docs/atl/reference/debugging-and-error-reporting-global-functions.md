@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-ms.openlocfilehash: b4af5dd3839672152c53c902b73c1ea51b7feb6b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 10aca6862f6989c126981a9f6437c61f1c07bdae
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835474"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742794"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel Işlevleri
 
@@ -195,7 +195,7 @@ ATL projeleri için, bir hata durumunda ATL tarafından kullanılmak üzere bu i
 
 [!code-cpp[NVC_ATL_Windowing#95](../../atl/codesnippet/cpp/debugging-and-error-reporting-global-functions_2.h)]
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atldef. h
 
@@ -217,7 +217,7 @@ Bir ATL projesinde _ATL_NO_EXCEPTIONS tanımlanmamışsa, işlev bir [CAtlExcept
 
 _ATL_NO_EXCEPTIONS tanımlanmışsa, işlev özel durum oluşturmak yerine bir onaylama hatasına neden olur.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atldef. h
 

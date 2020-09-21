@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2015
 ms.assetid: 8f40af0a-3a5a-4d6a-8ed7-125966e6bfed
-ms.openlocfilehash: 83b78336d74037b9f9f52da8327479f506db1ffc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5453009e1c2bd091ed3507f3c43bd7fcecd33abc
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751083"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743106"
 ---
 # <a name="compiler-error-c2015"></a>Derleyici hatası C2015
 
@@ -21,7 +21,7 @@ Bir karakter sabiti ikiden fazla karakter içeriyor. Sınır, standart karakter 
 
 \T gibi bir kaçış sırası, tek bir karaktere dönüştürülür.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2015 oluşturur:
 
@@ -32,8 +32,6 @@ Aşağıdaki örnek C2015 oluşturur:
 char test1 = 'error';   // C2015
 char test2 = 'e';   // OK
 ```
-
-## <a name="example"></a>Örnek
 
 C2015, bir Microsoft uzantısı kullanılırken de gerçekleşebilir, karakter sabitleri tamsayılara dönüştürülür.  Aşağıdaki örnek C2015 oluşturur:
 

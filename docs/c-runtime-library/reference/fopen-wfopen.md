@@ -38,12 +38,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: 2bf1a1001f661b1ba972e7a5e699276591dda08a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b7889009fe2de3c5256d6caf6cb5afa8792919c4
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216966"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743067"
 ---
 # <a name="fopen-_wfopen"></a>fopen, _wfopen
 
@@ -157,6 +157,7 @@ Ek davranışları belirtmek için aşağıdaki seçenekler *moda* eklenebilir.
 
 |*mod* değiştiricisi|Davranış|
 |-|-|
+| **x** | *Dosya adı* zaten varsa, işlevi başarısız olmaya zorlar. Yalnızca "w" veya "w +" belirticileriyle birlikte kullanılabilir. |
 | **,** | Bir **fflush** veya **_flushall** çağrılırsa, dosya arabelleği içeriğinin doğrudan diske yazılması için ilişkili *dosya adı* için COMMIT bayrağını etkinleştirin. |
 | **No** | İlişkili *dosya adı* için COMMIT bayrağını "No-COMMIT" olarak sıfırlayın. Bu varsayılan seçenektir. Ayrıca, programınızı COMMODE. OBJ ile bağlarsanız Genel tamamlama bayrağını da geçersiz kılar. Programınızı COMMODE ile açıkça bağmadığınız takdirde Genel tamamlama bayrağı varsayılan olarak "No-COMMIT" olur. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)). |
 | **N** | Dosyanın alt süreçler tarafından devralınamayacağını belirtir. |
@@ -178,8 +179,9 @@ Ek davranışları belirtmek için aşağıdaki seçenekler *moda* eklenebilir.
 |**w +**|** \_ O \_ rdwr** (genellikle ** \_ o, \_ rdwr** &#124; ** \_ o \_ creat** &#124; ** \_ o \_ TRUNC**)|
 |**kenarı**|**\_O \_ ikili**|
 |**şı**|**\_O \_ metni**|
-|**,**|Hiçbiri|
-|**No**|Hiçbiri|
+|**x**|**\_O \_ hariç**|
+|**,**|Yok|
+|**No**|Yok|
 |**S**|**\_O \_ sıralı**|
 |**R**|**\_O \_ rastgele**|
 |**T**|**\_O \_ shortömürlü**|

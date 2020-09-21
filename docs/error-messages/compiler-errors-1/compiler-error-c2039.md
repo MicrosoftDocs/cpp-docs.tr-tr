@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2039
 ms.assetid: f9dfd521-9b36-4454-a69c-d63f45b606bb
-ms.openlocfilehash: 67c64de676c624369fb5a8bc07b9b5de4833fe7f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6dc79db11f08ce00cdb86e930173c052cd5187ed
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757689"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742690"
 ---
 # <a name="compiler-error-c2039"></a>Derleyici hatası C2039
 
@@ -19,7 +19,7 @@ ms.locfileid: "74757689"
 
 Kod yanlış bir yapı, sınıf veya birleşim üyesine çağrı yapar veya onu ifade eder.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2039 oluşturur.
 
@@ -35,8 +35,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Aşağıdaki örnek C2039 oluşturur.
 
 ```cpp
@@ -49,8 +47,6 @@ int main() {
    Console::WriteLine( "{0}", DateTime::Now::get());   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C2039 oluşturur.
 
@@ -68,9 +64,7 @@ int S::get_Count() { return 0; }   // C2039
 int S::Count::get() { return 0; }   // OK
 ```
 
-## <a name="example"></a>Örnek
-
-Varsayılan bir dizin oluşturucuya yanlış erişmeyi denerseniz, C2039 de oluşabilir. Aşağıdaki örnek, içinde C#yazılmış bir bileşeni tanımlar.
+Varsayılan bir dizin oluşturucuya yanlış erişmeyi denerseniz, C2039 de oluşabilir. Aşağıdaki örnek, C# dilinde yazılmış bir bileşeni tanımlar.
 
 ```
 // C2039_d.cs
@@ -84,8 +78,6 @@ public class B {
    }
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C2039 oluşturur.
 
@@ -103,8 +95,6 @@ int main() {
    Console::WriteLine(n);
 }
 ```
-
-## <a name="example"></a>Örnek
 
 C2039, genel türler kullandığınızda da oluşabilir. Aşağıdaki örnek C2039 oluşturur.
 
@@ -128,8 +118,6 @@ int main() {
    f(gcnew R());
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Yönetilen veya yönetilmeyen kaynakları serbest bırakmaya çalıştığınızda C2039 oluşabilir. Daha fazla bilgi için bkz. yok [ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
 

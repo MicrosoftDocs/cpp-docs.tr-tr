@@ -16,16 +16,16 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 2c632966c9ac1264747568facd459a33d1e13338
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5cfd40add5e2b2503a5eea9610cadffd97bb0a80
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233086"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743327"
 ---
 # <a name="ltmapgt-operators"></a>&lt;harita &gt; işleçleri
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit olup olmadığını sınar.
 
@@ -90,7 +90,7 @@ The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesinden küçük olup olmadığını sınar.
 
@@ -155,7 +155,7 @@ The map m1 is less than the map m2.
 The map m1 is not less than the map m3.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit veya ondan küçük olup olmadığını test eder.
 
@@ -223,7 +223,7 @@ The map m1 is greater than the map m3.
 The map m1 is less than or equal to the map m4.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki Map nesnesinin, sağ taraftaki Map nesnesine eşit olup olmadığını sınar.
 
@@ -288,7 +288,7 @@ The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 İşlecin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük olup olmadığını sınar.
 
@@ -352,7 +352,7 @@ The map m1 is greater than the map m3.
 */
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 İşlecin sol tarafındaki harita nesnesinin sağ taraftaki harita nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -420,7 +420,7 @@ Map m1 is greater than or equal to map m3.
 Map m1 is greater than or equal to map m4.
 ```
 
-## <a name="operator-multimap"></a><a name="op_neq_multimap"></a>işleç! = (multimap)
+## <a name="operator-multimap"></a><a name="op_neq_multimap"></a> işleç! = (multimap)
 
 İşlecin sol tarafındaki multimap nesnesinin sağ taraftaki multimap nesnesine eşit olup olmadığını sınar.
 
@@ -485,7 +485,7 @@ The multimaps m1 and m2 are not equal.
 The multimaps m1 and m3 are equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_multimap"></a>işlecinde&lt;
+## <a name="operatorlt-multimap"></a><a name="op_lt_multimap"></a> işleç &lt; (multimap)
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesinden küçük olup olmadığını sınar.
 
@@ -550,7 +550,7 @@ The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq_multimap"></a>işlecinde&lt;=
+## <a name="operatorlt-multimap"></a><a name="op_lt_eq_multimap"></a> operator &lt; = (multimap)
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesine eşit veya ondan küçük olup olmadığını test eder.
 
@@ -618,7 +618,7 @@ m1 is greater than m3
 m1 is less than or equal to m4
 ```
 
-## <a name="operator"></a><a name="op_eq_eq_multimap"></a>işleç = =
+## <a name="operator-multimap"></a><a name="op_eq_eq_multimap"></a> işleç = = (multimap)
 
 İşlecin sol tarafındaki multimap nesnesinin sağ taraftaki multimap nesnesine eşit olup olmadığını sınar.
 
@@ -683,7 +683,7 @@ m1 and m2 are not equal
 m1 and m3 are equal
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_multimap"></a>işlecinde&gt;
+## <a name="operatorgt-multimap"></a><a name="op_gt_multimap"></a> işleç &gt; (multimap)
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesinden büyük olup olmadığını sınar.
 
@@ -748,7 +748,7 @@ Multimap m1 is not greater than multimap m2.
 The multimap m1 is greater than the multimap m3.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq_multimap"></a>işlecinde&gt;=
+## <a name="operatorgt-multimap"></a><a name="op_gt_eq_multimap"></a> operator &gt; = (multimap)
 
 İşlecin sol tarafındaki multimap nesnesinin, sağ taraftaki multimap nesnesine eşit veya ondan büyük olup olmadığını sınar.
 

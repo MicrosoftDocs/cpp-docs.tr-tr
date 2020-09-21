@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3464
 ms.assetid: 0ede05dc-4486-4921-8e8c-78ab5a2e09c5
-ms.openlocfilehash: bcbacf6ad3f3eda1b1f7448f60278bddfc30f4e6
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ddfd795465af559885ad05775d87d6188f2f13a8
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756584"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742859"
 ---
 # <a name="compiler-error-c3464"></a>Derleyici hatası C3464
 
@@ -19,9 +19,9 @@ ms.locfileid: "74756584"
 
 Tür iletme iç içe türler üzerinde çalışmıyor.
 
-Daha fazla bilgi için bkz. [tür iletmeC++(/CLI)](../../extensions/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için bkz. [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek bir bileşen oluşturur.
 
@@ -33,8 +33,6 @@ public:
    ref class N {};
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3464 oluşturur.
 

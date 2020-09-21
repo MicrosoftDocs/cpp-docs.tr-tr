@@ -1,5 +1,5 @@
 ---
-title: 'TN041: MFC-OLE 2 MFC-OLE1 geçişi'
+title: "TN041: MFC-OLE1-OLE 2 ' ye geçiş"
 ms.date: 10/18/2018
 helpviewer_keywords:
 - OLE1 [MFC]
@@ -11,66 +11,66 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-ms.openlocfilehash: 78ffefb198b92acbac5c3c18acd9496835845e6f
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 7d0381983481278b1410ae0ff11463519d4cbb34
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611004"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743158"
 ---
-# <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2 MFC/OLE1 geçişi
+# <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2'ye MFC/OLE1 Geçişi
 
 > [!NOTE]
-> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-## <a name="general-issues-relating-to-migration"></a>Geçiş ile ilgili genel sorunları giderme
+## <a name="general-issues-relating-to-migration"></a>Geçişle Ilgili genel sorunlar
 
-Tasarım hedefleri OLE 2 sınıflar, MFC 2.5 (ve üzeri) için MFC 2.0 OLE 1.0 desteği yararlanılmasını aynı mimariye çoğunu korumak için biriydi. Sonuç olarak, birçok MFC 2.0 aynı OLE sınıfları MFC'nin bu sürümünü mevcut (`COleDocument`, `COleServerDoc`, `COleClientItem`, `COleServerItem`). Ayrıca, bu sınıflar API'leri birçoğu tam olarak aynıdır. Ancak, bazı ayrıntılar değişmiş beklediğiniz şekilde OLE 2 OLE 1.0 önemli ölçüde farklılık gösterir. MFC 2.0'ın OLE1 desteğiyle biliyorsanız, evde MFC'nin 2.0 desteğiyle rahattır.
+MFC 2,5 (ve üzeri) içindeki OLE 2 sınıfları için tasarım hedeflerinden biri, OLE 1,0 desteği için MFC 2,0 ' de aynı mimarinin büyük bir kısmını korumıştı. Sonuç olarak, MFC 2,0 ' de aynı OLE sınıflarının çoğu MFC 'nin bu sürümünde (,, `COleDocument` `COleServerDoc` `COleClientItem` ,) hala bulunur `COleServerItem` . Ayrıca, bu sınıflardaki API 'lerin birçoğu tamamen aynıdır. Ancak, OLE 2 büyük ölçüde OLE 1,0 ' den farklıdır, bu sayede bazı ayrıntıların değiştiğini bekleyebilir. MFC 2.0 'ın OLE1 desteği hakkında bilgi sahibiyseniz, MFC 'nin 2,0 desteğiyle evle karşılaşırsınız.
 
-Varolan bir MFC/OLE1 uygulama alma ve OLE 2 işlevselliğini eklemeden önce bu not okumalısınız. Bu Not OLE1 işlevinizi MFC/OLE 2'ye taşıma sırasında karşılaşabileceğiniz ve ardından MFC 2.0 dahil iki uygulama taşıma sırasında ortaya çıkardı sorunlar ele alınmaktadır bazı genel sorunları ele alır: MFC OLE örnekleri [OCLIENT](../overview/visual-cpp-samples.md) ve [HIERSVR](../overview/visual-cpp-samples.md).
+Var olan bir MFC/OLE1 uygulaması çekiyorsunuz ve buna OLE 2 işlevselliği ekliyorsanız, önce bu notu okumanız gerekir. Bu notta OLE1 işlevlerinden MFC/OLE 2 ' ye taşıma sırasında karşılaşabileceğiniz bazı genel sorunlar ele alınmaktadır ve MFC 2,0: MFC OLE örnekleri [Oclient](../overview/visual-cpp-samples.md) ve [hiersvr](../overview/visual-cpp-samples.md)'e dahil olmak üzere iki uygulama taşıma sırasında kapsanmamış sorunları ele alınmaktadır.
 
 ## <a name="mfc-documentview-architecture-is-important"></a>MFC belge/görünüm mimarisi önemlidir
 
-Uygulamanızı MFC'nin belge/görünüm mimarisi kullanmaz ve OLE 2 desteği uygulamanıza eklemek istediğiniz, belge/görünüm taşıma zamanı sunulmuştur. Uygulamanızı yerleşik mimarisi ve MFC bileşenlerini kullanarak sonra MFC'nin OLE 2 sınıflarının avantajlarının birçoğundan faydalanılmasını yalnızca alırlar.
+Uygulamanız MFC 'nin belge/görünüm mimarisini kullanmıyorsa ve uygulamanıza OLE 2 desteği eklemek istiyorsanız, şimdi belge/görünüm 'e geçiş süresi. MFC 'nin OLE 2 sınıflarının avantajlarından birçoğu yalnızca uygulamanız yerleşik mimari ve MFC bileşenlerini kullanırken gerçekleştirilir.
 
-MFC mimarisi kullanmadan bir sunucu veya kapsayıcı uygulama, olası, ancak önerilmez.
+MFC mimarisini kullanmadan bir sunucu veya kapsayıcı uygulamak mümkündür, ancak önerilmez.
 
-## <a name="use-mfc-implementation-instead-of-your-own"></a>MFC uygulaması kendi yerine kullanın
+## <a name="use-mfc-implementation-instead-of-your-own"></a>Kendi kendinize değil MFC uygulamasını kullanın
 
-MFC canned"uygulama" sınıflar gibi `CToolBar`, `CStatusBar`, ve `CScrollView` OLE 2 desteği için yerleşik özel durum koduna sahip. Bu nedenle, uygulamanızda bu sınıfların kullanabiliyorsa OLE uyumlu olacak şekilde bunlara put emeğinin yararlı olur. Yeniden bu amaçlar için "TOP kendi" sınıflarına burada mümkündür, ancak değil önerilir. Benzer işlevselliği uygulamak gerekiyorsa (özellikle, yerinde etkinleştirme söz konusu olduğunda) MFC kaynak kodu OLE hassas noktalarının bazıları başa çıkmak için mükemmel bir başvuru verilmiştir.
+MFC "uygulama" sınıfları,, ve gibi `CToolBar` , `CStatusBar` `CScrollView` OLE 2 desteği için yerleşik özel durum koduna sahiptir. Bu nedenle, uygulamanızda bu sınıfları kullanacaksanız, OLE 'nin farkında olması için bu sınıfları bir araya getirme çabadan faydalanabilirsiniz. Yine, bu amaçlar için burada "kendi kendine al" sınıfları olabilir, ancak önerilmez. Benzer işlevselliği uygulamanız gerekiyorsa, MFC kaynak kodu, daha ayrıntılı OLE noktalarıyla (özellikle yerinde etkinleştirmeye geldiğinde) ilgilenmek için mükemmel bir başvurudur.
 
-## <a name="examine-the-mfc-sample-code"></a>MFC örnek kodu incelemeden
+## <a name="examine-the-mfc-sample-code"></a>MFC örnek kodunu inceleme
 
-OLE işlevselliği eklemek MFC örnekleri vardır. Bu uygulamaların her biri farklı bir açıdan OLE uygular:
+OLE işlevselliği içeren bir dizi MFC örneği vardır. Bu uygulamaların her biri farklı bir açıda OLE uygular:
 
-- [HIERSVR](../overview/visual-cpp-samples.md) çoğunlukla bir sunucu uygulaması olarak kullanmak için. MFC/OLE1 uygulama olarak MFC 2.0 dahil MFC/OLE 2'ye unity'nin ve OLE 2'de kullanılabilen birçok OLE özellikler uygular, ardından genişletilmiş.
+- [Hiersvr](../overview/visual-cpp-samples.md) Çoğunlukla sunucu uygulaması olarak kullanım içindir. MFC 2,0 ' ye MFC/OLE1 uygulaması olarak eklenmiştir ve MFC/OLE 2 ' ye ve OLE 2 ' de bulunan birçok OLE özelliğini uygulayan şekilde genişletilir.
 
-- [OCLIENT](../overview/visual-cpp-samples.md) OLE özelliklerin çoğu kapsayıcı açısından göstermek için gereken bir tek başına kapsayıcı uygulaması budur. MFC 2.0 ' çok alındığını ve ardından özel Pano biçimleri ve katıştırılmış öğelerine bağlantılar gibi daha gelişmiş OLE özelliklerin çoğunu destekleyecek şekilde genişletilmiş.
+- [Oclient](../overview/visual-cpp-samples.md) Bu tek başına kapsayıcı uygulamasıdır ve bir kapsayıcı açısından birçok OLE özelliğini göstermek anlamına gelir. Bu, MFC 2,0 ' den çok fazla yer aldığı ve özel Pano biçimleri ve katıştırılmış öğelerin bağlantıları gibi daha gelişmiş OLE özelliklerinin çoğunu destekleyecek şekilde genişletildi.
 
-- [DRAWCLI](../overview/visual-cpp-samples.md) OCLIENT gibi bunu var olan bir nesne yönelimli çizim programında Framework'te yapar dışında bu uygulama OLE kapsayıcı desteği çok uygular. Size nasıl olabileceğiniz OLE kapsayıcı desteği uygulamak ve var olan uygulamanızla tümleştirme gösterir.
+- [DRAWCLI](../overview/visual-cpp-samples.md) Bu uygulama, var olan nesne odaklı bir çizim programının çerçevesinde olması dışında, OCLIENT gibi OLE kapsayıcı desteğini uygular. OLE kapsayıcı desteğini nasıl uygulayabileceğinizi ve bunu mevcut uygulamanızla nasıl tümleştirileceğini gösterir.
 
-- [SUPERPAD](../overview/visual-cpp-samples.md) bu uygulama, hem de ince bir tek başına uygulama olduğunu da OLE sunucusu. Bunu uygulayan sunucu desteği oldukça minimal bir kullanım sağlar ' dir. İlginizi çeken nasıl verileri panoya kopyalamak için OLE Pano hizmetlerini kullandığını olmakla birlikte Pano Yapıştır işlevselliği uygulamak için yerleşik Windows "düzenleme" denetimine işlevselliğini kullanır. Bu yeni OLE API'leri ile tümleştirme yanı sıra geleneksel Windows API kullanımı ilgi çekici bir karışımını gösterir.
+- [Süper panel](../overview/visual-cpp-samples.md) Bu uygulamanın yanı sıra, iyi bir tek başına uygulama da bir OLE sunucusudur. Tarafından desteklenen sunucu, en az düzeyde bir değer kullanır. Bunun belirli bir ilgisi, verileri panoya kopyalamak için OLE panosu Hizmetleri 'ni kullanır, ancak Pano yapıştırma işlevselliği uygulamak için Windows "düzenleme" denetiminde yerleşik olarak bulunan işlevleri kullanır. Bu, geleneksel Windows API kullanımının ilginç bir karışımını ve yeni OLE API 'Leri ile tümleştirmeyi gösterir.
 
-Örnek uygulamalar hakkında daha fazla bilgi için "MFC örnek Yardım" konusuna bakın.
+Örnek uygulamalar hakkında daha fazla bilgi için bkz. "MFC örnek yardımı".
 
-## <a name="case-study-oclient-from-mfc-20"></a>Örnek Olay İncelemesi: MFC 2.0 OCLIENT
+## <a name="case-study-oclient-from-mfc-20"></a>Örnek olay Incelemesi: MFC 2,0 'den OCLIENT
 
-Yukarıda açıklandığı gibi [OCLIENT](../overview/visual-cpp-samples.md) MFC 2.0 sürümünde eklenmiştir ve OLE MFC/OLE1 ile uygulanır. Bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanmak için dönüştürüldü adımlar aşağıda açıklanmıştır. MFC/OLE sınıfları daha iyi anlamak için başlangıç bağlantı noktası tamamlandıktan sonra birçok özellik eklendi. Bu özellikler burada ele alınacak değil; Bu gelişmiş özellikleri hakkında daha fazla bilgi için örnek kendisini bakın.
+Yukarıda açıklandığı gibi, [Oclient](../overview/visual-cpp-samples.md) MFC 2,0 ' ye EKLENMIŞTIR ve MFC/OLE1 Ile uygulanmış OLE. Bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanacak şekilde dönüştürüldüğü adımlar aşağıda açıklanmıştır. MFC/OLE sınıflarını daha iyi göstermek için ilk bağlantı noktası tamamlandıktan sonra bir dizi özellik eklenmiştir. Bu özellikler burada ele alınmayacak; Bu gelişmiş özellikler hakkında daha fazla bilgi için örneğe bakın.
 
 > [!NOTE]
-> Derleyici hataları ve adım adım işlemi Visual C++ 2.0 ile oluşturuldu. Visual C++ 4.0 ile belirli hata iletileri ve konumlar değişmiş olabilir, ancak kavramsal bilgileri geçerli kalır.
+> Derleyici hataları ve adım adım işlem Visual C++ 2,0 ile oluşturulmuştur. Belirli hata iletileri ve konumlar Visual C++ 4,0 ile değişmiş olabilir, ancak kavramsal bilgiler geçerli kalır.
 
-## <a name="getting-it-up-and-running"></a>Kullanmaya başlamak ve çalıştırmak
+### <a name="getting-it-up-and-running"></a>Çalışmaya başlayın
 
-MFC/OLE OCLIENT örnek bağlantı noktası için uygulanan yaklaşıma, onu oluşturmak ve neden olabilecek belirgin derleyici hataları düzelttikten başlamaktır. MFC 2. 0 OCLIENT örnek alın ve MFC'nin bu sürümünü altında derlemek, çözmek için çok sayıda hata olmadığını bulabilirsiniz. Sırada gerçekleşen hataları aşağıda açıklanmıştır.
+OCLIENT örneği ile MFC/OLE arasında bağlantı kurmak için yapılan yaklaşım, onu oluşturup sonuçta ortaya kalacak açık derleyici hatalarını düzelterek başlamamalıdır. OCLIENT örneğini MFC 2,0 ' den alıp bu MFC 'nin bu sürümünde derlerseniz, çözülmesi gereken birçok hata olduğunu fark edeceksiniz. Oluşan sırada hatalar aşağıda açıklanmıştır.
 
-## <a name="compile-and-fix-errors"></a>Derleme ve düzeltme hataları
+### <a name="compile-and-fix-errors"></a>Hataları derleyin ve düzeltir
 
 ```Output
 \oclient\mainview.cpp(104) : error C2660: 'Draw' : function does not take 4 parameters
 ```
 
-İlk hata endişelere yer bırakmadan `COleClientItem::Draw`. MFC/OLE1 MFC/OLE sürüm alır çok daha fazla parametre sürdü. Ek parametreleri, gerekli ve genellikle NULL (Bu örnekte) olduğu gibi değildir. İçin çizilmiş CDC meta dosyası DC olduğunda MFC'nin bu sürümünü lpWBounds için değerleri otomatik olarak belirleyebilirsiniz. Framework "özniteliğini DC" geçirilen pDC birinden oluşturacaksınız olduğundan buna pFormatDC parametresi artık gerekli değildir. Bu sorunu gidermek için yalnızca iki kaldırmak için ek, çizim çağrısı parametreleri NULL.
+İlk hata kaygılarıyla ilgilidir `COleClientItem::Draw` . MFC/OLE1 içinde, MFC/OLE sürümünden daha fazla parametre alır. Ek parametreler genellikle gerekli değildir ve genellikle NULL (Bu örnekte olduğu gibi). Bu MFC sürümü, çizmekte olan CDC bir meta dosya DC 'si olduğunda, Lpwlimitlerinizin değerlerini otomatik olarak belirleyebilir. Ayrıca, çerçeve geçirilen pDC 'nin "Attribute DC" öğesinden bir tane oluşturacak olduğundan pFormatDC parametresi artık gerekli değildir. Bu sorunu gidermek için, çizim çağrısına iki ek NULL parametre kaldırmanız yeterlidir.
 
 ```Output
 \oclient\mainview.cpp(273) : error C2065: 'OLE_MAXNAMESIZE' : undeclared identifier
@@ -80,9 +80,9 @@ MFC/OLE OCLIENT örnek bağlantı noktası için uygulanan yaklaşıma, onu olu�
 \oclient\mainview.cpp(288) : error C2664: 'CreateStaticFromClipboard' : cannot convert parameter 1 from 'char [1]' to 'enum ::tagOLERENDER '
 ```
 
-Olgu sonuçtan yukarıdaki hataları, tüm `COleClientItem::CreateXXXX` MFC/OLE1 işlevlerde gerekli öğeyi temsil etmek için benzersiz bir ad geçirilmesi. Bu gereksinim temel alınan OLE API değildi. OLE 2 (DDE konuşmalardaki adı kullanılır) temel iletişim mekanizması olarak DDE kullanmadığından bu MFC/OLE 2'de gerekli değildir. Bu sorunu gidermek için kaldırabilirsiniz `CreateNewName` tüm başvuruları yanı sıra işlev. Hangi her MFC/OLE işlevi bu sürümde yalnızca çağrıda imleci yerleştirerek ve F1 tuşuna basarak bekliyor bulmak daha kolaydır.
+Yukarıdaki hatalar, `COleClientItem::CreateXXXX` MFC/OLE1 'deki tüm işlevlerin öğeyi göstermek için benzersiz bir ad geçirilmesini gerektirmesinden kaynaklanır. Bu, temel alınan OLE API 'SI gereksinimiydi. Bu, MFC/OLE 2 ' de gerekli değildir, çünkü OLE 2 temel iletişim mekanizması olarak DDE 'yi kullanmaz (ad, DDE konuşmalarında kullanılmıştır). Bu sorunu gidermek için, `CreateNewName` işlevin tüm başvurularını da kaldırabilirsiniz. Her MFC/OLE işlevinin bu sürümde ne kadar beklenmekte olduğunu kolayca bulmak için imlecinizi çağrıya yerleştirip F1 tuşuna basın.
 
-Önemli ölçüde farklı olduğu başka bir OLE 2 Pano işleme alanıdır. OLE1 ile Pano Windows panoyla etkileşim API'leri kullanılır. OLE 2 ile bu farklı bir mekanizma ile gerçekleştirilir. MFC/OLE1 API'leri kopyalamadan önce panonun açık olduğu varsayıldı bir `COleClientItem` panoya nesne. Bu, artık gerekli değildir ve tüm MFC/OLE Panosu işlemlerinin başarısız olmasına neden olur. Bağımlılıkları kaldırmak için kodu düzenlerken `CreateNewName`, ayrıca açılır ve Windows Pano kapatır kodu kaldırmanız gerekir.
+Önemli ölçüde farklı olan başka bir alan OLE 2 Pano işleme ' dir. OLE1 ile Windows Pano API 'Leri, pano ile etkileşime geçin. OLE 2 ile bu işlem farklı bir mekanizmasıyla yapılır. MFC/OLE1 API 'Leri Pano 'ya bir nesne kopyalamadan önce panonun açık olduğunu varsaymıştı `COleClientItem` . Bu artık gerekli değildir ve tüm MFC/OLE panosu işlemlerinin başarısız olmasına neden olur. Bağımlılıkları kaldırmak için kodu düzenlerken `CreateNewName` , açılan kodu da kaldırmanız ve Windows panosunu kapatmalısınız.
 
 ```Output
 \oclient\mainview.cpp(332) : error C2065: 'AfxOleInsertDialog' : undeclared identifier
@@ -91,7 +91,7 @@ Olgu sonuçtan yukarıdaki hataları, tüm `COleClientItem::CreateXXXX` MFC/OLE1
 \oclient\mainview.cpp(347) : error C2039: 'CreateNewObject' : is not a member of 'CRectItem'
 ```
 
-Bu hataların sonucunda `CMainView::OnInsertObject` işleyici. "Yeni Nesne Ekle" komutu işlenirken burada bir bit yapılan değişiklikler başka bir alandır. Bu durumda, yalnızca özgün uygulaması için yeni bir OLE kapsayıcı uygulaması AppWizard tarafından sağlanan birleştirmek en kolay yoldur. Aslında, bu diğer uygulamaları taşıma için uygulayabileceğiniz bir tekniktir. MFC/OLE1 ', "Nesne Ekle" iletişim kutusu çağrılarak görüntülenen `AfxOleInsertDialog` işlevi. Bu sürümde, oluşturun bir `COleInsertObject` iletişim nesnesi ve çağrı `DoModal`. Ayrıca, yeni OLE öğeleri ile oluşturulan bir **CLSID** classname dize yerine. Sonuç aşağıdakine benzer görünmelidir
+Bu hatalar `CMainView::OnInsertObject` işleyicinin sonucu. "Yeni nesne Ekle" komutunun işlenmesi, nesnelerin oldukça bir bit olarak değiştiği başka bir alandır. Bu durumda, yeni bir OLE kapsayıcı uygulaması için AppWizard tarafından sağlanarak özgün uygulamayı birleştirmek basit bir yoldur. Aslında bu, diğer uygulamaların taşıma için uygulayabileceğiniz bir tekniktir. MFC/OLE1 'de, işlevi çağırarak "nesne Ekle" iletişim kutusunu görüntülen `AfxOleInsertDialog` . Bu sürümde bir `COleInsertObject` iletişim kutusu nesnesi ve çağrısı oluşturursunuz `DoModal` . Ayrıca, yeni OLE öğeleri ClassName dizesi yerine bir **CLSID** ile oluşturulur. Nihai sonuç şuna benzer görünmelidir
 
 ```cpp
 COleInsertDialog dlg;
@@ -139,20 +139,20 @@ EndWaitCursor();
 ```
 
 > [!NOTE]
-> Yeni nesne eklemeyi, uygulamanız için farklı olabilir):
+> Yeni nesne ekleme uygulamanız için farklı olabilir):
 
-Eklenecek gereklidir \<afxodlgs.h >, bildirimi içeren `COleInsertObject` iletişim kutusu sınıfı ve bunun yanı sıra MFC tarafından sağlanan diğer standart iletişim kutuları.
+Ayrıca \<afxodlgs.h> , `COleInsertObject` iletişim kutusu SıNıFıNıN ve MFC tarafından sunulan diğer standart iletişim kutularının bildirimini içeren dahil etmek de gereklidir.
 
 ```Output
 \oclient\mainview.cpp(367) : error C2065: 'OLEVERB_PRIMARY' : undeclared identifier
 \oclient\mainview.cpp(367) : error C2660: 'DoVerb' : function does not take 1 parameters
 ```
 
-Kavram, bunlar aynı olsa da bu hataları olarak bazı OLE1 sabitleri OLE 2'de, değişen kaynaklanır. Bu durumda `OLEVERB_PRIMARY` değiştirildi `OLEIVERB_PRIMARY`. Kullanıcı bir öğeyi tıklattığında OLE1 ve OLE 2'de birincil fiil genellikle bir kapsayıcı tarafından yürütülür.
+Bu hatalar, bazı OLE1 sabitlerinin OLE 2 ' de değiştiği, ancak aynı olsa da kavram nedeniyle oluşur. Bu durumda `OLEVERB_PRIMARY` olarak değiştirilmiştir `OLEIVERB_PRIMARY` . Hem OLE1 hem de OLE 2 ' de, birincil fiil genellikle Kullanıcı bir öğeye çift tıkladığında bir kapsayıcı tarafından yürütülür.
 
-Ayrıca, `DoVerb` artık ek bir parametre alır; bir görünüm için bir işaretçi (`CView`*). Bu parametre, yalnızca "Görsel düzenleme" (veya yerinde etkinleştirme) uygulamak için kullanılır. Bu özellik şu anda uyguladığınız değil çünkü şu an için bu parametre NULL olarak ayarlayın.
+Ayrıca, bir `DoVerb` görünümün işaretçisi (*) için de ek bir parametre alır `CView` . Bu parametre yalnızca "görsel düzenlemeler" (veya yerinde etkinleştirme) uygulamak için kullanılır. Şimdilik bu özelliği şu anda uygulamadığınıza göre bu parametreyi NULL olarak ayarlarsınız.
 
-Framework hiçbir zaman girişimleri yerinde etkinleştirme emin olmak için ' ı geçersiz kılmalıdır `COleClientItem::CanActivate` gibi:
+Framework 'ün hiç yerinde etkinleştirmeye hiçbir şekilde Denemeyeceğinden emin olmak için aşağıdaki gibi geçersiz kılmanız gerekir `COleClientItem::CanActivate` :
 
 ```cpp
 BOOL CRectItem::CanActivate()
@@ -168,9 +168,9 @@ BOOL CRectItem::CanActivate()
 \oclient\rectitem.cpp(84) : error C2064: term does not evaluate to a function
 ```
 
-MFC/OLE1 içinde `COleClientItem::GetBounds` ve `SetBounds` sorgulamak ve bir öğenin kapsamını işlemek için kullanılan ( `left` ve `top` üyeleri olan her zaman sıfır). MFC/OLE 2'de bu daha doğrudan tarafından desteklenen `COleClientItem::GetExtent` ve `SetExtent`, ile ilgili bir **BOYUTU** veya `CSize` yerine.
+MFC/OLE1 içinde `COleClientItem::GetBounds` ve `SetBounds` bir öğenin kapsamını sorgulamak ve işlemek için kullanılmıştı ( `left` ve `top` üyeleri her zaman sıfırdır). MFC/OLE 2 ' de, ve tarafından daha doğrudan desteklenerek `COleClientItem::GetExtent` `SetExtent` bir **Boyut** veya `CSize` bunun yerine.
 
-Yeni, SetItemRectToServer kodunu ve UpdateItemRectFromServer çağrıları şuna benzeyebilir:
+Yeni SetItemRectToServer ve UpdateItemRectFromServer çağrılarınızın kodu şöyle görünür:
 
 ```cpp
 BOOL CRectItem::UpdateItemRectFromServer()
@@ -227,15 +227,15 @@ BOOL CRectItem::SetItemRectToServer()
 \oclient\frame.cpp(50) : error C2064: term does not evaluate to a function
 ```
 
-MFC/OLE1 zaman uyumlu API çağrıları bir sunucu kapsayıcı olan *sanal*, OLE1 çoğu durumda zaman uyumsuz nitelikte. Kullanıcı komutları işlenmeden önce devam eden zaman uyumsuz bir bekleyen çağrı denetlemek gerekliydi. MFC/OLE1 sağlanan `COleClientItem::InWaitForRelease` Bunu yapmak için işlevi. Tümünü bir araya CMainFrame içinde geçersiz kılmasını OnCommand kaldırılacak şekilde MFC/OLE 2'de bu gerekli değildir.
+MFC/OLE1 zaman uyumlu API çağrıları, bir kapsayıcıdan sunucuya yönelik olarak zaman uyumsuz olduğundan, çoğu durumda OLE1 *doğal olarak zaman*uyumsuzdur. Kullanıcıdan komutları işlemeden önce, bekleyen bir zaman uyumsuz çağrının denetlenmesi gerekir. MFC/OLE1 bunu `COleClientItem::InWaitForRelease` yapmak için işlevi sağladı. MFC/OLE 2 ' de gerekli değildir, bu nedenle Canabilgisayar 'teki OnCommand 'in hepsini birlikte geçersiz kılmayı kaldırabilirsiniz.
 
-Bu noktada OCLIENT derleme bağlama ve.
+Bu noktada OCLIENT, derlenir ve bağlanır.
 
-## <a name="other-necessary-changes"></a>Diğer gerekli değişiklikleri
+### <a name="other-necessary-changes"></a>Diğer gerekli değişiklikler
 
-OCLIENT çalışmasını, ancak saklanacak değil yapılan bazı noktalar vardır. Artık yerine daha sonra bu sorunları gidermek daha iyidir.
+Ancak, OCLIENT 'ın çalışmasını engelleyen çok sayıda şey vardır. Bu sorunların daha sonra yerine daha sonra düzeltilmesi daha iyidir.
 
-İlk olarak, OLE kitaplıklarını Başlat gereklidir. Bu çağrılarak gerçekleştirilir `AfxOleInit` gelen `InitInstance`:
+İlk olarak, OLE kitaplıklarının başlatılması gerekir. Bu, öğesinden çağırarak yapılır `AfxOleInit` `InitInstance` :
 
 ```cpp
 if (!AfxOleInit())
@@ -245,7 +245,7 @@ if (!AfxOleInit())
 }
 ```
 
-Sanal işlevler için parametre listesi değişiklikleri denetlemek için de iyi bir fikirdir. Bir işlev, `COleClientItem::OnChange`, her MFC/OLE kapsayıcı uygulamasında geçersiz kılınmış. Çevrimiçi Yardım'a bakarak bir ek 'DWORD dwParam' eklendiğini görürsünüz. Yeni CRectItem::OnChange şu şekilde görünür:
+Ayrıca, parametre listesi değişikliklerine yönelik sanal işlevleri denetlemek de iyi bir fikirdir. Bu tür bir işlev `COleClientItem::OnChange` , her MFC/OLE kapsayıcı uygulamasında geçersiz kılınır. Çevrimiçi yardım 'a bakarak fazladan bir ' DWORD dwParam ' eklendiğini görürsünüz. Yeni CRectItem:: OnChange şöyle görünür:
 
 ```cpp
 void
@@ -269,7 +269,7 @@ CRectItem::OnChange(OLE_NOTIFICATION wNotification, DWORD dwParam)
 }
 ```
 
-MFC/OLE1, kapsayıcılı uygulamaları belge sınıfından türetilmiş `COleClientDoc`. MFC/OLE 2'de bu sınıf olduğundan kaldırılmış ve yerine `COleDocument` (Bu yeni bir kuruluş, kapsayıcı/sunucu uygulamaları oluşturma kolaylaştırır). Var olan bir **#define** eşleyen `COleClientDoc` için `COleDocument` MFC/OLE1 uygulamaların OCLIENT gibi MFC/OLE 2'ye taşıma basitleştirmek için. Tarafından sağlanmayan özelliklerinden birini `COleDocument` tarafından sağlandı `COleClientDoc` eşleme girişleri standart bir komut iletisiyse. Bunu yapıldığını de, sunucu uygulamaları, `COleDocument` kapsayıcı/sunucu uygulaması olmadıkları sürece (dolaylı olarak), bunları bu komut işleyicileri yükü taşımaz. CMainDoc ileti eşlemesi için aşağıdaki girişleri ekleyin yapmanız gerekir:
+MFC/OLE1 içinde, kapsayıcı uygulamaları belge sınıfının öğesinden türetilir `COleClientDoc` . MFC/OLE 2 ' de bu sınıf tarafından kaldırılmıştır ve değiştirilmiştir `COleDocument` (Bu yeni kuruluş, kapsayıcı/sunucu uygulamaları oluşturmayı kolaylaştırır). **#define** `COleClientDoc` `COleDocument` MFC/OLE1 UYGULAMALARıNıN OCLIENT gibi MFC/OLE 2 ' ye taşıma işlemini basitleştirmek için ile eşleyen bir #define vardır. Tarafından sağlanan özelliklerden biri `COleDocument` `COleClientDoc` , standart komut ileti eşleme girişlarıdır. Bu işlem, `COleDocument` bir kapsayıcı/sunucu uygulaması olmadıkları müddetçe, (dolaylı olarak) da kullanan sunucu uygulamalarının bu komut işleyicilerinin ek yükü ile birlikte kalmaması için yapılır. CMainDoc ileti eşlemesine aşağıdaki girdileri eklemeniz gerekir:
 
 ```cpp
 ON_UPDATE_COMMAND_UI(ID_EDIT_PASTE, OnUpdatePasteMenu)
@@ -281,17 +281,17 @@ ON_UPDATE_COMMAND_UI(ID_OLE_EDIT_CONVERT, OnUpdateObjectVerbMenu)
 ON_COMMAND(ID_OLE_EDIT_CONVERT, OnEditConvert)
 ```
 
-Bu komutların tümü uygulamasının bulunduğu `COleDocument`, belgeniz için temel sınıf.
+Bu komutların tümü `COleDocument` , belgeniz için temel sınıf olan ' de bulunur.
 
-Bu noktada, OCLIENT işlevsel bir OLE kapsayıcı uygulaması değil. Herhangi bir türde (OLE1 veya OLE 2) öğeleri eklemek mümkündür. Yerinde etkinleştirmesi için gereken kodu uygulanmamış olduğundan, öğeleri ile OLE1 çok gibi ayrı bir pencerede düzenlenmiştir. Sonraki bölümde (bazen "Görsel düzenleme" olarak adlandırılır) yerinde düzenlemeyi etkinleştirmek için gerekli değişiklikleri açıklar.
+Bu noktada, OCLIENT, işlevsel bir OLE kapsayıcı uygulamasıdır. Herhangi bir türde öğe eklemek mümkündür (OLE1 veya OLE 2). Yerinde etkinleştirmeyi etkinleştirmek için gerekli kod uygulanmadığından, öğeler OLE1 ile benzer şekilde ayrı bir pencerede düzenlenir. Sonraki bölümde, yerinde düzenlemenin (bazen "görsel düzenlemeler" olarak adlandırılır) etkinleştirilmesi için gerekli değişiklikler açıklanmaktadır.
 
-## <a name="adding-visual-editing"></a>"Görsel düzenleme" ekleme
+### <a name="adding-visual-editing"></a>"Görsel düzenlemesi" ekleniyor
 
-OLE en ilginç özelliklerinin yerinde etkinleştirme (veya "Görsel düzenleme") biridir. Bu özellik, kapsayıcının kullanıcı arabirimi bölümlerini sağlanan için daha sorunsuz bir düzenleme arabirimi kullanıcıya almak sunucu uygulaması sağlar. Yerinde etkinleştirme OCLIENT uygulamak için bazı özel kaynakların yanı sıra bazı ek kod eklenmesi gerekir. Bu kaynaklar ve kod normalde AppWizard tarafından sağlanan — aslında, kodu buraya çoğunu doğrudan bir uygulamadan yeni AppWizard "Container" desteğiyle ödünç.
+OLE 'nin en ilginç özelliklerinden biri yerinde etkinleştirme (veya "görsel düzenlemeler") ' dir. Bu özellik, sunucu uygulamasının Kullanıcı için daha sorunsuz bir düzen arabirimi sağlamak üzere kapsayıcının Kullanıcı arabiriminin bölümlerini almasına izin verir. OCLIENT 'a yerinde etkinleştirme uygulamak için bazı özel kaynakların yanı sıra bazı ek kodlar eklenmesi gerekir. Bu kaynaklar ve kod normalde AppWizard tarafından sağlanır. Aslında, buradaki kodun çoğu, doğrudan "kapsayıcı" desteği olan yeni bir AppWizard uygulamasından kullanıma sunulmuştur.
 
-Öncelikle, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. Bu ek menü kaynağı görselde oluşturabilirsiniz C++ IDR_OCLITYPE kaynak kopyalayarak ve tüm dosya ve pencere pencereleri kaldırma. İki ayırıcı çubukları grupları ayrımı belirtmek için dosya ve pencere pencereleri arasında eklenir (gibi görünmelidir: Dosya &#124; &#124; pencere). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+Birincisi, yerinde etkin olan bir öğe olduğunda kullanılacak bir menü kaynağı eklemek gereklidir. Bu ek menü kaynağını, IDR_OCLITYPE kaynağını kopyalayarak ve dosya ve pencere açılır pencereleri hariç tüm dosyaları kaldırarak Visual C++ oluşturabilirsiniz. Grupların ayrılmasını göstermek için dosya ve pencere açılır pencereleri arasına iki ayırıcı çubuk eklenir (şuna benzemelidir: dosya &#124;&#124; penceresi). Bu ayırıcıların ne anlama geldiğini ve sunucu ve kapsayıcı menülerinin nasıl birleştirildiği hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
-Oluşturulan bu menüleri oluşturduktan sonra bunları hakkında bilmeniz framework izin gerekir. Bu çağrılarak gerçekleştirilir `CDocTemplate::SetContainerInfo` belge şablonu listesine, Initınstance'a eklemeden önce belge şablonu için. Belge şablonu kaydetmek için yeni kod şöyle görünür:
+Bu menüler oluşturulduktan sonra Framework 'ün bunlarla ilgili bilgi sahibi olmanız gerekir. Bu, `CDocTemplate::SetContainerInfo` InitInstance 'inizdeki belge şablonu listesine eklemeden önce belge şablonu için çağrı yaparak yapılır. Belge şablonunu kaydetmek için yeni kod şöyle görünür:
 
 ```cpp
 CDocTemplate* pTemplate = new CMultiDocTemplate(
@@ -305,23 +305,23 @@ pTemplate->SetContainerInfo(IDR_OLECLITYPE_INPLACE);
 AddDocTemplate(pTemplate);
 ```
 
-Görselde oluşturulan özel yerinde kaynak IDR_OLECLITYPE_INPLACE kaynaktır C++.
+IDR_OLECLITYPE_INPLACE kaynak, Visual C++ oluşturulan özel yerinde kaynaktır.
 
-Yerinde etkinleştirme etkinleştirmek için her ikisini birden değiştirmek için gereken bazı şeyler vardır `CView` (CMainView) türetilmiş sınıf yanı sıra `COleClientItem` türetilmiş bir sınıf (CRectItem). Tüm bu geçersiz kılmaları AppWizard tarafından sağlanır ve uygulamalarının çoğu, doğrudan bir varsayılan AppWizard uygulamasından gelir.
+Yerinde etkinleştirmeyi etkinleştirmek için, hem `CView` (CMainView) türetilmiş sınıfta hem de `COleClientItem` türetilmiş sınıfın (CRectItem) değiştirilmesi gereken bazı şeyler vardır. Bu geçersiz kılmaların tümü AppWizard tarafından sağlanır ve uygulamanın çoğu doğrudan varsayılan bir AppWizard uygulamasından gelir.
 
-Bu bağlantı noktasının ilk adımda tamamen geçersiz kılarak yerinde etkinleştirmeyi devre dışı `COleClientItem::CanActivate`. Yerinde etkinleştirme izin vermek için bu geçersiz kılma kaldırılması gerekir. Ayrıca, tüm çağrıları için NULL geçirildi `DoVerb` (vardır iki tanesi) bir görünüm yalnızca yerinde etkinleştirme için gerekli olduğundan. Yerinde etkinleştirme tam olarak uygulamak için doğru görünümünde geçirmek için gerekli olduğu `DoVerb` çağırın. Bu çağrılar biri de `CMainView::OnInsertObject`:
+Bu bağlantı noktasının ilk adımında yerinde etkinleştirme tamamen geçersiz kılınarak devre dışı bırakıldı `COleClientItem::CanActivate` . Yerinde etkinleştirmeye izin vermek için bu geçersiz kılma kaldırılmalıdır. Buna ek olarak, `DoVerb` yalnızca yerinde etkinleştirme için gerekli olan tüm çağrılara (bunların ikisi de vardır) null geçildi. Yerinde etkinleştirmeyi tam olarak uygulamak için, çağrıda doğru görünümün iletilmesi gerekir `DoVerb` . Bu çağrılardan biri `CMainView::OnInsertObject` :
 
 ```cpp
 pItem->DoVerb(OLEIVERB_SHOW, this);
 ```
 
-Başka bir yer `CMainView::OnLButtonDblClk`:
+Diğeri `CMainView::OnLButtonDblClk` :
 
 ```cpp
 m_pSelection->DoVerb(OLEIVERB_PRIMARY, this);
 ```
 
-Geçersiz kılmak gerekli olan `COleClientItem::OnGetItemPosition`. Bu sunucu öğesi yerinde etkin olduğunda, kendi penceresini kapsayıcının penceresiyle ilişkili yerleştirmek istediğiniz yeri bildirir. OCLIENT için uygulama kısmı oldukça kolaydır:
+Geçersiz kılınması gerekir `COleClientItem::OnGetItemPosition` . Bu, sunucuya, öğenin yerinde etkinleştirildiğinde, kapsayıcının penceresine göre ne zaman yerleştirileceğini belirtir. OCLIENT için uygulama, önemsiz:
 
 ```cpp
 void CRectItem::OnGetItemPosition(CRect& rPosition)
@@ -330,7 +330,7 @@ void CRectItem::OnGetItemPosition(CRect& rPosition)
 }
 ```
 
-Çoğu sunucuları da "yeniden boyutlandırma yerinde." olarak adlandırılan uygulama Bu sunucu boyutlandırılmış ve kullanıcı, öğeyi düzenleme sırasında taşınan pencereye sağlar. Taşıma veya bir pencere genellikle yeniden boyutlandırma konumunu ve boyutunu kapsayıcı belge içinde etkilediği kapsayıcı içinde bu eylemi, katılım göstermesi gerekir. Logrequest olayını OCLIENT yeni konumu ve boyutu ile m_rect tarafından tutulan iç dikdörtgen eşitler.
+Çoğu sunucu Ayrıca "yerinde yeniden boyutlandırma" olarak adlandırılan öğeleri de uygular. Bu, kullanıcı öğeyi düzenlenirken sunucu penceresinin boyutlandırılıp taşınmasını sağlar. Kapsayıcı bu eyleme katılmalıdır, çünkü pencereyi taşımak veya yeniden boyutlandırmak genellikle kapsayıcı belgesinin içindeki konumu ve boyutu etkiler. OCLIENT için uygulama, m_rect tarafından tutulan iç dikdörtgeni yeni konum ve boyutla eşitler.
 
 ```cpp
 BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
@@ -349,9 +349,9 @@ BOOL CRectItem::OnChangeItemPosition(const CRect& rectPos)
 }
 ```
 
-Bu noktada, yerinde etkin ve etkin olduğunda, öğeyi taşıma ve boyutlandırma ile dağıtılacak öğeyi izin vermek için yeterli kod yoktur, ancak hiçbir kod düzenleme oturumu çıkmak kullanıcı izin verir. Bazı sunucular bu işlevselliği kendilerini escape tuşu işleyerek sağlayacak olsa da, kapsayıcıları öğeyi devre dışı bırakmak için iki yol sağladığını önerilir: (1) öğe dışında ve (2) ESCAPE tuşuna basarak tıklayarak.
+Bu noktada, bir öğenin yerinde etkinleştirilmesi ve etkin olduğunda boyutlandırılması ve öğenin taşınması ile uğraşmak için yeterli kod vardır, ancak hiçbir kod kullanıcının düzenleyen oturumundan çıkmasına izin vermez. Bazı sunucular, kaçış anahtarını işleyerek bu işlevselliği kendi kendilerine sağlayabilse de, kapsayıcıların bir öğeyi devre dışı bırakmak için iki yol sağlaması önerilir: (1) öğenin dışına tıklayarak ve (2) KAÇıŞ tuşuna basarak.
 
-ESCAPE tuşu için görsel içeren bir Hızlandırıcı ekleyin C++ , komut VK_ESCAPE tuşu eşler, ID_CANCEL_EDIT kaynaklarına eklenir. Bu komutun işleyicisi aşağıdaki gibidir:
+KAÇıŞ anahtarı için VK_ESCAPE anahtarını bir komuta eşleyen Visual C++ bir Hızlandırıcı ekleyin ID_CANCEL_EDIT kaynaklara eklenir. Bu komutun işleyicisi şöyledir:
 
 ```cpp
 // The following command handler provides the standard
@@ -367,7 +367,7 @@ ESCAPE tuşu için görsel içeren bir Hızlandırıcı ekleyin C++ , komut VK_E
 }
 ```
 
-Burada kullanıcı dışındaki bir öğeye tıkladığında durumu işlemek için aşağıdaki kodu başlangıcına kadar eklemeniz `CMainView::SetSelection`:
+Kullanıcının öğenin dışına tıkladığı durumu işlemek için aşağıdaki kodu öğesinin başlangıcına ekleyin `CMainView::SetSelection` :
 
 ```cpp
 if (pNewSel != m_pSelection || pNewSel == NULL)
@@ -379,7 +379,7 @@ if (pNewSel != m_pSelection || pNewSel == NULL)
 }
 ```
 
-Bir öğenin yerinde etkin olduğunda, odağı olması gerekir. Bu durumda olduğundan emin olmak için görünümünüzü odağı aldığında odağı her zaman etkin öğesine aktarılır, böylece OnSetFocus işler:
+Bir öğe yerinde etkin olduğunda, odağa sahip olmalıdır. Bu durumda, görünümün odağı aldığında odağın her zaman etkin öğeye aktarılması için OnSetFocus 'yi işlediğinizden emin olun:
 
 ```cpp
 // Special handling of OnSetFocus and OnSize are required
@@ -405,7 +405,7 @@ void CMainView::OnSetFocus(CWnd* pOldWnd)
 }
 ```
 
-Görünümü yeniden boyutlandırıldığında dikdörtgen kırpımını değişti etkin öğeyi bildirmek gerekir. Bunu sağlamak için bir işleyici yapmak için `OnSize`:
+Görünüm yeniden boyutlandırılırken, kırpma dikdörtgeninin değiştiği etkin öğeyi bilgilendirmeli. Bunu yapmak için, için bir işleyici sağlarsınız `OnSize` :
 
 ```cpp
 void CMainView::OnSize(UINT nType, int cx, int cy)
@@ -418,38 +418,38 @@ void CMainView::OnSize(UINT nType, int cx, int cy)
 }
 ```
 
-## <a name="case-study-hiersvr-from-mfc-20"></a>Örnek Olay İncelemesi: MFC 2.0 HIERSVR
+## <a name="case-study-hiersvr-from-mfc-20"></a>Örnek olay Incelemesi: MFC 2,0 ile HIERSVR
 
-[HIERSVR](../overview/visual-cpp-samples.md) OLE MFC/OLE1 ile uygulanan ve MFC 2. 0'da eklenmiştir. Bu Not, bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanmak için dönüştürüldü adımları kısaca açıklanmaktadır. MFC/OLE 2 sınıfları daha iyi anlamak için başlangıç bağlantı noktası tamamlandıktan sonra birçok özellik eklendi. Bu özellikler burada ele alınacak değil; Bu gelişmiş özellikleri hakkında daha fazla bilgi için örnek kendisini bakın.
+[Hiersvr](../overview/visual-cpp-samples.md) , MFC 2,0 ' ye de EKLENMIŞTIR ve MFC/OLE1 Ile uygulanmış OLE. Bu notta, bu uygulamanın başlangıçta MFC/OLE 2 sınıflarını kullanacak şekilde dönüştürüldüğü adımlar kısaca açıklanmaktadır. MFC/OLE 2 sınıflarını daha iyi göstermek için ilk bağlantı noktası tamamlandıktan sonra bir dizi özellik eklenmiştir. Bu özellikler burada ele alınmayacak; Bu gelişmiş özellikler hakkında daha fazla bilgi için örneğe bakın.
 
 > [!NOTE]
-> Derleyici hataları ve adım adım işlemi Visual C++ 2.0 ile oluşturuldu. Visual C++ 4.0 ile belirli hata iletileri ve konumlar değişmiş olabilir, ancak kavramsal bilgileri geçerli kalır.
+> Derleyici hataları ve adım adım işlem Visual C++ 2,0 ile oluşturulmuştur. Belirli hata iletileri ve konumlar Visual C++ 4,0 ile değişmiş olabilir, ancak kavramsal bilgiler geçerli kalır.
 
-## <a name="getting-it-up-and-running"></a>Kullanmaya başlamak ve çalıştırmak
+### <a name="getting-it-up-and-running"></a>Çalışmaya başlayın
 
-MFC/OLE HIERSVR örnek bağlantı noktası için uygulanan yaklaşıma, onu oluşturmak ve neden olabilecek belirgin derleyici hataları düzelttikten başlamaktır. MFC 2. 0 HIERSVR örnek alın ve MFC'nin bu sürümünü altında derlemek, (olsa da birden fazla OCLIENT örnekle) çözümlemek için birçok hata olmadığını bulabilirsiniz. Hataları, genellikle gerçekleştikleri sırada aşağıda açıklanmıştır.
+HIERSVR örneğine yönelik bağlantı noktasına yapılan yaklaşım, MFC/OLE ile başlatılır ve sonuç olarak ortaya geçen belirgin Derleyici hatalarını düzelterek işe başlar. MFC 2,0 ' den HIERSVR örneğini alıp onu MFC 'nin bu sürümünde derlerseniz, çözmeniz gereken çok hata olmadığını (OCLIENT örneğiyle daha fazla olmasına rağmen) fark edersiniz. Hatalar, genellikle oluşma sırasına göre aşağıda açıklanmıştır.
 
-## <a name="compile-and-fix-errors"></a>Derleme ve düzeltme hataları
+### <a name="compile-and-fix-errors"></a>Hataları derleyin ve düzeltir
 
 ```Output
 \hiersvr\hiersvr.cpp(83) : error C2039: 'RunEmbedded' : is not a member of 'COleTemplateServer'
 ```
 
-Bu ilk hata kadar büyük sorun kullanıma işaret `InitInstance` sunucuları için işlevi. OLE sunucusu için gerekli başlatma çalışmasını almak için MFC/OLE1 uygulamanız için yapmanız gereken en büyük değişikliklerin olabilir. Yapılacak en iyi şey ne AppWizard bir OLE sunucusu oluşturur arayın ve uygun şekilde kodunuzu değiştirmeniz ' dir. Aklınızda tutmanız gereken bazı noktalar şunlardır:
+Bu ilk hata, sunucular için işlevle çok daha büyük bir sorun olduğunu gösterir `InitInstance` . OLE sunucusu için gereken başlatma büyük olasılıkla MFC/OLE1 uygulamanızda yapmanız gereken en büyük değişikliklerden biridir. Yapmanız gereken en iyi şey, bir OLE sunucusu için AppWizard 'ın ne oluşturduğunu ve kodunuzun uygun şekilde nasıl değiştirileceğini göz atabilmenizdir. Aşağıda aklınızda bulundurmanız gereken bazı noktaları bulabilirsiniz:
 
-OLE kitaplıklarının çağırarak başlatmak gereklidir `AfxOleInit`
+Şunu çağırarak OLE kitaplıklarını başlatmak gereklidir `AfxOleInit`
 
-Belge şablonu nesne ile ayarlanamıyor çalışma zamanı sınıf bilgileri ve sunucu kaynak işler ayarlayın SetServerInfo çağırmak `CDocTemplate` Oluşturucusu.
+Oluşturucu ile ayarlayamayacağı sunucu kaynak tutamaçlarını ve çalışma zamanı sınıfı bilgilerini ayarlamak için, belge şablonu nesnesinde SetServerInfo öğesini çağırın `CDocTemplate` .
 
-Komut satırında/Embedding varsa, uygulamanızın ana pencereyi gösterme.
+Komut satırında/gömme varsa, uygulamanızın ana penceresini gösterme.
 
-İhtiyacınız olacak bir **GUID** belgeniz için. Bu, belgenizin türü (128 bit) için benzersiz bir tanımlayıcıdır. AppWizard sizin için oluşturur — bunu burada açıklanan tekniği kullanırsanız, yeni kodu yeni oluşturulan AppWizard sunucu uygulamasından kopyalama, yalnızca "uygulama GUID'ini çalınacak". Aksi durumda, GUIDgen kullanabilirsiniz. BIN dizinindeki EXE yardımcı programı.
+Belgeniz için bir **GUID** gereklidir. Bu, belgenizin türü (128 bit) için benzersiz bir tanımlayıcıdır. AppWizard sizin için bir tane oluşturur. bu nedenle, yeni kodu yeni bir AppWizard tarafından oluşturulan sunucu uygulamasından kopyalamak için burada açıklanan tekniği kullanırsanız, GUID 'yi yalnızca bu uygulamadan "çalmaya" ekleyebilirsiniz. Aksi takdirde, BIN dizinindeki GUIDGEN.EXE yardımcı programını kullanabilirsiniz.
 
-"Bağlanmak" gereklidir, `COleTemplateServer` çağırarak belge şablon nesnesine `COleTemplateServer::ConnectTemplate`.
+' İ `COleTemplateServer` çağırarak nesnenizin belge şablonuna "bağlanması" gerekir `COleTemplateServer::ConnectTemplate` .
 
-Uygulamanızı bağımsız olarak çalıştırıldığında sistem kayıt defterini güncelleştirin. Kullanıcı taşınırsa bu şekilde. EXE uygulamanız için yeni konumundan çalıştıran Windows Sistem kayıt defteri veritabanında yeni konuma işaret edecek şekilde güncelleştirir.
+Uygulamanız tek başına çalıştırıldığında sistem kayıt defterini güncelleştirin. Bu şekilde, Kullanıcı öğesini taşıdıysanız. Uygulamanızı yeni konumundan çalıştırmak, uygulamanız için EXE Windows sistem kayıt veritabanını yeni konuma işaret edecek şekilde güncelleştirecek.
 
-Tüm bu değişiklikler ne AppWizard oluşturduğu üzerinde temel uyguladıktan sonra `InitInstance`, `InitInstance` (ve GUID ilgili) HIERSVR gibi okumalıdır için:
+Tüm bu değişiklikler için AppWizard 'ın ne oluşturduğuna göre uygulandıktan sonra `InitInstance` , `InitInstance` HIERSVR için (ve ilgili GUID) aşağıdaki gibi okumalı:
 
 ```cpp
 // this is the GUID for HIERSVR documents
@@ -523,9 +523,9 @@ BOOL COLEServerApp::InitInstance()
 }
 ```
 
-Yukarıdaki kod yeni bir kaynak kimliği için IDR_HIERSVRTYPE_SRVR_EMB anlamına geldiğini göreceksiniz. Başka bir kapsayıcı içinde gömülü bir belge düzenlendiğinde kullanılacak menü kaynağı budur. MFC/OLE1 gömülü bir öğe düzenlemek için belirli menü öğelerinin çalışma sırasında değiştirildi. Bir dosya tabanlı belge düzenleme yerine gömülü bir öğe düzenlenirken bir tamamen farklı menüsü yapısı kullanarak bu iki ayrı modları için farklı kullanıcı arabirimleri sağlamak üzere kolaylaşır. Daha sonra göreceğiniz gibi bir katıştırılmış nesne yerinde düzenlenirken bir tamamen ayrı bir menü kaynağı kullanılır.
+Yukarıdaki kodun yeni bir kaynak KIMLIĞINE IDR_HIERSVRTYPE_SRVR_EMB olduğunu fark edeceksiniz. Bu, başka bir kapsayıcıya eklenmiş bir belge düzenlendiğinde kullanılacak olan menü kaynağıdır. MFC/OLE1 içinde katıştırılmış bir öğeyi düzenlemeyle ilgili menü öğeleri anında değiştirilmiştir. Dosya tabanlı bir belgeyi düzenlemeniz yerine gömülü bir öğe düzenlenirken tamamen farklı bir menü yapısını kullanmak, bu iki ayrı mod için farklı kullanıcı arabirimleri sağlamayı çok daha kolay hale getirir. Daha sonra göreceğiniz gibi, yerleşik bir nesne yerinde düzenlenirken tamamen ayrı bir menü kaynağı kullanılır.
 
-Bu kaynak oluşturmak için kaynak betiği görsele yük C++ ve mevcut IDR_HIERSVRTYPE menü kaynağı kopyalayın. Yeni kaynak için (Bu, AppWizard kullandığı aynı adlandırma kuralı) IDR_HIERSVRTYPE_SRVR_EMB yeniden adlandırın. "Dosya Kaydet" için "dosyayı güncelleştir"; Sonraki değişiklik Bu kimliği ıd_fıle_update komutu verin. Ayrıca "Dosyayı farklı kaydet" "Dosya kopyayı Farklı Kaydet için"; değiştirme Bu kimliği ıd_fıle_save_copy_as komutu verin. Framework uygulamasını bu komutların ikisi de sağlar.
+Bu kaynağı oluşturmak için, kaynak betiğini Visual C++ yükleyin ve var olan IDR_HIERSVRTYPE Menu kaynağını kopyalayın. Yeni kaynağı IDR_HIERSVRTYPE_SRVR_EMB olarak yeniden adlandırın (Bu, AppWizard 'ın kullandığı adlandırma kuralıdır). Sonraki "Dosya Kaydet" i "dosya güncelleştirmesi" olarak değiştir; BT komut KIMLIĞI ID_FILE_UPDATE verin. Ayrıca "dosya farklı kaydet" i "dosya kopyasını farklı kaydet" olarak değiştirin; BT komut KIMLIĞI ID_FILE_SAVE_COPY_AS verin. Framework, bu komutların her ikisinin de uygulanmasını sağlar.
 
 ```Output
 \hiersvr\svritem.h(60) : error C2433: 'OLESTATUS' : 'virtual' not permitted on data declarations
@@ -535,20 +535,20 @@ Bu kaynak oluşturmak için kaynak betiği görsele yük C++ ve mevcut IDR_HIERS
 \hiersvr\svritem.h(60) : error C2501: 'OnSetData' : missing decl-specifiers
 ```
 
-Geçersiz kılmasını kaynaklanan hataların birçok `OnSetData`, başvuran beri **OLESTATUS** türü. **OLESTATUS** OLE1 döndürülen hatalar vermiştir. Bu şekilde değiştirilmiştir **HRESULT** OLE 2'deki MFC genellikle dönüştürür ancak bir **HRESULT** içine bir `COleException` hata içeren. Bu örnekte, geçersiz kılmasını `OnSetData` kaldırmak için kolay bir şey yapmak için bu nedenle artık gerekli değildir.
+`OnSetData` **OleStatus** türüne başvurduğundan, geçersiz kılmasından kaynaklanan birçok hata vardır. **OleStatus** , OLE1 'nin hata döndürdüğü yoldur. Bu, OLE 2 ' de **HRESULT** olarak değiştirilmiştir, ancak MFC genellikle bir **HRESULT** 'yi hata içeren bir öğesine dönüştürür `COleException` . Bu durumda, geçersiz kılma `OnSetData` artık gerekli değildir, bu nedenle en kolay şey bunu kaldırmalıdır.
 
 ```Output
 \hiersvr\svritem.cpp(30) : error C2660: 'COleServerItem::COleServerItem' : function does not take 1 parameters
 ```
 
-`COleServerItem` Oluşturucusu fazladan bir 'BOOL' parametresi alır. Bellek yönetimi üzerinde nasıl yapıldığını bu bayrağı belirler `COleServerItem` nesneleri. Bunu TRUE olarak ayarlandığında, bellek yönetimi, bu nesnelerin framework işler — bunlar artık gerekli olduğunda bunları siliniyor. HIERSVR kullanan `CServerItem` (türetilen `COleServerItem`) nesneler bu bayrağı FALSE olarak ayarlamanız, yerel veri parçası olarak. Bu, her bir sunucu öğesi silindiğinde belirlemek HIERSVR olanak tanır.
+`COleServerItem`Oluşturucu fazladan bir ' bool ' parametresi alır. Bu bayrak, nesnelerde bellek yönetiminin nasıl yapıldığını belirler `COleServerItem` . Bunu TRUE olarak ayarlayarak, çerçeve bu nesnelerin bellek yönetimini işler; artık gerekli olmadığında bunları silin. HIERSVR `CServerItem` `COleServerItem` kendi yerel verilerinin bir parçası olarak nesneleri kullanır, bu nedenle bu bayrağı false olarak ayarlayacaksınız. Bu, her bir sunucu öğesinin silinme sırasında HIERSVR 'nin belirlenmesini sağlar.
 
 ```Output
 \hiersvr\svritem.cpp(44) : error C2259: 'CServerItem' : illegal attempt to instantiate abstract class
 \hiersvr\svritem.cpp(44) : error C2259: 'CServerItem' : illegal attempt to instantiate abstract class
 ```
 
-Bu hatalar da ifade ettiği şekilde CServerItem içinde geçersiz olmayan bazı 'saf sanal' işlevleri vardır. Büyük olasılıkla buna OnDraw'ın parametre listesi değişti olgusu neden olur. Bu hatayı düzeltmek için değiştirme `CServerItem::OnDraw` gibi (yanı sıra svritem.h bildiriminde):
+Bu hatalar söz konusu olduğunda, Cserveröğesinde geçersiz kılınamayan bazı ' saf-sanal ' işlevler vardır. Büyük olasılıkla bunun nedeni, OnDraw 'in parametre listesinin değiştiği gerçedir. Bu hatayı onarmak için `CServerItem::OnDraw` aşağıdaki gibi değiştirin (Ayrıca svridıtem. h içindeki bildirim):
 
 ```cpp
 BOOL CServerItem::OnDraw(CDC* pDC, CSize& rSize)
@@ -559,7 +559,7 @@ BOOL CServerItem::OnDraw(CDC* pDC, CSize& rSize)
 }
 ```
 
-Yeni 'rSize' parametresidir. Bu, çizim boyutundaki doldurmak uygun değilse sağlar. Bu boyut olmalıdır **HIMETRIC**. Framework çağıran bu durumda, bu değer, doldurmak uygun değil, bu nedenle `OnGetExtent` uzantı alınamıyor. Uygulama, çalışması sahip olacaksınız `OnGetExtent`:
+Yeni parametre ' rSize '. Bu, uygun durumlarda çizimin boyutunu doldurmanıza olanak sağlar. Bu boyut, **Himetrik**içinde olmalıdır. Bu durumda, bu değerin ' de doldurulması uygun değildir, bu nedenle Framework `OnGetExtent` kapsamı almak için çağırır. Bunun çalışması için şunları uygulamanız gerekir `OnGetExtent` :
 
 ```cpp
 BOOL CServerItem::OnGetExtent(DVASPECT dwDrawAspect, CSize& rSize)
@@ -579,7 +579,7 @@ BOOL CServerItem::OnGetExtent(DVASPECT dwDrawAspect, CSize& rSize)
     int)__far const ' : cannot convert parameter 1 from 'int __far *' to 'struct ::tagPOINT __far *'
 ```
 
-Öğe boyutunun dönüştürülür CServerItem::CalcNodeSize işlevinde **HIMETRIC** depolanan *m_rectBounds*. Belgelenmemiş '*m_rectBounds*' üyesi `COleServerItem` yok (ile kısmen değiştirilmiştir *m_sizeExtent*, ancak OLE 2'de bu üye değerindenbirazdahafarklıbirkullanım*m_rectBounds* OLE1 içinde yaptığınız). Ayar yerine **HIMETRIC** boyutu bu üye değişkeni, onu döneceksiniz. Bu dönüş değeri kullanılır `OnGetExtent`, daha önce uygulanmış.
+CServerItem:: CalcNodeSize işlevinde, öğe boyutu **Himetrik** 'e dönüştürülüp *m_rectBounds*depolanır. Belgelenmemiş '*m_rectBounds*' üyesi `COleServerItem` yok ( *m_sizeExtent*kısmen değiştirilmiştir, ancak OLE 2 ' de bu üyenin OLE1 içinde *m_rectBounds* çok farklı bir kullanımı vardır). **Himetrik** boyutunu bu üye değişkenine ayarlamak yerine, geri döneceksiniz. Bu dönüş değeri `OnGetExtent` , daha önce uygulanan ' de kullanılır.
 
 ```cpp
 CSize CServerItem::CalcNodeSize()
@@ -598,15 +598,15 @@ CSize CServerItem::CalcNodeSize()
 }
 ```
 
-Ayrıca CServerItem geçersiz kılar `COleServerItem::OnGetTextData`. Bu işlev, MFC/OLE kullanımdan kalkmıştır ve farklı bir mekanizma tarafından değiştirilir. MFC OLE örnek MFC 3.0 sürümünü [HIERSVR](../overview/visual-cpp-samples.md) geçersiz kılarak bu işlevselliğini uygular `COleServerItem::OnRenderFileData`. Bu işlev OnGetTextData geçersiz kılma kaldırabilmeniz için bu temel bağlantı noktası için önemli değil.
+CServerItem ayrıca geçersiz kılar `COleServerItem::OnGetTextData` . Bu işlev MFC/OLE 'de kullanımdan kalkmıştır ve farklı bir mekanizmaya göre değiştirilmiştir. MFC OLE örnek [Hiersvr](../overview/visual-cpp-samples.md) 'ın MFC 3,0 sürümü bu işlevselliği geçersiz kılarak uygular `COleServerItem::OnRenderFileData` . Bu temel bağlantı noktası için bu işlevsellik önemli değildir, bu nedenle OnGetTextData geçersiz kılmayı kaldırabilirsiniz.
 
-Ele alınmayan çok daha fazla hata svritem.cpp de vardır. Bunlar "gerçek" hatalar değildir — önceki hatalarının neden yalnızca hataları.
+Svridıtem. cpp içinde açıklanmayan birçok hata daha vardır. Bunlar "gerçek" hatalar değildir; yalnızca önceki hatalardan kaynaklanan hatalar oluşur.
 
 ```Output
 \hiersvr\svrview.cpp(325) : error C2660: 'CopyToClipboard' : function does not take 2 parameters
 ```
 
-`COleServerItem::CopyToClipboard` artık `bIncludeNative` bayrağı. İlk parametre kaldırmak için yerel veri (sunucu öğenin serileştirme işlevi tarafından yazılan veriler) her zaman kopyalanır. Ayrıca, `CopyToClipboard` FALSE döndürmek yerine bir hata meydana geldiğinde bir özel durum oluşturur. Kod için CServerView::OnEditCopy aşağıdaki gibi değiştirin:
+`COleServerItem::CopyToClipboard` Artık `bIncludeNative` bayrağı desteklememektedir. Yerel veriler (sunucu öğesinin serileştirme işlevi tarafından yazılan veriler) her zaman kopyalanır, bu nedenle ilk parametreyi kaldırırsınız. Ayrıca, `CopyToClipboard` false döndürmek yerine bir hata oluştuğunda bir özel durum oluşturur. CServerView:: OnEditCopy kodunu aşağıdaki gibi değiştirin:
 
 ```cpp
 void CServerView::OnEditCopy()
@@ -626,29 +626,29 @@ void CServerView::OnEditCopy()
 }
 ```
 
-Daha fazla hata oluştu daha OCLIENT aynı sürümü için HIERSVR MFC 2.0 sürümünü derlemeden kaynaklanan rağmen vardı gerçekten daha az değişiklik.
+HIERSVR 'ın aynı OCLIENT sürümüne ait olan MFC 2,0 sürümünün derlenmesi sonucu daha fazla hata olsa da, aslında daha az değişiklik yapılmıştır.
 
-Bu noktada HIERSVR derleme ve bağlama ve OLE sunucusu olarak, ancak sonraki uygulanacak yerinde düzenleme özelliği işlev.
+Bu noktada, HIERSVR bir OLE sunucusu olarak derleyip, sonra da uygulanacak yerinde Düzenle özelliği olmadan bir OLE sunucusu olarak işlev görür.
 
-## <a name="adding-visual-editing"></a>"Görsel düzenleme" ekleme
+### <a name="adding-visual-editing"></a>"Görsel düzenlemesi" ekleniyor
 
-Bu sunucu uygulaması için "Görsel düzenleme" (veya yerinde etkinleştirme) eklemek için ölçeklendirilmesini gereken yalnızca birkaç şey vardır:
+Bu sunucu uygulamasına "görsel düzen" (veya yerinde etkinleştirme) eklemek için, şunları yapmanız gereken birkaç nokta vardır:
 
-- Öğesi yerinde etkin olduğunda kullanılacak bir özel menü kaynağı ihtiyacınız vardır.
+- Öğe yerinde etkin olduğunda kullanılacak özel bir menü kaynağına ihtiyacınız vardır.
 
-- Bu nedenle yalnızca bir alt kümesi ile (yukarıda belirtilen menü kaynağı ile eşleşen) menü komutlarını sunucudan kullanılabilir eşleştirmek için normal araç çubuğu araç gerekir bu uygulama bir araç vardır.
+- Bu uygulamada bir araç çubuğu bulunur, bu nedenle sunucudan kullanılabilen menü komutlarıyla eşleştirmek için normal araç çubuğunun yalnızca bir alt kümesine sahip bir araç çubuğu gerekir (yukarıda belirtilen menü kaynağıyla eşleşir).
 
-- Türetilen bir yeni sınıf ihtiyacınız `COleIPFrameWnd` yerinde kullanıcı arabirimi sağlayan (benzer şekilde; CMainFrame, türetilen `CMDIFrameWnd`, MDI kullanıcı arabirimini sağlar).
+- Noktadan türetilmiş yeni bir sınıfa ihtiyacınız vardır `COleIPFrameWnd` (diğer bir deyişle, ' den türetilen cana bilgisayar, `CMDIFrameWnd` MDI Kullanıcı arabirimini sağlar).
 
-- Bu özel kaynak ve sınıflarını hakkında framework söylemeniz gerekir.
+- Çerçeveye bu özel kaynaklar ve sınıflar hakkında söylemeniz gerekir.
 
-Menü kaynağı oluşturmak kolaydır. Visual çalıştırma C++, menü kaynağı IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağı kopyalayın. Yalnızca düzenleme ve Yardım menüsü açılır sol menü değiştirin. Düzenle ve Yardım menüler arasında menü iki ayırıcılar ekleyin (gibi görünmelidir: Düzen &#124; &#124; yardımcı). Bu ayırıcılar anlamı ve nasıl sunucusu ve menüler birleştirilir hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: Menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
+Menü kaynağı kolayca oluşturulur. Visual C++ çalıştırın, menü kaynak IDR_HIERSVRTYPE IDR_HIERSVRTYPE_SRVR_IP adlı bir menü kaynağına kopyalayın. Menüyü yalnızca Düzenle ve yardım menüsü açılan pencereleri sol olacak şekilde değiştirin. Düzenleme ve yardım menüleri arasındaki menüye iki ayırıcı ekleyin (şöyle görünmelidir: Düzenle &#124;&#124; yardım). Bu ayırıcıların anlamı ve sunucu ve kapsayıcı menülerinin nasıl birleştirileceği hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md).
 
-Alt araç çubuğu için bit eşlem işaretli bir "Sunucu" seçeneği ile yeni bir AppWizard tarafından oluşturulan uygulama adresinden kopyalayarak kolayca oluşturulabilir. Bu bit eşlem ardından Visual C++'ta içeri aktarılabilir. Bit eşlem, bir kimliği IDR_HIERSVRTYPE_SRVR_IP verdiğinizden emin olun.
+Alt küme araç çubuğunun bit eşlemi, bir "sunucu" seçeneği işaretli olan yeni bir AppWizard tarafından oluşturulan uygulamadan kopyalayarak kolayca oluşturulabilir. Bu bit eşlem daha sonra Visual C++ içine aktarılabilir. Bit eşlemde IDR_HIERSVRTYPE_SRVR_IP bir KIMLIK vermediğinizden emin olun.
 
-Türetilen sınıfın `COleIPFrameWnd` sunucu desteği ile oluşturulan AppWizard uygulamadan kopyalanabilir. Her iki dosya IPFRAME kopyalayın. CPP ve IPFRAME. H ve bunları projeye ekleyin. Emin olun `LoadBitmap` IDR_HIERSVRTYPE_SRVR_IP, önceki adımda oluşturduğunuz bit eşlem çağrı başvurur.
+Öğesinden türetilen sınıf, `COleIPFrameWnd` sunucu desteğiyle birlikte bir AppWizard tarafından oluşturulan uygulamadan kopyalanabilir. Her iki dosyayı da Kopyala, IPFRAME. CPP ve IPFRAME. Ve bunları projeye ekleyin. `LoadBitmap`Çağrının, önceki adımda oluşturulan bit eşlem IDR_HIERSVRTYPE_SRVR_IP başvurduğundan emin olun.
 
-Tüm sınıfları ve yeni kaynaklar oluşturulur, framework bunlar hakkında bilir (ve bu uygulama artık yerinde düzenleme desteklediğini biliyor) gerekli kodu ekleyin. Bu için bazı daha fazla parametre ekleyerek yapılır `SetServerInfo` Çağır `InitInstance` işlevi:
+Tüm yeni kaynaklar ve sınıflar oluşturuldığına göre, Framework 'ün bu bilgileri bilmesi için gerekli kodu ekleyin (ve bu uygulamanın artık yerinde düzenlemeleri desteklediğini bilir). Bu, işlevdeki çağrıya daha fazla parametre eklenerek yapılır `SetServerInfo` `InitInstance` :
 
 ```cpp
 pDocTemplate->SetServerInfo(IDR_HIERSVRTYPE_SRVR_EMB,
@@ -656,7 +656,7 @@ pDocTemplate->SetServerInfo(IDR_HIERSVRTYPE_SRVR_EMB,
     RUNTIME_CLASS(CInPlaceFrame));
 ```
 
-Şimdi, yerinde çalışmaya hazır tüm kapsayıcıdaki yerinde etkinleştirmeyi de destekler. Ancak, yine de kodda gizlenen bir küçük hata yoktur. Kullanıcının sağ fare düğmesine bastığında görüntülenen bir bağlam menüsü HIERSVR destekler. Bu menü HIERSVR tamamen açık, ancak bir gömme yerinde düzenlenirken çalışmaz çalışır. Nedeni bu tek satıra CServerView::OnRButtonDown kod sabitlenebilir:
+Artık yerinde etkinleştirmeyi destekleyen hiçbir kapsayıcıda yerinde çalışmaya hazırdır. Ancak, kodda hala küçük bir hata var. HIERSVR, Kullanıcı farenin sağ düğmesine bastığında görünen bir bağlam menüsünü destekler. Bu menü, HIERSVR tamamen açık olduğunda çalışır, ancak bir ekleme yerinde düzenlenirken çalışmaz. Nedeni, CServerView:: Onrbuttonazaltma içindeki bu tek kod satırına sabitlenebilir:
 
 ```cpp
 pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
@@ -665,7 +665,7 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
     AfxGetApp()->m_pMainWnd);
 ```
 
-Başvuru fark `AfxGetApp()->m_pMainWnd`. Sunucu yerinde etkin olduğunda, ana pencere vardır ve m_pMainWnd ayarlanır, ancak genellikle görünmez durumdadır. Bu pencereyi ayrıca başvuruyor *ana* uygulama penceresinin sunucu tam olarak olduğunda görüntülenen MDI çerçeve penceresinin açın veya tek başına çalıştırın. Etkin pencereyi başvurmuyor — yerinde zaman etkin olduğu bir çerçeve penceresi türetilen `COleIPFrameWnd`. Bile, düzenleme, yerinde MFC'nin bu sürümünü yeni bir işlev eklerse doğru etkin pencereyi almaya `AfxGetMainWnd`. Genellikle, bu işlevi yerine kullanması gerekir `AfxGetApp()->m_pMainWnd`. Bu kod şu şekilde değiştirmesi gerekir:
+Başvuruya dikkat edin `AfxGetApp()->m_pMainWnd` . Sunucu yerinde etkinleştirildiğinde, bir ana pencere olur ve m_pMainWnd ayarlanır, ancak genellikle görünmez. Ayrıca, bu pencere uygulamanın *ana* penceresine, sunucu tamamen açık olduğunda veya tek başına ÇALıŞTıRıLDıĞıNDA görünen MDI çerçevesi penceresi anlamına gelir. Yerinde etkinleştirilen bir çerçeve penceresi olduğunda, etkin çerçeve penceresine başvurmaz `COleIPFrameWnd` . Yerinde düzenlemede bile doğru etkin pencereyi almak için, MFC 'nin bu sürümü yeni bir işlev ekler `AfxGetMainWnd` . Genellikle, yerine bu işlevi kullanmanız gerekir `AfxGetApp()->m_pMainWnd` . Bu kodun aşağıdaki gibi değişmesi gerekir:
 
 ```cpp
 pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
@@ -674,17 +674,17 @@ pMenu->TrackPopupMenu(TPM_CENTERALIGN | TPM_RIGHTBUTTON,
     AfxGetMainWnd());
 ```
 
-Artık işlevsel yerinde etkinleştirme için en düşük düzeyde etkin bir OLE sunucusu var. Ancak yine de birçok özellik MFC/OLE1 kullanılamayan MFC/OLE 2 ile kullanılabilir. HIERSVR örnek hakkında daha fazla fikir için uygulamak istediğiniz özelliklere bakın. HIERSVR uygulayan özelliklerinden bazıları aşağıda listelenmiştir:
+Artık işlevsel bir yerinde etkinleştirme için en düşük düzeyde etkin bir OLE sunucunuz var. Ancak MFC/OLE1 'de kullanılamayan MFC/OLE 2 ' de kullanılabilen çok sayıda özellik vardır. Uygulamak isteyebileceğiniz özelliklerle ilgili daha fazla fikir için HIERSVR örneğine bakın. HIERSVR 'nin uyguladığı özelliklerden bazıları aşağıda listelenmiştir:
 
-- Kapsayıcıya göre doğru WYSIWYG davranışı için yakınlaştırma.
+- Yakınlaştırma, kapsayıcıya göre gerçek WYSıWYG davranışı için.
 
-- Sürükle / bırak ve özel Pano biçimi.
+- Sürükle/bırak ve özel bir Pano biçimi.
 
-- Kapsayıcı penceresi seçim olarak kaydırma değiştirilir.
+- Seçim değiştiği için kapsayıcı penceresini kaydırma.
 
-MFC 3.0 HIERSVR örnek, biraz farklı bir tasarım, sunucu öğeleri için de kullanır. Bu işlem, bellek korunmasına yardımcı olur ve bağlantılarınızı daha esnek hale getirir. HIERSVR 2.0 sürümü ile ağacında her bir düğümü *olduğu bir* `COleServerItem`. `COleServerItem` kesinlikle gerekli her bu düğümler için olandan biraz daha fazla ek yük taşıyan ancak `COleServerItem` etkin her bağlantı için gereklidir. Ancak çoğunlukla, çok az sayıda etkin bağlantıların belirli bir zamanda. Bu daha verimli hale getirmek için MFC'nin bu sürümünü, HIERSVR düğümden ayıran `COleServerItem`. Hem bir CServerNode sahiptir ve `CServerItem` sınıfı. `CServerItem` (Türetilen `COleServerItem`) yalnızca gerektiğinde oluşturulur. Bu belirli düğüm, belirli bağlantı kullanarak kapsayıcı (veya kapsayıcıları) durdurduktan sonra CServerNode ile ilişkili CServerItem nesnesi silindi. Bu, daha verimli ve daha esnek tasarımdır. Esnek birden fazla seçim bağlantıları ile ilgilenirken halinde sunulur. Bu iki HIERSVR sürümleri hiçbiri birden fazla seçimi destekler, ancak çok daha kolay eklemek için (ve bu seçimleri bağlantılarını desteklemek için) HIERSVR, MFC 3.0 sürümü ile bu yana `COleServerItem` yerel verileri ayrılır.
+MFC 3,0 ' de HIERSVR örneği, sunucu öğeleri için biraz farklı bir tasarım kullanır. Bu, belleğin korunmasına yardımcı olur ve bağlantılarınızın daha esnek olmasını sağlar. 2,0 sürümü ile birlikte, ağaçtaki her düğüm *-a olur* `COleServerItem` . `COleServerItem` Bu düğümlerin her biri için kesinlikle gerekli olandan biraz daha fazla yük taşır, ancak `COleServerItem` her etkin bağlantı için bir gereklidir. Ancak çoğu zaman, belirli bir zamanda çok az sayıda etkin bağlantı vardır. Bunu daha verimli hale getirmek için, MFC 'nin bu sürümündeki HIERSVR düğümü öğesinden ayırır `COleServerItem` . Hem CServerNode hem de `CServerItem` sınıfına sahiptir. `CServerItem`(Türetilen `COleServerItem` ) yalnızca gerekli olarak oluşturulur. Kapsayıcı (veya kapsayıcılar) bu belirli bir düğüme yönelik bu bağlantıyı kullanmayı durdurduktan sonra, CServerNode ile ilişkili CServerItem nesnesi silinir. Bu tasarım daha verimli ve daha esnektir. Esnekliği, birden çok seçim bağlantısı ile ilgilenirken ' de gelir. Bu iki iki sürümü de birden çok seçimi desteklemez, ancak yerel verilerden ayrıldığından, HIERSVR 'nin MFC 3,0 sürümü ile birlikte eklemek (ve bu seçimlere yönelik bağlantıları desteklemek) çok daha kolay olacaktır `COleServerItem` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

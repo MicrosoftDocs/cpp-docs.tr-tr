@@ -6,24 +6,24 @@ f1_keywords:
 helpviewer_keywords:
 - C3468
 ms.assetid: cfd320db-2f6e-4e0d-ba02-e79ece87e1e0
-ms.openlocfilehash: e4a507dad1d795e703e8db7f8704aad959c95b6f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f22a01c5c26a55a5908c20f3b123971fadd43544
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757315"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742820"
 ---
 # <a name="compiler-error-c3468"></a>Derleyici hatası C3468
 
 ' Type ': bir türü yalnızca bir derlemeye iletebilirsiniz:
 
-'`file`' bir derleme değil
+' `file` ' bir derleme değil
 
 Yalnızca bir derlemedeki türler iletilebilir.
 
-Daha fazla bilgi için bkz. [tür iletmeC++(/CLI)](../../extensions/type-forwarding-cpp-cli.md).
+Daha fazla bilgi için bkz. [tür iletme (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek bir modül oluşturur.
 
@@ -32,8 +32,6 @@ Aşağıdaki örnek bir modül oluşturur.
 // compile with: /LN /clr
 public ref class R {};
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3468 oluşturur.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2146
 ms.assetid: 6bfb7de6-6723-4486-9350-c66ef88d7a64
-ms.openlocfilehash: c1a790902af92d72eb73be7fc2321762ab01fd8c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff9dc9861643afa364db4b6364fa5e7bb33e8c8c
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214769"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742625"
 ---
 # <a name="compiler-error-c2146"></a>Derleyici hatası C2146
 
@@ -25,7 +25,7 @@ sözdizimi hatası: ' identifier ' tanımlayıcıdan önce ' token ' eksik
 
 Bu hatanın nedeni bir yazım hatası olabilir. Hata [C2065](../../error-messages/compiler-errors-1/compiler-error-c2065.md) genellikle bu hatadan önce gelir.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2146 oluşturur.
 
@@ -43,8 +43,6 @@ int main() {
    int t x;   // C2146 : missing semicolon before 'x'
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Bu hata, Visual Studio .NET 2003: eksik anahtar sözcüğü için yapılan derleyici uygunluk işinin sonucu olarak da oluşturulabilir **`typename`** .
 
@@ -68,8 +66,6 @@ X<T>::Y func() { }   // C2146
 template <typename T>
 typename X<T>::Y func() { }
 ```
-
-## <a name="example"></a>Örnek
 
 Ayrıca, bu hatayı Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak görürsünüz: açık uzmanlık, artık birincil şablondan şablon parametreleri bulamamıştı.
 

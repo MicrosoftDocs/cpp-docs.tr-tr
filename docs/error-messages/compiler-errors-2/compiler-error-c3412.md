@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3412
 ms.assetid: aa4dd43b-54ce-4cda-85c1-1a77dd6e34fa
-ms.openlocfilehash: ad241b656464746333760cfcbc134c91e49bf44e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6918e3be0a0288bab50d63a188bc33df87fe7754
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761422"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742898"
 ---
 # <a name="compiler-error-c3412"></a>Derleyici hatası C3412
 
@@ -19,7 +19,7 @@ ms.locfileid: "74761422"
 
 Şablon sınıf kapsamında, yalnızca genel veya ad alanı kapsamında özelleştirilemez.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3412 oluşturur.
 
@@ -31,8 +31,6 @@ struct S {
    struct S<int> {};   // C3412 in a class
 };
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnekte olası bir çözüm gösterilmektedir.
 

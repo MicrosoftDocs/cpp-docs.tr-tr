@@ -63,18 +63,18 @@ helpviewer_keywords:
 - unary_delegate_noreturn function [STL/CLR]
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-ms.openlocfilehash: 9349de8c42bbed72384ea2b61b39bdea82172f9d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5cfec19ad8a25d3b44647e490b2c328a5639e675
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221438"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743314"
 ---
 # <a name="functional-stlclr"></a>işlevsel (STL/CLR)
 
 `<cliext/functional>`Bir dizi şablon sınıfı ve ilgili şablon temsilcileri ve işlevleri tanımlamak IÇIN STL/CLR üstbilgisini ekleyin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <functional>
@@ -88,7 +88,7 @@ ms.locfileid: "87221438"
 
 ## <a name="declarations"></a>Bildirimler
 
-|Temsilci|Açıklama|
+|Temsilci|Description|
 |--------------|-----------------|
 |[binary_delegate (STL/CLR)](#binary_delegate)|İki bağımsız değişken temsilcisi.|
 |[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|İki bağımsız değişken temsilcisi döndürüyor **`void`** .|
@@ -126,7 +126,7 @@ ms.locfileid: "87221438"
 
 ## <a name="members"></a>Üyeler
 
-## <a name="binary_delegate-stlclr"></a><a name="binary_delegate"></a>binary_delegate (STL/CLR)
+## <a name="binary_delegate-stlclr"></a><a name="binary_delegate"></a> binary_delegate (STL/CLR)
 
 Genereic sınıfı iki bağımsız değişkenli bir temsilciyi açıklar. Bağımsız değişkeni ve dönüş türleri bakımından bir temsilci belirtin.
 
@@ -202,7 +202,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="binary_delegate_noreturn-stlclr"></a><a name="binary_delegate_noreturn"></a>binary_delegate_noreturn (STL/CLR)
+## <a name="binary_delegate_noreturn-stlclr"></a><a name="binary_delegate_noreturn"></a> binary_delegate_noreturn (STL/CLR)
 
 Genereic sınıfı, döndüren iki bağımsız değişkenli bir temsilciyi açıklar **`void`** . Bağımsız değişkeni olarak bir temsilci belirtin.
 
@@ -272,7 +272,7 @@ compare(a, b) = True
 compare(b, a) = False
 ```
 
-## <a name="binary_negate-stlclr"></a><a name="binary_negate"></a>binary_negate (STL/CLR)
+## <a name="binary_negate-stlclr"></a><a name="binary_negate"></a> binary_negate (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, depolanan iki bağımsız değişkenli functor mantıksal DEĞIL ' i döndüren bir functor tanımlar. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
@@ -305,9 +305,9 @@ public:
 *Tablolar*<br/>
 Depolanan functor türü.
 
-## <a name="member-functions"></a>Üye İşlevleri
+### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
@@ -315,7 +315,7 @@ Depolanan functor türü.
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 |stored_function_type|Functor türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |binary_negate|Functor 'ı oluşturur.|
 
@@ -386,11 +386,11 @@ int main()
 1 0
 ```
 
-## <a name="bind1st-stlclr"></a><a name="bind1st"></a>bind1st (STL/CLR)
+## <a name="bind1st-stlclr"></a><a name="bind1st"></a> bind1st (STL/CLR)
 
 `binder1st`Bağımsız değişken ve functor için bir üretir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun,
@@ -467,11 +467,11 @@ int main()
 -1 0
 ```
 
-## <a name="bind2nd-stlclr"></a><a name="bind2nd"></a>bind2nd (STL/CLR)
+## <a name="bind2nd-stlclr"></a><a name="bind2nd"></a> bind2nd (STL/CLR)
 
 `binder2nd`Bağımsız değişken ve functor için bir üretir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun,
@@ -548,7 +548,7 @@ int main()
 0 -1
 ```
 
-## <a name="binder1st-stlclr"></a><a name="binder1st"></a>binder1st (STL/CLR)
+## <a name="binder1st-stlclr"></a><a name="binder1st"></a> binder1st (STL/CLR)
 
 Şablon sınıfı, çağrıldığında bir bağımsız değişken functor tanımlar, bu, çağrıldığında, depolanan ilk bağımsız değişkeni ve sağlanan ikinci bağımsız değişkeni ile çağrılan, depolanan iki bağımsız değişkenli functor 'u döndürür. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
@@ -582,7 +582,7 @@ Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
@@ -590,7 +590,7 @@ Depolanan functor türü.
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 |stored_function_type|Functor türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |binder1st|Functor 'ı oluşturur.|
 
@@ -653,7 +653,7 @@ int main()
 -1 0
 ```
 
-## <a name="binder2nd-stlclr"></a><a name="binder2nd"></a>binder2nd (STL/CLR)
+## <a name="binder2nd-stlclr"></a><a name="binder2nd"></a> binder2nd (STL/CLR)
 
 Şablon sınıfı, çağrıldığında bir bağımsız değişken functor tanımlar, çağrıldığında, sağlanan ilk bağımsız değişkeni ve depolanan ikinci bağımsız değişkeni ile çağrılan, depolanan iki bağımsız değişkenli functor ' ı döndürür. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
@@ -685,9 +685,9 @@ public:
 *Tablolar*<br/>
 Depolanan functor türü.
 
-## <a name="member-functions"></a>Üye İşlevleri
+### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
@@ -695,7 +695,7 @@ Depolanan functor türü.
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 |stored_function_type|Functor türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |binder2nd|Functor 'ı oluşturur.|
 
@@ -758,7 +758,7 @@ int main()
 0 -1
 ```
 
-## <a name="divides-stlclr"></a><a name="divides"></a>böler (STL/CLR)
+## <a name="divides-stlclr"></a><a name="divides"></a> böler (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, ikinciden bölünen ilk bağımsız değişkeni döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -792,14 +792,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |böler|Functor 'ı oluşturur.|
 
@@ -859,7 +859,7 @@ int main()
 2 3
 ```
 
-## <a name="equal_to-stlclr"></a><a name="equal_to"></a>equal_to (STL/CLR)
+## <a name="equal_to-stlclr"></a><a name="equal_to"></a> equal_to (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciye eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -893,14 +893,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |equal_to|Functor 'ı oluşturur.|
 
@@ -960,7 +960,7 @@ int main()
 1 0
 ```
 
-## <a name="greater-stlclr"></a><a name="greater"></a>daha büyük (STL/CLR)
+## <a name="greater-stlclr"></a><a name="greater"></a> daha büyük (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden büyükse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -994,14 +994,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |büyüktür|Functor 'ı oluşturur.|
 
@@ -1061,7 +1061,7 @@ int main()
 1 0
 ```
 
-## <a name="greater_equal-stlclr"></a><a name="greater_equal"></a>greater_equal (STL/CLR)
+## <a name="greater_equal-stlclr"></a><a name="greater_equal"></a> greater_equal (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden büyük veya buna eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1095,14 +1095,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |greater_equal|Functor 'ı oluşturur.|
 
@@ -1162,7 +1162,7 @@ int main()
 1 0
 ```
 
-## <a name="less-stlclr"></a><a name="less"></a>daha az (STL/CLR)
+## <a name="less-stlclr"></a><a name="less"></a> daha az (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçükse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1196,14 +1196,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |daha az|Functor 'ı oluşturur.|
 
@@ -1263,7 +1263,7 @@ int main()
 0 1
 ```
 
-## <a name="less_equal-stlclr"></a><a name="less_equal"></a>less_equal (STL/CLR)
+## <a name="less_equal-stlclr"></a><a name="less_equal"></a> less_equal (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçük veya ona eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1297,14 +1297,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |less_equal|Functor 'ı oluşturur.|
 
@@ -1364,7 +1364,7 @@ int main()
 0 1
 ```
 
-## <a name="logical_and-stlclr"></a><a name="logical_and"></a>logical_and (STL/CLR)
+## <a name="logical_and-stlclr"></a><a name="logical_and"></a> logical_and (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ve ikinci test doğru olduğunda true değeri döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1398,14 +1398,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |logical_and|Functor 'ı oluşturur.|
 
@@ -1465,7 +1465,7 @@ int main()
 1 0
 ```
 
-## <a name="logical_not-stlclr"></a><a name="logical_not"></a>logical_not (STL/CLR)
+## <a name="logical_not-stlclr"></a><a name="logical_not"></a> logical_not (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca bağımsız değişkeninin yanlış olarak test edildiğinde true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1497,13 +1497,13 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |argument_type|Functor bağımsız değişkeninin türü.|
 |delegate_type|Genel temsilcinin türü.|
 |result_type|Functor sonucunun türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |logical_not|Functor 'ı oluşturur.|
 
@@ -1555,7 +1555,7 @@ int main()
 0 1
 ```
 
-## <a name="logical_or-stlclr"></a><a name="logical_or"></a>logical_or (STL/CLR)
+## <a name="logical_or-stlclr"></a><a name="logical_or"></a> logical_or (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ya da ikinci testlerin true olması durumunda true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1589,14 +1589,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |logical_or|Functor 'ı oluşturur.|
 
@@ -1656,7 +1656,7 @@ int main()
 1 0
 ```
 
-## <a name="minus-stlclr"></a><a name="minus"></a>eksi (STL/CLR)
+## <a name="minus-stlclr"></a><a name="minus"></a> eksi (STL/CLR)
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni ikinci kez döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1690,14 +1690,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |eksi|Functor 'ı oluşturur.|
 
@@ -1757,7 +1757,7 @@ int main()
 2 2
 ```
 
-## <a name="modulus-stlclr"></a><a name="modulus"></a>mod (STL/CLR)
+## <a name="modulus-stlclr"></a><a name="modulus"></a> mod (STL/CLR)
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni döndürür bir, çağrıldığında bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1791,14 +1791,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |mod|Functor 'ı oluşturur.|
 
@@ -1858,7 +1858,7 @@ int main()
 1 0
 ```
 
-## <a name="multiplies-stlclr"></a><a name="multiplies"></a>çarpar (STL/CLR)
+## <a name="multiplies-stlclr"></a><a name="multiplies"></a> çarpar (STL/CLR)
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni ikinci kez döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1892,14 +1892,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |çarpar|Functor 'ı oluşturur.|
 
@@ -1959,7 +1959,7 @@ int main()
 8 3
 ```
 
-## <a name="negate-stlclr"></a><a name="negate"></a>Negate (STL/CLR)
+## <a name="negate-stlclr"></a><a name="negate"></a> Negate (STL/CLR)
 
 Şablon sınıfı, çağrıldığında bağımsız değişkenini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -1991,13 +1991,13 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |argument_type|Functor bağımsız değişkeninin türü.|
 |delegate_type|Genel temsilcinin türü.|
 |result_type|Functor sonucunun türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |olumsuzlaştırma|Functor 'ı oluşturur.|
 
@@ -2049,7 +2049,7 @@ int main()
 -4 3
 ```
 
-## <a name="not_equal_to-stlclr"></a><a name="not_equal_to"></a>not_equal_to (STL/CLR)
+## <a name="not_equal_to-stlclr"></a><a name="not_equal_to"></a> not_equal_to (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciye eşit değilse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -2083,14 +2083,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |not_equal_to|Functor 'ı oluşturur.|
 
@@ -2150,11 +2150,11 @@ int main()
 0 1
 ```
 
-## <a name="not1-stlclr"></a><a name="not1"></a>Not1 (STL/CLR)
+## <a name="not1-stlclr"></a><a name="not1"></a> Not1 (STL/CLR)
 
 Bir `unary_negate` functor için bir üretir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun>
@@ -2222,11 +2222,11 @@ int main()
 1 0
 ```
 
-## <a name="not2-stlclr"></a><a name="not2"></a>NOT2 (STL/CLR)
+## <a name="not2-stlclr"></a><a name="not2"></a> NOT2 (STL/CLR)
 
 Bir `binary_negate` functor için bir üretir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 template<typename Fun>
@@ -2303,7 +2303,7 @@ int main()
 1 0
 ```
 
-## <a name="plus-stlclr"></a><a name="plus"></a>Plus (STL/CLR)
+## <a name="plus-stlclr"></a><a name="plus"></a> Plus (STL/CLR)
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni artı ikinci değeri döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
@@ -2337,14 +2337,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |artı|Functor 'ı oluşturur.|
 
@@ -2404,7 +2404,7 @@ int main()
 6 4
 ```
 
-## <a name="unary_delegate-stlclr"></a><a name="unary_delegate"></a>unary_delegate (STL/CLR)
+## <a name="unary_delegate-stlclr"></a><a name="unary_delegate"></a> unary_delegate (STL/CLR)
 
 Genereic sınıfı, tek değişkenli bir temsilciyi açıklar. Bağımsız değişkeni ve dönüş türleri bakımından bir temsilci belirtin.
 
@@ -2470,7 +2470,7 @@ hash(L'a') = 5
 hash(L'b') = 22
 ```
 
-## <a name="unary_delegate_noreturn-stlclr"></a><a name="unary_delegate_noreturn"></a>unary_delegate_noreturn (STL/CLR)
+## <a name="unary_delegate_noreturn-stlclr"></a><a name="unary_delegate_noreturn"></a> unary_delegate_noreturn (STL/CLR)
 
 Genereic sınıfı, döndüren tek değişkenli bir temsilciyi açıklar **`void`** . Bağımsız değişken türü açısından bir temsilci belirtin.
 
@@ -2533,7 +2533,7 @@ hash(a) = 5
 hash(b) = 22
 ```
 
-## <a name="unary_negate-stlclr"></a><a name="unary_negate"></a>unary_negate (STL/CLR)
+## <a name="unary_negate-stlclr"></a><a name="unary_negate"></a> unary_negate (STL/CLR)
 
 Şablon sınıfı, çağrıldığında, depolanan tek değişkenli functor mantıksal DEĞIL ' i döndüren bir functor tanımlar. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
@@ -2566,13 +2566,13 @@ Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Açıklama|
+|Tür Tanımı|Description|
 |---------------------|-----------------|
 |argument_type|Functor bağımsız değişkeninin türü.|
 |delegate_type|Genel temsilcinin türü.|
 |result_type|Functor sonucunun türü.|
 
-|Üye|Açıklama|
+|Üye|Description|
 |------------|-----------------|
 |unary_negate|Functor 'ı oluşturur.|
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2660
 ms.assetid: 2e01a1db-4f00-4df6-a04d-cb6f70a6922b
-ms.openlocfilehash: febeb75cbde6738bd9079b7bd86f88c521c29e40
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 179cdc6379fd26f5acd436d5ca6cacc08df8dce3
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756064"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743249"
 ---
 # <a name="compiler-error-c2660"></a>Derleyici hatası C2660
 
@@ -23,9 +23,9 @@ C2660, aynı ada sahip bir MFC üye işlevi yerine yanlışlıkla bir Windows AP
 
 - İşlev çağrısını üye işlev çağrısının biçimiyle uyumlu olacak şekilde ayarlayın.
 
-- Derleyiciye, genel ad alanında işlev adını arayacaklarını söylemek için kapsam çözümleme işlecini (`::`) kullanın.
+- `::`Derleyiciye, genel ad alanında işlev adını arayacaklarını söylemek için kapsam çözümleme işlecini () kullanın.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2660 oluşturur.
 
@@ -38,8 +38,6 @@ int main() {
    func( 1, 0 );   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 C2660, yönetilen bir türün Dispose yöntemini doğrudan çağırmayı denerseniz da oluşabilir. Daha fazla bilgi için bkz. yok [ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). Aşağıdaki örnek C2660 oluşturur.
 
@@ -60,8 +58,6 @@ int main() {
    stateTimer->~Timer();   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Türetilmiş bir sınıf bir işlevi gizlediğini C2660 olur.
 
@@ -92,8 +88,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Dizinli bir özelliği yanlış çağırırsanız, C2660 oluşabilir.
 
 ```cpp
@@ -117,8 +111,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Dizinli bir özelliği yanlış çağırırsanız, C2660 oluşabilir.
 
 ```cpp
@@ -139,8 +131,6 @@ int main() {
    int x2 = a[3,5];   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Bir şablon sınıfında yeni bir işleç tanımlarsanız, ancak New işlecinin türü kapsayan türden farklı olan bir nesne oluşturduğunda, C2660 meydana gelebilir.
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2668
 ms.assetid: 041e9627-1c76-420e-a653-cfc83f933bd3
-ms.openlocfilehash: f59cb33bed15847ed1a7a2dbe99ea030babf3337
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f6b0539e7c794852f7e4b28d60f4b402a020bed1
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177163"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743210"
 ---
 # <a name="compiler-error-c2668"></a>Derleyici hatası C2668
 
@@ -19,9 +19,9 @@ ms.locfileid: "80177163"
 
 Belirtilen aşırı yüklenmiş işlev çağrısı çözümlenemedi. Bir veya daha fazla gerçek parametreyi açıkça dönüştürmek isteyebilirsiniz.
 
-Bu hatayı şablon kullanımı aracılığıyla da alabilirsiniz. Aynı sınıfta, aynı imzaya sahip bir normal üye işleviniz ve şablonlu bir üye işleviniz varsa, öncelikle şablonlu bir tane gelmelidir. Bu, geçerli görsel C++uygulamasının bir kısıtlamasıdır.
+Bu hatayı şablon kullanımı aracılığıyla da alabilirsiniz. Aynı sınıfta, aynı imzaya sahip bir normal üye işleviniz ve şablonlu bir üye işleviniz varsa, öncelikle şablonlu bir tane gelmelidir. Bu, geçerli Visual C++ uygulamasının bir sınırlamasıdır.
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2668 oluşturur:
 
@@ -40,8 +40,6 @@ int main() {
    func( (X)d, (X)d );   // OK, uses func( X, X )
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Bu hatayı çözmek için bir diğer yol ise [using bildirimiyle](../../cpp/using-declaration.md)birlikte:
 
@@ -84,11 +82,9 @@ class MyTestCase : public AppTestCase {
 };
 ```
 
-## <a name="example"></a>Örnek
-
 Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin bir sonucu olarak da oluşturulabilir: 0 sabiti dönüştürmesinde belirsiz dönüştürme.
 
-İnt 'in hem Long hem de void * olarak dönüştürülmesi gerektiğinden, sabit 0 kullanan bir cast üzerinde dönüştürme belirsizdir. Bu hatayı çözmek için 0 ' ı, bir dönüştürme gerçekleşmeyecek şekilde, için kullanıldığı işlev parametresinin tam türüne atayın (Bu kod Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde geçerli olur C++).
+İnt 'in hem Long hem de void * olarak dönüştürülmesi gerektiğinden, sabit 0 kullanan bir cast üzerinde dönüştürme belirsizdir. Bu hatayı çözmek için, 0 ' ın, bir dönüştürme gerçekleşmemesi için kullanılan işlev parametresinin tam türüne atayın (Bu kod, Visual Studio .NET 2003 ve Visual C++ Visual Studio .NET sürümlerinde geçerli olur).
 
 ```cpp
 // C2668c.cpp
@@ -108,8 +104,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Bu hata, CRT 'nin artık tüm matematik işlevlerinin float ve Double biçimleri içerdiğinden meydana gelebilir.
 
 ```cpp
@@ -123,8 +117,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 POW (int, int), CRT içindeki Math. h öğesinden kaldırıldığı için bu hata ortaya çıkabilir.
 
 ```cpp
@@ -135,8 +127,6 @@ int main() {
    pow((double)9,9);   // OK
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Bu kod Visual Studio 2015 ' de başarılı olur, ancak Visual Studio 2017 ve sonraki sürümlerinde C2668 ile başarısız olur. Visual Studio 2015 ' de, derleyici yanlışlıkla kopyalama-liste başlatmasını düzenli kopya başlatma ile aynı şekilde kabul ediyor; yalnızca aşırı yükleme çözümlemesi için Oluşturucu dönüştürmekte sayılır.
 

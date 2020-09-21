@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BackInsertIterator Class
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-ms.openlocfilehash: 56393fd522ecd0e2f161dfa5b9fe8230563c0f65
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f5c82a776a537d469d42a16bd4f425e7bb2c13aa
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223492"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742937"
 ---
 # <a name="platformcollectionsbackinsertiterator-class"></a>Platform:: Collections:: Backınsertıterator sınıfı
 
@@ -61,11 +61,11 @@ Backınsertıterator sınıfı, [Back_insert_iterator sınıfının](../standard
 
 **Ad alanı:** Platform:: Collections
 
-## <a name="backinsertiteratorbackinsertiterator-constructor"></a><a name="ctor"></a>Backınsertıterator:: Backınsertıterator Oluşturucusu
+## <a name="backinsertiteratorbackinsertiterator-constructor"></a><a name="ctor"></a> Backınsertıterator:: Backınsertıterator Oluşturucusu
 
 `BackInsertIterator` sınıfının yeni bir örneğini başlatır.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 explicit BackInsertIterator(
@@ -81,11 +81,11 @@ Bir IVector \<T> nesnesi.
 
 `BackInsertIterator`, Parametre tarafından belirtilen nesnenin son öğesinden sonra öğeler ekler `v` .
 
-## <a name="backinsertiteratoroperator-operator"></a><a name="operator-assign"></a>Backınsertıterator:: operator = Işleci
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-assign"></a> Backınsertıterator:: operator = Işleci
 
 Belirtilen nesneyi geçerli sıralı koleksiyonun sonuna ekler.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```
 BackInsertIterator& operator=( const T& t);
@@ -100,11 +100,11 @@ Geçerli koleksiyona eklenecek nesne.
 
 Geçerli Backınsertıterator öğesine bir başvuru.
 
-## <a name="backinsertiteratoroperator-operator"></a><a name="operator-dereference"></a>Backınsertıterator:: operator * Işleci
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-dereference"></a> Backınsertıterator:: operator * Işleci
 
 Geçerli Backınsertıterator öğesine bir başvuru alır.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 BackInsertIterator& operator*();
@@ -118,11 +118,11 @@ Geçerli Backınsertıterator öğesine bir başvuru.
 
 Bu işleç geçerli Backınsertıterator öğesine bir başvuru döndürür. geçerli koleksiyonda hiçbir öğe değil.
 
-## <a name="backinsertiteratoroperator-operator"></a><a name="operator-increment"></a>Backınsertıterator:: operator + + Işleci
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-increment"></a> Backınsertıterator:: operator + + Işleci
 
 Geçerli Backınsertıterator öğesine bir başvuru döndürür. Yineleyici değiştirilmemiş.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 BackInsertIterator& operator++();

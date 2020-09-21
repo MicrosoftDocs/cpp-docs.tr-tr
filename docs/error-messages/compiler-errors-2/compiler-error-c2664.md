@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2664
 ms.assetid: 3595d66e-cf87-4fda-a896-c0cd81f95db4
-ms.openlocfilehash: 8bb9ecef2e08e1f65a817e1a6496a421e727eb13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4368358b88e5334a4aa70d1dd51450ce3dbb27e
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221126"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743236"
 ---
 # <a name="compiler-error-c2664"></a>Derleyici hatası C2664
 
@@ -33,7 +33,7 @@ C2664, aynı zamanda, bir sınıf, temel sınıflarından birinde bir üye gizle
 
 Daha fazla bilgi için bkz. [nasıl yapılır: System:: String 'i wchar_t * veya char \* olarak dönüştürme](../../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2664 oluşturur ve nasıl düzeltileceğini gösterir.
 
@@ -57,8 +57,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Bu örnek ayrıca C2664 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
@@ -75,8 +73,6 @@ int main() {
    func( 1, 1 );   // No conversion from int to A.
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Sonraki örnek, çağırmak için bir dize sabiti kullanarak C2664 gösterir `Test` ve nasıl düzeltileceğini gösterir. Parametresi bir `szString` başvuru olduğundan, uygun Oluşturucu tarafından bir nesne oluşturulmalıdır. Sonuç, başvuruyu başlatmak üzere kullanılamayan geçici bir nesnedir.
 
@@ -117,8 +113,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Derleyici, uygulamak için C++ standart gereksinimlerini zorlar **`const`** . Bu örnek C2664 oluşturur:
 
 ```cpp
@@ -141,8 +135,6 @@ int main()
    return 0;
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Burada nasıl düzeltileceğiyle ilgili yönergeler de dahil olmak üzere C2664 'in oluşturulduğu daha karmaşık bir durum aşağıda verilmiştir:
 
@@ -187,8 +179,6 @@ int main( ) {
 }
 ```
 
-## <a name="example"></a>Örnek
-
 Enum değişkeni, temelindeki türe işlev çağrısını karşılayacak şekilde dönüştürülemez. Daha fazla bilgi için bkz. [enum sınıfı](../../extensions/enum-class-cpp-component-extensions.md). Aşağıdaki örnek C2664 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
@@ -208,8 +198,6 @@ int main() {
    Test(Char(aa));   // OK - fix by using a conversion cast
 }
 ```
-
-## <a name="example"></a>Örnek
 
 MIDL derleyicisindeki bir hata, tür kitaplığında unsigned short olarak wchar_t türünün yayılmasına neden oluyor. Bu hatayı gidermek için türü C++ kaynak kodunda yayımlayın ya da türü idl dosyasında bir dize olarak tanımlayın.
 
@@ -234,8 +222,6 @@ library myproj1 {
 
 C2664 Ayrıca **`wchar_t`** Visual C++ 6,0 ' den sonraki sürümlere kod taşıma sırasında kullanılarak da oluşturulur. Visual C++ 6,0 ve önceki sürümlerde, **`wchar_t`** bir **`typedef`** için **`unsigned short`** ve bu tür için örtük olarak dönüştürülebilir. Visual C++ 6,0 ' den sonra, **`wchar_t`** C++ standardında belirtildiği şekilde kendi yerleşik türü olur ve artık örtülü olarak dönüştürülebilir değildir **`unsigned short`** . Bkz. [/Zc: wchar_t (wchar_t yerel tür)](../../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
-## <a name="example"></a>Örnek
-
 Aşağıdaki örnek C2664 oluşturur ve nasıl düzeltileceğini gösterir.
 
 ```cpp
@@ -255,8 +241,6 @@ int main() {
    ptr->testarr((unsigned short *)mybuff, len);   // OK - Fix by using a cast
 }
 ```
-
-## <a name="example"></a>Örnek
 
 C2664, derleyici şablon bağımsız değişkenlerini çözümleyemediğinde de oluşabilir.
 

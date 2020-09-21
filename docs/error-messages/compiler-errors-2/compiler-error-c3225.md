@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3225
 ms.assetid: f5f66973-256e-4298-ac46-c87819cbde34
-ms.openlocfilehash: 1caa1e7ce787ffc14e615c946b5d670c75e0332a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ed645535300e0a7c4d27f8bed43d3143bae7e97a
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757624"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742872"
 ---
 # <a name="compiler-error-c3225"></a>Derleyici hatası C3225
 
@@ -21,7 +21,7 @@ Genel tür bağımsız değişkeni doğru türde değil.
 
 Daha fazla bilgi için bkz. [Genel türler](../../extensions/generics-cpp-component-extensions.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Yerel bir tür ile genel bir tür örnekleyemezsiniz. Aşağıdaki örnek C3225 oluşturur.
 
@@ -41,9 +41,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
-
-Aşağıdaki örnek kullanarak C#bir bileşen oluşturur. Kısıtlama genel türün yalnızca bir değer türüyle örneklenebilir olduğunu belirtir.
+Aşağıdaki örnek, C# kullanarak bir bileşen oluşturur. Kısıtlama genel türün yalnızca bir değer türüyle örneklenebilir olduğunu belirtir.
 
 ```
 // C3225_b.cs
@@ -52,9 +50,7 @@ Aşağıdaki örnek kullanarak C#bir bileşen oluşturur. Kısıtlama genel tür
 public class MyList<T> where T: struct {}
 ```
 
-## <a name="example"></a>Örnek
-
-Bu örnek, C#-yazılan bileşeni kullanır ve myList 'in yalnızca <xref:System.Nullable>dışında bir değer türüyle örneklenebilir kısıtlamasını ihlal eder. Aşağıdaki örnek C3225 oluşturur.
+Bu örnek, C# yazılmış bileşenini kullanır ve MyList öğesinin yalnızca dışında bir değer türüyle örneklenebilir kısıtlamasını ihlal eder <xref:System.Nullable> . Aşağıdaki örnek C3225 oluşturur.
 
 ```cpp
 // C3225_c.cpp

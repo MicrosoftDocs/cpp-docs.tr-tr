@@ -6,18 +6,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2666
 ms.assetid: 78364d15-c6eb-439a-9088-e04a0176692b
-ms.openlocfilehash: ca779269d573e3e5d270fccad6afe6220083fa42
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ebe41a4c4aa090e609d3352635d4e1fc06e22454
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755999"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90743223"
 ---
 # <a name="compiler-error-c2666"></a>Derleyici hatası C2666
 
 ' tanımlayıcı ': numara aşırı yüklemeleri benzer Dönüştürmelere sahip
 
 Aşırı yüklenmiş bir işlev veya işleç belirsiz.   Biçimsel parametre listeleri, derleyicinin belirsizlik çözümlemesi için çok benzer olabilir.  Bu hatayı çözmek için bir veya daha fazla gerçek parametreyi açıkça atayın.
+
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C2666 oluşturur:
 
@@ -41,11 +43,9 @@ Bu hata, Visual Studio .NET 2003 için yapılan derleyici uygunluk işinin sonuc
 
 - niteleme dönüştürmesi, kimlik dönüşümleriyle aynı değil
 
-\<, >, \<= ve > = ikili işleçleri için, geçirilen bir parametre, parametrenin türü işlenenin türüne dönüştürmek üzere Kullanıcı tanımlı bir dönüştürme işleci tanımlıyorsa artık örtük olarak işlenen türüne dönüştürülür. Belirsizlik için artık olası bir sorun var.
+İkili işleçler için \<, > , \<=, and > geçirilen bir parametre artık örtük olarak işlenen türüne dönüştürülür, parametrenin türü işlenenin türüne dönüştürmek için Kullanıcı tanımlı bir dönüştürme işleci tanımlar. Belirsizlik için artık olası bir sorun var.
 
-Visual Studio .NET 2003 ve Visual Studio .NET sürümlerinde geçerli olan kod için C++, işlev sözdizimini kullanarak sınıf işlecini açıkça çağırın.
-
-## <a name="example"></a>Örnek
+Hem Visual Studio .NET 2003 hem de Visual C++ Visual Studio .NET sürümlerinde geçerli olan kod için, işlev sözdizimini kullanarak sınıf işlecini açıkça çağırın.
 
 ```cpp
 // C2666b.cpp
@@ -101,8 +101,6 @@ int main()
         printf_s("str1.operator char*() < str2\n");
 }
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C2666 oluşturur
 

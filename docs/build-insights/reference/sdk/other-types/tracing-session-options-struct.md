@@ -1,6 +1,6 @@
 ---
 title: TRACING_SESSION_OPTIONS yapısı
-description: C++ derleme öngörüleri SDK TRACING_SESSION_OPTIONS yapısı başvurusu.
+description: C++ Build Insights SDK TRACING_SESSION_OPTIONS yapısı başvurusu hakkında bilgi edinin.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c8a248d884b5232fbc5332db1a68533220ef2fab
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: f7c53abc14c4862ccb73f94acd2e325eb3d4a6fa
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041269"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742781"
 ---
 # <a name="tracing_session_options-structure"></a>TRACING_SESSION_OPTIONS yapısı
 

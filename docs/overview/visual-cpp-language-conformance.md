@@ -6,12 +6,12 @@ ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: d9fbbc4f0eddba0ae6a7dbc3250a26d36155506e
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: c046bec3f1ebad4441e3ec51a123bd8c28a4d871
+ms.sourcegitcommit: f656092eebbcb148ca4d3b7a6a8508eff8f7e85f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075796"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90836621"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluğu tablosu
 
@@ -154,6 +154,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1969R0 CWG 2382: Array allocation overhead for non-allocating placement new`](https://wg21.link/p1969r0#2382) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1969R0 CWG 2441: Inline function parameters`](https://wg21.link/p1969r0#2441) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1971R0 US052: Non-executed return statements in coroutines`](https://wg21.link/P1971R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P2082R1 Fixing CTAD for aggregates`](https://wg21.link/P2082R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2085R0 Consistent defaulted comparisons`](https://wg21.link/P2085R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2103R0 US033: Allow "import" inside linkage-specifications`](https://wg21.link/P2103R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2107R0 US064: Copy semantics of coroutine parameters`](https://wg21.link/P2107R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |

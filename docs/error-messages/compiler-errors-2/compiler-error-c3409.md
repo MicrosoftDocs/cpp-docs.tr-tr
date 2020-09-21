@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: 0bf8b918f254c05bfe57034e25611c8dc17a783a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 360fedc6cadf275704a790c257c42ac8bde7873d
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231968"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742066"
 ---
 # <a name="compiler-error-c3409"></a>Derleyici hatası C3409
 
@@ -35,7 +35,7 @@ Bir lambda ifadesinin tanımının bir parçası olarak köşeli parantezleri ku
 
    Lambda ifade sözdizimi hakkında daha fazla bilgi için bkz. [lambda Ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md).
 
-## <a name="example"></a>Örnek
+## <a name="examples"></a>Örnekler
 
 Aşağıdaki örnek C3409 oluşturur.
 
@@ -53,8 +53,6 @@ __interface x {};
 [coclass, uuid("00000000-0000-0000-0000-000000000001")]
 class b : public x {};
 ```
-
-## <a name="example"></a>Örnek
 
 Aşağıdaki örnek C3409 oluşturur çünkü bir lambda ifadesi **`mutable`** belirtimi kullanır, ancak bir parametre listesi sağlamıyor. Derleyici, köşeli ayracın bir lambda ifadesinin veya bir öznitelik bloğunun tanımının bir parçası olup olmadığını belirleyemiyor.
 

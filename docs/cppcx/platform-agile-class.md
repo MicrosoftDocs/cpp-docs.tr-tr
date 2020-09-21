@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: 839002a614b54990fdc9180fa06737ff43039a4a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d39270b7bf05e820ea376a40310abeb8add2c5ad
+ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226950"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90742963"
 ---
 # <a name="platformagile-class"></a>Platform:: çevik sınıfı
 
@@ -82,11 +82,11 @@ Windows Çalışma Zamanı sınıfların çoğu çevik. Çevik bir nesne, aynı 
 
 **Üst bilgi:** çevik. h
 
-## <a name="agileagile-constructor"></a><a name="ctor"></a>Çevik:: çevik Oluşturucu
+## <a name="agileagile-constructor"></a><a name="ctor"></a> Çevik:: çevik Oluşturucu
 
 Çevik sınıfının yeni bir örneğini başlatır.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 Agile();
@@ -107,11 +107,11 @@ Bu oluşturucunun ikinci sürümünde, yeni bir çevik örneği başlatmak için
 
 Bu oluşturucunun ilk sürümü varsayılan oluşturucudur. İkinci sürüm, parametresi tarafından belirtilen nesneden yeni çevik örnek sınıfı başlatır `object` . Üçüncü sürüm kopya oluşturucudur. Dördüncü sürüm, taşıma oluşturucusudur. Bu Oluşturucu özel durum oluşturmaz.
 
-## <a name="agileagile-destructor"></a><a name="dtor"></a>Çevik:: ~ çevik yok edicisi
+## <a name="agileagile-destructor"></a><a name="dtor"></a> Çevik:: ~ çevik yok edicisi
 
 Çevik sınıfının geçerli örneğini yok eder.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ~Agile();
@@ -121,11 +121,11 @@ Bu oluşturucunun ilk sürümü varsayılan oluşturucudur. İkinci sürüm, par
 
 Bu yıkıcı ayrıca geçerli çevik nesne tarafından temsil edilen nesneyi serbest bırakır.
 
-## <a name="agileget-method"></a><a name="get"></a>Çevik:: get yöntemi
+## <a name="agileget-method"></a><a name="get"></a> Çevik:: get yöntemi
 
 Geçerli çevik nesne tarafından temsil edilen nesneye bir tanıtıcı döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 T^ Get() const;
@@ -137,11 +137,11 @@ Geçerli çevik nesne tarafından temsil edilen nesneye yönelik bir tanıtıcı
 
 Dönüş değerinin türü aslında açıklanmamıştır bir iç türdür. Dönüş değerini tutmanın uygun bir yolu, **`auto`** türü, tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myAgileTvariable->Get();`.
 
-## <a name="agilegetaddressof-method"></a><a name="getaddressof"></a>Çevik:: GetAddressOf yöntemi
+## <a name="agilegetaddressof-method"></a><a name="getaddressof"></a> Çevik:: GetAddressOf yöntemi
 
 Geçerli çevik nesnesini yeniden başlatır ve ardından türü bir nesneye yapılan tanıtıcının adresini döndürür `T` .
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 T^* GetAddressOf() throw();
@@ -160,11 +160,11 @@ Türü bir nesneye yönelik tanıtıcının adresi `T` .
 
 Bu işlem, türünde bir nesnenin geçerli temsilini serbest bırakır `T` ; çevik nesnenin veri üyelerini yeniden başlatır; geçerli iş parçacığı bağlamını alır; ardından, çevik olmayan bir nesneyi temsil eden bir tanıtıcıdan nesne değişkeninin adresini döndürür. Çevik sınıf örneğinin bir nesneyi göstermesini sağlamak için, nesneyi çevik sınıf örneğine atamak için atama işlecini ([çevik:: operator =](#operator-assign)) kullanın.
 
-## <a name="agilegetaddressofforinout-method"></a><a name="getaddressofforinout"></a>Çevik:: Getaddressofforınout yöntemi
+## <a name="agilegetaddressofforinout-method"></a><a name="getaddressofforinout"></a> Çevik:: Getaddressofforınout yöntemi
 
 Geçerli çevik nesnenin temsil ettiği nesne için bir tanıtıcının adresini döndürür.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 T^* GetAddressOfForInOut()  throw();
@@ -183,11 +183,11 @@ Geçerli çevik nesne tarafından temsil edilen nesneye yönelik tanıtıcının
 
 Bu işlem geçerli iş parçacığı bağlamını alır ve ardından nesnenin temelindeki bir tanıtıcının adresini döndürür.
 
-## <a name="agilerelease-method"></a><a name="release"></a>Çevik:: Release yöntemi
+## <a name="agilerelease-method"></a><a name="release"></a> Çevik:: Release yöntemi
 
 Geçerli çevik nesnenin temel alınan nesnesini ve bağlamını atar.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Release() throw();
@@ -197,11 +197,11 @@ void Release() throw();
 
 Mevcut çevik nesnenin temel alınan nesnesi ve bağlamı atılır, varsa, çevik nesnenin değeri null olarak ayarlanır.
 
-## <a name="agileoperator-gt-operator"></a><a name="operator-arrow"></a>Çevik:: operator- &gt; işleci
+## <a name="agileoperator-gt-operator"></a><a name="operator-arrow"></a> Çevik:: operator- &gt; işleci
 
 Geçerli çevik nesnenin temsil ettiği nesneye bir tanıtıcı alır.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 T^ operator->() const throw();
@@ -213,11 +213,11 @@ Geçerli çevik nesne tarafından temsil edilen nesneye yönelik bir tanıtıcı
 
 Bu işleç aslında açıklanmaedilmemiş bir iç tür döndürür. Dönüş değerini tutmanın uygun bir yolu, **`auto`** türü, tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır.
 
-## <a name="agileoperator-operator"></a><a name="operator-assign"></a>Çevik:: operator = Işleci
+## <a name="agileoperator-operator"></a><a name="operator-assign"></a> Çevik:: operator = Işleci
 
 Belirtilen nesneyi geçerli çevik nesnesine atar.
 
-## <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Söz dizimi
 
 ```cpp
 Agile<T> operator=( T^ object ) throw();
@@ -239,7 +239,7 @@ Bir nesnenin IUnknown arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türünde bir nesne için bir tanıtıcı`T`
+Türünde bir nesne için bir tanıtıcı `T`
 
 ### <a name="remarks"></a>Açıklamalar
 
