@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: f052c39424fc2ee6f43f249e3034be7c464d016c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3359c17996eb78c3249abc83ff2d439381f209fe
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833393"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352992"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx arabirimi
 
@@ -46,7 +46,7 @@ Bu arabirim, ATL 'nin ActiveX denetimi barındırma nesneleri tarafından sunulu
 
 ATL90.dll bağlıyorsanız, **AxHost** tür bilgilerini dll 'deki tür kitaplığından yükler.
 
-Daha fazla ayrıntı için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) .
+Daha fazla ayrıntı için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) .
 
 ## <a name="requirements"></a>Gereksinimler
 

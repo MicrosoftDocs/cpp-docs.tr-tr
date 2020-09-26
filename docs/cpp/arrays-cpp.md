@@ -6,16 +6,16 @@ helpviewer_keywords:
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-ms.openlocfilehash: cb949f9a17a6b751dae40202bf82e6cb321b526b
-ms.sourcegitcommit: 4eda68a0b3c23d8cefa56b7ba11583412459b32f
+ms.openlocfilehash: 6d002f2baa6657c13ffc603e74828ab60585d3a9
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87565969"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352797"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 
-Dizi, belleğin bitişik bir alanını kaplayan aynı türdeki nesnelerin bir dizisidir. Geleneksel C stili diziler birçok hatanın kaynağıdır, ancak özellikle de daha eski kod tabanlarında ortaktır. Modern C++ ' da, bu bölümde açıklanan C stili diziler yerine [std:: vector](../standard-library/vector-class.md) veya [std:: Array](../standard-library/array-class-stl.md) kullanımını önemle öneririz. Bu standart kitaplık türlerinin her ikisi de öğelerini bitişik bir bellek bloğu olarak depolar. Ancak, çok daha yüksek bir tür güvenliği sağlar ve dizi içinde geçerli bir konuma işaret eden garantili yineleyiciler destekler. Daha fazla bilgi için bkz. [kapsayıcılar (Modern C++)](containers-modern-cpp.md).
+Dizi, belleğin bitişik bir alanını kaplayan aynı türdeki nesnelerin bir dizisidir. Geleneksel C stili diziler birçok hatanın kaynağıdır, ancak özellikle de daha eski kod tabanlarında ortaktır. Modern C++ ' da, bu bölümde açıklanan C stili diziler yerine [std:: vector](../standard-library/vector-class.md) veya [std:: Array](../standard-library/array-class-stl.md) kullanımını önemle öneririz. Bu standart kitaplık türlerinin her ikisi de öğelerini bitişik bir bellek bloğu olarak depolar. Ancak, çok daha yüksek bir tür güvenliği sağlar ve dizi içinde geçerli bir konuma işaret eden garantili yineleyiciler destekler. Daha fazla bilgi için bkz. [kapsayıcılar](../standard-library/stl-containers.md).
 
 ## <a name="stack-declarations"></a>Yığın bildirimleri
 
@@ -175,7 +175,7 @@ Bu **`int`** , aşağıdaki şekilde gösterildiği gibi, kavramsal olarak beş 
 ![Çoklu&#45;boyutlu bir dizinin kavramsal düzeni](../cpp/media/vc38rc1.gif "Çoklu&#45;boyutlu bir dizinin kavramsal düzeni") <br/>
 Çok boyutlu bir dizinin kavramsal düzeni
 
-Başlatıcı listesi olan ( [başlatıcılar](../cpp/initializers.md)bölümünde açıklandığı gibi), çok boyutlu diziler bildirebilirsiniz. Bu bildirimlerde, ilk boyutun sınırlarını belirten sabit ifade atlanabilir. Örnek:
+Başlatıcı listesi olan ( [başlatıcılar](../cpp/initializers.md)bölümünde açıklandığı gibi), çok boyutlu diziler bildirebilirsiniz. Bu bildirimlerde, ilk boyutun sınırlarını belirten sabit ifade atlanabilir. Örneğin:
 
 ```cpp
 // arrays2.cpp
@@ -283,7 +283,7 @@ int main()
 
 İlk `aPoint` öğesi `Point( int, int )` oluşturucusu kullanılarak oluşturulur; kalan iki öğe varsayılan oluşturucu kullanılarak oluşturulur.
 
-Statik üye dizileri ( **`const`** ya da değil) tanımlarında başlatılabilir (sınıf bildiriminin dışında). Örnek:
+Statik üye dizileri ( **`const`** ya da değil) tanımlarında başlatılabilir (sınıf bildiriminin dışında). Örneğin:
 
 ```cpp
 // initializing_arrays2.cpp
@@ -352,7 +352,7 @@ Benzer şekilde, çok boyutlu diziler için aşağıdaki yöntem kullanılarak a
 
 ## <a name="arrays-in-expressions"></a>İfadelerdeki Diziler
 
-Dizi türünün bir tanımlayıcısı **`sizeof`** , bir başvurunun Address-of ( `&` ) veya bir başvurunun başlatılmasından farklı bir ifadede göründüğünde, ilk dizi öğesine bir işaretçiye dönüştürülür. Örnek:
+Dizi türünün bir tanımlayıcısı **`sizeof`** , bir başvurunun Address-of ( `&` ) veya bir başvurunun başlatılmasından farklı bir ifadede göründüğünde, ilk dizi öğesine bir işaretçiye dönüştürülür. Örneğin:
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";

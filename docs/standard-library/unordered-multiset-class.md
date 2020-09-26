@@ -137,18 +137,18 @@ helpviewer_keywords:
 - std::unordered_multiset::size
 - std::unordered_multiset::swap
 ms.assetid: 70c8dfc5-492a-4af2-84f5-1aa9cb04b71c
-ms.openlocfilehash: 8252ecc7051c1bad2ca1e7683ea32206dd0f10f4
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0730f4eb6ba8e625c2c40cecddc4f689ec775d17
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042036"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352784"
 ---
 # <a name="unordered_multiset-class"></a>unordered_multiset Sınıfı
 
 Sınıf şablonu, türünde öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar `const Key` . Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe hem bir sıralama anahtarı hem de bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key,
@@ -209,7 +209,7 @@ Ayırıcı sınıf.
 |[erer](#end)|Denetlenen dizinin bitişini belirtir.|
 |[equal_range](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|
 |[silme](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
-|[find](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
+|[bilgi](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
 |[ekleyin](#insert)|Öğeleri ekler.|
@@ -2595,6 +2595,6 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [<unordered_set>](../standard-library/unordered-set.md)\
-[Kapsayıcıları](../cpp/containers-modern-cpp.md)\
+[Kapsayıcıları](./stl-containers.md)\
 [C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

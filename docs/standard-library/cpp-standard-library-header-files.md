@@ -6,12 +6,12 @@ helpviewer_keywords:
 - header files, C++ Standard Library
 - C++ Standard Library, header files
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
-ms.openlocfilehash: 0bbd67468c1df8b9e7c078f498d19f01f848149c
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: dfadfb99e10fdb916b3fb4dc515f89e6f9252fde
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281854"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352888"
 ---
 # <a name="c-standard-library-header-files"></a>C++ standart kitaplığı üstbilgi dosyaları
 
@@ -23,11 +23,11 @@ C++ standart kitaplığı ve uzantıları kategorisine göre üst bilgi dosyalar
 
 | Kategori | Üst Bilgiler |
 | - | - |
-| [Algoritmalar](../cpp/algorithms-modern-cpp.md) | [\<algorithm>](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
+| [Algoritmalar](./algorithms.md) | [\<algorithm>](algorithm.md), [\<cstdlib>](cstdlib.md), [\<numeric>](numeric.md) |
 | Atomik işlemler |  [\<atomic>](atomic.md)<sup>üst</sup> |
 | C Kitaplığı sarmalayıcıları | [\<cassert>](cassert.md), [\<ccomplex>](ccomplex.md) <sup>11 a b</sup>, [\<cctype>](cctype.md) , [\<cerrno>](cerrno.md) , [\<cfenv>](cfenv.md) <sup>11</sup>, [\<cfloat>](cfloat.md) , [\<cinttypes>](cinttypes.md) <sup>11</sup>, [\<ciso646>](ciso646.md) <sup>b</sup>, [\<climits>](climits.md) , [\<clocale>](clocale.md) , [\<cmath>](cmath.md) , [\<csetjmp>](csetjmp.md) , [\<csignal>](csignal.md) , [\<cstdalign>](cstdalign.md) <sup>11 a b</sup>, [\<cstdarg>](cstdarg.md) , [\<cstdbool>](cstdbool.md) <sup>11 a</sup>b,, 11 [\<cstddef>](cstddef.md) [\<cstdint>](cstdint.md) <sup>11</sup>, [\<cstdio>](cstdio.md) , [\<cstdlib>](cstdlib.md) , [\<cstring>](cstring.md) , [\<ctgmath>](ctgmath.md) <sup>11 a b</sup>, [\<ctime>](ctime.md) , [\<cuchar>](cuchar.md) <sup>11</sup>, [\<cwchar>](cwchar.md) ,[\<cwctype>](cwctype.md) |
 | Kavramlar | \<concepts><sup>2.0</sup> |
-| [Kapsayıcılar](../cpp/containers-modern-cpp.md) | |
+| [Kapsayıcılar](./stl-containers.md) | |
 | Dizi kapsayıcıları | [\<array>](array.md)<sup>11</sup>, [\<deque>](deque.md) , [\<forward_list>](forward-list.md) <sup>11</sup>, [\<list>](list.md) ,[\<vector>](vector.md) |
 | Sıralı ilişkilendirilebilir kapsayıcılar| [\<map>](map.md), [\<set>](set.md) |
 | Sırasız ilişkilendirilebilir kapsayıcılar | [\<unordered_map>](unordered-map.md)<sup>11</sup>, [\<unordered_set>](unordered-set.md) <sup>11</sup> |
@@ -61,9 +61,9 @@ C++ 17 <sup>standardında kullanım dışı</sup> . \
 
 |Kategori|Üst Bilgiler|
 |-|-|
-|[Algoritmalar](../cpp/algorithms-modern-cpp.md)|[\<algorithm>](algorithm.md)|
+|[Algoritmalar](./algorithms.md)|[\<algorithm>](algorithm.md)|
 |C Kitaplığı sarmalayıcıları|[\<cassert>](cassert.md), [\<cctype>](cctype.md), [\<cerrno>](cerrno.md), [\<cfenv>](cfenv.md), [\<cfloat>](cfloat.md), [\<cinttypes>](cinttypes.md), [\<ciso646>](ciso646.md), [\<climits>](climits.md), [\<clocale>](clocale.md), [\<cmath>](cmath.md), [\<csetjmp>](csetjmp.md), [\<csignal>](csignal.md), [\<cstdarg>](cstdarg.md), [\<cstdbool>](cstdbool.md), [\<cstddef>](cstddef.md), [\<cstdint>](cstdint.md), [\<cstdio>](cstdio.md), [\<cstdlib>](cstdlib.md), [\<cstring>](cstring.md), [\<ctgmath>](ctgmath.md), [\<ctime>](ctime.md), [\<cwchar>](cwchar.md), [\<cwctype>](cwctype.md)|
-|[Kapsayıcılar](../cpp/containers-modern-cpp.md)||
+|[Kapsayıcılar](./stl-containers.md)||
 |Dizi kapsayıcıları|[\<array>](array.md), [\<deque>](deque.md), [\<forward_list>](forward-list.md), [\<list>](list.md), [\<vector>](vector.md)|
 |Sıralı ilişkilendirilebilir kapsayıcılar| [\<map>](map.md), [\<set>](set.md)|
 |Sırasız ilişkilendirilebilir kapsayıcılar|[\<unordered_map>](unordered-map.md), [\<unordered_set>](unordered-set.md)|

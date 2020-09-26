@@ -89,18 +89,18 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: e2d0236a0e643ac92bb771b90a1f021807f03fda
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 446c1af793b885646dbb5658242e75482ebb92de
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040684"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353200"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
 C++ standart kitaplığı multimap sınıfı, her bir öğenin hem veri değerine hem de sıralama anahtarına sahip olduğu bir çift olan bir koleksiyondaki verilerin depolanması ve alınması için kullanılır. Anahtarın değerinin benzersiz olması gerekmez ve verileri otomatik olarak sıralamak için kullanılır. Çoklu eşlemdeki bir öğenin değeri doğrudan değiştirilebilir, ancak ilişkili anahtar değeri doğrudan değiştirilemez. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve eklenen yeni öğelerle ilişkili yeni anahtar değerleri eklenmelidir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key,
@@ -198,7 +198,7 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 |[erer](#end)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `multimap` .|
 |[equal_range](#equal_range)|Öğenin anahtarının belirtilen değerle eşleştiği öğeler aralığını bulur.|
 |[silme](#erase)|Belirtilen konumlardan bir öğeyi veya öğe aralığını kaldırır `multimap` veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[find](#find)|İçindeki bir öğenin, `multimap` belirtilen anahtara eşdeğer bir anahtara sahip olan ilk konumunu ele alan bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki bir öğenin, `multimap` belirtilen anahtara eşdeğer bir anahtara sahip olan ilk konumunu ele alan bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnenin bir kopyasını döndürür `multimap` .|
 |[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `multimap` .|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `multimap` .|
@@ -2517,6 +2517,6 @@ The values of the mapped elements are: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcıları](../cpp/containers-modern-cpp.md)\
+[Kapsayıcıları](./stl-containers.md)\
 [C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

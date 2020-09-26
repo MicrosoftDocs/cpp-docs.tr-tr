@@ -4,12 +4,12 @@ description: Modern C++ ve bu kişilerin korsiyonda yeni programlama ıoms 'leri
 ms.date: 05/17/2020
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: f2b9159e74ba7ce37c7eab1513826da939a3be49
-ms.sourcegitcommit: f1752bf90b4f869633a859ace85439ca19e208b2
+ms.openlocfilehash: 05c1fe80086e5b98d3f8a9c66c6759fddab39fa0
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "87232202"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353057"
 ---
 # <a name="welcome-back-to-c---modern-c"></a>C++ ' a geri hoş geldiniz-modern C++
 
@@ -75,7 +75,7 @@ Performans iyileştirmesi gerektiğinde şunu kullanmayı göz önünde bulundur
 
 - Gibi sırasız ilişkilendirilebilir kapsayıcılar [`unordered_map`](../standard-library/unordered-map-class.md) . Bunlar, öğe başına ek yüke ve sabit zamanlı aramaya sahiptir, ancak doğru ve verimli bir şekilde kullanılması daha zor olabilir.
 
-- Sıralanır `vector` . Daha fazla bilgi için bkz. [algoritmalar](../cpp/algorithms-modern-cpp.md).
+- Sıralanır `vector` . Daha fazla bilgi için bkz. [algoritmalar](../standard-library/algorithms.md).
 
 C stili dizileri kullanmayın. Verilere doğrudan erişmesi gereken eski API 'Ler için, bunun yerine erişimci yöntemlerini kullanın `f(vec.data(), vec.size());` . Kapsayıcılar hakkında daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 

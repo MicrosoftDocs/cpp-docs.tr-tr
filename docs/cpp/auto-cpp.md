@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: 675f6919b6804cfb1d2c5395d046cb5fa39e625d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: be268635e61005efbdb01ed8c4eec79c7cb9b800
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229200"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353044"
 ---
-# <a name="auto-c"></a>`auto`C++
+# <a name="auto-c"></a>`auto` C++
 
 Bir belirtilen değişkenin türünü başlatma ifadesinden kesintiler.
 
 > [!NOTE]
 > C++ standardı, bu anahtar sözcük için özgün ve düzeltilmiş anlamı tanımlar. Visual Studio 2010 ' den önce, **`auto`** anahtar sözcüğü *Otomatik* depolama sınıfında bir değişken bildirir; diğer bir deyişle, yerel ömrü olan bir değişkendir. Visual Studio 2010 ' den itibaren **`auto`** anahtar sözcüğü, türü, bildiriminde başlatma ifadesinden çıkarılan bir değişken bildirir. [ `/Zc:auto`&#91;-&#93;](../build/reference/zc-auto-deduce-variable-type.md) derleyici seçeneği, **`auto`** anahtar sözcüğünün anlamını denetler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`auto`***bildirimci* *başlatıcısı***`;`**
 
@@ -122,7 +122,7 @@ int main()
 
 Aşağıdaki tabloda **`auto`** , anahtar sözcüğünün kullanımıyla ilgili kısıtlamalar ve derleyicinin yaydığı karşılık gelen tanılama hata iletisi listelenmektedir.
 
-|Hata numarası|Açıklama|
+|Hata numarası|Description|
 |------------------|-----------------|
 |[C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md)|**`auto`** Anahtar sözcüğü diğer tür tanımlayıcılarla birleştirilemez.|
 |[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|**`auto`** Anahtar sözcüğüyle belirtilen sembolün bir başlatıcısı olmalıdır.|
@@ -220,10 +220,9 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[`auto`Sözcükle](../cpp/auto-keyword.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[`/Zc:auto`(Değişken türünü türet)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
-[`sizeof`İşlecinde](../cpp/sizeof-operator.md)<br/>
+[`/Zc:auto` (Değişken türünü türet)](../build/reference/zc-auto-deduce-variable-type.md)<br/>
+[`sizeof` İşlecinde](../cpp/sizeof-operator.md)<br/>
 [`typeid`](../extensions/typeid-cpp-component-extensions.md)<br/>
 [`operator new`](new-operator-cpp.md)<br/>
 [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)<br/>

@@ -89,18 +89,18 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-ms.openlocfilehash: e857a4f6369b9aa939b5dcba17e02efaf81600b0
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: cb28b0b31188fcf7fefef95ddb44c9aab813e6ac
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040957"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353187"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
 C++ standart kitaplığı çoklu küme sınıfı, içerdiği öğelerin değerlerinin benzersiz olmaması ve verilerin otomatik olarak sıralandığı anahtar değerleri olarak kullandıkları bir koleksiyondan verilerin depolanması ve alınması için kullanılır. İçindeki bir öğenin anahtar değeri `multiset` doğrudan değiştirilemez. Bunun yerine, eski değerlerin silinmesi ve yeni değerlerle sahip öğelerin eklenmesi gerekir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key, class Compare =less <Key>, class Allocator =allocator <Key>>
@@ -190,7 +190,7 @@ C++ 14 ' te, `std::less<>` tür parametreleri olmayan veya koşulunu belirterek 
 |[erer](#end)|İçindeki son öğeden sonraki konuma işaret eden bir yineleyici döndürür `multiset` .|
 |[equal_range](#equal_range)|Yineleyicilerin bir çiftini döndürür. Çiftin ilk yineleyicisi, belirtilen anahtardan daha büyük olan bir anahtarla ilk öğesine işaret eder `multiset` . Çiftin ikinci yineleyicisi, `multiset` anahtarına eşit veya ondan daha büyük olan bir anahtarla ilk öğesine işaret eder.|
 |[silme](#erase)|Belirtilen konumlardan bir öğeyi veya öğe aralığını kaldırır `multiset` veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[find](#find)|İçindeki, `multiset` belirtilen anahtara eşit bir anahtara sahip bir öğenin ilk konumunu gösteren bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki, `multiset` belirtilen anahtara eşit bir anahtara sahip bir öğenin ilk konumunu gösteren bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnesinin bir kopyasını döndürür `multiset` .|
 |[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `multiset` .|
 |[key_comp](#key_comp)|İçindeki iki öğenin göreli sırasını belirleyebilmek için iki sıralama anahtarını karşılaştırabilen bir işlev nesnesi sağlar `multiset` .|
@@ -2374,6 +2374,6 @@ The multiset has elements: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcıları](../cpp/containers-modern-cpp.md)\
+[Kapsayıcıları](./stl-containers.md)\
 [C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

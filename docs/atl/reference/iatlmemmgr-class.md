@@ -13,12 +13,12 @@ helpviewer_keywords:
 - memory, managing
 - memory, memory manager
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
-ms.openlocfilehash: a33414ec1c1b01742382150049f8e99f4a70ae34
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b23d8f582c53114ea1434e250e8e5e64b642f733
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833432"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353018"
 ---
 # <a name="iatlmemmgr-class"></a>IAtlMemMgr sınıfı
 
@@ -937,7 +937,7 @@ Bu yöntemi çağırmak [ıaxwinhostwindowlik:: CreateControlLicEx](#createcontr
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) `IAxWinHostWindowLic::CreateControlLic` .
+Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) `IAxWinHostWindowLic::CreateControlLic` .
 
 ## <a name="iaxwinhostwindowliccreatecontrollicex"></a><a name="createcontrollicex"></a> Iaxwinhostwindowlik:: CreateControlLicEx
 
@@ -965,7 +965,7 @@ Kalan parametrelerin ve dönüş değerinin açıklaması için bkz. [IAxWinHost
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) `IAxWinHostWindowLic::CreateControlLicEx` .
+Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) `IAxWinHostWindowLic::CreateControlLicEx` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

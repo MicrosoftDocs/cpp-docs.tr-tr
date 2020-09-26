@@ -8,95 +8,95 @@ helpviewer_keywords:
 - controls [ATL], adding to projects
 - ATL Control Wizard
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-ms.openlocfilehash: a10c5c358901122dda37b395c1f0fa5cdc30ce30
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c89fe17272399212e4436481abc2800c3ab6e660
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321707"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353148"
 ---
 # <a name="atl-control-wizard"></a>ATL Denetim Sihirbazı
 
-Bir ATL projesine (veya ATL destekli bir MFC projesine) Bir ATL denetimi ekler. Bu sihirbazı üç tür denetimden birini eklemek için kullanabilirsiniz:
+ATL denetimine bir ATL projesine (veya ATL desteği olan bir MFC projesine) ekler. Bu Sihirbazı, üç tür denetimden birini eklemek için kullanabilirsiniz:
 
-- Standart kontrol
+- Standart denetim
 
-- Kompozit kontrol
+- Bileşik denetim
 
 - DHTML denetimi
 
-Ayrıca, çoğu kapsayıcıda açılacak denetimler için varsayılan olarak sağlanan [arabirimleri Arabirimler](../../atl/reference/interfaces-atl-control-wizard.md) listesinden kaldırarak en az denetim belirtebilirsiniz. Sihirbazın **Arabirimleri** sayfasında denetim için desteklenen istediğiniz arabirimleri ayarlayabilirsiniz.
+Bunlara ek olarak, en az bir denetim belirtebilirsiniz, bu da arabirimlerin çoğu kapsayıcıda açılması için varsayılanlar olarak sağlanmış olan [arabirimler](../../atl/reference/interfaces-atl-control-wizard.md) listesinden arabirimleri kaldırır. Sihirbazın **arabirimler** sayfasında denetim için desteklenecek arabirimleri ayarlayabilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sihirbaz tarafından üretilen kayıt komut dosyası, COM bileşenlerini HKEY_LOCAL_MACHINE yerine HKEY_CURRENT_USER altında kaydeder. Bu davranışı değiştirmek için, ATL Sihirbazı'nın tüm kullanıcılar için **Kayıt bileşenini** ayarlayın.
+Bu sihirbaz tarafından oluşturulan kayıt betiği, COM bileşenlerini HKEY_LOCAL_MACHINE yerine HKEY_CURRENT_USER altına kaydeder. Bu davranışı değiştirmek için, ATL sihirbazının **tüm kullanıcılar Için kayıt bileşeni** seçeneğini ayarlayın.
 
 ## <a name="names"></a>Adlar
 
-Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. Kısa **ad**dışında, diğer tüm kutular bağımsız olarak değiştirilebilir. **Kısa ad**metnini değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarında yansıtılır. COM bölümündeki **Coclass** adını değiştirirseniz, değişiklik **Tür** kutusuna yansıtılır, ancak **Arabirim** adı ve **ProgID** değişmez. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adları sizin için kolayca tanımlanabilir hale getirmek için tasarlanmıştır.
+Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. **Kısa ad**dışında, diğer tüm kutular bağımsız olarak değiştirilebilir. **Kısa ad**için metni değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarına yansıtılır. COM bölümünde **coclass** adını değiştirirseniz, değişiklik **tür** kutusuna yansıtılır, ancak **arabirim** adı ve **ProgID** değişmez. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adların sizin için kolayca tanımlanabilir olmasını sağlayacak şekilde tasarlanmıştır.
 
 > [!NOTE]
-> **Coclass** yalnızca atfedilmeyen denetimlerde değiştirilebilir. Projeniz atfedilen, **Coclass'ı**kaldıramazsınız.
+> **Coclass** yalnızca öznitelik olmayan denetimlerde düzenlenebilir. Projeniz öznitelik içeriyorsa, **coclass**'ı düzenleyemezsiniz.
 
 ### <a name="c"></a>C++
 
-Nesneyi uygulamak için oluşturulan C++ sınıfı için bilgi sağlar.
+Nesnesini uygulamak için oluşturulan C++ sınıfı için bilgiler sağlar.
 
 - **Kısa ad**
 
-   Nesnenin kısaltılmış adını ayarlar. Sağladığınız ad sınıf ve **Coclass** adlarını, dosyayı (. CPP ve . H) adları, arabirim adı ve **Tür** adları, bu alanları tek tek değiştirmediğiniz sürece.
+   Nesne için kısaltılmış adı ayarlar. Sağladığınız ad, sınıf ve **coclass** adlarını, dosyayı (. CPP ve. H) adları, arabirim adı ve **tür** adlarını tek tek değiştirmediğiniz müddetçe bu alanları.
 
-- **Sınıfı**
+- **Sınıf**
 
-   Nesneyi uygulayan sınıfın adını ayarlar. Bu ad, bir sınıf adı için tipik önek olan 'C' öncesinde **Kısa adla**sağladığınız ada dayanır.
+   Nesneyi uygulayan sınıfın adını ayarlar. Bu ad, ' C ' öncesinde, bir sınıf adı için tipik ön ek olan **kısa ad**içinde sağladığınız adı temel alır.
 
-- **.h dosyası**
+- **. h dosyası**
 
-   Yeni nesnenin sınıfı için üstbilgi dosyasının adını ayarlar. Varsayılan olarak, bu ad **Kısa ad**da sağladığınız adı temel alır. Dosya adını seçtiğiniz konuma kaydetmek veya sınıf bildirimini varolan bir dosyaya eklemek için elips düğmesini tıklatın. Varolan bir dosyayı seçerseniz, **sihirbaz bunu Bitiş'i**tıklatana kadar seçili konuma kaydetmez.
+   Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad**'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbaz, **son**' a kadar seçili konuma kaydetmez.
 
-   Sihirbaz bir dosyanın üzerine yazmıyor. Varolan bir dosyanın adını seçerseniz, **Bitiş'i**tıklattığınızda, sihirbaz sınıf bildiriminin dosyanın içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Dosyayı eklemek için **Evet'i** tıklatın; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır'ı** tıklatın.
+   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
-- **.cpp dosyası**
+- **. cpp dosyası**
 
-   Yeni nesnesınıfının uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad **Kısa ad**da sağladığınız adı temel alır. Dosya adını seçtiğiniz konuma kaydetmek için elips düğmesini tıklatın. Sihirbazda **Bitir'i** tıklatın kadar dosya seçili konuma kaydedilmez.
+   Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad**'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesine tıklayın. Bu dosya, sihirbazda **son** ' a tıklaana kadar seçili konuma kaydedilmez.
 
-   Sihirbaz bir dosyanın üzerine yazmıyor. Varolan bir dosyanın adını seçerseniz, **Bitiş'i**tıklattığınızda, sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmenizi ister. Dosyayı eklemek için **Evet'i** tıklatın; sihirbaza dönmek ve başka bir dosya adı belirtmek için **Hayır'ı** tıklatın.
+   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
-- **Yazarından**
+- **İlişkilendirilmesi**
 
-   Nesnenin öznitelikleri kullanıp kullanmadığını gösterir. Atfedilen bir ATL projesine bir nesne ekliyorsanız, bu seçenek seçilir ve değiştirilemez. Diğer bir tarihte, yalnızca öznitelik desteğiyle oluşturulan bir projeye atfedilen nesneleri ekleyebilirsiniz.
+   Nesnenin öznitelikleri kullanıp kullanmadığını belirtir. Öznitelikli ATL projesine bir nesne ekliyorsanız, bu seçenek seçilir ve değişiklik için kullanılamaz. Diğer bir deyişle, öznitelik desteğiyle oluşturulan bir projeye yalnızca öznitelikli nesneler ekleyebilirsiniz.
 
-   Yalnızca öznitelikleri kullanan bir ATL projesine atfedilen bir nesne ekleyebilirsiniz. Öznitelik desteği olmayan bir ATL projesi için bu seçeneği seçerseniz, sihirbaz projeye öznitelik desteği eklemek isteyip istemediğinizbelirtilir.
+   Öznitelik kullanan bir ATL projesine öznitelikli bir nesne ekleyebilirsiniz. Öznitelik desteği olmayan bir ATL projesi için bu seçeneği belirlerseniz, sihirbaz projeye öznitelik desteği eklemek isteyip istemediğinizi belirtmenizi ister.
 
-   Varsayılan olarak, bu seçeneği ayarladıktan sonra eklediğiniz nesneler atfedilen olarak belirlenir (onay kutusu seçilir). Öznitelikleri kullanmayan bir nesne eklemek için bu kutuyu temizleyebilirsiniz.
+   Varsayılan olarak, bu seçeneği ayarladıktan sonra eklediğiniz tüm nesneler, öznitelikli olarak atanır (onay kutusu seçilidir). Öznitelikleri kullanmayan bir nesne eklemek için bu kutuyu temizleyebilirsiniz.
 
-   Daha fazla bilgi için [Uygulama Ayarları, ATL Proje Sihirbazı](../../atl/reference/application-settings-atl-project-wizard.md) ve [Özniteliklerin Temel Mekaniği](../../windows/basic-mechanics-of-attributes.md) bölümüne bakın.
+   Daha fazla bilgi için bkz. [uygulama ayarları, ATL Proje Sihirbazı](../../atl/reference/application-settings-atl-project-wizard.md) ve [özniteliklerin temel mekanizması](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) .
 
 ### <a name="com"></a>COM
 
-Nesne için COM işlevi hakkında bilgi sağlar.
+Nesnesi için COM işlevselliği hakkında bilgi sağlar.
 
 - **Coclass**
 
    Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfının adını ayarlar.
 
    > [!NOTE]
-   > Projenizi öznitelikleri kullanarak oluşturursanız veya bu sihirbaz sayfasında denetimin öznitelikleri kullandığını belirtirseniz, ATL **ortak sınıf** özniteliği içermediği için bu seçeneği değiştiremezsiniz.
+   > Projenizi öznitelikleri kullanarak oluşturursanız veya bu sihirbaz sayfasında denetimin öznitelikleri kullandığı belirtirseniz, ATL **coclass** özniteliğini içermediğinden bu seçeneği değiştiremezsiniz.
 
 - **Arabirim**
 
-   Nesne için arabirimin adını ayarlar. Varsayılan olarak bir arabirim adı "I" ile hazırlanır.
+   Nesne için arabirimin adını ayarlar. Varsayılan olarak, bir arabirim adı "I" ile sona erer.
 
 - **Tür**
 
    Kayıt defterinde görünecek nesne açıklamasını ayarlar
 
-- **Progıd**
+- **ProgID**
 
-   Nesnenin CLSID yerine kapsayıcıların kullanabileceği adı ayarlar. Bu alan otomatik olarak doldurulmadı. Bu alanı el ile doldurmazsanız, denetim diğer araçlar için kullanılamayabilir. Örneğin, EtkinX `ProgID` Denetimi Ekle iletişim kutusunda **insert activex denetimkutusunda** kullanılabilir. İletişim kutusu hakkında daha fazla bilgi için [ActiveX Denetimi İletişim Kutusu Ekle'ye](../../windows/insert-activex-control-dialog-box.md)bakın.
+   Kapsayıcının nesnenin CLSID yerine kullanabileceği adı ayarlar. Bu alan otomatik olarak doldurulmuyor. Bu alanı el ile doldurmadıysanız, denetim diğer araçların kullanımına açık olmayabilir. Örneğin, bir olmadan oluşturulan ActiveX denetimleri, `ProgID` **ActiveX denetimi Ekle** iletişim kutusunda kullanılamaz. İletişim kutusu hakkında daha fazla bilgi için bkz. [ActiveX denetimleri ekleme](../../windows/adding-editing-or-deleting-controls.md#insert-activex-controls).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL Kontrolü](../../atl/reference/adding-an-atl-control.md)<br/>
-[Bileşik Denetime İşlevsellik Ekleme](../../atl/adding-functionality-to-the-composite-control.md)<br/>
-[ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)
+[ATL denetimi](../../atl/reference/adding-an-atl-control.md)<br/>
+[Bileşik denetime Işlevsellik ekleme](../../atl/adding-functionality-to-the-composite-control.md)<br/>
+[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)

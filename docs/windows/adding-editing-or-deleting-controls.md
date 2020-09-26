@@ -42,12 +42,12 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 90e4eb659de6d1d5ed1488365f6637de2d537e57
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 79ea16e2d1737063040302a1ce111d275ae28e27
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831690"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352758"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: denetimleri ekleme, düzenleme veya silme (C++)
 
@@ -148,7 +148,7 @@ Ayrıca, belirtilen bir sınıf için yeni üye değişkenleri eklemek ve önced
 
 ### <a name="troubleshooting"></a>Sorun giderme
 
-İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örnek:
+İletişim kutusuna ortak denetim veya zengin düzenleme denetimi ekledikten sonra, iletişim kutusunu test ettiğinizde görünmez. Ya da iletişim kutusu görünmez. Örneğin:
 
 1. Bir Windows uygulaması (konsol uygulaması değil) oluşturmak için uygulama ayarlarını değiştirerek bir Win32 projesi oluşturun.
 
@@ -201,7 +201,7 @@ RichEdit denetimlerini kullanmak için çağrısı yapmanız gerekir `LoadLibrar
 >
 > Geçerli [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) sınıfını eski RichEdit 1,0 denetimiyle kullanabilirsiniz, ancak `CRichEditCtrl` yalnızca RichEdit 2,0 denetimini destekleyecek şekilde tasarlanmıştır. RichEdit 1,0 ve RichEdit 2,0 benzer olduğundan çoğu Yöntem çalışacaktır. Ancak, 1,0 ve 2,0 denetimleri arasında bazı farklılıklar vardır. bu nedenle bazı yöntemler yanlış çalışabilir veya hiç çalışmayabilir.
 
-### <a name="activex-controls"></a>ActiveX Denetimleri
+## <a name="insert-activex-controls"></a>ActiveX denetimleri Ekle
 
 Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md) ve [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md).
 
@@ -215,7 +215,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar.
 > [!CAUTION]
 > Sisteminizdeki tüm ActiveX denetimlerini dağıtmak yasal olmayabilir. Denetimleri yükleyen yazılım için lisans sözleşmesine başvurun veya yazılım şirketiyle iletişim kurun.
 
-#### <a name="to-add-an-activex-control"></a>ActiveX denetimi eklemek için
+### <a name="to-add-an-activex-control"></a>ActiveX denetimi eklemek için
 
 1. **İletişim kutusu düzenleyicisinde**bir iletişim kutusu açın.
 
@@ -230,7 +230,7 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak sağlar.
 > [!TIP]
 > İletişim kutusuna kayıtlı ActiveX denetimlerini hızlıca eklemek veya kolay erişim için **araç kutusu** penceresine ActiveX denetimleri eklemeyi denemek için **iletişim kutusu düzenleyicisindeki** kısayol menüsünü kullanabilirsiniz.
 
-#### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX denetiminin özelliklerini düzenlemek için
+### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX denetiminin özelliklerini düzenlemek için
 
 Bağımsız satıcılar tarafından sağlanan ActiveX denetimleri kendi özellikleri ve özellikleriyle donatılmış olabilir. Bu özellikler **Özellikler** penceresinde görüntülenir. ActiveX denetiminin yazarları tarafından oluşturulan tüm özellik sayfaları, **Özellikler sayfaları** iletişim kutusunda görüntülenir. (Belirli bir ActiveX denetiminin **özellik sayfasını** görüntülemek için [Özellikler penceresi](/visualstudio/ide/reference/properties-window)) **özellik sayfası** düğmesini seçin.
 

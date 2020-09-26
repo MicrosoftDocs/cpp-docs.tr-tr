@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 467925baf59598d743650d4f98d210f789f2b179
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe9d9a3a0538e2e5744987adcd64e67562711ea8
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833562"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353122"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik denetim genel Işlevleri
 
@@ -95,7 +95,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-Kaynak betikleri düzenlemeyle ilgili daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı deyimleri hakkında daha fazla bilgi için, Windows SDK: SDK Tools altındaki [ortak denetim parametrelerine](/windows/win32/menurc/common-control-parameters) bakın.
+Kaynak betikleri düzenlemeyle ilgili daha fazla bilgi için bkz. [nasıl yapılır: kaynak oluşturma](../../windows/how-to-create-a-resource-script-file.md). Denetim kaynak tanımı deyimleri hakkında daha fazla bilgi için, Windows SDK: SDK Tools altındaki [ortak denetim parametrelerine](/windows/win32/menurc/common-control-parameters) bakın.
 
 Genel içindeki iletişim kutuları hakkında daha fazla bilgi için, Windows SDK ' de [DialogBox](/windows/win32/api/winuser/nf-winuser-dialogboxw) ve [CreateDialogParam](/windows/win32/api/winuser/nf-winuser-createdialogparamw) ' a bakın.
 
@@ -298,7 +298,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="example"></a>Örnek
 
-Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) `AtlAxCreateControlLic` .
+Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) `AtlAxCreateControlLic` .
 
 ## <a name="atlaxcreatecontrollicex"></a><a name="atlaxcreatecontrollicex"></a> AtlAxCreateControlLicEx
 
@@ -365,7 +365,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="example"></a>Örnek
 
-Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) `AtlAxCreateControlLicEx` .
+Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) `AtlAxCreateControlLicEx` .
 
 ## <a name="atlaxattachcontrol"></a><a name="atlaxattachcontrol"></a> AtlAxAttachControl
 

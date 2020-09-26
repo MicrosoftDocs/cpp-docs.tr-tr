@@ -33,12 +33,12 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: fdd8a4be8830dc4b2ac1a559194828a4d2f56ab0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c98ff1fd44b73b3f204e9b952836c387f7f21146
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623491"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353096"
 ---
 # <a name="accelerator-editor-c"></a>Hızlandırıcı Düzenleyici (C++)
 
@@ -71,7 +71,7 @@ Hızlandırıcı tablosundaki **değiştirici** özelliğinin geçerli girişler
 
    |Değer|Açıklama|
    |-----------|-----------------|
-   |**Yok**|Kullanıcı yalnızca **anahtar** değerine basar.<br/><br/>Bu değer, 026 aracılığıyla (**CTRL + a** ile **CTRL + Z**arasında) YORUMLANAN bir ASCII/ANSI değerleriyle en etkili şekilde kullanılır.|
+   |**Hiçbiri**|Kullanıcı yalnızca **anahtar** değerine basar.<br/><br/>Bu değer, 026 aracılığıyla (**CTRL + a** ile **CTRL + Z**arasında) YORUMLANAN bir ASCII/ANSI değerleriyle en etkili şekilde kullanılır.|
    |**Alternatif**|Kullanıcı, **anahtar** değerinden önce **alt** tuşuna basmanız gerekir.|
    |**T**|Kullanıcının **anahtar** değerinden önce **CTRL** tuşuna BASMASı gerekir, ASCII türünde geçerli değildir.|
    |**Shift**|Kullanıcı, **anahtar** değerinden önce **SHIFT** tuşuna basmalıdır.|
@@ -184,7 +184,7 @@ Aşağıdaki yordamlar standart özellik sayfalarının kullanımına başvurur,
 1. [Özellikler penceresi](/visualstudio/ide/reference/properties-window) gidin ve tüm seçili Hızlandırıcıların paylaşmasını istediğiniz değerleri yazın.
 
 > [!NOTE]
-> Her değiştirici değeri, **Özellikler** penceresinde bir Boole özelliği olarak görünür. **Özellikler** penceresinde bir [değiştirici](../windows/accelerator-modifier-property.md) değeri değiştirirseniz, Hızlandırıcı tablosu, yeni değiştiriciye daha önce orada olan değiştiricilere ek olarak davranır. Bu nedenle, herhangi bir değiştirici değeri ayarlarsanız, her hızlandırıcının aynı **değiştirici** ayarlarını paydığından emin olmak için bunların tümünü ayarlamanız gerekir.
+> Her değiştirici değeri, **Özellikler** penceresinde bir Boole özelliği olarak görünür. **Özellikler** penceresinde bir değiştirici değeri değiştirirseniz, Hızlandırıcı tablosu, yeni değiştiriciye daha önce orada olan değiştiricilere ek olarak davranır. Bu nedenle, herhangi bir değiştirici değeri ayarlarsanız, her hızlandırıcının aynı **değiştirici** ayarlarını paydığından emin olmak için bunların tümünü ayarlamanız gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 

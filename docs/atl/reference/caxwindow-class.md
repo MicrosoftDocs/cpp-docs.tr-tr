@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: 1301baef874ac4e482a1b2a7f0a2ee6b1b63396f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b74ecb9af2decf92f873cef8d016907b6c9474cf
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833835"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353083"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 
@@ -170,7 +170,7 @@ Lisanslı bir ActiveX denetimi oluşturmak, başlatmak ve barındırmak için bk
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) `CreateControl` .
+Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) `CreateControl` .
 
 ## <a name="caxwindowcreatecontrolex"></a><a name="createcontrolex"></a> CAxWindow:: CreateControlEx
 
@@ -242,7 +242,7 @@ Lisanslı bir ActiveX denetimi oluşturmak, başlatmak ve barındırmak için bk
 
 ### <a name="example"></a>Örnek
 
-Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) `CreateControlEx` .
+Tarafından kullanılan bir örnek için bkz. [atl AXHost kullanarak ActiveX denetimlerini barındırma](../../atl/atl-control-containment-faq.md#hosting-activex-controls-using-atl-axhost) `CreateControlEx` .
 
 ## <a name="caxwindowgetwndclassname"></a><a name="getwndclassname"></a> CAxWindow:: GetWndClassName
 

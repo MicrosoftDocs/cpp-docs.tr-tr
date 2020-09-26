@@ -91,12 +91,12 @@ helpviewer_keywords:
 - std::map [C++], upper_bound
 - std::map [C++], value_comp
 ms.assetid: 7876f4c9-ebb4-4878-af1e-09364c43af0a
-ms.openlocfilehash: 7ebbccb688ffcd6f2354e5f3ec243cf56303c124
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: ee98c7e694912d27585755f0ff29eafd0cdbdbca
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040515"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353109"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -104,7 +104,7 @@ Her bir öğenin hem veri değerine hem de sıralama anahtarına sahip olduğu b
 
 Bir eşlemdeki bir öğenin değeri doğrudan değiştirilemez. Anahtar değeri bir sabittir ve değiştirilemez. Bunun yerine, eski öğelerle ilişkili anahtar değerleri silinmeli ve yeni öğeler için yeni anahtar değerleri eklenmelidir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key,
@@ -206,7 +206,7 @@ Map, [key_compare](#key_compare)türünde bir saklı işlev nesnesi çağırarak
 |[erer](#end)|past-the-end yineleyici döndürür.|
 |[equal_range](#equal_range)|Yineleyicilerin bir çiftini döndürür. Çiftin ilk yineleyicisi, belirtilen anahtardan daha büyük olan bir anahtarla ilk öğesine işaret eder `map` . Çiftin ikinci yineleyicisi, `map` anahtarına eşit veya ondan daha büyük olan bir anahtarla ilk öğesine işaret eder.|
 |[silme](#erase)|Bir eşlemdeki bir öğe veya öğe aralığını belirtilen konumdan kaldırır.|
-|[find](#find)|İçindeki, `map` belirtilen anahtara eşit bir anahtara sahip bir öğenin konumunu gösteren bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki, `map` belirtilen anahtara eşit bir anahtara sahip bir öğenin konumunu gösteren bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnesinin bir kopyasını döndürür `map` .|
 |[ekleyin](#insert)|Belirtilen konuma bir öğe veya öğe aralığı ekler `map` .|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını döndürür `map` .|
@@ -2792,6 +2792,6 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kapsayıcıları](../cpp/containers-modern-cpp.md)\
+[Kapsayıcıları](./stl-containers.md)\
 [C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

@@ -4,111 +4,111 @@ ms.date: 07/02/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: 16b2863bc3919edadeef29691c4588838010d9dc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f7bdc371e5575375f5e72a1a6c0c51890921b1f4
+ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319265"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91353135"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
 ::: moniker range="vs-2019"
 
-Bu sihirbaz Visual Studio 2019 ve sonraki yıllarda kullanılamaz.
+Bu sihirbaz, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri kaynağına erişmek için gereken veri bağlamaları ile bir OLE DB tüketici sınıfı ayarlar.
+Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri kaynağına erişmek için gereken veri bağlamalarını içeren bir OLE DB tüketici sınıfı ayarlar.
 
 > [!NOTE]
-> Bu sihirbaz, `Class` ve **.h dosya** alanlarına adlar girmeden önce bir veri kaynağı seçmek için Veri **Kaynağı** düğmesini tıklatmanızı gerektirir.
+> Bu sihirbaz, **Data Source** `Class` ve **. h dosya** alanlarına ad girmeden önce bir veri kaynağı seçmek için veri kaynağı düğmesine tıklamaya gerek duyar.
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
 - **Veri Kaynağı**
 
-   **Veri Kaynağı** düğmesi, belirtilen OLE DB sağlayıcısını kullanarak belirtilen veri kaynağını ayarlamanızı sağlar. Bu düğmeyi tıklattığınızda, **Veri Bağlantısı Özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri oluşturma ve **Veri Bağlantısı Özellikleri** iletişim kutusu hakkında daha fazla bilgi için Windows SDK belgelerinde Veri Bağlantısı [API Genel Bakışı'na](/previous-versions/windows/desktop/ms718102(v=vs.85)) bakın.
+   **Veri kaynağı** düğmesi belirtilen OLE DB sağlayıcıyı kullanarak belirtilen veri kaynağını ayarlamanıza olanak sağlar. Bu düğmeye tıkladığınızda, **veri bağlantısı özellikleri** iletişim kutusu görüntülenir. Bağlantı dizeleri oluşturma ve **veri bağlantısı özellikleri** iletişim kutusu hakkında daha fazla bilgi için, Windows SDK belgelerinde [veri bağlantısı API 'sine genel bakış](/previous-versions/windows/desktop/ms718102(v=vs.85)) bölümüne bakın.
 
-   Aşağıdaki ek bilgiler, **Veri Bağlantısı Özellikleri** iletişim kutusundaki sekmeleri açıklar.
+   Aşağıdaki ek bilgiler, **veri bağlantısı özellikleri** iletişim kutusundaki sekmeleri açıklar.
 
   - **Sağlayıcı** sekmesi
 
-      Veri kaynağına bağlantıyı yönetmek için uygun bir sağlayıcı seçin. Sağlayıcı türü genellikle bağlandığınız veritabanı türüne göre belirlenir. **İleri** düğmesini tıklatın veya **Bağlantı** sekmesini tıklatın.
+      Veri kaynağıyla bağlantıyı yönetmek için uygun bir sağlayıcı seçin. Sağlayıcının türü genellikle bağlanmakta olduğunuz veritabanı türüne göre belirlenir. **İleri** düğmesine tıklayın veya **bağlantı** sekmesine tıklayın.
 
   - **Bağlantı** sekmesi
 
-      Bu sekmenin içeriği seçtiğiniz sağlayıcıya bağlıdır. Birçok sağlayıcı türü olmasına rağmen, bu bölüm en yaygın iki bağlantıyı kapsar: SQL ve ODBC verileri. Diğerleri burada açıklanan alanlarda benzer varyasyonlar vardır.
+      Bu sekmenin içeriği, seçtiğiniz sağlayıcıya bağlıdır. Birçok sağlayıcı türü olsa da, bu bölümde en yaygın iki SQL ve ODBC verileri için bağlantılar ele alınmaktadır. Diğerleri, burada açıklanan alanlarda benzer çeşitlemelerdir.
 
       SQL verileri için:
 
-      1. **Bir sunucu adı seçin veya girin:** Ağdaki tüm kayıtlı veri sunucularını görüntülemek için açılır liste menüsünü tıklatın ve birini seçin.
+      1. **Sunucu adını seçin veya girin:** Ağ üzerindeki tüm kayıtlı veri sunucularını göstermek için açılan liste menüsüne tıklayın ve bir tane seçin.
 
-      1. **Sunucuda oturum açmak için bilgileri girin:** Veri sunucusunda oturum açmak için bir kullanıcı adı ve parola girin.
+      1. **Sunucuda oturum açmak için bilgileri girin:** Veri sunucusunda oturum açmak için bir Kullanıcı adı ve parola girin.
 
          > [!NOTE]
-         > Veri Bağlantısı Özellikleri iletişim kutusunun "Parola kaydetmeye izin ver" özelliğiyle ilgili bir güvenlik sorunu vardır. "Sunucuda oturum açmak için bilgileri girin" adlı iki radyo düğmesi vardır:
+         > Veri bağlantısı özellikleri iletişim kutusunun "Parola kaydetmeye Izin ver" özelliği ile bir güvenlik sorunu var. "Sunucuda oturum açmak için bilgileri girin," iki radyo düğmesi vardır:
          >
-         > - **Windows NT tümleşik güvenliğini kullanma**
-         > - **Belirli bir kullanıcı adı ve parola kullanma**
+         > - **Windows NT tümleşik güvenliğini kullan**
+         > - **Belirli bir Kullanıcı adı ve parola kullan**
          >
-         > **Belirli bir kullanıcı adı ve parola kullan'ı**seçerseniz, parolayı kaydetme seçeneğiniz vardır ("Parola kaydetmeye izin verin" onay kutusunu kullanarak); ancak, bu seçenek güvenli değildir. **Windows NT tümleşik güvenlik kullan'ı**seçmeniz önerilir; parolayı şifrelediği için bu seçenek güvenlidir.
-         > "Kayda ayırma parolasına izin ver"i seçmek istediğiniz durumlar olabilir. Örneğin, özel bir veritabanı çözümü içeren bir kitaplık yayımlıyorsanız, veritabanına doğrudan erişmemelisiniz, bunun yerine kullanıcıyı doğrulamak için bir orta katman uygulaması kullanmalı (seçtiğiniz kimlik doğrulama düzeni aracılığıyla) ve ardından kullanıcının kullanabileceği veri türlerini sınırlamanız gerekir.
+         > **Belirli bir Kullanıcı adı ve parola kullan**' ı seçerseniz, parolayı kaydetme seçeneğiniz vardır ("Parola kaydetmeye izin ver" onay kutusunu kullanarak); Ancak, bu seçenek güvenli değildir. **WINDOWS NT tümleşik güvenliği kullan**' ı seçmeniz önerilir. parolayı şifreleyen için bu seçenek güvenlidir.
+         > "Parola kaydetmeye Izin ver" i seçmek istediğiniz durumlar olabilir. Örneğin, özel bir veritabanı çözümüne sahip bir kitaplık yayınlarsanız, veritabanına doğrudan erişmemelisiniz, bunun yerine kullanıcının doğrulanması için bir orta katmanlı uygulama kullanın (seçtiğiniz kimlik doğrulama şeması aracılığıyla) ve ardından Kullanıcı tarafından kullanılabilen veri sıralamasını sınırlayabilirsiniz.
 
-      1. **Sunucudaki veritabanını seçin:** Veri sunucusundaki tüm kayıtlı veritabanlarını görüntülemek için açılır liste menüsünü tıklatın ve birini seçin.
+      1. **Sunucudaki veritabanını seçin:** Tüm kayıtlı veritabanlarını veri sunucusunda göstermek için aşağı açılan liste menüsüne tıklayıp bir tane seçin.
 
-         \-veya -
+         \- veya
 
-         **Veritabanı dosyalarını veritabanı adı olarak ekleme:** Veritabanı olarak kullanılacak bir dosya belirtin; açık yol adını girin.
+         Veritabanı **adı olarak bir veritabanı dosyası ekleyin:** Veritabanı olarak kullanılacak bir dosya belirtin; açık yol adını girin.
 
       ODBC verileri için:
 
       1. **Veri kaynağını belirtin:** Bir veri kaynağı adı veya bağlantı dizesi kullanabilirsiniz.
 
-         **Veri kaynağı adını kullanın:** Bu açılır liste, makinenizde kayıtlı veri kaynaklarını görüntüler. ODBC Veri Kaynağı Yöneticisi'ni kullanarak veri kaynaklarını önceden ayarlayabilirsiniz
+         **Veri kaynağı adını kullan:** Bu açılan liste, makinenizde kayıtlı veri kaynaklarını görüntüler. ODBC veri kaynağı Yöneticisi 'ni kullanarak veri kaynaklarını zamandan önce ayarlayabilirsiniz
 
-         \-veya -
+         \- veya
 
-         **Bağlantı dizelerini kullanın:** Daha önce almış olduğunuz bir bağlantı dizesini girin veya **Oluştur** düğmesini tıklatın; **Veri Kaynağı Seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağı seçin ve **Tamam'ı**tıklatın.
+         **Bağlantı dizesi kullan:** Zaten edindiğiniz bir bağlantı dizesi girin veya **Oluştur** düğmesine tıklayın; **veri kaynağı seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağı seçin ve **Tamam**' a tıklayın.
 
          > [!NOTE]
-         > **Sunucu Gezgini'nde**varolan bir bağlantının özelliklerini görüntüleyerek bir bağlantı dizesi edinebilir veya Server **Explorer'da** **Bağlantı Ekle'yi** çift tıklatarak bağlantı oluşturabilirsiniz.
+         > **Sunucu Gezgini**var olan bir bağlantının özelliklerini görüntüleyerek bir bağlantı dizesi elde edebilir veya **Sunucu Gezgini** **bağlantı ekle** ' ye çift tıklayarak bir bağlantı oluşturabilirsiniz.
 
-      1. **Sunucuda oturum açmak için bilgileri girin:** Veri sunucusunda oturum açmak için bir kullanıcı adı ve parola girin.
+      1. **Sunucuda oturum açmak için bilgileri girin:** Veri sunucusunda oturum açmak için bir Kullanıcı adı ve parola girin.
 
-      1. Kullanmak için ilk kataloğu girin.
+      1. Kullanılacak başlangıç kataloğunu girin.
 
-      1. **Test Bağlantısı'nı**tıklatın ; test başarılı olursa, **Tamam'ı**tıklatın. Değilse, oturum açma bilgilerinizi kontrol edin, başka bir veritabanı deneyin veya başka bir veri sunucusu deneyin.
+      1. **Bağlantıyı Sına**' ya tıklayın. sınama başarılı olursa **Tamam**' a tıklayın. Aksi takdirde, oturum açma bilgilerinizi denetleyin, başka bir veritabanı deneyin veya başka bir veri sunucusu deneyin.
 
-  - **Gelişmiş** sekme
+  - **Gelişmiş** sekmesi
 
-      **Ağ ayarları:** **Kimliğe bürünme düzeyini** (istemciyi taklit ederken sunucunun kullanmasına izin verilen kimliğe bürünme düzeyi; doğrudan RPC kimliğe bürünme düzeylerine karşılık gelir) ve **Koruma düzeyini** (istemci ve sunucu arasında gönderilen verilerin koruma düzeyi; doğrudan RPC koruma düzeylerine karşılık gelir) belirtin.
+      **Ağ ayarları:** **Kimliğe bürünme düzeyini** (istemcinin kimliğe bürünme sırasında sunucunun kullanmasına izin verilen kimliğe bürünme düzeyi; doğrudan RPC kimliğe bürünme düzeylerine karşılık gelir) ve **koruma düzeyini** (istemci ve sunucu arasında gönderilen verilerin koruma DÜZEYI), doğrudan RPC koruma düzeylerine karşılık gelir.
 
-      **Diğer:** **Bağlama zaman diliminde,** zaman aramadan önce izin verilen saniye saniye sayısını belirtin. **Access izinlerinde,** veri bağlantısındaki erişim izinlerini belirtin.
+      **Diğer:** **Bağlantı zaman aşımı**' de, bir zaman aşımı gerçekleşmeden önce izin verilen sürenin saniye sayısını belirtin. **Erişim izinleri**' nde, veri bağlantısında erişim izinlerini belirtin.
 
-      Gelişmiş başlatma özellikleri hakkında daha fazla bilgi için, her belirli OLE DB sağlayıcısıyla sağlanan belgelere bakın.
+      Gelişmiş başlatma özellikleri hakkında daha fazla bilgi için, her belirli OLE DB sağlayıcısıyla birlikte sunulan belgelere bakın.
 
-  - **Tüm** sekme
+  - **Tümü** sekmesi
 
-      Bu sekme, belirttiğiniz veri kaynağı ve bağlantı için başlatma özelliklerinin bir özetini görüntüler. Bu değerleri atayabilirsiniz.
+      Bu sekme, belirttiğiniz veri kaynağı ve bağlantı için başlatma özelliklerinin bir özetini görüntüler. Bu değerleri düzenleyebilirsiniz.
 
-      Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı Nesnesini Seç** iletişim kutusu görüntülenir. Bu iletişim kutusundan, tüketicinin kullanacağı tabloyu, görünümü veya depolanmış yordamı seçin.
+      Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı nesnesi Seç** iletişim kutusu görünür. Bu iletişim kutusunda, tüketicinin kullanacağı tablo, görünüm veya saklı yordamı seçin.
 
-- **Sınıfı**
+- **Sınıf**
 
-   Bir veri kaynağı seçtikten sonra, bu kutu, seçtiğiniz tabloya veya depolanan yordamı temel alan varsayılan sınıf adıyla doldurulur (bkz. aşağıdaki **veri kaynağını seç).** Sınıf adını da atabilirsiniz.
+   Bir veri kaynağı seçtikten sonra, bu kutu seçtiğiniz tabloya veya saklı yordama göre varsayılan bir sınıf adı ile doldurulur (bkz. aşağıdan **bir veri kaynağı seçme** ). Sınıf adını düzenleyebilirsiniz.
 
-- **.h dosyası**
+- **. h dosyası**
 
-   Bir veri kaynağı seçtikten sonra, bu kutu, seçtiğiniz tabloya veya depolanan yordamı temel alan varsayılan üstbilgi sınıf adıyla doldurulur (bkz. aşağıdaki **veri kaynağını seçin).** Üstbilgi dosyasının adını veya varolan bir üstbilgi dosyasını seçebilirsiniz.
+   Bir veri kaynağı seçtikten sonra, bu kutu seçtiğiniz tabloya veya saklı yordama göre varsayılan bir başlık sınıfı adı ile doldurulur (bkz. aşağıdan **bir veri kaynağı seçme** ). Üst bilgi dosyasının adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
 
-- **Yazarından**
+- **İlişkilendirilmesi**
 
-   Bu seçenek, sihirbazın öznitelikleri veya şablon bildirimleri kullanarak tüketici sınıfları oluşturup oluşturmayacağını belirtir. Bu seçeneği seçtiğinizde, sihirbaz şablon bildirimleri yerine öznitelikleri kullanır (bu varsayılan seçenektir). Bu seçeneği seçtiğinizde, sihirbaz öznitelikler yerine şablon bildirimleri kullanır.
+   Bu seçenek, sihirbazın öznitelikler veya şablon bildirimleri kullanarak tüketici sınıfları oluşturup oluşturmayacağını belirtir. Bu seçeneği belirlediğinizde, sihirbaz şablon bildirimleri yerine öznitelikleri kullanır (Bu varsayılan seçenektir). Bu seçeneğin işaretini kaldırdığınızda, sihirbaz öznitelikler yerine şablon bildirimleri kullanır.
 
-  - Bir tüketici **Tablo**Türü seçerseniz, sihirbaz `db_source` `db_table` tablo ve tablo erişimci sınıf bildirimleri oluşturmak `db_column` için öznitelikleri kullanır ve sütun eşlemi oluşturmak için kullanır. **Type** Örneğin, bu haritayı oluşturur:
+  - Bir tüketici **türü** **seçerseniz, sihirbaz** `db_source` `db_table` tablo ve tablo erişimcisi sınıf bildirimlerini oluşturmak için ve özniteliklerini kullanır ve `db_column` sütun eşlemesini oluşturmak için kullanır. Örneğin, bu eşlemeyi oluşturur:
 
     ```cpp
     // Inject table class and table accessor class declarations
@@ -120,7 +120,7 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
     ...
     ```
 
-     tablo ve `CTable` tablo aksesuar ı bildirmek için şablon sınıfını kullanmak yerine, sütun eşlemi oluşturmak için BEGIN_COLUMN_MAP ve END_COLUMN_MAP makroları, bu örnekte olduğu gibi:
+     `CTable`tablo ve tablo erişimci sınıfını bildirmek için şablon sınıfını kullanmak yerine, bu örnekte olduğu gibi BEGIN_COLUMN_MAP ve end_column_map makroları, sütun haritasını oluşturmak için kullanın:
 
     ```cpp
     // Table accessor class
@@ -135,7 +135,7 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
         END_COLUMN_MAP()
     ```
 
-  - Bir tüketici **Komut** **Türü** seçerseniz, sihirbaz `db_source` `db_command` kullanır ve `db_column` öznitelikleri ve sütun eşlemi oluşturmak için kullanır. Örneğin, bu haritayı oluşturur:
+  - Bir tüketici **komut** **türü** seçerseniz, sihirbaz `db_source` ve özniteliklerini kullanır `db_command` ve `db_column` sütun eşlemesini oluşturmak için kullanır. Örneğin, bu eşlemeyi oluşturur:
 
     ```cpp
     [db_source("<initialization_string>"), db_command("SQL_command")]
@@ -143,7 +143,7 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
     // Column map using db_column is the same as for consumer type of 'table'
     ```
 
-     komut sınıfındaki komut ve komut erişimci sınıf bildirimlerini kullanmak yerine,örneğin:
+     komut ve komut erişimci sınıfı bildirimlerini komut sınıfı '. h dosyasında kullanmak yerine, örneğin:
 
     ```cpp
     // Command accessor class:
@@ -155,40 +155,40 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
     // for consumer type of 'table'
     ```
 
-     Daha fazla bilgi için [Özniteliklerin Temel Mekaniği](../../windows/basic-mechanics-of-attributes.md) bölümüne bakın.
+     Daha fazla bilgi için bkz. [temel öznitelik özniteliklerini](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) inceleyin.
 
 - **Tür**
 
-   Tüketici sınıfının türetilip türetilmeyeceğini `CTable` veya `CCommand` (varsayılan) alınıp alınmayacağını belirtmek için bu radyo düğmelerinden birini seçin.
+   Tüketici sınıfının `CTable` veya (varsayılan) öğesinden türetilip türetilmeyeceğini belirtmek için bu radyo düğmelerinden birini seçin `CCommand` .
 
   - **Tablo**
 
-      Tablo ve tablo erişimci `CTable` `db_table` sınıf bildirimlerini kullanmak veya oluşturmak istiyorsanız bu seçeneği belirleyin.
+      `CTable` `db_table` Tablo ve tablo erişimcisi sınıf bildirimlerini oluşturmak için veya kullanmak istiyorsanız bu seçeneği belirleyin.
 
   - **Komut**
 
-      Komut ve komut erişimci `CCommand` `db_command` sınıf bildirimlerini kullanmak veya oluşturmak istiyorsanız bu seçeneği belirleyin. Bu varsayılan seçimdir.
+      `CCommand` `db_command` Komut ve komut erişimcisi sınıf bildirimlerini oluşturmak için veya kullanmak istiyorsanız bu seçeneği belirleyin. Bu, varsayılan seçimdir.
 
 - **Destek**
 
-   Tüketicide desteklenecek güncelleştirme türlerini belirtmek için onay kutularını seçin (varsayılan değer yok). Aşağıdakilerin her biri [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892(v=vs.85)) ve özellik kümesi haritasında [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676(v=vs.85)) için uygun girişleri ayarlar.
+   Tüketicide desteklenecek güncelleştirme türlerini belirtmek için onay kutularını seçin (varsayılan değer None ' dır). Aşağıdakilerden her biri [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892(v=vs.85)) ve özellik kümesi eşlemesinde [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676(v=vs.85)) için uygun girdileri ayarlayacaktır.
 
   - **Değiştir**
 
-      Satır kümesindeki satır verilerinin tüketici desteğinin güncelleştirmelerini belirtir.
+      Tüketicinin satır kümesindeki satır verilerinin güncelleştirmelerini desteklediğini belirtir.
 
   - **Ekle**
 
-      Satır kümesine satır ekleme tüketici desteği belirtir.
+      Tüketicinin satır kümesine ekleme işlemini desteklediğini belirtir.
 
-  - **Sil**
+  - **Silme**
 
-      Tüketici desteğinin satır kümesinden satırların silinmesini belirtir.
+      Tüketicinin satır kümesinden satır silmeyi desteklediğini belirtir.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL OLE DB Tüketici](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
+[ATL OLE DB tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)<br/>
 [Kod Sihirbazlarıyla İşlevsellik Ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[Bağlantı Dizeleri ve Veri Bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376(v=vs.85))
+[Bağlantı dizeleri ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376(v=vs.85))
