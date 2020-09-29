@@ -53,12 +53,12 @@ helpviewer_keywords:
 - top_item member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
-ms.openlocfilehash: 5f5cfbb4f6125c1c72550018735b377e1507ab08
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 316899aae024fbc8d9e568d6b5684ec4cfb11558
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214899"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499656"
 ---
 # <a name="stack-stlclr"></a>yığın (STL/CLR)
 
@@ -66,7 +66,7 @@ ms.locfileid: "87214899"
 
 Aşağıdaki açıklamada, `GValue` Ikinci *değeri* bir başvuru türü olmadığı sürece, bu örnekte olduğu gibi olur `Value^` . Benzer şekilde, `GContainer` ikincinin bir başvuru türü olmadığı ve bu durumda olduğu sürece *kapsayıcı* ile aynıdır `Container^` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -144,11 +144,11 @@ Nesnesi, *değer* öğelerini depolayan ve isteğe bağlı olarak büyüdüğü 
 
 ## <a name="members"></a>Üyeler
 
-## <a name="stackassign-stlclr"></a><a name="assign"></a>Stack:: Assign (STL/CLR)
+## <a name="stackassign-stlclr"></a><a name="assign"></a> Stack:: Assign (STL/CLR)
 
 Tüm öğeleri değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void assign(stack<Value, Container>% right);
@@ -198,7 +198,7 @@ a b c
 a b c
 ```
 
-## <a name="stackconst_reference-stlclr"></a><a name="const_reference"></a>Stack:: const_reference (STL/CLR)
+## <a name="stackconst_reference-stlclr"></a><a name="const_reference"></a> Stack:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -242,7 +242,7 @@ int main()
 c b a
 ```
 
-## <a name="stackcontainer_type-stlclr"></a><a name="container_type"></a>Stack:: container_type (STL/CLR)
+## <a name="stackcontainer_type-stlclr"></a><a name="container_type"></a> Stack:: container_type (STL/CLR)
 
 Temel alınan kapsayıcının türü.
 
@@ -284,7 +284,7 @@ int main()
 a b c
 ```
 
-## <a name="stackdifference_type-stlclr"></a><a name="difference_type"></a>yığın::d ifference_type (STL/CLR)
+## <a name="stackdifference_type-stlclr"></a><a name="difference_type"></a> yığın::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -342,7 +342,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="stackempty-stlclr"></a><a name="empty"></a>Stack:: Empty (STL/CLR)
+## <a name="stackempty-stlclr"></a><a name="empty"></a> Stack:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -354,7 +354,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Stack:: size (STL/CLR)](../dotnet/stack-size-stl-clr.md)eşdeğerdir `() == 0` . Yığının boş olup olmadığını test etmek için kullanırsınız.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Stack:: size (STL/CLR)](#size)eşdeğerdir `() == 0` . Yığının boş olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -396,7 +396,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="stackgeneric_container-stlclr"></a><a name="generic_container"></a>Stack:: generic_container (STL/CLR)
+## <a name="stackgeneric_container-stlclr"></a><a name="generic_container"></a> Stack:: generic_container (STL/CLR)
 
 Kapsayıcı bağdaştırıcısının genel arabiriminin türü.
 
@@ -459,7 +459,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="stackgeneric_value-stlclr"></a><a name="generic_value"></a>Stack:: generic_value (STL/CLR)
+## <a name="stackgeneric_value-stlclr"></a><a name="generic_value"></a> Stack:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -517,7 +517,7 @@ a b c
 c b a
 ```
 
-## <a name="stackget_container-stlclr"></a><a name="get_container"></a>Stack:: get_container (STL/CLR)
+## <a name="stackget_container-stlclr"></a><a name="get_container"></a> Stack:: get_container (STL/CLR)
 
 Temel alınan kapsayıcıya erişir.
 
@@ -559,11 +559,11 @@ int main()
 a b c
 ```
 
-## <a name="stackoperator-stlclr"></a><a name="op_as"></a>Stack:: operator = (STL/CLR)
+## <a name="stackoperator-stlclr"></a><a name="op_as"></a> Stack:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 stack <Value, Container>% operator=(stack <Value, Container>% right);
@@ -613,7 +613,7 @@ a b c
 a b c
 ```
 
-## <a name="stackpop-stlclr"></a><a name="pop"></a>yığın::p op (STL/CLR)
+## <a name="stackpop-stlclr"></a><a name="pop"></a> yığın::p op (STL/CLR)
 
 Son öğeyi kaldırır.
 
@@ -661,7 +661,7 @@ a b c
 a b
 ```
 
-## <a name="stackpush-stlclr"></a><a name="push"></a>yığın::p USH (STL/CLR)
+## <a name="stackpush-stlclr"></a><a name="push"></a> yığın::p USH (STL/CLR)
 
 Yeni bir son öğe ekler.
 
@@ -702,7 +702,7 @@ int main()
 a b c
 ```
 
-## <a name="stackreference-stlclr"></a><a name="reference"></a>Stack:: Reference (STL/CLR)
+## <a name="stackreference-stlclr"></a><a name="reference"></a> Stack:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -751,7 +751,7 @@ a b c
 a b x
 ```
 
-## <a name="stacksize-stlclr"></a><a name="size"></a>Stack:: size (STL/CLR)
+## <a name="stacksize-stlclr"></a><a name="size"></a> Stack:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -763,7 +763,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [Stack:: Empty (STL/CLR)](../dotnet/stack-empty-stl-clr.md) `()` .
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [Stack:: Empty (STL/CLR)](#empty) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -805,7 +805,7 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="stacksize_type-stlclr"></a><a name="size_type"></a>Stack:: size_type (STL/CLR)
+## <a name="stacksize_type-stlclr"></a><a name="size_type"></a> Stack:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -854,11 +854,11 @@ a b c
 size difference = 2
 ```
 
-## <a name="stackstack-stlclr"></a><a name="stack"></a>Stack:: Stack (STL/CLR)
+## <a name="stackstack-stlclr"></a><a name="stack"></a> Stack:: Stack (STL/CLR)
 
 Kapsayıcı bağdaştırıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 stack();
@@ -947,7 +947,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="stackto_array-stlclr"></a><a name="to_array"></a>Stack:: to_array (STL/CLR)
+## <a name="stackto_array-stlclr"></a><a name="to_array"></a> Stack:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -997,7 +997,7 @@ a b c d
 a b c
 ```
 
-## <a name="stacktop-stlclr"></a><a name="top"></a>Stack:: top (STL/CLR)
+## <a name="stacktop-stlclr"></a><a name="top"></a> Stack:: top (STL/CLR)
 
 Son öğeye erişir.
 
@@ -1049,7 +1049,7 @@ top() = c
 a b x
 ```
 
-## <a name="stacktop_item-stlclr"></a><a name="top_item"></a>Stack:: top_item (STL/CLR)
+## <a name="stacktop_item-stlclr"></a><a name="top_item"></a> Stack:: top_item (STL/CLR)
 
 Son öğeye erişir.
 
@@ -1101,7 +1101,7 @@ top_item = c
 a b x
 ```
 
-## <a name="stackvalue_type-stlclr"></a><a name="value_type"></a>Stack:: value_type (STL/CLR)
+## <a name="stackvalue_type-stlclr"></a><a name="value_type"></a> Stack:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -1146,11 +1146,11 @@ int main()
 c b a
 ```
 
-## <a name="operator-stack-stlclr"></a><a name="op_neq"></a>işleç! = (yığın) (STL/CLR)
+## <a name="operator-stack-stlclr"></a><a name="op_neq"></a> işleç! = (yığın) (STL/CLR)
 
 Yığın eşit değil karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1217,11 +1217,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-stack-stlclr"></a><a name="op_lt"></a>işleç &lt; (yığın) (STL/CLR)
+## <a name="operatorlt-stack-stlclr"></a><a name="op_lt"></a> işleç &lt; (yığın) (STL/CLR)
 
 Yığın karşılaştırmadan daha küçük.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1240,7 +1240,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, iki yığın öğe öğesine `left->` göre karşılaştırıldığı zaman, sol taraftan ayrılmadığını test etmek için bunu kullanarak bir [yığın:: size (STL/CLR)](../dotnet/stack-size-stl-clr.md) döndürülür `() <` `right->size()` . *left* *right*
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, iki yığın öğe öğesine `left->` göre karşılaştırıldığı zaman, sol taraftan ayrılmadığını test etmek için bunu kullanarak bir [yığın:: size (STL/CLR)](#size) döndürülür `() <` `right->size()` . *left* *right*
 
 ### <a name="example"></a>Örnek
 
@@ -1288,11 +1288,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-stack-stlclr"></a><a name="op_lteq"></a>operator &lt; = (Stack) (STL/CLR)
+## <a name="operatorlt-stack-stlclr"></a><a name="op_lteq"></a> operator &lt; = (Stack) (STL/CLR)
 
 Yığın küçüktür veya eşittir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1359,11 +1359,11 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-stack-stlclr"></a><a name="op_eq"></a>operator = = (Stack) (STL/CLR)
+## <a name="operator-stack-stlclr"></a><a name="op_eq"></a> operator = = (Stack) (STL/CLR)
 
 Yığın eşit karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1430,11 +1430,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-stack-stlclr"></a><a name="op_gt"></a>işleç &gt; (yığın) (STL/CLR)
+## <a name="operatorgt-stack-stlclr"></a><a name="op_gt"></a> işleç &gt; (yığın) (STL/CLR)
 
 Yığın karşılaştırmadan daha büyük.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1501,11 +1501,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-stack-stlclr"></a><a name="op_gteq"></a>operator &gt; = (Stack) (STL/CLR)
+## <a name="operatorgt-stack-stlclr"></a><a name="op_gteq"></a> operator &gt; = (Stack) (STL/CLR)
 
 Yığın daha büyük veya eşit karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,

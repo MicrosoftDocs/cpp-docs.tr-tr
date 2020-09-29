@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 688cd337d0754fc49ede0f39fd774c9990f7c79f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd74dd4562a3c4a8bff2c58d5f1d801f5dd06fd8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224363"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499623"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: Özellik sayfası uygulama
 
@@ -45,7 +45,7 @@ Bu örneği gerçekleştirmek için şunları yapmanız gerekir:
 
 - Özellik sayfasını test edecek [bir makro oluşturun](#vcconcreating_a_macro) .
 
-## <a name="adding-the-atl-property-page-class"></a><a name="vcconusing_the_atl_object_wizard"></a>ATL Özellik sayfası sınıfını ekleme
+## <a name="adding-the-atl-property-page-class"></a><a name="vcconusing_the_atl_object_wizard"></a> ATL Özellik sayfası sınıfını ekleme
 
 İlk olarak, adlı bir DLL sunucusu için yeni bir ATL projesi oluşturun `ATLPages7` . Şimdi bir özellik sayfası oluşturmak için [atl özellik sayfası Sihirbazı 'nı](../atl/reference/atl-property-page-wizard.md) kullanın. Özellik sayfasına **DocProperties** 'In **kısa adı** verin ve ardından aşağıdaki tabloda gösterildiği gibi özellik sayfasına özgü öğeleri ayarlamak için **dizeler** sayfasına geçin.
 
@@ -62,7 +62,7 @@ Sihirbazın bu sayfasında ayarladığınız değerler, çağrı sırasında öz
 
 Sihirbazın Özellik sayfanızı oluşturmasını sağlamak için **Tamam** ' ı tıklatın.
 
-## <a name="editing-the-dialog-resource"></a><a name="vcconediting_the_dialog_resource"></a>Iletişim kaynağı düzenleniyor
+## <a name="editing-the-dialog-resource"></a><a name="vcconediting_the_dialog_resource"></a> Iletişim kaynağı düzenleniyor
 
 Artık Özellik sayfanız oluşturuldığına göre, Sayfanızı temsil eden iletişim kaynağı için birkaç denetim eklemeniz gerekir. Bir düzenleme kutusu, statik metin denetimi ve onay kutusu ekleyin ve kimliklerini aşağıda gösterildiği gibi ayarlayın:
 
@@ -73,7 +73,7 @@ Bu denetimler, belgenin dosya adını ve salt okunurdur durumunu göstermek içi
 > [!NOTE]
 > İletişim kutusu kaynağı bir çerçeve veya komut düğmeleri içermez, ya da beklenolabileceğiniz sekmeli görünümü içermez. Bu özellikler, [OleCreatePropertyFrame](/windows/win32/api/olectl/nf-olectl-olecreatepropertyframe)çağırarak oluşturulmuş bir özellik sayfası çerçevesi tarafından sağlanır.
 
-## <a name="adding-message-handlers"></a><a name="vcconadding_message_handlers"></a>Ileti Işleyicileri ekleme
+## <a name="adding-message-handlers"></a><a name="vcconadding_message_handlers"></a> Ileti Işleyicileri ekleme
 
 Denetimlerle, denetimlerin her birinin değeri değiştiğinde sayfanın kirli durumunu güncelleştirmek için ileti işleyicileri ekleyebilirsiniz:
 
@@ -84,7 +84,7 @@ Bu kod, sayfa sitesine sayfanın değiştiğini bildiren [IPropertyPageImpl:: Se
 > [!NOTE]
 > Kendi özellik sayfalarınızda, değişmeyen özelliklerin güncelleştirilmesini önlemek için Kullanıcı tarafından hangi özelliklerin değiştirildiğini tam olarak izlemeniz gerekebilir. Bu örnek, özgün özellik değerlerini izleyerek bu kodu uygular ve değişiklikleri uygulamak için zaman olduğu zaman kullanıcı arabiriminden geçerli değerlerle karşılaştırır.
 
-## <a name="housekeeping"></a><a name="vcconhousekeeping"></a>Temizlik
+## <a name="housekeeping"></a><a name="vcconhousekeeping"></a> Temizlik
 
 Şimdi `#import` , bir derleyicinin arabirimi hakkında bilmesi Için DocProperties. h öğesine birkaç deyim ekleyin `Document` :
 
@@ -94,7 +94,7 @@ Ayrıca `IPropertyPageImpl` temel sınıfa başvurmanız gerekir; aşağıdakile
 
 [!code-cpp[NVC_ATL_Windowing#75](../atl/codesnippet/cpp/example-implementing-a-property-page_3.h)]
 
-## <a name="overriding-ipropertypageimplsetobjects"></a><a name="vcconoverriding_ipropertypageimpl_setobjects"></a>IPropertyPageImpl:: SetObjects geçersiz kılınıyor
+## <a name="overriding-ipropertypageimplsetobjects"></a><a name="vcconoverriding_ipropertypageimpl_setobjects"></a> IPropertyPageImpl:: SetObjects geçersiz kılınıyor
 
 `IPropertyPageImpl`Geçersiz kılmanız gereken ilk yöntem [SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)' dir. Burada yalnızca tek bir nesnenin geçtiğini ve beklediğiniz arabirimi desteklediğini denetlemek için kod ekleyeceksiniz `Document` :
 
@@ -103,7 +103,7 @@ Ayrıca `IPropertyPageImpl` temel sınıfa başvurmanız gerekir; aşağıdakile
 > [!NOTE]
 > Kullanıcının nesnenin dosya adını ayarlayacağından, tek bir konumda yalnızca bir dosya bulunabilir olduğundan, Bu sayfa için yalnızca tek bir nesneyi desteklemeye yönelik bir fikir verir.
 
-## <a name="overriding-ipropertypageimplactivate"></a><a name="vcconoverriding_ipropertypageimpl_activate"></a>IPropertyPageImpl:: Activate geçersiz kılınıyor
+## <a name="overriding-ipropertypageimplactivate"></a><a name="vcconoverriding_ipropertypageimpl_activate"></a> IPropertyPageImpl:: Activate geçersiz kılınıyor
 
 Sonraki adım, sayfa ilk oluşturulduğunda özellik sayfasını temeldeki nesnenin özellik değerleriyle başlatmalıdır.
 
@@ -117,7 +117,7 @@ Bu durumda, sayfanın kullanıcıları değişikliklerini uygulaması durumunda 
 
 Bu kod, `Document` ilgilendiğiniz özellikleri almak için ARABIRIMIN com yöntemlerini kullanır. Daha sonra, [Cdialogimpl](../atl/reference/cdialogimpl-class.md) tarafından sunulan Win32 API sarmalayıcıları ve Kullanıcı için özellik değerlerini göstermek için temel sınıfları kullanır.
 
-## <a name="overriding-ipropertypageimplapply"></a><a name="vcconoverride_ipropertypageimpl_apply"></a>IPropertyPageImpl:: Apply geçersiz kılınıyor
+## <a name="overriding-ipropertypageimplapply"></a><a name="vcconoverride_ipropertypageimpl_apply"></a> IPropertyPageImpl:: Apply geçersiz kılınıyor
 
 Kullanıcılar nesneleri nesnelerine uygulamak istedikleri zaman, özellik sayfası sitesi [Uygula](../atl/reference/ipropertypageimpl-class.md#apply) yöntemini çağırır. Bu, içindeki kodun ters işlemini yapmak için gereken yerdir. Bu, `Activate` `Activate` nesnesinden değerler alıp özellik sayfasındaki denetimlere itilmiş olacak şekilde, `Apply` özellik sayfasındaki denetimlerden değerleri alır ve nesneye gönderir.
 
@@ -129,11 +129,11 @@ Kullanıcılar nesneleri nesnelerine uygulamak istedikleri zaman, özellik sayfa
 > [!NOTE]
 > `Document``FullName`salt okunurdur özelliği olarak gösterir. Özellik sayfasında yapılan değişikliklere dayalı olarak belgenin dosya adını güncelleştirmek için, bu `Save` yöntemi kullanarak dosyayı farklı bir adla kaydedin. Bu nedenle, özellik sayfasındaki kodun, özellikleri almak veya ayarlamak için kendisini sınırlaması gerekmez.
 
-## <a name="displaying-the-property-page"></a><a name="vccontesting_the_property_page"></a>Özellik sayfasını görüntüleme
+## <a name="displaying-the-property-page"></a><a name="vccontesting_the_property_page"></a> Özellik sayfasını görüntüleme
 
 Bu sayfayı göstermek için basit bir yardımcı nesnesi oluşturmanız gerekir. Yardımcı nesne, `OleCreatePropertyFrame` tek bir nesneye bağlı tek bir sayfayı görüntülemek için API 'yi basitleştiren bir yöntem sağlar. Bu yardımcı, Visual Basic kullanılabilmesi için tasarlanacaktır.
 
-Yeni bir sınıf oluşturmak ve kısa adı olarak kullanmak için [Sınıf Ekle iletişim kutusunu](../ide/add-class-dialog-box.md) ve [atl basit nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md) ' nı kullanın `Helper` . Oluşturulduktan sonra, aşağıdaki tabloda gösterildiği gibi bir yöntem ekleyin.
+Yeni bir sınıf oluşturmak ve kısa adı olarak kullanmak için [Sınıf Ekle iletişim kutusunu](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) ve [atl basit nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md) ' nı kullanın `Helper` . Oluşturulduktan sonra, aşağıdaki tabloda gösterildiği gibi bir yöntem ekleyin.
 
 |Öğe|Değer|
 |----------|-----------|
@@ -146,7 +146,7 @@ Yöntemi aşağıda gösterildiği gibi uygulayın:
 
 [!code-cpp[NVC_ATL_Windowing#80](../atl/codesnippet/cpp/example-implementing-a-property-page_8.cpp)]
 
-## <a name="creating-a-macro"></a><a name="vcconcreating_a_macro"></a>Makro oluşturma
+## <a name="creating-a-macro"></a><a name="vcconcreating_a_macro"></a> Makro oluşturma
 
 Projeyi derledikten sonra, Visual Studio geliştirme ortamında oluşturabileceğiniz ve çalıştırabileceğiniz basit bir makro kullanarak özellik sayfasını ve yardımcı nesnesini test edebilirsiniz. Bu makro bir yardımcı nesne oluşturacak, sonra `ShowPage` **DocProperties** Özellik sayfasının ProgID 'Sini ve `IUnknown` Visual Studio Düzenleyicisi 'nde Şu anda etkin olan belgenin işaretçisini kullanarak yöntemini çağırır. Bu makro için gereken kod aşağıda gösterilmiştir:
 

@@ -1,5 +1,5 @@
 ---
-title: ATL basit nesnesi ekleme
+title: ATL Basit Nesnesi Ekleme
 ms.date: 11/04/2016
 f1_keywords:
 - vc.codewiz.classes.adding.atl
@@ -8,36 +8,36 @@ helpviewer_keywords:
 - objects [ATL]
 - ATL, simple objects
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-ms.openlocfilehash: 95a93268ca76516c1b3f736c106518ae6d94cc27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85c19c483ff27bd34431ec163e3baadac1855236
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261624"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499341"
 ---
-# <a name="adding-an-atl-simple-object"></a>ATL basit nesnesi ekleme
+# <a name="adding-an-atl-simple-object"></a>ATL Basit Nesnesi Ekleme
 
-ATL (Etkin Şablon Kütüphanesi) nesne projenize eklemek için projenize ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
+Projenize ATL (etkin şablon kitaplığı) nesnesi eklemek için projenizin bir ATL uygulaması veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Atl uygulaması oluşturmak için ATL [Proje Sihirbazı 'nı](../../atl/reference/atl-project-wizard.md) kullanabilir veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
 
-İlk oluşturmak veya bunları daha sonra kullanarak ekledikten sonra yeni ATL nesneniz için COM arabirimleri tanımlayabilirsiniz [arabirim uygulama](../../ide/implement-interface-wizard.md) komutunu **sınıf görünümü** kısayol menüsü.
+İlk oluşturduğunuzda yeni ATL nesneniz için COM arabirimlerini tanımlayabilir veya daha sonra **sınıf görünümü** kısayol menüsünden [arabirimi Uygula](../../ide/implementing-an-interface-visual-cpp.md#implement-interface-wizard) komutunu kullanarak bunları ekleyebilirsiniz.
 
-## <a name="to-add-an-atl-simple-object-to-your-atl-com-project"></a>ATL COM projenize ATL basit nesne eklemek için
+## <a name="to-add-an-atl-simple-object-to-your-atl-com-project"></a>ATL COM projenize ATL basit nesnesi eklemek için
 
-1. Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ATL basit nesne eklemek istediğiniz proje adına sağ tıklayın.
+1. **Çözüm Gezgini** ya da [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ATL Simple nesnesini eklemek istediğiniz projenin adına sağ tıklayın.
 
-1. Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünde, **Ekle**' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusundaki **şablonları** bölmesinde tıklayın **ATL Basit Nesne**ve ardından **açık** görüntülenecek[ATL Basit Nesne Sihirbazı](../../atl/reference/atl-simple-object-wizard.md).
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusundaki **Şablonlar** bölmesinde, **atl basit nesne**' ye tıklayın ve ardından [atl basit nesne Sihirbazı 'nı](../../atl/reference/atl-simple-object-wizard.md)göstermek için **Aç** ' a tıklayın.
 
-1. Projeniz için ek seçenekleri ayarlama [seçenekleri](../../atl/reference/options-atl-simple-object-wizard.md) sayfasının **ATL Basit Nesne** Sihirbazı.
+1. **Atl basit nesne** Sihirbazı 'nın [Seçenekler](../../atl/reference/options-atl-simple-object-wizard.md) sayfasında projeniz için ek seçenekler belirleyin.
 
-1. Tıklayın **son** nesne projenize eklemek için.
+1. Nesneyi projenize eklemek için **son** ' a tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL Projesine Yeni Arabirim Ekleme](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>
-[Bir Nesneye Bağlantı Noktaları Ekleme](../../atl/adding-connection-points-to-an-object.md)<br/>
+[Bir nesneye bağlantı noktaları ekleme](../../atl/adding-connection-points-to-an-object.md)<br/>
 [Yöntem ekleme](../../ide/adding-a-method-visual-cpp.md)<br/>
-[MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
+[MFC Sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Genel C++ Sınıfı Ekleme](../../ide/adding-a-generic-cpp-class.md)

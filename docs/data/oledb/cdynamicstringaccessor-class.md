@@ -12,18 +12,18 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: 927ea5ceef9ac74ae3cc1e06a47969b537209002
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 891c80a7c21fd046fba393b494ed6d84f731db6f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838171"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498674"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
 
 Veritabanı şeması (veritabanının temel yapısı) hakkında bilginiz olmadığında bir veri kaynağına erişmenizi sağlar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template< typename BaseType, DBTYPEENUM OleDbType >
@@ -51,7 +51,7 @@ Veri deposundaki sütun verilerinin yerel türü önemi değildir; sağlayıcı 
 
 `CDynamicStringAccessor`Sütun bilgilerini almak için yöntemleri kullanın. Bu sütun bilgilerini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız.
 
-Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetString](../../data/oledb/cdynamicstringaccessor-getstring.md)kullanarak arabellekteki verileri alın veya [SetString](../../data/oledb/cdynamicstringaccessor-setstring.md)kullanarak arabelleğe saklayın.
+Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetString](#getstring)kullanarak arabellekteki verileri alın veya [SetString](#setstring)kullanarak arabelleğe saklayın.
 
 Bir tartışma ve dinamik erişimci sınıflarını kullanma örnekleri için bkz. [dinamik erişimcileri kullanma](../../data/oledb/using-dynamic-accessors.md).
 
@@ -59,7 +59,7 @@ Bir tartışma ve dinamik erişimci sınıflarını kullanma örnekleri için bk
 
 Belirtilen sütun verilerini bir dize olarak alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BaseType* GetString(DBORDINAL nColumn) const throw();
@@ -89,7 +89,7 @@ Belirtilen sütundan alınan dize değerine yönelik bir işaretçi. Değer `Bas
 
 Belirtilen sütun verisini bir dize olarak ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT SetString(DBORDINAL nColumn,

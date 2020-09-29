@@ -11,12 +11,12 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: b1bf4f85ccf7a0bb2d77bfb96c512349f581f193
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6acd60d430f13906d11e9a9b3e7c5655ee94badb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832457"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499301"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>ATL Projesine Nesne ve Denetim Ekleme
 
@@ -42,9 +42,9 @@ ATL veya MFC tabanlı projelerinize bir nesne veya denetim eklemek için ATL kod
 
 1. **Çözüm Gezgini**, proje düğümüne sağ tıklayın ve kısayol menüsünden **Ekle** ' ye tıklayın. **Sınıf Ekle**' ye tıklayın.
 
-   [Sınıf Ekle](../../ide/add-class-dialog-box.md) iletişim kutusu görünür.
+   [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) iletişim kutusu görünür.
 
-1. **Kategoriler** bölmesinde seçili **ATL** klasörü ile **Şablonlar** bölmesinden eklenecek bir nesne seçin. **Aç**’a tıklayın. Seçili nesne için kod Sihirbazı görüntülenir.
+1. **Kategoriler** bölmesinde seçili **ATL** klasörü ile **Şablonlar** bölmesinden eklenecek bir nesne seçin. **Aç**'a tıklayın. Seçili nesne için kod Sihirbazı görüntülenir.
 
    > [!NOTE]
    > Bir MFC projesine ATL nesnesi eklemek istiyorsanız, mevcut projeye ATL desteği eklemeniz gerekir. Bunu, [MFC PROJENIZE atl desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)bölümündeki yönergeleri izleyerek yapabilirsiniz.

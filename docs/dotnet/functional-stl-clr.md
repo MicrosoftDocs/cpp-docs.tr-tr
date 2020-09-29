@@ -63,18 +63,18 @@ helpviewer_keywords:
 - unary_delegate_noreturn function [STL/CLR]
 - unary_negate function [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-ms.openlocfilehash: 5cfec19ad8a25d3b44647e490b2c328a5639e675
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 00d719df2fdba892d1d9362da2b2172bac9ca16f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743314"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499709"
 ---
 # <a name="functional-stlclr"></a>işlevsel (STL/CLR)
 
 `<cliext/functional>`Bir dizi şablon sınıfı ve ilgili şablon temsilcileri ve işlevleri tanımlamak IÇIN STL/CLR üstbilgisini ekleyin.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```
 #include <functional>
@@ -88,7 +88,7 @@ ms.locfileid: "90743314"
 
 ## <a name="declarations"></a>Bildirimler
 
-|Temsilci|Description|
+|Temsilci|Açıklama|
 |--------------|-----------------|
 |[binary_delegate (STL/CLR)](#binary_delegate)|İki bağımsız değişken temsilcisi.|
 |[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|İki bağımsız değişken temsilcisi döndürüyor **`void`** .|
@@ -130,7 +130,7 @@ ms.locfileid: "90743314"
 
 Genereic sınıfı iki bağımsız değişkenli bir temsilciyi açıklar. Bağımsız değişkeni ve dönüş türleri bakımından bir temsilci belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 generic<typename Arg1,
@@ -206,7 +206,7 @@ compare(L'b', L'a') = False
 
 Genereic sınıfı, döndüren iki bağımsız değişkenli bir temsilciyi açıklar **`void`** . Bağımsız değişkeni olarak bir temsilci belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 generic<typename Arg1,
@@ -276,7 +276,7 @@ compare(b, a) = False
 
 Şablon sınıfı, çağrıldığında, depolanan iki bağımsız değişkenli functor mantıksal DEĞIL ' i döndüren bir functor tanımlar. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun>
@@ -307,7 +307,7 @@ Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
@@ -315,7 +315,7 @@ Depolanan functor türü.
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 |stored_function_type|Functor türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |binary_negate|Functor 'ı oluşturur.|
 
@@ -390,7 +390,7 @@ int main()
 
 `binder1st`Bağımsız değişken ve functor için bir üretir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun,
@@ -417,7 +417,7 @@ Kaydıramanın ilk bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [binder1st (STL/CLR)](../dotnet/binder1st-stl-clr.md)döndürür `<Fun>(functor, left)` . İki bağımsız değişkenli bir functor ve ilk bağımsız değişkenini ikinci bir bağımsız değişkenle çağıran bir tek değişkenli functor 'da sarmanın kolay bir yolu olarak kullanırsınız.
+Şablon işlevi [binder1st (STL/CLR)](#binder1st)döndürür `<Fun>(functor, left)` . İki bağımsız değişkenli bir functor ve ilk bağımsız değişkenini ikinci bir bağımsız değişkenle çağıran bir tek değişkenli functor 'da sarmanın kolay bir yolu olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -471,7 +471,7 @@ int main()
 
 `binder2nd`Bağımsız değişken ve functor için bir üretir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun,
@@ -498,7 +498,7 @@ Sarılacağı ikinci bağımsız değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [binder2nd (STL/CLR)](../dotnet/binder2nd-stl-clr.md)döndürür `<Fun>(functor, right)` . İki bağımsız değişken değerli bir functor ve ikinci bağımsız değişkenini bir ilk bağımsız değişkenle çağıran bir tek değişkenli functor 'da sarmanın kolay bir yolu olarak kullanırsınız.
+Şablon işlevi [binder2nd (STL/CLR)](#binder2nd)döndürür `<Fun>(functor, right)` . İki bağımsız değişken değerli bir functor ve ikinci bağımsız değişkenini bir ilk bağımsız değişkenle çağıran bir tek değişkenli functor 'da sarmanın kolay bir yolu olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -552,7 +552,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında bir bağımsız değişken functor tanımlar, bu, çağrıldığında, depolanan ilk bağımsız değişkeni ve sağlanan ikinci bağımsız değişkeni ile çağrılan, depolanan iki bağımsız değişkenli functor 'u döndürür. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun>
@@ -582,7 +582,7 @@ Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
@@ -590,7 +590,7 @@ Depolanan functor türü.
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 |stored_function_type|Functor türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |binder1st|Functor 'ı oluşturur.|
 
@@ -657,7 +657,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında bir bağımsız değişken functor tanımlar, çağrıldığında, sağlanan ilk bağımsız değişkeni ve depolanan ikinci bağımsız değişkeni ile çağrılan, depolanan iki bağımsız değişkenli functor ' ı döndürür. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun>
@@ -687,7 +687,7 @@ Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
@@ -695,7 +695,7 @@ Depolanan functor türü.
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 |stored_function_type|Functor türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |binder2nd|Functor 'ı oluşturur.|
 
@@ -762,7 +762,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, ikinciden bölünen ilk bağımsız değişkeni döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -792,14 +792,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |böler|Functor 'ı oluşturur.|
 
@@ -863,7 +863,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciye eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -893,14 +893,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |equal_to|Functor 'ı oluşturur.|
 
@@ -964,7 +964,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden büyükse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -994,14 +994,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |büyüktür|Functor 'ı oluşturur.|
 
@@ -1065,7 +1065,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden büyük veya buna eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1095,14 +1095,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |greater_equal|Functor 'ı oluşturur.|
 
@@ -1166,7 +1166,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçükse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1196,14 +1196,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |daha az|Functor 'ı oluşturur.|
 
@@ -1267,7 +1267,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciden küçük veya ona eşitse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1297,14 +1297,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |less_equal|Functor 'ı oluşturur.|
 
@@ -1368,7 +1368,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ve ikinci test doğru olduğunda true değeri döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1398,14 +1398,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |logical_and|Functor 'ı oluşturur.|
 
@@ -1469,7 +1469,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca bağımsız değişkeninin yanlış olarak test edildiğinde true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1497,13 +1497,13 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |argument_type|Functor bağımsız değişkeninin türü.|
 |delegate_type|Genel temsilcinin türü.|
 |result_type|Functor sonucunun türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |logical_not|Functor 'ı oluşturur.|
 
@@ -1559,7 +1559,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ya da ikinci testlerin true olması durumunda true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1589,14 +1589,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |logical_or|Functor 'ı oluşturur.|
 
@@ -1660,7 +1660,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni ikinci kez döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1690,14 +1690,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |eksi|Functor 'ı oluşturur.|
 
@@ -1761,7 +1761,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni döndürür bir, çağrıldığında bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1791,14 +1791,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |mod|Functor 'ı oluşturur.|
 
@@ -1862,7 +1862,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni ikinci kez döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1892,14 +1892,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |çarpar|Functor 'ı oluşturur.|
 
@@ -1963,7 +1963,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında bağımsız değişkenini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -1991,13 +1991,13 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |argument_type|Functor bağımsız değişkeninin türü.|
 |delegate_type|Genel temsilcinin türü.|
 |result_type|Functor sonucunun türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |olumsuzlaştırma|Functor 'ı oluşturur.|
 
@@ -2053,7 +2053,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında, yalnızca ilk bağımsız değişken ikinciye eşit değilse true değerini döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -2083,14 +2083,14 @@ Bağımsız değişkenlerin türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |not_equal_to|Functor 'ı oluşturur.|
 
@@ -2154,7 +2154,7 @@ int main()
 
 Bir `unary_negate` functor için bir üretir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun>
@@ -2173,7 +2173,7 @@ Kaydırmak için functor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [unary_negate (STL/CLR)](../dotnet/unary-negate-stl-clr.md)döndürür `<Fun>(functor)` . Bu değeri, mantıksal olmayan bir functor 'da tek değişkenli bir functor 'ı sarmanın kolay bir yolu olarak kullanırsınız.
+Şablon işlevi [unary_negate (STL/CLR)](#unary_negate)döndürür `<Fun>(functor)` . Bu değeri, mantıksal olmayan bir functor 'da tek değişkenli bir functor 'ı sarmanın kolay bir yolu olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2226,7 +2226,7 @@ int main()
 
 Bir `binary_negate` functor için bir üretir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun>
@@ -2245,7 +2245,7 @@ Kaydırmak için functor.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi [binary_negate (STL/CLR)](../dotnet/binary-negate-stl-clr.md)döndürür `<Fun>(functor)` . Bunu, mantıksal olmayan bir komik bir ctor 'da iki bağımsız değişkenli bir functor sarmak için kullanışlı bir yol olarak kullanırsınız.
+Şablon işlevi [binary_negate (STL/CLR)](#negate)döndürür `<Fun>(functor)` . Bunu, mantıksal olmayan bir komik bir ctor 'da iki bağımsız değişkenli bir functor sarmak için kullanışlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2307,7 +2307,7 @@ int main()
 
 Şablon sınıfı, çağrıldığında ilk bağımsız değişkeni artı ikinci değeri döndüren bir functor tanımlar. Bağımsız değişken türü açısından bir işlev nesnesi belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Arg>
@@ -2337,14 +2337,14 @@ Bağımsız değişkenlerin türü ve dönüş değeri.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |delegate_type|Genel temsilcinin türü.|
 |first_argument_type|Functor ilk bağımsız değişkeninin türü.|
 |result_type|Functor sonucunun türü.|
 |second_argument_type|Functor ikinci bağımsız değişkeninin türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |artı|Functor 'ı oluşturur.|
 
@@ -2408,7 +2408,7 @@ int main()
 
 Genereic sınıfı, tek değişkenli bir temsilciyi açıklar. Bağımsız değişkeni ve dönüş türleri bakımından bir temsilci belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 generic<typename Arg,
@@ -2474,7 +2474,7 @@ hash(L'b') = 22
 
 Genereic sınıfı, döndüren tek değişkenli bir temsilciyi açıklar **`void`** . Bağımsız değişken türü açısından bir temsilci belirtin.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 generic<typename Arg>
@@ -2537,7 +2537,7 @@ hash(b) = 22
 
 Şablon sınıfı, çağrıldığında, depolanan tek değişkenli functor mantıksal DEĞIL ' i döndüren bir functor tanımlar. Bu uygulamayı, depolanan functor açısından bir işlev nesnesi belirtmektir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Fun>
@@ -2566,13 +2566,13 @@ Depolanan functor türü.
 
 ### <a name="member-functions"></a>Üye İşlevleri
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |argument_type|Functor bağımsız değişkeninin türü.|
 |delegate_type|Genel temsilcinin türü.|
 |result_type|Functor sonucunun türü.|
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |unary_negate|Functor 'ı oluşturur.|
 

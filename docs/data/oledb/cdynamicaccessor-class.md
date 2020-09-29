@@ -124,18 +124,18 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: ecbc332fcdb7fee8f748a02b2f111d4d1abf3c0b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 31cc996b8beedadf9cba5a46b3b4da20e19268b0
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838211"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498685"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 
 Veritabanı şeması (veritabanının temel yapısı) hakkında bilginiz olmadığında bir veri kaynağına erişmenizi sağlar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CDynamicAccessor : public CAccessorBase
@@ -176,7 +176,7 @@ class CDynamicAccessor : public CAccessorBase
 
 Sütun `CDynamicAccessor` adları, sütun sayısı, veri türü vb. gibi sütun bilgilerini elde etmek için yöntemleri kullanın. Daha sonra bu sütun bilgisini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız.
 
-Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetValue](../../data/oledb/cdynamicaccessor-getvalue.md)kullanarak arabellekteki verileri alın.
+Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetValue](#getvalue)kullanarak arabellekteki verileri alın.
 
 Bir tartışma ve dinamik erişimci sınıflarını kullanma örnekleri için bkz. [dinamik erişimcileri kullanma](../../data/oledb/using-dynamic-accessors.md).
 
@@ -184,7 +184,7 @@ Bir tartışma ve dinamik erişimci sınıflarını kullanma örnekleri için bk
 
 Çıkış sütunlarına bir bağlama girişi ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
@@ -207,7 +207,7 @@ Standart HRESULT değerlerinden biri.
 
 Nesneyi örnekleyen ve başlatır `CDynamicAccessor` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
@@ -217,10 +217,10 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
 #### <a name="parameters"></a>Parametreler
 
 *eBlobHandling*<br/>
-İkili büyük nesne (BLOB) verilerinin nasıl işleneceğini belirtir. Varsayılan değer DBBLOBHANDLING_DEFAULT. DBBLOBHANDLINGENUM değerlerinin açıklaması için bkz. [SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md) .
+İkili büyük nesne (BLOB) verilerinin nasıl işleneceğini belirtir. Varsayılan değer DBBLOBHANDLING_DEFAULT. DBBLOBHANDLINGENUM değerlerinin açıklaması için bkz. [SetBlobHandling](#setblobhandling) .
 
 *nBlobSize*<br/>
-En büyük BLOB boyutu bayt cinsinden; Bu değer üzerindeki sütun verileri bir BLOB olarak değerlendirilir. Varsayılan değer 8.000 ' dir. Ayrıntılar için bkz. [SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) .
+En büyük BLOB boyutu bayt cinsinden; Bu değer üzerindeki sütun verileri bir BLOB olarak değerlendirilir. Varsayılan değer 8.000 ' dir. Ayrıntılar için bkz. [SetBlobSizeLimit](#setblobsizelimit) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -232,7 +232,7 @@ Blob verileri `CDynamicAccessor` olarak niteleyen sütun verilerini nasıl işle
 
 Tüm sütunların bağlantısını kaldırır, ayrılan belleği serbest bırakır ve sınıfında [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) arabirim işaretçisini yayınlar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void Close() throw();
@@ -242,7 +242,7 @@ void Close() throw();
 
 Geçerli satır için BLOB işleme değerini alır.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 const DBBLOBHANDLINGENUM GetBlobHandling() const;
@@ -250,13 +250,13 @@ const DBBLOBHANDLINGENUM GetBlobHandling() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SetBlobHandling](../../data/oledb/cdynamicaccessor-setblobhandling.md)tarafından ayarlanan *EBLOBHANDLING* blob işleme değerini döndürür.
+[SetBlobHandling](#setblobhandling)tarafından ayarlanan *EBLOBHANDLING* blob işleme değerini döndürür.
 
 ## <a name="cdynamicaccessorgetblobsizelimit"></a><a name="getblobsizelimit"></a> CDynamicAccessor:: GetBlobSizeLimit
 
 En büyük BLOB boyutunu bayt cinsinden alır.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 const DBLENGTH GetBlobSizeLimit() const;
@@ -264,13 +264,13 @@ const DBLENGTH GetBlobSizeLimit() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SetBlobSizeLimit](../../data/oledb/cdynamicaccessor-setblobsizelimit.md)tarafından ayarlanan blob Işleme değerini *nBlobSize* döndürür.
+[SetBlobSizeLimit](#setblobsizelimit)tarafından ayarlanan blob Işleme değerini *nBlobSize* döndürür.
 
 ## <a name="cdynamicaccessorgetbookmark"></a><a name="getbookmark"></a> CDynamicAccessor:: GetBookmark
 
 Geçerli satırın yer işaretini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetBookmark(CBookmark< >* pBookmark) const throw();
@@ -293,7 +293,7 @@ Standart HRESULT değerlerinden biri.
 
 Sütun sayısını alır.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 DBORDINAL GetColumnCount() const throw();
@@ -307,7 +307,7 @@ Alınan sütun sayısı.
 
 Sütun özelliklerini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool GetColumnFlags(DBORDINAL nColumn,
@@ -334,7 +334,7 @@ Sütun numarası bir öğesinden uzaklığa göre belirlenir. Sıfır sütunu ö
 
 Çoğu tüketiciden gereken sütun meta verilerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetColumnInfo(IRowset* pRowset,
@@ -369,7 +369,7 @@ Standart HRESULT değerlerinden biri.
 
 Belirtilen sütunun adını alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();
@@ -388,7 +388,7 @@ Belirtilen sütunun adı.
 
 Belirtilen sütunun veri türünü alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool GetColumnType(DBORDINAL nColumn,
@@ -411,7 +411,7 @@ dışı Belirtilen sütunun veri türüne yönelik bir işaretçi.
 
 Belirtilen sütunun uzunluğunu alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool GetLength(DBORDINAL nColumn,
@@ -447,7 +447,7 @@ dışı Sütunun bayt cinsinden uzunluğunu içeren tamsayıya yönelik bir işa
 
 Sütun adı verilen sütun numarasını alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool GetOrdinal(const CHAR* pColumnName,
@@ -473,7 +473,7 @@ dışı Sütun numarasına yönelik bir işaretçi.
 
 Belirtilen sütunun durumunu alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool GetStatus(DBORDINAL nColumn,
@@ -505,7 +505,7 @@ dışı Sütun durumunu içeren değişkene yönelik bir işaretçi. Daha fazla 
 
 Belirtilen sütun için verileri alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void* GetValue(DBORDINAL nColumn) const throw();
@@ -554,7 +554,7 @@ Hata ayıklama modunda, *pData* boyutu işaret ettiği sütunun boyutuna eşit d
 
 Geçerli satır için BLOB işleme değerini ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);
@@ -581,7 +581,7 @@ Bir Oluşturucu yöntemi [CDynamicAccessor](../../data/oledb/cdynamicaccessor-cl
 
 En büyük BLOB boyutunu bayt cinsinden ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void SetBlobSizeLimit(DBLENGTH nBlobSize);
@@ -602,7 +602,7 @@ Bir kurucu yöntemi [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.m
 
 Belirtilen sütunun uzunluğunu ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool SetLength(DBORDINAL nColumn,
@@ -634,7 +634,7 @@ bool SetLength(const WCHAR* pColumnName,
 
 Belirtilen sütunun durumunu ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool SetStatus(DBORDINAL nColumn,
@@ -666,7 +666,7 @@ bool SetStatus(const WCHAR* pColumnName,
 
 Verileri belirtilen bir sütuna depolar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class ctype>

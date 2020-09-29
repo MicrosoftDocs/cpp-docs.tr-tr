@@ -12,18 +12,18 @@ helpviewer_keywords:
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-ms.openlocfilehash: 643d8428e3760926832429db5a4425e078ed776b
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: e970872e89132aed52190b8688f2cdaccab5ea6f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389798"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500080"
 ---
-# <a name="analyze-code-analysis"></a>`/analyze`(Kod analizi)
+# <a name="analyze-code-analysis"></a>`/analyze` (Kod analizi)
 
 Kod analizini ve denetim seçeneklerini etkinleştirir.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ::: moniker range=">=vs-2017"
 
@@ -84,14 +84,14 @@ Kod Analizi çalıştırmalarının bir parçası olarak belirtilen ön Fast ekl
 
 ::: moniker range="<=vs-2017"
 
-LocalEspC.dll, C261XX uyarı aralığında eşzamanlılık ile ilgili kod analizi denetimleri uygulayan eklentidir. Örneğin, [C26100](/cpp/code-quality/c26100), [C26101](/cpp/code-quality/c26101),..., [C26167](/cpp/code-quality/c26167).
+LocalEspC.dll, C261XX uyarı aralığında eşzamanlılık ile ilgili kod analizi denetimleri uygulayan eklentidir. Örneğin, [C26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md),...,  [C26167](../../code-quality/c26167.md).
 
-LocalEspC.dll çalıştırmak için, bu derleyici seçeneğini kullanın:**`/analyze:plugin LocalEspC.dll`**
+LocalEspC.dll çalıştırmak için, bu derleyici seçeneğini kullanın: **`/analyze:plugin LocalEspC.dll`**
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-ConcurrencyCheck.dll, C261XX uyarı aralığında eşzamanlılık ile ilgili kod analizi denetimleri uygular. Örneğin, [C26100](/cpp/code-quality/c26100), [C26101](/cpp/code-quality/c26101),..., [C26167](/cpp/code-quality/c26167).
+ConcurrencyCheck.dll, C261XX uyarı aralığında eşzamanlılık ile ilgili kod analizi denetimleri uygular. Örneğin, [C26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md),...,  [C26167](../../code-quality/c26167.md).
 
 ConcurrencyCheck.dll çalıştırmak için öncelikle bu komutu bir geliştirici komut isteminden çalıştırın:
 
@@ -136,14 +136,14 @@ Aşağıdaki örnek özel kural kümesi, Rules altyapısından C6001 ve C26494 d
 ::: moniker-end
 
 **`/analyze:stacksize`***sayı*\
-Bu seçenekle kullanılan *Number* parametresi, uyarı [C6262](/cpp/code-quality/c6262) 'nin oluşturulduğu yığın çerçevesinin boyutunu bayt cinsinden belirtir. *Sayıdan* önceki alan isteğe bağlıdır. Bu parametre belirtilmezse, yığın çerçeve boyutu varsayılan olarak 16 KB 'tır.
+Bu seçenekle kullanılan *Number* parametresi, uyarı [C6262](../../code-quality/c6262.md) 'nin oluşturulduğu yığın çerçevesinin boyutunu bayt cinsinden belirtir. *Sayıdan* önceki alan isteğe bağlıdır. Bu parametre belirtilmezse, yığın çerçeve boyutu varsayılan olarak 16 KB 'tır.
 
 **`/analyze:WX-`**\
 Kullanarak derlerken kod analizi uyarıları hata olarak değerlendirilmez **`/WX`** . Daha fazla bilgi için bkz. [ `/WX` (uyarı düzeyi)](compiler-option-warning-level.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz. c [/c++ Için kod analizine genel bakış](/cpp/code-quality/code-analysis-for-c-cpp-overview) ve [c/C++ uyarıları için kod analizi](/cpp/code-quality/code-analysis-for-c-cpp-warnings).
+Daha fazla bilgi için bkz. c [/c++ Için kod analizine genel bakış](../../code-quality/code-analysis-for-c-cpp-overview.md) ve [c/C++ uyarıları için kod analizi](../../code-quality/code-analysis-for-c-cpp-warnings.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 

@@ -4,26 +4,26 @@ ms.date: 01/31/2019
 f1_keywords:
 - vc.tables.runtime
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
-ms.openlocfilehash: 855af5b7518ba36418d58f1dc2ac5f0bb6e54208
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 73fd08ffa58aabfd9a40e0296b21d4a5baea8750
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62340345"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499400"
 ---
 # <a name="ucrt-alphabetical-function-reference"></a>UCRT alfabetik işlev başvurusu
 
-Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvuru belgeleri tarafından yordamı alfabetik olarak yerleştirilmiştir. İşlevselliğine dayalı bir CRT yordamı bulmak için bkz: [kategoriye göre Evrensel C çalışma zamanı yordamları](../../c-runtime-library/run-time-routines-by-category.md).
+Evrensel C çalışma zamanı (UCRT, genellikle yalnızca CRT) kitaplık başvuru belgeleri, yordama göre alfabetik olarak düzenlenir. İşlevlere göre bir CRT yordamı bulmak için bkz. [kategoriye göre evrensel C çalışma zamanı yordamları](../../c-runtime-library/run-time-routines-by-category.md).
 
-## <a name="a"></a>BİR
+## <a name="a"></a>A
 
-[abort](abort.md)
+[durdur](abort.md)
 
-[Abs](abs-labs-llabs-abs64.md)
+[mutlak](abs-labs-llabs-abs64.md)
 
 [_abs64](abs-labs-llabs-abs64.md)
 
-[Erişim](access-crt.md)
+[erişmesini](access-crt.md)
 
 [_access](access-waccess.md)
 
@@ -33,7 +33,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [acosf](acos-acosf-acosl.md)
 
-[ACOSH](acosh-acoshf-acoshl.md)
+[acosh](acosh-acoshf-acoshl.md)
 
 [acoshf](acosh-acoshf-acoshl.md)
 
@@ -85,7 +85,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [asctime_s](asctime-s-wasctime-s.md)
 
-[asin](asin-asinf-asinl.md)
+[Asin](asin-asinf-asinl.md)
 
 [asinf](asin-asinf-asinl.md)
 
@@ -97,7 +97,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [asinl](asin-asinf-asinl.md)
 
-[Assert](assert-macro-assert-wassert.md)
+[vermediğini](assert-macro-assert-wassert.md)
 
 [_assert](assert-macro-assert-wassert.md)
 
@@ -139,7 +139,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_atoflt_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)
 
-[atoi](atoi-atoi-l-wtoi-wtoi-l.md)
+[atoı](atoi-atoi-l-wtoi-wtoi-l.md)
 
 [_atoi_l](atoi-atoi-l-wtoi-wtoi-l.md)
 
@@ -147,7 +147,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_atoi64_l](atoi64-atoi64-l-wtoi64-wtoi64-l.md)
 
-[atol](atol-atol-l-wtol-wtol-l.md)
+[Atol](atol-atol-l-wtol-wtol-l.md)
 
 [_atol_l](atol-atol-l-wtol-wtol-l.md)
 
@@ -155,7 +155,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_atoldbl_l](atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)
 
-[atoll](atoll-atoll-l-wtoll-wtoll-l.md)
+[Atoll](atoll-atoll-l-wtoll-wtoll-l.md)
 
 [_atoll_l](atoll-atoll-l-wtoll-wtoll-l.md)
 
@@ -191,13 +191,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_cabs](cabs.md)
 
-[CAB dosyaları](cabs-cabsf-cabsl.md)
+[Cabs](cabs-cabsf-cabsl.md)
 
 [cabsf](cabs-cabsf-cabsl.md)
 
 [cabsl](cabs-cabsf-cabsl.md)
 
-[cacos](cacos-cacosf-cacosl.md)
+[Kacos](cacos-cacosf-cacosl.md)
 
 [cacosf](cacos-cacosf-cacosl.md)
 
@@ -205,9 +205,9 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [cacoshf](cacosh-cacoshf-cacoshl.md)
 
-[cacoshl](cacosh-cacoshf-cacoshl.md)
+[kacoşl](cacosh-cacoshf-cacoshl.md)
 
-[cacosl](cacos-cacosf-cacosl.md)
+[kacosl](cacos-cacosf-cacosl.md)
 
 [_callnewh](callnewh.md)
 
@@ -215,13 +215,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_calloc_dbg](calloc-dbg.md)
 
-[carg](carg-cargf-cargl.md)
+[Carg](carg-cargf-cargl.md)
 
 [cargf](carg-cargf-cargl.md)
 
 [cargl](carg-cargf-cargl.md)
 
-[casin](casin-casinf-casinl.md)
+[Casin](casin-casinf-casinl.md)
 
 [casinf](casin-casinf-casinl.md)
 
@@ -233,7 +233,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [casinl](casin-casinf-casinl.md)
 
-[catan](catan-catanf-catanl.md)
+[Catan dili](catan-catanf-catanl.md)
 
 [catanf](catan-catanf-catanl.md)
 
@@ -263,7 +263,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [ccosl](ccos-ccosf-ccosl.md)
 
-[ceil](ceil-ceilf-ceill.md)
+[Ceil](ceil-ceilf-ceill.md)
 
 [ceilf](ceil-ceilf-ceill.md)
 
@@ -305,11 +305,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_chsize_s](chsize-s.md)
 
-[cimag](cimag-cimagf-cimagl.md)
+[cımag](cimag-cimagf-cimagl.md)
 
-[cimagf](cimag-cimagf-cimagl.md)
+[cımıknatıf](cimag-cimagf-cimagl.md)
 
-[cimagl](cimag-cimagf-cimagl.md)
+[cımagl](cimag-cimagf-cimagl.md)
 
 [_clear87](clear87-clearfp.md)
 
@@ -319,9 +319,9 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_clearfp](clear87-clearfp.md)
 
-[clock](clock.md)
+[saat](clock.md)
 
-[clog](clog-clogf-clogl.md)
+[CLOG](clog-clogf-clogl.md)
 
 [clog10](clog10-clog10f-clog10l.md)
 
@@ -333,7 +333,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [clogl](clog-clogf-clogl.md)
 
-[close](posix-close.md)
+[~eksik](posix-close.md)
 
 [_close](close.md)
 
@@ -373,13 +373,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [cosf](cos-cosf-cosl.md)
 
-[COSH](cosh-coshf-coshl.md)
+[Cosh](cosh-coshf-coshl.md)
 
 [coshf](cosh-coshf-coshl.md)
 
 [coshl](cosh-coshf-coshl.md)
 
-[cosl](cos-cosf-cosl.md)
+[COSL](cos-cosf-cosl.md)
 
 [_countof](countof-macro.md)
 
@@ -419,7 +419,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [crealf](creal-crealf-creall.md)
 
-[creall](creal-crealf-creall.md)
+[Creall](creal-crealf-creall.md)
 
 [creat](creat.md)
 
@@ -491,7 +491,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_cscanf_s_l](cscanf-s-cscanf-s-l-cwscanf-s-cwscanf-s-l.md)
 
-[csin](csin-csinf-csinl.md)
+[CSV](csin-csinf-csinl.md)
 
 [csinf](csin-csinf-csinl.md)
 
@@ -509,7 +509,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [csqrtl](csqrt-csqrtf-csqrtl.md)
 
-[ctan](ctan-ctanf-ctanl.md)
+[ctan dili](ctan-ctanf-ctanl.md)
 
 [ctanf](ctan-ctanf-ctanl.md)
 
@@ -593,11 +593,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_endthreadex](endthread-endthreadex.md)
 
-[eof](posix-eof.md)
+[EOF](posix-eof.md)
 
 [_eof](eof.md)
 
-[erf](erf-erff-erfl-erfc-erfcf-erfcl.md)
+[işlevi](erf-erff-erfl-erfc-erfcf-erfcl.md)
 
 [erfc](erf-erff-erfl-erfc-erfcf-erfcl.md)
 
@@ -607,7 +607,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [erff](erf-erff-erfl-erfc-erfcf-erfcl.md)
 
-[erfl](erf-erff-erfl-erfc-erfcf-erfcl.md)
+[ERFL](erf-erff-erfl-erfc-erfcf-erfcl.md)
 
 [execl](execl.md)
 
@@ -641,7 +641,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_execvpe](execvpe-wexecvpe.md)
 
-[Çıkış](exit-exit-exit.md)
+[çıkıp](exit-exit-exit.md)
 
 [_Exit](exit-exit-exit.md)
 
@@ -737,7 +737,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [fgetpos](fgetpos.md)
 
-[fgets](fgets-fgetws.md)
+[fal](fgets-fgetws.md)
 
 [fgetwc](fgetc-fgetwc.md)
 
@@ -753,7 +753,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_filelengthi64](filelength-filelengthi64.md)
 
-[fileno](posix-fileno.md)
+[Dosya No](posix-fileno.md)
 
 [_fileno](fileno.md)
 
@@ -787,7 +787,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_finitef](finite-finitef.md)
 
-[Kat](floor-floorf-floorl.md)
+[sını](floor-floorf-floorl.md)
 
 [floorf](floor-floorf-floorl.md)
 
@@ -797,13 +797,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_flushall](flushall.md)
 
-[fma](fma-fmaf-fmal.md)
+[FMA](fma-fmaf-fmal.md)
 
 [fmaf](fma-fmaf-fmal.md)
 
-[fmal](fma-fmaf-fmal.md)
+[Fmal](fma-fmaf-fmal.md)
 
-[fmax](fmax-fmaxf-fmaxl.md)
+[Fmax](fmax-fmaxf-fmaxl.md)
 
 [fmaxf](fmax-fmaxf-fmaxl.md)
 
@@ -815,7 +815,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [fminl](fmin-fminf-fminl.md)
 
-[fmod](fmod-fmodf.md)
+[FMOD](fmod-fmodf.md)
 
 [fmodf](fmod-fmodf.md)
 
@@ -853,7 +853,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_fputchar](fputchar-fputwchar.md)
 
-[fputs](fputs-fputws.md)
+[fkoyar](fputs-fputws.md)
 
 [fputwc](fputc-fputwc.md)
 
@@ -871,7 +871,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [fread_s](fread-s.md)
 
-[free](free.md)
+[Süz](free.md)
 
 [_free_dbg](free-dbg.md)
 
@@ -879,7 +879,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_freea](freea.md)
 
-[freopen](freopen-wfreopen.md)
+[serbest açık](freopen-wfreopen.md)
 
 [freopen_s](freopen-s-wfreopen-s.md)
 
@@ -917,7 +917,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_fstati64](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)
 
-[ftell](ftell-ftelli64.md)
+[fsöyleyin](ftell-ftelli64.md)
 
 [_ftell_nolock](ftell-nolock-ftelli64-nolock.md)
 
@@ -1027,7 +1027,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_getch_nolock](getch-nolock-getwch-nolock.md)
 
-[getchar](getchar-getwchar.md)
+[GetChar](getchar-getwchar.md)
 
 [_getchar_nolock](getchar-nolock-getwchar-nolock.md)
 
@@ -1137,7 +1137,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [ilogbf](ilogb-ilogbf-ilogbl2.md)
 
-[ilogbl](ilogb-ilogbf-ilogbl2.md)
+[ılogbl](ilogb-ilogbf-ilogbl2.md)
 
 [imaxabs](imaxabs.md)
 
@@ -1163,7 +1163,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_isalpha_l](isalpha-iswalpha-isalpha-l-iswalpha-l.md)
 
-[isascii](isascii-isascii-iswascii.md)
+[ısascii](isascii-isascii-iswascii.md)
 
 [__isascii](isascii-isascii-iswascii.md)
 
@@ -1171,7 +1171,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [isatty](posix-isatty.md)
 
-[isblank](isblank-iswblank-isblank-l-iswblank-l.md)
+[ISBLANK](isblank-iswblank-isblank-l-iswblank-l.md)
 
 [_isblank_l](isblank-iswblank-isblank-l-iswblank-l.md)
 
@@ -1181,13 +1181,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [__iscsym](iscsym-functions.md)
 
-[iscsym](iscsym-functions.md)
+[SCC](iscsym-functions.md)
 
 [_iscsym_l](iscsym-functions.md)
 
 [__iscsymf](iscsym-functions.md)
 
-[iscsymf](iscsym-functions.md)
+[SCC](iscsym-functions.md)
 
 [_iscsymf_l](iscsym-functions.md)
 
@@ -1199,27 +1199,27 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_isdigit_l](isdigit-iswdigit-isdigit-l-iswdigit-l.md)
 
-[isfinite](finite-finitef.md)
+[isFinite](finite-finitef.md)
 
 [isgraph](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
 
 [_isgraph_l](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
 
-[isgreater](floating-point-ordering.md)
+[isbüyüktü](floating-point-ordering.md)
 
 [isgreaterequal](floating-point-ordering.md)
 
 [isinf](isinf.md)
 
-[isleadbyte](isleadbyte-isleadbyte-l.md)
+[ıleadbyte](isleadbyte-isleadbyte-l.md)
 
 [_isleadbyte_l](isleadbyte-isleadbyte-l.md)
 
-[isless](floating-point-ordering.md)
+[ıless](floating-point-ordering.md)
 
 [islessequal](floating-point-ordering.md)
 
-[islessgreater](floating-point-ordering.md)
+[islessdaha büyük](floating-point-ordering.md)
 
 [islower](islower-iswlower-islower-l-iswlower-l.md)
 
@@ -1349,7 +1349,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_ismbstrail_l](ismbslead-ismbstrail-ismbslead-l-ismbstrail-l.md)
 
-[isnan](isnan-isnan-isnanf.md)
+[isNaN](isnan-isnan-isnanf.md)
 
 [_isnan](isnan-isnan-isnanf.md)
 
@@ -1369,7 +1369,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_isspace_l](isspace-iswspace-isspace-l-iswspace-l.md)
 
-[isunordered](floating-point-ordering.md)
+[ısýralanmamýþ](floating-point-ordering.md)
 
 [isupper](isupper-isupper-l-iswupper-iswupper-l.md)
 
@@ -1383,13 +1383,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_iswalpha_l](isalpha-iswalpha-isalpha-l-iswalpha-l.md)
 
-[iswascii](isascii-isascii-iswascii.md)
+[iswascıı](isascii-isascii-iswascii.md)
 
-[iswblank](isblank-iswblank-isblank-l-iswblank-l.md)
+[ıswblank](isblank-iswblank-isblank-l-iswblank-l.md)
 
 [_iswblank_l](isblank-iswblank-isblank-l-iswblank-l.md)
 
-[iswcntrl](iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)
+[iswcnw](iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)
 
 [_iswcntrl_l](iscntrl-iswcntrl-iscntrl-l-iswcntrl-l.md)
 
@@ -1409,15 +1409,15 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_iswdigit_l](isdigit-iswdigit-isdigit-l-iswdigit-l.md)
 
-[iswgraph](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
+[iswgraf](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
 
 [_iswgraph_l](isgraph-iswgraph-isgraph-l-iswgraph-l.md)
 
-[iswlower](islower-iswlower-islower-l-iswlower-l.md)
+[iswdaha düşük](islower-iswlower-islower-l-iswlower-l.md)
 
 [_iswlower_l](islower-iswlower-islower-l-iswlower-l.md)
 
-[iswprint](isprint-iswprint-isprint-l-iswprint-l.md)
+[iswprınt](isprint-iswprint-isprint-l-iswprint-l.md)
 
 [_iswprint_l](isprint-iswprint-isprint-l-iswprint-l.md)
 
@@ -1433,7 +1433,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_iswupper_l](isupper-isupper-l-iswupper-iswupper-l.md)
 
-[iswxdigit](isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)
+[iswxbasamağı](isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)
 
 [_iswxdigit_l](isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)
 
@@ -1463,7 +1463,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_jn](bessel-functions-j0-j1-jn-y0-y1-yn.md)
 
-[Jn](j0-j1-jn.md)
+[JN](j0-j1-jn.md)
 
 ## <a name="k"></a>K
 
@@ -1473,11 +1473,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 ## <a name="l"></a>L
 
-[Laboratuvarları](abs-labs-llabs-abs64.md)
+[larda](abs-labs-llabs-abs64.md)
 
 [ldexp](ldexp.md)
 
-[ldiv](ldiv-lldiv.md)
+[ldiv](./div.md)
 
 [_lfind](lfind.md)
 
@@ -1491,9 +1491,9 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [lgammal](lgamma-lgammaf-lgammal.md)
 
-[llabs](abs-labs-llabs-abs64.md)
+[LLabs](abs-labs-llabs-abs64.md)
 
-[lldiv](ldiv-lldiv.md)
+[lldiv](./div.md)
 
 [llrint](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)
 
@@ -1523,11 +1523,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_lock_file](lock-file.md)
 
-[locking](posix-locking.md)
+[lemeye](posix-locking.md)
 
 [_locking](locking.md)
 
-[log](log-logf-log10-log10f.md)
+[açmasını](log-logf-log10-log10f.md)
 
 [log10](log-logf-log10-log10f.md)
 
@@ -1913,7 +1913,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_memccpy](memccpy.md)
 
-[memchr'e](memchr-wmemchr.md)
+[memchr 'e](memchr-wmemchr.md)
 
 [memcmp](memcmp-wmemcmp.md)
 
@@ -1967,7 +1967,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 ## <a name="n"></a>N
 
-[NaN](nan-nanf-nanl.md)
+[nBir](nan-nanf-nanl.md)
 
 [nanf](nan-nanf-nanl.md)
 
@@ -1977,7 +1977,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [nearbyintf](nearbyint-nearbyintf-nearbyintl1.md)
 
-[nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)
+[yaklaştığında, Ulusl](nearbyint-nearbyintf-nearbyintl1.md)
 
 [nextafter](nextafter-functions.md)
 
@@ -1989,37 +1989,37 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [nextafterl](nextafter-functions.md)
 
-[nexttoward](nextafter-functions.md)
+[nextdoğru](nextafter-functions.md)
 
 [nexttowardf](nextafter-functions.md)
 
 [nexttowardl](nextafter-functions.md)
 
-[Norm](norm-normf-norml1.md)
+[norm](norm-normf-norml1.md)
 
 [normf](norm-normf-norml1.md)
 
-[norml](norm-normf-norml1.md)
+[NORML](norm-normf-norml1.md)
 
-[not](not.md)
+[başlatılmadı](not.md)
 
 [not_eq](not-eq.md)
 
 ## <a name="o"></a>O
 
-[offsetof](offsetof-macro.md)
+[OffsetOf](offsetof-macro.md)
 
 [_onexit](onexit-onexit-m.md)
 
 [_onexit_m](onexit-onexit-m.md)
 
-[open](open.md)
+[açın](open.md)
 
-[_aç](open-wopen.md)
+[_open](open-wopen.md)
 
 [_open_osfhandle](open-osfhandle.md)
 
-[or](or.md)
+[veya](or.md)
 
 [or_eq](or-eq.md)
 
@@ -2037,9 +2037,9 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [powf](pow-powf-powl.md)
 
-[powl](pow-powf-powl.md)
+[ptıl](pow-powf-powl.md)
 
-[Printf](printf-printf-l-wprintf-wprintf-l.md)
+[printf](printf-printf-l-wprintf-wprintf-l.md)
 
 [_printf_l](printf-printf-l-wprintf-wprintf-l.md)
 
@@ -2073,7 +2073,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_putenv_s](putenv-s-wputenv-s.md)
 
-[yerleştirir](puts-putws.md)
+[kontrolünü](puts-putws.md)
 
 [putw](posix-putw.md)
 
@@ -2107,13 +2107,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 ## <a name="r"></a>R
 
-[raise](raise.md)
+[tetikle](raise.md)
 
-[rand](rand.md)
+[ran](rand.md)
 
 [rand_s](rand-s.md)
 
-[read](posix-read.md)
+[okuyamaz](posix-read.md)
 
 [_read](read.md)
 
@@ -2125,13 +2125,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_recalloc_dbg](recalloc-dbg.md)
 
-[Kalan](remainder-remainderf-remainderl.md)
+[geri kalanında](remainder-remainderf-remainderl.md)
 
 [remainderf](remainder-remainderf-remainderl.md)
 
 [remainderl](remainder-remainderf-remainderl.md)
 
-[remove](remove-wremove.md)
+[temizlenmesine](remove-wremove.md)
 
 [remquo](remquo-remquof-remquol.md)
 
@@ -2139,11 +2139,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [remquol](remquo-remquof-remquol.md)
 
-[Yeniden adlandırma](rename-wrename.md)
+[Yeniden Adlandır](rename-wrename.md)
 
 [_resetstkoflw](resetstkoflw.md)
 
-[rewind](rewind.md)
+[geri sar](rewind.md)
 
 [Yazdır](rint-rintf-rintl.md)
 
@@ -2167,7 +2167,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_rotr64](rotl-rotl64-rotr-rotr64.md)
 
-[Yuvarlak](round-roundf-roundl.md)
+[gidiş](round-roundf-roundl.md)
 
 [roundf](round-roundf-roundl.md)
 
@@ -2205,7 +2205,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [scalbnf](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)
 
-[scalbnl](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)
+[scalbümnl](scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)
 
 [scanf](scanf-scanf-l-wscanf-wscanf-l.md)
 
@@ -2285,13 +2285,13 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_setmbcp](setmbcp.md)
 
-[setmode](posix-setmode.md)
+[setMode](posix-setmode.md)
 
 [_setmode](setmode.md)
 
 [setvbuf](setvbuf.md)
 
-[signal](signal.md)
+[sinyal](signal.md)
 
 [signbit](signbit.md)
 
@@ -2299,7 +2299,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [sinf](sin-sinf-sinl.md)
 
-[SİNH](sinh-sinhf-sinhl.md)
+[sinh](sinh-sinhf-sinhl.md)
 
 [sinhf](sinh-sinhf-sinhl.md)
 
@@ -2395,7 +2395,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_sprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)
 
-[sqrt](sqrt-sqrtf-sqrtl.md)
+[k](sqrt-sqrtf-sqrtl.md)
 
 [sqrtf](sqrt-sqrtf-sqrtl.md)
 
@@ -2459,7 +2459,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_strdup](strdup-wcsdup-mbsdup.md)
 
-[strdup](strdup-wcsdup.md)
+[StrDup](strdup-wcsdup.md)
 
 [_strdup_dbg](strdup-dbg-wcsdup-dbg.md)
 
@@ -2527,7 +2527,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_strnicmp](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)
 
-[strnicmp](strnicmp-wcsnicmp.md)
+[strnıcmp](strnicmp-wcsnicmp.md)
 
 [_strnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)
 
@@ -2607,11 +2607,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_strtol_l](strtol-wcstol-strtol-l-wcstol-l.md)
 
-[strtold](strtold-strtold-l-wcstold-wcstold-l.md)
+[strsöylemi](strtold-strtold-l-wcstold-wcstold-l.md)
 
 [_strtold_l](strtold-strtold-l-wcstold-wcstold-l.md)
 
-[strtoll](strtoll-strtoll-l-wcstoll-wcstoll-l.md)
+[strücretli](strtoll-strtoll-l-wcstoll-wcstoll-l.md)
 
 [_strtoll_l](strtoll-strtoll-l-wcstoll-wcstoll-l.md)
 
@@ -2627,7 +2627,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_strtoull_l](strtoull-strtoull-l-wcstoull-wcstoull-l.md)
 
-[strtoumax](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
+[strtoull](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
 
 [_strtoumax_l](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
 
@@ -2645,7 +2645,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_strxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)
 
-[swab](posix-swab.md)
+[Swab](posix-swab.md)
 
 [_swab](swab.md)
 
@@ -2671,15 +2671,15 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md)
 
-[Sistem](system-wsystem.md)
+[sistem](system-wsystem.md)
 
 ## <a name="t"></a>T
 
-[tan](tan-tanf-tanl.md)
+[Başlangıçtan](tan-tanf-tanl.md)
 
 [tanf](tan-tanf-tanl.md)
 
-[TANH](tanh-tanhf-tanhl.md)
+[tanh](tanh-tanhf-tanhl.md)
 
 [tanhf](tanh-tanhf-tanhl.md)
 
@@ -2687,7 +2687,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [tanl](tan-tanf-tanl.md)
 
-[tell](tell.md)
+[söyle](tell.md)
 
 [_tell](tell-telli64.md)
 
@@ -2699,7 +2699,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_tempnam_dbg](tempnam-dbg-wtempnam-dbg.md)
 
-[sonlandırma](terminate-crt.md)
+[sonlandırmayı](terminate-crt.md)
 
 [tgamma](tgamma-tgammaf-tgammal.md)
 
@@ -2707,7 +2707,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [tgammal](tgamma-tgammaf-tgammal.md)
 
-[saat](time-time32-time64.md)
+[ışınızda](time-time32-time64.md)
 
 [_time32](time-time32-time64.md)
 
@@ -2729,15 +2729,15 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [__toascii](toascii-toascii.md)
 
-[toascii](toascii-toascii.md)
+[toascıı](toascii-toascii.md)
 
-[tolower](tolower-tolower-towlower-tolower-l-towlower-l.md)
+[ToLower](tolower-tolower-towlower-tolower-l-towlower-l.md)
 
 [_tolower](tolower-tolower-towlower-tolower-l-towlower-l.md)
 
 [_tolower_l](tolower-tolower-towlower-tolower-l-towlower-l.md)
 
-[toupper](toupper-toupper-towupper-toupper-l-towupper-l.md)
+[ToUpper](toupper-toupper-towupper-toupper-l-towupper-l.md)
 
 [_toupper](toupper-toupper-towupper-toupper-l-towupper-l.md)
 
@@ -2745,15 +2745,15 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [towctrans](towctrans.md)
 
-[towlower](tolower-tolower-towlower-tolower-l-towlower-l.md)
+[kasadan düşük](tolower-tolower-towlower-tolower-l-towlower-l.md)
 
 [_towlower_l](tolower-tolower-towlower-tolower-l-towlower-l.md)
 
-[towupper](toupper-toupper-towupper-toupper-l-towupper-l.md)
+[kasaüstü](toupper-toupper-towupper-toupper-l-towupper-l.md)
 
 [_towupper_l](toupper-toupper-towupper-toupper-l-towupper-l.md)
 
-[trunc](trunc-truncf-truncl.md)
+[TRUNC](trunc-truncf-truncl.md)
 
 [truncf](trunc-truncf-truncl.md)
 
@@ -2791,7 +2791,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [__uncaught_exception](uncaught-exception.md)
 
-[beklenmeyen](unexpected-crt.md)
+[bek](unexpected-crt.md)
 
 [ungetc](ungetc-ungetwc.md)
 
@@ -2811,7 +2811,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_ungetwch_nolock](ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
 
-[unlink](unlink.md)
+[bağlantıyı kaldır](unlink.md)
 
 [_unlink](unlink-wunlink.md)
 
@@ -2941,7 +2941,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_vsnwprintf_s_l](vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md)
 
-[vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md)
+[vsprıntf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md)
 
 [_vsprintf_l](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md)
 
@@ -2975,7 +2975,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [vswscanf_s](vsscanf-s-vswscanf-s.md)
 
-[vwprintf](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
+[diğer bir deyişle](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
 
 [_vwprintf_l](vprintf-vprintf-l-vwprintf-vwprintf-l.md)
 
@@ -2987,7 +2987,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_vwprintf_s_l](vprintf-s-vprintf-s-l-vwprintf-s-vwprintf-s-l.md)
 
-[vwscanf](vscanf-vwscanf.md)
+[öscanf](vscanf-vwscanf.md)
 
 [vwscanf_s](vscanf-s-vwscanf-s.md)
 
@@ -3055,7 +3055,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_wcsicmp](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)
 
-[wcsicmp](stricmp-wcsicmp.md)
+[wcsıcmp](stricmp-wcsicmp.md)
 
 [_wcsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)
 
@@ -3107,7 +3107,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_wcsnicmp](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)
 
-[wcsnicmp](strnicmp-wcsnicmp.md)
+[wcsnıcmp](strnicmp-wcsnicmp.md)
 
 [_wcsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)
 
@@ -3215,7 +3215,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_wcstoull_l](strtoull-strtoull-l-wcstoull-wcstoull-l.md)
 
-[wcstoumax](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
+[wcstoull](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
 
 [_wcstoumax_l](strtoumax-strtoumax-l-wcstoumax-wcstoumax-l.md)
 
@@ -3349,7 +3349,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [wmemmove_s](memmove-s-wmemmove-s.md)
 
-[wmemset](memset-wmemset.md)
+[Wmemset](memset-wmemset.md)
 
 [_wmkdir](mkdir-wmkdir.md)
 
@@ -3385,7 +3385,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_write](write.md)
 
-[write](posix-write.md)
+[yazarken](posix-write.md)
 
 [_wrmdir](rmdir-wrmdir.md)
 
@@ -3499,11 +3499,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle sadece CRT) kitaplığı başvur
 
 [_y1](bessel-functions-j0-j1-jn-y0-y1-yn.md)
 
-[y1](y0-y1-yn.md)
+[Y1](y0-y1-yn.md)
 
 [_yn](bessel-functions-j0-j1-jn-y0-y1-yn.md)
 
-[yn](y0-y1-yn.md)
+[YN](y0-y1-yn.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

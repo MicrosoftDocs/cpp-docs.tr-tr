@@ -26,18 +26,18 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 746cfdce3265dff7e5b20a5135aa026aca9facdf
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5934a456b519d14def14018f966c7bff8206c3c4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832106"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500130"
 ---
 # <a name="coledatetimespan-class"></a>Cotadatetimespan sınıfı
 
 Bir zaman aralığını göreli bir zaman temsil eder.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```
 class COleDateTimeSpan
@@ -93,7 +93,7 @@ class COleDateTimeSpan
 
 `COleDateTimeSpan` , yardımcı sınıfı [Copadatetime](../../atl-mfc-shared/reference/coledatetime-class.md)ile kullanılır. `COleDateTime``DATE`OLE otomasyonunun veri türünü kapsüller. `COleDateTime` mutlak zaman değerlerini temsil eder. Tüm `COleDateTime` hesaplamalar `COleDateTimeSpan` değer içerir. Bu sınıflar arasındaki ilişki, [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)arasında bir değer ile benzerdir.
 
-Ve sınıfları hakkında daha fazla bilgi için `COleDateTime` `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Ve sınıfları hakkında daha fazla bilgi için `COleDateTime` `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -162,7 +162,7 @@ Bu oluşturucuların hepsi `COleDateTimeSpan` , belirtilen değere başlatılan 
 
 Yeni `COleDateTimeSpan` nesnenin durumu geçerli olarak ayarlanır.
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 
@@ -403,7 +403,7 @@ Bir `COleDateTimeSpan` nesnenin durumu aşağıdaki durumlarda geçersizdir:
 
 Durumu geçersiz olarak ayarlayaetkileyebilecek işlemler hakkında daha fazla bilgi için bkz. [COleDateTimeSpan:: operator +,-](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_-) ve [COleDateTimeSpan:: operator + =,-=](../../atl-mfc-shared/reference/coledatetime-class.md#operator_add_eq_-_eq).
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="coledatetimespangettotaldays"></a><a name="gettotaldays"></a> Cotadatetimespan:: GetTotalDays
 
@@ -603,7 +603,7 @@ Durumu geçersiz olarak ayarlayaetkileyebilecek işlemler hakkında daha fazla b
 > [!CAUTION]
 > Bu veri üyesi gelişmiş programlama durumlarına yöneliktir. [GetStatus](#getstatus) ve [SetStatus](#setstatus)satır içi üye işlevlerini kullanmanız gerekir. `SetStatus`Bu veri üyesini açıkça ayarlamayla ilgili daha fazla uyarı için bkz..
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="coledatetimespanoperator-"></a><a name="operator_eq"></a> COleDateTimeSpan:: operator =
 

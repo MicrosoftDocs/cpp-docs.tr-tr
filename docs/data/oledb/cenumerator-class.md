@@ -22,18 +22,18 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: f3e3a61028768144cbef17912952622f19ad0242
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dfc358c06179d50cbf6442863fd2ed2c533cd00a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838158"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498543"
 ---
 # <a name="cenumerator-class"></a>CEnumerator Sınıfı
 
 Tüm veri kaynaklarını ve numaralandırıcıları açıklayan bir satır kümesi döndürmek için [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) arabirimini kullanıma sunan OLE DB Numaralandırıcı nesnesini kullanır.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CEnumerator :
@@ -62,7 +62,7 @@ class CEnumerator :
 
 Kullanılabilir sağlayıcılar arasında belirtilen adı arar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool Find(TCHAR* szSearchName) throw();
@@ -85,7 +85,7 @@ Bu ad `SOURCES_NAME` , [ISourcesRowset](/previous-versions/windows/desktop/ms715
 
 Bir ada dönüştürülebileceği dizenin bileşenini ayıklamak için görünen adı ayrıştırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();
@@ -97,7 +97,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
 #### <a name="parameters"></a>Parametreler
 
 *Ppbilinen adı*<br/>
-dışı Bilinen ad, geçerli satırın görünen adından ([CEnumeratorAccessor:: m_szParseName](../../data/oledb/cenumeratoraccessor-m-szparsename.md)) ayrıştırıldı.
+dışı Bilinen ad, geçerli satırın görünen adından ([CEnumeratorAccessor:: m_szParseName](./cenumeratoraccessor-class.md#szparsename)) ayrıştırıldı.
 
 *lpszDisplayName*<br/>
 'ndaki Ayrıştırılacak görünen ad.
@@ -110,7 +110,7 @@ Standart HRESULT.
 
 , Bir tane belirtilmişse, Numaralandırıcı için bilinen adı bağlar, ardından [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85))öğesini çağırarak Numaralandırıcı için satır kümesini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Open(LPMONIKER pMoniker) throw();

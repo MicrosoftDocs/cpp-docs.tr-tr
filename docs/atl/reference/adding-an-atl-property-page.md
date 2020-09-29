@@ -1,19 +1,19 @@
 ---
-title: ATL Özellik sayfası ekleme
+title: ATL Özellik Sayfası Ekleme
 ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, adding
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-ms.openlocfilehash: 3e27d276e5500c1e32ca7b576b355f14f18a47f6
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 4cd7444d18d26124f8c3c642bba55fb7592f5c8b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075271"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499317"
 ---
-# <a name="adding-an-atl-property-page"></a>ATL Özellik sayfası ekleme
+# <a name="adding-an-atl-property-page"></a>ATL Özellik Sayfası Ekleme
 
 > [!NOTE]
 > ATL Özellik sayfası Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
@@ -31,12 +31,12 @@ Denetim için bir özellik sayfası ekliyorsanız, denetiminiz [ıdiifyıpropert
 
 1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. [Sınıf Ekle](../../ide/add-class-dialog-box.md) Iletişim kutusundaki **Şablonlar** bölmesinde, **ATL Özellik** sayfası ' na tıklayın ve ardından [atl özellik sayfası Sihirbazı 'nı](../../atl/reference/atl-property-page-wizard.md)göstermek için **Aç** ' a tıklayın.
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusundaki **Şablonlar** bölmesinde, **ATL Özellik** sayfası ' na tıklayın ve ardından [atl özellik sayfası Sihirbazı 'nı](../../atl/reference/atl-property-page-wizard.md)göstermek için **Aç** ' a tıklayın.
 
 Bir denetim için bir özellik sayfası oluşturduktan sonra, denetimin özellik eşlemesinde [PROP_PAGE](property-map-macros.md#prop_page) girişi sağlamanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../../atl/atl-com-property-pages.md)<br/>
-[ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
-[Örnek: Özellik Sayfası Uygulama](../../atl/example-implementing-a-property-page.md)
+[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
+[Örnek: Özellik sayfası uygulama](../../atl/example-implementing-a-property-page.md)

@@ -1,39 +1,39 @@
 ---
-title: ATL iletişim kutusu ekleme
+title: ATL İletişim Kutusu Ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL projects, adding dialog resources
 - MFC dialog boxes, ATL dialogs
 - dialog boxes, ATL
 ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
-ms.openlocfilehash: ebbb610debe5d480cd1161149f89c4d357f9cd02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 71290cf0763ac6594985acc4cb11562efe7028e6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261611"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499367"
 ---
-# <a name="adding-an-atl-dialog-box"></a>ATL iletişim kutusu ekleme
+# <a name="adding-an-atl-dialog-box"></a>ATL İletişim Kutusu Ekleme
 
-ATL iletişim projenize eklemek için projenizin bir ATL projesi ya da MFC projesinde ATL desteği içerir olması gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
+Projenize ATL iletişim kutusu eklemek için projenizin atl desteği içeren bir ATL projesi ya da bir MFC projesi olması gerekir. Atl uygulaması oluşturmak için ATL [Proje Sihirbazı 'nı](../../atl/reference/atl-project-wizard.md) kullanabilir veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
 
-Varsayılan olarak, ATL iletişim kutusu Sihirbazı türetilen bir iletişim kutusu uygulayan [Caxdialogımpl](../../atl/reference/caxdialogimpl-class.md). Bu sınıf, ActiveX ve Windows denetimleri barındırma desteği içerir. Sihirbaz, kod üretti sonra ActiveX denetimi desteği, yükü istemiyorsanız tüm örneklerini değiştirin `CAxDialogImpl` ya da ile [CSimpleDialog](../../atl/reference/csimpledialog-class.md) veya [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) , temel sınıf olarak .
+Varsayılan olarak, ATL Iletişim kutusu Sihirbazı, [Caxdialogimpl](../../atl/reference/caxdialogimpl-class.md)'den türetilmiş bir iletişim kutusu uygular. Bu sınıf, ActiveX ve Windows denetimlerini barındırmak için destek içerir. ActiveX denetim desteğinin ek yükünü istemiyorsanız, sihirbaz kodunuzu oluşturduktan sonra tüm örneklerini `CAxDialogImpl` [CSimpleDialog](../../atl/reference/csimpledialog-class.md) veya [cdialogimpl](../../atl/reference/cdialogimpl-class.md) ile temel sınıfınız olarak değiştirin.
 
 > [!NOTE]
-> `CSimpleDialog` yalnızca Windows ortak denetimleri destekleyen kalıcı iletişim kutuları oluşturur. `CDialogImpl` ya da kalıcı veya kısıtlayıcı olmayan iletişim kutuları oluşturur.
+> `CSimpleDialog` yalnızca Windows ortak denetimlerini destekleyen kalıcı iletişim kutuları oluşturur. `CDialogImpl` kalıcı veya kalıcı olmayan iletişim kutuları oluşturur.
 
-## <a name="to-add-an-atl-dialog-resource-to-your-project"></a>Bir ATL iletişim kutusu kaynağı projenize eklemek için
+## <a name="to-add-an-atl-dialog-resource-to-your-project"></a>Projenize ATL iletişim kutusu kaynağı eklemek için
 
-1. Bir ATL projesi oluşturun [ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md).
+1. [Atl Proje Sihirbazı 'nı](../../atl/reference/atl-project-wizard.md)kullanarak bir ATL projesi oluşturun.
 
-1. Gelen [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), proje adını sağ tıklatıp **Ekle** kısayol menüsünden. Tıklayın **sınıfı Ekle**.
+1. [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), proje adına sağ tıklayın ve kısayol menüsünden **Ekle** ' ye tıklayın. **Sınıf Ekle**' ye tıklayın.
 
-1. İçinde **şablonları** bölmesinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) iletişim kutusu, tıklayın **ATL iletişim kutusu**. Tıklayın **açık** görüntülenecek [ATL iletişim kutusu Sihirbazı](../../atl/reference/atl-dialog-wizard.md).
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusunun **Şablonlar** bölmesinde, **atl iletişim**kutusu ' na tıklayın. [ATL Iletişim sihirbazını](../../atl/reference/atl-dialog-wizard.md)göstermek için **Aç** ' a tıklayın.
 
-Daha fazla bilgi için [iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md).
+Daha fazla bilgi için bkz. [bir Iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Pencere sınıfları](../../atl/atl-window-classes.md)<br/>
-[İleti eşlemeleri](../../atl/message-maps-atl.md)
+[İleti haritaları](../../atl/message-maps-atl.md)

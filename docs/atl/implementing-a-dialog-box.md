@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-ms.openlocfilehash: 7866afd26c901181f2b4193a87daf5dca2b0c67f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fa7b4122b513d48194dedeb39daecd1dfd7223eb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226691"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499583"
 ---
 # <a name="implementing-a-dialog-box"></a>Iletişim kutusu uygulama
 
@@ -20,7 +20,7 @@ ATL projenize bir iletişim kutusu eklemenin iki yolu vardır: ATL Iletişim Sih
 
 ## <a name="adding-a-dialog-box-with-the-atl-dialog-wizard"></a>ATL Iletişim kutusu Sihirbazı ile Iletişim kutusu ekleme
 
-[Sınıf Ekle iletişim kutusunda](../ide/add-class-dialog-box.md), ATL projenize bir iletişim kutusu eklemek Için atl iletişim kutusu nesnesini seçin. ATL Iletişim kutusu Sihirbazı ' nı uygun olarak doldurup **son**' a tıklayın. Sihirbaz, [Caxdialogimpl](../atl/reference/caxdialogimpl-class.md) 'den türetilmiş bir sınıfı projeye ekler. **Görünüm** menüsünden **kaynak görünümü** açın, iletişim kutusunu bulun ve kaynak düzenleyicisinde açmak için çift tıklayın.
+[Sınıf Ekle iletişim kutusunda](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box), ATL projenize bir iletişim kutusu eklemek Için atl iletişim kutusu nesnesini seçin. ATL Iletişim kutusu Sihirbazı ' nı uygun olarak doldurup **son**' a tıklayın. Sihirbaz, [Caxdialogimpl](../atl/reference/caxdialogimpl-class.md) 'den türetilmiş bir sınıfı projeye ekler. **Görünüm** menüsünden **kaynak görünümü** açın, iletişim kutusunu bulun ve kaynak düzenleyicisinde açmak için çift tıklayın.
 
 > [!NOTE]
 > İletişim kutusu, ' den türetilmişse `CAxDialogImpl` , hem ActiveX hem de Windows denetimlerini barındırabilirler. İletişim kutusu sınıfınıza ActiveX denetimi desteğinin ek yükünü istemiyorsanız, bunun yerine [CSimpleDialog](../atl/reference/csimpledialog-class.md) veya [Cdialogimpl](../atl/reference/cdialogimpl-class.md) kullanın.
@@ -34,7 +34,7 @@ Bir iletişim kutusu uygulamak, bir pencere uygulamaya benzer. [Caxdialogimpl](.
 > [!NOTE]
 > ATL Iletişim kutusu Sihirbazı 'nı kullanarak bir iletişim kutusu oluşturduğunuzda, sihirbaz üyeyi otomatik olarak `IDD` bir tür olarak ekler **`enum`** .
 
-`CDialogImpl`Windows denetimlerini barındıran kalıcı veya kalıcı olmayan bir iletişim kutusu uygulamanıza olanak tanır. `CAxDialogImpl`hem ActiveX hem de Windows denetimlerini barındıran kalıcı veya kalıcı olmayan bir iletişim kutusu uygulamanıza olanak tanır.
+`CDialogImpl` Windows denetimlerini barındıran kalıcı veya kalıcı olmayan bir iletişim kutusu uygulamanıza olanak tanır. `CAxDialogImpl` hem ActiveX hem de Windows denetimlerini barındıran kalıcı veya kalıcı olmayan bir iletişim kutusu uygulamanıza olanak tanır.
 
 Kalıcı bir iletişim kutusu oluşturmak için, `CDialogImpl` türetilmiş (veya `CAxDialogImpl` -türetilmiş) sınıfınızın bir örneğini oluşturun ve ardından [DoModal](../atl/reference/cdialogimpl-class.md#domodal) yöntemini çağırın. Kalıcı iletişim kutusunu kapatmak için, bir ileti işleyicisinden [EndDialog](../atl/reference/cdialogimpl-class.md#enddialog) yöntemini çağırın. Kalıcı olmayan bir iletişim kutusu oluşturmak için yerine [Create](../atl/reference/cdialogimpl-class.md#create) yöntemini çağırın `DoModal` . Kalıcı olmayan bir iletişim kutusunu yok etmek için [Destroyıwindow](../atl/reference/cdialogimpl-class.md#destroywindow)' ı çağırın.
 

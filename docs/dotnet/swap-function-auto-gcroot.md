@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - swap function
 ms.assetid: 2fe8146b-a7f7-445a-9ae9-53b5556be701
-ms.openlocfilehash: 271ecd26136671737a47b7adbaee273a0997102d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 10058eaa049c010c1288d03ed04cb9112fcfb7d6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988456"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498563"
 ---
 # <a name="swap-function-auto_gcroot"></a>swap İşlevi (auto_gcroot)
 
@@ -32,10 +32,10 @@ void swap(
 #### <a name="parameters"></a>Parametreler
 
 *_left*<br/>
-Bir `auto_gcroot`.
+Bir `auto_gcroot` .
 
 *_right*<br/>
-Başka bir `auto_gcroot`.
+Başka bir `auto_gcroot` .
 
 ## <a name="example"></a>Örnek
 
@@ -66,11 +66,11 @@ s1 = 'string two', s2 = 'string one'
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi dosyası** \<msclr \ auto_gcroot. h >
+**Üst bilgi dosyası**\<msclr\auto_gcroot.h>
 
 **Ad alanı** msclr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [auto_gcroot](../dotnet/auto-gcroot.md)<br/>
-[auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)
+[auto_gcroot::swap](./auto-gcroot-class.md#swap)

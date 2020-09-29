@@ -5,12 +5,12 @@ ms.date: 07/02/2019
 ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
-ms.openlocfilehash: adcf1334979fd083a4f32074f13b0bc204405a5c
-ms.sourcegitcommit: f7ebdfc3a260778c2ef938747cba1376c70ced15
+ms.openlocfilehash: cde4bf73548df2dd7f65e20aa39fa7275dd7e11b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84108438"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500159"
 ---
 # <a name="c-in-visual-studio"></a>Visual Studio’da C++
 
@@ -82,7 +82,7 @@ C++ düzenleyicisinde üretkenlik özelliklerini kullanarak kodu yeniden düzenl
 [Yerel Kodda Hata Ayıklama](/visualstudio/debugger/debugging-native-code)<br/>
 C++ projeleriyle Visual Studio hata ayıklayıcısını kullanın.
 
-[C/C++ için kod analizi genel bakış](/cpp/code-quality/code-analysis-for-c-cpp-overview)<br/>
+[C/C++ için kod analizi genel bakış](../code-quality/code-analysis-for-c-cpp-overview.md)<br/>
 Statik analiz yapmak için SAL ek açıklamalarını veya C++ Temel Yönergeleri denetleyicilerini kullanın.
 
 [Visual Studio 'da C/C++ için birim testleri yazma](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
@@ -114,7 +114,7 @@ Uygulamaları kötü amaçlı kod ve yetkisiz kullanıma karşı nasıl koruyaca
 [Bulut ve Web programlama](../cloud/cloud-and-web-programming-in-visual-cpp.md)<br/>
 C++ ' da, Web ve buluta bağlanmak için çeşitli seçenekleriniz vardır.
 
-[Veri erişimi](../data/data-access-in-cpp.md)<br/>
+[Veri Erişimi](../data/data-access-in-cpp.md)<br/>
 ODBC ve OLE DB kullanarak veritabanlarına bağlanma.
 
 [Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)<br/>
@@ -152,7 +152,7 @@ CPU üzerinde yürütülen zaman uyumsuz ve paralel algoritmalar.
 [C++ AMP (C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 GPU üzerinde yürütülen yoğun paralel algoritmalar.
 
-[Windows Çalışma Zamanı şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)<br/>
+[Windows Çalışma Zamanı şablon kitaplığı (WRL)](../cppcx/wrl/windows-runtime-cpp-template-library-wrl.md)<br/>
 Evrensel Windows Platformu (UWP) uygulamaları ve bileşenleri.
 
 [C++/CLı ile .NET programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>

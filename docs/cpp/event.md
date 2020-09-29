@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __event keyword [C++]
 - events [C++], __event
 ms.assetid: d3019b3e-722e-48df-8536-c05878461f9e
-ms.openlocfilehash: 2adbadecacb41a8e92cd36f55da9b376b4e1b006
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c1c9fa5a6df4cbb1c18e5d5406bdde0197d155b2
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227523"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498830"
 ---
 # <a name="__event"></a>__event
 
@@ -77,7 +77,7 @@ __event __interface IEvent1;
 
 Yeni sözdiziminde olayları kodlama hakkında daha fazla bilgi için bkz. [olayı](../extensions/event-cpp-component-extensions.md).
 
-Yönetilen olaylar veri üyeleri veya yöntemlerdir. Bir olayla birlikte kullanıldığında, bir temsilcinin dönüş türü [ortak dil belirtimiyle](/dotnet/standard/language-independence-and-language-independent-components)uyumlu olmalıdır. Olay işleyicisinin dönüş türü, temsilcinin dönüş türüyle aynı olmalıdır. Temsilciler hakkında daha fazla bilgi için bkz. [Temsilciler ve olaylar](../dotnet/delegates-and-events.md). Yönetilen bir olay bir veri üyesiyse, türü bir temsilciye yönelik bir işaretçi olmalıdır.
+Yönetilen olaylar veri üyeleri veya yöntemlerdir. Bir olayla birlikte kullanıldığında, bir temsilcinin dönüş türü [ortak dil belirtimiyle](/dotnet/standard/language-independence-and-language-independent-components)uyumlu olmalıdır. Olay işleyicisinin dönüş türü, temsilcinin dönüş türüyle aynı olmalıdır. Temsilciler hakkında daha fazla bilgi için bkz. [Temsilciler ve olaylar](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md). Yönetilen bir olay bir veri üyesiyse, türü bir temsilciye yönelik bir işaretçi olmalıdır.
 
 .NET Framework, bir veri üyesini bir yöntemin kendisi (yani, `Invoke` karşılık gelen temsilcinin yöntemi) gibi kabul edebilirsiniz. Yönetilen bir olay veri üyesini bildirmek için temsilci türünü önceden tanımlamanız gerekir. Bunun aksine, yönetilen bir olay yöntemi zaten tanımlı değilse karşılık gelen yönetilen temsilciyi örtülü olarak tanımlar. Örneğin, aşağıdaki gibi bir olay gibi bir olay değeri bildirebilirsiniz `OnClick` :
 

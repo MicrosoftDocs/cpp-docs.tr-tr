@@ -35,18 +35,18 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 9ebbab02860daaeb57c24d3e0901666861adfc2b
-ms.sourcegitcommit: c8f1605354724a13566bc3b0fac3c5d98265f1d0
+ms.openlocfilehash: 38c98793e7e1b22d166de8a869c57f510de7b284
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89062165"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500179"
 ---
 # <a name="coledatetime-class"></a>Cotadatetime sınıfı
 
 `DATE`OLE Otomasyonu 'nda kullanılan veri türünü kapsüller.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```
 class COleDateTime
@@ -113,14 +113,14 @@ OLE otomasyonunun [değişken](/windows/win32/api/oaidl/ns-oaidl-variant) veri t
 |----------|-----------|
 |29 Aralık 1899, gece yarısı|-1,0|
 |29 Aralık 1899, 6 A. d|-1,25|
-|30 Aralık 1899, gece yarısı|0.0|
+|30 Aralık 1899, gece yarısı|0,0|
 |31 Aralık 1899, gece yarısı|1.0|
 |1 Ocak 1900, 11:00|2.25|
 
 > [!CAUTION]
 > Yukarıdaki tabloda, gün değerleri 30 Aralık 1899 ' de gece yarısından önce negatif hale gelir, ancak gün saati değerleri değildir. Örneğin, günü temsil eden tamsayının pozitif mi (30 Aralık 6:00 1899 ' den önce) yoksa negatif mi (30 Aralık 1899 tarihinden önce) olsun, olarak her zaman bir kesirli değer 0,25 olarak temsil edilir. Bu, basit bir kayan nokta karşılaştırmasının yanlışlıkla `COleDateTime` 12/29/1899 ' de bir temsil eden 6:00 ' i, aynı günde bir ' ı temsil 7:00 eden farklı bir şekilde **sıralaması gerektiği** anlamına gelir.
 
-`COleDateTime`Sınıfı, 1 ocak 100 ' den 31 aralık 9999 ' ye kadar olan tarihleri işler. `COleDateTime`Sınıf, Gregoryen takvimini kullanır; bu, Jülyen tarihleri desteklemez. `COleDateTime` Gündüz kaydetme süresini yoksayar. (Bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).)
+`COleDateTime`Sınıfı, 1 ocak 100 ' den 31 aralık 9999 ' ye kadar olan tarihleri işler. `COleDateTime`Sınıf, Gregoryen takvimini kullanır; bu, Jülyen tarihleri desteklemez. `COleDateTime` Gündüz kaydetme süresini yoksayar. (Bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).)
 
 > [!NOTE]
 > `%y`Yalnızca 1900 ' den başlayan tarihler için iki basamaklı bir yıl almak üzere biçimini kullanabilirsiniz. `%y`Biçimi 1900 ' den önceki bir tarih üzerinde kullanırsanız, kod BIR onaylama hatası oluşturur.
@@ -135,7 +135,7 @@ Sorunlardan kaçınmak için dört basamaklı bir tarih belirtin. Örneğin:
 
 Değerler için temel aritmetik işlemler `COleDateTime` [Cotadatetimespan](../../atl-mfc-shared/reference/coledatetimespan-class.md)yardımcı sınıfını kullanır. `COleDateTimeSpan` değerler bir zaman aralığı tanımlar. Bu sınıflar arasındaki ilişki, [CTime](../../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../../atl-mfc-shared/reference/ctimespan-class.md)arasında bir örneğe benzerdir.
 
-Ve sınıfları hakkında daha fazla bilgi için `COleDateTime` `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Ve sınıfları hakkında daha fazla bilgi için `COleDateTime` `COleDateTimeSpan` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -267,7 +267,7 @@ Veri türü hakkında daha fazla bilgi için `time_t` *çalışma zamanı kitapl
 
 Daha fazla bilgi için Windows SDK [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) ve [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapılarına bakın.
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 > [!NOTE]
 > Parametresi kullanılarak Oluşturucu `DBTIMESTAMP` yalnızca OLEDB. h dahil edildiğinde kullanılabilir.
@@ -653,7 +653,7 @@ Geçerli dönüş değerleri 0 ile 59 arasında değişir.
 > [!NOTE]
 > `COleDateTime`Sınıf, artık saniyeler desteklemez.
 
-Uygulamasına yönelik uygulama hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Uygulamasına yönelik uygulama hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 Bu nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bilgi için `COleDateTime` , aşağıdaki üye işlevlere bakın:
 
@@ -735,7 +735,7 @@ Durumu geçersiz olarak ayarlayaetkileyebilecek işlemler hakkında daha fazla b
 
 - [işleç + =,-=](#operator_add_eq_-_eq)
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 
@@ -773,7 +773,7 @@ Bu nesnenin değerini sorgulayan diğer üye işlevleri hakkında daha fazla bil
 
 - [GetDayOfYear](#getdayofyear)
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 
@@ -792,7 +792,7 @@ DATE m_dt;
 > [!CAUTION]
 > `DATE`Bu işlevin döndürdüğü işaretçinin eriştiği nesnedeki değeri değiştirmek, bu nesnenin değerini değiştirecek `COleDateTime` . Bu nesnenin durumunu değiştirmez `COleDateTime` .
 
-Nesnenin uygulanması hakkında daha fazla bilgi için `DATE` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Nesnenin uygulanması hakkında daha fazla bilgi için `DATE` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="coledatetimem_status"></a><a name="m_status"></a> Cotadatetime:: m_status
 
@@ -847,7 +847,7 @@ Veri türü hakkında daha fazla bilgi için `time_t` *çalışma zamanı kitapl
 
 Daha fazla bilgi için Windows SDK [SystemTime](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) ve [filetime](/windows/win32/api/minwinbase/ns-minwinbase-filetime) yapılarına bakın.
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="coledatetimeoperator---"></a><a name="operator_add_-"></a> COleDateTime:: operator +,-
 
@@ -873,7 +873,7 @@ Elde edilen `COleDateTime` değer kabul edilebilir değerler sınırlarının d�
 
 Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için [m_status](#m_status) üye değişkenine bakın.
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 
@@ -900,7 +900,7 @@ Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için [m
 
 **+=** Ve **-=** işleçleri, `COleDateTime` nesne null olarak ayarlandıysa onay alacak. Bir örnek için bkz. [Copadatetime Ilişkisel işleçleri](#coledatetime_relational_operators) .
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="coledatetimeoperator-date"></a><a name="operator_date"></a> COleDateTime:: operator TARIHI
 
@@ -912,7 +912,7 @@ operator DATE() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç `DATE` , değeri bu nesneden kopyalanmış olan bir nesne döndürür `COleDateTime` . Nesnenin uygulanması hakkında daha fazla bilgi için `DATE` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Bu işleç `DATE` , değeri bu nesneden kopyalanmış olan bir nesne döndürür `COleDateTime` . Nesnenin uygulanması hakkında daha fazla bilgi için `DATE` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 `DATE`İşleci, `COleDateTime` nesne null olarak ayarlandıysa onay alacak. Bir örnek için bkz. [Copadatetime Ilişkisel işleçleri](#coledatetime_relational_operators) .
 
@@ -975,7 +975,7 @@ VAR_DATEVALUEONLY durumda, zaman değeri saat 0 veya gece yarısı olarak ayarla
 
 Dize bir tarih/saat değerine dönüştürülemiyorsa veya sayısal bir taşma varsa, bu `COleDateTime` nesnenin durumu geçersiz olur.
 
-Değerler için sınır ve uygulama hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerler için sınır ve uygulama hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ## <a name="coledatetimesetdate"></a><a name="setdate"></a> Cotadatetime:: SetDate
 
@@ -1048,7 +1048,7 @@ Bu nesnenin değerini sorgulayan üye işlevleri hakkında daha fazla bilgi içi
 
 - [GetDayOfYear](#getdayofyear)
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 
@@ -1132,7 +1132,7 @@ Bu nesnenin değerini sorgulayan üye işlevleri hakkında daha fazla bilgi içi
 
 - [GetDayOfYear](#getdayofyear)
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 
@@ -1225,7 +1225,7 @@ Bu nesnenin değerini sorgulayan üye işlevleri hakkında daha fazla bilgi içi
 
 - [GetDayOfYear](#getdayofyear)
 
-Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).
+Değerlerin sınırları hakkında daha fazla bilgi için `COleDateTime` bkz. [Tarih ve Saat: Otomasyon desteği](../date-and-time.md).
 
 ### <a name="example"></a>Örnek
 

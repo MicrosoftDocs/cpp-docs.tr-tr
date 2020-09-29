@@ -27,18 +27,18 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: 9ad4292b69d0219aa1732638ae250758e4456f4b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9dd2eec3948896487b5b977d1107db1f4a1046b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843293"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91498716"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset Sınıfı
 
 Bir satır kümesini ve onunla ilişkili erişimcileri tek bir sınıfta kapsüller.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class TAccessor = CNoAccessor,
@@ -64,7 +64,7 @@ Satır kümesi sınıfı.
 
 | Ad | Açıklama |
 |--|--|
-| [Bağladığınızda](#bind) | Bağlamalar oluşturur ( `bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtildiğinde kullanılır). |
+| [Bağladığınızda](#bind) | Bağlamalar oluşturur ( `bBind` **`false`** [CCommand:: Open](./ccommand-class.md#open)içinde olarak belirtildiğinde kullanılır). |
 | [CAccessorRowset](#caccessorrowset) | Oluşturucu. |
 | [Kapat](#close) | Satır kümesini ve tüm erişimcileri kapatır. |
 | [FreeRecordMemory](#freerecordmemory) | Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır. |
@@ -76,9 +76,9 @@ Sınıf `TAccessor` , erişimciyi yönetir. *TRowset* sınıfı satır kümesini
 
 ## <a name="caccessorrowsetbind"></a><a name="bind"></a> CAccessorRowset:: bind
 
-`bBind` **`false`** [CCommand:: Open](../../data/oledb/ccommand-open.md)içinde olarak belirtilmişse bağlamaları oluşturur.
+`bBind` **`false`** [CCommand:: Open](./ccommand-class.md#open)içinde olarak belirtilmişse bağlamaları oluşturur.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Bind();
@@ -92,7 +92,7 @@ Standart HRESULT.
 
 Nesnesini başlatır `CAccessorRowset` .
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CAccessorRowset();
@@ -102,7 +102,7 @@ CAccessorRowset();
 
 Tüm etkin erişimcileri ve satır kümesini yayınlar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void Close();
@@ -116,7 +116,7 @@ void Close();
 
 Geçerli kayıttaki, serbest olması gereken tüm sütunları serbest bırakır.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void FreeRecordMemory();
@@ -126,7 +126,7 @@ void FreeRecordMemory();
 
 Açılan satır kümesinden sütun bilgilerini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetColumnInfo(DBORDINAL* pulColumns,

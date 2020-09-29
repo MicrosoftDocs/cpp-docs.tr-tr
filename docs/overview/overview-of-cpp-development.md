@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 02364f778cdab3416cbac7cc1462ce79287b1ad9
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5a03590074d8de05153b2d9442da8b916e6eba82
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684371"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500275"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 
@@ -75,7 +75,7 @@ Programınızın bir kullanıcı arabirimi varsa, bunu düğmeler, liste kutular
 
 Evrensel Windows Platformu bir uygulama için Kullanıcı arabirimi tasarlama hakkında daha fazla bilgi için bkz. [Tasarım ve Kullanıcı](https://developer.microsoft.com/windows/design)arabirimi.
 
-MFC uygulaması için Kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için bkz. [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md). Win32 Windows programları hakkında daha fazla bilgi için bkz. [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md).
+MFC uygulaması için Kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için bkz. [MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md). Win32 Windows programları hakkında daha fazla bilgi için bkz. [Windows Masaüstü uygulamaları](../windows/desktop-applications-visual-cpp.md).
 
 ## <a name="write-code"></a>Kod yazma
 
@@ -117,7 +117,7 @@ Daha fazla bilgi için bkz. Visual Studio 'da [birim testlerini kullanarak kodu 
 
 ## <a name="analyze"></a>Analiz
 
-Visual Studio, kaynak kodunuzda olası sorunları tespit eden statik kod çözümleme araçları içerir. Bu araçlar [C++ temel yönergeleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) kuralları denetleyicilerinin bir uygulamasını içerir. Daha fazla bilgi için bkz. [C/C++ Için kod analizi genel bakış](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+Visual Studio, kaynak kodunuzda olası sorunları tespit eden statik kod çözümleme araçları içerir. Bu araçlar [C++ temel yönergeleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) kuralları denetleyicilerinin bir uygulamasını içerir. Daha fazla bilgi için bkz. [C/C++ Için kod analizi genel bakış](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## <a name="deploy-completed-applications"></a>Tamamlanmış uygulamaları dağıtma
 

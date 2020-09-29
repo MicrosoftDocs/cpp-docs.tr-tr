@@ -1,15 +1,15 @@
 ---
-title: ATL Active Server sayfa bileşeni ekleme
+title: ATL Active Server Page Bileşeni Ekleme
 ms.date: 05/09/2019
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-ms.openlocfilehash: a84eeb20f047097e3dbb3c7f3bb5f5a12b069bcb
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 0180077de7ab96cb75736d34e112731e47b9589b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075292"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499362"
 ---
-# <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server sayfa bileşeni ekleme
+# <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server Page Bileşeni Ekleme
 
 ::: moniker range="vs-2019"
 
@@ -19,7 +19,7 @@ ATL Active Server Pages Bileşen Sihirbazı, Visual Studio 2019 ve sonrasında k
 
 ::: moniker range="<=vs-2017"
 
-Projenize bir etkin şablon kitaplığı (ATL) nesnesi eklemek için projenizin bir ATL COM uygulaması veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. ATL [Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) ' nı atl uygulaması oluşturmak için kullanabilirsiniz, [Sınıf Ekle iletişim](../../ide/add-class-dialog-box.md) kutusundan **MFC 'ye atl desteği ekle** ' yi SEÇEBILIR veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
+Projenize bir etkin şablon kitaplığı (ATL) nesnesi eklemek için projenizin bir ATL COM uygulaması veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. ATL [Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) ' nı atl uygulaması oluşturmak için kullanabilirsiniz, [Sınıf Ekle iletişim](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) kutusundan **MFC 'ye atl desteği ekle** ' yi SEÇEBILIR veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
 
 Active Server Pages bileşenleri, aşağıdaki gelişmiş web geliştirme özelliklerini sağlayan Internet Information Services mimarisinin bir parçasıdır:
 
@@ -35,7 +35,7 @@ Active Server Pages bileşenleri, aşağıdaki gelişmiş web geliştirme özell
 
 1. Kısayol menüsünde, **Ekle**' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. [Sınıf Ekle](../../ide/add-class-dialog-box.md) Iletişim kutusundaki **Şablonlar** bölmesinde, **atl Active Server sayfa bileşeni**' ne tıklayın ve sonra [atl Active Server sayfa bileşeni sihirbazını](../../atl/reference/atl-active-server-page-component-wizard.md)göstermek için **Aç** ' a tıklayın.
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusundaki **Şablonlar** bölmesinde, **atl Active Server sayfa bileşeni**' ne tıklayın ve sonra [atl Active Server sayfa bileşeni sihirbazını](../../atl/reference/atl-active-server-page-component-wizard.md)göstermek için **Aç** ' a tıklayın.
 
 ::: moniker-end
 
@@ -43,7 +43,7 @@ Active Server Pages bileşenleri, aşağıdaki gelişmiş web geliştirme özell
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL Projesine Yeni Arabirim Ekleme](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>
-[Bir Nesneye Bağlantı Noktaları Ekleme](../../atl/adding-connection-points-to-an-object.md)<br/>
+[Bir nesneye bağlantı noktaları ekleme](../../atl/adding-connection-points-to-an-object.md)<br/>
 [Yöntem ekleme](../../ide/adding-a-method-visual-cpp.md)<br/>
-[MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
+[MFC Sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Genel C++ Sınıfı Ekleme](../../ide/adding-a-generic-cpp-class.md)

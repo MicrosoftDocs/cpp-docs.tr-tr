@@ -9,38 +9,38 @@ helpviewer_keywords:
 - ActiveX Control Wizard
 - add class from ActiveX control wizard [C++]
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-ms.openlocfilehash: 1d91d98082a5c5d6d45bfa31e81c59e8925aa2c2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d63f73e17e47f2cabb8f1a55c71325ec7068a2c8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386284"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500365"
 ---
 # <a name="add-a-class-from-an-activex-control"></a>ActiveX denetiminden sınıf ekleme
 
-Kullanılabilir bir ActiveX denetimi bir arabirimde bir MFC sınıfı oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı için ekleyebileceğiniz bir [MFC uygulaması](../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimi](../mfc/reference/creating-an-mfc-activex-control.md).
+Kullanılabilir ActiveX denetimindeki bir arabirimden MFC sınıfı oluşturmak için bu sihirbazı kullanın. MFC [uygulamasına](../mfc/reference/creating-an-mfc-application.md), MFC [DLL](../mfc/reference/creating-an-mfc-dll-project.md)'sine veya [MFC ActiveX denetimine](../mfc/reference/creating-an-mfc-activex-control.md)MFC sınıfı ekleyebilirsiniz.
 
 > [!WARNING]
-> Visual Studio 2017 sürüm 15.9, Microsoft bu kod Sihirbazı'nı kullanım dışı ve Visual Studio'nun gelecekteki bir sürümde kaldıracağız. Bu sihirbaz nadiren kullanılır. ATL ve MFC genel desteği kaldırılmasını Bu sihirbaz tarafından etkilenmiş değil. Bu kullanımdan kaldırma hakkındaki görüşlerinizi paylaşmak istiyorsanız, tamamlamak [bu anketi](https://www.surveymonkey.com/r/QDWKKCN). Geri bildiriminiz bizim için önemlidir.
+> Visual Studio 2017 sürüm 15,9 ' de, Microsoft bu kod Sihirbazı 'nı kullanımdan kaldırılmıştır ve bu kodu Visual Studio 'nun gelecek bir sürümünde kaldıracağız. Bu sihirbaz nadiren kullanılır. ATL ve MFC için genel destek, bu sihirbazın kaldırılmasından etkilenmez. Bu kullanımdan kaldırma hakkında görüşlerinizi paylaşmak isterseniz, [Bu anketi](https://www.surveymonkey.com/r/QDWKKCN)doldurun. Görüşleriniz bizim için önemlidir.
 <!-- Blank comment here to separate the warning and note. -->
 > [!NOTE]
-> ActiveX denetiminden sınıf ekleme için etkinleştirilmiş Otomasyonu ile MFC projenize oluşturmanız gerekmez.
+> ActiveX denetiminden bir sınıf eklemek için Otomasyon etkin olan MFC projenizi oluşturmanız gerekmez.
 
-ActiveX denetimi Bileşen Nesne Modeli (çok çeşitli OLE işlevselliği destekleyen COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. Birçok yazılım gereksinimlerinize uyacak şekilde özelleştirilebilir. World Wide Web sayfaları'nda sıradan ActiveX denetim kapsayıcıları veya Internet'te ActiveX denetimleri kullanabilirsiniz.
+ActiveX denetimi, çok çeşitli OLE işlevlerini destekleyen bileşen nesne modeli (COM) tabanlı bir yeniden kullanılabilir yazılım bileşenidir. Bu, birçok yazılım ihtiyaçlarına uyacak şekilde özelleştirilebilir. ActiveX denetimlerini, World Wide Web sayfalarında sıradan ActiveX denetim kapsayıcılarında veya Internet üzerinde kullanabilirsiniz.
 
 **ActiveX denetiminden MFC sınıfı eklemek için:**
 
-1. Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ActiveX denetim sınıfı eklemek istediğiniz proje adına sağ tıklayın.
+1. **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ActiveX denetim sınıfını eklemek istediğiniz projenin adına sağ tıklayın.
 
-1. Kısayol menüsünden **Ekle**ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünde **Ekle**' yi ve ardından **Sınıf Ekle**' yi seçin.
 
-1. İçinde [sınıfı Ekle](../ide/add-class-dialog-box.md) iletişim kutusundaki **şablonları** bölmesinde seçin **ActiveX denetiminden MFC sınıfı**ve ardından **açık** görüntülemek için [ActiveX denetimi sihirbazından sınıf ekleme](#add-class-from-activex-control-wizard).
+1. [Sınıf Ekle](./adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusundaki **Şablonlar** bölmesinde, **ActiveX denetiminden MFC sınıfı**' nı seçin ve ardından **Aç** ' ı seçerek [ActiveX denetimi 'nden Sınıf Ekle sihirbazını](#add-class-from-activex-control-wizard)görüntüleyin.
 
-Sihirbazda, birden fazla ActiveX denetimi arabiriminde ekleyebilirsiniz. Tek bir sihirbaz oturumunda birden fazla ActiveX denetiminden sınıf de oluşturabilirsiniz.
+Sihirbazda, ActiveX denetimine birden fazla arabirim ekleyebilirsiniz. Ayrıca, tek bir sihirbaz oturumunda birden fazla ActiveX denetiminden sınıflar oluşturabilirsiniz.
 
-ActiveX denetimlerinde sisteminizdeki kayıtlı sınıfları ekleyebilirsiniz ya da ActiveX denetimlerinde ilk bunları sisteminizde kayıt olmadan tür kitaplığı dosyalarını (.tlb, .olb, .dll, .ocx veya .exe) içinde bulunan sınıfları ekleyebilirsiniz. ActiveX denetimlerini kaydetme hakkında daha fazla bilgi için bkz. [kaydetme OLE denetimleri](../mfc/reference/registering-ole-controls.md).
+Sisteminizde kayıtlı ActiveX denetimlerinden sınıflar ekleyebilir veya tür kitaplığı dosyalarında (. tlb,. olb,. dll,. ocx veya. exe) bulunan ActiveX denetimlerinden, önce bunları sisteminize kaydetmeden sınıfları ekleyebilirsiniz. ActiveX denetimlerini kaydetme hakkında daha fazla bilgi için bkz. [OLE denetimlerini kaydetme](../mfc/reference/registering-ole-controls.md).
 
-MFC sınıfından türetilen bir sihirbaz [CWnd](../mfc/reference/cwnd-class.md) veya [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md), seçilen ActiveX denetiminden eklediğiniz her arabirim için.
+Sihirbaz, seçilen ActiveX denetiminden eklediğiniz her arabirim için [CWnd](../mfc/reference/cwnd-class.md) 'Den veya [cotadispatchsürücüden](../mfc/reference/coledispatchdriver-class.md)türetilen bir MFC sınıfı oluşturur.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -48,58 +48,58 @@ MFC sınıfından türetilen bir sihirbaz [CWnd](../mfc/reference/cwnd-class.md)
 
 ## <a name="add-class-from-activex-control-wizard"></a>ActiveX denetimi sihirbazından sınıf ekleme
 
-Kullanılabilir ActiveX denetiminden MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz seçilen ActiveX denetiminden eklediğiniz her arabirim için bir sınıf oluşturur.
+Kullanılabilir bir ActiveX denetiminden MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz, seçilen ActiveX denetiminden eklediğiniz her arabirim için bir sınıf oluşturur.
 
-- **Şuradan Sınıf Ekle**
+- **Sınıf Ekle**
 
-  Sınıf oluşturulduğu tür kitaplığının konumu belirtir.
+  Sınıfın oluşturulduğu tür kitaplığının konumunu belirtir.
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**Kayıt defteri**|Tür kitaplığını sistemde kayıtlı. Kayıtlı bir tür kitaplığı içinde listelenen **kullanılabilir ActiveX denetimleri**.|
-  |**Dosya**|Tür kitaplığını mutlaka sistemde kayıtlı değil ancak bir dosyada depolanır. Dosya konumunda sağlamak **konumu**.|
+  |**Kapsayıcı Kayıt Defteri**|Tür kitaplığı sisteme kaydedilir. Kayıtlı tür kitaplıkları **kullanılabilir ActiveX denetimlerinde**listelenmiştir.|
+  |**Dosya**|Tür kitaplığı sistemde kayıtlı değildir, ancak bir dosyada depolanır. Dosya konumunu **konuma**girin.|
 
 - **Kullanılabilir ActiveX denetimleri**
 
-  Şu anda sistemde kayıtlı ActiveX denetimleri belirtir. ActiveX denetimi arabirimlerinden içinde görüntülemek için bu listeden seç **arabirimleri** listesi. Bkz: [MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma](../mfc/mfc-activex-controls-distributing-activex-controls.md) ActiveX denetimlerini kaydetme hakkında daha fazla bilgi.
+  Sistemde kayıtlı olan ActiveX denetimlerini belirtir. Arabirimlerini **arabirimler** listesinde göstermek için bu listeden bir ActiveX denetimi seçin. ActiveX denetimlerini kaydetme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma](../mfc/mfc-activex-controls-distributing-activex-controls.md) .
 
-  Seçerseniz **dosya** altında **sınıfı gelen ekleme**, bu kutusuna değişiklik için kullanılamıyor.
+  **Sınıf Ekle**altında **Dosya** ' yı seçerseniz bu kutu değişiklik için kullanılamaz.
 
 - **Konum**
 
-  ActiveX denetimi konumunu belirtir. Seçerseniz **dosya** altında **sınıfı gelen ekleme**, tür kitaplığı sahip bir dosya konumunu sağlayabilir. Dosyasının konumuna göz atmak için üç nokta düğmesini seçin.
+  ActiveX denetiminin konumunu belirtir. **Sınıfından sınıf Ekle**altında **Dosya** ' yı seçerseniz, tür kitaplığına sahip dosyanın konumunu sağlayabilirsiniz. Dosyanın konumuna gitmek için üç nokta düğmesini seçin.
 
-  Seçerseniz **kayıt defteri** altında **sınıfı gelen ekleme**, bu kutusuna değişiklik için kullanılamıyor.
+  **Sınıf Ekle**altında, **kayıt defteri** ' ni seçerseniz bu kutu değişiklik için kullanılamaz.
 
 - **Arabirimler**
 
-  Arabirimler ActiveX denetimini belirtir. Geçerli seçimde arabirimlerinden Sihirbazı'nı kullanan **kullanılabilir ActiveX denetimleri**, ya da bu arabirimi belirtilen tür kitaplığı dosyası kullanır **konumu**.
+  ActiveX denetimindeki arabirimleri belirtir. Sihirbaz, **kullanılabilir ActiveX denetimlerinde**Geçerli seçimden arabirimler kullanır veya **konumunda**belirtilen tür kitaplığı dosyasındaki arabirimleri kullanır.
 
-  |Aktarım düğmesi|Açıklama|
+  |Aktar düğmesi|Açıklama|
   |---------------------|-----------------|
-  |**>**|Şu anda seçili arabirimi ekler **arabirimleri** listesi. Herhangi bir arabirim seçilirse kullanılabilir.|
-  |**>>**|Tüm arabirimleri ActiveX denetimi ekler. Geçerli seçimde arabirimlerinden Sihirbazı'nı kullanan **kullanılabilir ActiveX denetimleri**, ya da bu arabirimi belirtilen tür kitaplığı dosyası kullanır **konumu**.|
-  |**\<**|Şu anda seçili sınıfını kaldırır **sınıfları oluşturulan** listesi. Hiçbir sınıf içinde seçtiyseniz, kullanılabilir **sınıfları oluşturulan** listesi.|
-  |**\<\<**|Tüm sınıfları kaldırır **sınıfları oluşturulan** listesi. Kullanılabilir ise **sınıfları oluşturulan** listesi boş.|
+  |**>**|**Arabirimler** listesinde seçili olan arabirimi ekler. Arabirim seçilmezse kullanılamaz.|
+  |**>>**|Tüm arabirimleri ActiveX denetimine ekler. Sihirbaz, **kullanılabilir ActiveX denetimlerinde**Geçerli seçimden arabirimler kullanır veya **konumunda**belirtilen tür kitaplığı dosyasındaki arabirimleri kullanır.|
+  |**\<**|**Oluşturulan sınıflar** listesinde şu anda seçili olan sınıfı kaldırır. **Oluşturulan sınıflar** listesinde şu anda hiçbir sınıf seçili değilse kullanılamaz.|
+  |**\<\<**|**Oluşturulan sınıflar** listesindeki tüm sınıfları kaldırır. **Oluşturulan sınıflar** listesi boşsa kullanılamaz.|
 
 - **Oluşturulan sınıflar**
 
-  Sınıf adları kullanılarak eklenen arabirimlerinden oluşturulacak belirtir **>** veya **>>** düğmesi. Bir sınıf seçin ve ardından yukarı veya aşağı tuşlarını listede gezinmek için bu kutuyu seçebilirsiniz. Seçtiğinizde, **son**, her oluşturulan sınıfın adı görüntüleyebileceğiniz **sınıfı** kutusu ve oluşturulan her dosya adı **.h dosyası** kutusu. Bu kutuya bir kerede yalnızca bir sınıf seçebilirsiniz.
+  Or düğmesi kullanılarak eklenen arabirimlerde oluşturulacak sınıf adlarını belirtir **>** **>>** . Bir sınıf seçmek için bu kutuyu seçebilir ve sonra listede gezinmek için yukarı veya aşağı tuşlarını kullanabilirsiniz. **Son**' u seçtiğinizde, oluşturulan her sınıf adını **sınıf** kutusunda ve oluşturulan her dosya adını **. h dosya** kutusunda görüntüleyebilirsiniz. Bu kutuda tek seferde yalnızca bir sınıf seçebilirsiniz.
 
-  Bu listeden seçim ve seçerek bir sınıf kaldırabilirsiniz **<**. Bir sınıfta seçmeniz gerekmez **sınıfları oluşturulan** kutusunu tüm sınıflar Kaldır. Seçerek **<<**, içindeki tüm sınıflar Kaldır **sınıfları oluşturulan** kutusu.
+  Bir sınıfı bu listede seçip seçerek kaldırabilirsiniz **<** . Tüm sınıfları kaldırmak için **oluşturulan sınıflar** kutusunda bir sınıf seçmeniz gerekmez. Öğesini seçerek **<<** , **oluşturulan sınıflar** kutusundaki tüm sınıfları kaldırırsınız.
 
-- **Sınıfı**
+- **Sınıf**
 
-   Seçilen sınıfın adını belirtir **sınıfları oluşturulan** seçtiğinizde sihirbaz ekler kutusu **son**. Adlarında düzenleyebileceğiniz **sınıfı** kutusu.
+   **Son**' u seçtiğinizde sihirbazın eklediği **oluşturulan sınıflar** kutusunda seçilen sınıfın adını belirtir. **Sınıf** kutusunda adı düzenleyebilirsiniz.
 
-- **.h dosyası**
+- **. h dosyası**
 
-  Yeni nesne sınıfı için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıfları oluşturulan**. Dosya adı, tercih ettiğiniz bir konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesini seçin. Var olan bir dosya seçerseniz, sihirbaz, seçili konuma dek Kaydet'i seçin olmaz **son** Sihirbazı'nda.
+  Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Varsayılan olarak, bu ad, **üretilen sınıflarda**sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini seçin. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' u seçene kadar sihirbaz bu dosyayı seçili konuma kaydetmez.
 
-  Sihirbaz, bir dosyanın üzerine değil. Varolan bir dosyanın adını seçin ve ardından **son**, Sihirbazı dosya içeriği sınıf bildiriminin ekleneceği gösteren isteyip istemediğinizi sorar. Seçin **Evet** ; dosya eklemek için seçin **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+  Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçip **son**' u seçerseniz, sihirbaz, sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' i seçin; sihirbaza dönmek için **Hayır** ' ı seçin ve başka bir dosya adı belirtin.
 
-- **.cpp dosyası**
+- **. cpp dosyası**
 
-  Yeni nesne sınıfı için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıfları oluşturulan**. Dosya adı, tercih ettiğiniz bir konuma kaydetmek için üç nokta düğmesini seçin. Siz seçene kadar dosyasını seçili konuma kaydedilmez **son** Sihirbazı'nda.
+  Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, **üretilen sınıflarda**sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesini seçin. Bu dosya, sihirbazda **son** ' u seçene kadar seçili konuma kaydedilmez.
 
-  Sihirbaz, bir dosyanın üzerine değil. Varolan bir dosyanın adını seçin ve ardından **son**, Sihirbazı dosya içeriği sınıf uygulamasının ekleneceği gösteren isteyip istemediğinizi sorar. Seçin **Evet** ; dosya eklemek için seçin **Hayır** sihirbaza dönmek ve başka bir dosya adı belirtin.
+  Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçip **son**' u seçerseniz, sihirbaz, sınıf uygulamasının dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' i seçin; sihirbaza dönmek için **Hayır** ' ı seçin ve başka bir dosya adı belirtin.

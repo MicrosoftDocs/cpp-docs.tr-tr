@@ -1,61 +1,61 @@
 ---
-title: Özellik sayfaları uygulama
+title: Özellik sayfalarını uygulama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - IPropertyPage2 class
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: 49058fe13457c2d0050452cbc0015575371e4043
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 6544f5ddf0b81fdec893308bb10e0c19cea73005
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706898"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499449"
 ---
-# <a name="implementing-property-pages"></a>Özellik sayfaları uygulama
+# <a name="implementing-property-pages"></a>Özellik sayfalarını uygulama
 
 ::: moniker range="vs-2019"
 
-ATL Özellik Sayfası Sihirbazı, Visual Studio 2019 bulunan ve daha yeni değil.
+ATL Özellik sayfası Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
 ::: moniker range="<=vs-2017"
 
-Özellik sayfaları olan COM nesneleri uygulayan `IPropertyPage` veya `IPropertyPage2` arabirimi. ATL özellik sayfaları aracılığıyla uygulamak için destek sağlar [ATL Özellik Sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md) içinde [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md).
+Özellik sayfaları, veya arabirimini uygulayan COM nesneleridir `IPropertyPage` `IPropertyPage2` . ATL, [Sınıf Ekle iletişim kutusunda](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) [atl özellik sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md) aracılığıyla Özellik sayfaları uygulama desteği sağlar.
 
 ATL kullanarak bir özellik sayfası oluşturmak için:
 
-- Oluşturun veya bir dinamik bağlantı ATL kitaplığı (DLL) sunucu projesi açın.
+- ATL dinamik bağlantı kitaplığı (DLL) sunucu projesi oluşturun veya açın.
 
-- Açık [Sınıf Ekle iletişim kutusu](../ide/add-class-dialog-box.md) seçip **ATL özellik sayfası**.
+- [Sınıf Ekle iletişim kutusunu](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) açın ve **atl özellik sayfası**' nı seçin.
 
-- (Bir kullanıcı arabirimi olduğundan) apartman, özellik sayfası olduğundan emin olun.
+- Özellik sayfanızın apartman iş parçacıklı olduğundan emin olun (bir kullanıcı arabirimi olduğundan).
 
-- Başlık, açıklama (Doc dizesi) ve Yardım dosyasında, sayfayla ilişkilendirilecek ayarlayın.
+- Sayfanız ile ilişkilendirilecek başlık, açıklama (belge dizesi) ve yardım dosyasını ayarlayın.
 
-- Denetimler, özellik sayfasının kullanıcı arabirimi olarak görev yapacak oluşturulan iletişim kutusu kaynağı ekleyin.
+- Özellik Sayfanızın kullanıcı arabirimi olarak davranacak şekilde oluşturulan iletişim kaynağına denetimler ekleyin.
 
-- Doğrulamayı gerçekleştirmek, sayfa site güncelleştirmek ya da, bir sayfayla ilişkili nesnelerini güncelleştirme için kullanıcı arabiriminde sayfanızın değişikliklerine yanıt verme. Özellikle, çağrı [IPropertyPageImpl::SetDirty](../atl/reference/ipropertypageimpl-class.md#setdirty) ne zaman kullanıcının yaptığı değişiklikler için özellik sayfası.
+- Doğrulama gerçekleştirmek, sayfa sitesini güncelleştirmek veya sayfanız ile ilişkili nesneleri güncelleştirmek için Sayfanızın kullanıcı arabirimindeki değişikliklere yanıt verin. Özellikle, Kullanıcı Özellik sayfasında değişiklik yaptığında [IPropertyPageImpl:: SetDirty](../atl/reference/ipropertypageimpl-class.md#setdirty) ' ı çağırın.
 
-- İsteğe bağlı olarak geçersiz kılma `IPropertyPageImpl` aşağıdaki yönergeleri kullanarak yöntemleri.
+- İsteğe bağlı olarak `IPropertyPageImpl` aşağıdaki yönergeleri kullanarak yöntemleri geçersiz kılın.
 
-   |Ipropertypageımpl yöntemi|Aşağıdakileri yapmak istediğinizde geçersiz kıl...|Notlar|
+   |IPropertyPageImpl yöntemi|İstediğiniz zaman geçersiz kıl...|Notlar|
    |------------------------------|----------------------------------|-----------|
-   |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|Sayfanız ve destekledikleri arabirimleri için geçirilen nesne sayısı üzerinde temel sağlamlık denetimleri gerçekleştirin.|Temel sınıf uygulamasına çağırmadan önce kendi kod yürütün. Ayarlanan nesneleri beklentilerinizle uygun olmayan, çağrı olabildiğince çabuk başarısız.|
-   |[Etkinleştirme](../atl/reference/ipropertypageimpl-class.md#activate)|(Örneğin, geçerli özellik değerlerini iletişim denetimleriyle nesnelerden ayarlamak, denetimleri dinamik olarak oluşturmak veya diğer başlatmaların) sayfanızın kullanıcı arabirimi başlatılamıyor.|Temel sınıfı, bunları güncelleştirmek denemeden önce iletişim kutusu penceresine ve tüm denetimleri oluşturmak için bir fırsat sahip olacak şekilde kodunuzu önce taban sınıf uygulamasını arayın.|
-   |[Uygula](../atl/reference/ipropertypageimpl-class.md#apply)|Özellik ayarları doğrulayın ve nesneleri güncelleştirin.|Çağrı izleme dışında herhangi bir şey yapmaz beri taban sınıf uygulamasını çağıracak şekilde gerek yoktur.|
-   |[Devre dışı bırak](../atl/reference/ipropertypageimpl-class.md#deactivate)|Pencere ile ilgili öğeleri temizleyin.|Taban sınıf uygulamasını temsil eden özellik sayfası iletişim kutusunu yok eder. İletişim kutusunu yok önce temizlemek gerekiyorsa, temel sınıfı çağırmadan önce kodunuzu eklemeniz gerekir.|
+   |[SetObjects](../atl/reference/ipropertypageimpl-class.md#setobjects)|Sayfanıza geçirilen nesne sayısı ve destekledikleri arabirimler üzerinde temel sağlamlık denetimleri yapın.|Temel sınıf uygulamasını çağırmadan önce kendi kodunuzu yürütün. Ayarlanmakta olan nesneler beklentilerinize uygun değilse, çağrıyı mümkün olan en kısa sürede başarısız yapmanız gerekir.|
+   |[Etkinleştir](../atl/reference/ipropertypageimpl-class.md#activate)|Sayfanızın kullanıcı arabirimini başlatın (örneğin, iletişim kutusu denetimlerini nesnelerden geçerli özellik değerleriyle ayarlayın, denetimleri dinamik olarak oluşturun veya diğer başlatmalar gerçekleştirin).|Temel sınıfın, güncelleştirmeden önce iletişim penceresini ve tüm denetimleri oluşturma şansı olması için, kodunuzun önüne temel sınıf uygulamasını çağırın.|
+   |[Uygula](../atl/reference/ipropertypageimpl-class.md#apply)|Özellik ayarlarını doğrulayın ve nesneleri güncelleştirin.|Çağrıyı izlemesinden ayrı bir şey yapmamadığından, temel sınıf uygulamasını çağırmanız gerekmez.|
+   |[Devre dışı bırak](../atl/reference/ipropertypageimpl-class.md#deactivate)|Pencereyle ilgili öğeleri temizle.|Temel sınıf uygulama, özellik sayfasını temsil eden iletişim kutusunu yok eder. İletişim kutusu yok etmeden önce temizlemeniz gerekirse, temel sınıfı çağırmadan önce kodunuzu eklemeniz gerekir.|
 
-Örnek özellik sayfası için bkz: [örneği: Özellik sayfası uygulama](../atl/example-implementing-a-property-page.md).
+Örnek özellik sayfası uygulaması için bkz. [örnek: uygulama bir özellik sayfası](../atl/example-implementing-a-property-page.md).
 
 > [!NOTE]
-> Özellik sayfasında konak ActiveX denetimleri için isterseniz Değiştirme Sihirbazı tarafından oluşturulan sınıfının türetme gerekecektir. Değiştirin **Cdialogımpl\<CYourClass >** ile **Caxdialogımpl\<CYourClass >** temel sınıflar listesinde.
+> Özellik sayfanızda ActiveX denetimlerini barındırmak istiyorsanız, sihirbaz tarafından oluşturulan sınıfınızın türediğini değiştirmeniz gerekir. **Cdialogimpl \<CYourClass> ** öğesini temel sınıflar listesinde ** \<CYourClass> caxdialogimpl** ile değiştirin.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özellik Sayfaları](../atl/atl-com-property-pages.md)<br/>
-[ATLPages örnek](../overview/visual-cpp-samples.md)
+[ATLPages örneği](../overview/visual-cpp-samples.md)

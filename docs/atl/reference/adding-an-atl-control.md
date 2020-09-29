@@ -1,40 +1,40 @@
 ---
-title: ATL denetimi ekleme
+title: ATL Denetimi Ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL projects, adding controls
 - controls [ATL], adding to projects
 ms.assetid: 10223e7e-fdb7-4163-80c6-44aeafa8e6ce
-ms.openlocfilehash: 836b19cef38549bcdf6cddeeda5bbb7fee08a1c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fac1efeb3d373a8324828a8b10f0570f253f6103
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261370"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499296"
 ---
-# <a name="adding-an-atl-control"></a>ATL denetimi ekleme
+# <a name="adding-an-atl-control"></a>ATL Denetimi Ekleme
 
-Bir kullanıcı arabirimi nesnesi arabirimleri için tüm olası kapsayıcıları destekleyen bir proje eklemek için bu sihirbazı kullanın. Bu arabirimler desteklemek için projenin ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
+Tüm olası kapsayıcılar için arabirimleri destekleyen bir projeye Kullanıcı arabirimi nesnesi eklemek için bu sihirbazı kullanın. Bu arabirimleri desteklemek için, projenin ATL uygulaması olarak veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Atl uygulaması oluşturmak için ATL [Proje Sihirbazı 'nı](../../atl/reference/atl-project-wizard.md) kullanabilir veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
 
-## <a name="to-add-an-atl-control-to-your-project"></a>ATL denetimi projenize eklemek için
+## <a name="to-add-an-atl-control-to-your-project"></a>Projenize ATL denetimi eklemek için
 
-1. Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ATL basit nesne eklemek istediğiniz proje adına sağ tıklayın.
+1. **Çözüm Gezgini** ya da [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ATL Simple nesnesini eklemek istediğiniz projenin adına sağ tıklayın.
 
-1. Tıklayın **Ekle** kısayol menüsünü ve ardından **sınıfı Ekle**.
+1. Kısayol menüsünden **Ekle** ' ye tıklayın ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. İçinde [sınıfı Ekle](../../ide/add-class-dialog-box.md) Şablonlar bölmesinde, iletişim kutusu **ATL denetimi**ve ardından **Ekle** görüntülenecek [ATL denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md).
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) iletişim kutusundaki Şablonlar bölmesinde, **ATL denetimi**' ne ve ardından **Ekle** ' ye tıklayarak [atl Denetim Sihirbazı](../../atl/reference/atl-control-wizard.md)' nı görüntüleyin.
 
-Kullanarak **ATL denetimi Sihirbazı**, üç tür denetim oluşturabilirsiniz:
+**Atl Denetim Sihirbazı**'nı kullanarak üç tür denetimden birini oluşturabilirsiniz:
 
-- Standart bir denetimde
+- Standart denetim
 
-- Bileşik Denetim
+- Bileşik denetim
 
 - DHTML denetimi
 
-Ayrıca, denetimin boyutunu azaltın ve seçerek çoğu kapsayıcı tarafından kullanılmayan arabirimleri Kaldır **en az bir denetim** üzerinde **seçenekleri** Sihirbazı sayfası.
+Ayrıca, denetimin boyutunu küçültebilir ve sihirbazın **Seçenekler** sayfasında en **az denetim** ' i seçerek çoğu kapsayıcı tarafından kullanılmayan arabirimleri kaldırabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bileşik Denetime İşlevsellik Ekleme](../../atl/adding-functionality-to-the-composite-control.md)<br/>
-[ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)
+[Bileşik denetime Işlevsellik ekleme](../../atl/adding-functionality-to-the-composite-control.md)<br/>
+[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)

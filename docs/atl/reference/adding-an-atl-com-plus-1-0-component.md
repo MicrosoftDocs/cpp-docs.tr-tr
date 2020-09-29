@@ -1,15 +1,15 @@
 ---
-title: ATL COM+ 1,0 bileşeni ekleme
+title: ATL COM+ 1.0 Bileşeni Ekleme
 ms.date: 05/09/2019
 ms.assetid: c6c95e64-9ee4-4a6e-8804-5930202ce1b9
-ms.openlocfilehash: 843563e324e5e01af3c38896f268efc06c9a6222
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 0d25c4d1a68d553025f015644304f3a888be3882
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075319"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499335"
 ---
-# <a name="adding-an-atl-com-10-component"></a>ATL COM+ 1,0 bileşeni ekleme
+# <a name="adding-an-atl-com-10-component"></a>ATL COM+ 1.0 Bileşeni Ekleme
 
 ::: moniker range="vs-2019"
 
@@ -27,7 +27,7 @@ Bu sihirbaz, projenize işlemler de dahil olmak üzere COM+ 1,0 hizmetlerini des
 
 1. Kısayol menüsünde, **Ekle**' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. [Sınıf Ekle](../../ide/add-class-dialog-box.md) iletişim kutusunda, **Şablonlar** bölmesinde, **atl com+ 1,0 bileşeni**' ne ve ardından **Aç** ' a tıklayarak [atl com+ 1,0 Bileşen Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)'nı görüntüleyin.
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) iletişim kutusunda, **Şablonlar** bölmesinde, **atl com+ 1,0 bileşeni**' ne ve ardından **Aç** ' a tıklayarak [atl com+ 1,0 Bileşen Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)'nı görüntüleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

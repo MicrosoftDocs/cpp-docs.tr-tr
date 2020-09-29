@@ -8,12 +8,12 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: 12b2db55a393928683e65c8faca49595fbbebc51
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: 63c5567cf1b06d52aa4b458a9ca127039e5c5daf
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389967"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91499596"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
@@ -23,21 +23,21 @@ Bu makale, güvenlik araçları ve uygulamalar hakkında bilgiler içerir. Bunla
 
 Bu güvenlik özellikleri, Microsoft C++ derleyicisi ve bağlayıcı içinde yerleşik olarak bulunur:
 
-[`/guard`(Denetim akışı korumasını etkinleştir)](../build/reference/guard-enable-control-flow-guard.md)<br/>
+[`/guard` (Denetim akışı korumasını etkinleştir)](../build/reference/guard-enable-control-flow-guard.md)<br/>
 Derleyicinin derleme zamanında dolaylı çağrı hedefleri için denetim akışını çözümlemesine ve sonra çalışma zamanında hedefleri doğrulamak üzere kod eklemesini sağlar.
 
-[`/GS`(Arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)<br/>
+[`/GS` (Arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md)<br/>
 Derleyicinin kullanım riski altında olan işlevlere taşma algılama kodu eklemesini sağlar. Bir taşma algılandığında yürütme durdurulur. Varsayılan olarak, bu seçenek açık olur.
 
-[`/SAFESEH`(Görüntüde güvenli özel durum Işleyicileri vardır)](../build/reference/safeseh-image-has-safe-exception-handlers.md)<br/>
+[`/SAFESEH` (Görüntüde güvenli özel durum Işleyicileri vardır)](../build/reference/safeseh-image-has-safe-exception-handlers.md)<br/>
 Bağlayıcının, her bir özel durum işleyicisinin adresini içeren bir tabloya Çıkış görüntüsüne dahil olmasını sağlar. Çalışma zamanında, işletim sistemi yalnızca meşru özel durum işleyicilerinin yürütüldüğünden emin olmak için bu tabloyu kullanır. Bu, çalışma zamanında kötü amaçlı bir saldırıya getirilen özel durum işleyicilerinin yürütülmesini önlemeye yardımcı olur. Varsayılan olarak, bu değer kapalıdır.
 
 [`/NXCOMPAT`](../build/reference/nxcompat.md), [ `/NXCOMPAT` (Veri Yürütme Engellemesi ile uyumlu)](../build/reference/nxcompat-compatible-with-data-execution-prevention.md) Bu derleyici ve bağlayıcı seçenekleri Veri Yürütme Engellemesi (DEP) uyumluluğunu etkinleştirir. DEP, CPU 'YU kod olmayan sayfaların yürütülmesine karşı korur.
 
-[`/analyze`(Kod analizi)](../build/reference/analyze-code-analysis.md)<br/>
-Bu derleyici seçeneği, arabellek taşması, Başlatılmamış bellek, null işaretçi başvurusu ve bellek sızıntıları gibi olası güvenlik sorunlarını raporlayan Kod analizini etkinleştirir. Varsayılan olarak, bu değer kapalıdır. Daha fazla bilgi için bkz. [C/C++ Için kod analizi genel bakış](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+[`/analyze` (Kod analizi)](../build/reference/analyze-code-analysis.md)<br/>
+Bu derleyici seçeneği, arabellek taşması, Başlatılmamış bellek, null işaretçi başvurusu ve bellek sızıntıları gibi olası güvenlik sorunlarını raporlayan Kod analizini etkinleştirir. Varsayılan olarak, bu değer kapalıdır. Daha fazla bilgi için bkz. [C/C++ Için kod analizi genel bakış](../code-quality/code-analysis-for-c-cpp-overview.md).
 
-[`/DYNAMICBASE`(Adres boşluğu düzeni rastgele seçimini kullan)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)<br/>
+[`/DYNAMICBASE` (Adres boşluğu düzeni rastgele seçimini kullan)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)<br/>
 Bu bağlayıcı seçeneği, yürütmenin başlangıcında bellekte farklı konumlara yüklenebilen yürütülebilir bir görüntünün oluşturulmasına olanak tanıyor. Bu seçenek ayrıca, bellekte yığın konumunun çok daha az öngörülebilir hale gelmesini sağlar.
 
 ## <a name="security-enhanced-crt"></a>Güvenliği artırılmış CRT

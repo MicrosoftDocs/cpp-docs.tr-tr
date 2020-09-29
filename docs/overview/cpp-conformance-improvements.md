@@ -3,12 +3,12 @@ title: C++ uygunluk iyileştirmeleri
 ms.date: 08/04/2020
 description: Visual Studio 'da Microsoft C++, C++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
-ms.openlocfilehash: 3a0e21bf08fcf7861feedd3fd43666bd3768deee
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 3cf06b092b79068b22e62dfdbbcfbd2c2cf5ad91
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042127"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500250"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -1432,7 +1432,7 @@ Sıralanmamış kapsayıcı `reserve` işlevi artık, [lwg 2156](https://cpluspl
 
 - Kapsayıcı birleştirme için aşırı yüklemeler eklendi ve rvalue kapsayıcılarını kabul eden üye işlevleri ayıklayın. Daha fazla bilgi için bkz. [P0083 "splicing Maps and Sets"](https://wg21.link/p0083r3)
 
-### <a name="stdbasic_istreamread-processing-of-rn--n"></a>`std::basic_istream::read``\r\n`` => `\n ' işleniyor
+### <a name="stdbasic_istreamread-processing-of-rn-n"></a>`std::basic_istream::read``\r\n`` =>`\n ' işleniyor
 
 `std::basic_istream::read`, işlemin bir parçası olarak sağlanan arabelleğin bölümlerine geçici olarak yazılmadığından düzeltildi `\r\n`  =>  `\n` . Bu değişiklik, Visual Studio 2017 15,8 ' de en fazla 4K boyutunda daha büyük okumalar için kazanılan performans avantajlarından bazılarını sağlar. Bununla birlikte, karakter başına üç sanal çağrının önünden kaçınmanın verimlilik geliştirmeleri hala mevcuttur.
 
@@ -1621,7 +1621,7 @@ void f(E e) {
 
 ## <a name="conformance-improvements-in-visual-studio-2017-rtw-version-150"></a><a name="improvements_150"></a> Visual Studio 2017 RTW (sürüm 15,0) ile uyumluluk geliştirmeleri
 
-**`constexpr`** Toplamalarda Genelleştirilmiş ve statik olmayan veri üyesi başlatma (NSDMı) desteğiyle, Visual Studio 2017 ' de Microsoft c++ derleyicisi artık C++ 14 standardına eklenen özellikler için tamamlanmıştır. Ancak, derleyicinin yine de C++ 11 ve C++ 98 standartlarından birkaç özelliği yoktur. Derleyicinin geçerli durumunu gösteren bir tablo için bkz. [Microsoft C++ dil uygunluğu tablosu](../visual-cpp-language-conformance.md) .
+**`constexpr`** Toplamalarda Genelleştirilmiş ve statik olmayan veri üyesi başlatma (NSDMı) desteğiyle, Visual Studio 2017 ' de Microsoft c++ derleyicisi artık C++ 14 standardına eklenen özellikler için tamamlanmıştır. Ancak, derleyicinin yine de C++ 11 ve C++ 98 standartlarından birkaç özelliği yoktur. Derleyicinin geçerli durumunu gösteren bir tablo için bkz. [Microsoft C++ dil uygunluğu tablosu](./visual-cpp-language-conformance.md) .
 
 ### <a name="c11-expression-sfinae-support-in-more-libraries"></a>C++ 11: daha fazla kitaplıklarda Ifade SFıNAE desteği
 
@@ -3647,7 +3647,7 @@ Hatayı önlemek için, **`constexpr`** niteleyiciyi işlevin açık örneklemes
 
 ## <a name="c-conformance-improvements-in-visual-studio-2015"></a>Visual Studio 2015 ' de C++ uyumluluk geliştirmeleri
 
-Visual Studio 2015 güncelleştirme 3 aracılığıyla uyumluluk geliştirmelerinden oluşan kapsamlı bir liste sunuyoruz. Daha fazla bilgi için bkz. yenilikler [2003 ile 2015 arasında Visual C++](/cpp/porting/visual-cpp-what-s-new-2003-through-2015).
+Visual Studio 2015 güncelleştirme 3 aracılığıyla uyumluluk geliştirmelerinden oluşan kapsamlı bir liste sunuyoruz. Daha fazla bilgi için bkz. yenilikler [2003 ile 2015 arasında Visual C++](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ::: moniker-end
 

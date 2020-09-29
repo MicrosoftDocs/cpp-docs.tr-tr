@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-ms.openlocfilehash: 56319fb773b8398f85f5fd82c812f0efdb7dde15
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bfb226bc11f0fd7d3feddfb2c50ffe1aa6311d3d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225117"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500383"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid (C++/CLI ve C++/CX)
 
@@ -21,7 +21,7 @@ Bir nesnenin türünü gösteren bir değer alır.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 T::typeid
@@ -34,7 +34,7 @@ Bir tür adı.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Platform::Type^ type = T::typeid;
@@ -51,11 +51,11 @@ C++/CX ' te TypeId, çalışma zamanı türü bilgilerden oluşturulan [Platform
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 type::typeid
@@ -68,19 +68,19 @@ Nesnesini istediğiniz bir türün (soyut bildirimci) adı `System::Type` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-**`typeid`**, <xref:System.Type> derleme zamanında bir türü almak için kullanılır.
+**`typeid`** , <xref:System.Type> derleme zamanında bir türü almak için kullanılır.
 
-**`typeid`**, `System::Type` veya kullanarak çalışma zamanında bir türü almaya benzer <xref:System.Type.GetType%2A> <xref:System.Object.GetType%2A> . Ancak, **`typeid`** bir tür adını yalnızca parametre olarak kabul eder.  Adını almak için bir türün bir örneğini kullanmak istiyorsanız `System::Type` kullanın `GetType` .
+**`typeid`** , `System::Type` veya kullanarak çalışma zamanında bir türü almaya benzer <xref:System.Type.GetType%2A> <xref:System.Object.GetType%2A> . Ancak, **`typeid`** bir tür adını yalnızca parametre olarak kabul eder.  Adını almak için bir türün bir örneğini kullanmak istiyorsanız `System::Type` kullanın `GetType` .
 
 **`typeid`** derleme zamanında bir tür adı (türü) değerlendirebilmelidir, ancak GetType türü çalışma zamanında döndürülecek şekilde değerlendirir.
 
-**`typeid`** Yerel tür adı için yerel bir tür adı veya ortak dil çalışma zamanı diğer adı alabilir; daha fazla bilgi için bkz. [C++ yerel türlerine .NET Framework eşdeğerleri (c++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md) .
+**`typeid`** Yerel tür adı için yerel bir tür adı veya ortak dil çalışma zamanı diğer adı alabilir; daha fazla bilgi için bkz. [C++ yerel türlerine .NET Framework eşdeğerleri (c++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet) .
 
 **`typeid`** Yerel türlerle de çalışır, ancak yine de döndürür `System::Type` .  Type_info yapısını almak için [ `typeid` işleci](../cpp/typeid-operator.md)kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

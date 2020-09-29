@@ -1,23 +1,23 @@
 ---
-title: nonextensible özniteliği
+title: Genişletilebilir olmayan öznitelik
 ms.date: 11/04/2016
 helpviewer_keywords:
 - nonextensible attribute
 - dual interfaces, nonextensible attribute
 ms.assetid: 02a4a18b-ffd3-4d53-8fd1-feb1c05ad5ac
-ms.openlocfilehash: cc57acb8bd7bc3e32c764606da651f57316ceabf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fda2a0d43144b6e9832e061e7198b3f3e65f8b86
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250110"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500110"
 ---
-# <a name="nonextensible-attribute"></a>nonextensible özniteliği
+# <a name="nonextensible-attribute"></a>Genişletilebilir olmayan öznitelik
 
-Çift arabirim çalışma zamanında genişletilir değil, (diğer bir deyişle, yöntemler veya özellikleri aracılığıyla sağlamayacak `IDispatch::Invoke` vtable kullanılabilir değildir), uygulamanız gerekir **nonextensible** arabiriminize özniteliği tanımı. Bu öznitelik (örneğin, Visual Basic) derleme zamanında tam kod doğrulamayı etkinleştirmek için kullanılan istemci dillerini bilgileri sağlar. Bu öznitelik sağlanmazsa, hataların çalışma zamanına kadar gizli istemci kodu kalabilir.
+Bir çift arabirim çalışma zamanında uzatılmazsa (yani, vtable aracılığıyla kullanılamayan yöntemleri veya özellikleri sağlamadıysanız `IDispatch::Invoke` ), arabirim tanımınıza **genişletilemez** özniteliği uygulamanız gerekir. Bu öznitelik, derleme zamanında tam kod doğrulamasını etkinleştirmek için kullanılabilen istemci dilleri (örneğin, Visual Basic) için bilgiler sağlar. Bu öznitelik sağlanmazsa, hatalar çalışma zamanına kadar istemci kodunda gizli kalabiliyor.
 
-Daha fazla bilgi için **nonextensible** özniteliğini ve bir örnek görmek, [nonextensible](../windows/nonextensible.md).
+**Genişletilebilir olmayan** öznitelik ve bir örnek hakkında daha fazla bilgi için bkz. [Genişletilebilir olmayan](../windows/attributes/nonextensible.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
+[Çift arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
