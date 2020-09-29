@@ -9,28 +9,28 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 - Unicode, marshaling strings
 ms.assetid: 96c2141d-6c5d-43ef-a1aa-5785afb9a9aa
-ms.openlocfilehash: f666e52b604e4713f02cb14744ac12a0407366a3
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: da320dbd41e7158e3bc2482b96a73c1f4728a01b
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988168"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414320"
 ---
 # <a name="how-to-marshal-unicode-strings-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama
 
-Bu konuda, Visual C++ birlikte çalışabilirlik 'nin bir modeli gösterilmektedir. Daha fazla bilgi için bkz [. C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Bu konuda Visual C++ birlikte çalışabilirliğinin bir modeli gösterilmektedir. Daha fazla bilgi için bkz. [C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
 Bu konu, Unicode dizelerinin yönetilen bir işlevden yönetilmeyen bir işleve nasıl geçirilebileceğini ve bunun tersini gösterir. Diğer dizeler türleriyle birlikte çalışma için aşağıdaki konulara bakın:
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-unicode-string-from-managed-to-unmanaged-function"></a>Örnek: yönetilen 'ten yönetilmeyen işleve Unicode dize geçirin
 
-Yönetilen bir istemciden yönetilmeyen bir işleve Unicode dizesi geçirmek için, yönetilen dizenin depolandığı belleğe erişmek üzere PtrToStringChars işlevi (Vcclr. h içinde bildirilmiştir) kullanılabilir. Bu adres yerel bir işleve geçirilecek olduğundan, dize verilerinin yeniden konumlandırılmasını engellemek için belleğin [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) sabitlendiği önemlidir, yönetilmeyen işlev yürütülürken çöp toplama döngüsünün gerçekleşmesi gerekir.
+Yönetilen bir istemciden yönetilmeyen bir işleve Unicode dizesi geçirmek için, yönetilen dizenin depolandığı belleğe erişmek üzere PtrToStringChars işlevi (Vcclr. h içinde bildirilmiştir) kullanılabilir. Bu adres yerel bir işleve geçirilecek olduğundan, dize verilerinin yeniden konumlandırılmasını engellemek için belleğin [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) ile sabitlenebileceğinden, yönetilmeyen işlev yürütülürken çöp toplama döngüsünün gerçekleşmesi gerekir.
 
 ```cpp
 // MarshalUnicode1.cpp
@@ -61,9 +61,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-data-marshaling-required-to-access-unicode-string"></a>Örnek: Unicode dizesine erişmek için veri hazırlama gerekir
 
-Aşağıdaki örnek, yönetilmeyen bir işlev tarafından çağrılan yönetilen bir işlevde Unicode dizesine erişmek için gereken veri hazırlamayı gösterir. Yerel Unicode dizesini alırken yönetilen işlev, <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> yöntemini kullanarak yönetilen bir dizeye dönüştürür.
+Aşağıdaki örnek, yönetilmeyen bir işlev tarafından çağrılan yönetilen bir işlevde Unicode dizesine erişmek için gereken veri hazırlamayı gösterir. Yönetilen işlev, yerel Unicode dizesini alırken, yöntemi kullanılarak yönetilen bir dizeye dönüştürür <xref:System.Runtime.InteropServices.Marshal.PtrToStringUni%2A> .
 
 ```cpp
 // MarshalUnicode2.cpp
@@ -97,4 +97,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -10,26 +10,26 @@ helpviewer_keywords:
 - marshaling [C++], callbacks and delegates
 - callbacks [C++], marshaling
 ms.assetid: 2313e9eb-5df9-4367-be0f-14b4712d8d2d
-ms.openlocfilehash: 592eae0ff59baddb79b810d46669b78ecc801155
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 5d0427962ddb7d6409f07b99c0f618b340ee00df
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988191"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414301"
 ---
 # <a name="how-to-marshal-callbacks-and-delegates-by-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama
 
-Bu konu, Visual C++kullanılarak yönetilen ve yönetilmeyen kod arasında geri çağırmaların ve temsilcilerin (bir geri aramanın yönetilen sürümü) sıralanmasını gösterir.
+Bu konu, Visual C++ kullanarak yönetilen ve yönetilmeyen kod arasında geri çağırmaların ve temsilcilerin (bir geri aramanın yönetilen sürümü) sıralanmasını gösterir.
 
 Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak işlevler ayrı dosyalarda de tanımlanabilir. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
-## <a name="example"></a>Örnek
+## <a name="example-configure-unmanaged-api-to-trigger-managed-delegate"></a>Örnek: yönetilmeyen API 'yi yönetilen temsilciyi tetikleyecek şekilde yapılandırma
 
-Aşağıdaki örnek, yönetilmeyen bir API 'nin yönetilen bir temsilciyi tetiklemek için nasıl yapılandırılacağını gösterir. Yönetilen bir temsilci oluşturulur ve temsilci için temel alınan giriş noktasını almak için <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A>birlikte çalışma yöntemlerinden biri kullanılır. Bu adres daha sonra yönetilmeyen işleve geçirilir ve bu, yönetilen bir işlev olarak uygulanan olguyla ilgili hiçbir bilgi olmadan onu çağırır.
+Aşağıdaki örnek, yönetilmeyen bir API 'nin yönetilen bir temsilciyi tetiklemek için nasıl yapılandırılacağını gösterir. Yönetilen bir temsilci oluşturulur ve birlikte çalışma yöntemlerinden biri, <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate%2A> temsilci için temel alınan giriş noktasını almak için kullanılır. Bu adres daha sonra yönetilmeyen işleve geçirilir ve bu, yönetilen bir işlev olarak uygulanan olguyla ilgili hiçbir bilgi olmadan onu çağırır.
 
-[Pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) kullanarak temsilciyi, atık toplayıcı tarafından yeniden konumlandırılmasını veya elden çıkarmasını engellemek için, bu mümkün değildir, ancak gerekli değildir. Zamanından önce çöp toplamadan koruma gerekir, ancak sabitleme, koleksiyonu engelliyor, ancak aynı zamanda yeniden konumlandırma işlemini yaptığı için gerekenden daha fazla koruma sağlar.
+[Pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) kullanarak temsilciyi sabitlemek ve atık toplayıcı tarafından yeniden konumlandırılmasını veya elden çıkarılmasını engellemek için gerekli değildir. Zamanından önce çöp toplamadan koruma gerekir, ancak sabitleme, koleksiyonu engelliyor, ancak aynı zamanda yeniden konumlandırma işlemini yaptığı için gerekenden daha fazla koruma sağlar.
 
-Bir temsilci bir çöp toplama işlemi tarafından yeniden konumlandırıldığında, yönetilen geri çağırma işlemini etkilemez, bu nedenle <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> temsilciye bir başvuru eklemek ve temsilcinin yeniden konumlandırılmasını sağlamak için kullanılır. Pin_ptr yerine GCHandle kullanmak, yönetilen yığının parçalanma potansiyelini azaltır.
+Bir temsilci bir atık toplama tarafından yeniden konumlandırıldığında, yönetilen geri çağırma işlemini etkilemez, bu nedenle temsilciye <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> bir başvuru eklemek, temsilcinin yeniden konumlandırılmasını sağlamak, ancak elden çıkarılmasını önlemek için kullanılır. Pin_ptr yerine GCHandle kullanmak, yönetilen yığının parçalanma potansiyelini azaltır.
 
 ```cpp
 // MarshalDelegate1.cpp
@@ -77,9 +77,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-function-pointer-stored-by-unmanaged-api"></a>Örnek: yönetilmeyen API tarafından depolanan Işlev işaretçisi
 
-Aşağıdaki örnek, önceki örneğe benzerdir, ancak bu durumda, belirtilen işlev işaretçisi yönetilmeyen API tarafından depolanır, bu nedenle herhangi bir zamanda çağrılabilir ve bu da çöp toplamanın rastgele bir süre boyunca bastırılmasını gerektirir. Sonuç olarak, aşağıdaki örnek bir <xref:System.Runtime.InteropServices.GCHandle> genel örneğini kullanır, bu da temsilcinin işlev kapsamından bağımsız olarak yeniden konumlandırılmasını önler. İlk örnekte açıklandığı gibi, bu örneklerde pin_ptr kullanılması gereksizdir, ancak bu durumda, bir pin_ptr kapsamı tek bir işlevle sınırlı olduğu için yine de çalışmaz.
+Aşağıdaki örnek, önceki örneğe benzerdir, ancak bu durumda, belirtilen işlev işaretçisi yönetilmeyen API tarafından depolanır, bu nedenle herhangi bir zamanda çağrılabilir ve bu da çöp toplamanın rastgele bir süre boyunca bastırılmasını gerektirir. Sonuç olarak, aşağıdaki örnek, <xref:System.Runtime.InteropServices.GCHandle> işlevin işlev kapsamından bağımsız olarak yeniden konumlandırılmasını engellemek için genel bir örneğini kullanır. İlk örnekte açıklandığı gibi, bu örneklerde pin_ptr kullanılması gereksizdir, ancak bu durumda, bir pin_ptr kapsamı tek bir işlevle sınırlı olduğu için yine de çalışmaz.
 
 ```cpp
 // MarshalDelegate2.cpp
@@ -141,4 +141,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

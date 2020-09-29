@@ -1,32 +1,32 @@
 ---
-title: 'Nasıl yapılır: Çeşitli üretici-tüketici desenlerini uygulama'
+title: 'Nasıl yapılır: Çeşitli Üretici-Tüketici Desenlerini Uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - producer-consumer patterns, implementing [Concurrency Runtime]
 - implementing producer-consumer patterns [Concurrency Runtime]
 ms.assetid: 75f2c7cc-5399-49ea-98eb-847fe6747169
-ms.openlocfilehash: 113518e97b6715384b5e7b84b0d0eab63dfcfcc7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 70813adf6715a2bcaf4af7370ce43d99c44263bd
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411363"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413781"
 ---
-# <a name="how-to-implement-various-producer-consumer-patterns"></a>Nasıl yapılır: Çeşitli üretici-tüketici desenlerini uygulama
+# <a name="how-to-implement-various-producer-consumer-patterns"></a>Nasıl yapılır: Çeşitli Üretici-Tüketici Desenlerini Uygulama
 
-Bu konu, uygulamanıza üretici-tüketici düzeni açıklar. Bu modelde *üretici* iletiler gönderen bir ileti bloğu ve *tüketici* bu iletileri okuduğu.
+Bu konuda, uygulamanızda üretici tüketicisi deseninin nasıl uygulanacağı açıklanmaktadır. Bu düzende, *üretici* iletileri bir ileti bloğuna gönderir ve *Tüketici* bu bloktaki iletileri okur.
 
-Bu konuda, iki senaryo gösterilir. İlk senaryoda tüketici üretici gönderen her iletiyi alması gerekir. İkinci senaryoda Tüketici verileri düzenli aralıklarla yoklar ve bu nedenle her iletiyi alması gerekmez.
+Konuda iki senaryo gösterilmektedir. İlk senaryoda, tüketici, üretici tarafından gönderilen her iletiyi almalıdır. İkinci senaryoda, tüketici verileri düzenli aralıklarla yoklar ve bu nedenle her iletiyi almak zorunda değildir.
 
-Örneklerin her ikisi de bu konuda, tüketiciye üretici gelen ileti aktarmaya aracıları ve ileti blokları ileti geçirme işlevleri'ni kullanın. Üretici Aracısı'nı kullanan [concurrency::send](reference/concurrency-namespace-functions.md#send) ileti yazmak için işlevi bir [CONCURRENCY::ıtarget](../../parallel/concrt/reference/itarget-class.md) nesne. Tüketici Aracısı'nı kullanan [concurrency::receive](reference/concurrency-namespace-functions.md#receive) gelen iletileri okumak için işlev bir [CONCURRENCY::ısource](../../parallel/concrt/reference/isource-class.md) nesne. Her iki aracı işleme sonuna koordine etmek için bir sentinel değeri tutun.
+Bu konudaki örneklerin her ikisi de aracıları, ileti blokları ve ileti geçirme işlevlerini kullanarak üreticiden tüketiciye ileti iletmektir. Üretici Aracısı, concurrency:: [ITarget](../../parallel/concrt/reference/itarget-class.md) nesnesine ileti yazmak için [concurrency:: Send](reference/concurrency-namespace-functions.md#send) işlevini kullanır. Tüketici Aracısı eşzamanlılık [:: ISource](../../parallel/concrt/reference/isource-class.md) nesnesinden iletileri okumak için [concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) işlevini kullanır. Her iki aracı da işlem sonunu koordine etmek için Sentinel değerini tutar.
 
-Zaman uyumsuz aracılar hakkında daha fazla bilgi için bkz: [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md). İleti blokları ve ileti geçirme işlevleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md) ve [ileti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md).
+Zaman uyumsuz aracılar hakkında daha fazla bilgi için bkz. [zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md). İleti blokları ve ileti geçirme işlevleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md) ve [ileti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md).
 
-## <a name="example"></a>Örnek
+## <a name="example-send-series-of-numbers-to-consumer-agent"></a>Örnek: tüketici aracısına numara serisi gönder
 
-Bu örnekte, üretici aracı, bir dizi numarası tüketici aracıya gönderir. Tüketici bu numaraların her alır ve bunların ortalamasını hesaplar. Uygulama, ortalama konsola yazar.
+Bu örnekte, üretici Aracısı tüketici aracısına bir dizi numara gönderir. Tüketici bu sayıların her birini alır ve ortalamasını hesaplar. Uygulama, ortalamayı konsola yazar.
 
-Bu örnekte bir [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) kuyruk iletileri için üretici etkinleştirmek için nesne. `unbounded_buffer` Sınıfının Implements `ITarget` ve `ISource` böylece üretici ve tüketici gönderebilir ve paylaşılan bir arabellek gelen ve giden iletileri alabilirsiniz. `send` Ve `receive` işlevleri üretici verilerden tüketici Yayma görevi koordine edin.
+Bu örnek, üreticinin iletileri sıraya alma olanağı sağlamak için bir [eşzamanlılık:: unbounded_buffer](reference/unbounded-buffer-class.md) nesnesi kullanır. Sınıfı, ve ' nin `unbounded_buffer` `ITarget` `ISource` , üretici ve tüketicinin, paylaşılan bir arabelleğe gelen ve olmayan iletileri gönderebilmesi ve alabilmesi için uygular. `send`Ve `receive` işlevleri, verileri üretici 'dan tüketiciye yayın görevini koordine edin.
 
 [!code-cpp[concrt-producer-consumer-average#1](../../parallel/concrt/codesnippet/cpp/how-to-implement-various-producer-consumer-patterns_1.cpp)]
 
@@ -36,15 +36,15 @@ Bu örnek aşağıdaki çıktıyı üretir.
 The average is 50.
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-send-series-of-stock-quotes-to-consumer-agent"></a>Örnek: tüketici aracısına Stok fiyatları serisi gönder
 
-Bu örnekte, üretici aracı hisse senedi fiyatlarını bir dizi tüketici aracıya gönderir. Tüketici aracı, düzenli aralıklarla geçerli teklif okur ile konsola yazdırır.
+Bu örnekte, üretici Aracısı tüketici aracısına bir dizi stok teklifi gönderir. Tüketici Aracısı, geçerli teklifi düzenli aralıklarla okur ve konsola yazdırır.
 
-Bu örnek Öncekine benzer kullandığı bir [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) üretici ile tüketici bir ileti paylaşmak etkinleştirmek için nesne. Önceki örnekte olduğu gibi `overwrite_buffer` sınıfının Implements `ITarget` ve `ISource` üretici ve tüketici bir paylaşılan ileti arabelleği üzerinde işlem yapabilmesi.
+Bu örnek, bir öncekine benzer, ancak üreticinin tüketiciyle bir ileti paylaşmasını sağlamak için bir [eşzamanlılık:: overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) nesnesi kullanır. Önceki örnekte olduğu gibi, `overwrite_buffer` sınıfı, `ITarget` ve `ISource` üreticisi ve tüketicinin paylaşılan bir ileti arabelleği üzerinde işlem yapabilmesi için ve uygular.
 
 [!code-cpp[concrt-producer-consumer-quotes#1](../../parallel/concrt/codesnippet/cpp/how-to-implement-various-producer-consumer-patterns_2.cpp)]
 
-Bu örnek, aşağıdaki örnek çıktısı üretir.
+Bu örnek, aşağıdaki örnek çıktıyı üretir.
 
 ```Output
 Current quote is 24.44.
@@ -56,17 +56,17 @@ Current quote is 22.30.
 Current quote is 25.89.
 ```
 
-Farklı olarak ile bir `unbounded_buffer` nesnesi `receive` işlevi iletiden kaldırmaz `overwrite_buffer` nesne. Tüketici ileti arabellekteki ileti üretici üzerine yazılmadan önce birden fazla kez okuyorsa, alıcının her zaman aynı iletiyi alır.
+Bir nesneden farklı olarak `unbounded_buffer` , `receive` işlevi nesnesinden iletiyi kaldırmaz `overwrite_buffer` . Tüketici, bu iletinin üzerine yazmadan önce ileti arabelleğinden birden çok kez okursa, alıcı aynı iletiyi her seferinde edinir.
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `producer-consumer.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlandırılmış bir dosyaya yapıştırın `producer-consumer.cpp` ve sonra bir Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-**cl.exe/ehsc üretici-consumer.cpp**
+**cl.exe/EHsc Producer-Consumer. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)<br/>
-[Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)
+[Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)<br/>
+[Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
+[İleti geçirme Işlevleri](../../parallel/concrt/message-passing-functions.md)

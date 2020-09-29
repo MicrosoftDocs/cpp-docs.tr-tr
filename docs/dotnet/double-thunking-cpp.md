@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /clr compiler option [C++], double thunking
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-ms.openlocfilehash: 6b2d3b4415b81dc5a9b7d0e36c154d9ee74b98ee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f0fc5567baaa0c4f3fea410770963adf51e8366
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221490"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414015"
 ---
 # <a name="double-thunking-c"></a>Çift Dönüştürme (C++)
 
@@ -29,9 +29,9 @@ Benzer şekilde, yönetilen bir işlevi ([dllexport, dllimport](../cpp/dllexport
 
 Derleyici, gereksiz çift dönüştürmeyi azaltmak için güncelleştirilmiştir. Örneğin, İmzada yönetilen bir tür (dönüş türü dahil) olan herhangi bir işlev, örtük olarak olarak işaretlenir `__clrcall` .
 
-## <a name="example"></a>Örnek
+## <a name="example-double-thunking"></a>Örnek: çift dönüştürme
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Aşağıdaki örnek çift thunking gösterir. Yerel olarak derlendiğinde ( **/clr**olmadan), içindeki sanal işlevine yapılan çağrı, `main` `T` kopya oluşturucusuna bir çağrı ve yıkıcıya bir çağrı oluşturur. Sanal işlev **/clr** ve ile bildirildiğinde benzer davranış elde edilir `__clrcall` . Bununla birlikte, yalnızca **/clr**ile derlendiğinde, işlev çağrısı kopya oluşturucusuna bir çağrı oluşturur, ancak yerel-yönetilen dönüştürücü nedeniyle kopya oluşturucusuna başka bir çağrı yapılır.
 
@@ -87,9 +87,9 @@ after calling struct S
 __thiscall T::~T(void)
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-effect-of-double-thunking"></a>Örnek: çift dönüştürmenin etkisi
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Önceki örnek, Çift dönüştürmenin varlığını göstermiştir. Bu örnek, etkisini gösterir. **`for`** Döngü sanal işlevi çağırır ve program, yürütme süresini bildirir. Program **/clr**ile derlendiğinde en yavaş zaman raporlanır. En hızlı zaman, **/clr** olmadan derlerken veya sanal işlev ile bildirilmişse raporlanır `__clrcall` .
 

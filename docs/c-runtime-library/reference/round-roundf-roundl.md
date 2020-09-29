@@ -1,7 +1,7 @@
 ---
 title: round, roundf, roundl
-description: Round, roundf ve roundl için API başvurusu; kayan nokta değerini en yakın tamsayıya yuvarlar.
-ms.date: 9/1/2020
+description: Round, roundf ve roundl için API başvurusu; kayan nokta değerini en yakın tamsayı değerine yuvarlar.
+ms.date: 09/25/2020
 api_name:
 - round
 - roundl
@@ -35,18 +35,18 @@ helpviewer_keywords:
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-ms.openlocfilehash: 0a7e47dd3a528e45abc8247a64bf5c4d81164e95
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 381ae4464b23cb929e0511e6d2c228602f06a249
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556651"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413859"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
-Kayan noktalı bir değeri en yakın tamsayıya yuvarlar.
+Kayan noktalı bir değeri en yakın tamsayı değerine yuvarlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double round(
@@ -100,46 +100,60 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 ## <a name="example"></a>Örnek
 
 ```C
-// crt_round.c
-// Build with: cl /W3 /Tc crt_round.c
-// This example displays the rounded results of
-// the floating-point values 2.499999, -2.499999,
-// 2.8, -2.8, 2.5 and -2.5.
+// Build with: cl /W3 /Tc
+// This example displays the rounded
+// results of floating-point values
 
 #include <math.h>
 #include <stdio.h>
 
-int main( void )
+int main()
 {
-   double x = 2.499999;
-   float y = 2.8f;
-   long double z = 2.5;
+    printf("===== Round a float\n\n");
+    float floatValue = 2.4999999f; // float stores a value close to, but not exactly equal to, the initializer below. floatValue will contain 2.5 because it is the closest single precision value
+    printf("roundf(%.1000g) is %.1000g\n", floatValue, roundf(floatValue));
+    printf("roundf(%.1000g) is %.1000g\n", -floatValue, roundf(-floatValue));
 
-   printf("round(%f) is %.0f\n", x, round(x));
-   printf("round(%f) is %.0f\n", -x, round(-x));
-   printf("roundf(%f) is %.0f\n", y, roundf(y));
-   printf("roundf(%f) is %.0f\n", -y, roundf(-y));
-   printf("roundl(%Lf) is %.0Lf\n", z, roundl(z));
-   printf("roundl(%Lf) is %.0Lf\n", -z, roundl(-z));
+    // double stores a value close to, but not exactly equal to, the initializer below. The closest double value is just slightly larger.
+    double doubleValue = 2.4999999;
+    printf("\n===== Round a double\n\n");
+    printf("round(%.1000g) is %.1000g\n", doubleValue, round(doubleValue));
+    printf("round(%.1000g) is %.1000g\n", -doubleValue, round(-doubleValue));
+
+    // long double stores a value close to, but not exactly equal to, the initializer below. The closest long double value is just slightly larger.
+    long double longDoubleValue = 2.4999999L;
+    printf("\n===== Round a long double\n\n");
+    printf("roundl(%.1000g) is %.1000g\n", longDoubleValue, roundl(longDoubleValue));
+    printf("roundl(%.1000g) is %.1000g\n", -longDoubleValue, roundl(-longDoubleValue));
+
+    return 0;
 }
 ```
 
 ```Output
-round(2.499999) is 2
-round(-2.499999) is -2
-roundf(2.800000) is 3
-roundf(-2.800000) is -3
-roundl(2.500000) is 3
-roundl(-2.500000) is -3
+===== Round a float
+
+roundf(2.5) is 3
+roundf(-2.5) is -3
+
+===== Round a double
+
+round(2.499999900000000163657887242152355611324310302734375) is 2
+round(-2.499999900000000163657887242152355611324310302734375) is -2
+
+===== Round a long double
+
+roundl(2.499999900000000163657887242152355611324310302734375) is 2
+roundl(-2.499999900000000163657887242152355611324310302734375) is -2
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
-[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
-[fmod, fmodf](fmod-fmodf.md)<br/>
-[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>
-[lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)<br/>
-[nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
-[rint, rintf, rintl](rint-rintf-rintl.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
+[Ceil, ceilf, ceill](ceil-ceilf-ceill.md)\
+[kat, floorf, floorl](floor-floorf-floorl.md)\
+[FMOD, fmodf](fmod-fmodf.md)\
+[lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)\
+[lround, lroundf, lroundl, llround, llroundf, llroundl](lround-lroundf-lroundl-llround-llroundf-llroundl.md)\
+[bir tamsayı, bir tam açıklama, bir intf, yaklaştığında](nearbyint-nearbyintf-nearbyintl1.md)\
+[rint, rintf, rintl](rint-rintf-rintl.md)\

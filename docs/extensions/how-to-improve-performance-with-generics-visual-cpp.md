@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: genel türler ile performansı IyileştirmeC++(/CLI)'
+title: 'Nasıl yapılır: Genel Türlerle Performansı Artırma (C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -8,22 +8,22 @@ helpviewer_keywords:
 - C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
-ms.openlocfilehash: a460456a383fcb3eb81e17c1ad5817f790f3c399
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 039c5b069351249e51d961d9d1757ed6b09ef99c
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181947"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414171"
 ---
-# <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: genel türler ile performansı IyileştirmeC++(/CLI)
+# <a name="how-to-improve-performance-with-generics-ccli"></a>Nasıl yapılır: Genel Türlerle Performansı Artırma (C++/CLI)
 
 Genel türler ile, bir tür parametresine bağlı olarak yeniden kullanılabilir kod oluşturabilirsiniz. Tür parametresinin gerçek türü, istemci kodu tarafından çağrılana kadar ertelenir. Genel türler hakkında daha fazla bilgi için bkz. [Genel türler](generics-cpp-component-extensions.md).
 
 Bu makalede, genel türlerin koleksiyonlar kullanan bir uygulamanın performansını artırmaya nasıl yardımcı olduğu ele alınmaktadır.
 
-## <a name="example"></a>Örnek
+## <a name="example-two-main-drawbacks-of-net-framework-collections"></a>Örnek: .NET Framework koleksiyonlarının Iki ana sakıncaları
 
-.NET Framework, <xref:System.Collections?displayProperty=fullName> ad alanındaki birçok koleksiyon sınıfıyla birlikte gelir. Bu koleksiyonların çoğu <xref:System.Object?displayProperty=fullName>türündeki nesneler üzerinde çalışır. Bu, koleksiyonların her türlü türü .NET Framework, hatta değer türlerindeki tüm türler <xref:System.Object?displayProperty=fullName>türeten bu yana bir tür depolamasına izin verir. Ancak, bu yaklaşımın iki Sakıncaı vardır.
+.NET Framework, ad alanındaki birçok koleksiyon sınıfıyla birlikte gelir <xref:System.Collections?displayProperty=fullName> . Bu koleksiyonların çoğu türündeki nesneler üzerinde çalışır <xref:System.Object?displayProperty=fullName> . Bu, koleksiyon.NET Framework lardaki tüm türler, hatta değer türleri, öğesinden türetildiklerinden, koleksiyonların herhangi bir tür depolamasına izin verir <xref:System.Object?displayProperty=fullName> . Ancak, bu yaklaşımın iki Sakıncaı vardır.
 
 İlk olarak, koleksiyon tamsayılar gibi değer türlerini depoladığında, değer koleksiyona eklenmeden önce paketlenmeli ve değer koleksiyondan alındıktan sonra kutulanmamış olmalıdır. Bunlar pahalı işlemlerdir.
 
@@ -78,11 +78,11 @@ Popped a String: Seven
 Popped an int: 7
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-benefit-of-using-generic-collection"></a>Örnek: genel koleksiyon kullanmanın avantajı
 
-Yeni <xref:System.Collections.Generic?displayProperty=fullName> ad alanı, <xref:System.Collections?displayProperty=fullName> ad alanında bulunan aynı koleksiyonların birçoğunu içerir, ancak genel tür parametrelerini kabul edecek şekilde değiştirilmiştir. Bu, genel olmayan koleksiyonların iki dezavantajunu ortadan kaldırır: değer türlerinin kutulama ve kutudan çıkarma ve koleksiyonlarda depolanacak türleri belirtmeme. İki koleksiyon üzerindeki işlemler aynıdır; Bunlar yalnızca nasıl örneklendikleri gibi farklılık gösterir.
+Yeni ad alanı, <xref:System.Collections.Generic?displayProperty=fullName> ad alanında bulunan birçok koleksiyonu içerir <xref:System.Collections?displayProperty=fullName> , ancak genel tür parametrelerini kabul edecek şekilde değiştirilmiştir. Bu, genel olmayan koleksiyonların iki dezavantajunu ortadan kaldırır: değer türlerinin kutulama ve kutudan çıkarma ve koleksiyonlarda depolanacak türleri belirtmeme. İki koleksiyon üzerindeki işlemler aynıdır; Bunlar yalnızca nasıl örneklendikleri gibi farklılık gösterir.
 
-Yukarıda yazılmış örneği, genel bir <xref:System.Collections.Generic.Stack%601> koleksiyonu kullanan bu örnekle karşılaştırın. Sık erişilen büyük koleksiyonlarda, bu örneğin performansı önceki örnekten önemli ölçüde daha büyük olacaktır.
+Yukarıda yazılmış örneği, genel bir koleksiyon kullanan bu örnekle karşılaştırın <xref:System.Collections.Generic.Stack%601> . Sık erişilen büyük koleksiyonlarda, bu örneğin performansı önceki örnekten önemli ölçüde daha büyük olacaktır.
 
 ```cpp
 // perf_post_generics.cpp

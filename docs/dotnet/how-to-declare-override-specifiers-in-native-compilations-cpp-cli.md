@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-ms.openlocfilehash: c5ed413f403fb12f116633c0e39f9e7b32b2e9f8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92bdc41cf9ebe2389f2d22dab211029899283266
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221334"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414600"
 ---
 # <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>Nasıl yapılır: Yerel Derlemelerde Geçersiz Kılma Tanımlayıcılarını Bildirme (C++/CLI)
 
@@ -18,9 +18,9 @@ ms.locfileid: "87221334"
 > [!NOTE]
 > ISO C++ 11 standart dili, [geçersiz kılma](../cpp/override-specifier.md) tanımlayıcısına ve [son](../cpp/final-specifier.md) tanımlayıcıya sahiptir ve her ikisi de `final` **`sealed`** yalnızca yerel olarak derlenmesi amaçlanan kod yerine Visual Studio kullanımı içinde desteklenir.
 
-## <a name="example"></a>Örnek
+## <a name="example-sealed-is-valid"></a>Örnek: Sealed geçerli
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Aşağıdaki örnek, yerel derlemelerde **`sealed`** geçerli olduğunu gösterir.
 
@@ -47,9 +47,9 @@ public:
 };
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-override-is-valid"></a>Örnek: override geçerli
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Sonraki örnek, yerel derlemelerde `override` geçerli olduğunu gösterir.
 
@@ -69,9 +69,9 @@ public:
 };
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-abstract-is-valid"></a>Örnek: Özet geçerli
 
-### <a name="description"></a>Açıklama
+### <a name="description"></a>Description
 
 Bu örnek **`abstract`** , yerel derlemelerde geçerli olduğunu gösterir.
 

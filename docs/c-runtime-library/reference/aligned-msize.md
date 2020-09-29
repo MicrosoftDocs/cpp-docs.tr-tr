@@ -28,12 +28,12 @@ helpviewer_keywords:
 - aligned_msize function
 - _aligned_msize function
 ms.assetid: 10995edc-2110-4212-9ca9-5e0220a464f4
-ms.openlocfilehash: e3ff243ba9a135cf660d09fc5b3690f531702aab
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1037c63af17a844959bc72e42da2c33267b43004
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912909"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414041"
 ---
 # <a name="_aligned_msize"></a>_aligned_msize
 
@@ -42,7 +42,7 @@ Yığında ayrılan bellek bloğunun boyutunu döndürür.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-size_t _msize(
+size_t _aligned_msize(
    void *memblock,
    size_t alignment,
    size_t offset
@@ -70,7 +70,7 @@ Boyutu (bayt olarak) işaretsiz bir tamsayı olarak döndürür.
 
 Uygulama, C çalışma zamanı kitaplıklarının bir hata ayıklama sürümü ile bağlantılı olduğunda **_aligned_msize** [_aligned_msize_dbg](aligned-msize-dbg.md)çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
 
-Bu işlev, parametresini doğrular. *Memblock* null işaretçisiyse veya *Hizalama* 2 ' nin üssü değilse, **_msize** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
+Bu işlev, parametresini doğrular. *Memblock* null işaretçisiyse veya *Hizalama* 2 ' nin üssü değilse, **_aligned_msize** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre işleyicisini çağırır. Hata işlenirse, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -78,7 +78,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_msize**|\<malloc. h>|
+|**_aligned_msize**|\<malloc.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -88,4 +88,4 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - using the transformer class [Concurrency Runtime]
 - using the call class [Concurrency Runtime]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-ms.openlocfilehash: cecb8b2e6ab3f3ac8b010007018b76e6f58e0ed8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b629d0e0e11388e212c56b8e1f6bea290368c884
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205892"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414353"
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama
 
@@ -21,7 +21,7 @@ Bu konuda [concurrency:: Call](../../parallel/concrt/reference/call-class.md) ve
 
 Çizimde, bu konudaki her örnek `call` sınıfını kullanır. Sınıfını kullanan bir örnek için `transformer` bkz. [nasıl yapılır: bir veri ardışık düzeninde transformatör kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md).
 
-## <a name="example"></a>Örnek
+## <a name="example-call-class"></a>Örnek: Call sınıfı
 
 Aşağıdaki örnek, sınıfını kullanmanın yaygın bir yolunu gösterir `call` . Bu örnek, bir Lambda işlevini oluşturucuya geçirir `call` .
 
@@ -33,13 +33,13 @@ Bu örnek aşağıdaki çıktıyı üretir.
 13 squared is 169.
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-call-class-with-function-object"></a>Örnek: Function nesnesi ile Call sınıfı
 
 Aşağıdaki örnek, bir `call` işlev nesnesiyle (functor) birlikte sınıfını kullanması dışında, önceki bir örneğe benzer.
 
 [!code-cpp[concrt-call-functor#1](../../parallel/concrt/codesnippet/cpp/how-to-provide-work-functions-to-the-call-and-transformer-classes_2.cpp)]
 
-## <a name="example"></a>Örnek
+## <a name="example-functions-to-bind-call-object"></a>Örnek: çağrı nesnesini bağlama Işlevleri
 
 Aşağıdaki örnek öncekine benzer, ancak bir nesneyi bir sınıf yöntemine bağlamak için [std:: bind1st](../../standard-library/functional-functions.md#bind1st) ve [std:: mem_fun](../../standard-library/functional-functions.md#mem_fun) işlevlerini kullanır `call` .
 

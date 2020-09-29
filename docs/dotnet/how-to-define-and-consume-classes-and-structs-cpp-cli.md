@@ -1,44 +1,23 @@
 ---
-title: 'Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)'
-ms.date: 09/12/2018
+title: 'Nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C++/CLı)'
+description: C++/CLı kodunda Kullanıcı tanımlı sınıf ve yapı türleri oluşturma ve kullanma.
+ms.date: 09/25/2020
 helpviewer_keywords:
 - structs [C++]
 - classes [C++], instantiating
 ms.assetid: 1c03cb0d-1459-4b5e-af65-97d6b3094fd7
-ms.openlocfilehash: 2fe9ed46a6d7f1135179b8002993d729ea3c42eb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 17d0885d42febc1d2789c8711b54a76066ee8176
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216433"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414587"
 ---
-# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)
+# <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C++/CLı)
 
 Bu makalede, C++/CLI'DE Kullanıcı tanımlı başvuru türlerinin ve değer türlerinin nasıl tanımlanacağı ve kullanılacağı gösterilir.
 
-## <a name="contents"></a><a name="BKMK_Contents"></a>Dekiler
-
-[Nesne örneklemesi](#BKMK_Object_instantiation)
-
-[Örtülü olarak soyut sınıflar](#BKMK_Implicitly_abstract_classes)
-
-[Tür görünürlüğü](#BKMK_Type_visibility)
-
-[Üye görünürlüğü](#BKMK_Member_visibility)
-
-[Ortak ve özel yerel sınıflar](#BKMK_Public_and_private_native_classes)
-
-[Statik oluşturucular](#BKMK_Static_constructors)
-
-[Bu işaretçinin semantiği](#BKMK_Semantics_of_the_this_pointer)
-
-[İmza gizleme işlevleri](#BKMK_Hide_by_signature_functions)
-
-[Kopya oluşturucular](#BKMK_Copy_constructors)
-
-[Yok ediciler ve sonlandırıcılar](#BKMK_Destructors_and_finalizers)
-
-## <a name="object-instantiation"></a><a name="BKMK_Object_instantiation"></a>Nesne örneklemesi
+## <a name="object-instantiation"></a><a name="BKMK_Object_instantiation"></a> Nesne örneklemesi
 
 Başvuru (Ref) türleri, yığın üzerinde veya yerel yığında değil, yalnızca yönetilen yığında oluşturulabilir. Değer türleri, yığında veya yönetilen yığında oluşturulabilir.
 
@@ -93,11 +72,14 @@ int main() {
 }
 ```
 
-## <a name="implicitly-abstract-classes"></a><a name="BKMK_Implicitly_abstract_classes"></a>Örtülü olarak soyut sınıflar
+## <a name="implicitly-abstract-classes"></a><a name="BKMK_Implicitly_abstract_classes"></a> Örtülü olarak soyut sınıflar
 
-*Örtük olarak soyut bir sınıf* örneği oluşturulamıyor. Sınıfın temel türü bir arabirim ise ve sınıf tüm arabirimin üye işlevlerini gerçekleştirmezse, bir sınıf örtülü olarak soyuttur.
+*Örtük olarak soyut bir sınıf* örneği oluşturulamıyor. Bir sınıf şu durumlarda örtülü soyuttur:
 
-Bir arabirimden türetilmiş bir sınıftan nesneler oluşturmanızın nedeni, sınıfın örtük olarak soyut olması olabilir. Soyut sınıflar hakkında daha fazla bilgi için bkz. [abstract](../extensions/abstract-cpp-component-extensions.md).
+- sınıfın temel türü bir arabirimdir ve
+- sınıfı, tüm arabirimin üye işlevlerini uygulamaz.
+
+Bir arabirimden türetilmiş bir sınıftan nesneler oluşturmeyebilirsiniz. Bunun nedeni, sınıfın örtük olarak soyut olması olabilir. Soyut sınıflar hakkında daha fazla bilgi için bkz. [abstract](../extensions/abstract-cpp-component-extensions.md).
 
 Aşağıdaki kod örneği, `MyClass` işlev uygulanamadığı için sınıfın örneklenemez olduğunu gösterir `MyClass::func2` . Derlemek için örneği etkinleştirmek üzere, açıklamasını kaldırın `MyClass::func2` .
 
@@ -121,17 +103,17 @@ int main() {
 }
 ```
 
-## <a name="type-visibility"></a><a name="BKMK_Type_visibility"></a>Tür görünürlüğü
+## <a name="type-visibility"></a><a name="BKMK_Type_visibility"></a> Tür görünürlüğü
 
-Ortak dil çalışma zamanı (CLR) türlerinin görünürlüğünü denetlemek için, bir derlemeye başvuruluyorsa, derlemedeki türlerin, derleme dışında görünür veya görünür hale görünebilmesini sağlayabilirsiniz.
+Ortak dil çalışma zamanı (CLR) türlerinin görünürlüğünü kontrol edebilirsiniz. Derlemenizin başvurduğu zaman, derlemedeki türlerin görünür olup olmadığını ve derleme dışında görünüp görünmediğini kontrol edersiniz.
 
-`public`bir türün `#using` türü içeren derleme için bir yönerge içeren herhangi bir kaynak dosyaya görünür olduğunu gösterir.  `private`bir türün `#using` türü içeren derleme için bir yönerge içeren kaynak dosyalara görünür olmadığını gösterir. Ancak, özel türler aynı derleme içinde görünür. Varsayılan olarak, bir sınıfın görünürlüğü `private` .
+`public` bir türün `#using` türü içeren derleme için bir yönerge içeren herhangi bir kaynak dosyaya görünür olduğunu gösterir.  `private` bir türün `#using` türü içeren derleme için bir yönerge içeren kaynak dosyalara görünür olmadığını gösterir. Ancak, özel türler aynı derleme içinde görünür. Varsayılan olarak, bir sınıfın görünürlüğü `private` .
 
-Varsayılan olarak, Visual Studio 2005 ' den önceki yerel türlerin derleme dışında genel erişilebilirliği vardır. Özel yerel türlerin yanlış kullanıldığını görbaşlamanıza yardımcı olması için [derleyici uyarısını etkinleştirin (düzey 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) . Değiştiremeyeceğiniz bir kaynak kod dosyasında yerel bir türe genel erişilebilirlik sağlamak için [make_public](../preprocessor/make-public.md) pragma kullanın.
+Varsayılan olarak, Visual Studio 2005 ' den önce yerel türlerin derleme dışında genel erişilebilirliği vardır. Özel yerel türlerin yanlış kullanıldığını görbaşlamanıza yardımcı olması için [derleyici uyarısını etkinleştirin (düzey 1) C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) . Değiştiremeyeceğiniz bir kaynak kod dosyasında yerel bir türe genel erişilebilirlik sağlamak için [make_public](../preprocessor/make-public.md) pragma kullanın.
 
 Daha fazla bilgi için bkz. [#using yönergesi](../preprocessor/hash-using-directive-cpp.md).
 
-Aşağıdaki örnek, türlerin nasıl bildirilemeyeceğini ve bunların erişilebilirliğini nasıl belirtmekte ve sonra bu türlere derleme içinde nasıl erişmekte olduğunu gösterir. Kuşkusuz, özel türlerine sahip bir derlemeye kullanılarak başvuruluyorsa `#using` , yalnızca derlemedeki ortak türler görünür olur.
+Aşağıdaki örnek, türlerin nasıl bildirilemeyeceğini ve bunların erişilebilirliğini nasıl belirtmekte ve sonra bu türlere derleme içinde nasıl erişmekte olduğunu gösterir. Özel türlerine sahip bir derlemeye kullanılarak başvuruluyorsa `#using` , yalnızca derlemedeki ortak türler görünür olur.
 
 ```cpp
 // type_visibility.cpp
@@ -218,22 +200,22 @@ int main() {
 in Public_Class
 ```
 
-## <a name="member-visibility"></a><a name="BKMK_Member_visibility"></a>Üye görünürlüğü
+## <a name="member-visibility"></a><a name="BKMK_Member_visibility"></a> Üye görünürlüğü
 
-Erişim Belirticilerinin çiftlerini kullanarak, bir ortak sınıfın bir üyesine, derlemenin dışından farklı bir şekilde erişim sağlayabilirsiniz, **`public`** **`protected`** ve**`private`**
+Erişim Belirticilerinin çiftlerini kullanarak, bir ortak sınıfın bir üyesine, derlemenin dışından farklı bir şekilde erişim sağlayabilirsiniz, **`public`** **`protected`** ve **`private`**
 
 Bu tablo çeşitli erişim Belirticilerinin etkisini özetler:
 
 |Belirleyici|Etki|
 |---------------|------------|
-|public|Üyeye derleme içinde ve dışında erişilebilir.  Daha fazla bilgi için bkz. [genel](../cpp/public-cpp.md) .|
-|private|Üyeye, derleme içinde veya dışında hiçbir yerde erişilemiyor.  Daha fazla bilgi için bkz. [özel](../cpp/private-cpp.md) .|
-|protected|Üyeye, derleme içinde ve dışında erişilebilir, ancak yalnızca türetilmiş türlere erişilebilir.  Daha fazla bilgi için bkz. [korumalı](../cpp/protected-cpp.md) .|
-|internal|Üye derleme içinde ortak ve derleme dışında özel.  `internal`bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](../extensions/context-sensitive-keywords-cpp-component-extensions.md).|
-|ortak korumalı veya korumalı genel|Üye, derleme içinde ortak ve derleme dışında korunuyor.|
-|özel korumalı veya korumalı özel|Üye derleme içinde korunuyor, ancak derleme dışında özel.|
+|`public`|Üyeye derleme içinde ve dışında erişilebilir. Daha fazla bilgi için bkz. [`public`](../cpp/public-cpp.md).|
+|`private`|Üyeye, derleme içinde ve dışında erişilemez.  Daha fazla bilgi için bkz. [`private`](../cpp/private-cpp.md).|
+|`protected`|Üyeye, derleme içinde ve dışında erişilebilir, ancak yalnızca türetilmiş türlere erişilebilir. Daha fazla bilgi için bkz. [`protected`](../cpp/protected-cpp.md).|
+|`internal`|Üye derleme içinde ortak ve derleme dışında özel. `internal` bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](../extensions/context-sensitive-keywords-cpp-component-extensions.md).|
+|`public protected` veya `protected public`|Üye, derleme içinde ortak ve derleme dışında korunuyor.|
+|`private protected` veya `protected private`|Üye derleme içinde korunuyor, ancak derleme dışında özel.|
 
-Aşağıdaki örnek, farklı erişilebilir üyelere sahip ortak bir tür gösterir ve ardından bu üyelerin derlemenin içinden erişimini gösterir.
+Aşağıdaki örnek, farklı erişim belirticileri kullanılarak tanımlanmış üyelere sahip ortak bir türü gösterir. Ardından, derleme içinden bu üyelere erişimi gösterir.
 
 ```cpp
 // compile with: /clr
@@ -358,7 +340,7 @@ ref struct MyClass : public Public_Class {
 };
 ```
 
-Aşağıdaki örnek, önceki örnekte oluşturulan bileşeni kullanır ve bu nedenle, üyenin derleme dışından nasıl erişebileceğini gösterir.
+Aşağıdaki örnek, önceki örnekte oluşturulan bileşeni kullanır. Üyenin, derlemenin dışından nasıl erişebileceğini gösterir.
 
 ```cpp
 // compile with: /clr
@@ -406,7 +388,7 @@ exiting function of derived class
 =======================
 ```
 
-## <a name="public-and-private-native-classes"></a><a name="BKMK_Public_and_private_native_classes"></a>Ortak ve özel yerel sınıflar
+## <a name="public-and-private-native-classes"></a><a name="BKMK_Public_and_private_native_classes"></a> Ortak ve özel yerel sınıflar
 
 Bir yerel türe, yönetilen bir türden başvurulabilir.  Örneğin, yönetilen türdeki bir işlev, türü yerel bir struct olan bir parametre alabilir.  Yönetilen tür ve işlev bir derlemede ortak ise, yerel tür de genel olmalıdır.
 
@@ -445,13 +427,13 @@ int main() {
 }
 ```
 
-## <a name="static-constructors"></a><a name="BKMK_Static_constructors"></a>Statik oluşturucular
+## <a name="static-constructors"></a><a name="BKMK_Static_constructors"></a> Statik oluşturucular
 
 Bir CLR türü — örneğin, bir sınıf veya yapı — statik veri üyelerini başlatmak için kullanılabilen statik bir oluşturucuya sahip olabilir.  Statik bir Oluşturucu en fazla bir kez çağrılır ve türün herhangi bir statik üyesine ilk kez erişilmek için çağırılır.
 
 Örnek Oluşturucu her zaman bir statik oluşturucudan sonra çalışır.
 
-Sınıfta bir statik Oluşturucu varsa derleyici bir oluşturucuya çağrı satır içi olamaz.  Sınıf bir değer türü ise, statik bir oluşturucuya sahiptir ve bir örnek Oluşturucusu yoksa, derleyici herhangi bir üye işlevine bir çağrıyı satır içine alamaz.  CLR çağrıyı satır içine alabilir, ancak derleyici kullanamaz.
+Sınıfta bir statik Oluşturucu varsa derleyici bir oluşturucuya çağrı satır içi olarak ayarlanamaz. Sınıf bir değer türü ise, statik bir oluşturucuya sahiptir ve örnek Oluşturucusu yoksa, derleyici herhangi bir üye işlevine bir çağrıyı satır içine almaz. CLR çağrıyı satır içine alabilir, ancak derleyici olamaz.
 
 Yalnızca CLR tarafından çağrılması amaçlanmış olduğundan, bir statik oluşturucuyu özel üye işlevi olarak tanımlayın.
 
@@ -491,17 +473,13 @@ in static constructor
 11
 ```
 
-## <a name="semantics-of-the-this-pointer"></a><a name="BKMK_Semantics_of_the_this_pointer"></a>Bu işaretçinin semantiği
+## <a name="semantics-of-the-this-pointer"></a><a name="BKMK_Semantics_of_the_this_pointer"></a>`this`İşaretçinin semantiği
 
-Türleri tanımlamak için Visual C++ kullandığınızda, **`this`** başvuru türündeki işaretçi "tanıtıcı" türündedir. **`this`** Değer türündeki işaretçi "iç işaretçi" türündedir.
+Tür tanımlamak için C++ \CLı kullandığınızda, **`this`** başvuru türündeki işaretçi *tanıtıcı*türtürdür. **`this`** Değer türündeki işaretçi *iç işaretçisidir*.
 
 **`this`** Varsayılan bir Dizin Oluşturucu çağrıldığında işaretçinin bu farklı semantiklerinden beklenmedik davranışa neden olabilir. Sonraki örnekte, bir başvuru türü ve değer türü içinde varsayılan bir dizin oluşturucuya erişmenin doğru yolu gösterilmektedir.
 
-Daha fazla bilgi için bkz.
-
-- [Object Işlecine işle (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md)
-
-- [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
+Daha fazla bilgi için bkz. [işleme Için nesne işleci (^)](../extensions/handle-to-object-operator-hat-cpp-component-extensions.md) ve [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md)
 
 ```cpp
 // compile with: /clr
@@ -546,17 +524,17 @@ int main() {
 10.89
 ```
 
-## <a name="hide-by-signature-functions"></a><a name="BKMK_Hide_by_signature_functions"></a>İmza gizleme işlevleri
+## <a name="hide-by-signature-functions"></a><a name="BKMK_Hide_by_signature_functions"></a> İmza gizleme işlevleri
 
-Standart C++ ' da, bir temel sınıftaki bir işlev türetilmiş sınıfta aynı ada sahip bir işlev tarafından gizlenir, türetilmiş sınıf işlevi aynı sayıda veya türde parametreye sahip olmasa bile. Bu, *ad ile gizleme* semantiği olarak adlandırılır. Bir başvuru türünde, temel sınıftaki bir işlev yalnızca, hem ad hem de parametre listesi aynı ise türetilmiş bir sınıftaki bir işlevle gizlenebilir. Bu, *imza gizleme* semantiği olarak bilinir.
+Standart C++ ' da, türetilmiş sınıf işlevi aynı türe veya parametre sayısına sahip olmasa bile, temel sınıftaki bir işlev türetilmiş sınıfta aynı ada sahip bir işlev tarafından gizlenir. Bu, *ad gizleme* semantiği olarak bilinir. Bir başvuru türünde, temel sınıftaki bir işlev yalnızca, hem ad hem de parametre listesi aynı ise türetilmiş bir sınıftaki bir işlev tarafından gizlenir. *İmza gizleme* semantiği olarak bilinir.
 
-Bir sınıf, tüm işlevleri meta verilerde olarak işaretlendiğinde, bir gizleme sınıfı olarak değerlendirilir `hidebysig` . Varsayılan olarak, **/clr** altında oluşturulan tüm sınıfların `hidebysig` işlevleri vardır. Bir sınıfın işlevleri olduğunda `hidebysig` , derleyici herhangi bir doğrudan temel sınıfta işlevleri ada göre gizlemez, ancak derleyici devralma zincirinde bir gizleme sınıfı ile karşılaştığında, bu durum, bu yana gizleme davranışına devam eder.
+Bir sınıf, tüm işlevleri meta verilerde olarak işaretlendiğinde, bir gizleme sınıfı olarak değerlendirilir `hidebysig` . Varsayılan olarak, altında oluşturulan tüm sınıfların **`/clr`** `hidebysig` işlevleri vardır. Bir sınıfın işlevleri olduğunda `hidebysig` , derleyici herhangi bir doğrudan temel sınıfta işlevleri ada göre gizlemez, ancak derleyici devralma zincirinde bir gizleme sınıfı ile karşılaştığında, bu durum, bu yana gizleme davranışına devam eder.
 
-İmza gizleme semantiğinin altında, bir işlev bir nesne üzerinde çağrıldığında, derleyici işlev çağrısını karşılayabilecek bir işlevi içeren en fazla türetilmiş sınıfı tanımlar. Sınıfta çağrıyı karşılayabilecek yalnızca bir işlev varsa, derleyici bu işlevi çağırır. Sınıfta çağrıyı karşılayabilecek birden fazla işlev varsa, derleyici hangi işlevin çağrılacağını belirleyen aşırı yükleme çözümleme kuralları kullanır. Aşırı yükleme kuralları hakkında daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](../cpp/function-overloading.md).
+İmza gizleme semantiğinin altında, bir işlev bir nesne üzerinde çağrıldığında, derleyici işlev çağrısını karşılayabilecek bir işlevi içeren en fazla türetilmiş sınıfı tanımlar. Yalnızca çağrıyı karşılayan sınıfta tek bir işlev varsa, derleyici bu işlevi çağırır. Sınıfta çağrıyı karşılayabilecek birden fazla işlev varsa, derleyici hangi işlevin çağrılacağını belirleyen aşırı yükleme çözümleme kuralları kullanır. Aşırı yükleme kuralları hakkında daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](../cpp/function-overloading.md).
 
 Belirli bir işlev çağrısı için, temel sınıftaki bir işlev, türetilmiş bir sınıftaki bir işlevden biraz daha iyi eşleşme yapan bir imzaya sahip olabilir. Ancak, işlev türetilmiş sınıfın bir nesnesi üzerinde açıkça çağrılırsa, türetilmiş sınıftaki işlev çağrılır.
 
-Dönüş değeri bir işlevin imzasının bir parçası olmadığından, bir temel sınıf işlev aynı ada sahipse ve bir türetilmiş sınıf işleviyle aynı sayıda ve türde bağımsız değişken alırsa, bu değer dönüş değerinin türüne farklı olsa bile gizlenir.
+Dönüş değeri bir işlevin imzasının bir parçası olmadığı için, aynı ada sahip olması ve dönüş değerinin türüne farklı olsa da, türetilmiş sınıf işlevi olarak aynı türü ve sayıda bağımsız değişkeni alırsa, temel sınıf işlev gizli alır.
 
 Aşağıdaki örnek, bir temel sınıftaki bir işlevin türetilmiş sınıftaki bir işlevle gizlenmediğini gösterir.
 
@@ -654,15 +632,15 @@ Derived::Test4
 97
 ```
 
-## <a name="copy-constructors"></a><a name="BKMK_Copy_constructors"></a>Kopya oluşturucular
+## <a name="copy-constructors"></a><a name="BKMK_Copy_constructors"></a> Kopya oluşturucular
 
 C++ standardı, bir nesne taşındığında bir kopya oluşturucusunun, bir nesnenin oluşturulduğu ve aynı adreste yok edileceği şekilde çağrıldığını söyler.
 
-Bununla birlikte, derlemek için **/clr** KULLANıLDıĞıNDA ve MSIL 'ye derlenen bir işlev, yerel bir sınıfın (veya birden fazla) bir kopya Oluşturucusu ve/veya yok edicisi olduğu ve yerel sınıfta bir kopya Oluşturucusu ve/veya yıkıcısı olduğu, bir kopya Oluşturucusu çağrılmadıkça ve nesne oluşturulduğu yerden farklı bir adreste yok edildiğinde, bir yerel işlevi çağırır. Bu, sınıfın kendine işaretçi varsa veya kod nesneleri adrese göre izleirse soruna neden olabilir.
+Ancak, MSIL 'ye derlenen bir işlev, yerel bir sınıfın (veya birden fazla) bir değere göre geçirilir ve yerel sınıfta bir kopya Oluşturucusu ya da yıkıcı varsa, hiçbir kopya Oluşturucu çağrılmaz ve nesne oluşturulduğu yerden farklı bir adreste yok edilir. Bu davranış, sınıfın kendine işaretçi varsa veya kod nesneleri adrese göre izleirse soruna neden olabilir.
 
 Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
 
-Aşağıdaki örnek, bir kopya oluşturucusunun üretildiğini gösterir.
+Aşağıdaki örnek, bir kopya oluşturucunun ne zaman oluşturuldığının gösterir.
 
 ```cpp
 // compile with: /clr
@@ -719,9 +697,9 @@ S object 1 being destroyed, this=0018F37C
 S object 0 being destroyed, this=0018F378
 ```
 
-## <a name="destructors-and-finalizers"></a><a name="BKMK_Destructors_and_finalizers"></a>Yok ediciler ve sonlandırıcılar
+## <a name="destructors-and-finalizers"></a><a name="BKMK_Destructors_and_finalizers"></a> Yok ediciler ve sonlandırıcılar
 
-Başvuru türündeki Yıkıcılar, kaynakların kararlı bir şekilde temizlenmesini gerçekleştirir. Sonlandırıcılar yönetilmeyen kaynakları temizleyerek yıkıcı veya çöp toplayıcı tarafından belirleyici olmayan şekilde çağrılabilir. Standart C++ ' ta yok ediciler hakkında bilgi için bkz. [Yıkıcılar](../cpp/destructors-cpp.md).
+Başvuru türündeki Yıkıcılar, kaynakların kararlı bir şekilde temizlenmesini ister. Sonlandırıcılar yönetilmeyen kaynakları temizleyerek yıkıcı veya çöp toplayıcı tarafından belirleyici olmayan şekilde çağrılabilir. Standart C++ ' ta yok ediciler hakkında bilgi için bkz. [Yıkıcılar](../cpp/destructors-cpp.md).
 
 ```cpp
 class classname {
@@ -730,9 +708,7 @@ class classname {
 };
 ```
 
-Yönetilen bir Visual C++ sınıfındaki yok edicilerin davranışı C++ için Yönetilen Uzantılar farklıdır. Bu değişiklik hakkında daha fazla bilgi için bkz. [yıkıcı semantikleri değişiklikler](../dotnet/changes-in-destructor-semantics.md).
-
-CLR atık toplayıcısı kullanılmayan yönetilen nesneleri siler ve artık gerekli olmadığında belleği serbest bırakır. Ancak, bir tür çöp toplayıcısının nasıl yayınlanmayacağını bilemeyen kaynakları kullanabilir. Bu kaynaklar, yönetilmeyen kaynaklar (örneğin, yerel dosya işleyicileri) olarak bilinir. Sonlandırıcıdaki tüm yönetilmeyen kaynakları yayınlanmasını öneririz. Yönetilen kaynaklar çöp toplayıcı tarafından belirleyici olmayan şekilde serbest bırakıldığı için, Atık toplayıcısının o yönetilen kaynağı zaten temizlediğini mümkün olduğu için bir sonlandırıcının yönetilen kaynaklarına başvurmak güvenli değildir.
+CLR atık toplayıcısı kullanılmayan yönetilen nesneleri siler ve artık gerekli olmadığında belleği serbest bırakır. Ancak, bir tür çöp toplayıcısının nasıl serbest yapılacağını bilemeyen kaynakları kullanabilir. Bu kaynaklar, *yönetilmeyen* kaynaklar (örneğin, yerel dosya işleyicileri) olarak bilinir. Sonlandırıcının tüm yönetilmeyen kaynaklarını yayınlanmasını öneririz. Çöp toplayıcı yönetilen kaynakları belirleyici olmayan şekilde yayımlar, bu nedenle bir sonlandırıcının yönetilen kaynaklarına başvurmak güvenli değildir. Bunun nedeni, çöp toplayıcısının zaten temizlenmiş olması olabilir.
 
 Visual C++ sonlandırıcısı, yöntemiyle aynı değildir <xref:System.Object.Finalize%2A> . (CLR belgeleri Sonlandırıcı ve <xref:System.Object.Finalize%2A> terimler yöntemini kullanır). <xref:System.Object.Finalize%2A>Yöntemi, bir sınıf devralma zincirindeki her sonlandırıcıyı çağıran çöp toplayıcı tarafından çağırılır. Visual C++ yıkıcılarından farklı olarak, türetilmiş sınıf Sonlandırıcı çağrısı derleyicinin tüm temel sınıflarda sonlandırıcıyı çağırmasına neden olmaz.
 
@@ -755,7 +731,7 @@ void Dispose(bool disposing) {
 }
 ```
 
-Yönetilen bir tür Ayrıca, belirli bir şekilde serbest bırakmak için tercih ettiğiniz yönetilen kaynakları kullanabilir ve nesne artık gerekli olmadıktan sonra belirleyici olmayan bir noktada serbest bırakmak için çöp toplayıcısına ayrılmayabilir. Kaynakların belirleyici sürümü performansı önemli ölçüde iyileştirebilir.
+Yönetilen bir tür, belirli bir şekilde serbest bırakmayı tercih ettiğiniz yönetilen kaynakları da kullanabilir. Çöp toplayıcısının bir nesneyi, nesne artık gerekli olmadığında bir noktada belirleyici olmayan bir şekilde serbest bırakmamasıyla istemeyebilirsiniz. Kaynakların belirleyici sürümü performansı önemli ölçüde iyileştirebilir.
 
 Microsoft C++ derleyicisi, nesneleri kesin olarak temizlemek için yıkıcının tanımını sağlar. Kesin olarak yayınlamak istediğiniz tüm kaynakları serbest bırakmak için yıkıcıyı kullanın.  Bir Sonlandırıcı varsa, kod çoğaltmasını önlemek için bunu yıkıcıdan çağırın.
 
@@ -781,15 +757,15 @@ ref struct A {
 };
 ```
 
-Türü tüketen kod yıkıcıyı çağırmaz, çöp toplayıcı sonunda tüm yönetilen kaynakları yayınlar.
+Yazdığınız kod yıkıcıyı çağırmazsa, çöp toplayıcı sonunda tüm yönetilen kaynakları yayınlar.
 
-Yok edicinin varlığı, sonlandırıcının varlığını göstermez. Ancak, sonlandırıcının varlığı, bir yıkıcı tanımlamanız ve bu yıkıcının sonlandırıcısını çağırmanız gerektiğini gösterir. Bu, yönetilmeyen kaynakların belirleyici sürümü için sağlar.
+Yıkıcının varlığı, sonlandırıcının varlığını göstermez. Ancak, sonlandırıcının varlığı, bir yıkıcı tanımlamanız ve bu yıkıcının sonlandırıcısını çağırmanız gerektiğini gösterir. Bu çağrı, yönetilmeyen kaynakların belirleyici sürümü için sağlar.
 
-Yıkıcının çağrılması, nesnenin sonlandırılması gibi — kullanarak bastırır <xref:System.GC.SuppressFinalize%2A> . Yıkıcı çağrılmadıysanız, türün Sonlandırıcı sonunda çöp toplayıcı tarafından çağrılır.
+Yıkıcının çağrılması, nesnenin sonlandırılması gibi — kullanarak bastırır <xref:System.GC.SuppressFinalize%2A> . Yıkıcı çağrılmazsa, türün Sonlandırıcı sonunda çöp toplayıcı tarafından çağrılır.
 
-Yıkıcının çağırarak nesnenin kaynaklarını kesin bir şekilde temizlemek, CLR 'nin nesneyi belirleyici olmayan şekilde sonlandırmalarına izin vererek performansı iyileştirebilir.
+Nesne kaynaklarını kesin bir şekilde temizlemek için yıkıcıyı çağırarak, CLR 'nin nesneyi belirleyici olmayan şekilde sonlandırmalarına izin vermek yerine, performansı artırabilirsiniz.
 
-Visual C++ yazılan ve **/clr** kullanılarak derlenen kod, şu durumlarda bir tür yıkıcısı çalıştırır:
+Visual C++ yazılan ve kullanılarak derlenen kod **`/clr`** , şu durumlarda bir tür yıkıcısı çalıştırır:
 
 - Yığın semantiği kullanılarak oluşturulan bir nesne kapsam dışına çıkar. Daha fazla bilgi için bkz. [başvuru türleri için C++ yığın semantiği](../dotnet/cpp-stack-semantics-for-reference-types.md).
 
@@ -801,7 +777,7 @@ Visual C++ yazılan ve **/clr** kullanılarak derlenen kod, şu durumlarda bir t
 
 - Yok ediciyi açıkça çağırın.
 
-Eğer tür, başka bir dilde yazılmış bir istemci tarafından tüketiliyorsa, yıkıcı aşağıdaki gibi çağrılır:
+Başka bir dilde yazılmış bir istemci, kendi türünü kullanırsa, yok edicisi aşağıdaki gibi çağırılır:
 
 - Bir çağrısında <xref:System.IDisposable.Dispose%2A> .
 
@@ -809,7 +785,7 @@ Eğer tür, başka bir dilde yazılmış bir istemci tarafından tüketiliyorsa,
 
 - Tür bir C# deyimindeki kapsam dışına çıkar **`using`** .
 
-Yönetilen yığında bir başvuru türünde bir nesne oluşturursanız (başvuru türleri için yığın semantiğini kullanmıyor), bir özel durumun yıkıcının çalışmasını önleyemediğinden emin olmak için [try-finally](../cpp/try-finally-statement.md) söz dizimini kullanın.
+Başvuru türleri için yığın semantiğini kullanmıyorsanız ve yönetilen yığında başvuru türünde bir nesne oluşturursanız, bir özel durumun yıkıcının çalışmasını önleyemediğinden emin olmak için [try-finally](../cpp/try-finally-statement.md) söz dizimini kullanın.
 
 ```cpp
 // compile with: /clr
@@ -832,21 +808,21 @@ Türü bir yıkıcı içeriyorsa, derleyici `Dispose` uygulayan bir yöntem olu�
 
 Türünün bir sonlandırıcısı varsa, derleyici `Finalize(void)` geçersiz kılan bir yöntem oluşturur <xref:System.Object.Finalize%2A> .
 
-Bir türün Sonlandırıcı ya da yok edicisi varsa, derleyici `Dispose(bool)` Tasarım düzenine göre bir yöntem oluşturur. (Bilgi için bkz. [Dispose model](/dotnet/standard/design-guidelines/dispose-pattern)). Visual C++ açıkça yazabilir veya çağrılamaz `Dispose(bool)` .
+Bir türün Sonlandırıcı ya da yok edicisi varsa, derleyici `Dispose(bool)` Tasarım düzenine göre bir yöntem oluşturur. (Bilgi için bkz. [Dispose model](/dotnet/standard/design-guidelines/dispose-pattern)). Visual C++ açıkça yazamıyor veya arayamıyoruz `Dispose(bool)` .
 
-Bir türün tasarım düzenine uygun bir temel sınıfı varsa, türetilmiş sınıf için yıkıcı çağrıldığında tüm temel sınıfların yıkıcıları çağrılır. (Türü Visual C++ yazılmışsa, derleyici türlerinizi bu düzenin uygulanmasını sağlar.) Diğer bir deyişle, bir başvuru sınıfının yok edicisi, C++ standardı tarafından belirtildiği gibi temellerine ve üyelerine zincirdir — ilk olarak, sınıfın yıkıcısı çalıştırılır, ardından, kendi üyelerinin oluşturulduğu sıranın tersine ve son olarak kendi temel sınıfları için yok edicileri oluşturuldukları sıranın tersine çevirir.
+Bir türün tasarım düzenine uygun bir temel sınıfı varsa, türetilmiş sınıf için yıkıcı çağrıldığında tüm temel sınıfların yıkıcıları çağrılır. (Türü Visual C++ yazılmışsa, derleyici türlerinizi bu düzenin uygulanmasını sağlar.) Diğer bir deyişle, başvuru sınıfının yıkıcısı, temel ve üyelerine C++ standardı tarafından belirtilen şekilde zincirler. İlk olarak, sınıfın yıkıcısı çalıştırılır. Daha sonra, üyeleri için Yıkıcılar oluşturuldukları sıranın tersine doğru çalışır. Son olarak, temel sınıflarının yıkıcıları, oluşturuldukları sıranın tersine doğru çalışır.
 
 Değer türlerinin veya arabirimlerin içinde yok ediciler ve sonlandırıcılar kullanılamaz.
 
 Sonlandırıcısı yalnızca bir başvuru türünde tanımlanabilir veya bildirilebilecek. Bir Oluşturucu ve yıkıcı gibi, sonlandırıcının dönüş türü yoktur.
 
-Bir nesnenin Sonlandırıcı çalıştıktan sonra, herhangi bir temel sınıfta sonlandırıcılar, en az türetilmiş türle başlayarak de çağrılır. Veri üyeleri için sonlandırıcılar, bir sınıfın sonlandırıcısı tarafından otomatik olarak zincirlenebilir.
+Bir nesnenin Sonlandırıcı çalıştıktan sonra, herhangi bir temel sınıfta sonlandırıcılar, en az türetilmiş türle başlayarak de çağrılır. Veri üyeleri için sonlandırıcılar, bir sınıfın sonlandırıcısı tarafından otomatik olarak zincirleme değildir.
 
-Bir Sonlandırıcı yönetilen bir türdeki yerel bir işaretçiyi silerse, yerel işaretçiyle veya bu işaretçiden bu işaretçiye olan başvuruların zamanından önce toplanmadığından emin olmanız gerekir. kullanmak yerine, yönetilen tür üzerinde yıkıcıyı çağırın <xref:System.GC.KeepAlive%2A> .
+Bir Sonlandırıcı yönetilen bir türdeki yerel bir işaretçiyi silerse, yerel işaretçiyle veya bu işaretçiden bu işaretçiye yapılan başvuruların zamanından önce toplanmadığından emin olmalısınız. Kullanmak yerine, yönetilen tür üzerinde yıkıcıyı çağırın <xref:System.GC.KeepAlive%2A> .
 
 Derleme zamanında, bir türün Sonlandırıcı veya yıkıcısı olup olmadığını tespit edebilirsiniz. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](../extensions/compiler-support-for-type-traits-cpp-component-extensions.md).
 
-Bir sonraki örnek, yönetilmeyen kaynakları olan ve bir yönetilen kaynakları belirleyici olarak yayınlanan iki tür gösterir.
+Sonraki örnek iki tür gösterir: yönetilmeyen kaynakları olan biri ve bir şekilde serbest bırakılmış yönetilen kaynakları olan bir.
 
 ```cpp
 // compile with: /clr
@@ -914,5 +890,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)<br/>
 [Sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)

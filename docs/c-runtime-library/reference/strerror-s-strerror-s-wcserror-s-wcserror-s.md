@@ -1,6 +1,7 @@
 ---
 title: strerror_s, _strerror_s, _wcserror_s, __wcserror_s
-ms.date: 06/09/2020
+description: Bir sistem hata iletisi almak veya Kullanıcı tarafından sağlanan bir hata iletisini yazdırmak için güvenlik geliştirmeleri içeren işlevler.
+ms.date: 09/25/2020
 api_name:
 - __wcserror_s
 - _strerror_s
@@ -46,18 +47,18 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-ms.openlocfilehash: 91be8803a0695670e7afe673b25b54fccde40a9c
-ms.sourcegitcommit: 8167c67d76de58a7c2df3b4dcbf3d53e3b151b77
+ms.openlocfilehash: 4e594a37425714ef521c083785120e2262225b19
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84664332"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414626"
 ---
 # <a name="strerror_s-_strerror_s-_wcserror_s-__wcserror_s"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 
 Bir sistem hata iletisi (**strerror_s**, **_wcserror_s**) veya Kullanıcı tarafından sağlanan bir hata iletisi (**_strerror_s**, **__wcserror_s**) alın. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [, _strerror, _wcserror \_ _wcserror](strerror-strerror-wcserror-wcserror.md) .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t strerror_s(
@@ -80,6 +81,9 @@ errno_t __wcserror_s(
    size_t sizeInWords,
    const wchar_t *strErrMsg
 );
+```
+
+```cpp
 template <size_t size>
 errno_t strerror_s(
    char (&buffer)[size],
@@ -104,26 +108,26 @@ errno_t __wcserror_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*arabelleğin*<br/>
+*arabelleğin*\
 Hata dizesini tutan arabellek.
 
-*sizeInBytes*<br/>
+*sizeInBytes*\
 Arabellekteki bayt sayısı.
 
-*sizeInWords*<br/>
+*sizeInWords*\
 Arabellekteki sözcüklerin sayısı.
 
-*errnum*<br/>
+*errnum*\
 Hata numarası.
 
-*strErrMsg*<br/>
+*strErrMsg*\
 Kullanıcı tarafından sağlanan ileti.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılıysa sıfır, hata durumunda hata kodu.
 
-### <a name="error-condtions"></a>Hata onayları
+### <a name="error-conditions"></a>Hata koşulları
 
 |*arabelleğin*|*sizeInBytes/sizeInWords*|*strErrMsg*|*Arabelleğin* içeriği|
 |--------------|------------------------|-----------------|--------------------------|
@@ -131,6 +135,8 @@ Başarılıysa sıfır, hata durumunda hata kodu.
 |herhangi biri|0|herhangi biri|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
+
+**Strerror_s** işlevi iş parçacığı açısından güvenlidir.
 
 **Strerror_s** işlevi, hata iletisi dizesine hatayı, dizeyi *arabelleğe* *döndürerek eşleştirir.* **_strerror_s** hata numarası almaz; uygun iletiyi belirleyebilmek için **errno** geçerli değerini kullanır. Ne **strerror_s** ne de **_strerror_s** iletiyi yazdırmaz: bunun için [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md)gibi bir çıkış işlevi çağırmanız gerekir:
 
@@ -142,7 +148,7 @@ if (( _access( "datafile",2 )) == -1 )
 }
 ```
 
-*StrErrMsg* **null**ise **_strerror_s** , bir hata üreten son kitaplık çağrısının sistem hata iletisini içeren *arabellekte* bir dize döndürür. Hata iletisi dizesi yeni satır karakteri (' \n ') tarafından sona erdirildi. *StrErrMsg* , **null**değerine eşit değilse, **_strerror_s** dize iletinizi, iki nokta üst üste, bir boşluk, bir hata üreten son kitaplık çağrısının sistem hata iletisini ve yeni satır *karakterini içeren bir* dize döndürür. Dize iletiniz en fazla 94 karakter uzunluğunda olabilir.
+*StrErrMsg* **NULL**ise, **_strerror_s** bir hata üreten son kitaplık çağrısının sistem hata iletisini içeren *arabellekte* bir dize döndürür. Hata iletisi dizesi yeni satır karakteri (' \n ') tarafından sona erdirildi. *StrErrMsg* , **null**değerine eşit değilse, **_strerror_s** dize iletinizi, iki nokta üst üste, bir boşluğu, bir hata üreten son kitaplık çağrısının sistem hata iletisini ve yeni satır *karakterini içeren bir* dize döndürür. Dize iletiniz en fazla 94 karakter uzunluğunda olabilir.
 
 Bu işlevler, uzunluğu buffer-1 boyutunu aşarsa hata iletisini keser. *Arabellekte* elde edilen dize her zaman null olarak sonlandırılır.
 
@@ -152,7 +158,7 @@ Bu işlevler, uzunluğu buffer-1 boyutunu aşarsa hata iletisini keser. *Arabell
 
 Bu işlevler, parametrelerini doğrular. Buffer **null** ise veya boyut parametresi 0 Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
 
-**_strerror_s**, **_WCSERROR_S**ve **__wcserror_s** ANSI tanımının bir parçası değildir ancak bunun yerine Microsoft uzantısı olur. Bunları, taşınabilirliği istediğiniz yerde kullanmayın; ANSI uyumluluğu için bunun yerine **strerror_s** kullanın.
+**_strerror_s**, **_WCSERROR_S**ve **__wcserror_s** ANSI tanımının bir parçası değildir, ancak bunun yerine Microsoft uzantısı olur. Taşınabilirliği istediğiniz yerde kullanmayın; ANSI uyumluluğu için bunun yerine **strerror_s** kullanın.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -181,7 +187,7 @@ Bkz. [pError](perror-wperror.md)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[clearerr](clearerr.md)<br/>
-[ferror](ferror.md)<br/>
-[perror, _wperror](perror-wperror.md)<br/>
+[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)\
+[clearerr](clearerr.md)\
+[ferror](ferror.md)\
+[perror, _wperror](perror-wperror.md)

@@ -1,13 +1,13 @@
 ---
 title: Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
 description: Adres Temizleme kullanımı için Visual Studio 'da C++ Linux projelerinin nasıl yapılandırılacağını açıklar.
-ms.date: 06/07/2019
-ms.openlocfilehash: 0e862e09d8178ce35fe26f2be138d7f6843b5ef1
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.date: 09/25/2020
+ms.openlocfilehash: 7e68d0af4d2ab27820f894bafc58bed444f141d9
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686671"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414211"
 ---
 # <a name="configure-linux-projects-to-use-address-sanitizer"></a>Linux projelerini Adres Temizleyici kullanmak üzere yapılandırma
 
@@ -33,7 +33,7 @@ Ayrıca, çıkış penceresinin hata ayıklama bölmesinde tam ASan çıkışın
 ## <a name="enable-asan-for-msbuild-based-linux-projects"></a>MSBuild tabanlı Linux projeleri için ASan 'ı etkinleştir
 
 > [!NOTE]
-> Visual Studio 2019 sürüm 16,4 ' den başlayarak, Linux projeleri için addresstemizme özelliği, **yapılandırma özellikleri**  >  **C/C++**  >  **tarafından etkinleştirilebilir**.
+> Visual Studio 2019 sürüm 16,4 ' den başlayarak, Linux projeleri için addresstemizleme özelliği, **Proje özellikleri**  >  **yapılandırma özellikleri**  >  **C/C++**  >  **Etkinleştir adres Temizleme**özelliği aracılığıyla etkinleştirilir.
 
 MSBuild tabanlı Linux projeleri için ASan 'ı etkinleştirmek üzere **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Özellikler**' i seçin. Ardından, **yapılandırma özellikleri**  >  **C/C++**  >  **temizleyiciler**' a gidin. ASan, derleyici ve bağlayıcı bayrakları aracılığıyla etkinleştirilir ve projenizin iş için yeniden derlenmesi gerekir.
 
@@ -51,7 +51,7 @@ CMake için ASan 'ı etkinleştirmek üzere, **Çözüm Gezgini** CMakeLists.txt
 
 ![Yapılandırma seçeneklerinden biri olarak listelenen Linux hata ayıklamanın sol bölmesinin ekran görüntüsü.](media/linux-debug-configuration.png)
 
-ASan seçenekleri **genel**' in altındadır. ASan çalışma zamanı bayraklarını noktalı virgülle ayırarak "bayrak = value" biçiminde girin.
+ASan seçenekleri **genel**' in altındadır. ASan çalışma zamanı bayraklarını boşluklarla ayırarak "bayrak = değer" biçiminde girin. Kullanıcı arabirimi, noktalı virgül kullanmayı yanlış bir şekilde önerir. Bayrakları ayırmak için boşluk veya iki nokta üst üste kullanın.
 
 ![Adres Temizleme çalışma zamanı bayraklarını gösteren adres Temizleme seçeneğini etkinleştir seçeneğinin ekran görüntüsü.](media/cmake-settings-asan-options.png)
 

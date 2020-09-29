@@ -9,22 +9,22 @@ helpviewer_keywords:
 - interop [C++], structures
 - marshaling [C++], structures
 ms.assetid: c2080200-f983-4d6e-a557-cd870f060a54
-ms.openlocfilehash: a77745c9a60c9759f8b3b2df91bcbc4cb507533b
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 8ca53761647c1f3d5ea059ddf381cb334cd2a993
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988174"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413846"
 ---
 # <a name="how-to-marshal-structures-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Sıralama
 
-Bu konuda, Visual C++ birlikte çalışabilirlik 'nin bir modeli gösterilmektedir. Daha fazla bilgi için bkz [. C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Bu konuda Visual C++ birlikte çalışabilirliğinin bir modeli gösterilmektedir. Daha fazla bilgi için bkz. [C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-structure-from-managed-to-unmanaged-function"></a>Örnek: Managed 'dan yönetilmeyen işleve yapıyı geçirin
 
-Aşağıdaki örnek, yönetilen bir yapının yönetilmeyen bir işleve, hem değere hem de başvuruya göre geçirilmesini gösterir. Bu örnekteki yapı yalnızca basit, iç veri türleri (bkz. [blittable ve blittable olmayan türler](/dotnet/framework/interop/blittable-and-non-blittable-types)) içerdiğinden özel bir sıralama gerekmez. İşaretçiler içeren blittable yapılarını sıralamak için bkz. [nasıl yapılır: ekli işaretçileri birlikte çalışma kullanarak C++ sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
+Aşağıdaki örnek, yönetilen bir yapının yönetilmeyen bir işleve, hem değere hem de başvuruya göre geçirilmesini gösterir. Bu örnekteki yapı yalnızca basit, iç veri türleri (bkz. [blittable ve blittable olmayan türler](/dotnet/framework/interop/blittable-and-non-blittable-types)) içerdiğinden özel bir sıralama gerekmez. İşaretçiler içeren blittable yapılarını sıralamak için bkz. [nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış Işaretçileri sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
 
 ```cpp
 // PassStruct1.cpp
@@ -80,9 +80,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-structure-from-unmanaged-to-managed-function"></a>Örnek: yönetilmeyenden yönetilen işleve yapı geçirin
 
-Aşağıdaki örnek, yönetilmeyen bir yapıyı yönetilen bir işleve, hem değere hem de başvuruya göre geçirmeyi gösterir. Bu örnekteki yapı yalnızca basit, iç veri türleri (bkz. [blittable ve blittable olmayan türler](/dotnet/framework/interop/blittable-and-non-blittable-types)) içerdiğinden özel bir sıralama gerekli değildir. İşaretçiler içeren blittable yapılarını sıralamak için bkz. [nasıl yapılır: ekli işaretçileri birlikte çalışma kullanarak C++ sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
+Aşağıdaki örnek, yönetilmeyen bir yapıyı yönetilen bir işleve, hem değere hem de başvuruya göre geçirmeyi gösterir. Bu örnekteki yapı yalnızca basit, iç veri türleri (bkz. [blittable ve blittable olmayan türler](/dotnet/framework/interop/blittable-and-non-blittable-types)) içerdiğinden özel bir sıralama gerekli değildir. İşaretçiler içeren blittable yapılarını sıralamak için bkz. [nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış Işaretçileri sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
 
 ```cpp
 // PassStruct2.cpp
@@ -149,4 +149,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

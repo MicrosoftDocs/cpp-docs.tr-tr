@@ -9,20 +9,20 @@ helpviewer_keywords:
 - C++ Interop, arrays
 - data marshaling [C++], arrays
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
-ms.openlocfilehash: fddb8b4fa645d6fee3597d098fc67a3006603b9f
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0ccf71d40db0bc6989620d2ca126ce74311805da
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988194"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91413833"
 ---
 # <a name="how-to-marshal-arrays-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama
 
-Bu konuda, Visual C++ birlikte çalışabilirlik 'nin bir modeli gösterilmektedir. Daha fazla bilgi için bkz [. C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Bu konuda Visual C++ birlikte çalışabilirliğinin bir modeli gösterilmektedir. Daha fazla bilgi için bkz. [C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekmez.
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-managed-array-to-unmanaged-function"></a>Örnek: yönetilen diziyi yönetilmeyen işleve geçir
 
 Aşağıdaki örnek, yönetilen bir dizinin yönetilmeyen bir işleve nasıl geçirileceğini gösterir. Yönetilen işlev, yönetilmeyen işlevi çağırmadan önce dizi için çöp toplamayı bastırmak üzere [pin_ptr (C++/CLI)](../extensions/pin-ptr-cpp-cli.md) kullanır. GC yığınına sabitlenmiş bir işaretçi ile yönetilmeyen işlev sağlayarak dizinin bir kopyasını oluşturma yükü kaçınılabilir. Yönetilmeyen işlevin GC yığın belleğine eriştiğini göstermek için, dizinin içeriğini değiştirir ve yönetilen işlev denetimi sürdürüyorsa değişiklikler yansıtılır.
 
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-unmanaged-array-to-managed-function"></a>Örnek: yönetilmeyen diziyi yönetilen işleve geçir
 
 Aşağıdaki örnek, yönetilmeyen bir dizinin yönetilen bir işleve geçirilmesini gösterir. Yönetilen işlev, dizi belleğine doğrudan erişir (yönetilen bir diziyi oluşturma ve dizi içeriğini kopyalama aksine), yönetilen işlev tarafından yapılan değişikliklerin, bir denetim sırasında yönetilmeyen işlevde yansıtılmasına olanak tanır.
 
@@ -131,4 +131,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

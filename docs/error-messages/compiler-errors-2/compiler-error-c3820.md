@@ -1,29 +1,28 @@
 ---
 title: Derleyici hatası C3820
-ms.date: 11/04/2016
+description: Microsoft C/C++ derleyicisi hata C3820 nedenleri ve düzeltmeler.
+ms.date: 09/26/2020
 f1_keywords:
 - C3820
 helpviewer_keywords:
 - C3820
 ms.assetid: 98638838-068f-4a62-b8d5-1068368a0ff1
-ms.openlocfilehash: 2b6af6b665f3b9bc7d5aa12e7aa2096e17a158be
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2c98605c11e43bbeb46d2ce011a1b998f1755fe9
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165606"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414509"
 ---
 # <a name="compiler-error-c3820"></a>Derleyici hatası C3820
 
-' name ': başlatıcıların yönetilmesi gerekir
+> '*Name*': başlatıcıların yönetilmesi gerekir
 
-Yönetilen bir tür için *ad* başlatıcısı da yönetilmelidir.
+## <a name="remarks"></a>Açıklamalar
 
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
-
-1. Yönetilen bir başlatıcı yöntemi belirtin.
+Yönetilen bir tür için *ad* başlatıcısı da yönetilmelidir. Bu hatayı düzeltmek için, yönetilen bir başlatıcı yöntemi belirtin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlatıcılar](../../cpp/initializers.md)<br/>
-[Ek Başlatma Konuları](../../cpp/additional-startup-considerations.md)
+[Başlatıcıları](../../cpp/initializers.md)\
+[`main` işlev ve komut satırı bağımsız değişkenleri](../../cpp/main-function-command-line-args.md)

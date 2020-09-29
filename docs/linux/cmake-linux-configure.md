@@ -2,12 +2,12 @@
 title: Visual Studio 'da Linux CMake projesi yapılandırma
 description: Visual Studio 'da Linux CMake ayarlarını yapılandırma
 ms.date: 08/08/2020
-ms.openlocfilehash: 4bc6d5d82a0f1cd21e8f989eb92b431d38b2bf5c
-ms.sourcegitcommit: 111ee74772d7f308d3414b5d42cbc1e90287f081
+ms.openlocfilehash: 762f135988587e777c2a33a1bd402770c297226b
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88659350"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414560"
 ---
 # <a name="configure-a-linux-cmake-project-in-visual-studio"></a>Visual Studio 'da Linux CMake projesi yapılandırma
 
@@ -102,7 +102,7 @@ Bir yapı gerçekleştirdiğinizde:
 
 ## <a name="choose-a-linux-target"></a>Linux hedefi seçin
 
-CMake proje klasörünü açtığınızda, Visual Studio *CMakeLists.txt* dosyayı ayrıştırır ve **x86-Debug**' ı bir Windows hedefini belirtir. Uzak bir Linux sistemini hedeflemek için proje ayarlarını **Linux-Debug** veya **Linux-Release**olarak değiştirirsiniz.
+CMake proje klasörünü açtığınızda, Visual Studio *CMakeLists.txt* dosyayı ayrıştırır ve **x86-Debug**' ı bir Windows hedefini belirtir. Uzak bir Linux sistemini hedeflemek için, proje ayarlarını Linux derleyicinizi temel alarak değiştirirsiniz. Örneğin, Linux üzerinde GCC kullanıyorsanız ve hata ayıklama bilgileri ile derlerken, şunu tercih edersiniz:  **Linux-GCC-Debug** veya **Linux-GCC-Release**.
 
 Uzak bir Linux hedefi belirtirseniz, kaynağınız uzak sisteme kopyalanır.
 
@@ -117,7 +117,15 @@ Bir hedef seçtikten sonra CMake, projenizin CMake önbelleğini oluşturmak iç
 
 Linux için Windows alt sistemini (WSL) hedefliyorsanız, uzak bir bağlantı eklemeniz gerekmez.
 
-WSL 'yi hedeflemek için ana araç çubuğunda yapılandırma açılan menüsünde **yapılandırmaları Yönet** ' i seçin. Ardından, **yapılandırma Ekle** düğmesine basın ve GCC kullanılıyorsa **WSL-Debug** veya **WSL-Release** ' i seçin. Clang/LLVM araç takımını kullanıyorsanız Clang türevlerini kullanın.
+WSL 'yi hedeflemek için ana araç çubuğundaki yapılandırma açılan menüsünde **yapılandırmaları Yönet** ' i seçin:
+
+![CMake yönetme yapılandırması](../build/media/vs2019-cmake-manage-configurations.png "CMake yapılandırma açılır")
+
+**CMakeSettings.js** pencere açılır.
+
+![Yapılandırma ekleme](media/cmake-linux-configurations.png "CMake ayarlarına bir yapılandırma ekleme")
+
+**Yapılandırma Ekle** ' ye basın (yeşil ' + ' düğmesi) ve ardından GCC kullanılıyorsa **Linux-GCC-Debug** veya **Linux-GCC-Release** ' i seçin. Clang/LLVM araç takımını kullanıyorsanız Clang türevlerini kullanın.  Yapılandırmayı kaydetmek için **Seç** ' e ve ardından **CTRL + S** tuşlarına basın.
 
 **Visual Studio 2019 sürüm 16,1** WSL 'yi hedeflediğinizde, Linux üzerindeki derleyicinin bağlı Windows dosya sisteminde kaynak dosyalarınıza doğrudan erişimi olduğundan, Visual Studio 'nun kaynak dosyalarını kopyalaması ve yapı ağacınızdaki iki zaman uyumlu kopyasını koruması gerekmez.
 ::: moniker-end

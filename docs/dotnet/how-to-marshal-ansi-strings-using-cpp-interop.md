@@ -9,26 +9,26 @@ helpviewer_keywords:
 - C++ Interop, strings
 - data marshaling [C++], strings
 ms.assetid: 5eda2eb6-5140-40f0-82cf-7ce171fffb45
-ms.openlocfilehash: 6987b23311354cfe6fd095e0e811d043e9b9692e
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 3bdffa761bef74b9956842122b913e8213c736e9
+ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988470"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91414574"
 ---
 # <a name="how-to-marshal-ansi-strings-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama
 
-Bu konu, ANSI dizelerinin birlikte çalışabilirlik kullanılarak C++ nasıl geçirileceğini gösterir ancak .NET Framework <xref:System.String> dizeleri Unicode biçiminde temsil eder, bu nedenle ANSI 'ye dönüştürme ek bir adımdır. Diğer dize türleriyle birlikte çalışma için aşağıdaki konulara bakın:
+Bu konuda, ANSI dizelerinin C++ birlikte çalışması kullanılarak nasıl geçirilebileceğini, ancak .NET Framework <xref:System.String> Unicode biçiminde dizeleri temsil ettiğinden, ANSI 'ye dönüştürme işlemi fazladan bir adımdır. Diğer dize türleriyle birlikte çalışma için aşağıdaki konulara bakın:
 
-- [Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ birlikte çalışabilirliği kullanarak Unicode dizelerini sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
+- [Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)
 
 Aşağıdaki kod örnekleri, yönetilen ve yönetilmeyen işlevleri aynı dosyada uygulamak için [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergelerini kullanır, ancak bu işlevler ayrı dosyalarda tanımlanmışsa aynı şekilde çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyaların [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)ile derlenmesi gerekli olmadığından, bunların performans özelliklerini koruyabilir.
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-ansi-string"></a>Örnek: Pass ANSI String
 
-Örnek, <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A>kullanılarak yönetilmeyen bir işleve bir ANSI dizesinin geçtiğini gösterir. Bu yöntem, yönetilmeyen yığında bellek ayırır ve dönüştürme gerçekleştirildikten sonra adresi döndürür. Bu, hiçbir sabitleme gerekmediği anlamına gelir (GC yığınındaki bellek, yönetilmeyen işleve geçirilmediğinden) ve <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> tarafından döndürülen IntPtr 'ın açık olarak bırakılması veya bir bellek sızıntısı sonuçları olması gerekir.
+Örnek, kullanılarak yönetilmeyen bir işleve bir ANSI dizesinin geçtiğini gösterir <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> . Bu yöntem, yönetilmeyen yığında bellek ayırır ve dönüştürme gerçekleştirildikten sonra adresi döndürür. Bu, hiçbir sabitleme gerekmediği anlamına gelir (GC yığınındaki bellek yönetilmeyen işleve geçirilmediğinden) ve öğesinden döndürülen IntPtr 'ın <xref:System.Runtime.InteropServices.Marshal.StringToHGlobalAnsi%2A> açıkça serbest bırakılması veya bellek sızıntısı sonuçları olması gerekir.
 
 ```cpp
 // MarshalANSI1.cpp
@@ -60,9 +60,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-data-marshaling-required-to-access-ansi-string"></a>Örnek: ANSI dizesine erişmek için veri hazırlama gerekiyor
 
-Aşağıdaki örnek, yönetilmeyen bir işlev tarafından çağrılan yönetilen bir işlevde bir ANSI dizesine erişmek için gereken veri sıralamasını gösterir. Yerel dizeyi alma sırasında yönetilen işlev doğrudan kullanabilir veya gösterildiği gibi <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> yöntemi kullanılarak yönetilen bir dizeye dönüştürebilir.
+Aşağıdaki örnek, yönetilmeyen bir işlev tarafından çağrılan yönetilen bir işlevde bir ANSI dizesine erişmek için gereken veri sıralamasını gösterir. Yerel dizeyi alma sırasında yönetilen işlev doğrudan kullanabilir ya da gösterildiği gibi yöntemini kullanarak yönetilen bir dizeye dönüştürebilirsiniz <xref:System.Runtime.InteropServices.Marshal.PtrToStringAnsi%2A> .
 
 ```cpp
 // MarshalANSI2.cpp
@@ -98,4 +98,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
