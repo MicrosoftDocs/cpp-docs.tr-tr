@@ -3,12 +3,12 @@ title: Akıllı işaretçiler (Modern C++)
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-ms.openlocfilehash: 698843ced3235d9622af3610a5209669407e9e05
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e511cc513cdb35b06b976ce022c5e4edea35040b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186145"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500686"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı işaretçiler (Modern C++)
 
@@ -16,7 +16,7 @@ Modern C++ programlamada standart kitaplık, programların bellek ve kaynak sız
 
 ## <a name="uses-for-smart-pointers"></a>Akıllı işaretçiler için kullanım alanları
 
-Akıllı işaretçiler, `std` üstbilgi dosyasındaki ad alanında tanımlanır [\<memory>](../standard-library/memory.md) . Bu, [Aİİ](objects-own-resources-raii.md) veya *kaynak alımı* için çok önemlidir. Bu deyimin ana amacı, kaynak alımının nesnenin başlatılmasıyla aynı anda gerçekleşmesini sağlamaktır; böylece nesne için tüm kaynaklar bir kod satırında oluşturulur ve hazır hale getirilir. Pratikte temel RAII prensibi, yığın tarafından ayrılan herhangi bir kaynağın sahipliğini örneğin, dinamik olarak ayrılan belek veya sistem nesnesi tanıtıcıları, yok edicisi kaynağı silmek veya boşaltmak için gereken kodu ve herhangi bir temizleme kodunu içeren ve yığın tarafından ayrılan bir nesneye vermektir.
+Akıllı işaretçiler, `std` üstbilgi dosyasındaki ad alanında tanımlanır [\<memory>](../standard-library/memory.md) . Bu, [Aİİ](./object-lifetime-and-resource-management-modern-cpp.md) veya *kaynak alımı* için çok önemlidir. Bu deyimin ana amacı, kaynak alımının nesnenin başlatılmasıyla aynı anda gerçekleşmesini sağlamaktır; böylece nesne için tüm kaynaklar bir kod satırında oluşturulur ve hazır hale getirilir. Pratikte temel RAII prensibi, yığın tarafından ayrılan herhangi bir kaynağın sahipliğini örneğin, dinamik olarak ayrılan belek veya sistem nesnesi tanıtıcıları, yok edicisi kaynağı silmek veya boşaltmak için gereken kodu ve herhangi bir temizleme kodunu içeren ve yığın tarafından ayrılan bir nesneye vermektir.
 
 Çoğu durumda gerçek bir kaynağı işaret etmek ve işaretçiyi hemen bir akıllı işaretçiye dönüştürmek için bir ham işaretçi veya kaynak tanıtıcısı kullanırsınız. Modern C++ programlamada, ham işaretçiler yalnızca performansın önemli olduğu ve sahiplik konusunda karışıklık olma ihtimali bulunmayan kapsam, döngü veya yardımcı işlevler açısından sınırlı olan küçük kod engellerinde kullanılır.
 
@@ -68,7 +68,7 @@ Aşağıdaki bölümde Windows programlama ortamında bulunan farklı türden ak
 Bu akıllı işaretçileri eski C++ nesnelerine (POCO) işaretçi kapsüllemek için ilk seçenek olarak kullanın.
 
 - `unique_ptr`<br/>
-   Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İçin gerekli olan belirli bir bilginiz olmadığı sürece POCO için varsayılan seçenek olarak kullanın `shared_ptr` . Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. `auto_ptr`Kullanım dışı olan ' nin yerini alır. İle karşılaştırın `boost::scoped_ptr` . `unique_ptr`küçük ve verimlidir; Boyut bir işaretçidir ve C++ standart kitaplık koleksiyonlarından hızlı ekleme ve alma için Rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>` . Daha fazla bilgi için bkz. [nasıl yapılır: oluşturma ve kullanma Unique_ptr örnekleri](how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr Sınıfı](../standard-library/unique-ptr-class.md).
+   Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İçin gerekli olan belirli bir bilginiz olmadığı sürece POCO için varsayılan seçenek olarak kullanın `shared_ptr` . Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. `auto_ptr`Kullanım dışı olan ' nin yerini alır. İle karşılaştırın `boost::scoped_ptr` . `unique_ptr` küçük ve verimlidir; Boyut bir işaretçidir ve C++ standart kitaplık koleksiyonlarından hızlı ekleme ve alma için Rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>` . Daha fazla bilgi için bkz. [nasıl yapılır: oluşturma ve kullanma Unique_ptr örnekleri](how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr Sınıfı](../standard-library/unique-ptr-class.md).
 
 - `shared_ptr`<br/>
    Başvuru sayımı olan akıllı işaretçi. Birden fazla sahibe tek bir ham işaretçi atamak istediğinizde kullanın, örnek olarak bir kapsayıcıdan işaretçi kopyası döndürüp orijinalini saklamak istediğinizde kullanın. Ham işaretçi, tüm `shared_ptr` sahipler kapsam dışına çıkana veya başka bir şekilde sahiplik verilene kadar silinmez. Boyut iki işaretçi kadardır; biri nesne için ve biri başvuru sayısını içeren paylaşılan denetim bloğu için. Üst bilgi dosyası: `<memory>` . Daha fazla bilgi için bkz. [nasıl yapılır: oluşturma ve kullanma Shared_ptr örnekleri](how-to-create-and-use-shared-ptr-instances.md) ve [shared_ptr Sınıfı](../standard-library/shared-ptr-class.md).

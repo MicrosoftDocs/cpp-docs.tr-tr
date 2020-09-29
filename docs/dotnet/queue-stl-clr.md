@@ -57,12 +57,12 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-ms.openlocfilehash: ce4b3ca37fc5e13ace3058cb9ec9e9daad073b47
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2d5c1d30704838cdb69516d68d328c90a094a08e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87210936"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502389"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 
@@ -70,7 +70,7 @@ ms.locfileid: "87210936"
 
 Aşağıdaki açıklamada, `GValue` Ikinci *değeri* bir başvuru türü olmadığı sürece, bu örnekte olduğu gibi olur `Value^` . Benzer şekilde, `GContainer` ikincinin bir başvuru türü olmadığı ve bu durumda olduğu sürece *kapsayıcı* ile aynıdır `Container^` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -150,11 +150,11 @@ Nesnesi, `Container` öğeleri depolayan ve isteğe bağlı olarak büyüyen tü
 
 ## <a name="members"></a>Üyeler
 
-## <a name="queueassign-stlclr"></a><a name="assign"></a>Queue:: Assign (STL/CLR)
+## <a name="queueassign-stlclr"></a><a name="assign"></a> Queue:: Assign (STL/CLR)
 
 Tüm öğeleri değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void assign(queue<Value, Container>% right);
@@ -204,7 +204,7 @@ a b c
 a b c
 ```
 
-## <a name="queueback-stlclr"></a><a name="back"></a>Queue:: Back (STL/CLR)
+## <a name="queueback-stlclr"></a><a name="back"></a> Queue:: Back (STL/CLR)
 
 Son öğeye erişir.
 
@@ -256,7 +256,7 @@ back() = c
 a b x
 ```
 
-## <a name="queueback_item-stlclr"></a><a name="back_item"></a>Queue:: back_item (STL/CLR)
+## <a name="queueback_item-stlclr"></a><a name="back_item"></a> Queue:: back_item (STL/CLR)
 
 Son öğeye erişir.
 
@@ -308,7 +308,7 @@ back_item = c
 a b x
 ```
 
-## <a name="queueconst_reference-stlclr"></a><a name="const_reference"></a>Queue:: const_reference (STL/CLR)
+## <a name="queueconst_reference-stlclr"></a><a name="const_reference"></a> Queue:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -352,7 +352,7 @@ int main()
 a b c
 ```
 
-## <a name="queuecontainer_type-stlclr"></a><a name="container_type"></a>Queue:: container_type (STL/CLR)
+## <a name="queuecontainer_type-stlclr"></a><a name="container_type"></a> Queue:: container_type (STL/CLR)
 
 Temel alınan kapsayıcının türü.
 
@@ -394,7 +394,7 @@ int main()
 a b c
 ```
 
-## <a name="queuedifference_type-stlclr"></a><a name="difference_type"></a>sıra::d ifference_type (STL/CLR)
+## <a name="queuedifference_type-stlclr"></a><a name="difference_type"></a> sıra::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -452,7 +452,7 @@ pushing 2 = -2
 popping 3 = 3
 ```
 
-## <a name="queueempty-stlclr"></a><a name="empty"></a>Queue:: Empty (STL/CLR)
+## <a name="queueempty-stlclr"></a><a name="empty"></a> Queue:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -464,7 +464,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Queue:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md)ile eşdeğerdir `() == 0` . Bu, sıranın boş olup olmadığını test etmek için kullanılır.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Queue:: size (STL/CLR)](#size)ile eşdeğerdir `() == 0` . Bu, sıranın boş olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -506,7 +506,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="queuefront-stlclr"></a><a name="front"></a>Queue:: Front (STL/CLR)
+## <a name="queuefront-stlclr"></a><a name="front"></a> Queue:: Front (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -558,7 +558,7 @@ front() = a
 x b c
 ```
 
-## <a name="queuefront_item-stlclr"></a><a name="front_item"></a>Queue:: front_item (STL/CLR)
+## <a name="queuefront_item-stlclr"></a><a name="front_item"></a> Queue:: front_item (STL/CLR)
 
 İlk öğeye erişir.
 
@@ -610,7 +610,7 @@ front_item = a
 x b c
 ```
 
-## <a name="queuegeneric_container-stlclr"></a><a name="generic_container"></a>Queue:: generic_container (STL/CLR)
+## <a name="queuegeneric_container-stlclr"></a><a name="generic_container"></a> Queue:: generic_container (STL/CLR)
 
 Kapsayıcı bağdaştırıcısının genel arabiriminin türü.
 
@@ -673,7 +673,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="queuegeneric_value-stlclr"></a><a name="generic_value"></a>Queue:: generic_value (STL/CLR)
+## <a name="queuegeneric_value-stlclr"></a><a name="generic_value"></a> Queue:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -731,7 +731,7 @@ a b c
 a b c
 ```
 
-## <a name="queueget_container-stlclr"></a><a name="get_container"></a>Queue:: get_container (STL/CLR)
+## <a name="queueget_container-stlclr"></a><a name="get_container"></a> Queue:: get_container (STL/CLR)
 
 Temel alınan kapsayıcıya erişir.
 
@@ -772,11 +772,11 @@ int main()
 a b c
 ```
 
-## <a name="queueoperator-stlclr"></a><a name="op_as"></a>Queue:: operator = (STL/CLR)
+## <a name="queueoperator-stlclr"></a><a name="op_as"></a> Queue:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 queue <Value, Container>% operator=(queue <Value, Container>% right);
@@ -826,7 +826,7 @@ a b c
 a b c
 ```
 
-## <a name="queuepop-stlclr"></a><a name="pop"></a>sıra::p op (STL/CLR)
+## <a name="queuepop-stlclr"></a><a name="pop"></a> sıra::p op (STL/CLR)
 
 Son öğeyi kaldırır.
 
@@ -874,7 +874,7 @@ a b c
 b c
 ```
 
-## <a name="queuepush-stlclr"></a><a name="push"></a>sıra::p USH (STL/CLR)
+## <a name="queuepush-stlclr"></a><a name="push"></a> sıra::p USH (STL/CLR)
 
 Yeni bir son öğe ekler.
 
@@ -915,11 +915,11 @@ int main()
 a b c
 ```
 
-## <a name="queuequeue-stlclr"></a><a name="queue"></a>Queue:: Queue (STL/CLR)
+## <a name="queuequeue-stlclr"></a><a name="queue"></a> Queue:: Queue (STL/CLR)
 
 Kapsayıcı bağdaştırıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 queue();
@@ -1008,7 +1008,7 @@ x x x x x
 x x x x x
 ```
 
-## <a name="queuereference-stlclr"></a><a name="reference"></a>Queue:: Reference (STL/CLR)
+## <a name="queuereference-stlclr"></a><a name="reference"></a> Queue:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -1057,7 +1057,7 @@ a b c
 a b x
 ```
 
-## <a name="queuesize-stlclr"></a><a name="size"></a>Queue:: size (STL/CLR)
+## <a name="queuesize-stlclr"></a><a name="size"></a> Queue:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -1069,7 +1069,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [Queue:: Empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md) `()` .
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [Queue:: Empty (STL/CLR)](#empty) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -1111,7 +1111,7 @@ size() = 2 after popping
 size() = 4 after adding 2
 ```
 
-## <a name="queuesize_type-stlclr"></a><a name="size_type"></a>Queue:: size_type (STL/CLR)
+## <a name="queuesize_type-stlclr"></a><a name="size_type"></a> Queue:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -1160,7 +1160,7 @@ a b c
 size difference = 2
 ```
 
-## <a name="queueto_array-stlclr"></a><a name="to_array"></a>Queue:: to_array (STL/CLR)
+## <a name="queueto_array-stlclr"></a><a name="to_array"></a> Queue:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -1210,7 +1210,7 @@ a b c d
 a b c
 ```
 
-## <a name="queuevalue_type-stlclr"></a><a name="value_type"></a>Queue:: value_type (STL/CLR)
+## <a name="queuevalue_type-stlclr"></a><a name="value_type"></a> Queue:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -1255,11 +1255,11 @@ int main()
 a b c
 ```
 
-## <a name="operator-queue-stlclr"></a><a name="op_neq"></a>işleç! = (kuyruk) (STL/CLR)
+## <a name="operator-queue-stlclr"></a><a name="op_neq"></a> işleç! = (kuyruk) (STL/CLR)
 
 Kuyruk eşit değil karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1326,11 +1326,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a>işleç &lt; (kuyruk) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lt"></a> işleç &lt; (kuyruk) (STL/CLR)
 
 Sıra karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1349,7 +1349,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, `left->` iki kuyruk öğe öğesine göre karşılaştırıldığı zaman, sol taraftaki bir süre önce sola doğru sıralı olup olmadığını test etmek için onu döndürür [:: size (STL/CLR)](../dotnet/queue-size-stl-clr.md) `() <` `right->size()` . *left* *right*
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, `left->` iki kuyruk öğe öğesine göre karşılaştırıldığı zaman, sol taraftaki bir süre önce sola doğru sıralı olup olmadığını test etmek için onu döndürür [:: size (STL/CLR)](#size) `() <` `right->size()` . *left* *right*
 
 ### <a name="example"></a>Örnek
 
@@ -1397,11 +1397,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a>operator &lt; = (kuyruk) (STL/CLR)
+## <a name="operatorlt-queue-stlclr"></a><a name="op_lteq"></a> operator &lt; = (kuyruk) (STL/CLR)
 
 Kuyruk küçüktür veya eşittir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1468,11 +1468,11 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-queue-stlclr"></a><a name="op_eq"></a>operator = = (Queue) (STL/CLR)
+## <a name="operator-queue-stlclr"></a><a name="op_eq"></a> operator = = (Queue) (STL/CLR)
 
 Kuyruk eşit karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1539,11 +1539,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a>işleç &gt; (kuyruk) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gt"></a> işleç &gt; (kuyruk) (STL/CLR)
 
 Sıra karşılaştırmadan daha büyük.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,
@@ -1610,11 +1610,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a>operator &gt; = (kuyruk) (STL/CLR)
+## <a name="operatorgt-queue-stlclr"></a><a name="op_gteq"></a> operator &gt; = (kuyruk) (STL/CLR)
 
 Sıra daha büyük veya eşit karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value,

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - dynamic column binding
 - providers [C++], dynamic column binding
 ms.assetid: 45e811e3-f5a7-4627-98cc-bf817c4e556e
-ms.openlocfilehash: 8a0b4c399bf25137be86d95102da9723c3116d51
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3eee52004e1418b3e756a78c8c2a04040d0bd7ff
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210983"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501850"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>Sağlayıcınızdaki Sütunları Dinamik Olarak Bağlama
 
@@ -23,7 +23,7 @@ Dinamik sütun bağlamaya gerçekten ihtiyacınız olduğundan emin olun. Bunun 
 
 ## <a name="to-implement-dynamic-column-binding"></a>Dinamik sütun bağlamayı uygulamak için
 
-1. Kodınızdan tüm `PROVIDER_COLUMN_MAP`öğeleri kaldırın.
+1. `PROVIDER_COLUMN_MAP`Kodınızdan her türlü öğeleri kaldırın.
 
 1. Kullanıcı kaydında (yapınızı) aşağıdaki bildirimi ekleyin:
 
@@ -31,9 +31,9 @@ Dinamik sütun bağlamaya gerçekten ihtiyacınız olduğundan emin olun. Bunun 
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);
     ```
 
-1. `GetColumnInfo` işlevini uygulayın. Bu işlev, bilgilerin nasıl depolandığını yerleştirir. Bu işlev için özellikleri veya diğer bilgileri almanız gerekebilir. Kendi bilgilerinizi eklemek için [COLUMN_ENTRY](../../data/oledb/column-entry.md) makroya benzer bir makro oluşturmak isteyebilirsiniz.
+1. İşlevini uygulayın `GetColumnInfo` . Bu işlev, bilgilerin nasıl depolandığını yerleştirir. Bu işlev için özellikleri veya diğer bilgileri almanız gerekebilir. Kendi bilgilerinizi eklemek için [COLUMN_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#column_entry) makroya benzer bir makro oluşturmak isteyebilirsiniz.
 
-   Aşağıdaki örnekte bir `GetColumnInfo` işlevi gösterilmektedir.
+   Aşağıdaki örnek bir işlevi gösterir `GetColumnInfo` .
 
     ```cpp
     // Check the property flag for bookmarks, if it is set, set the zero
@@ -88,4 +88,4 @@ Dinamik sütun bağlamaya gerçekten ihtiyacınız olduğundan emin olun. Bunun 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)
+[OLE DB sağlayıcı şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)

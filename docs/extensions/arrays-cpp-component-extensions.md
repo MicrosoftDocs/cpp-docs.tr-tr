@@ -12,27 +12,27 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-ms.openlocfilehash: ecd8425bf7bcc9772d7b1327add79b89aea629a7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 814be57caafed117a1403105d46326ac53682578
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182246"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500895"
 ---
 # <a name="arrays-ccli-and-ccx"></a>Diziler (C++/CLI ve C++/CX)
 
-/CX içindeki C++`Platform::Array<T>` türü veya/CLI içindeki C++ **Array** anahtar sözcüğü, belirtilen bir tür ve başlangıç değerinin dizisini bildirir.
+`Platform::Array<T>`C++/cx içindeki tür veya c++/CLI içindeki **Array** anahtar sözcüğü, belirtilen bir tür ve başlangıç değerinin dizisini bildirir.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
 Dizi, bildirimde kapanış açılı ayracından (>) sonra,-Object (^) değiştiricisi kullanılarak bildirilmelidir.
 Dizinin öğe sayısı türün bir parçası değil. Bir dizi değişkeni, farklı boyutlardaki dizilere başvurabilir.
 
-Standart C++olarak, alt simge, işaretçi aritmetiği için bir eş anlamlı değildir ve bu değildir.
+Standart C++ ' dan farklı olarak, alt simge, işaretçi aritmetiği için bir eş anlamlı değildir ve ilgili değildir.
 
 Diziler hakkında daha fazla bilgi için bkz.
 
-- [Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma](../dotnet/how-to-use-arrays-in-cpp-cli.md)
+- [Nasıl yapılır: C++/CLı ' da dizileri kullanma](../dotnet/how-to-use-arrays-in-cpp-cli.md)
 
 - [Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)
 
@@ -53,10 +53,10 @@ Sözdiziminin ilk örneği, dizi ayırmak için **ref New** Aggregate anahtar s�
 ```
 
 *ilerini*<br/>
-Seçim Bu depolama sınıfı Belirticilerinin bir veya daha fazlası: [kesilebilir](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).
+Seçim Bu depolama sınıfı Belirticilerinin bir veya daha fazlası: [kesilebilir](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/extern-cpp.md), [static](../cpp/static-members-cpp.md).
 
 *dizi türü*<br/>
-Dizi değişkeninin türü. Geçerli türler Windows Çalışma Zamanı sınıflar ve temel türler, başvuru sınıfları ve yapılar, değer sınıfları ve yapılar ve yerel işaretçiler (`type*`).
+Dizi değişkeninin türü. Geçerli türler Windows Çalışma Zamanı sınıflar ve temel türler, başvuru sınıfları ve yapılar, değer sınıfları ve yapılar ve yerel işaretçiler ( `type*` ).
 
 *sırası*<br/>
 Seçim Dizinin boyut sayısı. 1 olmalıdır.
@@ -68,11 +68,11 @@ Dizi değişkeninin adı.
 Diziyi başlatacak değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdür. Ancak, *başlatma türünden* *dizi türüne*dönüştürme varsa türler farklı olabilir; Örneğin, *başlatma türü* *dizi türünden*türetildiyse.
 
 *başlatma-listeleme*<br/>
-Seçim Dizi öğelerini başlatacak küme ayraçları içindeki bir virgülle ayrılmış değerler listesi. Örneğin, tek boyutlu 3 öğe dizisi bildiren *sıralama boyutu listesi* `(3)`, *başlatma listesi* `{1,2,3}`olabilir.
+Seçim Dizi öğelerini başlatacak küme ayraçları içindeki bir virgülle ayrılmış değerler listesi. Örneğin, tek boyutlu 3 öğe dizisi bildiren *sıralama boyutu-listesi* ise `(3)` , *başlatma listesi* olabilir `{1,2,3}` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir türün `__is_ref_array(type)`ile başvuru sayılı bir dizi olup olmadığını derleme zamanında tespit edebilirsiniz. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir türün ile başvuru sayılı bir dizi olup olmadığını derleme zamanında tespit edebilirsiniz `__is_ref_array(type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -109,10 +109,10 @@ Sözdiziminin ilk örneği bir dizi ayırmak için **gcnew** anahtar sözcüğü
 ```
 
 *ilerini*<br/>
-Seçim Bu depolama sınıfı Belirticilerinin bir veya daha fazlası: [kesilebilir](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).
+Seçim Bu depolama sınıfı Belirticilerinin bir veya daha fazlası: [kesilebilir](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/extern-cpp.md), [static](../cpp/static-members-cpp.md).
 
 *dizi türü*<br/>
-Dizi değişkeninin türü. Geçerli türler Windows Çalışma Zamanı sınıfları ve temel türleri, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları, yerel işaretçiler (`type*`) ve yerel POD (düz eski veriler) türleri.
+Dizi değişkeninin türü. Geçerli türler Windows Çalışma Zamanı sınıflar ve temel türler, başvuru sınıfları ve yapılar, değer sınıfları ve yapılar, yerel işaretçiler ( `type*` ) ve yerel Pod (düz eski veriler) türleridir.
 
 *sırası*<br/>
 Seçim Dizinin boyut sayısı. Varsayılan değer 1 ' dir; maksimum değer 32 ' dir. Dizinin her boyutu bir dizidir.
@@ -129,21 +129,21 @@ Dizideki her boyutun boyutunun virgülle ayrılmış bir listesi. Alternatif ola
 *başlatma-listeleme*<br/>
 Seçim Dizi öğelerini başlatacak küme ayraçları içindeki bir virgülle ayrılmış değerler listesi. Ya da birden çok boyutlu bir dizide öğeleri başlatacak olan iç içe *başlatma* listesi öğelerinin virgülle ayrılmış listesi.
 
-Örneğin, tek boyutlu 3 öğe dizisi bildiren *sıralama boyutu listesi* `(3)`, *başlatma listesi* `{1,2,3}`olabilir. İlk boyutta 3 öğeden oluşan üç boyutlu bir dizi bildiren *sıralama boyutu listesi* `(3,2,4)`, ikincisi 2 öğe ve üçüncü, *başlatma listesindeki* 4 öğe `{{1,2,3},{0,0},{-5,10,-21,99}}`olabilir.)
+Örneğin, tek boyutlu 3 öğe dizisi bildiren *sıralama boyutu-listesi* ise `(3)` , *başlatma listesi* olabilir `{1,2,3}` . İlk boyutta 3 öğeden oluşan üç boyutlu bir dizi bildiren, *sıralama-boyut-liste* ise, `(3,2,4)` ikincinin 2 öğesi ve üçüncü, *başlatma listesindeki* 4 öğe olabilir `{{1,2,3},{0,0},{-5,10,-21,99}}` .)
 
 ### <a name="remarks"></a>Açıklamalar
 
 **dizi** [Platform, Default ve CLI namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md) ad alanıdır.
 
-Standart C++gibi, bir dizinin dizinleri sıfır tabanlıdır ve köşeli ayraçlar ([]) kullanılarak bir dizi alt simge olur. Standart C++aksine, çok boyutlu bir dizinin dizinleri her boyut için bir dizi kare ayracı ([]) işleci yerine her boyut için bir dizin listesinde belirtilir. Örneğin *, tanımlayıcı [* *index1*] [ *index2*] *yerine [* *index1*, *index2*].
+Standart C++ gibi, bir dizinin dizinleri sıfır tabanlıdır ve köşeli ayraçlar ([]) kullanılarak bir dizi alt simge olur. Standart C++ ' dan farklı olarak, çok boyutlu bir dizinin dizinleri her boyut için bir dizi köşeli ayraç ([]) işleci yerine her boyut için bir dizin listesinde belirtilir. Örneğin *, tanımlayıcı [**index1*] [ *index2*] *yerine [**index1*, *index2*].
 
-Tüm yönetilen diziler `System::Array`devralınır. `System::Array` herhangi bir yöntemi veya özelliği doğrudan dizi değişkenine uygulanabilir.
+Tüm yönetilen diziler öğesinden devralınır `System::Array` . Herhangi bir yöntemi veya özelliği `System::Array` doğrudan dizi değişkenine uygulanabilir.
 
 Öğe türü bir yönetilen sınıfa işaretçi olan bir dizi ayırdığınızda, öğeler 0 ' dan başlatılır.
 
-Öğe türü bir değer `V`türü olan bir dizi ayırdığınızda, `V` için varsayılan Oluşturucu her dizi öğesine uygulanır. Daha fazla bilgi için bkz. [ C++ yerel türlere .NET Framework eşdeğerleri (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md).
+Öğe türü bir değer türü olan bir dizi ayırdığınızda `V` , için varsayılan Oluşturucu `V` her dizi öğesine uygulanır. Daha fazla bilgi için bkz. [C++ yerel türlerine .NET Framework eşdeğerleri (c++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet).
 
-Derleme zamanında, bir türün `__is_ref_array(type)`olan ortak dil çalışma zamanı (CLR) dizisi olup olmadığını tespit edebilirsiniz. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Derleme zamanında, bir türün ile ortak dil çalışma zamanı (CLR) dizisi olup olmadığını tespit edebilirsiniz `__is_ref_array(type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -170,4 +170,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

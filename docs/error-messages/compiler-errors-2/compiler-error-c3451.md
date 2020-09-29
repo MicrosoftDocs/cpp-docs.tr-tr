@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3451
 ms.assetid: a4897a69-e3e7-40bb-bb1c-598644904012
-ms.openlocfilehash: 2e0122dd53ba5318077dd33f22a07492c52db26b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d6a0d1234d8f25c6a55fffa7170f37aae27f5817
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756220"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501319"
 ---
 # <a name="compiler-error-c3451"></a>Derleyici hatası C3451
 
 ' Attribute ': yönetilmeyen öznitelik ' Type ' öğesine uygulanamıyor
 
-Bir C++ ÖZNITELIK bir clr türüne uygulanamaz. Daha fazla bilgi için bkz [ C++ . öznitelikler başvurusu](../../windows/attributes/attributes-alphabetical-reference.md) .
+C++ özniteliği bir CLR türüne uygulanamaz. Daha fazla bilgi için bkz. [C++ öznitelikleri başvurusu](../../windows/attributes/attributes-alphabetical-reference.md) .
 
 Daha fazla bilgi için bkz. [Kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md).
 
-Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir: CLR programlama kullanılarak Kullanıcı tanımlı bir öznitelikte [UUID](../../windows/uuid-cpp-attributes.md) özniteliğine artık izin verilmez. Bunun yerine <xref:System.Runtime.InteropServices.GuidAttribute> kullanın.
+Bu hata, Visual Studio 2005 için yapılan derleyici uygunluk işinin bir sonucu olarak oluşturulabilir: CLR programlama kullanılarak Kullanıcı tanımlı bir öznitelikte [UUID](../../windows/attributes/uuid-cpp-attributes.md) özniteliğine artık izin verilmez. Bunun yerine <xref:System.Runtime.InteropServices.GuidAttribute> kullanın.
 
 ## <a name="example"></a>Örnek
 

@@ -56,18 +56,18 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: 2ce5090d7e1c74607a82ddbb79afebe185a1dca7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f94cd631f1c6febdc07d53f84803b1203f4116bc
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838353"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502544"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
 Bir sağlayıcının veri kaynağına bir bağlantıyı temsil eden bir OLE DB veri kaynağı nesnesine karşılık gelir.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CDataSource
@@ -95,7 +95,7 @@ class CDataSource
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabilir. Bu oturumlar tarafından temsil edilir `CSession` . İle oturum oluşturmadan önce bağlantıyı açmak için [CDataSource:: Open](../../data/oledb/cdatasource-open.md) ' i çağırmanız gerekir `CSession::Open` .
+Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabilir. Bu oturumlar tarafından temsil edilir `CSession` . İle oturum oluşturmadan önce bağlantıyı açmak için [CDataSource:: Open](#open) ' i çağırmanız gerekir `CSession::Open` .
 
 Öğesinin nasıl kullanılacağına ilişkin bir örnek için `CDataSource` bkz. [CATDB](../../overview/visual-cpp-samples.md) örneği.
 
@@ -103,7 +103,7 @@ Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabili
 
 İşaretçiyi serbest bırakarak bağlantıyı kapatır `m_spInit` .
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void Close() throw();
@@ -113,7 +113,7 @@ void Close() throw();
 
 Şu anda açık olan bir veri kaynağının başlatma dizesini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetInitializationString(BSTR* pInitializationString,
@@ -140,7 +140,7 @@ Elde edilen başlatma dizesi daha sonra bu veri kaynağı bağlantısını yenid
 
 Bağlı veri kaynağı nesnesi için istenen özellik bilgilerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetProperties(ULONG ulPropIDSets,
@@ -159,13 +159,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tek bir özelliği almak için [GetProperty](../../data/oledb/cdatasource-getproperty.md)kullanın.
+Tek bir özelliği almak için [GetProperty](#getproperty)kullanın.
 
 ## <a name="cdatasourcegetproperty"></a><a name="getproperty"></a> CDataSource:: GetProperty
 
 Bağlı veri kaynağı nesnesi için belirtilen özelliğin değerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetProperty(const GUID& guid,
@@ -190,13 +190,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok özellik almak için [GetProperties](../../data/oledb/cdatasource-getproperties.md)kullanın.
+Birden çok özellik almak için [GetProperties](#getproperties)kullanın.
 
 ## <a name="cdatasourceopen"></a><a name="open"></a> CDataSource:: Open
 
 , Veya bilinen bir ad kullanarak bir veri kaynağına bağlantı açar `CLSID` `ProgID` `CEnumerator` veya kullanıcıya bir Bulucu iletişim kutusu ister.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Open(const CLSID& clsid,
@@ -292,7 +292,7 @@ Aşağıdaki kod, OLE DB şablonlarıyla bir Jet 4,0 veri kaynağının nasıl a
 
 Kullanıcı tarafından sağlanan dosya adı tarafından belirtilen bir dosyadaki veri kaynağını açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
@@ -317,7 +317,7 @@ Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kayn
 
 Kullanıcı tarafından sağlanan başlatma dizesi tarafından belirtilen bir veri kaynağını açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
@@ -346,7 +346,7 @@ Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kayn
 
 Bu yöntem kullanıcıya bir iletişim kutusu sorar, ardından Kullanıcı tarafından belirtilen dosyayı kullanarak bir veri kaynağı açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
@@ -377,7 +377,7 @@ Bu yöntem oledb32.dll; içindeki hizmet bileşenlerini kullanarak bir veri kayn
 
 oledb32.dll ' deki hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT OpenWithServiceComponents (const CLSID clsid,

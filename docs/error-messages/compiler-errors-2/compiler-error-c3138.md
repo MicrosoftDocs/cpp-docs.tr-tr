@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3138
 ms.assetid: 364ee9e8-9358-410e-bd35-9c4a226a3753
-ms.openlocfilehash: 3980bebdae0301dfbbb3cea91d6631053a118995
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: aca5c78c07852317308427d935eef5942523512b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761264"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501399"
 ---
 # <a name="compiler-error-c3138"></a>Derleyici hatası C3138
 
 ' interface ': bir ' Attribute ' arabirimi IDispatch 'ten devralınmalıdır veya IDispatch 'ten devralan bir arabirimden
 
-[Dual](../../windows/dual.md) veya [dispınterface](../../windows/dispinterface.md) özniteliklerine sahip bir arabirim doğrudan veya dolaylı temel arabirim olarak `IDispatch` sahip değildir.
+[Dual](../../windows/attributes/dual.md) veya [dispınterface](../../windows/attributes/dispinterface.md) özniteliklerine sahip bir arabirim `IDispatch` doğrudan veya dolaylı temel arabirim olarak bulunmaz.
 
 Aşağıdaki örnek C3138 oluşturur:
 

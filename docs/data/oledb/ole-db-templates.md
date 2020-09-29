@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-ms.openlocfilehash: 00a54a65b6f23df358d1e140eeb1c3f9174a6ace
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d3b709bbebdf040ac818d2d2d44576cf49aafdd4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209878"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500910"
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 
-OLE DB şablonlar OLE DB veri erişimini daha kolay hale getirir. Visual C++ , yaygın olarak kullanılan OLE DB arabirimlerinin birçoğunu uygulayan şablon sınıfları sağlar. Bir sunucu (sağlayıcı) C++ uygulaması yazmak için OLE DB istemci (tüketici) uygulaması ve sağlayıcı şablonları yazmak üzere görsel tüketici şablonlarını kullanabilirsiniz.
+OLE DB şablonlar OLE DB veri erişimini daha kolay hale getirir. Visual C++, yaygın olarak kullanılan OLE DB arabirimlerinin çoğunu uygulayan şablon sınıfları sağlar. Bir sunucu (sağlayıcı) uygulaması yazmak için bir OLE DB istemci (tüketici) uygulaması ve sağlayıcı şablonları yazmak üzere Visual C++ tüketici şablonlarını kullanabilirsiniz.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -42,16 +42,16 @@ OLE DB tüketici şablonlarıyla ilgili kavramsal malzemeleri açıklar.
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 OLE DB sağlayıcısı şablonlarıyla ilgili kavramsal malzemeleri açıklar.
 
-[OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)<br/>
+[OLE DB tüketicisi oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)<br/>
 OLE DB şablonları tüketicisini oluşturmayı açıklar.
 
-[Basit Bir Salt Okunur Sağlayıcı Oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
+[Basit bir salt okunurdur sağlayıcı oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
 Bir çift dizeyi okuyan basit bir salt okunur sağlayıcı oluşturmayı açıklar.
 
-[Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)<br/>
+[Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)<br/>
 Veri deposuna yazdığımız sağlayıcıları oluşturmayı açıklar.
 
-[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)<br/>
+[OLE DB tüketici öznitelikleri](../../windows/attributes/ole-db-consumer-attributes.md)<br/>
 Çalışan OLE DB tüketicilerini oluşturmak için OLE DB tüketici şablonlarına göre kod eklemek için basitleştirilmiş bir arabirim ele alınmaktadır.
 
 [Etkin Şablon kitaplığı (ATL) başvurusu](../../atl/atl-com-desktop-components.md)<br/>

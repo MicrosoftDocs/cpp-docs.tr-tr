@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: 63996af56f03890c9a78e95743367d47416d5d48
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2fceb57e062b9179245ba235fb497ff526a6660e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214834"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501685"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Visual Studio 'da CLR 'yi hedefleyen bir C++/CLı programını derleme
 
@@ -84,7 +84,7 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. Visual Studio 'da yeni oluşturulan sekmesine tıklayın ve geçerli bir Visual C++ program yazın veya örnek programlardan birini kopyalayıp yapıştırın.
 
-   Örneğin, [nasıl yapılır: metin dosyası yazma (C++/CLI)](how-to-write-a-text-file-cpp-cli.md) örnek programını kullanabilirsiniz (programlama kılavuzunun **Dosya işleme ve g/ç** düğümünde).
+   Örneğin, [nasıl yapılır: metin dosyası yazma (C++/CLI)](./file-handling-and-i-o-cpp-cli.md#write_text) örnek programını kullanabilirsiniz (programlama kılavuzunun **Dosya işleme ve g/ç** düğümünde).
 
    Örnek programı kullanıyorsanız, **`gcnew`** **`new`** bir .net nesnesi oluştururken yerine anahtar sözcüğünü kullanacağınızı ve **`gcnew`** bir işaretçi () yerine bir tanıtıcı () döndürdüğünü unutmayın `^` `*` :
 

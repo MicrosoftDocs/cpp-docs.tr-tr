@@ -38,18 +38,18 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-ms.openlocfilehash: 5c26a3f1e8b5589afebd72c7b722ab9ed9e4229d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d8fa41b3a06acb8f28334658f2494295593b99be
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838314"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502514"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 
 OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimini kullanarak OLE DB hata işleme için destek sağlar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CDBErrorInfo
@@ -74,13 +74,13 @@ class CDBErrorInfo
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu arabirim kullanıcıya bir veya daha fazla hata kaydı döndürür. Hata kayıtlarının sayımını almak için önce [CDBErrorInfo:: GetErrorRecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) öğesini çağırın. Ardından, her bir kayıtla ilgili hata bilgilerini almak için [CDBErrorInfo:: GetAllErrorInfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md)gibi erişim işlevlerinden birini çağırın.
+Bu arabirim kullanıcıya bir veya daha fazla hata kaydı döndürür. Hata kayıtlarının sayımını almak için önce [CDBErrorInfo:: GetErrorRecords](#geterrorrecords) öğesini çağırın. Ardından, her bir kayıtla ilgili hata bilgilerini almak için [CDBErrorInfo:: GetAllErrorInfo](#getallerrorinfo)gibi erişim işlevlerinden birini çağırın.
 
 ## <a name="cdberrorinfogetallerrorinfo"></a><a name="getallerrorinfo"></a> CDBErrorInfo:: GetAllErrorInfo
 
 Bir hata kaydında bulunan tüm hata bilgisi türlerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetAllErrorInfo(ULONG ulRecordNum,
@@ -130,7 +130,7 @@ Başarılı olursa S_OK. *OLE DB Programcı 'nin* diğer dönüş değerleri iç
 
 Hata hakkında dönüş kodu ve sağlayıcıya özgü hata numarası gibi temel bilgileri döndürmek için [IErrorRecords:: GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) öğesini çağırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
@@ -149,7 +149,7 @@ Standart HRESULT.
 
 Özel bir hata nesnesindeki bir arabirime bir işaretçi döndürmek için [IErrorRecords:: GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) öğesini çağırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetCustomErrorObject(ULONG ulRecordNum,
@@ -168,7 +168,7 @@ Standart HRESULT.
 
 Belirtilen kayda bir [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimi işaretçisi döndürmek Için [IErrorRecords:: GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetErrorInfo(ULONG ulRecordNum,
@@ -187,7 +187,7 @@ Standart HRESULT.
 
 Hata parametrelerini döndürmek için [IErrorInfo:: GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) ' i çağırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetErrorParameters(ULONG ulRecordNum,
@@ -206,7 +206,7 @@ Standart HRESULT.
 
 Belirtilen nesne için hata kayıtlarını alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetErrorRecords(IUnknown* pUnk,

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DDV (dialog data validation) [MFC]
 - data validation [MFC], message boxes
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-ms.openlocfilehash: 99540214d1b903c66d350145c08ab657d12ef8f7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9de2db002d7f06e797531c09af0a021c402eec7d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616752"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502282"
 ---
 # <a name="dialog-data-validation"></a>İletişim Verisi Doğrulama
 
@@ -22,10 +22,10 @@ ms.locfileid: "84616752"
 
 Ayrıca, kendi özel DDX ve DDV yordamlarınızı tanımlayabilirsiniz. Bu ve DDX ve DDV 'in diğer yönleri hakkında ayrıntılı bilgi için bkz. [MFC teknik açıklaması 26](tn026-ddx-and-ddv-routines.md).
 
-[Üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md) , sizin için veri EŞLEMESINDEKI tüm ddx ve ddv çağrılarını yazar.
+[Üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) , sizin için veri EŞLEMESINDEKI tüm ddx ve ddv çağrılarını yazar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutusu Veri Değişimi ve Doğrulaması](dialog-data-exchange-and-validation.md)<br/>
+[İletişim kutusu veri değişimi ve doğrulaması](dialog-data-exchange-and-validation.md)<br/>
 [MFC’de İletişim Kutularıyla çalışma](life-cycle-of-a-dialog-box.md)<br/>
 [İletişim Kutusu Veri Değişimi](dialog-data-exchange.md)

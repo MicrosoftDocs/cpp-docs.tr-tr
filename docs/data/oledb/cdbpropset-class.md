@@ -32,18 +32,18 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: 48aa2e3e26bed7c9306ca3005231e464d7b7555b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 45772896cac520eba35ec475f8b6ae7bd2993045
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838263"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502469"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
 `DBPROPSET`Yapıdan devralır ve ayrıca, anahtar alanlarını ve erişim yöntemini Başlatan bir Oluşturucu ekler `AddProperty` .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CDBPropSet : public tagDBPROPSET
@@ -77,7 +77,7 @@ OLE DB sağlayıcıları ve tüketiciler yapıların `DBPROPSET` dizilerini geç
 
 Özellik kümesine bir özellik ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool AddProperty(DWORD dwPropertyID,
@@ -128,7 +128,7 @@ bool AddProperty(DWORD dwPropertyID,
 
 Oluşturucu. `rgProperties` `cProperties` `guidPropertySet` [Dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapısının, ve alanlarını başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CDBPropSet(const GUID& guid);
@@ -150,7 +150,7 @@ CDBPropSet();
 
 `guidPropertySet`Yapıdaki alanı ayarlar `DBPROPSET` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void SetGUID(const GUID& guid) throw();
@@ -163,13 +163,13 @@ void SetGUID(const GUID& guid) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu alan, [Oluşturucu](../../data/oledb/cdbpropset-cdbpropset.md) tarafından da ayarlanabilir.
+Bu alan, [Oluşturucu](#cdbpropset) tarafından da ayarlanabilir.
 
 ## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a> CDBPropSet:: operator =
 
 Bir özellik kümesinin içeriğini başka bir özellik kümesine atar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CDBPropSet& operator =(CDBPropSet& propset) throw();

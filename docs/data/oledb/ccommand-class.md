@@ -49,18 +49,18 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: beabe73ff4ce0e6be8aaccfcdc636adc1ba04d5c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 109998dd742828b3c41672fa2afa8716e4687f6a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838444"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501008"
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 
 Bir komutu ayarlamak ve yürütmek için yöntemler sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class TAccessor = CNoAccessor,
@@ -121,7 +121,7 @@ Sağlayıcı saklı yordamları desteklemediğinden, saklı yordamları Jet içi
 
 Komutuyla ilişkili erişimci satır kümesini yayınlar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void Close();
@@ -131,7 +131,7 @@ void Close();
 
 Bir komut satır kümesi, sonuç kümesi erişimcisi ve (isteğe bağlı olarak, parametreleri desteklemeyen ve parametre erişimcisi gerektirmeyen) bir parametre erişimcisi kullanır.
 
-Bir komut yürüttüğünüzde, komutundan sonra hem hem de `Close` [ReleaseCommand](../../data/oledb/ccommand-releasecommand.md) çağırmalısınız.
+Bir komut yürüttüğünüzde, komutundan sonra hem hem de `Close` [ReleaseCommand](#releasecommand) çağırmalısınız.
 
 Aynı komutu tekrar tekrar çalıştırmak istediğinizde, çağrılmadan önce çağırarak her sonuç kümesi erişimcisini serbest bırakmanız gerekir `Close` `Execute` . Serinin sonunda, çağırarak parametre erişimcisini serbest bırakmanız gerekir `ReleaseCommand` . Diğer bir yaygın senaryo, çıkış parametrelerine sahip saklı bir yordamı çağırıyor. Birçok sağlayıcıda (SQL Server için OLE DB sağlayıcısı gibi), sonuç kümesi erişimcisini kapatıncaya kadar çıkış parametresi değerlerine erişilemez. `Close`Döndürülen satır kümesini ve sonuç kümesi erişimcisini kapatmak için çağrı yapın, bu nedenle çıkış parametre değerlerini almanızı sağlar.
 
@@ -145,7 +145,7 @@ Aşağıdaki örnek, `Close` `ReleaseCommand` aynı komutu tekrar tekrar çalı�
 
 Varsa, bir sonraki sonuç kümesini getirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,
@@ -174,7 +174,7 @@ Bu işlevi yalnızca `CCommand` *TMultiple*şablon parametresini ayarlayarak bir
 
 Yürütür ve isteğe bağlı olarak komutunu bağlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Open(const CSession& session,
@@ -213,7 +213,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 'ndaki Komutun çalıştırılacağı oturum.
 
 *wszCommand*<br/>
-'ndaki Yürütülecek komut, Unicode dizesi olarak geçirilir. Kullanılırken NULL olabilir `CAccessor` , bu durumda komut [DEFINE_COMMAND](../../data/oledb/define-command.md) makroya geçirilen değerden alınır. Ayrıntılar için *OLE DB Programcı başvurusunda* bkz. [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
+'ndaki Yürütülecek komut, Unicode dizesi olarak geçirilir. Kullanılırken NULL olabilir `CAccessor` , bu durumda komut [DEFINE_COMMAND](./macros-and-global-functions-for-ole-db-consumer-templates.md#define_command) makroya geçirilen değerden alınır. Ayrıntılar için *OLE DB Programcı başvurusunda* bkz. [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
 
 *szCommand*<br/>
 'ndaki *WszCommand* ile aynıdır, bu parametre bir ANSI komut dizesi alır. Bu yöntemin dördüncü formu NULL değer alabilir. Ayrıntılar için bu konunun devamındaki "açıklamalar" bölümüne bakın.
@@ -253,16 +253,16 @@ Standart HRESULT.
 
 Öğesinin `Open` **`int`** varsayılan değeri null olan türde olduğundan, üçüncü biçim komut dizesinin null olmasına izin verir. Çağırma için `Open(session, NULL);` veya null türünde olduğu için sağlanır `Open(session);` **`int`** . Bu sürüm için parametresinin NULL olduğunu onaylar ve onaylar **`int`** .
 
-`Open`Zaten bir komut oluşturduğunuz ve tek bir [hazırlama](../../data/oledb/ccommand-prepare.md) ve birden çok yürütme gerçekleştirmek istediğiniz zaman dördüncü formunu kullanın.
+`Open`Zaten bir komut oluşturduğunuz ve tek bir [hazırlama](#prepare) ve birden çok yürütme gerçekleştirmek istediğiniz zaman dördüncü formunu kullanın.
 
 > [!NOTE]
 > `Open` çağrılar `Execute` olan çağırır `GetNextResult` .
 
 ## <a name="ccommandcreate"></a><a name="create"></a> CCommand:: Create
 
-Belirtilen oturum için bir komut oluşturmak için [CCommand:: CreateCommand](../../data/oledb/ccommand-createcommand.md) çağırır, ardından komut metnini belirtmek Için [ICommandText:: setCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) çağırır.
+Belirtilen oturum için bir komut oluşturmak için [CCommand:: CreateCommand](#createcommand) çağırır, ardından komut metnini belirtmek Için [ICommandText:: setCommandText](/previous-versions/windows/desktop/ms709825(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CCommandBase::Create(const CSession& session,
@@ -300,7 +300,7 @@ Standart HRESULT.
 
 Yeni bir komut oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CCommandBase::CreateCommand(const CSession& session) throw ();
@@ -323,7 +323,7 @@ Bu yöntem, belirtilen oturum nesnesini kullanarak bir komut oluşturur.
 
 Komutun parametrelerinin, adlarının ve türlerinin bir listesini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,
@@ -343,7 +343,7 @@ Standart HRESULT.
 
 Geçerli komutu doğrular ve iyileştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();
@@ -366,7 +366,7 @@ Bu yöntem, [ICommandText::P repof](/previous-versions/windows/desktop/ms718370(
 
 Parametre erişimcisini serbest bırakır, ardından komutun kendisini yayınlar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void CCommandBase::ReleaseCommand() throw();
@@ -374,13 +374,13 @@ void CCommandBase::ReleaseCommand() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ReleaseCommand` , ile birlikte kullanılır `Close` . Bkz. kullanım ayrıntıları için [kapatma](../../data/oledb/ccommand-close.md) .
+`ReleaseCommand` , ile birlikte kullanılır `Close` . Bkz. kullanım ayrıntıları için [kapatma](#close) .
 
 ## <a name="ccommandsetparameterinfo"></a><a name="setparameterinfo"></a> CCommand:: SetParameterInfo
 
 Her komut parametresinin yerel türünü belirtir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,
@@ -400,7 +400,7 @@ Standart HRESULT.
 
 Geçerli komut yürütme planını atar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CCommandBase::Unprepare() throw();

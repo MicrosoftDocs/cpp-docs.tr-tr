@@ -22,18 +22,18 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: 8d435cd8c5c8723d008be98482631f081c967058
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7d31933b162a74db31bdd3c65dc68e396a3896c4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845126"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501729"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 
 [ICommandText](/previous-versions/windows/desktop/ms714914(v=vs.85)) arabirimi için bir uygulama sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T >
@@ -56,7 +56,7 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 | Ad | Açıklama |
 |-|-|
-|[GetCommandText](#getcommandtext)|[SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.|
+|[GetCommandText](#getcommandtext)|[SetCommandText](#setcommandtext)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.|
 |[SetCommandText](#setcommandtext)|Komut metnini ayarlar ve varolan komut metnini değiştirir.|
 
 ### <a name="data-members"></a>Veri üyeleri
@@ -71,9 +71,9 @@ Komutlarda zorunlu arabirim.
 
 ## <a name="icommandtextimplgetcommandtext"></a><a name="getcommandtext"></a> ICommandTextImpl:: GetCommandText
 
-[SetCommandText](../../data/oledb/icommandtextimpl-setcommandtext.md)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.
+[SetCommandText](#setcommandtext)' e yapılan son çağrı tarafından ayarlanan metin komutunu döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetCommandText)(GUID * pguidDialect,
@@ -88,7 +88,7 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect,
 
 Komut metnini ayarlar ve varolan komut metnini değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(SetCommandText)(REFGUID rguidDialect,
@@ -103,7 +103,7 @@ STDMETHOD(SetCommandText)(REFGUID rguidDialect,
 
 Komut metni dizesini depolar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CComBSTR m_strCommandText;

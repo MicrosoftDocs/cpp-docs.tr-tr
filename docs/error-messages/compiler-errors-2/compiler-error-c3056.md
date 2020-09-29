@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3056
 ms.assetid: 9500173d-870b-49b3-8e88-0ee93586d19a
-ms.openlocfilehash: 97a403420e5923f23f804eeaff33af1698ff6a53
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: dd000e56d5fc24929e4d06e1bf0100ad9647610a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761162"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501593"
 ---
 # <a name="compiler-error-c3056"></a>Derleyici hatası C3056
 
 ' symbol ': simge ' threadprivate ' yönergesiyle aynı kapsamda değil
 
-[Threadprivate](../../parallel/openmp/reference/threadprivate.md) yan tümcesinde kullanılan bir sembol, `threadprivate` yan tümcesiyle aynı kapsamda olmalıdır.
+[Threadprivate](../../parallel/openmp/reference/openmp-directives.md#threadprivate) yan tümcesinde kullanılan bir simgenin yan tümcesiyle aynı kapsamda olması gerekir `threadprivate` .
 
 Aşağıdaki örnek C3056 oluşturur:
 

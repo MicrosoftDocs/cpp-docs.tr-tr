@@ -51,18 +51,18 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: c88554d717888719ad6d805a2871489ce4b0df32
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2f2d3938d63e5e67fc501d52d269c06f6b144ac8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845594"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91501826"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
 [ICommand](/previous-versions/windows/desktop/ms709737(v=vs.85)) arabirimi için uygulama sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, class CommandBase = ICommand>
@@ -110,7 +110,7 @@ Komut nesnesinde zorunlu arabirim.
 
 Geçerli komut yürütmesini iptal eder.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(Cancel)();
@@ -124,7 +124,7 @@ STDMETHOD(Cancel)();
 
 Geçerli komut yürütmesini iptal eder.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CancelExecution();
@@ -132,9 +132,9 @@ HRESULT CancelExecution();
 
 ## <a name="icommandimplcreaterowset"></a><a name="createrowset"></a> Iommandimpl:: CreateRowset
 
-Tek bir satır kümesi oluşturmak için [Execute](../../data/oledb/icommandimpl-execute.md) tarafından çağırılır.
+Tek bir satır kümesi oluşturmak için [Execute](#execute) tarafından çağırılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template template <class RowsetClass>
@@ -183,7 +183,7 @@ Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturma
 
 Komutunu yürütür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Execute(IUnknown* pUnkOuter,
@@ -201,13 +201,13 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 İstenen giden arabirim, bu işlevin oluşturduğu satır kümesi nesnesinden alınan bir arabirim olacaktır.
 
-`Execute`[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)çağırır. Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak üzere varsayılan uygulamayı geçersiz kılın.
+`Execute`[CreateRowset](#createrowset)çağırır. Birden fazla satır kümesi oluşturmak veya farklı satır kümeleri oluşturmak için kendi koşullarınızı sağlamak üzere varsayılan uygulamayı geçersiz kılın.
 
 ## <a name="icommandimplgetdbsession"></a><a name="getdbsession"></a> Iommandimpl:: GetDBSession
 
 Komutu oluşturan oturuma bir arabirim işaretçisi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetDBSession) (REFIID riid,
@@ -226,7 +226,7 @@ Oturumdan özellikleri almak için faydalıdır.
 
 Oluşturucu.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ICommandImpl();
@@ -236,7 +236,7 @@ ICommandImpl();
 
 Komutun iptal edilip edilmeyeceğini gösterir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 unsigned m_bCancel:1;
@@ -250,7 +250,7 @@ Bu değişkeni `Execute` komut sınıfınızın yönteminde alabilir ve uygun ş
 
 Yürütme sırasında komutun iptal edilip edilmeyeceğini gösterir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 unsigned m_bCancelWhenExecuting:1;
@@ -264,7 +264,7 @@ Varsayılan olarak **`true`** (iptal edilebilir).
 
 Komutun Şu anda yürütülmekte olup olmadığını gösterir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 unsigned m_bIsExecuting:1;

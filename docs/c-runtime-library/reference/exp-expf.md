@@ -36,18 +36,18 @@ helpviewer_keywords:
 - calculating exponentials
 - exp function
 ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
-ms.openlocfilehash: 44652e5d06d842bd2eb2e280409a1e55fc66f582
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: f6733f293f1c8f78e8143d9fdd395013147bbe83
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555897"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502104"
 ---
 # <a name="exp-expf-expl"></a>exp, expf, expl
 
 Üstel 'yi hesaplar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double exp(
@@ -79,7 +79,7 @@ Doğal logaritma tabanında *e tarafından üsl* olacak kayan nokta değeri.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
-|± Quiet NaN, belirsiz|Yok|_DOMAIN|
+|± Quiet NaN, belirsiz|Hiçbiri|_DOMAIN|
 |± Infinity|Geçersiz|_DOMAIN|
 |x ≥ 7.097827 e + 002|INTAM + taşma|TAŞMA|
 |X ≤-7.083964 e + 002|TAM aşağı + yetersız|ÖĞE|
@@ -99,7 +99,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |İşlev|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |--------------|---------------------|---|
 |**Exp**, **expf**, **expl**|\<math.h>|\<cmath> veya \<math.h>|
-|**Exp** makrosu| \<tgmath.h> || 
+|**Exp** makrosu| \<tgmath.h> ||
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

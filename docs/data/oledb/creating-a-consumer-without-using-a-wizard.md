@@ -4,12 +4,12 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumers, creating
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-ms.openlocfilehash: fff4146681e31f0f1fea9fbaa559de7c722740d2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 65add1fe0d47253cd8d7ae7a273286d712ce9db2
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211464"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500652"
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>Sihirbaz Kullanmadan bir Tüketici Oluşturma
 
@@ -17,7 +17,7 @@ Aşağıdaki örnek, varolan bir ATL projesine OLE DB tüketici desteği ekledi�
 
 **ATL OLE DB Tüketici Sihirbazı 'nı**kullanmadan OLE DB tüketici desteği eklemek için:
 
-- *Pch. h* dosyanızda aşağıdaki `#include` deyimlerini ekleyin:
+- *Pch. h* dosyanızda aşağıdaki `#include` deyimleri ekleyin:
 
     ```cpp
     #include <atlbase.h>
@@ -40,13 +40,13 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
     class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>
     ```
 
-- COM başlatmak için `CoInitialize` çağırın. Bu, ana kodda çağırılır. Örneğin:
+- `CoInitialize`Com başlatma çağrısı. Bu, ana kodda çağırılır. Örneğin:
 
     ```cpp
     HRESULT hr = CoInitialize(NULL);
     ```
 
-- [CDataSource:: Open](../../data/oledb/cdatasource-open.md) veya çeşitlerinden birini çağırın.
+- [CDataSource:: Open](./cdatasource-class.md#open) veya çeşitlerinden birini çağırın.
 
 - Veri kaynağına bir bağlantı açın, oturumu açın ve satır kümesini açın ve başlatın (Ayrıca bir komut varsa, yürütün):
 
@@ -56,7 +56,7 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
     hr = rs.Open();            // (Open also executes the command)
     ```
 
-- İsteğe bağlı olarak, `CDBPropSet::AddProperty` kullanarak satır kümesi özelliklerini ayarlayın ve `rs.Open`bir parametre olarak geçirin. Bunun nasıl yapıldığını gösteren bir örnek için bkz. [Tüketici Sihirbazı tarafından oluşturulan yöntemler](../../data/oledb/consumer-wizard-generated-methods.md)`GetRowsetProperties`.
+- İsteğe bağlı olarak, kullanarak satır kümesi özelliklerini ayarlayın `CDBPropSet::AddProperty` ve bunları parametresi olarak geçirin `rs.Open` . Bunun nasıl yapıldığını gösteren bir örnek için, bkz `GetRowsetProperties` . [Tüketici Sihirbazı tarafından oluşturulan Yöntemler](../../data/oledb/consumer-wizard-generated-methods.md).
 
 - Artık verileri almak/işlemek için satır kümesini kullanabilirsiniz.
 
@@ -68,9 +68,9 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
     ds.Close();
     ```
 
-   Bir komut kullanıyorsanız, `Close`sonra `ReleaseCommand` çağırmak isteyebilirsiniz. [CCommand:: Close](../../data/oledb/ccommand-close.md) içindeki kod örneği, `Close` ve `ReleaseCommand`nasıl çağrılacağını gösterir.
+   Bir komut kullanıyorsanız, daha sonra çağırmak isteyebilirsiniz `ReleaseCommand` `Close` . [CCommand:: Close](./ccommand-class.md#close) içindeki kod örneği, ve ' nin nasıl çağrılacağını gösterir `Close` `ReleaseCommand` .
 
-- Uninitialize COM 'a `CoUnInitialize` çağırın. Bu, ana kodda çağırılır.
+- `CoUnInitialize`UNINITIALIZE com öğesine çağrı. Bu, ana kodda çağırılır.
 
     ```cpp
     CoUninitialize();
@@ -78,4 +78,4 @@ Programlı olarak, bir tüketici genellikle aşağıdaki işlem dizisini gerçek
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)
+[OLE DB tüketicisi oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)

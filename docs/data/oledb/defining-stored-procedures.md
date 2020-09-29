@@ -7,16 +7,16 @@ helpviewer_keywords:
 - stored procedures, defining
 - stored procedures, OLE DB
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-ms.openlocfilehash: 9bab086bf6982eae5779d3199cfd2ac2c8efe77f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 47f68bcf5c62aa54cc5ee60de166e1085f5a3fc5
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211010"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91500926"
 ---
 # <a name="defining-stored-procedures"></a>Saklı Yordamları Tanımlama
 
-Saklı yordam çağrılmadan önce, [DEFINE_COMMAND](../../data/oledb/define-command.md) makrosunu kullanarak, önce onu tanımlamanız gerekir. Komutu tanımlarken parametre işaretçisi olarak bir soru işareti (?) ile parametreleri belirtin:
+Saklı yordam çağrılmadan önce, [DEFINE_COMMAND](./macros-and-global-functions-for-ole-db-consumer-templates.md#define_command) makrosunu kullanarak, önce onu tanımlamanız gerekir. Komutu tanımlarken parametre işaretçisi olarak bir soru işareti (?) ile parametreleri belirtin:
 
 ```cpp
 DEFINE_COMMAND_EX(CMySProcAccessor, _T("{INSERT {name, phone} INTO shippers (?,?)}"))
@@ -35,7 +35,7 @@ BEGIN_PARAM_MAP(CMySProcAccessor)
 END_PARAM_MAP()
 ```
 
-Önceki örnekte olduğu gibi bir saklı yordam tanımlanmaktadır. Genellikle kodun verimli bir şekilde yeniden kullanılması için bir veritabanı `Sales by Year` veya `dt_adduserobject`gibi adlara sahip önceden tanımlanmış bir saklı yordamlar kümesi içerir. Tanımlarını SQL Server Enterprise Manager kullanarak görüntüleyebilirsiniz. Bunları şu şekilde çağırabilirsiniz (öğesinin yerleşimi *?* Parametreler, saklı yordamın arabirimine bağlıdır):
+Önceki örnekte olduğu gibi bir saklı yordam tanımlanmaktadır. Genellikle kodun verimli bir şekilde yeniden kullanılması için bir veritabanı, veya gibi adlara sahip önceden tanımlanmış bir saklı yordamlar kümesi `Sales by Year` içerir `dt_adduserobject` . Tanımlarını SQL Server Enterprise Manager kullanarak görüntüleyebilirsiniz. Bunları şu şekilde çağırabilirsiniz (öğesinin yerleşimi *?* Parametreler, saklı yordamın arabirimine bağlıdır):
 
 ```cpp
 DEFINE_COMMAND_EX(CMySProcAccessor, _T("{CALL \"Sales by Year\" (?,?) }"))
@@ -48,7 +48,7 @@ Ardından komut sınıfını bildirin:
 class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>
 ```
 
-Son olarak, aşağıdaki gibi `OpenRowset` saklı yordamını çağırın:
+Son olarak, saklı yordamı `OpenRowset` aşağıdaki gibi çağırın:
 
 ```cpp
 CSession m_session;
@@ -59,7 +59,7 @@ HRESULT OpenRowset()
 }
 ```
 
-Ayrıca, veritabanı özniteliğini kullanarak [db_command](../../windows/db-command.md) aşağıdaki gibi bir saklı yordam tanımlayabileceğinizi unutmayın:
+Ayrıca, veritabanı özniteliğini kullanarak [db_command](../../windows/attributes/db-command.md) aşağıdaki gibi bir saklı yordam tanımlayabileceğinizi unutmayın:
 
 ```cpp
 db_command("{ ? = CALL dbo.dt_adduserobject }")
@@ -67,4 +67,4 @@ db_command("{ ? = CALL dbo.dt_adduserobject }")
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)
+[Saklı yordamları kullanma](../../data/oledb/using-stored-procedures.md)

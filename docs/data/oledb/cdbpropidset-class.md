@@ -31,18 +31,18 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: 24cc621e522ed1939fe3127d97e8d54b75fa1618
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4de218188326dad434c5b0d355a3a15d39bb576c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838301"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502509"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 
-`DBPROPIDSET`Yapıdan devralır ve [Addpropertyıd](../../data/oledb/cdbpropidset-addpropertyid.md) erişim yöntemi ile birlikte Key alanlarını Başlatan bir Oluşturucu ekler.
+`DBPROPIDSET`Yapıdan devralır ve [Addpropertyıd](#addpropertyid) erişim yöntemi ile birlikte Key alanlarını Başlatan bir Oluşturucu ekler.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CDBPropIDSet : public tagDBPROPIDSET
@@ -76,7 +76,7 @@ OLE DB tüketicileri `DBPROPIDSET` , tüketicinin Özellik bilgilerini almak ist
 
 Özellik KIMLIĞI kümesine özellik KIMLIĞI ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool AddPropertyID(DBPROPID propid) throw();
@@ -91,7 +91,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 Oluşturucu. `rgProperties` `cProperties` DBPROPIDSET yapısının, ve (isteğe bağlı) `guidPropertySet` alanlarını başlatır. [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85))
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CDBPropIDSet(const GUID& guid);
@@ -113,7 +113,7 @@ CDBPropIDSet();
 
 Yapıda GUID alanını ayarlar `DBPROPIDSET` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void SetGUID(const GUID& guid) throw();
@@ -126,13 +126,13 @@ void SetGUID(const GUID& guid) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu alan, [Oluşturucu](../../data/oledb/cdbpropidset-cdbpropidset.md) tarafından da ayarlanabilir. Bu sınıf için varsayılan oluşturucuyu kullanıyorsanız bu işlevi çağırın.
+Bu alan, [Oluşturucu](#cdbpropidset) tarafından da ayarlanabilir. Bu sınıf için varsayılan oluşturucuyu kullanıyorsanız bu işlevi çağırın.
 
 ## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a> CDBPropIDSet:: operator =
 
 Bir özellik KIMLIĞI kümesinin içeriğini başka bir ID özellik kümesine atar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();
