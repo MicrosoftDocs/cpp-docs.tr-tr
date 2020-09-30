@@ -5,92 +5,92 @@ helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-ms.openlocfilehash: 130c9027a882de2aae7fb339e4761b0cc81b3a6a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5095e1c58db3e5c35eb9215367f2fbb064bc228a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410518"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504714"
 ---
 # <a name="unicode-programming-summary"></a>Unicode Programlama Özeti
 
-Unicode MFC ve C çalışma zamanı desteği avantajlarından yararlanmak için gerekir:
+Unicode için MFC ve C çalışma zamanı desteğinin avantajlarından yararlanmak için şunlar gerekir:
 
-- Tanımlama `_UNICODE`.
+- Tanımlayın `_UNICODE` .
 
-   Sembolünü tanımlayın `_UNICODE` programınızı derlemeden önce.
+   `_UNICODE`Programınızı yapılandırmadan önce sembolü tanımlayın.
 
-- Giriş noktası belirtin.
+- Giriş noktasını belirtin.
 
-   Üzerinde **Gelişmiş** sayfasının **bağlayıcı** proje klasöründe [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu, kümesi **giriş noktası** simgesi`wWinMainCRTStartup`.
+   Projenin [Özellik sayfaları](../build/reference/property-pages-visual-cpp.md) Iletişim kutusundaki **bağlayıcı** klasörünün **Gelişmiş** sayfasında, **giriş noktası** sembolünü olarak ayarlayın `wWinMainCRTStartup` .
 
-- Taşınabilir çalışma zamanı işlevleri ve türleri kullanır.
+- Taşınabilir çalışma zamanı işlevlerini ve türlerini kullanın.
 
-   C çalışma zamanı işlevleri Unicode dize işleme için kullanın. Kullanabileceğiniz `wcs` ailesi işlevleri, ancak (uluslararası etkin) tam olarak taşınabilir tercih `_TCHAR` makroları. Bu makrolar tüm ön eki `_tcs`; bunlar yerine, ilişkin biri için `str` işlevler ailesini. Bu işlevler, ayrıntılı olarak açıklanan [uluslararası duruma getirme](../c-runtime-library/internationalization.md) bölümünü *çalışma zamanı kitaplığı başvurusu*. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
+   Unicode dize işleme için uygun C çalışma zamanı işlevlerini kullanın. `wcs`İşlev ailesini kullanabilirsiniz, ancak tamamen taşınabilir (Uluslararası) makroları tercih edebilirsiniz `_TCHAR` . Bu makroların tümü ön ekine sahiptir `_tcs` ; bunlar için bir tane olmak üzere `str` işlev ailesi için kullanılır. Bu işlevler, *çalışma zamanı kitaplık başvurusunun* [Uluslararası duruma getirme](../c-runtime-library/internationalization.md) bölümünde ayrıntılı olarak açıklanmıştır. Daha fazla bilgi için, bkz. [Tchar. h 'de Genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
 
-   Kullanım `_TCHAR` ve açıklanan ilgili taşınabilir veri türleri [Unicode desteği](../text/support-for-unicode.md).
+   `_TCHAR`Ve [Unicode desteği](../text/support-for-unicode.md)bölümünde açıklanan ilgili taşınabilir veri türlerini kullanın.
 
-- Değişmez değer dizeleri düzgün bir şekilde işleyin.
+- Sabit dizeleri düzgün bir şekilde işleyin.
 
-   Visual C++ Derleyici, bir sabit dizesi olarak kodlanmış yorumlar:
+   Visual C++ Derleyici, şu şekilde kodlanmış bir sabit dize Yorumlar:
 
     ```cpp
     L"this is a literal string"
     ```
 
-   bir Unicode karakter dizesi birlikte kullanıldığı senaryolar için. Aynı öneke değişmez karakterler için kullanabilirsiniz. Kullanım `_T` değişmez değer dizeleri altında Unicode dizeleri Unicode olmayan ANSI dizelerini (MBCS dahil olmak üzere) olarak veya derleme için genel olarak, kod makrosu. Örneğin, yerine biri:
+   bir Unicode karakter dizesi anlamına gelir. Sabit karakterler için aynı öneki kullanabilirsiniz. `_T`Değişmez dizeleri genelden kodlayarak, Unicode veya ANSI dizeleri (MBCS dahil) Ile Unicode olmayan bir şekilde derlemek için makroyu kullanın. Örneğin, yerine:
 
     ```cpp
     pWnd->SetWindowText( "Hello" );
     ```
 
-   Kullanım:
+   kullanırsınız
 
     ```cpp
     pWnd->SetWindowText( _T("Hello") );
     ```
 
-   İle `_UNICODE` tanımlanmış `_T` L önekli forma; sabit dizesini çevirir Aksi takdirde, `_T` L önekini olmadan çevirir.
+   `_UNICODE`Tanımlı ile, `_T` değişmez dizeyi l önekli forma çevirir; Aksi takdirde, `_T` dizeyi l öneki olmadan çevirir.
 
     > [!TIP]
-    >  `_T` Makro aynı `_TEXT` makrosu.
+    >  `_T`Makro, makro ile aynıdır `_TEXT` .
 
-- Dikkatli olun geçirme işlevleri için dize uzunluğu.
+- Dize uzunluklarını işlevlere geçirme konusunda dikkatli olun.
 
-   Bazı işlevler bir dizedeki karakter sayısını istediğiniz; Başkalarının bayt sayısı istersiniz. Örneğin, varsa `_UNICODE` tanımlanır, aşağıdaki çağrı bir `CArchive` nesne çalışmaz (`str` olduğu bir `CString`):
+   Bazı işlevler bir dizedeki karakter sayısını istiyor; diğerleri bayt sayısını istiyor. Örneğin, `_UNICODE` tanımlanmışsa, bir nesne için aşağıdaki çağrı `CArchive` çalışmaz ( `str` bir olur `CString` ):
 
     ```cpp
     archive.Write( str, str.GetLength( ) );    // invalid
     ```
 
-   2 bayt genişliğinde her karakter olduğu için bir Unicode uygulamasında uzunluğu, karakter sayısı ancak değil doğru bayt sayısını sağlar. Bunun yerine, kullanmanız gerekir:
+   Bir Unicode uygulamasında uzunluk, her karakter 2 bayt genişliğinde olduğu için karakter sayısını verir ancak doğru sayıda bayt değildir. Bunun yerine, şunu kullanmanız gerekir:
 
     ```cpp
     archive.Write( str, str.GetLength( ) * sizeof( _TCHAR ) );    // valid
     ```
 
-   hangi doğru yazılacak bayt sayısını belirtir.
+   yazılacak doğru bayt sayısını belirtir.
 
-   Ancak, bayt odaklı yerine karakter odaklı MFC üye işlevleri bu olmadan fazladan kodlama çalışır:
+   Ancak, bayt odaklı yerine karakter odaklı olan MFC üye işlevleri bu ek kodlama olmadan çalışır:
 
     ```cpp
     pDC->TextOut( str, str.GetLength( ) );
     ```
 
-   `CDC::TextOut` bir karakter, bayt sayısını değil sayısını alır.
+   `CDC::TextOut` bayt sayısı değil, birkaç karakter alır.
 
-- Kullanım [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) Unicode dosyaları açmak için.
+- Unicode dosyalarını açmak için [fopen_s _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) kullanın.
 
-Özetlemek gerekirse, Unicode programlama için aşağıdaki desteği MFC ve çalışma zamanı kitaplığı sağlayın:
+Özetlemek gerekirse, MFC ve çalışma zamanı kitaplığı, Unicode programlama için aşağıdaki desteği sağlar:
 
-- Unicode etkin dahil olmak üzere, veritabanı sınıf üyesi işlevleri hariç tüm MFC işlevleri `CString`. `CString` Unicode/ANSI dönüştürme işlevleri de sağlar.
+- Veritabanı sınıfı üye işlevleri hariç, tüm MFC işlevleri de dahil olmak üzere Unicode etkindir `CString` . `CString` Ayrıca Unicode/ANSI dönüştürme işlevleri de sağlar.
 
-- Çalışma zamanı kitaplığı, tüm dize işleme işlevleri Unicode sürümlerini sağlar. (Çalışma zamanı kitaplığı aynı zamanda uygun taşınabilir sürümler Unicode veya MBCS sağlar. Bunlar `_tcs` makroları.)
+- Çalışma zamanı kitaplığı, tüm dize işleme işlevlerinin Unicode sürümlerini sağlar. (Çalışma zamanı kitaplığı, Unicode veya MBCS için uygun taşınabilir sürümleri de sağlar. Bunlar `_tcs` makrolardır.)
 
-- Tchar.h kaynakları taşınabilir veri türleri ve `_T` değişmez değer dizeleri ve karakterleri çevirmek için makrosu. Daha fazla bilgi için [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
+- Tchar. h, taşınabilir veri türleri ve `_T` değişmez dize ve karakterleri çevirmek için makro sağlar. Daha fazla bilgi için, bkz. [Tchar. h 'de Genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).
 
-- Çalışma Zamanı Kitaplığı bir geniş karakter sürümünü sağlayan `main`. Kullanım `wmain` uygulamanızı Unicode uyumlu hale getirmek için.
+- Çalışma zamanı kitaplığı, öğesinin geniş karakterli bir sürümünü sağlar `main` . `wmain`Uygulamanızı Unicode 'a duyarlı hale getirmek için kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Unicode Desteği](../text/support-for-unicode.md)
+[Unicode desteği](../text/support-for-unicode.md)

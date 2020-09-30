@@ -1,18 +1,18 @@
 ---
 title: Bağlayıcı Araçları Hatası LNK1104
-description: Microsoft C ve C++ (MSVC) BAĞLAYıCı hatası LNK1104, nedenleri ve olası çözümleri açıklanmaktadır.
+description: Microsoft C ve C++ (MSVC) bağlayıcı hatası LNK1104, nedenleri ve olası çözümleri açıklanmaktadır.
 ms.date: 12/13/2019
 f1_keywords:
 - LNK1104
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: 8878db1b0829703b22b2f7863eb7955d17ad3096
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: aa7bcf34cddfa24956d807131b3c484e7d580e73
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301788"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506031"
 ---
 # <a name="linker-tools-error-lnk1104"></a>Bağlayıcı Araçları Hatası LNK1104
 
@@ -44,7 +44,7 @@ Açılamadığı dosya Microsoft tarafından sunulan standart kitaplık dosyalar
 
 ### <a name="versioned-vcruntime-libraries"></a>Sürümlü vcruntime kitaplıkları
 
-Hata iletisinde *Msvcr120. lib*gibi sürümlenmiş bir Microsoft kitaplığı varsa, bu derleyici sürümü için platform araç takımı yüklü olmayabilir. Bu sorunu onarmak için iki seçeneğiniz vardır: projeyi geçerli platform araç takımını kullanmak üzere yükseltin veya eski araç takımını yükleyip projeyi değiştirilmemiş olarak derleyin. Daha fazla bilgi için bkz. [Visual C++ Studio 'nun önceki sürümlerinden projeleri yükseltme](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) ve [Eski projeler oluşturmak için Visual Studio 'da yerel çoklu](../../porting/use-native-multi-targeting.md)sürüm desteği kullanma.
+Hata iletisinde *Msvcr120. lib*gibi sürümlenmiş bir Microsoft kitaplığı varsa, bu derleyici sürümü için platform araç takımı yüklü olmayabilir. Bu sorunu onarmak için iki seçeneğiniz vardır: projeyi geçerli platform araç takımını kullanmak üzere yükseltin veya eski araç takımını yükleyip projeyi değiştirilmemiş olarak derleyin. Daha fazla bilgi için, bkz. [Visual C++ önceki sürümlerinden projeleri yükseltme](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) ve [Eski projeler oluşturmak için Visual Studio 'da yerel çoklu sürüm hedefleme kullanma](../../porting/use-native-multi-targeting.md).
 
 ### <a name="retail-debug-or-platform-specific-libraries"></a>Perakende, hata ayıklama veya platforma özgü kitaplıklar
 
@@ -52,7 +52,7 @@ Yeni bir hedef platform veya bir yapılandırma (perakende ya da ARM64 gibi) iç
 
 ### <a name="the-vccorliblib-library"></a>Vccorlib. lib kitaplığı
 
-Evrensel Windows (UWP) uygulamaları veya bileşenleri için Spectre ile hafiflemesiz kitaplıklar yoktur. Hata iletisi *vccorlib. lib*IÇERIYORSA, UWP projesinde [/Qspectre](../../build/reference/qspectre.md) 'i etkinleştirmiş olabilirsiniz. Bu sorunu onarmak için **/Qspectre** derleyici seçeneğini devre dışı bırakın. Visual Studio 'da **Spectre azaltma** özelliğini değiştirin. Proje **Özellik sayfaları** iletişim kutusunun **C/C++**  > **kod üretimi** sayfasında bulunur.
+Evrensel Windows (UWP) uygulamaları veya bileşenleri için Spectre ile hafiflemesiz kitaplıklar yoktur. Hata iletisi *vccorlib. lib*IÇERIYORSA, UWP projesinde [/Qspectre](../../build/reference/qspectre.md) 'i etkinleştirmiş olabilirsiniz. Bu sorunu onarmak için **/Qspectre** derleyici seçeneğini devre dışı bırakın. Visual Studio 'da **Spectre azaltma** özelliğini değiştirin. Proje özellik sayfaları iletişim kutusunun **C/C++**  >  **kod üretimi** sayfasında bulunur. **Property Pages**
 
 ### <a name="libraries-in-projects-from-online-or-other-sources"></a>Çevrimiçi veya diğer kaynaklardan gelen projelerde kitaplıklar
 
@@ -72,19 +72,19 @@ Bu sorunun birkaç yaygın nedeni vardır:
 
 - Kitaplıkta yüklü olmayan diğer kitaplıkların bağımlılıkları olabilir.
 
-Komut satırı Derlemeleriyle ilgili bir yol sorununu onarmak için, LıB ortam değişkeninin ayarlandığını doğrulayın. Kullandığınız tüm kitaplıkların ve oluşturduğunuz her yapılandırma için yol içerdiğinden emin olun. IDE 'de, kitaplık yolları **VC + + dizinleri** > **kitaplık dizinleri** özelliği tarafından ayarlanır. Oluşturduğunuz her yapılandırma için, ihtiyacınız olan kitaplıkları içeren tüm dizinlerin burada listelendiğinden emin olun.
+Komut satırı Derlemeleriyle ilgili bir yol sorununu onarmak için, LıB ortam değişkeninin ayarlandığını doğrulayın. Kullandığınız tüm kitaplıkların ve oluşturduğunuz her yapılandırma için yol içerdiğinden emin olun. IDE 'de, kitaplık yolları **VC + + Dizin**  >  **kitaplığı dizinleri** özelliği tarafından ayarlanır. Oluşturduğunuz her yapılandırma için, ihtiyacınız olan kitaplıkları içeren tüm dizinlerin burada listelendiğinden emin olun.
 
 Standart Kitaplık dizinini geçersiz kılan bir kitaplık dizini sağlamanız gerekebilir. Komut satırında [/LIBPATH](../../build/reference/libpath-additional-libpath.md) seçeneğini kullanın. IDE 'de, projeniz için **yapılandırma özellikleri > bağlayıcı > genel** Özellik sayfasında bulunan **Ek kitaplık dizinleri** özelliğini kullanın.
 
-Oluşturduğunuz yapılandırmaların her birinde gerekli olan tüm kitaplık sürümlerini yüklediğinizden emin olun. Yükleme ve kurulum işlemlerini otomatik hale getirmek için [vcpkg](../../vcpkg.md) paket yönetimi yardımcı programını kullanmayı göz önünde bulundurun. Bunu yaptığınızda, üçüncü taraf kitaplıklarının kendi kopyalarını oluşturmak en iyisidir. Daha sonra, tüm kitaplıkların yerel bağımlılıklarını, projenizde aynı yapılandırmalara yönelik olarak oluşturulan tüm kitaplıklara sahip olduğunuzdan emin olursunuz.
+Oluşturduğunuz yapılandırmaların her birinde gerekli olan tüm kitaplık sürümlerini yüklediğinizden emin olun. Yükleme ve kurulum işlemlerini otomatik hale getirmek için [vcpkg](../../build/vcpkg.md) paket yönetimi yardımcı programını kullanmayı göz önünde bulundurun. Bunu yaptığınızda, üçüncü taraf kitaplıklarının kendi kopyalarını oluşturmak en iyisidir. Daha sonra, tüm kitaplıkların yerel bağımlılıklarını, projenizde aynı yapılandırmalara yönelik olarak oluşturulan tüm kitaplıklara sahip olduğunuzdan emin olursunuz.
 
 ## <a name="cant-open-a-file-built-by-your-project"></a>Projeniz tarafından oluşturulan bir dosyayı açamıyor
 
 Bağlayıcı ona erişmeyi denediğinde *dosya adı* henüz yoksa bu hatayı görebilirsiniz. Bir proje çözümdeki başka bir projeye bağımlıysa, ancak projeler yanlış sırada derleniyorsa bu durum oluşabilir. Bu sorunu onarmak için, proje başvurularınızın dosyayı kullanan projede ayarlandığından emin olun. Daha sonra, eksik dosya, gerekli olmadan önce oluşturulmuştur. Daha fazla bilgi için bkz. [Visual Studio C++ projelerinde başvuruları ekleme](../../build/adding-references-in-visual-cpp-projects.md) ve [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
 
-## <a name="cannot-open-file-cprogramobj"></a>' C:\\program. obj ' dosyası açılamıyor
+## <a name="cannot-open-file-cprogramobj"></a>' C: \\ program. obj ' dosyası açılamıyor
 
-Hata iletisinde *C:\\program. obj* dosya adını görürseniz, kitaplık yollarınızı çift tırnak içine sarın. Bu hata, *C:\\program dosyaları* ile başlayan sarmalanmamış bir yol bağlayıcıya geçirildiğinde oluşur. Sarmalanmamış yollar da benzer hatalara neden olabilir. Genellikle, sürücünüzün kökünde beklenmeyen bir. obj dosyası gösterir.
+Hata iletisinde *C: \\ program. obj* dosya adını görürseniz, kitaplık yollarınızı çift tırnak içine sarın. Bu hata, *C: \\ Program dosyaları* ile başlayan sarmalanmamış bir yol bağlayıcıya geçirildiğinde oluşur. Sarmalanmamış yollar da benzer hatalara neden olabilir. Genellikle, sürücünüzün kökünde beklenmeyen bir. obj dosyası gösterir.
 
 Bu sorunu komut satırı yapılarına yönelik olarak onarmak için [/libpath](../../build/reference/libpath-additional-libpath.md) seçenek parametrelerini denetleyin. Ayrıca, LıB ortam değişkeninde belirtilen yolları ve komut satırında belirtilen yolları kontrol edin. Boşluk içeren tüm yollar etrafında çift tırnak işareti kullandığınızdan emin olun.
 
@@ -96,7 +96,7 @@ IDE 'deki bu sorunu onarmak için, projeniz için aşağıdaki özelliklere gere
 
 - **Yapılandırma özellikleri > bağlayıcı > giriş** özelliği sayfasında **ek bağımlılıklar** özelliği.
 
-## <a name="other-common-issues"></a>Diğer yaygın sorunlar
+## <a name="other-common-issues"></a>Diğer yaygın sorunları çözme
 
 ### <a name="path-or-filename-issues"></a>Yol veya dosya adı sorunları
 
@@ -116,11 +116,11 @@ Paralel bir yapı seçeneği kullanıyorsanız, Visual Studio dosyayı başka bi
 
 ### <a name="files-that-are-too-large"></a>Çok büyük dosyalar
 
-Dosya çok büyük olduğu için bu hata ortaya çıkabilir. Boyutlu bir gigabayt 'tan daha fazla kitaplık veya nesne dosyası 32 bitlik bağlayıcı için sorunlara neden olabilir. Bu sorun için olası bir çözüm 64 bit araç takımını kullanmaktır. Komut satırında 64 bit araç takımını kullanma hakkında daha fazla bilgi için, bkz. [nasıl yapılır: 64-bit görsel C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md). IDE 'de 64 bit araç takımını kullanma hakkında daha fazla bilgi için bkz. MSBuild 'i [64 bit derleyici ve araçlarla kullanma](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project). Ayrıca bkz. bu Stack Overflow Post: [Visual Studio 'nun yerel AMD64 araç zincirini nasıl kullanmasını sağlama](https://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055).
+Dosya çok büyük olduğu için bu hata ortaya çıkabilir. Boyutlu bir gigabayt 'tan daha fazla kitaplık veya nesne dosyası 32 bitlik bağlayıcı için sorunlara neden olabilir. Bu sorun için olası bir çözüm 64 bit araç takımını kullanmaktır. Komut satırında 64 bit araç takımını kullanma hakkında daha fazla bilgi için, bkz. [nasıl yapılır: 64-bit Visual C++ araç takımını komut satırında etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md). IDE 'de 64 bit araç takımını kullanma hakkında daha fazla bilgi için bkz. MSBuild 'i [64 bit derleyici ve araçlarla kullanma](../../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md#using-msbuild-to-build-your-project). Ayrıca bkz. bu Stack Overflow Post: [Visual Studio 'nun yerel AMD64 araç zincirini nasıl kullanmasını sağlama](https://stackoverflow.com/questions/19820718/how-to-make-visual-studio-use-the-native-amd64-toolchain/23793055).
 
 ### <a name="incorrect-file-permissions"></a>Yanlış dosya izinleri
 
-Bu hata, dosya *adına*erişmek için yeterli dosya izinleriniz yoksa oluşabilir. Korumalı sistem dizinlerindeki kitaplık dosyalarına erişmek için sıradan bir kullanıcı hesabı kullanıyorsanız bu durum oluşabilir. Ya da hala özgün izinlerinin ayarlandığı diğer kullanıcılardan kopyalanan dosyaları kullanıyorsanız. Bu sorunu onarmak için dosyayı yazılabilir bir proje dizinine taşıyın. Taşınan dosyanın izinleri erişilemiyorsa, dosyanın sahipliğini almak için bir yönetici komut penceresinde takeown. exe komutunu çalıştırın.
+Bu hata, dosya *adına*erişmek için yeterli dosya izinleriniz yoksa oluşabilir. Korumalı sistem dizinlerindeki kitaplık dosyalarına erişmek için sıradan bir kullanıcı hesabı kullanıyorsanız bu durum oluşabilir. Ya da hala özgün izinlerinin ayarlandığı diğer kullanıcılardan kopyalanan dosyaları kullanıyorsanız. Bu sorunu onarmak için dosyayı yazılabilir bir proje dizinine taşıyın. Taşınan dosyanın izinleri erişilemiyorsa, dosyanın sahipliğini almak için yönetici komut penceresinde takeown.exe komutunu çalıştırın.
 
 ### <a name="insufficient-disk-space"></a>Yetersiz disk alanı
 
@@ -132,6 +132,6 @@ Yeterli disk alanınız olmadığında hata oluşabilir. Bağlayıcı, birkaç d
 
 ## <a name="help-my-issue-isnt-listed-here"></a>Yardım, sorunum burada listelenmedi!
 
-Burada listelenen sorunlardan hiçbiri uygulanmadığı zaman, yardım için Visual Studio 'daki geri bildirim araçlarını kullanabilirsiniz. IDE 'de, menü çubuğuna gidin ve **sorun bildirmek > yardım > geri bildirim gönder**' i seçin. Ya da bir öneri göndermek **> yardım > geri bildirim gönder**' i kullanarak bir öneride bulunun. Visual Studio C++ [Geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html)) Web sitesini de kullanabilirsiniz. Soruların yanıtlarını aramak ve yardım istemek için bunu kullanın. Daha fazla bilgi için bkz. [görsel C++ araç takımı veya belgelerde sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+Burada listelenen sorunlardan hiçbiri uygulanmadığı zaman, yardım için Visual Studio 'daki geri bildirim araçlarını kullanabilirsiniz. IDE 'de, menü çubuğuna gidin ve **sorun bildirmek > yardım > geri bildirim gönder**' i seçin. Ya da bir öneri göndermek **> yardım > geri bildirim gönder**' i kullanarak bir öneride bulunun. Visual Studio C++ [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html)) Web sitesini de kullanabilirsiniz. Soruların yanıtlarını aramak ve yardım istemek için bunu kullanın. Daha fazla bilgi için bkz. [Visual C++ araç takımı veya belgelerde sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
-Bu makaleye eklememiz gereken bu sorunu çözmek için yeni bir yol tespit ediyorsanız bize bize izin verin. **Bu sayfa**için aşağıdaki düğmeyi kullanarak bize geri bildirim gönderebilirsiniz. Belge GitHub deposunda yeni bir sorun oluşturmak için bunu kullanın. [ C++ ](https://github.com/MicrosoftDocs/cpp-docs/issues) Teşekkürler!
+Bu makaleye eklememiz gereken bu sorunu çözmek için yeni bir yol tespit ediyorsanız bize bize izin verin. **Bu sayfa**için aşağıdaki düğmeyi kullanarak bize geri bildirim gönderebilirsiniz. [C++ belgelerimizin GitHub](https://github.com/MicrosoftDocs/cpp-docs/issues)deposunda yeni bir sorun oluşturmak için bunu kullanın. Teşekkür ederiz!

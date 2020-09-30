@@ -1,19 +1,19 @@
 ---
-title: Projeleri C++ Visual Studio 'nun önceki sürümlerinden yükseltme
+title: C++ projelerini Visual Studio 'nun önceki sürümlerinden yükseltme
 description: Microsoft C++ projelerini Visual Studio 'nun eski sürümlerinden yükseltme.
 ms.date: 01/21/2020
 helpviewer_keywords:
 - 32-bit code porting
 - upgrading Visual C++ applications, 32-bit code
 ms.assetid: 18cdacaa-4742-43db-9e4c-2d9e73d8cc84
-ms.openlocfilehash: bc9fb5628c1a628b91f306c346f2bbb1dea13de8
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 7a4ab98c196d601bc458fe33bb1e2cb45ac30088
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416117"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505890"
 ---
-# <a name="upgrade-c-projects-from-earlier-versions-of-visual-studio"></a>Projeleri C++ Visual Studio 'nun önceki sürümlerinden yükseltme
+# <a name="upgrade-c-projects-from-earlier-versions-of-visual-studio"></a>C++ projelerini Visual Studio 'nun önceki sürümlerinden yükseltme
 
 Visual Studio 'nun önceki bir sürümünde oluşturulan bir projeyi yükseltmek için, projeyi Visual Studio 'nun en son sürümünde açmanız yeterlidir. Visual Studio, projeyi geçerli şemaya yükseltmek için teklifler sunar.
 
@@ -23,7 +23,7 @@ Visual Studio 'nun önceki bir sürümünde oluşturulan bir projeyi yükseltmek
 
 ## <a name="upgrade-reports"></a>Yükseltme raporları
 
-Bir projeyi yükselttiğinizde, bir yükseltme raporu alırsınız. Rapor aynı zamanda proje klasörünüze UpgradeLog. htm olarak kaydedilir. Yükseltme raporu, dönüştürme sırasında hangi sorunların bulunduğu hakkında bir Özet gösterir. Aşağıdakiler de dahil olmak üzere yapılan değişikliklerle ilgili bazı bilgileri listeler:
+Bir projeyi yükselttiğinizde, bir yükseltme raporu alırsınız. Rapor ayrıca proje klasörünüze UpgradeLog.htm olarak kaydedilir. Yükseltme raporu, dönüştürme sırasında hangi sorunların bulunduğu hakkında bir Özet gösterir. Aşağıdakiler de dahil olmak üzere yapılan değişikliklerle ilgili bazı bilgileri listeler:
 
 - Proje özellikleri.
 
@@ -41,15 +41,15 @@ Bir projeyi yükselttiğinizde, bir yükseltme raporu alırsınız. Rapor aynı 
 
 - Davranış değişiklikleri nedeniyle çalışma zamanı hataları veya beklenmedik sonuçlar.
 
-- Araçlarda sunulan hatalar. Bir sorun bulursanız, normal destek kanallarınız aracılığıyla veya C++ [Visual Studio C++ geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfasını kullanarak görsel ekibe bildirin.
+- Araçlarda sunulan hatalar. Bir sorun bulursanız, normal destek kanallarınız aracılığıyla veya [Visual Studio C++ geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfasını kullanarak Visual C++ ekibine bildirin.
 
 Bazı Yükseltilen projeler ve çözümler değişiklik yapılmadan başarıyla oluşturulabilir. Ancak, çoğu proje muhtemelen proje ayarlarında ve kaynak kodunuzda değişiklik yapılmasını gerektirir. Bu sorunları düzeltmek için tek bir doğru yol yoktur, ancak aşamalı bir yaklaşım kullanmanızı öneririz. Başlamadan önce, çok sayıda yaygın hata hakkında daha fazla bilgi için [olası yükseltme sorunlarının genel bakışını](../porting/overview-of-potential-upgrade-issues-visual-cpp.md) inceleyin.
 
-1. Platform araç takımı, C++ dil standardı ve Windows SDK sürümü (varsa) tercih edilen sürümlere ayarlayın. (**Proje** > **özellikleri** > **yapılandırma özellikleri** > **genel**)
+1. Platform araç takımı, C++ dil standardı ve Windows SDK sürümü (varsa) tercih edilen sürümlere ayarlayın. (**Proje**  >  **Özellikler**  >  **Yapılandırma özellikleri**  >  **Genel**)
 
-1. Birçok hata varsa, bunları düzelttikten sonra bazı seçenekleri geçici olarak kapatabilirsiniz. [/Permissive-](../build/reference/permissive-standards-conformance.md) seçeneğini devre dışı bırakmak için, **Proje** > **özellikleri** > **yapılandırma özellikleri** > **C/C++**  > **dil**' i kullanın. [Kod Analizi](/cpp/code-quality/code-analysis-for-c-cpp-overview) seçeneğini kapatmak Için, **proje** > **özellikleri** > **yapılandırma özellikleri** > **Kod Analizi**' ni kullanın.
+1. Birçok hata varsa, bunları düzelttikten sonra bazı seçenekleri geçici olarak kapatabilirsiniz. [/Permissive-](../build/reference/permissive-standards-conformance.md) seçeneğini kapatmak için, **Proje**  >  **özellikleri**  >  **yapılandırma özellikleri**  >  **C/C++**  >  **dil**' i kullanın. [Kod Analizi](../code-quality/code-analysis-for-c-cpp-overview.md) seçeneğini kapatmak için, **Proje**  >  **özellikleri**  >  **yapılandırma özellikleri**  >  **Kod Analizi**' ni kullanın.
 
-1. Tüm bağımlılıkların mevcut olduğundan ve içerme yollarının veya kitaplık konumlarının doğru olduğundan emin olun. (**Proje** > **özellikleri** > **yapılandırma özellikleri** > **VC + + dizinleri**)
+1. Tüm bağımlılıkların mevcut olduğundan ve içerme yollarının veya kitaplık konumlarının doğru olduğundan emin olun. (**Proje**  >  **Özellikler**  >  **Yapılandırma özellikleri**  >  **VC + + dizinleri**)
 
 1. Artık mevcut olmayan API başvuruları nedeniyle oluşan hataları tespit edin ve onarın.
 
@@ -59,24 +59,24 @@ Bazı Yükseltilen projeler ve çözümler değişiklik yapılmadan başarıyla 
 
 1. Artık kabul edilebilir olarak kabul edilen olası sorunları veya geçmiş kodlama düzenlerini belirlemek için kod analizini etkinleştirin. Kod Analizi birçok hatayı işaretleyemdeyse, bazı uyarıları kapatarak öncelikle en önemli öneme sahip olursunuz. IDE, bazı sorun türleri için hızlı düzeltmelerde yardımcı olabilir.
 
-1. Kodu modernize etmek için diğer fırsatları göz önünde bulundurun. Örneğin, özel veri yapılarını ve algoritmaları C++ standart kitaplıktan olanlarla veya açık kaynak kitaplığı 'nı arttırma ile değiştirin. Standart özellikleri kullanarak başkalarının kodu bakımını daha kolay hale getirir. Bu kodun iyi bir şekilde sınanmış ve Standartlar Komitesi ve daha geniş C++ topluluk üzerinde birçok uzman tarafından incelendiğinden emin olabilirsiniz.
+1. Kodu modernize etmek için diğer fırsatları göz önünde bulundurun. Örneğin, özel veri yapılarını ve algoritmaları C++ standart kitaplığı veya arttırma açık kaynak kitaplığı ile değiştirin. Standart özellikleri kullanarak başkalarının kodu bakımını daha kolay hale getirir. Bu kodun iyi bir şekilde sınanmış ve Standartlar Komitesi ve daha geniş C++ topluluğunun birçok uzmanı tarafından incelendiğinden emin olabilirsiniz.
 
-Onarma sırasında hatalar için Stack Overflow veya [ C++ geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html)üzerinde bir soruyu aramayı veya göndermeyi deneyin.
+Onarma sırasında hatalar için Stack Overflow veya [C++ geliştirici topluluğu](https://developercommunity.visualstudio.com/spaces/62/index.html)üzerinde bir soruyu aramayı veya göndermeyi deneyin.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
 [Olası yükseltme sorunlarına genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)\
-[Kodunuzu UNIVERSAL CRT\ yükseltin](upgrade-your-code-to-the-universal-crt.md)
-[WINVER ve _WIN32_WINNT\ güncelleştirme](modifying-winver-and-win32-winnt.md)
-[Kitaplık iç yapıları üzerinde bağımlılıklarınızı onarın](fix-your-dependencies-on-library-internals.md)\
+[Kodunuzu Evrensel CRT 'ye yükseltin](upgrade-your-code-to-the-universal-crt.md)\
+[WINVER ve _WIN32_WINNT güncelleştirme](modifying-winver-and-win32-winnt.md)\
+[Kitaplık iç yapıları üzerinde bağımlılıklarınızı çözme](fix-your-dependencies-on-library-internals.md)\
 [Kayan nokta geçiş sorunları](floating-point-migration-issues.md)\
-[Visual Studio 2019 'de kullanım dışı Özellikler\ C++ ](features-deprecated-in-visual-studio.md)
-[VCBuild ve MSBuild\ karşılaştırması](build-system-changes.md)
-[Bağlantı noktası 3. taraf kitaplıkları](porting-third-party-libraries.md)
+[Visual Studio 2019 ' de kullanım dışı C++ özellikleri](features-deprecated-in-visual-studio.md)\
+[VCBuild ile MSBuild](build-system-changes.md)\
+[Üçüncü taraf kitaplıklarını taşıma](porting-third-party-libraries.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-Visual [Studio 'Daki görsele C++ yönelik](../overview/what-s-new-for-visual-cpp-in-visual-studio.md) yenilikler\
-[Görsel C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md)\
+[Visual Studio 'daki Visual C++ yenilikler](../overview/what-s-new-for-visual-cpp-in-visual-studio.md)\
+[Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md)\
 [Standart olmayan davranış](../cpp/nonstandard-behavior.md)\
-[Bağlantı noktası veri uygulamaları](../data/data-access-programming-mfc-atl.md)
+[Veri uygulamalarını taşıma](../data/data-access-programming-mfc-atl.md)

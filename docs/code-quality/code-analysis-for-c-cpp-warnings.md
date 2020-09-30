@@ -13,16 +13,16 @@ helpviewer_keywords:
 - native code analysis
 - warnings, C/C++ analysis
 ms.assetid: 28f3fda6-35e8-485b-9755-1991aaccec3f
-ms.openlocfilehash: 5562df8b6f0cfba6799e208acb9c1c223fb53e5e
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: 7982be29ba458a040239387b65d46c7b240cb7b7
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389980"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504860"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>C/C++ uyarıları için kod analizi
 
-Bu bölümde, [C++ temel yönergeleri denetleyicileri](code-analysis-for-cpp-corecheck.md)tarafından oluşturulan C/C++ kod analizi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Bu bölümde, [C++ temel yönergeleri denetleyicileri](code-analysis-for-cpp-corecheck.md)tarafından oluşturulan C/C++ kod analizi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](../build/reference/analyze-code-analysis.md) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

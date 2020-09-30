@@ -14,14 +14,14 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-ms.openlocfilehash: 7dde5e97bd8690dc491916de8fb279e80a2c9ed4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2d5baf4967f4f4f945540d2a7baef399974d2d42
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215211"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506584"
 ---
-# <a name="og-global-optimizations"></a>`/Og`(Global Iyileştirmeler)
+# <a name="og-global-optimizations"></a>`/Og` (Global Iyileştirmeler)
 
 Kullanım dışı. Yerel ve genel iyileştirmeler, otomatik kayıt ayırma ve döngü iyileştirmesi sağlar. Bunun yerine [ `/O1` (boyutu en aza indir)](o1-o2-minimize-size-maximize-speed.md) ya da [ `/O2` (hızı en üst düzeye çıkarın)](o1-o2-minimize-size-maximize-speed.md) kullanmanızı öneririz.
 
@@ -77,7 +77,7 @@ Aşağıdaki iyileştirmeler aşağıda verilmiştir **`/Og`** :
    > [!NOTE]
    > Seçeneğini seçeneğiyle birlikte kullanarak bir işlev işlevi temelinde, genel iyileştirmeyi etkinleştirebilir veya devre dışı bırakabilirsiniz `optimize` `g` .
 
-İlgili bilgiler için bkz. [ `/Oi` (iç işlevler oluşturma)](oi-generate-intrinsic-functions.md) ve [ `/Ox ` (çoğu hız iyileştirmelerini etkinleştir)](ox-full-optimization.md).
+İlgili bilgiler için bkz. [ `/Oi` (iç işlevler oluşturma)](oi-generate-intrinsic-functions.md) ve [ `/Ox` (çoğu hız iyileştirmelerini etkinleştir)](ox-full-optimization.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 

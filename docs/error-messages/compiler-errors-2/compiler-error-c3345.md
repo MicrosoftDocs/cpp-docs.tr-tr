@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3345
 ms.assetid: 1dda4c79-73bb-441b-b939-746154c3afba
-ms.openlocfilehash: e6962e5c127a92acc5dfdad580c7bc89fa134751
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8682069fdf719f4e85d1d6f5107de1903e3ae071
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753451"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504839"
 ---
 # <a name="compiler-error-c3345"></a>Derleyici hatası C3345
 
@@ -25,7 +25,7 @@ Modül için *tanımlayıcı* , kabul edilmeyen bir veya daha fazla karakter iç
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, C3345 özniteliğinin `name` `module` parametresi boş içerdiğinden hata iletisine neden olur.
+Aşağıdaki kod örneği C3345 hata iletisine neden olur çünkü `name` `module` özniteliğin parametresi boş bir içerir.
 
 ```cpp
 // cpp_attr_name_module.cpp
@@ -55,5 +55,5 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
-[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
-[module](../../windows/module-cpp.md)
+[Karakter sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[birimi](../../windows/attributes/module-cpp.md)

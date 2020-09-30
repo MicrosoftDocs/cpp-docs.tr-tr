@@ -1,6 +1,6 @@
 ---
 title: VCBuild ile MSBuild
-description: Visual Studio C++ derleme sistemi, visual Studio 2010 ' de VCBuild ile MSBuild 'e değiştirilmiştir.
+description: Visual Studio C++ derleme sistemi, Visual Studio 2010 ' de VCBuild ile MSBuild 'e değiştirilmiştir.
 ms.date: 10/25/2019
 helpviewer_keywords:
 - Build system changes, project file (.vcxprog)
@@ -11,22 +11,22 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-ms.openlocfilehash: ce3eb9e51a103aa54b74c7b5b4f775eb402269f1
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: b1b963aca3de75cf9852c55f59a99422568ab4b4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076936"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505921"
 ---
 # <a name="vcbuild-vs-msbuild-build-system-changes-in-visual-studio-2010"></a>VCBuild ile MSBuild: Visual Studio 2010 'de sistem değişiklikleri oluşturma
 
-Projeler için C++ MSBuild sistemi, Visual Studio 2010 ' de tanıtılmıştı. Visual Studio 2008 ve önceki sürümlerde VCBuild sistemi kullanılmıştır. VCBuild üzerinde bağımlıya ait olmayan bazı dosya türleri ve kavramlar, MSBuild 'te de farklı şekilde temsil edilir. Bu belgede geçerli derleme sistemindeki farklar açıklanmaktadır. Visual Studio 2008 projesini MSBuild 'e dönüştürmek için Visual Studio 2010 kullanmanız gerekir. Proje dönüştürüldükten sonra, geçerli IDE ve derleyici araç takımını yükseltmek için Visual Studio 'nun en son sürümünü kullanmanız gerekir. Visual Studio 2010 ' i edinme dahil daha fazla bilgi için bkz. [Visual studio 2008 Için yönergeler](use-native-multi-targeting.md#instructions-for-visual-studio-2008).
+C++ projeleri için MSBuild sistemi, Visual Studio 2010 ' de tanıtılmıştır. Visual Studio 2008 ve önceki sürümlerde VCBuild sistemi kullanılmıştır. VCBuild üzerinde bağımlıya ait olmayan bazı dosya türleri ve kavramlar, MSBuild 'te de farklı şekilde temsil edilir. Bu belgede geçerli derleme sistemindeki farklar açıklanmaktadır. Visual Studio 2008 projesini MSBuild 'e dönüştürmek için Visual Studio 2010 kullanmanız gerekir. Proje dönüştürüldükten sonra, geçerli IDE ve derleyici araç takımını yükseltmek için Visual Studio 'nun en son sürümünü kullanmanız gerekir. Visual Studio 2010 ' i edinme dahil daha fazla bilgi için bkz. [Visual studio 2008 Için yönergeler](use-native-multi-targeting.md#instructions-for-visual-studio-2008).
 
-Aşağıdaki bölümlerde VCBuild 'tan MSBuild 'e yapılan değişiklikler özetlenmektedir. VCBuild projenizin MSBuild tarafından tanınmayan özel yapı kuralları veya makroları varsa, bu yönergeleri MSBuild sistemine nasıl çevirebileceğinizi öğrenmek için bkz. [Visual Studio projeleri C++ ](../build/creating-and-managing-visual-cpp-projects.md) . VCBuild 'ten MSBuild 'e ilk dönüştürme işlemi yalnızca bir ara adımdır. Proje dosyasının tamamen doğru olmaması veya programın hatasız derlenmesi için gerekli değildir. Projeyi Visual Studio 'nun en son sürümünde çalışır durumda olacak şekilde, projeyi MSBuild biçimine dönüştürmek için yalnızca Visual Studio 2010 ' i kullanıyorsunuz.
+Aşağıdaki bölümlerde VCBuild 'tan MSBuild 'e yapılan değişiklikler özetlenmektedir. VCBuild projenizin MSBuild tarafından tanınmayan özel yapı kuralları veya makroları varsa, bu yönergeleri MSBuild sistemine nasıl çevirebileceğinizi öğrenmek için bkz. [Visual Studio projeleri-C++](../build/creating-and-managing-visual-cpp-projects.md) . VCBuild 'ten MSBuild 'e ilk dönüştürme işlemi yalnızca bir ara adımdır. Proje dosyasının tamamen doğru olmaması veya programın hatasız derlenmesi için gerekli değildir. Projeyi Visual Studio 'nun en son sürümünde çalışır durumda olacak şekilde, projeyi MSBuild biçimine dönüştürmek için yalnızca Visual Studio 2010 ' i kullanıyorsunuz.
 
 ## <a name="vcproj-is-now-vcxproj"></a>. vcproj şimdi. vcxproj
 
-Proje dosyaları artık. VCPROJ dosya adı uzantısını kullanmaz. Visual Studio 2010, Visual C++ Studio 'nun önceki bir sürümü tarafından oluşturulan proje dosyalarını otomatik olarak, proje dosyaları için. vcxproj uzantısını kullanan MSBuild biçimine dönüştürür.
+Proje dosyaları artık. VCPROJ dosya adı uzantısını kullanmaz. Visual Studio 2010, Visual C++ önceki bir sürümü tarafından oluşturulan proje dosyalarını otomatik olarak, proje dosyaları için. vcxproj uzantısını kullanan MSBuild biçimine dönüştürür.
 
 ## <a name="vsprops-is-now-props"></a>. vsprops artık. props
 
@@ -36,10 +36,10 @@ Visual Studio 2008 ve önceki sürümlerde, *Proje özellik sayfası* . vsprops 
 
 Visual Studio 2008 ve önceki sürümlerde, *kural dosyası* . Rules dosya adı uzantısına sahıp olan XML tabanlı bir dosyadır. Bir kural dosyası, özel yapı kuralları tanımlamanıza ve bunları bir Visual Studio C++ projesinin yapı işlemine eklemenize olanak tanır. Bir veya daha fazla dosya adı uzantısıyla ilişkilendirilebilen özel bir yapı kuralı, giriş dosyalarını bir veya daha fazla çıktı dosyası oluşturan bir araca geçirmenize olanak sağlar.
 
-MSBuild sisteminde, özel derleme kuralları. Rules dosyası yerine üç dosya türü,. xml,. props ve. targets tarafından temsil edilir. Visual C++ Studio 'nun önceki bir sürümü kullanılarak oluşturulan bir. Rules dosyası visual Studio 2010 ' ye geçirildiğinde, eşdeğer. xml,. props ve. targets dosyaları özgün. Rules dosyası ile birlikte oluşturulup projenizde depolanır.
+MSBuild sisteminde, özel derleme kuralları. Rules dosyası yerine üç dosya türü,. xml,. props ve. targets tarafından temsil edilir. Visual C++ önceki bir sürümü kullanılarak oluşturulan bir. Rules dosyası Visual Studio 2010, denk. xml,. props ve. targets dosyalarına geçirildiğinde, özgün. Rules dosyası ile birlikte projenizde oluşturulur ve depolanır.
 
 > [!IMPORTANT]
-> Visual Studio 2010 ' de, IDE yeni kuralların oluşturulmasını desteklemez. Bu nedenle, Visual C++ Studio 'nun önceki bir sürümü kullanılarak oluşturulmuş bir projeden bir kural dosyası kullanmanın en kolay yolu projeyi visual Studio 2010 ' e geçirmelidir.
+> Visual Studio 2010 ' de, IDE yeni kuralların oluşturulmasını desteklemez. Bu nedenle, Visual C++ önceki bir sürümü kullanılarak oluşturulmuş bir projeden bir kural dosyası kullanmanın en kolay yolu projeyi Visual Studio 2010 ' e geçirmelidir.
 
 ## <a name="inheritance-macros"></a>Devralma makroları
 
@@ -47,7 +47,7 @@ Visual Studio 2008 ve önceki sürümlerde, **$ (Inherit)** makrosu, devralınan
 
 Visual Studio 2010 ' de devralma, bir veya daha fazla değişmez değer ve özellik makrosu birleşimi olarak bir özelliğin değeri belirtilerek desteklenir. **$ (Inherit)** ve **$ (NoInherit)** makroları desteklenmez.
 
-Aşağıdaki örnekte, bir özellik sayfasındaki bir özelliğe noktalı virgülle ayrılmış bir liste atanır. Liste, *\<değeri >* sabit değeri ve **$ (** <em>MyProperty</em> **)** makro gösterimi kullanılarak erişilen `MyProperty` özelliğinin değerini içerir.
+Aşağıdaki örnekte, bir özellik sayfasındaki bir özelliğe noktalı virgülle ayrılmış bir liste atanır. Liste, *\<value>* değişmez değer ve `MyProperty` **$ (**<em>MyProperty</em>**)** makro gösterimi kullanılarak erişilen özelliğin değerinin birleştirilmesiyle oluşur.
 
 ```
 Property=<value>;$(MyProperty)
@@ -59,11 +59,11 @@ Kullanıcı dosyası (. vcxproj. User) kullanıcıya özgü özellikleri, örne�
 
 ## <a name="vcxprojfilters-file"></a>. vcxproj. Filters dosyası
 
-Bir projeye dosya eklemek için **Çözüm Gezgini** kullanıldığında, filtreler dosyası ( *. vcxproj. Filters*), dosyanın dosya adı uzantısına bağlı olarak **Çözüm Gezgini** ağaç görünümünde nerede eklendiğini tanımlar.
+Bir projeye dosya eklemek için **Çözüm Gezgini** kullanıldığında, filtreler dosyası (*. vcxproj. Filters*), dosyanın dosya adı uzantısına bağlı olarak **Çözüm Gezgini** ağaç görünümünde nerede eklendiğini tanımlar.
 
 ## <a name="vc-directories-settings"></a>VC + + dizin ayarları
 
-Görsel C++ dizinler ayarları, [VC + + dizinleri Özellik sayfasında](../ide/vcpp-directories-property-page.md)belirtilir. Visual Studio 2008 ve önceki sürümlerde, dizin ayarları Kullanıcı başına uygulanır ve dışlanan dizinlerin listesi, *sysındat* dosyasında belirtilir.
+Visual C++ dizin ayarları, [VC + + dizinleri Özellik sayfasında](../build/reference/vcpp-directories-property-page.md)belirtilir. Visual Studio 2008 ve önceki sürümlerde, dizin ayarları Kullanıcı başına uygulanır ve dışlanan dizinlerin listesi, *sysındat* dosyasında belirtilir.
 
 [Devenv/ResetSettings](/visualstudio/ide/reference/resetsettings-devenv-exe) komutunu komut satırında ÇALıŞTıRıRSANıZ, VC + + dizinleri ayarlarını değiştiremezsiniz. Ayrıca, **Araçlar** menüsünü açıp ayarları **Içeri aktar ve dışarı aktar**' a tıklayıp **tüm ayarları Sıfırla** seçeneğini belirlediğinizde ayarları değiştiremezsiniz.
 

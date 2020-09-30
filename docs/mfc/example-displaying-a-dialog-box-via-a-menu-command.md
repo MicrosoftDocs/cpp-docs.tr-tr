@@ -10,12 +10,12 @@ helpviewer_keywords:
 - examples [MFC], dialog boxes
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-ms.openlocfilehash: 281fa77f4954691002268d1e597146a615264695
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1cada8124cd7ea71a24367626508782b522cc746
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616032"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506764"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme
 
@@ -38,7 +38,7 @@ Yordamlar aşağıdaki adları ve değerleri kullanır:
 
 ### <a name="to-display-a-modal-dialog-box"></a>Kalıcı iletişim kutusunu göstermek için
 
-1. Menü komutunu oluşturun; bkz. [menü ve menü öğeleri oluşturma](../windows/creating-a-menu.md).
+1. Menü komutunu oluşturun; bkz. [menü ve menü öğeleri oluşturma](../windows/menu-editor.md).
 
 1. İletişim kutusunu oluşturun; bkz. [Iletişim kutusu düzenleyiciyi başlatma](../windows/creating-a-new-dialog-box.md).
 
@@ -112,5 +112,5 @@ Yordamlar aşağıdaki adları ve değerleri kullanır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](dialog-boxes.md)<br/>
-[Kalıcı ve Kalıcı Olmayan İletişim Kutuları](modal-and-modeless-dialog-boxes.md)
+[İletişim kutuları](dialog-boxes.md)<br/>
+[Kalıcı ve kalıcı olmayan Iletişim kutuları](modal-and-modeless-dialog-boxes.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - stock properties, about stock properties
 - stock properties
 ms.assetid: 37bd4db7-efd3-4faa-87ad-64902ed16a36
-ms.openlocfilehash: 125d7272b5b9fb0f656ba0621667885026e152fb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 63985643973782ea2b4240a338d66cb5cc2195dc
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228680"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504683"
 ---
 # <a name="add-a-property"></a>Özellik ekleme
 
@@ -69,7 +69,7 @@ Bir arabirime özellik eklemek için bu sihirbazı kullanın.
 
 - **Dönüş türü**
 
-  Yalnızca ATL arabirimleri. Özellik için dönüş türünü ayarlar. Çift arabirimler için `HRESULT` her zaman dönüş türüdür ve bu kutu kullanılamaz. Özel arabirimler için listeden bir dönüş türü seçebilirsiniz. `HRESULT`Hala önerilir, çünkü hataları döndürmek için standart bir yol sağlar.
+  Yalnızca ATL arabirimleri. Özellik için dönüş türünü ayarlar. Çift arabirimler için `HRESULT` her zaman dönüş türüdür ve bu kutu kullanılamaz. Özel arabirimler için listeden bir dönüş türü seçebilirsiniz. `HRESULT` Hala önerilir, çünkü hataları döndürmek için standart bir yol sağlar.
 
 - **Değişken adı**
 
@@ -107,8 +107,8 @@ Bir arabirime özellik eklemek için bu sihirbazı kullanın.
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**PropPut**|[Propput](../windows/propput.md) işlevi nesnenin bir kopyasını döndürür. Bu, özelliği yazılabilir yapmanın varsayılan ve en yaygın yoludur.|
-  |**PropPutRef**|[Propputref](../windows/propputref.md) işlevi nesnenin kopyasını döndürmek yerine nesnesine bir başvuru döndürür. Başlatma ek yüküne sahip olabilecek büyük yapılar veya diziler gibi nesneler için bu seçeneği kullanmayı düşünün.|
+  |**PropPut**|[Propput](../windows/attributes/propput.md) işlevi nesnenin bir kopyasını döndürür. Bu, özelliği yazılabilir yapmanın varsayılan ve en yaygın yoludur.|
+  |**PropPutRef**|[Propputref](../windows/attributes/propputref.md) işlevi nesnenin kopyasını döndürmek yerine nesnesine bir başvuru döndürür. Başlatma ek yüküne sahip olabilecek büyük yapılar veya diziler gibi nesneler için bu seçeneği kullanmayı düşünün.|
 
 - **Parametre öznitelikleri**
 
@@ -179,7 +179,7 @@ Tüm seçenekler tüm özellik türleri için kullanılamaz.
 
 ## <a name="stock-properties"></a>Hisse senedi özellikleri
 
-[Özellik Ekleme Sihirbazı](#idl-attributes-add-property-wizard)'Nı kullanarak mfc görüntüleme arabirimine bir özellik ekliyorsanız, sihirbazın [adlar](../ide/names-add-property-wizard.md) sayfasındaki **özellik adı** listesinden bir stok özelliği seçebilirsiniz. Bu özellikler aşağıdaki gibidir:
+[Özellik Ekleme Sihirbazı](#idl-attributes-add-property-wizard)'Nı kullanarak mfc görüntüleme arabirimine bir özellik ekliyorsanız, sihirbazın [adlar](#names-add-property-wizard) sayfasındaki **özellik adı** listesinden bir stok özelliği seçebilirsiniz. Bu özellikler aşağıdaki gibidir:
 
 |Özellik adı|Açıklama|
 |-------------------|-----------------|

@@ -3,16 +3,16 @@ title: Şema başvurusunda launch.vs.js(C++)
 ms.date: 08/20/2019
 helpviewer_keywords:
 - launch.vs.json file [C++]
-ms.openlocfilehash: 1161e8fa8ac3751ca8cc2b96ec063cd6063bb245
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1e235b5f1ff4d7573ddbe57ac4e3c7c9bdbc2eb8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841993"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505674"
 ---
 # <a name="launchvsjson-schema-reference-c"></a>Şema başvurusunda launch.vs.js(C++)
 
-Hata ayıklama parametrelerini yapılandırmak için *launch.vs.js* dosyasını kullanın. Dosyasını oluşturun. **Çözüm Gezgini** bir çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Projenizle en yakından eşleşen seçeneği seçin ve ardından yapılandırmayı gerektiği şekilde değiştirmek için aşağıdaki özellikleri kullanın. CMake projelerinde hata ayıklama hakkında daha fazla bilgi için bkz. [CMake hata ayıklama oturumlarını yapılandırma](/cpp/build/configure-cmake-debugging-sessions).
+Hata ayıklama parametrelerini yapılandırmak için *launch.vs.js* dosyasını kullanın. Dosyasını oluşturun. **Çözüm Gezgini** bir çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Projenizle en yakından eşleşen seçeneği seçin ve ardından yapılandırmayı gerektiği şekilde değiştirmek için aşağıdaki özellikleri kullanın. CMake projelerinde hata ayıklama hakkında daha fazla bilgi için bkz. [CMake hata ayıklama oturumlarını yapılandırma](./configure-cmake-debugging-sessions.md).
 
 ## <a name="default-properties"></a>Varsayılan Özellikler
 
@@ -38,7 +38,7 @@ Hata ayıklama parametrelerini yapılandırmak için *launch.vs.js* dosyasını 
 |Özellik|Tür|Description|
 |-|-|-|
 |`program`|dize|Uzak makinedeki program yürütülebilirinin tam yolu. CMake kullanılırken, makro `${debugInfo.fullTargetPath}` Bu alanın değeri olarak kullanılabilir.|
-|`processId`|integer|Hata ayıklayıcıyı iliştirmek için isteğe bağlı işlem KIMLIĞI.|
+|`processId`|tamsayı|Hata ayıklayıcıyı iliştirmek için isteğe bağlı işlem KIMLIĞI.|
 |`sourceFileMap`|object|Hata ayıklama altyapısına geçirilen isteğe bağlı kaynak dosya eşlemeleri. Biçim: `{ "\<Compiler source location>": "\<Editor source location>" }` veya `{ "\<Compiler source location>": { "editorPath": "\<Editor source location>", "useForBreakpoints": true } }` . Örnek: `{ "/home/user/foo": "C:\\foo" }` veya `{ "/home/user/foo": { "editorPath": "c:\\foo", "useForBreakpoints": true } }`. Bkz. [kaynak dosya haritası seçenekleri](#source_file_map_options).|
 |`additionalProperties`|string|SourceFileMapOptions biri. (Aşağıya bakın.)|
 |`MIMode`|string|MIDebugEngine 'in bağlanacağı mı özellikli konsol hata ayıklayıcısı türünü gösterir. İzin verilen değerler "gdb", "lldb" dir.|

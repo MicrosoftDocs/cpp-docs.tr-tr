@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-ms.openlocfilehash: 5e0a81d6a01632bcfadccd241f3a485e6d332627
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 19e9ca6f985423bb01a8dea38988c5dcf7285683
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077455"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505976"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX Denetimi Oluşturma
 
@@ -34,9 +34,9 @@ MFC ActiveX denetimi oluşturmanın en kolay yolu [MFC ActiveX Denetim Sihirbaz�
 
 1. Sihirbazı kapatmak için **son** ' a tıklayın ve yeni projenizi geliştirme ortamında açın.
 
-Projenizi oluşturduktan sonra, **Çözüm Gezgini**' de oluşturulan dosyaları görüntüleyebilirsiniz. Sihirbazın projeniz için oluşturduğu dosyalar hakkında daha fazla bilgi için, proje tarafından oluşturulan ReadMe. txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio C++ projeleri Için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
+Projenizi oluşturduktan sonra, **Çözüm Gezgini**' de oluşturulan dosyaları görüntüleyebilirsiniz. Sihirbazın projeniz için oluşturduğu dosyalar hakkında daha fazla bilgi için, bkz. proje tarafından oluşturulan dosya ReadMe.txt. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual Studio C++ projeleri Için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
-Projenizi oluşturduktan sonra, [işlevler](../../ide/add-member-function-wizard.md), [değişkenler](../../ide/add-member-variable-wizard.md), [Olaylar](../../ide/add-event-wizard.md), [Özellikler](../../ide/names-add-property-wizard.md)ve [Yöntemler](../../ide/add-method-wizard.md)eklemek için kod sihirbazları ' nı kullanabilirsiniz. ActiveX denetiminizi özelleştirme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md).
+Projenizi oluşturduktan sonra, [işlevler](../../ide/adding-a-member-function-visual-cpp.md#add-member-function-wizard), [değişkenler](../../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard), [Olaylar](../../ide/adding-an-event-visual-cpp.md#add-event-wizard), [Özellikler](../../ide/adding-a-property-visual-cpp.md#names-add-property-wizard)ve [Yöntemler](../../ide/adding-a-method-visual-cpp.md#add-method-wizard)eklemek için kod sihirbazları ' nı kullanabilirsiniz. ActiveX denetiminizi özelleştirme hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri](../../mfc/mfc-activex-controls.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

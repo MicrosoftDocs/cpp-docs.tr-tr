@@ -5,12 +5,12 @@ helpviewer_keywords:
 - STL/CLR, converting from .NET collections
 - STL/CLR Containers [STL/CLR]
 ms.assetid: bb927c48-78e8-4150-bd0b-787c651f4a87
-ms.openlocfilehash: a7b2ee94f02e663690287ecfa6bc8a7230830a95
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 4993571d479924edc71a277887a8bd95fc4fd463
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686463"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506436"
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
 
@@ -24,7 +24,7 @@ Bu konu başlığında, .NET koleksiyonlarının eşdeğer STL/CLR kapsayıcıla
 
 -VEYA-
 
-1. [Collection_adapter](../dotnet/collection-adapter-stl-clr.md) nesnesi oluşturarak genel bir STL/CLR kapsayıcısı oluşturun. Bu şablon sınıfı bir .NET koleksiyon arabirimini bağımsız değişken olarak alır. Desteklenen arabirimlerin doğrulanması için bkz. [collection_adapter (STL/CLR)](../dotnet/collection-adapter-stl-clr.md).
+1. [Collection_adapter](./adapter-stl-clr.md#collection_adapter) nesnesi oluşturarak genel bir STL/CLR kapsayıcısı oluşturun. Bu şablon sınıfı bir .NET koleksiyon arabirimini bağımsız değişken olarak alır. Desteklenen arabirimlerin doğrulanması için bkz. [collection_adapter (STL/CLR)](./adapter-stl-clr.md#collection_adapter).
 
 1. .NET koleksiyonunun içeriğini kapsayıcıya kopyalayın. Bu, STL/CLR [algoritması](../dotnet/algorithm-stl-clr.md)kullanılarak veya .net koleksiyonunun üzerine giderek ve her öğenin BIR kopyasını STL/CLR kapsayıcısına ekleyerek yapılabilir.
 

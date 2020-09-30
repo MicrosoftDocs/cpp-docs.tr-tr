@@ -89,12 +89,12 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-ms.openlocfilehash: cb28b0b31188fcf7fefef95ddb44c9aab813e6ac
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: cf7f071ab98cb872537af076b89e0a1b07a1a6a1
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353187"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505883"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -148,13 +148,13 @@ C++ 14 ' te, `std::less<>` tür parametreleri olmayan veya koşulunu belirterek 
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Description|
+|Oluşturucu|Açıklama|
 |-|-|
 |[değerlerden](#multiset)|`multiset`Boş veya belirtilen bir kısmının kopyası olan bir oluşturur `multiset` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Description|
+|Tür adı|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Nesnenin sınıfı için bir typedef `allocator` `multiset` .|
 |[const_iterator](#const_iterator)|İçindeki bir öğeyi okuyabilen çift yönlü Yineleyici için bir typedef **`const`** `multiset` .|
@@ -174,7 +174,7 @@ C++ 14 ' te, `std::less<>` tür parametreleri olmayan veya koşulunu belirterek 
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Description|
+|Üye işlevi|Açıklama|
 |-|-|
 |[başladı](#begin)|İçindeki ilk öğeyi gösteren bir yineleyici döndürür `multiset` .|
 |[cbegin](#cbegin)|İçindeki ilk öğeyi ele alan bir sabit yineleyici döndürür `multiset` .|
@@ -490,7 +490,7 @@ Aranacak öğenin anahtar değeri.
 
 `contains()` C++ 20 ' de yenidir. Bunu kullanmak için [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirtin.
 
-`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) .
+`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) .
 
 ### <a name="example"></a>Örnek
 
@@ -506,7 +506,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theMultiSet.contains(2) << '\n';
     std::cout << theMultiSet.contains(3) << '\n';
-    
+
     return 0;
 }
 ```

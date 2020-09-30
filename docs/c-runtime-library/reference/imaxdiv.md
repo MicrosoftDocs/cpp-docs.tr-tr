@@ -24,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-ms.openlocfilehash: 72bbb1198b79d79bb81acc35ce6c2a836fdd5f1d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 298356da8e8e76c132b963ef4f71db6a3d0e74f7
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954628"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505631"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -54,17 +54,17 @@ Payda.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-[intmax_t](../../c-runtime-library/standard-types.md) türündeki bağımsız değişkenlerle çağrılan **ımaxdiv** , bölüm ve geri kalanı içeren [imaxdiv_t](../../c-runtime-library/standard-types.md) türünde bir yapı döndürür.
+[intmax_t](../../c-runtime-library/standard-types.md) türündeki bağımsız değişkenlerle çağrılan **ımaxdiv** , bölüm ve geri kalanı içeren [imaxdiv_t](../../c-runtime-library/standard-types.md) türünde bir yapı döndürüyor.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Imaxdiv** işlevi, *numer* ile Mase 'yi *böler ve bu* sayede bölümü ve kalanı hesaplar. **İmaxdiv_t** yapısı, bölüm, **intmax_t** **quot**ve geri kalanını içerir, **intmax_t** **REM**. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
+**Imaxdiv** işlevi, *numer* ile Mase 'yi *böler ve bu* sayede bölümü ve kalanı hesaplar. **İmaxdiv_t** yapısı, bölüm, **intmax_t** **quot**ve geri kalanı **intmax_t** **REM**' u içerir. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**imaxdiv**|\<inttypes. h >|
+|**imaxdiv**|\<inttypes.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-Oluşturulup komut satırı parametreleriyle `9460730470000000 8766`birlikte çağrıldığında, kod bu çıktıyı oluşturur:
+Oluşturulup komut satırı parametreleriyle birlikte çağrıldığında `9460730470000000 8766` , kod bu çıktıyı oluşturur:
 
 ```Output
 The call to imaxdiv(9460730470000000, 8766)
@@ -105,6 +105,6 @@ results in a quotient of 1079252848505, and a remainder of 5170
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [div](div.md)<br/>
-[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[ldiv, lldiv](./div.md)<br/>

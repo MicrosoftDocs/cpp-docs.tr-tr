@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3052
 ms.assetid: 87480c42-1ceb-4775-8d20-88c54a7bb6a6
-ms.openlocfilehash: 618fac69078987b0322739733c403e5b2cd36486
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 40857432e07baffea69d8201cc3e0241698c93da
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761224"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506203"
 ---
 # <a name="compiler-error-c3052"></a>Derleyici hatası C3052
 
 ' var ': değişken bir default (None) yan tümcesi altında bir veri paylaşımı yan tümcesinde görünmüyor
 
-[Varsayılan (hiçbiri)](../../parallel/openmp/reference/default-openmp.md) kullanılırsa, Structured bloğunda kullanılan herhangi bir değişken doğrudan [paylaşılan](../../parallel/openmp/reference/shared-openmp.md) veya [özel](../../parallel/openmp/reference/private-openmp.md)olarak belirtilmelidir.
+[Varsayılan (hiçbiri)](../../parallel/openmp/reference/openmp-clauses.md#default-openmp) kullanılırsa, Structured bloğunda kullanılan herhangi bir değişken doğrudan [paylaşılan](../../parallel/openmp/reference/openmp-clauses.md#shared-openmp) veya [özel](../../parallel/openmp/reference/openmp-clauses.md#private-openmp)olarak belirtilmelidir.
 
 Aşağıdaki örnek C3052 oluşturur:
 

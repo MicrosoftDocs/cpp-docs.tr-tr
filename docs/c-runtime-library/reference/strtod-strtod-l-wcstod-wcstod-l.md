@@ -51,18 +51,18 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-ms.openlocfilehash: 1e75fe39c8ab7020a088307421926327d4043ba8
-ms.sourcegitcommit: efed9ed109862c6c2a042f2663b680e8ca4e16a1
+ms.openlocfilehash: 5a791b5d0be218a49be28930c191de3eb4acf4be
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89933833"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505535"
 ---
 # <a name="strtod-_strtod_l-wcstod-_wcstod_l"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
 Dizeleri çift duyarlıklı bir değere dönüştürür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double strtod(
@@ -93,7 +93,7 @@ Dönüştürülecek null ile sonlandırılmış dize.
 *endptr*<br/>
 Taramayı durduran karakter işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -135,9 +135,9 @@ Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*içindeki taba
 *taban* , varsayılan "C" yerel ayarında nokta (.) veya geçerli yerel ayar farklıysa ya da *Yerel* ayar belirtildiğinde yerel ayara özgü değeri olan taban nokta karakterdir. \
  *Dizi* , alfasayısal veya alt çizgi karakterlerinden oluşan bir dizidir.
 
-Hem ondalık hem de onaltılık sayı formlarında, taban nokta karakterinden önce bir basamak görünmezse, en az bir sayı, taban nokta karakterinden sonra görünmelidir. 
+Hem ondalık hem de onaltılık sayı formlarında, taban nokta karakterinden önce bir basamak görünmezse, en az bir sayı, taban nokta karakterinden sonra görünmelidir.
 
-Ondalık biçimde, ondalık basamakların ardından, bir giriş harfinden (**e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. 
+Ondalık biçimde, ondalık basamakların ardından, bir giriş harfinden (**e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir.
 
 Onaltılık biçimde, onaltılık basamakların ardından, bir giriş harfinden (**p** veya **p**) oluşan bir üs ve 2 ' nin üssü olarak üs değeri temsil eden isteğe bağlı olarak imzalanmış bir ondalık tamsayı ile izlenebilir.
 
@@ -226,7 +226,7 @@ string = 10110134932
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>
 [strtoul, _strtoul_l, wcstoul, _wcstoul_l](strtoul-strtoul-l-wcstoul-wcstoul-l.md)<br/>

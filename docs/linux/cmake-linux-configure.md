@@ -2,12 +2,12 @@
 title: Visual Studio 'da Linux CMake projesi yapılandırma
 description: Visual Studio 'da Linux CMake ayarlarını yapılandırma
 ms.date: 08/08/2020
-ms.openlocfilehash: 762f135988587e777c2a33a1bd402770c297226b
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 32c851791402b59c941ae088fa637d3d9953dd1b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414560"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504732"
 ---
 # <a name="configure-a-linux-cmake-project-in-visual-studio"></a>Visual Studio 'da Linux CMake projesi yapılandırma
 
@@ -53,6 +53,7 @@ Visual Studio 2017 ' de Linux-Debug için varsayılan yapılandırma (ve Visual 
       "inheritEnvironments": [ "linux-x64" ]
 }
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -97,6 +98,7 @@ Visual Studio 2019 sürüm 16,6 veya sonraki sürümlerde, Dokja, uzak bir siste
 Bu ayarlar hakkında daha fazla bilgi için bkz. [CMakeSettings.jsbaşvurusu](../build/cmakesettings-reference.md).
 
 Bir yapı gerçekleştirdiğinizde:
+
 - Uzak bir sistemi hedefliyorsanız, Visual Studio **Tools** > **Options** > uzak hedefler için varsayılan olarak Araçlar Seçenekler **platformlar arası** > **Bağlantı Yöneticisi** altındaki listede bulunan ilk uzak sistemi seçer.
 - Uzak bağlantı bulunamazsa, bir tane oluşturmanız istenir. Daha fazla bilgi için bkz. [uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md).
 

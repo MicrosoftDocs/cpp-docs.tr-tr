@@ -35,18 +35,18 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: a6d2661a3467365482ea12bdfff53f730165faa0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 67a5c801c13038e7215473edecc2d41a8f7086e0
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623074"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505729"
 ---
 # <a name="how-to-manage-symbols"></a>Nasıl yapılır: sembolleri yönetme
 
 Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda, geliştirme ortamı buna Örneğin, varsayılan bir sembol adı atar `IDD_DIALOG1` . Varsayılan sembol adını değiştirmek veya bir kaynakla ilişkilendirilmiş olan herhangi bir sembolün adını değiştirmek için [Özellikler penceresi](/visualstudio/ide/reference/properties-window) kullanabilirsiniz.
 
-Tek bir kaynakla ilişkili semboller için, sembol değerini değiştirmek için **Özellikler** penceresini de kullanabilirsiniz. Kaynak [sembolleri iletişim kutusunu](../windows/resource-symbols-dialog-box.md) , şu anda bir kaynağa atanmamış sembollerin değerini değiştirmek için kullanabilirsiniz.
+Tek bir kaynakla ilişkili semboller için, sembol değerini değiştirmek için **Özellikler** penceresini de kullanabilirsiniz. Kaynak [sembolleri iletişim kutusunu](./creating-new-symbols.md) , şu anda bir kaynağa atanmamış sembollerin değerini değiştirmek için kullanabilirsiniz.
 
 Normalde tüm sembol tanımları ' de kaydedilir `Resource.h` . Bununla birlikte, örneğin, aynı dizinde birden fazla kaynak dosyası ile çalışabilmek için bu dosya adını da değiştirmeniz gerekebilir.
 
@@ -74,7 +74,7 @@ Sembol adlarında kısıtlamalar aşağıdaki gibidir:
 
 Sembol adlarında temsil ettikleri kaynak veya nesne türünü gösteren açıklayıcı ön ekler vardır. Bu açıklayıcı önekler metin birleşim KIMLIĞIYLE başlar. Microsoft Foundation Class (MFC) kitaplığı, aşağıdaki tabloda gösterilen sembol adlandırma kurallarını kullanır:
 
-|Kategori|Ön ek|Kullanım|
+|Kategori|Ön ek|Kullanın|
 |--------------|------------|---------|
 |Kaynaklar|IDR_, IDD_, IDC_, IDI_, IDB_|Hızlandırıcı veya menü (ve ilişkili veya özel kaynaklar), iletişim kutusu, imleç, simge, bit eşlem|
 |Menü öğeleri|ID_|Menü öğesi|
@@ -92,7 +92,7 @@ Sembol adlarında temsil ettikleri kaynak veya nesne türünü gösteren açıkl
    Yeni bir sembol adı yazarsanız, otomatik olarak bir değer atanır.
 
 > [!NOTE]
-> Kaynak [sembolleri iletişim kutusunu](../windows/resource-symbols-dialog-box.md) , şu anda bir kaynağa atanmamış sembollerin adlarını değiştirmek için kullanabilirsiniz.
+> Kaynak [sembolleri iletişim kutusunu](./creating-new-symbols.md) , şu anda bir kaynağa atanmamış sembollerin adlarını değiştirmek için kullanabilirsiniz.
 
 ## <a name="symbol-value-restrictions"></a>Sembol Değeri Kısıtlamaları
 
@@ -141,7 +141,7 @@ Sembol değerlerinin bazı sınırlamaları şunlardır:
 
 ## <a name="change-or-delete-symbols"></a>Sembolleri değiştirme veya silme
 
-[Kaynak sembolleri iletişim kutusunda](../windows/resource-symbols-dialog-box.md), zaten bir kaynağa veya nesneye atanmamış mevcut sembolleri düzenleyebilir veya silebilirsiniz.
+[Kaynak sembolleri iletişim kutusunda](./creating-new-symbols.md), zaten bir kaynağa veya nesneye atanmamış mevcut sembolleri düzenleyebilir veya silebilirsiniz.
 
 ### <a name="to-change-an-unassigned-symbol"></a>Atanmamış bir sembolü değiştirmek için
 
@@ -161,11 +161,11 @@ Sembol değerlerinin bazı sınırlamaları şunlardır:
 
 ## <a name="include-symbols"></a>Sembolleri dahil et
 
-Geliştirme ortamı, başka bir uygulama tarafından oluşturulan bir kaynak dosyasını ilk kez okuduğunda, eklenen tüm üst bilgi dosyalarını salt okunur olarak işaretler. Bununla birlikte, ek salt okunurdur sembol üstbilgi dosyaları eklemek için [kaynak içerme iletişim kutusunu](../windows/resource-includes-dialog-box.md) da kullanabilirsiniz.
+Geliştirme ortamı, başka bir uygulama tarafından oluşturulan bir kaynak dosyasını ilk kez okuduğunda, eklenen tüm üst bilgi dosyalarını salt okunur olarak işaretler. Bununla birlikte, ek salt okunurdur sembol üstbilgi dosyaları eklemek için [kaynak içerme iletişim kutusunu](./how-to-include-resources-at-compile-time.md) da kullanabilirsiniz.
 
 Salt okunurdur sembol tanımları kullanmak isteyebileceğiniz bir nedeni, birkaç proje arasında paylaşmayı planladığınız sembol dosyaları içindir.
 
-Sembol değerlerini tanımlamak için basit tamsayılar yerine ifadeler kullanan sembol tanımlarına sahip mevcut kaynaklarınız varsa, dahil edilen sembol dosyalarını da kullanabilirsiniz. Örnek:
+Sembol değerlerini tanımlamak için basit tamsayılar yerine ifadeler kullanan sembol tanımlarına sahip mevcut kaynaklarınız varsa, dahil edilen sembol dosyalarını da kullanabilirsiniz. Örneğin:
 
 ```cpp
 #define   IDC_CONTROL1 2100
@@ -185,7 +185,7 @@ Ortam Bu hesaplanan sembolleri şu kadar süre içinde doğru yorumlayacak:
 
 ### <a name="to-include-shared-read-only-symbols-in-your-resource-file"></a>Kaynak dosyanıza paylaşılan (salt okuma) semboller eklemek için
 
-1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp [kaynak içermeler](../windows/resource-includes-dialog-box.md)' i seçin.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp [kaynak içermeler](./how-to-include-resources-at-compile-time.md)' i seçin.
 
 1. Salt **okuma sembolü yönergeleri** kutusunda, `#include` salt okuma simgelerinin saklanmasını istediğiniz dosyayı belirtmek için derleyici yönergesini kullanın.
 
@@ -204,7 +204,7 @@ Ortam Bu hesaplanan sembolleri şu kadar süre içinde doğru yorumlayacak:
 
 ### <a name="to-change-the-name-of-the-resource-symbol-header-file"></a>Kaynak sembolü üstbilgi dosyasının adını değiştirmek için
 
-1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp [kaynak içermeler](../windows/resource-includes-dialog-box.md)' i seçin.
+1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp [kaynak içermeler](./how-to-include-resources-at-compile-time.md)' i seçin.
 
 1. **Sembol üstbilgi dosyası** kutusuna ekleme dosyası için yeni bir ad yazın.
 

@@ -1,5 +1,5 @@
 ---
-title: Bir sınıf ekleyin
+title: Sınıf ekleme
 ms.date: 05/14/2019
 f1_keywords:
 - vc.addclass
@@ -9,91 +9,91 @@ helpviewer_keywords:
 - classes [C++], adding
 - Add Class dialog box
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
-ms.openlocfilehash: fa53c2af5cd3e81c2d4877ef255430eac9525aad
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: b1c64505a63b8720ed7aee855f2bbbbdb9134e28
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708138"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505988"
 ---
-# <a name="add-a-class"></a>Bir sınıf ekleyin
+# <a name="add-a-class"></a>Sınıf ekleme
 
-Visual Studio'da bir sınıf eklemek için C++ içinde proje **Çözüm Gezgini**, projeye sağ tıklayın, seçin **Ekle**ve ardından **sınıfı**. Bu açılır [Sınıf Ekle iletişim kutusu](#add-class-dialog-box).
+Visual Studio C++ projesine bir sınıf eklemek için, **Çözüm Gezgini**' de projeye sağ tıklayın, **Ekle**' yi ve ardından **sınıf**' ı seçin. Bu, [Sınıf Ekle iletişim kutusunu](#add-class-dialog-box)açar.
 
-Bir sınıf eklediğinizde, MFC veya ATL içinde zaten mevcut sınıflardan farklı bir ad belirtmelisiniz Her iki Kitaplığı'nda zaten bir ad belirtirseniz, IDE bir hata iletisi gösterir.
+Bir sınıf eklediğinizde, MFC veya ATL 'de zaten var olan sınıflardan farklı bir ad belirtmeniz gerekir. Herhangi bir kitaplıkta zaten bulunan bir ad belirtirseniz, IDE bir hata iletisi gösterir.
 
-Adlandırma projeniz var olan bir adı kullanmak gerektiriyorsa, C++ büyük/küçük harfe duyarlıdır çünkü daha sonra yalnızca büyük/küçük harf, bir veya daha fazla ad değiştirebilirsiniz. Örneğin, bir sınıf adı olamaz ancak `CDocument`, ad verebilirsiniz `cdocument`.
+Proje adlandırma kuralınızın varolan bir adı kullanmanızı gerektiriyorsa, C++ büyük/küçük harfe duyarlı olduğu için ad içindeki bir veya daha fazla harf durumunu değiştirebilirsiniz. Örneğin, bir sınıfı ad değiştiremeseniz de `CDocument` , adını verebilirsiniz `cdocument` .
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Ne tür bir sınıf eklemek istiyor musunuz?](#what-kind-of-class-do-you-want-to-add)
+- [Ne tür bir sınıf eklemek istiyorsunuz?](#what-kind-of-class-do-you-want-to-add)
 - [Sınıf Ekle iletişim kutusu](#add-class-dialog-box)
 
-## <a name="what-kind-of-class-do-you-want-to-add"></a>Ne tür bir sınıf eklemek istiyor musunuz?
+## <a name="what-kind-of-class-do-you-want-to-add"></a>Ne tür bir sınıf eklemek istiyorsunuz?
 
-İçinde **sınıfı Ekle** genişlettikten iletişim kutusu, **Visual C++** düğümü sol bölmedeki yüklü şablonlar birkaç gruplandırmaları görüntülenir. Grupları dahil **CLR**, **ATL**, **MFC**, ve **C++**. Bir grubu seçtiğinizde, o grup içindeki kullanılabilir şablonların listesini Orta bölmede görüntülenir. Her şablon, bir sınıf için gerekli olan kaynak kodu ve dosyaları içerir.
+**Sınıf Ekle** iletişim kutusunda, sol bölmedeki **Visual C++** düğümünü genişlettiğinizde, yüklenmiş şablonların çeşitli gruplandırmaları görüntülenir. Gruplar **clr**, **ATL**, **MFC**ve **C++** içerir. Bir grup seçtiğinizde, bu gruptaki kullanılabilir şablonların bir listesi Ortadaki bölmede görüntülenir. Her şablon, bir sınıf için gereken dosyaları ve kaynak kodunu içerir.
 
-Yeni bir sınıf oluşturmak için Orta bölmede bir şablon seçin, sınıf için bir ad yazın **adı** kutusunda ve seçin **Ekle**. Bu açılır **sınıf Ekleme Sihirbazı'nı** sınıfı için seçenekleri belirtebilirsiniz.
+Yeni bir sınıf oluşturmak için orta bölmedeki bir şablonu seçin, **ad** kutusuna sınıf için bir ad yazın ve **Ekle**' yi seçin. Bu, sınıf seçeneklerini belirleyebilmeniz için **sınıf ekleme Sihirbazı** ' nı açar.
 
 - MFC sınıfları oluşturma hakkında daha fazla bilgi için bkz. [MFC sınıfı](../mfc/reference/adding-an-mfc-class.md).
 
-- ATL sınıfları oluşturma hakkında daha fazla bilgi için bkz. [ATL Basit Nesne](../atl/reference/adding-an-atl-simple-object.md).
+- ATL sınıfları oluşturma hakkında daha fazla bilgi için bkz. [ATL Simple Object](../atl/reference/adding-an-atl-simple-object.md).
 
 > [!NOTE]
-> Şablon **MFC ATL desteği Ekle** bir sınıf oluşturmaz, ancak bunun yerine projeyi ATL kullanacak şekilde yapılandırır Daha fazla bilgi için [bir MFC projesinde ATL desteği](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
+> **MFC 'ye atl desteği ekleme** şablonu bir sınıf oluşturmaz, bunun yerıne projeyi ATL kullanacak şekilde yapılandırır. Daha fazla bilgi için bkz. [MFC projesinde atl desteği](../mfc/reference/adding-atl-support-to-your-mfc-project.md).
 
-MFC, ATL veya CLR kullanmayan C++ sınıfı yapma **C++ sınıfı** şablonunda **C++** Grup yüklü şablonlar. Daha fazla bilgi için [genel C++ sınıfı ekleme](../ide/adding-a-generic-cpp-class.md).
+MFC, ATL veya CLR kullanmayan bir C++ sınıfı oluşturmak için, yüklü şablonların **c++** grubundaki **c++ sınıf** şablonunu kullanın. Daha fazla bilgi için bkz. [Genel C++ sınıfı ekleme](../ide/adding-a-generic-cpp-class.md).
 
-İki tür form tabanlı C++ sınıfları kullanılabilir. Birinci [CFormView sınıfı](../mfc/reference/cformview-class.md), MFC sınıfı oluşturur. İkinci bir CLR Windows Forms sınıf oluşturur.
+İki tür form tabanlı C++ sınıfı vardır. Birinci bir, [CFormView sınıfı](../mfc/reference/cformview-class.md), bir MFC sınıfı oluşturur. İkincisi bir CLR Windows Forms sınıfı oluşturur.
 
 ## <a name="add-class-dialog-box"></a>Sınıf Ekle iletişim kutusu
 
-**Sınıfı Ekle** iletişim kutusu olanak tanıyan şablonları içerir:
+**Sınıf Ekle** iletişim kutusu şunları yapmanıza izin veren şablonlar içerir:
 
-- Varsa, karşılık gelen bir kod Sihirbazı açın. Daha fazla bilgi için [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).
+- Varsa, ilgili kod sihirbazını açın. Daha fazla bilgi için bkz. [kod sihirbazları ile Işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).
 
-   \- veya -
+   \- veya
 
-- Kaynak kodu ve uygun dosyaları projenize ekleyerek otomatik olarak, yeni bir sınıf oluşturun.
+- Projenize uygun dosya ve kaynak kodu ekleyerek otomatik olarak yeni sınıfınızı oluşturun.
 
-Erişebildiğiniz **sınıfı Ekle** iletişim kutusundan **proje** menüsünde **Çözüm Gezgini**, veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).
+**Proje** menüsünden **Sınıf Ekle** iletişim kutusuna, **Çözüm Gezgini**veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code)erişebilirsiniz.
 
 > [!NOTE]
-> Geçerli projeniz için uygun olmayan bir sınıf eklemeye çalıştığınızda, bir hata iletisi alırsınız. Seçin **Tamam** dönmek için **sınıfı Ekle** iletişim kutusu.
+> Geçerli projenize uygun olmayan bir sınıf eklemeye çalıştığınızda bir hata iletisi alırsınız. **Sınıf Ekle** iletişim kutusuna dönmek için **Tamam ' ı** seçin.
 
-### <a name="add-class-templates"></a>Sınıf şablonları ekleme
+### <a name="add-class-templates"></a>Sınıf Şablonları Ekle
 
-Dört kategorisi vardır **sınıfı Ekle** şablonları: .NET, ATL, MFC ve genel. Bir şablonda seçtiğinizde **şablonları** bölmesinde yaptığınız seçime açıklayan metin altında görünür **kategorileri** ve **şablonları** bölmeleri.
+**Sınıf şablonu Ekle** ' nin dört kategorisi vardır: .net, ATL, MFC ve genel. **Şablonlar** bölmesinde bir şablon seçtiğinizde, seçiminizi açıklayan metin **Kategoriler** ve **Şablonlar** bölmeleri altında görünür.
 
 #### <a name="net"></a>.NET
 
-|Şablon|Sihirbazı|
+|Şablon|Ekleme|
 |--------------|------------|
-|ASP.NET Web hizmeti|Yok|
-|Bileşen sınıfı (.NET)|Yok|
-|Yükleyici sınıfı (.NET)|Yok|
-|Kullanıcı denetimi (.NET)|Yok|
-|Windows Form (.NET)|Yok|
+|ASP.NET Web hizmeti|Kullanılamaz|
+|Bileşen sınıfı (.NET)|Kullanılamaz|
+|Yükleyici Sınıfı (.NET)|Kullanılamaz|
+|Kullanıcı denetimi (.NET)|Kullanılamaz|
+|Windows formu (.NET)|Kullanılamaz|
 
 #### <a name="atl"></a>ATL
 
-|Şablon|Sihirbazı|
+|Şablon|Ekleme|
 |--------------|------------|
-|MFC'ye ATL desteği Ekle|Yok|
+|MFC 'ye ATL desteği ekleme|Kullanılamaz|
 |ATL denetimi|[ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md)|
-|ATL iletişim kutusu|[ATL iletişim kutusu Sihirbazı](../atl/reference/atl-dialog-wizard.md)|
-|ATL Basit Nesne|[ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md)|
-|WMI Olay sağlayıcısı|WMI Olay sağlayıcısı Sihirbazı|
+|ATL Iletişim kutusu|[ATL iletişim kutusu Sihirbazı](../atl/reference/atl-dialog-wizard.md)|
+|ATL basit nesnesi|[ATL basit nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md)|
+|WMI olay sağlayıcısı|WMI olay sağlayıcısı Sihirbazı|
 |WMI örnek sağlayıcısı|WMI örnek sağlayıcısı Sihirbazı|
 
 #### <a name="mfc"></a>MFC
 
-|Şablon|Sihirbazı|
+|Şablon|Ekleme|
 |--------------|------------|
-|MFC Sınıfı|[MFC sınıf Ekleme Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)|
+|MFC Sınıfı|[MFC sınıf ekleme Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)|
 
 #### <a name="generic-classes"></a>Genel sınıflar
 
-|Şablon|Sihirbazı|
+|Şablon|Ekleme|
 |--------------|------------|
-|Genel C++ sınıfı|[Genel C++ sınıfı Sihirbazı](../ide/generic-cpp-class-wizard.md)|
+|Genel C++ sınıfı|[Genel C++ sınıfı Sihirbazı](./adding-a-generic-cpp-class.md#generic-c-class-wizard)|

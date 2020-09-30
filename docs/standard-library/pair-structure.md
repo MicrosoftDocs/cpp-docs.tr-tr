@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: 6ccbea23835326d1e1840d8454f86c0eb72a5a7d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0a78d5074c37f4fbbfb736125626fa4b7fc7e275
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042062"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505758"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
 İki nesneyi tek bir nesne olarak işleme yeteneği sağlayan bir yapı.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 struct pair
@@ -75,7 +75,6 @@ Farklı bir çiftin öğelerini başlatmak için değerleri kullanılacak olan b
 İkinci Oluşturucu, çiftin ilk öğesini *val1* ve Ikincisini val2 & lt olarak başlatır *.*  Her iki tür de kopya oluşturulabilir ise tanımlanmıştır.
 
 Üçüncü (şablon) Oluşturucu, çiftin ilk öğesini olarak başlatır `Right` . **ilk** ve ikincisini `Right` . **ikinci**.  Çiftin her iki türü de belirtilen değer türlerinden oluşturulabilir ise tanımlanmıştır.
-
 
 Dördüncü Oluşturucu, çiftin ilk öğesini *val1* , Ikincisi Ise [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md) *kullanarak başlatır* .  Çiftin her iki türü de belirtilen değer türlerinden oluşturulabilir ise tanımlanmıştır.
 

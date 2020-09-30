@@ -13,12 +13,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: c79021387de2c8bc8f7f106a93797b7efb07d6df
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 449e60e968916f7741422ca2766375ad29afd062
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160417"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91505712"
 ---
 # <a name="dialog-box-controls-c"></a>İletişim kutusu denetimleri (C++)
 
@@ -51,7 +51,7 @@ Denetimler ve iletişim kutuları hakkında daha fazla bilgi için bkz. [denetim
 |[Kaydırma çubuğu denetimi](../mfc/reference/cscrollbar-class.md)|NM_THEMECHANGED|
 
 > [!NOTE]
-> MFC ile **richedit 1,0** denetimini kullanma hakkında daha fazla bilgi için bkz. MFC ve [zengin düzenleme denetimi örnekleri](../mfc/rich-edit-control-examples.md) [ile RichEdit 1,0 denetimini kullanma](../windows/using-the-richedit-1-0-control-with-mfc.md) .
+> MFC ile **richedit 1,0** denetimini kullanma hakkında daha fazla bilgi için bkz. MFC ve [zengin düzenleme denetimi örnekleri](../mfc/rich-edit-control-examples.md) [ile RichEdit 1,0 denetimini kullanma](./adding-editing-or-deleting-controls.md) .
 
 Daha fazla işlevsellik sağlamak için **araç kutusu** 'Nda bulunan [Windows ortak denetimleri](../mfc/controls-mfc.md) şunlardır:
 
@@ -78,7 +78,7 @@ Daha fazla işlevsellik sağlamak için **araç kutusu** 'Nda bulunan [Windows o
 > [!NOTE]
 > Bu anlamda özel denetimlerin, ActiveX denetimleriyle karıştırılmamalıdır. ActiveX denetimleri bazen OLE özel denetimleri olarak adlandırılır. Ayrıca, bu denetimleri Windows 'daki sahip tarafından çizilen denetimlerle karıştırmayın.
 
-Bu işlevsellik, Windows tarafından sağlananlardan farklı denetimleri kullanmanıza olanak sağlamak için tasarlanmıştır. Çalışma zamanında, denetim bir pencere sınıfıyla ilişkilendirilir (bir C++ sınıfla aynı değildir). Aynı görevi gerçekleştirmenin daha yaygın bir yolu, iletişim kutusunda statik denetim gibi herhangi bir denetimi yüklemektir. Sonra, [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevinde, çalışma zamanında bu denetimi kaldırın ve kendi özel denetiinkini değiştirin.
+Bu işlevsellik, Windows tarafından sağlananlardan farklı denetimleri kullanmanıza olanak sağlamak için tasarlanmıştır. Çalışma zamanında, denetim bir pencere sınıfıyla ilişkilendirilir (C++ sınıfıyla aynı değildir). Aynı görevi gerçekleştirmenin daha yaygın bir yolu, iletişim kutusunda statik denetim gibi herhangi bir denetimi yüklemektir. Sonra, [OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog) işlevinde, çalışma zamanında bu denetimi kaldırın ve kendi özel denetiinkini değiştirin.
 
 > [!NOTE]
 > Bu, eski bir tekniktir. Bugün, çoğu durumda bir ActiveX denetimi yazmak veya Windows ortak denetimi alt sınıfı yapmanız önerilir.
@@ -101,9 +101,9 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
+[İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)
 
 <!--
-[Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)<br/>
-[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)<br/>
+[Adding Event Handlers for Dialog Box Controls](./adding-editing-or-deleting-controls.md)<br/>
+[Dialog Box Controls and Variable Types](../ide/adding-a-member-variable-visual-cpp.md#dialog-box-controls-and-variable-types)<br/>
 [Controls](../mfc/controls-mfc.md)<br/>-->
