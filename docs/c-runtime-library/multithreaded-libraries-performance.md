@@ -1,39 +1,41 @@
 ---
 title: Çok İş Parçacıklı Kitaplık Performansı
+description: Microsoft C çalışma zamanı çok iş parçacıklı kitaplıklarından en iyi performansı alma konusuna genel bakış.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - threading [C++], performance
 - libraries, multithreaded
 - performance, multithreading
 - multithreaded libraries
 ms.assetid: faa5d808-087c-463d-8f0d-8c478d137296
-ms.openlocfilehash: 48f491b6d82acb566669302e4d607e85faf9012a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: edfbbf3055e9023c74cf0e154577d4b1853f557b
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342412"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590205"
 ---
 # <a name="multithreaded-libraries-performance"></a>Çok İş Parçacıklı Kitaplık Performansı
 
-Tek iş parçacıklı CRT artık kullanılamıyor. Bu konuda, çok iş parçacıklı kitaplıklarından en yüksek performansı elde anlatılmaktadır.
+Tek iş parçacıklı CRT artık kullanılamaz. Bu konuda, çok iş parçacıklı kitaplıklardan maksimum performansı nasıl alacağınız ele alınmaktadır.
 
 ## <a name="maximizing-performance"></a>Performansı en üst düzeye çıkarma
 
-Çok iş parçacıklı kitaplık performansı geliştirildi ve artık ortadan tek iş parçacıklı kitaplık performansı yakın. Bu durumlar için daha yüksek performans gerektiğinde çeşitli yeni özellikler mevcuttur.
+Çok iş parçacıklı kitaplıkların performansı geliştirilmiştir ve bu, şu anda kaldırılan tek iş parçacıklı kitaplıkların performansına yakın bir performans sağlar. Daha yüksek performans gerektiren bu durumlar için, birkaç yeni özellik vardır.
 
-- Bağımsız stream kilitleme sayesinde bir akış kilitleyin ve ardından [_nolock işlevleri](../c-runtime-library/nolock-functions.md) doğrudan akış erişim. Bu, kritik döngüler dışında hoisted kilit kullanımına izin verir.
+- Bağımsız akış kilitleme, bir akışı kilitlemenize ve sonra doğrudan akışa erişen [_nolock işlevlerini](../c-runtime-library/nolock-functions.md) kullanmanıza olanak tanır. Bu, kilit kullanımının kritik döngülerin dışında barındırılanalmasına izin verir.
 
-- İş parçacığı başına yerel ayar çok iş parçacıklı senaryoları için yerel ayar erişim maliyetini azaltır (bkz [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)).
+- İş parçacığı başına yerel ayar, çok iş parçacıklı senaryolar için yerel ayar erişiminin maliyetini azaltır (bkz. [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)).
 
-- Yerel ayara bağlı işlevler (adlarla _l içinde biten), yerel ayar önemli ölçüde kaldırarak bir parametre olarak alır (örneğin, [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)).
+- Yerel ayara bağımlı işlevler (_l ile biten adlarla) yerel ayarı bir parametre olarak alır. Bu, önemli maliyetli (örneğin, [printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)) kaldırılır.
 
-- Ortak kod sayfaları için iyileştirme, pek çok kısa işlemlerinin maliyetini azaltın.
+- Yaygın codepages iyileştirmeleri, birçok kısa işlemin maliyetini azaltır.
 
-- Tanımlama [_crt_dısable_perfcrıt_locks](../c-runtime-library/crt-disable-perfcrit-locks.md) tek iş parçacıklı bir g/ç modeli varsayar ve işlevlerin _nolock forms kullanmak için tüm g/ç işlemleri zorlar. Bu, daha iyi performans elde etmek tek iş parçacıklı uygulamalar yüksek oranda miyim/O tabanlı sağlar.
+- [_CRT_DISABLE_PERFCRIT_LOCKS](../c-runtime-library/crt-disable-perfcrit-locks.md) tanımlama, tüm g/ç işlemlerini tek iş parçacıklı g/ç modeli varsay ve işlevlerin _nolock biçimlerini kullanacak şekilde zorlar. Bu, yüksek g/ç tabanlı tek iş parçacıklı uygulamalara daha iyi performans sağlamak için izin verir.
 
-- CRT yığın tanıtıcısı riskini Windows Düşük Parçalanma Yığın (LFH) için yüksek oranda ölçeklendirilmiş senaryolarda performansı önemli ölçüde iyileştirebilen CRT yığın etkinleştirmenize olanak sağlar.
+- CRT yığın tanıtıcısının pozlaması, CRT yığını için Windows düşük parçalanma yığınını (LFH) etkinleştirmenizi sağlar ve bu da yüksek düzeyde ölçeklendirilen senaryolarda performansı önemli ölçüde iyileştirebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)

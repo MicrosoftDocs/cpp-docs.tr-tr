@@ -3,12 +3,12 @@ title: enum class (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: a1b99cb2265c9a9bdb40a7239a21412123772570
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9acf93976b2f7751e85bf3ed0ddd2735c29e121c
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219722"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590322"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>enum class (C++/CLI ve C++/CX)
 
@@ -22,7 +22,7 @@ C++/CX ve C++/CLı, **Genel sabit** listesi sınıfını ve standart C++ **sabit
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
       access
@@ -57,9 +57,9 @@ Seçim Sabit listesi türü değişkeninin adı.
 
 Daha fazla bilgi ve örnekler için bkz. [enum](../cppcx/enums-c-cx.md).
 
-Bir Numaralandırıcı değerini tanımlayan sabit ifade *temeldeki türle*temsil edilemez derleyici hata iletileri yayar.  Ancak derleyici, temel alınan tür için uygun olmayan bir değer için hata raporlamaz. Örnek:
+Bir Numaralandırıcı değerini tanımlayan sabit ifade *temeldeki türle*temsil edilemez derleyici hata iletileri yayar.  Ancak derleyici, temel alınan tür için uygun olmayan bir değer için hata raporlamaz. Örneğin:
 
-- *Temeldeki tür* sayısal ise ve bir Numaralandırıcı bu türün en büyük değerini belirtiyorsa, bir sonraki örtük olarak tanımlanmış enumeratoı değeri temsil edilemez.
+- *Temeldeki tür* sayısal ise ve bir Numaralandırıcı bu türün en büyük değerini belirtiyorsa, bir sonraki örtük olarak tanımlanmış numaralandırmanın değeri temsil edilemez.
 
 - *Temel alınan tür* ise **`bool`** ve ikiden fazla numaralandırıcı örtük olarak tanımlanmışsa, ilk iki numaralandırıcıdan sonraki Numaralandırıcılar temsil edilemez.
 
@@ -67,11 +67,11 @@ Bir Numaralandırıcı değerini tanımlayan sabit ifade *temeldeki türle*temsi
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
       access
@@ -176,7 +176,7 @@ CLR numaralandırmaları hakkında daha fazla bilgi için bkz.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

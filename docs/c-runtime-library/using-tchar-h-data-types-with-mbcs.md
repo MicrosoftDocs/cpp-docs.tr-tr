@@ -1,17 +1,19 @@
 ---
 title: MBCS ile TCHAR.H Veri Türlerini Kullanma
+description: TCHAR kullandığınızda Microsoft C Runtime metin yordamlarının nasıl eşlendiğine ilişkin genel bakış. Çok baytlı sabiti _MBCS H veri türleri.
+ms.topic: conceptual
 ms.date: 11/04/2016
 helpviewer_keywords:
 - TCHAR.H data types
 - MBCS data type
 - _MBCS data type
 ms.assetid: 48f471e7-9d2b-4a39-b841-16a0e15c0a18
-ms.openlocfilehash: d1aab0c21a348e4b1a6e85a7adb7f7f8ea1587b2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 001f745c03e4e0c0090e40c00c5394397028659f
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87188641"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589958"
 ---
 # <a name="using-tcharh-data-types-with-_mbcs"></a>MBCS ile TCHAR.H Veri Türlerini Kullanma
 
@@ -31,7 +33,7 @@ Aşağıda, bu tür çakışmasını önlemek için üç çözüm bulunur (ve so
    char *_tcsrev(char *);
    ```
 
-   Varsayılan durumda, **_tcsrev** için prototip, libc 'teki bir dönüştürücü aracılığıyla **_mbsrev** eşlenir. LIB. Bu, **_mbsrev** gelen parametrelerin türlerini ve giden dönüş değerini **_TCHAR &#42;** ( **char &#42;** gibi) **işaretsiz char &#42;** olarak değiştirir. Bu yöntem **_TCHAR**kullanırken tür eşleştirmeyi sağlar, ancak işlev çağrı yükü nedeniyle oldukça yavaştır.
+   Varsayılan durumda, **_tcsrev** için prototip, libc 'teki bir dönüştürücü aracılığıyla **_mbsrev** eşlenir. LIB. Bu, **_mbsrev** gelen parametrelerin türlerini ve giden dönüş değerini **_TCHAR &#42;** ( **char &#42;** gibi) **işaretsiz char &#42;** olarak değiştirir. Bu yöntem **_TCHAR**kullanırken tür eşleştirmeyi sağlar, ancak işlev çağrısı yükü nedeniyle oldukça yavaştır.
 
 - Kodunuzda aşağıdaki Önişlemci ifadesini ekleyerek işlevi satır içinde kullanın.
 
@@ -54,17 +56,17 @@ Aşağıda, bu tür çakışmasını önlemek için üç çözüm bulunur (ve so
    #define _MB_MAP_DIRECT
    ```
 
-   Bu yaklaşım, varsayılan davranışı kullanmak istemiyorsanız veya satır içi kullanmıyorsanız hızlı bir alternatif sağlar. Aşağıdaki örnekte gösterildiği gibi, genel metin yordamının bir makro tarafından doğrudan, yordamın MBCS sürümüne eşlenmesine neden olur. Olsun.
+   Bu yaklaşım, varsayılan davranışı kullanmak veya satır içi kullanmak istemiyorsanız hızlı bir alternatif sağlar. Bir makro, genel metin yordamını, aşağıdaki örnekte gösterildiği gibi yordamın MBCS sürümüne eşler.
 
    ```C
    #define _tcschr _mbschr
    ```
 
-Bu yaklaşımı uyguladığınızda, dize bağımsız değişkenleri ve dize dönüş değerleri için uygun veri türlerinin kullanıldığından emin olmak için dikkatli olmanız gerekir. Uygun tür eşleşmesini sağlamak için tür atama kullanabilirsiniz veya **_TXCHAR** genel metin veri türünü kullanabilirsiniz. **_TXCHAR** **`char`** , SBCS kodunda türüyle EŞLENIR, ancak MBCS kodunda tür ile eşlenir **`unsigned char`** . Genel metin makroları hakkında daha fazla bilgi için bkz. [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
+Bu yaklaşımı uyguladığınızda, dize bağımsız değişkenleri ve dize dönüş değerleri için uygun veri türlerinin kullanıldığından emin olun. Uygun tür eşleşmesini sağlamak için tür atama kullanabilirsiniz veya **_TXCHAR** genel metin veri türünü kullanabilirsiniz. **_TXCHAR** **`char`** , SBCS kodunda türüyle EŞLENIR, ancak MBCS kodunda tür ile eşlenir **`unsigned char`** . Genel metin makroları hakkında daha fazla bilgi için bkz. [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Uluslararası duruma getirme](../c-runtime-library/internationalization.md)\
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

@@ -1,31 +1,35 @@
 ---
 title: Parametre Doğrulama
+description: Microsoft C çalışma zamanı kitaplığı 'nda parametre doğrulamanın açıklaması.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-ms.openlocfilehash: 2c7b2ae50fdcbf59cd23cc309a4ddc4c0803e24e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 60ded7fc5a4388b2c4bf87ab5a388caab5fc47c2
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289318"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589828"
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
 
-Gelişmiş Güvenlik CRT işlevlerinin çoğunu ve birçok önceden var olan işlevler kendi parametrelerini doğrular. Bu işaretçiler için denetimi içerebilir **NULL**tamsayılar geçerli bir aralığa düşen denetimi veya numaralandırma değerlerinin geçerli olduğunu kontrol. Geçersiz bir parametre bulunduğunda, geçersiz parametre işleyicisi yürütülür.
+Güvenlik açısından gelişmiş CRT işlevlerinin birçoğu ve çoğu bu değildir, **null**işaretçileri denetlemek, tamsayıların geçerli bir aralıkta olması veya numaralandırma değerlerinin geçerli olması gibi işlemler için parametrelerini doğrulayın. Geçersiz parametre bulunursa, geçersiz parametre işleyicisi çağırılır.
 
-## <a name="invalid-parameter-handler-routine"></a>Geçersiz parametre işleyici rutinini
+## <a name="invalid-parameter-handler-routine"></a>Geçersiz parametre Işleyicisi yordamı
 
-C çalışma zamanı kitaplığı işlevi geçersiz bir parametre algıladığında, bu hata hakkındaki bazı bilgileri yakalar ve ardından bir geçersiz parametre işleyici gönderme işlevi, aşağıdakilerden birini sarmalayan bir makro çağırır [_invalid_parameter](../c-runtime-library/reference/invalid-parameter-functions.md), [_invalid_parameter_noinfo](../c-runtime-library/reference/invalid-parameter-functions.md), veya [_invalid_parameter_noinfo_noreturn](../c-runtime-library/reference/invalid-parameter-functions.md). Çağrılan gönderme işlev kodunuzu, sırasıyla olup, hata ayıklama derlemesi, perakende derleme üzerinde bağlıdır ve hata kurtarılabilir olarak kabul edilmez.
+Bir C çalışma zamanı kitaplığı işlevi geçersiz bir parametre algıladığında, hatayla ilgili bazı bilgileri yakalar ve sonra geçersiz parametre işleyicisi dağıtma işlevini sarmalayan bir makro çağırır. [_İnvalid_parameter](../c-runtime-library/reference/invalid-parameter-functions.md), [_invalid_parameter_noinfo](../c-runtime-library/reference/invalid-parameter-functions.md)veya [_invalid_parameter_noinfo_noreturn](../c-runtime-library/reference/invalid-parameter-functions.md)biri olacaktır. Hangi dağıtım işlevi çağrılır, kodunuzun, sırasıyla, hata ayıklama derlemesi, perakende oluşturma veya hata kurtarılabilir olarak kabul edilip edilmeyeceğini bağlıdır.
 
-Dağıtma işlevi çağrılmadan önce hata ayıklama yapılarında, geçersiz parametre makrosu genellikle başarısız bir onaylama işlemi ve hata ayıklayıcı bir kesme noktası oluşturur. Kod yürütüldüğünde, onaylama işlemi "İptal", "Deneyin" ve "Devam" veya işletim sistemi ve çalışma zamanı kitaplığı sürümüne bağlı olarak, benzer seçenekleri içeren bir iletişim kutusu kullanıcı için bildirilebilir. Bu seçenekler, kullanıcı bir hata ayıklayıcı ekleyin ya da çalışmaya devam mevcut kod izin vermek için program hemen sonlandırmak gönderme işlevini çağıran sağlar.
+Hata ayıklama yapılarında, geçersiz parametre makrosu genellikle başarısız bir onaylama işlemi ve dağıtım işlevi çağrılmadan önce bir hata ayıklayıcı kesme noktası oluşturur. Kod yürütüldüğünde onaylama, kullanıcıya "Iptal", "yeniden dene" ve "devam" ya da işletim sistemi ve çalışma zamanı kitaplığı sürümüne göre benzer seçimler içeren bir iletişim kutusunda bildirilebilir. Bu seçenekler, kullanıcının programı hemen sonlanmasına, hata ayıklayıcı eklemeye veya mevcut kodun, dağıtım işlevini çağıran çalışmaya devam etmesine izin verir.
 
-Geçersiz parametre işleyicisi dağıtma işlevinin sırayla şu anda atanmış geçersiz parametre işleyicisini çağırır. Varsayılan olarak, geçersiz parametreyi çağırır `_invoke_watson` neden olan uygulamanın çökmesine"," diğer bir deyişle, sonlandırma ve mini döküm oluşturmak. İşletim sistemi tarafından etkinleştirilirse, bir iletişim kutusu kullanıcı Microsoft'a kilitlenme bilgi dökümü analiz yüklemek isteyip istemediğinizi sorar.
+Geçersiz parametre işleyicisi gönderme işlevi şu anda atanmış geçersiz parametre işleyicisini çağırır. Varsayılan olarak, geçersiz parametre çağırır `_invoke_watson` , bu, uygulamanın kapatılmasına ve bir mini döküm oluşturmasına neden olur. İşletim sistemi tarafından etkinleştirildiyse bir iletişim kutusu kullanıcıdan, kilitlenme dökümünü analiz için Microsoft 'a göndermek isteyip istemediği sorulur.
 
-İşlevleri kullanarak bu davranışı değiştirilebilir [_set_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) veya [_set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) kendi işlevi için geçersiz parametre işleyicisi ayarlamak için. Belirttiğiniz işlevi uygulamayı sonlandırmak değil, geçersiz parametreler alınan işleve döndürülür. CRT bu İşlevler normalde işlevi yürütme sona erecek ayarlamak `errno` bir hata kodu ve bir hata kodu döndürür. Çoğu durumda, `errno` değeri ve dönüş değeri olan hem de `EINVAL`, geçersiz bir parametre belirten. Bazı durumlarda, daha belirgin bir hata kodu, gibi döndürülen `EBADF` bir hatalı dosya işaretçisiyse için geçirilen parametre olarak. Daha fazla bilgi için `errno`, bkz: [errno _doserrno, _sys_errlist ve _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Geçersiz parametre işleyicisini kendi işleviniz olarak ayarlamak için [_set_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) veya [_set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) işlevlerini kullanarak bu davranışı değiştirebilirsiniz. Belirttiğiniz işlev uygulamayı sonlandıramıyorsa, denetim geçersiz parametreleri alan işleve döndürülür. CRT 'de, bu işlevler normalde işlev yürütmeyi durdurur, `errno` bir hata koduna ayarlanır ve bir hata kodu döndürür. Çoğu durumda, `errno` `EINVAL` geçersiz bir parametreyi belirtmek için değer ve dönüş değeri her ikisi de vardır. Bazı durumlarda, `EBADF` parametre olarak geçirilen hatalı dosya işaretçisi gibi daha belirli bir hata kodu döndürülür. 
+
+Hakkında daha fazla bilgi için `errno` bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT'deki Güvenlik Özellikleri](../c-runtime-library/security-features-in-the-crt.md)<br/>
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[CRT 'daki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md)\
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)

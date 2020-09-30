@@ -1,17 +1,18 @@
 ---
-title: Tür-genel matematik
+title: Türe özel matematik
 description: Bağımsız değişken türüne göre doğru matematik işlevini çağıran C kodu yazmayı kolaylaştıran <tgmath. h> içindeki makroları açıklar.
+ms.topic: conceptual
 ms.date: 9/3/2020
 helpviewer_keywords:
 - CRT tgmath.h
-ms.openlocfilehash: 8994edcaa05247a16d90b47bca8ec26fca27cda7
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 98c786d91963973ad9384cea2fe6563d1e3174ac
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89557679"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590231"
 ---
-# <a name="type-generic-math"></a>Tür-genel matematik
+# <a name="type-generic-math"></a>Türe özel matematik
 
 ISO C standart 11 (C11) ve üzeri için \<tgmath.h> üst bilgi, ve dahil olmak üzere ek olarak, \<math.h> \<complex.h> parametrelerinin türlerine göre ilgili matematik işlevini çağıran makrolar sağlar.
 

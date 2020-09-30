@@ -1,5 +1,7 @@
 ---
 title: Genel Metin Eşlemelerini Kullanma
+description: Veri türleri, yordamlar ve C çalışma zamanındaki diğer nesneler için Microsoft 'a özgü eşlemelere giriş.
+ms.topic: conceptual
 ms.date: 11/04/2016
 f1_keywords:
 - _UNICODE
@@ -27,26 +29,26 @@ helpviewer_keywords:
 - UNICODE constant
 - _T type
 ms.assetid: 2848121c-e51f-4b9b-a2e6-833ece4b0cb3
-ms.openlocfilehash: f8616e0ff660b299544ed3c2f0a12feb4dbfe66b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea3b1eef413a0d9f52e81795c04424d533b83504
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221880"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590114"
 ---
 # <a name="using-generic-text-mappings"></a>Genel Metin Eşlemelerini Kullanma
 
 **Microsoft'a Özgü**
 
-Çeşitli uluslararası pazarlar için kod geliştirmeyi basitleştirmek amacıyla, Microsoft çalışma zamanı kitaplığı birçok veri türü, yordamlar ve diğer nesneler için Microsoft 'a özgü "genel metin" eşlemeleri sağlar. Bu eşlemeler TCHAR içinde tanımlanmıştır. Olsun. Bu ad eşlemelerini, bir ifade kullanarak tanımladığınız bir bildirim sabitine bağlı olarak, üç tür karakter kümesi için derlenebilecek genel kod yazmak üzere kullanabilirsiniz: ASCII (SBCS), MBCS veya Unicode `#define` . Genel metin eşlemeleri, ANSI uyumlu olmayan Microsoft uzantılarıdır.
+Çeşitli uluslararası pazarlar için kod geliştirmeyi basitleştirmek amacıyla, Microsoft çalışma zamanı kitaplığı birçok veri türü, yordamlar ve diğer nesneler için Microsoft 'a özgü "genel metin" eşlemeleri sağlar. Bu eşlemeler TCHAR. H içinde tanımlanır. Bu ad eşlemelerini, bir ifade kullanarak tanımladığınız bir bildirim sabitine bağlı olarak, üç tür karakter kümesi için derlenebilecek genel kod yazmak üzere kullanabilirsiniz: ASCII (SBCS), MBCS veya Unicode `#define` . Genel metin eşlemeleri, ANSI uyumlu olmayan Microsoft uzantılarıdır.
 
 ### <a name="preprocessor-directives-for-generic-text-mappings"></a>Genel metin eşlemeleri için Önişlemci yönergeleri
 
 |#define|Derlenmiş sürüm|Örnek|
 |--------------|----------------------|-------------|
-|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev`eşleme`_wcsrev`|
-|`_MBCS`|Çok baytlı karakter|`_tcsrev`eşleme`_mbsrev`|
-|Hiçbiri (varsayılan: ne `_UNICODE` de `_MBCS` tanımlanmamış)|SBCS (ASCıı)|`_tcsrev`eşleme`strrev`|
+|`_UNICODE`|Unicode (geniş karakter)|`_tcsrev` eşleme `_wcsrev`|
+|`_MBCS`|Çok baytlı karakter|`_tcsrev` eşleme `_mbsrev`|
+|Hiçbiri (varsayılan: ne `_UNICODE` de `_MBCS` tanımlanmamış)|SBCS (ASCıı)|`_tcsrev` eşleme `strrev`|
 
 Örneğin, TCHAR içinde tanımlanan genel metin işlevi `_tcsrev` . H, `mbsrev` `MBCS` programınızda tanımlanmışsa veya tanımlanmışsa öğesine eşlenir `_wcsrev` `_UNICODE` . Aksi takdirde `_tcsrev` ile eşlenir `strrev` .
 
@@ -61,7 +63,7 @@ ms.locfileid: "87221880"
 |`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
 |`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
 |`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
-|`_T` veya `_TEXT`|Efekt yok (ön işlemci tarafından kaldırıldı)|Efekt yok (ön işlemci tarafından kaldırıldı)|`L`(aşağıdaki karakter veya dizeyi Unicode karşılığına dönüştürür)|
+|`_T` veya `_TEXT`|Efekt yok (ön işlemci tarafından kaldırıldı)|Efekt yok (ön işlemci tarafından kaldırıldı)|`L` (aşağıdaki karakter veya dizeyi Unicode karşılığına dönüştürür)|
 
 Yordamların, değişkenlerin ve diğer nesnelerin genel metin eşlemelerinin tam bir listesi için bkz. [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md).
 

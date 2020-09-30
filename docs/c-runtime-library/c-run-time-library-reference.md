@@ -1,5 +1,6 @@
 ---
 title: C Çalışma Zamanı Kitaplığı Başvurusu
+description: Microsoft C çalışma zamanı kitaplığı işlevlerine yönelik bilgi ve başvuru bağlantıları.
 ms.date: 11/04/2016
 f1_keywords:
 - c.runtime
@@ -8,55 +9,55 @@ helpviewer_keywords:
 - run-time libraries
 - CRT, reference
 ms.assetid: a503e11c-8dca-4846-84fb-025a826c32b8
-ms.openlocfilehash: 9193e5c38c01f9dddcf0a8cd324d07f5dd90cb5e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 99d8463ddd9dd7b9037cb96e214af7f9581ba074
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334427"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590062"
 ---
 # <a name="c-run-time-library-reference"></a>C Çalışma Zamanı Kitaplığı Başvurusu
 
-Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemi için programlama yordamları sağlar. Bu yordamlar, C ve C++ dilleri tarafından sağverilmeyecek birçok yaygın programlama görevini otomatikleştirir.
+Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemi için programlama yordamları sağlar. Bu yordamlar, C ve C++ dilleri tarafından sağlanmayan yaygın programlama görevlerinin çoğunu otomatik hale getirir.
 
-Örnek programlar, kitaplıktaki çoğu rutin için tek tek başvuru konularına dahildir.
+Örnek programlar, kitaplıktaki birçok yordam için bireysel başvuru konularına dahil edilmiştir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[C Çalışma Zamanı Kitaplıkları](../c-runtime-library/crt-library-features.md)<br/>
-C çalışma zamanı kitaplıklarını oluşturan .lib dosyalarını tartışır.
+[C çalışma zamanı kitaplıkları](crt-library-features.md)\
+C çalışma zamanı kitaplıklarını oluşturan. lib dosyalarını açıklar.
 
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategoriye göre evrensel C çalışma zamanı yordamları](run-time-routines-by-category.md)\
 Kategoriye göre çalışma zamanı kitaplığına bağlantılar sağlar.
 
-[Küresel Değişkenler ve Standart Türleri](../c-runtime-library/global-variables-and-standard-types.md)<br/>
+[Genel değişkenler ve standart türler](global-variables-and-standard-types.md)\
 Çalışma zamanı kitaplığı tarafından sağlanan genel değişkenlere ve standart türlere bağlantılar sağlar.
 
-[Küresel Sabitler](../c-runtime-library/global-constants.md)<br/>
-Çalışma zamanı kitaplığı tarafından tanımlanan genel sabitlere bağlantılar sağlar.
+[Global sabitler](global-constants.md)\
+Çalışma zamanı kitaplığı tarafından tanımlanan genel sabitler için bağlantılar sağlar.
 
-[Küresel Devlet](../c-runtime-library/global-state.md)<br/>
-C çalışma zamanı kitaplığında genel durum kapsamını açıklar.
+[Genel durum](global-state.md)\
+C çalışma zamanı kitaplığındaki genel durum kapsamını açıklar.
 
-[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-Tüm C çalışma zamanı kitaplığı işlevlerinin alfabetik listesine bir içerik giriş noktası tablosu sağlar.
+[Alfabetik Işlev Başvurusu](reference/crt-alphabetical-function-reference.md)\
+Tüm C çalışma zamanı kitaplığı işlevlerinin alfabetik bir listesine bir içindekiler tablosu giriş noktası sağlar.
 
-[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
-Tchar.h'de tanımlanan genel metin eşlemelerine bağlantılar sağlar.
+[Genel metin eşlemeleri](generic-text-mappings.md)\
+Tchar. h içinde tanımlanan genel metin eşlemelerine bağlantılar sağlar.
 
-[Dil ve Ülke/Bölge Dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-Dil ve Ülke/Bölge dizelerini ayarlamak için işlevin `setlocale` nasıl kullanılacağını açıklar.
+[Dil ve ülke/bölge dizeleri](locale-names-languages-and-country-region-strings.md)\
+`setlocale`Dilinin ve ülke/bölge dizelerini ayarlamak için işlevinin nasıl kullanılacağını açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Hata Ayıklama Yordamları](../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](debug-routines.md)\
 Çalışma zamanı kitaplığı yordamlarının hata ayıklama sürümlerine bağlantılar sağlar.
 
-[Çalışma Zamanı Hata Denetimi](../c-runtime-library/run-time-error-checking.md)<br/>
+[Çalışma zamanı hata denetimi](run-time-error-checking.md)\
 Çalışma zamanı hata denetimlerini destekleyen işlevlere bağlantılar sağlar.
 
-[DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)<br/>
-DLL için kullanılan giriş noktası ve başlangıç kodunu tartışır.
+[Dll 'Ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)\
+Bir DLL için kullanılan giriş noktasını ve başlangıç kodunu açıklar.
 
-[Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)<br/>
-Uygulamanızdaki veya depolanan yordamları düzeltmek için Visual Studio hata ayıklayıcısını kullanmaya bağlantılar sağlar.
+[Masının](/visualstudio/debugger/debugging-in-visual-studio)\
+Uygulamanızdaki veya saklı yordamlardaki mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcısını kullanma bağlantıları sağlar.

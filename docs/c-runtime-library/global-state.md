@@ -1,15 +1,16 @@
 ---
 title: CRT'deki genel durum
-description: Paylaşılan genel durumun evrensel C çalışma zamanında nasıl işlendiğini açıklar.
+description: Paylaşılan genel durumun Microsoft Universal C çalışma zamanında nasıl işlendiğini açıklar.
+ms.topic: conceptual
 ms.date: 04/02/2020
 helpviewer_keywords:
 - CRT global state
-ms.openlocfilehash: d1c787147ea3df36ce120837ef5b2c68b1bf58b1
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 60532fbdb905bd8ea78b4ce705ec8ecc3e374d9d
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89554675"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589737"
 ---
 # <a name="global-state-in-the-crt"></a>CRT'deki genel durum
 
@@ -19,7 +20,7 @@ UıCRT 'ın genel durumu uygulamalar ve işletim sistemi arasında paylaşılmaz
 
 ## <a name="os-specific-versions-of-crt-functions"></a>CRT işlevlerinin işletim sistemine özgü sürümleri
 
-UıCRT 'da, genel durumla etkileşime geçen işlevlerde bir "ikizi" işlevi vardır ve önekli `_o_` . Örnek:
+UıCRT 'da, genel durumla etkileşime geçen işlevlerde bir "ikizi" işlevi vardır ve önekli `_o_` . Örneğin:
 
 - `setlocale()` uygulamaya özgü genel durumu etkiler.
 - `_o_setlocale()` tüm işletim sistemi bileşenleri tarafından paylaşılan genel durumu etkiler, ancak uygulamalar değildir.

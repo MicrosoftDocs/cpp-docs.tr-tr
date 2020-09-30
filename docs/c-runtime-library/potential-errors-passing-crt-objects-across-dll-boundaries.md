@@ -1,41 +1,47 @@
 ---
 title: CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
+description: Microsoft C çalışma zamanı nesnelerini dinamik bağlantı kitaplığı (DLL) sınırında geçirirken ortaya çıkabilecek olası sorunlara genel bakış.
 ms.date: 11/04/2016
+ms.topic: conceptual
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: 10fbb128698b6422779d09a15fe3c1d25e8de5b5
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: f6d831ac8b86be8a6669e8ee6c66da64507d129f
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446661"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590192"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
 
-C geçirdiğinizde çalışma zamanı (CRT) dosya tanıtıcıları, yerel ve ortam değişkenleri gibi içine veya dışına bir DLL (DLL sınırı arasında işlev çağrıları), DLL içine çağırmak dosyaları yanı sıra, DLL farklı kopyalarını kullanırsanız beklenmeyen davranış oluşabilir nesneleri CRT kitaplığı.
+Dll sınırında işlev çağrıları aracılığıyla bir DLL içine veya dışına Dosya tutamaçları, yerel ayarlar ve ortam değişkenleri gibi C çalışma zamanı (CRT) nesneleri geçirdiğinizde, dll veya DLL 'e çağrı yapan herhangi bir dosya varsa, CRT kitaplıklarının farklı kopyalarını kullanabilirsiniz.
 
-Bellek ayırma ilgili bir sorun meydana gelebilir (açıkça ile `new` veya `malloc`, veya örtük olarak `strdup`, `strstreambuf::str`, vb.) ve ardından bir işaretçi serbest bırakılacak bir DLL sınırında geçirin. DLL ve onun kullanıcıları farklı kopyalara CRT kitaplık kullanıyorsanız, bu bellek erişim ihlali veya yığın bozulması neden olabilir.
+Bellek (ya da ya da dolaylı olarak, vb.) tahsis ettiğinizde ilgili bir sorun oluşabilir `new` `malloc` `strdup` `strstreambuf::str` ve sonra bir IŞARETÇIYI serbest bırakıldığında bir dll sınırı boyunca geçirin. Bu, DLL ve tüketicileri CRT kitaplıklarının farklı kopyalarını kullanıyorsa, bir bellek erişim ihlaline veya yığın bozulmasına neden olabilir.
 
-Bu sorunun başka bir belirti gibi hata ayıklama sırasında çıktı penceresinde bir hata olabilir:
-
-YIĞIN []: Geçersiz adres için RtlValidateHeap(#,#) belirtildi
+Bu sorunun başka bir belirtisi, hata ayıklama sırasında çıkış sırasında çıktı penceresinde hata `HEAP[]: Invalid Address specified to RtlValidateHeap(#,#)`
 
 ## <a name="causes"></a>Nedenler
 
-CRT kitaplığının her kopyası uygulamanıza veya DLL tarafından iş parçacığı yerel depolama alanında tutulur ayrı ve farklı bir durum vardır. Bu nedenle, ortam değişkenleri, dosya tanıtıcıları gibi CRT nesnelerini ve yerel ayarlar yalnızca uygulamadaki CRT veya bu nesneler burada ayrılan veya ayarlayın DLL kopyası için geçerli olur. Bir DLL ve uygulama istemcileri farklı kopyalarını CRT kitaplığı kullandığınızda, bu CRT nesnelerini DLL sınırında geçirmek ve bunları diğer tarafta doğru işlenmek üzere beklediğiniz olamaz. Bu, özellikle CRT sürümlerinden önce Evrensel CRT Visual Studio 2015 ve sonraki sürümlerde geçerlidir. Visual Studio 2013 veya daha önce oluşturulan Visual Studio'nun her sürümü için sürüme özgü bir CRT kitaplığı vardı. Örneğin, kendi veri yapıları ve adlandırma kuralları, CRT iç uygulama ayrıntıları her sürümde farklı. CRT CRT dll'nin farklı bir sürüme bir sürümü için derlenmiş kod dinamik olarak bağlama hiçbir zaman desteklenen, ancak zaman zaman, daha fazla Şanslar tasarıma göre çalışır.
+CRT kitaplığı 'nın her bir kopyasının, uygulamanız veya DLL 'niz tarafından iş parçacığı yerel depolama alanında tutulan ayrı ve farklı bir durumu vardır.
 
-Ayrıca, kendi yığını Yöneticisi CRT kitaplığının her kopyası olduğundan, bir CRT Kitaplığı'nda Bellek ayırma ve farklı bir kopyasını CRT kitaplığı tarafından serbest bırakılacak bir DLL sınırı arasında işaretçi işleve yığın bozulma olası bir nedeni vardır. CRT nesnelerini sınırında geçirir veya bellek ayırırken ve DLL dışında serbest bırakılacak bekler, DLL dosyanızı tasarlarken, uygulama istemcilerinin aynı kopyasını CRT kitaplığının DLL olarak kullanmak için dll kısıtlayın. Normalde yalnızca her ikisi de aynı sürüme CRT DLL yükleme zamanında bağlıysa DLL ve istemcileri CRT kitaplığı aynı kopyasını kullanın. Visual Studio 2015 ve daha sonra Windows 10 tarafından kullanılan Evrensel CRT kitaplığının DLL sürümü artık merkezi olarak dağıtılan bir Windows bileşeni olduğundan, ucrtbase.dll olduğu aynı Visual Studio 2015 ve sonraki sürümleri ile oluşturulan uygulamalar için. Ancak, hatta CRT kodu aynı olduğunda, farklı bir yığın kullanan bileşen için bir yığında ayrılan bellek kapalı el olamaz.
+Dosya tutamaçları, ortam değişkenleri ve yerel ayarlar gibi CRT nesneleri yalnızca, bu nesnelerin ayrıldığı veya ayarlandığı uygulamadaki veya DLL 'deki CRT kopyası için geçerlidir. Bir DLL ve istemcileri, CRT kitaplığı 'nın farklı kopyalarını kullandıklarında, bu CRT nesneleri DLL sınırında geçiremezsiniz ve diğer tarafta doğru bir şekilde kullanılmasını bekleyebilir. Bu, Visual Studio 2015 ve üzeri sürümlerde Evrensel CRT 'tan önceki CRT sürümlerden oluşur.
+
+Visual Studio 2013 veya daha önceki sürümleriyle oluşturulmuş her Visual Studio sürümü için sürüme özgü bir CRT kitaplığı vardı. Veri yapıları ve adlandırma kuralları gibi CRT 'ın iç uygulama ayrıntıları her sürümde farklıydı. CRT 'nin bir sürümü için derlenen kodu, CRT DLL 'nin farklı bir sürümüne dinamik olarak bağlama hiçbir şekilde desteklenmez. Bazen, tasarım yerine bir şanslar nedeniyle çalışacaktır.
+
+CRT kitaplığı 'nın her kopyasının kendi yığın Yöneticisi olduğundan, bir CRT kitaplığında bellek ayırarak ve bir CRT kitaplığının farklı bir kopyası tarafından boşaltılacak şekilde işaretçiyi bir DLL sınırı üzerinde geçirerek yığın bozulmasına neden olabilir. Dll 'nizi, dll sınırında CRT nesneleri geçireceğini veya bellek ayırır ve DLL 'nin dışında serbest olmasını bekliyorsa, DLL 'nin istemcilerinin, DLL ile aynı CRT kitaplığı kopyasını kullanması gerekir.
+
+DLL ve istemcileri normalde, her ikisi de aynı CRT DLL sürümüne bağlandığında CRT kitaplığı 'nın aynı kopyasını kullanır. Visual Studio 2015 ve üzeri Windows 10 ' da bulunan Universal CRT kitaplığı 'nın DLL sürümü artık merkezi olarak dağıtılan bir Windows bileşenidir (ucrtbase.dll), bu, Visual Studio 2015 ve sonraki sürümlerle oluşturulmuş uygulamalar için aynıdır. Ancak, CRT kodu özdeş olsa bile, farklı bir yığın kullanan bir bileşene tek bir yığında ayrılan bellek veremezsiniz.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, bir DLL sınırında bir dosya tanıtıcısı geçirir.
+Bu örnek, bir DLL sınırının tamamında bir dosya işleyicisini geçirir.
 
-DLL ve .exe dosyası paylaştıkları CRT tek bir kopyasını dolayısıyla /MD ile oluşturulur.
+DLL ve. exe dosyaları ile oluşturulmuştur `/MD` , bu sayede CRT 'nin tek bir kopyasını paylaşırlar.
 
-CRT ayrı bir kopyasını kullanmasını sağlayarak/MT ile yeniden oluşturursanız, sonuçta elde edilen test1Main.exe sonuçları bir erişim ihlali ile çalışıyor.
+`/MT`CRT 'nin ayrı kopyalarını kullanmaları için ile yeniden derleme yaparsanız, sonuç **test1Main.exe** çalıştırmak bir erişim ihlaline neden olur.
 
 ```cpp
 // test1Dll.cpp
@@ -73,7 +79,7 @@ this is a string
 
 ### <a name="description"></a>Açıklama
 
-Bu örnek, bir DLL sınırında ortam değişkenlerini geçirir.
+Bu örnek, bir DLL sınırının tamamında ortam değişkenlerini geçirir.
 
 ```cpp
 // test2Dll.cpp
@@ -116,7 +122,7 @@ int main( void )
 MYLIB has not been set.
 ```
 
-CRT yalnızca bir kopyasını kullanılmasını sağlamak amacıyla DLL ve .exe dosyası ile /MD oluşturulur, program başarıyla çalıştırır ve aşağıdaki çıktıyı üretir:
+Hem DLL hem de. exe dosyası, `/MD` CRT 'nın yalnızca bir kopyasının kullanıldığı şekilde derlense, program başarıyla çalışır ve aşağıdaki çıktıyı üretir:
 
 ```
 New MYLIB variable is: c:\mylib;c:\yourlib
@@ -124,4 +130,4 @@ New MYLIB variable is: c:\mylib;c:\yourlib
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)

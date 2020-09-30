@@ -1,26 +1,32 @@
 ---
 title: 'Unicode: Joker Karakter Kümesi'
+description: Microsoft C çalışma zamanı 'nda Unicode geniş karakter kümesine giriş.
+ms.topic: conceptual
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Unicode [C++], wide character set
 - wide characters [C++], Unicode
 ms.assetid: b6a05a21-59a5-4d30-8c85-2dbe185f7a74
-ms.openlocfilehash: b27641b9843d4f6f1ef39d893df5d3f26af372e3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 751017a62a960eaf2afa2354a43a13971b89252a
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220658"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91590166"
 ---
 # <a name="unicode-the-wide-character-set"></a>Unicode: Joker Karakter Kümesi
 
 Geniş bir karakter 2 baytlık çok dilli karakter kodudur. Teknik semboller ve özel yayımlama karakterleri dahil olmak üzere modern bilgi işlem ortamında kullanılan herhangi bir karakter, Unicode belirtimine göre geniş bir karakter olarak temsil edilebilir. Microsoft 'un bulunduğu büyük bir konsorsiyum tarafından geliştirilen ve korunan, Unicode standardı artık yaygın olarak kabul edilir.
 
-Geniş bir karakter türü **`wchar_t`** . Geniş karakterli bir dize **wchar_t []** dizisi olarak temsil edilir ve bir işaretçi tarafından işaret edilir `wchar_t*` . Karakteri harfe **lvalue** olarak ekleyerek HERHANGI bir ASCII karakterini geniş bir karakter olarak temsil edebilirsiniz. Örneğin, L ' \ 0 ', Sonlandırıcı geniş (16 bit) null karakterdir. Benzer şekilde, ASCII değişmez değeri (L "Hello") için L harfine önek ekleyerek yalnızca bir ASCII dize sabit değerini geniş karakterli bir dize sabiti olarak temsil edebilirsiniz.
+Geniş bir karakter türü **`wchar_t`** . Geniş karakterli bir dize, dizi olarak temsil edilir **`wchar_t[]`** . Bir işaretçiyle diziyi işaret edersiniz `wchar_t*` . 
 
-Genellikle, geniş karakterler çok baytlı karakterlerden çok daha fazla alan kaplar ancak işlemek daha hızlıdır. Ayrıca, çok baytlı kodlamada yalnızca bir yerel ayar gösterilebilir, ancak dünyanın tüm karakter kümeleri aynı anda Unicode temsili tarafından temsil edilir.
+Harfine önek ekleyerek herhangi bir ASCII karakterini geniş bir karakter olarak temsil edebilirsiniz `L` . Örneğin, `L'\0'` Sonlandırıcı geniş (16 bit) null karakterdir.
+
+Herhangi bir ASCII dize sabit değerini, harfe önek ekleyerek geniş karakterli bir dize sabiti olarak temsil edebilirsiniz `L` . Örneğin, `L"Hello"`.
+
+Genellikle, geniş karakterler çok baytlı karakterlerden çok daha fazla alan kullanır. Ancak çok sayıda karakter işlemek daha hızlıdır. Çok baytlı Kodlamadaki bir anda yalnızca bir yerel ayar gösterilebilir. Dünyanın tüm karakter kümeleri aynı anda Unicode temsili tarafından temsil edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
-[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Uluslararası duruma getirme](../c-runtime-library/internationalization.md)\
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)

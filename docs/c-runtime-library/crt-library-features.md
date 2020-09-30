@@ -1,7 +1,8 @@
 ---
 title: CRT Kitaplık Özellikleri
-description: Microsoft C çalışma zamanı kitaplıklarını ve bunlarla ilişkili derleyici seçeneklerini ve önişlemci yönergelerini içeren dosyalar.
+description: Microsoft C çalışma zamanı kitaplıklarını ve bunlarla ilişkili derleyici seçeneklerini ve önişlemci yönergelerini içeren dosyaların listesi.
 ms.date: 09/03/2020
+ms.topic: conceptual
 helpviewer_keywords:
 - MSVCR71.dll
 - libraries [C++], multithreaded
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - libraries [C++], run-time
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
-ms.openlocfilehash: 2f46577ba81c57c2050f0cae4ae2af73152ba2a4
-ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
+ms.openlocfilehash: 0e0d34c1121f0bf4e2fdfabc521e0365084761eb
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609109"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589789"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -38,8 +39,8 @@ Aşağıdaki tablo UCRT uygulayan kitaplıkları listeler.
 
 | Kitaplık | İlişkili DLL | Özellikler | Seçenek | Ön işlemci yönergeleri |
 |--|--|--|--|--|
-| *`libucrt.lib`* | Yok | UCRT 'yi kodunuza statik olarak bağlar. | **`/MT`** | `_MT` |
-| *`libucrtd.lib`* | Yok | Statik bağlama için UCRT 'nin hata ayıklama sürümü. Yeniden dağıtılabilir değil. | **`/MTd`** | `_DEBUG`, `_MT` |
+| *`libucrt.lib`* | Hiçbiri | UCRT 'yi kodunuza statik olarak bağlar. | **`/MT`** | `_MT` |
+| *`libucrtd.lib`* | Hiçbiri | Statik bağlama için UCRT 'nin hata ayıklama sürümü. Yeniden dağıtılabilir değil. | **`/MTd`** | `_DEBUG`, `_MT` |
 | *`ucrt.lib`* | *`ucrtbase.dll`* | UıCRT için DLL içeri aktarma kitaplığı. | **`/MD`** | `_MT`, `_DLL` |
 | *`ucrtd.lib`* | *`ucrtbased.dll`* | UıCRT 'nin hata ayıklama sürümü için DLL içeri aktarma kitaplığı. Yeniden dağıtılabilir değil. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 
@@ -49,8 +50,8 @@ Bu tablo vcruntime kitaplığını uygulayan kitaplıkları listeler.
 
 | Kitaplık | İlişkili DLL | Özellikler | Seçenek | Ön işlemci yönergeleri |
 |--|--|--|--|--|
-| *`libvcruntime.lib`* | Yok | Kodunuzla statik olarak bağlanır. | **`/MT`** | `_MT` |
-| *`libvcruntimed.lib`* | Yok | Statik bağlama için hata ayıklama sürümü. Yeniden dağıtılabilir değil. | **`/MTd`** | `_MT`, `_DEBUG` |
+| *`libvcruntime.lib`* | Hiçbiri | Kodunuzla statik olarak bağlanır. | **`/MT`** | `_MT` |
+| *`libvcruntimed.lib`* | Hiçbiri | Statik bağlama için hata ayıklama sürümü. Yeniden dağıtılabilir değil. | **`/MTd`** | `_MT`, `_DEBUG` |
 | *`vcruntime.lib`* | *`vcruntime<version>.dll`* | Vcruntime için DLL içeri aktarma kitaplığı. | **`/MD`** | `_MT`, `_DLL` |
 | *`vcruntimed.lib`* | *`vcruntime<version>d.dll`* | Hata ayıklama vcruntime için DLL içeri aktarma kitaplığı. Yeniden dağıtılabilir değil. | **`/MDd`** | `_DEBUG`, `_MT`, `_DLL` |
 

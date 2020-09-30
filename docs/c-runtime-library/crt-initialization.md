@@ -1,25 +1,27 @@
 ---
 title: CRT Başlatma
+description: CRT 'ın yerel koddaki genel durumu nasıl kullandığını açıklar.
+ms.topic: conceptual
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CRT initialization [C++]
 ms.assetid: e7979813-1856-4848-9639-f29c86b74ad7
-ms.openlocfilehash: 03126b8fdf1c3824b114d822c269655c22e5ee9f
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 25f1e2a7e5b7d91c729bb45bd79ba9a8720cead1
+ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446677"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91589776"
 ---
 # <a name="crt-initialization"></a>CRT Başlatma
 
-Bu konu, CRT genel durumlarını yerel kodda nasıl başlatır açıklar.
+Bu konu başlığı altında, CRT 'nin yerel koddaki genel durumu nasıl oluşturulduğu açıklanmaktadır.
 
-Varsayılan olarak, bağlayıcı kendi başlatma kodunu sağlayan CRT kitaplığı içerir. Bu başlangıç kodu CRT kitaplığı başlatır, genel başlatıcıların çağırır ve daha sonra kullanıcı tarafından sağlanan çağırır `main` işlevi konsol uygulamaları için.
+Varsayılan olarak bağlayıcı, kendi başlangıç kodunu sağlayan CRT kitaplığını içerir. Bu başlangıç kodu CRT kitaplığını başlatır, genel başlatıcıları çağırır ve sonra `main` konsol uygulamaları için Kullanıcı tarafından sağlanmış işlevi çağırır.
 
 ## <a name="initializing-a-global-object"></a>Genel nesne başlatma
 
-Aşağıdaki kodu göz önünde bulundurun:
+Aşağıdaki kodu inceleyin:
 
 ```
 int func(void)
@@ -35,13 +37,13 @@ int main()
 }
 ```
 
-C/C++ standardına göre `func()` önce çağrılmalıdır `main()` yürütülür. Ancak, kimin çağırdığı?
+C/C++ standardına göre, `func()` yürütülmeden önce çağrılmalıdır `main()` . Ancak kim bunu çağırıyor?
 
-Bu, bir kesme noktası ayarlamak için belirlemek için tek yönlü `func()`, uygulamada hata ayıklamak ve yığın inceleyin. CRT kaynak kodu Visual Studio'da mümkün olmasıdır.
+Arayanın belirlenmesi için bir yol, içinde bir kesme noktası ayarlamak `func()` , uygulamada hata ayıklamak ve yığını incelemek. Bu, CRT kaynak kodu Visual Studio 'Ya dahil edildiğinden mümkündür.
 
-Yığını üzerindeki işlevlerin göz attığınızda, CRT işlev işaretçileri bir listesi üzerinden döngü ve bunları gibi her birini çağırma bulabilirsiniz. Bu işlevler ötekisi benzer `func()` veya sınıf örnekleri için oluşturucu.
+Yığındaki işlevlere gözattığınızda, CRT 'nin işlev işaretçilerinin bir listesini çağırıyor olduğunu görürsünüz. Bu işlevler `func()` , veya sınıf örnekleri için oluşturuculara benzerdir.
 
-CRT Microsoft'tan işlev işaretçileri listesini alır C++ derleyici. Derleyici, genel bir başlatıcı gördüğünde, dinamik bir başlatıcısında oluşturur. `.CRT$XCU` bölümü (burada `CRT` bölüm adı olduğu ve `XCU` grup adı). Komutu çalıştırın. Bu dinamik başlatıcılar listesi elde etmek için **dumpbin/all main.obj**ve ardından arama `.CRT$XCU` bölümünde (Main.cpp olarak C++ dosyası, C dosyası derlendiğinde). Aşağıdakine benzer olacaktır:
+CRT, Microsoft C++ derleyicisinden işlev işaretçilerinin listesini alır. Derleyici küresel bir başlatıcı gördüğünde, bölüm `.CRT$XCU` `CRT` adı olan ve grup adı olan bölümünde dinamik bir başlatıcı oluşturur `XCU` . Dinamik başlatıcıların listesini almak için, **dumpbin/All Main. obj**komutunu çalıştırın ve ardından bölümünde arama yapın `.CRT$XCU` . Bu, Main. cpp C dosyası değil bir C++ dosyası olarak derlendiğinde geçerlidir. Aşağıdaki örneğe benzer olacaktır:
 
 ```
 SECTION HEADER #6
@@ -63,23 +65,23 @@ RAW DATA #6
   00000000: 00 00 00 00                                      ....
 
 RELOCATIONS #6
-                                                Symbol    Symbol
+                                               Symbol    Symbol
 Offset    Type              Applied To         Index     Name
---------  ----------------  -----------------  --------  ------
-00000000  DIR32                      00000000         C  ??__Egi@@YAXXZ (void __cdecl `dynamic initializer for 'gi''(void))
+--------  ----------------  -----------------  --------  -------
+00000000  DIR32             00000000           C         ??__Egi@@YAXXZ (void __cdecl `dynamic initializer for 'gi''(void))
 ```
 
-CRT iki işaretçi tanımlar:
+CRT iki işaretçileri tanımlar:
 
-- `__xc_a` İçinde `.CRT$XCA`
+- `.CRT$XCA` içinde `__xc_a`
 
-- `__xc_z` İçinde `.CRT$XCZ`
+- `.CRT$XCZ` içinde `__xc_z`
 
-Her ikisinde dışında tanımlanan sembolleri olmayan `__xc_a` ve `__xc_z`.
+Hiçbir grup, ve dışında tanımlanmış başka bir sembol içermez `__xc_a` `__xc_z` .
 
-Şimdi ne zaman bağlayıcı okur çeşitli `.CRT` grupları, bunları bir bölümü birleştirir ve alfabetik olarak sıralar. Bu kullanıcı tarafından tanımlanan genel başlatıcıların anlamına gelir (hangi Microsoft C++ derleyici koyar `.CRT$XCU`) her zaman sonra gelecektir `.CRT$XCA` ve önce `.CRT$XCZ`.
+Artık bağlayıcı çeşitli grupları okuduğunda `.CRT` , bunları bir bölümde birleştirir ve alfabetik olarak sıralar. Bu, Kullanıcı tanımlı genel başlatıcıların (Microsoft C++ derleyicisinin içine koyduğu `.CRT$XCU` ) her zaman `.CRT$XCA` ve daha önce geldiği anlamına gelir `.CRT$XCZ` .
 
-Bölüm şuna benzer:
+Bu bölüm aşağıdaki örneğe benzeyecektir:
 
 ```
 .CRT$XCA
@@ -91,8 +93,8 @@ Bölüm şuna benzer:
             __xc_z
 ```
 
-Bu nedenle, CRT Kitaplığı hem de kullandığı `__xc_a` ve `__xc_z` başlangıç ve bitiş genel başlatıcıların listesinin, bunlar düzenlenir bellekte resmi yüklendikten sonra şekli nedeniyle belirlemek için.
+Bu nedenle, CRT kitaplığı, `__xc_a` görüntü yüklendikten `__xc_z` sonra bellekte yerleştirilme yöntemi nedeniyle genel başlatıcılar listesinin başlangıcını ve bitişini belirlemede, her ikisini de kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
