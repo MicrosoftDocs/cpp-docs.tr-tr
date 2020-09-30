@@ -7,44 +7,44 @@ helpviewer_keywords:
 - rowsets [C++], multiple accessors
 - accessors [C++], rowsets
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
-ms.openlocfilehash: d1ab314edeebedef4cff14cd5364a7ca16c74769
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 48772539b4dda9262a244506a36932d1e752949e
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216388"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509404"
 ---
 # <a name="using-multiple-accessors-on-a-rowset"></a>Satır Kümesinde Çoklu Erişimci Kullanma
 
-Çoklu Erişimci kullanmak gereken üç temel senaryo vardır:
+Birden çok erişimci kullanmanız gereken üç temel senaryo vardır:
 
-- **Birden çok okuma/yazma satır kümeleri.** Bu senaryoda, bir birincil anahtar içeren bir tablo vardır. Satırın birincil anahtarı dahil olmak üzere tüm sütunları okuyabilmesini istiyorsunuz. Ayrıca, (birincil anahtar sütunu yazamadığınız) birincil anahtar dışındaki tüm sütunları verileri yazmak amacıyla yönetebilmek istiyorsunuz. Bu durumda, iki erişimci ayarlayın:
+- **Birden çok okuma/yazma satır kümesi.** Bu senaryoda, birincil anahtarı olan bir tablonuz vardır. Birincil anahtar dahil olmak üzere satırdaki tüm sütunları okuyabilmek istiyorsunuz. Birincil anahtar (birincil anahtar sütununa yazamadığı için) dışındaki tüm sütunlara veri yazabiliyor olmanız da gerekir. Bu durumda, iki erişimci ayarlarsınız:
 
   - Erişimci 0 tüm sütunları içerir.
 
-  - Erişimci 1 birincil anahtarı dışındaki tüm sütunları içerir.
+  - Erişimci 1, birincil anahtar dışındaki tüm sütunları içerir.
 
-- **Performans.** Bu senaryoda, çok miktarda veri, örneğin, grafik, ses veya video dosyaları bir veya daha fazla sütun var. Bir satıra taşıma her zaman bunu yapmanız bu nedenle, uygulamanızın performansını düşürebilecek çünkü büyük olasılıkla sütunu ile büyük veri dosyası, almak istediğiniz yok.
+- **Mının.** Bu senaryoda, bir veya daha fazla sütunda büyük miktarda veri (örneğin, grafikler, ses veya video dosyaları) vardır. Bir satıra her geçtiğinizde, büyük olasılıkla sütunu büyük veri dosyası ile almak istemezsiniz, çünkü bunu yapmanız uygulamanızın performansını yavaşlatır.
 
-  İlk erişimci büyük ölçekli veri dışındaki tüm sütunları içerir ve bu verileri bu sütunları otomatik olarak alır ayrı erişimci ayarlayabilirsiniz. ilk erişimci otomatik erişimcisi ' dir. İkinci erişimcisi yalnızca büyük verileri tutan sütununu alır, ancak otomatik olarak bu sütunun veri almıyorsa. Güncelleştirme veya isteğe bağlı olarak büyük veri getirme diğer yöntemleri olabilir.
+  İlk erişimcinin, büyük veri içeren bir sütun hariç tüm sütunları içerdiği ve bu sütunlardan verileri otomatik olarak alan ayrı erişimciler ayarlayabilirsiniz; ilk erişimci otomatik erişimcidir. İkinci erişimci yalnızca büyük verileri tutan sütunu alır, ancak bu sütundan verileri otomatik olarak almaz. Diğer yöntemlerin büyük verileri isteğe bağlı olarak güncelleştirmesine veya uygulamasına getirebilirsiniz.
 
-  - Erişimci 0 otomatik erişimci olduğu; büyük ölçekli veri dışındaki tüm sütunları alır.
+  - Erişimci 0 bir otomatik erişimdir; büyük verilerle bir hariç tüm sütunları alır.
 
-  - Erişimci 1 otomatik erişimci değildir; büyük ölçekli veri sütunu alır.
+  - Erişimci 1 otomatik erişimci değil; sütunu, büyük verilerle alır.
 
-  Otomatik bağımsız değişken, erişimci otomatik erişimci olup olmadığını belirtmek için kullanın.
+  Erişimcinin otomatik erişimci olup olmadığını belirtmek için Auto bağımsız değişkenini kullanın.
 
-- **Birden fazla ISequentialStream sütunu.** Bu senaryoda, seçtiğiniz birden fazla sütun tutan `ISequentialStream` veri. Ancak, her bir erişimci birle sınırlı olur `ISequentialStream` veri akışı. Bu sorunu çözmenin birkaç erişimci, her iki ayarlayın `ISequentialStream` işaretçi.
+- **Birden çok ISequentialStream sütunu.** Bu senaryoda, verileri tutan birden fazla sütununuz vardır `ISequentialStream` . Ancak, her erişimci bir `ISequentialStream` veri akışıyla sınırlandırılmıştır. Bu sorunu çözmek için, her biri tek bir işaretçiye sahip birkaç erişimci ayarlayın `ISequentialStream` .
 
-Normalde erişimciler kullanarak oluşturduğunuz [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [END_ACCESSOR](../../data/oledb/end-accessor.md) makroları. Ayrıca [db_accessor](../../windows/db-accessor.md) özniteliği. (Erişimci daha ayrıntılı açıklanır [kullanıcı kayıtlarını](../../data/oledb/user-records.md).) Makrolar veya öznitelik erişimci otomatik ya da otomatik olmayan erişimci olup olmadığını belirtin:
+Genellikle [BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) ve [end_accessor](./macros-and-global-functions-for-ole-db-consumer-templates.md#end_accessor) makrolarını kullanarak erişimciler oluşturursunuz. [Db_accessor](../../windows/attributes/db-accessor.md) özniteliğini de kullanabilirsiniz. (Erişimciler [Kullanıcı kayıtlarında](../../data/oledb/user-records.md)daha ayrıntılı olarak açıklanmıştır.) Makrolar veya öznitelik, bir erişimcinin otomatik mi yoksa otomatik olmayan bir erişimci mi olduğunu belirtir:
 
-- Otomatik erişimci yöntemlerini gibi hareket `MoveFirst`, `MoveLast`, `MoveNext`, ve `MovePrev` tüm sütunları otomatik olarak belirtilen için veri alma. Otomatik erişimci erişimci 0 olmalıdır.
+- Otomatik bir erişimcisinde,,, ve gibi `MoveFirst` yöntemleri `MoveLast` , `MoveNext` `MovePrev` belirtilen tüm sütunlara otomatik olarak alır. Erişimci 0 otomatik erişimci olmalıdır.
 
-- Siz açıkça bir yöntem çağırmak kadar bir otomatik olmayan erişimcisinde alma oluşmaz `Update`, `Insert`, `Fetch`, veya `Delete`. Yukarıda açıklanan senaryoda her hareket tüm sütunları almak istemeyebilirsiniz. Bir veya daha fazla sütun ayrı bir erişimci yerleştirin ve aşağıda gösterildiği gibi bir otomatik olmayan erişimcisi hale getirebilirsiniz.
+- Otomatik olmayan bir erişimcisinde,,, veya gibi bir yöntemi açıkça çağırana kadar alma gerçekleşmez `Update` `Insert` `Fetch` `Delete` . Yukarıda açıklanan senaryolarda, her bir taşımanın tüm sütunlarını almak istemeyebilirsiniz. Bir veya daha fazla sütunu ayrı bir erişimciye yerleştirebilir ve aşağıda gösterildiği gibi otomatik olmayan bir erişimci yapabilirsiniz.
 
-Aşağıdaki örnek, okuma ve yazma çoklu erişimci kullanma SQL Server pubs veritabanı işleri tabloya çoklu erişimci kullanır. Bu örnekte, en yaygın çoklu erişimci kullanımıdır; Yukarıdaki "birden çok okuma/yazma satır kümeleri" senaryo bakın.
+Aşağıdaki örnek, birden çok erişimci kullanarak SQL Server pubs veritabanının işler tablosunu okumak ve yazmak için birden çok erişimci kullanır. Bu örnek, birden çok erişimciyi en yaygın kullanımı örneğidir; Yukarıdaki "çoklu okuma/yazma satır kümeleri" senaryosuna bakın.
 
-Kullanıcı kayıt sınıfı aşağıdaki gibidir. İki erişimci ayarlar: erişimci 0 yalnızca birincil anahtar sütunu (kimlik) ve 1 erişimci diğer sütunları içerir.
+Kullanıcı kayıt sınıfı aşağıdaki gibidir. İki erişimci ayarlar: erişimci 0 yalnızca birincil anahtar sütunu içerir (KIMLIK) ve erişimci 1 diğer sütunları içerir.
 
 ```cpp
 class CJobs
@@ -79,7 +79,7 @@ END_ACCESSOR_MAP()
 };
 ```
 
-Ana kod aşağıdaki gibidir. Çağırma `MoveNext` otomatik olarak veri erişimci 0'ı kullanarak birincil anahtar sütunu kimliği alır. Not nasıl `Insert` yöntemi için birincil anahtar sütunu yazılmasını engellemek için son kullanan erişimci 1 yakın.
+Ana kod aşağıdaki gibidir. Çağırma `MoveNext` , erişimci 0 kullanarak birincil anahtar sütun kimliğinden verileri otomatik olarak alır. `Insert`Son görüntülenen yöntemin, birincil anahtar sütununa yazmayı önlemek için erişimci 1 ' i nasıl kullandığını aklınızda tutun.
 
 ```cpp
 int main(int argc, char* argv[])
@@ -158,5 +158,5 @@ int main(int argc, char* argv[])
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Erişimcileri Kullanma](../../data/oledb/using-accessors.md)<br/>
-[Kullanıcı Kayıtları](../../data/oledb/user-records.md)
+[Erişimcileri kullanma](../../data/oledb/using-accessors.md)<br/>
+[Kullanıcı kayıtları](../../data/oledb/user-records.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: 673fe6a8b5eb6dfcd9caa841b18d5b47fb7858bf
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: a4bda0825e8b71eb49fe9691755d8e42fd059c06
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686096"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510100"
 ---
 # <a name="compiler-error-c3535"></a>Derleyici hatası C3535
 
@@ -66,5 +66,5 @@ auto *p = x;  // C3535
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)<br/>
+[auto Anahtar Sözcüğü](../../cpp/auto-cpp.md)<br/>
 [Temel türler](../../cpp/fundamental-types-cpp.md)

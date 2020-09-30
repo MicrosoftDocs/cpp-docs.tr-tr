@@ -89,12 +89,12 @@ helpviewer_keywords:
 - std::multimap [C++], upper_bound
 - std::multimap [C++], value_comp
 ms.assetid: 8796ae05-37c4-475a-9e61-75fde9d4a463
-ms.openlocfilehash: 446c1af793b885646dbb5658242e75482ebb92de
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 7399132553205080cc784de78630e30feb0700ba
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353200"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509931"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -156,13 +156,13 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Description|
+|Oluşturucu|Açıklama|
 |-|-|
 |[multimap](#multimap)|`multimap`Boş olan veya bir kısmının tümünün veya bir kısmının kopyası olan oluşturur `multimap` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Description|
+|Tür adı|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Nesnenin sınıfını temsil eden bir tür `allocator` `multimap` .|
 |[const_iterator](#const_iterator)|İçindeki bir öğeyi okuyabilen çift yönlü bir yineleyici sağlayan bir tür **`const`** `multimap` .|
@@ -182,7 +182,7 @@ C++ 14 ' te, `std::less<>` hiçbir tür parametresi olmayan veya koşulunu belir
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Description|
+|Üye işlevi|Açıklama|
 |-|-|
 |[başladı](#begin)|İçindeki ilk öğeyi adresleyen bir yineleyici döndürür `multimap` .|
 |[cbegin](#cbegin)|İçindeki ilk öğeyi adresleyen bir const yineleyici döndürür `multimap` .|
@@ -521,7 +521,7 @@ Aranacak öğenin anahtar değeri.
 
 `contains()` C++ 20 ' de yenidir. Bunu kullanmak için [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirtin.
 
-`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) .
+`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) .
 
 ### <a name="example"></a>Örnek
 
@@ -543,7 +543,7 @@ int main()
     // call template function
     std::multimap<std::string, int, std::less<>> m2 = {{"ten", 10}, {"twenty", 20}, {"thirty", 30}};
     std::cout << m2.contains("ten");
-    
+
     return 0;
 }
 ```

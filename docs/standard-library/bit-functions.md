@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::bit [C++], countr_zero
 - std::bit [C++], countr_one
 - std::bit [C++], popcount
-ms.openlocfilehash: a2408df9aa13c6e714f615561871397be17fc4a3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 94e44493b9356b3a0717c42aa1bed510ebe460dd
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039825"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509988"
 ---
 # <a name="ltbitgt-functions"></a>&lt;bit &gt; işlevleri
 
@@ -106,14 +106,17 @@ std::bit_cat<int>(f) = 7f800000
 Alt düzey kodun genellikle bir türdeki bir nesneyi başka bir tür olarak yorumlaması gerekir. Yeniden yorumlanan nesne orijinaliyle aynı bit gösterimine sahiptir, ancak farklı bir tür.
 
 Veya kullanmak yerine, `reinterpret_cast` `memcpy()` `bit_cast()` bu dönüşümleri yapmanın daha iyi bir yoludur. Daha iyidir çünkü:
+
 - `bit_cast()``constexpr`
 - `bit_cast()` türlerin kopyalanabilir ve aynı boyutta olmasını gerektirir. Bu, ve kullanarak karşılaşabileceğiniz olası sorunları önler `reinterpret_cast` ve `memcpy` yanlışlıkla ve yanlış bir şekilde kullanılabilmesi için, üç aylık olmayan-kopyalanabilir türlerini dönüştürebilir. Ayrıca, `memcpy()` aynı boyutta olmayan türler arasında yanlışlıkla kopyalamak için de kullanılabilir. Örneğin, bir işaretsiz int (4 bayt) veya başka bir şekilde bir çift (8 bayt).
 
 Bu aşırı yükleme yalnızca şu durumlarda aşırı yükleme çözümüne katılır:
--  `sizeof(To) == sizeof(From)`
+
+- `sizeof(To) == sizeof(From)`
 - `To` ve `From` [is_trivially_copyable](is-trivially-copyable-class.md).
 
 Bu işlev şablonu `constexpr` ve yalnızca `To` ,, `From` ve kendi alt nesnelerin türleri ise:
+
 - birleşim veya işaretçi türü değil
 - Üye türüne yönelik bir işaretçi değil
 - geçici değil
@@ -490,7 +493,7 @@ Bu şablon işlevi yalnızca `T` , işaretsiz bir tamsayı türü ise aşırı y
 ## <a name="has_single_bit"></a>`has_single_bit`
 
 Değerin yalnızca bir bit kümesine sahip olup olmadığını denetleyin. Bu, bir değerin ikinin üssü olup olmadığını test etme ile aynıdır.
- 
+
 ```cpp
 template <class T>
 [[nodiscard]] constexpr bool has_single_bit(T value) noexcept;
@@ -544,7 +547,7 @@ Bu şablon işlevi yalnızca `T` , işaretsiz bir tamsayı türü ise aşırı y
 ## <a name="popcount"></a>`popcount`
 
 İşaretsiz bir tamsayı değerinde bir tane olarak ayarlanan bit sayısını say.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr int popcount(T value) noexcept;
@@ -603,7 +606,7 @@ Bu şablon işlevi yalnızca `T` , işaretsiz bir tamsayı türü ise aşırı y
 ## <a name="rotl"></a>`rotl`
 
 İşaretsiz bir tamsayı değerinin bitlerini belirtilen sayıda sola döndürür. En soldaki bit "çıkış" ın en sağdaki bite döndürüldüğü bitleri.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr T rotl(T value, int s) noexcept;
@@ -665,7 +668,7 @@ Bu şablon işlevi yalnızca `T` , işaretsiz bir tamsayı türü ise aşırı y
 ## <a name="rotr"></a>`rotr`
 
 Belirtilen sayıda doğru olan bit sayısını döndürür `value` . En sağdaki bitin ' Fall ' olan bitleri en soldaki bite geri döndürülür.
- 
+
 ```cpp
 template<class T>
 [[nodiscard]] constexpr T rotr(T value, int s) noexcept;

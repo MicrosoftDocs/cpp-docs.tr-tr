@@ -121,18 +121,18 @@ helpviewer_keywords:
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: 9012fc8203bf8b54e87e2c21f47f2ef6ef764c2d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0016926ff82be9ef2b52cf55b16bde2a6099f237
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040320"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510000"
 ---
 # <a name="basic_string-class"></a>basic_string Sınıfı
 
 Türünde bir nesne tarafından denetlenen sıralar `basic_string` Standart C++ dize sınıfıdır ve genellikle dizeler olarak adlandırılır, ancak C++ standart kitaplığı boyunca kullanılan null ile sonlandırılmış C stili dizeleriyle karıştırılmamalıdır. Standart C++ dizesi; karşılaştırma ve birleştirme işlemleri, yineleyiciler, C++ standart kitaplık algoritmaları ve sınıf ayırıcısı tarafından yönetilen bellek kopyalama ve atama gibi normal türler olarak dizelerin kullanımını sağlayan bir kapsayıcıdır. Standart bir C++ dizesini null ile sonlandırılmış bir C stili dizeye dönüştürmeniz gerekiyorsa [basic_string:: c_str](#c_str) üyesini kullanın.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType, class Traits = char_traits<CharType>, class Allocator = allocator<CharType>>
@@ -152,13 +152,13 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Description|
+|Oluşturucu|Açıklama|
 |-|-|
 |[basic_string](#basic_string)|Boş veya belirli karakterler tarafından başlatılan veya bir diğer dize nesnesinin veya C dizesinin tümünün veya bir kısmının kopyası olan bir dize oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Description|
+|Tür adı|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|`allocator`Bir dize nesnesinin sınıfını temsil eden bir tür.|
 |[const_iterator](#const_iterator)|Dizedeki bir öğeye erişebilen ve okuyabilen bir rastgele erişim yineleyici sağlayan bir tür **`const`** .|
@@ -177,7 +177,7 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Description|
+|Üye işlevi|Açıklama|
 |-|-|
 |[ýna](#append)|Dizenin sonuna karakter ekler.|
 |[assign (atamak)](#assign) |Bir dizenin içeriğine yeni karakter değerleri atar.|
@@ -190,7 +190,7 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[cend](#cend)|Dizedeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
 |[lediğiniz](#clear)|Bir dizenin tüm öğelerini siler.|
 |[Karşılaştır](#compare)|İki dizenin eşit olup olmadığını veya birinin lexıgrafik değerinden daha küçük olduğunu anlamak için belirtilen dizeyle bir dizeyi karşılaştırır.|
-|[kopya](#copy)|Kaynak dizedeki dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakter kopyalar. Kullanım dışı. Bunun yerine [basic_string:: _Copy_s](#copy_s) kullanın.|
+|[kopyalama](#copy)|Kaynak dizedeki dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakter kopyalar. Kullanım dışı. Bunun yerine [basic_string:: _Copy_s](#copy_s) kullanın.|
 |[crbegin](#crbegin)|Ters çevrilen dizedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.|
 |[crend](#crend)|Ters çevrilen dizedeki son öğeden sonraki konumu ele alan bir const yineleyici döndürür.|
 |[_Copy_s](#copy_s)|Kaynak dizedeki dizinli bir konumdan bir hedef karakter dizisine en çok belirtilen sayıda karakter kopyalar.|
@@ -199,7 +199,7 @@ Dizenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları kap
 |[erer](#end)|Dizedeki son öğeden sonraki konumu ele alan bir yineleyici döndürür.|
 |[ends_with](#ends_with)<sup>c++ 20</sup>|Dizenin belirtilen soneke göre sona erip bitmediğini denetler.|
 |[silme](#erase)|Bir dizedeki bir öğeyi veya öğe aralığını belirtilen konumdan kaldırır.|
-|[find](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi ileriye doğru yönde arar.|
+|[bilgi](#find)|Belirtilen karakter dizisiyle eşleşen bir alt dizenin ilk oluşumu için bir dizeyi ileriye doğru yönde arar.|
 |[find_first_not_of](#find_first_not_of)|Belirtilen bir dizenin herhangi bir öğesi olmayan ilk karakter için bir dizeyi arar.|
 |[find_first_of](#find_first_of)|Belirtilen dizenin herhangi bir öğesiyle eşleşen ilk karakter için bir dizeyi arar.|
 |[find_last_not_of](#find_last_not_of)|Belirli bir dizenin herhangi bir öğesi olmayan son karakter için bir dizeyi arar.|
@@ -4765,7 +4765,7 @@ int main()
 {
     std::basic_string<char> str = "abcdefg";
 
-    std::cout << std::boolalpha; // so booleans show as 'true'/'false'     
+    std::cout << std::boolalpha; // so booleans show as 'true'/'false'
     std::cout << str.starts_with('b') << '\n';
     std::cout << str.starts_with("aBc") << '\n';
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-ms.openlocfilehash: 19f92e2aa62adf1ede4c0e6ab1187fd9e4106e68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8ce9b8e606d5bbc2051af76e6dc4ac1350ec81a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221698"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509149"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 
@@ -26,7 +26,7 @@ Bellek bloğunu kaldırır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Cast ifadesi* bağımsız değişkeni, [New işleciyle](../cpp/new-operator-cpp.md)oluşturulmuş bir nesne için daha önce ayrılmış bir bellek bloğunun işaretçisi olmalıdır. **`delete`** İşlecinin türü bir sonucu vardır **`void`** ve bu nedenle bir değer döndürmez. Örnek:
+*Cast ifadesi* bağımsız değişkeni, [New işleciyle](../cpp/new-operator-cpp.md)oluşturulmuş bir nesne için daha önce ayrılmış bir bellek bloğunun işaretçisi olmalıdır. **`delete`** İşlecinin türü bir sonucu vardır **`void`** ve bu nedenle bir değer döndürmez. Örneğin:
 
 ```cpp
 CDialog* MyDialog = new CDialog;
@@ -50,7 +50,7 @@ delete [] set;
 
 **`delete`** İşlecin işleneni değiştirilebilir bir l-değeri ise, nesne silindikten sonra değeri tanımsız olur.
 
-[/SDL (ek güvenlik denetimlerini etkinleştir)](/cpp/build/reference/sdl-enable-additional-security-checks) derleyici seçeneği belirtilmişse, işleç işleneni, **`delete`** nesne silindikten sonra geçersiz bir değere ayarlanır.
+[/SDL (ek güvenlik denetimlerini etkinleştir)](../build/reference/sdl-enable-additional-security-checks.md) derleyici seçeneği belirtilmişse, işleç işleneni, **`delete`** nesne silindikten sonra geçersiz bir değere ayarlanır.
 
 ## <a name="using-delete"></a>delete Kullanma
 

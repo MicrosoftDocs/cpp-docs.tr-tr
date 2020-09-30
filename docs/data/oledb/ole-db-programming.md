@@ -6,18 +6,18 @@ helpviewer_keywords:
 - data access [C++], OLE DB programming
 - OLE DB [C++], about OLE DB
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
-ms.openlocfilehash: 8699eddd2af0dc6c15ecfefe313622ec94286154
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85cfc23630cf035489fb441fd2c85b1c0a696c71
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210099"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509531"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
 
-OLE DB şablonları, yüksek C++ performanslı OLE DB veritabanı teknolojisinin çok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan sınıflar sunarak daha kolay kullanılmasını sağlayan şablonlardır. Bu şablon kitaplığı, tüketici şablonlarına ve sağlayıcı şablonlarına bölünmüştür.
+OLE DB şablonları, yüksek performanslı OLE DB veritabanı teknolojisinin çok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan sınıflar sunarak daha kolay kullanılmasını sağlayan C++ şablonlarıdır. Bu şablon kitaplığı, tüketici şablonlarına ve sağlayıcı şablonlarına bölünmüştür.
 
-Visual C++ , OLE DB Starter uygulamaları oluşturmak için sihirbaz desteğine de sahiptir.
+Visual C++ Ayrıca, OLE DB başlangıç uygulamaları oluşturmak için sihirbaz desteğine sahiptir.
 
 Ayrıca, OLE DB tüketici şablonlarını uygulamak için özniteliklerini de kullanabilirsiniz.
 
@@ -25,12 +25,12 @@ Ayrıca, OLE DB tüketici şablonlarını uygulamak için özniteliklerini de ku
 |-------------------------|---------|
 |OLE DB tüketici şablonlarını kullanma (kavramsal konular)|[OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)|
 |OLE DB sağlayıcısı şablonlarını kullanma (kavramsal konular)|[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)|
-|OLE DB şablon sınıfları ve makroları|[OLE DB şablonları başvurusu](../../data/oledb/ole-db-templates.md) (görsel C++)|
-|OLE DB tüketici öznitelikleri|[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)|
+|OLE DB şablon sınıfları ve makroları|[OLE DB şablonları başvurusu](../../data/oledb/ole-db-templates.md) (Visual C++)|
+|OLE DB tüketici öznitelikleri|[OLE DB tüketici öznitelikleri](../../windows/attributes/ole-db-consumer-attributes.md)|
 |OLE DB arabirimleri|[OLE DB Programcı başvurusu](/sql/connect/oledb/oledb-driver-for-sql-server) (Windows SDK)|
 |OLE DB şablonları örnekleri|[OLE DB şablonları örnekleri](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB)|
-|Veri erişim programlamaya genel bakış ( C++görsel)|[Veri erişimi programlama](../../data/data-access-programming-mfc-atl.md)|
-|ODBC kavramsal konuları|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|
+|Veri erişim programlamaya genel bakış (Visual C++)|[Veri erişimi programlama](../../data/data-access-programming-mfc-atl.md)|
+|ODBC kavramsal konuları|[Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

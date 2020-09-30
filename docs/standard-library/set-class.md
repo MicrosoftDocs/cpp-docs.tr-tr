@@ -89,18 +89,18 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-ms.openlocfilehash: cb19b0d9987ef4ff4624602426930c9f9920dbcd
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 2898c06d998653a25ce771c80086ef8aef27a60b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040021"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509939"
 ---
 # <a name="set-class"></a>set Sınıfı
 
 C++ standart kitaplığı kapsayıcı sınıfı, `set` bir koleksiyondaki verileri depolamak ve almak için kullanılır. İçindeki öğelerin değerleri `set` benzersizdir ve verilerin otomatik olarak sıralandığı anahtar değerleri olarak görev yapar. İçindeki bir öğenin değeri `set` doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key,
@@ -190,7 +190,7 @@ Küme sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidir, 
 |[erer](#end)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `set` .|
 |[equal_range](#equal_range)|`set`Belirtilen anahtardan daha büyük bir anahtarla ve anahtarından bir anahtarla `set` eşit veya ondan daha büyük olan bir anahtarla ilk öğesine kadar yineleyicilerin bir çiftini döndürür.|
 |[silme](#erase)|Küme içindeki bir öğeyi veya öğelerin aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[find](#find)|İçindeki bir öğenin `set` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki bir öğenin `set` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnenin bir kopyasını döndürür `set` .|
 |[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `set` .|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `set` .|
@@ -490,7 +490,7 @@ Aranacak öğenin anahtar değeri.
 
 `contains()` C++ 20 ' de yenidir. Bunu kullanmak için [/std: c + + en son](../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirtin.
 
-`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](https://docs.microsoft.com/cpp/standard-library/stl-containers#heterogeneous-lookup-in-associative-containers-c14) .
+`template<class K> bool contains(const K& key) const` yalnızca, saydam ise aşırı yükleme çözümüne katılır `key_compare` . Daha fazla bilgi için bkz. [ilişkilendirilebilir kapsayıcılarda heterojen arama](./stl-containers.md#heterogeneous-lookup-in-associative-containers-c14) .
 
 ### <a name="example"></a>Örnek
 

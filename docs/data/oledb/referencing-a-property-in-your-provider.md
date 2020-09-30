@@ -6,12 +6,12 @@ helpviewer_keywords:
 - references, to properties in providers
 - referencing properties in providers
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-ms.openlocfilehash: d70a1901c457d9fbdbe8712d84999e256a54d0c2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ecb11c54d4c5926fbead0196c441ec23e8b0891f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209805"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509525"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>Sağlayıcınızdaki Bir Özelliğe Başvurma
 
@@ -25,7 +25,7 @@ Oluşturucuya parametre olarak özellik grubunu kullanarak bir [CDBPropSet](../.
 CDBPropSet propset(DBPROPSET_ROWSET);
 ```
 
-Özellik KIMLIĞI ve özelliğe atanacak bir değer geçirerek [AddProperty](../../data/oledb/cdbpropset-addproperty.md)çağrısı yapın. Değerin türü, kullanmakta olduğunuz özelliğe bağlıdır.
+Özellik KIMLIĞI ve özelliğe atanacak bir değer geçirerek [AddProperty](./cdbpropset-class.md#addproperty)çağrısı yapın. Değerin türü, kullanmakta olduğunuz özelliğe bağlıdır.
 
 ```cpp
 CDBPropSet propset(DBPROPSET_ROWSET);
@@ -35,7 +35,7 @@ propset.AddProperty(DBPROP_IRowsetChange, true);
 propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);
 ```
 
-`GetProperties`çağırmak için `IRowset` arabirimini kullanın. Özellik kümesini parametre olarak geçirin. Son kod şu şekildedir:
+`IRowset`Çağırmak için arabirimini kullanın `GetProperties` . Özellik kümesini parametre olarak geçirin. Son kod şu şekildedir:
 
 ```cpp
 CAgentRowset<CCustomCommand>* pRowset = (CAgentRowset<CCustomCommand>*) pThis;
@@ -68,4 +68,4 @@ if (pPropSet)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)
+[OLE DB sağlayıcı şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)

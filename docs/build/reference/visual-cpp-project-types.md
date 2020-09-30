@@ -10,32 +10,32 @@ helpviewer_keywords:
 - applications [C++], projects
 - C++ projects, types
 ms.assetid: 7337987e-1e7b-4120-9a4b-94f0401f15e7
-ms.openlocfilehash: f322d16bbbe91d229fb8efdfb5f2d35cb0a686ae
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: e929142181ebd849c820ad50e5ce64c2d4f5ab44
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079221"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509329"
 ---
 # <a name="c-project-templates"></a>C++ proje şablonları
 
-Visual Studio proje şablonları, oluşturmak istediğiniz proje türü için uygun olan kaynak kodu dosyaları, derleyici seçenekleri, menüler, araç çubukları, simgeler, başvurular ve `#include` deyimleri oluşturur. Visual Studio çeşitli C++ proje şablonu türlerini içerir ve bunların birçoğu için sihirbazları sağlar, böylece projelerinizi oluşturduğunuz şekilde özelleştirebilirsiniz. Projeyi oluşturduktan hemen sonra, oluşturup uygulamayı çalıştırabilirsiniz; uygulamanızı geliştirirken zaman zaman oluşturmak iyi bir uygulamadır.
+Visual Studio proje şablonları, `#include` oluşturmak istediğiniz proje türü için uygun olan kaynak kodu dosyalarını, derleyici seçeneklerini, menüleri, araç çubuklarını, simgeleri, başvuruları ve deyimleri oluşturur. Visual Studio çeşitli C++ proje şablonları içerir ve bunların birçoğu için sihirbazları sağlar, böylece projelerinizi oluşturduğunuz şekilde özelleştirebilirsiniz. Projeyi oluşturduktan hemen sonra, oluşturup uygulamayı çalıştırabilirsiniz; uygulamanızı geliştirirken zaman zaman oluşturmak iyi bir uygulamadır.
 
 > [!NOTE]
-> Proje şablonları kullanarak C++ C dili bir proje oluşturabilirsiniz. Oluşturulan projede,. cpp dosya adı uzantısına sahip dosyaları bulun ve. c olarak değiştirin. Ardından, proje için **Proje özellikleri** sayfasında (çözüm için değil), **yapılandırma özellikleri**, **C/C++**  öğesini genişletin ve **Gelişmiş**' i seçin. **Derleme olarak derle** ayarını **C kodu olarak derle (/TC)** olarak değiştirin.
+> C++ proje şablonları kullanarak C dili bir proje oluşturabilirsiniz. Oluşturulan projede,. cpp dosya adı uzantısına sahip dosyaları bulun ve. c olarak değiştirin. Ardından, proje için **Proje özellikleri** sayfasında (çözüm için değil), **yapılandırma özellikleri**, **C/C++** ' ı genişletin ve **Gelişmiş**' i seçin. **Derleme olarak derle** ayarını **C kodu olarak derle (/TC)** olarak değiştirin.
 
 ## <a name="project-templates"></a>Proje şablonları
 
-Visual Studio 'ya dahil edilen proje şablonları ürün sürümüne ve yüklediğiniz iş yüklerine bağlıdır. Masaüstü geliştirmeyi C++ iş yüküne yüklediyseniz, Visual Studio bu C++ proje şablonlarına sahiptir.
+Visual Studio 'ya dahil edilen proje şablonları ürün sürümüne ve yüklediğiniz iş yüklerine bağlıdır. C++ iş yüküyle masaüstü geliştirme 'yı yüklediyseniz, Visual Studio bu C++ proje şablonlarına sahiptir.
 
 ### <a name="windows-desktop"></a>Windows Masaüstü
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
-|[Windows konsol uygulaması](../../windows/creating-a-console-application.md)|Windows konsol uygulaması oluşturmak için bir proje.|
+|[Windows konsol uygulaması](../../windows/overview-of-windows-programming-in-cpp.md)|Windows konsol uygulaması oluşturmak için bir proje.|
 |[Windows masaüstü uygulaması](../../windows/walkthrough-creating-windows-desktop-applications-cpp.md)|Windows Masaüstü (Win32) uygulaması oluşturmak için bir proje.|
 |[Dinamik bağlantı kitaplığı](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)|Dinamik bağlantı kitaplığı (DLL) oluşturmak için bir proje.|
-|[Statik kitaplık](../../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|Statik kitaplık (LıB) oluşturmak için bir proje.|
+|[Statik kitaplık](../walkthrough-creating-and-using-a-static-library-cpp.md)|Statik kitaplık (LıB) oluşturmak için bir proje.|
 |[Windows Masaüstü Sihirbazı](../../windows/windows-desktop-wizard.md)|Ek seçeneklerle Windows Masaüstü uygulamaları ve kitaplıkları oluşturmaya yönelik bir sihirbaz.|
 
 ### <a name="general"></a>Genel
@@ -70,9 +70,9 @@ MFC ve ATL desteği bileşenini Visual Studio yüklemenize eklerseniz, bu proje 
 
 ### <a name="windows-universal-apps"></a>Windows Evrensel uygulamaları
 
-Visual Studio yüklemenize C++ Windows Universal platform araçları bileşeni eklerseniz, bu proje şablonları Visual Studio 'ya eklenir.
+C++ Windows Universal platform Araçları bileşenini Visual Studio yüklemenize eklerseniz, bu proje şablonları Visual Studio 'ya eklenir.
 
-İçindeki C++Windows Evrensel uygulamalarına genel bakış için bkz. [Evrensel Windows uygulamaları (C++)](../../cppcx/universal-windows-apps-cpp.md).
+C++ ' da Windows Evrensel uygulamalarına genel bakış için bkz. [Evrensel Windows uygulamaları (c++)](../../cppcx/universal-windows-apps-cpp.md).
 
 |Proje şablonu|Açıklama|
 |----------------------|-----------------------------|
@@ -84,7 +84,7 @@ Visual Studio yüklemenize C++ Windows Universal platform araçları bileşeni e
 |DLL|Bir Evrensel Windows Platformu uygulaması veya çalışma zamanı bileşeni tarafından kullanılabilen yerel dinamik bağlantı kitaplığı (DLL) projesi.|
 |Statik kitaplık|Bir Evrensel Windows Platformu uygulaması veya çalışma zamanı bileşeni tarafından kullanılabilen yerel statik bağlantı kitaplığı (LıB) projesi.|
 |Windows Çalışma Zamanı Bileşeni|Uygulamanın yazıldığı programlama dilinden bağımsız olarak, bir Evrensel Windows Platformu uygulaması tarafından kullanılabilen bir Windows Çalışma Zamanı bileşeni projesi.|
-|Windows uygulaması paketleme projesi|Bir masaüstü uygulamasının Microsoft Store aracılığıyla dışarıdan yüklenmesini veya dağıtılmasını sağlayan UWP paketi oluşturan bir proje.|
+| Windows Uygulaması Paketleme Projesi|Bir masaüstü uygulamasının Microsoft Store aracılığıyla dışarıdan yüklenmesini veya dağıtılmasını sağlayan UWP paketi oluşturan bir proje.|
 
 ## <a name="todo-comments"></a>TODO açıklamaları
 

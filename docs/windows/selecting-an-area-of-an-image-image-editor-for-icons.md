@@ -39,21 +39,21 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: 9324e3dc5c6691a7b50f137da1fad446b416e968
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ecfd69594c05c210743e0c22c804a4713a8229ef
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167855"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509632"
 ---
 # <a name="how-to-edit-an-image"></a>Nasıl yapılır: görüntü düzenleme
 
 Bir görüntünün kesmek, kopyalamak, temizlemek, yeniden boyutlandırmak, ters çevirmek veya taşımak istediğiniz bir alanını tanımlamak için seçim araçlarını kullanabilirsiniz. **Dikdörtgen seçim** aracı ile görüntünün dikdörtgen bir bölgesini tanımlayabilir ve seçebilirsiniz. **Düzensiz seçim** aracı ile kesme, kopyalama veya başka işlemler için seçmek istediğiniz alanın serbest bir anahattını çizebilirsiniz.
 
 > [!NOTE]
-> [Resim Düzenleyicisi araç çubuğunda](../windows/toolbar-image-editor-for-icons.md) **dikdörtgen seçimi** ve **düzensiz seçim** Araçları ' na bakın veya **Görüntü Düzenleyicisi** araç çubuğundaki her bir düğmeyle ilişkili araç ipuçlarını görüntüleyin.
+> [Resim Düzenleyicisi araç çubuğunda](./image-editor-for-icons.md) **dikdörtgen seçimi** ve **düzensiz seçim** Araçları ' na bakın veya **Görüntü Düzenleyicisi** araç çubuğundaki her bir düğmeyle ilişkili araç ipuçlarını görüntüleyin.
 
-Ayrıca, bir seçimden özel bir fırça da oluşturabilirsiniz. Daha fazla bilgi için bkz. [özel fırça oluşturma](../windows/creating-a-custom-brush-image-editor-for-icons.md).
+Ayrıca, bir seçimden özel bir fırça da oluşturabilirsiniz. Daha fazla bilgi için bkz. [özel fırça oluşturma](./using-a-drawing-tool-image-editor-for-icons.md).
 
 ## <a name="how-to"></a>Nasıl yapılır
 
@@ -61,7 +61,7 @@ Bir görüntüyü düzenlemek için bkz. nasıl yapılır:
 
 ### <a name="to-select-an-image"></a>Bir görüntü seçmek için
 
-1. **Görüntü Düzenleyicisi** araç çubuğunu kullanın veya menü **görüntüsü** > **Araçlar** ' a gidin ve istediğiniz seçim aracını seçin.
+1. **Görüntü Düzenleyicisi** araç çubuğunu kullanın veya menü **görüntüsü**  >  **araçları** ' na gidip istediğiniz seçim aracını seçin.
 
 1. Ekleme noktasını, seçmek istediğiniz görüntü alanının bir köşesine taşıyın. Ekleme noktası görüntünün üzerindeyken çapraz artı işareti görüntülenir.
 
@@ -81,7 +81,7 @@ Ayrıca, resmin tamamını veya yalnızca bir kısmını içerip içermediğini 
 
 #### <a name="to-cut-the-current-selection-and-move-it-to-the-clipboard"></a>Geçerli seçimi kesmek ve panoya taşımak için
 
-Menü **düzenle** > **Kes**' e gidin.
+Menü **Düzenle**  >  **Kes**sayfasına gidin.
 
 #### <a name="to-copy-the-selection"></a>Seçimi kopyalamak için
 
@@ -93,7 +93,7 @@ Menü **düzenle** > **Kes**' e gidin.
 
 #### <a name="to-paste-the-clipboard-contents-into-an-image"></a>Pano içeriğini bir görüntüye yapıştırmak için
 
-1. Menü **düzenle** > **Yapıştır**'a gidin.
+1. Menü **Düzenle**  >  **Yapıştır**'a gidin.
 
    Seçim kenarlığı ile çevrelenen Pano içeriği bölmenin sol üst köşesinde görüntülenir.
 
@@ -103,7 +103,7 @@ Menü **düzenle** > **Kes**' e gidin.
 
 #### <a name="to-delete-the-current-selection-without-moving-it-to-the-clipboard"></a>Geçerli seçimi panoya taşımadan silmek için
 
-Menü **düzenle** > **Sil**' e gidin.
+Menü **Düzenle**  >  **Sil**' e gidin.
 
    Seçimin özgün alanı geçerli arka plan rengiyle doldurulmuştur.
 
@@ -118,17 +118,17 @@ Menü **düzenle** > **Sil**' e gidin.
 
 1. Görüntüde seçimi yeni konumunda bağlamak için seçim kenarlığının dışında ' yı seçin.
 
-Seçim ile çizim hakkında daha fazla bilgi için bkz. [özel fırça oluşturma](../windows/creating-a-custom-brush-image-editor-for-icons.md).
+Seçim ile çizim hakkında daha fazla bilgi için bkz. [özel fırça oluşturma](./using-a-drawing-tool-image-editor-for-icons.md).
 
 ### <a name="to-flip-an-image"></a>Bir görüntüyü çevirmek için
 
 Özgün görüntünün ayna görüntüsünü oluşturmak için bir görüntüyü çevirebilir veya döndürebilirsiniz, görüntüyü ters döndürerek veya görüntüyü bir seferde doğru 90 derece döndürebilir.
 
-- Görüntüyü yatayda (ayna görüntüsünü) çevirmek için menü **görüntüsü** > **Yatay Çevir**' e gidin.
+- Görüntüyü yatayda (ayna görüntüsünü) çevirmek için menü **görüntüsünü**  >  **Yatay Çevir**sayfasına gidin.
 
-- Görüntüyü dikey olarak çevirmek için (ters çevir ' i açın) menü **görüntüsü** ' ne gidin > **Dikey çevirin**.
+- Görüntüyü dikey olarak çevirmek için (ters çevir ' i açın) menü **resmi**  >  **Dikey Çevir**' e gidin.
 
-- Görüntüyü 90 derece döndürmek için menü **görüntüsü** ' ne gidin > **90 derece döndürün**.
+- Görüntü 90 derece döndürmek için menü **görüntüsü**  >  **90 derece döndür**bölümüne gidin.
 
    > [!NOTE]
    > Bu komutlar için [Hızlandırıcı (kısayol) tuşlarını](../windows/accelerator-keys-image-editor-for-icons.md) da kullanabilir veya kısayol menüsünden komutlara erişebilirsiniz ( **görüntü Düzenleyicinizde**görüntü dışında seçim yapabilirsiniz).
@@ -147,7 +147,7 @@ Bir görüntüyü yeniden boyutlandırmak için iki mekanizma vardır: boyutland
 Boyutlandırma tutamaçları
 
 > [!NOTE]
-> [Kılavuz ayarları iletişim kutusunda](../windows/grid-settings-dialog-box-image-editor-for-icons.md) **kutucuk Kılavuzu** seçeneğini belirlediyseniz yeniden boyutlandırma sonraki döşeme kılavuz çizgisi ile yaslanır. Yalnızca **piksel kılavuz** seçeneği işaretliyse (varsayılan ayar) yeniden boyutlandırma, bir sonraki kullanılabilir piksele yapışır.
+> [Kılavuz ayarları iletişim kutusunda](./image-editor-for-icons.md) **kutucuk Kılavuzu** seçeneğini belirlediyseniz yeniden boyutlandırma sonraki döşeme kılavuz çizgisi ile yaslanır. Yalnızca **piksel kılavuz** seçeneği işaretliyse (varsayılan ayar) yeniden boyutlandırma, bir sonraki kullanılabilir piksele yapışır.
 
 #### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tamamını yeniden boyutlandırmak için
 
@@ -190,7 +190,7 @@ Normal olarak, **Görüntü Düzenleyicisi** bir boyutlandırma tutamacını ta�
 
 Geliştirme ortamındaki görüntüleri, tıpkı herhangi bir grafik uygulamasında yaptığınız gibi açabilir ve düzenleyebilirsiniz; Örneğin, tek başına düzenleme için bir bit eşlem açma. Birlikte çalıştığınız görüntülerin bir Visual Studio projesinin parçası olması gerekmez.
 
-1. Menü **dosyası** > **Aç**' a gidin.
+1. Menü **dosyası**  >  **Aç**' a gidin.
 
 1. **Dosya türü** kutusunda, **tüm dosyalar**' ı seçin.
 
@@ -207,10 +207,10 @@ Geliştirme ortamındaki görüntüleri, tıpkı herhangi bir grafik uygulaması
    |Özellik|Açıklama|
    |--------------|-----------------|
    |**Renkler**|Görüntünün renk düzenini belirtir. **Tek renkli**, **16**veya **256**veya **gerçek renk**' i seçin.<br/><br/>Görüntüyü 16 renkli bir paletle zaten çizdiyseniz, **tek renkli** seçildiğinde görüntüdeki renkler için siyah ve beyaz değişimler de vardır. Karşıtlık her zaman korunmaz: Örneğin, kırmızı ve yeşil bitişik alanların her ikisi de siyaha dönüştürülür.|
-   |**Kısaltın**|Görüntü dosyasının adını belirtir.<br/><br/>Varsayılan olarak, Visual Studio varsayılan kaynak tanımlayıcısından (IDB_BITMAP1) ilk dört karakteri ("IDB_") kaldırarak ve uygun uzantıyı ekleyerek oluşturulan bir temel dosya adı atar. Bu örnekteki görüntünün dosya adı *BITMAP1. bmp*olacaktır. *MYBITMAP1. bmp*olarak yeniden adlandırabilirsiniz.|
+   |**Kısaltın**|Görüntü dosyasının adını belirtir.<br/><br/>Varsayılan olarak, Visual Studio varsayılan kaynak tanımlayıcısından (IDB_BITMAP1) ilk dört karakteri ("IDB_") kaldırarak ve uygun uzantıyı ekleyerek oluşturulan bir temel dosya adı atar. Bu örnekteki görüntünün dosya adı *BITMAP1.bmp*olacaktır. *MYBITMAP1.bmp*yeniden adlandırabilirsiniz.|
    |**Yükseklik**|Resmin yüksekliğini (piksel cinsinden) ayarlar. Varsayılan değer 48 ' dir.<br/><br/>Görüntü kırpılmış veya var olan görüntünün altına boş bir boşluk eklenir.|
    |**ID**|Kaynağın tanımlayıcısını ayarlar.<br/><br/>Bir görüntü için, varsayılan olarak Microsoft Visual Studio bir serideki bir sonraki kullanılabilir tanımlayıcıyı atar: IDB_BITMAP1, IDB_BITMAP2, vb. Simgeler ve imleçler için benzer adlar kullanılır.|
-   |**İnizdeki**|Renk özelliklerini değiştirir.<br/><br/>Bir renk seçmek ve [Özel Renk Seçici iletişim kutusunu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)göstermek için çift tıklayın. Uygun metin kutularına RGB veya HSL değerlerini yazarak rengi tanımlayın.|
+   |**İnizdeki**|Renk özelliklerini değiştirir.<br/><br/>Bir renk seçmek ve [Özel Renk Seçici iletişim kutusunu](./image-editor-for-icons.md)göstermek için çift tıklayın. Uygun metin kutularına RGB veya HSL değerlerini yazarak rengi tanımlayın.|
    |**SaveCompressed**|Resmin sıkıştırılmış bir biçimde olup olmadığını gösterir. Bu özellik salt okunur durumdadır.<br/><br/>Visual Studio, resimleri sıkıştırılmış bir biçimde kaydetmenize izin vermez. bu nedenle, Visual Studio 'da oluşturulan tüm görüntüler için bu özellik **false**olur. Visual Studio 'da sıkıştırılmış bir görüntü açarsanız (başka bir programda oluşturulan), bu özellik **true**olur. Visual Studio 'Yu kullanarak sıkıştırılmış bir görüntü kaydederseniz, sıkıştırması kaldırılır ve bu özellik **false**değerine geri döndürülür.|
    |**Genişlik**|Resmin genişliğini (piksel cinsinden) ayarlar. Bit eşlemler için varsayılan değer 48 ' dir.<br/><br/>Görüntü kırpılmış veya mevcut görüntünün sağına boş bir boşluk eklenir.|
 
@@ -220,8 +220,8 @@ Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
 [Nasıl yapılır: simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
 [Nasıl yapılır: çizim aracını kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
 [Nasıl yapılır: renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>
-[Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

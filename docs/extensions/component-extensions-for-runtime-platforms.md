@@ -9,12 +9,12 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-ms.openlocfilehash: aa6e5d1ea7d1bc2d7ebfaf07c7c9f808b37e9804
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 887fa14153e728735937604d531782a9ae7535bb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219774"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509716"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için Bileşen Uzantıları
 
@@ -65,7 +65,7 @@ Aşağıdaki anahtar sözcükler genel türleri desteklemek için eklenmiştir. 
 |Sözcükle|Bağlama duyarlı|Amaç|
 |-------------|-----------------------|-------------|
 |**yorlar**|Hayır|Genel bir tür bildirir.|
-|**olmadığı**|Yes|Genel tür parametresine uygulanan kısıtlamaları belirtir.|
+|**konum**|Yes|Genel tür parametresine uygulanan kısıtlamaları belirtir.|
 
 ## <a name="miscellaneous-keywords"></a>Çeşitli anahtar sözcükler
 
@@ -91,7 +91,7 @@ Aşağıdaki dil yapıları, anahtar sözcükler yerine şablon olarak uygulanı
 |**interior_ptr**|(Yalnızca CLR) Başvuru türündeki verileri gösterir.|[interior_ptr (C++/CLI)](interior-ptr-cpp-cli.md)|
 |**pin_ptr**|(Yalnızca CLR) Çöp toplama sisteminin geçici olarak görüntülenmesini sağlamak için CLR başvuru türlerini işaret eder.|[pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)|
 |**safe_cast**|Çalışma zamanı türü için en iyi atama yöntemini belirler ve yürütür.|[safe_cast](safe-cast-cpp-component-extensions.md)|
-|**`typeid`**|(Yalnızca CLR) <xref:System.Type?displayProperty=fullName>Verilen türü veya nesneyi açıklayan bir nesne alır.|[typeid](typeid-cpp-component-extensions.md)|
+|**`typeid`**|(Yalnızca CLR) <xref:System.Type?displayProperty=fullName> Verilen türü veya nesneyi açıklayan bir nesne alır.|[typeid](typeid-cpp-component-extensions.md)|
 
 ## <a name="declarators"></a>Bildirimciler
 
@@ -110,7 +110,7 @@ Bu bölümde, ek programlama yapıları ve CLR ile ilgili konular listelenmekted
 |-----------|-----------------|
 |[__tanımlayıcı (C++/CLI)](identifier-cpp-cli.md)|(Windows Çalışma Zamanı ve CLR) Anahtar sözcüklerin tanımlayıcı olarak kullanılmasına izin vermez.|
 |[Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](variable-argument-lists-dot-dot-dot-cpp-cli.md)|(Windows Çalışma Zamanı ve CLR) Bir işlevin değişken sayıda bağımsız değişken almasını sağlar.|
-|[C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)|C++ integral türlerinin yerine kullanılan CLR türlerini listeler.|
+|[C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)](../dotnet/managed-types-cpp-cli.md#dotnet)|C++ integral türlerinin yerine kullanılan CLR türlerini listeler.|
 |[AppDomain](../cpp/appdomain.md) **`__declspec`** icisi|**`__declspec`** statik ve genel değişkenlerin AppDomain başına mevcut olduğunu belirten değiştirici.|
 |[/Clr ile C stili atamalar (C++/CLı)](c-style-casts-with-clr-cpp-cli.md)|C stili, nasıl yorumlandığını açıklar.|
 |çağırma kuralı [__clrcall](../cpp/clrcall.md)|CLR uyumlu çağırma kuralını gösterir.|

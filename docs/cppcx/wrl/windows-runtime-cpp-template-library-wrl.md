@@ -3,12 +3,12 @@ title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 10e2303fa5498079fc1f9bb6f82aa909c9a6c3ee
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 12bda00d6687340fbddfb8f81bbb83b6c2bd98a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840549"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509800"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -32,7 +32,7 @@ Windows Çalışma Zamanı C++ Şablon kitaplığı ve C++/CX farklı avantajlar
 - C++/CX, COM HRESULT değerlerini özel durumlar olarak temsil eder. COM kullanan veya özel durum kullanmayan bir kod tabanı devraldıysanız, özel durumları kullanmak zorunda olmadığınızdan Windows Çalışma Zamanı C++ şablonu kitaplığının Windows Çalışma Zamanı ile çalışması için daha doğal bir yol olduğunu fark edebilirsiniz.
 
    > [!NOTE]
-   > Windows Çalışma Zamanı C++ Şablon kitaplığı HRESULT değerlerini kullanır ve özel durum oluşturmaz. Ayrıca, Windows Çalışma Zamanı C++ Şablon kitaplığı, uygulama kodunuz bir özel durum oluşturduğunda nesnelerin doğru şekilde yok edildiğini garantilemeye yardımcı olması için akıllı işaretçiler ve rampaya da caii modelini kullanır. Akıllı işaretçiler ve Rat 'lar hakkında daha fazla bilgi için bkz. [Smart işaretçiler](../../cpp/smart-pointers-modern-cpp.md) ve [nesneler (çii)](../../cpp/objects-own-resources-raii.md).
+   > Windows Çalışma Zamanı C++ Şablon kitaplığı HRESULT değerlerini kullanır ve özel durum oluşturmaz. Ayrıca, Windows Çalışma Zamanı C++ Şablon kitaplığı, uygulama kodunuz bir özel durum oluşturduğunda nesnelerin doğru şekilde yok edildiğini garantilemeye yardımcı olması için akıllı işaretçiler ve rampaya da caii modelini kullanır. Akıllı işaretçiler ve Rat 'lar hakkında daha fazla bilgi için bkz. [Smart işaretçiler](../../cpp/smart-pointers-modern-cpp.md) ve [nesneler (çii)](../../cpp/object-lifetime-and-resource-management-modern-cpp.md).
 
 - Windows Çalışma Zamanı C++ şablon kitaplığının amacı ve tasarımı, COM nesnelerinin programlamasını basitleştiren bir şablon tabanlı C++ sınıfları kümesi olan etkin şablon kitaplığı (ATL) tarafından ilham olarak belirlenir. Windows Çalışma Zamanı C++ Şablon kitaplığı Windows Çalışma Zamanı kaydırmak için standart C++ kullandığından, daha kolay bağlantı kurabilir ve ATL 'de Windows Çalışma Zamanı yazılan birçok mevcut COM bileşeni ile etkileşim kurabilirsiniz. Zaten ATL 'yi biliyorsanız Windows Çalışma Zamanı C++ Şablon kitaplığı programlamanın daha kolay olduğunu fark edebilirsiniz.
 

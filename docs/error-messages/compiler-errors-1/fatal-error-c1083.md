@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-ms.openlocfilehash: f51e93475f104f165895c9d7e2733d741af30502
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: 57ae8f2d0b7f02732032151f86617498e5201c61
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389785"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509745"
 ---
 # <a name="fatal-error-c1083"></a>Önemli hata C1083
 
@@ -63,7 +63,7 @@ Dosya bulunamadı. Ekleme arama yolunda belirtilen dizine göre doğru yolu kull
 
 ## <a name="third-party-library-issues-and-vcpkg"></a>Üçüncü taraf kitaplığı sorunları ve vcpkg
 
-Derlemenizi bir parçası olarak bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, [`vcpkg`](../../vcpkg.md) kitaplığı yüklemek ve derlemek için bir C++ paket yöneticisi kullanmayı düşünün. vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar.
+Derlemenizi bir parçası olarak bir üçüncü taraf kitaplığı yapılandırmaya çalışırken bu hatayı görürseniz, [`vcpkg`](../../build/vcpkg.md) kitaplığı yüklemek ve derlemek için bir C++ paket yöneticisi kullanmayı düşünün. vcpkg, [üçüncü taraf kitaplıkların](https://github.com/Microsoft/vcpkg/tree/master/ports)büyük ve artan bir listesini destekler ve projenizin bir parçası olarak başarılı derlemeler için gereken tüm yapılandırma özelliklerini ve bağımlılıklarını ayarlar.
 
 ## <a name="the-file-is-in-your-project-but-not-the-include-search-path"></a>Dosya projenizde, ancak içerme arama yolu değil
 

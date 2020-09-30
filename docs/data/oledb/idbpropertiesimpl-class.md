@@ -20,18 +20,18 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: 16f1a3f8ae9b50e43bfd67d9ac8c65507bf4f147
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d94c5d121386989d223a55b8ce7626444c3f8950
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834342"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509059"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl Sınıfı
 
 Arabirim için bir uygulama sağlar `IDBProperties` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T>
@@ -60,13 +60,13 @@ Sınıfınız, öğesinden türetilir `IDBPropertiesImpl` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) , veri kaynağı nesneleri için zorunlu bir arabirimdir ve Numaralandırıcılar için isteğe bağlı bir arabirim. Ancak, bir Numaralandırıcı bir sayacı ortaya çıkardığı [takdirde, kullanıma](/previous-versions/windows/desktop/ms713706(v=vs.85))sunmalıdır `IDBProperties` . `IDBPropertiesImpl``IDBProperties` [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)tarafından tanımlanan statik işlevi kullanarak uygular.
+[IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) , veri kaynağı nesneleri için zorunlu bir arabirimdir ve Numaralandırıcılar için isteğe bağlı bir arabirim. Ancak, bir Numaralandırıcı bir sayacı ortaya çıkardığı [takdirde, kullanıma](/previous-versions/windows/desktop/ms713706(v=vs.85))sunmalıdır `IDBProperties` . `IDBPropertiesImpl``IDBProperties` [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map)tarafından tanımlanan statik işlevi kullanarak uygular.
 
 ## <a name="idbpropertiesimplgetproperties"></a><a name="getproperties"></a> IDBPropertiesImpl:: GetProperties
 
 Veri kaynağı nesnesinde ayarlanan özelliklerin değerlerini, veri kaynağı bilgilerini ve şu anda numaralandırıcı üzerinde ayarlanmış olan başlatma özelliği grubundaki özelliklerin değerlerini döndürür...
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetProperties)(ULONG cPropertySets,
@@ -96,7 +96,7 @@ Sağlayıcı başlatılmışsa, bu yöntem, veri kaynağı nesnesinde ayarlanmı
 
 Veri kaynağı tarafından desteklenen özellik bilgilerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
@@ -119,13 +119,13 @@ Bazı parametreler, ' de açıklanan farklı adların *OLE DB Programcı Başvur
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevselliği uygulamak için [IDBInitializeImpl:: m_pCUtlPropInfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) kullanır.
+Bu işlevselliği uygulamak için [IDBInitializeImpl:: m_pCUtlPropInfo](./idbinitializeimpl-class.md#pcutlpropinfo) kullanır.
 
 ## <a name="idbpropertiesimplsetproperties"></a><a name="setproperties"></a> IDBPropertiesImpl:: SetProperties
 
 Numaralandırıcı için veri kaynağı ve başlatma özelliği gruplarındaki, veri kaynağı nesneleri veya başlatma özelliği grubu özelliklerini ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(SetProperties)(ULONG cPropertySets,

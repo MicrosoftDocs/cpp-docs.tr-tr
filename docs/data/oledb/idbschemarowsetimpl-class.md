@@ -36,18 +36,18 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-ms.openlocfilehash: eea0ebeaf83b9203cf57f7b35fe3dd1ec2d63d81
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d78aa23469cc0fa94498f93e9a6975e0a7c827e9
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844008"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509045"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl Sınıfı
 
 Şema satır kümeleri için uygulama sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class SessionClass>
@@ -78,13 +78,13 @@ class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset
 | Ad | Açıklama |
 |-|-|
 |[GetRowset](#getrowset)|Bir şema satır kümesi döndürür.|
-|[GetSchemas](#getschemas)|[IDBSchemaRowsetImpl:: GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md)tarafından erişilebilen şema satır kümelerinin bir listesini döndürür.|
+|[GetSchemas](#getschemas)|[IDBSchemaRowsetImpl:: GetRowset](#getrowset)tarafından erişilebilen şema satır kümelerinin bir listesini döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) arabirimini ve şablonıtilen Oluşturucu Işlevi [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md)uygular.
+Bu sınıf, [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) arabirimini ve şablonıtilen Oluşturucu Işlevi [CreateSchemaRowset](#createschemarowset)uygular.
 
-OLE DB, bir sağlayıcıdaki verilerle ilgili verileri döndürmek için şema satır kümelerini kullanır. Bu tür veriler genellikle "metadata" olarak adlandırılır. Varsayılan olarak, sağlayıcının `DBSCHEMA_TABLES` `DBSCHEMA_COLUMNS` `DBSCHEMA_PROVIDER_TYPES` *OLE DB Programcı başvurusunda* [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) bölümünde açıklandığı gibi, ve, her zaman desteklemesi gerekir. Şema satır kümeleri bir şema eşlemesinde atanır. Şema eşleme girişleri hakkında daha fazla bilgi için bkz. [SCHEMA_ENTRY](../../data/oledb/schema-entry.md).
+OLE DB, bir sağlayıcıdaki verilerle ilgili verileri döndürmek için şema satır kümelerini kullanır. Bu tür veriler genellikle "metadata" olarak adlandırılır. Varsayılan olarak, sağlayıcının `DBSCHEMA_TABLES` `DBSCHEMA_COLUMNS` `DBSCHEMA_PROVIDER_TYPES` *OLE DB Programcı başvurusunda* [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) bölümünde açıklandığı gibi, ve, her zaman desteklemesi gerekir. Şema satır kümeleri bir şema eşlemesinde atanır. Şema eşleme girişleri hakkında daha fazla bilgi için bkz. [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry).
 
 OLE DB sağlayıcı Sihirbazı, ATL nesne sihirbazında, projenizdeki şema satır kümeleri için otomatik olarak kod oluşturur. (Varsayılan olarak, sihirbaz daha önce bahsedilen zorunlu şema satır kümelerini destekler.) ATL nesne Sihirbazı 'nı kullanarak bir tüketici oluşturduğunuzda, sihirbaz doğru verileri bir sağlayıcıya bağlamak için şema satır kümelerini kullanır. Doğru meta verileri sağlamak için şema satır kümelerinizi uygulamadıysanız, sihirbaz doğru verileri bağmaz.
 
@@ -96,7 +96,7 @@ Sağlayıcınızdaki şema satır kümelerini destekleme hakkında daha fazla bi
 
 Bir şema satır kümesi için kısıtlamaların geçerliliğini denetler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT CheckRestrictions(REFGUID rguidSchema,
@@ -112,13 +112,13 @@ HRESULT CheckRestrictions(REFGUID rguidSchema,
 'ndaki Şema satır kümesi için tüketicinin geçirildiği kısıtlamaların sayısı.
 
 *rgRestrictions*<br/>
-'ndaki Ayarlanacak kısıtlama *değerlerinin bir dizi uzunluğu kümesi* . Daha fazla bilgi için [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md)Içindeki *rgRestrictions* parametresinin açıklamasına bakın.
+'ndaki Ayarlanacak kısıtlama *değerlerinin bir dizi uzunluğu kümesi* . Daha fazla bilgi için [SetRestrictions](#setrestrictions)Içindeki *rgRestrictions* parametresinin açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
 `CheckRestrictions`Şema satır kümesine karşı kısıtlamaların geçerliliğini denetlemek için kullanın. `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS` Ve `DBSCHEMA_PROVIDER_TYPES` şema satır kümeleri için kısıtlamaları denetler. Bir tüketicinin çağrısının doğru olup olmadığını anlamak için bunu çağırın `IDBSchemaRowset::GetRowset` . Yukarıda listelenenlerin dışında şema satır kümelerini desteklemek istiyorsanız, bu görevi gerçekleştirmek için kendi işlevinizi oluşturmanız gerekir.
 
-`CheckRestrictions` tüketicinin [GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) 'in, sağlayıcının desteklediği doğru kısıtlamaya ve doğru kısıtlama türüne (örneğin, bir dize için VT_BSTR) çağırıp atamayacağını belirler. Ayrıca, doğru sayıda kısıtlamaların desteklenip desteklenmediğini da belirler. Varsayılan olarak, `CheckRestrictions` belirli bir satır kümesinde hangi kısıtlamaların desteklediği kısıtlamalarını [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) çağrısıyla, sağlayıcıya sorar. Daha sonra, tüketici kısıtlamalarını sağlayıcı tarafından desteklenenlere göre karşılaştırır ve başarılı ya da başarısız olur.
+`CheckRestrictions` tüketicinin [GetRowset](#getrowset) 'in, sağlayıcının desteklediği doğru kısıtlamaya ve doğru kısıtlama türüne (örneğin, bir dize için VT_BSTR) çağırıp atamayacağını belirler. Ayrıca, doğru sayıda kısıtlamaların desteklenip desteklenmediğini da belirler. Varsayılan olarak, `CheckRestrictions` belirli bir satır kümesinde hangi kısıtlamaların desteklediği kısıtlamalarını [SetRestrictions](#setrestrictions) çağrısıyla, sağlayıcıya sorar. Daha sonra, tüketici kısıtlamalarını sağlayıcı tarafından desteklenenlere göre karşılaştırır ve başarılı ya da başarısız olur.
 
 Şema satır kümeleri hakkında daha fazla bilgi için, Windows SDK *OLE DB Programcı başvurusunda* [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) bölümüne bakın.
 
@@ -126,7 +126,7 @@ HRESULT CheckRestrictions(REFGUID rguidSchema,
 
 Şablon parametresi tarafından belirtilen nesne için bir COM nesnesi Oluşturucu işlevi uygular.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template template <class SchemaRowsetClass>
@@ -178,7 +178,7 @@ Bu işlev, tüm şema satır kümesi türleri için genel Oluşturucu uygular. G
 
 Belirli bir şema satır kümesinde hangi kısıtlamaları destekliyoruz belirtir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void SetRestrictions(ULONG cRestrictions,
@@ -199,7 +199,7 @@ void SetRestrictions(ULONG cRestrictions,
 
 ### <a name="remarks"></a>Açıklamalar
 
-`IDBSchemaRowset`Nesnesi, `SetRestrictions` belirli bir şema satır kümesinde hangi kısıtlamaları destekleyeceğini (Bu, bilinen bir Işaretçi aracılığıyla [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) tarafından çağrılır) belirlemektir. Kısıtlamalar tüketicilere yalnızca eşleşen satırları getirme izni verir (örneğin, "MyTable" tablosundaki tüm sütunları bulur). Kısıtlamalar isteğe bağlıdır ve hiçbirinin desteklenme durumunda (varsayılan), tüm veriler her zaman döndürülür.
+`IDBSchemaRowset`Nesnesi, `SetRestrictions` belirli bir şema satır kümesinde hangi kısıtlamaları destekleyeceğini (Bu, bilinen bir Işaretçi aracılığıyla [GetSchemas](#getschemas) tarafından çağrılır) belirlemektir. Kısıtlamalar tüketicilere yalnızca eşleşen satırları getirme izni verir (örneğin, "MyTable" tablosundaki tüm sütunları bulur). Kısıtlamalar isteğe bağlıdır ve hiçbirinin desteklenme durumunda (varsayılan), tüm veriler her zaman döndürülür.
 
 Bu yöntemin varsayılan uygulamasında *rgRestrictions* dizi öğeleri 0 olarak ayarlanır. Varsayılan değer dışındaki kısıtlamaları ayarlamak için oturum sınıfınıza varsayılan ayarı geçersiz kılın.
 
@@ -213,7 +213,7 @@ Bu yöntemin varsayılan uygulamasında *rgRestrictions* dizi öğeleri 0 olarak
 
 Bir şema satır kümesi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
@@ -254,15 +254,15 @@ dışı Yeni oluşturulan şema satır kümesinde istenen arabirime yönelik bir
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, kullanıcının oturum sınıfında bir şema eşlemesine sahip olmasını gerektirir. Şema eşleme bilgilerini kullanarak, `GetRowset` *rguidSchema* parametresi eşleme girdilerinin GUID 'lerinin birine eşitse, belirli bir satır kümesi nesnesi oluşturur. Harita girişinin açıklaması için bkz. [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) .
+Bu yöntem, kullanıcının oturum sınıfında bir şema eşlemesine sahip olmasını gerektirir. Şema eşleme bilgilerini kullanarak, `GetRowset` *rguidSchema* parametresi eşleme girdilerinin GUID 'lerinin birine eşitse, belirli bir satır kümesi nesnesi oluşturur. Harita girişinin açıklaması için bkz. [SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry) .
 
 Windows SDK [IDBSchemaRowset:: GetRowset](/previous-versions/windows/desktop/ms722634(v=vs.85)) öğesine bakın.
 
 ## <a name="idbschemarowsetimplgetschemas"></a><a name="getschemas"></a> IDBSchemaRowsetImpl:: GetSchemas
 
-[IDBSchemaRowsetImpl:: GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md)tarafından erişilebilen şema satır kümelerinin bir listesini döndürür.
+[IDBSchemaRowsetImpl:: GetRowset](#getrowset)tarafından erişilebilen şema satır kümelerinin bir listesini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetSchema s )(ULONG * pcSchemas,
@@ -291,5 +291,5 @@ Bu işlevin uygulanması, kullanıcının oturum sınıfında bir şema eşlemes
 
 [Şema satır kümesi sınıfları ve typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)<br/>
 [Şema satır kümelerini destekleme](../../data/oledb/supporting-schema-rowsets.md)<br/>
-[SCHEMA_ENTRY](../../data/oledb/schema-entry.md)<br/>
+[SCHEMA_ENTRY](./macros-for-ole-db-provider-templates.md#schema_entry)<br/>
 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider)

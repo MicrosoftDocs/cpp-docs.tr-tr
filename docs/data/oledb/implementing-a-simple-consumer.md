@@ -4,12 +4,12 @@ ms.date: 08/19/2019
 helpviewer_keywords:
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 2f290f2a17c51682c75fbc09118757e5fd12c4f7
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 9e93b40313a215dfe5872b33dc7d41641204a2f1
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630752"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508978"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 
@@ -28,16 +28,16 @@ Aşağıdaki konularda, basit bir tüketici oluşturmak için **MFC Uygulama Sih
 - [Tüketiciye yer Işareti desteği eklemek,](#bookmark) tüketiciye nasıl yer işareti desteğinin ekleneceğini gösterir.
 
 > [!NOTE]
-> Bu bölümde açıklanan Tüketici uygulamasını, `MyProv` ve `Provider` örnek sağlayıcıları test etmek için kullanabilirsiniz.
+> Bu bölümde açıklanan Tüketici uygulamasını, `MyProv` ve örnek sağlayıcıları test etmek için kullanabilirsiniz `Provider` .
 
 > [!NOTE]
-> Sınanacak `MyProv` bir tüketici uygulaması oluşturmak için ( [basit salt okuma sağlayıcısını geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)bölümünde açıklanan sağlayıcı), [tüketiciye yer işareti desteği ekleme](#bookmark)bölümünde açıklandığı gibi yer işareti desteği eklemeniz gerekir.
+> Sınanacak bir tüketici uygulaması oluşturmak için `MyProv` ( [basit salt okuma sağlayıcısını geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)bölümünde açıklanan sağlayıcı), [tüketiciye yer işareti desteği ekleme](#bookmark)bölümünde açıklandığı gibi yer işareti desteği eklemeniz gerekir.
 
-## <a name="retrieve" ></a>Tüketiciyle veri alma
+## <a name="retrieving-data-with-the-consumer"></a><a name="retrieve" ></a> Tüketiciyle veri alma
 
 ### <a name="to-modify-the-console-application-to-use-the-ole-db-consumer"></a>Konsol uygulamasını OLE DB tüketicisini kullanacak şekilde değiştirmek için
 
-1. İçinde `MyCons.cpp`, aşağıdaki gibi kalın metni ekleyerek ana kodu değiştirin:
+1. İçinde `MyCons.cpp` , aşağıdaki gibi kalın metni ekleyerek ana kodu değiştirin:
 
     ```cpp
     // MyCons.cpp : Defines the entry point for the console application.
@@ -64,15 +64,15 @@ Aşağıdaki konularda, basit bir tüketici oluşturmak için **MFC Uygulama Sih
     }
     ```
 
-## <a name="bookmark" ></a>Tüketiciye yer Işareti desteği ekleme
+## <a name="adding-bookmark-support-to-the-consumer"></a><a name="bookmark" ></a> Tüketiciye yer Işareti desteği ekleme
 
 Yer işareti, tablodaki satırları benzersiz bir şekilde tanımlayan bir sütundur. Genellikle bu, anahtar sütundur, ancak her zaman değildir; sağlayıcıya özeldir. Bu bölüm, yer işareti desteğinin nasıl ekleneceğini gösterir. Bunu yapmak için, Kullanıcı kayıt sınıfında aşağıdaki adımları gerçekleştirmeniz gerekir:
 
 - Yer işaretlerinin örneğini oluşturun. Bunlar [CBookmark](../../data/oledb/cbookmark-class.md)türünde nesnelerdir.
 
-- `DBPROP_IRowsetLocate` Özelliği ayarlayarak sağlayıcıdan bir yer işareti sütunu isteyin.
+- Özelliği ayarlayarak sağlayıcıdan bir yer işareti sütunu isteyin `DBPROP_IRowsetLocate` .
 
-- [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) makrosunu kullanarak sütun haritasına bir yer işareti girişi ekleyin.
+- [BOOKMARK_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#bookmark_entry) makrosunu kullanarak sütun haritasına bir yer işareti girişi ekleyin.
 
 Önceki adımlarda, yer işareti desteği ve çalışmak için bir yer işareti nesnesi vardır. Bu kod örneği, bir yer işaretini aşağıdaki gibi gösterir:
 
@@ -80,12 +80,12 @@ Yer işareti, tablodaki satırları benzersiz bir şekilde tanımlayan bir sütu
 
 - Satır kümesi verilerini satıra göre dosya satırına çıktı.
 
-- [MoveToBookmark](../../data/oledb/crowset-movetobookmark.md)öğesini çağırarak satır kümesi imlecini yer işaretine taşıyın.
+- [MoveToBookmark](./crowset-class.md#movetobookmark)öğesini çağırarak satır kümesi imlecini yer işaretine taşıyın.
 
 - Yer işareti eklenecek satırı, dosyanın sonuna ekleyerek çıkış.
 
 > [!NOTE]
-> `Provider` Örnek sağlayıcı uygulamasını test etmek için bu tüketici uygulamasını kullanırsanız, bu bölümde açıklanan yer işareti desteğini bırakın.
+> Örnek sağlayıcı uygulamasını test etmek için bu tüketici uygulamasını kullanırsanız `Provider` , bu bölümde açıklanan yer işareti desteğini bırakın.
 
 ### <a name="to-instantiate-the-bookmark"></a>Yer işaretinin örneğini oluşturmak için
 
@@ -104,7 +104,7 @@ Yer işareti, tablodaki satırları benzersiz bir şekilde tanımlayan bir sütu
 
 ### <a name="to-request-a-bookmark-column-from-the-provider"></a>Sağlayıcıdan bir yer işareti sütunu istemek için
 
-1. Aşağıdaki kodu `GetRowsetProperties` , Kullanıcı kaydı sınıfındaki yöntemine ekleyin:
+1. Aşağıdaki kodu, `GetRowsetProperties` Kullanıcı kaydı sınıfındaki yöntemine ekleyin:
 
     ```cpp
     // Set the DBPROP_IRowsetLocate property.
@@ -132,7 +132,7 @@ Yer işareti, tablodaki satırları benzersiz bir şekilde tanımlayan bir sütu
 
 ### <a name="to-use-a-bookmark-in-your-main-code"></a>Ana kodunuzda bir yer işareti kullanmak için
 
-1. Daha önce oluşturduğunuz konsol uygulamasındaki dosyada,anakoduaşağıdakigibiokunacakşekildedeğiştirin.`MyCons.cpp` Yer işaretlerini kullanmak için ana kodun kendi yer işareti nesnesinin (`myBookmark`) örneği oluşturması gerekir; bu, erişimcinin (`m_bookmark`) içinden farklı bir yer işaretidir.
+1. `MyCons.cpp`Daha önce oluşturduğunuz konsol uygulamasındaki dosyada, ana kodu aşağıdaki gibi okunacak şekilde değiştirin. Yer işaretlerini kullanmak için ana kodun kendi yer işareti nesnesinin () örneği oluşturması gerekir `myBookmark` ; Bu, erişimcinin () içinden farklı bir yer işaretidir `m_bookmark` .
 
     ```cpp
     ///////////////////////////////////////////////////////////////////////
@@ -207,4 +207,4 @@ Yer işaretleri hakkında daha fazla bilgi için bkz. [yer Imlerini kullanma](..
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+[Sihirbaz kullanarak OLE DB tüketicisi oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

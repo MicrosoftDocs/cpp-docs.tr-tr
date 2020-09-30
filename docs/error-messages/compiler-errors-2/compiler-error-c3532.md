@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3532
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-ms.openlocfilehash: f9339797f42967ef1de0253b1e51092e6d98df5d
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: b8d516074b79704b10d27dd4638585a5ada08323
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686788"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510131"
 ---
 # <a name="compiler-error-c3532"></a>Derleyici hatası C3532
 
@@ -54,4 +54,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+[auto Anahtar Sözcüğü](../../cpp/auto-cpp.md)

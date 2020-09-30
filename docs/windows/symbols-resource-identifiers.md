@@ -1,5 +1,5 @@
 ---
-title: Kaynak Tanımlayıcıları (Semboller) (C++)
+title: Kaynak tanımlayıcıları (semboller) (C++)
 ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.identifiers
@@ -10,37 +10,37 @@ helpviewer_keywords:
 - symbols [C++], editing
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
-ms.openlocfilehash: c6b3cf7d3edfc870164645632bb07bf49c792a48
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1a01c127c69bb54209ecc059394eb85ef0ca4eeb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81359895"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509619"
 ---
-# <a name="resource-identifiers-symbols-c"></a>Kaynak Tanımlayıcıları (Semboller) (C++)
+# <a name="resource-identifiers-symbols-c"></a>Kaynak tanımlayıcıları (semboller) (C++)
 
-Sembol, örneğin bir sembol değerine (tamsayı) eşlenen iki bölümden, bir sembol adından (metin dizesi) oluşan bir kaynak tanımlayıcısýr (ID):
+Sembol, bir sembol değeriyle (tamsayı) eşlenmiş bir sembol adı (metin dizesi) olan iki bölümden oluşan bir kaynak tanımlayıcısıdır (ID). Örneğin:
 
 ```cpp
 IDC_EDITNAME = 5100
 ```
 
-Sembol adları genellikle tanımlayıcıolarak adlandırılır.
+Sembol adları genellikle tanımlayıcılar olarak adlandırılır.
 
-Semboller, hem kaynak kodunuzda hem de kaynak düzenleyicilerinde bunlarla çalışırken kaynaklara ve kullanıcı arabirimi nesnelerine atıfta bulunarak açıklayıcı bir yol sağlar. [Kaynak Sembolleri iletişim kutusunu](../windows/viewing-resource-symbols.md)kullanarak sembolleri uygun bir yerde görüntüleyebilir ve işleyebilirsiniz.
+Semboller, kaynaklar ve Kullanıcı arabirimi nesnelerine, hem kaynak kodunuzda hem de kaynak düzenleyicilerinde çalışırken bunlarla ilgili açıklayıcı bir yol sağlar. Sembolleri, [kaynak sembolleri iletişim kutusunu](./creating-new-symbols.md)kullanarak bir uygun yerde görüntüleyebilir ve yönetebilirsiniz.
 
-Uygulamanız boyutu ve gelişmişlik büyüdükçe, bu yüzden kaynak ve sembol sayısı yok. Çeşitli dosyalara dağılmış çok sayıda simgeyi izlemek zor olabilir. **Kaynak Sembolleri** iletişim kutusu, aşağıdakileri yapabileceğiniz merkezi bir araç sunarak sembol yönetimini basitleştirir:
+Uygulamanız boyut ve gelişmiş algoritmaların mümkündür büyüdükçe, kaynak ve sembol sayısını de vardır. Birçok dosya genelinde dağılmış çok sayıda sembol izlemek zor olabilir. **Kaynak sembolleri** iletişim kutusu, ' de kullanabileceğiniz bir merkezi araç sunarak sembol yönetimini basitleştirir:
 
-- [Semboller Oluştur](../windows/creating-new-symbols.md)
+- [Sembol oluştur](../windows/creating-new-symbols.md)
 
 - [Sembolleri Yönet](../windows/changing-a-symbol-or-symbol-name-id.md)
 
-- [Önceden Tanımlanmış Sembol Tanımlarını Görüntüle](../windows/predefined-symbol-ids.md)
+- [Önceden tanımlanmış sembol kimliklerini görüntüle](../windows/predefined-symbol-ids.md)
 
-Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda, [kaynak düzenleyicileri](../windows/resource-editors.md) kaynak `IDC_RADIO1`için varsayılan bir ad sağlar, örneğin, ve ona bir değer atar. Ad artı değer tanımı `Resource.h` dosyada depolanır.
+Yeni bir kaynak veya kaynak nesnesi oluşturduğunuzda, kaynak [düzenleyicileri](../windows/resource-editors.md) kaynak için varsayılan bir ad sağlar, örneğin, `IDC_RADIO1` ve kendisine bir değer atar. Ad ve değer tanımı `Resource.h` dosyada depolanır.
 
 > [!NOTE]
-> Kaynakları veya kaynak nesnelerini bir .rc dosyasından diğerine kopyalarken, Visual C++ varolan dosyadaki sembol adları veya değerlerle çakışmaları önlemek için aktarılan kaynağın sembol değerini veya sembol adını ve değerini değiştirebilir.
+> Bir. rc dosyasından bir. rc dosyasından kaynak veya kaynak nesneleri kopyalarken, Visual C++ var olan dosyadaki sembol adlarıyla veya değerlerle çakışmayı önlemek için, aktarılan kaynağın sembol değerini veya sembol adını ve değerini değiştirebilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -49,5 +49,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
-[Kaynak Dosyaları](../windows/resource-files-visual-studio.md)<br/>
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
+[Kaynak düzenleyicileri](../windows/resource-editors.md)<br/>

@@ -6,18 +6,18 @@ helpviewer_keywords:
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-ms.openlocfilehash: 23bc20355e1e2b17ac20cf975df2ff58d6553ef9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 352841595e8b197407ccb52a22c8b0502d314c98
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404552"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509502"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
 
-Çeşitli şekillerde ikili büyük nesne (BLOB) alabilir. Kullanabileceğiniz `DBTYPE_BYTES` bayt dizisi olarak BLOB alınamıyor veya bir arabirim `ISequentialStream`. Daha fazla bilgi için [BLOB'ları ve OLE nesneleri](/previous-versions/windows/desktop/ms711511(v=vs.85)) içinde **OLE DB Programcının Başvurusu**.
+İkili büyük nesne (BLOB) çeşitli yollarla alabilirsiniz. `DBTYPE_BYTES`Blobu bir bayt dizisi olarak almak veya gibi bir arayüz kullanmak için kullanabilirsiniz `ISequentialStream` . Daha fazla bilgi için, **OLE DB Programcı başvurusunda** [BLOB ve OLE nesneleri](/previous-versions/windows/desktop/ms711511(v=vs.85)) bölümüne bakın.
 
-Aşağıdaki kodu kullanarak bir BLOB alma işlemi gösterilmektedir `ISequentialStream`. Makro [BLOB_ENTRY](../../data/oledb/blob-entry.md) arabirimi ve arabirim için kullanılan bayraklar belirtmenizi sağlar. Tablo açtıktan sonra kodu çağıran `Read` üzerinde sürekli `ISequentialStream` BLOBUNDAN bayt okunamadı. Kod çağrıları `Release` çağırmadan önce arabirim işaretçisi elden çıkarmak `MoveNext` sonraki kayda alınamıyor.
+Aşağıdaki kod kullanarak bir BLOBUN nasıl alınacağını gösterir `ISequentialStream` . Makro [BLOB_ENTRY](./macros-and-global-functions-for-ole-db-consumer-templates.md#blob_entry) arabirim için kullanılan arabirimi ve bayrakları belirtmenize olanak tanır. Tabloyu açtıktan sonra kod, `Read` `ISequentialStream` BLOB 'dan baytları okumak için tekrar tekrar çağırır. Kod, `Release` `MoveNext` sonraki kaydı almak için çağrılmadan önce arabirim işaretçisinin atılmaya çağrı yapılır.
 
 ```cpp
 class CCategories
@@ -51,9 +51,9 @@ while (categories.MoveNext() == S_OK)
 }
 ```
 
-BLOB verilerini işleme makrolar hakkında daha fazla bilgi için bkz. **sütun eşleme makroları** içinde [makroları ve genel işlevler için OLE DB Tüketici Şablonları](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).
+BLOB verilerini işleyen makrolar hakkında daha fazla bilgi için bkz. [OLE DB tüketici şablonları Için makrolar ve genel Işlevlerde](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md) **sütun Haritası makroları** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Erişimcileri Kullanma](../../data/oledb/using-accessors.md)<br/>
-[OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>
+[Erişimcileri kullanma](../../data/oledb/using-accessors.md)<br/>
+[OLE DB tüketici şablonları için makrolar ve genel Işlevler](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>

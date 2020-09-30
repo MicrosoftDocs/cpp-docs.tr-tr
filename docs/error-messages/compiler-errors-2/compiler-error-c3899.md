@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3899
 ms.assetid: 14e07e4a-f7a7-4309-baaa-649d69e12e23
-ms.openlocfilehash: 022bc1a37f7d9cfdb2c206592dd303a9c3c95080
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f3650d994e3102f71ab1d3598a4d1482f50b3334
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749119"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91510031"
 ---
 # <a name="compiler-error-c3899"></a>Derleyici hatası C3899
 
 ' var ': initonly veri üyesinin lvalue kullanımına doğrudan ' class ' sınıfındaki bir paralel bölgenin içinde izin verilmez
 
-Bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi, bir [paralel](../../parallel/openmp/reference/parallel.md) bölgedeki oluşturucunun bu bölümü içinde başlatılamaz.  Bunun nedeni, derleyicinin bu kodun dahili bir konum değiştirme işlemi yaptığı, yani artık oluşturucunun bir parçası olmadığı için.
+Bir [initonly (C++/CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi, bir [paralel](../../parallel/openmp/reference/openmp-directives.md#parallel) bölgedeki oluşturucunun bu bölümü içinde başlatılamaz.  Bunun nedeni, derleyicinin bu kodun dahili bir konum değiştirme işlemi yaptığı, yani artık oluşturucunun bir parçası olmadığı için.
 
 Çözümlemek için, oluşturucuda initonly veri üyesini, ancak paralel bölgenin dışına başlatın.
 

@@ -29,18 +29,18 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: 46fa266c5a8328bbcf7cfd1257ce1ff3e38ed2bb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1e9e636824ff67ee93587637c0e098e625229c06
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845672"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509088"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
 Çeşitli OLE DB Özellik arabirimleri için özellikleri uygular (örneğin,, `IDBProperties` `IDBProperties` ve `IRowsetInfo` ).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template < class T >
@@ -72,15 +72,15 @@ class ATL_NO_VTABLE CUtlProps : public CUtlPropsBase
 
 Bu sınıfın çoğu bir uygulama ayrıntısıyla yapılır.
 
-`CUtlProps` özellikleri iç olarak ayarlamak için iki üye içerir: [GetPropValue](../../data/oledb/cutlprops-getpropvalue.md) ve [SetPropValue](../../data/oledb/cutlprops-setpropvalue.md).
+`CUtlProps` özellikleri iç olarak ayarlamak için iki üye içerir: [GetPropValue](#getpropvalue) ve [SetPropValue](#setpropvalue).
 
-Özellik kümesi eşlemesinde kullanılan makrolar hakkında daha fazla bilgi için bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) ve [END_PROPSET_MAP](../../data/oledb/end-propset-map.md).
+Özellik kümesi eşlemesinde kullanılan makrolar hakkında daha fazla bilgi için bkz. [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map) ve [END_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#end_propset_map).
 
 ## <a name="cutlpropsgetpropvalue"></a><a name="getpropvalue"></a> CUtlProps:: GetPropValue
 
 Özellik kümesinden bir özellik alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,
@@ -107,7 +107,7 @@ dışı Yeni özellik değerini içeren bir varyant işaretçisi.
 
 Bir özelliği ayarlamadan önce bir değeri doğrulamak için kullanılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
@@ -134,7 +134,7 @@ Bir özelliği ayarlamak için kullanmak üzere olduğunuz bir değer üzerinde 
 
 Bir tüketici nesne oluşturma arabirimlerinden birindeki bir yöntemi çağırdığında isteğe bağlı bir arabirim için istekleri işler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);
@@ -163,13 +163,13 @@ Bir tüketici bir nesne açarsa ve isteğe bağlı bir arabirim isterse, sağlay
 
 - `IRowsetScroll`
 
-Diğer arabirimleri işlemek istiyorsanız, işlevleri işlemek için veri kaynağınız, oturum, komut veya satır kümesi sınıfınıza bu işlevi geçersiz kılın. Geçersiz kılma özelliği, ayar özelliklerinin aynı zamanda zincirleme özellikleri de ayarlayadiğinden emin olmak için normal set/Get özellikleri arabirimlerini almalıdır (bkz. [OnPropertyChanged](../../data/oledb/cutlprops-onpropertychanged.md)).
+Diğer arabirimleri işlemek istiyorsanız, işlevleri işlemek için veri kaynağınız, oturum, komut veya satır kümesi sınıfınıza bu işlevi geçersiz kılın. Geçersiz kılma özelliği, ayar özelliklerinin aynı zamanda zincirleme özellikleri de ayarlayadiğinden emin olmak için normal set/Get özellikleri arabirimlerini almalıdır (bkz. [OnPropertyChanged](#onpropertychanged)).
 
 ## <a name="cutlpropsonpropertychanged"></a><a name="onpropertychanged"></a> CUtlProps:: OnPropertyChanged
 
 Zincirleme özelliklerini işlemek için bir özellik ayarlandıktan sonra çağırılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
@@ -202,7 +202,7 @@ Bu işlevde Kullanıcı, parametresindeki Özellik KIMLIĞINI alır `DBPROP*` . 
 
 Özellik kümesindeki bir özelliği ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT SetPropValue(const GUID* pguidPropSet,

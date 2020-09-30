@@ -15,19 +15,19 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-ms.openlocfilehash: 94a70b48793d44eda4fd76d9b59460418cfbc032
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2de4cc9227da9d4ad8a012dacd85500ab698c4ae
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209449"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509425"
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
 
 > [!NOTE]
 > ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
-Statik bir erişimci (yani `CAccessor`türetilen bir erişimci) kullanmak için tüketicinizin bir kullanıcı kaydına sahip olması gerekir. Kullanıcı kaydı, girişi veya C++ çıktıyı işlemek için veri öğeleri içeren bir sınıftır. **ATL OLE DB Tüketici Sihirbazı** tüketicinizin Kullanıcı kaydını oluşturur. Komutları işlemek gibi isteğe bağlı görevler için kullanıcı kaydına Yöntemler ekleyebilirsiniz.
+Statik bir erişimci (yani, öğesinden türetilen bir erişimci) kullanmak için `CAccessor` tüketicinizin bir kullanıcı kaydına sahip olması gerekir. Kullanıcı kaydı, giriş veya çıktıyı işlemek için veri öğeleri içeren bir C++ sınıfıdır. **ATL OLE DB Tüketici Sihirbazı** tüketicinizin Kullanıcı kaydını oluşturur. Komutları işlemek gibi isteğe bağlı görevler için kullanıcı kaydına Yöntemler ekleyebilirsiniz.
 
 Aşağıdaki kod, komutları işleyen bir örnek kayıt gösterir. Kullanıcı kaydında BEGIN_COLUMN_MAP, bir sağlayıcıdan tüketiciye geçirilen bir veri satır kümesini temsil eder. BEGIN_PARAM_MAP bir komut parametreleri kümesini temsil eder. Bu örnek, komut parametrelerini işlemek için bir [CCommand](../../data/oledb/ccommand-class.md) sınıfı kullanır. Harita girdilerindeki veri üyeleri, sınıfın her örneği için bir bitişik bellek öbeğiyle uzaklıkları temsil eder. COLUMN_ENTRY makroları sağlayıcı tarafındaki PROVIDER_COLUMN_ENTRY makrolara karşılık gelir.
 
@@ -64,7 +64,7 @@ Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı 'nı** kullan�
 
 Birden çok erişimci kullanmanız gereken senaryolara ilişkin ayrıntılı bir tartışma için bkz. [bir satır kümesinde birden çok erişimci kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md).
 
-Aşağıdaki örnek, satır kümesinde birden çok erişimciyi destekleyecek şekilde değiştirilen Kullanıcı kaydını gösterir. BEGIN_COLUMN_MAP ve END_COLUMN_MAP yerine, her erişimci için [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md) ve [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) kullanır. BEGIN_ACCESSOR makrosu, erişimci numarasını (sıfırdan uzaklığa) ve erişimcinin bir oto erişimcisi olup olmadığını belirtir. Otomatik erişimciler, [MoveNext](../../data/oledb/crowset-movenext.md)çağrısına verileri otomatik olarak almak için `GetData` çağırır. Otomatik olmayan erişimciler, verileri açıkça almanızı gerektirir. Her kayıt için almak istemediğiniz büyük bir veri alanına (bir bit eşlem resmi gibi) bağlıyorsanız, otomatik olmayan bir erişimci kullanın.
+Aşağıdaki örnek, satır kümesinde birden çok erişimciyi destekleyecek şekilde değiştirilen Kullanıcı kaydını gösterir. BEGIN_COLUMN_MAP ve END_COLUMN_MAP yerine, her erişimci için [BEGIN_ACCESSOR_MAP](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor_map) ve [BEGIN_ACCESSOR](./macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) kullanır. BEGIN_ACCESSOR makrosu, erişimci numarasını (sıfırdan uzaklığa) ve erişimcinin bir oto erişimcisi olup olmadığını belirtir. Otomatik erişimciler, `GetData` [MoveNext](./crowset-class.md#movenext)çağrısında verileri otomatik olarak almak için çağırır. Otomatik olmayan erişimciler, verileri açıkça almanızı gerektirir. Her kayıt için almak istemediğiniz büyük bir veri alanına (bir bit eşlem resmi gibi) bağlıyorsanız, otomatik olmayan bir erişimci kullanın.
 
 ```cpp
 class CMultiArtists

@@ -63,18 +63,18 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: 189f97e72f1cb87de7e4c4a388128c2a76c42961
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb0e236a31846e3465d76b6904a7b4c57a2b8cf4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832444"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91509005"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl Sınıfı
 
-OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimini uygular, **CAtlArray<** türünde bir veri üyesine ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) kayıt ekleme ve kayıtları alma `RecordClass` **>** .
+OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimini uygular, **CAtlArray<** türünde bir veri üyesine ([m_rgErrors](#rgerrors)) kayıt ekleme ve kayıtları alma `RecordClass` **>** .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, class RecordClass = ATLERRORINFO>
@@ -126,7 +126,7 @@ OLE DB Error nesnesini temsil eden bir sınıf.
 
 Hata kaydından hata açıklaması dizesini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);
@@ -145,7 +145,7 @@ Hatayı açıklayan bir dizeye yönelik bir işaretçi.
 
 Hata kaydından hata GUID 'sini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 REFGUID GetErrorGUID(ERRORINFO& rCurError);
@@ -164,7 +164,7 @@ Hata için bir GUID başvurusu.
 
 Bir hata kaydından yardım bağlamı KIMLIĞINI alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 DWORD GetErrorHelpContext(ERRORINFO& rCurError);
@@ -183,7 +183,7 @@ Hatanın yardım bağlamı KIMLIĞI.
 
 Bir hata kaydındaki yardım dosyasının yol adını alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);
@@ -202,7 +202,7 @@ Hata için yardım dosyasının yol adını içeren bir dize işaretçisi.
 
 Hata kaydından hataya neden olan kaynak kodunu alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 LPOLESTR GetErrorSource(ERRORINFO& rCurError);
@@ -221,7 +221,7 @@ Hata için kaynak kodu içeren bir dize işaretçisi.
 
 OLE DB Error nesnesine bir kayıt ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
@@ -239,7 +239,7 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 
 Hata hakkında, dönüş kodu ve sağlayıcıya özgü hata numarası gibi temel bilgileri döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
@@ -254,7 +254,7 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 
 Özel bir hata nesnesindeki arabirime yönelik bir işaretçi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
@@ -270,7 +270,7 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 
 Belirtilen kayıt üzerinde bir [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimi işaretçisi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
@@ -286,7 +286,7 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 
 Hata parametrelerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
@@ -301,7 +301,7 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 
 OLE DB kaydı nesnesindeki kayıt sayısını döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetRecordCount )(ULONG *pcRecords);
@@ -315,7 +315,7 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 
 Bir hata kaydı dizisi.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CAtlArray< RecordClass > m_rgErrors;
