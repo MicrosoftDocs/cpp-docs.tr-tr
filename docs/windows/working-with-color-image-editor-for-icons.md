@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: Renklerle Çalışma'
+title: 'Nasıl yapılır: renklerle çalışma'
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.image.color
@@ -62,173 +62,173 @@ helpviewer_keywords:
 - images [C++], colors
 - colors [C++], inverting
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
-ms.openlocfilehash: c424d2e613c51f901def13c4bf42a066797cc65c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c9134fde9053f57f8848a37b1442728f6111c98
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387779"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502944"
 ---
-# <a name="how-to-work-with-color"></a>Nasıl yapılır: Renklerle Çalışma
+# <a name="how-to-work-with-color"></a>Nasıl yapılır: renklerle çalışma
 
-**Resim Düzenleyicisi** özellikle işleyen ve renk özelleştirme birçok özellik içerir. Bir ön plan veya arka plan rengini ayarlamak, sınırlanmış alanları rengi ile doldurmak veya bir rengi geçerli bir ön plan veya arka plan rengi olarak kullanılacak bir görüntü seçin. Araçlarını kullanabileceğiniz [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md) renk paletindeki açık griyi birlikte **renkleri** görüntüleri oluşturmak için pencere.
+**Görüntü Düzenleyicisi** , renkleri özellikle işleyen ve özelleştiren birçok özellik içerir. Bir ön plan veya arka plan rengi ayarlayabilir, sınırlı alanları renklerle doldurabilir veya geçerli ön plan veya arka plan rengi olarak kullanılacak görüntüde bir renk seçebilirsiniz. [Görüntü Düzenleyicisi araç çubuğundaki](./image-editor-for-icons.md) araçları, renkler oluşturmak için **renkler** penceresindeki renkler paleti ile birlikte kullanabilirsiniz.
 
-Tek renkli ve 16 renk görüntülerini tüm renkleri gösterilen **renkleri** palette **renkleri** penceresi. 16 standart renkler yanı sıra, kendi özel renkler oluşturabilirsiniz. Herhangi bir palet renkleri değiştirme, görüntü içinde karşılık gelen renk hemen değişir.
+Tek renkli ve 16 renkli görüntülerin tüm renkleri **renkler** penceresindeki **renkler** paletinde gösterilir. 16 standart renklerle birlikte kendi özel renklerinizi de oluşturabilirsiniz. Paletteki renklerden herhangi birini değiştirmek görüntüdeki ilgili rengi hemen değiştirecek.
 
-256-renk simgesi ve imleç görüntü ile çalışırken **renkleri** özelliğinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) kullanılır. Daha fazla bilgi için [256-renk simgesi veya imleci oluşturma](creating-a-256-color-icon-or-cursor-image-editor-for-icons.md).
+256 renkli simge ve imleç görüntüleriyle çalışırken, [Özellikler penceresi](/visualstudio/ide/reference/properties-window) **renkler** özelliği kullanılır. Daha fazla bilgi için bkz. [256 renkli bir simge veya Imleç oluşturma](./creating-an-icon-or-other-image-image-editor-for-icons.md).
 
-TRUE-Renk görüntülerini de oluşturulabilir. Ancak gerçek renk örnekleri tam palette görünmez **renkleri** penceresi; bunlar yalnızca ön plan veya arka plan renk göstergesi alanında görüntülenir. Doğru renk kullanılarak oluşturulur **özel renk seçici** iletişim kutusu.
+True-Color görüntüleri de oluşturulabilir. Ancak, **renkler** penceresinin tam paletinde gerçek renk örnekleri görünmez; Bunlar yalnızca ön plan veya arka plan rengi gösterge alanında görünürler. **Özel renk seçici** iletişim kutusu kullanılarak gerçek renkler oluşturulur.
 
-Disk üzerinde özelleştirilmiş renk paletlerini kaydetme ve bunları gerektiği şekilde yeniden yükleyin. En son kullanılan renk paletini kayıt defterine kaydedilen ve Visual Studio'yu yeniden başlattığınızda otomatik olarak yüklenir.
+Özelleştirilmiş renk paletlerini diskte kaydedebilir ve gerektiğinde yeniden yükleyebilirsiniz. En son kullandığınız renk paleti kayıt defterine kaydedilir ve Visual Studio 'Yu bir sonraki başlatmanızda otomatik olarak yüklenir.
 
-**Renkleri** penceresinde iki bölümü vardır:
+**Renkler** penceresinin iki bölümü vardır:
 
-- **Renkler paleti**, kullanabileceğiniz renkleri temsil eden renkli örnekleri dizisi. Grafik araçları kullanırken ön ve arka plan renkleri seçmek için örnekleri seçebilirsiniz.
+- Kullanabileceğiniz renkleri temsil eden renk örnekleri dizisi olan **renkler paleti**. Grafik araçlarını kullanırken ön plan ve arka plan renklerini seçmek için örnekleri seçebilirsiniz.
 
-- **Renk göstergesi**, ön ve arka plan renkleri ve ekran ve ters renk seçicileri gösterir.
+- Ekran ve ters renk için ön plan ve arka plan renklerini ve seçicileri gösteren **renk göstergesi**.
 
-   ![Renkler penceresini](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
-   **Renkleri** penceresi
+   ![Renkler penceresi](../windows/media/vccolorswindow.gif "vcColorsWindow")<br/>
+   **Renkler** penceresi
 
 > [!NOTE]
-> **Ekran rengi** ve **ters renk** araçlardır yalnızca simgeler ve İmleçler için kullanılabilir.
+> **Ekran rengi** ve **ters renk** araçları yalnızca simgeler ve imleçler için kullanılabilir.
 
-Kullanabileceğiniz **renkleri** penceresiyle [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md).
+[Görüntü Düzenleyicisi araç çubuğu](./image-editor-for-icons.md)ile **renkler** penceresini kullanabilirsiniz.
 
-- Görüntülenecek **renkleri** penceresinde sağ tıklatın bir **Resim Düzenleyicisi** bölmesinde seçin **renkler penceresini göster**, veya menüsüne gidin [görüntü](../windows/image-menu-image-editor-for-icons.md)  >  **Renkler penceresini göster**.
+- **Renkler** penceresini görüntülemek için, bir **Görüntü Düzenleyicisi** bölmesine sağ tıklayıp **renkleri göster penceresini**seçin ya da menü [görüntüsü](./image-editor-for-icons.md)  >  **renkler göster penceresini**seçin.
 
-- Gizlemek için **renkleri** penceresinde (Bu eylem sağlayacaktır pencereyi otomatik gizle kullanımda olmadığında) pencereyi sabitleme veya **Kapat** düğmesi.
+- **Renkler** penceresini gizlemek için pencereyi kaldırın (Bu eylem, kullanımda olmadığında pencerenin otomatik olarak gizlenmesi için) veya **Kapat** düğmesini seçmeyecektir.
 
-**Renkleri** paleti 16 standart renkler başlangıçta görüntüler. Görüntülenen renklerle kendi özel renkler de oluşturabilirsiniz. Ardından, kaydedin ve özelleştirilmiş renk paleti yükleyin.
+**Renkler** paleti başlangıçta 16 standart renk görüntüler. Görüntülenmiş renkler ile kendi özel renklerinizi de oluşturabilirsiniz. Ardından özelleştirilmiş bir renk paletini kaydedebilir ve yükleyebilirsiniz.
 
-**Özel renk seçici** iletişim kutusu, kullandığınız kadarı için aşağıdaki özelliklere sahip, görüntü renkleri özelleştirmek tanır:
+**Özel Renk Seçicisi** iletişim kutusu, görüntünüz için kullandığınız renkleri aşağıdaki özelliklerle özelleştirmenize olanak tanır:
 
 |Özellik|Açıklama|
 |--------------------------|--------------------------|
-|**Gradyan renk görüntüleme**|Seçili renk değerlerini değiştirir.<br/><br/>Artı işareti değiştirip kaydırıcı parlaklık veya rengin RGB değerleri değiştirmek için yukarı veya aşağı taşımak için istediğiniz rengi getirin.|
-|**Parlaklık Çubuğu**|Seçtiğiniz renk parlaklığını ayarlar **gradyan renkli görüntüyü** kutusu.<br/><br/>Büyük parlaklık için çıtayı yukarı beyaz oku sürükleyin ya da daha az aşağı. **Renk** kutusu seçtiğiniz rengi ve ayarladığınız parlaklık etkisini gösterir.|
-|**Renk**|Tanımlama renk tonunu (renk tekerleği değer) listeler. Burada 0 kırmızı, 60 sarı, 120 yeşil, mavi 180 olduğundan, 200 Eflatun ve 240 mavi 240 değerler aralığı 0.|
-|**Hue**|Tanımlama renk tonunu (renk tekerleği değer) listeler. Burada 0 kırmızı, 60 sarı, 120 yeşil, mavi 180 olduğundan, 200 Eflatun ve 240 mavi 240 değerler aralığı 0.|
-|**CTS**|Tanımlama renk doygunluğu değerini belirtir. Doygunluk belirtilen bir renk tonu rengi miktarıdır. Değerler aralığı 0-240.|
-|**Par**|Tanımlama renk parlaklığını (Parlaklık) listeler. Değerler aralığı 0-240.|
-|**Kırmızı**|Kırmızı, tanımlayacağınız renk değerini belirtir. Değerler aralığı 0-255.|
-|**Yeşil**|Yeşil, tanımlayacağınız renk değerini belirtir. Değerler aralığı 0-255.|
-|**Mavi**|Tanımlama rengini Mavi değerini belirtir. Değerler aralığı 0-255.|
+|**Gradyan rengi görüntüleme**|Seçilen rengin değerlerini değiştirir.<br/><br/>Rengin parlaklığını veya RGB değerlerini değiştirmek için değiştirmek istediğiniz renge çapraz artı işareti kaydırarak kaydırıcıyı yukarı veya aşağı taşıyın.|
+|**Parlaklık çubuğu**|**Degrade rengi görüntü** kutusunda seçtiğiniz rengin parlaklığını belirler.<br/><br/>Daha fazla parlaklık veya küçültme için çubuğa doğru beyaz oku seçin ve sürükleyin. **Renk** kutusu seçtiğiniz rengi ve belirlediğiniz renk parlaklığını etkiler.|
+|**Color**|Tanımladığınız rengin tonunu (renk tekerleği değeri) listeler. Değerler 0 ile 240 arasında değişir; burada 0 kırmızı, 60 sarı, 120 yeşil, 180, 200 siyan ve 240 mavi.|
+|**Renk**|Tanımladığınız rengin tonunu (renk tekerleği değeri) listeler. Değerler 0 ile 240 arasında değişir; burada 0 kırmızı, 60 sarı, 120 yeşil, 180, 200 siyan ve 240 mavi.|
+|**Cts**|Tanımladığınız rengin doygunluk değerini belirtir. Doygunluk, belirtilen bir tondaki renk miktarıdır. Değerler 0 ile 240 arasındadır.|
+|**Lum**|Tanımladığınız rengin parlaklığını (parlaklığını) listeler. Değerler 0 ile 240 arasındadır.|
+|**Kırmızı**|Tanımladığınız rengin kırmızı değerini belirtir. Değerler 0 ile 255 arasındadır.|
+|**Yeşil**|Tanımladığınız rengin yeşil değerini belirtir. Değerler 0 ile 255 arasındadır.|
+|**Mavi**|Tanımladığınız rengin mavi değerini belirtir. Değerler 0 ile 255 arasındadır.|
 
-Kaydet ve yük bir **renkleri** içeren özelleştirilmiş renkler paleti. Varsayılan olarak, **renkleri** en son kullanılan palet Visual Studio'yu başlattığınızda otomatik olarak yüklenir.
+Özelleştirilmiş renkler içeren bir **renkler** paletini kaydedebilir ve yükleyebilirsiniz. Varsayılan olarak, en son kullanılan **renkler** paleti Visual Studio 'yu başlattığınızda otomatik olarak yüklenir.
 
 > [!TIP]
-> Bu yana **Resim Düzenleyicisi** anlamına gelir Varsayılanı geri yüklemek için sahip **renkleri** paleti varsayılan kaydetmelisiniz **renkleri** palet gibi bir ad altında  *Standard.PAL* veya *default.pal* böylece bir kolayca varsayılan ayarları geri yükleyebilirsiniz.
+> **Görüntü Düzenleyicisi** 'Nin varsayılan **renkler** paletini geri yükleme yolu olmadığından, varsayılan ayarları kolayca geri yükleyebilmeniz için *Standart. PAL* veya *default. PAL* gibi bir ad altında varsayılan **renkler** paletini kaydetmelisiniz.
 
-Kullanma **palet renkleri Yükle** iletişim kutusunda, aşağıdaki özelliklere sahip C++ projesinde kullanmak için özel renk paletlerini yüklemek için:
+C++ projenizde aşağıdaki özelliklerle kullanmak üzere özel renk paletleri yüklemek için **Palet renklerini yükle** iletişim kutusunu kullanın:
 
 |Özellik|Açıklama|
 |-----------------|-----------------|
-|**İçine bak**|Bir dosya veya klasörü bulmak için istediğiniz konumu belirtir.<br/><br/>Başka bir konum seçmek için oku seçin veya düzeyleri yukarı taşımak için araç çubuğundaki klasör simgesini seçin.|
-|**Dosya adı**|Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar.<br/><br/>Hızlıca önceden açmış olduğunuz dosyayı bulmak için varsa aşağı açılan listede, dosya adı seçin.<br/><br/>Bir dosya için arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, yazabilirsiniz \*.\* tüm dosyaların listesini görmek için. Örneğin, bir dosyanın tam yolunu yazabilirsiniz *C:\My Documents\MyColorPalette.pal* veya  *\\\NetworkServer\MyFolder\MyColorPalette.pal*.|
-|**Dosya türü**|Görüntülenecek dosya türlerini listeler.<br/><br/>Palet (* .pal) renk paletlerini için varsayılan dosya türüdür.|
+|**Arama yeri**|Dosya veya klasörü bulmak istediğiniz konumu belirtir.<br/><br/>Başka bir konum seçmek için oku seçin veya araç çubuğundaki klasör simgesini seçerek düzeyleri taşıyın.|
+|**Dosya adı**|Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar.<br/><br/>Daha önce açtığınız bir dosyayı hızlıca bulmak için, varsa açılan listede dosya adını seçin.<br/><br/>Bir dosya arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, \* \* tüm dosyaların listesini görmek için. yazabilirsiniz. Bir dosyanın tam yolunu da yazabilirsiniz, örneğin, *C:\belgelerim\mycolorpalette.exe* veya * \\ \Networkserver\myfolder\mycolorpalette.exe*.|
+|**Dosya türü**|Görüntülenecek dosya türlerini listeler.<br/><br/>Palet (*. PAL), renk paletleri için varsayılan dosya türüdür.|
 
-## <a name="how-to"></a>Nasıl Yapılır
+## <a name="how-to"></a>Nasıl yapılır
 
-### <a name="to-select-foreground-or-background-colors"></a>Ön plan veya arka plan renklerini seçin
+### <a name="to-select-foreground-or-background-colors"></a>Ön plan veya arka plan renklerini seçmek için
 
-Dışında **Silgi**, Araçlar **Resim Düzenleyicisi** araç çubuğu çizim sırasıyla sol veya sağ fare düğmesine bastığınızda geçerli ön plan veya arka plan rengi.
+**Silgi**haricinde, **Görüntü Düzenleyicisi** araç çubuğundaki Araçlar, sırasıyla sol veya sağ fare düğmesine bastığınızda geçerli ön plan veya arka plan rengiyle çizilir.
 
-- Ön plan rengi, farenin sol düğmesiyle seçmek için istediğiniz rengi seçin **renkleri** palet.
+- Bir ön plan rengi seçmek için, sol fare düğmesi ile **renkler** paletinde istediğiniz rengi seçin.
 
-- Arka plan rengi, farenin sağ düğmesiyle seçmek için istediğiniz rengi seçin **renkleri** palet.
+- Bir arka plan rengi seçmek için, sağ fare düğmesiyle, **renkler** paletinde istediğiniz rengi seçin.
 
-### <a name="to-fill-a-bounded-area-of-an-image-with-a-color"></a>Görüntünün sınırlı bir alanını renkle doldurmak için
+### <a name="to-fill-a-bounded-area-of-an-image-with-a-color"></a>Görüntünün sınırlı bir alanını renkle dolduracak şekilde
 
-**Resim Düzenleyicisi** sağlar **dolgu** herhangi doldurma aracı geçerli çizim rengini veya arka plan rengi geçerli görüntü alanını alınmış.
+**Görüntü Düzenleyicisi** , geçerli çizim rengine veya geçerli arka plan rengine sahip herhangi bir çevrelenmiş görüntü alanını doldurmak için **doldurma** aracı sağlar.
 
-### <a name="to-use-the-fill-tool"></a>Dolgu aracı kullanmak için
+### <a name="to-use-the-fill-tool"></a>Fill aracını kullanmak için
 
-1. Kullanım **Resim Düzenleyicisi** araç ya da menü **görüntü** > **Araçları** seçip **doldurun** aracı.
+1. **Görüntü Düzenleyicisi** araç çubuğunu kullanın veya menü **görüntüsü**  >  **araçları** ' na gidip **Fill** aracını seçin.
 
-1. Gerekirse, renkler çizim seçin. İçinde [renkler paleti](../windows/colors-window-image-editor-for-icons.md), ön plan rengi seçmesini farenin sol düğmesine veya arka plan rengi seçmek için sağ fare düğmesini seçin.
+1. Gerekirse, çizim renkleri ' ni seçin. [Renkler paletinde](./image-editor-for-icons.md), arka plan rengi seçmek için bir ön plan rengi veya sağ fare düğmesini seçmek üzere sol fare düğmesini seçin.
 
-1. Taşıma **dolgu** doldurmak istediğiniz alanı için aracı.
+1. **Fill** aracını, doldurmasını istediğiniz alana taşıyın.
 
-1. Sırasıyla ön plan rengini veya arka plan rengi ile doldurmak için sol veya sağ fare düğmesini seçin.
+1. Sırasıyla, ön plan rengiyle veya arka plan rengiyle doldurulacak olan sol veya sağ fare düğmesini seçin.
 
-### <a name="to-pick-up-a-color-from-an-image-to-use-elsewhere"></a>Başka bir yerde kullanmak üzere görüntüden renk seçmek için
+### <a name="to-pick-up-a-color-from-an-image-to-use-elsewhere"></a>Başka bir yerde kullanmak üzere görüntüden renk almak için
 
-**Rengi seçin**, veya geçerli ön plan rengini veya arka plan rengi, sol veya sağ fare düğmesine basın olup olmadığına bağlı olarak, aracı-alma, renk görüntünün üzerinde herhangi bir renk yapar. İptal etmek için **rengi seçin** aracı, başka bir aracı seçin.
+**Seçme rengi**veya renk toplama, araç, sol veya sağ fare düğmesine basmanıza bağlı olarak, görüntüde geçerli ön plan rengi veya arka plan rengi üzerinde herhangi bir renk sağlar. **Renk seç** aracını iptal etmek için başka bir araç seçin.
 
-1. Kullanım **Resim Düzenleyicisi** araç ya da menü **görüntü** > **Araçları** seçip **rengi seçin** aracı.
+1. **Görüntü Düzenleyicisi** araç çubuğunu kullanın veya menü **görüntüsü**  >  **araçları** ' na gidin ve **renk seç** aracını seçin.
 
-1. Görüntüyü almak istediğiniz rengi seçin.
+1. Görüntüden almak istediğiniz rengi seçin.
 
    > [!NOTE]
-   > Renk, seçin sonra **Resim Düzenleyicisi** yeniden etkinleştirir en son kullanılan araç.
+   > Bir renk seçtikten sonra, **Görüntü Düzenleyicisi** en son kullanılan aracı yeniden etkinleştirir.
 
-1. Ön plan rengini veya arka plan rengi sağ fare düğmesi için sol fare düğmesini kullanarak çizin.
+1. Ön plan rengi için sol fare düğmesini veya arka plan rengi için sağ fare düğmesini kullanarak çizin.
 
-### <a name="to-choose-the-background"></a>Arka plan seçme
+### <a name="to-choose-the-background"></a>Arka planı seçmek için
 
-Taşıdığınızda veya bir görüntüden bir seçimi Kopyala Geçerli arka plan rengiyle uyuşan pikselleri seçimdeki, varsayılan olarak, saydam olan ve hedef konum piksellerde gizlememeniz yok.
+Bir görüntüden seçim yaptığınızda veya bir seçimi kopyaladığınızda, seçimdeki geçerli arka plan rengiyle eşleşen tüm pikseller varsayılan olarak saydamdır ve hedef konumda renkleri gizlemiyor.
 
-Donuk bir arka plan için saydam bir arka planından (varsayılan) geçin ve yeniden. Bir seçim aracını kullandığınızda **saydam arka plan** ve **donuk arka plan** seçenekleri görünür **seçeneği** seçicisinde **GörüntüDüzenleyicisi** araç çubuğu.
+Saydam bir arka planda (varsayılan) donuk bir arka plana geçiş yapabilir ve yeniden geri dönebilirsiniz. Seçim aracı kullandığınızda, **saydam arka plan** ve **donuk arka plan** seçenekleri **Görüntü Düzenleyicisi** araç çubuğundaki **seçenek** seçicisinde görüntülenir.
 
-![Arka plan seçeneklerini &#45; opak ya da şeffaf](../windows/media/vcimageeditoropaqtranspback.gif "arka plan seçeneklerini &#45; opak ya da şeffaf")<br/>
-**Saydam ve donuk seçenekleri** üzerinde **Resim Düzenleyicisi araç çubuğu**
+![Arka plan seçenekleri donuk veya saydam &#45;](../windows/media/vcimageeditoropaqtranspback.gif "Arka plan seçenekleri donuk veya saydam &#45;")<br/>
+**Görüntü Düzenleyicisi araç çubuğundaki** **saydam ve donuk seçenekler**
 
 #### <a name="to-switch-between-a-transparent-and-opaque-background"></a>Saydam ve donuk arka plan arasında geçiş yapmak için
 
-İçinde **Resim Düzenleyicisi** araç, select **seçeneği** Seçici, uygun arka plan seçin:
+**Görüntü Düzenleyicisi** araç çubuğunda, **seçenek** seçicisini seçin ve ardından uygun arka planı seçin:
 
-- **Donuk arka plan (O)**: Mevcut görüntü seçimi tüm bölümleri tarafından engellenmesidir.
+- **Donuk arka plan (O)**: varolan görüntü, seçimin tüm bölümleri tarafından görünmez.
 
-- **Saydam arka plan (T)**: Mevcut görüntü seçimin geçerli arka plan rengiyle uyuşan parçaları gösterilmektedir.
+- **Saydam arka plan (T)**: mevcut görüntü, seçimin geçerli arka plan rengiyle eşleşen parçalarını gösterir.
 
 > [!TIP]
-> Bir kısayol üzerinde **görüntü** menüsünü seçin veya temizleyin **çizmek opak**.
+> Bir kısayol için **görüntü** menüsünde **Donuk Çiz**' i seçin veya temizleyin.
 
-Bir seçim hangi parçalarının resminin saydam değiştirmek için etkin durumdayken arka plan rengini değiştirebilirsiniz.
+Görüntünün hangi bölümlerinin saydam olduğunu değiştirmek için seçim zaten etkin durumdayken arka plan rengini değiştirebilirsiniz.
 
 ### <a name="to-invert-the-colors-in-a-selection"></a>Seçimdeki renkleri ters çevirmek için
 
-**Resim Düzenleyicisi** görüntü ters renklerle nasıl görüneceği söyleyebilirsiniz. böylece, seçili bir görüntünün parçası olarak renkleri ters çevir için kullanışlı bir yol sağlar.
+Görüntü **Düzenleyicisi** görüntünün seçili bölümündeki renkleri ters çevirmek için kullanışlı bir yol sağlar, böylece bir görüntünün ters renklerle nasıl görüneceğini söyleyebilirsiniz.
 
-Geçerli seçimdeki renkleri ters çevir için menüsüne gidin **görüntü** > **renkleri**.
+Geçerli seçimdeki renkleri ters çevirmek için menü **görüntüsü**  >  **renkleri ters çevir**' e gidin.
 
-### <a name="to-customize-or-change-colors-on-the-colors-palette"></a>Renkler paleti renkleri değiştirmek veya özelleştirmek
+### <a name="to-customize-or-change-colors-on-the-colors-palette"></a>Renkler paletindeki renkleri özelleştirmek veya değiştirmek için
 
-1. Menü Git **görüntü** > **renkleri Ayarla**.
+1. Menü **görüntüsü**  >  **renkleri ayarla**' ya gidin.
 
-1. İçinde **özel renk seçici** iletişim kutusunda rengin RGB veya HSL değerleri ilgili metin kutularına yazarak tanımlayın veya bir renk seçin **gradyan renkli görüntüyü** kutusu.
+1. **Özel Renk Seçicisi** iletişim kutusunda, uygun metın kutularına RGB veya HSL değerlerini yazarak rengi tanımlayın veya **degrade rengi görüntü** kutusunda bir renk seçin.
 
-1. Kaydırıcıyı hareket ettirerek parlaklık ayarlamak **parlaklık** çubuğu.
+1. Kaydırıcıyı **parlaklık** çubuğuna taşıyarak parlaklığı ayarlayın.
 
-1. Birçok özel renkler Titrek. Düz renk Titremeli renk en yakın istiyorsanız çift **renk** kutusu.
+1. Birçok özel renk titremeli ' dir. Düz rengin titremeli rengine en yakın olmasını istiyorsanız **renk** kutusuna çift tıklayın.
 
-   Titremeli renk istediğiniz daha sonra karar verirseniz, kaydırıcıyı taşıyın **parlaklık** çubuk veya işaretçileri taşıma **gradyan renkli görüntüyü** renk paleti öykünmesi yeniden yüklemeyi kutusu.
+   Daha sonra titremeli rengini istediğinize karar verirseniz, renk parlaklığını geri yüklemek için kaydırıcıyı **parlaklık** çubuğunun üzerine taşıyın veya **gradyan renk görüntüleme** kutusundaki ince artı işareti kaydırın.
 
-1. Seçin **Tamam** rengi ekleyin.
+1. Yeni rengi eklemek için **Tamam ' ı** seçin.
 
-### <a name="to-save-a-custom-colors-palette"></a>Özel renkler paleti kaydetmek için
+### <a name="to-save-a-custom-colors-palette"></a>Özel renk paleti kaydetmek için
 
-1. Menü Git **görüntü** > **Kaydet palet**.
+1. Menü **resmi**  >  **kaydetme paleti**' ne gidin.
 
-1. Palet kaydetmek istediğiniz dizine gidin ve palet için bir ad yazın.
+1. Paleti kaydetmek istediğiniz dizine gidin ve palet için bir ad yazın.
 
-1. **Kaydet**’i seçin.
+1. **Kaydet**'i seçin.
 
-### <a name="to-load-a-custom-colors-palette"></a>Özel renkler paleti yüklemek için
+### <a name="to-load-a-custom-colors-palette"></a>Özel renk paleti yüklemek için
 
-1. Menü Git **görüntü** > **palet Yükle**.
+1. Menü **resmi**  >  **Yükleme paleti**' ne gidin.
 
-1. İçinde **renk paletini yük** iletişim kutusunda doğru dizine gidin ve yüklemek istediğiniz paletini seçin. **Renk** paletleri .pal dosya uzantısıyla kaydedilir.
+1. **Renk paleti Yükle** iletişim kutusunda doğru dizine gidin ve yüklemek istediğiniz paleti seçin. **Renk** paletleri. pal dosya uzantısıyla kaydedilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok.
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Simge veya Başka Görüntü Oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Görüntü Kopyalama](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
-[Nasıl yapılır: Çizim Aracı Kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
-[Hızlandırıcı Tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
+[Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)<br/>
+[Nasıl yapılır: simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: görüntü düzenleme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)<br/>
+[Nasıl yapılır: çizim aracını kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md)<br/>
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>

@@ -137,18 +137,18 @@ helpviewer_keywords:
 - std::unordered_set::size
 - std::unordered_set::swap
 ms.assetid: ac08084e-05a7-48c0-9ae4-d40c529922dd
-ms.openlocfilehash: 396465b24e9d7cf0facbe324c7b01479fe8e9b6b
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0feff4e595be7929fd0bc80eb53a0a65a9a61f43
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040047"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502964"
 ---
 # <a name="unordered_set-class"></a>unordered_set Sınıfı
 
 Sınıf şablonu, türünde öğelerin değişen uzunluklu dizisini denetleyen bir nesneyi tanımlar `const Key` . Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her demet içinde, bir karşılaştırma işlevi herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirler. Her bir öğe hem bir sıralama anahtarı hem de bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Bir öğe eklendiğinde yineleyiciler yok olur ve bir öğeyi kaldırmak yalnızca kaldırılan öğeyi işaret eden yineleyiciler geçersiz kılar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -214,7 +214,7 @@ Ayırıcı sınıf.
 |[erer](#end)|Denetlenen dizinin bitişini belirtir.|
 |[equal_range](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|
 |[silme](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|
-|[find](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
+|[bilgi](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|
 |[ekleyin](#insert)|Öğeleri ekler.|
@@ -894,7 +894,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theUnorderedSet.contains(2) << '\n';
     std::cout << theUnorderedSet.contains(3) << '\n';
-    
+
     return 0;
 }
 ```

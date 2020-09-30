@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - ^ handle to object [C++]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
-ms.openlocfilehash: f09fd5f112e3538fa2d7fb04c755031d413de9b8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c8927ef0e34f2c2b12722d453e0dde6f7357eb33
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225156"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503140"
 ---
 # <a name="handle-to-object-operator---ccli-and-ccx"></a>İşlenecek Nesne İşleci (^) (C++/CLI ve C++/CX)
 
-*Tanıtıcı bildirimci* ( `^` , "hat"), tür [belirticisini](../cpp/overview-of-declarators.md) , sistem nesnenin artık erişilebilir olmadığını belirlediğinde, belirtilen nesnenin otomatik olarak silinmesi gerektiği anlamına gelir.
+*Tanıtıcı bildirimci* ( `^` , "hat"), tür [belirticisini](../cpp/declarations-and-definitions-cpp.md) , sistem nesnenin artık erişilebilir olmadığını belirlediğinde, belirtilen nesnenin otomatik olarak silinmesi gerektiği anlamına gelir.
 
 ## <a name="accessing-the-declared-object"></a>Belirtilen nesneye erişme
 
@@ -30,7 +30,7 @@ Bir nesnenin örneğini oluşturma hakkında daha fazla bilgi için bkz. [Yeni b
 
 ## <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -219,7 +219,7 @@ int main() {
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

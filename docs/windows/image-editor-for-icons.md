@@ -1,5 +1,5 @@
 ---
-title: Simgeler (C++) Için görüntü Düzenleyicisi
+title: Simgeler için görüntü Düzenleyicisi (C++)
 ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.cursor.F1
@@ -39,14 +39,14 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: 47798b5d628484482dffdc963d6e8c7a809f42ee
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bb028833aa0e9f0615ec7575dbe41feb173efedb
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168022"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504384"
 ---
-# <a name="image-editor-for-icons-c"></a>Simgeler (C++) Için görüntü Düzenleyicisi
+# <a name="image-editor-for-icons-c"></a>Simgeler için görüntü Düzenleyicisi (C++)
 
 **Çözüm Gezgini**' de bir görüntü dosyası (. ico,. bmp,. png gibi) seçtiğinizde, görüntü, kod **Düzenleyicisi**'nde kod dosyalarının açtığı şekilde **görüntü düzenleyicisinde** açılır. Bir **Görüntü Düzenleyicisi** sekmesi etkin olduğunda, görüntü oluşturma ve düzenleme için birçok araç içeren araç çubuklarını görürsünüz. Bit eşlemler, simgeler ve imleçlerle birlikte, resim **Düzenleyicisi** araç çubuğundaki **görüntü** menüsü ve araçlar 'daki komutları kullanarak GIF veya JPEG biçimindeki görüntüleri düzenleyebilirsiniz.
 
@@ -57,7 +57,7 @@ Grafik kaynakları, uygulamanız için tanımladığınız görüntülerdir. Şe
 
 Yönetilen projelerde kaynak dosyalarıyla çalışmak için **resim düzenleyicisini** ve [ikili düzenleyiciyi](binary-editor.md) de kullanabilirsiniz. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri gömülü kaynakları düzenlemenizi desteklemez.
 
-Yeni grafik kaynakları oluşturmaya ek olarak, [var olan görüntüleri](../windows/how-to-copy-resources.md#import-and-export-resources) düzenleyebilir ve ardından projenize ekleyebilirsiniz. Ayrıca, [tek başına görüntü düzenleme](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)için bir projenin parçası olmayan görüntüleri açabilir ve düzenleyebilirsiniz.
+Yeni grafik kaynakları oluşturmaya ek olarak, [var olan görüntüleri](../windows/how-to-copy-resources.md#import-and-export-resources) düzenleyebilir ve ardından projenize ekleyebilirsiniz. Ayrıca, [tek başına görüntü düzenleme](./selecting-an-area-of-an-image-image-editor-for-icons.md)için bir projenin parçası olmayan görüntüleri açabilir ve düzenleyebilirsiniz.
 
 **Görüntü Düzenleyicisi**hakkında daha fazla bilgi için bkz. [bir simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [görüntü düzenleme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Çizim Aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md), [renk ile çalışma](../windows/working-with-color-image-editor-for-icons.md)ve [hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md).
 
@@ -81,10 +81,10 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 |**Palet Yükle**|Daha önce bir. pal dosyasına kaydedilen palet **renklerini yükleyebilirsiniz.**|
 |**Paleti Kaydet**|Palet renklerini bir. pal dosyasına kaydeder.|
 |**Donuk Çiz**|Seçildiğinde, geçerli seçimi donuk hale getirir.<br/><br/>Kaldırıldığında, geçerli seçimi saydam hale getirir.|
-|**Araç Çubuğu Düzenleyicisi**|[Yeni araç çubuğu kaynağı iletişim kutusunu](../windows/new-toolbar-resource-dialog-box.md)açar.|
+|**Araç Çubuğu Düzenleyicisi**|[Yeni araç çubuğu kaynağı iletişim kutusunu](./toolbar-editor.md)açar.|
 |**Kılavuz ayarları**|Görüntünüzün kılavuzlarını belirtebileceğiniz **Kılavuz ayarları** iletişim kutusunu açar.|
-|**Yeni görüntü türü**|[Yeni \<cihaz > görüntü türü iletişim kutusunu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)açar.<br/><br/>Tek bir simge kaynağı farklı boyutlarda birkaç görüntü içerebilir ve Windows, nasıl görüntüleneceklerinize bağlı olarak uygun simge boyutunu kullanabilir. Yeni bir cihaz türü simgenin boyutunu değiştirmez, bunun yerine simgenin içinde yeni bir görüntü oluşturur. Yalnızca simgeler ve imleçler için geçerlidir.|
-|**Geçerli simge/Imleç resim türü**|Kullanılabilir ilk dokuz imleç veya simge görüntüsünü listeleyen bir alt menü açar. Alt menüdeki son komut, **daha fazla** [\<cihaz > görüntüsünü Aç iletişim kutusunu](../windows/open-device-image-dialog-box-image-editor-for-icons.md)açar.|
+|**Yeni görüntü türü**|[Yeni \<Device> görüntü türü iletişim kutusunu](./creating-an-icon-or-other-image-image-editor-for-icons.md)açar.<br/><br/>Tek bir simge kaynağı farklı boyutlarda birkaç görüntü içerebilir ve Windows, nasıl görüntüleneceklerinize bağlı olarak uygun simge boyutunu kullanabilir. Yeni bir cihaz türü simgenin boyutunu değiştirmez, bunun yerine simgenin içinde yeni bir görüntü oluşturur. Yalnızca simgeler ve imleçler için geçerlidir.|
+|**Geçerli simge/Imleç resim türü**|Kullanılabilir ilk dokuz imleç veya simge görüntüsünü listeleyen bir alt menü açar. Alt menüdeki son komut, **daha fazla** [ \<Device> Görüntü Aç iletişim kutusunu](./creating-an-icon-or-other-image-image-editor-for-icons.md)açar.|
 |**Görüntü türünü sil**|Seçili cihaz görüntüsünü siler.|
 |**Araçlar**|**Görüntü Düzenleyicisi** araç çubuğundan kullanılabilen tüm araçları içeren bir alt menü başlatır.|
 
@@ -101,7 +101,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 **Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünümleri düzenleme araçlarını içerir. Ayrıca, her bir aracı kullanma seçeneklerini seçebileceğiniz bir seçenek seçici de içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve çizgi stilleri arasından seçim yapabilirsiniz.
 
-**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü** > **araçları**' ndan da kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
+**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü**  >  **araçlarından**de kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
 
 ![Görüntü Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "Vcımageeditortoolbar")<br/>
 **Görüntü Düzenleyicisi** araç çubuğu
@@ -111,7 +111,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 [Klavyede](../windows/accelerator-keys-image-editor-for-icons.md)birçok çizim aracı kullanılabilir olduğundan, bazen **resim Düzenleyicisi** araç çubuğunu gizlemek yararlı olur.
 
-- **Görüntü Düzenleyicisi** araç çubuğunu görüntülemek veya gizlemek Için menü **görünümü** > **araç çubukları** ' na gidin ve **Görüntü Düzenleyicisi**' ni seçin.
+- **Görüntü Düzenleyicisi** araç çubuğunu görüntülemek veya gizlemek için menü **Görünüm**  >  **araç çubukları** ' na gidin ve **Görüntü Düzenleyicisi**' ni seçin.
 
 > [!NOTE]
 > Geçerli projeden veya çözümden bir görüntü dosyası **görüntü düzenleyicisinde**açık olmadığında, bu araç çubuğundan öğeler kullanılamaz görünür.
@@ -120,14 +120,14 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 **Seçenek** seçiciyle bir çizginin genişliğini, fırça darbesini ve daha fazlasını belirtebilirsiniz. **Seçenek** seçici düğmesindeki simge, seçtiğiniz araca bağlı olarak değişir.
 
-![Resim&#45;Düzenleyicisi araç çubuğunda şekil Seçicisi çizme](../mfc/media/vcimageeditortoolbaroptionselector.gif "Vcımageeditortoolbaroptionselector")<br/>
+![Resim Düzenleyicisi araç çubuğunda şekil&#45;şekil Seçicisi çizme](../mfc/media/vcimageeditortoolbaroptionselector.gif "Vcımageeditortoolbaroptionselector")<br/>
 **Görüntü Düzenleyicisi** araç çubuğundaki **seçenek** seçici
 
 ### <a name="text-tool"></a>Metin aracı
 
 Bir imlece, bit eşlem ya da simge kaynağına metin eklemek için **metin aracı** iletişim kutusunu kullanın.
 
-Bu iletişim kutusuna erişmek için, **görüntü düzenleyicisini** açın ve menü **görüntüsü** > **Araçlar**' a gidin ve **metin aracı** komutunu seçin.
+Bu iletişim kutusuna erişmek için, **görüntü düzenleyicisini** açın ve menü **görüntüsü**  >  **araçları**' na gidin ve **metin aracı** komutunu seçin.
 
 > [!TIP]
 > Standart Windows komutlarının bir listesini içeren bir varsayılan kısayol menüsüne erişmek için **metin aracı** iletişim kutusuna sağ tıklayabilirsiniz.
@@ -138,7 +138,7 @@ Bu iletişim kutusuna erişmek için **metin aracı** Iletişim kutusunda **yaz�
 
 |Özellik|Açıklama|
 |---|---|
-|**Yazý**|Kullanılabilir yazı tiplerini listeler.|
+|**Yazı tipi**|Kullanılabilir yazı tiplerini listeler.|
 |**Yazı tipi stili**|Belirtilen yazı tipi için kullanılabilir stilleri listeler.|
 |**Boyut**|Belirtilen yazı tipi için kullanılabilir nokta boyutlarını listeler.|
 |**Örnek**|Metnin, belirtilen yazı tipi ayarlarıyla nasıl görüneceğini gösteren bir örnek gösterir.|
@@ -148,13 +148,13 @@ Bu iletişim kutusuna erişmek için **metin aracı** Iletişim kutusunda **yaz�
 
 Aşağıda, bir Windows uygulamasındaki simgeye metin ekleme ve metninizin yazı tipini değiştirme örnekleri verilmiştir.
 
-1. C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz. [nasıl yapılır: oluşturma Windows Forms uygulamalar](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90)). Varsayılan olarak projenize bir *app. ico* dosyası eklenir.
+1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz. [nasıl yapılır: oluşturma Windows Forms uygulamalar](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90)). Varsayılan olarak projenize bir *app. ico* dosyası eklenir.
 
 1. **Çözüm Gezgini**' de *app. ico*dosyasına çift tıklayın. **Görüntü Düzenleyicisi** açılır.
 
-1. Menü **görüntüsü** > **Araçlar** ' a gidin ve **metin aracı**' nı seçin.
+1. Menü **görüntü**  >  **araçları** ' na gidin ve **metin aracı**' nı seçin.
 
-1. **Metin aracı** iletişim kutusunda boş metin alanına yazın *C++* . Bu metin, **görüntü düzenleyicisinde** *app. ico* öğesinin sol üst köşesinde bulunan yeniden boyutlandırılabilir bir kutu içinde görüntülenir.
+1. **Metin aracı** iletişim kutusunda, boş metin alanına *C++* yazın. Bu metin, **görüntü düzenleyicisinde** *app. ico* öğesinin sol üst köşesinde bulunan yeniden boyutlandırılabilir bir kutu içinde görüntülenir.
 
 1. **Görüntü düzenleyicisinde**, metninizin okunabilirliğini geliştirmek için yeniden boyutlandırılabilir kutusunu *app. ico* ' ın ortasına sürükleyin.
 
@@ -168,7 +168,7 @@ Aşağıda, bir Windows uygulamasındaki simgeye metin ekleme ve metninizin yaz�
 
    - **Boyut** liste kutusunda listelenen kullanılabilir nokta boyutları listesinden **10** ' u seçin.
 
-   - **Tamam**’ı seçin. **Metin aracı yazı tipi** iletişim kutusu kapanır ve yeni yazı tipi ayarları metninizi uygular.
+   - **Tamam ' ı**seçin. **Metin aracı yazı tipi** iletişim kutusu kapanır ve yeni yazı tipi ayarları metninizi uygular.
 
 1. **Metin aracı** Iletişim kutusunda **Kapat** ' ı seçin. Metninizin çevresindeki yeniden boyutlandırılabilir kutu, **görüntü düzenleyicisinden**kaybolacaktır.
 
@@ -206,7 +206,7 @@ Varsayılan olarak, **Görüntü Düzenleyicisi** gerçek boyutun sol bölmesind
 
 4 veya daha büyük bir büyütme faktörü içeren tüm **görüntü düzenleyici** bölmeleri için görüntüdeki tek pikselleri sınırlandıran bir kılavuz görüntüleyebilirsiniz.
 
-1. Menü **görüntüsü** > **Kılavuz ayarları**' na gidin.
+1. Menü **resmi**  >  **Kılavuz ayarları**' na gidin.
 
 1. Kılavuzu göstermek için **piksel Kılavuzu** onay kutusunu seçin veya kılavuzu gizlemek için kutuyu temizleyin.
 
@@ -216,5 +216,5 @@ Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
+[Kaynak düzenleyicileri](../windows/resource-editors.md)<br/>
 [Simgeler](/windows/win32/menurc/icons)

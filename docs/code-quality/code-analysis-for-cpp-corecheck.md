@@ -5,16 +5,16 @@ ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
-ms.openlocfilehash: e85ce8baed9a1ef39e0ab759ab86a5b570a42fa6
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: a4dc50395a1da0eda68148123651123cf1607184
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389954"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503382"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Temel Yönergeleri denetleyicisi başvurusu
 
-Bu bölümde C++ Temel Yönergeleri denetleyicisi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](/cpp/build/reference/analyze-code-analysis) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Bu bölümde C++ Temel Yönergeleri denetleyicisi uyarıları listelenmektedir. Kod Analizi hakkında daha fazla bilgi için bkz. [ `/analyze` (kod analizi)](../build/reference/analyze-code-analysis.md) ve [hızlı başlangıç: C/C++ için kod analizi](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Bazı uyarılar birden fazla gruba aittir ve tüm uyarıların tamamı bir başvuru konusuna sahip değildir.
@@ -196,7 +196,7 @@ Bu işlev çağrısı *işlevi* , `constexpr` derleme zamanı değerlendirmesi i
 Dilimlemeyin. Bkz [. C++ temel YÖNERGELERI es. 63](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es63-dont-slice).
 
 [C26465 NO_CONST_CAST_UNNECESSARY](c26465.md)\
-`const_cast`Dönüştürmek için kullanmayın `const` . `const_cast`gerekli değildir; sabitlik veya Vola, bu dönüşüm tarafından kaldırılmıyor. Bkz [. C++ temel yönergeleri türü. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).
+`const_cast`Dönüştürmek için kullanmayın `const` . `const_cast` gerekli değildir; sabitlik veya Vola, bu dönüşüm tarafından kaldırılmıyor. Bkz [. C++ temel yönergeleri türü. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).
 
 [C26466 NO_STATIC_DOWNCAST_POLYMORPHIC](c26466.md)\
 Küçük işlemleri kullanmayın `static_cast` . Polimorfik bir türden dönüştürme dynamic_cast kullanmalıdır. [C++ temel yönergeleri türü. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast)' ye bakın.
@@ -264,7 +264,7 @@ Bkz [. C++ temel yönergeleri GSL. View: views](https://github.com/isocpp/CppCor
 `gsl::finally`Son eylem amaçlanıyorsa kullanmayı düşünün. Bkz. [C++ temel yönergeleri: GSL. util: Utilities](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md)\
-`gsl::span`Aksi `std::string_view` , geçici bir değer geçersiz kılınmadıysa geçersiz olur. Bkz. [C++ temel yönergeleri: GSL. View: views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+`gsl::span` Aksi `std::string_view` , geçici bir değer geçersiz kılınmadıysa geçersiz olur. Bkz. [C++ temel yönergeleri: GSL. View: views](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
 
 ## <a name="deprecated-warnings"></a>Kullanım dışı uyarıları
 

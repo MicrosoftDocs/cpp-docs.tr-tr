@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - db_accessor attribute
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-ms.openlocfilehash: 559838201e3d1c425b6b1bf7f3650d9635c44c97
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2a4c5475007cbc516f1a06c6bf858089ba24311f
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833146"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503562"
 ---
 # <a name="db_accessor"></a>db_accessor
 
 `db_column`Tabanlı bağlamaya katılan öznitelikleri gruplandırır `IAccessor` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ db_accessor(num, auto) ]
@@ -25,15 +25,15 @@ ms.locfileid: "88833146"
 
 #### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*numaraları*<br/>
 Erişimci numarasını belirtir (sıfır tabanlı bir tamsayı dizini). Erişimci numaralarını, tamsayılar veya tanımlanmış değerler kullanarak artan sırada belirtmeniz gerekir.
 
-*auto*<br/>
+*Otomatik*<br/>
 Erişimcinin otomatik olarak alınıp alınmayacağını (TRUE) veya alınmadığını belirten bir Boole değeri (FALSE).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_accessor** `db_column` `db_param` , aynı sınıf veya işlev içindeki sonraki ve özniteliklerin temel alınan OLE DB erişimcisini tanımlar. **db_accessor** , üye düzeyinde kullanılabilir ve `db_column` OLE DB tabanlı bağlamaya katılan öznitelikleri gruplandırmak için kullanılır `IAccessor` . Ya da öznitelikleriyle birlikte kullanılır `db_table` `db_command` . Bu özniteliği çağırmak, [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) ve [end_accessor](../../data/oledb/end-accessor.md) makrolarını çağırmaya benzerdir.
+**db_accessor** `db_column` `db_param` , aynı sınıf veya işlev içindeki sonraki ve özniteliklerin temel alınan OLE DB erişimcisini tanımlar. **db_accessor** , üye düzeyinde kullanılabilir ve `db_column` OLE DB tabanlı bağlamaya katılan öznitelikleri gruplandırmak için kullanılır `IAccessor` . Ya da öznitelikleriyle birlikte kullanılır `db_table` `db_command` . Bu özniteliği çağırmak, [BEGIN_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) ve [end_accessor](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_accessor) makrolarını çağırmaya benzerdir.
 
 **db_accessor** bir satır kümesi oluşturur ve ilgili erişimci haritalarını bağlar. **Db_accessor**çağırmayın, erişimci 0 otomatik olarak oluşturulur ve tüm sütun bağlamaları bu erişimci bloğuna eşlenir.
 
@@ -71,8 +71,8 @@ public:
 |-|-|
 |**Şunlara uygulanır**|Öznitelik blokları|
 |**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Yok|
-|**Geçersiz öznitelikler**|Yok|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

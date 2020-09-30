@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-ms.openlocfilehash: 868ff862cc41543c8ebc7880a5d1a9a7e6b103f3
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5910e72b10d5b849d203d088564d79d0f80a7961
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684592"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504597"
 ---
 # <a name="db_command"></a>db_command
 
 Bir OLE DB komutu oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ db_command(command, name, source_name, hresult, bindings, bulk_fetch)
@@ -125,7 +125,7 @@ Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, der
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnek, durum sütununun ' CA ' ile eşleştiği bir tablonun ilk ve son adlarını seçen bir komutu tanımlar. **db_command** , üzerinde [OpenAll ve CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)gibi sihirbaz tarafından üretilen işlevleri ve MoveNext gibi üye işlevlerini çağırabilmeniz için bir satır kümesi oluşturup okur `CRowset` . [MoveNext](../../data/oledb/crowset-movenext.md)
+Bu örnek, durum sütununun ' CA ' ile eşleştiği bir tablonun ilk ve son adlarını seçen bir komutu tanımlar. **db_command** , üzerinde [OpenAll ve CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)gibi sihirbaz tarafından üretilen işlevleri ve MoveNext gibi üye işlevlerini çağırabilmeniz için bir satır kümesi oluşturup okur `CRowset` . [MoveNext](../../data/oledb/crowset-class.md#movenext)
 
 Bu kodun, Pubs veritabanına bağlanan kendi Bağlantı dizenizi sağlamanızı gerektirdiğini unutmayın. Geliştirme ortamında bunun nasıl yapılacağı hakkında bilgi için bkz. [nasıl yapılır: veritabanına bağlanma ve var olan nesnelere gözatmaya](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) ve [yeni bağlantılar ekleme](/visualstudio/data-tools/add-new-connections).
 
@@ -237,9 +237,9 @@ int main() {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
-|**Tekrarlanabilir**|No|
-|**Gerekli öznitelikler**|Yok|
-|**Geçersiz öznitelikler**|Yok|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

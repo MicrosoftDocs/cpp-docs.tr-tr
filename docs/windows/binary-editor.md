@@ -21,12 +21,12 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 955cce012ac30c3413d7d458e263643d0aefa711
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 078d702232cde49a4666551a8d9fcbb320173450
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615343"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503524"
 ---
 # <a name="binary-editor-c"></a>İkili Düzenleyici (C++)
 
@@ -116,14 +116,14 @@ Kaynağı normal kaynak betiği (. RC) dosya söz dizimini kullanarak ayrı bir 
 
 1. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
-Özel bir kaynak oluşturmanın başka bir yolu da bir dış dosyayı özel kaynak olarak içeri aktarmanız, bkz. [nasıl yapılır: kaynakları yönetme](../windows/how-to-import-and-export-resources.md).
+Özel bir kaynak oluşturmanın başka bir yolu da bir dış dosyayı özel kaynak olarak içeri aktarmanız, bkz. [nasıl yapılır: kaynakları yönetme](./how-to-copy-resources.md).
 
 > [!NOTE]
 > Yeni özel veya veri kaynakları oluşturmak Win32 gerektirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

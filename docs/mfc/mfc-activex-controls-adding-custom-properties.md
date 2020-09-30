@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-ms.openlocfilehash: 805fffcc6cafe92df91af6b01bb53240a0d70f51
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: af1ca2d63abcb112bfe1e7d7538dbf70fb817ae5
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230499"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503881"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX Denetimleri: Özel Özellikler Ekleme
 
@@ -40,7 +40,7 @@ Bu makalede, Özellik Ekleme Sihirbazı kullanılarak ActiveX denetimine nasıl 
 
    Parametreli uygulama Özellik Ekleme Sihirbazı tarafından desteklenir. Parametreli bir Özellik (bazen Özellik dizisi olarak adlandırılır), denetiminizin tek bir özelliği aracılığıyla bir dizi değere erişmek için kullanılabilir. Bu uygulama için dağıtım Haritası giriş makrosu DISP_PROPERTY_PARAM. Bu türü uygulama hakkında daha fazla bilgi için bkz. ActiveX denetimleri: gelişmiş konular makalesindeki [parametreli özellik uygulama](mfc-activex-controls-advanced-topics.md) .
 
-## <a name="using-the-add-property-wizard-to-add-a-custom-property"></a><a name="_core_using_classwizard_to_add_a_custom_property"></a>Özel özellik eklemek için Özellik Ekleme Sihirbazı 'Nı kullanma
+## <a name="using-the-add-property-wizard-to-add-a-custom-property"></a><a name="_core_using_classwizard_to_add_a_custom_property"></a> Özel özellik eklemek için Özellik Ekleme Sihirbazı 'Nı kullanma
 
 Aşağıdaki yordamda, get/set yöntemleri uygulamasını kullanan bir özel özellik, Circlesapmayı ekleme gösterilmektedir. Circlesapmayı Custom özelliği, denetimin kullanıcı tarafından denetimin sınırlayıcı dikdörtgeninin merkezinden daireyi kaydırmasına olanak tanır. Get/set yöntemleri dışında bir uygulamayla özel özellikler ekleme yordamı çok benzerdir.
 
@@ -56,7 +56,7 @@ Bu yordam, istediğiniz diğer özel özellikleri eklemek için de kullanılabil
 
 1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Özellik Ekle**' ye tıklayın.
 
-   Bu, [Özellik Ekleme Sihirbazı](../ide/names-add-property-wizard.md)' nı açar.
+   Bu, [Özellik Ekleme Sihirbazı](../ide/adding-a-property-visual-cpp.md#names-add-property-wizard)' nı açar.
 
 1. **Özellik adı** kutusuna *circlekayması*yazın.
 
@@ -68,7 +68,7 @@ Bu yordam, istediğiniz diğer özel özellikleri eklemek için de kullanılabil
 
 1. **Son**'a tıklayın.
 
-## <a name="add-property-wizard-changes-for-custom-properties"></a><a name="_core_classwizard_changes_for_custom_properties"></a>Özel özellikler için Özellik Ekleme Sihirbazı değişiklikleri
+## <a name="add-property-wizard-changes-for-custom-properties"></a><a name="_core_classwizard_changes_for_custom_properties"></a> Özel özellikler için Özellik Ekleme Sihirbazı değişiklikleri
 
 Circlesapmasını özel özelliğini eklediğinizde Özellik Ekleme Sihirbazı üst bilgide değişiklik yapar (. H) ve uygulama (. CPP) denetim sınıfının dosyaları.
 

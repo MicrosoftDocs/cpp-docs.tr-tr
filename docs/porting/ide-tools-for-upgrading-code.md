@@ -3,12 +3,12 @@ title: C++ kodunu yükseltmek için Visual Studio IDE araçları
 description: Visual Studio 'daki C++ kod Düzenleyicisi ve kod çözümleme araçları, C++ kod tabanınızı modernleştirin etmenize yardımcı olur.
 ms.date: 11/13/2019
 ms.topic: conceptual
-ms.openlocfilehash: 0d43da784e1e2f7789ac17ec01163ce29944e93d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d6368445d16232ff968b7116b0f0313e97aa144c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205736"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503761"
 ---
 # <a name="visual-studio-ide-tools-for-upgrading-c-code"></a>C++ kodunu yükseltmek için Visual Studio IDE araçları
 
@@ -24,7 +24,7 @@ Visual Studio, eski C++ kodunu derleyici seçenekleri, kod analizi uyarıları v
 
 - Tüm standart sürümlerine uyan, ancak modern C++ ' da artık en iyi uygulama olarak kabul edilen kod.
 
-   Değişikliklerin önerildiği kodu belirlemek için [Kod analizini](/cpp/code-quality/code-analysis-for-c-cpp-overview)çalıştırın.
+   Değişikliklerin önerildiği kodu belirlemek için [Kod analizini](../code-quality/code-analysis-for-c-cpp-overview.md)çalıştırın.
 
 ## <a name="open-and-convert-a-legacy-project"></a>Eski bir projeyi açma ve dönüştürme
 
@@ -74,7 +74,7 @@ Kod Analizi hataları ve uyarıları, tıpkı derleyici hataları gibi **hata li
 
 ![Hata Listesi 'de kod analizi uyarıları](media/code-analysis-error-list.png "Hata Listesi 'de kod analizi uyarıları")
 
-Hangi kuralların etkin olduğunu değiştirebilir ve özel RuleSets 'ler oluşturabilirsiniz. Kod analizini kullanma hakkında daha fazla bilgi için bkz. [C/C++ Için kod analizi genel bakış](/cpp/code-quality/code-analysis-for-c-cpp-overview).
+Hangi kuralların etkin olduğunu değiştirebilir ve özel RuleSets 'ler oluşturabilirsiniz. Kod analizini kullanma hakkında daha fazla bilgi için bkz. [C/C++ Için kod analizi genel bakış](../code-quality/code-analysis-for-c-cpp-overview.md).
 
 ## <a name="use-quick-actions-to-modernize-code"></a>Kodu modernleştirin için hızlı eylemler kullanın
 

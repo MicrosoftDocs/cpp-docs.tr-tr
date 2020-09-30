@@ -10,12 +10,12 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-ms.openlocfilehash: 0aed625cfa17c75bbfb36506436e9e2c52a7a13b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d1a7bae43a6fcd875f2e713695969f0d88b0dfe5
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216680"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504164"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 
@@ -29,7 +29,7 @@ Aşağıdaki ınstrinsic işlev ek açıklamaları SAL için genel yardımcı pr
 |----------------|-----------------|
 |`_Curr_`|Şu anda açıklanmakta olan nesne için bir eş anlamlı.  `_At_`Ek açıklama kullanımda olduğunda, `_Curr_` ilk parametresiyle aynı olur `_At_` .  Aksi takdirde, ek açıklamanın sözcüksel olarak ilişkilendirildiği parametre veya tam işlev/dönüş değeridir.|
 |`_Inexpressible_(expr)`|Bir arabelleğin boyutunun, bir ek açıklama ifadesi kullanılarak temsil edilebilmesi için çok karmaşık olduğu, örneğin bir girdi veri kümesi tarayarak ve ardından seçilen Üyeler sayımının hesaplandığı bir durumu ifade eder.|
-|`_Nullterm_length_(param)`|`param`Arabellekteki öğelerin sayısı, bir null Sonlandırıcı dahil değildir. Toplama olmayan, void olmayan türdeki herhangi bir arabelleğe uygulanabilir.|
+|`_Nullterm_length_(param)`|`param` Arabellekteki öğelerin sayısı, bir null Sonlandırıcı dahil değildir. Toplama olmayan, void olmayan türdeki herhangi bir arabelleğe uygulanabilir.|
 |`_Old_(expr)`|Önkoşula göre değerlendirildiğinde, `_Old_` giriş değerini döndürür `expr` .  Koşul sonrası değerlendirildiğinde değeri, `expr` önkoşullardan değerlendirildiği gibi döndürür.|
 |`_Param_(n)`|`n`1 ile arasında sayarak `n` ve `n` sabit bir integral sabiti olan bir işleve olan TH parametresi. Parametre adlandırılmışsa, bu ek açıklama parametreye adına göre erişmek için aynıdır. **Note:** `n` bir üç nokta tarafından tanımlanan konumsal parametrelere başvurabilir veya adların kullanıldığı işlev Prototiplerde kullanılabilir.  |
 |`return`|C/C++ ayrılmış anahtar sözcüğü, **`return`** bir işlevin dönüş değerini göstermek IÇIN Sal ifadesinde kullanılabilir.  Değer yalnızca gönderi durumunda kullanılabilir; Bu, ön durumunda kullanmak için bir sözdizimi hatasıdır.|
@@ -40,9 +40,9 @@ Aşağıdaki iç işlev ek açıklamaları dizelerin düzenlenmesini etkinleşti
 
 |Ek Açıklama|Açıklama|
 |----------------|-----------------|
-|`_String_length_(param)`|`param`dizedeki öğe sayısı olan, ancak bir null Sonlandırıcı dahil değil. Bu ek açıklama, karakter dizesi türleri için ayrılmıştır.|
-|`strlen(param)`|`param`dizedeki öğe sayısı olan, ancak bir null Sonlandırıcı dahil değil. Bu ek açıklama, karakter dizileri üzerinde kullanılmak üzere ayrılmıştır ve C çalışma zamanı işlevine [strlen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)benzerdir.|
-|`wcslen(param)`|`param`, bir null Sonlandırıcı (dahil değil) olan dizedeki öğe sayısıdır. Bu ek açıklama geniş karakter dizileri üzerinde kullanılmak üzere ayrılmıştır ve C çalışma zamanı işlevine [wcslen ()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l)benzerdir.|
+|`_String_length_(param)`|`param` dizedeki öğe sayısı olan, ancak bir null Sonlandırıcı dahil değil. Bu ek açıklama, karakter dizesi türleri için ayrılmıştır.|
+|`strlen(param)`|`param` dizedeki öğe sayısı olan, ancak bir null Sonlandırıcı dahil değil. Bu ek açıklama, karakter dizileri üzerinde kullanılmak üzere ayrılmıştır ve C çalışma zamanı işlevine [strlen ()](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)benzerdir.|
+|`wcslen(param)`|`param` , bir null Sonlandırıcı (dahil değil) olan dizedeki öğe sayısıdır. Bu ek açıklama geniş karakter dizileri üzerinde kullanılmak üzere ayrılmıştır ve C çalışma zamanı işlevine [wcslen ()](../c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)benzerdir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

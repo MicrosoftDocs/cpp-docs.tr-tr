@@ -141,12 +141,12 @@ helpviewer_keywords:
 - std::unordered_map::size
 - std::unordered_map::swap
 ms.assetid: 7cf7cfa1-16e7-461c-a9b2-3b8d8ec24e0d
-ms.openlocfilehash: 2f30b5683d8487830d596fc8185430c8a4c4c7b0
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: f8ffd7b3990f2d0ab40f8059e65f0aba4d4c8e0c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352420"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503583"
 ---
 # <a name="unordered_map-class"></a>unordered_map Sınıfı
 
@@ -182,7 +182,7 @@ Ayırıcı sınıf.
 
 ## <a name="members"></a>Üyeler
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |-|-|
 |[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
 |[const_iterator](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
@@ -201,7 +201,7 @@ Ayırıcı sınıf.
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|
 |[value_type](#value_type)|Öğenin türü.|
 
-|Üye İşlevi|Description|
+|Üye İşlevi|Açıklama|
 |-|-|
 |[hızı](#at)|Belirtilen anahtarı içeren bir öğe bulur.|
 |[başladı](#begin)|Denetlenen dizinin başlangıcını belirtir.|
@@ -926,7 +926,7 @@ Aranacak öğenin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true` öğe kapsayıcıda bulunursa; `false` Aksi takdirde. 
+`true` öğe kapsayıcıda bulunursa; `false` Aksi takdirde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -948,7 +948,7 @@ int main()
     std::cout << std::boolalpha; // so booleans show as 'true' or 'false'
     std::cout << theUnorderedMap.contains(1) << '\n';
     std::cout << theUnorderedMap.contains(2) << '\n';
-    
+
     return 0;
 }
 ```
@@ -2924,6 +2924,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [<unordered_map>](../standard-library/unordered-map.md)\
-[Kapsayıcıları](./stl-containers.md)\
 [C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

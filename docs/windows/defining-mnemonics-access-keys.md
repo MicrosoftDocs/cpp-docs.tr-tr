@@ -20,12 +20,12 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 91b6365334b977957ff6bd6c25278d4088961a2c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 59d81c0b835171132ebf29739a4e130191a87769
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222075"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504459"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: denetim erişimini ve değerlerini tanımlama (C++)
 
@@ -103,14 +103,14 @@ Normal olarak, klavye kullanıcıları giriş odağını **sekme** ve **ok** tu�
 
 1. Değer ekleme işiniz bittiğinde **ENTER** tuşuna basın.
 
-Birleşik giriş kutusunun aşağı açılan kısmını büyütme hakkında daha fazla bilgi için bkz. [Birleşik giriş kutusunun boyutunu ve açılan listesini ayarlama](setting-the-size-of-the-combo-box-and-its-drop-down-list.md).
+Birleşik giriş kutusunun aşağı açılan kısmını büyütme hakkında daha fazla bilgi için bkz. [Birleşik giriş kutusunun boyutunu ve açılan listesini ayarlama](./arrangement-of-controls-on-dialog-boxes.md).
 
 > [!NOTE]
 > Bu yordamı kullanarak Win32 projelerine değer ekleyemezsiniz ( **Data** özelliği Win32 projeleri için gridir). Win32 projelerinin bu özelliği ekleyen kitaplıkları olmadığından, programlı bir şekilde Win32 projesi içeren bir Birleşik giriş kutusuna değer eklemeniz gerekir.
 
 ### <a name="to-test-the-appearance-of-values-in-a-combo-box"></a>Birleşik giriş kutusundaki değerlerin görünümünü test etmek için
 
-1. **Data** özelliğine değer girdikten sonra [Iletişim kutusu Düzenleyicisi araç çubuğundaki](../windows/showing-or-hiding-the-dialog-editor-toolbar.md) **Test** düğmesini seçin.
+1. **Data** özelliğine değer girdikten sonra [Iletişim kutusu Düzenleyicisi araç çubuğundaki](./dialog-editor.md) **Test** düğmesini seçin.
 
 1. Tüm değer listesini kaydırmayı deneyin. Değerler, **Özellikler** penceresinde **veri** özelliğinde yazıldığı şekilde tam olarak görünür. Yazım veya büyük harf denetimi yoktur.
 
@@ -118,7 +118,7 @@ Birleşik giriş kutusunun aşağı açılan kısmını büyütme hakkında daha
 
 ## <a name="radio-button-values"></a>Radyo düğmesi değerleri
 
-Bir iletişim kutusuna radyo düğmeleri eklediğinizde, gruptaki ilk düğmenin **Özellikler** penceresinde bir **Grup** özelliği ayarlayarak onları bir grup olarak değerlendirin. Bu radyo düğmesinin denetim KIMLIĞI, ardından [üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md)'nda görünür ve radyo düğmeleri grubu için bir üye değişkeni eklemenize olanak tanır.
+Bir iletişim kutusuna radyo düğmeleri eklediğinizde, gruptaki ilk düğmenin **Özellikler** penceresinde bir **Grup** özelliği ayarlayarak onları bir grup olarak değerlendirin. Bu radyo düğmesinin denetim KIMLIĞI, ardından [üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard)'nda görünür ve radyo düğmeleri grubu için bir üye değişkeni eklemenize olanak tanır.
 
 İletişim kutusunda birden fazla radyo düğmesi grubuna sahip olabilirsiniz. Aşağıdaki yordamı kullanarak her grubu ekleyin.
 
@@ -139,7 +139,7 @@ Bir iletişim kutusuna radyo düğmeleri eklediğinizde, gruptaki ilk düğmenin
 
 1. Sekme düzeninde (baskın denetim ve **Group** özelliği **true**olarak ayarlanan) ilk radyo düğmesi denetimine sağ tıklayın ve **değişken Ekle**' yi seçin.
 
-1. [Üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md)'Nda, **denetim değişkeni** onay kutusunu seçin, sonra **da radyo düğmesini** seçin.
+1. [Üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard)'Nda, **denetim değişkeni** onay kutusunu seçin, sonra **da radyo düğmesini** seçin.
 
    - **Değişken adı** kutusuna yeni üye değişkeni için bir ad yazın.
 

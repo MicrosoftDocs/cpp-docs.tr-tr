@@ -79,16 +79,16 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-ms.openlocfilehash: a331e310f031462c903546a2896317aae0c0d719
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bbaa008d8dac74588fc15bfebbc7cb2611260349
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843371"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504556"
 ---
 # <a name="how-to-create-an-icon-or-other-image"></a>Nasıl yapılır: simge veya başka görüntü oluşturma
 
-Yeni bir görüntü, bit eşlem, simge, imleç veya araç çubuğu oluşturabilir ve sonra görünümünü özelleştirmek için **görüntü düzenleyicisini** kullanabilirsiniz. Ayrıca, bir [kaynak şablonundan](../windows/how-to-use-resource-templates.md)sonra desenli yeni bir bit eşlem de oluşturabilirsiniz.
+Yeni bir görüntü, bit eşlem, simge, imleç veya araç çubuğu oluşturabilir ve sonra görünümünü özelleştirmek için **görüntü düzenleyicisini** kullanabilirsiniz. Ayrıca, bir [kaynak şablonundan](./how-to-create-a-resource-script-file.md)sonra desenli yeni bir bit eşlem de oluşturabilirsiniz.
 
 ## <a name="icons-and-cursors-image-resources-for-display-devices"></a>Simgeler ve İmleçler: Görüntüleme Cihazları için Görüntü Kaynakları
 
@@ -162,8 +162,8 @@ Yeni bir simge veya imleç kaynağı oluşturduğunuzda, **Görüntü Düzenleyi
 
 |Özellik|Açıklama|
 |---|---|
-|**Width**|Özel görüntünün genişliğini piksel cinsinden (1-512, 2048 limiti) girebileceğiniz bir alan sağlar.|
-|**Height**|Özel görüntünün yüksekliğini piksel (1-512, 2048 limiti) olarak girmeniz için bir alan sağlar.|
+|**Genişlik**|Özel görüntünün genişliğini piksel cinsinden (1-512, 2048 limiti) girebileceğiniz bir alan sağlar.|
+|**Yükseklik**|Özel görüntünün yüksekliğini piksel (1-512, 2048 limiti) olarak girmeniz için bir alan sağlar.|
 |**Renkler**|Özel görüntü için renk sayısını seçmeniz için bir alan sağlar: 2, 16 veya 256.|
 
 C++ projelerinde cihaz görüntülerini açmak için ** &lt; cihaz &gt; görüntüsünü aç** iletişim kutusunu kullanın. Geçerli kaynakta mevcut cihaz görüntülerini (geçerli kaynağın parçası olan görüntüler) listeler. Aşağıdaki özellik eklenmiştir:
@@ -176,7 +176,7 @@ C++ projelerinde cihaz görüntülerini açmak için ** &lt; cihaz &gt; görünt
 
 1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp **Kaynak Ekle**' yi seçin. *. RC* dosyanızda bir imleç gibi var olan bir görüntü kaynağınız zaten varsa, **imleç** klasörüne sağ tıklayıp **imleç Ekle**' yi seçebilirsiniz.
 
-1. [Kaynak Ekle iletişim kutusunda](../windows/add-resource-dialog-box.md) **simge** veya **Imleç** ' i seçin ve **Yeni**' yi seçin. Bu eylem, simgeler için 32 × 32, 16 renkli simgeyle bir simge kaynağı oluşturur. İmleçler için 32 × 32, tek renkli (2 renkli) görüntü oluşturulur.
+1. [Kaynak Ekle iletişim kutusunda](./how-to-create-a-resource-script-file.md) **simge** veya **Imleç** ' i seçin ve **Yeni**' yi seçin. Bu eylem, simgeler için 32 × 32, 16 renkli simgeyle bir simge kaynağı oluşturur. İmleçler için 32 × 32, tek renkli (2 renkli) görüntü oluşturulur.
 
    **+** **Kaynak Ekle** iletişim kutusunda görüntü kaynak türünün yanında bir artı işareti () görünürse, araç çubuğu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
 
@@ -205,7 +205,7 @@ Simge görüntüsü **görüntü düzenleyicisinde**görüntülenirken menü **g
 
 ### <a name="to-create-transparent-or-inverse-regions-in-device-images"></a>Cihaz görüntülerinde saydam veya ters bölgeler oluşturmak için
 
-[Görüntü düzenleyicisinde](../windows/image-editor-for-icons.md), başlangıç simgesinin veya imleç resminin saydam bir özniteliği vardır. Simgenin ve imleç görüntülerinin dikdörtgen olmasına rağmen, görüntünün parçaları saydam olduğu ve ekrandaki alttaki görüntüde simge veya imleç üzerinden gösterdiği için pek çok görünmüyor. Bir simgeyi sürüklediğinizde, görüntünün bir kısmı ters bir renkte görünebilir. [Renkler penceresinde](../windows/colors-window-image-editor-for-icons.md)ekran rengini ve ters rengi ayarlayarak bu etkiyi oluşturursunuz.
+[Görüntü düzenleyicisinde](../windows/image-editor-for-icons.md), başlangıç simgesinin veya imleç resminin saydam bir özniteliği vardır. Simgenin ve imleç görüntülerinin dikdörtgen olmasına rağmen, görüntünün parçaları saydam olduğu ve ekrandaki alttaki görüntüde simge veya imleç üzerinden gösterdiği için pek çok görünmüyor. Bir simgeyi sürüklediğinizde, görüntünün bir kısmı ters bir renkte görünebilir. [Renkler penceresinde](./image-editor-for-icons.md)ekran rengini ve ters rengi ayarlayarak bu etkiyi oluşturursunuz.
 
 Simgeler ve imleçler için uyguladığınız ekran ve ters renkler, türetilmiş görüntünün şeklini ve rengini ya da ters bölge atamasını sağlar. Renkler, bu özniteliklere sahip olan görüntünün parçalarını gösterir. Düzenlemede ekran rengi ve ters renk özniteliklerini temsil eden renkleri değiştirebilirsiniz. Bu değişiklikler uygulamanızdaki simgenin veya imlecin görünüşünü etkilemez.
 
@@ -227,7 +227,7 @@ Simgeler ve imleçler için uyguladığınız ekran ve ters renkler, türetilmi�
    Tamamlayıcı renk, diğer seçici için otomatik olarak atanır.
 
    > [!TIP]
-   > **Ekran rengi** veya **ters renk** seçiciyi çift tıklarsanız, [Özel Renk Seçicisi iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md) görüntülenir.
+   > **Ekran rengi** veya **ters renk** seçiciyi çift tıklarsanız, [Özel Renk Seçicisi iletişim kutusu](./image-editor-for-icons.md) görüntülenir.
 
 ### <a name="use-the-256-color-palette"></a>256 renkli paleti kullanma
 
@@ -237,13 +237,13 @@ Simgeler ve imleçler için uyguladığınız ekran ve ters renkler, türetilmi�
 
 1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp **Kaynak Ekle**' yi seçin. *. RC* dosyanızda bir imleç gibi var olan bir görüntü kaynağınız zaten varsa, **imleç** klasörüne sağ tıklayıp **imleç Ekle**' yi seçebilirsiniz.
 
-1. [Kaynak Ekle iletişim kutusunda](../windows/add-resource-dialog-box.md) **simge** veya **Imleç** ' i seçin ve **Yeni**' yi seçin.
+1. [Kaynak Ekle iletişim kutusunda](./how-to-create-a-resource-script-file.md) **simge** veya **Imleç** ' i seçin ve **Yeni**' yi seçin.
 
 1. Menü **görüntüsü**  >  **yeni cihaz görüntüsü** ' ne gidin ve istediğiniz 256 renkli görüntü stilini seçin.
 
 #### <a name="to-choose-a-color-from-the-256-color-palette-for-large-icons"></a>Büyük simgeler için 256 renkli paletten bir renk seçmek için
 
-256 renkli paletten seçim ile çizim yapmak için renkler [penceresindeki](../windows/colors-window-image-editor-for-icons.md) **renkler paletinden renkler** ' i seçmeniz gerekir.
+256 renkli paletten seçim ile çizim yapmak için renkler [penceresindeki](./image-editor-for-icons.md) **renkler paletinden renkler** ' i seçmeniz gerekir.
 
 1. Büyük simge veya imleci seçin ya da yeni bir büyük simge veya imleç oluşturun.
 
@@ -258,7 +258,7 @@ Simgeler ve imleçler için uyguladığınız ekran ve ters renkler, türetilmi�
 
 İmlecin etkin noktası, Windows 'un imlecin konumunu izlemede başvurduğu noktasıdır. Varsayılan olarak, etkin nokta, imlecin koordinatlarıyla sol üst köşesine ayarlanır `0,0` . Özellikler penceresi **Hotspot** özelliği, etkin [Properties window](/visualstudio/ide/reference/properties-window) nokta koordinatlarını gösterir.
 
-1. [Görüntü Düzenleyicisi araç çubuğunda](../windows/toolbar-image-editor-for-icons.md), **etkin nokta ayarla** aracını seçin.
+1. [Görüntü Düzenleyicisi araç çubuğunda](./image-editor-for-icons.md), **etkin nokta ayarla** aracını seçin.
 
 1. İmlecin etkin noktası olarak atamak istediğiniz pikseli seçin.
 
@@ -284,13 +284,13 @@ Bir bit eşlem oluşturduğunuzda, görüntü bit eşlem biçiminde (. bmp) olu�
 1. **Dosyayı farklı kaydet** iletişim kutusunda, dosyaya vermek istediğiniz adı ve dosya **adı** kutusunda istediğiniz dosya biçimini belirten uzantıyı yazın. Örneğin, *myfile.gif*.
 
    > [!NOTE]
-   > Başka bir dosya biçimi olarak kaydetmek için projenizin dışında bit eşlem oluşturmanız veya açmanız gerekir. Projeyi içinde oluşturur veya açarsanız, **farklı kaydet** komutu kullanılamaz olur. Daha fazla bilgi için bkz. bir [proje dışındaki kaynak betik dosyasındaki kaynakları görüntüleme (tek başına)](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
+   > Başka bir dosya biçimi olarak kaydetmek için projenizin dışında bit eşlem oluşturmanız veya açmanız gerekir. Projeyi içinde oluşturur veya açarsanız, **farklı kaydet** komutu kullanılamaz olur. Daha fazla bilgi için bkz. bir [proje dışındaki kaynak betik dosyasındaki kaynakları görüntüleme (tek başına)](./how-to-create-a-resource-script-file.md).
 
-1. **Kaydet**’i seçin.
+1. **Kaydet**'i seçin.
 
 ### <a name="to-convert-an-image-from-one-format-to-another"></a>Bir görüntüyü bir biçimden diğerine dönüştürmek için
 
-GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bunları bit eşlemler olarak kaydedebilirsiniz. Ayrıca, bir bit eşlem dosyası açıp GIF veya JPEG olarak kaydedebilirsiniz. İle çalıştığınız görüntülerin geliştirme ortamında düzenlenmek üzere bir projenin parçası olması gerekmez (bkz. [tek başına görüntü düzenlemesi](../windows/editing-an-image-outside-of-a-project-image-editor-for-icons.md)).
+GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bunları bit eşlemler olarak kaydedebilirsiniz. Ayrıca, bir bit eşlem dosyası açıp GIF veya JPEG olarak kaydedebilirsiniz. İle çalıştığınız görüntülerin geliştirme ortamında düzenlenmek üzere bir projenin parçası olması gerekmez (bkz. [tek başına görüntü düzenlemesi](./selecting-an-area-of-an-image-image-editor-for-icons.md)).
 
 1. Görüntüyü **görüntü düzenleyicisinde**açın.
 
@@ -298,13 +298,13 @@ GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bun
 
 1. **Dosyayı farklı kaydet** iletişim kutusunda, **dosya adı** kutusuna istediğiniz biçimi gösteren dosya adını ve uzantıyı yazın.
 
-1. **Kaydet**’i seçin.
+1. **Kaydet**'i seçin.
 
 ### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>Yönetilmeyen C++ projesine yeni bir görüntü kaynağı eklemek için
 
 1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), *. RC* dosyanıza sağ tıklayıp **Kaynak Ekle**' yi seçin. *. RC* dosyanızda imleç gibi bir görüntü kaynağınız zaten varsa, **imleç** klasörüne sağ tıklayıp **imleç Ekle**' yi seçmeniz yeterlidir.
 
-1. [Kaynak Ekle iletişim kutusunda](../windows/add-resource-dialog-box.md), oluşturmak istediğiniz görüntü kaynağı türünü seçin (örneğin,**bit eşlem**) ve ardından **Yeni**' yi seçin.
+1. [Kaynak Ekle iletişim kutusunda](./how-to-create-a-resource-script-file.md), oluşturmak istediğiniz görüntü kaynağı türünü seçin (örneğin,**bit eşlem**) ve ardından **Yeni**' yi seçin.
 
    **+** **Kaynak Ekle** iletişim kutusunda görüntü kaynak türünün yanında bir artı işareti () görünürse, araç çubuğu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
 
@@ -322,7 +322,7 @@ GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bun
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -332,7 +332,7 @@ Yok
 [Nasıl yapılır: renklerle çalışma](../windows/working-with-color-image-editor-for-icons.md)<br/>
 [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 <!--
-[Converting Bitmaps to Toolbars](../windows/converting-bitmaps-to-toolbars.md)<br/>
-[Creating New Toolbars](../windows/creating-new-toolbars.md)<br/>
+[Converting Bitmaps to Toolbars](./toolbar-editor.md)<br/>
+[Creating New Toolbars](./toolbar-editor.md)<br/>
 [Icons](/windows/win32/menurc/icons)<br/>
 [Cursors](/windows/win32/menurc/cursors)<br/>-->

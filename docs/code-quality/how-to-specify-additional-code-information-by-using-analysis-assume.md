@@ -7,29 +7,29 @@ f1_keywords:
 helpviewer_keywords:
 - _Analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
-ms.openlocfilehash: 00577e6cc5ebd30e38e4fb7204b93c3ecf3fe112
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: f427afdcab07b41430a5d4b5fc7f300aa671e30b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418741"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503302"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Nasıl yapılır: _Analysis_assume kullanarak ek kod bilgileri belirtme
 
-Analiz işleminin ve uyarıların azaltılmasına yardımcı olacak C/C++ kod için kod analizi aracına yönelik ipuçları sağlayabilirsiniz. Ek bilgi sağlamak için aşağıdaki işlevi kullanın:
+Analiz işleminin ve uyarıların azaltılmasına yardımcı olacak C/C++ kodu için kod analizi aracına yönelik ipuçları sağlayabilirsiniz. Ek bilgi sağlamak için aşağıdaki işlevi kullanın:
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr`-doğru olarak değerlendirilmesi için kabul edilen herhangi bir ifade.
+`expr` -true olarak değerlendirilme kabul edilen herhangi bir ifade.
 
 Kod Analizi Aracı, ifade tarafından temsil edilen koşulun işlevin göründüğü noktada doğru olduğunu varsayar ve örneğin bir değişkene atama yaparak ifade değiştirilene kadar doğru kalır.
 
 > [!NOTE]
-> `_Analysis_assume` kod iyileştirmeyi etkilemez. Kod Analizi Aracı dışında `_Analysis_assume`, işlem olmadan tanımlanır.
+> `_Analysis_assume` kod iyileştirmesini etkilemez. Kod Analizi aracının dışında, `_Analysis_assume` bir op olarak tanımlanır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, kod analizi Uyarı [C6388](../code-quality/c6388.md)düzeltmek için `_Analysis_assume` kullanır:
+Aşağıdaki kod, `_Analysis_assume` Kod Analizi uyarı [C6388](../code-quality/c6388.md)düzeltmek için kullanır:
 
 ```cpp
 #include<windows.h>
@@ -54,4 +54,4 @@ void test()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [__assume](/cpp/intrinsics/assume)
+- [__assume](../intrinsics/assume.md)

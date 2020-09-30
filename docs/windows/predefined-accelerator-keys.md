@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: beb4e878138da3dc2905c86e18fedc658d7ceecf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4f838caa8ca9e4a996fa4cb8018d663c6c7aecea
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215156"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504303"
 ---
 # <a name="accelerator-keys-c"></a>Hızlandırıcı tuşları (C++)
 
@@ -55,15 +55,15 @@ Bir Windows uygulama projesinin parçası olabilecek bir dizi önceden tanımlan
 |VK_OEM_1|Pencerelerin ABD standart klavyesi için **;:** anahtarı|
 |VK_OEM_102|Pencerelerin RT 102 anahtar klavyesinde açılı ayraç tuşu ya da ters eğik çizgi tuşu|
 |VK_OEM_2|Pencerelerin ABD standart klavyesi için **/?** anahtar|
-|VK_OEM_3|Pencerelerin ABD standart klavyesi için **`~** anahtarı|
+|VK_OEM_3|Pencerelerin ABD standart klavyesi için, **`~** anahtar|
 |VK_OEM_4|Pencerelerin ABD standart klavyesi için **[{** Key|
-|VK_OEM_5|Pencerelerin ABD standart klavyesi için **\\&#124;**  anahtarı|
+|VK_OEM_5|Pencerelerin ABD standart klavyesi için ** \\&#124;** anahtarı|
 |VK_OEM_6|Pencerelerin ABD standart klavyesi için **]}** anahtarı|
 |VK_OEM_7|Pencerelerin ABD standart klavyesi için, ' tek tırnak/çift tırnak ' anahtarı|
 |VK_OEM_COMMA|Pencerelerin Herhangi bir ülke/bölge, **,** anahtar|
-|VK_OEM_MINUS|Pencerelerin Herhangi bir ülke/bölge için **-** anahtarı|
+|VK_OEM_MINUS|Pencerelerin Herhangi bir ülke/bölge için, **-** anahtar|
 |VK_OEM_PERIOD|Pencerelerin Herhangi bir ülke/bölge için, **.** anahtar|
-|VK_OEM_PLUS|Pencerelerin Herhangi bir ülke/bölge için **+** anahtarı|
+|VK_OEM_PLUS|Pencerelerin Herhangi bir ülke/bölge için, **+** anahtar|
 |VK_PACKET|Pencerelerin Unicode karakterleri klavye tuşları gibi geçirmek için kullanılır.|
 |VK_RCONTROL|**Sağ CTRL** tuşu|
 |VK_RMENU|**Sağ menü** tuşu|
@@ -77,7 +77,7 @@ Bir Windows uygulama projesinin parçası olabilecek bir dizi önceden tanımlan
 
 ## <a name="accelerator-key-association"></a>Hızlandırıcı tuş Ilişkilendirmesi
 
-Birçok kez, bir menü öğesi ve klavye bileşiminin aynı program komutunu vermesini istiyorsunuz. Bu eylemi, menü öğesine ve uygulamanızın Hızlandırıcı tablosundaki bir girdiye aynı kaynak tanımlayıcısını (ID) atayarak yapabilirsiniz. Daha sonra hızlandırıcının adını göstermek için menü öğesinin başlığını düzenlersiniz. Menü öğeleri ve hızlandırıcı tuşları hakkında daha fazla bilgi için, bkz. [menü komutları](../windows/associating-a-menu-command-with-an-accelerator-key.md).
+Birçok kez, bir menü öğesi ve klavye bileşiminin aynı program komutunu vermesini istiyorsunuz. Bu eylemi, menü öğesine ve uygulamanızın Hızlandırıcı tablosundaki bir girdiye aynı kaynak tanımlayıcısını (ID) atayarak yapabilirsiniz. Daha sonra hızlandırıcının adını göstermek için menü öğesinin başlığını düzenlersiniz. Menü öğeleri ve hızlandırıcı tuşları hakkında daha fazla bilgi için, bkz. [menü komutları](./menu-command-properties.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -85,4 +85,4 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)<br/>
+[Hızlandırıcı düzenleyici](../windows/accelerator-editor.md)<br/>

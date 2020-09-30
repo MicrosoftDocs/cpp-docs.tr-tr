@@ -3,12 +3,12 @@ title: Masaüstü Uygulamaları (Visual C++)
 ms.date: 07/28/2019
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 ms.topic: overview
-ms.openlocfilehash: f8e3dd386aee835ff383ba7567a5c320f206476e
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 26448ca65b3162e2adfe6988dfd8c9e85432429c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404967"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504446"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü Uygulamaları (Visual C++)
 
@@ -38,13 +38,13 @@ C++ ' daki herhangi bir masaüstü uygulaması C çalışma zamanı (CRT) ve sta
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[C++ içinde Windows Konsol Uygulamaları](console-applications-in-visual-cpp.md)|Konsol uygulamaları hakkında bilgi içerir. Bir Win32 (veya Win64) konsol uygulamasının kendi penceresi yok ve ileti döngüsü yok. Konsol penceresinde çalışır ve giriş ve çıkış komut satırı aracılığıyla işlenir.|
+|[C++ içinde Windows Konsol Uygulamaları](./overview-of-windows-programming-in-cpp.md)|Konsol uygulamaları hakkında bilgi içerir. Bir Win32 (veya Win64) konsol uygulamasının kendi penceresi yok ve ileti döngüsü yok. Konsol penceresinde çalışır ve giriş ve çıkış komut satırı aracılığıyla işlenir.|
 |[İzlenecek yol: Windows Masaüstü Uygulamaları Oluşturma (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Basit bir Windows masaüstü uygulaması oluşturun.|
-|[Boş Windows Masaüstü Uygulaması Oluşturma](creating-an-empty-windows-desktop-application.md)|Varsayılan dosyaları olmayan bir Windows Masaüstü projesi oluşturma.|
-|[Boş Win32 Uygulamalarına Dosya Ekleme](adding-files-to-an-empty-win32-applications.md)|Boş bir projeye dosya ekleme.|
+|[Boş Windows Masaüstü Uygulaması Oluşturma](./overview-of-windows-programming-in-cpp.md)|Varsayılan dosyaları olmayan bir Windows Masaüstü projesi oluşturma.|
+|[Boş Win32 Uygulamalarına Dosya Ekleme](./overview-of-windows-programming-in-cpp.md)|Boş bir projeye dosya ekleme.|
 |[Kaynak Dosyalarıyla Çalışma](working-with-resource-files.md)|Bir masaüstü uygulamasına görüntü, simge, dize tablosu ve diğer kaynakları ekleme.|
 |[DirectX kullanarak oyun oluşturmak için kaynaklar (C++)](resources-for-creating-a-game-using-directx.md)|C++ ' da oyunlar oluşturmak için içerik bağlantıları.|
-|[İzlenecek yol: statik kitaplık oluşturma ve kullanma](walkthrough-creating-and-using-a-static-library-cpp.md)|. Lib ikili dosyası oluşturma.|
+|[İzlenecek yol: statik kitaplık oluşturma ve kullanma](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|. Lib ikili dosyası oluşturma.|
 |[Nasıl yapılır: Windows 10 SDK 'Yı bir Windows masaüstü uygulamasında kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK kullanarak derlemek için projenizi ayarlama adımlarını içerir.|
 
 ## <a name="related-articles"></a>İlgili Makaleler

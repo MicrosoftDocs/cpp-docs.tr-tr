@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 2828a33a31d806c04cfce76a3156674778efbe6e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 05f734a9b083d93f2501172d9455b7889c65a5a6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686489"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503548"
 ---
 # <a name="db_column"></a>db_column
 
 Belirtilen bir sütunu satır kümesindeki bir değişkene bağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ db_column(ordinal, dbtype, precision, scale, status, length) ]
@@ -50,7 +50,7 @@ Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye deği�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**db_column** , belirtilen tablo sütununu satır kümesindeki bir değişkene bağlar. OLE DB tabanlı bağlamaya katılabileceğiniz üye verilerini ayırır `IAccessor` . Bu öznitelik, normalde OLE DB tüketici makroları [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md), [end_column_map](../../data/oledb/end-column-map.md)ve [COLUMN_ENTRY](../../data/oledb/column-entry.md)kullanılarak tanımlanan sütun eşlemesini ayarlar. Bu, belirtilen sütunu bağlamak için OLE DB [Dbbinding yapısını](/previous-versions/windows/desktop/ms716845(v=vs.85)) işleyebilir. **Db_column** özniteliğiyle işaretlediğiniz her üye, sütun haritasında sütun girişi biçiminde bir giriş kaplayacaktır. Bu nedenle, bu özniteliği komut veya tablo sınıfında sütun haritasını yerleştireceğiniz yerde çağırabilirsiniz.
+**db_column** , belirtilen tablo sütununu satır kümesindeki bir değişkene bağlar. OLE DB tabanlı bağlamaya katılabileceğiniz üye verilerini ayırır `IAccessor` . Bu öznitelik, normalde OLE DB tüketici makroları [BEGIN_COLUMN_MAP](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_column_map), [end_column_map](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_column_map)ve [COLUMN_ENTRY](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#column_entry)kullanılarak tanımlanan sütun eşlemesini ayarlar. Bu, belirtilen sütunu bağlamak için OLE DB [Dbbinding yapısını](/previous-versions/windows/desktop/ms716845(v=vs.85)) işleyebilir. **Db_column** özniteliğiyle işaretlediğiniz her üye, sütun haritasında sütun girişi biçiminde bir giriş kaplayacaktır. Bu nedenle, bu özniteliği komut veya tablo sınıfında sütun haritasını yerleştireceğiniz yerde çağırabilirsiniz.
 
 [Db_table](db-table.md) veya [db_command](db-command.md) öznitelikleriyle birlikte **db_column** kullanın.
 
@@ -101,9 +101,9 @@ class CProducts {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntemi|
-|**Tekrarlanabilir**|No|
-|**Gerekli öznitelikler**|Yok|
-|**Geçersiz öznitelikler**|Yok|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikler**|Hiçbiri|
+|**Geçersiz öznitelikler**|Hiçbiri|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

@@ -50,12 +50,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: 53ea92c2eece31829a7554c0f9accf2e56d727a9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e72204102bfa47a9dd162499030a38c07bbfe46c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840732"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504011"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 
@@ -105,7 +105,7 @@ OLE DB şablonları sağlayıcı makroları aşağıdaki kategorilerdeki işlevl
 
 Özellik kümesi eşlemesinde bir özelliğin başlangıcını işaretler.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_PROPERTY_SET(guid)
@@ -118,13 +118,13 @@ BEGIN_PROPERTY_SET(guid)
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="begin_property_set_ex"></a><a name="begin_property_set_ex"></a> BEGIN_PROPERTY_SET_EX
 
 Özellik kümesi eşlemesinde bir özelliğin başlangıcını işaretler.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_PROPERTY_SET_EX(guid, flags)
@@ -140,13 +140,13 @@ BEGIN_PROPERTY_SET_EX(guid, flags)
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="begin_propset_map"></a><a name="begin_propset_map"></a> BEGIN_PROPSET_MAP
 
 Özellik kümesi eşleme girdilerinin başlangıcını işaretler.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_PROPSET_MAP(Class)
@@ -173,7 +173,7 @@ BEGIN_PROPSET_MAP(Class)
 
 Bu makro, özellik gruplarını birlikte zincirler.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CHAIN_PROPERTY_SET(ChainClass)
@@ -195,7 +195,7 @@ Başka bir sınıftan bir özellik kümesini kendi sınıfınıza zincirleyebili
 
 Bir özellik kümesinin sonunu işaretler.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 END_PROPERTY_SET(guid)
@@ -208,13 +208,13 @@ END_PROPERTY_SET(guid)
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="end_propset_map"></a><a name="end_propset_map"></a> END_PROPSET_MAP
 
 Özellik kümesi eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Syntax
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 END_PROPSET_MAP()
@@ -222,13 +222,13 @@ END_PROPSET_MAP()
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="property_info_entry"></a><a name="property_info_entry"></a> PROPERTY_INFO_ENTRY
 
 Bir özellik kümesindeki belirli bir özelliği temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROPERTY_INFO_ENTRY(dwPropID)
@@ -241,17 +241,17 @@ PROPERTY_INFO_ENTRY(dwPropID)
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, türünün özellik değerini `DWORD` ATLDB içinde tanımlanan varsayılan değere ayarlar. Olsun. Özelliği seçtiğiniz bir değere ayarlamak için [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)kullanın. `VARTYPE`Özelliği için ve [dbpropflags](/previous-versions/windows/desktop/ms724342(v=vs.85)) ' i aynı anda ayarlamak için [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)kullanın.
+Bu makro, türünün özellik değerini `DWORD` ATLDB. H içinde tanımlanan varsayılan değere ayarlar. Özelliği seçtiğiniz bir değere ayarlamak için [PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value)kullanın. `VARTYPE`Özelliği için ve [dbpropflags](/previous-versions/windows/desktop/ms724342(v=vs.85)) ' i aynı anda ayarlamak için [PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex)kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="property_info_entry_ex"></a><a name="property_info_entry_ex"></a> PROPERTY_INFO_ENTRY_EX
 
 Bir özellik kümesindeki belirli bir özelliği temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
@@ -276,17 +276,17 @@ Ya DBPROPOPTIONS_REQUIRED ya da DBPROPOPTIONS_SETIFCHEAP. Normalde, bir sağlay�
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro ile, hem tür hem de bayrak özellik değerini doğrudan belirtebilirsiniz `DWORD` . Yalnızca bir özelliği ATLDB 'de tanımlanan varsayılan bir değere ayarlamak için. H, [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md)kullanın. Bir özelliği seçtiğiniz bir değere ayarlamak için, üzerinde seçenek veya bayrak ayarlamadan [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)kullanın.
+Bu makro ile, hem tür hem de bayrak özellik değerini doğrudan belirtebilirsiniz `DWORD` . Yalnızca bir özelliği ATLDB 'de tanımlanan varsayılan bir değere ayarlamak için. H, [PROPERTY_INFO_ENTRY](#property_info_entry)kullanın. Bir özelliği seçtiğiniz bir değere ayarlamak için, üzerinde seçenek veya bayrak ayarlamadan [PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value)kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="property_info_entry_value"></a><a name="property_info_entry_value"></a> PROPERTY_INFO_ENTRY_VALUE
 
 Bir özellik kümesindeki belirli bir özelliği temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
@@ -302,17 +302,17 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro ile, türünün özellik değerini doğrudan belirtebilirsiniz `DWORD` . Özelliği, ATLDB 'de tanımlanan varsayılan değere ayarlamak için. H, [PROPERTY_INFO_ENTRY](../../data/oledb/property-info-entry.md)kullanın. Özelliğin değerini, bayraklarını ve seçeneklerini ayarlamak için [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)kullanın.
+Bu makro ile, türünün özellik değerini doğrudan belirtebilirsiniz `DWORD` . Özelliği, ATLDB 'de tanımlanan varsayılan değere ayarlamak için. H, [PROPERTY_INFO_ENTRY](#property_info_entry)kullanın. Özelliğin değerini, bayraklarını ve seçeneklerini ayarlamak için [PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex)kullanın.
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
+Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 ### <a name="begin_provider_column_map"></a><a name="begin_provider_column_map"></a> BEGIN_PROVIDER_COLUMN_MAP
 
 Sağlayıcı sütun eşleme girdilerinin başlangıcını işaretler.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_PROVIDER_COLUMN_MAP(theClass)
@@ -333,7 +333,7 @@ BEGIN_PROVIDER_COLUMN_MAP(theClass)
 
 Sağlayıcı sütun eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Syntax
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 END_PROVIDER_COLUMN_MAP()
@@ -341,13 +341,13 @@ END_PROVIDER_COLUMN_MAP()
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry"></a><a name="provider_column_entry"></a> PROVIDER_COLUMN_ENTRY
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY (name, ordinal, member)
@@ -368,7 +368,7 @@ PROVIDER_COLUMN_ENTRY (name, ordinal, member)
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
@@ -394,13 +394,13 @@ Sütun veri türünü belirtmenize izin verir.
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry_gn"></a><a name="provider_column_entry_gn"></a> PROVIDER_COLUMN_ENTRY_GN
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scale, guid)
@@ -440,7 +440,7 @@ Sütunun boyutunu, veri türünü, duyarlılığını, ölçeğini ve şema sat�
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)
@@ -466,13 +466,13 @@ Sütun boyutunu belirtmenize izin verir.
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry_str"></a><a name="provider_column_entry_str"></a> PROVIDER_COLUMN_ENTRY_STR
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
@@ -495,13 +495,13 @@ Sütun verilerinin [dbtype_str](/previous-versions/windows/desktop/ms711251(v=vs
 
 #### <a name="example"></a>Örnek
 
-Bkz. [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
+Bkz. [BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map).
 
 ### <a name="provider_column_entry_type_length"></a><a name="provider_column_entry_type_length"></a> PROVIDER_COLUMN_ENTRY_TYPE_LENGTH
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
@@ -526,13 +526,13 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 
 #### <a name="remarks"></a>Açıklamalar
 
-[PROVIDER_COLUMN_ENTRY_LENGTH](../../data/oledb/provider-column-entry-length.md) benzer ancak sütunun veri türünü ve boyutunu belirtmenize de olanak tanır.
+[PROVIDER_COLUMN_ENTRY_LENGTH](#provider_column_entry_length) benzer ancak sütunun veri türünü ve boyutunu belirtmenize de olanak tanır.
 
 ### <a name="provider_column_entry_wstr"></a><a name="provider_column_entry_wstr"></a> PROVIDER_COLUMN_ENTRY_WSTR
 
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
@@ -557,7 +557,7 @@ Sütun verileri boş bir sonlandırılmış Unicode karakter dizesi olduğunda b
 
 Bir şema eşlemesinin başlangıcını gösterir.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_SCHEMA_MAP(SchemaClass);
@@ -576,7 +576,7 @@ HARITAYı içeren sınıf. Genellikle bu oturum sınıfı olacaktır.
 
 Şema eşlemesinin sonunu belirtir.
 
-#### <a name="syntax"></a>Syntax
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 END_SCHEMA_MAP()
@@ -590,7 +590,7 @@ Daha fazla bilgi için bkz. [IDBSchemaRowsetImpl Class](../../data/oledb/idbsche
 
 GUID 'ı bir sınıf ile ilişkilendirir.
 
-#### <a name="syntax"></a>Söz dizimi
+#### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 SCHEMA_ENTRY(guid,

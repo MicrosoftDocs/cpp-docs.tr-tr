@@ -1,5 +1,5 @@
 ---
-title: /sourceDependencies (rapor kaynak düzeyi bağımlılıkları)
+title: /sourceDependencies (Kaynak düzey bağımlılıkları raporla)
 description: Microsoft C++ ' da/sourceDependencies derleyici seçeneğine başvuru kılavuzu.
 ms.date: 07/29/2020
 f1_keywords:
@@ -7,23 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - /sourceDependencies compiler option
 - /sourceDependencies
-ms.openlocfilehash: 3198353ea7569c426a556522d6b931fe23c7f12c
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 0c1866812435c777f6f1fd7ed7f9db788a8cf031
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87528074"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91502835"
 ---
-# <a name="sourcedependencies-report-source-level-dependencies"></a>`/sourceDependencies`(Rapor kaynak düzeyi bağımlılıkları)
+# <a name="sourcedependencies-report-source-level-dependencies"></a>`/sourceDependencies` (Rapor kaynak düzeyi bağımlılıkları)
 
 Derleyiciye derleme sırasında kullanılan kaynak düzeyi bağımlılıklarını ayrıntılarıyla gösteren bir JSON dosyası oluşturmasını söyler.
 
 JSON dosyası, aşağıdakiler dahil olmak üzere kaynak bağımlılıklarının bir listesini içerir:
+
 - Üst bilgi dosyaları (geçişli ve doğrudan eklenen üst bilgiler).
 - Kullanılan PCH ( **`/Yu`** belirtilmişse).
 - İçeri aktarılan modüller ve içeri aktarılan üst bilgi birimleri (geçişli ve doğrudan içeri aktarılan modüller/başlık birimleri).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 > **`/sourceDependencies`***dosya adı*\
 > **`/sourceDependencies`***Dizin*

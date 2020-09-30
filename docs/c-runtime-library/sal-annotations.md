@@ -47,19 +47,19 @@ helpviewer_keywords:
 - ecount annotation
 - bcount annotation
 ms.assetid: 81893638-010c-41a0-9cb3-666fe360f3e0
-ms.openlocfilehash: 77b934010b7f76b556a4c7ba9826fbedfc36b95e
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 64f1ef513f34f11f2569f0afb854a0e2762082b6
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415836"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503480"
 ---
 # <a name="sal-annotations"></a>SAL Ek Açıklamaları
 
-Kitaplık üst bilgi dosyalarını incelerseniz, `_In_z` ve `_Out_z_cap_(_Size)`gibi olağan dışı ek açıklamaların fark edebilirsiniz. Bunlar, bir işlevin parametrelerini nasıl kullandığını açıklayan bir dizi ek açıklama sunan Microsoft kaynak kodu ek açıklama diline (SAL) örnektir. Örneğin, bunlar hakkında sağladığı varsayımlar ve tamamlanmakta olan garanti. \<Sal. h > üstbilgi dosyası ek açıklamaları tanımlıyor.
+Kitaplık üst bilgi dosyalarını incelerseniz, ve gibi bazı Olağandışı ek açıklamaların fark edebilirsiniz `_In_z` `_Out_z_cap_(_Size)` . Bunlar, bir işlevin parametrelerini nasıl kullandığını açıklayan bir dizi ek açıklama sunan Microsoft kaynak kodu ek açıklama diline (SAL) örnektir. Örneğin, bunlar hakkında sağladığı varsayımlar ve tamamlanmakta olan garanti. Üst bilgi dosyası \<sal.h> ek açıklamaları tanımlar.
 
-Visual Studio 'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi için bkz. [sal ek açıklamalarını kullanarak CC++ /Code kusurlarını azaltma](/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+Visual Studio 'da SAL ek açıklamalarını kullanma hakkında daha fazla bilgi için, bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)

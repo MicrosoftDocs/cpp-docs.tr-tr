@@ -25,18 +25,18 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: dfa3873917d5215d0069e504e0556c31744f4334
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7ceaf30318c176b13cb6f81c8401501863b988a4
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840394"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504046"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
 
 [IRowsetInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabirimi için bir uygulama sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, class PropClass = T>
@@ -69,13 +69,13 @@ Varsayılan olarak *T*olarak kullanılacak kullanıcı tanımlı bir özellik s�
 
 ## <a name="remarks"></a>Açıklamalar
 
-Satır kümelerinde zorunlu bir arabirim. Bu sınıf, komut sınıfınıza tanımlanan [özellik kümesi eşlemesini](../../data/oledb/begin-propset-map.md) kullanarak satır kümesi özelliklerini uygular. Satır kümesi sınıfı komut sınıfı ' özellik kümelerini kullanıyor gibi görünse de, satır kümesi bir komut veya oturum nesnesi tarafından oluşturulduğunda çalışma zamanı özelliklerinin kendi kopyasıyla birlikte sağlanır.
+Satır kümelerinde zorunlu bir arabirim. Bu sınıf, komut sınıfınıza tanımlanan [özellik kümesi eşlemesini](./macros-for-ole-db-provider-templates.md#begin_propset_map) kullanarak satır kümesi özelliklerini uygular. Satır kümesi sınıfı komut sınıfı ' özellik kümelerini kullanıyor gibi görünse de, satır kümesi bir komut veya oturum nesnesi tarafından oluşturulduğunda çalışma zamanı özelliklerinin kendi kopyasıyla birlikte sağlanır.
 
 ## <a name="irowsetinfoimplgetproperties"></a><a name="getproperties"></a> IRowsetInfoImpl:: GetProperties
 
 Gruptaki özelliklerin geçerli ayarlarını döndürür `DBPROPSET_ROWSET` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
@@ -92,7 +92,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 Bir yer işaretinin uygulandığı satır kümesine bir arabirim işaretçisi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
@@ -108,7 +108,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 Bu satır kümesini oluşturan nesne (komut veya oturum) üzerinde bir arabirim işaretçisi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetSpecification )(REFIID riid,

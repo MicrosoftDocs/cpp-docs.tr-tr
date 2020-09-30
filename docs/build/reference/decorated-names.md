@@ -6,12 +6,12 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: 20e7f5855b771caf23217e5c17db50a890e28113
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0cda21b1650fa660175248c15560a7ab0b251d07
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223856"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504243"
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 
@@ -22,7 +22,7 @@ Düzenlenmiş adlandırma kuralları, Visual Studio 'nun çeşitli sürümlerind
 > [!NOTE]
 > Visual Studio 2015 ile oluşturulan kitaplıklar, Visual Studio 2017 veya Visual Studio 2019 ile oluşturulmuş uygulamalar tarafından kullanılabilir.
 
-## <a name="using-decorated-names"></a><a name="Using"></a>Düzenlenmiş adlar kullanma
+## <a name="using-decorated-names"></a><a name="Using"></a> Düzenlenmiş adlar kullanma
 
 Normal olarak, derlenen ve başarıyla bağlanan kodu yazmak için düzenlenmiş adı bilmeniz gerekmez. Düzenlenmiş adlar, derleyici ve bağlayıcının iç bir uygulama ayrıntısıyla yapılır. Araçlar genellikle adı kendi kendine ait olmayan biçimde işleyebilir. Ancak, bağlayıcı ve diğer araçlara bir işlev adı belirttiğinizde, bazen düzenlenmiş bir ad gerekir. Örneğin, aşırı yüklenmiş C++ işlevleri, ad alanları, sınıf oluşturucular, Yıkıcılar ve özel üye işlevleri ile eşleştirmek için, düzenlenmiş adı belirtmeniz gerekir. Seçenek bayrakları ve düzenlenmiş adlar gerektiren diğer durumlar hakkında daha fazla bilgi için, kullandığınız araçlar ve seçenekler için belgelere bakın.
 
@@ -30,7 +30,7 @@ Normal olarak, derlenen ve başarıyla bağlanan kodu yazmak için düzenlenmiş
 
 Ad dekorasyonu, diğer programlama dillerinde yazılmış veya diğer derleyicilerin kullanıldığı koda bağlanırken de önemlidir. Farklı derleyiciler farklı ad dekorasyon kuralları kullanır. Yürütülebilir dosya, başka bir dilde yazılmış kodla bağlantılarsa, aktarılan ve içeri aktarılan adları ve çağırma kurallarını eşleştirmek için özel dikkatli olunması gerekir. Derleme dili kodu, MSVC kullanılarak yazılmış kaynak koda bağlantı sağlamak için MSVC ile düzenlenmiş adları ve çağırma kurallarını kullanmalıdır.
 
-## <a name="format-of-a-c-decorated-name"></a><a name="Format"></a>C++ ile düzenlenmiş adın biçimi
+## <a name="format-of-a-c-decorated-name"></a><a name="Format"></a> C++ ile düzenlenmiş adın biçimi
 
 C++ işlevi için düzenlenmiş bir ad aşağıdaki bilgileri içerir:
 
@@ -53,7 +53,7 @@ C++ işlevi için düzenlenmiş bir ad aşağıdaki bilgileri içerir:
 |`int a(char){int i=3;return i;};`|`?a@@YAHD@Z`|
 |`void __stdcall b::c(float){};`|`?c@b@@AAGXM@Z`|
 
-## <a name="format-of-a-c-decorated-name"></a><a name="FormatC"></a>C ile düzenlenmiş adın biçimi
+## <a name="format-of-a-c-decorated-name"></a><a name="FormatC"></a> C ile düzenlenmiş adın biçimi
 
 Bir C işlevinin dekoratinin biçimi, aşağıdaki tabloda gösterildiği gibi bildiriminde kullanılan çağırma kuralına bağlıdır. Bu Ayrıca, C++ kodu bağlantısına sahip olacak şekilde bildirildiğinde kullanılan dekoronun biçimidir `extern "C"` . Varsayılan çağırma kuralı **`__cdecl`** . 64 bitlik bir ortamda işlevler tasarlanmadığını unutmayın.
 
@@ -64,7 +64,7 @@ Bir C işlevinin dekoratinin biçimi, aşağıdaki tabloda gösterildiği gibi b
 |**`__fastcall`**|Baştaki ve sondaki işaretleri ( **`@`** ), ardından parametre listesindeki bayt sayısını temsil eden bir ondalık sayı izler|
 |**`__vectorcall`**|İki sonda işareti ( **`@@`** ), ardından parametre listesinde ondalık sayı|
 
-## <a name="viewing-decorated-names"></a><a name="Viewing"></a>Düzenlenmiş adları görüntüleme
+## <a name="viewing-decorated-names"></a><a name="Viewing"></a> Düzenlenmiş adları görüntüleme
 
 Veri, nesne veya işlev tanımı ya da prototipi içeren kaynak dosyayı derledikten sonra sembol adının düzenlenmiş biçimini alabilirsiniz. Programınızda düzenlenmiş adları incelemek için aşağıdaki yöntemlerden birini kullanabilirsiniz:
 
@@ -82,7 +82,7 @@ Veri, nesne veya işlev tanımı ya da prototipi içeren kaynak dosyayı derledi
 
 2. Bir simgenin düzenlenmiş biçimini bulmak için, parantez içinde açıklanedilmemiş adı arayın. Düzenlenmiş ad, bir kanal (&#124;) karakterinden sonra ve ardışık olmayan ad ile aynı satırda bulunur.
 
-## <a name="viewing-undecorated-names"></a><a name="Undecorated"></a>Açıklanmamalıdır adları görüntüleme
+## <a name="viewing-undecorated-names"></a><a name="Undecorated"></a> Açıklanmamalıdır adları görüntüleme
 
 Düzenlenmiş bir adı kendi kendine ait olmayan biçime dönüştürmek için undname.exe kullanabilirsiniz. Bu örnekte nasıl çalıştığı gösterilmektedir:
 
@@ -98,4 +98,4 @@ is :- "private: void __thiscall a::func1(int)"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
-[Bağlantıyı Belirtmek için extern Kullanma](../../cpp/using-extern-to-specify-linkage.md)
+[Bağlantıyı Belirtmek için extern Kullanma](../../cpp/extern-cpp.md)

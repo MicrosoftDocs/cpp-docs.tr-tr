@@ -10,12 +10,12 @@ helpviewer_keywords:
 - generic classes
 - generic C++ class wizard [C++]
 ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
-ms.openlocfilehash: e81ea442578e69bdd28301eba8f70561f6aa76c6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d5c00a35e375d133fbd3a6ed7fe3591e4b0cd54b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230551"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503126"
 ---
 # <a name="add-a-generic-c-class"></a>Genel C++ sınıfı ekleme
 
@@ -25,7 +25,7 @@ ms.locfileid: "87230551"
 
 1. **Sınıf görünümü**' de, yeni sınıfı eklemek istediğiniz projeye sağ tıklayın, **Ekle**' yi ve ardından **sınıf**' ı seçin.
 
-1. [Sınıf Ekle](../ide/add-class-dialog-box.md) iletişim kutusunda, Şablonlar bölmesinde, **C++ sınıfı**' nı seçin. [Genel C++ sınıf sihirbazını](#generic-c-class-wizard)göstermek için **Ekle** ' yi seçin.
+1. [Sınıf Ekle](./adding-a-class-visual-cpp.md#add-class-dialog-box) iletişim kutusunda, Şablonlar bölmesinde, **C++ sınıfı**' nı seçin. [Genel C++ sınıf sihirbazını](#generic-c-class-wizard)göstermek için **Ekle** ' yi seçin.
 
 1. Sihirbazda bir sınıf adı girip ayarları tanımlayın veya Varsayılanları kabul edin.
 

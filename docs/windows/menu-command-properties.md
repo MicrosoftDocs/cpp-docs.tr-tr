@@ -17,12 +17,12 @@ helpviewer_keywords:
 - mnemonics [C++], uniqueness checking
 - Check Mnemonics command
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-ms.openlocfilehash: 33b1260d088008a94d935f7e4fd7c18b0dd249e3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a950e7d0156d1b952782fddcdff26718fcf0e291
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167946"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504318"
 ---
 # <a name="menu-commands-c"></a>Menü komutları (C++)
 
@@ -30,8 +30,8 @@ Aşağıdaki bilgiler, bir menü komutu seçtiğinizde [Özellikler penceresinde
 
 |Özellik|Açıklama|
 |--------------|-----------------|
-|**Sonundan**|Şu değerlerden biri olabilir:<br/>  **None**- : kesme yok. Bu varsayılandır.<br/>  - **sütunu**: statik menüler için, bu değer menü komutunu yeni bir satıra koyar.<br/>      Açılır menülerde, bu değer menü komutunu sütunlar arasında bölme olmadan yeni bir sütuna koyar.<br/>      Bu özellik ayarlandığında menü düzenleyicisinde değil, yalnızca çalışma zamanında menü görünümü etkilenir.<br />   - **çubuğu**: **sütun** ile aynı, ancak açılan menüler için, bu değer yeni sütunu eski sütundan dikey bir satırla ayırır.<br/>      Bu özellik ayarlandığında menü **düzenleyicisinde**değil, yalnızca çalışma zamanında menü görünümü etkilenir.|
-|**Başlığını**|Menü komutunun etiketlediği metin (menü adı). Bir menü komutunun resim yazısından birini, anımsatıcı anahtarı olacak şekilde, bir ve işareti (&) ile önüne alın.|
+|**Sonundan**|Şu değerlerden biri olabilir:<br/>  - **Hiçbiri**: kesme yok. Bu varsayılan seçenektir.<br/>  - **Sütun**: statik menüler için, bu değer menü komutunu yeni bir satıra koyar.<br/>      Açılır menülerde, bu değer menü komutunu sütunlar arasında bölme olmadan yeni bir sütuna koyar.<br/>      Bu özellik ayarlandığında menü düzenleyicisinde değil, yalnızca çalışma zamanında menü görünümü etkilenir.<br />   - **Çubuk**: **sütun** ile aynı, ancak açılan menüler için, bu değer yeni sütunu eski sütundan düşey bir satırla ayırır.<br/>      Bu özellik ayarlandığında menü **düzenleyicisinde**değil, yalnızca çalışma zamanında menü görünümü etkilenir.|
+|**Başlık**|Menü komutunun etiketlediği metin (menü adı). Bir menü komutunun resim yazısından birini, anımsatıcı anahtarı olacak şekilde, bir ve işareti (&) ile önüne alın.|
 |**Edildikten**|**True**ise, menü komutu başlangıçta denetlenir. Tür: **bool**. Varsayılan: **false**.|
 |**Etkin**|**False**ise, menü öğesi devre dışıdır.|
 |**Gri**|**Doğru**ise, menü komutu başlangıçta gridir ve etkin değildir. Tür: **bool**. Varsayılan: **false**.|
@@ -41,7 +41,7 @@ Aşağıdaki bilgiler, bir menü komutu seçtiğinizde [Özellikler penceresinde
 |**İsteme**|Bu menü komutu vurgulandığında durum çubuğunda görünecek metni içerir. Metin, menü komutuyla aynı tanımlayıcıya sahip dize tablosuna yerleştirilir.<br/><br/>Bu özellik her proje türü için kullanılabilir, ancak çalışma zamanı işlevselliği MFC 'ye özgüdür.|
 |**Sağdan Sola Yasla**|Çalışma zamanında menü çubuğunda menü komutunu sağa yaslar. Tür: **bool**. Varsayılan: **false**.|
 |**Sağdan sola düzen**|Arabirim, Ibranice veya Arapça gibi sağdan sola okuyan herhangi bir dile yerelleştirildiği zaman menü komutlarının sağdan sola görüntülemesine olanak tanır.|
-|**Ayıraç**|**True**ise menü komutu bir ayırıcıdır. Tür: **bool**. Varsayılan: **false**.|
+|**Ayırıcı**|**True**ise menü komutu bir ayırıcıdır. Tür: **bool**. Varsayılan: **false**.|
 
 ## <a name="associate-menu-commands"></a>Menü komutlarını ilişkilendir
 
@@ -57,7 +57,7 @@ Bir menü komutunun ve klavye bileşiminin aynı program komutunu vermesini sağ
 
    - Değiştirici anahtarın adını (**CTRL**, **alt**veya **SHIFT**), ardından artı işareti ( **+** ) ve ek anahtarın adı, harfi veya sembolünü yazın.
 
-   Örneğin, **Dosya** menüsündeki **aç** komutuna **CTRL**+**O** atamak için, menü komutunun **başlığını** aşağıdaki metin gibi görünecek şekilde değiştirirsiniz:
+   Örneğin, **Ctrl** + **Dosya** menüsündeki **Aç** komutuna CTRL**O** atamak için menü komutunun **başlığını** aşağıdaki metin gibi görünecek şekilde değiştirirsiniz:
 
    ```
    &Open...\tCtrl+O
@@ -65,17 +65,17 @@ Bir menü komutunun ve klavye bileşiminin aynı program komutunu vermesini sağ
 
    **Menü düzenleyicisinde** menü komutu, yazarken yeni açıklamalı alt yazıyı yansıtacak şekilde güncelleştirilir.
 
-1. **Hızlandırıcı Düzenleyicisi 'nde** [Hızlandırıcı-tablosu girişini oluşturun](../windows/adding-an-entry-to-an-accelerator-table.md) ve menü komutuyla aynı tanımlayıcıya atayın. Anımsanması kolay olacağını düşündüğünüz bir tuş birleşimini kullanın.
+1. **Hızlandırıcı Düzenleyicisi 'nde** [Hızlandırıcı-tablosu girişini oluşturun](./accelerator-editor.md) ve menü komutuyla aynı tanımlayıcıya atayın. Anımsanması kolay olacağını düşündüğünüz bir tuş birleşimini kullanın.
 
 MFC uygulamanız, bir kullanıcının seçebileceğiniz her bir menü komutu için açıklayıcı metin gösterebilir. **Özellikler** penceresindeki **Prompt** özelliğini kullanarak her menü komutuna bir metin dizesi atayarak açıklayıcı metni görüntüleyin. [Dize tablosunda](../windows/string-editor.md) , kimliği komutla aynı olan bir dizeniz varsa, bir Kullanıcı bir menü öğesinin üzerine geldiğinde, bir MFC uygulaması, çalışan uygulamanın durum çubuğunda Bu dize kaynağını otomatik olarak görüntüler.
 
 - Bir menü komutunu MFC uygulamalarında bir durum çubuğu metin dizesiyle ilişkilendirmek için, menü **düzenleyicisinde**menü komutunu seçin. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), **istem** kutusuna ilişkili durum çubuğu metnini yazın.
 
-Bir C++ projede, menüler ve menü komutlarınızda bir erişim anahtarı (kullanıcının klavye ile menüyü seçmesini sağlayan bir anımsatıcı) atayabilirsiniz.
+Bir C++ projesinde, menüler ve menü komutlarınızda bir erişim anahtarı (kullanıcının klavye ile menüyü seçmesini sağlayan bir anımsatıcı) atayabilirsiniz.
 
-- Bir menü komutuna bir erişim (kısayol) anahtarı atamak için, ilgili erişim anahtarı olarak bu harfi belirtmek üzere menü adı veya komut adındaki bir harfin önüne bir ampersan (`&`) yazın.
+- Bir menü komutuna bir erişim (kısayol) tuşu atamak için, `&` ilgili erişim anahtarı olarak bu harfi belirtmek üzere menü adı veya komut adındaki bir harfin önüne bir ampersan () yazın.
 
-   Örneğin, "& File" **Alt**+**F** 'yi Microsoft Windows için yazılmış uygulamalardaki **Dosya** menüsünün kısayol tuşu olarak ayarlar.
+   Örneğin, "&File", **alt** + **F** 'yi Microsoft Windows için yazılmış uygulamalardaki **Dosya** menüsünün kısayol tuşu olarak ayarlar.
 
    Menü öğesi, mektuplardan birine atanmış kısayol tuşuna sahip olan görünür bir ipucu sağlar. Ve işaretini izleyen harf altı çizili olarak görünür (işletim sisteminde çalışır).
 

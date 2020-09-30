@@ -23,12 +23,12 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: e931a0246340e81049df6ed0f8e26a4b91b570c7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5ac4cba4e8ad8a08fa1010758c5a343501d3af2c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215205"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91504412"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>Nasıl yapılır: derleme zamanında kaynakları dahil etme (C++)
 
@@ -40,24 +40,24 @@ Varsayılan olarak, tüm kaynaklar bir kaynak betiği (. RC) dosyasında bulunur
 
 - Farklı projeler tarafından kullanılmakta olan veya kaynak kodu sürüm denetim sisteminin bir parçası olan kaynakları dahil etmek için. Bu kaynaklar, değişikliklerin tüm projeleri etkilediği merkezi bir konumda bulunmalıdır.
 
-- Özel bir biçim olan kaynakları (örneğin, RCDATA kaynakları) dahil etmek için. RCDATA kaynakları, `nameID` alanı için değer olarak bir ifade kullanamıyoruz özel gereksinimlere sahiptir.
+- Özel bir biçim olan kaynakları (örneğin, RCDATA kaynakları) dahil etmek için. RCDATA kaynakları, bir ifadeyi alan için değer olarak kullanamıyoruz özel gereksinimlere sahiptir `nameID` .
 
 Mevcut. RC dosyalarınızda bu koşullardan herhangi birini karşılayan bölümleriniz varsa, bu bölümleri bir veya daha fazla ayrı. rc dosyasına yerleştirin ve **kaynak içerme** iletişim kutusunu kullanarak projenize ekleyin.
 
 ## <a name="resource-includes"></a>Kaynak eklemeleri
 
-**Kaynak eklemeleri** Iletişim kutusunda **derleme zamanı yönergeleri** kutusunda bunları listeleyerek, derleme zamanında projenize başka dosyalardan kaynak ekleyebilirsiniz. Project. RC dosyasındaki tüm kaynakları ve `Resource.h`tüm [sembolleri](../windows/symbols-resource-identifiers.md) depolayan proje ortamının normal çalışma düzenini değiştirmek Için **kaynak içeriği** iletişim kutusunu kullanın.
+**Kaynak eklemeleri** Iletişim kutusunda **derleme zamanı yönergeleri** kutusunda bunları listeleyerek, derleme zamanında projenize başka dosyalardan kaynak ekleyebilirsiniz. Project. RC dosyasındaki tüm kaynakları ve içindeki tüm [sembolleri](../windows/symbols-resource-identifiers.md) depolayan proje ortamının normal çalışma düzenini değiştirmek Için **kaynak içeriği** iletişim kutusunu kullanın `Resource.h` .
 
 Başlamak için [kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources)içinde bir. rc dosyasına sağ tıklayarak **kaynak içerme** Iletişim kutusunu açın, **kaynak içerme** ' yi seçin ve aşağıdaki özellikleri aklınızda edin:
 
 | Özellik | Açıklama |
 |---|---|
-| **Sembol üst bilgi dosyası** | Kaynak dosyalarınızın sembol tanımlarının depolandığı üst bilgi dosyasının adını değiştirmenize izin verir.<br/><br/>Daha fazla bilgi için bkz. [sembol üstbilgi dosyalarının adlarını değiştirme](../windows/changing-the-names-of-symbol-header-files.md). |
-| **Salt okunurdur sembol yönergeleri** | Değiştirilmemelidir sembolleri içeren üst bilgi dosyalarını dahil etmenizi sağlar.<br/><br/>Örneğin, diğer projelerle paylaşılacak sembol dosyaları. Bu, MFC. h dosyalarını da içerebilir. Daha fazla bilgi için bkz. [Shared (salt okunurdur) veya hesaplanmış semboller ekleme](../windows/including-shared-read-only-or-calculated-symbols.md). |
+| **Sembol üst bilgi dosyası** | Kaynak dosyalarınızın sembol tanımlarının depolandığı üst bilgi dosyasının adını değiştirmenize izin verir.<br/><br/>Daha fazla bilgi için bkz. [sembol üstbilgi dosyalarının adlarını değiştirme](./changing-a-symbol-or-symbol-name-id.md). |
+| **Salt okunurdur sembol yönergeleri** | Değiştirilmemelidir sembolleri içeren üst bilgi dosyalarını dahil etmenizi sağlar.<br/><br/>Örneğin, diğer projelerle paylaşılacak sembol dosyaları. Bu, MFC. h dosyalarını da içerebilir. Daha fazla bilgi için bkz. [Shared (salt okunurdur) veya hesaplanmış semboller ekleme](./changing-a-symbol-or-symbol-name-id.md). |
 | **Derleme zamanı yönergeleri** | Ana kaynak dosyanızdaki kaynaklardan ayrı olarak oluşturulan ve düzenlenen kaynak dosyalarını dahil etmenizi sağlar, derleme zamanı yönergeleri (kaynakları koşullu olarak dahil olan yönergeler gibi) veya özel bir biçimde kaynakları içerir.<br/><br/>Standart MFC kaynak dosyalarını dahil etmek için **derleme zamanı yönergeleri kutusunu** da kullanabilirsiniz. |
 
 > [!NOTE]
-> Bu metin kutularındaki girişler, sırasıyla `TEXTINCLUDE 1`, `TEXTINCLUDE 2`ve `TEXTINCLUDE 3` tarafından işaretlenmiş. rc dosyasında görünür. Daha fazla bilgi için bkz. [TN035: Visual C++Ile birden fazla kaynak dosyası ve üstbilgi dosyası kullanma ](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md).
+> Bu metin kutularındaki girişler,, ve sırasıyla işaretlenmiş. rc dosyasında görünür `TEXTINCLUDE 1` `TEXTINCLUDE 2` `TEXTINCLUDE 3` . Daha fazla bilgi için bkz. [TN035: birden fazla kaynak dosyası ve üstbilgi dosyası kullanma Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md).
 
 Kaynak dosya **eklemeleri** iletişim kutusu kullanılarak kaynak dosyanızda değişiklik yapıldıktan sonra değişikliklerin etkili olması için *. RC* dosyasını kapatıp yeniden açmanız gerekir.
 
@@ -79,12 +79,12 @@ Bu şekilde, dosyalardaki kaynaklar yalnızca derleme sırasında yürütülebil
 
 ### <a name="to-find-symbols-in-resources"></a>Kaynaklardaki sembolleri bulmak için
 
-1. Menü **düzenle** > [simge bul](/visualstudio/ide/go-to)' a gidin.
+1. Menü **Düzenle**  >  [bul simgesine](/visualstudio/ide/go-to)git.
 
    > [!TIP]
    > Aramadaki [Normal ifadeleri](/visualstudio/ide/using-regular-expressions-in-visual-studio) kullanmak Için, **bul simgesi**yerine **Düzenle** menüsünde [dosyalarda bul](/visualstudio/ide/reference/find-command) ' u seçin. [Bul iletişim kutusunda](/visualstudio/ide/finding-and-replacing-text) **: normal ifadeler** **onay kutusunu seçin ve Aranan kutusunda,** açılan listeden bir normal arama ifadesi seçebilirsiniz. Bu listeden bir ifade seçtiğinizde, **Aranan kutusunda arama** metni olarak değiştirilir.
 
-1. **Aranan kutusunda,** açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz Hızlandırıcı anahtarını yazın, örneğin `ID_ACCEL1`.
+1. **Aranan kutusunda,** açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz Hızlandırıcı anahtarını yazın, örneğin, `ID_ACCEL1` .
 
 1. **Bul** seçeneklerinden birini belirleyin ve **Sonrakini Bul**' u seçin.
 
@@ -97,6 +97,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource-script-file.md)<br/>
 [Nasıl yapılır: kaynakları yönetme](../windows/how-to-copy-resources.md)<br/>

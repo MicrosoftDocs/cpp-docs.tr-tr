@@ -3,12 +3,12 @@ title: 'Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows Platformu uygulamas
 description: Evrensel Windows Platformu uygulamalarda mevcut kod uygulamalarınızı ve kitaplıklarınızı kullanmanın yolları.
 ms.date: 09/04/2020
 ms.assetid: 87e5818c-3081-42f3-a30d-3dca2cf0645c
-ms.openlocfilehash: 1e946d588f1a14018ebb11a60b319c2d54658f25
-ms.sourcegitcommit: 0df2b7ab4e81284c5248e4584767591dcc1950c3
+ms.openlocfilehash: fd23c875d67654e96a828f4dba412dd74652912a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89609126"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91503669"
 ---
 # <a name="how-to-use-existing-c-code-in-a-universal-windows-platform-app"></a>Nasıl yapılır: Mevcut C++ kodunu Evrensel Windows Platformu uygulamasında kullanma
 
@@ -30,7 +30,7 @@ Diğer dillerdeki arayanlara işlevselliği göstermek için, kitaplığı bir W
 
 Önceki tartışma, farklı şekilde işlenmesi gereken COM bileşenlerine uygulanmaz. Bir EXE veya DLL 'de bir COM sunucunuz varsa, bunu bir Evrensel Windows projesinde kullanabilirsiniz. Bunu, kayıtsız bir [com bileşeni](/windows/win32/sbscs/creating-registration-free-com-objects)olarak paketleyin, projenize bir içerik dosyası olarak ekleyin ve kullanarak örneğini oluşturun [`CoCreateInstanceFromApp`](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstancefromapp) . Daha fazla bilgi için bkz. [Windows Mağazası C++ projesinde ÜCRETSIZ com dll kullanma](/archive/blogs/win8devsupport/using-free-com-dll-in-windows-store-c-project).
 
-UWP 'ye mevcut bir COM kitaplığını bağlantı noktası eklemek istiyorsanız, bunu bir Windows Çalışma Zamanı bileşenine dönüştürmek de mümkündür. Bu tür bağlantı noktaları için C++/Wınrt kitaplığı önerilir, ancak [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanmak da mümkündür. WRL kullanım dışıdır ve ATL ve OLE 'nin tüm özelliklerini desteklemez. Böyle bir bağlantı noktasının uygulanabilir olup olmadığı, bileşeninizin gerektirdiği COM, ATL ve OLE özelliklerine bağlıdır.
+UWP 'ye mevcut bir COM kitaplığını bağlantı noktası eklemek istiyorsanız, bunu bir Windows Çalışma Zamanı bileşenine dönüştürmek de mümkündür. Bu tür bağlantı noktaları için C++/Wınrt kitaplığı önerilir, ancak [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../cppcx/wrl/windows-runtime-cpp-template-library-wrl.md)kullanmak da mümkündür. WRL kullanım dışıdır ve ATL ve OLE 'nin tüm özelliklerini desteklemez. Böyle bir bağlantı noktasının uygulanabilir olup olmadığı, bileşeninizin gerektirdiği COM, ATL ve OLE özelliklerine bağlıdır.
 
 Seçtiğiniz geliştirme senaryolarında, bazı makro tanımlarından haberdar olmanız gerekir. Kodu hem klasik masaüstü Win32 hem de UWP altında koşullu olarak derlemek için kodunuzda bu makroları kullanabilirsiniz.
 
