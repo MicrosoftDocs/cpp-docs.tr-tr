@@ -7,12 +7,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: f3a0b4a9c57fd55c6788481adbf91c48e362444e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b82c1f7105b3fd03d8c21dd79617dbc66f3e090c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833406"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507773"
 ---
 # <a name="tutorial-vcperf-and-windows-performance-analyzer"></a>Öğretici: vcperf ve Windows Performans Çözümleyicisi
 
@@ -123,10 +123,10 @@ Grafik Gezgini panelinde diğer görünümler de mevcuttur. İçerdikleri bilgil
 [Öğretici: Windows Performans Çözümleyicisi temelleri](wpa-basics.md)\
 Derleme izlemelerinizi çözümlemenize yardımcı olabilecek genel WPA işlemleri hakkında bilgi edinin.
 
-[Reference: vcperf komutları](/cpp/build-insights/reference/vcperf-commands)\
+[Reference: vcperf komutları](../reference/vcperf-commands.md)\
 *vcperf.exe* komut başvurusu, kullanılabilir tüm komut seçeneklerini listeler.
 
-[Başvuru: Windows Performans Çözümleyici görünümleri](/cpp/build-insights/reference/wpa-views)\
+[Başvuru: Windows Performans Çözümleyici görünümleri](../reference/wpa-views.md)\
 WPA 'daki C++ derleme öngörüleri görünümleri hakkında daha fazla bilgi için bu makaleye bakın.
 
 [Windows Performans Çözümleyicisi](/windows-hardware/test/wpt/windows-performance-analyzer)\

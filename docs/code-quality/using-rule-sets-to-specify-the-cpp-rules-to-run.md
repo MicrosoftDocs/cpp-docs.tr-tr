@@ -4,18 +4,18 @@ ms.date: 07/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 2f2b11d060b2f02c5fc5874ef135e1ee3550b840
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f9876a2ce164d0a129ba21405ec61fdcbbd8de91
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845165"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507477"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 
 Visual Studio 'da, kod analizi ile ilişkili belirli proje ihtiyaçlarını karşılamak için özel bir *kural kümesi* oluşturabilir ve değiştirebilirsiniz. Varsayılan kural kümeleri içinde depolanır *`%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`* .
 
-**Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunu, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 sürüm 15,7 ve üzeri:** Herhangi bir metin düzenleyicisini kullanarak özel kural kümeleri oluşturabilir ve bunu, hangi yapı sistemini kullandığınıza bağımsız olarak komut satırı yapılarına uygulayabilirsiniz. Daha fazla bilgi için bkz. [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md).
 
 Visual Studio 'da özel bir C++ kural kümesi oluşturmak için Visual Studio IDE 'de bir C/C++ projesi açık olmalıdır. Daha sonra kural kümesi düzenleyicisinde bir standart kural kümesi açıp, belirli kuralları ekleyip kaldırarak ve isteğe bağlı olarak, kod analizi bir kuralın ihlal edildiğini belirlediğinde oluşan eylemi değiştirirsiniz.
 
@@ -98,7 +98,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir metin düzenleyicisinde bir kural kümesi oluşturmak için
 
-Bir metin düzenleyicisinde özel bir kural kümesi oluşturabilir, bunu bir uzantıya sahip herhangi bir yerde saklayabilir *`.ruleset`* ve [`/analyze:ruleset`](/cpp/build/reference/analyze-code-analysis) derleyici seçeneğiyle uygulayabilirsiniz.
+Bir metin düzenleyicisinde özel bir kural kümesi oluşturabilir, bunu bir uzantıya sahip herhangi bir yerde saklayabilir *`.ruleset`* ve [`/analyze:ruleset`](../build/reference/analyze-code-analysis.md) derleyici seçeneğiyle uygulayabilirsiniz.
 
 Aşağıdaki örnek, başlangıç noktası olarak kullanabileceğiniz temel bir kural kümesi dosyasını gösterir:
 

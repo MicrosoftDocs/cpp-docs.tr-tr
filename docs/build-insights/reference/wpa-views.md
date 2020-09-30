@@ -7,12 +7,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 8bbcc43ef19adfd85a3679a2136d471333a74a10
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a5b13ee08becd472b3bc52319212b84a9c8ffc25
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224103"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508808"
 ---
 # <a name="reference-windows-performance-analyzer-views"></a>Başvuru: Windows Performans Çözümleyici görünümleri
 
@@ -28,7 +28,7 @@ Bu makalede, Windows Performans Çözümleyicisi 'nde (WPA) kullanılabilen C++ 
 - veri sütunu açıklamaları; '
 - tasarlanan kullanımları ve tercih edilen görüntüleme modunu içeren her bir görünüm için kullanılabilir Önayarlar.
 
-WPA 'yı yeni kullanmaya başladıysanız, öncelikle [C++ derleme öngörülerine YÖNELIK WPA temellerini](/cpp/build-insights/tutorials/wpa-basics)öğrenmeniz önerilir.
+WPA 'yı yeni kullanmaya başladıysanız, öncelikle [C++ derleme öngörülerine YÖNELIK WPA temellerini](../tutorials/wpa-basics.md)öğrenmeniz önerilir.
 
 ## <a name="build-explorer"></a>Yapı Gezgini
 
@@ -52,8 +52,8 @@ Yapı Gezgini görünümü şu şekilde kullanılır:
 | Yani, Iveduration        | Bu etkinliğin tüm alt etkinlikler dahil olmak üzere milisaniyelik süresi. |
 | Incationdescription    | Bu olayın oluştuğu çağrının metinsel açıklaması. Açıklama *cl.exe* veya *link.exe*ve benzersiz bir sayısal çağrı tanımlayıcısı olup olmadığını içerir. Uygulanabiliyorsa, bu, çağırma sırasında derlenen veya bağlanan bileşenin tam yolunu içerir. Herhangi bir bileşen veya birden çok bileşen oluşturan çağrılar için, yol boş olur. Çağırma tanımlayıcısı, ınvocationıd sütunundaki ile aynıdır. |
 | Invocationıd             | Bu olayın oluştuğu çağrı için benzersiz bir sayısal tanımlayıcı. |
-| Ad                     | Bu olayla temsil edilen etkinliğin veya özelliğin adı. |
-| Zaman                     | Olayın ne zaman oluştuğunu belirleyen zaman damgası. |
+| Name                     | Bu olayla temsil edilen etkinliğin veya özelliğin adı. |
+| Süre                     | Olayın ne zaman oluştuğunu belirleyen zaman damgası. |
 | Araç                     | Bu olay oluştuğunda yürütülen araç. Bu sütunun değeri CL ya da LINK. |
 | Tür                     | Geçerli olayın türü. Bu değer, etkinlik ya da özellik. |
 | Değer                    | Geçerli olay bir özellik ise, bu sütun değerini içerir. Bu sütun, geçerli olay bir etkinlik olduğunda boş bırakılır. |
@@ -92,7 +92,7 @@ Dosyalar görünümü şu şekilde kullanılır:
 | StartTime                | Geçerli dosya olayının yayıldığını temsil eden zaman damgası. |
 | Araç                     | * |
 
-\*Bu sütunun değeri, [Yapı Gezgini](#build-explorer-view-data-columns) görünümündeki ile aynıdır.
+\* Bu sütunun değeri, [Yapı Gezgini](#build-explorer-view-data-columns) görünümündeki ile aynıdır.
 
 ### <a name="files-view-presets"></a>Dosya görünümü önayarları
 
@@ -119,7 +119,7 @@ Işlevler görünümü aşırı uzun kod oluşturma süresine sahip işlevleri b
 | StartTime                | Geçerli işlev olayının ne zaman yayıldığını temsil eden zaman damgası. |
 | Araç                     | * |
 
-\*Bu sütunun değeri, [Yapı Gezgini](#build-explorer-view-data-columns) görünümündeki ile aynıdır.
+\* Bu sütunun değeri, [Yapı Gezgini](#build-explorer-view-data-columns) görünümündeki ile aynıdır.
 
 ### <a name="functions-view-presets"></a>İşlevler görünümü önayarları
 
@@ -130,9 +130,9 @@ Işlevler görünümü aşırı uzun kod oluşturma süresine sahip işlevleri b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Build Insights 'ı kullanmaya başlama](/cpp/build-insights/get-started-with-cpp-build-insights)\
+[C++ Build Insights 'ı kullanmaya başlama](../get-started-with-cpp-build-insights.md)\
 [Reference: vcperf komutları](vcperf-commands.md)\
-[Öğretici: Windows Performans Çözümleyicisi temelleri](/cpp/build-insights/tutorials/wpa-basics)\
+[Öğretici: Windows Performans Çözümleyicisi temelleri](../tutorials/wpa-basics.md)\
 [Windows Performans Çözümleyicisi](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

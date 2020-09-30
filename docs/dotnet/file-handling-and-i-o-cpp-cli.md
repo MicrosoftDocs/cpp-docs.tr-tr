@@ -1,5 +1,5 @@
 ---
-title: Dosya işleme ve g / Ç (C++/CLI)
+title: Dosya İşleme ve G-Ç (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - .NET Framework [C++], file handling
@@ -24,22 +24,22 @@ helpviewer_keywords:
 - files [C++], text
 - text files, writing in C++
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-ms.openlocfilehash: 7009c0b017c403c3f0108aa84b8ddb25a1d1564f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1cfdc4239506f22368753d8c37765e550d9b835
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325006"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508934"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 
-.NET Framework kullanan çeşitli dosya işlemlerini gösterir.
+.NET Framework kullanarak çeşitli dosya işlemlerini gösterir.
 
-Aşağıdaki konular alanında tanımlanan sınıfların kullanımını gösteren <xref:System.IO> dosya işlemleri için çeşitli gerçekleştirmek için ad alanı.
+Aşağıdaki konularda <xref:System.IO> çeşitli dosya işlemlerini gerçekleştirmek için ad alanında tanımlanan sınıfların kullanımı gösterilmektedir.
 
-## <a name="enumerate"></a> Bir dizindeki dosyaları numaralandırma
+## <a name="enumerate-files-in-a-directory"></a><a name="enumerate"></a> Dizindeki dosyaları listeleme
 
-Aşağıdaki kod örneği, bir dizindeki dosyaların bir listesini almak nasıl gösterir. Ayrıca, alt dizinler numaralandırılır. Aşağıdaki kod örneğinde <xref:System.IO.Directory.GetFiles%2A> <xref:System.IO.Directory.GetFiles%2A> ve <xref:System.IO.Directory.GetDirectories%2A> C:\Windows directory içeriğini görüntülemek için yöntemleri.
+Aşağıdaki kod örneği, bir dizindeki dosyaların listesinin nasıl alınacağını gösterir. Ayrıca, alt dizinler numaralandırılır. Aşağıdaki kod örneği, <xref:System.IO.Directory.GetFiles%2A> <xref:System.IO.Directory.GetFiles%2A> <xref:System.IO.Directory.GetDirectories%2A> C:\Windows dizininin içeriğini göstermek için ve yöntemlerini kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -66,9 +66,9 @@ int main()
 }
 ```
 
-## <a name="monitor"></a> Dosya sistemi değişikliklerini izleme
+## <a name="monitor-file-system-changes"></a><a name="monitor"></a> Dosya sistemi değişikliklerini izleme
 
-Aşağıdaki kod örneğinde <xref:System.IO.FileSystemWatcher> oluşturulan, değiştirilen, silinmiş veya yeniden adlandırılan dosyaya karşılık gelen olaylar için kaydedilecek. Kullanabileceğiniz düzenli aralıklarla yoklama dosyalarda yapılan değişiklikler için bir dizin yerine <xref:System.IO.FileSystemWatcher> bir değişiklik algıladığında olaylarını başlatmak için sınıf.
+Aşağıdaki kod örneği <xref:System.IO.FileSystemWatcher> oluşturulan, değiştirilen, silinen veya yeniden adlandırılan dosyalara karşılık gelen olaylara kaydolmak için kullanır. Dosyalarda yapılan değişiklikler için düzenli aralıklarla bir dizin yoklamak yerine, <xref:System.IO.FileSystemWatcher> bir değişiklik algılandığında olayları tetiklemesi için sınıfını kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -132,11 +132,11 @@ int main()
 }
 ```
 
-## <a name="read_binary"></a> İkili dosyaları okuma
+## <a name="read-a-binary-file"></a><a name="read_binary"></a> Ikili dosyayı oku
 
-Aşağıdaki kod örneğinde nasıl iki sınıflarını kullanarak ikili verileri bir dosyadan okunur gösterir <xref:System.IO?displayProperty=fullName> ad alanı: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryReader>. <xref:System.IO.FileStream> gerçek dosyayı temsil eder. <xref:System.IO.BinaryReader> ikili erişime izin veren akış için bir arabirim sağlar.
+Aşağıdaki kod örneği, ad alanından iki sınıf kullanarak bir dosyadan ikili verilerin nasıl okunacağını gösterir <xref:System.IO?displayProperty=fullName> : <xref:System.IO.FileStream> ve <xref:System.IO.BinaryReader> . <xref:System.IO.FileStream> gerçek dosyayı temsil eder. <xref:System.IO.BinaryReader> akış için ikili erişime izin veren bir arabirim sağlar.
 
-Kod örneği, data.bin adlı ve ikili biçimde tamsayılar içeren bir dosyayı okur. For information about this kind of file, see [How to: İkili dosyaları yazma (C++/CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md).
+Kod örneği, Data. bin adlı bir dosyayı okur ve ikili biçimde tamsayılar içerir. Bu dosya türü hakkında daha fazla bilgi için bkz. [nasıl yapılır: yazma bir Ikili dosya (C++/CLI)](#write_binary).
 
 ### <a name="example"></a>Örnek
 
@@ -173,11 +173,11 @@ int main()
 }
 ```
 
-## <a name="read_text"></a> Metin dosyası okuma
+## <a name="read-a-text-file"></a><a name="read_text"></a> Metin dosyası okuma
 
-Aşağıdaki kod örneği, açın ve kullanarak bir kerede bir metin dosyası bir satırı okumak gösterilmiştir <xref:System.IO.StreamReader> tanımlanan sınıfı <xref:System.IO?displayProperty=fullName> ad alanı. Bu sınıf örneği metin dosyası açmak için kullanılır ve ardından <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> yöntemi her satırı almak için kullanılır.
+Aşağıdaki kod örneği, <xref:System.IO.StreamReader> ad alanında tanımlanan sınıfını kullanarak bir metin dosyasının bir kerede bir satırı nasıl açıp okuyabileceğinizi gösterir <xref:System.IO?displayProperty=fullName> . Bu sınıfın bir örneği bir metin dosyası açmak için kullanılır ve ardından <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> her satırı almak için yöntemi kullanılır.
 
-Bu kod örneği, textfile.txt adlı ve metin içeren bir dosyayı okur. For information about this kind of file, see [How to: Metin dosyaları yazma (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md).
+Bu kod örneği, textfile.txt adlı ve metin içeren bir dosyayı okur. Bu dosya türü hakkında daha fazla bilgi için bkz. [nasıl yapılır: yazma metin dosyası (C++/CLI)](#write_text).
 
 ### <a name="example"></a>Örnek
 
@@ -216,11 +216,11 @@ int main()
 }
 ```
 
-## <a name="retrieve"></a> Dosya bilgisi alma
+## <a name="retrieve-file-information"></a><a name="retrieve"></a> Dosya bilgilerini al
 
-Aşağıdaki kod örneğinde <xref:System.IO.FileInfo> sınıfı. Bir dosya adı varsa, bu sınıf, oluşturma ve son değiştirilme dosyanın dosya boyutu, dizin, tam ad ve tarih ve saat gibi ilgili bilgileri almak için de kullanabilirsiniz.
+Aşağıdaki kod örneği, sınıfını göstermektedir <xref:System.IO.FileInfo> . Bir dosyanın adına sahip olduğunuzda dosya boyutu, dizin, tam ad ve oluşturma tarihi ve son değişikliğin tarih ve saati gibi bilgileri almak için bu sınıfı kullanabilirsiniz.
 
-Bu kod, Notepad.exe dosya bilgilerini alır.
+Bu kod Notepad.exe için dosya bilgilerini alır.
 
 ### <a name="example"></a>Örnek
 
@@ -257,11 +257,11 @@ int main()
 }
 ```
 
-## <a name="write_binary"></a> İkili dosyaları yazma
+## <a name="write-a-binary-file"></a><a name="write_binary"></a> Ikili dosya yaz
 
-Aşağıdaki kod örneği, ikili verileri bir dosyaya yazmak gösterir. İki sınıf <xref:System.IO> ad alanı kullanılır: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryWriter>. <xref:System.IO.FileStream> gerçek dosyayı temsil ederken <xref:System.IO.BinaryWriter> ikili erişime izin veren akış için bir arabirim sağlar.
+Aşağıdaki kod örneği, bir dosyaya ikili veri yazmayı gösterir. Ad alanındaki iki sınıf <xref:System.IO> kullanılır: <xref:System.IO.FileStream> ve <xref:System.IO.BinaryWriter> . <xref:System.IO.FileStream> gerçek dosyayı temsil ederken, <xref:System.IO.BinaryWriter> akış için ikili erişime izin veren bir arabirim sağlar.
 
-Aşağıdaki kod örneği, ikili biçimde tamsayılar içeren bir dosyasına yazar. This file can be read with the code in [How to: İkili dosyaları okuma (C++/CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md).
+Aşağıdaki kod örneği, ikili biçimde tamsayılar içeren bir dosya yazar. Bu dosya, [nasıl yapılır: bir Ikili dosyayı okuma (C++/CLI)](#read_binary)içindeki kodla okunabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -300,11 +300,11 @@ int main()
 }
 ```
 
-## <a name="write_text"></a> Metin dosyaları yazma
+## <a name="write-a-text-file"></a><a name="write_text"></a> Metin dosyası yaz
 
-Aşağıdaki kod örneği, bir metin dosyası oluşturun ve metin kullanarak yazmak gösterilmiştir <xref:System.IO.StreamWriter> sınıfı içinde tanımlanan <xref:System.IO> ad alanı. <xref:System.IO.StreamWriter> Oluşturucusu oluşturulacak dosyanın adını alır. Dosya varsa, üzerine yazılır (True saniye geçirmediğiniz sürece <xref:System.IO.StringWriter> oluşturucu bağımsız değişkeni).
+Aşağıdaki kod örneği, bir metin dosyasının nasıl oluşturulacağını ve <xref:System.IO.StreamWriter> ad alanında tanımlanan sınıfını kullanarak buna nasıl metin yazılacağını gösterir <xref:System.IO> . <xref:System.IO.StreamWriter>Oluşturucu oluşturulacak dosyanın adını alır. Dosya varsa, üzerine yazılır (doğru ikinci Oluşturucu bağımsız değişkeni olarak geçmediğiniz sürece <xref:System.IO.StringWriter> ).
 
-Dosya, ardından kullanarak dosyalanır <xref:System.IO.StreamWriter.Write%2A> ve <xref:System.IO.TextWriter.WriteLine%2A> işlevleri.
+Daha sonra dosya <xref:System.IO.StreamWriter.Write%2A> ve işlevleri kullanılarak dosyalanır <xref:System.IO.TextWriter.WriteLine%2A> .
 
 ### <a name="example"></a>Örnek
 
@@ -335,5 +335,5 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
-[Dosya ve Akış G/Ç'si](/dotnet/standard/io/index)<br/>
+[Dosya ve akış g/ç](/dotnet/standard/io/index)<br/>
 [System.IO ad alanı](/dotnet/api/system.io)

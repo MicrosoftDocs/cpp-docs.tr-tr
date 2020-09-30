@@ -3,12 +3,12 @@ title: Visual Studio 'da CMake Linux projesi oluşturma
 description: Visual Studio 'da Linux CMake projesi oluşturma
 ms.date: 08/06/2020
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 1b622bcd2af49ee51f7546be4c7a6d804c3102d0
-ms.sourcegitcommit: 2034f8e744a8b36cff8b15e9a5cfe684afebadfb
+ms.openlocfilehash: 5753dbb37c11686becb3e141261284b68468a3bc
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88043830"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507950"
 ---
 # <a name="create-a-cmake-linux-project-in-visual-studio"></a>Visual Studio 'da CMake Linux projesi oluşturma
 
@@ -67,6 +67,7 @@ Visual Studio 2019 ' de CMake betiklerinizi anlayabilmeniz, düzenlemeniz ve yaz
 ::: moniker-end
 
 ::: moniker range=">=vs-2017"
+
 ## <a name="open-a-cmake-project-folder"></a>CMake proje klasörü aç
 
 Var olan bir CMake projesi içeren bir klasörü açtığınızda, Visual Studio IntelliSense ve yapıları otomatik olarak yapılandırmak için CMake önbelleğindeki değişkenleri kullanır. Yerel yapılandırma ve hata ayıklama ayarları JSON dosyalarında depolanır. İsteğe bağlı olarak, bu dosyaları Visual Studio kullanan diğer kullanıcılarla paylaşabilirsiniz.

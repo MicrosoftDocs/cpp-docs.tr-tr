@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3172
 ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
-ms.openlocfilehash: 1da2676d660d23e3fb71b56263779b1f1edacbf9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ca0eab35f6e60d81a324156905619ceb7ace8830
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761744"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508284"
 ---
 # <a name="compiler-error-c3172"></a>Derleyici hatası C3172
 
 ' module_name ': bir projede farklı idl_module öznitelikleri belirtilemez
 
-aynı ada sahip, ancak bir derlemede farklı `dllname` veya `version` parametrelere sahip [idl_module](../../windows/idl-module.md) öznitelikleri bulundu. Her derleme için yalnızca bir benzersiz `idl_module` özniteliği belirtilebilir.
+[idl_module](../../windows/attributes/idl-module.md) `dllname` derleme içindeki dosyaların ikisi de aynı ada sahip ancak farklı veya parametrelere sahip idl_module öznitelikleri `version` bulundu. `idl_module`Her derleme için yalnızca bir benzersiz öznitelik belirtilebilir.
 
-Özdeş `idl_module` öznitelikleri, birden fazla kaynak kodu dosyasında belirtilebilir.
+Aynı `idl_module` öznitelikler birden fazla kaynak kodu dosyasında belirtilebilir.
 
-Örneğin, aşağıdaki `idl_module` öznitelikleri bulunursa:
+Örneğin, aşağıdaki `idl_module` öznitelikler bulunursa:
 
 ```cpp
 // C3172.cpp

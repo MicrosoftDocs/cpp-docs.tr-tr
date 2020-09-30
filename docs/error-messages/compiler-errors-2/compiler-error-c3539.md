@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3539
 ms.assetid: 34a33a0f-d1b6-498f-b312-ffad2d4799b3
-ms.openlocfilehash: 813da5a2fd79c191df731937e58100d749f8690c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e30ea0713229bfd8da395baef710571f8dfd49e9
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223414"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508145"
 ---
 # <a name="compiler-error-c3539"></a>Derleyici hatası C3539
 
@@ -40,4 +40,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+[auto Anahtar Sözcüğü](../../cpp/auto-cpp.md)

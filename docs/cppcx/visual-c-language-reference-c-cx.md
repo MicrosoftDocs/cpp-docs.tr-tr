@@ -2,16 +2,16 @@
 title: C++/CX dil başvurusu
 ms.date: 09/15/2017
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-ms.openlocfilehash: 4f3816280630a6a061eb037a33367ef4e9d90375
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: f28270ace3965a3cf89e250a873af14e48390708
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403861"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507429"
 ---
 # <a name="ccx-language-reference"></a>C++/CX dil başvurusu
 
-C++/CX, C++ diline yönelik bir uzantılar kümesidir ve bu, modern C++ ' ta olabildiğince yakın bir şekilde Windows Uygulamaları ve Windows Çalışma Zamanı bileşenleri oluşturulmasını sağlar. Visual C#, Visual Basic ve JavaScript ile kolayca etkileşim kuran yerel koda Windows Uygulamaları ve bileşenleri yazmak için C++/CX kullanın ve Windows Çalışma Zamanı destekleyen diğer diller vardır. Ham COM arabirimlerine veya olağanüstü olmayan koda doğrudan erişim gerektiren bu nadir durumlarda [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)kullanabilirsiniz.
+C++/CX, C++ diline yönelik bir uzantılar kümesidir ve bu, modern C++ ' ta olabildiğince yakın bir şekilde Windows Uygulamaları ve Windows Çalışma Zamanı bileşenleri oluşturulmasını sağlar. Visual C#, Visual Basic ve JavaScript ile kolayca etkileşim kuran yerel koda Windows Uygulamaları ve bileşenleri yazmak için C++/CX kullanın ve Windows Çalışma Zamanı destekleyen diğer diller vardır. Ham COM arabirimlerine veya olağanüstü olmayan koda doğrudan erişim gerektiren bu nadir durumlarda [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](./wrl/windows-runtime-cpp-template-library-wrl.md)kullanabilirsiniz.
 
 > [!NOTE]
 > **/Wınrt,/CX C++için önerilen alternatiftir. [ C++](/windows/uwp/cpp-and-winrt-apis/index)** Bu, 1803 sürümünün en son Windows 10 SDK 'sında kullanılabilen Windows Çalışma Zamanı API 'Leri için yeni, standart bir C++ 17 dil projeksiyonudur. C++/Wınrt tamamen başlık dosyalarında uygulanır ve modern Windows API 'sine ilk sınıf erişim sağlamak için tasarlanmıştır.

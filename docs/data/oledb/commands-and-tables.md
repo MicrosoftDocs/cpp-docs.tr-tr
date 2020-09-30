@@ -11,12 +11,12 @@ helpviewer_keywords:
 - tables [C++], OLE DB Consumer Templates
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-ms.openlocfilehash: 0d5f6bd8d5f813497cba399e5c071f43dc1a7c4d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f65bd0f90832039d453d84ab9765781c30750318
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211529"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507374"
 ---
 # <a name="commands-and-tables"></a>Komutlar ve Tablolar
 
@@ -25,15 +25,15 @@ Komutlar ve tablolar, satır kümelerine erişmenize izin verir; diğer bir deyi
 ![CCommand ve CTable](../../data/oledb/media/vccommandstables.gif "CCommand ve CTable")<br/>
 Komut ve tablo sınıfları
 
-Önceki tabloda, `TAccessor` [erişimci türlerinde](../../data/oledb/accessors-and-rowsets.md)listelenen herhangi bir erişimci türü olabilir. `TRowset`, [satır kümesi türlerinde](../../data/oledb/accessors-and-rowsets.md)listelenen herhangi bir satır kümesi türü olabilir. `TMultiple`, sonuç türünü belirtir (tek veya birden çok sonuç kümesi).
+Önceki tabloda, `TAccessor` [erişimci türlerinde](../../data/oledb/accessors-and-rowsets.md)listelenen herhangi bir erişimci türü olabilir. `TRowset`[satır kümesi türlerinde](../../data/oledb/accessors-and-rowsets.md)listelenen herhangi bir satır kümesi türü olabilir. `TMultiple` sonuç türünü belirtir (tek veya birden çok sonuç kümesi).
 
 [ATL OLE DB Tüketici Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md) , bir komut veya tablo nesnesi isteyip istemediğinizi belirtmenizi sağlar.
 
 - Komutları olmayan veri kaynakları için `CTable` sınıfını kullanabilirsiniz. Genellikle parametre belirtmeyen ve birden çok sonuç gerektirmeyen basit satır kümelerinde kullanılır. Bu basit sınıf, belirttiğiniz tablo adı kullanılarak bir veri kaynağındaki bir tabloyu açar.
 
-- Komutları destekleyen veri kaynakları için bunun yerine `CCommand` sınıfını kullanabilirsiniz. Bir komutu yürütmek için bu sınıfta [Açık](../../data/oledb/ccommand-open.md) ' ı çağırın. Alternatif olarak, birden çok kez yürütmek istediğiniz bir komutu hazırlamak için `Prepare` çağırabilirsiniz.
+- Komutları destekleyen veri kaynakları için, `CCommand` bunun yerine sınıfını kullanabilirsiniz. Bir komutu yürütmek için bu sınıfta [Açık](./ccommand-class.md#open) ' ı çağırın. Alternatif olarak, birden `Prepare` çok kez yürütmek istediğiniz bir komutu hazırlamak için öğesini çağırabilirsiniz.
 
-   `CCommand` üç şablon bağımsız değişkeni vardır: erişimci türü, satır kümesi türü ve sonuç türü (`CNoMultipleResults`, varsayılan olarak veya `CMultipleResults`). `CMultipleResults`belirtirseniz, `CCommand` sınıfı `IMultipleResults` arabirimini destekler ve birden çok satır kümesi işler. [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) örneği, birden çok sonucun nasıl işleneceğini gösterir.
+   `CCommand` üç şablon bağımsız değişkeni vardır: erişimci türü, satır kümesi türü ve sonuç türü ( `CNoMultipleResults` , varsayılan olarak veya `CMultipleResults` ). Belirtirseniz `CMultipleResults` , `CCommand` sınıfı `IMultipleResults` arabirimini destekler ve birden çok satır kümesi işler. [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer) örneği, birden çok sonucun nasıl işleneceğini gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

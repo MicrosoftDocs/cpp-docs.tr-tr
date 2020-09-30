@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: 5f247a99d3f04a15ebd54718a46dae8512a580d6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d0092cf107159f4c84b431f5eeae130df64dc835
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231123"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507468"
 ---
 # <a name="struct-c"></a>struct (C++)
 
 **`struct`** Anahtar sözcüğü bir yapı türü ve/veya bir yapı türünün değişkenini tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 [template-spec] struct [ms-decl-spec] [tag [: base-list ]]
@@ -38,7 +38,7 @@ ms.locfileid: "87231123"
 *MS-decl-spec*<br/>
 İsteğe bağlı depolama sınıfı belirtimi. Daha fazla bilgi için [__declspec](../cpp/declspec.md) anahtar sözcüğüne bakın.
 
-*Etiket*<br/>
+*etiket*<br/>
 Yapıya verilen tür adı. Etiket yapı kapsamında ayrılmış bir sözcük haline gelir. Etiket isteğe bağlıdır. Atlanırsa, anonim bir yapı tanımlanır. Daha fazla bilgi için bkz. [anonim sınıf türleri](../cpp/anonymous-class-types.md).
 
 *temel liste*<br/>
@@ -48,7 +48,7 @@ Bu yapının üyelerini derleyeceği isteğe bağlı sınıf veya yapı listesi.
 Yapı üyeleri listesi. Daha fazla bilgi için [sınıf üyesine genel bakış](../cpp/class-member-overview.md) bölümüne bakın. Burada tek fark, **`struct`** yerinde kullanılır **`class`** .
 
 *Bildirimciler*<br/>
-Yapının adlarını belirten bildirimci listesi. Bildirimci listeleri yapı türünün bir veya daha fazla örneğini bildirir. Bildiriciler, yapının tüm veri üyeleri ise başlatıcı listeleri içerebilir **`public`** . Veri üyeleri varsayılan olarak olduğundan, başlatıcı listeleri yapılarda ortaktır **`public`** .  Daha fazla bilgi için bkz. [Bildirimcilerin genel bakış](../cpp/overview-of-declarators.md) .
+Yapının adlarını belirten bildirimci listesi. Bildirimci listeleri yapı türünün bir veya daha fazla örneğini bildirir. Bildiriciler, yapının tüm veri üyeleri ise başlatıcı listeleri içerebilir **`public`** . Veri üyeleri varsayılan olarak olduğundan, başlatıcı listeleri yapılarda ortaktır **`public`** .  Daha fazla bilgi için bkz. [Bildirimcilerin genel bakış](./declarations-and-definitions-cpp.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 

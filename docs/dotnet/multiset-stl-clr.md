@@ -97,12 +97,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: 7c46e2b4-cd88-49b7-a9e6-63ad5ae7feb5
-ms.openlocfilehash: 4907665c25f65affab0fc2c0bbd37f70d6a3c352
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6bb7a262df21a835f1e870f2bce29480467c543
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211053"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508547"
 ---
 # <a name="multiset-stlclr"></a>çoklu set (STL/CLR)
 
@@ -110,7 +110,7 @@ ms.locfileid: "87211053"
 
 Aşağıdaki açıklamada, `GValue` ile aynı şekilde, `GKey` İkincisi bir başvuru türü olmadığı sürece *anahtarla* aynı olur ve bu durumda olur `Key^` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -206,11 +206,11 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
 Nesnesi, tek tek düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı bir (neredeyse) dengeli ağaca öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesnesi, çok [kümeli:: key_compare (STL/CLR)](../dotnet/multiset-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Çoklu küme oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<(key_type, key_type)` . Bu saklı nesneye çok [kümeli:: key_comp (STL/CLR)](../dotnet/multiset-key-comp-stl-clr.md)üye işlevini çağırarak erişirsiniz `()` .
+Nesnesi, çok [kümeli:: key_compare (STL/CLR)](#key_compare)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Çoklu küme oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<(key_type, key_type)` . Bu saklı nesneye çok [kümeli:: key_comp (STL/CLR)](#key_comp)üye işlevini çağırarak erişirsiniz `()` .
 
-Bu tür bir temsilci nesnesi, [multıset:: key_type (STL/CLR)](../dotnet/multiset-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y` :
+Bu tür bir temsilci nesnesi, [multıset:: key_type (STL/CLR)](#key_type)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y` :
 
-`key_comp()(X, Y)`her çağrıda aynı Boole sonucunu döndürür.
+`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
 
 `key_comp()(X, Y)`True ise, false olmalıdır `key_comp()(Y, X)` .
 
@@ -222,7 +222,7 @@ Bu tür bir temsilci nesnesi, [multıset:: key_type (STL/CLR)](../dotnet/multise
 
 Her öğe hem bir ey hem de bir değer görevi görür. Sıra, dizi içindeki öğe sayısının logaritmasına orantılı bir şekilde bir dizi işlem içeren rastgele bir öğenin aranması, eklenmesine ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Çoklu küme çift yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, çok [kümeli:: End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir çoklu küme yineleyicisini arttırıp daha sonra eşit olarak karşılaştırılacağını sağlayabilirsiniz `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
+Çoklu küme çift yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, çok [kümeli:: End (STL/CLR)](#end)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir çoklu küme yineleyicisini arttırıp daha sonra eşit olarak karşılaştırılacağını sağlayabilirsiniz `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Önceden kümeli bir öğeye, rastgele erişim Yineleyici gerektiren, kendi sayısal konumuna doğrudan başvurmayacağınızı unutmayın.
 
@@ -232,7 +232,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="multisetbegin-stlclr"></a><a name="begin"></a>Çoklu küme:: Begin (STL/CLR)
+## <a name="multisetbegin-stlclr"></a><a name="begin"></a> Çoklu küme:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -280,7 +280,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="multisetclear-stlclr"></a><a name="clear"></a>Çoklu küme:: Clear (STL/CLR)
+## <a name="multisetclear-stlclr"></a><a name="clear"></a> Çoklu küme:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -292,7 +292,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi etkin olmayan [Çoklu küme:: Erase (STL/CLR)](../dotnet/multiset-erase-stl-clr.md) çoklu küme: `(` [: Begin (STL/CLR)](../dotnet/multiset-begin-stl-clr.md) `(),` [Çoklu küme:: End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi etkin olmayan [Çoklu küme:: Erase (STL/CLR)](#erase) çoklu küme: `(` [: Begin (STL/CLR)](#begin) `(),` [Çoklu küme:: End (STL/CLR)](#end)çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -338,7 +338,7 @@ a b
 size() = 0
 ```
 
-## <a name="multisetconst_iterator-stlclr"></a><a name="const_iterator"></a>Çoklu küme:: const_iterator (STL/CLR)
+## <a name="multisetconst_iterator-stlclr"></a><a name="const_iterator"></a> Çoklu küme:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -380,7 +380,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetconst_reference-stlclr"></a><a name="const_reference"></a>Çoklu küme:: const_reference (STL/CLR)
+## <a name="multisetconst_reference-stlclr"></a><a name="const_reference"></a> Çoklu küme:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -425,7 +425,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>Çoklu küme:: const_reverse_iterator (STL/CLR)
+## <a name="multisetconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> Çoklu küme:: const_reverse_iterator (STL/CLR)
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
@@ -467,11 +467,11 @@ int main()
 c b a
 ```
 
-## <a name="multisetcount-stlclr"></a><a name="count"></a>Çoklu küme:: Count (STL/CLR)
+## <a name="multisetcount-stlclr"></a><a name="count"></a> Çoklu küme:: Count (STL/CLR)
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 size_type count(key_type key);
@@ -520,7 +520,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="multisetdifference_type-stlclr"></a><a name="difference_type"></a>Çoklu küme::d ifference_type (STL/CLR)
+## <a name="multisetdifference_type-stlclr"></a><a name="difference_type"></a> Çoklu küme::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -575,7 +575,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="multisetempty-stlclr"></a><a name="empty"></a>Çoklu küme:: Empty (STL/CLR)
+## <a name="multisetempty-stlclr"></a><a name="empty"></a> Çoklu küme:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -587,7 +587,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Çoklu küme:: size (STL/CLR)](../dotnet/multiset-size-stl-clr.md)eşdeğerdir `() == 0` . Bu, çok kümeli bir boş değer olup olmadığını test etmek için kullanılır.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Çoklu küme:: size (STL/CLR)](#size)eşdeğerdir `() == 0` . Bu, çok kümeli bir boş değer olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -627,7 +627,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="multisetend-stlclr"></a><a name="end"></a>multıset:: End (STL/CLR)
+## <a name="multisetend-stlclr"></a><a name="end"></a> multıset:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -676,11 +676,11 @@ a b c
 *--end() = c
 ```
 
-## <a name="multisetequal_range-stlclr"></a><a name="equal_range"></a>Çoklu küme:: equal_range (STL/CLR)
+## <a name="multisetequal_range-stlclr"></a><a name="equal_range"></a> Çoklu küme:: equal_range (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cliext::pair<iterator, iterator> equal_range(key_type key);
@@ -693,7 +693,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [:: lower_bound (STL/CLR)](../dotnet/multiset-lower-bound-stl-clr.md) `(key),` [Çoklu küme:: upper_bound (STL/CLR)](../dotnet/multiset-upper-bound-stl-clr.md) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [:: lower_bound (STL/CLR)](#lower_bound) `(key),` [Çoklu küme:: upper_bound (STL/CLR)](#upper_bound) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -736,11 +736,11 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="multiseterase-stlclr"></a><a name="erase"></a>Çoklu küme:: Erase (STL/CLR)
+## <a name="multiseterase-stlclr"></a><a name="erase"></a> Çoklu küme:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -759,12 +759,12 @@ Silinecek anahtar değer.
 *soyadına*<br/>
 Silinecek aralığın sonu.
 
-*olmadığı*<br/>
+*konum*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi belirten bir yineleyici döndürür ya da böyle bir öğe yoksa, çok [kümeli:: End (STL/CLR)](../dotnet/multiset-end-stl-clr.md) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi belirten bir yineleyici döndürür ya da böyle bir öğe yoksa, çok [kümeli:: End (STL/CLR)](#end) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
@@ -820,11 +820,11 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="multisetfind-stlclr"></a><a name="find"></a>Çoklu küme:: Find (STL/CLR)
+## <a name="multisetfind-stlclr"></a><a name="find"></a> Çoklu küme:: Find (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator find(key_type key);
@@ -837,7 +837,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde, çok [kümeli:: End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde, çok [kümeli:: End (STL/CLR)](#end)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -876,7 +876,7 @@ find b = b
 find C = False
 ```
 
-## <a name="multisetgeneric_container-stlclr"></a><a name="generic_container"></a>Çoklu küme:: generic_container (STL/CLR)
+## <a name="multisetgeneric_container-stlclr"></a><a name="generic_container"></a> Çoklu küme:: generic_container (STL/CLR)
 
 Kapsayıcının genel arabiriminin türü.
 
@@ -940,7 +940,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="multisetgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>Çoklu küme:: generic_iterator (STL/CLR)
+## <a name="multisetgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> Çoklu küme:: generic_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
@@ -996,7 +996,7 @@ a b c
 a
 ```
 
-## <a name="multisetgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>Çoklu küme:: generic_reverse_iterator (STL/CLR)
+## <a name="multisetgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> Çoklu küme:: generic_reverse_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
@@ -1052,7 +1052,7 @@ a b c
 c
 ```
 
-## <a name="multisetgeneric_value-stlclr"></a><a name="generic_value"></a>Çoklu küme:: generic_value (STL/CLR)
+## <a name="multisetgeneric_value-stlclr"></a><a name="generic_value"></a> Çoklu küme:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -1106,11 +1106,11 @@ a b c
 a
 ```
 
-## <a name="multisetinsert-stlclr"></a><a name="insert"></a>Çoklu küme:: Insert (STL/CLR)
+## <a name="multisetinsert-stlclr"></a><a name="insert"></a> Çoklu küme:: Insert (STL/CLR)
 
 Öğeleri ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator insert(value_type val);
@@ -1134,7 +1134,7 @@ Eklenecek sabit listesi.
 *Acil*<br/>
 Eklenecek anahtar değer.
 
-*olmadığı*<br/>
+*konum*<br/>
 Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1219,7 +1219,7 @@ a b b c x
 a b b c x y
 ```
 
-## <a name="multisetiterator-stlclr"></a><a name="iterator"></a>Çoklu küme:: yineleyici (STL/CLR)
+## <a name="multisetiterator-stlclr"></a><a name="iterator"></a> Çoklu küme:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1261,7 +1261,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetkey_comp-stlclr"></a><a name="key_comp"></a>Çoklu küme:: key_comp (STL/CLR)
+## <a name="multisetkey_comp-stlclr"></a><a name="key_comp"></a> Çoklu küme:: key_comp (STL/CLR)
 
 Sıralama temsilcisini iki anahtar için kopyalar.
 
@@ -1320,7 +1320,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="multisetkey_compare-stlclr"></a><a name="key_compare"></a>Çoklu küme:: key_compare (STL/CLR)
+## <a name="multisetkey_compare-stlclr"></a><a name="key_compare"></a> Çoklu küme:: key_compare (STL/CLR)
 
 İki anahtar için sıralama temsilcisi.
 
@@ -1380,7 +1380,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="multisetkey_type-stlclr"></a><a name="key_type"></a>Çoklu küme:: key_type (STL/CLR)
+## <a name="multisetkey_type-stlclr"></a><a name="key_type"></a> Çoklu küme:: key_type (STL/CLR)
 
 Bir sıralama anahtarının türü.
 
@@ -1425,11 +1425,11 @@ int main()
 a b c
 ```
 
-## <a name="multisetlower_bound-stlclr"></a><a name="lower_bound"></a>Çoklu küme:: lower_bound (STL/CLR)
+## <a name="multisetlower_bound-stlclr"></a><a name="lower_bound"></a> Çoklu küme:: lower_bound (STL/CLR)
 
 Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator lower_bound(key_type key);
@@ -1442,7 +1442,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `X` denetimli dizideki, *anahtara*denk sıralamaya sahip ilk öğeyi belirler. Böyle bir öğe yoksa, çok [kümeli:: End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, `X` denetimli dizideki, *anahtara*denk sıralamaya sahip ilk öğeyi belirler. Böyle bir öğe yoksa, çok [kümeli:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1482,11 +1482,11 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = b
 ```
 
-## <a name="multisetmake_value-stlclr"></a><a name="make_value"></a>Çoklu küme:: make_value (STL/CLR)
+## <a name="multisetmake_value-stlclr"></a><a name="make_value"></a> Çoklu küme:: make_value (STL/CLR)
 
 Değer nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 static value_type make_value(key_type key);
@@ -1528,11 +1528,11 @@ int main()
 a b c
 ```
 
-## <a name="multisetmultiset-stlclr"></a><a name="multiset"></a>Çoklu küme:: çoklu küme (STL/CLR)
+## <a name="multisetmultiset-stlclr"></a><a name="multiset"></a> Çoklu küme:: çoklu küme (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 multiset();
@@ -1699,11 +1699,11 @@ c b a
 a b c
 ```
 
-## <a name="multisetoperator-stlclr"></a><a name="op_as"></a>Çoklu küme:: operator = (STL/CLR)
+## <a name="multisetoperator-stlclr"></a><a name="op_as"></a> Çoklu küme:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 multiset<Key>% operator=(multiset<Key>% right);
@@ -1754,7 +1754,7 @@ a b c
 a b c
 ```
 
-## <a name="multisetrbegin-stlclr"></a><a name="rbegin"></a>Çoklu küme:: rbegin (STL/CLR)
+## <a name="multisetrbegin-stlclr"></a><a name="rbegin"></a> Çoklu küme:: rbegin (STL/CLR)
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
@@ -1802,7 +1802,7 @@ a b c
 *++rbegin() = b
 ```
 
-## <a name="multisetreference-stlclr"></a><a name="reference"></a>Çoklu küme:: Reference (STL/CLR)
+## <a name="multisetreference-stlclr"></a><a name="reference"></a> Çoklu küme:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -1847,7 +1847,7 @@ int main()
 a b c
 ```
 
-## <a name="multisetrend-stlclr"></a><a name="rend"></a>Çoklu küme:: rend (STL/CLR)
+## <a name="multisetrend-stlclr"></a><a name="rend"></a> Çoklu küme:: rend (STL/CLR)
 
 Ters denetlenen sıranın sonunu belirtir.
 
@@ -1896,7 +1896,7 @@ a b c
 *--rend() = a
 ```
 
-## <a name="multisetreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>Çoklu küme:: reverse_iterator (STL/CLR)
+## <a name="multisetreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> Çoklu küme:: reverse_iterator (STL/CLR)
 
 Denetlenen sıra için ters yineleyicinin türü.
 
@@ -1938,7 +1938,7 @@ int main()
 c b a
 ```
 
-## <a name="multisetsize-stlclr"></a><a name="size"></a>Çoklu küme:: size (STL/CLR)
+## <a name="multisetsize-stlclr"></a><a name="size"></a> Çoklu küme:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -1950,7 +1950,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [Çoklu küme:: boş (STL/CLR)](../dotnet/multiset-empty-stl-clr.md) `()` .
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [Çoklu küme:: boş (STL/CLR)](#empty) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -1992,7 +1992,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="multisetsize_type-stlclr"></a><a name="size_type"></a>Çoklu küme:: size_type (STL/CLR)
+## <a name="multisetsize_type-stlclr"></a><a name="size_type"></a> Çoklu küme:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -2040,11 +2040,11 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="multisetswap-stlclr"></a><a name="swap"></a>Çoklu küme:: swap (STL/CLR)
+## <a name="multisetswap-stlclr"></a><a name="swap"></a> Çoklu küme:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void swap(multiset<Key>% right);
@@ -2108,7 +2108,7 @@ d e f
 a b c
 ```
 
-## <a name="multisetto_array-stlclr"></a><a name="to_array"></a>Çoklu küme:: to_array (STL/CLR)
+## <a name="multisetto_array-stlclr"></a><a name="to_array"></a> Çoklu küme:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -2158,11 +2158,11 @@ a b c d
 a b c
 ```
 
-## <a name="multisetupper_bound-stlclr"></a><a name="upper_bound"></a>Çoklu küme:: upper_bound (STL/CLR)
+## <a name="multisetupper_bound-stlclr"></a><a name="upper_bound"></a> Çoklu küme:: upper_bound (STL/CLR)
 
 Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator upper_bound(key_type key);
@@ -2175,7 +2175,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki en son öğeyi, `X` *anahtara*denk sıralama olarak belirler. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise, çok [kümeli:: End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki en son öğeyi, `X` *anahtara*denk sıralama olarak belirler. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise, çok [kümeli:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2215,7 +2215,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = c
 ```
 
-## <a name="multisetvalue_comp-stlclr"></a><a name="value_comp"></a>Çoklu küme:: value_comp (STL/CLR)
+## <a name="multisetvalue_comp-stlclr"></a><a name="value_comp"></a> Çoklu küme:: value_comp (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisini kopyalar.
 
@@ -2259,7 +2259,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="multisetvalue_compare-stlclr"></a><a name="value_compare"></a>Çoklu küme:: value_compare (STL/CLR)
+## <a name="multisetvalue_compare-stlclr"></a><a name="value_compare"></a> Çoklu küme:: value_compare (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisi.
 
@@ -2304,7 +2304,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="multisetvalue_type-stlclr"></a><a name="value_type"></a>Çoklu küme:: value_type (STL/CLR)
+## <a name="multisetvalue_type-stlclr"></a><a name="value_type"></a> Çoklu küme:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -2349,11 +2349,11 @@ int main()
 a b c
 ```
 
-## <a name="operator-multiset-stlclr"></a><a name="op_neq"></a>işleç! = (çoklu küme) (STL/CLR)
+## <a name="operator-multiset-stlclr"></a><a name="op_neq"></a> işleç! = (çoklu küme) (STL/CLR)
 
 Liste eşit değildir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -2419,11 +2419,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-multiset-stlclr"></a><a name="op_lt"></a>işleç &lt; (çoklu küme) (STL/CLR)
+## <a name="operatorlt-multiset-stlclr"></a><a name="op_lt"></a> işleç &lt; (çoklu küme) (STL/CLR)
 
 Liste karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -2489,11 +2489,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-multiset-stlclr"></a><a name="op_lteq"></a>operator &lt; = (çoklu küme) (STL/CLR)
+## <a name="operatorlt-multiset-stlclr"></a><a name="op_lteq"></a> operator &lt; = (çoklu küme) (STL/CLR)
 
 Küçüktür veya eşit karşılaştırma listesi.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -2559,11 +2559,11 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-multiset-stlclr"></a><a name="op_eq"></a>işleç = = (çoklu küme) (STL/CLR)
+## <a name="operator-multiset-stlclr"></a><a name="op_eq"></a> işleç = = (çoklu küme) (STL/CLR)
 
 Liste eşit karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -2629,11 +2629,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-multiset-stlclr"></a><a name="op_gt"></a>işleç &gt; (çoklu küme) (STL/CLR)
+## <a name="operatorgt-multiset-stlclr"></a><a name="op_gt"></a> işleç &gt; (çoklu küme) (STL/CLR)
 
 Karşılaştırmadan daha büyük bir liste.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -2699,11 +2699,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-multiset-stlclr"></a><a name="op_gteq"></a>operator &gt; = (çoklu küme) (STL/CLR)
+## <a name="operatorgt-multiset-stlclr"></a><a name="op_gteq"></a> operator &gt; = (çoklu küme) (STL/CLR)
 
 Büyük veya eşit karşılaştırmayı listele.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>

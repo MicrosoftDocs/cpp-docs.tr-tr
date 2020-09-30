@@ -99,12 +99,12 @@ helpviewer_keywords:
 - operator> (map) member [STL/CLR]
 - operator>= (map) member [STL/CLR]
 ms.assetid: 8b0a7764-b5e4-4175-a802-82b72eb8662a
-ms.openlocfilehash: cd06942d3795dda9e6c6aaa8794957018fa96ace
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 31d696c1bf85cdcb1d662474042c82524abdfcf1
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216381"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508598"
 ---
 # <a name="map-stlclr"></a>eşle (STL/CLR)
 
@@ -116,11 +116,11 @@ Aşağıdaki açıklamada, `GValue` ile aynıdır:
 
 burada:
 
-`GKey`, ikinci bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda`Key^`
+`GKey` , ikinci bir başvuru türü olmadığı sürece *anahtarla* aynıdır, bu durumda `Key^`
 
-`GMapped`, ikincisi bir başvuru türü olmadığı sürece *eşlenme* ile aynıdır, bu durumda`Mapped^`
+`GMapped` , ikincisi bir başvuru türü olmadığı sürece *eşlenme* ile aynıdır, bu durumda `Mapped^`
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,
@@ -224,11 +224,11 @@ Denetlenen dizideki bir öğenin ek bileşen türü.
 
 Nesnesi, tek tek düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı bir (neredeyse) dengeli ağaca öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesnesi, [map:: key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Eşlemeyi oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<(key_type, key_type)` . Bu saklı nesneye, [map:: key_comp (STL/CLR)](../dotnet/map-key-comp-stl-clr.md)üye işlevini çağırarak erişirsiniz `()` .
+Nesnesi, [map:: key_compare (STL/CLR)](#key_compare)türünde depolanan bir temsilci nesnesi çağırarak denetlediği diziyi sıralar. Eşlemeyi oluştururken depolanan temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<(key_type, key_type)` . Bu saklı nesneye, [map:: key_comp (STL/CLR)](#key_comp)üye işlevini çağırarak erişirsiniz `()` .
 
-Bu tür bir temsilci nesnesi, [map:: key_type (STL/CLR)](../dotnet/map-key-type-stl-clr.md)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y` :
+Bu tür bir temsilci nesnesi, [map:: key_type (STL/CLR)](#key_type)türündeki anahtarlar üzerinde katı zayıf bir sıralama getirmelidir. Yani, her iki anahtar için `X` ve `Y` :
 
-`key_comp()(X, Y)`her çağrıda aynı Boole sonucunu döndürür.
+`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
 
 `key_comp()(X, Y)`True ise, false olmalıdır `key_comp()(Y, X)` .
 
@@ -240,7 +240,7 @@ Bu tür bir temsilci nesnesi, [map:: key_type (STL/CLR)](../dotnet/map-key-type-
 
 Her öğe ayrı bir anahtar ve eşlenmiş bir değer içerir. Sıra, dizi içindeki öğe sayısının logaritmasına orantılı bir şekilde bir dizi işlem içeren rastgele bir öğenin aranması, eklenmesine ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Bir harita çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir harita yineleyicisini arttırıp daha sonra eşit olarak karşılaştırılacağını sağlayabilirsiniz `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
+Bir harita çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm, [map:: End (STL/CLR)](#end)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir harita yineleyicisini arttırıp daha sonra eşit olarak karşılaştırılacağını sağlayabilirsiniz `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Bir harita öğesine, doğrudan sayısal konumu verildiğinde (rastgele erişim Yineleyici gerektiren) başvurmayacağınızı unutmayın.
 
@@ -250,7 +250,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="mapbegin-stlclr"></a><a name="begin"></a>Map:: Begin (STL/CLR)
+## <a name="mapbegin-stlclr"></a><a name="begin"></a> Map:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -301,7 +301,7 @@ int main()
 *++begin() = [b 2]
 ```
 
-## <a name="mapclear-stlclr"></a><a name="clear"></a>Map:: Clear (STL/CLR)
+## <a name="mapclear-stlclr"></a><a name="clear"></a> Map:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -313,7 +313,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [map:: Erase (STL/CLR)](../dotnet/map-erase-stl-clr.md) `(` [map:: BEGIN (STL/CLR)](../dotnet/map-begin-stl-clr.md) `(),` [map:: End (STL/CLR](../dotnet/map-end-stl-clr.md)) öğesini etkin bir şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi, [map:: Erase (STL/CLR)](#erase) `(` [map:: BEGIN (STL/CLR)](#begin) `(),` [map:: End (STL/CLR](#end)) öğesini etkin bir şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -359,7 +359,7 @@ size() = 0
 size() = 0
 ```
 
-## <a name="mapconst_iterator-stlclr"></a><a name="const_iterator"></a>Map:: const_iterator (STL/CLR)
+## <a name="mapconst_iterator-stlclr"></a><a name="const_iterator"></a> Map:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -401,7 +401,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapconst_reference-stlclr"></a><a name="const_reference"></a>Map:: const_reference (STL/CLR)
+## <a name="mapconst_reference-stlclr"></a><a name="const_reference"></a> Map:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -446,7 +446,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>Map:: const_reverse_iterator (STL/CLR)
+## <a name="mapconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> Map:: const_reverse_iterator (STL/CLR)
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
@@ -488,11 +488,11 @@ int main()
 [c 3] [b 2] [a 1]
 ```
 
-## <a name="mapcount-stlclr"></a><a name="count"></a>Map:: Count (STL/CLR)
+## <a name="mapcount-stlclr"></a><a name="count"></a> Map:: Count (STL/CLR)
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 size_type count(key_type key);
@@ -541,7 +541,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="mapdifference_type-stlclr"></a><a name="difference_type"></a>eşleme::d ifference_type (STL/CLR)
+## <a name="mapdifference_type-stlclr"></a><a name="difference_type"></a> eşleme::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -596,7 +596,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="mapempty-stlclr"></a><a name="empty"></a>Map:: Empty (STL/CLR)
+## <a name="mapempty-stlclr"></a><a name="empty"></a> Map:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -608,7 +608,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Map:: size (STL/CLR)](../dotnet/map-size-stl-clr.md)eşdeğerdir `() == 0` . Bu, eşlemenin boş olup olmadığını test etmek için kullanılır.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Map:: size (STL/CLR)](#size)eşdeğerdir `() == 0` . Bu, eşlemenin boş olup olmadığını test etmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -648,7 +648,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="mapend-stlclr"></a><a name="end"></a>Map:: End (STL/CLR)
+## <a name="mapend-stlclr"></a><a name="end"></a> Map:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -695,11 +695,11 @@ int main()
     }
 ```
 
-## <a name="mapequal_range-stlclr"></a><a name="equal_range"></a>Map:: equal_range (STL/CLR)
+## <a name="mapequal_range-stlclr"></a><a name="equal_range"></a> Map:: equal_range (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cliext::pair<iterator, iterator> equal_range(key_type key);
@@ -712,7 +712,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [:: lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md) `(key),` [map:: upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [:: lower_bound (STL/CLR)](#lower_bound) `(key),` [map:: upper_bound (STL/CLR)](#upper_bound) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -756,11 +756,11 @@ equal_range(L'x') empty = True
 [b 2]
 ```
 
-## <a name="maperase-stlclr"></a><a name="erase"></a>Map:: Erase (STL/CLR)
+## <a name="maperase-stlclr"></a><a name="erase"></a> Map:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -779,12 +779,12 @@ Silinecek anahtar değer.
 *soyadına*<br/>
 Silinecek aralığın sonu.
 
-*olmadığı*<br/>
+*konum*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [map:: End (STL/CLR)](#end) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
@@ -849,11 +849,11 @@ erase(L'x') = 0
 erase(L'e') = 1
 ```
 
-## <a name="mapfind-stlclr"></a><a name="find"></a>Map:: Find (STL/CLR)
+## <a name="mapfind-stlclr"></a><a name="find"></a> Map:: Find (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator find(key_type key);
@@ -866,7 +866,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi halde [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi halde [map:: End (STL/CLR)](#end)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -908,7 +908,7 @@ find b = [b 2]
 find C = False
 ```
 
-## <a name="mapgeneric_container-stlclr"></a><a name="generic_container"></a>Map:: generic_container (STL/CLR)
+## <a name="mapgeneric_container-stlclr"></a><a name="generic_container"></a> Map:: generic_container (STL/CLR)
 
 Kapsayıcının genel arabiriminin türü.
 
@@ -972,7 +972,7 @@ int main()
 [a 1] [b 2] [c 3] [d 4] [e 5]
 ```
 
-## <a name="mapgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>Map:: generic_iterator (STL/CLR)
+## <a name="mapgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> Map:: generic_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
@@ -1029,7 +1029,7 @@ int main()
 [a 1]
 ```
 
-## <a name="mapgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>Map:: generic_reverse_iterator (STL/CLR)
+## <a name="mapgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> Map:: generic_reverse_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
@@ -1085,7 +1085,7 @@ int main()
 [c 3]
 ```
 
-## <a name="mapgeneric_value-stlclr"></a><a name="generic_value"></a>Map:: generic_value (STL/CLR)
+## <a name="mapgeneric_value-stlclr"></a><a name="generic_value"></a> Map:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -1139,11 +1139,11 @@ int main()
 [a 1]
 ```
 
-## <a name="mapinsert-stlclr"></a><a name="insert"></a>Map:: Insert (STL/CLR)
+## <a name="mapinsert-stlclr"></a><a name="insert"></a> Map:: Insert (STL/CLR)
 
 Öğeleri ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cliext::pair<iterator, bool> insert(value_type val);
@@ -1167,7 +1167,7 @@ Eklenecek sabit listesi.
 *Acil*<br/>
 Eklenecek anahtar değer.
 
-*olmadığı*<br/>
+*konum*<br/>
 Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1259,7 +1259,7 @@ insert(begin(), [L'y' 25]) = [y 25]
 [a 1] [b 2] [c 3] [x 24] [y 25]
 ```
 
-## <a name="mapiterator-stlclr"></a><a name="iterator"></a>Map:: yineleyici (STL/CLR)
+## <a name="mapiterator-stlclr"></a><a name="iterator"></a> Map:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1301,7 +1301,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapkey_comp-stlclr"></a><a name="key_comp"></a>Map:: key_comp (STL/CLR)
+## <a name="mapkey_comp-stlclr"></a><a name="key_comp"></a> Map:: key_comp (STL/CLR)
 
 Sıralama temsilcisini iki anahtar için kopyalar.
 
@@ -1360,7 +1360,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="mapkey_compare-stlclr"></a><a name="key_compare"></a>Map:: key_compare (STL/CLR)
+## <a name="mapkey_compare-stlclr"></a><a name="key_compare"></a> Map:: key_compare (STL/CLR)
 
 İki anahtar için sıralama temsilcisi.
 
@@ -1420,7 +1420,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="mapkey_type-stlclr"></a><a name="key_type"></a>Map:: key_type (STL/CLR)
+## <a name="mapkey_type-stlclr"></a><a name="key_type"></a> Map:: key_type (STL/CLR)
 
 Bir sıralama anahtarının türü.
 
@@ -1465,11 +1465,11 @@ int main()
 a b c
 ```
 
-## <a name="maplower_bound-stlclr"></a><a name="lower_bound"></a>Map:: lower_bound (STL/CLR)
+## <a name="maplower_bound-stlclr"></a><a name="lower_bound"></a> Map:: lower_bound (STL/CLR)
 
 Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator lower_bound(key_type key);
@@ -1482,7 +1482,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `X` denetimli dizideki, *anahtara*denk sıralamaya sahip ilk öğeyi belirler. Böyle bir öğe yoksa, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, `X` denetimli dizideki, *anahtara*denk sıralamaya sahip ilk öğeyi belirler. Böyle bir öğe yoksa, [map:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1524,11 +1524,11 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = [b 2]
 ```
 
-## <a name="mapmake_value-stlclr"></a><a name="make_value"></a>Map:: make_value (STL/CLR)
+## <a name="mapmake_value-stlclr"></a><a name="make_value"></a> Map:: make_value (STL/CLR)
 
 Değer nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 static value_type make_value(key_type key, mapped_type mapped);
@@ -1573,11 +1573,11 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapmap-stlclr"></a><a name="map"></a>Map:: Map (STL/CLR)
+## <a name="mapmap-stlclr"></a><a name="map"></a> Map:: Map (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 map();
@@ -1746,7 +1746,7 @@ size() = 0
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapmapped_type-stlclr"></a><a name="mapped_type"></a>Map:: mapped_type (STL/CLR)
+## <a name="mapmapped_type-stlclr"></a><a name="mapped_type"></a> Map:: mapped_type (STL/CLR)
 
 Her bir anahtar ile ilişkili bir eşlenen değer türü.
 
@@ -1791,11 +1791,11 @@ int main()
 1 2 3
 ```
 
-## <a name="mapoperator-stlclr"></a><a name="op_as"></a>Map:: operator = (STL/CLR)
+## <a name="mapoperator-stlclr"></a><a name="op_as"></a> Map:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 map<Key, Mapped>% operator=(map<Key, Mapped>% right);
@@ -1846,11 +1846,11 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapoperatorstlclr"></a><a name="op"></a>Map:: operator (STL/CLR)
+## <a name="mapoperatorstlclr"></a><a name="op"></a> Map:: operator (STL/CLR)
 
 Bir anahtarı ilişkili eşlenmiş değerine eşler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 mapped_type operator[](key_type key);
@@ -1913,7 +1913,7 @@ c1[b] = 2
 [A 10] [a 1] [b 2] [c 13]
 ```
 
-## <a name="maprbegin-stlclr"></a><a name="rbegin"></a>Map:: rbegin (STL/CLR)
+## <a name="maprbegin-stlclr"></a><a name="rbegin"></a> Map:: rbegin (STL/CLR)
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
@@ -1964,7 +1964,7 @@ int main()
 *++rbegin() = [b 2]
 ```
 
-## <a name="mapreference-stlclr"></a><a name="reference"></a>Map:: Reference (STL/CLR)
+## <a name="mapreference-stlclr"></a><a name="reference"></a> Map:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -2009,7 +2009,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="maprend-stlclr"></a><a name="rend"></a>Map:: rend (STL/CLR)
+## <a name="maprend-stlclr"></a><a name="rend"></a> Map:: rend (STL/CLR)
 
 Ters denetlenen sıranın sonunu belirtir.
 
@@ -2062,7 +2062,7 @@ int main()
 *--rend() = [a 1]
 ```
 
-## <a name="mapreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>Map:: reverse_iterator (STL/CLR)
+## <a name="mapreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> Map:: reverse_iterator (STL/CLR)
 
 Denetlenen sıra için ters yineleyicinin türü.
 
@@ -2104,7 +2104,7 @@ int main()
 [c 3] [b 2] [a 1]
 ```
 
-## <a name="mapsize-stlclr"></a><a name="size"></a>Map:: size (STL/CLR)
+## <a name="mapsize-stlclr"></a><a name="size"></a> Map:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -2116,7 +2116,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [map:: Empty (STL/CLR)](../dotnet/map-empty-stl-clr.md) `()` .
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyuta sahip olup olmadığı, bkz. [map:: Empty (STL/CLR)](#empty) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2156,7 +2156,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="mapsize_type-stlclr"></a><a name="size_type"></a>Map:: size_type (STL/CLR)
+## <a name="mapsize_type-stlclr"></a><a name="size_type"></a> Map:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -2204,11 +2204,11 @@ int main()
 end()-begin() = 3
 ```
 
-## <a name="mapswap-stlclr"></a><a name="swap"></a>Map:: swap (STL/CLR)
+## <a name="mapswap-stlclr"></a><a name="swap"></a> Map:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void swap(map<Key, Mapped>% right);
@@ -2272,7 +2272,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapto_array-stlclr"></a><a name="to_array"></a>Map:: to_array (STL/CLR)
+## <a name="mapto_array-stlclr"></a><a name="to_array"></a> Map:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -2322,11 +2322,11 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="mapupper_bound-stlclr"></a><a name="upper_bound"></a>Map:: upper_bound (STL/CLR)
+## <a name="mapupper_bound-stlclr"></a><a name="upper_bound"></a> Map:: upper_bound (STL/CLR)
 
 Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator upper_bound(key_type key);
@@ -2339,7 +2339,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki en son öğeyi, `X` *anahtara*denk sıralama olarak belirler. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise, [map:: End (STL/CLR)](../dotnet/map-end-stl-clr.md)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki en son öğeyi, `X` *anahtara*denk sıralama olarak belirler. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise, [map:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2381,7 +2381,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = [c 3]
 ```
 
-## <a name="mapvalue_comp-stlclr"></a><a name="value_comp"></a>Map:: value_comp (STL/CLR)
+## <a name="mapvalue_comp-stlclr"></a><a name="value_comp"></a> Map:: value_comp (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisini kopyalar.
 
@@ -2428,7 +2428,7 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False
 ```
 
-## <a name="mapvalue_compare-stlclr"></a><a name="value_compare"></a>Map:: value_compare (STL/CLR)
+## <a name="mapvalue_compare-stlclr"></a><a name="value_compare"></a> Map:: value_compare (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisi.
 
@@ -2476,7 +2476,7 @@ compare([L'a', 1], [L'b', 2]) = True
 compare([L'b', 2], [L'a', 1]) = False
 ```
 
-## <a name="mapvalue_type-stlclr"></a><a name="value_type"></a>Map:: value_type (STL/CLR)
+## <a name="mapvalue_type-stlclr"></a><a name="value_type"></a> Map:: value_type (STL/CLR)
 
 Öğenin türü.
 
@@ -2520,11 +2520,11 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="operator-map-stlclr"></a><a name="op_neq"></a>işleç! = (eşleme) (STL/CLR)
+## <a name="operator-map-stlclr"></a><a name="op_neq"></a> işleç! = (eşleme) (STL/CLR)
 
 Liste eşit değildir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,
@@ -2591,11 +2591,11 @@ int main()
 [a b c] != [a b d] is True
 ```
 
-## <a name="operatorlt-map-stlclr"></a><a name="op_lt"></a>işleç &lt; (eşleme) (STL/CLR)
+## <a name="operatorlt-map-stlclr"></a><a name="op_lt"></a> işleç &lt; (eşleme) (STL/CLR)
 
 Liste karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,
@@ -2662,11 +2662,11 @@ int main()
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-map-stlclr"></a><a name="op_lteq"></a>operator &lt; = (Map) (STL/CLR)
+## <a name="operatorlt-map-stlclr"></a><a name="op_lteq"></a> operator &lt; = (Map) (STL/CLR)
 
 Küçüktür veya eşit karşılaştırma listesi.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,
@@ -2733,11 +2733,11 @@ int main()
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-map-stlclr"></a><a name="op_eq"></a>operator = = (Map) (STL/CLR)
+## <a name="operator-map-stlclr"></a><a name="op_eq"></a> operator = = (Map) (STL/CLR)
 
 Liste eşit karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,
@@ -2804,11 +2804,11 @@ int main()
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-map-stlclr"></a><a name="op_gt"></a>işleç &gt; (eşleme) (STL/CLR)
+## <a name="operatorgt-map-stlclr"></a><a name="op_gt"></a> işleç &gt; (eşleme) (STL/CLR)
 
 Karşılaştırmadan daha büyük bir liste.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,
@@ -2875,11 +2875,11 @@ int main()
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-map-stlclr"></a><a name="op_gteq"></a>operator &gt; = (Map) (STL/CLR)
+## <a name="operatorgt-map-stlclr"></a><a name="op_gteq"></a> operator &gt; = (Map) (STL/CLR)
 
 Büyük veya eşit karşılaştırmayı listele.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key,

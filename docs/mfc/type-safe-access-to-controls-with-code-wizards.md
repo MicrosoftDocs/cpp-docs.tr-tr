@@ -7,16 +7,16 @@ helpviewer_keywords:
 - dialog boxes [MFC], access to controls
 - dialog box controls [MFC], accessing
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
-ms.openlocfilehash: bfbc27dbcdeeb38c40f5d989bacd65a23198d4f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ee7c49f75dcdc2b6c32f2b391ace7260b46d197b
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213976"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507888"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim
 
-DDX özelliklerine alışkın değilseniz, tür kullanımı uyumlu erişim oluşturmak için [üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md) ' nda denetim özelliğini kullanabilirsiniz. Bu yaklaşım, kod sihirbazları olmadan denetim oluşturmaktan daha kolay.
+DDX özelliklerine alışkın değilseniz, tür kullanımı uyumlu erişim oluşturmak için [üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) ' nda denetim özelliğini kullanabilirsiniz. Bu yaklaşım, kod sihirbazları olmadan denetim oluşturmaktan daha kolay.
 
 Yalnızca bir denetimin değerine erişmek istiyorsanız, DDX bunu sağlar. Bir denetimin değerine erişimi daha fazla yapmak istiyorsanız, iletişim sınıfınızın uygun sınıfının üye değişkenini eklemek için üye değişkeni Ekleme Sihirbazı ' nı kullanın. Bu üye değişkenini denetim özelliğine iliştirin.
 

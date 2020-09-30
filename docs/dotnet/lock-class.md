@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-ms.openlocfilehash: b06c293200bc85945e95996db3109c1f5fba8d8a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7b2f187ec940af95523d0bbfb9265d7d9d6f69e8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225624"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508650"
 ---
 # <a name="lock-class"></a>lock Sınıfı
 
@@ -33,7 +33,7 @@ ref class lock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`lock`yalnızca CLR nesnelerinde kullanılabilir ve yalnızca CLR kodunda kullanılabilir.
+`lock` yalnızca CLR nesnelerinde kullanılabilir ve yalnızca CLR kodunda kullanılabilir.
 
 Dahili olarak, kilit sınıfı <xref:System.Threading.Monitor> erişimi eşzamanlı hale getirmek için kullanır. Daha fazla bilgi için, başvurulan makaleye bakın.
 
@@ -69,7 +69,7 @@ Dahili olarak, kilit sınıfı <xref:System.Threading.Monitor> erişimi eşzaman
 
 **Ad alanı** msclr
 
-## <a name="locklock"></a><a name="lock"></a>Lock:: Lock
+## <a name="locklock"></a><a name="lock"></a> Lock:: Lock
 
 `lock`İsteğe bağlı olarak, belirli bir süre boyunca kilidi sonsuza kadar almayı bekleyen veya hiç değil, bir nesne oluşturur.
 
@@ -107,11 +107,11 @@ Milisaniye veya olarak zaman aşımı değeri <xref:System.TimeSpan> .
 
 Oluşturucunun ilk üç formu, `_object` belirtilen zaman aşımı süresi içinde (veya <xref:System.Threading.Timeout.Infinite> hiçbiri belirtilmemişse) bir kilit almaya çalışır.
 
-Oluşturucunun dördüncü formu, üzerinde bir kilit elde etmez `_object` . `lock_later`[lock_when numaralandırmasının](../dotnet/lock-when-enum.md)bir üyesidir. Bu durumda kilidi almak için [Lock:: Acquire](../dotnet/lock-acquire.md) veya [lock:: try_acquire](../dotnet/lock-try-acquire.md) kullanın.
+Oluşturucunun dördüncü formu, üzerinde bir kilit elde etmez `_object` . `lock_later`[lock_when numaralandırmasının](../dotnet/lock-when-enum.md)bir üyesidir. Bu durumda kilidi almak için [Lock:: Acquire](#acquire) veya [lock:: try_acquire](#try-acquire) kullanın.
 
 Yok edicisi çağrıldığında kilit otomatik olarak serbest bırakılır.
 
-`_object`olamaz <xref:System.Threading.ReaderWriterLock> .  Bu ise, bir derleyici hatası ortaya kalır.
+`_object` olamaz <xref:System.Threading.ReaderWriterLock> .  Bu ise, bir derleyici hatası ortaya kalır.
 
 ### <a name="example"></a>Örnek
 
@@ -203,7 +203,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="locklock"></a><a name="tilde-lock"></a>Lock:: ~ Lock
+## <a name="locklock"></a><a name="tilde-lock"></a> Lock:: ~ Lock
 
 Bir nesne yapıları kaldırır `lock` .
 
@@ -213,7 +213,7 @@ Bir nesne yapıları kaldırır `lock` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yıkıcı [Lock:: Release](../dotnet/lock-release.md)öğesini çağırır.
+Yıkıcı [Lock:: Release](#release)öğesini çağırır.
 
 ### <a name="example"></a>Örnek
 
@@ -305,7 +305,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockacquire"></a><a name="acquire"></a>Lock:: Acquire
+## <a name="lockacquire"></a><a name="acquire"></a> Lock:: Acquire
 
 Bir nesne üzerinde bir kilit alır, isteğe bağlı olarak, belirli bir süre boyunca kilidi sonsuza kadar almayı bekler veya hiç değil.
 
@@ -424,7 +424,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockis_locked"></a><a name="is-locked"></a>Kilit:: is_locked
+## <a name="lockis_locked"></a><a name="is-locked"></a> Kilit:: is_locked
 
 Bir kilidin tutulmakta olup olmadığını gösterir.
 
@@ -527,7 +527,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockoperator-bool"></a><a name="operator-bool"></a>Lock:: operator bool
+## <a name="lockoperator-bool"></a><a name="operator-bool"></a> Lock:: operator bool
 
 `lock`Bir koşullu ifadede kullanmak için işleci.
 
@@ -634,7 +634,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockrelease"></a><a name="release"></a>Lock:: Release
+## <a name="lockrelease"></a><a name="release"></a> Lock:: Release
 
 Bir kilit yayınlar.
 
@@ -738,7 +738,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="locktry_acquire"></a><a name="try-acquire"></a>Kilit:: try_acquire
+## <a name="locktry_acquire"></a><a name="try-acquire"></a> Kilit:: try_acquire
 
 Bir nesne üzerinde bir kilit alır, belirli bir süre bekler ve bir **`bool`** özel durum oluşturmak yerine alma başarısını raporlamak için bir döndürür.
 
@@ -854,7 +854,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockoperator"></a><a name="operator-equality"></a>Lock:: operator = =
+## <a name="lockoperator"></a><a name="operator-equality"></a> Lock:: operator = =
 
 Eşitlik işleci.
 
@@ -897,7 +897,7 @@ int main () {
 Equal!
 ```
 
-## <a name="lockoperator"></a><a name="operator-inequality"></a>Lock:: operator! =
+## <a name="lockoperator"></a><a name="operator-inequality"></a> Lock:: operator! =
 
 Eşitsizlik işleci.
 

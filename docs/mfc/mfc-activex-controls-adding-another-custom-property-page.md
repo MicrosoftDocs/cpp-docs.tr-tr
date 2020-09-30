@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: 33fd297ee509b341d39d9db21af54a3988f6256e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a749c5d8d676ac85c3c2085eb041328aff599ab8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618282"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508875"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 
@@ -24,9 +24,9 @@ Aşağıdaki yordamlar, ActiveX Denetim Sihirbazı tarafından oluşturulan örn
 
 ActiveX denetiminde Özellik sayfaları kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [MFC ActiveX Denetimleri: Özellik Sayfaları](mfc-activex-controls-property-pages.md)
+- [MFC ActiveX denetimleri: Özellik sayfaları](mfc-activex-controls-property-pages.md)
 
-- [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX denetimleri: stok özellik sayfalarını kullanma](mfc-activex-controls-using-stock-property-pages.md)
 
     > [!NOTE]
     >  Yeni özellik sayfalarının ActiveX denetimi özellik sayfaları için boyut standardına bağlı olması önemle önerilir. Hisse senedi resmi ve renk özellik sayfaları 250x62 iletişim birimleri (DLU) olarak ölçer. Standart yazı tipi özellik sayfası 250x110 DLUs ' dir. ActiveX Denetim Sihirbazı tarafından oluşturulan varsayılan özellik sayfası, 250x62 DLU standardını kullanır.
@@ -55,7 +55,7 @@ ActiveX denetiminde Özellik sayfaları kullanma hakkında daha fazla bilgi içi
 
 1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-   Bu, [Sınıf Ekle](../ide/add-class-dialog-box.md) iletişim kutusunu açar.
+   Bu, [Sınıf Ekle](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) iletişim kutusunu açar.
 
 1. **MFC sınıf** şablonuna çift tıklayın.
 

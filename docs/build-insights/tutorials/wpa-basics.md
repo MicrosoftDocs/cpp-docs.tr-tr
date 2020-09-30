@@ -7,12 +7,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 449fc2ddabc2bcf5b9b9f130a5e6816cdf4bc98d
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 2d4473e3682a6e00e0eef61cb73d7450976bcc0c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685521"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507727"
 ---
 # <a name="tutorial-windows-performance-analyzer-basics"></a>Öğretici: Windows Performans Çözümleyicisi temelleri
 
@@ -59,8 +59,8 @@ Bu görüntüde, bir bağlantı çağrısının örnek çubuk grafiği gösteril
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Öğretici: vcperf ve Windows Performans Çözümleyicisi](vcperf-and-wpa.md)\
-[Reference: vcperf komutları](/cpp/build-insights/reference/vcperf-commands)\
-[Başvuru: Windows Performans Çözümleyici görünümleri](/cpp/build-insights/reference/wpa-views)\
+[Reference: vcperf komutları](../reference/vcperf-commands.md)\
+[Başvuru: Windows Performans Çözümleyici görünümleri](../reference/wpa-views.md)\
 [Windows Performans Çözümleyicisi](/windows-hardware/test/wpt/windows-performance-analyzer)
 
 ::: moniker-end

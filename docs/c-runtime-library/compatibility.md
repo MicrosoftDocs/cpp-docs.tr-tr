@@ -7,19 +7,20 @@ helpviewer_keywords:
 - compatibility, C runtime libraries
 - compatibility
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
-ms.openlocfilehash: d6562be0abde8e9d51260b2d230f225ed159c199
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 711d5b3c95269413a0d94f568d3e3cb7b7dff721
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075757"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506873"
 ---
 # <a name="compatibility"></a>Uyumluluk
 
 Evrensel C çalışma zamanı kitaplığı (UCRT), C++ uygunluğu için gereken C standart kitaplığının çoğunu destekler. C99 (ISO/ıEC 9899:1999) kitaplığını belirli özel durumlarla uygular:
-- içinde katı tür uyumluluğu \<complex.h> . 
+
+- içinde katı tür uyumluluğu \<complex.h> .
 - `aligned_alloc`Bu, büyük olasılıkla uygulanmayacak, çünkü Windows işletim sistemi hizalanmış ayırmaları desteklemez. `_aligned_malloc`Bunun yerine standart olmayan ' ı kullanın.
--  `strerrorlen_s`
+- `strerrorlen_s`
 - içinde atomik destek \<stdatomic.h>
 - iş parçacığı desteği \<threads.h>
 

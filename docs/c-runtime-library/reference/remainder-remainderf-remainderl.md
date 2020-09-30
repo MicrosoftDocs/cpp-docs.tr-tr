@@ -35,18 +35,18 @@ helpviewer_keywords:
 - remainderl
 - remainder
 ms.assetid: 5f721fb3-8b78-4597-9bc0-ca9bcd1f1d0e
-ms.openlocfilehash: ef2b326bef2288b52dba8988749e030ff0b46077
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 288d6b0d373a5b318a139b030181c671e2c01048
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556015"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507575"
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 
 İki kayan noktalı değer bölümünün geri kalanını hesaplar ve en yakın tamsayı değerine yuvarlanır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double remainder( double x, double y );
@@ -114,7 +114,7 @@ The remainder of -10.00 / 3.00 is -1.000000
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)\
-[ldiv, lldıv](ldiv-lldiv.md)\
+[ldiv, lldıv](./div.md)\
 [imaxdiv](imaxdiv.md)\
 [FMOD, fmodf](fmod-fmodf.md)\
 [remquo, remquof, remquol](remquo-remquof-remquol.md)

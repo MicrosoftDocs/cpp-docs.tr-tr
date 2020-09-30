@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -IDLOUT linker option
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
-ms.openlocfilehash: 3816bb85cb3c711075e3fefeec2d706c2f8cc2ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8dc26a0564a979c918d1eb1eb85e63e9c73caba0
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291582"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91506930"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 
@@ -28,41 +28,41 @@ ms.locfileid: "62291582"
 
 ## <a name="parameters"></a>Parametreler
 
-*Yolu*<br/>
-Bir mutlak veya göreli yol belirtimi. Bir yolu belirterek, yalnızca bir .idl dosyasının konumunu etkiler; diğer tüm dosyaları proje dizininde yer alır.
+*Yolun*<br/>
+Mutlak veya göreli yol belirtimi. Bir yol belirterek, yalnızca bir. IDL dosyasının konumunu etkilersiniz; diğer tüm dosyalar proje dizinine yerleştirilir.
 
-*Dosya adı*<br/>
-MIDL derleyicisi tarafından oluşturulan .idl dosyasının adını belirtir. Dosyanın uzantısı varsayılır; belirtin *filename*.idl uzantı istiyorsanız .idl.
+*filename*<br/>
+MıDL derleyicisi tarafından oluşturulan. IDL dosyasının adını belirtir. Hiçbir dosya uzantısı varsayıldı; . IDL uzantısı istiyorsanız *filename*. IDL belirtin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Idlout seçeneği, .idl dosyasının uzantısını ve adını belirtir.
+/IDLOUT seçeneği,. IDL dosyasının adını ve uzantısını belirtir.
 
-MIDL derleyicisi olan projelerin bağlarken MSVC bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.
+MıDL derleyicisi, [module](../../windows/attributes/module-cpp.md) özniteliği olan projeler bağlanırken MSVC bağlayıcı tarafından çağırılır.
 
-/ IDLOUT ayrıca MIDL derleyicisi ile ilişkili diğer çıktı dosyalarının dosya adlarını belirtir:
+/IDLOUT Ayrıca MıDL derleyicisi ile ilişkili diğer çıkış dosyalarının dosya adlarını belirtir:
 
-- *filename*.tlb
+- *filename*. tlb
 
-- *filename*_p.c
+- *filename*_p. c
 
-- *filename*_i.c
+- *filename*_i. c
 
-- *filename*.h
+- *filename*. h
 
-*filename*  /ıdlout için geçirdiğiniz parametredir. Varsa [/tlbout](tlbout-name-dot-tlb-file.md) belirtilirse, .tlb dosyasının adını / tlbout alacak *filename*.
+*filename* ,/ıdlout'e geçirdiğiniz parametredir. [/Tlhakkında](tlbout-name-dot-tlb-file.md) belirtilmişse,. tlb dosyasının adını/TLS *Dosya*adı ile alır.
 
-/ Idlout ne/tlbout belirtirseniz, bağlayıcı vc70.tlb, vc70.idl vc70_p.c vc70_i.c ve vc70.h oluşturun.
+Ne/ıDLOUT ne de/TLI belirtirseniz, bağlayıcı vc70. tlb, vc70. IDL, vc70_p. c, vc70_i. c ve vc70. h oluşturur.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **katıştırılmış IDL** özellik sayfası.
+1. **KATıŞTıRıLMıŞ IDL** Özellik sayfasına tıklayın.
 
-1. Değiştirme **birleştirme IDL taban dosyası adı** özelliği.
+1. **Merge IDL taban dosya adı** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -71,7 +71,7 @@ MIDL derleyicisi olan projelerin bağlarken MSVC bağlayıcı tarafından çağr
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
-[/IGNOREIDL (Öznitelikleri MIDL'ye İşleme)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
-[/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)](midl-specify-midl-command-line-options.md)<br/>
-[Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
+[/IGNOREıDL (öznitelikleri MıDL 'ye Işleme)](ignoreidl-don-t-process-attributes-into-midl.md)<br/>
+[/MıDL (MıDL komut satırı seçeneklerini belirt)](midl-specify-midl-command-line-options.md)<br/>
+[Öznitelikli Program Oluşturma](../../windows/attributes/cpp-attributes-com-net.md)

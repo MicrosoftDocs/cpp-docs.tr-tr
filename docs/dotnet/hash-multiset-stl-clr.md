@@ -95,12 +95,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 8462bd21-6829-4dd3-ac81-c42d6fdf92f0
-ms.openlocfilehash: 8f7858628b16f6ed2364a78186685fabb6d578ea
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b5aae5830437309e95f808567a2d3a7ea093c8f8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221399"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507159"
 ---
 # <a name="hash_multiset-stlclr"></a>hash_multiset (STL/CLR)
 
@@ -108,7 +108,7 @@ ms.locfileid: "87221399"
 
 Aşağıdaki açıklamada, `GValue` ile aynı şekilde, `GKey` İkincisi bir başvuru türü olmadığı sürece *anahtarla* aynı olur ve bu durumda olur `Key^` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -204,11 +204,11 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
 Nesnesi, çift yönlü bağlantılı bir listede ayrı düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Bu nesne, erişimi hızlandırmak için aynı zamanda listeye (karma tablo) farklı bir işaretçiler dizisi tutar ve tüm listeyi bir alt liste dizisi veya demetler olarak bir dizi olarak yönetir. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı tutan bir sepete öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesne, [hash_set:: key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesini çağırarak Denetim yaptığı her sepete sahiptir. Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<=(key_type, key_type)` .
+Nesne, [hash_set:: key_compare (STL/CLR)](./hash-set-stl-clr.md#key_compare)türünde depolanan bir temsilci nesnesini çağırarak Denetim yaptığı her sepete sahiptir. Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<=(key_type, key_type)` .
 
-Saklı temsilci nesnesine, [hash_set:: key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)üye işlevini çağırarak erişirsiniz `()` . Bu tür bir temsilci nesnesi [hash_set:: key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)türü anahtarlar arasında denk sıralama tanımlamalıdır. Yani, her iki anahtar için `X` ve `Y` :
+Saklı temsilci nesnesine, [hash_set:: key_comp (STL/CLR)](./hash-set-stl-clr.md#key_comp)üye işlevini çağırarak erişirsiniz `()` . Bu tür bir temsilci nesnesi [hash_set:: key_type (STL/CLR)](./hash-set-stl-clr.md#key_type)türü anahtarlar arasında denk sıralama tanımlamalıdır. Yani, her iki anahtar için `X` ve `Y` :
 
-`key_comp()(X, Y)`her çağrıda aynı Boole sonucunu döndürür.
+`key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
 
 `key_comp()(X, Y) && key_comp()(Y, X)`True ise, `X` ve `Y` eşdeğer sıralamaya sahip olarak kabul edilir.
 
@@ -216,17 +216,17 @@ Gibi davranan `operator<=(key_type, key_type)` `operator>=(key_type, key_type)` 
 
 Kapsayıcının yalnızca, anahtarları eşdeğer sıralama (ve aynı tamsayı değeri ile aynı karma değer) olan öğelerin bir demet içinde bitişik olduğunu garanti edin. Şablon sınıfının [hash_set (STL/CLR)](../dotnet/hash-set-stl-clr.md)aksine, şablon sınıfının bir nesnesi `hash_multiset` tüm öğeler için anahtarların benzersiz olmasını gerektirmez. (İki veya daha fazla anahtarın eşdeğer sıralaması olabilir.)
 
-Nesnesi, [hash_set:: hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)türünde depolanan bir temsilci nesnesini çağırarak, hangi demetini belirli bir sıralama anahtarı içermesi gerektiğini belirler. Bu saklı nesneye, anahtar değerine bağlı bir tamsayı değer elde etmek için [hash_set:: hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) üye işlevini çağırarak erişirsiniz `()` . Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan olarak işlevdir `System::Object::hash_value(key_type)` . Yani, tüm anahtarlar `X` ve `Y` :
+Nesnesi, [hash_set:: hasher (STL/CLR)](./hash-set-stl-clr.md#hasher)türünde depolanan bir temsilci nesnesini çağırarak, hangi demetini belirli bir sıralama anahtarı içermesi gerektiğini belirler. Bu saklı nesneye, anahtar değerine bağlı bir tamsayı değer elde etmek için [hash_set:: hash_delegate (STL/CLR)](./hash-set-stl-clr.md#hash_delegate) üye işlevini çağırarak erişirsiniz `()` . Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan olarak işlevdir `System::Object::hash_value(key_type)` . Yani, tüm anahtarlar `X` ve `Y` :
 
-`hash_delegate()(X)`her çağrıda aynı tamsayı sonucunu döndürür.
+`hash_delegate()(X)` her çağrıda aynı tamsayı sonucunu döndürür.
 
 `X`Ve `Y` eşdeğer sıralamaya sahipseniz, ile `hash_delegate()(X)` aynı tamsayı sonucunu döndürmelidir `hash_delegate()(Y)` .
 
 Her öğe hem bir anahtar hem de bir değer olarak hizmet verir. Sıra, dizi içindeki öğe sayısından (Sabit saat) bağımsız olan ve en iyi durumda en az sayıda işlem içeren, rastgele bir öğenin arama, ekleme ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Karma değerler her ikisi de dağıtılmadığından, karma bir tablo oluşturabilir. Extreme 'de, her zaman aynı değeri döndüren bir karma işlevi için--arama, ekleme ve kaldırma dizideki öğelerin sayısıyla orantılıdır (doğrusal saat). Kapsayıcı endeavors, makul bir karma işlevi, ortalama demet boyutu ve karma tablo boyutu (Toplam demet sayısı) seçmek için, ancak bu seçimlerin herhangi birini veya tümünü geçersiz kılabilirsiniz. Bkz. Örneğin, [hash_set:: max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) ve [hash_set:: REHASH (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md)işlevleri.
+Karma değerler her ikisi de dağıtılmadığından, karma bir tablo oluşturabilir. Extreme 'de, her zaman aynı değeri döndüren bir karma işlevi için--arama, ekleme ve kaldırma dizideki öğelerin sayısıyla orantılıdır (doğrusal saat). Kapsayıcı endeavors, makul bir karma işlevi, ortalama demet boyutu ve karma tablo boyutu (Toplam demet sayısı) seçmek için, ancak bu seçimlerin herhangi birini veya tümünü geçersiz kılabilirsiniz. Bkz. Örneğin, [hash_set:: max_load_factor (STL/CLR)](./hash-set-stl-clr.md#max_load_factor) ve [hash_set:: REHASH (STL/CLR)](./hash-set-stl-clr.md#rehash)işlevleri.
 
-Hash_multiset çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [hash_multiset:: End (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir hash_multiset yineleyicisini artırabilirsiniz ve daha sonra eşittir ile karşılaştırılır `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
+Hash_multiset çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [hash_multiset:: End (STL/CLR)](#end)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir hash_multiset yineleyicisini artırabilirsiniz ve daha sonra eşittir ile karşılaştırılır `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Bir hash_multiset öğesine, bir rastgele erişim Yineleyici gerektiren sayısal konumuna doğrudan başvurmayacağınızı unutmayın.
 
@@ -236,7 +236,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="hash_multisetbegin-stlclr"></a><a name="begin"></a>hash_multiset:: Begin (STL/CLR)
+## <a name="hash_multisetbegin-stlclr"></a><a name="begin"></a> hash_multiset:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
@@ -284,7 +284,7 @@ a b c
 *++begin() = b
 ```
 
-## <a name="hash_multisetbucket_count-stlclr"></a><a name="bucket_count"></a>hash_multiset:: bucket_count (STL/CLR)
+## <a name="hash_multisetbucket_count-stlclr"></a><a name="bucket_count"></a> hash_multiset:: bucket_count (STL/CLR)
 
 Demetlerin sayısını sayar.
 
@@ -358,7 +358,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_multisetclear-stlclr"></a><a name="clear"></a>hash_multiset:: Clear (STL/CLR)
+## <a name="hash_multisetclear-stlclr"></a><a name="clear"></a> hash_multiset:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
@@ -370,7 +370,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [hash_multiset:: Erase (STL/CLR)](../dotnet/hash-multiset-erase-stl-clr.md) `(` [hash_multiset:: BEGIN (STL/CLR](../dotnet/hash-multiset-begin-stl-clr.md) ) `(),` [hash_multiset:: End (STL/CLR](../dotnet/hash-multiset-end-stl-clr.md)) öğesini etkin şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi [hash_multiset:: Erase (STL/CLR)](#erase) `(` [hash_multiset:: BEGIN (STL/CLR](#begin) ) `(),` [hash_multiset:: End (STL/CLR](#end)) öğesini etkin şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -416,7 +416,7 @@ a b
 size() = 0
 ```
 
-## <a name="hash_multisetconst_iterator-stlclr"></a><a name="const_iterator"></a>hash_multiset:: const_iterator (STL/CLR)
+## <a name="hash_multisetconst_iterator-stlclr"></a><a name="const_iterator"></a> hash_multiset:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
@@ -458,7 +458,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_multisetconst_reference-stlclr"></a><a name="const_reference"></a>hash_multiset:: const_reference (STL/CLR)
+## <a name="hash_multisetconst_reference-stlclr"></a><a name="const_reference"></a> hash_multiset:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
@@ -503,7 +503,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_multisetconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>hash_multiset:: const_reverse_iterator (STL/CLR)
+## <a name="hash_multisetconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> hash_multiset:: const_reverse_iterator (STL/CLR)
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
@@ -545,11 +545,11 @@ int main()
 c b a
 ```
 
-## <a name="hash_multisetcount-stlclr"></a><a name="count"></a>hash_multiset:: Count (STL/CLR)
+## <a name="hash_multisetcount-stlclr"></a><a name="count"></a> hash_multiset:: Count (STL/CLR)
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 size_type count(key_type key);
@@ -598,7 +598,7 @@ count(L'b') = 1
 count(L'C') = 0
 ```
 
-## <a name="hash_multisetdifference_type-stlclr"></a><a name="difference_type"></a>hash_multiset::d ifference_type (STL/CLR)
+## <a name="hash_multisetdifference_type-stlclr"></a><a name="difference_type"></a> hash_multiset::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -653,7 +653,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="hash_multisetempty-stlclr"></a><a name="empty"></a>hash_multiset:: Empty (STL/CLR)
+## <a name="hash_multisetempty-stlclr"></a><a name="empty"></a> hash_multiset:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
@@ -665,7 +665,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Hash_multiset:: size (STL/CLR)](../dotnet/hash-multiset-size-stl-clr.md)eşdeğerdir `() == 0` . Hash_multiset boş olup olmadığını test etmek için kullanırsınız.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Hash_multiset:: size (STL/CLR)](#size)eşdeğerdir `() == 0` . Hash_multiset boş olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -705,7 +705,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="hash_multisetend-stlclr"></a><a name="end"></a>hash_multiset:: End (STL/CLR)
+## <a name="hash_multisetend-stlclr"></a><a name="end"></a> hash_multiset:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
@@ -754,11 +754,11 @@ a b c
 *--end() = c
 ```
 
-## <a name="hash_multisetequal_range-stlclr"></a><a name="equal_range"></a>hash_multiset:: equal_range (STL/CLR)
+## <a name="hash_multisetequal_range-stlclr"></a><a name="equal_range"></a> hash_multiset:: equal_range (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cliext::pair<iterator, iterator> equal_range(key_type key);
@@ -771,7 +771,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [hash_multiset:: lower_bound (STL/CLR)](../dotnet/hash-multiset-lower-bound-stl-clr.md) `(key),` [hash_multiset:: upper_bound (STL/CLR)](../dotnet/hash-multiset-upper-bound-stl-clr.md) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [hash_multiset:: lower_bound (STL/CLR)](#lower_bound) `(key),` [hash_multiset:: upper_bound (STL/CLR)](#upper_bound) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -814,11 +814,11 @@ equal_range(L'x') empty = True
 b
 ```
 
-## <a name="hash_multiseterase-stlclr"></a><a name="erase"></a>hash_multiset:: Erase (STL/CLR)
+## <a name="hash_multiseterase-stlclr"></a><a name="erase"></a> hash_multiset:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -837,12 +837,12 @@ Silinecek anahtar değer.
 *soyadına*<br/>
 Silinecek aralığın sonu.
 
-*olmadığı*<br/>
+*konum*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_multiset:: End (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_multiset:: End (STL/CLR)](#end) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
@@ -898,11 +898,11 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="hash_multisetfind-stlclr"></a><a name="find"></a>hash_multiset:: Find (STL/CLR)
+## <a name="hash_multisetfind-stlclr"></a><a name="find"></a> hash_multiset:: Find (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator find(key_type key);
@@ -915,7 +915,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_multiset:: End (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_multiset:: End (STL/CLR)](#end)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -954,7 +954,7 @@ find b = b
 find C = False
 ```
 
-## <a name="hash_multisetgeneric_container-stlclr"></a><a name="generic_container"></a>hash_multiset:: generic_container (STL/CLR)
+## <a name="hash_multisetgeneric_container-stlclr"></a><a name="generic_container"></a> hash_multiset:: generic_container (STL/CLR)
 
 Kapsayıcının genel arabiriminin türü.
 
@@ -1018,7 +1018,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="hash_multisetgeneric_iterator-stlclr"></a><a name="generic_iterator"></a>hash_multiset:: generic_iterator (STL/CLR)
+## <a name="hash_multisetgeneric_iterator-stlclr"></a><a name="generic_iterator"></a> hash_multiset:: generic_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
@@ -1074,7 +1074,7 @@ a b c
 a
 ```
 
-## <a name="hash_multisetgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>hash_multiset:: generic_reverse_iterator (STL/CLR)
+## <a name="hash_multisetgeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> hash_multiset:: generic_reverse_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
@@ -1130,7 +1130,7 @@ a b c
 c
 ```
 
-## <a name="hash_multisetgeneric_value-stlclr"></a><a name="generic_value"></a>hash_multiset:: generic_value (STL/CLR)
+## <a name="hash_multisetgeneric_value-stlclr"></a><a name="generic_value"></a> hash_multiset:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
@@ -1184,7 +1184,7 @@ a b c
 a
 ```
 
-## <a name="hash_multisethash_delegate-stlclr"></a><a name="hash_delegate"></a>hash_multiset:: hash_delegate (STL/CLR)
+## <a name="hash_multisethash_delegate-stlclr"></a><a name="hash_delegate"></a> hash_multiset:: hash_delegate (STL/CLR)
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
@@ -1222,11 +1222,11 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="hash_multisethash_multiset-stlclr"></a><a name="hash_multiset"></a>hash_multiset:: hash_multiset (STL/CLR)
+## <a name="hash_multisethash_multiset-stlclr"></a><a name="hash_multiset"></a> hash_multiset:: hash_multiset (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 hash_multiset();
@@ -1462,7 +1462,7 @@ a b c
 a b c
 ```
 
-## <a name="hash_multisethasher-stlclr"></a><a name="hasher"></a>hash_multiset:: hasher (STL/CLR)
+## <a name="hash_multisethasher-stlclr"></a><a name="hasher"></a> hash_multiset:: hasher (STL/CLR)
 
 Bir anahtar için karma temsilcisi.
 
@@ -1501,11 +1501,11 @@ hash(L'a') = 1616896120
 hash(L'b') = 570892832
 ```
 
-## <a name="hash_multisetinsert-stlclr"></a><a name="insert"></a>hash_multiset:: Insert (STL/CLR)
+## <a name="hash_multisetinsert-stlclr"></a><a name="insert"></a> hash_multiset:: Insert (STL/CLR)
 
 Öğeleri ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator insert(value_type val);
@@ -1529,7 +1529,7 @@ Eklenecek sabit listesi.
 *Acil*<br/>
 Eklenecek anahtar değer.
 
-*olmadığı*<br/>
+*konum*<br/>
 Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1614,7 +1614,7 @@ a b b c x
 a b b c x y
 ```
 
-## <a name="hash_multisetiterator-stlclr"></a><a name="iterator"></a>hash_multiset:: yineleyici (STL/CLR)
+## <a name="hash_multisetiterator-stlclr"></a><a name="iterator"></a> hash_multiset:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
@@ -1656,7 +1656,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_multisetkey_comp-stlclr"></a><a name="key_comp"></a>hash_multiset:: key_comp (STL/CLR)
+## <a name="hash_multisetkey_comp-stlclr"></a><a name="key_comp"></a> hash_multiset:: key_comp (STL/CLR)
 
 Sıralama temsilcisini iki anahtar için kopyalar.
 
@@ -1715,7 +1715,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="hash_multisetkey_compare-stlclr"></a><a name="key_compare"></a>hash_multiset:: key_compare (STL/CLR)
+## <a name="hash_multisetkey_compare-stlclr"></a><a name="key_compare"></a> hash_multiset:: key_compare (STL/CLR)
 
 İki anahtar için sıralama temsilcisi.
 
@@ -1775,7 +1775,7 @@ compare(L'a', L'b') = False
 compare(L'b', L'a') = True
 ```
 
-## <a name="hash_multisetkey_type-stlclr"></a><a name="key_type"></a>hash_multiset:: key_type (STL/CLR)
+## <a name="hash_multisetkey_type-stlclr"></a><a name="key_type"></a> hash_multiset:: key_type (STL/CLR)
 
 Bir sıralama anahtarının türü.
 
@@ -1820,7 +1820,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_multisetload_factor-stlclr"></a><a name="load_factor"></a>hash_multiset:: load_factor (STL/CLR)
+## <a name="hash_multisetload_factor-stlclr"></a><a name="load_factor"></a> hash_multiset:: load_factor (STL/CLR)
 
 Demet başına ortalama öğeyi sayar.
 
@@ -1832,7 +1832,7 @@ float load_factor();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `(float)` [hash_multiset:: size (STL/CLR)](../dotnet/hash-multiset-size-stl-clr.md) `() /` [hash_multiset:: bucket_count (STL/CLR)](../dotnet/hash-multiset-bucket-count-stl-clr.md)döndürür `()` . Bu, ortalama demet boyutunu bulmak için kullanılır.
+Üye işlevi `(float)` [hash_multiset:: size (STL/CLR)](#size) `() /` [hash_multiset:: bucket_count (STL/CLR)](#count)döndürür `()` . Bu, ortalama demet boyutunu bulmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1894,11 +1894,11 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_multisetlower_bound-stlclr"></a><a name="lower_bound"></a>hash_multiset:: lower_bound (STL/CLR)
+## <a name="hash_multisetlower_bound-stlclr"></a><a name="lower_bound"></a> hash_multiset:: lower_bound (STL/CLR)
 
 Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator lower_bound(key_type key);
@@ -1911,7 +1911,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki ilk öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*eşdeğer sıralama içerir. Böyle bir öğe yoksa [hash_multiset:: End (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki ilk öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*eşdeğer sıralama içerir. Böyle bir öğe yoksa [hash_multiset:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1951,11 +1951,11 @@ lower_bound(L'x')==end() = True
 *lower_bound(L'b') = b
 ```
 
-## <a name="hash_multisetmake_value-stlclr"></a><a name="make_value"></a>hash_multiset:: make_value (STL/CLR)
+## <a name="hash_multisetmake_value-stlclr"></a><a name="make_value"></a> hash_multiset:: make_value (STL/CLR)
 
 Değer nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 static value_type make_value(key_type key);
@@ -1997,11 +1997,11 @@ int main()
 a b c
 ```
 
-## <a name="hash_multisetmax_load_factor-stlclr"></a><a name="max_load_factor"></a>hash_multiset:: max_load_factor (STL/CLR)
+## <a name="hash_multisetmax_load_factor-stlclr"></a><a name="max_load_factor"></a> hash_multiset:: max_load_factor (STL/CLR)
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 float max_load_factor();
@@ -2079,11 +2079,11 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_multisetoperator-stlclr"></a><a name="op"></a>hash_multiset:: operator = (STL/CLR)
+## <a name="hash_multisetoperator-stlclr"></a><a name="op"></a> hash_multiset:: operator = (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 hash_multiset<Key>% operator=(hash_multiset<Key>% right);
@@ -2134,7 +2134,7 @@ a b c
 a b c
 ```
 
-## <a name="hash_multisetrbegin-stlclr"></a><a name="rbegin"></a>hash_multiset:: rbegin (STL/CLR)
+## <a name="hash_multisetrbegin-stlclr"></a><a name="rbegin"></a> hash_multiset:: rbegin (STL/CLR)
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
@@ -2182,7 +2182,7 @@ a b c
 *++rbegin() = b
 ```
 
-## <a name="hash_multisetreference-stlclr"></a><a name="reference"></a>hash_multiset:: Reference (STL/CLR)
+## <a name="hash_multisetreference-stlclr"></a><a name="reference"></a> hash_multiset:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
@@ -2227,7 +2227,7 @@ int main()
 a b c
 ```
 
-## <a name="hash_multisetrehash-stlclr"></a><a name="rehash"></a>hash_multiset:: rehash (STL/CLR)
+## <a name="hash_multisetrehash-stlclr"></a><a name="rehash"></a> hash_multiset:: rehash (STL/CLR)
 
 Karma tabloyu yeniden oluşturur.
 
@@ -2239,7 +2239,7 @@ void rehash();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi karma tabloyu yeniden oluşturur ve [hash_multiset:: load_factor (STL/CLR)](../dotnet/hash-multiset-load-factor-stl-clr.md) `() <=` [hash_multiset:: max_load_factor (STL/CLR)](../dotnet/hash-multiset-max-load-factor-stl-clr.md). Aksi takdirde, karma tablo, bir ekleme işleminden sonra gerektiğinde yalnızca boyut artar. (Boyut olarak hiçbir şekilde azalmayın.) Karma tablonun boyutunu ayarlamak için bunu kullanırsınız.
+Üye işlevi karma tabloyu yeniden oluşturur ve [hash_multiset:: load_factor (STL/CLR)](#load_factor) `() <=` [hash_multiset:: max_load_factor (STL/CLR)](#max_load_factor). Aksi takdirde, karma tablo, bir ekleme işleminden sonra gerektiğinde yalnızca boyut artar. (Boyut olarak hiçbir şekilde azalmayın.) Karma tablonun boyutunu ayarlamak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2301,7 +2301,7 @@ load_factor() = 0.0234375
 max_load_factor() = 0.25
 ```
 
-## <a name="hash_multisetrend-stlclr"></a><a name="rend"></a>hash_multiset:: rend (STL/CLR)
+## <a name="hash_multisetrend-stlclr"></a><a name="rend"></a> hash_multiset:: rend (STL/CLR)
 
 Ters denetlenen sıranın sonunu belirtir.
 
@@ -2350,7 +2350,7 @@ a b c
 *--rend() = a
 ```
 
-## <a name="hash_multisetreverse_iterator-stlclr"></a><a name="reverse_iterator"></a>hash_multiset:: reverse_iterator (STL/CLR)
+## <a name="hash_multisetreverse_iterator-stlclr"></a><a name="reverse_iterator"></a> hash_multiset:: reverse_iterator (STL/CLR)
 
 Denetlenen sıra için ters yineleyicinin türü.
 
@@ -2392,7 +2392,7 @@ int main()
 c b a
 ```
 
-## <a name="hash_multisetsize-stlclr"></a><a name="size"></a>hash_multiset:: size (STL/CLR)
+## <a name="hash_multisetsize-stlclr"></a><a name="size"></a> hash_multiset:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
@@ -2404,7 +2404,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [hash_multiset:: Empty (STL/CLR)](../dotnet/hash-multiset-empty-stl-clr.md) `()` .
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [hash_multiset:: Empty (STL/CLR)](#empty) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2446,7 +2446,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="hash_multisetsize_type-stlclr"></a><a name="size_type"></a>hash_multiset:: size_type (STL/CLR)
+## <a name="hash_multisetsize_type-stlclr"></a><a name="size_type"></a> hash_multiset:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
@@ -2494,11 +2494,11 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="hash_multisetswap-stlclr"></a><a name="swap"></a>hash_multiset:: swap (STL/CLR)
+## <a name="hash_multisetswap-stlclr"></a><a name="swap"></a> hash_multiset:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void swap(hash_multiset<Key>% right);
@@ -2562,7 +2562,7 @@ d e f
 a b c
 ```
 
-## <a name="hash_multisetto_array-stlclr"></a><a name="to_array"></a>hash_multiset:: to_array (STL/CLR)
+## <a name="hash_multisetto_array-stlclr"></a><a name="to_array"></a> hash_multiset:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
@@ -2612,11 +2612,11 @@ a b c d
 a b c
 ```
 
-## <a name="hash_multisetupper_bound-stlclr"></a><a name="upper_bound"></a>hash_multiset:: upper_bound (STL/CLR)
+## <a name="hash_multisetupper_bound-stlclr"></a><a name="upper_bound"></a> hash_multiset:: upper_bound (STL/CLR)
 
 Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator upper_bound(key_type key);
@@ -2629,7 +2629,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki son öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise [hash_multiset:: End (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki son öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise [hash_multiset:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2669,7 +2669,7 @@ upper_bound(L'x')==end() = True
 *upper_bound(L'b') = c
 ```
 
-## <a name="hash_multisetvalue_comp-stlclr"></a><a name="value_comp"></a>hash_multiset:: value_comp (STL/CLR)
+## <a name="hash_multisetvalue_comp-stlclr"></a><a name="value_comp"></a> hash_multiset:: value_comp (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisini kopyalar.
 
@@ -2713,7 +2713,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="hash_multisetvalue_compare-stlclr"></a><a name="value_compare"></a>hash_multiset:: value_compare (STL/CLR)
+## <a name="hash_multisetvalue_compare-stlclr"></a><a name="value_compare"></a> hash_multiset:: value_compare (STL/CLR)
 
 İki öğe değeri için sıralama temsilcisi.
 
@@ -2758,7 +2758,7 @@ compare(L'a', L'b') = True
 compare(L'b', L'a') = False
 ```
 
-## <a name="hash_multisetvalue_type-stlclr"></a><a name="value_type"></a>hash_multiset:: value_type (STL/CLR)
+## <a name="hash_multisetvalue_type-stlclr"></a><a name="value_type"></a> hash_multiset:: value_type (STL/CLR)
 
 Öğenin türü.
 

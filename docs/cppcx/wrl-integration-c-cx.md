@@ -1,33 +1,33 @@
 ---
-title: WRL tümleştirme (C++/CX)
+title: WRL Tümleştirme (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
-ms.openlocfilehash: a3c8b824d2cd932a7d284804f3f28781654045e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3ea0f6aece985a2ee74916e737b9aab1bf0d1d96
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304156"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507416"
 ---
-# <a name="wrl-integration-ccx"></a>WRL tümleştirme (C++/CX)
+# <a name="wrl-integration-ccx"></a>WRL Tümleştirme (C++/CX)
 
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kod WRL koduyla serbestçe karıştırabilirsiniz. WRL tanıtıcı nesne ile bildirilen nesneler aynı çeviri biriminde kullanabilirsiniz (`^`) Akıllı işaretçi gösterimini ve WRL (`ComPtr<T>`) gösterimi. Ancak, el ile dönüş değerleri ve WRL HRESULT hata kodları ve WRL özel durumlarını işlemelidir.
+Windows Çalışma Zamanı C++ Şablon kitaplığı (WRL) kodu ile WRL Code 'u serbestçe karıştırabilirsiniz. Aynı çeviri biriminde, WRL Handle-to-Object ( `^` ) gösterimi ve WRL akıllı işaretçi () gösterimi ile tanımlanmış nesneleri kullanabilirsiniz `ComPtr<T>` . Ancak, dönüş değerlerini ve WRL HRESULT hata kodlarını ve WRL özel durumlarını el ile işlemeniz gerekir.
 
 ## <a name="wrl-development"></a>WRL geliştirme
 
-Yazma ve WRL bileşenlerinin kullanma hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+WRL bileşenlerini yazma ve kullanma hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](./wrl/windows-runtime-cpp-template-library-wrl.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod parçacığı, Windows çalışma zamanı sınıflar kullanma ve bir meta veri dosyasını incelemek için WRL ve WRL'ı kullanmayı gösterir.
+Aşağıdaki kod parçacığı, Windows Çalışma Zamanı sınıfları tüketmek ve bir meta veri dosyasını incelemek için WRL ve WRL kullanımını gösterir.
 
-Örnek bir kod parçacığı oluşturma Microsoft Store uygulamaları forumdaki alınır. Bu kod parçacığı yazarının, aşağıdaki sorumluluk reddi ve stipulations sunar:
+Örnek, derleme Microsoft Store uygulamalar forumundaki bir kod parçacığı üzerinden alınır. Bu kod parçacığının yazarı aşağıdaki bildirimler ve stipula sağlar:
 
-1. C++ Windows çalışma zamanı türlerini yansıtacak şekilde belirli API'lar sağlamaz, ancak Windows meta veri (.winmd) bir tür için CLR meta veri dosyaları ile tamamen uyumlu dosyalarıdır. Windows sağlayan yeni meta veri bulma API'ları (RoGetMetaDataFile verilen tür için .winmd dosyası almak için). Ancak, bir sınıfın örneği oluşturulamıyor çünkü bu API'leri sınırlı kullanım C++ geliştiricileri için uygulanır.
+1. C++, Windows Çalışma Zamanı türlerini yansıtmak için belirli API 'Ler sağlamaz, ancak bir tür için Windows meta veri dosyaları (. winmd) CLR meta veri dosyalarıyla tamamen uyumludur. Windows, belirli bir tür için. winmd dosyasına ulaşmak üzere yeni meta veri bulma API 'Leri (RoGetMetaDataFile) sağlar. Ancak, bir sınıfı örnekleyemezsiniz, bu API 'Ler C++ geliştiricilerine sınırlı olarak kullanılır.
 
-1. Kod derlendikten sonra Runtimeobject.lib ve Rometadata.lib bağlayıcıya geçmesi gerekir.
+1. Kod derlendikten sonra, de Runtimeobject. lib ve Rometadata. lib ' i bağlayıcıya geçirmeniz gerekir.
 
-1. Bu kod parçacığı olarak sunulan-olduğu. Düzgün çalışması beklenir, ancak muhtemelen hataları içerebilir.
+1. Bu kod parçacığı olduğu gibi sunulur. Düzgün çalışması beklenirken, muhtemelen hata içerebilir.
 
 ```cpp
 #include <hstring.h>
@@ -112,4 +112,4 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Diğer Dillerle Birlikte Çalışma](interoperating-with-other-languages-c-cx.md)
+[Diğer dillerle birlikte çalışma](interoperating-with-other-languages-c-cx.md)

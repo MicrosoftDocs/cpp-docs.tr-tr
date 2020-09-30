@@ -5,61 +5,61 @@ helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-ms.openlocfilehash: ba2b413d40da601029f5c4e1d861576212c10494
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 081d0ae8b312d827a0af98dd45c62f7563e81677
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65448430"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507763"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 
-Eşzamanlılık Çalışma zamanı, çeşitli programlama modelleri sağlar. Bu modeller çakışmamalıdır veya diğer kitaplıkları modelleri tamamlar. Belgelerin bu bölümü karşılaştırma [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) eşzamanlılık çalışma zamanı ve Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirme hakkında örnekler sunar.
+Eşzamanlılık Çalışma Zamanı çeşitli programlama modellerine izin vermez. Bu modeller diğer kitaplıkların modellerini örtüşebilir veya tamamlayabilir. Bu bölümdeki belgeler, [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) 'yi eşzamanlılık çalışma zamanı karşılaştırır ve mevcut OpenMP kodunun eşzamanlılık çalışma zamanı kullanmak için nasıl geçirileceğiyle ilgili örnekler sağlar.
 
-OpenMP programlama modeli, açık bir standart tarafından tanımlanır ve Fortran ve C/C++ programlama dilleri için iyi tanımlanmış bağlamaları vardır. OpenMP sürümleri 2.0 ve Microsoft tarafından desteklenen 2.5 C++ derleyici, yinelemeli; paralel algoritmalar için oldukça uygun olan diğer bir deyişle, bunlar paralel yineleme bir veri dizisi üzerinde gerçekleştirin. OpenMP 3.0 yinelemeli görevleri yanı sıra yinelemeli olmayan görevlerini destekler.
+OpenMP programlama modeli açık bir standart tarafından tanımlanır ve FORTRAN ve C/C++ programlama dillerinin iyi tanımlanmış bağlamaları vardır. Microsoft C++ derleyicisi tarafından desteklenen OpenMP sürümleri 2,0 ve 2,5, yinelemeli bir paralel algoritmalarda iyi uygundur; diğer bir deyişle, bir dizi veri üzerinde paralel yineleme gerçekleştirir. OpenMP 3,0, yinelemeli görevlere ek olarak, yinelemeli olmayan görevleri destekler.
 
-Paralellik derecesini önceden belirlenir ve sistemin kullanılabilir kaynaklara eşleşen OpenMP en etkili yoldur. OpenMP için yüksek performanslı bilgi işlem, özellikle de iyi bir eşleşme büyük işlem sorunları bir bilgisayarın işlem kaynakları arasında dağıtıldığı modelidir. Bu senaryoda, donanım ortamı genellikle sabittir ve geliştirici algoritma yürütüldüğünde, tüm bilgi işlem kaynaklarına özel erişim sağlamak makul bekleyebilirsiniz.
+Paralellik derecesi önceden belirleniyorsa ve sistemdeki kullanılabilir kaynaklarla eşleşiyorsa OpenMP en verimli yöntemdir. OpenMP modeli, çok büyük hesaplama sorunlarının bir bilgisayarın işlem kaynakları arasında dağıtıldığı, yüksek performanslı bilgi işlem için özellikle iyi bir eşleşmedir. Bu senaryoda, donanım ortamı genellikle sabittir ve geliştirici, algoritma yürütüldüğünde tüm bilgi işlem kaynaklarına özel erişime sahip olmasını makul bir şekilde bekleyebilir.
 
-Ancak, daha az kısıtlanmış bilgi işlem ortamlarının OpenMP için iyi bir eşleşme olmayabilir. Örneğin, özyinelemeli sorunları (örneğin, Hızlı sıralama algoritmasını veya bir veri ağacı arama) OpenMP 2.0 ve 2.5 uygulamak daha zordur. Eşzamanlılık Çalışma zamanı sağlayarak OpenMP özelliklerini tamamlar [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) ve [paralel desenler Kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL). Zaman uyumsuz aracılar kitaplığı parçalı görevlerden destekler. PPL, daha fazla ayrıntılı Paralel Görevler destekler. Eşzamanlılık Çalışma zamanı, böylece uygulama mantığına odaklanabilir paralel olarak işlemlerini gerçekleştirmek için gerekli olan altyapıyı sağlar. Eşzamanlılık Çalışma zamanı çeşitli programlama modelleri sağladığından, ancak kendi ek yükü zamanlama OpenMP gibi diğer eşzamanlılık kitaplıkları daha büyük olabilir. Bu nedenle, eşzamanlılık çalışma zamanı kullanmak için mevcut OpenMP kod dönüştürdüğünüzde performans artımlı olarak sınamanızı öneririz.
+Ancak, daha az kısıtlanmış bilgi işlem ortamları OpenMP için iyi bir eşleşme olmayabilir. Örneğin, özyinelemeli sorunlar (Hızlı sıralama algoritması veya bir veri ağacı arama gibi), OpenMP 2,0 ve 2,5 kullanarak uygulanması daha zordur. Eşzamanlılık Çalışma Zamanı, [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) ve [paralel Desenler kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (ppl) sağlayarak OpenMP özelliklerini tamamlar. Zaman uyumsuz aracılar Kitaplığı, kaba görev paralelliğini destekler; PPL, daha hassas paralel görevleri destekler. Eşzamanlılık Çalışma Zamanı, uygulamanızın mantığına odaklanabilmeniz için, işlemleri paralel olarak gerçekleştirmek için gereken altyapıyı sağlar. Ancak, Eşzamanlılık Çalışma Zamanı çeşitli programlama modellerine izin sağladığından, zamanlama ek yükü OpenMP gibi diğer eşzamanlılık kitaplıklarından daha büyük olabilir. Bu nedenle, mevcut OpenMP kodunuzu Eşzamanlılık Çalışma Zamanı kullanmak üzere dönüştürürken performansı artımlı olarak test etmenizi öneririz.
 
-## <a name="when-to-migrate-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden eşzamanlılık çalışma zamanına geçirmek ne zaman
+## <a name="when-to-migrate-from-openmp-to-the-concurrency-runtime"></a>OpenMP 'dan Eşzamanlılık Çalışma Zamanı 'e geçiş yapılırken
 
-Eşzamanlılık Çalışma zamanı aşağıdaki durumlarda kullanmak için mevcut OpenMP kod geçirmek için avantajlı olabilir.
+Aşağıdaki durumlarda Eşzamanlılık Çalışma Zamanı kullanmak için mevcut OpenMP kodunu geçirmek avantajlı olabilir.
 
-|Durumları|Eşzamanlılık Çalışma zamanı avantajları|
+|Çalışmaların|Eşzamanlılık Çalışma Zamanı avantajları|
 |-----------|-------------------------------------------|
-|Genişletilebilir bir eş zamanlı programlama altyapısı gerektirir.|Eşzamanlılık Çalışma zamanındaki özelliklerin çoğu uzatabilirsiniz. Ayrıca, yeni bir tane oluşturmak için var olan özellikler birleştirebilirsiniz. OpenMP derleyici yönergelerinde kullandığından, kolayca genişletilemez.|
-|Uygulamanızı birlikte engelleme avantaj elde edecektir.|Bir görev henüz kullanılabilir olmayan bir kaynak gerektirdiğinden engellediğinde, ilk görevi için kaynak beklerken eşzamanlılık çalışma zamanı diğer görevleri gerçekleştirebilirsiniz.|
-|Uygulamanız, dinamik yük dengelemeden avantaj elde edecektir.|Eşzamanlılık Çalışma zamanı, iş yüklerini değiştirme gibi bilgi işlem kaynakları, ayırma ayarlayan bir zamanlama algoritması kullanır. Zamanlayıcı bir paralel bölgenin bilgi işlem kaynakları ayırırken OpenMP, bu kaynak ayırmalar hesaplama sabittir.|
-|Özel durum işleme desteği gerektirir.|PPL, hem Azure içindeki hem bir paralel bölgenin veya döngü dışında özel durumları yakalama sağlar. OpenMP içinde döngü ve paralel bölgenin içinde özel durum işlemesi gerekir.|
-|İptal mekanizması gerektirir.|PPL, hem tek tek görevler ve paralel iş ağaçları iptal etmek uygulamaları etkinleştirir. OpenMP kendi iptal mekanizması uygulamak için uygulama gerektiriyor.|
-|Başladığı farklı bir bağlamda bitirebilen paralel kod gerektirir.|Eşzamanlılık Çalışma zamanı bir bağlamda, bir görevi başlatmak ve daha sonra bekleyin ya da başka bir bağlamda, bir görev iptal olanak tanır. OpenMP, tüm paralel iş başladığı bağlamında tamamlanmalıdır.|
-|Gelişmiş hata ayıklama desteği gerektirir.|Visual Studio sağlar **Paralel Yığınlar** ve **Paralel Görevler** windows böylece bir kolayca daha çok iş parçacıklı uygulamalarda hata ayıklaması yapabilirsiniz.<br /><br /> Eşzamanlılık Çalışma zamanı desteği hata ayıklama hakkında daha fazla bilgi için bkz. [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window), [Paralel Yığınlar penceresini kullanma](/visualstudio/debugger/using-the-parallel-stacks-window), ve [izlenecek yol: Paralel uygulamada hata ayıklama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).|
+|Genişletilebilir bir eşzamanlı programlama çerçevesine ihtiyacınız vardır.|Eşzamanlılık Çalışma Zamanı özelliklerin birçoğu genişletilebilir. Ayrıca, yeni yenilerini oluşturmak için var olan özellikleri birleştirebilirsiniz. OpenMP derleyici yönergelerini kullandığından, bu, kolayca genişletilemez.|
+|Uygulamanız, ortaklaşa engellenmeden faydalanabilir.|Bir görev, henüz kullanılamayan bir kaynak gerektirdiğinden, ilk görevin kaynağı beklediği sırada Eşzamanlılık Çalışma Zamanı diğer görevleri gerçekleştirebilir.|
+|Uygulamanız dinamik yük dengelemesinden faydalanabilir.|Eşzamanlılık Çalışma Zamanı, iş yükleri değiştiğinde bilgi işlem kaynaklarının ayrılmasını ayarlayan bir zamanlama algoritması kullanır. OpenMP 'de Zamanlayıcı, bir paralel bölgeye bilgi işlem kaynakları ayırdığında, bu kaynak ayırmaları hesaplama genelinde düzeltilir.|
+|Özel durum işleme desteği gerekir.|PPL, paralel bir bölgenin veya döngünün içinde ve dışında özel durumları yakalamanızı sağlar. OpenMP 'de, paralel bölgenin veya döngünün içindeki özel durumu işlemeniz gerekir.|
+|İptal mekanizması gerekir.|PPL, uygulamaların hem bireysel görevleri hem de paralel iş ağaçlarını iptal etmesini sağlar. OpenMP, uygulamanın kendi iptal mekanizmasını uygulamasını gerektirir.|
+|Paralel kodun başladığı farklı bir bağlamda sonlanması gerekir.|Eşzamanlılık Çalışma Zamanı, bir görevi tek bir bağlamda başlatıp bu görevi başka bir bağlamda beklemenize veya iptal etmenize olanak tanır. OpenMP 'da, tüm paralel işler başladığı bağlamda bitmelidir.|
+|Gelişmiş hata ayıklama desteği gerekir.|Çoklu iş parçacıklı uygulamalarda daha kolay hata ayıklamanıza olanak sağlamak için Visual Studio **Paralel Yığınlar** ve **paralel görevler** penceresi sağlar.<br /><br /> Eşzamanlılık Çalışma Zamanı için hata ayıklama desteği hakkında daha fazla bilgi için, bkz. [Görevler penceresini kullanma](/visualstudio/debugger/using-the-tasks-window), [Paralel Yığınlar penceresi kullanma](/visualstudio/debugger/using-the-parallel-stacks-window)ve [Izlenecek yol: paralel uygulamada hata ayıklama](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).|
 
-## <a name="when-not-to-migrate-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden eşzamanlılık çalışma zamanına geçirmek istemiyorsanız ne zaman
+## <a name="when-not-to-migrate-from-openmp-to-the-concurrency-runtime"></a>OpenMP 'dan Eşzamanlılık Çalışma Zamanı geçiş yapmak için
 
-Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirmek uygun olmayabilir, aşağıdaki durumlarda açıklanmaktadır.
+Aşağıdaki durumlar, Eşzamanlılık Çalışma Zamanı kullanmak için mevcut OpenMP kodunu geçirmek için uygun olmayabilir.
 
-|Durumları|Açıklama|
+|Çalışmaların|Açıklama|
 |-----------|-----------------|
-|Uygulamanız zaten gereksinimlerinizi karşılar.|Geçerli hata ayıklama desteği ve uygulama performansı ile memnun kaldığınızda, geçiş uygun olmayabilir.|
-|Çok az iş, paralel döngü gövdelerini gerçekleştirin.|Eşzamanlılık Çalışma zamanı Görev Zamanlayıcısı'nı yükü döngü gövdesi nispeten küçük olduğunda özellikle döngü gövdesi, Paralel yürütme avantajları üstesinden değil.|
-|Uygulamanızı c dilinde yazılır.|Eşzamanlılık Çalışma zamanı C++ özelliklerinin kullandığından, tam olarak kullanmak için C uygulamayı sağlayan kod yazdığınızda olamaz, uygun olmayabilir.|
+|Uygulamanız gereksinimlerinizi zaten karşılıyor.|Uygulama performansı ve geçerli hata ayıklama desteğiyle memnun kaldıysanız, geçiş uygun olmayabilir.|
+|Paralel döngü gövdelerinizi az iş yapar.|Eşzamanlılık Çalışma Zamanı görev Scheduler 'ın ek yükü, özellikle döngü gövdesi görece küçük olduğunda, döngü gövdesinin paralel olarak yürütülmesi avantajlarının üstesinden gelmeyebilir.|
+|Uygulamanız C dilinde yazılmıştır.|Eşzamanlılık Çalışma Zamanı birçok C++ özelliği kullandığından, C uygulamasının tam olarak kullanmasını sağlayan kodu yazamadığı zaman uygun olmayabilir.|
 
 ## <a name="related-topics"></a>İlgili Konular
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
+[Nasıl yapılır: bir OpenMP Parallel for döngüsünü Eşzamanlılık Çalışma Zamanı kullanacak şekilde dönüştürme](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
 
-OpenMP kullanan temel bir döngü verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) ve [için](../../parallel/openmp/reference/for-openmp.md) yönergeleri, eşzamanlılık çalışma zamanı kullanmak üzere dönüştürülmesi gösterilmektedir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritma.
+OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) [ve yönergeleri](../openmp/reference/openmp-directives.md#for-openmp) kullanan temel bir döngü verildiğinde, Eşzamanlılık Çalışma Zamanı [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasını kullanmak için nasıl dönüştürüleceğini gösterir.
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
-Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) çalıştırmak için tüm yinelemeleri gerektirmeyen döngü eşzamanlılık çalışma zamanı iptal mekanizması kullanacak şekilde dönüştürme işlemini gösterir.
+[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için Iptali kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
+Tüm yinelemelerin çalıştırılmasını gerektirmeyen bir OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) döngüsü verildiğinde, eşzamanlılık çalışma zamanı iptal mekanizmasını kullanmak için nasıl dönüştürüleceğini gösterir.
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Özel Durum İşleme Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md)<br/>
-Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) özel durum işleme gerçekleştiren bir döngü eşzamanlılık çalışma zamanı özel durum işleme mekanizmasını kullanmak üzere nasıl dönüştürme yapılacağını gösterir.
+[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için özel durum Işleme kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md)<br/>
+Özel durum işlemeyi gerçekleştiren bir OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) döngüsü verildiğinde, eşzamanlılık çalışma zamanı özel durum işleme mekanizmasını kullanmak üzere nasıl dönüştüleceğini gösterir.
 
-[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Azaltma Değişkeni Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
-Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) kullanan döngüsünü [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi, eşzamanlılık çalışma zamanı kullanmak üzere nasıl dönüştürme yapılacağını gösterir.
+[Nasıl yapılır: Eşzamanlılık Çalışma Zamanı kullanmak için azaltma değişkeni kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
+[Azaltma](../openmp/reference/openmp-clauses.md#reduction) yan tümcesini kullanan bir OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[for](../openmp/reference/openmp-directives.md#for-openmp) döngüsü verildiğinde, eşzamanlılık çalışma zamanı kullanmak için nasıl dönüştürüleceğini gösterir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

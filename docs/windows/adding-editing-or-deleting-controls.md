@@ -42,18 +42,18 @@ helpviewer_keywords:
 - RichEdit 1.0 control
 - rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: 79ea16e2d1737063040302a1ce111d275ae28e27
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: be2923c98ed1b92d4aeb2692591abcaf9f13c5ec
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352758"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508834"
 ---
 # <a name="how-to-add-edit-or-delete-controls-c"></a>Nasıl yapılır: denetimleri ekleme, düzenleme veya silme (C++)
 
 Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetimleri ekleyebilir, yeniden boyutlandırabilir, düzenleyebilir ve silebilirsiniz. Ayrıca, bir denetimin özelliklerini (KIMLIĞI gibi) veya başlangıçta çalışma zamanında görünür olup olmadığını düzenleyebilirsiniz.
 
-İletişim kutusu **düzenleyicisinde**çalışırken [araç kutusu penceresinde](/visualstudio/ide/reference/toolbox) **iletişim kutusu Düzenleyicisi** sekmesi görüntülenir. Ayrıca, **araç kutusu** penceresini daha kolay kullanılmak üzere özelleştirebilirsiniz. Daha fazla bilgi için bkz. [araç kutusunu kullanma](/visualstudio/ide/using-the-toolbox) ve [araç kutusu penceresini gösterme veya gizleme](showing-or-hiding-the-dialog-editor-toolbar.md).
+İletişim kutusu **düzenleyicisinde**çalışırken [araç kutusu penceresinde](/visualstudio/ide/reference/toolbox) **iletişim kutusu Düzenleyicisi** sekmesi görüntülenir. Ayrıca, **araç kutusu** penceresini daha kolay kullanılmak üzere özelleştirebilirsiniz. Daha fazla bilgi için bkz. [araç kutusunu kullanma](/visualstudio/ide/using-the-toolbox) ve [araç kutusu penceresini gösterme veya gizleme](./dialog-editor.md).
 
 > [!TIP]
 > Birçok örnekte **Iletişim kutusu düzenleyicisini**kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ fare düğmesini seçebilirsiniz.
@@ -94,7 +94,7 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 1. Fare düğmesini bırakın. Denetim, belirttiğiniz boyuttaki iletişim kutusunun üzerine yükler.
 
 > [!TIP]
-> Denetimin kenarlığının boyutlandırma tutamaçlarını taşıyarak iletişim kutusuna bırakarak denetimi yeniden boyutlandırabilirsiniz. Daha fazla bilgi için bkz. [tek denetimleri boyutlandırma](../windows/sizing-individual-controls.md).
+> Denetimin kenarlığının boyutlandırma tutamaçlarını taşıyarak iletişim kutusuna bırakarak denetimi yeniden boyutlandırabilirsiniz. Daha fazla bilgi için bkz. [tek denetimleri boyutlandırma](./arrangement-of-controls-on-dialog-boxes.md).
 
 ### <a name="to-add-a-custom-control"></a>Özel bir denetim eklemek için
 
@@ -129,7 +129,7 @@ Iletişim kutusu **düzenleyicisini**kullanarak, iletişim kutularında denetiml
 
 1. **CTRL** tuşuna basıldığında iletişim kutusu denetimine çift tıklayın.
 
-   [Üye değişkeni Ekleme Sihirbazı](../ide/add-member-variable-wizard.md) görünür.
+   [Üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard) görünür.
 
 1. **Üye değişkeni ekleme** sihirbazına ilgili bilgileri yazın. Daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md).
 

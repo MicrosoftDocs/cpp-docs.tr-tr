@@ -1,6 +1,6 @@
 ---
 title: __argc, __argv, __wargv
-description: Microsoft C çalışma zamanı kitaplığı genel sabitlerini __argc, __argvve __wargvaçıklar.
+description: Microsoft C çalışma zamanı kitaplığı genel sabitlerini __argc , __argv ve değerlerini açıklar __wargv .
 ms.date: 11/04/2016
 api_name:
 - __wargv
@@ -27,16 +27,16 @@ no-loc:
 - __wargv
 - main
 - wmain
-ms.openlocfilehash: 86a22a7391c7bde34d7734631a2970a45851dda3
-ms.sourcegitcommit: e93f3e6a110fe38bc642055bdf4785e620d4220f
+ms.openlocfilehash: 02c130be0d2dcb8e48d2bb5c75438c94003fc9dd
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76123987"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507598"
 ---
-# <a name="opno-loc__argc-opno-loc__argv-opno-loc__wargv"></a>__argc, __argv, __wargv
+# <a name="no-loc__argc-no-loc__argv-no-loc__wargv"></a>__argc, __argv, __wargv
 
-`__argc` genel değişkeni, programa geçirilen komut satırı bağımsız değişkenlerinin sayısının sayısıdır. `__argv`, program bağımsız değişkenlerini içeren tek baytlık karakter veya çok baytlı karakter dizeleri dizisinin bir işaretçisidir ve `__wargv` program bağımsız değişkenlerini içeren geniş karakterli dizeler dizisinin bir işaretçisidir. Bu genel değişkenler `main` veya `wmain`bağımsız değişkenlerini sağlar.
+`__argc`Genel değişken, programa geçirilen komut satırı bağımsız değişkenlerinin sayısının sayısıdır. `__argv` , program bağımsız değişkenlerini içeren bir dizi tek baytlık karakter veya çok baytlı karakter dizelerinin bir işaretçisidir ve `__wargv` Program bağımsız değişkenlerini içeren geniş karakterli dizeler dizisinin bir işaretçisidir. Bu genel değişkenler, veya için bağımsız değişkenleri sağlar `main` `wmain` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,9 +48,9 @@ extern wchar_t ** __wargv;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`main` işlevi kullanan bir programda, `__argc` ve `__argv` programı başlatmak için kullanılan komut satırı kullanılarak program başlangıcında başlatılır. Komut satırı bağımsız bağımsız değişkenlere ayrıştırılır ve joker karakterler genişletilir. Bağımsız değişkenlerin sayısı `__argc` atanır ve bağımsız değişken dizeleri yığına ayrılır ve bağımsız değişken dizisine yönelik bir işaretçi `__argv`atanır. Geniş karakter ve `wmain` işlevi kullanacak şekilde derlenen bir programda, bağımsız değişkenler ayrıştırılır ve joker karakterler geniş karakterli dizeler olarak genişletilir ve bağımsız değişken dizesi dizisine bir işaretçi `__wargv`atanır.
+İşlevini kullanan bir programda ve programı `main`  `__argc` `__argv` başlatmak için kullanılan komut satırı kullanılarak program başlangıcında başlatılır. Komut satırı bağımsız bağımsız değişkenlere ayrıştırılır ve joker karakterler genişletilir. Bağımsız değişkenlerin sayısı öğesine atanır `__argc` ve bağımsız değişken dizeleri yığına ayrılır ve bağımsız değişkenlerin dizisine bir işaretçi atanır `__argv` . Geniş karakter ve bir işlev kullanmak üzere derlenen bir programda `wmain` bağımsız değişkenler ayrıştırılır ve joker karakterler geniş karakterli dizeler olarak genişletilir ve bağımsız değişken dizesi dizisine bir işaretçi atanır `__wargv` .
 
-Taşınabilir kod için, programınızdaki komut satırı bağımsız değişkenlerini almak üzere `main` geçirilen bağımsız değişkenleri kullanmanızı öneririz.
+Taşınabilir kod için, `main` programınızda komut satırı bağımsız değişkenlerini almak için geçirilen bağımsız değişkenleri kullanmanızı öneririz.
 
 ### <a name="generic-text-routine-mappings"></a>Genel metin rutin eşlemeleri
 
@@ -62,12 +62,12 @@ Taşınabilir kod için, programınızdaki komut satırı bağımsız değişken
 
 |Genel değişken|Gerekli başlık|
 |---------------------|---------------------|
-|`__argc`, `__argv`, `__wargv`|\<Stdlib. h >, \<cstdlib > (C++)|
+|`__argc`, `__argv`, `__wargv`|\<stdlib.h>, \<cstdlib> (C++)|
 
-`__argc`, `__argv`ve `__wargv` Microsoft uzantılarıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+`__argc`, `__argv` ve, `__wargv` Microsoft uzantılarıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel değişkenler](../c-runtime-library/global-variables.md)\
-[main işlevi ve komut satırı bağımsız değişkenleri (C++)](../cpp/main-function-command-line-args.md)\
-[main yerine wmain kullanma](../cpp/using-wmain-instead-of-main.md)
+[main işlev ve komut satırı bağımsız değişkenleri (C++)](../cpp/main-function-command-line-args.md)\
+[wmainYerine kullanmamain](../cpp/main-function-command-line-args.md)

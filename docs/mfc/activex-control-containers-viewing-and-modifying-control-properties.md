@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], properties
 - controls [MFC], properties
 ms.assetid: 14ce5152-742b-4e0d-a9ab-c7b456e32918
-ms.openlocfilehash: b0ca43f59cf70dea1348f22a08cfb4e89b45c3dd
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 052da13619fae5004ee573bd4957266a545d8335
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617368"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507913"
 ---
 # <a name="activex-control-containers-viewing-and-modifying-control-properties"></a>ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme
 
@@ -31,7 +31,7 @@ Denetimin özelliklerini görüntülemenin ilk adımı, bir denetimin örneğini
 
 1. Ana iletişim kutusu şablonunuzu açın.
 
-1. **ActiveX denetimi Ekle** iletişim kutusunu kullanarak bir ActiveX denetimi ekleyin. Daha fazla bilgi için bkz. [bir Iletişim kutusuna ActiveX denetimleri görüntüleme ve ekleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).
+1. **ActiveX denetimi Ekle** iletişim kutusunu kullanarak bir ActiveX denetimi ekleyin. Daha fazla bilgi için bkz. [bir Iletişim kutusuna ActiveX denetimleri görüntüleme ve ekleme](../windows/adding-editing-or-deleting-controls.md).
 
 1. İletişim kutusunda ActiveX denetimini seçin.
 

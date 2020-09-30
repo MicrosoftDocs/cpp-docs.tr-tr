@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3040
 ms.assetid: 29e857ac-74f0-4ec6-becf-9026e38c160e
-ms.openlocfilehash: 8a7ee7b814be1963e2d98b54e547cc5965eef9d3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 943c4b3da1a90c8636246032a3d8faf41ad4552a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754959"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508352"
 ---
 # <a name="compiler-error-c3040"></a>Derleyici hatası C3040
 
 ' var ': ' azaltma ' yan tümcesindeki değişkenin türü ' operator ' azaltma işleci ile uyumsuz
 
-[Azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesindeki bir değişken, azaltma işleci ile kullanılamaz.
+[Azaltma](../../parallel/openmp/reference/openmp-clauses.md#reduction) yan tümcesindeki bir değişken, azaltma işleci ile kullanılamaz.
 
 Aşağıdaki örnek C3040 oluşturur:
 

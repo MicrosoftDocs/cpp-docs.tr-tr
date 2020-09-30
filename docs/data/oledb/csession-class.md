@@ -40,18 +40,18 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: 6858c26df5f5ee364717d089704117e650282278
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f507ed432e107f586d34bb6b08fa9d3f7dc509d8
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841109"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507239"
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 
 Tek bir veritabanı erişim oturumunu temsil eder.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class CSession
@@ -69,20 +69,20 @@ class CSession
 |-|-|
 |[Durdurulmaya](#abort)|İşlemi iptal eder (sonlandırır).|
 |[Kapat](#close)|Oturumu kapatır.|
-|[Uygulayın](#commit)|İşlemi kaydeder.|
+|[İşleme](#commit)|İşlemi kaydeder.|
 |[GetTransactionInfo](#gettransactioninfo)|Bir işlemle ilgili bilgileri döndürür.|
 |[Aç](#open)|Veri kaynağı nesnesi için yeni bir oturum açar.|
 |[StartTransaction](#starttransaction)|Bu oturum için yeni bir işlem başlatır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir veya daha fazla oturum, bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi tarafından temsil edilen her bir sağlayıcı bağlantısıyla (veri kaynağı) ilişkilendirilebilir. Bir için yeni bir oluşturmak için `CSession` `CDataSource` [CSession:: Open](../../data/oledb/csession-open.md)çağırın. Bir veritabanı işlemine başlamak için `CSession` `StartTransaction` yöntemini sağlar. Bir işlem başlatıldıktan sonra, yöntemini kullanarak bu işleme `Commit` veya yöntemini kullanarak iptal edebilirsiniz `Abort` .
+Bir veya daha fazla oturum, bir [CDataSource](../../data/oledb/cdatasource-class.md) nesnesi tarafından temsil edilen her bir sağlayıcı bağlantısıyla (veri kaynağı) ilişkilendirilebilir. Bir için yeni bir oluşturmak için `CSession` `CDataSource` [CSession:: Open](#open)çağırın. Bir veritabanı işlemine başlamak için `CSession` `StartTransaction` yöntemini sağlar. Bir işlem başlatıldıktan sonra, yöntemini kullanarak bu işleme `Commit` veya yöntemini kullanarak iptal edebilirsiniz `Abort` .
 
 ## <a name="csessionabort"></a><a name="abort"></a> CSession:: Abort
 
 İşlemi sonlandırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Abort(BOID* pboidReason = NULL,
@@ -100,9 +100,9 @@ Standart HRESULT.
 
 ## <a name="csessionclose"></a><a name="close"></a> CSession:: Close
 
-[CSession:: Open](../../data/oledb/csession-open.md)tarafından açılan oturumu kapatır.
+[CSession:: Open](#open)tarafından açılan oturumu kapatır.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void Close() throw();
@@ -116,7 +116,7 @@ void Close() throw();
 
 İşlemi kaydeder.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Commit(BOOL bRetaining = FALSE,
@@ -140,7 +140,7 @@ Daha fazla bilgi için bkz. [ITransaction:: COMMIT](/previous-versions/windows/d
 
 Bir işlemle ilgili bilgileri döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
@@ -162,7 +162,7 @@ Daha fazla bilgi için *OLE DB Programcı başvurusunda* [ITransaction:: GetTran
 
 Veri kaynağı nesnesi için yeni bir oturum açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Open(const CDataSource& ds,
@@ -187,13 +187,13 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri kaynağı nesnesini öğesine geçirmeden önce [CDataSource:: Open](../../data/oledb/cdatasource-open.md) kullanarak açmanız gerekir `CSession::Open` .
+Veri kaynağı nesnesini öğesine geçirmeden önce [CDataSource:: Open](./cdatasource-class.md#open) kullanarak açmanız gerekir `CSession::Open` .
 
 ## <a name="csessionstarttransaction"></a><a name="starttransaction"></a> CSession:: StartTransaction
 
 Bu oturum için yeni bir işlem başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,

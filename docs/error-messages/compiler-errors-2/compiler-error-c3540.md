@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3540
 ms.assetid: 3c0c959c-e3b7-40eb-b922-ccac44bd9d85
-ms.openlocfilehash: a041961e8a91832be67d8def8f2a6a3ef70906d9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 897defd5643a90234c2ae3b7bb4f58904864e858
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223401"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508088"
 ---
 # <a name="compiler-error-c3540"></a>Derleyici hatası C3540
 
@@ -36,6 +36,6 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)<br/>
+[auto Anahtar Sözcüğü](../../cpp/auto-cpp.md)<br/>
 [/Zc: Auto (değişken türünü türet)](../../build/reference/zc-auto-deduce-variable-type.md)<br/>
 [sizeof Işleci](../../cpp/sizeof-operator.md)

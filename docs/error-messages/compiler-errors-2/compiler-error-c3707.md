@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3707
 ms.assetid: ac63a5dd-7a4b-48d2-9f2a-be9cb090134c
-ms.openlocfilehash: 6faf035c0f4f68b10b187c56bea4cafc776998cf
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a09bf080c72e154a37cec5cdb75e714c12dd7150
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757962"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507976"
 ---
 # <a name="compiler-error-c3707"></a>Derleyici hatası C3707
 
 ' function ': dispınterface yöntemi bir DISPID içermelidir
 
-`dispinterface` yöntemi kullanıyorsanız, bunu bir `dispid`atamanız gerekir. Bu hatayı onarmak için, `dispinterface` yöntemine `dispid` atayın, örneğin, aşağıdaki örnekteki yöntemde `id` özniteliğini açıklama ekleyerek. Daha fazla bilgi için bkz. [dispınterface](../../windows/dispinterface.md) ve [ID](../../windows/id.md)özniteliklerini inceleyin.
+Bir `dispinterface` yöntemi kullanırsanız, bunu atamanız gerekir `dispid` . Bu hatayı onarmak için, bir `dispid` `dispinterface` yöntemine atayın, örneğin, `id` Aşağıdaki örnekte bulunan yöntemine ait özniteliğin açıklamasını kaldırın. Daha fazla bilgi için bkz. [dispınterface](../../windows/attributes/dispinterface.md) ve [ID](../../windows/attributes/id.md)özniteliklerini inceleyin.
 
 Aşağıdaki örnek C3707 oluşturur:
 

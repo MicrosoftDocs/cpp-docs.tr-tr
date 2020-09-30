@@ -6,22 +6,22 @@ f1_keywords:
 helpviewer_keywords:
 - C3171
 ms.assetid: 1ce26997-7ef1-4c9f-84da-003ea1a4251e
-ms.openlocfilehash: a3af19fa6b4f4def9bb42325f648109cfafcdaef
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 14f0cedc5448005a29d74f05ae3e68e74eb5cf1c
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761757"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508303"
 ---
 # <a name="compiler-error-c3171"></a>Derleyici hatası C3171
 
 ' Module ': bir projede farklı modül öznitelikleri belirtilemez
 
-bir derlemedeki iki dosyada farklı parametre listelerine sahip [Modül](../../windows/module-cpp.md) öznitelikleri bulundu. Her derleme için yalnızca bir benzersiz `module` özniteliği belirtilebilir.
+bir derlemedeki iki dosyada farklı parametre listelerine sahip [Modül](../../windows/attributes/module-cpp.md) öznitelikleri bulundu. `module`Her derleme için yalnızca bir benzersiz öznitelik belirtilebilir.
 
-Özdeş `module` öznitelikleri, birden fazla kaynak kodu dosyasında belirtilebilir.
+Aynı `module` öznitelikler birden fazla kaynak kodu dosyasında belirtilebilir.
 
-Örneğin, aşağıdaki `module` öznitelikleri bulunursa:
+Örneğin, aşağıdaki `module` öznitelikler bulunursa:
 
 ```cpp
 // C3171.cpp

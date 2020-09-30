@@ -95,12 +95,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: d110e356-ba3e-4e52-9e2d-d997bf975c96
-ms.openlocfilehash: a7db6367ae7d5096c47666a1ea930720f061c9dd
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: c6df41836433b952d7d2e0e7d744270174c5768a
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743132"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91508737"
 ---
 # <a name="hash_set-stlclr"></a>hash_set (STL/CLR)
 
@@ -108,7 +108,7 @@ ms.locfileid: "90743132"
 
 Aşağıdaki açıklamada, `GValue` ile aynı şekilde, `GKey` İkincisi bir başvuru türü olmadığı sürece *anahtarla* aynı olur ve bu durumda olur `Key^` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Key>
@@ -137,7 +137,7 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
 ## <a name="declarations"></a>Bildirimler
 
-|Tür Tanımı|Description|
+|Tür Tanımı|Açıklama|
 |---------------------|-----------------|
 |[hash_set::const_iterator (STL/CLR)](#const_iterator)|Denetlenen dizi için bir sabit yineleyici türü.|
 |[hash_set::const_reference (STL/CLR)](#const_reference)|Bir öğe için sabit bir başvuru türü.|
@@ -157,7 +157,7 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 |[hash_set::value_compare (STL/CLR)](#value_compare)|İki öğe değeri için sıralama temsilcisi.|
 |[hash_set::value_type (STL/CLR)](#value_type)|Öğenin türü.|
 
-|Üye İşlevi|Description|
+|Üye İşlevi|Açıklama|
 |---------------------|-----------------|
 |[hash_set::begin (STL/CLR)](#begin)|Denetlenen dizinin başlangıcını belirtir.|
 |[hash_set::bucket_count (STL/CLR)](#bucket_count)|Demetlerin sayısını sayar.|
@@ -191,7 +191,7 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
 ## <a name="interfaces"></a>Arabirimler
 
-|Arabirim|Description|
+|Arabirim|Açıklama|
 |---------------|-----------------|
 |<xref:System.ICloneable>|Bir nesneyi çoğaltın.|
 |<xref:System.Collections.IEnumerable>|Öğeler aracılığıyla sıralama.|
@@ -204,9 +204,9 @@ Denetlenen dizideki bir öğenin anahtar bileşeni türü.
 
 Nesnesi, çift yönlü bağlantılı bir listede ayrı düğümler olarak denetlediği sıra için depolamayı ayırır ve boşaltır. Bu nesne, erişimi hızlandırmak için aynı zamanda listeye (karma tablo) farklı bir işaretçiler dizisi tutar ve tüm listeyi bir alt liste dizisi veya demetler olarak bir dizi olarak yönetir. Tek bir düğümün içeriğini başka bir düğüme kopyalayarak düğümler arasındaki bağlantıları değiştirerek sıralı tutan bir sepete öğe ekler. Diğer bir deyişle, daha fazla Bing, kalan öğeleri etkilemeden öğeleri ekleyebileceğiniz ve kaldırabileceğiniz anlamına gelir.
 
-Nesne, [hash_set:: key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md)türünde depolanan bir temsilci nesnesini çağırarak Denetim yaptığı her sepete sahiptir. Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<=(key_type, key_type)` .
+Nesne, [hash_set:: key_compare (STL/CLR)](#key_compare)türünde depolanan bir temsilci nesnesini çağırarak Denetim yaptığı her sepete sahiptir. Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan değer karşılaştırmayla belirlenir `operator<=(key_type, key_type)` .
 
-Saklı temsilci nesnesine, [hash_set:: key_comp (STL/CLR)](../dotnet/hash-set-key-comp-stl-clr.md)üye işlevini çağırarak erişirsiniz `()` . Bu tür bir temsilci nesnesi [hash_set:: key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)türü anahtarlar arasında denk sıralama tanımlamalıdır. Yani, her iki anahtar için `X` ve `Y` :
+Saklı temsilci nesnesine, [hash_set:: key_comp (STL/CLR)](#key_comp)üye işlevini çağırarak erişirsiniz `()` . Bu tür bir temsilci nesnesi [hash_set:: key_type (STL/CLR)](#key_type)türü anahtarlar arasında denk sıralama tanımlamalıdır. Yani, her iki anahtar için `X` ve `Y` :
 
 `key_comp()(X, Y)` her çağrıda aynı Boole sonucunu döndürür.
 
@@ -216,7 +216,7 @@ Gibi davranan `operator<=(key_type, key_type)` `operator>=(key_type, key_type)` 
 
 Kapsayıcının yalnızca, anahtarları eşdeğer sıralama (ve aynı tamsayı değeri ile aynı karma değer) olan öğelerin bir demet içinde bitişik olduğunu garanti edin. Şablon sınıfının [hash_multiset (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)aksine, şablon sınıfının bir nesnesi `hash_set` tüm öğeler için anahtarların benzersiz olmasını sağlar. (İki anahtarın eşdeğer sıralaması yoktur.)
 
-Nesnesi, [hash_set:: hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)türünde depolanan bir temsilci nesnesini çağırarak, hangi demetini belirli bir sıralama anahtarı içermesi gerektiğini belirler. Bu saklı nesneye, anahtar değerine bağlı bir tamsayı değer elde etmek için [hash_set:: hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md) üye işlevini çağırarak erişirsiniz `()` . Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan olarak işlevdir `System::Object::hash_value(key_type)` . Yani, tüm anahtarlar `X` ve `Y` :
+Nesnesi, [hash_set:: hasher (STL/CLR)](#hasher)türünde depolanan bir temsilci nesnesini çağırarak, hangi demetini belirli bir sıralama anahtarı içermesi gerektiğini belirler. Bu saklı nesneye, anahtar değerine bağlı bir tamsayı değer elde etmek için [hash_set:: hash_delegate (STL/CLR)](#hash_delegate) üye işlevini çağırarak erişirsiniz `()` . Hash_set oluşturduğunuzda saklı temsilci nesnesini belirtebilirsiniz; temsilci nesnesi belirtmezseniz, varsayılan olarak işlevdir `System::Object::hash_value(key_type)` . Yani, tüm anahtarlar `X` ve `Y` :
 
 `hash_delegate()(X)` her çağrıda aynı tamsayı sonucunu döndürür.
 
@@ -224,9 +224,9 @@ Nesnesi, [hash_set:: hasher (STL/CLR)](../dotnet/hash-set-hasher-stl-clr.md)tür
 
 Her öğe hem bir anahtar hem de bir değer olarak hizmet verir. Sıra, dizi içindeki öğe sayısından (Sabit saat) bağımsız olan ve en iyi durumda en az sayıda işlem içeren, rastgele bir öğenin arama, ekleme ve kaldırılmasına izin veren bir şekilde temsil edilir. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.
 
-Karma değerler her ikisi de dağıtılmadığından, karma bir tablo oluşturabilir. Extreme 'de, her zaman aynı değeri döndüren bir karma işlevi için--arama, ekleme ve kaldırma dizideki öğelerin sayısıyla orantılıdır (doğrusal saat). Kapsayıcı endeavors, makul bir karma işlevi, ortalama demet boyutu ve karma tablo boyutu (Toplam demet sayısı) seçmek için, ancak bu seçimlerin herhangi birini veya tümünü geçersiz kılabilirsiniz. Bkz. Örneğin, [hash_set:: max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md) ve [hash_set:: REHASH (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md)işlevleri.
+Karma değerler her ikisi de dağıtılmadığından, karma bir tablo oluşturabilir. Extreme 'de, her zaman aynı değeri döndüren bir karma işlevi için--arama, ekleme ve kaldırma dizideki öğelerin sayısıyla orantılıdır (doğrusal saat). Kapsayıcı endeavors, makul bir karma işlevi, ortalama demet boyutu ve karma tablo boyutu (Toplam demet sayısı) seçmek için, ancak bu seçimlerin herhangi birini veya tümünü geçersiz kılabilirsiniz. Bkz. Örneğin, [hash_set:: max_load_factor (STL/CLR)](#max_load_factor) ve [hash_set:: REHASH (STL/CLR)](#rehash)işlevleri.
 
-Hash_set çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [hash_set:: End (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir hash_set yineleyicisini artırabilirsiniz ve daha sonra eşittir ile karşılaştırılır `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
+Hash_set çift yönlü yineleyiciler destekler, bu, denetlenen dizide bir öğe atayan bir yineleyici verilen bitişik öğelere adım adım yol açabilir. Özel bir baş düğüm [hash_set:: End (STL/CLR)](#end)tarafından döndürülen Yineleyici öğesine karşılık gelir `()` . Varsa, denetlenen sıradaki son öğeye ulaşmak için bu yineleyiciyi azaltamazsınız. Baş düğüme ulaşmak için bir hash_set yineleyicisini artırabilirsiniz ve daha sonra eşittir ile karşılaştırılır `end()` . Ancak tarafından döndürülen Yineleyici için başvuru oluşturamazsınız `end()` .
 
 Bir hash_set öğesine, bir rastgele erişim Yineleyici gerektiren sayısal konumuna doğrudan başvurmayacağınızı unutmayın.
 
@@ -240,7 +240,7 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 Denetlenen dizinin başlangıcını belirtir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator begin();
@@ -282,7 +282,7 @@ int main()
 
 Demetlerin sayısını sayar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 int bucket_count();
@@ -356,7 +356,7 @@ max_load_factor() = 0.25
 
 Tüm öğeleri kaldırır.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void clear();
@@ -364,7 +364,7 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [hash_set:: Erase (STL/CLR)](../dotnet/hash-set-erase-stl-clr.md) `(` [hash_set:: BEGIN (STL/CLR](../dotnet/hash-set-begin-stl-clr.md) ) `(),` [hash_set:: End (STL/CLR](../dotnet/hash-set-end-stl-clr.md)) öğesini etkin şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
+Üye işlevi [hash_set:: Erase (STL/CLR)](#erase) `(` [hash_set:: BEGIN (STL/CLR](#begin) ) `(),` [hash_set:: End (STL/CLR](#end)) öğesini etkin şekilde çağırır `())` . Denetlenen sıranın boş olduğundan emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -414,7 +414,7 @@ size() = 0
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef T2 const_iterator;
@@ -456,7 +456,7 @@ a b c
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef value_type% const_reference;
@@ -501,7 +501,7 @@ a b c
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef T4 const_reverse_iterator;
@@ -543,7 +543,7 @@ c b a
 
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 size_type count(key_type key);
@@ -596,7 +596,7 @@ count(L'C') = 0
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef int difference_type;
@@ -651,7 +651,7 @@ begin()-end() = -3
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool empty();
@@ -659,7 +659,7 @@ bool empty();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi boş bir denetlenen dizi için true döndürür. [Hash_set:: size (STL/CLR)](../dotnet/hash-set-size-stl-clr.md)eşdeğerdir `() == 0` . Hash_set boş olup olmadığını test etmek için kullanırsınız.
+Üye işlevi boş bir denetlenen dizi için true döndürür. [Hash_set:: size (STL/CLR)](#size)eşdeğerdir `() == 0` . Hash_set boş olup olmadığını test etmek için kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -703,7 +703,7 @@ empty() = True
 
 Denetlenen dizinin bitişini belirtir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator end();
@@ -752,7 +752,7 @@ a b c
 
 Belirtilen bir anahtarla eşleşen aralığı bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cliext::pair<iterator, iterator> equal_range(key_type key);
@@ -765,7 +765,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [hash_set:: lower_bound (STL/CLR)](../dotnet/hash-set-lower-bound-stl-clr.md) `(key),` [hash_set:: upper_bound (STL/CLR)](../dotnet/hash-set-upper-bound-stl-clr.md) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
+Üye işlevi yineleyicilerin bir çiftini döndürür `cliext::pair<iterator, iterator>(` [hash_set:: lower_bound (STL/CLR)](#lower_bound) `(key),` [hash_set:: upper_bound (STL/CLR)](#upper_bound) `(key))` . Belirli bir anahtarla eşleşen denetimli dizide bulunan öğe aralığını öğrenmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -812,7 +812,7 @@ b
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -831,12 +831,12 @@ Silinecek anahtar değer.
 *soyadına*<br/>
 Silinecek aralığın sonu.
 
-*olmadığı*<br/>
+*konum*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_set:: End (STL/CLR)](../dotnet/hash-set-end-stl-clr.md) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye *işlevi, öğesinin*işaret ettiği denetlenen sıranın öğesini kaldırır ve kaldırılan öğenin ötesinde ilk öğeyi atayan bir yineleyici döndürür ya da böyle bir öğe yoksa [hash_set:: End (STL/CLR)](#end) `()` . Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetimli sıranın öğelerini kaldırır `first` `last` ve kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi veya böyle bir öğe yoksa bir yineleyici döndürür `end()` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
@@ -896,7 +896,7 @@ size() = 1
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator find(key_type key);
@@ -909,7 +909,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_set:: End (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
+Denetlenen dizide en az bir öğe *anahtar*ile eşdeğer sıralamaya sahipse, üye işlevi bu öğelerden birini tanımlayarak bir yineleyici döndürür; Aksi takdirde [hash_set:: End (STL/CLR)](#end)döndürür `()` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğeyi bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -952,7 +952,7 @@ find C = False
 
 Kapsayıcının genel arabiriminin türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::
@@ -1016,7 +1016,7 @@ a b c d e
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1072,7 +1072,7 @@ a
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1128,7 +1128,7 @@ c
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef GValue generic_value;
@@ -1182,7 +1182,7 @@ a
 
 Belirtilen bir anahtarla eşleşen bir öğeyi bulur.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 hasher^ hash_delegate();
@@ -1220,7 +1220,7 @@ hash(L'b') = 570892832
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 hash_set();
@@ -1460,7 +1460,7 @@ a b c
 
 Bir anahtar için karma temsilcisi.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Microsoft::VisualC::StlClr::UnaryDelegate<GKey, int>
@@ -1499,7 +1499,7 @@ hash(L'b') = 570892832
 
 Öğeleri ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cliext::pair<iterator, bool> insert(value_type val);
@@ -1523,7 +1523,7 @@ Eklenecek sabit listesi.
 *Acil*<br/>
 Eklenecek anahtar değer.
 
-*olmadığı*<br/>
+*konum*<br/>
 Kapsayıcının ekleneceği yer (yalnızca ipucu).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1615,7 +1615,7 @@ a b c x y
 
 Denetlenen dizi için bir yineleyici türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef T1 iterator;
@@ -1657,7 +1657,7 @@ a b c
 
 Sıralama temsilcisini iki anahtar için kopyalar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 key_compare^key_comp();
@@ -1716,7 +1716,7 @@ compare(L'b', L'a') = True
 
 İki anahtar için sıralama temsilcisi.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>
@@ -1776,7 +1776,7 @@ compare(L'b', L'a') = True
 
 Bir sıralama anahtarının türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef Key key_type;
@@ -1821,7 +1821,7 @@ a b c
 
 Demet başına ortalama öğeyi sayar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 float load_factor();
@@ -1829,7 +1829,7 @@ float load_factor();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `(float)` [hash_set:: size (STL/CLR)](../dotnet/hash-set-size-stl-clr.md) `() /` [hash_set:: bucket_count (STL/CLR)](../dotnet/hash-set-bucket-count-stl-clr.md)döndürür `()` . Bu, ortalama demet boyutunu bulmak için kullanılır.
+Üye işlevi `(float)` [hash_set:: size (STL/CLR)](#size) `() /` [hash_set:: bucket_count (STL/CLR)](#bucket_count)döndürür `()` . Bu, ortalama demet boyutunu bulmak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1895,7 +1895,7 @@ max_load_factor() = 0.25
 
 Belirtilen anahtarla eşleşen aralığın başlangıcını bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator lower_bound(key_type key);
@@ -1908,7 +1908,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki ilk öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*eşdeğer sıralama içerir. Böyle bir öğe yoksa [hash_set:: End (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki ilk öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*eşdeğer sıralama içerir. Böyle bir öğe yoksa [hash_set:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde, öğesini atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen, denetlenen dizide bulunan bir öğe dizisinin başlangıcını bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1952,7 +1952,7 @@ lower_bound(L'x')==end() = True
 
 Değer nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 static value_type make_value(key_type key);
@@ -1998,7 +1998,7 @@ a b c
 
 Demet başına en yüksek öğe sayısını alır veya ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 float max_load_factor();
@@ -2065,7 +2065,7 @@ int main()
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 hash_set<Key>% operator=(hash_set<Key>% right);
@@ -2120,7 +2120,7 @@ a b c
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 reverse_iterator rbegin();
@@ -2168,7 +2168,7 @@ a b c
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef value_type% reference;
@@ -2213,7 +2213,7 @@ a b c
 
 Karma tabloyu yeniden oluşturur.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void rehash();
@@ -2221,7 +2221,7 @@ void rehash();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi karma tabloyu yeniden oluşturur ve [hash_set:: load_factor (STL/CLR)](../dotnet/hash-set-load-factor-stl-clr.md) `() <=` [hash_set:: max_load_factor (STL/CLR)](../dotnet/hash-set-max-load-factor-stl-clr.md). Aksi takdirde, karma tablo, bir ekleme işleminden sonra gerektiğinde yalnızca boyut artar. (Boyut olarak hiçbir şekilde azalmayın.) Karma tablonun boyutunu ayarlamak için bunu kullanırsınız.
+Üye işlevi karma tabloyu yeniden oluşturur ve [hash_set:: load_factor (STL/CLR)](#load_factor) `() <=` [hash_set:: max_load_factor (STL/CLR)](#max_load_factor). Aksi takdirde, karma tablo, bir ekleme işleminden sonra gerektiğinde yalnızca boyut artar. (Boyut olarak hiçbir şekilde azalmayın.) Karma tablonun boyutunu ayarlamak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2287,7 +2287,7 @@ max_load_factor() = 0.25
 
 Ters denetlenen sıranın sonunu belirtir.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 reverse_iterator rend();
@@ -2336,7 +2336,7 @@ a b c
 
 Denetlenen sıra için ters yineleyicinin türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef T3 reverse_iterator;
@@ -2378,7 +2378,7 @@ c b a
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 size_type size();
@@ -2386,7 +2386,7 @@ size_type size();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [hash_set:: Empty (STL/CLR)](../dotnet/hash-set-empty-stl-clr.md) `()` .
+Üye işlevi denetlenen sıranın uzunluğunu döndürür. Bu, şu anda denetlenen dizideki öğelerin sayısını tespit etmek için kullanılır. Her şey için, sıranın sıfır dışında bir boyut içerip içermediğini öğrenmek için bkz. [hash_set:: Empty (STL/CLR)](#empty) `()` .
 
 ### <a name="example"></a>Örnek
 
@@ -2432,7 +2432,7 @@ size() = 2 after adding 2
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef int size_type;
@@ -2480,7 +2480,7 @@ end()-begin() = 3
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void swap(hash_set<Key>% right);
@@ -2548,7 +2548,7 @@ a b c
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cli::array<value_type>^ to_array();
@@ -2598,7 +2598,7 @@ a b c
 
 Belirtilen anahtarla eşleşen aralığın sonunu bulur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator upper_bound(key_type key);
@@ -2611,7 +2611,7 @@ Aranacak anahtar değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, denetimli dizideki son öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise [hash_set:: End (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
+Üye işlevi, denetimli dizideki son öğeyi, `X` *anahtar* ile aynı demetini karma hale getirir ve *anahtara*denk sıralama içerir. Böyle bir öğe yoksa veya `X` denetlenen dizideki son öğe ise [hash_set:: End (STL/CLR)](#end)döndürür `()` ; Aksi takdirde ilk öğeyi daha sonra atayan bir yineleyici döndürür `X` . Belirtilen bir anahtarla eşleşen denetimli dizide bulunan bir öğe dizisinin sonunu bulmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2655,7 +2655,7 @@ upper_bound(L'x')==end() = True
 
 İki öğe değeri için sıralama temsilcisini kopyalar.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 value_compare^ value_comp();
@@ -2699,7 +2699,7 @@ compare(L'b', L'a') = False
 
 İki öğe değeri için sıralama temsilcisi.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>
@@ -2744,7 +2744,7 @@ compare(L'b', L'a') = False
 
 Öğenin türü.
 
-### <a name="syntax"></a>Syntax
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 typedef generic_value value_type;

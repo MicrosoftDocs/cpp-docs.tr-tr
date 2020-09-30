@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: 087cd613fa0dfd9cb6e07ac47a6a38d63bba004e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 463c27959b049436e29f872c966bc276c6ef5f2d
+ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167881"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91507019"
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "80167881"
 
 - Tek başına dosya olarak bulunan tek bir kaynak. Bu tür bir. rc dosyasından başvurulan bir bit eşlem, simge veya imleç dosyası içerir.
 
-- Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu tür, bir. rc dosyasından başvurulan `Resource.h`içerir.
+- Geliştirme ortamı tarafından oluşturulan bir üst bilgi dosyası. Bu tür `Resource.h` , bir. rc dosyasından başvurulan, içerir.
 
 . Exe,. dll ve. res dosyaları gibi diğer dosya türlerinde bulunan kaynaklar *kaynak*olarak adlandırılır.
 
@@ -54,7 +54,7 @@ Projenizin içinden *kaynak dosyaları* ve *kaynaklarla* çalışabilirsiniz. Ay
 
 - İç içe ve koşullu olarak içerilen kaynak dosyalarıyla çalışın.
 
-- Mevcut kaynakları güncelleştirin veya bunları görsele C++dönüştürün.
+- Mevcut kaynakları güncelleştirin veya Visual C++ dönüştürün.
 
 - Grafik kaynaklarını, geçerli kaynak dosyanıza veya konumundan içeri veya dışarı aktarın.
 
@@ -90,7 +90,7 @@ Kaynakları düzenlediğinizde, Visual Studio ortamı ile birlikte çalışarak 
 
 ## <a name="manifest-resources"></a>Bildirim Kaynakları
 
-C++ Masaüstü projelerinde, bildirim kaynakları, uygulamanın kullandığı BAĞıMLıLıKLARı tanımlayan xml dosyalarıdır. Örneğin, Visual Studio 'da bu MFC Sihirbazı tarafından oluşturulan bildirim dosyası, uygulamanın hangi Windows ortak denetim DLL sürümlerini kullanması gerektiğini tanımlar:
+C++ Masaüstü projelerinde, bildirim kaynakları, uygulamanın kullandığı bağımlılıkları tanımlayan XML dosyalarıdır. Örneğin, Visual Studio 'da bu MFC Sihirbazı tarafından oluşturulan bildirim dosyası, uygulamanın hangi Windows ortak denetim DLL sürümlerini kullanması gerektiğini tanımlar:
 
 ```xml
 <description>Your app description here</description>
@@ -108,12 +108,12 @@ C++ Masaüstü projelerinde, bildirim kaynakları, uygulamanın kullandığı BA
 </dependency>
 ```
 
-Bir Windows XP veya Windows Vista uygulaması için bildirim kaynağı, uygulamanın kullanması için en güncel Windows ortak denetimleri sürümünü belirtmelidir. Yukarıdaki örnek, [Syslink denetimini](/windows/win32/Controls/syslink-overview)destekleyen `6.0.0.0`sürümünü kullanır.
+Bir Windows XP veya Windows Vista uygulaması için bildirim kaynağı, uygulamanın kullanması için en güncel Windows ortak denetimleri sürümünü belirtmelidir. Yukarıdaki örnek `6.0.0.0` , [Syslink denetimini](/windows/win32/Controls/syslink-overview)destekleyen sürümü kullanır.
 
 > [!NOTE]
 > Modül başına yalnızca bir bildirim kaynağına sahip olabilirsiniz.
 
-Bir bildirim kaynağında bulunan sürümü ve tür bilgilerini görüntülemek için, dosyayı bir XML görüntüleyicisinde veya Visual Studio metin düzenleyicisinde açın. [Kaynak görünümü](../windows/resource-view-window.md)bir bildirim kaynağı açarsanız, kaynak ikili biçimde açılır.
+Bir bildirim kaynağında bulunan sürümü ve tür bilgilerini görüntülemek için, dosyayı bir XML görüntüleyicisinde veya Visual Studio metin düzenleyicisinde açın. [Kaynak görünümü](./how-to-create-a-resource-script-file.md)bir bildirim kaynağı açarsanız, kaynak ikili biçimde açılır.
 
 ### <a name="to-open-a-manifest-resource"></a>Bildirim kaynağını açmak için
 
@@ -132,5 +132,5 @@ Win32
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
-[Kaynak Tanımlayıcıları (Semboller)](../windows/symbols-resource-identifiers.md)<br/>
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
+[Kaynak tanımlayıcıları (semboller)](../windows/symbols-resource-identifiers.md)<br/>
+[Kaynak düzenleyicileri](../windows/resource-editors.md)<br/>
