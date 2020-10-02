@@ -14,18 +14,18 @@ helpviewer_keywords:
 - -LTCG linker option
 - LTCG linker option
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-ms.openlocfilehash: c954794d6d0fd087eee74ebb7e86d77b89a9a8fc
-ms.sourcegitcommit: 80c8a512b361bd84e38958beb1a1bf6db7434021
+ms.openlocfilehash: 6c0009e5236f33119ed411dc81ce6a4385f21a2a
+ms.sourcegitcommit: f7fbdc39d73e1fb3793c396fccf7a1602af7248b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86180805"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91662275"
 ---
-# <a name="ltcg-link-time-code-generation"></a>`/LTCG`(Bağlama zamanı kodu oluşturma)
+# <a name="ltcg-link-time-code-generation"></a>`/LTCG` (Bağlama zamanı kodu oluşturma)
 
 **`/LTCG`** Tam program iyileştirmesi gerçekleştirmek veya profil temelli iyileştirme (PGO) araçları oluşturmak, eğitim gerçekleştirmek ve profil temelli iyileştirilmiş derlemeler oluşturmak için kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/LTCG`**[**`:`**{**`INCREMENTAL`**|**`NOSTATUS`**|**`STATUS`**|**`OFF`**}]
 
@@ -33,25 +33,25 @@ Bu seçenekler, Visual Studio 2015 ' den itibaren kullanım dışıdır:
 
 > **`/LTCG:`**{**`PGINSTRUMENT`**|**`PGOPTIMIZE`**|**`PGUPDATE`**}
 
-### <a name="arguments"></a>Arguments
+### <a name="arguments"></a>Bağımsız değişkenler
 
 **`INCREMENTAL`**<br/>
 Seçim Bağlayıcının tüm proje iyileştirme veya bağlantı zamanı kodu oluşturma (LTCG) öğesinin tamamı yerine bir düzenleme tarafından etkilenen dosyalara uygulandığını belirtir. Varsayılan olarak, bu bayrak **`/LTCG`** belirtildiğinde ayarlanır ve tüm proje, tüm program iyileştirmesi kullanılarak bağlanır.
 
-**`NOSTATUS`**&#124;**`STATUS`**<br/>
+**`NOSTATUS`** &#124; **`STATUS`**<br/>
 Seçim Bağlayıcının bağlantının yüzdesini gösteren bir ilerleme göstergesi görüntüleyip görüntülemediğini belirtir. Varsayılan olarak, bu durum bilgileri gösterilmez.
 
 **`OFF`**<br/>
 Seçim Bağlama sırasında kod oluşturmayı devre dışı bırakır. Bu davranış, **`/LTCG`** komut satırında belirtilmediğinde ile aynıdır.
 
 **`PGINSTRUMENT`**<br/>
-Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** `[/GENPROFILE` Profil temelli `/FASTGENPROFILE` iyileştirme için bir belgelenmiş derleme oluşturmak üzere ve veya] (genprofile-fastgenprofile-Generate-profiling-instrumented-Build.MD) kullanın. Belgelenmiş çalışmalardan toplanan veriler, iyileştirilmiş bir görüntü oluşturmak için kullanılır. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGI`** .
+Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** ve [ `/GENPROFILE` `/FASTGENPROFILE` ' yi](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) kullanarak profil temelli iyileştirme için belgelenmiş bir yapı oluşturun. Belgelenmiş çalışmalardan toplanan veriler, iyileştirilmiş bir görüntü oluşturmak için kullanılır. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGI`** .
 
 **`PGOPTIMIZE`**<br/>
-Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** [`/USEPROFILE`](useprofile.md) en iyi duruma getirilmiş bir görüntü oluşturmak için ve kullanın. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGO`** .
+Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`**  [`/USEPROFILE`](useprofile.md) en iyi duruma getirilmiş bir görüntü oluşturmak için ve kullanın. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGO`** .
 
 **`PGUPDATE`**<br/>
-Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`** **`/USEPROFILE`** iyileştirilmiş bir görüntüyü yeniden derlemek için ve kullanın. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGU`** .
+Seçim Bu seçenek, Visual Studio 2015 ' den itibaren kullanım dışıdır. Bunun yerine, **`/LTCG`**  **`/USEPROFILE`** iyileştirilmiş bir görüntüyü yeniden derlemek için ve kullanın. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md). Bu seçeneğin kısa biçimi, **`/LTCG:PGU`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -87,7 +87,7 @@ Aşağıdaki özel durumlarla birlikte bağlayıcı seçeneklerini, ve **`/LTCG`
 
 Bu makalenin geri kalanında, tarafından gerçekleştirilen bağlantı zamanı kod üretimi ele alınmaktadır **`/LTCG`** .
 
-**`/LTCG`**, ile birlikte kapsanıyor [`/GL`](gl-whole-program-optimization.md) .
+**`/LTCG`** , ile birlikte kapsanıyor [`/GL`](gl-whole-program-optimization.md) .
 
 Bağlayıcı, veya MSIL Modülü kullanılarak derlenen bir modül geçirildiğinde bağlantı sırasında kod oluşturmayı çağırır **`/GL`** (bkz. [ `.netmodule` dosyaları bağlayıcı girişi olarak](netmodule-files-as-linker-input.md)görüntüle). **`/LTCG`** Bağlayıcıya bir veya MSIL modülleri geçirdiğinizde açıkça belirtmezseniz **`/GL`** , bağlayıcı sonunda bu durumu algılar ve kullanarak bağlantıyı yeniden başlatır **`/LTCG`** . Mümkün olan **`/LTCG`** **`/GL`** en hızlı yapı performansına yönelik olarak BAĞLAYıCıYA ve MSIL modüllerini bağlayıcıya geçirdiğinizde belirtin.
 
@@ -129,7 +129,7 @@ Bir işlev bir işlev işaretçisi aracılığıyla çağrılırsa veya bir işl
 > [!NOTE]
 > **`/LTCG`** Ve yeniden tanımlama kullanırsanız `mainCRTStartup` , uygulamanız genel nesneler başlatılmadan önce yürütülen Kullanıcı koduyla ilişkili öngörülemeyen davranışlara sahip olabilir. Bu sorunu gidermek için üç yol vardır: ' i yeniden tanımlama `mainCRTStartup` , kullanarak içeren dosyayı derleme `mainCRTStartup` **`/LTCG`** veya genel değişkenleri ve nesneleri statik olarak başlatma.
 
-### <a name="ltcg-and-msil-modules"></a>`/LTCG`ve MSIL modülleri
+### <a name="ltcg-and-msil-modules"></a>`/LTCG` ve MSIL modülleri
 
 Ve kullanılarak derlenen modüller [`/GL`](gl-whole-program-optimization.md) [`/clr`](clr-common-language-runtime-compilation.md) , belirtildiğinde bağlayıcı için giriş olarak kullanılabilir **`/LTCG`** .
 

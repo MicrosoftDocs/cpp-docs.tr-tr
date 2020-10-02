@@ -7,12 +7,12 @@ helpviewer_keywords:
 - constants, literals
 - literals [C++]
 ms.assetid: 17c09fc3-3ad7-47e2-8b48-ba8ae994edc8
-ms.openlocfilehash: def223682b58f3d0c8bd3dd88f6d54fc5aa8b8a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 84fdac7010805fc4d0a429231a080ab11d5c595a
+ms.sourcegitcommit: f7fbdc39d73e1fb3793c396fccf7a1602af7248b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186457"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91662274"
 ---
 # <a name="numeric-boolean-and-pointer-literals"></a>Sayısal, boole ve işaretçi değişmez değerleri
 
@@ -31,7 +31,7 @@ Bazen derleyiciye bir hazır değeri nasıl yorumlayacağını ya da kendisine v
 
 ## <a name="integer-literals"></a>Tamsayı sabit değerleri
 
-Tamsayı sabit değerleri bir basamakla başlar ve kesirli parçaları ya da üsleri içermez. Tamsayı sabit değerlerini ondalık, sekizli veya onaltılı biçimde belirtebilirsiniz. İmzalanmış veya imzasız türleri ve uzun veya kısa türleri belirtebilirsiniz.
+Tamsayı sabit değerleri bir basamakla başlar ve kesirli parçaları ya da üsleri içermez. Tamsayı sabit değerlerini ondalık, ikili, sekizli veya onaltılı biçimde belirtebilirsiniz. İsteğe bağlı olarak, bir tamsayı sabit değerini imzasız, uzun veya uzun ve uzun bir değer olarak bir sonek kullanarak belirtebilirsiniz.
 
 Ön ek veya sonek olmadığında, derleyici bir tamsayı değişmez değer türü **`int`** (32 bit) verir, aksi takdirde, bu değer buna uyum sağlar **`long long`** (64 bit).
 
