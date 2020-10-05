@@ -369,6 +369,8 @@
               href: ../build/reference/property-page-xml-files.md
             - name: .vcxproj ve .props dosya yapısı
               href: ../build/reference/vcxproj-file-structure.md
+            - name: .vcxproj dosyaları ve joker karakterler
+              href: ../build/reference/vcxproj-files-and-wildcards.md
             - name: Örnek proje dosyası
               href: ../build/reference/project-files.md
             - name: .vcxproj.filters dosya yapısı
