@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 2552f9eea79aa0a3545d9746d85cacfbd9a3f25d
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: f854f3cc6e61e3022e784befc738bf28c1adeb6c
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353174"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765245"
 ---
 # <a name="resource-editors-c"></a>Kaynak Düzenleyicileri (C++)
 
@@ -58,7 +58,7 @@ Her kaynak türünün bu kaynak türüne özgü bir kaynak Düzenleyicisi vardı
 
 Bazı kaynak türleri, içeri aktarılabilen ve çeşitli yollarla kullanılabilen tek dosyalardır. Bunlara bit eşlemler, simgeler, imleçler, araç çubukları ve HTML dosyaları dahildir. Bu tür kaynaklarda dosya adları ve [kaynak tanımlayıcıları](../windows/symbols-resource-identifiers.md)vardır. Win32 projelerindeki iletişim kutuları, menüler ve dize tabloları gibi diğerleri, yalnızca bir kaynak betiği (. RC) dosyasının veya kaynak şablonu (. rct) dosyasının bir parçası olarak mevcuttur.
 
-Kaynaklar proje açık olmadan proje dışında da düzenlenebilir. Daha fazla bilgi için bkz. [nasıl yapılır: kaynak oluşturma](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
+Kaynaklar proje açık olmadan proje dışında da düzenlenebilir. Daha fazla bilgi için bkz. [nasıl yapılır: kaynak oluşturma](./how-to-create-a-resource-script-file.md).
 
 > [!NOTE]
 > Bir kaynağın özellikleri, **Özellikler** penceresi kullanılarak değiştirilebilir.
@@ -124,7 +124,7 @@ Aşağıdaki kaynaklar görsel önizleme sağlamaz: Hızlandırıcı, bildirim, 
 
 ## <a name="requirements"></a>Gereksinimler
 
-Yok
+Hiçbiri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

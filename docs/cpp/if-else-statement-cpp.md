@@ -1,7 +1,7 @@
 ---
-title: if-else Deyimi (C++)
-ms.date: 07/20/2019
-description: Koşullu dallanmayı denetlemek için C++ ' da if-else deyimlerini kullanın.
+title: if-else deyimleri (C++)
+description: Koşullu dallanmayı denetlemek için If-Else, If-Else ve If-constexpr deyimlerini kullanın.
+ms.date: 10/02/2020
 f1_keywords:
 - else_cpp
 - if_cpp
@@ -9,16 +9,18 @@ helpviewer_keywords:
 - if keyword [C++]
 - else keyword [C++]
 ms.assetid: f8c45cde-6bce-42ae-81db-426b3dbd4caa
-ms.openlocfilehash: a9256e32c89890635c5473a85b4bb3b56bec26d4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 20d828bf00a79687fe0a9fffbeb1a9cc56fae08c
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187575"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765303"
 ---
-# <a name="if-else-statement-c"></a>if-else Deyimi (C++)
+# <a name="if-else-statement-c"></a>if-else deyimleri (C++)
 
-Koşullu dallanmayı denetler. *IF-Block* içindeki deyimler yalnızca *If-expression* sıfır olmayan bir değer (veya) olarak değerlendirilirse yürütülür **`true`** . *İfadenin* değeri sıfır değilse, *Deyim1* ve bloktaki diğer deyimler yürütülür ve varsa Else-Block atlanır. *İfadenin* değeri sıfırsa, IF-Block atlanır ve varsa Else bloğu yürütülür. Sıfır olmayan şekilde değerlendiren ifadeler
+İf-else deyimleri koşullu dallanmayı denetler. İçindeki deyimler *`if-branch`* yalnızca *`condition`* sıfır olmayan bir değer (veya) olarak değerlendirilirse yürütülür **`true`** . Değeri *`condition`* sıfır değilse, aşağıdaki ifade yürütülür ve isteğe bağlı olarak aşağıdaki ifade **`else`** atlanır. Aksi takdirde, aşağıdaki ifade atlanır ve **`else`** sonra, bir sonraki ifadesinin **`else`** yürütülmesi durumunda yürütülür.
+
+*`condition`* sıfır olmayan olarak değerlendiren ifadeler şunlardır:
 
 - **`true`**
 - null olmayan bir işaretçi,
@@ -27,44 +29,49 @@ Koşullu dallanmayı denetler. *IF-Block* içindeki deyimler yalnızca *If-expre
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cpp
-if ( expression )
-{
-   statement1;
-   ...
-}
-else  // optional
-{
-   statement2;
-   ...
-}
+*`init-statement`*:\
+&emsp; *`expression-statement`*\
+&emsp; *`simple-declaration`*
 
-// C++17 - Visual Studio 2017 version 15.3 and later:
-if ( initialization; expression )
-{
-   statement1;
-   ...
-}
-else  // optional
-{
-   statement2;
-   ...
-}
+*`condition`*:\
+&emsp; *`expression`*\
+&emsp;*`attribute-specifier-seq`* <sub>*opt*</sub> *`decl-specifier-seq`* opt *`declarator`**`brace-or-equal-initializer`*
 
-// C++17 - Visual Studio 2017 version 15.3 and later:
-if constexpr (expression)
-{
-    statement1;
-    ...
-}
-else  // optional
-{
-   statement2;
-   ...
-}
-```
+*`statement`*:\
+&emsp; *`expression-statement`*\
+&emsp; *`compound-statement`*
 
-## <a name="example"></a>Örnek
+*`expression-statement`*:\
+&emsp;*`expression`* <sub>*opt*</sub>**`;`**
+
+*`compound-statement`*:\
+&emsp;**`{`** *`statement-seq`* <sub>*opt*</sub>**`}`**
+
+*`statement-seq`*:\
+&emsp; *`statement`*\
+&emsp; *`statement-seq`* *`statement`*
+
+*`if-branch`*:\
+&emsp; *`statement`*
+
+*`else-branch`*:\
+&emsp; *`statement`*
+
+*`selection-statement`*:\
+&emsp;**`if`** **`constexpr`** <sub>*opt*</sub><sup>17</sup> **`(`** *`init-statement`* <sub>*opt*</sub><sup>17</sup> 17 *`condition`* **`)`***`if-branch`*\
+&emsp;**`if`** **`constexpr`** <sub>*opt*</sub><sup>17</sup> **`(`** *`init-statement`* <sub>*opt*</sub><sup>17</sup> 17 *`condition`* **`)`** *`if-branch`* **`else`***`else-branch`*
+
+<sup>17</sup> bu isteğe bağlı öğe, c++ 17 ' den başlayarak kullanılabilir.
+
+## <a name="if-else-statements"></a>if-else deyimleri
+
+Tüm **`if`** *`condition`* yan etkileri de dahil olmak üzere bir yapı dışında herhangi bir değere sahip olabilen tüm deyimin tüm formlarında değerlendirilir. Denetim, **`if`** yürütülene *`if-branch`* veya *`else-branch`* bir [`break`](../cpp/break-statement-cpp.md) , veya içermiyorsa, ' [`continue`](../cpp/continue-statement-cpp.md) den programdaki sonraki deyime geçer [`goto`](../cpp/goto-statement-cpp.md) .
+
+**`else`** Bir deyimin yan tümcesi, `if...else` **`if`** karşılık gelen bir bildirime sahip olmayan aynı kapsamdaki en yakın Previous ifadesiyle ilişkilendirilir **`else`** .
+
+### <a name="example"></a>Örnek
+
+Bu örnek kod **`if`** , birlikte ve olmadan kullanılan çeşitli deyimleri gösterir **`else`** :
 
 ```cpp
 // if_else_statement.cpp
@@ -111,11 +118,11 @@ int main()
 }
 ```
 
-## <a name="if-statement-with-an-initializer"></a><a name="if_with_init"></a>Başlatıcı ile IF deyimleri
+## <a name="if-statement-with-an-initializer"></a><a name="if_with_init"></a> Başlatıcı ile IF deyimleri
 
-**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)Ile kullanılabilir): bir **`if`** deyim, adlandırılmış bir değişkeni bildiren ve Başlatan bir ifade de içerebilir. Değişken yalnızca If-Block kapsamında gerektiğinde If-ifadesinin bu formunu kullanın.
+C++ 17 ' den başlayarak bir **`if`** deyim, *`init-statement`* adlandırılmış bir değişkeni bildiren ve Başlatan bir ifade içerebilir. Değişken yalnızca if-deyimin kapsamında gerektiğinde If-ifadesinin bu biçimini kullanın. **Microsoft 'a özgü**: Bu form, Visual Studio 2017 sürüm 15,3 ' den başlayarak kullanılabilir ve en azından [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği gerektirir.
 
-## <a name="example"></a>Örnek
+### <a name="example"></a>Örnek
 
 ```cpp
 #include <iostream>
@@ -159,13 +166,13 @@ int main()
 }
 ```
 
-Tüm **`if`** yan etkileri de dahil olmak üzere, bir yapı dışında herhangi bir değere sahip olabilen *deyimin tüm*formlarında, değerlendirilir. Deyimlerden **`if`** biri [Break](../cpp/break-statement-cpp.md), [Continue](../cpp/continue-statement-cpp.md)veya [goto](../cpp/goto-statement-cpp.md)içermiyorsa, denetim deyimden programdaki sonraki deyime *statement*geçer.
+## <a name="a-nameif_constexpr-if-constexpr-statements"></a><a name="if_constexpr"> Eğer constexpr deyimleri
 
-**`else`** Bir deyimin yan tümcesi, `if...else` **`if`** karşılık gelen bir deyimi olmayan aynı kapsamdaki en yakın Previous ifadesiyle ilişkilendirilir **`else`** .
+C++ 17 ' den başlayarak, **`if constexpr`** birden fazla işlev aşırı yüküne gerek duymadan derleme zamanı dallanma kararları almak için işlev şablonlarındaki bir ifadeyi kullanabilirsiniz. **Microsoft 'a özgü**: Bu form, Visual Studio 2017 sürüm 15,3 ' den başlayarak kullanılabilir ve en azından [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği gerektirir.
 
-## <a name="a-nameif_constexpr-if-constexpr-statements"></a><a name="if_constexpr">Eğer constexpr deyimleri
+### <a name="example"></a>Örnek
 
-**Visual Studio 2017 sürüm 15,3 ve üzeri** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir): işlev şablonlarında, birden fazla işlev aşırı yüküne gerek duymadan derleme zamanı dallanma kararları almak için bir **IF constexpr** ifadesini kullanabilirsiniz. Örneğin, parametre açma işlemi gerçekleştiren tek bir işlev yazabilirsiniz (sıfır parametre aşırı yüklemesi gerekmez):
+Bu örnek, parametre açma işlemi gerçekleştiren tek bir işlevi nasıl yazacağınızı gösterir. Sıfır parametre aşırı yüklemesi gerekli değildir:
 
 ```cpp
 template <class T, class... Rest>
@@ -188,6 +195,6 @@ void f(T&& t, Rest&&... r)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Seçim Deyimleri](../cpp/selection-statements-cpp.md)<br/>
-[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[Switch deyimleri (C++)](../cpp/switch-statement-cpp.md)
+[Seçim deyimleri](../cpp/selection-statements-cpp.md)\
+[Lerimi](../cpp/keywords-cpp.md)\
+[`switch` İfade (C++)](../cpp/switch-statement-cpp.md)

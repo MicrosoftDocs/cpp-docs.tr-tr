@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: bf90adbdbc739a2dd26d8e59ab38e56aef3bd312
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 376c29371fb9213ed46435b41bea1666058c7b4e
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352940"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765314"
 ---
 # <a name="standard-types"></a>Standart Türler
 
@@ -173,7 +173,7 @@ Microsoft çalışma zamanı kitaplığı, aşağıdaki standart türleri ve tü
 
 ### <a name="fixed-width-integral-types-stdinth"></a>Sabit genişlikli integral türler (stdint. h)
 
-|Name|Eşdeğer yerleşik tür|
+|Adı|Eşdeğer yerleşik tür|
 |----------|-------------------------------|
 |int8 \_ t, uint8 \_ t|işaretli char, işaretsiz karakter|
 |Int16 \_ t, UI \_|kısa, işaretsiz kısa|
@@ -189,7 +189,7 @@ Microsoft çalışma zamanı kitaplığı, aşağıdaki standart türleri ve tü
 |int_fast64_t, uint_fast64_t|uzun uzun, imzasız uzun uzun|
 |intmax_t, uintmax_t|uzun uzun, imzasız uzun uzun|
 
-|Tür|Description|Şurada bildirilir:|
+|Tür|Açıklama|Şurada bildirilir:|
 |----------|-----------------|-----------------|
 |`clock_t` kalacağını|Zaman değerlerini depolar; [saat](../c-runtime-library/reference/clock.md)tarafından kullanılır.|TIME.H|
 |`_complex` yapısı|Karmaşık sayıların gerçek ve sanal parçalarını depolar; [_cabs](../c-runtime-library/reference/cabs.md)tarafından kullanılır.|MATH.H|
@@ -199,7 +199,7 @@ Microsoft çalışma zamanı kitaplığı, aşağıdaki standart türleri ve tü
 |`_CRT_REPORT_HOOK`,<br /><br /> `_CRT_REPORT_HOOKW`,<br /><br /> `_CRT_REPORT_HOOKW_M`|Bir tür, [_CrtDbgReport](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)çağrılan geri çağırma işlevini tanımlar.<br /><br /> Bu işlevin parametreleri: rapor türü, çıktı iletisi ve geri arama işlevinin dönüş değeri.|CRTDBG.H|
 |`dev_t`, `_dev_t` Short veya işaretsiz tamsayı|Cihaz tanıtıcılarını temsil eder.|SYS\TYPES.H|
 |`_diskfree_t` yapısı|Bir disk sürücüsü hakkında bilgi içerir. [_Getdiskfree](../c-runtime-library/reference/getdiskfree.md)tarafından kullanılır **.**|DOS.H ve DIRECT.H|
-|`div_t``ldiv_t`ve `lldiv_t` yapılar|Sırasıyla [div](reference/div.md), [ldiv](../c-runtime-library/reference/ldiv-lldiv.md)ve [lldiv](../c-runtime-library/reference/ldiv-lldiv.md)tarafından döndürülen değerleri depolayın.|STDLIB.H|
+|`div_t``ldiv_t`ve `lldiv_t` yapılar|Sırasıyla [div](reference/div.md), [ldiv](./reference/div.md)ve [lldiv](./reference/div.md)tarafından döndürülen değerleri depolayın.|STDLIB.H|
 |`errno_t` gir|Hata kodlarıyla ilgilenen bir işlev dönüş türü veya parametresi için kullanılır `errno` .|STDDEF.H,<br /><br /> CRTDEFS.H|
 |`_exception` yapısı|[_Matherr](../c-runtime-library/reference/matherr.md)için hata bilgilerini depolar.|MATH.H|
 |`_EXCEPTION_POINTERS`|Bir özel durum kaydı içerir. Daha fazla bilgi için bkz. [EXCEPTION_POINTERS](/windows/win32/api/winnt/ns-winnt-exception_pointers) .|FPIEEE.H|

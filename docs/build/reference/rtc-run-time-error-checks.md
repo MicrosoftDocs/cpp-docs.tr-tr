@@ -1,5 +1,6 @@
 ---
 title: /RTC (Çalışma zamanı hata denetimleri)
+description: Çalışma zamanı hata denetimleri için Microsoft C/C++ derleyicisi/RTC seçenekleri.
 ms.date: 07/31/2020
 f1_keywords:
 - /rtc
@@ -25,14 +26,14 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-ms.openlocfilehash: eefec0956bebe9f72324f3cbc61fccbc5e2e24d7
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 888a81d0d5c21b0b85420a43d534c5b2742aa082
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520544"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765230"
 ---
-# <a name="rtc-run-time-error-checks"></a>`/RTC`(Çalışma zamanı hata denetimleri)
+# <a name="rtc-run-time-error-checks"></a>`/RTC` (Çalışma zamanı hata denetimleri)
 
 Çalışma zamanı hata denetimleri özelliğini [runtime_checks](../../preprocessor/runtime-checks.md) pragma ile birlikte etkinleştirmek ve devre dışı bırakmak için kullanılır.
 
@@ -75,7 +76,7 @@ Yığın çerçevesi çalışma zamanı hata denetimini aşağıdaki gibi sunar:
 
 - Yerel değişkenlerin sıfır dışında bir değere başlatılması. Bu seçenek, hata ayıklama modunda çalışırken görünmeyen hataların belirlenmesine yardımcı olur. Yığın değişkenlerinin bir yayın derlemesi ile karşılaştırıldığında hata ayıklama derlemesinde sıfır değeri olmaya devam etmesi daha büyük bir şansınız vardır. Bunun nedeni, bir yayın derlemesinde yığın değişkenlerinin derleyici iyileştirmelerinden kaynaklanır. Bir program yığının bir alanını kullandıktan sonra, derleyici tarafından hiçbir şekilde 0 ' a sıfırlanmaz. Diğer bir deyişle, daha sonra aynı yığın alanının kullanıldığı başlatılmamış yığın değişkenleri, bu yığın belleğinin önceki kullanımı üzerinden kalan değerleri döndürebilir.
 
-- Yer aşımları ve diziler gibi yerel değişkenlerin yetersiz çalıştırmaları tespit etme. **`/RTCs`**, bir yapıda derleyicinin doldurmasını elde eden belleğe erişirken taşmaları algılamaz. Doldurma [`align`](../../cpp/align-cpp.md) , [ `/Zp` (struct member hizalaması)](zp-struct-member-alignment.md)veya ya [`pack`](../../preprocessor/pack.md) da yapı öğelerini, derleyicinin doldurma eklemesi için gerekli olacak şekilde sıraladıysanız gerçekleşebilir.
+- Yer aşımları ve diziler gibi yerel değişkenlerin yetersiz çalıştırmaları tespit etme. **`/RTCs`** , bir yapıda derleyicinin doldurmasını elde eden belleğe erişirken taşmaları algılamaz. Doldurma [`align`](../../cpp/align-cpp.md) , [ `/Zp` (struct member hizalaması)](zp-struct-member-alignment.md)veya ya [`pack`](../../preprocessor/pack.md) da yapı öğelerini, derleyicinin doldurma eklemesi için gerekli olacak şekilde sıraladıysanız gerçekleşebilir.
 
 - Yığın işaretçisi doğrulamasını algılayan yığın işaretçisi doğrulaması. Yığın işaretçisi bozulması, çağırma kuralı uyumsuzluğu nedeniyle oluşabilir. Örneğin, bir işlev işaretçisi kullanarak, olarak aktarılmış bir DLL içinde bir işlevi çağırır, [`__stdcall`](../../cpp/stdcall.md) ancak işaretçiyi işlevi olarak bildirirsiniz [`__cdecl`](../../cpp/cdecl.md) .
 
@@ -109,7 +110,7 @@ Komut satırında herhangi bir derleyici seçeneğini kullanarak programınızı
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri**  >  **C/C++****kod oluşturma** özellik sayfasını seçin.  
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **kod oluşturma** özellik sayfasını seçin.
 
 1. Aşağıdaki özelliklerden birini veya her ikisini birden değiştirin: **temel çalışma zamanı denetimleri** veya **daha küçük tür denetimi**.
 

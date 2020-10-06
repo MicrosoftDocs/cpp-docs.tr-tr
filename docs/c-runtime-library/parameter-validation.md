@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-ms.openlocfilehash: 60ded7fc5a4388b2c4bf87ab5a388caab5fc47c2
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 8378e4bf9bdfc950002c3ed8c3ef50c27a3c162d
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91589828"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765265"
 ---
 # <a name="parameter-validation"></a>Parametre Doğrulama
 
@@ -25,7 +25,7 @@ Hata ayıklama yapılarında, geçersiz parametre makrosu genellikle başarısı
 
 Geçersiz parametre işleyicisi gönderme işlevi şu anda atanmış geçersiz parametre işleyicisini çağırır. Varsayılan olarak, geçersiz parametre çağırır `_invoke_watson` , bu, uygulamanın kapatılmasına ve bir mini döküm oluşturmasına neden olur. İşletim sistemi tarafından etkinleştirildiyse bir iletişim kutusu kullanıcıdan, kilitlenme dökümünü analiz için Microsoft 'a göndermek isteyip istemediği sorulur.
 
-Geçersiz parametre işleyicisini kendi işleviniz olarak ayarlamak için [_set_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) veya [_set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) işlevlerini kullanarak bu davranışı değiştirebilirsiniz. Belirttiğiniz işlev uygulamayı sonlandıramıyorsa, denetim geçersiz parametreleri alan işleve döndürülür. CRT 'de, bu işlevler normalde işlev yürütmeyi durdurur, `errno` bir hata koduna ayarlanır ve bir hata kodu döndürür. Çoğu durumda, `errno` `EINVAL` geçersiz bir parametreyi belirtmek için değer ve dönüş değeri her ikisi de vardır. Bazı durumlarda, `EBADF` parametre olarak geçirilen hatalı dosya işaretçisi gibi daha belirli bir hata kodu döndürülür. 
+Geçersiz parametre işleyicisini kendi işleviniz olarak ayarlamak için [_set_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) veya [_set_thread_local_invalid_parameter_handler](../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md) işlevlerini kullanarak bu davranışı değiştirebilirsiniz. Belirttiğiniz işlev uygulamayı sonlandıramıyorsa, denetim geçersiz parametreleri alan işleve döndürülür. CRT 'de, bu işlevler normalde işlev yürütmeyi durdurur, `errno` bir hata koduna ayarlanır ve bir hata kodu döndürür. Çoğu durumda, `errno` `EINVAL` geçersiz bir parametreyi belirtmek için değer ve dönüş değeri her ikisi de vardır. Bazı durumlarda, `EBADF` parametre olarak geçirilen hatalı dosya işaretçisi gibi daha belirli bir hata kodu döndürülür.
 
 Hakkında daha fazla bilgi için `errno` bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 

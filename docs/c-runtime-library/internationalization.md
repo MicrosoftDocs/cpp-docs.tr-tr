@@ -9,16 +9,17 @@ helpviewer_keywords:
 - internationalization routines
 - international applications, run-time routines for
 ms.assetid: ee536a04-3558-4729-8e10-6dabcde055fd
-ms.openlocfilehash: 61b06f3820631f0d3bcec2633d736c606daee301
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 1ee7b1b74f1a800ae53b930eb976c8c6263d4f92
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590218"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765278"
 ---
 # <a name="internationalization"></a>Uluslararası duruma getirme
 
 Microsoft çalışma zamanı kitaplığı, uygulamanızı şu gibi uluslararası pazarlar için özelleştirmek üzere kullanabileceğiniz birçok yordam sağlar:
+
 - [Yerel ayar ile ilgili yordamlar](../c-runtime-library/locale.md)
 - geniş karakter yordamları
 - çok baytlı karakter yordamları

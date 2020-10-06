@@ -1,6 +1,7 @@
 ---
-title: Birincil İfadeler
-ms.date: 11/04/2016
+title: Birincil ifadeler
+description: C++ programlama dilindeki birincil ifadeler.
+ms.date: 10/02/2020
 helpviewer_keywords:
 - primary expressions
 - expressions [C++], name
@@ -8,29 +9,28 @@ helpviewer_keywords:
 - expressions [C++], primary
 - expressions [C++], qualified names
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
-ms.openlocfilehash: c827f811813091abc62d07f12ac387bc2a0a0cc5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4c52992071453bc189a3078db9592b02dfb8ba9b
+ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231149"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91765322"
 ---
 # <a name="primary-expressions"></a>Birincil İfadeler
 
-Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Bunlar, kapsam çözümleme işleci () tarafından nitelenmiş sabit değerler, adlar ve adlardır `::` .  Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:
+Birincil ifadeler daha karmaşık ifadelerin yapı taşlarıdır. Bunlar, kapsam çözümleme işleci () tarafından nitelenmiş sabit değerler, adlar ve adlar olabilir `::` . Birincil bir ifade aşağıdaki biçimlerden birini içerebilir:
 
-```
-literal
-this
-name
-::name ( expression )
-```
+*`primary-expression`*\
+&emsp;*`literal`*\
+&emsp;**`this`**\
+&emsp;*`name`*\
+&emsp;**`::`** *`name`* **`(`** *`expression`* **`)`**
 
-Sabit *değer* sabit bir birincil ifadedir. Türü kendi belirtiminin biçimine bağlıdır. Değişmez değerler belirtme hakkında ayrıntılı bilgi için bkz. [değişmez değerler](../cpp/numeric-boolean-and-pointer-literals-cpp.md) .
+*`literal`*, Sabit bir birincil ifadedir. Türü kendi belirtiminin biçimine bağlıdır. Değişmez değerler belirtme hakkında tüm bilgiler için bkz. [değişmez değerler](../cpp/numeric-boolean-and-pointer-literals-cpp.md) .
 
-**`this`** Anahtar sözcüğü bir sınıf nesnesine yönelik bir işaretçidir. Statik olmayan üye işlevlerinde kullanılabilir ve işlevin çağrıldığı sınıfın örneğini gösterir. **`this`** Anahtar sözcüğü bir sınıf üye işlevinin gövdesi dışında kullanılamaz.
+**`this`** Anahtar sözcüğü bir sınıf nesnesine yönelik bir işaretçidir. Statik olmayan üye işlevleri içinde kullanılabilir. İşlevin çağrıldığı sınıfının örneğine işaret eder. **`this`** Anahtar sözcüğü bir sınıf üye işlevinin gövdesi dışında kullanılamaz.
 
-İşaretçinin türü, **`this`** `type` ** \* ** `type` işaretçinin özellikle değişmeyen işlevler içindeki const (sınıf adıdır) ' dir **`this`** . Aşağıdaki örnek, üye işlev bildirimlerini ve türlerini gösterir **`this`** :
+İşaretçinin türü, **`this`** `type * const` `type` işaretçiyi özel olarak değiştirolmayan işlevlerde (sınıf adıdır) **`this`** . Aşağıdaki örnek, üye işlev bildirimlerini ve türlerini gösterir **`this`** :
 
 ```cpp
 // expre_Primary_Expressions.cpp
@@ -44,11 +44,11 @@ public:
 };
 ```
 
-İşaretçinin türünü değiştirme hakkında daha fazla bilgi için [Bu işaretçiye](this-pointer.md) bakın **`this`** .
+İşaretçinin türünü değiştirme hakkında daha fazla bilgi için **`this`** bkz. [ `this` işaretçi](this-pointer.md).
 
-Kapsam çözümleme işleci ( `::` ) ardından bir ad, birincil bir ifade oluşturur.  Bu gibi adlar üye adları değil, genel kapsamdaki adlar olmalıdır.  Bu ifadenin türü adın bildirimi tarafından belirlenir. Bildirim adı lvalue ise, bu bir lvalue olur (diğer bir deyişle, bir atama işleci ifadesinin sol tarafında görünebilir). Söz konusu ad geçerli kapsamda gizlenmiş olsa da, kapsam çözümleme işleci başvurulacak bir genel bir ad sağlar. Kapsam çözümleme işlecinin nasıl kullanılacağına ilişkin bir örnek için bkz. [kapsam](../cpp/scope-visual-cpp.md) .
+Kapsam çözümleme işleci () ve **`::`** ardından bir ad, birincil ifadedir.  Bu gibi adlar üye adları değil, genel kapsamdaki adlar olmalıdır. İfadenin türü, adın bildirimine göre belirlenir. Bu bir l değeridir (yani, bildirim adı bir l-değeri ise, atama ifadesinin sol tarafında görünebilir). Söz konusu ad geçerli kapsamda gizlenmiş olsa da, kapsam çözümleme işleci başvurulacak bir genel bir ad sağlar. Kapsam çözümleme işlecinin nasıl kullanılacağına ilişkin bir örnek için bkz. [kapsam](../cpp/scope-visual-cpp.md) .
 
-Parantez içine alınmış bir ifade, türü ve değeri parantez içinde olmayan ifadelerle aynı olan birincil bir ifadedir. Parantez içinde olmayan bir ifade bir lvalue ise, bu bir l-value olur.
+Parantez içine alınmış bir ifade, birincil ifadedir. Türü ve değeri, parantez içinde olmayan ifadenin türü ve değeri ile aynıdır. Parantez içinde olmayan ifade bir l-değeri ise bu bir l değeridir.
 
 Birincil ifadenin örnekleri şunlardır:
 
@@ -62,10 +62,10 @@ this // in a member function, a pointer to the class instance
 ( i + 1 ) // a parenthesized expression
 ```
 
-Aşağıdaki örneklerde, çeşitli formlarda *adlar*ve bu nedenle birincil ifadeler verilmiştir:
+Bu örneklerin hepsi, çeşitli formlarda ve bu şekilde birincil ifadeler *olarak kabul edilir*:
 
 ```cpp
-MyClass // a identifier
+MyClass // an identifier
 MyClass::f // a qualified name
 operator = // an operator function name
 operator char* // a conversion operator function name
