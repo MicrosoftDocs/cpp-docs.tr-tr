@@ -1,5 +1,6 @@
 ---
 title: Kategoriye göre Evrensel C çalışma zamanı yordamları
+description: Kategoriye göre Microsoft Universal C Runtime (UCRT) kitaplığı yordamlarının listesi.
 ms.date: 04/06/2018
 helpviewer_keywords:
 - routines, run-time
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - categories, run-time functions
 - functions [CRT]
 ms.assetid: de6f5ac4-2226-4dad-be9f-deeb31138c9d
-ms.openlocfilehash: be58ce7550c8f15c1c12eafa1dd4187f12fb71cd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3106c97bfcaf6ed273ba9f826edf7b268fdca782
+ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846348"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91806545"
 ---
 # <a name="universal-c-runtime-routines-by-category"></a>Kategoriye göre Evrensel C çalışma zamanı yordamları
 
-Bu bölümde, Genel C çalışma zamanı (UCRT) kitaplığı yordamlarını kategoriye göre listeler ve açıklanmaktadır. Başvuru kolaylığı için bazı yordamlar birden fazla kategoride listelenir. Çok baytlı karakter yordamları ve geniş karakter yordamları, varsa tek baytlı karakter karşılıklarıyla gruplandırılır.
+Bu bölümde, Genel C çalışma zamanı (UıCRT) kitaplığı yordamları kategoriye göre listelenir. Başvuru kolaylığı için bazı yordamlar birden fazla kategoride listelenir. Çok baytlı karakter yordamları ve geniş karakter yordamları, varsa tek baytlı karakter karşılıklarıyla gruplandırılır.
 
 ## <a name="ucrt-library-routine-categories"></a>UCRT kitaplığı rutin kategorileri
 

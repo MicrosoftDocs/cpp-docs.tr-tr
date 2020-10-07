@@ -1,6 +1,7 @@
 ---
 title: Bellek Ayırma
 ms.date: 11/04/2016
+description: Belleği tahsis etmek, serbest bırakmak ve yeniden ayırmak için kullanılan Microsoft C çalışma zamanı işlevlerini listeler.
 f1_keywords:
 - c.memory
 helpviewer_keywords:
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - memory, managing
 - memory, allocation
 ms.assetid: b4470556-a128-4782-9943-2ccf7a7d9979
-ms.openlocfilehash: 2adfd0de21a5dc7a1f3aa65041a6b8a9a9cf1d69
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e01d62fdfd24416f78254a849b3feea97883281
+ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189512"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91806506"
 ---
-# <a name="memory-allocation"></a>Bellek Ayırma
+# <a name="memory-allocation"></a>Bellek ayırma
 
 Belleği ayırmak, serbest bırakmak ve yeniden ayırmak için bu yordamları kullanın.
 
@@ -26,8 +27,7 @@ Belleği ayırmak, serbest bırakmak ve yeniden ayırmak için bu yordamları ku
 |[_alloca](../c-runtime-library/reference/alloca.md), [_malloca](../c-runtime-library/reference/malloca.md)|Yığından bellek ayır|
 |[calloc](../c-runtime-library/reference/calloc.md)|Ayrılan bloktaki her baytı 0 ' a başlatarak dizi için depolama alanını ayırın|
 |[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|**Calloc**öğesinin hata ayıklama sürümü yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
-|[delete işleci](../c-runtime-library/operator-delete-crt.md)|Serbest ayrılmış blok|
-|[Delete&#91;&#93;işleci](../c-runtime-library/delete-operator-crt.md)|Serbest ayrılmış blok|
+|[işleç silme, işleç silme&#91;&#93;](../c-runtime-library/delete-operator-crt.md)|Serbest ayrılmış blok|
 |[_expand](../c-runtime-library/reference/expand.md)|Bellek bloğunu taşımadan genişletme veya küçültme|
 |[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|**_Expand**hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
 |[Süz](../c-runtime-library/reference/free.md)|Serbest ayrılmış blok|
@@ -43,8 +43,7 @@ Belleği ayırmak, serbest bırakmak ve yeniden ayırmak için bu yordamları ku
 |[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|**Malloc**hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
 |[_msize](../c-runtime-library/reference/msize.md)|Ayrılmış bloğun dönüş boyutu|
 |[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|**_Msize**hata ayıklama sürümü; yalnızca çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
-|[Yeni](../c-runtime-library/operator-new-crt.md)|Yığından bellek bloğunu ayır|
-|[Yeni&#91;&#93;](../c-runtime-library/new-operator-crt.md)|Yığından bellek bloğunu ayır|
+|[Yeni, yeni&#91;&#93;](../c-runtime-library/new-operator-crt.md)|Yığından bellek bloğunu ayır|
 |[_query_new_handler](../c-runtime-library/reference/query-new-handler.md)|**_Set_new_handler** tarafından ayarlanan geçerli yeni işleyici yordamının dönüş adresi|
 |[_query_new_mode](../c-runtime-library/reference/query-new-mode.md)|**Malloc** için **_set_new_mode** tarafından ayarlanan yeni işleyici modunu belirten tamsayı döndür|
 |[realloc](../c-runtime-library/reference/realloc.md)|Bloğu yeni boyuta göre yeniden tahsis edin|

@@ -1,22 +1,22 @@
 ---
-title: C Çalışma Zamanı Kitaplığı Başvurusu
+title: C çalışma zamanı kitaplığı başvurusu
 description: Microsoft C çalışma zamanı kitaplığı işlevlerine yönelik bilgi ve başvuru bağlantıları.
-ms.date: 11/04/2016
+ms.date: 10/05/2020
 f1_keywords:
 - c.runtime
 helpviewer_keywords:
 - CRT
-- run-time libraries
+- runtime libraries
 - CRT, reference
 ms.assetid: a503e11c-8dca-4846-84fb-025a826c32b8
-ms.openlocfilehash: 99d8463ddd9dd7b9037cb96e214af7f9581ba074
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 2e5fcadca5dcca30370b0f03917650136ab46ee8
+ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590062"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91806532"
 ---
-# <a name="c-run-time-library-reference"></a>C Çalışma Zamanı Kitaplığı Başvurusu
+# <a name="c-runtime-library-reference"></a>C çalışma zamanı kitaplığı başvurusu
 
 Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemi için programlama yordamları sağlar. Bu yordamlar, C ve C++ dilleri tarafından sağlanmayan yaygın programlama görevlerinin çoğunu otomatik hale getirir.
 
@@ -28,7 +28,7 @@ Microsoft çalışma zamanı kitaplığı, Microsoft Windows işletim sistemi i�
 C çalışma zamanı kitaplıklarını oluşturan. lib dosyalarını açıklar.
 
 [Kategoriye göre evrensel C çalışma zamanı yordamları](run-time-routines-by-category.md)\
-Kategoriye göre çalışma zamanı kitaplığına bağlantılar sağlar.
+Çalışma zamanı kitaplığına kategoriye göre bağlantılar sağlar.
 
 [Genel değişkenler ve standart türler](global-variables-and-standard-types.md)\
 Çalışma zamanı kitaplığı tarafından sağlanan genel değişkenlere ve standart türlere bağlantılar sağlar.
@@ -39,11 +39,14 @@ Kategoriye göre çalışma zamanı kitaplığına bağlantılar sağlar.
 [Genel durum](global-state.md)\
 C çalışma zamanı kitaplığındaki genel durum kapsamını açıklar.
 
-[Alfabetik Işlev Başvurusu](reference/crt-alphabetical-function-reference.md)\
-Tüm C çalışma zamanı kitaplığı işlevlerinin alfabetik bir listesine bir içindekiler tablosu giriş noktası sağlar.
-
 [Genel metin eşlemeleri](generic-text-mappings.md)\
 Tchar. h içinde tanımlanan genel metin eşlemelerine bağlantılar sağlar.
+
+[Alfabetik işlev başvurusu](reference/crt-alphabetical-function-reference.md)\
+Alfabetik olarak düzenlenmiş C çalışma zamanı kitaplığı işlevlerine bağlantılar sağlar.
+
+[İşlev ailesine genel bakış](function-family-overviews.md)\
+İşlev ailesine göre düzenlenen C çalışma zamanı kitaplığı işlevlerine bağlantılar sağlar.
 
 [Dil ve ülke/bölge dizeleri](locale-names-languages-and-country-region-strings.md)\
 `setlocale`Dilinin ve ülke/bölge dizelerini ayarlamak için işlevinin nasıl kullanılacağını açıklar.

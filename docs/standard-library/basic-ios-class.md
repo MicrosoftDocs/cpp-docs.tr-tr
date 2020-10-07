@@ -55,18 +55,18 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-ms.openlocfilehash: b730933879df04d2455b5eae6fc5abf16bbf4484
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ab8e9e0243a298f5ef39b38b3fd345572cafa587
+ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219280"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91806571"
 ---
 # <a name="basic_ios-class"></a>basic_ios Sınıfı
 
 Sınıf şablonu, şablon parametrelerine bağlı olan giriş akışları (sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (sınıf şablonu [basic_ostream](../standard-library/basic-ostream-class.md)) için ortak depolama ve üye işlevlerini açıklar. (Sınıf [ios_base](../standard-library/ios-base-class.md) , ortak olduğunu ve şablon parametrelerine bağlı olanları açıklar.) ** \<class Elem, class Traits> Basic_ios** sınıfının bir nesnesi `Elem` , karakter nitelikleri sınıf tarafından belirlenen türdeki öğelerle bir akışı denetlemeye yardımcı olur `Traits` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 
@@ -77,10 +77,10 @@ class basic_ios : public ios_base
 ### <a name="parameters"></a>Parametreler
 
 *Elem*\
-Bir tür.
+Bir karakter türü.
 
 *Lerdir*\
-Türünde bir değişken `char_traits` .
+Karakter türü hakkında bilgi sağlayan bir tür, varsayılan olarak olur `char_traits < Elem >` .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -150,7 +150,7 @@ Türünde bir değişken `char_traits` .
 
 **Ad alanı:** std
 
-## <a name="basic_iosbad"></a><a name="bad"></a>basic_ios:: Bad
+## <a name="basic_iosbad"></a><a name="bad"></a> basic_ios:: Bad
 
 Akış arabelleğinin bütünlüğünden oluşan bir kayıp olduğunu belirtir
 
@@ -183,7 +183,7 @@ int main( void )
 }
 ```
 
-## <a name="basic_iosbasic_ios"></a><a name="basic_ios"></a>basic_ios:: basic_ios
+## <a name="basic_iosbasic_ios"></a><a name="basic_ios"></a> basic_ios:: basic_ios
 
 Basic_ios sınıfını oluşturur.
 
@@ -201,7 +201,7 @@ Giriş veya çıkış öğelerini depolamak için standart arabellek.
 
 İlk Oluşturucu, [init](#init)(_ *SB*) çağırarak üye nesnelerini başlatır. İkinci (protected) Oluşturucu, üye nesnelerini başlatılmamış halde bırakır. Daha sonraki bir çağrısının `init` , güvenli bir şekilde yok edilebilmesi için nesneyi başlatması gerekir.
 
-## <a name="basic_ioschar_type"></a><a name="char_type"></a>basic_ios:: char_type
+## <a name="basic_ioschar_type"></a><a name="char_type"></a> basic_ios:: char_type
 
 Şablon parametresi için bir eş anlamlı `Elem` .
 
@@ -209,7 +209,7 @@ Giriş veya çıkış öğelerini depolamak için standart arabellek.
 typedef Elem char_type;
 ```
 
-## <a name="basic_iosclear"></a><a name="clear"></a>basic_ios:: Clear
+## <a name="basic_iosclear"></a><a name="clear"></a> basic_ios:: Clear
 
 Tüm hata bayraklarını temizler.
 
@@ -240,7 +240,7 @@ Bayrakları,, `goodbit` `failbit` `eofbit` ve `badbit` . Bu bayrakları [iyi](#g
 
 Using örnekleri için bkz. [rdstate](#rdstate) ve [getline](../standard-library/string-functions.md#getline) `clear` .
 
-## <a name="basic_ioscopyfmt"></a><a name="copyfmt"></a>basic_ios:: copyfmt
+## <a name="basic_ioscopyfmt"></a><a name="copyfmt"></a> basic_ios:: copyfmt
 
 Bayrakları bir akıştan diğerine kopyalar.
 
@@ -283,7 +283,7 @@ int main( )
 }
 ```
 
-## <a name="basic_ioseof"></a><a name="eof"></a>basic_ios:: EOF
+## <a name="basic_ioseof"></a><a name="eof"></a> basic_ios:: EOF
 
 Akışın sonuna ulaşıldığını gösterir.
 
@@ -321,7 +321,7 @@ int main( int argc, char* argv[] )
 }
 ```
 
-## <a name="basic_iosexceptions"></a><a name="exceptions"></a>basic_ios:: Exceptions
+## <a name="basic_iosexceptions"></a><a name="exceptions"></a> basic_ios:: Exceptions
 
 Akış tarafından hangi özel durumların atılamayacağını belirtir.
 
@@ -380,7 +380,7 @@ Exception class: class std::ios_base::failure
 Exception description: ios_base::eofbit set
 ```
 
-## <a name="basic_iosfail"></a><a name="fail"></a>basic_ios:: Fail
+## <a name="basic_iosfail"></a><a name="fail"></a> basic_ios:: Fail
 
 Akıştan geçerli bir alan ayıklama hatası olduğunu gösterir.
 
@@ -410,7 +410,7 @@ int main( void )
 }
 ```
 
-## <a name="basic_iosfill"></a><a name="fill"></a>basic_ios:: Fill
+## <a name="basic_iosfill"></a><a name="fill"></a> basic_ios:: Fill
 
 Metin akış kadar genişse kullanılacak karakteri belirtir veya döndürür.
 
@@ -457,7 +457,7 @@ xxxxa
 x
 ```
 
-## <a name="basic_iosgood"></a><a name="good"></a>basic_ios:: iyi
+## <a name="basic_iosgood"></a><a name="good"></a> basic_ios:: iyi
 
 Akışın iyi koşullarda olduğunu gösterir.
 
@@ -475,7 +475,7 @@ Hakkında daha fazla bilgi için `goodbit` bkz. [ios_base:: ıostate](../standar
 
 Bkz. [basic_ios::](#bad) using bir örnek için `good` .
 
-## <a name="basic_iosimbue"></a><a name="imbue"></a>basic_ios:: imbue
+## <a name="basic_iosimbue"></a><a name="imbue"></a> basic_ios:: imbue
 
 Yerel ayarı değiştirir.
 
@@ -518,7 +518,7 @@ int main( )
 }
 ```
 
-## <a name="basic_iosinit"></a><a name="init"></a>basic_ios:: init
+## <a name="basic_iosinit"></a><a name="init"></a> basic_ios:: init
 
 Basic_ios oluşturucular tarafından çağırılır.
 
@@ -558,7 +558,7 @@ Bunun standart bir akış olup olmadığını belirtir.
 
 - [ıword](../standard-library/ios-base-class.md#iword) sıfır döndürüyor ve [pword](../standard-library/ios-base-class.md#pword) tüm bağımsız değişken değerleri için bir null işaretçi döndürüyor.
 
-## <a name="basic_iosint_type"></a><a name="int_type"></a>basic_ios:: int_type
+## <a name="basic_iosint_type"></a><a name="int_type"></a> basic_ios:: int_type
 
 İçin bir eş anlamlı `traits_type::int_type` .
 
@@ -566,7 +566,7 @@ Bunun standart bir akış olup olmadığını belirtir.
 typedef typename traits_type::int_type int_type;
 ```
 
-## <a name="basic_iosmove"></a><a name="move"></a>basic_ios:: Move
+## <a name="basic_iosmove"></a><a name="move"></a> basic_ios:: Move
 
 Stream buffer işaretçisi dışındaki tüm değerleri, parametresinden geçerli nesneye taşıtır.
 
@@ -583,7 +583,7 @@ void move(basic_ios&& right);
 
 Korumalı üye işlevi, sağda depolanan tüm değerleri, *right* **`*this`** `stream buffer pointer` *sağ* tarafta değişmeyen ve içinde null bir işaretçiye ayarlanmış olan ' a doğru olarak kaydırır **`*this`** . Depolanan, `tie pointer` *sağ tarafta*null bir işaretçiye ayarlanır.
 
-## <a name="basic_iosnarrow"></a><a name="narrow"></a>basic_ios:: dar
+## <a name="basic_iosnarrow"></a><a name="narrow"></a> basic_ios:: dar
 
 Verilen karakterin eşdeğerini bulur `char_type` .
 
@@ -628,7 +628,7 @@ int main( )
 }
 ```
 
-## <a name="basic_iosoff_type"></a><a name="off_type"></a>basic_ios:: off_type
+## <a name="basic_iosoff_type"></a><a name="off_type"></a> basic_ios:: off_type
 
 İçin bir eş anlamlı `traits_type::off_type` .
 
@@ -636,7 +636,7 @@ int main( )
 typedef typename traits_type::off_type off_type;
 ```
 
-## <a name="basic_iosoperator-void-"></a><a name="op_void_star"></a>basic_ios:: operator void *
+## <a name="basic_iosoperator-void-"></a><a name="op_void_star"></a> basic_ios:: operator void *
 
 Akışın hala iyi olup olmadığını gösterir.
 
@@ -666,7 +666,7 @@ int main( )
 1
 ```
 
-## <a name="basic_iosoperator"></a><a name="op_not"></a>basic_ios:: operator!
+## <a name="basic_iosoperator"></a><a name="op_not"></a> basic_ios:: operator!
 
 Akışın bozuk olup olmadığını gösterir.
 
@@ -696,7 +696,7 @@ int main( )
 0
 ```
 
-## <a name="basic_iosoperator-bool"></a><a name="op_bool"></a>basic_ios:: operator bool
+## <a name="basic_iosoperator-bool"></a><a name="op_bool"></a> basic_ios:: operator bool
 
 Nesnesinin olarak kullanılmasına izin verir `basic_ios` **`bool`** . Ortak, istenmeyen yan etkileri engellemek için otomatik tür dönüştürmesi devre dışıdır.
 
@@ -708,7 +708,7 @@ explicit operator bool() const;
 
 İşleci yalnızca öğesine dönüştürülebilir bir değer döndürür **`false`** `fail()` . Dönüş türü, türüne **`bool`** değil, türüne `void *` veya başka bilinen skalar türe dönüştürülebilir.
 
-## <a name="basic_iospos_type"></a><a name="pos_type"></a>basic_ios::p os_type
+## <a name="basic_iospos_type"></a><a name="pos_type"></a> basic_ios::p os_type
 
 İçin bir eş anlamlı `traits_type::pos_type` .
 
@@ -716,7 +716,7 @@ explicit operator bool() const;
 typedef typename traits_type::pos_type pos_type;
 ```
 
-## <a name="basic_iosrdbuf"></a><a name="rdbuf"></a>basic_ios:: rdarabelleğe
+## <a name="basic_iosrdbuf"></a><a name="rdbuf"></a> basic_ios:: rdarabelleğe
 
 Akışı belirtilen arabelleğe yönlendirir.
 
@@ -761,7 +761,7 @@ int main( )
 test2
 ```
 
-## <a name="basic_iosrdstate"></a><a name="rdstate"></a>basic_ios:: rdstate
+## <a name="basic_iosrdstate"></a><a name="rdstate"></a> basic_ios:: rdstate
 
 Bayrakların bitlerin durumunu okur.
 
@@ -810,7 +810,7 @@ int main( )
 1
 ```
 
-## <a name="basic_iossetstate"></a><a name="setstate"></a>basic_ios:: setstate
+## <a name="basic_iossetstate"></a><a name="setstate"></a> basic_ios:: setstate
 
 Ek bayrakları ayarlar.
 
@@ -859,7 +859,7 @@ int main( )
 1
 ```
 
-## <a name="basic_iosset_rdbuf"></a><a name="set_rdbuf"></a>basic_ios:: set_rdbuf
+## <a name="basic_iosset_rdbuf"></a><a name="set_rdbuf"></a> basic_ios:: set_rdbuf
 
 Bu akış nesnesi için okuma arabelleği olacak bir akış arabelleği atar.
 
@@ -877,7 +877,7 @@ Okuma arabelleği olacak akış arabelleği.
 
 Korumalı üye işlevi içinde *strarabelleğe* depolar `stream buffer pointer` . Çağrı yapmaz `clear` .
 
-## <a name="basic_iostie"></a><a name="tie"></a>basic_ios:: kravat
+## <a name="basic_iostie"></a><a name="tie"></a> basic_ios:: kravat
 
 Bir akışın başka bir akıştan önce işlenmesini sağlar.
 
@@ -898,7 +898,7 @@ Bir akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`tie`, bir akışla ilgili işlemler diğer akıştaki işlemler tamamlandıktan sonra meydana gelen iki akışın eşitlenmesine neden olur.
+`tie` , bir akışla ilgili işlemler diğer akıştaki işlemler tamamlandıktan sonra meydana gelen iki akışın eşitlenmesine neden olur.
 
 ### <a name="example"></a>Örnek
 
@@ -918,7 +918,7 @@ int main( )
 }
 ```
 
-## <a name="basic_iostraits_type"></a><a name="traits_type"></a>basic_ios:: traits_type
+## <a name="basic_iostraits_type"></a><a name="traits_type"></a> basic_ios:: traits_type
 
 Şablon parametresi için bir eş anlamlı `Traits` .
 
@@ -926,7 +926,7 @@ int main( )
 typedef Traits traits_type;
 ```
 
-## <a name="basic_ioswiden"></a><a name="widen"></a>basic_ios:: Genişlet
+## <a name="basic_ioswiden"></a><a name="widen"></a> basic_ios:: Genişlet
 
 `char_type`Verilen öğesine denk bulur **`char`** .
 
@@ -967,7 +967,7 @@ int main( )
 }
 ```
 
-## <a name="basic_iosswap"></a><a name="swap"></a>basic_ios:: swap
+## <a name="basic_iosswap"></a><a name="swap"></a> basic_ios:: swap
 
 Bu `basic_ios` nesnedeki değerleri başka bir nesne için değiş tokuş eder `basic_ios` . Ancak, akış arabelleklerine yönelik işaretçiler takas edilmez.
 
