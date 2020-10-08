@@ -405,12 +405,8 @@
       href: ../c-runtime-library/ismbc-routines.md
     - name: işleç new(CRT)
       href: ../c-runtime-library/new-operator-crt.md
-    - name: new işleci (CRT)
-      href: ../c-runtime-library/operator-new-crt.md
     - name: işleç delete(CRT)
       href: ../c-runtime-library/delete-operator-crt.md
-    - name: delete işleci (CRT)
-      href: ../c-runtime-library/operator-delete-crt.md
     - name: printf_p konumsal parametreler
       href: ../c-runtime-library/printf-p-positional-parameters.md
     - name: scanf türü alan karakterleri
