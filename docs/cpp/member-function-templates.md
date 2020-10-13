@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - function templates, member functions
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
-ms.openlocfilehash: ee36d4f33f3e4216e2ad9c434ac1da4ca3aa83e8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8514c8ffe630f5bc44d8d287d6ccf08c7755e3a0
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177987"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008558"
 ---
 # <a name="member-function-templates"></a>Üye İşlev Şablonları
 
@@ -17,7 +17,7 @@ Terim üye şablonu hem üye işlevi şablonlarına hem de iç içe geçmiş sı
 
 Üye işlevleri çeşitli bağlamlarda işlev şablonları olabilir. Sınıf şablonlarının tüm işlevleri geneldir ancak bunlara üye şablonları veya üye işlevi şablonları olarak başvurulmaz. Bu üye işlevleri kendi şablon bağımsız değişkenlerini alırsa, üye işlev şablonları olarak kabul edilir.
 
-## <a name="example"></a>Örnek
+## <a name="example-declare-member-function-templates"></a>Örnek: üye işlev şablonlarını bildirin
 
 Şablon dışı veya şablon sınıflarındaki üye işlev şablonları, kendi şablon parametreleriyle işlev şablonları olarak bildirilir.
 
@@ -36,7 +36,7 @@ int main()
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-member-function-template-of-template-class"></a>Örnek: şablon sınıfının üye işlev şablonu
 
 Aşağıdaki örnekte bir şablon sınıfının üye işlevi şablonu gösterilmektedir.
 
@@ -57,7 +57,7 @@ int main()
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-define-member-templates-outside-class"></a>Örnek: sınıf dışındaki üye şablonlarını tanımlama
 
 ```cpp
 // defining_member_templates_outside_class.cpp
@@ -79,7 +79,7 @@ int main()
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-templated-user-defined-conversion"></a>Örnek: şablonlu kullanıcı tanımlı dönüştürme
 
 Yerel sınıfların üye şablonlarına sahip olmasına izin verilmez.
 
@@ -107,4 +107,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlev Şablonları](../cpp/function-templates.md)
+[İşlev şablonları](../cpp/function-templates.md)

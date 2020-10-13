@@ -7,18 +7,18 @@ helpviewer_keywords:
 - namespaces [C++], unqualified names in
 - using keyword [C++]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-ms.openlocfilehash: 3aa0c7c4615aaf5eae9f4eae534e52167bf79ff0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 072ecd325a76e80dbd710c241e39fdf7b969e537
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227029"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008256"
 ---
 # <a name="using-declaration"></a>using bildirimi
 
 **`using`** Bildirimi, using bildiriminin göründüğü bildirime dayalı bölgeye bir ad getirir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 using [typename] nested-name-specifier unqualified-id ;
@@ -37,7 +37,7 @@ using declarator-list ;
 
 Using bildirimi, başka bir yerde bildirildiği bir varlığın eşanlamlısı olarak nitelenmemiş bir ad sağlar. Belirli bir ad alanındaki tek bir adın, göründüğü bildirim bölgesinde Açık nitelendirme olmadan kullanılmasına izin verir. Bu, bir ad alanındaki *Tüm* adların nitelik olmadan kullanılmasına izin veren [using yönergesine](../cpp/namespaces-cpp.md#using_directives)karşılık gelir. **`using`** Anahtar sözcüğü, [tür diğer adları](../cpp/aliases-and-typedefs-cpp.md)için de kullanılır.
 
-## <a name="example"></a>Örnek
+## <a name="example-using-declaration-in-class-field"></a>Örnek: `using` sınıf alanındaki bildirim
 
 Using bildirimi, sınıf tanımında kullanılabilir.
 
@@ -83,7 +83,7 @@ In B::f()
 In B::g()
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-using-declaration-to-declare-a-member"></a>Örnek: `using` bir üyeyi bildirmek için bildirim
 
 Bir üyeyi bildirmek için kullanıldığında, bir using bildirimi, bir temel sınıfın üyesine başvurmalıdır.
 
@@ -123,7 +123,7 @@ int main() {
 In B::f()
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-using-declaration-with-explicit-qualification"></a>Örnek: `using` Açık nitelikle bildirim
 
 Using bildirimi kullanılarak belirtilen üyelere, açık nitelik kullanılarak başvurulabilir. `::`Ön ek, genel ad alanına başvurur.
 
@@ -163,7 +163,7 @@ In f
 In A::g
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-using-declaration-synonyms-and-aliases"></a>Örnek: `using` bildirim eşanlamlıları ve diğer adları
 
 Bir using bildirimi yapıldığında, bildirim tarafından oluşturulan eş anlamlı yalnızca using bildiriminin noktasında geçerli olan tanımlara başvurur. Using bildiriminden sonra bir ad alanına eklenen tanımlar geçerli eş anlamlı değildir.
 
@@ -192,7 +192,7 @@ void b() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-local-declarations-and-using-declarations"></a>Örnek: yerel bildirimler ve `using` Bildirimler
 
 Ad alanındaki işlevlere göre, bir dizi yerel bildirim ve tek bir ad için bildirimleri kullanmak bildirim temelli bir bölgede verilirse, bunların tümü aynı varlığa başvurmalıdır veya tümü işlevlere başvurmalıdır.
 
@@ -215,9 +215,9 @@ void g() {
 
 Yukarıdaki örnekte, `using B::i` ifade, işlevde saniyenin bildirilmesine neden olur `int i` `g()` . `using B::f` `f(char)` Tarafından tanıtılan işlev adları `B::f` farklı parametre türlerine sahip olduğundan, ifade işlevle çakışmaz.
 
-## <a name="example"></a>Örnek
+## <a name="example-local-function-declarations-and-using-declarations"></a>Örnek: yerel işlev bildirimleri ve `using` Bildirimler
 
-Yerel işlev bildirimi, bildirimi kullanılarak tanıtılan bir işlevle aynı ada ve türe sahip olamaz. Örnek:
+Yerel işlev bildirimi, bildirimi kullanılarak tanıtılan bir işlevle aynı ada ve türe sahip olamaz. Örneğin:
 
 ```cpp
 // functions_in_namespaces2.cpp
@@ -242,7 +242,7 @@ void h() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-using-declaration-and-inheritance"></a>Örnek: `using` bildirim ve devralma
 
 Devralmayla ilgili olarak, bir using bildirimi temel sınıftan türetilmiş bir sınıf kapsamına bir ad oluşturduğunda, türetilmiş sınıftaki üye işlevleri, temel sınıftaki aynı ad ve bağımsız değişken türleriyle sanal üye işlevlerini geçersiz kılar.
 
@@ -300,7 +300,7 @@ In B::g
 In D::g(char)
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-using-declaration-accessibility"></a>Örnek: `using` bildirim erişilebilirliği
 
 Using bildiriminde bahsedilen bir adın tüm örneklerinin erişilebilir olması gerekir. Özellikle, türetilmiş bir sınıf bir temel sınıfın üyesine erişmek için using bildirimi kullanıyorsa, üye adı erişilebilir olmalıdır. Ad, aşırı yüklenmiş bir üye işlevinin ise, adlı tüm işlevlere erişilebilir olması gerekir.
 
@@ -328,4 +328,4 @@ public:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ad alanları](../cpp/namespaces-cpp.md)<br/>
-[Anahtar sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

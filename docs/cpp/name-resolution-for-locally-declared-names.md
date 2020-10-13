@@ -2,18 +2,18 @@
 title: Yerel Bildirimli Adlar için Ad Çözümü
 ms.date: 11/04/2016
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
-ms.openlocfilehash: 2c75c09308f6ba07039de4d2811b9bedaba71e44
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0216154b55e9742c2c4f3f5df7e6d612e16ec9b1
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177904"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008932"
 ---
 # <a name="name-resolution-for-locally-declared-names"></a>Yerel Bildirimli Adlar için Ad Çözümü
 
 Şablon adının kendisi, şablon bağımsız değişkenleri ile veya onlar olmadan belirtilebilir. Sınıf şablonu kapsamında, adın kendisi şablonu belirtir. Şablonu uzmanlığı veya kısmi uzmanlık kapsamında, uzmanlığı veya kısmi uzmanlığı tek başına ad belirtir. Uygun şablon değişkenleri ile, başka şablon uzmanlıkları veya kısmi uzmanlıkları da belirtilebilir.
 
-## <a name="example"></a>Örnek
+## <a name="example-specialization-versus-partial-specialization"></a>Örnek: uzmanlık ve kısmi özelleşme karşılaştırması
 
 Aşağıdaki kod, sınıf şablonun adının (A) uzmanlaşma veya kısmi uzmanlaşma kapsamında farklı yorumlandığını gösterir.
 
@@ -35,7 +35,7 @@ template<> class A<int> {
 };
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-name-conflict-between-template-parameter-and-object"></a>Örnek: şablon parametresi ve nesnesi arasında ad çakışması
 
 Bir şablon parametresi ile başka bir nesne arasında ad çakışması söz konusu olduğunda, şablon parametresi gizlenebilir de gizlenemeyebilir de. Aşağıdaki kurallar önceliği belirlemenize yardımcı olur.
 
@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-define-member-function-outside-class-template"></a>Örnek: sınıf şablonunun dışında üye işlevini tanımlayın
 
 Sınıf şablonu dışındaki bir şablona ait üye işlevlerini tanımlarken, farklı bir şablon parametresi adı kullanılabilir. Şablon üye işlev tanımı, şablon parametresi için bildirimden farklı bir ad kullanırsa ve tanımda kullanılan ad bildirimin başka bir üyesiyle çakışırsa, şablon bildirimindeki üye öncelik kazanır.
 
@@ -90,7 +90,7 @@ int main() {
 Z::Z()
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-define-template-or-member-function-outside-namespace"></a>Örnek: ad alanı dışında şablon veya üye işlevi tanımlayın
 
 Şablonun bildirildiği ad alanı dışındaki bir şablon işlevi veya üye işlev tanımlanırken, şablon bağımsız değişkeni ad alanının diğer üyelerinin adları üzerinde önceliğe sahiptir.
 
@@ -124,7 +124,7 @@ int main() {
 C<T>::g
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-base-class-or-member-name-hides-template-argument"></a>Örnek: temel sınıf veya üye adı şablon bağımsız değişkenini gizliyor
 
 Şablon sınıf bildirimi dışındaki tanımlarda, bir şablon sınıfının, şablon bağımsız değişkenine bağımlı olmayan temel bir sınıfı varsa ve temel sınıf ya da üyelerinden biri şablon bağımsız değişkeniyle aynı ada sahipse, temel sınıf veya üye adı, şablon bağımsız değişkenini gizler.
 

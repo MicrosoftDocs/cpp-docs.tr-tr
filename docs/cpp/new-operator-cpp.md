@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: 81dd7483c49a699ac53ea53d33481fa6539d484c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0c3ed59262ec5ad061572d23c1166b2153cb16ca
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223661"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008581"
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 
@@ -18,7 +18,7 @@ Boş depodan bir nesne veya türündeki nesne dizisi için bellek ayırır ve ne
 > [!NOTE]
 > Microsoft C++ Bileşen Uzantıları, **`new`** vtable yuva girdileri eklemek için anahtar sözcük desteği sağlar. Daha fazla bilgi için bkz. [Yeni (vtable 'da yeni yuva)](../extensions/new-new-slot-in-vtable-cpp-component-extensions.md)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 [::] new [placement] new-type-name [new-initializer]
@@ -70,7 +70,7 @@ Ayrılacak türü belirtir; yerleşik veya Kullanıcı tanımlı bir tür olabil
 *izer*<br/>
 Başlatılmış nesne için bir değer sağlar. Başlatıcılar diziler için belirtilemez. **`new`** İşleci yalnızca sınıfın varsayılan bir Oluşturucusu varsa nesne dizileri oluşturur.
 
-## <a name="example"></a>Örnek
+## <a name="example-allocate-and-free-a-character-array"></a>Örnek: bir karakter dizisini ayır ve serbest bırakma
 
 Aşağıdaki kod örneği, bir karakter dizisi ve sınıfından bir nesne ayırır `CName` ve sonra onları serbest bırakır.
 
@@ -115,9 +115,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-new-operator"></a>Örnek: `new` işleç
 
-İşlecin yeni formunu **`new`** , ayırma boyutuna ek olarak bağımsız değişkenlerle birlikte kullanırsanız, **`delete`** Oluşturucu bir özel durum oluşturursa, derleyici işlecin yerleştirme biçimini desteklemez. Örnek:
+İşlecin yeni formunu **`new`** , ayırma boyutuna ek olarak bağımsız değişkenlerle birlikte kullanırsanız, **`delete`** Oluşturucu bir özel durum oluşturursa, derleyici işlecin yerleştirme biçimini desteklemez. Örneğin:
 
 ```cpp
 // expre_new_Operator2.cpp
@@ -193,7 +193,7 @@ Bellek ayırma başarısız olursa (**New işleci** 0 değerini döndürür), ba
 
 ## <a name="lifetime-of-objects-allocated-with-new"></a>Yeni ile ayrılmış nesnelerin ömrü
 
-İşleciyle ayrılan nesneler, **`new`** tanımlandıkları kapsamın çıkış sırasında yok edilmez. İşleci, **`new`** ayırdığı nesnelere bir işaretçi döndürdüğünden, program bu nesnelere erişmek için uygun kapsama sahip bir işaretçi tanımlamalıdır. Örnek:
+İşleciyle ayrılan nesneler, **`new`** tanımlandıkları kapsamın çıkış sırasında yok edilmez. İşleci, **`new`** ayırdığı nesnelere bir işaretçi döndürdüğünden, program bu nesnelere erişmek için uygun kapsama sahip bir işaretçi tanımlamalıdır. Örneğin:
 
 ```cpp
 // expre_Lifetime_of_Objects_Allocated_with_new.cpp
@@ -255,5 +255,5 @@ Kapsam çözümleme işleci (), `::` genel işleç kullanımını zorlar **`new`
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
 [new ve delete işleçleri](../cpp/new-and-delete-operators.md)

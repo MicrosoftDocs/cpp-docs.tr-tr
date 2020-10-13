@@ -54,12 +54,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 1fa2cc24f4ec610e1cc892ddd8d3bf8971ddf687
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 08921ff44d2d69ab77eb210b2123016ea61c4f67
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919291"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008275"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -162,7 +162,7 @@ Hedef dizenin karakter cinsinden boyutu.
 *strSource*<br/>
 Kaynak dize.
 
-*biriktirme*<br/>
+*count*<br/>
 Kopyalanacak karakter sayısı veya [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *locale*<br/>
@@ -176,10 +176,10 @@ Başarılı olursa **sıfır, kesme oluştuysa, aksi** takdirde hata kodu.
 
 |*strDest*|*numberOfElements*|*strSource*|Döndürülen değer|*StrDest* içeriği|
 |---------------|------------------------|-----------------|------------------|---------------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|*strDest*[0] 0 olarak ayarlandı|
-|kaydedilmemiş|0|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|**null** değil|çok küçük|kaydedilmemiş|**ERANGE**|*strDest*[0] 0 olarak ayarlandı|
+|**DEĞER**|herhangi biri|herhangi biri|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|*strDest*[0] 0 olarak ayarlandı|
+|herhangi biri|0|herhangi biri|**EıNVAL**|değiştirilmedi|
+|**null** değil|çok küçük|herhangi biri|**ERANGE**|*strDest*[0] 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -233,13 +233,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncpy_s**, **_strncpy_s_l**|\<String. h>|
-|**wcsncpy_s**, **_wcsncpy_s_l**|\<String. h> veya \<wchar. h>|
-|**_mbsncpy_s**, **_mbsncpy_s_l**|\<mbstring. h>|
+|**strncpy_s**, **_strncpy_s_l**|\<string.h>|
+|**wcsncpy_s**, **_wcsncpy_s_l**|\<string.h> veya \<wchar.h>|
+|**_mbsncpy_s**, **_mbsncpy_s_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-## <a name="example"></a>Örnek
+## <a name="example-copy-chars-to-a-buffer"></a>Örnek: bir arabelleğe karakter kopyalama
 
 ```cpp
 // crt_strncpy_s_1.cpp
@@ -366,7 +366,7 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
     new contents of dest: ''
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-strncpy-and-strncpy_s"></a>Örnek: strncpy ve strncpy_s
 
 ```C
 // crt_strncpy_s_2.c
@@ -414,7 +414,7 @@ After strncpy_s (with null-termination):
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>
 [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

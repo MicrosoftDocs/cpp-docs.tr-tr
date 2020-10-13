@@ -31,12 +31,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: 1995d54e972f99543773fff374e56c0dd7cf4988
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: abedba6f1d414191732859e3e44b54cc16acc4e9
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915804"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008420"
 ---
 # <a name="_setmode"></a>_setmode
 
@@ -74,7 +74,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 Ayrıca, bu belgenin devamındaki ikinci örnekte gösterildiği gibi, Unicode modunu etkinleştirmek için **_O_U16TEXT**, **_O_U8TEXT**veya **_O_WTEXT** geçirebilirsiniz.
 
 > [!CAUTION]
-> Unicode modu geniş yazdırma işlevlerine yöneliktir (örneğin, `wprintf`) ve dar yazdırma işlevlerinde desteklenmez. Bir UNICODE modundaki bir dar Print işlevinin kullanımı bir onaylama tetikler.
+> Unicode modu geniş yazdırma işlevlerine yöneliktir (örneğin, `wprintf` ) ve dar yazdırma işlevlerinde desteklenmez. Bir UNICODE modundaki bir dar Print işlevinin kullanımı bir onaylama tetikler.
 
 **_setmode** , genellikle **stdin** ve **stdout**varsayılan çeviri modunu değiştirmek için kullanılır, ancak bunu herhangi bir dosya üzerinde kullanabilirsiniz. Bir akışın dosya tanımlayıcısına **_setmode** uygularsanız, akışta herhangi bir giriş veya çıkış işlemini gerçekleştirmeden önce **_setmode** çağırın.
 
@@ -87,11 +87,11 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_setmode**|\<GÇ. h>|\<fcntl. h>|
+|**_setmode**|\<io.h>|\<fcntl.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-## <a name="example"></a>Örnek
+## <a name="example-use-_setmode-to-change-stdin"></a>Örnek: _setmode stdin 'yi değiştirmek için kullanın
 
 ```C
 // crt_setmode.c
@@ -119,7 +119,7 @@ int main( void )
 'stdin' successfully changed to binary mode
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-use-_setmode-to-change-stdout"></a>Örnek: stdout değiştirmek için _setmode kullanın
 
 ```C
 // crt_setmodeunicode.c
@@ -141,7 +141,7 @@ int main(void) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

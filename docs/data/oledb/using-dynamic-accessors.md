@@ -5,12 +5,12 @@ helpviewer_keywords:
 - accessors [C++], dynamic
 - dynamic accessors
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-ms.openlocfilehash: eea1c6199fed5a4e6e331c1c76f34b96090b709a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4f42d6f20da819cf325cad06a04878b46e52352a
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509410"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008675"
 ---
 # <a name="using-dynamic-accessors"></a>Dinamik Erişimcileri Kullanma
 
@@ -22,7 +22,7 @@ Dinamik erişimciler, veritabanı şeması (temel yapı) hakkında bilginiz olma
 
 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) , veritabanı şeması (veritabanının temel yapısı) hakkında bilginiz olmadığında bir veri kaynağına erişmenizi sağlar. `CDynamicAccessor` Yöntemler sütun adları, sayı ve veri türü gibi sütun bilgileri alır. Bu sütun bilgilerini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız. Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [GetValue](./cdynamicaccessor-class.md#getvalue) yöntemini kullanarak arabellekteki verileri alın.
 
-## <a name="example"></a>Örnek
+## <a name="example-cdynamic-accessors"></a>Örnek: CDynamic erişimcileri
 
 ```cpp
 // Using_Dynamic_Accessors.cpp
@@ -94,7 +94,7 @@ int main(int argc, char* argv[] )
 
 `CDynamicStringAccessor`Sütun bilgilerini almak için yöntemleri kullanın. Bu sütun bilgilerini, çalışma zamanında dinamik olarak bir erişimci oluşturmak için kullanırsınız. Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [CDynamicStringAccessor:: GetString](./cdynamicstringaccessor-class.md#getstring) kullanarak arabellekteki verileri Al veya [CDynamicStringAccessor:: SetString](./cdynamicstringaccessor-class.md#setstring)kullanarak arabelleğe depola.
 
-## <a name="example"></a>Örnek
+## <a name="example-cdynamicstringaccessor"></a>Örnek: CDynamicStringAccessor
 
 ```cpp
 // Using_Dynamic_Accessors_b.cpp

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-ms.openlocfilehash: 21efed39fdaabe0f95f83e9dc5cdfcc508a147c5
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: be9d9fe56d35e96e4179eb511edccd475a369f32
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684455"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008295"
 ---
 # <a name="tuple_element-class"></a>tuple_element Sınıfı
 
-Bir `tuple` öğesini sarmalanmış. Specialmeler `array` öğelerini ve `pair` öğelerini kaydırır.
+Bir öğeyi sarmalanmış `tuple` . Specialmeler `array` öğeleri ve öğeleri sarlar `pair` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,37 +56,37 @@ template <class T1, class T2>
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin* \
+*İndeks*\
 Belirlenen öğenin dizini.
 
-*Tanımlama grubu* \
+*Le*\
 Kayıt düzeni türü.
 
-*Eled* \
+*Elem*\
 Bir dizi öğesinin türü.
 
-*Boyut* \
+*Boyutla*\
 Dizinin boyutu.
 
-*T1* \
+*T1*\
 Bir çiftin ilk öğe türü.
 
-*T2* \
+*T2*\
 Bir çiftin ikinci öğe türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-@No__t_0 sınıf şablonu, demet türü *kayıt*kümesi Dizin *dizininde* bulunan tür için bir eş anlamlı olan `type` iç içe geçmiş bir typedef içerir.
+Sınıf şablonunda, `tuple_element` `type` demet türü *kayıt*kümesi Dizin *dizininde* bulunan türün eşanlamlısı olan iç içe geçmiş bir typedef vardır.
 
-TypeDef `tuple_element_t` `tuple_element<Index, Tuple>::type` için kullanışlı bir addır.
+TypeDef `tuple_element_t` için uygun bir diğer addır `tuple_element<Index, Tuple>::type` .
 
-Diziler için sınıf şablonu özelleştirmesi, her biri aynı türe sahip olan bir `array` `Size` öğe grubu olarak bir arabirim sağlar. Her özelleşmenin, `array` *Dizin* öğesi türü için bir eş anlamlı olan `type` iç içe geçmiş bir typedef vardır.
+Diziler için sınıf şablonu özelleştirmesi, `array` `Size` her biri aynı türe sahip olan öğe grubu olarak bir arabirim sağlar. Her özelleşmenin, `type` ' ın *Dizin* öğesi türü için bir eş anlamlı olan iç içe geçmiş bir typedef vardır ve `array` herhangi bir const geçici nitelemeleri korunur.
 
-@No__t_0 türleri için şablon Uzmanlıkları, her biri çiftteki belirtilen konumdaki öğe türü için bir eş anlamlı olan `type`, her bir const ve/veya volatile ile korunan tek bir üye typedef sağlar. TypeDef `tuple_element_t` `tuple_element<N, pair<T1, T2>>::type` için kullanışlı bir addır.
+Türlerin şablon özelleştirmelerinin `pair` her biri, `type` çiftteki belirtilen konumdaki öğe türü için bir eş anlamlı olan tek bir üye typedef sağlar, bu, herhangi bir const ve/veya volatile ile korunur. TypeDef `tuple_element_t` için uygun bir diğer addır `tuple_element<N, pair<T1, T2>>::type` .
 
-Öğeyi belirtilen bir konumda veya belirtilen bir türde döndürmek için [Get işlevini &lt;utility &gt;](../standard-library/utility-functions.md#get) kullanın.
+Öğeyi belirtilen bir konuma veya belirtilen bir türe döndürmek için [işlevi Al &lt; yardımcı programını &gt; ](../standard-library/utility-functions.md#get) kullanın.
 
-## <a name="example"></a>Örnek
+## <a name="example-get-an-element-from-a-tuple"></a>Örnek: bir kayıt kümesinden bir öğe alın
 
 ```cpp
 #include <tuple>
@@ -111,7 +111,7 @@ int main() {
 0 1.5 Tail
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-get-an-element-from-an-array"></a>Örnek: bir diziden bir öğe alın
 
 ```cpp
 #include <array>
@@ -141,7 +141,7 @@ int main()
 0
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-get-an-element-from-a-pair"></a>Örnek: bir çiftin öğe al
 
 ```cpp
 #include <utility>
@@ -174,10 +174,10 @@ int main() {
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<tuple >
+**Üst bilgi:**\<tuple>
 
-**Üstbilgi:** \<array > (dizi özelleştirmesi için)
+**Üst bilgi:** \<array> (dizi özelleştirmesi için)
 
-**Üst bilgi:** \<utility > (çift uzmanlık için)
+**Üst bilgi:** \<utility> (çift specialmeler için)
 
 **Ad alanı:** std

@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - DLL conflicts [C++]
 ms.assetid: c217ffd2-5d9a-4678-a1df-62a637a96460
-ms.openlocfilehash: f6d831ac8b86be8a6669e8ee6c66da64507d129f
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 2d42803b5eca7a43f122d209b7d9e2d4e45c38de
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590192"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008943"
 ---
 # <a name="potential-errors-passing-crt-objects-across-dll-boundaries"></a>CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar
 
@@ -33,7 +33,7 @@ CRT kitaplığı 'nın her kopyasının kendi yığın Yöneticisi olduğundan, 
 
 DLL ve istemcileri normalde, her ikisi de aynı CRT DLL sürümüne bağlandığında CRT kitaplığı 'nın aynı kopyasını kullanır. Visual Studio 2015 ve üzeri Windows 10 ' da bulunan Universal CRT kitaplığı 'nın DLL sürümü artık merkezi olarak dağıtılan bir Windows bileşenidir (ucrtbase.dll), bu, Visual Studio 2015 ve sonraki sürümlerle oluşturulmuş uygulamalar için aynıdır. Ancak, CRT kodu özdeş olsa bile, farklı bir yığın kullanan bir bileşene tek bir yığında ayrılan bellek veremezsiniz.
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-file-handle-across-dll-boundary"></a>Örnek: dosya işleyicisini DLL sınırı arasında geçir
 
 ### <a name="description"></a>Açıklama
 
@@ -75,7 +75,7 @@ int main(void)
 this is a string
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-environment-variables-across-dll-boundary"></a>Örnek: ortam değişkenlerini DLL sınırının tamamında geçir
 
 ### <a name="description"></a>Açıklama
 

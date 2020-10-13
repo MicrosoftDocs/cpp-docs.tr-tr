@@ -6,12 +6,12 @@ helpviewer_keywords:
 - __nullptr keyword (C++)
 - nullptr keyword [C++]
 ms.assetid: 594cfbf7-06cb-4366-9ede-c0b703e1d095
-ms.openlocfilehash: 5e7a5d3f9a42968dee35f82d3f19d0fdb6da5d0c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7e9cf88fdc0444f736f1cfac0d06dfc675a162cc
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214236"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008360"
 ---
 # <a name="nullptr--ccli-and-ccx"></a>nullptr (C++/CLI ve C++/CX)
 
@@ -33,7 +33,7 @@ ms.locfileid: "87214236"
 
 - [typeid](../cpp/typeid-operator.md)
 
-- `throw nullptr`(ancak `throw (Object^)nullptr;` çalışacaktır)
+- `throw nullptr` (ancak `throw (Object^)nullptr;` çalışacaktır)
 
 **`nullptr`** Anahtar sözcüğü, aşağıdaki işaretçi türlerinin başlatılmasında kullanılabilir:
 
@@ -51,7 +51,7 @@ Hata denetimi için null işaretçi değerlerini kullanan diller arasındaki iş
 
 Bir tanıtıcıyı sıfıra başlatamıyor; yalnızca **`nullptr`** kullanılabilir. Bir nesne tanıtıcısına 0 sabiti atanması kutulanmış `Int32` ve ' a bir tür üretir `Object^` .
 
-## <a name="example"></a>Örnek
+## <a name="example-nullptr-keyword"></a>Örnek: `nullptr` anahtar sözcük
 
 Aşağıdaki kod örneği, **`nullptr`** anahtar sözcüğünün bir tanıtıcı, yerel işaretçi veya işlev bağımsız değişkeninin kullanılabileceği her yerde kullanılabileceğini gösterir. Örnek, **`nullptr`** anahtar sözcüğünün, bir başvuruyu kullanılmadan önce denetlemek için kullanılabileceğini gösterir.
 
@@ -80,7 +80,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-use-nullptr-and-zero-interchangeably"></a>Örnek: kullanımı `nullptr` ve sıfır birbirinin yerine
 
 Aşağıdaki kod örneği, **`nullptr`** Yerel işaretçilerde birbirinin yerine, ve sıfır kullanılabileceğini gösterir.
 
@@ -119,7 +119,7 @@ pMyClass == nullptr
 pMyClass == 0
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-interpret-nullptr-as-a-handle"></a>Örnek: `nullptr` tanıtıcı olarak yorumlama
 
 Aşağıdaki kod örneği, herhangi bir türe **`nullptr`** veya herhangi bir türe yerel işaretçiye yönelik bir tanıtıcı olarak yorumlanan gösterilmektedir. Farklı türlere yönelik tanıtıcılarla işlev aşırı yüklemesi söz konusu olduğunda bir belirsizlik hatası oluşturulur. ' In **`nullptr`** açıkça bir türe dönüştürülmesi gerekir.
 
@@ -137,7 +137,7 @@ void f_null() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-cast-nullptr"></a>Örnek: cast `nullptr`
 
 Aşağıdaki kod örneği, atama **`nullptr`** için izin verildiğini gösterir ve değeri içeren atama türüne bir işaretçi veya tanıtıcı döndürür **`nullptr`** .
 
@@ -158,7 +158,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-pass-nullptr-as-a-function-parameter"></a>Örnek: `nullptr` işlev parametresi olarak geçir
 
 Aşağıdaki kod örneği, **`nullptr`** bir işlev parametresi olarak kullanılabilecek gösterir.
 
@@ -179,7 +179,7 @@ int main() {
 test
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-default-initialization"></a>Örnek: varsayılan başlatma
 
 Aşağıdaki kod örneği, tanıtıcıların bildirildiği ve açıkça başlatıldığı zaman, varsayılan olarak başlatıldığını gösterir **`nullptr`** .
 
@@ -206,7 +206,7 @@ int main() {
 NULL
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-assign-nullptr-to-a-native-pointer"></a>Örnek: `nullptr` yerel bir Işaretçiye ata
 
 Aşağıdaki kod örneği, **`nullptr`** ile derleme yaptığınızda yerel bir işaretçiye atanabileceği gösterilmektedir `/clr` .
 

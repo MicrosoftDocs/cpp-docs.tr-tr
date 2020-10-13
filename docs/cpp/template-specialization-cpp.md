@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - partial specialization of class templates
 ms.assetid: f3c67c0b-3875-434a-b8d8-bb47e99cf4f0
-ms.openlocfilehash: 17f1f15a5356d760119123214e939a7dd2d1fbaf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f71c2c3862bd015ba3edcd17aeac85472eb2562
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223583"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008915"
 ---
 # <a name="template-specialization-c"></a>Şablon Uzmanlığı (C++)
 
@@ -19,7 +19,7 @@ Sınıf şablonları kısmen uzmanlaşmış olabilir ve elde edilen sınıf hala
 
 - Şablon yalnızca bir türe sahiptir, ancak işaretçi, başvuru, üye işaretçisi veya işlev işaretçisi türleri için bir özelleştirme gerekir. Özelleşmenin kendisi, işaret edilen veya başvurulan tür üzerinde hala bir şablondur.
 
-## <a name="example"></a>Örnek
+## <a name="example-partial-specialization-of-class-templates"></a>Örnek: sınıf şablonlarının kısmi özelleştirmesi
 
 ```cpp
 // partial_specialization_of_class_templates.cpp
@@ -66,7 +66,7 @@ PTS<S*>::IsPointer == 1 PTS<S*>::IsPointerToDataMember ==0
 PTS<int S::*>::IsPointer == 0 PTS<int S::*>::IsPointerToDataMember == 1
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-partial-specialization-for-pointer-types"></a>Örnek: işaretçi türleri için kısmi özelleşme
 
 Herhangi bir türü alan bir şablon koleksiyonu sınıfınız varsa `T` , herhangi bir işaretçi türü alan kısmi bir özelleştirme oluşturabilirsiniz `T*` . Aşağıdaki kod, bir koleksiyon sınıfı şablonunu `Bag` ve koleksiyonun, diziyi bir diziye kopyalamadan önce işaretçi türlerini referans aldığı işaretçi türleri için kısmi bir özelleşme gösterir. Daha sonra koleksiyon, işaret edilen değerleri depolar. Özgün şablon ile, yalnızca işaretçilerin kendisi, verilerin silinme veya değişiklik yapılmasına karşı savunmasız bırakılması halinde depolanır. Koleksiyonun bu özel işaretçi sürümünde, yöntemde null bir işaretçi denetlenecek kod `add` eklenir.
 
@@ -178,7 +178,7 @@ Null pointer!
 3 87 8 100
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-define-partial-specialization-so-one-type-is-int"></a>Örnek: bir tür için kısmi özelleşme tanımlayın `int`
 
 Aşağıdaki örnek, herhangi iki türden çiftleri alan bir şablon sınıfını tanımlar ve sonra türlerden birinin olması için bu şablon sınıfının özelleşmiş bir özelleştirmesi tanımlar **`int`** . Özelleşme, tamsayı temelinde basit bir kabarcık sıralaması uygulayan ek bir sıralama yöntemi tanımlar.
 

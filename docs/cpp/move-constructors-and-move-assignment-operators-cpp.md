@@ -4,12 +4,12 @@ ms.date: 03/05/2018
 helpviewer_keywords:
 - move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-ms.openlocfilehash: 2c8fed15787ec4b347694d8c4e40bf7912f3421d
-ms.sourcegitcommit: d4da3693f83a24f840e320e35c24a4a07cae68e2
+ms.openlocfilehash: e57f67eeca93572b26ee03033cbe4dcf90431f78
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83550777"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008872"
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)
 
@@ -168,7 +168,7 @@ Aşağıdaki yordamlarda, örnek C++ sınıfı için bir taşıma oluşturucusun
     return *this;
     ```
 
-## <a name="example"></a>Örnek
+## <a name="example-complete-move-constructor-and-assignment-operator"></a>Örnek: Move yapıcısı ve atama işleci
 
 Aşağıdaki örnek, sınıfı için tüm taşıma oluşturucusunu ve taşıma atama işlecini gösterir `MemoryBlock` :
 
@@ -217,7 +217,7 @@ MemoryBlock& operator=(MemoryBlock&& other) noexcept
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-use-move-semantics-to-improve-performance"></a>Örnek performansı artırmak için taşıma semantiğini kullanın
 
 Aşağıdaki örnek, taşıma semantiğinin uygulamalarınızın performansını nasıl geliştirebileceğinizi gösterir. Örnek, bir vektör nesnesine iki öğe ekler ve sonra varolan iki öğe arasında yeni bir öğe ekler. `vector`Sınıfı, vektör öğelerini kopyalamak yerine vektör öğelerinin taşıyarak ekleme işlemini verimli bir şekilde gerçekleştirmek için taşıma semantiğini kullanır.
 

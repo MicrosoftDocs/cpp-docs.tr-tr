@@ -4,47 +4,47 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined operators under /clr
 ms.assetid: 42f93b4a-6de4-4e34-b07b-5a62ac014f2c
-ms.openlocfilehash: cf80eb4c440c1308e8ea06a563c18569e4e4ddf2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee5aa122983a315e55884c643a9b7894f075e260
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384510"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008948"
 ---
 # <a name="user-defined-operators-ccli"></a>Kullanıcı Tanımlı İşleçler (C++/CLI)
 
-Yönetilen türler için kullanıcı tanımlı işleçler statik üyeleri veya örnek üyeler olarak veya genel kapsamda izin verilmez. Ancak, yalnızca statik işleçleri meta veriler Visual C++ dışında bir dilde yazılmış istemcilere erişilebilir.
+Yönetilen türler için Kullanıcı tanımlı işleçlere statik üyeler veya örnek Üyeler veya genel kapsam olarak izin verilir. Ancak, Visual C++ dışında bir dilde yazılan istemciler için meta veriler aracılığıyla yalnızca statik işleçlere erişilebilir.
 
-Bir başvuru türü statik bir kullanıcı tarafından tanımlanan işlecin parametrelerinden biri olmalıdır:
+Bir başvuru türünde, statik Kullanıcı tanımlı bir işlecin parametrelerinden biri aşağıdakilerden biri olmalıdır:
 
-- Bir işleyici (`type` ^) kapsayan türde bir örnek.
+- `type`Kapsayan tür örneğine bir tanıtıcı (^).
 
-- Bir başvuru türü yöneltme (`type`^ & veya türü ^ %) için bir tanıtıcı kapsayan türde bir örnek.
+- Bir başvuru türü yöneltme ( `type` ^& veya tür ^%) kapsayan türdeki bir örneğe yönelik tanıtıcıya.
 
-Bir değer türü statik bir kullanıcı tarafından tanımlanan işlecin parametrelerinden biri olmalıdır:
+Değer türünde, statik Kullanıcı tanımlı bir işlecin parametrelerinden biri aşağıdakilerden biri olmalıdır:
 
-- Kapsayan değer türü olarak aynı türde.
+- Kapsayan değer türü ile aynı türde.
 
-- Bir işaretçi türü yöneltmesi (`type`^) kapsayan türü.
+- Kapsayan türe bir işaretçi türü yöneltme ( `type` ^).
 
-- Bir başvuru türü yöneltme (`type`% veya `type`&) kapsayan türü.
+- Kapsayan tür için bir başvuru türü yöneltme ( `type` % veya `type`&).
 
-- Bir başvuru türü yöneltme (`type`^ % veya `type`^ &) işlemek için.
+- Tanıtıcı için bir başvuru türü yöneltme ( `type` ^% veya `type` ^&).
 
 Aşağıdaki işleçleri tanımlayabilirsiniz:
 
-|İşleç|Birli/ikili Forms?|
+|Operatör|Birli/Ikili formlar?|
 |--------------|--------------------------|
 |!|Birli|
 |!=|İkili|
 |%|İkili|
-|&|Tekli veya ikili|
+|&|Birli ve Ikili|
 |&&|İkili|
-|*|Tekli veya ikili|
-|+|Tekli veya ikili|
+|*|Birli ve Ikili|
+|+|Birli ve Ikili|
 |++|Birli|
 |,|İkili|
-|-|Tekli veya ikili|
+|-|Birli ve Ikili|
 |--|Birli|
 |->|Birli|
 |/|İkili|
@@ -57,13 +57,13 @@ Aşağıdaki işleçleri tanımlayabilirsiniz:
 |>=|İkili|
 |>>|İkili|
 |^|İkili|
-|false|Birli|
+|yanlış|Birli|
 |true|Birli|
 |&#124;|İkili|
 |&#124;&#124;|İkili|
 |~|Birli|
 
-## <a name="example"></a>Örnek
+## <a name="example-user-defined-operators"></a>Örnek: Kullanıcı tanımlı işleçler
 
 ```cpp
 // mcppv2_user-defined_operators.cpp
@@ -135,9 +135,9 @@ int main() {
 -3
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-operator-synthesis"></a>Örnek: Işleç sensıs
 
-Aşağıdaki örnek kullandığınızda, yalnızca operatör birleştirmesinden gösterir **/CLR** derlemek için. Operatör birleştirmesinden ikili işleci atama formu oluşturur, varsa tanımlı değil, atama işlecinin sol tarafında sahip olduğu bir CLR türü.
+Aşağıdaki örnek, yalnızca derlemek için **/clr** kullandığınızda kullanılabilir olan işleç birleştirini gösterir. İşleç birleştirme, atama işlecinin sol tarafındaki bir CLR türüne sahip olmadığı bir ikili işlecin atama formunu oluşturur.
 
 ```cpp
 // mcppv2_user-defined_operators_2.cpp

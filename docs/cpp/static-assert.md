@@ -7,18 +7,18 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: b30af5fcf5d4f58143e657d84e743ef09a34e268
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: bf796b853d21d33d97e25c05101b7486e1eb112f
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742976"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008855"
 ---
 # <a name="static_assert"></a>static_assert
 
 Derleme zamanında yazılım onayını sınar. Belirtilen sabit ifade ise, **`false`** derleyici belirtilen iletiyi görüntüler, varsa, derleme C2338 hatasıyla başarısız olur; aksi takdirde, bildirimin etkisi yoktur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 static_assert( constant-expression, string-literal );
@@ -44,21 +44,21 @@ Derleyici, **`static_assert`** bildirime rastlana kadar sözdizimi hataları iç
 
 **`static_assert`** Anahtar sözcüğünü ad alanı, sınıf veya blok kapsamı ' nde kullanabilirsiniz. ( **`static_assert`** Anahtar sözcüğü, ad alanı kapsamında kullanılabilmesi için, programınıza yeni bir ad sunmasa bile, teknik olarak bir bildirimidir.)
 
-## <a name="description-of-static_assert-with-namespace-scope"></a>Ad alanı kapsamına sahip static_assert açıklaması
+## <a name="description-of-static_assert-with-namespace-scope"></a>`static_assert`Ad alanı kapsamıyla ilgili açıklama
 
 Aşağıdaki örnekte, **`static_assert`** bildiriminde ad alanı kapsamı vardır. Derleyici, türü boyutunu bildiğinden `void *` , ifade hemen değerlendirilir.
 
-## <a name="example-of-static_assert-with-namespace-scope"></a>Ad alanı kapsamına sahip static_assert örneği
+## <a name="example-static_assert-with-namespace-scope"></a>Örnek: `static_assert` ad alanı kapsamı ile
 
 ```cpp
 static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 ```
 
-## <a name="description-of-static_assert-with-class-scope"></a>Sınıf kapsamıyla static_assert açıklaması
+## <a name="description-of-static_assert-with-class-scope"></a>`static_assert`Sınıf kapsamıyla ilgili açıklama
 
 Aşağıdaki örnekte, **`static_assert`** bildiriminde sınıf kapsamı vardır. , **`static_assert`** Bir şablon parametresinin *düz bir eski veri* (pod) türü olduğunu doğrular. Derleyici **`static_assert`** bildirildiği zaman bildirimi inceler, ancak sınıf şablonu içinde örneklendirilene kadar *sabit ifade* parametresini değerlendirmez `basic_string` `main()` .
 
-## <a name="example-of-static_assert-with-class-scope"></a>Sınıf kapsamına sahip static_assert örneği
+## <a name="example-static_assert-with-class-scope"></a>Örnek: `static_assert` sınıf kapsamı ile
 
 ```cpp
 #include <type_traits>
@@ -83,11 +83,11 @@ int main()
 }
 ```
 
-## <a name="description"></a>Description
+## <a name="description-of-static_assert-with-block-scope"></a>`static_assert`Blok kapsamıyla ilgili açıklama
 
 Aşağıdaki örnekte, **`static_assert`** bildiriminde blok kapsamı vardır. **`static_assert`** VMPage yapısının boyutunun, sistemin sanal bellek PageSize değerine eşit olduğunu doğrular.
 
-## <a name="example"></a>Örnek
+## <a name="example-static_assert-at-block-scope"></a>Örnek: `static_assert` blok kapsamında
 
 ```cpp
 #include <sys/param.h> // defines PAGESIZE

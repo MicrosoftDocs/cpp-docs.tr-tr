@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - function templates overload resolution
 ms.assetid: a2918748-2cbb-4fc6-a176-e256f120bee4
-ms.openlocfilehash: d96046c629e812e342ce86b850b6d52a57094997
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7b7e374328b6d234426d8263e4c6655191133700
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188447"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008897"
 ---
 # <a name="overload-resolution-of-function-template-calls"></a>İşlev Şablonu Çağrılarının Aşırı Yük Çözümü
 
 Bir işlev şablonu aynı adda şablon olmayan işlevleri aşırı yükleyebilir. Bu senaryoda, işlev çağrıları öncelikle, benzersiz bir özelleşmeye sahip işlev şablonunu örneklemek için şablon bağımsız değişken kesintisi kullanılarak çözümlenir. Şablon bağımsız değişkeni kesintisi başarısız olursa, diğer işlev aşırı yüklemeleri çağrıyı çözümlemek için kabul edilir. Aday kümesi olarak da bilinen bu diğer aşırı yüklemeler, şablon olmayan işlevleri ve diğer örneklenmiş işlev şablonlarını içerir. Şablon bağımsız değişkeni kesintisi başarılı olursa oluşturulan işlev, en iyi eşleşmeyi tespit etmek için diğer işlevlerle karşılaştırılır ve aşırı yükleme çözümlemesi kurallarını takip edin. Daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](function-overloading.md).
 
-## <a name="example"></a>Örnek
+## <a name="example-choose-a-nontemplate-function"></a>Örnek: şablon olmayan bir işlev seçin
 
-Şablon olmayan bir işlev, bir şablon işlevi ile eşit derecede iyi bir eşleşmedir, aşağıdaki örnekte `f(1, 1)` olduğu gibi şablon olmayan işlev seçilir (şablon bağımsız değişkenleri açıkça belirtilmediği sürece).
+Şablon olmayan bir işlev, şablon işleviyle eşit derecede iyi bir eşleşmedir, aşağıdaki örnekteki çağrıda olduğu gibi şablon olmayan işlev seçilir (şablon bağımsız değişkenleri açıkça belirtilmediği sürece) `f(1, 1)` .
 
 ```cpp
 // template_name_resolution9.cpp
@@ -48,7 +48,7 @@ void f(T1, T2)
 void f(T1, T2)
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-exact-match-template-function-preferred"></a>Örnek: tam eşleştirme şablonu işlevi tercih edilir
 
 Sonraki örnekte, şablon olmayan işlev bir dönüştürme gerektiriyorsa, tam olarak eşleşen şablon işlevinin tercih edildiği gösterilmektedir.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-ms.openlocfilehash: e279184322c239e7768eb8fd4321ee451b2cb94c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6cd2ec4e22d94c42432a1fc3e39afd5540302d22
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213235"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008206"
 ---
 # `selectany`
 
@@ -20,7 +20,7 @@ ms.locfileid: "87213235"
 
 Derleyiciye, belirtilen genel veri öğesinin (değişken veya nesne) bir seçim-any COMDAT (paketlenmiş bir işlev) olduğunu söyler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`__declspec( selectany )`***bildirimci*
 
@@ -37,7 +37,7 @@ Genel veri öğesi, normalde bir EXE veya DLL projesinde yalnızca bir kez başl
 > [!NOTE]
 > **`selectany`** yalnızca dışarıdan görünür olan genel veri öğelerinin gerçek başlatmasına uygulanabilir.
 
-## <a name="example"></a>Örnek
+## <a name="example-selectany-attribute"></a>Örnek: `selectany` öznitelik
 
 Bu kod, özniteliğinin nasıl kullanılacağını gösterir **`selectany`** :
 
@@ -71,7 +71,7 @@ int i;
 __declspec(selectany) X x(1);
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-use-selectany-attribute-to-ensure-data-comdat-folding"></a>Örnek: `selectany` VERI COMDAT katlamasını sağlamak için özniteliği kullanın
 
 Bu kod, **`selectany`** bağlayıcı seçeneğini de kullandığınızda VERI COMDAT katlamasını sağlamak için özniteliğinin nasıl kullanılacağını gösterir [`/OPT:ICF`](../build/reference/opt-optimizations.md) . Verilerin **`selectany`** **`const`** (salt okunur) bir bölüm ile işaretlenmiş ve yerleştirilmiş olması gerektiğini unutmayın. Salt okunurdur bölümünü açıkça belirtmeniz gerekir.
 
@@ -91,4 +91,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [`__declspec`](../cpp/declspec.md)<br/>
-[Anahtar sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

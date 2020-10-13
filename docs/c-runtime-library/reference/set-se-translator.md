@@ -26,18 +26,18 @@ helpviewer_keywords:
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-ms.openlocfilehash: f1c9446f9c3f0d637ea53d54584258959677b339
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9de0c62b9e9a0bca0753d31ef64396e00c379253
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232423"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008627"
 ---
 # <a name="_set_se_translator"></a>_set_se_translator
 
 Win32 özel durumlarını (C yapılandırılmış özel durumlar) C++ ile yazılmış özel durumlara çevirmek için iş parçacığı başına geri çağırma işlevini ayarlayın.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 _se_translator_function _set_se_translator(
@@ -84,7 +84,7 @@ Yönetilen koddan (/clr ile derlenen kod) veya karma yerel ve yönetilen kodla *
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-## <a name="example"></a>Örnek
+## <a name="example-catch-__try-exception-error"></a>Örnek: Catch __try özel durum hatası
 
 Bu örnek, yapılandırılmış bir özel durum Çeviricisi ayarlamak ve bir RAMPADAKI eski bir sınıfı geri yüklemek için çağrıları sarmalar `Scoped_SE_Translator` . Bu sınıf, kapsama özgü çeviriciyi tek bir bildirim olarak tanıtmanıza imkan tanır. Sınıf yıkıcısı, denetim kapsamdan ayrıldığında orijinal çeviriciyi geri yükler.
 
@@ -157,7 +157,7 @@ In __finally
 Caught a __try exception, error c0000094.
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-catch-se_exception-error"></a>Örnek: Catch SE_Exception hatası
 
 **_Set_se_translator** tarafından sağlanan işlevsellik yönetilen kodda kullanılamaz olsa da, yerel kod kullanılarak belirtilmiş olduğu sürece yerel kod **/clr** anahtarı altında bir derlemede olsa bile bu eşlemeyi yerel kodda kullanmak mümkündür `#pragma unmanaged` . Eşlenen yönetilen kodda yapılandırılmış bir özel durum oluşturulursa, özel durumu oluşturan ve işleyen kodun işaretlenmesi gerekir `#pragma unmanaged` . Aşağıdaki kodda olası bir kullanım gösterilmektedir. Daha fazla bilgi için bkz. [pragma yönergeleri ve __pragma anahtar sözcüğü](../../preprocessor/pragma-directives-and-the-pragma-keyword.md).
 

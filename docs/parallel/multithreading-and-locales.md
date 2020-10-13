@@ -7,35 +7,35 @@ helpviewer_keywords:
 - threading [C++], locales
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-ms.openlocfilehash: c12a3fa1922db7a1ec0a7bcd43ddf09000d97961
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 82b410c592e5b68737514dda5a864c7bd15f6dc3
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62213257"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008585"
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 
-Hem C Çalışma Zamanı Kitaplığı hem de C++ Standart Kitaplığı programınızın yerel ayarı değiştirmek için destek sağlar. Bu konu, çok iş parçacıklı bir uygulamada hem kitaplıkların yerel ayar işlevselliği kullanıldığında ortaya çıkan sorunları açıklar.
+C çalışma zamanı kitaplığı ve C++ standart kitaplığı, programınızın yerel ayarını değiştirmek için destek sağlar. Bu konuda, çok iş parçacıklı bir uygulamada her iki kütüphaneden yerel ayar işlevselliği kullanılırken ortaya çıkan sorunlar ele alınmaktadır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C çalışma zamanı kitaplığı ile kullanarak birden çok iş parçacıklı uygulamalar oluşturabilirsiniz `_beginthread` ve `_beginthreadex` işlevleri. Bu konu, yalnızca bu işlevler kullanılarak oluşturulmuş birden çok iş parçacıklı uygulamalar kapsar. Daha fazla bilgi için [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md).
+C çalışma zamanı kitaplığı ile ve işlevlerini kullanarak çok iş parçacıklı uygulamalar oluşturabilirsiniz `_beginthread` `_beginthreadex` . Bu konu yalnızca, bu işlevler kullanılarak oluşturulan çok iş parçacıklı uygulamaları içerir. Daha fazla bilgi için bkz. [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md).
 
-C Çalışma Zamanı Kitaplığı'nı kullanarak yerel ayarı değiştirmek için kullanın [setlocale](../preprocessor/setlocale.md) işlevi. Visual C++ önceki sürümlerinde, bu işlev her zaman uygulamanın tamamı boyunca Yereli değiştirirsiniz. Bir iş parçacığı başına temelinde yerel ayar için şimdi desteği yoktur. Bu yapılır kullanarak [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) işlevi. Belirtmek için [setlocale](../preprocessor/setlocale.md) yalnızca çağrı geçerli iş parçacığı yerel ayarı değiştirmelisiniz `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` , bir iş parçacığı. Buna karşılık, çağırma `_configthreadlocale(_DISABLE_PER_THREAD_LOCALE)` neden olur, iş parçacığı kullanımı genel yerel ayar ve yapılan tüm çağrıların [setlocale](../preprocessor/setlocale.md) iş parçacığı yerel ayarı açıkça iş parçacığı başına yerel ayar etkinleştirmediniz tüm iş parçacıklarının değiştirir.
+C çalışma zamanı kitaplığını kullanarak yerel ayarı değiştirmek için [setlocale](../preprocessor/setlocale.md) işlevini kullanın. Visual C++ önceki sürümlerinde bu işlev her zaman tüm uygulamanın tamamında yerel ayarı değiştirecektir. İş parçacığı başına temelinde yerel ayarı ayarlamaya yönelik destek artık vardır. Bu, [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) işlevi kullanılarak yapılır. [Setlocale](../preprocessor/setlocale.md) 'in yalnızca geçerli iş parçacığındaki yerel ayarı değiştirmesi gerektiğini belirtmek için `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` Bu iş parçacığını çağırın. Bunun tersine, çağırma, `_configthreadlocale(_DISABLE_PER_THREAD_LOCALE)` iş parçacığının genel yerel ayarı kullanmasına neden olur ve bu iş parçacığında herhangi bir [setlocale](../preprocessor/setlocale.md) çağrısı, iş parçacığı başına yerel ayar olarak açıkça etkinleştirilmemiş tüm iş parçacıklarında yerel ayarı değiştirir.
 
-C++ Çalışma Zamanı Kitaplığı'nı kullanarak yerel ayarı değiştirmek için kullanın [locale sınıfı](../standard-library/locale-class.md). Çağırarak [locale::global](../standard-library/locale-class.md#global) yöntemi açıkça iş parçacığı başına yerel ayar etkinleştirmedi her iş parçacığı yerel ayarı değiştirebilirsiniz. Yerel bir tek iş parçacığı veya bir uygulamanın bir bölümünü değiştirmek için yalnızca bir örneğini oluşturmak bir `locale` nesne iş parçacığı veya bir kod parçası.
+C++ çalışma zamanı kitaplığını kullanarak yerel ayarı değiştirmek için [yerel ayar sınıfını](../standard-library/locale-class.md)kullanın. [Locale:: Global](../standard-library/locale-class.md#global) metodunu çağırarak, iş parçacığı başına yerel ayarı açıkça etkinleştirilmemiş olan her iş parçacığında yerel ayarı değiştirirsiniz. Tek bir iş parçacığında veya bir uygulamanın bir bölümünde yerel ayarı değiştirmek için, `locale` Bu iş parçacığında veya kod bölümünde bir nesnenin örneğini oluşturmanız yeterlidir.
 
 > [!NOTE]
-> Çağırma [locale::global](../standard-library/locale-class.md#global) yerel C++ Standart Kitaplığı ve C çalışma zamanı kitaplığı için değiştirir. Ancak, çağırma [setlocale](../preprocessor/setlocale.md) C çalışma zamanı kitaplığı; C++ Standart Kitaplığı etkilenmez için yalnızca yerel ayarı değiştirir.
+> Çağıran [yerel ayar:: Global](../standard-library/locale-class.md#global) yerel ayarı hem C++ Standart Kitaplığı hem de C çalışma zamanı kitaplığı için değiştirir. Ancak, [setlocale](../preprocessor/setlocale.md) çağrısı yalnızca C çalışma zamanı kitaplığı için yerel ayarı değiştirir; C++ standart kitaplığı etkilenmemektedir.
 
-Aşağıdaki örnekler nasıl kullanılacağını [setlocale](../preprocessor/setlocale.md) işlevi [locale sınıfı](../standard-library/locale-class.md)ve [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) bulunan bir uygulamanın yerel ayarı değiştirmek için işlevi birkaç farklı senaryolar.
+Aşağıdaki örneklerde, birçok farklı senaryoda bir uygulamanın yerel ayarını değiştirmek için [setlocale](../preprocessor/setlocale.md) işlevinin, [locale sınıfının](../standard-library/locale-class.md)ve [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md) işlevinin nasıl kullanılacağı gösterilmektedir.
 
-## <a name="example"></a>Örnek
+## <a name="example-change-locale-with-per-thread-locale-enabled"></a>Örnek: iş parçacığı başına yerel ayar etkinken yerel ayarı değiştirin
 
-Bu örnekte, iki alt iş parçacığı ana iş parçacığı olarak çoğaltılır. Çağırarak ilk iş parçacığı, iş parçacığı, bir iş parçacığı başına yerel ayar sağlayan `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. İkinci iş parçacığının, iş parçacığı B yanı sıra, ana iş parçacığı başına iş parçacığı yerel ayarı etkinleştirmeyin. İş parçacığı yerel ayarı kullanarak değiştirmeye geçer [setlocale](../preprocessor/setlocale.md) C çalışma zamanı kitaplığı işlevi.
+Bu örnekte, ana iş parçacığı iki alt iş parçacığını çoğaltılır. İlk iş parçacığı olan Iş parçacığı A, çağırarak iş parçacığı başına yerel ayara izin vermez `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . İkinci iş parçacığı, Iş parçacığı B ve ana iş parçacığı, iş parçacığı başına yerel ayarı etkinleştirmeyin. Sonra bir iş parçacığı C çalışma zamanı kitaplığının [setlocale](../preprocessor/setlocale.md) işlevini kullanarak yerel ayarı değiştirmeye devam eder.
 
-Bir iş parçacığı etkin iş parçacığı başına yerel ayar yalnızca "Fransızca" yerel ayarı kullanarak bir iş parçacığı Başlangıç'ta C çalışma zamanı kitaplığı işlevleri olduğundan. C çalışma zamanı kitaplığı işlevleri b iş parçacığı ve ana iş parçacığı "C" yerel kullanmaya devam edin. Ayrıca, bu yana [setlocale](../preprocessor/setlocale.md) tüm C++ Standart Kitaplığı nesneleri "C" yerel kullanmaya devam C++ Standart Kitaplığı yerel ayar etkilemez.
+A Iş parçacığında iş parçacığı başına yerel ayar etkin olduğundan, yalnızca C çalışma zamanı kitaplığı "Fransızca" yerel ayarını kullanmaya başlar. B Iş parçacığındaki ve ana iş parçacığındaki C çalışma zamanı kitaplığı işlevleri "C" yerel ayarını kullanmaya devam eder. Ayrıca, [setlocale](../preprocessor/setlocale.md) C++ Standart Kitaplığı yerel ayarını etkilemediğinden, tüm C++ Standart Kitaplığı nesneleri "C" yerel ayarını kullanmaya devam eder.
 
 ```cpp
 // multithread_locale_1.cpp
@@ -130,11 +130,11 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "C"
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-change-global-locale-with-per-thread-locale-enabled"></a>Örnek: genel yerel ayarı iş parçacığı başına yerel ayar etkin olarak değiştirme
 
-Bu örnekte, iki alt iş parçacığı ana iş parçacığı olarak çoğaltılır. Çağırarak ilk iş parçacığı, iş parçacığı, bir iş parçacığı başına yerel ayar sağlayan `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. İkinci iş parçacığının, iş parçacığı B yanı sıra, ana iş parçacığı başına iş parçacığı yerel ayarı etkinleştirmeyin. İş parçacığı yerel ayarı kullanarak değiştirmeye geçer [locale::global](../standard-library/locale-class.md#global) C++ Standart Kitaplığı'nın yöntemi.
+Bu örnekte, ana iş parçacığı iki alt iş parçacığını çoğaltılır. İlk iş parçacığı olan Iş parçacığı A, çağırarak iş parçacığı başına yerel ayara izin vermez `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . İkinci iş parçacığı, Iş parçacığı B ve ana iş parçacığı, iş parçacığı başına yerel ayarı etkinleştirmeyin. Ardından A iş parçacığı, C++ standart kitaplığı 'nın [locale:: Global](../standard-library/locale-class.md#global) metodunu kullanarak yerel ayarı değiştirmeye devam eder.
 
-Bir iş parçacığı etkin iş parçacığı başına yerel ayar yalnızca "Fransızca" yerel ayarı kullanarak bir iş parçacığı Başlangıç'ta C çalışma zamanı kitaplığı işlevleri olduğundan. C çalışma zamanı kitaplığı işlevleri b iş parçacığı ve ana iş parçacığı "C" yerel kullanmaya devam edin. Ancak, bu yana [locale::global](../standard-library/locale-class.md#global) yöntemi değişiklikleri yerel ayarları "Genel", "Fransızca" yerel ayarını kullanarak tüm iş parçacıklarının tüm C++ Standart Kitaplığı nesneleri başlatın.
+A Iş parçacığında iş parçacığı başına yerel ayar etkin olduğundan, yalnızca C çalışma zamanı kitaplığı "Fransızca" yerel ayarını kullanmaya başlar. B Iş parçacığındaki ve ana iş parçacığındaki C çalışma zamanı kitaplığı işlevleri "C" yerel ayarını kullanmaya devam eder. Ancak, [locale:: Global](../standard-library/locale-class.md#global) yöntemi "genel" yerel ayarını değiştirdiği için, tüm iş parçacıklarında tüm C++ standart kitaplık nesneleri "Fransızca" yerel ayarını kullanmaya başlar.
 
 ```cpp
 // multithread_locale_2.cpp
@@ -229,11 +229,11 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-change-locale-without-per-thread-locale-enabled"></a>Örnek: iş parçacığı başına yerel ayar olmadan yerel ayarı değiştirin
 
-Bu örnekte, iki alt iş parçacığı ana iş parçacığı olarak çoğaltılır. Çağırarak ilk iş parçacığı, iş parçacığı, bir iş parçacığı başına yerel ayar sağlayan `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. İkinci iş parçacığının, iş parçacığı B yanı sıra, ana iş parçacığı başına iş parçacığı yerel ayarı etkinleştirmeyin. Daha sonra B iş parçacığı yerel ayarı kullanarak değiştirmeye devam eder [setlocale](../preprocessor/setlocale.md) C çalışma zamanı kitaplığı işlevi.
+Bu örnekte, ana iş parçacığı iki alt iş parçacığını çoğaltılır. İlk iş parçacığı olan Iş parçacığı A, çağırarak iş parçacığı başına yerel ayara izin vermez `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . İkinci iş parçacığı, Iş parçacığı B ve ana iş parçacığı, iş parçacığı başına yerel ayarı etkinleştirmeyin. B iş parçacığı daha sonra C çalışma zamanı kitaplığının [setlocale](../preprocessor/setlocale.md) işlevini kullanarak yerel ayarı değiştirmeye devam eder.
 
-İş parçacığı B etkin iş parçacığı başına yerel ayar olmadığından "Fransızca" yerel ayarını kullanarak C çalışma zamanı kitaplığı işlevleri b iş parçacığı ve ana iş parçacığı başlatın. İş parçacığı bir iş parçacığı başına yerel ayar etkin olduğundan, "C" yerel ayarı kullanmaları için bir iş parçacığı devam C çalışma zamanı kitaplığı işlevleri. Ayrıca, bu yana [setlocale](../preprocessor/setlocale.md) tüm C++ Standart Kitaplığı nesneleri "C" yerel kullanmaya devam C++ Standart Kitaplığı yerel ayar etkilemez.
+B Iş parçacığı için iş parçacığı başına yerel ayar etkin olmadığından, B Iş parçacığında ve ana iş parçacığındaki C çalışma zamanı kitaplığı işlevleri "Fransızca" yerel ayarını kullanmaya başlar. İş parçacığı A 'nın iş parçacığı başına yerel ayarı etkin olduğu için, A Iş parçacığında C çalışma zamanı kitaplığı işlevleri "C" yerel ayarını kullanmaya devam eder. Ayrıca, [setlocale](../preprocessor/setlocale.md) C++ Standart Kitaplığı yerel ayarını etkilemediğinden, tüm C++ Standart Kitaplığı nesneleri "C" yerel ayarını kullanmaya devam eder.
 
 ```cpp
 // multithread_locale_3.cpp
@@ -332,11 +332,11 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "C"
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-change-global-locale-without-per-thread-locale-enabled"></a>Örnek: iş parçacığı başına yerel ayar olmadan genel yerel ayarı değiştirin
 
-Bu örnekte, iki alt iş parçacığı ana iş parçacığı olarak çoğaltılır. Çağırarak ilk iş parçacığı, iş parçacığı, bir iş parçacığı başına yerel ayar sağlayan `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)`. İkinci iş parçacığının, iş parçacığı B yanı sıra, ana iş parçacığı başına iş parçacığı yerel ayarı etkinleştirmeyin. Daha sonra B iş parçacığı yerel ayarı kullanarak değiştirmeye devam eder [locale::global](../standard-library/locale-class.md#global) C++ Standart Kitaplığı'nın yöntemi.
+Bu örnekte, ana iş parçacığı iki alt iş parçacığını çoğaltılır. İlk iş parçacığı olan Iş parçacığı A, çağırarak iş parçacığı başına yerel ayara izin vermez `_configthreadlocale(_ENABLE_PER_THREAD_LOCALE)` . İkinci iş parçacığı, Iş parçacığı B ve ana iş parçacığı, iş parçacığı başına yerel ayarı etkinleştirmeyin. Sonra B iş parçacığı, C++ standart kitaplığı 'nın [locale:: Global](../standard-library/locale-class.md#global) metodunu kullanarak yerel ayarı değiştirmeye devam eder.
 
-İş parçacığı B etkin iş parçacığı başına yerel ayar olmadığından "Fransızca" yerel ayarını kullanarak C çalışma zamanı kitaplığı işlevleri b iş parçacığı ve ana iş parçacığı başlatın. İş parçacığı bir iş parçacığı başına yerel ayar etkin olduğundan, "C" yerel ayarı kullanmaları için bir iş parçacığı devam C çalışma zamanı kitaplığı işlevleri. Ancak, bu yana [locale::global](../standard-library/locale-class.md#global) yöntemi değişiklikleri yerel ayarları "Genel", "Fransızca" yerel ayarını kullanarak tüm iş parçacıklarının tüm C++ Standart Kitaplığı nesneleri başlatın.
+B Iş parçacığı için iş parçacığı başına yerel ayar etkin olmadığından, B Iş parçacığında ve ana iş parçacığındaki C çalışma zamanı kitaplığı işlevleri "Fransızca" yerel ayarını kullanmaya başlar. İş parçacığı A 'nın iş parçacığı başına yerel ayarı etkin olduğu için, A Iş parçacığında C çalışma zamanı kitaplığı işlevleri "C" yerel ayarını kullanmaya devam eder. Ancak, [locale:: Global](../standard-library/locale-class.md#global) yöntemi "genel" yerel ayarını değiştirdiği için, tüm iş parçacıklarında tüm C++ standart kitaplık nesneleri "Fransızca" yerel ayarını kullanmaya başlar.
 
 ```cpp
 // multithread_locale_4.cpp
@@ -442,7 +442,7 @@ unsigned __stdcall RunThreadB(void *params)
 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)<br/>
 [setlocale](../preprocessor/setlocale.md)<br/>
 [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
-[locale](../c-runtime-library/locale.md)<br/>
-[\<clocale >](../standard-library/clocale.md)<br/>
-[\<yerel ayar >](../standard-library/locale.md)<br/>
-[locale Sınıfı](../standard-library/locale-class.md)
+[Ayarlar](../c-runtime-library/locale.md)<br/>
+[\<clocale>](../standard-library/clocale.md)<br/>
+[\<locale>](../standard-library/locale.md)<br/>
+[Locale sınıfı](../standard-library/locale-class.md)

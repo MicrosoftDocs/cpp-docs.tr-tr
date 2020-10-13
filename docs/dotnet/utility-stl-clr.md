@@ -39,18 +39,18 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: 271bc01f5c8fd9dd07bfa03035ae3d0204ebd8e7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: faf7f607f9433fa3e4813957b24220a5e66e1e49
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500592"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008613"
 ---
 # <a name="utility-stlclr"></a>yardımcı program (STL/CLR)
 
 `<cliext/utility>`Şablon sınıfını `pair` ve çeşitli destekleyici şablon işlevlerini tanımlamak için STL/CLR üst bilgisini ekleyin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <utility>
@@ -80,8 +80,6 @@ ms.locfileid: "91500592"
 |İşlev|Açıklama|
 |--------------|-----------------|
 |[make_pair (STL/CLR)](#make_pair)|Değer çiftinden bir çift oluşturun.|
-
-## <a name="members"></a>Üyeler
 
 ## <a name="pair-stlclr"></a><a name="pair"></a> Çift (STL/CLR)
 
@@ -132,7 +130,7 @@ Nesne bir çift değer depolar. Bu şablon sınıfını, iki değeri tek bir nes
 
 İlk Sarmalanan değer.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Value1 first;
@@ -169,7 +167,7 @@ int main()
 
 Sarmalanan ilk değerin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value1 first_type;
@@ -335,7 +333,7 @@ int main()
 
 Sarmalanan ikinci değer.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Value2 second;
@@ -372,7 +370,7 @@ int main()
 
 Sarmalanan ikinci değerin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value2 second_type;

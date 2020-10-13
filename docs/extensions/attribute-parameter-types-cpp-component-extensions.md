@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - custom attributes, parameter types
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
-ms.openlocfilehash: c7b219ddad939aab7d6093787dc2fe4131ccced5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cf33014c455bef145f7b7ec7ee353f27d1157f24
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225169"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008603"
 ---
 # <a name="attribute-parameter-types--ccli-and-ccx"></a>Öznitelik Parametre Türleri (C++/CLI ve C++/CX)
 
@@ -32,7 +32,7 @@ ms.locfileid: "87225169"
 
 - **`wchar_t`**
 
-- **`char*`** or `wchar_t*` veya`System::String*`
+- **`char*`** or `wchar_t*` veya `System::String*`
 
 - `System::Type ^`
 
@@ -40,7 +40,7 @@ ms.locfileid: "87225169"
 
 - **`enum`**
 
-## <a name="example"></a>Örnek
+## <a name="example-attribute-parameter-types"></a>Örnek: öznitelik parametre türleri
 
 ### <a name="code"></a>Kod
 
@@ -65,7 +65,7 @@ ref struct MyStruct {
 };
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-unnamed-arguments-precede-named-arguments"></a>Örnek: adlandırılmamış bağımsız değişkenler adlandırılmış bağımsız değişkenlerden önce gelmeli
 
 ### <a name="description"></a>Açıklama
 
@@ -99,7 +99,7 @@ ref class ClassC {};   // Positional argument
 ref class ClassD {};   // Positional and named
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-one-dimensional-array-attribute-parameter"></a>Örnek: tek boyutlu dizi öznitelik parametresi
 
 ### <a name="description"></a>Açıklama
 

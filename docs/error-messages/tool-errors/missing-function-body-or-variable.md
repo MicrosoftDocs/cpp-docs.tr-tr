@@ -5,18 +5,18 @@ helpviewer_keywords:
 - function body
 - variables, missing
 ms.assetid: 1a88d809-b14f-46a4-97c4-3e48beb418f2
-ms.openlocfilehash: 6d2ef22b90009d320485fb6fe3f7e308ae05c442
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 835bd968035b355ded9636d446d44d4ce069c248
+ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92008882"
 ---
 # <a name="missing-function-body-or-variable"></a>Eksik İşlev Gövdesi veya Değişken
 
 Yalnızca bir işlev prototipi ile derleyici hatasız devam edebilir, ancak hiçbir işlev kodu veya değişken alanı ayrıldığından bağlayıcı bir adrese çağrıyı çözemez. Bağlayıcının çözümlenmesi gereken işleve bir çağrı oluşturana kadar bu hatayı görmezsiniz.
 
-## <a name="example"></a>Örnek
+## <a name="example-call-to-an-undefined-function"></a>Örnek: tanımsız bir işleve çağrı
 
 Prototip derleyicinin var olduğunu düşünmesine izin verdiğinden Main içindeki işlev çağrısı LNK2019 neden olur.  Bağlayıcı, olduğunu bulur.
 
@@ -29,9 +29,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-call-to-an-implemented-function"></a>Örnek: uygulanan bir işleve çağrı
 
-' C++De, sınıf tanımında yalnızca bir prototip değil, bir sınıf için belirli bir işlevin uygulamasını eklediğinizden emin olun. Sınıfı üstbilgi dosyasının dışında tanımlıyorsanız, işlevden önce sınıf adını eklediğinizden emin olun (`Classname::memberfunction`).
+C++ ' da, sınıf tanımında yalnızca bir prototipi değil, bir sınıf için belirli bir işlevin uygulamasını eklediğinizden emin olun. Sınıfı üstbilgi dosyasının dışında tanımlıyorsanız, işlevden () önce sınıf adını eklediğinizden emin olun `Classname::memberfunction` .
 
 ```cpp
 // LNK2019_MFBV_2.cpp
@@ -51,4 +51,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Araçları Hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)
+[Bağlayıcı Araçları hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)
