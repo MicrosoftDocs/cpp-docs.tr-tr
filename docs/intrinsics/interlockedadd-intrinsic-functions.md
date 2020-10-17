@@ -26,12 +26,12 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: efe1444273f17c8f0544d2c51b98923169032e61
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: c611a22e696b9dda0c6910cd4aac84399cc7d20a
+ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683903"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92135560"
 ---
 # <a name="_interlockedadd-intrinsic-functions"></a>_InterlockedAdd iç işlevler
 
@@ -39,7 +39,7 @@ ms.locfileid: "90683903"
 
 Bu işlevler, birden fazla iş parçacığının paylaşılan bir değişkene erişimi olduğunda işlemin başarılı bir şekilde tamamlanmasını sağlayan atomik bir ekleme yapar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 long _InterlockedAdd(
@@ -109,7 +109,7 @@ Veya sonekleri olan bu işlevlerin sürümleri, `_acq` bir veya daha fazla `_rel
 
 Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
-## <a name="examples"></a>Örnekler
+## <a name="example-_interlockedadd"></a>Örnek: `_InterlockedAdd`
 
 ```cpp
 // interlockedadd.cpp
@@ -130,11 +130,13 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output-_interlockedadd"></a>Çıktıların `_InterlockedAdd`
 
 ```Output
 0xffffff00 0xff0000 0xffffff00
 ```
+
+## <a name="example-_interlockedadd64"></a>Örnek: `_InterlockedAdd64`
 
 ```cpp
 // interlockedadd64.cpp
@@ -158,7 +160,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output-_interlockedadd64"></a>Çıktıların `_InterlockedAdd64`
 
 ```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff

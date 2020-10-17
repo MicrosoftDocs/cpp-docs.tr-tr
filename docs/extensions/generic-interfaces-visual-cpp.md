@@ -6,12 +6,12 @@ helpviewer_keywords:
 - generic interfaces
 - interfaces, generic [C++}
 ms.assetid: f3da788a-ba83-4db7-9dcf-9b95a8fb9d1a
-ms.openlocfilehash: f5a74eaafa7ff348079ec367a7c2318f86081f15
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61ab514d244c8b41d467d382fa97e30556ccbb32
+ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218032"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92135534"
 ---
 # <a name="generic-interfaces-ccli"></a>Genel Arabirimler (C++/CLI)
 
@@ -23,7 +23,7 @@ Açık arabirim üyesi uygulamalar, basit arabirim türleriyle aynı şekilde ol
 
 Arabirimler hakkında daha fazla bilgi için bkz. [interface class](interface-class-cpp-component-extensions.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [attributes] generic <class-key type-parameter-identifier[, ...]>
@@ -36,7 +36,7 @@ Arabirimler hakkında daha fazla bilgi için bkz. [interface class](interface-cl
 Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikler**.
 
 *sınıf anahtarı*<br/>
-**`class`** veya**`typename`**
+**`class`** veya **`typename`**
 
 *tür-parametre tanımlayıcıları*<br/>
 Virgülle ayrılmış tanımlayıcılar listesi.
@@ -59,7 +59,7 @@ Arabirim üyelerinin bildirimleri.
 *Bildirimciler*<br/>
 Seçim Bu türe göre değişkenlerin bildirimleri.
 
-## <a name="example"></a>Örnek
+## <a name="example-how-to-declare-and-instantiate-a-generic-interface"></a>Örnek: genel bir arabirim bildirme ve oluşturma
 
 Aşağıdaki örnekte, genel bir arabirimin nasıl bildirildiği ve örneklendirileceğini gösterilmektedir. Örnekte, genel arabirim `IList<ItemType>` bildirilmiştir. Daha sonra iki genel sınıf `List1<ItemType>` ve `List2<ItemType>` farklı uygulamalarla uygulanır.
 
@@ -236,7 +236,7 @@ Array List
 List2
 ```
 
-## <a name="example"></a>Örnek
+## <a name="example-declare-a-generic-interface"></a>Örnek: genel arabirim bildirme
 
 Bu örnek, genel bir arabirim, `IMyGenIface` ve genel olmayan iki arabirim bildirir ve bu `IMySpecializedInt` `ImySpecializedString` specialize `IMyGenIface` . Bu iki özel arabirim daha sonra iki sınıf tarafından uygulanır `MyIntClass` ve `MyStringClass` . Örnek, genel arabirimlerin nasıl özelleştirilecek, genel ve genel olmayan arabirimlerin nasıl oluşturulacağı ve arabirimlerde açıkça uygulanan üyelerin nasıl çağrılacağını gösterir.
 

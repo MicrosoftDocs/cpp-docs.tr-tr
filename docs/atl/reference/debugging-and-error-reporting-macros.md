@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 2bcdfb474ee852e55bd54f1b125716e7785f28be
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6b969cfb841a9a95d695eacc0a25f9dd378379ac
+ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833484"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92135547"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 
@@ -94,7 +94,7 @@ Sıfır olmayan veya 0 olarak değerlendirilen ifade (işaretçiler dahil).
 
 Hata ayıklama yapılarında, ATLASSERT, *Boolean* değerlendirir ve sonuç false olduğunda bir hata ayıklama raporu oluşturur.
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atldef. h
 
@@ -131,7 +131,7 @@ ATLENRELEN ve ATLASSERT arasındaki fark, ATLENEMIN 'in sürüm yapılarında ve
 
 [!code-cpp[NVC_ATL_Utilities#108](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_1.cpp)]
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** AFX. h
 
@@ -156,7 +156,7 @@ Yayın yapıları ' nda, yalnızca E_NOTIMPL döndürür.
 
 [!code-cpp[NVC_ATL_Utilities#127](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_2.cpp)]
 
-## <a name="requirements"></a>Gereksinimler
+### <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atltrace. h
 
@@ -226,7 +226,7 @@ ATLTRACE2 öğesinin kısa biçimi, hata ayıklayıcının çıkış penceresine
 
 ### <a name="atl-trace-flags"></a>ATL Izleme bayrakları
 
-|ATL kategorisi|Açıklama|
+|ATL kategorisi|Description|
 |------------------|-----------------|
 |`atlTraceGeneral`|Tüm ATL uygulamalarındaki raporlar. Varsayılan.|
 |`atlTraceCOM`|COM yöntemleriyle ilgili raporlar.|
@@ -244,7 +244,7 @@ ATLTRACE2 öğesinin kısa biçimi, hata ayıklayıcının çıkış penceresine
 
 ### <a name="mfc-trace-flags"></a>MFC Izleme bayrakları
 
-|MFC kategorisi|Açıklama|
+|MFC kategorisi|Description|
 |------------------|-----------------|
 |`traceAppMsg`|Genel amaçlı, MFC iletileri. Her zaman önerilir.|
 |`traceDumpContext`|[CDumpContext](../../mfc/reference/cdumpcontext-class.md)iletileri.|

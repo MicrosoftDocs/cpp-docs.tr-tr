@@ -8,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_compute_domain class
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-ms.openlocfilehash: 3b8179e8e92665fa6482bd092504af71aa0106f0
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 09418991e805e494c1d79ef31980bbec66a2e172
+ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126467"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92135573"
 ---
 # <a name="invalid_compute_domain-class"></a>invalid_compute_domain Sınıfı
 
 Çalışma zamanı [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each) çağrı sitesinde belirtilen işlem etki alanını kullanarak bir çekirdek başlatamadığınızda oluşturulan özel durum.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class invalid_compute_domain : public runtime_exception;
@@ -47,11 +47,11 @@ class invalid_compute_domain : public runtime_exception;
 
 **Ad alanı:** Zamanlı
 
-## <a name="ctor"></a>invalid_compute_domain
+## <a name="invalid_compute_domain"></a><a name="ctor"></a> invalid_compute_domain
 
 Sınıfının yeni bir örneğini başlatır.
 
-## <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 explicit invalid_compute_domain(
@@ -67,8 +67,8 @@ Hatanın açıklaması.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`invalid_compute_domain` sınıfının bir örneği
+Sınıfının bir örneği `invalid_compute_domain`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

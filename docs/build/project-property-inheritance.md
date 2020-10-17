@@ -4,12 +4,12 @@ description: Özellik devralma özelliği yerel (MSBuild) Visual Studio C++ proj
 ms.date: 02/21/2020
 helpviewer_keywords:
 - C++ projects, property inheritance
-ms.openlocfilehash: 4740c479c6cc7c877fd72b7828a8e4811826de6c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 00afe982156597aa166c2c5de98f3027e3f84bdb
+ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328472"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099712"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio projelerinde Özellik devralma
 
@@ -17,17 +17,35 @@ Visual Studio Native proje sistemi MSBuild 'i temel alır. MSBuild, her türlü 
 
 ## <a name="the-vcxproj-file-props-files-and-targets-files"></a>. Vcxproj dosyası,. props dosyaları ve. targets dosyaları
 
-Proje özellikleri doğrudan proje dosyasında (*`.vcxproj`*) veya proje dosyasının içeri aktardığı ve varsayılan değerleri *`.targets`* tedarik *`.props`* eden dosya veya dosyalar içinde depolanır. Visual Studio 2015 için bu dosyalar içinde *`\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140`* bulunur. Visual Studio 2017 için bu dosyalar konumunda *`\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\VC\VCTargets`* bulunur, burada *`<edition>`* Visual Studio sürümü yüklüdür. Visual Studio 2019 ' de bu dosyalar içinde *`\Program Files (x86)\Microsoft Visual Studio\2019\<edition>\MSBuild\Microsoft\VC\v160`* bulunur. Özellikler ayrıca kendi projenize ekleyebileceğiniz herhangi bir *`.props`* özel dosyada depolanır. Bu dosyaları el ile düzenlememenizi kesinlikle öneririz. Bunun yerine, MSBuild 'in derinlemesine bir şekilde anlaşılmadığı müddetçe, özellikle Devralmada yer alan tüm özellikleri değiştirmek için IDE 'deki özellik sayfalarını kullanın.
+::: moniker range="vs-2015"
 
-Daha önce gösterildiği gibi, aynı yapılandırma için aynı özelliğe bu farklı dosyalarda farklı bir değer atanabilir. Bir proje oluşturduğunuzda, MSBuild motoru proje dosyasını ve tüm içeri aktarılan dosyaları iyi tanımlanmış bir sırayla değerlendirir (aşağıda açıklanmıştır). Her dosya değerlendirildiğinde, bu dosyada tanımlanan özellik değerleri varolan değerleri geçersiz kılar. Belirtilmemiş tüm değerler daha önce değerlendirilen dosyalardan devralınır. Özellik sayfaları ile bir özelliği ayarladığınızda, bunu ayarladığınız yere dikkat etmeniz de önemlidir. Bir *`.props`* dosya içinde bir özelliği "X" olarak ayarlarsanız, ancak özellik proje dosyasında "y" olarak ayarlanırsa proje, özelliği "y" olarak ayarlanmış olarak derler. Aynı özellik bir proje öğesinde, örneğin bir *`.cpp`* dosya gibi "z" olarak ayarlanırsa, MSBuild altyapısı "z" değerini kullanacaktır.
+Proje Özellikleri birkaç dosyada depolanır. Bazıları doğrudan *`.vcxproj`* Proje dosyasında depolanır. Diğerleri *`.targets`* *`.props`* , proje dosyasının içe aktardığı ve varsayılan değerleri tedarik eden diğer veya dosyalardan gelir. Visual Studio 2015 proje dosyalarını, temel dizin altında yerel ayara özgü bir klasörde bulabilirsiniz *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\v140`* .
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Proje Özellikleri birkaç dosyada depolanır. Bazıları doğrudan *`.vcxproj`* Proje dosyasında depolanır. Diğerleri *`.targets`* *`.props`* , proje dosyasının içe aktardığı ve varsayılan değerleri tedarik eden diğer veya dosyalardan gelir. Visual Studio 2017 proje dosyalarını, temel dizin altında yerel ayara özgü bir klasörde bulabilirsiniz *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Proje Özellikleri birkaç dosyada depolanır. Bazıları doğrudan *`.vcxproj`* Proje dosyasında depolanır. Diğerleri *`.targets`* *`.props`* , proje dosyasının içe aktardığı ve varsayılan değerleri tedarik eden diğer veya dosyalardan gelir. Visual Studio proje dosyalarını, temel dizin altında yerel ayara özgü bir klasörde bulabilirsiniz *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`* . , `<version>` Visual Studio 'nun sürümüne özeldir. *`v160`* Visual Studio 2019 içindir.
+
+::: moniker-end
+
+Özellikler ayrıca *`.props`* kendi projenize ekleyebileceğiniz herhangi bir özel dosyada depolanır. Bu dosyaları el *ile düzenlememenizi* kesinlikle öneririz. Bunun yerine, MSBuild ve dosyaları ayrıntılı bir şekilde anlayamadığınız müddetçe, özellikle de Devralmada yer alan tüm özellikleri değiştirmek için IDE 'deki özellik sayfalarını kullanın *`.vcxproj`* .
+
+Daha önce gösterildiği gibi, aynı yapılandırma için aynı özelliğe bu farklı dosyalarda farklı bir değer atanabilir. Bir proje oluşturduğunuzda, MSBuild motoru proje dosyasını ve içeri aktarılan tüm dosyaları daha sonra açıklanmış bir sırayla değerlendirir. Her dosya değerlendirildiğinde, bu dosyada tanımlanan özellik değerleri varolan değerleri geçersiz kılar. Belirtilmemiş tüm değerler daha önce değerlendirilen dosyalardan devralınır. Özellik sayfaları ile bir özelliği ayarladığınızda, bunu ayarladığınız yere dikkat etmeniz de önemlidir. Bir dosya içinde bir özelliği "X" olarak ayarlarsanız *`.props`* , ancak özellik proje dosyasında "y" olarak ayarlanırsa proje, özelliği "y" olarak ayarlanmış olarak derler. Aynı özellik bir proje öğesinde, örneğin bir dosya gibi "Z" olarak ayarlanırsa *`.cpp`* , MSBuild altyapısı "z" değerini kullanacaktır.
 
 Temel devralma ağacı şöyledir:
 
-1. MSBuild CPP araç takımının varsayılan ayarları (.. *`.vcxproj`* Dosya tarafından içeri aktarılan \Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.cpp.default.props..)
+1. MSBuild CPP araç takımının varsayılan ayarları ( *`Microsoft.Cpp.Default.props`* dosya tarafından içeri aktarılan taban dizinindeki dosya *`.vcxproj`* .)
 
 1. Özellik sayfaları
 
-1. *`.vcxproj`* dosyasýný. (Varsayılan ve özellik sayfası ayarlarını geçersiz kılabilir.)
+1. *`.vcxproj`* dosyasýný. (Bu dosya varsayılan ve özellik sayfası ayarlarını geçersiz kılabilir.)
 
 1. Öğelere ait meta veriler
 
@@ -44,13 +62,13 @@ MSBuild hakkında bilgi sahibi olmadığınız takdirde genişletilmiş proje do
 
 1. IDE 'de gösterilmeyen temel proje özellikleri.
 
-1. Bazı temel *`Microsoft.cpp.default.props`*, araç takımı bağımsız özelliklerini tanımlayan öğesinin içeri aktarma işlemi.
+1. *`Microsoft.cpp.default.props`* Bazı temel, araç takımı bağımsız özelliklerini tanımlayan öğesinin içeri aktarma işlemi.
 
-1. **Yapılandırma genel** sayfasında **platform araç takımı** ve **Proje** varsayılan özellikleri olarak gösterilen genel yapılandırma özellikleri. Bu özellikler, sonraki adımda hangi araç takımının ve iç özellik sayfalarının *`Microsoft.cpp.props`* içeri aktarılacağını belirlenir.
+1. **Yapılandırma genel** sayfasında **platform araç takımı** ve **Proje** varsayılan özellikleri olarak gösterilen genel yapılandırma özellikleri. Bu özellikler, sonraki adımda hangi araç takımının ve iç özellik sayfalarının içeri aktarılacağını belirlenir *`Microsoft.cpp.props`* .
 
-1. ' Nin *`Microsoft.cpp.props`*, proje varsayılanlarını büyük bir kısmını ayarlayan içeri aktarma.
+1. ' Nin *`Microsoft.cpp.props`* , proje varsayılanlarını büyük bir kısmını ayarlayan içeri aktarma.
 
-1. Dosyalar dahil olmak üzere *`.user`* tüm özellik sayfalarını içeri aktarma. Bu özellik sayfaları **Platformaraç takımı** ve **Proje** varsayılan özellikleri dışında her şeyi geçersiz kılabilir.
+1. Dosyalar dahil olmak üzere tüm özellik sayfalarını içeri aktarma *`.user`* . Bu özellik sayfaları **Platformaraç takımı** ve **Proje** varsayılan özellikleri dışında her şeyi geçersiz kılabilir.
 
 1. Proje yapılandırma özelliklerinin geri kalanı. Bu değerler özellik sayfalarında ayarlanmış değerleri geçersiz kılabilir.
 
@@ -62,7 +80,7 @@ Daha fazla bilgi için bkz. [MSBuild özellikleri](/visualstudio/msbuild/msbuild
 
 Yapılandırma, yalnızca bir ad verilen rastgele bir özellik grubudur. Visual Studio hata ayıklama ve sürüm yapılandırması sağlar. Her bir hata ayıklama derlemesi veya yayın derlemesi için çeşitli özellikleri uygun şekilde ayarlar. Özel yapılandırma tanımlamak için **Configuration Manager** kullanabilirsiniz. Bu, belirli bir yapı türü için özellikleri gruplamak için kullanışlı bir yoldur.
 
-Yapı yapılandırmalarının daha iyi bir fikir edinmek için **Özellik Yöneticisi**açın. Ayarlarınıza bağlı olarak **görünüm > Özellik Yöneticisi** veya **> diğer Windows > Özellik Yöneticisi**seçeneklerini belirleyerek açabilirsiniz. **Özellik Yöneticisi** , projedeki her yapılandırma ve platform çifti için düğümler içerir. Bu düğümlerin her biri, ilgili yapılandırma için bazı belirli özellikleri*`.props`* ayarlamış Özellik sayfaları (dosyalar) düğümlerdir.
+Yapı yapılandırmalarının daha iyi bir fikir edinmek için **Özellik Yöneticisi**açın. Ayarlarınıza bağlı olarak **görünüm > Özellik Yöneticisi** veya **> diğer Windows > Özellik Yöneticisi**seçeneklerini belirleyerek açabilirsiniz. **Özellik Yöneticisi** , projedeki her yapılandırma ve platform çifti için düğümler içerir. Bu düğümlerin her biri, ilgili *`.props`* yapılandırma için bazı belirli özellikleri ayarlamış Özellik sayfaları (dosyalar) düğümlerdir.
 
 ![Özellik Yöneticisi](media/property-manager.png "Özellik Yöneticisi")
 
