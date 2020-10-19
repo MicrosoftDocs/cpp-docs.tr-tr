@@ -1,18 +1,18 @@
 ---
 title: C Anahtar Sözcükleri
 description: Standart C ve Microsoft C derleyicisi uzantılarında anahtar sözcükler.
-ms.date: 10/12/2020
+ms.date: 10/15/2020
 helpviewer_keywords:
 - keywords [C]
 - redefining keywords
 - Microsoft-specific keywords
 ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: cb255e1d7ce6bc15bf13bc1e3152bc3464ea5ec2
-ms.sourcegitcommit: 651348f8cd92ab0d52f09e9225a7eb41562559db
+ms.openlocfilehash: 24981c8d70cb56b4578fd905a30ccc57eaa83d45
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92059801"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176228"
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 
@@ -130,7 +130,7 @@ Aşağıdaki anahtar sözcükler ve özel tanımlayıcılar, Microsoft C derleyi
 
 <sup>5</sup> önceki sürümlerle uyumluluk için, bu anahtar sözcükler hem iki önde gelen alt çizgi ile hem de Microsoft uzantıları etkinleştirildiğinde tek başına bir alt çizgi ile kullanılabilir.
 
-<sup>6</sup> <onay. h> dahil edilmediğinden Microsoft Visual C derleyicisi **`static_assert`** C11 **`_Static_assert`** anahtar sözcüğüne eşlenir.
+<sup>6</sup> <onayı. h> eklemezseniz, Microsoft Visual C derleyicisi **`static_assert`** C11 **`_Static_assert`** anahtar sözcüğüne eşlenir.
 
 Microsoft uzantıları varsayılan olarak etkinleştirilmiştir. Taşınabilir kod oluşturmaya yardımcı olmak için, derleme sırasında [/za \( Disable Language Extensions](../build/reference/za-ze-disable-language-extensions.md) seçeneğini belirterek Microsoft uzantılarını devre dışı bırakabilirsiniz. Bu seçeneği kullandığınızda, Microsoft 'a özgü bazı anahtar sözcükler devre dışı bırakılır.
 

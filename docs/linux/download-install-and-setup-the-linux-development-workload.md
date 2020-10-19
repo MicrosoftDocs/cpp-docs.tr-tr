@@ -3,12 +3,12 @@ title: Visual Studio 'da C++ Linux iş yükünü yükler
 description: Visual Studio 'da C++ için Linux iş yükünü indirme, yükleme ve ayarlama.
 ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 3f8e6eb8285652078e5f26ca58601bc6ccfa80d1
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 1a1b42927d440d1cde847fd1c1b6593e87a3824a
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040984"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176279"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
@@ -157,7 +157,7 @@ Fedora çalıştıran hedef makine **DNF** paket yükleyicisini kullanır. **Ope
 
 Artık bir Linux projesi oluşturmaya veya açmaya ve hedef sistemde çalışacak şekilde yapılandırmaya hazırsınız. Daha fazla bilgi için bkz.
 
-- [Yeni Linux projesi oluşturma](create-a-new-linux-project.md)
+- [Yeni bir Linux MSBuild C++ projesi oluşturma](create-a-new-linux-project.md)
 - [Linux CMake projesi yapılandırma](cmake-linux-project.md)
 
 ::: moniker-end

@@ -1,14 +1,14 @@
 ---
 title: Visual Studio 'da Linux MSBuild C++ projesi oluşturma
-ms.date: 08/04/2020
+ms.date: 10/15/2020
 description: Visual Studio 'da yeni bir MSBuild tabanlı Linux projesi oluşturun.
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-ms.openlocfilehash: 559a868ebdea7e3b835a82c31849d0e2fdeaa6c9
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: dddb9dbdee4cefc58a2bd5ccefa493b25e1c9f24
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686697"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176295"
 ---
 # <a name="create-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio 'da Linux MSBuild C++ projesi oluşturma
 
@@ -33,12 +33,12 @@ Visual Studio 2017 ' de yeni bir Linux projesi oluşturmak için aşağıdaki ad
 
    ![Visual C Plus ile yeni proje iletişim kutusunu gösteren ekran görüntüsü ve > platformlar arası > Linux seçili, tüm proje türleri dışarı ve adı ve konum metin kutuları de çağrılır.](media/newproject.png)
 
-   | Proje türü | Description |
+   | Proje türü | Açıklama |
    | ------------ | --- |
-   | **Yanıp sönme (Raspberry)**           | Bir Raspberry PI cihazı için hedeflenen ve bir LED 'in yanıp sönmesini sağlayan örnek kod içeren proje |
+   | **Yanıp sönme (Raspberry)** | Bir Raspberry PI cihazı için hedeflenen ve bir LED 'in yanıp sönmesini sağlayan örnek kod içeren proje |
    | **Konsol uygulaması (Linux)** | Bir Linux bilgisayar için hedeflenen ve metni konsola veren örnek kod içeren proje |
-   | **Boş proje (Linux)**       | Örnek kod olmadan herhangi bir Linux bilgisayar için hedeflenen proje |
-   | **Makefile projesi (Linux)**    | Standart makefile derleme sistemi kullanılarak oluşturulan tüm Linux bilgisayarları için hedeflenen proje |
+   | **Boş proje (Linux)** | Örnek kod olmadan herhangi bir Linux bilgisayar için hedeflenen proje |
+   | **Makefile projesi (Linux)** | Standart makefile derleme sistemi kullanılarak oluşturulan tüm Linux bilgisayarları için hedeflenen proje |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
@@ -50,25 +50,27 @@ Visual Studio 2017 ' de yeni bir Linux projesi oluşturmak için aşağıdaki ad
 
 İlk olarak, Visual Studio için **Linux geliştirme Iş yükünüzün** yüklü olduğundan emin olun. Daha fazla bilgi için bkz. [Linux iş yükünü indirme, yükleme ve ayarlama](download-install-and-setup-the-linux-development-workload.md).
 
-Visual Studio 'da Linux için yeni bir C++ projesi oluşturduğunuzda, bir Visual Studio projesi veya CMake projesi oluşturmayı seçebilirsiniz. Bu makalede, Visual Studio projesinin nasıl oluşturulacağı açıklanır. Genel olarak, açık kaynak kodu içerebilen veya platformlar arası geliştirme için derlemeyi planladığınız yeni projeler için CMake 'i Visual Studio ile kullanmanızı öneririz. CMake projesi ile hem Windows hem de Linux 'ta aynı projeyi oluşturabilir ve hata ayıklayabilirsiniz. Daha fazla bilgi için bkz. [Linux CMake projesi oluşturma ve yapılandırma](cmake-linux-project.md).
+Visual Studio 'da Linux için yeni bir C++ projesi oluşturduğunuzda, bir Visual Studio projesi veya CMake projesi oluşturmayı seçebilirsiniz. Bu makalede, Visual Studio projesinin nasıl oluşturulacağı açıklanır. Genel olarak, açık kaynaklı kod içerebilen veya platformlar arası geliştirme için derlemeyi planladığınız yeni projeler için, Visual Studio ile CMake kullanmanızı öneririz. CMake projesiyle, hem Windows hem de Linux 'ta aynı projeyi oluşturabilir ve hata ayıklayabilirsiniz. Daha fazla bilgi için bkz. [Linux CMake projesi oluşturma ve yapılandırma](cmake-linux-project.md).
 
 Linux için derlemek üzere genişletmek istediğiniz mevcut bir Windows Visual Studio çözümünüz varsa ve CMake bir seçenek değilse, Windows çözümüne, **Paylaşılan öğeler** projesiyle birlikte bir Visual Studio Linux projesi ekleyebilirsiniz. Paylaşılan öğeler projesindeki her iki platform arasında paylaşılan kodu koyun ve Windows ve Linux projelerinden bu projeye bir başvuru ekleyin.
 
-## <a name="to-create-a-new-linux-project"></a>Yeni bir Linux projesi oluşturmak için
+## <a name="create-a-new-linux-project"></a>Yeni Linux projesi oluşturma
 
 Visual Studio 2019 ' de yeni bir Linux projesi oluşturmak için aşağıdaki adımları izleyin:
 
-1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın.
-1. **Dili** **C++** olarak ayarlayın ve "Linux" araması yapın. Oluşturulacak proje türünü seçin ve ardından **İleri**' yi seçin. Bir **ad** ve **konum**girin ve **Oluştur**' u seçin.
+1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın. Yeni proje oluştur iletişim kutusu görüntülenir.
+1. **Şablon ara** metin kutusuna Linux projeleri için kullanılabilir şablonları listelemek için **Linux** girin.
+1. Oluşturulacak proje türünü seçin, örneğin **konsol uygulaması**ve sonra **İleri**' yi seçin. Bir **ad** ve **konum**girin ve **Oluştur**' u seçin.
 
-   ![Arama metin kutusuna, Linux ile yazılan yeni proje Ekle iletişim kutusunun ekran görüntüsü.](media/newproject-vs2019.png)
+   ![Dil açılan menüsü olarak C++ ve platform açılır listesi Linux olarak ayarlanan yeni proje iletişim kutusunun ekran görüntüsü.](media/newproject-vs2019.png)
 
-   | Proje türü | Description |
+   | Proje türü | Açıklama |
    | ------------ | --- |
-   | **Yanıp sönme (Raspberry)**           | Bir Raspberry PI cihazı için hedeflenen ve bir LED 'in yanıp sönmesini sağlayan örnek kod içeren proje |
-   | **Konsol uygulaması (Linux)** | Bir Linux bilgisayar için hedeflenen ve metni konsola veren örnek kod içeren proje |
-   | **Boş proje (Linux)**       | Örnek kod olmadan herhangi bir Linux bilgisayar için hedeflenen proje |
-   | **Makefile projesi (Linux)**    | Standart makefile derleme sistemi kullanılarak oluşturulan tüm Linux bilgisayarları için hedeflenen proje |
+   | **Raspberry PI projesi** | Bir Raspberry PI cihazı için hedeflenen ve bir LED 'in yanıp sönmesini sağlayan örnek kod içeren proje |
+   | **Konsol Uygulaması** | Bir Linux bilgisayar için hedeflenen ve metni konsola veren örnek kod içeren proje |
+   | **Boş Proje** | Örnek kod olmadan herhangi bir Linux bilgisayar için hedeflenen proje |
+   | **Makefile projesi** | Standart makefile derleme sistemi kullanılarak oluşturulan tüm Linux bilgisayarları için hedeflenen proje |
+   | **CMake projesi** | CMake derleme sistemi kullanılarak oluşturulan tüm Linux bilgisayarları için hedeflenen proje |
 
 ## <a name="next-steps"></a>Sonraki adımlar
 

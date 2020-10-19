@@ -1,6 +1,7 @@
 ---
 title: C4800 ile C5999 Arasındaki Derleyici Uyarıları
-ms.date: 04/21/2019
+description: Microsoft C/C++ derleyicisi uyarıları C4800-C5999 aracılığıyla tablosu.
+ms.date: 10/18/2020
 f1_keywords:
 - C4808
 - C4809
@@ -193,14 +194,27 @@ helpviewer_keywords:
 - C5205
 - C5206
 - C5207
-ms.openlocfilehash: 71a924982a1375f378e6935859aae05f0298bd22
-ms.sourcegitcommit: 00af3df3331854b23693ee844e5e7c10c8b05a90
+- C5209
+- C5210
+- C5211
+- C5212
+- C5213
+- C5214
+- C5215
+- C5216
+- C5217
+- C5218
+- C5219
+- C5220
+- C5221
+ms.openlocfilehash: 1092aca672c41c21bbdf5e52593e70c0c0e06cdc
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86491407"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176257"
 ---
-# <a name="compiler-warnings-c4800-through-c5999"></a>C4800 ile C5999 Arasındaki Derleyici Uyarıları
+# <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarıları C4800 aracılığıyla C5999
 
 Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı iletilerinin bir alt kümesini açıklar.
 
@@ -217,7 +231,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | [Derleyici uyarısı (düzey 1) C4806](compiler-warning-level-1-c4806.md) | '*işlem*': güvenli olmayan işlem: '*type2*' türüne yükseltilen '*Type1*' türünde hiçbir değer verilen sabite eşit olamaz |
 | [Derleyici uyarısı (düzey 1) C4807](compiler-warning-level-1-c4807.md) | '*Operation*': '*Type1*' türünün ve '*type2*' türünde imzalı bit alanının güvenli olmayan karışımı |
 | Derleyici Uyarısı (düzey 1) C4808 | `case`'*Value*', `switch` ' ' türündeki koşul için geçerli bir değer değildir `bool` |
-| Derleyici Uyarısı (düzey 1) C4809 | `switch`bildirimde gereksiz ' `default` ' etiketi yok; tüm olası ' `case` ' etiketleri verildi |
+| Derleyici Uyarısı (düzey 1) C4809 | `switch` bildirimde gereksiz ' `default` ' etiketi yok; tüm olası ' `case` ' etiketleri verildi |
 | [Derleyici uyarısı (düzey 1) C4810](compiler-warning-level-1-c4810.md) | değer `pragma pack(show)` = = n |
 | [Derleyici uyarısı (düzey 1) C4811](compiler-warning-level-1-c4811.md) | `pragma conform(forScope, show)`  ==  *değer* değeri |
 | [Derleyici uyarısı (düzey 1) C4812](compiler-warning-level-1-c4812.md) | kullanım dışı bildirim stili: Lütfen bunun yerine '*new_syntax*' kullanın |
@@ -228,7 +242,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | [Derleyici uyarısı (düzey 4) C4820](compiler-warning-level-4-c4820.md) | '*MEMBER_NAME*' yapısı sonrasında '*bayt*' bayt doldurma eklendi |
 | [Derleyici uyarısı (düzey 1) C4821](compiler-warning-level-1-c4821.md) | Unicode kodlama türü belirlenemiyor, lütfen dosyayı imzaya (BOM) kaydedin |
 | [Derleyici uyarısı (düzey 1) C4822](compiler-warning-level-1-c4822.md) | ' üye işlevi ': Yerel sınıf üye işlevinin gövdesi yok |
-| [Derleyici uyarısı (düzey 3) C4823](compiler-warning-level-3-c4823.md) | '*Function*': sabitleme işaretçileri kullanır, ancak geriye doğru izleme semantiği etkin değildir. Kullanmayı düşünün`/EHa` |
+| [Derleyici uyarısı (düzey 3) C4823](compiler-warning-level-3-c4823.md) | '*Function*': sabitleme işaretçileri kullanır, ancak geriye doğru izleme semantiği etkin değildir. Kullanmayı düşünün `/EHa` |
 | Derleyici Uyarısı (düzey 2) C4826 | '*Type1*' değerinden '*type2*' öğesine dönüştürme, işaret genişletilmiş. Bu, beklenmeyen çalışma zamanı davranışına neden olabilir. |
 | Derleyici Uyarısı (düzey 3) C4827 | `ToString`0 parametrelerine sahip ortak bir ' ' yöntemi ve olarak işaretlenmelidir `virtual``override` |
 | [Derleyici uyarısı (düzey 1) C4829](compiler-warning-level-1-c4829.md) | İşlev için yanlış parametreler `main` . ' `int main(Platform::Array<Platform::String^>^ argv)` ' Düşünün |
@@ -237,7 +251,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | [Derleyici uyarısı (düzey 1) C4838](compiler-warning-level-1-c4838.md) | '*type_1*' değerinden '*type_2*' öğesine dönüştürme bir daraltma dönüştürmesi gerektirir |
 | [Derleyici uyarısı (düzey 3) C4839](compiler-warning-level-3-c4839.md) | '*Type*' sınıfının, değişen sayıda bağımsız değişken işleve bağımsız değişken olarak standart olmayan kullanımı |
 | [Derleyici uyarısı (düzey 4) C4840](compiler-warning-level-4-c4840.md) | '*Type*' sınıfının, değişen sayıda bağımsız değişken işleve bağımsız değişken olarak taşınabilir olmayan kullanımı |
-| Derleyici Uyarısı (düzey 4) C4841 | Standart olmayan uzantı kullanıldı: ' de bileşik üye göstergesi kullanıldı`offsetof` |
+| Derleyici Uyarısı (düzey 4) C4841 | Standart olmayan uzantı kullanıldı: ' de bileşik üye göstergesi kullanıldı `offsetof` |
 | Derleyici Uyarısı (düzey 4) C4842 | `offsetof`birden çok devralma kullanan bir türe uygulanan ' ' sonucunun, derleyici yayınları arasında tutarlı olması garanti edilmez |
 | Derleyici Uyarısı C4843 | '*Type1*': diziye veya işlev türüne başvurunun özel durum işleyicisine ulaşılamıyor, bunun yerine '*type2*' kullanın |
 | Derleyici Uyarısı C4844 | ' `export module` *`module_name`* `;` ' artık bir modül arabirimi bildirmek için tercih edilen söz dizimi |
@@ -248,7 +262,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | Derleyici Uyarısı C4854 | bağlama başvuru yapılan null işaretçiyle başvuruya geri başvurulduğunu ve tanımsız davranışa sahip |
 | Derleyici Uyarısı C4855 | ' ' ile ' ' arasında örtük yakalama `this` `[=]` , ' version ' içinde kullanım dışıdır |
 | Derleyici Uyarısı C4856 | '*Value*', ' ' için geçerli bir bağımsız değişken değil `/d1initAll:FillPattern` (değer 0 ile 255 arasında olmalıdır). Komut satırı bayrağı yoksayıldı |
-| Derleyici Uyarısı C4857 | C++/CLı modu, c++ 17 ' den daha yeni C++ sürümlerini desteklemez; dili ayarlama`/std:c++17` |
+| Derleyici Uyarısı C4857 | C++/CLı modu, c++ 17 ' den daha yeni C++ sürümlerini desteklemez; dili ayarlama `/std:c++17` |
 | [Derleyici uyarısı (düzey 4) C4866](c4866.md) | Derleyici, *operator_name* çağrısı için soldan sağa değerlendirme sırasını zorlamaz |
 | [Derleyici Uyarısı (hata) C4867](compiler-warning-c4867.md) | '*Function*': işlev çağrısında bağımsız değişken listesi eksik; üyeye işaretçi oluşturmak için '*Call*' kullanın |
 | [Derleyici Uyarısı (düzey 4) C4868](compiler-warning-c4868.md) | '_File_(*Line_Number*) ' derleyicisi, örgü başlatma listesinde soldan sağa değerlendirme sırasını zorlamaz |
@@ -283,7 +297,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | [Derleyici Uyarısı C4939](compiler-warning-level-1-c4939.md) | #pragma vtordisp kullanım dışıdır ve gelecekteki bir sürümünde kaldırılır Visual C++ |
 | [Derleyici uyarısı (düzey 1) C4944](compiler-warning-level-1-c4944.md) | '*symbol*': '*Assembly1*' öğesinden sembol içeri aktarılamıyor: '*symbol*' geçerli kapsamda zaten var |
 | [Derleyici uyarısı (düzey 1) C4945](compiler-warning-level-1-c4945.md) | '*symbol*': '*Assembly1*' öğesinden sembol içeri aktarılamıyor: '*symbol*' zaten başka bir '*Assembly2*' derlemesinden içeri aktarılmış |
-| [Derleyici uyarısı (düzey 1) C4946](compiler-warning-level-1-c4946.md) | `reinterpret_cast`ilgili sınıflar arasında kullanıldı: '*Class1*' ve '*Class2*' |
+| [Derleyici uyarısı (düzey 1) C4946](compiler-warning-level-1-c4946.md) | `reinterpret_cast` ilgili sınıflar arasında kullanıldı: '*Class1*' ve '*Class2*' |
 | [Derleyici uyarısı (düzey 1) C4947](compiler-warning-level-1-c4947.md) | '*Type_or_Member*': eski olarak işaretlendi |
 | [Derleyici uyarısı (düzey 2) C4948](compiler-warning-level-2-c4948.md) | '*erişimci*' dönüş türü karşılık gelen ayarlayıcının son parametre türüyle eşleşmiyor |
 | [Derleyici uyarısı (düzey 1 ve düzey 4) C4949](compiler-warning-level-1-and-level-4-c4949.md) | ' ' `managed` ve ' ' pragmaları `unmanaged` yalnızca ' ' ile derlendikleri zaman anlamlıdır `/clr[:option]` |
@@ -305,7 +319,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | [Derleyici uyarısı (düzey 1) C4965](compiler-warning-level-1-c4965.md) | tamsayı 0; örtük kutusu nullptr veya açık tür dönüştürme kullan |
 | Derleyici Uyarısı (düzey 1) C4966 | '*Function*' `__code_seg` , desteklenmeyen segment adı olan ek açıklamaya sahip, ek açıklama yoksayıldı |
 | Derleyici Uyarısı C4970 | temsilci Oluşturucu: '*Type*' statik olduğundan hedef nesne yoksayıldı |
-| Derleyici Uyarısı (düzey 1) C4971 | Bağımsız değişken sırası: \<target object> , \<target function> Temsilci oluşturucunun kullanım dışı, kullanımı \<target function> ,\<target object=""> |
+| Derleyici Uyarısı (düzey 1) C4971 | Bağımsız değişken sırası: \<target object> , \<target function> Temsilci oluşturucunun kullanım dışı, kullanımı \<target function> , \<target object=""> |
 | [Derleyici Uyarısı (düzey 1, hata) C4972](compiler-warning-c4972.md) | Bir unbox işleminin sonucunu doğrudan değiştirmek veya sonucu lvalue olarak davranmak doğrulanamaz |
 | Derleyici Uyarısı (düzey 1) C4973 | '*symbol*': kullanım dışı olarak işaretlendi |
 | Derleyici Uyarısı (düzey 1) C4974 | '*symbol*': kullanım dışı olarak işaretlendi |
@@ -362,11 +376,11 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | Derleyici Uyarısı C5057 | ' name ' için üst bilgi birimi başvurusu zaten var.  ' Header-Name ' başlık birimi yoksayılıyor |
 | Derleyici Uyarısı C5058 | dosya sistemi hatası: ' Unit-Name ' başlık birimi için ' dosya-adı ' üst bilgi dosyası bulunamıyor |
 | Derleyici Uyarısı C5059 | çalışma zamanı denetimleri ve adres Temizleme işlemi şu anda desteklenmiyor-çalışma zamanı denetimleri devre dışı bırakılıyor |
-| Derleyici Uyarısı C5060 | `/Qpar`ve adres Temizleme Şu anda desteklenmiyor-otomatik paralelleştirme devre dışı bırakılıyor |
+| Derleyici Uyarısı C5060 | `/Qpar` ve adres Temizleme Şu anda desteklenmiyor-otomatik paralelleştirme devre dışı bırakılıyor |
 | Derleyici Uyarısı C5061 | bir virgül işlecinin alt simge ifadesi olarak kullanılması kullanım dışı bırakıldı |
 | Derleyici Uyarısı C5062 | ' Type-1 ' ve ' Type-2 ' arasındaki sabit listesi doğrudan liste başlatması artık desteklenmiyor |
 | Derleyici Uyarısı C5063 | ' `std::is_constant_evaluated` ' her zaman, manifestly sabit değerlendirilen ifadelerde true olarak değerlendirilir |
-| Derleyici Uyarısı (düzey 1) C5100 | `__VA_ARGS__`bağımsız değişken olmayan makrolar için kullanılmak üzere ayrılmıştır |
+| Derleyici Uyarısı (düzey 1) C5100 | `__VA_ARGS__` bağımsız değişken olmayan makrolar için kullanılmak üzere ayrılmıştır |
 | Derleyici Uyarısı (düzey 1) C5101 | işlev benzeri makro bağımsız değişken listesinde Önişlemci yönergesinin kullanılması tanımsız bir davranıştır |
 | Derleyici Uyarısı (düzey 1) C5102 | Geçersiz komut satırı makro tanımı '*Value*' yoksayılıyor |
 | Derleyici Uyarısı (düzey 1) C5103 | '*token1*' ve '*token2*' yapıştırma geçerli bir ön işleme belirtecine neden olmaz |
@@ -374,7 +388,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | [Derleyici uyarısı (düzey 1) C5105](c5105.md) | ' Defined ' üreten makro genişletmesi tanımsız davranışa sahip |
 | Derleyici Uyarısı (düzey 1) C5106 | makro farklı parametre adlarıyla yeniden tanımlandı |
 | Derleyici Uyarısı (düzey 1) C5107 | Sonlandırıcı '*char*' karakteri eksik |
-| Derleyici Uyarısı C5108 | `__VA_OPT__`bağımsız değişken olmayan makrolar için kullanılmak üzere ayrılmıştır |
+| Derleyici Uyarısı C5108 | `__VA_OPT__` bağımsız değişken olmayan makrolar için kullanılmak üzere ayrılmıştır |
 | Derleyici Uyarısı C5200 | ' Feature-Name ' özelliği ' seçenek-adı ' derleyici bayrağını gerektiriyor |
 | Derleyici Uyarısı C5201 | bir modül bildirimi, genel bir modül parçası kullanılmadığı takdirde yalnızca çeviri biriminin başlangıcında görünebilir |
 | Derleyici Uyarısı C5202 | genel modül parçası yalnızca Önişlemci yönergeleri içerebilir |
@@ -383,7 +397,20 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan uyarı 
 | Derleyici Uyarısı C5205 | sanal olmayan yok edicisi olan bir soyut ' type-name ' sınıfının silinmesi tanımsız davranışlara neden olur |
 | Derleyici Uyarısı C5206 | eş yordamlar için çıkarılan dönüş türleri standart olmayan bir uzantıdır |
 | Derleyici Uyarısı C5207 | basit gereksinim ' ' ifadesinin geçerliliğini onaylar `e->id` . ' ' Demek istediniz `{ e } -> id` mi? ' ' Kullanarak uyarıyı gizleyebilirsiniz `{ e->id }` |
-| [Derleyici Uyarısı (düzey 1) C5208](c5208.md) | adda kullanılan adlandırılmamış sınıf `typedef` statik olmayan veri üyeleri, üye numaralandırmaları veya üye sınıfları dışındaki üyeleri bildiremez |
+| [Derleyici uyarısı (düzey 1) C5208](c5208.md) | adda kullanılan adlandırılmamış sınıf `typedef` statik olmayan veri üyeleri, üye numaralandırmaları veya üye sınıfları dışındaki üyeleri bildiremez |
+| Derleyici Uyarısı C5209 | bir init-Capture için C++ 20 sözdizimi ' & olarak değiştirildi... OPT tanımlayıcı Başlatıcısı ' |
+| Derleyici Uyarısı C5210 | '*Name*' geçerli bir üst bilgi birimi başvurusu değil; Yoksay |
+| Derleyici Uyarısı C5212 | '*Name*' geçerli bir adlandırılmış başvuru değil; dosyaya başvuru olarak davranma |
+| Derleyici Uyarısı C5213 | '*Name*' adlı başvuru adlandırılmış bir bölüm olarak değerlendirildi, ancak ad belirtilmemiş; dosyaya başvuru olarak davranma |
+| Derleyici Uyarısı C5214 | geçici tür içeren bir işlenene '*Modifier*' uygulamak c++ 20 ' de kullanım dışıdır |
+| Derleyici Uyarısı C5215 | '*Name*' bir işlev parametresi, geçici nitelenmiş tür ile c++ 20 ' de kullanım dışıdır |
+| Derleyici Uyarısı C5216 | '*Name*', c++ 20 ' de geçici bir tam dönüş türü kullanım dışıdır |
+| Derleyici Uyarısı C5217 | C++ 20 ' de geçici içeren bir yapılandırılmış bağlama bildirimi kullanım dışıdır |
+| Derleyici Uyarısı C5218 | ' `/Zc:sizedDealloc-` ' veya ' ' uyumlu olmayan anahtarlar kullanıldığında silme, yok etme amacına uygun şekilde davranmayabilir `/Zc:alignedNew-` |
+| Derleyici Uyarısı C5219 | '*Type-1*' türünden '*Type-2 ' türüne*örtük dönüştürme, olası veri kaybı |
+| Derleyici Uyarısı C5220 | '*Name*': geçici nitelenmiş türe sahip statik olmayan bir veri üyesi artık derleyicinin ürettiği kopyalama/taşıma oluşturucuları ve kopyalama/taşıma atama işleçleri önemsiz değil |
+| Derleyici Uyarısı C5221 | `xfg::rename` kullanım dışıdır. |
+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

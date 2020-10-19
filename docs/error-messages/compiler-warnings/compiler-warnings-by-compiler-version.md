@@ -1,15 +1,16 @@
 ---
 title: Derleyici sürümüne göre derleyici uyarıları
-ms.date: 04/22/2019
+description: Derleyici sürümüne göre Microsoft C/C++ derleyicisi uyarıları tablosu.
+ms.date: 10/18/2020
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: d8d47e9dbfce9e22cf7aab2e3e7beab72d86c770
-ms.sourcegitcommit: 00af3df3331854b23693ee844e5e7c10c8b05a90
+ms.openlocfilehash: b470663e3cea8ec62a1737fb19e9ec5a277d27cc
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86491381"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176320"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -44,12 +45,33 @@ Derleyicinin bu sürümleri yeni uyarılar sunmuştur:
 |  Visual Studio 2019 sürüm 16.4 | 19.24.28314.0 |
 | Visual Studio 2019 sürüm 16,5 | 19.25.28610.0 |
 | Visual Studio 2019 sürüm 16,6 | 19.26.28805.0 |
+| Visual Studio 2019 sürüm 16,7 | 19.26.29112.0 |
 
 Seçeneğe yalnızca büyük sayıyı, büyük ve küçük rakamları veya ana, alt ve yapı numaralarını belirtebilirsiniz **`/Wv`** . Derleyici, belirtilen sayıyla başlayan sürümlerle eşleşen tüm uyarıları raporlar. Belirtilen sayıdan daha büyük sürümlere ait tüm uyarıları bastırır. Örneğin, **`/Wv:17`** Visual Studio 2012 ' nin herhangi bir sürümünde veya üzerinde tanıtılan uyarıları raporlar ve Visual Studio 2013 (sürüm 18) veya daha sonraki bir derleyici tarafından tanıtılan uyarıları göstermez. Visual Studio 2015 güncelleştirme 2 ve sonrasında tanıtılan uyarıları gizlemek için kullanabilirsiniz **`/Wv:19.00.23506`** . Visual Studio **`/Wv:19.11`** 2017 sürüm 15,5 ' den önceki herhangi bir Visual Studio sürümünde tanıtılan uyarıları raporlamak için kullanın, ancak Visual studio 2017 sürüm 15,5 ve sonrasında sunulan uyarıları gizleyin.
 
 Aşağıdaki bölümlerde, derleyici seçeneğini kullanarak gizleyerek Visual C++ her bir sürümü tarafından tanıtılan uyarılar listelenmektedir **`/Wv`** . **`/Wv`** Bu seçenek, belirtilen derleyicinin sürümlerinin ön tarihini belirleyen, listelenmeyen uyarıları göstermez.
 
 ::: moniker range=">= vs-2019"
+
+## <a name="warnings-introduced-in-visual-studio-2019-version-167-compiler-version-1927291120"></a>Visual Studio 2019 sürüm 16,7 ' de tanıtılan uyarılar (derleyici sürümü 19.27.29112.0)
+
+Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneği kullanılarak bastırılır **`/Wv:19.26`** .
+
+| Uyarı | İleti |
+|--|--|
+| C5207 | `the simple requirement asserts the validity of expression 'e->id'. Did you mean '{ e } -> id'? You can suppress the warning using '{ e->id }'` |
+| C5209 | `the C++20 syntax for an init-capture has changed to '& ...opt identifier initializer'` |
+| C5210 | `'name' is not a valid header unit reference; ignoring` |
+| C5212 | `'name' is not a valid named reference; treating as reference to file` |
+| C5213 | `'name' named reference is treated as a named partition but the name is not specified; treating as reference to file` |
+| C5214 | `applying 'modifier' to an operand with a volatile qualified type is deprecated in C++20` |
+| C5215 | `'name' a function parameter with a volatile qualified type is deprecated in C++20` |
+| C5216 | `'name' a volatile qualified return type is deprecated in C++20` |
+| C5217 | `a structured binding declaration that includes volatile is deprecated in C++20` |
+| C5218 | `destroying delete may not behave as intended when non-conforming switches '/Zc:sizedDealloc-' or '/Zc:alignedNew-' are used` |
+| C5219 | `implicit conversion from 'type-1' to 'type-2', possible loss of data` |
+| C5220 | `'name': a non-static data member with a volatile qualified type no longer implies%$N that compiler generated copy/move constructors and copy/move assignment operators are not trivial` |
+| C5221 | `xfg::rename is deprecated.` |
 
 ## <a name="warnings-introduced-in-visual-studio-2019-version-166-compiler-version-1926288050"></a>Visual Studio 2019 sürüm 16,6 ' de tanıtılan uyarılar (derleyici sürümü 19.26.28805.0)
 

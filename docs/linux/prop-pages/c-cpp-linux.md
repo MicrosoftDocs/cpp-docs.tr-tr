@@ -1,20 +1,21 @@
 ---
-title: C/C++ Özellikleri (Linux C++)
-ms.date: 06/07/2019
+title: C/C++ özellikleri (Linux C++)
+ms.date: 10/14/2020
+description: Visual Studio C/C++ özellikleri sayfasında Linux derleme seçeneklerini açıklar
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
 f1_keywords: []
-ms.openlocfilehash: 394cb501b4df6caed6a358ffa96ce0de5d187ae1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0840327b30d94b4845adef7788fd73f4e797775f
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79441480"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176243"
 ---
-# <a name="cc-properties-linux-c"></a>C/C++ Özellikleri (Linux C++)
+# <a name="cc-properties-linux-c"></a>C/C++ özellikleri (Linux C++)
 
 ::: moniker range="vs-2015"
 
-Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir.
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
@@ -24,63 +25,66 @@ Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir.
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Ek Dahil Dizinler | İçle yoluna eklemek için bir veya daha fazla dizin belirtir. Birden çok dizinleri ayırmak için yarı iki nokta üst üste kullanın. (-I\[yolu]). |
-| Hata Ayıklama Bilgi Biçimi | Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir. | **Yok** - Hata ayıklama bilgisi üretmez, bu nedenle derleme daha hızlı olabilir.<br/>**En az hata ayıklama bilgileri** - En az hata ayıklama bilgileri oluşturun.<br/>**Tam Hata Ayıklama Bilgileri (CÜCE2)** - CÜCE2 hata ayıklama bilgilerini oluşturun.<br/> |
-| Nesne Dosya Adı | Varsayılan nesne dosya adını geçersiz kılmak için bir ad belirtir. Bir dosya veya dizin adı olabilir. (-o [isim]). |
-| Uyarı Düzeyi | Derleyicinin kod hataları yla ilgili ne kadar katı olmasını istediğinizi seçer.  Diğer bayrakları doğrudan **Ek Seçenekler'e**ekleyin. (/w, /Weverything). | **Tüm Uyarıları Kapat** - Tüm derleyici uyarılarını devre dışı bırak.<br/>**EnableAllWarnings** - Varsayılan olarak devre dışı bırakılanlar da dahil olmak üzere tüm uyarıları etkinleştirin.<br/> |
-| Uyarıları hata olarak ele ada | Tüm derleyici uyarılarını hata olarak ele akurum. Yeni bir proje için, tüm derlemelerde /Werror kullanmak en iyi şey olabilir. Bulunması mümkün olan en az zor kod hatalarını sağlamak için tüm uyarıları çözümle. |
-| C Ek Uyarılar | Ek uyarı iletileri kümesi tanımlar. |
-| C++ Ek Uyarılar | Ek uyarı iletileri kümesi tanımlar. |
-| Verbose modunu etkinleştirme | Verbose modu etkinleştirildiğinde, yapıyı tanılamak için daha fazla bilgi yazdırır. |
-|  C Derleyicisi | C kaynak dosyalarının derlemesi sırasında çağırmak için program veya uzak sistemde C derleyicisi için yol belirtir. |
-| C++ Derleyicisi | C++ kaynak dosyalarının derlemesi sırasında çağırmak için programı veya uzak sistemdeki C++ derleyicisine giden yolu belirtir. |
-| Zaman Aşım'ı Derle | Uzaktan derleme zaman, milisaniye cinsinden. |
-| Nesne Dosyalarını Kopyalama | Derlenen nesne dosyalarının uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir. |
+| Ek Içerme dizinleri | Ekleme yoluna eklenecek bir veya daha fazla dizini belirtir. Birden çok dizini ayırmak için noktalı virgül kullanın. (-I \[ yolu]). |
+| Hata ayıklama bilgi biçimi | Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir. | **Hiçbiri** -hata ayıklama bilgisi üretmez, bu nedenle derleme daha hızlı olabilir.<br/>**Minimal hata ayıklama bilgileri** -en düşük hata ayıklama bilgileri oluştur.<br/>**Tam hata ayıklama bilgileri (DWARF2)** -DWARF2 hata ayıklama bilgileri oluştur.<br/> |
+| Nesne dosyası adı | Varsayılan nesne dosyası adını geçersiz kılacak bir ad belirtir. Bu bir dosya veya dizin adı olabilir. (-o [ad]). |
+| Uyarı düzeyi | Derleyicinin kod hataları hakkında ne kadar sıkı olmasını istediğinizi seçer.  Diğer bayrakları doğrudan **ek seçeneklere**ekleyin. (/w,/Weverything). | **Tüm uyarıları** kapat-tüm derleyici uyarılarını devre dışı bırakır.<br/>**Enablealluyarılar** -varsayılan olarak devre dışı bırakılmış olanlar da dahil olmak üzere tüm uyarıları etkinleştirilir.<br/> |
+| Uyarıları hata olarak değerlendir | Tüm derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için tüm derlemelerde/Werror kullanılması en iyi yöntem olabilir. En az olası kod kusurlarını sağlamak için tüm uyarıları çözün. |
+| C ek uyarılar | Ek bir uyarı iletileri kümesi tanımlar. |
+| C++ ek uyarıları | Ek bir uyarı iletileri kümesi tanımlar. |
+| Ayrıntılı modu etkinleştir | Ayrıntılı mod etkinleştirildiğinde, derlemeyi tanılamak için daha fazla bilgi yazdırır. |
+| C derleyicisi | C kaynak dosyalarının derlenmesi sırasında çağrılacak programı veya uzak sistemdeki C derleyicisinin yolunu belirtir. |
+| C++ Derleyicisi | C++ kaynak dosyalarının derlenmesi sırasında çağrılacak programı veya uzak sistemdeki C++ derleyicisinin yolunu belirtir. |
+| Derleme zaman aşımı | Uzak derleme zaman aşımı, milisaniye cinsinden. |
+| Nesne dosyalarını Kopyala | Derlenen nesne dosyalarının, uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir. |
+| En fazla paralel derleme Işleri | Derleme sırasında paralel olarak oluşturulacak işlem sayısı. Varsayılan değer 1'dir. Linux için Windows alt sistemi (WSL) sürüm 1 kullanıyorsanız, sınır 64 ' dir. |
+| Mimariyi Doğrula | Projenin hedeflediği platformun uzak sistemle eşleşip eşleşmediğini denetleyip denetmeyeceğinizi belirtin.|
+| Adres Temizleme özelliğini etkinleştir | Çalışma zamanı belleği sorunlarını bulma ve Aralık dışı denetimleri gerçekleştirme hızlı bir bellek hata algılayıcısı olan, programı adres Temizleme ile derleyin.|
 
 ## <a name="optimization"></a>İyileştirme
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| İyileştirme | Uygulama için en iyi duruma getirilmesi düzeyini belirtir. | **Özel** - Özel optimizasyon.<br/>**Devre Dışı -** Optimizasyonu devre dışı.<br/>**Boyutu Simge durumuna Küçült -** Boyut için optimize edin.<br/>**Hızı En Üst Düzeye Çıkarın** - Hız için optimize edin.<br/>**Tam Optimizasyon** - Pahalı optimizasyonlar. |
-| Sıkı Aliasing | En katı takma adı gerektiren kuralları varsayar.  Bir türdeki bir nesnenin, farklı bir türdeki bir nesneyle aynı adrese sahip olduğu asla varsayılmaz. |
-| Döngüleri Unroll | Daha büyük kod boyutu pahasına, yürütülen şube sayısını azaltarak uygulamayı daha hızlı yapmak için döngüleri undevirir. |
-| Bağlantı Süresi Optimizasyonu | En iyi duruma getiricinin uygulamanızdaki nesne dosyalarına bakmasını sağlayarak yordamlar arası optimizasyonları sağlar. |
-| Çerçeve İşaretçisini Atla | Çağrı yığınında çerçeve işaretçilerinin oluşturulmasını engeller. |
-| Ortak Blok Yok | Nesne dosyasının veri bölümünde, ortak bloklar olarak oluşturmak yerine, başlatif hale getirilmemiş global değişkenleri bile ayırır. |
+| İyileştirme | Uygulamanın en iyi duruma getirme düzeyini belirtir. | **Özel** -özel iyileştirme.<br/>**Devre dışı** -iyileştirmeyi devre dışı bırak.<br/>**Boyutu en aza indirir** -boyut için iyileştirin.<br/>**En yüksek hız** -hız için iyileştirin.<br/>**Tam iyileştirme** maliyetli iyileştirmeler. |
+| Katı diğer ad | En katı diğer ad kurallarını varsayar.  Tek bir türdeki nesne, farklı türde bir nesneyle aynı adrese sahip olacak şekilde hiçbir şekilde kabul değildir. |
+| Döngüleri geri alma | Daha büyük kod boyutu maliyetinde yürütülen dalların sayısını azaltarak uygulamayı daha hızlı hale getirmek için yapılan döngüleri kaldırır. |
+| Bağlantı süresi Iyileştirmesi | İyileştiricinin uygulamanızdaki nesne dosyalarına bakmalarına izin vererek yordamsal iyileştirmeleri sağlar. |
+| Çerçeve Işaretçisini atla | Çağrı yığınında çerçeve işaretçilerinin oluşturulmasını engeller. |
+| Ortak blok yok | Ortak bloklar olarak oluşturmak yerine, nesne dosyasının veri bölümünde bile başlatılmamış genel değişkenler ayırır. |
 
 ## <a name="preprocessor"></a>Ön işlemci
 
-| Özellik | Açıklama | Seçenekler |
-|--|--|--|
-| Önişlemci Tanımları | Kaynak dosyanız için ön işleme sembolleri tanımlar. (-D) |
-| Tanımsız Önİşlemci Tanımları | Bir veya daha fazla önişlemci tanımlanmamış belirtir.  (-U \[makro]) |
-| Tüm Önİşlemci Tanımlarını Tanımlamıyor | Daha önce tanımlanmış tüm önişlemci değerlerini tanımlamıyor.  (-def olmayan) |
-| Göster Içerir | Derleyici çıktısı içeren dosyaların listesini oluşturur.  (-H) |
+| Özellik | Açıklama |
+|--|--|
+| Önişlemci tanımları | Kaynak dosyanız için ön işleme sembollerini tanımlar. (-D) |
+| Önişlemci tanımlarının tanımı kaldırılıyor | Bir veya daha fazla önişlemci tarafından tanımlanabileceğini belirtir.  (-U \[ makrosu]) |
+| Tüm önişlemci tanımlarının tanımlanunlarını kaldır | Önceden tanımlanmış tüm Önişlemci değerlerini tanımlar.  (-undef) |
+| Eklemeleri göster | Derleyici çıkışı içeren ekleme dosyalarının bir listesini oluşturur.  (-H) |
 
 ## <a name="code-generation"></a>Kod Üretimi
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Konum Bağımsız Kodu | Paylaşılan bir kitaplıkta kullanılmak üzere konumbağımsız kod (PIC) oluşturur. |
-| Statik iplik güvenlidir | Yerel statiklerin iş parçacığı güvenli başlatılması için C++ ABI'de belirtilen yordamları kullanmak için ek kod yayır. | **Hayır** - İş parçacığı güvenli statik devre dışı.<br/>**Evet** - İş parçacığı güvenli statik etkinleştirin. |
-| Kayan Nokta Optimizasyonu | IEEE-754 uyumluluğunu gevşeterek kayan nokta optimizasyonları sağlar. |
-| Gizli Satır Dametleri | Etkinleştirildiğinde, satır içi yöntemlerin satır dışı kopyaları bildirilir. `private extern` |
-| Varsayılan Olarak Gizlenmiş Semboller | Makro kullanılarak dışa aktarılmak üzere açıkça işaretlenmediği sürece tüm semboller beyan edilir. `private extern` `__attribute` |
-| C++ Özel Durumlarını Etkinleştir | Derleyici tarafından kullanılan özel durum işleme modelini belirtir. | **Hayır** - Özel durum işlemeyi devre dışı.<br/>**Evet** - Özel durum işlemeyi etkinleştirin. |
+| Konumdan bağımsız kod | Paylaşılan bir kitaplıkta kullanılmak üzere konumdan bağımsız kod (PIC) oluşturur. |
+| Statiği iş parçacığı güvenlidir | Yerel statiklerin iş parçacığı güvenli başlatması için C++ ABı 'da belirtilen yordamları kullanmak üzere ek kod yayar. | **Hayır** -iş parçacığı güvenli lekmelerini devre dışı bırak.<br/>**Evet** -iş parçacığı güvenli lekmelerini etkinleştirin. |
+| Kayan nokta Iyileştirmesi | IEEE-754 uyumluluğunu sağlayarak kayan nokta iyileştirmeleri sunar. |
+| Satır içi Yöntemler gizli | Etkinleştirildiğinde, satır içi yöntemlerin satır dışı kopyaları bildirilmiştir `private extern` . |
+| Simgeler Varsayılan olarak gizlidir | Tüm semboller `private extern` , makro kullanılarak dışarı aktarmak için açıkça işaretlenmediği takdirde belirtilir `__attribute` . |
+| C++ özel durumlarını etkinleştir | Derleyici tarafından kullanılan özel durum işleme modelini belirtir. | **Hayır** -özel durum işlemeyi devre dışı bırak.<br/>**Evet** -özel durum işlemeyi etkinleştir. |
 
 ## <a name="language"></a>Dil
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Çalışma Zamanı Türü Bilgilerini Etkinleştirme | Çalışma zamanında C++ nesne türlerini denetlemek için kod ekler (çalışma zamanı türü bilgileri).     (frtti, fno-rtti) |
-| C Dil Standardı | C dil standardını belirler. | **Varsayılan**<br/>**C89** - C89 Dil Standardı.<br/>**C99** - C99 Dil Standardı.<br/>**C11** - C11 Dil Standardı.<br/>**C99 (GNU Lehçesi)** - C99 (GNU Lehçesi) Dil Standardı.<br/>**C11 (GNU Lehçesi)** - C11 (GNU Lehçesi) Dil Standardı. |
-| C++ Dil Standardı | C++ dil standardını belirler. | **Varsayılan**<br/>**C++03** - C++03 Dil Standardı.<br/>**C++11** - C++11 Dil Standardı.<br/>**C++14** - C++14 Dil Standardı.<br/>**C++03 (GNU Lehçesi)** - C++03 (GNU Lehçesi) Dil Standardı.<br/>**C++11 (GNU Lehçesi)** - C++11 (GNU Lehçesi) Dil Standardı.<br/>**C++14 (GNU Lehçesi)** - C++14 (GNU Lehçesi) Dil Standardı. |
+| Run-Time türü bilgilerini etkinleştir | Çalışma zamanında C++ nesne türlerini denetlemek için kod ekler (çalışma zamanı türü bilgileri).     (frtti, FNO-rtti) |
+| C dil standardı | C dil standardını belirler. | **Varsayılan**<br/>**C89** -c89 dil standardı.<br/>**C99** -C99 dil standardı.<br/>**C11** -C11 dil standardı.<br/>**C99 (GNU diyalekti)** -C99 (GNU diyalekti) dil standardı.<br/>**C11 (GNU diyalekti)** -C11 (GNU diyalekti) dil standardı. |
+| C++ dil standardı | C++ dil standardını belirler. | **Varsayılan**<br/>**C++ 03** -C++ 03 dil standardı.<br/>**C++ 11** -C++ 11 dil standardı.<br/>**C++ 14** -C++ 14 dil standardı.<br/>**C++ 03 (GNU diyalekti)** -c++ 03 (GNU diyalekti) dil standardı.<br/>**C++ 11 (GNU diyalekti)** -c++ 11 (GNU diyalekti) dil standardı.<br/>**C++ 14 (GNU diyalekti)** -c++ 14 (GNU diyalekti) dil standardı. |
 
 ## <a name="advanced"></a>Gelişmiş
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| As'ı Derle | .c ve .cpp dosyaları için derleme dili seçeneğini seçer. (-x c, -x c++) | **Varsayılan** - .c veya .cpp uzantısına göre algıla.<br/>**C Kodu olarak derleme** - C kodu olarak derleme.<br/>**C++ Kodu olarak derleme** - C++ kodu olarak derleme. |
-| Zorunlu Dosya Ekleme | Bir veya daha fazla zorla dosya \[ekleme (-include adı]) belirtir |
+| Farklı derle | . C ve. cpp dosyaları için derleme dili seçeneğini belirler. (-x c,-x c++) | **Varsayılan** -. c veya. cpp uzantısına göre algıla.<br/>**C** kodu olarak derle-c kodu olarak derleyin.<br/>**C++ kodu olarak derle** -c++ kodu olarak derleyin. |
+| Zorunlu Içerme dosyaları | Bir veya daha fazla zorunlu ekleme dosyası (-include \[ adı]) belirtir |
 
 ::: moniker-end

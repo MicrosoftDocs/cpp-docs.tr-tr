@@ -1,14 +1,14 @@
 ---
 title: Visual Studio 'da Linux MSBuild C++ projesi yapılandırma
-ms.date: 08/06/2020
+ms.date: 10/16/2020
 description: Visual Studio 'da MSBuild tabanlı bir Linux projesi yapılandırarak derleyebilirsiniz.
 ms.assetid: 4d7c6adf-54b9-4b23-bd23-5de0c825b768
-ms.openlocfilehash: 4e99645eea89682b4beac5452da01755ea555ec4
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 51837dc86d041b9120f984cc01f8db06d696b292
+ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685962"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92176337"
 ---
 # <a name="configure-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio 'da Linux MSBuild C++ projesi yapılandırma
 
@@ -26,7 +26,7 @@ Bir Linux projesini fiziksel bir Linux makinesini, sanal makineyi veya [Linux I�
 
 **Visual Studio 2019 sürüm 16,1**:
 
-- WSL 'yi hedeflerken, uzak Linux sistemlerini hedeflerken oluşturma ve IntelliSense için gerekli olan kopyalama işlemlerini önleyebilirsiniz.
+- WSL 'yi hedeflediğinizde, oluşturma ve bir uzak Linux sistemini hedeflediğinizde gereken IntelliSense 'i almak için gereken kopyalama işlemlerinden kaçınabilirsiniz.
 
 - Oluşturma ve hata ayıklama için ayrı Linux hedefleri belirtebilirsiniz.
 
@@ -40,6 +40,10 @@ Yapılandırma seçeneklerini görüntülemek için **proje > Özellikler** men�
 
 Varsayılan olarak, bir yürütülebilir (. out) oluşturulur. Statik veya dinamik bir kitaplık oluşturmak veya var olan bir derleme görevleri dosyasını kullanmak için **yapılandırma türü** ayarını kullanın.
 
+Linux için Windows alt sistemi (WSL) oluşturuyorsanız, WSL sürüm 1 64 paralel derleme işlemleriyle sınırlıdır. Bu, yapılandırma özelliklerindeki **en fazla paralel derleme işleri** ayarı tarafından tabidir **> C/C++ genel >**.
+
+Kullandığınız WSL sürümünden bağımsız olarak 64 'den fazla paralel derleme işlemi kullanmayı düşünüyorsanız, genellikle daha hızlı ve daha güvenilir olacak şekilde Dokja oluşturmanız önerilir. Dokja ile derlemek için yapılandırma özelliklerindeki **artımlı derlemeyi etkinleştir** ayarını **genel >** kullanın.
+
 Özellik sayfalarındaki ayarlar hakkında daha fazla bilgi için bkz. [Linux proje özellik sayfası başvurusu](prop-pages-linux.md).
 
 ## <a name="remote-settings"></a>Uzak ayarlar
@@ -52,7 +56,7 @@ Uzak Linux bilgisayarıyla ilgili ayarları değiştirmek için, [genel](prop-pa
 
    ::: moniker range="vs-2019"
 
-   **Visual Studio 2019 sürüm 16,1**: Linux Için Windows alt sistemi hedeflemek üzere **platform araç takımı** için aşağı oka tıklayın ve **WSL_1_0**' yi seçin. Diğer uzak Seçenekler kaybolur ve varsayılan WSL kabuğu yolu kendi yerine görünür:
+   **Visual Studio 2019 sürüm 16,7**: Linux Için Windows alt sistemi 'NI (WSL) hedeflemek Için, **platform araç takımı** ' nı **Linux Için Windows alt sistemi için GCC**olarak ayarlayın. Diğer uzak Seçenekler kaybolur ve varsayılan WSL kabuğu yolu kendi yerine görünür:
 
    ![WSL derleme makinesi](media/wsl-remote-vs2019.png)
 
