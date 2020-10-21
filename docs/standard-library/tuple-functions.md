@@ -1,5 +1,5 @@
 ---
-title: '&lt;tanımlama grubu&gt; işlevleri'
+title: '&lt;demet &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - tuple/std::get
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - std::make_tuple [C++]
 - std::tie [C++]
 ms.openlocfilehash: 46c386ecffb8fbbf7c07d40b334afd91d261ebcf
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422656"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92274518"
 ---
-# <a name="lttuplegt-functions"></a>&lt;tanımlama grubu&gt; işlevleri
+# <a name="lttuplegt-functions"></a>&lt;demet &gt; işlevleri
 
-## <a name="apply"></a>uygulayabilirsiniz
+## <a name="apply"></a><a name="apply"></a> uygulayabilirsiniz
 
 ```cpp
 template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
@@ -32,7 +32,7 @@ template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t)
 
 Bir demet *t*ile *F* işlevini çağırır.
 
-## <a name="forward"></a>forward_as_tuple
+## <a name="forward_as_tuple"></a><a name="forward"></a> forward_as_tuple
 
 ```cpp
 template <class... TTypes>
@@ -47,9 +47,9 @@ template <class... TTypes>
 
 Bir işleve bağımsız değişken olarak iletmek *için uygun olan* bağımsız değişkenlere başvuru tanımlama grubu oluşturur.
 
-## <a name="get"></a>Al
+## <a name="get"></a><a name="get"></a> Al
 
-`tuple` nesnesinden bir öğeyi, dizine veya (C++ 14 ' de) türüne göre alır.
+Bir `tuple` nesneden, dizine veya (c++ 14 ' de) bir öğeyi türüne göre alır.
 
 ```cpp
 // by index:
@@ -81,23 +81,23 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*\
+*İndeks*\
 Alınacak öğenin dizini.
 
-*Türler*\
+*Türü*\
 Tanımlama sırasında bildirim sırasına göre bildirildiği türlerin sırası.
 
-*T*\
+*Şı*\
 Alınacak öğenin türü.
 
-*Tanımlama grubu*\
-Herhangi bir sayıda öğe içeren `std::tuple`.
+*Le*\
+`std::tuple`Herhangi bir sayıda öğe içeren bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevleri, Dizin *dizinindeki*değere veya `tuple` nesnesinde *T* türüne bir başvuru döndürür.
+Şablon işlevleri, Dizin *dizininde*veya nesne içindeki *T* türünde olan değere bir başvuru döndürür `tuple` .
 
-Kayıt düzeni T türünde birden fazla veya daha az öğe içeriyorsa `get<T>(Tuple)` çağırmak derleyici hatası oluşturur.
+`get<T>(Tuple)`Demet, T türünde birden fazla veya daha az öğe içeriyorsa, çağırma bir derleyici hatası oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -128,7 +128,7 @@ int main() {
 0 1.42 Call me Tuple
 ```
 
-## <a name="make_from_tuple"></a>make_from_tuple
+## <a name="make_from_tuple"></a><a name="make_from_tuple"></a> make_from_tuple
 
 ```cpp
 template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
@@ -136,11 +136,11 @@ template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`ile aynı.
+Aynı `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})` .
 
-## <a name="make_tuple"></a>make_tuple
+## <a name="make_tuple"></a><a name="make_tuple"></a> make_tuple
 
-Öğe değerlerinden bir `tuple` oluşturur.
+Öğesinden bir `tuple` öğesi değerleri yapar.
 
 ```cpp
 template <class T1, class T2, ..., class TN>
@@ -157,9 +157,9 @@ Nth işlev parametresinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, karşılık gelen tür `Ti` `cv` `reference_wrapper<X>`olduğunda her tür `Vi` `X&` `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)`döndürür. Aksi takdirde, `Ti`.
+Şablon işlevi `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)` , her türün `Vi` `X&` karşılık gelen tür olduğu, `Ti` `cv` `reference_wrapper<X>` Aksi durumda `Ti` olduğu bir değer döndürür.
 
-`make_tuple` avantajlarından biri, depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenmesi ve açıkça belirtilmesi gerekmez. `make_tuple` kullandığınızda `make_tuple<int, int>(1, 2)` gibi açık şablon bağımsız değişkenlerini kullanmayın, çünkü gereksiz bir şekilde ayrıntılıdır ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları ekler.
+Uygulamasının bir avantajı, `make_tuple` depolanan nesne türlerinin derleyici tarafından otomatik olarak belirlenmesi ve açıkça belirtilmesi gerekmez. `make_tuple<int, int>(1, 2)` `make_tuple` Gereksiz bir şekilde ayrıntılıdır ve derleme hatasına neden olabilecek karmaşık rvalue başvuru sorunları eklediğinden, gibi açık şablon bağımsız değişkenlerini kullanmayın.
 
 ### <a name="example"></a>Örnek
 
@@ -196,16 +196,16 @@ int main() {
 4 5 6 7
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 ```cpp
 template <class... Types>
     void swap(tuple<Types...>& x, tuple<Types...>& y) noexcept(see below );
 ```
 
-## <a name="tie"></a>formlarınızı
+## <a name="tie"></a><a name="tie"></a> formlarınızı
 
-Öğe başvurularından bir `tuple` oluşturur.
+Öğesinden bir `tuple` öğesi başvurusu yapar.
 
 ```cpp
 template <class T1, class T2, ..., class TN>
@@ -219,7 +219,7 @@ N demet öğesinin temel türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`döndürür.
+Şablon işlevi döndürür `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)` .
 
 ### <a name="example"></a>Örnek
 
@@ -262,7 +262,7 @@ int main() {
 0 1 2 3
 ```
 
-## <a name="tuple_cat"></a>tuple_cat
+## <a name="tuple_cat"></a><a name="tuple_cat"></a> tuple_cat
 
 ```cpp
 template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
@@ -272,14 +272,14 @@ template <class... Tuples> constexpr tuple<CTypes...> tuple_cat(Tuples&&...);
 
 Her tür öğesi başlatılarak oluşturulan bir demet nesnesi.
 
-## <a name="tuple_element_t"></a>tuple_element_t
+## <a name="tuple_element_t"></a><a name="tuple_element_t"></a> tuple_element_t
 
 ```cpp
 template <size_t I, class T>
     using tuple_element_t = typename tuple_element<I, T>::type;
 ```
 
-## <a name="tuple_size_v"></a>tuple_size_v
+## <a name="tuple_size_v"></a><a name="tuple_size_v"></a> tuple_size_v
 
 ```cpp
 template <class T>

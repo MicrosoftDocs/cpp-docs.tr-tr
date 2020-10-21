@@ -5,11 +5,11 @@ helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
 ms.openlocfilehash: 5bc6691f6d0b166bb3084091ee6af70474937568
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422257"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92274707"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>Eşzamanlılık Çalışma Zamanını Diğer Eşzamanlılık Modelleriyle Karşılaştırma
 
@@ -19,7 +19,7 @@ Bu belgede Eşzamanlılık Çalışma Zamanı ve diğer teknolojilerin Özellikl
 
 Başka bir eşzamanlılık modeli kullanan mevcut uygulamanızı tamamlamak için Eşzamanlılık Çalışma Zamanı özellikleri ve verimlilik avantajlarından yararlanabilirsiniz. Eşzamanlılık Çalışma Zamanı, birden çok görev zamanlayıcılar aynı bilgi işlem kaynakları için rekabet edildiğinde yük dengelemeyi garanti edemez. Ancak, iş yükleri çakışmazsa, bu efekt en düşük düzeydedir.
 
-## <a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 - [Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma](#models)
 
@@ -27,7 +27,7 @@ Başka bir eşzamanlılık modeli kullanan mevcut uygulamanızı tamamlamak içi
 
 - [Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma](#openmp)
 
-## <a name="models"></a>Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma
+## <a name="comparing-preemptive-scheduling-to-cooperative-scheduling"></a><a name="models"></a> Preemptive zamanlamasını birlikte çalışır zamanlamaya göre karşılaştırma
 
 Preemptive modeli ve birlikte çalışırken zamanlama modelleri, işlem kaynaklarını paylaşmak için birden çok görevi etkinleştirmenin iki yaygın yollarıdır. Örneğin, işlemciler veya donanım iş parçacıkları.
 
@@ -51,7 +51,7 @@ Ortak zamanlama, tüm zamanlama sorunlarını çözmez. Örneğin, diğer görev
 
 [[Üst](#top)]
 
-## <a name="winapi"></a>Eşzamanlılık Çalışma Zamanı Windows API 'siyle karşılaştırma
+## <a name="comparing-the-concurrency-runtime-to-the-windows-api"></a><a name="winapi"></a> Eşzamanlılık Çalışma Zamanı Windows API 'siyle karşılaştırma
 
 Genellikle Windows API (ve daha önce Win32 olarak bilinirdi) olarak adlandırılan Microsoft Windows uygulama programlama arabirimi, uygulamalarınızda eşzamanlılık sağlayan bir programlama modeli sağlar. Eşzamanlılık Çalışma Zamanı, temel işletim sisteminden kullanılamayan ek programlama modelleri sağlamak için Windows API üzerinde oluşturulur.
 
@@ -59,7 +59,7 @@ Eşzamanlılık Çalışma Zamanı paralel çalışma gerçekleştirmek için Wi
 
 ### <a name="programming-languages"></a>Programlama Dilleri
 
-Windows API, programlama modelini göstermek için C programlama dilini kullanır. Eşzamanlılık Çalışma Zamanı, C++ dilin en C++ yeni özelliklerinden faydalanan bir programlama arabirimi sağlar. Örneğin, Lambda işlevleri paralel çalışma işlevlerini tanımlamak için kısa, tür açısından güvenli bir mekanizma sağlar. Eşzamanlılık Çalışma Zamanı kullandığı en yeni C++ özellikler hakkında daha fazla bilgi için bkz. [genel bakış](../../parallel/concrt/asynchronous-message-blocks.md).
+Windows API, programlama modelini göstermek için C programlama dilini kullanır. Eşzamanlılık Çalışma Zamanı, C++ dilinde en yeni özelliklerden yararlanan bir C++ programlama arabirimi sağlar. Örneğin, Lambda işlevleri paralel çalışma işlevlerini tanımlamak için kısa, tür açısından güvenli bir mekanizma sağlar. Eşzamanlılık Çalışma Zamanı kullandığı en yeni C++ özellikleri hakkında daha fazla bilgi için bkz. [genel bakış](../../parallel/concrt/asynchronous-message-blocks.md).
 
 ### <a name="threads-and-thread-pools"></a>İş parçacıkları ve Iş parçacığı havuzları
 
@@ -81,11 +81,11 @@ Windows 7 ve Windows Server 2008 R2 'de, işletim sistemi Eşzamanlılık ve öl
 
 [[Üst](#top)]
 
-## <a name="openmp"></a>Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma
+## <a name="comparing-the-concurrency-runtime-to-openmp"></a><a name="openmp"></a> Eşzamanlılık Çalışma Zamanı OpenMP ile karşılaştırma
 
 Eşzamanlılık Çalışma Zamanı çeşitli programlama modellerine izin vermez. Bu modeller diğer kitaplıkların modellerini örtüşebilir veya tamamlayabilir. Bu bölüm Eşzamanlılık Çalışma Zamanı [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)ile karşılaştırır.
 
-OpenMP programlama modeli açık bir standart tarafından tanımlanır ve FORTRAN ve C/C++ programlama dillerinde iyi tanımlanmış bağlamalar vardır. OpenMP 2,0 ve 2,5 sürümleri, yinelemeli bir paralel algoritmalarda iyi uygundur; diğer bir deyişle, bir dizi veri üzerinde paralel yineleme gerçekleştirir. Paralellik derecesi önceden belirleniyorsa ve sistemdeki kullanılabilir kaynaklarla eşleşiyorsa OpenMP en verimli yöntemdir. OpenMP modeli, çok büyük hesaplama sorunlarının tek bir bilgisayarın işleme kaynaklarında dağıtıldığı yüksek performanslı bilgi işlem için özellikle iyi bir eşleşmedir. Bu senaryoda, donanım ortamı bilinirdi ve geliştirici, algoritma yürütüldüğünde işlem kaynaklarına özel erişime sahip olmasını makul bir şekilde bekleyebilir.
+OpenMP programlama modeli açık bir standart tarafından tanımlanır ve FORTRAN ve C/C++ programlama dillerinin iyi tanımlanmış bağlamaları vardır. OpenMP 2,0 ve 2,5 sürümleri, yinelemeli bir paralel algoritmalarda iyi uygundur; diğer bir deyişle, bir dizi veri üzerinde paralel yineleme gerçekleştirir. Paralellik derecesi önceden belirleniyorsa ve sistemdeki kullanılabilir kaynaklarla eşleşiyorsa OpenMP en verimli yöntemdir. OpenMP modeli, çok büyük hesaplama sorunlarının tek bir bilgisayarın işleme kaynaklarında dağıtıldığı yüksek performanslı bilgi işlem için özellikle iyi bir eşleşmedir. Bu senaryoda, donanım ortamı bilinirdi ve geliştirici, algoritma yürütüldüğünde işlem kaynaklarına özel erişime sahip olmasını makul bir şekilde bekleyebilir.
 
 Ancak, diğer, daha az kısıtlanmış bilgi işlem ortamları OpenMP için iyi bir eşleşmeyebilir. Örneğin, özyinelemeli sorunlar (Hızlı sıralama algoritması veya bir veri ağacını arama gibi), OpenMP kullanarak uygulanması daha zordur. Eşzamanlılık Çalışma Zamanı, [paralel Desenler kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (ppl) ve [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)sağlayarak OpenMP özelliklerini tamamlar. OpenMP 'den farklı olarak Eşzamanlılık Çalışma Zamanı, kullanılabilir kaynaklara uyum sağlayan dinamik bir Zamanlayıcı sağlar ve iş yükleri değiştiğinde paralellik derecesini ayarlar.
 
@@ -98,7 +98,7 @@ Eşzamanlılık Çalışma Zamanı OpenMP ile nasıl Karşılaştırıldığı v
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)<br/>
-[Genel bakış](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
+[Genel Bakış](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)

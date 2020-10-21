@@ -1,20 +1,21 @@
 ---
-title: 'Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma'
-ms.date: 11/04/2016
+title: 'Nasıl yapılır: Gecikmeden sonra tamamlanan bir görev oluşturma'
+description: PPL ConcRT kitaplığını kullanarak bir gecikmeden sonra tamamlanan bir görev oluşturun.
+ms.date: 10/19/2020
 helpviewer_keywords:
 - task_completion_event class, example
 - create a task that completes after a delay, example [C++]
 ms.assetid: 3fc0a194-3fdb-4eba-8b8a-b890981a985d
-ms.openlocfilehash: 80bfdeb7586f9c32592bc408a9de0c9188b77a29
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 694b6190a7ec60043a5674e920dc54e6e7bf0eb6
+ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413794"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92274556"
 ---
-# <a name="how-to-create-a-task-that-completes-after-a-delay"></a>Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma
+# <a name="how-to-create-a-task-that-completes-after-a-delay"></a>Nasıl yapılır: Gecikmeden sonra tamamlanan bir görev oluşturma
 
-Bu örnek, bir gecikmeden sonra tamamlanan bir görev oluşturmak için [concurrency:: Task](../../parallel/concrt/reference/task-class.md), [concurrency:: cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md), concurrency:: [cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md), [concurrency](../../parallel/concrt/reference/task-completion-event-class.md):: task_completion_event, [concurrency:: Timer](../../parallel/concrt/reference/timer-class.md)ve [concurrency:: Call](../../parallel/concrt/reference/call-class.md) sınıflarının nasıl kullanılacağını gösterir. Bu yöntemi, zaman zaman veri yoklamaya, zaman aşımlarını ortaya çıkaracak, önceden belirlenmiş bir süre için Kullanıcı girişinin geciktirilebilmesi ve bu şekilde devam eden döngüler oluşturmak için kullanabilirsiniz.
+Bu örnek [`concurrency::task`](../../parallel/concrt/reference/task-class.md) , [`concurrency::cancellation_token_source`](../../parallel/concrt/reference/cancellation-token-source-class.md) [`concurrency::cancellation_token`](../../parallel/concrt/reference/cancellation-token-class.md) [`concurrency::task_completion_event`](../../parallel/concrt/reference/task-completion-event-class.md) [`concurrency::timer`](../../parallel/concrt/reference/timer-class.md) [`concurrency::call`](../../parallel/concrt/reference/call-class.md) bir gecikmeden sonra tamamlanan bir görev oluşturmak için,,,, ve sınıflarının nasıl kullanılacağını gösterir. Bu yöntemi, zaman zaman veri yoklamaya yönelik döngüler oluşturmak için kullanabilirsiniz. Zaman aşımlarını, önceden belirlenmiş bir süre için Kullanıcı girişi işlemeyi erteleyebilir ve bu şekilde devam edebilirsiniz.
 
 ## <a name="example-complete_after-and-cancel_after_timeout-functions"></a>Örnek: complete_after ve cancel_after_timeout işlevleri
 
@@ -23,17 +24,17 @@ Aşağıdaki örnekte `complete_after` ve `cancel_after_timeout` işlevleri gös
 > [!TIP]
 > `timer`Zaman uyumsuz aracılar kitaplığının parçası olan ve sınıfları hakkında daha fazla bilgi için `call` bkz. [zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-`cancel_after_timeout`İşlevi, `complete_after` Bu görev belirli bir zaman aşımından önce tamamlanmazsa bir görevi iptal etmek için işlevini oluşturur. `cancel_after_timeout`İşlevi iki görevi oluşturur. İlk görev, belirtilen görev tamamlandıktan sonra başarıyı ve tamamlandığını gösterir; İkinci görev, belirtilen zaman aşımından sonra başarısız olduğunu ve tamamlandığını gösterir. `cancel_after_timeout`İşlevi, başarı veya başarısızlık görevi tamamlandığında çalışan bir devamlılık görevi oluşturur. Önce hata görevi tamamlanırsa, devamlılık, genel görevi iptal etmek için belirteç kaynağını iptal eder.
+`cancel_after_timeout`İşlevi, `complete_after` Bu görev belirli bir zaman aşımından önce tamamlanmazsa bir görevi iptal etmek için işlevini oluşturur. `cancel_after_timeout`İşlevi iki görevi oluşturur. İlk görev, belirtilen görev tamamlandıktan sonra başarılı ve tamamlanmış olduğunu gösterir. İkinci görev, belirtilen zaman aşımından sonra başarısız olduğunu ve tamamlandığını gösterir. `cancel_after_timeout`İşlevi, başarı veya başarısızlık görevi tamamlandığında çalışan bir devamlılık görevi oluşturur. Önce hata görevi tamamlanırsa, devamlılık, genel görevi iptal etmek için belirteç kaynağını iptal eder.
 
 [!code-cpp[concrt-task-delay#1](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_1.cpp)]
 
 ## <a name="example-compute-count-of-prime-numbers"></a>Örnek: asal sayıların Işlem sayısı
 
-Aşağıdaki örnek [0, 100000] aralığındaki asal sayıların sayısını birden çok kez hesaplar. İşlem belirli bir zaman sınırı içinde tamamlanmazsa başarısız olur. `count_primes`İşlevi, işlevinin nasıl kullanılacağını gösterir `cancel_after_timeout` . Verilen aralıktaki primin sayısını sayar ve görev sağlanan sürede tamamlanmazsa başarısız olur. `wmain`İşlevi `count_primes` işlevi birden çok kez çağırır. Her seferinde zaman sınırı yarıya iner. Program, işlem geçerli zaman sınırında tamamlanmadıktan sonra tamamlanır.
+Aşağıdaki örnek [0, 100000] aralığındaki asal sayıların sayısını birden çok kez hesaplar. İşlem belirli bir zaman sınırı içinde tamamlanmazsa başarısız olur. `count_primes`İşlevi, işlevinin nasıl kullanılacağını gösterir `cancel_after_timeout` . Verilen aralıktaki primin sayısını sayar ve görev sağlanan sürede tamamlanmazsa başarısız olur. `wmain`İşlevi `count_primes` işlevi birden çok kez çağırır. Her seferinde zaman sınırı yarıya iner. Program, işlem geçerli zaman sınırında tamamlanmazsa tamamlanır.
 
 [!code-cpp[concrt-task-delay#2](../../parallel/concrt/codesnippet/cpp/how-to-create-a-task-that-completes-after-a-delay_2.cpp)]
 
-Bir gecikmeden sonra görevleri iptal etmek için bu tekniği kullandığınızda, genel görev iptal edildikten sonra, herhangi bir başlamamış görev başlatılmaz. Ancak, uzun süre çalışan görevlerin iptal etmek için zamanında yanıt vermesi önemlidir. Görev iptali hakkında daha fazla bilgi için bkz. [PPL 'de iptal](cancellation-in-the-ppl.md).
+Bir gecikmeden sonra görevleri iptal etmek için bu tekniği kullandığınızda, genel görev iptal edildikten sonra, başlamamış görevler başlatılmaz. Ancak, uzun süre çalışan görevlerin iptali hızlı bir şekilde yanıt vermesi önemlidir. Görev iptali hakkında daha fazla bilgi için bkz. [PPL 'de iptal](cancellation-in-the-ppl.md).
 
 ## <a name="complete-code-example"></a>Kod örneğini doldurun
 

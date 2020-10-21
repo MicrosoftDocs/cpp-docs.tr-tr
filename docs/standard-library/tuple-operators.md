@@ -1,5 +1,5 @@
 ---
-title: '&lt;tanımlama grubu&gt; işleçleri'
+title: '&lt;demet &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - tuple/std::operator!=
@@ -10,17 +10,17 @@ f1_keywords:
 - tuple/std::operator==
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
 ms.openlocfilehash: 5554f08f32048bafde5bdb2c316e12e1e01c6ffb
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422649"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92274626"
 ---
-# <a name="lttuplegt-operators"></a>&lt;tanımlama grubu&gt; işleçleri
+# <a name="lttuplegt-operators"></a>&lt;demet &gt; işleçleri
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
-Eşitsizlik için `tuple` nesneleri karşılaştırın.
+`tuple`Eşitsizlik için nesneleri karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -36,7 +36,7 @@ Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, `N` 0 olduğunda false döndürür, aksi durumda `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
+İşlev 0 olduğunda false `N` , aksi durumda false değerini döndürür `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)` .
 
 ### <a name="example"></a>Örnek
 
@@ -83,9 +83,9 @@ false
 true
 ```
 
-## <a name="op_lt"></a>işleç&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
-`tuple` nesnelerini daha az karşılaştırın.
+`tuple`Nesneleri daha az olacak şekilde karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -101,7 +101,7 @@ Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`N` 0 ' dan büyükse ve `tpl1` ilk farklı değer `tpl2`karşılık gelen değerden daha az karşılaştırıldığı zaman true döndürür, aksi takdirde false döndürür.
+İşlevi, `N` 0 ' dan büyük olduğunda ve içindeki ilk farklı değer `tpl1` içindeki karşılık gelen değerden daha az karşılaştırıldığı zaman true değerini döndürür `tpl2` , aksi takdirde false döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -148,9 +148,9 @@ false
 true
 ```
 
-## <a name="op_lt_eq"></a>işleç&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
-`tuple` nesnelerini daha az veya eşit olacak şekilde karşılaştırın.
+`tuple`Nesneleri daha az veya eşit olacak şekilde karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -166,7 +166,7 @@ Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `!(tpl2 < tpl1)`döndürür.
+İşlev döndürür `!(tpl2 < tpl1)` .
 
 ### <a name="example"></a>Örnek
 
@@ -213,9 +213,9 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
-`tuple` nesneleri eşitlik için karşılaştırın.
+`tuple`Nesneleri eşitlik için karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -231,7 +231,7 @@ Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev, `N` 0 olduğunda true, aksi durumda `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`döndürür.
+İşlevi 0 olduğunda true `N` , aksi takdirde döndürür `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)` .
 
 ### <a name="example"></a>Örnek
 
@@ -278,9 +278,9 @@ true
 false
 ```
 
-## <a name="op_gt"></a>işleç&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
-`tuple` nesnelerini daha fazla karşılaştırın.
+`tuple`Nesneleri daha fazla karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -296,7 +296,7 @@ Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `tpl2 < tpl1`döndürür.
+İşlev döndürür `tpl2 < tpl1` .
 
 ### <a name="example"></a>Örnek
 
@@ -343,9 +343,9 @@ false
 true
 ```
 
-## <a name="op_gt_eq"></a>işleç&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
-`tuple` nesnelerini daha büyük veya eşit olacak şekilde karşılaştırın.
+`tuple`Nesneleri daha büyük veya eşit olacak şekilde karşılaştırın.
 
 ```cpp
 template <class T1, class T2, ..., class TN,
@@ -361,7 +361,7 @@ Nth demet öğesinin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev `!(tpl1 < tpl2)`döndürür.
+İşlev döndürür `!(tpl1 < tpl2)` .
 
 ### <a name="example"></a>Örnek
 
