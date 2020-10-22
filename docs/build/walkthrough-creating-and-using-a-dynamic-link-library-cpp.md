@@ -8,10 +8,10 @@ helpviewer_keywords:
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
 ms.openlocfilehash: 6639165856f09db25a2b96c41db2bb94ab93aa99
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.sourcegitcommit: 59b7c18703d1ffd66827db0e2eeece490d3d8789
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "90683630"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma (C++)
@@ -40,7 +40,7 @@ Bu izlenecek yol bazı yaygın durumları kapsamaz. Kod, C++ dll 'lerinin diğer
 
 Dll 'Ler hakkında daha fazla bilgi için bkz. [Visual Studio 'Da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md). Örtük bağlama ve açık bağlama hakkında daha fazla bilgi için, [Hangi bağlama yönteminin kullanılacağını belirleme](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)konusuna bakın. C dili bağlantı kurallarını kullanan programlama dilleri ile kullanmak üzere C++ dll 'Leri oluşturma hakkında bilgi için bkz. [c dili Çalıştırılabilirlerinde kullanmak Için c++ Işlevlerini dışarı aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md). .NET dilleri ile kullanmak üzere dll oluşturma hakkında daha fazla bilgi için, bkz. [Visual Basic UYGULAMALARıNDAN dll Işlevleri çağırma](calling-dll-functions-from-visual-basic-applications.md).
 
-## <a name="prerequisites"></a>Önkoşullar
+## <a name="prerequisites"></a>Ön koşullar
 
 - Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir.
 
