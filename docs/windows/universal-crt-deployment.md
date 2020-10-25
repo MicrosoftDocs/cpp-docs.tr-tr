@@ -1,53 +1,54 @@
 ---
 title: Evrensel CRT dağıtımı
-ms.date: 05/11/2018
+description: Uygulamanız için Evrensel CRT kitaplığı 'nın nasıl, ne zaman ve nereye dağıtılacağını öğrenin.
+ms.date: 10/23/2020
 helpviewer_keywords:
 - deploying the CRT [C++]
 - application CRT deployment [C++]
-ms.openlocfilehash: 1f6e685cca65c4b31ac2e6147341c4b5a3fe8228
-ms.sourcegitcommit: 6cf0c67acce633b07ff31b56cebd5de3218fd733
+ms.openlocfilehash: 50ab23f3b0276b058685e9c9ef6634caf5a96186
+ms.sourcegitcommit: bf54b407169900bb668c85a67b31dbc0f069fe65
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344454"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92497213"
 ---
 # <a name="universal-crt-deployment"></a>Evrensel CRT dağıtımı
 
-Visual Studio 2013 ile Visual Studio NET'ten her önemli bir C++ Derleyici ve araçların sürümü, Microsoft C çalışma zamanı (CRT) Kitaplığı'nın yeni bir tek başına sürüm eklemiştir. Bu tek başına sürümlerini CRT bağımsız gelen ve çeşitli derece, birbirleri ile uyumsuz. Örneğin, Visual Studio 2012 tarafından kullanılan CRT kitaplığı sürüm 11, adlandırılmış msvcr110.dll, ve Visual Studio 2013'ün tarafından kullanılan CRT sürüm 12 adlandırılmış msvcr120.dll şeklindeydi. Visual Studio 2015'te başlayarak, durum artık değildir. Visual Studio 2015 ve Visual Studio'nun tüm sonraki sürümler, bir evrensel CRT kullanın.
+Visual Studio .NET Visual Studio 2013 aracılığıyla, C++ derleyicisinin ve araçların her ana sürümü, Microsoft C Runtime (CRT) kitaplığının yeni ve tek başına bir sürümünü içeriyordu. CRT 'nın bu tek başına sürümleri, birbirinden bağımsız olarak ve çeşitli derecelerde birbirleriyle uyumsuzdur. Örneğin, Visual Studio 2012 tarafından kullanılan CRT kitaplığı sürüm 11, msvcr110.dll adı ve Visual Studio 2013 tarafından kullanılan CRT, msvcr120.dll adlı sürüm 12 idi. Visual Studio 2015 ' den başlayarak artık böyle bir durum değildir. Visual Studio 2015 ve sonraki Visual Studio sürümleri tek bir Evrensel CRT kullanır.
 
-Evrensel CRT, Windows 10 işletim sisteminin bir parçası olarak dahil bir Microsoft Windows işletim sistemi bileşenidir. Windows Update'i kullanarak eski işletim sistemleri, Windows 8.1 ile Windows Vista için kullanılabilir. Evrensel CRT yerel dağıtımını, bazı kısıtlamalar ile desteklenir.
+Universal CRT (UCRT), bir Microsoft Windows işletim sistemi bileşenidir. Windows 10 ve Windows Server 2016 veya üzeri sürümlerde işletim sisteminin bir parçası olarak dahil edilmiştir. UıCRT, hala genişletilmiş destek içinde olan eski işletim sistemlerinde Windows Update kullanılarak kullanılabilir. Evrensel CRT 'nin yerel dağıtımı, bazı kısıtlamalarla desteklenir.
 
 ## <a name="central-deployment"></a>Merkezi dağıtım
 
-Evrensel CRT merkezi olarak yüklemek için tercih edilen yöntem, Microsoft Windows Update kullanmaktır. Evrensel CRT tüm önerilen güncelleştirmesi Microsoft Windows işletim sistemleri, böylece göre varsayılan, normal güncelleştirme işleminin bir parçası yüklemek çoğu makineleri desteklenir. Evrensel CRT ilk sürümdü [KB2999226](https://support.microsoft.com/kb/2999226). İçinde bir sonraki güncelleştirme ile çeşitli hata düzeltmeleri yapıldı [KB3118401](https://support.microsoft.com/kb/3118401), ve daha fazla hata düzeltmeleri ve yeni özelliklerle ek güncelleştirmeler yapıldı. Daha yeni güncelleştirmeler için arama [support.microsoft.com](https://support.microsoft.com) Evrensel C çalışma zamanı veya evrensel CRT.
+Evrensel CRT 'yi merkezi olarak yüklemek için tercih edilen yöntem, Microsoft Windows Update kullanmaktır. Evrensel CRT, tüm desteklenen Microsoft Windows işletim sistemleri için önerilen bir güncelleştirmedir, bu nedenle varsayılan olarak çoğu makine bunu normal güncelleştirme sürecinin bir parçası olarak yükler. Universal CRT 'nin ilk sürümü [KB2999226](https://support.microsoft.com/kb/2999226)idi. [KB3118401](https://support.microsoft.com/kb/3118401)' de çeşitli hata düzeltmeleri içeren daha sonraki bir güncelleştirme yapılmıştır ve daha fazla hata düzeltmesi ve yeni özelliklerle ilgili ek güncelleştirmeler yapılmıştır. Daha son güncelleştirmeler için, [support.Microsoft.com](https://support.microsoft.com) Universal C Runtime veya Universal CRT için arama yapın.
 
-Tüm Microsoft Windows bilgisayarlarda Windows Update kullanarak düzenli olarak güncelleştirmeleri yüklemek ve bazıları tüm önerilen güncelleştirmeleri yüklenmez. Visual Studio 2015 kullanılarak oluşturulmuş ve üzeri uygulamaların kullanımını desteklemek üzere C++ araç takımları bu makinelerde vardır Evrensel CRT yeniden dağıtılabilir dosyaları çevrimdışı dağıtım için kullanılabilir. Yeniden dağıtılabilir dosyaları, yukarıdaki KB bağlantılardan birini yüklenebilir. Makine için geçerli hizmet paketi güncelleştirildiğini Evrensel CRT yeniden dağıtılabilir gerektirir. Bu nedenle, örneğin, Windows 7 için yeniden dağıtılabilir yalnızca Windows 7 SP1 değil Windows 7 RTM yüklenir.
+Tüm Microsoft Windows bilgisayarları Windows Update kullanarak güncelleştirmeleri düzenli olarak yüklemez ve bazıları önerilen tüm güncelleştirmeleri yükleyemeyebilir. Bu makinelerde Visual Studio 2015 ve üzeri C++ araç kümeleri kullanılarak oluşturulan uygulamaların kullanımını desteklemek için çevrimdışı dağıtım için kullanılabilen Evrensel CRT yeniden dağıtılabilir dosyalar bulunur. Bu yeniden dağıtılabilir dosyalar, yukarıdaki KB bağlantılarından birinden indirilebilir. Evrensel CRT yeniden dağıtılabilir, makinenin geçerli hizmet paketine güncelleştirilmesini gerektirir. Bu nedenle, örneğin, Windows 7 için yeniden dağıtılabilir Windows 7 RTM 'ye değil yalnızca Windows 7 SP1 'e yüklenir.
 
-Evrensel CRT temel bir bağımlılığı olduğundan C++ kitaplıkları, görsel C++ yeniden dağıtılabilir (VCRedist) yüklü bir hesabınız yoksa makinelerde ilk Evrensel CRT (sürüm 10.0.10240) sürümü yükler. Bu sürüm karşılamak üzere yeterli C++ kitaplık bağımlılıkları. Uygulamanızı Evrensel CRT daha yeni bir sürümüne bağlıdır, makinenizi tam olarak güncel duruma getirmek için Windows Update'i kullanın veya bu sürümünü açıkça yüklemeniz gerekir. Olası birden çok gerekli önlemek için VCRedist yükleme yeniden önce Windows Update veya bir MSU aracılığıyla Evrensel C çalışma zamanı yüklemek en iyisidir.
+Evrensel CRT, C++ kitaplıklarının temel bir bağımlılığı olduğundan, yeniden dağıtılabilir Visual C++ (VCRedist), önceden yüklenmiş bir makineye sahip olmayan makinelere Evrensel CRT (sürüm 10.0.10240) öğesinin ilk sürümünü yüklenir. Bu sürüm, C++ Kitaplığı bağımlılıklarını karşılamak için yeterlidir. Uygulamanız Universal CRT 'nin daha yeni bir sürümüne bağımlıysa, makinenizi tamamen güncel hale getirmek veya bu sürümü açıkça yüklemek için Windows Update kullanmanız gerekir. Birden çok zorunlu yeniden başlatmaların oluşmasını önlemek için, VCRedist 'i yüklemeden önce Windows Update veya MSU aracılığıyla Universal C çalışma zamanı 'nı yüklemeniz en iyisidir.
 
-Tüm işletim sistemleri, Windows Update aracılığıyla en son Evrensel C çalışma zamanı için uygundur. Windows 10'da merkezi olarak dağıtılan sürümü işletim sistemi sürümü ile eşleşir. Ayrıca, Evrensel C çalışma zamanı güncelleştirmek için işletim sistemini güncelleştirmeniz gerekir. Windows 8.1 ile Windows Vista için en son kullanılabilir Evrensel C çalışma zamanı şu anda diğer düzeltmeler (sürüm 10.0.14393) ile Windows 10 Yıldönümü Güncelleştirmesi'nde bulunan sürüm dayanır.
+Tüm işletim sistemleri, Windows Update aracılığıyla en son Evrensel C çalışma zamanına uygun değildir. Windows 10 ' da, merkezi olarak dağıtılan sürüm işletim sisteminin sürümüyle eşleşir. Evrensel C çalışma zamanını daha fazla güncelleştirmek için işletim sistemini güncelleştirmeniz gerekir. Windows Vista Windows 8.1 aracılığıyla, kullanılabilir en son Evrensel C çalışma zamanı, ek düzeltmeler (sürüm 10.0.14393) ile Windows 10 yıldönümü güncelleştirmesi 'nde yer alan sürümü temel alır.
 
 ## <a name="local-deployment"></a>Yerel dağıtım
 
-Evrensel CRT yerel dağıtımını desteklenir, ancak performans ve güvenlik nedenleriyle önerilmez. DLL'leri yerel dağıtımı için Windows SDK'da Windows Setleri parçası olarak dahil edilir\\10\\Redist\\ucrt\\bilgisayar mimarisi DLL'leri alt. DLL'leri gerekli ucrtbase.dll ve bir dizi API adlı DLL'leri APISet ileticisi-ms-win -\*.dll. Her işletim sisteminde gerekli DLL'lerin kümesini değiştirir. Yerel olarak dağıttığınızda tüm DLL'leri dahil önemle tavsiye edilir.
+Evrensel CRT 'nin yerel dağıtımı desteklenir, ancak hem performans hem de güvenlik nedenleriyle önerilmez. Yerel dağıtım için dll 'Ler, \\ \\ bilgisayar mimarisine göre Windows Kits 10 Redist \\ UCRT \\ dll alt dizininde Windows SDK bir parçası olarak dahil edilir. Gerekli dll 'Ler ucrtbase.dll ve API-MS-Win-. dll adlı bir APISet iletici dll kümesi içerir \* . Her işletim sisteminde gereken dll 'Ler kümesi farklılık gösterir. Yerel olarak dağıtırken tüm dll 'Leri eklemeniz önemle tavsiye edilir.
 
-Yerel dağıtımda dikkat edilmesi gereken iki kısıtlama vardır:
+Yerel dağıtımda şunları göz önünde bulundurulması için iki kısıtlama vardır:
 
-- Bir uygulama bir yerel kopyasını Evrensel CRT içerse bile Windows 10'da evrensel CRT Sistem dizinindeki her zaman kullanılır. Temel işletim sisteminin bir bileşeni Windows 10 Evrensel CRT olduğundan yerel kopyayı daha yeni sürümü, olsa bile geçerlidir.
+- Windows 10 ' da, bir uygulama Evrensel CRT 'nın uygulama yerel kopyasını içerse bile, Sistem dizinindeki Evrensel CRT her zaman kullanılır. Evrensel CRT, Windows 10 ' da bir çekirdek işletim sistemi bileşeni olduğundan, yerel kopya daha yeni olduğunda bile bu doğrudur.
 
-- Yürütülebilir ana uygulama dizininin dışında bir dizinde yer alıyorsa önce Windows 8, Windows sürümlerinde, Evrensel CRT yerel olarak bir eklenti ile paketlenemiyor. DLL'leri APISet iletici başarıyla ucrtbase.dll bu durumda çözümleyemedi. Bazı önerilen alternatif çözümler içerir:
+- Windows 8 ' den önceki Windows sürümlerinde Evrensel CRT, ana uygulama yürütülebilir dosyasının dizininden başka bir dizinde bulunuyorsa bir eklenti ile yerel olarak paketlenemez. APISet iletici dll 'Leri bu durumda ucrtbase.dll başarıyla çözümlenemiyor. Bazı önerilen alternatif çözümler şunlardır:
 
-  - Evrensel CRT kitaplıklarla statik bağlantılar oluşturabilir,
-  - Evrensel CRT merkezi olarak dağıtmak veya
-  - Evrensel CRT dosyaları, uygulama ile aynı dizine koyun.
+  - Evrensel CRT 'yi statik olarak bağlayın,
+  - Evrensel CRT 'yi merkezi olarak dağıtma veya
+  - Evrensel CRT dosyalarını uygulamayla aynı dizine yerleştirin.
 
-## <a name="deployment-on-microsoft-windows-xp"></a>Microsoft Windows XP üzerinde dağıtım
+## <a name="deployment-on-microsoft-windows-xp"></a>Microsoft Windows XP 'de dağıtım
 
-Visual Studio 2015 ve Visual Studio 2017 Microsoft Windows XP kullanmak için yazılım geliştirmeyi desteklemek devam edin. Bu geliştirme desteği için evrensel CRT sürümünü Microsoft Windows XP üzerinde çalışır. Merkezi dağıtımı Microsoft Windows XP üzerine Evrensel CRT diğer işletim sistemlerinden farklı olarak, bu nedenle Microsoft Windows XP işletim sistemi temel veya genişletilmiş destek artık değil.
+Visual Studio 2015 ve Visual Studio 2017, Microsoft Windows XP 'de kullanım için yazılım geliştirmeyi desteklemeye devam eder. Bu geliştirmeyi desteklemek için Universal CRT 'nin bir sürümü Microsoft Windows XP 'de çalışır. Microsoft Windows XP işletim sistemi artık temel veya genişletilmiş destek değildir, bu nedenle Universal CRT 'nin Microsoft Windows XP 'de merkezi dağıtımı diğer işletim sistemlerinden farklıdır.
 
-Zaman görsel C++ Windows XP'de redistributable yüklendi, doğrudan Evrensel CRT ve tüm bağımlılıklarını sistem dizinine yükler. Yükleme veya herhangi bir Windows güncelleştirme bağlı değil. Yeniden dağıtılabilir birleştirme modülleri, Microsoft_VC*sürüm*_CRT_\*.msm dosyaları aynı yapın.
+Yeniden dağıtılabilir Visual C++ Windows XP 'ye yüklendiğinde, Evrensel CRT 'yı ve tüm bağımlılıklarını sistem dizinine doğrudan kurar. Hiçbir Windows Update yüklemez veya buna bağlı değildir. Yeniden dağıtılabilir birleştirme modülleri olan Microsoft_VC*Version*_CRT_ \* . msm dosyaları aynı şekilde yapılır.
 
-Windows XP Evrensel CRT yerel dağıtımı gibi diğer desteklenen işletim sistemlerinde aynıdır.
+Windows XP 'de Evrensel CRT 'nin yerel dağıtımı, desteklenen diğer işletim sistemleriyle aynıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
