@@ -1,6 +1,7 @@
 ---
-title: /clr (Ortak Dil Çalışma Zamanı Derlemesi)
-ms.date: 05/16/2019
+title: /clr (Ortak dil çalışma zamanı derlemesi)
+description: C++/CLı ve C++ kodunu yönetilen kod olarak derlemek için Microsoft C++ derleyici seçeneği/clr ' i kullanın.
+ms.date: 10/25/2020
 f1_keywords:
 - /CLR
 - VC.Project.VCNMakeTool.CompileAsManaged
@@ -13,87 +14,87 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: fa2be3d3ce17df104cda121e4869c975ec6dd440
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: b4634b63e58344893d99e2217e57693a2c169f66
+ms.sourcegitcommit: faecabcdd12ff53eb79dc0df193fc3567f2f037c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837302"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92639100"
 ---
-# <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
+# <a name="clr-common-language-runtime-compilation"></a>`/clr` (Ortak dil çalışma zamanı derlemesi)
 
-Ortak dil çalışma zamanı (CLR) özellikleri kullanmak, uygulamaları ve bileşenleri sağlar.
+Uygulamaların ve bileşenlerin ortak dil çalışma zamanı (CLR) özelliklerini kullanmasına olanak sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ CLR**[**:**_seçenekleri_]
+> **`/clr`**\[**`:`**_Seçenekler_ ]
 
 ## <a name="arguments"></a>Arguments
 
-*Seçenekler*<br/>
-Bir veya daha fazla aşağıdaki anahtarları, virgülle ayrılmış.
+*Seçenekler*\
+Aşağıdaki virgülle ayrılmış bağımsız değişkenlerden biri veya daha fazlası.
 
 - yok
 
-   Hiçbir seçenek olmadan **/CLR** uygulama meta verilerini oluşturur. Meta veriler, diğer CLR uygulamaları tarafından tüketilebilecek ve türleri ve diğer CLR bileşenlerine ait meta verilerdeki veri kullanmak uygulamayı etkinleştirir. Daha fazla bilgi için [karışık (yerel ve yönetilen) derlemeler](../../dotnet/mixed-native-and-managed-assemblies.md).
+   Seçenek olmadan, **`/clr`** uygulama için meta veriler oluşturur. Meta veriler diğer CLR uygulamaları tarafından tüketilebilir ve uygulamanın diğer CLR bileşenlerinin meta verilerindeki türleri ve verileri kullanmasına olanak sağlar. Daha fazla bilgi için bkz. [karma (yerel ve yönetilen) derlemeler](../../dotnet/mixed-native-and-managed-assemblies.md).
 
-- **saf**
+- **`pure`**
 
-   **/ CLR: pure kullanım dışı**. Seçeneği, Visual Studio 2017 ve sonraki sürümlerinde kaldırılır. Saf MSIL C# için gereken kod bağlantı noktası öneririz.
+   **`/clr:pure` kullanım dışıdır** . Bu seçenek, Visual Studio 2017 ve üzeri sürümlerde kaldırılır. C# ' ye saf MSIL olması gereken bağlantı noktası kodu kullanmanızı öneririz.
 
-- **Güvenli**
+- **`safe`**
 
-   **/ CLR: safe kullanım dışı**. Seçeneği, Visual Studio 2017 ve sonraki sürümlerinde kaldırılır. Güvenli MSIL C# için gereken kod bağlantı noktası öneririz.
+   **`/clr:safe` kullanım dışıdır** . Bu seçenek, Visual Studio 2017 ve üzeri sürümlerde kaldırılır. C# ' ye güvenli MSIL olması gereken bağlantı noktası kodu kullanmanızı öneririz.
 
-- **noAssembly**
+- **`noAssembly`**
 
-   **kullanım dışı /CLR:noAssembly**. Kullanım [/LN (MSIL modülü Oluştur)](ln-create-msil-module.md) yerine.
+   **`/clr:noAssembly` kullanım dışıdır** . Bunun yerine [ `/LN` (MSIL Modülü Oluştur)](ln-create-msil-module.md) kullanın.
 
-   Bir derleme bildirimi çıkış dosyası içine eklenmesi gerektiğini değil belirtir. Varsayılan olarak, **noAssembly** seçeneği geçerli değil.
+   Derleyiciye çıkış dosyasına bir derleme bildirimi eklememasını söyler. Varsayılan olarak **`noAssembly`** seçenek geçerli değildir.
 
-   Derleme meta verileri bildiriminde yok yönetilen bir program olarak bilinen bir *Modülü*. **NoAssembly** seçeneği, yalnızca bir modül üretmek için kullanılabilir. Kullanarak derleme yaparsanız [/c](c-compile-without-linking.md) ve **/clr:noAssembly**, ardından belirtin [noassembly](noassembly-create-a-msil-module.md) bir modül oluşturma seçeneği bağlayıcıya aşamasındadır.
+   Bildirimde derleme meta verileri olmayan yönetilen bir program *Modül* olarak bilinir. **`noAssembly`** Seçeneği yalnızca bir modül oluşturmak için kullanılabilir. Ve kullanarak derlerseniz [`/c`](c-compile-without-linking.md) **`/clr:noAssembly`** , [`/NOASSEMBLY`](noassembly-create-a-msil-module.md) bir modül oluşturmak için bağlayıcı aşamasında seçeneğini belirleyin.
 
-   Visual Studio 2005 önce **/clr:noAssembly** gerekli **/LD**. **/LD** belirttiğinizde artık örtük **/clr:noAssembly**.
+   Visual Studio 2005 öncesi, **`/clr:noAssembly`** gereklidir **`/LD`** . **`/LD`** , ' i belirttiğinizde, artık ima edilir **`/clr:noAssembly`** .
 
-- **initialAppDomain**
+- **`initialAppDomain`**
 
-   CLR sürüm 1 çalıştırmak Visual C++ uygulaması sağlar.  Kullanılarak derlenmiş bir uygulama **initialAppDomain** CLR 1. sürümü desteklenmediği için ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.
+   Bir C++/CLı uygulamasının CLR sürüm 1 ' de çalışmasını sağlar.  Kullanılarak derlenen bir uygulama **`initialAppDomain`** , clr 'nin 1. sürümünde desteklenmediğinden, ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.
 
-- **nostdlib**
+- **`nostdlib`**
 
-   Derleyicinin varsayılan \clr dizin yok saymasını yönlendirir. Bir DLL System.dll gibi birden çok sürümünü ekliyorsanız derleyici hataları oluşturur. Bu seçeneği kullanarak derleme sırasında kullanılacak belirli framework belirtmenize olanak sağlar.
+   Derleyiciye varsayılan dizini yok saymasını söyler *`\clr`* . System.dll gibi, DLL 'nin birden çok sürümünü dahil ederseniz derleyici hata üretir. Bu seçenek, derleme sırasında kullanmak üzere belirli bir çerçeveyi belirtmenizi sağlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen kod inceledi ve CLR tarafından yönetilen koddur. Yönetilen kod, yönetilen nesnelere erişebilir. Daha fazla bilgi için [/CLR kısıtlamalar](clr-restrictions.md).
+Yönetilen kod, CLR tarafından incelenelebilecek ve yönetilebilen koddur. Yönetilen kod, yönetilen nesnelere erişebilir. Daha fazla bilgi için bkz. [ `/clr ` kısıtlamalar](clr-restrictions.md).
 
-Tanımlama ve yönetilen türleri kullanma uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [çalışma zamanı platformları için bileşen uzantıları](../../extensions/component-extensions-for-runtime-platforms.md).
+C++ ' da yönetilen türleri tanımlayan ve tüketen uygulamalar geliştirme hakkında bilgi için bkz. [çalışma zamanı platformları Için bileşen uzantıları](../../extensions/component-extensions-for-runtime-platforms.md).
 
-Kullanılarak derlenmiş bir uygulama **/CLR** olabilir veya yönetilen veri içermeyebilir.
+Kullanılarak derlenen bir uygulama **`/clr`** yönetilen verileri içermeyebilir veya içermeyebilir.
 
-Yönetilen bir uygulama üzerinde hata ayıklamayı etkinleştirmek için bkz: [assemblydebug (DebuggableAttribute ekleme)](assemblydebug-add-debuggableattribute.md).
+Yönetilen bir uygulamada hata ayıklamayı etkinleştirmek için, bkz. (hata ayıklama [ `/ASSEMBLYDEBUG` Ggableattribute ekleme)](assemblydebug-add-debuggableattribute.md).
 
-Yalnızca CLR Türleri atık toplanan yığında örneği oluşturulur. Daha fazla bilgi için [sınıfları ve yapıları](../../extensions/classes-and-structs-cpp-component-extensions.md). Bir işlev yerel kod olarak derlemek için kullanın `unmanaged` pragması. Daha fazla bilgi için [yönetilen, yönetilmeyen](../../preprocessor/managed-unmanaged.md).
+Atık toplanan yığında yalnızca CLR türleri oluşturulur. Daha fazla bilgi için bkz. [sınıflar ve yapılar](../../extensions/classes-and-structs-cpp-component-extensions.md). Yerel koda bir işlev derlemek için `unmanaged` pragma kullanın. Daha fazla bilgi için bkz. [ `managed` , `unmanaged` ](../../preprocessor/managed-unmanaged.md).
 
-Varsayılan olarak, **/CLR** etkili değildir. Zaman **/CLR** kıyaslandığında geçerli **/MD** ayrıca etkilidir. Daha fazla bilgi için [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](md-mt-ld-use-run-time-library.md). **/ MD** dinamik olarak bağlanmış, çok iş parçacıklı çalışma zamanı yordamları sürümleri standart üstbilgi (.h) dosyalarından seçilmesini sağlar. CLR çöp toplayıcısı sonlandırıcılar yardımcı bir iş parçacığında çalıştığı için programlama yönetilen için çoklu iş parçacığı kullanımı gereklidir.
+Varsayılan olarak **`/clr`** etkin değildir. **`/clr`** Etkin olduğunda **`/MD`** da etkin olur. Daha fazla bilgi için bkz., [ `/MD` `/MT` `/LD` (Run-Time kitaplığı kullanın)](md-mt-ld-use-run-time-library.md). **`/MD`** çalışma zamanı yordamlarının dinamik olarak bağlı, çok iş parçacıklı sürümlerinin standart üstbilgi dosyalarından seçili olmasını sağlar. CLR atık toplayıcısı bir yardımcı iş parçacığında sonlandırıcılar çalıştırdığından yönetilen programlama için çoklu iş parçacığı gereklidir.
 
-Kullanarak derleme yaparsanız **/c**, CLR türü ile elde edilen çıkış dosyasının belirttiğiniz [/CLRIMAGETYPE](clrimagetype-specify-type-of-clr-image.md).
+Kullanarak derlerseniz **`/c`** , bağlayıcı seçeneğini kullanarak elde edilen çıkış dosyasının clr türünü belirtebilirsiniz [`/CLRIMAGETYPE`](clrimagetype-specify-type-of-clr-image.md) .
 
-**/ CLR** gelir **/eha**ve başka hiçbir **/EH** seçenekleri için desteklenen **/CLR**. Daha fazla bilgi için [/EH (özel durum işleme modeli)](eh-exception-handling-model.md).
+**`/clr`****`/EHa`** , **`/EH`** için diğer seçeneklerin destekleneceği anlamına gelir **`/clr`** . Daha fazla bilgi için bkz. [ `/EH` (özel durum işleme modeli)](eh-exception-handling-model.md).
 
-Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz: [/CLRHEADER](clrheader.md).
+Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz [`/CLRHEADER`](clrheader.md) ..
 
-Bağlayıcının belirli bir çağrıya geçirilen tüm modüller, aynı çalışma zamanı kitaplığı derleyici seçeneğini kullanarak derlenmelidir (**/MD** veya **/LD**).
+Belirli bir bağlayıcı çağrısına geçirilen tüm modüller aynı çalışma zamanı kitaplığı derleyici seçeneği (veya) kullanılarak derlenmelidir **`/MD`** **`/LD`** .
 
-Kullanım [koduna konmaz](assemblyresource-embed-a-managed-resource.md) kaynak derlemede katıştırmak üzere bağlayıcı seçeneği. [/ DELAYSIGN](delaysign-partially-sign-an-assembly.md), [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md), ve [/keyfile](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) bağlayıcı seçenekleri de izin, bir derlemenin nasıl oluşturulacağını özelleştirin.
+[`/ASSEMBLYRESOURCE`](assemblyresource-embed-a-managed-resource.md)Bir derlemeye kaynak eklemek için bağlayıcı seçeneğini kullanın. [`/DELAYSIGN`](delaysign-partially-sign-an-assembly.md), [`/KEYCONTAINER`](keycontainer-specify-a-key-container-to-sign-an-assembly.md) , ve [`/KEYFILE`](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) bağlayıcı seçenekleri de bir derlemenin oluşturulma şeklini özelleştirmenizi sağlar.
 
-Zaman **/CLR** kullanılan `_MANAGED` sembol 1 olacak şekilde tanımlandı. Daha fazla bilgi için [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
+**`/clr`** Kullanıldığında, `_MANAGED` simge 1 olacak şekilde tanımlanır. Daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
 
-Genel değişkenler bir yerel nesne dosyasında başlatılır (sırasında yürütülebilir dosya DLL ise DllMain) ve ardından genel değişkenleri yönetilen bölümünde (yönetilen kod çalıştırmadan önce) başlatılır. `#pragma` [init_seg](../../preprocessor/init-seg.md) yalnızca yönetilen ve yönetilmeyen kategorilerde başlatma sırası etkiler.
+Yerel bir nesne dosyasındaki genel değişkenler ilk olarak başlatılır ( `DllMain` yürütülebilir dosya dll ise sırasında) ve ardından yönetilen bölümdeki genel değişkenler başlatılır (herhangi bir yönetilen kod çalıştırılmadan önce). [`#pragma init_seg`](../../preprocessor/init-seg.md) yalnızca yönetilen ve yönetilmeyen kategorilerde başlatma sırasını etkiler.
 
-## <a name="metadata-and-unnamed-classes"></a>Meta veri ve adlandırılmamış sınıfları
+### <a name="metadata-and-unnamed-classes"></a>Meta veri ve adlandırılmamış sınıflar
 
-Adsız sınıf, meta verilerinde aşağıdaki gibi görünür: `$UnnamedClass$` *crc-ın-geçerli-dosya adı*`$`*dizin*`$`burada *dizin*sıralı derleme adlandırılmamış sınıflarda sayısıdır. Örneğin, aşağıdaki kod örneği, meta verilerde adlandırılmamış bir sınıf oluşturur.
+Adlandırılmamış sınıflar  `$UnnamedClass$<crc-of-current-file-name>$<index>$` , örneğin, `<index>` derlemede adlandırılmamış sınıfların sıralı bir sayısı olan gibi adlarda meta verilerde görünür. Örneğin, aşağıdaki kod örneği meta verilerde adlandırılmamış bir sınıf oluşturur.
 
 ```cpp
 // clr_unnamed_class.cpp
@@ -101,9 +102,23 @@ Adsız sınıf, meta verilerinde aşağıdaki gibi görünür: `$UnnamedClass$` 
 class {} x;
 ```
 
-İldasm.exe meta verileri görüntülemek için kullanın.
+Meta verileri görüntülemek için ildasm.exe kullanın.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+
+1. **Yapılandırma** açılan listesini **tüm yapılandırmalar** olarak ayarlayın ve **Platform** açılan listesini **tüm platformlar** olarak ayarlayın.
+
+1. **Yapılandırma özellikleri**  >  **Gelişmiş** sayfasını seçin.
+
+1. **Ortak dil çalışma zamanı desteği** özelliğini değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileAsManaged>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)\
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

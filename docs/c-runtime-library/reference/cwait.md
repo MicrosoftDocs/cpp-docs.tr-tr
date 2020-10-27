@@ -1,6 +1,7 @@
 ---
 title: _cwait
-ms.date: 4/2/2020
+description: Microsoft Visual C Runtime işlevi için API başvurusu `_cwait()` .
+ms.date: 10/23/2020
 api_name:
 - _cwait
 - _o__cwait
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - cwait function
 - _cwait function
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
-ms.openlocfilehash: 9e2e23acb041004b9e96d1c6558ae195ed522155
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5b4c4db3c40645b947583b722d345c2e80dcaa8e
+ms.sourcegitcommit: faecabcdd12ff53eb79dc0df193fc3567f2f037c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914792"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92639113"
 ---
 # <a name="_cwait"></a>_cwait
 
@@ -53,35 +54,35 @@ intptr_t _cwait(
 
 ### <a name="parameters"></a>Parametreler
 
-*termstat*<br/>
-Belirtilen işlemin sonuç kodunun depolanacağı veya **null**olacağı bir arabelleğin işaretçisi.
+*`termstat`*\
+Belirtilen işlemin sonuç kodunun depolanacağı bir arabelleğin işaretçisi **`NULL`** .
 
-*procHandle*<br/>
+*`procHandle`*\
 Beklenecek işlemin tanıtıcısı (yani, **_cwait** önce sonlanacak işlem).
 
-*action*<br/>
-NULL: Windows işletim sistemi uygulamaları tarafından yoksayıldı; diğer uygulamalar için: *procHandle*üzerinde gerçekleştirilecek eylem kodu.
+*`action`*\
+**`NULL`** : Windows işletim sistemi uygulamaları tarafından yoksayıldı; diğer uygulamalar için: üzerinde gerçekleştirilecek eylem kodu *`procHandle`* .
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen işlem başarıyla tamamlandığında, belirtilen işlemin tanıtıcısını döndürür ve *termstat* belirtilen işlem tarafından döndürülen sonuç koduna ayarlanır. Aksi takdirde,-1 döndürür ve **errno** değerini aşağıdaki şekilde ayarlar.
+Belirtilen işlem başarıyla tamamlandığında, belirtilen işlemin tanıtıcısını döndürür ve *`termstat`* belirtilen işlem tarafından döndürülen sonuç koduna ayarlanır. Aksi takdirde,-1 döndürür ve **`errno`** aşağıdaki gibi ayarlar.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|**ECHıLD**|Belirtilen işlem yok, *procHandle* geçersiz veya [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) veya [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) API çağrısı başarısız oldu.|
-|**EıNVAL**|*eylem* geçersiz.|
+|**`ECHILD`**|Belirtilen işlem yok, *`procHandle`* geçersiz veya [`GetExitCodeProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess) API çağrısı [`WaitForSingleObject`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) başarısız oldu.|
+|**`EINVAL`**|*`action`* geçersiz.|
 
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ..
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cwait** Işlevi, *procHandle*tarafından sunulan belirtilen işlemin işlem kimliği sonlandırmasını bekler. **_Cwait** geçirilen *procHandle* değeri, belirtilen işlemi oluşturan [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) işlevine yapılan çağrı tarafından döndürülen değer olmalıdır. **_Cwait** çağrılmadan önce işlem kimliği sonlandığında **_cwait** hemen döndürülür. **_cwait** , geçerli bir tanıtıcı (*procHandle*) var olan herhangi bir bilinen işlemi beklemek için herhangi bir işlem tarafından kullanılabilir.
+**`_cwait`** İşlevi, tarafından sağlanmış belirtilen işlemin Işlem kimliği sonlandırmasını bekler *`procHandle`* . Geçirilen değeri, *`procHandle`* **`_cwait`** [`_spawn`](../../c-runtime-library/spawn-wspawn-functions.md) belirtilen işlemi oluşturan işleve yapılan çağrı tarafından döndürülen değer olmalıdır. İşlem KIMLIĞI çağrılmadan önce sonlandığında **`_cwait`** , **`_cwait`** hemen döndürür. **`_cwait`** , geçerli bir tanıtıcı () var olan herhangi bir bilinen işlemi beklemek için herhangi bir işlem tarafından kullanılabilir *`procHandle`* .
 
-*termstat* , belirtilen işlemin dönüş kodunun depolanacağı bir arabelleğe işaret eder. *Termstat* değeri, belirtilen işlemin normal olarak Windows [ExitProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) API 'sini çağırarak sonlandırılıp sonlandırılmadığını gösterir. Belirtilen işlem **Çıkış** veya **_exit**çağırırsa, **Main**'ten geri dönerse veya **Main**'in sonuna ulaştığında **ExitProcess** dahili olarak çağrılır. *Termstat*üzerinden geri geçirilen değer hakkında daha fazla bilgi için bkz. [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). **_Cwait** , *termstat*için **null** değer kullanılarak çağrılırsa, belirtilen işlemin dönüş kodu depolanmaz.
+*`termstat`* belirtilen işlemin dönüş kodunun depolanacağı bir arabelleği işaret eder. Değeri, *`termstat`* belirtilen işlemin normal olarak Windows API 'sini çağırarak sonlandırılıp sonlandırılmadığını gösterir [`ExitProcess`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess) . **`ExitProcess`** Belirtilen işlem çağırıyorsa **`exit`** veya **`_exit`** **`main`** sonuna geldiğinde veya sonuna ulaştığında dahili olarak çağrılır **`main`** . Üzerinden geri geçirilen değer hakkında daha fazla bilgi için *`termstat`* bkz. [GetExitCodeProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodeprocess). **`_cwait`** İçin bir değer kullanılarak çağrılırsa **`NULL`** *`termstat`* , belirtilen işlemin dönüş kodu depolanmaz.
 
-Bu ortamlarda üst-alt ilişkileri uygulanmadığından, *eylem* parametresi Windows işletim sistemi tarafından yok sayılır.
+*`action`* Bu ortamlarda üst-alt ilişkileri uygulanmadığından, parametre Windows işletim sistemi tarafından yok sayılır.
 
-*ProcHandle* -1 veya-2 olmadığı sürece (geçerli işlem veya iş parçacığına yönelik Tanıtıcılarda), tanıtıcı kapatılacak. Bu nedenle, bu durumda döndürülen tanıtıcıyı kullanmayın.
+*`procHandle`* -1 veya-2 olmadığı sürece (geçerli işlem veya iş parçacığı için tanıtıcı), tanıtıcı kapatılacak. Bu durumda, döndürülen tanıtıcıyı kullanmayın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -89,7 +90,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_cwait**|\<Process. h>|\<errno. h>|
+|**`_cwait`**|\<process.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -114,43 +115,45 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 struct PROCESS
 {
-   int     nPid;
-   char    name[40];
+    intptr_t hProcess;
+    char    name[40];
 } process[4] = { { 0, "Ann" }, { 0, "Beth" }, { 0, "Carl" }, { 0, "Dave" } };
 
-int main( int argc, char *argv[] )
+int main(int argc, char* argv[])
 {
-   int termstat, c;
-   unsigned int number;
+    int termstat, c;
+    unsigned int number;
 
-   srand( (unsigned)time( NULL ) );    // Seed randomizer
+    srand((unsigned)time(NULL));    // Seed randomizer
 
-   // If no arguments, this is the calling process
-   if ( argc == 1 )
-   {
-      // Spawn processes in numeric order
-      for ( c = 0; c < 4; c++ ) {
-         _flushall();
-         process[c].nPid = _spawnl( _P_NOWAIT, argv[0], argv[0],
-                                    process[c].name, NULL );
-      }
+    // If no arguments, this is the calling process
+    if (argc == 1)
+    {
+        // Spawn processes in numeric order
+        for (c = 0; c < 4; c++) {
+            _flushall();
+            process[c].hProcess = _spawnl(_P_NOWAIT, argv[0], argv[0],
+                process[c].name, NULL);
+        }
 
-      // Wait for randomly specified process, and respond when done
-      c = getrandom( 0, 3 );
-      printf( "Come here, %s.\n", process[c].name );
-      _cwait( &termstat, process[c].nPid, _WAIT_CHILD );
-      printf( "Thank you, %s.\n", process[c].name );
+        // Wait for randomly specified process, and respond when done
+        c = getrandom(0, 3);
+        printf("Come here, %s.\n", process[c].name);
+        _cwait(&termstat, process[c].hProcess, _WAIT_CHILD);
+        printf("Thank you, %s.\n", process[c].name);
 
-   }
-   // If there are arguments, this must be a spawned process
-   else
-   {
-      // Delay for a period that's determined by process number
-      Sleep( (argv[1][0] - 'A' + 1) * 1000L );
-      printf( "Hi, Dad. It's %s.\n", argv[1] );
-   }
+    }
+    // If there are arguments, this must be a spawned process
+    else
+    {
+        // Delay for a period that's determined by process number
+        Sleep((argv[1][0] - 'A' + 1) * 1000L);
+        printf("Hi, Dad. It's %s.\n", argv[1]);
+    }
 }
 ```
+
+Çıktının sırası çalışma durumundan çalışacak şekilde değişir.
 
 ```Output
 Hi, Dad. It's Ann.
@@ -163,5 +166,5 @@ Hi, Dad. It's Dave.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)\
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)

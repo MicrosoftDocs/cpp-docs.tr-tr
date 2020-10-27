@@ -1,6 +1,7 @@
 ---
 title: qsort
-ms.date: 4/2/2020
+description: Microsoft C çalışma zamanı hızlı sıralama API 'sini açıklar `qsort`
+ms.date: 10/23/2020
 api_name:
 - qsort
 - _o_qsort
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - sorting arrays
 - arrays [CRT], sorting
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
-ms.openlocfilehash: 3d9c3481b37e94dbb59ee7356caafc53501045ea
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c658ffae69cd662809eb4dac09c06b6a13f4e051
+ms.sourcegitcommit: faecabcdd12ff53eb79dc0df193fc3567f2f037c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913265"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92639126"
 ---
 # <a name="qsort"></a>qsort
 
@@ -55,23 +56,23 @@ void qsort(
 
 ### <a name="parameters"></a>Parametreler
 
-*base*<br/>
+*`base`*\
 Hedef dizinin başlangıcı.
 
-*number*<br/>
+*`number`*\
 Öğelerde dizi boyutu.
 
-*genişlik*<br/>
+*`width`*\
 Bayt cinsinden öğe boyutu.
 
-*Karşılaştır*<br/>
+*`compare`*\
 İki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan bir yordamın işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Qsort** işlevi, *sayı* öğelerinden her biri *Genişlik* baytından oluşan bir diziyi sıralamak için hızlı bir sıralama algoritması uygular. Bağımsız değişken *tabanı* , sıralanacak dizinin temelini gösteren bir işaretçidir. **qsort** sıralanmış öğeleri kullanarak bu dizinin üzerine yazar.
+**`qsort`** İşlevi *`number`* , her bayt bir öğe dizisini sıralamak için bir hızlı sıralama algoritması uygular *`width`* . Bağımsız değişkeni, *`base`* sıralanacak dizinin temelini gösteren bir işaretçidir. **`qsort`** sıralanmış öğeleri kullanarak bu dizinin üzerine yazar.
 
-**qsort** , sıralama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır ve her çağrıda işaretçileri iki dizi öğesine geçirir.
+**`qsort`***`compare`* sıralama sırasında yordamı bir veya daha fazla kez çağırır ve her çağrıda işaretçileri iki dizi öğesine geçirir. *`compare`* İki öğenin aynı olduğunu gösteriyorsa, sonuçta elde edilen sıralanmış dizideki sırası belirtilmemiş olur.
 
 ```C
 compare( (void *) & elem1, (void *) & elem2 );
@@ -81,13 +82,13 @@ Rutin öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndür�
 
 |İşlev dönüş değerini Karşılaştır|Açıklama|
 |-----------------------------------|-----------------|
-|< 0|**elem1** küçüktür **elem2**|
-|0|**elem1** eşdeğeri **elem2**|
-|> 0|**elem1** daha büyük **elem2**|
+|< 0|**`elem1`** küçüktür **`elem2`**|
+|0|**`elem1`** eşdeğer **`elem2`**|
+|> 0|**`elem1`** Şundan büyüktür **`elem2`**|
 
 Dizi, karşılaştırma işlevi tarafından tanımlanan şekilde artan sırada sıralanır. Bir diziyi azalan sırada sıralamak için karşılaştırma işlevindeki "büyüktür" ve "küçüktür" durumunu ters çevirin.
 
-Bu işlev, parametrelerini doğrular. *Compare* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse ya da *Genişlik* sıfırdan küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlev, parametrelerini doğrular. Veya ise ya da, *`compare`* *`number`* ise veya sıfır değilse ya da **`NULL`** *`base`* **`NULL`** *`number`* *`width`* sıfırdan küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev döndürür ve **`errno`** olarak ayarlanır **`EINVAL`** .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -95,7 +96,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**qsort**|\<Stdlib. h> ve \<Search. h>|
+|**`qsort`**|\<stdlib.h> ve \<search.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -145,6 +146,6 @@ boy deserves every favor good
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
-[bsearch](bsearch.md)<br/>
-[_lsearch](lsearch.md)<br/>
+[Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)\
+[`bsearch`](bsearch.md)\
+[`_lsearch`](lsearch.md)
