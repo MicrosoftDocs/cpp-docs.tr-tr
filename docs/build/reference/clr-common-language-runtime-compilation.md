@@ -1,7 +1,7 @@
 ---
 title: /clr (Ortak dil çalışma zamanı derlemesi)
 description: C++/CLı ve C++ kodunu yönetilen kod olarak derlemek için Microsoft C++ derleyici seçeneği/clr ' i kullanın.
-ms.date: 10/25/2020
+ms.date: 10/27/2020
 f1_keywords:
 - /CLR
 - VC.Project.VCNMakeTool.CompileAsManaged
@@ -14,16 +14,16 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: b4634b63e58344893d99e2217e57693a2c169f66
-ms.sourcegitcommit: faecabcdd12ff53eb79dc0df193fc3567f2f037c
+ms.openlocfilehash: 9d27d9fb6226f84c4ea67a8f9387a595ba65468b
+ms.sourcegitcommit: 9c801a43ee0d4d84956b03fd387716c818705e0d
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92639100"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907603"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>`/clr` (Ortak dil çalışma zamanı derlemesi)
 
-Uygulamaların ve bileşenlerin ortak dil çalışma zamanı (CLR) özelliklerini kullanmasına olanak sağlar.
+Uygulamaların ve bileşenlerin ortak dil çalışma zamanı (CLR) özelliklerini kullanmasına ve C++/CLı derlemesini kullanmasına olanak sağlar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,15 @@ Aşağıdaki virgülle ayrılmış bağımsız değişkenlerden biri veya daha f
 
 - yok
 
-   Seçenek olmadan, **`/clr`** uygulama için meta veriler oluşturur. Meta veriler diğer CLR uygulamaları tarafından tüketilebilir ve uygulamanın diğer CLR bileşenlerinin meta verilerindeki türleri ve verileri kullanmasına olanak sağlar. Daha fazla bilgi için bkz. [karma (yerel ve yönetilen) derlemeler](../../dotnet/mixed-native-and-managed-assemblies.md).
+   Seçenek olmadan, **`/clr`** bileşen için meta veriler oluşturur. Meta veriler diğer CLR uygulamaları tarafından tüketilebilir ve bileşenin diğer CLR bileşenlerinin meta verilerindeki türleri ve verileri kullanmasına olanak sağlar. Daha fazla bilgi için bkz. [karma (yerel ve yönetilen) derlemeler](../../dotnet/mixed-native-and-managed-assemblies.md).
+
+- **`NetCore`**
+
+   **`/clr:NetCore`** .NET Core olarak da bilinen en son platformlar arası .NET Framework 'ü kullanarak bileşen için meta verileri ve kodu oluşturur. Meta veriler diğer .NET Core uygulamaları tarafından tüketilebilir. Ve seçeneği, bileşenin diğer .NET Core bileşenlerinin meta verilerinde türleri ve verileri kullanmasına olanak sağlar.
+
+- **`nostdlib`**
+
+   Derleyiciye varsayılan dizini yok saymasını söyler *`\clr`* . System.dll gibi, DLL 'nin birden çok sürümünü dahil ederseniz derleyici hata üretir. Bu seçenek, derleme sırasında kullanmak üzere belirli bir çerçeveyi belirtmenizi sağlar.
 
 - **`pure`**
 
@@ -58,15 +66,11 @@ Aşağıdaki virgülle ayrılmış bağımsız değişkenlerden biri veya daha f
 
 - **`initialAppDomain`**
 
-   Bir C++/CLı uygulamasının CLR sürüm 1 ' de çalışmasını sağlar.  Kullanılarak derlenen bir uygulama **`initialAppDomain`** , clr 'nin 1. sürümünde desteklenmediğinden, ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.
-
-- **`nostdlib`**
-
-   Derleyiciye varsayılan dizini yok saymasını söyler *`\clr`* . System.dll gibi, DLL 'nin birden çok sürümünü dahil ederseniz derleyici hata üretir. Bu seçenek, derleme sırasında kullanmak üzere belirli bir çerçeveyi belirtmenizi sağlar.
+   **`initialAppDomain` artık kullanılmıyor** . Bir C++/CLı uygulamasının CLR sürüm 1 ' de çalışmasını sağlar.  Kullanılarak derlenen bir uygulama **`initialAppDomain`** , clr 'nin 1. sürümünde desteklenmediğinden, ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen kod, CLR tarafından incelenelebilecek ve yönetilebilen koddur. Yönetilen kod, yönetilen nesnelere erişebilir. Daha fazla bilgi için bkz. [ `/clr ` kısıtlamalar](clr-restrictions.md).
+*Yönetilen kod* , CLR tarafından incelenelebilecek ve yönetilebilen koddur. Yönetilen kod, yönetilen nesnelere erişebilir. Daha fazla bilgi için bkz. [ `/clr` kısıtlamalar](clr-restrictions.md).
 
 C++ ' da yönetilen türleri tanımlayan ve tüketen uygulamalar geliştirme hakkında bilgi için bkz. [çalışma zamanı platformları Için bileşen uzantıları](../../extensions/component-extensions-for-runtime-platforms.md).
 
@@ -110,9 +114,12 @@ Meta verileri görüntülemek için ildasm.exe kullanın.
 
 1. **Yapılandırma** açılan listesini **tüm yapılandırmalar** olarak ayarlayın ve **Platform** açılan listesini **tüm platformlar** olarak ayarlayın.
 
-1. **Yapılandırma özellikleri**  >  **Gelişmiş** sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **genel** sayfasını seçin.
 
 1. **Ortak dil çalışma zamanı desteği** özelliğini değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+
+> [!NOTE]
+> Visual Studio IDE 'de, **`/clr`** derleyici seçeneği Özellik sayfaları iletişim kutusunun **yapılandırma özellikleri**  >  **C/C++**  >  **genel** sayfasında tek tek ayarlanabilir. Ancak, projenizi oluşturmak için bir CLR şablonu kullanmanızı öneririz. CLR bileşeninin başarıyla oluşturulması için gereken tüm özellikleri ayarlar. Bu özellikleri ayarlamaya yönelik başka bir yol da Özellik sayfaları iletişim kutusunun **yapılandırma özellikleri** Gelişmiş sayfasında **ortak dil çalışma zamanı desteği** özelliğini kullanmaktır  >  **Advanced** . Bu özellik, CLR ile ilgili diğer araç seçeneklerini aynı anda ayarlar.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
