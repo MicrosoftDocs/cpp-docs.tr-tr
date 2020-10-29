@@ -8,12 +8,12 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-ms.openlocfilehash: 65da18f5f6d1972276f1cb8e306e82314282e40a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb81ca376651c17c760ee776510303efaa13fd9a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227718"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924781"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>İzlenecek yol: hatalar için C/C++ kodunu analiz etme
 
@@ -35,25 +35,25 @@ Bu izlenecek yolda şunları yapmanız gerekir:
 
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Yerel kodda kod hatası analizini çalıştırmak için
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. Visual Studio 'da CppDemo çözümünü açın.
 
-     CppDemo çözümü artık **Çözüm Gezgini**doldurur.
+     CppDemo çözümü artık **Çözüm Gezgini** doldurur.
 
-1. **Derle** menüsünde **çözümü yeniden derle**' yi seçin.
+1. **Derle** menüsünde **çözümü yeniden derle** ' yi seçin.
 
      Çözüm herhangi bir hata veya uyarı olmadan oluşturulur.
 
-1. **Çözüm Gezgini**, codekusurları projesini seçin.
+1. **Çözüm Gezgini** , codekusurları projesini seçin.
 
-1. **Proje** menüsünde **Özellikler**' i seçin.
+1. **Proje** menüsünde **Özellikler** ' i seçin.
 
      **Codekusurları Özellik sayfaları** iletişim kutusu görüntülenir.
 
 1. **Kod Analizi** özellik sayfasını seçin.
 
-1. **Derleme üzerinde Kod analizini etkinleştir** özelliğini **Evet**olarak değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+1. **Derleme üzerinde Kod analizini etkinleştir** özelliğini **Evet** olarak değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 1. Codekusurları projesini yeniden derleyin.
 
@@ -61,22 +61,22 @@ Bu izlenecek yolda şunları yapmanız gerekir:
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. Visual Studio 'da CppDemo çözümünü açın.
 
-     CppDemo çözümü artık **Çözüm Gezgini**doldurur.
+     CppDemo çözümü artık **Çözüm Gezgini** doldurur.
 
-1. **Derle** menüsünde **çözümü yeniden derle**' yi seçin.
+1. **Derle** menüsünde **çözümü yeniden derle** ' yi seçin.
 
      Çözüm herhangi bir hata veya uyarı olmadan oluşturulur.
 
      > [!NOTE]
      > Visual Studio 2017 ' de, IntelliSense altyapısında bir çok değerli uyarı görebilirsiniz `E1097 unknown attribute "no_init_all"` . Bu uyarıyı güvenle yoksayabilirsiniz.
 
-1. **Çözüm Gezgini**, codekusurları projesini seçin.
+1. **Çözüm Gezgini** , codekusurları projesini seçin.
 
-1. **Proje** menüsünde **Özellikler**' i seçin.
+1. **Proje** menüsünde **Özellikler** ' i seçin.
 
      **Codekusurları Özellik sayfaları** iletişim kutusu görüntülenir.
 
@@ -92,9 +92,9 @@ Bu izlenecek yolda şunları yapmanız gerekir:
 
 ### <a name="to-analyze-code-defect-warnings"></a>Kod hatası uyarılarını çözümlemek için
 
-1. **Görünüm** menüsünde **hata listesi**' yi seçin.
+1. **Görünüm** menüsünde **hata listesi** ' yi seçin.
 
-     Bu menü öğesi görünür olmayabilir. Bu, Visual Studio 'da seçtiğiniz geliştirici profiline bağlıdır. **Görünüm** menüsünde **diğer pencereleri** işaret etmeniz ve ardından **hata listesi**seçmeniz gerekebilir.
+     Bu menü öğesi görünür olmayabilir. Bu, Visual Studio 'da seçtiğiniz geliştirici profiline bağlıdır. **Görünüm** menüsünde **diğer pencereleri** işaret etmeniz ve ardından **hata listesi** seçmeniz gerekebilir.
 
 1. **Hata listesi** penceresinde, aşağıdaki uyarıya çift tıklayın:
 
@@ -108,7 +108,7 @@ Bu izlenecek yolda şunları yapmanız gerekir:
    if (SUCCEEDED(ReadUserAccount()))
    ```
 
-1. **Hata listesi**, aşağıdaki uyarıya çift tıklayın:
+1. **Hata listesi** , aşağıdaki uyarıya çift tıklayın:
 
      C6282: yanlış işleç: Boolean bağlamda sabit atama. Bunun yerine ' = = ' kullanmayı düşünün.
 
@@ -128,25 +128,25 @@ Bu izlenecek yolda şunları yapmanız gerekir:
 
 ### <a name="to-enable-the-source-code-annotation-warnings-in-annotationc"></a>Ek açıklamada kaynak kodu ek açıklaması uyarılarını etkinleştirmek için. c
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 1. Çözüm Gezgini, ek açıklamalar projesini seçin.
 
-1. **Proje** menüsünde **Özellikler**' i seçin.
+1. **Proje** menüsünde **Özellikler** ' i seçin.
 
      **Ek açıklamalar Özellik sayfaları** iletişim kutusu görüntülenir.
 
 1. **Kod Analizi** özellik sayfasını seçin.
 
-1. **Derleme üzerinde Kod analizini etkinleştir** özelliğini **Evet**olarak değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+1. **Derleme üzerinde Kod analizini etkinleştir** özelliğini **Evet** olarak değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. Çözüm Gezgini, ek açıklamalar projesini seçin.
 
-1. **Proje** menüsünde **Özellikler**' i seçin.
+1. **Proje** menüsünde **Özellikler** ' i seçin.
 
      **Ek açıklamalar Özellik sayfaları** iletişim kutusu görüntülenir.
 
@@ -160,9 +160,9 @@ Bu izlenecek yolda şunları yapmanız gerekir:
 
 1. Ek açıklama projesini yeniden derleyin.
 
-1. **Build** menüsünde, **ek açıklamalarda Kod analizini Çalıştır**' ı seçin.
+1. **Build** menüsünde, **ek açıklamalarda Kod analizini Çalıştır** ' ı seçin.
 
-1. **Hata listesi**, aşağıdaki uyarıya çift tıklayın:
+1. **Hata listesi** , aşağıdaki uyarıya çift tıklayın:
 
      C6011: ' newNode ' NULL işaretçisinin başvurusunu kaldırma.
 
@@ -196,9 +196,9 @@ Bu izlenecek yolda şunları yapmanız gerekir:
    _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
-1. **Build** menüsünde, **çözüm üzerinde Kod analizini Çalıştır**' ı seçin.
+1. **Build** menüsünde, **çözüm üzerinde Kod analizini Çalıştır** ' ı seçin.
 
-1. **Hata listesi**, aşağıdaki uyarıya çift tıklayın:
+1. **Hata listesi** , aşağıdaki uyarıya çift tıklayın:
 
      C6011: ' node ' NULL işaretçisine başvuruluyor.
 
@@ -213,7 +213,7 @@ Bu izlenecek yolda şunları yapmanız gerekir:
    }
    ```
 
-1. **Build** menüsünde, **çözüm üzerinde Kod analizini Çalıştır**' ı seçin.
+1. **Build** menüsünde, **çözüm üzerinde Kod analizini Çalıştır** ' ı seçin.
 
      Proje artık herhangi bir uyarı veya hata olmadan oluşturulur.
 

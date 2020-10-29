@@ -4,22 +4,22 @@ ms.date: 07/02/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB consumers
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: f7bdc371e5575375f5e72a1a6c0c51890921b1f4
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 490335f1f61987fc6e5b0b3806ee8e39c82f336f
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353135"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923748"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Bu sihirbaz, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri kaynağına erişmek için gereken veri bağlamalarını içeren bir OLE DB tüketici sınıfı ayarlar.
 
@@ -54,7 +54,7 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
          > - **Windows NT tümleşik güvenliğini kullan**
          > - **Belirli bir Kullanıcı adı ve parola kullan**
          >
-         > **Belirli bir Kullanıcı adı ve parola kullan**' ı seçerseniz, parolayı kaydetme seçeneğiniz vardır ("Parola kaydetmeye izin ver" onay kutusunu kullanarak); Ancak, bu seçenek güvenli değildir. **WINDOWS NT tümleşik güvenliği kullan**' ı seçmeniz önerilir. parolayı şifreleyen için bu seçenek güvenlidir.
+         > **Belirli bir Kullanıcı adı ve parola kullan** ' ı seçerseniz, parolayı kaydetme seçeneğiniz vardır ("Parola kaydetmeye izin ver" onay kutusunu kullanarak); Ancak, bu seçenek güvenli değildir. **WINDOWS NT tümleşik güvenliği kullan** ' ı seçmeniz önerilir. parolayı şifreleyen için bu seçenek güvenlidir.
          > "Parola kaydetmeye Izin ver" i seçmek istediğiniz durumlar olabilir. Örneğin, özel bir veritabanı çözümüne sahip bir kitaplık yayınlarsanız, veritabanına doğrudan erişmemelisiniz, bunun yerine kullanıcının doğrulanması için bir orta katmanlı uygulama kullanın (seçtiğiniz kimlik doğrulama şeması aracılığıyla) ve ardından Kullanıcı tarafından kullanılabilen veri sıralamasını sınırlayabilirsiniz.
 
       1. **Sunucudaki veritabanını seçin:** Tüm kayıtlı veritabanlarını veri sunucusunda göstermek için aşağı açılan liste menüsüne tıklayıp bir tane seçin.
@@ -71,22 +71,22 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
 
          \- veya
 
-         **Bağlantı dizesi kullan:** Zaten edindiğiniz bir bağlantı dizesi girin veya **Oluştur** düğmesine tıklayın; **veri kaynağı seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağı seçin ve **Tamam**' a tıklayın.
+         **Bağlantı dizesi kullan:** Zaten edindiğiniz bir bağlantı dizesi girin veya **Oluştur** düğmesine tıklayın; **veri kaynağı seç** iletişim kutusu görüntülenir. Bir dosya veya makine veri kaynağı seçin ve **Tamam** ' a tıklayın.
 
          > [!NOTE]
-         > **Sunucu Gezgini**var olan bir bağlantının özelliklerini görüntüleyerek bir bağlantı dizesi elde edebilir veya **Sunucu Gezgini** **bağlantı ekle** ' ye çift tıklayarak bir bağlantı oluşturabilirsiniz.
+         > **Sunucu Gezgini** var olan bir bağlantının özelliklerini görüntüleyerek bir bağlantı dizesi elde edebilir veya **Sunucu Gezgini** **bağlantı ekle** ' ye çift tıklayarak bir bağlantı oluşturabilirsiniz.
 
       1. **Sunucuda oturum açmak için bilgileri girin:** Veri sunucusunda oturum açmak için bir Kullanıcı adı ve parola girin.
 
       1. Kullanılacak başlangıç kataloğunu girin.
 
-      1. **Bağlantıyı Sına**' ya tıklayın. sınama başarılı olursa **Tamam**' a tıklayın. Aksi takdirde, oturum açma bilgilerinizi denetleyin, başka bir veritabanı deneyin veya başka bir veri sunucusu deneyin.
+      1. **Bağlantıyı Sına** ' ya tıklayın. sınama başarılı olursa **Tamam** ' a tıklayın. Aksi takdirde, oturum açma bilgilerinizi denetleyin, başka bir veritabanı deneyin veya başka bir veri sunucusu deneyin.
 
   - **Gelişmiş** sekmesi
 
       **Ağ ayarları:** **Kimliğe bürünme düzeyini** (istemcinin kimliğe bürünme sırasında sunucunun kullanmasına izin verilen kimliğe bürünme düzeyi; doğrudan RPC kimliğe bürünme düzeylerine karşılık gelir) ve **koruma düzeyini** (istemci ve sunucu arasında gönderilen verilerin koruma DÜZEYI), doğrudan RPC koruma düzeylerine karşılık gelir.
 
-      **Diğer:** **Bağlantı zaman aşımı**' de, bir zaman aşımı gerçekleşmeden önce izin verilen sürenin saniye sayısını belirtin. **Erişim izinleri**' nde, veri bağlantısında erişim izinlerini belirtin.
+      **Diğer:** **Bağlantı zaman aşımı** ' de, bir zaman aşımı gerçekleşmeden önce izin verilen sürenin saniye sayısını belirtin. **Erişim izinleri** ' nde, veri bağlantısında erişim izinlerini belirtin.
 
       Gelişmiş başlatma özellikleri hakkında daha fazla bilgi için, her belirli OLE DB sağlayıcısıyla birlikte sunulan belgelere bakın.
 
@@ -94,7 +94,7 @@ Bu sihirbaz, belirtilen OLE DB sağlayıcısı aracılığıyla belirtilen veri 
 
       Bu sekme, belirttiğiniz veri kaynağı ve bağlantı için başlatma özelliklerinin bir özetini görüntüler. Bu değerleri düzenleyebilirsiniz.
 
-      Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı nesnesi Seç** iletişim kutusu görünür. Bu iletişim kutusunda, tüketicinin kullanacağı tablo, görünüm veya saklı yordamı seçin.
+      Ayarlamayı bitirmek için **Tamam** 'a tıklayın. **Veritabanı nesnesi Seç** iletişim kutusu görünür. Bu iletişim kutusunda, tüketicinin kullanacağı tablo, görünüm veya saklı yordamı seçin.
 
 - **Sınıf**
 

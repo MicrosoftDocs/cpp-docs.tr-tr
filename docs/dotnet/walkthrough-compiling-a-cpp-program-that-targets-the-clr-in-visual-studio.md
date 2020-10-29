@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual C++, managed code
 - managed code [C++]
 ms.assetid: 339f89df-a5d2-4040-831a-ddbe25b5dce4
-ms.openlocfilehash: 2fceb57e062b9179245ba235fb497ff526a6660e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d6d06104cc007ae5ff20f579225c885690a704e4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501685"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924215"
 ---
 # <a name="walkthrough-compile-a-ccli-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek yol: Visual Studio 'da CLR 'yi hedefleyen bir C++/CLı programını derleme
 
@@ -24,17 +24,17 @@ Bu yordam için kendi C++ programınızı yazabilir veya örnek programlardan bi
 ## <a name="prerequisites"></a>Önkoşullar
 
 - C++ dilinin temellerini anlama.
-- Visual Studio 2017 ve üzeri sürümlerde, C++/CLı desteği isteğe bağlı bir bileşendir. Yüklemek için, Windows Başlat menüsünden **Visual Studio yükleyicisi** açın. **C++ Ile masaüstü geliştirme** kutucuğunun seçili olduğundan emin olun ve **isteğe bağlı** bileşenler bölümünde **C++/CLI desteğini**de denetleyin.
+- Visual Studio 2017 ve üzeri sürümlerde, C++/CLı desteği isteğe bağlı bir bileşendir. Yüklemek için, Windows Başlat menüsünden **Visual Studio yükleyicisi** açın. **C++ Ile masaüstü geliştirme** kutucuğunun seçili olduğundan emin olun ve **isteğe bağlı** bileşenler bölümünde **C++/CLI desteğini** de denetleyin.
 
 ## <a name="create-a-new-project"></a>Yeni bir proje oluşturma
 
 Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-ccli-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir C++/CLı projesi oluşturmak için
 
-1. **Çözüm Gezgini**' de, en üste sağ tıklayıp **Yeni proje oluştur** iletişim kutusunu açın.
+1. **Çözüm Gezgini** ' de, en üste sağ tıklayıp **Yeni proje oluştur** iletişim kutusunu açın.
 
 1. İletişim kutusunda **clr** yazın ve ardından sonuçlar listesinden **clr boş proje** ' yi seçin.
 
@@ -42,13 +42,13 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### <a name="to-create-a-ccli-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de bir C++/CLı projesi oluşturmak için
 
-1. Yeni bir proje oluşturma. **Dosya** menüsünde, **Yeni**' nin üzerine gelin ve ardından **Proje**' ye tıklayın.
+1. Yeni bir proje oluşturma. **Dosya** menüsünde, **Yeni** ' nin üzerine gelin ve ardından **Proje** ' ye tıklayın.
 
-1. Visual C++ proje türlerinden **clr**' ye tıklayın ve ardından **clr boş proje**' ye tıklayın.
+1. Visual C++ proje türlerinden **clr** ' ye tıklayın ve ardından **clr boş proje** ' ye tıklayın.
 
 1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm, yeni projeyle aynı ada sahiptir, ancak farklı bir ad girebilirsiniz. İsterseniz proje için farklı bir konum girebilirsiniz.
 
@@ -56,13 +56,13 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### <a name="to-create-a-ccli-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de bir C++/CLı projesi oluşturmak için
 
-1. Yeni bir proje oluşturma. **Dosya** menüsünde, **Yeni**' nin üzerine gelin ve ardından **Proje**' ye tıklayın.
+1. Yeni bir proje oluşturma. **Dosya** menüsünde, **Yeni** ' nin üzerine gelin ve ardından **Proje** ' ye tıklayın.
 
-1. Visual C++ proje türlerinden **clr**' ye tıklayın ve ardından **clr boş proje**' ye tıklayın.
+1. Visual C++ proje türlerinden **clr** ' ye tıklayın ve ardından **clr boş proje** ' ye tıklayın.
 
 1. Bir proje adı yazın. Varsayılan olarak, projeyi içeren çözüm, yeni projeyle aynı ada sahiptir, ancak farklı bir ad girebilirsiniz. İsterseniz proje için farklı bir konum girebilirsiniz.
 
@@ -76,9 +76,9 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. Projeye yeni bir kaynak dosyası ekleyin:
 
-   - **Çözüm Gezgini**' de **kaynak dosyalar** klasörüne sağ tıklayın, **Ekle**' nin üzerine gelin ve **Yeni öğe**' ye tıklayın.
+   - **Çözüm Gezgini** ' de **kaynak dosyalar** klasörüne sağ tıklayın, **Ekle** ' nin üzerine gelin ve **Yeni öğe** ' ye tıklayın.
 
-   - **C++ dosyası (. cpp)** seçeneğine tıklayın ve bir dosya adı yazın ve ardından **Ekle**' ye tıklayın.
+   - **C++ dosyası (. cpp)** seçeneğine tıklayın ve bir dosya adı yazın ve ardından **Ekle** ' ye tıklayın.
 
    **. Cpp** dosyası **Çözüm Gezgini** içindeki **kaynak dosyaları** klasöründe görünür ve bu dosyada istediğiniz kodu yazdığınız bir sekmeli pencere görüntülenir.
 
@@ -92,20 +92,20 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
    C++/CLı sözdizimi hakkında daha fazla bilgi için bkz. [çalışma zamanı platformları Için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md).
 
-1. **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
+1. **Yapı** menüsünde **Yapı Çözümü** ’ne tıklayın.
 
    **Çıktı** penceresi, derleme günlüğü konumu ve derleme durumunu gösteren bir ileti gibi derleme ilerlemesi hakkındaki bilgileri görüntüler.
 
    Değişiklik yapıp programı bir derleme yapmadan çalıştırırsanız, bir iletişim kutusu projenin güncel olmadığını gösterebilir. Visual Studio 'nun uygulamayı her oluşturduğunda sormak yerine her zaman güncel dosya sürümlerini kullanmasını istiyorsanız **Tamam** ' a tıklayarak bu iletişim kutusunda onay kutusunu seçin.
 
-1. **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
+1. **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat** ' a tıklayın.
 
 1. Örnek programı kullandıysanız, programı çalıştırdığınızda, metin dosyasının oluşturulduğunu belirten bir komut penceresi görüntülenir.
 
    **textfile.txt** metin dosyası artık proje dizininizde bulunur. Bu dosyayı Not defteri 'Ni kullanarak açabilirsiniz.
 
    > [!NOTE]
-   > Boş CLR proje şablonunu seçme, derleyici seçeneğini otomatik olarak ayarlar `/clr` . Bunu doğrulamak için **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Özellikler**' e tıkladıktan sonra **yapılandırma özellikleri**' nin **genel** düğümünde **ortak dil çalışma zamanı desteği** seçeneğini işaretleyin.
+   > Boş CLR proje şablonunu seçme, derleyici seçeneğini otomatik olarak ayarlar `/clr` . Bunu doğrulamak için **Çözüm Gezgini** ' de projeye sağ tıklayın ve **Özellikler** ' e tıkladıktan sonra **yapılandırma özellikleri** ' nin **genel** düğümünde **ortak dil çalışma zamanı desteği** seçeneğini işaretleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

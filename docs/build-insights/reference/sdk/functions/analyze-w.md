@@ -1,6 +1,6 @@
 ---
 title: AnalyzeW
-description: C++ Build Insights SDK AnalyzeW fonksiyon başvurusu.
+description: C++ Build Insights SDK 'Sı Analkaw işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 64d68e4c10c0b77c3e6b08b1ec23735e38a377a1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a75668e0fc9d356315f5f0b3156a909187415521
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324153"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922855"
 ---
 # <a name="analyzew"></a>AnalyzeW
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-İşlev, `AnalyzeW` Windows için Olay İzleme (ETW) izinden gelen bir girişten okunan MSVC olaylarını çözümlemek için kullanılır.
+`AnalyzeW`İşlevi, Windows için bir giriş olayı izleme (ETW) izleme 'den okunan MSVC olaylarını çözümlemek için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,14 +37,14 @@ enum RESULT_CODE AnalyzeW(
 
 ### <a name="parameters"></a>Parametreler
 
-*inputLogFile*\
-Olayları okumak istediğiniz giriş ETW izi.
+*ınputlogfile*\
+Olaylarını okumak istediğiniz giriş ETW izlemesi.
 
-*analizAçıklayıcı*\
-[ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) bir nesneye işaretçi. Çözümlemesi yapılandırmak için bu nesneyi kullanın.
+*analysisDescriptor*\
+[ANALYSIS_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) nesnesine yönelik işaretçi. Çözümlemeyi yapılandırmak için bu nesneyi kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
 
 ::: moniker-end

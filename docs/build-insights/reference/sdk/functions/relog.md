@@ -1,6 +1,6 @@
 ---
 title: Relog
-description: C++ Build Insights SDK Relog işlevi başvurusu.
+description: C++ derleme öngörüleri SDK 'Sı relog işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 28b290d2bf2880ce2f534fa1cd91750890e2fead
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 628f60042a10cf80c0b077d28387ed75466e925b
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323787"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922757"
 ---
 # <a name="relog"></a>Relog
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-İşlev, `Relog` Windows için Olay İzleme (ETW) izleme sinden MSVC olaylarını okumak ve bunları yeni, değiştirilmiş bir ETW izlemesine yazmak için kullanılır.
+`Relog`İşlevi, Windows Için olay izleme (ETW) IZLEMESININ MSVC olaylarını okumak ve bunları yeni, değiştirilmiş BIR ETW izlemeye yazmak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,38 +55,38 @@ RESULT_CODE Relog(
 
 ### <a name="parameters"></a>Parametreler
 
-*TAnalyzerGroupÜyeleri*\
+*TAnalyzerGroupMembers*\
 Bu parametre her zaman çıkarılır.
 
-*TReloggerGroupÜyeleri*\
+*TReloggerGroupMembers*\
 Bu parametre her zaman çıkarılır.
 
-*inputLogFile*\
-Olayları okumak istediğiniz giriş ETW izi.
+*ınputlogfile*\
+Olaylarını okumak istediğiniz giriş ETW izlemesi.
 
 *outputLogFile*\
-Yeni olayların yazılabilmek için dosya.
+Yeni olayların yazılacağı dosya.
 
-*numberOfAnalysisPasses*\
-Giriş izleme üzerinde çalıştırmak için çözümleme geçer sayısı. İz, analiz başına bir kez sağlanan analizör grubundan geçirilir.
+*Numberofanalysispass*\
+Giriş izlemede çalıştırılacak analiz geçişi sayısı. İzleme, her analiz geçişi için belirtilen çözümleyici grubundan bir kez geçirilir.
 
 *systemEventsRetentionFlags*\
-Hangi sistem ETW olayları relogged izleme tutmak için belirtir bir bitmask. Daha fazla bilgi için [RELOG_RETENTION_SYSTEM_EVENT_FLAGS.](../other-types/relog-retention-system-event-flags-constants.md)
+Yeniden günlüğe kaydedilen izlemede tutulacak sistem ETW olaylarını belirten bir bit maskesi. Daha fazla bilgi için bkz. [RELOG_RETENTION_SYSTEM_EVENT_FLAGS](../other-types/relog-retention-system-event-flags-constants.md).
 
-*analyzerGroup*\
-Yeniden ağaçlandırma oturumunun analiz aşaması için kullanılan çözümleyici grubu. Bir çözümleyici grubu oluşturmak için [MakeStaticAnalyzerGroup'u](make-static-analyzer-group.md) arayın. [MakeDynamicAnalyzerGroup'tan](make-dynamic-analyzer-group.md)elde edilen dinamik bir analizör grubunu kullanmak için, önce adresini statik `MakeStaticAnalyzerGroup`bir çözümleyici grubuna ileterek kapsülle.
+*Analiz Zergrubu*\
+Yeniden günlüğe kaydetme oturumunun analiz aşaması için kullanılan çözümleyici grubu. Bir çözümleyici grubu oluşturmak için [Makestaticanalizzergroup](make-static-analyzer-group.md) öğesini çağırın. [Makedynamicanalizzergroup](make-dynamic-analyzer-group.md)'tan edinilen dinamik bir çözümleyici grubunu kullanmak için, önce adresini adresine geçirerek bir statik çözümleyici grubu içinde kapsülleyebilirsiniz `MakeStaticAnalyzerGroup` .
 
 *reloggerGroup*\
-Olayları *outputLogFile'de*belirtilen izleme dosyasına yeniden kaydeden relogger grubu. Bir relogger grubu oluşturmak için [MakeStaticReloggerGroup'u](make-static-relogger-group.md) arayın. [MakeDynamicReloggerGroup'tan](make-dynamic-relogger-group.md)elde edilen dinamik bir relogger grubunu kullanmak için, `MakeStaticReloggerGroup`önce adresini .
+Olayları *Outputlogfile* içinde belirtilen izleme dosyasına yeniden kaydeden yeniden günlükçü grubu. Bir yeniden günlükçü grubu oluşturmak için [Makestaticreloggergroup](make-static-relogger-group.md) öğesini çağırın. [Makedynamicreloggergroup](make-dynamic-relogger-group.md)öğesinden elde edilen dinamik bir yeniden günlükçü grubunu kullanmak için, önce adresini adresine geçirerek bir statik yeniden günlükçüsü grubu içinde kapsülleyebilirsiniz `MakeStaticReloggerGroup` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
 
-### <a name="remark"></a>Açıklama
+### <a name="remark"></a>Görüyorum
 
-Giriş izleme çözümleyici grup numarası *OfAnalysisPasses* kez geçirilir. Geçişleri yeniden günlüğe kaydetme seçeneği benzer bir seçenek yoktur. İz, tüm analiz geçişleri tamamlandıktan sonra relogger grubuna yalnızca bir kez geçirilir.
+Giriş izlemesi, çözümleyici grubu *Numberofanalysispass* süreleri aracılığıyla geçirilir. Yeniden günlüğe kaydetme geçişleri için benzer bir seçenek yoktur. İzleme, tüm analiz geçişleri tamamlandıktan sonra yeniden günlükçü grubuna yalnızca bir kez Trough geçirilir.
 
-Bir relogger sınıfı içinden CPU örnekleri gibi sistem olaylarının yeniden günlüğe kaydedilmesi desteklenmez. Çıkış takibinde hangi sistem olaylarının kullanılacağına karar vermek için *sistemEventsRetentionFlags* parametresini kullanın.
+Yeniden günlükçü sınıfı içindeki CPU örnekleri gibi sistem olaylarının yeniden günlüğe kaydedilmesi desteklenmez. Çıkış izlemesinde tutulacak sistem olaylarını belirlemek için *systemEventsRetentionFlags* parametresini kullanın.
 
 ::: moniker-end

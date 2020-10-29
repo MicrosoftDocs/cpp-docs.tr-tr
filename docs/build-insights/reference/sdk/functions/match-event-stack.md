@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ae476c402c3ea0cad558ce41a979b4233e0f1dd3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 08627b6af601f6894aa228683ffb51232b015310
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224129"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922816"
 ---
 # <a name="matcheventstack"></a>MatchEventStack
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `MatchEventStack`İşlevi, bir olay yığınını belirli bir olay hiyerarşisine göre eşleştirmek için kullanılır. Eşleşen hiyerarşiler daha fazla işleme için bir işleyiciye iletilir. Olaylar, olay yığınları ve Hiyerarşiler hakkında daha fazla bilgi için bkz. [olay tablosu](../event-table.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -56,10 +56,10 @@ Tarafından desteklenen bir tür `operator()` . Hangi bağımsız değişkenleri
 Öğesine geçirilen fazladan bağımsız değişkenlerin türleri `MatchEventStack` .
 
 *eventStack*\
-*Tevent* ve *TEvents*tarafından tanımlanan olay türü hiyerarşisine göre eşleştirilecek olay yığını.
+*Tevent* ve *TEvents* tarafından tanımlanan olay türü hiyerarşisine göre eşleştirilecek olay yığını.
 
 *çağrılabilir*\
-Olay yığınını, *tevent* ve *TEvents*tarafından tanımlanan olay türü hiyerarşisine başarıyla eşleştirdikten sonra `MatchEventStack` *çağrılabilir*çağırır. Olay hiyerarşisindeki her tür için *çağrılabilir* bir r-value bağımsız değişkenine geçirilir. *Extraargs* parametre paketi, kalan *çağrılabilir*parametrelerde kusursuz iletilir.
+Olay yığınını, *tevent* ve *TEvents* tarafından tanımlanan olay türü hiyerarşisine başarıyla eşleştirdikten sonra `MatchEventStack` *çağrılabilir* çağırır. Olay hiyerarşisindeki her tür için *çağrılabilir* bir r-value bağımsız değişkenine geçirilir. *Extraargs* parametre paketi, kalan *çağrılabilir* parametrelerde kusursuz iletilir.
 
 *extraArgs*\
 Kusursuz şekilde iletilen bağımsız değişkenler, eşleşen olay türüyle birlikte *çağrılabilir* .
@@ -70,9 +70,9 @@ Kusursuz şekilde iletilen bağımsız değişkenler, eşleşen olay türüyle b
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Eventstack* 'teki son olay her zaman birleştirilmiş \[ *tevent*, *TEvents...* Type listesindeki son girdiye göre eşleşir \] . Diğer tüm *tevent* ve *TEvents* girişleri, en son dışında, aynı sırada olmaları şartıyla *eventstack* 'teki herhangi bir konumla eşleşir.
+*Eventstack* 'teki son olay her zaman birleştirilmiş \[ *tevent* , *TEvents...* Type listesindeki son girdiye göre eşleşir \] . Diğer tüm *tevent* ve *TEvents* girişleri, en son dışında, aynı sırada olmaları şartıyla *eventstack* 'teki herhangi bir konumla eşleşir.
 
-*Tevent* ve *TEvents* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
+*Tevent* ve *TEvents* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları* listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 

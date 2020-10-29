@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Visual C++, development tools
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 5a03590074d8de05153b2d9442da8b916e6eba82
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: db0a4ccbab142d01f0506b77237dbb09d43a1cf0
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500275"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924359"
 ---
 # <a name="overview-of-c-development-in-visual-studio"></a>Visual Studio’da C++ geliştirmeye genel bakış
 
-Visual Studio tümleşik geliştirme ortamının (IDE) bir parçası olarak, Microsoft C++ (MSVC), diğer dillerle ortak olarak birçok pencere ve araç paylaşır. **Çözüm Gezgini**, kod Düzenleyicisi ve hata ayıklayıcı dahil çoğu, [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide)altında belgelenmiştir. Genellikle paylaşılan bir araç veya pencere, C++ için diğer dillere kıyasla biraz farklı bir özellik kümesine sahiptir. Birkaç pencere veya araç yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerde kullanılabilir.
+Visual Studio tümleşik geliştirme ortamının (IDE) bir parçası olarak, Microsoft C++ (MSVC), diğer dillerle ortak olarak birçok pencere ve araç paylaşır. **Çözüm Gezgini** , kod Düzenleyicisi ve hata ayıklayıcı dahil çoğu, [Visual Studio IDE](/visualstudio/get-started/visual-studio-ide)altında belgelenmiştir. Genellikle paylaşılan bir araç veya pencere, C++ için diğer dillere kıyasla biraz farklı bir özellik kümesine sahiptir. Birkaç pencere veya araç yalnızca Visual Studio Professional veya Visual Studio Enterprise sürümlerde kullanılabilir.
 
 Visual Studio IDE 'deki paylaşılan araçlara ek olarak, MSVC yerel kod geliştirme için özel olarak çeşitli araçlara sahiptir. Bu araçlar da bu makalede listelenmiştir. Visual Studio 'nun her sürümünde hangi araçların kullanılabildiği bir listesi için bkz. [Visual Studio sürümlerindeki C++ araçları ve özellikleri](visual-cpp-tools-and-features-in-visual-studio-editions.md).
 
@@ -27,13 +27,13 @@ Visual Studio, IntelliSense, gözatma ve hata ayıklama için tam destekle birli
 
 - **MSBuild** , Visual Studio için yerel proje sistemidir. Ana menüden **Dosya**  >  **Yeni**  >  **Proje** ' yi seçtiğinizde, farklı türlerde C++ uygulamaları hızla geliştirmeye başlamanızı sağlayan birçok tür MSBuild *proje şablonu* görürsünüz.
 
-   ::: moniker range="vs-2019"
+   ::: moniker range="msvc-160"
 
    ![Yeni proje şablonları](../build/media/mathclient-project-name-2019.png "Visual Studio 2019 yeni proje Iletişim kutusu")
 
    ::: moniker-end
 
-   ::: moniker range="<=vs-2017"
+   ::: moniker range="<=msvc-150"
 
    ![Proje şablonları](media/vs2017-new-project.png "Visual Studio 2017 yeni proje Iletişim kutusu")
 
@@ -47,15 +47,15 @@ Visual Studio, IntelliSense, gözatma ve hata ayıklama için tam destekle birli
 
 ## <a name="add-to-source-control"></a>Kaynak denetimine Ekle
 
-Kaynak denetimi, birden çok geliştirici arasında çalışmayı koordine etmenize, sürmekte olan işleri üretim kodundan yalıtmanıza ve kaynak kodunuzu yedeklemenize olanak sağlar. Visual Studio, git ve [Team Foundation sürüm denetimi \( TFVC \) ](/azure/devops/repos/tfvc/) 'yi **Takım Gezgini** penceresi aracılığıyla destekler.
+Kaynak denetimi, birden çok geliştirici arasında çalışmayı koordine etmenize, sürmekte olan işleri üretim kodundan yalıtmanıza ve kaynak kodunuzu yedeklemenize olanak sağlar. Visual Studio, git ve [Team Foundation sürüm denetimi \( TFVC \)](/azure/devops/repos/tfvc/) 'yi **Takım Gezgini** penceresi aracılığıyla destekler.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![Visual Studio 2019 ' de Takım Gezgini penceresinin ekran görüntüsü.](media/vs2019-team-explorer.png "Visual Studio 2017 Takım Gezgini")
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ![Visual Studio 2017 ' de Takım Gezgini penceresinin ekran görüntüsü.](media/vs2017-team-explorer.png "Visual Studio 2017 Takım Gezgini")
 
@@ -79,7 +79,7 @@ MFC uygulaması için Kullanıcı arabirimi oluşturma hakkında daha fazla bilg
 
 ## <a name="write-code"></a>Kod yazma
 
-Bir proje oluşturduktan sonra, tüm proje dosyaları **Çözüm Gezgini** penceresinde görüntülenir. (Bir *çözüm* , bir veya daha fazla ilgili proje için mantıksal bir kapsayıcıdır.) **Çözüm Gezgini**' de bir. h veya. cpp dosyasına tıkladığınızda, dosya kod düzenleyicisinde açılır.
+Bir proje oluşturduktan sonra, tüm proje dosyaları **Çözüm Gezgini** penceresinde görüntülenir. (Bir *çözüm* , bir veya daha fazla ilgili proje için mantıksal bir kapsayıcıdır.) **Çözüm Gezgini** ' de bir. h veya. cpp dosyasına tıkladığınızda, dosya kod düzenleyicisinde açılır.
 
 ![Çözüm Gezgini ve kod Düzenleyicisi](media/vs2017-solution-explorer-code-editor.png "Visual Studio 2017 Çözüm Gezgini ve kod Düzenleyicisi")
 
@@ -87,11 +87,11 @@ Kod Düzenleyicisi, C++ kaynak kodu için özelleştirilmiş bir sözcük işlem
 
 ## <a name="add-and-edit-resources"></a>Kaynakları ekleme ve düzenleme
 
-Bir Windows programı veya DLL genellikle iletişim kutuları, simgeler, görüntüler, yerelleştirilebilir dizeler, giriş ekranları, veritabanı bağlantı dizeleri veya herhangi bir rastgele veri gibi bazı *kaynakları*içerir. Visual Studio, kaynak ekleme ve düzenlemenin araçlarını içerir. Daha fazla bilgi için bkz. [kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md).
+Bir Windows programı veya DLL genellikle iletişim kutuları, simgeler, görüntüler, yerelleştirilebilir dizeler, giriş ekranları, veritabanı bağlantı dizeleri veya herhangi bir rastgele veri gibi bazı *kaynakları* içerir. Visual Studio, kaynak ekleme ve düzenlemenin araçlarını içerir. Daha fazla bilgi için bkz. [kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md).
 
 ## <a name="build-compile-and-link"></a>Derle (Derle ve bağla)
 
-**Build**  >  Proje derlemek ve bağlamak için, menü çubuğunda yapı**oluşturma çözümünü** seçin veya **CTRL + SHIFT + B** tuş birleşimini girin. Derleme hataları ve uyarıları Hata Listesi bildirilir (**CTRL + \\ , E**). **Çıkış** penceresi (**alt + 2**) yapı işlemi hakkındaki bilgileri gösterir.
+**Build**  >  Proje derlemek ve bağlamak için, menü çubuğunda yapı **oluşturma çözümünü** seçin veya **CTRL + SHIFT + B** tuş birleşimini girin. Derleme hataları ve uyarıları Hata Listesi bildirilir ( **CTRL + \\ , E** ). **Çıkış** penceresi ( **alt + 2** ) yapı işlemi hakkındaki bilgileri gösterir.
 
 ![Çıkış Penceresi ve Hata Listesi](media/vs2017-output-error-list.png "Visual Studio 2017 çıkış penceresi ve Hata Listesi")
 
@@ -101,7 +101,7 @@ Ayrıca, derleyicisini (cl.exe) ve derleme ile ilgili diğer araçları ve NMAKE
 
 ## <a name="debug"></a>Hata ayıklama
 
-**F5**tuşuna basarak hata ayıklamaya başlayabilirsiniz. Yürütme, ayarlamış olduğunuz tüm kesme noktalarında duraklatılır ( **F9**tuşuna basarak). Ayrıca, tek seferde (**F10**) bir satır halinde ilerleyerek, değişkenlerin veya yazmaçların değerlerini görüntüleyebilir, hatta bazı durumlarda kodda değişiklik yapabilir ve yeniden derlemeden hata ayıklamaya devam edebilirsiniz. Aşağıdaki çizimde, bir kesme noktasında yürütmenin durdurulduğu bir hata ayıklama oturumu gösterilmektedir. Veri yapısı üyelerinin değerleri, **Izleme penceresinde**görünür.
+**F5** tuşuna basarak hata ayıklamaya başlayabilirsiniz. Yürütme, ayarlamış olduğunuz tüm kesme noktalarında duraklatılır ( **F9** tuşuna basarak). Ayrıca, tek seferde ( **F10** ) bir satır halinde ilerleyerek, değişkenlerin veya yazmaçların değerlerini görüntüleyebilir, hatta bazı durumlarda kodda değişiklik yapabilir ve yeniden derlemeden hata ayıklamaya devam edebilirsiniz. Aşağıdaki çizimde, bir kesme noktasında yürütmenin durdurulduğu bir hata ayıklama oturumu gösterilmektedir. Veri yapısı üyelerinin değerleri, **Izleme penceresinde** görünür.
 
 ![Hata ayıklama oturumu](media/vs2017-debug-watch.png "Visual Studio 2017 hata ayıklama oturumu")
 

@@ -1,114 +1,114 @@
 ---
 title: Kod analizi için örnek C++ projesi
-description: Visual Studio'daki Microsoft C++ için kod analizi gözden geçirme de kullanılmak üzere örnek bir çözüm oluşturma.
+description: Visual Studio 'da Microsoft C++ için kod analizi kılavuznda kullanılmak üzere örnek bir çözüm oluşturma.
 ms.date: 04/14/2020
 ms.topic: sample
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
-ms.openlocfilehash: c2a1b8c80b7e7aebd1f1530c66ade5859b392028
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dd4fe67c05200ccc2865bc7c48b1f5047d77565e
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372054"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924625"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Kod analizi için örnek C++ projesi
 
-Aşağıdaki [yordamlar, Walkthrough: Analyze C/C++ kodunu niçin oluşturabileceğinizi](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)gösterir. Yordamlar oluşturur:
+Aşağıdaki yordamlarda Izlenecek yol için örneğin nasıl oluşturulacağı gösterilmektedir [: hatalar Için C/C++ kodunu analiz etme](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Şu yordamları oluşturun:
 
-- *CppDemo*adlı bir Görsel Stüdyo çözümü .
+- *CppDemo* adlı bir Visual Studio çözümü.
 
-- *CodeKusurları*adlı statik bir kitaplık projesi.
+- *Codearızaları* adlı bir statik kitaplık projesi.
 
-- *Ek Açıklamalar*adlı statik bir kitaplık projesi.
+- *Ek açıklamalar* adlı bir statik kitaplık projesi.
 
-Yordamlar ayrıca, statik kitaplıklar için üstbilgi ve *.cpp* dosyaları için kod sağlar.
+Yordamlar ayrıca statik kitaplıklar için üst bilgi ve *. cpp* dosyaları için kod sağlar.
 
-## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo çözümve CodeDefects projesini oluşturun
+## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>CppDemo çözümü ve Codekusurları projesi oluşturma
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-1. Visual Studio'u açın ve **yeni bir proje oluştur'u** seçin
+1. Visual Studio 'Yu açın ve **Yeni proje oluştur** ' u seçin
 
-1. Yeni **bir proje oluştur** iletişim kutusunda, dil filtresini **C++** olarak değiştirin.
+1. **Yeni proje oluştur** iletişim kutusunda dil filtresini **C++** olarak değiştirin.
 
-1. **Windows Masaüstü Sihirbazı'nı** seçin ve **İleri** düğmesini seçin.
+1. **Windows Masaüstü Sihirbazı** ' nı seçin ve **İleri** düğmesini seçin.
 
-1. Yeni **proje sayfanızı Yapılandır'** da, **Proje adı** metin kutusuna *CodeDefects*girin.
+1. **Yeni projenizi yapılandırın** sayfasında, **Proje adı** metin kutusuna *codekusurlarını* girin.
 
-1. Çözüm **adı** metin kutusuna *CppDemo'yu*girin.
+1. **Çözüm adı** metin kutusuna *CppDemo* yazın.
 
-1. **Oluştur**’u seçin.
+1. **Oluştur** ' a tıklayın.
 
-1. Windows **Desktop Project** iletişim kutusunda, **Uygulama türünü** Statik **Kitaplık (.lib) olarak değiştirin.**
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türünü** **statik kitaplık (. lib)** olarak değiştirin.
 
-1. **Ek seçenekler**altında, **Boş proje'yi**seçin.
+1. **Ek seçenekler** altında **boş proje** ' yi seçin.
 
-1. Çözüm ve proje oluşturmak için **Tamam'ı** seçin.
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-1. Visual Studio'yu açın. Menü çubuğunda**Yeni** > **Proje** **yi seçin.** > 
-
-1. Yeni **Proje** iletişim kutusunda **Visual C++** > **Windows Desktop'ı**seçin.
-
-1. **Windows Masaüstü Sihirbazı'nı**seçin.
-
-1. **Ad** metin kutusuna *CodeDefects*girin.
-
-1. Çözüm **adı** metin kutusuna *CppDemo'yu*girin.
-
-1. **Tamam'ı**seçin.
-
-1. Windows **Desktop Project** iletişim kutusunda, **Uygulama türünü** Statik **Kitaplık (.lib) olarak değiştirin.**
-
-1. **Ek seçenekler**altında, **Boş proje'yi**seçin.
-
-1. Çözüm ve proje oluşturmak için **Tamam'ı** seçin.
+1. Çözümü ve projeyi oluşturmak için **Tamam ' ı** seçin.
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-150"
 
-1. Visual Studio'yu açın. Menü çubuğunda**Yeni** > **Proje** **yi seçin.** > 
+1. Visual Studio'yu açın. Menü çubuğunda **Dosya**  >  **Yeni**  >  **Proje** ' yi seçin.
 
-1. Yeni **Proje** iletişim kutusunda, **Şablonlar** > **Visual C++** > **Win32'yi**seçin.
+1. **Yeni proje** iletişim kutusunda **Visual C++** > **Windows Masaüstü** Visual C++ ' ni seçin.
 
-1. **Win32 Konsol Uygulamasını**seçin.
+1. **Windows Masaüstü Sihirbazı** ' nı seçin.
 
-1. **Ad** metin kutusuna *CodeDefects*girin.
+1. **Ad** metin kutusuna *codekusurlarını* girin.
 
-1. Çözüm **adı** metin kutusuna *CppDemo'yu*girin.
+1. **Çözüm adı** metin kutusuna *CppDemo* yazın.
 
-1. **Tamam'ı**seçin.
+1. **Tamam ' ı** seçin.
 
-1. **Win32 Uygulama Sihirbazı** iletişim kutusunda **İleri** düğmesini seçin.
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türünü** **statik kitaplık (. lib)** olarak değiştirin.
 
-1. Uygulama **türünü** **Statik kitaplık**olarak değiştirin.
+1. **Ek seçenekler** altında **boş proje** ' yi seçin.
 
-1. **Ek seçenekler**altında, **önceden derlenmiş üstbilgi**nin seçilmi.
-
-1. Çözümü ve projeyi oluşturmak için **Finish'i** seçin.
+1. Çözümü ve projeyi oluşturmak için **Tamam ' ı** seçin.
 
 ::: moniker-end
 
-## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Üstbilgi ve kaynak dosyayı CodeDefects projesine ekleme
+::: moniker range="msvc-140"
 
-1. Çözüm Gezgini'nde **CodeDefects'i genişletin.**
+1. Visual Studio'yu açın. Menü çubuğunda **Dosya**  >  **Yeni**  >  **Proje** ' yi seçin.
 
-1. **Üstbilgi Dosyaları**için bağlam menüsünü açmak için sağ tıklatın. **Yeni Öğe** **Ekle'yi** > seçin.
+1. **Yeni proje** iletişim kutusunda, **Templates** > **Visual C++** > **Win32** Visual C++ Şablonlar ' ı seçin.
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **Visual C++** > **Kodu'nu**seçin ve ardından **Üstbilgi Dosyası 'nı (.h)** seçin.
+1. **Win32 konsol uygulaması** ' nı seçin.
 
-1. **Ad** edit kutusuna *Bug.h'yi*girin ve sonra **Ekle** düğmesini seçin.
+1. **Ad** metin kutusuna *codekusurlarını* girin.
 
-1. *Bug.h*için düzenle penceresinde, içeriği seçin ve silin.
+1. **Çözüm adı** metin kutusuna *CppDemo* yazın.
 
-1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *Hata.h* dosyasına yapıştırın.
+1. **Tamam ' ı** seçin.
+
+1. **Win32 uygulama Sihirbazı** Iletişim kutusunda **İleri** düğmesini seçin.
+
+1. **Uygulama türünü** **statik kitaplık** olarak değiştirin.
+
+1. **Ek seçenekler** altında, **önceden derlenmiş üstbilginin** seçimini kaldırın.
+
+1. Çözümü ve projeyi oluşturmak için **son** ' a tıklayın.
+
+::: moniker-end
+
+## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Üstbilgi ve kaynak dosyayı Codekusurları projesine ekleyin
+
+1. Çözüm Gezgini, **kod hataları** ' nı genişletin.
+
+1. **Üst bilgi dosyaları** için bağlam menüsünü açmak için sağ tıklayın. **Add**  >  **Yeni öğe** Ekle ' yi seçin.
+
+1. **Yeni öğe Ekle** iletişim kutusunda **Visual C++**  >  **kodu** ' nu seçin ve ardından **üst bilgi dosyası (. h)** öğesini seçin.
+
+1. **Ad** düzenleme kutusunda *Bug. h* girin ve sonra **Ekle** düğmesini seçin.
+
+1. *Hata. h* için düzenleme penceresinde, içeriği seçin ve silin.
+
+1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *hata. h* dosyasına yapıştırın.
 
     ```cpp
     #pragma once
@@ -125,13 +125,13 @@ Yordamlar ayrıca, statik kitaplıklar için üstbilgi ve *.cpp* dosyaları içi
     const int ACCOUNT_DOMAIN_LEN = 128;
     ```
 
-1. Çözüm Gezgini'nde, **Kaynak Dosyalar**için bağlam menüsünü açmak için sağ tıklatın. **Yeni Öğe** **Ekle'yi** > seçin.
+1. Çözüm Gezgini ' de, **kaynak dosyalarının** bağlam menüsünü açmak için sağ tıklayın. **Add**  >  **Yeni öğe** Ekle ' yi seçin.
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **C++ Dosyası (.cpp)** seçeneğini belirleyin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin.
 
-1. **Ad** edit kutusuna *Bug.cpp'yi*girin ve sonra **Ekle** düğmesini seçin.
+1. **Ad** düzenleme kutusunda *Bug. cpp* girin ve sonra **Ekle** düğmesini seçin.
 
-1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *Hata.cpp* dosyasına yapıştırın.
+1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *hata. cpp* dosyasına yapıştırın.
 
     ```cpp
     #include "Bug.h"
@@ -199,79 +199,79 @@ Yordamlar ayrıca, statik kitaplıklar için üstbilgi ve *.cpp* dosyaları içi
     }
     ```
 
-1. Menü çubuğunda**Tümlerini Kaydet'i** **seçin.** > 
+1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet** ' i seçin.
 
-## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Ek Açıklamalar projesini ekleyin ve statik kitaplık olarak yapılandırın
+## <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Ek açıklamalar projesini ekleme ve statik kitaplık olarak yapılandırma
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-1. Çözüm Gezgini'nde bağlam menüsünü açmak için **CppDemo'ya** sağ tıklayın. **Yeni Proje** **Ekle'yi** > seçin.
+1. Çözüm Gezgini, bağlam menüsünü açmak için **CppDemo** öğesine sağ tıklayın. **Add**  >  **Yeni proje** Ekle öğesini seçin.
 
-1. Yeni **proje** iletişim kutusu ekle kutusunda **Windows Desktop Wizard'ı**seçin ve ardından **Sonraki** düğmesini seçin.
+1. **Yeni Proje Ekle** iletişim kutusunda, **Windows Masaüstü Sihirbazı** ' nı seçin ve ardından **İleri** düğmesini seçin.
 
-1. Yeni **proje sayfanızı Yapılandır' da,** **Proje adı** metin kutusunda Ek *Açıklamalar*girin ve sonra **Oluştur'u**seçin.
+1. **Yeni projenizi yapılandırın** sayfasında, **Proje adı** metin kutusuna *ek açıklamalar* girin ve ardından **Oluştur** ' u seçin.
 
-1. Windows **Desktop Project** iletişim kutusunda, **Uygulama türünü** Statik **Kitaplık (.lib) olarak değiştirin.**
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türünü** **statik kitaplık (. lib)** olarak değiştirin.
 
-1. **Ek seçenekler**altında, **Boş proje'yi**seçin.
+1. **Ek seçenekler** altında **boş proje** ' yi seçin.
 
-1. Projeyi oluşturmak için **Tamam'ı** seçin.
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-1. Çözüm Gezgini'nde bağlam menüsünü açmak için **CppDemo'ya** sağ tıklayın. **Yeni Proje** **Ekle'yi** > seçin.
-
-1. Yeni **Proje Ekle** iletişim kutusunda **Visual C++** > **Windows Desktop'ı**seçin.
-
-1. **Windows Masaüstü Sihirbazı'nı**seçin.
-
-1. **Ad** metin kutusuna Ek *Açıklamalar*girin ve sonra **Tamam'ı**seçin.
-
-1. Windows **Desktop Project** iletişim kutusunda, **Uygulama türünü** Statik **Kitaplık (.lib) olarak değiştirin.**
-
-1. **Ek seçenekler**altında, **Boş proje'yi**seçin.
-
-1. Projeyi oluşturmak için **Tamam'ı** seçin.
+1. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-150"
 
-1. Çözüm Gezgini'nde bağlam menüsünü açmak için **CppDemo'ya** sağ tıklayın. **Yeni Proje** **Ekle'yi** > seçin.
+1. Çözüm Gezgini, bağlam menüsünü açmak için **CppDemo** öğesine sağ tıklayın. **Add**  >  **Yeni proje** Ekle öğesini seçin.
 
-1. Yeni **Proje Ekle** iletişim kutusunda **Visual C++** > **Win32'yi**seçin.
+1. **Yeni Proje Ekle** iletişim kutusunda **Visual C++** > **Windows Masaüstü** Visual C++ ' yi seçin.
 
-1. **Win32 Konsol Uygulamasını**seçin.
+1. **Windows Masaüstü Sihirbazı** ' nı seçin.
 
-1. **Ad** metin kutusuna *Ek Açıklamalar*girin.
+1. **Ad** metin kutusuna *ek açıklamalar* yazın ve ardından **Tamam** ' ı seçin.
 
-1. **Tamam'ı**seçin.
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türünü** **statik kitaplık (. lib)** olarak değiştirin.
 
-1. **Win32 Uygulama Sihirbazı** iletişim kutusunda **İleri** düğmesini seçin.
+1. **Ek seçenekler** altında **boş proje** ' yi seçin.
 
-1. Uygulama **türünü** **Statik kitaplık**olarak değiştirin.
-
-1. **Ek seçenekler**altında, **önceden derlenmiş üstbilgi**nin seçilmi.
-
-1. Projeyi oluşturmak için **Finish'i** seçin.
+1. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
 ::: moniker-end
 
-## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Üstbilgi dosyasını ve kaynak dosyasını Ek Açıklamalar projesine ekleme
+::: moniker range="msvc-140"
 
-1. Çözüm Gezgini'nde Ek **Açıklamaları genişletin.**
+1. Çözüm Gezgini, bağlam menüsünü açmak için **CppDemo** öğesine sağ tıklayın. **Add**  >  **Yeni proje** Ekle öğesini seçin.
 
-1. **Ek Açıklamalar**altında **Üstbilgi Dosyaları** için bağlam menüsünü açmak için sağ tıklatın. **Yeni Öğe** **Ekle'yi** > seçin.
+1. **Yeni Proje Ekle** iletişim kutusunda Win32 Visual C++ seçin **Visual C++** > **Win32** .
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **Visual C++** > **Kodu'nu**seçin ve ardından **Üstbilgi Dosyası 'nı (.h)** seçin.
+1. **Win32 konsol uygulaması** ' nı seçin.
 
-1. **Ad** edit kutusuna, *ek açıklamalar.h*'yi girin ve sonra **Ekle** düğmesini seçin.
+1. **Ad** metin kutusuna *ek açıklamalar* girin.
 
-1. *Ek açıklamalar.h*için düzenle penceresinde, içeriği seçin ve silin.
+1. **Tamam ' ı** seçin.
 
-1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *ek açıklamalar.h* dosyasına yapıştırın.
+1. **Win32 uygulama Sihirbazı** Iletişim kutusunda **İleri** düğmesini seçin.
+
+1. **Uygulama türünü** **statik kitaplık** olarak değiştirin.
+
+1. **Ek seçenekler** altında, **önceden derlenmiş üstbilginin** seçimini kaldırın.
+
+1. Projeyi oluşturmak için **son** ' a tıklayın.
+
+::: moniker-end
+
+## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Üst bilgi dosyasını ve kaynak dosyayı ek açıklamalar projesine ekleyin
+
+1. Çözüm Gezgini ' de, **ek açıklamalar** ' ı genişletin.
+
+1. **Ek açıklamalar** altında **üstbilgi dosyalarının** bağlam menüsünü açmak için sağ tıklayın. **Add**  >  **Yeni öğe** Ekle ' yi seçin.
+
+1. **Yeni öğe Ekle** iletişim kutusunda **Visual C++**  >  **kodu** ' nu seçin ve ardından **üst bilgi dosyası (. h)** öğesini seçin.
+
+1. **Ad** düzenleme kutusunda, *ek açıklama. h* girin ve sonra **Ekle** düğmesini seçin.
+
+1. *Ek açıklamalar. h* için düzenleme penceresinde, içeriği seçin ve silin.
+
+1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *ek açıklamalar. h* dosyasına yapıştırın.
 
     ```cpp
     #pragma once
@@ -288,13 +288,13 @@ Yordamlar ayrıca, statik kitaplıklar için üstbilgi ve *.cpp* dosyaları içi
     _Ret_maybenull_ LinkedList* AllocateNode();
     ```
 
-1. Çözüm Gezgini'nde, **Ek Açıklamalar**altında **Kaynak Dosyalar** için bağlam menüsünü açmak için sağ tıklatın. **Yeni Öğe** **Ekle'yi** > seçin.
+1. Çözüm Gezgini ' de, **ek açıklamalar** altındaki **kaynak dosyaları** için bağlam menüsünü açmak için sağ tıklayın. **Add**  >  **Yeni öğe** Ekle ' yi seçin.
 
-1. Yeni **Öğe Ekle** iletişim kutusunda **C++ Dosyası (.cpp)** seçeneğini belirleyin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin.
 
-1. **Ad** edit kutusuna ek *açıklamalar.cpp*girin ve sonra **Ekle** düğmesini seçin.
+1. **Ad** düzenleme kutusunda, *ek açıklama. cpp* girin ve sonra **Ekle** düğmesini seçin.
 
-1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *ek açıklamalar.cpp* dosyasına yapıştırın.
+1. Aşağıdaki kodu kopyalayın ve düzenleyicideki *ek açıklama. cpp* dosyasına yapıştırın.
 
     ```cpp
     #include "annotations.h"
@@ -324,13 +324,13 @@ Yordamlar ayrıca, statik kitaplıklar için üstbilgi ve *.cpp* dosyaları içi
     }
     ```
 
-1. Menü çubuğunda**Tümlerini Kaydet'i** **seçin.** > 
+1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet** ' i seçin.
 
-Çözüm artık tamamlandı ve hatasız inşa etmelidir.
+Çözüm artık tamamlanmıştır ve hatasız bir şekilde oluşturulmalıdır.
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 > [!NOTE]
-> Visual Studio 2017'de IntelliSense `E1097 unknown attribute "no_init_all"` motorunda sahte bir uyarı görebilirsiniz. Bu uyarıyı güvenle yoksayabilirsiniz.
+> Visual Studio 2017 ' de, IntelliSense altyapısında bir çok değerli uyarı görebilirsiniz `E1097 unknown attribute "no_init_all"` . Bu uyarıyı güvenle yoksayabilirsiniz.
 
 ::: moniker-end

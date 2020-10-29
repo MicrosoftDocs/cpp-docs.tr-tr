@@ -1,6 +1,6 @@
 ---
 title: StopAndRelogTracingSessionW
-description: C++ Build Insights SDK StopAndRelogTracingSessionW fonksiyon başvurusu.
+description: C++ derleme öngörüleri SDK StopAndRelogTracingSessionW işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c542ba8f313f30cf5adb069dd02cf3db29ffc532
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9c39607b9d088be18fb24238428512be09d78c53
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323686"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922685"
 ---
 # <a name="stopandrelogtracingsessionw"></a>StopAndRelogTracingSessionW
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-İşlev `StopAndRelogTracingSessionW` devam eden bir izleme oturumunu durdurur ve ortaya çıkan izlemeyi geçici bir dosyaya kaydeder. Yeniden günlüğe kaydetme oturumu daha sonra geçici dosyayı giriş olarak kullanmaya başlar. Yeniden günlüğe kaydetme oturumu tarafından üretilen son yeniden kaydedilmiş izleme, arayan tarafından belirtilen bir dosyaya kaydedilir. Bu işlevi çağıran yürütülebilirlerin yönetici ayrıcalıkları olmalıdır.
+`StopAndRelogTracingSessionW`İşlevi devam eden bir izleme oturumunu sonlandırır ve elde edilen izlemeyi geçici bir dosyaya kaydeder. Yeniden günlüğe kaydetme oturumu daha sonra giriş olarak geçici dosyayı kullanmaya hemen başlatılır. Yeniden günlüğe kaydetme oturumu tarafından üretilen son yeniden günlüğe kaydetme izlemesi, çağıran tarafından belirtilen bir dosyaya kaydedilir. Bu işlevi çağıran yürütülebilir dosyalar yönetici ayrıcalıklarına sahip olmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,20 +39,20 @@ enum RESULT_CODE StopAndRelogTracingSessionW(
 
 ### <a name="parameters"></a>Parametreler
 
-*Oturumadı*\
-Durdurmak için izleme oturumunun adı. [StartTracingSession , StartTracingSessionA](start-tracing-session.md)veya [StartTracingSessionW'e](start-tracing-session-w.md)geçen oturum adı ile aynı oturum adını kullanın. [StartTracingSessionA](start-tracing-session-a.md)
+*OturumAdı*\
+Durdurulacak izleme oturumunun adı. [Starttracingsession](start-tracing-session.md), [starttracingsessiona](start-tracing-session-a.md)veya [starttracingsessionw](start-tracing-session-w.md)öğesine geçirilen oturum adını kullanın.
 
 *outputLogFile*\
-Yeniden ağaçlandırılmak üzere üretilen relogged izin yazılabilmek için dosya.
+Yeniden günlüğe kaydetme oturumu tarafından üretilen yeniden oturum açan izlemenin yazılacağı dosya.
 
-*Istatistik*\
-[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) bir nesneye işaretçi. `StopAndRelogTracingSessionW`dönmeden önce bu nesneye izleme toplama istatistikleri yazar.
+*girecek*\
+[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) nesnesine yönelik işaretçi. `StopAndRelogTracingSessionW` döndürmeden önce bu nesnedeki izleme toplama istatistiklerini yazar.
 
-*analizAçıklayıcı*\
-[RELOG_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) bir nesneye işaretçi. Tarafından başlatılan yeniden günlüğe kaydetme oturumunu yapılandırmak için bu nesneyi `StopAndRelogTracingSessionW`kullanın.
+*analysisDescriptor*\
+[RELOG_DESCRIPTOR](../other-types/analysis-descriptor-struct.md) nesnesine yönelik işaretçi. Tarafından başlatılan yeniden günlüğe kaydetme oturumunu yapılandırmak için bu nesneyi kullanın `StopAndRelogTracingSessionW` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
 
 ::: moniker-end

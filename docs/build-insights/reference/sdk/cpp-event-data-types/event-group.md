@@ -1,6 +1,6 @@
 ---
 title: EventGroup sınıfı
-description: C++ Build Insights SDK EventGroup sınıf başvurusu.
+description: C++ Build Insights SDK 'Sı EventGroup sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 596c18ca0e9b4d7b26c4ed5209b16871952c4af2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 57cbc7a053132909149aee182b9560e2ee33c161
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324996"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923311"
 ---
 # <a name="eventgroup-class"></a>EventGroup sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `EventGroup` şablonu, tüm grup yakalama sınıfları için taban sınıftır.
+`EventGroup`Sınıf şablonu, tüm Grup yakalama sınıfları için temel sınıftır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,20 +47,20 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*Taktivite* Grupta bulunan etkinlik türü.
+*TActivity* Grupta yer alan etkinlik türü.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="functions"></a>İşlevler
 
-[Geri](#back)
-[başlatma](#begin)
-[sonu](#end)
-[Ön](#front)
-[işleç[]](#subscript-operator)
-[Boyut](#size)
+[Geri](#back) 
+ [Başlangıç](#begin) 
+ [son](#end) 
+ [Ön](#front) 
+ [operator []](#subscript-operator) 
+ [Boyut](#size)
 
-## <a name="back"></a><a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a> Geri
 
 ```cpp
 const TActivity& Back() const;
@@ -70,7 +70,7 @@ const TActivity& Back() const;
 
 Gruptaki son etkinlik olayına bir başvuru.
 
-## <a name="begin"></a><a name="begin"></a>Başlamak
+## <a name="begin"></a><a name="begin"></a> başladı
 
 ```cpp
 std::deque<TActivity>::const_iterator begin() const;
@@ -78,9 +78,9 @@ std::deque<TActivity>::const_iterator begin() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Etkinlik olay grubunun başına işaret eden bir yineleyici.
+Etkinlik olay grubunun başlangıcına işaret eden bir yineleyici.
 
-## <a name="end"></a><a name="end"></a>Son -unda
+## <a name="end"></a><a name="end"></a> erer
 
 ```cpp
 std::deque<TActivity>::const_iterator end() const;
@@ -88,9 +88,9 @@ std::deque<TActivity>::const_iterator end() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Etkinlik olay grubunun sonuna doğru bir pozisyonu gösteren bir yineleyici.
+Etkinlik olay grubu sonunun ötesinde bir konum gösteren bir yineleyici.
 
-## <a name="front"></a><a name="front"></a>Ön
+## <a name="front"></a><a name="front"></a> Yapılan
 
 ```cpp
 const TActivity& Front() const;
@@ -100,7 +100,7 @@ const TActivity& Front() const;
 
 Gruptaki ilk etkinlik olayına bir başvuru.
 
-## <a name="operator"></a><a name="subscript-operator"></a>işleç[]
+## <a name="operator"></a><a name="subscript-operator"></a> operator []
 
 ```cpp
 const TActivity& operator[](size_t index) const;
@@ -108,14 +108,14 @@ const TActivity& operator[](size_t index) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*\
-Etkinlik olay grubunda erişilen öğenin dizin.
+*indeks*\
+Etkinlik olay grubuna erişmek için öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Dizin tarafından*belirtilen konumda depolanan olay yığınından olay.
+*Dizin* tarafından belirtilen konumda depolanan olay yığınından olay.
 
-## <a name="size"></a><a name="size"></a>Boyutu
+## <a name="size"></a><a name="size"></a> Boyutla
 
 ```cpp
 size_t Size() const;

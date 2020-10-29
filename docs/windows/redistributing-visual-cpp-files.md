@@ -9,12 +9,12 @@ helpviewer_keywords:
 - file redistribution [C++]
 - redistributing applications [C++], about redistributing applications
 ms.assetid: d201b2ce-36f1-44e5-a96c-0db81a1ba652
-ms.openlocfilehash: 7a639f7ad7deb76cade47b0162012dcb70cb0d69
-ms.sourcegitcommit: e15b46ea7888dbdd7e0bb47da76aeed680c3c1f3
+ms.openlocfilehash: a660e67b2664417438ea9fa7acddbde4c20c307a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86446759"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924138"
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ Dosyalarını Yeniden Dağıtma
 
@@ -25,19 +25,19 @@ ms.locfileid: "86446759"
 
 Bir uygulamayı dağıtırken, onu desteklemek için gerekli tüm dosyaları da dağıtmalısınız. Bu dosyalardan herhangi biri Microsoft tarafından sağlandıysa, bunları yeniden dağıtmanıza izin verilip verilmeyeceğini kontrol edin. IDE 'deki Visual Studio lisans koşullarına bir bağlantı bulacaksınız. Hakkında Microsoft Visual Studio iletişim kutusunda lisans koşulları bağlantısını kullanın. Ya da, ilgili EULA 'Ları ve lisansları Visual Studio [Lisans dizininden](https://visualstudio.microsoft.com/license-terms/)indirebilirsiniz.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 Microsoft yazılımı lisans koşullarının "dağıtılabilir kod" bölümünde başvurulan "REDıST listesi" ni görüntülemek için bkz. [Microsoft Visual Studio 2019 Için dağıtılabilir kod dosyaları](/visualstudio/releases/2019/redistribution#-distributable-code-files-for-visual-studio-2019)
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Visual Studio 2017 Microsoft yazılımı lisans koşullarının "dağıtılabilir kod" bölümünde başvurulan "REDıST listesi" ni görüntülemek için, bkz. [Microsoft Visual Studio 2017 Için dağıtılabilir kod dosyaları](/visualstudio/productinfo/2017-redistribution-vs#-distributable-code-files-for-visual-studio-2017).
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Visual Studio 2015 Microsoft yazılımı lisans koşullarının "dağıtılabilir kod" bölümünde başvurulan "REDıST listesi" ni görüntülemek için, bkz. [Microsoft Visual Studio 2015 Için dağıtılabilir kod dosyaları](/visualstudio/productinfo/2015-redistribution-vs#-distributable-code-files-for-visual-studio-2015).
 
@@ -65,11 +65,11 @@ Yeniden dağıtılabilir birleştirme modülleri, uygulamanızı dağıtmak içi
 
 ## <a name="install-individual-redistributable-files"></a>Tek başına yeniden dağıtılabilir dosyaları yükler
 
-Yeniden dağıtılabilir DLL 'Leri *uygulamanın yerel klasörüne*doğrudan yüklemek de mümkündür. Yürütülebilir uygulama dosyanızı içeren klasör. Bakım nedenleriyle, bu yükleme konumunu kullanmanızı önermiyoruz.
+Yeniden dağıtılabilir DLL 'Leri *uygulamanın yerel klasörüne* doğrudan yüklemek de mümkündür. Yürütülebilir uygulama dosyanızı içeren klasör. Bakım nedenleriyle, bu yükleme konumunu kullanmanızı önermiyoruz.
 
 ## <a name="potential-run-time-errors"></a>Olası çalışma zamanı hataları
 
-Windows, uygulamanız için gerekli olan yeniden dağıtılabilir kitaplık dll 'Lerden birini bulamazsa şuna benzer bir ileti görüntülenebilir: " *Library*. dll bulunamadığı için bu uygulama başlatılamadı. Uygulamayı yeniden yüklemek bu sorunu çözebilir. "
+Windows, uygulamanız için gerekli olan yeniden dağıtılabilir kitaplık dll 'Lerden birini bulamazsa şuna benzer bir ileti görüntülenebilir: " *Library* . dll bulunamadığı için bu uygulama başlatılamadı. Uygulamayı yeniden yüklemek bu sorunu çözebilir. "
 
 Bu tür bir hatayı gidermek için, uygulama yükleyicinizin doğru şekilde ayarlandığından emin olun. Yeniden dağıtılabilir kitaplıkların hedef sistemde doğru şekilde dağıtıldığını doğrulayın. Daha fazla bilgi için bkz. [bir Visual C++ uygulamasının bağımlılıklarını anlama](understanding-the-dependencies-of-a-visual-cpp-application.md).
 

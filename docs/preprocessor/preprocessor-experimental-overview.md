@@ -5,22 +5,22 @@ ms.date: 09/10/2020
 helpviewer_keywords:
 - preprocessor, experimental
 - preprocessor, new
-ms.openlocfilehash: c95f923d8c38250958e26431b61a71a1e6a7fdda
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 5327a8148f78a07e222fae7fb92e6ed741d12011
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041373"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924580"
 ---
 # <a name="msvc-new-preprocessor-overview"></a>MSVC yeni Önişlemci genel bakış
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Visual Studio 2015, standart C++ veya C99 uyumlu olmayan geleneksel Önişlemci 'yi kullanır. Visual Studio 2019 sürüm 16,5 ' den başlayarak, C++ 20 Standard için yeni Önişlemci desteği Özellik tamamlanmıştır. Bu değişiklikler [/Zc: Önişlemci](../build/reference/zc-preprocessor.md) derleyici anahtarı kullanılarak kullanılabilir. Yeni Önişlemci 'nin deneysel sürümü, Visual Studio 2017 sürüm 15,8 ve sonrasında [/deneysel: Önişlemci](../build/reference/experimental-preprocessor.md) derleyici anahtarı kullanılarak kullanılabilir. Visual Studio 2017 ve Visual Studio 2019 ' de yeni Önişlemci kullanımı hakkında daha fazla bilgi mevcuttur. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Standart uyumluluğu artırmak, uzunları onarmak ve resmi olarak tanımsız bazı davranışları değiştirmek için Microsoft C++ Önişlemci 'yi güncelleştiriyoruz. Ayrıca makro tanımlarındaki hatalarda uyarı almak için yeni Tanılamalar ekledik.
 

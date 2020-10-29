@@ -2,12 +2,12 @@
 title: Visual Studio 'da C++ kodunu okuma ve anlama
 description: Kodunuzu biçimlendirmek ve anlamak için Visual Studio 'da C++ kod düzenleyicisini kullanın.
 ms.date: 05/28/2019
-ms.openlocfilehash: 3da4224592cabd11e449fa4be395eba046c0e554
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: cd152ffbbd106c6a31a21da35d08b53555047209
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686148"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924645"
 ---
 # <a name="read-and-understand-c-code-in-visual-studio"></a>Visual Studio 'da C++ kodunu okuma ve anlama
 
@@ -23,7 +23,7 @@ Kullanılmayan kod (bir #if 0 ' ın altında kod gibi) renkli olarak daha fafdı
 
 ![Etkin olmayan kod](../ide/media/inactive-code-cpp.png "C++ etkin olmayan kodu")
 
-**Hızlı Başlat**' da "yazı tipleri" yazarak ve ardından **yazı tipleri ve renkler**' i seçerek renkleri özelleştirebilirsiniz. **Yazı tipleri ve renkler** Iletişim kutusunda C/C++ seçeneklerine gidin ve özel bir yazı tipi ve/veya renk seçin.
+**Hızlı Başlat** ' da "yazı tipleri" yazarak ve ardından **yazı tipleri ve renkler** ' i seçerek renkleri özelleştirebilirsiniz. **Yazı tipleri ve renkler** Iletişim kutusunda C/C++ seçeneklerine gidin ve özel bir yazı tipi ve/veya renk seçin.
 
 ## <a name="outlining"></a>Anahat Oluşturma
 
@@ -33,11 +33,11 @@ Kaynak kodu dosyasında herhangi bir yere sağ tıklayın ve kod bloklarını ve
 
 İmlecinizi, ' {' veya '} ' küme ayracı önüne yerleştirdiğinizde, düzenleyici eşleşen karşılığı vurgular.
 
-Diğer anahat oluşturma seçenekleri **Edit**  >  Ana menüdeki**anahat** düzenleme altında bulunur.
+Diğer anahat oluşturma seçenekleri **Edit**  >  Ana menüdeki **anahat** düzenleme altında bulunur.
 
 ## <a name="line-numbers"></a>Satır numaraları
 
-**Araçlar**  >  **Seçenekler**  >  **metin Düzenleyicisi**  >  **tüm dillerde**  >  **genel** veya hızlı başlatma ile "satır numarası" araması yaparak projenize satır numaraları ekleyebilirsiniz **(CTRL + Q)**. Satır numaraları, C++ dahil olmak üzere tüm diller veya yalnızca belirli diller için ayarlanabilir.
+**Araçlar**  >  **Seçenekler**  >  **metin Düzenleyicisi**  >  **tüm dillerde**  >  **genel** veya hızlı başlatma ile "satır numarası" araması yaparak projenize satır numaraları ekleyebilirsiniz **(CTRL + Q)** . Satır numaraları, C++ dahil olmak üzere tüm diller veya yalnızca belirli diller için ayarlanabilir.
 
 ## <a name="scroll-and-zoom"></a>Kaydırma ve yakınlaştırma
 
@@ -49,7 +49,7 @@ Kaydırma çubuğu **harita modu** , geçerli konumunuzu çıkmadan bir kod dosy
 
 ![C&#43;&#43;içindeki kod Haritası ](../ide/media/vs2015-cpp-code-map.png "Kod Haritası")
 
-**Harita modunu**açmak için ana araç çubuğundaki **Hızlı başlatma** araması kutusuna "Eşle" yazın ve **kaydırma eşleme modunu kullan**' ı seçin. Daha fazla bilgi için bkz. [nasıl yapılır: kaydırma çubuğunu özelleştirerek kodunuzu izleme](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
+**Harita modunu** açmak için ana araç çubuğundaki **Hızlı başlatma** araması kutusuna "Eşle" yazın ve **kaydırma eşleme modunu kullan** ' ı seçin. Daha fazla bilgi için bkz. [nasıl yapılır: kaydırma çubuğunu özelleştirerek kodunuzu izleme](/visualstudio/ide/how-to-track-your-code-by-customizing-the-scrollbar).
 
 **Harita modu** kapalı olduğunda, kaydırma çubuğu hala dosyada yaptığınız değişiklikleri vurgulamaktadır. Yeşil, kaydedilen değişiklikleri ve sarı kaydedilmemiş değişiklikleri gösterir.
 
@@ -57,11 +57,11 @@ Kaydırma çubuğu **harita modu** , geçerli konumunuzu çıkmadan bir kod dosy
 
 Bildirim ve hemen öncesinde bulunan tüm yorumlar dahil olmak üzere herhangi bir değişken, işlev veya başka bir simgenin üzerine gelin.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ![Visual Studio 2019 ' de Hızlı Bilgi ipucu gösteren ekran görüntüsü.](../ide/media/quick-info-vs2019.png "Hızlı Bilgi")
 
-**Hızlı bilgi** araç Ipucunda bir **çevrimiçi arama** bağlantısı vardır. **Tools**  >  **Options**  >  **Text Editor**  >  **C++**  >  Arama sağlayıcısını belirtmek için Araçlar Seçenekler metin düzenleyicisi C++**görünümü** ' ne gidin.
+**Hızlı bilgi** araç Ipucunda bir **çevrimiçi arama** bağlantısı vardır. **Tools**  >  **Options**  >  **Text Editor**  >  **C++**  >  Arama sağlayıcısını belirtmek için Araçlar Seçenekler metin düzenleyicisi C++ **görünümü** ' ne gidin.
 
 Kodunuzda bir hata varsa, üzerine gelin ve **hızlı bilgi** hata iletisini görüntüler. Hata iletisini Hata Listesi penceresinde de bulabilirsiniz.
 
@@ -69,7 +69,7 @@ Kodunuzda bir hata varsa, üzerine gelin ve **hızlı bilgi** hata iletisini gö
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ![Visual Studio 2017 ' de Hızlı Bilgi ipucu gösteren ekran görüntüsü.](../ide/media/quick-info.png "Hızlı Bilgi")
 

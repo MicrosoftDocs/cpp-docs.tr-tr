@@ -25,20 +25,20 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: bb301f63bfd1e6839d7893cdc03d61e021409666
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: eaaa2c7428809c05532642b0f9ac53146c6f01a9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500076"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924291"
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Bu konu, Windows için Visual Studio projelerine yöneliktir. Linux projeleri için bkz. [Linux C++ Özellik sayfası başvurusu](../../linux/prop-pages-linux.md). CMake projeleri için bkz. [Visual Studio 'Da CMake projeleri](../cmake-projects-in-visual-studio.md). Android projeleri için bkz. [genel proje özellikleri (Android C++)](../../cross-platform/general-android-prop-page.md). Android derleme görevleri dosyası projeleri için bkz. [genel proje özellikleri (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md)
 
-Çözüm Gezgini ' de bir proje düğümüne sağ tıklayıp **Özellikler**' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası şu özellikleri görüntüler:
+Çözüm Gezgini ' de bir proje düğümüne sağ tıklayıp **Özellikler** ' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası şu özellikleri görüntüler:
 
 - **Çıkış dizini**
 
@@ -68,7 +68,7 @@ Bu konu, Windows için Visual Studio projelerine yöneliktir. Linux projeleri i�
 
      Bağlayıcı araç takımını görüntüler,/DLL bağlayıcı seçeneğini belirtir ve _WINDLL tanımlar öğesini CL 'ye ekler.
 
-  - **Dosyasının**
+  - **Makefile**
 
      Makefile araç takımını (NMake) görüntüler.
 
@@ -86,7 +86,7 @@ Bu konu, Windows için Visual Studio projelerine yöneliktir. Linux projeleri i�
 
    Windows hedef platformu için, bu, projenizin gerektirdiği Windows SDK sürümünü belirtir. Visual Studio yükleyicisini kullanarak bir C++ Iş yükü yüklediğinizde Windows SDK gerekli bölümleri de yüklenir. Bilgisayarınızda başka Windows SDK sürümleriniz varsa, yüklediğiniz SDK araçlarının her sürümü açılan menüde görünür.
 
-   Windows 7 veya Windows Vista 'Yı hedeflemek için **8,1**değerini kullanın, çünkü Windows SDK 8,1 Bu platformlarla geriye dönük olarak uyumludur. Ayrıca, targetver. h içinde **_WIN32_WINNT** için uygun değeri tanımlamanız gerekir. Windows 7 için, bu 0x0601 ' dir. Bkz. [WINVER ve _WIN32_WINNT değiştirme](../../porting/modifying-winver-and-win32-winnt.md).
+   Windows 7 veya Windows Vista 'Yı hedeflemek için **8,1** değerini kullanın, çünkü Windows SDK 8,1 Bu platformlarla geriye dönük olarak uyumludur. Ayrıca, targetver. h içinde **_WIN32_WINNT** için uygun değeri tanımlamanız gerekir. Windows 7 için, bu 0x0601 ' dir. Bkz. [WINVER ve _WIN32_WINNT değiştirme](../../porting/modifying-winver-and-win32-winnt.md).
 
    Windows XP ve Windows 2003 Server projelerini derlemek için, kitaplıkların güncel sürümünü kullanmak üzere Visual Studio 'ya dahil edilen Windows XP platformu araç takımını yükleyebilirsiniz. Bu platform araç takımını edinme ve kullanma hakkında daha fazla bilgi için bkz. [WINDOWS XP Için programları yapılandırma](../configuring-programs-for-windows-xp.md). Platform araç takımını değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: hedef Framework ve platform araç takımını değiştirme](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
@@ -100,9 +100,9 @@ Bu konu, Windows için Visual Studio projelerine yöneliktir. Linux projeleri i�
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini**' de bir proje düğümüne sağ tıklayıp **Özellikler**' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası özelliklerin iki bölümünü görüntüler:
+Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini** ' de bir proje düğümüne sağ tıklayıp **Özellikler** ' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası özelliklerin iki bölümünü görüntüler:
 
 - Genel
 
@@ -112,7 +112,7 @@ Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini**' de bir proj
 
 - **Hedef platform**
 
-   Projenin çalışacağı platformu belirtir. Örneğin, Windows, Android veya iOS. **Windows 10** değeri, projenin Evrensel Windows platformu hedeflediği anlamına gelir. Windows 'un önceki sürümlerini hedefliyorsanız, sürüm listelenmez ve bu alandaki değer yalnızca **Windows**olarak görünür. Bu, bir proje oluşturduğunuzda ayarlanmış bir salt okunurdur.
+   Projenin çalışacağı platformu belirtir. Örneğin, Windows, Android veya iOS. **Windows 10** değeri, projenin Evrensel Windows platformu hedeflediği anlamına gelir. Windows 'un önceki sürümlerini hedefliyorsanız, sürüm listelenmez ve bu alandaki değer yalnızca **Windows** olarak görünür. Bu, bir proje oluşturduğunuzda ayarlanmış bir salt okunurdur.
 
 - **Hedef platform sürümü (Visual Studio 2015)**
 
@@ -124,7 +124,7 @@ Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini**' de bir proj
 
    Windows hedef platformu için, bu, projenizin gerektirdiği Windows SDK sürümünü belirtir. Visual Studio yükleyicisini kullanarak bir C++ Iş yükü yüklediğinizde Windows SDK gerekli bölümleri de yüklenir. Bilgisayarınızda başka Windows SDK sürümleriniz varsa, yüklediğiniz SDK araçlarının her sürümü açılan menüde görünür.
 
-   Windows 7 veya Windows Vista 'Yı hedeflemek için **8,1**değerini kullanın, çünkü Windows SDK 8,1 Bu platformlarla geriye dönük olarak uyumludur. Ayrıca, targetver. h içinde **_WIN32_WINNT** için uygun değeri tanımlamanız gerekir. Windows 7 için, bu 0x0601 ' dir. Bkz. [WINVER ve _WIN32_WINNT değiştirme](../../porting/modifying-winver-and-win32-winnt.md).
+   Windows 7 veya Windows Vista 'Yı hedeflemek için **8,1** değerini kullanın, çünkü Windows SDK 8,1 Bu platformlarla geriye dönük olarak uyumludur. Ayrıca, targetver. h içinde **_WIN32_WINNT** için uygun değeri tanımlamanız gerekir. Windows 7 için, bu 0x0601 ' dir. Bkz. [WINVER ve _WIN32_WINNT değiştirme](../../porting/modifying-winver-and-win32-winnt.md).
 
    Windows XP ve Windows 2003 Server projelerini derlemek için, kitaplıkların güncel sürümünü kullanmak üzere Visual Studio 'ya dahil edilen Windows XP platformu araç takımını yükleyebilirsiniz. Bu platform araç takımını edinme ve kullanma hakkında daha fazla bilgi için bkz. [WINDOWS XP Için programları yapılandırma](../configuring-programs-for-windows-xp.md). Platform araç takımını değiştirme hakkında daha fazla bilgi için bkz. [nasıl yapılır: hedef Framework ve platform araç takımını değiştirme](../how-to-modify-the-target-framework-and-platform-toolset.md).
 
@@ -150,7 +150,7 @@ Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini**' de bir proj
 
 - **Temizlemede Silinecek Uzantılar**
 
-   **Temizleme** seçeneği (**derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellik ile belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden derleme gerçekleştirdiğinizde silinir. Ara dizindeki bu uzantılara ait dosyaların yanı sıra, yapı sistemi, bulunduğu yere bakılmaksızın (. obj dosyaları gibi ara çıktılar dahil olmak üzere) her türlü bilinen çıktıyı da siler. Joker karakterler belirtebilirsiniz.
+   **Temizleme** seçeneği ( **derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellik ile belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden derleme gerçekleştirdiğinizde silinir. Ara dizindeki bu uzantılara ait dosyaların yanı sıra, yapı sistemi, bulunduğu yere bakılmaksızın (. obj dosyaları gibi ara çıktılar dahil olmak üzere) her türlü bilinen çıktıyı da siler. Joker karakterler belirtebilirsiniz.
 
    Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A> ..
 
@@ -170,7 +170,7 @@ Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini**' de bir proj
 
 ## <a name="project-defaults"></a>Proje Varsayılanları
 
-Proje varsayılan bölümündeki özellikler, değiştirebileceğiniz varsayılan özellikleri temsil eder. Bu özelliklerin tanımı, \Vc\vcprojectdefaults. *yükleme dizinindeki*. props dosyalarında bulunabilir.
+Proje varsayılan bölümündeki özellikler, değiştirebileceğiniz varsayılan özellikleri temsil eder. Bu özelliklerin tanımı, \Vc\vcprojectdefaults. *yükleme dizinindeki* . props dosyalarında bulunabilir.
 
 - **Yapılandırma türü**
 
@@ -184,7 +184,7 @@ Proje varsayılan bölümündeki özellikler, değiştirebileceğiniz varsayıla
 
      Bağlayıcı araç takımını görüntüler,/DLL bağlayıcı seçeneğini belirtir ve _WINDLL tanımlar öğesini CL 'ye ekler.
 
-  - **Dosyasının**
+  - **Makefile**
 
      Makefile araç takımını (NMake) görüntüler.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: f87e6cc0a307eed4f00f1fb90ac16a840a1759af
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 156fe9c7a2b15f7254fb0c83f8b25982aa5ad09a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509454"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924310"
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 
@@ -32,13 +32,13 @@ ms.locfileid: "91509454"
 
 ## <a name="atl-ole-db-provider-wizard-support"></a>ATL OLE DB sağlayıcı Sihirbazı desteği
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ATL OLE DB sağlayıcı Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 **ATL OLE DB sağlayıcı Sihirbazı** , oturum üstbilgi dosyasında üç şema sınıfı oluşturur:
 
@@ -58,9 +58,9 @@ Bu sınıflar, şema bilgileri için tüketici isteklerine yanıt verir; OLE DB 
 
 Bu sınıfları, sağlayıcınıza uygun şema bilgilerini işleyecek şekilde özelleştirebilirsiniz:
 
-- **C**<em>ShortName</em>**SessionTRSchemaRowset**içinde, katalog, tablo ve Açıklama alanlarını ( `trData.m_szType` , `trData.m_szTable` ve) doldurmanız gerekir `trData.m_szDesc` . Sihirbaz tarafından oluşturulan örnek yalnızca bir satır (tablo) kullanır. Diğer sağlayıcılar birden fazla tablo döndürebilir.
+- **C**<em>ShortName</em>**SessionTRSchemaRowset** içinde, katalog, tablo ve Açıklama alanlarını ( `trData.m_szType` , `trData.m_szTable` ve) doldurmanız gerekir `trData.m_szDesc` . Sihirbaz tarafından oluşturulan örnek yalnızca bir satır (tablo) kullanır. Diğer sağlayıcılar birden fazla tablo döndürebilir.
 
-- **C**<em>ShortName</em>**SessionColSchemaRowset**içinde, tablonun adını olarak geçirirsiniz `DBID` .
+- **C**<em>ShortName</em>**SessionColSchemaRowset** içinde, tablonun adını olarak geçirirsiniz `DBID` .
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))
     rgRestrictions[l] = 0x0C;
 ```
 
-Aşağıdaki `Execute` işlev normal satır kümelerinde benzerdir. Üç bağımsız değişkendir: *Pcrowsabetkilenen*, *CRestrictions*ve *rgRestrictions*. *Pcrowsaetkilenen* değişkeni, sağlayıcının şema satır kümesinde satır sayısını döndüre, bir çıkış parametresidir. *CRestrictions* parametresi, tüketici tarafından Sağlayıcıya geçirilen kısıtlamaların sayısını tutan bir giriş parametresidir. *RgRestrictions* parametresi, kısıtlama değerlerini tutan bir değişken değerleri dizisidir.
+Aşağıdaki `Execute` işlev normal satır kümelerinde benzerdir. Üç bağımsız değişkendir: *Pcrowsabetkilenen* , *CRestrictions* ve *rgRestrictions* . *Pcrowsaetkilenen* değişkeni, sağlayıcının şema satır kümesinde satır sayısını döndüre, bir çıkış parametresidir. *CRestrictions* parametresi, tüketici tarafından Sağlayıcıya geçirilen kısıtlamaların sayısını tutan bir giriş parametresidir. *RgRestrictions* parametresi, kısıtlama değerlerini tutan bir değişken değerleri dizisidir.
 
 ```cpp
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,

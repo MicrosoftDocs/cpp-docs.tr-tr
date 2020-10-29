@@ -1,6 +1,6 @@
 ---
 title: BottomUp sınıfı
-description: C++ Build Insights SDK BottomUp sınıf başvurusu.
+description: C++ derleme öngörüleri SDK 'Sı sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 1cfe25aaa5736b9e2ba55a577e64958a6b9f113b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4fb5d9165837484477044f200e5a17da0e678e32
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325213"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923389"
 ---
 # <a name="bottomup-class"></a>BottomUp sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `BottomUp` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [BOTTOM_UP](../event-table.md#bottom-up) bir olayı eşleştirmek için kullanın.
+`BottomUp`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [BOTTOM_UP](../event-table.md#bottom-up) olayına uyacak şekilde kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class BottomUp : public Activity
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `BottomUp` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte, `BottomUp` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [BottomUp](#bottom-up)
 
-## <a name="bottomup"></a><a name="bottom-up"></a>BottomUp
+## <a name="bottomup"></a><a name="bottom-up"></a> BottomUp
 
 ```cpp
 BottomUp(const RawEvent& event);
@@ -53,7 +53,7 @@ BottomUp(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 [BOTTOM_UP](../event-table.md#bottom-up) bir olay.
 
 ::: moniker-end

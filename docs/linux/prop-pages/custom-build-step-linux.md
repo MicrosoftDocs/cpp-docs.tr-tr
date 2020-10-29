@@ -1,31 +1,31 @@
 ---
-title: Özel Yapı Adım Özellikleri (Linux C++)
+title: Özel derleme adımı özellikleri (Linux C++)
 ms.date: 06/07/2019
 ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
-ms.openlocfilehash: 67b281e245c4fff8f37baff8875cbc3dc84ca718
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 51111b7ff1ab68ecc49b54efdeeef5f95368ab0c
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79441335"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924535"
 ---
-# <a name="custom-build-step-properties-linux-c"></a>Özel Yapı Adım Özellikleri (Linux C++)
+# <a name="custom-build-step-properties-linux-c"></a>Özel derleme adımı özellikleri (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
-Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir.
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | Özellik | Açıklama |
 |--|--|
 | Komut Satırı | Özel derleme adımı tarafından yürütülecek komut. |
 | Açıklama | Özel derleme adımı çalıştırıldığında görüntülenen ileti. |
 | Çıkışlar | Özel derleme adımının oluşturduğu çıkış dosyası. Artımlı derlemelerin doğru çalışması için bu ayar gereklidir. |
-| Ek Bağımlılıklar | Özel derleme adımı için kullanılacak tüm ek girdi dosyalarının noktalı virgülle ayrılmış listesi. |
-| Daha Önce Çalıştır Ve Çalıştır | Bu seçenekler, listelenen hedeflere göreli olarak, özel derleme adımının yapı işleminde çalıştırılacağı zamanı tanımlar. Yapı işleminde en önemli adımları temsil etmeleri nedeniyle, en yaygın olarak listelenen hedefler BuildGenerateSources, BuildCompile ve BuildLink'tir. Sıklıkla listelenen diğer hedefler Midl, CLCompile ve Link'tir. |
-| Çıkışı İçerik Olarak Değerlendir | Bu seçenek, .appx paketindeki tüm içerik dosyalarını içeren Microsoft Mağazası veya Windows Phone uygulamaları için yalnızca anlamlıdır. |
+| Ek bağımlılıklar | Özel derleme adımı için kullanılacak tüm ek girdi dosyalarının noktalı virgülle ayrılmış listesi. |
+| Önce yürütün ve yürütmeden önce yürütün | Bu seçenekler, listelenen hedeflere göreli olarak, özel derleme adımının yapı işleminde çalıştırılacağı zamanı tanımlar. Yapı işleminde en önemli adımları temsil etmeleri nedeniyle, en yaygın olarak listelenen hedefler BuildGenerateSources, BuildCompile ve BuildLink'tir. Sıklıkla listelenen diğer hedefler Midl, CLCompile ve Link'tir. |
+| Çıkışı İçerik Olarak Değerlendir | Bu seçenek yalnızca. appx paketindeki tüm içerik dosyalarını içeren Microsoft Store veya Windows Phone uygulamalar için anlamlıdır. |
 
 ::: moniker-end

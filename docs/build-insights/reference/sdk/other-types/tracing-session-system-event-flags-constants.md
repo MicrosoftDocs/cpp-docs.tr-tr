@@ -1,6 +1,6 @@
 ---
 title: TRACING_SESSION_SYSTEM_EVENT_FLAGS sabitleri
-description: C++ Build Insights SDK sabitler referansı TRACING_SESSION_SYSTEM_EVENT_FLAGS.
+description: C++ derleme öngörüleri SDK TRACING_SESSION_SYSTEM_EVENT_FLAGS sabitler başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 264d697cc905eb6b44c8ec7de835a552976f0eb8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 346c955355ffbc6c062a34bf928f16ccd3940154
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323281"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922379"
 ---
 # <a name="tracing_session_system_event_flags-constants"></a>TRACING_SESSION_SYSTEM_EVENT_FLAGS sabitleri
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sabitler, `TRACING_SESSION_SYSTEM_EVENT_FLAGS` izleme sırasında hangi sistem olaylarının toplandığını açıklamak için kullanılır. [TRACING_SESSION_OPTIONS](tracing-session-options-struct.md) yapının `SystemEventFlags` alanını başlatmak için bunları kullanın.
+`TRACING_SESSION_SYSTEM_EVENT_FLAGS`Sabitler, bir izleme sırasında toplanacak sistem olaylarını tanımlamakta kullanılır. [TRACING_SESSION_OPTIONS](tracing-session-options-struct.md) yapısının alanını başlatmak için bunları kullanın `SystemEventFlags` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 static const unsigned long long
@@ -42,10 +42,10 @@ static const unsigned long long
 
 ## <a name="members"></a>Üyeler
 
-| Adı | Bu bayrak tarafından açık olan olaylar |
+| Ad | Bu bayrak tarafından açık olaylar |
 |--|--|
-| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_CONTEXT` | Bu bayrak, açıkça belirtilmese bile C++ Build Insights SDK tarafından varsayılan olarak etkinleştirilir. C++ Build Insights tarafından gerekli olan temel sistem olaylarının düzgün çalışmasını sağlar. Bu bayrağın etkinleştiren olayları işlemler, iş parçacıkları ve görüntü yükleme hakkında bilgi sağlar. Bu olayları devre dışı kalamazsınız. |
+| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_CONTEXT` | Bu bayrak, açıkça belirtilmediği halde C++ Build Insights SDK 'Sı tarafından varsayılan olarak etkinleştirilir. C++ derleme öngörülerinin düzgün çalışması için gerekli olan temel sistem olaylarını sağlar. Bu bayrak tarafından etkinleştirilen olaylar, süreçler, iş parçacıkları ve görüntü yükleme hakkında bilgi sağlar. Bu olayları devre dışı bırakamıyorum. |
 | `TRACING_SESSION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | CPU örnekleri |
-| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_ALL` | Bu bayrak tüm sistem olaylarını açar. |
+| `TRACING_SESSION_SYSTEM_EVENT_FLAGS_ALL` | Bu bayrak tüm sistem olaylarını etkinleştirir. |
 
 ::: moniker-end

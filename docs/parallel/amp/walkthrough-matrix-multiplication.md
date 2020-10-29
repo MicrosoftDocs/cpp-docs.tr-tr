@@ -2,12 +2,12 @@
 title: 'İzlenecek yol: Matris Çarpım'
 ms.date: 04/23/2019
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: 6387e68304c7b1dbf0531729b7b73b519f40d159
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d45e731cefe51a815424aa941362dce8ceaa4500
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215874"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924346"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>İzlenecek yol: Matris Çarpım
 
@@ -27,39 +27,39 @@ Başlamadan önce:
 
 Yeni bir proje oluşturmak için yönergeler, yüklediğiniz Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-the-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de proje oluşturmak için
 
 1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **boş proje** ' yi seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna *matrixçarp* girin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **boş proje** ' yi seçin ve ardından **İleri** ' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna *matrixçarp* girin ve isterseniz proje konumunu belirtin.
 
    ![Yeni konsol uygulaması](../../build/media/mathclient-project-name-2019.png "Yeni konsol uygulaması")
 
 1. İstemci projesini oluşturmak için **Oluştur** düğmesini seçin.
 
-1. **Çözüm Gezgini**' de, **kaynak dosyaları**için kısayol menüsünü açın ve **Add** > **Yeni öğe**Ekle ' yi seçin.
+1. **Çözüm Gezgini** ' de, **kaynak dosyaları** için kısayol menüsünü açın ve **Add** > **Yeni öğe** Ekle ' yi seçin.
 
 1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin, **ad** kutusuna *Matrixçarp. cpp* girin ve sonra **Ekle** düğmesini seçin.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### <a name="to-create-a-project-in-visual-studio-2017-or-2015"></a>Visual Studio 2017 veya 2015 ' de bir proje oluşturmak için
 
-1. Visual Studio 'daki menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Visual Studio 'daki menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. Şablonlar bölmesinde **yüklü** altında **Visual C++**' yi seçin.
+1. Şablonlar bölmesinde **yüklü** altında **Visual C++** ' yi seçin.
 
-1. **Boş proje**' yi seçin, **ad** kutusuna *matrixçarp* girin ve **Tamam** düğmesini seçin.
+1. **Boş proje** ' yi seçin, **ad** kutusuna *matrixçarp* girin ve **Tamam** düğmesini seçin.
 
 1. **İleri** düğmesini seçin.
 
-1. **Çözüm Gezgini**' de, **kaynak dosyaları**için kısayol menüsünü açın ve **Add** > **Yeni öğe**Ekle ' yi seçin.
+1. **Çözüm Gezgini** ' de, **kaynak dosyaları** için kısayol menüsünü açın ve **Add** > **Yeni öğe** Ekle ' yi seçin.
 
 1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin, **ad** kutusuna *Matrixçarp. cpp* girin ve sonra **Ekle** düğmesini seçin.
 
@@ -109,7 +109,7 @@ Bu bölümde, A ve B olmak üzere aşağıdaki şekilde tanımlanan iki matrisin
 
    Algoritma, matris çarpma tanımının kolay bir uygulamasıdır. Hesaplama süresini azaltmak için herhangi bir paralel veya iş parçacıklı algoritma kullanmaz.
 
-1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet**' i seçin.
+1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet** ' i seçin.
 
 1. Hata ayıklamayı başlatmak için **F5** klavye kısayolunu seçin ve çıktının doğru olduğunu doğrulayın.
 
@@ -171,7 +171,7 @@ Bu bölümde, A ve B olmak üzere aşağıdaki şekilde tanımlanan iki matrisin
    }
    ```
 
-1. **Ctrl** + Hata ayıklamayı başlatmak için CTRL**F5** klavye kısayoluna basın ve çıktının doğru olduğunu doğrulayın.
+1. **Ctrl** + Hata ayıklamayı başlatmak için CTRL **F5** klavye kısayoluna basın ve çıktının doğru olduğunu doğrulayın.
 
 1. Uygulamadan çıkmak için **Ara çubuğuna** basın.
 
@@ -316,7 +316,7 @@ Bu algoritmayı uygulamak için kod:
    }
    ```
 
-1. **Ctrl** + Hata ayıklamayı başlatmak için CTRL**F5** klavye kısayoluna basın ve çıktının doğru olduğunu doğrulayın.
+1. **Ctrl** + Hata ayıklamayı başlatmak için CTRL **F5** klavye kısayoluna basın ve çıktının doğru olduğunu doğrulayın.
 
 1. Uygulamadan çıkmak için **boşluk** çubuğuna basın.
 

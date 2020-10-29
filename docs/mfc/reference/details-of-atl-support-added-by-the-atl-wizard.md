@@ -7,28 +7,28 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, MFC projects
 ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
-ms.openlocfilehash: 10bafc9bd06ee94398f91d5af478a6e1cd7ca617
-ms.sourcegitcommit: bf1940a39029dbbd861f95480f55e5e8bd25cda0
+ms.openlocfilehash: aeac01ce58deb429f14058c06524dff53abde060
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108449"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924439"
 ---
 # <a name="details-of-atl-support-added-by-the-atl-wizard"></a>ATL Sihirbazı Tarafından Eklenen ATL Desteğinin Ayrıntıları
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-[Mevcut bir MFC yürütülebilir dosyasına veya dll 'sine atl desteği eklediğinizde](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio varsayılan olarak *Framework. h* adlı bir başlık dosyası ekler ve `#include` `#define` bu, projenizde ATL kullanımını etkinleştirmek için önişlemci yönergelerini içerir. Visual Studio 'nun önceki sürümlerinde yapıldığı gibi ek dosya veya sınıflar eklenmez.
+[Mevcut BIR MFC yürütülebilir dosyasına veya dll 'SINE atl desteği eklediğinizde](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio varsayılan olarak *Framework. h* adlı bir başlık dosyası ekler ve bu, `#include` `#define` projenizde ATL kullanımını etkinleştirmek için önişlemci yönergelerini içerir. Visual Studio 'nun önceki sürümlerinde yapıldığı gibi ek dosya veya sınıflar eklenmez.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-[Mevcut BIR MFC yürütülebilir dosyasına veya dll 'SINE atl desteği eklediğinizde](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio var olan MFC projesinde aşağıdaki değişiklikleri yapar (Bu örnekte, proje çağrılır `MFCEXE`):
+[Mevcut BIR MFC yürütülebilir dosyasına veya dll 'SINE atl desteği eklediğinizde](../../mfc/reference/adding-atl-support-to-your-mfc-project.md), Visual Studio var olan MFC projesinde aşağıdaki değişiklikleri yapar (Bu örnekte, proje çağrılır `MFCEXE` ):
 
 - İki yeni dosya (sunucusunu kaydetmek için kullanılan bir. IDL dosyası ve bir. rgs dosyası) eklenir.
 
-- Ana uygulama üst bilgisinde ve uygulama dosyalarında (Mfcexe. h ve Mfcexe. cpp), yeni bir sınıf (öğesinden `CAtlMFCModule`türetilmiş) eklenir. Yeni sınıfa ek olarak, kod kayıt için öğesine `InitInstance` eklenir. Kod, sınıf nesnesini iptal etmek `ExitInstance` için işlevine de eklenir. Son olarak, üst bilgi dosyasında, iki yeni üstbilgi dosyası (Initguid. h ve Mfcexe_i. c) uygulama dosyasında bulunur, bu, `CAtlMFCModule`-türetilmiş sınıf için yeni GUID 'ler bildirip başlatılıyor.
+- Ana uygulama üst bilgisinde ve uygulama dosyalarında (Mfcexe. h ve Mfcexe. cpp), yeni bir sınıf (öğesinden türetilmiş `CAtlMFCModule` ) eklenir. Yeni sınıfa ek olarak, kod `InitInstance` kayıt için öğesine eklenir. Kod, `ExitInstance` sınıf nesnesini iptal etmek için işlevine de eklenir. Son olarak, üst bilgi dosyasında, iki yeni üstbilgi dosyası (Initguid. h ve Mfcexe_i. c) uygulama dosyasında bulunur, bu,-türetilmiş sınıf için yeni GUID 'Ler bildirip başlatılıyor `CAtlMFCModule` .
 
 - Sunucuyu düzgün bir şekilde kaydetmek için, projenin kaynak dosyasına yeni. rgs dosyası girişi eklenir.
 

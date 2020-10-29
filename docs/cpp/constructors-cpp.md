@@ -6,16 +6,16 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 3694dc72860892d778533de2e40898faf9cc287d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b8373eda52967db881d7d58477fcd2a9181ac3ee
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042166"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924729"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
-Sınıf üyelerinin nasıl başlatıldığını özelleştirmek veya sınıfınızın bir nesnesi oluşturulduğunda işlevleri çağırmak için bir *Oluşturucu*tanımlayın. Bir Oluşturucu, sınıfla aynı ada sahip ve dönüş değeri yok. Başlatmayı çeşitli yollarla özelleştirmek için gereken sayıda aşırı yüklenmiş Oluşturucu tanımlayabilirsiniz. Genellikle, oluşturucular, sınıf tanımı veya devralma hiyerarşisi dışındaki kodların sınıfın nesnelerini oluşturabilmesi için genel erişilebilirliği vardır. Ancak, veya olarak bir Oluşturucu da bildirebilirsiniz **`protected`** **`private`** .
+Sınıf üyelerinin nasıl başlatıldığını özelleştirmek veya sınıfınızın bir nesnesi oluşturulduğunda işlevleri çağırmak için bir *Oluşturucu* tanımlayın. Bir Oluşturucu, sınıfla aynı ada sahip ve dönüş değeri yok. Başlatmayı çeşitli yollarla özelleştirmek için gereken sayıda aşırı yüklenmiş Oluşturucu tanımlayabilirsiniz. Genellikle, oluşturucular, sınıf tanımı veya devralma hiyerarşisi dışındaki kodların sınıfın nesnelerini oluşturabilmesi için genel erişilebilirliği vardır. Ancak, veya olarak bir Oluşturucu da bildirebilirsiniz **`protected`** **`private`** .
 
 Oluşturucular, isteğe bağlı olarak bir üye init listesi alabilir. Bu, Oluşturucu gövdesinde değer atamaya kıyasla sınıf üyelerini başlatmanın daha verimli bir yoludur. Aşağıdaki örnekte, `Box` üç aşırı yüklü Oluşturucu içeren bir sınıf gösterilmektedir. Son iki kullanılan üye başlangıç listeleri:
 
@@ -68,7 +68,7 @@ int main()
 
 ## <a name="member-initializer-lists"></a><a name="member_init_list"></a> Üye başlatıcı listeleri
 
-Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list \<T> ](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesiyle* aynı şey olmadığına unutmayın.)
+Oluşturucu, isteğe bağlı olarak, Oluşturucu gövdesinin yürütülmesinden önce sınıf üyelerini Başlatan bir üye Başlatıcı listesine sahip olabilir. (Üye başlatıcısı listesinin [std:: initializer_list \<T>](../standard-library/initializer-list-class.md)türünde bir *Başlatıcı listesiyle* aynı şey olmadığına unutmayın.)
 
 Üyeyi doğrudan başlattığında, üye başlatıcısı listesinin kullanılması, oluşturucunun gövdesinde değer atamaya tercih edilir. Aşağıdaki örnekte, üye Başlatıcı listesi, iki nokta üst üste gelen tüm **tanımlayıcı (bağımsız değişken)** ifadelerinden oluşur:
 
@@ -202,7 +202,7 @@ Kopya oluşturucuyu silinmiş olarak tanımlayarak, nesnenizin kopyalanmasını 
     Box (const Box& other) = delete;
 ```
 
-Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve başvurulmaya çalışılıyor*.
+Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve başvurulmaya çalışılıyor* .
 
 ## <a name="move-constructors"></a><a name="move_constructors"></a> Taşıma Oluşturucuları
 
@@ -425,7 +425,7 @@ int main() {
 }
 ```
 
-Çıkış şu şekildedir:
+Çıktı aşağıda verilmiştir:
 
 ```Output
 Contained1 ctor
@@ -641,9 +641,9 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-**Visual Studio 2017 ve üzeri**: **`using`** **/std: c++ 17** modundaki ifade, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, temel sınıftan tüm oluşturucuların kapsamına getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir.
+**Visual Studio 2017 ve üzeri** : **`using`** **/std: c++ 17** modundaki ifade, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, temel sınıftan tüm oluşturucuların kapsamına getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir.
 
 ::: moniker-end
 
@@ -661,7 +661,7 @@ Bu temel sınıfların aynı imzaya sahip oluşturucuları varsa, türetilen bir
 
 ## <a name="constructors-and-composite-classes"></a><a name="constructors_in_composite_classes"></a> Oluşturucular ve bileşik sınıflar
 
-Sınıf türü üyeleri içeren sınıflar *bileşik sınıflar*olarak bilinir. Bileşik bir sınıfın sınıf türünde bir üyesi oluşturulduğunda, sınıfın kendisi çağrılmadan önce oluşturucu çağrılır. İçerilen bir sınıfın varsayılan bir oluşturucusu yoksa, bileşik sınıfın oluşturucusunda bir başlatma listesi kullanmalısınız. Önceki `StorageBox` örnekte, `m_label` üye değişkeninin türünü yeni bir `Label` sınıfa değiştirirseniz, hem temel sınıf oluşturucusunu hem de `m_label` değişkeni `StorageBox` oluşturucuda başlatmalısınız:
+Sınıf türü üyeleri içeren sınıflar *bileşik sınıflar* olarak bilinir. Bileşik bir sınıfın sınıf türünde bir üyesi oluşturulduğunda, sınıfın kendisi çağrılmadan önce oluşturucu çağrılır. İçerilen bir sınıfın varsayılan bir oluşturucusu yoksa, bileşik sınıfın oluşturucusunda bir başlatma listesi kullanmalısınız. Önceki `StorageBox` örnekte, `m_label` üye değişkeninin türünü yeni bir `Label` sınıfa değiştirirseniz, hem temel sınıf oluşturucusunu hem de `m_label` değişkeni `StorageBox` oluşturucuda başlatmalısınız:
 
 ```cpp
 class Label {

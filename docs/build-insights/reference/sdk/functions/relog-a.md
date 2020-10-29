@@ -1,6 +1,6 @@
 ---
 title: RelogA
-description: C++ Build Insights SDK RelogA fonksiyon başvurusu.
+description: C++ Build Insights SDK 'Sı bir işlev başvurusunu yeniden günlüğe alın.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 5a772b1156fc69eeef39514afe401c549c3b7c38
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4e4882bca2241c520d4cb6ba0a8eb9c32704eaef
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323842"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922804"
 ---
 # <a name="reloga"></a>RelogA
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-İşlev, `RelogA` Windows için Olay İzleme (ETW) izleme sinden MSVC olaylarını okumak ve bunları yeni, değiştirilmiş bir ETW izlemesine yazmak için kullanılır.
+`RelogA`İşlevi, Windows Için olay izleme (ETW) IZLEMESININ MSVC olaylarını okumak ve bunları yeni, değiştirilmiş BIR ETW izlemeye yazmak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,17 +38,17 @@ enum RESULT_CODE RelogA(
 
 ### <a name="parameters"></a>Parametreler
 
-*inputLogFile*\
-Olayları okumak istediğiniz giriş ETW izi.
+*ınputlogfile*\
+Olaylarını okumak istediğiniz giriş ETW izlemesi.
 
 *outputLogFile*\
-Yeni olayların yazılabilmek için dosya.
+Yeni olayların yazılacağı dosya.
 
 *relogDescriptor*\
-[RELOG_DESCRIPTOR](../other-types/relog-descriptor-struct.md) bir nesneye işaretçi. Yeniden günlüğe kaydetme oturumunu yapılandırmak için bu nesneyi kullanın.
+[RELOG_DESCRIPTOR](../other-types/relog-descriptor-struct.md) nesnesine yönelik işaretçi. Yeniden günlüğe kaydetme oturumunu yapılandırmak için bu nesneyi kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
 
 ::: moniker-end

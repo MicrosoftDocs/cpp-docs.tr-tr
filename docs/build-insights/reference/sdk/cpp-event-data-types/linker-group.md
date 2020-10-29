@@ -1,6 +1,6 @@
 ---
 title: LinkerGroup sınıfı
-description: C++ Build Insights SDK LinkerGroup sınıf başvurusu.
+description: C++ derleme öngörüleri SDK LinkerGroup sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c59d62938e5bd7b839ad12a321a03510e708e0fd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8a818cf7524405d4e2f29a1987e93b77371607cc
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324654"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923114"
 ---
 # <a name="linkergroup-class"></a>LinkerGroup sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `LinkerGroup` MatchEventStack ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [MatchEventStack](../functions/match-event-stack.md) [LINKER](../event-table.md#linker) etkinlik gruplarını eşleştirmek için kullanın.
+`LinkerGroup`Sınıfı, [Matcheventstack](../functions/match-event-stack.md) ve [Matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [Bağlayıcı](../event-table.md#linker) olaylarının gruplarıyla eşleştirmek için bunu kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class LinkerGroup : public EventGroup<Linker>
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[OlayGrubu\<Bağlayıcı\> ](event-group.md) taban sınıfından devralınan üyelerle birlikte, `LinkerGroup` sınıf aşağıdaki üyeleri içerir:
+Kendi [EventGroup \<Linker\> ](event-group.md) temel sınıfından devralınan üyelerle birlikte, `LinkerGroup` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [LinkerGroup](#linker-group)
 
-## <a name="linkergroup"></a><a name="linker-group"></a>LinkerGroup
+## <a name="linkergroup"></a><a name="linker-group"></a> LinkerGroup
 
 ```cpp
 LinkerGroup(std::deque<Linker>&& group);
@@ -53,7 +53,7 @@ LinkerGroup(std::deque<Linker>&& group);
 
 ### <a name="parameters"></a>Parametreler
 
-*Grup*\
-BIR grup [LINKER](../event-table.md#linker) olayı.
+*grubu*\
+[Bağlayıcı](../event-table.md#linker) olayları grubu.
 
 ::: moniker-end

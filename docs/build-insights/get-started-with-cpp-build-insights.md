@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 28d7e0758ea521af424129c546297fc97e3d6659
-ms.sourcegitcommit: 8c8ed02a6f3bcb5ee008e3fe30ba7595d7c4c922
+ms.openlocfilehash: c4ebbb280a5cccaa35b5efc7f90e9b570600c47b
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83759231"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923636"
 ---
 # <a name="get-started-with-c-build-insights"></a>C++ Derleme İçgörüleri ile çalışmaya başlama
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ derleme öngörüleri araçları Visual Studio 2019 'de bulunabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 C++ derleme öngörüleri, Microsoft Visual C++ (MSVC) araç zinciri üzerinde daha fazla görünürlük sağlayan bir araç koleksiyonudur. Araçlar, C++ derlemelerinizi hakkında veri toplar ve bunu, yaygın soruları cevaplamanıza yardımcı olabilecek bir biçimde sunar:
 
@@ -31,7 +31,7 @@ C++ derleme öngörüleri, Microsoft Visual C++ (MSVC) araç zinciri üzerinde d
 
 Bu teknolojinin ana bileşenleri şunlardır:
 
-- derlemelerinizin izlemelerini toplamak için kullanabileceğiniz bir komut satırı yardımcı programı olan *vcperf. exe*,
+- Derlemelerinizin izlemelerini toplamak için kullanabileceğiniz bir komut satırı yardımcı programı olan *vcperf.exe* ,
 - WPA 'da derleme izlemelerini görüntülemenize olanak tanıyan bir Windows Performans Çözümleyicisi (WPA) uzantısı ve
 - C++ derleme öngörüleri verilerini kullanan kendi araçlarınızı oluşturmaya yönelik bir yazılım geliştirme seti olan C++ Build Insights SDK 'Sı.
 

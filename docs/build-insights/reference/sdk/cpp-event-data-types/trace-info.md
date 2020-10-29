@@ -1,6 +1,6 @@
 ---
 title: TraceInfo sınıfı
-description: C++ Build Insights SDK TraceInfo sınıf başvurusu.
+description: C++ Build Insights SDK TraceInfo sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 75d53937e3999f5692dee0ecf419e0ce5f49a274
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b772cc13981720c73238e56a561ca92144775cb4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324167"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922915"
 ---
 # <a name="traceinfo-class"></a>TraceInfo sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf, `TraceInfo` çözümlenen veya yeniden günlüğe kaydedilmiş bir izleme yle ilgili yararlı özelliklere erişmek için kullanılır.
+`TraceInfo`Sınıfı, analiz edilen veya yeniden günlüğe kaydedilen bir izleme hakkında faydalı özelliklere erişmek için kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class TraceInfo
@@ -47,25 +47,25 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tüm izleme `StartTimestamp` `StopTimestamp` sırasında geçen kene sayısını elde etmek için çıkar. Elde `TickFrequency` edilen değeri bir zaman birimine dönüştürmek için kullanın. Keneleri zamana dönüştürme örneği için bkz. [EVENT_DATA.](../c-event-data-types/event-data-struct.md)
+`StartTimestamp` `StopTimestamp` Tüm izleme sırasında geçen onay işareti sayısını almak için ' den çıkarın. `TickFrequency`Elde edilen değeri bir zaman birimine dönüştürmek için kullanın. Zaman işaretlerini zamana dönüştürme örneği için bkz. [EVENT_DATA](../c-event-data-types/event-data-struct.md).
 
-Keneleri kendiniz dönüştürmek istemiyorsanız, `TraceInfo` sınıf izleme süresini nanosaniye cinsinden döndüren bir üye işlev sağlar. Bu değeri diğer `chrono` zaman birimlerine dönüştürmek için standart C++ kitaplığını kullanın.
+İşaretleri kendiniz dönüştürmek istemiyorsanız, `TraceInfo` sınıfı, izleme süresini nanosaniye cinsinden döndüren bir üye işlevi sağlar. `chrono`Bu değeri diğer zaman birimlerine dönüştürmek için standart C++ kitaplığını kullanın.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Traceınfo](#trace-info)
+[TraceInfo](#trace-info)
 
 ### <a name="functions"></a>İşlevler
 
-[Süre](#duration)
-[MantıksalİşlemerSayısı](#logical-processor-count)
-[StartTimestamp](#start-timestamp)
-[StopTimestamp](#stop-timestamp)
-[TickFrequency](#tick-frequency)
+[Süre](#duration) 
+ [Logicalprocessorcount](#logical-processor-count) 
+ [StartTimestamp](#start-timestamp) 
+ [Stoptimestamp](#stop-timestamp) 
+ [TickFrequency](#tick-frequency)
 
-## <a name="duration"></a><a name="duration"></a>Süre
+## <a name="duration"></a><a name="duration"></a> Sürenin
 
 ```cpp
 std::chrono::nanoseconds Duration() const;
@@ -73,9 +73,9 @@ std::chrono::nanoseconds Duration() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nanosaniye cinsinden etkinliğin süresi.
+Etkinliğin nanosaniye cinsinden süresi.
 
-## <a name="logicalprocessorcount"></a><a name="logical-processor-count"></a>Mantıksalİşlemer Sayısı
+## <a name="logicalprocessorcount"></a><a name="logical-processor-count"></a> LogicalProcessorCount
 
 ```cpp
 const unsigned long& LogicalProcessorCount() const;
@@ -83,9 +83,9 @@ const unsigned long& LogicalProcessorCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İzlemenin toplandığı makinedeki mantıksal işlemci sayısı.
+, İzlemenin toplandığı makinedeki mantıksal işlemcilerin sayısı.
 
-## <a name="starttimestamp"></a><a name="start-timestamp"></a>Başlangıç Zamanı Damgası
+## <a name="starttimestamp"></a><a name="start-timestamp"></a> StartTimestamp
 
 ```cpp
 const long long& StartTimestamp() const;
@@ -93,9 +93,9 @@ const long long& StartTimestamp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İzlemenin başlatıldıında yakalanan bir kene dedesi.
+İzleme başlatıldığı sırada yakalanan bir değer çizgisi.
 
-## <a name="stoptimestamp"></a><a name="stop-timestamp"></a>StopTimestamp
+## <a name="stoptimestamp"></a><a name="stop-timestamp"></a> StopTimestamp
 
 ```cpp
 const long long& StopTimestamp() const;
@@ -103,9 +103,9 @@ const long long& StopTimestamp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İzleme durdurulduğu sırada yakalanan bir onay değeri.
+İzleme durdurulduğu sırada yakalanan bir değer çizgisi.
 
-## <a name="tickfrequency"></a><a name="tick-frequency"></a>Tickfrequency
+## <a name="tickfrequency"></a><a name="tick-frequency"></a> TickFrequency
 
 ```cpp
 const long long& TickFrequency() const;
@@ -113,9 +113,9 @@ const long long& TickFrequency() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kenecinsinden ölçülen bir süreyi değerlendirirken kullanılacak saniye başına keneler sayısı.
+Zaman işaretleri cinsinden ölçülen bir süre değerlendirilirken kullanılacak saniye başına düşen saat sayısı.
 
-## <a name="traceinfo"></a><a name="trace-info"></a>Traceınfo
+## <a name="traceinfo"></a><a name="trace-info"></a> TraceInfo
 
 ```cpp
 TraceInfo(const TRACE_INFO_DATA& data);
@@ -123,7 +123,7 @@ TraceInfo(const TRACE_INFO_DATA& data);
 
 ### <a name="parameters"></a>Parametreler
 
-*Veri*\
-İzleme yle ilgili bilgileri içeren veriler.
+*verileri*\
+İzleme hakkındaki bilgileri içeren veriler.
 
 ::: moniker-end

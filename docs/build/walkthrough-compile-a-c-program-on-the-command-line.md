@@ -9,12 +9,12 @@ helpviewer_keywords:
 - compiling programs [C++]
 - C program compiling [C++]
 ms.assetid: 7e74cc2d-54b1-49de-b7ad-d3ae6b39ab8d
-ms.openlocfilehash: 57276f61ca8ff848db0313935bc1841de50f9874
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 1090bf98332a51773e53bfcda51e944dc09c5221
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075614"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924734"
 ---
 # <a name="walkthrough-compile-a-c-program-on-the-command-line"></a>İzlenecek yol: Komut satırında C programı derleme
 
@@ -28,16 +28,16 @@ Bu yönergeyi tamamlamak için, Visual Studio 'Yu ve isteğe bağlı Visual C++ 
 
 Visual Studio, birçok dil ve platformda tam özellikli bir düzenleyici, kaynak yöneticileri, hata ayıklayıcıları ve derleyiciler destekleyen güçlü bir tümleşik geliştirme ortamıdır. Bu özellikler hakkında bilgi edinmek ve ücretsiz Visual Studio Community Edition dahil Visual Studio 'yu indirme ve yükleme hakkında bilgi için bkz. [Visual Studio 'Yu yükleme](/visualstudio/install/install-visual-studio).
 
-Visual Studio 'nun Visual Studio sürümüne yönelik derleme araçları, C ve C++ programları derlemek için ihtiyaç duyduğunuz yalnızca komut satırı araç takımını, derleyicileri, araçları ve kitaplıkları kurar. Derleme laboratuvarları veya sınıf alıştırmaları için idealdir ve görece hızlı bir şekilde yüklenir. Yalnızca komut satırı araç takımını yüklemek için Visual Studio için derleme araçları 'nı [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) sayfasından indirin ve yükleyiciyi çalıştırın. Visual Studio yükleyicisi ' nde, **C++ derleme araçları** iş yükünü seçin ve **yükleme**' yi seçin.
+Visual Studio 'nun Visual Studio sürümüne yönelik derleme araçları, C ve C++ programları derlemek için ihtiyaç duyduğunuz yalnızca komut satırı araç takımını, derleyicileri, araçları ve kitaplıkları kurar. Derleme laboratuvarları veya sınıf alıştırmaları için idealdir ve görece hızlı bir şekilde yüklenir. Yalnızca komut satırı araç takımını yüklemek için Visual Studio için derleme araçları 'nı [Visual Studio İndirmeleri](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019) sayfasından indirin ve yükleyiciyi çalıştırın. Visual Studio yükleyicisi ' nde, **C++ derleme araçları** iş yükünü seçin ve **yükleme** ' yi seçin.
 
 Komut satırında bir C veya C++ programı oluşturabilmeniz için önce araçların yüklendiğini ve bunlara komut satırından erişebildiğinizi doğrulamanız gerekir. Visual C++, komut satırı ortamının kullandığı araçları, üstbilgileri ve kitaplıkları bulması için karmaşık gereksinimlere sahiptir. Bazı hazırlıklar olmadan **düz bir komut istemi penceresinde Visual C++ kullanamazsınız** . Tüm gerekli ortam değişkenleri ayarlanmış olan bir normal komut istemi penceresi olan bir *Geliştirici komut istemi* penceresi gerekir. Neyse ki, Visual C++, komut satırı yapıları için ayarlanmış olan geliştirici komut istemlerini başlatmanız için kısayollar yüklüyor. Ne yazık ki, geliştirici komut istemi kısayollarının ve nerede bulundukları yerlerde, Visual C++ neredeyse her sürümü ve farklı Windows sürümlerinde farklılık vardır. İlk izlenecek yol göreviniz, kullanılacak doğru kısayolu bulmektir.
 
 > [!NOTE]
-> Geliştirici komut istemi kısayolu, derleyici ve araçlar için doğru yolları otomatik olarak ayarlar ve tüm gerekli üst bilgiler ve kitaplıklar için. Bu değerlerden bazıları her derleme yapılandırması için farklıdır. Kısayollardan birini kullanmıyorsanız, bu ortam değerlerini kendiniz ayarlamanız gerekir. Daha fazla bilgi için bkz. [komut satırı derlemeleri Için yolu ve ortam değişkenlerini ayarlama](setting-the-path-and-environment-variables-for-command-line-builds.md). Derleme ortamı karmaşık olduğundan, kendi kendinize derlemek yerine bir geliştirici komut istemi kısayolunu kullanmanızı önemle tavsiye ederiz.
+> Geliştirici komut istemi kısayolu, derleyici ve araçlar için doğru yolları otomatik olarak ayarlar ve tüm gerekli üst bilgiler ve kitaplıklar için. Bu değerlerden bazıları her derleme yapılandırması için farklıdır. Kısayollardan birini kullanmıyorsanız, bu ortam değerlerini kendiniz ayarlamanız gerekir. Daha fazla bilgi için bkz. [Command-Line derlemeler Için yolu ve ortam değişkenlerini ayarlama](setting-the-path-and-environment-variables-for-command-line-builds.md). Derleme ortamı karmaşık olduğundan, kendi kendinize derlemek yerine bir geliştirici komut istemi kısayolunu kullanmanızı önemle tavsiye ederiz.
 
 Bu yönergeler, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="open-a-developer-command-prompt-in-visual-studio-2019"></a>Visual Studio 2019 'de bir geliştirici komut istemi açın
 
@@ -47,7 +47,7 @@ Farklı bir Windows sürümü kullanıyorsanız, geliştirici komut istemi kısa
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## <a name="open-a-developer-command-prompt-in-visual-studio-2017"></a>Visual Studio 2017 'de bir geliştirici komut istemi açın
 
@@ -57,7 +57,7 @@ Farklı bir Windows sürümü çalıştırıyorsanız, geliştirici komut istemi
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## <a name="open-a-developer-command-prompt-in-visual-studio-2015"></a>Visual Studio 2015 'de bir geliştirici komut istemi açın
 
@@ -105,7 +105,7 @@ Geliştirici komut istemi kısayolunu bulamazsanız veya girdiğinizde bir hata 
     }
     ```
 
-1. **File**  >  Çalışma dizininizde Simple. c dosyasını kaydetmek için Not defteri menü çubuğunda Dosya**Kaydet** ' i seçin.
+1. **File**  >  Çalışma dizininizde Simple. c dosyasını kaydetmek için Not defteri menü çubuğunda Dosya **Kaydet** ' i seçin.
 
 1. Geliştirici komut istemi penceresine geri dönün. `dir`C:\simple dizininin içeriğini listelemek için komut istemine yazın. Dizin listesinde basit. c kaynak dosyasını görmeniz gerekir, bu, şöyle bir şey görür:
 

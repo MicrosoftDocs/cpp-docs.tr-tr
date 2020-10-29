@@ -4,22 +4,22 @@ ms.date: 08/10/2020
 f1_keywords:
 - VC.Project.VCConfiguration.VCToolsVersion
 ms.description: Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects.
-ms.openlocfilehash: 3d6694e44d3da4023998a0335cd06c85b353b2b1
-ms.sourcegitcommit: 8140647370017b885432349ce89f187c3068b46a
+ms.openlocfilehash: 3b1e45f984cd40d6ea42ead25b045fc8688ad0a7
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144171"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924038"
 ---
 # <a name="advanced-property-page"></a>Gelişmiş özellik sayfası
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Gelişmiş özellik sayfası, Visual Studio 2019 ve üzeri sürümlerde kullanılabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Gelişmiş özellik sayfası, Visual Studio 2019 ve üzeri sürümlerde kullanılabilir.
 
@@ -31,7 +31,7 @@ Gelişmiş özellik sayfası, Visual Studio 2019 ve üzeri sürümlerde kullanı
 
 - **Temizlemede Silinecek Uzantılar**
 
-   **Temizleme** seçeneği (**derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellikte belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden oluşturduğunuzda silinir. Yapı sistemi, bu uzantılara sahip tüm dosyaları ara dizinde siler. Ayrıca, nerede bulunduğuna bakılmaksızın, derleme bilinen tüm çıkışlarını da siler. (Dosyalar gibi ara çıkışları da içerir *`.obj`* .) Bu özellikte joker karakter belirtebilirsiniz.
+   **Temizleme** seçeneği ( **derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellikte belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden oluşturduğunuzda silinir. Yapı sistemi, bu uzantılara sahip tüm dosyaları ara dizinde siler. Ayrıca, nerede bulunduğuna bakılmaksızın, derleme bilinen tüm çıkışlarını da siler. (Dosyalar gibi ara çıkışları da içerir *`.obj`* .) Bu özellikte joker karakter belirtebilirsiniz.
 
    Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A> ..
 

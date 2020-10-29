@@ -3,12 +3,12 @@ title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
 ms.date: 08/19/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 31ecee084f620256820a685df1f0e6891046fb8f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 8a0374fcaf9a18c82e90bde2abc032158ecc537a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075339"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923874"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
@@ -16,7 +16,7 @@ Bu öğretici, bir çokgen görüntüleyen ActiveX nesnesi oluşturan, özniteli
 
 > [!NOTE]
 > Bu öğretici, çokgen örneğiyle aynı kaynak kodu oluşturur. Kaynak kodu el ile girmekten kaçınmak isterseniz, [Çokgen örnek soyut](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/Polygon)' ndan indirebilirsiniz. Daha sonra öğreticide çalışırken Çokgen kaynak koduna başvurabilir veya kendi projenizdeki hataları denetlemek için bunu kullanabilirsiniz.
-> Derlemek için, *pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) öğesini açın ve değiştirin:
+> Derlemek için, *pch. h* (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ) öğesini açın ve değiştirin:
 >
 > ```
 > #ifndef WINVER
@@ -33,62 +33,62 @@ Bu öğretici, bir çokgen görüntüleyen ActiveX nesnesi oluşturan, özniteli
 > #endif
 > ```
 >
-> Derleyici, doğru bir şekilde çıkmadan `regsvr32` şikayet eder, ancak hala denetimin DLL 'inin oluşturulup kullanılabilmesi için kullanılabilir.
+> Derleyici, `regsvr32` doğru bir şekilde çıkmadığımızı hala şikayet eder, ancak DENETIM dll 'inin hala kullanılabilir ve kullanıma hazır olması gerekir.
 
 ### <a name="to-create-the-initial-atl-project-using-the-atl-project-wizard"></a>ATL Proje Sihirbazı 'Nı kullanarak ilk ATL projesini oluşturmak için
 
-1. Visual Studio 2017 ve önceki sürümlerde: **dosya** > **Yeni** > **projesi**. **Görsel C++**  sekmesini açın ve **MFC/ATL**' yi seçin. **ATL projesi**seçin.
+1. Visual Studio 2017 ve önceki sürümlerde: **Dosya**  >  **Yeni**  >  **Proje** . **Visual C++** sekmesini açın ve **MFC/ATL** ' yi seçin. **ATL projesi** seçin.
 
-   Visual Studio 2019: **dosya** > **Yeni** > **Proje**' yi seçin, arama kutusuna "ATL" yazın ve **ATL projesi**' ni seçin.
+   Visual Studio 2019: **Dosya**  >  **Yeni**  >  **Proje** ' yi seçin, arama kutusuna "ATL" yazın ve **ATL projesi** ' ni seçin.
 
 1. Proje adı olarak *Çokgen* yazın.
 
-    Kaynak kodun konumu genellikle varsayılan olarak \Users\\\<username > \source\repos olarak değişir ve yeni bir klasör otomatik olarak oluşturulur.
+    Kaynak kodun konumu genellikle varsayılan \\ \<username> olarak \Users \source\repos olur ve yeni bir klasör otomatik olarak oluşturulur.
 
-1. Visual Studio 2019 ' de, varsayılan değerleri kabul edin ve **Tamam**' ı tıklatın.
-   Visual Studio 2017 ' de, **atl Proje** Sihirbazı ' nı açmak için **Tamam** ' ı tıklatın. Kullanılabilir seçenekleri görmek için **uygulama ayarları** ' na tıklayın. Bu proje bir denetim oluşturduğundan ve bir denetimin işlem içi sunucu olması gerektiğinden, **uygulama türünü** dll olarak bırakın. **Tamam** düğmesine tıklayın.
+1. Visual Studio 2019 ' de, varsayılan değerleri kabul edin ve **Tamam** ' ı tıklatın.
+   Visual Studio 2017 ' de, **atl Proje** Sihirbazı ' nı açmak için **Tamam** ' ı tıklatın. Kullanılabilir seçenekleri görmek için **uygulama ayarları** ' na tıklayın. Bu proje bir denetim oluşturduğundan ve bir denetimin işlem içi sunucu olması gerektiğinden, **uygulama türünü** dll olarak bırakın. **Tamam** ’a tıklayın.
 
-Visual Studio, birden çok dosya oluşturarak projeyi oluşturur. `Polygon` nesnesini genişleterek bu dosyaları **Çözüm Gezgini** görüntüleyebilirsiniz. Dosyalar aşağıda listelenmiştir.
+Visual Studio, birden çok dosya oluşturarak projeyi oluşturur. Nesneyi genişleterek bu dosyaları **Çözüm Gezgini** görüntüleyebilirsiniz `Polygon` . Dosyalar aşağıda listelenmiştir.
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 |Dosya|Açıklama|
 |----------|-----------------|
-|Çokgen. cpp|`DllMain`, `DllCanUnloadNow`, `DllGetClassObject`, `DllRegisterServer`ve `DllUnregisterServer`uygulamasını içerir. Ayrıca, projenizdeki ATL nesnelerinin bir listesi olan nesne eşlemesini içerir. Bu başlangıçta boştur.|
+|Çokgen. cpp|,,, `DllMain` Ve uygulamasını `DllCanUnloadNow` içerir `DllGetClassObject` `DllRegisterServer` `DllUnregisterServer` . Ayrıca, projenizdeki ATL nesnelerinin bir listesi olan nesne eşlemesini içerir. Bu başlangıçta boştur.|
 |Çokgen. def|Bu modül tanımı dosyası bağlayıcı için gerekli olan dışarı aktarmalar hakkında bilgi sağlar.|
 |Çokgen. IDL|Nesneleriniz için özel arabirimleri açıklayan arabirim tanımlama dili dosyası.|
 |Çokgen. rgs|Bu kayıt defteri betiği, programınızın DLL 'sini kaydetme bilgilerini içerir.|
 |Çokgen. RC|Başlangıçta sürüm bilgilerini içeren kaynak dosyası ve proje adını içeren bir dize.|
 |Kaynak.h|Kaynak dosyası için üst bilgi dosyası.|
 |Polygonps. def|Bu modül tanımı dosyası, bağlayıcıya, apartmanlar genelinde çağrıları destekleyen proxy ve saplama kodu için gereken dışarı aktarmalar hakkındaki bilgileri sağlar.|
-|stdafx.cpp|*Stbafx. h*`#include` olacak dosya.|
-|stdafx.h|ATL üstbilgi dosyalarını `#include` ve ön derleyen dosya.|
+|stdafx.cpp|`#include` *Stbafx. h* olacak dosya.|
+|stdafx.h|`#include`ATL üstbilgi dosyalarını yapılacak ve ön derleyen dosya.|
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 |Dosya|Açıklama|
 |----------|-----------------|
-|Çokgen. cpp|`DllMain`, `DllCanUnloadNow`, `DllGetClassObject`, `DllRegisterServer`ve `DllUnregisterServer`uygulamasını içerir. Ayrıca, projenizdeki ATL nesnelerinin bir listesi olan nesne eşlemesini içerir. Bu başlangıçta boştur.|
+|Çokgen. cpp|,,, `DllMain` Ve uygulamasını `DllCanUnloadNow` içerir `DllGetClassObject` `DllRegisterServer` `DllUnregisterServer` . Ayrıca, projenizdeki ATL nesnelerinin bir listesi olan nesne eşlemesini içerir. Bu başlangıçta boştur.|
 |Çokgen. def|Bu modül tanımı dosyası bağlayıcı için gerekli olan dışarı aktarmalar hakkında bilgi sağlar.|
 |Çokgen. IDL|Nesneleriniz için özel arabirimleri açıklayan arabirim tanımlama dili dosyası.|
 |Çokgen. rgs|Bu kayıt defteri betiği, programınızın DLL 'sini kaydetme bilgilerini içerir.|
 |Çokgen. RC|Başlangıçta sürüm bilgilerini içeren kaynak dosyası ve proje adını içeren bir dize.|
 |Kaynak.h|Kaynak dosyası için üst bilgi dosyası.|
 |Polygonps. def|Bu modül tanımı dosyası, bağlayıcıya, apartmanlar genelinde çağrıları destekleyen proxy ve saplama kodu için gereken dışarı aktarmalar hakkındaki bilgileri sağlar.|
-|PCH. cpp|`#include` *pch. h*olacak dosya.|
-|PCH. h|ATL üstbilgi dosyalarını `#include` ve ön derleyen dosya.|
+|PCH. cpp|`#include` *Pch. h* olacak dosya.|
+|PCH. h|`#include`ATL üstbilgi dosyalarını yapılacak ve ön derleyen dosya.|
 
 ::: moniker-end
 
-1. **Çözüm Gezgini**, `Polygon` projesine sağ tıklayın.
+1. **Çözüm Gezgini** , projeye sağ tıklayın `Polygon` .
 
-1. Kısayol menüsünde, **Özellikler**' e tıklayın.
+1. Kısayol menüsünde, **Özellikler** ' e tıklayın.
 
-1. **Bağlayıcı**' ya tıklayın. **Kullanıcı başına yeniden yönlendirme** seçeneğini **Evet**olarak değiştirin.
+1. **Bağlayıcı** ' ya tıklayın. **Kullanıcı başına yeniden yönlendirme** seçeneğini **Evet** olarak değiştirin.
 
-1. **Tamam** düğmesine tıklayın.
+1. **Tamam** ’a tıklayın.
 
 Bir sonraki adımda projenize bir denetim ekleyeceksiniz.
 

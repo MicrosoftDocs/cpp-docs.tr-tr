@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 468fc30d337e5cfc5ab90f7558904fc90588c3df
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 617a82055f406c130d74a2823c2cf00aa1beef36
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041828"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923608"
 ---
 # <a name="event_data-structure"></a>EVENT_DATA yapısı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `EVENT_DATA`Yapı, bir analiz veya yeniden günlüğe kaydetme oturumundan alınan bir olayı açıklar. Bu oturumlar, [Çözümle](../functions/analyze.md), analiz [Zea](../functions/analyze-a.md), analiz [ZEW](../functions/analyze-w.md), [relog](../functions/relog.md), [reloga](../functions/relog-a.md)veya [relogw](../functions/relog-w.md) işlevleri çağırarak başlatılır.
 
@@ -63,13 +63,13 @@ typedef struct EVENT_DATA_TAG
 | `EventId` | Olayı tanımlayan bir sayı. Olay tanımlayıcılarının listesi için bkz. [EVENT_ID](event-id-enum.md). |
 | `EventInstanceId` | Bir izleme içinde geçerli olayı benzersiz bir şekilde tanımlayan bir sayı. Bu değer, aynı izlemeyi birden çok kez analiz veya yeniden günlüğe kaydetme sırasında değişmez. Aynı olayı birden çok çözümlemede veya yeniden günlüğe kaydetmenin aynı izleme üzerinden tanımlamak için bu alanı kullanın. |
 | `TickFrequency` | Zaman işaretleri cinsinden ölçülen bir süre değerlendirilirken kullanılacak saniye başına düşen saat sayısı. |
-| `StartTimestamp` | Olay bir *etkinlik*olduğunda, bu alan etkinlik başlatıldığı sırada yakalanan bir değer değere ayarlanır. Bu olay *basit bir olaysa*, bu alan olay gerçekleştiği sırada yakalanan bir değer değere ayarlanır. |
-| `StopTimestamp` | Olay bir *etkinlik*olduğunda, bu alan etkinlik durdurulduğu sırada yakalanan bir değer değere ayarlanır. Bu etkinlik için durdurma olayı henüz alınmadıysa, bu alan sıfır olarak ayarlanır. Bu olay *basit bir olaydır*, bu alan sıfır olarak ayarlanır. |
-| `ExclusiveDurationTicks` | Bu olay bir *etkinlikise*, bu alan doğrudan bu etkinlikte gerçekleşen onay işareti sayısına ayarlanır. Alt etkinlikte gerçekleşen onay işareti sayısı hariç tutulur. Bu alan, *basit olaylar*için sıfır olarak ayarlanır. |
-| `CPUTicks` | Bu olay bir *etkinlik*ise, bu alan bu etkinlik SıRASıNDA oluşan CPU onay işareti sayısına ayarlanır. Bir CPU çentik, düzenli bir Tick 'ten farklıdır. CPU işaretleri yalnızca CPU bir etkinlikte kod yürütürken sayılır. Etkinlikle ilişkili iş parçacığı uyurken CPU işaretleri sayılmaz. Bu alan, *basit olaylar*için sıfır olarak ayarlanır. |
-| `ExclusiveCPUTicks` | Bu alan ile aynı anlamı vardır `CPUTicks` , ancak alt etkinliklerde gerçekleşen CPU onay işaretlerini içermez. Bu alan, *basit olaylar*için sıfır olarak ayarlanır. |
-| `WallClockTimeResponsibilityTicks` | Bu olay bir *etkinlikise*, bu alan, bu etkinliğin genel duvar saati saatine katkısı temsil eden bir değer sayısı olarak ayarlanır. Bir duvar saati zaman sorumluluğu çentik, düzenli bir Tick 'ten farklıdır. Duvar saati zaman sorumluluk işaretleri, etkinlikler arasında paralellik hesaba sahiptir. Örneğin, iki paralel Etkinliğin süresi 50 saat ve aynı başlangıç ve bitiş zamanı olabilir. Bu durumda, her ikisine de 25 saat için bir duvar saati zaman sorumluluğu atanır. Bu alan, *basit olaylar*için sıfır olarak ayarlanır. |
-| `ExclusiveWallClockTimeResponsibilityTicks` | Bu alan ile aynı anlamı vardır `WallClockTimeResponsibilityTicks` , ancak alt etkinliklerin duvar saati zaman sorumluluğu işaretlerini içermez. Bu alan, *basit olaylar*için sıfır olarak ayarlanır. |
+| `StartTimestamp` | Olay bir *etkinlik* olduğunda, bu alan etkinlik başlatıldığı sırada yakalanan bir değer değere ayarlanır. Bu olay *basit bir olaysa* , bu alan olay gerçekleştiği sırada yakalanan bir değer değere ayarlanır. |
+| `StopTimestamp` | Olay bir *etkinlik* olduğunda, bu alan etkinlik durdurulduğu sırada yakalanan bir değer değere ayarlanır. Bu etkinlik için durdurma olayı henüz alınmadıysa, bu alan sıfır olarak ayarlanır. Bu olay *basit bir olaydır* , bu alan sıfır olarak ayarlanır. |
+| `ExclusiveDurationTicks` | Bu olay bir *etkinlikise* , bu alan doğrudan bu etkinlikte gerçekleşen onay işareti sayısına ayarlanır. Alt etkinlikte gerçekleşen onay işareti sayısı hariç tutulur. Bu alan, *basit olaylar* için sıfır olarak ayarlanır. |
+| `CPUTicks` | Bu olay bir *etkinlik* ise, bu alan bu etkinlik SıRASıNDA oluşan CPU onay işareti sayısına ayarlanır. Bir CPU çentik, düzenli bir Tick 'ten farklıdır. CPU işaretleri yalnızca CPU bir etkinlikte kod yürütürken sayılır. Etkinlikle ilişkili iş parçacığı uyurken CPU işaretleri sayılmaz. Bu alan, *basit olaylar* için sıfır olarak ayarlanır. |
+| `ExclusiveCPUTicks` | Bu alan ile aynı anlamı vardır `CPUTicks` , ancak alt etkinliklerde gerçekleşen CPU onay işaretlerini içermez. Bu alan, *basit olaylar* için sıfır olarak ayarlanır. |
+| `WallClockTimeResponsibilityTicks` | Bu olay bir *etkinlikise* , bu alan, bu etkinliğin genel duvar saati saatine katkısı temsil eden bir değer sayısı olarak ayarlanır. Bir duvar saati zaman sorumluluğu çentik, düzenli bir Tick 'ten farklıdır. Duvar saati zaman sorumluluk işaretleri, etkinlikler arasında paralellik hesaba sahiptir. Örneğin, iki paralel Etkinliğin süresi 50 saat ve aynı başlangıç ve bitiş zamanı olabilir. Bu durumda, her ikisine de 25 saat için bir duvar saati zaman sorumluluğu atanır. Bu alan, *basit olaylar* için sıfır olarak ayarlanır. |
+| `ExclusiveWallClockTimeResponsibilityTicks` | Bu alan ile aynı anlamı vardır `WallClockTimeResponsibilityTicks` , ancak alt etkinliklerin duvar saati zaman sorumluluğu işaretlerini içermez. Bu alan, *basit olaylar* için sıfır olarak ayarlanır. |
 | `Data` | Olayda depolanan ek verilere işaret eder. İşaret edilen veri türü, alana bağlı olarak değişir `EventId` . |
 | `ProcessId` | Olayın gerçekleştiği işlemin tanımlayıcısı. |
 | `ThreadId` | Olayın gerçekleştiği iş parçacığının tanımlayıcısı. |
@@ -86,7 +86,7 @@ Alanın değeri, `EVENT_DATA` `Data` alanının değerine bağlıdır `EventId` 
 | `EventId` deeri | İşaret eden tür `Data` |
 |--|--|
 | `EVENT_ID_BACK_END_PASS` | [CL_PASS_DATA](cl-pass-data-struct.md) |
-| `EVENT_ID_COMMAND_LINE` | `const wchar_t` |
+| `EVENT_ID_COMMAND_LINE` | `const wchar_t` |
 | `EVENT_ID_COMPILER` | [INVOCATION_DATA](invocation-data-struct.md) |
 | `EVENT_ID_ENVIRONMENT_VARIABLE` | [NAME_VALUE_PAIR_DATA](name-value-pair-data-struct.md) |
 | `EVENT_ID_EXECUTABLE_IMAGE_OUTPUT` | [FILE_DATA](file-data-struct.md) |

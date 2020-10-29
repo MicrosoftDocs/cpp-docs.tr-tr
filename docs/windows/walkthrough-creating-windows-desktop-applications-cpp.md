@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: c729fa183a03860de012e64d110f3b3ac7e7e8d0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 36991cf98867e7da218f7414d1ea02aab55301a3
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503662"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924229"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: geleneksel Windows masaüstü uygulaması oluşturma (C++)
 
@@ -39,25 +39,25 @@ Windows API (Win32 API, Windows Masaüstü API 'SI ve Windows Classic API olarak
 
 İlk Windows Masaüstü projenizi oluşturmak için bu adımları izleyin. Hareket halindeyken, çalışan bir Windows masaüstü uygulaması için kodu girersiniz. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir Windows Masaüstü projesi oluşturmak için
 
 1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **Masaüstü**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **Masaüstü** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **Windows Masaüstü Sihirbazı** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, proje için bir ad girin, örneğin, *Desktopapp*.
+1. Filtre uygulanmış proje türleri listesinden **Windows Masaüstü Sihirbazı** ' nı seçin ve ardından **İleri** ' yi seçin. Sonraki sayfada, proje için bir ad girin, örneğin, *Desktopapp* .
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
-1. **Windows Masaüstü projesi** iletişim kutusu artık görüntülenir. **Uygulama türü**altında **Masaüstü uygulaması (. exe)** seçeneğini belirleyin. **Ek seçenekler**altında **boş proje**' yi seçin. Projeyi oluşturmak için **Tamam ' ı** seçin.
+1. **Windows Masaüstü projesi** iletişim kutusu artık görüntülenir. **Uygulama türü** altında **Masaüstü uygulaması (. exe)** seçeneğini belirleyin. **Ek seçenekler** altında **boş proje** ' yi seçin. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
-1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
+1. **Çözüm Gezgini** , **Desktopapp** projesine sağ tıklayın, **Ekle** ' yi ve ardından **Yeni öğe** ' yi seçin.
 
    ![Visual Studio 2019 ' de DesktopApp projesine yeni bir öğe ekleyen kısa bir video.](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp* . **Ekle** ' yi seçin.
 
    ![Visual Studio 2019 ' de yüklü yeni öğe Ekle iletişim kutusunun ekran görüntüsü ve Visual C Plus Plus >, ve C Plus Plus dosya seçeneği vurgulanmış.](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
@@ -65,25 +65,25 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de bir Windows Masaüstü projesi oluşturmak için
 
-1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje**' yi seçin.
+1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, sol bölmede, **yüklü**  >  **Visual C++**' i genişletin ve ardından **Windows Masaüstü**' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin.
+1. **Yeni proje** iletişim kutusunda, sol bölmede, **yüklü**  >  **Visual C++** ' i genişletin ve ardından **Windows Masaüstü** ' nü seçin. Orta bölmede **Windows Masaüstü Sihirbazı** ' nı seçin.
 
-   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
+   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp* . **Tamam ' ı** seçin.
 
    ![Visual Studio 2017 ' deki yeni proje iletişim kutusunun ekran görüntüsü, Visual C Plus > yüklü olan Windows Masaüstü >, Windows Masaüstü Sihirbazı seçeneği vurgulanmış ve ad metin kutusuna yazılan DesktopApp.](../build/media/desktop-app-new-project-name-153.png "DesktopApp projesini adlandırın")
 
-1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü**altında **Windows uygulaması (. exe)** öğesini seçin. **Ek seçenekler**altında **boş proje**' yi seçin. **Önceden derlenmiş üstbilginin** seçili olmadığından emin olun. Projeyi oluşturmak için **Tamam ' ı** seçin.
+1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü** altında **Windows uygulaması (. exe)** öğesini seçin. **Ek seçenekler** altında **boş proje** ' yi seçin. **Önceden derlenmiş üstbilginin** seçili olmadığından emin olun. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
-1. **Çözüm Gezgini**, **Desktopapp** projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
+1. **Çözüm Gezgini** , **Desktopapp** projesine sağ tıklayın, **Ekle** ' yi ve ardından **Yeni öğe** ' yi seçin.
 
    ![Visual Studio 2017 ' de DesktopApp projesine yeni bir öğe ekleyen kısa bir video.](../build/media/desktop-app-project-add-new-item-153.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp* . **Ekle** ' yi seçin.
 
    ![Visual Studio 2017 ' de yüklü yeni öğe Ekle iletişim kutusunun ekran görüntüsü ve Visual C Plus Plus >, ve C Plus Plus dosya seçeneği vurgulanmış.](../build/media/desktop-app-add-cpp-file-153.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
@@ -91,29 +91,29 @@ Projeniz artık oluşturulur ve kaynak dosyanız düzenleyicide açılır. Devam
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### <a name="to-create-a-windows-desktop-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de bir Windows Masaüstü projesi oluşturmak için
 
-1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje**' yi seçin.
+1. **Dosya** menüsünde **Yeni** ' yi ve ardından **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, sol bölmede, **yüklü**  >  **Şablonlar**  >  **Visual C++**' ı genişletin ve ardından **Win32**' yi seçin. Orta bölmede **Win32 projesi**' ni seçin.
+1. **Yeni proje** iletişim kutusunda, sol bölmede, **yüklü**  >  **Şablonlar**  >  **Visual C++** ' ı genişletin ve ardından **Win32** ' yi seçin. Orta bölmede **Win32 projesi** ' ni seçin.
 
-   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp*. **Tamam ' ı**seçin.
+   **Ad** kutusuna proje için bir ad yazın, örneğin, *Desktopapp* . **Tamam ' ı** seçin.
 
    ![Visual Studio 2015 ' deki yeni proje iletişim kutusunun ekran görüntüsü, yüklü > şablonlar > Visual C Plus Plus > Win32 seçili, Win32 projesi seçeneği vurgulanmış ve ad metin kutusuna yazılan DesktopApp.](../build/media/desktop-app-new-project-name-150.png "DesktopApp projesini adlandırın")
 
-1. **Win32 uygulama Sihirbazı**' nın **genel bakış** sayfasında **İleri**' yi seçin.
+1. **Win32 uygulama Sihirbazı** ' nın **genel bakış** sayfasında **İleri** ' yi seçin.
 
    ![Win32 uygulama Sihirbazına Genel Bakış 'da DesktopApp oluşturma](../build/media/desktop-app-win32-wizard-overview-150.png "Win32 uygulama Sihirbazına Genel Bakış 'da DesktopApp oluşturma")
 
-1. **Uygulama ayarları** sayfasında, **uygulama türü**altında **Windows uygulaması**' nı seçin. **Ek seçenekler**altında, **önceden derlenmiş üstbilginin**Işaretini kaldırın, sonra **boş proje**' yi seçin. Projeyi oluşturmak için **son** ' a tıklayın.
+1. **Uygulama ayarları** sayfasında, **uygulama türü** altında **Windows uygulaması** ' nı seçin. **Ek seçenekler** altında, **önceden derlenmiş üstbilginin** Işaretini kaldırın, sonra **boş proje** ' yi seçin. Projeyi oluşturmak için **son** ' a tıklayın.
 
-1. **Çözüm Gezgini**, DesktopApp projesine sağ tıklayın, **Ekle**' yi ve ardından **Yeni öğe**' yi seçin.
+1. **Çözüm Gezgini** , DesktopApp projesine sağ tıklayın, **Ekle** ' yi ve ardından **Yeni öğe** ' yi seçin.
 
    ![Visual Studio 2015 ' de DesktopApp projesine yeni bir öğe ekleyen kısa bir video.](../build/media/desktop-app-project-add-new-item-150.gif "DesktopApp projesine yeni öğe Ekle")
 
-1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp*. **Ekle**' yi seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, **C++ dosyası (. cpp)** öğesini seçin. **Ad** kutusuna dosya için bir ad yazın, örneğin, *hellowindowsdesktop. cpp* . **Ekle** ' yi seçin.
 
    ![Visual Studio 2015 ' de yüklü yeni öğe Ekle iletişim kutusunun ekran görüntüsü ve Visual C Plus Plus >, ve C Plus Plus dosya seçeneği vurgulanmış.](../build/media/desktop-app-add-cpp-file-150.png ". Cpp dosyasını DesktopApp projesine ekleyin")
 
@@ -141,7 +141,7 @@ Daha sonra, Visual Studio 'da bir Windows masaüstü uygulaması için kod oluş
    Bu işlevin parametreleri ve dönüş değeri hakkında daha fazla bilgi için bkz. [WinMain giriş noktası](/windows/win32/api/winbase/nf-winbase-winmain).
 
    > [!NOTE]
-   > Ya da veya gibi tüm ek sözcükler nelerdir `CALLBACK` `HINSTANCE` `_In_` ? Geleneksel Windows API 'si, türleri ve API pragmalarını çağırma gibi türlerin ve platforma özgü kodun bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makrolarını kullanır **`__declspec`** . Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve **Ctrl** + **K** **Ctrl** + tanımı içeren küçük bir açılır pencere için CTRL K, CTRL**i** tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
+   > Ya da veya gibi tüm ek sözcükler nelerdir `CALLBACK` `HINSTANCE` `_In_` ? Geleneksel Windows API 'si, türleri ve API pragmalarını çağırma gibi türlerin ve platforma özgü kodun bazı ayrıntılarını soyutlamak için kapsamlı olarak tür tanımları ve Önişlemci makrolarını kullanır **`__declspec`** . Visual Studio 'da, bu tür tanımları ve makroların neleri tanımlacağınızı görmek için IntelliSense [hızlı bilgi](/visualstudio/ide/using-intellisense#quick-info) özelliğini kullanabilirsiniz. Farenizi ilgilendiğiniz sözcüğün üzerine getirin veya seçin ve **Ctrl** + **K** **Ctrl** + tanımı içeren küçük bir açılır pencere için CTRL K, CTRL **i** tuşlarına basın. Daha fazla bilgi için bkz. [IntelliSense kullanma](/visualstudio/ide/using-intellisense). Parametreler ve dönüş türleri, programlama hatalarını yakalayabilmeniz için genellikle *sal ek açıklamalarını* kullanır. Daha fazla bilgi için bkz. [C/C++ kod hatalarını azaltmak IÇIN sal ek açıklamalarını kullanma](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md).
 
 1. Windows masaüstü programları için &lt; Windows. h> gerekir. &lt;Tchar. h>, `TCHAR` Bu makroyu tanımlar. Bu, sonunda **`wchar_t`** UNICODE sembolünün tanımlanmış olması, aksi durumda olarak çözümlenirse **`char`** .  Her zaman UNICODE 'u etkin olarak oluşturursanız, TCHAR 'a ihtiyacınız yoktur ve yalnızca doğrudan kullanabilirsiniz **`wchar_t`** .
 
@@ -432,7 +432,7 @@ Taahhüt edilen şekilde, çalışma uygulaması için kodun tamamı aşağıda 
 
 ### <a name="to-build-this-example"></a>Bu örneği oluşturmak için
 
-1. Düzenleyicideki *Merhaba Windowsdesktop. cpp* ' de girdiğiniz tüm kodları silin. Bu örnek kodu kopyalayın ve ardından *Merhaba Windowsdesktop. cpp*dosyasına yapıştırın:
+1. Düzenleyicideki *Merhaba Windowsdesktop. cpp* ' de girdiğiniz tüm kodları silin. Bu örnek kodu kopyalayın ve ardından *Merhaba Windowsdesktop. cpp* dosyasına yapıştırın:
 
    ```cpp
    // HelloWindowsDesktop.cpp
@@ -580,11 +580,11 @@ Taahhüt edilen şekilde, çalışma uygulaması için kodun tamamı aşağıda 
    }
    ```
 
-1. **Build** menüsünde **Build Solution**öğesini seçin. Derlemenin sonuçları, Visual Studio 'daki **Çıkış** penceresinde görünmelidir.
+1. **Build** menüsünde **Build Solution** öğesini seçin. Derlemenin sonuçları, Visual Studio 'daki **Çıkış** penceresinde görünmelidir.
 
    ![DesktopApp projesini oluşturma](../build/media/desktop-app-project-build-150.gif "DesktopApp projesini oluşturma")
 
-1. Uygulamayı çalıştırmak için **F5**'e basın. "Merhaba, Windows Masaüstü!" metnini içeren pencere , ekranın sol üst köşesinde görünmelidir.
+1. Uygulamayı çalıştırmak için **F5** 'e basın. "Merhaba, Windows Masaüstü!" metnini içeren pencere , ekranın sol üst köşesinde görünmelidir.
 
    ![DesktopApp projesini çalıştırma](../build/media/desktop-app-project-run-157.PNG "DesktopApp projesini çalıştırma")
 

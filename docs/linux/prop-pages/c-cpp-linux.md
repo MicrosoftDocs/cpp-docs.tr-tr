@@ -4,22 +4,22 @@ ms.date: 10/14/2020
 description: Visual Studio C/C++ özellikleri sayfasında Linux derleme seçeneklerini açıklar
 ms.assetid: 4bb8894b-c874-4a68-935e-b127d54e484f
 f1_keywords: []
-ms.openlocfilehash: 0840327b30d94b4845adef7788fd73f4e797775f
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: b8cb1d8c6c585262e966c3015660adeaeab60307
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176243"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924563"
 ---
 # <a name="cc-properties-linux-c"></a>C/C++ özellikleri (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="general"></a>Genel
 
@@ -28,7 +28,7 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 | Ek Içerme dizinleri | Ekleme yoluna eklenecek bir veya daha fazla dizini belirtir. Birden çok dizini ayırmak için noktalı virgül kullanın. (-I \[ yolu]). |
 | Hata ayıklama bilgi biçimi | Derleyici tarafından oluşturulan hata ayıklama bilgilerinin türünü belirtir. | **Hiçbiri** -hata ayıklama bilgisi üretmez, bu nedenle derleme daha hızlı olabilir.<br/>**Minimal hata ayıklama bilgileri** -en düşük hata ayıklama bilgileri oluştur.<br/>**Tam hata ayıklama bilgileri (DWARF2)** -DWARF2 hata ayıklama bilgileri oluştur.<br/> |
 | Nesne dosyası adı | Varsayılan nesne dosyası adını geçersiz kılacak bir ad belirtir. Bu bir dosya veya dizin adı olabilir. (-o [ad]). |
-| Uyarı düzeyi | Derleyicinin kod hataları hakkında ne kadar sıkı olmasını istediğinizi seçer.  Diğer bayrakları doğrudan **ek seçeneklere**ekleyin. (/w,/Weverything). | **Tüm uyarıları** kapat-tüm derleyici uyarılarını devre dışı bırakır.<br/>**Enablealluyarılar** -varsayılan olarak devre dışı bırakılmış olanlar da dahil olmak üzere tüm uyarıları etkinleştirilir.<br/> |
+| Uyarı düzeyi | Derleyicinin kod hataları hakkında ne kadar sıkı olmasını istediğinizi seçer.  Diğer bayrakları doğrudan **ek seçeneklere** ekleyin. (/w,/Weverything). | **Tüm uyarıları** kapat-tüm derleyici uyarılarını devre dışı bırakır.<br/>**Enablealluyarılar** -varsayılan olarak devre dışı bırakılmış olanlar da dahil olmak üzere tüm uyarıları etkinleştirilir.<br/> |
 | Uyarıları hata olarak değerlendir | Tüm derleyici uyarılarını hata olarak değerlendirir. Yeni bir proje için tüm derlemelerde/Werror kullanılması en iyi yöntem olabilir. En az olası kod kusurlarını sağlamak için tüm uyarıları çözün. |
 | C ek uyarılar | Ek bir uyarı iletileri kümesi tanımlar. |
 | C++ ek uyarıları | Ek bir uyarı iletileri kümesi tanımlar. |

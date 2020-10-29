@@ -5,12 +5,12 @@ ms.date: 10/18/2020
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: b470663e3cea8ec62a1737fb19e9ec5a277d27cc
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 5718642f6a7f714dd0a38ec34211ddc0be4e8fd2
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176320"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924700"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -51,7 +51,7 @@ Seçeneğe yalnızca büyük sayıyı, büyük ve küçük rakamları veya ana, 
 
 Aşağıdaki bölümlerde, derleyici seçeneğini kullanarak gizleyerek Visual C++ her bir sürümü tarafından tanıtılan uyarılar listelenmektedir **`/Wv`** . **`/Wv`** Bu seçenek, belirtilen derleyicinin sürümlerinin ön tarihini belirleyen, listelenmeyen uyarıları göstermez.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
 ## <a name="warnings-introduced-in-visual-studio-2019-version-167-compiler-version-1927291120"></a>Visual Studio 2019 sürüm 16,7 ' de tanıtılan uyarılar (derleyici sürümü 19.27.29112.0)
 
@@ -151,7 +151,7 @@ Bu uyarılar ve sonraki sürümlerde bulunan tüm uyarılar, derleyici seçeneğ
 | C5051 | `attribute 'attribute-name' requires at least 'standard-level'; ignored` |
 
 ::: moniker-end
-::: moniker range=">= vs-2017"
+::: moniker range=">= msvc-150"
 
 ## <a name="warnings-introduced-in-visual-studio-2017-version-158-compiler-version-1915267260"></a>Visual Studio 2017 sürüm 15,8 ' de tanıtılan uyarılar (derleyici sürümü 19.15.26726.0)
 

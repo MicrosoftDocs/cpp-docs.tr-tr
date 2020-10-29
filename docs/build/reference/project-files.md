@@ -5,33 +5,33 @@ helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-ms.openlocfilehash: 97224380a591f4fa3fe23d25a898c112702f5a5c
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: eef28961ab8c4d3a34a74999c7e0c69a4fc3fced
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078295"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924009"
 ---
 # <a name="project-files"></a>Proje Dosyaları
 
-Visual C++ Studio 'daki bir proje dosyası,. vcxproj dosya adı UZANTıSıNA sahip XML tabanlı bir dosyadır ve bir C++ proje oluşturmak için gereken bilgileri içerir. Proje dosyasının ". props" veya ". targets" uzantısına sahip çeşitli proje dosyalarını içe aktardığına unutmayın. Bu dosyalar ek derleme bilgileri içerir ve bunların kendisi diğer ". props" veya ". targets" dosyalarına başvurabilir. Dosya yolundaki makrolar (örneğin `$(VCTargetsPath)`), Visual Studio yüklemenize bağımlıdır. Bu makrolar ve ". props" ve ". targets" dosyaları hakkında daha fazla bilgi için bkz. [VC + + dizinleri Özellik sayfası](vcpp-directories-property-page.md), [Visual Studio 'da derleyici ve derleme özelliklerini ayarlama C++ ](../working-with-project-properties.md) ve [derleme komutları ve özellikleri için ortak makrolar](common-macros-for-build-commands-and-properties.md).
+Visual Studio 'daki bir C++ proje dosyası,. vcxproj dosya adı uzantısına sahip XML tabanlı bir dosyadır ve bir C++ projesi oluşturmak için gereken bilgileri içerir. Proje dosyasının ". props" veya ". targets" uzantısına sahip çeşitli proje dosyalarını içe aktardığına unutmayın. Bu dosyalar ek derleme bilgileri içerir ve bunların kendisi diğer ". props" veya ". targets" dosyalarına başvurabilir. Dosya yolundaki makrolar (örneğin `$(VCTargetsPath)` ), Visual Studio yüklemenize bağımlıdır. Bu makrolar ve ". props" ve ". targets" dosyaları hakkında daha fazla bilgi için bkz. [VC + + dizinleri Özellik sayfası](vcpp-directories-property-page.md), [Visual Studio 'da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md) ve [derleme komutları ve özellikleri için ortak makrolar](common-macros-for-build-commands-and-properties.md).
 
 ## <a name="example"></a>Örnek
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-Aşağıdaki Sample. vcxproj dosyası **Yeni proje** Iletişim kutusunda **Windows Masaüstü Sihirbazı** ' nı seçerek üretildi. Bir proje dosyasını işlemek için komut satırında MSBuild. exe aracını ya da IDE 'deki **Build** komutunu kullanın. (Gerekli kaynak ve üst bilgi dosyaları sağlanmadığından Bu örnek işlenemiyor.) Proje dosyasındaki XML öğeleri hakkında daha fazla bilgi için bkz. [Proje dosya şeması başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+Aşağıdaki Sample. vcxproj dosyası **Yeni proje** Iletişim kutusunda **Windows Masaüstü Sihirbazı** ' nı seçerek üretildi. Bir proje dosyasını işlemek için komut satırında msbuild.exe aracını veya IDE 'deki **Build** komutunu kullanın. (Gerekli kaynak ve üst bilgi dosyaları sağlanmadığından Bu örnek işlenemiyor.) Proje dosyasındaki XML öğeleri hakkında daha fazla bilgi için bkz. [Proje dosya şeması başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Aşağıdaki Sample. vcxproj dosyası **Yeni proje** iletişim kutusunda bir **Win32 konsol uygulaması** belirtilerek üretildi. Bir proje dosyasını işlemek için komut satırında MSBuild. exe aracını ya da IDE 'deki **Build** komutunu kullanın. (Gerekli kaynak ve üst bilgi dosyaları sağlanmadığından Bu örnek işlenemiyor.) Proje dosyasındaki XML öğeleri hakkında daha fazla bilgi için bkz. [Proje dosya şeması başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+Aşağıdaki Sample. vcxproj dosyası **Yeni proje** iletişim kutusunda bir **Win32 konsol uygulaması** belirtilerek üretildi. Bir proje dosyasını işlemek için komut satırında msbuild.exe aracını veya IDE 'deki **Build** komutunu kullanın. (Gerekli kaynak ve üst bilgi dosyaları sağlanmadığından Bu örnek işlenemiyor.) Proje dosyasındaki XML öğeleri hakkında daha fazla bilgi için bkz. [Proje dosya şeması başvurusu](/visualstudio/msbuild/msbuild-project-file-schema-reference).
 
 ::: moniker-end
 
 >[!NOTE]
-> Visual Studio 2017 ve önceki sürümlerde bulunan projeler için `pch.h` `stdafx.h` ve `stdafx.cpp``pch.cpp` değiştirin.
+> Visual Studio 2017 ve önceki sürümlerde bulunan projeler için `pch.h` ve olarak `stdafx.h` değiştirin `pch.cpp` `stdafx.cpp` .
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -133,5 +133,5 @@ Aşağıdaki Sample. vcxproj dosyası **Yeni proje** iletişim kutusunda bir **W
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio Projeleri - C++](../creating-and-managing-visual-cpp-projects.md)<br>
+[Visual Studio projeleri-C++](../creating-and-managing-visual-cpp-projects.md)<br>
 [Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](../working-with-project-properties.md)

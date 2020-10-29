@@ -4,22 +4,22 @@ ms.date: 08/19/2019
 helpviewer_keywords:
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 9e93b40313a215dfe5872b33dc7d41641204a2f1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2d59989f8afd180b39153eed1ad0a20435aad9d4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508978"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923909"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Aşağıdaki konularda, basit bir tüketici oluşturmak için **MFC Uygulama Sihirbazı** ve **ATL OLE DB Tüketici Sihirbazı** tarafından oluşturulan dosyaların nasıl düzenleneceği gösterilmektedir. Bu örnek aşağıdaki bölümlere sahiptir:
 
@@ -31,7 +31,7 @@ Aşağıdaki konularda, basit bir tüketici oluşturmak için **MFC Uygulama Sih
 > Bu bölümde açıklanan Tüketici uygulamasını, `MyProv` ve örnek sağlayıcıları test etmek için kullanabilirsiniz `Provider` .
 
 > [!NOTE]
-> Sınanacak bir tüketici uygulaması oluşturmak için `MyProv` ( [basit salt okuma sağlayıcısını geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)bölümünde açıklanan sağlayıcı), [tüketiciye yer işareti desteği ekleme](#bookmark)bölümünde açıklandığı gibi yer işareti desteği eklemeniz gerekir.
+> Test etmek için bir tüketici uygulaması derlemek `MyProv` ( [basit Read-Only sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)bölümünde açıklanan sağlayıcı) Için, [tüketiciye yer işareti desteği ekleme](#bookmark)başlığı altında açıklandığı gibi yer işareti desteğini dahil etmeniz gerekir.
 
 ## <a name="retrieving-data-with-the-consumer"></a><a name="retrieve" ></a> Tüketiciyle veri alma
 

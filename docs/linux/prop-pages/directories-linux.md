@@ -1,29 +1,29 @@
 ---
-title: VC++ Dizinleri (Linux C++)
+title: VC + + dizinleri (Linux C++)
 ms.date: 06/07/2019
 ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
-ms.openlocfilehash: c32c706f314b4ed57350f359ba44ace5eeb458e4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 764e04b9aa05f4feec51d98a3578812c04bbabb6
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79441296"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924502"
 ---
-# <a name="vc-directories-linux-c"></a>VC++ Dizinleri (Linux C++)
+# <a name="vc-directories-linux-c"></a>VC + + dizinleri (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
-Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir.
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 | Özellik | Açıklama |
 |--|--|
-| Dizinleri Dahil Et | Bir VC++ projesi yaparken dosyaları içerirken arama yaparken kullanılacak yol.  Çevre değişkenine karşılık gelir INCLUDE. |
-| Kütüphane Dizinleri | VC++ projesi oluştururken kitaplık dosyalarını ararken kullanılacak yol.  Çevre değişkeni LIB'e karşılık gelir. |
-| Kaynak Dizinler | IntelliSense için kullanılacak kaynak dosyaları ararken kullanılacak yol. |
-| Dizinleri Hariç Tut | Tarama bağımlılıklarını ararken atlayacak yol. |
+| Dizinleri dahil et | VC + + projesi oluşturulurken içerme dosyaları aranırken kullanılacak yol.  Ortam değişkenine karşılık gelir. |
+| Kitaplık dizinleri | VC + + projesi oluşturulurken kitaplık dosyalarını ararken kullanılacak yol.  Ortam değişkeni LıB 'e karşılık gelir. |
+| Kaynak dizinler | IntelliSense için kullanılacak kaynak dosyaları aranırken kullanılacak yol. |
+| Dizinleri dışla | Tarama bağımlılıkları aranırken atlanacak yol. |
 
 ::: moniker-end

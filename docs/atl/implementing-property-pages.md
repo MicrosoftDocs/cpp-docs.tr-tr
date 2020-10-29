@@ -6,22 +6,22 @@ helpviewer_keywords:
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: 6544f5ddf0b81fdec893308bb10e0c19cea73005
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c9b1c0c159a15ec7d9a5c99208baa2ed6af2d6d1
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499449"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923895"
 ---
 # <a name="implementing-property-pages"></a>Özellik sayfalarını uygulama
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ATL Özellik sayfası Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Özellik sayfaları, veya arabirimini uygulayan COM nesneleridir `IPropertyPage` `IPropertyPage2` . ATL, [Sınıf Ekle iletişim kutusunda](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) [atl özellik sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md) aracılığıyla Özellik sayfaları uygulama desteği sağlar.
 
@@ -29,7 +29,7 @@ ATL kullanarak bir özellik sayfası oluşturmak için:
 
 - ATL dinamik bağlantı kitaplığı (DLL) sunucu projesi oluşturun veya açın.
 
-- [Sınıf Ekle iletişim kutusunu](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) açın ve **atl özellik sayfası**' nı seçin.
+- [Sınıf Ekle iletişim kutusunu](../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) açın ve **atl özellik sayfası** ' nı seçin.
 
 - Özellik sayfanızın apartman iş parçacıklı olduğundan emin olun (bir kullanıcı arabirimi olduğundan).
 
@@ -51,7 +51,7 @@ ATL kullanarak bir özellik sayfası oluşturmak için:
 Örnek özellik sayfası uygulaması için bkz. [örnek: uygulama bir özellik sayfası](../atl/example-implementing-a-property-page.md).
 
 > [!NOTE]
-> Özellik sayfanızda ActiveX denetimlerini barındırmak istiyorsanız, sihirbaz tarafından oluşturulan sınıfınızın türediğini değiştirmeniz gerekir. **Cdialogimpl \<CYourClass> ** öğesini temel sınıflar listesinde ** \<CYourClass> caxdialogimpl** ile değiştirin.
+> Özellik sayfanızda ActiveX denetimlerini barındırmak istiyorsanız, sihirbaz tarafından oluşturulan sınıfınızın türediğini değiştirmeniz gerekir. **Cdialogimpl \<CYourClass>** öğesini temel sınıflar listesinde **\<CYourClass> caxdialogimpl** ile değiştirin.
 
 ::: moniker-end
 

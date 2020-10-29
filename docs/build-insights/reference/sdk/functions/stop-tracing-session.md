@@ -1,6 +1,6 @@
 ---
 title: StopTracingSession
-description: C++ Build Insights SDK StopTracingSession fonksiyonu başvurusu.
+description: C++ Build Insights SDK 'Sı StopTracingSession işlev başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c6c7a3c6ca47749491774cc3bcd97aae8aa663ea
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8c1455e737435aa82b32cb44a52e46e55df70d6a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323524"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922638"
 ---
 # <a name="stoptracingsession"></a>StopTracingSession
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-İşlev `StopTracingSession` devam eden bir izleme oturumunu durdurur ve ham bir izleme dosyası üretir. Ham izleme dosyaları analiz oturumu başlatmak için [Analyze,](analyze.md) [AnalzeA](analyze-a.md)ve [AnalyzeW](analyze-w.md) işlevlerine geçirilebilir. Ham izleme dosyaları da [Relog](relog.md)geçirilebilir , [RelogA](relog-a.md), ve [RelogW](relog-w.md) işlevleri bir relogging oturumu başlatmak için. Arayarak çağıran `StopTracingSession` yürütülebilirlerin yönetici ayrıcalıkları olmalıdır.
+`StopTracingSession`İşlev devam eden bir izleme oturumunu durduruyor ve ham izleme dosyası oluşturuyor. Ham izleme dosyaları analiz oturumu başlatmak için [Çözümle](analyze.md), [AnalzeA](analyze-a.md)ve analiz [ZEW](analyze-w.md) işlevlerine geçirilebilir. Ham izleme dosyaları, yeniden günlüğe kaydetme oturumu başlatmak için [relog](relog.md), [Reloga](relog-a.md)ve [relogw](relog-w.md) işlevlerine de geçirilebilir. Çağıran yürütülebilir dosyalar `StopTracingSession` yönetici ayrıcalıklarına sahip olmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,17 +43,17 @@ inline RESULT_CODE StopTracingSession(
 
 ### <a name="parameters"></a>Parametreler
 
-*Oturumadı*\
-Durdurmak için izleme oturumunun adı. [StartTracingSession , StartTracingSessionA](start-tracing-session.md)veya [StartTracingSessionW'e](start-tracing-session-w.md)geçen oturum adı ile aynı oturum adını kullanın. [StartTracingSessionA](start-tracing-session-a.md)
+*OturumAdı*\
+Durdurulacak izleme oturumunun adı. [Starttracingsession](start-tracing-session.md), [starttracingsessiona](start-tracing-session-a.md)veya [starttracingsessionw](start-tracing-session-w.md)öğesine geçirilen oturum adını kullanın.
 
 *outputLogFile*\
-Ham izlemenin kaydedilmesi gereken son çıktı günlüğü dosyasına giden yol.
+Ham izlemenin kaydedileceği son çıkış günlüğü dosyasının yolu.
 
-*Istatistik*\
-[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) bir nesneye işaretçi. `StopTracingSession`dönmeden önce bu nesneye izleme toplama istatistikleri yazar.
+*girecek*\
+[TRACING_SESSION_STATISTICS](../other-types/tracing-session-statistics-struct.md) nesnesine yönelik işaretçi. `StopTracingSession` döndürmeden önce bu nesnedeki izleme toplama istatistiklerini yazar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[RESULT_CODE](../other-types/result-code-enum.md) enum bir sonuç kodu.
+[RESULT_CODE](../other-types/result-code-enum.md) numaralandırmasından elde edilen sonuç kodu.
 
 ::: moniker-end

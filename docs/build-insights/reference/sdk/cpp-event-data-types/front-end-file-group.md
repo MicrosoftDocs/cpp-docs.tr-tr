@@ -1,6 +1,6 @@
 ---
-title: FrontEndFileGroup sınıfı
-description: C++ Build Insights SDK FrontEndFileGroup sınıf başvurusu.
+title: Frontendfılegroup sınıfı
+description: C++ derleme öngörüleri SDK Frontendfılegroup sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: d2eebb650e59e750e5ebde74914dca5f0ef4779d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 902b394f645030fed4eeb79bae79535e6d246a1f
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324767"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923237"
 ---
-# <a name="frontendfilegroup-class"></a>FrontEndFileGroup sınıfı
+# <a name="frontendfilegroup-class"></a>Frontendfılegroup sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `FrontEndFileGroup` MatchEventStack ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [MatchEventStack](../functions/match-event-stack.md) [FRONT_END_FILE](../event-table.md#front-end-file) etkinlik gruplarını eşleştirmek için kullanın.
+`FrontEndFileGroup`Sınıfı, [Matcheventstack](../functions/match-event-stack.md) ve [Matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [FRONT_END_FILE](../event-table.md#front-end-file) olay gruplarıyla eşleşecek şekilde kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class FrontEndFileGroup : public EventGroup<FrontEndFile>
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[EventGroup\<\> FrontEndFile](event-group.md) taban sınıfından devralınan üyelerle `FrontEndFileGroup` birlikte, sınıf aşağıdaki üyeleri içerir:
+Kendi [EventGroup \<FrontEndFile\> ](event-group.md) temel sınıfından devralınan üyelerle birlikte, `FrontEndFileGroup` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [FrontEndFileGroup](#front-end-file-group)
 
-## <a name="frontendfilegroup"></a><a name="front-end-file-group"></a>FrontEndFileGroup
+## <a name="frontendfilegroup"></a><a name="front-end-file-group"></a> Frontendfılegroup
 
 ```cpp
 FrontEndFileGroup(std::deque<FrontEndFile>&& group);
@@ -53,7 +53,7 @@ FrontEndFileGroup(std::deque<FrontEndFile>&& group);
 
 ### <a name="parameters"></a>Parametreler
 
-*Grup*\
-Bir grup [FRONT_END_FILE](../event-table.md#front-end-file) olayı.
+*grubu*\
+Bir [FRONT_END_FILE](../event-table.md#front-end-file) olayları grubu.
 
 ::: moniker-end

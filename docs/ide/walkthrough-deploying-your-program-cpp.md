@@ -9,113 +9,113 @@ helpviewer_keywords:
 - projects [C++], deploying programs
 - application deployment [C++], walkthroughs
 ms.assetid: 79e6cc4e-dced-419d-aaf7-d62d1367603f
-ms.openlocfilehash: eacbcef82f240589e71b59f80d8e19602ceda869
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6c5d98687d6b5a49fb7b4b90aecf345a739c34a3
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365015"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924673"
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek Yol: Programınızı Dağıtma (C++)
 
-Daha önceki ilgili izthroughleri tamamlayarak uygulamanızı oluşturduğunuza göre, son adım, diğer kullanıcıların programı bilgisayarlarına yükleyebilmeleri için bir yükleyici oluşturmaktır. Yükleyici için, varolan çözümünüze yeni bir proje eklersiniz. Bu yeni projenin çıktısı, uygulamanızı başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
+Daha önceki ilgili talimatları tamamlayarak uygulamanızı oluşturduğunuza göre son adım, diğer kullanıcıların programı bilgisayarlarına yükleyebilmeleri için bir yükleyici oluşturmaktır. Yükleyici için, var olan çözümünüze yeni bir proje ekleyeceksiniz. Bu yeni projenin çıktısı, uygulamanızı başka bir bilgisayara yükleyecek bir setup.exe dosyasıdır.
 
-Gözden geçirme, uygulamanızı dağıtmak için Windows Installer'ın nasıl kullanılacağını gösterir. Bir uygulamayı dağıtmak için ClickOnce'yi de kullanabilirsiniz. Daha fazla bilgi için [Visual C++ Uygulamaları için ClickOnce Dağıtım'a](../windows/clickonce-deployment-for-visual-cpp-applications.md)bakın. Genel olarak dağıtım hakkında daha fazla bilgi için [bkz.](/visualstudio/deployment/deploying-applications-services-and-components)
+İzlenecek yol, uygulamanızı dağıtmak için Windows Installer nasıl kullanacağınızı gösterir. Ayrıca, ClickOnce kullanarak bir uygulamayı dağıtabilirsiniz. Daha fazla bilgi için bkz. [Visual C++ uygulamalar Için ClickOnce dağıtımı](../windows/clickonce-deployment-for-visual-cpp-applications.md). Genel olarak dağıtım hakkında daha fazla bilgi için bkz. [uygulamaları, hizmetleri ve bileşenleri dağıtma](/visualstudio/deployment/deploying-applications-services-and-components).
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
-- Bu gözden geçirme, C++ dilinin temellerini anladığınızı varsayar.
+- İzlenecek yol, C++ dilinin temellerini anladığınızı varsayar.
 
-- Ayrıca, [C++ Masaüstü Geliştirme için Visual Studio IDE'yi kullanma'da](using-the-visual-studio-ide-for-cpp-desktop-development.md)listelenen önceki ilgili gözden geçirme leri tamamladığınızı varsayar.
+- Ayrıca [, C++ masaüstü geliştirme Için Visual STUDIO IDE 'Yi kullanma](using-the-visual-studio-ide-for-cpp-desktop-development.md)bölümünde listelenen daha önceki ilgili talimatları tamamlamış olduğunu varsaymaktadır.
 
-- Walkthrough Visual Studio Express sürümlerinde tamamlanamaz.
+- İzlenecek yol, Visual Studio 'nun Express sürümlerinde tamamlanamaz.
 
-## <a name="install-the-visual-studio-setup-and-deployment-project-template"></a>Visual Studio kurulum ve dağıtım proje şablonu yükleme
+## <a name="install-the-visual-studio-setup-and-deployment-project-template"></a>Visual Studio Kurulum ve dağıtım projesi şablonunu yükleme
 
-Bu bölümdeki adımlar Visual Studio'nun hangi sürümünü yüklediğinize bağlı olarak değişir. Visual Studio'nun tercih ettiğiniz sürümüiçin belgeleri görmek için **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+Bu bölümdeki adımlar, yüklediğiniz Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 <!-- markdownlint-disable MD034 -->
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-### <a name="to-install-the-setup-and-deployment-project-template-for-visual-studio-2019"></a>Visual Studio 2019 için kurulum ve dağıtım proje şablonu yüklemek için
+### <a name="to-install-the-setup-and-deployment-project-template-for-visual-studio-2019"></a>Visual Studio 2019 için kurulum ve dağıtım proje şablonunu yüklemek için
 
-1. Henüz yapmadıysanız, Microsoft Visual Studio Installer Projects uzantısını indirin. Uzantı Visual Studio geliştiricileri için ücretsizdir ve Visual Studio'ya kurulum ve dağıtım proje şablonlarının işlevselliğini ekler. Visual Studio'da Internet'e bağlandığınızda Uzantıları**Yönet Uzantıları'nı** **seçin.** >  **Uzantılar ve Güncelleştirmeler** iletişim kutusunun altında **Çevrimiçi** sekmesini seçin ve arama kutusuna *Microsoft Visual Studio Installer Projects* yazın. **Enter'a**Girin , **Yükleyici Projeleri> Microsoft Visual Studio \<sürümünü**seçin ve **İndir'i**tıklatın. Uzantıyı çalıştırmayı ve yüklemeyi seçin ve ardından Visual Studio'yu yeniden başlatın.
+1. Daha önce yapmadıysanız, Microsoft Visual Studio Installer projeleri uzantısını indirin. Uzantı, Visual Studio geliştiricileri için ücretsizdir ve kurulum ve dağıtım projesi şablonlarının işlevlerini Visual Studio 'ya ekler. Internet 'e bağlı olduğunuzda, Visual Studio **'da uzantıları**  >  **Yönet uzantılar** ' ı seçin. **Uzantılar ve güncelleştirmeler** Iletişim kutusunda **çevrimiçi** sekmesini seçin ve arama kutusuna *Microsoft Visual Studio Installer projelerini* yazın. **ENTER** tuşuna basın, **Microsoft Visual Studio \<version> Yükleyici projeleri** ' ni seçin ve **İndir** ' e tıklayın. Uzantıyı çalıştırıp yüklemeyi seçip Visual Studio 'Yu yeniden başlatın.
 
-1. Visual Studio menü çubuğunda, **Son Projeler ve Çözümleri** **Dosyala'yı** > seçin ve ardından projenizi yeniden açmayı seçin.
+1. Visual Studio menü çubuğunda **Dosya** > **son projeler ve çözümler** ' i seçin ve ardından projenizi yeniden açmak için seçin.
 
-1. Menü çubuğunda, **Yeni Proje Oluştur** iletişim kutusunu açmak için**Yeni** > **Proje** **Dosyası'nı** > seçin. Arama kutusuna "Kurulum" yazın ve sonuç listesinden **Kurulum Projesi'ni**seçin.
+1. **File**  >  **New**  >  **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin. Arama kutusuna "Kurulum" yazın ve sonuçlar listesinden **Kurulum projesi** ' ni seçin.
 
-1. **Ad** kutusuna kurulum projesi için bir ad girin. **Çözüm** açılır listesinde **çözüme ekle'yi**seçin. Kurulum projesini oluşturmak için **Tamam** düğmesini seçin. Düzenleyici penceresinde **Dosya Yardımcısı (ProjectName)** sekmesi açılır.
+1. **Ad** kutusuna kurulum projesi için bir ad girin. **Çözüm** açılan listesinde **çözüme Ekle** ' yi seçin. Kurulum projesi oluşturmak için **Tamam** düğmesini seçin. Bir **Dosya Yardımcısı (ProjectName)** sekmesi, düzenleyici penceresinde açılır.
 
-1. **Uygulama Klasörü** düğümüne sağ tıklayın ve Proje Çıktı Grubu Ekle iletişim kutusunu açmak için **Proje Çıktısı** **Ekle'yi** > seçin. **Add Project Output Group**
+1. **Uygulama klasörü** düğümüne sağ tıklayın ve proje çıktısı **Ekle** ' yi seçerek > **Project Output** **Proje çıkış grubu Ekle** iletişim kutusunu açın.
 
-1. İletişim kutusunda, Birincil **Çıktı'yı** seçin ve **Tamam'ı**tıklatın. Oyundan Birincil **Çıktı (Etkin)** adlı yeni bir öğe görüntülenir.
+1. İletişim kutusunda, **birincil çıkış** ' ı seçin ve **Tamam** ' a tıklayın. **Oyunun birincil çıkışı (etkin)** adlı yeni bir öğe görünür.
 
-1. **Oyundan Birincil Çıktı öğesini seçin (Etkin)**, sağ tıklayın ve Oyundan Birincil Çıktı için **Kısayol Oluştur'u seçin (Etkin)**. Oyundan Birincil **Çıktıya Kısayol (Etkin)** adlı yeni bir öğe görüntülenir.
+1. **Oyunun birincil çıkışını (etkin)** seçin, sağ tıklayın ve **oyunun birincil çıkış için kısayol oluştur (etkin)** öğesini seçin. **Oyunun birincil çıktısına (etkin) kısayol** adlı yeni bir öğe görünür.
 
-1. Kısayol öğesini *Oyuna*yeniden adlandırın, ardından öğeyi sürükleyin ve pencerenin sol tarafındaki **Kullanıcı Programları Menüsü** düğümüne bırakın.
+1. Kısayol öğesini *oyun* olarak yeniden adlandırın, ardından öğeyi sürükleyip pencerenin sol tarafındaki **Programlar menü** düğümüne bırakın.
 
-1. **Çözüm Gezgini'nde,** **Oyun Yükleyici** projesini seçin ve Özellikler **Penceresini** **Görüntüle'yi** > seçin veya **Özellikler** penceresini açmak için **F4'e** basın.
+1. **Çözüm Gezgini** , **oyun yükleyici** projesini seçin ve Özellikler **View** > penceresini açmak için **Özellikler** penceresini görüntüle ' yi veya **F4** ' **Properties** i tıklayın.
 
-1. Yükleyicide görünmesini istediğiniz ek ayrıntıları belirtin.  Örneğin, **Üretici**için *Contoso'* yu, **Ürün Adı**için Oyun *Yükleyicisini* ve **SupportUrl**için *https\://www.contoso.com'ı* kullanın.
+1. Yükleyicide görünmesini istediğiniz ek ayrıntıları belirtin.  Örneğin, **üretici** için *contoso* , **ürün adı** için *oyun yükleyicisi* ve **SupportUrl** için *https \: //www.contoso.com* kullanın.
 
-1. Menü çubuğunda**Yapı Yapılandırma Yöneticisi'ni** **seçin.** >  **Proje** tablosunda, **Yapı** sütununaltında, **Oyun Yükleyicisi**kutusunu işaretleyin. **Kapat'ı**tıklatın.
+1. Menü çubuğunda Configuration Manager **Oluştur** ' u seçin  >  **Configuration Manager** . **Proje** tablosunda, **derleme** sütununun altında **oyun yükleyicisi** kutusunu işaretleyin. **Kapat** ’a tıklayın.
 
-1. Menü çubuğunda, Oyun projesini ve Oyun Yükleyici projesini oluşturmak için **Build** > **Solution'ı** seçin.
+1. Menü çubuğunda, **Build** > oyun projesini ve oyun yükleyici projesini oluşturmak için derleme **çözümü** oluştur ' u seçin.
 
-1. Çözüm klasöründe, Oyun Yükleyici projesinden oluşturulmuş setup.exe programını bulun ve ardından Oyun uygulamasını bilgisayarınıza yüklemek için çalıştırın. Uygulamayı ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosyayı (ve GameInstaller.msi) kopyalayabilirsiniz.
+1. Çözüm klasöründe, oyun yükleyicisi projesinden oluşturulan setup.exe programını bulun ve oyun uygulamasını bilgisayarınıza yüklemek için çalıştırın. Uygulamayı ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosyayı (ve GameInstaller.msi) kopyalayabilirsiniz.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-### <a name="to-install-the-setup-and-deployment-project-template-for-visual-studio-2017-and-earlier"></a>Visual Studio 2017 ve daha önceki kurulum ve dağıtım proje şablonu yüklemek için
+### <a name="to-install-the-setup-and-deployment-project-template-for-visual-studio-2017-and-earlier"></a>Visual Studio 2017 ve öncesi için kurulum ve dağıtım projesi şablonunu yüklemek için
 
-1. Visual Studio'da Internet'e bağlandığınızda, **Araç** > **Uzantıları ve Güncelleştirmeleri'ni**seçin.
+1. Internet 'e bağlı olduğunuzda, Visual Studio 'da **Araçlar** > **Uzantılar ve güncelleştirmeler** ' i seçin.
 
-1. **Uzantılar ve Güncelleştirmeler** **altında, Çevrimiçi** sekmesini seçin ve arama kutusuna *Microsoft Visual Studio Installer Projects* yazın. **Enter'a**Girin , **Yükleyici Projeleri> Microsoft Visual Studio \<sürümünü**seçin ve **İndir'i**tıklatın.
+1. **Uzantılar ve güncelleştirmeler** altında **çevrimiçi** sekmesini seçin ve arama kutusuna *Microsoft Visual Studio Installer projelerini* yazın. **ENTER** tuşuna basın, **Microsoft Visual Studio \<version> Yükleyici projeleri** ' ni seçin ve **İndir** ' e tıklayın.
 
-1. Uzantıyı yüklemeyi seçin ve Ardından Visual Studio'yu yeniden başlatın.
+1. Uzantıyı yüklemeyi seçin ve ardından Visual Studio 'Yu yeniden başlatın.
 
-1. Menü çubuğunda, **Dosya** > **Son Projeler ve Çözümler'i**seçin ve yeniden açmak için **Oyun** çözümünün seçeneğini belirleyin.
+1. Menü çubuğunda, **File** > **son projeler ve çözümler** dosya ' yı seçin ve ardından yeniden açmak için **oyun** çözümünü seçin.
 
-### <a name="to-create-a-setup-project-and-install-your-program"></a>Bir kurulum projesi oluşturmak ve programınızı yüklemek için
+### <a name="to-create-a-setup-project-and-install-your-program"></a>Bir kurulum projesi oluşturup programınızı yükleme
 
-1. Etkin çözüm yapılandırmasını Release olarak değiştirin. Menü çubuğunda**Yapı Yapılandırma Yöneticisi'ni** **seçin.** >  Configuration **Manager** iletişim kutusunda, **Etkin çözüm yapılandırma** açılır listesinde **Serbest Bırak'ı**seçin. Yapılandırmayı kaydetmek için **Kapat** düğmesini seçin.
+1. Etkin çözüm yapılandırmasını sürüm olarak değiştirin. Menü çubuğunda Configuration Manager **Oluştur** ' u seçin  >  **Configuration Manager** . **Configuration Manager** iletişim kutusunda, **etkin çözüm yapılandırması** açılan listesinde, **yayın** ' ı seçin. Yapılandırmayı kaydetmek için **Kapat** düğmesini seçin.
 
-1. Menü çubuğunda, **Yeni Proje** iletişim kutusunu açmak için **Yeni** > **Proje** **Dosyası'nı** > seçin.
+1. **File** > **New** > **Yeni proje** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun sol bölmesinde, **Yüklenilen** > **Diğer Proje Türleri** düğümlerini genişletin ve ardından Visual Studio **Installer'ı**seçin. Orta bölmede Kurulum **Projesi'ni**seçin.
+1. İletişim kutusunun sol bölmesinde, **yüklü**  >  **diğer proje türleri** düğümlerini genişletin ve **Visual Studio yükleyicisi** ' yi seçin. Orta bölmede, **Kurulum projesi** ' ni seçin.
 
-1. **Ad** kutusuna kurulum projesi için bir ad girin. Bu örnekiçin, *Oyun Yükleyici*girin. **Çözüm** açılır listesinde **çözüme ekle'yi**seçin. Kurulum projesini oluşturmak için **Tamam** düğmesini seçin. Düzenleyici penceresinde **Dosya Yardımcısı (Oyun Yükleyici)** sekmesi açılır.
+1. **Ad** kutusuna kurulum projesi için bir ad girin. Bu örnek için *oyun yükleyici* ' yi girin. **Çözüm** açılan listesinde **çözüme Ekle** ' yi seçin. Kurulum projesi oluşturmak için **Tamam** düğmesini seçin. Bir **Dosya Yardımcısı (oyun yükleyici)** sekmesi düzenleyici penceresinde açılır.
 
-1. **Uygulama Klasörü** düğümüne sağ tıklayın ve Proje Çıktı Grubu Ekle iletişim kutusunu açmak için **Proje Çıktısı** **Ekle'yi** > seçin. **Add Project Output Group**
+1. **Uygulama klasörü** düğümüne sağ tıklayın ve proje çıktısı **Ekle** ' yi seçerek > **Project Output** **Proje çıkış grubu Ekle** iletişim kutusunu açın.
 
-1. İletişim kutusunda, Birincil **Çıktı'yı** seçin ve **Tamam'ı**tıklatın. Oyundan Birincil **Çıktı (Etkin)** adlı yeni bir öğe görüntülenir.
+1. İletişim kutusunda, **birincil çıkış** ' ı seçin ve **Tamam** ' a tıklayın. **Oyunun birincil çıkışı (etkin)** adlı yeni bir öğe görünür.
 
-1. **Oyundan Birincil Çıktı öğesini seçin (Etkin)**, sağ tıklayın ve Oyundan Birincil Çıktı için **Kısayol Oluştur'u seçin (Etkin)**. Oyundan Birincil **Çıktıya Kısayol (Etkin)** adlı yeni bir öğe görüntülenir.
+1. **Oyunun birincil çıkışını (etkin)** seçin, sağ tıklayın ve **oyunun birincil çıkış için kısayol oluştur (etkin)** öğesini seçin. **Oyunun birincil çıktısına (etkin) kısayol** adlı yeni bir öğe görünür.
 
-1. Kısayol öğesini *Oyuna*yeniden adlandırın, ardından öğeyi sürükleyin ve pencerenin sol tarafındaki **Kullanıcı Programları Menüsü** düğümüne bırakın.
+1. Kısayol öğesini *oyun* olarak yeniden adlandırın, ardından öğeyi sürükleyip pencerenin sol tarafındaki **Programlar menü** düğümüne bırakın.
 
-1. **Çözüm Gezgini'nde,** **Oyun Yükleyici** projesini seçin ve Özellikler **Penceresini** **Görüntüle'yi** > seçin veya **Özellikler** penceresini açmak için **F4'e** basın.
+1. **Çözüm Gezgini** , **oyun yükleyici** projesini seçin ve Özellikler **View** > penceresini açmak için **Özellikler** penceresini görüntüle ' yi veya **F4** ' **Properties** i tıklayın.
 
-1. Yükleyicide görünmesini istediğiniz ek ayrıntıları belirtin.  Örneğin, **Üretici**için *Contoso'* yu, **Ürün Adı**için Oyun *Yükleyicisini* ve **SupportUrl**için *https\://www.contoso.com'ı* kullanın.
+1. Yükleyicide görünmesini istediğiniz ek ayrıntıları belirtin.  Örneğin, **üretici** için *contoso* , **ürün adı** için *oyun yükleyicisi* ve **SupportUrl** için *https \: //www.contoso.com* kullanın.
 
-1. Menü çubuğunda**Yapı Yapılandırma Yöneticisi'ni** **seçin.** >  **Proje** tablosunda, **Yapı** sütununaltında, **Oyun Yükleyicisi**kutusunu işaretleyin. **Kapat'ı**tıklatın.
+1. Menü çubuğunda Configuration Manager **Oluştur** ' u seçin  >  **Configuration Manager** . **Proje** tablosunda, **derleme** sütununun altında **oyun yükleyicisi** kutusunu işaretleyin. **Kapat** ’a tıklayın.
 
-1. Menü çubuğunda, Oyun projesini ve Oyun Yükleyici projesini oluşturmak için **Build** > **Solution'ı** seçin.
+1. Menü çubuğunda, **Build** > oyun projesini ve oyun yükleyici projesini oluşturmak için derleme **çözümü** oluştur ' u seçin.
 
-1. Çözüm klasöründe, Oyun Yükleyici projesinden oluşturulmuş setup.exe programını bulun ve ardından Oyun uygulamasını bilgisayarınıza yüklemek için çalıştırın. Uygulamayı ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosyayı (ve GameInstaller.msi) kopyalayabilirsiniz.
+1. Çözüm klasöründe, oyun yükleyicisi projesinden oluşturulan setup.exe programını bulun ve oyun uygulamasını bilgisayarınıza yüklemek için çalıştırın. Uygulamayı ve gerekli kitaplık dosyalarını başka bir bilgisayara yüklemek için bu dosyayı (ve GameInstaller.msi) kopyalayabilirsiniz.
 
 ::: moniker-end
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-**Önceki:** [Walkthrough: Bir Proje hata ayıklama (C++)](walkthrough-debugging-a-project-cpp.md)
+**Previous:** [Izlenecek yol: proje hatalarını ayıklama (C++)](walkthrough-debugging-a-project-cpp.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Referansı](../cpp/cpp-language-reference.md)<br/>
-[Projeler ve yapı sistemleri](../build/projects-and-build-systems-cpp.md)<br/>
-[Masaüstü Uygulamalarını Dağıtma](../windows/deploying-native-desktop-applications-visual-cpp.md)<br/>
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)<br/>
+[Projeler ve derleme sistemleri](../build/projects-and-build-systems-cpp.md)<br/>
+[Masaüstü uygulamaları dağıtma](../windows/deploying-native-desktop-applications-visual-cpp.md)<br/>

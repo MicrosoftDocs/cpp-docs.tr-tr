@@ -2,16 +2,16 @@
 title: Örnek Çoklu İş Parçacığı Kullanan C Programı
 ms.date: 08/09/2019
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-ms.openlocfilehash: eb1a07558dd9446e167c27ad08891f88c37fb4ec
-ms.sourcegitcommit: b3d19b5f59f3a5d90c24f9f16c73bad4c5eb6944
+ms.openlocfilehash: 355024b995dc638b89a335983bd2e0f2cb0d96ce
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195810"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924765"
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
 
-Sıçrama. c, her harf `a` veya `A` yazıldığında yeni bir iş parçacığı oluşturan örnek bir çoklu iş parçacıklı programdır. Her bir iş parçacığı, ekran etrafında farklı bir rengin harfine sıçrayın. 32 adede kadar iş parçacığı oluşturulabilir. Programın normal sonlandırılması, `q` veya `Q` yazıldığında oluşur.
+Sıçrama. c, her harf veya yazıldığında yeni bir iş parçacığı oluşturan örnek bir çoklu iş parçacıklı programdır `a` `A` . Her bir iş parçacığı, ekran etrafında farklı bir rengin harfine sıçrayın. 32 adede kadar iş parçacığı oluşturulabilir. Programın normal sonlandırılması, `q` veya `Q` yazıldığında oluşur.
 
 ## <a name="compile-and-link-a-multithread-program"></a>Çoklu iş parçacığı programı derleme ve bağlama
 
@@ -19,11 +19,11 @@ Programlar varsayılan olarak çok iş parçacıklı olarak derlenir.
 
 ### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>Çoklu iş parçacığı programı sıçramasını derlemek ve geliştirme ortamının içinden bağlamak için
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-1. **Dosya** menüsünde **Yeni** > **Proje**' yi seçin.
+1. **Dosya** menüsünde **Yeni** > **Proje** ' yi seçin.
 
-1. **Yeni proje oluştur** iletişim kutusunda **C++** , **Windows**ve **konsol** etiketleri olan **konsol uygulaması** şablonunu seçin. Devam etmek için **İleri ' yi** seçin.
+1. **Yeni proje oluştur** iletişim kutusunda **C++** , **Windows** ve **konsol** etiketlerine sahip **konsol uygulaması** şablonunu seçin. Devam etmek için **İleri** ’yi seçin.
 
 1. **Yeni projenizi yapılandırın** iletişim kutusunda, projeniz Için "sıçrama" gibi bir ad girin. Devam etmek için **Oluştur** ' a tıklayın.
 
@@ -31,17 +31,17 @@ Programlar varsayılan olarak çok iş parçacıklı olarak derlenir.
 
 1. Düzenle penceresinde, varolan kaynak kodu silin ve örnek kodla değiştirin.
 
-1. **Build** menüsünde **Build Solution**öğesini seçin.
+1. **Build** menüsünde **Build Solution** öğesini seçin.
 
 1. Hata ayıklayıcıda programı başlatmak için **F5** tuşuna basın.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-1. **Dosya** menüsünde **Yeni** > **Proje**' yi seçin.
+1. **Dosya** menüsünde **Yeni** > **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda sol bölmedeki  **C++ görsel** ' i seçin ve ardından orta bölmedeki **boş proje** ' yi seçin.
+1. **Yeni proje** iletişim kutusunda sol bölmedeki **Visual C++** ' ı seçin ve ardından orta bölmedeki **boş proje** ' yi seçin.
 
 1. **Ad** düzenleme kutusunda, projeniz Için "sıçrama" gibi bir ad girin. Boş projeyi oluşturmak için **Tamam ' ı** seçin.
 

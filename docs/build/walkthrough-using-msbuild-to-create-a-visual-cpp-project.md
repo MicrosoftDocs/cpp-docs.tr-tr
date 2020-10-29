@@ -4,12 +4,12 @@ description: Sıfırdan bir komut satırı MSBuild C++. vcxproj projesinin nası
 ms.date: 10/08/2020
 helpviewer_keywords:
 - 'MSBuild (C++), walkthrough: create a project'
-ms.openlocfilehash: 4f17cd8c4f5f48d8be5cd7cb25940db87029e111
-ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
+ms.openlocfilehash: b3d4e8881f926e80e95832a27f7a5106ce876265
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099738"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924341"
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma
 
@@ -28,7 +28,7 @@ Bu izlenecek yol aşağıdaki görevleri gösterir:
 
 - Projenizi özelleştirmek için MSBuild 'i kullanma.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 Bu yönergeyi tamamlamak için şu önkoşullara ihtiyacınız vardır:
 
@@ -36,21 +36,21 @@ Bu yönergeyi tamamlamak için şu önkoşullara ihtiyacınız vardır:
 
 - MSBuild sisteminin genel olarak anlaşılmasıdır.
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 > [!NOTE]
 > Alt düzey derleme yönergelerinin çoğu, *`.targets`* *`.props`* özelliğinde depolanan varsayılan hedefler klasörü altında tanımlanan ve dosyalarında bulunur `$(VCTargetsPath)` . Gibi dosyaları burada bulabilirsiniz *`Microsoft.Cpp.Common.props`* . Visual Studio 2015 ve önceki sürümlerde bu dosyalar için varsayılan yol altındadır *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`* .
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 > [!NOTE]
 > Alt düzey derleme yönergelerinin çoğu, *`.targets`* *`.props`* özelliğinde depolanan varsayılan hedefler klasörü altında tanımlanan ve dosyalarında bulunur `$(VCTargetsPath)` . Gibi dosyaları burada bulabilirsiniz *`Microsoft.Cpp.Common.props`* . Bu dosyalar için varsayılan yol, Visual Studio 2017 ' de bulunur *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* . Visual Studio 2015 ve önceki sürümleri, altında depolanır *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`* .
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 > [!NOTE]
 > Alt düzey derleme yönergelerinin çoğu, *`.targets`* *`.props`* özelliğinde depolanan varsayılan hedefler klasörü altında tanımlanan ve dosyalarında bulunur `$(VCTargetsPath)` . Gibi dosyaları burada bulabilirsiniz *`Microsoft.Cpp.Common.props`* . Bu dosyalar için varsayılan yol altında bulunur *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>\`* . `<version>`Yol öğesi, Visual Studio 'nun sürümüne özgüdür. *`v160`* Visual Studio 2019 içindir. Visual Studio 2017, bu dosyaları altında saklı *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* . Visual Studio 2015 ve önceki sürümleri, altında depolanır *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\<version>\`* .

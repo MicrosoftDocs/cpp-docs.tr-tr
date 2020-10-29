@@ -5,26 +5,26 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: 61ee867f664b6b0d885e35f6d58840b37ce322b9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 476c91f55071f6d1c7f243257273a32798813cae
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210918"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924642"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı** 'nı kullandığınızda, sihirbaz, sütun haritanızda belirttiğiniz her alan için Kullanıcı kayıt sınıfında bir veri üyesi oluşturur. Her veri üyesi `DWORD` türüdür ve ilgili alanına karşılık gelen bir durum değeri içerir.
+Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı** 'nı kullandığınızda, sihirbaz, sütun haritanızda belirttiğiniz her alan için Kullanıcı kayıt sınıfında bir veri üyesi oluşturur. Her veri üyesi türüdür `DWORD` ve ilgili alanına karşılık gelen bir durum değeri içerir.
 
-Örneğin, bir veri üyesi *m_OwnerID*için, sihirbaz alan durumu (*dwOwnerIDStatus*) için ek bir veri üyesi ve alan uzunluğu (*dwOwnerIDLength*) için başka bir tane oluşturur. Ayrıca, COLUMN_ENTRY_LENGTH_STATUS girdileri olan bir sütun haritası da oluşturur.
+Örneğin, bir veri üyesi *m_OwnerID* için, sihirbaz alan durumu ( *dwOwnerIDStatus* ) için ek bir veri üyesi ve alan uzunluğu ( *dwOwnerIDLength* ) için başka bir tane oluşturur. Ayrıca, COLUMN_ENTRY_LENGTH_STATUS girdileri olan bir sütun haritası da oluşturur.
 
 Bu, aşağıdaki kodda gösterilmiştir:
 
@@ -110,10 +110,10 @@ Değişken uzunluklu bir sütunun uzunluğunu veya bir sütunun durumunu alabili
     }
     ```
 
-`CDynamicAccessor`kullandığınızda, uzunluk ve durum sizin için otomatik olarak bağlanır. Uzunluk ve durum değerlerini almak için `GetLength` ve `GetStatus` üye işlevlerini kullanın.
+Kullandığınızda `CDynamicAccessor` , uzunluk ve durum sizin için otomatik olarak bağlanır. Uzunluk ve durum değerlerini almak için, `GetLength` ve `GetStatus` üye işlevlerini kullanın.
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[OLE DB tüketici şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

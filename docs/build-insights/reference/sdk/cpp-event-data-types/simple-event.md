@@ -1,6 +1,6 @@
 ---
 title: SimpleEvent sınıfı
-description: C++ Build Insights SDK SimpleEvent sınıf başvurusu.
+description: C++ Build Insights SDK SimpleEvent sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 414ff5c1af99acc612384c1ae39f6e12ab051275
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dc09a279157482089adedc660395feaa98376dae
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324364"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922997"
 ---
 # <a name="simpleevent-class"></a>SimpleEvent sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `SimpleEvent` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. Herhangi bir basit olay maç için kullanın. Sınıftarafından eşleşebilecek tüm olayları görmek için etkinlik `SimpleEvent` [tablosuna](../event-table.md) bakın.
+`SimpleEvent`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Herhangi bir basit olayla eşleştirmek için kullanın. Sınıfıyla eşleştirileceği tüm olayları görmek için [olay tablosuna](../event-table.md) bakın `SimpleEvent` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class SimpleEvent : public Event
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Olay](event.md) taban sınıfından devralınan üyelerle `SimpleEvent` birlikte, sınıf aşağıdaki üyeleri içerir:
+Kendi [olay](event.md) temel sınıfından devralınan üyelerle birlikte, `SimpleEvent` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
 [SimpleEvent](#simple-event)
 
-## <a name="simpleevent"></a><a name="simple-event"></a>SimpleEvent
+## <a name="simpleevent"></a><a name="simple-event"></a> SimpleEvent
 
 ```cpp
 SimpleEvent(const RawEvent& event);
@@ -53,7 +53,7 @@ SimpleEvent(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 Herhangi bir basit olay.
 
 ::: moniker-end

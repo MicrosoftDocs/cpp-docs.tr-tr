@@ -4,12 +4,12 @@ description: Visual Studio C++ projeleri için MSBuild tarafından kullanılan d
 ms.date: 10/14/2020
 helpviewer_keywords:
 - MSBuild overview
-ms.openlocfilehash: b08db751bfe04c7cd3ce2c2f4741c9ee8956cf74
-ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
+ms.openlocfilehash: e99b9a428d9c6149debc06e1dfab7a69c3590196
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099686"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924385"
 ---
 # <a name="msbuild-internals-for-c-projects"></a>C++ projeleri için MSBuild iç işlevleri
 
@@ -21,7 +21,7 @@ Destek dosyalarındaki birçok hedef ve özellik yalnızca derleme sistemini uyg
 
 Varsayılan olarak, birincil Visual Studio destek dosyaları aşağıdaki dizinlerde bulunur. Bu bilgiler sürüme özgüdür.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ### <a name="visual-studio-2019"></a>Visual Studio 2019
 
@@ -39,7 +39,7 @@ Varsayılan olarak, birincil Visual Studio destek dosyaları aşağıdaki dizinl
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ### <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -79,7 +79,7 @@ Varsayılan olarak, birincil Visual Studio destek dosyaları aşağıdaki dizinl
 
 Destek dosya dizinleri, bu uzantılara sahip dosyaları içerir:
 
-| Dahili numara | Description |
+| Uzantı | Açıklama |
 | --------- | ----------- |
 | *`.targets`* | `Target`Hedef tarafından yürütülen görevleri belirten xml öğeleri içerir. Ayrıca `PropertyGroup` , `ItemGroup` `ItemDefinitionGroup` `Item` görev parametrelerine dosya ve komut satırı seçenekleri atamak için kullanılan,, ve Kullanıcı tanımlı öğeleri içerebilir.<br /><br /> Daha fazla bilgi için bkz. [target öğesi (MSBuild)](/visualstudio/msbuild/target-element-msbuild). |
 | *`.props`* | `Property Group`, Ve `Property` derleme sırasında kullanılan dosya ve parametre ayarlarını belirten Kullanıcı tanımlı XML öğelerini içerir.<br /><br /> Ayrıca, `ItemDefinitionGroup` `Item` ek ayarları belirten Kullanıcı tanımlı xml öğeleri de içerebilir. Öğe tanımı grubunda tanımlanan öğeler özelliklere benzer ancak komut satırından erişilemez. Visual Studio proje dosyaları, ayarları temsil etmek için genellikle özellikler yerine öğeleri kullanır.<br /><br /> Daha fazla bilgi için bkz. [ItemGroup öğesi (MSBuild)](/visualstudio/msbuild/itemgroup-element-msbuild), [ItemDefinitionGroup öğesi (MSBuild)](/visualstudio/msbuild/itemdefinitiongroup-element-msbuild)ve [öğe öğesi (MSBuild)](/visualstudio/msbuild/item-element-msbuild). |
@@ -117,10 +117,10 @@ Visual Studio destek dosyalarında yüzlerce hedef vardır. Ancak, çoğu kullan
 
 Aşağıdaki tabloda, çok sayıda kullanışlı Kullanıcı yönelimli hedef listelenmiştir.
 
-| Hedef | Description |
+| Hedef | Açıklama |
 | ------ | ----------- |
 | BscMake | , Microsoft 'A ait bilgi Bakımı yardımcı programı aracı bscmake.exe yürütülür. |
-| Yapı | Projeyi oluşturur.<br /><br /> Bu hedef, bir proje için varsayılandır. |
+| Oluşturma | Projeyi oluşturur.<br /><br /> Bu hedef, bir proje için varsayılandır. |
 | ClCompile | cl.exe MSVC derleyici aracını yürütür. |
 | Temizle | Geçici ve ara derleme dosyalarını siler. |
 | LIB | Microsoft 32-bit kitaplık Yöneticisi aracını yürütür lib.exe. |

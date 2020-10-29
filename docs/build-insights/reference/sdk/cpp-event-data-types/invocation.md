@@ -1,6 +1,6 @@
 ---
 title: Çağırma sınıfı
-description: C++ Build Insights SDK Çağırma sınıfı başvurusu.
+description: C++ derleme öngörüleri SDK çağırma sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: fcb087d46ea445251b0108f811545a44c26f421e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dfd463c7b9ca72dc14ad74b3759fdd1e3730d5a9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324636"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923135"
 ---
 # <a name="invocation-class"></a>Çağırma sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `Invocation` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [DerLEYICI](../event-table.md#compiler) veya [LINKER](../event-table.md#linker) olayıyla eşleştirmek için kullanın.
+`Invocation`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [Derleyici](../event-table.md#compiler) veya [bağlayıcı](../event-table.md#linker) olayını eşleştirmek için onu kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class Invocation : public Activity
@@ -54,21 +54,21 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `Invocation` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte, `Invocation` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Çağırma](#invocation)
+[Çağrı](#invocation)
 
 ### <a name="functions"></a>İşlevler
 
-[ToolPath](#tool-path)
-[ToolVersion](#tool-version)
-[ToolVersionString](#tool-version-string)
-[Tipi](#type)
-Çalışma[Rehberi](#working-directory)
+[ToolPath](#tool-path) 
+ [Araç sürümü](#tool-version) 
+ [Toolversionstring](#tool-version-string) 
+ [Tür](#type) 
+ [WorkingDirectory](#working-directory)
 
-## <a name="invocation"></a><a name="invocation"></a>Çağırma
+## <a name="invocation"></a><a name="invocation"></a> Çağrılması
 
 ```cpp
 Invocation(const RawEvent& event);
@@ -76,10 +76,10 @@ Invocation(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
-[DERLEYICI](../event-table.md#compiler) veya [LINKER](../event-table.md#linker) olayı.
+*olay*\
+[Derleyici](../event-table.md#compiler) veya [bağlayıcı](../event-table.md#linker) olayı.
 
-## <a name="toolpath"></a><a name="tool-path"></a>Araç Yolu
+## <a name="toolpath"></a><a name="tool-path"></a> ToolPath
 
 ```cpp
 const wchar_t* ToolPath() const;
@@ -87,9 +87,9 @@ const wchar_t* ToolPath() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çağrılan araca giden mutlak yol.
+Çağrılan aracın mutlak yolu.
 
-## <a name="toolversion"></a><a name="tool-version"></a>ToolVersion
+## <a name="toolversion"></a><a name="tool-version"></a> Araç sürümü
 
 ```cpp
 const INVOCATION_VERSION_DATA& ToolVersion() const;
@@ -97,9 +97,9 @@ const INVOCATION_VERSION_DATA& ToolVersion() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[Çağrılan](../c-event-data-types/invocation-version-data-struct.md) aracın INVOCATION_VERSION_DATA bir başvuru olarak sürümü.
+[INVOCATION_VERSION_DATA](../c-event-data-types/invocation-version-data-struct.md) başvuru olarak çağrılan aracın sürümü.
 
-## <a name="toolversionstring"></a><a name="tool-version-string"></a>ToolVersionString
+## <a name="toolversionstring"></a><a name="tool-version-string"></a> ToolVersionString
 
 ```cpp
 const char* ToolVersionString() const;
@@ -107,9 +107,9 @@ const char* ToolVersionString() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ansi dizesi olarak çağrılan aracın sürümü.
+ANSI dizesi olarak çağrılan aracın sürümü.
 
-## <a name="type"></a><a name="type"></a>Türü
+## <a name="type"></a><a name="type"></a> Türüyle
 
 ```cpp
 Type Type() const;
@@ -119,7 +119,7 @@ Type Type() const;
 
 Çağrılan aracı gösteren bir kod.
 
-## <a name="workingdirectory"></a><a name="working-directory"></a>Workingdirectory
+## <a name="workingdirectory"></a><a name="working-directory"></a> WorkingDirectory
 
 ```cpp
 const wchar_t* WorkingDirectory() const;
@@ -127,6 +127,6 @@ const wchar_t* WorkingDirectory() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Aracın çağrıldığı dizine giden mutlak yol.
+Aracın çağrıldığı dizinin mutlak yolu.
 
 ::: moniker-end

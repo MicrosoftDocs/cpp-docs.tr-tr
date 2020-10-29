@@ -1,6 +1,6 @@
 ---
-title: ImpLibOutput sınıfı
-description: C++ Build Insights SDK ImpLibOutput sınıf referansı.
+title: Implii put sınıfı
+description: C++ Build Insights SDK 'Sı ımplii put sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 98905dfe75484e98e14a0fa575e75fe3ab284559
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 01adb0041a3d212acf1bb846ced9019600016cda
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324710"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923180"
 ---
-# <a name="impliboutput-class"></a>ImpLibOutput sınıfı
+# <a name="impliboutput-class"></a>Implii put sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `ImpLibOutput` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output) bir olayı eşleştirmek için kullanın.
+`ImpLibOutput`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output) bir olayla eşleştirmek için kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ImpLibOutput : public FileOutput
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Dosya Çıktısı](file-output.md) taban sınıfından devralınan üyelerle `ImpLibOutput` birlikte, sınıf aşağıdaki üyeleri içerir:
+[Dosya çıkışı](file-output.md) temel sınıfından devralınan üyelerle birlikte, `ImpLibOutput` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[ImplibOutput](#imp-lib-output)
+[ImpLibOutput](#imp-lib-output)
 
-## <a name="impliboutput"></a><a name="imp-lib-output"></a>ImplibOutput
+## <a name="impliboutput"></a><a name="imp-lib-output"></a> Implii put
 
 ```cpp
 ImpLibOutput(const RawEvent& event);
@@ -53,7 +53,7 @@ ImpLibOutput(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output) bir olay.
 
 ::: moniker-end

@@ -1,6 +1,6 @@
 ---
 title: FileOutput sınıfı
-description: C++ Build Insights SDK FileOutput sınıf başvurusu.
+description: C++ derleme öngörüleri SDK dosyası çıkış sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 37823da8a4aaac0ce4094583b8aee8ac1eb04aaa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 65e23715d8ac47a8653215e8bd3ee7a43bbe80a3
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324812"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923248"
 ---
 # <a name="fileoutput-class"></a>FileOutput sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `FileOutput` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. Bir [EXECUTABLE_IMAGE_OUTPUT,](../event-table.md#executable-image-output) [EXP_OUTPUT,](../event-table.md#exp-output) [IMP_LIB_OUTPUT,](../event-table.md#imp-lib-output) [LIB_OUTPUT](../event-table.md#lib-output)veya [OBJ_OUTPUT](../event-table.md#obj-output) olay maç için kullanın.
+`FileOutput`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output), [EXP_OUTPUT](../event-table.md#exp-output), [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output), [LIB_OUTPUT](../event-table.md#lib-output)veya [OBJ_OUTPUT](../event-table.md#obj-output) olayını eşleştirmek için kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class FileOutput : public SimpleEvent
@@ -52,18 +52,18 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[SimpleEvent](simple-event.md) taban sınıfından devralınan üyelerle `FileOutput` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [SimpleEvent](simple-event.md) temel sınıfından birlikte, `FileOutput` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Dosya Çıktısı](#file-output)
+[FileOutput](#file-output)
 
 ### <a name="functions"></a>İşlevler
 
-[Yol](#path)
-[Türü](#type)
+[Yol](#path) 
+ [Tür](#type)
 
-## <a name="fileoutput"></a><a name="file-output"></a>Dosya Çıktısı
+## <a name="fileoutput"></a><a name="file-output"></a> Dosya çıkışı
 
 ```cpp
 FileOutput(const RawEvent& event);
@@ -71,10 +71,10 @@ FileOutput(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
-Bir [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output), [EXP_OUTPUT](../event-table.md#exp-output), [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output), [LIB_OUTPUT](../event-table.md#lib-output), veya [OBJ_OUTPUT](../event-table.md#obj-output) olay.
+*olay*\
+[EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output), [EXP_OUTPUT](../event-table.md#exp-output), [IMP_LIB_OUTPUT](../event-table.md#imp-lib-output), [LIB_OUTPUT](../event-table.md#lib-output)veya [OBJ_OUTPUT](../event-table.md#obj-output) olay.
 
-## <a name="path"></a><a name="path"></a>Yolu
+## <a name="path"></a><a name="path"></a> Yolun
 
 ```cpp
 const wchar_t Path() const;
@@ -82,9 +82,9 @@ const wchar_t Path() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıktı dosyasına giden mutlak yol.
+Çıkış dosyasının mutlak yolu.
 
-## <a name="type"></a><a name="type"></a>Türü
+## <a name="type"></a><a name="type"></a> Türüyle
 
 ```cpp
 Type Type() const;
@@ -92,6 +92,6 @@ Type Type() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıktı dosyasının türünü açıklayan bir kod.
+Çıkış dosyasının türünü tanımlayan bir kod.
 
 ::: moniker-end

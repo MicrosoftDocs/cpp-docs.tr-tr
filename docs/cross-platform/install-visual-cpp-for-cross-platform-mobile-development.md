@@ -2,12 +2,12 @@
 title: C++ ile platformlar arası mobil geliştirmeyi yükleme
 ms.date: 10/17/2019
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-ms.openlocfilehash: 6a573b0f7ba261b97af9de24e67f733acac0532f
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b9a6b78450969f5228ccf16cc7b0cff02a4d3b1e
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041958"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923997"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++ ile platformlar arası mobil geliştirmeyi yükleme
 
@@ -17,7 +17,7 @@ Bu makalede, Visual Studio kullanarak C++ ' da platformlar arası uygulamalar ge
 
 ## <a name="requirements"></a>Gereksinimler
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 - Yükleme gereksinimleri için bkz. [Visual Studio ürün ailesi sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs).
 
@@ -25,7 +25,7 @@ Bu makalede, Visual Studio kullanarak C++ ' da platformlar arası uygulamalar ge
    > Windows 7 veya Windows Server 2008 R2 kullanıyorsanız, Windows Masaüstü uygulamaları, Android yerel etkinlik uygulamaları ve kitaplıkları ve iOS için uygulamalar ve kod kitaplıkları için kod geliştirebilirsiniz, ancak Windows Mağazası veya UWP uygulamaları kullanamazsınız.
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 - Yükleme gereksinimleri için bkz. [Visual Studio ürün ailesi sistem gereksinimleri](/visualstudio/releases/2019/system-requirements).
 
@@ -60,7 +60,7 @@ Visual Studio Yükleyicisi, C++ iş yüküne **sahip bir mobil geliştirme** iç
 - C++ iOS geliştirme araçları, iOS platformunu hedefleyen C++ kodu oluşturmak için gereklidir.
 
 > [!NOTE]
-> Visual Studio 2015 kullanıyorsanız bkz. [ınstall çoklu platform mobil uygulama geliştirme için Visual C++ (Visual studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015&preserve-view=true)
+> Visual Studio 2015 kullanıyorsanız bkz. [ınstall çoklu platform mobil uygulama geliştirme için Visual C++ (Visual studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=msvc-140&preserve-view=true)
 
 ### <a name="install-the-mobile-development-with-c-workload"></a>C++ iş yüküyle mobil geliştirme 'yi yükler
 
@@ -70,7 +70,7 @@ Visual Studio Yükleyicisi, C++ iş yüküne **sahip bir mobil geliştirme** iç
 
 1. **Iş yükleri** sekmesi seçili olduğunda, aşağı kaydırın ve Visual Studio yükleyicisi C++ iş yüküne **sahip mobil geliştirmeyi** seçin. Bu iş yükü seçildiğinde, C++ geliştirmesi için gereken diğer bileşenler de seçilidir. Aynı anda yüklemek için diğer iş yüklerini ve ayrı bileşenleri de seçebilirsiniz. UWP 'yi de hedefleyen platformlar arası kod oluşturmak için **Evrensel Windows platformu geliştirme** iş yükünü seçin.
 
-1. **Yükleme ayrıntıları** bölmesinde, **C++ ile mobil geliştirme**' ı genişletin. **Isteğe bağlı** bölümünde, NDK, Google Android Emulator, Intel Hardware Accelerated Execution Manager ve IncrediBuild Build Acceleration aracının ek sürümlerini seçebilirsiniz.
+1. **Yükleme ayrıntıları** bölmesinde, **C++ ile mobil geliştirme** ' ı genişletin. **Isteğe bağlı** bölümünde, NDK, Google Android Emulator, Intel Hardware Accelerated Execution Manager ve IncrediBuild Build Acceleration aracının ek sürümlerini seçebilirsiniz.
 
 1. Varsayılan olarak, bir veya daha fazla Android SDK Kurulum bileşeni iş yüküne dahildir. Android SDK ek sürümleri mevcuttur. Yüklemenize bir tane eklemek için, **tek tek bileşenler** sekmesini seçin, sonra seçiminizi yapmak için SDK 'lar **, kitaplıklar ve çerçeveler** bölümüne gidin.
 
@@ -99,13 +99,13 @@ Android SDK öykünücülerini kullanmak için donanım hızlandırmayı ayarlam
 
 ### <a name="to-set-the-paths-for-third-party-tools"></a>Üçüncü taraf araçların yollarını ayarlamak için
 
-1. Visual Studio menü çubuğunda **Araçlar**  >  **Seçenekler**' i seçin.
+1. Visual Studio menü çubuğunda **Araçlar**  >  **Seçenekler** ' i seçin.
 
-1. **Seçenekler** iletişim kutusunda **platformlar arası**  >  **C++**  >  **Android**' i seçin.
+1. **Seçenekler** iletişim kutusunda **platformlar arası**  >  **C++**  >  **Android** ' i seçin.
 
    ![Android araç yolu seçenekleri](../cross-platform/media/cppmdd-options-android.png "Android araç yolu seçenekleri")
 
-1. Bir araç tarafından kullanılan yolu değiştirmek için yolun yanındaki onay kutusunu işaretleyin ve metin kutusunda klasör yolunu düzenleyin. Klasörü seçmek için bir **Konum Seç** iletişim kutusunu açmak için de (**...**) düğmesini kullanabilirsiniz.
+1. Bir araç tarafından kullanılan yolu değiştirmek için yolun yanındaki onay kutusunu işaretleyin ve metin kutusunda klasör yolunu düzenleyin. Klasörü seçmek için bir **Konum Seç** iletişim kutusunu açmak için de ( **...** ) düğmesini kullanabilirsiniz.
 
 1. Özel araç klasörü konumlarını kaydetmek için **Tamam ' ı** seçin.
 

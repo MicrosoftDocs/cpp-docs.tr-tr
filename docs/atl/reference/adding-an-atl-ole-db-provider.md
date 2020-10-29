@@ -1,41 +1,41 @@
 ---
-title: ATL OLE DB sağlayıcısı ekleme
+title: ATL OLE DB Sağlayıcısı Ekleme
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB, adding ATL OLE DB provider to projects
 - ATL projects, adding ATL OLE DB providers
 - ATL OLE DB providers
 ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
-ms.openlocfilehash: 36c07da6249a106836433e127f95258d4ed5b509
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: e593fdbd1c8c48a381cb2941971ebe4e0148965d
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706939"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92923777"
 ---
-# <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB sağlayıcısı ekleme
+# <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB Sağlayıcısı Ekleme
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-ATL OLE DB sağlayıcısı Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil.
+ATL OLE DB sağlayıcı Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-ATL OLE DB sağlayıcısı bir projeye eklemek için bu sihirbazı kullanın. ATL OLE DB sağlayıcısı, bir veri kaynağı, oturum, komut ve satır kümesi sınıfları oluşur. Projenin ATL COM uygulamanın oluşturulmuş gerekir.
+Bir projeye ATL OLE DB sağlayıcısı eklemek için bu sihirbazı kullanın. ATL OLE DB sağlayıcı bir veri kaynağı, oturum, komut ve satır kümesi sınıflarından oluşur. Projenin bir ATL COM uygulaması olarak oluşturulmuş olması gerekir.
 
-## <a name="to-add-an-atl-ole-db-provider-to-your-project"></a>ATL OLE DB sağlayıcısı projenize eklemek için
+## <a name="to-add-an-atl-ole-db-provider-to-your-project"></a>Projenize ATL OLE DB sağlayıcısı eklemek için
 
-1. İçinde **sınıf görünümü**, projeye sağ tıklayın. Kısayol menüsünde **Ekle** ve ardından **sınıfı Ekle**.
+1. **Sınıf görünümü** , projeye sağ tıklayın. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle** ' ye tıklayın.
 
-1. İçinde **Visual C++** klasörünü çift tıklatın **ATL OLE DB sağlayıcısı** simgesi veya seçin ve **açık**.
+1. **Visual C++** klasöründe, **ATL OLE DB sağlayıcı** simgesine çift tıklayın veya seçin ve **Aç** ' a tıklayın.
 
-   ATL OLE DB sağlayıcısı Sihirbazı açılır.
+   ATL OLE DB sağlayıcı Sihirbazı açılır.
 
-1. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB sağlayıcısı Sihirbazı](../../atl/reference/atl-ole-db-provider-wizard.md).
+1. [ATL OLE DB sağlayıcı Sihirbazı](../../atl/reference/atl-ole-db-provider-wizard.md)'nda açıklanan ayarları tanımlayın.
 
-1. Tıklayın **son** yeni oluşturulan OLE DB sağlayıcısı kodunu projenize ekler sihirbazı kapatın.
+1. Sihirbazı kapatmak için **son** ' a tıklayın, böylece yeni oluşturulan OLE DB sağlayıcı kodu projenize eklenir.
 
 ::: moniker-end
 
