@@ -5,12 +5,12 @@ helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 4e67b3fc3363955ae02973847912c021eca95ded
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d9fdd3ddface01f84f6426dd334600cf88b84e7
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219488"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92924826"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 
@@ -28,7 +28,7 @@ Bu izlenecek yolu tamamlamak için aşağıdaki konuları anlamanız gerekir:
 
 - [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu izlenecek yol, aşağıdaki görevlerin nasıl gerçekleştirileceğini göstermektedir:
 
@@ -38,55 +38,55 @@ Bu izlenecek yol, aşağıdaki görevlerin nasıl gerçekleştirileceğini göst
 
 - [Uygulamada file_reader sınıfını kullanma](#useagentclass)
 
-## <a name="creating-the-console-application"></a><a name="createapplication"></a>Konsol uygulaması oluşturma
+## <a name="creating-the-console-application"></a><a name="createapplication"></a> Konsol uygulaması oluşturma
 
 Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir C++ konsol uygulamasının nasıl oluşturulacağı gösterilmektedir. İlk adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir C++ konsol uygulaması oluşturmak için
 
 1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, `BasicAgent` projenin adı olarak girin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri** ' yi seçin. Sonraki sayfada, `BasicAgent` projenin adı olarak girin ve isterseniz proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
-1. **Çözüm Gezgini**' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma özellikleri**  >  **C/C++**  >  **önceden derlenmiş üst**  >  **bilgi üst bilgisi ön** **Create**
+1. **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler** ' i seçin. **Yapılandırma özellikleri**  >  **C/C++**  >  **önceden derlenmiş üst**  >  **bilgi üst bilgisi ön** **Create**
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>Visual Studio 2017 ve önceki sürümlerde bir C++ konsol uygulaması oluşturmak için
 
-1. **Dosya** menüsünde **Yeni**' ye ve ardından **Proje** ' ye tıklayarak **Yeni proje** iletişim kutusunu görüntüleyin.
+1. **Dosya** menüsünde **Yeni** ' ye ve ardından **Proje** ' ye tıklayarak **Yeni proje** iletişim kutusunu görüntüleyin.
 
-1. **Yeni proje** iletişim kutusunda, **proje türleri** bölmesinde **Visual C++** düğümünü seçin ve ardından **Şablonlar** bölmesinde **Win32 konsol uygulaması** ' nı seçin. Proje için bir ad yazın, örneğin, `BasicAgent` ve ardından **Win32 konsol uygulaması sihirbazını**göstermek için **Tamam** ' a tıklayın.
+1. **Yeni proje** iletişim kutusunda, **proje türleri** bölmesinde **Visual C++** düğümünü seçin ve ardından **Şablonlar** bölmesinde **Win32 konsol uygulaması** ' nı seçin. Proje için bir ad yazın, örneğin, `BasicAgent` ve ardından **Win32 konsol uygulaması sihirbazını** göstermek için **Tamam** ' a tıklayın.
 
-1. **Win32 konsol uygulaması Sihirbazı** Iletişim kutusunda **son**' a tıklayın.
+1. **Win32 konsol uygulaması Sihirbazı** Iletişim kutusunda **son** ' a tıklayın.
 
 ::: moniker-end
 
-1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ), aşağıdaki kodu ekleyin:
+1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ), aşağıdaki kodu ekleyin:
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
    Agents. h üstbilgi dosyası, [concurrency:: Agent](../../parallel/concrt/reference/agent-class.md) sınıfının işlevlerini içerir.
 
-1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur**' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
+1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur** ' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
 
 [[Üst](#top)]
 
-## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a>File_reader sınıfı oluşturma
+## <a name="creating-the-file_reader-class"></a><a name="createagentclass"></a> File_reader sınıfı oluşturma
 
 Bu bölümde sınıfının nasıl oluşturulacağı gösterilmektedir `file_reader` . Çalışma zamanı, her aracıyı kendi bağlamında iş gerçekleştirecek şekilde zamanlar. Bu nedenle, işi zaman uyumlu olarak gerçekleştiren, ancak diğer bileşenleriyle zaman uyumsuz olarak etkileşim kuran bir aracı oluşturabilirsiniz. `file_reader`Sınıfı, belirli bir giriş dosyasından verileri okur ve bu dosyadaki verileri belirli bir hedef bileşene gönderir.
 
 #### <a name="to-create-the-file_reader-class"></a>File_reader sınıfını oluşturmak için
 
-1. Projenize yeni bir C++ üst bilgi dosyası ekleyin. Bunu yapmak için **Çözüm Gezgini**' deki **üstbilgi dosyaları** düğümüne sağ tıklayın, **Ekle**' ye ve ardından **Yeni öğe**' ye tıklayın. **Şablonlar** bölmesinde **üst bilgi dosyası (. h)** öğesini seçin. **Yeni öğe Ekle** iletişim kutusunda, `file_reader.h` **ad** kutusuna yazın ve ardından **Ekle**' ye tıklayın.
+1. Projenize yeni bir C++ üst bilgi dosyası ekleyin. Bunu yapmak için **Çözüm Gezgini** ' deki **üstbilgi dosyaları** düğümüne sağ tıklayın, **Ekle** ' ye ve ardından **Yeni öğe** ' ye tıklayın. **Şablonlar** bölmesinde **üst bilgi dosyası (. h)** öğesini seçin. **Yeni öğe Ekle** iletişim kutusunda, `file_reader.h` **ad** kutusuna yazın ve ardından **Ekle** ' ye tıklayın.
 
 1. File_reader. h 'de aşağıdaki kodu ekleyin.
 
@@ -128,7 +128,7 @@ Aşağıdaki örnek file_reader. h öğesinin tüm içeriğini gösterir.
 
 [[Üst](#top)]
 
-## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a>Uygulamada file_reader sınıfını kullanma
+## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a> Uygulamada file_reader sınıfını kullanma
 
 Bu bölümde, `file_reader` bir metin dosyasının içeriğini okumak için sınıfının nasıl kullanılacağı gösterilmektedir. Ayrıca, bu dosya verilerini alan ve Adler-32 sağlama toplamını hesaplayan bir [concurrency:: Call](../../parallel/concrt/reference/call-class.md) nesnesinin nasıl oluşturulacağını gösterir.
 
