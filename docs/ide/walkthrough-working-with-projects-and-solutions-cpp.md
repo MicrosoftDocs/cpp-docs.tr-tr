@@ -7,12 +7,12 @@ helpviewer_keywords:
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 9a27d5fb49fe3576ee1f8d906219127d8b630c4e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 46fd15e184b3a4fb1f84cde3e3207c03c692ad2e
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228667"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921886"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)
 
@@ -30,15 +30,15 @@ C++ dilinin temellerini anladıysanız ve derleyicilerin, bağlayıcının ve ha
 
 Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü için, Visual Studio derleyici ayarlarını belirler ve türüne bağlı olarak, daha sonra değiştirebileceğiniz başlatıcı kodu oluşturur. Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Visual Studio 'nun tercih ettiğiniz sürümüne ilişkin belgeleri görmek için, **Sürüm** seçici denetimini kullanın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir proje oluşturmak için
 
 1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, proje için ad olarak *oyun* girin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri** ' yi seçin. Sonraki sayfada, proje için ad olarak *oyun* girin.
 
    **Konum** açılır listesinde varsayılan konumu kabul edebilir, farklı bir konum girebilir veya projeyi kaydetmek istediğiniz dizine gitmek Için, **tarayıcı** düğmesini seçebilirsiniz.
 
@@ -50,17 +50,17 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ### <a name="to-create-a-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de bir proje oluşturmak için
 
-1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** ' ı genişletin ve açık değilse **Visual C++**' yi seçin.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** ' ı genişletin ve açık değilse **Visual C++** ' yi seçin.
 
-1. Orta bölmedeki yüklü şablonlar listesinde, **Windows konsol uygulaması**' nı seçin.
+1. Orta bölmedeki yüklü şablonlar listesinde, **Windows konsol uygulaması** ' nı seçin.
 
-1. **Ad** kutusuna proje için bir ad girin. Bu örnek için *oyun*girin.
+1. **Ad** kutusuna proje için bir ad girin. Bu örnek için *oyun* girin.
 
    **Konum** açılır listesinde varsayılan konumu kabul edebilir, farklı bir konum girebilir veya projeyi kaydetmek istediğiniz dizine gitmek Için, **tarayıcı** düğmesini seçebilirsiniz.
 
@@ -72,17 +72,17 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ### <a name="to-create-a-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de bir proje oluşturmak için
 
-1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** ' ı genişletin ve açık değilse **Visual C++**' yi seçin.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** ' ı genişletin ve açık değilse **Visual C++** ' yi seçin.
 
-1. Orta bölmedeki yüklü şablonlar listesinde **Win32 konsol uygulaması**' nı seçin.
+1. Orta bölmedeki yüklü şablonlar listesinde **Win32 konsol uygulaması** ' nı seçin.
 
-1. **Ad** kutusuna proje için bir ad girin. Bu örnek için *oyun*girin.
+1. **Ad** kutusuna proje için bir ad girin. Bu örnek için *oyun* girin.
 
    **Konum** açılır listesinde varsayılan konumu kabul edebilir, farklı bir konum girebilir veya projeyi kaydetmek istediğiniz dizine gitmek Için, **tarayıcı** düğmesini seçebilirsiniz.
 
@@ -98,13 +98,13 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
 Çözümünüzde projeleri, dosyaları ve diğer kaynakları düzenlemek ve yönetmek için **Çözüm Gezgini** kullanabilirsiniz.
 
-İzlenecek yolun bu bölümü, projeye bir sınıfın nasıl ekleneceğini gösterir. Sınıfı eklediğinizde, Visual Studio karşılık gelen. h ve. cpp dosyalarını ekler. Sonuçları **Çözüm Gezgini**görebilirsiniz.
+İzlenecek yolun bu bölümü, projeye bir sınıfın nasıl ekleneceğini gösterir. Sınıfı eklediğinizde, Visual Studio karşılık gelen. h ve. cpp dosyalarını ekler. Sonuçları **Çözüm Gezgini** görebilirsiniz.
 
 ### <a name="to-add-a-class-to-a-project"></a>Bir projeye sınıf eklemek için
 
-1. **Çözüm Gezgini** penceresi Visual Studio 'da görüntülenmiyorsa, menü çubuğunda, Çözüm Gezgini **görüntüle**' yi seçin  >  **Solution Explorer**.
+1. **Çözüm Gezgini** penceresi Visual Studio 'da görüntülenmiyorsa, menü çubuğunda, Çözüm Gezgini **görüntüle** ' yi seçin  >  **Solution Explorer** .
 
-1. **Çözüm Gezgini**, **oyun** projesini seçin. Menü çubuğunda **Proje**  >  **sınıfı Ekle**' yi seçin.
+1. **Çözüm Gezgini** , **oyun** projesini seçin. Menü çubuğunda **Proje**  >  **sınıfı Ekle** ' yi seçin.
 
 1. **Sınıf Ekle** iletişim kutusunda, **sınıf adı** kutusuna *Cardgame* yazın. Varsayılan dosya adlarını ve ayarlarını değiştirmeyin. **Tamam** düğmesini seçin.
 
@@ -124,7 +124,7 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
 
       `Cardgame();`
 
-      Oluşturucuyu **`int`** , *oynatıcı adlı oyuncu*türünde bir parametre alacak şekilde değiştirin.
+      Oluşturucuyu **`int`** , *oynatıcı adlı oyuncu* türünde bir parametre alacak şekilde değiştirin.
 
       <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#101](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_2.h)]-->
       `Cardgame(int players);`
@@ -182,7 +182,7 @@ Proje oluşturmak için önce bir proje türü şablonu seçin. Her proje türü
     ```
 
    > [!NOTE]
-   > Kod girerken otomatik tamamlamayı kullanabilirsiniz. Örneğin, bu kodu klavyeye girerseniz, *pl* veya *Sigortalanan top* girebilir ve ardından **CTRL** + **boşluk**tuşlarına basabilirsiniz. Otomatik Tamamlama `players` `totalParticipants` sizin için veya sizin için girer.
+   > Kod girerken otomatik tamamlamayı kullanabilirsiniz. Örneğin, bu kodu klavyeye girerseniz, *pl* veya *Sigortalanan top* girebilir ve ardından **CTRL** + **boşluk** tuşlarına basabilirsiniz. Otomatik Tamamlama `players` `totalParticipants` sizin için veya sizin için girer.
 
 ## <a name="add-test-code-to-your-main-function"></a>Ana işlevinizde test kodu ekleyin
 
@@ -227,7 +227,7 @@ Sonra, projeyi derleyin ve uygulamayı çalıştırın.
 
 ### <a name="to-build-and-run-the-project"></a>Projeyi derleyip çalıştırmak için
 
-1. Menü **çubuğunda Build**  >  **Build Solution**öğesini seçin.
+1. Menü **çubuğunda Build**  >  **Build Solution** öğesini seçin.
 
    Bir **derlemeden çıkış çıkış penceresinde görüntülenir** . Derlemeniz başarılı olursa çıkışın aşağıdakine benzer olması gerekir:
 
@@ -245,7 +245,7 @@ Sonra, projeyi derleyin ve uygulamayı çalıştırın.
 
    Derlemeniz başarılı olmadıysa, kodunuzu önceki adımlarda gösterilen kodla karşılaştırın.
 
-1. Projeyi çalıştırmak için menü çubuğunda **hata ayıklama**  >  **başlatma hatası olmadan Başlat**' ı seçin. Bir konsol penceresi görünmelidir ve çıktının şöyle olması gerekir:
+1. Projeyi çalıştırmak için menü çubuğunda **hata ayıklama**  >  **başlatma hatası olmadan Başlat** ' ı seçin. Bir konsol penceresi görünmelidir ve çıktının şöyle olması gerekir:
 
     ```Output
     4 players have started a new game.  There are now 4 players in total.

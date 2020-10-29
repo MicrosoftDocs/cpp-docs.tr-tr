@@ -3,20 +3,20 @@ title: Visual Studio 'da CMake Linux projesi oluşturma
 description: Visual Studio 'da Linux CMake projesi oluşturma
 ms.date: 08/06/2020
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 5753dbb37c11686becb3e141261284b68468a3bc
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8a960f89274fbbf235b88fdcd787ee6de8ab988b
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507950"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921808"
 ---
 # <a name="create-a-cmake-linux-project-in-visual-studio"></a>Visual Studio 'da CMake Linux projesi oluşturma
 
-::: moniker range="vs-2015"
-Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. Bu sürümlerin belgelerini görmek için, içindekiler tablosunun üstünde bulunan **Sürüm** açılan listesini **Visual Studio 2017** veya **Visual Studio 2019**olarak ayarlayın.
+::: moniker range="msvc-140"
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. Bu sürümlerin belgelerini görmek için, içindekiler tablosunun üstünde bulunan **Sürüm** açılan listesini **Visual Studio 2017** veya **Visual Studio 2019** olarak ayarlayın.
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Platformlar arası olan veya açık kaynak oluşturacak projeler için CMake kullanmanızı öneririz. CMake projelerini Windows, Linux için Windows alt sistemi (WSL) ve uzak sistemler üzerinde aynı kaynak kodu oluşturmak ve hata ayıklamak için kullanabilirsiniz.
 
@@ -33,7 +33,7 @@ Ayrıca, aşağıdakilerin uzak makinede yüklü olduğundan emin olun:
 - dokja-derleme (Visual Studio 2019 veya üzeri)
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 Visual Studio 'da CMake desteği, CMake 3,8 ' de sunulan sunucu modu desteğini gerektirir. Microsoft tarafından sağlanmış bir CMake değişkeni için, en son önceden oluşturulmuş ikilileri adresinden indirin [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases) .
 
 İkililer ' de yüklenir `~/.vs/cmake` . İkili dosyaları dağıttıktan sonra projeniz otomatik olarak yeniden oluşturur. ÜzerindeCMakeSettings.jsalan tarafından belirtilen CMake `cmakeExecutable` geçersiz ( *CMakeSettings.json* yok veya desteklenmeyen bir sürümdür) ve önceden oluşturulmuş ikili dosyalar varsa, Visual Studio `cmakeExecutable` önceden oluşturulmuş ikilileri yoksayar ve kullanır.
@@ -41,7 +41,7 @@ Visual Studio 'da CMake desteği, CMake 3,8 ' de sunulan sunucu modu desteğini 
 Visual Studio 2017, sıfırdan CMake projesi oluşturamaz, ancak sonraki bölümde açıklandığı gibi var olan bir CMake projesini içeren bir klasörü açabilirsiniz.
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 Visual Studio 2019 ' i, uzak bir Linux sisteminde veya WSL 'de derlemek ve hata ayıklamak için kullanabilir ve CMake bu sistemde çağrılacaktır. CMake sürüm 3,14 veya üzeri hedef makinede yüklü olmalıdır.
 
 Hedef makinede CMake 'in son sürümüne sahip olduğundan emin olun. Genellikle, bir dağıtımın varsayılan paket yöneticisi tarafından sunulan sürüm, Visual Studio için gereken tüm özellikleri desteklemeye yetecek kadar güncel değildir. Visual Studio 2019, Linux sisteminde bir CMake son sürümünün yüklü olup olmadığını algılar. Hiçbiri bulunmazsa, Visual Studio, düzenleyici bölmesinin üst kısmında bir bilgi çubuğu gösterir. Sizin için CMake 'i yüklemenizi sağlar [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases) .
@@ -52,8 +52,8 @@ Visual Studio 2019 ile sıfırdan CMake projesi oluşturabilir veya var olan bir
 
 Visual Studio 2019 'de yeni bir Linux CMake projesi oluşturmak için:
 
-1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın.
-1. **Dili** **C++** olarak ayarlayın ve "CMake" araması yapın. Ardından **İleri**' yi seçin. Bir **ad** ve **konum**girin ve **Oluştur**' u seçin.
+1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N** tuşlarına basın.
+1. **Dili** **C++** olarak ayarlayın ve "CMake" araması yapın. Ardından **İleri** ' yi seçin. Bir **ad** ve **konum** girin ve **Oluştur** ' u seçin.
 
 Alternatif olarak, Visual Studio 2019 ' de kendi CMake projenizi açabilirsiniz. Aşağıdaki bölümde açıklanmaktadır.
 
@@ -66,13 +66,13 @@ Visual Studio 2019 ' de CMake betiklerinizi anlayabilmeniz, düzenlemeniz ve yaz
 - [CMake projelerinde dosyaları ve hedefleri kolayca ekleyin, kaldırın ve yeniden adlandırın](https://devblogs.microsoft.com/cppblog/easily-add-remove-and-rename-files-and-targets-in-cmake-projects/)
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="open-a-cmake-project-folder"></a>CMake proje klasörü aç
 
 Var olan bir CMake projesi içeren bir klasörü açtığınızda, Visual Studio IntelliSense ve yapıları otomatik olarak yapılandırmak için CMake önbelleğindeki değişkenleri kullanır. Yerel yapılandırma ve hata ayıklama ayarları JSON dosyalarında depolanır. İsteğe bağlı olarak, bu dosyaları Visual Studio kullanan diğer kullanıcılarla paylaşabilirsiniz.
 
-Visual Studio *CMakeLists.txt* dosyalarını değiştirmez. Bu, aynı proje üzerinde çalışan başkalarının mevcut araçlarını kullanmaya devam etmesine olanak tanır. *CMakeLists.txt*düzenlemeleri kaydettiğinizde veya bazı durumlarda *CMakeSettings.js*için, Visual Studio önbelleği yeniden üretin. **Mevcut bir önbellek** yapılandırması kullanıyorsanız, Visual Studio önbelleği değiştirmez.
+Visual Studio *CMakeLists.txt* dosyalarını değiştirmez. Bu, aynı proje üzerinde çalışan başkalarının mevcut araçlarını kullanmaya devam etmesine olanak tanır. *CMakeLists.txt* düzenlemeleri kaydettiğinizde veya bazı durumlarda *CMakeSettings.js* için, Visual Studio önbelleği yeniden üretin. **Mevcut bir önbellek** yapılandırması kullanıyorsanız, Visual Studio önbelleği değiştirmez.
 
 Visual Studio 'da CMake desteği hakkında genel bilgi için bkz. [Visual Studio 'Da CMake projeleri](../build/cmake-projects-in-visual-studio.md). Devam etmeden önce bunu okuyun.
 
@@ -91,7 +91,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-*CMakeLists.txt*:
+*CMakeLists.txt* :
 
 ```txt
 cmake_minimum_required(VERSION 3.8)

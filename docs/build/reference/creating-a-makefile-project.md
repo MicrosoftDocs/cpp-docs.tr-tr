@@ -6,23 +6,23 @@ f1_keywords:
 helpviewer_keywords:
 - Makefile projects [C++]
 ms.assetid: dd077af3-97a8-48fb-baaa-cf7e07ddef61
-ms.openlocfilehash: a712b6da89433b9db6de9f2a676bf6e89d2e0e6e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 69e6a2ff0d7e82f3bc431a28f57127e8d9a3aa4d
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560834"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921535"
 ---
 # <a name="create-a-c-makefile-project"></a>C++ Makefile projesi oluşturma
 
-*Derleme görevleri* dosyası, C++ kaynak kodu dosyalarını derleyip bağlama (veya *derleme*) ile ilgili yönergeler içeren bir metin dosyasıdır. Bir *Make* programı, derleme görevleri dosyasını okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları bir yürütülebilir dosya yapmak için çağırır. Microsoft 'un *Make* programı uygulamasına [NMAKE](nmake-reference.md)adı verilir.
+*Derleme görevleri* dosyası, C++ kaynak kodu dosyalarını derleyip bağlama (veya *derleme* ) ile ilgili yönergeler içeren bir metin dosyasıdır. Bir *Make* programı, derleme görevleri dosyasını okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları bir yürütülebilir dosya yapmak için çağırır. Microsoft 'un *Make* programı uygulamasına [NMAKE](nmake-reference.md)adı verilir.
 
 Mevcut bir derleme görevleri dosyası projeniz varsa, Visual Studio IDE 'de kod ve/veya hata ayıklama yapmak istiyorsanız, bu seçeneklere sahip olursunuz:
 
 - Visual Studio 'da, Visual Studio 'nun IntelliSense için kullanacağı bir. vcxproj dosyasını yapılandırmak için mevcut derleme görevleri dosyasını kullanan bir derleme görevleri dosyası projesi oluşturun. (Yerel bir MSBuild projesiyle aldığınız tüm IDE özelliklerine sahip değilsiniz.) Aşağıdaki [bir derleme görevleri dosyası projesi oluşturmak için](#create_a_makefile_project) bölümüne bakın.
 - Kaynak kodunuzda yerel bir MSBuild projesi oluşturmak için **varolan kod dosyalarından yeni proje oluşturma** Sihirbazı 'nı kullanın. Özgün derleme görevleri dosyası bundan sonra kullanılmaz. Daha fazla bilgi için bkz. [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../how-to-create-a-cpp-project-from-existing-code.md).
-- **Visual Studio 2017 ve üzeri**: MSBuild sisteminin herhangi bir katılımı olmadan bir derleme görevleri dosyası projesini düzenlemek ve oluşturmak Için **klasörü aç** özelliğini kullanın. Daha fazla bilgi için bkz. [C++ Için klasör projelerini açma](../open-folder-projects-cpp.md).
-- **Visual Studio 2019 ve üzeri**: LINUX için UNIX makefile projesi oluşturun.
+- **Visual Studio 2017 ve üzeri** : MSBuild sisteminin herhangi bir katılımı olmadan bir derleme görevleri dosyası projesini düzenlemek ve oluşturmak Için **klasörü aç** özelliğini kullanın. Daha fazla bilgi için bkz. [C++ Için klasör projelerini açma](../open-folder-projects-cpp.md).
+- **Visual Studio 2019 ve üzeri** : LINUX için UNIX makefile projesi oluşturun.
 
 ## <a name="a-namecreate_a_makefile_project-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> Derleme görevleri dosyası projesi şablonu ile bir Makefile projesi oluşturmak için
 
@@ -34,19 +34,19 @@ Varsayılan olarak, makefile projesi Çözüm Gezgini dosya görüntülemez. Der
 
 Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluşturduğu ad üzerinde hiçbir etkisi yoktur; yalnızca bir amaç belirtir. Derleme görevleri dosyası derleme işlemini hala denetler ve derleme hedeflerini belirler.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-a-makefile-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir Makefile projesi oluşturmak için
 
 1. Visual Studio ana menüsünde **Dosya**  >  **Yeni**  >  **Proje** ' yi seçin ve arama kutusuna "Makefile" yazın. Ya da **Yeni proje** iletişim kutusunda **Visual C++**  >  **General** (Visual Studio 2015) veya **Other** (Visual Studio 2017) öğesini genişletin ve ardından Windows veya Linux 'un hedeflemesine bağlı olarak iki seçenekten istediğinizi seçin.
 
-1. **Yalnızca Windows**: **hata ayıklama yapılandırma ayarları** sayfasında hata ayıklama ve perakende Derlemeleriyle ilgili komut, çıkış, temizleme ve yeniden oluşturma bilgilerini sağlayın. Bir yayın yapılandırması için farklı ayarlar belirtmek istiyorsanız **İleri** ' ye tıklayın.
+1. **Yalnızca Windows** : **hata ayıklama yapılandırma ayarları** sayfasında hata ayıklama ve perakende Derlemeleriyle ilgili komut, çıkış, temizleme ve yeniden oluşturma bilgilerini sağlayın. Bir yayın yapılandırması için farklı ayarlar belirtmek istiyorsanız **İleri** ' ye tıklayın.
 
-1. İletişim kutusunu kapatmak ve **Çözüm Gezgini**yeni oluşturulan projeyi açmak için **son** ' a tıklayın.
+1. İletişim kutusunu kapatmak ve **Çözüm Gezgini** yeni oluşturulan projeyi açmak için **son** ' a tıklayın.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### <a name="to-create-a-makefile-project-in-visual-studio-2015-or-visual-studio-2017"></a>Visual Studio 2015 veya Visual Studio 2017 ' de bir Makefile projesi oluşturmak için
 
@@ -54,7 +54,7 @@ Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluştu
 
 1. **Uygulama ayarları** sayfasında hata ayıklama ve perakende Derlemeleriyle ilgili komut, çıkış, temizleme ve yeniden oluşturma bilgilerini sağlayın.
 
-1. Sihirbazı kapatmak için **son** ' a tıklayın ve yeni oluşturulan projeyi **Çözüm Gezgini**açın.
+1. Sihirbazı kapatmak için **son** ' a tıklayın ve yeni oluşturulan projeyi **Çözüm Gezgini** açın.
 
 ::: moniker-end
 

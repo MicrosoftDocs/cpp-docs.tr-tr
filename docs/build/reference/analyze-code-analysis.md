@@ -12,20 +12,20 @@ helpviewer_keywords:
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-ms.openlocfilehash: e970872e89132aed52190b8688f2cdaccab5ea6f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: dcf44f1d282a9dd39205aecb4e75b59a6e8481f9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500080"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919104"
 ---
 # <a name="analyze-code-analysis"></a>`/analyze` (Kod analizi)
 
 Kod analizini ve denetim seçeneklerini etkinleştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 > **`/analyze`**\
 > **`/analyze-`**\
@@ -42,7 +42,7 @@ Kod analizini ve denetim seçeneklerini etkinleştirir.
 > **`/analyze:WX-`**
 
 ::: moniker-end
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 > **`/analyze`**\
 > **`/analyze-`**\
@@ -68,10 +68,10 @@ Varsayılan modda analizini etkinleştirir. Analiz çıktısı konsola veya Visu
 Ayrıntılı çözümleyici sonuçları, kaynak dosya ve uzantısı ile aynı temel adı taşıyan bir dosyaya XML olarak yazılır *`.pftlog`* . **`/analyze:autolog-`** Bu günlük dosyasını devre dışı bırakır.
 
 **`/analyze:autolog:ext`***uzantı*\
-Ayrıntılı çözümleyici sonuçları, kaynak dosya ve *uzantı*uzantısıyla aynı temel ada sahip BIR dosyaya XML olarak yazılır.
+Ayrıntılı çözümleyici sonuçları, kaynak dosya ve *uzantı* uzantısıyla aynı temel ada sahip BIR dosyaya XML olarak yazılır.
 
 **`/analyze:log`***dosya adı*\
-Ayrıntılı çözümleyici sonuçları, *dosya adıyla belirtilen*dosyaya XML olarak yazılır.
+Ayrıntılı çözümleyici sonuçları, *dosya adıyla belirtilen* dosyaya XML olarak yazılır.
 
 **`/analyze:max_paths`***sayı*\
 Bu seçenekle kullanılan *Number* parametresi, çözümlenecek en fazla kod yolu sayısını belirtir. Bu parametre belirtilmemişse, sayı varsayılan olarak 256 ' dir. Daha büyük değerler daha kapsamlı denetim oluşmasına neden olur, ancak analiz daha uzun sürebilir.
@@ -82,14 +82,14 @@ Genellikle, derleyici kod oluşturur ve çözümleyici 'yi çalıştırdıktan s
 **`/analyze:plugin`***eklenti-dll*\
 Kod Analizi çalıştırmalarının bir parçası olarak belirtilen ön Fast eklentisine izin vermez.
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 LocalEspC.dll, C261XX uyarı aralığında eşzamanlılık ile ilgili kod analizi denetimleri uygulayan eklentidir. Örneğin, [C26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md),...,  [C26167](../../code-quality/c26167.md).
 
 LocalEspC.dll çalıştırmak için, bu derleyici seçeneğini kullanın: **`/analyze:plugin LocalEspC.dll`**
 
 ::: moniker-end
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 ConcurrencyCheck.dll, C261XX uyarı aralığında eşzamanlılık ile ilgili kod analizi denetimleri uygular. Örneğin, [C26100](../../code-quality/c26100.md), [C26101](../../code-quality/c26101.md),...,  [C26167](../../code-quality/c26167.md).
 
@@ -114,7 +114,7 @@ Sonra bu derleyici seçeneğini kullanın: **`/analyze:plugin EspXEngine.dll`** 
 **`/analyze:quiet`**\
 Çözümleyici çıkışını konsola veya Visual Studio **çıktı** penceresine kapatır.
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 **`/analyze:ruleset`***file_path. RuleSet*\
 , Sizin oluşturabileceğiniz özel kural kümeleri de dahil olmak üzere hangi kural kümelerinin analiz edeceğinizi belirtmenize izin verir. Bu anahtar ayarlandığında, kural altyapısı daha etkilidir, çünkü çalıştırılmadan önce belirtilen kural kümesini üye olmayanları hariç tutar. Aksi halde, motor tüm kuralları denetler.
@@ -160,4 +160,4 @@ Daha fazla bilgi için bkz. c [/c++ Için kod analizine genel bakış](../../cod
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)\
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

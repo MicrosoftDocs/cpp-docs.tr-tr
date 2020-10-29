@@ -3,18 +3,18 @@ title: C++ uygunluk iyileştirmeleri
 ms.date: 08/04/2020
 description: Visual Studio 'da Microsoft C++, C++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
 ms.technology: cpp-language
-ms.openlocfilehash: 3cf06b092b79068b22e62dfdbbcfbd2c2cf5ad91
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fc88406a3d2e291d06e01c3e92261b8dfc624ced
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500250"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921431"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
 Microsoft C++ her sürümde uyumluluk geliştirmeleri ve hata düzeltmeleri yapar. Bu makalede, ana sürüme ve ardından sürüme göre iyileştirmeler listelenmektedir. Ayrıca, sürüme göre önemli hata düzeltmelerini de listeler. Belirli bir sürümdeki değişikliklere doğrudan geçmek için **Bu makale** listesinde öğesini kullanın.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="conformance-improvements-in-visual-studio-2019-rtw-version-160"></a><a name="improvements_160"></a> Visual Studio 2019 RTW (sürüm 16,0) ile uyumluluk geliştirmeleri
 
@@ -341,7 +341,7 @@ std::equal(std::begin(a), std::end(a), std::begin(b), std::end(b));
 
 ### <a name="effect-of-defining-spaceship-operator-on--and-"></a>Ve üzerinde Spaceship işlecinin tanımlanmasıyla ilgili efekt `==``!=`
 
-Spaceship işlecinin ( **`<=>`** ) tek başına tanımı, **`==`** **`!=`** Spaceship işleci **`= default`** ([P1185R2](https://wg21.link/p1185r2)) olarak işaretlenmedikçe veya içeren ifadeleri artık yeniden yazmayacaktır. Aşağıdaki örnek Visual Studio 2019 RTW ve sürüm 16,1 ' de derlenir, ancak Visual Studio 2019 sürüm 16,2 ' te C2678 üretir:
+Spaceship işlecinin ( **`<=>`** ) tek başına tanımı, **`==`** **`!=`** Spaceship işleci **`= default`** ( [P1185R2](https://wg21.link/p1185r2)) olarak işaretlenmedikçe veya içeren ifadeleri artık yeniden yazmayacaktır. Aşağıdaki örnek Visual Studio 2019 RTW ve sürüm 16,1 ' de derlenir, ancak Visual Studio 2019 sürüm 16,2 ' te C2678 üretir:
 
 ```cpp
 #include <compare>
@@ -1066,7 +1066,7 @@ Her iki aşırı yükleme de bu bağımsız değişken listesiyle eşleştiğind
 
 ### <a name="definition-of-is-trivially-copyable"></a>Tanımı *, üç kopyalanabilir*
 
-C++ 20 ' nin tanımı, *üç aylık kopyalanabilir olarak*değiştirildi. Bir sınıfta tam tür olan statik olmayan bir veri üyesi olduğunda **`volatile`** , bu, derleyicinin ürettiği kopyalama veya taşıma oluşturucusunun ya da kopyalama ya da taşıma işlecinin önemsiz olmayan bir kopyasına sahip olduğu anlamına gelir. C++ standart Komitesi bu değişikliği bir hata raporu olarak daha etkin bir şekilde uyguladı. MSVC ' de, derleyici davranışı veya gibi farklı dil modlarında değişmez **`/std:c++14`** **`/std:c++latest`** .
+C++ 20 ' nin tanımı, *üç aylık kopyalanabilir olarak* değiştirildi. Bir sınıfta tam tür olan statik olmayan bir veri üyesi olduğunda **`volatile`** , bu, derleyicinin ürettiği kopyalama veya taşıma oluşturucusunun ya da kopyalama ya da taşıma işlecinin önemsiz olmayan bir kopyasına sahip olduğu anlamına gelir. C++ standart Komitesi bu değişikliği bir hata raporu olarak daha etkin bir şekilde uyguladı. MSVC ' de, derleyici davranışı veya gibi farklı dil modlarında değişmez **`/std:c++14`** **`/std:c++latest`** .
 
 Yeni davranışa bir örnek aşağıda verilmiştir:
 
@@ -1119,7 +1119,7 @@ int main() {
 
 ### <a name="nullptr_t-is-only-convertible-to-bool-as-a-direct-initialization"></a>`nullptr_t` yalnızca `bool` doğrudan başlatma olarak dönüştürülebilir
 
-C++ 11 ' de, **`nullptr`** yalnızca **`bool`** *doğrudan dönüştürme*olarak dönüştürülebilir; Örneğin, bir **`bool`** örgü Başlatıcı listesi kullanarak bir başlattığınızda. Bu kısıtlama hiçbir şekilde MSVC tarafından zorlanmaz. MSVC artık kuralı uygular [`/permissive-`](../build/reference/permissive-standards-conformance.md) . Örtük dönüştürmeler artık hatalı biçimlendirilmiş olarak tanılanıyor. Öğesine bağlama dönüştürmeye **`bool`** hala izin verilir, çünkü doğrudan başlatma `bool b(nullptr)` geçerli olur.
+C++ 11 ' de, **`nullptr`** yalnızca **`bool`** *doğrudan dönüştürme* olarak dönüştürülebilir; Örneğin, bir **`bool`** örgü Başlatıcı listesi kullanarak bir başlattığınızda. Bu kısıtlama hiçbir şekilde MSVC tarafından zorlanmaz. MSVC artık kuralı uygular [`/permissive-`](../build/reference/permissive-standards-conformance.md) . Örtük dönüştürmeler artık hatalı biçimlendirilmiş olarak tanılanıyor. Öğesine bağlama dönüştürmeye **`bool`** hala izin verilir, çünkü doğrudan başlatma `bool b(nullptr)` geçerli olur.
 
 Çoğu durumda, **`nullptr`** **`false`** Bu örnekte gösterildiği gibi, hatası ile değiştirilerek düzeltilebilir:
 
@@ -1566,7 +1566,7 @@ Bu tür değişkenler, içinde kullanıldıkları aynı çeviri biriminde tanım
 
 C++ 20 ' den önceki C++ standartları ' nda, türetilmiş bir sınıftan taban sınıfa dönüştürme, türetilmiş sınıfın bir bütün sınıf türü olmasını gerektirmez. C++ standart Komitesi, C++ dilinin tüm sürümleri için geçerli olan geriye dönük etkin bir hata raporu değişikliğini onayladı. Bu değişiklik, `std::is_base_of` türetilmiş sınıfın bir bütün sınıf türü olmasını gerektiren gibi tür nitelikleri ile dönüştürme işlemini hizalar.
 
-Aşağıda bir örnek verilmiştir:
+İşte bir örnek:
 
 ```cpp
 template<typename A, typename B>
@@ -1617,7 +1617,7 @@ void f(E e) {
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 ## <a name="conformance-improvements-in-visual-studio-2017-rtw-version-150"></a><a name="improvements_150"></a> Visual Studio 2017 RTW (sürüm 15,0) ile uyumluluk geliştirmeleri
 
@@ -1645,7 +1645,7 @@ için ileti parametresi **`static_assert`** isteğe bağlıdır. Daha fazla bilg
 
 ### <a name="generalized-range-based-for-loops"></a>For döngüleri için genelleştirilmiş Aralık tabanlı
 
-Aralık tabanlı for döngüleri artık bunu gerektirmez `begin()` ve `end()` aynı türdeki nesneleri döndürmelidir. Bu değişiklik `end()` , [Range-v3](https://github.com/ericniebler/range-v3) içindeki aralıklar tarafından kullanılan bir Sentinel, ancak tam olarak yayımlanmış olmayan aralıklar teknik belirtiminde dönmesini sağlar. Daha fazla bilgi için bkz. [Aralık tabanlı `for` döngüyü Genelleştirme](https://wg21.link/p0184r0).
+Aralık tabanlı for döngüleri artık bunu gerektirmez `begin()` ve `end()` aynı türdeki nesneleri döndürmelidir. Bu değişiklik `end()` , [Range-v3](https://github.com/ericniebler/range-v3) içindeki aralıklar tarafından kullanılan bir Sentinel, ancak tam olarak yayımlanmış olmayan aralıklar teknik belirtiminde dönmesini sağlar. Daha fazla bilgi için bkz. [Range-Based `for` döngüsünü Genelleştirme](https://wg21.link/p0184r0).
 
 ## <a name="conformance-improvements-in-153"></a><a name="improvements_153"></a> 15,3 sürümündeki uyumluluk geliştirmeleri
 
@@ -3357,7 +3357,7 @@ public:
 
 ### <a name="offsetof-with-constant-expressions"></a>`offsetof` Sabit ifadelerle
 
-[OffsetOf](../c-runtime-library/reference/offsetof-macro.md) , geleneksel olarak [reinterpret_cast](../cpp/reinterpret-cast-operator.md)gerektiren bir makro kullanılarak uygulanmıştır. Bu kullanım, sabit bir ifade gerektiren bağlamlarda geçersizdir, ancak Microsoft C++ derleyicisinde geleneksel olarak izin verilir. `offsetof`Standart kitaplığın bir parçası olarak gönderilen makro bir derleyici iç (**__builtin_offsetof**) kullanır, ancak pek çok kişi makro eli kullanarak kendi kendilerini tanımlar `offsetof` .
+[OffsetOf](../c-runtime-library/reference/offsetof-macro.md) , geleneksel olarak [reinterpret_cast](../cpp/reinterpret-cast-operator.md)gerektiren bir makro kullanılarak uygulanmıştır. Bu kullanım, sabit bir ifade gerektiren bağlamlarda geçersizdir, ancak Microsoft C++ derleyicisinde geleneksel olarak izin verilir. `offsetof`Standart kitaplığın bir parçası olarak gönderilen makro bir derleyici iç ( **__builtin_offsetof** ) kullanır, ancak pek çok kişi makro eli kullanarak kendi kendilerini tanımlar `offsetof` .
 
 Visual Studio 2017 sürüm 15,8 ' de, derleyici, **`reinterpret_cast`** Standart C++ davranışına uyum sağlamak için bu işleçlerin varsayılan modda görünebilen alanı kısıtlar. Altında [`/permissive-`](../build/reference/permissive-standards-conformance.md) kısıtlamalar bile daha sıkı bir şekilde yapılır. `offsetof`Sabit ifadeler gerektiren bir konum sonucunun kullanılması, uyarı C4644 veya C2975 veren koda neden olabilir `usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead` `invalid template argument, expected compile-time constant expression` .
 
@@ -3643,7 +3643,7 @@ Hatayı önlemek için, **`constexpr`** niteleyiciyi işlevin açık örneklemes
 
 ::: moniker-end
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 ## <a name="c-conformance-improvements-in-visual-studio-2015"></a>Visual Studio 2015 ' de C++ uyumluluk geliştirmeleri
 

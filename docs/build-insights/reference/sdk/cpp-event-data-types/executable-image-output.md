@@ -1,6 +1,6 @@
 ---
-title: ExecutableImageOutput sınıfı
-description: C++ Build Insights SDK ExecutableImageOutput sınıf başvurusu.
+title: Executableımageoutput sınıfı
+description: C++ derleme öngörüleri SDK Yürütülebilirımageoutput sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 834689a3605b729260f2d4c925396ee1af1bb705
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bf6bb9790dabc39d1ed6baa417d5dc3bf72ed5e6
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324950"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920729"
 ---
-# <a name="executableimageoutput-class"></a>ExecutableImageOutput sınıfı
+# <a name="executableimageoutput-class"></a>Executableımageoutput sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `ExecutableImageOutput` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output) bir olayı eşleştirmek için kullanın.
+`ExecutableImageOutput`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output) bir olayla eşleştirmek için kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ExecutableImageOutput : public FileOutput
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Dosya Çıktısı](file-output.md) taban sınıfından devralınan üyelerle `ExecutableImageOutput` birlikte, sınıf aşağıdaki üyeleri içerir:
+[Dosya çıkışı](file-output.md) temel sınıfından devralınan üyelerle birlikte, `ExecutableImageOutput` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[ÇalıştırılabilirImageOutput](#executable-image-output)
+[ExecutableImageOutput](#executable-image-output)
 
-## <a name="executableimageoutput"></a><a name="executable-image-output"></a>ÇalıştırılabilirImageOutput
+## <a name="executableimageoutput"></a><a name="executable-image-output"></a> Executableımageoutput
 
 ```cpp
 ExecutableImageOutput(const RawEvent& event);
@@ -53,7 +53,7 @@ ExecutableImageOutput(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 [EXECUTABLE_IMAGE_OUTPUT](../event-table.md#executable-image-output) bir olay.
 
 ::: moniker-end

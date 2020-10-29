@@ -1,6 +1,6 @@
 ---
-title: InvocationGroup sınıfı
-description: C++ Build Insights SDK InvocationGroup sınıf başvurusu.
+title: Invocationgroup sınıfı
+description: C++ Build Insights SDK 'Sı ınvocationgroup sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ff5a73d5304a21c314c0fc5ce442e0ffc23b28fd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1a8d4786a228ab25551ee36ce22637d44dc07307
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324685"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920638"
 ---
-# <a name="invocationgroup-class"></a>InvocationGroup sınıfı
+# <a name="invocationgroup-class"></a>Invocationgroup sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `InvocationGroup` MatchEventStack ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [MatchEventStack](../functions/match-event-stack.md) [DERLEYICI](../event-table.md#compiler) ve [LINKER](../event-table.md#linker) olaylarının bir karışımını içeren grupları eşleştirmek için kullanın.
+`InvocationGroup`Sınıfı, [Matcheventstack](../functions/match-event-stack.md) ve [Matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [Derleyici](../event-table.md#compiler) ve [bağlayıcı](../event-table.md#linker) olaylarının bir karışımını içeren grupları eşleştirmek için bunu kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class InvocationGroup : public EventGroup<Invocation>
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[OlayGrubu\<Çağırma\> ](event-group.md) taban sınıfından devralınan üyelerle `InvocationGroup` birlikte, sınıf aşağıdaki üyeleri içerir:
+Kendi [EventGroup \<Invocation\> ](event-group.md) temel sınıfından devralınan üyelerle birlikte, `InvocationGroup` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Çağrı Grubu](#invocation-group)
+[InvocationGroup](#invocation-group)
 
-## <a name="invocationgroup"></a><a name="invocation-group"></a>Çağrı Grubu
+## <a name="invocationgroup"></a><a name="invocation-group"></a> Incationgroup
 
 ```cpp
 InvocationGroup(std::deque<Invocation>&& group);
@@ -53,7 +53,7 @@ InvocationGroup(std::deque<Invocation>&& group);
 
 ### <a name="parameters"></a>Parametreler
 
-*Grup*\
-[DERLEYICI](../event-table.md#compiler) ve [LINKER](../event-table.md#linker) olaylarının bir karışımını içeren bir grup.
+*grubu*\
+[Derleyici](../event-table.md#compiler) ve [bağlayıcı](../event-table.md#linker) olaylarının karışımını içeren bir grup.
 
 ::: moniker-end

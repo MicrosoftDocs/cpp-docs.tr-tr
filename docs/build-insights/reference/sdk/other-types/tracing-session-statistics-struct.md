@@ -9,21 +9,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c1db302d9e816591624f0fc63633351d32684097
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 7135c49bdf95ef5ba39db090c95ad46d266d8f65
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742768"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919663"
 ---
 # <a name="tracing_session_statistics-structure"></a>TRACING_SESSION_STATISTICS yapısı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `TRACING_SESSION_STATISTICS`Yapı, toplanan bir izleme üzerinde istatistikleri açıklar. Bir izleme oturumu durdurulduğunda alanları ayarlanır.
 

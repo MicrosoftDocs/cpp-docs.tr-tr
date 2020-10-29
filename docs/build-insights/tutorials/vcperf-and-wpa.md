@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: b82c1f7105b3fd03d8c21dd79617dbc66f3e090c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d5c613a7cd8ee2d7dc158050dae9529bba2a8f71
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507773"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919572"
 ---
 # <a name="tutorial-vcperf-and-windows-performance-analyzer"></a>Öğretici: vcperf ve Windows Performans Çözümleyicisi
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ derleme öngörüleri araçları Visual Studio 2019 'de bulunabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Bu öğreticide, C++ yapınızı izlemeyi toplamak için *vcperf.exe* kullanmayı öğreneceksiniz. Ayrıca, bu izlemeyi Windows Performans Çözümleyicisi 'nde görüntülemeyi de öğreneceksiniz.
 
@@ -39,7 +39,7 @@ NOTE: Windows Performans Çözümleyicisi 'ni yüklemek için Windows 8 veya üz
 
 1. Windows ADK 'nin en son sürümünü indirip yükleyin.
 
-1. Yüklemek istediğiniz özellikler istendiğinde, **Windows performans araç seti**' ni seçin. İsterseniz diğer özellikleri seçebilirsiniz, ancak WPA 'Yı yüklemek gerekli değildir.
+1. Yüklemek istediğiniz özellikler istendiğinde, **Windows performans araç seti** ' ni seçin. İsterseniz diğer özellikleri seçebilirsiniz, ancak WPA 'Yı yüklemek gerekli değildir.
 
    ![Windows Performans Çözümleyicisi yükleyicisi 'nin Özellik seçimi ekranı](media/wpa-installation.png)
 
@@ -66,14 +66,14 @@ WPA 'da C++ derleme öngörülerini görüntüleme özel bir eklenti gerektirir.
 
 C++ derleme öngörüleri verilerini görüntülemek için, önce aşağıdaki adımları izleyerek bir izleme dosyasında toplayın:
 
-1. Yönetici modunda **VS 2019 için** bir **x64** veya x86 yerel araçları komut istemi açın. (Başlat menüsü öğesine sağ tıklayıp **daha fazla**  >  öğesini seçin **Yönetici olarak çalıştır**.)
-    1. Windows 'un 64 bit sürümüne sahipseniz **x64** seçeneğini belirleyin. Aksi takdirde, **x86**' yı seçin.
+1. Yönetici modunda **VS 2019 için** bir **x64** veya x86 yerel araçları komut istemi açın. (Başlat menüsü öğesine sağ tıklayıp **daha fazla**  >  öğesini seçin **Yönetici olarak çalıştır** .)
+    1. Windows 'un 64 bit sürümüne sahipseniz **x64** seçeneğini belirleyin. Aksi takdirde, **x86** ' yı seçin.
 
 1. Komut istemi penceresinde şu komutu girin:
 
    **vcperf.exe/Start _oturumadı_**
 
-   *Oturumadı*için hatırlayacaksınız bir oturum adı seçin.
+   *Oturumadı* için hatırlayacaksınız bir oturum adı seçin.
 
 1. Projenizi normalde yaptığınız şekilde derleyin. Derlemek için aynı komut istemi penceresini kullanmanız gerekmez.
 
@@ -89,19 +89,19 @@ Bir geliştirici komut istemi penceresinde, tipik bir *vcperf.exe* komut sıras�
 
 ### <a name="important-notes-about-vcperfexe"></a>vcperf.exe hakkındaki önemli notlar
 
-- *vcperf.exe* izlemesini başlatmak veya durdurmak için yönetici ayrıcalıkları gerekir. **Yönetici olarak çalıştır**'ı kullanarak açtığınız bir geliştirici komut istemi penceresi kullanın.
+- *vcperf.exe* izlemesini başlatmak veya durdurmak için yönetici ayrıcalıkları gerekir. **Yönetici olarak çalıştır** 'ı kullanarak açtığınız bir geliştirici komut istemi penceresi kullanın.
 
 - Bir makinede tek seferde yalnızca bir izleme oturumu çalıştırılabilir.
 
 - İzlemeyi başlatmak için kullandığınız oturum adını unutduğunuzdan emin olun. Bir çalışan oturumu adını bilmeden durdurmak için sorunlu olabilir.
 
-- *cl.exe* ve *link.exe*gibi, komut satırı YARDıMCı programı *vcperf.exe* bir MSVC yüklemesine dahil edilmiştir. Bu bileşeni edinmek için ek adım gerekmez.
+- *cl.exe* ve *link.exe* gibi, komut satırı YARDıMCı programı *vcperf.exe* bir MSVC yüklemesine dahil edilmiştir. Bu bileşeni edinmek için ek adım gerekmez.
 
 - *vcperf.exe* sisteminizde çalışan tüm MSVC araçları hakkında bilgi toplar. Sonuç olarak, derlemenizi, izlemeyi toplamak için kullandığınız komut isteminden başlatmanız gerekmez. Projenizi farklı bir komut isteminden ya da Visual Studio 'da oluşturabilirsiniz.
 
 ### <a name="vcperfexe-is-open-source"></a>vcperf.exe açık kaynak
 
-Kendi *vcperf.exe*sürümünüzü oluşturmak ve çalıştırmak istiyorsanız, bunu [vcperf GitHub deposundan](https://github.com/microsoft/vcperf)klonlayın.
+Kendi *vcperf.exe* sürümünüzü oluşturmak ve çalıştırmak istiyorsanız, bunu [vcperf GitHub deposundan](https://github.com/microsoft/vcperf)klonlayın.
 
 ## <a name="step-3-view-your-trace-in-windows-performance-analyzer"></a>3. Adım: Windows Performans Çözümleyicisi 'nde izlemenizi görüntüleme
 

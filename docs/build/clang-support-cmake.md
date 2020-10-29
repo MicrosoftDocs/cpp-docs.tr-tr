@@ -4,28 +4,28 @@ ms.date: 07/01/2019
 ms.description: Configure a CMake project in Visual Studio to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ CMake projects
-ms.openlocfilehash: a23526cf5216e4cc37c3131a0d1ba94a6e923f56
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e23da02a0c3af624ddb30cec8dbb5afda55660c9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686437"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919585"
 ---
 # <a name="clangllvm-support-in-visual-studio-cmake-projects"></a>Visual Studio CMake projelerinde Clang/LLVM desteği
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Clang desteği Visual Studio 2019 ' de kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Windows veya Linux 'u hedefleyen C++ CMake projelerini düzenlemek ve hatalarını ayıklamak için Visual Studio ile Clang kullanabilirsiniz.
 
-**Windows**: Visual Studio 2019 sürüm 16,1, Windows 'U hedefleyen CMake projelerinde Clang/LLVM ile ekleme, oluşturma ve hata ayıklama desteği içerir.
+**Windows** : Visual Studio 2019 sürüm 16,1, Windows 'U hedefleyen CMake projelerinde Clang/LLVM ile ekleme, oluşturma ve hata ayıklama desteği içerir.
 
-**Linux**: Linux CMake projeleri Için özel Visual Studio desteği gerekli değildir. Clang 'yi, kendi paket yöneticisini kullanarak yükleyebilir ve CMakeLists.txt dosyasına uygun komutları ekleyebilirsiniz.
+**Linux** : Linux CMake projeleri Için özel Visual Studio desteği gerekli değildir. Clang 'yi, kendi paket yöneticisini kullanarak yükleyebilir ve CMakeLists.txt dosyasına uygun komutları ekleyebilirsiniz.
 
 ## <a name="install"></a>Yükleme
 
@@ -37,23 +37,23 @@ Visual Studio 'da en iyi IDE desteği için, Windows için en son Clang derleyic
 
 CMake projesine yeni bir Clang yapılandırması eklemek için:
 
-1. **Çözüm Gezgini** CMakeLists.txt sağ tıklayın ve **proje için CMake ayarları**' nı seçin.
+1. **Çözüm Gezgini** CMakeLists.txt sağ tıklayın ve **proje için CMake ayarları** ' nı seçin.
 
-1. **Yapılandırmalar**' ın altında, **yapılandırma Ekle** düğmesine basın:
+1. **Yapılandırmalar** ' ın altında, **yapılandırma Ekle** düğmesine basın:
 
    ![Yapılandırma ekleme](media/cmake-add-config-icon.png)
 
-1. İstenen Clang yapılandırmasını seçin (Windows ve Linux için ayrı Clang yapılandırmalarının sağlandığını unutmayın) ve ardından **Seç**' e basın:
+1. İstenen Clang yapılandırmasını seçin (Windows ve Linux için ayrı Clang yapılandırmalarının sağlandığını unutmayın) ve ardından **Seç** ' e basın:
 
    ![CMake Clang yapılandırması](media/cmake-clang-configuration.png)
 
-1. Bu yapılandırmada değişiklik yapmak için **CMake ayarları düzenleyicisini**kullanın. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md).
+1. Bu yapılandırmada değişiklik yapmak için **CMake ayarları düzenleyicisini** kullanın. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md).
 
 ## <a name="modify-an-existing-configuration-to-use-clang"></a>Varolan bir yapılandırmayı Clang kullanacak şekilde değiştirme
 
 Varolan bir yapılandırmayı Clang kullanacak şekilde değiştirmek için şu adımları izleyin:
 
-1. **Çözüm Gezgini** CMakeLists.txt sağ tıklayın ve **proje için CMake ayarları**' nı seçin.
+1. **Çözüm Gezgini** CMakeLists.txt sağ tıklayın ve **proje için CMake ayarları** ' nı seçin.
 
 1. **Genel** altında **araç kümesi** açılan listesini seçin ve istenen Clang araç takımını seçin:
 
@@ -74,11 +74,11 @@ Varsayılan olarak, Visual Studio iki yerde Clang 'yi arar:
 
 Windows yapılandırmalarında CMake, [Clang-CL](https://llvm.org/devmtg/2014-04/PDFs/Talks/clang-cl.pdf) modunda Clang 'Yi ve standart kitaplığın Microsoft uygulamasıyla bağlantıları çağırır. Varsayılan olarak, **clang-cl.exe** ' de bulunur `C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\IDE\CommonExtensions\Microsoft\Llvm\bin` .
 
-CMake **değişkenleri ve önbelleği**altındaki **CMake ayarlarında** bu değerleri değiştirebilirsiniz. **Gelişmiş değişkenleri göster**' e tıklayın. **CMAKE_CXX_COMPILER**bulmak için aşağı kaydırın ve ardından farklı bir derleyici yolu belirtmek Için, **Gözden** geçirme düğmesine tıklayın.
+CMake **değişkenleri ve önbelleği** altındaki **CMake ayarlarında** bu değerleri değiştirebilirsiniz. **Gelişmiş değişkenleri göster** ' e tıklayın. **CMAKE_CXX_COMPILER** bulmak için aşağı kaydırın ve ardından farklı bir derleyici yolu belirtmek Için, **Gözden** geçirme düğmesine tıklayın.
 
 ## <a name="edit-build-and-debug"></a>Düzenle, oluştur ve hata ayıkla
 
-Bir Clang yapılandırması ayarladıktan sonra, projeyi derleyip hata ayıklaması yapabilirsiniz. Visual Studio, Clang derleyicisini kullandığınızı algılar ve IntelliSense, vurgulama, gezinme ve diğer düzen özelliklerini sağlar. Hatalar ve uyarılar **Çıkış penceresi**görüntülenir.
+Bir Clang yapılandırması ayarladıktan sonra, projeyi derleyip hata ayıklaması yapabilirsiniz. Visual Studio, Clang derleyicisini kullandığınızı algılar ve IntelliSense, vurgulama, gezinme ve diğer düzen özelliklerini sağlar. Hatalar ve uyarılar **Çıkış penceresi** görüntülenir.
 
 Hata ayıklama sırasında kesme noktaları, bellek ve veri görselleştirme ve diğer birçok hata ayıklama özelliği kullanabilirsiniz. Düzenle ve devam et gibi bazı derleyiciye bağımlı özellikler Clang yapılandırmalarında kullanılamaz.
 

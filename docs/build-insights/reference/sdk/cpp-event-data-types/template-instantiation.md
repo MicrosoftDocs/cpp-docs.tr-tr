@@ -1,6 +1,6 @@
 ---
-title: TemplateInstantiation sınıfı
-description: C++ Build Insights SDK TemplateInstantiation sınıf başvurusu.
+title: Templateörneklemesi sınıfı
+description: C++ Build Insights SDK 'Sı Templateörneklemesi sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ba8fd10efc6a536c9160f10b19e19e17bfaaad98
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7ff03aaa431f5c5e217f605698a255686411b479
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324226"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920443"
 ---
-# <a name="templateinstantiation-class"></a>TemplateInstantiation sınıfı
+# <a name="templateinstantiation-class"></a>Templateörneklemesi sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `TemplateInstantiation` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [TEMPLATE_INSTANTIATION](../event-table.md#template-instantiation) bir olayı eşleştirmek için kullanın.
+`TemplateInstantiation`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [TEMPLATE_INSTANTIATION](../event-table.md#template-instantiation) olayına uyacak şekilde kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class TemplateInstantiation : public Activity
@@ -52,19 +52,19 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `TemplateInstantiation` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte, `TemplateInstantiation` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[ŞablonAnında](#template-instantiation)
+[TemplateInstantiation](#template-instantiation)
 
 ### <a name="functions"></a>İşlevler
 
-[Tür](#kind)
-[PrimaryTemplateSymbolKey](#primary-template-symbol-key)
-[UzmanlıkSymbolKey](#specialization-symbol-key)
+[Tür](#kind) 
+ [Primarytemplatesymbolkey](#primary-template-symbol-key) 
+ [Specializationsymbolkey](#specialization-symbol-key)
 
-## <a name="kind"></a><a name="kind"></a>Tür
+## <a name="kind"></a><a name="kind"></a> Denetlenmesi
 
 ```cpp
 Kind Kind() const;
@@ -72,9 +72,9 @@ Kind Kind() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yapılan şablon anlık oluşturma türünü açıklayan bir kod.
+Gerçekleştirilen şablon örneği oluşturma türünü tanımlayan bir kod.
 
-## <a name="primarytemplatesymbolkey"></a><a name="primary-template-symbol-key"></a>BirincilTemplateSymbolKey
+## <a name="primarytemplatesymbolkey"></a><a name="primary-template-symbol-key"></a> PrimaryTemplateSymbolKey
 
 ```cpp
 const unsigned long long& PrimaryTemplateSymbolKey() const;
@@ -82,9 +82,9 @@ const unsigned long long& PrimaryTemplateSymbolKey() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özelleştirilmiş şablon türü için sayısal bir tanımlayıcı. Bu tanımlayıcı, derleyici ön uç geçişi nde benzersizdir.
+Özelleştirilmiş şablon türü için sayısal bir tanımlayıcı. Bu tanımlayıcı, bir derleyici ön ucu geçişi içinde benzersizdir.
 
-## <a name="specializationsymbolkey"></a><a name="specialization-symbol-key"></a>UzmanlıkSymbolKey
+## <a name="specializationsymbolkey"></a><a name="specialization-symbol-key"></a> SpecializationSymbolKey
 
 ```cpp
 const unsigned long long& SpecializationSymbolKey() const;
@@ -92,9 +92,9 @@ const unsigned long long& SpecializationSymbolKey() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uzmanlık türü için sayısal tanımlayıcı. Bu tanımlayıcı, derleyici ön uç geçişi nde benzersizdir.
+Özelleşmenin türü için sayısal tanımlayıcı. Bu tanımlayıcı, bir derleyici ön ucu geçişi içinde benzersizdir.
 
-## <a name="templateinstantiation"></a><a name="template-instantiation"></a>ŞablonAnında
+## <a name="templateinstantiation"></a><a name="template-instantiation"></a> Templateörneklemesi
 
 ```cpp
 TemplateInstantiation(const RawEvent& event);
@@ -102,7 +102,7 @@ TemplateInstantiation(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 [TEMPLATE_INSTANTIATION](../event-table.md#template-instantiation) bir olay.
 
 ::: moniker-end

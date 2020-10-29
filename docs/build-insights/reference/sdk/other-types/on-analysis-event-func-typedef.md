@@ -1,6 +1,6 @@
 ---
-title: OnAnalysisEventFunc typedef
-description: C++ Build Insights SDK OnAnalysisEventFunc typedef referans.
+title: Onanalsıseventfunc typedef
+description: C++ derleme öngörüleri SDK 'Sı Onanalyzer Sıseventfunc typedef başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: eacd174279caff0db22586d5e40d3a866afc4459
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 069c89a01fa466e86986a821e5dd9d0b09f5c81a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329122"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919805"
 ---
-# <a name="onanalysiseventfunc-typedef"></a>OnAnalysisEventFunc typedef
+# <a name="onanalysiseventfunc-typedef"></a>Onanalsıseventfunc typedef
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-`OnAnalysisEventFunc` [Typedef, ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) yapısında kullanılan işlev imzalarından biridir.
+`OnAnalysisEventFunc`Typedef, [ANALYSIS_CALLBACKS](analysis-callbacks-struct.md) yapısında kullanılan işlev imzalarından biridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,13 +38,13 @@ typedef enum CALLBACK_CODE (BUILD_INSIGHTS_API *OnAnalysisEventFunc)(
 ### <a name="parameters"></a>Parametreler
 
 *eventStack*\
-Geçerli olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
+Geçerli olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
 
-*geri aramaBağlam*\
-[bu](analysis-descriptor-struct.md) geri arama için ANALYSIS_DESCRIPTOR veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md)olarak ayarlanan bağlam değeri.
+*callbackContext*\
+[ANALYSIS_DESCRIPTOR](analysis-descriptor-struct.md) veya [RELOG_DESCRIPTOR](relog-descriptor-struct.md)içinde bu geri çağırma için ayarlanan bağlam değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir sonraki adımı kontrol eden [CALLBACK_CODE](callback-code-enum.md) bir değer.
+Bir sonraki ne olacağını denetleyen [CALLBACK_CODE](callback-code-enum.md) değeri.
 
 ::: moniker-end

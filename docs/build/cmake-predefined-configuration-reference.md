@@ -4,37 +4,37 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: a88b5ebbf05e11dc05e012c5bfbcc718d3742fb3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: aa8c39d8322408e08eb35859c7b0d8ed798a6f84
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81322990"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919442"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış derleme yapılandırması
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 CMake projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasında depolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
+CMake projesinde, derleme konfigürasyonları dosyada CMakeSettings.jsdepolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
 
 - x86 hata ayıklama
 - x86 sürümü
 - x64 hata ayıklama
 - x64 sürümü
-- Linux-Hata Ayıkla
-- Linux-yayın
+- Linux-Debug
+- Linux-Release
 - IoT hata ayıklaması
 - IoT yayını
 - MinGW hata ayıklama
 - MinGW sürümü
 
-Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *Cmakesettings. JSON* dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için bkz. [Cmakesettings Reference](cmakesettings-reference.md).
+Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *CMakeSettings.js* dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz. Yapılandırma özellikleri hakkında daha fazla bilgi için bkz. [Cmakesettings Reference](cmakesettings-reference.md).
 
 ## <a name="linux-predefined-build-configurations"></a>Linux önceden tanımlanmış derleme yapılandırması:
 
@@ -354,9 +354,9 @@ Bu seçenekler, oluşturmadan önce ve sonra ve CMake oluşturmadan önce uzak s
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasında depolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
+CMake projesinde, derleme konfigürasyonları dosyada CMakeSettings.jsdepolanır. Ana araç çubuğunda derleme yapılandırması açılır listesinden **yapılandırmaları Yönet** ' i seçtiğinizde, Visual Studio 'da kullanılabilen varsayılan CMake yapılandırmalarını gösteren bir iletişim kutusu görünür:
 
 - x86 hata ayıklama
 - x86 Clang hata ayıklaması
@@ -366,8 +366,8 @@ CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasınd
 - x64 Clang hata ayıklaması
 - x64 sürümü
 - x64 Clang sürümü
-- Linux-Hata Ayıkla
-- Linux-yayın
+- Linux-Debug
+- Linux-Release
 - Linux-Clang-hata ayıklama
 - Linux-Clang-yayın
 - Mevcut önbellek (uzak)
@@ -380,7 +380,7 @@ CMake projesinde, derleme konfigürasyonları bir CMakeSettings. json dosyasınd
 - WSL Clang sürümü
 - Clang
 
-Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki CMakeSettings. JSON dosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz.
+Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki CMakeSettings.jsdosyasına eklenir. Daha sonra projenizi oluşturmak için bunu kullanabilirsiniz.
 
 ```json
 {

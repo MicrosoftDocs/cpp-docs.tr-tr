@@ -3,22 +3,22 @@ title: Visual Studio 'da Linux MSBuild C++ projesi oluşturma
 ms.date: 10/15/2020
 description: Visual Studio 'da yeni bir MSBuild tabanlı Linux projesi oluşturun.
 ms.assetid: 5d7c1d67-bc31-4f96-8622-2b4cf91372fd
-ms.openlocfilehash: dddb9dbdee4cefc58a2bd5ccefa493b25e1c9f24
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 458a26408bfd29b714150e5259fd23807c9b2908
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176295"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921639"
 ---
 # <a name="create-a-linux-msbuild-c-project-in-visual-studio"></a>Visual Studio 'da Linux MSBuild C++ projesi oluşturma
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux projeleri Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 İlk olarak, Visual Studio için **Linux geliştirme Iş yükünüzün** yüklü olduğundan emin olun. Daha fazla bilgi için bkz. [Linux iş yükünü indirme, yükleme ve kurma](download-install-and-setup-the-linux-development-workload.md).
 
@@ -28,8 +28,8 @@ Platformlar arası derleme için CMake kullanmanızı öneririz. CMake desteği,
 
 Visual Studio 2017 ' de yeni bir Linux projesi oluşturmak için aşağıdaki adımları izleyin:
 
-1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın.
-1. **Visual C++ > platformlar arası > Linux** düğümünü seçin ve ardından oluşturulacak proje türünü seçin. Bir **ad** ve **konum**girin ve **Tamam**' ı seçin.
+1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N** tuşlarına basın.
+1. **Visual C++ > platformlar arası > Linux** düğümünü seçin ve ardından oluşturulacak proje türünü seçin. Bir **ad** ve **konum** girin ve **Tamam** ' ı seçin.
 
    ![Visual C Plus ile yeni proje iletişim kutusunu gösteren ekran görüntüsü ve > platformlar arası > Linux seçili, tüm proje türleri dışarı ve adı ve konum metin kutuları de çağrılır.](media/newproject.png)
 
@@ -46,7 +46,7 @@ Visual Studio 2017 ' de yeni bir Linux projesi oluşturmak için aşağıdaki ad
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 İlk olarak, Visual Studio için **Linux geliştirme Iş yükünüzün** yüklü olduğundan emin olun. Daha fazla bilgi için bkz. [Linux iş yükünü indirme, yükleme ve ayarlama](download-install-and-setup-the-linux-development-workload.md).
 
@@ -58,9 +58,9 @@ Linux için derlemek üzere genişletmek istediğiniz mevcut bir Windows Visual 
 
 Visual Studio 2019 ' de yeni bir Linux projesi oluşturmak için aşağıdaki adımları izleyin:
 
-1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N**tuşlarına basın. Yeni proje oluştur iletişim kutusu görüntülenir.
+1. Visual Studio 'da **dosya > yeni proje** ' yi seçin veya **CTRL + SHIFT + N** tuşlarına basın. Yeni proje oluştur iletişim kutusu görüntülenir.
 1. **Şablon ara** metin kutusuna Linux projeleri için kullanılabilir şablonları listelemek için **Linux** girin.
-1. Oluşturulacak proje türünü seçin, örneğin **konsol uygulaması**ve sonra **İleri**' yi seçin. Bir **ad** ve **konum**girin ve **Oluştur**' u seçin.
+1. Oluşturulacak proje türünü seçin, örneğin **konsol uygulaması** ve sonra **İleri** ' yi seçin. Bir **ad** ve **konum** girin ve **Oluştur** ' u seçin.
 
    ![Dil açılan menüsü olarak C++ ve platform açılır listesi Linux olarak ayarlanan yeni proje iletişim kutusunun ekran görüntüsü.](media/newproject-vs2019.png)
 

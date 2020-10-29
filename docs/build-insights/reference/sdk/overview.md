@@ -10,21 +10,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 6f53a9b6c682a0af7d8a01f6378ed0574d8fa4ca
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a6ecff81a9f3d2b22107a8fa7fc26fad85d4f579
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041178"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919520"
 ---
 # <a name="c-build-insights-sdk"></a>C++ Derleme İçgörüleri SDK’sı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 C++ derleme öngörüleri SDK 'Sı, C++ Build Insights platformunun üzerinde kişiselleştirilmiş araçlar oluşturmanıza imkan tanıyan bir API koleksiyonudur. Bu sayfa, başlamanıza yardımcı olmak için üst düzey bir genel bakış sağlar.
 
@@ -37,7 +37,7 @@ Aşağıdaki adımları izleyerek C++ Build Insights SDK 'sını bir NuGet paket
 1. Bağlam menüsünden **NuGet Paketlerini Yönet** ' i seçin.
 1. Sağ üst köşedeki **NuGet.org** paket kaynağını seçin.
 1. Microsoft. cpp. Buildinsıghts paketinin en son sürümünü arayın.
-1. **Yüklemeyi**seçin.
+1. **Yüklemeyi** seçin.
 1. Lisansı kabul edin.
 
 SDK 'Yı çevreleyen genel kavramlar hakkında daha fazla bilgi için okumaya devam edin. Ayrıca, SDK 'Yı kullanan gerçek C++ uygulamalarının örneklerini görmek için resmi [C++ Build Insights örnekleri GitHub deposuna](https://github.com/microsoft/cpp-build-insights-samples) erişebilirsiniz.
@@ -81,7 +81,7 @@ Bir ETW izlemesinde, paketini açmak için C++ Build Insights SDK 'sını kullan
 |--|--|--|--|
 | Olay geri çağırmaları ayarlama | [IAnalyzer](other-types/ianalyzer-class.md)<br />[IRelogger](other-types/irelogger-class.md) | [ANALYSIS_CALLBACKS](other-types/analysis-callbacks-struct.md)<br />[RELOG_CALLBACKS](other-types/relog-callbacks-struct.md) | C++ derleme öngörüleri SDK 'Sı, geri çağırma işlevleri aracılığıyla Olaylar sağlar. C++ ' da, IAnalyzer veya ıregünlükçü arabirimini devralan bir çözümleyici veya yeniden günlükçü sınıfı oluşturarak geri çağırma işlevlerini uygulayın. C 'de, genel işlevlerde geri çağırmaları uygulayın ve ANALYSIS_CALLBACKS veya RELOG_CALLBACKS yapısında bunlara işaretçiler sağlayın. |
 | Grup oluşturma | [MakeStaticAnalyzerGroup](functions/make-static-analyzer-group.md)<br />[MakeStaticReloggerGroup](functions/make-static-relogger-group.md)<br />[MakeDynamicAnalyzerGroup](functions/make-dynamic-analyzer-group.md)<br />[MakeDynamicReloggerGroup](functions/make-dynamic-relogger-group.md) |  | C++ API 'SI, birden çok çözümleyici ve yeniden günlükçü nesnesini birlikte gruplamak için yardımcı işlevler ve türler sağlar. Gruplar, karmaşık bir analizi daha basit adımlara bölmek için bir düzenlidir yoludur. [vcperf](https://github.com/microsoft/vcperf) bu şekilde düzenlenir. |
-| Çözümleme veya yeniden günlüğe kaydetme | [Çözümleme](functions/analyze.md)<br />[Relog](functions/relog.md) | [AnalyzeA](functions/analyze-a.md)<br />[AnalyzeW](functions/analyze-w.md)<br />[RelogA](functions/relog-a.md)<br />[RelogW](functions/relog-w.md) |  |
+| Çözümleme veya yeniden günlüğe kaydetme | [Analiz](functions/analyze.md)<br />[Relog](functions/relog.md) | [AnalyzeA](functions/analyze-a.md)<br />[AnalyzeW](functions/analyze-w.md)<br />[RelogA](functions/relog-a.md)<br />[RelogW](functions/relog-w.md) |  |
 
 ### <a name="analyzing-and-relogging"></a>Analiz ve yeniden günlüğe kaydetme
 
@@ -152,7 +152,7 @@ int main()
 
 ### <a name="activities-and-simple-events"></a>Etkinlikler ve basit olaylar
 
-Olaylar iki kategoride gelir: *Etkinlikler* ve *basit olaylar*. Etkinlikler, başlangıç ve bitiş zamanı olan zaman içinde devam eden işlemlerdir. Basit olaylar, zayıf oluşumlardır ve süresi yoktur. C++ Build Insights SDK 'Sı ile MSVC izlemelerini analiz edilirken, bir etkinlik başladığında ve durdurulduğunda ayrı olaylar alırsınız. Basit bir olay gerçekleştiğinde yalnızca bir olay alırsınız.
+Olaylar iki kategoride gelir: *Etkinlikler* ve *basit olaylar* . Etkinlikler, başlangıç ve bitiş zamanı olan zaman içinde devam eden işlemlerdir. Basit olaylar, zayıf oluşumlardır ve süresi yoktur. C++ Build Insights SDK 'Sı ile MSVC izlemelerini analiz edilirken, bir etkinlik başladığında ve durdurulduğunda ayrı olaylar alırsınız. Basit bir olay gerçekleştiğinde yalnızca bir olay alırsınız.
 
 ### <a name="parent-child-relationships"></a>Üst-alt öğe ilişkileri
 
@@ -197,7 +197,7 @@ C++ derleme öngörüleri SDK 'Sı size bir olay sunışınızda, yığın biçi
 
 #### <a name="matching-events-and-event-stacks"></a>Eşleşen olaylar ve olay yığınları
 
-C++ derleme öngörüleri SDK 'Sı, bir izlemede her etkinlik sağlar, ancak çoğu zaman yalnızca bunların bir alt kümesiyle ilgilenmenizi sağlar. Bazı durumlarda, yalnızca bir *olay yığınları*alt kümesi olabilir. SDK, ihtiyacınız olan olayları ve olay yığınını hızlıca ayıklamanıza yardımcı olan tesisler sağlar ve bunları reddedebilirsiniz. Bu eşleşen işlevler aracılığıyla yapılır:
+C++ derleme öngörüleri SDK 'Sı, bir izlemede her etkinlik sağlar, ancak çoğu zaman yalnızca bunların bir alt kümesiyle ilgilenmenizi sağlar. Bazı durumlarda, yalnızca bir *olay yığınları* alt kümesi olabilir. SDK, ihtiyacınız olan olayları ve olay yığınını hızlıca ayıklamanıza yardımcı olan tesisler sağlar ve bunları reddedebilirsiniz. Bu eşleşen işlevler aracılığıyla yapılır:
 
 | İşlev | Açıklama |
 |--|--|
@@ -210,13 +210,13 @@ C++ derleme öngörüleri SDK 'Sı, bir izlemede her etkinlik sağlar, ancak ço
 
 #### <a name="capture-classes"></a>Sınıfları yakala
 
-İşlevlerinin kullanılması `Match*` için, eşleştirmek istediğiniz türleri belirtmeniz gerekir. Bu türler, *yakalama sınıfları*listesinden seçilir. Yakalama sınıfları aşağıda açıklanan çeşitli kategorilerde gelir.
+İşlevlerinin kullanılması `Match*` için, eşleştirmek istediğiniz türleri belirtmeniz gerekir. Bu türler, *yakalama sınıfları* listesinden seçilir. Yakalama sınıfları aşağıda açıklanan çeşitli kategorilerde gelir.
 
 | Kategori | Açıklama |
 |--|--|
 | Exact | Bu yakalama sınıfları, belirli bir olay türünü ve başka hiçbirini eşleştirmek için kullanılır. [Derleyici](event-table.md#compiler) olayı Ile eşleşen [derleyici](cpp-event-data-types/compiler.md) sınıfı bir örnektir. |
 | Liyorsa | Bu yakalama sınıfları, destekledikleri olaylar listesinden herhangi bir olayı eşleştirmek için kullanılabilir. Örneğin, [etkinlik](cpp-event-data-types/activity.md) joker karakteri herhangi bir etkinlik olayından eşleşir. Diğer bir örnek, [FRONT_END_PASS](event-table.md#front-end-pass) veya [BACK_END_PASS](event-table.md#back-end-pass) olayından eşleşen bir [compilerpass](cpp-event-data-types/compiler-pass.md) joker karakterdir. |
-| Grup | Grup yakalama sınıflarının adları *Grup*olarak sona erdir. Bunlar, boşlukları yoksayarak bir satırdaki aynı türdeki birden fazla olayı eşleştirmek için kullanılır. Olay yığınında kaç tane mevcut olduğunu bilmiyorsanız, özyinelemeli olayları eşleştirirken yalnızca anlamalar yapılır. Örneğin, derleyici bir dosyayı her ayrıştırdığında [FRONT_END_FILE](event-table.md#front-end-file) etkinlik olur. Derleyici dosyayı ayrıştırırken bir içerme yönergesi bulabileceğinden bu etkinlik özyinelemeli olur. [Frontendfile](cpp-event-data-types/front-end-file.md) sınıfı yığında yalnızca bir FRONT_END_FILE olayla eşleşir. Tüm içerme hiyerarşisine uyması için [Frontendfılegroup](cpp-event-data-types/front-end-file-group.md) sınıfını kullanın. |
+| Grup | Grup yakalama sınıflarının adları *Grup* olarak sona erdir. Bunlar, boşlukları yoksayarak bir satırdaki aynı türdeki birden fazla olayı eşleştirmek için kullanılır. Olay yığınında kaç tane mevcut olduğunu bilmiyorsanız, özyinelemeli olayları eşleştirirken yalnızca anlamalar yapılır. Örneğin, derleyici bir dosyayı her ayrıştırdığında [FRONT_END_FILE](event-table.md#front-end-file) etkinlik olur. Derleyici dosyayı ayrıştırırken bir içerme yönergesi bulabileceğinden bu etkinlik özyinelemeli olur. [Frontendfile](cpp-event-data-types/front-end-file.md) sınıfı yığında yalnızca bir FRONT_END_FILE olayla eşleşir. Tüm içerme hiyerarşisine uyması için [Frontendfılegroup](cpp-event-data-types/front-end-file-group.md) sınıfını kullanın. |
 | Joker karakter grubu | Joker karakter grubu ve grupların özelliklerini birleştirir. Bu kategorinin tek sınıfı, tek bir olay yığınındaki tüm [bağlayıcı](event-table.md#linker) ve [derleyici](event-table.md#compiler) olaylarını eşleştirecek ve yakaladığı [ıncationgroup](cpp-event-data-types/invocation-group.md)' dır. |
 
 Her olayla eşleştirmek için hangi yakalama sınıflarının kullanılabileceğini öğrenmek için [olay tablosuna](event-table.md) bakın.

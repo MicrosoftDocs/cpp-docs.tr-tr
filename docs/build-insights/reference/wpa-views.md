@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: a5b13ee08becd472b3bc52319212b84a9c8ffc25
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2ad5d2153fdf434461e1af982e9d9f343e9957a9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508808"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919507"
 ---
 # <a name="reference-windows-performance-analyzer-views"></a>Başvuru: Windows Performans Çözümleyici görünümleri
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ derleme öngörüleri araçları Visual Studio 2019 'de bulunabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Bu makalede, Windows Performans Çözümleyicisi 'nde (WPA) kullanılabilen C++ derleme öngörüleri görünümlerinin her biri hakkında ayrıntılı bilgi verilmektedir. Bulmak için bu sayfayı kullanın:
 
@@ -50,10 +50,10 @@ Yapı Gezgini görünümü şu şekilde kullanılır:
 | ExclusiveDuration        | Etkinliğin milisaniyelik süresi. Alt etkinliklerin süresi bu tutara dahil değildir. |
 | Yani ıvecputime         | Bu etkinlik ve tüm alt etkinlikler tarafından kullanılan milisaniye cinsinden CPU zamanı miktarı. |
 | Yani, Iveduration        | Bu etkinliğin tüm alt etkinlikler dahil olmak üzere milisaniyelik süresi. |
-| Incationdescription    | Bu olayın oluştuğu çağrının metinsel açıklaması. Açıklama *cl.exe* veya *link.exe*ve benzersiz bir sayısal çağrı tanımlayıcısı olup olmadığını içerir. Uygulanabiliyorsa, bu, çağırma sırasında derlenen veya bağlanan bileşenin tam yolunu içerir. Herhangi bir bileşen veya birden çok bileşen oluşturan çağrılar için, yol boş olur. Çağırma tanımlayıcısı, ınvocationıd sütunundaki ile aynıdır. |
+| Incationdescription    | Bu olayın oluştuğu çağrının metinsel açıklaması. Açıklama *cl.exe* veya *link.exe* ve benzersiz bir sayısal çağrı tanımlayıcısı olup olmadığını içerir. Uygulanabiliyorsa, bu, çağırma sırasında derlenen veya bağlanan bileşenin tam yolunu içerir. Herhangi bir bileşen veya birden çok bileşen oluşturan çağrılar için, yol boş olur. Çağırma tanımlayıcısı, ınvocationıd sütunundaki ile aynıdır. |
 | Invocationıd             | Bu olayın oluştuğu çağrı için benzersiz bir sayısal tanımlayıcı. |
-| Name                     | Bu olayla temsil edilen etkinliğin veya özelliğin adı. |
-| Süre                     | Olayın ne zaman oluştuğunu belirleyen zaman damgası. |
+| Ad                     | Bu olayla temsil edilen etkinliğin veya özelliğin adı. |
+| Saat                     | Olayın ne zaman oluştuğunu belirleyen zaman damgası. |
 | Araç                     | Bu olay oluştuğunda yürütülen araç. Bu sütunun değeri CL ya da LINK. |
 | Tür                     | Geçerli olayın türü. Bu değer, etkinlik ya da özellik. |
 | Değer                    | Geçerli olay bir özellik ise, bu sütun değerini içerir. Bu sütun, geçerli olay bir etkinlik olduğunda boş bırakılır. |
@@ -78,7 +78,7 @@ Dosyalar görünümü şu şekilde kullanılır:
 
 | Sütun adı              | Açıklama |
 |--------------------------|-------------|
-| Özelliğinde             | Bu dosya olayı yayıldıysa devam eden etkinlik. Şu anda bu değer her zaman *Ayrıştırılmamaktadır*. |
+| Özelliğinde             | Bu dosya olayı yayıldıysa devam eden etkinlik. Şu anda bu değer her zaman *Ayrıştırılmamaktadır* . |
 | BuildTimelineDescription | * |
 | Buildtimelineıd          | * |
 | Bileşen                | * |
@@ -108,7 +108,7 @@ Işlevler görünümü aşırı uzun kod oluşturma süresine sahip işlevleri b
 
 | Sütun adı              | Açıklama |
 |--------------------------|-------------|
-| Özelliğinde             | Bu işlev olayı yayıldıysa sürmekte olan etkinlik. Şu anda bu değer her zaman *CodeGeneration*değeridir. |
+| Özelliğinde             | Bu işlev olayı yayıldıysa sürmekte olan etkinlik. Şu anda bu değer her zaman *CodeGeneration* değeridir. |
 | BuildTimelineDescription | * |
 | Buildtimelineıd          | * |
 | Bileşen                | * |

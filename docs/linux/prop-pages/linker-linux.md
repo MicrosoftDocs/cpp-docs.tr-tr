@@ -2,66 +2,66 @@
 title: Bağlayıcı Özellikleri (Linux C++)
 ms.date: 06/07/2019
 ms.assetid: a0243a94-8164-425b-b2fe-b84ff363d546
-ms.openlocfilehash: 934e639199d663cba391c9913b067f32e5e32165
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d6c6bc44a4d681f442a5a85ca9d5865c4590f884
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "79441277"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921496"
 ---
 # <a name="linker-properties-linux-c"></a>Bağlayıcı Özellikleri (Linux C++)
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
-Linux desteği Visual Studio 2017 ve sonrası sürümlerinde kullanılabilir.
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="general"></a>Genel
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Çıktı Dosyası | Seçenek, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. (-o) |
-| İlerlemeyi Göster | Bağlayıcı İlerleme İletilerini Yazdırır. |
-| Sürüm | -sürüm seçeneği, bağlayıcıya yürütülebilir üstbilgiye bir sürüm numarası koymasını söyler. |
-| Verbose Çıkışını Etkinleştir | -verbose seçeneği hata ayıklama için çıkış verbose iletileri için bağlayıcı söyler. |
-| İzleme | --izleme seçeneği, bağlayıcıya işlenirken giriş dosyalarını çıktısı için söyler. |
-| İz Sembolleri | Bir sembolün göründüğü dosyaların listesini yazdırın. (--iz-sembol=sembol) |
-| Harita Yazdır | --print-map seçeneği, bağlayıcıya bir bağlantı eşlemi çıkarmasını söyler. |
-| Çözümlenmemiş Sembol Başvurularını Bildir | Etkinleştirildiğinde bu seçenek, çözülmemiş sembol başvurularını bildirir. |
-| Bellek Kullanımı için Optimize Edin | Sembol tabloları gerektiği gibi yeniden okuyarak bellek kullanımı için optimize edin. |
-| Paylaşılan Kitaplık Arama Yolu | Kullanıcının paylaşılan kitaplık arama yolunu doldurmasına olanak tanır. (-rpath-link=yol) |
-| Ek Kütüphane Dizinleri | Kullanıcının çevre kitaplığı yolunu geçersiz kılmasına olanak tanır. (-L klasörü). |
-| Bağlayıcı | Bağlama sırasında çağırmak için program veya uzak sistemdeki bağlayıcıya giden yolu belirtir. |
-| Bağlantı Zaman Dilimi | Uzaktan bağlama zaman ası, milisaniye cinsinden. |
-| Çıktıyı Kopyala | Yapı çıktısı dosyasının uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir. |
+| Çıkış dosyası | Seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. (-o) |
+| Ilerlemeyi göster | Bağlayıcı Ilerleme Iletilerini yazdırır. |
+| Sürüm | -Version seçeneği, bağlayıcıya yürütülebilir dosyanın üstbilgisine bir sürüm numarası koymasını söyler. |
+| Ayrıntılı çıktıyı etkinleştir | -Verbose seçeneği, bağlayıcıya hata ayıklama için ayrıntılı iletiler çıkışını söyler. |
+| İzleme | --Trace seçeneği, bağlayıcının girdi dosyalarını işlenmiş olarak çıktısını vermesini söyler. |
+| İzleme sembolleri | Bir simgenin göründüğü dosyaların listesini yazdırın. (--trace-symbol = Symbol) |
+| Harita Yazdır | --Print-MAP seçeneği, bağlayıcının bir bağlantı eşlemesi çıkışı oluşturmasını söyler. |
+| Çözümlenmemiş sembol başvurularını raporla | Etkin olduğunda bu seçenek çözümlenmemiş sembol başvurularını rapor eder. |
+| Bellek kullanımı Için iyileştirin | Bellek kullanımı için okuyarak, sembol tablolarını gereken şekilde iyileştirin. |
+| Paylaşılan kitaplık arama yolu | Kullanıcının paylaşılan kitaplık arama yolunu doldurmasına izin verir. (-Rpath-Link = yol) |
+| Ek kitaplık dizinleri | Kullanıcının ortam kitaplık yolunu geçersiz kılmasına izin verir. (-L klasörü). |
+| Bağlayıcı | Bağlama sırasında çağrılacak programı veya uzak sistemdeki bağlayıcının yolunu belirtir. |
+| Bağlantı zaman aşımı | Milisaniye cinsinden uzaktan bağlama zaman aşımı. |
+| Çıkışı Kopyala | Derleme çıkış dosyasının uzak sistemden yerel makineye kopyalanıp kopyalanmayacağını belirtir. |
 
-## <a name="input"></a>Girdi
+## <a name="input"></a>Giriş
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Belirli Varsayılan Kitaplıkları Yoksay | Varsayılan kitaplıkların bir veya daha fazla adını yoksaymak için belirtir. (--dışlama-libs lib,lib) |
-| Varsayılan Kitaplıkları Yoksay | Varsayılan kitaplıkları ve yalnızca açıkça belirtilen arama kitaplıklarını yoksayın. |
-| Kuvvet Tanımsız Sembol Referansları | Tanımlanmamış bir sembol olarak çıkış dosyasına girilecek kuvvet sembolü. (-u sembolü --tanımsız=sembol) |
-| Kütüphane Bağımlılıkları | Bu seçenek, bağlayıcı komut satırına ek kitaplıklar eklenmesini sağlar. Ek kitaplık, 'lib' ile önceden belirlenmiş bağlayıcı komut satırının sonuna eklenir ve '.a' uzantısı ile sona erer.  (-lFILE) |
-| Ek Bağımlılıklar | Bağlantı komut satırına eklenecek ek öğeler belirtir. |
+| Belirli varsayılan kitaplıkları Yoksay | Yoksayılacak bir veya daha fazla varsayılan kitaplık adını belirtir. (--exclude-libs lib, lib) |
+| Varsayılan kitaplıkları Yoksay | Varsayılan kitaplıkları Yoksay ve yalnızca açık olarak belirtilen kitaplıkları ara. |
+| Tanımsız sembol başvurularını zorla | Simgenin çıkış dosyasına tanımsız bir sembol olarak girilmesini zorla. (-u symbol--tanımsız = simge) |
+| Kitaplık bağımlılıkları | Bu seçenek bağlayıcı komut satırına eklenecek ek kitaplıkların belirtilmesine izin verir. Ek kitaplık, ' lib ' önekini önekli ve '. a ' uzantısıyla biten bağlayıcı komut satırının sonuna eklenir.  (-lFILE) |
+| Ek bağımlılıklar | Bağlantı komut satırına eklenecek ek öğeleri belirtir. |
 
 ## <a name="debugging"></a>Hata Ayıklama
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Hata Ayıklama Sembolü Bilgileri | Çıktı dosyasındaki hata ayıklama simgesi bilgileri. | **Tümleri Dahil Et**<br>**Omit Hata Ayıklama Sembolü Bilgi Yalnızca**<br>**Tüm Sembol Bilgilerini Atla**<br> |
-| Harita Dosya Adı | Harita seçeneği, bağlayıcıya kullanıcı belirtilen adla bir harita dosyası oluşturmasını söyler. (-Harita=) |
+| Hata ayıklayıcı sembol bilgisi | Çıkış dosyasından hata ayıklayıcı sembol bilgisi. | **Tümünü dahil et**<br>**Yalnızca hata ayıklayıcı sembol bilgisini atla**<br>**Tüm sembol bilgilerini atla**<br> |
+| Eşleme dosyası adı | MAP seçeneği, bağlayıcının Kullanıcı tanımlı ada sahip bir eşleme dosyası oluşturmasını söyler. (-Map =) |
 
 ## <a name="advanced"></a>Gelişmiş
 
 | Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Değişkenleri İşaretle Yalnızca Taşınmadan Sonra Oku | Bu seçenek, yer değiştirmeden sonra salt okunur değişkenleri işaretler. |
-| Anında İşlev Bağlamayı Etkinleştir | Bu seçenek, nesneyi hemen işlev bağlama için işaretler. |
-| Çalıştırılabilir Yığın Gerektirmez | Bu seçenek, çıktıyı yürütülebilir yığın gerektirmeyen olarak işaretler. |
-| Tüm Arşiv | Tüm Arşiv, Kaynaklar ve Ek Bağımlılıklar'dan gelen tüm kodları kullanır. |
+| Yeniden konumlandırmadan sonra değişkenleri ReadOnly olarak işaretle | Bu seçenek, yeniden konumlandırmadan sonra değişkenleri salt okunurdur. |
+| Hemen Işlev bağlamayı etkinleştir | Bu seçenek, hemen işlev bağlamasının nesnesini işaretler. |
+| Yürütülebilir yığın gerektirme | Bu seçenek çıktıyı yürütülebilir yığın gerektirmeyen olarak işaretler. |
+| Tüm arşiv | Tüm arşiv kaynaklardaki tüm kodu ve ek bağımlılıkları kullanır. |
 
 ::: moniker-end

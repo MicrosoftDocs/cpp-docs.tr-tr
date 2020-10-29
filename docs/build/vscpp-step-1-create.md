@@ -5,12 +5,12 @@ ms.custom: mvc
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 333bb6ce1f3ea0db6b07d70ddd60d4a4be337abd
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: ee9631ee858ca34f82b599eeabce628483d9a247
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686515"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922094"
 ---
 # <a name="create-a-c-console-app-project"></a>C++ konsol uygulama projesi oluşturma
 
@@ -24,9 +24,9 @@ C++ Programcı için olağan başlangıç noktası "Merhaba, Dünya!" komut sat�
 
 Visual Studio, bir uygulamanın kodunu düzenlemek için *projeleri* ve projelerinizi düzenleme *çözümlerini* kullanır. Bir proje, uygulamalarınızı derlemek için kullanılan tüm seçenekleri, konfigürasyonları ve kuralları içerir. Tüm proje dosyaları ve tüm dış dosyalar arasındaki ilişkiyi yönetir. Uygulamanızı oluşturmak için önce yeni bir proje ve çözüm oluşturacaksınız.
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
-1. Visual Studio 'da, **Yeni proje oluştur** iletişim kutusunu açmak için **Dosya** menüsünü açın ve **Yeni > proje** ' yi seçin. **C++**, **Windows**ve **konsol** etiketlerine sahip **konsol uygulaması** şablonunu seçin ve ardından **İleri**' yi seçin.
+1. Visual Studio 'da, **Yeni proje oluştur** iletişim kutusunu açmak için **Dosya** menüsünü açın ve **Yeni > proje** ' yi seçin. **C++** , **Windows** ve **konsol** etiketlerine sahip **konsol uygulaması** şablonunu seçin ve ardından **İleri** ' yi seçin.
 
    ![Yeni bir proje oluşturma](media/vs2019-choose-console-app.png "Yeni proje oluştur iletişim kutusunu açın")
 
@@ -44,13 +44,13 @@ Visual Studio, bir uygulamanın kodunu düzenlemek için *projeleri* ve projeler
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 1. Visual Studio 'da **Dosya** menüsünü açın ve yeni **Proje** Iletişim kutusunu açmak için **Yeni > proje** ' yi seçin.
 
    ![Yeni proje iletişim kutusunu aç](media/vscpp-file-new-project.gif "Yeni proje iletişim kutusunu aç")
 
-1. **Yeni proje** iletişim kutusunda, zaten seçili değilse **Visual C++ >** seçin ve **boş proje** şablonunu seçin. **Ad** alanına *HelloWorld*yazın. Projeyi oluşturmak için **Tamam ' ı** seçin.
+1. **Yeni proje** iletişim kutusunda, zaten seçili değilse **Visual C++ >** seçin ve **boş proje** şablonunu seçin. **Ad** alanına *HelloWorld* yazın. Projeyi oluşturmak için **Tamam ' ı** seçin.
 
    ![Yeni proje iletişim kutusunun yüklü > Visual C Plus Plus ile seçili ve çağrıldı, dışarı çağrılan boş proje seçeneği ve ad metin kutusuna yazılan Hellow dünya ekran görüntüsü.](media/vscpp-concierge-project-name-callouts.png "Yeni projeyi adlandırın ve oluşturun")
 
@@ -64,7 +64,7 @@ Visual Studio, Windows ve diğer platformlar için tüm uygulama ve bileşen tü
 
 1. Visual Studio 'da **Proje** menüsünü açın ve **Özellikler** ' i seçerek **HelloWorld Özellik sayfaları** iletişim kutusunu açın.
 
-1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri > bağlayıcı > sistem**' i seçin ve sonra **alt sistem** özelliğinin yanındaki düzenleme kutusunu seçin. Görüntülenen açılır menüde konsol ' ı **(/SUBSYSTEM: Console)** seçin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
+1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri > bağlayıcı > sistem** ' i seçin ve sonra **alt sistem** özelliğinin yanındaki düzenleme kutusunu seçin. Görüntülenen açılır menüde konsol ' ı **(/SUBSYSTEM: Console)** seçin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
    ![Özellik sayfaları iletişim kutusunu açın](media/vscpp-properties-linker-subsystem.gif "Özellik sayfaları iletişim kutusunu açın")
 
@@ -74,9 +74,9 @@ Visual Studio artık projenizi bir konsol penceresinde çalışacak şekilde der
 
 ## <a name="add-a-source-code-file"></a>Kaynak kodu dosyası Ekle
 
-1. **Çözüm Gezgini**' de HelloWorld projesini seçin. **Yeni öğe Ekle** iletişim kutusunu açmak için menü çubuğunda **Proje**, **Yeni öğe Ekle** ' yi seçin.
+1. **Çözüm Gezgini** ' de HelloWorld projesini seçin. **Yeni öğe Ekle** iletişim kutusunu açmak için menü çubuğunda **Proje** , **Yeni öğe Ekle** ' yi seçin.
 
-1. **Yeni öğe Ekle** iletişim kutusunda, zaten seçili değilse **yüklü** **Visual C++** seçin. Orta bölmede **C++ dosyası (. cpp)** öğesini seçin. **Adı** *HelloWorld. cpp*olarak değiştirin. İletişim kutusunu kapatmak ve dosyayı oluşturmak için **Ekle** ' yi seçin.
+1. **Yeni öğe Ekle** iletişim kutusunda, zaten seçili değilse **yüklü** **Visual C++** seçin. Orta bölmede **C++ dosyası (. cpp)** öğesini seçin. **Adı** *HelloWorld. cpp* olarak değiştirin. İletişim kutusunu kapatmak ve dosyayı oluşturmak için **Ekle** ' yi seçin.
 
    ![HelloWorld. cpp için bir kaynak dosyası ekleyin](media/vscpp-add-new-item.gif "HelloWorld. cpp için bir kaynak dosyası ekleyin")
 
@@ -119,11 +119,11 @@ Kod düzenleyicide şuna benzer olduğunda, sonraki adıma geçmeye ve uygulaman
 
 ### <a name="create-your-app-project-issues"></a>Uygulama projenizi oluşturma: sorunlar
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-**Yeni proje** iletişim kutusunda **C++**, **Windows**ve **konsol** etiketleri bulunan bir **konsol uygulaması** şablonu gösterilmelidir. Bunu görmüyorsanız, iki olası neden vardır. Listenin dışına filtre uygulanabilir veya yüklenmemiş olabilir. İlk olarak, şablon listesinin en üstünde yer alarak filtre açılan listelerini denetleyin. Bunları **C++**, **Windows**ve **konsoluna**ayarlayın. C++ **konsol uygulaması** şablonu görünmelidir; Aksi halde, C++ iş yüküyle **masaüstü geliştirme** yüklü değildir.
+**Yeni proje** iletişim kutusunda **C++** , **Windows** ve **konsol** etiketleri bulunan bir **konsol uygulaması** şablonu gösterilmelidir. Bunu görmüyorsanız, iki olası neden vardır. Listenin dışına filtre uygulanabilir veya yüklenmemiş olabilir. İlk olarak, şablon listesinin en üstünde yer alarak filtre açılan listelerini denetleyin. Bunları **C++** , **Windows** ve **konsoluna** ayarlayın. C++ **konsol uygulaması** şablonu görünmelidir; Aksi halde, C++ iş yüküyle **masaüstü geliştirme** yüklü değildir.
 
-**C++ Ile masaüstü geliştirme**yüklemek Için, **Yeni proje** iletişim kutusundan yükleyiciyi hemen çalıştırabilirsiniz. Yükleyiciyi başlatmak için şablon listesinin altındaki **daha fazla araç ve özellik yükleme** bağlantısını seçin. **Kullanıcı hesabı denetimi** iletişim kutusu izinleri Istediğinde, **Evet**' i seçin. Yükleyicide, C++ iş yüküyle **masaüstü geliştirme** 'nın işaretli olduğundan emin olun. Ardından, Visual Studio yüklemenizi güncelleştirmek için **Değiştir** ' i seçin.
+**C++ Ile masaüstü geliştirme** yüklemek Için, **Yeni proje** iletişim kutusundan yükleyiciyi hemen çalıştırabilirsiniz. Yükleyiciyi başlatmak için şablon listesinin altındaki **daha fazla araç ve özellik yükleme** bağlantısını seçin. **Kullanıcı hesabı denetimi** iletişim kutusu izinleri Istediğinde, **Evet** ' i seçin. Yükleyicide, C++ iş yüküyle **masaüstü geliştirme** 'nın işaretli olduğundan emin olun. Ardından, Visual Studio yüklemenizi güncelleştirmek için **Değiştir** ' i seçin.
 
 Aynı ada sahip başka bir proje zaten varsa, projeniz için başka bir ad seçin. Veya mevcut projeyi silip yeniden deneyin. Mevcut bir projeyi silmek için dosya Gezgini 'ndeki çözüm klasörünü ( *HelloWorld. sln* dosyasını içeren klasör) silin.
 
@@ -131,13 +131,13 @@ Aynı ada sahip başka bir proje zaten varsa, projeniz için başka bir ad seçi
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
-**Yeni proje** iletişim kutusunda, **yüklü**' ın altında bir **Visual C++** girişi gösterilmezse, Visual Studio kopyanızın büyük olasılıkla C++ iş yükünün yüklü **olduğu masaüstü geliştirmesi** yoktur. **Yeni proje** iletişim kutusundan yükleyiciyi hemen çalıştırabilirsiniz. Yükleyiciyi yeniden başlatmak için **Visual Studio yükleyicisi aç** bağlantısını seçin. **Kullanıcı hesabı denetimi** iletişim kutusu izinleri Istediğinde, **Evet**' i seçin. Gerekirse yükleyiciyi güncelleştirin. Yükleyicide, C++ iş yükü **Ile masaüstü geliştirme** iş yükünün işaretli olduğundan emin olun ve Visual Studio yüklemenizi güncelleştirmek için **Tamam** ' ı seçin.
+**Yeni proje** iletişim kutusunda, **yüklü** ' ın altında bir **Visual C++** girişi gösterilmezse, Visual Studio kopyanızın büyük olasılıkla C++ iş yükünün yüklü **olduğu masaüstü geliştirmesi** yoktur. **Yeni proje** iletişim kutusundan yükleyiciyi hemen çalıştırabilirsiniz. Yükleyiciyi yeniden başlatmak için **Visual Studio yükleyicisi aç** bağlantısını seçin. **Kullanıcı hesabı denetimi** iletişim kutusu izinleri Istediğinde, **Evet** ' i seçin. Gerekirse yükleyiciyi güncelleştirin. Yükleyicide, C++ iş yükü **Ile masaüstü geliştirme** iş yükünün işaretli olduğundan emin olun ve Visual Studio yüklemenizi güncelleştirmek için **Tamam** ' ı seçin.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 Aynı ada sahip başka bir proje zaten varsa, projeniz için başka bir ad seçin. Veya mevcut projeyi silip yeniden deneyin. Mevcut bir projeyi silmek için dosya Gezgini 'ndeki çözüm klasörünü ( *HelloWorld. sln* dosyasını içeren klasör) silin.
 
@@ -145,7 +145,7 @@ Aynı ada sahip başka bir proje zaten varsa, projeniz için başka bir ad seçi
 
 ### <a name="make-your-project-a-console-app-issues"></a>Projenizi bir konsol uygulaması yapın: sorunlar
 
-**Yapılandırma özellikleri**altında listelenmiş **bağlayıcı** görmüyorsanız, **Özellik sayfaları** iletişim kutusunu kapatmak için **iptal** ' i seçin. Yeniden denemeden önce **HelloWorld** projesinin **Çözüm Gezgini** seçildiğinden emin olun. **Çözüm Gezgini**' de **HelloWorld** çözümünü ya da başka bir öğeyi seçmeyin.
+**Yapılandırma özellikleri** altında listelenmiş **bağlayıcı** görmüyorsanız, **Özellik sayfaları** iletişim kutusunu kapatmak için **iptal** ' i seçin. Yeniden denemeden önce **HelloWorld** projesinin **Çözüm Gezgini** seçildiğinden emin olun. **Çözüm Gezgini** ' de **HelloWorld** çözümünü ya da başka bir öğeyi seçmeyin.
 
 Özelliği seçinceye kadar, DropDown denetimi **alt sistem** özelliği düzenleme kutusunda görünmez. Düzenleme kutusuna tıklayarak seçin. Ya da **alt sistem** vurgulanana kadar iletişim kutusu denetimlerinde geçiş yapmak için **Tab** tuşuna basabilirsiniz. Açılır denetimi seçin veya açmak için **alt + aşağı** tuşlarına basın.
 
@@ -155,7 +155,7 @@ Aynı ada sahip başka bir proje zaten varsa, projeniz için başka bir ad seçi
 
 Kaynak kod dosyasına farklı bir ad vermeniz normaldir. Ancak, projenize aynı kodu içeren birden fazla dosya eklemeyin.
 
-Projenize yanlış dosya türünü eklediyseniz (örneğin, bir üstbilgi dosyası), dosyayı silip yeniden deneyin. Dosyayı silmek için **Çözüm Gezgini**' de seçin. Ardından **Delete** tuşuna basın.
+Projenize yanlış dosya türünü eklediyseniz (örneğin, bir üstbilgi dosyası), dosyayı silip yeniden deneyin. Dosyayı silmek için **Çözüm Gezgini** ' de seçin. Ardından **Delete** tuşuna basın.
 
 [Geri dönün](#add-a-source-code-file).
 

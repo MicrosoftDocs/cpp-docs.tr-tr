@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 8ec2c6bfcacf28998058dc66b5f363fbf1ea5d70
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1486a76aab7b9a4f3b4da209f4f163b4c65b0ac4
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224116"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920105"
 ---
 # <a name="matchevent"></a>MatchEvent
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 `MatchEvent`İşlevi bir olayı olay türleri listesiyle eşleştirmek için kullanılır. Olay listedeki bir türle eşleşiyorsa, daha fazla işleme için bir işleyiciye iletilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -56,10 +56,10 @@ Tarafından desteklenen bir tür `operator()` . Hangi bağımsız değişkenleri
 Geçirilen ek bağımsız değişkenlerin türleri `MatchEvent` .
 
 *olay*\
-*Tevent* ve *TEvents*tarafından tanımlanan olay türleriyle eşleşecek olay.
+*Tevent* ve *TEvents* tarafından tanımlanan olay türleriyle eşleşecek olay.
 
 *çağrılabilir*\
-`MatchEvent`olay, *tevent* ve *TEvents*tarafından tanımlanan herhangi bir olay türüyle başarılı bir şekilde eşleştirdikten sonra *çağrılabilir* çağırır. *Çağrılabilir* öğesine geçirilen ilk bağımsız değişken, eşleşen olay türünün bir r değeridir. *Extraargs* parametre paketi, kalan *çağrılabilir*parametrelerde kusursuz iletilir.  
+`MatchEvent`olay, *tevent* ve *TEvents* tarafından tanımlanan herhangi bir olay türüyle başarılı bir şekilde eşleştirdikten sonra *çağrılabilir* çağırır. *Çağrılabilir* öğesine geçirilen ilk bağımsız değişken, eşleşen olay türünün bir r değeridir. *Extraargs* parametre paketi, kalan *çağrılabilir* parametrelerde kusursuz iletilir.  
 
 *extraArgs*\
 Kusursuz şekilde iletilen bağımsız değişkenler, eşleşen olay türüyle birlikte *çağrılabilir* .
@@ -70,7 +70,7 @@ Kusursuz şekilde iletilen bağımsız değişkenler, eşleşen olay türüyle b
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Tevent* ve *TEvents* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları*listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
+*Tevent* ve *TEvents* parametreleri için kullanılacak olay türleri bir *yakalama sınıfları* listesinden seçilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 

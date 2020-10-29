@@ -1,87 +1,87 @@
 ---
-title: ATL OLE DB sağlayıcısı Sihirbazı
+title: ATL OLE DB Sağlayıcısı Sihirbazı
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-ms.openlocfilehash: 91384d6c61368ee56ed303622e5c1bdfad09bd8a
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: 43b8ed4507b004f1e78bc1b9dda64c44ff56e1d7
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706973"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921145"
 ---
-# <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB sağlayıcısı Sihirbazı
+# <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB Sağlayıcısı Sihirbazı
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-Bu sihirbaz, Visual Studio 2019 bulunan ve daha yeni değil.
+Bu sihirbaz, Visual Studio 2019 ve sonrasında kullanılamaz.
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2008'den itibaren bu sihirbaz tarafından üretilen kayıt betiği altında COM bileşenlerini kaydolacak **HKEY_CURRENT_USER** yerine **HKEY_LOCAL_MACHINE**. Bu davranışı değiştirmek için Ayarla **tüm kullanıcılar için kayıt bileşeni** ATL Sihirbazı seçeneği.
+Visual Studio 2008 ile başlayarak, bu sihirbaz tarafından oluşturulan kayıt betiği, COM bileşenlerini **HKEY_LOCAL_MACHINE** yerine **HKEY_CURRENT_USER** altına kaydeder. Bu davranışı değiştirmek için, ATL sihirbazının **tüm kullanıcılar Için kayıt bileşeni** seçeneğini ayarlayın.
 
-ATL OLE DB sağlayıcısı Sihirbazı seçenekleri aşağıdaki tabloda açıklanmaktadır:
+Aşağıdaki tabloda ATL OLE DB sağlayıcı Sihirbazı seçenekleri açıklanmaktadır:
 
 - **Kısa ad**
 
-   Oluşturulacak sağlayıcının kısa adını yazın. Otomatik olarak doldurur sihirbazdaki diğer düzenleme kutuları Buraya yazdığınız üzerinde temel. Dilerseniz diğer ad kutularını düzenleyebilirsiniz.
+   Oluşturulacak sağlayıcının kısa adını yazın. Sihirbazdaki diğer düzenleme kutuları, yazdığınız alana göre otomatik olarak doldurulur. İsterseniz diğer ad kutularını düzenleyebilirsiniz.
 
-- **Coclass'ı**
+- **Coclass**
 
-   Coclass adı. Program Kimliği adı, bu adla eşleşecek şekilde değiştirilir.
+   Coclass adı. ProgID adı bu adla eşleşecek şekilde değişir.
 
-- **Öznitelikli**
+- **İlişkilendirilmesi**
 
-   Bu seçenek, sihirbaz öznitelikler veya şablon bildirimleri kullanarak sağlayıcısı sınıfları oluşturacak olup olmadığını belirtir. Bu seçeneği belirlediğinizde sihirbaz (öznitelikli projesinde oluşturduysanız varsayılan seçenek budur) şablon bildirimleri yerine öznitelikleri kullanır. Bu seçeneği temizleyin, sihirbaz şablon bildirimleri yerine öznitelikleri (öznitelikli projenizi oluşturduysanız varsayılan seçenek budur) kullanır.
+   Bu seçenek, sihirbazın öznitelikler veya şablon bildirimleri kullanarak sağlayıcı sınıfları oluşturup oluşturmayacağını belirtir. Bu seçeneği belirlediğinizde, sihirbaz şablon bildirimleri yerine öznitelikleri kullanır (öznitelikli bir proje oluşturduysanız bu varsayılan seçenektir). Bu seçeneği temizlediğinizde, sihirbaz öznitelikler yerine şablon bildirimleri kullanır (Bu, öznitelik olmayan bir proje oluşturduysanız bu varsayılan seçenektir).
 
-   Öznitelikli olmayan bir proje oluşturduğunuzda bu seçeneği seçerseniz, sihirbaz proje öznitelikli projesinde dönüştürülür ve devam edilip edilmeyeceğini ister uyarır.
+   Öznitelik atanmış olmayan bir proje oluşturduğunuzda bu seçeneği belirlerseniz, sihirbaz, projenin öznitelikli bir projeye dönüştürüleceğini ve devam edip etmediğini istemediğinizi uyarır.
 
 - **ProgID**
 
-   Program Kimliği veya programlama tanımlayıcısı, uygulamanızın GUID yerine kullanabileceğiniz bir metin dizesidir. Program Kimliği adı *Projectname.Coclassname*.
+   ProgID veya programlı tanımlayıcı, uygulamanızın GUID yerine kullanabileceği bir metin dizesidir. ProgID adı *ProjectName. Coclassname* biçiminde bulunur.
 
 - **Sürüm**
 
    Sağlayıcınızın sürüm numarası. Varsayılan değer 1'dir.
 
-- **Veri kaynağı sınıfı**
+- **DataSource sınıfı**
 
-   Veri kaynağı sınıfı C formun adını*Shortname*kaynak.
+   C *ShortName* kaynağının form veri kaynağı sınıfının adı.
 
-- **Veri kaynağı .h dosyası**
+- **DataSource. h dosyası**
 
    Veri kaynağı sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
 
 - **Oturum sınıfı**
 
-   Oturum sınıfının C formu adını*Shortname*oturumu.
+   C *ShortName* oturumunun biçimindeki oturum sınıfının adı.
 
-- **Oturumu .h dosyası**
+- **Session. h dosyası**
 
    Oturum sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
 
 - **Komut sınıfı**
 
-   Komut sınıfının C formun adı*Shortname*komutu.
+   C *ShortName* komutunun form komut sınıfının adı.
 
-- **Komut .h dosyası**
+- **Command. h dosyası**
 
-   Komut sınıfı için üst bilgi dosyası. Bu ad düzenlenemez ve satır kümesi üst bilgi dosyasının adına bağlıdır.
+   Komut sınıfı için üst bilgi dosyası. Bu ad düzenlenemiyor ve satır kümesi üstbilgi dosyasının adına bağlı.
 
-- **Satır kümesi sınıfı**
+- **Rowset sınıfı**
 
-   Satır kümesi sınıfının C formun adı*Shortname*satır kümesi.
+   C *ShortName* satır kümesinin form satır kümesi sınıfının adı.
 
-- **Satır kümesi .h dosyası**
+- **Rowset. h dosyası**
 
    Satır kümesi sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
 
-- **Satır kümesi .cpp dosyası**
+- **Rowset. cpp dosyası**
 
    Sağlayıcının uygulama dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir uygulama dosyasını seçebilirsiniz.
 

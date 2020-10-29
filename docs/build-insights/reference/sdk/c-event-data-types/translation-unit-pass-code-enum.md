@@ -1,6 +1,6 @@
 ---
-title: TRANSLATION_UNIT_PASS_CODE enum
-description: C++ Build Insights SDK TRANSLATION_UNIT_PASS_CODE enum referans.
+title: TRANSLATION_UNIT_PASS_CODE numaralandırması
+description: C++ Build Insights SDK 'Sı TRANSLATION_UNIT_PASS_CODE enum başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,30 +9,30 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: b0162d7e53bb7ee7035b94a6b640f6db87cd8b8d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 31f3e16ce6d9aa8c3c9db6cf9c11069dc3ec22fe
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325283"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920924"
 ---
-# <a name="translation_unit_pass_code-enum"></a>TRANSLATION_UNIT_PASS_CODE enum
+# <a name="translation_unit_pass_code-enum"></a>TRANSLATION_UNIT_PASS_CODE numaralandırması
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Enum. `TRANSLATION_UNIT_PASS_CODE`
+`TRANSLATION_UNIT_PASS_CODE`Sabit listesi.
 
 ## <a name="members"></a>Üyeler
 
-| Adı | Değer | Açıklama |
+| Ad | Değer | Açıklama |
 |--|--|--|
-| `TRANSLATION_UNIT_PASS_CODE_FRONT_END` | 0 (0x0000000) | Kaynak kodunu ayrıştirma ve ara dile dönüştürmeden sorumlu ön uç geçişi. |
-| `TRANSLATION_UNIT_PASS_CODE_BACK_END` | 1 (0x00000001) | Ara dili optimize etmek ve makine koduna dönüştürmekten sorumlu arka uç geçişi. |
+| `TRANSLATION_UNIT_PASS_CODE_FRONT_END` | 0 (0x00000000) | Ön uç geçişi, kaynak kodu ayrıştırılmasından ve ara dile dönüştürülürken sorumludur. |
+| `TRANSLATION_UNIT_PASS_CODE_BACK_END` | 1 (0x00000001) | Ara dili iyileştirmekten ve makine koduna dönüştürülürken sorumlu olan arka uç geçişi. |
 
 ## <a name="remarks"></a>Açıklamalar
 

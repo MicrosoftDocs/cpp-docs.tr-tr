@@ -3,18 +3,18 @@ title: Windows XP için programları yapılandırma
 description: Visual Studio 'da C++ Windows XP araç kümelerini yüklemek ve kullanmak.
 ms.date: 03/16/2020
 ms.assetid: 1e4487b3-d815-4123-878b-5718b22f0fd5
-ms.openlocfilehash: 92364d7fd25ac617baacc125b279fb0ee9c92f62
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 09fe1a511c92f999e02646b9e606a3631a175215
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440471"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919377"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Windows XP için programları yapılandırma
 
 Visual Studio birden çok platform araç kümesini destekler. Bu, varsayılan araç takımı tarafından desteklenmeyen işletim sistemlerini ve çalışma zamanı kitaplıklarını hedeflemek mümkün hale gelir. Örneğin, platform araç takımını değiştirerek, Windows XP ve Windows Server 2003 ' i hedefleyen uygulamalar oluşturmak için Visual Studio 2017 C++ derleyicisini kullanabilirsiniz. Ayrıca, ikili uyumlu eski kodu korumak ve Visual Studio IDE 'nin en son özelliklerinden yararlanmak için eski platform araç kümelerini de kullanabilirsiniz.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 2019 ' de sağlanan v142 araç takımı, Windows XP için kod oluşturmaya yönelik destek içermez. Visual Studio 2017 v141_xp araç takımını kullanarak Windows XP geliştirme desteği Visual Studio Yükleyicisi tek bir bileşen seçeneği olarak sunulmaktadır.
 
@@ -22,15 +22,15 @@ Visual Studio 2019 ' de sağlanan v142 araç takımı, Windows XP için kod olu�
 
 ## <a name="install-the-windows-xp-platform-toolset"></a>Windows XP platformu araç takımını 'nı yükler
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-Windows XP ve Windows Server 2003 ' i hedeflemek için Visual Studio 2017 platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. Bu iş yükü için isteğe bağlı bileşenler listesinde, **C++ Için WINDOWS XP desteği**' ni seçin ve ardından **Install** veya **Modify**' ı seçin.
+Windows XP ve Windows Server 2003 ' i hedeflemek için Visual Studio 2017 platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. Bu iş yükü için isteğe bağlı bileşenler listesinde, **C++ Için WINDOWS XP desteği** ' ni seçin ve ardından **Install** veya **Modify** ' ı seçin.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-Windows XP ve Windows Server 2003 ' i hedeflemek için v141_xp platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. **Ayrı bileşenler** sekmesinde, **derleyiciler, derleme araçları ve çalışma zamanları**altında, **vs 2017 (V141) araçları \[için C++ Windows XP desteği kullanım dışı**' yı seçin ve ardından **Install** veya **Modify**' ı seçin.
+Windows XP ve Windows Server 2003 ' i hedeflemek için v141_xp platform araç takımını ve bileşenlerini almak üzere Visual Studio Yükleyicisi çalıştırın. Visual Studio 'Yu ilk yüklediğinizde veya var olan bir yüklemeyi değiştirirken, C++ iş yüküyle **masaüstü geliştirme** 'nın seçildiğinden emin olun. **Ayrı bileşenler** sekmesinde, **derleyiciler, derleme araçları ve çalışma zamanları** altında, **vs 2017 (V141) araçları için C++ Windows XP desteği \[ kullanım dışı** ' yı seçin ve ardından **Install** veya **Modify** ' ı seçin.
 
 ::: moniker-end
 
@@ -40,9 +40,9 @@ Visual Studio 'ya dahil olan Windows XP platformu araç takımı, Windows 7 SDK 
 
 ### <a name="to-target-windows-xp"></a>Windows XP 'yi hedeflemek için
 
-1. **Çözüm Gezgini**' de, projeniz için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+1. **Çözüm Gezgini** ' de, projeniz için kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
 
-1. Projenin **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** > **genel**' i seçin. **Platform araç takımı** özelliğini tercih ETTIĞINIZ Windows XP araç takımı olarak ayarlayın. Örneğin, Visual Studio 2017 ' de Microsoft C++ derleyicisini kullanarak Windows XP ve Windows Server 2003 için kod oluşturmak üzere **Visual studio 2017-WINDOWS XP (v141_xp)** öğesini seçin.
+1. Projenin **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **genel** ' i seçin. **Platform araç takımı** özelliğini tercih ETTIĞINIZ Windows XP araç takımı olarak ayarlayın. Örneğin, Visual Studio 2017 ' de Microsoft C++ derleyicisini kullanarak Windows XP ve Windows Server 2003 için kod oluşturmak üzere **Visual studio 2017-WINDOWS XP (v141_xp)** öğesini seçin.
 
 ### <a name="c-runtime-support"></a>C++ çalışma zamanı desteği
 
@@ -68,7 +68,7 @@ Platform ve kitaplık desteğinin farklılığı nedeniyle, bir Windows XP platf
 
 - **C++ dil özellikleri**
 
-   V110\_XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2012 ' de uygulanan C++ dil özellikleri desteklenir. V120\_XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2013 uygulanan C++ dil özellikleri desteklenir. V140\_XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2015 ' de uygulanan C++ dil özellikleri desteklenir. V141\_XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2017 ' de uygulanan C++ dil özellikleri desteklenir. Visual Studio, eski platform araç kümelerini kullanarak derleme yaparken karşılık gelen derleyiciyi kullanır. Derleyicinin bu sürümünde uygulanan ek C++ dil özelliklerinden yararlanmak için en son Windows XP platformu araç takımını kullanın.
+   V110 XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2012 ' de uygulanan C++ dil özellikleri desteklenir \_ . V120 XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2013 uygulanan C++ dil özellikleri desteklenir \_ . V140 XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2015 ' de uygulanan C++ dil özellikleri desteklenir \_ . V141 XP platform araç takımını kullanan uygulamalarda yalnızca Visual Studio 2017 ' de uygulanan C++ dil özellikleri desteklenir \_ . Visual Studio, eski platform araç kümelerini kullanarak derleme yaparken karşılık gelen derleyiciyi kullanır. Derleyicinin bu sürümünde uygulanan ek C++ dil özelliklerinden yararlanmak için en son Windows XP platformu araç takımını kullanın.
 
 - **Uzaktan hata ayıklama**
 

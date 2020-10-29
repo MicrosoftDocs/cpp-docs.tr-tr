@@ -2,20 +2,20 @@
 title: Visual Studio 'da Linux CMake projesi yapılandırma
 description: Visual Studio 'da Linux CMake ayarlarını yapılandırma
 ms.date: 08/08/2020
-ms.openlocfilehash: 32c851791402b59c941ae088fa637d3d9953dd1b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c4c2d4682b6d18f9175a92a810b3f86d8132fc0c
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504732"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921925"
 ---
 # <a name="configure-a-linux-cmake-project-in-visual-studio"></a>Visual Studio 'da Linux CMake projesi yapılandırma
 
-::: moniker range="vs-2015"
-Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. Bu sürümlerin belgelerini görmek için, içindekiler tablosunun üstünde bulunan **Sürüm** açılan listesini **Visual Studio 2017** veya **Visual Studio 2019**olarak ayarlayın.
+::: moniker range="msvc-140"
+Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir. Bu sürümlerin belgelerini görmek için, içindekiler tablosunun üstünde bulunan **Sürüm** açılan listesini **Visual Studio 2017** veya **Visual Studio 2019** olarak ayarlayın.
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 Bu konuda, bir CMake projesine, Linux için uzak bir Linux sistemi veya Linux (WSL) için Windows alt sistemi hedefleyen bir Linux yapılandırmasının nasıl ekleneceği açıklanmaktadır. [Visual Studio 'Da Linux CMake projesi oluşturma](cmake-linux-project.md)ile başlayan seriye devam eder. Bunun yerine MSBuild kullanıyorsanız, bkz. [Visual Studio 'Da Linux MSBuild projesi yapılandırma](configure-a-linux-project.md)
 
 ## <a name="add-a-linux-configuration"></a>Linux yapılandırması ekleme
@@ -23,10 +23,10 @@ Bu konuda, bir CMake projesine, Linux için uzak bir Linux sistemi veya Linux (W
 Bir yapılandırma, aynı kaynak kodlu farklı platformları (Windows, WSL, uzak sistem) hedeflemek için kullanılabilir. Ayrıca, derleyicilerini ayarlamak, ortam değişkenlerini geçirmek ve CMake 'in nasıl çağrılacağını özelleştirmek için de bir yapılandırma kullanılır. Dosya *CMakeSettings.js* , [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md)bölümünde listelenen özelliklerin bazılarını veya tümünü ve uzak Linux makinesindeki derleme ayarlarını denetleyen ek özellikleri belirtir.
 ::: moniker-end
 
-::: moniker range="vs-2017"
-Visual Studio 2017 ' de varsayılan CMake ayarlarını değiştirmek için, ana menüden **CMake**  >  **değişiklik CMake ayarlarını**  >  **CMakeLists.txt** seçin. Ya da **Çözüm Gezgini** *CMakeLists.txt* sağ tıklayıp **CMake ayarlarını değiştir**' i seçin. Daha sonra Visual Studio, kök proje klasörünüzde dosya üzerinde yeni bir *CMakeSettings.js* oluşturur. Değişiklik yapmak için dosyayı açın ve doğrudan değiştirin. Daha fazla bilgi için bkz. [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md).
+::: moniker range="msvc-150"
+Visual Studio 2017 ' de varsayılan CMake ayarlarını değiştirmek için, ana menüden **CMake**  >  **değişiklik CMake ayarlarını**  >  **CMakeLists.txt** seçin. Ya da **Çözüm Gezgini** *CMakeLists.txt* sağ tıklayıp **CMake ayarlarını değiştir** ' i seçin. Daha sonra Visual Studio, kök proje klasörünüzde dosya üzerinde yeni bir *CMakeSettings.js* oluşturur. Değişiklik yapmak için dosyayı açın ve doğrudan değiştirin. Daha fazla bilgi için bkz. [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md).
 
-Visual Studio 2017 ' de Linux-Debug için varsayılan yapılandırma (ve Visual Studio 2019 sürüm 16,0) şuna benzer:
+Visual Studio 2017 (ve Visual Studio 2019 sürüm 16,0) içindeki Linux-Debug için varsayılan yapılandırma şuna benzer:
 
 ```json
 {
@@ -56,14 +56,14 @@ Visual Studio 2017 ' de Linux-Debug için varsayılan yapılandırma (ve Visual 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
-Visual Studio 2019 ' de varsayılan CMake ayarlarını değiştirmek için, ana araç çubuğundan **yapılandırma** açılan listesini açın ve **yapılandırmaları Yönet**' i seçin.
+::: moniker range="msvc-160"
+Visual Studio 2019 ' de varsayılan CMake ayarlarını değiştirmek için, ana araç çubuğundan **yapılandırma** açılan listesini açın ve **yapılandırmaları Yönet** ' i seçin.
 
 ![CMake yönetme yapılandırması](../build/media/vs2019-cmake-manage-configurations.png "CMake yapılandırma açılır")
 
-Bu komut, kök proje klasörünüzdeki dosyadaki *CMakeSettings.js* düzenlemek Için kullanabileceğiniz **CMake ayarları düzenleyicisini**açar. Ayrıca, düzenleyicide **JSON Düzenle** düğmesine TıKLAYARAK dosyayı JSON Düzenleyicisi ile açabilirsiniz. Daha fazla bilgi için bkz. [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md).
+Bu komut, kök proje klasörünüzdeki dosyadaki *CMakeSettings.js* düzenlemek Için kullanabileceğiniz **CMake ayarları düzenleyicisini** açar. Ayrıca, düzenleyicide **JSON Düzenle** düğmesine TıKLAYARAK dosyayı JSON Düzenleyicisi ile açabilirsiniz. Daha fazla bilgi için bkz. [CMake ayarlarını özelleştirme](../build/customize-cmake-settings.md).
 
-Visual Studio 2019 sürüm 16,1 ' de varsayılan Linux-hata ayıklama yapılandırması ve sonraki sürümler şöyle görünür:
+Visual Studio 2019 sürüm 16,1 ve sonraki sürümlerde varsayılan Linux-Debug yapılandırma şu şekilde görünür:
 
 ```json
 {
@@ -94,7 +94,7 @@ Visual Studio 2019 sürüm 16,1 ' de varsayılan Linux-hata ayıklama yapıland�
 Visual Studio 2019 sürüm 16,6 veya sonraki sürümlerde, Dokja, uzak bir sistemi veya WSL 'yi hedefleyen yapılandırmalara yönelik varsayılan oluşturucu olur. Daha fazla bilgi için bkz. [C++ ekip blogu](https://devblogs.microsoft.com/cppblog/linux-development-with-visual-studio-first-class-support-for-gdbserver-improved-build-times-with-ninja-and-updates-to-the-connection-manager/)üzerinde bu gönderi.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 Bu ayarlar hakkında daha fazla bilgi için bkz. [CMakeSettings.jsbaşvurusu](../build/cmakesettings-reference.md).
 
 Bir yapı gerçekleştirdiğinizde:
@@ -104,7 +104,7 @@ Bir yapı gerçekleştirdiğinizde:
 
 ## <a name="choose-a-linux-target"></a>Linux hedefi seçin
 
-CMake proje klasörünü açtığınızda, Visual Studio *CMakeLists.txt* dosyayı ayrıştırır ve **x86-Debug**' ı bir Windows hedefini belirtir. Uzak bir Linux sistemini hedeflemek için, proje ayarlarını Linux derleyicinizi temel alarak değiştirirsiniz. Örneğin, Linux üzerinde GCC kullanıyorsanız ve hata ayıklama bilgileri ile derlerken, şunu tercih edersiniz:  **Linux-GCC-Debug** veya **Linux-GCC-Release**.
+CMake proje klasörünü açtığınızda, Visual Studio *CMakeLists.txt* dosyayı ayrıştırır ve **x86-Debug** ' ı bir Windows hedefini belirtir. Uzak bir Linux sistemini hedeflemek için, proje ayarlarını Linux derleyicinizi temel alarak değiştirirsiniz. Örneğin, Linux üzerinde GCC kullanıyorsanız ve hata ayıklama bilgileri ile derlerken, şunu tercih edersiniz:  **Linux-GCC-Debug** veya **Linux-GCC-Release** .
 
 Uzak bir Linux hedefi belirtirseniz, kaynağınız uzak sisteme kopyalanır.
 
@@ -113,7 +113,7 @@ Bir hedef seçtikten sonra CMake, projenizin CMake önbelleğini oluşturmak iç
 ![Linux 'ta CMake önbelleği oluşturma](media/cmake-linux-1.png "Linux 'ta CMake önbelleğini oluşturma")
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="target-windows-subsystem-for-linux"></a>Linux için Windows alt sistemini hedefleme
 
@@ -131,7 +131,7 @@ WSL 'yi hedeflemek için ana araç çubuğundaki yapılandırma açılan menüs�
 
 **Visual Studio 2019 sürüm 16,1** WSL 'yi hedeflediğinizde, Linux üzerindeki derleyicinin bağlı Windows dosya sisteminde kaynak dosyalarınıza doğrudan erişimi olduğundan, Visual Studio 'nun kaynak dosyalarını kopyalaması ve yapı ağacınızdaki iki zaman uyumlu kopyasını koruması gerekmez.
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ### <a name="intellisense"></a>IntelliSense
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 031fb3837dbefe500eb33f9509f3270204d19b89
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 21ce276af9317c06f3b717b41685f419d2362d70
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215887"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921691"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama
 
@@ -46,15 +46,15 @@ Bu izlenecek yolu başlatmak için:
 
 Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürümüne bağlı olarak farklılık gösterir. Bu sayfanın sol üst kısmında doğru sürümün seçili olduğundan emin olun.
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ### <a name="to-create-the-sample-project-in-visual-studio-2019"></a>Visual Studio 2019 'de örnek proje oluşturmak için
 
 1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında, **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol**olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, `AMPMapReduce` proje için bir ad belirtmek üzere **ad** kutusuna girin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri** ' yi seçin. Bir sonraki sayfada, `AMPMapReduce` proje için bir ad belirtmek üzere **ad** kutusuna girin ve isterseniz proje konumunu belirtin.
 
    ![Projeyi adlandırın](../../build/media/mathclient-project-name-2019.png "Projeyi adlandırın")
 
@@ -62,23 +62,23 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ### <a name="to-create-the-sample-project-in-visual-studio-2017-or-visual-studio-2015"></a>Visual Studio 2017 veya Visual Studio 2015 ' de örnek proje oluşturmak için
 
 1. Visual Studio’yu çalıştırın.
 
-1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. Şablonlar bölmesinde **yüklü** altında **Visual C++**' yi seçin.
+1. Şablonlar bölmesinde **yüklü** altında **Visual C++** ' yi seçin.
 
-1. **Win32 konsol uygulaması**' nı seçin, `AMPMapReduce` **ad** kutusuna yazın ve **Tamam** düğmesini seçin.
+1. **Win32 konsol uygulaması** ' nı seçin, `AMPMapReduce` **ad** kutusuna yazın ve **Tamam** düğmesini seçin.
 
 1. **İleri** düğmesini seçin.
 
 1. **Önceden derlenmiş üst bilgi** onay kutusunu temizleyin ve ardından **son** düğmesini seçin.
 
-1. **Çözüm Gezgini**, *sthefx. h*, *targetver. h*ve *stdadfx. cpp* öğesini projeden silin.
+1. **Çözüm Gezgini** , *sthefx. h* , *targetver. h* ve *stdadfx. cpp* öğesini projeden silin.
 
 ::: moniker-end
 
@@ -203,15 +203,15 @@ Proje oluşturmaya yönelik yönergeler, kullandığınız Visual Studio sürüm
     }
 ```
 
-1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet**' i seçin.
+1. Menü çubuğunda **Dosya**  >  **Tümünü Kaydet** ' i seçin.
 
-1. **Çözüm Gezgini**, **AMPMapReduce**kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+1. **Çözüm Gezgini** , **AMPMapReduce** kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
 
-1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**altında **C/C++**  >  **önceden derlenmiş üst bilgiler**' i seçin.
+1. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** altında **C/C++**  >  **önceden derlenmiş üst bilgiler** ' i seçin.
 
-1. **Önceden derlenmiş üst bilgi** özelliği Için, **önceden derlenmiş üst bilgiler kullanmayan**' ı seçin ve ardından **Tamam** düğmesini seçin.
+1. **Önceden derlenmiş üst bilgi** özelliği Için, **önceden derlenmiş üst bilgiler kullanmayan** ' ı seçin ve ardından **Tamam** düğmesini seçin.
 
-1. Menü **çubuğunda Build**  >  **Build Solution**öğesini seçin.
+1. Menü **çubuğunda Build**  >  **Build Solution** öğesini seçin.
 
 ## <a name="debugging-the-cpu-code"></a>CPU kodunda hata ayıklama
 
@@ -219,22 +219,22 @@ Bu yordamda, bu uygulamadaki CPU kodunun doğru olduğundan emin olmak için yer
 
 ### <a name="to-debug-the-cpu-code"></a>CPU kodunda hata ayıklamak için
 
-1. **Çözüm Gezgini**, **AMPMapReduce**kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+1. **Çözüm Gezgini** , **AMPMapReduce** kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
 
-2. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**altında **hata ayıklama**' yı seçin. **Başlatmak Için hata ayıklayıcı** 'Da **yerel Windows hata ayıklayıcısı** ' nın seçildiğini doğrulayın.
+2. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** altında **hata ayıklama** ' yı seçin. **Başlatmak Için hata ayıklayıcı** 'Da **yerel Windows hata ayıklayıcısı** ' nın seçildiğini doğrulayın.
 
-3. **Kod düzenleyicisine**geri dönün.
+3. **Kod düzenleyicisine** geri dönün.
 
 4. Aşağıdaki çizimde gösterilen kod satırlarında kesme noktaları ayarlayın (yaklaşık satırlar 67 satır 70).
 
    ![CPU kesme noktaları](../../parallel/amp/media/campcpubreakpoints.png "CPU kesme noktaları") <br/>
    CPU kesme noktaları
 
-5. Menü çubuğunda **hata**  >  **ayıklamayı Başlat hata**Ayıkla ' yı seçin.
+5. Menü çubuğunda **hata**  >  **ayıklamayı Başlat hata** Ayıkla ' yı seçin.
 
 6. **Yereller** penceresinde, `stride_size` 70 satırındaki kesme noktasına ulaşılana kadar değerini gözlemleyin.
 
-7. Menü çubuğunda **hata**  >  **ayıklamayı Durdur hata**Ayıkla ' yı seçin.
+7. Menü çubuğunda **hata**  >  **ayıklamayı Durdur hata** Ayıkla ' yı seçin.
 
 ## <a name="debugging-the-gpu-code"></a>GPU kodunda hata ayıklama
 
@@ -242,15 +242,15 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
 
 ### <a name="to-debug-the-gpu-code"></a>GPU kodunda hata ayıklamak için
 
-1. **Çözüm Gezgini**, **AMPMapReduce**kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
+1. **Çözüm Gezgini** , **AMPMapReduce** kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
 
-2. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**altında **hata ayıklama**' yı seçin.
+2. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri** altında **hata ayıklama** ' yı seçin.
 
-3. **Başlatmak Için hata ayıklayıcı** listesinde, **yerel Windows hata ayıklayıcısı**' nı seçin.
+3. **Başlatmak Için hata ayıklayıcı** listesinde, **yerel Windows hata ayıklayıcısı** ' nı seçin.
 
 4. **Hata ayıklayıcı tür** listesinde, **Auto** seçeneğinin seçildiğini doğrulayın.
 
-    **Auto** varsayılan değerdir. Windows 10 ' dan önce, **GPU yalnızca** **Otomatik**yerine gerekli değerdir.
+    **Auto** varsayılan değerdir. Windows 10 ' dan önce, **GPU yalnızca** **Otomatik** yerine gerekli değerdir.
 
 5. **Tamam** düğmesini seçin.
 
@@ -259,11 +259,11 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
    ![GPU kesme noktaları](../../parallel/amp/media/campgpubreakpoints.png "GPU kesme noktaları") <br/>
    GPU kesme noktası
 
-7. Menü çubuğunda **hata**  >  **ayıklamayı Başlat hata**Ayıkla ' yı seçin. 67 ve 70 satırlarındaki CPU kodundaki kesme noktaları, bu kod satırları CPU üzerinde yürütüldüğü için GPU hata ayıklaması sırasında yürütülmez.
+7. Menü çubuğunda **hata**  >  **ayıklamayı Başlat hata** Ayıkla ' yı seçin. 67 ve 70 satırlarındaki CPU kodundaki kesme noktaları, bu kod satırları CPU üzerinde yürütüldüğü için GPU hata ayıklaması sırasında yürütülmez.
 
 ### <a name="to-use-the-gpu-threads-window"></a>GPU Iş parçacıkları penceresini kullanmak için
 
-1. **GPU iş parçacıkları** penceresini açmak için, menü çubuğunda **Debug**  >  **Windows**  >  **GPU iş parçacıkları**Hata Ayıkla ' yı seçin.
+1. **GPU iş parçacıkları** penceresini açmak için, menü çubuğunda **Debug**  >  **Windows**  >  **GPU iş parçacıkları** Hata Ayıkla ' yı seçin.
 
    GPU iş parçacıklarının durumunu, görüntülenen **GPU Iş parçacıkları** penceresinde inceleyebilirsiniz.
 
@@ -276,7 +276,7 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
 
    **GPU Iş parçacıkları** penceresinde, ETKIN dört GPU iş parçacığı vardır ve [tile_barrier:: wait](reference/tile-barrier-class.md#wait) ifadesinde, 21. satır hakkında ' da tanımlanan 28 GPU iş parçacığı vardır `t_idx.barrier.wait();` . Tüm 32 GPU iş parçacıkları ilk kutucuğa aittir `tile[0]` . Bir ok, geçerli iş parçacığını içeren satıra işaret eder. Farklı bir iş parçacığına geçiş yapmak için aşağıdaki yöntemlerden birini kullanın:
 
-    - **GPU Iş parçacıkları** penceresinde geçiş yapılacak iş parçacığının satırında, kısayol menüsünü açın ve **iş parçacığına geç**' i seçin. Satır birden fazla iş parçacığını temsil ediyorsa, iş parçacığı koordinatlarına göre ilk iş parçacığına geçiş yapmanız gerekir.
+    - **GPU Iş parçacıkları** penceresinde geçiş yapılacak iş parçacığının satırında, kısayol menüsünü açın ve **iş parçacığına geç** ' i seçin. Satır birden fazla iş parçacığını temsil ediyorsa, iş parçacığı koordinatlarına göre ilk iş parçacığına geçiş yapmanız gerekir.
 
     - İş parçacığının kutucuğunu ve iş parçacığı değerlerini ilgili metin kutularına girip **Iş parçacığı Değiştir** düğmesini seçin.
 
@@ -284,7 +284,7 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
 
 ### <a name="to-use-the-parallel-stacks-window"></a>Paralel Yığınlar penceresini kullanmak için
 
-1. **Paralel Yığınlar** penceresini açmak için, menü çubuğunda **Debug**  >  **Windows**  >  **paralel yığınları**Hata Ayıkla ' yı seçin.
+1. **Paralel Yığınlar** penceresini açmak için, menü çubuğunda **Debug**  >  **Windows**  >  **paralel yığınları** Hata Ayıkla ' yı seçin.
 
    Birden çok GPU iş parçacığının yığın çerçevelerini aynı anda incelemek için **Paralel Yığınlar** penceresini kullanabilirsiniz.
 
@@ -297,7 +297,7 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
 
    32 iş parçacığı, `_kernel_stub` `parallel_for_each` işlev çağrısındaki lambda ifadesine ve ardından `sum_kernel_tiled` işlevine, paralel azaltmanın gerçekleştiği yere gitti. 32 iş parçacığından 28 tanesi [tile_barrier:: wait](reference/tile-barrier-class.md#wait) ifadesine ilerlemedi ve 22. satırda engellenmiş durumda kalır, ancak diğer 4 iş parçacıkları ise `sum_kernel_tiled` 30. satırdaki etkin kalır.
 
-   **Paralel Yığınlar** penceresinin zengin veri Ipucunda **GPU iş parçacıkları** PENCERESINDE kullanılabilir olan bir GPU iş parçacığının özelliklerini inceleyebilirsiniz. Bunu yapmak için fare işaretçisini **sum_kernel_tiled**yığın çerçevesinde bekletin. Aşağıdaki çizimde Datatıp gösterilmektedir.
+   **Paralel Yığınlar** penceresinin zengin veri Ipucunda **GPU iş parçacıkları** PENCERESINDE kullanılabilir olan bir GPU iş parçacığının özelliklerini inceleyebilirsiniz. Bunu yapmak için fare işaretçisini **sum_kernel_tiled** yığın çerçevesinde bekletin. Aşağıdaki çizimde Datatıp gösterilmektedir.
 
    ![Paralel Yığınlar penceresi için Datatıp](../../parallel/amp/media/campe.png "Paralel Yığınlar penceresi için Datatıp") <br/>
    GPU iş parçacığı veri Ipucu
@@ -306,7 +306,7 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
 
 ### <a name="to-use-the-parallel-watch-window"></a>Paralel izleme penceresi kullanmak için
 
-1. **Paralel izleme** penceresini açmak için, menü çubuğunda **Hata Ayıkla**  >  **Windows**  >  **paralel izleme**  >  **paralel izleme 1**' i seçin.
+1. **Paralel izleme** penceresini açmak için, menü çubuğunda **Hata Ayıkla**  >  **Windows**  >  **paralel izleme**  >  **paralel izleme 1** ' i seçin.
 
    Birden çok iş parçacığı içindeki bir ifadenin değerlerini incelemek için **paralel izleme** penceresini kullanabilirsiniz.
 
@@ -325,7 +325,7 @@ Bu bölümde, işlevinde bulunan kod olan GPU kodunda hata ayıklama işlemi gö
    ![Sıralanmış sonuçlarla paralel izleme penceresi](../../parallel/amp/media/campf.png "Sıralanmış sonuçlarla paralel izleme penceresi") <br/>
    Sıralama sonuçları
 
-   **Excel düğmesini seçip** **Excel 'de aç**' ı seçerek **paralel izleme** penceresindeki içeriği Excel 'e aktarabilirsiniz. Geliştirme bilgisayarınızda Excel yüklüyse, içerik içeren bir Excel çalışma sayfası açılır.
+   **Excel düğmesini seçip** **Excel 'de aç** ' ı seçerek **paralel izleme** penceresindeki içeriği Excel 'e aktarabilirsiniz. Geliştirme bilgisayarınızda Excel yüklüyse, içerik içeren bir Excel çalışma sayfası açılır.
 
 6. **Paralel izleme** penceresinin sağ üst köşesinde, Boole ifadeleri kullanarak içeriği filtrelemek için kullanabileceğiniz bir filtre denetimi vardır. `localA[localIdx[0]] > 20000`Filtre denetimi metin kutusuna girin ve **ENTER** tuşunu seçin.
 
@@ -339,7 +339,7 @@ Belirli GPU iş parçacıklarını **GPU Iş parçacıkları** penceresinde, **p
 
 1. Kutucuk dizinine ve iş parçacığı dizinine göre sıralamak için **paralel izleme 1** penceresindeki **[thread]** sütun başlığını seçin.
 
-2. Menü çubuğunda **Hata Ayıkla**  >  **devam et**' i seçin. Bu, etkin olan dört iş parçacığının sonraki engelte ilerlemesini sağlar (32. gün: AMPMapReduce. cpp ' de tanımlanır).
+2. Menü çubuğunda **Hata Ayıkla**  >  **devam et** ' i seçin. Bu, etkin olan dört iş parçacığının sonraki engelte ilerlemesini sağlar (32. gün: AMPMapReduce. cpp ' de tanımlanır).
 
 3. Artık etkin olan dört iş parçacığını içeren satırın sol tarafındaki bayrak sembolünü seçin.
 
@@ -350,14 +350,14 @@ Belirli GPU iş parçacıklarını **GPU Iş parçacıkları** penceresinde, **p
 
    Paralel **Parallel Watch** Yığınlar penceresi ve paralel **yığınlar** penceresinin datatıp her ikisi de bayraklı iş parçacıklarını gösterir.
 
-4. İşaretlediğiniz dört iş parçacığına odaklanmak isterseniz, **GPU Iş parçacıkları**, **paralel Izleme**ve **Paralel Yığınlar** penceresinde, yalnızca bayraklı iş parçacıklarında göstermeyi tercih edebilirsiniz.
+4. İşaretlediğiniz dört iş parçacığına odaklanmak isterseniz, **GPU Iş parçacıkları** , **paralel Izleme** ve **Paralel Yığınlar** penceresinde, yalnızca bayraklı iş parçacıklarında göstermeyi tercih edebilirsiniz.
 
    Herhangi bir Windows veya **hata ayıklama konumu** araç çubuğunda **bayraklı yalnızca bayrak göster** düğmesini seçin. Aşağıdaki çizimde **hata ayıklama konumu** araç çubuğunda **yalnızca bayraklı göster** düğmesi gösterilmektedir.
 
    ![Yalnızca Işaretli bayraklı simgesiyle hata ayıklama konumu araç çubuğu](../../parallel/amp/media/camph.png "Yalnızca Işaretli bayraklı simgesiyle hata ayıklama konumu araç çubuğu") <br/>
    **Yalnızca bayraklı düğmeyi göster**
 
-   Artık **GPU Iş parçacıkları**, **paralel Izleme**ve **Paralel Yığınlar** Windows yalnızca bayraklı iş parçacıklarını görüntüler.
+   Artık **GPU Iş parçacıkları** , **paralel Izleme** ve **Paralel Yığınlar** Windows yalnızca bayraklı iş parçacıklarını görüntüler.
 
 ## <a name="freezing-and-thawing-gpu-threads"></a>GPU Iş parçacıklarını dondurma ve çözülmüş
 
@@ -367,9 +367,9 @@ GPU iş parçacıklarını, **GPU Iş parçacıkları** penceresinden ya da **pa
 
 1. Tüm iş parçacıklarını görüntülemek için, **yalnızca bayraklı göster** düğmesini seçin.
 
-2. Menü çubuğunda **Hata Ayıkla**  >  **devam et**' i seçin.
+2. Menü çubuğunda **Hata Ayıkla**  >  **devam et** ' i seçin.
 
-3. Etkin satır için kısayol menüsünü açın ve ardından **dondurma**' yı seçin.
+3. Etkin satır için kısayol menüsünü açın ve ardından **dondurma** ' yı seçin.
 
    **GPU Iş parçacıkları** penceresi aşağıdaki şekilde tüm dört iş parçacıklarının dondurulmuş olduğunu gösterir.
 
@@ -378,34 +378,34 @@ GPU iş parçacıklarını, **GPU Iş parçacıkları** penceresinden ya da **pa
 
    Benzer şekilde, **paralel izleme** penceresi tüm dört iş parçacıklarının dondurulmuş olduğunu gösterir.
 
-4. **Debug**  >  Sonraki dört GPU iş parçacığının 22. satırdaki engelden sonra ilerlemesini ve 30. satırdaki kesme noktasına ulaşmasını**sağlamak için menü** çubuğunda Hata Ayıkla ' yı seçin. **GPU Iş parçacıkları** penceresi, daha önce dondurulmuş olan dört iş parçacığının dondurulmuş olduğunu ve etkin durumda kaldığını gösterir.
+4. **Debug**  >  Sonraki dört GPU iş parçacığının 22. satırdaki engelden sonra ilerlemesini ve 30. satırdaki kesme noktasına ulaşmasını **sağlamak için menü** çubuğunda Hata Ayıkla ' yı seçin. **GPU Iş parçacıkları** penceresi, daha önce dondurulmuş olan dört iş parçacığının dondurulmuş olduğunu ve etkin durumda kaldığını gösterir.
 
-5. Menü çubuğunda **Hata Ayıkla**, **devam et**' i seçin.
+5. Menü çubuğunda **Hata Ayıkla** , **devam et** ' i seçin.
 
 6. **Paralel izleme** penceresinde, tek veya bırden çok GPU iş parçacığını çöz de yapabilirsiniz.
 
 ### <a name="to-group-gpu-threads"></a>GPU iş parçacıklarını gruplandırmak için
 
-1. **GPU Iş parçacıkları** penceresindeki iş parçacıklarından birinin kısayol menüsünde **grupla**' yı, **Adres**' i seçin.
+1. **GPU Iş parçacıkları** penceresindeki iş parçacıklarından birinin kısayol menüsünde **grupla** ' yı, **Adres** ' i seçin.
 
    **GPU Iş parçacıkları** penceresindeki iş parçacıkları adrese göre gruplandırılır. Adres, her iş parçacığı grubunun bulunduğu ayrıştırılmış derleme içindeki yönergeye karşılık gelir. 24 iş parçacığı 22. satırdaki [tile_barrier:: wait yöntemi](reference/tile-barrier-class.md#wait) yürütülür. 12 iş parçacığı, 32. satırdaki engelin yönergesidir. Bu iş parçacıklarından dördü işaretlenir. Sekiz iş parçacığı, 30. satırdaki kesme noktasında bulunur. Bu iş parçacıklarının dördü dondurulur. Aşağıdaki çizimde, **GPU Iş parçacıkları** penceresindeki gruplanmış iş parçacıkları gösterilmektedir.
 
    ![Adrese göre gruplandırılmış iş parçacıkları ile GPU Iş parçacıkları penceresi](../../parallel/amp/media/campl.png "Adrese göre gruplandırılmış iş parçacıkları ile GPU Iş parçacıkları penceresi") <br/>
    **GPU Iş parçacıkları** penceresinde gruplanmış iş parçacıkları
 
-2. Ayrıca, **paralel izleme** penceresinin veri kılavuzu için kısayol menüsünü açarak Group **by**' ı seçerek ve sonra iş parçacıklarını nasıl gruplandırmak istediğinize karşılık gelen menü öğesini seçerek **Group By** işlemini gerçekleştirebilirsiniz.
+2. Ayrıca, **paralel izleme** penceresinin veri kılavuzu için kısayol menüsünü açarak Group **by** ' ı seçerek ve sonra iş parçacıklarını nasıl gruplandırmak istediğinize karşılık gelen menü öğesini seçerek **Group By** işlemini gerçekleştirebilirsiniz.
 
 ## <a name="running-all-threads-to-a-specific-location-in-code"></a>Tüm Iş parçacıklarını kodda belirli bir konuma çalıştırma
 
-Belirli bir kutucukta yer alan tüm iş parçacıklarını, imlecin bulunduğu **geçerli kutucuğu**kullanarak imleci içeren satıra çalıştırırsınız.
+Belirli bir kutucukta yer alan tüm iş parçacıklarını, imlecin bulunduğu **geçerli kutucuğu** kullanarak imleci içeren satıra çalıştırırsınız.
 
 ### <a name="to-run-all-threads-to-the-location-marked-by-the-cursor"></a>Tüm iş parçacıklarını imleç tarafından işaretlenen konuma çalıştırmak için
 
-1. Dondurulmuş iş parçacıklarının kısayol menüsünde **çözme**' yi seçin.
+1. Dondurulmuş iş parçacıklarının kısayol menüsünde **çözme** ' yi seçin.
 
-2. **Kod düzenleyicisinde**imleci 30. satıra yerleştirin.
+2. **Kod düzenleyicisinde** imleci 30. satıra yerleştirin.
 
-3. **Kod Düzenleyicisi**için kısayol menüsünde, **geçerli kutucuğu imlece Çalıştır**' ı seçin.
+3. **Kod Düzenleyicisi** için kısayol menüsünde, **geçerli kutucuğu imlece Çalıştır** ' ı seçin.
 
    21. satırdaki engelde daha önce engellenen 24 iş parçacığı 32. satıra ilerlemedi. Bu, **GPU Iş parçacıkları** penceresinde gösterilir.
 

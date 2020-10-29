@@ -1,6 +1,6 @@
 ---
 title: EventStack sınıfı
-description: C++ Build Insights SDK EventStack sınıf başvurusu.
+description: C++ Build Insights SDK 'Sı EventStack sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: eaaaedcbf57fdaf8e437a80a7823488febac3e1d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b4f1e92011acdf8272fe631843c03c2f960a1234
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324977"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920716"
 ---
 # <a name="eventstack-class"></a>EventStack sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `EventStack` [Olay](event.md) nesneleri topluluğudur. C++ Build Insights SDK'dan alınan tüm olaylar `EventStack` nesne biçiminde gelir. Bu yığındaki son giriş, şu anda işlenen olaydır. Son girişten önce gelen girişler geçerli olayın üst hiyerarşisidir. C++ Build Insights'ta kullanılan olay modeli hakkında daha fazla bilgi için [olay tablosuna](../event-table.md)bakın.
+`EventStack`Sınıfı, bir [olay](event.md) nesneleri koleksiyonudur. C++ Build Insights SDK 'sından alınan tüm olaylar bir nesne biçiminde gelir `EventStack` . Bu yığındaki son giriş, şu anda işlenmekte olan olaydır. Son girdiden önce gelen girişler geçerli etkinliğin ana hiyerarşisidir. C++ Build Insights 'ta kullanılan olay modeli hakkında daha fazla bilgi için bkz. [Event Table](../event-table.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class EventStack
@@ -49,11 +49,11 @@ public:
 
 ### <a name="functions"></a>İşlevler
 
-[Geri](#back)
-[operatör[]](#subscript-operator)
-[Boyut](#size)
+[Geri](#back) 
+ [operator []](#subscript-operator) 
+ [Boyut](#size)
 
-## <a name="back"></a><a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a> Geri
 
 ```cpp
 RawEvent Back() const;
@@ -61,9 +61,9 @@ RawEvent Back() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yığındaki son girişi temsil eden bir [RawEvent](raw-event.md) nesnesi. Olay yığınındaki son giriş tetiklenen olaydır.
+Yığındaki son girişi temsil eden bir [Rawevent](raw-event.md) nesnesi. Olay yığınındaki son giriş, tetiklenen olaydır.
 
-## <a name="eventstack"></a><a name="event-stack"></a>EventStack
+## <a name="eventstack"></a><a name="event-stack"></a> EventStack
 
 ```cpp
 EventStack(const EVENT_COLLECTION_DATA& data);
@@ -71,14 +71,14 @@ EventStack(const EVENT_COLLECTION_DATA& data);
 
 ### <a name="parameters"></a>Parametreler
 
-*Veri*\
-Üretilen ham veriler. `EventStack`
+*verileri*\
+Oluşturulan ham veri `EventStack` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle nesneleri kendiniz oluşturmanız `EventStack` gerekmez. Olaylar bir analiz veya yeniden kaydetme oturumu sırasında işlenirken C++ Build Insights SDK tarafından sağlanır.
+Genellikle `EventStack` nesneleri kendiniz oluşturmanız gerekmez. Bunlar, analiz veya yeniden günlüğe kaydetme oturumu sırasında olaylar işlendiğinde C++ Build Insights SDK 'Sı tarafından size sağlanır.
 
-## <a name="operator"></a><a name="subscript-operator"></a>işleç[]
+## <a name="operator"></a><a name="subscript-operator"></a> operator []
 
 ```cpp
 RawEvent operator[] (size_t index) const;
@@ -86,14 +86,14 @@ RawEvent operator[] (size_t index) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*\
-Olay yığınına erişecek öğenin dizini.
+*indeks*\
+Olay yığınında erişmek için öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay yığınında *dizin* tarafından gösterilen konumda depolanan olayı temsil eden bir [RawEvent](raw-event.md) nesnesi.
+Olay yığınındaki *Dizin* tarafından belirtilen konumda depolanan olayı temsil eden bir [rawevent](raw-event.md) nesnesi.
 
-## <a name="size"></a><a name="size"></a>Boyutu
+## <a name="size"></a><a name="size"></a> Boyutla
 
 ```cpp
 size_t Size() const;

@@ -4,39 +4,39 @@ ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL OLE DB consumers
 ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
-ms.openlocfilehash: 1e384a283a2a149faa5b8d6e0817eac3cacfeff9
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: c298a841bf0d37f90bcd6b53bc0c6cdf501f4dd3
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65706915"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921158"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB Tüketicisi Ekleme
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-ATL OLE DB Tüketicisi Sihirbazı'nı ve sonrasında Visual Studio 2019 içinde kullanılabilir değil. İşlevselliğini el ile eklemeye devam edebilirsiniz. Daha fazla bilgi için [olmadan bir tüketici kullanarak sihirbaz oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md).
+ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](../../data/oledb/creating-a-consumer-without-using-a-wizard.md).
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
-ATL OLE DB tüketici bir projeye eklemek için bu sihirbazı kullanın. ATL OLE DB tüketici bir OLE DB erişimci sınıf ve veri bağlamalarını bir veri kaynağına erişmek için gerekli oluşur. Projenin ATL COM uygulama veya (ATL OLE DB Tüketicisi Sihirbazı otomatik olarak ekler) ATL desteği içeren bir MFC veya Win32 uygulaması olarak oluşturulmuş olması gerekir.
+Bir projeye ATL OLE DB tüketicisi eklemek için bu sihirbazı kullanın. ATL OLE DB tüketicisi, bir veri kaynağına erişmek için gereken OLE DB erişimci sınıfından ve veri bağlamalarından oluşur. Projenin bir ATL COM uygulaması veya ATL desteği içeren bir MFC ya da Win32 uygulaması olarak oluşturulmuş olması gerekir (ATL OLE DB Tüketici Sihirbazı otomatik olarak eklenir).
 
 > [!NOTE]
-> Bir OLE DB Tüketicisi bir MFC projesine ekleyebilirsiniz. ATL OLE DB Tüketicisi Sihirbazı, bunu yaparsanız, projenize gerekli COM desteği ekler. Bu MFC projesi oluşturduğunuzda, seçtiğiniz varsayar **ActiveX denetimlerini** onay kutusunu (içinde **Gelişmiş Özellikler** proje MFC Uygulama Sihirbazı sayfasında), varsayılan olarak işaretli. Bu seçeneğin belirlenmesi sağlar uygulama çağırır `CoInitialize` ve `CoUninitialize`. Seçeneğini belirlemediyseniz **ActiveX denetimlerini** MFC projesi oluşturduğunuzda, çağırmanız gerekir `CoInitialize` ve `CoUninitialize` ana kod.
+> Bir MFC projesine OLE DB tüketicisini ekleyebilirsiniz. Bunu yaparsanız, ATL OLE DB Tüketici Sihirbazı projenize gerekli COM desteğini ekler. Bu, MFC projesini oluşturduğunuz zaman, varsayılan olarak denetlenen **ActiveX denetimleri** onay kutusunu (MFC Proje uygulaması sihirbazının **Gelişmiş Özellikler** sayfasında) seçtiğinizi kabul eder. Bu seçeneğin belirlenmesi, uygulamanın ve çağrısı yapılmasını `CoInitialize` sağlar `CoUninitialize` . MFC projesini oluştururken **ActiveX denetimlerini** seçmediyseniz, `CoInitialize` Ana kodunuzda ve çağırmanız gerekir `CoUninitialize` .
 
-## <a name="to-add-an-atl-ole-db-consumer-to-your-project"></a>ATL OLE DB Tüketici projenize eklemek için
+## <a name="to-add-an-atl-ole-db-consumer-to-your-project"></a>Projenize ATL OLE DB tüketicisi eklemek için
 
-1. İçinde **sınıf görünümü**, projeye sağ tıklayın. Kısayol menüsünde **Ekle** ve ardından **sınıfı Ekle**.
+1. **Sınıf görünümü** , projeye sağ tıklayın. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle** ' ye tıklayın.
 
-1. Visual C++ klasörünü çift tıklatarak **ATL OLE DB Tüketicisi** simgesi veya seçin ve **açık**.
+1. Visual C++ klasöründe, **ATL OLE DB tüketicisi** simgesine çift tıklayın veya seçin ve **Aç** ' a tıklayın.
 
-   ATL OLE DB Tüketicisi Sihirbazı açılır.
+   ATL OLE DB Tüketici Sihirbazı açılır.
 
-1. Bölümünde anlatıldığı gibi ayarları tanımlama [ATL OLE DB Tüketicisi Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md).
+1. [ATL OLE DB Tüketici Sihirbazı](../../atl/reference/atl-ole-db-consumer-wizard.md)'nda açıklanan ayarları tanımlayın.
 
-1. Tıklayın **son** sihirbazı kapatın. Yeni oluşturulan OLE DB Tüketici kod projenize eklenir.
+1. Sihirbazı kapatmak için **son** ' a tıklayın. Yeni oluşturulan OLE DB tüketici kodu projenize eklenecektir.
 
 ::: moniker-end
 

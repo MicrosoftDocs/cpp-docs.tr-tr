@@ -4,24 +4,24 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 55327d53f3f9e8439ba6e008f1b5a6b384722d54
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61da0fd70ad68928872a2212b70377ab8a83a76a
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229876"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919403"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>Şema başvurusunda CMakeSettings.js
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 CMake projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-**CMakeSettings.jsdosyadaki** , Visual Studio 'nun IntelliSense için kullandığı ve belirtilen bir *yapılandırma* ve derleyici *ortamı*için cmake.exe aktardığı komut satırı bağımsız değişkenlerini oluşturmak için gereken bilgileri içerir. Bir yapılandırma belirli bir platforma ve derleme türüne (örneğin,) uygulanan özellikleri belirtir `x86-Debug` `Linux-Release` . Her yapılandırma, örneğin MSVC, GCC veya Clang gibi derleyici araç takımı hakkındaki bilgileri kapsülleyen bir ortam belirtir. CMake, kök *CMakeCache.txt* dosyasını ve projenin diğer proje dosyalarını yeniden oluşturmak için komut satırı bağımsız değişkenlerini kullanır. Değerler *CMakeLists.txt* dosyalarında geçersiz kılınabilir.
+**CMakeSettings.jsdosyadaki** , Visual Studio 'nun IntelliSense için kullandığı ve belirtilen bir *yapılandırma* ve derleyici *ortamı* için cmake.exe aktardığı komut satırı bağımsız değişkenlerini oluşturmak için gereken bilgileri içerir. Bir yapılandırma belirli bir platforma ve derleme türüne (örneğin,) uygulanan özellikleri belirtir `x86-Debug` `Linux-Release` . Her yapılandırma, örneğin MSVC, GCC veya Clang gibi derleyici araç takımı hakkındaki bilgileri kapsülleyen bir ortam belirtir. CMake, kök *CMakeCache.txt* dosyasını ve projenin diğer proje dosyalarını yeniden oluşturmak için komut satırı bağımsız değişkenlerini kullanır. Değerler *CMakeLists.txt* dosyalarında geçersiz kılınabilir.
 
 IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğrudan JSON dosyasında düzenleyebilir veya **CMake ayarları düzenleyicisini** (Visual Studio 2019 ve üzeri) kullanabilirsiniz. Çeşitli proje dosyalarını oluşturmak için IDE 'de kolayca yapılandırma arasında geçiş yapabilirsiniz. Daha fazla bilgi için bkz. [Visual Studio 'Da CMake derleme ayarlarını özelleştirme](customize-cmake-settings.md) .
 
@@ -71,11 +71,11 @@ IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğ
 
 Dokja esneklik ve işlev yerine hızlı derleme hızları için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projeleri Dokja kullanarak doğru şekilde derlemeyebilir. Böyle bir durumla karşılaşırsanız, CMake 'in bunun yerine Visual Studio projeleri oluşturmasını sağlayabilirsiniz.
 
-Visual Studio 2017 ' de bir Visual Studio üreteci belirtmek için CMake ' i seçerek ana menüden Ayarlar düzenleyicisini açın. ** CMake ayarlarını değiştirin**. "Dokja" ve "V" yazın. Bu, istediğiniz oluşturucuyu seçmenizi sağlayan IntelliSense 'i etkinleştirir.
+Visual Studio 2017 ' de bir Visual Studio üreteci belirtmek için CMake ' i seçerek ana menüden Ayarlar düzenleyicisini açın. **CMake ayarlarını değiştirin** . "Dokja" ve "V" yazın. Bu, istediğiniz oluşturucuyu seçmenizi sağlayan IntelliSense 'i etkinleştirir.
 
-Visual Studio 2019 ' de bir Visual Studio Oluşturucusu belirtmek için, **Çözüm Gezgini** *CMakeLists.txt* dosyasına sağ tıklayın ve **CMake ayarları proje için CMake ayarlarını** seçin > **Show Advanced Settings** > **CMake oluşturucuyu**göster ' i seçin.
+Visual Studio 2019 ' de bir Visual Studio Oluşturucusu belirtmek için, **Çözüm Gezgini** *CMakeLists.txt* dosyasına sağ tıklayın ve **CMake ayarları proje için CMake ayarlarını** seçin > **Show Advanced Settings** > **CMake oluşturucuyu** göster ' i seçin.
 
-Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan olarak MSBuild.exe `-m -v:minimal` bağımsız değişkenlerle çağrılır. Derlemeyi özelleştirmek için, dosyadaki *CMakeSettings.js* içinde, özelliği aracılığıyla yapı sistemine geçirilecek ek [MSBuild komut satırı bağımsız değişkenleri](../build/reference/msbuild-visual-cpp-overview.md) belirtebilirsiniz `buildCommandArgs` :
+Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan olarak MSBuild.exe `-m -v:minimal` bağımsız değişkenlerle çağrılır. Derlemeyi özelleştirmek için, dosyadaki  *CMakeSettings.js* içinde, özelliği aracılığıyla yapı sistemine geçirilecek ek [MSBuild komut satırı bağımsız değişkenleri](../build/reference/msbuild-visual-cpp-overview.md) belirtebilirsiniz `buildCommandArgs` :
 
    ```json
    "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
@@ -128,7 +128,7 @@ Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan
 - `remotePreGenerateCommand`: *CMakeLists.txt* dosyasını ayrıştırmak Için CMake 'i çalıştırmadan önce çalıştırılacak komutu belirtir.
 - `remotePrebuildCommand`: derlemeden önce uzak makinede çalıştırılacak komutu belirtir.
 - `remotePostbuildCommand`: derlemeden sonra uzak makinede çalıştırılacak komutu belirtir.
-- `variables`: **-D** * _ad_ = _değeri_ * CMake olarak geçirilecek CMake değişkenlerinin ad-değer çiftini içerir. CMake proje derleme yönergelerinizi herhangi bir değişkenin eklenmesini doğrudan *CMakeCache.txt* dosyasına belirtse, bunları buraya eklemeniz önerilir. Aşağıdaki örnek, 14.14.26428 MSVC araç takımı için ad-değer çiftlerinin nasıl kullanılacağını gösterir:
+- `variables`: **-D** *_ad_ = _değeri_* CMake olarak geçirilecek CMake değişkenlerinin ad-değer çiftini içerir. CMake proje derleme yönergelerinizi herhangi bir değişkenin eklenmesini doğrudan *CMakeCache.txt* dosyasına belirtse, bunları buraya eklemeniz önerilir. Aşağıdaki örnek, 14.14.26428 MSVC araç takımı için ad-değer çiftlerinin nasıl kullanılacağını gösterir:
 
 ```json
 "variables": [
@@ -149,7 +149,7 @@ Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan
 
 - `remoteCopyOptimizations`: Uzak hedefe kaynak kopyalamayı denetlemeye yönelik **Visual Studio 2019 sürüm 16,5 veya üzeri** Özellikler. İyileştirmeler varsayılan olarak etkindir. `remoteCopyUseOptimizations`, `rsyncSingleDirectoryCommandArgs` , Ve içerir `remoteCopySourcesMaxSmallChange` .
 
-## <a name="environments"></a><a name="environments"></a>Lý
+## <a name="environments"></a><a name="environments"></a> Lý
 
 Bir *ortam* , Visual Studio 'nun cmake.exe çağırmak için kullandığı işlemde ayarlanan ortam değişkenlerini kapsüller. MSVC projeleri için, değişkenler belirli bir platform için [Geliştirici komut isteminde](building-on-the-command-line.md) ayarlanan olanlardır. Örneğin, `msvc_x64_x64` ortam **vs 2017 için geliştirici komut istemi** veya **-arch = AMD64-host_arch = amd64** bağımsız değişkenleriyle **vs 2019 için geliştirici komut istemi** ile aynıdır. `env.{<variable_name>}`Tek tek ortam değişkenlerine başvurmak için, örneğin, klasörlere yol oluşturmak için *CMakeSettings.jsüzerindeki* sözdizimini kullanabilirsiniz.  Aşağıdaki önceden tanımlı ortamlar verilmiştir:
 
@@ -171,16 +171,16 @@ Bir CMakeLists.txt dosyasından, tüm ortam değişkenlerine sözdizimi tarafın
 
 ### <a name="custom-environment-variables"></a>Özel ortam değişkenleri
 
-İçinde `CMakeSettings.json` , dizide genel olarak veya yapılandırma başına özel ortam değişkenleri tanımlayabilirsiniz `environments` . Özel bir ortam, önceden tanımlanmış bir ortamın yerine kullanabileceğiniz bir özellik kümesini gruplamak veya önceden tanımlanmış bir ortamı genişletmek ya da değiştirmek için kullanışlı bir yoldur. Dizideki her öğe `environments` aşağıdakilerden oluşur:
+İçinde  `CMakeSettings.json` , dizide genel olarak veya yapılandırma başına özel ortam değişkenleri tanımlayabilirsiniz `environments` . Özel bir ortam, önceden tanımlanmış bir ortamın yerine kullanabileceğiniz bir özellik kümesini gruplamak veya önceden tanımlanmış bir ortamı genişletmek ya da değiştirmek için kullanışlı bir yoldur. Dizideki her öğe `environments` aşağıdakilerden oluşur:
 
 - `namespace`: bir ortamı, değişkenlerini form içindeki bir yapılandırmadan başvurulabilmeleri için adlandırır `namespace.variable` . Varsayılan ortam nesnesi çağrılır `env` ve dahil olmak üzere belirli sistem ortam değişkenleriyle doldurulur `%USERPROFILE%` .
 - `environment`: Bu değişken grubunu benzersiz bir şekilde tanımlar. Grubun daha sonra bir girişte devralınmasını sağlar `inheritEnvironments` .
 - `groupPriority`: Bu değişkenlerin değerlendirmesi sırasında önceliğini belirten bir tamsayı. Daha yüksek sayıda öğe önce değerlendirilir.
 - `inheritEnvironments`: Bu grup tarafından devralınan ortamlar kümesini belirten bir değerler dizisi. Bu özellik varsayılan ortamları devralmasını ve çalıştırıldığında CMake.exe geçirilen özel ortam değişkenleri oluşturmanızı sağlar.
 
-**Visual Studio 2019 sürüm 16,4 ve üzeri:** Hata ayıklama hedefleri, *üzerindeCMakeSettings.js*belirttiğiniz ortamda otomatik olarak başlatılır. [Üzerindelaunch.vs.js](launch-vs-schema-reference-cpp.md) ve [tasks.vs.jsüzerinde](tasks-vs-json-schema-reference-cpp.md), ortam değişkenlerini, hedef başına veya görev başına temelinde geçersiz kılabilir veya ekleyebilirsiniz.
+**Visual Studio 2019 sürüm 16,4 ve üzeri:** Hata ayıklama hedefleri, *üzerindeCMakeSettings.js* belirttiğiniz ortamda otomatik olarak başlatılır. [Üzerindelaunch.vs.js](launch-vs-schema-reference-cpp.md) ve [tasks.vs.jsüzerinde](tasks-vs-json-schema-reference-cpp.md), ortam değişkenlerini, hedef başına veya görev başına temelinde geçersiz kılabilir veya ekleyebilirsiniz.
 
-Aşağıdaki örnek, hem x86-hata ayıklama hem de x64-hata ayıklama yapılandırmalarında devralınan bir genel değişkeni ( **BuildDir**) tanımlar. Her yapılandırma, bu yapılandırma için **buildroot** özelliğinin değerini belirtmek için değişkenini kullanır. Ayrıca, her yapılandırmanın yalnızca bu yapılandırma için geçerli olan bir değişken belirtmek üzere **ınherenler** özelliğini nasıl kullandığını unutmayın.
+Aşağıdaki örnek, hem x86-hata ayıklama hem de x64-hata ayıklama yapılandırmalarında devralınan bir genel değişkeni ( **BuildDir** ) tanımlar. Her yapılandırma, bu yapılandırma için **buildroot** özelliğinin değerini belirtmek için değişkenini kullanır. Ayrıca, her yapılandırmanın yalnızca bu yapılandırma için geçerli olan bir değişken belirtmek üzere **ınherenler** özelliğini nasıl kullandığını unutmayın.
 
 ```json
 {
@@ -258,19 +258,19 @@ Sonraki örnekte, x86-hata ayıklama yapılandırması **BuildDir** özelliği i
 
 ## <a name="macros"></a>Makrolar
 
-Aşağıdaki makrolar *üzerindeCMakeSettings.js*kullanılabilir:
+Aşağıdaki makrolar *üzerindeCMakeSettings.js* kullanılabilir:
 
-- `${workspaceRoot}`– çalışma alanı klasörünün tam yolu
-- `${workspaceHash}`– çalışma alanı konumunun karması; geçerli çalışma alanı için benzersiz bir tanımlayıcı oluşturmak için kullanışlıdır (örneğin, klasör yollarında kullanmak için)
-- `${projectFile}`– kök CMakeLists.txt dosyasının tam yolu
-- `${projectDir}`– kök CMakeLists.txt dosyasının klasörünün tam yolu
+- `${workspaceRoot}` – çalışma alanı klasörünün tam yolu
+- `${workspaceHash}` – çalışma alanı konumunun karması; geçerli çalışma alanı için benzersiz bir tanımlayıcı oluşturmak için kullanışlıdır (örneğin, klasör yollarında kullanmak için)
+- `${projectFile}` – kök CMakeLists.txt dosyasının tam yolu
+- `${projectDir}` – kök CMakeLists.txt dosyasının klasörünün tam yolu
 - `${thisFile}`– dosyanın tam yolu `CMakeSettings.json`
-- `${name}`– yapılandırmanın adı
-- `${generator}`– Bu yapılandırmada kullanılan CMake oluşturucusunun adı
+- `${name}` – yapılandırmanın adı
+- `${generator}` – Bu yapılandırmada kullanılan CMake oluşturucusunun adı
 
 *CMakeSettings.jsüzerindeki* makrolar ve ortam değişkenlerine yapılan tüm başvurular cmake.exe komut satırına geçirilmeden önce genişletilir.
 
-## <a name="ninja-command-line-arguments"></a><a name="ninja"></a>Dokja komut satırı bağımsız değişkenleri
+## <a name="ninja-command-line-arguments"></a><a name="ninja"></a> Dokja komut satırı bağımsız değişkenleri
 
 Hedefler belirtilmemişse, ' default ' hedefini oluşturur.
 

@@ -1,6 +1,6 @@
 ---
-title: OptRef sınıfı
-description: C++ Build Insights SDK OptRef sınıfı referans.
+title: Seçenekbaşvurusu sınıfı
+description: C++ derleme öngörüleri SDK 'Sı başvuru sınıfı başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: dca8cc62eed4b7136f88ed5ba6a1a168b2de56c3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 72d3867456ecc2bb643239ddb0186668e43f69ef
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324443"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920521"
 ---
-# <a name="optref-class"></a>OptRef sınıfı
+# <a name="optref-class"></a>Seçenekbaşvurusu sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `OptRef` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [OPT_REF](../event-table.md#opt-ref) bir olayı eşleştirmek için kullanın.
+`OptRef`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. [OPT_REF](../event-table.md#opt-ref) bir olayla eşleştirmek için kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class OptRef : public Activity
@@ -39,13 +39,13 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[Etkinlik](activity.md) taban sınıfından devralınan üyelerle `OptRef` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [etkinlik](activity.md) temel sınıfından birlikte, `OptRef` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
-[Optref](#opt-ref)
+[OptRef](#opt-ref)
 
-## <a name="optref"></a><a name="opt-ref"></a>Optref
+## <a name="optref"></a><a name="opt-ref"></a> Seçenekbaşvurusu
 
 ```cpp
 OptRef(const RawEvent& event);
@@ -53,7 +53,7 @@ OptRef(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 [OPT_REF](../event-table.md#opt-ref) bir olay.
 
 ::: moniker-end

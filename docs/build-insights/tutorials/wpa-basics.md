@@ -7,21 +7,21 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: 2d4473e3682a6e00e0eef61cb73d7450976bcc0c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 75f45244b9e9b38b7dc65b604940199acafa0ede
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507727"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92922224"
 ---
 # <a name="tutorial-windows-performance-analyzer-basics"></a>Öğretici: Windows Performans Çözümleyicisi temelleri
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 C++ derleme öngörüleri araçları Visual Studio 2019 'de bulunabilir. Bu sürümün belgelerini görmek için bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 C++ derleme öngörülerini etkin bir şekilde kullanmak için bazı Windows Performans Çözümleyicisi (WPA) bilgisi gerekir. Bu makale, genel WPA işlemleriyle ilgili bilgi sahibi olmanıza yardımcı olur. WPA 'yı kullanma hakkında daha fazla bilgi için bkz. [Windows Performans Çözümleyicisi](/windows-hardware/test/wpt/windows-performance-analyzer) belgeleri.
 
@@ -44,7 +44,7 @@ Görünüm bölmesinin en üstündeki görünüm modu simgelerini kullanarak bun
 
 ## <a name="zoom-in-and-out"></a>Yakınlaştırma ve uzaklaştırma
 
-Bazı derleme izlemeleri büyük bir deyişle ayrıntıları oluşturmak zordur. İlgilendiğiniz bir alanı yakınlaştırmak için grafiğe sağ tıklayıp **Yakınlaştır**' ı seçin. **Geri al yakınlaştırmasını**seçerek her zaman önceki ayara gidebilirsiniz. Bu görüntüde, grafiğin bir bölümünde yakınlaştırmak için bir seçimi ve **Yakınlaştırma** komutunu kullanmayla ilgili bir örnek gösterilmektedir:
+Bazı derleme izlemeleri büyük bir deyişle ayrıntıları oluşturmak zordur. İlgilendiğiniz bir alanı yakınlaştırmak için grafiğe sağ tıklayıp **Yakınlaştır** ' ı seçin. **Geri al yakınlaştırmasını** seçerek her zaman önceki ayara gidebilirsiniz. Bu görüntüde, grafiğin bir bölümünde yakınlaştırmak için bir seçimi ve **Yakınlaştırma** komutunu kullanmayla ilgili bir örnek gösterilmektedir:
 
 ![Grafik üzerinde yakınlaştırmanın gösterildiği kısa video.](media/wpa-zooming.gif)
 

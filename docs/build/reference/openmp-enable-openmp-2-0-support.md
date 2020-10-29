@@ -1,5 +1,5 @@
 ---
-title: /openmp (OpenMP Desteğini Etkinleştir)
+title: /OpenMP (OpenMP desteğini etkinleştir)
 ms.date: 04/15/2019
 f1_keywords:
 - /openmp
@@ -8,62 +8,62 @@ helpviewer_keywords:
 - /openmp compiler option [C++]
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-ms.openlocfilehash: d3454650bfaaacd756e5cfc73df056441a39f5ac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6bd1ffcd9b21bfe22ed9424ee77edf43100abf6c
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336201"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921236"
 ---
-# <a name="openmp-enable-openmp-support"></a>/openmp (OpenMP Desteğini Etkinleştir)
+# <a name="openmp-enable-openmp-support"></a>/OpenMP (OpenMP desteğini etkinleştir)
 
-Derleyicinin OpenMP'ı destekleyen yönergeleri işlemesine [`#pragma omp`](../../preprocessor/omp.md) neden olur.
+Derleyicinin, [`#pragma omp`](../../preprocessor/omp.md) OpenMP desteğiyle yönergeleri işlemesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
-> **/openmp**\[**:**__deneysel__]
+> **/OpenMP** \[ **:**__deneysel__ ]
 
 ::: moniker-end
 
-::: moniker range="<= vs-2017"
+::: moniker range="<= msvc-150"
 
-> **/openmp**
+> **/OpenMP**
 
 ::: moniker-end
 
 ## <a name="remarks"></a>Açıklamalar
 
-`#pragma omp`[Direktifleri](../../parallel/openmp/reference/openmp-directives.md) ve Yan [tümcelerini](../../parallel/openmp/reference/openmp-clauses.md)belirtmek için kullanılır. **/openmp** bir derlemede belirtilmemişse, derleyici OpenMP yan tümcelerini ve yönergeleri yok sayar. [OpenMP Fonksiyon](../../parallel/openmp/reference/openmp-functions.md) çağrıları **/openmp** belirtilmemiş olsa bile derleyici tarafından işlenir.
+`#pragma omp`[yönergeleri](../../parallel/openmp/reference/openmp-directives.md) ve [yan tümceleri](../../parallel/openmp/reference/openmp-clauses.md)belirtmek için kullanılır. Derlemede **/OpenMP** belirtilmemişse, derleyici OpenMP yan tümcelerini ve yönergeleri yoksayar. **/OpenMP** belirtilmediği halde [OpenMP işlev](../../parallel/openmp/reference/openmp-functions.md) çağrıları derleyici tarafından işlenir.
 
-::: moniker range=">= vs-2019"
+::: moniker range=">= msvc-160"
 
-C++ derleyicisi şu anda OpenMP 2.0 standardını desteklemektedir. Ancak Visual Studio 2019 artık SIMD işlevselliği de sunuyor. SIMD kullanmak için **/openmp:experimental** seçeneğini kullanarak derleyin. Bu seçenek, **/openmp** anahtarını kullanırken hem normal OpenMP özelliklerini hem de diğer OpenMP SIMD özelliklerini kullanılamaz hale sağlar.
+C++ derleyicisi Şu anda OpenMP 2,0 standardını desteklemektedir. Ancak, Visual Studio 2019 artık SıMD işlevselliği de sunmaktadır. SıMD 'yi kullanmak için **/OpenMP: deneysel** seçeneğini kullanarak derleyin. Bu seçenek hem normal OpenMP özelliklerini hem de **/OpenMP** anahtarı kullanılırken ek OPENMP SIMD özelliklerini mümkün değildir.
 
 ::: moniker-end
 
-**/openmp** ve **/clr** kullanılarak derlenen uygulamalar yalnızca tek bir uygulama etki alanı işleminde çalıştırılabilir. Birden çok uygulama etki alanı desteklenmez. Diğer bir nokta, modül`.cctor`oluşturucu ( ) çalıştırıldığında, işlemin **/openmp**kullanılarak derlenip derlenmediğini ve uygulamanın varsayılan olmayan bir çalışma süresine yüklenip yüklenmediğini algılar. Daha fazla bilgi için [bkz: appdomain](../../cpp/appdomain.md), [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](clr-common-language-runtime-compilation.md)ve [Karma Derlemelerin Başlatılması](../../dotnet/initialization-of-mixed-assemblies.md).
+Hem **/OpenMP** hem de **/clr** kullanılarak derlenen uygulamalar yalnızca tek bir uygulama etki alanı işleminde çalıştırılabilir. Birden çok uygulama etki alanı desteklenmez. Diğer bir deyişle, modül Oluşturucusu ( `.cctor` ) çalıştırıldığında, işlemin **/OpenMP** kullanılarak derlendiğini ve uygulamanın varsayılan olmayan bir çalışma zamanına yüklenip yüklenmediğini algılar. Daha fazla bilgi için bkz. [AppDomain](../../cpp/appdomain.md), [/clr (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md)ve [karma derlemelerin başlatılması](../../dotnet/initialization-of-mixed-assemblies.md).
 
-/openmp ve <xref:System.TypeInitializationException> **/clr** kullanarak **/openmp** derlenen bir uygulamayı varsayılan olmayan bir uygulama etki alanına yüklemeyi denerseniz, `OpenMPWithMultipleAppdomainsException` hata ayıklayıcının dışına bir özel durum atılır ve hata ayıklayıcıya bir özel durum atılır.
+Varsayılan olmayan bir uygulama etki alanında hem **/OpenMP** hem de **/clr** kullanarak derlenen bir uygulamayı yüklemeye çalışırsanız, <xref:System.TypeInitializationException> hata ayıklayıcı dışında bir özel durum oluşturulur ve `OpenMPWithMultipleAppdomainsException` hata ayıklayıcıda bir özel durum oluşturulur.
 
-Bu özel durumlar aşağıdaki durumlarda da gündeme getirilebilir:
+Bu özel durumlar aşağıdaki durumlarda da oluşturulabilir:
 
-- Uygulamanız **/clr** ile derleniyorsa ancak **/openmp**değil , ve varsayılan olmayan bir uygulama etki alanına yükleniyorsa, işlem **/openmp**kullanılarak derlenmiş bir uygulama içerir.
+- Uygulamanız **/clr** kullanılarak derlenirse ancak **/OpenMP** ile derlenmişse ve varsayılan olmayan bir uygulama etki alanına yüklenirse, burada işlemin **/OpenMP** kullanılarak derlenen bir uygulama içermesi gerekir.
 
-- **/clr** uygulamanızı, hedef derlemelerini varsayılan olmayan bir uygulama etki alanına yükleyen [regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)gibi bir yardımcı programa geçirirseniz.
+- **/Clr** uygulamanızı, hedef derlemelerini varsayılan olmayan bir uygulama etki alanına yükleyen [regasm.exe](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)gibi bir yardımcı programa geçirirseniz.
 
-Ortak dil runtime kod erişim güvenliği OpenMP bölgelerinde çalışmıyor. Bir CLR kodu erişim güvenlik özniteliği paralel bir bölge dışında uygularsanız, paralel bölgede geçerli olmayacaktır.
+Ortak dil çalışma zamanının kod erişim güvenliği, OpenMP bölgelerinde çalışmaz. Bir paralel bölge dışında bir CLR kod erişimi güvenlik özniteliği uygularsanız, paralel bölgede etkin olmaz.
 
-Microsoft, kısmen güvenilen arayanlara izin veren **/openmp** uygulamaları yazmanızı önermez. CLR kodu <xref:System.Security.AllowPartiallyTrustedCallersAttribute>erişim güvenlik özniteliklerini kullanmayın.
+Microsoft, kısmen güvenilen çağıranlara izin veren **/OpenMP** uygulamaları yazmanızı önermez. <xref:System.Security.AllowPartiallyTrustedCallersAttribute>Ya da herhangi BIR clr kod erişimi güvenlik özniteliği kullanmayın.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Yapılandırma **Özellikleri** > **C/C++** > **Dil** özelliği sayfasını genişletin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **dil** Özellik sayfası ' nı genişletin.
 
-1. **OpenMP Destek** özelliğini değiştirin.
+1. **OpenMP support** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -71,11 +71,11 @@ Microsoft, kısmen güvenilen arayanlara izin veren **/openmp** uygulamaları ya
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, iş parçacığı havuzu başlatmanın bazı etkilerini ve iş parçacığı havuzunu başladıktan sonra kullanmanın bazı etkilerini gösterir. Bir x64, tek çekirdekli, çift işlemci varsayarsak, iş parçacığı havuzu başlatmak için yaklaşık 16 ms sürer. Bundan sonra, iş parçacığı havuzu için çok az ekstra maliyet var.
+Aşağıdaki örnek, iş parçacığı havuzu başlatmasının, başlatıldıktan sonra iş parçacığı havuzu kullanımının bazı etkilerini gösterir. Bir x64, tek çekirdekli, Çift işlemcinin olduğu varsayıldığında, iş parçacığı havuzunun başlaması yaklaşık 16 MS sürer. Bundan sonra, iş parçacığı havuzu için çok fazla maliyet vardır.
 
-**/openmp**kullanarak derlediğinizde, test2 için ikinci çağrı hiçbir zaman / openmp kullanarak derlemek eğer daha uzun çalışır asla **/ openmp-**, hiçbir iş parçacığı havuzu başlangıç var gibi. Bir milyon yinelemede, **/openmp** sürümü test2 için ikinci çağrı için **/ openmp-** sürümü daha hızlıdır. 25 yinelemede, hem **/openmp-** hem de **/openmp** sürümleri saat parçalı ndan daha az dır.
+**/OpenMP** kullanarak derlerken, hiçbir iş parçacığı havuzu başlatma işlemi olmadığından, test2 öğesine yapılan ikinci çağrı, **/OpenMP-** kullanarak derleme yaparsanız daha uzun bir süre çalışmaz. Bir milyon yinelemeyle, **/OpenMP** sürümü, test2 'e yapılan ikinci çağrı için **/OpenMP-** Version değerinden daha hızlıdır. 25 yinelemeden, **/OpenMP-** ve **/OpenMP** sürümleri saat ayrıntı düzeyi 'nden daha az kayıt yaptırın.
 
-Uygulamanızda yalnızca bir döngü varsa ve 15 ms'den daha az bir alanda çalışıyorsa (makinenizdeki yaklaşık ek yüküne göre ayarlanmışsa), **/openmp** uygun olmayabilir. Daha yüksekse, **/openmp**kullanmayı düşünebilirsiniz.
+Uygulamanızda yalnızca bir döngüdür ve 15 MS 'den az (makinenizde yaklaşık ek yük için ayarlanır) çalıştırıyorsa, **/OpenMP** uygun olmayabilir. Daha yüksekse, **/OpenMP** kullanmayı düşünmek isteyebilirsiniz.
 
 ```cpp
 // cpp_compiler_options_openmp.cpp
@@ -123,6 +123,6 @@ int main(int argc, char* argv[]) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyici Seçenekleri](compiler-options.md) \
-[MSVC Derleyici Komut Satırı Sözdizimi](compiler-command-line-syntax.md) \
+[MSVC derleyici seçenekleri](compiler-options.md) \
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md) \
 [MSVC'de OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md)

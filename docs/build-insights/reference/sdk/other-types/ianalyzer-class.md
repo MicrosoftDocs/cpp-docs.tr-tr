@@ -1,6 +1,6 @@
 ---
-title: IAnalyzer sınıfı
-description: C++ Build Insights SDK IAnalyzer sınıfı referans.
+title: Ianalyzer sınıfı
+description: C++ Build Insights SDK 'Sı IAnalyzer sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: be9d80bb94450458c73fd6ce8d908985ba6f293d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2514dd305a186d1153e9f9d1711bb774ea70cdf9
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329182"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919819"
 ---
-# <a name="ianalyzer-class"></a>IAnalyzer sınıfı
+# <a name="ianalyzer-class"></a>Ianalyzer sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf, `IAnalyzer` Windows (ETW) izleme için bir Olay İzleme çözümleme için bir arabirim sağlar. [MakeDynamicAnalyzerGroup](../functions/make-dynamic-analyzer-group.md), [MakeDynamicReloggerGroup](../functions/make-dynamic-relogger-group.md), [MakeStaticAnalyzerGroup](../functions/make-dynamic-analyzer-group.md), ve [MakeStaticReloggerGroup](../functions/make-static-analyzer-group.md) fonksiyonları ile kullanılır. Bir `IAnalyzer` çözümleyici veya relogger grubunun bir parçası olabilir kendi çözümleyici oluşturmak için bir taban sınıf olarak kullanın.
+`IAnalyzer`Sınıfı, Windows Için olay izleme (ETW) izlemesini analiz etmek için bir arabirim sağlar. [Makedynamicanaliz Zergroup](../functions/make-dynamic-analyzer-group.md), [makedynamicreloggergroup](../functions/make-dynamic-relogger-group.md), [Makestaticanalmergroup](../functions/make-dynamic-analyzer-group.md)ve [makestaticreloggergroup](../functions/make-static-analyzer-group.md) işlevleriyle birlikte kullanılır. Bir `IAnalyzer` çözümleyici veya yeniden günlükçü grubunun parçası olabilecek kendi çözümleyicinizi oluşturmak için temel sınıf olarak kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class IAnalyzer : public IRelogger
@@ -61,43 +61,43 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu tür `IAnalyzer` sınıflar hem çözümleyiciler hem de relogger olarak kullanılabilir. Relogger olarak kullanıldığında, relogger özgül işlevleri çözümleyici eşdeğeryönlendirme. Tersi doğru değildir: türeyen `IRelogger` bir sınıf çözümleyici olarak kullanılamaz. Relogger grubunda bir çözümleyici kullanmak yaygın bir desendir. Bir relogger grubunun erken bir konumuna yerleştirildiğinde, bir çözümleyici bilgileri önceden hesaplayabilir ve daha sonraki konumlarda relogger'lar için kullanılabilir hale getirebilir.
+Öğesinden türetilen sınıflar `IAnalyzer` hem çözümleyiciler hem de yeniden oturum defterleri olarak kullanılabilir. Yeniden Günlükçüler olarak kullanıldığında, yeniden günlükçü 'ya özgü işlevler, çözümleyici eşdeğerine yeniden yönlendirilir. Tersi doğru değildir: öğesinden türetilen bir sınıf, `IRelogger` çözümleyici olarak kullanılamaz. Bir regünlükçü grubunda çözümleyici kullanılması ortak bir modeldir. Bir regünlükçü grubunun erken bir konumuna yerleştirildiğinde, bir çözümleyici önceden bilgi işlem yapabilir ve daha sonraki konumlarda yeniden Günlükçüler için kullanılabilir hale getirir.
 
-Geçersiz kılınan tüm işlevler için varsayılan iade `AnalysisControl::CONTINUE`değeri. Daha fazla bilgi için [AnalysisControl'e](analysis-control-enum-class.md)bakın.
+Geçersiz kılınmayan tüm işlevler için varsayılan dönüş değeri `AnalysisControl::CONTINUE` . Daha fazla bilgi için bkz. [Analysiscontrol](analysis-control-enum-class.md).
 
 ## <a name="members"></a>Üyeler
 
-Arabirimdeki [OnTraceInfo](irelogger-class.md#on-trace-info) üyesine `IRelogger` ek `IAnalyzer` olarak, sınıf aşağıdaki üyeleri içerir:
+Arabiriminden [Ontraceınfo](irelogger-class.md#on-trace-info) üyesine ek olarak `IRelogger` , `IAnalyzer` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="destructor"></a>Yok edici
 
-[~IAnalyzer](#ianalyzer-destructor)
+[~ IAnalyzer](#ianalyzer-destructor)
 
 ### <a name="functions"></a>İşlevler
 
-[OnbeginAnalysis](#on-begin-analysis)\
-[OnbeginAnalysisPass](#on-begin-analysis-pass)\
+[OnBeginAnalysis](#on-begin-analysis)\
+[OnBeginAnalysisPass](#on-begin-analysis-pass)\
 [OnBeginRelogging](#on-begin-relogging)\
 [OnBeginReloggingPass](#on-begin-relogging-pass)\
-[OnendAnalysis](#on-end-analysis)\
-[OnendAnalysisPass](#on-end-analysis-pass)\
+[OnEndAnalysis](#on-end-analysis)\
+[OnEndAnalysisPass](#on-end-analysis-pass)\
 [OnEndRelogging](#on-end-relogging)\
 [OnEndReloggingPass](#on-end-relogging-pass)\
 [OnSimpleEvent](#on-simple-event)\
-[OnstartActivity](#on-start-activity)\
-[OnstopAktivite](#on-stop-activity)
+[OnStartActivity](#on-start-activity)\
+[OnStopActivity](#on-stop-activity)
 
-## <a name="ianalyzer"></a><a name="ianalyzer-destructor"></a>~IAnalyzer
+## <a name="ianalyzer"></a><a name="ianalyzer-destructor"></a> ~ IAnalyzer
 
-IAnalyzer sınıfını yok eder.
+Ianalyzer sınıfını yok eder.
 
 ```cpp
 virtual ~IAnalyzer();
 ```
 
-## <a name="onbeginanalysis"></a><a name="on-begin-analysis"></a>OnbeginAnalysis
+## <a name="onbeginanalysis"></a><a name="on-begin-analysis"></a> OnBeginAnalysis
 
-Çözümleyici grubunun çözümleyici kısmı için, bu işlev ilk çözümleme geçişi başlamadan önce çağrılır. Bir relogger grubunun çözümleyici bölümü için, bu işlev yeniden günleme geçişi başlamadan önce çağrılır. Aynı yeniden ağaçlandırma oturumunun hem çözümleyici hem de relogger grubunun çözümleyici leri için bu işlev, ilk çözümleme geçişi başlamadan önce iki kez çağrılır.
+Çözümleyici grubunun bir parçası için, bu işlev ilk analiz geçişi başlamadan önce çağırılır. Yeniden Günlükçüler grubunun bir parçası için bu işlev, yeniden günlük geçişi başlamadan önce çağrılır. Aynı yeniden günlüğe kaydetme oturumunun hem çözümleyici hem de yeniden günlükçüsü grubunun bir parçası olan çözümleyiciler için, ilk analiz geçişinin başlaması için bu işlev iki kez çağrılır.
 
 ```cpp
 virtual AnalysisControl OnBeginAnalysis();
@@ -105,11 +105,11 @@ virtual AnalysisControl OnBeginAnalysis();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
-## <a name="onbeginanalysispass"></a><a name="on-begin-analysis-pass"></a>OnbeginAnalysisPass
+## <a name="onbeginanalysispass"></a><a name="on-begin-analysis-pass"></a> OnBeginAnalysisPass
 
-Çözümleyici grubunun çözümleyici kısmı için, bu işlev her çözümleme geçişinin başında çağrılır. Bir relogger grubunun çözümleyici bölümü için, bu işlev relogger pass başında denir. Aynı relogging oturumunun hem çözümleyici hem de relogger grubunun çözümleyici kısmı için, bu işlev her analiz geçişinin başında ve relogger geçişinin başında çağrılır.
+Çözümleyici grubunun bir parçası için bu işlev her analiz geçişinin başlangıcında çağrılır. Yeniden günlükçü grubunun bir parçası olan çözümleyiciler için, bu işlev yeniden günlükçü geçişinin başlangıcında çağrılır. Aynı yeniden günlüğe kaydetme oturumunun hem çözümleyici hem de yeniden günlükçü grubunun bir parçası olarak, bu işlev her analiz geçişinin başlangıcında ve yeniden günlükçü geçişinin başlangıcında çağrılır.
 
 ```cpp
 virtual AnalysisControl OnBeginAnalysisPass();
@@ -117,23 +117,23 @@ virtual AnalysisControl OnBeginAnalysisPass();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
-## <a name="onbeginrelogging"></a><a name="on-begin-relogging"></a>OnBeginRelogging
+## <a name="onbeginrelogging"></a><a name="on-begin-relogging"></a> OnBeginRelogging
 
 ```cpp
 AnalysisControl OnBeginRelogging() final;
 ```
 
-Bu işlev geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Bu işlev çağrıyı [OnBeginAnalysis'e](#on-begin-analysis)yönlendirir.
+Bu işlev geçersiz kılınamıyor. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Bu işlev, [Onbeginanalysis](#on-begin-analysis)çağrısını yeniden yönlendirir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[OnBeginAnalysis](#on-begin-analysis) çağrısının sonucu.
+[Onbeginanalysis](#on-begin-analysis) çağrısının sonucu.
 
-## <a name="onbeginreloggingpass"></a><a name="on-begin-relogging-pass"></a>OnBeginReloggingPass
+## <a name="onbeginreloggingpass"></a><a name="on-begin-relogging-pass"></a> OnBeginReloggingPass
 
-Bu işlev geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Bu işlev çağrıyı [OnBeginAnalysisPass'e](#on-begin-analysis-pass)yönlendirir.
+Bu işlev geçersiz kılınamıyor. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Bu işlev, [Onbeginanalysispass](#on-begin-analysis-pass)çağrısını yeniden yönlendirir.
 
 ```cpp
 AnalysisControl OnBeginReloggingPass() final;
@@ -141,14 +141,14 @@ AnalysisControl OnBeginReloggingPass() final;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[OnBeginAnalysisPass](#on-begin-analysis-pass) aramasonucu.
+[Onbeginanalysispass](#on-begin-analysis-pass) çağrısının sonucu.
 
-## <a name="onendanalysis"></a><a name="on-end-analysis"></a>OnendAnalysis
+## <a name="onendanalysis"></a><a name="on-end-analysis"></a> OnEndAnalysis
 
-Çözümleyici grubunun bir parçası olan çözümleyiciler için, bu işlev son çözümleme geçişi sona erdikten sonra çağrılır. Bir relogger grubunun parçası olan çözümleyiciler için, bu işlev yeniden günleme geçişi sona erdikten sonra çağrılır. Aynı yeniden günleme oturumunun hem çözümleyici hem de relogger grubunun bir parçası olan çözümleyiciler için bu işlev iki kez çağrılır:
+Bir çözümleyici grubunun parçası olan çözümleyiciler için, bu işlev son analiz geçişi sona erdikten sonra çağrılır. Bir regünlükçü grubunun parçası olan çözümleyiciler için, bu işlev yeniden günlüğe kaydetme geçişinin sona erdikten sonra çağrılır. Aynı yeniden günlüğe kaydetme oturumunun hem çözümleyici hem de yeniden günlükçüsü grubunun parçası olan çözümleyiciler için, bu işlev iki kez çağrılır:
 
-1. tüm analiz geçişleri sona erdikten sonra ve yeniden ağaçlama geçişi başlamadan önce ve
-1. yeniden ağaçlama geçişi sona erdikten sonra.
+1. tüm analiz geçişleri sona erdikten ve yeniden günlüğe kaydetme geçişi başlamadan önce ve
+1. yeniden günlüğe kaydetme geçişi sona erdikten sonra.
 
 ```cpp
 virtual AnalysisControl OnEndAnalysis();
@@ -156,11 +156,11 @@ virtual AnalysisControl OnEndAnalysis();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
-## <a name="onendanalysispass"></a><a name="on-end-analysis-pass"></a>OnendAnalysisPass
+## <a name="onendanalysispass"></a><a name="on-end-analysis-pass"></a> OnEndAnalysisPass
 
-Çözümleyici grubunun çözümleyici kısmı için, bu işlev her çözümleme geçişinin sonunda çağrılır. Bir relogger grubunun çözümleyici bölümü için, bu işlev relogger pass sonunda denir. Aynı relogging oturumunun hem çözümleyici hem de relogger grubunun çözümleyici kısmı için, bu işlev her analiz geçişinin sonunda ve relogger geçişinin sonunda çağrılır.
+Çözümleyici grubunun bir parçası için bu işlev her analiz geçişinin sonunda çağırılır. Yeniden günlükçü grubunun bir parçası olan çözümleyiciler için, bu işlev yeniden günlükçü geçişinin sonunda çağırılır. Aynı yeniden günlüğe kaydetme oturumunun hem çözümleyici hem de yeniden günlükçü grubunun bir parçası olarak, bu işlev her analiz geçişinin sonunda ve yeniden günlükçü geçişinin sonunda çağırılır.
 
 ```cpp
 virtual AnalysisControl OnEndAnalysisPass();
@@ -168,11 +168,11 @@ virtual AnalysisControl OnEndAnalysisPass();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
-## <a name="onendrelogging"></a><a name="on-end-relogging"></a>OnEndRelogging
+## <a name="onendrelogging"></a><a name="on-end-relogging"></a> OnEndRelogging
 
-Bu işlev geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Bu işlev aramayı [OnEndAnalysis'e](#on-end-analysis)yönlendirir.
+Bu işlev geçersiz kılınamıyor. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Bu işlev, [OnEndAnalysis](#on-end-analysis)çağrısını yeniden yönlendirir.
 
 ```cpp
 AnalysisControl OnEndRelogging() final;
@@ -182,9 +182,9 @@ AnalysisControl OnEndRelogging() final;
 
 [OnEndAnalysis](#on-end-analysis) çağrısının sonucu.
 
-## <a name="onendreloggingpass"></a><a name="on-end-relogging-pass"></a>OnEndReloggingPass
+## <a name="onendreloggingpass"></a><a name="on-end-relogging-pass"></a> OnEndReloggingPass
 
-Bu işlev geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Bu işlev aramayı [OnEndAnalysisPass'e](#on-end-analysis-pass)yönlendirir.
+Bu işlev geçersiz kılınamıyor. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Bu işlev, [OnEndAnalysisPass](#on-end-analysis-pass)çağrısını yeniden yönlendirir.
 
 ```cpp
 AnalysisControl OnEndReloggingPass() final;
@@ -192,11 +192,11 @@ AnalysisControl OnEndReloggingPass() final;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[OnEndAnalysisPass](#on-end-analysis-pass) aramasının sonucu.
+[OnEndAnalysisPass](#on-end-analysis-pass) çağrısının sonucu.
 
-## <a name="onsimpleevent"></a><a name="on-simple-event"></a>OnSimpleEvent
+## <a name="onsimpleevent"></a><a name="on-simple-event"></a> OnSimpleEvent
 
-Basit bir olay işlenirken bu işlev çağrılır. Bu işlevin ikinci sürümü geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Sürüm 2'ye yapılan tüm aramalar sürüm 1'e yönlendirilir.
+Bu işlev, basit bir olay işlendiğinde çağrılır. Bu işlevin ikinci sürümü geçersiz kılınamaz. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Sürüm 2 ' ye yapılan tüm çağrılar 1. sürüme yeniden yönlendirilir.
 
 ### <a name="version-1"></a>Sürüm 1
 
@@ -214,18 +214,18 @@ AnalysisControl OnSimpleEvent(const EventStack& eventStack,
 ### <a name="parameters"></a>Parametreler
 
 *eventStack*\
-Bu basit olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
+Bu basit olay için olay yığını. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
 
 *relogSession*\
-Bu parametre kullanılmaz.
+Bu parametre kullanılmıyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
-## <a name="onstartactivity"></a><a name="on-start-activity"></a>OnstartActivity
+## <a name="onstartactivity"></a><a name="on-start-activity"></a> OnStartActivity
 
-Bu işlev, bir etkinlik başlangıç olayı işlenirken çağrılır. Bu işlevin ikinci sürümü geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Sürüm 2'ye yapılan tüm aramalar sürüm 1'e yönlendirilir.
+Bu işlev, etkinlik başlatma olayı işlendiğinde çağrılır. Bu işlevin ikinci sürümü geçersiz kılınamaz. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Sürüm 2 ' ye yapılan tüm çağrılar 1. sürüme yeniden yönlendirilir.
 
 ### <a name="version-1"></a>Sürüm 1
 
@@ -243,18 +243,18 @@ AnalysisControl OnStartActivity(const EventStack& eventStack,
 ### <a name="parameters"></a>Parametreler
 
 *eventStack*\
-Bu etkinlik başlangıç olayı için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
+Bu etkinlik başlangıç olayı için olay yığını. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
 
 *relogSession*\
-Bu parametre kullanılmaz.
+Bu parametre kullanılmıyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
-## <a name="onstopactivity"></a><a name="on-stop-activity"></a>OnstopAktivite
+## <a name="onstopactivity"></a><a name="on-stop-activity"></a> OnStopActivity
 
-Bu işlev, bir etkinlik durdurma olayı işlenirken çağrılır. Bu işlevin ikinci sürümü geçersiz kılınamaz. Bir çözümleyici bir relogger grubunun bir parçası olduğunda C++ Build Insights SDK tarafından çağrılır. Sürüm 2'ye yapılan tüm aramalar sürüm 1'e yönlendirilir.
+Bu işlev, etkinlik durdurma olayı işlendiğinde çağrılır. Bu işlevin ikinci sürümü geçersiz kılınamaz. Çözümleyici bir regünlükçü grubunun parçası olduğunda C++ Build Insights SDK 'Sı tarafından çağrılır. Sürüm 2 ' ye yapılan tüm çağrılar 1. sürüme yeniden yönlendirilir.
 
 ### <a name="version-1"></a>Sürüm 1
 
@@ -272,13 +272,13 @@ AnalysisControl OnStopActivity(const EventStack& eventStack,
 ### <a name="parameters"></a>Parametreler
 
 *eventStack*\
-Bu etkinlik durdurma olayı için olay yığını. Olay yığınları hakkında daha fazla bilgi için [Etkinlikler'e](../event-table.md)bakın.
+Bu etkinlik için olay yığını durdurma olayı. Olay yığınları hakkında daha fazla bilgi için bkz. [Olaylar](../event-table.md).
 
 *relogSession*\
-Bu parametre kullanılmaz.
+Bu parametre kullanılmıyor.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bundan sonra ne olması gerektiğini açıklayan bir [AnalysisControl](analysis-control-enum-class.md) kodu.
+Bir sonraki ne olacağını açıklayan bir [Analysiscontrol](analysis-control-enum-class.md) kodu.
 
 ::: moniker-end

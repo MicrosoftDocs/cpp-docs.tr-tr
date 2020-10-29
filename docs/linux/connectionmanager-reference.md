@@ -6,49 +6,49 @@ f1_keywords:
 - ConnectionManager
 helpviewer_keywords:
 - ConnectionManager program
-ms.openlocfilehash: 2f38fec21e7526fa214db811b00fc545504f0610
-ms.sourcegitcommit: 611e903f222ec794ef14195796b332851ab98904
+ms.openlocfilehash: 065a2cf6d6a2fe7d7e418299255c5bbf1f2bf753
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91847144"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921626"
 ---
 # <a name="connectionmanager-reference"></a>ConnectionManager başvurusu
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=msvc-150"
 
 ConnectionManager.exe, Visual Studio 2019 sürüm 16,5 ve üzeri sürümlerde kullanılabilir.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-ConnectionManager.exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Veya, sürekli tümleştirme için Visual Studio 'Yu ayarlamak üzere kullanın.Bunu, bir Geliştirici Komut İstemi penceresinde kullanabilirsiniz. Geliştirici Komut İstemi hakkında daha fazla bilgi için, bkz. [komut satırından Microsoft C++ araç takımını kullanma](../build/building-on-the-command-line.md).
+ConnectionManager.exe, Visual Studio dışında Uzaktan geliştirme bağlantılarını yönetmeye yönelik bir komut satırı yardımcı programıdır. Yeni bir geliştirme makinesi sağlama gibi görevler için faydalıdır. Veya, sürekli tümleştirme için Visual Studio 'Yu ayarlamak üzere kullanın. Bunu, bir Geliştirici Komut İstemi penceresinde kullanabilirsiniz. Geliştirici Komut İstemi hakkında daha fazla bilgi için, bkz. [komut satırından Microsoft C++ araç takımını kullanma](../build/building-on-the-command-line.md).
 
-ConnectionManager.exe, Visual Studio 2019 sürüm 16,5 ve üzeri sürümlerde kullanılabilir. Bu, Visual Studio Yükleyicisi C++ iş yüküne **sahip Linux geliştirmenin** bir parçasıdır. Ayrıca, yükleyicide **Bağlantı Yöneticisi** bileşenini seçtiğinizde de otomatik olarak yüklenir. *% Vcıdeınstalldir% \\ Linux \\ bin \\ connectionmanagerexe \\ConnectionManager.exe*yüklendi.
+ConnectionManager.exe, Visual Studio 2019 sürüm 16,5 ve üzeri sürümlerde kullanılabilir. Bu, Visual Studio Yükleyicisi C++ iş yüküne **sahip Linux geliştirmenin** bir parçasıdır. Ayrıca, yükleyicide **Bağlantı Yöneticisi** bileşenini seçtiğinizde de otomatik olarak yüklenir. *% Vcıdeınstalldir% \\ Linux \\ bin \\ connectionmanagerexe \\ConnectionManager.exe* yüklendi.
 
-ConnectionManager.exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 'deki Uzaktan geliştirme bağlantılarını yönetmek için, menü çubuğunda **Araçlar**  >  **Seçenekler** ' i seçerek Seçenekler iletişim kutusunu açın. Seçenekler iletişim kutusunda **platformlar arası**  >  **Bağlantı Yöneticisi**' ni seçin.
+ConnectionManager.exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 'deki Uzaktan geliştirme bağlantılarını yönetmek için, menü çubuğunda **Araçlar**  >  **Seçenekler** ' i seçerek Seçenekler iletişim kutusunu açın. Seçenekler iletişim kutusunda **platformlar arası**  >  **Bağlantı Yöneticisi** ' ni seçin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **`ConnectionManager.exe`***komut* \[ *bağımsız değişkenler*] \[ *Seçenekler*]
+> **`ConnectionManager.exe`***komut* \[ *bağımsız değişkenler* ] \[ *Seçenekler* ]
 
 ### <a name="commands-and-arguments"></a>Komutlar ve bağımsız değişkenler
 
-- **`add`***Kullanıcı \@ Konağı* \[ **`--port`** *bağlantı noktası*] \[ **`--password`** *password*parola \[ ] **`--privatekey`** *privatekey_file*]
+- **`add`***Kullanıcı \@ Konağı* \[ **`--port`** *bağlantı noktası* ] \[ **`--password`** *password* parola \[ ] **`--privatekey`** *privatekey_file* ]
 
   Kimlik doğrulaması yapar ve yeni bir bağlantı ekler. Varsayılan olarak, 22 ve parola kimlik doğrulaması bağlantı noktasını kullanır. (Bir parola girmeniz istenir.) **-`-password`** **`--privatekey`** Özel anahtar için bir parola belirtmek üzere hem hem de kullanın.
 
-- **`remove`**\[ *connection_id* \| *Kullanıcı \@ ana bilgisayar* \[ **`--port`** *bağlantı noktası*]]
+- **`remove`**\[ *connection_id* \| *Kullanıcı \@ ana bilgisayar* \[ **`--port`** *bağlantı noktası* ]]
 
   Bir bağlantıyı kaldırır. Herhangi bir bağımsız değişken belirtilmemişse, hangi bağlantının kaldırılacağını belirtmeniz istenir.
   
-- **`modify`**\[ *varsayılan* \| *connection_id* \| *Kullanıcı \@ ana bilgisayar* \[ **`--port`** *bağlantı noktası*]] \[ **`--property`** *anahtar = değer*]
+- **`modify`**\[ *varsayılan* \| *connection_id* \| *Kullanıcı \@ ana bilgisayar* \[ **`--port`** *bağlantı noktası* ]] \[ **`--property`** *anahtar = değer* ]
 
   Bir bağlantı üzerindeki bir özelliği tanımlar veya değiştirir. \
   *Değer* boşsa, özellik *anahtarı* silinir. \
   Kimlik doğrulaması başarısız olursa hiçbir değişiklik yapılmaz. \
-  Hiçbir bağlantı belirtilmemişse ( *varsayılan*olarak, yukarıda belirlenir), kullanıcının varsayılan uzak bağlantısı kullanılır.
+  Hiçbir bağlantı belirtilmemişse ( *varsayılan* olarak, yukarıda belirlenir), kullanıcının varsayılan uzak bağlantısı kullanılır.
 
 - **`remove-all`**
 
@@ -58,7 +58,7 @@ ConnectionManager.exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 
 
   Artık mevcut olmayan bağlantılar için üst bilgi önbelleğini siler. 
 
-- **`list`** \[**`--properties`**]
+- **`list`** \[**`--properties`** ]
 
   Depolanan tüm bağlantıların bilgilerini, kimliklerini ve özelliklerini görüntüler. 
 
@@ -72,7 +72,7 @@ ConnectionManager.exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 
 
 ### <a name="options"></a>Seçenekler
 
-- **`-q`**, **`--quiet`**
+- **`-q`** , **`--quiet`**
 
   Veya için çıktıyı `stdout` engeller `stderr` .
 
@@ -86,13 +86,13 @@ ConnectionManager.exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 
 
 - **`--file`***dosya adı*
 
-  Belirtilen *dosya adından*bağlantı bilgilerini okuyun.
+  Belirtilen *dosya adından* bağlantı bilgilerini okuyun.
 
 - **`--no-telemetry`**
 
   Kullanım verilerini Microsoft 'a geri göndermeyi devre dışı bırakın. Kullanım verileri toplanır ve bayrak geçirilmediği takdirde Microsoft 'a geri gönderilir **`--no-telemetry`** .  
 
-- **`-n`**, **`--dry-run`**
+- **`-n`** , **`--dry-run`**
 
   Komutun bir kuru çalıştırması yapar.
  
@@ -106,7 +106,7 @@ ConnectionManager.exe işlevselliği, Visual Studio 'da da kullanılabilir. IDE 
 
 ## <a name="examples"></a>Örnekler
 
-Bu komut localhost üzerinde "user" adlı bir kullanıcı için bağlantı ekler. Bağlantı, *% USERPROFILE% \. ssh \ id_rsa*içinde bulunan kimlik doğrulaması için bir anahtar dosyası kullanıyor.
+Bu komut localhost üzerinde "user" adlı bir kullanıcı için bağlantı ekler. Bağlantı, *% USERPROFILE% \. ssh \ id_rsa* içinde bulunan kimlik doğrulaması için bir anahtar dosyası kullanıyor.
 
 ```cmd
 ConnectionManager.exe add user@127.0.0.1 --privatekey "%USERPROFILE%\.ssh\id_rsa"

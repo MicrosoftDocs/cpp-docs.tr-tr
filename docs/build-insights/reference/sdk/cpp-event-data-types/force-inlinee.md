@@ -1,6 +1,6 @@
 ---
-title: ForceInlinee sınıfı
-description: C++ Build Insights SDK ForceInlinee sınıfı referans.
+title: Forceınlinee sınıfı
+description: C++ Build Insights SDK Forceınlinee sınıf başvurusu.
 ms.date: 02/12/2020
 helpviewer_keywords:
 - C++ Build Insights
@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: c6a1af0384197a0a3b6062ad9ef30537c348190d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 53fff7b6cfd37ba3e3211dd072c1ce3386d00fda
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81324778"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920677"
 ---
-# <a name="forceinlinee-class"></a>ForceInlinee sınıfı
+# <a name="forceinlinee-class"></a>Forceınlinee sınıfı
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
-C++ Build Insights SDK, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlere ait belgeleri görmek için, bu makalenin Visual Studio **Sürüm** seçici denetimini Visual Studio 2017 veya Visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
+C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
-Sınıf `ForceInlinee` [MatchEvent,](../functions/match-event.md) [MatchEventInMemberFunction,](../functions/match-event-in-member-function.md) [MatchEventStack](../functions/match-event-stack.md)ve [MatchEventStackInMemberFunction](../functions/match-event-stack-in-member-function.md) işlevleri ile kullanılır. [FORCE_INLINEE](../event-table.md#force-inlinee) bir olayı eşleştirmek için kullanın.
+`ForceInlinee`Sınıfı, [matchevent](../functions/match-event.md), [matcheventınmemberfunction](../functions/match-event-in-member-function.md), [Matcheventstack](../functions/match-event-stack.md)ve [matcheventstackinmemberfunction](../functions/match-event-stack-in-member-function.md) işlevleriyle birlikte kullanılır. Bunu bir [FORCE_INLINEE](../event-table.md#force-inlinee) olayına uyacak şekilde kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ForceInlinee : public SimpleEvent
@@ -42,7 +42,7 @@ public:
 
 ## <a name="members"></a>Üyeler
 
-[SimpleEvent](simple-event.md) taban sınıfından devralınan üyelerle `ForceInlinee` birlikte, sınıf aşağıdaki üyeleri içerir:
+Devralınan üyelerin [SimpleEvent](simple-event.md) temel sınıfından birlikte, `ForceInlinee` sınıfı aşağıdaki üyeleri içerir:
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -50,10 +50,10 @@ public:
 
 ### <a name="functions"></a>İşlevler
 
-[Ad](#name)
-[Boyutu](#size)
+[Ad](#name) 
+ [Boyut](#size)
 
-## <a name="forceinlinee"></a><a name="force-inlinee"></a>ForceInlinee
+## <a name="forceinlinee"></a><a name="force-inlinee"></a> Forceınlinee
 
 ```cpp
 ForceInlinee(const RawEvent& event);
@@ -61,10 +61,10 @@ ForceInlinee(const RawEvent& event);
 
 ### <a name="parameters"></a>Parametreler
 
-*Olay*\
+*olay*\
 [FORCE_INLINEE](../event-table.md#force-inlinee) bir olay.
 
-## <a name="name"></a><a name="name"></a>Adı
+## <a name="name"></a><a name="name"></a> Ada
 
 ```cpp
 const char* Name() const;
@@ -72,9 +72,9 @@ const char* Name() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-UTF-8'de kodlanmış kuvvet inlined fonksiyonunun adı.
+Zorla satır içine alınmış işlevin adı, UTF-8 olarak kodlanır.
 
-## <a name="size"></a><a name="size"></a>Boyutu
+## <a name="size"></a><a name="size"></a> Boyutla
 
 ```cpp
 const unsigned short& Size() const;
@@ -82,6 +82,6 @@ const unsigned short& Size() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ara öğretim sayısı olarak kuvvet inlined fonksiyonun boyutu.
+Zorla satır içine alınmış işlevin, ara yönerge sayısı olarak boyutu.
 
 ::: moniker-end

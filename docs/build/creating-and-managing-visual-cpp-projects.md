@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Projeleri - C++
+title: Visual Studio projeleri-C++
 ms.date: 10/25/2019
 helpviewer_keywords:
 - ATL projects, creating
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: 3694478e22bfd2a3c58a72ba0c3ad2d15351bc9f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: a8e23a3c384ce9b5ac7e73d18958246b52eb95b5
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078688"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919390"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
 
@@ -21,17 +21,17 @@ ms.locfileid: "80078688"
 
 ## <a name="create-a-project"></a>Proje oluşturma
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
-**Dosya** > **New**yeni > **Proje**' yi seçerek ve ardından **dili** c++ olarak ayarlayarak c++ projeleri oluşturabilirsiniz. Sonuçlar listesinde, **Platform** veya **proje türünü** ayarlayarak ve arama kutusuna anahtar sözcükleri yazarak filtreleyebileceğiniz proje şablonlarının listesini görürsünüz.
+**Dosya**  >  **Yeni**  >  **Proje** ' yi seçerek ve ardından **dili** c++ olarak ayarlayarak c++ projeleri oluşturabilirsiniz. Sonuçlar listesinde, **Platform** veya **proje türünü** ayarlayarak ve arama kutusuna anahtar sözcükleri yazarak filtreleyebileceğiniz proje şablonlarının listesini görürsünüz.
 
    ![Visual Studio 2019 proje şablonları](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 yeni proje Iletişim kutusu")
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
-**Dosya** > **New**yeni > **Proje**' yi seçerek ve ardından sol bölmedeki Visual C++ ' yi seçerek C++ projeleri oluşturabilirsiniz. Orta bölmede proje şablonlarının bir listesini görürsünüz:
+**Dosya**  >  **Yeni**  >  **Proje** ' yi seçerek ve ardından sol bölmedeki Visual C++ ' yi seçerek C++ projeleri oluşturabilirsiniz. Orta bölmede proje şablonlarının bir listesini görürsünüz:
 
    ![Proje şablonları](../overview/media/vs2017-new-project.png "Visual Studio 2017 yeni proje Iletişim kutusu")
 
@@ -43,11 +43,11 @@ Bir proje oluşturduktan sonra, [Çözüm Gezgini](/visualstudio/ide/solutions-a
 
    ![Çözüm Gezgini](media/mathlibrary-solution-explorer-153.png)
 
-Yeni bir proje oluşturduğunuzda, bir çözüm dosyası (. sln) de oluşturulur. Çözüme sağ tıklayıp **Çözüm Gezgini**ek projeler ekleyebilirsiniz. Çözüm dosyası, birden fazla ilişkili projeniz olduğunda ancak bundan çok daha fazlasını gerçekleştirmediğiniz durumlarda derleme bağımlılıklarını koordine etmek için kullanılır. Tüm derleyici seçenekleri proje düzeyinde ayarlanır.
+Yeni bir proje oluşturduğunuzda, bir çözüm dosyası (. sln) de oluşturulur. Çözüme sağ tıklayıp **Çözüm Gezgini** ek projeler ekleyebilirsiniz. Çözüm dosyası, birden fazla ilişkili projeniz olduğunda ancak bundan çok daha fazlasını gerçekleştirmediğiniz durumlarda derleme bağımlılıklarını koordine etmek için kullanılır. Tüm derleyici seçenekleri proje düzeyinde ayarlanır.
 
-## <a name="add-items"></a>Öğe ekle
+## <a name="add-items"></a>Öğeleri Ekle
 
-**Çözüm Gezgini** ' de projeye sağ tıklayıp **Yeni > Ekle** veya **var olan > Ekle**seçeneğini belirleyerek projenize kaynak kodu dosyaları, simgeler veya diğer öğeleri ekleyin.
+**Çözüm Gezgini** ' de projeye sağ tıklayıp **Yeni > Ekle** veya **var olan > Ekle** seçeneğini belirleyerek projenize kaynak kodu dosyaları, simgeler veya diğer öğeleri ekleyin.
 
 ## <a name="add-third-party-libraries"></a>Üçüncü taraf kitaplıklarını ekleme
 
@@ -55,7 +55,7 @@ Yeni bir proje oluşturduğunuzda, bir çözüm dosyası (. sln) de oluşturulur
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>Derleyici seçeneklerini ve diğer derleme özelliklerini ayarlama
 
-Bir projenin yapı ayarlarını yapılandırmak için, **Çözüm Gezgini** içinde projeye sağ tıklayın ve **Özellikler**' i seçin. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
+Bir projenin yapı ayarlarını yapılandırmak için, **Çözüm Gezgini** içinde projeye sağ tıklayın ve **Özellikler** ' i seçin. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
 
 ## <a name="compile-and-run"></a>Derle ve Çalıştır
 
@@ -75,10 +75,10 @@ Proje ayarlarınızı belirtmek için özellik sayfalarını ve özellik sayfala
 [Derleme zamanında kitaplıklara ve bileşenlere başvurma](adding-references-in-visual-cpp-projects.md)<br/>
 Bir projeye LIBS, dll 'Ler, COM ve .NET bileşenleri ekleme.
 
-[Proje Çıkış Dosyalarını Düzenleme](how-to-organize-project-output-files-for-builds.md)<br/>
+[Proje çıktı dosyalarını Düzenle](how-to-organize-project-output-files-for-builds.md)<br/>
 Yapı sürecinde oluşturulan yürütülebilir dosyaların konumunu özelleştirme.
 
-[Özel Derleme Adımları ve Derleme Olayları](understanding-custom-build-steps-and-build-events.md)<br/>
+[Özel derleme adımları ve derleme olayları](understanding-custom-build-steps-and-build-events.md)<br/>
 Belirtilen noktalarda yapı işlemine rastgele bir komut ekleme.
 
 [Mevcut koddan proje oluşturma](how-to-create-a-cpp-project-from-existing-code.md)<br/>

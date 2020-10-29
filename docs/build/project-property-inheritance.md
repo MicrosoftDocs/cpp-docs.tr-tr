@@ -4,12 +4,12 @@ description: Özellik devralma özelliği yerel (MSBuild) Visual Studio C++ proj
 ms.date: 02/21/2020
 helpviewer_keywords:
 - C++ projects, property inheritance
-ms.openlocfilehash: 00afe982156597aa166c2c5de98f3027e3f84bdb
-ms.sourcegitcommit: 6e5429e076e552b32e8bdc49480c51498d7924c1
+ms.openlocfilehash: 17b23426f70bb2d306491e538d30cffc0f202362
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099712"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92919221"
 ---
 # <a name="property-inheritance-in-visual-studio-projects"></a>Visual Studio projelerinde Özellik devralma
 
@@ -17,19 +17,19 @@ Visual Studio Native proje sistemi MSBuild 'i temel alır. MSBuild, her türlü 
 
 ## <a name="the-vcxproj-file-props-files-and-targets-files"></a>. Vcxproj dosyası,. props dosyaları ve. targets dosyaları
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Proje Özellikleri birkaç dosyada depolanır. Bazıları doğrudan *`.vcxproj`* Proje dosyasında depolanır. Diğerleri *`.targets`* *`.props`* , proje dosyasının içe aktardığı ve varsayılan değerleri tedarik eden diğer veya dosyalardan gelir. Visual Studio 2015 proje dosyalarını, temel dizin altında yerel ayara özgü bir klasörde bulabilirsiniz *`%ProgramFiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\v140`* .
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Proje Özellikleri birkaç dosyada depolanır. Bazıları doğrudan *`.vcxproj`* Proje dosyasında depolanır. Diğerleri *`.targets`* *`.props`* , proje dosyasının içe aktardığı ve varsayılan değerleri tedarik eden diğer veya dosyalardan gelir. Visual Studio 2017 proje dosyalarını, temel dizin altında yerel ayara özgü bir klasörde bulabilirsiniz *`%VSINSTALLDIR%Common7\IDE\VC\VCTargets\`* .
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Proje Özellikleri birkaç dosyada depolanır. Bazıları doğrudan *`.vcxproj`* Proje dosyasında depolanır. Diğerleri *`.targets`* *`.props`* , proje dosyasının içe aktardığı ve varsayılan değerleri tedarik eden diğer veya dosyalardan gelir. Visual Studio proje dosyalarını, temel dizin altında yerel ayara özgü bir klasörde bulabilirsiniz *`%VSINSTALLDIR%MSBuild\Microsoft\VC\<version>`* . , `<version>` Visual Studio 'nun sürümüne özeldir. *`v160`* Visual Studio 2019 içindir.
 
@@ -80,11 +80,11 @@ Daha fazla bilgi için bkz. [MSBuild özellikleri](/visualstudio/msbuild/msbuild
 
 Yapılandırma, yalnızca bir ad verilen rastgele bir özellik grubudur. Visual Studio hata ayıklama ve sürüm yapılandırması sağlar. Her bir hata ayıklama derlemesi veya yayın derlemesi için çeşitli özellikleri uygun şekilde ayarlar. Özel yapılandırma tanımlamak için **Configuration Manager** kullanabilirsiniz. Bu, belirli bir yapı türü için özellikleri gruplamak için kullanışlı bir yoldur.
 
-Yapı yapılandırmalarının daha iyi bir fikir edinmek için **Özellik Yöneticisi**açın. Ayarlarınıza bağlı olarak **görünüm > Özellik Yöneticisi** veya **> diğer Windows > Özellik Yöneticisi**seçeneklerini belirleyerek açabilirsiniz. **Özellik Yöneticisi** , projedeki her yapılandırma ve platform çifti için düğümler içerir. Bu düğümlerin her biri, ilgili *`.props`* yapılandırma için bazı belirli özellikleri ayarlamış Özellik sayfaları (dosyalar) düğümlerdir.
+Yapı yapılandırmalarının daha iyi bir fikir edinmek için **Özellik Yöneticisi** açın. Ayarlarınıza bağlı olarak **görünüm > Özellik Yöneticisi** veya **> diğer Windows > Özellik Yöneticisi** seçeneklerini belirleyerek açabilirsiniz. **Özellik Yöneticisi** , projedeki her yapılandırma ve platform çifti için düğümler içerir. Bu düğümlerin her biri, ilgili *`.props`* yapılandırma için bazı belirli özellikleri ayarlamış Özellik sayfaları (dosyalar) düğümlerdir.
 
 ![Özellik Yöneticisi](media/property-manager.png "Özellik Yöneticisi")
 
-Örneğin, özellik sayfalarındaki genel bölmesine gidebilirsiniz. "Unicode kullan" yerine karakter kümesi özelliğini "ayarlanmadı" olarak değiştirin ve ardından **Tamam**' a tıklayın. Özellik Yöneticisi artık **Unicode desteği** özellik sayfasını gösterir. Bu, geçerli yapılandırma için kaldırılmıştır, ancak hala diğer yapılandırmalar için de bulunur.
+Örneğin, özellik sayfalarındaki genel bölmesine gidebilirsiniz. "Unicode kullan" yerine karakter kümesi özelliğini "ayarlanmadı" olarak değiştirin ve ardından **Tamam** ' a tıklayın. Özellik Yöneticisi artık **Unicode desteği** özellik sayfasını gösterir. Bu, geçerli yapılandırma için kaldırılmıştır, ancak hala diğer yapılandırmalar için de bulunur.
 
 Özellik Yöneticisi ve özellik sayfaları hakkında daha fazla bilgi için bkz. [Visual Studio C++ proje ayarlarını paylaşma veya yeniden kullanma](create-reusable-property-configurations.md).
 

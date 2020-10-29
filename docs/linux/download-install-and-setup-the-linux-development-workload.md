@@ -3,22 +3,22 @@ title: Visual Studio 'da C++ Linux iş yükünü yükler
 description: Visual Studio 'da C++ için Linux iş yükünü indirme, yükleme ve ayarlama.
 ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 1a1b42927d440d1cde847fd1c1b6593e87a3824a
-ms.sourcegitcommit: f19f02f217b80804ab321d463c76ce6f681abcc6
+ms.openlocfilehash: 9d0c832ec383286b5f89b8ed1474e69d72b5cb98
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92176279"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92921613"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Linux iş yükünü indirme, yükleme ve ayarlama
 
-::: moniker range="vs-2015"
+::: moniker range="msvc-140"
 
 Linux projeleri Visual Studio 2017 ve üzeri sürümlerde desteklenir. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 Windows üzerinde Visual Studio IDE 'yi kullanarak, uzak bir Linux sisteminde, sanal makinede veya [Linux Için Windows alt sisteminde](/windows/wsl/about)yürütülen C++ projeleri oluşturabilir, düzenleyebilir ve hata ayıklaması yapabilirsiniz.
 
@@ -28,7 +28,7 @@ Bu senaryolardan herhangi biri için, C++ iş yüküyle **Linux geliştirme** ge
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="visual-studio-setup"></a>Visual Studio Kurulumu
 
@@ -36,11 +36,11 @@ Bu senaryolardan herhangi biri için, C++ iş yüküyle **Linux geliştirme** ge
 
    ![Windows arama kutusu](media/visual-studio-installer-search.png)
 
-1. **Uygulama** sonuçları altında yükleyiciyi bulun ve çift tıklatın. Yükleyici açıldığında, **Değiştir**' i seçin ve sonra **iş yükleri** sekmesine tıklayın. **Diğer araç kümelerine** Ilerleyin ve C++ iş yüküyle **Linux geliştirmeyi** seçin.
+1. **Uygulama** sonuçları altında yükleyiciyi bulun ve çift tıklatın. Yükleyici açıldığında, **Değiştir** ' i seçin ve sonra **iş yükleri** sekmesine tıklayın. **Diğer araç kümelerine** Ilerleyin ve C++ iş yüküyle **Linux geliştirmeyi** seçin.
 
    ![Linux'ta Geliştirme için Visual C++ iş yükü](media/linuxworkload.png)
 
-1. IoT veya katıştırılmış platformları hedefliyorsanız, sağdaki **Yükleme ayrıntıları** bölmesine gidin. **C++ Ile Linux geliştirme**altında, **isteğe bağlı bileşenler**' i genişletin ve ihtiyacınız olan bileşenleri seçin. Linux için CMake desteği varsayılan olarak seçilidir.
+1. IoT veya katıştırılmış platformları hedefliyorsanız, sağdaki **Yükleme ayrıntıları** bölmesine gidin. **C++ Ile Linux geliştirme** altında, **isteğe bağlı bileşenler** ' i genişletin ve ihtiyacınız olan bileşenleri seçin. Linux için CMake desteği varsayılan olarak seçilidir.
 
 1. Yüklemeye devam etmek için **Değiştir** 'e tıklayın.
 
@@ -52,7 +52,7 @@ Windows 10 ' da, Linux (WSL) için Windows alt sistemine sahip en sevdiğiniz Li
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
 
@@ -68,7 +68,7 @@ Aşağıdaki komutlar Clang yerine g + + kullandığınızı varsayar.
 
 ::: moniker-end
 
-::: moniker range="vs-2017"
+::: moniker range="msvc-150"
 
 Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıdaki bağımlılıkların yüklenmesini gerektirir:
 
@@ -81,7 +81,7 @@ Visual Studio 'da Linux projeleri, uzak Linux sisteminize veya WSL 'ye aşağıd
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="linux-setup-ubuntu-on-wsl"></a>Linux Kurulumu: WSL üzerinde Ubuntu
 
@@ -93,11 +93,11 @@ sudo apt-get install g++ gdb make ninja-build rsync zip
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="ubuntu-on-remote-linux-systems"></a>Uzak Linux sistemlerinde Ubuntu
 
-Hedef Linux sisteminin **OpenSSH-Server**, **g + +**, **gdb** **ve yüklü olması** gerekir. **dokja-** yalnızca CMake projeleri için derleme gerekir. **SSH** arka plan programı çalışıyor olmalıdır. IntelliSense desteği için yerel makineli uzak üst bilgilerin otomatik eşitlenmesi için **zip** ve **rsync** gereklidir. Bu uygulamalar henüz yoksa, bunları aşağıdaki şekilde yükleyebilirsiniz:
+Hedef Linux sisteminin **OpenSSH-Server** , **g + +** , **gdb** **ve yüklü olması** gerekir. **dokja-** yalnızca CMake projeleri için derleme gerekir. **SSH** arka plan programı çalışıyor olmalıdır. IntelliSense desteği için yerel makineli uzak üst bilgilerin otomatik eşitlenmesi için **zip** ve **rsync** gereklidir. Bu uygulamalar henüz yoksa, bunları aşağıdaki şekilde yükleyebilirsiniz:
 
 1. Linux bilgisayarınızda bir kabuk isteminde şunu çalıştırın:
 
@@ -117,11 +117,11 @@ Hedef Linux sisteminin **OpenSSH-Server**, **g + +**, **gdb** **ve yüklü olmas
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range="msvc-160"
 
 ## <a name="fedora-on-wsl"></a>WSL üzerinde Fedora
 
-Fedora **DNF** paket yükleyicisini kullanır. **G + +**, **gdb**, **Make**, **rsync**, **dokja-Build**ve **zip**indirmek için şunu çalıştırın:
+Fedora **DNF** paket yükleyicisini kullanır. **G + +** , **gdb** , **Make** , **rsync** , **dokja-Build** ve **zip** indirmek için şunu çalıştırın:
 
    ```bash
    sudo dnf install gcc-g++ gdb rsync ninja-build make zip
@@ -131,11 +131,11 @@ IntelliSense desteği için Visual Studio ile Linux üstbilgilerinin otomatik e�
 
 ::: moniker-end
 
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 ## <a name="fedora-on-remote-linux-systems"></a>Uzak Linux sistemlerinde Fedora 'lar
 
-Fedora çalıştıran hedef makine **DNF** paket yükleyicisini kullanır. **OpenSSH-Server**, **g + +**, **gdb**, **Make**, **dokja-Build**, **rsync**ve **zip**indirmek ve ssh daemon 'u yeniden başlatmak için aşağıdaki yönergeleri izleyin. **dokja-derleme** yalnızca CMake projeleri için gereklidir.
+Fedora çalıştıran hedef makine **DNF** paket yükleyicisini kullanır. **OpenSSH-Server** , **g + +** , **gdb** , **Make** , **dokja-Build** , **rsync** ve **zip** indirmek ve ssh daemon 'u yeniden başlatmak için aşağıdaki yönergeleri izleyin. **dokja-derleme** yalnızca CMake projeleri için gereklidir.
 
 1. Linux bilgisayarınızda bir kabuk isteminde şunu çalıştırın:
 

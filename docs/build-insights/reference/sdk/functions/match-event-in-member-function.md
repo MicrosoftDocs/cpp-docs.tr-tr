@@ -9,25 +9,25 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: d3fdc015b0744cb5d0f98a1c9025343b93489ed9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 62a7bf6bde62dee7fdf5b1d2ce9044491a123f94
+ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224155"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92920196"
 ---
 # <a name="matcheventinmemberfunction"></a>MatchEventInMemberFunction
 
-::: moniker range="<=vs-2015"
+::: moniker range="<=msvc-140"
 
 C++ Build Insights SDK 'Sı, Visual Studio 2017 ve üzeri ile uyumludur. Bu sürümlerin belgelerini görmek için, bu makalenin Visual Studio **Sürüm** Seçicisi denetimini visual Studio 2017 veya visual Studio 2019 olarak ayarlayın. Bu sayfadaki içindekiler tablosunun üst kısmında bulunur.
 
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range=">=msvc-150"
 
 İşlevi, bir `MatchEventInMemberFunction` olayı bir üye işlevinin ilk parametresi tarafından tanımlanan türe karşı eşleştirmek için kullanılır. Eşleşen olay, daha fazla işleme için üye işlevine iletilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -61,7 +61,7 @@ Eşleştirilecek olay türü ile birlikte, üye işlevi tarafından kabul edilen
 Geçirilen ek bağımsız değişkenlerin türleri `MatchEventInMemberFunction` .
 
 *olay*\
-*Tevent*tarafından tanımlanan olay türüyle eşleşecek olay.
+*Tevent* tarafından tanımlanan olay türüyle eşleşecek olay.
 
 *objectPtr*\
 *Memberfunc* 'ın çağrıldığı nesne için bir işaretçi.
@@ -78,7 +78,7 @@ Mükemmel şekilde olan bağımsız değişkenler, olay türü parametresiyle bi
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Tevent* parametresi için kullanılacak olay türü, *yakalama sınıfları*listesinden seçilebilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
+*Tevent* parametresi için kullanılacak olay türü, *yakalama sınıfları* listesinden seçilebilir. Olayların listesi ve bunları eşleştirmek için kullanabileceğiniz yakalama sınıfları için bkz. [olay tablosu](../event-table.md).
 
 ## <a name="example"></a>Örnek
 
