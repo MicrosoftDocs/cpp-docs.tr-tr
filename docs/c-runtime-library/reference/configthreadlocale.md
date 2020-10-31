@@ -1,6 +1,7 @@
 ---
 title: _configthreadlocale
-ms.date: 4/2/2020
+ms.date: 10/29/2020
+description: '`_configthreadlocale`İş parçacığı başına yerel ayar seçeneklerini yapılandırmak için kullanılan Microsoft C çalışma zamanı işlevini açıklar.'
 api_name:
 - _configthreadlocale
 - _o__configthreadlocale
@@ -31,14 +32,14 @@ helpviewer_keywords:
 - per-thread locale
 - thread locale
 ms.assetid: 10e4050e-b587-4f30-80bc-6c76b35fc770
-ms.openlocfilehash: 26bcfe0d93a8c2b1a14e6afc0d413a5c7e4a7f6e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3ffea30f8547088d6117ee980cdf28f017e87e83
+ms.sourcegitcommit: 868838273eda35eb72c78dccf4121940dcc04706
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917315"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102330"
 ---
-# <a name="_configthreadlocale"></a>_configthreadlocale
+# `_configthreadlocale`
 
 İş parçacığı başına yerel ayar seçeneklerini yapılandırır.
 
@@ -50,28 +51,28 @@ int _configthreadlocale( int per_thread_locale_type );
 
 ### <a name="parameters"></a>Parametreler
 
-*per_thread_locale_type*<br/>
+*`per_thread_locale_type`*\
 Ayarlanacak seçenek. Aşağıdaki tabloda listelenen seçeneklerden biridir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki iş parçacığı başına yerel ayar durumu (**_DISABLE_PER_THREAD_LOCALE** veya **_ENABLE_PER_THREAD_LOCALE**) veya hata durumunda-1.
+Önceki iş parçacığı başına yerel ayar durumu ( **`_DISABLE_PER_THREAD_LOCALE`** veya **`_ENABLE_PER_THREAD_LOCALE`** ) veya hata durumunda-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Configurethreadlocale** işlevi, iş parçacığına özgü yerel ayarların kullanımını denetlemek için kullanılır. İş parçacığı başına yerel ayar durumunu belirtmek veya belirlemek için bu *per_thread_locale_type* seçeneklerden birini kullanın:
+**`_configthreadlocale`** İşlevi, iş parçacığına özgü yerel ayarların kullanımını denetlemek için kullanılır. *`per_thread_locale_type`* İş parçacığı başına yerel ayar durumunu belirtmek veya belirlemek için şu seçeneklerden birini kullanın:
 
 | Seçenek | Açıklama |
 |-|-|
-| **_ENABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığının iş parçacığına özgü yerel ayar kullanmasını sağlayın. Bu iş parçacığında **setlocale** 'e yapılan sonraki çağrılar yalnızca iş parçacığının kendi yerel ayarını etkiler. |
-| **_DISABLE_PER_THREAD_LOCALE** | Geçerli iş parçacığının genel yerel ayarı kullanmasını sağlayın. Bu iş parçacığında **setlocale** 'e yapılan sonraki çağrılar, genel yerel ayarı kullanan diğer iş parçacıklarını etkiler. |
+| **`_ENABLE_PER_THREAD_LOCALE`** | Geçerli iş parçacığının iş parçacığına özgü yerel ayar kullanmasını sağlayın. **`setlocale`** Bu iş parçacığında yapılan sonraki çağrılar yalnızca iş parçacığının kendi yerel ayarını etkiler. |
+| **`_DISABLE_PER_THREAD_LOCALE`** | Geçerli iş parçacığının genel yerel ayarı kullanmasını sağlayın. **`setlocale`** Bu iş parçacığında yapılan sonraki çağrılar, genel yerel ayarı kullanan diğer iş parçacıklarını etkiler. |
 | **0** | Bu belirli iş parçacığının geçerli ayarını alır. |
 
-Bu işlevler, **setlocale**, **_tsetlocale**, **_wsetlocale**ve **_setmbcp**davranışlarını etkiler. İş parçacığı başına yerel ayar devre dışı bırakıldığında, **setlocale** veya **_wsetlocale** için sonraki tüm çağrı, genel yerel ayarı kullanan tüm iş parçacıklarının yerel ayarını değiştirir. İş parçacığı başına yerel ayar etkinleştirildiğinde, **setlocale** veya **_wsetlocale** yalnızca geçerli iş parçacığının yerel ayarını etkiler.
+Bu işlevler,, ve davranışlarını **`setlocale`** etkiler **`_tsetlocale`** **`_wsetlocale`** **`_setmbcp`** . İş parçacığı başına yerel ayar devre dışı bırakıldığında, bundan sonraki **`setlocale`** tüm çağrı veya **`_wsetlocale`** genel yerel ayarı kullanan tüm iş parçacıklarının yerel ayarını değiştirir. İş parçacığı başına yerel ayar etkinleştirildiğinde **`setlocale`** veya **`_wsetlocale`** yalnızca geçerli iş parçacığının yerel ayarını etkiler.
 
-İş parçacığı başına yerel ayarı etkinleştirmek için **_configurethreadlocale** kullanırsanız, bu iş parçacığında tercih edilen yerel ayarı hemen daha sonra ayarlamak için **setlocale** veya **_wsetlocale** çağırmanız önerilir.
+**`_configthreadlocale`** İş parçacığı başına yerel ayarı etkinleştirmek için kullanırsanız, **`setlocale`** **`_wsetlocale`** Bu iş parçacığında tercih edilen yerel ayarı hemen daha sonra ayarlamanız önerilir.
 
-*Per_thread_locale_type* tabloda listelenen değerlerden biri değilse, bu Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
+*`per_thread_locale_type`* Tabloda listelenen değerlerden biri değilse, bu Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev öğesini **`errno`** olarak ayarlar **`EINVAL`** ve-1 döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -79,7 +80,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_configthreadlocale**|\<locale. h>|
+|**`_configthreadlocale`**|\`<locale. h>'|
 
 ## <a name="example"></a>Örnek
 
@@ -192,7 +193,7 @@ The time in German locale is: 'Mittwoch, 12. Mai 2004'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[_beginthread, _beginthreadex](beginthread-beginthreadex.md)<br/>
-[Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](../../parallel/multithreading-and-locales.md)<br/>
+[`setlocale`, `_wsetlocale`](setlocale-wsetlocale.md)\
+[`_beginthread`, `_beginthreadex`](beginthread-beginthreadex.md)\
+[Ayarlar](../../c-runtime-library/locale.md)\
+[Çoklu iş parçacığı kullanımı ve yerel ayarlar](../../parallel/multithreading-and-locales.md)
