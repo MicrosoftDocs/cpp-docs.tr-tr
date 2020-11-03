@@ -481,23 +481,7 @@
         - name: Tanımlar ve kurallar
           href: ../c-language/definitions-and-conventions.md
         - name: Sözcük dilbilgisi
-          items:
-            - name: Sözcük dilbilgisi
-              href: ../c-language/lexical-grammar.md
-            - name: Belirteçlerin özeti
-              href: ../c-language/summary-of-tokens.md
-            - name: Anahtar sözcüklerin özeti
-              href: ../c-language/summary-of-keywords.md
-            - name: Tanımlayıcıların özeti
-              href: ../c-language/summary-of-identifiers.md
-            - name: Sabitlerin özeti
-              href: ../c-language/summary-of-constants.md
-            - name: Dizi değişmez değerleri özeti
-              href: ../c-language/summary-of-string-literals.md
-            - name: İşleçler (C)
-              href: ../c-language/operators-c.md
-            - name: Noktalama İşaretleri
-              href: ../c-language/punctuators.md
+          href: ../c-language/lexical-grammar.md
         - name: Tümcecik yapısı dil bilgisi
           items:
             - name: Tümcecik yapısı dil bilgisi
