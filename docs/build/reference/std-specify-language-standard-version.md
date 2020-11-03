@@ -1,7 +1,7 @@
 ---
 title: /STD (dil standart sürümünü belirt)
 description: MSVC derleyici seçeneği/STD, derleyici tarafından desteklenen C veya C++ dil standardını belirler.
-ms.date: 09/11/2020
+ms.date: 10/29/2020
 f1_keywords:
 - /std
 - -std
@@ -11,12 +11,12 @@ f1_keywords:
 - /std:c17
 - VC.Project.VCCLCompilerTool.CppLanguageStandard
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-ms.openlocfilehash: 82f37377dc223bfe3f5e578e1c7f390da91752a1
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 208789071ff028107d3c7311c3b5c6cf3eea7c1d
+ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075835"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238479"
 ---
 # <a name="std-specify-language-standard-version"></a>`/std` (Dil standart sürümünü belirt)
 
@@ -77,7 +77,7 @@ Visual Studio 2019 sürüm 16,8 ' den başlayarak, **`/std:c11`** **`/std:c17`**
 
 **`/std:c11`** Veya belirttiğinizde **`/std:c17`** MSVC, C11 ve C17 'in gerekli tüm özelliklerini destekler. Derleyici seçenekleri bu işlevler için desteği etkinleştirir:
 
-- **`_Pragma`**
+- [`_Pragma`](../../preprocessor/pragma-directives-and-the-pragma-keyword.md#the-_pragma-preprocessing-operator-c99-c11)
 
 - **`restrict`**
 
@@ -107,11 +107,11 @@ Derleyici, ISO C11 'in herhangi bir isteğe bağlı özelliğini desteklemez. Bu
 
 1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri**, **C/C++**, **dil**' i seçin.
+1. **Yapılandırma özellikleri** , **C/C++** , **dil** ' i seçin.
 
-1. **C++ dil standardında** (veya c **dilinde standart**), açılır menüden destekedilecek dil standardını seçin, sonra değişikliklerinizi kaydetmek için **Tamam** ' ı veya **Uygula** ' yı seçin.
+1. **C++ dil standardında** (veya c **dilinde standart** ), açılır menüden destekedilecek dil standardını seçin, sonra değişikliklerinizi kaydetmek için **Tamam** ' ı veya **Uygula** ' yı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

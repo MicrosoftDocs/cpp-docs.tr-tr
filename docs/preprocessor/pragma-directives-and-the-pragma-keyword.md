@@ -1,6 +1,7 @@
 ---
 title: Pragma yönergeleri ve __pragma anahtar sözcüğü
-ms.date: 08/29/2019
+description: Microsoft Visual C ve C++ ' da kullanılabilen pragma yönergelerini açıklar (MSVC)
+ms.date: 10/30/2020
 f1_keywords:
 - '#pragma'
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - preprocessor, pragmas
 - pragma directives (#pragma)
 ms.assetid: 9867b438-ac64-4e10-973f-c3955209873f
-ms.openlocfilehash: 786f76d9f7fd2eee73c6b1d009186bf93ea0c667
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bf4bbdcf74808edd8ef54149f8258f47bd94c600
+ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842695"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238414"
 ---
 # <a name="pragma-directives-and-the-__pragma-keyword"></a>Pragma yönergeleri ve __pragma anahtar sözcüğü
 
@@ -26,8 +27,8 @@ Pragma yönergeleri makine veya işletim sistemine özgü derleyici özellikleri
 
 ## <a name="syntax"></a>Syntax
 
-> **#pragma** *belirteci-dize*\
-> **__pragma (** *belirteç-dize* **)**
+> **#`pragma`***belirteç-dize*\
+> **`__pragma(`***belirteç-dize* **`)`** iki önde gelen alt çizgi-Microsoft 'a özgü uzantı **`_Pragma(`** *dizesi-sabit değer* **`)`** //C99
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -35,7 +36,9 @@ Her C ve C++ uygulamasının, ana makinesi veya işletim sistemine özgü bazı 
 
 Pragmalar, tanıma göre makine veya işletim sistemine özgüdür ve genellikle her derleyicide farklıdır. Pragmalar, yeni Önişlemci işlevselliği sağlamak ya da derleyiciye uygulama tanımlı bilgiler sağlamak için koşullu yönergeler içinde kullanılabilir.
 
-*Token-string* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri veren bir karakter dizisidir. Numara işareti ( **#** ), pragmayı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma**, çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
+*Belirteç dizesi* , varsa belirli bir derleyici yönergesini ve bağımsız değişkenleri temsil eden bir karakter dizisidir. Numara işareti ( **#** ), pragmayı içeren satırdaki ilk beyaz boşluk olmayan karakter olmalıdır. Boşluk karakterleri, sayı işaretini ve "pragma" sözcüğünü ayırabilirler. Aşağıdaki **#pragma** , çeviricisinin ön işleme belirteçleri olarak ayrıştırabileceği tüm metinleri yazın. **#Pragma** bağımsız değişkeni makro genişletmeye tabidir.
+
+*Dize sabit değeri* , giriştir `_Pragma` . Dış tırnaklar ve baştaki/sondaki boşluklar kaldırılır. `\"` ile değiştirilmiştir `"` ve `\\` ile değiştirilmiştir `\` .
 
 Derleyici, tanımadığı bir pragma bulduğunda bir uyarı verir ve derlemeyi sürdürür.
 
@@ -114,9 +117,9 @@ cl /Zp8 some_file.cpp
 
 ## <a name="the-__pragma-keyword"></a>__Pragma () anahtar sözcüğü
 
-Derleyici Ayrıca, **#pragma** yönergesiyle aynı işlevselliğe sahip olan Microsoft 'a özgü **__pragma** anahtar sözcüğünü de destekler. Farkı, **__pragma** anahtar sözcüğünün bir makro tanımında satır içi kullanılabilir. **#Pragma** yönergesi, bir makro tanımında kullanılamaz, çünkü derleyici yönergede işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
+Derleyici Ayrıca, **`__pragma`** yönergeyle aynı işlevselliğe sahip olan Microsoft 'a özgü anahtar sözcüğünü de destekler **`#pragma`** . Fark, **`__pragma`** anahtar sözcüğünün satır içi olarak bir makro tanımında kullanılabilir olması. **`#pragma`** Bir makro tanımında yönerge kullanılamaz, çünkü derleyici yönergedeki işaret karakteri (' # ') sayısını dize haline getirme [işleci (#)](../preprocessor/stringizing-operator-hash.md)olarak yorumlar.
 
-Aşağıdaki kod örneği, **__pragma** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "derleyici COM desteği örnekleri" içinde ACDUAL örneğindeki mfcdual. h üst bilgisinden ayıklanalınmıştır:
+Aşağıdaki kod örneği, **`__pragma`** anahtar sözcüğünün bir makroda nasıl kullanılabileceğini gösterir. Bu kod, "derleyici COM desteği örnekleri" içinde ACDUAL örneğindeki *mfcdual. h* üst bilgisinden ayıklanalınmıştır:
 
 ```cpp
 #define CATCH_ALL_DUAL \
@@ -134,6 +137,48 @@ _hr = DualHandleException(_riidSource, e); \
 } \
 END_CATCH_ALL \
 return _hr; \
+```
+
+## <a name="the-_pragma-preprocessing-operator-c99-c11"></a>`_Pragma`Ön işleme işleci (C99, c++ 11)
+
+`_Pragma`[`__pragma`](#the-__pragma-keyword), standart bir parçası dışında, Microsoft 'a özgü anahtar sözcüğe benzerdir. C99 içinde C için sunulmuştur. C++ için C++ 11 ' de kullanıma sunulmuştur.
+
+ Pragmaları bir makro tanımına eklemenize olanak tanır. `_`Microsoft 'a özgü anahtar sözcüğünün sahip olduğu iki önde gelen alt çizgi yerine bir önde gelen alt çizgi `__` ve ilk harf büyük harfli olur.
+
+Dize değişmez değeri, daha önce bir deyimin ardından yerleştirilecek şekilde olmalıdır *`#pragma`* . Örneğin:
+
+```c
+#pragma message("--the #pragma way")
+_Pragma ("message( \"the _Pragma way\")") 
+```
+
+Yukarıda gösterildiği gibi, tırnak işaretleri ve ters eğik çizgiler kaçmalıdır. Tanınmayan bir pragma dizesi yoksayıldı.
+
+Aşağıdaki kod örneği, **`_Pragma`** koşul ifadesi sabit olduğunda bir uyarı almak istemediğinizde anahtar sözcüğünün onay benzeri bir makroda nasıl kullanılabileceğini gösterir. 
+
+Makro tanımı, çok deyimli makrolar için do/while (0) Ise 'yi kullanır, böylece bir deyim olarak kullanılabilir. Daha fazla bilgi için bkz. Stack Overflow [çok satırlı makro](https://stackoverflow.com/questions/1067226/c-multi-line-macro-do-while0-vs-scope-block) . _Pragma deyimleri yalnızca onu izleyen kod satırı için geçerlidir.
+
+```C
+// Compile with /W4
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MY_ASSERT(BOOL_EXPRESSION) \
+    do { \
+        _Pragma("warning(suppress: 4127)") /* C4127 conditional expression is constant */  \
+        if (!(BOOL_EXPRESSION)) {   \
+            printf("MY_ASSERT FAILED: \"" #BOOL_EXPRESSION "\" on %s(%d)", __FILE__, __LINE__); \
+            exit(-1); \
+        } \
+    } while (0)
+
+int main()
+{
+    MY_ASSERT(0 && "Note that there is no warning: C4127 conditional expression is constant");
+
+    return 0;
+}
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

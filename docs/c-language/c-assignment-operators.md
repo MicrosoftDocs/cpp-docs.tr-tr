@@ -1,6 +1,7 @@
 ---
 title: C Atama İşleçleri
-ms.date: 06/14/2018
+description: Standart C dili atama işleçleri, söz dizimi ve anlamı.
+ms.date: 10/30/2020
 helpviewer_keywords:
 - remainder assignment operator (%=)
 - '&= operator'
@@ -30,41 +31,41 @@ helpviewer_keywords:
 - operator >>=, C assignment operators
 - <<= operator
 ms.assetid: 11688dcb-c941-44e7-a636-3fc98e7dac40
-ms.openlocfilehash: e8ada96daaec249a05882aceae9b7d9e86b92065
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 460e18772689de0d28fcfda3295a49b2f8a3c0d7
+ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80168805"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238518"
 ---
 # <a name="c-assignment-operators"></a>C Atama İşleçleri
 
 Bir atama işlemi, sağ işleneninin değerini sol işlenen tarafından adlandırılan depolama konumuna atar. Bu nedenle, bir atama işleminin sol işleneni değiştirilebilir bir l değeri olmalıdır. Atama işleminden sonra, atama ifadesi sol işlenen değerine sahip olur, ancak bir l değeri değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-*atama ifadesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Koşullu ifade*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*birli ifade* *atama-işleç* *atama-ifade*
+*`assignment-expression`* :\
+&emsp;*`conditional-expression`*\
+&emsp;*`unary-expression`* *`assignment-operator`* *`assignment-expression`*
 
-*atama-işleç*: aşağıdakilerden biri<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**=** **\*=** **/=** **%=** **+=** **-=** **\<\<=** **>>=** **&=** **^=** **|=**
+*`assignment-operator`* : biri<br/>
+&emsp;**`=`** **`*=`** **`/=`** **`%=`** **`+=`** **`-=`** **`<<=`** **`>>=`** **`&=`** **`^=`** **`|=`**
 
 C'deki atama işleçleri, tek bir işlemde değerleri hem dönüştürebilir hem de atayabilir. C, aşağıdaki atama işleçlerini sağlar:
 
-|İşleç|Gerçekleştirilen İşlem|
+|Operatör|Gerçekleştirilen İşlem|
 |--------------|-------------------------|
-|**=**|Basit atama|
-|**&#42;=**|Çarpma ataması|
-|**/=**|Bölme ataması|
-|**%=**|Geri kalan atama|
-|**+=**|Toplama ataması|
-|**-=**|Çıkarma ataması|
-|**<\<=**|Sola kaydırma ataması|
-|**>>=**|Sağa kaydırma ataması|
-|**&=**|Bit düzeyinde AND ataması|
-|**^=**|Bit düzeyinde dışlamalı OR ataması|
-|**&#124;=**|Bit düzeyinde kapsamalı OR ataması|
+|**`=`**|Basit atama|
+|**`*=`**|Çarpma ataması|
+|**`/=`**|Bölme ataması|
+|**`%=`**|Geri kalan atama|
+|**`+=`**|Toplama ataması|
+|**`-=`**|Çıkarma ataması|
+|**`<<=`**|Sola kaydırma ataması|
+|**`>>=`**|Sağa kaydırma ataması|
+|**`&=`**|Bit düzeyinde AND ataması|
+|**`^=`**|Bit düzeyinde dışlamalı OR ataması|
+|**`|=`**|Bit düzeyinde kapsamalı OR ataması|
 
 Atama sırasında, sağdaki değerin türü soldaki değerin türüne dönüştürülür ve değer atama gerçekleştirildikten sonra sol işlenende depolanır. Sol işlenen bir dizi, işlev veya sabit olmamalıdır. İki türe bağlı olan belirli dönüştürme yolu, [tür dönüştürmelerinde](../c-language/type-conversions-c.md)ayrıntılı olarak özetlenmiştir.
 
