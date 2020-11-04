@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: adb2a461de5e82fa76ce0ed9961d970f46dbe26a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8c19a54584390312cfd1657e88898cdb044179d0
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834992"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344585"
 ---
 # <a name="cbitmap-class"></a>CBitmap sınıfı
 
@@ -159,7 +159,7 @@ Daha fazla bilgi için, yapıdaki alanın açıklamasına bakın `bmBits` `BITMA
 
 ## <a name="cbitmapcreatebitmapindirect"></a><a name="createbitmapindirect"></a> CBitmap:: Createbitmapdolaylı
 
-*Lpbit eşlem*tarafından işaret edilen yapıda belirtilen genişlik, yükseklik ve bit düzenine (belirtilmişse) sahip bir bit eşlem başlatır.
+*Lpbit eşlem* tarafından işaret edilen yapıda belirtilen genişlik, yükseklik ve bit düzenine (belirtilmişse) sahip bir bit eşlem başlatır.
 
 ```
 BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
@@ -184,7 +184,7 @@ Bir ekran cihazı için bir bit eşlem doğrudan seçilemese de, CDC:: [NesneSe�
 
 ## <a name="cbitmapcreatecompatiblebitmap"></a><a name="createcompatiblebitmap"></a> CBitmap:: CreateCompatibleBitmap
 
-*PDC*tarafından belirtilen cihazla uyumlu bir bit eşlem başlatır.
+*PDC* tarafından belirtilen cihazla uyumlu bir bit eşlem başlatır.
 
 ```
 BOOL CreateCompatibleBitmap(
@@ -210,7 +210,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem, belirtilen cihaz bağlamı ile aynı sayıda renk düzlemleri veya piksel başına aynı bit biçimine sahiptir. *PDC*tarafından belirtile uyumlu herhangi bir bellek aygıtı için geçerli bit eşlem olarak seçilebilir.
+Bit eşlem, belirtilen cihaz bağlamı ile aynı sayıda renk düzlemleri veya piksel başına aynı bit biçimine sahiptir. *PDC* tarafından belirtile uyumlu herhangi bir bellek aygıtı için geçerli bit eşlem olarak seçilebilir.
 
 *PDC* bir bellek cihaz bağlamıdır, döndürülen bit eşlem o cihaz bağlamındaki Şu anda seçili olan bit eşlemle aynı biçimde olur. "Bellek cihaz bağlamı", bir görüntü yüzeyini temsil eden bir bellek bloğudur. Uyumlu cihazın gerçek görüntü yüzeyine kopyalamadan önce bellekte görüntü hazırlamak için kullanılabilir.
 
@@ -222,7 +222,7 @@ Renk belleği cihaz bağlamında renk veya tek renkli bit eşlemler seçili oldu
 
 ## <a name="cbitmapcreatediscardablebitmap"></a><a name="creatediscardablebitmap"></a> CBitmap:: CreateDiscardableBitmap
 
-*PDC*tarafından tanımlanan cihaz bağlamı ile uyumlu bir discardable bit eşlemi başlatır.
+*PDC* tarafından tanımlanan cihaz bağlamı ile uyumlu bir discardable bit eşlemi başlatır.
 
 ```
 BOOL CreateDiscardableBitmap(
@@ -248,7 +248,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem, belirtilen cihaz bağlamı ile aynı sayıda renk düzlemleri veya piksel başına aynı bit biçimine sahiptir. Bir uygulama, *PDC*tarafından belirtilen bir bellek cihazının geçerli bit eşlemi olarak bu bit eşlemi seçebilir.
+Bit eşlem, belirtilen cihaz bağlamı ile aynı sayıda renk düzlemleri veya piksel başına aynı bit biçimine sahiptir. Bir uygulama, *PDC* tarafından belirtilen bir bellek cihazının geçerli bit eşlemi olarak bu bit eşlemi seçebilir.
 
 Windows, bu işlev tarafından oluşturulan bir bit eşlemi atabilir, ancak bir uygulama onu bir görüntüleme bağlamına seçmez. Pencere seçili olmadığında ve uygulama daha sonra bunu açmaya çalıştığında, bu bit eşlemi atar. [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject)
 
@@ -398,7 +398,7 @@ Bit eşlem için bayrak. Sıfır veya CMB_MASKED olabilir.
 `COLORMAP`Bit eşlemler eşlemek için gereken renk bilgilerini içeren bir yapıya yönelik işaretçi. Bu parametre NULL ise, işlev varsayılan renk eşlemesini kullanır.
 
 *nMapSize*<br/>
-*LpColorMap*tarafından işaret edilen renk haritaları sayısı.
+*LpColorMap* tarafından işaret edilen renk haritaları sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -408,7 +408,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Varsayılan olarak, `LoadMappedBitmap` düğme glifleri içinde yaygın olarak kullanılan renkleri eşler.
 
-Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için, Windows SDK Windows işlevi [CreateMappedBitmap](https://go.microsoft.com/fwlink/p/?linkid=230562) ve [ColorMap](/windows/win32/api/commctrl/ns-commctrl-colormap) yapısına bakın.
+Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için, Windows SDK Windows işlevi [CreateMappedBitmap](/windows/win32/api/commctrl/nf-commctrl-createmappedbitmap) ve [ColorMap](/windows/win32/api/commctrl/ns-commctrl-colormap) yapısına bakın.
 
 ## <a name="cbitmaploadoembitmap"></a><a name="loadoembitmap"></a> CBitmap:: LoadOEMBitmap
 
@@ -496,7 +496,7 @@ Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafi
 
 ## <a name="cbitmapsetbitmapbits"></a><a name="setbitmapbits"></a> CBitmap:: Setbitmapbitleri
 
-Bit eşlemin bitlerini *lpBits*tarafından verilen bit değerlerine ayarlar.
+Bit eşlemin bitlerini *lpBits* tarafından verilen bit değerlerine ayarlar.
 
 ```
 DWORD SetBitmapBits(
@@ -507,7 +507,7 @@ DWORD SetBitmapBits(
 ### <a name="parameters"></a>Parametreler
 
 *dwCount*<br/>
-*LpBits*tarafından işaret edilen bayt sayısını belirtir.
+*LpBits* tarafından işaret edilen bayt sayısını belirtir.
 
 *lpBits*<br/>
 Nesneye kopyalanacak piksel değerlerini içeren bayt dizisine işaret eder `CBitmap` . Bit eşlemin görüntüsünü doğru bir şekilde işleyebilmesi için değerler, CBitmap örneği oluşturulduğunda belirtilen yükseklik, genişlik ve renk derinliği değerlerine uyacak şekilde biçimlendirilmelidir. Daha fazla bilgi için bkz. [CBitmap:: Createbit eşlem](#createbitmap).

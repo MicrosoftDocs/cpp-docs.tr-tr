@@ -23,16 +23,16 @@ f1_keywords:
 - VC.Project.FXCompilerTool.AssemblerOutputFile
 - VC.Project.FXCompilerTool.CompileD2DCustomEffect
 - VC.Project.FXCompilerTool.MultiProcFXC
-ms.openlocfilehash: a45ae433e5adaa8aeaf32215d4af7ad0a247af04
-ms.sourcegitcommit: 720b74dddb1cdf4e570d55103158304ee1df81f8
+ms.openlocfilehash: 629a242d3698c9c3c2d3c697298b5c6625e4768f
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606405"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344689"
 ---
 # <a name="hlsl-compiler-property-pages"></a>HLSL derleyici Özellik sayfaları
 
-HLSL derleyicisi (fxc. exe) özellik sayfalarını, tek tek HLSL gölgelendirici dosyalarının nasıl oluşturulduğunu yapılandırmak için kullanabilirsiniz. Ayrıca, **komut satırı** özellik sayfasındaki **ek seçenekler** özelliğini kullanarak HLSL derleyicisine komut satırı bağımsız değişkenleri belirtebilirsiniz; Bu, HLSL Özellik sayfalarının diğer özellikleri kullanılarak yapılandırılanmakta olan bağımsız değişkenleri içerir. HLSL derleyicisi hakkında daha fazla bilgi için bkz. [efekt-derleyici aracı](https://go.microsoft.com/fwlink/p/?LinkID=258285&clcid=0x409)
+HLSL derleyicisi (fxc.exe) özellik sayfalarını, tek tek HLSL gölgelendirici dosyalarının nasıl oluşturulduğunu yapılandırmak için kullanabilirsiniz. Ayrıca, **komut satırı** özellik sayfasındaki **ek seçenekler** özelliğini kullanarak HLSL derleyicisine komut satırı bağımsız değişkenleri belirtebilirsiniz; Bu, HLSL Özellik sayfalarının diğer özellikleri kullanılarak yapılandırılanmakta olan bağımsız değişkenleri içerir. HLSL derleyicisi hakkında daha fazla bilgi için bkz. [efekt-derleyici aracı](/windows/win32/direct3dtools/fxc)
 
 ## <a name="hlsl-general-property-page"></a>HLSL genel özellik sayfası
 
@@ -48,7 +48,7 @@ Gölgelendirici için giriş noktasının adını belirtir (/E [ad])
 
 İyileştirmeleri devre dışı bırakmak için **Evet (/OD)** ; Aksi takdirde, **Hayır**. Varsayılan olarak, **hata ayıklama** yapılandırmalarına yönelik değer **Evet (/OD)** ve **Sürüm** yapılandırması için **Hayır** ' dır.
 
-HLSL derleyicisine yönelik **/od** komut satırı bağımsız değişkeni, **/Gfp** komut satırı bağımsız değişkenini örtülü olarak uygular, ancak hem **/od** hem de **/Gfp** komut satırı bağımsız değişkenlerini geçirerek üretilen çıktıyla aynı olamaz işlem.
+HLSL derleyicisine yönelik **/od** komut satırı bağımsız değişkeni, **/Gfp** komut satırı bağımsız değişkenini örtülü olarak uygular, ancak hem **/od** hem de **/Gfp** komut satırı bağımsız değişkenlerini açıkça geçirerek üretilen çıktıyla aynı olmayabilir.
 
 ### <a name="enable-debugging-information"></a>Hata ayıklama bilgilerini etkinleştir
 
@@ -58,9 +58,9 @@ Hata ayıklama bilgilerini etkinleştirmek için **Evet (/Zi)** ; Aksi takdirde,
 
 Gölgelendirici türünü belirtir. Farklı tür gölgelendiriciler grafik işlem hattının farklı parçalarını uygular. Belirli tür gölgelendiriciler yalnızca daha yeni gölgelendirici modellerinde kullanılabilir ( **gölgelendirici modeli** özelliği tarafından belirtilir) — Örneğin, bilgi işlem gölgelendiricileri gölgelendirici modeli 5 ' te sunulmuştur.
 
-Bu özellik, HLSL derleyicisine  **\[/t Type] _\[model]** komut satırı bağımsız değişkeninin  **\[Type]** bölümüne karşılık gelir. **Gölgelendirici modelleri** özelliği, bağımsız değişkenin **[Model]** bölümünü belirtir.
+Bu özellik, HLSL derleyicisine **/t \[ Type] _ \[ model]** komut satırı bağımsız değişkeninin **\[ Type]** bölümüne karşılık gelir. **Gölgelendirici modelleri** özelliği, bağımsız değişkenin **[Model]** bölümünü belirtir.
 
-**Yapabileceği**
+**Seçenekler**
 
 - **Etki**
 - **Köşe gölgelendiricisi**
@@ -69,14 +69,14 @@ Bu özellik, HLSL derleyicisine  **\[/t Type] _\[model]** komut satırı bağım
 - **Hull gölgelendiricisi**
 - **Etki alanı gölgelendiricisi**
 - **Bilgi işlem gölgelendiricisi**
-- **Kitaplık**
+- **Kitaplığı**
 - **Kök Imza nesnesi oluştur**
 
 ### <a name="shader-model"></a>Gölgelendirici modeli
 
 Gölgelendirici modelini belirtir. Farklı gölgelendirici modellerinin farklı özellikleri vardır. Genel olarak, daha yeni gölgelendirici modelleri genişletilmiş yetenekler sunar, ancak gölgelendirici kodunu çalıştırmak için daha modern grafik donanımı gerektirir. Belirli tür gölgelendiriciler ( **gölgelendirici türü** özelliği tarafından belirtilir) yalnızca daha yeni gölgelendirici modellerinde kullanılabilir — Örneğin, işlem gölgelendiricileri gölgelendirici modeli 5 ' te sunulmuştur.
 
-Bu özellik, HLSL derleyicisine  **\[/t Type] _\[model]** komut satırı bağımsız değişkeninin  **\[model]** bölümüne karşılık gelir. **Gölgelendirici türü** özelliği, bağımsız değişkenin **[Type]** kısmını belirtir.
+Bu özellik, HLSL derleyicisine **/t \[ Type] _ \[ model]** komut satırı bağımsız değişkeninin **\[ model]** bölümüne karşılık gelir. **Gölgelendirici türü** özelliği, bağımsız değişkenin **[Type]** kısmını belirtir.
 
 ### <a name="all-resources-bound"></a>Tüm kaynaklar bağlanır
 
@@ -94,7 +94,7 @@ Gölgelendirici bytecode 'a (/setrootsignature) kök imzası iliştirin. Gölgel
 
 HLSL kaynak kodu dosyasına uygulanacak bir veya daha fazla önişlemci sembol tanımı ekler. Sembol tanımlarını ayırmak için noktalı virgül kullanın.
 
-Bu özellik, HLSL derleyicisinin  **\[/d tanımları]** komut satırı bağımsız değişkenine karşılık gelir.
+Bu özellik, HLSL derleyicisinin **/d \[ tanımları]** komut satırı bağımsız değişkenine karşılık gelir.
 
 ### <a name="compile-a-direct2d-custom-pixel-shader-effect"></a>Direct2D özel piksel gölgelendirici efekti derle
 
@@ -132,7 +132,7 @@ Nesne dosyası için bir ad belirtir. (/Fo [ad])
 
 Derleme dili çıkış dosyasının içeriğini belirtir. (/FC,/FX)
 
-**Yapabileceği**
+**Seçenekler**
 
 - **Listeleme yok** -liste yok.
 - **Yalnızca bütünleştirilmiş kod Listeleme** -derleme kodu dosyası
@@ -144,6 +144,6 @@ Derleme kodu liste dosyası için dosya adını belirtir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Proje özellik sayfası başvurusu](property-pages-visual-cpp.md)<br>
-[Komut Satırı özellik sayfaları](command-line-property-pages.md)<br>
-[Gölgelendiriciler derleniyor](https://go.microsoft.com/fwlink/p/?LinkID=258284&clcid=0x409)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)<br>
+[Komut satırı özellik sayfaları](command-line-property-pages.md)<br>
+[Gölgelendiriciler derleniyor](/windows/win32/direct3dhlsl/dx-graphics-hlsl-part1)

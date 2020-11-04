@@ -2,12 +2,12 @@
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 3f68766c2c38b74df6e57aaa52419baf5d1151a3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 97fd433387aac809053ea6dd8ac59a56207a4fc8
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041464"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344728"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 
@@ -21,11 +21,11 @@ C++ AMP, bir [concurrency:: Graphics](../../parallel/amp/reference/concurrency-g
 
 ## <a name="the-norm-and-unorm-types"></a>Norm ve unorm türleri
 
-`norm`Ve `unorm` türleri, değer aralığını sınırlayan skaler türlerdir **`float`** ; Bu, *clamping*olarak bilinir. Bu türler, diğer skaler türlerden açık bir şekilde oluşturulabilir. Atama sırasında, değer ilk olarak öğesine ayarlanır **`float`** ve sonra norm [-1,0, 1,0] veya unorm [0,0, 1,0] tarafından izin verilen ilgili bölgeye çakışıyor. +/-Infinity atama +/-1 döndürür. NaN 'dan atama tanımsız. Bir norm, bir unorm 'den örtülü olarak oluşturulabilir ve veri kaybı olmaz. Kayan kapalı dönüştürme işleci bu türlerde tanımlanmıştır. İkili işleçler bu türler ve ve gibi diğer yerleşik skaler türler arasında tanımlanır **`float`** **`int`** : +,-, \* ,/, = =,! =, >, \<, > =, <=. Bileşik atama işleçleri de desteklenir: + =,-=, \* =,/=. Birli olumsuzlama işleci (-), norm türleri için tanımlanır.
+`norm`Ve `unorm` türleri, değer aralığını sınırlayan skaler türlerdir **`float`** ; Bu, *clamping* olarak bilinir. Bu türler, diğer skaler türlerden açık bir şekilde oluşturulabilir. Atama sırasında, değer ilk olarak öğesine ayarlanır **`float`** ve sonra norm [-1,0, 1,0] veya unorm [0,0, 1,0] tarafından izin verilen ilgili bölgeye çakışıyor. +/-Infinity atama +/-1 döndürür. NaN 'dan atama tanımsız. Bir norm, bir unorm 'den örtülü olarak oluşturulabilir ve veri kaybı olmaz. Kayan kapalı dönüştürme işleci bu türlerde tanımlanmıştır. İkili işleçler bu türler ve ve gibi diğer yerleşik skaler türler arasında tanımlanır **`float`** **`int`** : +,-, \* ,/, = =,! =, >, \<, > =, <=. Bileşik atama işleçleri de desteklenir: + =,-=, \* =,/=. Birli olumsuzlama işleci (-), norm türleri için tanımlanır.
 
 ## <a name="short-vector-library"></a>Kısa vektör kitaplığı
 
-Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](https://go.microsoft.com/fwlink/p/?linkid=248500) bazı işlevlerini sağlar ve genellikle dokcası tanımlamak için kullanılır. Kısa bir vektör, aynı türde bir ile dört arasında değer tutan bir veri yapısıdır. Desteklenen türler,,,, ve ' dir **`double`** **`float`** **`int`** `norm` `uint` `unorm` . Tür adları aşağıdaki tabloda gösterilmiştir. Her tür için, adında alt çizgi olmayan karşılık gelen bir de vardır **`typedef`** . Alt çizgileri olan türler [concurrency:: Graphics ad uzayında](../../parallel/amp/reference/concurrency-graphics-namespace.md)bulunur. Alt çizgilere sahip olmayan türler, ve gibi benzer adlandırılmış temel türlerden açıkça ayrılmaları için [concurrency:: Graphics::d Irect3d ad alanında](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) yer alırlar **`__int8`** **`__int16`** .
+Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](/windows/win32/direct3dhlsl/dx-graphics-hlsl-vector) bazı işlevlerini sağlar ve genellikle dokcası tanımlamak için kullanılır. Kısa bir vektör, aynı türde bir ile dört arasında değer tutan bir veri yapısıdır. Desteklenen türler,,,, ve ' dir **`double`** **`float`** **`int`** `norm` `uint` `unorm` . Tür adları aşağıdaki tabloda gösterilmiştir. Her tür için, adında alt çizgi olmayan karşılık gelen bir de vardır **`typedef`** . Alt çizgileri olan türler [concurrency:: Graphics ad uzayında](../../parallel/amp/reference/concurrency-graphics-namespace.md)bulunur. Alt çizgilere sahip olmayan türler, ve gibi benzer adlandırılmış temel türlerden açıkça ayrılmaları için [concurrency:: Graphics::d Irect3d ad alanında](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) yer alırlar **`__int8`** **`__int16`** .
 
 |Tür|Uzunluk 2|Uzunluk 3|Uzunluk 4|
 |-|--------------|--------------|--------------|
@@ -57,7 +57,7 @@ Kısa vektör kitaplığı, HLSL ' de tanımlı [vektör türünün](https://go.
 
 ### <a name="swizzling-expressions"></a>Swizzling Ifadeleri
 
-Kısa vektör kitaplığı, `vector_type.identifier` bir kısa vector bileşenine erişmek için erişimci yapısını destekler. `identifier` *Swizzling ifadesi*olarak bilinen, vector bileşenlerini belirtir. İfade bir l değeri veya r değeri olabilir. Tanımlayıcıdaki tek karakterler şu olabilir: x, y, z ve w; ya da r, g, b ve a. "x" ve "r", sıfır-bir bileşen anlamına gelir, "y" ve "g" ilk bileşen anlamına gelir ve bu şekilde devam eder. ("X" ve "r" nin aynı tanımlayıcıda kullanılamayacağını unutmayın.) Bu nedenle, "rgba" ve "xyzw" aynı sonucu döndürür. "X" ve "y" gibi tek bileşen erişimcileri skaler değer türleridir. Çoklu bileşen erişimcileri kısa vektör türlerdir. Örneğin, `int_4` adlı bir vektör oluşturursanız `fourInts` ve 2, 4, 6 ve 8 değerlerini içeriyorsa, `fourInts.y` 4 tamsayı ve `fourInts.rg` `int_2` 2 ve 4 değerlerini içeren bir nesne döndürür.
+Kısa vektör kitaplığı, `vector_type.identifier` bir kısa vector bileşenine erişmek için erişimci yapısını destekler. `identifier` *Swizzling ifadesi* olarak bilinen, vector bileşenlerini belirtir. İfade bir l değeri veya r değeri olabilir. Tanımlayıcıdaki tek karakterler şu olabilir: x, y, z ve w; ya da r, g, b ve a. "x" ve "r", sıfır-bir bileşen anlamına gelir, "y" ve "g" ilk bileşen anlamına gelir ve bu şekilde devam eder. ("X" ve "r" nin aynı tanımlayıcıda kullanılamayacağını unutmayın.) Bu nedenle, "rgba" ve "xyzw" aynı sonucu döndürür. "X" ve "y" gibi tek bileşen erişimcileri skaler değer türleridir. Çoklu bileşen erişimcileri kısa vektör türlerdir. Örneğin, `int_4` adlı bir vektör oluşturursanız `fourInts` ve 2, 4, 6 ve 8 değerlerini içeriyorsa, `fourInts.y` 4 tamsayı ve `fourInts.rg` `int_2` 2 ve 4 değerlerini içeren bir nesne döndürür.
 
 ## <a name="texture-classes"></a>Doku sınıfları
 
@@ -67,7 +67,7 @@ Birçok GPU, pikselleri ve dokuları getirmek ve görüntüleri ve dokuları iş
 
 - İki veya dört bileşeni olan kısa bir vektör. Tek özel durum `double_4` , buna izin verilmez.
 
-`texture`Nesne, 1, 2 veya 3 derecesine sahip olabilir. `texture`Nesne yalnızca öğesine yapılan çağrının lambda öğesinde başvuruya göre yakalanamaz `parallel_for_each` . Doku, GPU 'da Direct3D doku nesneleri olarak depolanır. Direct3D 'de dokular ve dokun hakkında daha fazla bilgi için bkz. [Direct3D 11 ' de dokuya giriş](https://go.microsoft.com/fwlink/p/?linkid=248502).
+`texture`Nesne, 1, 2 veya 3 derecesine sahip olabilir. `texture`Nesne yalnızca öğesine yapılan çağrının lambda öğesinde başvuruya göre yakalanamaz `parallel_for_each` . Doku, GPU 'da Direct3D doku nesneleri olarak depolanır. Direct3D 'de dokular ve dokun hakkında daha fazla bilgi için bkz. [Direct3D 11 ' de dokuya giriş](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-intro).
 
 Kullandığınız doku hücresi değerinin türü, grafik programlamada kullanılan birçok doku biçiminden biri olabilir. Örneğin, bir RGBA biçimi, R, G, B ve skaler öğeler için 8 bit ile 32 bit kullanabilir. Grafik kartının doku donanımı, biçime göre ayrı ayrı öğelere erişebilir. Örneğin, RGBA biçimini kullanıyorsanız, doku donanımı her 8 bitlik öğeyi 32 bitlik bir biçimde ayıklayabilir. C++ amp ' de, doku hücresi değerinin 'nin skalar öğe başına bitlerini ayarlayabilirsiniz. böylece, bit kaydırma kullanmadan koddaki tek tek skalar öğelerine otomatik olarak erişebilirsiniz.
 
@@ -311,7 +311,7 @@ Kullanımdan kaldırılması hakkında daha fazla bilgi için `writeonly_texture
 
 ### <a name="instantiating-texture-view-objects"></a>Doku görünümü nesnelerini örnekleme
 
-Bildirim `texture_view` , bir `array_view` **dizi**ile ilişkilendirilmiş bir bildirmek için benzerdir. Aşağıdaki kod örneği, çeşitli `texture` nesneleri ve `texture_view` bunlarla ilişkili nesneleri bildirir.
+Bildirim `texture_view` , bir `array_view` **dizi** ile ilişkilendirilmiş bir bildirmek için benzerdir. Aşağıdaki kod örneği, çeşitli `texture` nesneleri ve `texture_view` bunlarla ilişkili nesneleri bildirir.
 
 ```cpp
 #include <amp.h>
@@ -344,8 +344,8 @@ void declareTextureViews()
 
 |Tür|Bileşenler|Okuma|Yazma|Örnekleme|Mipmap erişimi|
 |----------|----------------|----------|-----------|--------------|-------------------|
-|texture_view\<const T, N>|1, 2, 4|Yes|Hayır (1)|Yes|Evet, dizinlenebilir. Aralık, örnekleme sırasında belirlenir.|
-|Texture_view\<T, N>|1<br /><br /> 2, 4|Yes<br /><br /> Hayır (2)|Yes<br /><br /> Yes|Hayır (1)<br /><br /> Hayır (1)|Evet, tek düzey. Düzey, örnekleme sırasında belirlenir.<br /><br /> Evet, tek düzey. Düzey, örnekleme sırasında belirlenir.|
+|texture_view\<const T, N>|1, 2, 4|Evet|Hayır (1)|Evet|Evet, dizinlenebilir. Aralık, örnekleme sırasında belirlenir.|
+|Texture_view\<T, N>|1<br /><br /> 2, 4|Evet<br /><br /> Hayır (2)|Evet<br /><br /> Evet|Hayır (1)<br /><br /> Hayır (1)|Evet, tek düzey. Düzey, örnekleme sırasında belirlenir.<br /><br /> Evet, tek düzey. Düzey, örnekleme sırasında belirlenir.|
 
 Bu tablodan, salt okuma dokusu görünümlerinin, görünüme yazamayacak şekilde, Exchange 'deki yeni özellikleri tam olarak desteklediğini görebilirsiniz. Yazılabilir doku görünümleri yalnızca bir mipmap düzeyine erişebilmeleri için sınırlıdır. Okuma-yazma doku görünümleri, yazılabilir olanlardan daha da özelleştirilmiştir, çünkü doku görünümünün öğe türünün yalnızca bir bileşeni olduğu gereksinimi ekler. Bir okuma yönelimli işlem olduğundan, bu örnekleme yazılabilir doku görünümleri için desteklenmediğine dikkat edin.
 
@@ -402,9 +402,9 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 });
 ```
 
-## <a name="interoperability"></a>Birlikte Çalışabilirlik
+## <a name="interoperability"></a>Birlikte çalışabilirlik
 
-C++ AMP çalışma zamanı `texture<T,1>` Ile [ID3D11Texture1D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=248503)arasında birlikte çalışabilirliği destekler, `texture<T,2>` ile [ID3D11Texture2D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255317)arasında ve ile `texture<T,3>` [ID3D11Texture3D arabirimi](https://go.microsoft.com/fwlink/p/?linkId=255377)arasında. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir nesnesi alır `texture` ve bir arabirim döndürür `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirim ve bir nesnesi alır `accelerator_view` ve bir nesne döndürür `texture` .
+C++ AMP çalışma zamanı `texture<T,1>` Ile [ID3D11Texture1D arabirimi](/windows/win32/api/d3d11/nn-d3d11-id3d11texture1d)arasında birlikte çalışabilirliği destekler, `texture<T,2>` ile [ID3D11Texture2D arabirimi](/windows/win32/api/d3d11/nn-d3d11-id3d11texture2d)arasında ve ile `texture<T,3>` [ID3D11Texture3D arabirimi](/windows/win32/api/d3d11/nn-d3d11-id3d11texture3d)arasında. [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) yöntemi bir nesnesi alır `texture` ve bir arabirim döndürür `IUnknown` . [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemi bir `IUnknown` arabirim ve bir nesnesi alır `accelerator_view` ve bir nesne döndürür `texture` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

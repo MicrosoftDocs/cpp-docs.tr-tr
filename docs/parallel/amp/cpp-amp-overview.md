@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 2629f243f3db3b8fabbd87ee0a211380ac3d45a2
-ms.sourcegitcommit: 093f49b8b69daf86661adc125b1d2d7b1f0e0650
+ms.openlocfilehash: 0eeda43a279be74ea71669b55356603e980cab40
+ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427731"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344754"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -104,7 +104,7 @@ Aynı temel öğeler mevcuttur, ancak C++ AMP yapılar kullanılır:
 
 - Veri: C++ dizilerini, üç C++ AMP [array_view](../../parallel/amp/reference/array-view-class.md) nesnesi oluşturmak için kullanırsınız. Bir nesne oluşturmak için dört değer sağlarsınız `array_view` : veri değerleri, derece, öğe türü ve `array_view` her boyuttaki nesnenin uzunluğu. Rank ve Type tür parametreleri olarak geçirilir. Veri ve uzunluk, Oluşturucu parametreleri olarak geçirilir. Bu örnekte, oluşturucuya geçirilen C++ dizisi tek boyutlu olur. Derece ve uzunluğu, nesnedeki verilerin dikdörtgen şeklini oluşturmak için kullanılır `array_view` ve veri değerleri diziyi dolduracak şekilde kullanılır. Çalışma zamanı kitaplığı, sınıfa benzeyen ve bu makalenin ilerleyen kısımlarında ele alınan bir arabirime sahip [dizi sınıfını](../../parallel/amp/reference/array-class.md)da içerir `array_view` .
 
-- Yineleme: [parallel_for_each işlevi (C++ amp)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) , veri öğeleri veya *işlem etki alanı*arasında yineleme için bir mekanizma sağlar. Bu örnekte, işlem etki alanı tarafından belirtilir `sum.extent` . Çalıştırmak istediğiniz kod bir lambda ifadesinde veya *çekirdek işlevinde*bulunur. `restrict(amp)`Yalnızca C++ amp hızlandırabilecek C++ dilinin alt kümesinin kullanıldığını gösterir.
+- Yineleme: [parallel_for_each işlevi (C++ amp)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) , veri öğeleri veya *işlem etki alanı* arasında yineleme için bir mekanizma sağlar. Bu örnekte, işlem etki alanı tarafından belirtilir `sum.extent` . Çalıştırmak istediğiniz kod bir lambda ifadesinde veya *çekirdek işlevinde* bulunur. `restrict(amp)`Yalnızca C++ amp hızlandırabilecek C++ dilinin alt kümesinin kullanıldığını gösterir.
 
 - Dizin: [Dizin sınıfı](../../parallel/amp/reference/index-class.md) değişkeni, `idx` nesnesinin derecesine uyacak şekilde bir ile birlikte bildirilmiştir `array_view` . Dizinini kullanarak, nesnelerin ayrı öğelerine erişebilirsiniz `array_view` .
 
@@ -360,7 +360,7 @@ void AddArraysWithFunction() {
 
 ## <a name="accelerating-code-tiles-and-barriers"></a>Kodu hızlandırma: kutucuklar ve engelleri
 
-Döşeme kullanarak ek hızlandırma elde edebilirsiniz. Döşeme, iş parçacıklarını eşit dikdörtgen alt kümelerine veya *döşemelere*böler. Veri kümesine ve kodlarınızın kodlanmasını yaptığınız algoritmaya göre uygun kutucuk boyutunu belirlersiniz. Her iş parçacığı için, bir veri öğesinin *genel* konumuna `array` veya `array_view` kutucuğa göre *Yerel* konuma erişim sahibi olursunuz. Yerel Dizin değerinin kullanılması kodunuzu basitleştirir çünkü dizin değerlerini Global 'ten yerel olarak çevirecek kodu yazmanız gerekmez. Döşeme kullanmak için, yöntemindeki işlem etki alanında [kapsam:: Tile yöntemini](reference/extent-class.md#tile) çağırın `parallel_for_each` ve lambda ifadesinde [tiled_index](../../parallel/amp/reference/tiled-index-class.md) nesnesini kullanın.
+Döşeme kullanarak ek hızlandırma elde edebilirsiniz. Döşeme, iş parçacıklarını eşit dikdörtgen alt kümelerine veya *döşemelere* böler. Veri kümesine ve kodlarınızın kodlanmasını yaptığınız algoritmaya göre uygun kutucuk boyutunu belirlersiniz. Her iş parçacığı için, bir veri öğesinin *genel* konumuna `array` veya `array_view` kutucuğa göre *Yerel* konuma erişim sahibi olursunuz. Yerel Dizin değerinin kullanılması kodunuzu basitleştirir çünkü dizin değerlerini Global 'ten yerel olarak çevirecek kodu yazmanız gerekmez. Döşeme kullanmak için, yöntemindeki işlem etki alanında [kapsam:: Tile yöntemini](reference/extent-class.md#tile) çağırın `parallel_for_each` ve lambda ifadesinde [tiled_index](../../parallel/amp/reference/tiled-index-class.md) nesnesini kullanın.
 
 Tipik uygulamalarda, bir kutucukta bulunan öğeler bir şekilde ilişkilendirilir ve kodun, kutucuk genelinde değerleri uygulamasına erişmesi ve takip etmesini sağlamak gerekir. Bunu gerçekleştirmek için [Tile_static anahtar sözcüğünü](../../cpp/tile-static-keyword.md) ve [tile_barrier:: wait yöntemini](reference/tile-barrier-class.md#wait) kullanın. **Tile_static** anahtar sözcüğüne sahip bir değişken bir kutucuğun tamamında kapsam içerir ve her kutucuk için değişkenin bir örneği oluşturulur. Değişkene kutucuk iş parçacığı erişiminin eşitlemesini işlemeniz gerekir. [Tile_barrier:: wait yöntemi](reference/tile-barrier-class.md#wait) , kutucuktaki tüm iş parçacıkları öğesine yapılan çağrıya ulaşıncaya kadar geçerli iş parçacığının yürütülmesini durduruyor `tile_barrier::wait` . Bu nedenle, **tile_static** değişkenleri kullanarak kutucuk genelinde değer birikmesini sağlayabilirsiniz. Daha sonra tüm değerlere erişmesi gereken tüm hesaplamaları tamamlayabilmeniz gerekir.
 
@@ -473,9 +473,9 @@ Diğer C++ kitaplıkları gibi UWP uygulamalarınızda C++ AMP de kullanabilirsi
 
 - [UWP uygulamalarında C++ AMP kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [İzlenecek yol: C++ ' da temel bir Windows Çalışma Zamanı bileşeni oluşturma ve JavaScript 'ten çağırma](https://go.microsoft.com/fwlink/p/?linkid=249077)
+- [İzlenecek yol: C++ ' da temel bir Windows Çalışma Zamanı bileşeni oluşturma ve JavaScript 'ten çağırma](/previous-versions/windows/apps/hh755833(v=vs.140))
 
-- [JavaScript ve C++ içindeki bir pencere Mağazası uygulaması olan Bing Haritalar seyahat Iyileştirici](https://go.microsoft.com/fwlink/p/?linkid=249078)
+- [JavaScript ve C++ içindeki bir pencere Mağazası uygulaması olan Bing Haritalar seyahat Iyileştirici](/previous-versions/windows/apps/hh699893(v=vs.140))
 
 - [Windows Çalışma Zamanı kullanarak C# ' den C++ AMP kullanma](https://devblogs.microsoft.com/pfxteam/how-to-use-c-amp-from-c-using-winrt/)
 
