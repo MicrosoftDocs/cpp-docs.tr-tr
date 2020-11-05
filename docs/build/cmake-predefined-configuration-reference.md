@@ -4,12 +4,12 @@ ms.description: Visual Studio provides several predefined build configurations f
 ms.date: 06/12/2019
 helpviewer_keywords:
 - CMake redefined configurations
-ms.openlocfilehash: aa8c39d8322408e08eb35859c7b0d8ed798a6f84
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3c957ebf92d038a9913b0fb9c4b06f1fae2da0a2
+ms.sourcegitcommit: 2a96750322bca43a8a29fdc400e14ca36132f9c1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919442"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93401049"
 ---
 # <a name="cmake-predefined-build-configurations"></a>CMake önceden tanımlanmış derleme yapılandırması
 
@@ -66,7 +66,7 @@ Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *CMakeSettin
       "inheritEnvironments": [
         "linux_x64"
       ]
-    }
+}
 
 {
       "name": "Linux-Release",
@@ -95,11 +95,11 @@ Bir yapılandırma seçtiğinizde, bu, projenin kök klasöründeki *CMakeSettin
       "inheritEnvironments": [
         "linux_x64"
       ]
-    },
-    ```
+},
+```
 
 
-You can use these optional settings for more control:
+Daha fazla denetim için bu isteğe bağlı ayarları kullanabilirsiniz:
 
 ```json
 {
